@@ -26,6 +26,8 @@ A vertical fence is constructed whose base is the curve $y=x\sqrt{x}$, from $(0,
 (E) $27$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -119,6 +121,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested area and corresponding choice.
+
+:::
 
 :::
 
