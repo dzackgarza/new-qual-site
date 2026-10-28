@@ -31,6 +31,8 @@ At the significance level 0.05, test the hypothesis that the particle spectrum i
 Find the effective estimate for $\lambda$.
 :::
 
+::: {.solution}
+
 Interpret the nine successive 10-MeV bins as the Poisson count values $0,1,\ldots,8$. The observed frequencies are
 \[
 (15,71,75,68,39,17,10,4,1),
@@ -189,6 +191,8 @@ The estimate is step [](#s1-1){.pf-ref}, and the goodness-of-fit decision is ste
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives both requested conclusions.
+
+:::
 
 :::
 
