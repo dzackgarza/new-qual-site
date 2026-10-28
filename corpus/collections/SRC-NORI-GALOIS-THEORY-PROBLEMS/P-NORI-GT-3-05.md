@@ -19,6 +19,8 @@ audit:
 Explain how you would obtain a sequence of field extensions $E _ { n + 1 } / E _ { n }$ of degree three, with $E _ { 0 } = \mathbb { F } _ { 1 9 }$
 :::
 
+::: {.solution}
+
 The construction is the cubic analogue of the preceding square-root towers.
 
 ::: pf
@@ -255,6 +257,8 @@ Step [](#s1-2){.pf-ref} starts with a noncube. Steps [](#s1-5){.pf-ref} and [](#
 ::: pf-qed
 
 Step [](#s1-12){.pf-ref} gives the requested sequence of cubic field extensions beginning at $E_0=\mathbb F_{19}$.
+
+:::
 
 :::
 
