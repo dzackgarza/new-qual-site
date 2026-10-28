@@ -43,6 +43,8 @@ Mark each statement true or false. No justifications are required.
 For statement 15, use the course convention that a QR decomposition has
 $Q$ orthogonal and $R$ upper triangular with positive diagonal entries.
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -445,6 +447,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-19){.pf-ref} establish the corresponding
 ::: pf-qed
 
 Step [](#s1-20){.pf-ref} records the required answers to all recovered statements.
+
+:::
 
 :::
 
