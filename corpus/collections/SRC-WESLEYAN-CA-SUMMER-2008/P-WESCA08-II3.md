@@ -23,6 +23,8 @@ Let $f$ be analytic on a domain $D$, and suppose there is $z_0\in D$ such that
 Show that $f$ is constant on $D$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -167,6 +169,8 @@ for all \(z\in D\).
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
