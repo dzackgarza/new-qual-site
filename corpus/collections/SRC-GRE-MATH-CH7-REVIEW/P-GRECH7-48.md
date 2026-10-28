@@ -25,6 +25,8 @@ Let $f(z)$ be a complex analytic function such that $f(z) = (5x - 3y) + i v(x, y
 (E) $14$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -101,6 +103,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
