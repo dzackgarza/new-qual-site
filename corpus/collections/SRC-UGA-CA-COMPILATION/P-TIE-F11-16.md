@@ -29,6 +29,8 @@ Erratum: the source writes the hypothesis as $f(z) \le M\abs{z}^2$, which has no
 The intended hypothesis is $\abs{f(z)} \le M\abs{z}^2$ outside some disk.
 :::
 
+::: {.solution}
+
 Use the intended hypothesis from the remark: there exists $R_0>0$ such that
 $$
 \abs{f(z)}\le M\abs{z}^2
@@ -133,6 +135,8 @@ so $f$ has degree at most $2$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the required conclusion.
+
+:::
 
 :::
 
