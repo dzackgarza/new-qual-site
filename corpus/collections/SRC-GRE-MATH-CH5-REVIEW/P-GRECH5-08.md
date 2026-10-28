@@ -36,6 +36,8 @@ then
 (E) $8d$
 :::
 
+::: {.solution}
+
 Let
 $$
 M=
@@ -118,6 +120,8 @@ Adding a multiple of one column to another does not change the determinant. Thus
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested determinant.
+
+:::
 
 :::
 
