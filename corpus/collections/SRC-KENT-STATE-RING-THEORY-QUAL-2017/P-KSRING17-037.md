@@ -19,6 +19,8 @@ audit:
 Show that if p is a prime such that $p \equiv 3 ( { \bmod { 4 } } )$ , then $x ^ { 2 } + 1$ is irreducible in $\mathbb { Z } _ { p } [ x ]$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -152,6 +154,8 @@ A polynomial of degree $2$ over a field is reducible if and only if it has a roo
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
