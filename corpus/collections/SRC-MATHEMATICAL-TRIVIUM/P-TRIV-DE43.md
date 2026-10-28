@@ -25,6 +25,8 @@ $$
 so that $u = 0$ whenever any of the coordinates is equal to 0 or L. What are the allowed values of $k ^ { 2 } ?$
 :::
 
+::: {.solution}
+
 Seek a separated nonzero solution
 \[
 u(x,y,z)=X(x)Y(y)Z(z).
@@ -140,6 +142,8 @@ Substitute the values from steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} i
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the Dirichlet modes and every allowed value of $k^2$.
+
+:::
 
 :::
 
