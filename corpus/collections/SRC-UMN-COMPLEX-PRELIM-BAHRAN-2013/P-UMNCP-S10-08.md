@@ -21,6 +21,8 @@ Let \(f:\mathbb D\to\mathbb D\) be holomorphic.
 Suppose \(c\in\mathbb D\) is a fixed point and \(|f'(c)|<1\). For any \(z_0\in\mathbb D\), define \(z_n=f(z_{n-1})\). Prove that \(z_n\to c\).
 :::
 
+::: {.solution}
+
 Define the disk automorphism
 $$
 \phi(z)
@@ -318,6 +320,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required convergence.
+
+:::
 
 :::
 
