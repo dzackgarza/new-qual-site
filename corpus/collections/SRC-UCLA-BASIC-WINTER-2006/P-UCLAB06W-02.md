@@ -28,6 +28,8 @@ well-defined and left-continuous at $x=1$?
 Carefully prove your assertion.
 :::
 
+::: {.solution}
+
 The necessary and sufficient condition is
 $$
 \boxed{a_n\longrightarrow0}.
@@ -178,6 +180,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves necessity of $a_n\to0$. Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref} show that this condition makes the series well defined on $[0,1]$, and step [](#s1-6){.pf-ref} proves left-continuity at $1$.
+
+:::
 
 :::
 
