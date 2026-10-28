@@ -21,6 +21,8 @@ f(Z)=Y.
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 \mathcal C=\{Z\subseteq X: Z\text{ is compact and }f(Z)=Y\},
@@ -168,6 +170,8 @@ Step [](#s1-6){.pf-ref} gives $F\in\mathcal C$, so it is compact and satisfies $
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is exactly the assertion of the problem.
+
+:::
 
 :::
 
