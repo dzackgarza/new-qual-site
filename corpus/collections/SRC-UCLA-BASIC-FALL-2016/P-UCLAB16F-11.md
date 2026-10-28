@@ -32,6 +32,8 @@ Prove any TWO of the following statements about (X, dist):
 (c) It is not separable. (d) It is not complete.
 :::
 
+::: {.solution}
+
 The proof establishes (b) and (d).
 
 ::: pf
@@ -487,6 +489,8 @@ This proves (d).
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves (b), and step [](#s1-10){.pf-ref} proves (d), as requested.
+
+:::
 
 :::
 
