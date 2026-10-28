@@ -26,6 +26,8 @@ How many generators does the group $(\ZZ_{24}, +)$ have?
 (E) $12$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -81,6 +83,8 @@ By step [](#s1-1){.pf-ref}, the generators are exactly the residue classes descr
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested number of generators.
+
+:::
 
 :::
 
