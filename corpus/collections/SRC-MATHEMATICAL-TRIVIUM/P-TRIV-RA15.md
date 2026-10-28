@@ -19,6 +19,8 @@ audit:
 $\mathrm { C a l c u l a t e } \int \frac { d x } { \tan x }$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -90,6 +92,8 @@ $$
 
 Step [](#s1-3){.pf-ref} is the required antiderivative on each interval where
 $\sin x\neq0$.
+
+:::
 
 :::
 
