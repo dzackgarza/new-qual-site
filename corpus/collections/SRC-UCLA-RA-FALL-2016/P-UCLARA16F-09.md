@@ -32,6 +32,8 @@ is holomorphic on $\mathbb C$.
 Show that then $\mu$ is equal to the Dirac measure $\delta_0$ at $0$.
 :::
 
+::: {.solution}
+
 ## Part (a)
 
 For every \(k\ge0\), define the moment
@@ -490,6 +492,8 @@ A probability measure concentrated entirely at \(0\) is the Dirac measure at \(0
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-20){.pf-ref} proves part (b).
+
+:::
 
 :::
 
