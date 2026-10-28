@@ -32,6 +32,8 @@ For each space below, identify a familiar space homeomorphic to the quotient and
    whenever $x^2+y^2=1$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -441,6 +443,8 @@ Collect steps [](#s1-3){.pf-ref} and [](#s1-7){.pf-ref}, and [](#s1-11){.pf-ref}
 
 Step [](#s1-12){.pf-ref} gives the requested identifications, with explicit quotient maps
 constructed in the preceding steps.
+
+:::
 
 :::
 
