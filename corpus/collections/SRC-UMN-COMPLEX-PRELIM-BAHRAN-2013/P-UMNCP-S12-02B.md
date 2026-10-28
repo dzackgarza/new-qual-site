@@ -27,6 +27,8 @@ in the annulus
 \]
 :::
 
+::: {.solution}
+
 Let
 $$
 p(z)=z^4+5z+3.
@@ -169,6 +171,8 @@ zeros, counted with multiplicity.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required zero count.
+
+:::
 
 :::
 
