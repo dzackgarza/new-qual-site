@@ -25,6 +25,8 @@ is connected.
 You may assume that intervals in $\mathbb R$ are connected, but should not simply quote more general connectedness results.
 :::
 
+::: {.solution}
+
 Let
 $$
 D=\{z\in\RR^2:\norm z<1\}.
@@ -127,6 +129,8 @@ If $V$ were nonempty, it would contain some $p\in D$, contradicting step [](#s1-
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is precisely the required conclusion for the open unit disk.
+
+:::
 
 :::
 
