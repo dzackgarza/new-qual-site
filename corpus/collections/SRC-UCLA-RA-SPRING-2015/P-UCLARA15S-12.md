@@ -24,6 +24,8 @@ f'(z)^2+f(z)^2=1.
 Prove that your list is exhaustive.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -248,6 +250,8 @@ Conversely, step [](#s1-5){.pf-ref} shows that every function in the boxed famil
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives all entire solutions and proves exhaustiveness.
+
+:::
 
 :::
 
