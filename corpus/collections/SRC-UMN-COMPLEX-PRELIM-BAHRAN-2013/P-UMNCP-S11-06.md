@@ -24,6 +24,8 @@ Suppose \(f\) is entire and there is \(M>0\) such that
 whenever \(|z|\ge M\). Prove that \(f\) is constant.
 :::
 
+::: {.solution}
+
 Write
 $$
 f(z)
@@ -226,6 +228,8 @@ Since $f$ is continuous and $\CC$ is connected, its image is connected. A connec
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
