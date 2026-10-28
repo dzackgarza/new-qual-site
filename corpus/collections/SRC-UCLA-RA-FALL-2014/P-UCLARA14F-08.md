@@ -32,6 +32,8 @@ for some constants $C$ and $a$ if and only if we have
 for some constant $M$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -250,6 +252,8 @@ implication.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
