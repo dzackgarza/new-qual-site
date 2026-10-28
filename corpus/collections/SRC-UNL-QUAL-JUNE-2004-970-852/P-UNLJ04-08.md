@@ -19,6 +19,8 @@ audit:
 Prove that every graph has a bipartition $V ( G ) = X \cup Y$ with the property that $e ( X , Y ) \geq e ( G ) / 2$ . Further, show that if G is cubic then we can achieve $e ( X , Y ) \geq$ $n ( G ) = 2 e ( G ) / 3$
 :::
 
+::: {.solution}
+
 For a bipartition
 $$
 V(G)=X\sqcup Y,
@@ -392,6 +394,8 @@ Combine steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the general bound, and step [](#s1-7){.pf-ref} proves the stronger cubic bound.
+
+:::
 
 :::
 
