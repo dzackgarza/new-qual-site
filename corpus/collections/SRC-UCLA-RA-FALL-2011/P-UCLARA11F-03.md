@@ -26,6 +26,8 @@ Show that:
 (b) $(f*g)(x)\to0$ as $|x|\to\infty$.
 :::
 
+::: {.solution}
+
 For
 \[
 x\in\mathbb R^3,
@@ -479,6 +481,8 @@ Step [](#s1-13){.pf-ref} is the definition of vanishing at infinity.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-14){.pf-ref} proves part (b).
+
+:::
 
 :::
 
