@@ -30,6 +30,8 @@ Prove that there is a subsequence $(f_{n_k})$ such that
 exists for every rational number $r$.
 :::
 
+::: {.solution}
+
 Enumerate the rational numbers as
 \[
 \mathbb Q=\{r_1,r_2,r_3,\ldots\}.
@@ -284,6 +286,8 @@ Apply step [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required diagonal-subsequence conclusion.
+
+:::
 
 :::
 
