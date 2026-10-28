@@ -21,6 +21,8 @@ Suppose both sequences are uniformly bounded: there is $M$ such that $|f_n(z)|,|
 Prove that $(f_ng_n)$ converges uniformly on $A$.
 :::
 
+::: {.solution}
+
 Let
 $$
 f_n\to f
@@ -221,6 +223,8 @@ which is the definition of uniform convergence.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the required conclusion.
+
+:::
 
 :::
 
