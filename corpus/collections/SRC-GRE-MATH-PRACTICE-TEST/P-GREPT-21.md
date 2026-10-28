@@ -29,6 +29,8 @@ for $b = \frac{1}{2}$.
 (E) does not exist
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -118,6 +120,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required integral.
+
+:::
 
 :::
 
