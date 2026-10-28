@@ -65,6 +65,8 @@ Thus case 2 does not occur.
 The source defines $R = \{\frac{m}{2^n} : m \geq 0, n \in \mathbb{Z}\}$, which is not closed under negation; the hint uses $R$ as the ring $\mathbb{Z}[\frac{1}{2}] = \{\frac{m}{2^n} : m \in \mathbb{Z}, n \geq 0\}$ (for instance $f = X^4 - 2X^3 + X^2 - 2 = (X^2 - X)^2 - 2 \cdot 1^2$ is irreducible with $\mathbb{Q}(\sqrt{2}) \subset \mathbb{Q}(\theta)$, and every admissible $Q = X^2 + uX + v$ has $2u = -2$, so $u = -1$ is not in $R$ as printed).
 :::
 
+::: {.solution}
+
 The source hint uses
 $$
 R=\ZZ\left[\frac12\right]
@@ -381,6 +383,8 @@ But $\deg g=3$ while $\overline f$ is monic of degree $4$, a contradiction.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} prove conditions (i)--(ii), interpreted with the intended ring $R=\ZZ[1/2]$, and steps [](#s1-9){.pf-ref} through [](#s1-11){.pf-ref} prove the asserted absence of cubic irreducible factors modulo every odd prime.
+
+:::
 
 :::
 
