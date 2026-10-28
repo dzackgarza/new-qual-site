@@ -19,6 +19,8 @@ audit:
 Find obstructions to the existence of a complex structure on an even dimensional manifold.
 :::
 
+::: {.solution}
+
 Let $M^{2n}$ be a smooth manifold. A complex structure on $TM$ means a bundle endomorphism
 \[
 J:TM\to TM,
@@ -213,6 +215,8 @@ This simply collects the necessary conditions already proved.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} provide the requested obstructions to reducing the tangent bundle to a complex vector bundle.
+
+:::
 
 :::
 
