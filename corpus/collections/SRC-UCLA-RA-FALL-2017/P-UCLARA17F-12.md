@@ -24,6 +24,8 @@ f=g\circ h.
 Show that if $h$ is continuous, and both $f$ and $g$ are non-constant and holomorphic, then $h$ is holomorphic as well.
 :::
 
+::: {.solution}
+
 Let
 \[
 Z\coloneqq\{w\in\mathbb C:g'(w)=0\},
@@ -133,6 +135,8 @@ Step [](#s1-2){.pf-ref} gives holomorphy on $\mathbb C\setminus B$, and step [](
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
