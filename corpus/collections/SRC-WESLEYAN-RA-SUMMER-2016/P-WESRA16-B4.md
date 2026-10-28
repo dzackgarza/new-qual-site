@@ -35,6 +35,8 @@ exists in $[0,\infty]$, prove that there are $\alpha,\beta,\gamma\in[0,\infty]$ 
 Determine the relevant contributions using monotone and dominated convergence.
 :::
 
+::: {.solution}
+
 Because $\operatorname{supp}f\subseteq[0,1]$ and $X,Y,Z$ partition $[0,1]$,
 $$
 \int_{\mathbb R}f^n
@@ -201,6 +203,8 @@ If $\lambda(X)=0$, the right-hand side is $\lambda(Y)$; if $\lambda(X)>0$, it is
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref} give the requested dominated- and monotone-convergence contributions, and step [](#s1-6){.pf-ref} gives the required constants.
+
+:::
 
 :::
 
