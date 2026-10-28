@@ -23,6 +23,8 @@ Hint: This is a consequence of the definition of the adjoint matrix adj(T ) and 
 Remark: In reality, the above adjoint matrix is simply $\Lambda ^ { n - 1 } ( T )$ Therefore this problem could be stated and solved entirely within the framework of exterior algebras, with no reference to matrices.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -97,6 +99,8 @@ The vector constructed in step [](#s1-2){.pf-ref} has the required property.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is exactly the assertion of the problem.
+
+:::
 
 :::
 
