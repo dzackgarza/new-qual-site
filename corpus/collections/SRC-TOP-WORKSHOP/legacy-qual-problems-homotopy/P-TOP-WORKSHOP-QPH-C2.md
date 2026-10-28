@@ -23,6 +23,8 @@ H=\langle x\mid x^6\rangle.
 Find the presentation complex $X_H$ and then find its universal cover $\widetilde X_H$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -289,6 +291,8 @@ Both spaces are simply connected CW complexes, so Whitehead's theorem makes this
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} identifies the presentation complex exactly, and step [](#s1-9){.pf-ref} identifies its universal cover exactly; step [](#s1-10){.pf-ref} records its familiar homotopy type.
+
+:::
 
 :::
 
