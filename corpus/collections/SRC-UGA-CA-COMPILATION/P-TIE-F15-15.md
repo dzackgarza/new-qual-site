@@ -26,6 +26,8 @@ $$
 (2) Show that the above is still true if $\mathrm { R e } ( f ( z ) ) > 0$ is replaced with $\mathrm { R e } ( f ( z ) ) \geq 0$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -173,6 +175,8 @@ By step [](#s1-4){.pf-ref}, the non-strict hypothesis together with $f(0)=a>0$ i
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove part (1), and step [](#s1-5){.pf-ref} proves part (2).
+
+:::
 
 :::
 
