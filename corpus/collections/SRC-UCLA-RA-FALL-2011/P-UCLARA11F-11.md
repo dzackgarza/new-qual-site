@@ -25,6 +25,8 @@ U=\{z\in\mathbb C:|f(z)|<1\}.
 Show that every connected component of $U$ is unbounded.
 :::
 
+::: {.solution}
+
 Suppose, toward a contradiction, that
 \[
 \Omega
@@ -368,6 +370,8 @@ This is step [](#s1-17){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-18){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
