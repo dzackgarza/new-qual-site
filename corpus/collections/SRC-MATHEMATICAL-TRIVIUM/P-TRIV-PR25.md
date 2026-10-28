@@ -36,6 +36,8 @@ $$
 where $\Delta$ and $\alpha$ are given small numbers.
 :::
 
+::: {.solution}
+
 The uniform distribution on the cube $V=[-1,1]^n$ has density $2^{-n}$ with respect to Lebesgue measure.
 
 ::: pf
@@ -191,6 +193,8 @@ For the normalized integral, step [](#s1-1){.pf-ref} gives $\mathbf E\eta=I_{\ma
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} correct the normalization mismatch in part (a), and steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref} give rigorous sample-size estimates for both the printed and normalized interpretations.
+
+:::
 
 :::
 
