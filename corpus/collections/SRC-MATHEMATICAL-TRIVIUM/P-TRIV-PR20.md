@@ -33,6 +33,8 @@ Show that
 (d) $\mathbf{D}(S_\tau | \tau) = \tau \mathbf{D}\xi_1$.
 :::
 
+::: {.solution}
+
 Put
 \[
 \mu=\mathbf E\xi_1,
@@ -188,6 +190,8 @@ Substitute steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref} into step [](#s1-6){.
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref}, [](#s1-2){.pf-ref}, and [](#s1-7){.pf-ref}, and [](#s1-5){.pf-ref} prove parts (a), (b), (c), and (d), respectively.
+
+:::
 
 :::
 
