@@ -32,6 +32,8 @@ $$
 where L is the part of the circle $| z | = R ^ { \prime }$ which lies in the region D.
 :::
 
+::: {.solution}
+
 For $r>R$, parametrize the positively oriented arc $L_r$ by
 $$
 z(t)=re^{it},
@@ -136,6 +138,8 @@ The right-hand side tends to $0$ by step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required limit.
+
+:::
 
 :::
 
