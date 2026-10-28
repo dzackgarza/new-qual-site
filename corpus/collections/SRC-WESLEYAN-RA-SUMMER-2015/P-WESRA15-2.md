@@ -24,6 +24,8 @@ Let $\mu,\nu$ be finite measures such that
 Prove that $\mu(A)=\nu(A)$ for every $A\in\mathcal A$.
 :::
 
+::: {.solution}
+
 Let
 $$
 \mathcal D=\{A\in\mathcal A:\mu(A)=\nu(A)\}.
@@ -200,6 +202,8 @@ By step [](#s1-6){.pf-ref}, every $A\in\mathcal A$ belongs to $\mathcal D$, whos
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
