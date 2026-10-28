@@ -27,6 +27,8 @@ Calculate
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -108,6 +110,8 @@ is $0$. Hence the residue theorem and step [](#s1-2){.pf-ref} give
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
