@@ -21,6 +21,8 @@ Let \(f:\mathbb D\to\mathbb D\) be holomorphic.
 Suppose there are distinct points \(p,q\in\mathbb D\) such that \(f(p)=p\) and \(f(q)=q\). Show that \(f(z)=z\) for every \(z\in\mathbb D\).
 :::
 
+::: {.solution}
+
 Let
 $$
 \phi_p(z)
@@ -462,6 +464,8 @@ $$
 ::: pf-qed
 
 Step [](#p2-s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
