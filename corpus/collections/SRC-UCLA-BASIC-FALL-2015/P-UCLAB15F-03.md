@@ -30,6 +30,8 @@ g_n(x):=\sum_{m=1}^n(-1)^m f_m(x).
 Prove that $g_n(x)$ converges to some $g(x)\in\mathbb R$ for every $x\in[-1,1]$ and that the resulting function $g:[-1,1]\to\mathbb R$ is continuous.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -213,6 +215,8 @@ Thus
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves pointwise existence of the limit, and steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref} prove continuity of the resulting function.
+
+:::
 
 :::
 
