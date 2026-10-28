@@ -19,6 +19,8 @@ audit:
 Prove carefully that $\mathbb R^2$ is not a countable union of sets $S_i$, $i=1,2,\ldots$, with each $S_i$ contained in some straight line $L_i$ in $\mathbb R^2$.
 :::
 
+::: {.solution}
+
 Let
 \[
 C=\{(t,t^2):t\in\mathbb R\}
@@ -148,6 +150,8 @@ Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} contradict the assumption in ste
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
