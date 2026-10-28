@@ -25,6 +25,8 @@ If one arch of the curve $y = \sin x$ is revolved around the $x$-axis, what's th
 (E) $2\pi^2$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -96,6 +98,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required volume.
+
+:::
 
 :::
 
