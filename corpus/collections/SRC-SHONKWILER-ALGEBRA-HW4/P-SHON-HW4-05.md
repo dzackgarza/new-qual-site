@@ -20,6 +20,8 @@ Find a composition series for $A_4$.
 Deduce that $A_4$ is solvable.
 :::
 
+::: {.solution}
+
 Let
 \[
 V_4=
@@ -232,6 +234,8 @@ A finite group is solvable if it has a subnormal series with abelian factors. Th
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} gives the requested composition series and step [](#s1-11){.pf-ref} gives solvability.
+
+:::
 
 :::
 
