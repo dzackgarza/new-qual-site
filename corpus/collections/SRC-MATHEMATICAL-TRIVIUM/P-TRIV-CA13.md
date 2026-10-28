@@ -19,6 +19,8 @@ audit:
 Compute $\int _ { - \infty } ^ { \infty } \frac { 1 } { 1 + x ^ { 6 } } \mathrm { d } x ;$
 :::
 
+::: {.solution}
+
 Let
 $$
 F(z)=\frac1{1+z^6}.
@@ -196,6 +198,8 @@ Let $R\to\infty$ and use step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required value.
+
+:::
 
 :::
 
