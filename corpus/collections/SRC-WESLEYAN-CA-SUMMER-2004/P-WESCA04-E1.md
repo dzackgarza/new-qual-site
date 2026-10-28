@@ -25,6 +25,8 @@ Give an example each of an analytic function having at the origin:
 3. an essential singularity.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -158,6 +160,8 @@ This is exactly the content of steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-re
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} supplies and classifies all three requested examples.
+
+:::
 
 :::
 
