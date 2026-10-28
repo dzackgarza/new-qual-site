@@ -31,6 +31,8 @@ for some constant $C > 0$. Show that there exists a subsequence $(f_{j_k})$ and 
 \]
 :::
 
+::: {.solution}
+
 Assume
 \[
 \int_{\mathbb C}
@@ -480,6 +482,8 @@ Step [](#s1-17){.pf-ref} is the \(\varepsilon\)-definition of convergence to zer
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives the subsequence and entire limit, and step [](#s1-18){.pf-ref} gives the required weighted \(L^2\) convergence.
+
+:::
 
 :::
 
