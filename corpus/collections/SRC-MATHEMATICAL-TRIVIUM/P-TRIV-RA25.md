@@ -19,6 +19,8 @@ audit:
 Find $\int _ { { \sqrt { 2 } } } ^ { \infty } { \frac { d x } { x + x ^ { \sqrt { 2 } } } } .$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -217,6 +219,8 @@ Substitute $a=\sqrt2-1$ into step [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required value.
+
+:::
 
 :::
 
