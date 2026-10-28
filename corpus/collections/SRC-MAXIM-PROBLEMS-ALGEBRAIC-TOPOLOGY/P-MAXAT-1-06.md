@@ -19,6 +19,8 @@ audit:
 The Euler characteristic of a closed manifold of odd dimension is zero.
 :::
 
+::: {.solution}
+
 Let $M$ be a closed $n$-manifold with $n$ odd. Work with coefficients in $\mathbb F_2$, so orientability is irrelevant.
 
 ::: pf
@@ -117,6 +119,8 @@ The finite sum in step [](#s1-3){.pf-ref} decomposes into the cancelling pairs f
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the claim for every closed odd-dimensional manifold, orientable or not.
+
+:::
 
 :::
 
