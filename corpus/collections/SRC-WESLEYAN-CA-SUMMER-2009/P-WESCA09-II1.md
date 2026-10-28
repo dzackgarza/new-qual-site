@@ -28,6 +28,8 @@ f(z)=Ae^{\alpha z}
 for some $A\in\mathbb C$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -82,6 +84,8 @@ and multiplication by $e^{\alpha z}$ gives the stated formula.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
