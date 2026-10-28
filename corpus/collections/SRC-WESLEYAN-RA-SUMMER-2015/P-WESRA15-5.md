@@ -27,6 +27,8 @@ then
 \]
 :::
 
+::: {.solution}
+
 Define
 $$
 g_n=|f_n|+|f|-|f_n-f|.
@@ -225,6 +227,8 @@ The contradiction in step [](#s1-6){.pf-ref} shows that the negation assumed in 
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is exactly the required $L^1$ convergence.
+
+:::
 
 :::
 
