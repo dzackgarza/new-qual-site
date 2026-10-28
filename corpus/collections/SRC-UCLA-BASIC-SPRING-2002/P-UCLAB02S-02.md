@@ -19,6 +19,8 @@ audit:
 Show that the set $\mathbb Q$ of rational numbers in $\mathbb R$ cannot be expressed as the intersection of a countable collection of open subsets of $\mathbb R$.
 :::
 
+::: {.solution}
+
 Suppose, for contradiction, that
 \[
 \mathbb Q
@@ -160,6 +162,8 @@ Hence the assumed representation cannot exist.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
