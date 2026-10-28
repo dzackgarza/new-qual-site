@@ -20,6 +20,8 @@ Let $U\subset\mathbb C$ be open and let $f:U\to\mathbb C$.
 Define what it means for a function $F$ to be a primitive of $f$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -43,6 +45,8 @@ function on an open set.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the requested definition.
+
+:::
 
 :::
 
