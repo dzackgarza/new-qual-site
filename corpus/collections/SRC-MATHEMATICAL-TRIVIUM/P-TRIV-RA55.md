@@ -23,6 +23,8 @@ Consider the function $J ( a ) = \sum _ { n = 0 } ^ { \infty } n e ^ { - a n }$ 
 (b) Expand J(a) around the point a = 0 up to $O ( a ^ { 0 } )$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -305,6 +307,8 @@ Step [](#s1-11){.pf-ref} includes every term through order $a^0$.
 ::: pf-qed
 
 Steps [](#s1-7){.pf-ref} and [](#s1-12){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
