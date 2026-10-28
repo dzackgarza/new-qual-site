@@ -28,6 +28,8 @@ a_0\sim a_1\quad\Longleftrightarrow\quad f(a_0)=f(a_1).
    Show that there is a bijective correspondence between $A^*$ and $B$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -289,6 +291,8 @@ Steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} show that $\Phi$ is a well-d
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (1), and step [](#s1-9){.pf-ref} proves part (2).
+
+:::
 
 :::
 
