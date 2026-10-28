@@ -25,6 +25,8 @@ Find Jacobi matrix and Jacobian for the change of coordinates in $\mathbb { R } 
 In what regions of $\mathbb { R } ^ { 3 }$ are these coordinate changes regular?
 :::
 
+::: {.solution}
+
 Use spherical coordinates
 $$
 x=r\sin\theta\cos\varphi,
@@ -298,6 +300,8 @@ The determinant is the reciprocal of step [](#s1-9){.pf-ref}.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} solve the spherical case, and steps [](#s1-7){.pf-ref} through [](#s1-11){.pf-ref} solve the
 cylindrical case and identify the regular regions.
+
+:::
 
 :::
 
