@@ -26,6 +26,8 @@ Indeed, no prime ideal contains $R$ itself.
 The proof below establishes the intended statement for nonzero proper ideals.
 :::
 
+::: {.solution}
+
 Call a nonzero proper ideal
 $$
 I\trianglelefteq R
@@ -495,6 +497,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-15){.pf-ref} proves the intended corrected statement.
+
+:::
 
 :::
 
