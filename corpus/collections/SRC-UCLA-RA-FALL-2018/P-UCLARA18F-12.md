@@ -27,6 +27,8 @@ has exactly $n$ simple roots in the half-plane
 \]
 :::
 
+::: {.solution}
+
 Write
 \[
 H(z)=e^z(z-1)^n,
@@ -143,6 +145,8 @@ But \(1-n\le0\) is real, so it does not lie in the open right half-plane. Thus e
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} show that there are exactly \(n\) roots in the right half-plane and that all of them are simple.
+
+:::
 
 :::
 
