@@ -25,6 +25,8 @@ A=\begin{pmatrix}
 Find an invertible complex matrix $P$ for which $P^{-1}AP$ is diagonal.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -112,6 +114,8 @@ so $P$ is invertible. Multiplying the displayed relation on the left by $P^{-1}$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} provides the required invertible matrix and diagonal form.
+
+:::
 
 :::
 
