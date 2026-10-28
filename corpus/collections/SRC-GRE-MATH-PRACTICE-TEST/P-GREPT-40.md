@@ -25,6 +25,8 @@ The tangent line to the curve $y = x^{(e^x)}$ at the point $(1, 1)$ passes throu
 (E) $2e$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -111,6 +113,8 @@ Substituting $x=2$ into step [](#s1-3){.pf-ref} gives $y-1=e$, hence $y=e+1$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
