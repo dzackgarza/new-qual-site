@@ -24,6 +24,8 @@ Suppose that $\{\phi_n\}$ is an orthonormal system of continuous functions in $L
 prove that $S$ is finite dimensional.
 :::
 
+::: {.solution}
+
 Choose $M<\infty$ such that
 \[
 \|f\|_\infty
@@ -145,6 +147,8 @@ By step [](#s1-3){.pf-ref} there are only finitely many functions in the orthono
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
