@@ -23,6 +23,8 @@ Evaluate
 using the residue theorem.
 :::
 
+::: {.solution}
+
 Set
 \[
 F(z)
@@ -307,6 +309,8 @@ Apply step [](#s1-5){.pf-ref} and divide by $2$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required residue-theorem evaluation.
+
+:::
 
 :::
 
