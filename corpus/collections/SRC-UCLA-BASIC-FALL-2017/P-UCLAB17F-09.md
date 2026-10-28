@@ -24,6 +24,8 @@ c_n=\sup_{x\ne y}\frac{\rho(f^n(x),f^n(y))}{\rho(x,y)}.
 If $\sum_{n=1}^\infty c_n<\infty$, prove that $f$ has a unique fixed point.
 :::
 
+::: {.solution}
+
 Fix an arbitrary point
 \[
 x_0\in X
@@ -278,6 +280,8 @@ Step [](#s1-5){.pf-ref} proves existence, and step [](#s1-7){.pf-ref} proves uni
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
