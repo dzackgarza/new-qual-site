@@ -19,6 +19,8 @@ audit:
 State the local Cauchy Theorem.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -61,6 +63,8 @@ Vanishing of all closed-path integrals on a connected open set is equivalent to 
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} is the requested theorem statement; step [](#s1-2){.pf-ref} gives its standard equivalent formulation.
+
+:::
 
 :::
 
