@@ -21,6 +21,8 @@ The Bolzano--Weierstrass theorem in $\mathbb R^n$ states that if $S\subset\mathb
 Assume this theorem for $n=1$ and use it to prove the theorem for $n=2$.
 :::
 
+::: {.solution}
+
 Let
 \[
 x_k=(a_k,b_k)\in S\subseteq\mathbb R^2.
@@ -159,6 +161,8 @@ Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} produce a subsequence of the
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is exactly the desired $n=2$ case.
+
+:::
 
 :::
 
