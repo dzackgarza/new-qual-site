@@ -28,6 +28,8 @@ Prove that there is a linear map $T:V\to W$ such that
 for all $v,v'\in V$.
 :::
 
+::: {.solution}
+
 Let
 \[
 m=\dim V,
@@ -180,6 +182,8 @@ Compare the formulas in steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} constructs the required linear map, and step [](#s1-6){.pf-ref} proves that it preserves the inner product.
+
+:::
 
 :::
 
