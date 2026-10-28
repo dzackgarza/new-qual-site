@@ -24,6 +24,8 @@ uniformly continuous on $[0,\infty)$?
 Prove your assertion.
 :::
 
+::: {.solution}
+
 Yes.
 
 ::: pf
@@ -137,6 +139,8 @@ Thus step [](#s1-2){.pf-ref} is exactly the definition of uniform continuity.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required assertion.
+
+:::
 
 :::
 
