@@ -32,6 +32,8 @@ TT^*=4T-3I.
 Prove that $T$ is positive-definite Hermitian and find all possible eigenvalues of $T$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -326,6 +328,8 @@ Thus
 
 Step [](#s1-4){.pf-ref} proves part (i).
 Steps [](#s1-6){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-9){.pf-ref} prove part (ii): $T$ is Hermitian, its only possible eigenvalues are $1$ and $3$, and it is positive definite.
+
+:::
 
 :::
 
