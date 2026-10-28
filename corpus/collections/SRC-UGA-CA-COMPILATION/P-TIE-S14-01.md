@@ -31,6 +31,8 @@ This is part 1 of question 1 of the Spring 2014 list in the source.
 Part 2 (the same integral over circles not containing the origin) and part 3 (the integral of $\frac{1}{(z-a)(z-b)}$ over $\abs{z} = r$ with $\abs{a} < r < \abs{b}$) are separate cards.
 :::
 
+::: {.solution}
+
 Let the positively oriented circle be
 $$
 \gamma(t)=\rho e^{it},
@@ -156,6 +158,8 @@ This combines steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the value for every integer $n$ without using Cauchy's theorem.
+
+:::
 
 :::
 
