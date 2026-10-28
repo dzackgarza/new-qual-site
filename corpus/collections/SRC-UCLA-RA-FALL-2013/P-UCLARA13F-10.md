@@ -33,6 +33,8 @@ h(x)=\int_{\mathbb R}f(x-y)f(y)\,dy
 is the Fourier transform of $g$.
 :::
 
+::: {.solution}
+
 Use the Fourier-transform convention
 \[
 \widehat q(\xi)=\int_{\mathbb R}e^{-i\xi x}q(x)\,dx.
@@ -226,6 +228,8 @@ Step [](#s1-4){.pf-ref} proves part (a), and steps [](#s1-5){.pf-ref} through []
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves the two requested statements.
+
+:::
 
 :::
 
