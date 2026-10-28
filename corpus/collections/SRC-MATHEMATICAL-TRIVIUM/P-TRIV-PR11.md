@@ -20,6 +20,8 @@ Consider the particle moving in a gas of other particles.
 Given that the last collision of the particle occurred at $t = 0$ , the probability that the next collision will occur between t and $t + \Delta t$ equals $\lambda \Delta t + o ( \Delta t )$ , when $\Delta t \to 0$ . Find the probability $P ( t )$ that the time between the nearest collisions will exceed t.
 :::
 
+::: {.solution}
+
 Interpret the stated infinitesimal law as a constant conditional collision rate: given no collision before time $t$, the probability of a collision during $(t,t+\Delta t]$ is $\lambda\Delta t+o(\Delta t)$.
 
 ::: pf
@@ -97,6 +99,8 @@ The unique solution of the differential equation in step [](#s1-2){.pf-ref} with
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the probability that the intercollision time exceeds $t$.
+
+:::
 
 :::
 
