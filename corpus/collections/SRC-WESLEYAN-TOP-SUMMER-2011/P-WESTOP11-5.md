@@ -22,6 +22,8 @@ audit:
 3. State the Mayer--Vietoris theorem.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -404,6 +406,8 @@ The same theorem may be written in reduced homology as
 Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} define singular homology, steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} construct the
 requested CW complex and compute its homology, and step [](#s1-9){.pf-ref} states the
 Mayer--Vietoris theorem.
+
+:::
 
 :::
 
