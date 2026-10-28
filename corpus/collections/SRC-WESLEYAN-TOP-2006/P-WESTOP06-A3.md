@@ -31,6 +31,8 @@ For each property $P$ determine, with explanation:
    \]
 :::
 
+::: {.solution}
+
 Write \(\kappa=|A|\), and interpret “countable” as “at most countable.”
 
 ::: pf
@@ -182,6 +184,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} establish every entry in the
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives the requested classification for all six properties, for both products and sums.
+
+:::
 
 :::
 
