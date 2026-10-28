@@ -28,6 +28,8 @@ is bounded on $\mathbb C\setminus\{0\}$.
 (b) Show that if $f(0)=0$, then there exist $n\in\mathbb N$ and $a\in\mathbb C$ such that $f(z)=az^n$ for all $z\in\mathbb C$.
 :::
 
+::: {.solution}
+
 Assume
 \[
 |f(z)f(1/z)|\le M
@@ -347,6 +349,8 @@ f(z)=z^nh(z).
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves part (a), and step [](#s1-14){.pf-ref} proves part (b).
+
+:::
 
 :::
 
