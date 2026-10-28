@@ -29,6 +29,8 @@ f(x_{2n+1})=f(x_{2n})
 for every $n$, then $f$ is constant.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -140,6 +142,8 @@ for every $n$. Hence the assumption in step [](#s1-1){.pf-ref} that $f$ is nonco
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
