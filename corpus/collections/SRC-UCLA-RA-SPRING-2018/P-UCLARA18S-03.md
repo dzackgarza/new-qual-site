@@ -25,6 +25,8 @@ Problem 3. Suppose $f\in L^1(\mathbb R)$ satisfies
 Show that $f=0$ almost everywhere.
 :::
 
+::: {.solution}
+
 For $\varepsilon>0$, set
 \[
 I_\varepsilon
@@ -269,6 +271,8 @@ The contrary assumption in step [](#s1-3){.pf-ref} leads to the contradiction in
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
