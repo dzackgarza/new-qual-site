@@ -30,6 +30,8 @@ at the point $Q=(1,1,1)$. Which of the following points also lies in $P$?
 (E) $(-2,4,2)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -112,6 +114,8 @@ none of which is $6$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} identifies the requested point and corresponding choice.
+
+:::
 
 :::
 
