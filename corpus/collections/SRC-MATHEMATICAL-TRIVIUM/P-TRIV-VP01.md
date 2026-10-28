@@ -26,6 +26,8 @@ Consider the functional $S [ f ] = 2 \pi ^ { 2 } \int _ { 0 } ^ { \infty } d x x
 (c) Compute the value of S[f] on these solutions.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -581,6 +583,8 @@ Steps [](#s1-16){.pf-ref} through [](#s1-17){.pf-ref} give the action on all sol
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} and [](#s1-10){.pf-ref}, and [](#s1-18){.pf-ref} establish parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
