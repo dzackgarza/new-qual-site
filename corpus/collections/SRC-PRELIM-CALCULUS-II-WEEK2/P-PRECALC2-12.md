@@ -21,6 +21,8 @@ $$
 converge/diverge?
 :::
 
+::: {.solution}
+
 Consider
 \[
 \sum_{n=2}^{\infty}
@@ -494,6 +496,8 @@ This is the complementary parameter region to step [](#s1-18){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-18){.pf-ref} through [](#s1-19){.pf-ref} give the complete convergence/divergence classification.
+
+:::
 
 :::
 
