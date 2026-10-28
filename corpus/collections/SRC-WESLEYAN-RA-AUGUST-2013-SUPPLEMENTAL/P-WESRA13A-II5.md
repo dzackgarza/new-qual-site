@@ -25,6 +25,8 @@ Must $F'(x)>0$ almost everywhere?
 Must $F$ be strictly increasing?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -130,6 +132,8 @@ Since $0<1$ but $G(0)>G(1)$, the function $G$ is not increasing, and in particul
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give a counterexample to part (a), and steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give a counterexample to part (b).
+
+:::
 
 :::
 
