@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Set $a_1=0$ and define
+Set $a_1=0$ and define
 \[
 a_{n+1}=\sqrt{6+a_n}\qquad(n\ge1).
 \]
