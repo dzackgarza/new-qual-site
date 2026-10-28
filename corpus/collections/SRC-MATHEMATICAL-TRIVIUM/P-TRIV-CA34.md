@@ -26,6 +26,8 @@ Figure 3 of the source shows the contour $C = L_+ \cup C_R \cup L_- \cup \gamma_
 In the source this contour is used with the branch cut on the positive real axis, the radius of $\gamma_\epsilon$ sent to zero and the radius of $C_R$ sent to infinity.
 :::
 
+::: {.solution}
+
 Use the branch
 $$
 \Log z
@@ -387,6 +389,8 @@ Cancel the common factor $-2\pi i$ in step [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required value.
+
+:::
 
 :::
 
