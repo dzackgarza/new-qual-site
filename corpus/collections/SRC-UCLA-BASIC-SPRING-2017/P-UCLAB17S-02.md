@@ -26,6 +26,8 @@ M=\begin{pmatrix}1&0&a&b\\0&1&0&0\\0&c&3&-2\\0&d&2&-1\end{pmatrix},\qquad a,b,c,
 (b) Find the Jordan form when $a=c=d=2$ and $b=-2$.
 :::
 
+::: {.solution}
+
 Set
 \[
 N=M-I.
@@ -291,6 +293,8 @@ J_2(1)\oplus J_2(1).
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} answers part (a), and step [](#s1-9){.pf-ref} answers part (b).
+
+:::
 
 :::
 
