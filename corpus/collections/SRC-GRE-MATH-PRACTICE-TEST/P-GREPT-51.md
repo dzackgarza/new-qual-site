@@ -29,6 +29,8 @@ What is the expectation (mean) of $X$?
 (E) $6$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -125,6 +127,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested mean.
+
+:::
 
 :::
 
