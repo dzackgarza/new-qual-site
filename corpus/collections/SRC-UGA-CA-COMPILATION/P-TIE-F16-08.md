@@ -33,6 +33,8 @@ $$
 which is exactly the strip in which the integral is absolutely convergent.
 :::
 
+::: {.solution}
+
 Fix
 $$
 \xi\in\CC,
@@ -366,6 +368,8 @@ In particular, this holds for every real $\xi$, which is the Fourier-transform c
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required evaluation.
+
+:::
 
 :::
 
