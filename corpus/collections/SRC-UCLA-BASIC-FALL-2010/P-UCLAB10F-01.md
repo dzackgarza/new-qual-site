@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 1. Let $F$ be a closed subset of a metric space $(X,\rho)$.
+Let $F$ be a closed subset of a metric space $(X,\rho)$.
 
 (a) Show that if $K\subset X$ is compact, then $K\cap F=\varnothing$ if and only if
 \[
