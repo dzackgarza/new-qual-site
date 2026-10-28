@@ -21,6 +21,8 @@ Suppose it fell 6 at $t = 0$ . Find the probability $P _ { n } , n \geqslant 1$ 
 Find the limit $\operatorname* { l i m } _ { n \to \infty } P _ { n }$
 :::
 
+::: {.solution}
+
 Track only whether the upper face is $6$, opposite to $6$, or one of the four side faces. Let the corresponding probabilities after $n$ turns be $a_n,b_n,c_n$, with
 \[
 (a_0,b_0,c_0)=(1,0,0).
@@ -152,6 +154,8 @@ In step [](#s1-5){.pf-ref}, $(-1/2)^{n-1}\to0$.
 ::: pf-qed
 
 Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the requested return probability and its limiting value.
+
+:::
 
 :::
 
