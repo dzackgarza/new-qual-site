@@ -25,6 +25,8 @@ Suppose there are a constant $M$ and a fixed positive integer $n$ such that
 Prove that $f$ is a polynomial of degree at most $n$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -144,6 +146,8 @@ The expression in step [](#s1-4){.pf-ref} is a polynomial with no term of degree
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
