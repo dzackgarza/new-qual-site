@@ -28,6 +28,8 @@ Let
 Prove your answer.
 :::
 
+::: {.solution}
+
 On $\Omega_1$, use the branch
 \[
 \Log z=\log|z|+i\arg z,
@@ -245,6 +247,8 @@ Step [](#s1-4){.pf-ref} gives the lower bound and step [](#s1-5){.pf-ref} gives 
 
 Step [](#s1-3){.pf-ref} gives the explicit map requested in part (a), and step [](#s1-6){.pf-ref} answers
 part (b).
+
+:::
 
 :::
 
