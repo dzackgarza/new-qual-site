@@ -19,6 +19,8 @@ audit:
 [NEW] Define Noetherian ring and prove that if R is Noetherian, then R[x] is Noetherian.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -683,6 +685,8 @@ This is Hilbert's basis theorem.
 ::: pf-qed
 
 Step [](#s1-15){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
