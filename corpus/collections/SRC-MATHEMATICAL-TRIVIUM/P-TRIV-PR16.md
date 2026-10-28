@@ -25,6 +25,8 @@ Find the distribution of a random variable $\xi_1 + \xi_2$.
 Repeat the exercise in case if $\xi_{1,2}$ are distributed according to the Poisson distribution with parameters $\lambda_1$ and $\lambda_2$.
 :::
 
+::: {.solution}
+
 Let $S=\xi_1+\xi_2$.
 
 ::: pf
@@ -150,6 +152,8 @@ Step [](#s1-5){.pf-ref} is the Poisson mass function with parameter $\lambda_1+\
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} give the two requested sum distributions.
+
+:::
 
 :::
 
