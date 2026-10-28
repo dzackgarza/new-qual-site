@@ -22,6 +22,8 @@ Consider the quadratic forms $f ( { \vec { x } } ) = x _ { 1 } ^ { 2 } + 2 x _ {
 (b) Find the change of coordinates that reduces f (x) and g(x) to the diagonal form.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -402,6 +404,8 @@ change of coordinates.
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} and [](#s1-15){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
