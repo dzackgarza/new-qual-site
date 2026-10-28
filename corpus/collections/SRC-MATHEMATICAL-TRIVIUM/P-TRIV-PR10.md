@@ -19,6 +19,8 @@ audit:
 ”Buffon’s needle” A needle of length l is thrown randomly on a plane lined with parallel lines with distance d between them, $l < d .$ Find the probability that the needle will cross some line.
 :::
 
+::: {.solution}
+
 Let $X$ be the distance from the needle's center to the nearest parallel line, and let $\Theta$ be the acute angle between the needle and the lines. Under the usual uniform random-throw model,
 \[
 X\sim\operatorname{Unif}[0,d/2],
@@ -99,6 +101,8 @@ Since $\int_0^{\pi/2}\sin\theta\,d\theta=1$, step [](#s1-3){.pf-ref} evaluates t
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives Buffon's needle crossing probability for $l<d$.
+
+:::
 
 :::
 
