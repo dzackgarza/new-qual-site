@@ -34,6 +34,8 @@ U\subseteq F(U).
 \]
 :::
 
+::: {.solution}
+
 Set
 \[
 Y=F(U)\cap U.
@@ -184,6 +186,8 @@ Step [](#s1-5){.pf-ref} says this intersection equals $U$, which is exactly the 
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
