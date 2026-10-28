@@ -24,6 +24,8 @@ Let $V$ be a real vector space with basis $\{e_i\}_{i\in I}$. Define $e_i^\#\in 
 (b) Give necessary and sufficient conditions on $V$ for these vectors to form a basis of $V^*$, and prove your claim.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -230,6 +232,8 @@ Step [](#s1-2){.pf-ref} proves sufficiency, and step [](#s1-6){.pf-ref} proves n
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} proves part (b).
+
+:::
 
 :::
 
