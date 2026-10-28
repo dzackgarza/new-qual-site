@@ -20,6 +20,8 @@ Let R be a principal ideal domain.
 Show that if (a) is a nonzero ideal in R, then there are only finitely many ideals in R containing (a).
 :::
 
+::: {.solution}
+
 Assume
 $$
 (a)\ne(0).
@@ -305,6 +307,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
