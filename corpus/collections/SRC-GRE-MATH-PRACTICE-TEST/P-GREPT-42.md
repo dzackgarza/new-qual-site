@@ -27,6 +27,8 @@ $$\mathbf{v}_1 = \begin{pmatrix} 1 \\ -1 \\ 0 \\ 1 \end{pmatrix}, \quad \mathbf{
 (E) $5$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -97,6 +99,8 @@ $2$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required dimension.
+
+:::
 
 :::
 
