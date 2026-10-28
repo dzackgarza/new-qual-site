@@ -18,6 +18,8 @@ $$\tau'\subsetneq\tau.$$
 Show that $(X,\tau')$ is compact but not Hausdorff.
 :::
 
+::: {.solution}
+
 ## Compactness
 
 ::: pf
@@ -286,6 +288,8 @@ The assumption that \((X,\tau')\) was Hausdorff led to the contradiction in step
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves compactness, and step [](#s1-15){.pf-ref} proves failure of the Hausdorff property.
+
+:::
 
 :::
 
