@@ -27,6 +27,8 @@ $$A = \begin{pmatrix} 0 & 1 \\ -1 & -1 \end{pmatrix}$$
 (E) $\infty$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -114,6 +116,8 @@ and $2$, so the least positive exponent with $A^n=I$ is $3$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested order.
+
+:::
 
 :::
 
