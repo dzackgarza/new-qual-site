@@ -19,6 +19,8 @@ audit:
 3. For each chosen invariant, prove or disprove the same assertion under the additional hypothesis that $X$ is metrizable.
 :::
 
+::: {.solution}
+
 Use the following three cardinal invariants.
 
 ::: pf
@@ -550,6 +552,8 @@ The weight assertions are step [](#s1-2){.pf-ref}; the general counterexamples f
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} define three standard cardinal invariants and completely determine the requested closed-subspace inequalities in the general and metrizable cases.
+
+:::
 
 :::
 
