@@ -19,6 +19,8 @@ audit:
 Solve $y ^ { \prime \prime } + 3 y ^ { \prime } + 2 y = \operatorname { t a n h } x$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -268,6 +270,8 @@ Combine steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} and multiply the par
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} gives the complete two-parameter solution family.
+
+:::
 
 :::
 
