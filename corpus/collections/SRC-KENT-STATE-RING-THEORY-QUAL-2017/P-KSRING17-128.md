@@ -25,6 +25,8 @@ $$
 Show that I is an ideal of R.
 :::
 
+::: {.solution}
+
 Let
 $$
 \iota:R\to D^{-1}R
@@ -295,6 +297,8 @@ Thus $I$ is an ideal.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
