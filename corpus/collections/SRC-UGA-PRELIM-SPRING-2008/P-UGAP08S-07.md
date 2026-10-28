@@ -36,6 +36,8 @@ g(x,y)=
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -254,6 +256,8 @@ origin.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives the requested classification.
+
+:::
 
 :::
 
