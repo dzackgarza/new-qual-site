@@ -23,6 +23,8 @@ x ^ { 2 } + y ^ { 2 } + z ^ { 2 } \leq 4 , \qquad x ^ { 2 } - 2 x + y ^ { 2 } + 
 $$
 :::
 
+::: {.solution}
+
 Let
 \[
 B_2=\{(x,y,z):x^2+y^2+z^2\le4\}
@@ -307,6 +309,8 @@ Subtract the cap volume from step [](#s1-7){.pf-ref} from the half-ball volume i
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the requested volume.
+
+:::
 
 :::
 
