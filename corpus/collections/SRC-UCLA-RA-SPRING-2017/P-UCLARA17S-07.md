@@ -28,6 +28,8 @@ onto the closed annulus
 such that $f$ is analytic on the open annulus $\{1<|z|<R\}$. Prove that $S=R$.
 :::
 
+::: {.solution}
+
 Let
 $$
 A_R\coloneqq\{z:1<|z|<R\},
@@ -200,6 +202,8 @@ Since $R,S>1$, both logarithms are positive, so $\log R=\log S$ and hence $R=S$.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
