@@ -24,6 +24,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 Let
 $$
 M=
@@ -196,6 +198,8 @@ Combine steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required identity.
+
+:::
 
 :::
 
