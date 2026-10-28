@@ -29,6 +29,8 @@ Prove that
 is countable.
 :::
 
+::: {.solution}
+
 For each positive integer $n$, define
 \[
 E_n
@@ -164,6 +166,8 @@ Every countable union of finite sets is countable.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
