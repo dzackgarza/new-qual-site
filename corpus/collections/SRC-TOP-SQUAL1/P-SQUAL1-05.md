@@ -18,6 +18,8 @@ Compute
 $$\pi_1\bigl(T^2\setminus\{x,y,z\}\bigr).$$
 :::
 
+::: {.solution}
+
 Let
 \[
 X=T^2\setminus\{x,y,z\}.
@@ -221,6 +223,8 @@ Combine steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required computation.
+
+:::
 
 :::
 
