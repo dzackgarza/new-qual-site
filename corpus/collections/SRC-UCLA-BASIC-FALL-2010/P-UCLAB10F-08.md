@@ -24,6 +24,8 @@ Prove that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -156,6 +158,8 @@ while the orthogonal complement of the right side of step [](#s1-3){.pf-ref} is
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required identity.
+
+:::
 
 :::
 
