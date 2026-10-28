@@ -35,6 +35,8 @@ Prove that $n$ is odd.
 (In fact $n$ must be $1$, $3$, or $7$, but this stronger result is considerably harder.)
 :::
 
+::: {.solution}
+
 Let
 \[
 u\in H^n(S^n;\mathbb Z)
@@ -499,6 +501,8 @@ Every positive integer is either even or odd, and step [](#s1-18){.pf-ref} exclu
 ::: pf-qed
 
 Step [](#s1-19){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
