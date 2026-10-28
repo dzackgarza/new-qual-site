@@ -19,6 +19,8 @@ audit:
 Show that the flux of the vector field $\vec { A } = q \frac { \vec { r } } { r ^ { 3 } } , q = \mathrm { C o n s t }$ , through the sphere containing the origin equals 4πq.
 :::
 
+::: {.solution}
+
 Let
 $$
 \vec A(x)
@@ -210,6 +212,8 @@ Combine steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required flux.
+
+:::
 
 :::
 
