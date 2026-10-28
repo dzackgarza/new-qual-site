@@ -19,6 +19,8 @@ audit:
 Give the definition of a cycle.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -50,6 +52,8 @@ Equivalently, a cycle is an integral \(1\)-chain whose boundary is zero.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the requested definition.
+
+:::
 
 :::
 
