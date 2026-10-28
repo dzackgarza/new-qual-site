@@ -21,6 +21,8 @@ f\bigl(f^{-1}(S)\bigr)=S.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -151,6 +153,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give the requested necessary and sufficient condition.
+
+:::
 
 :::
 
