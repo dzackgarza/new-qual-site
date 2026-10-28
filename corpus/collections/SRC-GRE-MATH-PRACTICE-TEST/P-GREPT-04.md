@@ -25,6 +25,8 @@ Let $A = \{\varnothing, a\}$, where $\varnothing$ is the empty set. If $B$ is th
 (E) $8$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -94,6 +96,8 @@ choice follows from the stated hypotheses.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves that the problem is underdetermined as written.
+
+:::
 
 :::
 
