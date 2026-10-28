@@ -19,6 +19,8 @@ audit:
 Prove the Suspension Theorem for homotopy groups.
 :::
 
+::: {.solution}
+
 The suspension theorem is the Freudenthal suspension theorem: if $X$ is $(r-1)$-connected, $r\geq1$, then the suspension homomorphism
 \[
 E:\pi_i(X)\longrightarrow\pi_{i+1}(\Sigma X)
@@ -181,6 +183,8 @@ The sphere $S^n$ is $(n-1)$-connected, so set $r=n$ in step [](#s1-6){.pf-ref} a
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the Freudenthal suspension theorem, and step [](#s1-7){.pf-ref} records its standard sphere formulation.
+
+:::
 
 :::
 
