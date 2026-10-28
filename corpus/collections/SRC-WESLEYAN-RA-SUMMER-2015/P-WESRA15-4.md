@@ -23,6 +23,8 @@ E=[0,1]\setminus\mathbb Q.
 Construct a closed set $F\subset E$ whose Lebesgue measure exceeds $3/4$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -139,6 +141,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give a closed set $F\subset E$ with the required measure.
+
+:::
 
 :::
 
