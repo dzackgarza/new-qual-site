@@ -26,6 +26,8 @@ f(x,y)=x^2-y^2.
 Next compute and draw $\nabla f$ at a representative collection of points in $\mathbb R^2$. Explain how gradients and level sets must be related in general.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -223,6 +225,8 @@ so there is no single tangent line there. This is exactly where the usual nonzer
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} describe the level sets and gradient field, while steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} establish their general geometric relation and identify the exceptional critical point.
+
+:::
 
 :::
 
