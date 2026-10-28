@@ -22,6 +22,8 @@ Suppose that subgroups $H$ and $K$ of some group have order $12$ and $30$ repect
 (a) $30$ (b) $60$ (c) $120$ (d) $360$ (e) countable infinity
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -175,6 +177,8 @@ listed possibility.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives the requested answer.
+
+:::
 
 :::
 
