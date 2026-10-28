@@ -29,6 +29,8 @@ g(t)\le \liminf_{k\to\infty}g(t_k).
 Is $g$ always continuous?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -161,6 +163,8 @@ Thus $g$ is discontinuous at $0$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves lower semicontinuity, and step [](#s1-6){.pf-ref} answers the continuity question negatively.
+
+:::
 
 :::
 
