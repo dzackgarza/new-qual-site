@@ -53,6 +53,8 @@ Give an example of each of the following.
 (q) A non-commutative ring with exactly two maximal ideals.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -599,6 +601,8 @@ The last two are maximal because the corresponding quotients are each isomorphic
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-17){.pf-ref} provide and justify examples for parts (a)--(q), respectively.
+
+:::
 
 :::
 
