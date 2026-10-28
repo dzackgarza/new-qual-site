@@ -25,6 +25,8 @@ Which of the following is NOT a tautology?
 (E) $A \lor (B \land C) \leftrightarrow (A \land B) \lor (A \land C)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -135,6 +137,8 @@ Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} show that both (C) and the print
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives both the literal status of the printed question and the intended answer.
+
+:::
 
 :::
 
