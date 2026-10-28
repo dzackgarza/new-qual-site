@@ -20,6 +20,8 @@ audit:
 What is the set of points $z \in \CC$ such that $z^2 = \abs{z}^2$?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -104,6 +106,8 @@ that every real number is a solution.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested set.
+
+:::
 
 :::
 
