@@ -17,6 +17,8 @@ Hint: Assume $X = \textstyle \bigcup _ { n } K _ { n }$ where each $K _ { n }$ i
 Show there is $x _ { 1 } \in X$ and $0 < \delta _ { 1 } < 1 / 2$ such that $B _ { 1 } = B ( x _ { 1 } , \delta _ { 1 } ) = \{ y \in X : d ( y , x ) < \delta _ { 1 } \}$ satisfies $B _ { 1 } \cap K _ { 1 } = \emptyset$ and there is $x _ { 2 } \in X$ and $\begin{array} { r } { 0 < \delta _ { 2 } < \frac { \delta _ { 1 } } { 2 } } \end{array}$ such that $B _ { 2 } = B ( x _ { 2 } , \delta _ { 2 } )$ satisfies $B _ { 2 } \subset B _ { 1 }$ and $B _ { 2 } \cap K _ { 2 } = \emptyset$ . Then continue by induction to find a sequence $\{ x _ { n } \}$ in X that converges to $x \in X \backslash \bigcup _ { n = 1 } ^ { \infty } K _ { n }$
 :::
 
+::: {.solution}
+
 Assume $X\ne\varnothing$, as is standard in the Baire category theorem.
 Suppose for contradiction that
 \[
@@ -252,6 +254,8 @@ This is exactly the contradiction established in step [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the Baire category theorem in the form requested.
+
+:::
 
 :::
 
