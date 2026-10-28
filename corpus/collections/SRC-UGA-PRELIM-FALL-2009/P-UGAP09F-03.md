@@ -23,6 +23,8 @@ x+2x^2+3x^3+\cdots+nx^n
 \]
 :::
 
+::: {.solution}
+
 Fix $x\in\RR$ with $x\ne1$, and let $S_n\coloneqq\sum_{k=1}^n kx^k$.
 
 ::: pf
@@ -87,6 +89,8 @@ Step [](#s1-1){.pf-ref} is the base case and step [](#s1-2){.pf-ref} is the indu
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required identity.
+
+:::
 
 :::
 
