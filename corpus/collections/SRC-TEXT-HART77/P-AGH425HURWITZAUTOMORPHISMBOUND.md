@@ -282,7 +282,7 @@ Now
 $$
 E
 =
-1-left(\frac1{r_1}+\frac1{r_2}+\frac1{r_3}\right),
+1-\left(\frac1{r_1}+\frac1{r_2}+\frac1{r_3}\right),
 $$
 so we must maximize the reciprocal sum subject to it being strictly less
 than $1$.
