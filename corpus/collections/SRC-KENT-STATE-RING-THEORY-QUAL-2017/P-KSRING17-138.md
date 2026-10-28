@@ -19,6 +19,8 @@ audit:
 Show that if R is a commutative Noetherian ring with identity, then the polynomial ring R[x] is also Noetherian.
 :::
 
+::: {.solution}
+
 Let
 $$
 I\trianglelefteq R[x].
@@ -469,6 +471,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-12){.pf-ref} is Hilbert's basis theorem.
+
+:::
 
 :::
 
