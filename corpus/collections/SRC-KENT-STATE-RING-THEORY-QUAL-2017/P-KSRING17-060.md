@@ -19,6 +19,8 @@ audit:
 Show that if R is a finite commutative ring with identity then every prime ideal of R is a maximal ideal.
 :::
 
+::: {.solution}
+
 Let
 $$
 P
@@ -173,6 +175,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
