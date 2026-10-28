@@ -26,6 +26,8 @@ Discuss the truth of each statement.
 (d) There is an integer $x$ such that $xy$ is even for every integer $y$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -103,6 +105,8 @@ which is even. Thus such an integer $x$ exists.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} determine the truth of all four statements.
+
+:::
 
 :::
 
