@@ -20,6 +20,8 @@ Let R be a finite commutative ring with more than one element and no zero-diviso
 Show that R is a field.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -178,6 +180,8 @@ By step [](#s1-3){.pf-ref}, $R$ is a nonzero commutative ring with identity. By 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
