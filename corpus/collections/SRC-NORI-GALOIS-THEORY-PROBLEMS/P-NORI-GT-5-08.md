@@ -20,6 +20,8 @@ Let $K / F$ be a finite Galois extension with Galois group G. Assume that K cont
 Let $a \ \in \ K ^ { \times }$ Prove that every normal extension of F that contains $K ( a ^ { 1 / p } )$ necessarily contains the field L obtained from K by adjoining p-th roots of $\sigma ( a )$ for all $\sigma \in G )$
 :::
 
+::: {.solution}
+
 Choose $b$ with $b^p=a$, so that $K(a^{1/p})=K(b)$. Let $M/F$ be a normal extension containing $K(b)$.
 
 ::: pf
@@ -102,6 +104,8 @@ Because $K$ contains a primitive $p$-th root of unity, adjoining one $p$-th root
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the required containment $L\subseteq M$ for every normal extension $M/F$ containing $K(a^{1/p})$.
+
+:::
 
 :::
 
