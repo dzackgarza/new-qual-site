@@ -26,6 +26,8 @@ Find the volume of the solid in the first octant of $xyz$-space, bounded below b
 (E) $8$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -82,6 +84,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested volume and corresponding choice.
+
+:::
 
 :::
 
