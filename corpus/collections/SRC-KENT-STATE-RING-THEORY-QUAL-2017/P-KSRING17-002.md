@@ -23,6 +23,8 @@ Explain your answer.
 Explain your answer.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -171,6 +173,8 @@ By step [](#s1-3){.pf-ref}, this is exactly the number of ideals of $\ZZ/60\ZZ$.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} answers part (a), and step [](#s1-4){.pf-ref} answers part (b).
+
+:::
 
 :::
 
