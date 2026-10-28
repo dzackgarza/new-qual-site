@@ -26,6 +26,8 @@ F(x)=f(x)
 for every $x\in(0,1)$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -189,6 +191,8 @@ so \(F\) is continuous at \(1\).
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), and step [](#s1-5){.pf-ref} constructs the continuous extension required in part (b).
+
+:::
 
 :::
 
