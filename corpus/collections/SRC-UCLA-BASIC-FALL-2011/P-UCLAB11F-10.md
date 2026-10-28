@@ -30,6 +30,8 @@ for some real $\theta$.
 What values of $\theta$ are possible?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -262,6 +264,8 @@ so the corresponding rotation block has cube equal to the identity.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} gives both the required real similarity form and all possible values of $\theta$.
+
+:::
 
 :::
 
