@@ -41,6 +41,8 @@ f(z)=\int_{\mathbb R}\frac{d\mu(x)}{x-z}.
 \]
 :::
 
+::: {.solution}
+
 Fix $\varepsilon>0$ and define
 \[
 u_\varepsilon(z)
@@ -449,6 +451,8 @@ The given normalization makes the same limit equal to $i$. Therefore
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves part (a). Steps [](#s1-9){.pf-ref} through [](#s1-11){.pf-ref} produce a Borel probability measure $\mu$ and prove the representation required in part (b).
+
+:::
 
 :::
 
