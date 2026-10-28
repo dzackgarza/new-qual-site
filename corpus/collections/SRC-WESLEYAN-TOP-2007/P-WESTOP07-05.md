@@ -18,6 +18,8 @@ Give an intrinsic condition on a topological space $X$ characterizing each of th
 3. $X$ is homeomorphic to an arbitrary subspace of a simply connected space, where simply connected means path-connected with trivial fundamental group.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -382,6 +384,8 @@ These are steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-5){.pf-ref
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives the requested intrinsic characterizations.
+
+:::
 
 :::
 
