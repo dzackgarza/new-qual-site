@@ -28,6 +28,8 @@ Let $\mathcal{H}$ be a separable infinite-dimensional Hilbert space and assume t
 (b) Assume that we only have $\sum_{n=1}^{\infty} \|f_n - e_n\|^2 < \infty$. Prove that it is still true that $(e_n)$ is complete.
 :::
 
+::: {.solution}
+
 Let
 \[
 F:\ell^2(\mathbb N)\to\mathcal H,
@@ -463,6 +465,8 @@ This is exactly step [](#s1-19){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-20){.pf-ref} proves part (b).
+
+:::
 
 :::
 
