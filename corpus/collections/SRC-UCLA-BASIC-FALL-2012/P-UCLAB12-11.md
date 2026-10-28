@@ -15,6 +15,8 @@ review: draft
 Show that an n by n matrix A can be factored as $A = L U ,$ where L is lower triangular, and U is upper triangular, provided each determinant det $A _ { j }$ ,for $j = 1 , \ldots , n - 1$ , is non-zero, where $A _ { j }$ is the submatrix of A consisting of the first $j$ rows and the first j columns.
 :::
 
+::: {.solution}
+
 The proof is by induction on $n$.
 
 ::: pf
@@ -253,6 +255,8 @@ c&D
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} is the base case, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} prove the induction step. Thus the factorization exists for every $n$ under the stated hypotheses.
+
+:::
 
 :::
 
