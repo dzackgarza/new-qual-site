@@ -24,6 +24,8 @@ d(f(x),f(y))<d(x,y)\qquad\text{for all }x\ne y.
 Prove that there is a unique point $x\in X$ such that $f(x)=x$.
 :::
 
+::: {.solution}
+
 Define
 \[
 h:X\to\mathbb R,
@@ -180,6 +182,8 @@ an impossibility. Hence no two distinct fixed points exist.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves existence, and step [](#s1-6){.pf-ref} proves uniqueness.
+
+:::
 
 :::
 
