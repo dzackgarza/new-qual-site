@@ -20,6 +20,8 @@ Suppose that
 Show that $\mu$ is supported at $\{0\}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -178,6 +180,8 @@ Thus $\mu$ is supported at $0$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
