@@ -19,6 +19,8 @@ audit:
 Find an extremum of the functional $J [ f ] = \int _ { 0 } ^ { \pi / 2 } d x ( f ^ { \prime 2 } - f ^ { 2 } )$ in a class of functions $f \in C ^ { 2 } [ 0 , \pi / 2 ]$ satisfying the boundary conditions $f ( 0 ) = 0 , f ( \pi / 2 ) =$ 1.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -294,6 +296,8 @@ admissible function has strictly larger functional value.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} gives the required extremum and its value.
+
+:::
 
 :::
 
