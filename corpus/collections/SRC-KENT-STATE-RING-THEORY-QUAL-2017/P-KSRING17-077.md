@@ -21,6 +21,8 @@ Let $I$ be a nonzero ideal of $S$.
 Prove that $I\cap R$ is a nonzero ideal of $R$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -227,6 +229,8 @@ Step [](#s1-5){.pf-ref} exhibits a nonzero element of the intersection.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
