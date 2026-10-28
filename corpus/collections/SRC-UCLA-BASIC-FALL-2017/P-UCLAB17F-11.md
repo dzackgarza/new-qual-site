@@ -23,6 +23,8 @@ ab\le \frac{a^p}{p}+\frac{b^q}{q}.
 \]
 :::
 
+::: {.solution}
+
 Fix
 \[
 b\ge0
@@ -330,6 +332,8 @@ Move the term $ab$ to the other side.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required inequality.
+
+:::
 
 :::
 
