@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Call a real symmetric $n\times n$ matrix $A$ a reflection if
+Call a real symmetric $n\times n$ matrix $A$ a reflection if
 \[
 A^2=I,
 \qquad
