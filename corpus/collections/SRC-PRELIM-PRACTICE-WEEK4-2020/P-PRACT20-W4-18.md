@@ -22,6 +22,8 @@ If $A,B$ are subspaces of $V$, which of the following are necessarily subspaces 
 (d) $A^c=\{x\in V:x\notin A\}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -178,6 +180,8 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove that (a) and (c) always wo
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the complete answer.
+
+:::
 
 :::
 
