@@ -21,6 +21,8 @@ Give Hausdorff examples of each requested phenomenon:
 6. a separable space that is not metrizable.
 :::
 
+::: {.solution}
+
 Let \(\mathbb S\) denote the Sorgenfrey line.
 
 ## 1. Normal factors with nonnormal product
@@ -697,6 +699,8 @@ It is separable by step [](#s1-27){.pf-ref} and nonmetrizable by step [](#s1-29)
 
 Steps [](#s1-11){.pf-ref}, [](#s1-16){.pf-ref}, [](#s1-17){.pf-ref} through [](#s1-20){.pf-ref}, [](#s1-23){.pf-ref}, and [](#s1-26){.pf-ref}, and [](#s1-30){.pf-ref} provide the six
 requested Hausdorff examples.
+
+:::
 
 :::
 
