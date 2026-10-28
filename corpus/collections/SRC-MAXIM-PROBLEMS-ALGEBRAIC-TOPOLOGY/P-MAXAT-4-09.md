@@ -19,6 +19,8 @@ audit:
 Show that the p-torsion in $\pi _ { i } ( S ^ { 3 } )$ appears first for $i = 2 p$ and it is $\mathbb { Z } _ { p } .$
 :::
 
+::: {.solution}
+
 Fix a prime $p$. Let
 \[
 u:S^3\longrightarrow K(\mathbb Z,3)
@@ -520,6 +522,8 @@ homotopy groups of $S^3$ occurs in $\pi_{2p}(S^3)$ and is
 \[
 \mathbb Z/p.
 \]
+
+:::
 
 :::
 
