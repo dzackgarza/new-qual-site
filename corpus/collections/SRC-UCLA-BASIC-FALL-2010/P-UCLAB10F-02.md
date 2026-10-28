@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Suppose $f$ is bounded on $[a,b]$.
+Suppose $f$ is bounded on $[a,b]$.
 
 (a) Define what it means for $f$ to be Riemann integrable on $[a,b]$.
 
