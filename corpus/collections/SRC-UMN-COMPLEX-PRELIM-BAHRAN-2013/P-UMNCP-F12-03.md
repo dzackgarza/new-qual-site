@@ -24,6 +24,8 @@ For \(\alpha>0\), evaluate
 carefully justifying all steps.
 :::
 
+::: {.solution}
+
 Set
 $$
 I(\alpha)
@@ -255,6 +257,8 @@ Now apply steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required evaluation.
+
+:::
 
 :::
 
