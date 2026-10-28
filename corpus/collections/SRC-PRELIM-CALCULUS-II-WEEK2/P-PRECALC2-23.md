@@ -15,6 +15,8 @@ review: draft
 Decide whether the following integral converges: $\int _ { 0 } ^ { \infty } { \frac { d x } { 1 + x ^ { 4 } \sin ^ { 2 } ( x ) } }$
 :::
 
+::: {.solution}
+
 Let
 \[
 f(x)
@@ -412,6 +414,8 @@ converges by step [](#s1-12){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} is the required convergence decision.
+
+:::
 
 :::
 
