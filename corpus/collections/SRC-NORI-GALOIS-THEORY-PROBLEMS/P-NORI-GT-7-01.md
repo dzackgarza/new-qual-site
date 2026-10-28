@@ -29,6 +29,8 @@ Hint: Let $b \in K$ . Let $a \in K$ denote the sum of $\chi ( \sigma ) ^ { - 1 }
 Use Dedekind’s “linear independence of characters” to show that there is some $b \in K$ such that the above a is nonzero.
 :::
 
+::: {.solution}
+
 For $b\in K$, define
 $$
 P_\chi(b)=\sum_{\sigma\in G}\chi(\sigma)^{-1}\sigma(b).
@@ -168,6 +170,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the required statement.
+
+:::
 
 :::
 
