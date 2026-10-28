@@ -20,6 +20,8 @@ The dice is thrown 12000 times.
 Find the probability that the total number of 6’s lies between 1800 and 2100.
 :::
 
+::: {.solution}
+
 Let $X$ be the number of sixes in the $12000$ independent throws. Then
 \[
 X\sim\operatorname{Binomial}\left(12000,\frac16\right).
@@ -129,6 +131,8 @@ The lower-tail term $\Phi(-4.9114)$ is about $4.5\times10^{-7}$, while $\Phi(2.4
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested normal approximation to the binomial probability.
+
+:::
 
 :::
 
