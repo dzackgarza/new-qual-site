@@ -22,6 +22,8 @@ x-y+z-w=10,
 by row-reducing the augmented matrix. Then find two linearly independent vectors perpendicular to the kernel of the coefficient matrix.
 :::
 
+::: {.solution}
+
 Let
 \[
 A=
@@ -170,6 +172,8 @@ vectors.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} contains both requested outputs.
+
+:::
 
 :::
 
