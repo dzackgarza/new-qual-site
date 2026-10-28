@@ -25,6 +25,8 @@ Classify each indicated isolated singularity as removable, a pole, or essential;
 3. $\displaystyle \frac{\cos(1/z)}{z^3}$ at $z=0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -157,6 +159,8 @@ This is exactly the combination of steps [](#s1-1){.pf-ref} through [](#s1-3){.p
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives all three requested classifications, including the order of the only pole.
+
+:::
 
 :::
 
