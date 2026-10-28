@@ -25,6 +25,8 @@ Show that
 also diverges.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -161,6 +163,8 @@ These cases exhaust all possibilities.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
