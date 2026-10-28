@@ -18,6 +18,8 @@ Show that there is no retraction
 $$M\longrightarrow S.$$
 :::
 
+::: {.solution}
+
 Use the standard quotient model
 \[
 M=
@@ -299,6 +301,8 @@ The assumption of a retraction led to the contradiction in step [](#s1-13){.pf-r
 ::: pf-qed
 
 Step [](#s1-14){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
