@@ -19,6 +19,8 @@ audit:
 State the most general version of Cauchy's Theorem.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -268,6 +270,8 @@ Apply step [](#s1-1){.pf-ref}.
 
 Steps [](#s1-1){.pf-ref} and [](#s1-6){.pf-ref} state the most general planar Cauchy theorem in its
 homological and winding-number forms; steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} prove it.
+
+:::
 
 :::
 
