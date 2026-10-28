@@ -25,6 +25,8 @@ v=v_1+v_2
 with $T(v_1)=v_1$ and $T(v_2)=0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -268,6 +270,8 @@ Uniqueness of the decomposition means the sum is direct.
 ::: pf-qed
 
 Steps [](#s1-5){.pf-ref} and [](#s1-8){.pf-ref} prove existence and uniqueness of the required decomposition.
+
+:::
 
 :::
 
