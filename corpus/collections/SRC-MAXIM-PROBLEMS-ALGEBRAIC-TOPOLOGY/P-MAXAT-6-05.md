@@ -19,6 +19,8 @@ audit:
 Show that if n is a power of 2, then $\mathbb { R P } ^ { n }$ cannot be smoothly embedded in $\mathbb { R } ^ { 2 n - 1 }$
 :::
 
+::: {.solution}
+
 Let
 \[
 n=2^r,
@@ -214,6 +216,8 @@ The contradiction in step [](#s1-7){.pf-ref} disproves the assumed embedding.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required nonembedding result.
+
+:::
 
 :::
 
