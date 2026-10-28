@@ -15,6 +15,8 @@ review: draft
 Classify all abelian groups of order 600 (up to isomorphism).
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -141,6 +143,8 @@ These are the six cases counted in step [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the complete classification up to isomorphism.
+
+:::
 
 :::
 
