@@ -37,6 +37,8 @@ output gcd;
 (E) $7$
 :::
 
+::: {.solution}
+
 Interpreting the update lines in the displayed pseudocode as assignments, one loop iteration replaces $(a,b)$ by $(b,a\bmod b)$.
 
 ::: pf
@@ -94,6 +96,8 @@ By step [](#s1-1){.pf-ref}, the value of $b$ becomes $0$ for the first time afte
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested iteration count.
+
+:::
 
 :::
 
