@@ -26,6 +26,8 @@ Let $x_1$ and $x_2$ be the two smallest positive integers for which the followin
 (E) $47$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -91,6 +93,8 @@ By step [](#s1-2){.pf-ref}, every solution has the form $14+19t$ with $t\in\ZZ$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested sum.
+
+:::
 
 :::
 
