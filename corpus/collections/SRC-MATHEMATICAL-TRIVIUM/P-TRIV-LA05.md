@@ -30,6 +30,8 @@ Write the relations between their determinants, if
 (c) $B = c \cdot A$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -138,6 +140,8 @@ Since both determinants are nonzero, $c^n\neq0$, hence $c\neq0$.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the requested determinant relations.
+
+:::
 
 :::
 
