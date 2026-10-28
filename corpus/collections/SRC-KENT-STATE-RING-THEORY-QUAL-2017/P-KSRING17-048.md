@@ -26,6 +26,8 @@ is a field.
 Justify your answer.
 :::
 
+::: {.solution}
+
 For
 $$
 a\in\FF_5,
@@ -266,6 +268,8 @@ Step [](#s1-1){.pf-ref} then gives the corresponding field quotients.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives the complete list.
+
+:::
 
 :::
 
