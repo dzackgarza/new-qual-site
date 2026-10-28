@@ -26,6 +26,8 @@ a. Show that $G$ is not simple.
 b. Exhibit 3 nonisomorphic groups of order 70 and prove that they are not isomorphic.
 :::
 
+::: {.solution}
+
 Let $D_{2n}$ denote the dihedral group of order $2n$.
 
 ::: pf
@@ -75,6 +77,8 @@ The group $C_{70}$ is abelian, whereas both dihedral groups $D_{70}$ and $D_{14}
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), and steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove part (b).
+
+:::
 
 :::
 
