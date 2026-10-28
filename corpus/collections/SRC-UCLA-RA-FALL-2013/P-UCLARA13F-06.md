@@ -25,6 +25,8 @@ Show that
 Hint: consider the iterates $f^n=f\circ\cdots\circ f$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -160,6 +162,8 @@ If $|f'(0)|>1$, then $|f'(0)|^n\to\infty$ as $n\to\infty$, contradicting the uni
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required derivative bound.
+
+:::
 
 :::
 
