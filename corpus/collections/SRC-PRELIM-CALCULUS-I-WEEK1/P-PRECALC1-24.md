@@ -18,6 +18,8 @@ Calculate
 \]
 :::
 
+::: {.solution}
+
 For \(t\ne0\) near \(0\), define
 \[
 g(t)
@@ -326,6 +328,8 @@ This is step [](#s1-12){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} is the requested limit.
+
+:::
 
 :::
 
