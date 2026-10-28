@@ -171,7 +171,7 @@ Therefore
 
 ::: pf-proof
 
-The Cauchy sequence $(f_n)$ was arbitrary, and step [](#s1-5){.pf-ref} proves that every such sequence converges in $C[0,1]$. The argument in step [](#s1-4){.pf-ref} also proves the uniform-limit theorem directly, so it covers the stricter Fall 2003 appearance of this problem as well.
+The Cauchy sequence $(f_n)$ was arbitrary, and step [](#s1-5){.pf-ref} proves that every such sequence converges in $C[0,1]$.
 
 :::
 
