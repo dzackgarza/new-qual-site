@@ -24,6 +24,8 @@ for every $n$.
 Prove that there is no bijection from $\mathbb N=\{1,2,\ldots\}$ onto $S$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -129,6 +131,8 @@ Every bijection is surjective, and step [](#s1-5){.pf-ref} rules out every surje
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
