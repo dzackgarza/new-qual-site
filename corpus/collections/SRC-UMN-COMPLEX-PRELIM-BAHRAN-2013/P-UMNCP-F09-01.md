@@ -24,6 +24,8 @@ g(z)=6z^3+e^z+1
 have in the unit disk \(|z|<1\)?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -123,6 +125,8 @@ has a zero of multiplicity $3$ at $z=0$ and no other zeros. By step [](#s1-2){.p
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required number of roots.
+
+:::
 
 :::
 
