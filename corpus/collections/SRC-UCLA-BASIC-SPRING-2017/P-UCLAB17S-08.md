@@ -23,6 +23,8 @@ Show that there is a constant $C$ such that every $C^2$ function $f:\mathbb R\to
 \]
 :::
 
+::: {.solution}
+
 Define
 \[
 K(x)=\frac{x(1-x)}2.
@@ -254,6 +256,8 @@ Thus the desired inequality holds with
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required estimate.
+
+:::
 
 :::
 
