@@ -20,6 +20,8 @@ Let R be a commutative ring with identity.
 Show that R is an integral domain if and only if R is a subring of a field.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -274,6 +276,8 @@ The forward implication is step [](#s1-4){.pf-ref}, and the converse is step [](
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
