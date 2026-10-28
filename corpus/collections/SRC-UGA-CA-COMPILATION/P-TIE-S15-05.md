@@ -35,6 +35,8 @@ $$
 The correct statement for arbitrary polynomials is $M_R\ge1$, and the inequality is strict when $p\ne0$. This corrected form is sufficient for part (2).
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -199,6 +201,8 @@ for every polynomial $p$, respectively with and without using part (1).
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the corrected form of part (1) and identifies the source's strict-inequality exception. Step [](#s1-4){.pf-ref} proves part (2) by both requested methods.
+
+:::
 
 :::
 
