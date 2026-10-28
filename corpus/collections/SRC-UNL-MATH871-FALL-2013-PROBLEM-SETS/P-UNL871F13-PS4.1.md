@@ -19,6 +19,8 @@ f:X\to Y,\qquad f(t)=t-1.
 Determine whether $f$ is continuous, and prove your answer.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -126,6 +128,8 @@ is not open in $X$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
