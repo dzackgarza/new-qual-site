@@ -28,6 +28,8 @@ Prove that
 is at most countable.
 :::
 
+::: {.solution}
+
 Let
 \[
 A=\{t>0:\mu(S_t)>0\},
@@ -104,6 +106,8 @@ By step [](#s1-2){.pf-ref} each \(A_n\) is finite, and by step [](#s1-3){.pf-ref
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
