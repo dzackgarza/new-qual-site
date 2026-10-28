@@ -27,6 +27,8 @@ such that
 is homeomorphic to the Klein bottle.
 :::
 
+::: {.solution}
+
 Define homeomorphisms of \(\mathbb R^2\) by
 \[
 \boxed{
@@ -362,6 +364,8 @@ This is the group constructed above, and step [](#s1-13){.pf-ref} proves its quo
 ::: pf-qed
 
 Step [](#s1-14){.pf-ref} gives the required subgroup of \(\operatorname{Aut}(\mathbb R^2)\).
+
+:::
 
 :::
 
