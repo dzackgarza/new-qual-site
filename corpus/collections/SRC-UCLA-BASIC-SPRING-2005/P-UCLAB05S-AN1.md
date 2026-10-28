@@ -28,6 +28,8 @@ p(x)=0\text{ for some }p\in\mathcal F.
 (b) Show that the set $\mathbb R\setminus\mathbb Q$ of irrational numbers is not algebraic.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -109,6 +111,8 @@ The rationals are countable and the reals are uncountable, so $\RR\setminus\QQ$ 
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-4){.pf-ref} proves part (b).
+
+:::
 
 :::
 
