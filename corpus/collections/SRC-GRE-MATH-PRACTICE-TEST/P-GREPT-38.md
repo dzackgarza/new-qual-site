@@ -31,6 +31,8 @@ III. $\abs{f(x) - f(y)} \leq (x - y)^2$ for every $x$ and $y$ in $[a, b]$.
 (E) I, II, and III
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -130,6 +132,8 @@ proves that condition III is genuinely sufficient.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the conclusion supported by the statement as written.
+
+:::
 
 :::
 
