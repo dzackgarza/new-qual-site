@@ -22,6 +22,8 @@ audit:
 (2) Why does not the phenomenon in (1) contradict the uniqueness theorem?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -138,6 +140,8 @@ The identity theorem says that a holomorphic function on a region is identically
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the requested nonzero analytic function with infinitely many zeros, and step [](#s1-4){.pf-ref} explains why there is no contradiction with uniqueness.
+
+:::
 
 :::
 
