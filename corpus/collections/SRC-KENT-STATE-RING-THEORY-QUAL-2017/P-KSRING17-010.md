@@ -19,6 +19,8 @@ audit:
 Let $R _ { 1 }$ and $R _ { 2 }$ be commutative rings with identities and let $R = R _ { 1 } \times R _ { 2 }$ . Show that every ideal I of R is of the form $I = I _ { 1 } \times I _ { 2 }$ with $I _ { i }$ an ideal of $R _ { i }$ for $i = 1 , 2$
 :::
 
+::: {.solution}
+
 Let
 $$
 I\trianglelefteq R_1\times R_2.
@@ -234,6 +236,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} show that $I_1$ and $I_2$ ar
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required decomposition.
+
+:::
 
 :::
 
