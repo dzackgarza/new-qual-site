@@ -21,6 +21,8 @@ audit:
 (b) Are diagonalizable matrices with real entries dense in the set of all $n\times n$ matrices with real entries?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -352,6 +354,8 @@ Step [](#s1-9){.pf-ref} proves the assertion for $n=2$, and step [](#s1-10){.pf-
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} proves part (a), and steps [](#s1-8){.pf-ref} through [](#s1-11){.pf-ref} answer part (b).
+
+:::
 
 :::
 
