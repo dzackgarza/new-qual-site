@@ -20,6 +20,8 @@ audit:
 Let C and $C ^ { \prime }$ be two circles and let $z _ { 1 } \in C , z _ { 2 } \notin C , z _ { 1 } ^ { \prime } \in C ^ { \prime } , z _ { 2 } ^ { \prime } \notin C ^ { \prime }$ . Show that there is a unique fractional linear transformation f with $f ( C ) = C ^ { \prime }$ and $f ( z _ { 1 } ) = z _ { 1 } ^ { \prime } , f ( z _ { 2 } ) = z _ { 2 } ^ { \prime }$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -254,6 +256,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves existence and step [](#s1-5){.pf-ref} proves uniqueness.
+
+:::
 
 :::
 
