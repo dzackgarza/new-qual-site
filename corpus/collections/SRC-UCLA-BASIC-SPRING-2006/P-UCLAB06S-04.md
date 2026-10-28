@@ -16,13 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-The point $P = ( 1 , 1 , 1 )$ lies on the surface S in $\mathbf { R } ^ { 3 }$ defined by
+The point $P = (1, 1, 1)$ lies on the surface $S$ in $\RR^3$ defined by
 
 $$
-x ^ { 2 } y ^ { 3 } + x ^ { 3 } z + 2 y z ^ { 4 } = 4
+x^2 y^3 + x^3 z + 2 y z^4 = 4.
 $$
 
-Prove that there exists a differentiable function $f ( x , y )$ defined in an open neighborhood N of $( 1 , 1 )$ in $\mathbf { R } ^ { 2 }$ such that $f ( 1 , 1 ) = 1$ and $( x , y , f ( x , y ) )$ lies in S for all $( x , y ) \in \mathcal { N }$
+Prove that there exists a differentiable function $f(x, y)$ defined in an open neighborhood $N$ of $(1, 1)$ in $\RR^2$ such that $f(1, 1) = 1$ and $(x, y, f(x, y))$ lies in $S$ for all $(x, y) \in N$.
 :::
 
 ::: {.solution}
