@@ -18,6 +18,8 @@ Let $g:X\to Y$ and $h:Y\to X$.
 3. Prove that the three spaces pictured in the source are homotopy equivalent: a figure-eight, two circles joined by an interval, and a circle together with a diameter.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -166,6 +168,8 @@ The first pictured space is already the figure-eight \(S^1\vee S^1\). Step [](#s
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part \(1\), step [](#s1-2){.pf-ref} answers part \(2\), and step [](#s1-6){.pf-ref} answers part \(3\).
+
+:::
 
 :::
 
