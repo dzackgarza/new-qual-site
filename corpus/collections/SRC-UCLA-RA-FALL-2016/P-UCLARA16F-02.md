@@ -25,6 +25,8 @@ Show that
 for $\mu$-almost every $x\in\mathbb R$.
 :::
 
+::: {.solution}
+
 Let \(m\) denote Lebesgue measure on \(\mathbb R\), and define the locally finite positive Borel measure
 \[
 \boxed{
@@ -338,6 +340,8 @@ Combine steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} is the required density statement.
+
+:::
 
 :::
 
