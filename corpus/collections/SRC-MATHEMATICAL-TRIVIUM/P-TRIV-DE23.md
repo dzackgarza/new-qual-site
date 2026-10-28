@@ -19,6 +19,8 @@ audit:
 Verify that $\int _ { 1 } ^ { \infty } \mathrm { d } t \frac { e ^ { - x t } } { \sqrt { t ^ { 2 } - 1 } }$ is a solution to the differential equation $y ^ { \prime \prime } { + } \frac { 1 } { x } y ^ { \prime } { - } y =$ 0.
 :::
 
+::: {.solution}
+
 For $x>0$, set
 \[
 y(x)=\int_1^\infty\frac{e^{-xt}}{\sqrt{t^2-1}}\,dt.
@@ -113,6 +115,8 @@ Combine steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} to obtain $y''-y=-y'/x$,
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} verifies the required differential equation for every $x>0$.
+
+:::
 
 :::
 
