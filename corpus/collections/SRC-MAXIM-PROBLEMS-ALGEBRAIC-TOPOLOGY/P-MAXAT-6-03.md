@@ -19,6 +19,8 @@ audit:
 Study possible immersions (embeddings) of $\mathbb { R P } ^ { n }$ into $\mathbb { R } ^ { n + k }$ . (Hint: use S-W classes)
 :::
 
+::: {.solution}
+
 The Stiefel--Whitney classes give a necessary lower bound on the codimension $k$. Let
 \[
 a\in H^1(\mathbb{RP}^n;\mathbb F_2)
@@ -223,6 +225,8 @@ Vanishing of the inverse Stiefel--Whitney classes above degree $k$ is necessary 
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} through [](#s1-8){.pf-ref} give the requested Stiefel--Whitney analysis of possible immersion and embedding codimensions.
+
+:::
 
 :::
 
