@@ -25,6 +25,8 @@ A baseball team consists of 20 players, 5 of whom are pitchers and 15 of whom ar
 (E) $20!$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -82,6 +84,8 @@ By the multiplication principle, multiply the count in step [](#s1-1){.pf-ref} b
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested expression.
+
+:::
 
 :::
 
