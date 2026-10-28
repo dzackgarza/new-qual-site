@@ -19,6 +19,8 @@ audit:
 State the principle of analytic continuation for holomorphic functions and give a specific example of how it is used in complex analysis.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -67,6 +69,8 @@ continuation from that germ to a connected overlapping domain.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} states the principle and step [](#s1-2){.pf-ref} gives a specific application.
+
+:::
 
 :::
 
