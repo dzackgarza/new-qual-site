@@ -120,7 +120,7 @@ $$
 \boxed{
 E_{\mathrm{ring}}(d)
 =
-\frac{2\pi k_e\rho R,d}
+\frac{2\pi k_e\rho R\,d}
 {(R^2+d^2)^{3/2}}.
 }
 $$
