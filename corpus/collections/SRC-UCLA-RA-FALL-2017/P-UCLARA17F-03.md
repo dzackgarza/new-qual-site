@@ -28,6 +28,8 @@ Suppose the sequence $\{F_n\}$ converges uniformly on $\mathbb R$. Show that for
 converge as $n\to\infty$.
 :::
 
+::: {.solution}
+
 Let
 \[
 M=\|f\|_\infty.
@@ -508,6 +510,8 @@ The real numbers are complete.
 ::: pf-qed
 
 Step [](#s1-16){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
