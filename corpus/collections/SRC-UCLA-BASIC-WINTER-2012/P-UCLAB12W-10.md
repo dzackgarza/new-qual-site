@@ -27,6 +27,8 @@ e^A=I+A+\frac{A^2}{2!}+\frac{A^3}{3!}+\cdots.
 You may assume that this series converges entrywise for every complex matrix $A$.
 :::
 
+::: {.solution}
+
 The identity holds for every complex $n\times n$ matrix $A$; no additional condition is required.
 
 ::: pf
@@ -197,6 +199,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the identity with no hypothesis beyond $A\in\mathbb M_n(\CC)$.
+
+:::
 
 :::
 
