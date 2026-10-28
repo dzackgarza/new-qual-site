@@ -29,6 +29,8 @@ Which of the following sequences of vertices describes a circuit in the graph be
 The source shows the graph in a figure that is not reproduced here.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -101,6 +103,8 @@ Step [](#s1-2){.pf-ref} establishes (A), and step [](#s1-3){.pf-ref} rules out a
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required sequence.
+
+:::
 
 :::
 
