@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-QConsider the points A and B lying on the plane xOy.
+Consider the points $A$ and $B$ lying on the plane $xOy$.
 Find a curve $y = y ( x )$ connecting these points and such that rotation of $y ( x )$ around the axis Ox gives a surface in $\mathbb { R } ^ { 3 }$ with a minimal area.
 :::
 
