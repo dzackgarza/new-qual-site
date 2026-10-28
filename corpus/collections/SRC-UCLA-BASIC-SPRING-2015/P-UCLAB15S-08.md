@@ -29,6 +29,8 @@ d(A,B)=\left(\sum_{1\le i,j\le3}|a_{ij}-b_{ij}|^2\right)^{1/2}.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -254,6 +256,8 @@ Claim 1 is disproved in steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, and
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} gives the complete disposition of both claims.
+
+:::
 
 :::
 
