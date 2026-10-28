@@ -20,6 +20,8 @@ audit:
 Let $p, q$ be distinct primes. If $J$ is a proper subgroup of $(\ZZ, +)$ containing exactly three of $\{p, p + q, pq, p^q, q^p\}$, which three elements does $J$ include?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -131,6 +133,8 @@ Thus the other two numbers do not belong to $p\mathbb Z$.
 
 Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} force the three members to be those in step [](#s1-4){.pf-ref}, which
 also shows that such a proper subgroup exists.
+
+:::
 
 :::
 
