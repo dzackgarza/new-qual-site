@@ -24,6 +24,8 @@ Let $f _ { n } , f$ be analytic functions on the unit disk D. Show that the foll
 (ii) $\int _ { | z | = r } | f _ { n } ( z ) - f ( z ) | | d z |$ converges to 0 if $0 < r < 1$
 :::
 
+::: {.solution}
+
 Set
 $$
 h_n\coloneqq f_n-f.
@@ -172,6 +174,8 @@ Step [](#s1-1){.pf-ref} proves (i)$\Rightarrow$(ii), and step [](#s1-4){.pf-ref}
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
