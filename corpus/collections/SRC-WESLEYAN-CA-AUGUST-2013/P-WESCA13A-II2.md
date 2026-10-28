@@ -34,6 +34,8 @@ Evaluate:
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -310,6 +312,8 @@ Collect steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref}, and [](#s1-8){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} answers all three subparts.
+
+:::
 
 :::
 
