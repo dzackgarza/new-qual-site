@@ -26,6 +26,8 @@ Fix $y\in S$ and $r\in\mathbb R$.
 Prove your answers.
 :::
 
+::: {.solution}
+
 Let
 \[
 \delta_y:S\to\mathbb R,
@@ -134,6 +136,8 @@ Thus the answer to part (b) is no in general.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} answers part (a) affirmatively, and step [](#s1-3){.pf-ref} gives a counterexample to part (b).
+
+:::
 
 :::
 
