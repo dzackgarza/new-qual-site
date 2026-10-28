@@ -20,6 +20,8 @@ audit:
 Use Rouché's theorem to prove the fundamental theorem of algebra.
 :::
 
+::: {.solution}
+
 Let
 $$
 p(z)
@@ -221,6 +223,8 @@ and continue. Induction on the degree gives the displayed factorization into $n$
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} prove the fundamental theorem of algebra using Rouché's theorem.
+
+:::
 
 :::
 
