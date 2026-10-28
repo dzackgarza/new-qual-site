@@ -24,6 +24,8 @@ g(z)=\int_{\{w\in\mathbb C:|w-z|\le1\}}\frac{|f(w)|}{|w-z|}\,dA(w),
 where $dA$ denotes integration with respect to Lebesgue measure on $\mathbb C\cong\mathbb R^2$. Show that $|g(z)|<\infty$ for almost every $z\in\mathbb C$ and that $g\in L^2(\mathbb C)$.
 :::
 
+::: {.solution}
+
 Define
 \[
 k(u)
@@ -308,6 +310,8 @@ An \(L^2\)-function is finite almost everywhere; otherwise the integral of its s
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} proves \(g\in L^2\), and step [](#s1-11){.pf-ref} gives the almost-everywhere finiteness.
+
+:::
 
 :::
 
