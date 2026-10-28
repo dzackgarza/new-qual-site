@@ -27,6 +27,8 @@ $$\frac{d^2y}{dx^2} = \left(\frac{dy}{dx}\right)^2$$
 (E) $y = c_2 - \log(c_1 + x)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -125,6 +127,8 @@ solution. Step [](#s1-3){.pf-ref} gives the remaining nonconstant solutions.
 
 Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} classify the literal solutions and prove that no listed
 answer is complete.
+
+:::
 
 :::
 
