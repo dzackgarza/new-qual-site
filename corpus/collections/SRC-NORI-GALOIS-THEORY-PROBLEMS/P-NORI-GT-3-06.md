@@ -19,6 +19,8 @@ audit:
 Let $\mathbb { F } _ { q }$ be a finite field of characteristic $p .$ How mny elements of $\mathbb { F } _ { q }$ are of the type $x - x ^ { \bar { p } } , x \in \mathbb { F } _ { q } ?$
 :::
 
+::: {.solution}
+
 Interpret the extraction artifact $x^{\bar p}$ as $x^p$.
 
 ::: pf
@@ -146,6 +148,8 @@ These elements are precisely the image of $T$, whose cardinality was computed in
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the requested count.
+
+:::
 
 :::
 
