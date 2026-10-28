@@ -20,6 +20,8 @@ Let $U\subset\mathbb C$ be open, let $f_n:U\to\mathbb C$, and let $f:U\to\mathbb
 Define what it means for $(f_n)$ to converge normally (locally uniformly) to $f$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -112,6 +114,8 @@ This is the terminology requested in the problem statement.
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the requested definition and its equivalent
 \(\varepsilon\)-form.
+
+:::
 
 :::
 
