@@ -73,6 +73,8 @@ E=2Q+5Q^{-1}+7I
 and you may leave the answer in terms of eigenvalues of the basic circulant matrix $Q$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -265,6 +267,8 @@ These are the results of steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} records all five determinants.
+
+:::
 
 :::
 
