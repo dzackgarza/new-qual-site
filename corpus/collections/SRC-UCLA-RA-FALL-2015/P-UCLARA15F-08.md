@@ -28,6 +28,8 @@ Assume that $f(z)$ is an entire function that is $2\pi$-periodic in the sense th
 for some $C > 0$, where $0 < \alpha < 1$. Prove that $f$ is constant.
 :::
 
+::: {.solution}
+
 For each integer \(n\), define the Fourier coefficient
 \[
 a_n
@@ -373,6 +375,8 @@ f\equiv a_0.
 ::: pf-qed
 
 Step [](#s1-12){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
