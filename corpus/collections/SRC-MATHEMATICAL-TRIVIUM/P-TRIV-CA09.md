@@ -19,6 +19,8 @@ audit:
 Find an analytic map that sends the unit disk $( | z | < 1 )$ onto the left half plane $( \mathrm { R e } ( z ) < 0 )$
 :::
 
+::: {.solution}
+
 Define
 $$
 \Phi(z)
@@ -212,6 +214,8 @@ step [](#s1-6){.pf-ref} gives surjectivity.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the requested map and verification.
+
+:::
 
 :::
 
