@@ -28,6 +28,8 @@ where $f$ is analytic and one-to-one on an annulus
 Let $\mathbb C^*=\mathbb C\cup\{\infty\}$ be the Riemann sphere, let $N<\infty$, and let $\Omega\subset\mathbb C^*$ be a domain for which $\partial\Omega$ has $N$ connected components, none of which are single points. Prove there is a conformal (i.e. one-to-one analytic) mapping from $\Omega$ onto a domain bounded by $N$ pairwise disjoint analytic Jordan curves.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -110,6 +112,8 @@ Both \(h\) and \(M\) are conformal and one-to-one, so their composition is confo
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conformal representation.
+
+:::
 
 :::
 
