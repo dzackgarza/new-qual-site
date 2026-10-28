@@ -28,6 +28,8 @@ Using $g$ and the fact that $g$ maps $D$ to $D$, prove that
 \]
 :::
 
+::: {.solution}
+
 Write \(a=f(0)\).
 
 ::: pf
@@ -184,6 +186,8 @@ Since \(a=f(0)\), this is exactly the stated inequality.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required bound.
+
+:::
 
 :::
 
