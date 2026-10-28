@@ -19,6 +19,8 @@ audit:
 Show that $\mathbb { R P } ^ { 2 n } , \mathbb { C P } ^ { 2 n }$ are fixed-point free spaces.
 :::
 
+::: {.solution}
+
 The source phrase is interpreted as saying that these spaces admit no fixed-point-free self-map, i.e. they have the fixed-point property. This is proved by the Lefschetz fixed-point theorem.
 
 ::: pf
@@ -194,6 +196,8 @@ This combines steps [](#s1-3){.pf-ref} and [](#s1-8){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the asserted fixed-point property.
+
+:::
 
 :::
 
