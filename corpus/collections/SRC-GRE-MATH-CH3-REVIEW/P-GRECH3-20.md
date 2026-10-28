@@ -30,6 +30,8 @@ Let $f(x,y)$ be a function that is differentiable everywhere. At a certain point
 The source prints choice (C) as the digits $4$ and $3$ followed by $\sqrt{2}$, with no fraction bar.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -121,6 +123,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested maximum directional derivative and corresponding choice.
+
+:::
 
 :::
 
