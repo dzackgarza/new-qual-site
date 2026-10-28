@@ -28,6 +28,8 @@ f(w)=\frac1\pi\int_{\mathbb D}\frac{f(z)}{(1-\overline z w)^2}\,dA(z),
 where $dA(z)$ means integration with respect to Lebesgue measure.
 :::
 
+::: {.solution}
+
 Write the Taylor series of \(f\) at the origin as
 \[
 f(z)=\sum_{n=0}^{\infty}a_nz^n.
@@ -262,6 +264,8 @@ step [](#s1-4){.pf-ref} equals \(f(w)\).
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required reproducing formula.
+
+:::
 
 :::
 
