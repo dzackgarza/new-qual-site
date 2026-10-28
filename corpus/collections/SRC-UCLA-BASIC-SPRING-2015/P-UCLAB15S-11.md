@@ -23,6 +23,8 @@ The order of a matrix $A$ is the smallest integer $k>0$ such that $A^k=I$; if no
 Prove that there exist ten distinct real $2\times2$ matrices which are pairwise commuting and all have the same finite order.
 :::
 
+::: {.solution}
+
 For
 \[
 k=1,\ldots,10,
@@ -284,6 +286,8 @@ Distinctness is step [](#s1-4){.pf-ref}, pairwise commutativity is step [](#s1-3
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required construction.
+
+:::
 
 :::
 
