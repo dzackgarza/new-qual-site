@@ -24,6 +24,8 @@ f(\mathbb C)\subseteq\{z\in\mathbb C:\operatorname{Im}z>0\}.
 Show that \(f\) is constant.
 :::
 
+::: {.solution}
+
 Define
 $$
 g(z)
@@ -141,6 +143,8 @@ An entire function with identically zero derivative is constant on the connected
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
