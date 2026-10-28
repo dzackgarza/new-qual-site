@@ -19,6 +19,8 @@ audit:
 State the spectral theorem for compact symmetric (self-adjoint) operators on a Hilbert space.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -93,6 +95,8 @@ distinct nonzero eigenvalues can accumulate only at $0$.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the standard precise statement of the spectral
 theorem requested in the problem.
+
+:::
 
 :::
 
