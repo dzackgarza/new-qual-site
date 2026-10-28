@@ -23,6 +23,8 @@ Let D be a unique factorization domain and p a fixed irreducible element of D su
 (b) D is a Euclidean domain.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -445,6 +447,8 @@ Hence $D$ is Euclidean.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-13){.pf-ref} proves part (b).
+
+:::
 
 :::
 
