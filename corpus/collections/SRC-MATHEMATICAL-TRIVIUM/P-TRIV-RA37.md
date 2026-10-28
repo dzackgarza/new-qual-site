@@ -19,6 +19,8 @@ audit:
 Find the surface area of a body formed by rotation of a curve $y = \sin x$ around x-axis in $\mathbb { R } ^ { 3 } , x \in [ 0 , \pi ]$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -229,6 +231,8 @@ $\operatorname{arsinh}$.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required surface area.
+
+:::
 
 :::
 
