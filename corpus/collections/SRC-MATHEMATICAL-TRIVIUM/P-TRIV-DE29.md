@@ -25,6 +25,8 @@ $$
 with $y ^ { \prime } ( 0 ) = y ^ { \prime } ( \pi ) = 0 ;$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -113,6 +115,8 @@ Step [](#s1-1){.pf-ref} excludes negative eigenvalues, step [](#s1-2){.pf-ref} s
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} lists every nonzero solution satisfying both Neumann boundary conditions.
+
+:::
 
 :::
 
