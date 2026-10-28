@@ -27,6 +27,8 @@ Show the following.
 (c) If every irreducible ideal of R is a prime ideal, then 0 is the only nilpotent element of R.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -421,6 +423,8 @@ Steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} show that no nonzero nilpot
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref} prove part (b), and step [](#s1-11){.pf-ref} proves part (c).
+
+:::
 
 :::
 
