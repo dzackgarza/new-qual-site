@@ -25,6 +25,8 @@ If the formula $A \vee B \rightarrow \neg C \vee D$ is true, which of the follow
 (E) $A \vee B \rightarrow C \vee \neg D$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -93,6 +95,8 @@ Substitute the expressions from step [](#s1-2){.pf-ref} into the contrapositive 
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required formula.
+
+:::
 
 :::
 
