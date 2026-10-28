@@ -22,6 +22,8 @@ Give an infinite space satisfying each requested combination of properties:
 4. completely regular, but neither compact, connected, nor first countable.
 :::
 
+::: {.solution}
+
 Write
 \[
 S_\Omega
@@ -349,6 +351,8 @@ Steps [](#s1-1){.pf-ref}, [](#s1-6){.pf-ref}, and [](#s1-7){.pf-ref}, and [](#s1
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} records the complete answer.
+
+:::
 
 :::
 
