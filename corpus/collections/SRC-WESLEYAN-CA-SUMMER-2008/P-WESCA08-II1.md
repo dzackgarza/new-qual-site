@@ -23,6 +23,8 @@ f(z)=\frac1{(z^2+1)^2},
 and determine where the series converges.
 :::
 
+::: {.solution}
+
 Set
 \[
 w=z-i.
@@ -357,6 +359,8 @@ exactly the maximal Laurent annuli.
 
 Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give the local Laurent expansion and its region, while
 steps [](#s1-9){.pf-ref} through [](#s1-11){.pf-ref} give the exterior expansion and its region.
+
+:::
 
 :::
 
