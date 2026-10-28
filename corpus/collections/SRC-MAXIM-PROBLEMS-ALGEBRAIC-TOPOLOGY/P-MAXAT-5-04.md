@@ -19,6 +19,8 @@ audit:
 Construct an orientable sphere bundle with zero Euler class, but no section.
 :::
 
+::: {.solution}
+
 Take an oriented rank-$3$ real vector bundle over $S^4$ representing the nonzero element of
 \[
 \pi_3(SO(3))\cong\mathbb Z,
@@ -185,6 +187,8 @@ The bundle is oriented because its structure group is $SO(3)$; step [](#s1-3){.p
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} supplies the requested example with all three properties verified.
+
+:::
 
 :::
 
