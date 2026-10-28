@@ -27,6 +27,8 @@ Explain carefully how the Implicit Function Theorem implies, in this case, that 
 for every $(x,y)$ in some small open set containing $(1,1)$.
 :::
 
+::: {.solution}
+
 Define
 \[
 G(x,y,z)=x^4y^2+x^2z+yz^2-3.
@@ -153,6 +155,8 @@ Since $S=G^{-1}(0)$, this is exactly the statement that
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required differentiable local graph of $S$ over an open neighborhood of $(1,1)$.
+
+:::
 
 :::
 
