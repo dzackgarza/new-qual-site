@@ -19,6 +19,8 @@ audit:
 Let $A = E + \epsilon B _ { }$ , where E is the identity matrix and $\epsilon \ll 1$ . Expand det A to the first order in €.
 :::
 
+::: {.solution}
+
 Write the columns of $B$ as
 $$
 b_1,\ldots,b_n,
@@ -153,6 +155,8 @@ Substitute step [](#s1-4){.pf-ref} into step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required first-order expansion.
+
+:::
 
 :::
 
