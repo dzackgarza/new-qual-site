@@ -26,6 +26,8 @@ Must $f=0$ almost everywhere?
 Prove the conclusion or give a counterexample.
 :::
 
+::: {.solution}
+
 Yes. The hypotheses force
 $$
 f=0
@@ -170,6 +172,8 @@ Both sets have measure zero by steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-re
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
