@@ -28,6 +28,8 @@ Show that there exist real-valued continuous functions $g_1,\ldots,g_n$ and $h_1
 Explain.
 :::
 
+::: {.solution}
+
 Let
 \[
 K=[0,1]^2.
@@ -184,6 +186,8 @@ Thus for $\varepsilon<1$, the symmetric function $f\equiv-1$ cannot be approxima
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} gives a symmetric counterexample for part (b).
+
+:::
 
 :::
 
