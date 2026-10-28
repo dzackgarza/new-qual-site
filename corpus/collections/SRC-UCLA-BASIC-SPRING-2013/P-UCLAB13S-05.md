@@ -37,6 +37,8 @@ U_n(\cos\theta)=\frac{\sin((n+1)\theta)}{\sin\theta}.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -429,6 +431,8 @@ This proves part (b).
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
+
+:::
 
 :::
 
