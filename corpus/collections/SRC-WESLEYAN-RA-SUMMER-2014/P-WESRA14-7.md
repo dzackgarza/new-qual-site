@@ -23,6 +23,8 @@ Construct a Borel set $E\subset\mathbb R$ such that
 for every finite nonempty nondegenerate interval $I$.
 :::
 
+::: {.solution}
+
 Let
 \[
 \{J_1,J_2,\dots\}
@@ -388,6 +390,8 @@ The left inequality is step [](#s1-6){.pf-ref} and the right inequality is step 
 
 Step [](#s1-4){.pf-ref} constructs a Borel set $E$, and step [](#s1-9){.pf-ref} proves it has the
 required measure-theoretic thickness in every interval.
+
+:::
 
 :::
 
