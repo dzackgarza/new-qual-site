@@ -22,6 +22,8 @@ Evaluate
 \]
 :::
 
+::: {.solution}
+
 Assume the circle \(|z|=2\) has its standard positive orientation.
 
 ::: pf
@@ -120,6 +122,8 @@ Substitute step [](#s1-3){.pf-ref} into the identity in step [](#s1-2){.pf-ref}:
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested contour integral.
+
+:::
 
 :::
 
