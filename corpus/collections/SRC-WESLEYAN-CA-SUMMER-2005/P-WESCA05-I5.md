@@ -22,6 +22,8 @@ h(z)=\left(\frac{z^2-1}{e^z}\right)^{10}.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -108,6 +110,8 @@ h'(z)
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested derivative.
+
+:::
 
 :::
 
