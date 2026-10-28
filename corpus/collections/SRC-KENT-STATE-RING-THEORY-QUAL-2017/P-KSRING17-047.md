@@ -26,6 +26,8 @@ is a field.
 Justify your answer.
 :::
 
+::: {.solution}
+
 For
 $$
 a\in\FF_3,
@@ -279,6 +281,8 @@ Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} exclude $a=0,1$. Step [](#s1
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} gives the complete list.
+
+:::
 
 :::
 
