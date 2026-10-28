@@ -19,6 +19,8 @@ audit:
 Prove that if for some discrete random variable ξ, $\mathbf { E } \xi ^ { 2 } = \mathbf { E } \xi ^ { 3 } = \mathbf { E } \xi ^ { 4 }$ , then $\xi$ can only take values 0 or 1.
 :::
 
+::: {.solution}
+
 Assume the stated moments are finite.
 
 ::: pf
@@ -108,6 +110,8 @@ almost surely. A real number $r$ satisfies $r^2(r-1)^2=0$ exactly when $r=0$ or 
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion. The argument in fact does not require discreteness.
+
+:::
 
 :::
 
