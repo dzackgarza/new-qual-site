@@ -27,6 +27,8 @@ Prove that
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 \dim V=n
@@ -226,6 +228,8 @@ r+(n-r)
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required dimension formula.
+
+:::
 
 :::
 
