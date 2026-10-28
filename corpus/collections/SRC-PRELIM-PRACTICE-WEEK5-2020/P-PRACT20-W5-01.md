@@ -20,6 +20,8 @@ audit:
 Suppose $G$ is a group and $x \in G$ is only element in $G$ of order $2$. Show that $xa = ax$ for all $a \in G$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -96,6 +98,8 @@ equivalently $xa=ax$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves that $x$ commutes with every element of $G$.
+
+:::
 
 :::
 
