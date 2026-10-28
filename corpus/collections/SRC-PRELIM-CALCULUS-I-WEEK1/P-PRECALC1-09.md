@@ -15,6 +15,8 @@ review: draft
 Compute $\operatorname* { l i m } _ { x \to 0 } { \frac { \sin ( 2 x ) } { ( 1 + x ) \ln ( 1 + x ) } } .$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -152,6 +154,8 @@ Apply the product law for limits to steps [](#s1-1){.pf-ref} through [](#s1-5){.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the requested limit.
+
+:::
 
 :::
 
