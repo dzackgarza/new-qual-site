@@ -19,6 +19,8 @@ audit:
 $\mathrm { C a l c u l a t e } \int \frac { d x } { \sin x }$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -122,6 +124,8 @@ Substitute back $t=\tan(x/2)$ into step [](#s1-3){.pf-ref}.
 
 Step [](#s1-4){.pf-ref} is the required antiderivative on each interval avoiding zeros of
 $\sin x$.
+
+:::
 
 :::
 
