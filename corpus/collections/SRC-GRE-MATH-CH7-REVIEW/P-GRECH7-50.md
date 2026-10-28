@@ -38,6 +38,8 @@ What is the sequence of outputs when the input value is 17?
 (E) The sequence does not end.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -96,6 +98,8 @@ Concatenating the outputs from steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} g
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the complete sequence requested.
+
+:::
 
 :::
 
