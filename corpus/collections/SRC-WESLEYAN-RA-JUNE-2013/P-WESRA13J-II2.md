@@ -24,6 +24,8 @@ audit:
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -192,6 +194,8 @@ and step [](#s1-5){.pf-ref} gives $m(I\setminus A)>0$, the second strict inequal
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
+
+:::
 
 :::
 
