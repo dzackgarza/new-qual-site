@@ -20,6 +20,8 @@ audit:
 Find two different Laurent expansions for $f(z) = \frac{1}{z(z^2 + 1)}$ and specify the regions in which they converge.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -124,6 +126,8 @@ $0<|z|<1$ and $|z|>1$, exactly the regions in steps [](#s1-1){.pf-ref} and [](#s
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the two requested Laurent expansions and their
 regions of convergence.
+
+:::
 
 :::
 
