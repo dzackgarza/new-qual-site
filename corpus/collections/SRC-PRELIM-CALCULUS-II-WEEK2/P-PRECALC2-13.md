@@ -15,6 +15,8 @@ review: draft
 Do the series $\sum _ { n = 2 } ^ { \infty } { \frac { 1 } { \log ( n ! ) } }$ and $\sum _ { n = 3 } ^ { \infty } { \frac { 1 } { \log ( n ) ^ { \log ( n ) } } }$ converge or diverge?
 :::
 
+::: {.solution}
+
 Consider first
 \[
 \sum_{n=2}^{\infty}\frac1{\log(n!)}.
@@ -277,6 +279,8 @@ step [](#s1-10){.pf-ref}. Finitely many initial terms do not affect convergence.
 
 Step [](#s1-5){.pf-ref} gives divergence of the first series, and step [](#s1-11){.pf-ref} gives
 convergence of the second.
+
+:::
 
 :::
 
