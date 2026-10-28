@@ -19,6 +19,8 @@ audit:
 Let R be a commutative Noetherian ring with identity and let I be an ideal in R. Let $J = { \mathrm { R a d } } ( I )$ . Prove that there exists a positive integer n such that $j ^ { n } \in I$ for all $j \in J$
 :::
 
+::: {.solution}
+
 Let
 $$
 J
@@ -270,6 +272,8 @@ Take the integer $N$ defined in step [](#s1-3){.pf-ref} and apply step [](#s1-6)
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
