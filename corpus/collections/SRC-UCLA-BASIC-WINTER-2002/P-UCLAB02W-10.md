@@ -24,6 +24,8 @@ f(v)=\langle v,w\rangle
 for every $v\in V$.
 :::
 
+::: {.solution}
+
 Use the convention that the complex inner product is linear in its first argument and conjugate-linear in its second, as required by the formula $f(v)=\langle v,w\rangle$ for a linear functional $f$.
 
 ::: pf
@@ -120,6 +122,8 @@ The right-hand sides obtained in steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} constructs the required vector $w$, and step [](#s1-4){.pf-ref} verifies that it represents $f$ on every vector in $V$.
+
+:::
 
 :::
 
