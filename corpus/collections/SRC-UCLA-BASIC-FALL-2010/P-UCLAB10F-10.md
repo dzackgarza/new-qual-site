@@ -32,6 +32,8 @@ x'(t)=f(x(t)),\qquad x(0)=0.
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 h_k=2^{-k}.
@@ -363,6 +365,8 @@ Step [](#s1-11){.pf-ref} gives uniform convergence, and step [](#s1-9){.pf-ref} 
 ::: pf-qed
 
 Step [](#s1-12){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
