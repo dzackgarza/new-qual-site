@@ -15,6 +15,8 @@ review: draft
 Compute the derivative $\frac { d } { d x } \int _ { 0 } ^ { x ^ { 2 } } e ^ { - t ^ { 2 } } d t$
 :::
 
+::: {.solution}
+
 Define
 \[
 F(u)
@@ -122,6 +124,8 @@ Combine steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the requested derivative.
+
+:::
 
 :::
 
