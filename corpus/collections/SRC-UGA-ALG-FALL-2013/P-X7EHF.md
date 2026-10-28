@@ -38,6 +38,8 @@ d.
 Deduce from (a) and (b) that the set of nilpotent elements of $R$ is the intersection of all prime ideals of $R$.
 :::
 
+::: {.solution}
+
 Let $\mathcal N=\{a\in R:a^n=0\text{ for some }n\geq1\}$.
 
 ::: pf
@@ -104,6 +106,8 @@ Step [](#s1-2){.pf-ref} gives containment from left to right. Conversely, if $x\
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} establish parts (a)--(d), respectively.
+
+:::
 
 :::
 
