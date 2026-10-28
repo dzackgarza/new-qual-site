@@ -18,6 +18,8 @@ Prove or disprove each statement:
 3. The product of an arbitrary family of second-countable spaces is second countable.
 :::
 
+::: {.solution}
+
 ## Statement 1
 
 ::: pf
@@ -491,6 +493,8 @@ by step [](#s1-12){.pf-ref}, but their product is not second countable by step [
 
 Statement \(1\) is proved true in step [](#s1-4){.pf-ref}, while statements \(2\) and
 \(3\) are disproved in steps [](#s1-11){.pf-ref} and [](#s1-23){.pf-ref}.
+
+:::
 
 :::
 
