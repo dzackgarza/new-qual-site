@@ -23,6 +23,8 @@ f(x)\in\partial D^2.
 \]
 :::
 
+::: {.solution}
+
 Write
 \[
 \mathring D^2
@@ -187,6 +189,8 @@ satisfies
 \[
 f(x)\in\partial D^2.
 \]
+
+:::
 
 :::
 
