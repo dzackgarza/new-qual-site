@@ -28,6 +28,8 @@ V=\mathbb R^3/\!\sim
 and prove that it is a basis.
 :::
 
+::: {.solution}
+
 Let
 $$
 \sigma:\RR^3\longrightarrow\RR,
@@ -196,6 +198,8 @@ Step [](#s1-3){.pf-ref} proves spanning and step [](#s1-4){.pf-ref} proves linea
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested basis and proof.
+
+:::
 
 :::
 
