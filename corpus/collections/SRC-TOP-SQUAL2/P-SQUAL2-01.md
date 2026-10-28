@@ -19,6 +19,8 @@ $$\overline{\bigcup_\alpha A_\alpha}=\bigcup_\alpha\overline{A_\alpha}$$
 must hold. If equality can fail, determine which inclusion, if either, always holds.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -198,6 +200,8 @@ The inclusion is step [](#s1-3){.pf-ref}, and strictness is step [](#s1-9){.pf-r
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} gives the complete answer.
+
+:::
 
 :::
 
