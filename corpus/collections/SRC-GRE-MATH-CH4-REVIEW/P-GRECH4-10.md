@@ -30,6 +30,8 @@ Given that the following differential equation has an integrating factor of the 
 (E) $x^5y^3(2xy - 1) = c$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -152,6 +154,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested general solution and corresponding choice.
+
+:::
 
 :::
 
