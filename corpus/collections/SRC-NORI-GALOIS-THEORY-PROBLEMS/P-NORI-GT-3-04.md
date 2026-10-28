@@ -32,6 +32,8 @@ Show that $\deg(E_n/E_{n-1}) = 2$ for all $n > 0$.
 Explain how you would construct a sequence of quadratic extensions when $k = 1$ in the previous problem.
 :::
 
+::: {.solution}
+
 Here $k=1$ means
 \[
 p\equiv3\pmod4.
@@ -184,6 +186,8 @@ Step [](#s1-2){.pf-ref} proves the degree statement for $E_1/E_0$, and step [](#
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} supplies the requested construction for the case $k=1$.
+
+:::
 
 :::
 
