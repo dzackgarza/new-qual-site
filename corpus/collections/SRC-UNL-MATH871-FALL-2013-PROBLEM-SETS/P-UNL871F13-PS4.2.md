@@ -28,6 +28,8 @@ A map $f:X\to Y$ is called closed if $f(F)$ is closed in $Y$ for every closed su
    need not be a closed map.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -192,6 +194,8 @@ This is exactly the content of steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-re
 
 Step [](#s1-1){.pf-ref} proves part (1), and step [](#s1-2){.pf-ref} supplies the required counterexample
 for part (2).
+
+:::
 
 :::
 
