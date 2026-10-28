@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Suppose $f:\mathbb R\to\mathbb R$ and $g:\mathbb R^2\to\mathbb R$ have continuous derivatives through order three.
+Suppose $f:\mathbb R\to\mathbb R$ and $g:\mathbb R^2\to\mathbb R$ have continuous derivatives through order three.
 
 (a) State Taylor's theorem with remainder for each of $f$ and $g$.
 
