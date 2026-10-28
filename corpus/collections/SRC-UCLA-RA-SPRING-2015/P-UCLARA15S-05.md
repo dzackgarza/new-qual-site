@@ -30,6 +30,8 @@ Show that $U(x,\xi)$ is well defined on $\mathbb R^2$ and that there exists a co
 Determine $C$ explicitly.
 :::
 
+::: {.solution}
+
 Use the Fourier transform convention
 \[
 \mathcal Fh(\eta)
@@ -279,6 +281,8 @@ Compare the identity in step [](#s1-4){.pf-ref} with the form required in the pr
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves well-definedness, and steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} prove the norm identity and determine the constant.
+
+:::
 
 :::
 
