@@ -15,6 +15,8 @@ review: draft
 (8) Let A be the ring of power series$c _ { 0 } + c _ { 1 } z + c _ { 2 } z ^ { 2 } + . .$. with complex coefficients$c _ { i }$which have a nonzero radius of convergence (ring of germs of analytic functions at the origin$z = 0$in the complex z-plane). Discuss the prime ideals in$A .$. Do the same for the ring of formal power series$\dot { \boldsymbol { A } } = \boldsymbol { K } [ [ \boldsymbol { z } ] ]$in one variable z over any field.
 :::
 
+::: {.solution}
+
 Treat first the ring $\mathcal O_0$ of convergent complex power-series germs at $0$, and then $K[[z]]$.
 
 ::: pf
@@ -191,6 +193,8 @@ shows that $(z^n)$ is not prime. Step [](#s1-5){.pf-ref} exhausts all nonzero id
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} determine the prime ideals of the convergent-germ ring, and steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} determine those of $K[[z]]$.
+
+:::
 
 :::
 
