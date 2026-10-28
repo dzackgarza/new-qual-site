@@ -29,6 +29,8 @@ where $\pi$ is the norm map.
 Prove that the degree of this composition equals the number of roots of $f$ inside the unit circle.
 :::
 
+::: {.solution}
+
 Write the polynomial as
 \[
 \boxed{
@@ -392,6 +394,8 @@ whose degree was computed in step [](#s1-12){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
