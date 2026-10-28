@@ -22,6 +22,8 @@ A^2=A.
 Carefully state any major theorem used in the argument.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -98,6 +100,8 @@ A^2=QDQ^T=A.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
