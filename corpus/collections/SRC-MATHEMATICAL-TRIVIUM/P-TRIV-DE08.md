@@ -19,6 +19,8 @@ audit:
 Solve $y ^ { \prime \prime } - 3 y ^ { \prime } + 2 y = \sin x$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -242,6 +244,8 @@ Add the homogeneous solution from step [](#s1-3){.pf-ref} and one particular sol
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the complete solution family.
+
+:::
 
 :::
 
