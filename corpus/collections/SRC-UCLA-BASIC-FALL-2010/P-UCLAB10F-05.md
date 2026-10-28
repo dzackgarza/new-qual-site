@@ -34,6 +34,8 @@ Problem 5. Prove or disprove each statement for arbitrary subsets $S,S'$ of a ve
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -167,6 +169,8 @@ Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove the two inclusions.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} disproves part (a), and step [](#s1-4){.pf-ref} proves part (b).
+
+:::
 
 :::
 
