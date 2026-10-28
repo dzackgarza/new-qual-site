@@ -28,6 +28,8 @@ defines an inner product on $V$.
 (b) Find an orthonormal basis of $V$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -329,6 +331,8 @@ After normalization, it is orthonormal.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} proves part (b).
+
+:::
 
 :::
 
