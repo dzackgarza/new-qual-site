@@ -25,6 +25,8 @@ Which of the following sets in $\mathbb{R}^2$ is closed?
 (E) $[2, 5] \times [1, 3]$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -86,6 +88,8 @@ Step [](#s1-1){.pf-ref} proves that choice (E) is closed, while step [](#s1-2){.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
