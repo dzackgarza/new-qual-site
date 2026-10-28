@@ -19,6 +19,8 @@ audit:
 Show that a manifold M is orientable if and only if its first Stiefel-Whitney class vanishes.
 :::
 
+::: {.solution}
+
 Let $M$ be a smooth $n$-manifold. By definition,
 \[
 w_1(M)=w_1(TM)\in H^1(M;\mathbb Z/2).
@@ -193,6 +195,8 @@ The forward implication is step [](#s1-3){.pf-ref}; the reverse implication is s
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the desired equivalence.
+
+:::
 
 :::
 
