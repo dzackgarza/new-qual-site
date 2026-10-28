@@ -25,6 +25,8 @@ for every $z\in\mathbb D$.
 Prove that $z\mapsto\inf_n u_n(z)$ is harmonic on $\mathbb D$.
 :::
 
+::: {.solution}
+
 Define
 $$
 u(z)\coloneqq\inf_nu_n(z)=\lim_{n\to\infty}u_n(z).
@@ -125,6 +127,8 @@ By step [](#s1-2){.pf-ref}, $u$ is continuous, and by step [](#s1-3){.pf-ref} it
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves that $z\mapsto\inf_nu_n(z)$ is harmonic on $\mathbb D$.
+
+:::
 
 :::
 
