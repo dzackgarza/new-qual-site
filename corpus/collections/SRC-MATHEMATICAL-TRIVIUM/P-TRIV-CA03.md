@@ -23,6 +23,8 @@ z ^ { 2 } + 3 z + 1 2 = 0 , \qquad z ^ { 4 } + 5 z ^ { 2 } + 4 = 0 , \qquad z ^ 
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -193,6 +195,8 @@ Apply Euler's formula to the three polar forms from step [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} give all roots requested in the four equations.
+
+:::
 
 :::
 
