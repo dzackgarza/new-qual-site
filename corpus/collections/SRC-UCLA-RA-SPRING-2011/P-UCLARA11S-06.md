@@ -20,6 +20,8 @@ Prove that there is a unique pair of positive Borel measures $\mu_a,\mu_s$ such 
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -364,6 +366,8 @@ Subtracting from $\mu$ gives
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves existence, and step [](#s1-10){.pf-ref} proves uniqueness.
+
+:::
 
 :::
 
