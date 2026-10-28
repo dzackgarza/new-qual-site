@@ -18,6 +18,8 @@ Let $X$ be obtained by identifying a point $a$ of the $2$-sphere with a point $b
 Find a $\Delta$-complex structure on $X$ and compute the simplicial homology groups of $X$.
 :::
 
+::: {.solution}
+
 The space is
 \[
 X=S^2\vee T^2.
@@ -513,6 +515,8 @@ Combine steps [](#s1-19){.pf-ref} through [](#s1-22){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} give the requested \(\Delta\)-complex structure, and step [](#s1-23){.pf-ref} gives all simplicial homology groups.
+
+:::
 
 :::
 
