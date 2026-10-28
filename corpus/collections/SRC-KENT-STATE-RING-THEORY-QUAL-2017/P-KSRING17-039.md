@@ -19,6 +19,8 @@ audit:
 Let R be a non-zero commutative ring with 1. Show that an ideal M of R is maximal if and only if $R / M$ is a field.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -290,6 +292,8 @@ Combine steps [](#s1-4){.pf-ref} and [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
