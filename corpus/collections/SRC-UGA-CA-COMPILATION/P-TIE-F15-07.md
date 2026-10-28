@@ -22,6 +22,8 @@ Prove by justifying all steps that for all $\xi \in \mathbb { C }$ we have $e ^ 
 Hint: You may use that fact in Example 1 on p. 42 of the textbook without proof, i.e., you may assume the above is true for real values of $\xi .$
 :::
 
+::: {.solution}
+
 Define
 $$
 F(\xi)
@@ -210,6 +212,8 @@ on $\CC$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required identity for every complex frequency $\xi$.
+
+:::
 
 :::
 
