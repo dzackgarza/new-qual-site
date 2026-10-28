@@ -30,6 +30,8 @@ III. $A$ is invertible and $A = A^{-1} \Rightarrow A = I$ or $A = -I$
 (E) None of the above
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -146,6 +148,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} provide explicit counterexam
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} identifies the correct choice.
+
+:::
 
 :::
 
