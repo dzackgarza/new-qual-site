@@ -21,6 +21,8 @@ audit:
 (ii) For $n _ { i }$ as in (i), assume that in addition $\operatorname* { l i m } _ { m \to \infty } \operatorname* { l i m } _ { i \to \infty } f _ { n _ { i } } ( m )$ exists and equals 0. Prove or disprove: The same holds for the reverse double limit $\begin{array} { r } { \operatorname* { l i m } _ { i \to \infty } \operatorname* { l i m } _ { m \to \infty } f _ { n _ { i } } ( m ) } \end{array}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -219,6 +221,8 @@ Thus the reverse iterated limit exists but is not equal to $0$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (i), and step [](#s1-6){.pf-ref} disproves the assertion in part (ii).
+
+:::
 
 :::
 
