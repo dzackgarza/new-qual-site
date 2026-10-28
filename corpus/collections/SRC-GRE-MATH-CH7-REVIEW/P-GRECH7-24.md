@@ -25,6 +25,8 @@ What are the complex roots of the equation $e^{2z} = i$?
 (E) $\left(\frac{i}{2}\right)\left(\frac{\pi}{2} + 2n\pi\right)$
 :::
 
+::: {.solution}
+
 Write $z=x+iy$ with $x,y\in\RR$.
 
 ::: pf
@@ -104,6 +106,8 @@ so every listed value is indeed a solution.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the complete solution set.
+
+:::
 
 :::
 
