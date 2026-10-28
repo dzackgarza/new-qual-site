@@ -20,6 +20,8 @@ audit:
 Suppose R contains an idempotent element a other than 0 or 1. Show that every prime ideal in R contains an idempotent element other than 0 or 1. (An element $a \in R$ is idempotent if $a ^ { 2 } = a . )$
 :::
 
+::: {.solution}
+
 Let
 $$
 P
@@ -185,6 +187,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
