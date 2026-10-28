@@ -19,6 +19,8 @@ audit:
 Use the saddle point method to approximate $f ( t ) = \int _ { - \infty } ^ { \infty } \frac { e ^ { - t ( z ^ { 2 } - 1 / 4 ) } \cos t z } { 1 + z ^ { 2 } } \mathrm { d } z$ for $t \gg 1$
 :::
 
+::: {.solution}
+
 Define
 $$
 J(t)
@@ -339,6 +341,8 @@ and step [](#s1-7){.pf-ref} gives its leading asymptotic.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the saddle-point approximation.
+
+:::
 
 :::
 
