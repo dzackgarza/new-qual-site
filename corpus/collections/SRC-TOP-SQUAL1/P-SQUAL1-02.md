@@ -18,6 +18,8 @@ Show that there are disjoint open sets $U,V\subseteq X$ such that
 $$A\subseteq U,\qquad B\subseteq V.$$
 :::
 
+::: {.solution}
+
 Fix
 \[
 a\in A.
@@ -318,6 +320,8 @@ Use steps [](#s1-11){.pf-ref} through [](#s1-13){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-14){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
