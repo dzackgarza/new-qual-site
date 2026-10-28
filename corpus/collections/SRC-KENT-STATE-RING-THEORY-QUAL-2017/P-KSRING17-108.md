@@ -21,6 +21,8 @@ audit:
 (b) Show that $x ^ { 4 } + 1$ is not irreducible in $\mathbb { Z } _ { 3 } [ x ]$
 :::
 
+::: {.solution}
+
 Set
 $$
 f(x)
@@ -349,6 +351,8 @@ Step [](#s1-8){.pf-ref} gives a nontrivial factorization.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
+
+:::
 
 :::
 
