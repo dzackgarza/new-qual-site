@@ -19,6 +19,8 @@ audit:
 State the Argument Principle.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -161,6 +163,8 @@ which is precisely
 
 Step [](#s1-1){.pf-ref} is the standard Argument Principle, and step [](#s1-2){.pf-ref} records its
 winding-number interpretation.
+
+:::
 
 :::
 
