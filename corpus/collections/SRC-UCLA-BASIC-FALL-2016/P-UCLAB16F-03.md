@@ -33,6 +33,8 @@ Here R must be a $2 \times 3$ matrix with real entries.
 You must prove that your conditions are necessary and sufficient.
 :::
 
+::: {.solution}
+
 The necessary and sufficient condition is:
 \[
 \boxed{
@@ -395,6 +397,8 @@ Steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} construct a full-rank $2\tim
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves necessity, and step [](#s1-10){.pf-ref} proves sufficiency.
+
+:::
 
 :::
 
