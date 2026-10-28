@@ -30,6 +30,8 @@ Prove that the diagram
 commutes, where $\widehat\alpha$ is the change-of-basepoint map induced by the path $\alpha$.
 :::
 
+::: {.solution}
+
 For \(t\in I\), write
 \[
 F_t:X\to Y,\qquad F_t(x)=F(x,t),
@@ -173,6 +175,8 @@ This is exactly commutativity of the displayed diagram.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
