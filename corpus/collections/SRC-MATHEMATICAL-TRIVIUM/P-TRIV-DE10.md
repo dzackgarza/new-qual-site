@@ -31,6 +31,8 @@ if
 and with C(0) = 0.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -324,6 +326,8 @@ Steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref} cover the cases $a=b\neq0$
 ::: pf-qed
 
 Steps [](#s1-7){.pf-ref} and [](#s1-12){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
