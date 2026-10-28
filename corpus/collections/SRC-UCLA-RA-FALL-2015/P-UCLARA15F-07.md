@@ -24,6 +24,8 @@ audit:
 Assume that $f(z)$ is analytic in $\{z : |z| < 1\}$ and continuous on $\{z : |z| \leq 1\}$. If $f(z) = f(1/z)$ when $|z| = 1$, prove that $f(z)$ is constant.
 :::
 
+::: {.solution}
+
 Define
 \[
 F:\mathbb C\to\mathbb C
@@ -285,6 +287,8 @@ and the right-hand side is constant by step [](#s1-12){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
