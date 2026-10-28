@@ -23,6 +23,8 @@ audit:
    and identify the resulting compact connected surface.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -180,6 +182,8 @@ Steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} prove that the source's boun
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives the complete mathematically valid disposition of both parts.
+
+:::
 
 :::
 
