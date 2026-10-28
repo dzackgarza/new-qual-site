@@ -24,6 +24,8 @@ audit:
 Let $(f_n)$ be a bounded sequence in $L^2(\mathbb{R})$ and suppose that $f_n \to 0$ Lebesgue almost everywhere. Show that $f_n \to 0$ in the weak topology on $L^2(\mathbb{R})$.
 :::
 
+::: {.solution}
+
 Let
 \[
 M=\sup_n\|f_n\|_2<\infty.
@@ -220,6 +222,8 @@ in step [](#s1-1){.pf-ref}, which is exactly weak convergence.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
