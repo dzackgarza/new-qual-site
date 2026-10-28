@@ -30,6 +30,8 @@ Assume the following statement is true:
 (e) What, if anything, can be concluded if Michael failed the course?
 :::
 
+::: {.solution}
+
 Let
 $$
 P=\text{“Michael scored at least $80$ on the final”}
@@ -183,6 +185,8 @@ Therefore his score was below $80$.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} answer parts (a)--(e), respectively.
+
+:::
 
 :::
 
