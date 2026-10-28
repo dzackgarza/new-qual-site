@@ -19,6 +19,8 @@ audit:
 Let R be an integral domain containing the subfield F and assume that R is finite dimensional over F when viewed as a vector space over F . Prove that R is a field.
 :::
 
+::: {.solution}
+
 Let
 $$
 0\ne a\in R.
@@ -231,6 +233,8 @@ This is exactly the definition of a field.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
