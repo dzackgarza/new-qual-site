@@ -19,6 +19,8 @@ audit:
 [NEW] Prove that if D is a Euclidean Domain, then D is a Principal Ideal Domain.
 :::
 
+::: {.solution}
+
 Let
 $$
 \delta:D\setminus\{0\}\to\NN
@@ -276,6 +278,8 @@ This is exactly the definition of a principal ideal domain.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
