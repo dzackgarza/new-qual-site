@@ -21,6 +21,8 @@ Prove that $u$ has a harmonic conjugate $v$, so that $u+iv$ is analytic on $D$.
 Hint: consider $u_x-iu_y$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -139,6 +141,8 @@ particular, as the imaginary part of an analytic function, $v$ is harmonic.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the required existence of a harmonic conjugate.
+
+:::
 
 :::
 
