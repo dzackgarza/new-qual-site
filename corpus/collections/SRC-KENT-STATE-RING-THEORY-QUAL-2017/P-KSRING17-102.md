@@ -25,6 +25,8 @@ Suppose $\varphi : D[x] \to D[x]$ is an isomorphism such that $\varphi(d) = d$ f
 Show that $\varphi(x) = ax + b$ for some $a, b \in D$ and that $a$ is a unit of $D$.
 :::
 
+::: {.solution}
+
 Set
 $$
 f(x)
@@ -430,6 +432,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
