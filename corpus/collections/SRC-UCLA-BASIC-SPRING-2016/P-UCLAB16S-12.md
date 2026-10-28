@@ -26,6 +26,8 @@ Av_k=(2k-1)v_k
 Prove that $v_1+2v_2$ is orthogonal to $3v_3+4v_4$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -171,6 +173,8 @@ is orthogonal to
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
