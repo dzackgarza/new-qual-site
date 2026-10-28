@@ -20,6 +20,8 @@ audit:
 Let $f, g : \CC \to \CC$ be entire. Show that if $e^{f(z)} + e^{g(z)} = 1$ for all $z \in \CC$, then $f$ and $g$ are constant.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -131,6 +133,8 @@ This is exactly steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
