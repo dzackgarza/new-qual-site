@@ -24,6 +24,8 @@ Assume
 Prove that $N$ is the unique subgroup of $G$ of order $|N|$.
 :::
 
+::: {.solution}
+
 Let
 \[
 H\le G
@@ -273,6 +275,8 @@ The subgroup \(H\) was arbitrary among subgroups with \(|H|=|N|\), and step [](#
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} is the required uniqueness statement.
+
+:::
 
 :::
 
