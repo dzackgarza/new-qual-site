@@ -26,6 +26,8 @@ If $x$, $y$, and $z$ are positive integers such that $4x - 5y + 2z$ is divisible
 (E) $-5x + 3y - 4z$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -110,6 +112,8 @@ Step [](#s1-2){.pf-ref} proves that choice (D) is always divisible by $13$, whil
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} identifies the unique required expression.
+
+:::
 
 :::
 
