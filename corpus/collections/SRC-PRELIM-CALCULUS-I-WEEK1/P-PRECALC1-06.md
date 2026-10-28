@@ -20,6 +20,8 @@ audit:
 Compute the limit $\lim_{x \to 0} (x^{-2} - \sin(x)^{-2})$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -269,6 +271,8 @@ This is step [](#s1-9){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the requested limit.
+
+:::
 
 :::
 
