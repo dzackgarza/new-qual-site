@@ -40,6 +40,8 @@ Write down the minimal polynomial of $A$.
 > You should not need to compute $\inverseof{P}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -135,6 +137,8 @@ so $P^{-1}AP=J$.
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-1){.pf-ref} prove parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
