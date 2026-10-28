@@ -27,6 +27,8 @@ Show that
 \]
 :::
 
+::: {.solution}
+
 For
 \[
 E_n=\{x\in\mathbb R:|f(x)|\ge n\},
@@ -276,6 +278,8 @@ The upper bound tends to \(0\) by step [](#s1-9){.pf-ref}. Apply the squeeze the
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required limit.
+
+:::
 
 :::
 
