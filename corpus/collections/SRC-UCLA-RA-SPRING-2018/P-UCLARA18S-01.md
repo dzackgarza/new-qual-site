@@ -24,6 +24,8 @@ Problem 1. Suppose $f\in L^1(\mathbb R)$ satisfies
 Show that $f=0$ almost everywhere.
 :::
 
+::: {.solution}
+
 Define
 \[
 F(x)=\int_{-\infty}^{x}|f(t)|\,dt.
@@ -227,6 +229,8 @@ everywhere. Apply this to $|f|$ using step [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
