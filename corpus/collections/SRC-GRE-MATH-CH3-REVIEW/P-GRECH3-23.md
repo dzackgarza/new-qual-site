@@ -30,6 +30,8 @@ Find the minimum distance from the origin to the curve $3x^2+4xy+3y^2=20$.
 The source prints choices (D) and (E) as the digits $2,3$ and $5,3$ followed by $\sqrt{2}$, with no fraction bar.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -105,6 +107,8 @@ The distance from the origin to $(x,y)$ is $\sqrt{x^2+y^2}$. Step [](#s1-1){.pf-
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested minimum distance and corresponding choice.
+
+:::
 
 :::
 
