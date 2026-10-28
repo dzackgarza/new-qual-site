@@ -33,6 +33,8 @@ F(\gamma)=\iint_{\mathbb T\times\mathbb T}
 achieves its minimum on $\mathcal M$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -197,6 +199,8 @@ on \(\mathcal M\). Hence every \(\gamma\in\mathcal M\), in particular
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the claim.
+
+:::
 
 :::
 
