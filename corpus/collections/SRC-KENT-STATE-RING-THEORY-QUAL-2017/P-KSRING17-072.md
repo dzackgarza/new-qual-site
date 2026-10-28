@@ -21,6 +21,8 @@ Suppose that for every $a \in R$ , either a or $1 - a$ is invertible.
 Prove that $N = \{ a \in R \mid$ a is not invertible} is an ideal of R.
 :::
 
+::: {.solution}
+
 Let
 $$
 N
@@ -264,6 +266,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
