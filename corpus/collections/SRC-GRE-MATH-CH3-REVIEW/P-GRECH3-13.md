@@ -29,6 +29,8 @@ If the variables $P$, $V$, and $T$ are related by the equation $PV=nRT$, where $
 (E) $\frac{1}{nR}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -121,6 +123,8 @@ The defining relation $PV=nRT$ therefore reduces this expression to $-1$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the simplified value and corresponding choice.
+
+:::
 
 :::
 
