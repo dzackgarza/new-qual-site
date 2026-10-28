@@ -20,6 +20,8 @@ Let $f:U\to\mathbb C$ be analytic, and let $D\subset f(U)$ be a domain.
 Define what it means for $g$ to be a branch of $f^{-1}$ on $D$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -69,6 +71,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} is the requested definition; step [](#s1-2){.pf-ref} records its immediate consequences.
+
+:::
 
 :::
 
