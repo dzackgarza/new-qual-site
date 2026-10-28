@@ -27,6 +27,8 @@ If not, prove that they are not.
 If yes, find the matrix of a change of coordinates.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -189,6 +191,8 @@ Real inequivalence is step [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives both requested decisions and the required complex change-of-coordinates matrix.
+
+:::
 
 :::
 
