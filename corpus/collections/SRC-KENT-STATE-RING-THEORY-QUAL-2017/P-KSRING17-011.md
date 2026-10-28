@@ -19,6 +19,8 @@ audit:
 Show that a non-zero ring R in which $x ^ { 2 } = x$ for all $x \in R$ is of characteristic 2 and is commutative.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -168,6 +170,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the characteristic assertion, and step [](#s1-5){.pf-ref} proves commutativity.
+
+:::
 
 :::
 
