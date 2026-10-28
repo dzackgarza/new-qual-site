@@ -40,6 +40,8 @@ Show that (a) converges, (b) diverges to $+\infty$, and (c) diverges to $0$.
 Erratum: product (c) does not satisfy the source's standing hypothesis that the factors are positive. At $n = 1$ the factor $1 - \frac{1}{\log 1}$ is undefined, and at $n = 2$ it is $1 - \frac{1}{\log 2} \approx -0.44 < 0$. For $n \ge 3$ we have $\log n > 1$, so every factor lies in $(0,1)$; the intended claim is that $\prod_{n=3}^{\infty}\left(1 - \frac{1}{\log n}\right)$ diverges to $0$.
 :::
 
+::: {.solution}
+
 ## Product (a)
 
 Let
@@ -484,6 +486,8 @@ This is step [](#s1-17){.pf-ref}.
 
 Step [](#s1-6){.pf-ref} proves (a), step [](#s1-10){.pf-ref} proves (b), and step [](#s1-18){.pf-ref} proves the
 corrected form of (c).
+
+:::
 
 :::
 
