@@ -19,6 +19,8 @@ audit:
 Let R be a subring of a field F such that for each x in F either $x \in R { \mathrm { ~ o r ~ } } x ^ { - 1 } \in R$ . Prove that if I and J are two ideals of R, then either $I \subseteq J { \mathrm { ~ o r ~ } } J \subseteq I$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -187,6 +189,8 @@ If the two ideals were incomparable, step [](#s1-1){.pf-ref} would produce $a,b$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
