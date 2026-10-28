@@ -33,6 +33,8 @@ Let $u = p^{n-1}$ and let $c = b^u$.
 Does a $F$-automorphism $\sigma$ of $F(c)$ extend to an $F$-automorphism of $F(b)$?
 :::
 
+::: {.solution}
+
 Choose $b$ with $b^{p^n}=a$, and set
 $$
 E=F(b),\qquad c=b^{p^{n-1}}.
@@ -170,6 +172,8 @@ Since $E=F(b)=F(a^{1/p^n})$, this is the required degree.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the required equality.
+
+:::
 
 :::
 
