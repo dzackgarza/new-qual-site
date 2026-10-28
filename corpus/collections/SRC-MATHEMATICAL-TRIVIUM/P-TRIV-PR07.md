@@ -19,6 +19,8 @@ audit:
 Let a, b, c be three independent random variables distributed uniformly between 0 and 1. Find the probability that the roots of the equation $a x ^ { 2 } + b x + c = 0$ are real.
 :::
 
+::: {.solution}
+
 The coefficient triple $(a,b,c)$ is uniformly distributed on the unit cube $[0,1]^3$.
 
 ::: pf
@@ -153,6 +155,8 @@ Add the two contributions from steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-re
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives the required probability.
+
+:::
 
 :::
 
