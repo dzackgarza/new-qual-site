@@ -24,6 +24,8 @@ The five graphical choices (A)–(E) appear on the source page:
 ![Scanned source page preserving the figure for Question 10.](../../../assets/attachments/gre-math-ch3-review/page-2.png)
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -113,6 +115,8 @@ Among the five source figures, choice (C) is the one showing the level-curve fam
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} identifies the requested graphical choice.
+
+:::
 
 :::
 
