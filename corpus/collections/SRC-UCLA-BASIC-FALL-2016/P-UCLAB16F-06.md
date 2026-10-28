@@ -20,6 +20,8 @@ Let A be an invertible $n \times n$ matrix whose entries belong to $\mathbb { Q 
 Suppose that $A v = 3 v$ for a vector $v \in \mathbb { R } ^ { n }$ (i) Give an example in which no non-zero scalar multiple λv for $\lambda \in \mathbb { R }$ is in $\mathbb { Q } ^ { n }$ (ii) Show that there is always a non-zero $w \in \mathbb { Q } ^ { n }$ such that $A w = 3 w$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -228,6 +230,8 @@ Aw=3w.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} give the example required in part (i), and steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref} prove part (ii).
+
+:::
 
 :::
 
