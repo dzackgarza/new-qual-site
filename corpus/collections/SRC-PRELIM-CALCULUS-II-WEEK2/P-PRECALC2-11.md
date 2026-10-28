@@ -22,6 +22,8 @@ More generally, if $x_1,\ldots,x_k>0$, evaluate
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 M=\max\{x_1,\dots,x_k\}.
@@ -213,6 +215,8 @@ Apply step [](#s1-7){.pf-ref}.
 
 Step [](#s1-7){.pf-ref} gives the general answer, and step [](#s1-8){.pf-ref} gives the requested
 special case.
+
+:::
 
 :::
 
