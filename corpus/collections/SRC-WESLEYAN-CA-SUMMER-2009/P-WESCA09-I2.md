@@ -20,6 +20,8 @@ Let $U\subset\mathbb C$ and let $\alpha_i:[0,1]\to U$ for $i=1,2$ be closed path
 Define what it means for $\alpha_1$ to be freely homotopic to $\alpha_2$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -60,6 +62,8 @@ loops.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the requested definition.
+
+:::
 
 :::
 
