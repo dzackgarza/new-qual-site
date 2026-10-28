@@ -24,6 +24,8 @@ Without using Cauchy's theorem, evaluate
 for every integer $n$, where $\gamma$ is any positively oriented circle that does not contain the origin.
 :::
 
+::: {.solution}
+
 Write the circle as
 $$
 \gamma(t)=c+\rho e^{it},
@@ -160,6 +162,8 @@ Step [](#s1-1){.pf-ref} covers $n\ne-1$, and step [](#s1-3){.pf-ref} covers $n=-
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested value for every integer $n$ without using Cauchy's theorem.
+
+:::
 
 :::
 
