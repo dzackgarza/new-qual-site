@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Consider the iteration
+Consider the iteration
 \[
 \vec x_{k+1}=A^{-1}(B\vec x_k+\vec c),
 \]
