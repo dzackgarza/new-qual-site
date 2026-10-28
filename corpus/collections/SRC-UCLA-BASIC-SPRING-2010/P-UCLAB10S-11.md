@@ -29,6 +29,8 @@ Prove that every rearrangement
 converges and has the same sum as $\sum_{n=1}^{\infty}a_n$.
 :::
 
+::: {.solution}
+
 Let
 \[
 S=\sum_{n=1}^{\infty}a_n,
@@ -264,6 +266,8 @@ Thus step [](#s1-6){.pf-ref} applies to every rearrangement.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
