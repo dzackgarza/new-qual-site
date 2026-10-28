@@ -16,6 +16,8 @@ audit:
 3. Using the CW structure from part 2, compute the homology of $\mathbb{CP}^4$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -372,6 +374,8 @@ Step [](#s1-7){.pf-ref} computes the homology of
 \[
 \mathbb{CP}^4.
 \]
+
+:::
 
 :::
 
