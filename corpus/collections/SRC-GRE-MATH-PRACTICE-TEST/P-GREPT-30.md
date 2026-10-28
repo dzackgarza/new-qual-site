@@ -33,6 +33,8 @@ IV. This structure is a group.
 (E) IV only
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -130,6 +132,8 @@ is false.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
