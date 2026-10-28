@@ -31,6 +31,8 @@ Give definitions of each of the following:
 6. a normed vector space.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -99,6 +101,8 @@ A normed vector space is a vector space \(V\) over \(\mathbb R\) or \(\mathbb C\
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} give the six requested definitions.
+
+:::
 
 :::
 
