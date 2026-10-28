@@ -24,6 +24,8 @@ Prove that for every $p\in\mathbb N$, the series
 converges.
 :::
 
+::: {.solution}
+
 Fix $p\in\NN$, and set $a_n=\sin(\pi n/p)$ and $A_N=\sum_{n=1}^N a_n$.
 
 ::: pf
@@ -115,6 +117,8 @@ By step [](#s1-3){.pf-ref}, every tail from $m$ through $N$ has absolute value a
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves the claim for $p=1$, and step [](#s1-4){.pf-ref} proves it for every $p\ge 2$.
+
+:::
 
 :::
 
