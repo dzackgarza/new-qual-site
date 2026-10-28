@@ -25,6 +25,8 @@ If $\ZZ_n$ denotes the ring of integers modulo $n$, for which of the pairs of ri
 (E) $(\ZZ_3, \ZZ_4)$
 :::
 
+::: {.solution}
+
 Write $[k]_r$ for the residue class of an integer $k$ in $\ZZ_r$.
 
 ::: pf
@@ -105,6 +107,8 @@ necessary and sufficient condition established in steps [](#s1-1){.pf-ref} and [
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required pair.
+
+:::
 
 :::
 
