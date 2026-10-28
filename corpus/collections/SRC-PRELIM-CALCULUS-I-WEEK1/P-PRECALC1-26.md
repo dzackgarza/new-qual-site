@@ -15,6 +15,8 @@ review: draft
 Calculate $\int _ { - 3 } ^ { 3 } | x + 1 | d x .$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -197,6 +199,8 @@ Combine steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}:
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the requested value.
+
+:::
 
 :::
 
