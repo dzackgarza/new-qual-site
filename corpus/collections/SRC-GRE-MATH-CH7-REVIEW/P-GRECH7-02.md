@@ -25,6 +25,8 @@ Which of the following is the negation of the sentence $(S \lor T)$?
 (E) $S \land T$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -73,6 +75,8 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that the two propositions h
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required negation.
+
+:::
 
 :::
 
