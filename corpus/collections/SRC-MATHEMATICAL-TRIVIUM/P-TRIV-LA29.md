@@ -19,6 +19,8 @@ audit:
 Consider the infinite dimensional vector space with the orthonormal basis $\vec { e _ { i } }$ $i = 1 , 2 , \dots$ Construct the continuous family of linear transformations $U ( \lambda )$ $0 \leqslant \lambda \leqslant 1$ , acting in this space such that $U ( 1 ) = E$ and $U ( 0 ) \vec { e } _ { i } = \vec { e } _ { i + 1 } , i = 1 , 2 ,$
 :::
 
+::: {.solution}
+
 Let $S$ denote the unilateral shift
 $$
 Se_i=e_{i+1},
@@ -153,6 +155,8 @@ Thus the path is Lipschitz, hence continuous.
 
 Steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} verify the two endpoint conditions and continuity of the
 family defined in step [](#s1-1){.pf-ref}.
+
+:::
 
 :::
 
