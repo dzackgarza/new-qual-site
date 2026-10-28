@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\{ b _ { n } \} _ { n = 1 } ^ { \infty }$ be a sequence of real numbers with bounded partial sums i.e., there is $M < \infty$ such that for all $N , | \sum _ { n = 1 } ^ { N } b _ { n } | \leq M$ , and let $\{ a _ { n } \} _ { n = 1 } ^ { \infty }$ be a sequence of positive numbers decreasing to 0. Prove the series $\sum a _ { n } b _ { n }$ converges.
+Let $\{b_n\}_{n=1}^\infty$ be a sequence of real numbers with bounded partial sums, i.e., there is $M < \infty$ such that for all $N$, $\abs{\sum_{n=1}^N b_n} \leq M$, and let $\{a_n\}_{n=1}^\infty$ be a sequence of positive numbers decreasing to $0$. Prove the series $\sum a_n b_n$ converges.
 :::
 
 ::: {.solution}
