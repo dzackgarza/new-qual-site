@@ -28,6 +28,8 @@ where $B,C$ are separated, meaning
 Show that $A\cup B$ is connected.
 :::
 
+::: {.solution}
+
 Suppose, for contradiction, that
 \[
 A\cup B
@@ -354,6 +356,8 @@ The assumption that $A\cup B$ is disconnected leads to the contradiction in step
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
