@@ -26,6 +26,8 @@ Find all possible values of $\operatorname{rank}C$.
 For each possible rank, give explicit matrices realizing it, and prove that all other values are impossible.
 :::
 
+::: {.solution}
+
 Regard
 \[
 B:\mathbb R^5\to\mathbb R^4
@@ -252,6 +254,8 @@ Step [](#s1-3){.pf-ref} rules out every other value, while steps [](#s1-4){.pf-r
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required classification.
+
+:::
 
 :::
 
