@@ -22,6 +22,8 @@ Show that the compositions $\phi\circ\psi$ and $\psi\circ\phi$ are homotopic.
 Hint: Is this true for $f(z)=z^n$, where $n\in\mathbb Z$?
 :::
 
+::: {.solution}
+
 Let
 \[
 p:\mathbb R\to S^1,
@@ -319,6 +321,8 @@ Apply step [](#s1-8){.pf-ref} to the two maps whose degrees agree by step [](#s1
 ::: pf-qed
 
 Step [](#s1-12){.pf-ref} is the required homotopy statement.
+
+:::
 
 :::
 
