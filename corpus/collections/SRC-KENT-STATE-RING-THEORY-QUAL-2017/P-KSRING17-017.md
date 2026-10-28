@@ -20,6 +20,8 @@ Let m, n be positive integers such that m divides n. Then the natural map $\varp
 If $U _ { n } , U _ { m }$ are the units of $\mathbb { Z } _ { n }$ and $\mathbb { Z } _ { m }$ , respectively, show that $\varphi : U _ { n } \to U _ { m }$ is a surjective group homomorphism.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -162,6 +164,8 @@ Combine steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
