@@ -28,6 +28,8 @@ $F ( z ) = z - a - q f ( z )$ where q is a complex parameter.
 (3) $\mathrm { I f } ~ z \in { K }$ , prove that the function $\displaystyle \frac { 1 } { F ( z ) }$ can be represented as a convergent series with respect to q: ${ \frac { 1 } { F ( z ) } } = \sum _ { n = 0 } ^ { \infty } { \frac { ( q f ( z ) ) ^ { n } } { ( z - a ) ^ { n + 1 } } }$
 :::
 
+::: {.solution}
+
 Let $C$ denote the circle called $K$ in the problem, let its radius be $\rho$, and let
 $\overline\Delta$ be the closed disk bounded by $C$.
 
@@ -220,6 +222,8 @@ uniformly on $C$. Multiplying by $1/(z-a)$ gives the displayed expansion.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove part (1), step [](#s1-4){.pf-ref} proves part (2), and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} prove
 part (3).
+
+:::
 
 :::
 
