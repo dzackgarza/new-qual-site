@@ -25,6 +25,8 @@ f(z)=\sum_{n\ge1}\frac{a_n}{z-e^{i\alpha n}}
 converges and defines a function analytic in the unit disk $\mathbb D$, and that $f$ admits no analytic continuation to any domain properly containing $\mathbb D$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -351,6 +353,8 @@ Steps [](#s1-5){.pf-ref} through [](#s1-10){.pf-ref} show that no domain properl
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} refutes the literal source statement. Steps [](#s1-2){.pf-ref} through [](#s1-11){.pf-ref} prove the intended theorem under the minimal density hypothesis $\alpha/(2\pi)\notin\mathbb Q$.
+
+:::
 
 :::
 
