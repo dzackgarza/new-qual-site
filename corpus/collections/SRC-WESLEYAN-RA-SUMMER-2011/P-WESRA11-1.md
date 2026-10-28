@@ -23,6 +23,8 @@ Prove or give a counterexample: if $f_n$ are continuous on $[0,1]$, $0\le f_n\le
 then $f_n(x)\to0$ almost everywhere.
 :::
 
+::: {.solution}
+
 For \(k\ge1\) and \(0\le j<2^k\), let
 \[
 I_{k,j}=\left[\frac{j}{2^k},\frac{j+1}{2^k}\right]
@@ -122,6 +124,8 @@ Steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref} verify all hypotheses of the ass
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} supplies the required counterexample.
+
+:::
 
 :::
 
