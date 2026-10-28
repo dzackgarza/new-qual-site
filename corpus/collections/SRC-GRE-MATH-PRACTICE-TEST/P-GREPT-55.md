@@ -25,6 +25,8 @@ Let $A$ be the set of all ordered pairs of integers $(m, n)$ such that $7m + 12n
 (E) $-1$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -118,6 +120,8 @@ largest when $k=1$, yielding $1-5=-4$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested greatest negative value.
+
+:::
 
 :::
 
