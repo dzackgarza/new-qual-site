@@ -31,6 +31,8 @@ $$
 The source Gaussian $\psi_\sigma(x)=\sqrt{\pi\sigma^2}\,e^{-x^2/(2\sigma^2)}$ is not normalized. This does not affect the optimal width or eigenvalue, because an overall nonzero scalar cancels from the Rayleigh quotient and does not change an eigenvalue equation.
 :::
 
+::: {.solution}
+
 Write
 $$
 \psi_\sigma(x)=A(\sigma)e^{-x^2/(2\sigma^2)},
@@ -277,6 +279,8 @@ Step [](#s1-9){.pf-ref} gives the requested eigenvalue.
 ::: pf-qed
 
 Steps [](#s1-7){.pf-ref} and [](#s1-11){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
