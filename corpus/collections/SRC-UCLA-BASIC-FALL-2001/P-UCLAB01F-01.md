@@ -24,6 +24,8 @@ f(x)\le f(x_0)
 for every $x\in K$.
 :::
 
+::: {.solution}
+
 As stated, the assertion requires the implicit hypothesis $K\ne\varnothing$: if $K=\varnothing$, there is no point $x_0\in K$. Assume therefore that $K$ is nonempty.
 
 ::: pf
@@ -89,6 +91,8 @@ f(x)\le M=f(x_0).
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the required conclusion for every nonempty compact $K$, while the opening observation identifies the empty-set exception in the statement as printed.
+
+:::
 
 :::
 
