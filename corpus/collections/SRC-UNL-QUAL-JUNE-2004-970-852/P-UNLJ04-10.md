@@ -24,6 +24,8 @@ b. Prove that if G is a graph with $n \geq r + 1$ vertices and $t _ { r - 1 } ( 
 c. From the previous part deduce Tur´an’s theorem, and also the stronger fact that such a G contains two $K _ { r }$ subgraphs sharing $r - 1$ vertices.
 :::
 
+::: {.solution}
+
 Write
 $$
 q=r-1,
@@ -805,6 +807,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} states Turán's theorem, step [](#s1-5){.pf-ref} proves part (b), step [](#s1-7){.pf-ref} deduces Turán's theorem from part (b), and steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} prove the stronger conclusion in its correct range.
+
+:::
 
 :::
 
