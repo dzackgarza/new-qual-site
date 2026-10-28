@@ -21,6 +21,8 @@ Let $\widetilde L$ be the Galois closure of $L/K$.
 Show that $\widetilde L$ contains no subfield $M$ which is Galois over $K$ of degree $p$.
 :::
 
+::: {.solution}
+
 Let
 \[
 K\subset L,
@@ -477,6 +479,8 @@ This is step [](#s1-19){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-20){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
