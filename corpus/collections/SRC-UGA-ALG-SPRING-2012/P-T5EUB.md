@@ -41,6 +41,8 @@ For (b), centers are always abelian, so $Z(H)$ is good to consider, just need to
 Use transitivity of characteristic.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -72,6 +74,8 @@ Since $H$ is a nontrivial finite $p$-group, its class equation implies $|Z(H)|$ 
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-2){.pf-ref} proves part (b).
+
+:::
 
 :::
 
