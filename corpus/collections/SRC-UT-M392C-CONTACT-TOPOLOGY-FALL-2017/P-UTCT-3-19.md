@@ -27,6 +27,8 @@ bxy,&y\ge0.
 Take the contact structure $dz+x\,dy$. Show that the singularity at $0$ is half-elliptic if $-1<b<0$ and half-hyperbolic if $b<-1$ or $b>0$. Show also that $\xi$ twists right relative to $F$ if $b<-1$ and left relative to $F$ if $b>-1$.
 :::
 
+::: {.solution}
+
 Let
 \[
 \alpha=dz+x\,dy,
@@ -666,6 +668,8 @@ which is the left-hand twist convention.
 Steps [](#s1-10){.pf-ref} and [](#s1-14){.pf-ref} classify the half-elliptic and half-hyperbolic
 singularities, while steps [](#s1-21){.pf-ref} and [](#s1-23){.pf-ref} give the relative twisting
 directions.
+
+:::
 
 :::
 
