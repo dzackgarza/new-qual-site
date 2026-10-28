@@ -21,6 +21,8 @@ Problem 5. Give an example of a function $f$ on $[0,1]$ having infinitely many d
 Include a proof; do not merely quote a theorem.
 :::
 
+::: {.solution}
+
 Define
 \[
 f(x)=
@@ -154,6 +156,8 @@ By step [](#s1-3){.pf-ref}, every lower sum is $0$, so the lower integral is $0$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives infinitely many discontinuities, and step [](#s1-5){.pf-ref} proves Riemann integrability directly from Darboux sums.
+
+:::
 
 :::
 
