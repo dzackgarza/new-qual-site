@@ -54,6 +54,8 @@ $$
 Hence the number of the typical series is exponentially large, while the probability of each of them is exponentially small.
 :::
 
+::: {.solution}
+
 Assume $0<p<1$, put $q=1-p$, and write
 \[
 r=\frac{S_n(\omega)}n.
@@ -257,6 +259,8 @@ Combine steps [](#s1-5){.pf-ref} and [](#s1-7){.pf-ref}. In particular, the typi
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a). Steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} give the correct version of part (b) and identify the missing probability factor in the source's finite-$n$ lower bound.
+
+:::
 
 :::
 
