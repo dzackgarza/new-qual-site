@@ -19,6 +19,8 @@ audit:
 Let R be a commutative ring with 1. We say R satisfies the ascending chain condition if whenever $I _ { 1 } \subseteq I _ { 2 } \subseteq I _ { 3 } \subseteq \cdots$ · is an ascending chain of ideals, there is an integer N such that $I _ { k } = I _ { N }$ for all $k \geqslant N$ Show that R satisfies the ascending chain condition if and only if every ideal of R is finitely generated.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -486,6 +488,8 @@ Step [](#s1-6){.pf-ref} proves the forward implication, and step [](#s1-13){.pf-
 ::: pf-qed
 
 Step [](#s1-14){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
