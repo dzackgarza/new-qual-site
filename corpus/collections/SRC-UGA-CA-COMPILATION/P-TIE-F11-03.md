@@ -30,6 +30,8 @@ $$
 (3) $\mathrm { I f } ~ z \in { K }$ , prove that the function $\displaystyle \frac { 1 } { F ( z ) }$ can be represented as a convergent series with respect to $q \colon { \frac { 1 } { F ( z ) } } = \sum _ { n = 0 } ^ { \infty } { \frac { ( q f ( z ) ) ^ { n } } { ( z - a ) ^ { n + 1 } } }$
 :::
 
+::: {.solution}
+
 Write
 $$
 K=\{z:\abs{z-a}=\rho\},
@@ -177,6 +179,8 @@ Multiplying by $1/(z-a)$ yields the displayed expansion. The bound in step [](#s
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (1), step [](#s1-3){.pf-ref} proves part (2), and step [](#s1-5){.pf-ref} proves part (3).
+
+:::
 
 :::
 
