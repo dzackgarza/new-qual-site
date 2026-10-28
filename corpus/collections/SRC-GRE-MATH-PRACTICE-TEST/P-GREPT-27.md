@@ -27,6 +27,8 @@ $$\frac{d^4y}{dx^4} + 2\frac{d^3y}{dx^3} + 5\frac{d^2y}{dx^2} = 0$$
 (E) $y = c_1 + e^x(c_2 \cos 2x + c_3 \sin 2x)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -99,6 +101,8 @@ arbitrary real coefficients gives the displayed general solution.
 
 Step [](#s1-3){.pf-ref} gives the complete four-parameter solution of the fourth-order
 equation.
+
+:::
 
 :::
 
