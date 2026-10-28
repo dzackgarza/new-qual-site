@@ -29,6 +29,8 @@ If $x$ is an element of the set $(A \cup B) \cap C$, which of the following must
 (E) II and III only
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -125,6 +127,8 @@ Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove I and II, while step [](#s
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
