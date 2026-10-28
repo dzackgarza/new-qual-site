@@ -34,6 +34,8 @@ B=\begin{pmatrix}2&1\\1&2\end{pmatrix}.
 Justify your answer.
 :::
 
+::: {.solution}
+
 Since
 \[
 A^{-1}=\frac12I,
@@ -258,6 +260,8 @@ so $\vec x_k$ does not converge.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} answers part (a), and step [](#s1-5){.pf-ref} answers part (b) negatively.
+
+:::
 
 :::
 
