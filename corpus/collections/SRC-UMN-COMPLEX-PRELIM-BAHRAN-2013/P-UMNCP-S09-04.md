@@ -24,6 +24,8 @@ f(z)=z^6+4z^2e^{z+1}-3
 have in the unit disk \(|z|<1\)?
 :::
 
+::: {.solution}
+
 Let
 $$
 g(z)=4z^2e^{z+1}.
@@ -216,6 +218,8 @@ Combine steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required zero count.
+
+:::
 
 :::
 
