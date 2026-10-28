@@ -19,6 +19,8 @@ audit:
 [NEW] Let $M _ { 1 } \neq M _ { 2 }$ be two maximal ideals in the commutative ring R and let $I = M _ { 1 } \cap M _ { 2 }$ Prove that $R / I$ is isomorphic to the direct sum of two fields.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -189,6 +191,8 @@ Combine steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
