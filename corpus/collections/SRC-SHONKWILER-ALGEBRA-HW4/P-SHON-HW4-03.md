@@ -19,6 +19,8 @@ audit:
 Prove that subgroups and quotient groups of a solvable group are solvable.
 :::
 
+::: {.solution}
+
 Recall the derived series
 \[
 G^{(0)}=G,
@@ -265,6 +267,8 @@ The subgroup statement is step [](#s1-5){.pf-ref} and the quotient statement is 
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
