@@ -25,6 +25,8 @@ for every $n$.
 Show that some subsequence converges uniformly on every compact subset of $\mathbb D$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -182,6 +184,8 @@ Every compact subset of $\mathbb D$ lies in some $K_k$, and step [](#s1-8){.pf-r
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
