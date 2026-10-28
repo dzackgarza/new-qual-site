@@ -22,6 +22,8 @@ f(x)=\frac{x+2}{3x-1},
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -162,6 +164,8 @@ so \(g=f^{-1}\). In particular, \(f\) is bijective by step [](#s1-2){.pf-ref}. T
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the definition and necessary-and-sufficient condition for an inverse function to exist, and step [](#s1-5){.pf-ref} computes the inverse of the given function.
+
+:::
 
 :::
 
