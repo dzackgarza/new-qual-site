@@ -19,6 +19,8 @@ audit:
 Calculate $H ^ { * } ( K ( \mathbb { Z } , 3 ) )$
 :::
 
+::: {.solution}
+
 All cohomology in this problem is with integral coefficients. Write
 \[
 X=K(\mathbb Z,3).
@@ -387,6 +389,8 @@ giving the exterior algebra. This agrees with step [](#s1-1){.pf-ref}.
 
 Step [](#s1-5){.pf-ref} is the complete integral cohomology-ring calculation; step [](#s1-7){.pf-ref}
 records its rational reduction.
+
+:::
 
 :::
 
