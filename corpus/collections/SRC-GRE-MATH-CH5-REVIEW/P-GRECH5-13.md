@@ -32,6 +32,8 @@ forms
 (E) a parabola with vertex $(1, y_2)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -84,6 +86,8 @@ This is the slope-intercept equation of a line with slope $y_2-y_1$.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} identifies the locus and its slope.
+
+:::
 
 :::
 
