@@ -23,6 +23,8 @@ audit:
 For what values of $\alpha$ the series $\displaystyle\sum_{n=1}^{N} \frac{1}{n^\alpha}$ diverges as $N \to \infty$?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -223,6 +225,8 @@ $\alpha>1$.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required classification.
+
+:::
 
 :::
 
