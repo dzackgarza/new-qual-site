@@ -19,6 +19,8 @@ audit:
 Find $\int _ { 0 } ^ { \infty } e ^ { - x ^ { 2 } } d x .$
 :::
 
+::: {.solution}
+
 Let
 $$
 I=
@@ -171,6 +173,8 @@ Take the positive square root of step [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required value.
+
+:::
 
 :::
 
