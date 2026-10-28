@@ -21,6 +21,8 @@ Find the three cube roots of $i$ and compute
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -133,6 +135,8 @@ and therefore
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives all three cube roots of \(i\), and step [](#s1-4){.pf-ref} computes \((1+i)^5\).
+
+:::
 
 :::
 
