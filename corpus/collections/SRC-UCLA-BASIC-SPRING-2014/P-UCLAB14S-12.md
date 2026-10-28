@@ -38,6 +38,8 @@ Prove that $E$ is closed.
 (b) Prove that no such family of intervals $\{I_n\}$ can exist.
 :::
 
+::: {.solution}
+
 Assume throughout that the displayed family exists.
 
 ::: pf
@@ -166,6 +168,8 @@ Step [](#s1-5){.pf-ref} produces an isolated point of $E$. Steps [](#s1-6){.pf-r
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-8){.pf-ref} proves part (b).
+
+:::
 
 :::
 
