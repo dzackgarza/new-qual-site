@@ -28,6 +28,8 @@ Draw/describe the quotient Y/H of Y by the action of H.
 (c) Determine which reduced sequences in the free product group G do (or do not) lie in the subgroup K. Use this information to draw/describe the quotient Y/K of Y by the action of K. Find a presentation for the fundamental group $\pi _ { 1 } ( \mathrm { Y / K } )$ of the CW complex Y/K.
 :::
 
+::: {.solution}
+
 Let
 \[
 G=\langle a,b\mid a^2=1,\ b^3=1\rangle.
@@ -729,6 +731,8 @@ Apply step [](#s1-32){.pf-ref}.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-11){.pf-ref} answer part (a), steps [](#s1-12){.pf-ref} through [](#s1-19){.pf-ref} answer part (b), and
 steps [](#s1-20){.pf-ref} through [](#s1-33){.pf-ref} answer part (c).
+
+:::
 
 :::
 
