@@ -31,6 +31,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 Let
 \[
 r=\operatorname{rank}(B).
@@ -184,6 +186,8 @@ Hence their lower limit is at least $r$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required inequality.
+
+:::
 
 :::
 
