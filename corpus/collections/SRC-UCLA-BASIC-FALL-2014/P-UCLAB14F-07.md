@@ -30,6 +30,8 @@ Problem 7. Among all solutions to the system
 find the solution with minimal length.
 :::
 
+::: {.solution}
+
 Let
 \[
 A=
@@ -319,6 +321,8 @@ x_4=\frac{13}{59}.
 ::: pf-qed
 
 Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} prove that the displayed solution is the unique solution of minimal Euclidean length.
+
+:::
 
 :::
 
