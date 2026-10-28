@@ -22,6 +22,8 @@ A=S^1\times S^1
 be its boundary. Compute $H_n(X,A)$ for all $n$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -171,6 +173,8 @@ Combine steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} lists all relative homology groups.
+
+:::
 
 :::
 
