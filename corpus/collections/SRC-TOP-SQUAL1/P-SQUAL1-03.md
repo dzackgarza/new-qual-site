@@ -20,6 +20,8 @@ $$\bigcap_n X_n$$
 be connected? Prove your answer.
 :::
 
+::: {.solution}
+
 The answer is
 \[
 \boxed{\text{no}}.
@@ -199,6 +201,8 @@ Step [](#s1-6){.pf-ref} gives a separation into two disjoint nonempty open subse
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} verify the hypotheses, while step [](#s1-7){.pf-ref} disproves the proposed conclusion.
+
+:::
 
 :::
 
