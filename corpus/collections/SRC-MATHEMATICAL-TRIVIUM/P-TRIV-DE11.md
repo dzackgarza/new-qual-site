@@ -23,6 +23,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 Write
 $$
 M(x,y)=xy^2-y,
@@ -294,6 +296,8 @@ This solution was excluded from steps [](#s1-2){.pf-ref} through [](#s1-8){.pf-r
 ::: pf-qed
 
 Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} give the complete solution family.
+
+:::
 
 :::
 
