@@ -33,6 +33,8 @@ are eigenvectors and find their eigenvalues.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -144,6 +146,8 @@ $v_1,v_2,v_3$.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), and step [](#s1-4){.pf-ref} answers part (b).
+
+:::
 
 :::
 
