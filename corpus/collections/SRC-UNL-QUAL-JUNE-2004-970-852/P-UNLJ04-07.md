@@ -23,6 +23,8 @@ b. Let us define a snarl as a graph that can be obtained from $K _ { 4 }$ by rep
    (In fact it is true that every 3-connected cubic graph is a snarl.)
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -944,6 +946,8 @@ by finitely many such operations is $3$-connected.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-14){.pf-ref} proves part (b).
+
+:::
 
 :::
 
