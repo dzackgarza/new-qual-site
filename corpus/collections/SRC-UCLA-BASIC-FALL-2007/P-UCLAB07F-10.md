@@ -23,6 +23,8 @@ Suppose $\{v_j\}_{j=1}^n$ is a basis of $\mathbb C^n$.
 (b) If the $v_j$ are eigenvectors of a linear transformation $T$ of $\mathbb C^n$, show that the $w_j$ are eigenvectors of the adjoint $T^*$.
 :::
 
+::: {.solution}
+
 Let
 \[
 V=
@@ -183,6 +185,8 @@ By step [](#s1-2){.pf-ref}, each $w_j$ is nonzero. Step [](#s1-4){.pf-ref} shows
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} prove part (a), and steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} prove part (b).
+
+:::
 
 :::
 
