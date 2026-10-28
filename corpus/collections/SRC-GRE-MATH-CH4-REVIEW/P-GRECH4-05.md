@@ -32,6 +32,8 @@ such that $f(0) = 1$, $f'(0) = 0$, and $f''(0) = a^2$. How many positive values 
 (E) more than $3$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -137,6 +139,8 @@ for every positive $x$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested number of positive zeros and corresponding choice.
+
+:::
 
 :::
 
