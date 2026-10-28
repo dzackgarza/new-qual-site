@@ -19,6 +19,8 @@ audit:
 Show why the least-upper-bound property of the real numbers -- every nonempty set bounded above has a least upper bound -- implies the Cauchy completeness property that every Cauchy sequence of real numbers converges.
 :::
 
+::: {.solution}
+
 Let $(a_n)$ be a Cauchy sequence of real numbers.
 
 ::: pf
@@ -182,6 +184,8 @@ Therefore
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves that every Cauchy sequence of real numbers converges, using only the least-upper-bound property.
+
+:::
 
 :::
 
