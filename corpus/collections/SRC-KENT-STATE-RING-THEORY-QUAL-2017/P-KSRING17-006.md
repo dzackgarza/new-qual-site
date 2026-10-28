@@ -19,6 +19,8 @@ audit:
 [NEW] Find all positive integers n having the property that the group of units of $\mathbb { Z } / n \mathbb { Z }$ is an elementary abelian 2-group.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -247,6 +249,8 @@ These are exactly the positive divisors of $24$, by steps [](#s1-6){.pf-ref} and
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} gives all and only the required positive integers.
+
+:::
 
 :::
 
