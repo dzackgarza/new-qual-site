@@ -31,6 +31,8 @@ $$
 where a is the rate.
 :::
 
+::: {.solution}
+
 The arrival process is Poisson with rate $a$. The counter records every particle during $[0,t]$ exactly when no two arrival times in that interval differ by less than $\tau$.
 
 ::: pf
@@ -149,6 +151,8 @@ Summing over all feasible $n$ gives the formula; the positive-part notation make
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the probability that no particle arrives during the dead time caused by any preceding particle, which is exactly the event that every entering particle is counted.
+
+:::
 
 :::
 
