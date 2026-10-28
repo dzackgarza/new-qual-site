@@ -28,6 +28,8 @@ and
 Deduce that $f(z)$ is constant.
 :::
 
+::: {.solution}
+
 Choose $M\ge0$ such that
 \[
 |f(x)|\le M,
@@ -290,6 +292,8 @@ By step [](#s3){.pf-ref}, $f$ is a bounded entire function. Liouville's theorem 
 ::: pf-qed
 
 Step [](#s1){.pf-ref} handles the case $M=0$, and step [](#s4){.pf-ref} handles the case $M>0$.
+
+:::
 
 :::
 
