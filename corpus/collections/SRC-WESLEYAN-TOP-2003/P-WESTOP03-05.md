@@ -24,6 +24,8 @@ or
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -165,6 +167,8 @@ If $|X|\leq1$, the first alternative holds. If $|X|>1$, steps [](#s1-1){.pf-ref}
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is exactly the required dichotomy.
+
+:::
 
 :::
 
