@@ -19,6 +19,8 @@ audit:
 Prove Serre’s theorem: (a) The homotopy groups of odd spheres $S ^ { n }$ are torsion except in dimension n; (b) The homotopy groups of even spheres $S ^ { n }$ are torsion except in dimension n and $2 n - 1$
 :::
 
+::: {.solution}
+
 For $n\ge2$, use Serre's finite-generation theorem together with rational
 homotopy theory.
 
@@ -350,6 +352,8 @@ Thus the only nontorsion homotopy group is in degree $1=n$.
 
 Steps [](#s1-8){.pf-ref} and [](#s1-10){.pf-ref}, and [](#s1-12){.pf-ref} prove part (a). Steps [](#s1-9){.pf-ref} through [](#s1-11){.pf-ref} prove
 part (b).
+
+:::
 
 :::
 
