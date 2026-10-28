@@ -26,6 +26,8 @@ whenever $x\in[k/n,(k+1)/n)$ and $0\le k\le n-1$.
 Prove that $f_n\to f$ in $L^1([0,1])$.
 :::
 
+::: {.solution}
+
 For each $n$, let $A_n:L^1([0,1])\to L^1([0,1])$ denote the averaging operator $A_nf=f_n$.
 
 ::: pf
@@ -149,6 +151,8 @@ Since $\varepsilon>0$ is arbitrary, the limit is zero.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is exactly the required $L^1$ convergence.
+
+:::
 
 :::
 
