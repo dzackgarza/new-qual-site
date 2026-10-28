@@ -21,6 +21,8 @@ Suppose $f _ { n }$ converge pointwise.
 Show that the sequence converges uniformly if and only if the collection of functions $\left\{ f _ { n } \right\}$ is equicontinuous.
 :::
 
+::: {.solution}
+
 Let
 \[
 f(x)=\lim_{n\to\infty}f_n(x)
@@ -319,6 +321,8 @@ Step [](#s1-2){.pf-ref} proves the forward implication, and step [](#s1-8){.pf-r
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
