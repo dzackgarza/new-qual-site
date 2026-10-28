@@ -30,6 +30,8 @@ Let $f:\mathbb R^d\to[0,\infty)$ be measurable and define
 exists, identifying the limit.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -125,6 +127,8 @@ Apply the Monotone Convergence Theorem to the increasing sequence in step [](#s1
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
+
+:::
 
 :::
 
