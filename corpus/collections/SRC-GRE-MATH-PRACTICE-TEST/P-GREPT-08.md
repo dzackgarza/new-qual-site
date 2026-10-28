@@ -25,6 +25,8 @@ If $\int_0^b \tan x \, dx = 2$, then $b$ could equal
 (E) $\operatorname{arcsec}(e^2)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -106,6 +108,8 @@ equation.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested choice.
+
+:::
 
 :::
 
