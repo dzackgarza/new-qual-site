@@ -19,6 +19,8 @@ audit:
 Using the simplest form of Cauchy's estimates, prove that every bounded entire function is constant.
 :::
 
+::: {.solution}
+
 Let
 \[
 f:\mathbb C\to\mathbb C
@@ -169,6 +171,8 @@ connected component of its domain. The plane \(\mathbb C\) is connected.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is Liouville's theorem.
+
+:::
 
 :::
 
