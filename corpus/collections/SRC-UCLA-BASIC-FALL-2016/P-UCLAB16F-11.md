@@ -16,19 +16,19 @@ audit:
 ---
 
 ::: {.problem}
-We define a metric space (X, dist) as follows:
+We define a metric space $(X, \operatorname{dist})$ as follows:
 
 $$
-X : = \{ f : [ 0 , 1 ] \to [ 0 , 1 ] \mid f \text { is continuous and } f ( 1 ) = 0 . \}
+X := \{f : [0, 1] \to [0, 1] \mid f \text{ is continuous and } f(1) = 0\},
 $$
 
 $$
-\operatorname { d i s t } ( f , g ) = \operatorname* { i n f } \left\{ r \in [ 0 , 1 ] \mid f ( t ) = g ( t ) \text { for all } r \leq t \leq 1 . \right\}
+\operatorname{dist}(f, g) = \inf\{r \in [0, 1] \mid f(t) = g(t) \text{ for all } r \leq t \leq 1\}.
 $$
 
-Prove any TWO of the following statements about (X, dist):
+Prove any TWO of the following statements about $(X, \operatorname{dist})$:
 
-(a) It is not compact. (b) It is not connected.   
+(a) It is not compact. (b) It is not connected.
 (c) It is not separable. (d) It is not complete.
 :::
 
