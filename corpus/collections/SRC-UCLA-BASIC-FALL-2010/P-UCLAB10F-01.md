@@ -28,6 +28,8 @@ Problem 1. Let $F$ be a closed subset of a metric space $(X,\rho)$.
 Give a proof if it is true and a counterexample if it is false.
 :::
 
+::: {.solution}
+
 Assume first that $K$ and $F$ are nonempty.
 
 ::: pf
@@ -219,6 +221,8 @@ Thus
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} gives the counterexample required in part (b).
+
+:::
 
 :::
 
