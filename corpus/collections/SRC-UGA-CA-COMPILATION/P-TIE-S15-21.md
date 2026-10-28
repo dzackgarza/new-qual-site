@@ -30,6 +30,8 @@ Find a conformal map
 5. from $\{ z : | z | < 1 , \mathrm { R e } ( z ) > 0 \} \backslash ( 0 , 1 / 2 ]$ to H.
 :::
 
+::: {.solution}
+
 Write
 $$
 \HH\coloneqq\{w\in\CC:\operatorname{Im}w>0\}.
@@ -468,6 +470,8 @@ maps the right half-disk conformally onto $\HH$, and composing the four conforma
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} construct and verify a conformal map for each of the five requested domains.
+
+:::
 
 :::
 
