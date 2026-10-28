@@ -24,6 +24,8 @@ Let $(X,\mathcal T)$ and $(X,\mathcal T')$ be topological spaces with $\mathcal 
 If $(X,\mathcal T')$ is normal, must $(X,\mathcal T)$ also be normal?
 :::
 
+::: {.solution}
+
 The answer is
 \[
 \boxed{\text{no}}.
@@ -238,6 +240,8 @@ The finer space \((X,\mathcal T')\) is normal by step [](#s1-4){.pf-ref}, wherea
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} answers the question.
+
+:::
 
 :::
 
