@@ -31,6 +31,8 @@ $(e^{A/N}e^{B/N})^N$ used here is defined for positive integer $N$. The limit
 is therefore taken along $N\in\mathbb N$.
 :::
 
+::: {.solution}
+
 Fix any submultiplicative matrix norm $\|\cdot\|$.
 
 ::: pf
@@ -264,6 +266,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the Lie--Trotter product formula.
+
+:::
 
 :::
 
