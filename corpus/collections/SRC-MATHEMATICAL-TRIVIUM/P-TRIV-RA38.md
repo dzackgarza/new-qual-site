@@ -24,6 +24,8 @@ The source does not specify a radius. The notation $B^3$ is interpreted as the
 unit ball. The same computation gives the radius-$R$ formula as well.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -166,6 +168,8 @@ The angular integrals are unchanged.
 
 Step [](#s1-5){.pf-ref} gives the volume of the unit ball, and step [](#s1-6){.pf-ref} records the general
 radius formula.
+
+:::
 
 :::
 
