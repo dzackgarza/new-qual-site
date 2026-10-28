@@ -19,6 +19,8 @@ audit:
 For the vectors $A = { \left[ \begin{array} { l } { 1 } \\ { { \sqrt { 2 } } } \\ { { \sqrt { 3 } } } \end{array} \right] } , B = { \left[ \begin{array} { l } { 0 } \\ { { \sqrt { 2 } } } \\ { 2 } \end{array} \right] }$ find an orthogonal transformation that maps A to B.
 :::
 
+::: {.solution}
+
 Let
 $$
 a=
@@ -260,6 +262,8 @@ $$
 
 Steps [](#s1-2){.pf-ref} and [](#s1-6){.pf-ref} show that the displayed matrix is orthogonal and maps
 $A$ to $B$.
+
+:::
 
 :::
 
