@@ -18,6 +18,8 @@ H_n(S^2,A)
 for all $n\ge0$.
 :::
 
+::: {.solution}
+
 All homology groups have integer coefficients.
 
 ::: pf
@@ -373,6 +375,8 @@ Collect steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} and [](#s1-8){.pf-re
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} gives all relative homology groups.
+
+:::
 
 :::
 
