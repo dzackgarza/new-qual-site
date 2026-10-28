@@ -19,6 +19,8 @@ audit:
 Show that $\mathbb { R } \mathbb { P } ^ { 2 n }$ cannot be embedded in $S ^ { 2 n + 1 }$
 :::
 
+::: {.solution}
+
 Assume $n\geq1$ and suppose, for contradiction, that there is an embedding
 \[
 \mathbb{RP}^{2n}\hookrightarrow S^{2n+1}.
@@ -113,6 +115,8 @@ Step [](#s1-3){.pf-ref} says the hypothetical embedding forces orientability, wh
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required nonembedding statement.
+
+:::
 
 :::
 
