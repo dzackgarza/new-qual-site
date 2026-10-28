@@ -23,6 +23,8 @@ e ^ { i \theta } , \qquad 3 e ^ { i \pi / 4 } , \qquad { \frac { 1 } { 2 } } e ^
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -196,6 +198,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} give the Cartesian forms of all five numbers.
+
+:::
 
 :::
 
