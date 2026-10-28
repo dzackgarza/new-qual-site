@@ -23,6 +23,8 @@ with $\{0,1\}$ discrete, extends uniquely to a continuous map
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 \mathcal B=\operatorname{clop}(X)
@@ -147,6 +149,8 @@ is closed in \(zX\). It contains the dense subset \(e(X)\), so it is all of \(zX
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} give a compact zero-dimensional Hausdorff space \(zX\) containing \(X\) densely, and steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} give the required unique extension of every continuous map \(X\to\{0,1\}\).
+
+:::
 
 :::
 
