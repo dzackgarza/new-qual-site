@@ -32,6 +32,8 @@ Prove that
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 I=\int_a^b f(t)\,dt\in\mathbb R^n.
@@ -186,6 +188,8 @@ u\mathbin{\cdot}I\\
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required inequality.
+
+:::
 
 :::
 
