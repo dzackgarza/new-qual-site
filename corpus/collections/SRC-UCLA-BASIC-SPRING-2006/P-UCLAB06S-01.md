@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-(A) Define precisely the notion of Riemann integrability for a function $f ( x )$ on [0, 1].
+(A) Define precisely the notion of Riemann integrability for a function $f(x)$ on $[0, 1]$.
 
-(B) Suppose that $f _ { n } ( x )$ is a sequence of Riemann integrable functions on [0, 1] such that $\{ f _ { n } ( x ) \}$ converges uniformly to $f ( x )$ . Prove that $f ( x )$ is Riemann integrable.
+(B) Suppose that $f_n(x)$ is a sequence of Riemann integrable functions on $[0, 1]$ such that $\{f_n(x)\}$ converges uniformly to $f(x)$. Prove that $f(x)$ is Riemann integrable.
 :::
 
 ::: {.solution}
