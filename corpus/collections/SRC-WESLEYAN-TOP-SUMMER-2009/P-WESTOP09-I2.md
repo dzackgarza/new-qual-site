@@ -21,6 +21,8 @@ Define the *slotted plane* to be $\mathbb R^2$ with the following topology: a se
 3. Prove that it is separable but not first countable.
 :::
 
+::: {.solution}
+
 For a point $x$, an ordinary open disk $D$ about $x$, and finitely many lines
 $L_1,\dots,L_k$ through $x$, write
 \[
@@ -257,6 +259,8 @@ countable local base exists at $x$.
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove part 1, steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} prove part 2, and
 steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref} prove part 3.
+
+:::
 
 :::
 
