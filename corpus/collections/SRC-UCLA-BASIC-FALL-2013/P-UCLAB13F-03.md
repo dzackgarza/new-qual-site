@@ -27,6 +27,8 @@ L(\gamma)\le 1+f(1)-f(0).
 (b) Show that there exists continuous nondecreasing $f$ on $[0,1]$ with $f(0)=0$, $f(1)=1$, and $L(\gamma)=2$ for $\gamma(t)=(t,f(t))$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -350,6 +352,8 @@ Combine steps [](#s1-8){.pf-ref} and [](#s1-9){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and steps [](#s1-4){.pf-ref} through [](#s1-10){.pf-ref} give the required example for part (b).
+
+:::
 
 :::
 
