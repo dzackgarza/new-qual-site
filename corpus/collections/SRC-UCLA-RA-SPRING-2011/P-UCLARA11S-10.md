@@ -19,6 +19,8 @@ Evaluate
 \]
 :::
 
+::: {.solution}
+
 Set
 \[
 z_0=\frac i2.
@@ -457,6 +459,8 @@ Step [](#s1-8){.pf-ref} gives the upper bound and step [](#s1-9){.pf-ref} attain
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required value.
+
+:::
 
 :::
 
