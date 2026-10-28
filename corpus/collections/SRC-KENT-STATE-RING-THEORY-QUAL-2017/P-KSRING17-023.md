@@ -25,6 +25,8 @@ Let R be a ring with identity 1 and $a , b \in R$ such that $a b = 1$ . Denote $
 (c) If X has more than one element, then X is an infinite set.
 :::
 
+::: {.solution}
+
 Recall
 $$
 X
@@ -295,6 +297,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), step [](#s1-3){.pf-ref} proves part (b), and step [](#s1-8){.pf-ref} proves part (c).
+
+:::
 
 :::
 
