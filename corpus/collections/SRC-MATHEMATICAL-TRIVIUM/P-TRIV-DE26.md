@@ -19,6 +19,8 @@ audit:
 The function $K _ { \nu } ( x )$ is the solution of the equation $x ^ { 2 } y ^ { \prime \prime } + x y ^ { \prime } - ( x ^ { 2 } + \nu ^ { 2 } ) y = 0$ that diverges when $x \to 0$ . Find the asymptotic behavior for small x for $\nu \neq 0$ What happens for $\nu = 0 ?$ For the sake of completeness, $K _ { \nu } ( x )$ is called modified Bessel function of the second kind.
 :::
 
+::: {.solution}
+
 Take $x>0$. Recall that $K_{-\nu}=K_\nu$.
 
 ::: pf
@@ -117,6 +119,8 @@ show that the cancellation of the two coincident power branches leaves the logar
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} give the requested small-$x$ behavior for nonzero and zero order, respectively.
+
+:::
 
 :::
 
