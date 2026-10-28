@@ -26,6 +26,8 @@ $$
 Prove that if M is a maximal ideal of R, then there is a real number $x _ { 0 } \in [ 0 , 1 ]$ such that $M = \{ f \in R \mid f ( x _ { 0 } ) = 0 \}$ .
 :::
 
+::: {.solution}
+
 Let
 $$
 M
@@ -313,6 +315,8 @@ Combine steps [](#s1-1){.pf-ref} and [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required classification.
+
+:::
 
 :::
 
