@@ -27,6 +27,8 @@ Prove carefully that at $(0,0)$,
 You may use without proof that the mixed partials are equal for $C^2$ functions.
 :::
 
+::: {.solution}
+
 Write
 $$
 a=f_{xx}(0,0),
@@ -154,6 +156,8 @@ By step [](#s1-2){.pf-ref}, either $c>0$ or $c=0$. Step [](#s1-3){.pf-ref} handl
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion. The uniqueness of the minimum is stronger than needed; only the fact that $(0,0)$ is a local minimum enters the proof.
+
+:::
 
 :::
 
