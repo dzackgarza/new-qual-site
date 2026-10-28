@@ -27,6 +27,8 @@ $$f(x, y) = \frac{k^2}{x} + \frac{k}{y} + xy$$
 (E) $(k, 1)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -119,6 +121,8 @@ point is indeed critical.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required critical point.
+
+:::
 
 :::
 
