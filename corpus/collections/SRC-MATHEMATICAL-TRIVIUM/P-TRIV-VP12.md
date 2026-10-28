@@ -25,6 +25,8 @@ Construct the functional $S [ \psi , \psi ^ { \dagger } ]$ whose variation with 
 Here $\hat { H }$ is some hermitian operator.
 :::
 
+::: {.solution}
+
 Treat $\psi$ and $\psi^\dagger$ as independent variables in the variational
 calculation. Assume variations vanish at the temporal endpoints and satisfy
 spatial boundary conditions for which $\hat H$ is Hermitian.
@@ -311,6 +313,8 @@ Steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref} give the stationary Schrö
 ::: pf-qed
 
 Steps [](#s1-7){.pf-ref} and [](#s1-12){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
