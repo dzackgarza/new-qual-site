@@ -25,6 +25,8 @@ What is $\operatorname{Log}(-e^3)$?
 (E) $3 + 2\pi i$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -73,6 +75,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested principal logarithm.
+
+:::
 
 :::
 
