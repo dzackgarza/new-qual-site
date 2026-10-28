@@ -53,6 +53,8 @@ IV. The conclusion of Step (3) does not imply the result of Step (4).
 (E) None are true; the argument is a valid proof of Cauchy's Mean-Value formula.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -132,6 +134,8 @@ are false.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
