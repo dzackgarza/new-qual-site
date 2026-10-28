@@ -24,6 +24,8 @@ Suppose \(f\) is analytic on the punctured unit disk \(\mathbb D\setminus\{0\}\)
 Prove that \(f\) has a removable singularity at \(0\).
 :::
 
+::: {.solution}
+
 Define the Cayley transform
 $$
 g(z)
@@ -226,6 +228,8 @@ Step [](#s1-5){.pf-ref} gives a holomorphic function near $0$, and step [](#s1-6
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
