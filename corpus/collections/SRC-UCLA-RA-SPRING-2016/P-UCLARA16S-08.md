@@ -20,6 +20,8 @@ audit:
 Let $\mathbb C_+=\{z\in\mathbb C:\operatorname{Im}z>0\}$ and let $f_n:\mathbb C_+\to\mathbb C_+$ be a sequence of holomorphic functions. Show that unless $|f_n|\to\infty$ uniformly on compact subsets of $\mathbb C_+$, there exists a subsequence converging uniformly on compact subsets of $\mathbb C_+$.
 :::
 
+::: {.solution}
+
 Let
 \[
 \Phi(w)
@@ -181,6 +183,8 @@ uniformly on $L$. Since $L$ was arbitrary, the convergence is uniform on compact
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required locally uniformly convergent subsequence.
+
+:::
 
 :::
 
