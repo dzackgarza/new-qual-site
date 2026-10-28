@@ -19,6 +19,8 @@ audit:
 Let R be a commutative ring with 1. Show that the sum of any two principal ideals of R is principal if and only if every finitely generated ideal of R is principal.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -217,6 +219,8 @@ Step [](#s1-1){.pf-ref} proves one implication and step [](#s1-6){.pf-ref} prove
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
