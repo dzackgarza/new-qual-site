@@ -25,6 +25,8 @@ g(x)=\sup\{f(x):f\in\mathcal F\}
 is continuous.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -127,6 +129,8 @@ which is equivalent to the stated bound.
 ::: pf-qed
 
 The point $x\in X$ and the number $\varepsilon>0$ were arbitrary. Step [](#s1-5){.pf-ref} therefore proves that $g$ is continuous at every point of $X$.
+
+:::
 
 :::
 
