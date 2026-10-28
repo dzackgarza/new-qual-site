@@ -27,6 +27,8 @@ $$f(x) = \frac{\log x}{x^a}$$
 (E) $\frac{e^{a^2}}{a}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -92,6 +94,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested maximum value.
+
+:::
 
 :::
 
