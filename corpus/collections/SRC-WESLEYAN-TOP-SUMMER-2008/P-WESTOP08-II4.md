@@ -26,6 +26,8 @@ If $Y$ is connected and the two lifts agree at one point of $Y$, prove that
 on all of $Y$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -356,6 +358,8 @@ lies in the coincidence set $E$.
 Step [](#s1-1){.pf-ref} states the definition of a covering space, and steps [](#s1-2){.pf-ref} through [](#s1-8){.pf-ref}
 prove uniqueness of lifts from a connected domain once they agree at one
 point.
+
+:::
 
 :::
 
