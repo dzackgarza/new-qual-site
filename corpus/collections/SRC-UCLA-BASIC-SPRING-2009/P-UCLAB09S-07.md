@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. (a) Define what it means for $f:\mathbb R^n\to\mathbb R^m$ to be differentiable at a point $a\in\mathbb R^n$.
+(a) Define what it means for $f:\mathbb R^n\to\mathbb R^m$ to be differentiable at a point $a\in\mathbb R^n$.
 
 (b) Using this definition, formulate and prove the chain rule for the derivative of $g(f(x))$ at $x=a$.
 :::
