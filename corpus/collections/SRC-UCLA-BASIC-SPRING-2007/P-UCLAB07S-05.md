@@ -21,6 +21,8 @@ Let $T$ be a normal linear operator on a finite-dimensional complex inner-produc
 Prove that if $v$ is an eigenvector of $T$, then $v$ is also an eigenvector of $T^*$.
 :::
 
+::: {.solution}
+
 Suppose
 \[
 Tv=\lambda v
@@ -218,6 +220,8 @@ Therefore $v$ is an eigenvector of $T^*$, with eigenvalue $\overline{\lambda}$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
