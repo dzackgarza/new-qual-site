@@ -25,6 +25,8 @@ Show that
 converges to a finite limit as $N\to\infty$.
 :::
 
+::: {.solution}
+
 Define
 \[
 D_N
@@ -255,6 +257,8 @@ This is exactly step [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
