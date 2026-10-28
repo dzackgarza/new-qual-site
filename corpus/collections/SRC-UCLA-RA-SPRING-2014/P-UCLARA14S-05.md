@@ -25,6 +25,8 @@ T:\ell^2(\mathbb N)\to\ell^1(\mathbb N).
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -275,6 +277,8 @@ But step [](#s1-6){.pf-ref} says that $\ell^\infty$ is homeomorphic, via a bound
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove part (a), and steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref} prove part (b).
+
+:::
 
 :::
 
