@@ -19,6 +19,8 @@ audit:
 Solve $y ^ { \prime \prime } - y ^ { \prime } - 2 y = 0$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -140,6 +142,8 @@ A second-order homogeneous linear equation has a two-dimensional solution space,
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the complete solution family.
+
+:::
 
 :::
 
