@@ -24,6 +24,8 @@ Diagonalize the matrix
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 A=
@@ -203,6 +205,8 @@ Multiplying on the left by \(P^{-1}\) yields the claimed diagonalization.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested diagonal form and change-of-basis matrix.
+
+:::
 
 :::
 
