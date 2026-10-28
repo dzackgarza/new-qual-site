@@ -25,6 +25,8 @@ Suppose X is a nonempty set for which $\delta: X \times X \to \mathbb{R}$ is a r
 (E) $\delta(x, z) = \delta(x, y) + \delta(y, z)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -114,6 +116,8 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} identify (A)--(D) as metric axio
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
