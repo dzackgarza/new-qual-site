@@ -36,6 +36,8 @@ $$
 where on each component of $\partial F$, either $v$ is parallel to $\partial F$ or $v$ is perpendicular to $\partial F$.
 :::
 
+::: {.solution}
+
 Choose a Riemannian metric on \(F\). Let
 \[
 T
@@ -469,6 +471,8 @@ and step [](#s1-18){.pf-ref} computes the latter as \(\chi(F)\).
 ::: pf-qed
 
 Step [](#s1-19){.pf-ref} is the Poincaré--Hopf formula requested in the exercise.
+
+:::
 
 :::
 
