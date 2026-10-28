@@ -30,6 +30,8 @@ What is the dimension of the following subspace of $\RR^5$?
 (E) $5$
 :::
 
+::: {.solution}
+
 Label the six displayed vectors $v_1,\dots,v_6$ in the order in which they occur.
 
 ::: pf
@@ -93,6 +95,8 @@ By step [](#s1-1){.pf-ref}, the subspace is spanned by $v_1,v_2,v_5$, and by ste
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested dimension.
+
+:::
 
 :::
 
