@@ -21,6 +21,8 @@ y(x)=e^x+\frac{y(x^2)}2,
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -178,6 +180,8 @@ Existence follows from steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}, and 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required existence-and-uniqueness statement.
+
+:::
 
 :::
 
