@@ -20,6 +20,8 @@ audit:
 Assume f (z) is analytic in region D and Γ is a rectifiable curve in D with interior in D. Prove that if f (z) is real for all $z \in \Gamma$ , then $f ( z )$ is a constant.
 :::
 
+::: {.solution}
+
 Let $\Omega$ denote the interior bounded by $\Gamma$, and write
 $$
 f=u+iv.
@@ -105,6 +107,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
