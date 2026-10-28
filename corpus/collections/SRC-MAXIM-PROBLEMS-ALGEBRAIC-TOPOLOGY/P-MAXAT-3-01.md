@@ -19,6 +19,8 @@ audit:
 Find the cohomology ring of real/complex projective spaces and of lens spaces.
 :::
 
+::: {.solution}
+
 The coefficient ring matters. The standard clean presentations are over $\mathbb F_2$ for real projective space, over $\mathbb Z$ for complex projective space, and over $\mathbb F_p$ for the standard $(2n-1)$-dimensional lens space with fundamental group $C_p$, where $p$ is an odd prime.
 
 ::: pf
@@ -190,6 +192,8 @@ These are precisely steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} compute the requested cohomology rings with their standard coefficient choices and record the integral additive groups for lens spaces.
+
+:::
 
 :::
 
