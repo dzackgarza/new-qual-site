@@ -23,6 +23,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 Fix any integer
 $$
 n\geq0.
@@ -175,6 +177,8 @@ gives property (3).
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} verifies the construction.
+
+:::
 
 :::
 
