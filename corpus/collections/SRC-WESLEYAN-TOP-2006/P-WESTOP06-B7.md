@@ -27,6 +27,8 @@ audit:
    for rational $r\in[0,1]$. Show that $X$ deformation retracts to every point of $[0,1]\times\{0\}$, but to no other point.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -196,6 +198,8 @@ Step [](#s1-2){.pf-ref} shows that every point on the horizontal segment is a de
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part \(1\), and step [](#s1-6){.pf-ref} proves part \(2\).
+
+:::
 
 :::
 
