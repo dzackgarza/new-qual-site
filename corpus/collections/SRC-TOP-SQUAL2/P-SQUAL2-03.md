@@ -18,6 +18,8 @@ $$a\in U,\qquad b\in V,\qquad \overline U\cap\overline V=\varnothing.$$
 Show that the product of two completely Hausdorff spaces is completely Hausdorff.
 :::
 
+::: {.solution}
+
 Let \(X\) and \(Y\) be completely Hausdorff, and let
 \[
 (x_1,y_1),(x_2,y_2)\in X\times Y
@@ -315,6 +317,8 @@ Step [](#s1-11){.pf-ref} is exactly the definition of complete Hausdorffness.
 ::: pf-qed
 
 Step [](#s1-12){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
