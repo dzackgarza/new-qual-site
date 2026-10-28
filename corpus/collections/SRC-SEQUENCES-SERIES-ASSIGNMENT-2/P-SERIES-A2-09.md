@@ -35,6 +35,8 @@ Compute $\limsup\sqrt[n]{|a_n|}$ and $\limsup|a_{n+1}/a_n|$. Show that the serie
 \]
 :::
 
+::: {.solution}
+
 For part (a), define
 \[
 r_n=\frac{a_{n+1}}{a_n},
@@ -760,6 +762,8 @@ converges to \(e\).
 
 Step [](#s1-15){.pf-ref} proves part (a), step [](#s1-19){.pf-ref} proves part (b), steps [](#s1-22){.pf-ref} through [](#s1-28){.pf-ref}
 prove part (c), and step [](#s1-33){.pf-ref} proves part (d).
+
+:::
 
 :::
 
