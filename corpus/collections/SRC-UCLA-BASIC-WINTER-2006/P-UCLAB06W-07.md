@@ -23,6 +23,8 @@ Prove the Cauchy--Schwarz inequality
 \]
 :::
 
+::: {.solution}
+
 Use the convention that the complex inner product is linear in its first argument.
 
 ::: pf
@@ -165,6 +167,8 @@ Both sides in step [](#s1-4){.pf-ref} are nonnegative. Taking square roots gives
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} handles $w=0$, and steps [](#s1-2){.pf-ref} through [](#s1-5){.pf-ref} handle $w\ne0$.
+
+:::
 
 :::
 
