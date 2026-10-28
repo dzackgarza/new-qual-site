@@ -34,6 +34,8 @@ I_i+\bigcap_{j\ne i}I_j=R.
 $$
 :::
 
+::: {.solution}
+
 Fix
 $$
 i\in\{1,\ldots,n\}.
@@ -199,6 +201,8 @@ Any ideal containing $1$ is the whole ring, so the sum equals $R$.
 ::: pf-qed
 
 The index $i$ was arbitrary, so step [](#s1-4){.pf-ref} proves the corrected conclusion for every $i$.
+
+:::
 
 :::
 
