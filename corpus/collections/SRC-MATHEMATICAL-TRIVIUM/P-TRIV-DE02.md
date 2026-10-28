@@ -19,6 +19,8 @@ audit:
 Solve $\left\{ { \begin{array} { l } { x ^ { \prime } ( t ) = - x ( t ) + 6 y ( t ) } \\ { y ^ { \prime } ( t ) = 2 x ( t ) + 3 y ( t ) } \end{array} } \right.$
 :::
 
+::: {.solution}
+
 Write
 $$
 u(t)=
@@ -215,6 +217,8 @@ and read off the two coordinates.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the complete two-parameter solution family.
+
+:::
 
 :::
 
