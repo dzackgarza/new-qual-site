@@ -24,6 +24,8 @@ audit:
 Let $X$ be a Banach space and $X^*$ its dual space. Suppose $X^*$ is separable (i.e. has a countable dense set); show that $X$ is separable. (You should assume the Axiom of Choice.)
 :::
 
+::: {.solution}
+
 If $X=\{0\}$, then $X$ is trivially separable. Assume henceforth that
 $X\ne\{0\}$.
 
@@ -205,6 +207,8 @@ so $X$ is separable.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
