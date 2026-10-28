@@ -24,6 +24,8 @@ Define $l_j:\mathbb P^n\to\mathbb R$ by $l_j(p)=p(x_j)$.
 (b) Show that there are unique coefficients $c_j$ such that \[\int_a^b p(x)\,dx=\sum_{j=0}^n c_jl_j(p)\] for every $p\in\mathbb P^n$.
 :::
 
+::: {.solution}
+
 For each $j=0,\ldots,n$, define the Lagrange polynomial
 \[
 L_j(x)
@@ -216,6 +218,8 @@ the basis expansion in step [](#s1-5){.pf-ref} is exactly the displayed identity
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} prove existence and uniqueness in part (b).
+
+:::
 
 :::
 
