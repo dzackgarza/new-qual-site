@@ -35,6 +35,8 @@ E=\left\{f\in L^2(\mathbb R):\limsup_{h\to0}Q(f,h)\le1\right\}
 is closed in $L^2(\mathbb R)$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -376,6 +378,8 @@ Every $L^2$ limit of a sequence in $E$ belongs to $E$ by steps [](#s1-7){.pf-ref
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-11){.pf-ref} proves part (b).
+
+:::
 
 :::
 
