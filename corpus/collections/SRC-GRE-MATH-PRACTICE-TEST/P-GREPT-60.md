@@ -31,6 +31,8 @@ III. $\mathbf{v}$ is also an eigenvector of $A^{-1}$.
 (E) I, II, and III
 :::
 
+::: {.solution}
+
 Let $\lambda$ be the eigenvalue such that $A\mathbf v=\lambda\mathbf v$.
 
 ::: pf
@@ -120,6 +122,8 @@ Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}, and [](#s1-4){.pf-ref} prove st
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
