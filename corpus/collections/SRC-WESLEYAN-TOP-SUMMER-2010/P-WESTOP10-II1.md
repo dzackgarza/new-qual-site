@@ -33,6 +33,8 @@ audit:
    This relation is retained exactly as extracted; any missing negation remains unrecovered.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -377,6 +379,8 @@ This is the collection of steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref}.
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} solve the two presentation-realization problems.
 Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} answer both the literal and likely intended readings of
 the ambiguous third subproblem.
+
+:::
 
 :::
 
