@@ -20,6 +20,8 @@ audit:
 State and prove the Riesz representation theorem for linear functionals on a Hilbert space.
 :::
 
+::: {.solution}
+
 Assume the inner product is linear in its first variable.
 
 ::: pf
@@ -165,6 +167,8 @@ hence $\norm L\ge\norm y$. If $y=0$, both norms are zero.
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} prove existence, uniqueness, and the norm identity in the theorem stated in step [](#s1-1){.pf-ref}.
+
+:::
 
 :::
 
