@@ -26,6 +26,8 @@ The vectors $\mathbf{v}_1 = (-1, 1, 1)$, $\mathbf{v}_2 = (1, 1, 1)$, and $\mathb
 (E) $2$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -94,6 +96,8 @@ By step [](#s1-1){.pf-ref}, failure to be a basis occurs exactly when $\det M=0$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the unique real parameter for which the three vectors fail to form a basis.
+
+:::
 
 :::
 
