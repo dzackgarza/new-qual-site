@@ -19,6 +19,8 @@ audit:
 Solve $\left( - \frac { d ^ { 2 } } { d x ^ { 2 } } + m ^ { 2 } \right) G ( x ) = \delta ( x )$
 :::
 
+::: {.solution}
+
 Assume $m>0$ and seek the Green function on $\mathbb R$ that decays as $|x|\to\infty$.
 
 ::: pf
@@ -124,6 +126,8 @@ Combine steps [](#s1-1){.pf-ref} and [](#s1-4){.pf-ref}. The resulting function 
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the decaying Green function on the line.
+
+:::
 
 :::
 
