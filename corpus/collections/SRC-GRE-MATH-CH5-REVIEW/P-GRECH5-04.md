@@ -32,6 +32,8 @@ then $n =$
 (E) $7$
 :::
 
+::: {.solution}
+
 Set
 $$
 N=
@@ -132,6 +134,8 @@ gives $n=6$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value and corresponding choice.
+
+:::
 
 :::
 
