@@ -24,6 +24,8 @@ Show that if $f_n\to f$ uniformly on the bounded closed interval $[a,b]$, then
 \]
 :::
 
+::: {.solution}
+
 The displayed integrals require the usual implicit hypothesis that each $f_n$ is Riemann integrable. Under that hypothesis, uniform convergence also implies that $f$ is Riemann integrable.
 
 ::: pf
@@ -137,6 +139,8 @@ Therefore the right side of the estimate in step [](#s1-2){.pf-ref} tends to $0$
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} justifies the existence of the limiting integral, and step [](#s1-3){.pf-ref} proves the stated convergence.
+
+:::
 
 :::
 
