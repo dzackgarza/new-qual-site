@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-(A) Define uniform continuity for a function f defined on a metric space X with distance function $\rho ( x , y )$
+(A) Define uniform continuity for a function $f$ defined on a metric space $X$ with distance function $\rho(x, y)$.
 
-B Prove that if $0 < \alpha < 1$ , then $F ( x ) = x ^ { \alpha }$ is uniformly continuous on $[ 0 , \infty )$
+(B) Prove that if $0 < \alpha < 1$, then $F(x) = x^\alpha$ is uniformly continuous on $[0, \infty)$.
 :::
 
 ::: {.solution}
