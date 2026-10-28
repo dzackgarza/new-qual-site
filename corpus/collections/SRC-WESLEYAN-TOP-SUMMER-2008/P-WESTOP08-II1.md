@@ -27,6 +27,8 @@ For connected spaces $X,Y$, give an example satisfying each statement below or s
 12. $\pi_1(X)\cong\pi_1(Y)$ but $H_2(X)\not\cong H_2(Y)$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -468,6 +470,8 @@ This table collects steps [](#s1-1){.pf-ref} through [](#s1-12){.pf-ref}.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-12){.pf-ref} give either an explicit example or an impossibility proof
 for every requested statement.
+
+:::
 
 :::
 
