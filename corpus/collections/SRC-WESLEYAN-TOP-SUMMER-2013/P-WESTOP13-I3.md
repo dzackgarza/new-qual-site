@@ -21,6 +21,8 @@ Let $C_r$ denote the circle of radius $r$ centered at the origin in $\mathbb R^2
    \]
 :::
 
+::: {.solution}
+
 Let
 $$
 \rho:\RR^2\to[0,\infty),
@@ -212,6 +214,8 @@ Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give all quasi-components.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} determine all three kinds of components for $S$, and steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref} do so for $T$.
+
+:::
 
 :::
 
