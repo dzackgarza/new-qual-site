@@ -23,6 +23,8 @@ Show that there is a basis $B$ of $V$ such that the matrix of $T$ in the basis $
 Make sure to prove that your chosen set $B$ is in fact a basis.
 :::
 
+::: {.solution}
+
 Let
 \[
 \lambda_1,\ldots,\lambda_n
@@ -103,6 +105,8 @@ Therefore the $i$th column of $[T]_B$ has the single nonzero entry $\lambda_i$ i
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves that the chosen eigenvectors form a basis, and step [](#s1-3){.pf-ref} proves that the matrix of $T$ in this basis is diagonal.
+
+:::
 
 :::
 
