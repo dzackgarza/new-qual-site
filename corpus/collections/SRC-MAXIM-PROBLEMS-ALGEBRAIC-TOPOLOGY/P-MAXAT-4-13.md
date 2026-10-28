@@ -19,6 +19,8 @@ audit:
 Find the cohomology ring of $B U ( n ) , B O ( n )$
 :::
 
+::: {.solution}
+
 The natural coefficient choices are integral coefficients for $BU(n)$ and mod-$2$ coefficients for $BO(n)$.
 
 ::: pf
@@ -206,6 +208,8 @@ These are steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives both requested classifying-space cohomology rings with their standard coefficient systems.
+
+:::
 
 :::
 
