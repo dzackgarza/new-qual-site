@@ -32,6 +32,8 @@ What is the equation of this curve, given that it passes through the point $(1, 
 (E) $x^2y^2 + xy^3 + x - y = 1$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -120,6 +122,8 @@ Substituting this value into the potential from step [](#s1-2){.pf-ref} gives th
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required curve and corresponding choice.
+
+:::
 
 :::
 
