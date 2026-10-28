@@ -33,6 +33,8 @@ is the solution on $D=\{(x,y)\mid x^2+y^2<1\}$ of the Cauchy problem for the Lap
 (2) Show that there exist points $(x,y)\in D$ such that $\limsup_{n\to\infty}|u(x,y)|=\infty$.
 :::
 
+::: {.solution}
+
 Write
 $$
 u_n(x,y)
@@ -243,6 +245,8 @@ $n^2$. Hence the limsup over all $n$ is infinite.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove part (1), and steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} prove part (2).
+
+:::
 
 :::
 
