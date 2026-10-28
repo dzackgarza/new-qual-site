@@ -20,6 +20,8 @@ Let R be a ring satisfying the descending chain condition on right ideals.
 If J(R) denotes the Jacobson radical of R, prove that J(R) is nilpotent.
 :::
 
+::: {.solution}
+
 Write
 $$
 J
@@ -513,6 +515,8 @@ This is exactly nilpotence of the Jacobson radical.
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
