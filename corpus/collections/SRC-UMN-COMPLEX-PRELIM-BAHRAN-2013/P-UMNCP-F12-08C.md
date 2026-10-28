@@ -24,6 +24,8 @@ f(z)-2^m z^m
 has exactly \(m\) zeros, counted with multiplicity, in \(|z|<\frac12\).
 :::
 
+::: {.solution}
+
 Fix
 $$
 m\ge1
@@ -168,6 +170,8 @@ has a zero of multiplicity $m$ at the origin and no other zeros. Step [](#s1-3){
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
