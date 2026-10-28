@@ -38,6 +38,8 @@ d(A,B)=\|B-A\|.
 Suggestion: the $(i,j)$ entry of $A$ is $\langle T_Ae_j,e_i\rangle$, where $e_i$ is the $i$th standard basis vector.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -308,6 +310,8 @@ Thus every Cauchy sequence converges in $M$.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), step [](#s1-4){.pf-ref} proves part (b), and step [](#s1-8){.pf-ref} proves part (c).
+
+:::
 
 :::
 
