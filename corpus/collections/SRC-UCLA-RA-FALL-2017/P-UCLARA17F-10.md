@@ -24,6 +24,8 @@ F(z):=\sum_{n=1}^{\infty}|f_n(z)|^2\le1
 for all $z\in\mathbb D$. Show that the series defining $F(z)$ converges uniformly on compact subsets of $\mathbb D$ and that $F$ is subharmonic.
 :::
 
+::: {.solution}
+
 For $N\ge1$, set
 \[
 g_N(z)\coloneqq\sum_{n=1}^N|f_n(z)|^2.
@@ -222,6 +224,8 @@ Thus the continuous function $F$ satisfies the sub-mean-value inequality on ever
 ::: pf-qed
 
 Step [](#s3){.pf-ref} proves compact-uniform convergence of the series, and step [](#s4){.pf-ref} proves that its sum $F$ is subharmonic.
+
+:::
 
 :::
 
