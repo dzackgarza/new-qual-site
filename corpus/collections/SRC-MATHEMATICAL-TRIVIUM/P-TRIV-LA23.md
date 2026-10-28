@@ -27,6 +27,8 @@ Consider the basis $\vec { e } _ { i } , i = 1 , 2 , 3$ , in the vector space $\
 Find the eigenvectors of these transformations.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -264,6 +266,8 @@ $$
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} solve part (a), steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} solve part (b), and steps
 [](#s1-5){.pf-ref} through [](#s1-10){.pf-ref} solve part (c) and identify all eigendirections.
+
+:::
 
 :::
 
