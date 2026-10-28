@@ -44,6 +44,8 @@ u_t(x,0)=x.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -319,6 +321,8 @@ Parts (a), (b), and (c) are established by steps [](#s1-2){.pf-ref} and [](#s1-3
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} records all three requested answers.
+
+:::
 
 :::
 
