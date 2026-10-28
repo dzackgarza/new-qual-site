@@ -27,6 +27,8 @@ Call $X$ *zero-dimensional* if $\operatorname{clop}(X)$ is a basis, and let $wX$
    \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -210,6 +212,8 @@ The infinite case is step [](#s1-6){.pf-ref}. A finite Hausdorff space is discre
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove part \(1\). Steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} show that part \(2\) is false as printed and prove the intended infinite-space statement together with the exact finite exception.
+
+:::
 
 :::
 
