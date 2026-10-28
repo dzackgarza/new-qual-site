@@ -24,6 +24,8 @@ Show that
 \]
 :::
 
+::: {.solution}
+
 For $n\ge1$, define
 \[
 S_n(h)
@@ -298,6 +300,8 @@ This is step [](#s3){.pf-ref} written out using the definition of $S_n$.
 ::: pf-qed
 
 Step [](#s4){.pf-ref} is the required limit.
+
+:::
 
 :::
 
