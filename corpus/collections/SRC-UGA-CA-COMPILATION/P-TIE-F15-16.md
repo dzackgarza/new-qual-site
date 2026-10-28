@@ -20,6 +20,8 @@ audit:
 Assume $f ( z )$ is analytic in D and $f ( 0 ) = 0$ and is not a rotation $( { \mathrm { i . e . ~ } } f ( z ) \neq e ^ { i \theta } z )$ . Show that $\sum _ { n = 1 } ^ { \infty } f ^ { n } ( z )$ converges uniformly to an analytic function on compact subsets of D, where $f ^ { n + 1 } ( z ) = f ( f ^ { n } ( z ) )$
 :::
 
+::: {.solution}
+
 The iterates in the statement require the intended hypothesis
 $$
 f:\DD\to\DD.
@@ -188,6 +190,8 @@ Each iterate $f^n$ is holomorphic on $\DD$. By step [](#s1-5){.pf-ref}, the seri
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the required compact-uniform convergence, and step [](#s1-6){.pf-ref} proves that the limit is analytic.
+
+:::
 
 :::
 
