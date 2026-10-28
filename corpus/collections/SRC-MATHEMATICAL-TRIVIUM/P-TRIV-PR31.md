@@ -20,6 +20,8 @@ One may naively argue that in one toss of two coins the probability to have two 
 Let the first hypothesis claim that the correct value is $2 / 3$ and the second - that it is $1 / 2$ . Find how many coins tosses one should make to eliminate the first hypothesis with type I error 0.05 (probability to reject the second hypothesis when it is true) and type II error 0.05 (probability to accept the first hypothesis when it is false).
 :::
 
+::: {.solution}
+
 Let $X$ be the number of matching outcomes (HH or TT) in $n$ independent trials. Test
 \[
 H_0:p=\frac12
@@ -139,6 +141,8 @@ Step [](#s1-3){.pf-ref} proves feasibility at $n=98$, and step [](#s1-4){.pf-ref
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the smallest sample size and an exact test meeting both requested error bounds.
+
+:::
 
 :::
 
