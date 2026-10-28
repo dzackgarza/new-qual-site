@@ -28,6 +28,8 @@ then
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -98,6 +100,8 @@ Multiplying by the finite constant $\lambda(X)$ and applying the estimate from s
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
