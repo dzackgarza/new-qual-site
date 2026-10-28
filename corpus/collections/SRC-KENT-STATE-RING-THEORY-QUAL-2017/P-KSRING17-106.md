@@ -19,6 +19,8 @@ audit:
 Show that if R is an integral domain and $f ( x )$ is a unit in the polynomial ring $R [ x ]$ , then $f ( x )$ is in R.
 :::
 
+::: {.solution}
+
 Assume
 $$
 f(x)\in R[x]
@@ -189,6 +191,8 @@ Thus $f$ belongs to the coefficient ring $R$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
