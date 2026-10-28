@@ -19,6 +19,8 @@ audit:
 Classify the $S ^ { 1 } \mathbf { \Phi } .$ -bundles over $S ^ { 2 } .$
 :::
 
+::: {.solution}
+
 Interpret the statement as asking for principal $S^1$-bundles over $S^2$. Their isomorphism classes are indexed by an integer, the first Chern number.
 
 ::: pf
@@ -175,6 +177,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} identify the set of isomorph
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the requested classification.
+
+:::
 
 :::
 
