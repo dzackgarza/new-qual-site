@@ -31,6 +31,8 @@ f(x)e^{-ipx}
 $$
 :::
 
+::: {.solution}
+
 Choose
 $$
 f(x)=e^{-x^2/2}.
@@ -254,6 +256,8 @@ step [](#s1-7){.pf-ref} is exactly the required eigenfunction relation.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} supplies the requested function and constant.
+
+:::
 
 :::
 
