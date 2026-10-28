@@ -23,6 +23,8 @@ Compute the stationary temperature distribution $u ( \rho , \theta , z )$ of a s
 (b) the flat surface is kept at a temperature $u _ { 0 } \rho$ sin θ
 :::
 
+::: {.solution}
+
 The stationary temperature is harmonic in the semi-infinite cylinder
 \[
 0\leq\rho<1,
@@ -189,6 +191,8 @@ Insert step [](#s1-6){.pf-ref} into step [](#s1-5){.pf-ref}. The resulting harmo
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} and [](#s1-7){.pf-ref} give the stationary temperature distributions for parts (a) and (b).
+
+:::
 
 :::
 
