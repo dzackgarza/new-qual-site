@@ -20,6 +20,8 @@ Find all three composition series for $Q_8$ and all seven composition series for
 List the composition factors in each case.
 :::
 
+::: {.solution}
+
 Use
 \[
 Q_8=\{\pm1,\pm i,\pm j,\pm k\}
@@ -392,6 +394,8 @@ Every successive quotient has order \(2\).
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give all three composition series of \(Q_8\), while steps [](#s1-11){.pf-ref} through [](#s1-17){.pf-ref} give all seven composition series of \(D_8\) and their factors.
+
+:::
 
 :::
 
