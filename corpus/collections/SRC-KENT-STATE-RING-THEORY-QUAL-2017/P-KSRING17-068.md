@@ -23,6 +23,8 @@ Let R be a commutative ring with identity that has exactly one prime ideal P . P
 (b) R is isomorphic to $R _ { P }$ , the ring of quotients of R with respect to the multiplicative set $R - P = \{ s \in R \mid s \not \in P \}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -303,6 +305,8 @@ Hence it is a ring isomorphism.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-10){.pf-ref} proves part (b).
+
+:::
 
 :::
 
