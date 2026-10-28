@@ -23,6 +23,8 @@ We choose to have a branch cut on the positive real axis.
 (b) Find a relation between the integral $I _ { 1 }$ and $I _ { 2 } = \int _ { 0 } ^ { \infty } \frac { 1 } { ( x + i ) \sqrt { x } } \mathrm { d } x$ ,then use the result from the previous point to find the value of $I _ { 2 }$ .
 :::
 
+::: {.solution}
+
 Use the branch
 $$
 \sqrt z
@@ -318,6 +320,8 @@ Substitute the value of $I_1$ from step [](#s1-8){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} solves part (a), and steps [](#s1-7){.pf-ref} and [](#s1-9){.pf-ref} solve part (b).
+
+:::
 
 :::
 
