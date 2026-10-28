@@ -26,6 +26,8 @@ at every point of $\mathbb R^2$.
 Then prove that your conditions do in fact guarantee this equality.
 :::
 
+::: {.solution}
+
 Assume that $f\in C^2(\mathbb R^2)$; equivalently, all second partial derivatives of $f$ exist and are continuous on $\mathbb R^2$.
 
 Fix $(a,b)\in\mathbb R^2$. For nonzero $h,k$, define
@@ -165,6 +167,8 @@ The point $(a,b)$ was arbitrary, so step [](#s1-3){.pf-ref} applies throughout $
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves that the stated $C^2$ condition guarantees the required equality.
+
+:::
 
 :::
 
