@@ -19,6 +19,8 @@ audit:
 State the Residue Theorem.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -243,6 +245,8 @@ inside and $0$ outside, so this reduces to step [](#s1-5){.pf-ref}.
 
 Step [](#s1-5){.pf-ref} is the usual Residue Theorem, and step [](#s1-6){.pf-ref} records its standard
 homological generalization.
+
+:::
 
 :::
 
