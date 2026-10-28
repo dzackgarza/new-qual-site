@@ -21,6 +21,8 @@ audit:
 Define a *simple group*. Prove that a group of order 56 can not be simple.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -78,6 +80,8 @@ By step [](#s1-2){.pf-ref} either $G$ has a normal subgroup of order seven, or b
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-4){.pf-ref} answer the two requests.
+
+:::
 
 :::
 
