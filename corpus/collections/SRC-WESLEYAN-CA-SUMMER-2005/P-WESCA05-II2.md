@@ -26,6 +26,8 @@ Prove that there exists $z\in\mathbb C$ such that $f(z)=0$.
 Hint: use Liouville's theorem.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -165,6 +167,8 @@ The assumption that \(f\) has no zero led to the contradiction in step [](#s1-6)
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
