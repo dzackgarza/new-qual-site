@@ -27,6 +27,8 @@ Prove that for every $\varepsilon>0$ there exists $\delta>0$ such that
 \]
 :::
 
+::: {.solution}
+
 Suppose, toward a contradiction, that the asserted \(\varepsilon\)-\(\delta\)
 statement is false.
 
@@ -399,6 +401,8 @@ This is the logical negation of the impossible statement in step [](#s1-1){.pf-r
 ::: pf-qed
 
 Step [](#s1-17){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
