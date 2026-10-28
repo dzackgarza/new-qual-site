@@ -25,6 +25,8 @@ Note that $G_{168}$ is isomorphic to a subgroup of $S_7$, in fact of $A_7$, via 
 But it is even easier if you know that the only non-abelian simple groups of order $< 1000$ are $A_5$ of order $60 = 2^2 \cdot 3 \cdot 5$, $G_{168}$ of order $168 = 2^3 \cdot 3 \cdot 7$, $A_6$ of order $360 = 2^3 \cdot 3^2 \cdot 5$, $\mathrm{PSL}(2, \mathbb{F}_8)$ of order $504 = 2^3 \cdot 3^2 \cdot 7$, and $\mathrm{PSL}(2, \mathbb{F}_{11})$ of order $660 = 2^2 \cdot 3 \cdot 5 \cdot 11$.)
 :::
 
+::: {.solution}
+
 Let \(L\) be the splitting field of \(f\), let
 \[
 G=G_f=\operatorname{Gal}(L/\mathbb Q),
@@ -190,6 +192,8 @@ These are exactly the two asserted possibilities.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required classification of \(G_f\).
+
+:::
 
 :::
 
