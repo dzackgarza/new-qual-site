@@ -25,6 +25,8 @@ $$\frac{d}{dx}\left(\frac{1}{x} - \frac{1}{\log x}\right) =$$
 (E) $\frac{2x - 1}{(x \log x)^2}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -74,6 +76,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the required derivative.
+
+:::
 
 :::
 
