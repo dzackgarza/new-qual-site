@@ -22,6 +22,8 @@ Suppose $T(W)\subseteq W$ for every subspace $W\subset V$ with $\dim W=\dim V-1$
 Prove that $T$ is a scalar multiple of the identity.
 :::
 
+::: {.solution}
+
 Let
 \[
 n=\dim V.
@@ -252,6 +254,8 @@ Step [](#s1-6){.pf-ref} says that $T$ and $\lambda I$ agree on every vector of $
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} handles dimensions at most one, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} prove the result for $n\ge2$.
+
+:::
 
 :::
 
