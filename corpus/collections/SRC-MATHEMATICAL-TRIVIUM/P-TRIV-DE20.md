@@ -25,6 +25,8 @@ $$
 Find the first three terms of a series solution around $\xi = 0$ by using the largest solution of the indicial equation.
 :::
 
+::: {.solution}
+
 Seek a Frobenius solution
 \[
 u(\xi)=\xi^r\sum_{n=0}^{\infty}a_n\xi^n,
@@ -149,6 +151,8 @@ Insert the coefficients from steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the requested three-term series corresponding to the largest indicial root.
+
+:::
 
 :::
 
