@@ -27,6 +27,8 @@ $$\oint_C \sqrt{2x+1} \, dx + \left(2xy + \sqrt{y^2 - y}\right) dy$$
 (E) $4$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -118,6 +120,8 @@ Thus the correct choice is (D).
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
