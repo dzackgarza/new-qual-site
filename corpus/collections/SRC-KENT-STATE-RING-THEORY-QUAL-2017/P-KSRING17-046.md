@@ -23,6 +23,8 @@ Let R be a commutative ring with 1.
 (b) Prove that (x) is a maximal ideal in R[x] if and only if R is a field.
 :::
 
+::: {.solution}
+
 Define the evaluation map
 $$
 \operatorname{ev}_0:R[x]\to R
@@ -247,6 +249,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-5){.pf-ref} proves part (b).
+
+:::
 
 :::
 
