@@ -19,6 +19,8 @@ audit:
 Show that any vector bundle over a simply-connected base space is orientable.
 :::
 
+::: {.solution}
+
 Let
 \[
 \xi:E\to X
@@ -172,6 +174,8 @@ This is step [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
