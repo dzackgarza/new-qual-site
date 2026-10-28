@@ -24,6 +24,8 @@ $$\frac{\partial u}{\partial r}=\frac{1}{r}\frac{\partial v}{\partial \theta},\q
 \frac{\partial v}{\partial r}=-\frac{1}{r}\frac{\partial u}{\partial \theta}.$$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -123,6 +125,8 @@ $$
 
 Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} are exactly the two polar Cauchy--Riemann equations
 required in the problem.
+
+:::
 
 :::
 
