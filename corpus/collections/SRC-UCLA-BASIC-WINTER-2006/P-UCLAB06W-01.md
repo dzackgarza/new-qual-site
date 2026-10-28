@@ -24,6 +24,8 @@ Show that for each $\varepsilon>0$ there exists a sequence of intervals $(I_n)$ 
 \]
 :::
 
+::: {.solution}
+
 Fix $\varepsilon>0$.
 
 ::: pf
@@ -111,6 +113,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} give exactly the two required properties.
+
+:::
 
 :::
 
