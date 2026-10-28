@@ -21,6 +21,8 @@ Let $A\in M_n(\mathbb C)$ have $n$ distinct eigenvalues.
 Prove that if $B\in M_n(\mathbb C)$ satisfies $AB=BA$, then $B$ is diagonalizable.
 :::
 
+::: {.solution}
+
 Let
 \[
 \lambda_1,\ldots,\lambda_n
@@ -227,6 +229,8 @@ Step [](#s1-6){.pf-ref} supplies such a basis for $B$.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
