@@ -27,6 +27,8 @@ a. Prove that every surjective $R\dash$linear endomorphism $T: R^n \to R^n$ is i
 b. Show that an injective $R\dash$linear endomorphism of $R^n$ need not be surjective.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -58,6 +60,8 @@ Take $R=\mathbb Z$ and $n=1$. Multiplication by $2$ defines an injective endomor
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
