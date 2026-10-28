@@ -27,6 +27,8 @@ Prove that
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 e_1,\ldots,e_n
@@ -317,6 +319,8 @@ Hence equality holds.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required Courant--Fischer formula.
+
+:::
 
 :::
 
