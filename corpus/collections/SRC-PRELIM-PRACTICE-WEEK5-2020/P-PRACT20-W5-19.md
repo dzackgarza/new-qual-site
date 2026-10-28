@@ -20,6 +20,8 @@ audit:
 For $a, b \in \CC$, sketch the set of points $z \in \CC$ such that $\abs{\frac{z - a}{z - b}} < 1$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -110,6 +112,8 @@ so the strict inequality fails. At $z=b$ the quotient is undefined.
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} describe the set in all cases and determine its sketch.
+
+:::
 
 :::
 
