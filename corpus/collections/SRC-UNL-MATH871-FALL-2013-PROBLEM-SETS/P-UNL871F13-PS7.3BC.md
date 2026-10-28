@@ -18,6 +18,8 @@ For each of the following topologies on the underlying set $\mathbb R$, determin
 2. The included-point topology (with included point $0$).
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -343,6 +345,8 @@ Collect steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} and [](#s1-8){.pf-re
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} gives all requested classifications.
+
+:::
 
 :::
 
