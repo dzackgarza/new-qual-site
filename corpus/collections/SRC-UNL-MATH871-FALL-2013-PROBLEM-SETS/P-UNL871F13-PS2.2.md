@@ -21,6 +21,8 @@ For a set $X$, define
 2. Identify the topology $\mathcal T(\mathcal B)$ for every set $X$, and prove your answer.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -304,6 +306,8 @@ Combine steps [](#s1-5){.pf-ref} and [](#s1-8){.pf-ref}.
 
 Step [](#s1-3){.pf-ref} proves that $\mathcal B$ is a basis, and step [](#s1-9){.pf-ref} identifies
 the generated topology in every case.
+
+:::
 
 :::
 
