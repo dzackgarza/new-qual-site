@@ -32,6 +32,8 @@ such that
 is one-to-one on some neighborhood of $(0,0,0)$.
 :::
 
+::: {.solution}
+
 Since
 \[
 \nabla f(0,0,0)\ne0,
@@ -211,6 +213,8 @@ Step [](#s1-5){.pf-ref} proves that it is one-to-one on some neighborhood of the
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required construction.
+
+:::
 
 :::
 
