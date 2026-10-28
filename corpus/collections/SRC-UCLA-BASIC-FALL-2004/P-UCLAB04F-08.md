@@ -35,6 +35,8 @@ let $M$ be the minimum value of $Q$ on $S$, and choose $u\in S$ with $Q(u)=M$.
 Use Lagrange multipliers to prove that $u$ is an eigenvector of $A$ with eigenvalue $M$.
 :::
 
+::: {.solution}
+
 Write
 \[
 v=(v_1,\ldots,v_n)^t.
@@ -202,6 +204,8 @@ Hence $\lambda=M$.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} prove part (b).
+
+:::
 
 :::
 
