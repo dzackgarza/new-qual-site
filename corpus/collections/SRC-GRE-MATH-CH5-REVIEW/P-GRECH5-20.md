@@ -32,6 +32,8 @@ has which one of the following as an eigenvalue?
 (E) $1 + i$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -103,6 +105,8 @@ Step [](#s1-2){.pf-ref} gives the complete set of eigenvalues, and among the lis
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} identifies the required choice.
+
+:::
 
 :::
 
