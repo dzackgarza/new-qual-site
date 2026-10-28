@@ -25,6 +25,8 @@ Prove that
 for every \(z\) in the unit disk.
 :::
 
+::: {.solution}
+
 Fix
 $$
 z_0\in\mathbb D.
@@ -191,6 +193,8 @@ was arbitrary.
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} prove the required bound.
+
+:::
 
 :::
 
