@@ -14,6 +14,8 @@ audit:
 Suppose $X$ is Hausdorff and has a basis consisting of sets that are both open and closed. Show that $X$ is totally disconnected; that is, every connected subset of $X$ consists of one point.
 :::
 
+::: {.solution}
+
 Let
 \[
 C\subseteq X
@@ -213,6 +215,8 @@ connected subsets.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
