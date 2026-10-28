@@ -22,6 +22,8 @@ Show that there exists an ordered orthonormal basis for $V$ such that the matrix
 You may not use canonical-form theorems without proof.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -164,6 +166,8 @@ whenever $j<i$.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the base cases, and steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} prove the induction step. Thus every finite-dimensional complex linear operator has an ordered orthonormal basis in which its matrix is upper triangular, without invoking a canonical-form theorem.
+
+:::
 
 :::
 
