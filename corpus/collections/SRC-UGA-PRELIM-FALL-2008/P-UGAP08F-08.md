@@ -33,6 +33,8 @@ Give examples of the following. No proofs are required.
 where $C$ is the unit circle oriented counterclockwise.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -162,6 +164,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} give examples satisfying parts (a)--(e), respectively.
+
+:::
 
 :::
 
