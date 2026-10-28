@@ -23,6 +23,8 @@ audit:
 Solve $y'' - 6y' + 15y = 2\sin 3t$ with $y(0) = -1$ and $y'(0) = 4$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -294,6 +296,8 @@ Substitute steps [](#s1-7){.pf-ref} and [](#s1-9){.pf-ref} into step [](#s1-6){.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the unique solution satisfying the differential equation and both initial conditions.
+
+:::
 
 :::
 
