@@ -22,6 +22,8 @@ For each of the spaces $\mathbb R^n$ and $\overline{S_\Omega}$, determine which 
 7. metrizable.
 :::
 
+::: {.solution}
+
 Assume
 \[
 n\ge1.
@@ -528,6 +530,8 @@ Combine steps [](#s1-6){.pf-ref} through [](#s1-12){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} and [](#s1-13){.pf-ref} give all requested properties of the two spaces.
+
+:::
 
 :::
 
