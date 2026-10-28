@@ -26,6 +26,8 @@ If the curve $z=f(x)$ in the $xz$-plane is revolved around the $x$-axis, which o
 (E) $y^2+z^2=[f(x)]^2$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -71,6 +73,8 @@ The original curve consists of the points $(x,0,f(x))$ as $x$ varies. By step []
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested equation and corresponding choice.
+
+:::
 
 :::
 
