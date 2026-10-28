@@ -23,6 +23,8 @@ f\circ g=f\circ h,
 then $g=h$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -120,6 +122,8 @@ Thus the two functions agree pointwise.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
