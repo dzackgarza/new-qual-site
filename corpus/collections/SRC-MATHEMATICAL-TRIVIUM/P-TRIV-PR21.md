@@ -19,6 +19,8 @@ audit:
 Find the expectation value of the area of the projection of a 3-dimensional randomly oriented cube with edge of length 1 onto a given plane.
 :::
 
+::: {.solution}
+
 Let $n$ be a unit normal to the fixed projection plane, and let $u_1,u_2,u_3$ be the orthonormal directions normal to the three pairs of opposite cube faces.
 
 ::: pf
@@ -103,6 +105,8 @@ By linearity of expectation, independence of the three $u_i$ is unnecessary. App
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the expected projected area of the randomly oriented unit cube.
+
+:::
 
 :::
 
