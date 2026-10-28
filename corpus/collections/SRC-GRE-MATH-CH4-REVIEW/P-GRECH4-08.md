@@ -32,6 +32,8 @@ such that $f(0) = f'(0) = f''(0) = 0$ and $f'''(0) = -1$. What is $f(x)$?
 (E) $\cosh x + \sinh x$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -134,6 +136,8 @@ Substitute the constants from steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} in
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested solution and corresponding choice.
+
+:::
 
 :::
 
