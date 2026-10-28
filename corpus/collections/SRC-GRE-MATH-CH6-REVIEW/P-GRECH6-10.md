@@ -26,6 +26,8 @@ If $S = \{a \in \RR^+ : a \neq 1\}$, with the binary operation $\bullet$ defined
 (E) $e^{1/\log a}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -99,6 +101,8 @@ and the same symmetric expression gives $b\bullet a=e$. Hence $b$ is the inverse
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives and verifies the required inverse.
+
+:::
 
 :::
 
