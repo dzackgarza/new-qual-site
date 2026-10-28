@@ -32,6 +32,8 @@ in terms of a surface integral.
 You may use standard calculus theorems without proof.
 :::
 
+::: {.solution}
+
 Fix a time $t$ with $r(t)\ne0$, and write
 \[
 R(t)=|r(t)|.
@@ -224,6 +226,8 @@ at a zero of $r$, the first-order contribution caused by the changing disk is ze
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref} give the requested surface-integral expression, including the sign convention forced by the fact that the disk depends on $r(t)^2$.
+
+:::
 
 :::
 
