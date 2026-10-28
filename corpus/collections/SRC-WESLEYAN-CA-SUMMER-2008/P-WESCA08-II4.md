@@ -29,6 +29,8 @@ Show that
 exists and calculate it.
 :::
 
+::: {.solution}
+
 Let
 \[
 L
@@ -423,6 +425,8 @@ possibilities. If \(f\) is locally identically zero, use step [](#s1-12){.pf-ref
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} proves existence of the requested limit and calculates it.
+
+:::
 
 :::
 
