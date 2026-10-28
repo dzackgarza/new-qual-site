@@ -27,6 +27,8 @@ Prove that
 both exist and are equal.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -278,6 +280,8 @@ Combine steps [](#s1-3){.pf-ref} and [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is exactly the desired conclusion.
+
+:::
 
 :::
 
