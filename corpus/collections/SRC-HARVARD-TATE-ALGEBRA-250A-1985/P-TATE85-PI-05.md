@@ -23,6 +23,8 @@ review: draft
 The only maximal ideals are those of type IV, and the ideals of type IV containing a given$f ( X , Y ) A$are those for which$f ( x _ { 0 } , y _ { 0 } ) = 0$
 :::
 
+::: {.solution}
+
 Apply [[P-TATE85-PI-04]] with
 $$
 B=\CC[Y],
@@ -201,6 +203,8 @@ Since $(f)\subseteq\mathfrak m_{(x_0,y_0)}$ is equivalent to $f\in\mathfrak m_{(
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} give the three distinct forms and their uniqueness assertions; steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} give the maximality and containment statements.
+
+:::
 
 :::
 
