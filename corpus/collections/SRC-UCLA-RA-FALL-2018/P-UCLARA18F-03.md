@@ -34,6 +34,8 @@ whenever $E$ is a Borel subset of $X$ such that
 where $\overline E$ is the closure of $E$ and $E^\circ$ is the interior of $E$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -156,6 +158,8 @@ which is exactly the asserted convergence.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the required convergence for every Borel continuity set \(E\).
+
+:::
 
 :::
 
