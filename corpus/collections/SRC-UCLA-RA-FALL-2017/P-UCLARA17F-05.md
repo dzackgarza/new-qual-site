@@ -24,6 +24,8 @@ f(x+1)=f(x)\qquad\text{and}\qquad f(2x)=f(x)
 for almost every $x\in\mathbb R$. Show that there exists a constant $c\in\mathbb R$ such that $f(x)=c$ for almost every $x\in\mathbb R$.
 :::
 
+::: {.solution}
+
 Since \(f\) is bounded and measurable, its restriction to \([0,1]\) lies in
 \[
 L^2([0,1]).
@@ -406,6 +408,8 @@ almost everywhere on \(\mathbb R\).
 ::: pf-qed
 
 Step [](#s1-15){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
