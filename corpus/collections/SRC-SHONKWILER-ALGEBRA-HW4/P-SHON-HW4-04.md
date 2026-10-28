@@ -23,6 +23,8 @@ S_n=\langle (12),(12\cdots n)\rangle
 for every $n\ge2$.
 :::
 
+::: {.solution}
+
 Let
 \[
 \tau=(12\cdots n)
@@ -185,6 +187,8 @@ Combine the two inclusions.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required generation statement.
+
+:::
 
 :::
 
