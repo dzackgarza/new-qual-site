@@ -26,6 +26,8 @@ b. Apply (a) to show that the above Taylor series converges uniformly on every b
 c. Determine those functions $f$ for which the above Taylor series converges uniformly on all of $\CC$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -172,6 +174,8 @@ Step [](#s1-4){.pf-ref} proves necessity, and step [](#s1-5){.pf-ref} proves suf
 
 Step [](#s1-1){.pf-ref} answers part (a), step [](#s1-3){.pf-ref} proves part (b), and step [](#s1-6){.pf-ref}
 answers part (c).
+
+:::
 
 :::
 
