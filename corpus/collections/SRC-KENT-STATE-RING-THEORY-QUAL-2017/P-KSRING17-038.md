@@ -19,6 +19,8 @@ audit:
 Show that if p is a prime such that $p \equiv 1 { \ : } ( \mathrm { m o d \ : } 6 )$ , then $x ^ { 3 } + 1$ splits in $\mathbb { Z } _ { p } [ x ]$
 :::
 
+::: {.solution}
+
 Assume
 $$
 p\equiv1\pmod6.
@@ -202,6 +204,8 @@ A monic degree-$3$ polynomial is therefore the product of the corresponding moni
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} shows that $x^3+1$ splits completely over $\FF_p$.
+
+:::
 
 :::
 
