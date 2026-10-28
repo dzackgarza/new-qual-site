@@ -19,6 +19,8 @@ audit:
 If p is a prime satisfying $p \equiv 1$ (mod 4), then p is a sum of two squares.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -226,6 +228,8 @@ for integers $x,y$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
