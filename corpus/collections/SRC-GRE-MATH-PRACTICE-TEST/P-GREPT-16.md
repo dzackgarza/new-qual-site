@@ -25,6 +25,8 @@ Let $x = r \cos \theta$ and $y = r \sin \theta$. Which of the following expressi
 (E) $-r^{-1} \csc \theta$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -94,6 +96,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required expression.
+
+:::
 
 :::
 
