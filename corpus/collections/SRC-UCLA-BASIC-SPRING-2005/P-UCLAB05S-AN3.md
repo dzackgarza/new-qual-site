@@ -31,6 +31,8 @@ A continuous function $f:X\to Y$ is called *proper* if $f^{-1}(K)$ is compact fo
 Show that $f$ is proper.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -135,6 +137,8 @@ Hence $f^{-1}(K)$ is bounded. It is also closed because $K$ is closed and $f$ is
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the requested examples, and step [](#s1-5){.pf-ref} proves part (c).
+
+:::
 
 :::
 
