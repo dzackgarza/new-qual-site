@@ -24,6 +24,8 @@ The source lists five familiar principles equivalent to the Axiom of Choice: Zor
    \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -402,6 +404,8 @@ was arbitrary. Step [](#s1-9){.pf-ref} constructs a choice function for every fa
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} state AC and two of the listed equivalent principles, and steps [](#s1-4){.pf-ref} through [](#s1-10){.pf-ref} prove one required implication.
+
+:::
 
 :::
 
