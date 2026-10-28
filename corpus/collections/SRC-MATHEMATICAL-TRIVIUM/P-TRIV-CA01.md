@@ -23,6 +23,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -242,6 +244,8 @@ which is a positive real number and therefore has argument $0$.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} give polar forms for all seven requested quantities.
+
+:::
 
 :::
 
