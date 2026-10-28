@@ -19,6 +19,8 @@ audit:
 Let R be a commutative ring, not necessarily with identity, and assume there is some fixed positive integer n such that $n r = 0$ for all $r \in R .$ . Prove that R embeds in a ring S with identity so that R is an ideal of S and $S / R \cong \mathbb { Z } / n \mathbb { Z }$
 :::
 
+::: {.solution}
+
 Let
 $$
 A
@@ -340,6 +342,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} construct a unital ring $S$, steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} embed $R$ as an ideal of $S$, and step [](#s1-7){.pf-ref} identifies the quotient.
+
+:::
 
 :::
 
