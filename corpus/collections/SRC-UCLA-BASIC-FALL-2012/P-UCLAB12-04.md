@@ -9,17 +9,19 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-28
+  note: Corrected the source misprint d(y, x) to d(y, x_1) in the hint's definition of B(x_1, delta_1).
 ---
 
 ::: {.problem}
 A subset $K$ of a metric space $(X, d)$ is called nowhere dense if $K$ has empty interior (i.e., if $U \subseteq K$, $U$ open in $X$ imply $U = \emptyset$). Prove the Baire theorem that if $(X, d)$ is a complete metric space, then $X$ is not a countable union of closed nowhere dense sets.
 Hint: Assume $X = \bigcup_n K_n$ where each $K_n$ is closed and nowhere dense.
-Show there is $x_1 \in X$ and $0 < \delta_1 < 1/2$ such that $B_1 = B(x_1, \delta_1) = \{y \in X : d(y, x) < \delta_1\}$ satisfies $B_1 \cap K_1 = \emptyset$, and there is $x_2 \in X$ and $0 < \delta_2 < \frac{\delta_1}{2}$ such that $B_2 = B(x_2, \delta_2)$ satisfies $B_2 \subset B_1$ and $B_2 \cap K_2 = \emptyset$. Then continue by induction to find a sequence $\{x_n\}$ in $X$ that converges to $x \in X \setminus \bigcup_{n=1}^\infty K_n$.
+Show there is $x_1 \in X$ and $0 < \delta_1 < 1/2$ such that $B_1 = B(x_1, \delta_1) = \{y \in X : d(y, x_1) < \delta_1\}$ satisfies $B_1 \cap K_1 = \emptyset$, and there is $x_2 \in X$ and $0 < \delta_2 < \frac{\delta_1}{2}$ such that $B_2 = B(x_2, \delta_2)$ satisfies $B_2 \subset B_1$ and $B_2 \cap K_2 = \emptyset$. Then continue by induction to find a sequence $\{x_n\}$ in $X$ that converges to $x \in X \setminus \bigcup_{n=1}^\infty K_n$.
 :::
 
-::: {.remark}
-The hint's ball $B(x_1,\delta_1)$ is $\{y \in X : d(y, x_1) < \delta_1\}$; the printed $d(y, x)$ is a misprint for $d(y, x_1)$.
-:::
 
 ::: {.solution}
 
