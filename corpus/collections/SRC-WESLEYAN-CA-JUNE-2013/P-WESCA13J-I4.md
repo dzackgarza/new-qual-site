@@ -19,6 +19,8 @@ audit:
 Define an essential singularity of an analytic function.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -153,6 +155,8 @@ $$
 ::: pf-proof
 
 Step [](#s1-2){.pf-ref} gives the definition, and step [](#s1-3){.pf-ref} gives the standard equivalent Laurent-series criterion.
+
+:::
 
 :::
 
