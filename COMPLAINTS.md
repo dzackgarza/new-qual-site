@@ -37,23 +37,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
-### Typesetting and wording defects found while verifying solution wrappers from P-TRIV-RA30 to P-UCLAB18S-04
-
-- **Object and need:** problem cards in the range from P-TRIV-RA30 to P-UCLAB18S-04, and four cards outside it that show the same lost-backslash defect. Each card must typeset and read as the source reads.
-
-- **Observed evidence:**
-  - Lost backslash in LaTeX: P-TRIV-RA35 line 89 `r\sin\theta,e_\varphi` (for `\,`); P-TRIV-RA44 line 123 `\rho R,d`; P-TRIV-RA47 line 100 `-ip,I(p)` and line 112 `\frac{d}{dx}left(`. The pattern `left(` without a backslash also occurs in P-NORI-GT-2-03 line 85, P-AGH3106NODALCOVER line 117 and P-AGH425HURWITZAUTOMORPHISMBOUND line 285.
-  - Wording: P-TRIV-RA55 line 45 "a negative positive number"; P-UCLAB08S-11 line 186 is a garbled sentence ("hence is divisible by $\mu_A$ because its degree is at most $r-1$ only if it is zero").
-  - Proof citation gap: P-UCLAB10F-08 step s1-3 applies step s1-1 to orthogonal complements but also needs the double-complement identity of step s1-2, which it does not cite.
-  - Extraction residue in statements: P-TRIV-VP04 line 19 "QConsider"; P-TU4KT part labels "a. … a. … c."; MinerU spacing and `\operatorname* { l i m }` forms in P-UCLAB12-01 to P-UCLAB12-12, P-UCLAB16F-01 to P-UCLAB16F-12 and P-UCLAB06S-01 to P-UCLAB06S-08; bare `C` for $\mathbb C$ in P-UCLAB16F-05; stray `.` inside set braces in P-UCLAB16F-11; "Problem N." prefixes in P-UCLAB09S-01 to P-UCLAB09S-12 and P-UCLAB10F-01 to P-UCLAB10F-05.
-  - Source talk inside proofs (`SEC-7`): P-UCLAB04F-05 line 159 cites "the stricter Fall 2003 appearance"; P-UCLAB06S-02 step s1-6 and P-UCLAB06S-06 opening prose and step s1-11 discuss the reading of the source inside the solution.
-
-- **Impact and owner:** rendered mathematics on these cards; the card text owns each repair.
-
-- **Uncertainty:** the LaTeX and wording defects are verified by reading the lines. The extraction-residue lists come from readers who checked the problem divs; each statement still needs comparison with its source PDF before an edit.
-
-- **Repair:** correct each line on its card, one card at a time; for the statements, compare with the source extraction first.
-
 ### UCLA Spring 2016 Problem 11 omits normalization in the logarithmic determinant limit
 
 - **Object and need:** P-UCLAB16S-11 in SRC-UCLA-BASIC-SPRING-2016. The source asks to prove that log det(M_n) has a limit as n tends to infinity and to compute it.
