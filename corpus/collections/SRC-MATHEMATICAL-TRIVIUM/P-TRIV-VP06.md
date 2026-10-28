@@ -25,6 +25,8 @@ $$
 and U is $\mathrm { ~ a ~ } C ^ { 1 }$ function of $x , y , z$ . Write the system of equations on $x ( t ) , y ( t ) , z ( t )$ whose solution is an extremum of $S [ x , y , z ]$ in a class of $C ^ { 2 } ( [ t _ { 1 } , t _ { 2 } ] )$ functions with fixed boundary conditions.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -170,6 +172,8 @@ Collect the three scalar equations from steps [](#s1-3){.pf-ref} through [](#s1-
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required Euler--Lagrange system.
+
+:::
 
 :::
 
