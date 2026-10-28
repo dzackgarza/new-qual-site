@@ -23,6 +23,8 @@ Let $(X,\mathcal M,\mu)$ be a measure space and let $f_n:X\to\mathbb R$ be measu
 (b) Prove that $L^1$ convergence to $0$ implies convergence in measure to $0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -119,6 +121,8 @@ If $f_n\to0$ in $L^1$, then the right-hand side tends to zero. Hence the measure
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give the requested definitions, and step [](#s1-4){.pf-ref} proves the implication.
+
+:::
 
 :::
 
