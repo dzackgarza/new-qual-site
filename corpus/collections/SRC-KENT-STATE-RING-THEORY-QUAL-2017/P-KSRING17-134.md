@@ -30,6 +30,8 @@ The ring $R = \mathbb{Z}/4\mathbb{Z}$ is commutative and Noetherian, and every i
 The intended statement adds the hypothesis that $R$ is an integral domain: then every ideal is finitely generated, and induction on the number of generators shows that every ideal is principal.
 :::
 
+::: {.solution}
+
 Assume the corrected hypothesis that $R$ is an integral domain.
 
 ::: pf
@@ -216,6 +218,8 @@ These are exactly the defining conditions of a PID.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves the corrected statement.
+
+:::
 
 :::
 
