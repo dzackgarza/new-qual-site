@@ -28,6 +28,8 @@ Prove
 Determine the functions for which equality can hold at some nonzero $z$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -157,6 +159,8 @@ for every $z$.
 
 Step [](#s1-2){.pf-ref} proves the estimate, and step [](#s1-4){.pf-ref} determines precisely its equality
 cases.
+
+:::
 
 :::
 
