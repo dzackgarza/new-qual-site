@@ -29,6 +29,8 @@ The source omits the defining expression between "Let" and "denote", so the coef
 From the conclusions, the missing text defines $c_n$ as the coefficients of the power series expansion of $f$ in the open unit disc, $f(z) = \sum_{n=0}^\infty c_n z^n$ for $\abs{z} < 1$; the source does not supply this wording.
 :::
 
+::: {.solution}
+
 Use the intended coefficients described in the remark:
 $$
 f(z)=\sum_{n=0}^{\infty}c_nz^n,
@@ -284,6 +286,8 @@ which proves the claimed limit.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (1), and step [](#s1-6){.pf-ref} proves part (2).
+
+:::
 
 :::
 
