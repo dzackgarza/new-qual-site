@@ -25,6 +25,8 @@ be defined on the unit disk $D=\{z:|z|<1\}$.
 Using the Maximum Principle, show that $f$ maps $D$ onto $D$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -166,6 +168,8 @@ Hence every $w\in D$ lies in $f(D)$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required surjectivity statement.
+
+:::
 
 :::
 
