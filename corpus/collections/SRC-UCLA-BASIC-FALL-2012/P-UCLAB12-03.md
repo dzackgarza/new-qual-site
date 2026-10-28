@@ -15,6 +15,8 @@ review: draft
 Let $\{ f _ { n } ( x ) \}$ be a sequence of non-negative continuous functions on a compact metric space X. Assume $f _ { n } ( x ) \geq f _ { n + 1 } ( x )$ for all n and x, so that $\quad \operatorname* { l i m } _ { n \to \infty } f _ { n } ( x ) = f ( x )$ exists for every $x \in X$ Prove $f$ is continuous if and only if $f _ { n }$ converges to $f$ uniformly on X.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -235,6 +237,8 @@ Step [](#s1-1){.pf-ref} proves the forward implication from uniform convergence 
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
