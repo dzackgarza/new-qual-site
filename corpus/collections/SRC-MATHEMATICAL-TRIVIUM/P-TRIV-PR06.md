@@ -27,6 +27,8 @@ The source also includes Figure 6 showing the tetrahedron; Flash preserves only 
 Are they mutually independent?
 :::
 
+::: {.solution}
+
 Assume the tetrahedron is fair, so each face has probability $1/4$. The four faces are $R$, $G$, $B$, and $RGB$.
 
 ::: pf
@@ -115,6 +117,8 @@ Pairwise independence is step [](#s1-3){.pf-ref}. Mutual independence would requ
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} answer parts (a) and (b).
+
+:::
 
 :::
 
