@@ -19,6 +19,8 @@ audit:
 Compute the Laurent series of $f ( z ) = \sin { \frac { z } { 1 - z } }$ around $z _ { 0 } = 1 ;$ give the region of convergence.
 :::
 
+::: {.solution}
+
 Set
 $$
 w=z-1.
@@ -194,6 +196,8 @@ principal part is infinite, which characterizes an essential singularity.
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give the Laurent series and its exact region of convergence.
+
+:::
 
 :::
 
