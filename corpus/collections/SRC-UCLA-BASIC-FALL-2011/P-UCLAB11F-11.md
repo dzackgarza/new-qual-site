@@ -33,6 +33,8 @@ and that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -253,6 +255,8 @@ By steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref},
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} states and proves rank-nullity, step [](#s1-2){.pf-ref} proves the inclusion in part (b), and step [](#s1-6){.pf-ref} proves the quotient-dimension identity.
+
+:::
 
 :::
 
