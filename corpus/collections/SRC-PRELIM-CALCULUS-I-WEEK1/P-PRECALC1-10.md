@@ -15,6 +15,8 @@ review: draft
 Let $f ( x ) = e ^ { g ( x ) } h ( x )$ where $h ^ { \prime } ( x ) = - g ^ { \prime } ( x ) h ( x )$ for all $x \in \mathbb { R }$ . Which of the following is necessarily true? (a) f is constant $( \mathrm { b } ) \ f$ is linear and non-constant (c) g is constant (d) g is linear and non-constant (e) none of the above
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -154,6 +156,8 @@ This is step [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
