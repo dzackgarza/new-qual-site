@@ -28,6 +28,8 @@ T(U_1)=U_2,\qquad T(W_1)=W_2.
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -319,6 +321,8 @@ T(W_1)=W_2.
 ::: pf-qed
 
 Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} give the required operator, and step [](#s1-7){.pf-ref} shows it may in fact be chosen invertible.
+
+:::
 
 :::
 
