@@ -32,6 +32,8 @@ where $\norm{f}_{(\infty,s)} = \sup_{z\in D_s(z_0)} \abs{f(z)}$ and $\norm{f}_{(
 The source adds "Note: Exercise 3.8.20 on p.107 in Stein et al is a straightforward consequence of this stronger result using the integral form of the Cauchy-Schwarz inequality in real analysis.", a pointer to Stein and Shakarchi, *Complex Analysis*; the statement does not depend on it.
 :::
 
+::: {.solution}
+
 Set
 $$
 \rho\coloneqq r-s>0.
@@ -200,6 +202,8 @@ Step [](#s1-5){.pf-ref} proves the assertion with
 $$
 \boxed{c=\frac1{\pi(r-s)^2}>0}.
 $$
+
+:::
 
 :::
 
