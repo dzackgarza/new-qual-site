@@ -24,6 +24,8 @@ audit:
 Construct an $f \in L^1(\mathbb{R})$ so that $f(x+y)$ does *not* converge almost everywhere to $f(x)$ as $y \to 0$. Prove that your $f$ has this property.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -189,6 +191,8 @@ does not hold almost everywhere.
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} construct an $L^1$ function, while steps [](#s1-5){.pf-ref} and [](#s1-6){.pf-ref}
 prove the required failure of almost-everywhere translation convergence.
+
+:::
 
 :::
 
