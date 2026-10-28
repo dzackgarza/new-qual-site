@@ -27,6 +27,8 @@ Consider the matrix $A = \left[ \begin{array} { l l } { a } & { b } \\ { c } & {
 (d) Show that this decomposition is unique.
 :::
 
+::: {.solution}
+
 Write
 $$
 g_1=
@@ -477,6 +479,8 @@ This is step [](#s1-15){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref}, [](#s1-7){.pf-ref}, and [](#s1-11){.pf-ref}, and [](#s1-16){.pf-ref} establish parts (a)--(d).
+
+:::
 
 :::
 
