@@ -33,6 +33,8 @@ larger than exact preservation of the quadratic form: positive scalar
 dilations also preserve the cone.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -392,6 +394,8 @@ This is the defining relation for $O(p,n-p)$. Step [](#s1-9){.pf-ref} proves the
 
 Step [](#s1-2){.pf-ref} solves part (a), step [](#s1-7){.pf-ref} solves part (b), and step [](#s1-12){.pf-ref} solves
 part (c).
+
+:::
 
 :::
 
