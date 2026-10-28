@@ -22,6 +22,8 @@ Investigate each series for convergence, divergence, conditional convergence, an
 6. $\displaystyle\sum_{n=1}^\infty\frac1{1+r^n}$.
 :::
 
+::: {.solution}
+
 ## Series 1
 
 Consider
@@ -927,6 +929,8 @@ Use steps [](#s1-7){.pf-ref}, [](#s1-16){.pf-ref}, [](#s1-21){.pf-ref}, [](#s1-2
 ::: pf-qed
 
 Step [](#s1-38){.pf-ref} gives the complete convergence classification.
+
+:::
 
 :::
 
