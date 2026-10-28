@@ -20,6 +20,8 @@ Let D be a Euclidean domain.
 Prove that every non-zero prime ideal is a maximal ideal.
 :::
 
+::: {.solution}
+
 Let
 $$
 P
@@ -246,6 +248,8 @@ Thus $P$ is maximal.
 ::: pf-qed
 
 Since $P$ was an arbitrary nonzero prime ideal, step [](#s1-4){.pf-ref} proves the assertion.
+
+:::
 
 :::
 
