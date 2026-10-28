@@ -31,6 +31,8 @@ Show that there exists a sequence $\{R_n\}$ of rational functions such that (i) 
 Hint: first represent $f(z)$ for $z\in K$ as a suitable integral over $\partial V$ and then notice that the integrand is equicontinuous in $z$.
 :::
 
+::: {.solution}
+
 ## Part (a)
 
 Since \(K\subset U\), with \(K\) compact and \(U\) open, define
@@ -449,6 +451,8 @@ Uniform approximation is step [](#s1-20){.pf-ref}, and the pole statement is ste
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} proves part (a), and step [](#s1-21){.pf-ref} proves part (b).
+
+:::
 
 :::
 
