@@ -25,6 +25,8 @@ for all $x\in\mathbb R$.
 Justify all manipulations.
 :::
 
+::: {.solution}
+
 Let
 \[
 h(y)
@@ -352,6 +354,8 @@ By steps [](#s1){.pf-ref} and [](#s4){.pf-ref}, and [](#s5){.pf-ref},
 ::: pf-qed
 
 Step [](#s6){.pf-ref} gives the requested value for every real $x$, and the preceding steps justify the contour, Fubini, convolution, and Fourier inversion manipulations.
+
+:::
 
 :::
 
