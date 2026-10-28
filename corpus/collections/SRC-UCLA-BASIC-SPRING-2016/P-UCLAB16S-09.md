@@ -25,6 +25,8 @@ Find all $x\in\mathbb R$ for which $\{v_1,v_2,v_3\}$ is linearly independent ove
 Similarly, find all $x\in\mathbb R$ for which $\{v_1,v_2,v_3\}$ is linearly independent over $\mathbb Q$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -267,6 +269,8 @@ Thus $0$ is the only excluded value.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the answer over $\mathbb R$, and step [](#s1-6){.pf-ref} gives the answer over $\mathbb Q$.
+
+:::
 
 :::
 
