@@ -26,6 +26,8 @@ Evaluate
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -161,6 +163,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required value of the contour integral.
+
+:::
 
 :::
 
