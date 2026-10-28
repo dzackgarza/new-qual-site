@@ -19,6 +19,8 @@ audit:
 Describe the figures that can be obtained as intersection of the cone $z ^ { 2 } = x ^ { 2 } + y ^ { 2 }$ with the plane $z - a x = 1 , 0 < a < \infty$ , in R3.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -219,6 +221,8 @@ This is exactly the classification in steps [](#s1-3){.pf-ref} through [](#s1-5)
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives all possibilities for $0<a<\infty$.
+
+:::
 
 :::
 
