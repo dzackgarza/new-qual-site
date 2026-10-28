@@ -19,6 +19,8 @@ audit:
 Let $f ~ \in ~ { \cal F } [ X ]$ Prove that $f ( X + Y ) = f ( X ) + f ( Y )$ if and only if $f \ =$ $a _ { 0 } X + a _ { 1 } X ^ { p } + \ldots + a _ { n } X ^ { p ^ { n } }$ for some $n \geq 0$ and $a _ { 0 } , . . . , a _ { n } \in F$
 :::
 
+::: {.solution}
+
 Write
 $$
 f(X)=\sum_{m=0}^d c_mX^m.
@@ -187,6 +189,8 @@ By step [](#s1-2){.pf-ref}, no constant term occurs. By step [](#s1-5){.pf-ref},
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves the forward implication from the displayed form to additivity, and steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref} prove the converse.
+
+:::
 
 :::
 
