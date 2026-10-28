@@ -31,6 +31,8 @@ III. If $A$ and $C$ are Hausdorff, then $B$ is Hausdorff.
 (E) I, II, and III
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -119,6 +121,8 @@ true.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
