@@ -32,6 +32,8 @@ $$
 where $\gamma _ { x } : = \{ z \mid z = x + i t , 0 \leq t \leq b \}$
 :::
 
+::: {.solution}
+
 Parametrize the vertical segment by
 $$
 \gamma_x(t)=x+it,
@@ -136,6 +138,8 @@ as $x\to+\infty$. The estimate in step [](#s1-2){.pf-ref} therefore forces the d
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required limit.
+
+:::
 
 :::
 
