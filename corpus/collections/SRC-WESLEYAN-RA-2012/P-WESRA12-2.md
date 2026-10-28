@@ -32,6 +32,8 @@ Let $X=[0,1]$ with its Borel $\sigma$-algebra and Lebesgue measure $\lambda$.
 Explain why $f$ is integrable and calculate $\int_Xf\,d\lambda$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -1067,6 +1069,8 @@ These are steps [](#s1-4){.pf-ref} and [](#s1-7){.pf-ref}, and [](#s1-10){.pf-re
 
 Steps [](#s1-1){.pf-ref} through [](#s1-10){.pf-ref} solve part (a), step [](#s1-11){.pf-ref} states the Dominated
 Convergence Theorem for part (b), and steps [](#s1-12){.pf-ref} through [](#s1-23){.pf-ref} solve part (c).
+
+:::
 
 :::
 
