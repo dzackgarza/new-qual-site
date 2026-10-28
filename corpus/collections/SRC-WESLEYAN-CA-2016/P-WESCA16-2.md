@@ -19,6 +19,8 @@ audit:
 Prove that every holomorphic function is infinitely complex-differentiable.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -121,6 +123,8 @@ $f^{(n)}$ exist throughout $D$ for every $n\ge0$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
