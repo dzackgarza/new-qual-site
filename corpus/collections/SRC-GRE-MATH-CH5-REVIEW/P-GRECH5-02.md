@@ -36,6 +36,8 @@ is $(x, y, z) = (a, b, a)$. If $a$ is NOT an integer, what is the numerical valu
 (E) $1$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -139,6 +141,8 @@ Add the two values in step [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested numerical value and corresponding choice.
+
+:::
 
 :::
 
