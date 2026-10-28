@@ -23,6 +23,8 @@ Show that the characteristic polynomials of $AB$ and $BA$ are equal.
 Hint: One approach is to first show that it holds when $B$ is invertible.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -132,6 +134,8 @@ Step [](#s1-5){.pf-ref} states that $\det(tI-AB)=\det(tI-BA)$ for every $t$, whi
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
