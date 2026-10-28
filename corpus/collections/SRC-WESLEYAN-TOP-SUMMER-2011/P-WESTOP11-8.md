@@ -20,6 +20,8 @@ A\hookrightarrow X
 on the fundamental group and on homology. Use these maps to prove that $A$ is not a retract of $X$.
 :::
 
+::: {.solution}
+
 Choose a basepoint
 \[
 x_0\in A
@@ -375,6 +377,8 @@ would send $c$ to the nonzero generator $c$.
 Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} compute the map on fundamental groups,
 steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} compute the maps on homology,
 and steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref} prove that $A$ is not a retract of $X$.
+
+:::
 
 :::
 
