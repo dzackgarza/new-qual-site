@@ -25,6 +25,8 @@ Prove that R is a field.
 Erratum: the literal statement cannot hold under the standard definition of prime ideal, because the improper ideal $R$ itself is never prime. The intended hypothesis is that every proper ideal of $R$ is prime.
 :::
 
+::: {.solution}
+
 Assume the corrected hypothesis that every proper ideal of $R$ is prime.
 
 ::: pf
@@ -289,6 +291,8 @@ The ring is commutative with identity, and by step [](#s1-7){.pf-ref} every nonz
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves the corrected statement intended by the source.
+
+:::
 
 :::
 
