@@ -23,6 +23,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 Set
 \[
 g(x)=\frac1{1+x-x_0}.
@@ -114,6 +116,8 @@ Substitute the three values from step [](#s1-2){.pf-ref} into the identity in st
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested coefficients.
+
+:::
 
 :::
 
