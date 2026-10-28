@@ -20,6 +20,8 @@ Let R be any ring with identity, and n any positive integer.
 If $M _ { n } ( R )$ denotes the ring of $n \times n$ matrices with entries in R, prove that $M _ { n } ( I )$ is an ideal of $M _ { n } ( R )$ whenever I is an ideal of R, and that every ideal of $M _ { n } ( R )$ has this form.
 :::
 
+::: {.solution}
+
 Let
 $$
 E_{ij}
@@ -340,6 +342,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves the first assertion, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} prove the classification of all ideals of $M_n(R)$.
+
+:::
 
 :::
 
