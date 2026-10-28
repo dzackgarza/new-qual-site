@@ -20,6 +20,8 @@ Let A be a non-degenerate matrix, and B is obtained from A by interchange two of
 How are det A and det B related?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -85,6 +87,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required relation.
+
+:::
 
 :::
 
