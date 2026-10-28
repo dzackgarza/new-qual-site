@@ -19,6 +19,8 @@ audit:
 Solve $y ^ { \prime } + 2 y = e ^ { - t } \theta ( t )$ , where θ is the Heaviside function, $\theta ( x ) = 0 { \mathrm { ~ i f ~ } } x < 0$ and $\theta ( x ) = 1 { \mathrm { ~ i f ~ } } x > 0$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -217,6 +219,8 @@ Thus the value assigned to $\theta(0)$ is irrelevant because the Heaviside corre
 ::: pf-qed
 
 Steps [](#s1-6){.pf-ref} through [](#s1-8){.pf-ref} give the complete continuous solution family.
+
+:::
 
 :::
 
