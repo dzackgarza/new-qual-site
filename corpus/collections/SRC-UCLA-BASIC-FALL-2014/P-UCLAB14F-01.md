@@ -27,6 +27,8 @@ achieves its global minimum somewhere on the set
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 D=\{(x,y)\in\mathbb R^2:x\ne y\}.
@@ -212,6 +214,8 @@ Hence $(x_0,y_0)$ is a global minimizer on $D$.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} proves that $H$ achieves its global minimum somewhere off the diagonal.
+
+:::
 
 :::
 
