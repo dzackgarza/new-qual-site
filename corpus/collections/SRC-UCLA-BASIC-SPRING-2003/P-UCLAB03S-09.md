@@ -25,6 +25,8 @@ A^tA=I=AA^t.
 Prove that the characteristic polynomial of $A$ has $1$ as a root.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -136,6 +138,8 @@ Therefore $1$ is a root of $\chi_A$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
