@@ -29,6 +29,8 @@ Prove that $L$ has an eigenvalue $\lambda$ such that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -160,6 +162,8 @@ Take $\lambda=\lambda_j$ from step [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
