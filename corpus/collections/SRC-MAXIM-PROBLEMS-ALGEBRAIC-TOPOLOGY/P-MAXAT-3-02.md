@@ -19,6 +19,8 @@ audit:
 Calculate $H ^ { * } ( \mathbb { R } \mathbb { P } ^ { \infty } ; \mathbb { Z } ) , H ^ { * } ( \mathbb { R } \mathbb { P } ^ { 2 n } ; \mathbb { Z } ) , H ^ { * } ( \mathbb { R } \mathbb { P } ^ { 2 n + 1 } ; \mathbb { Z } )$
 :::
 
+::: {.solution}
+
 Use the standard CW decomposition of $\mathbb{RP}^m$ with one cell in every dimension $0,1,\ldots,m$.
 
 ::: pf
@@ -195,6 +197,8 @@ Restrict the class $u$ from $\mathbb{RP}^{\infty}$. Step [](#s1-4){.pf-ref} show
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} give the requested integral cohomology groups, and steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} record the corresponding standard ring presentations where no extra top odd-degree generator is needed.
+
+:::
 
 :::
 
