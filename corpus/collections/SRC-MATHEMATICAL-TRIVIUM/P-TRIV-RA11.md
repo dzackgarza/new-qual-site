@@ -33,6 +33,8 @@ A possible solution is to insert a chain of balls staying at rest with intermedi
 (b) Assuming $m \ll M$ , investigate the limit $n \to \infty$
 :::
 
+::: {.solution}
+
 Let
 $$
 q_0=M>q_1>\cdots>q_n>q_{n+1}=m
@@ -474,6 +476,8 @@ Steps [](#s1-14){.pf-ref} through [](#s1-15){.pf-ref} give the infinite-chain li
 ::: pf-qed
 
 Steps [](#s1-9){.pf-ref} and [](#s1-16){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
