@@ -32,6 +32,8 @@ $$
 For ordinary convergence, assume $a>0$.
 :::
 
+::: {.solution}
+
 Put
 $$
 k=|\vec k|
@@ -308,6 +310,8 @@ which also equals the normalized spatial integral of $f$.
 ::: pf-qed
 
 Steps [](#s1-8){.pf-ref} through [](#s1-9){.pf-ref} give the Fourier image for every $\vec k$.
+
+:::
 
 :::
 
