@@ -23,6 +23,8 @@ f(z)=e^{1/z^2}
 in a Laurent series on the annulus $0<|z|<\infty$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -89,6 +91,8 @@ Step [](#s1-2){.pf-ref} gives the Laurent series. Its convergence domain is exac
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the requested Laurent expansion on the stated annulus.
+
+:::
 
 :::
 
