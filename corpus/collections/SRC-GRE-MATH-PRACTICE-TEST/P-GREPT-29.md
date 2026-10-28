@@ -25,6 +25,8 @@ $\int_0^1 (x \log x) \, dx =$
 (E) does not exist
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -102,6 +104,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required integral.
+
+:::
 
 :::
 
