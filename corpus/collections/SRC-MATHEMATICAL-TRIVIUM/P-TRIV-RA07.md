@@ -24,6 +24,8 @@ The double-well interpretation assumes $v>0$. If $v=0$, the scaling of the
 minimum is different. The solution below treats the intended $v>0$ case.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -266,6 +268,8 @@ The first correction in step [](#s1-7){.pf-ref} is of order $\epsilon^2$.
 ::: pf-qed
 
 Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} give the requested asymptotic minimum.
+
+:::
 
 :::
 
