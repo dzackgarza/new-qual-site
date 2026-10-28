@@ -35,6 +35,8 @@ is bounded on $L^p(\mathbb R^2)$.
 converges to $f$ almost everywhere in the plane as $r\to0$.
 :::
 
+::: {.solution}
+
 Let \(M_1\) denote the centered one-dimensional Hardy--Littlewood maximal
 operator:
 \[
@@ -474,6 +476,8 @@ desired convergence.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-13){.pf-ref} proves part (b).
+
+:::
 
 :::
 
