@@ -24,6 +24,8 @@ f(z)=x^2+i y^2,
 Show that $f$ is differentiable at every point on the line $y=x$ but is nowhere analytic.
 :::
 
+::: {.solution}
+
 Write
 \[
 f=u+iv,
@@ -271,6 +273,8 @@ Step [](#s1-4){.pf-ref} proves differentiability along
 y=x,
 \]
 and step [](#s1-8){.pf-ref} proves that $f$ is nowhere analytic.
+
+:::
 
 :::
 
