@@ -36,6 +36,8 @@ Prove that the limit
 exists and compute its value.
 :::
 
+::: {.solution}
+
 Let
 \[
 D_n=\det M_n,
@@ -555,6 +557,8 @@ Substitute the definition of $r_+$ from step [](#s1-3){.pf-ref}.
 
 Step [](#s1-2){.pf-ref} proves positivity of every determinant.
 Steps [](#s1-7){.pf-ref} through [](#s1-11){.pf-ref} give the correct disposition of the literal logarithmic limit, and step [](#s1-12){.pf-ref} records the finite normalized limit naturally associated to the problem.
+
+:::
 
 :::
 
