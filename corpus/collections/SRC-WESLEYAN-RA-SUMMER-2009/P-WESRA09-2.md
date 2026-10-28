@@ -27,6 +27,8 @@ State the following theorems:
 4. the Uniform Boundedness (Banach–Steinhaus) Theorem.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -87,6 +89,8 @@ then
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} state the four requested theorems, including the hypotheses needed for each conclusion.
+
+:::
 
 :::
 
