@@ -31,6 +31,8 @@ III. $45$
 (E) I, II, and III
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -140,6 +142,8 @@ This is the conclusion of step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
