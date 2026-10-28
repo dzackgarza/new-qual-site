@@ -34,6 +34,8 @@ Here $|z|$ denotes the Euclidean norm of $z\in\mathbb R^d$.
 Show that $E:P(K)\to[0,\infty]$ attains its minimum on $P(K)$ (which could possibly be $\infty$).
 :::
 
+::: {.solution}
+
 ## Part (a)
 
 Let
@@ -676,6 +678,8 @@ Step [](#s1-22){.pf-ref} constructs a minimizer.
 ::: pf-qed
 
 Step [](#s1-12){.pf-ref} proves part (a), and step [](#s1-23){.pf-ref} proves part (b).
+
+:::
 
 :::
 
