@@ -38,6 +38,8 @@ L_{z_0}(f)=f(z_0)=\langle f,g_{z_0}\rangle
 for all $f\in H$.
 :::
 
+::: {.solution}
+
 ## Part (a)
 
 Fix
@@ -426,6 +428,8 @@ Step [](#s1-10){.pf-ref} shows this function belongs to \(H\), and step [](#s1-1
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves part (a), and step [](#s1-13){.pf-ref} proves part (b).
+
+:::
 
 :::
 
