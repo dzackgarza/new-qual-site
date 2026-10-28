@@ -28,6 +28,8 @@ among all harmonic functions $u:\mathbb D\to[0,1]$, where
 Prove that your answer is correct.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -430,6 +432,8 @@ admissible harmonic function attaining that value.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required sharp result.
+
+:::
 
 :::
 
