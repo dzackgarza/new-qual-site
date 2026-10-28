@@ -19,6 +19,8 @@ audit:
 Assuming the Radon–Nikodym theorem for finite measure spaces, prove it for $\sigma$-finite measure spaces.
 :::
 
+::: {.solution}
+
 Let
 \[
 (X,\mathcal M)
@@ -543,6 +545,8 @@ Step [](#s1-12){.pf-ref} is the desired extension from finite to
 \sigma\text{-finite}
 \]
 measure spaces.
+
+:::
 
 :::
 
