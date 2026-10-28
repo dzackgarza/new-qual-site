@@ -37,6 +37,8 @@ They are a separate problem, carried by the card for question 1.
 The source prints this problem three times, as Fall 2009, question 13, and Fall 2011, questions 13 and 14.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -121,6 +123,8 @@ is constant as well.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
