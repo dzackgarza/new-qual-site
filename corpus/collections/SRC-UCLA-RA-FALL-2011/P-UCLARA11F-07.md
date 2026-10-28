@@ -23,6 +23,8 @@ Compute
 \]
 :::
 
+::: {.solution}
+
 Consider
 \[
 F(z)=\frac{e^{iz}}{(1+z^2)^2}
@@ -408,6 +410,8 @@ Divide step [](#s1-14){.pf-ref} by \(2\).
 ::: pf-qed
 
 Step [](#s1-15){.pf-ref} is the requested value.
+
+:::
 
 :::
 
