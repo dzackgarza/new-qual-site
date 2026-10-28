@@ -25,6 +25,8 @@ Give the definition of uniform convergence and, using basic properties of integr
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -115,6 +117,8 @@ This is exactly the definition of convergence of the sequence of integrals to $\
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the requested definition, and step [](#s1-3){.pf-ref} proves the desired interchange of limit and integral.
+
+:::
 
 :::
 
