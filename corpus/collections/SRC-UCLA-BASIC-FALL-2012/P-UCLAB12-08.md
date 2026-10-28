@@ -17,6 +17,8 @@ Use H to define an Hermitian form [,] by the formula: for x, y in $\mathbb { C }
 Let W be a complex subspace of $\mathbb { C } ^ { n }$ such that $[ { w _ { 1 } } , { w _ { 2 } } ] = 0$ for all $w _ { 1 }$ and $w _ { 2 }$ in $W$ Show that dimW $\leq n / 2$ Give also for each n an example of an H for which dim $W = n / 2$ if n is even, or dim $W = ( n - 1 ) / 2$ if n is odd.
 :::
 
+::: {.solution}
+
 Let
 \[
 [x,y]=\overline{x}^{\,t}Hy
@@ -247,6 +249,8 @@ The dimension of $W$ is $m=(n-1)/2$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves the dimension bound, and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give examples attaining the largest possible dimension in even and odd dimensions.
+
+:::
 
 :::
 
