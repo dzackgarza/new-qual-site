@@ -19,6 +19,8 @@ a_1=0,\qquad a_{2m}=\frac{a_{2m-1}}2,\qquad a_{2m+1}=\frac12+a_{2m}.
 Justify your answers with complete proofs.
 :::
 
+::: {.solution}
+
 Define the even subsequence
 \[
 b_m=a_{2m}
@@ -476,6 +478,8 @@ Combine steps [](#s1-16){.pf-ref} and [](#s1-19){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-20){.pf-ref} gives both requested limits.
+
+:::
 
 :::
 
