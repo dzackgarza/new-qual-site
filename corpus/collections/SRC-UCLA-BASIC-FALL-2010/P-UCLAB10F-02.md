@@ -24,6 +24,8 @@ Problem 2. Suppose $f$ is bounded on $[a,b]$.
 (b) Prove directly from the definition that every continuous $f$ is Riemann integrable.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -208,6 +210,8 @@ By step [](#s1-6){.pf-ref}, for every $\varepsilon>0$ there is a partition with 
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the definition, and steps [](#s1-4){.pf-ref} through [](#s1-7){.pf-ref} prove part (b) directly from it.
+
+:::
 
 :::
 
