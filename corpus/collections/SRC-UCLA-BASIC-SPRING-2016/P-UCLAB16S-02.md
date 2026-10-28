@@ -31,6 +31,8 @@ f(x)=\begin{cases}
 Using your definition, prove that $f$ is Riemann integrable on $[a,b]$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -350,6 +352,8 @@ Apply the criterion from step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the definition requested in part 1, and step [](#s1-11){.pf-ref} proves part 2.
+
+:::
 
 :::
 
