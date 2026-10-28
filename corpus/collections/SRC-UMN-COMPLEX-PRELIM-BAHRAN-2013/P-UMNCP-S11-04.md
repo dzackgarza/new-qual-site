@@ -26,6 +26,8 @@ Prove that \(|f''(0)|\le2\), and describe all such \(f\) for which \(|f''(0)|=2\
 The retained solution notes explicitly record that the printed exam omitted the necessary hypothesis \(f(\mathbb D)\subseteq\mathbb D\); it is included here because without it the assertion is false.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -203,6 +205,8 @@ whose modulus is $2$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the bound, and step [](#s1-7){.pf-ref} gives the complete equality case.
+
+:::
 
 :::
 
