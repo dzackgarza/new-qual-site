@@ -21,6 +21,8 @@ with a simple pole at $s=1$.
 Compute the residue at $s=1$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -304,6 +306,8 @@ From the Laurent expansion in step [](#s1-6){.pf-ref}, the coefficient of $(s-1)
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required analytic continuation, and steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} identify the pole and its residue.
+
+:::
 
 :::
 
