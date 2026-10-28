@@ -22,6 +22,8 @@ Suppose that a group has an element of order $7$ but no element which is its own
 (a) $27$ (b) $28$ (c) $35$ (d) $37$ (e) $42$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -91,6 +93,8 @@ satisfies both conditions.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested choice.
+
+:::
 
 :::
 
