@@ -35,6 +35,8 @@ III. the graph is a forest
 The source shows the undirected graph in a figure that is not reproduced here.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -112,6 +114,8 @@ Step [](#s1-2){.pf-ref} rules out I, while steps [](#s1-3){.pf-ref} and [](#s1-4
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
