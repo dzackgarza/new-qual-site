@@ -25,6 +25,8 @@ Let $g(x)$ be a polynomial function whose derivative is continuous and nonzero o
 (E) $x_{n+1}=x_n-\dfrac{g'(x)}{g(x)}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -83,6 +85,8 @@ Step [](#s1-2){.pf-ref} derives the recurrence directly from the tangent-interce
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested approximation formula.
+
+:::
 
 :::
 
