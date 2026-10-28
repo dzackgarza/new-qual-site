@@ -27,6 +27,8 @@ Let $p$ be prime.
 4. Deduce that $3x^5-6x-2$ is not solvable by radicals.
 :::
 
+::: {.solution}
+
 ## Part 1
 
 Let
@@ -674,6 +676,8 @@ A polynomial over a characteristic-zero field is solvable by radicals if and onl
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} proves part 1, step [](#s1-15){.pf-ref} proves part 2, step [](#s1-22){.pf-ref} proves part 3, and step [](#s1-36){.pf-ref} proves part 4.
+
+:::
 
 :::
 
