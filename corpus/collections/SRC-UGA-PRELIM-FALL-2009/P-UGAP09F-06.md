@@ -22,6 +22,8 @@ Let $V$ be the real vector space spanned by
 Find $\dim_{\mathbb R}V$ and exhibit a basis for $V$ over $\mathbb R$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -87,6 +89,8 @@ Step [](#s1-1){.pf-ref} shows that these three functions span $V$, and step [](#
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives both the dimension and the requested basis.
+
+:::
 
 :::
 
