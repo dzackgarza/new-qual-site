@@ -24,6 +24,8 @@ Give an example of a field $F$ and a one-to-one ring homomorphism $\varphi : F \
 Verify your example.
 :::
 
+::: {.solution}
+
 Take
 $$
 \boxed{
@@ -259,6 +261,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} show that $\varphi$ is an in
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} verifies the requested example.
+
+:::
 
 :::
 
