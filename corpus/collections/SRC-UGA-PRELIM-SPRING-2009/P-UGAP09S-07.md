@@ -33,6 +33,8 @@ g(x,y)=
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -183,6 +185,8 @@ Combine steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} gives the requested determination.
+
+:::
 
 :::
 
