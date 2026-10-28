@@ -18,6 +18,8 @@ X\to S^1
 is homotopic to a constant map.
 :::
 
+::: {.solution}
+
 The assertion is true under the standard meaning of simply connected: $X$ is path connected and $\pi_1(X)=0$.
 
 ::: pf
@@ -151,6 +153,8 @@ Step [](#s1-5){.pf-ref} explicitly constructs a homotopy from an arbitrary $f$ t
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the assertion.
+
+:::
 
 :::
 
