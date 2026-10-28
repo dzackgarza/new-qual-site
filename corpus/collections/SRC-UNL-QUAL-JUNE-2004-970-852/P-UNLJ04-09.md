@@ -47,6 +47,8 @@ $$
 $$
 so the unsigned formula is false.
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -602,6 +604,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the chromatic recurrence. Step [](#s1-9){.pf-ref} proves the corrected acyclic-orientation theorem and explains why the unsigned statement printed in the source cannot be correct.
+
+:::
 
 :::
 
