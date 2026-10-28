@@ -258,7 +258,7 @@ The usual radius of convergence naturally lies in the extended interval
 \[
 [0,\infty].
 \]
-If the source's phrase
+If the phrase
 \[
 \rho\ge0
 \]
