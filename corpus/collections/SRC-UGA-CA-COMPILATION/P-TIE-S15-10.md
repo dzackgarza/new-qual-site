@@ -34,6 +34,8 @@ Hint: Verify the mean value property for your new function obtained by Schwarz r
 The source adds "cf. Theorem 5.6 on p.60 of Stein et al." to part (3), a pointer to the Schwarz reflection principle for holomorphic functions in Stein and Shakarchi, *Complex Analysis*; part (3) asks for the harmonic analogue and does not depend on the reference.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -199,6 +201,8 @@ Hence the two semicircle contributions cancel, and the average is $0=U(x_0)$. Th
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (1), steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} answer part (2), and step [](#s1-4){.pf-ref} formulates and proves the harmonic Schwarz reflection principle requested in part (3).
+
+:::
 
 :::
 
