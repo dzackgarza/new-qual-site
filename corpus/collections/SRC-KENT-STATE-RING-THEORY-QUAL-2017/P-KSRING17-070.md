@@ -23,6 +23,8 @@ Let R be a commutative ring with identity that has exactly three ideals, {0}, I,
 (b) Show that if $a , b \in I$ then $a b = 0$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -349,6 +351,8 @@ Step [](#s1-8){.pf-ref} rules out the only alternative.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-9){.pf-ref} proves part (b).
+
+:::
 
 :::
 
