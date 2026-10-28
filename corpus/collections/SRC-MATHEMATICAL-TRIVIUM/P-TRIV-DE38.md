@@ -19,6 +19,8 @@ audit:
 Show that ${ \frac { d } { d x } } \log x = { \frac { 1 } { x } } - i \pi \delta ( x )$
 :::
 
+::: {.solution}
+
 Interpret $\log x$ as the boundary value $\log(x+i0)$ of the principal complex logarithm. Then
 \[
 \log(x+i0)=\log|x|+i\pi H(-x),
@@ -113,6 +115,8 @@ The ordinary function $1/x$ is not locally integrable at the origin and therefor
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} establish the stated identity with its necessary boundary-value and principal-value interpretations.
+
+:::
 
 :::
 
