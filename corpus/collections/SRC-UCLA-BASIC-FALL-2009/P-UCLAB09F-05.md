@@ -27,6 +27,8 @@ Prove that $a_i=0$ for all $i$.
 You may use the differentiation operator and the linear-algebra theorem on eigenvectors with distinct eigenvalues.
 :::
 
+::: {.solution}
+
 For each $i$, define
 \[
 \phi_i(t)=e^{\alpha_i t}
@@ -133,6 +135,8 @@ in $W$. By step [](#s1-3){.pf-ref}, the functions $\phi_i$ are linearly independ
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
