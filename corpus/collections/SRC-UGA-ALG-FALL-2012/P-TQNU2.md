@@ -20,6 +20,8 @@ Let $f(x) \in \QQ[x]$ be a polynomial and $K$ be a splitting field of $f$ over $
 Assume that $[K:\QQ] = 1225$ and show that $f(x)$ is solvable by radicals.
 :::
 
+::: {.solution}
+
 Let $G=\operatorname{Gal}(K/\mathbb Q)$.
 
 ::: pf
@@ -66,6 +68,8 @@ The Galois criterion for solvability by radicals in characteristic zero states t
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} establishes the assertion.
+
+:::
 
 :::
 
