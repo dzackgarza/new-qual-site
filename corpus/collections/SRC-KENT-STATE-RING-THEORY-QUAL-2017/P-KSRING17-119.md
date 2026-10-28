@@ -27,6 +27,8 @@ Verify your example.
 (c) Show that if R is a commutative ring with identity, then there is a proper ideal I of R such that $R / I$ is nilpotent-free, and find the ideal A of part (a).
 :::
 
+::: {.solution}
+
 For part (a), let
 $$
 \mathcal F
@@ -566,6 +568,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves part (a), step [](#s1-8){.pf-ref} proves part (b), and steps [](#s1-12){.pf-ref} through [](#s1-13){.pf-ref} prove part (c).
+
+:::
 
 :::
 
