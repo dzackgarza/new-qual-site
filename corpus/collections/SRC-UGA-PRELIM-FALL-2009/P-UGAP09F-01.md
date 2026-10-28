@@ -26,6 +26,8 @@ Consider the following statement about real numbers:
 (c) Write its converse in verbal form.
 :::
 
+::: {.solution}
+
 Let
 $$
 P(x,y)\coloneqq (x\le 0)\land(x<y),
@@ -103,6 +105,8 @@ which is exactly the verbal statement in the claim.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), step [](#s1-2){.pf-ref} answers part (b), and step [](#s1-3){.pf-ref} answers part (c).
+
+:::
 
 :::
 
