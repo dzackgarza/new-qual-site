@@ -19,6 +19,8 @@ audit:
 State a theorem expressing the $m$th derivative of an analytic function as a contour integral.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -121,6 +123,8 @@ Apply the Cauchy integral formula on the region bounded by $\gamma$.
 
 Step [](#s1-1){.pf-ref} is the requested theorem, with step [](#s1-2){.pf-ref} recording the standard
 contour-generalized form.
+
+:::
 
 :::
 
