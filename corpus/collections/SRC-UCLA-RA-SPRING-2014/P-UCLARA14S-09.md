@@ -22,6 +22,8 @@ Suppose $f_n\to f$ uniformly on compact subsets of $\Omega$.
 Prove that if $f_n(z)\ne0$ for every $z\in\Omega$ and every $n$, then either $f\equiv0$ or $f(z)\ne0$ for every $z\in\Omega$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -152,6 +154,8 @@ If $f$ is identically zero, the first alternative holds. Otherwise step [](#s1-5
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is exactly the desired conclusion.
+
+:::
 
 :::
 
