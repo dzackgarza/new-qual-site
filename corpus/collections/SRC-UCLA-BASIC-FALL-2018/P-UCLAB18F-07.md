@@ -21,6 +21,8 @@ Let $T:\mathbb R^n\to\mathbb R^n$ be linear and satisfy $T^2=T$.
 Show that there is a basis in which the matrix of $T$ is diagonal with entries consisting only of $1$'s followed by $0$'s.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -193,6 +195,8 @@ Thus the coordinate matrix is diagonal with the stated entries.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required normal form.
+
+:::
 
 :::
 
