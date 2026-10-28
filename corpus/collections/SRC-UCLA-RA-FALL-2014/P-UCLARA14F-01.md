@@ -28,6 +28,8 @@ A \coloneqq \left\{ f \in L^3(\mathbb{R}) : \int_{\mathbb{R}} |f(x)|^2\,dx < \in
 is a Borel subset of $L^3(\mathbb{R})$.
 :::
 
+::: {.solution}
+
 For each $n\in\mathbb N$, define
 \[
 \phi_n:L^3(\mathbb R)\to[0,\infty),
@@ -241,6 +243,8 @@ Borel.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
