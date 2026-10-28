@@ -31,6 +31,8 @@ With $K/F$ as in (b), does an intermediate field $L$ necessarily exist satisfyin
 Give a proof or counterexample.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -82,6 +84,8 @@ By step [](#s1-1){.pf-ref} there exists a finite Galois extension $K/F$ with $\o
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-3){.pf-ref} establish parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
