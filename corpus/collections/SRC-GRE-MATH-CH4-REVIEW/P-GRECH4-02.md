@@ -26,6 +26,8 @@ A population of bacteria grows at a rate proportional to the number present. Aft
 (E) $81$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -102,6 +104,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested growth factor and corresponding choice.
+
+:::
 
 :::
 
