@@ -23,6 +23,8 @@ Find $f(3,5)$.
 (A) $-6$  (B) $-5$  (C) $0$  (D) $8$  (E) $9$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -109,6 +111,8 @@ This is answer choice $\boxed{\text{(E)}}$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required value.
+
+:::
 
 :::
 
