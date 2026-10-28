@@ -26,6 +26,8 @@ Find the matrix, in the standard basis of $\mathbb R^4$, for either rotation by 
 You need not multiply the matrices out, but you must compute any inverses that occur.
 :::
 
+::: {.solution}
+
 Let
 \[
 a=(1,1,1,1),
@@ -286,6 +288,8 @@ All inverses appearing in this expression were computed explicitly in step [](#s
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives the requested matrix in the standard basis.
+
+:::
 
 :::
 
