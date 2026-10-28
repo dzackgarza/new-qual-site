@@ -30,6 +30,8 @@ Show that $H_+$ supports the standard contact structure $\xi$ on $S^3$ using the
 Show also that $H_-$ supports a different homotopy class of contact structure, which must therefore be overtwisted because $\#\mathcal{T}(S^3) = 1$.
 :::
 
+::: {.solution}
+
 Write
 \[
 S^3
@@ -727,6 +729,8 @@ Step [](#s1-28){.pf-ref} rules out tightness.
 Step [](#s1-16){.pf-ref} proves that \(H_+\) supports the standard contact structure.
 Steps [](#s1-25){.pf-ref} and [](#s1-29){.pf-ref} show that \(H_-\) supports a different homotopy class
 and that its supported contact structure is overtwisted.
+
+:::
 
 :::
 
