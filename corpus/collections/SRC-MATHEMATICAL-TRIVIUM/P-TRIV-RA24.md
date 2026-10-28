@@ -19,6 +19,8 @@ audit:
 Find $\int _ { - \infty } ^ { \infty } e ^ { - x ^ { - 4 } - x ^ { 4 } } \sin ^ { 5 } x d x .$
 :::
 
+::: {.solution}
+
 Define the integrand for $x\neq0$ by
 $$
 F(x)
@@ -155,6 +157,8 @@ zero.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required value.
+
+:::
 
 :::
 
