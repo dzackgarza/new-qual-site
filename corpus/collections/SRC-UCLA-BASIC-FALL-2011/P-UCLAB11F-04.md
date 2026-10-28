@@ -26,6 +26,8 @@ Find all resulting limiting values of each of the following series, and prove yo
 \]
 :::
 
+::: {.solution}
+
 For the first series, write
 \[
 p_k=\frac1{2k}
@@ -256,6 +258,8 @@ Therefore
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives all finite rearrangement limits of the first series, and step [](#s1-7){.pf-ref} gives the unique rearrangement limit of the second.
+
+:::
 
 :::
 
