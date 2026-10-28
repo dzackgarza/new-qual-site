@@ -19,6 +19,8 @@ audit:
 Compute $\int _ { - \infty } ^ { \infty } \delta ^ { \prime \prime } ( x - 2 ) \frac { 1 } { 1 + x ^ { 2 } } \mathrm { d } x$
 :::
 
+::: {.solution}
+
 Set
 \[
 f(x)=\frac1{1+x^2}.
@@ -95,6 +97,8 @@ f''(2)=\frac{6\cdot4-2}{(1+4)^3}
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
