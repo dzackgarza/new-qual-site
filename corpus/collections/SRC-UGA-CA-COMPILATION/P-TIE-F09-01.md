@@ -26,6 +26,8 @@ $$
 (2) Deduce Liouville’s theorem from (1).
 :::
 
+::: {.solution}
+
 Fix $0<r<R$.
 
 ::: pf
@@ -208,6 +210,8 @@ This is Liouville's theorem.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (1), and step [](#s1-6){.pf-ref} proves part (2).
+
+:::
 
 :::
 
