@@ -19,6 +19,8 @@ Let $f(x) \in \QQ[x]$ be an irreducible polynomial of degree 5. Assume that $f$ 
 Compute the Galois group of $f(x)$ over $\QQ$ and justify your answer.
 :::
 
+::: {.solution}
+
 Let $K$ be the splitting field of $f$ over $\mathbb Q$ and $G=\operatorname{Gal}(K/\mathbb Q)$, acting on its five roots.
 
 ::: pf
@@ -81,6 +83,8 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} supply a $5$-cycle and a transpo
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} identifies the requested Galois group.
+
+:::
 
 :::
 
