@@ -19,6 +19,8 @@ audit:
 Consider a metal rod of length L. One end is kept at temperature 0, and the other at temperature $T _ { 0 }$ . Find the temperature $T ( x , t )$ , knowing that $T ( x , 0 ) = 0$
 :::
 
+::: {.solution}
+
 Let the rod occupy $0<x<L$, take
 \[
 T(0,t)=0,
@@ -138,6 +140,8 @@ Combine steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref} through [](#s1-4){.pf-re
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the temperature evolution for the stated fixed endpoint temperatures and zero interior initial temperature.
+
+:::
 
 :::
 
