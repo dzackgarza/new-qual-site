@@ -27,6 +27,8 @@ $$y' = \frac{2x}{y^2 - 1}$$
 (E) $2(x^2 - 1) = \frac{1}{3}y^3 - y$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -91,6 +93,8 @@ gives the displayed equation.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the integral curve passing through the prescribed point.
+
+:::
 
 :::
 
