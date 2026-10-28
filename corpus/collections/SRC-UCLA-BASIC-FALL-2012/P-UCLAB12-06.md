@@ -24,6 +24,8 @@ $$
 Hint: You may assume the double integral in (a) equals the iterated integral $\textstyle \int ( \int F ( x , y ) d x ) d y$ and equals the iterated integral $\textstyle \int ( \int F ( x , y ) d y ) d x$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -226,6 +228,8 @@ This is exactly the stated equality of mixed partial derivatives.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), and steps [](#s1-2){.pf-ref} through [](#s1-6){.pf-ref} prove part (b).
+
+:::
 
 :::
 
