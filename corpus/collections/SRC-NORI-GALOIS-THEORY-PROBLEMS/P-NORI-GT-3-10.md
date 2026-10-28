@@ -27,6 +27,8 @@ Prove that the (monic) minimal polynomial is of the type described in the previo
 Here we are assuming that $\operatorname{char} F$ is $\neq 2$.
 :::
 
+::: {.solution}
+
 Let
 $$
 F\subset K\subset E=F(\theta)
@@ -279,6 +281,8 @@ Combine steps [](#s1-6){.pf-ref} and [](#s1-8){.pf-ref}, together with the degre
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is exactly the converse statement requested in Problem 3.10.
+
+:::
 
 :::
 
