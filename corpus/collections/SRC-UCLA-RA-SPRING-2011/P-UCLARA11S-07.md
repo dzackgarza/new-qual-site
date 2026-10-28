@@ -16,6 +16,8 @@ Prove Goursat's theorem: if $f:\mathbb C\to\mathbb C$ is complex differentiable 
 where the line integral is over the three sides of the triangle.
 :::
 
+::: {.solution}
+
 Let
 \[
 I(\Delta)
@@ -297,6 +299,8 @@ Since $\Delta_0=\Delta$, this is the desired conclusion.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} proves Goursat's theorem for the given triangle.
+
+:::
 
 :::
 
