@@ -20,6 +20,8 @@ audit:
 Show that a Möbius transformation maps a straight line or circle onto a straight line or circle.
 :::
 
+::: {.solution}
+
 Let
 $$
 T(z)=\frac{az+b}{cz+d},
@@ -235,6 +237,8 @@ is described by another equation of the same form. Since $T$ is bijective on the
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
