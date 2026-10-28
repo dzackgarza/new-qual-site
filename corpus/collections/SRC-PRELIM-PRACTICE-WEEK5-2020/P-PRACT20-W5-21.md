@@ -20,6 +20,8 @@ audit:
 Find $\displaystyle\lim_{z \to 0} \frac{(\overline{z})^2}{z^2}$ or show that the limit does not exist.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -98,6 +100,8 @@ Therefore no two-dimensional limit exists.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
