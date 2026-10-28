@@ -23,6 +23,8 @@ audit:
 (c) Check part (b) by verifying directly that $\det(A^2)$ and $\operatorname{trace}(A^2)$ are nonnegative when $A$ is real symmetric.
 :::
 
+::: {.solution}
+
 Let
 \[
 P(X)=c_0+c_1X+\cdots+c_mX^m.
@@ -209,6 +211,8 @@ Therefore
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} prove part (b), and steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} verify the two nonnegativity statements in part (c).
+
+:::
 
 :::
 
