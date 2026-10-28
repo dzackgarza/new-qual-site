@@ -24,6 +24,8 @@ Determine
 for $0<a<1$ and $\operatorname{Re}z>0$. Justify all manipulations.
 :::
 
+::: {.solution}
+
 On the right half-plane, use the principal branch
 \[
 z^{a-1}
@@ -197,6 +199,8 @@ then yields the boxed expression.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested value, while steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} justify the integral representation, interchange of integrals, and complex Gamma integral used to obtain it.
+
+:::
 
 :::
 
