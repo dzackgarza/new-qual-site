@@ -19,6 +19,8 @@ audit:
 Show that there is a subset of the real numbers that is not the intersection of a countable collection of open subsets of $\mathbb R$.
 :::
 
+::: {.solution}
+
 Take
 \[
 S=\mathbb Q.
@@ -143,6 +145,8 @@ Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} contradict the assumption in ste
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} supplies the required subset of $\mathbb R$.
+
+:::
 
 :::
 
