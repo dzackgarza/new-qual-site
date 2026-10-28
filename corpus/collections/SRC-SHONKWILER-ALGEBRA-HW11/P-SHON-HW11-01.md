@@ -29,6 +29,8 @@ Let $k\subset K$ be a separable field extension of degree $n$.
    as $K$-algebras.
 :::
 
+::: {.solution}
+
 ## Part 1
 
 ::: pf
@@ -394,6 +396,8 @@ Combine step [](#s1-11){.pf-ref} with step [](#s1-18){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} prove part 1, step [](#s1-11){.pf-ref} proves part 2, and steps [](#s1-12){.pf-ref} through [](#s1-19){.pf-ref} prove part 3.
+
+:::
 
 :::
 
