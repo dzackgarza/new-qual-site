@@ -25,6 +25,8 @@ Which of the following sets is NOT countably infinite?
 (E) $E$, the set of positive even integers
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -85,6 +87,8 @@ Step [](#s1-1){.pf-ref} proves that choices (A), (B), (D), and (E) are countably
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
