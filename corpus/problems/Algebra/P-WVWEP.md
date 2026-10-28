@@ -25,8 +25,6 @@ Let $G=\GL_2(\FF_q)$.
 
 ::: {.solution}
 
-:::
-
 ::: pf
 
 ::: pf-step
@@ -94,6 +92,8 @@ For example,
 \PSL_2(\FF_4)\cong A_5
 \]
 is simple.
+
+:::
 
 :::
 
