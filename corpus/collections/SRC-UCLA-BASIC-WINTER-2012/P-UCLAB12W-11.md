@@ -22,6 +22,8 @@ A=\begin{pmatrix}1&3\\4&2\end{pmatrix}.
 (b) Prove that such a polynomial $P(x)$ is unique up to multiplication by a constant.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -145,6 +147,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} answers part (a), and step [](#s1-4){.pf-ref} proves the uniqueness up to multiplication by a nonzero constant required in part (b).
+
+:::
 
 :::
 
