@@ -31,6 +31,8 @@ where $(\operatorname{im}T)^0$ is the annihilator of the image of $T$.
 \]
 :::
 
+::: {.solution}
+
 Define
 \[
 T^t:W^*\to V^*
@@ -176,6 +178,8 @@ Therefore
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (i), and step [](#s1-5){.pf-ref} proves part (ii).
+
+:::
 
 :::
 
