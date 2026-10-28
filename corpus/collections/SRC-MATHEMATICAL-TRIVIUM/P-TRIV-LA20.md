@@ -25,6 +25,8 @@ Let $\sigma _ { i } , i = 1 , 2 , 3$ be the Pauli matrices.
 (c) Calculate $[ \sigma _ { i } , [ \sigma _ { j } , \sigma _ { k } ] ] + [ \sigma _ { j } , [ \sigma _ { k } , \sigma _ { i } ] ] + [ \sigma _ { k } , [ \sigma _ { i } , \sigma _ { j } ] ] .$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -272,6 +274,8 @@ This is step [](#s1-10){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-6){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-11){.pf-ref} establish parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
