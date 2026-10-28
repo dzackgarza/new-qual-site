@@ -20,6 +20,8 @@ audit:
 Prove that $f ( z ) = - \frac { 1 } { 2 } \left( z + \frac { 1 } { z } \right)$ is a conformal map from half disc $\left\{ z = x + i y : \ | z | < 1 , \ y > 0 \right\}$ to upper half plane $\mathbb { H } \overset { \cdot } { = } \left\{ z = \overset { \cdot } { x } + i y : \ y > 0 \right\}$
 :::
 
+::: {.solution}
+
 Let
 $$
 D
@@ -238,6 +240,8 @@ Step [](#s1-1){.pf-ref} gives holomorphy and nonvanishing derivative. Step [](#s
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
