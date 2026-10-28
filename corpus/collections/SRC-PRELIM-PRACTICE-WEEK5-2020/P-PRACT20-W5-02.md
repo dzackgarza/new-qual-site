@@ -20,6 +20,8 @@ audit:
 What is the units digit of $2019^{2019}$?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -107,6 +109,8 @@ $\{0,1,\dots,9\}$, and step [](#s1-3){.pf-ref} gives residue $9$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested digit.
+
+:::
 
 :::
 
