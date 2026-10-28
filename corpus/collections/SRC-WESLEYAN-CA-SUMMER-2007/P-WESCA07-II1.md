@@ -27,6 +27,8 @@ f(z)=az+b
 for constants $a,b\in\mathbb C$ with $|a|=1$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -118,6 +120,8 @@ Since $f'\equiv a$, the derivative of $f(z)-az$ is identically zero. Hence $f(z)
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required form of $f$.
+
+:::
 
 :::
 
