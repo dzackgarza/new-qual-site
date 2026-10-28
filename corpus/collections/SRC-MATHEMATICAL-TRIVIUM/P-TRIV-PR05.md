@@ -22,6 +22,8 @@ Then everyone takes one random present.
 What is the probability that nobody gets his own present?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -93,6 +95,8 @@ Divide the $44$ favorable derangements from step [](#s1-3){.pf-ref} by the $120$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested probability.
+
+:::
 
 :::
 
