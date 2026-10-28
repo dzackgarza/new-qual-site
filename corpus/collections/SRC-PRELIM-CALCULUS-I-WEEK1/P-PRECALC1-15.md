@@ -15,6 +15,8 @@ review: draft
 Let $\textstyle f ( x ) = \int _ { 1 } ^ { x } { \frac { d t } { 1 + t ^ { 2 } } }$ . Find an equation for the tangent line at $( 2 , f ( 2 ) )$ .
 :::
 
+::: {.solution}
+
 Let
 \[
 f(x)
@@ -175,6 +177,8 @@ Substitute steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref} into step [](#s1-6){.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the requested tangent-line equation.
+
+:::
 
 :::
 
