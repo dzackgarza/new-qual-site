@@ -23,6 +23,8 @@ Then explain:
 2. why every completely regular Hausdorff space is homeomorphic to a subspace of a compact Hausdorff space.
 :::
 
+::: {.solution}
+
 ## The Sorgenfrey line
 
 Let
@@ -649,6 +651,8 @@ By step [](#s1-24){.pf-ref}, the ambient cube is compact Hausdorff.
 Steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref}, and [](#s1-17){.pf-ref} prove the three nonmetrizability assertions;
 step [](#s1-19){.pf-ref} proves compact Hausdorff spaces are completely regular; and step
 [](#s1-25){.pf-ref} proves the compact Hausdorff embedding statement.
+
+:::
 
 :::
 
