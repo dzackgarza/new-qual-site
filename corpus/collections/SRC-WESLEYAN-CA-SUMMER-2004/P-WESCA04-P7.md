@@ -23,6 +23,8 @@ Show that $f+g$ has either a removable singularity at $z_0$ or a pole of order a
 \]
 :::
 
+::: {.solution}
+
 Set
 \[
 M
@@ -319,6 +321,8 @@ can leading terms cancel.
 
 Step [](#s1-7){.pf-ref} proves the required statement; step [](#s1-8){.pf-ref} records the sharper
 non-equal-order case.
+
+:::
 
 :::
 
