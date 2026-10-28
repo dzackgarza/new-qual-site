@@ -31,6 +31,8 @@ P(|\delta| < \epsilon) > 0.99.
 $$
 :::
 
+::: {.solution}
+
 Assume the round-off errors $\delta_k$ are independent. Put
 \[
 n=10^N,
@@ -159,6 +161,8 @@ Choose $\epsilon=z_{0.995}\sigma_\delta$ and substitute step [](#s1-2){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested central-limit estimate as a function of $N$ and $m$.
+
+:::
 
 :::
 
