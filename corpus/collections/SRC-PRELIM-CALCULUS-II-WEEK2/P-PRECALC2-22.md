@@ -15,6 +15,8 @@ review: draft
 Compute the integral $\int _ { 0 } ^ { 1 } \frac { \log ( 1 + t ) } { 1 + t ^ { 2 } } d t .$
 :::
 
+::: {.solution}
+
 Let
 \[
 I
@@ -261,6 +263,8 @@ Apply step [](#s1-9){.pf-ref} to step [](#s1-8){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the requested value.
+
+:::
 
 :::
 
