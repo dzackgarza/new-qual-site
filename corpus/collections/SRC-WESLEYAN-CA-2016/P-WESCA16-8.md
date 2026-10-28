@@ -27,6 +27,8 @@ f(z)=w
 has at least three zeros counted with multiplicity.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -173,6 +175,8 @@ zeros counted with multiplicity.
 
 Step [](#s1-1){.pf-ref} refutes the literal source statement, and step [](#s1-6){.pf-ref} proves the
 corrected statement obtained by excluding the identically-zero function.
+
+:::
 
 :::
 
