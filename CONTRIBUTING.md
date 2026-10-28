@@ -28,7 +28,7 @@ This does not publish the site and does not weaken `QUAL-06`: ordinary content c
 
 | ID | Name | Required action |
 | --- | --- | --- |
-| `QUAL-01` | Source-faithful mathematics | Read the complete card and relevant source before changing a statement, title, classification, relation, or proof. Preserve hypotheses and every requested part. |
+| `QUAL-01` | Source-faithful mathematics | Read the complete card and relevant source before changing a statement, title, classification, relation, or proof. Preserve hypotheses and every requested part. Correct a plain typo in the statement and record the source discrepancy in the card's `audit` metadata, not in a rendered remark. |
 | `QUAL-02` | Semantic authorship | Decide mathematical meaning by reading. Measurements and matching names identify candidates; they do not decide equivalence, correctness, or deletion. |
 | `QUAL-03` | One card, one proof owner | Author and review one card at a time. Solutions and hints belong in their problem card; commit the reviewed card before continuing. |
 | `QUAL-04` | Dependency-directed work | Use [the TODO DAG](TODO.md#execution-dag). Give each concrete task a stable ID, immediate prerequisites and an observable result. Preserve the scope of unfinished work and reject cycles or unresolved prerequisite IDs. |
