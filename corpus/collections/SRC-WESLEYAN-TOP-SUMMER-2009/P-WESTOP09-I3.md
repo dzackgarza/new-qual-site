@@ -14,6 +14,8 @@ audit:
 Let $I=[0,1]$. Characterize exactly the topological spaces that can be obtained as subspaces of possibly infinite products of copies of $I$. Give an explanation of the characterization, though a complete proof is not required.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -156,6 +158,8 @@ I^{C(X,I)}.
 
 Step [](#s1-2){.pf-ref} proves one direction and step [](#s1-5){.pf-ref} proves the converse, establishing
 the characterization in step [](#s1-1){.pf-ref}.
+
+:::
 
 :::
 
