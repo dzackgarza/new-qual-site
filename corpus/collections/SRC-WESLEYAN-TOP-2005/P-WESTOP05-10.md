@@ -39,6 +39,8 @@ audit:
 3. Prove that $\mu'$ is associative.
 :::
 
+::: {.solution}
+
 ## Part 1: the based lifting criterion
 
 Let
@@ -574,6 +576,8 @@ Step [](#s1-20){.pf-ref} is exactly associativity.
 Steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} answer part \(1\), step [](#s1-12){.pf-ref} constructs the lifted
 multiplication in part \(2\), and step [](#s1-21){.pf-ref} proves associativity in part
 \(3\).
+
+:::
 
 :::
 
