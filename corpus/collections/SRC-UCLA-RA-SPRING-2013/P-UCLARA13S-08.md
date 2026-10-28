@@ -35,6 +35,8 @@ admits an analytic continuation from $0<z<1$ to the whole complex plane.
 for every $0\le\theta\le1$ and every $x\in\mathbb R^n$.
 :::
 
+::: {.solution}
+
 For a positive-definite real symmetric matrix $C$, choose an orthogonal diagonalization
 \[
 C=Q\operatorname{diag}(\lambda_1,\dots,\lambda_n)Q^T,
@@ -330,6 +332,8 @@ By step [](#s1-9){.pf-ref}, every term in this supremum is at most $\|x\|$. Thus
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-10){.pf-ref} proves part (b).
+
+:::
 
 :::
 
