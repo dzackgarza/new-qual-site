@@ -25,6 +25,8 @@ Let $L$ be the curve whose equation in the polar coordinates $r$ and $\theta$ is
 (E) $1$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -116,6 +118,8 @@ $L$ whose $y$-coordinate equals this upper bound.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required maximum.
+
+:::
 
 :::
 
