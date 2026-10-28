@@ -29,6 +29,8 @@ $$
 (c) Give a geometrical interpretation of the transformations $e ^ { \theta M _ { i } } , i = x , y , z$ acting on the vectors in $\mathbb { R } ^ { 3 }$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -275,6 +277,8 @@ Steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref} give the geometrical inter
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} and [](#s1-9){.pf-ref}, and [](#s1-12){.pf-ref} establish parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
