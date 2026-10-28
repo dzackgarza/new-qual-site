@@ -25,6 +25,8 @@ Given set $A = \{a, b\}$, set $B = \{c, d, e, f\}$, and set $C = \{g, h, i\}$. I
 (E) $P[P(A) \times P(B)]$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -138,6 +140,8 @@ Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} show that choice (A) has the sam
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
