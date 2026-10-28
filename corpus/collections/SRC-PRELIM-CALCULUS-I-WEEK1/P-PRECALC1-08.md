@@ -20,6 +20,8 @@ audit:
 If $f : \mathbb{R} \to \mathbb{R}$ is continuously differentiable on $(-1, 4)$ with $f(3) = 5$ and $f'(x) \geq 1$ for all $x \in (-1, 4)$, what is the greatest possible value of $f(0)$?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -228,6 +230,8 @@ Step [](#s1-5){.pf-ref} gives the upper bound, and step [](#s1-10){.pf-ref} show
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} is the requested value.
+
+:::
 
 :::
 
