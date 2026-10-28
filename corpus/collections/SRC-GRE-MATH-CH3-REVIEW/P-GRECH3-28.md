@@ -26,6 +26,8 @@ Set up, but do not evaluate, a double integral that gives the volume of the soli
 (E) $\int_{-1}^1\int_{-3\sqrt{1-x^2}}^{3\sqrt{1-x^2}}\left(2-x^2-\frac{1}{9}y^2-\sqrt{x^2+\frac{1}{9}y^2}\right)dy\,dx$
 :::
 
+::: {.solution}
+
 Write
 $$
 q(x,y)=x^2+\frac19y^2.
@@ -129,6 +131,8 @@ Integrating this vertical thickness over the bounds from step [](#s1-2){.pf-ref}
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested double-integral setup and corresponding choice.
+
+:::
 
 :::
 
