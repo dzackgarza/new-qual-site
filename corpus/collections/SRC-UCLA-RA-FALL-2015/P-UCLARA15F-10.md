@@ -28,6 +28,8 @@ Use the Residue Theorem to prove that
 Use a large semicircle as part of the contour.
 :::
 
+::: {.solution}
+
 Define
 \[
 \boxed{
@@ -559,6 +561,8 @@ This is immediate from step [](#s1-20){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-21){.pf-ref} is the required identity.
+
+:::
 
 :::
 
