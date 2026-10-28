@@ -34,6 +34,8 @@ The source says $\phi$ is a function "of $t$ and $x$", but the functional and th
 After the harmonic ansatz is substituted, the integrand is independent of $t$, so the printed integral over all $t\in\mathbb R$ contributes an infinite common factor. Part (b) is therefore interpreted as variation of the reduced action per unit time, equivalently as variation on any finite time interval before removing that overall factor.
 :::
 
+::: {.solution}
+
 Write
 $$
 s=\phi\phi^*.
@@ -423,6 +425,8 @@ Compare steps [](#s1-7){.pf-ref} and [](#s1-13){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} proves part (a), and steps [](#s1-10){.pf-ref} through [](#s1-14){.pf-ref} prove part (b) and the requested comparison.
+
+:::
 
 :::
 
