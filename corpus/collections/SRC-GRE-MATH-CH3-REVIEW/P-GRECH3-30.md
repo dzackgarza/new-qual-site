@@ -33,6 +33,8 @@ Determine the value of the integral:
 (E) $e^4+2(\sqrt{2}-1)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -124,6 +126,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested integral value and corresponding choice.
+
+:::
 
 :::
 
