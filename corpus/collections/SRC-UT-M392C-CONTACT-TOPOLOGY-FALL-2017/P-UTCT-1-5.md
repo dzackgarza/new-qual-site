@@ -20,6 +20,8 @@ audit:
 Show that a hyperplane ﬁeld isCk if and only if it is locally the kernel of a nonzeroCk 1-form.
 :::
 
+::: {.solution}
+
 Let \(M\) be an \(n\)-manifold and let
 \[
 \xi\subset TM
@@ -410,6 +412,8 @@ The forward implication is step [](#s1-7){.pf-ref}, and the reverse implication 
 ::: pf-qed
 
 Step [](#s1-17){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
