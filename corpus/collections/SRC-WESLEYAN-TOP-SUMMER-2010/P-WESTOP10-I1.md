@@ -18,6 +18,8 @@ Let $I=[0,1]$. Compare the following three topologies on $I\times I$:
 3. the topology inherited by $I\times I$ as a subspace of $\mathbb R\times\mathbb R$ equipped with the dictionary-order topology.
 :::
 
+::: {.solution}
+
 Write
 \[
 \tau_{mathrm{prod}}
@@ -490,6 +492,8 @@ Combine steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} gives the complete relation among the three topologies.
+
+:::
 
 :::
 
