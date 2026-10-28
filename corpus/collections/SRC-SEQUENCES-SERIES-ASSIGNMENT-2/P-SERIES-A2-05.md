@@ -19,6 +19,8 @@ Let $\{a_n\}_{n=0}^\infty$ be a sequence of real numbers satisfying
 Show that the sequence converges. Hint: show that the sequence is Cauchy.
 :::
 
+::: {.solution}
+
 For \(n\ge1\), define
 \[
 d_n=|a_n-a_{n-1}|.
@@ -291,6 +293,8 @@ Every Cauchy sequence of real numbers converges.
 ::: pf-qed
 
 Step [](#s1-12){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
