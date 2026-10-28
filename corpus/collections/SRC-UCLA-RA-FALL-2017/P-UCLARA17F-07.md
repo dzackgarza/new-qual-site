@@ -24,6 +24,8 @@ Problem 7. Prove that there exists a meromorphic function $f$ on $\mathbb C$ wit
 3. $|f(x+iy)|\le1$ for all $x\in\mathbb R$ and all $y\in\mathbb R$ with $|y|\ge1$.
 :::
 
+::: {.solution}
+
 Define
 \[
 \boxed{
@@ -451,6 +453,8 @@ Use step [](#s1-15){.pf-ref} and
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the zero set, step [](#s1-7){.pf-ref} proves the pole set, and step [](#s1-16){.pf-ref} proves the required bound.
+
+:::
 
 :::
 
