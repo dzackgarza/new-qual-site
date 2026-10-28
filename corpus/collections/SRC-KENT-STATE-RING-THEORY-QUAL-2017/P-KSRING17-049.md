@@ -19,6 +19,8 @@ audit:
 Let R be a commutative ring with identity and let U be maximal among non-finitely generated ideals of R. Prove U is a prime ideal.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -381,6 +383,8 @@ This is exactly the definition of a prime ideal.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
