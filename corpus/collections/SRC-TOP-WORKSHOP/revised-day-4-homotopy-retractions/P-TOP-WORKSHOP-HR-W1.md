@@ -24,6 +24,8 @@ r_*:\pi_1(X)\to\pi_1(A)
 is surjective.
 :::
 
+::: {.solution}
+
 Fix a basepoint $a_0\in A$ and let
 \[
 i:A\hookrightarrow X
@@ -140,6 +142,8 @@ Thus every element of $\pi_1(A,a_0)$ lies in the image of $r_*$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required surjectivity.
+
+:::
 
 :::
 
