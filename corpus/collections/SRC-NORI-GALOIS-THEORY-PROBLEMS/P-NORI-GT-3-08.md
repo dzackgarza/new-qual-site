@@ -34,6 +34,8 @@ Deduce the equality $\Phi_n(X) = \Phi_{n'}(X)^{\varphi(p^k)}$ in $\mathbb{F}_p[X
 Here $\mu_{n'}(F) = \{x \in F : x^{n'} = 1\}$, as in the notation paragraph of the source.
 :::
 
+::: {.solution}
+
 Let
 $$
 \overline{\FF}_p
@@ -173,6 +175,8 @@ is injective, so the equality already holds in $\FF_p[X]$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is exactly the required deduction from Problem 3.7.
+
+:::
 
 :::
 
