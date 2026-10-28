@@ -25,6 +25,8 @@ A=\{z\in\mathbb D:\lim_{n\to\infty}f_n(z)\text{ exists}\}.
 Show that if $A$ has an accumulation point in $\mathbb D$, then there exists a holomorphic function $f$ on $\mathbb D$ such that $f_n\to f$ locally uniformly on $\mathbb D$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -125,6 +127,8 @@ Step [](#s1-3){.pf-ref} constructs a holomorphic candidate, and step [](#s1-4){.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
