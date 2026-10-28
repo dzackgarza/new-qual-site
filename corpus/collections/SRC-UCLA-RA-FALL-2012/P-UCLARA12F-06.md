@@ -33,6 +33,8 @@ Using this, show that
 for almost every $x\in\mathbb R$.
 :::
 
+::: {.solution}
+
 Define
 $$
 D f(x)
@@ -187,6 +189,8 @@ has measure zero. Their countable union is the set where $Df(x)>0$. Hence $Df=0$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is exactly the required differentiation statement.
+
+:::
 
 :::
 
