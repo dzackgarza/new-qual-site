@@ -30,6 +30,8 @@ Find the general solution of the differential equation:
 (E) $e^{-x/y} = cx$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -114,6 +116,8 @@ On any connected solution interval, the sign of $x$ is fixed. Absorbing that fix
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested general solution and corresponding choice.
+
+:::
 
 :::
 
