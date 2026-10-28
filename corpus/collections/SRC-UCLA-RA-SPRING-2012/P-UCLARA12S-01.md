@@ -29,6 +29,8 @@ Determine whether each statement is true or false:
 (d) If $f_n\to f$ in $L^3$, then $f_n\to f$ in measure.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -216,6 +218,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} establish the four assertion
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} records the complete classification.
+
+:::
 
 :::
 
