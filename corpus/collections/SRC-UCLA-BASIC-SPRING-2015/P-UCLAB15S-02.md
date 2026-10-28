@@ -29,6 +29,8 @@ This defines a norm on $C^\alpha([0,1])$.
 Prove that any bounded sequence in $C^{1/2}([0,1])$ admits a convergent subsequence in $C^{1/3}([0,1])$.
 :::
 
+::: {.solution}
+
 Let
 \[
 (f_n)
@@ -322,6 +324,8 @@ The subsequence constructed in step [](#s1-2){.pf-ref} converges in the stronger
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required compact-embedding statement.
+
+:::
 
 :::
 
