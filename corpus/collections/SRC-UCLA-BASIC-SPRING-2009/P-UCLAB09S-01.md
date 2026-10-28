@@ -24,6 +24,8 @@ a_{n+1}=\sqrt{6+a_n}\qquad(n\ge1).
 Show that $(a_n)$ converges and determine its limit.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -200,6 +202,8 @@ Step [](#s1-3){.pf-ref} proves existence of the limit, and step [](#s1-5){.pf-re
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
