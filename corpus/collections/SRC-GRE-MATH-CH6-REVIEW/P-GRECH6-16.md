@@ -26,6 +26,8 @@ Let $R$ be a ring; an element $x$ in $R$ is said to be idempotent if $x^2 = x$. 
 (E) $10$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -102,6 +104,8 @@ This is the count established in step [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested number.
+
+:::
 
 :::
 
