@@ -19,6 +19,8 @@ audit:
 Calculate $H _ { * } ( \Omega S ^ { n } )$ and the ring structure on $H ^ { \ast } ( \Omega S ^ { n } )$
 :::
 
+::: {.solution}
+
 Assume $n\geq2$ and use integral coefficients. Put $d=n-1$.
 
 ::: pf
@@ -179,6 +181,8 @@ The homology statement is step [](#s1-1){.pf-ref}. The two cohomology cases are 
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives both the requested homology and the full integral cohomology-ring structure.
+
+:::
 
 :::
 
