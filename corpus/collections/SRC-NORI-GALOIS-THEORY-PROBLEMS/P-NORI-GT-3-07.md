@@ -33,6 +33,8 @@ Equivalently, $\varphi ( m )$ is the cardinality of the set of natural numbers $
 $\varphi ( 1 ) = 1$ . If $p$ is a prime, then $\varphi ( p ^ { k } ) = p ^ { k - 1 } ( p - 1 ) { \mathrm { ~ i f ~ } } k > 0 .$
 :::
 
+::: {.solution}
+
 Write
 \[
 n=mp^k,
@@ -232,6 +234,8 @@ Step [](#s1-1){.pf-ref} proves the case $k=0$. Steps [](#s1-8){.pf-ref} through 
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is exactly the required statement.
+
+:::
 
 :::
 
