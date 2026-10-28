@@ -19,6 +19,8 @@ audit:
 Where does the $7\text{-torsion}$ appear first in the homotopy groups of $S ^ { n }  { ? }$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -203,6 +205,8 @@ For the usual range $n\ge3$, step [](#s1-3){.pf-ref} gives the answer
 \]
 with first $7$-primary subgroup $\mathbb Z/7$. Steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} record
 the low-dimensional exceptions.
+
+:::
 
 :::
 
