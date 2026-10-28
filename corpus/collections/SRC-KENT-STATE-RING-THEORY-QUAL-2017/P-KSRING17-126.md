@@ -19,6 +19,8 @@ audit:
 Let R be a commutative ring with identity and P a prime ideal of R. Let $R _ { P }$ be the ring of quotients of R with respect to the set $R - P = \{ s \in R \mid s \not \in P \}$ . Show that $R _ { P } / P _ { P }$ is the field of fractions of the integral domain $R / P$
 :::
 
+::: {.solution}
+
 Set
 $$
 S
@@ -445,6 +447,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
