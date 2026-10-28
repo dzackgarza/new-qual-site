@@ -28,6 +28,8 @@ Consider:
 - the subspace $[0,1]\subset\mathbb R_\ell$.
 :::
 
+::: {.solution}
+
 Use the standard hierarchy
 \[
 T_0,T_1,T_2,T_3,T_4,
@@ -664,6 +666,8 @@ Collect steps [](#s1-3){.pf-ref}, [](#s1-6){.pf-ref}, and [](#s1-11){.pf-ref}, a
 ::: pf-qed
 
 Step [](#s1-15){.pf-ref} gives all requested classifications.
+
+:::
 
 :::
 
