@@ -24,6 +24,8 @@ Prove that $C[0,1]$, the space of continuous functions from $[0,1]$ to $\mathbb 
 You may use without proof that a uniform limit of continuous functions is continuous.
 :::
 
+::: {.solution}
+
 Let $(f_n)$ be a Cauchy sequence in $C[0,1]$ with respect to the supremum norm.
 
 ::: pf
@@ -178,6 +180,8 @@ The Cauchy sequence $(f_n)$ was arbitrary, and step [](#s1-5){.pf-ref} proves th
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required completeness statement.
+
+:::
 
 :::
 
