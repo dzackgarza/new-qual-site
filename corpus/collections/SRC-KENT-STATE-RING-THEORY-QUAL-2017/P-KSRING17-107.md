@@ -20,6 +20,8 @@ Let D be a unique factorization domain and F its field of fractions.
 Prove that if $f ( x )$ is a monic polynomial in $D [ x ]$ and $\alpha \in F$ is a root of $f ,$ then $\alpha \in D$ .
 :::
 
+::: {.solution}
+
 Let
 $$
 f(x)
@@ -277,6 +279,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
