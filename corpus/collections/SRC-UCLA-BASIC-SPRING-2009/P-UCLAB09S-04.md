@@ -32,6 +32,8 @@ Justify your answer.
 Prove that $X$ is compact if and only if, for every $r>0$, $X$ can be covered by finitely many balls of radius $r$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -350,6 +352,8 @@ For the reverse implication, steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref}
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} give the requested definitions, step [](#s1-4){.pf-ref} answers part (d), and step [](#s1-9){.pf-ref} proves part (e).
+
+:::
 
 :::
 
