@@ -38,6 +38,8 @@ and computing $\alpha \wedge d\alpha$.
 Can you show that this form restricted to $S^3 - \{*\}$ is contactomorphic to $(\mathbb{R}^3, dz + x\,dy)$?
 :::
 
+::: {.solution}
+
 Write
 \[
 z_j=x_j+iy_j
@@ -734,6 +736,8 @@ contactomorphism.
 Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} verify the positive contact form on \(S^3\), and steps
 [](#s1-9){.pf-ref} through [](#s1-21){.pf-ref} give the explicit contactomorphism with standard
 \(\mathbb R^3\) after deleting one point.
+
+:::
 
 :::
 
