@@ -29,6 +29,8 @@ S(t,B)=\{f\in X:f(t)\in B\},
 where $t\in[0,1]$ and $B\subset\mathbb R$ is a Borel set in $\mathbb R$.
 :::
 
+::: {.solution}
+
 Let
 \[
 \Sigma
@@ -395,6 +397,8 @@ Use steps [](#s1-3){.pf-ref} and [](#s1-13){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-14){.pf-ref} is the required minimality statement.
+
+:::
 
 :::
 
