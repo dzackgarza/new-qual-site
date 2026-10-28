@@ -30,6 +30,8 @@ For what value of $x$ will the following matrix be noninvertible?
 (E) $9$
 :::
 
+::: {.solution}
+
 Let
 $$
 M=
@@ -98,6 +100,8 @@ A square matrix is noninvertible exactly when its determinant is zero. By step [
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the requested parameter.
+
+:::
 
 :::
 
