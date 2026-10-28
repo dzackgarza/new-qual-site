@@ -32,6 +32,8 @@ Let $g$ be analytic for $\abs{z} \le 1$ and $\abs{g(z)} < 1$ for $\abs{z} = 1$.
 Hint: The map $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha} z}$ may be useful.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -176,6 +178,8 @@ If $f$ has a fixed point, step [](#s1-4){.pf-ref} shows that it is unique unless
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), step [](#s1-2){.pf-ref} proves part (b), and step [](#s1-5){.pf-ref} proves part (c).
+
+:::
 
 :::
 
