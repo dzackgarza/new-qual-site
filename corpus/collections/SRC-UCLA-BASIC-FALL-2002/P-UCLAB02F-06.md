@@ -41,6 +41,8 @@ F(\gamma(t))=x_0
 \]
 :::
 
+::: {.solution}
+
 Write
 \[
 v_0=(a_0,b_0,c_0).
@@ -184,6 +186,8 @@ Its third coordinate is $1$, so the vector is nonzero.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} constructs the required continuously differentiable curve in the level set $F^{-1}(x_0)$, and step [](#s1-5){.pf-ref} proves that it is nonconstant to first order at $0$.
+
+:::
 
 :::
 
