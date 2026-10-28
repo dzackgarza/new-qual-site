@@ -20,6 +20,8 @@ Consider a spherically symmetric potential satisfying the Laplace equation in d 
 Show that this potential can be written as $\textstyle u ( r ) = { \frac { a } { r ^ { b } } }$ , where a is a constant, and find the value of b.
 :::
 
+::: {.solution}
+
 Let $u=u(r)$ with $r=|x|$ in $\mathbb R^d$, where $d\geq3$.
 
 ::: pf
@@ -105,6 +107,8 @@ Because $d\geq3$, $r^{2-d}\to0$ as $r\to\infty$, whereas the constant term tends
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives every radial harmonic potential on $r>0$ that vanishes at infinity.
+
+:::
 
 :::
 
