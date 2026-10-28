@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Prove that a continuous function $f:[0,1)\to\mathbb R$ is uniformly continuous if and only if there exists a continuous function $g:[0,1]\to\mathbb R$ such that
+Prove that a continuous function $f:[0,1)\to\mathbb R$ is uniformly continuous if and only if there exists a continuous function $g:[0,1]\to\mathbb R$ such that
 \[
 f(x)=g(x)\qquad(0\le x<1).
 \]
