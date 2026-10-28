@@ -19,6 +19,8 @@ audit:
 Let R be a non-zero commutative ring with 1. Show that if I is an ideal of R such that $1 + a$ is a unit in R for all $a \in I ,$ , then I is contained in every maximal ideal of R.
 :::
 
+::: {.solution}
+
 Let
 $$
 M
@@ -236,6 +238,8 @@ for every maximal ideal $M$ of $R$. Taking the intersection over all such $M$ gi
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is exactly the required conclusion.
+
+:::
 
 :::
 
