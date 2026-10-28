@@ -24,6 +24,8 @@ Prove that
 \]
 :::
 
+::: {.solution}
+
 Let
 $$
 D_n(t)=\sum_{k=-n}^n e^{ikt}
@@ -198,6 +200,8 @@ Since $\varepsilon>0$ was arbitrary, the limsup is $0$. The quotient is nonnegat
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
