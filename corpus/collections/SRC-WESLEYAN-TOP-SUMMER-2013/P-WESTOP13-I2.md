@@ -20,6 +20,8 @@ audit:
    where each $Y_\alpha$ is either $(I,K)$ or $(I,L)$. Use part 1 to prove that $X$ is not compact.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -191,6 +193,8 @@ This contradicts step [](#s1-7){.pf-ref}. Hence $(X,T)$ is not compact.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part 1. Step [](#s1-8){.pf-ref} proves the intended statement of part 2 for every nonempty index set $J$, while step [](#s1-3){.pf-ref} records the empty-product exception in the literal wording.
+
+:::
 
 :::
 
