@@ -31,6 +31,8 @@ Determine, with proof, whether each assertion must hold:
 \]
 :::
 
+::: {.solution}
+
 Both assertions are false.
 
 ::: pf
@@ -304,6 +306,8 @@ The sequence from step [](#s1-5){.pf-ref} consists of nonnegative continuous fun
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} disproves assertion (a), and step [](#s1-9){.pf-ref} disproves assertion (b).
+
+:::
 
 :::
 
