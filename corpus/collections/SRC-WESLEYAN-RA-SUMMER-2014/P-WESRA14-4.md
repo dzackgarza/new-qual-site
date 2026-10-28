@@ -24,6 +24,8 @@ X\times Y=\mathbb R^2
 is measurable for the product measure $m_X\times m_Y$; equivalently, the product measure is a Borel measure.
 :::
 
+::: {.solution}
+
 Let
 \[
 \mathcal B(\mathbb R)
@@ -397,6 +399,8 @@ by step [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
