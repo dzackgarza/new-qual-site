@@ -19,6 +19,8 @@ audit:
 "Brachistochrone curve" On a vertical plane $x O y$ consider the two points A and B. Find a curve $y = y ( x )$ connecting these points and such that an ideal pointlike body, that starts at rest at the point A and moves along this curve without friction under constant gravity, reaches the point B within the shortest time.
 :::
 
+::: {.solution}
+
 Translate coordinates so that
 $$
 A=(0,0),
@@ -388,6 +390,8 @@ twice with respect to $y'$. Positivity holds for every $y>0$.
 
 Steps [](#s1-3){.pf-ref} through [](#s1-13){.pf-ref} derive the cycloidal extremal, and step [](#s1-14){.pf-ref} records its
 strict local minimizing character in the regular part of the arc.
+
+:::
 
 :::
 
