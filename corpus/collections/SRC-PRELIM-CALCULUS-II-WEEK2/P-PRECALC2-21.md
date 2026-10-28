@@ -27,6 +27,8 @@ $$
 $$
 :::
 
+::: {.solution}
+
 ## Limit (1)
 
 Let
@@ -392,6 +394,8 @@ Combine steps [](#s1-5){.pf-ref} and [](#s1-10){.pf-ref}, and [](#s1-14){.pf-ref
 ::: pf-qed
 
 Step [](#s1-15){.pf-ref} gives all three requested limits.
+
+:::
 
 :::
 
