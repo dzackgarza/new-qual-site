@@ -27,6 +27,8 @@ Prove that the limit
 exists.
 :::
 
+::: {.solution}
+
 Define
 \[
 a_n=h_n-\ln n.
@@ -242,6 +244,8 @@ This is the limit of the convergent sequence $a_n$ from step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
