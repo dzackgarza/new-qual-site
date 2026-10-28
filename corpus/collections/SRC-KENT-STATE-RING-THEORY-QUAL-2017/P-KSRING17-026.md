@@ -20,6 +20,8 @@ Let R be the ring of all $2 \times 2$ matrices of the form $\left[ \begin{array}
 Prove that R is isomorphic to C, the field of complex numbers.
 :::
 
+::: {.solution}
+
 Define
 $$
 \Phi:\CC\to R
@@ -222,6 +224,8 @@ By step [](#s1-1){.pf-ref}, $\Phi$ is bijective. By steps [](#s1-2){.pf-ref} thr
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
