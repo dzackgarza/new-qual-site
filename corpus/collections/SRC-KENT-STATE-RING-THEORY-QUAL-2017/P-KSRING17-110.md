@@ -20,6 +20,8 @@ Let F be a field.
 Prove that the polynomial ring $F [ x ]$ is a PID and that $F [ x , y ]$ is not a PID.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -377,6 +379,8 @@ Step [](#s1-8){.pf-ref} exhibits a nonprincipal ideal.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the first assertion, and step [](#s1-9){.pf-ref} proves the second.
+
+:::
 
 :::
 
