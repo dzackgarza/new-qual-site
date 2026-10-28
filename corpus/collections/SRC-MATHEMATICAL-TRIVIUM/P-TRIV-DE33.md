@@ -19,6 +19,8 @@ audit:
 Show that $\delta ( \alpha x ) = \frac { 1 } { \alpha } \delta ( x )$ , and more generally, $\delta ( f ( x ) ) = \sum _ { i } { \frac { \delta ( x - x _ { i } ) } { | f ^ { \prime } ( x _ { i } ) | } }$ where $x _ { i }$ are the root of f , i.e. $f ( x _ { i } ) = 0$
 :::
 
+::: {.solution}
+
 Assume throughout that the zeros $x_i$ of $f$ are simple, so $f'(x_i)\ne0$. The scaling formula is stated for real $\alpha\ne0$.
 
 ::: pf
@@ -119,6 +121,8 @@ The right side acts on a test function as the expression obtained in step [](#s1
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves the scaling law, with the necessary absolute value for arbitrary real $\alpha$, and step [](#s1-5){.pf-ref} proves the general simple-zero formula.
+
+:::
 
 :::
 
