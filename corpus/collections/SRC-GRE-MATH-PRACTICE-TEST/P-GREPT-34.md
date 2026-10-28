@@ -25,6 +25,8 @@ If $f(x) = \sum_{n=0}^{\infty} \frac{(n+1)^{n/2}}{(n!)^2} x^n$, what is true of 
 (E) It does not exist.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -97,6 +99,8 @@ Step [](#s1-2){.pf-ref} gives $f^{(4)}(0)=25/24$, and $25/24>1$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required comparison.
+
+:::
 
 :::
 
