@@ -32,6 +32,8 @@ are $-4$ and $b - 1$. Find $b$.
 (E) $6$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -96,6 +98,8 @@ and hence $b=6$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
