@@ -19,6 +19,8 @@ audit:
 Compute the series $\sum _ { n = 1 } ^ { \infty } { \frac { ( - 1 ) ^ { n } } { n } }$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -132,6 +134,8 @@ Multiply the identity in step [](#s1-4){.pf-ref} by $-1$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required sum.
+
+:::
 
 :::
 
