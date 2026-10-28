@@ -21,6 +21,8 @@ audit:
 B Prove that if $0 < \alpha < 1$ , then $F ( x ) = x ^ { \alpha }$ is uniformly continuous on $[ 0 , \infty )$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -236,6 +238,8 @@ This is exactly the definition in step [](#s1-1){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (A), and step [](#s1-5){.pf-ref} proves part (B).
+
+:::
 
 :::
 
