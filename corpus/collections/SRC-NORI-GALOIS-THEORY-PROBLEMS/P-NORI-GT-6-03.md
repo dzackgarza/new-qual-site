@@ -27,6 +27,8 @@ Let $f _ { A } \in F [ X ]$ be the product of $( X - a )$ , taken over all $a \i
 Hint: Let $C = F [ Y ]$ and let $h ( X ) = - f _ { A } ( X + Y ) + f _ { A } ( X ) + f _ { A } ( Y ) \in C [ X ]$ . Use (i) to find more $c \in C$ such that $h ( c ) = 0$ than the degree of $h \in C [ X ]$
 :::
 
+::: {.solution}
+
 Let
 $$
 q=\abs{A},
@@ -156,6 +158,8 @@ Rearranging gives the asserted identity, proving part (ii).
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (i), and step [](#s1-5){.pf-ref} proves part (ii).
+
+:::
 
 :::
 
