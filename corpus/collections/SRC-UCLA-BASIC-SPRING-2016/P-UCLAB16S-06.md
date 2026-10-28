@@ -25,6 +25,8 @@ A metric $\rho$ on a metric space $(X,\rho)$ is an ultrametric if
 Prove that every open ball $\{y:\rho(x,y)<r\}$ is closed and every closed ball $\{y:\rho(x,y)\le r\}$ is open.
 :::
 
+::: {.solution}
+
 Fix
 \[
 x\in X
@@ -267,6 +269,8 @@ Thus every point of the closed ball has an open neighborhood contained in it.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves that every open ball is closed, and step [](#s1-7){.pf-ref} proves that every closed ball is open.
+
+:::
 
 :::
 
