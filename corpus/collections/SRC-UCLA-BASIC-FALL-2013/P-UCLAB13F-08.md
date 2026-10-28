@@ -25,6 +25,8 @@ Find all matrices that $P$ could be.
 Hint: it is a very small finite set.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -353,6 +355,8 @@ and
 ::: pf-qed
 
 Steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref} show that the displayed four matrices are exactly all possibilities.
+
+:::
 
 :::
 
