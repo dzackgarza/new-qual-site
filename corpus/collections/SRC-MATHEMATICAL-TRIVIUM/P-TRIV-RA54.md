@@ -19,6 +19,8 @@ audit:
 Compute the sum $\sum _ { n = 1 } ^ { \infty } { \frac { x ^ { n - 1 } } { n ( n + 1 ) } }$ for all possible values of x.
 :::
 
+::: {.solution}
+
 Define
 $$
 S(x)
@@ -286,6 +288,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the full convergence set, and steps [](#s1-8){.pf-ref} through [](#s1-11){.pf-ref} give the sum at every point of that set.
+
+:::
 
 :::
 
