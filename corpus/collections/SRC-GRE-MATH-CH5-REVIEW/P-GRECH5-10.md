@@ -30,6 +30,8 @@ A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}
 (E) $26$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -105,6 +107,8 @@ By step [](#s1-1){.pf-ref}, the augmented system must be consistent. By step [](
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the unique value for which $\mathbf b$ belongs to the column space of $A$.
+
+:::
 
 :::
 
