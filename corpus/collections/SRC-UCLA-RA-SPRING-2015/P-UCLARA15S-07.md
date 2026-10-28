@@ -25,6 +25,8 @@ Suppose $f_n:D\to\mathbb C_+$ is a sequence of holomorphic functions and $f_n(0)
 Show that $f_n(z)\to0$ uniformly on compact subsets of $D$.
 :::
 
+::: {.solution}
+
 Define the Cayley transform
 \[
 \Phi(w)
@@ -228,6 +230,8 @@ for some $r<1$. Apply step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
