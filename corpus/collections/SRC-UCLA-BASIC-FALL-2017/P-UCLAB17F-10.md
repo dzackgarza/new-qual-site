@@ -24,6 +24,8 @@ Let $f:[a,b]\to\mathbb R$ be continuous and suppose
 for every integer $n\ge0$. Prove that $f=0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -168,6 +170,8 @@ Therefore
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
