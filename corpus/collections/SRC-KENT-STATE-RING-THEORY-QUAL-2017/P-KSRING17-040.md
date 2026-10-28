@@ -19,6 +19,8 @@ audit:
 Let R be a commutative ring with 1. Show that an ideal P of R is prime if and only if $R / P$ is an integral domain.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -126,6 +128,8 @@ Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove the forward implicatio
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required equivalence.
+
+:::
 
 :::
 
