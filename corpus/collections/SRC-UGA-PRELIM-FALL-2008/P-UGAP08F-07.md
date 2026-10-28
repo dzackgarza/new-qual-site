@@ -22,6 +22,8 @@ S=\{nk:n\in\mathbb Z\}.
 You may use the division algorithm for $\mathbb Z$, but no more advanced theorem.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -108,6 +110,8 @@ If $S=\{0\}$, use step [](#s1-1){.pf-ref}. Otherwise choose $k$ as in step [](#s
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
