@@ -24,6 +24,8 @@ F(x)=\int_0^\infty\frac{1-e^{-tx}}{t^{3/2}}\,dt.
 Show that $F:(0,\infty)\to(0,\infty)$ is well-defined, bijective, of class $C^1$, and has a $C^1$ inverse.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -352,6 +354,8 @@ which is continuous on $(0,\infty)$.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves well-definedness, step [](#s1-5){.pf-ref} proves bijectivity, step [](#s1-6){.pf-ref} proves that $F$ is $C^1$, and steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} prove that its inverse is $C^1$.
+
+:::
 
 :::
 
