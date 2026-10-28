@@ -82,7 +82,7 @@ For every $(b_1,b_2,b_3)\in\{\pm1\}^3$, there is a $\mathbb Q$-automorphism $\si
 
 On the basis in step [](#s1-2){.pf-ref} define
 \[
-\sigma_b\!left((\sqrt2)^{e_1}(\sqrt3)^{e_2}(\sqrt5)^{e_3}\right)
+\sigma_b\!\left((\sqrt2)^{e_1}(\sqrt3)^{e_2}(\sqrt5)^{e_3}\right)
 =b_1^{e_1}b_2^{e_2}b_3^{e_3}
 (\sqrt2)^{e_1}(\sqrt3)^{e_2}(\sqrt5)^{e_3},
 \]
