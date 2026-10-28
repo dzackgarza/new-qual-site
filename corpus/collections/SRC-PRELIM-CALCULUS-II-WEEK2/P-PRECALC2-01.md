@@ -15,6 +15,8 @@ review: draft
 What is the length of the curve $( x ( t ) , y ( t ) ) = ( \cos ( t ) , \sin ( t ) )$ for $0 \leq t \leq \pi ?$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -116,6 +118,8 @@ Evaluate
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the requested length.
+
+:::
 
 :::
 
