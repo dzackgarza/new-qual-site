@@ -28,6 +28,8 @@ f_1(x)=g f_2(x)g^{-1}\qquad\text{for all }x\in G_1.
 3. Prove that any two injective homomorphisms $S_3\to GL_2(\mathbb R)$ are conjugate.
 :::
 
+::: {.solution}
+
 Let
 \[
 S_3=\langle r,s\mid r^3=s^2=1,\ srs=r^{-1}\rangle,
@@ -581,6 +583,8 @@ for all \(g\in S_3\).
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} classifies the homomorphisms to \(\mathbb C^\times\), step [](#s1-18){.pf-ref} classifies the homomorphisms \(S_3\to S_3\) up to conjugation, and step [](#s1-26){.pf-ref} proves conjugacy of all injective \(2\)-dimensional real representations.
+
+:::
 
 :::
 
