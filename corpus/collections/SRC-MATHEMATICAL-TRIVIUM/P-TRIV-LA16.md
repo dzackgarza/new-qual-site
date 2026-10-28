@@ -25,6 +25,8 @@ Construct the matrix that performs a reflection in $\mathbb { R } ^ { 3 }$
 (c) across the plane $x O y$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -156,6 +158,8 @@ This matrix implements the transformation in step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}, and [](#s1-6){.pf-ref} give the three requested reflection matrices.
+
+:::
 
 :::
 
