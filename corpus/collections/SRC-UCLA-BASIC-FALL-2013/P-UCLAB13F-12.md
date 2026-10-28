@@ -25,6 +25,8 @@ Suppose also that the minimal polynomial $M_A(X)$ equals $C_A(X)$. How many clas
 Prove your answers, quoting any general theorems you need.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -220,6 +222,8 @@ Hence there is exactly one similarity class.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the number of classes with the prescribed characteristic polynomial, and step [](#s1-7){.pf-ref} gives the number satisfying the additional minimal-polynomial condition.
+
+:::
 
 :::
 
