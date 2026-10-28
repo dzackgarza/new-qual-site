@@ -19,6 +19,8 @@ audit:
 If M is a compact, closed, oriented manifold of dimension n, show that the torsion subgroups of $H ^ { i } ( M )$ and $H ^ { n - i + 1 } ( M )$ are isomorphic.
 :::
 
+::: {.solution}
+
 All (co)homology groups below have integral coefficients. Write
 \[
 T(A)=\{a\in A: ma=0\text{ for some }m>0\}
@@ -149,6 +151,8 @@ Steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref} identify both groups with $T(H_{
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required torsion duality.
+
+:::
 
 :::
 
