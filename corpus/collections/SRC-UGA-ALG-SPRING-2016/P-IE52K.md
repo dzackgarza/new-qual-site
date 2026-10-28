@@ -26,6 +26,8 @@ b. Prove that any group of order 1225 is abelian.
 c. Write down exactly one representative in each isomorphism class of abelian groups of order 1225.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -77,6 +79,8 @@ By step [](#s1-2){.pf-ref} every such group is abelian. The classification of fi
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-3){.pf-ref} answer parts (a), (b), and (c).
+
+:::
 
 :::
 
