@@ -44,6 +44,8 @@ Compute the following integrals.
 The source labels the first three integrals (i)–(iii) and then, at the top of the next page, restarts the labels at (i) for the remaining five, (i)–(v); here they are numbered consecutively (i)–(viii).
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -567,6 +569,8 @@ any singularity is logarithmic and integrable. Thus the same identity holds on t
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} evaluate parts (i)--(viii), respectively.
+
+:::
 
 :::
 
