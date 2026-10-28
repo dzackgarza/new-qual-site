@@ -24,6 +24,8 @@ B(z)=\prod_{j=1}^n\frac{z-a_j}{1-\overline{a_j}z}
 has $n$ zeros in $D$. Prove that the derivative $B'(z)$ has $n-1$ zeros in $D$.
 :::
 
+::: {.solution}
+
 For $a\in D$, write
 $$
 b_a(z)\coloneqq\frac{z-a}{1-\overline a z},
@@ -170,6 +172,8 @@ counting multiplicities.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
