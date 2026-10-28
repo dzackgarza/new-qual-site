@@ -19,6 +19,8 @@ audit:
 What is more probable - to get at least one 1 in throwing four dice, or to get at least two 1 in 24 throws of two dice?
 :::
 
+::: {.solution}
+
 Interpret the first experiment as four independent throws of one die, and the second as 24 independent throws of a pair of dice, with success in the second experiment meaning that both dice show $1$ on a throw.
 
 ::: pf
@@ -109,6 +111,8 @@ This follows from the strict comparison in step [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} answers the comparison.
+
+:::
 
 :::
 
