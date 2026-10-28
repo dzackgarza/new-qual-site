@@ -30,6 +30,8 @@ More generally, if $ab < 0$ then $ax + b(1-x)$ vanishes at $x = \frac{b}{b-a} \i
 The identity holds under the corrected hypothesis $ab > 0$, that is, $a$ and $b$ nonzero of the same sign.
 :::
 
+::: {.solution}
+
 Assume
 $$
 ab>0.
@@ -198,6 +200,8 @@ Step [](#s1-1){.pf-ref} handles $a=b$, and step [](#s1-5){.pf-ref} handles $a\ne
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the corrected intended identity.
+
+:::
 
 :::
 
