@@ -15,6 +15,8 @@ review: draft
 Suppose that $( x ( t ) , y ( t ) )$ for $t \in [ a , b ]$ is the parameterization a curve and that $x ^ { \prime } ( t ) \neq 0$ for all $t \in [ a , b ]$ . Find $\textstyle { \frac { d y } { d x } }$ and $\textstyle { \frac { d ^ { 2 } y } { d x ^ { 2 } } }$ as functions of t.
 :::
 
+::: {.solution}
+
 Assume
 \[
 x'(t)\ne0
@@ -181,6 +183,8 @@ Substitute step [](#s1-5){.pf-ref} into step [](#s1-4){.pf-ref}:
 
 Steps [](#s1-2){.pf-ref} and [](#s1-6){.pf-ref} give the requested first and second derivatives as
 functions of \(t\).
+
+:::
 
 :::
 
