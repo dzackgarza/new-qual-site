@@ -27,6 +27,8 @@ M=\begin{pmatrix}3&5\\1&-1\end{pmatrix}.
 2. Does there exist a real $2\times2$ matrix $A$ such that $M=\exp(A)$?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -257,6 +259,8 @@ Thus the answer to part 2 is
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} computes $\exp(M)$, and step [](#s1-9){.pf-ref} answers the second question.
+
+:::
 
 :::
 
