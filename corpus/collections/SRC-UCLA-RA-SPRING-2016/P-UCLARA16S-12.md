@@ -29,6 +29,8 @@ audit:
 for all $\theta\in(0,2\pi)$. Show that $u(z)\le0$. The function in part (a) is useful here.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1}
@@ -302,6 +304,8 @@ for every $\varepsilon>0$. Letting $\varepsilon\downarrow0$ gives $u(z)\le0$.
 ::: pf-qed
 
 Step [](#s1){.pf-ref} solves part (a), and step [](#s5){.pf-ref} proves part (b).
+
+:::
 
 :::
 
