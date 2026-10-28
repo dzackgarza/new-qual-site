@@ -20,6 +20,8 @@ audit:
 Find all homomorphisms $\phi : U_4 \to U_4$ where $U_4 = \{1, i, -1, -i\}$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -136,6 +138,8 @@ $1$ to $-1$.
 
 Step [](#s1-4){.pf-ref} gives the complete list, and step [](#s1-5){.pf-ref} corrects the erroneous map
 in the supplied source solution.
+
+:::
 
 :::
 
