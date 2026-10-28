@@ -35,6 +35,8 @@ T_g(f)=\int_0^1 f(x)g(x)\,dx.
 Prove that there are continuous linear functionals on $L^\infty([0,1])$ that are not of this form.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -212,6 +214,8 @@ for every continuous $f$. This contradicts step [](#s1-4){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a), and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} prove part (b).
+
+:::
 
 :::
 
