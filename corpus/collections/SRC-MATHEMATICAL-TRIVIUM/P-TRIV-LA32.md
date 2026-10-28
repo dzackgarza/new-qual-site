@@ -19,6 +19,8 @@ audit:
 Consider the matrices A, B such that $[ A , B ] = 0$ . Show that in this case $e ^ { A } e ^ { B } = e ^ { B } e ^ { A } = e ^ { A + B }$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -189,6 +191,8 @@ Combine steps [](#s1-5){.pf-ref} and [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required identity.
+
+:::
 
 :::
 
