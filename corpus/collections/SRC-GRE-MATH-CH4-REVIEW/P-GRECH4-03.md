@@ -26,6 +26,8 @@ Every curve in a certain family, $y = f(x, c)$, has the following property: the 
 (E) $c\sqrt{x}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -100,6 +102,8 @@ and hence $y=cx^2$ for a constant $c$. The zero solution is obtained by taking $
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested family and corresponding choice.
+
+:::
 
 :::
 
