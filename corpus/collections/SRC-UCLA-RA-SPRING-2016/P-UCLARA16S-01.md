@@ -35,6 +35,8 @@ K_t*f(x)=\int_{\mathbb R^3}K_t(x-y)f(y)\,dy.
 (b) Prove that $t^{1/2}\lVert K_t*f\rVert_{L^\infty}\to0$ as $t\to0$, for $f\in L^3(\mathbb R^3)$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -259,6 +261,8 @@ This proves part (b).
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
+
+:::
 
 :::
 
