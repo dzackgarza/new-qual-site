@@ -20,6 +20,8 @@ Consider the rubber cord with one end attached to a tree and another - to a car 
 Assume the cord can be stretched up to arbitrary length.
 :::
 
+::: {.solution}
+
 Let
 $$
 L(t)=L_0+Vt
@@ -261,6 +263,8 @@ so the time in step [](#s1-9){.pf-ref} is enormous but finite.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} answers the question.
+
+:::
 
 :::
 
