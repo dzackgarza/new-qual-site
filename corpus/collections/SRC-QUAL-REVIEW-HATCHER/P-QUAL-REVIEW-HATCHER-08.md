@@ -29,6 +29,8 @@ Determine whether each statement is true or false, and give reasons.
 (c) There exists a nontrivial covering space $S^3\to S^3$.
 :::
 
+::: {.solution}
+
 ## Part (a)
 
 The statement is
@@ -266,6 +268,8 @@ Use steps [](#s1-5){.pf-ref} and [](#s1-9){.pf-ref}, and [](#s1-12){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} gives the complete disposition.
+
+:::
 
 :::
 
