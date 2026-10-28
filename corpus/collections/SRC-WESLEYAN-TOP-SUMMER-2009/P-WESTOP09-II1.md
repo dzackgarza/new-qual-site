@@ -26,6 +26,8 @@ Prove or disprove each statement:
    is an isomorphism.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -127,6 +129,8 @@ Hence $i_*$ and $r_*$ are inverse isomorphisms. In particular,
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} settle the three statements.
+
+:::
 
 :::
 
