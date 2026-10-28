@@ -19,6 +19,8 @@ audit:
 If R is any ring with identity, let $J ( R )$ denote the Jacobson radical of R. Show that if e is any idempotent of R, then $J ( e R e ) = e J ( R ) e$
 :::
 
+::: {.solution}
+
 Write
 $$
 J
@@ -763,6 +765,8 @@ and step [](#s1-14){.pf-ref} gives the reverse inclusion.
 ::: pf-qed
 
 Step [](#s1-15){.pf-ref} is the required identity.
+
+:::
 
 :::
 
