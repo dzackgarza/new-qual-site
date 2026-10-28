@@ -17,6 +17,8 @@ Suppose $f_n\to f$ Lebesgue almost everywhere.
 Show that $f\in L^1([0,1])$ and $f_n\to f$ in $L^1$.
 :::
 
+::: {.solution}
+
 Choose $M<\infty$ such that
 \[
 \int_0^1
@@ -217,6 +219,8 @@ Thus $f_n\to f$ in $L^1$.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives $f\in L^1$, and step [](#s1-5){.pf-ref} gives the required $L^1$ convergence.
+
+:::
 
 :::
 
