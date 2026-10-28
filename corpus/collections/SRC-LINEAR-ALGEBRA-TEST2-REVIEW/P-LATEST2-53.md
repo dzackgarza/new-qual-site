@@ -27,6 +27,8 @@ Find $\dim V+\dim W$.
 (A) $4$  (B) $5$  (C) $6$  (D) $7$  (E) $8$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -165,6 +167,8 @@ This is answer choice $\boxed{\text{(B)}}$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required value.
+
+:::
 
 :::
 
