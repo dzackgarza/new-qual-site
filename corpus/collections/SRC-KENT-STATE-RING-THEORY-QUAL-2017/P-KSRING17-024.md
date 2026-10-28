@@ -19,6 +19,8 @@ audit:
 Let R be a commutative ring with identity and define $U _ { 2 } ( R ) \ = \ \left\{ { \left[ \begin{array} { l l } { a } & { b } \\ { 0 } & { c } \end{array} \right] } \ | \ a , b , c \in R \right\}$ Prove that every R-automorphism of $U _ { 2 } ( R )$ is inner.
 :::
 
+::: {.solution}
+
 Let
 $$
 A
@@ -420,6 +422,8 @@ for the unit $g$ constructed in step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
