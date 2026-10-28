@@ -25,6 +25,8 @@ In how many ways can a company separate its 12 employees into 4 equally-sized co
 (E) 48
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -97,6 +99,8 @@ The source solution states that it matters which committee each employee is plac
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} record the ambiguity in the printed statement and the answer under the source's intended convention.
+
+:::
 
 :::
 
