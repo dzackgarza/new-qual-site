@@ -20,6 +20,8 @@ Let $U\subseteq\mathbb C$ be open.
 Define what it means for a function $f:U\to\mathbb C$ to be analytic.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -67,6 +69,8 @@ The equivalence between holomorphy and local representability by a convergent co
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the requested definition; step [](#s1-2){.pf-ref} records its equivalent power-series form.
+
+:::
 
 :::
 
