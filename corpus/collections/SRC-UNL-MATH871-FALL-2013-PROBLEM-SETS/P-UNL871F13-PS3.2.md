@@ -27,6 +27,8 @@ If equality fails, determine which, if either, of the containments
 holds, and prove your answer.
 :::
 
+::: {.solution}
+
 Write
 \[
 Z=\mathbb Z\times\mathbb Z.
@@ -223,6 +225,8 @@ Step [](#s1-1){.pf-ref} gives the containment, and step [](#s1-2){.pf-ref} prove
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the complete comparison of the two topologies.
+
+:::
 
 :::
 
