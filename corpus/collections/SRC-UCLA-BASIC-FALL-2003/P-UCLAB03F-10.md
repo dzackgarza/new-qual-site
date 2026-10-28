@@ -39,6 +39,8 @@ A=
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -194,6 +196,8 @@ Such a matrix $B$ would make $A$ similar over $\mathbb R$ to a diagonal matrix, 
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
+
+:::
 
 :::
 
