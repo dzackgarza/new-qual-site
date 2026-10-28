@@ -19,6 +19,8 @@ audit:
 Let R be a commutative ring with identity, and let $P \subset Q$ be prime ideals of R. Prove that there exist prime ideals $P ^ { * } , Q ^ { * }$ satisfying $P \subseteq P ^ { * } \subset Q ^ { * } \subseteq Q$ , such that there are no prime ideals strictly between $P ^ { * }$ and $Q ^ { * }$ . HINT: Fix $x \in Q - P$ and show that there exists a prime ideal $P ^ { * }$ containing P , contained in Q and maximal with respect to not containing x.
 :::
 
+::: {.solution}
+
 Choose
 $$
 x\in Q\setminus P.
@@ -469,6 +471,8 @@ Steps [](#s1-3){.pf-ref}, [](#s1-7){.pf-ref}, and [](#s1-8){.pf-ref}, and [](#s1
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the desired conclusion.
+
+:::
 
 :::
 
