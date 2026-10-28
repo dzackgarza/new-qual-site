@@ -35,6 +35,8 @@ The source labels the first subpart of (b) "(c)"; it is subpart (i) of the list 
 In (b)(ii) the source reads "the level curves $\operatorname{Re}(f) = 0$ and $\operatorname{Im}(f)$", evidently meaning the level curves $\operatorname{Re}(f) = 0$ and $\operatorname{Im}(f) = 0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -279,6 +281,8 @@ Thus the nonvanishing-derivative hypothesis of part (a) fails exactly at the poi
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove part (a), and steps [](#s1-4){.pf-ref} through [](#s1-8){.pf-ref} answer part (b).
+
+:::
 
 :::
 
