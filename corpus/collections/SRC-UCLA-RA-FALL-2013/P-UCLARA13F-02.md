@@ -23,6 +23,8 @@ f(1/n^2)=\frac{n^2-1}{n^5}.
 \]
 :::
 
+::: {.solution}
+
 Suppose, for contradiction, that such a holomorphic function exists near $0$.
 
 ::: pf
@@ -169,6 +171,8 @@ The assumed existence led to the contradiction in step [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
