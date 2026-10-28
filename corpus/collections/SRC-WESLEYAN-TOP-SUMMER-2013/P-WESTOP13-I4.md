@@ -15,6 +15,8 @@ audit:
 2. Describe in detail a metric space that does not satisfy the hypotheses of the Urysohn Metrization Theorem.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -112,6 +114,8 @@ Every discrete space is regular: a point and a closed set not containing it are 
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} states the theorem, steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give two illustrations, and steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give the requested metrizable space that fails one of the hypotheses.
+
+:::
 
 :::
 
