@@ -20,6 +20,8 @@ Find the cohomology ring of ΩCPn, ΩRPn.
 (Hint: use a spectral sequence argument)
 :::
 
+::: {.solution}
+
 Use integral coefficients and based loop spaces. Write $\Gamma_{mathbb Z}(y)$ for the divided-power algebra with basis $\gamma_j(y)$, $j\geq0$, and multiplication
 \[
 \gamma_i(y)\gamma_j(y)=\binom{i+j}{i}\gamma_{i+j}(y).
@@ -209,6 +211,8 @@ The cohomology ring is its graded Hopf dual, whose multiplication is the signed 
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the ring for $\Omega\mathbb{CP}^n$, and steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} give the ring of $\Omega\mathbb{RP}^n$ componentwise, including the explicit odd-dimensional presentation.
+
+:::
 
 :::
 
