@@ -31,6 +31,8 @@ f\longmapsto \int_{S^2}\int_{S^2} f(x+y)\,d\sigma(x)\,d\sigma(y)
 extends uniquely from $C_c^\infty(\mathbb R^3)$ to a bounded linear functional on $L^2(\mathbb R^3)$.
 :::
 
+::: {.solution}
+
 Use the Fourier-transform convention
 \[
 \widehat \mu(\xi)
@@ -548,6 +550,8 @@ Every bounded linear functional on a dense subspace extends uniquely and continu
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} proves part (a), and step [](#s1-23){.pf-ref} proves part (b).
+
+:::
 
 :::
 
