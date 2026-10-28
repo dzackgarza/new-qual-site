@@ -24,6 +24,8 @@ f(t)=e^{t^2}+\frac12\int_0^1\cos(s)f(s)\,ds
 admits a unique continuous solution $f:[0,1]\to\mathbb R$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -297,6 +299,8 @@ Existence is step [](#s1-8){.pf-ref} and uniqueness is step [](#s1-9){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
