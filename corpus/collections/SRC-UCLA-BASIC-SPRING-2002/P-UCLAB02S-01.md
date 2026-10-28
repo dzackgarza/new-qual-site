@@ -19,6 +19,8 @@ audit:
 Prove that the closed interval $[0,1]$ is connected.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -256,6 +258,8 @@ The assumption that $[0,1]$ admits a separation leads to the contradiction in st
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
