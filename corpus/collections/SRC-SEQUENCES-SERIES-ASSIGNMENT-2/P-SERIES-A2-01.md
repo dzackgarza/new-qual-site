@@ -21,6 +21,8 @@ unless the right-hand side is of the form $\infty-\infty$.
 (b) Find sequences $\{a_n\}$ and $\{b_n\}$ for which the inequality is strict.
 :::
 
+::: {.solution}
+
 Write
 \[
 A=\limsup_{n\to\infty}a_n,
@@ -463,6 +465,8 @@ Step [](#s1-18){.pf-ref} gives an explicit strict example.
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} proves part (a), and steps [](#s1-14){.pf-ref} through [](#s1-19){.pf-ref} prove part (b).
+
+:::
 
 :::
 
