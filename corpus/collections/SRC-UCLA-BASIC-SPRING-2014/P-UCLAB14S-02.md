@@ -26,6 +26,8 @@ Show that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -151,6 +153,8 @@ Add $\dim(\operatorname{im}S)$ to both sides of step [](#s1-6){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required inequality.
+
+:::
 
 :::
 
