@@ -31,6 +31,8 @@ f(\vec r)e^{-i\vec k\cdot\vec r}
 $$
 :::
 
+::: {.solution}
+
 Put
 $$
 k=|\vec k|.
@@ -239,6 +241,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} give the Fourier image for all $\vec k\in\mathbb R^3$.
+
+:::
 
 :::
 
