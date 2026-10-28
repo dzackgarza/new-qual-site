@@ -26,6 +26,8 @@ Which one of the following rings does NOT have the same number of units as the o
 (E) $\ZZ_3 \oplus \ZZ_3$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -109,6 +111,8 @@ Step [](#s1-3){.pf-ref} shows that this ring has eight units while each of the o
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required ring.
+
+:::
 
 :::
 
