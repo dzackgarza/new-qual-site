@@ -30,6 +30,8 @@ Show that
 for every compact set $K\subseteq X$.
 :::
 
+::: {.solution}
+
 Let
 \[
 K\subseteq X
@@ -322,6 +324,8 @@ This is step [](#s1-12){.pf-ref} rewritten.
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
