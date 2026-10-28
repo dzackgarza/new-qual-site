@@ -25,6 +25,8 @@ for every sequence $(z_n)\subset\mathbb D$ with $|z_n|\to1$?
 Justify your answer.
 :::
 
+::: {.solution}
+
 No such holomorphic function exists.
 
 ::: pf
@@ -207,6 +209,8 @@ The existence assumption in step [](#s1-1){.pf-ref} led to the contradiction in 
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} answers the question and proves the assertion.
+
+:::
 
 :::
 
