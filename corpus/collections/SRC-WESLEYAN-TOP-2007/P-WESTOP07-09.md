@@ -31,6 +31,8 @@ whose disk is tangent to the $x$-axis at $(p,0)$.
 4. State the Tietze Extension Theorem and use it to prove that $X$ is not normal.
 :::
 
+::: {.solution}
+
 For
 $$
 p\in\mathbb R,
@@ -591,6 +593,8 @@ a contradiction.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (1), step [](#s1-6){.pf-ref} proves part (2), steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} prove part (3), and steps [](#s1-9){.pf-ref} through [](#s1-12){.pf-ref} prove part (4).
+
+:::
 
 :::
 
