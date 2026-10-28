@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. Let $(X,d)$ be an arbitrary metric space.
+Let $(X,d)$ be an arbitrary metric space.
 
 (a) Define compactness of $X$ using open covers.
 
