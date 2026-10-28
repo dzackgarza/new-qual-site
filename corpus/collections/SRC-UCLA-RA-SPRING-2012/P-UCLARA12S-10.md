@@ -25,6 +25,8 @@ wherever the integral is absolutely convergent.
 Show that this function extends meromorphically to the whole complex plane.
 :::
 
+::: {.solution}
+
 For $t>0$, write $t^{z-1}=e^{(z-1)\log t}$ using the real logarithm.
 
 ::: pf
@@ -184,6 +186,8 @@ Thus $\widetilde\Gamma$ agrees with the original Gamma function on its half-plan
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required meromorphic continuation.
+
+:::
 
 :::
 
