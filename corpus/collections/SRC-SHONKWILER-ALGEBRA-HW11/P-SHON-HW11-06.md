@@ -20,6 +20,8 @@ For which positive integers $n$ is it possible, using straightedge and compass, 
 Prove your assertion.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -324,6 +326,8 @@ Sufficiency is step [](#s1-2){.pf-ref}, and necessity is step [](#s1-18){.pf-ref
 ::: pf-qed
 
 Step [](#s1-19){.pf-ref} is the required classification.
+
+:::
 
 :::
 
