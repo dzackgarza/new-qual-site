@@ -19,6 +19,8 @@ audit:
 Solve $y ^ { \prime \prime } + 1 6 y = \theta ( \pi - t )$ with $y ( 0 ) = y ^ { \prime } ( 0 ) = 0$ and where θ is the Heaviside function, $\theta ( x ) = 0 { \mathrm { ~ i f ~ } } x < 0$ and $\theta ( x ) = 1 { \mathrm { ~ i f ~ } } x > 0$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -122,6 +124,8 @@ Steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref} give the two branches. Step [](#
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested solution.
+
+:::
 
 :::
 
