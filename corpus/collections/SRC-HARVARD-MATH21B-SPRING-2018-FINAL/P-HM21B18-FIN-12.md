@@ -36,6 +36,8 @@ a_0^2+\sum_{n=1}^\infty(a_n^2+b_n^2).
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -181,6 +183,8 @@ Since $|f(x)|=1$ everywhere,
 
 Step [](#s1-4){.pf-ref} gives the Fourier series and step [](#s1-5){.pf-ref} gives the requested
 Parseval sum.
+
+:::
 
 :::
 
