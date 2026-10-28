@@ -35,6 +35,8 @@ Hint: Consider
 \]
 :::
 
+::: {.solution}
+
 Define
 \[
 G(z,w)
@@ -184,6 +186,8 @@ which is exactly the displayed affine formula.
 ::: pf-qed
 
 Step [](#s3){.pf-ref} gives all asserted properties of $a$, $b$, and $F$.
+
+:::
 
 :::
 
