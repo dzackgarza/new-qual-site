@@ -27,6 +27,8 @@ $$
 where $\gamma _ { r } : = \lbrace z \mid z = a + r e ^ { i t } , 0 \leq t \leq \beta _ { 0 } \rbrace$
 :::
 
+::: {.solution}
+
 Parametrize
 $$
 \gamma_r(t)=a+re^{it},
@@ -168,6 +170,8 @@ $r>0$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required limit.
+
+:::
 
 :::
 
