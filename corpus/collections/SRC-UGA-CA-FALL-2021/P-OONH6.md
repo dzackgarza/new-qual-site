@@ -18,6 +18,8 @@ review: draft
 Find a conformal map from the intersection of $|z-1|<2$ and $|z+1|<2$ to the upper half plane.
 :::
 
+::: {.solution}
+
 Let
 $$
 D=\{z\in\CC:|z-1|<2,\ |z+1|<2\}.
@@ -193,6 +195,8 @@ Thus the displayed composition is the required conformal bijection.
 
 Step [](#s1-7){.pf-ref} gives an explicit conformal map from the stated intersection
 onto the upper half-plane.
+
+:::
 
 :::
 
