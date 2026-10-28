@@ -21,6 +21,8 @@ The Jacobson Radical $J ( R )$ of a ring R is defined to be the intersection of 
 Let R be a commutative ring with 1 and let $x \in R$ . Show that $x \in J ( R )$ if and only if $1 - x y$ is a unit for all y in R.
 :::
 
+::: {.solution}
+
 Recall that
 $$
 J(R)
@@ -350,6 +352,8 @@ Step [](#p2-s1-1){.pf-ref} proves the forward implication, and step [](#p2-s1-2)
 ::: pf-qed
 
 Step [](#p2-s1-3){.pf-ref} is the required characterization.
+
+:::
 
 :::
 
