@@ -24,6 +24,8 @@ z-2-e^{-z}=0
 in the right half-plane $H=\{z\in\mathbb C:\operatorname{Re}z>0\}$.
 :::
 
+::: {.solution}
+
 Define
 \[
 F(z)=z-2-e^{-z}
@@ -338,6 +340,8 @@ Combine steps [](#s1-13){.pf-ref} through [](#s1-14){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-15){.pf-ref} is the required zero count.
+
+:::
 
 :::
 
