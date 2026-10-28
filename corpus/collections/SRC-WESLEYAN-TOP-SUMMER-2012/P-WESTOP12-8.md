@@ -17,6 +17,8 @@ Let $X$ be the Klein bottle.
 2. Using that structure, compute the simplicial cohomology groups of $X$ with coefficients in $\mathbb Z/2\mathbb Z$.
 :::
 
+::: {.solution}
+
 Write
 \[
 \mathbb F_2
@@ -535,6 +537,8 @@ structure, and step [](#s1-13){.pf-ref} gives its simplicial cohomology with
 \mathbb Z/2
 \]
 coefficients.
+
+:::
 
 :::
 
