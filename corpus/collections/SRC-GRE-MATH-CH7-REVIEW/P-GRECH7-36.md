@@ -25,6 +25,8 @@ Let $C$ be the counterclockwise-oriented circle $|z| = 5$. If $h(a) = \int_C \fr
 (E) $56\pi i$
 :::
 
+::: {.solution}
+
 Let
 $$
 f(z)=3z^2+z-4.
@@ -108,6 +110,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the requested value.
+
+:::
 
 :::
 
