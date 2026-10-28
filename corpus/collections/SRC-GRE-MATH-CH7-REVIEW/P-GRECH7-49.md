@@ -38,6 +38,8 @@ Which of the following correctly represents the algorithm described above?
 (E) $a_n = \begin{cases} \frac{1}{2}a_{n-1} \text{ for } a_n \text{ odd} \\ 3a_{n-1} + 1 \text{ for } a_n \text{ even} \end{cases}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -97,6 +99,8 @@ Step [](#s1-1){.pf-ref} gives the even case and step [](#s1-2){.pf-ref} gives th
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is exactly the recurrence implemented by the algorithm.
+
+:::
 
 :::
 
