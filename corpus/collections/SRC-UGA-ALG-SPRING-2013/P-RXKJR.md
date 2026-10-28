@@ -26,6 +26,8 @@ a. Show that there does not exist any nonzero vector $v\in V$ such that $Tv = v$
 b. Give all of the possible Jordan canonical forms of $T$.
 :::
 
+::: {.solution}
+
 Set $N=T+I$. Then $N^2=0$ and $T=-I+N$.
 
 ::: pf
@@ -75,6 +77,8 @@ The relation $(T+I)^2=0$ forces the sole eigenvalue to be $-1$ and all Jordan bl
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} prove part (a), and step [](#s1-3){.pf-ref} proves part (b).
+
+:::
 
 :::
 
