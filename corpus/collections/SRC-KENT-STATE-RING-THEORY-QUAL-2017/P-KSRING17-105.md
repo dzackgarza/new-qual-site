@@ -20,6 +20,8 @@ Let R be a commutative ring with 1 and let $f ( x ) \ \in \ R [ x ]$ be nilpoten
 Show that the coefficients of f are nilpotent.
 :::
 
+::: {.solution}
+
 Write
 $$
 f(x)
@@ -332,6 +334,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
