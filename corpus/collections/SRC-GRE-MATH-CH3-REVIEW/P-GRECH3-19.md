@@ -26,6 +26,8 @@ The temperature at each point $(x,y,z)$ in a room is given by the equation $T(x,
 (E) $-6\hat{\mathbf{i}}+4\hat{\mathbf{j}}-3\hat{\mathbf{k}}$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -107,6 +109,8 @@ Multiplying a nonzero direction vector by a positive scalar does not change its 
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested direction and corresponding choice.
+
+:::
 
 :::
 
