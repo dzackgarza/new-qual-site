@@ -33,6 +33,8 @@ Show that there is $C\ge0$ such that
 for all $x\in X$ and $y\in Y$.
 :::
 
+::: {.solution}
+
 For each $y\in Y$, regard $B(\,·\,,y)$ as a bounded linear functional on the Banach space $X$.
 
 ::: pf
@@ -169,6 +171,8 @@ If $y=0$, both sides give the desired inequality immediately. If $y\ne0$, apply 
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required joint boundedness estimate.
+
+:::
 
 :::
 
