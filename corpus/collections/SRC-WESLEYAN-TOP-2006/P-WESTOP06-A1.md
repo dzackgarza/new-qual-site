@@ -27,6 +27,8 @@ For a space $X$, define its density character by
    \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -125,6 +127,8 @@ Hence
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves existence of the density character, and step [](#s1-3){.pf-ref} proves the required cardinal bound.
+
+:::
 
 :::
 
