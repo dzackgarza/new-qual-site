@@ -15,6 +15,8 @@ review: draft
 Let $c > 0$ . Find the minimum value of $f ( x ) = e ^ { x } - c x$ among $x \in \mathbb { R }$
 :::
 
+::: {.solution}
+
 Let
 \[
 f(x)=e^x-cx,
@@ -178,6 +180,8 @@ Factor \(c\) from step [](#s1-7){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the requested minimum value.
+
+:::
 
 :::
 
