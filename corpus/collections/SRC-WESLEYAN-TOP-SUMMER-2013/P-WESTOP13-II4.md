@@ -31,6 +31,8 @@ audit:
    to calculate the homology groups of $T_0^2$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -398,6 +400,8 @@ Combine steps [](#s1-7){.pf-ref}, [](#s1-9){.pf-ref}, and [](#s1-10){.pf-ref}, a
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives part 1, step [](#s1-6){.pf-ref} gives part 2 using the recovered source $\Delta$-complex, and step [](#s1-12){.pf-ref} gives part 3 by Mayer--Vietoris.
+
+:::
 
 :::
 
