@@ -21,6 +21,8 @@ I(\gamma)=\int_\gamma\frac{y\,dx-x\,dy}{x^2+y^2}.
 \]
 :::
 
+::: {.solution}
+
 Choose a smooth parametrization
 $$
 \gamma(t)=(x(t),y(t)),
@@ -163,6 +165,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the requested value of the integral.
+
+:::
 
 :::
 
