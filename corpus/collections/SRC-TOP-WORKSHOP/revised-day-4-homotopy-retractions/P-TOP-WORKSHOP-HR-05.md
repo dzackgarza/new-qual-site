@@ -24,6 +24,8 @@ g:T\to S^1\vee S^1
 such that $f\circ g$ is the identity map on $T$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -182,6 +184,8 @@ The assumption that $g$ exists leads to the contradiction in step [](#s1-4){.pf-
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is exactly the required conclusion.
+
+:::
 
 :::
 
