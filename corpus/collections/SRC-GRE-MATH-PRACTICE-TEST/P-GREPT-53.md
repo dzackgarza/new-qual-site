@@ -25,6 +25,8 @@ Let $T\colon \RR^2 \to \RR^2$ be the linear transformation that maps the point $
 (E) $(-3, 1)$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -99,6 +101,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required image.
+
+:::
 
 :::
 
