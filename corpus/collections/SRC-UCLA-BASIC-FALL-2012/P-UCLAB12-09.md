@@ -12,7 +12,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let A be an m by n real matrix with $m \geq n$ Let $b \in \mathbb { R } ^ { m }$ . Let M be the set of vectors $x \in \mathbb { R } ^ { n }$ which minimize $| A x - b |$ Show that $M = x _ { 0 } + N$ where N is the kernel of A, and $x _ { 0 }$ is any element of M.
+Let $A$ be an $m$ by $n$ real matrix with $m \geq n$. Let $b \in \RR^m$. Let $M$ be the set of vectors $x \in \RR^n$ which minimize $\abs{Ax - b}$. Show that $M = x_0 + N$ where $N$ is the kernel of $A$, and $x_0$ is any element of $M$.
 :::
 
 ::: {.solution}
