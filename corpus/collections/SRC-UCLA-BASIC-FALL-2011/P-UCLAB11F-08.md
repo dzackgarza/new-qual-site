@@ -25,6 +25,8 @@ for every $\lambda\in\mathbb C$.
 Show from first principles, without using the theory of canonical forms, that $A$ is diagonalizable.
 :::
 
+::: {.solution}
+
 The proof is by induction on the dimension $n$ of the underlying complex vector space $V=\mathbb C^n$.
 
 ::: pf
@@ -306,6 +308,8 @@ Choose an eigenbasis of $\ker B$ for $A_E$ using step [](#s1-6){.pf-ref} and an 
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-10){.pf-ref} establish the induction and prove the required diagonalizability without using canonical forms.
+
+:::
 
 :::
 
