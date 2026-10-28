@@ -26,6 +26,8 @@ S=\{x+iy:0\le x\le2,\ 0\le y\le2\}.
 2. Find the set of points in $S$ where this maximum is attained.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -140,6 +142,8 @@ with equality exactly when \(z=2\).
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives both the requested maximum value and the complete set of maximizers.
+
+:::
 
 :::
 
