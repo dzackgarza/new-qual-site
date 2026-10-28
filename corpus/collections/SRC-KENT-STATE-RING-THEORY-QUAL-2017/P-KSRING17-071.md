@@ -19,6 +19,8 @@ audit:
 Let R be a commutative ring with 1. Show that if u is a unit in R and n is nilpotent, then $u + n$ is a unit.
 :::
 
+::: {.solution}
+
 Let
 $$
 u\in R^\times
@@ -167,6 +169,8 @@ so $u+n$ is invertible.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
