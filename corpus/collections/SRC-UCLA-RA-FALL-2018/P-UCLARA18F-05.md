@@ -32,6 +32,8 @@ F_{N,\varepsilon}=\{y\in[0,1]:|f_n(y)-f_m(y)|\le\varepsilon\text{ for all }n,m>N
 (b) Prove that $f$ cannot be the characteristic function $\chi_{\mathbb Q\cap[0,1]}$, where $\mathbb Q$ is the set of rational numbers.
 :::
 
+::: {.solution}
+
 Fix \(\varepsilon>0\). For \(N\ge1\), set
 \[
 F_N=F_{N,\varepsilon}
@@ -172,6 +174,8 @@ contradicting step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a), and step [](#s1-6){.pf-ref} proves part (b).
+
+:::
 
 :::
 
