@@ -23,6 +23,8 @@ Represent
 by partial fractions.
 :::
 
+::: {.solution}
+
 Let
 \[
 \omega=e^{2\pi i/3},
@@ -355,6 +357,8 @@ Insert step [](#s1-11){.pf-ref} into step [](#s1-9){.pf-ref} and combine with st
 
 Step [](#s1-8){.pf-ref} gives the complete complex partial-fraction decomposition, and
 step [](#s1-12){.pf-ref} gives the equivalent real-coefficient form.
+
+:::
 
 :::
 
