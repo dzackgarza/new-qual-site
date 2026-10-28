@@ -19,6 +19,8 @@ audit:
 Find all differentiable solutions of the equation $f ( x ) f ( y ) = f ( x + y )$ . Find all continuous solutions of the same equation.
 :::
 
+::: {.solution}
+
 Assume $f:\mathbb R\to\mathbb R$.
 
 ::: pf
@@ -334,6 +336,8 @@ continuous solution. The converse verification is the same as in step [](#s1-6){
 
 Steps [](#s1-6){.pf-ref} and [](#s1-11){.pf-ref} classify the differentiable and continuous solutions,
 respectively.
+
+:::
 
 :::
 
