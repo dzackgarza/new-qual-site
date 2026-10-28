@@ -32,6 +32,8 @@ Let $f(z)$ be entire and assume $f(0)\ne0$. Let $\{a_n\}$ be the zeros of $f$, r
 for all $\varepsilon>0$. Hint: estimate $\#\{n:|a_n|<R\}$ using (a) on $|z|\sim2R$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -220,6 +222,8 @@ Summing over $k\ge0$ gives a convergent geometric series.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} proves part (b).
+
+:::
 
 :::
 
