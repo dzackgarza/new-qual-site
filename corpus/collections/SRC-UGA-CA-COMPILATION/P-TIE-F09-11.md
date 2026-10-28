@@ -32,6 +32,8 @@ Let $g$ be analytic for $\abs{z} \le 1$ and $\abs{g(z)} < 1$ for $\abs{z} = 1$.
 Hint: The map $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha} z}$ may be useful.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -238,6 +240,8 @@ contrary to the hypothesis. Hence two distinct fixed points are impossible.
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), step [](#s1-3){.pf-ref} answers part (b), and step [](#s1-7){.pf-ref} answers part (c).
+
+:::
 
 :::
 
