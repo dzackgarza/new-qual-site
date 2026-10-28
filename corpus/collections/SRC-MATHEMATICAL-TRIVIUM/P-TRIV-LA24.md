@@ -24,6 +24,8 @@ The claim requires $a\neq0$. If $a=0$, the translation is the identity map,
 which is linear.
 :::
 
+::: {.solution}
+
 Define
 $$
 T_a(x)=x+a.
@@ -125,6 +127,8 @@ $a=0$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the precise conclusion.
+
+:::
 
 :::
 
