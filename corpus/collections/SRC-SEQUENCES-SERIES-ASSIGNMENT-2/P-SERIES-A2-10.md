@@ -21,6 +21,8 @@ then $\sum a_n$ diverges.
 (b) Given that $\sum a_n$ converges absolutely, show that $\sum a_n^p$ also converges whenever $p>1$. Give a counterexample when $\sum a_n$ only converges conditionally.
 :::
 
+::: {.solution}
+
 ## Part (a)
 
 Assume
@@ -394,6 +396,8 @@ series diverges.
 Step [](#s1-6){.pf-ref} proves part (a); steps [](#s1-10){.pf-ref} through [](#s1-11){.pf-ref} prove the power-series
 conclusion under absolute convergence; and steps [](#s1-12){.pf-ref} through [](#s1-18){.pf-ref} give the
 counterexample.
+
+:::
 
 :::
 
