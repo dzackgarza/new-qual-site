@@ -24,6 +24,8 @@ e^t,e^{2t},\ldots,e^{nt}
 are linearly independent in the space of continuous functions on $[1,2]$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -181,6 +183,8 @@ Step [](#s1-5){.pf-ref} shows that the only linear relation among the functions 
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
