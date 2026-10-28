@@ -27,6 +27,8 @@ S=\left\{f\in L^1(\mathbb R^3):\int_{\mathbb R^3}f(x)\,dx=0\right\}.
 (b) Show that $S\cap L^2(\mathbb R^3)$ is dense in $L^2(\mathbb R^3)$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -148,6 +150,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-4){.pf-ref} proves part (b).
+
+:::
 
 :::
 
