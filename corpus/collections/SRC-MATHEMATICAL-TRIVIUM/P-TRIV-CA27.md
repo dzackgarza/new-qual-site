@@ -19,6 +19,8 @@ audit:
 The modified Bessel function of the second kind has the following integral representation: $K _ { \nu } ( x ) = \frac { 1 } { 2 } \int _ { 0 } ^ { \infty } \exp \left( - \frac { x } { 2 } \left( s + \frac { 1 } { s } \right) \right) \frac { \mathrm { d } s } { s ^ { 1 - \nu } }$ . Find the asymptotic expansion for $x \gg 1$
 :::
 
+::: {.solution}
+
 Assume $x>0$ and $\nu$ is fixed.
 
 ::: pf
@@ -449,6 +451,8 @@ Expand the first two nontrivial terms of step [](#s1-8){.pf-ref}.
 
 Steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref} give the leading saddle approximation and the full
 asymptotic expansion, respectively.
+
+:::
 
 :::
 
