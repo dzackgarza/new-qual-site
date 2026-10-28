@@ -19,6 +19,8 @@ audit:
 Compute the following series: (a) $\sum _ { k = 0 } ^ { n } r ^ { k } e ^ { i k \phi } ,$ (b) $\sum _ { k = 0 } ^ { n } r ^ { k } \cos k \phi ,$ (c) $\sum _ { k = 0 } ^ { n } r ^ { k } \sin k \phi .$
 :::
 
+::: {.solution}
+
 Put
 $$
 z=re^{i\phi}.
@@ -271,6 +273,8 @@ imaginary parts are $n+1$ and $0$.
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref}, [](#s1-6){.pf-ref}, and [](#s1-8){.pf-ref}, and [](#s1-9){.pf-ref} give all three finite sums in every case.
+
+:::
 
 :::
 
