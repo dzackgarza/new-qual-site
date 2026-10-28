@@ -30,6 +30,8 @@ Show that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -380,6 +382,8 @@ in the identity from step [](#s1-8){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-11){.pf-ref} proves the identity without any invertibility assumption on $A$.
+
+:::
 
 :::
 
