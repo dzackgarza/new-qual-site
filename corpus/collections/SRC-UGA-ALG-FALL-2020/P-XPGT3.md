@@ -33,6 +33,8 @@ b. Let $M, N$ be left \(R\dash\)modules, $I$ a nilpotent left ideal of $R$, and 
 Prove that if the induced morphism \( \bar{f}: M/IM \to N/IN \) is surjective, then $f$ is surjective.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -104,6 +106,8 @@ Therefore $N=f(M)$, so $f$ is surjective.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), while steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} prove part (b).
+
+:::
 
 :::
 
