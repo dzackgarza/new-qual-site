@@ -25,6 +25,8 @@ for all $x\in X$, with $f_n(x)\to0$ pointwise.
 Prove Dini's theorem in this setting: $f_n\to0$ uniformly on $X$.
 :::
 
+::: {.solution}
+
 Fix
 \[
 \varepsilon>0.
@@ -228,6 +230,8 @@ This is exactly uniform convergence to $0$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves Dini's theorem in the stated setting.
+
+:::
 
 :::
 
