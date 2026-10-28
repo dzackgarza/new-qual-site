@@ -46,6 +46,8 @@ reasonable display models produce different transformations of the points
 $(r_i,\varphi_i)$, so the problem is underdetermined as retained.
 :::
 
+::: {.solution}
+
 The requested command sequence is not determined by the data in the problem
 statement.
 
@@ -414,6 +416,8 @@ Therefore the original source does not determine the requested sequence.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the complete resolution of the problem as retained.
+
+:::
 
 :::
 
