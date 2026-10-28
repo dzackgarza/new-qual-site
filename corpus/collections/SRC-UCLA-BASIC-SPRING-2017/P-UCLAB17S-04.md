@@ -30,6 +30,8 @@ x^3&x^2&x&1&x
 Compute $F'(0)$.
 :::
 
+::: {.solution}
+
 Let the rows of the matrix defining $F(x)$ be
 \[
 R_1(x),\ldots,R_5(x).
@@ -295,6 +297,8 @@ F'(0)=0+0+0+0-1=-1.
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} is the required value.
+
+:::
 
 :::
 
