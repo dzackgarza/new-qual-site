@@ -29,6 +29,8 @@ Compute the eigenvalues of $A$ and use them to determine
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -187,6 +189,8 @@ The factor in parentheses tends to $1/2>0$, so its $n$-th root tends to $1$. The
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} gives the required matrix identity, step [](#s1-3){.pf-ref} computes the eigenvalues, and step [](#s1-5){.pf-ref} gives the requested limit.
+
+:::
 
 :::
 
