@@ -25,6 +25,8 @@ $$
 Prove that the determinant of V is $\prod _ { 1 \leqslant i < j \leqslant n } ( x _ { i } - x _ { j } )$
 :::
 
+::: {.solution}
+
 We prove by induction on $n$ that
 $$
 \boxed{
@@ -318,6 +320,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} gives the base case, and steps [](#s1-2){.pf-ref} through [](#s1-8){.pf-ref} prove the induction step.
+
+:::
 
 :::
 
