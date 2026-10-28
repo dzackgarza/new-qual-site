@@ -22,6 +22,8 @@ audit:
 (2) Show that $h ( z ) ~ = ~ \frac { \pi ^ { 2 } } { \sin ^ { 2 } \pi z } - g ( z )$ is bounded on C and conclude that $\frac { \pi ^ { 2 } } { \sin ^ { 2 } \pi z } =$ $\sum _ { n = - \infty } ^ { \infty } \frac { 1 } { ( z - n ) ^ { 2 } } .$
 :::
 
+::: {.solution}
+
 Define
 $$
 g(z)
@@ -387,6 +389,8 @@ Substituting the definition of $g$ gives the identity.
 ::: pf-qed
 
 Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} prove part (1), and steps [](#s1-4){.pf-ref} through [](#s1-10){.pf-ref} prove part (2).
+
+:::
 
 :::
 
