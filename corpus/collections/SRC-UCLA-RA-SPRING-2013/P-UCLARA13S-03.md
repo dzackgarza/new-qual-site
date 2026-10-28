@@ -35,6 +35,8 @@ A_r\chi_K(x,y)\longrightarrow 1\qquad(r\to0)
 for almost every $(x,y)\in K$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1}
@@ -362,6 +364,8 @@ A_r\chi_K(x)\to1.
 ::: pf-qed
 
 Step [](#s3){.pf-ref} is exactly the desired almost-everywhere circular differentiation statement on $K$.
+
+:::
 
 :::
 
