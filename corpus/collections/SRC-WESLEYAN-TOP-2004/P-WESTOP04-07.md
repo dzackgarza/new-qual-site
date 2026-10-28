@@ -17,6 +17,8 @@ Prove or disprove each statement:
 2. The product of two metrizable Lindelöf spaces is Lindelöf.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -581,6 +583,8 @@ second countable, and step [](#s1-7){.pf-ref} makes it Lindelöf.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} disprove statement (1), and steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} prove statement (2).
+
+:::
 
 :::
 
