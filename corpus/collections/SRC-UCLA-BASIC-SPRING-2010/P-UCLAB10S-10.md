@@ -29,6 +29,8 @@ for $(x,y)\ne(0,0)$ and set $f(0,0)=0$.
 Prove your answer.
 :::
 
+::: {.solution}
+
 Let
 \[
 v=(a,b)\in\mathbb R^2
@@ -315,6 +317,8 @@ Hence
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} answers part (a), and step [](#s1-8){.pf-ref} answers part (b).
+
+:::
 
 :::
 
