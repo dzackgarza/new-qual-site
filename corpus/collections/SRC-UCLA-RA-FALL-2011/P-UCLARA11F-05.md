@@ -28,6 +28,8 @@ Prove that there is a constant $A$ such that for every $\alpha>0$,
 If you use a covering lemma, prove it.
 :::
 
+::: {.solution}
+
 Fix
 \[
 \alpha>0
@@ -404,6 +406,8 @@ with \(A=3\).
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves the required covering lemma, and step [](#s1-14){.pf-ref} proves the maximal-function estimate.
+
+:::
 
 :::
 
