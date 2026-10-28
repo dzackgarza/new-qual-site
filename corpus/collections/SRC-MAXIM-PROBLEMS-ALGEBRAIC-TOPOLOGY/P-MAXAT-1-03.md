@@ -19,6 +19,8 @@ audit:
 Show that if $M ^ { 4 n }$ is a connected manifold which is the boundary of a compact oriented $( 4 n + 1 )$ -dimensional manifold V , then the signature of M is zero.
 :::
 
+::: {.solution}
+
 Let $i:M=\partial V\hookrightarrow V$ be the inclusion. Work with rational coefficients. The intersection form of the closed oriented $4n$-manifold $M$ is
 \[
 Q_M(x,y)=\langle x\smile y,[M]\rangle,
@@ -173,6 +175,8 @@ By step [](#s1-4){.pf-ref}, the middle-dimensional intersection form of $M$ has 
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves the claim.
+
+:::
 
 :::
 
