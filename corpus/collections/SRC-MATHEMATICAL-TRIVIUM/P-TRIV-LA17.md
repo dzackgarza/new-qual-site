@@ -25,6 +25,8 @@ Consider the reflection maps in $\mathbb { R } ^ { n }$ . The reflection across 
 (c) In $\mathbb { R } ^ { n }$ , formulate and prove a general statement about the existence of rotations that perform the reflection across a given m-dimensional plane, $m = 0 , 1 , . . . , n - 1$ , crossing the origin (where $m = 1$ corresponds to the line, and $m = 0 \textrm { - } \mathrm { t o }$ the point).
 :::
 
+::: {.solution}
+
 Here “rotation” means an orientation-preserving orthogonal transformation,
 that is, an element of $SO(n)$.
 
@@ -279,6 +281,8 @@ Step [](#s1-12){.pf-ref} is the requested general statement.
 ::: pf-qed
 
 Steps [](#s1-5){.pf-ref} and [](#s1-9){.pf-ref}, and [](#s1-13){.pf-ref} establish parts (a), (b), and (c), respectively.
+
+:::
 
 :::
 
