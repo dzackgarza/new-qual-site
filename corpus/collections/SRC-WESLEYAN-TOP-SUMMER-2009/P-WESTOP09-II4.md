@@ -27,6 +27,8 @@ audit:
    Compute $H_n(S^3\setminus N(K))$ for every $n$.
 :::
 
+::: {.solution}
+
 All homology groups are taken with integer coefficients.
 
 ::: pf
@@ -216,6 +218,8 @@ answer in every degree.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} solves part 1 and step [](#s1-5){.pf-ref} solves part 2.
+
+:::
 
 :::
 
