@@ -34,6 +34,8 @@ $$
 In part (a), assume $a\neq0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -208,6 +210,8 @@ This is step [](#s1-5){.pf-ref}.
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} establish parts (a) and (b), respectively.
+
+:::
 
 :::
 
