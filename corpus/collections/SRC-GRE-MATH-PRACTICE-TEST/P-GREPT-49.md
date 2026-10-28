@@ -29,6 +29,8 @@ Which of the following statements is true about this sequence?
 (E) The sequence diverges for any $x_1 \neq 0$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -138,6 +140,8 @@ Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give exactly the two sign-de
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
