@@ -55,6 +55,8 @@ $$
 You can check that your result agrees with the usual perturbation theory.
 :::
 
+::: {.solution}
+
 Write $\lambda=g/4$ and
 \[
 S(x,\lambda)=\sum_{n=0}^{\infty}\lambda^nB_n(x),
@@ -225,6 +227,8 @@ Thus $B_{2,1}=21/8$, and step [](#s1-3){.pf-ref} gives $a_2=-21/8$.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} establish the requested recurrences, and steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref} give the first two energy corrections.
+
+:::
 
 :::
 
