@@ -50,6 +50,8 @@ with all other homology groups zero, determine the homology groups of $\underlin
 Use the same circle of ideas used in proving the Künneth theorem.
 :::
 
+::: {.solution}
+
 Use the standard homological grading on the internal Hom complex:
 \[
 \underline{\operatorname{Hom}}_n(C,D)
@@ -1056,6 +1058,8 @@ Step [](#s1-1){.pf-ref} records why the numerical half needs the missing free/pr
 hypothesis.
 Under that intended hypothesis, steps [](#s1-7){.pf-ref} through [](#s1-17){.pf-ref} compute all homology
 groups of the total Hom complex.
+
+:::
 
 :::
 
