@@ -24,6 +24,8 @@ Problem 11. Let $f:\mathbb D\to\mathbb C$ be an injective holomorphic function w
 with equality if and only if $f(z)=z$ for all $z\in\mathbb D$.
 :::
 
+::: {.solution}
+
 Set
 \[
 R\coloneqq\inf\{|w|:w\notin f(\mathbb D)\}.
@@ -122,6 +124,8 @@ R
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves the required inequality, and step [](#s1-4){.pf-ref} proves the equality characterization.
+
+:::
 
 :::
 
