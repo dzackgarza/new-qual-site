@@ -29,6 +29,8 @@ $f ( X )$has 7 roots (mod p) for 1 p (namely$p = 1 8 7 9 )$;
 Is$G _ { f } = G _ { 1 6 8 } , \mathrm { o r } \ A _ { 7 } { \mathrm { ? } }$
 :::
 
+::: {.solution}
+
 Let $L$ be the splitting field of
 $$
 f(X)=X^7-7X+3
@@ -192,6 +194,8 @@ The finite table is corroborating evidence rather than the logical step that exc
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} gives the requested Galois group.
+
+:::
 
 :::
 
