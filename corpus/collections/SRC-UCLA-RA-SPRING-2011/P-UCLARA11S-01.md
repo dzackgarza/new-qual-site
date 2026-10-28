@@ -20,6 +20,8 @@ F(x)=\int_0^x f(t)\,dt.
 Show that $F_n,F\in C([0,1])$ and that $F_n\to F$ uniformly on $[0,1]$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -187,6 +189,8 @@ Therefore the full sequence converges uniformly.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), while steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} prove part (b).
+
+:::
 
 :::
 
