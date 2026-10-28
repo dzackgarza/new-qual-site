@@ -20,6 +20,8 @@ audit:
 Find the asymptotic behavior as $x \gg 1$
 :::
 
+::: {.solution}
+
 Write
 $$
 \Phi(z)
@@ -471,6 +473,8 @@ Expand the first terms of the series in step [](#s1-10){.pf-ref}.
 
 Step [](#s1-9){.pf-ref} gives the leading asymptotic behavior, and step [](#s1-10){.pf-ref} gives the full
 asymptotic expansion.
+
+:::
 
 :::
 
