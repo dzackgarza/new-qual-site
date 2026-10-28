@@ -19,6 +19,8 @@ Compute the fundamental group of each space:
 4. the $1$-skeleton of the standard $3$-simplex $\Delta^3$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -170,6 +172,8 @@ circles, whose fundamental group is $F_3$.
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} compute the four requested fundamental groups.
+
+:::
 
 :::
 
