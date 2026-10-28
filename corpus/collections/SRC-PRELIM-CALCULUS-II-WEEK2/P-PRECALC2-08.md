@@ -15,6 +15,8 @@ review: draft
 Compute $\int _ { 0 } ^ { \pi / 2 } \frac { d x } { 1 + \tan ( x ) ^ { 2 0 2 0 } } .$
 :::
 
+::: {.solution}
+
 Let
 \[
 I
@@ -221,6 +223,8 @@ Divide step [](#s1-7){.pf-ref} by \(2\).
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the requested value.
+
+:::
 
 :::
 
