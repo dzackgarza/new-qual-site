@@ -27,6 +27,8 @@ onto the upper half-plane.
 The intended region is the part inside \(|z-i|<1\) and outside \(|z-i/2|\le 1/2\).
 :::
 
+::: {.solution}
+
 Let
 $$
 \Omega
@@ -351,6 +353,8 @@ Their composition is the displayed map.
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} gives the requested explicit conformal equivalence.
+
+:::
 
 :::
 
