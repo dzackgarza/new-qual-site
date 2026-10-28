@@ -31,6 +31,8 @@ converge uniformly to a solution $y$.
 Show that if $Y$ is another solution satisfying $|Y(t)-y_0|\le C$ on $[0,T]$, then $Y(t)=y(t)$ for all $t\in[0,T]$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -269,6 +271,8 @@ Since $t$ was arbitrary, the equality holds on all of $[0,T]$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} proves uniqueness of the solution within the stated bounded class.
+
+:::
 
 :::
 
