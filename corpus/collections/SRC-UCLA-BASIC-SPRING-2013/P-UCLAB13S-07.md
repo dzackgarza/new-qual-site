@@ -33,6 +33,8 @@ converges if the operator norm of $A$ is less than one.
 (d) Show that $\exp(\ln(I+A))=I+A$ if the operator norm of $A$ is less than one.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -380,6 +382,8 @@ This proves part (d).
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} answers part (a), step [](#s1-6){.pf-ref} proves part (b), step [](#s1-8){.pf-ref} proves part (c), and step [](#s1-11){.pf-ref} proves part (d).
+
+:::
 
 :::
 
