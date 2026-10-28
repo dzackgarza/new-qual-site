@@ -24,6 +24,8 @@ Let $M$ be a real matrix that is both orthogonal and symmetric.
 (b) Does the conclusion change if $M$ is only positive semidefinite?
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -236,6 +238,8 @@ M=I.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves part (a), and step [](#s1-7){.pf-ref} answers part (b).
+
+:::
 
 :::
 
