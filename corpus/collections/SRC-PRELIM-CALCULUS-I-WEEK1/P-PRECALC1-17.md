@@ -25,6 +25,8 @@ Suppose that $f\sim g$. Which of these does NOT necessarily follow?
 (e) $g\sim f$
 :::
 
+::: {.solution}
+
 Assume
 \[
 f\sim g,
@@ -262,6 +264,8 @@ give a counterexample to (c).
 ::: pf-qed
 
 Step [](#s1-9){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
