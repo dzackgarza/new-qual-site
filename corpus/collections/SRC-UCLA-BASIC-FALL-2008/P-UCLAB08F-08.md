@@ -25,6 +25,8 @@ span $\mathbb C^n$?
 Prove your assertion.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -152,6 +154,8 @@ Step [](#s1-4){.pf-ref} gives the required counterexample.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} answers the question.
+
+:::
 
 :::
 
