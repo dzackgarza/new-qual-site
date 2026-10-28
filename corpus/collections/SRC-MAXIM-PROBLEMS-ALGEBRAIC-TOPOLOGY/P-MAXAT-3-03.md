@@ -19,6 +19,8 @@ audit:
 Prove Borsuk-Uhlam theorem.
 :::
 
+::: {.solution}
+
 The Borsuk--Ulam theorem states that for every continuous map
 \[
 f:S^n\to\mathbb R^n
@@ -206,6 +208,8 @@ The contradiction in step [](#s1-7){.pf-ref} disproves the assumption in step []
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} proves the theorem.
+
+:::
 
 :::
 
