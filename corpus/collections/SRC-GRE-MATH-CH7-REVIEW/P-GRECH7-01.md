@@ -25,6 +25,8 @@ For which of the following intervals does $P(x) = 4x^3 - 4x^2 - 33x + 45$ have a
 (E) $[3, 4]$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -105,6 +107,8 @@ This is exactly the interval identified in step [](#s1-3){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives the required choice.
+
+:::
 
 :::
 
