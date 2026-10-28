@@ -20,6 +20,8 @@ Let D be a principal ideal domain and let P be a non-zero prime ideal.
 Show that $D _ { P }$ , the localization of D at P , is a principal ideal domain and has a unique irreducible element, up to associates.
 :::
 
+::: {.solution}
+
 Set
 $$
 S
@@ -666,6 +668,8 @@ and step [](#s1-15){.pf-ref} shows every irreducible is associate to it.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves that $D_P$ is a PID, and step [](#s1-16){.pf-ref} proves uniqueness of the irreducible up to associates.
+
+:::
 
 :::
 
