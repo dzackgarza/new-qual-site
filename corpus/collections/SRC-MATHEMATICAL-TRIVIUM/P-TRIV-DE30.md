@@ -25,6 +25,8 @@ $$
 with $x \in [ 1 , e ]$ such that $y ( 1 ) = y ( e ) = 0$
 :::
 
+::: {.solution}
+
 Set
 \[
 t=\log x,
@@ -147,6 +149,8 @@ Substitute $t=\log x$ and $e^{-t}=1/x$.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} lists every eigenvalue and corresponding nonzero solution satisfying the two boundary conditions.
+
+:::
 
 :::
 
