@@ -29,6 +29,8 @@ Show that there is $\lambda\in\mathbb R$ such that
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 p_0=(x_0,y_0).
@@ -370,6 +372,8 @@ Step [](#s1-9){.pf-ref} gives equality of the two coordinate components.
 ::: pf-qed
 
 Step [](#s1-10){.pf-ref} is the required Lagrange-multiplier condition.
+
+:::
 
 :::
 
