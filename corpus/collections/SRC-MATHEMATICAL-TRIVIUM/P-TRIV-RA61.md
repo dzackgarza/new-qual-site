@@ -19,6 +19,8 @@ audit:
 Show that $\int _ { 0 } ^ { \pi } \log ( 1 - 2 a \cos x + a ^ { 2 } ) d x = 0 { \mathrm { ~ f o r ~ } } | a | < 1$
 :::
 
+::: {.solution}
+
 Assume $a\in\mathbb R$ and $|a|<1$.
 
 ::: pf
@@ -208,6 +210,8 @@ Every term on the right-hand side of step [](#s1-5){.pf-ref} vanishes by step []
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required identity.
+
+:::
 
 :::
 
