@@ -26,6 +26,8 @@ where $r , a > 0$ are constants and $\phi$ varies from $0$ to $\infty$.
 Find the length of the helix as a function of $\phi$
 :::
 
+::: {.solution}
+
 Let
 $$
 \gamma(t)
@@ -138,6 +140,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required length function.
+
+:::
 
 :::
 
