@@ -26,6 +26,8 @@ Let $L$ be the least common multiple of $1001$ and $10101$. What's the sum of th
 (E) $33$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -96,6 +98,8 @@ By step [](#s1-2){.pf-ref}, $L$ has six digits, each equal to $1$. Their sum is 
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the requested digit sum.
+
+:::
 
 :::
 
