@@ -27,6 +27,8 @@ $$
 Use this to show that $f ( z )$ must be a constant (Liouville’s theorem).
 :::
 
+::: {.solution}
+
 Choose $M>0$ such that
 $$
 \abs{f(z)}\le M
@@ -166,6 +168,8 @@ The points $a\ne b$ were arbitrary. By step [](#s1-3){.pf-ref}, any two distinct
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} establishes the requested limit, and step [](#s1-4){.pf-ref} gives the stated consequence.
+
+:::
 
 :::
 
