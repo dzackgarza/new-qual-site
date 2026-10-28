@@ -51,6 +51,8 @@ Figure 5 of the source (contour for problem 32) shows, with the cut line along t
 The source uses $I$ in the fourth part without defining it; it presumably denotes the contour integral of the third part.
 :::
 
+::: {.solution}
+
 Write
 $$
 s=\sigma+i\tau
@@ -788,6 +790,8 @@ continuation.
 Steps [](#s1-3){.pf-ref} and [](#s1-6){.pf-ref} answer the convergence and integral-representation parts.
 Steps [](#s1-7){.pf-ref} through [](#s1-17){.pf-ref} construct the contour continuation and functional equation.
 Steps [](#s1-18){.pf-ref} through [](#s1-20){.pf-ref} compute and interpret $\zeta(-1)$.
+
+:::
 
 :::
 
