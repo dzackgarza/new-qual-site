@@ -24,6 +24,8 @@ Let $1\le p<\infty$ and let $U(z)$ be harmonic on $\mathbb C$ such that
 Prove that $U(z)=0$ for all $z=x+iy\in\mathbb C$.
 :::
 
+::: {.solution}
+
 Let
 $$
 M\coloneqq\left(\iint_{\RR^2}|U|^p\,dA\right)^{1/p}<\infty.
@@ -105,6 +107,8 @@ Since $p<\infty$, the right-hand side tends to $0$ as $R\to\infty$. Hence $|U(z_
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
