@@ -22,6 +22,8 @@ Let $C$ be the positively oriented boundary of the upper semicircle of radius $3
 both directly and by Green's theorem.
 :::
 
+::: {.solution}
+
 Write
 $$
 P(x,y)=2x+y,
@@ -196,6 +198,8 @@ $$
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} compute the integral both directly and via Green's theorem, with the same value.
+
+:::
 
 :::
 
