@@ -27,6 +27,8 @@ a. Prove that the intermediate field $C_{\text{alg}} \subset C$ consisting of el
 b. Prove that if $F\to E$ is an algebraic extension, there exists a homomorphism $E\to C$ that is the identity on $F$.
 :::
 
+::: {.solution}
+
 Set $C_{\mathrm{alg}}=\{z\in C:z\text{ is algebraic over }F\}$.
 
 ::: pf
@@ -76,6 +78,8 @@ Partially order pairs $(L,\varphi)$, where $F\subseteq L\subseteq E$ and $\varph
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} proves part (a), and step [](#s1-3){.pf-ref} proves part (b).
+
+:::
 
 :::
 
