@@ -27,6 +27,8 @@ For $f\in L^1(\mu)$, show that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -106,6 +108,8 @@ Because $\varepsilon>0$ is arbitrary, the integral tends to $0$.
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
