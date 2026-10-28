@@ -24,6 +24,8 @@ f_n(x):=n\int_{\mathbb R}f(x-y)\phi(ny)\,dy\longrightarrow0
 Lebesgue almost everywhere.
 :::
 
+::: {.solution}
+
 Define
 \[
 h(x)
@@ -213,6 +215,8 @@ Step [](#s1-4){.pf-ref} says this holds almost everywhere.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the desired almost-everywhere convergence.
+
+:::
 
 :::
 
