@@ -22,6 +22,8 @@ review: draft
 (c) Deduce that $\ell^1(\mathbb Z)$ is not reflexive.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -285,6 +287,8 @@ But $\ell^1(\mathbb Z)$ is separable, while step [](#s1-6){.pf-ref} says $(\ell^
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} proves part (a), step [](#s1-7){.pf-ref} proves part (b), and step [](#s1-9){.pf-ref} proves part (c).
+
+:::
 
 :::
 
