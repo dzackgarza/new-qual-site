@@ -28,6 +28,8 @@ The source states that $f$ satisfies the Cauchy–Riemann equations at every poi
 Explain how this is possible.
 :::
 
+::: {.solution}
+
 Write
 \[
 f=u+iv.
@@ -306,6 +308,8 @@ continuous at the origin.
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} explains exactly why there is no contradiction.
+
+:::
 
 :::
 
