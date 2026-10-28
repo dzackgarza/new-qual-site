@@ -24,6 +24,8 @@ Let $K\subset\mathbb R^n$ be compact. Assume that for every $\varepsilon>0$ and 
 (b) Give an example showing that $K$ need not be path connected.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -463,6 +465,8 @@ This proves part (b).
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} proves part (a), and step [](#s1-14){.pf-ref} gives the requested example for part (b).
+
+:::
 
 :::
 
