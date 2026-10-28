@@ -20,6 +20,8 @@ Let R be a non-zero ring with identity.
 Show that every proper ideal of R is contained in a maximal ideal.
 :::
 
+::: {.solution}
+
 Let
 $$
 I\trianglelefteq R
@@ -257,6 +259,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-7){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
