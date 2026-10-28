@@ -25,6 +25,8 @@ $$
 such that $u ( 1 ) = 0$ and $u ^ { \prime } ( e ) = 0$ . What values of λ are allowed?
 :::
 
+::: {.solution}
+
 Set
 \[
 t=\log x,
@@ -135,6 +137,8 @@ Step [](#s1-2){.pf-ref} shows there are no additional eigenvalues.
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} gives all nonzero solutions and all allowed values of $\lambda$.
+
+:::
 
 :::
 
