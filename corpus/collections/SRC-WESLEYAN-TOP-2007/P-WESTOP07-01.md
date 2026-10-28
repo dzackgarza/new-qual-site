@@ -15,6 +15,8 @@ audit:
 2. Prove that $\mathbb R^2$ is not homeomorphic to $\mathbb R^n$ for any $n>2$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -342,6 +344,8 @@ $$
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} proves part (1), and step [](#s1-7){.pf-ref} proves part (2).
+
+:::
 
 :::
 
