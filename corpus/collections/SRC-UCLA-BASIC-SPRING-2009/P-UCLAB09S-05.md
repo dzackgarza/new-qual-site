@@ -29,6 +29,8 @@ x(t)=e^{At}x(0).
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -385,6 +387,8 @@ Substitute the matrices $A$ and $A^2$ into the formula in step [](#s1-7){.pf-ref
 ::: pf-qed
 
 Step [](#s1-8){.pf-ref} is the requested matrix exponential.
+
+:::
 
 :::
 
