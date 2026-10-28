@@ -29,6 +29,8 @@ prove that the radius of convergence of
 is at least $AB$.
 :::
 
+::: {.solution}
+
 Let \(R\) denote the radius of convergence of
 \[
 \sum_{n=0}^{\infty}a_nb_nz^n.
@@ -318,6 +320,8 @@ radius \(R\) is at least \(AB\).
 ::: pf-qed
 
 Step [](#s1-13){.pf-ref} is the required estimate.
+
+:::
 
 :::
 
