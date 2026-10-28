@@ -19,6 +19,8 @@ audit:
 Find $\operatorname* { l i m } _ { x \to 0 } { \frac { \sin x } { x } }$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -127,6 +129,8 @@ Thus the two-sided limit exists and equals $1$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required limit.
+
+:::
 
 :::
 
