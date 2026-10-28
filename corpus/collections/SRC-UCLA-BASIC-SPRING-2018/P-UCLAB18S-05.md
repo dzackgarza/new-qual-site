@@ -25,6 +25,8 @@ Prove or disprove each assertion:
 2. $AB+BA$ is positive definite.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -262,6 +264,8 @@ Thus
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves assertion 1, and steps [](#s1-2){.pf-ref} through [](#s1-7){.pf-ref} disprove assertion 2.
+
+:::
 
 :::
 
