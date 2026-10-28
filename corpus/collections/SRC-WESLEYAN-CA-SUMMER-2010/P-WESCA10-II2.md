@@ -30,6 +30,8 @@ Prove that for every piecewise smooth closed path $\gamma$ avoiding the poles an
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -103,6 +105,8 @@ and substitution yields the displayed formula.
 ::: pf-qed
 
 Step [](#s1-1){.pf-ref} proves part (a), and step [](#s1-2){.pf-ref} proves part (b).
+
+:::
 
 :::
 
