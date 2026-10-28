@@ -19,6 +19,8 @@ audit:
 Calculate $J ( y ) = \int _ { 0 } ^ { \infty } e ^ { - a x } \frac { \sin x y } { x } d x , a > 0 .$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -166,6 +168,8 @@ Step [](#s1-5){.pf-ref} gives $C=0$.
 ::: pf-qed
 
 Step [](#s1-6){.pf-ref} is the required value.
+
+:::
 
 :::
 
