@@ -24,6 +24,8 @@ A=\begin{pmatrix}2&1\\0&\sqrt3\end{pmatrix};
 that is, determine the maximum of $\|Ax\|$ over all unit vectors $x$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -227,6 +229,8 @@ Therefore the maximum is exactly $\sqrt6$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required value of the operator norm.
+
+:::
 
 :::
 
