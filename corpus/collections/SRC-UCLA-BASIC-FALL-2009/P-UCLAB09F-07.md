@@ -25,6 +25,8 @@ Prove that
 \]
 :::
 
+::: {.solution}
+
 Let
 \[
 \chi_T(X)
@@ -135,6 +137,8 @@ in $\operatorname{End}(V)$. A vector space spanned by $n$ vectors has dimension 
 ::: pf-qed
 
 Step [](#s1-4){.pf-ref} is the required inequality.
+
+:::
 
 :::
 
