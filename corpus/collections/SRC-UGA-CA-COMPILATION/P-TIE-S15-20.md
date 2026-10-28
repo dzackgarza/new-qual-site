@@ -20,6 +20,8 @@ audit:
 Let f be a non-constant analytic function on D with $f ( \mathbb { D } ) \subseteq \mathbb { D } . { \mathrm { ~ U s e ~ } } \psi _ { a } ( f ( z ) )$ (where $a = f ( 0 )$ $\psi _ { a } ( z ) = \frac { a - z } { 1 - \bar { a } z } )$ to prove that ${ \frac { | f ( 0 ) | - | z | } { 1 + | f ( 0 ) | | z | } } \leq | f ( z ) | \leq { \frac { | f ( 0 ) | + | z | } { 1 - | f ( 0 ) | | z | } } ,$
 :::
 
+::: {.solution}
+
 Set $a\coloneqq f(0)$ and $\phi_a(w)\coloneqq(a-w)/(1-\overline a w)$.
 
 ::: pf
@@ -112,6 +114,8 @@ Hence $A-r\le s(1+Ar)$, so $s\ge(A-r)/(1+Ar)$. When $A<r$, the right-hand side i
 ::: pf-qed
 
 Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} are the two requested inequalities.
+
+:::
 
 :::
 
