@@ -24,6 +24,8 @@ Prove
 \]
 :::
 
+::: {.solution}
+
 Choose $M<\infty$ such that
 $$
 \abs{f_n(x)}\leq M
@@ -117,6 +119,8 @@ for every $\varepsilon>0$. Since $\mu(X)<\infty$, letting $\varepsilon\downarrow
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
