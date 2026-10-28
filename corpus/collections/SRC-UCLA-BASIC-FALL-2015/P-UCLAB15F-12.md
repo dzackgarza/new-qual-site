@@ -30,6 +30,8 @@ M=\begin{pmatrix}
 is positive definite.
 :::
 
+::: {.solution}
+
 Let
 \[
 \mathbf1=
@@ -192,6 +194,8 @@ Step [](#s1-4){.pf-ref} verifies this condition.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
