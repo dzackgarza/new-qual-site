@@ -35,6 +35,8 @@ Hint: use continuity of $N$ on the sphere $\{x:\|x\|_2=1\}$.
 (c) Show that if $L$ is an $n$-dimensional subspace of an arbitrary normed vector space $V$, then $L$ is closed.
 :::
 
+::: {.solution}
+
 Let
 \[
 e_1,\ldots,e_n
@@ -414,6 +416,8 @@ Hence
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} prove part (a), steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} prove part (b), and steps [](#s1-6){.pf-ref} through [](#s1-9){.pf-ref} prove part (c).
+
+:::
 
 :::
 
