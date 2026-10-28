@@ -21,6 +21,8 @@ a^2,\qquad b^2,\qquad ab.
 \]
 :::
 
+::: {.solution}
+
 Let
 $$
 F=\pi_1(S^1\vee S^1)=\langle a,b\rangle
@@ -158,6 +160,8 @@ whose stabilizer of the identity coset is $N$. Since $N$ is normal, the covering
 ::: pf-qed
 
 Steps [](#s1-3){.pf-ref} through [](#s1-6){.pf-ref} completely specify the requested picture and verify that it corresponds to the given normal subgroup.
+
+:::
 
 :::
 
