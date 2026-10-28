@@ -32,6 +32,8 @@ that passes through the point $(1, 1)$ must also pass through which of the follo
 (E) $(0, 1)$
 :::
 
+::: {.solution}
+
 Let $G$ be an antiderivative of $g$.
 
 ::: pf
@@ -117,6 +119,8 @@ Thus step [](#s1-2){.pf-ref} shows that $(-1,-1)$ lies on the same integral curv
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} gives the required point and corresponding choice.
+
+:::
 
 :::
 
