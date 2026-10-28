@@ -25,6 +25,8 @@ where $a,b\in\mathbb Q$ and $n\ge1$,
 Prove that $f(x,y)=0$ for all $(x,y)\in\mathbb R^2$.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -190,6 +192,8 @@ The only remaining value is $0$.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
