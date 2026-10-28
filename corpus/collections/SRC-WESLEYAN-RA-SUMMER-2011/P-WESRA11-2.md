@@ -27,6 +27,8 @@ Does either imply the other?
 Give proofs or counterexamples.
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -88,6 +90,8 @@ Step [](#s1-1){.pf-ref} disproves (i)\(\Rightarrow\)(ii), and step [](#s1-2){.pf
 ::: pf-qed
 
 Step [](#s1-3){.pf-ref} is the required comparison.
+
+:::
 
 :::
 
