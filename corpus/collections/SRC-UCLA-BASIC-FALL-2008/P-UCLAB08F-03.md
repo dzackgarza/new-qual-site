@@ -28,6 +28,8 @@ is continuous, but
 does not converge to $\int_0^1 f(t)\,dt$.
 :::
 
+::: {.solution}
+
 For each integer $n\ge2$, define
 \[
 f_n(t)=
@@ -178,6 +180,8 @@ Hence
 ::: pf-qed
 
 Steps [](#s1-1){.pf-ref} through [](#s1-5){.pf-ref} give the required example.
+
+:::
 
 :::
 
