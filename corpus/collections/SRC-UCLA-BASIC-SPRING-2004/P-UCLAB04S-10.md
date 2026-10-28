@@ -22,6 +22,8 @@ Show that $T$ is similar to a diagonal matrix.
 You may not use the Spectral Theorem.
 :::
 
+::: {.solution}
+
 Let $T\in M_n(\mathbb R)$ be symmetric. The proof is by induction on $n$.
 
 ::: pf
@@ -166,6 +168,8 @@ Thus $T$ is similar to a diagonal matrix.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} proves the required diagonalizability, and steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} establish it without invoking the Spectral Theorem.
+
+:::
 
 :::
 
