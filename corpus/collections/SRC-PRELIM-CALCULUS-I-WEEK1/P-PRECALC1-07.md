@@ -15,6 +15,8 @@ review: draft
 Suppose that $f ( x ) = 3 x ^ { 2 } + b x + c$ has a non-simple root at $x = 2$ . What is $f ( 5 ) ?$
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: pf-step
@@ -121,6 +123,8 @@ f(5)=3(5-2)^2=27}.
 ::: pf-qed
 
 Step [](#s1-5){.pf-ref} is the requested value.
+
+:::
 
 :::
 
