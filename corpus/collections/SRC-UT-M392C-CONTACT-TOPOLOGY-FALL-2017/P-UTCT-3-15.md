@@ -37,6 +37,8 @@ Theorem 3.13 (Giroux et al.) assumes that $\partial F$ is a union of leaves and 
 Show that the hypotheses of Theorem 3.13 hold for generic a generic foliation of $F$.
 :::
 
+::: {.solution}
+
 The relevant genericity statement is the Kupka--Smale/Peixoto theorem for
 flows on compact surfaces, applied to a vector field defining the oriented
 singular foliation.
@@ -414,6 +416,8 @@ The boundary condition is step [](#s1-13){.pf-ref}.
 ::: pf-qed
 
 Step [](#s1-14){.pf-ref} is precisely Exercise 3.15.
+
+:::
 
 :::
 
