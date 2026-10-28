@@ -23,6 +23,8 @@ Prove that
 \]
 :::
 
+::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1-1}
@@ -103,6 +105,8 @@ The squeeze theorem therefore gives
 ::: pf-qed
 
 Step [](#s1-2){.pf-ref} is the required conclusion.
+
+:::
 
 :::
 
