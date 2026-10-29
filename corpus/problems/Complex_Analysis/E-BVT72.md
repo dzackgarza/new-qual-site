@@ -12,36 +12,43 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: Part (1) of the source reads "which has infinitely zeros"; the statement supplies "many".
 ---
 
 ::: {.problem}
-(1) Explicitly write down an example of a non-zero analytic function in $|z|<1$ which has infinitely zeros in $|z|<1$.
+(1) Explicitly write down an example of a non-zero analytic function in $\abs{z}<1$ which has infinitely many zeros in $\abs{z}<1$.
 
 (2) Why does not the phenomenon in (1) contradict the uniqueness theorem?
 :::
 
 ::: {.solution}
-Take
-\[
-f(z)=\sin\!\left(\frac{1}{1-z}\right).
-\]
-The function $z\mapsto(1-z)^{-1}$ is holomorphic on the unit disk, since its
-only pole is at the boundary point $z=1$. Hence $f$ is holomorphic on
-$|z|<1$, and it is not identically zero.
 
-For every sufficiently large positive integer $n$,
-\[
-z_n=1-\frac{1}{n\pi}
-\]
-lies in the unit disk and satisfies
-\[
-f(z_n)=\sin(n\pi)=0.
-\]
-Thus $f$ has infinitely many zeros in $\mathbb D$.
+::: pf
 
-This does not contradict the identity theorem. The zeros $z_n$ converge to
-$1$, but $1\notin\mathbb D$. Hence the zero set has no accumulation point in
-the domain of holomorphy. The identity theorem forces a holomorphic function
-to vanish identically only when its zeros have an accumulation point inside
-the domain.
+::: {.pf-step #example}
+(1) $\boxed{f(z)=\sin\qty(\frac{1}{1-z})}$ is a nonzero holomorphic function on $\DD$ whose zeros in $\DD$ include $z_n=1-\frac{1}{n\pi}$ for all integers $n\ge1$.
+
+::: pf-proof
+The function $z\mapsto(1-z)^{-1}$ is holomorphic on $\DD$, since its only pole is the boundary point $z=1$, so $f$ is holomorphic on $\DD$; it is not identically zero because $f(0)=\sin1\neq0$.
+Each $z_n$ lies in $(0,1)\subset\DD$, and $f(z_n)=\sin(n\pi)=0$.
+:::
+
+:::
+
+::: pf-step
+(2) The zero set of $f$ has no accumulation point in $\DD$, so the uniqueness theorem does not apply.
+
+::: pf-proof
+The uniqueness theorem forces a holomorphic function on a connected open set to vanish identically only when its zero set has an accumulation point inside that set.
+The zeros of $f$ are the points $1-\frac{1}{n\pi}$, $n\in\ZZ\setminus\theset0$, that lie in $\DD$; these accumulate only at $1\notin\DD$.
+:::
+
+:::
+
+:::
+
 :::
