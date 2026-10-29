@@ -1375,7 +1375,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Real_Analysis/E-OMK54.md` | `3d4270c82854881279e38d803359431af64d0a6b` | `26ff450888ead864838130035e8479be4ce49a6a` | Read; removed internal commentary about card contents and solution coverage |
 | [x] | `corpus/problems/Real_Analysis/E-PUNDP.md` | `457f9762cbf95e6da158737fab0465e5703c2dc9` | `457f9762cbf95e6da158737fab0465e5703c2dc9` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-QCYEM.md` | `13ed504485c1fda1f67084b6647930f4a36a570e` | `13ed504485c1fda1f67084b6647930f4a36a570e` | Read; retained |
-| [x] | `corpus/problems/Real_Analysis/E-QFOPP.md` | `2534fa067cb49fb4868fb877a542d475badebb05` | `2534fa067cb49fb4868fb877a542d475badebb05` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-QSNCL.md` | `e0f3444cbe609b3efe11429c9508d2271dcf0aaf` | `e0f3444cbe609b3efe11429c9508d2271dcf0aaf` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-SA3HI.md` | `f0e21931766cbbf9b170b93c4452634889c139cf` | `f0e21931766cbbf9b170b93c4452634889c139cf` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-SDQ4U.md` | `586b14388d442a27c69c0f3f0e6b24b7eca49116` | `0c5b30beaebf9309792bf55386312ad9ddb8275c` | Read; replaced moral framing and self-certification with the mathematical inclusion correction |

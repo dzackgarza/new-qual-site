@@ -39,7 +39,6 @@ source:
   - id: E-MFCCS
   - id: E-OMK54
   - id: E-QCYEM
-  - id: E-QFOPP
   - id: E-QSNCL
   - id: E-SA3HI
   - id: E-TXSKL

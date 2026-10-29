@@ -96,7 +96,7 @@ $\int f(x+h)\,dx = \int f$ and $\int \delta^{-n}f(x/\delta)\,dx = \int f$ for $f
 
 ::: pf-proof
 
-For $f = \chi_E$ these are $m(E - h) = m(E)$ and $\delta^{-n}m(\delta E) = m(E)$. Linearity extends them to simple functions, the monotone convergence theorem to measurable $f \geq 0$, and the decomposition $f = f^+ - f^-$ to $L^1$. See [[E-QFOPP]] and [[E-KVDIA]].
+For $f = \chi_E$ these are $m(E - h) = m(E)$ and $\delta^{-n}m(\delta E) = m(E)$. Linearity extends them to simple functions, the monotone convergence theorem to measurable $f \geq 0$, and the decomposition $f = f^+ - f^-$ to $L^1$. See [[E-OMK54]] and [[E-KVDIA]].
 
 :::
 
