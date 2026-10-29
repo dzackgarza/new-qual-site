@@ -23,19 +23,29 @@ $$
 :::
 
 ::: {.solution}
-Let $g(z) \coloneqq e^z\cos(z)$, an entire function with $g(1/z ) = f(z)$ for $z\ne0$.
-The Taylor series of $g$ at $0$, evaluated at $1/z$, is the Laurent series of $f$ on $\abs z>0$:
-$$
-\begin{aligned}
-g(z) 
-&= e^{z}\cos(z)\\
-&= {1\over 2}e^z\qty{e^{iz} + e^{-iz}} \\
-&= {1\over 2}\qty{e^{(1+i)z} + e^{(1-i)z}} \\
-&= {1\over 2} \sum_{k\geq 0}\qty{(1+i)^k + (1-i)^k} {z^k\over k!} \\
-\implies f(z)
-&= {1\over 2} \sum_{k\geq 0}\qty{(1+i)^k + (1-i)^k} {1 \over k!z^k }.
-\end{aligned}
-$$
+Let $g(z)\coloneqq e^z\cos z$, an entire function with $f(z)=g(1/z)$ for $z\neq0$.
+
+::: pf
+
+::: {.pf-step #taylor}
+$g(z)=\frac12\sum_{k\ge0}\qty{(1+i)^k+(1-i)^k}\frac{z^k}{k!}$ for all $z\in\CC$.
+
+::: pf-proof
+$g(z)=\frac12e^z\qty(e^{iz}+e^{-iz})=\frac12\qty(e^{(1+i)z}+e^{(1-i)z})$; expand each exponential.
+:::
+
+:::
+
+::: pf-step
+On $\abs z>0$, $f(z)=\boxed{\frac12\sum_{k\ge0}\qty{(1+i)^k+(1-i)^k}\frac1{k!\,z^k}}$.
+
+::: pf-proof
+Substitute $1/z$ for $z$ in step [](#taylor){.pf-ref}; the series converges for every $z\neq0$ and has only nonpositive powers of $z$, so it is the Laurent series of $f$ at $0$.
+:::
+
+:::
+
+:::
 
 :::
 
