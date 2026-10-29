@@ -32,7 +32,7 @@ A splitting field is a normal algebraic extension. Thus $F/K$ is normal.
 Let $g\in K[x]$ be irreducible and suppose $g$ has a root $\alpha\in F$. By the defining irreducible-polynomial criterion for normality, every irreducible polynomial over $K$ having one root in $F$ splits completely over $F$.
 
 Applying this criterion to $g$ gives
-\[
+$$
 \boxed{g\text{ splits into linear factors in }F[x].}
-\]
+$$
 :::
