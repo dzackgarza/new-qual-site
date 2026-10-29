@@ -85,6 +85,20 @@ mathematical correction under its own node, not under copy policy.
     excerpts include page facts; "Choose topic" over areas; home contents list.
     **Acceptance:** each corrected on the deployed pages. **Closed.**
 
+  Round 2 (revision `848f40677`) injected:
+  - **`ad2-renderer`**. **Needs:** none. `--` in wikilink text, block qualifiers and slogans;
+    citation style dropped locators such as `Section 10.1`. **Closed.**
+  - **`ad2-algebra-content`**. **Needs:** none. CARD-04: PR-TAPZF/FF-UYMWY; FD-XT6HD/PR-TI6YA;
+    PR-QDRB4/PR-3TYBE; PR-E4T3S/resolvent-cubic remark; T-V7JRG/FT-PUVIQ; P-UZDCX/T-NGBVC;
+    P-ZYHXO/FD-3GZPO; C-BOM4E/PR-OFBRQ; FF-2AKVH/FF-HAMDC; separability cluster PR-TLBPS,
+    PR-ENHVC, FD-6WSIA, C-C2GYX, E-6OUJV. which-kind-of-ring claims 3 and 3 are nonassociate.
+    PR-DLPTR restates D-LIEMF. Page restatements: finite-fields, fields/polynomials,
+    commutative-algebra, which-kind-of-ring, maschke-and-schur. **Acceptance:** each read and repaired.
+  - **`ad2-topology-content`**. **Needs:** none. Citation-only `concept` blocks on about 80
+    topology cards (D-EBNUE, D-IGUUS, …); FF-AE7ID/C-CT2NX merge; fundamental-group/theorems
+    change-of-basepoint restatement; curves-in-projective-space opening and projection
+    paragraphs; T-2YTCZ proof notation. **Acceptance:** each read and repaired.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
