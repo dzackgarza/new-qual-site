@@ -13,22 +13,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 136 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source does not exclude fields; a field has the nonzero ideal $R$ but no nonzero prime ideal. The statement now assumes $R$ is not a field.
 ---
 
 ::: {.problem}
-Let R be a commutative Noetherian domain with identity.
+Let R be a commutative Noetherian domain with identity that is not a field.
 Prove that every nonzero ideal of R contains a product of nonzero prime ideals of R.
-:::
-
-::: {.remark}
-Erratum: under the usual convention that the product has at least one prime-ideal factor, the statement needs the additional hypothesis that $R$ is not a field.
-Indeed, if $R$ is a field, then $R$ is its only nonzero ideal and $R$ has no nonzero prime ideals.
-The proof below establishes the intended non-field statement.
 :::
 
 ::: {.solution}
 
-Assume that $R$ is not a field.
 Call an ideal
 $$
 I\trianglelefteq R
@@ -47,7 +44,6 @@ $$
 ::: {.pf-step #s1-1}
 
 The unit ideal $R$ is good.
-
 
 ::: pf-proof
 
@@ -99,7 +95,6 @@ I\ne(0)
 $$
 Then $\mathcal B$ is nonempty.
 
-
 ::: pf-proof
 
 This is exactly the negation of the desired conclusion.
@@ -111,7 +106,6 @@ This is exactly the negation of the desired conclusion.
 ::: {.pf-step #s1-3}
 
 The poset $\mathcal B$, ordered by inclusion, has a maximal element.
-
 
 ::: pf-proof
 
@@ -146,7 +140,6 @@ $$
 
 The ideal $I$ is proper.
 
-
 ::: pf-proof
 
 Step [](#s1-1){.pf-ref} shows that
@@ -170,7 +163,6 @@ $$
 ::: {.pf-step #s1-5}
 
 The ideal $I$ is not prime.
-
 
 ::: pf-proof
 
@@ -204,7 +196,6 @@ $$
 ab\in I.
 $$
 
-
 ::: pf-proof
 
 By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}, the ideal $I$ is proper but not prime.
@@ -223,7 +214,6 @@ I+(a)
 I+(b)
 $$
 strictly contain $I$.
-
 
 ::: pf-proof
 
@@ -257,7 +247,6 @@ I+(a)
 I+(b)
 $$
 is good.
-
 
 ::: pf-proof
 
@@ -294,7 +283,6 @@ Q_1\cdots Q_s
 I+(b).
 $$
 
-
 ::: pf-proof
 
 This is exactly the meaning of step [](#s1-8){.pf-ref}.
@@ -311,7 +299,6 @@ $$
 \subseteq
 I.
 $$
-
 
 ::: pf-proof
 
@@ -351,7 +338,6 @@ P_1\cdots P_rQ_1\cdots Q_s
 $$
 is contained in $I$.
 
-
 ::: pf-proof
 
 By step [](#s1-9){.pf-ref},
@@ -385,7 +371,6 @@ $$
 P_1\cdots P_rQ_1\cdots Q_s
 $$
 is nonzero.
-
 
 ::: pf-proof
 
@@ -422,7 +407,6 @@ Hence the product ideal is nonzero.
 
 The ideal $I$ is good.
 
-
 ::: pf-proof
 
 By step [](#s1-11){.pf-ref},
@@ -447,7 +431,6 @@ $$
 I\in\mathcal B.
 $$
 
-
 ::: pf-proof
 
 Membership in
@@ -462,8 +445,7 @@ means that $I$ is not good, whereas step [](#s1-13){.pf-ref} shows that it is go
 
 ::: {.pf-step #s1-15}
 
-Therefore every nonzero ideal of a non-field Noetherian domain contains a product of nonzero prime ideals.
-
+Therefore every nonzero ideal of $R$ contains a product of nonzero prime ideals.
 
 ::: pf-proof
 
@@ -485,12 +467,6 @@ $$
 $$
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-15){.pf-ref} proves the intended statement under the necessary non-field qualification recorded in the remark.
 
 :::
 
