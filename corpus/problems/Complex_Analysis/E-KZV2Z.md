@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-KZV2Z
 kind: problem
-title: $1/x^2+3x+2$
+title: $\int_0^\infty\frac{dx}{x^2+3x+2}$ by a keyhole contour
 classification:
   areas:
   - complex-analysis
@@ -13,82 +13,69 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source prints the integral over R, which diverges because x^2+3x+2 vanishes at -1 and -2. The solution computes the integral over (0, infinity), and the statement now asks for that integral.
 ---
 
 ::: {.exercise}
-\[
-I\definedas \int_\RR {1\over x^2 + 3x+ 2 }\dx
-.\]
-
- 
+Compute
+$$
+I\coloneqq\int_0^\infty {1\over x^2 + 3x+ 2 }\dx
+.$$
 
 :::
 
 ::: {.solution}
-Note that $f(x) = (x+2)(x+1)$, so the singularities on on $\RR_{< 0}$.^[Phantom log trick.]
-The function isn't even, so a semicircular contour won't work.
-Attempting to find a ray-like symmetry only yields one option:
-\[
-f(z) = f(e^{i\theta } z) \implies \theta = 2k\pi
-,\]
-which suggests a keyhole.
-But since there's no $\log$ in $f$, there's no monodromy, and the contributions cancel out.
-So introduce a log with a branch cut along $\theta = 0$, and consider
-\[
-\int f(z) \log(z)
-.\]
+Let $f(z)\coloneqq\frac{1}{(z+1)(z+2)}$, and let $\log$ be the branch on $\CC\setminus[0,\infty)$ with $\arg z\in(0,2\pi)$.
+Since $f$ is not even, a semicircle does not reduce to $I$; we integrate $f(z)\log z$ over a keyhole contour $\Gamma$ around $[0,\infty)$: the upper edge from $\varepsilon$ to $R$, the circle $\abs z=R$ counterclockwise, the lower edge from $R$ to $\varepsilon$, and the circle $\abs z=\varepsilon$ clockwise, with $0<\varepsilon<1<2<R$.
 
-![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-24_04-03-05.png)
+![Keyhole contour](../../assets/Complex_Analysis/040_Residues/figures/2021-12-24_04-03-05.png)
 
-Let $\gamma_+ = \theset{t + i\eps \st t\geq 0}$ (right-to left) and $\gamma_0 = \theset{t-i\eps \st t\geq 0}$ (left-to-right).
-Now use the general fact
-\[
-\int_{\gamma_+}f(z)\log(z) \dz &= \int_\eps^R f(t+i\eps)\log(t+i\eps) \dt \too \int_\RR f(t)\log(t)\dt \\
-\int_{\gamma_-}f(z)\log(z) \dz &= \int_R^\eps f(t-i\eps)\log(t-i\eps) \dt \too -\int_\RR f(t)\qty{ \log(t) + 2\pi i} \dt \\
-,\]
-thus 
-\[
-\int_{\gamma_+}f(z)\log(z)\dz + \int_{\gamma_-}f(z)\log(z) 
-&\too \int_0^\infty f(t)\log(t)\dt - \int_0^\infty f(t)(\log(t) + 2\pi i) \dt \\
-&= -2\pi i \int_0^\infty f(t) \dt
-.\]
+::: pf
 
-By the ML estimate, the semicircular piece vanishes.
-Since $\lim_{x\to 0}{ x\log(x) \over x^n+c} = 0$ for any $c>0$ and $n\geq 1$, the inner indented pieces goes to zero.
-Parameterize by $z= \eps e^{it}$
-\[
-\int_{C_\eps} f(z)\log(z)\dz
-&\approx \int_{\eps}^{2\pi - \eps} {\log(\eps e^{it}) \over \eps^2 + 3\eps + 2} \eps e^{it}\dt \\
-&= \int_{\eps}^{2\pi - \eps} {\log(\eps) + it \over \eps^2 + 3\eps + 2} \eps e^{it}\dt \\
-&\approx \int_\eps^{2\pi - \eps} {\eps \log(\eps) + c_1 \over \eps^2 + c_2}\dt \\
-&\convergesto{\eps\to 0} 0
-,\]
-where the displayed approximations omit factors $e^{it}$ of modulus one.
-By the residue theorem,
-\[
-2\pi i \sum_{z_k\in \CC} \Res_{z=z_k} f(z)\log(z) = \int_\Gamma f(z)\log(z)\dz = -2\pi i\int_\RR f(z)\dz
-.\]
-There are just two simple poles at $z_1 = -1, z_2 = -2$, so
-For $z_1$:
-\[
-\Res_{z=-1}{\log(z) \over (z+1)(z+2)} 
-= \lim_{z\to -1} {\log(z) \over z+2} 
-= \log(-1)
-,\]
-and for $z_2$,
-\[
-\Res_{z=-2}{\log(z) \over (z+1)(z+2)} 
-= \lim_{z\to -2} {\log(z) \over z+1}
-= -\log(-2)
-.\]
+::: {.pf-step #edges}
+As the edges approach the axis, their integrals sum to $-2\pi i\int_\varepsilon^Rf(t)\,dt$.
 
-Thus
-\[
-I 
-&= -(\log(-1) - \log(-2)) \\
-&= - (\ln(1) + i\pi) + (\ln(2) + i\pi) \\
-&= \ln(2)
-,\]
-noting that we've chosen a branch of $\log(z) \definedas \ln\qty{\abs{z}} + i\Arg(z)$ where $\Arg(z) \in (0, 2\pi)$.
+::: pf-proof
+On the upper edge $\log z\to\log t$, and on the lower edge $\log z\to\log t+2\pi i$, traversed from $R$ to $\varepsilon$. The sum tends to $\int_\varepsilon^Rf(t)\log t\,dt-\int_\varepsilon^Rf(t)(\log t+2\pi i)\,dt$.
 :::
 
+:::
+
+::: {.pf-step #circles}
+The integrals over $\abs z=R$ and $\abs z=\varepsilon$ tend to $0$ as $R\to\infty$ and $\varepsilon\to0$.
+
+::: pf-proof
+On $\abs z=r$, $\abs{\log z}\le\abs{\log r}+2\pi$. For $r=R$, $\abs f\le\frac1{(R-1)(R-2)}$, so the integral is at most $2\pi R\frac{\log R+2\pi}{(R-1)(R-2)}\to0$. For $r=\varepsilon$, $\abs f\le\frac1{(1-\varepsilon)(2-\varepsilon)}$, so the integral is at most $2\pi\varepsilon\frac{\abs{\log\varepsilon}+2\pi}{(1-\varepsilon)(2-\varepsilon)}\to0$.
+:::
+
+:::
+
+::: {.pf-step #residues}
+The residues of $f(z)\log z$ sum to $-\ln2$.
+
+::: pf-proof
+At the simple poles, $\Res_{z=-1}=\frac{\log(-1)}{-1+2}=i\pi$ and $\Res_{z=-2}=\frac{\log(-2)}{-2+1}=-(\ln2+i\pi)$.
+:::
+
+:::
+
+::: pf-step
+$I=\boxed{\ln2}$.
+
+::: pf-proof
+By the residue theorem and steps [](#edges){.pf-ref}, [](#circles){.pf-ref} and [](#residues){.pf-ref}, $-2\pi iI=2\pi i(-\ln2)$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark}
+Partial fractions confirm the value: $\int_0^\infty\qty{\frac1{x+1}-\frac1{x+2}}dx=\qty[\ln\frac{x+1}{x+2}]_0^\infty=\ln2$.
+:::
