@@ -51,6 +51,7 @@ def check(root: Path, *args: str) -> subprocess.CompletedProcess[str]:
         (CARD.replace("id: PRB-INDEXP\n", ""), "Field required"),
         (CARD.replace(":::\n", "", 1), "unclosed fenced div"),
         (CARD.replace("\n\n::: {.hint}", "\nA trailing line.\n::: {.hint}", 1), "follows text"),
+        (CARD + "\nLet $x \\in \\mathbb{R}$.\n", "is written with its vocabulary macro"),
         (CARD + "\n\\begin{tikzcd}\n\ta \\\\\n\t& b\n\t\\arrow[from=1-1, to=2-1]\n\\end{tikzcd}\n", "tikzcd compilation produced no SVG"),
     ],
 )

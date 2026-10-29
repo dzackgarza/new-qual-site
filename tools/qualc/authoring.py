@@ -21,6 +21,8 @@ from .model import Card, CollectionCard, CompilationSource, Strict, TextbookSour
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 ID_FIELD = re.compile(r"^(id|'id'|\"id\")\s*:")
 TIKZCD = re.compile(r"\\begin\{tikzcd\}.*?\\end\{tikzcd\}", re.DOTALL)
+# STYLE-03: these number systems have vocabulary macros (\NN, \ZZ, \QQ, \RR, \CC).
+RAW_NUMBER_SYSTEM = re.compile(r"\\(?:mathbb|Bbb)\s*(?:\{\s*[NZQRC]\s*\}|[NZQRC](?![A-Za-z]))")
 
 
 def card_header(text: str, path: Path) -> Card:
@@ -54,6 +56,8 @@ def check_git_changes(changes: list[GitChange]) -> int:
                 card_header(source, change.path)
             for diagram in TIKZCD.findall(source):
                 compile_tikzcd_block(diagram)
+            if raw := RAW_NUMBER_SYSTEM.search(source):
+                errors.append(f"{change.path}: {raw.group()} is written with its vocabulary macro (STYLE-03)")
         except ValueError as exc:
             errors.append(str(exc))
         except RuntimeError as exc:
