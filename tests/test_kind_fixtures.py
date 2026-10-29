@@ -628,7 +628,9 @@ def test_appearance_comment_belongs_to_the_collection(collections_site: Path) ->
     """
     work = collections_site
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
-    rows = con.execute("select collection_id, problem_id, comment from collection_problems where collection_id in ('SRC-HW', 'SRC-UGA-FIX') order by collection_id, ordinal").fetchall()
+    rows = con.execute(
+        "select collection_id, problem_id, comment from collection_problems where collection_id in ('SRC-HW', 'SRC-UGA-FIX') order by collection_id, ordinal"
+    ).fetchall()
     assert rows == [
         ("SRC-HW", "P-INDEXP", "Problem 5"),
         ("SRC-HW", "E-CENTER", None),

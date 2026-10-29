@@ -278,12 +278,7 @@ class CompilationSource(Strict):
 
     def listed_problem_ids(self) -> list[str]:
         if self.sections:
-            return [
-                e.id
-                for section in self.sections
-                for e in section.problems
-                if PROBLEM_ID_RE.match(e.id)
-            ]
+            return [e.id for section in self.sections for e in section.problems if PROBLEM_ID_RE.match(e.id)]
         return [e.id for e in self.problems]
 
 
@@ -572,9 +567,7 @@ def _fenced_div_opening(line: str, number: int) -> tuple[int, int, str] | None:
     if not rest:
         return None
     if rest[_attributes_end(rest) :].strip().strip(":").strip():
-        raise ValueError(
-            f"text after the fenced-div attributes on line {number}; start the text on the next line"
-        )
+        raise ValueError(f"text after the fenced-div attributes on line {number}; start the text on the next line")
 
     indent = len(match.group("indent").expandtabs(4))
     return indent, len(match.group("fence")), rest
@@ -603,14 +596,10 @@ def validate_fenced_divs(markdown: str, first_line: int) -> None:
         if match is not None:
             indent = len(match.group("indent").expandtabs(4))
             if indent > 3:
-                raise ValueError(
-                    f"indented fenced div on line {number}; a fence must start at column 0"
-                )
+                raise ValueError(f"indented fenced div on line {number}; a fence must start at column 0")
             opening = _fenced_div_opening(content, number)
             if opening is not None and previous.strip() and _FENCED_DIV_LINE.match(previous) is None:
-                raise ValueError(
-                    f"fenced-div opener on line {number} follows text; put a blank line before it"
-                )
+                raise ValueError(f"fenced-div opener on line {number} follows text; put a blank line before it")
             if opening is not None:
                 _, width, rest = opening
                 stack.append(_FencedDivNode(index, indent, width, rest))
@@ -624,16 +613,12 @@ def validate_fenced_divs(markdown: str, first_line: int) -> None:
 
         for fence in _MIDLINE_FENCE.finditer(content):
             if content[: fence.start()].count("`") % 2 == 0:
-                raise ValueError(
-                    f"fenced-div opener after text on line {number}; put the opener on its own line"
-                )
+                raise ValueError(f"fenced-div opener after text on line {number}; put the opener on its own line")
         previous = content
 
     if stack:
         node = stack[-1]
-        raise ValueError(
-            f"unclosed fenced div `{node.rest}` opened on line {node.start + first_line}"
-        )
+        raise ValueError(f"unclosed fenced div `{node.rest}` opened on line {node.start + first_line}")
 
 
 class ParsedCard(Strict):
@@ -728,9 +713,7 @@ def to_ast(markdown: str) -> str:
     match result:
         case PandocFailure(error=error):
             raise PandocBatchError(error)
-    warnings = [
-        message.message for message in result.messages if message.verbosity == "WARNING"
-    ]
+    warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
     if warnings:
         raise ValueError("\n".join(warnings))
     return result.output
@@ -796,7 +779,21 @@ def typeset_dashes(text: str) -> str:
     return _MATH_OR_DASH.sub(lambda m: m.group(1) or ("—" if m.group(0) == "---" else "–"), text)
 
 
-_ROMAN = ((1000, "m"), (900, "cm"), (500, "d"), (400, "cd"), (100, "c"), (90, "xc"), (50, "l"), (40, "xl"), (10, "x"), (9, "ix"), (5, "v"), (4, "iv"), (1, "i"))
+_ROMAN = (
+    (1000, "m"),
+    (900, "cm"),
+    (500, "d"),
+    (400, "cd"),
+    (100, "c"),
+    (90, "xc"),
+    (50, "l"),
+    (40, "xl"),
+    (10, "x"),
+    (9, "ix"),
+    (5, "v"),
+    (4, "iv"),
+    (1, "i"),
+)
 
 
 def _list_marker(number: int, style: str, delimiter: str) -> str:
@@ -867,10 +864,7 @@ def drop_path_captions(element: pf.Element, doc: pf.Doc) -> pf.Element:
     caption = pf.stringify(element.caption).strip()
     if not caption:
         return element
-    repeats_target = any(
-        caption == PurePosixPath(url).stem or caption == url
-        for url in _figure_targets(element)
-    )
+    repeats_target = any(caption == PurePosixPath(url).stem or caption == url for url in _figure_targets(element))
     if FILE_CAPTION.search(caption) or repeats_target:
         element.caption = pf.Caption()
     return element
@@ -885,23 +879,17 @@ class _UniqueKeyLoader(yaml.SafeLoader):
     """
 
 
-def _construct_unique_map(
-    loader: yaml.SafeLoader, node: yaml.MappingNode
-) -> Iterator[dict]:
+def _construct_unique_map(loader: yaml.SafeLoader, node: yaml.MappingNode) -> Iterator[dict]:
     seen: set[object] = set()
     for key_node, _ in node.value:
         key = loader.construct_object(key_node)
         if key in seen:
-            raise yaml.constructor.ConstructorError(
-                None, None, f"duplicate key {key!r}", key_node.start_mark
-            )
+            raise yaml.constructor.ConstructorError(None, None, f"duplicate key {key!r}", key_node.start_mark)
         seen.add(key)
     yield from yaml.constructor.SafeConstructor.construct_yaml_map(loader, node)
 
 
-_UniqueKeyLoader.add_constructor(
-    yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _construct_unique_map
-)
+_UniqueKeyLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _construct_unique_map)
 
 
 def load_front_matter(text: str) -> object:
@@ -910,9 +898,7 @@ def load_front_matter(text: str) -> object:
 
 
 # Pandoc's YAML metadata block: both delimiters stand on lines of their own.
-FRONT_MATTER = re.compile(
-    r"\A---\n(?P<front>.*?)^---\n(?P<body>.*)\Z", re.DOTALL | re.MULTILINE
-)
+FRONT_MATTER = re.compile(r"\A---\n(?P<front>.*?)^---\n(?P<body>.*)\Z", re.DOTALL | re.MULTILINE)
 # Extractor output that is never authored text. An extractor writes NUL where a
 # PDF glyph failed to map, so a statement renders with its sigma missing; and it
 # writes `w<sub>j</sub>` where the PDF set a subscript, which the page shows as
@@ -935,9 +921,7 @@ def split_front_matter(text: str, path: Path) -> tuple[dict, str]:
     reject_extraction_residue(text, path)
     match = FRONT_MATTER.match(text)
     if match is None:
-        raise ValueError(
-            f"{path}: card must start with a YAML front matter block closed by a --- line"
-        )
+        raise ValueError(f"{path}: card must start with a YAML front matter block closed by a --- line")
     meta = load_front_matter(match["front"])
     body = match["body"]
     if not isinstance(meta, dict):
@@ -1052,9 +1036,22 @@ def drop_bibliography(element: pf.Element, document: pf.Doc) -> list[pf.Block] |
     return None
 
 
+# Pandoc records the citeproc request in the document's metadata, so a page's
+# stringified text ends `references.bibstyle.csl` and every page in the search
+# index matches a search for either name. They describe the request, not the page.
+CITEPROC_METADATA = ("bibliography", "csl")
+
+
+def drop_citeproc_metadata(document: pf.Doc) -> pf.Doc:
+    """Remove the citeproc request from a document read with citations."""
+    for key in CITEPROC_METADATA:
+        document.metadata.content.pop(key, None)
+    return document
+
+
 def _normalize_ast(source: str) -> NormalizedAst | AstDiagnostic:
     try:
-        document = from_ast(source).walk(drop_path_captions).walk(drop_bibliography).walk(unlist_step_claims)
+        document = drop_citeproc_metadata(from_ast(source)).walk(drop_path_captions).walk(drop_bibliography).walk(unlist_step_claims)
         return NormalizedAst(
             ast=to_json(document),
             sections=extract_sections(document),
@@ -1074,52 +1071,30 @@ def parse_cards_with(
     errors: list[Diagnostic] = []
     if len(paths) >= 1_000:
         with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
-            source_results = list(
-                executor.map(_prepare_card_source, paths, chunksize=64)
-            )
+            source_results = list(executor.map(_prepare_card_source, paths, chunksize=64))
     else:
         source_results = [_prepare_card_source(path) for path in paths]
     for source in source_results:
         if isinstance(source, CardSourceDiagnostic):
-            errors.append(
-                Diagnostic(
-                    DiagnosticCode.CARD_UNREADABLE, str(source.path), source.message
-                )
-            )
+            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(source.path), source.message))
             continue
         try:
             card: Card = adapter.validate_python(source.metadata)
             prepared.append((source.path, card, source.body))
         except (TypeError, ValueError) as exc:
-            errors.append(
-                Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(source.path), str(exc))
-            )
+            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(source.path), str(exc)))
 
     bodies = [body for _, _, body in prepared]
     citations = load_citations(VOCABULARIES)
-    results = (
-        read_markdown_parallel(bodies, MARKDOWN, citations)
-        if len(bodies) >= 1_000
-        else pandoc.read_markdown(bodies, MARKDOWN, citations)
-    )
+    results = read_markdown_parallel(bodies, MARKDOWN, citations) if len(bodies) >= 1_000 else pandoc.read_markdown(bodies, MARKDOWN, citations)
     processable: list[tuple[Path, Card, str]] = []
     for (path, card, _), result in zip(prepared, results, strict=True):
         if isinstance(result, PandocFailure):
-            errors.append(
-                Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), result.error)
-            )
+            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), result.error))
             continue
-        warnings = [
-            message.message
-            for message in result.messages
-            if message.verbosity == "WARNING"
-        ]
+        warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
         if warnings:
-            errors.append(
-                Diagnostic(
-                    DiagnosticCode.READER_WARNING, str(path), "; ".join(warnings)
-                )
-            )
+            errors.append(Diagnostic(DiagnosticCode.READER_WARNING, str(path), "; ".join(warnings)))
             continue
         padded = unread_math(result.output, path)
         if padded:

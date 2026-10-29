@@ -287,13 +287,16 @@ Done.
 :::
 :::
 """
-    card = PROBLEM.format(
-        id="PRB-DUP",
-        title="A compact Hausdorff space is normal",
-        area="topology",
-        topic="compactness",
-        body="Let $X$ be compact Hausdorff. Show $X$ is normal.",
-    ) + proof
+    card = (
+        PROBLEM.format(
+            id="PRB-DUP",
+            title="A compact Hausdorff space is normal",
+            area="topology",
+            topic="compactness",
+            body="Let $X$ be compact Hausdorff. Show $X$ is normal.",
+        )
+        + proof
+    )
     work = fixture_repo(tmp_path, {"PRB-DUP.md": card})
 
     guide = reference_manifest("first", ref="PRB-DUP")

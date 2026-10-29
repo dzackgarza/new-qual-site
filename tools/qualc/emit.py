@@ -32,7 +32,14 @@ import yaml
 
 from .index import load_areas
 from .lamport import LamportError, apply_lamport
-from .model import DIV_CLASS_TO_KIND, MARKDOWN, TERMS_IN_YEAR_ORDER, from_ast, to_json, typeset_dashes
+from .model import (
+    DIV_CLASS_TO_KIND,
+    MARKDOWN,
+    TERMS_IN_YEAR_ORDER,
+    from_ast,
+    to_json,
+    typeset_dashes,
+)
 from .pandoc_batch import (
     PARALLEL_WORKERS,
     PandocBatchError,
@@ -410,9 +417,6 @@ def _sidenote(
     ]
 
 
-
-
-
 def _prepare_html(
     element: pf.Element,
     document: pf.Doc,
@@ -426,7 +430,6 @@ def _prepare_html(
     sidenote = _sidenote(element, document)
     if sidenote is not None:
         return sidenote
-    return _reveal(element, document)
     return _reveal(element, document)
 
 
@@ -749,7 +752,13 @@ def _transclude(card: sqlite3.Row, counts: Counter[str], listing: list[pf.Block]
                     [f"qual-{kind}", SECTION_CLASS, "qual-transclusion"],
                     [["data-label", f"{kind.title()} {counts[kind]}"]],
                 ],
-                [_transclusion_head(card), *_slogan_json(card), *body, *listing_json, *_prompts_json(card)],
+                [
+                    _transclusion_head(card),
+                    *_slogan_json(card),
+                    *body,
+                    *listing_json,
+                    *_prompts_json(card),
+                ],
             ],
         }
     ]
@@ -1478,7 +1487,6 @@ def write_pages(
         )
 
 
-
 # --- publication manifests --------------------------------------------------
 
 
@@ -1720,13 +1728,19 @@ def _publication_navigation(
     # says where the page is, and the sidebar says what it depends on.
     trail: tuple[Crumb, ...] = (
         Crumb(title="Guides", route=Path("guides.html")),
-        Crumb(title=typeset_dashes(manifest.title), route=_publication_root_route(manifest)),
+        Crumb(
+            title=typeset_dashes(manifest.title),
+            route=_publication_root_route(manifest),
+        ),
     )
     if current_key != manifest.id:
         section = next(item for item in manifest.sections if item.slug == current_key)
         trail = (
             *trail,
-            Crumb(title=typeset_dashes(section.title), route=_publication_section_route(manifest, section)),
+            Crumb(
+                title=typeset_dashes(section.title),
+                route=_publication_section_route(manifest, section),
+            ),
         )
     return PublicationNavigation(
         links=links,
@@ -1978,7 +1992,19 @@ def problem_browser_page(
         _practice_controls(),
         _data_table(
             "problem-table",
-            ("Problem", "Source", "Topics", "Area", "Source type", "Institution", "Year", "Collection", "Section", "Solution", "Order"),
+            (
+                "Problem",
+                "Source",
+                "Topics",
+                "Area",
+                "Source type",
+                "Institution",
+                "Year",
+                "Collection",
+                "Section",
+                "Solution",
+                "Order",
+            ),
         ),
     ]
 
@@ -2121,7 +2147,11 @@ def source_table_data(
                 "order": f"{list(SOURCE_KIND_HEADINGS).index(row['source_kind']):02d}|{row['institution']}|{row['year'] or 0:04d}|{row['term_rank']}|{row['exam_area']}",
             }
         )
-    return {"areaNames": area_names, "sourceKindNames": SOURCE_KIND_HEADINGS, "rows": rows}
+    return {
+        "areaNames": area_names,
+        "sourceKindNames": SOURCE_KIND_HEADINGS,
+        "rows": rows,
+    }
 
 
 # Every source kind a collection can declare, in the order a reader meets them,
@@ -2204,7 +2234,10 @@ def source_index_page(
     del area_names
     blocks: list[pf.Block] = [
         pf.Para(pf.Str(f"Sources for qualifying-exam problems: {len(collections)} collections in all.")),
-        _data_table("source-table", ("Source", "Type", "Area", "Institution", "Year", "Worked", "Order")),
+        _data_table(
+            "source-table",
+            ("Source", "Type", "Area", "Institution", "Year", "Worked", "Order"),
+        ),
     ]
     return {"title": "Sources"}, blocks
 
@@ -2262,7 +2295,10 @@ def _tab_titles(pandoc: PandocServer, titles: list[str], preamble: str) -> list[
     if not titles:
         return []
     # One document, so the preamble is read once rather than once per page.
-    [ast] = _successful_outputs(pandoc.read_markdown([preamble + "\n\n" + "\n\n".join(titles)], MARKDOWN), "tab-title read")
+    [ast] = _successful_outputs(
+        pandoc.read_markdown([preamble + "\n\n" + "\n\n".join(titles)], MARKDOWN),
+        "tab-title read",
+    )
     document = json.loads(ast)
     blocks = [block for block in document["blocks"] if block["t"] != "RawBlock"]
     if len(blocks) != len(titles):
@@ -2275,7 +2311,11 @@ def _tab_titles(pandoc: PandocServer, titles: list[str], preamble: str) -> list[
 
 def _set_tab_titles(pandoc: PandocServer, metas: list[dict], preamble: str) -> None:
     titled = [meta for meta in metas if isinstance(meta.get("title"), str)]
-    for meta, tab_title in zip(titled, _tab_titles(pandoc, [meta["title"] for meta in titled], preamble), strict=True):
+    for meta, tab_title in zip(
+        titled,
+        _tab_titles(pandoc, [meta["title"] for meta in titled], preamble),
+        strict=True,
+    ):
         meta["tab_title"] = tab_title
 
 
@@ -2447,9 +2487,30 @@ def project(
 
     jcache, api = load_json(con)
     card_page_data = load_card_page_data(con)
-    (site_root / "collection-problems.json").write_text(json.dumps(collection_problem_index(con, card_page_data), ensure_ascii=False, separators=(",", ":")) + "\n")
-    (site_root / "problems.json").write_text(json.dumps(problem_table_data(con, card_page_data, area_names), ensure_ascii=False, separators=(",", ":")) + "\n")
-    (site_root / "sources.json").write_text(json.dumps(source_table_data(con, card_page_data, area_names), ensure_ascii=False, separators=(",", ":")) + "\n")
+    (site_root / "collection-problems.json").write_text(
+        json.dumps(
+            collection_problem_index(con, card_page_data),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        )
+        + "\n"
+    )
+    (site_root / "problems.json").write_text(
+        json.dumps(
+            problem_table_data(con, card_page_data, area_names),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        )
+        + "\n"
+    )
+    (site_root / "sources.json").write_text(
+        json.dumps(
+            source_table_data(con, card_page_data, area_names),
+            ensure_ascii=False,
+            separators=(",", ":"),
+        )
+        + "\n"
+    )
     tag_pages: list[tuple[Path, dict, list, SearchDocument]] = []
     problem_cards = _rows(con, "select * from cards where kind='problem'")
     plain_cards = _rows(con, "select * from cards where kind not in ('problem','collection')")

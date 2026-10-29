@@ -22,24 +22,37 @@ import panflute as pf
 import yaml
 
 from .diagnostics import Diagnostic, DiagnosticCode
-from .model import FRONT_MATTER, MARKDOWN, drop_path_captions, load_citations, to_json, typeset_dashes, unlist_step_claims, from_ast, load_front_matter, reject_extraction_residue, unread_math
-from .pandoc_batch import PARALLEL_WORKERS, Citations, PandocFailure, PandocResult, PandocServer
+from .model import (
+    FRONT_MATTER,
+    MARKDOWN,
+    drop_citeproc_metadata,
+    drop_path_captions,
+    from_ast,
+    load_citations,
+    load_front_matter,
+    reject_extraction_residue,
+    to_json,
+    typeset_dashes,
+    unlist_step_claims,
+    unread_math,
+)
+from .pandoc_batch import (
+    PARALLEL_WORKERS,
+    Citations,
+    PandocFailure,
+    PandocResult,
+    PandocServer,
+)
 from .static_site import AssetCatalog, _asset_source
 from .tex import mark_definienda
 
 WIKI_BATCH_SIZE = 8
 
 
-
 # citeproc reports a key no entry defines as a warning and renders it as
 # `**key?**`, which would reach the page. The message is the only place the key
 # is named, so the warning is classified rather than the AST inspected.
 CITEPROC_MISSING = "Citeproc: citation "
-
-# Pandoc records the citeproc request in the document's metadata, so a page's
-# stringified text ends `references.bibstyle.csl` and every page in the search
-# index matches a search for either name. They describe the request, not the page.
-CITEPROC_METADATA = ("bibliography", "csl")
 
 
 def _citation_diagnostic(warning: str, path: Path) -> Diagnostic:
@@ -312,8 +325,7 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
                 errors.append(padded)
             restored.extend(f"{source_rel.as_posix()}: \\cref[{label}]" for label, _ in CREF.findall(body))
             document = from_ast(result.output).walk(drop_path_captions).walk(unlist_step_claims).walk(anchor_block_markers).walk(unpack_cross_references)
-            for key in CITEPROC_METADATA:
-                document.metadata.content.pop(key, None)
+            drop_citeproc_metadata(document)
             order = _order(metadata, path)
             if isinstance(order, Diagnostic):
                 errors.append(order)
@@ -722,7 +734,10 @@ def resolve_links(
     for page in pages:
         page.blocks = [cast(pf.Block, visit(page, block)) for block in page.blocks]
     if unwritten:
-        print(f"{len(unwritten)} reference(s) name a wiki page not yet written:", file=sys.stderr)
+        print(
+            f"{len(unwritten)} reference(s) name a wiki page not yet written:",
+            file=sys.stderr,
+        )
         for entry in sorted(set(unwritten)):
             print(f"  {entry}", file=sys.stderr)
     if unresolved:
