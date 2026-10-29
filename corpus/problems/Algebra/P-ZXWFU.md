@@ -22,50 +22,50 @@ audit:
 ---
 
 ::: {.problem}
-What is the maximal real subfield in a cyclotomic extension $\mathbb{Q}(\zeta_n)/\mathbb{Q}$?
+What is the maximal real subfield in a cyclotomic extension $\QQ(\zeta_n)/\QQ$?
 :::
 
 ::: {.solution}
-Let
-\[
-K=\mathbb Q(\zeta_n).
-\]
-Complex conjugation acts by
-\[
-\zeta_n\longmapsto\zeta_n^{-1}.
-\]
-Therefore the maximal real subfield is the fixed field
-\[
-K^+=K^{\langle c\rangle}=K\cap\mathbb R.
-\]
-The element
-\[
-\zeta_n+\zeta_n^{-1}=2\cos\frac{2\pi}{n}
-\]
-is fixed by conjugation, and $\zeta_n$ satisfies
-\[
-x^2-(\zeta_n+\zeta_n^{-1})x+1=0
-\]
-over $\mathbb Q(\zeta_n+\zeta_n^{-1})$. For $n>2$, $K$ is not real, so
-\[
-[K:K^+]=2.
-\]
-Hence
-\[
-\boxed{K^+=\mathbb Q(\zeta_n+\zeta_n^{-1})}
-\]
-and
-\[
-[K^+:\mathbb Q]=\frac{\varphi(n)}2.
-\]
-Since
-\[
-\operatorname{Gal}(K/\mathbb Q)\cong(\mathbb Z/n\mathbb Z)^\times
-\]
-and complex conjugation corresponds to $-1$, for $n>2$,
-\[
-\operatorname{Gal}(K^+/\mathbb Q)
-\cong(\mathbb Z/n\mathbb Z)^\times/\{\pm1\}.
-\]
-For $n=1,2$, the cyclotomic field is already $\mathbb Q$.
+Let $\zeta_n=e^{2\pi i/n}$, $K=\QQ(\zeta_n)\subset\CC$, and $n>2$; for $n=1,2$, $K=\QQ$ is already real. Complex conjugation $c$ restricts to the automorphism $\zeta_n\mapsto\zeta_n^{-1}$ of $K$.
+
+::: pf
+
+::: {.pf-step #fixed}
+
+The maximal real subfield of $K$ is $K^+\coloneqq K\cap\RR=K^{\langle c\rangle}$, and $[K:K^+]=2$.
+
+::: pf-proof
+
+An element of $K$ is real exactly when $c$ fixes it. Since $n>2$, $\zeta_n\notin\RR$, so $c\ne1$ on $K$ and $\langle c\rangle$ has order $2$.
+
+:::
+
+:::
+
+::: pf-step
+
+$K^+=\boxed{\QQ(\zeta_n+\zeta_n^{-1})}$, and $[K^+:\QQ]=\varphi(n)/2$.
+
+::: pf-proof
+
+$\zeta_n+\zeta_n^{-1}=2\cos(2\pi/n)$ is real, so $F\coloneqq\QQ(\zeta_n+\zeta_n^{-1})\subseteq K^+$. Since $\zeta_n$ is a root of $x^2-(\zeta_n+\zeta_n^{-1})x+1\in F[x]$, $[K:F]\le2$. By step [](#fixed){.pf-ref}, $[K:K^+]=2$, so $F=K^+$, and $[K^+:\QQ]=[K:\QQ]/2=\varphi(n)/2$.
+
+:::
+
+:::
+
+::: pf-step
+
+$\Gal(K^+/\QQ)\cong(\ZZ/n\ZZ)^\times/\{\pm1\}$.
+
+::: pf-proof
+
+Under $\Gal(K/\QQ)\cong(\ZZ/n\ZZ)^\times$, $a\mapsto(\zeta_n\mapsto\zeta_n^a)$, the conjugation $c$ corresponds to $-1$. The group is abelian, so $\langle c\rangle$ is normal and $\Gal(K^+/\QQ)\cong\Gal(K/\QQ)/\langle c\rangle$.
+
+:::
+
+:::
+
+:::
+
 :::
