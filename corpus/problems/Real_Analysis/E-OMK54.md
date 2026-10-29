@@ -17,26 +17,22 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source study list also asks to "Apply Fubini and Tonelli to literally anything" and to "Apply Cauchy-Schwarz to literally anything, in the form of norm(fg)_1 <= norm(f)_2 norm(g)_2", which pose no problem, and remarks that the proof technique of the inner-regularity item matters more than its result. These are removed; the remaining items are labelled (a)-(e), the L^1 norm carries its subscript, and item (d) quantifies epsilon.
 ---
 
 ::: {.exercise}
-\envlist
+(a) Prove the Lebesgue integral is translation/dilation invariant.
 
-- Prove the Lebesgue integral is translation/dilation invariant.
+(b) Prove continuity in $L^1$: $\norm{\tau_hf - f}_1\converges{h\to 0}\too 0$.
 
-- Prove continuity in $L_1$: $\norm{\tau_hf - f}\converges{h\to 0}\too 0$.
+(c) Prove that $E$ is measurable $\iff$ $E = F \disjoint Z$ with $F\in F_\sigma$ and $Z$ null $\iff$ $E = G\sm Z$ with $G\in G_\delta$ and $Z$ null.
 
-- Prove that $E$ is measurable $\iff$ $E = F \disjoint Z$ with $F\in F_\sigma$ and $Z$ null $\iff$ $E = G\sm Z$ with $G\in G_\delta$ and $Z$ null.
+(d) Show that $m(E) = \sup_{K \subseteq E}m(K) \iff$ for every $\eps > 0$ there exists $K = K(\eps)$ with $m(K) \in [m(E) - \eps, m(E)]$.
 
-- Show that $m(E) = \sup_{K \subseteq E}m(K) \iff$ there exists $K = K(\eps)$ with $m(K) \in [m(E) - \eps, m(E)]$.
-
-  - What's most useful here is the proof technique, not so much the result itself.
-
-- Apply Fubini and Tonelli to literally anything.
-
-- Prove that $\norm{f}_p\to \norm{f}_\infty$ over a finite measure space.
-
-- Apply Cauchy-Schwarz to literally anything, in the form of $\norm{fg}_1 \leq \norm{f}_2 \norm{g}_2$.
+(e) Prove that $\norm{f}_p\to \norm{f}_\infty$ over a finite measure space.
 :::
 
 ::: {.solution}
@@ -46,7 +42,7 @@ Let $m$ be Lebesgue measure on $\RR^n$, $\tau_h f(x) = f(x + h)$, and $f_\delta(
 
 ::: {.pf-step #s1}
 
-For measurable $f \geq 0$ or $f \in L^1$, $\int \tau_h f = \int f$ and $\int f_\delta = \int f$.
+(a) For measurable $f \geq 0$ or $f \in L^1$, $\int \tau_h f = \int f$ and $\int f_\delta = \int f$.
 
 ::: pf-proof
 
@@ -74,7 +70,7 @@ By linearity, step [](#s1-1){.pf-ref} gives the identities for nonnegative simpl
 
 ::: pf-step
 
-For $f \in L^1$, $\|\tau_h f - f\|_1 \to 0$ as $h \to 0$.
+(b) For $f \in L^1$, $\norm{\tau_h f - f}_1 \to 0$ as $h \to 0$.
 
 ::: pf-proof
 
@@ -114,7 +110,7 @@ Given $\eps > 0$, step [](#s2-2){.pf-ref} gives a step function $s$ with $\|f - 
 
 ::: pf-step
 
-$E$ is measurable if and only if $E = F \sqcup Z$ with $F$ an $F_\sigma$ set and $Z$ null, if and only if $E = G \setminus Z'$ with $G$ a $G_\delta$ set and $Z'$ null.
+(c) $E$ is measurable if and only if $E = F \sqcup Z$ with $F$ an $F_\sigma$ set and $Z$ null, if and only if $E = G \setminus Z'$ with $G$ a $G_\delta$ set and $Z'$ null.
 
 ::: pf-proof
 
@@ -154,7 +150,7 @@ Steps [](#s3-1){.pf-ref} and [](#s3-2){.pf-ref} are the forward implications. Co
 
 ::: pf-step
 
-$m(E) = \sup\theset{m(K) : K \subseteq E \text{ compact}}$ if and only if for every $\eps > 0$ there is a compact $K \subseteq E$ with $m(E) - \eps \leq m(K) \leq m(E)$.
+(d) $m(E) = \sup\theset{m(K) : K \subseteq E \text{ compact}}$ if and only if for every $\eps > 0$ there is a compact $K \subseteq E$ with $m(E) - \eps \leq m(K) \leq m(E)$.
 
 ::: pf-proof
 
@@ -166,11 +162,11 @@ Every compact $K \subseteq E$ has $m(K) \leq m(E)$, so $m(E)$ is an upper bound 
 
 ::: pf-step
 
-If $\mu(X) < \infty$ and $f \in L^\infty(\mu)$, then $\|f\|_p \to \|f\|_\infty$ as $p \to \infty$.
+(e) If $\mu(X) < \infty$ and $f$ is measurable, then $\norm{f}_p \to \norm{f}_\infty$ as $p \to \infty$.
 
 ::: pf-proof
 
-If $\mu(X) = 0$ both sides vanish; assume $\mu(X) > 0$. Upper bound: $\|f\|_p \le \|f\|_\infty\mu(X)^{1/p} \to \|f\|_\infty$. Lower bound: for $0 < M < \|f\|_\infty$ the set $\theset{|f| > M}$ has positive finite measure, and $\|f\|_p \ge M\mu\theset{|f| > M}^{1/p} \to M$. So $M \le \liminf_p \|f\|_p \le \limsup_p \|f\|_p \le \|f\|_\infty$ for every such $M$.
+If $\mu(X) = 0$ both sides vanish; assume $\mu(X) > 0$. Upper bound: if $\norm{f}_\infty < \infty$, then $\|f\|_p \le \|f\|_\infty\mu(X)^{1/p} \to \|f\|_\infty$. Lower bound: for $0 < M < \|f\|_\infty$ the set $\theset{|f| > M}$ has positive finite measure, and $\|f\|_p \ge M\mu\theset{|f| > M}^{1/p} \to M$. So $M \le \liminf_p \|f\|_p \le \limsup_p \|f\|_p \le \|f\|_\infty$ for every such $M$, which gives the limit, also when $\norm{f}_\infty = \infty$.
 
 :::
 
