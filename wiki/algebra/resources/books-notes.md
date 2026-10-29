@@ -17,9 +17,9 @@ order: 20
 
 - Representation theory
 
-  - Serre, *Linear Representations of Finite Groups*, sections 1--6.
+  - [@Ser77], sections 1--6.
 
-  - Fulton and Harris, *Representation Theory: A First Course*; chapters 7--10 treat Lie groups and Lie algebras.
+  - [@FH91]; chapters 7--10 treat Lie groups and Lie algebras.
 
 ## Notes
 

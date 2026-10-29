@@ -9,29 +9,29 @@ order: 0
 
 - [@Ahl79]
 
-- Gamelin, *Complex Analysis*
+- [@Gam01]
 
-- Rudin, *Real and Complex Analysis*
+- [@Rud74]
 
 - Richard Silverman, *Complex Analysis with Applications*
 
 - [@SS03]
 
-- Taylor, *Complex Analysis*
+- [@Tay19]
 
 - Simon, *Basic Complex Analysis*
 
 - Hörmander, *An Introduction to Complex Analysis in Several Variables*
 
-- Lang, *Complex Analysis*
+- [@Lan10]
 
-- Gilman, Kra, and Rodríguez, *Complex Analysis: In the Spirit of Lipman Bers*
+- [@RBKG13]
 
-- Sarason, *Complex Function Theory* [PDF](https://www.dropbox.com/s/3atiop7trmmh1d2/Complex%20Function%20Theory%20-%20Sarason.pdf?dl=0)
+- [@Sar07]
 
-- Freitag and Busam, *Complex Analysis*
+- [@FB09]
 
-- Conway, *Functions of One Complex Variable I*
+- [@Con78]
 
 ## UGA course notes
 
