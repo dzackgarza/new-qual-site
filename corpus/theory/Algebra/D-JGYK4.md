@@ -26,6 +26,7 @@ In a commutative ring, every maximal ideal is prime, and every prime ideal is bo
 :::
 
 ::: {.example}
+Let $k$ be a field.
 In $k[x,y]$ the ideal $(xy)$ is radical but not primary, since $x \cdot y \in (xy)$ while $x \notin (xy)$ and no power of $y$ lies in $(xy)$.
 In $k[x]$ the ideal $(x^2)$ is primary but not radical, since $x \notin (x^2)$ and $x^2 \in (x^2)$.
 :::
