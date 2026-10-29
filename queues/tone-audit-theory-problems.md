@@ -2364,7 +2364,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Complex_Analysis/D-V6UQJ.md` | `c0e8e5a2bf3034d7a2288984a56cebe95bc75df5` | `c0e8e5a2bf3034d7a2288984a56cebe95bc75df5` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/D-VAXQT.md` | `c6ca24734d21546178653f4cfdce171c5c819bff` | `c6ca24734d21546178653f4cfdce171c5c819bff` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/D-VKP6N.md` | `0cda4dfe98b5373ab66f0feb7f4650d8fe53ae5f` | `0cda4dfe98b5373ab66f0feb7f4650d8fe53ae5f` | Read; retained |
-| [x] | `corpus/theory/Complex_Analysis/D-VZNMF.md` | `22a6a50bcd80c902e8e2cd4228503267bc2aaf86` | `22a6a50bcd80c902e8e2cd4228503267bc2aaf86` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/D-WHYOA.md` | `9b7ceb0eb4b342513eaab85cb5eb8520310d9fe9` | `9b7ceb0eb4b342513eaab85cb5eb8520310d9fe9` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/D-XR64P.md` | `d3aeac23c2215c6b811be9e271794da78220277f` | `d3aeac23c2215c6b811be9e271794da78220277f` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/D-YKB3V.md` | `c4eefbb74d881f358e6851959cb7f79e7f597470` | `c4eefbb74d881f358e6851959cb7f79e7f597470` | Read; retained |

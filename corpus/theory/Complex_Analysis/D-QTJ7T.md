@@ -8,15 +8,14 @@ classification:
   - complex-analysis
   topics:
   - Normal Families
-relations:
-- kind: related-to
-  target: D-VZNMF
+relations: []
 review: draft
 ---
 
 ::: {.definition}
 Let $\Omega\subseteq\CC$ be open.
 A family $\mathcal F$ of [[D-E7A5W|holomorphic]] functions on $\Omega$ is \dfn{normal} if every sequence in $\mathcal F$ has a subsequence converging uniformly on every compact subset of $\Omega$.
+The same definition applies to any family of functions $\Omega\to\CC$.
 :::
 
 ::: {.remark}
