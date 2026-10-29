@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PJY52
 kind: problem
-title: A conditionally convergent series has radius of convergence 1
+title: $\sum a_nx^n$ has radius of convergence 1 when $\sum a_n$ converges conditionally
 classification:
   areas:
   - real-analysis
