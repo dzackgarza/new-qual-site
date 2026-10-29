@@ -28,15 +28,6 @@ Throughout, $G$ is a finite group and $p<q$ are primes.
 
 ## From a quotient
 
-::: {.proposition}
-If $G/Z(G)$ is cyclic, then $G$ is abelian.
-:::
-
-::: {.proof}
-Let $gZ(G)$ generate $G/Z(G)$.
-Every element of $G$ has the form $g^iz$ with $i\in\ZZ$ and $z\in Z(G)$, and $g^iz\cdot g^jw = g^{i+j}zw = g^jw\cdot g^iz$ for $z,w\in Z(G)$.
-:::
-
 [[E-O73XQ]]
 
 ::: {.remark}
