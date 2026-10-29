@@ -52,7 +52,7 @@ Let $k$ be a field, $K=k((t^{\QQ}))$ the field of Hahn series $\sum_{q} a_q t^q$
 Every finitely generated $V$-module is a direct sum of finitely many cyclic modules, and $V$ is not a PID.
 
 ::: pf-proof
-The Hahn series field $K$ is maximally complete, so $V$ is a maximal valuation ring, and by Kaplansky's theorem every finitely generated module over a maximal valuation ring is a direct sum of cyclic modules.
+The Hahn series field $K$ is maximally complete [@Kap42], so $V$ is a maximal valuation ring, and by a theorem of Kaplansky [@Kap49] every finitely generated module over a maximal valuation ring is a direct sum of cyclic modules.
 The maximal ideal $\mathfrak m=\{0\}\cup\{f\in V: v(f)>0\}$ is not principal: if $\mathfrak m=(g)$, then $v(g)>0$, and $t^{v(g)/2}\in\mathfrak m$ has valuation smaller than $v(g)$, so it is not a multiple of $g$ in $V$.
 :::
 
