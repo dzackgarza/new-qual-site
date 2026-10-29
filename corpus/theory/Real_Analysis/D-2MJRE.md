@@ -28,5 +28,5 @@ For $X=\RR$, $S$ is nowhere dense if and only if every open interval contains an
 
 ::: {.example}
 In $\RR$, the sets $\theset{1/n \suchthat n\geq 1}$ and $\ZZ$ are nowhere dense: their closures $\theset{0}\cup\theset{1/n\suchthat n\geq 1}$ and $\ZZ$ contain no open interval.
-The sets $\QQ$ and $\ZZ\cup\qty{(a, b)\cap \QQ}$ with $a<b$ are not nowhere dense: their closures contain $\RR$ and $[a,b]$ respectively.
+The sets $\QQ$ and $\ZZ\cup\qty{(a, b)\cap \QQ}$ with $a<b$ are not nowhere dense: their closures are $\RR$ and $\ZZ\cup[a,b]$, and $\ZZ\cup[a,b]$ contains the open interval $(a,b)$.
 :::
