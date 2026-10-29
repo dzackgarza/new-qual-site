@@ -29,9 +29,9 @@ Let $R$ be a commutative ring.
 :::
 
 ::: {.solution}
-(a) A commutative ring $R$ with $1\neq0$ is a \dfn{unique factorization domain} if $R$ is an integral domain, every nonzero nonunit $r\in R$ is a finite product $r=p_1\cdots p_k$ of irreducible elements, and whenever $r=q_1\cdots q_m$ is another such product, $m=k$ and there is $\sigma\in S_k$ with $q_i$ associate to $p_{\sigma(i)}$ for every $i$.
+(a) Recall that a commutative ring $R$ with $1\neq0$ is a [[FD-25SUQ|unique factorization domain]] if $R$ is an integral domain, every nonzero nonunit $r\in R$ is a finite product $r=p_1\cdots p_k$ of irreducible elements, and whenever $r=q_1\cdots q_m$ is another such product, $m=k$ and there is $\sigma\in S_k$ with $q_i$ associate to $p_{\sigma(i)}$ for every $i$.
 
-(b) A commutative ring $R$ with $1\neq0$ is a \dfn{principal ideal domain} if $R$ is an integral domain and every ideal of $R$ has the form $aR$ for some $a\in R$.
+(b) Recall that a commutative ring $R$ with $1\neq0$ is a [[D-HTIL5|principal ideal domain]] if $R$ is an integral domain and every ideal of $R$ has the form $aR$ for some $a\in R$.
 
 (c) The ring $\ZZ[x]$ is a UFD that is not a PID.
 
