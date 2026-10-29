@@ -5,7 +5,7 @@ kind: problem
 title: "Limit of $\\sum_{k=1}^n(1/k-1/2^k)$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Series of Numbers]
 relations: []
 review: draft
 audit:
