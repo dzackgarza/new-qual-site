@@ -14,14 +14,19 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source does not introduce R_1 and R_2; the statement declares them as the radii of convergence of sum a_n x^n and sum b_n x^n, as the solution reads them.
 ---
 
 ::: {.problem}
+Let $R_1$ and $R_2$ be the radii of convergence of $\sum_{n=0}^\infty a_n x^n$ and $\sum_{n=0}^\infty b_n x^n$.
 If $R_1 \neq R_2$, prove that the radius of convergence, $R$, of the power series $\sum_{n=0}^\infty (a_n+b_n)x^n$ is $\min\{R_1, R_2\}$.
 What can be said about $R$ when $R_1 = R_2$?
 :::
+
 ::: {.solution}
-Here $R_1$ and $R_2$ are the radii of convergence of $\sum a_n x^n$ and $\sum b_n x^n$.
 
 ::: pf
 
