@@ -5,7 +5,7 @@ kind: problem
 title: The Dirichlet function is nowhere continuous and not Riemann integrable
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Riemann Integrability
   - Continuity
