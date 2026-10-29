@@ -31,7 +31,7 @@ Let $f(x)=x^5-2$, let $\alpha=\sqrt[5]{2}\in\RR$, let $\zeta=e^{2\pi i/5}$, and 
 
 ::: pf
 
-::: {.pf-step #irreducible}
+::: pf-step
 $f$ is irreducible over $\QQ$, so $[\QQ(\alpha):\QQ]=5$.
 
 ::: pf-proof
@@ -40,7 +40,7 @@ $f$ is monic and Eisenstein at $p=2$, so it is irreducible over $\QQ$ by Eisenst
 
 :::
 
-::: {.pf-step #splitting}
+::: pf-step
 $K=\QQ(\alpha,\zeta)$ and $[\QQ(\zeta):\QQ]=4$.
 
 ::: pf-proof
