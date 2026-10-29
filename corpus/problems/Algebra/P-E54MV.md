@@ -23,9 +23,9 @@ audit:
 
 ::: {.problem}
 Show that the Galois group over $\QQ$ of
-\[
+$$
 f(x)=x^3-3x-3
-\]
+$$
 is isomorphic to $S_3$.
 :::
 
@@ -48,26 +48,26 @@ Apply Eisenstein's criterion with the prime $3$. The leading coefficient is $1$,
 ::: pf-step
 
 The discriminant of $f$ is
-\[
+$$
 \Delta=-135.
-\]
+$$
 
 ::: pf-proof
 
 For a depressed cubic
-\[
+$$
 x^3+ax+b,
-\]
+$$
 the discriminant is
-\[
+$$
 -4a^3-27b^2.
-\]
+$$
 Here $a=-3$ and $b=-3$, so
-\[
+$$
 \Delta=-4(-3)^3-27(-3)^2
 =108-243
 =-135.
-\]
+$$
 
 :::
 
