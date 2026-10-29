@@ -19,16 +19,16 @@ audit:
 ---
 
 ::: {.problem}
-Consider the metric space $(\mathbb{Q},d)$ where $\mathbb{Q}$ denotes the rational numbers and $d(x,y)=|x-y|$.
-Let $E=\{x\in\mathbb{Q}:x>0,\,2<x^2<3\}$.
-Is $E$ closed and bounded in $\mathbb{Q}$?
-Is $E$ compact in $\mathbb{Q}$?
+Consider the metric space $(\QQ,d)$ where $\QQ$ denotes the rational numbers and $d(x,y)=\abs{x-y}$.
+Let $E=\{x\in\QQ:x>0,\,2<x^2<3\}$.
+Is $E$ closed and bounded in $\QQ$?
+Is $E$ compact in $\QQ$?
 :::
 ::: {.solution}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #bounded}
 
 $E = \QQ \cap (\sqrt2, \sqrt3)$, in particular $E$ is bounded.
 
@@ -40,7 +40,7 @@ $E = \{q \in \QQ : q > 0,\ 2 < q^2 < 3\} = \{q \in \QQ : \sqrt2 < q < \sqrt3\}$,
 
 :::
 
-::: pf-step
+::: {.pf-step #closed}
 
 $E$ is closed in $\QQ$.
 
@@ -54,21 +54,27 @@ The set $[\sqrt2, \sqrt3]$ is closed in $\RR$, so its intersection with the subs
 
 :::
 
-::: pf-step
+::: {.pf-step #not-compact}
 
-$E$ is NOT compact.
+$E$ is not compact.
 
 ::: pf-proof
 
-choose rationals $q_n$ with $\sqrt2 < q_n < \sqrt2 + 1/n$ (possible by density of $\QQ$); then $q_n \in E$ for all $n$, and $q_n \to \sqrt2$ in $\RR$.
+By density of $\QQ$ there are rationals $q_n$ with $\sqrt2 < q_n < \sqrt2 + 1/n$; then $q_n \in E$ for all $n$, and $q_n \to \sqrt2$ in $\RR$.
 
-The sequence $(q_n)$ is Cauchy in the metric space $(\QQ, d)$: $|q_n - q_m| < 1/n + 1/m \to 0$.
+The sequence $(q_n)$ is Cauchy in the metric space $(\QQ, d)$: $\abs{q_n - q_m} < 1/n + 1/m \to 0$.
 But it does not converge in $\QQ$: any limit would have to be $\sqrt2$ (uniqueness of limits in $\RR$), and $\sqrt2 \notin \QQ$.
 Hence $E$ is not complete.
 In a metric space, compact $\Rightarrow$ complete, so $E$ is not compact.
 (Alternatively: compactness implies every sequence has a convergent subsequence, and no subsequence of $(q_n)$ converges in $\QQ$.)
 
 :::
+
+:::
+
+::: pf-qed
+
+By steps [](#bounded){.pf-ref}, [](#closed){.pf-ref} and [](#not-compact){.pf-ref}, $\boxed{E \text{ is closed and bounded in } \QQ \text{ but not compact.}}$ The Heine–Borel theorem fails in $\QQ$ because $\QQ$ is not complete.
 
 :::
 
