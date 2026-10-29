@@ -25,15 +25,28 @@ Show that $G$ nilpotent $\implies G$ solvable.
 :::
 
 ::: {.solution}
-Let $G$ be nilpotent. Then $G$ has a finite central series
-$$
-1=Z_0\trianglelefteq Z_1\trianglelefteq\cdots\trianglelefteq Z_c=G
-$$
-with
-$$
-Z_{i+1}/Z_i\le Z(G/Z_i)
-$$
-for every $i$.
+Let $G$ be nilpotent.
 
-Each quotient $Z_{i+1}/Z_i$ is therefore abelian. Hence this central series is a finite subnormal series with abelian successive quotients, so $G$ is solvable.
+::: pf
+
+::: {.pf-step #central-series}
+$G$ has a finite central series $1=Z_0\trianglelefteq Z_1\trianglelefteq\cdots\trianglelefteq Z_c=G$ with $Z_i\trianglelefteq G$ and $Z_{i+1}/Z_i\le Z(G/Z_i)$ for every $i$.
+
+::: pf-proof
+This is the definition of a nilpotent group; the upper central series is such a series.
+:::
+
+:::
+
+::: pf-step
+$G$ is solvable.
+
+::: pf-proof
+Each $Z_{i+1}/Z_i$ in step [](#central-series){.pf-ref} lies in the abelian group $Z(G/Z_i)$, so it is abelian. Hence the series is a finite subnormal series with abelian factors.
+:::
+
+:::
+
+:::
+
 :::
