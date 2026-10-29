@@ -23,74 +23,100 @@ of both $S^{-1}A\dash$modules and $A\dash$modules.
 :::
 
 ::: {.solution}
-Recall the definition
+Recall that $S^{-1}M$ is the set of fractions $m/s$ with $m\in M$, $s\in S$, where $m/s = m'/s'$ exactly when $t(s'm - sm') = 0$ for some $t\in S$; the same rule with $M = A$ defines $S^{-1}A$.
+The tensor product $S^{-1}A\tensor_A M$ is an $S^{-1}A$-module through the left factor, $\frac{b}{t}\cdot\qty{\frac{a}{s}\tensor m} = \frac{ba}{ts}\tensor m$, and $S^{-1}M$ is an $S^{-1}A$-module by $\frac{b}{t}\cdot\frac{m}{s} = \frac{bm}{ts}$.
+Both are $A$-modules by restriction of scalars along $A\to S^{-1}A$, $r\mapsto r/1$.
+Every element of $S^{-1}A\tensor_A M$ is a finite sum of elementary tensors, so two additive maps out of it that agree on elementary tensors are equal.
+
+::: pf
+
+::: {.pf-step #eta-defined}
+There is an $A$-linear map $\eta$ with
 \[
-S^{-1}A &\definedas \theset{ {a\over s} \st a\in A,\, s\in S} / \sim \\
-{a_1 \over s_1} &\sim {a_2 \over s_2} \iff \exists s\in S \text{ such that } s\qty{ s_2 a_1 - s_1 a_2 } = 0_A
-,\]
-and similarly $S^{-1}M = \theset{{m\over s}}/\sim$.
+\eta\qty{\frac{a}{s}\tensor m} = \frac{am}{s}.
+\]
 
-The universal property: in $\mods{A}$, $M\to S^{-1}M$ is initial among all morphisms $\alpha: M\to N$ such that $\alpha(S) \subseteq \units{N}$:
-
-\begin{tikzcd}
-	& S^{-1}M \ar[d, dotted, "{\exists ! \tilde\alpha}"] \\
-	M\ar[ru, "S^{-1}\cdot"]\ar[r, "\alpha"] & N
-\end{tikzcd}
-
-> Strategy: define a map $M\to S^{-1}A \tensor_A M$ such that $S$ is invertible in the image, to obtain a map.
-> Show they satisfy the same universal property.
-
-- Since $M \in \mods{A}$, we have an action $a\cdot m$, so define
+::: pf-proof
+Define $\phi : S^{-1}A\cross M\to S^{-1}M$ by $\phi(a/s, m) = am/s$.
+It is well defined: if $a/s = a'/s'$, then $t(s'a - sa') = 0$ for some $t\in S$, so $t(s'(am) - s(a'm)) = (t(s'a - sa'))m = 0$, and $am/s = a'm/s'$.
+It is additive in the first variable, since
 \[
-\eta: (S^{-1}A)\cross M &\to S^{-1}M \\
-\qty{ {a\over s}, m } &\mapsto {a\cdot m \over s }
-.\]
-
-- The tensor product $S^{-1}A \tensor_A M$ makes sense:
-
-  - $S^{-1}A$ is a right $A\dash$module by $a_0 \mapsto \qty{ {a\over s} \mapsto {a_0 a \over s}}$.
-
-  - $M$ is a left $A\dash$module by $a_0 \mapsto (m \mapsto a_0 \cdot m)$.
-
-- The map makes sense as an $A\dash$module morphism:
-
-  - $S^{-1}A \tensor_A M$ is a left $A\dash$module by $a_0 \mapsto \qty{{a\over s}\tensor m \mapsto {a_0 a \over s} \tensor m}$.
-
-  - $S^{-1}M$ is a left $A\dash$module by $a_0 \mapsto \qty{ {m\over s } \mapsto {a_0 \cdot m \over s}}$, using the $A\dash$module structure on $M$.
-
-- The map makes sense as an $S^{-1}A\dash$module morphism:
-
-  - $S^{-1}A \tensor_A M$ is a left $S^{-1}A\dash$module by ${a_0\over s_0} \mapsto \qty{ {a\over s}\tensor m \mapsto {a_0 a \over s_0 s} \tensor m }$.
-
-  - $S^{-1}M$ is a left $S^{-1}A\dash$module by ${a_0\over s_0} \mapsto \qty{{m \over s} \mapsto {a_0 \cdot m \over s_0 s} }$, by the $A\dash$module structure on $M$.
-
-- Well-defined: ?
-
-- $A\dash$bilinear: let $r\in A$, then
-\[
-\eta\qty{r \cdot {a\over s}, m}
-&\definedas \eta\qty{{r\cdot a\over s}, m}  \\
-&\definedas {\psi(r\cdot a)(m) \over s} \\
-&= {r\cdot \psi(a)(m) \over s} \quad\text{since $\psi$ is a ring morphism} \\
-&= {\psi(a)(r\cdot m) \over s} \quad\text{since $\psi(a)$ is a ring morphism} \\
-&\definedas \eta\qty{ {a\over s}, r\cdot m}
-.\]
-So this lifts to a map out of the tensor product.
-
-- $S^{-1}A\dash$bilinear: ?
+\phi\qty{\frac{a}{s} + \frac{a'}{s'}, m} = \frac{(s'a + sa')m}{ss'} = \frac{am}{s} + \frac{a'm}{s'},
+\]
+and additive in $m$ because $a(m + m') = am + am'$.
+It is $A$-balanced: for $r\in A$, $\phi(ra/s, m) = ram/s = \phi(a/s, rm)$.
+The universal property of $\tensor_A$ gives the additive map $\eta$, and $\eta(r\cdot x) = r\cdot\eta(x)$ holds on elementary tensors by the same computation, so $\eta$ is $A$-linear.
 :::
 
-::: {.remark}
-Erratum: the argument above is unfinished and uses undefined notation.
+:::
 
-- A module has no units.
-  The universal property of $M \to S^{-1}M$ is initial among $A$-module maps $\alpha: M\to N$ into modules $N$ on which multiplication by every $s \in S$ is bijective.
+::: {.pf-step #eta-linear}
+$\eta$ is $S^{-1}A$-linear.
 
-- The map $\psi$ in the bilinearity computation is never defined, and "$\psi(a)$ is a ring morphism" has no meaning here.
-  The $A$-balance of $\eta$ is $\eta\qty{\frac{ra}{s}, m} = \frac{ram}{s} = \eta\qty{\frac{a}{s}, rm}$ by the module axioms.
+::: pf-proof
+On an elementary tensor,
+\[
+\eta\qty{\frac{b}{t}\cdot\qty{\frac{a}{s}\tensor m}} = \eta\qty{\frac{ba}{ts}\tensor m} = \frac{bam}{ts} = \frac{b}{t}\cdot\frac{am}{s} = \frac{b}{t}\cdot\eta\qty{\frac{a}{s}\tensor m}.
+\]
+Both sides are additive in the tensor, so they agree everywhere.
+:::
 
-- Well-definedness, left as "?", holds because $t(s'a - sa') = 0$ implies $t(s'am - sa'm) = 0$, so $\frac{am}{s} = \frac{a'm}{s'}$.
+:::
 
-- The solution never shows that $\eta$ is an isomorphism.
-  The map $\frac{m}{s} \mapsto \frac{1}{s}\tensor m$ is a well-defined inverse, and $S^{-1}A$-linearity, also left as "?", is checked on elementary tensors.
+::: {.pf-step #psi-defined}
+The rule $\psi(m/s) = \frac{1}{s}\tensor m$ is a well-defined additive map $S^{-1}M\to S^{-1}A\tensor_A M$.
+
+::: pf-proof
+Suppose $m/s = m'/s'$, so $t(s'm - sm') = 0$ for some $t\in S$.
+Moving elements of $A$ across $\tensor_A$,
+\[
+\frac{1}{s}\tensor m = \frac{ts'}{tss'}\tensor m = \frac{1}{tss'}\tensor ts'm = \frac{1}{tss'}\tensor tsm' = \frac{ts}{tss'}\tensor m' = \frac{1}{s'}\tensor m'.
+\]
+For additivity,
+\[
+\psi\qty{\frac{m}{s} + \frac{m'}{s'}} = \frac{1}{ss'}\tensor(s'm + sm') = \frac{s'}{ss'}\tensor m + \frac{s}{ss'}\tensor m' = \frac{1}{s}\tensor m + \frac{1}{s'}\tensor m'.
+\]
+:::
+
+:::
+
+::: {.pf-step #inverse}
+$\psi$ is a two-sided inverse of $\eta$.
+
+::: pf-proof
+For every fraction, $\eta(\psi(m/s)) = \eta\qty{\frac{1}{s}\tensor m} = m/s$.
+For every elementary tensor,
+\[
+\psi\qty{\eta\qty{\frac{a}{s}\tensor m}} = \psi\qty{\frac{am}{s}} = \frac{1}{s}\tensor am = \frac{a}{s}\tensor m.
+\]
+The map $\psi\circ\eta$ is additive by steps [](#eta-defined){.pf-ref} and [](#psi-defined){.pf-ref} and fixes every elementary tensor, so it is the identity.
+:::
+
+:::
+
+::: {.pf-step #natural}
+$\eta$ is natural in $M$.
+
+::: pf-proof
+Let $h : M\to M'$ be $A$-linear, inducing $\id\tensor h$ on tensor products and $S^{-1}h(m/s) = h(m)/s$ on localizations.
+On an elementary tensor,
+\[
+S^{-1}h\qty{\eta\qty{\frac{a}{s}\tensor m}} = \frac{h(am)}{s} = \frac{a\,h(m)}{s} = \eta'\qty{(\id\tensor h)\qty{\frac{a}{s}\tensor m}},
+\]
+where $\eta'$ is the map of step [](#eta-defined){.pf-ref} for $M'$.
+Both composites are additive, so $S^{-1}h\circ\eta = \eta'\circ(\id\tensor h)$.
+:::
+
+:::
+
+::: pf-qed
+By steps [](#eta-defined){.pf-ref}, [](#eta-linear){.pf-ref} and [](#inverse){.pf-ref}, the map
+\[
+\boxed{\eta : S^{-1}A\tensor_A M\to S^{-1}M,\qquad \frac{a}{s}\tensor m\mapsto\frac{am}{s}}
+\]
+is a bijective $S^{-1}A$-linear map with inverse $m/s\mapsto\frac{1}{s}\tensor m$, hence an isomorphism of $S^{-1}A$-modules.
+Restriction of scalars along $A\to S^{-1}A$ makes it an isomorphism of $A$-modules, and step [](#natural){.pf-ref} shows that it is natural in $M$.
+:::
+
+:::
 :::
