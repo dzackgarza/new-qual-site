@@ -25,20 +25,20 @@ Prove that the minimal polynomial divides the characteristic polynomial.
 :::
 
 ::: {.solution}
-Let $m_A(t)$ be the minimal polynomial and $\chi_A(t)$ the characteristic polynomial of $A$. By Cayley--Hamilton,
-\[
+Let $A$ be an $n\times n$ matrix over a field $F$, let $m_A(t)$ be the minimal polynomial and $\chi_A(t)$ the characteristic polynomial of $A$. By Cayley--Hamilton,
+$$
 \chi_A(A)=0.
-\]
+$$
 Divide $\chi_A$ by $m_A$ in $F[t]$:
-\[
+$$
 \chi_A=q\,m_A+r,\qquad \deg r<\deg m_A.
-\]
+$$
 Evaluating at $A$ gives
-\[
+$$
 0=\chi_A(A)=q(A)m_A(A)+r(A)=r(A).
-\]
+$$
 By minimality of $m_A$, no nonzero polynomial of smaller degree annihilates $A$. Hence $r=0$, and therefore
-\[
+$$
 \boxed{m_A\mid\chi_A}.
-\]
+$$
 :::
