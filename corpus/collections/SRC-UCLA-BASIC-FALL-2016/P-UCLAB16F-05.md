@@ -13,33 +13,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 5 of the retained UCLA Basic Examination Fall 2016 PDF.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source allows all alpha_i to be zero, where V = 0 and every complex beta satisfies the hypothesis. The statement now requires the alpha_i to be not all zero.
 ---
 
 ::: {.problem}
-Let $\alpha_1, \ldots, \alpha_n$ be complex numbers, and $V = \{\sum_{i=1}^n a_i \alpha_i \mid a_i \in \QQ\}$ be the vector subspace of $\CC$ spanned by them over the field of rational numbers, $\QQ$. Let $\beta$ be a complex number such that $\beta V \subset V$, where $\beta V = \{\beta v \mid v \in V\}$. Show that $\beta$ is the root of a degree $n$ polynomial with rational coefficients.
-:::
-
-::: {.remark}
-
-As printed, the statement has the degenerate exception
-\[
-V=\{0\}.
-\]
-If
-\[
-\alpha_1=\cdots=\alpha_n=0,
-\]
-then
-\[
-\beta V\subseteq V
-\]
-for every complex number $\beta$, including transcendental ones.
-Assume therefore that
-\[
-V\ne\{0\},
-\]
-which is the intended nondegenerate case.
-
+Let $\alpha_1, \ldots, \alpha_n$ be complex numbers, not all zero, and $V = \{\sum_{i=1}^n a_i \alpha_i \mid a_i \in \QQ\}$ be the vector subspace of $\CC$ spanned by them over the field of rational numbers, $\QQ$. Let $\beta$ be a complex number such that $\beta V \subset V$, where $\beta V = \{\beta v \mid v \in V\}$. Show that $\beta$ is the root of a degree $n$ polynomial with rational coefficients.
 :::
 
 ::: {.solution}
@@ -61,11 +42,11 @@ The space $V$ is generated over $\mathbb Q$ by the $n$ vectors
 \alpha_1,\ldots,\alpha_n,
 \]
 so its dimension is at most $n$.
-The assumption
+The assumption that the $\alpha_i$ are not all zero gives
 \[
 V\ne\{0\}
 \]
-gives positive dimension.
+which gives positive dimension.
 
 :::
 
@@ -199,7 +180,7 @@ d\le n.
 
 ::: {.pf-step #s1-7}
 
-If a polynomial of degree exactly $n$ is required, define
+To obtain a polynomial of degree exactly $n$, define
 \[
 P(X)=X^{\,n-\deg p}p(X).
 \]
@@ -236,11 +217,7 @@ P(\beta)=0.
 
 ::: pf-qed
 
-Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} prove the intended statement under the necessary hypothesis
-\[
-V\ne\{0\},
-\]
-while the opening observation records the counterexample in the omitted zero-span case.
+Steps [](#s1-1){.pf-ref} through [](#s1-7){.pf-ref} prove the claim.
 
 :::
 
