@@ -51,7 +51,7 @@ so $H(\xi)=e^{-\pi\xi^2}$.
 The $n$-dimensional identity follows by Fubini's theorem, since $e^{-\pi\abs{x}^2}=\prod_{j=1}^ne^{-\pi x_j^2}$, and the formula for $G_t$ follows by the substitution $x=ty$.
 Since $G_t$ is even, the same computation gives $\int_{\RR^n}e^{2\pi i w\cdot\xi}e^{-\pi t^2\abs{\xi}^2}\,d\xi=G_t(w)$ for $w\in\RR^n$.
 
-Fix $x\in\RR^n$. By Fubini's theorem [[T-4GPEF]],
+Fix $x\in\RR^n$. By [[T-4GPEF|Fubini's theorem]],
 $$
 \begin{aligned}
 \int_{\RR^n}\widehat f(\xi)

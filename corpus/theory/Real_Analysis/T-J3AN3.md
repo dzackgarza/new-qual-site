@@ -52,7 +52,7 @@ $$
 $$
 
 Conversely, let $x\in\mathcal H_U$ and put $a_n\coloneqq\inner{x}{u_n}$.
-Bessel's inequality [[T-4BDE3]] gives $a\in\ell^2(\NN)$.
+[[T-4BDE3|Bessel's inequality]] gives $a\in\ell^2(\NN)$.
 Applying the construction above produces $y\in\mathcal H_U$ with the same coefficients.
 Then $x-y\in\mathcal H_U$ is orthogonal to every $u_n$, hence to the span of $U$ and therefore to its closure $\mathcal H_U$; in particular $x-y$ is orthogonal to itself, so $x=y$.
 This proves bijectivity and the norm identity.

@@ -26,6 +26,6 @@ $$
 :::
 
 ::: {.remark}
-This is the case of equality in Bessel's inequality [[T-4BDE3]], which gives $\sum_{k\geq1}\abs{\inner{x}{e_k}}^2\le\norm{x}^2$ for every [[D-4IXAO|orthonormal]] sequence $(e_k)$.
+This is the case of equality in [[T-4BDE3|Bessel's inequality]], which gives $\sum_{k\geq1}\abs{\inner{x}{e_k}}^2\le\norm{x}^2$ for every [[D-4IXAO|orthonormal]] sequence $(e_k)$.
 For an orthonormal sequence, being a basis is equivalent to being [[D-SLYE5|complete]]; see [[T-5AALA]].
 :::

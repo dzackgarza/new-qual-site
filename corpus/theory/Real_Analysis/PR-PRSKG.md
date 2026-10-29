@@ -21,5 +21,5 @@ Then the [[D-TS42Y|convolution]] $f*g$ is defined almost everywhere, $f*g\in L^p
 $$
 \norm{f \ast g}_p \leq \norm{f}_p \norm{g}_1 .
 $$
-This is the case $q=1$, $r=p$ of Young's convolution inequality [[PR-2C3SZ]].
+This is the case $q=1$, $r=p$ of [[PR-2C3SZ|Young's convolution inequality]].
 :::
