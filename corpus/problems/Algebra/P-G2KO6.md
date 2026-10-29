@@ -28,19 +28,19 @@ Prove it.
 
 ::: {.solution}
 Let $R$ be a commutative ring and let $I_1,\dots,I_n$ be pairwise comaximal ideals. The Chinese remainder theorem states that the natural map
-\[
+$$
 \phi:R\to\prod_{i=1}^n R/I_i,
 \qquad
 r\mapsto(r+I_1,\dots,r+I_n)
-\]
+$$
 is surjective and has kernel
-\[
+$$
 \ker\phi=\bigcap_{i=1}^n I_i=I_1\cdots I_n.
-\]
+$$
 Hence
-\[
+$$
 R/(I_1\cdots I_n)\cong\prod_{i=1}^nR/I_i.
-\]
+$$
 
 ::: pf
 
@@ -59,16 +59,16 @@ By definition, $\phi(r)=0$ exactly when $r\in I_i$ for every $i$.
 ::: pf-step
 
 For pairwise comaximal ideals,
-\[
+$$
 \bigcap_i I_i=I_1\cdots I_n.
-\]
+$$
 
 ::: pf-proof
 
 It suffices to prove the two-ideal case and iterate. If $I+J=R$, choose $a\in I$ and $b\in J$ with $a+b=1$. For $x\in I\cap J$,
-\[
+$$
 x=x(a+b)=xa+xb\in IJ.
-\]
+$$
 The reverse inclusion $IJ\subseteq I\cap J$ is automatic.
 
 :::
@@ -82,13 +82,13 @@ The map $\phi$ is surjective.
 ::: pf-proof
 
 For each $i$, pairwise comaximality gives
-\[
+$$
 I_i+\prod_{j\ne i}I_j=R.
-\]
+$$
 Choose $e_i\in\prod_{j\ne i}I_j$ with $e_i\equiv1\pmod{I_i}$. Then $e_i\equiv0\pmod{I_j}$ for $j\ne i$. Given residues $r_i+I_i$, the element
-\[
+$$
 r=\sum_i r_i e_i
-\]
+$$
 has $r\equiv r_i\pmod{I_i}$ for every $i$.
 
 :::
