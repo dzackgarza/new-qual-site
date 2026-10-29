@@ -391,7 +391,7 @@ For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right
 
 [[D-TZSG2]]
 
-[[D-STPAM]]
+[[D-BJYH3]]
 
 [[D-BYIZA]]
 

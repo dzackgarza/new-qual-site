@@ -20,7 +20,7 @@ A chain complex $(C_*, \del)$ is \dfn{acyclic} if $H_n(C_*) = 0$ for all $n$.
 
 ::: {.remark}
 A nonempty space is acyclic if and only if the map to a point induces isomorphisms on all homology groups.
-A chain complex is acyclic if and only if it is [[D-STPAM|exact]].
+A chain complex is acyclic if and only if it is [[D-BJYH3|exact]].
 :::
 
 ::: {.concept}

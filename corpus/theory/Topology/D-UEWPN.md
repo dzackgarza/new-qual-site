@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.definition}
-A \dfn{long exact sequence} is an [[D-STPAM|exact sequence]] with infinitely many terms, indexed by $\ZZ$ or by an infinite interval of $\ZZ$.
+A \dfn{long exact sequence} is an [[D-BJYH3|exact sequence]] with infinitely many terms, indexed by $\ZZ$ or by an infinite interval of $\ZZ$.
 :::
 
 ::: {.theorem}
