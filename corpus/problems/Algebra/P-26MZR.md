@@ -21,18 +21,18 @@ audit:
 ---
 
 ::: {.problem}
-- Show that the Quaternion group has only one element of order 2, namely $-1$.
+Show that the Quaternion group has only one element of order 2, namely $-1$.
 :::
 
 ::: {.solution}
 Write
-\[
+$$
 Q_8=\{1,-1,i,-i,j,-j,k,-k\},
-\]
+$$
 with
-\[
+$$
 i^2=j^2=k^2=ijk=-1.
-\]
+$$
 
 ::: pf
 
@@ -55,13 +55,13 @@ Each of $\pm i,\pm j,\pm k$ has order $4$.
 ::: pf-proof
 
 For $u\in\{i,j,k\}$,
-\[
+$$
 u^2=-1,
-\]
+$$
 so $u^4=1$ but $u^2\ne1$. Also
-\[
+$$
 (-u)^2=u^2=-1,
-\]
+$$
 so $-u$ likewise has order $4$.
 
 :::
