@@ -36,5 +36,6 @@ Let $X$ be a topological space and $A, B\subseteq X$ subspaces with $X = A^\circ
 Then $\del\colon H_n(X)\to H_{n-1}(A\cap B)$ is well defined and the Mayer--Vietoris sequence of $(A, B)$ is exact [@Hat02].
 :::
 
+::: {.remark}
 When $A\cap B\neq\emptyset$ there is an exact sequence of the same form in reduced homology, and there is an exact sequence for singular cohomology with the arrows reversed.
 :::
