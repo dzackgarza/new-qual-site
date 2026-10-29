@@ -13,6 +13,10 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Question 10 of the retained June 2004 UNL Mathematics Qualifying Exam 970/852 PDF.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Part (c) of the source claims two K_r sharing r-1 vertices for every r, which fails for r=2 (a single edge). The statement now restricts that claim to r >= 3.
 ---
 
 ::: {.problem}
@@ -21,7 +25,7 @@ a. State Tur´an’s theorem concerning the maximum number of edges in a graph o
 b. Prove that if G is a graph with $n \geq r + 1$ vertices and $t _ { r - 1 } ( n ) + 1$ edges then for every $n ^ { \prime }$ with $r \leq n ^ { \prime } \leq n$ there is a subgraph H of G with $n ^ { \prime }$ vertices and at least $t _ { r - 1 } ( n ^ { \prime } ) + 1$ edges.
 [Hint: consider a vertex in G of minimum degree.]
 
-c. From the previous part deduce Tur´an’s theorem, and also the stronger fact that such a G contains two $K _ { r }$ subgraphs sharing $r - 1$ vertices.
+c. From the previous part deduce Tur´an’s theorem, and also the stronger fact that, for $r \geq 3$, such a G contains two $K _ { r }$ subgraphs sharing $r - 1$ vertices.
 :::
 
 ::: {.solution}
@@ -763,50 +767,9 @@ vertices.
 
 :::
 
-::: {.pf-step #s1-10}
-
-The stronger assertion in part (c) requires
-$$
-r\ge3.
-$$
-
-
-::: pf-proof
-
-For
-$$
-r=2,
-$$
-one has
-$$
-t_1(n)=0.
-$$
-A graph with exactly one edge therefore has
-$$
-t_1(n)+1
-$$
-edges, but need not contain two copies of
-$$
-K_2
-$$
-sharing a vertex.
-
-Thus the printed stronger statement is false for
-$$
-r=2;
-$$
-step [](#s1-9){.pf-ref} proves the intended assertion for
-$$
-r\ge3.
-$$
-
-:::
-
-:::
-
 ::: pf-qed
 
-Step [](#s1-1){.pf-ref} states Turán's theorem, step [](#s1-5){.pf-ref} proves part (b), step [](#s1-7){.pf-ref} deduces Turán's theorem from part (b), and steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref} prove the stronger conclusion in its correct range.
+Step [](#s1-1){.pf-ref} states Turán's theorem, step [](#s1-5){.pf-ref} proves part (b), step [](#s1-7){.pf-ref} deduces Turán's theorem from part (b), and steps [](#s1-8){.pf-ref} and [](#s1-9){.pf-ref} prove the stronger conclusion.
 
 :::
 
