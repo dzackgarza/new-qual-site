@@ -20,37 +20,46 @@ z_{1}^{2}+z_{2}^{2}+z_{3}^{2}=z_{1} z_{2}+z_{2} z_{3}+z_{3} z_{1}
 :::
 
 ::: {.solution}
-$\implies$:
-Write the vertices as $z_1, z_2, z_3$ and the sides as
+Put $a=z_2-z_1$ and $b=z_3-z_1$. Since the points are distinct, $a\ne0$; put $t=b/a$.
 
-- $s_1 \definedas z_2-z_1$
-- $s_2 \definedas z_3 - z_2$
-- $s_1 \definedas z_1 -z_3$
+::: pf
 
-Note that $s_i = \pm \zeta_3 s_{i-1}$, dividing yields
-$$
-{s_2 \over s_3} &= {s_1\over s_2} \\
-&\iff s_2^2 - s_1 s_3 = 0 \\
-&\iff \left(z_{2}-z_{3}\right)^{2}-\left(z_{2}-z_{1}\right)\left(z_{1}-z_{3}\right)=0 \\
-&\iff \left(z_{2}^{2}+z_{3}^{2}-2 z_{2} z_{3}\right)-\left(z_{2} z_{1}-z_{2} z_{3}-z_{1}^{2}+z_{1} z_{3}\right)=0 \\
-&\iff z_{1}^{2}+z_{2}^{2}+z_{3}^{2}-\left(z_{1} z_{2}+z_{2} z_{3}+z_{3} z_{1}\right)=0
-.$$
+::: {.pf-step #reduce}
 
-$\impliedby$:
-We still have $s_i = \theta_i s_{i-1}$ for some angles $\theta_i$
-We have
+The displayed identity holds if and only if $t^2-t+1=0$, that is, $t = e^{\pm i\pi/3}$.
 
-![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-04_20-53-12.png)
+::: pf-proof
 
-and
-$$
-{s_1\over s_2} &= {\theta_1 \over \theta_2} \cdot {s_3\over s_1} \\
-{s_2\over s_3} &= {\theta_2 \over \theta_3} \cdot {s_1\over s_2} \\
-{s_3\over s_1} &= {\theta_3 \over \theta_1} \cdot {s_2\over s_3} 
-.$$
-
-Running the above calculation backward yields $s_2/s_3 = s_1/s_2$, and by the 2nd equality above, this forces $\theta_2 = \theta_3$.
-Similar arguments show $\theta_1=\theta_2 = \theta_3$ which forces $s_1=s_2 = s_3$.
+Both sides of the identity change by the same amount under $z_j \mapsto z_j + c$: the difference of the two sides is $\frac12\qty((z_1-z_2)^2+(z_2-z_3)^2+(z_3-z_1)^2)$, which depends only on differences. Taking $c = -z_1$ turns the identity into $a^2+b^2=ab$. Dividing by $a^2 \neq 0$ gives $t^2-t+1=0$, whose roots are $e^{\pm i\pi/3}$.
 
 :::
 
+:::
+
+::: {.pf-step #equi}
+
+The triangle is equilateral if and only if $t = e^{\pm i\pi/3}$.
+
+::: pf-proof
+
+The triangle with vertices $0, a, b$ is equilateral if and only if $b$ is obtained from $a$ by a rotation through $\pm\pi/3$ about $0$, that is, $b = e^{\pm i\pi/3}a$. Indeed, if $b = e^{\pm i\pi/3}a$, then $\abs{b} = \abs{a}$ and $\abs{a - b} = \abs{a}\,\abs{1 - e^{\pm i\pi/3}} = \abs{a}$; conversely, if $\abs{a} = \abs{b} = \abs{a-b}$, the angle at $0$ is $\pi/3$, so $t$ has modulus $1$ and argument $\pm\pi/3$.
+
+:::
+
+:::
+
+::: pf-step
+
+The points $z_1, z_2, z_3$ are the vertices of an equilateral triangle if and only if the displayed identity holds.
+
+::: pf-proof
+
+Translation by $-z_1$ preserves the shape of the triangle, so this follows from steps [](#reduce){.pf-ref} and [](#equi){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
+:::

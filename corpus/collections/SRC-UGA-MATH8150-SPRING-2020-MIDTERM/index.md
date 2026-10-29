@@ -24,7 +24,7 @@ source:
   - P-UGA8150S20-MID-03
   - P-UGA8150S20-MID-04
   - P-UGA8150S20-MID-05
-  - id: P-TIE-F15-05
+  - id: P-4KVTJ
     comment: Problem 6
   date:
     kind: academic-term
