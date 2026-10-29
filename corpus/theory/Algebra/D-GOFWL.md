@@ -23,7 +23,7 @@ ir\in I
 \qquad
 \text{for all } r\in R \text{ and } i\in I.
 $$
-Thus “ideal” means two-sided ideal when $R$ is not commutative.
+Thus "ideal" means two-sided ideal when $R$ is not commutative.
 :::
 
 ::: {.proposition}
