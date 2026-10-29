@@ -40,9 +40,9 @@ Separability passes from $F/K$ to $F/E$.
 ::: pf-proof
 
 Let $p_K$ and $p_E$ be the minimal polynomials of $\alpha\in F$ over $K$ and $E$. Since $p_K(\alpha)=0$, minimality over $E$ gives
-\[
+$$
 p_E\mid p_K
-\]
+$$
 in $E[x]$. If $F/K$ is separable, then $p_K$ has no repeated roots, so neither does its divisor $p_E$. Thus $F/E$ is separable.
 
 :::
