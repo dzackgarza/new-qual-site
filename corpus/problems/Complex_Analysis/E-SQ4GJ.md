@@ -12,14 +12,19 @@ classification:
   - Poles
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source asks for "a power series expansion" of $1/(e^z-1)$, which has a pole at $0$ and so has no power series there. The statement now asks for the Laurent expansion at $0$ through the $z$ term, which is what the solution computes.'
 ---
 
 ::: {.exercise}
-Find a power series expansion of
-\[
+Find the Laurent expansion of
+$$
 f(z) = {1\over e^z-1}
-.\]
-
+$$
+about $z=0$, through the term in $z$.
 :::
 
 ::: {.hint}
@@ -27,23 +32,32 @@ Divide $1$ by the power series for $e^z - 1$, or rewrite the reciprocal as a geo
 :::
 
 ::: {.solution}
-\[
-{1\over e^z-1}
-&= {1\over z + {1\over 2}z^2 + {1\over 6}z^2 + \cdots } \\
-&= {1\over z}\qty{1 - {1\over 2}z + \qty{-{1\over 6} + {1\over 4} }z^2 + \cdots } \\
-&= \inverseof{z} - {1\over 2} + {1\over 12}z + \bigo(z^3)
-.\]
-Alternatively, use geometric series.
-Note that something like ${1\over 1-e^z} = \sum_{k\geq 0} e^{kz}$ won't converge, and won't even be calculable since each $e^{kz}$ contributes a constant term!
-\[
-{1\over e^z-1}
-&= {1\over z + {1\over 2}z^2 + {1\over 6}z^3 + \cdots } \\
-&= {1\over z(1 + {1\over 2}z + {1\over 6}z^2 + \cdots) } \\
-&= \inverseof{z} {1\over 1 + q(z) } \qquad q(z) \definedas {1\over 2}z + {1\over 6}z^2 + \cdots \\
-&= \inverseof{z} \sum_{k\geq 0}(-q(z))^k \\
-&= \inverseof{z} \qty{1 - q(z) + q(z)^2 - \cdots } \\
-&= \inverseof{z}\qty{1 - \qty{{1\over 2}z + {1\over 6}z^2 + \cdots } + \qty{{1\over 2}z + {1\over 6}z^2 + \cdots }^2 - \cdots } \\
-&= \inverseof{z}\qty{ 1 - {1\over 2} z + \qty{-{1\over 6} + \qty{1\over 2}^2 } z^2 + \bigo(z^3) } \\
-&= \inverseof{z} - {1\over 2} + {1\over 12}z + \bigo(z^2)
-.\]
+Put $q(z) \coloneqq \frac12 z + \frac16 z^2 + \frac1{24}z^3+\cdots$, so that $e^z - 1 = z(1+q(z))$ and $q(0)=0$.
+
+::: pf
+
+::: {.pf-step #geometric}
+Near $0$, $\frac{1}{1+q(z)} = 1 - \frac12 z + \frac1{12}z^2 + \bigo(z^3)$.
+
+::: pf-proof
+For $\abs{q(z)}<1$, $\frac{1}{1+q} = 1 - q + q^2 - \cdots$. Since $q(z) = \frac12 z + \frac16 z^2 + \bigo(z^3)$ and $q(z)^2 = \frac14 z^2 + \bigo(z^3)$, the sum is $1 - \frac12 z + \left(-\frac16+\frac14\right)z^2 + \bigo(z^3)$.
+:::
+
+:::
+
+::: pf-step
+$\frac{1}{e^z-1} = \boxed{\frac1z - \frac12 + \frac1{12}z + \bigo(z^2)}$.
+
+::: pf-proof
+Divide step [](#geometric){.pf-ref} by $z$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark}
+The expansion $\frac{1}{1-e^z} = \sum_{k\geq 0} e^{kz}$ is of no use here: it requires $\abs{e^z}<1$, which fails near $0$, and each $e^{kz}$ contributes to the constant term.
 :::
