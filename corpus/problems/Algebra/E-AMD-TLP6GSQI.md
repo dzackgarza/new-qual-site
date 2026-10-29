@@ -27,10 +27,11 @@ Show that a finitely generated module over a Noetherian local ring is flat iff i
 
 
 ::: {.solution}
+Let $(R,\mfm)$ be the Noetherian local ring and $M$ the finitely generated $R$-module.
 
 ::: pf
 
-::: {.pf-step #free-implies-flat}
+::: pf-step
 If $M$ is free, then $M$ is flat.
 
 ::: pf-proof
@@ -39,8 +40,13 @@ Every free module is a direct sum of copies of $R$, and tensoring with a free mo
 
 :::
 
+::: pf-step
+If $M$ is flat, then $M$ is free.
+
+::: pf-proof
+
 ::: {.pf-step #choose-basis-lifts}
-Conversely, suppose $(R,\mfm)$ is Noetherian local and $M$ is finitely generated and flat. Let
+Let
 $$
 n=\dim_{R/\mfm}(M/\mfm M).
 $$
@@ -127,11 +133,6 @@ By step [](#kernel-finitely-generated){.pf-ref}, $K$ is finitely generated, and 
 
 :::
 
-::: pf-step
-Therefore a finitely generated module over a Noetherian local ring is flat if and only if it is free.
-
-::: pf-proof
-Combine steps [](#free-implies-flat){.pf-ref} and [](#k-zero-pi-iso){.pf-ref}.
 :::
 
 :::
