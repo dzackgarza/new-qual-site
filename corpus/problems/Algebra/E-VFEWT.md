@@ -77,32 +77,10 @@ An ideal is maximal exactly when its quotient ring is a field. Again step [](#qu
 
 :::
 
-::: {.pf-step #radical-correspondence}
-The ideal $J$ is radical in $R$ if and only if $J/I$ is radical in $R/I$.
-
-::: pf-proof
-Suppose first that $J$ is radical. If
-$$
-(r+I)^n\in J/I,
-$$
-then $r^n+I\in J/I$, which means $r^n\in J$. Radicality of $J$ gives $r\in J$, hence $r+I\in J/I$. Thus $J/I$ is radical.
-
-Conversely, suppose $J/I$ is radical and $r^n\in J$. Then
-$$
-(r+I)^n=r^n+I\in J/I.
-$$
-Hence $r+I\in J/I$, so $r\in J$. Therefore $J$ is radical.
-:::
-
-:::
-
-::: pf-step
-Thus radical, prime, and maximal ideals containing $I$ correspond to radical, prime, and maximal ideals of $R/I$ under $J\mapsto J/I$.
-
-::: pf-proof
-Combine steps [](#prime-correspondence){.pf-ref}, [](#maximal-correspondence){.pf-ref} and [](#radical-correspondence){.pf-ref} with the ordinary ideal correspondence for the quotient map $R\to R/I$.
-:::
-
+::: pf-qed
+Under the ideal correspondence $J\mapsto J/I$ for the quotient map $R\to R/I$, steps [](#prime-correspondence){.pf-ref} and [](#maximal-correspondence){.pf-ref} match the prime and the maximal ideals, and it remains to match the radical ideals.
+Suppose first that $J$ is radical. If $(r+I)^n\in J/I$, then $r^n+I\in J/I$, which means $r^n\in J$; radicality of $J$ gives $r\in J$, hence $r+I\in J/I$. Thus $J/I$ is radical.
+Conversely, suppose $J/I$ is radical and $r^n\in J$. Then $(r+I)^n=r^n+I\in J/I$, hence $r+I\in J/I$, so $r\in J$. Therefore $J$ is radical.
 :::
 
 :::
