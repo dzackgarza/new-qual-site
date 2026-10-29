@@ -16,16 +16,6 @@ At poles it is given by limit formulas, and at essential singularities it is rea
 
 [[C-Q6BSL]]
 
-::: {.proof}
-Since $h(z_0)=0$ and $h'(z_0)\neq 0$, $z_0$ is at most a simple pole of $g/h$, and by L'Hôpital's rule
-$$
-(z-z_0) {g(z) \over h(z)} = {(z-z_0) g(z) \over h(z)} \to
-{g(z_0) \over h'(z_0)} \quad\text{as } z\to z_0
-,$$
-because $\frac{d}{dz}\bigl((z-z_0)g(z)\bigr) = g(z) + (z-z_0)g'(z)$ equals $g(z_0)$ at $z_0$.
-
-:::
-
 ::: {.example title="Residue of a simple pole"}
 Let $f(z) = \frac{1}{1+z^2}$, so $g(z) = 1$ and $h(z) = 1+z^2$ with $h'(z) = 2z$ and $h'(i) = 2i \neq 0$.
 Thus
@@ -56,8 +46,7 @@ Since $e^{1/z} = \sum_{k\geq 0} z^{-k}/k!$ for $z\neq 0$, the coefficient of $\i
 If $f$ is holomorphic on $\CC$ except for finitely many isolated singularities $z_1,\ldots,z_N$, then
 $$
 \sum_{j=1}^N \Res_{z=z_j} f + \Res_{z=\infty} f = 0
-,$$
-because for $\rho$ larger than every $\abs{z_j}$ the residue theorem gives $\frac{1}{2\pi i}\oint_{\abs z=\rho} f = \sum_j\Res_{z=z_j} f$, and the definition gives $-\Res_{z=\infty} f$ for the same integral.
+.$$
 
 :::
 
