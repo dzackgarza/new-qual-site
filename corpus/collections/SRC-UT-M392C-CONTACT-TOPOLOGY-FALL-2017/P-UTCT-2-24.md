@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UTCT-2-24
 kind: problem
-title: Characteristic foliation of $dz+a\,dx+b\,dy$ on the $xy$-plane
+title: Characteristic foliation of $dz+by\,dx+ax\,dy$ on the $xy$-plane
 classification:
   areas:
   - topology
@@ -18,21 +18,24 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Recovered the foliation equation x^b y^a = c from p. 20 of Gompf Contact Topology.pdf, stated the definitions of sign and divergence, and noted that the printed form with constant a, b does not give that foliation.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source printed alpha = dz + a dx + b dy with constant a, b, which is closed and has straight-line leaves instead of x^b y^a = c; the statement now uses alpha = dz + by dx + ax dy with a different from b, whose leaves are |x|^b |y|^a = c on each quadrant.
 ---
 
 ::: {.problem}
 For a surface $F$ in a $3$-manifold with a plane field $\xi = \ker(\alpha)$, the characteristic foliation $\mathcal{F}$ of $F$ is cut out by a vector field $v$ with $\iota_v \omega = \alpha|_F$ for a positive area form $\omega$ on $F$, where $\operatorname{div}_\omega v$ is defined by $\mathcal{L}_v \omega = (\operatorname{div}_\omega v)\,\omega$, and $\operatorname{sign}(\xi) = \operatorname{sign}(\alpha \wedge d\alpha)$.
 
-Let $M = \mathbb{R}^3$ and let $\alpha = dz + a\,dx + b\,dy$ for $(a, b) \in \mathbb{R}^2 - \{0\}$.
+Let $M = \mathbb{R}^3$ and let $\alpha = dz + b y\,dx + a x\,dy$ for real numbers $a \neq b$.
 Determine $\operatorname{sign}(\xi)$ and $\operatorname{div}_\omega v$ for $\mathcal{F}$ on the $x$-$y$ plane.
-Check that the characteristic foliation is given by $x^b y^a = c$.
+Check that on each open quadrant the characteristic foliation is given by $|x|^b |y|^a = c$.
 Draw a picture and observe how these vary with $a$ and $b$.
 How is $\operatorname{sign}(\operatorname{div}_\omega \mathcal{F})$ visible?
 :::
 
 ::: {.remark}
 The first paragraph restates the definitions of Section 2 of the source (Definition 2.20, Theorem 2.23).
-As printed, with $a$ and $b$ constants, $d\alpha = 0$, and $\alpha|_{xy\text{-plane}} = a\,dx + b\,dy$ has the lines $ax + by = c$ as leaves rather than the curves $x^b y^a = c$; the source does not say how $a$ and $b$ are meant to vary.
 :::
 
 ::: {.solution}
@@ -47,273 +50,20 @@ on the $xy$-plane.
 
 ::: {.pf-step #s1-1}
 
-For the printed form
+On each open quadrant, the leaves of the characteristic foliation of
 \[
 \alpha
 =
-dz+a\,dx+b\,dy
+dz+b y\,dx+a x\,dy
 \]
-with constant $a,b$, one has
-\[
-d\alpha=0.
-\]
-
-
-::: pf-proof
-
-The functions $a$ and $b$ are constants, so
-\[
-d(a\,dx)=0,
-\qquad
-d(b\,dy)=0,
-\]
-and of course
-\[
-d(dz)=0.
-\]
-Therefore
-\[
-d\alpha=0.
-\]
-
-:::
-
-:::
-
-::: {.pf-step #s1-2}
-
-Consequently
-\[
-\alpha\wedge d\alpha=0.
-\]
-Thus the printed plane field
-\[
-\xi=\ker\alpha
-\]
-is not a contact structure.
-
-
-::: pf-proof
-
-By step [](#s1-1){.pf-ref},
-\[
-\alpha\wedge d\alpha
-=
-\alpha\wedge0
-=
-0.
-\]
-A contact form on a $3$-manifold must satisfy
-\[
-\alpha\wedge d\alpha\ne0
-\]
-everywhere. Hence the printed $\alpha$ is not contact. In particular the
-usual positive/negative contact sign is not defined as a nonzero sign; the
-displayed $3$-form has value zero.
-
-:::
-
-:::
-
-::: {.pf-step #s1-3}
-
-On the $xy$-plane,
-\[
-\alpha|_F
-=
-a\,dx+b\,dy.
-\]
-The characteristic vector field determined by
-\[
-\iota_v\omega
-=
-\alpha|_F
-\]
-is
-\[
-\boxed{
-v
-=
-b\frac{\partial}{\partial x}
--
-a\frac{\partial}{\partial y}.
-}
-\]
-
-
-::: pf-proof
-
-Write
-\[
-v=P\frac{\partial}{\partial x}
-+Q\frac{\partial}{\partial y}.
-\]
-For
-\[
-\omega=dx\wedge dy,
-\]
-one has
-\[
-\iota_v\omega
-=
-P\,dy-Q\,dx.
-\]
-Equating this with
-\[
-a\,dx+b\,dy
-\]
-gives
-\[
-P=b,
-\qquad
--Q=a.
-\]
-Hence
-\[
-Q=-a.
-\]
-
-:::
-
-:::
-
-::: {.pf-step #s1-4}
-
-The divergence of the printed characteristic field is
-\[
-\boxed{
-\operatorname{div}_\omega v=0.
-}
-\]
-
-
-::: pf-proof
-
-For the standard area form,
-\[
-\operatorname{div}_\omega
-\left(
-P\partial_x+Q\partial_y
-\right)
-=
-\partial_xP+\partial_yQ.
-\]
-Here
-\[
-P=b,
-\qquad
-Q=-a
-\]
-are constant, so
-\[
-\operatorname{div}_\omega v
-=
-0+0
-=
-0.
-\]
-Equivalently,
-\[
-\mathcal L_v\omega
-=
-d(\iota_v\omega)
-=
-d(\alpha|_F)
-=
-0.
-\]
-
-:::
-
-:::
-
-::: {.pf-step #s1-5}
-
-The leaves of the printed characteristic foliation are
-\[
-\boxed{
-ax+by=c.
-}
-\]
-
-
-::: pf-proof
-
-Along an integral curve
-\[
-(x(t),y(t))
-\]
-of $v$,
-\[
-x'(t)=b,
-\qquad
-y'(t)=-a.
-\]
-Therefore
-\[
-\frac{d}{dt}
-\bigl(
-ax(t)+by(t)
-\bigr)
-=
-a b+b(-a)
-=
-0.
-\]
-Thus
-\[
-ax+by
-\]
-is constant on every leaf.
-
-Conversely, the tangent direction to a level line
-\[
-ax+by=c
-\]
-is annihilated by
-\[
-a\,dx+b\,dy,
-\]
-so these are exactly the leaves.
-
-:::
-
-:::
-
-::: {.pf-step #s1-6}
-
-Hence the source claim
-\[
-x^b y^a=c
-\]
-does not follow from the printed $1$-form.
-
-
-::: pf-proof
-
-Step [](#s1-5){.pf-ref} gives the actual first integral of the printed characteristic line
-field. Except in degenerate special cases, its leaves are affine lines, not
-the monomial curves requested by the source.
-
-:::
-
-:::
-
-::: {.pf-step #s1-7}
-
-A natural corrected form producing the advertised monomial leaves is
-\[
-\widetilde\alpha
-=
-dz+b y\,dx+a x\,dy.
-\]
+on the $xy$-plane are the curves $|x|^b|y|^a=c$.
 
 
 ::: pf-proof
 
 Restricting to the $xy$-plane gives
 \[
-\widetilde\alpha|_F
+\alpha|_F
 =
 b y\,dx+a x\,dy.
 \]
@@ -321,11 +71,11 @@ The level curves of
 \[
 \Phi(x,y)
 =
-x^b y^a
+|x|^b |y|^a
 \]
-on any quadrant where this expression is real and smooth satisfy
+on an open quadrant, where $\Phi$ is smooth and positive, satisfy
 \[
-d\log|\Phi|
+d\log\Phi
 =
 b\frac{dx}{x}
 +
@@ -335,18 +85,18 @@ Multiplying by $xy$ gives the proportional $1$-form
 \[
 b y\,dx+a x\,dy.
 \]
-Thus its kernel is exactly tangent to the advertised level curves.
+Thus its kernel is exactly tangent to the level curves $|x|^b|y|^a=c$, and these are the leaves.
 
 :::
 
 :::
 
-::: {.pf-step #s1-8}
+::: {.pf-step #s1-2}
 
-For the corrected form, the characteristic vector field is
+The characteristic vector field is
 \[
 \boxed{
-\widetilde v
+v
 =
 a x\frac{\partial}{\partial x}
 -
@@ -357,7 +107,11 @@ b y\frac{\partial}{\partial y}.
 
 ::: pf-proof
 
-As in step [](#s1-3){.pf-ref},
+For
+\[
+\omega=dx\wedge dy
+\]
+and any vector field $P\partial_x+Q\partial_y$,
 \[
 \iota_{P\partial_x+Q\partial_y}
 (dx\wedge dy)
@@ -383,12 +137,12 @@ Q=-b y.
 
 :::
 
-::: {.pf-step #s1-9}
+::: {.pf-step #s1-3}
 
-The corrected divergence is
+The divergence is
 \[
 \boxed{
-\operatorname{div}_\omega\widetilde v
+\operatorname{div}_\omegav
 =
 a-b.
 }
@@ -397,9 +151,9 @@ a-b.
 
 ::: pf-proof
 
-Differentiate the components from step [](#s1-8){.pf-ref}:
+Differentiate the components from step [](#s1-2){.pf-ref}:
 \[
-\operatorname{div}_\omega\widetilde v
+\operatorname{div}_\omegav
 =
 \partial_x(a x)
 +
@@ -412,11 +166,11 @@ a-b.
 
 :::
 
-::: {.pf-step #s1-10}
+::: {.pf-step #s1-4}
 
-The corrected contact sign is governed by the same quantity:
+The contact sign is governed by the same quantity:
 \[
-\widetilde\alpha\wedge d\widetilde\alpha
+\alpha\wedge d\alpha
 =
 (a-b)
 \,dx\wedge dy\wedge dz.
@@ -424,12 +178,11 @@ The corrected contact sign is governed by the same quantity:
 Hence, relative to the standard orientation,
 \[
 \boxed{
-\operatorname{sign}(\widetilde\xi)
+\operatorname{sign}(\xi)
 =
-\operatorname{sign}(a-b)
+\operatorname{sign}(a-b).
 }
 \]
-when $a\ne b$.
 
 
 ::: pf-proof
@@ -437,7 +190,7 @@ when $a\ne b$.
 Compute
 \[
 \begin{aligned}
-d\widetilde\alpha
+d\alpha
 &=
 d(b y\,dx)
 +
@@ -453,8 +206,8 @@ a\,dx\wedge dy\\
 Therefore
 \[
 \begin{aligned}
-\widetilde\alpha\wedge
-d\widetilde\alpha
+\alpha\wedge
+d\alpha
 &=
 \bigl(
 dz+b y\,dx+a x\,dy
@@ -484,33 +237,30 @@ Thus the sign is the sign of $a-b$.
 
 :::
 
-::: {.pf-step #s1-11}
+::: {.pf-step #s1-5}
 
-For the corrected problem, the sign of the divergence is visible in
-the phase portrait:
+The sign of the divergence is visible in the phase portrait:
 
 - if $a-b>0$, area expands infinitesimally along the characteristic flow;
-- if $a-b<0$, area contracts;
-- if $a=b$, the divergence vanishes and the corrected form is again not
-  contact.
+- if $a-b<0$, area contracts.
 
 
 ::: pf-proof
 
 By definition,
 \[
-\mathcal L_{\widetilde v}\omega
+\mathcal L_{v}\omega
 =
-(\operatorname{div}_\omega\widetilde v)\omega.
+(\operatorname{div}_\omegav)\omega.
 \]
-Using step [](#s1-9){.pf-ref},
+Using step [](#s1-3){.pf-ref},
 \[
-\mathcal L_{\widetilde v}\omega
+\mathcal L_{v}\omega
 =
 (a-b)\omega.
 \]
-Positive coefficient means local area expansion, negative coefficient means
-local contraction, and zero means infinitesimal area preservation.
+Positive coefficient means local area expansion, and negative coefficient means
+local contraction.
 
 :::
 
@@ -518,13 +268,9 @@ local contraction, and zero means infinitesimal area preservation.
 
 ::: pf-qed
 
-Steps [](#s1-1){.pf-ref} through [](#s1-6){.pf-ref} give the exact answer for the $1$-form printed in the
-source. Steps [](#s1-7){.pf-ref} through [](#s1-11){.pf-ref} give the natural corrected calculation that
-produces the advertised leaves
-\[
-x^b y^a=c
-\]
-and the intended nonzero divergence/contact-sign discussion.
+Step [](#s1-1){.pf-ref} identifies the leaves, step [](#s1-4){.pf-ref} gives $\operatorname{sign}(\xi)$,
+steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} give the characteristic field and its divergence, and
+step [](#s1-5){.pf-ref} describes how the sign of the divergence is visible.
 
 :::
 
