@@ -35,13 +35,13 @@ Yes. For a fixed degree, the discriminant is a polynomial with integer coefficie
 ::: pf-step
 
 First suppose
-\[
+$$
 f(x)=x^n+c_1x^{n-1}+\cdots+c_n
-\]
+$$
 is monic, with roots $r_1,\ldots,r_n$ in a splitting field. Its discriminant is
-\[
+$$
 \Delta(f)=\prod_{i<j}(r_i-r_j)^2.
-\]
+$$
 
 ::: pf-proof
 
@@ -54,9 +54,9 @@ This is the usual root definition of the discriminant of a monic polynomial.
 ::: pf-step
 
 The polynomial
-\[
+$$
 D(r_1,\ldots,r_n)=\prod_{i<j}(r_i-r_j)^2
-\]
+$$
 is symmetric in the roots.
 
 ::: pf-proof
@@ -70,20 +70,20 @@ Permuting the roots permutes the unordered pairs $\{i,j\}$ and therefore leaves 
 ::: {.pf-step #s3}
 
 Hence $D$ is a polynomial in the elementary symmetric polynomials
-\[
+$$
 e_1(r),\ldots,e_n(r).
-\]
+$$
 
 ::: pf-proof
 
 By the fundamental theorem of symmetric polynomials, every symmetric polynomial with integer coefficients is a polynomial with integer coefficients in the elementary symmetric polynomials. Thus there exists
-\[
+$$
 P\in\ZZ[y_1,\ldots,y_n]
-\]
+$$
 such that
-\[
+$$
 D=P(e_1,\ldots,e_n).
-\]
+$$
 
 :::
 
@@ -96,13 +96,13 @@ Therefore the discriminant is a polynomial in the coefficients $c_i$.
 ::: pf-proof
 
 Viète's formulas give
-\[
+$$
 e_i(r_1,\ldots,r_n)=(-1)^i c_i.
-\]
+$$
 Substituting these into step [](#s3){.pf-ref} yields
-\[
+$$
 \Delta(f)=P(-c_1,c_2,\ldots,(-1)^n c_n),
-\]
+$$
 a polynomial in the coefficients.
 
 :::
@@ -112,22 +112,22 @@ a polynomial in the coefficients.
 ::: pf-step
 
 For a general degree-$n$ polynomial
-\[
+$$
 f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_0,
 \qquad a_n\ne0,
-\]
+$$
 the usual discriminant
-\[
+$$
 \Delta(f)=a_n^{2n-2}\prod_{i<j}(r_i-r_j)^2
-\]
+$$
 is likewise a polynomial with integer coefficients in $a_0,\ldots,a_n$.
 
 ::: pf-proof
 
 One equivalent formula is
-\[
-\Delta(f)=(-1)^{n(n-1)/2}a_n^{-1}\operatorname{Res}(f,f').
-\]
+$$
+\Delta(f)=(-1)^{n(n-1)/2}a_n^{-1}\Res(f,f').
+$$
 The resultant is the determinant of the Sylvester matrix, hence a polynomial with integer coefficients in the coefficients of $f$ and $f'$. For the universal degree-$n$ polynomial, that resultant is divisible by the leading coefficient $a_n$, and the quotient is precisely the displayed discriminant. Equivalently, homogenizing the monic symmetric-polynomial expression in step [](#s4){.pf-ref} by the factor $a_n^{2n-2}$ clears all denominators. Thus $\Delta(f)\in\ZZ[a_0,\ldots,a_n]$.
 
 :::
