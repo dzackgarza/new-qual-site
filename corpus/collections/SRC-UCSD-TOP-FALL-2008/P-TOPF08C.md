@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF08C
 kind: problem
-title: "No degree pm 1 map from CP^n to S^{n+1} x S^{n-1} for n > 1"
+title: 'No map $\CP^n\to S^{n+1}\times S^{n-1}$ of degree $\pm1$ for $n>1$'
 classification:
   areas:
   - topology
