@@ -26,32 +26,42 @@ $$\overline{A} = \bigcap \{F \subseteq X \mid F \text{ is closed and } A \subset
 :::
 
 ::: {.solution}
-Let
-$$
-K=\bigcap\{F\subseteq X:F\text{ is closed and }A\subseteq F\}.
-$$
+Here $\overline A$ is the set of points $x\in X$ such that every open neighborhood of $x$ meets $A$. Let
+$$K=\bigcap\{F\subseteq X:F\text{ is closed and }A\subseteq F\}.$$
 
 ::: pf
 
-::: pf-step
-
-The set $K$ is closed and contains $A$.
-
-::: pf-proof
-
-Arbitrary intersections of closed sets are closed, and every set in the intersection contains $A$.
-
-:::
-
-:::
-
-::: pf-step
+::: {.pf-step #closed}
 
 The closure $\overline A$ is closed and contains $A$.
 
 ::: pf-proof
 
-Certainly $A\subseteq\overline A$. If $x\notin\overline A$, some open neighborhood of $x$ misses $A$; the same neighborhood lies in $X\setminus\overline A$. Thus $X\setminus\overline A$ is open.
+Every neighborhood of a point of $A$ meets $A$, so $A\subseteq\overline A$. If $x\notin\overline A$, some open neighborhood $U$ of $x$ misses $A$; $U$ is then an open neighborhood of each of its points that misses $A$, so $U\subseteq X\setminus\overline A$. Thus $X\setminus\overline A$ is open.
+
+:::
+
+:::
+
+::: {.pf-step #upper}
+
+$K\subseteq\overline A$.
+
+::: pf-proof
+
+By step [](#closed){.pf-ref}, $\overline A$ is one of the closed sets in the intersection defining $K$.
+
+:::
+
+:::
+
+::: {.pf-step #lower}
+
+Every closed $F\supseteq A$ contains $\overline A$, so $\overline A\subseteq K$.
+
+::: pf-proof
+
+If $x\notin F$, then $X\setminus F$ is an open neighborhood of $x$ that misses $A$, so $x\notin\overline A$.
 
 :::
 
@@ -59,21 +69,16 @@ Certainly $A\subseteq\overline A$. If $x\notin\overline A$, some open neighborho
 
 ::: pf-step
 
-Since $\overline A$ is one of the closed supersets occurring in the definition of $K$,
+$\overline A=K$, and $\overline A$ is the smallest closed subset of $X$ containing $A$.
+
+::: pf-proof
+
+Steps [](#upper){.pf-ref} and [](#lower){.pf-ref} give the equality, and steps [](#closed){.pf-ref} and [](#lower){.pf-ref} give minimality.
 
 :::
 
 :::
 
-$$
-K\subseteq\overline A.
-$$
-Conversely, every closed set containing $A$ contains $\overline A$, by minimality of closure under the neighborhood characterization. Hence
-$$
-\overline A\subseteq K.
-$$
-Therefore
-$$
-\overline A=K.
-$$
+:::
+
 :::
