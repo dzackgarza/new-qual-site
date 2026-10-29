@@ -527,7 +527,6 @@ sections:
       - ref: D-WB4M5
       - ref: PR-3VQBI
       - ref: PR-TLBPS
-      - ref: C-C2GYX
       - ref: D-KQFIV
       - ref: PR-IK6AM
       - ref: PR-25FLW

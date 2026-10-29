@@ -15,12 +15,10 @@ Every algebraic extension of a field of characteristic $0$ or of a finite field 
 
 [[PR-TLBPS]]
 
-[[C-C2GYX]]
+[[E-6OUJV]]
 
-::: {.remark title="The derivative test"}
-A polynomial $f$ over a field is separable if and only if $\gcd(f, f') = 1$.
-An irreducible $f$ is inseparable if and only if $f' = 0$, which in characteristic $p$ happens if and only if $f(x) = g(x^p)$ for a polynomial $g$.
-For example, over $\FF_p(t)$ the polynomial $x^p - t$ is irreducible and $x^p - t = (x - t^{1/p})^p$ over $\FF_p(t^{1/p})$, so $\FF_p(t^{1/p})/\FF_p(t)$ is inseparable.
+::: {.example}
+Over $\FF_p(t)$ the polynomial $x^p - t$ is irreducible and $x^p - t = (x - t^{1/p})^p$ over $\FF_p(t^{1/p})$, so $\FF_p(t^{1/p})/\FF_p(t)$ is inseparable.
 :::
 
 ## Permanence and the Galois condition
