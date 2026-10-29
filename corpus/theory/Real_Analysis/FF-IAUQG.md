@@ -5,7 +5,7 @@ kind: fact
 title: Weierstrass $M$-test for uniform convergence
 slogan: 'A summable uniform majorant forces absolute and uniform convergence of a function series.'
 prompts:
-- What is the $M{\hbox{-}}$test?
+- What is the Weierstrass $M$-test?
 classification:
   areas:
   - real-analysis
