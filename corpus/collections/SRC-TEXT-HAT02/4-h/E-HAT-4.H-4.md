@@ -21,89 +21,39 @@ Define the dual of an iterated mapping cylinder precisely, in terms of maps from
 :::
 
 ::: {.solution}
-**Goal:** Define the dual of an iterated mapping cylinder via simplex maps and construct the dual $\nabla X$ of a complex of spaces $\Delta X$.
+Let $X_0 \xrightarrow{f_1} X_1 \xrightarrow{f_2} \cdots \xrightarrow{f_n} X_n$ be maps, and for $i \le j$ write $f_{ji} = f_j \circ \cdots \circ f_{i+1}: X_i \to X_j$, with $f_{ii} = \id$. Faces of $\Delta^n = [v_0, \dots, v_n]$ are written $\sigma = [v_{i_0}, \dots, v_{i_k}]$ with $i_0 < \dots < i_k$, and $\max \sigma = i_k$. All mapping spaces have the compact-open topology.
+
+The iterated mapping cylinder $M(f_1, \dots, f_n)$ is a quotient of $\coprod_\sigma X_{\min \sigma} \times \sigma$, where $X_{\min\sigma} \times \tau$ is glued to $X_{\min \tau} \times \tau$ by $f_{\min\tau, \min\sigma} \times \id$ for each face $\tau \subseteq \sigma$. It deformation retracts onto $X_n$. The dual replaces the product $X \times \sigma$ by the mapping space $X^\sigma$, the quotient by a subspace, and the end $X_n$ by the end $X_0$.
 
 ::: pf
 
-::: pf-step
-Simplex reflection involution:
+::: {.pf-step #dual-cylinder}
+The dual of the iterated mapping cylinder is
+$$\nabla(f_1, \dots, f_n) = \Bigl\{ (\phi_\sigma)_{\sigma \subseteq \Delta^n} \in \prod_\sigma X_{\max\sigma}^{\,\sigma} \;:\; \phi_\sigma|_\tau = f_{\max\sigma, \max\tau} \circ \phi_\tau \text{ for every face } \tau \subseteq \sigma \Bigr\}.$$
+Each condition is a closed condition, and the conditions are consistent: for $\rho \subseteq \tau \subseteq \sigma$, $f_{\max\sigma,\max\tau} \circ f_{\max\tau,\max\rho} = f_{\max\sigma,\max\rho}$.
 
 ::: pf-proof
-
-::: pf-step
-Let $\Delta^n = \{(t_0, t_1, \dots, t_n) \in \RR^{n+1} : \sum_{i=0}^n t_i = 1, \; t_i \ge 0\}$ denote the standard geometric $n$-simplex with vertices $v_0, v_1, \dots, v_n$.
-:::
-
-::: pf-step
-Define the order-reversing affine homeomorphism $\iota_n: \Delta^n \to \Delta^n$ by
-$$\iota_n(t_0, t_1, \dots, t_n) = (t_n, t_{n-1}, \dots, t_0),$$
-which maps the vertex $v_i$ to $v_{n-i}$ for each $0 \le i \le n$.
-:::
-
-::: pf-step
-For any continuous map $\sigma: \Delta^n \to Z$, define the dual simplex map $\sigma^\vee: \Delta^n \to Z$ by precomposition:
-$$\sigma^\vee = \sigma \circ \iota_n.$$
-:::
-
+The condition compares two maps $\tau \to X_{\max\sigma}$, and each side is continuous in $(\phi_\sigma)$; when $X_{\max \sigma}$ is Hausdorff, equality is closed. The composition rule holds by the definition of $f_{ji}$.
 :::
 
 :::
 
 ::: pf-step
-Dual of an iterated mapping cylinder:
+For $n = 1$, $\nabla(f_1)$ is the mapping path space $E_{f_1} = \theset{(x, \gamma) \in X_0 \times X_1^I \suchthat \gamma(0) = f_1(x)}$, the dual of the mapping cylinder $M_{f_1}$.
 
 ::: pf-proof
-
-::: pf-step
-Given a sequence of maps $X_0 \xrightarrow{f_1} X_1 \xrightarrow{f_2} \cdots \xrightarrow{f_n} X_n$, the iterated mapping cylinder $M(f_1, \dots, f_n)$ is constructed as the quotient of the disjoint union
-$$\coprod_{0 \le i_0 < i_1 < \dots < i_k \le n} \Delta^k \times X_{i_0}$$
-under the face identifications: for $(t_0, \dots, t_k) \in \Delta^k$ with $t_j = 0$, omit $t_j$ and $i_j$; if $j = 0$, replace $x \in X_{i_0}$ with $f_{i_1 i_0}(x) \in X_{i_1}$.
-:::
-
-::: pf-step
-The dual iterated mapping cylinder $M^\vee(f_1, \dots, f_n)$ is defined on the same constituent spaces by reflecting each simplex parameter via $\iota_k$:
-each cell parameterization $\sigma: \Delta^k \times X_{i_0} \to M$ is replaced by $\sigma \circ (\iota_k \times \operatorname{id}_{X_{i_0}})$.
-:::
-
-::: pf-step
-Under this reflection, the face operators act in reverse order: the $j$-th face map $\partial_j: \Delta^{k-1} \to \Delta^k$ satisfies $\iota_k \circ \partial_j = \partial_{k-j} \circ \iota_{k-1}$, so the induced structure maps on the dual cylinder satisfy $d_j^\vee = d_{k-j}$.
-:::
-
+The data are $\phi_{v_0} \in X_0$, $\phi_{v_1} \in X_1$, and $\gamma = \phi_{[v_0, v_1]}: I \to X_1$. The conditions say $\gamma(0) = f_1(\phi_{v_0})$ and $\gamma(1) = \phi_{v_1}$, so $\phi_{v_1}$ is determined by $\gamma$, and $(\phi_{v_0}, \gamma)$ ranges over $E_{f_1}$.
 :::
 
 :::
 
 ::: pf-step
-Definition of the dual simplicial space $\nabla X$:
+Let $X$ be a complex of spaces over a $\Delta$-complex $\Gamma$: a space $X_\sigma$ for each simplex $\sigma$ of $\Gamma$ and, for each face $\tau \subseteq \sigma$, a map between $X_\sigma$ and $X_\tau$, compatible with composition. In $\Delta X = \coprod_\sigma X_\sigma \times \sigma / {\sim}$ these maps run $X_\sigma \to X_\tau$, as for the iterated mapping cylinder with $X_\sigma = X_{\min\sigma}$. The dual uses the reversed maps $g_{\sigma\tau}: X_\tau \to X_\sigma$, as for the dual cylinder with $X_\sigma = X_{\max\sigma}$, and is
+$$\nabla X = \Bigl\{ (\phi_\sigma)_{\sigma \in \Gamma} \in \prod_{\sigma} X_\sigma^{\,\sigma} \;:\; \phi_\sigma|_\tau = g_{\sigma\tau} \circ \phi_\tau \text{ for every face } \tau \subseteq \sigma \Bigr\}.$$
+For $\Gamma = \Delta^n$ and $X_\sigma = X_{\max\sigma}$, $\nabla X$ is $\nabla(f_1, \dots, f_n)$.
 
 ::: pf-proof
-
-::: pf-step
-Let $\Delta X$ be a simplicial space (or complex of spaces) given by a sequence of topological spaces $X_n = (\Delta X)_n$ for $n \ge 0$ equipped with face maps $d_i: X_n \to X_{n-1}$ ($0 \le i \le n$) and degeneracy maps $s_i: X_n \to X_{n+1}$ ($0 \le i \le n$) satisfying the simplicial identities.
-:::
-
-::: pf-step
-Define the dual simplicial space $\nabla X$ by:
-$$(\nabla X)_n = (\Delta X)_n \quad \text{for all } n \ge 0,$$
-with face maps $d_i^{\nabla}: (\nabla X)_n \to (\nabla X)_{n-1}$ and degeneracy maps $s_i^{\nabla}: (\nabla X)_n \to (\nabla X)_{n+1}$ defined by
-$$d_i^{\nabla} = d_{n-i}, \qquad s_i^{\nabla} = s_{n-i} \quad \text{for } 0 \le i \le n.$$
-:::
-
-::: pf-step
-The dual operators satisfy the simplicial identities: for $i < j$,
-$$d_i^{\nabla} d_j^{\nabla} = d_{n-1-i} d_{n-j} = d_{n-j-1} d_{n-i} = d_{j-1}^{\nabla} d_i^{\nabla},$$
-confirming that $\nabla X$ is a well-defined simplicial space.
-:::
-
-:::
-
-:::
-
-::: pf-step
-Conclusion:
-
-::: pf-proof
-The dual simplicial space $\nabla X$ reflects the indexing of simplices and face/degeneracy operators degree-by-degree via $d_i^{\nabla} = d_{n-i}$ and $s_i^{\nabla} = s_{n-i}$, providing the homotopy-theoretic dual to $\Delta X$.
+The consistency of the conditions follows from compatibility of the $g_{\sigma\tau}$ with composition, as in step [](#dual-cylinder){.pf-ref}. For the chain, $g_{\sigma\tau} = f_{\max\sigma, \max\tau}$, and the definition of $\nabla X$ becomes the definition in step [](#dual-cylinder){.pf-ref}.
 :::
 
 :::
