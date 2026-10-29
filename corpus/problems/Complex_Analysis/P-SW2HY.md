@@ -19,25 +19,40 @@ Let $n$ be a natural number.
 Show that
 
 $$
-[1 / 2(-1+\sqrt{3} i)]^{n}+[1 / 2(-1-\sqrt{3} i)]^{n}
+\left[\tfrac12(-1+\sqrt{3} i)\right]^{n}+\left[\tfrac12(-1-\sqrt{3} i)\right]^{n}
 $$
 
-is equal to 2 if $n$ is a multiple of 3 , and it is equal to $-1$ otherwise.
+is equal to 2 if $n$ is a multiple of 3, and it is equal to $-1$ otherwise.
 :::
 
 ::: {.solution}
-The two numbers are
-\[
-\frac{-1+\sqrt3\,i}{2}=e^{2\pi i/3},
-\qquad
-\frac{-1-\sqrt3\,i}{2}=e^{-2\pi i/3}.
-\]
-Therefore their $n$th powers sum to
-\[
-e^{2\pi i n/3}+e^{-2\pi i n/3}
-=2\cos\frac{2\pi n}{3}.
-\]
-If $3\mid n$, this equals $2$. If $3\nmid n$, then
-$n\equiv1$ or $2\pmod3$, so the cosine is $-1/2$ and the sum is $-1$.
-Thus the stated dichotomy holds.
+
+::: pf
+
+::: {.pf-step #cosine}
+
+The sum equals $2\cos\frac{2\pi n}3$.
+
+::: pf-proof
+
+$\frac12(-1\pm\sqrt3\,i)=e^{\pm2\pi i/3}$, so the sum is $e^{2\pi in/3}+e^{-2\pi in/3}=2\cos\frac{2\pi n}3$.
+
+:::
+
+:::
+
+::: pf-step
+
+The sum is $2$ if $3\mid n$ and $-1$ otherwise.
+
+::: pf-proof
+
+By step [](#cosine){.pf-ref}: if $3\mid n$, then $\cos\frac{2\pi n}3=1$; if $n\equiv1$ or $2\pmod3$, then $\cos\frac{2\pi n}3=-\frac12$.
+
+:::
+
+:::
+
+:::
+
 :::
