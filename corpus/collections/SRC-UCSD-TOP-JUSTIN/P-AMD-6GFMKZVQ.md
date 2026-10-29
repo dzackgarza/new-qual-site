@@ -23,8 +23,6 @@ Use van Kampen's theorem to compute a presentation of the fundamental group, and
 :::
 
 ::: {.solution}
-**Goal:** Compute a presentation of the fundamental group $\pi_1(T^2, x_0)$ of the 2-dimensional torus $T^2$ and prove that $\pi_1(T^2, x_0) \cong \ZZ^2$.
-
 ::: pf
 
 ::: {.pf-step #s1}
