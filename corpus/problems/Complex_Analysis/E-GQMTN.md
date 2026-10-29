@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-GQMTN
 kind: problem
-title: There is no entire function with $|f(z)|\ge|z|+1$ for all $z$
+title: There is no entire function with $\abs{f(z)}\ge\abs{z}+1$ for all $z$
 classification:
   areas:
   - complex-analysis
@@ -16,19 +16,34 @@ review: draft
 
 ::: {.exercise}
 Find all entire functions $f$ satisfying
-\[
-\abs{f(z)} \geq \abs{z} + 1 &&\forall z\in \CC
-.\]
-
+$$
+\abs{f(z)} \geq \abs{z} + 1 \qquad \forall z\in \CC
+.$$
 :::
 
 ::: {.solution}
-The inequality implies $f$ has no zeros, so $g(z) \definedas 1/f(z)$ is entire.
-Moreover it is bounded on $\CC$, since
-\[
-\abs{g(z)} \leq {1\over \abs{z} + 1} \leq 1
-,\]
-so $g\equiv c$ is constant by Liouville.
-Since $\abs{g(z)}\le 1/(\abs z+1)\to0$ as $\abs z\to\infty$, $c=0$, which contradicts $g=1/f$ having no zeros. So there are no such entire functions.
+
+::: pf
+
+::: {.pf-step #reciprocal}
+If $f$ satisfies the inequality, then $g\coloneqq1/f$ is entire with $\abs{g(z)}\le{1\over\abs z+1}$.
+
+::: pf-proof
+The inequality gives $\abs{f}\ge1$, so $f$ has no zeros and $1/f$ is entire.
 :::
 
+:::
+
+::: pf-step
+There are $\boxed{\text{no such functions}}$.
+
+::: pf-proof
+By step [](#reciprocal){.pf-ref}, $\abs g\le1$, so $g$ is a constant $c$ by Liouville's theorem.
+Since $\abs{g(z)}\le1/(\abs z+1)\to0$ as $\abs z\to\infty$, $c=0$, which contradicts $g=1/f$.
+:::
+
+:::
+
+:::
+
+:::
