@@ -20,11 +20,14 @@ audit:
 ---
 
 ::: {.problem}
-If $b$ and $c$ are elements in a group $G$, and if $b^5=c^3=e$, where $e$ is the identity of $G$, determine the inverse of $b^2cb^4c^2$ from the listed choices.
+If $b$ and $c$ are elements in a group $G$, and if $b^5=c^3=e$, where $e$ is the unit element of $G$, then the inverse of $b^2cb^4c^2$ must be
 
-![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-01.png)
+(A) $b^3c^2bc$
+(B) $b^4c^2b^2c$
+(C) $c^2b^4cb^2$
+(D) $cb^2c^2b^4$
+(E) $cbc^2b^3$
 :::
-
 
 ::: {.solution}
 For any product $x_1x_2\cdots x_r$,
