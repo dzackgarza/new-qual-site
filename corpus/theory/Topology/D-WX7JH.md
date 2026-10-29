@@ -20,15 +20,11 @@ The \dfn{orientation double cover} of $M$ is the set $\tilde M$ of all [[D-6CI7D
 $$
 U(\mu_B) \coloneqq \theset{ \mu_x \st x\in B,\ \mu_x \text{ the image of } \mu_B \text{ under } H_n(M\mid B)\to H_n(M\mid x) },
 $$
-where $B$ ranges over the open balls of finite radius in charts $\RR^n\subseteq M$ and $\mu_B$ over the generators of $H_n(M\mid B)\cong\ZZ$.
+where $B$ ranges over the open balls of finite radius in charts $\RR^n\subseteq M$ and $\mu_B$ over the generators of $H_n(M\mid B)\cong\ZZ$ [@Hat02].
 :::
 
 ::: {.proposition}
 Let $M$ be an $n$-manifold with orientation double cover $p\colon\tilde M\to M$.
 Then $p$ is a two-sheeted [[D-ANO2D|covering space]], and $\tilde M$ is an orientable $n$-manifold.
 If $M$ is connected, then $M$ is orientable if and only if $\tilde M$ has two components.
-:::
-
-::: {.concept}
-[@Hat02].
 :::
