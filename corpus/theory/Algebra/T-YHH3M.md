@@ -26,7 +26,3 @@ is an isomorphism.
 ::: {.remark}
 For an irreducible representation $M$ of $G$ over an arbitrary field $k$, every nonzero $G$-equivariant endomorphism of $M$ has $G$-stable kernel $0$ and image $M$, so $\Endo_G(M)$ is a division algebra over $k$.
 :::
-
-::: {.slogan}
-Over an algebraically closed field, an irreducible finite-dimensional representation has only scalar equivariant endomorphisms.
-:::
