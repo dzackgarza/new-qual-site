@@ -26,21 +26,27 @@ $$Z(S_n) = \{e\} \quad \text{for all } n \ge 3.$$
 :::
 
 ::: {.solution}
-Let $\sigma\in Z(S_n)$ with $n\ge3$. Suppose $\sigma\ne1$. Then for some $i$,
-\[
-\sigma(i)=j\ne i.
-\]
-Choose $k$ distinct from both $i$ and $j$, and let $\tau=(jk)$. Since $\tau$ fixes $i$,
-\[
+
+::: pf
+
+::: pf-step
+
+If $n\ge3$ and $\sigma\in S_n$ is not the identity, then $\sigma$ is not central.
+
+::: pf-proof
+
+Choose $i$ with $j=\sigma(i)\ne i$, choose $k\notin\{i,j\}$, which exists because $n\ge3$, and let $\tau=(j\ k)$. Since $\tau$ fixes $i$,
+$$
 (\sigma\tau)(i)=\sigma(i)=j,
-\]
-whereas
-\[
-(\tau\sigma)(i)=\tau(j)=k.
-\]
-Thus $\sigma\tau\ne\tau\sigma$, contradicting centrality. Therefore $\sigma=1$, so
-\[
-Z(S_n)=\{1\}
-\]
-for every $n\ge3$.
+\qquad
+(\tau\sigma)(i)=\tau(j)=k\ne j.
+$$
+So $\sigma\tau\ne\tau\sigma$.
+
+:::
+
+:::
+
+:::
+
 :::
