@@ -55,3 +55,7 @@ So no $\delta$ works for $\varepsilon = 1$.
 
 :::
 :::
+
+::: {.remark}
+The failure on $\CC$ also follows from sequences: $z_n=n$ and $w_n=n+\frac1n$ satisfy $\abs{z_n-w_n}\to0$, but $\abs{w_n^2-z_n^2}=2+\frac1{n^2}\to2$.
+:::

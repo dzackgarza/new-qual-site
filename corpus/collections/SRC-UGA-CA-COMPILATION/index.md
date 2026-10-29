@@ -44,7 +44,7 @@ source:
       comment: Question 16
     - id: P-TIE-F09-17
       comment: Question 17
-    - id: P-TIE-F09-18
+    - id: P-KNLBB
       comment: Question 18
     - id: P-TIE-F09-19
       comment: Question 19
