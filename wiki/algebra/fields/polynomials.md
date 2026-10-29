@@ -83,4 +83,4 @@ By the Kronecker--Weber theorem, every finite abelian extension of $\QQ$ is cont
 
 ## Exercises
 
-[[E-LUR7G]] [[E-6OUJV]] [[E-OB3LO]] [[E-PHSV5]]
+[[E-LUR7G]] [[E-6OUJV]] [[E-PHSV5]]
