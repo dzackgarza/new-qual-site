@@ -15,16 +15,22 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source lists a fragment ("f in L^1 and g smooth and compactly supported (and in fact f*g is smooth)") and asks for the derivative formula when g has bounded partial derivatives. Without g bounded, f*g need not be defined; the statement now assumes g bounded and splits the source into parts (a) and (b).
 ---
 
 ::: {.exercise}
-- $f\in L^1$ and $g$ smooth and compactly supported (and in fact $f\ast g$ is smooth)
+Let $f\in L^1(\RR^n)$ and let $g\colon \RR^n \to \RR$ be bounded and differentiable with every $\dd{g}{x_i}$ bounded.
 
-- Show that if $f\in L^1$ and $g'$ exists with $\dd{g}{x_i}$ all bounded, then $$\dd{}{x_i}(f\ast g) = f \ast \dd{g}{x_i}$$
+(a) Show that $$\dd{}{x_i}(f\ast g) = f \ast \dd{g}{x_i}.$$
+
+(b) Show that if $g$ is moreover smooth and compactly supported, then $f\ast g$ is smooth.
 :::
 
 ::: {.solution}
-Let $f \in L^1(\RR^n)$, let $g$ be differentiable with $\dd{g}{x_i}$ bounded, and let $e_i$ be the $i$th standard basis vector.
+Let $e_i$ be the $i$th standard basis vector.
 
 ::: pf
 
@@ -54,7 +60,7 @@ Pointwise convergence is differentiability of $g$ in the direction $e_i$. The bo
 
 ::: {.pf-step #s3}
 
-$\dd{}{x_i}(f\ast g) = f \ast \dd{g}{x_i}$.
+(a) $\dd{}{x_i}(f\ast g) = f \ast \dd{g}{x_i}$.
 
 ::: pf-proof
 
@@ -64,21 +70,15 @@ By step [](#s2){.pf-ref} the dominated convergence theorem lets $h \to 0$ pass u
 
 :::
 
-::: {.pf-step #s4}
+::: pf-step
 
-If $g$ is smooth and compactly supported, then $f \ast g$ is smooth.
+(b) If $g$ is smooth and compactly supported, then $f \ast g$ is smooth.
 
 ::: pf-proof
 
 Every partial derivative $D^\alpha g$ of a smooth compactly supported $g$ is bounded, so step [](#s3){.pf-ref} applied repeatedly gives $D^\alpha(f\ast g) = f \ast D^\alpha g$ for every multi-index $\alpha$. Each $f \ast D^\alpha g$ is the convolution of an $L^1$ function with a bounded function, hence continuous, so $f \ast g$ has continuous partial derivatives of all orders.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s3){.pf-ref} is the differentiation formula, and step [](#s4){.pf-ref} is smoothness of $f\ast g$ for smooth compactly supported $g$.
 
 :::
 
