@@ -25,18 +25,18 @@ Show that $Z(S_n) = 1$ for $n\geq 3$
 :::
 
 ::: {.solution}
-Let \(\sigma\in S_n\) be nonidentity. Choose \(i\) with \(\sigma(i)=j\ne i\). Since \(n\ge3\), choose \(k\notin\{i,j\}\), and let \(\tau=(j\ k)\).
+Let $\sigma\in S_n$ be nonidentity. Choose $i$ with $\sigma(i)=j\ne i$. Since $n\ge3$, choose $k\notin\{i,j\}$, and let $\tau=(j\ k)$.
 
-Then \(\tau(i)=i\), so
-\[
+Then $\tau(i)=i$, so
+$$
 (\sigma\tau)(i)=\sigma(i)=j,
-\]
+$$
 while
-\[
+$$
 (\tau\sigma)(i)=\tau(j)=k.
-\]
-Thus \(\sigma\tau\ne\tau\sigma\), so \(\sigma\notin Z(S_n)\). Therefore the identity is the only central element:
-\[
+$$
+Thus $\sigma\tau\ne\tau\sigma$, so $\sigma\notin Z(S_n)$. Therefore the identity is the only central element:
+$$
 \boxed{Z(S_n)=1\qquad(n\ge3).}
-\]
+$$
 :::
