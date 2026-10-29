@@ -27,9 +27,9 @@ Show that if $N\trianglelefteq G$ and $C$ is a conjugacy class in $G$, then eith
 
 ::: {.solution}
 Suppose $C\cap N\ne\varnothing$, and choose $h\in C\cap N$. Since $C$ is the conjugacy class of $h$,
-\[
+$$
 C=\{ghg^{-1}:g\in G\}.
-\]
+$$
 Normality of $N$ implies $ghg^{-1}\in N$ for every $g\in G$. Hence $C\subseteq N$.
 
 Therefore every conjugacy class is either contained in $N$ or disjoint from $N$.
