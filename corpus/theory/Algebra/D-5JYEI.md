@@ -40,7 +40,12 @@ The following are equivalent:
 :::
 
 ::: {.remark}
-The separable degree counts the embeddings of $L$ into an algebraic closure that extend a fixed embedding of $k$:
-
-![figures/2021-08-09_22-29-40.png](../../assets/figures/2021-08-09_22-29-40.png)
+Fix an algebraic closure $\bar k$ of $k$ containing $L$.
+The separable degree counts the embeddings of $L$ into $\bar k$ that restrict to the identity on $k$:
+$$
+[L:k]_s = \size \Hom_{\Fieldsover{k}}(L, \bar k).
+$$
+If $L/k$ is normal, then every such embedding $\tau$ satisfies $\tau(L) = L$.
+Hence $\tau$ is an automorphism of $L$ over $k$, and restriction of the codomain gives a bijection $\Hom_{\Fieldsover{k}}(L,\bar k) \to \Aut_{\Fieldsover{k}}(L)$.
+In the Galois case, separability also gives $[L:k]_s = [L:k]$, so $\size \Gal(L/k) = [L:k]$.
 :::

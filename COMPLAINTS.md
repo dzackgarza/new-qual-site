@@ -50,20 +50,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair removes `C-XRC67` and retains `C-HWX2P` as the canonical statement.
 
-### D-5JYEI delegated the separable-degree statement to an opaque screenshot
-
-- **Object and need:** `D-5JYEI`, Galois extension and Galois group.
-  The closing remark states that separable degree counts embeddings but then shows only a legacy image with filename alt text instead of the formula.
-
-- **Observed evidence:** the card ended with `![figures/2021-08-09_22-29-40.png](../../assets/figures/...)`; no surrounding prose stated the embedding set or explained how the Galois automorphism count follows.
-
-- **Impact and owner:** the card's last mathematical claim was inaccessible to text readers and dependent on an unexplained asset.
-  The relevant formula is intrinsic to the theorem and should be authored as mathematics on the card.
-
-- **Uncertainty:** none; for a finite extension, the separable degree is the number of `$k$`-embeddings into a fixed algebraic closure.
-
-- **Repair:** a repair replaces the screenshot with the formula `$[L:k]_s=\size\Hom_{k\text{-alg}}(L,\bar k)$` and explains why normality identifies these embeddings with `\Gal(L/k)` in the Galois case.
-
 ### Duplicate UFD cards D-INULL and FD-25SUQ
 
 - **Object and need:** `D-INULL` and `FD-25SUQ` in `corpus/theory/Algebra`. Both cards gave the full definition of a unique factorization domain, including existence and uniqueness up to order and associates.
