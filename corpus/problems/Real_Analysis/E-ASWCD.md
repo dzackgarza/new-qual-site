@@ -18,14 +18,15 @@ audit:
 ---
 
 ::: {.exercise}
-- Let $\mu^*$ be an outer measure on $X$ and let $\mathcal M(\mu^*)$ be its Carathéodory $\sigma$-algebra.
-  Show that the restriction of $\mu^*$ to $\mathcal M(\mu^*)$ is continuous from below, and continuous from above when the first set has finite outer measure.
+Let $\mu^*$ be an outer measure on $X$ and let $\mathcal M(\mu^*)$ be its Carathéodory $\sigma$-algebra.
 
-- Give an outer measure for which these continuity statements fail on arbitrary subsets of $X$.
+(a) Show that the restriction of $\mu^*$ to $\mathcal M(\mu^*)$ is continuous from below, and continuous from above when the first set has finite outer measure.
+
+(b) Give an outer measure for which these continuity statements fail on arbitrary subsets of $X$.
 :::
 
 ::: {.solution}
-By Carathéodory's theorem, $\mu\coloneqq\mu^*|_{\mathcal M(\mu^*)}$ is a measure, so it is countably additive on $\mathcal M(\mu^*)$.
+(a) By Carathéodory's theorem, $\mu\coloneqq\mu^*|_{\mathcal M(\mu^*)}$ is a measure, so it is countably additive on $\mathcal M(\mu^*)$.
 If $E_1\subseteq E_2\subseteq\cdots$ are Carathéodory measurable, set $F_1=E_1$ and $F_n=E_n\setminus E_{n-1}$ for $n\ge2$.
 Then the $F_n$ are pairwise disjoint and measurable, and
 $$
@@ -44,7 +45,7 @@ $$
 $$
 Cancellation is legitimate because $\mu^*(E_1)<\infty$, yielding continuity from above.
 
-Neither statement is true for an arbitrary outer measure on arbitrary sets.
+(b) Neither statement is true for an arbitrary outer measure on arbitrary sets.
 On $X=\NN$, define
 $$
 \mu^*(A)=
