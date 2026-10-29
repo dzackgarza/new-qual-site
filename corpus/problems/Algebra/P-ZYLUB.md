@@ -18,48 +18,34 @@ Give the $4 \times 4$ Jordan forms with minimal polynomial $(x - 1)(x - 2)^2$.
 :::
 
 ::: {.solution}
-The minimal polynomial
-\[
-m_A(x)=(x-1)(x-2)^2
-\]
-says exactly the following about the Jordan blocks:
-
-- for eigenvalue $1$, every Jordan block has size $1$, and at least one such block occurs;
-- for eigenvalue $2$, every Jordan block has size at most $2$, and at least one block has size exactly $2$.
-
-Since the total dimension is $4$, enumerate the possible partitions of the generalized eigenspace dimensions subject to those constraints.
+Let $A$ be a $4\times4$ matrix with $m_A(x)=(x-1)(x-2)^2$, and write $J_k(\lambda)$ for the $k\times k$ Jordan block with eigenvalue $\lambda$.
 
 ::: pf
 
+::: {.pf-step #blocks}
+
+The eigenvalues of $A$ are $1$ and $2$; every block for eigenvalue $1$ has size $1$ and at least one occurs; every block for eigenvalue $2$ has size at most $2$ and at least one has size exactly $2$.
+
+::: pf-proof
+
+The exponent of $x-\lambda$ in the minimal polynomial is the size of the largest Jordan block for $\lambda$, and the roots of $m_A$ are exactly the eigenvalues.
+
+:::
+
+:::
+
 ::: pf-step
 
-The eigenvalue-$2$ generalized eigenspace has dimension $2$.
-Then it must contribute one block $J_2(2)$, while eigenvalue $1$ contributes two $1\times1$ blocks:
-\[
-J_2(2)\oplus[1]\oplus[1].
-\]
+Up to the order of the blocks, the Jordan forms are $\boxed{J_2(2)\oplus[1]\oplus[1]}$ and $\boxed{J_2(2)\oplus[2]\oplus[1]}$.
 
-:::
+::: pf-proof
 
-::: pf-step
-
-The eigenvalue-$2$ generalized eigenspace has dimension $3$.
+By step [](#blocks){.pf-ref}, the eigenvalue-$2$ blocks contain a $J_2(2)$ and the eigenvalue-$1$ blocks take at least one dimension, so the eigenvalue-$2$ part has dimension $2$ or $3$. Dimension $2$ gives $J_2(2)$ together with two blocks $[1]$. Dimension $3$ gives $J_2(2)\oplus[2]$ together with one block $[1]$. Both have minimal polynomial $(x-1)(x-2)^2$.
 
 :::
 
 :::
 
-It must contain one block of size $2$ and one block of size $1$, while eigenvalue $1$ contributes one block:
-\[
-J_2(2)\oplus[2]\oplus[1].
-\]
+:::
 
-No other case is possible. The eigenvalue-$2$ generalized eigenspace cannot have dimension $4$, because the factor $(x-1)$ in the minimal polynomial requires eigenvalue $1$ to occur; and it cannot have dimension $1$, because $(x-2)^2$ requires a size-$2$ Jordan block.
-
-Hence, up to permutation of Jordan blocks, the only Jordan forms are
-\[
-\boxed{J_2(2)\oplus[1]\oplus[1]}
-\qquad\text{and}\qquad
-\boxed{J_2(2)\oplus[2]\oplus[1]}.
-\]
 :::
