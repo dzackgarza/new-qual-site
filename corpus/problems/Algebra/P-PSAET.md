@@ -22,31 +22,31 @@ audit:
 ---
 
 ::: {.problem}
-Determine the orders $|\operatorname{GL}_n(\mathbb{F}_p)|$ and $|\operatorname{SL}_n(\mathbb{F}_p)|$ for any prime $p$ and integer $n \ge 1$.
+Determine the orders $\abs{\GL_n(\FF_p)}$ and $\abs{\SL_n(\FF_p)}$ for any prime $p$ and integer $n \ge 1$.
 :::
 
 ::: {.solution}
-An invertible $n\times n$ matrix over $\mathbb F_p$ is exactly an ordered basis of $\mathbb F_p^n$ written as columns. The first column has $p^n-1$ choices, the second has $p^n-p$ choices, and in general the $(k+1)$-st column has $p^n-p^k$ choices. Hence
-\[
-\boxed{|\operatorname{GL}_n(\mathbb F_p)|=\prod_{k=0}^{n-1}(p^n-p^k).}
-\]
-Equivalently,
-\[
-|\operatorname{GL}_n(\mathbb F_p)|
-=p^{n(n-1)/2}\prod_{j=1}^n(p^j-1).
-\]
 
-The determinant map
-\[
-\det:\operatorname{GL}_n(\mathbb F_p)\to\mathbb F_p^\times
-\]
-is surjective, because
-\[
-\det\operatorname{diag}(a,1,\dots,1)=a
-\]
-for every $a\in\mathbb F_p^\times$. Its kernel is $\operatorname{SL}_n(\mathbb F_p)$. Therefore
-\[
-\boxed{|\operatorname{SL}_n(\mathbb F_p)|=
-\frac1{p-1}\prod_{k=0}^{n-1}(p^n-p^k).}
-\]
+::: pf
+
+::: {.pf-step #gl}
+$\abs{\GL_n(\FF_p)}=\boxed{\prod_{k=0}^{n-1}(p^n-p^k)=p^{n(n-1)/2}\prod_{j=1}^n(p^j-1)}$.
+
+::: pf-proof
+A matrix is invertible exactly when its columns $c_1,\ldots,c_n$ form a basis of $\FF_p^n$, that is, when each $c_{k+1}$ lies outside the span of $c_1,\ldots,c_k$. That span has $p^k$ elements, so given $c_1,\ldots,c_k$ there are $p^n-p^k$ choices for $c_{k+1}$. The second form follows from $p^n-p^k=p^k(p^{n-k}-1)$ and $\sum_{k=0}^{n-1}k=n(n-1)/2$.
+:::
+
+:::
+
+::: pf-step
+$\abs{\SL_n(\FF_p)}=\boxed{\dfrac1{p-1}\prod_{k=0}^{n-1}(p^n-p^k)}$.
+
+::: pf-proof
+The determinant $\det:\GL_n(\FF_p)\to\FF_p^\times$ is a homomorphism with kernel $\SL_n(\FF_p)$. It is surjective, since $\det\diag(a,1,\ldots,1)=a$ for every $a\in\FF_p^\times$. So $\abs{\SL_n(\FF_p)}=\abs{\GL_n(\FF_p)}/(p-1)$, and step [](#gl){.pf-ref} gives the value.
+:::
+
+:::
+
+:::
+
 :::
