@@ -12,38 +12,51 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: 'The source states the identity without a hypothesis on b; it is false for b<0 and undefined for b=0, so the statement adds b>0.'
 ---
 
 ::: {.problem}
-Show that
-\[
-\int_0^{\infty} {\cos(x) \over x^2 + b^2}\dx = {\pi e^{-b} \over 2b}
-.\]
+Let $b>0$. Show that
+$$
+\int_0^{\infty} {\cos(x) \over x^2 + b^2}\,dx = {\pi e^{-b} \over 2b}.
+$$
 :::
 
 ::: {.solution}
-\envlist
+Let $f(z)=\frac{e^{iz}}{z^2+b^2}$. For $R>b$ let $\Gamma_R$ be the segment $[-R,R]$ followed by the upper semicircle $C_R$ of radius $R$.
 
-- Let $I$ be the integral over $\RR$.
-  Since $f(x)$ is even, the original integral is ${1\over 2}I$.
+::: pf
 
-- Write $f(z) = e^{iz} / (z^2 + b^2)$.
-  Take a semicircular contour $\Gamma \definedas \gamma_1 + \gamma_2$ where $\gamma_1$ is $[-R, R]$ on $\RR$ and $\gamma_2$ is the usual half-circle of radius $R$.
+::: {.pf-step #residue}
+$\oint_{\Gamma_R}f(z)\,dz=\frac{\pi e^{-b}}{b}$.
 
-- Claim: $\int_{\gamma_2} f \converges{R\to\infty}\too 0$, so $\int_\Gamma \to \int_\RR f(z)$.
-  - Estimate the exponential factor:
-  \[
-  \abs{f} = { \abs{e^{iz} } \over \abs{z^2 + b^2} } = {e^{-\Re z} \over \abs{z^2 + b^2} } \leq {1\over \abs{z^2 + b^2}} \converges{R\to\infty}\too 0
-  .\]
-
-- Compute $\int_\Gamma f$ by residues: factor $z^2 + b^2 = (z+ib)(z-ib)$, so the contour only contains the order 1 pole $z_0 = ib$.
-
-- Compute the residue:
-\[
-\Res_{z=ib}f = \lim_{z\to ib} (z-ib) {e^{iz} \over (z+ib)(z-ib) } = { e^{iz} \over z+ib} \evalfrom_{z=ib} = {e^{i(ib)} \over 2ib} = {e^{-b} \over 2ib}
-.\]
-- So the intermediate integral is $I$ is $2\pi i$ times this, i.e. $I = \pi e^{-b} / b$.
-- And the original integral is ${1\over 2}I = \pi e^{-b} \over 2b$.
+::: pf-proof
+$z^2+b^2=(z-ib)(z+ib)$, so the only pole inside $\Gamma_R$ is the simple pole $ib$, with residue $\frac{e^{i(ib)}}{2ib}=\frac{e^{-b}}{2ib}$. Multiply by $2\pi i$.
+:::
 
 :::
 
+::: {.pf-step #arc}
+$\int_{C_R}f(z)\,dz\to0$ as $R\to\infty$.
+
+::: pf-proof
+For $\Im z\ge0$, $\abs{e^{iz}}=e^{-\Im z}\le1$, and on $C_R$, $\abs{z^2+b^2}\ge R^2-b^2$. So $\abs{\int_{C_R}f}\le\frac{\pi R}{R^2-b^2}\to0$.
+:::
+
+:::
+
+::: pf-step
+$\int_0^\infty\frac{\cos x}{x^2+b^2}\,dx=\frac{\pi e^{-b}}{2b}$.
+
+::: pf-proof
+By steps [](#residue){.pf-ref} and [](#arc){.pf-ref}, $\int_{-\infty}^\infty\frac{e^{ix}}{x^2+b^2}\,dx=\frac{\pi e^{-b}}{b}$. Taking real parts gives $\int_{-\infty}^\infty\frac{\cos x}{x^2+b^2}\,dx=\frac{\pi e^{-b}}{b}$, and the integrand is even.
+:::
+
+:::
+
+:::
+:::
