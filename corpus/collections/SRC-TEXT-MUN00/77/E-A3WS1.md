@@ -24,8 +24,6 @@ What if $w$ is of torus type?
 :::
 
 ::: {.solution}
-**Goal:** Determine all topological surfaces from Theorem 77.5 represented by a proper labeling scheme $w$ on a 10-sided polygon, in both the projective and torus cases.
-
 ::: pf
 
 ::: pf-step
@@ -52,7 +50,7 @@ In the reduction steps, collapsing elementary adjacent inverse pairs ($x x^{-1}$
 :::
 
 ::: pf-step
-Case 1: $w$ is of projective type.
+If $w$ is of projective type, it can represent exactly $\boxed{\PP^2,\ 2\PP^2,\ 3\PP^2,\ 4\PP^2,\ 5\PP^2}$.
 
 ::: pf-proof
 
@@ -82,7 +80,7 @@ Thus, $w$ can represent:
 :::
 
 ::: pf-step
-Case 2: $w$ is of torus type.
+If $w$ is of torus type, it can represent exactly $\boxed{S^2,\ T^2,\ T^2 \# T^2}$.
 
 ::: pf-proof
 
@@ -110,12 +108,6 @@ Thus, $w$ can represent:
 
 :::
 
-:::
-
-::: pf-step
-Conclusion:
-- **Projective type:** $\PP^2, \, 2\PP^2, \, 3\PP^2, \, 4\PP^2, \, 5\PP^2$.
-- **Torus type:** $S^2, \, T^2, \, T^2 \# T^2$.
 :::
 
 :::
