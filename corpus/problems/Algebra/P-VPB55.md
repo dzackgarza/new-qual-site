@@ -27,24 +27,40 @@ What happens when the field is not algebraically closed?
 :::
 
 ::: {.solution}
-Over an algebraically closed field, every matrix is similar to a direct sum of Jordan blocks
-$$
-J_m(\lambda).
-$$
-For each eigenvalue $\lambda$, the numbers and sizes of the blocks are determined by the generalized eigenspaces, equivalently by the nullities of the powers
-$$
-(A-\lambda I)^k.
-$$
+Let $A$ be an $n\times n$ matrix over a field $F$.
 
-Over a field $F$ that is not algebraically closed, the characteristic polynomial may not split, so a Jordan form over $F$ need not exist. For example, the real rotation
-$$
-\begin{pmatrix}0&-1\\1&0\end{pmatrix}
-$$
-has no real eigenvalues and hence no Jordan form over $\RR$.
+::: pf
 
-The canonical substitute valid over every field is the rational canonical form. Viewing $F^n$ as an $F[x]$-module via $x\cdot v=Av$, the structure theorem over the PID $F[x]$ gives invariant factors
-$$
-d_1\mid d_2\mid\cdots\mid d_r,
-$$
-and the rational canonical form is the block diagonal matrix of their companion matrices. When all invariant factors split into powers of linear factors, this data refines to the usual Jordan form.
+::: pf-step
+If $F$ is algebraically closed, $A$ is similar to a direct sum of Jordan blocks $J_m(\lambda)$, and for each eigenvalue $\lambda$ the numbers and sizes of the blocks are determined by the nullities of the powers $(A-\lambda I)^k$.
+
+::: pf-proof
+The characteristic polynomial splits, so $F^n$ is the direct sum of the generalized eigenspaces, and on each the nilpotent operator $A-\lambda I$ has a Jordan form.
+The number of blocks for $\lambda$ of size at least $k$ is $\dim\ker(A-\lambda I)^k-\dim\ker(A-\lambda I)^{k-1}$.
+:::
+
+:::
+
+::: pf-step
+If $F$ is not algebraically closed, a Jordan form over $F$ need not exist.
+
+::: pf-proof
+The characteristic polynomial may not split.
+For example, the real rotation $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ has characteristic polynomial $x^2+1$, so it has no real eigenvalues and hence no Jordan form over $\RR$.
+:::
+
+:::
+
+::: pf-step
+Over every field, $A$ is similar to its rational canonical form, which refines to the Jordan form when every invariant factor splits into powers of linear factors.
+
+::: pf-proof
+View $F^n$ as an $F[x]$-module via $x\cdot v=Av$.
+The structure theorem over the PID $F[x]$ gives invariant factors $d_1\mid d_2\mid\cdots\mid d_r$, and the rational canonical form is the block diagonal matrix of their companion matrices.
+When all invariant factors split, the elementary divisor decomposition gives cyclic summands $F[x]/(x-\lambda)^m$, on each of which $A$ acts as $J_m(\lambda)$.
+:::
+
+:::
+
+:::
 :::
