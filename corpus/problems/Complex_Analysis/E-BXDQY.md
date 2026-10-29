@@ -17,18 +17,32 @@ review: draft
 ::: {.exercise}
 Suppose $f$ and $g$ are entire and $\abs{f(z)}\leq \abs{g(z)}$ for all $z\in\CC$.
 Show that $f=cg$ for some constant $c$.
+::: {.solution}
+If $g\equiv0$, then the inequality forces $f\equiv0$, so $c=0$ works.
+Assume $g\not\equiv0$, so the zero set $Z$ of $g$ is discrete, and let $h\coloneqq f/g$ on $\CC\setminus Z$.
+
+::: pf
+
+::: {.pf-step #extend}
+$h$ extends to an entire function with $\abs h\le1$.
+
+::: pf-proof
+On $\CC\setminus Z$, $\abs h\le1$ by hypothesis.
+Each $a\in Z$ is an isolated singularity of $h$ near which $h$ is bounded, so it is removable, and the extension still satisfies $\abs h\le1$ by continuity.
 :::
 
-::: {.solution}
-If $g\equiv0$, then the inequality forces $f\equiv0$, so take $c=0$.
+:::
 
-Assume $g\not\equiv0$ and set $h=f/g$ away from the zeros of $g$.
-There $\abs{h}\leq1$.
-If $a$ is a zero of $g$, then $h$ is bounded on a punctured neighborhood of $a$, so $a$ is a removable singularity of $h$.
-Thus $h$ extends to an entire function on $\CC$ with $\abs h\leq1$ everywhere.
-By Liouville's theorem, $h\equiv c$ for some $c\in\CC$ with $\abs c\leq1$.
-Hence
-\[
-f=cg.
-\]
+::: pf-step
+$f=cg$ for some constant $c$.
+
+::: pf-proof
+By step [](#extend){.pf-ref} and Liouville's theorem, $h\equiv c$ for some $c\in\CC$.
+Then $f=cg$ on $\CC\setminus Z$, hence on $\CC$ by continuity, since $Z$ has empty interior.
+:::
+
+:::
+
+:::
+
 :::
