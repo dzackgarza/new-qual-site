@@ -16,27 +16,34 @@ review: draft
 ---
 
 ::: {.problem}
-- Show that if $f$ is holomorphic on $\DD$ then $f$ has a power series expansion that converges uniformly on every compact $K\subset \DD$.
+Show that if $f$ is holomorphic on $\DD$ then $f$ has a power series expansion that converges uniformly on every compact $K\subset \DD$.
 :::
 
 ::: {.solution}
-Write the Taylor expansion at $0$ as
-\[
-f(z)=\sum_{n=0}^\infty a_nz^n,
-\qquad |z|<1.
-\]
-Let $K\subset\mathbb D$ be compact and choose numbers
-\[
-r:=\max_{z\in K}|z|<R<1.
-\]
-If $M_R=\max_{|\zeta|=R}|f(\zeta)|$, Cauchy's estimates give
-\[
-|a_n|\le\frac{M_R}{R^n}.
-\]
-Hence for $z\in K$,
-\[
-|a_nz^n|\le M_R(r/R)^n.
-\]
-The right-hand side is a summable geometric majorant, so the Weierstrass
-$M$-test gives uniform convergence on $K$.
+
+Let $f(z)=\sum_{n=0}^\infty a_nz^n$ be the Taylor expansion of $f$ at $0$, which converges to $f$ on $\DD$.
+Let $K\subset\DD$ be compact, $r\coloneqq\max_{z\in K}\abs{z}<1$, and fix $R$ with $r<R<1$.
+
+::: pf
+
+::: {.pf-step #cauchy}
+$\abs{a_n}\le M_R/R^n$, where $M_R\coloneqq\max_{\abs{\zeta}=R}\abs{f(\zeta)}$.
+
+::: pf-proof
+This is Cauchy's estimate on the circle $\abs{\zeta}=R$.
+:::
+
+:::
+
+::: pf-step
+The series converges uniformly on $K$.
+
+::: pf-proof
+For $z\in K$, step [](#cauchy){.pf-ref} gives $\abs{a_nz^n}\le M_R(r/R)^n$, a summable geometric majorant, so the Weierstrass $M$-test applies.
+:::
+
+:::
+
+:::
+
 :::
