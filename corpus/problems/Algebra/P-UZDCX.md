@@ -28,7 +28,7 @@ If $[F:K]<\infty$, then every $\alpha\in F$ is algebraic over $K$.
 
 ::: pf-proof
 
-If $[F:K]=n$, the $n+1$ elements $1,\alpha,\ldots,\alpha^n$ are linearly dependent over $K$. A dependence relation is a nonzero polynomial with coefficients in $K$ that vanishes at $\alpha$.
+This is [[T-NGBVC]].
 
 :::
 
