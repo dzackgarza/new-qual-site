@@ -42,3 +42,11 @@ If $S'$ is another Möbius transformation with $S'(z_j)=w_j$ for $j=1,2,3$, then
 In [@Ahl79, Chapter 3, Section 3.2, Definition 12], the cross ratio $(z_1,z_2,z_3,z_4)$ has four arguments: it is the image of $z_1$ under the Möbius transformation carrying $z_2, z_3, z_4$ to $1, 0, \infty$.
 In that notation, $(z;z_1,z_2,z_3)=(z,z_2,z_1,z_3)$.
 :::
+
+::: {.remark}
+The construction extends to triples in $\CC\cup\theset{\infty}$: when one of $z_1,z_2,z_3$ is $\infty$, delete the two factors containing it, giving
+$$
+(z;\infty,z_2,z_3)={z_2-z_3\over z-z_3},\qquad (z;z_1,\infty,z_3)={z-z_1\over z-z_3},\qquad (z;z_1,z_2,\infty)={z-z_1\over z_2-z_1}.
+$$
+Each is a Möbius transformation with the values $0,1,\infty$ at the three points, so the composite $S$ is defined for distinct triples in $\CC\cup\theset{\infty}$.
+:::

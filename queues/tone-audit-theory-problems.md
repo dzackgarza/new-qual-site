@@ -2438,7 +2438,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Complex_Analysis/PR-6WOTK.md` | `54408ce1480535a1be89d73f03b7c6a0521c590b` | `54408ce1480535a1be89d73f03b7c6a0521c590b` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/PR-74KHY.md` | `b43bd7ce6c947ef5dd5d346285b0eae9400321ea` | `b43bd7ce6c947ef5dd5d346285b0eae9400321ea` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/PR-7TLAS.md` | `9e6934b5ba3b0f92364d67ececa85c6768926e80` | `9e6934b5ba3b0f92364d67ececa85c6768926e80` | Read; retained |
-| [x] | `corpus/theory/Complex_Analysis/PR-AQ6YR.md` | `a39f8dc72624f18d34a468efbf911925f4cf1d3b` | `a39f8dc72624f18d34a468efbf911925f4cf1d3b` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/PR-AQFRA.md` | `bcfe7e5a50d46deb6a158863c4f571be2a6c31c1` | `bcfe7e5a50d46deb6a158863c4f571be2a6c31c1` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/PR-BPP7D.md` | `ea4beafe50b15ba6727039c2655ae24ed5a192d1` | `ea4beafe50b15ba6727039c2655ae24ed5a192d1` | Read; retained |
 | [x] | `corpus/theory/Complex_Analysis/PR-D3CDJ.md` | `794b76793c62f51ba75bdc2ca2ebd2ff4702ae70` | `794b76793c62f51ba75bdc2ca2ebd2ff4702ae70` | Read; retained |

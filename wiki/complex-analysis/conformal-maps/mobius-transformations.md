@@ -68,8 +68,6 @@ This gives the uniqueness in [[PR-74KHY]].
 
 ## The cross ratio
 
-[[PR-AQ6YR]]
-
 [[FF-W4FFF]]
 
 ::: {.example title="Maps given by cross ratios"}
