@@ -20,7 +20,11 @@ audit:
 - event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
-  note: Parts (i)-(m) were embedded as two screenshots (assets/Workshops/Real Analysis/_attachments/Pasted image 20210519152250.png and Pasted image 20210519151915.png); they are transcribed from the images. The second image is cropped below its condition (b), so part (m) may have lost a third condition.
+  note: Parts (i)-(m) were embedded as two screenshots (assets/Workshops/Real Analysis/_attachments/Pasted image 20210519152250.png and Pasted image 20210519151915.png); they are transcribed from the images and checked against the workshop sheet assets/Workshops/Real Analysis/RealWeek1.pdf (items I.7 and the preceding list), whose item I.7 has exactly the two conditions of part (m).
+- event: solution-written
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: Solution steps for parts (i)-(m).
 ---
 
 ::: {.exercise}
@@ -234,6 +238,200 @@ $C = \bigcap_n C_n$, where $C_n$ is the union of the $2^n$ closed intervals of l
 ::: pf-proof
 
 $m(C) \le m(C_n) = (2/3)^n$ for all $n$, so $m(C) = 0$. A nonempty open interval has positive measure, so it is not contained in $C$.
+
+:::
+
+:::
+
+::: pf-step
+
+(i) The set $\RR \setminus \QQ$ of irrational numbers is a $G_\delta$ set and is not an $F_\sigma$ set.
+
+::: pf-proof
+
+::: pf-step
+
+$\RR \setminus \QQ$ is a $G_\delta$ set.
+
+::: pf-proof
+
+$\RR \setminus \QQ = \bigcap_{q \in \QQ} (\RR \setminus \theset{q})$ is a countable intersection of open sets.
+
+:::
+
+:::
+
+::: {.pf-step #q-not-gdelta}
+
+$\QQ$ is not a $G_\delta$ set.
+
+::: pf-proof
+
+Suppose $\QQ = \bigcap_{n} G_n$ with each $G_n$ open. Each $G_n$ contains $\QQ$, so it is dense. Each $\RR \setminus \theset{q}$ with $q \in \QQ$ is also open and dense. The countable family $\theset{G_n}_n \cup \theset{\RR \setminus \theset{q}}_{q \in \QQ}$ of dense open sets has intersection $\QQ \cap (\RR \setminus \QQ) = \emptyset$. This contradicts the Baire category theorem for the complete metric space $\RR$.
+
+:::
+
+:::
+
+::: pf-qed
+
+If $\RR \setminus \QQ$ were $F_\sigma$, its complement $\QQ$ would be $G_\delta$, which step [](#q-not-gdelta){.pf-ref} excludes.
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+(j) The set $A \coloneqq (\QQ \cap [0,1]) \cup ([2,3] \setminus \QQ)$ is a Borel set that is neither $F_\sigma$ nor $G_\delta$.
+
+::: pf-proof
+
+::: {.pf-step #irr-not-fsigma}
+
+$[2,3] \setminus \QQ$ is not an $F_\sigma$ set.
+
+::: pf-proof
+
+If $[2,3] \setminus \QQ = F$ with $F$ an $F_\sigma$ set, then $\QQ \cap [2,3] = [2,3] \cap (\RR \setminus F)$. The closed set $[2,3]$ is a $G_\delta$ set and $\RR \setminus F$ is a $G_\delta$ set, so $\QQ \cap [2,3]$ is a $G_\delta$ set, contrary to the given fact.
+
+:::
+
+:::
+
+::: pf-step
+
+$A$ is Borel, $A$ is not $G_\delta$, and $A$ is not $F_\sigma$.
+
+::: pf-proof
+
+$\QQ \cap [0,1]$ is countable, hence $F_\sigma$, and $[2,3] \setminus \QQ$ is the intersection of a closed set with the $G_\delta$ set $\RR \setminus \QQ$; so $A$ is Borel. A closed set is both $F_\sigma$ and $G_\delta$, and both classes are closed under finite intersections. If $A$ were $G_\delta$, then $A \cap [0,1] = \QQ \cap [0,1]$ would be $G_\delta$, contrary to the given fact. If $A$ were $F_\sigma$, then $A \cap [2,3] = [2,3] \setminus \QQ$ would be $F_\sigma$, contrary to step [](#irr-not-fsigma){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #disc-fsigma}
+
+(k) For every $f\colon \RR \to \RR$, the set $D_f$ of points of discontinuity of $f$ is an $F_\sigma$ set.
+
+::: pf-proof
+
+::: {.pf-step #osc-zero}
+
+With the oscillation $\omega_f(x) \coloneqq \inf_{\delta > 0} \sup\theset{\abs{f(y) - f(z)} : y, z \in (x - \delta, x + \delta)}$, $f$ is continuous at $x$ if and only if $\omega_f(x) = 0$.
+
+::: pf-proof
+
+If $f$ is continuous at $x$ and $\varepsilon > 0$, choose $\delta$ with $\abs{f(y) - f(x)} < \varepsilon/2$ for $\abs{y - x} < \delta$; then all $y, z \in (x - \delta, x + \delta)$ satisfy $\abs{f(y) - f(z)} < \varepsilon$, so $\omega_f(x) \le \varepsilon$. Conversely, if $\omega_f(x) < \varepsilon$, some $\delta$ gives $\abs{f(y) - f(x)} < \varepsilon$ for $\abs{y - x} < \delta$.
+
+:::
+
+:::
+
+::: {.pf-step #osc-closed}
+
+For each $\varepsilon > 0$ the set $\theset{x : \omega_f(x) \ge \varepsilon}$ is closed.
+
+::: pf-proof
+
+Let $\omega_f(x) < \varepsilon$, and choose $\delta > 0$ with $\sup\theset{\abs{f(y) - f(z)} : y, z \in (x - \delta, x + \delta)} < \varepsilon$. For $\abs{x' - x} < \delta/2$ the interval $(x' - \delta/2, x' + \delta/2)$ lies in $(x - \delta, x + \delta)$, so $\omega_f(x') < \varepsilon$. The complement is therefore open.
+
+:::
+
+:::
+
+::: pf-qed
+
+By step [](#osc-zero){.pf-ref}, $D_f = \bigcup_{n \ge 1} \theset{x : \omega_f(x) \ge 1/n}$, a countable union of sets that are closed by step [](#osc-closed){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+(l) No function $\RR \to \RR$ is continuous exactly on $\QQ$. The function $t$ with $t(p/q) \coloneqq 1/q$ for $p/q$ in lowest terms with $q \ge 1$, and $t(x) \coloneqq 0$ for $x \notin \QQ$, is continuous exactly on $\RR \setminus \QQ$.
+
+::: pf-proof
+
+::: pf-step
+
+No function is continuous on $\QQ$ and discontinuous on $\RR \setminus \QQ$.
+
+::: pf-proof
+
+Its set of discontinuities would be $\RR \setminus \QQ$, which is $F_\sigma$ by step [](#disc-fsigma){.pf-ref}; part (i) shows that it is not.
+
+:::
+
+:::
+
+::: pf-step
+
+$t$ is discontinuous at each rational point.
+
+::: pf-proof
+
+At $x = p/q$, $t(x) = 1/q > 0$, while irrational points $y \to x$ have $t(y) = 0$.
+
+:::
+
+:::
+
+::: pf-step
+
+$t$ is continuous at each irrational point.
+
+::: pf-proof
+
+Let $x \notin \QQ$ and $\varepsilon > 0$. The interval $(x - 1, x + 1)$ contains finitely many rationals $p/q$ with $q \le 1/\varepsilon$, and none of them equals $x$. Choose $\delta \in (0,1)$ smaller than the distance from $x$ to each of them. Every $y$ with $\abs{y - x} < \delta$ is irrational or equals $p/q$ in lowest terms with $q > 1/\varepsilon$, so $\abs{t(y) - t(x)} = t(y) < \varepsilon$.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+(m) $\lim_{n \to \infty} x_n = a$ if and only if every subsequence of $(x_n)_{n \in \NN}$ contains a subsequence that converges to $a$.
+
+::: pf-proof
+
+::: pf-step
+
+If $x_n \to a$, every subsequence has a subsequence that converges to $a$.
+
+::: pf-proof
+
+Every subsequence of a sequence that converges to $a$ converges to $a$, and it is a subsequence of itself.
+
+:::
+
+:::
+
+::: pf-step
+
+If every subsequence has a subsequence that converges to $a$, then $x_n \to a$.
+
+::: pf-proof
+
+Suppose $x_n \not\to a$. Then there are $\varepsilon > 0$ and indices $n_1 < n_2 < \cdots$ with $\abs{x_{n_k} - a} \ge \varepsilon$ for all $k$. Every subsequence of $(x_{n_k})_k$ stays at distance at least $\varepsilon$ from $a$, so none converges to $a$, contrary to the hypothesis.
+
+:::
+
+:::
 
 :::
 
