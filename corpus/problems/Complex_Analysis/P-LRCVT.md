@@ -12,65 +12,82 @@ classification:
   - Biholomorphisms
 relations: []
 review: draft
+audit:
+- event: copy-repaired
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: "Removed a duplicated extraction heading (Tie's Extra Questions: Fall 2015) from the statement and moved the source hint into a hint block."
 ---
 
 ::: {.problem}
 (a) Let $z, w$ be complex numbers, such that $\bar{z} w \neq 1$.
 Prove that
-$$\abs{\frac{w - z}{1 - \bar{w} z}} < 1 \; \; \; \mbox{if} \; |z| < 1 \; \mbox{and}\; |w| < 1,$$
+$$\abs{\frac{w - z}{1 - \bar{w} z}} < 1 \quad \text{if } \abs{z} < 1 \text{ and } \abs{w} < 1,$$
 and also that
-$$\abs{\frac{w - z}{1 - \bar{w} z}} = 1 \; \; \; \mbox{if} \; |z| = 1 \; \mbox{or}\; |w| = 1.$$
+$$\abs{\frac{w - z}{1 - \bar{w} z}} = 1 \quad \text{if } \abs{z} = 1 \text{ or } \abs{w} = 1.$$
 
-(b) Prove that for fixed $w$ in the unit disk $\mathbb D$, the
+(b) Prove that for fixed $w$ in the unit disk $\DD$, the
 mapping $$F: z \mapsto \frac{w - z}{1 - \bar{w} z}$$ satisfies the
 following conditions:
 
-(i) $F$ maps $\mathbb D$ to itself and is holomorphic. 
+(i) $F$ maps $\DD$ to itself and is holomorphic.
 
 (ii) $F$ interchanges $0$ and $w$, namely, $F(0) = w$ and
 $F(w) = 0$.
 
-(iii) $|F(z)| = 1$ if $|z| = 1$.
+(iii) $\abs{F(z)} = 1$ if $\abs{z} = 1$.
 
-(iv) $F: {\mathbb D} \mapsto {\mathbb D}$ is bijective.
+(iv) $F: \DD \to \DD$ is bijective.
+:::
 
-> Hint: Calculate $F \circ F$.
-
-### Tie's Extra Questions: Fall 2015### Tie's Extra Questions: Fall 2015
+::: {.hint}
+Calculate $F \circ F$.
 :::
 
 ::: {.solution}
-For (a), compute
-\[
-|1-\bar wz|^2-|w-z|^2
-=(1-|w|^2)(1-|z|^2).
-\]
-Hence if $|w|<1$ and $|z|<1$, the right-hand side is positive and therefore
-\[
-\left|\frac{w-z}{1-\bar wz}\right|<1.
-\]
-If either $|w|=1$ or $|z|=1$, the right-hand side is zero, giving equality of
-the two moduli and hence
-\[
-\left|\frac{w-z}{1-\bar wz}\right|=1.
-\]
+::: pf
 
-Now fix $w\in\mathbb D$ and write
-\[
-F(z)=\frac{w-z}{1-\bar wz}.
-\]
-The denominator does not vanish on $\mathbb D$, so $F$ is holomorphic there.
-Part (a) gives $F(\mathbb D)\subseteq\mathbb D$. Direct substitution gives
-\[
-F(0)=w,\qquad F(w)=0,
-\]
-and part (a) also gives $|F(z)|=1$ for $|z|=1$.
+::: {.pf-step #identity}
+$\abs{1-\bar wz}^2-\abs{w-z}^2=(1-\abs{w}^2)(1-\abs{z}^2)$.
 
-Finally,
-\[
-F(F(z))=z.
-\]
-Indeed, substituting the formula for $F(z)$ and simplifying gives the identity.
-Thus $F$ is its own inverse, so it is bijective from $\mathbb D$ onto itself.
-Therefore $F\in\operatorname{Aut}(\mathbb D)$.
+::: pf-proof
+Expand: $\abs{1-\bar wz}^2 = 1 - \bar w z - w\bar z + \abs{w}^2\abs{z}^2$ and $\abs{w-z}^2 = \abs{w}^2 - \bar w z - w\bar z + \abs{z}^2$. The difference is $1-\abs{w}^2-\abs{z}^2+\abs{w}^2\abs{z}^2$.
+:::
+
+:::
+
+::: {.pf-step #part-a}
+(a) holds.
+
+::: pf-proof
+Since $1-\bar w z$ is the conjugate of $1-w\bar z\neq 0$, the denominator is nonzero. If $\abs{z},\abs{w}<1$, the right side of step [](#identity){.pf-ref} is positive, so $\abs{w-z}<\abs{1-\bar wz}$. If $\abs{z}=1$ or $\abs{w}=1$, it is zero, so $\abs{w-z}=\abs{1-\bar wz}$.
+:::
+
+:::
+
+::: {.pf-step #part-b-iii}
+(b)(i)--(iii) hold.
+
+::: pf-proof
+For $\abs{w}<1$ and $\abs{z}\le 1$, $\abs{\bar w z}<1$, so the denominator does not vanish on a neighbourhood of $\overline{\DD}$ and $F$ is holomorphic on $\DD$. Part (a) gives $F(\DD)\subseteq\DD$ and $\abs{F(z)}=1$ for $\abs{z}=1$. Substitution gives $F(0)=w$ and $F(w)=0$.
+:::
+
+:::
+
+::: pf-step
+(b)(iv) holds.
+
+::: pf-proof
+For $z\in\DD$,
+$$
+F(F(z))=\frac{w-\frac{w-z}{1-\bar wz}}{1-\bar w\frac{w-z}{1-\bar wz}}
+=\frac{w-\abs{w}^2z-w+z}{1-\bar wz-\abs{w}^2+\bar wz}
+=\frac{z(1-\abs{w}^2)}{1-\abs{w}^2}=z.
+$$
+So $F\circ F$ is the identity on $\DD$, and with step [](#part-b-iii){.pf-ref} $F$ is a bijection of $\DD$ onto itself, its own inverse.
+:::
+
+:::
+
+:::
 :::
