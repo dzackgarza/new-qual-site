@@ -5,6 +5,7 @@ kind: definition
 title: Galois extension and Galois group
 prompts:
 - In terms of $\size \Aut_{\Fieldsover{k}}(L)$, when is a finite extension $L/k$ Galois?
+- Which equivalent conditions characterize a finite Galois extension $L/k$?
 classification:
   areas:
   - algebra
