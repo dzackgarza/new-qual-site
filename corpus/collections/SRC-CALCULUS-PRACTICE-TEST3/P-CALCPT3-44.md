@@ -12,7 +12,7 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-10-30
-  note: "Transcribed from Question 44 of assets/attachments/calculus_practice_test3.pdf, checked against the page render; the MinerU extraction drops choice (E)."
+  note: "Transcribed from Question 44 of assets/attachments/calculus_practice_test3.pdf and checked against its MinerU Flash extraction, which drops choice (E). The 300 dpi page render reads (E) as infinity."
 ---
 
 ::: {.problem}
