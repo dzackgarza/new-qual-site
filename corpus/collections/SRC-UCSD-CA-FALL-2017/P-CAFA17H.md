@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA17H
 kind: problem
-title: "A harmonic function with polynomial growth on R is a polynomial"
+title: "A harmonic function with polynomial growth on $\mathbb C$ is a polynomial"
 classification:
   areas:
   - complex-analysis
@@ -16,10 +16,6 @@ review: draft
 Let $n \geq 1$ be an integer.
 Let $u: \mathbb{C} \to \mathbb{R}$ be a harmonic function such that $|u(z)| \leq C(1 + |z|^n)$ for all $z \in \mathbb{C}$.
 Show that $u$ is a polynomial.
-:::
-
-::: {.remark}
-The official Fall 2017 exam states the growth bound for all points of $\mathbb C$. The previous card transcription incorrectly restricted it to the real axis; that weaker statement is false, for example for $u(z)=\operatorname{Im}(e^z)$.
 :::
 
 ::: {.solution}
