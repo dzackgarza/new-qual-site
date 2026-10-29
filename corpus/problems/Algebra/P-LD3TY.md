@@ -22,43 +22,48 @@ audit:
 ---
 
 ::: {.problem}
-Explain geometrically how you diagonalize a real quadratic form $q(x) = x^t A x$ on $\mathbb{R}^n$ (Principal Axis Theorem and Gram-Schmidt orthogonalization).
+Explain geometrically how you diagonalize a real quadratic form $q(x) = x^t A x$ on $\RR^n$ (Principal Axis Theorem and Gram-Schmidt orthogonalization).
 :::
 
 ::: {.solution}
-Write the real quadratic form as
-\[
-q(x)=x^TAx
-\]
-with $A=A^T$. By the real spectral theorem, there is an orthogonal matrix
-\[
-Q=[v_1\ \cdots\ v_n]
-\]
-whose columns are orthonormal eigenvectors of $A$, with
-\[
-Q^TAQ=\operatorname{diag}(\lambda_1,\dots,\lambda_n).
-\]
-With the orthogonal change of coordinates $x=Qy$,
-\[
+Take $A=A^t$, which loses nothing since $x^tAx=x^t\frac{A+A^t}{2}x$.
+
+::: pf
+
+::: {.pf-step #principal-axes}
+There is an orthogonal matrix $Q=[v_1\ \cdots\ v_n]$ with $Q^tAQ=\diag(\lambda_1,\ldots,\lambda_n)$, and in the coordinates $x=Qy$,
+$$
 q(x)=\lambda_1y_1^2+\cdots+\lambda_ny_n^2.
-\]
-Thus diagonalization is geometrically a rotation/reflection of coordinates to the mutually orthogonal principal directions of the form; the cross terms disappear in those coordinates.
+$$
 
-One way to find the principal directions is variational. On the Euclidean unit sphere, the extrema of the Rayleigh quotient
-\[
-x\mapsto x^TAx
-\]
-occur at eigenvectors: the Lagrange-multiplier equation is
-\[
-Ax=\lambda x.
-\]
-After choosing one unit eigenvector, its Euclidean orthogonal complement is $A$-invariant, so the procedure can be repeated there. This is the geometric content behind the principal-axis theorem.
+::: pf-proof
+This is the principal axis theorem. Geometrically: the maximum of $q$ on the Euclidean unit sphere is attained at some $v_1$, and the Lagrange condition there is $Av_1=\lambda_1v_1$. The orthogonal complement $v_1^\perp$ is $A$-invariant, since $Av\cdot v_1=v\cdot Av_1=\lambda_1\,v\cdot v_1=0$ for $v\perp v_1$, so the argument repeats on $v_1^\perp$. The resulting orthonormal eigenvectors are the principal axes, and the change of coordinates $x=Qy$ is a rotation or reflection that removes the cross terms.
+:::
 
-For a positive-definite form, the level set $q=1$ is an ellipsoid; if $\lambda_i>0$, the principal semiaxis in the $v_i$ direction has length $1/\sqrt{\lambda_i}$. For an indefinite form, positive and negative eigenvalues give the different families of hyperbolic directions, while zero eigenvalues give flat/cylindrical directions. Thus the signs and nullity, not a universal “longest axis,” encode the geometry.
+:::
 
-A nonorthogonal diagonalization can also be obtained by completing squares, equivalently by Gram--Schmidt orthogonalization for the symmetric bilinear form associated to $q$ (when the required pivots are nonzero). Sylvester's law of inertia states that after an invertible linear change of coordinates the form has the normal form
-\[
-y_1^2+\cdots+y_p^2-y_{p+1}^2-\cdots-y_{p+q}^2,
-\]
-with the numbers of positive, negative, and zero directions invariant.
+::: pf-step
+The eigenvalues describe the level sets of $q$ along the principal axes.
+
+::: pf-proof
+By step [](#principal-axes){.pf-ref}, if every $\lambda_i>0$ then $q=1$ is an ellipsoid whose semiaxis along $v_i$ has length $1/\sqrt{\lambda_i}$. Positive and negative eigenvalues give the directions in which $q=1$ is elliptic and hyperbolic, and zero eigenvalues give directions along which the level set is a cylinder.
+:::
+
+:::
+
+::: pf-step
+Without orthogonality of the change of coordinates, Gram--Schmidt orthogonalization for the symmetric bilinear form $B(x,y)=x^tAy$ diagonalizes $q$, and by Sylvester's law of inertia an invertible change of coordinates brings $q$ to
+$$
+y_1^2+\cdots+y_s^2-y_{s+1}^2-\cdots-y_{s+r}^2,
+$$
+where $s$, $r$ and $n-s-r$ are invariants of $q$.
+
+::: pf-proof
+Gram--Schmidt with respect to $B$ in place of the dot product produces a $B$-orthogonal basis $w_1,\ldots,w_n$; this is completing squares, and it requires choosing at each stage a vector with $B(w,w)\ne0$ whenever $B$ is nonzero on the remaining complement. In that basis $q=\sum B(w_i,w_i)y_i^2$, and rescaling each $w_i$ with $B(w_i,w_i)\ne0$ by $\abs{B(w_i,w_i)}^{-1/2}$ gives the displayed normal form. Sylvester's law states that $s$ and $r$, the numbers of positive and negative coefficients, do not depend on the basis; in the coordinates of step [](#principal-axes){.pf-ref} they are the numbers of positive and negative eigenvalues of $A$.
+:::
+
+:::
+
+:::
+
 :::
