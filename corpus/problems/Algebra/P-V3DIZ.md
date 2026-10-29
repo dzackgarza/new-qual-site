@@ -15,17 +15,24 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: 'Part 2 of the source reads "Prove that the quotient module $M / \operatorname{Tor}(M)$
+    is torsion-free." with the integral-domain hypothesis stated only in part 1; the quotient
+    is undefined when $\operatorname{Tor}(M)$ is not a submodule, so part (b) now assumes
+    $R$ is an integral domain. Parts are relabelled (a)--(c).'
 ---
 
 ::: {.problem}
 Let $R$ be a commutative ring and let $M$ be an $R$-module.
-An element $x \in M$ is a *torsion element* if there exists a non-zero $r \in R$ such that $rx = 0$ (or equivalently, $\operatorname{Ann}_R(x) \neq (0)$). Let $\operatorname{Tor}(M) = \{x \in M : \operatorname{Ann}_R(x) \neq (0)\}$ denote the set of torsion elements of $M$.
+An element $x \in M$ is a *torsion element* if there exists a non-zero $r \in R$ such that $rx = 0$ (or equivalently, $\Ann_R(x) \neq (0)$). Let $\operatorname{Tor}(M) = \{x \in M : \Ann_R(x) \neq (0)\}$ denote the set of torsion elements of $M$.
 
-1. Prove that if $R$ is an integral domain, then $\operatorname{Tor}(M)$ is an $R$-submodule of $M$.
+(a) Prove that if $R$ is an integral domain, then $\operatorname{Tor}(M)$ is an $R$-submodule of $M$.
 
-2. Prove that the quotient module $M / \operatorname{Tor}(M)$ is torsion-free.
+(b) Prove that if $R$ is an integral domain, then the quotient module $M / \operatorname{Tor}(M)$ is torsion-free.
 
-3. Show by example that $\operatorname{Tor}(M)$ need not be a submodule if $R$ has zero divisors.
+(c) Show by example that $\operatorname{Tor}(M)$ need not be a submodule if $R$ has zero divisors.
 :::
 
 ::: {.solution}
@@ -33,224 +40,44 @@ An element $x \in M$ is a *torsion element* if there exists a non-zero $r \in R$
 ::: pf
 
 ::: {.pf-step #s1}
-Prove that $\operatorname{Tor}(M)$ is a submodule when $R$ is an integral domain:
+
+(a) If $R$ is an integral domain, then $\operatorname{Tor}(M)$ is a submodule of $M$.
 
 ::: pf-proof
 
-::: pf-step
-For $x = 0 \in M$, $1 \cdot 0 = 0$ with $1 \neq 0$ in $R$, so $0 \in \operatorname{Tor}(M)$.
-
-::: pf-proof
-$1 \in \operatorname{Ann}_R(0)$.
-:::
-
-:::
-
-::: pf-step
-Let $x, y \in \operatorname{Tor}(M)$.
-There exist non-zero $r_1, r_2 \in R \setminus \{0\}$ such that $r_1 x = 0$ and $r_2 y = 0$.
-
-::: pf-proof
-definition of torsion elements.
-:::
-
-:::
-
-::: {.pf-step #s1-3}
-Since $R$ is an integral domain and $r_1 \neq 0, r_2 \neq 0$, the product $r_1 r_2 \neq 0$ in $R$.
-
-::: pf-proof
-integral domains have no zero divisors.
-:::
-
-:::
-
-::: {.pf-step #s1-4}
-Compute $(r_1 r_2)(x + y)$:
-\[
-(r_1 r_2)(x + y) = r_2(r_1 x) + r_1(r_2 y) = r_2(0) + r_1(0) = 0.
-\]
-
-::: pf-proof
-commutativity of $R$ and module axioms.
-:::
-
-:::
-
-::: pf-step
-Since $r_1 r_2 \neq 0$, $x + y \in \operatorname{Tor}(M)$.
-
-::: pf-proof
-step [](#s1-3){.pf-ref} and step [](#s1-4){.pf-ref}.
-:::
-
-:::
-
-::: pf-step
-For any $c \in R$ and $x \in \operatorname{Tor}(M)$ with $r_1 x = 0$ ($r_1 \neq 0$):
-\[
-r_1(cx) = c(r_1 x) = c(0) = 0.
-\]
-Thus $cx \in \operatorname{Tor}(M)$.
-
-::: pf-proof
-commutativity of $R$.
-:::
-
-:::
-
-::: pf-step
-Therefore $\operatorname{Tor}(M)$ is closed under addition and scalar multiplication, hence an $R$-submodule of $M$.
-
-::: pf-proof
-subspace/submodule criterion.
-:::
-
-:::
+Since $1\neq0$ and $1\cdot0=0$, $0\in\operatorname{Tor}(M)$.
+Let $x, y \in \operatorname{Tor}(M)$, with non-zero $r_1, r_2 \in R$ such that $r_1 x = 0$ and $r_2 y = 0$. Since $R$ is an integral domain, $r_1 r_2 \neq 0$, and since $R$ is commutative,
+$$
+(r_1 r_2)(x + y) = r_2(r_1 x) + r_1(r_2 y) = 0,
+$$
+so $x+y\in\operatorname{Tor}(M)$. For $c \in R$, $r_1(cx) = c(r_1 x) = 0$, so $cx \in \operatorname{Tor}(M)$.
 
 :::
 
 :::
 
 ::: {.pf-step #s2}
-Prove that $M / \operatorname{Tor}(M)$ is torsion-free:
+
+(b) If $R$ is an integral domain, then $M / \operatorname{Tor}(M)$ is torsion-free.
 
 ::: pf-proof
 
-::: {.pf-step #s2-1}
-Let $\bar{x} = x + \operatorname{Tor}(M) \in M / \operatorname{Tor}(M)$ be a torsion element.
-
-::: pf-proof
-setup.
-:::
-
-:::
-
-::: {.pf-step #s2-2}
-Then there exists some non-zero $s \in R \setminus \{0\}$ such that $s \bar{x} = \bar{0}$ in $M / \operatorname{Tor}(M)$.
-
-::: pf-proof
-definition of torsion in quotient module.
-:::
-
-:::
-
-::: {.pf-step #s2-3}
-This means $sx \in \operatorname{Tor}(M)$.
-
-::: pf-proof
-definition of cosets in quotient module.
-:::
-
-:::
-
-::: {.pf-step #s2-4}
-Since $sx \in \operatorname{Tor}(M)$, there exists some non-zero $t \in R \setminus \{0\}$ such that $t(sx) = 0$.
-
-::: pf-proof
-definition of $\operatorname{Tor}(M)$.
-:::
-
-:::
-
-::: {.pf-step #s2-5}
-Rewrite $t(sx) = (ts)x = 0$.
-Since $R$ is an integral domain and $t \neq 0, s \neq 0$, the product $ts \neq 0$.
-
-::: pf-proof
-integral domain property.
-:::
-
-:::
-
-::: {.pf-step #s2-6}
-Since $(ts)x = 0$ with $ts \neq 0$, $x \in \operatorname{Tor}(M)$.
-
-::: pf-proof
-definition of $\operatorname{Tor}(M)$.
-:::
-
-:::
-
-::: {.pf-step #s2-7}
-Thus $\bar{x} = x + \operatorname{Tor}(M) = \bar{0}$ in $M / \operatorname{Tor}(M)$.
-
-::: pf-proof
-$x \in \operatorname{Tor}(M) \implies x + \operatorname{Tor}(M) = \operatorname{Tor}(M)$.
-:::
-
-:::
-
-::: pf-step
-Hence $\operatorname{Tor}(M / \operatorname{Tor}(M)) = \{\bar{0}\}$, so $M / \operatorname{Tor}(M)$ is torsion-free.
-
-::: pf-proof
-steps [](#s2-1){.pf-ref} through [](#s2-7){.pf-ref}.
-:::
-
-:::
+By step [](#s1){.pf-ref}, the quotient is defined. Let $\bar{x} = x + \operatorname{Tor}(M)$ and suppose $s \bar{x} = \bar{0}$ for some non-zero $s \in R$. Then $sx \in \operatorname{Tor}(M)$, so $t(sx) = 0$ for some non-zero $t \in R$. Since $R$ is an integral domain, $ts \neq 0$, and $(ts)x = 0$, so $x \in \operatorname{Tor}(M)$ and $\bar{x} = \bar{0}$.
 
 :::
 
 :::
 
 ::: {.pf-step #s3}
-Counterexample when $R$ is not an integral domain:
+
+(c) For $R = M = \ZZ/6\ZZ$, $\operatorname{Tor}(M)$ is not closed under addition.
 
 ::: pf-proof
 
-::: pf-step
-Let $R = \mathbb{Z}/6\mathbb{Z}$ and $M = R = \mathbb{Z}/6\mathbb{Z}$ as a module over itself.
-
-::: pf-proof
-$R$ has zero divisors since $2 \cdot 3 = 0$.
-:::
+The element $[2]$ is torsion because $[3] \cdot [2] = [0]$ with $[3] \neq [0]$, and $[3]$ is torsion because $[2] \cdot [3] = [0]$ with $[2] \neq [0]$. Their sum $[5]$ is a unit of $\ZZ/6\ZZ$, so $\Ann_R([5]) = \{[0]\}$ and $[5] \notin \operatorname{Tor}(M)$.
 
 :::
 
-::: {.pf-step #s3-2}
-The element $x = [2]$ is torsion because $3 \cdot [2] = [0]$ with $[3] \neq [0]$ in $R$.
-
-::: pf-proof
-$3 \cdot 2 = 6 \equiv 0 \pmod 6$.
-:::
-
-:::
-
-::: {.pf-step #s3-3}
-The element $y = [3]$ is torsion because $2 \cdot [3] = [0]$ with $[2] \neq [0]$ in $R$.
-
-::: pf-proof
-$2 \cdot 3 = 6 \equiv 0 \pmod 6$.
-:::
-
-:::
-
-::: {.pf-step #s3-4}
-However, their sum $x + y = [5]$ satisfies $\operatorname{Ann}_R([5]) = \{[0]\}$ because $\gcd(5, 6) = 1$ ($[5]$ is a unit in $\mathbb{Z}/6\mathbb{Z}$). Thus $x + y = [5] \notin \operatorname{Tor}(M)$.
-
-::: pf-proof
-unit elements have trivial annihilators.
-:::
-
-:::
-
-::: pf-step
-Therefore $\operatorname{Tor}(M)$ is not closed under addition when $R$ has zero divisors.
-
-::: pf-proof
-step [](#s3-2){.pf-ref}, step [](#s3-3){.pf-ref}, and step [](#s3-4){.pf-ref}.
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-qed
-Conclusion: $\operatorname{Tor}(M)$ is a submodule and $M/\operatorname{Tor}(M)$ is torsion-free over any integral domain, but closure under addition fails in the presence of zero divisors.
-step [](#s1){.pf-ref}, step [](#s2){.pf-ref}, and step [](#s3){.pf-ref}.
 :::
 
 :::
