@@ -13,7 +13,6 @@ The order of remaining work is the [TODO.md milestone](../TODO.md#milestone-publ
 | File | State | What |
 | --- | --- | --- |
 | `C-unsolved-cards.md` | active, generated | Every unsolved problem card. Issue #2 target. **Generated** — `just unsolved`, and by the commit gate when a commit touches the corpus. Do not hand-edit or mirror its changing count here: a card leaves by gaining a solution. |
-| [H-complaint-defects.md](H-complaint-defects.md) | active | Headings promoted from `COMPLAINTS.md`; owned by `math-defect-repair`. |
 
 ## Validity review queues (TODO.md items)
 
