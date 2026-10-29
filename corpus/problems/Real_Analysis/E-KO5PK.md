@@ -16,13 +16,17 @@ audit:
   by: gemini-3.7-flash
   date: 2026-08-17
 ---
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source asserts the L^p limit for every p and every uniformly continuous f; for p < infinity this fails when f is not in L^p (for f(x) = x the difference is the constant -h). The statement now requires f in L^p for finite p.
 
 ::: {.exercise}
-- Prove continuity in $L^p$: If $f$ is uniformly continuous then for all $p$, $$\norm{\tau_h f - f}_p \converges{h\to 0}\to 0.$$
+Let $1 \leq p \leq \infty$ and $\tau_h f(x) \coloneqq f(x-h)$. Prove continuity in $L^p$: if $f\colon \RR^n \to \CC$ is uniformly continuous, and moreover $f \in L^p(\RR^n)$ when $p < \infty$, then $$\norm{\tau_h f - f}_p \converges{h\to 0}\to 0.$$
 :::
 
 ::: {.solution}
-Let $f\colon \RR^n \to \CC$ be uniformly continuous, let $\tau_h f(x) \coloneqq f(x - h)$, and let $\omega(r) \coloneqq \sup\theset{\abs{f(x) - f(y)} : \abs{x - y} \leq r}$. Uniform continuity says $\omega(r) \to 0$ as $r \to 0$. For $1 \leq p < \infty$ assume $f \in L^p(\RR^n)$, so that $\norm{\tau_h f - f}_p$ is finite.
+Let $f\colon \RR^n \to \CC$ be uniformly continuous, let $\tau_h f(x) \coloneqq f(x - h)$, and let $\omega(r) \coloneqq \sup\theset{\abs{f(x) - f(y)} : \abs{x - y} \leq r}$. Uniform continuity says $\omega(r) \to 0$ as $r \to 0$.
 
 ::: pf
 
@@ -38,7 +42,7 @@ $\abs{f(x-h) - f(x)} \leq \omega(\abs h)$ for every $x$.
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
 For $1 \leq p < \infty$, $\norm{\tau_h f - f}_p \to 0$.
 
@@ -51,12 +55,6 @@ $$
 On $B$, step [](#s1){.pf-ref} gives $\int_B \abs{f(x-h) - f(x)}^p\,dx \leq \omega(\abs h)^p\, m(B)$, which is less than $\eps$ for $\abs h$ small. So $\norm{\tau_h f - f}_p^p < (2^p + 1)\eps$ for $\abs h$ small.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1){.pf-ref} is the case $p = \infty$ and step [](#s2){.pf-ref} is the case $1 \leq p < \infty$.
 
 :::
 
