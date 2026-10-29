@@ -32,15 +32,7 @@ Identify the following groups up to isomorphism
 :::
 
 ::: {.solution}
-**Goal:** Compute the following tensor products of abelian groups ($\ZZ$-modules) up to group isomorphism:
-
-1. $\ZZ_m \otimes_\ZZ \ZZ_n$,
-
-2. $\ZZ_{60}^4 \otimes_\ZZ (\ZZ_{24}^3 \oplus \ZZ_8^4 \oplus \ZZ_{120})$,
-
-3. $\ZZ_n \otimes_\ZZ \QQ$,
-
-4. $(\ZZ \oplus \ZZ_n) \otimes_\ZZ (\QQ/\ZZ)$.
+All tensor products are tensor products of abelian groups, over $\ZZ$.
 
 ::: pf
 
