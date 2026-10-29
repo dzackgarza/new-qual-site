@@ -16,71 +16,45 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source reads "if $\theset{\vector v_i}$ is a basis for $V$ where $\dim(V) = n$" with no field. Over a field whose characteristic divides n, or that lacks the n-th roots of unity, T is not diagonalizable; the statement now takes V to be a complex vector space and indexes the basis by i = 0, ..., n-1.'
 ---
 
 ::: {.problem}
-- Show that if $\theset{\vector v_i}$ is a basis for $V$ where $\dim(V) = n$ and $T(\vector v_i) = \vector v_{i+1 \mod n}$ then $T$ is diagonalizable with minimal polynomial $x^n-1$.
+Show that if $\theset{\vector v_0, \ldots, \vector v_{n-1}}$ is a basis for a complex vector space $V$ where $\dim(V) = n \geq 1$ and $T(\vector v_i) = \vector v_{i+1 \mod n}$, then $T$ is diagonalizable with minimal polynomial $x^n-1$.
 :::
 
 ::: {.solution}
 
+Let $m_T$ be the minimal polynomial of $T$ and $\omega = e^{2\pi i/n}$.
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #divides}
 
-Show that $x^n - 1$ annihilates $T$:
-
-::: pf-proof
-
-::: pf-step
-
-For each basis vector $\mathbf{v}_i$ ($0 \le i \le n - 1$), the operator $T$ satisfies:
-\[
-T^n(\mathbf{v}_i) = \mathbf{v}_{i + n \pmod n} = \mathbf{v}_i = I(\mathbf{v}_i).
-\]
+$m_T(x)$ divides $x^n - 1$.
 
 ::: pf-proof
 
-applying the permutation $T$ $n$ times.
+Applying $T$ $n$ times sends $\vector v_i$ to $\vector v_{i+n \bmod n} = \vector v_i$, so $T^n$ agrees with the identity on a basis and $T^n - I = 0$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #degree}
 
-Since $T^n$ agrees with the identity operator $I$ on a basis, $T^n = I$, so $(T^n - I) = 0$.
-Thus the minimal polynomial $m_T(x)$ divides $x^n - 1$.
+$m_T(x) = x^n - 1$.
 
 ::: pf-proof
 
-definition of minimal polynomial.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Show that $\deg(m_T) = n$, so $m_T(x) = x^n - 1$:
-
-::: pf-proof
-
-::: pf-step
-
-Consider the vector $\mathbf{v}_0$. Its images under powers of $T$ are:
-\[
-\mathbf{v}_0, \, T(\mathbf{v}_0) = \mathbf{v}_1, \, T^2(\mathbf{v}_0) = \mathbf{v}_2, \, \dots, \, T^{n-1}(\mathbf{v}_0) = \mathbf{v}_{n-1}.
-\]
-These $n$ vectors form the given basis of $V$, hence are linearly independent.
-
-::: pf-proof
-
-hypothesis on basis.
+Let $g(x) = \sum_{j=0}^{d} c_j x^j$ with $d < n$ and $g(T) = 0$. Since $T^j(\vector v_0) = \vector v_j$ for $0 \le j \le n-1$,
+$$
+0 = g(T)(\vector v_0) = \sum_{j=0}^{d} c_j \vector v_j,
+$$
+and linear independence of the basis gives $c_0 = \cdots = c_d = 0$. Hence $\deg m_T \ge n$. By step [](#divides){.pf-ref}, the monic polynomial $m_T$ divides the monic polynomial $x^n-1$ of degree $n$, so they are equal.
 
 :::
 
@@ -88,103 +62,15 @@ hypothesis on basis.
 
 ::: pf-step
 
-If $g(x) = \sum_{j=0}^d c_j x^j$ is a non-zero polynomial of degree $d < n$ with $g(T) = 0$, then:
-\[
-0 = g(T)(\mathbf{v}_0) = \sum_{j=0}^d c_j T^j(\mathbf{v}_0) = \sum_{j=0}^d c_j \mathbf{v}_j.
-\]
-By linear independence of $\{\mathbf{v}_0, \dots, \mathbf{v}_{n-1}\}$, $c_0 = c_1 = \cdots = c_d = 0$, a contradiction.
+$T$ is diagonalizable, with eigenbasis $\vector w_k = \sum_{j=0}^{n-1} \omega^{-jk} \vector v_j$ and $T\vector w_k = \omega^k \vector w_k$ for $0 \le k \le n-1$.
 
 ::: pf-proof
 
-linear independence of basis vectors.
-
-:::
-
-:::
-
-::: pf-step
-
-Thus no non-zero polynomial of degree $< n$ annihilates $T$, so $\deg(m_T) \ge n$.
-Since $m_T(x) \mid (x^n - 1)$ and $\deg(x^n - 1) = n$, the monic minimal polynomial is:
-\[
-m_T(x) = x^n - 1.
-\]
-
-::: pf-proof
-
-monic divisibility of equal degree polynomials.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Prove diagonalizability:
-
-::: pf-proof
-
-::: pf-step
-
-Over $\mathbb{C}$, the polynomial $x^n - 1$ factors as:
-\[
-x^n - 1 = \prod_{k=0}^{n-1} (x - \omega^k), \quad \text{where } \omega = e^{2\pi i/n}.
-\]
-The $n$ roots $\omega^0, \omega^1, \dots, \omega^{n-1}$ are distinct.
-
-::: pf-proof
-
-distinct $n$-th roots of unity.
-
-:::
-
-:::
-
-::: pf-step
-
-A linear operator is diagonalizable if and only if its minimal polynomial splits into distinct linear factors.
-Since $m_T(x) = x^n - 1$ has $n$ distinct linear factors, $T$ is diagonalizable.
-
-::: pf-proof
-
-diagonalizability criterion via minimal polynomials.
-
-:::
-
-:::
-
-::: pf-step
-
-Explicitly, for each $k \in \{0, \dots, n-1\}$, the discrete Fourier vector:
-\[
-\mathbf{w}_k = \sum_{j=0}^{n-1} \omega^{-jk} \mathbf{v}_j
-\]
-is a non-zero eigenvector satisfying $T(\mathbf{w}_k) = \omega^k \mathbf{w}_k$, providing an eigenbasis $\{\mathbf{w}_0, \dots, \mathbf{w}_{n-1}\}$ for $V$.
-
-::: pf-proof
-
-$T(\mathbf{w}_k) = \sum \omega^{-jk} \mathbf{v}_{j+1} = \omega^k \sum \omega^{-(j+1)k} \mathbf{v}_{j+1} = \omega^k \mathbf{w}_k$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Conclusion:
-$T$ is diagonalizable with minimal polynomial $m_T(x) = x^n - 1$. Q.E.D.
-
-::: pf-proof
-
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+Over $\CC$, $x^n - 1 = \prod_{k=0}^{n-1}(x - \omega^k)$ with the $n$ roots $\omega^k$ distinct. By step [](#degree){.pf-ref}, $m_T$ is a product of distinct linear factors, so $T$ is diagonalizable. Explicitly, since $\omega^{-nk} = 1$,
+$$
+T\vector w_k = \sum_{j=0}^{n-1} \omega^{-jk} \vector v_{j+1 \bmod n} = \omega^{k} \sum_{j=0}^{n-1} \omega^{-(j+1)k} \vector v_{j+1 \bmod n} = \omega^k \vector w_k,
+$$
+and each $\vector w_k \neq 0$ because its coefficient on $\vector v_0$ is $1$. Eigenvectors for the $n$ distinct eigenvalues $\omega^k$ are linearly independent, so they form a basis of $V$.
 
 :::
 
