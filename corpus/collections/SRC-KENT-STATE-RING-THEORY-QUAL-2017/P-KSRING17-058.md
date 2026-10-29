@@ -13,21 +13,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 58 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source assumes every ideal is prime, which no ring satisfies since $R$ itself is not prime. The statement now assumes $R$ nonzero and every proper ideal prime.
 ---
 
 ::: {.problem}
-Let R be a commutative ring with 1 in which every ideal is a prime ideal.
+Let R be a nonzero commutative ring with 1 in which every proper ideal is a prime ideal.
 Prove that R is a field.
 (Hint: For $a \neq 0$ consider the ideals (a) and $( a ^ { 2 } ) . \mathrm { , }$ )
 :::
 
-::: {.remark}
-Erratum: the literal statement cannot hold under the standard definition of prime ideal, because the improper ideal $R$ itself is never prime. The intended hypothesis is that every proper ideal of $R$ is prime.
-:::
-
 ::: {.solution}
-
-Assume the corrected hypothesis that every proper ideal of $R$ is prime.
 
 ::: pf
 
@@ -35,28 +33,9 @@ Assume the corrected hypothesis that every proper ideal of $R$ is prime.
 
 The zero ideal is prime.
 
-
 ::: pf-proof
 
-If
-$$
-(0)=R,
-$$
-then
-$$
-1=0
-$$
-and the ring is the zero ring, which is not a field under the usual convention. Thus in the intended nonzero setting,
-$$
-(0)
-\subsetneq
-R.
-$$
-By hypothesis, every proper ideal is prime, so
-$$
-(0)
-$$
-is prime.
+Since $R$ is nonzero, $(0)\neq R$, so $(0)$ is a proper ideal and hence prime by hypothesis.
 
 :::
 
@@ -65,7 +44,6 @@ is prime.
 ::: {.pf-step #s1-2}
 
 The ring $R$ is an integral domain.
-
 
 ::: pf-proof
 
@@ -111,7 +89,6 @@ $$
 $$
 then $a$ is a unit.
 
-
 ::: pf-proof
 
 The equality
@@ -156,7 +133,6 @@ $$
 $$
 is prime.
 
-
 ::: pf-proof
 
 Since
@@ -171,7 +147,7 @@ the ideal
 $$
 (a^2)
 $$
-is proper. By the corrected hypothesis, every proper ideal is prime.
+is proper. By hypothesis, every proper ideal is prime.
 
 :::
 
@@ -183,7 +159,6 @@ Under the assumptions of step [](#s1-4){.pf-ref},
 $$
 a\in(a^2).
 $$
-
 
 ::: pf-proof
 
@@ -211,7 +186,6 @@ $$
 ::: {.pf-step #s1-6}
 
 The element $a$ is a unit.
-
 
 ::: pf-proof
 
@@ -251,7 +225,6 @@ so $a$ is invertible.
 
 Every nonzero element of $R$ is a unit.
 
-
 ::: pf-proof
 
 Let
@@ -279,18 +252,11 @@ $$
 \boxed{R\text{ is a field}.}
 $$
 
-
 ::: pf-proof
 
 The ring is commutative with identity, and by step [](#s1-7){.pf-ref} every nonzero element is invertible.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1-8){.pf-ref} proves the corrected statement.
 
 :::
 
