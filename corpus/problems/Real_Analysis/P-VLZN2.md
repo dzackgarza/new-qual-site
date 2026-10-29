@@ -17,7 +17,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source did not name the domain, said that f with f, f-hat in L^1 is itself bounded and uniformly continuous, and asked whether a C^1 function equals its Fourier series without periodicity; the statement now works on R, says f agrees a.e. with such a function, and takes f to be 1-periodic for the Fourier series part.'
