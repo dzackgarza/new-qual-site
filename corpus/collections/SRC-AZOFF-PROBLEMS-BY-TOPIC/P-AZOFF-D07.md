@@ -33,6 +33,10 @@ audit:
     For every R>10, Cauchy's coefficient formula gives
     |a_n| <= R^(1/2-n). Letting R tend to infinity forces every coefficient
     of positive degree to vanish, so the entire function is constant.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source asks to prove f is zero, false for f = 1; the statement asks to prove f constant. The rendered erratum remark is removed.'
 ---
 
 ::: {.problem}
@@ -116,23 +120,6 @@ for every $z\in\CC$.
 
 :::
 
-::: pf-qed
-Step [](#s3){.pf-ref} is the corrected conclusion.
 :::
 
-:::
-:::
-
-::: {.remark}
-Erratum: the source asks to prove that $f$ is the zero function. This is
-false. The constant function
-$$
-f\equiv1
-$$
-satisfies the printed hypothesis because
-$$
-1<\sqrt{10}<\abs{z}^{1/2}
-$$
-whenever $\abs{z}>10$. The printed growth bound forces constancy by
-step [](#s3){.pf-ref} of the solution, but it does not force the constant to be zero.
 :::
