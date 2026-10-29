@@ -7,27 +7,7 @@ order: 30
 
 ## Exercises
 
-Exercises from [@Fol13]:
-
-- Chapter 1:
-
-  - Exercises 3 (with the sets in 3(a) nonempty), 7, 10, 12, 14
-
-  - Exercises 15, 17, 18, 19, 22(a), 24, 28
-
-  - Exercises 26, 30, 31
-
-- Chapter 2:
-
-  - Exercises 2, 3, 7, 9 (in 9(c), Exercise 1.29 may be used without proof)
-
-  - Exercises 10, 12, 13, 14, 16, 19
-
-  - Exercises 24, 25, 28(a,b), 33, 34, 35, 38, 41; Exercise 24 shows that upper sums are not needed in the definition of the integral
-
-  - Exercises 40, 44, 47, 49, 50, 51, 52, 54, 56, 58, 59
-
-- Chapter 3: Exercises 3(b,c), 5, 6, 9, 12, 13, 14, 16, 20, 21, 22
+- [[real-analysis/resources/preface|Exercises from Folland]]
 
 - [Folland exercises, clipped](attachments/Folland_Clipped_Questions.pdf)
 
