@@ -94,8 +94,6 @@ source:
   - id: E-FS7GZ
   - id: E-FUIDU
   - id: E-FXYTL
-  - id: E-SS2.EX-15
-    comment: Stein--Shakarchi 2.15
   - id: E-G3DCH
   - id: E-G4N4D
   - id: E-G55QF
