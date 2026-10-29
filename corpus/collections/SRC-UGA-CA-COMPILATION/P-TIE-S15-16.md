@@ -14,32 +14,19 @@ audit:
   by: chatgpt
   date: 2026-09-12
   note: Checked against the retained Questions_from_Tie.pdf compilation, section Spring 2015, question 16.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source does not require the interior of the curve to lie in the region, which makes the claim false (z + 1/z on an annulus around the unit circle). The statement now requires the interior of the curve to lie in the region.
 ---
 
 ::: {.problem}
-Let f be an analytic function on a region Ω. Show that f is a constant if there is a simple closed curve γ in Ω such that its image $f ( \gamma )$ is contained in the real axis.
-:::
-
-::: {.remark}
-Erratum: as printed, the statement is false unless the Jordan interior of $\gamma$ is contained in $\Omega$.
-For example, on
-$$
-\Omega=\{z:1/2<\abs{z}<2\},
-$$
-the function
-$$
-f(z)=z+z^{-1}
-$$
-is holomorphic and nonconstant, while on the unit circle
-$$
-f(e^{i\theta})=2\cos\theta\in\RR.
-$$
-The intended statement is correct when the closed interior bounded by $\gamma$ lies in $\Omega$.
+Let $f$ be an analytic function on a region $\Omega$. Show that $f$ is a constant if there is a simple closed curve $\gamma$ in $\Omega$, whose interior is contained in $\Omega$, such that its image $f(\gamma)$ is contained in the real axis.
 :::
 
 ::: {.solution}
 
-Assume the corrected hypothesis that the closure of the Jordan interior $D$ of $\gamma$ is contained in $\Omega$.
+Let $D$ be the Jordan interior of $\gamma$, so that $\overline D=D\cup\gamma\subset\Omega$.
 Write
 $$
 f=u+iv.
@@ -151,7 +138,7 @@ throughout $\Omega$.
 
 ::: pf-qed
 
-Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove the corrected theorem. The remark gives a counterexample to the uncorrected source statement.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove that $f$ is constant.
 
 :::
 
