@@ -205,8 +205,6 @@ $T^2$ and $S^2 \vee S^1 \vee S^1$ have isomorphic cohomology groups, and they ar
 
 [[D-SI6OM]]
 
-[[D-UH3L5]]
-
 [[D-6UHU7]]
 
 ::: {.remark}

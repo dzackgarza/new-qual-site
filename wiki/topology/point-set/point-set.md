@@ -91,14 +91,6 @@ Recall that a [[D-ZFRV4|Hausdorff space]] is one in which distinct points have d
 
 ## Maps and homeomorphisms
 
-[[FT-M5BHD]]
-
-::: {.proof}
-It suffices to show that $f$ is a closed map, since then $\inverseof{f}$ is continuous.
-If $A\subseteq X$ is closed, then $A$ is compact because $X$ is compact, so $f(A)$ is compact, and a compact subset of the Hausdorff space $Y$ is closed.
-
-:::
-
 ::: {.example title="Retractions onto points"}
 For every $x_0 \in X$, the constant map $r\colon X \to \theset{x_0}$ is a [[D-NCLVD|retraction]] onto $\theset{x_0}$.
 
@@ -107,11 +99,6 @@ For every $x_0 \in X$, the constant map $r\colon X \to \theset{x_0}$ is a [[D-NC
 [[T-JSXGR]]
 
 [[T-FA6VI]]
-
-::: {.proof}
-See [@Mun00, p. 104].
-
-:::
 
 [[T-N6PYS]]
 

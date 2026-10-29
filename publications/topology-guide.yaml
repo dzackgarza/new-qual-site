@@ -109,7 +109,6 @@ sections:
       - ref: T-TJBYR
       - ref: T-UEXBK
       - ref: T-OPK3N
-      - ref: FT-M5BHD
       - ref: T-N6PYS
       - ref: T-G4GO4
       - ref: T-HH3YP
@@ -138,7 +137,6 @@ sections:
       - ref: D-K43GA
       - ref: D-NCLVD
       - ref: D-6UHU7
-      - ref: D-UH3L5
       - ref: T-TQ4J3
   - slug: the-fundamental-group
     title: The fundamental group
