@@ -24,7 +24,6 @@ Which of these properties does a compact Hausdorff space have?
 :::
 
 ::: {.solution}
-**Goal:** Evaluate which of the 17 fundamental topological properties are necessarily possessed by every compact Hausdorff space, and provide proofs or counterexamples for each.
 
 ::: pf
 
