@@ -17,100 +17,89 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-19
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: 'The source states (1) for every polynomial p and (2) for K = {r <= |z| <= R} with only r < R. Part (1) fails for p = 0, where M_R = 1, and z^{-m} is undefined on K unless r > 0; the statement takes p nonzero in (1) and 0 < r < R in (2).'
 ---
 
 ::: {.problem}
-(1) Let $p(z)$ be a polynomial, $R>0$ any positive number, and $m \geq 1$ an integer.
-Let $M_R = \sup \{ |z^{m} p(z) - 1|: |z| = R  \}$.
+(1) Let $p(z)$ be a nonzero polynomial, $R>0$ any positive number, and $m \geq 1$ an integer.
+Let $M_R = \sup \theset{ \abs{z^{m} p(z) - 1}: \abs{z} = R }$.
 Show that $M_R>1$.
 
-(2) Let $m \geq 1$ be an integer and $K = \{z \in {\mathbb C}: r \leq |z| \leq R \}$ where $r<R$.
-Show (i) using (1) as well as, (ii) without using (1) that there exists a positive number $\varepsilon_0>0$ such that for each polynomial $p(z)$, $$\sup \{|p(z) - z^{-m}|: z \in K  \} \geq \varepsilon_0 \, .$$
+(2) Let $m \geq 1$ be an integer and $K = \theset{z \in \CC: r \leq \abs{z} \leq R }$ where $0<r<R$.
+Show (i) using (1) as well as, (ii) without using (1) that there exists a positive number $\varepsilon_0>0$ such that for each polynomial $p(z)$, $$\sup \theset{\abs{p(z) - z^{-m}}: z \in K } \geq \varepsilon_0.$$
 :::
 
 ::: {.solution}
-Throughout, $0<r<R$, so that $z^{-m}$ is defined on $K$. Let $f(z) = z^m p(z) - 1$.
-
-**Part (1).**
+Let $f(z) = z^m p(z) - 1$, let $S_p\coloneqq\sup_{z \in K} \abs{p(z) - z^{-m}}$, and let $\gamma_\rho$ be the circle $z = \rho e^{i\theta}$, $0\le\theta\le2\pi$, of radius $\rho = \frac{r+R}{2}$, which lies in $K$.
 
 ::: pf
 
-::: {.pf-step #f-value-at-zero}
-$f$ is a polynomial with $\abs{f(0)} = 1$.
+::: pf-step
+(1) $M_R>1$ for every nonzero polynomial $p$.
 
 ::: pf-proof
-$z^m p(z) - 1$ is a polynomial, and $f(0) = 0^m p(0) - 1 = -1$ since $m\ge1$.
-:::
 
-:::
-
-::: {.pf-step #f-nonconstant}
-If $p \not\equiv 0$, then $f$ is nonconstant.
+::: {.pf-step #f-props}
+$f$ is a nonconstant polynomial with $\abs{f(0)} = 1$.
 
 ::: pf-proof
-The term $z^m p(z)$ has degree $m + \deg(p) \ge 1$.
+$f(0) = 0^m p(0) - 1 = -1$ since $m\ge1$, and $z^m p(z)$ has degree $m + \deg(p) \ge 1$.
 :::
 
 :::
 
 ::: pf-qed
-Let $p\not\equiv0$. By step [](#f-nonconstant){.pf-ref} and the maximum modulus principle on the closed disk $\overline{D(0,R)}$, the modulus of $f$ at the interior point $0$ is strictly less than its maximum on the circle $\abs z=R$. By step [](#f-value-at-zero){.pf-ref}, $M_R > \abs{f(0)} = 1$. The remark treats $p\equiv0$.
+By step [](#f-props){.pf-ref} and the maximum modulus principle on the closed disc $\overline{D(0,R)}$, the modulus of $f$ at the interior point $0$ is strictly less than its maximum on the circle $\abs z=R$, so $M_R > \abs{f(0)} = 1$.
 :::
 
 :::
 
-**Part (2)(i).**
+:::
 
-::: pf
-
-::: {.pf-step #lower-bound-on-circle-R}
-For every polynomial $p$, $\sup_{z \in K} |p(z) - z^{-m}| \geq R^{-m}$.
+::: pf-step
+(2)(i) $S_p\geq\varepsilon_0\coloneqq R^{-m}$ for every polynomial $p$.
 
 ::: pf-proof
-On the circle $\abs z=R$, which lies in $K$,
-$$|p(z) - z^{-m}| = \frac{|z^m p(z) - 1|}{|z|^m} = \frac{|z^m p(z) - 1|}{R^m},$$
-so $\sup_{z \in K} |p(z) - z^{-m}| \geq M_R/R^m$. If $p\not\equiv0$, Part (1) gives $M_R>1$. If $p\equiv0$, then $\sup_{z\in K}\abs{z^{-m}}=r^{-m}>R^{-m}$.
+If $p\equiv0$, then $S_p=r^{-m}>R^{-m}$.
+Otherwise, on the circle $\abs z=R$, which lies in $K$,
+$$
+\abs{p(z) - z^{-m}} = \frac{\abs{z^m p(z) - 1}}{R^m},
+$$
+so $S_p \geq M_R/R^m>R^{-m}$ by (1).
 :::
 
 :::
 
-::: pf-qed
-Step [](#lower-bound-on-circle-R){.pf-ref} gives the bound with $\varepsilon_0 = R^{-m}$.
-:::
+::: pf-step
+(2)(ii) $S_p\geq\varepsilon_0\coloneqq\rho^{-m} = \qty{\frac{2}{r+R}}^m$ for every polynomial $p$.
 
-:::
-
-**Part (2)(ii).** Let $\rho = \frac{r+R}{2}$ and let $\gamma_\rho$ be the circle $z = \rho e^{i\theta}$, $0\le\theta\le2\pi$, which lies in $K$. Let $S = \sup_{z \in K} |p(z) - z^{-m}|$.
-
-::: pf
+::: pf-proof
 
 ::: {.pf-step #contour-integral-value}
-$\oint_{\gamma_\rho} \big( p(z) - z^{-m} \big) z^{m-1} \, dz = -2\pi i$ for every polynomial $p$.
+$\oint_{\gamma_\rho} \qty( p(z) - z^{-m} ) z^{m-1} \, dz = -2\pi i$.
 
 ::: pf-proof
-By linearity the integral is $\oint_{\gamma_\rho} p(z) z^{m-1} \, dz - \oint_{\gamma_\rho} \frac{dz}{z}$. The first integral vanishes by Cauchy's theorem, since $p(z)z^{m-1}$ is a polynomial, and the second equals $2\pi i$.
-:::
-
-:::
-
-::: {.pf-step #lower-bound-rho}
-$S\geq\rho^{-m}$.
-
-::: pf-proof
-On $\gamma_\rho$, $|z^{m-1}| = \rho^{m-1}$, and $\gamma_\rho$ has length $2\pi \rho$. By step [](#contour-integral-value){.pf-ref} and the $ML$-inequality,
-$$2\pi = \left| \oint_{\gamma_\rho} \big( p(z) - z^{-m} \big) z^{m-1} \, dz \right| \leq S \cdot \rho^{m-1} \cdot 2\pi \rho = 2\pi \rho^m S.$$
+The integral is $\oint_{\gamma_\rho} p(z) z^{m-1} \, dz - \oint_{\gamma_\rho} \frac{dz}{z}$.
+The first integral vanishes by Cauchy's theorem, since $p(z)z^{m-1}$ is a polynomial, and the second equals $2\pi i$.
 :::
 
 :::
 
 ::: pf-qed
-Step [](#lower-bound-rho){.pf-ref} gives the bound with $\varepsilon_0 = \rho^{-m} = \left(\frac{2}{r+R}\right)^m$, which depends only on $r$, $R$ and $m$.
+On $\gamma_\rho$, $\abs{z^{m-1}} = \rho^{m-1}$, and $\gamma_\rho$ has length $2\pi \rho$.
+By step [](#contour-integral-value){.pf-ref} and the $ML$-inequality,
+$$
+2\pi = \abs{ \oint_{\gamma_\rho} \qty( p(z) - z^{-m} ) z^{m-1} \, dz } \leq S_p \cdot \rho^{m-1} \cdot 2\pi \rho = 2\pi \rho^m S_p.
+$$
 :::
 
 :::
 
 :::
 
-::: {.remark}
-Part (1) requires $p\not\equiv0$: for $p\equiv0$, $z^mp(z)-1\equiv-1$ and $M_R=1$. Part (2) holds for every polynomial, including $p\equiv0$.
+:::
+
 :::
