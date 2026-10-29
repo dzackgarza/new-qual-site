@@ -19,16 +19,34 @@ Let $f\in F[x]$ be an irreducible separable cubic. If its Galois group is not co
 :::
 
 ::: {.solution}
-Let $L$ be the splitting field and
-\[
-G=\operatorname{Gal}(L/F)\le S_3
-\]
-via the action on the three roots.
+Let $L$ be the splitting field of $f$, and regard $G=\Gal(L/F)$ as a subgroup of $S_3$ through its action on the three distinct roots of $f$.
 
-Because $f$ is irreducible, $G$ acts transitively on its roots. Hence $3$ divides $|G|$. The transitive subgroups of $S_3$ are therefore $A_3$ and $S_3$: indeed, a subgroup with order divisible by $3$ contains the unique subgroup $A_3$ of order $3$, and its order is either $3$ or $6$.
+::: pf
 
-By hypothesis $G\not\subseteq A_3$, so $G\ne A_3$. Consequently
-\[
-G=S_3.
-\]
+::: {.pf-step #contains-a3}
+
+$A_3\le G$.
+
+::: pf-proof
+
+Because $f$ is irreducible, $G$ acts transitively on its three roots, so $3$ divides $\abs{G}$ by the orbit-stabilizer theorem. By Cauchy's theorem $G$ contains an element of order $3$, which generates $A_3$, the unique subgroup of order $3$ in $S_3$.
+
+:::
+
+:::
+
+::: pf-step
+
+$G=S_3$.
+
+::: pf-proof
+
+By step [](#contains-a3){.pf-ref} and Lagrange's theorem, $\abs{G}\in\{3,6\}$, so $G=A_3$ or $G=S_3$. By hypothesis $G\not\subseteq A_3$.
+
+:::
+
+:::
+
+:::
+
 :::
