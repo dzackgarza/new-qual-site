@@ -83,5 +83,5 @@ If $a$ is not nilpotent, the prime ideal $\mfp$ of step [](#prime){.pf-ref} lies
 :::
 
 ::: {.remark}
-The prime ideal $\mfp$ maximal among ideals avoiding the powers of $a$ need not be a maximal ideal; it is maximal only among the ideals that avoid all powers of $a$.
+The prime ideal $\mfp$ constructed in the solution need not be a maximal ideal; it is maximal only among the ideals that avoid all powers of $a$.
 :::
