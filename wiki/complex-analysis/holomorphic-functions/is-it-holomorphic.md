@@ -9,15 +9,15 @@ topics:
 
 ## Given $u$ and $v$ explicitly
 
-**Cauchy–Riemann equations.**
+**Cauchy--Riemann equations.**
 Write $f(x+iy) = u(x,y) + iv(x,y)$ and check $u_x = v_y$ and $u_y = -v_x$.
 
 If $u$ and $v$ have continuous partial derivatives on an open set and satisfy the equations there, then $f$ is holomorphic on that set.
 At a single point the equations are weaker than complex differentiability: $f(x+iy) \coloneqq \sqrt{\abs{xy}}$ satisfies them at $0$, and along $y=x$ its difference quotient at $0$ is $\abs x/\bigl((1+i)x\bigr)$, which has no limit as $x\to 0$.
 In polar coordinates the equations read $u_r = \frac1r v_\theta$ and $v_r = -\frac1r u_\theta$.
 
-Equivalently, $f$ is holomorphic exactly when $\delbar f = 0$, the Cauchy–Riemann equations written as one equation.
-See [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations|The Cauchy–Riemann equations]].
+Equivalently, $f$ is holomorphic exactly when $\delbar f = 0$, the Cauchy--Riemann equations written as one equation.
+See [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations|The Cauchy--Riemann equations]].
 
 ## Given a power series
 
@@ -90,7 +90,7 @@ For $y\in\RR$, $\abs{\sin(iy)} = \abs{\sinh y}$.
 :::
 
 ::: {.warnings}
-A map whose real Jacobian is invertible at every point need not be holomorphic: $f(z) = \bar z$ has Jacobian $\operatorname{diag}(1,-1)$ and fails the Cauchy–Riemann equations.
+A map whose real Jacobian is invertible at every point need not be holomorphic: $f(z) = \bar z$ has Jacobian $\operatorname{diag}(1,-1)$ and fails the Cauchy--Riemann equations.
 Conversely, a holomorphic $f$ with $f'(z_0)\neq 0$ is conformal at $z_0$.
 
 :::
