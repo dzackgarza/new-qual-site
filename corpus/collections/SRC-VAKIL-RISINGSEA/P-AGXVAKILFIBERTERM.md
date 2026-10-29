@@ -19,56 +19,32 @@ Show that the fiber product over the terminal object is the cartesian product.
 :::
 
 ::: {.solution}
-- Recall the definition: $T$ is terminal iff every object $X$ admits a unique morphism $X\to T$.
+Let $T$ be a terminal object of a category $\mathcal C$, and let $X,Y$ be objects with their unique morphisms $t_X:X\to T$ and $t_Y:Y\to T$.
+A fiber product $\fiberprod{X}{T}{Y}$ is an object $P$ with morphisms ${\operatorname{pr}}_X:P\to X$ and ${\operatorname{pr}}_Y:P\to Y$ such that $t_X\circ{\operatorname{pr}}_X=t_Y\circ{\operatorname{pr}}_Y$, and such that for every object $W$ with morphisms $p:W\to X$ and $q:W\to Y$ satisfying $t_X\circ p=t_Y\circ q$ there is a unique $h:W\to P$ with ${\operatorname{pr}}_X\circ h=p$ and ${\operatorname{pr}}_Y\circ h=q$.
+A product $X\cross Y$ has the same definition with both conditions on $t_X,t_Y$ removed.
 
-- Strategy: use both universal properties to produce an isomorphism.
+::: pf
 
-- Let ${\operatorname{pr}}_X, {\operatorname{pr}}_Y$ be the cartesian product projections, and ${\operatorname{pr}}_X^T, {\operatorname{pr}}_Y^T$ the fiber product projections.
+::: {.pf-step #condition-automatic}
+Every pair of morphisms $p:W\to X$ and $q:W\to Y$ satisfies $t_X\circ p=t_Y\circ q$.
 
-- Let $T_X, T_Y$ be the maps $X\to T$ and $Y\to T$.
-
-- Since $X\cross Y$ is an object of this category, it admits one unique map to $T$:
-
-\begin{tikzcd}
-	X\cross Y\ar[r, "{\operatorname{pr}}_Y"]\ar[d, "{\operatorname{pr}}_X"']\ar[dr, "T_{X\cross Y}"] & Y\ar[d, "T_Y"] \\
-	X\ar[r, "T_X"'] & T
-\end{tikzcd}
-
-- But $T_Y \circ {\operatorname{pr}}_Y: X\cross Y \to T$ is another such map, so it must equal $T_{X\cross Y}$.
-
-- Similarly $T_X \circ {\operatorname{pr}}_X$ equals $T_{X\cross Y}$.
-
-- Thus $T_Y \circ {\operatorname{pr}}_Y = T_X \circ {\operatorname{pr}}_X$, which is part of the universal property for $\fiberprod{X}{T}{Y}$.
-
-- By the universal property of $X\cross Y$, for every $W$ admitting maps to $X$ and $Y$ we get a unique $h_0$:
-
-\begin{tikzcd}
-	W \ar[drr, bend left]\ar[rdd, bend right]\ar[dr, dotted, "\exists ! h_0"] & & \\
-	& X\cross Y\ar[r, "{\operatorname{pr}}_Y"]\ar[d, "{\operatorname{pr}}_X"] & Y\ar[d, "T_Y"] \\
-	& X\ar[r, "T_X"] & T
-\end{tikzcd}
-
-> Note that $T$ does not matter in this particular diagram.
-
-- This gives the left-hand diagram below; the right-hand one comes from the universal property of $X\cross Y$:
-
-\begin{tikzcd}
-	\fiberprod{X}{T}{Y}\ar[drr, "{\operatorname{pr}}_Y^T", bend left]\ar[rdd, "{\operatorname{pr}}_X^T", bend right]\ar[dr, dotted, "\exists ! h_0"] & & \\
-	& X\cross Y\ar[r, "{\operatorname{pr}}_Y"]\ar[d, "{\operatorname{pr}}_X"] & Y\ar[d, "T_Y"] \\
-	& X\ar[r, "T_X"] & T
-\end{tikzcd}
-
-\begin{tikzcd}
-	X\cross Y\ar[drr, "{\operatorname{pr}}_Y", bend left]\ar[rdd, "{\operatorname{pr}}_X", bend right]\ar[dr, dotted, "\exists ! h_1"] & & \\
-	& \fiberprod{X}{T}{Y}\ar[r, "{\operatorname{pr}}_Y^T"]\ar[d, "{\operatorname{pr}}_X^T"] & Y\ar[d, "T_Y"] \\
-	& X\ar[r, "T_X"] & T
-\end{tikzcd}
-
-- By commutativity, $h_0 \circ h_1 = \id_{X\cross Y}$ and vice versa.
+::: pf-proof
+Both $t_X\circ p$ and $t_Y\circ q$ are morphisms $W\to T$.
+Since $T$ is terminal, there is exactly one morphism $W\to T$, so the two are equal.
 :::
 
-::: {.remark}
-Erratum: the last step asserts $h_0\circ h_1 = \id_{X\cross Y}$ "by commutativity", which is not enough.
-Both $h_0\circ h_1$ and $\id_{X\cross Y}$ are maps $X\cross Y \to X\cross Y$ commuting with ${\operatorname{pr}}_X$ and ${\operatorname{pr}}_Y$, so they agree by the uniqueness clause of the universal property of $X\cross Y$.
-Likewise $h_1 \circ h_0$ and $\id$ commute with ${\operatorname{pr}}_X^T$ and ${\operatorname{pr}}_Y^T$, so they agree by the uniqueness clause for $\fiberprod{X}{T}{Y}$.
+:::
+
+::: pf-step
+An object $P$ with morphisms ${\operatorname{pr}}_X:P\to X$ and ${\operatorname{pr}}_Y:P\to Y$ is a fiber product $\fiberprod{X}{T}{Y}$ if and only if it is a product $X\cross Y$.
+
+::: pf-proof
+By step [](#condition-automatic){.pf-ref}, the condition $t_X\circ{\operatorname{pr}}_X=t_Y\circ{\operatorname{pr}}_Y$ holds for every $P$, and the condition $t_X\circ p=t_Y\circ q$ holds for every test pair $(p,q)$.
+With both conditions removed, the definition of the fiber product is word for word the definition of the product.
+Hence the fiber product over $T$ exists exactly when the product exists, and then the two are isomorphic by a unique isomorphism compatible with the projections, since an object with a universal property is unique up to such an isomorphism.
+:::
+
+:::
+
+:::
 :::
