@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NAGQY
 kind: problem
-title: Character table
+title: Character table of a finite group and the cyclotomic field containing its entries
 classification:
   areas:
   - algebra
