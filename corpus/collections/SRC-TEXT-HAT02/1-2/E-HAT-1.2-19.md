@@ -22,167 +22,68 @@ Show that the subspace $X \subset \RR^3$ that is the union of the spheres $S_n$ 
 :::
 
 ::: {.solution}
+Write $0$ for the origin, $|\cdot|$ for the Euclidean norm, and $p_n = (2/n, 0, 0)$ for the point of $S_n$ opposite $0$.
+
 ::: pf
 
-::: {.pf-step #x-path-connected}
-
-$X$ is path-connected, and its spheres meet pairwise only at the origin.
-
-::: pf-proof
-
-::: pf-step
-
-For each $n \ge 1$, let $S_n = \{x \in \RR^3 : \|x - (1/n, 0, 0)\| = 1/n\}$ be the 2-sphere of diameter $2/n$ passing through the origin $0 = (0, 0, 0)$.
-
-:::
-
-::: pf-step
-
-The spheres pairwise intersect only at the origin: $S_n \cap S_m = \{0\}$ for all $n \neq m$.
-
-:::
-
-::: pf-step
-
-Since each $S_n$ is path-connected and contains $0$, the union $X = \bigcup_{n=1}^\infty S_n$ is path-connected.
-
-:::
-
-::: pf-step
-
-For each $n \ge 1$, let $p_n = (2/n, 0, 0) \in S_n$ denote the pole of $S_n$ opposite to the origin.
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Each $X \setminus \{p_n\}$ deforms onto $\bigcup_{m \neq n} S_m$ by a homotopy that moves points only inside $S_n$.
+::: {.pf-step #pieces}
+$X$ is path-connected, and $X \setminus \{0\}$ is the disjoint union of the sets $S_n \setminus \{0\}$, each open in $X$.
 
 ::: pf-proof
-
-::: pf-step
-
-The punctured 2-sphere $S_n \setminus \{p_n\}$ is homeomorphic to $\RR^2$ via stereographic projection from $p_n$.
-
-:::
-
-::: pf-step
-
-Hence there is a continuous deformation retraction $H_n: (S_n \setminus \{p_n\}) \times [0, 1] \to S_n \setminus \{p_n\}$ that contracts $S_n \setminus \{p_n\}$ to the origin $0$, keeping $0$ stationary:
-    $$H_n(x, 0) = x, \quad H_n(x, 1) = 0, \quad H_n(0, t) = 0 \quad \text{for all } t \in [0, 1].$$
-
-:::
-
-::: pf-step
-
-Extend $H_n$ to the entire space $X \setminus \{p_n\}$ by setting $H_n(x, t) = x$ for all $x \in S_m$ ($m \neq n$). Since $S_n \cap S_m = \{0\}$ and $H_n(0, t) = 0$, this extended map is continuous on $(X \setminus \{p_n\}) \times [0, 1]$.
-
-:::
-
-::: pf-step
-
-Throughout the deformation $H_n$, every point moves within $S_n$, so $\|H_n(x, t) - x\| \le \operatorname{diam}(S_n) = 2/n$ for all $x \in X \setminus \{p_n\}$ and $t \in [0, 1]$.
-
+A point $x$ lies on $S_n$ exactly when $|x|^2 = 2x_1/n$.
+If $x \in S_n \cap S_m$ with $n \ne m$, then $2x_1/n = 2x_1/m$, so $x_1 = 0$ and $|x| = 0$; hence $S_n \cap S_m = \{0\}$.
+Every $S_n$ is path-connected and contains $0$, so $X$ is path-connected.
+The set $\{0\} \cup \bigcup_{m \ne n} S_m$ is closed in $\RR^3$, because a convergent sequence of points from infinitely many distinct spheres $S_m$ has norms at most $2/m \to 0$ and so converges to $0$.
+Its complement in $X$ is $S_n \setminus \{0\}$, which is therefore open in $X$.
 :::
 
 :::
 
-:::
-
-::: pf-step
-
-A loop at the origin is homotopic to a loop that misses the pole $p_n$ of a given sphere.
+::: {.pf-step #small-homotopy}
+Let $g \colon [a,b] \to S_n$ be a path with $g(a) = g(b) = 0$, and let $M = \max |g|$.
+Then $g$ is homotopic rel endpoints, inside $S_n$, to the constant path at $0$ by a homotopy $G$ with $|G(s,t)| \le M$ for all $s, t$.
 
 ::: pf-proof
-
-::: pf-step
-
-Let $f: [0, 1] \to X$ be a continuous loop based at the origin: $f(0) = f(1) = 0$.
-
-:::
-
-::: pf-step
-
-For each $n \ge 1$, the preimage $f^{-1}(S_n \setminus \{0\})$ is an open subset of $(0, 1)$, hence a countable union of disjoint open intervals $f^{-1}(S_n \setminus \{0\}) = \bigcup_j (a_{n,j}, b_{n,j})$.
-
-:::
-
-::: pf-step
-
-On each interval $(a_{n,j}, b_{n,j})$, the path $f$ is a path in $S_n$ starting and ending at $0$.
-
-:::
-
-::: pf-step
-
-Since the 2-sphere $S_n$ has dimension 2, any continuous path in $S_n$ can be perturbed relative to its endpoints to miss the pole $p_n$ (by the Simplicial Approximation Theorem or Stone–Weierstrass density of paths missing a point).
-
-:::
-
-::: pf-step
-
-Applying this perturbation to each interval $(a_{n,j}, b_{n,j})$ produces a loop $f_n$ homotopic to $f$ whose image in $S_n$ misses $p_n$: $p_n \notin f_n([0, 1])$.
-
+If $p_n$ lies in the image of $g$, then $M = 2/n$; take any homotopy rel endpoints in $S_n$ to the constant path, which exists because $S_n$ is simply connected, and every point of $S_n$ has norm at most $2/n = M$.
+Otherwise let $\sigma \colon S_n \setminus \{p_n\} \to P$ be stereographic projection from $p_n$ onto the plane $P$ tangent to $S_n$ at $0$, so $\sigma(0) = 0$, and set $G(s,t) = \sigma^{-1}((1-t)\,\sigma(g(s)))$.
+This is a homotopy rel endpoints from $g$ to the constant path at $0$.
+For $y \in S_n \setminus \{p_n\}$ let $\theta \in [0, \pi/2)$ be the angle at $p_n$ between the segments to $0$ and to $y$; the triangle $0\,y\,p_n$ has a right angle at $y$ because $0p_n$ is a diameter, so $|y| = (2/n)\sin\theta$ and $|\sigma(y)| = (2/n)\tan\theta$.
+Both are increasing in $\theta$, so $|y|$ is an increasing function of $|\sigma(y)|$; as $|(1-t)\sigma(g(s))| \le |\sigma(g(s))|$, we get $|G(s,t)| \le |g(s)| \le M$.
 :::
 
 :::
 
-:::
-
-::: pf-step
-
-Every loop at the origin is null-homotopic, so $\pi_1(X, 0) = 0$.
+::: {.pf-step #excursions}
+Let $f \colon [0,1] \to X$ be a loop at $0$.
+Then $U = f^{-1}(X \setminus \{0\})$ is a disjoint union of countably many open intervals $J = (a_J, b_J)$, with $f(a_J) = f(b_J) = 0$ and $f(J) \subset S_{n(J)} \setminus \{0\}$ for one index $n(J)$; moreover, for each $\varepsilon > 0$ only finitely many $J$ have $M_J = \max_{\overline{J}} |f| \ge \varepsilon$.
 
 ::: pf-proof
-
-::: pf-step
-
-Perturb $f$ simultaneously on all spheres $S_n$ so that $f(I)$ misses every pole $p_n$ for all $n \ge 1$.
+$U$ is open in $[0,1]$ and misses $0$ and $1$, so it is a countable disjoint union of open intervals, and their endpoints lie outside $U$.
+Each $J$ is connected, so by step [](#pieces){.pf-ref} it maps into one of the disjoint open sets $S_n \setminus \{0\}$.
+By uniform continuity of $f$, choose $\delta > 0$ with $|f(s) - f(s')| < \varepsilon$ whenever $|s - s'| < \delta$.
+If $M_J \ge \varepsilon$, then some $s \in J$ has $|f(s) - f(a_J)| \ge \varepsilon$, so $J$ has length at least $\delta$; at most $1/\delta$ disjoint intervals in $[0,1]$ have this length.
+:::
 
 :::
 
-::: pf-step
+::: {.pf-step #homotopy}
+Define $F \colon [0,1] \times [0,1] \to X$ by $F = G_J$ on $\overline{J} \times [0,1]$, where $G_J$ is the homotopy of step [](#small-homotopy){.pf-ref} for $f|_{\overline{J}}$, and $F(s,t) = 0$ when $f(s) = 0$.
+Then $F$ is well defined and continuous, and it is a homotopy rel $\{0,1\}$ from $f$ to the constant loop.
 
-For each $n \ge 1$, apply the deformation retraction $H_n$ on $S_n \setminus \{p_n\}$ from step [](#s2){.pf-ref}.
-
-:::
-
-::: pf-step
-
-Concatenating these homotopies over all $n \ge 1$ (rescaling the $n$-th homotopy to the time parameter interval $[1 - 2^{-(n-1)}, 1 - 2^{-n}]$) defines a homotopy $H: [0, 1] \times [0, 1] \to X$.
-
-:::
-
-::: pf-step
-
-Continuity of $H$ at $t = 1$: For any $\varepsilon > 0$, choose $N > 2/\varepsilon$. For all stages $n \ge N$, every point moves by at most $\operatorname{diam}(S_n) = 2/n < \varepsilon$, and the image at stage $N$ is contained in the $\varepsilon$-neighborhood $\bigcup_{n \ge N} S_n \subset B(0, \varepsilon)$.
-
-:::
-
-::: pf-step
-
-Thus $H$ is a continuous homotopy in $X$ between the loop $f$ and the constant loop at $0$.
-
-:::
-
-::: pf-step
-
-Therefore $[f] = 0$ in $\pi_1(X, 0)$, so $\pi_1(X, 0) = 0$.
-
-:::
-
+::: pf-proof
+The closed intervals $\overline{J}$ meet each other and the zero set of $f$ only at endpoints, where every $G_J$ equals $0$; so $F$ is well defined, $F(s,0) = f(s)$, $F(s,1) = 0$, and $F(0,t) = F(1,t) = 0$.
+$F$ is continuous on the open sets $J \times [0,1]$, so it remains to check continuity at $(s_0, t_0)$ with $f(s_0) = 0$, where $F(s_0,t_0) = 0$.
+Let $\varepsilon > 0$.
+By step [](#excursions){.pf-ref} only finitely many intervals $J$ have $M_J \ge \varepsilon$; choose a neighbourhood $V$ of $s_0$ meeting only those among them whose closure contains $s_0$ (at most two).
+For each of those, $G_J$ is continuous on $\overline{J} \times [0,1]$ and vanishes on $\{s_0\} \times [0,1]$, so by compactness of $[0,1]$ we may shrink $V$ so that $|G_J| < \varepsilon$ on $(V \cap \overline{J}) \times [0,1]$.
+At any other point $s \in V$, either $f(s) = 0$ and $F(s,t) = 0$, or $s$ lies in an interval $J$ with $M_J < \varepsilon$ and $|F(s,t)| \le M_J < \varepsilon$ by step [](#small-homotopy){.pf-ref}.
+So $|F| < \varepsilon$ on $V \times [0,1]$.
 :::
 
 :::
 
 ::: pf-qed
-
-$X$ is path-connected by step [](#x-path-connected){.pf-ref}, and $\pi_1(X, 0) = 0$, so $X$ is simply connected.
-
+Every loop at $0$ is nullhomotopic by step [](#homotopy){.pf-ref}, so $\pi_1(X, 0) = 0$, and $X$ is path-connected by step [](#pieces){.pf-ref}; hence $X$ is simply connected.
 :::
 
 :::
