@@ -26,12 +26,13 @@ $$
 $$
 
 Neither sequence is left exact in general; injectivity of the leftmost map requires additional hypotheses.
-The first becomes short exact on the left for a smooth morphism, and its failure for a nonconstant map of curves is what Riemann--Hurwitz measures: the cokernel of $f^*\Omega_Y \to \Omega_X$ is the ramification divisor.
-The second becomes short exact on the left when $Z$ is smooth, and taking determinants then gives adjunction,
+The first is also exact on the left when $X\to Y$ is smooth.
+For a finite separable morphism $f\colon X\to Y$ of smooth curves, $f^*\Omega_Y \to \Omega_X$ is injective and its cokernel $\Omega_{X/Y}$ is a torsion sheaf whose length at $p$ is the coefficient of $p$ in the ramification divisor; Riemann--Hurwitz is the degree count of this sequence.
+The second is also exact on the left when $X$ and $Z$ are smooth over a field, and taking determinants then gives adjunction,
 $$
 \omega_Z = \left( \omega_X \tensor \dualof{\det(\mci/\mci^2)} \right)\restrictionof{}{Z} ,
 $$
-which is the computation behind every genus formula in [[algebraic-geometry/curves-and-surfaces/index|curves and surfaces]].
+which is the computation behind the genus formulas in [[algebraic-geometry/curves-and-surfaces/index|curves and surfaces]].
 
 [[D-MODCONORM]]
 
