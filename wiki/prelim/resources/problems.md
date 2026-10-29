@@ -39,4 +39,4 @@ order: 20
 
 ## Exams
 
-- [[UCLA_Basic_Exam_Prelim.pdf|UCLA Basic Examination, Spring 2018]]
+- [[SRC-UCLA-BASIC-SPRING-2018|UCLA Basic Examination, Spring 2018]]
