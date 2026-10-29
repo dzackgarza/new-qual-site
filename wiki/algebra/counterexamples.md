@@ -79,7 +79,7 @@ Matrices with the same [[D-QFYAC|characteristic polynomial]] and the same [[D-GK
 A real matrix need not have a real eigenvalue: the rotation $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ has characteristic polynomial $x^2+1$.
 :::
 
-::: {.example title="Diagonalizability over $\RR$ and $\CC$"}
+::: {.example title="Diagonalizability over the real and complex numbers"}
 The same rotation is diagonalizable over $\CC$, with eigenvalues $\pm i$, and not over $\RR$.
 :::
 
