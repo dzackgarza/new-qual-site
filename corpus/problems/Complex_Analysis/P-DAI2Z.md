@@ -19,127 +19,55 @@ audit:
 
 ::: {.problem}
 Let $n\in \ZZ^{\geq 0}$ and show that the equation
-\[
+$$
 e^z = az^n
-\]
+$$
 has $n$ solutions in the open unit disc if $\abs{a} > e$, and no solutions if $\abs{a} < {1\over e}$.
 :::
 
 ::: {.solution}
-**Goal:** Show that $e^z = az^n$ has exactly $n$ solutions in the open unit disk when $\abs a > e$, and no solutions when $\abs a < \frac{1}{e}$.
+
+Let $F(z)\coloneqq e^z-az^n$.
 
 ::: pf
 
-::: {.pf-step #abs-ez-upper-bound}
-On $\abs z = 1$: $\abs{e^z} = e^{\Re z} \leq e^{\abs z} = e$.
+::: {.pf-step #bounds}
+On $\abs{z}=1$, $e^{-1}\le\abs{e^z}\le e$.
 
 ::: pf-proof
-$\Re z \leq \abs z = 1$ on the unit circle.
+$\abs{e^z}=e^{\Re z}$ and $-1\le\Re z\le1$.
 :::
 
 :::
 
-::: {.pf-step #case-large-a}
-Case $\abs a > e$: $e^z - az^n$ has exactly $n$ zeros in $\abs z < 1$.
+::: {.pf-step #large-count}
+If $\abs{a}>e$, $F$ has exactly $n$ zeros in $\abs{z}<1$, counted with multiplicity.
 
 ::: pf-proof
-
-::: {.pf-step #strict-ineq-large-a}
-On $\abs z = 1$, $\abs{e^z} < \abs{az^n} = \abs a$.
-
-::: pf-proof
-Step [](#abs-ez-upper-bound){.pf-ref} and $\abs a > e$; also $\abs{z^n} = 1$.
-:::
-
-:::
-
-::: {.pf-step #same-zero-count-large-a}
-$e^z - az^n$ and $-az^n$ have the same number of zeros in $\abs z < 1$.
-
-::: pf-proof
-Rouch\'e's theorem with $f(z) = -az^n$ and $g(z) = e^z$, using step [](#strict-ineq-large-a){.pf-ref}.
-:::
-
-:::
-
-::: {.pf-step #neg-az-n-zeros}
-$-az^n$ has exactly $n$ zeros in $\abs z < 1$ (counting multiplicity).
-
-::: pf-proof
-Its only zero is $z = 0$, of multiplicity $n$ (for $n \geq 1$; for $n = 0$, $-a \neq 0$ has no zeros, and "$n = 0$ solutions" is consistent).
+On $\abs{z}=1$, step [](#bounds){.pf-ref} gives $\abs{e^z}\le e<\abs{a}=\abs{-az^n}$.
+By Rouché's theorem $F$ has as many zeros in $\abs{z}<1$ as $-az^n$, which has the single zero $0$ of order $n$.
 :::
 
 :::
 
 ::: pf-step
-Conclusion.
+If $\abs{a}>e$, the $n$ zeros of step [](#large-count){.pf-ref} are distinct, so the equation has exactly $n$ solutions in the disc.
 
 ::: pf-proof
-Steps [](#same-zero-count-large-a){.pf-ref} and [](#neg-az-n-zeros){.pf-ref}.
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #abs-ez-lower-bound}
-On $\abs z = 1$: $\abs{e^z} = e^{\Re z} \geq e^{-1} = \frac{1}{e}$.
-
-::: pf-proof
-$\Re z \geq -\abs z = -1$ on the unit circle.
-:::
-
-:::
-
-::: {.pf-step #case-small-a}
-Case $\abs a < \frac{1}{e}$: $e^z - az^n$ has no zeros in $\abs z < 1$.
-
-::: pf-proof
-
-::: {.pf-step #strict-ineq-small-a}
-On $\abs z = 1$, $\abs{az^n} = \abs a < \frac{1}{e} \leq \abs{e^z}$.
-
-::: pf-proof
-Step [](#abs-ez-lower-bound){.pf-ref} and the hypothesis on $\abs a$.
-:::
-
-:::
-
-::: {.pf-step #same-zero-count-small-a}
-$e^z - az^n$ and $e^z$ have the same number of zeros in $\abs z < 1$.
-
-::: pf-proof
-Rouch\'e's theorem with $f(z) = e^z$ and $g(z) = -az^n$, using step [](#strict-ineq-small-a){.pf-ref}.
-:::
-
-:::
-
-::: {.pf-step #ez-no-zeros}
-$e^z$ has no zeros.
-
-::: pf-proof
-The exponential never vanishes.
+At a common zero of $F$ and $F'$, $e^z=az^n$ and $e^z=naz^{n-1}$, so $az^{n-1}(z-n)=0$.
+Here $a\ne0$, $z\ne0$ because $e^0\ne0$, and $z=n$ is not in the open disc when $n\ge1$; so every zero of $F$ in the disc is simple.
 :::
 
 :::
 
 ::: pf-step
-Conclusion.
+If $\abs{a}<1/e$, the equation has no solutions in $\abs{z}<1$.
 
 ::: pf-proof
-Steps [](#same-zero-count-small-a){.pf-ref} and [](#ez-no-zeros){.pf-ref}.
+On $\abs{z}=1$, step [](#bounds){.pf-ref} gives $\abs{-az^n}=\abs{a}<e^{-1}\le\abs{e^z}$.
+By Rouché's theorem $F$ has as many zeros in $\abs{z}<1$ as $e^z$, which has none.
 :::
 
-:::
-
-:::
-
-:::
-
-::: pf-qed
-Step [](#case-large-a){.pf-ref} gives exactly $n$ solutions in the disk when $\abs a > e$; step [](#case-small-a){.pf-ref} gives none when $\abs a < 1/e$.
 :::
 
 :::
