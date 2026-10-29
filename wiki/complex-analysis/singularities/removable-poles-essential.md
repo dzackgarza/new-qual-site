@@ -197,7 +197,7 @@ The values taken near an essential singularity are described on [[complex-analys
 ## Exercises
 
 [[P-DO7TE]]
-[[E-NVCIF]]
+[[E-PCVOI]]
 [[E-GRXN4]]
 [[E-WE7UT]]
 [[E-XPMW5]]

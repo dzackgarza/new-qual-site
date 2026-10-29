@@ -171,13 +171,11 @@ source:
   - id: E-NKDKF
   - id: E-NT2T3
   - id: E-NTKTA
-  - id: E-NVCIF
   - id: E-NZY3B
   - id: E-O5SOQ
   - id: E-OBU6T
     comment: Rudin 10.4
   - id: E-ORJPT
-  - id: E-OS574
   - id: E-OUBBQ
   - id: E-P2PEF
   - id: E-P7SIB
