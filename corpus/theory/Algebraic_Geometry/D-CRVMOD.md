@@ -74,7 +74,7 @@ $$
 x=s^2u,\qquad y=s^3v
 $$
 identifies $\mathcal E_{T'}$ with $E\times T'$. Thus every geometric fibre is isomorphic to $E$, while the family over $T$ is the nontrivial quadratic twist corresponding to the class of the cover $s^2=t$ in $H^1_{\acute{e}tale}(T,\mu_2)$.
-The $\mu_2$ here is $\pm 1 \subseteq \Aut(E, p_0)$, so the example is powered by exactly the automorphism that the moduli problem forgets.
+The $\mu_2$ here is $\pm 1 \subseteq \Aut(E, p_0)$, where $p_0$ is the point at infinity of $E$, so the example is powered by exactly the automorphism that the moduli problem forgets.
 
 The same failure persists for every $g \geq 2$ even though a general curve of genus $g \geq 3$ has no nontrivial automorphisms: the hyperelliptic locus is nonempty in every genus and every curve on it carries the hyperelliptic involution.
 It is enough that *some* curve has an automorphism, since the twisted family over that one point's worth of moduli already breaks representability.
