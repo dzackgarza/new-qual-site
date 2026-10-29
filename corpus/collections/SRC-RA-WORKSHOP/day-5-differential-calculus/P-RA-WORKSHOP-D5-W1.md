@@ -31,16 +31,16 @@ For every $a<x<y<b$, one has $f(y)=f(x)$.
 ::: pf-proof
 
 Differentiability of $f$ on $(a,b)$ implies continuity on $[x,y]$ and differentiability on $(x,y)$. The mean value theorem therefore supplies $\xi\in(x,y)$ such that
-\[
+$$
 f(y)-f(x)=f'(\xi)(y-x)=0,
-\]
+$$
 because $f'$ vanishes throughout $(a,b)$.
 
 :::
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
 The function $f$ is constant on $(a,b)$.
 
@@ -49,12 +49,6 @@ The function $f$ is constant on $(a,b)$.
 Choose any $x_0\in(a,b)$. For each $x\in(a,b)$ with $x\ne x_0$, step [](#s1){.pf-ref} applied to the smaller and larger of $x,x_0$ gives $f(x)=f(x_0)$. The equality also holds when $x=x_0$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s2){.pf-ref} is the required conclusion.
 
 :::
 
