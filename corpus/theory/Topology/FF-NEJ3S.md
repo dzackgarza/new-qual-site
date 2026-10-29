@@ -5,7 +5,7 @@ kind: fact
 title: Homology of $\CP^2$
 slogan: '$\CP^2$ has integral homology $\ZZ$ in degrees $0$, $2$, and $4$, and zero otherwise.'
 prompts:
-- What is $H_* \mathbb{CP}^2$?
+- What is $H_* \CP^2$?
 classification:
   areas:
   - topology
