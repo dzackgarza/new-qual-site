@@ -9,9 +9,9 @@ topics:
 
 # Casorati-Weierstrass and Picard
 
-Near an essential singularity, a holomorphic function takes values dense in $\CC$ (Casorati–Weierstrass), and all values of $\CC$ with at most one exception (Picard's great theorem).
+Near an essential singularity, a holomorphic function takes values dense in $\CC$ (Casorati--Weierstrass), and all values of $\CC$ with at most one exception (Picard's great theorem).
 
-## Casorati–Weierstrass
+## Casorati--Weierstrass
 
 [[T-C5VEI]]
 
@@ -22,7 +22,7 @@ The image of a punctured disc at an essential singularity is dense in $\CC$.
 
 :::
 
-::: {.proof title="Casorati–Weierstrass theorem"}
+::: {.proof title="Casorati--Weierstrass theorem"}
 Let $f$ have an essential singularity at $z_0$, and suppose toward a contradiction that there is a punctured neighborhood $\Omega$ of $z_0$, a point $w\in\CC$, and $\varepsilon>0$ with $f(\Omega) \intersect \DD_\varepsilon(w)$ empty, so that $\abs{f(z) - w} \geq \varepsilon$ on $\Omega$.
 
 Define
@@ -38,7 +38,7 @@ If $g(z_0) \neq 0$ then $1/g + w$ is holomorphic near $z_0$ and equals $f$ off $
 
 :::
 
-::: {.proof title="Casorati–Weierstrass theorem, from Gamelin"}
+::: {.proof title="Casorati--Weierstrass theorem, from Gamelin"}
 
 ![](../../../../assets/assets/figures/2021-12-10_18-47-34.png)
 
