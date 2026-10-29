@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-3-03
 kind: problem
-title: Maxim algebraic topology 3.3
+title: The Borsuk–Ulam theorem
 classification:
   areas: [topology]
   topics: []
