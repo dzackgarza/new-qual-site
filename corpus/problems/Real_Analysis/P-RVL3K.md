@@ -17,10 +17,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The first part printed f in L^p(X) and the norm of L^p(X) for a set named E; it now reads L^p(E).
 ---
 
 ::: {.problem}
-- Show that if $E\subseteq \RR^n$ is measurable with $\mu(E) < \infty$ and $f\in L^p(X)$ then $$\norm{f}_{L^p(X)} \converges{p\to\infty}\to \norm{f}_\infty.$$
+- Show that if $E\subseteq \RR^n$ is measurable with $\mu(E) < \infty$ and $f\in L^p(E)$ then $$\norm{f}_{L^p(E)} \converges{p\to\infty}\to \norm{f}_\infty.$$
 - Is it true that the converse to the DCT holds? 
   I.e. if $\int f_n \to \int f$, is there a $g\in L^p$ such that $f_n < g$ a.e. for every $n$?
 - Prove continuity in $L^p$: If $f$ is uniformly continuous then for all $p$, $$\norm{\tau_h f - f}_p \converges{h\to 0}\to 0.$$ 
@@ -87,5 +91,4 @@ The Cauchy--Schwarz inequality gives $\norm{f}_1 \le \mu(X)^{1/2}\norm{f}_2$, an
 :::
 
 ::: {.remark}
-Erratum: the second line of the displayed inclusions should read $\ell^1(\ZZ) \subset \ell^2(\ZZ) \subset \ell^\infty(\ZZ)$. In the first part, $X$ is the set $E$.
-:::
+Erratum: the second line of the displayed inclusions should read $\ell^1(\ZZ) \subset \ell^2(\ZZ) \subset \ell^\infty(\ZZ)$.:::
