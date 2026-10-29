@@ -36,10 +36,10 @@ The hypotheses give $\int_0^1 f(x)\,x^{99}p(x)\,dx = 0$ for every polynomial $p$
 ::: pf-proof
 
 Write $p(x)=\sum_{j=0}^N a_jx^j$. By linearity of integration,
-\[
+$$
 \int_0^1 f(x)x^{99}p(x)\,dx
 =\sum_{j=0}^N a_j\int_0^1 f(x)x^{99+j}\,dx=0.
-\]
+$$
 
 :::
 
@@ -70,10 +70,10 @@ The integrals of $fx^{99}p_k$ converge to the integral of $fx^{99}h$.
 ::: pf-proof
 
 Since $0\le x^{99}\le1$ and $f$ is bounded,
-\[
-\left|\int_0^1 f(x)x^{99}(p_k(x)-h(x))\,dx\right|
-\leq\|f\|_\infty\|p_k-h\|_\infty\longrightarrow0.
-\]
+$$
+\abs{\int_0^1 f(x)x^{99}(p_k(x)-h(x))\,dx}
+\leq\norm{f}_\infty\norm{p_k-h}_\infty\longrightarrow0.
+$$
 
 :::
 
@@ -91,7 +91,7 @@ By step [](#s2-2){.pf-ref} and step [](#s1){.pf-ref}, the integral of $fx^{99}h$
 
 ::: {.pf-step #s3}
 
-Take $h = f$: $\int_0^1 x^{99}f(x)^2\,dx = 0$.
+$\int_0^1 x^{99}f(x)^2\,dx = 0$.
 
 ::: pf-proof
 
@@ -101,7 +101,7 @@ Apply step [](#s2){.pf-ref} with $h=f$, which is continuous by hypothesis.
 
 :::
 
-::: {.pf-step #s4}
+::: pf-step
 
 $f \equiv 0$.
 
@@ -110,12 +110,6 @@ $f \equiv 0$.
 The continuous function $x\mapsto x^{99}f(x)^2$ is nonnegative. If it were positive at some point, continuity would give a subinterval of positive length on which it has a positive lower bound, contradicting step [](#s3){.pf-ref}. Hence $x^{99}f(x)^2=0$ throughout $[0,1]$. For $x>0$ this implies $f(x)=0$, and continuity at zero gives $f(0)=0$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s4){.pf-ref} establishes the required identity $f\equiv0$.
 
 :::
 
