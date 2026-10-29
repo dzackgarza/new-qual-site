@@ -35,7 +35,7 @@ A nonconstant holomorphic function on a connected open set is an open map, and i
 
 ::: {.proof title="Using local degrees"}
 
-![attachments/Pasted image 20211215022640.png](../../../../assets/assets/attachments/Pasted%20image%2020211215022640.png)
+![](../../../../assets/assets/attachments/Pasted%20image%2020211215022640.png)
 
 :::
 
@@ -67,7 +67,7 @@ $$
 .$$
 The integrand $\abs{f(z_0)} - \abs{f(z_0+re^{it})}$ is continuous and nonnegative with integral $0$, so it vanishes, and $\abs f = \abs{f(z_0)}$ on $\DD_R(z_0)$.
 If $\abs{f(z_0)} = 0$ then $f\equiv 0$ there.
-Otherwise $\bar f = \abs{f(z_0)}^2/f$ is holomorphic on $\DD_R(z_0)$, so $f$ and $\bar f$ both satisfy the Cauchy–Riemann equations, which forces $f' = 0$ and $f$ constant on $\DD_R(z_0)$.
+Otherwise $\bar f = \abs{f(z_0)}^2/f$ is holomorphic on $\DD_R(z_0)$, so $f$ and $\bar f$ both satisfy the Cauchy--Riemann equations, which forces $f' = 0$ and $f$ constant on $\DD_R(z_0)$.
 On a connected $\Omega$, the identity principle extends this to $\Omega$.
 
 :::
@@ -126,7 +126,7 @@ The function $f(z) = z$ on $\DD$ is nonconstant, and $\abs f$ has its minimum at
 
 :::
 
-## Exercises
+## Problems
 
 [[P-FHQAB]]
 [[E-7ZCKU]] [[E-RKPAV]]
