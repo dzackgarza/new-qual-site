@@ -35,9 +35,9 @@ Suppose first that \(X\) is dense in a compact metrizable space \(Y\). Every com
 
 Conversely, suppose \(X\) is metrizable and second countable. A metrizable space is regular, so by the Urysohn metrization/embedding theorem in its standard embedding form, a second-countable regular space admits a topological embedding
 \[
-e:X\hookrightarrow [0,1]^{\mathbb Z_+}.
+e:X\hookrightarrow [0,1]^{\ZZ_+}.
 \]
-The Hilbert cube \([0,1]^{\mathbb Z_+}\) is compact metrizable. Therefore
+The Hilbert cube \([0,1]^{\ZZ_+}\) is compact metrizable. Therefore
 \[
 Y=\overline{e(X)}
 \]

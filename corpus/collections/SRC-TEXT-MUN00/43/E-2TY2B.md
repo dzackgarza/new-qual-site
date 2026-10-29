@@ -74,7 +74,7 @@ Part (a): Equivalence relation and well-defined metric $D$.
 :::
 
 ::: pf-step
-**Limit existence in $\mathbb{R}$:** For Cauchy sequences $\mathbf{x}, \mathbf{y}$, the triangle inequality gives $|d(x_n, y_n) - d(x_m, y_m)| \le d(x_n, x_m) + d(y_n, y_m) \to 0$. Thus $(d(x_n, y_n))_{n=1}^\infty$ is a Cauchy sequence in $\mathbb{R}$, hence converges to a unique real limit.
+**Limit existence in $\RR$:** For Cauchy sequences $\mathbf{x}, \mathbf{y}$, the triangle inequality gives $|d(x_n, y_n) - d(x_m, y_m)| \le d(x_n, x_m) + d(y_n, y_m) \to 0$. Thus $(d(x_n, y_n))_{n=1}^\infty$ is a Cauchy sequence in $\RR$, hence converges to a unique real limit.
 :::
 
 ::: pf-step
@@ -119,7 +119,7 @@ Let $[\mathbf{x}] \in Y$ where $\mathbf{x} = (x_1, x_2, \dots) \in \tilde{X}$.
 :::
 
 ::: pf-step
-For each fixed $k \in \mathbb{Z}_+$, $D(h(x_k), [\mathbf{x}]) = \lim_{n \to \infty} d(x_k, x_n)$.
+For each fixed $k \in \ZZ_+$, $D(h(x_k), [\mathbf{x}]) = \lim_{n \to \infty} d(x_k, x_n)$.
 :::
 
 ::: pf-step

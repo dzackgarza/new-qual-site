@@ -18,7 +18,7 @@ audit:
 
 ::: {.exercise}
 
-Check the details of Example 3 of §22: for the map $p: \mathbb{R} \to A = \theset{a, b, c}$ defined by
+Check the details of Example 3 of §22: for the map $p: \RR \to A = \theset{a, b, c}$ defined by
 
 $$
 p(x) =
@@ -36,7 +36,7 @@ determine the quotient topology on $A$ induced by $p$.
 ::: pf
 
 ::: {.pf-step #preimages-classified}
-The preimages of the subsets of $A$ are $p^{-1}(\varnothing)=\varnothing$, $p^{-1}(\{a\})=(0,\infty)$, $p^{-1}(\{b\})=(-\infty,0)$, $p^{-1}(\{a,b\})=\mathbb R-\{0\}$, $p^{-1}(A)=\mathbb R$, which are open, and $p^{-1}(\{c\})=\{0\}$, $p^{-1}(\{a,c\})=[0,\infty)$, $p^{-1}(\{b,c\})=(-\infty,0]$, which are not open.
+The preimages of the subsets of $A$ are $p^{-1}(\varnothing)=\varnothing$, $p^{-1}(\{a\})=(0,\infty)$, $p^{-1}(\{b\})=(-\infty,0)$, $p^{-1}(\{a,b\})=\RR-\{0\}$, $p^{-1}(A)=\RR$, which are open, and $p^{-1}(\{c\})=\{0\}$, $p^{-1}(\{a,c\})=[0,\infty)$, $p^{-1}(\{b,c\})=(-\infty,0]$, which are not open.
 
 ::: pf-proof
 The preimages follow from the definition of $p$.

@@ -33,7 +33,7 @@ Then $m$ and $n$ are uniquely determined by $G$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the orders $m$ and $n$ of the cyclic factors in the free product $G = (\mathbb{Z}/m\mathbb{Z}) * (\mathbb{Z}/n\mathbb{Z})$ are uniquely determined by the isomorphism class of $G$.
+**Goal:** Prove that the orders $m$ and $n$ of the cyclic factors in the free product $G = (\ZZ/m\ZZ) * (\ZZ/n\ZZ)$ are uniquely determined by the isomorphism class of $G$.
 
 ::: pf
 
@@ -53,19 +53,19 @@ By the abelianization property of free products (Theorem 69.2), the abelianizati
 
 ::: pf-step
 
-Since $G_1 \cong \mathbb{Z}/m\mathbb{Z}$ and $G_2 \cong \mathbb{Z}/n\mathbb{Z}$ are abelian, $G_1^{\text{ab}} = G_1$ and $G_2^{\text{ab}} = G_2$.
+Since $G_1 \cong \ZZ/m\ZZ$ and $G_2 \cong \ZZ/n\ZZ$ are abelian, $G_1^{\text{ab}} = G_1$ and $G_2^{\text{ab}} = G_2$.
 
 :::
 
 ::: pf-step
 
-Thus $G / [G, G] \cong (\mathbb{Z}/m\mathbb{Z}) \oplus (\mathbb{Z}/n\mathbb{Z})$.
+Thus $G / [G, G] \cong (\ZZ/m\ZZ) \oplus (\ZZ/n\ZZ)$.
 
 :::
 
 ::: pf-step
 
-The order of this finite abelian group is $|G / [G, G]| = |\mathbb{Z}/m\mathbb{Z}| \cdot |\mathbb{Z}/n\mathbb{Z}| = mn$.
+The order of this finite abelian group is $|G / [G, G]| = |\ZZ/m\ZZ| \cdot |\ZZ/n\ZZ| = mn$.
 
 :::
 
@@ -113,7 +113,7 @@ Any element of $G$ not conjugate to an element of a factor is cyclically reduced
 
 ::: pf-step
 
-Therefore, the set of finite orders of elements in $G$ is $\{d \in \mathbb{Z}_+ \mid d \mid m \text{ or } d \mid n\}$, whose maximum element is $k = \max(m, n)$.
+Therefore, the set of finite orders of elements in $G$ is $\{d \in \ZZ_+ \mid d \mid m \text{ or } d \mid n\}$, whose maximum element is $k = \max(m, n)$.
 
 :::
 

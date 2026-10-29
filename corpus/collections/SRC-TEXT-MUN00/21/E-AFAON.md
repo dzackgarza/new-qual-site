@@ -19,7 +19,7 @@ audit:
 ::: {.exercise}
 
 Theorem.
-Let $x_n \to x$ and $y_n \to y$ in the space $\mathbb{R}$.
+Let $x_n \to x$ and $y_n \to y$ in the space $\RR$.
 Then
 
 $$
@@ -45,7 +45,7 @@ If $F\colon X\to Y$ is continuous and $z_n\to z$ in $X$, then $F(z_n)\to F(z)$ i
 ::: pf
 
 ::: {.pf-step #pair-converges}
-$(x_n,y_n)\to(x,y)$ in $\mathbb R\times\mathbb R$.
+$(x_n,y_n)\to(x,y)$ in $\RR\times\RR$.
 
 ::: pf-proof
 A sequence in a product converges if and only if each coordinate sequence converges, by [[E-AH7RC]].
@@ -54,7 +54,7 @@ A sequence in a product converges if and only if each coordinate sequence conver
 :::
 
 ::: {.pf-step #arithmetic-maps-continuous}
-The maps $S(u,v)=u+v$, $D(u,v)=u-v$, and $M(u,v)=uv$ from $\mathbb R\times\mathbb R$ to $\mathbb R$, and $Q(u,v)=u/v$ from $\mathbb R\times(\mathbb R-\{0\})$ to $\mathbb R$, are continuous.
+The maps $S(u,v)=u+v$, $D(u,v)=u-v$, and $M(u,v)=uv$ from $\RR\times\RR$ to $\RR$, and $Q(u,v)=u/v$ from $\RR\times(\RR-\{0\})$ to $\RR$, are continuous.
 
 ::: pf-proof
 For $(u,v)$ near $(a,b)$,
@@ -73,7 +73,7 @@ which also tends to $0$.
 
 ::: pf-qed
 By steps [](#pair-converges){.pf-ref} and [](#arithmetic-maps-continuous){.pf-ref} and the sequence property of continuous maps, $S(x_n,y_n)\to S(x,y)$, $D(x_n,y_n)\to D(x,y)$, and $M(x_n,y_n)\to M(x,y)$.
-When every $y_n\ne0$ and $y\ne0$, the sequence $(x_n,y_n)$ lies in $\mathbb R\times(\mathbb R-\{0\})$ and converges there to $(x,y)$, so $Q(x_n,y_n)\to Q(x,y)$.
+When every $y_n\ne0$ and $y\ne0$, the sequence $(x_n,y_n)$ lies in $\RR\times(\RR-\{0\})$ and converges there to $(x,y)$, so $Q(x_n,y_n)\to Q(x,y)$.
 :::
 
 :::

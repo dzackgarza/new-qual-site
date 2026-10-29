@@ -14,7 +14,7 @@ review: draft
 
 ::: {.exercise}
 
-Show that $\mathbb{R}^J$ is a Baire space in the box, product, and uniform topologies.
+Show that $\RR^J$ is a Baire space in the box, product, and uniform topologies.
 :::
 
 ::: {.solution}
@@ -24,7 +24,7 @@ For the product topology, let $G_1, G_2, \ldots$ be dense open sets and $U_0$ a 
 \]
 changing only finitely many coordinates at stage $n$ and choosing closed bounded coordinate intervals there. In each coordinate the resulting nested closed intervals have the finite intersection property; choosing one point in every coordinate gives a point of $U_0\cap\bigcap G_n$.
 
-For the box topology, perform the same construction coordinatewise, now shrinking every coordinate interval at stage $n$ and arranging diameter $<1/n$. Completeness of $\mathbb R$ gives a point in every coordinate intersection, hence a point of $U_0\cap\bigcap G_n$.
+For the box topology, perform the same construction coordinatewise, now shrinking every coordinate interval at stage $n$ and arranging diameter $<1/n$. Completeness of $\RR$ gives a point in every coordinate intersection, hence a point of $U_0\cap\bigcap G_n$.
 
 For the uniform topology, the uniform metric
 \[
@@ -32,5 +32,5 @@ For the uniform topology, the uniform metric
 \]
 is complete: a Cauchy sequence is uniformly Cauchy in every coordinate, has coordinatewise limits, and the same uniform estimate gives convergence in $\bar\rho$. Hence the uniform topology is Baire by the complete-metric Baire theorem.
 
-Thus $\mathbb R^J$ is Baire in all three topologies.
+Thus $\RR^J$ is Baire in all three topologies.
 :::

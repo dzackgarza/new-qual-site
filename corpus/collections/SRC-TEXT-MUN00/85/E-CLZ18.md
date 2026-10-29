@@ -22,7 +22,7 @@ Show that $H$ has infinite index in $F$.
 ::: {.solution}
 Consider the right cosets
 \[
-H\beta^n,\qquad n\in\mathbb Z,
+H\beta^n,\qquad n\in\ZZ,
 \]
 where \(H=\langle\alpha\rangle\).
 
@@ -34,7 +34,7 @@ then
 \[
 \beta^{m-n}\in H=\langle\alpha\rangle.
 \]
-Hence for some \(k\in\mathbb Z\),
+Hence for some \(k\in\ZZ\),
 \[
 \beta^{m-n}=\alpha^k.
 \]

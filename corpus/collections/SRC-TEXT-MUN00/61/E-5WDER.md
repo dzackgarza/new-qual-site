@@ -89,7 +89,7 @@ Example of a separating simple closed curve:
 
 ::: pf-step
 
-Choose an open coordinate chart $U \subset T^2$ homeomorphic to $\mathbb{R}^2$.
+Choose an open coordinate chart $U \subset T^2$ homeomorphic to $\RR^2$.
 
 :::
 

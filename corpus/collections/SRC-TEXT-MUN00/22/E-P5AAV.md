@@ -19,20 +19,20 @@ audit:
 
 ::: {.exercise}
 
-The integers $\mathbb{Z}$ are a normal subgroup of $(\mathbb{R}, +)$.
-The quotient $\mathbb{R}/\mathbb{Z}$ is a familiar topological group; what is it?
+The integers $\ZZ$ are a normal subgroup of $(\RR, +)$.
+The quotient $\RR/\ZZ$ is a familiar topological group; what is it?
 :::
 
 ::: {.solution}
-Let $\varphi\colon\mathbb R\to S^1$, $\varphi(t)=e^{2\pi it}$.
+Let $\varphi\colon\RR\to S^1$, $\varphi(t)=e^{2\pi it}$.
 
 ::: pf
 
 ::: {.pf-step #phi-is-quotient-homomorphism}
-$\varphi$ is a continuous surjective homomorphism from $(\mathbb R,+)$ to $(S^1,\cdot)$ with kernel $\mathbb Z$.
+$\varphi$ is a continuous surjective homomorphism from $(\RR,+)$ to $(S^1,\cdot)$ with kernel $\ZZ$.
 
 ::: pf-proof
-$\varphi(s+t)=\varphi(s)\varphi(t)$, every point of $S^1$ is $e^{2\pi it}$ for some $t$, and $e^{2\pi it}=1$ if and only if $t\in\mathbb Z$.
+$\varphi(s+t)=\varphi(s)\varphi(t)$, every point of $S^1$ is $e^{2\pi it}$ for some $t$, and $e^{2\pi it}=1$ if and only if $t\in\ZZ$.
 :::
 
 :::
@@ -41,15 +41,15 @@ $\varphi(s+t)=\varphi(s)\varphi(t)$, every point of $S^1$ is $e^{2\pi it}$ for s
 $\varphi$ is an open map.
 
 ::: pf-proof
-For each $a\in\mathbb R$, $\varphi$ maps $(a,a+1)$ homeomorphically onto the open arc $S^1-\{\varphi(a)\}$, so it maps open subsets of $(a,a+1)$ to open subsets of $S^1$; every open subset of $\mathbb R$ is a union of such sets.
+For each $a\in\RR$, $\varphi$ maps $(a,a+1)$ homeomorphically onto the open arc $S^1-\{\varphi(a)\}$, so it maps open subsets of $(a,a+1)$ to open subsets of $S^1$; every open subset of $\RR$ is a union of such sets.
 :::
 
 :::
 
 ::: pf-qed
-By step [](#phi-is-quotient-homomorphism){.pf-ref} and the first isomorphism theorem, $\varphi$ induces a group isomorphism $\mathbb R/\mathbb Z\to S^1$.
+By step [](#phi-is-quotient-homomorphism){.pf-ref} and the first isomorphism theorem, $\varphi$ induces a group isomorphism $\RR/\ZZ\to S^1$.
 By steps [](#phi-is-quotient-homomorphism){.pf-ref} and [](#phi-is-open){.pf-ref}, $\varphi$ is a quotient map, so this bijection is a homeomorphism.
-Hence $\mathbb R/\mathbb Z\cong\boxed{S^1}$ as topological groups.
+Hence $\RR/\ZZ\cong\boxed{S^1}$ as topological groups.
 :::
 
 :::

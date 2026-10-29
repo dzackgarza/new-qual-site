@@ -18,19 +18,19 @@ audit:
 
 ::: {.exercise}
 
-Consider the lower limit topology on $\mathbb{R}$ and the topology given by the basis $\mathcal{C}$ of Exercise 8 of §13. Determine the closures of the intervals $A = (0, \sqrt{2})$ and $B = (\sqrt{2}, 3)$ in these two topologies.
+Consider the lower limit topology on $\RR$ and the topology given by the basis $\mathcal{C}$ of Exercise 8 of §13. Determine the closures of the intervals $A = (0, \sqrt{2})$ and $B = (\sqrt{2}, 3)$ in these two topologies.
 :::
 
 ::: {.solution}
-Let $\mathcal T_{\mathcal C}$ be the topology with basis $\mathcal C=\{[a,b):a<b,\ a,b\in\mathbb Q\}$ of [[E-NKQY9]].
-Both $\mathbb R_\ell$ and $\mathcal T_{\mathcal C}$ are finer than the standard topology, so each closure lies in the standard closure: $\overline A\subseteq[0,\sqrt2]$ and $\overline B\subseteq[\sqrt2,3]$.
+Let $\mathcal T_{\mathcal C}$ be the topology with basis $\mathcal C=\{[a,b):a<b,\ a,b\in\QQ\}$ of [[E-NKQY9]].
+Both $\RR_\ell$ and $\mathcal T_{\mathcal C}$ are finer than the standard topology, so each closure lies in the standard closure: $\overline A\subseteq[0,\sqrt2]$ and $\overline B\subseteq[\sqrt2,3]$.
 A point $x$ lies in the closure of a set $S$ if and only if every basic open set containing $x$ meets $S$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-In $\mathbb R_\ell$, $\overline A=\boxed{[0,\sqrt2)}$.
+In $\RR_\ell$, $\overline A=\boxed{[0,\sqrt2)}$.
 
 ::: pf-proof
 
@@ -43,7 +43,7 @@ The basic set $[\sqrt2,2)$ contains $\sqrt2$ and misses $A$, so $\sqrt2\notin\ov
 
 ::: {.pf-step #s2}
 
-In $\mathbb R_\ell$, $\overline B=\boxed{[\sqrt2,3)}$.
+In $\RR_\ell$, $\overline B=\boxed{[\sqrt2,3)}$.
 
 ::: pf-proof
 
@@ -94,7 +94,7 @@ The set $[3,4)\in\mathcal C$ contains $3$ and misses $B$, so $3\notin\overline B
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give the closures in $\mathbb R_\ell$, and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give the closures in $\mathcal T_{\mathcal C}$.
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give the closures in $\RR_\ell$, and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give the closures in $\mathcal T_{\mathcal C}$.
 
 :::
 

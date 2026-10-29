@@ -79,7 +79,7 @@ Let $x \in X$ be an arbitrary point.
 :::
 
 ::: pf-step
-Since the original cover $\{U_n\}_{n=1}^\infty$ is point-finite, the index set $S_x = \{n \in \mathbb{Z}_+ \mid x \in U_n\}$ is finite and non-empty.
+Since the original cover $\{U_n\}_{n=1}^\infty$ is point-finite, the index set $S_x = \{n \in \ZZ_+ \mid x \in U_n\}$ is finite and non-empty.
 :::
 
 ::: pf-step
@@ -104,7 +104,7 @@ Thus $x \in V_j$ for some $j \le m$, proving $\bigcup_{n=1}^\infty V_n = X$.
 
 ::: pf-step
 Conclusion:
-The collection $\{V_n\}_{n=1}^\infty$ is an open cover of $X$ satisfying $\overline{V_n} \subseteq U_n$ for every $n \in \mathbb{Z}_+$. Q.E.D.
+The collection $\{V_n\}_{n=1}^\infty$ is an open cover of $X$ satisfying $\overline{V_n} \subseteq U_n$ for every $n \in \ZZ_+$. Q.E.D.
 :::
 
 :::

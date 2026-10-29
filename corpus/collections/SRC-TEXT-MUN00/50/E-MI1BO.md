@@ -18,7 +18,7 @@ audit:
 
 ::: {.exercise}
 
-A space $X$ is said to be locally $m$-euclidean if for each $x \in X$, there is a neighborhood of $x$ that is homeomorphic to an open set of $\mathbb{R}^m$.
+A space $X$ is said to be locally $m$-euclidean if for each $x \in X$, there is a neighborhood of $x$ that is homeomorphic to an open set of $\RR^m$.
 Such a space $X$ automatically satisfies the $T_1$ axiom, but it need not be Hausdorff.
 However, if $X$ is Hausdorff and has a countable basis, then $X$ is called an $m$-manifold.
 
@@ -35,7 +35,7 @@ Show that $X$ is locally compact and locally metrizable.
 
 Let $x\in X$. Since $X$ is locally $m$-euclidean, choose an open neighborhood $U$ of $x$ and a homeomorphism
     $$\phi:U\to V,$$
-    with $V\subset\mathbb R^m$ open.
+    with $V\subset\RR^m$ open.
 
 :::
 
@@ -47,9 +47,9 @@ Local compactness at $x$.
 
 ::: pf-step
 
-In $\mathbb R^m$ there is $r>0$ with
+In $\RR^m$ there is $r>0$ with
     $$\overline{B_{V}( \phi(x),r)}\subset V,$$
-    where $\overline{B_V}$ is closure in $\mathbb R^m$.
+    where $\overline{B_V}$ is closure in $\RR^m$.
 
 :::
 
@@ -57,7 +57,7 @@ In $\mathbb R^m$ there is $r>0$ with
 
 Put
     $$K:=\phi^{-1}\!\left(\overline{B_{V}(\phi(x),r)}\right).$$
-    Then $K\subset U$ and $K$ is compact because $\phi^{-1}$ is a homeomorphism $V\to U$ and closed balls in $\mathbb R^m$ are compact.
+    Then $K\subset U$ and $K$ is compact because $\phi^{-1}$ is a homeomorphism $V\to U$ and closed balls in $\RR^m$ are compact.
 
 :::
 

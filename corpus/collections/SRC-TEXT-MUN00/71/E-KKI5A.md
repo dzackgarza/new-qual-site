@@ -14,8 +14,8 @@ review: draft
 
 ::: {.exercise}
 
-Let $S_n$ be the circle of radius $n$ in $\mathbb{R}^2$ whose center is at the point $(n, 0)$.
-Let $Y$ be the subspace of $\mathbb{R}^2$ that is the union of these circles; let $p$ be their common point.
+Let $S_n$ be the circle of radius $n$ in $\RR^2$ whose center is at the point $(n, 0)$.
+Let $Y$ be the subspace of $\RR^2$ that is the union of these circles; let $p$ be their common point.
 
 (a) Show that $Y$ is not homeomorphic to a countably infinite wedge $X$ of circles, nor to the space of Example 1.
 
@@ -28,9 +28,9 @@ Let \(p=(0,0)\). The circle \(S_n\) has equation
 x^2+y^2=2nx.
 \]
 
-(a) The countably infinite wedge \(\bigvee_{n\ge1}S^1\), with the wedge topology, is not first countable at its wedge point (Exercise 4 of this section). The space \(Y\subset\mathbb R^2\) is metrizable, hence first countable. Therefore these spaces are not homeomorphic.
+(a) The countably infinite wedge \(\bigvee_{n\ge1}S^1\), with the wedge topology, is not first countable at its wedge point (Exercise 4 of this section). The space \(Y\subset\RR^2\) is metrizable, hence first countable. Therefore these spaces are not homeomorphic.
 
-Example 1 of the section is the infinite earring formed by circles of radius \(1/n\). That space is bounded and closed in \(\mathbb R^2\), hence compact. By contrast, \(Y\) is unbounded: \((2n,0)\in S_n\) for every \(n\). Thus \(Y\) is not compact and cannot be homeomorphic to the infinite earring.
+Example 1 of the section is the infinite earring formed by circles of radius \(1/n\). That space is bounded and closed in \(\RR^2\), hence compact. By contrast, \(Y\) is unbounded: \((2n,0)\in S_n\) for every \(n\). Thus \(Y\) is not compact and cannot be homeomorphic to the infinite earring.
 
 (b) For \(N\ge1\), put
 \[

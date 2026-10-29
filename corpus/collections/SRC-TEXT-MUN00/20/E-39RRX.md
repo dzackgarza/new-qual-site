@@ -19,7 +19,7 @@ audit:
 
 ::: {.exercise}
 
-Let $X$ be the subset of $\mathbb{R}^\omega$ consisting of all sequences $\mathbf{x}$ such that $\sum x_i^2$ converges.
+Let $X$ be the subset of $\RR^\omega$ consisting of all sequences $\mathbf{x}$ such that $\sum x_i^2$ converges.
 Then the formula
 
 $$
@@ -27,7 +27,7 @@ d(\mathbf{x}, \mathbf{y}) = \left[ \sum_{i=1}^{\infty} (x_i - y_i)^2 \right]^{1/
 $$
 
 defines a metric on $X$.
-(See Exercise 10.) On $X$ we have the three topologies it inherits from the box, uniform, and product topologies on $\mathbb{R}^\omega$.
+(See Exercise 10.) On $X$ we have the three topologies it inherits from the box, uniform, and product topologies on $\RR^\omega$.
 We have also the topology given by the metric $d$, which we call the $\ell^2$-topology.
 
 (a) Show that on $X$, we have the inclusions
@@ -36,13 +36,13 @@ $$
 \text{box topology} \supset \ell^2\text{-topology} \supset \text{uniform topology}.
 $$
 
-(b) The set $\mathbb{R}^\infty$ of all sequences that are eventually zero is contained in $X$.
-Show that the four topologies that $\mathbb{R}^\infty$ inherits as a subspace of $X$ are all distinct.
+(b) The set $\RR^\infty$ of all sequences that are eventually zero is contained in $X$.
+Show that the four topologies that $\RR^\infty$ inherits as a subspace of $X$ are all distinct.
 
 (c) The set
 
 $$
-H = \prod_{n \in \mathbb{Z}_+} [0, 1/n]
+H = \prod_{n \in \ZZ_+} [0, 1/n]
 $$
 
 is contained in $X$; it is called the Hilbert cube.
@@ -51,7 +51,7 @@ Compare the four topologies that $H$ inherits as a subspace of $X$.
 
 ::: {.solution}
 Write $\mathcal T_{\mathrm{box}}$, $\mathcal T_d$, $\mathcal T_{\bar\rho}$, and $\mathcal T_{\mathrm{prod}}$ for the box, $\ell^2$, uniform, and product topologies on $X$ and on its subspaces.
-On $\mathbb R^\omega$, $\mathcal T_{\mathrm{prod}}\subseteq\mathcal T_{\bar\rho}\subseteq\mathcal T_{\mathrm{box}}$, and these inclusions pass to subspaces.
+On $\RR^\omega$, $\mathcal T_{\mathrm{prod}}\subseteq\mathcal T_{\bar\rho}\subseteq\mathcal T_{\mathrm{box}}$, and these inclusions pass to subspaces.
 
 ::: pf
 
@@ -75,10 +75,10 @@ For $\mathbf y$ in the box neighborhood $U=X\cap\prod_i(x_i-\varepsilon_i,x_i+\v
 :::
 
 ::: {.pf-step #part-b}
-On $\mathbb R^\infty$, $\mathcal T_{\mathrm{prod}}\subsetneq\mathcal T_{\bar\rho}\subsetneq\mathcal T_d\subsetneq\mathcal T_{\mathrm{box}}$.
+On $\RR^\infty$, $\mathcal T_{\mathrm{prod}}\subsetneq\mathcal T_{\bar\rho}\subsetneq\mathcal T_d\subsetneq\mathcal T_{\mathrm{box}}$.
 
 ::: pf-proof
-The inclusions hold by steps [](#uniform-subset-l2){.pf-ref} and [](#l2-subset-box){.pf-ref}. Each is strict because a sequence in $\mathbb R^\infty$ converges to $\mathbf 0$ in the coarser topology but not in the finer one; $\mathbf e_n$ denotes the sequence with $1$ in place $n$ and $0$ elsewhere.
+The inclusions hold by steps [](#uniform-subset-l2){.pf-ref} and [](#l2-subset-box){.pf-ref}. Each is strict because a sequence in $\RR^\infty$ converges to $\mathbf 0$ in the coarser topology but not in the finer one; $\mathbf e_n$ denotes the sequence with $1$ in place $n$ and $0$ elsewhere.
 The sequence $\mathbf e_n$ converges to $\mathbf 0$ coordinatewise, but $\bar\rho(\mathbf e_n,\mathbf 0)=1$.
 The sequence $\mathbf y_n$ with its first $n$ coordinates $1/\sqrt n$ and the rest $0$ has $\bar\rho(\mathbf y_n,\mathbf 0)=1/\sqrt n\to0$, but $d(\mathbf y_n,\mathbf 0)=1$.
 The sequence $\mathbf w_n=\frac1n\mathbf e_n$ has $d(\mathbf w_n,\mathbf 0)=\frac1n\to0$, but $\mathbf w_n$ lies outside the box neighborhood $\prod_i(-\frac1{i^2},\frac1{i^2})$ for every $n\ge2$, since $\frac1n\ge\frac1{n^2}$.

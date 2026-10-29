@@ -18,11 +18,11 @@ audit:
 
 ::: {.exercise}
 
-Consider the following topologies on $\mathbb{R}$:
+Consider the following topologies on $\RR$:
 
 $\mathcal{T}_1$ = the standard topology,
 
-$\mathcal{T}_2$ = the topology of $\mathbb{R}_K$,
+$\mathcal{T}_2$ = the topology of $\RR_K$,
 
 $\mathcal{T}_3$ = the finite complement topology,
 
@@ -34,7 +34,7 @@ Determine, for each of these topologies, which of the others it contains.
 :::
 
 ::: {.solution}
-Write $K=\{1/n : n\in\mathbb Z_+\}$, so that $\mathcal T_2$ has basis the open intervals $(a,b)$ and the sets $(a,b)\setminus K$.
+Write $K=\{1/n : n\in\ZZ_+\}$, so that $\mathcal T_2$ has basis the open intervals $(a,b)$ and the sets $(a,b)\setminus K$.
 
 ::: pf
 
@@ -44,7 +44,7 @@ $\mathcal T_3\subseteq\mathcal T_1$ and $\mathcal T_5\subseteq\mathcal T_1$.
 
 ::: pf-proof
 
-A nonempty $\mathcal T_3$-open set is $\mathbb R\setminus\{x_1,\ldots,x_k\}=\bigcap_i(\mathbb R\setminus\{x_i\})$, a finite intersection of standard open sets.
+A nonempty $\mathcal T_3$-open set is $\RR\setminus\{x_1,\ldots,x_k\}=\bigcap_i(\RR\setminus\{x_i\})$, a finite intersection of standard open sets.
 A basis element of $\mathcal T_5$ is $(-\infty,a)=\bigcup_{n\ge1}(a-n,a)$.
 
 :::
@@ -76,7 +76,7 @@ $\mathcal T_3$ and $\mathcal T_5$ are incomparable.
 ::: pf-proof
 
 The ray $(-\infty,0)\in\mathcal T_5$ has infinite complement, so it is not in $\mathcal T_3$.
-$\mathbb R\setminus\{0\}\in\mathcal T_3$, while every nonempty union of rays $(-\infty,a)$ is $\mathbb R$ or a ray $(-\infty,c)$, so $\mathbb R\setminus\{0\}\notin\mathcal T_5$.
+$\RR\setminus\{0\}\in\mathcal T_3$, while every nonempty union of rays $(-\infty,a)$ is $\RR$ or a ray $(-\infty,c)$, so $\RR\setminus\{0\}\notin\mathcal T_5$.
 
 :::
 

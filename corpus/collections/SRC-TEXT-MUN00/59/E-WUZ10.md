@@ -76,7 +76,7 @@ Fundamental groups of $U, V$, and $U \cap V$:
 ::: {.pf-step #s2-1}
 
 **Fundamental group of $U$:**
-$S_1 \setminus \{q_1\}$ is homeomorphic to $\mathbb{R}^2$, which deformation retracts onto the point $p$.
+$S_1 \setminus \{q_1\}$ is homeomorphic to $\RR^2$, which deformation retracts onto the point $p$.
 This radial deformation retraction extends to $U$ by fixing $S_2$ pointwise.
 Thus $S_2$ is a deformation retract of $U$, so:
 \[
@@ -111,7 +111,7 @@ symmetry with step [](#s2-1){.pf-ref}.
 
 **Fundamental group of $U \cap V$:**
 The intersection is $U \cap V = (S_1 \setminus \{q_1\}) \cup (S_2 \setminus \{q_2\})$.
-Both pieces are homeomorphic to $\mathbb{R}^2$ and share the common point $p$.
+Both pieces are homeomorphic to $\RR^2$ and share the common point $p$.
 The simultaneous radial retraction onto $p$ on each piece shows that $U \cap V$ deformation retracts to the point $\{p\}$.
 Thus $U \cap V$ is contractible, hence path-connected with $\pi_1(U \cap V, p) = 0$.
 

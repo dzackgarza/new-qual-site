@@ -14,11 +14,11 @@ review: draft
 
 ::: {.exercise}
 
-Show that our proof of Ascoli's theorem goes through if $\mathbb{R}^n$ is replaced by any metric space in which all closed bounded subspaces are compact.
+Show that our proof of Ascoli's theorem goes through if $\RR^n$ is replaced by any metric space in which all closed bounded subspaces are compact.
 :::
 
 ::: {.solution}
-In the proof of Ascoli's theorem, the only property of the target $\mathbb R^n$ used beyond metrizability is that for each $x\in X$, pointwise boundedness places the set
+In the proof of Ascoli's theorem, the only property of the target $\RR^n$ used beyond metrizability is that for each $x\in X$, pointwise boundedness places the set
 \[
 \{f(x):f\in\mathcal F\}
 \]

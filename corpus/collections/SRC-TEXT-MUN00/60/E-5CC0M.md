@@ -23,7 +23,7 @@ Show that $p \mid E'$ is not a covering map.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the restriction $q = p|_{E'}: E' \to X = A \vee B$ of the grid covering map to the union of the coordinate axes $E' = (\mathbb{R} \times \{0\}) \cup (\{0\} \times \mathbb{R})$ is not a covering map.
+**Goal:** Prove that the restriction $q = p|_{E'}: E' \to X = A \vee B$ of the grid covering map to the union of the coordinate axes $E' = (\RR \times \{0\}) \cup (\{0\} \times \RR)$ is not a covering map.
 
 ::: pf
 
@@ -36,7 +36,7 @@ Setting and structure of the map $p$:
 
 ::: pf-step
 
-The total space $E = (\mathbb{R} \times \mathbb{Z}) \cup (\mathbb{Z} \times \mathbb{R}) \subset \mathbb{R}^2$ is the infinite grid in the plane.
+The total space $E = (\RR \times \ZZ) \cup (\ZZ \times \RR) \subset \RR^2$ is the infinite grid in the plane.
 
 :::
 
@@ -48,13 +48,13 @@ The base space $X = A \vee B$ is the wedge of two circles $A$ and $B$ intersecti
 
 ::: pf-step
 
-The covering map $p: E \to X$ wraps each horizontal grid line $\mathbb{R} \times \{n\}$ around circle $A$ and each vertical grid line $\{m\} \times \mathbb{R}$ around circle $B$, sending all integer lattice points $\mathbb{Z} \times \mathbb{Z}$ to $x_0$.
+The covering map $p: E \to X$ wraps each horizontal grid line $\RR \times \{n\}$ around circle $A$ and each vertical grid line $\{m\} \times \RR$ around circle $B$, sending all integer lattice points $\ZZ \times \ZZ$ to $x_0$.
 
 :::
 
 ::: pf-step
 
-The subspace $E' = (\mathbb{R} \times \{0\}) \cup (\{0\} \times \mathbb{R})$ is the cross formed by the $x$-axis and $y$-axis.
+The subspace $E' = (\RR \times \{0\}) \cup (\{0\} \times \RR)$ is the cross formed by the $x$-axis and $y$-axis.
 
 :::
 
@@ -71,7 +71,7 @@ Preimage of the basepoint in $E'$:
 
 ::: pf-step
 
-The preimage $q^{-1}(x_0) = E' \cap (\mathbb{Z} \times \mathbb{Z}) = (\mathbb{Z} \times \{0\}) \cup (\{0\} \times \mathbb{Z})$.
+The preimage $q^{-1}(x_0) = E' \cap (\ZZ \times \ZZ) = (\ZZ \times \{0\}) \cup (\{0\} \times \ZZ)$.
 
 :::
 
@@ -83,7 +83,7 @@ At the origin $(0, 0) \in E'$, both the horizontal and vertical axes meet, formi
 
 ::: pf-step
 
-For any non-zero point $(n, 0) \in E'$ ($n \in \mathbb{Z} \setminus \{0\}$), $E'$ consists purely of the horizontal segment $(n - \varepsilon, n + \varepsilon) \times \{0\}$, which has 2 branches (homeomorphic to an open interval).
+For any non-zero point $(n, 0) \in E'$ ($n \in \ZZ \setminus \{0\}$), $E'$ consists purely of the horizontal segment $(n - \varepsilon, n + \varepsilon) \times \{0\}$, which has 2 branches (homeomorphic to an open interval).
 
 :::
 
@@ -100,7 +100,7 @@ Failure of local homeomorphy and even covering:
 
 ::: pf-step
 
-Let $n \in \mathbb{Z} \setminus \{0\}$ and consider $e = (n, 0) \in q^{-1}(x_0)$.
+Let $n \in \ZZ \setminus \{0\}$ and consider $e = (n, 0) \in q^{-1}(x_0)$.
 
 :::
 

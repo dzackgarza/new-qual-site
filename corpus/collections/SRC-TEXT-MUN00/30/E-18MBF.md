@@ -61,7 +61,7 @@ Countable subcover of $X$:
 There exists a countable sequence of points $(x_n)_{n=1}^\infty$ in $X$ such that $X = \bigcup_{n=1}^\infty U_{x_n}$.
 
 ::: pf-proof
-The collection $\{U_x : x \in X\}$ is an open cover of $X$. Since $X$ is Lindelöf, there exists a countable subcover $\{U_{x_n} : n \in \mathbb{Z}_+\}$.
+The collection $\{U_x : x \in X\}$ is an open cover of $X$. Since $X$ is Lindelöf, there exists a countable subcover $\{U_{x_n} : n \in \ZZ_+\}$.
 :::
 
 :::
@@ -77,7 +77,7 @@ Countability: Each $\mathcal{A}_{x_n}$ is finite by step [](#slices-finite-subco
 :::
 
 ::: pf-step
-Covering property: For any $(x, y) \in X \times Y$, step [](#countable-subcover-of-x){.pf-ref} guarantees $x \in U_{x_m}$ for some $m \in \mathbb{Z}_+$.
+Covering property: For any $(x, y) \in X \times Y$, step [](#countable-subcover-of-x){.pf-ref} guarantees $x \in U_{x_m}$ for some $m \in \ZZ_+$.
 :::
 
 ::: pf-step

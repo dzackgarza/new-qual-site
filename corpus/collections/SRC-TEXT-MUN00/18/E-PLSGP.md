@@ -24,11 +24,11 @@ audit:
 
 ::: {.exercise}
 
-Prove that for functions $f: \mathbb{R} \to \mathbb{R}$, the $\epsilon$-$\delta$ definition of continuity implies the open set definition.
+Prove that for functions $f: \RR \to \RR$, the $\epsilon$-$\delta$ definition of continuity implies the open set definition.
 :::
 
 ::: {.solution}
-Assume the epsilon-delta definition. Let $V\subseteq\mathbb R$ be open. We show $f^{-1}(V)$ is open.
+Assume the epsilon-delta definition. Let $V\subseteq\RR$ be open. We show $f^{-1}(V)$ is open.
 
 Take $x\in f^{-1}(V)$. Since $f(x)\in V$ and $V$ is open, choose $\varepsilon>0$ with
 \[

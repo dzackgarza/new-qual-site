@@ -32,7 +32,7 @@ D=\{x_{n,j}:n\ge1,1\le j\le k_n\}.
 \]
 Then \(D\) is countable and dense. The family of balls
 \[
-B(d,q),\qquad d\in D,\ q\in\mathbb Q_{>0},
+B(d,q),\qquad d\in D,\ q\in\QQ_{>0},
 \]
 is countable and forms a basis for the metric topology. Thus \(X\) has a countable basis.
 

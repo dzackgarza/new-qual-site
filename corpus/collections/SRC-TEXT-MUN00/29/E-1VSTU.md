@@ -29,29 +29,29 @@ $$
 \alpha \preceq \beta \implies x_\beta \in U.
 $$
 
-Show that these definitions reduce to familiar ones when $J = \mathbb{Z}_+$.
+Show that these definitions reduce to familiar ones when $J = \ZZ_+$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that when the directed set $J$ is the set of positive integers $\mathbb{Z}_+$ equipped with the standard ordering $\le$, the definition of a net and net convergence in a topological space $X$ coincides precisely with the classical definition of a sequence and sequence convergence.
+**Goal:** Prove that when the directed set $J$ is the set of positive integers $\ZZ_+$ equipped with the standard ordering $\le$, the definition of a net and net convergence in a topological space $X$ coincides precisely with the classical definition of a sequence and sequence convergence.
 
 ::: pf
 
 ::: pf-step
-$\mathbb{Z}_+$ is a directed set under the standard ordering $\le$:
+$\ZZ_+$ is a directed set under the standard ordering $\le$:
 
 ::: pf-proof
 
 ::: pf-step
-The standard relation $\le$ on $\mathbb{Z}_+$ is reflexive ($n \le n$) and transitive ($m \le n \land n \le k \implies m \le k$).
+The standard relation $\le$ on $\ZZ_+$ is reflexive ($n \le n$) and transitive ($m \le n \land n \le k \implies m \le k$).
 :::
 
 ::: pf-step
-For any two elements $m, n \in \mathbb{Z}_+$, choose $k = \max\{m, n\} \in \mathbb{Z}_+$. Then $m \le k$ and $n \le k$.
+For any two elements $m, n \in \ZZ_+$, choose $k = \max\{m, n\} \in \ZZ_+$. Then $m \le k$ and $n \le k$.
 :::
 
 ::: pf-step
-Therefore $(\mathbb{Z}_+, \le)$ is a directed set.
+Therefore $(\ZZ_+, \le)$ is a directed set.
 :::
 
 :::
@@ -59,20 +59,20 @@ Therefore $(\mathbb{Z}_+, \le)$ is a directed set.
 :::
 
 ::: pf-step
-A net indexed by $\mathbb{Z}_+$ is a sequence:
+A net indexed by $\ZZ_+$ is a sequence:
 
 ::: pf-proof
 
 ::: pf-step
-A net in $X$ indexed by $\mathbb{Z}_+$ is a function $f: \mathbb{Z}_+ \to X$.
+A net in $X$ indexed by $\ZZ_+$ is a function $f: \ZZ_+ \to X$.
 :::
 
 ::: pf-step
-By standard definition, a sequence in $X$ is a function from $\mathbb{Z}_+$ into $X$, written as $(x_n)_{n \in \mathbb{Z}_+}$ where $x_n = f(n)$.
+By standard definition, a sequence in $X$ is a function from $\ZZ_+$ into $X$, written as $(x_n)_{n \in \ZZ_+}$ where $x_n = f(n)$.
 :::
 
 ::: pf-step
-Thus nets indexed by $\mathbb{Z}_+$ and sequences in $X$ are the exact same objects.
+Thus nets indexed by $\ZZ_+$ and sequences in $X$ are the exact same objects.
 :::
 
 :::
@@ -80,12 +80,12 @@ Thus nets indexed by $\mathbb{Z}_+$ and sequences in $X$ are the exact same obje
 :::
 
 ::: pf-step
-Net convergence on $\mathbb{Z}_+$ is sequence convergence:
+Net convergence on $\ZZ_+$ is sequence convergence:
 
 ::: pf-proof
 
 ::: pf-step
-Under the net convergence definition with $(J, \preceq) = (\mathbb{Z}_+, \le)$, $(x_n) \to x$ if and only if for every neighborhood $U$ of $x$, there exists $N \in \mathbb{Z}_+$ such that:
+Under the net convergence definition with $(J, \preceq) = (\ZZ_+, \le)$, $(x_n) \to x$ if and only if for every neighborhood $U$ of $x$, there exists $N \in \ZZ_+$ such that:
 $$N \le n \implies x_n \in U.$$
 :::
 
@@ -103,7 +103,7 @@ These two conditions are logically and syntactically identical.
 
 ::: pf-step
 Conclusion:
-The theory of nets on the directed set $(\mathbb{Z}_+, \le)$ reduces directly to the standard theory of sequences. Q.E.D.
+The theory of nets on the directed set $(\ZZ_+, \le)$ reduces directly to the standard theory of sequences. Q.E.D.
 :::
 
 :::

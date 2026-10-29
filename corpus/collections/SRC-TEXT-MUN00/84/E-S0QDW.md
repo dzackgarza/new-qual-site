@@ -18,7 +18,7 @@ Give an example to show that the second part of Lemma 84.2 need not hold if $T$ 
 :::
 
 ::: {.solution}
-Let \(T\) be the bi-infinite linear graph with vertex set \(\mathbb Z\) and one edge joining \(n\) to \(n+1\) for each integer \(n\). This graph is connected and contains no closed reduced edge path, so it is a tree.
+Let \(T\) be the bi-infinite linear graph with vertex set \(\ZZ\) and one edge joining \(n\) to \(n+1\) for each integer \(n\). This graph is connected and contains no closed reduced edge path, so it is a tree.
 
 Suppose the converse conclusion of Lemma 84.2 held: suppose
 \[

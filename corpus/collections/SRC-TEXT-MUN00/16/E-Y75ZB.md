@@ -31,17 +31,17 @@ $$
 \theset{(a, b) \times (c, d) \mid a < b \text{ and } c < d, \text{ and } a, b, c, d \text{ rational}}
 $$
 
-is a basis for $\mathbb{R}^2$.
+is a basis for $\RR^2$.
 :::
 
 ::: {.solution}
-The collection is countable because it is indexed by a subset of $\mathbb Q^4$.
+The collection is countable because it is indexed by a subset of $\QQ^4$.
 
-Let $U\subseteq\mathbb R^2$ be open and $(x,y)\in U$. Choose an ordinary open rectangle
+Let $U\subseteq\RR^2$ be open and $(x,y)\in U$. Choose an ordinary open rectangle
 \[
 (x-\varepsilon,x+\varepsilon)\times(y-\delta,y+\delta)\subseteq U.
 \]
-By density of $\mathbb Q$, choose rationals
+By density of $\QQ$, choose rationals
 \[
 a<x<b,\qquad c<y<d
 \]
@@ -54,5 +54,5 @@ Then
 \[
 (x,y)\in(a,b)\times(c,d)\subseteq U.
 \]
-By the basis criterion, the stated countable collection is a basis for the standard topology on $\mathbb R^2$.
+By the basis criterion, the stated countable collection is a basis for the standard topology on $\RR^2$.
 :::

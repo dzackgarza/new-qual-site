@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-7-1
 kind: problem
-title: Countability of $\mathbb{Q}$
+title: Countability of $\QQ$
 classification:
   areas:
   - topology
@@ -25,24 +25,24 @@ audit:
 
 ::: {.exercise}
 
-Show that $\mathbb{Q}$ is countably infinite.
+Show that $\QQ$ is countably infinite.
 :::
 
 ::: {.solution}
 The positive rationals are countable. Indeed, the map
 \[
-q:\mathbb Z_+\times\mathbb Z_+\longrightarrow\mathbb Q_+,
+q:\ZZ_+\times\ZZ_+\longrightarrow\QQ_+,
 \qquad
 q(m,n)=\frac mn,
 \]
-is surjective, and \(\mathbb Z_+\times\mathbb Z_+\) is countable. Hence \(\mathbb Q_+\) is countable.
+is surjective, and \(\ZZ_+\times\ZZ_+\) is countable. Hence \(\QQ_+\) is countable.
 
 Now
 \[
-\mathbb Q=\mathbb Q_+\cup\{0\}\cup(-\mathbb Q_+),
+\QQ=\QQ_+\cup\{0\}\cup(-\QQ_+),
 \]
-a finite union of countable sets, so \(\mathbb Q\) is countable. It is infinite because it contains \(\mathbb Z_+\). Therefore
+a finite union of countable sets, so \(\QQ\) is countable. It is infinite because it contains \(\ZZ_+\). Therefore
 \[
-\boxed{\mathbb Q\text{ is countably infinite}.}
+\boxed{\QQ\text{ is countably infinite}.}
 \]
 :::

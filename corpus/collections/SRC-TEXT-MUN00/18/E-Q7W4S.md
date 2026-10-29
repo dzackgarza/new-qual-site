@@ -25,7 +25,7 @@ audit:
 
 ::: {.exercise}
 
-Let $F: \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ be defined by the equation
+Let $F: \RR \times \RR \to \RR$ be defined by the equation
 
 $$
 F(x \times y) =
@@ -37,13 +37,13 @@ $$
 
 (a) Show that $F$ is continuous in each variable separately.
 
-(b) Compute the function $g: \mathbb{R} \to \mathbb{R}$ defined by $g(x) = F(x \times x)$.
+(b) Compute the function $g: \RR \to \RR$ defined by $g(x) = F(x \times x)$.
 
 (c) Show that $F$ is not continuous.
 :::
 
 ::: {.solution}
-(a) Fix $x_0\in\mathbb R$. If $x_0=0$, then
+(a) Fix $x_0\in\RR$. If $x_0=0$, then
 \[
 y\longmapsto F(0,y)
 \]
@@ -62,5 +62,5 @@ g(x)=F(x,x)=
 \end{cases}
 \]
 
-(c) The diagonal map $d:\mathbb R\to\mathbb R^2$, $d(x)=(x,x)$, is continuous. If $F$ were continuous, then $g=F\circ d$ would be continuous. But $g(x)=1/2$ for all $x\ne0$ and $g(0)=0$, so $g$ is discontinuous at $0$. Hence $F$ is not continuous.
+(c) The diagonal map $d:\RR\to\RR^2$, $d(x)=(x,x)$, is continuous. If $F$ were continuous, then $g=F\circ d$ would be continuous. But $g(x)=1/2$ for all $x\ne0$ and $g(0)=0$, so $g$ is discontinuous at $0$. Hence $F$ is not continuous.
 :::

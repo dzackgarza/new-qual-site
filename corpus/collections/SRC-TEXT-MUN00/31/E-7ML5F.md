@@ -55,7 +55,7 @@ Neither direction holds:
 ::: pf-proof
 
 ::: pf-step
-**Forward failure:** The standard Euclidean topology $\mathcal{T}$ on $\mathbb{R}$ is regular (and metric). The $K$-topology $\mathcal{T}' = \mathcal{T}_K$ is strictly finer than $\mathcal{T}$, but $(\mathbb{R}, \mathcal{T}_K)$ is not regular because the closed set $K = \{1/n \mid n \in \mathbb{Z}_+\}$ and the point $0 \notin K$ cannot be separated by disjoint open sets in $\mathcal{T}_K$.
+**Forward failure:** The standard Euclidean topology $\mathcal{T}$ on $\RR$ is regular (and metric). The $K$-topology $\mathcal{T}' = \mathcal{T}_K$ is strictly finer than $\mathcal{T}$, but $(\RR, \mathcal{T}_K)$ is not regular because the closed set $K = \{1/n \mid n \in \ZZ_+\}$ and the point $0 \notin K$ cannot be separated by disjoint open sets in $\mathcal{T}_K$.
 :::
 
 ::: pf-step
@@ -75,7 +75,7 @@ Neither direction holds:
 ::: pf-proof
 
 ::: pf-step
-**Forward failure:** The standard Euclidean topology $\mathcal{T}$ on $\mathbb{R}$ is normal, but the strictly finer $K$-topology $\mathcal{T}_K$ is not even regular, and therefore not normal.
+**Forward failure:** The standard Euclidean topology $\mathcal{T}$ on $\RR$ is normal, but the strictly finer $K$-topology $\mathcal{T}_K$ is not even regular, and therefore not normal.
 :::
 
 ::: pf-step

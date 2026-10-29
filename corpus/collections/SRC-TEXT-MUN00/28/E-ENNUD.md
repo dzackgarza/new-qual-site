@@ -26,7 +26,7 @@ e_n=(0,\dots,0,1,0,\dots)\in[0,1]^\omega
 \]
 with the \(1\) in the \(n\)-th coordinate, and set
 \[
-A=\{e_n:n\in\mathbb Z_+\}.
+A=\{e_n:n\in\ZZ_+\}.
 \]
 For \(m\ne n\), the uniform distance is
 \[

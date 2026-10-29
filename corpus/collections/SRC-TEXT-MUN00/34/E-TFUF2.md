@@ -28,19 +28,19 @@ Check the details of the proof of Theorem 34.2 (the imbedding theorem for a spac
 :::
 
 ::: {.solution}
-Let \(\{f_n:X\to\mathbb R\}_{n\ge1}\) be a countable family of continuous functions that separates points from closed sets, and define
+Let \(\{f_n:X\to\RR\}_{n\ge1}\) be a countable family of continuous functions that separates points from closed sets, and define
 \[
-F:X\longrightarrow\mathbb R^\omega,
+F:X\longrightarrow\RR^\omega,
 \qquad
 F(x)=(f_1(x),f_2(x),\ldots),
 \]
-where \(\mathbb R^\omega\) has the product topology. We verify that \(F\) is an embedding.
+where \(\RR^\omega\) has the product topology. We verify that \(F\) is an embedding.
 
 First, \(F\) is continuous. A subbasic open set in the product has the form
 \[
 \pi_n^{-1}(U),
 \]
-with \(U\subset\mathbb R\) open, and
+with \(U\subset\RR\) open, and
 \[
 F^{-1}(\pi_n^{-1}(U))=f_n^{-1}(U),
 \]
@@ -52,7 +52,7 @@ f_n(x)\notin \overline{f_n(\{y\})}=\{f_n(y)\}.
 \]
 Thus \(F(x)\ne F(y)\).
 
-It remains to prove that \(F^{-1}:F(X)\to X\) is continuous. It is enough to show that for every open \(U\subset X\) and every \(x\in U\), there is a product-open set \(W\subset\mathbb R^\omega\) such that
+It remains to prove that \(F^{-1}:F(X)\to X\) is continuous. It is enough to show that for every open \(U\subset X\) and every \(x\in U\), there is a product-open set \(W\subset\RR^\omega\) such that
 \[
 F(x)\in W
 \quad\text{and}\quad
@@ -62,7 +62,7 @@ Let \(C=X-U\), a closed set not containing \(x\). By separation, choose \(f_n\) 
 \[
 f_n(x)\notin\overline{f_n(C)}.
 \]
-There is therefore an open interval \(V\subset\mathbb R\) containing \(f_n(x)\) and disjoint from \(f_n(C)\). Set
+There is therefore an open interval \(V\subset\RR\) containing \(f_n(x)\) and disjoint from \(f_n(C)\). Set
 \[
 W=\pi_n^{-1}(V).
 \]
@@ -70,5 +70,5 @@ Then \(W\) is product-open, contains \(F(x)\), and if \(z\in F^{-1}(W)\), then \
 \[
 F(U)=F(X)\cap \bigcup_{x\in U}W_x
 \]
-is open in \(F(X)\). Therefore \(F\) is a homeomorphism from \(X\) onto the subspace \(F(X)\subset\mathbb R^\omega\), as required.
+is open in \(F(X)\). Therefore \(F\) is a homeomorphism from \(X\) onto the subspace \(F(X)\subset\RR^\omega\), as required.
 :::

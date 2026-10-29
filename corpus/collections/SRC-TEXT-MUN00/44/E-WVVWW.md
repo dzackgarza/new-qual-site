@@ -24,7 +24,7 @@ audit:
 
 ::: {.exercise}
 
-Show there is a continuous surjective map $f: \mathbb{R} \to \mathbb{R}^n$.
+Show there is a continuous surjective map $f: \RR \to \RR^n$.
 :::
 
 ::: {.solution}
@@ -37,13 +37,13 @@ and modify its parametrization so that it starts and ends at the origin: use the
 q_m(0)=q_m(1)=0.
 \]
 
-Define \(F:[0,\infty)\to\mathbb R^n\) by setting \(F(0)=0\) and, for each integer \(m\ge1\),
+Define \(F:[0,\infty)\to\RR^n\) by setting \(F(0)=0\) and, for each integer \(m\ge1\),
 \[
 F(t)=q_m(t-m+1)\qquad(m-1\le t\le m).
 \]
-The definitions agree at integer endpoints, so the pasting lemma gives continuity. Since the cubes \([-m,m]^n\) exhaust \(\mathbb R^n\), \(F\) is surjective. Finally define
+The definitions agree at integer endpoints, so the pasting lemma gives continuity. Since the cubes \([-m,m]^n\) exhaust \(\RR^n\), \(F\) is surjective. Finally define
 \[
-f(t)=F(|t|),\qquad t\in\mathbb R.
+f(t)=F(|t|),\qquad t\in\RR.
 \]
-Then \(f:\mathbb R\to\mathbb R^n\) is continuous and surjective.
+Then \(f:\RR\to\RR^n\) is continuous and surjective.
 :::

@@ -18,11 +18,11 @@ audit:
 
 ::: {.exercise}
 
-Find a function $f: \mathbb{R} \to \mathbb{R}$ that is continuous at precisely one point.
+Find a function $f: \RR \to \RR$ that is continuous at precisely one point.
 :::
 
 ::: {.solution}
-Define $f\colon\mathbb R\to\mathbb R$ by $f(x)=x$ for $x\in\mathbb Q$ and $f(x)=0$ for $x\notin\mathbb Q$.
+Define $f\colon\RR\to\RR$ by $f(x)=x$ for $x\in\QQ$ and $f(x)=0$ for $x\notin\QQ$.
 
 ::: pf
 
@@ -40,8 +40,8 @@ Given $\varepsilon>0$, take $\delta=\varepsilon$: if $\abs x<\delta$, then $\abs
 $f$ is not continuous at any $x_0\ne0$.
 
 ::: pf-proof
-If $x_0\in\mathbb Q$, choose irrationals $y_n\to x_0$; then $f(y_n)=0\not\to x_0=f(x_0)$.
-If $x_0\notin\mathbb Q$, choose rationals $q_n\to x_0$; then $f(q_n)=q_n\to x_0\ne0=f(x_0)$.
+If $x_0\in\QQ$, choose irrationals $y_n\to x_0$; then $f(y_n)=0\not\to x_0=f(x_0)$.
+If $x_0\notin\QQ$, choose rationals $q_n\to x_0$; then $f(q_n)=q_n\to x_0\ne0=f(x_0)$.
 In both cases a sequence converging to $x_0$ has images not converging to $f(x_0)$.
 :::
 

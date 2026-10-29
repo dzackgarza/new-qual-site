@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-4-1
 kind: problem
-title: Laws of algebra for $\mathbb{R}$ from the field axioms
+title: Laws of algebra for $\RR$ from the field axioms
 classification:
   areas:
   - topology
@@ -25,7 +25,7 @@ audit:
 
 ::: {.exercise}
 
-Prove the following "laws of algebra" for $\mathbb{R}$, using only axioms (1)-(5):
+Prove the following "laws of algebra" for $\RR$, using only axioms (1)-(5):
 
 (a) If $x + y = x$, then $y = 0$ .
 

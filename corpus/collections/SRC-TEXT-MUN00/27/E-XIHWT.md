@@ -66,9 +66,9 @@ a\mapsto d(a,F)
 \]
 attains a positive minimum \(\delta>0\) on \(A\). Then \(U(A,\delta)\subset U\): if \(x\notin U\), then \(x\in F\), so \(d(x,A)\ge\delta\).
 
-(e) Take \(X=\mathbb R^2\),
+(e) Take \(X=\RR^2\),
 \[
-A=\{(x,0):x\in\mathbb R\},
+A=\{(x,0):x\in\RR\},
 \]
 which is closed but not compact, and
 \[

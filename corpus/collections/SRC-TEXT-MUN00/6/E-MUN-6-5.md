@@ -51,7 +51,7 @@ The empty set $\emptyset$ has cardinality $0$, which is finite.
 
 ::: pf-step
 
-However, $A$ can be chosen to be an arbitrary infinite set (for example, $A = \mathbb{N}$).
+However, $A$ can be chosen to be an arbitrary infinite set (for example, $A = \NN$).
 
 :::
 

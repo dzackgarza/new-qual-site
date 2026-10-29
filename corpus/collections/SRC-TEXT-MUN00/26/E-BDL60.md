@@ -14,13 +14,13 @@ review: draft
 
 ::: {.exercise}
 
-(a) Show that in the finite complement topology on $\mathbb{R}$, every subspace is compact.
+(a) Show that in the finite complement topology on $\RR$, every subspace is compact.
 
-(b) If $\mathbb{R}$ has the topology consisting of all sets $A$ such that $\mathbb{R} - A$ is either countable or all of $\mathbb{R}$, is $[0, 1]$ a compact subspace?
+(b) If $\RR$ has the topology consisting of all sets $A$ such that $\RR - A$ is either countable or all of $\RR$, is $[0, 1]$ a compact subspace?
 :::
 
 ::: {.solution}
-(a) Let \(Y\subset \mathbb R\), with the subspace topology inherited from the finite-complement topology on \(\mathbb R\). If \(Y\) is finite it is compact. Suppose \(Y\) is infinite. Then a nonempty open set in \(Y\) has the form
+(a) Let \(Y\subset \RR\), with the subspace topology inherited from the finite-complement topology on \(\RR\). If \(Y\) is finite it is compact. Suppose \(Y\) is infinite. Then a nonempty open set in \(Y\) has the form
 \[
 Y\cap U=Y\setminus F
 \]

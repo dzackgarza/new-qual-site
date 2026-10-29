@@ -28,7 +28,7 @@ audit:
 (a) Let $X$ be a regular space.
 If $X$ is a countable union of compact subspaces of $X$, then $X$ is paracompact.
 
-(b) Show that $\mathbb{R}^\infty$ is paracompact as a subspace of $\mathbb{R}^\omega$ in the box topology.
+(b) Show that $\RR^\infty$ is paracompact as a subspace of $\RR^\omega$ in the box topology.
 :::
 
 ::: {.solution}
@@ -48,13 +48,13 @@ W_n=U_n-\bigcup_{i<n}\overline{V_i}.
 \]
 Each \(W_n\) is open and refines \(\mathcal U\). The family covers \(X\): for \(x\), choose the least \(i\) such that \(x\in\overline{V_i}\); then \(x\in U_i\) and \(x\notin\overline{V_j}\) for \(j<i\), hence \(x\in W_i\). It is locally finite: if \(x\in V_m\), then \(V_m\cap W_n=\varnothing\) for every \(n>m\), since \(W_n\) omits \(\overline{V_m}\). Thus \(V_m\) meets only \(W_1,\ldots,W_m\). Hence \(X\) is paracompact.
 
-(b) Let \(\mathbb R^\infty\) be the eventually-zero sequences, with the topology inherited from the box topology on \(\mathbb R^\omega\). For \(n,m\ge1\), put
+(b) Let \(\RR^\infty\) be the eventually-zero sequences, with the topology inherited from the box topology on \(\RR^\omega\). For \(n,m\ge1\), put
 \[
 K_{n,m}=[-m,m]^n\times\{0\}\times\{0\}\times\cdots.
 \]
 On \(K_{n,m}\), the box-subspace topology is just the usual finite product topology, so \(K_{n,m}\) is compact. Moreover
 \[
-\mathbb R^\infty=\bigcup_{n,m\ge1}K_{n,m}.
+\RR^\infty=\bigcup_{n,m\ge1}K_{n,m}.
 \]
-The box product \(\mathbb R^\omega\) is completely regular, hence its subspace \(\mathbb R^\infty\) is regular. Therefore part (a) applies, and \(\mathbb R^\infty\) is paracompact.
+The box product \(\RR^\omega\) is completely regular, hence its subspace \(\RR^\infty\) is regular. Therefore part (a) applies, and \(\RR^\infty\) is paracompact.
 :::

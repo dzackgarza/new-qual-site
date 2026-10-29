@@ -33,7 +33,7 @@ C_m\oplus C_n\cong C_{mn}.
 \]
 Equivalently, this is the Chinese remainder isomorphism
 \[
-\mathbb Z/(mn)\longrightarrow \mathbb Z/m\oplus\mathbb Z/n,
+\ZZ/(mn)\longrightarrow \ZZ/m\oplus\ZZ/n,
 \qquad [a]_{mn}\longmapsto([a]_m,[a]_n).
 \]
 

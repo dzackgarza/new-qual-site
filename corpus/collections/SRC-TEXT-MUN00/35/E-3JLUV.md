@@ -24,11 +24,11 @@ Show that the following are equivalent:
 
 (i) $X$ is bounded under every metric that gives the topology of $X$.
 
-(ii) Every continuous function $\phi: X \to \mathbb{R}$ is bounded.
+(ii) Every continuous function $\phi: X \to \RR$ is bounded.
 
 (iii) $X$ is limit point compact.
 
-[Hint: If $\phi: X \to \mathbb{R}$ is a continuous function, then $F(x) = x \times \phi(x)$ is an imbedding of $X$ in $X \times \mathbb{R}$. If $A$ is an infinite subset of $X$ having no limit point, let $\phi$ be a surjection of $A$ onto $\mathbb{Z}_+$.]
+[Hint: If $\phi: X \to \RR$ is a continuous function, then $F(x) = x \times \phi(x)$ is an imbedding of $X$ in $X \times \RR$. If $A$ is an infinite subset of $X$ having no limit point, let $\phi$ be a surjection of $A$ onto $\ZZ_+$.]
 :::
 
 ::: {.solution}
@@ -42,7 +42,7 @@ Show that the following are equivalent:
 ::: pf-proof
 
 ::: pf-step
-Suppose for contradiction that there exists a continuous function $\phi: X \to \mathbb{R}$ that is unbounded.
+Suppose for contradiction that there exists a continuous function $\phi: X \to \RR$ that is unbounded.
 :::
 
 ::: pf-step
@@ -55,15 +55,15 @@ $$d(x, y) = d_0(x, y) + |\phi(x) - \phi(y)|.$$
 :::
 
 ::: pf-step
-$d$ is a metric on $X$: positivity, non-degeneracy, symmetry, and the triangle inequality hold immediately from the properties of $d_0$ and the absolute value metric on $\mathbb{R}$.
+$d$ is a metric on $X$: positivity, non-degeneracy, symmetry, and the triangle inequality hold immediately from the properties of $d_0$ and the absolute value metric on $\RR$.
 :::
 
 ::: pf-step
-$d$ generates the original topology of $X$: the map $F(x) = (x, \phi(x))$ is a topological embedding of $X$ into $(X, d_0) \times \mathbb{R}$ with the $\ell_1$ product metric $d((x_1, t_1), (x_2, t_2)) = d_0(x_1, x_2) + |t_1 - t_2|$.
+$d$ generates the original topology of $X$: the map $F(x) = (x, \phi(x))$ is a topological embedding of $X$ into $(X, d_0) \times \RR$ with the $\ell_1$ product metric $d((x_1, t_1), (x_2, t_2)) = d_0(x_1, x_2) + |t_1 - t_2|$.
 :::
 
 ::: pf-step
-Since $\phi(X)$ is unbounded in $\mathbb{R}$, $\operatorname{diam}_d(X) \ge \sup_{x, y \in X} |\phi(x) - \phi(y)| = \infty$.
+Since $\phi(X)$ is unbounded in $\RR$, $\operatorname{diam}_d(X) \ge \sup_{x, y \in X} |\phi(x) - \phi(y)| = \infty$.
 :::
 
 ::: pf-step
@@ -71,7 +71,7 @@ Thus $X$ is unbounded under the compatible metric $d$, contradicting (i).
 :::
 
 ::: pf-step
-Therefore every continuous function $\phi: X \to \mathbb{R}$ must be bounded.
+Therefore every continuous function $\phi: X \to \RR$ must be bounded.
 :::
 
 :::
@@ -96,7 +96,7 @@ Let $A_0 = \{a_1, a_2, \dots\}$ be a countably infinite subset of $A$. Since $A$
 :::
 
 ::: pf-step
-Define $f: A_0 \to \mathbb{R}$ by $f(a_n) = n$. Because $A_0$ is discrete, $f$ is continuous.
+Define $f: A_0 \to \RR$ by $f(a_n) = n$. Because $A_0$ is discrete, $f$ is continuous.
 :::
 
 ::: pf-step
@@ -104,11 +104,11 @@ Since $X$ is metrizable, $X$ is normal ($T_4$).
 :::
 
 ::: pf-step
-By the Tietze Extension Theorem, $f$ extends to a continuous function $\phi: X \to \mathbb{R}$.
+By the Tietze Extension Theorem, $f$ extends to a continuous function $\phi: X \to \RR$.
 :::
 
 ::: pf-step
-Since $\phi(a_n) = n$ for all $n \in \mathbb{Z}_+$, $\phi$ is unbounded on $X$, contradicting (ii).
+Since $\phi(a_n) = n$ for all $n \in \ZZ_+$, $\phi$ is unbounded on $X$, contradicting (ii).
 :::
 
 ::: pf-step

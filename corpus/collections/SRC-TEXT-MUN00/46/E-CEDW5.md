@@ -18,7 +18,7 @@ audit:
 
 ::: {.exercise}
 
-Consider the sequence of functions $f_n: (-1, 1) \to \mathbb{R}$, defined by
+Consider the sequence of functions $f_n: (-1, 1) \to \RR$, defined by
 
 $$
 f_n(x) = \sum_{k=1}^{n} k x^k.

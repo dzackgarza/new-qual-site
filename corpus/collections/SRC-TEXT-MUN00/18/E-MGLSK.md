@@ -24,22 +24,22 @@ audit:
 
 ::: {.exercise}
 
-(a) Suppose that $f: \mathbb{R} \to \mathbb{R}$ is "continuous from the right," that is,
+(a) Suppose that $f: \RR \to \RR$ is "continuous from the right," that is,
 
 $$
 \lim_{x \to a^+} f(x) = f(a)
 $$
 
-for each $a \in \mathbb{R}$.
-Show that $f$ is continuous when considered as a function from $\mathbb{R}_\ell$ to $\mathbb{R}$.
+for each $a \in \RR$.
+Show that $f$ is continuous when considered as a function from $\RR_\ell$ to $\RR$.
 
-(b) Can you conjecture what functions $f: \mathbb{R} \to \mathbb{R}$ are continuous when considered as maps from $\mathbb{R}$ to $\mathbb{R}_\ell$?
-As maps from $\mathbb{R}_\ell$ to $\mathbb{R}_\ell$?
+(b) Can you conjecture what functions $f: \RR \to \RR$ are continuous when considered as maps from $\RR$ to $\RR_\ell$?
+As maps from $\RR_\ell$ to $\RR_\ell$?
 We shall return to this question in Chapter 3.
 :::
 
 ::: {.solution}
-(a) Let $V\subseteq\mathbb R$ be open and let $a\in f^{-1}(V)$. Choose $\varepsilon>0$ with
+(a) Let $V\subseteq\RR$ be open and let $a\in f^{-1}(V)$. Choose $\varepsilon>0$ with
 \[
 (f(a)-\varepsilon,f(a)+\varepsilon)\subseteq V.
 \]
@@ -51,15 +51,15 @@ Therefore
 \[
 [a,a+\delta)\subseteq f^{-1}(V).
 \]
-Since $[a,a+\delta)$ is a basic neighborhood of $a$ in $\mathbb R_\ell$, the preimage $f^{-1}(V)$ is open in $\mathbb R_\ell$. Hence $f:\mathbb R_\ell\to\mathbb R$ is continuous.
+Since $[a,a+\delta)$ is a basic neighborhood of $a$ in $\RR_\ell$, the preimage $f^{-1}(V)$ is open in $\RR_\ell$. Hence $f:\RR_\ell\to\RR$ is continuous.
 
-In fact this condition is also necessary, so maps $\mathbb R_\ell\to\mathbb R$ are exactly the ordinary right-continuous functions.
+In fact this condition is also necessary, so maps $\RR_\ell\to\RR$ are exactly the ordinary right-continuous functions.
 
-(b) A continuous map $\mathbb R\to\mathbb R_\ell$ must be constant. Indeed each basic set $[c,d)$ in $\mathbb R_\ell$ is both open and closed, so its inverse image is clopen in connected $\mathbb R$; hence every such inverse image is either empty or all of $\mathbb R$, forcing the image to be a singleton.
+(b) A continuous map $\RR\to\RR_\ell$ must be constant. Indeed each basic set $[c,d)$ in $\RR_\ell$ is both open and closed, so its inverse image is clopen in connected $\RR$; hence every such inverse image is either empty or all of $\RR$, forcing the image to be a singleton.
 
-For maps $f:\mathbb R_\ell\to\mathbb R_\ell$, continuity is equivalent to the following one-sided condition: for every $a\in\mathbb R$ and every $\varepsilon>0$, there exists $\delta>0$ such that
+For maps $f:\RR_\ell\to\RR_\ell$, continuity is equivalent to the following one-sided condition: for every $a\in\RR$ and every $\varepsilon>0$, there exists $\delta>0$ such that
 \[
 f([a,a+\delta))\subseteq[f(a),f(a)+\varepsilon).
 \]
-Necessity follows by applying continuity to the basic target neighborhood $[f(a),f(a)+\varepsilon)$. Conversely, suppose the condition holds, and let $a\in f^{-1}([c,d))$. With $\varepsilon=d-f(a)$, the condition gives $\delta>0$ with $f([a,a+\delta))\subseteq[f(a),d)\subseteq[c,d)$, so $f^{-1}([c,d))$ is open in $\mathbb R_\ell$. Equivalently, such functions are right-continuous and locally nondecreasing from the right.
+Necessity follows by applying continuity to the basic target neighborhood $[f(a),f(a)+\varepsilon)$. Conversely, suppose the condition holds, and let $a\in f^{-1}([c,d))$. With $\varepsilon=d-f(a)$, the condition gives $\delta>0$ with $f([a,a+\delta))\subseteq[f(a),d)\subseteq[c,d)$, so $f^{-1}([c,d))$ is open in $\RR_\ell$. Equivalently, such functions are right-continuous and locally nondecreasing from the right.
 :::

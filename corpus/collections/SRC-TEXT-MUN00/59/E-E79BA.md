@@ -18,11 +18,11 @@ audit:
 
 ::: {.exercise}
 
-(a) Show that $\mathbb{R}^1$ and $\mathbb{R}^n$ are not homeomorphic if $n > 1$.
+(a) Show that $\RR^1$ and $\RR^n$ are not homeomorphic if $n > 1$.
 
-(b) Show that $\mathbb{R}^2$ and $\mathbb{R}^n$ are not homeomorphic if $n > 2$.
+(b) Show that $\RR^2$ and $\RR^n$ are not homeomorphic if $n > 2$.
 
-It is, in fact, true that $\mathbb{R}^m$ and $\mathbb{R}^n$ are not homeomorphic if $n \neq m$, but the proof requires more advanced tools of algebraic topology.
+It is, in fact, true that $\RR^m$ and $\RR^n$ are not homeomorphic if $n \neq m$, but the proof requires more advanced tools of algebraic topology.
 :::
 
 ::: {.solution}

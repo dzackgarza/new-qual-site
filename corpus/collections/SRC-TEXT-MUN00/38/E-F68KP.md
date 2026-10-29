@@ -36,13 +36,13 @@ Part (a): Points of $\beta(X) \setminus X$ are not sequential limits of points i
 ::: pf-step
 Suppose for contradiction that there exists a sequence $(x_n)_{n=1}^\infty \subseteq X$ such that $x_n \to y \in \beta(X) \setminus X$.
 Each point $x \in X$ occurs only finitely often in the sequence: otherwise a constant subsequence converges to $x \neq y$, which contradicts uniqueness of limits in the Hausdorff space $\beta(X)$. Passing to a subsequence, assume the $x_n$ are pairwise distinct.
-Then the set $S = \{x_n \mid n \in \mathbb{N}\}$ has no accumulation point in $X$: an accumulation point $x \in X$ of $S$ is a cluster point of the sequence, so $x = y$ by the Hausdorff property, which contradicts $y \notin X$. Hence every subset of $S$ is closed in $X$.
+Then the set $S = \{x_n \mid n \in \NN\}$ has no accumulation point in $X$: an accumulation point $x \in X$ of $S$ is a cluster point of the sequence, so $x = y$ by the Hausdorff property, which contradicts $y \notin X$. Hence every subset of $S$ is closed in $X$.
 :::
 
 ::: pf-step
 Partition $S$ into two disjoint closed subsets of $X$:
 \[
-A = \{x_{2k} \mid k \in \mathbb{N}\}, \qquad B = \{x_{2k-1} \mid k \in \mathbb{N}\}.
+A = \{x_{2k} \mid k \in \NN\}, \qquad B = \{x_{2k-1} \mid k \in \NN\}.
 \]
 Because $X$ is normal, by Urysohn's Lemma there exists a continuous function $f: X \to [0, 1]$ such that:
 \[

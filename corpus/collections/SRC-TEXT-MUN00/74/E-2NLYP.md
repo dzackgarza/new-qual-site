@@ -88,7 +88,7 @@ $$\pi_1(P^2 \# T) \cong \pi_1(U) *_{\pi_1(U \cap V)} \pi_1(V) \cong \langle a, b
 
 ::: pf-step
 Equivalent presentation via Dyck's Theorem:
-By Dyck's Theorem, $P^2 \# T \cong \#^3 \mathbb{R}P^2$ (the non-orientable surface of genus 3), which has the equivalent standard presentation:
+By Dyck's Theorem, $P^2 \# T \cong \#^3 \RP^2$ (the non-orientable surface of genus 3), which has the equivalent standard presentation:
 $$\pi_1(P^2 \# T) \cong \langle x, y, z \mid x^2 y^2 z^2 = 1 \rangle.$$
 :::
 

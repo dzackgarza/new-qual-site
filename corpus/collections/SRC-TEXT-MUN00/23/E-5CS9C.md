@@ -19,7 +19,7 @@ audit:
 
 ::: {.exercise}
 
-Determine whether or not $\mathbb{R}^\omega$ is connected in the uniform topology.
+Determine whether or not $\RR^\omega$ is connected in the uniform topology.
 :::
 
 ::: {.solution}

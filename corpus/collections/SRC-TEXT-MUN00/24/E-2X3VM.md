@@ -44,7 +44,7 @@ The map $\gamma(t)=(\gamma_\alpha(t))_\alpha$ is continuous because its coordina
 (b) $\boxed{\text{No}}$: the closure of a path-connected set need not be path connected.
 
 ::: pf-proof
-The set $A=\{(x,\sin(1/x)):0<x\le1\}\subseteq\mathbb R^2$ is the image of $(0,1]$ under a continuous map, hence path connected.
+The set $A=\{(x,\sin(1/x)):0<x\le1\}\subseteq\RR^2$ is the image of $(0,1]$ under a continuous map, hence path connected.
 Its closure $\overline A=A\cup(\{0\}\times[-1,1])$ is the topologist's sine curve, which is not path connected: no path in $\overline A$ joins $(0,0)$ to a point of $A$.
 :::
 

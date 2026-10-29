@@ -25,7 +25,7 @@ audit:
 ::: {.exercise}
 
 Show that if $g: S^2 \to S^2$ is continuous and $g(x) \neq g(-x)$ for all $x$, then $g$ is surjective.
-[Hint: If $p \in S^2$, then $S^2 - \theset{p}$ is homeomorphic to $\mathbb{R}^2$.]
+[Hint: If $p \in S^2$, then $S^2 - \theset{p}$ is homeomorphic to $\RR^2$.]
 :::
 
 ::: {.solution}
@@ -33,13 +33,13 @@ Suppose, toward a contradiction, that \(g\) is not surjective. Choose
 \[
 p\in S^2-g(S^2).
 \]
-Since \(S^2-\{p\}\) is homeomorphic to \(\mathbb R^2\), choose a homeomorphism
+Since \(S^2-\{p\}\) is homeomorphic to \(\RR^2\), choose a homeomorphism
 \[
-\phi:S^2-\{p\}\longrightarrow\mathbb R^2.
+\phi:S^2-\{p\}\longrightarrow\RR^2.
 \]
 Then
 \[
-F=\phi\circ g:S^2\to\mathbb R^2
+F=\phi\circ g:S^2\to\RR^2
 \]
 is continuous. By the Borsuk--Ulam theorem there exists \(x\in S^2\) with
 \[

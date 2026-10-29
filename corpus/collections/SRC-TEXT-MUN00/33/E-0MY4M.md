@@ -46,7 +46,7 @@ Since $\{0\}$ is closed in $[0, 1]$ and $f$ is continuous, $A$ is closed in $X$.
 :::
 
 ::: pf-step
-For each $n \in \mathbb{Z}_+$, let $U_n = f^{-1}([0, \frac{1}{n})) = \{x \in X : f(x) < \frac{1}{n}\}$.
+For each $n \in \ZZ_+$, let $U_n = f^{-1}([0, \frac{1}{n})) = \{x \in X : f(x) < \frac{1}{n}\}$.
 :::
 
 ::: pf-step

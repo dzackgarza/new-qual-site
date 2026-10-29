@@ -31,7 +31,7 @@ Show that the sets D and E of Exercise 5 have the same cardinality.
 ::: {.solution}
 Recall
 \[
-D=(\mathbb Z_+)^\omega,
+D=(\ZZ_+)^\omega,
 \qquad
 E=\{0,1\}^\omega.
 \]

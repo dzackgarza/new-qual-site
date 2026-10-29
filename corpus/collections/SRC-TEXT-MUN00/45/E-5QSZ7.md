@@ -24,7 +24,7 @@ Let $(Y, d)$ be a metric space; let $\mathcal{F}$ be a subset of $\mathcal{C}(X,
 
 (b) Show that if $f_n$ is a sequence of elements of $\mathcal{C}(X, Y)$ that converges uniformly, then the collection $\theset{f_n}$ is equicontinuous.
 
-(c) Suppose that $\mathcal{F}$ is a collection of differentiable functions $f: \mathbb{R} \to \mathbb{R}$ such that each $x \in \mathbb{R}$ lies in a neighborhood $U$ on which the derivatives of the functions in $\mathcal{F}$ are uniformly bounded.
+(c) Suppose that $\mathcal{F}$ is a collection of differentiable functions $f: \RR \to \RR$ such that each $x \in \RR$ lies in a neighborhood $U$ on which the derivatives of the functions in $\mathcal{F}$ are uniformly bounded.
 [This means that there is an $M$ such that $\abs{f'(x)} \leq M$ for all $f$ in $\mathcal{F}$ and all $x \in U$.] Show that $\mathcal{F}$ is equicontinuous.
 :::
 
@@ -136,7 +136,7 @@ Part (c): Locally uniformly bounded derivatives imply equicontinuity.
 
 ::: pf-step
 
-Let $x_0 \in \mathbb{R}$ and $\varepsilon > 0$.
+Let $x_0 \in \RR$ and $\varepsilon > 0$.
 
 :::
 
@@ -173,7 +173,7 @@ Consequently, $|f(x) - f(x_0)| \le M |x - x_0| < M \delta < \varepsilon$.
 
 ::: pf-step
 
-Thus $\mathcal{F}$ is equicontinuous at $x_0$, and therefore on $\mathbb{R}$. Q.E.D.
+Thus $\mathcal{F}$ is equicontinuous at $x_0$, and therefore on $\RR$. Q.E.D.
 
 :::
 

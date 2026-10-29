@@ -14,8 +14,8 @@ review: draft
 
 ::: {.exercise}
 
-Let $X$ be the infinite earring in $\mathbb{R}^2$.
-(See Example 1 of §80.) Let $C(X)$ be the subspace of $\mathbb{R}^3$ that is the union of all line segments joining points of $X \times 0$ to the point $p = (0, 0, 1)$.
+Let $X$ be the infinite earring in $\RR^2$.
+(See Example 1 of §80.) Let $C(X)$ be the subspace of $\RR^3$ that is the union of all line segments joining points of $X \times 0$ to the point $p = (0, 0, 1)$.
 It is called the cone on $X$.
 Show that $C(X)$ is simply connected, but is not locally simply connected at the origin.
 :::
@@ -44,7 +44,7 @@ Let \(V\subset U\) be any neighborhood of \(o\). Its intersection with the base 
 
 Under the deformation retraction \(U\to X\), the loop \(\gamma_n\) remains the standard loop on \(C_n\). Retraction of the earring \(X\to C_n\), collapsing all other circles to \(o\), sends it to a generator of
 \[
-\pi_1(C_n,o)\cong\mathbb Z.
+\pi_1(C_n,o)\cong\ZZ.
 \]
 Thus \(\gamma_n\) is not nullhomotopic in \(U\). Therefore no neighborhood \(V\subset U\) of \(o\) has all its loops nullhomotopic in \(U\); in particular there is no basis of simply connected neighborhoods at \(o\). Hence \(C(X)\) is not locally simply connected at the origin.
 :::

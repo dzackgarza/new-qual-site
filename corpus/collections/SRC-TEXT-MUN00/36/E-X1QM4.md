@@ -14,12 +14,12 @@ review: draft
 
 ::: {.exercise}
 
-Let $X$ be a Hausdorff space such that each point of $X$ has a neighborhood that is homeomorphic with an open subset of $\mathbb{R}^m$.
+Let $X$ be a Hausdorff space such that each point of $X$ has a neighborhood that is homeomorphic with an open subset of $\RR^m$.
 Show that if $X$ is compact, then $X$ is an $m$-manifold.
 :::
 
 ::: {.solution}
-By hypothesis, for each \(x\in X\) there is a neighborhood \(U_x\) homeomorphic to an open subset of \(\mathbb R^m\). Choose an open set \(V_x\) with
+By hypothesis, for each \(x\in X\) there is a neighborhood \(U_x\) homeomorphic to an open subset of \(\RR^m\). Choose an open set \(V_x\) with
 \[
 x\in V_x\subset U_x.
 \]
@@ -33,5 +33,5 @@ For each \(i\), choose a countable basis \(\mathcal B_i\) for the open subspace 
 \[
 \mathcal B=\bigcup_{i=1}^r\mathcal B_i
 \]
-is a countable basis for \(X\). The space is Hausdorff by assumption and locally homeomorphic to \(\mathbb R^m\) by hypothesis. Thus it satisfies the standard definition of an \(m\)-manifold.
+is a countable basis for \(X\). The space is Hausdorff by assumption and locally homeomorphic to \(\RR^m\) by hypothesis. Thus it satisfies the standard definition of an \(m\)-manifold.
 :::

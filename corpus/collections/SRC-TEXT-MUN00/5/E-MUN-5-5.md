@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-5-5
 kind: problem
-title: Subsets of $\mathbb{R}^{\omega}$ as Cartesian products
+title: Subsets of $\RR^{\omega}$ as Cartesian products
 classification:
   areas:
   - topology
@@ -25,7 +25,7 @@ audit:
 
 ::: {.exercise}
 
-Which of the following subsets of $\mathbb{R}^{\omega}$ can be expressed as the cartesian product of subsets of $\mathbb{R}$ ?
+Which of the following subsets of $\RR^{\omega}$ can be expressed as the cartesian product of subsets of $\RR$ ?
 
 (a) $\{x \mid x_{i} \text{ is an integer for all } i\}$ .
 
@@ -39,7 +39,7 @@ Which of the following subsets of $\mathbb{R}^{\omega}$ can be expressed as the 
 ::: {.solution}
 (a) Yes. The set is
 \[
-\prod_{i=1}^{\infty}\mathbb Z.
+\prod_{i=1}^{\infty}\ZZ.
 \]
 
 (b) Yes. It is
@@ -49,19 +49,19 @@ Which of the following subsets of $\mathbb{R}^{\omega}$ can be expressed as the 
 
 (c) Yes. It is
 \[
-\left(\prod_{i=1}^{99}\mathbb R\right)
+\left(\prod_{i=1}^{99}\RR\right)
 \times
-\left(\prod_{i=100}^{\infty}\mathbb Z\right).
+\left(\prod_{i=100}^{\infty}\ZZ\right).
 \]
-Equivalently, take the \(i\)-th factor to be \(\mathbb R\) for \(i<100\) and \(\mathbb Z\) for \(i\ge100\).
+Equivalently, take the \(i\)-th factor to be \(\RR\) for \(i<100\) and \(\ZZ\) for \(i\ge100\).
 
 (d) No. Suppose
 \[
 \{x:x_2=x_3\}=\prod_i A_i.
 \]
-For every \(r\in\mathbb R\) there is a sequence in the set having \(x_2=x_3=r\), so necessarily
+For every \(r\in\RR\) there is a sequence in the set having \(x_2=x_3=r\), so necessarily
 \[
-A_2=A_3=\mathbb R.
+A_2=A_3=\RR.
 \]
 But then the product contains a sequence with \(x_2=0\) and \(x_3=1\), contradicting the defining relation \(x_2=x_3\). Thus this subset is not a cartesian product of coordinate subsets.
 :::

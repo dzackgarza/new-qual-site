@@ -19,11 +19,11 @@ If $Y$ is a subspace of $Z$, we say that $Y$ is a retract of $Z$ if there is a c
 
 (a) Show that if $Z$ is Hausdorff and $Y$ is a retract of $Z$, then $Y$ is closed in $Z$.
 
-(b) Let $A$ be a two-point set in $\mathbb{R}^2$.
-Show that $A$ is not a retract of $\mathbb{R}^2$.
+(b) Let $A$ be a two-point set in $\RR^2$.
+Show that $A$ is not a retract of $\RR^2$.
 
-(c) Let $S^1$ be the unit circle in $\mathbb{R}^2$; show that $S^1$ is a retract of $\mathbb{R}^2 - \theset{\mathbf{0}}$, where $\mathbf{0}$ is the origin.
-Can you conjecture whether or not $S^1$ is a retract of $\mathbb{R}^2$?
+(c) Let $S^1$ be the unit circle in $\RR^2$; show that $S^1$ is a retract of $\RR^2 - \theset{\mathbf{0}}$, where $\mathbf{0}$ is the origin.
+Can you conjecture whether or not $S^1$ is a retract of $\RR^2$?
 :::
 
 ::: {.solution}
@@ -37,11 +37,11 @@ Y=\{z\in Z:R(z)=z\}.
 \]
 Since \(Z\) is Hausdorff, the equalizer of \(R\) and the identity map is closed. Hence \(Y\) is closed in \(Z\).
 
-(b) If a two-point set \(A\subset\mathbb R^2\) were a retract, the retraction \(r:\mathbb R^2\to A\) would be a continuous surjection. But \(\mathbb R^2\) is connected, so its continuous image \(A\) would be connected, whereas a two-point subspace of the Hausdorff plane is disconnected. Contradiction.
+(b) If a two-point set \(A\subset\RR^2\) were a retract, the retraction \(r:\RR^2\to A\) would be a continuous surjection. But \(\RR^2\) is connected, so its continuous image \(A\) would be connected, whereas a two-point subspace of the Hausdorff plane is disconnected. Contradiction.
 
 (c) The radial map
 \[
-r:\mathbb R^2\setminus\{0\}\to S^1,
+r:\RR^2\setminus\{0\}\to S^1,
 \qquad
 r(x)=\frac{x}{\|x\|},
 \]

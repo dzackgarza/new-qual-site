@@ -24,9 +24,9 @@ audit:
 
 ::: {.exercise}
 
-Consider the subset $A$ of $(\mathbb{Z}_{+})^{\omega}$ consisting of all infinite sequences of positive integers $\mathbf{x} = (x_{1}, x_{2}, \ldots)$ that end in an infinite string of 1's. Give $A$ the following order: $\mathbf{x} < \mathbf{y}$ if $x_{n} < y_{n}$ and $x_{i} = y_{i}$ for $i > n$ . We call this the "antidictionary order" on $A$ .
+Consider the subset $A$ of $(\ZZ_{+})^{\omega}$ consisting of all infinite sequences of positive integers $\mathbf{x} = (x_{1}, x_{2}, \ldots)$ that end in an infinite string of 1's. Give $A$ the following order: $\mathbf{x} < \mathbf{y}$ if $x_{n} < y_{n}$ and $x_{i} = y_{i}$ for $i > n$ . We call this the "antidictionary order" on $A$ .
 
-(a) Show that for every $n$, there is a section of $A$ that has the same order type as $(\mathbb{Z}_+)^n$ in the dictionary order.
+(a) Show that for every $n$, there is a section of $A$ that has the same order type as $(\ZZ_+)^n$ in the dictionary order.
 
 (b) Show $A$ is well-ordered.
 :::
@@ -46,13 +46,13 @@ is exactly \(A_n\). Indeed, if \(x<s^{(n)}\), let \(m\) be the largest coordinat
 
 Define
 \[
-\phi_n:A_n\longrightarrow (\mathbb Z_+)^n,
+\phi_n:A_n\longrightarrow (\ZZ_+)^n,
 \qquad
 \phi_n(x_1,\ldots,x_n,1,1,\ldots)=(x_n,x_{n-1},\ldots,x_1).
 \]
-This is a bijection. In the antidictionary order, two elements of \(A_n\) are compared at their largest differing coordinate; after reversing the first \(n\) coordinates, this becomes the first differing coordinate. Hence \(\phi_n\) is an order isomorphism onto \((\mathbb Z_+)^n\) with dictionary order.
+This is a bijection. In the antidictionary order, two elements of \(A_n\) are compared at their largest differing coordinate; after reversing the first \(n\) coordinates, this becomes the first differing coordinate. Hence \(\phi_n\) is an order isomorphism onto \((\ZZ_+)^n\) with dictionary order.
 
-For part (b), first note by induction on \(n\) that \((\mathbb Z_+)^n\) in dictionary order is well ordered. The case \(n=1\) is the usual well ordering of \(\mathbb Z_+\). If the assertion holds for \(n\), then for a nonempty subset \(B\subset(\mathbb Z_+)^{n+1}\), choose the least first coordinate occurring in \(B\), and within that fiber choose the least remaining \(n\)-tuple.
+For part (b), first note by induction on \(n\) that \((\ZZ_+)^n\) in dictionary order is well ordered. The case \(n=1\) is the usual well ordering of \(\ZZ_+\). If the assertion holds for \(n\), then for a nonempty subset \(B\subset(\ZZ_+)^{n+1}\), choose the least first coordinate occurring in \(B\), and within that fiber choose the least remaining \(n\)-tuple.
 
 Now let \(B\subset A\) be nonempty and choose \(b\in B\). Since \(b\) is eventually \(1\), there is \(n\) with \(b\in A_n\). Every \(x<b\) also lies in \(A_n\): if \(x\) differed from \(b\) at some coordinate \(m>n\), then \(b_m=1\), while \(x_m\ge1\), so the required inequality \(x_m<b_m\) at the largest differing coordinate would be impossible. Therefore
 \[

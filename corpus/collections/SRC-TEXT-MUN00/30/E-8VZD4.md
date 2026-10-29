@@ -73,26 +73,26 @@ Because each $B_n$ is open, $\{x\}$ is a countable intersection of open sets, he
 
 ::: pf-step
 Part (b): Space where singletons are $G_\delta$ but first-countability fails.
-A familiar example is the product space $\mathbb{R}^\omega = \prod_{n=1}^\infty \mathbb{R}$ equipped with the **box topology**.
+A familiar example is the product space $\RR^\omega = \prod_{n=1}^\infty \RR$ equipped with the **box topology**.
 
 ::: pf-proof
 
 ::: pf-step
 **Singletons are $G_\delta$:**
-Let $\mathbf{x} = (x_n)_{n=1}^\infty \in \mathbb{R}^\omega$. For each integer $k \ge 1$, define the box-open set:
+Let $\mathbf{x} = (x_n)_{n=1}^\infty \in \RR^\omega$. For each integer $k \ge 1$, define the box-open set:
 $$U_k = \prod_{n=1}^\infty \left(x_n - \frac{1}{k}, x_n + \frac{1}{k}\right).$$
 Then:
 $$\bigcap_{k=1}^\infty U_k = \prod_{n=1}^\infty \bigcap_{k=1}^\infty \left(x_n - \frac{1}{k}, x_n + \frac{1}{k}\right) = \prod_{n=1}^\infty \{x_n\} = \{\mathbf{x}\}.$$
-Thus every one-point set in $\mathbb{R}^\omega_{\text{box}}$ is a $G_\delta$ set.
+Thus every one-point set in $\RR^\omega_{\text{box}}$ is a $G_\delta$ set.
 :::
 
 ::: pf-step
 **Failure of first countability:**
-As shown in §30 Example 2, the origin $\mathbf{0} \in \mathbb{R}^\omega$ has no countable local neighborhood basis in the box topology (given any countable family $\{B_m\}_{m=1}^\infty$ of box-open neighborhoods of $\mathbf{0}$ with $B_m = \prod_{n=1}^\infty (-\varepsilon_{m, n}, \varepsilon_{m, n})$, the diagonal open neighborhood $W = \prod_{n=1}^\infty (-\frac{1}{2}\varepsilon_{n, n}, \frac{1}{2}\varepsilon_{n, n})$ contains no $B_m$).
+As shown in §30 Example 2, the origin $\mathbf{0} \in \RR^\omega$ has no countable local neighborhood basis in the box topology (given any countable family $\{B_m\}_{m=1}^\infty$ of box-open neighborhoods of $\mathbf{0}$ with $B_m = \prod_{n=1}^\infty (-\varepsilon_{m, n}, \varepsilon_{m, n})$, the diagonal open neighborhood $W = \prod_{n=1}^\infty (-\frac{1}{2}\varepsilon_{n, n}, \frac{1}{2}\varepsilon_{n, n})$ contains no $B_m$).
 :::
 
 ::: pf-step
-Hence $\mathbb{R}^\omega$ in the box topology is not first-countable.
+Hence $\RR^\omega$ in the box topology is not first-countable.
 :::
 
 :::
@@ -101,7 +101,7 @@ Hence $\mathbb{R}^\omega$ in the box topology is not first-countable.
 
 ::: pf-step
 Conclusion:
-Singletons are $G_\delta$ in any first-countable $T_1$ space, and $\mathbb{R}^\omega$ with the box topology is a non-first-countable space with $G_\delta$ singletons. Q.E.D.
+Singletons are $G_\delta$ in any first-countable $T_1$ space, and $\RR^\omega$ with the box topology is a non-first-countable space with $G_\delta$ singletons. Q.E.D.
 :::
 
 :::

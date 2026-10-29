@@ -14,17 +14,17 @@ review: draft
 
 ::: {.exercise}
 
-Let $A$ be the set of all points of $\mathbb{R}_\ell^2$ of the form $x \times (-x)$, for $x$ rational; let $B$ be the set of all points of this form for $x$ irrational.
-If $V$ is an open set of $\mathbb{R}_\ell^2$ containing $B$, show there exists no open set $U$ containing $A$ that is disjoint from $V$, as follows:
+Let $A$ be the set of all points of $\RR_\ell^2$ of the form $x \times (-x)$, for $x$ rational; let $B$ be the set of all points of this form for $x$ irrational.
+If $V$ is an open set of $\RR_\ell^2$ containing $B$, show there exists no open set $U$ containing $A$ that is disjoint from $V$, as follows:
 
 (a) Let $K_n$ consist of all irrational numbers $x$ in $[0, 1]$ such that $[x, x + 1/n) \times [-x, -x + 1/n)$ is contained in $V$.
 Show that $[0, 1]$ is the union of the sets $K_n$ and countably many one-point sets.
 
-(b) Use Exercise 5 of §27 to show that some set $\overline{K}_n$ contains an open interval $(a, b)$ of $\mathbb{R}$.
+(b) Use Exercise 5 of §27 to show that some set $\overline{K}_n$ contains an open interval $(a, b)$ of $\RR$.
 
 (c) Show that $V$ contains the open parallelogram consisting of all points of the form $x \times (-x + \epsilon)$ for which $a < x < b$ and $0 < \epsilon < 1/n$.
 
-(d) Conclude that if $q$ is a rational number with $a < q < b$, then the point $q \times (-q)$ of $\mathbb{R}_\ell^2$ is a limit point of $V$.
+(d) Conclude that if $q$ is a rational number with $a < q < b$, then the point $q \times (-q)$ of $\RR_\ell^2$ is a limit point of $V$.
 :::
 
 ::: {.solution}
@@ -34,7 +34,7 @@ Show that $[0, 1]$ is the union of the sets $K_n$ and countably many one-point s
 \]
 Choose \(n\) with \(1/n<\varepsilon_x\). Then \(x\in K_n\). Thus every irrational point of \([0,1]\) lies in some \(K_n\), while the rational points form a countable union of one-point sets. Therefore
 \[
-[0,1]=\bigcup_{n\ge1}K_n\ \cup\ \bigcup_{q\in\mathbb Q\cap[0,1]}\{q\}.
+[0,1]=\bigcup_{n\ge1}K_n\ \cup\ \bigcup_{q\in\QQ\cap[0,1]}\{q\}.
 \]
 
 (b) If every \(\overline{K_n}\) had empty interior, then the compact Hausdorff space \([0,1]\) would be a countable union of closed sets with empty interior, together with countably many singleton closed sets, also of empty interior. This contradicts the Baire-category exercise of §27. Hence some \(\overline{K_n}\) contains a nonempty open interval \((a,b)\).
@@ -61,7 +61,7 @@ Therefore
 \]
 Thus \(V\) contains the stated open parallelogram.
 
-(d) Let \(q\in(a,b)\cap\mathbb Q\). Every basic neighborhood of \((q,-q)\) in the Sorgenfrey plane contains a point
+(d) Let \(q\in(a,b)\cap\QQ\). Every basic neighborhood of \((q,-q)\) in the Sorgenfrey plane contains a point
 \[
 (q,-q+\epsilon)
 \]

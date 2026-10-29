@@ -19,7 +19,7 @@ audit:
 ::: {.exercise}
 
 Corollary.
-Every closed subspace of $\mathbb{R}^N$ has topological dimension at most $N$.
+Every closed subspace of $\RR^N$ has topological dimension at most $N$.
 :::
 
 ::: {.solution}

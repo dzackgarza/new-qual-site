@@ -36,7 +36,7 @@ Question 1: Continuous images of locally compact spaces need NOT be locally comp
 ::: pf-proof
 
 ::: pf-step
-Let $X = \mathbb{R}$ with the discrete topology.
+Let $X = \RR$ with the discrete topology.
 :::
 
 ::: pf-step
@@ -44,19 +44,19 @@ Since every singleton in $X$ is an open and compact neighborhood of itself, $X$ 
 :::
 
 ::: pf-step
-Let $Y = \mathbb{Q}$ with the standard subspace topology inherited from $\mathbb{R}$.
+Let $Y = \QQ$ with the standard subspace topology inherited from $\RR$.
 :::
 
 ::: pf-step
-Let $f: X \to Y$ be any surjective function (for example, mapping $\mathbb{R} \setminus \mathbb{Q}$ onto $0$ and acting as the identity on $\mathbb{Q}$).
+Let $f: X \to Y$ be any surjective function (for example, mapping $\RR \setminus \QQ$ onto $0$ and acting as the identity on $\QQ$).
 :::
 
 ::: pf-step
-Since $X$ has the discrete topology, $f$ is continuous, and $f(X) = \mathbb{Q}$.
+Since $X$ has the discrete topology, $f$ is continuous, and $f(X) = \QQ$.
 :::
 
 ::: pf-step
-The rational numbers $\mathbb{Q}$ are not locally compact at any point: every compact subset of $\mathbb{Q}$ has empty interior, so no point of $\mathbb{Q}$ possesses a compact neighborhood.
+The rational numbers $\QQ$ are not locally compact at any point: every compact subset of $\QQ$ has empty interior, so no point of $\QQ$ possesses a compact neighborhood.
 :::
 
 ::: pf-step

@@ -25,20 +25,20 @@ audit:
 
 ::: {.exercise}
 
-Given sequences $(a_1, a_2, \ldots)$ and $(b_1, b_2, \ldots)$ of real numbers with $a_i > 0$ for all $i$, define $h: \mathbb{R}^\omega \to \mathbb{R}^\omega$ by the equation
+Given sequences $(a_1, a_2, \ldots)$ and $(b_1, b_2, \ldots)$ of real numbers with $a_i > 0$ for all $i$, define $h: \RR^\omega \to \RR^\omega$ by the equation
 
 $$
 h((x_1, x_2, \dots)) = (a_1 x_1 + b_1, a_2 x_2 + b_2, \dots).
 $$
 
-Show that if $\mathbb{R}^\omega$ is given the product topology, $h$ is a homeomorphism of $\mathbb{R}^\omega$ with itself.
-What happens if $\mathbb{R}^\omega$ is given the box topology?
+Show that if $\RR^\omega$ is given the product topology, $h$ is a homeomorphism of $\RR^\omega$ with itself.
+What happens if $\RR^\omega$ is given the box topology?
 :::
 
 ::: {.solution}
 For each $i$, let
 \[
-h_i:\mathbb R\to\mathbb R,\qquad h_i(x)=a_ix+b_i.
+h_i:\RR\to\RR,\qquad h_i(x)=a_ix+b_i.
 \]
 Since $a_i>0$, $h_i$ is a homeomorphism with inverse
 \[
@@ -50,7 +50,7 @@ For the product topology, the inverse image of a basic set
 \[
 \prod_iU_i,
 \]
-with $U_i=\mathbb R$ except for finitely many $i$, is
+with $U_i=\RR$ except for finitely many $i$, is
 \[
 \prod_i h_i^{-1}(U_i),
 \]

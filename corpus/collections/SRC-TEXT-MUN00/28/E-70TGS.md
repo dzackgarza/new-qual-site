@@ -46,7 +46,7 @@ A fixed point of $f$ is a point $x$ such that $f(x) = x$.
 Show that $f(x) = x - x^2/2$ maps $X$ into $X$ and is a shrinking map that is not a contraction.
 [Hint: Use the mean-value theorem of calculus.]
 
-(d) The result in (a) holds if $X$ is a complete metric space, such as $\mathbb{R}$; see the exercises of §43. The result in (b) does not: show that the map $f: \mathbb{R} \to \mathbb{R}$ given by $f(x) = [x + (x^2 + 1)^{1/2}]/2$ is a shrinking map that is not a contraction and has no fixed point.
+(d) The result in (a) holds if $X$ is a complete metric space, such as $\RR$; see the exercises of §43. The result in (b) does not: show that the map $f: \RR \to \RR$ given by $f(x) = [x + (x^2 + 1)^{1/2}]/2$ is a shrinking map that is not a contraction and has no fixed point.
 :::
 
 ::: {.solution}
@@ -93,7 +93,7 @@ Part (b): Shrinking maps on compact metric spaces have a unique fixed point (Ede
 ::: pf-proof
 
 ::: pf-step
-Consider the function $g: X \to \mathbb{R}$ defined by $g(x) = d(x, f(x))$.
+Consider the function $g: X \to \RR$ defined by $g(x) = d(x, f(x))$.
 :::
 
 ::: pf-step
@@ -149,7 +149,7 @@ Since $\lim_{x \to 0^+} \frac{f(x) - f(0)}{x - 0} = f'(0) = 1$, $\sup_{x \neq y}
 :::
 
 ::: pf-step
-Part (d): $f(x) = \frac{x + \sqrt{x^2+1}}{2}$ on $\mathbb{R}$ is a shrinking map without fixed points.
+Part (d): $f(x) = \frac{x + \sqrt{x^2+1}}{2}$ on $\RR$ is a shrinking map without fixed points.
 
 ::: pf-proof
 
@@ -158,7 +158,7 @@ The derivative is $f'(x) = \frac{1}{2}\left(1 + \frac{x}{\sqrt{x^2+1}}\right)$.
 :::
 
 ::: pf-step
-Since $|x| < \sqrt{x^2+1}$, we have $-1 < \frac{x}{\sqrt{x^2+1}} < 1$, which implies $0 < f'(x) < 1$ for all $x \in \mathbb{R}$.
+Since $|x| < \sqrt{x^2+1}$, we have $-1 < \frac{x}{\sqrt{x^2+1}} < 1$, which implies $0 < f'(x) < 1$ for all $x \in \RR$.
 :::
 
 ::: pf-step

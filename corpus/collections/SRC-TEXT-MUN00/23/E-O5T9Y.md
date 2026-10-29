@@ -24,7 +24,7 @@ audit:
 
 ::: {.exercise}
 
-Is the space $\mathbb{R}_\ell$ connected?
+Is the space $\RR_\ell$ connected?
 Justify your answer.
 :::
 
@@ -37,5 +37,5 @@ and
 \[
 [0,\infty)=\bigcup_{n\ge1}[0,n)
 \]
-are both open. They are nonempty, disjoint, and their union is $\mathbb R$. Hence they form a separation of $\mathbb R_\ell$, so $\mathbb R_\ell$ is disconnected.
+are both open. They are nonempty, disjoint, and their union is $\RR$. Hence they form a separation of $\RR_\ell$, so $\RR_\ell$ is disconnected.
 :::

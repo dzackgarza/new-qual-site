@@ -18,21 +18,21 @@ audit:
 
 ::: {.exercise}
 
-Verify the statements made in Example 4 of §38 concerning the one-point compactification of $X = (0, 1)$ obtained from the imbedding $h: (0, 1) \to \mathbb{R}^2$ with component functions $x$ and $\sin(1/x)$.
+Verify the statements made in Example 4 of §38 concerning the one-point compactification of $X = (0, 1)$ obtained from the imbedding $h: (0, 1) \to \RR^2$ with component functions $x$ and $\sin(1/x)$.
 :::
 
 ::: {.solution}
-**Goal:** Verify the topological properties of the compactification of $X = (0, 1)$ formed by the closure of the embedding $h(x) = (x, \sin(1/x))$ in $\mathbb{R}^2$, its remainder structure, and its relationship to the one-point compactification.
+**Goal:** Verify the topological properties of the compactification of $X = (0, 1)$ formed by the closure of the embedding $h(x) = (x, \sin(1/x))$ in $\RR^2$, its remainder structure, and its relationship to the one-point compactification.
 
 ::: pf
 
 ::: pf-step
-Embedding and closure in $\mathbb{R}^2$:
+Embedding and closure in $\RR^2$:
 
 ::: pf-proof
 
 ::: pf-step
-The map $h: (0, 1) \to \mathbb{R}^2$ defined by $h(x) = (x, \sin(1/x))$ is continuous and injective.
+The map $h: (0, 1) \to \RR^2$ defined by $h(x) = (x, \sin(1/x))$ is continuous and injective.
 :::
 
 ::: pf-step
@@ -40,12 +40,12 @@ The inverse projection $\pi_1: h(X) \to (0, 1)$ is continuous, so $h$ is a topol
 :::
 
 ::: pf-step
-The closure $Y = \overline{S}$ in $\mathbb{R}^2$ is:
+The closure $Y = \overline{S}$ in $\RR^2$ is:
 $$Y = S \cup (\{0\} \times [-1, 1]) \cup \{(1, \sin 1)\}.$$
 :::
 
 ::: pf-step
-The space $Y$ is closed and bounded in $\mathbb{R}^2$, hence compact by the Heine-Borel theorem. Thus $Y$ is a compactification of $(0, 1)$.
+The space $Y$ is closed and bounded in $\RR^2$, hence compact by the Heine-Borel theorem. Thus $Y$ is a compactification of $(0, 1)$.
 :::
 
 :::
@@ -66,7 +66,7 @@ For any $y \in [-1, 1]$, the sequence $x_n = \frac{1}{\arcsin(y) + 2\pi n} \to 0
 :::
 
 ::: pf-step
-Consequently, $\lim_{x \to 0^+} h(x)$ does not exist in $\mathbb{R}^2$.
+Consequently, $\lim_{x \to 0^+} h(x)$ does not exist in $\RR^2$.
 :::
 
 ::: pf-step

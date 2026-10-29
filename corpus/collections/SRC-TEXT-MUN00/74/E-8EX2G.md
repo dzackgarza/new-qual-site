@@ -23,7 +23,7 @@ Show that $M$ is homeomorphic to the space obtained by deleting an open disc fro
 :::
 
 ::: {.solution}
-**Goal:** Prove that deleting an open disc from the real projective plane $\mathbb{R}P^2$ yields a space homeomorphic to the Möbius band $M$.
+**Goal:** Prove that deleting an open disc from the real projective plane $\RP^2$ yields a space homeomorphic to the Möbius band $M$.
 
 ::: pf
 
@@ -36,14 +36,14 @@ Quotient model of the real projective plane:
 
 ::: pf-step
 
-The real projective plane $\mathbb{R}P^2$ is homeomorphic to the closed unit disc $D^2 = \{x \in \mathbb{R}^2 \mid \|x\| \le 1\}$ modulo the antipodal identification on its boundary:
-        $$\mathbb{R}P^2 \cong D^2 / \sim, \quad \text{where } x \sim -x \text{ for } x \in S^1 = \partial D^2.$$
+The real projective plane $\RP^2$ is homeomorphic to the closed unit disc $D^2 = \{x \in \RR^2 \mid \|x\| \le 1\}$ modulo the antipodal identification on its boundary:
+        $$\RP^2 \cong D^2 / \sim, \quad \text{where } x \sim -x \text{ for } x \in S^1 = \partial D^2.$$
 
 :::
 
 ::: pf-step
 
-Let $q: D^2 \to \mathbb{R}P^2$ be the canonical quotient map.
+Let $q: D^2 \to \RP^2$ be the canonical quotient map.
 
 :::
 
@@ -53,26 +53,26 @@ Let $q: D^2 \to \mathbb{R}P^2$ be the canonical quotient map.
 
 ::: pf-step
 
-Deleting an open disc from $\mathbb{R}P^2$:
+Deleting an open disc from $\RP^2$:
     *Proof:*
 
 ::: pf-proof
 
 ::: pf-step
 
-Let $D_{1/2} = \{x \in \mathbb{R}^2 \mid \|x\| < 1/2\}$ be the open central disc of radius $1/2$.
+Let $D_{1/2} = \{x \in \RR^2 \mid \|x\| < 1/2\}$ be the open central disc of radius $1/2$.
 
 :::
 
 ::: pf-step
 
-Since $D_{1/2} \subset \operatorname{Int}(D^2)$ contains no boundary points, $U = q(D_{1/2})$ is an open topological disc in $\mathbb{R}P^2$.
+Since $D_{1/2} \subset \operatorname{Int}(D^2)$ contains no boundary points, $U = q(D_{1/2})$ is an open topological disc in $\RP^2$.
 
 :::
 
 ::: pf-step
 
-The punctured space $Y = \mathbb{R}P^2 \setminus U$ is homeomorphic to the quotient of the closed annulus $A = \{x \in \mathbb{R}^2 \mid 1/2 \le \|x\| \le 1\}$ by the boundary identification $x \sim -x$ on the outer boundary circle $\|x\| = 1$.
+The punctured space $Y = \RP^2 \setminus U$ is homeomorphic to the quotient of the closed annulus $A = \{x \in \RR^2 \mid 1/2 \le \|x\| \le 1\}$ by the boundary identification $x \sim -x$ on the outer boundary circle $\|x\| = 1$.
 
 :::
 
@@ -142,5 +142,5 @@ Conclusion:
 
 :::
 
-    The space obtained by deleting an open disc from $\mathbb{R}P^2$ is homeomorphic to the Möbius band $M$. Q.E.D.
+    The space obtained by deleting an open disc from $\RP^2$ is homeomorphic to the Möbius band $M$. Q.E.D.
 :::

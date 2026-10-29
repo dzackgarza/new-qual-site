@@ -41,5 +41,5 @@ a<x<s,
 \]
 for such an \(x\) would belong to \(B\) and be smaller than \(s\). Hence \(s\) is the immediate successor of \(a\).
 
-(b) The integers \(\mathbb Z\) with their usual order are not well-ordered, since \(\mathbb Z\) itself has no smallest element. Nevertheless every \(n\in\mathbb Z\) has the immediate successor \(n+1\).
+(b) The integers \(\ZZ\) with their usual order are not well-ordered, since \(\ZZ\) itself has no smallest element. Nevertheless every \(n\in\ZZ\) has the immediate successor \(n+1\).
 :::

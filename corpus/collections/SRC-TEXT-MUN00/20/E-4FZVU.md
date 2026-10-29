@@ -19,9 +19,9 @@ audit:
 
 ::: {.exercise}
 
-Consider the product, uniform, and box topologies on $\mathbb{R}^\omega$.
+Consider the product, uniform, and box topologies on $\RR^\omega$.
 
-(a) In which topologies are the following functions from $\mathbb{R}$ to $\mathbb{R}^\omega$ continuous?
+(a) In which topologies are the following functions from $\RR$ to $\RR^\omega$ continuous?
 
 $$
 \begin{array}{l}
@@ -60,7 +60,7 @@ $$
 
 ::: {.solution}
 The uniform topology is given by $\bar\rho(\mathbf a,\mathbf b)=\sup_k\min\{\abs{a_k-b_k},1\}$, and $\mathcal T_{\mathrm{prod}}\subseteq\mathcal T_{\bar\rho}\subseteq\mathcal T_{\mathrm{box}}$.
-A map into $\mathbb R^\omega$ is product-continuous exactly when its coordinates are continuous, and a sequence converges in the product topology exactly when it converges coordinatewise.
+A map into $\RR^\omega$ is product-continuous exactly when its coordinates are continuous, and a sequence converges in the product topology exactly when it converges coordinatewise.
 Continuity or convergence in a finer topology implies it in a coarser one.
 Let $U=\prod_k(-\frac1{k^2},\frac1{k^2})$, a box neighborhood of $\mathbf 0$.
 In (b), $\mathbf w_n$ and $\mathbf x_n$ have $n-1$ leading zeros followed by the constant $n$, respectively $\frac1n$; $\mathbf y_n$ has $n$ entries $\frac1n$ followed by zeros; $\mathbf z_n$ has two entries $\frac1n$ followed by zeros.

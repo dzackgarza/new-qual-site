@@ -20,7 +20,7 @@ audit:
 
 Find if possible a choice function for each of the following collections, without using the choice axiom:
 
-(a) The collection $\mathcal{A}$ of nonempty subsets of $\mathbb{Z}_{+}$ .
+(a) The collection $\mathcal{A}$ of nonempty subsets of $\ZZ_{+}$ .
 
 (b) The collection B of nonempty subsets of Z.
 

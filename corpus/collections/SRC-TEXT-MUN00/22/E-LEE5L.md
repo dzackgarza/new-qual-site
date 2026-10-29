@@ -18,8 +18,8 @@ audit:
 
 ::: {.exercise}
 
-Let $\pi_1: \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ be projection on the first coordinate.
-Let $A$ be the subspace of $\mathbb{R} \times \mathbb{R}$ consisting of all points $x \times y$ for which either $x \geq 0$ or $y = 0$ (or both); let $q: A \to \mathbb{R}$ be obtained by restricting $\pi_1$.
+Let $\pi_1: \RR \times \RR \to \RR$ be projection on the first coordinate.
+Let $A$ be the subspace of $\RR \times \RR$ consisting of all points $x \times y$ for which either $x \geq 0$ or $y = 0$ (or both); let $q: A \to \RR$ be obtained by restricting $\pi_1$.
 Show that $q$ is a quotient map that is neither open nor closed.
 :::
 
@@ -30,7 +30,7 @@ Show that $q$ is a quotient map that is neither open nor closed.
 $q$ is continuous and surjective.
 
 ::: pf-proof
-$q$ is the restriction of the continuous projection $\pi_1$, and $q(x,0)=x$ with $(x,0)\in A$ for every $x\in\mathbb R$.
+$q$ is the restriction of the continuous projection $\pi_1$, and $q(x,0)=x$ with $(x,0)\in A$ for every $x\in\RR$.
 :::
 
 :::
@@ -39,7 +39,7 @@ $q$ is the restriction of the continuous projection $\pi_1$, and $q(x,0)=x$ with
 $q$ is a quotient map.
 
 ::: pf-proof
-By step [](#q-continuous-surjective){.pf-ref} it suffices to show that $U\subseteq\mathbb R$ is open whenever $q^{-1}(U)$ is open in $A$.
+By step [](#q-continuous-surjective){.pf-ref} it suffices to show that $U\subseteq\RR$ is open whenever $q^{-1}(U)$ is open in $A$.
 Let $x_0\in U$.
 Then $(x_0,0)\in q^{-1}(U)$, so there is an open box $B=(a,b)\times(-\varepsilon,\varepsilon)$ containing $(x_0,0)$ with $B\cap A\subseteq q^{-1}(U)$.
 For $t\in(a,b)$, the point $(t,0)$ lies in $B\cap A$, so $t=q(t,0)\in U$.
@@ -52,7 +52,7 @@ Hence $x_0\in(a,b)\subseteq U$.
 $q$ is not open.
 
 ::: pf-proof
-The set $[0,\infty)\times(0,\infty)=A\cap(\mathbb R\times(0,\infty))$ is open in $A$, and its image $[0,\infty)$ is not open in $\mathbb R$.
+The set $[0,\infty)\times(0,\infty)=A\cap(\RR\times(0,\infty))$ is open in $A$, and its image $[0,\infty)$ is not open in $\RR$.
 :::
 
 :::
@@ -61,8 +61,8 @@ The set $[0,\infty)\times(0,\infty)=A\cap(\mathbb R\times(0,\infty))$ is open in
 $q$ is not closed.
 
 ::: pf-proof
-The set $C=\{(x,y):x>0,\ xy=1\}$ equals $\{(x,y):x\ge0,\ xy=1\}$, which is closed in $\mathbb R^2$; it lies in $A$, so it is closed in $A$.
-Its image $q(C)=(0,\infty)$ is not closed in $\mathbb R$, since $0$ is a limit point of it.
+The set $C=\{(x,y):x>0,\ xy=1\}$ equals $\{(x,y):x\ge0,\ xy=1\}$, which is closed in $\RR^2$; it lies in $A$, so it is closed in $A$.
+Its image $q(C)=(0,\infty)$ is not closed in $\RR$, since $0$ is a limit point of it.
 :::
 
 :::

@@ -37,7 +37,7 @@ Construction of the example:
 ::: pf-proof
 
 ::: pf-step
-Let $X = \mathbb{R}$ equipped with the standard Euclidean topology.
+Let $X = \RR$ equipped with the standard Euclidean topology.
 :::
 
 ::: pf-step
@@ -63,11 +63,11 @@ $\mathcal{A}$ is not locally finite:
 ::: pf-proof
 
 ::: pf-step
-Consider the point $x = \frac{1}{2} \in \mathbb{R}$.
+Consider the point $x = \frac{1}{2} \in \RR$.
 :::
 
 ::: pf-step
-Let $U$ be an arbitrary open neighborhood of $x = \frac{1}{2}$ in $\mathbb{R}$.
+Let $U$ be an arbitrary open neighborhood of $x = \frac{1}{2}$ in $\RR$.
 :::
 
 ::: pf-step
@@ -101,12 +101,12 @@ $$\overline{A}_n = [0, 1].$$
 :::
 
 ::: pf-step
-As a set of subsets of $\mathbb{R}$, the collection of closures collapses to a single set:
+As a set of subsets of $\RR$, the collection of closures collapses to a single set:
 $$\mathcal{B} = \{ \overline{A}_n \mid n \ge 2 \} = \{ [0, 1] \}.$$
 :::
 
 ::: pf-step
-Since $\mathcal{B}$ is a finite collection (consisting of exactly $1$ set), every open neighborhood of any point $x \in \mathbb{R}$ intersects at most $1$ member of $\mathcal{B}$.
+Since $\mathcal{B}$ is a finite collection (consisting of exactly $1$ set), every open neighborhood of any point $x \in \RR$ intersects at most $1$ member of $\mathcal{B}$.
 :::
 
 ::: pf-step

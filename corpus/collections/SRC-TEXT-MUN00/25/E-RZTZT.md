@@ -25,10 +25,10 @@ audit:
 
 ::: {.exercise}
 
-(a) What are the components and path components of $\mathbb{R}^\omega$ (in the product topology)?
+(a) What are the components and path components of $\RR^\omega$ (in the product topology)?
 
-(b) Consider $\mathbb{R}^\omega$ in the uniform topology.
-Show that $\mathbf{x}$ and $\mathbf{y}$ lie in the same component of $\mathbb{R}^\omega$ if and only if the sequence
+(b) Consider $\RR^\omega$ in the uniform topology.
+Show that $\mathbf{x}$ and $\mathbf{y}$ lie in the same component of $\RR^\omega$ if and only if the sequence
 
 $$
 \mathbf{x} - \mathbf{y} = (x_1 - y_1, x_2 - y_2, \dots)
@@ -37,17 +37,17 @@ $$
 is bounded.
 [Hint: It suffices to consider the case where $\mathbf{y} = 0$.]
 
-(c) Give $\mathbb{R}^\omega$ the box topology.
-Show that $\mathbf{x}$ and $\mathbf{y}$ lie in the same component of $\mathbb{R}^\omega$ if and only if the sequence $\mathbf{x} - \mathbf{y}$ is "eventually zero."
-[Hint: If $\mathbf{x} - \mathbf{y}$ is not eventually zero, show there is a homeomorphism $h$ of $\mathbb{R}^\omega$ with itself such that $h(\mathbf{x})$ is bounded and $h(\mathbf{y})$ is unbounded.]
+(c) Give $\RR^\omega$ the box topology.
+Show that $\mathbf{x}$ and $\mathbf{y}$ lie in the same component of $\RR^\omega$ if and only if the sequence $\mathbf{x} - \mathbf{y}$ is "eventually zero."
+[Hint: If $\mathbf{x} - \mathbf{y}$ is not eventually zero, show there is a homeomorphism $h$ of $\RR^\omega$ with itself such that $h(\mathbf{x})$ is bounded and $h(\mathbf{y})$ is unbounded.]
 :::
 
 ::: {.solution}
-(a) In the product topology, $\mathbb R^\omega$ is path connected. Given $x,y\in\mathbb R^\omega$, the straight-line path
+(a) In the product topology, $\RR^\omega$ is path connected. Given $x,y\in\RR^\omega$, the straight-line path
 \[
 \gamma(t)=((1-t)x_i+ty_i)_{i\ge1}
 \]
-is continuous coordinatewise, hence continuous into the product. Therefore there is one path component and one component: all of $\mathbb R^\omega$.
+is continuous coordinatewise, hence continuous into the product. Therefore there is one path component and one component: all of $\RR^\omega$.
 
 (b) In the uniform topology, translation is a homeomorphism, so it suffices to determine the component of $0$. Suppose $x=(x_i)$ is bounded, say $|x_i|\le M$. The straight-line path
 \[
@@ -61,7 +61,7 @@ Hence every bounded sequence lies in the path component of $0$.
 
 Conversely, let
 \[
-B=\{x\in\mathbb R^\omega:x\text{ is bounded}\}.
+B=\{x\in\RR^\omega:x\text{ is bounded}\}.
 \]
 For any $x\in B$, every sufficiently small uniform ball about $x$ consists of bounded sequences; for any unbounded $x$, every uniform ball of radius $<1$ consists of unbounded sequences, since a uniformly bounded perturbation cannot turn an unbounded sequence into a bounded one. Thus $B$ is both open and closed in the uniform topology. The component of $0$ is therefore contained in $B$. Hence two points $x,y$ lie in the same component exactly when
 \[

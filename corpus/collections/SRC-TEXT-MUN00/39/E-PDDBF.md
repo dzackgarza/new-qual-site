@@ -24,8 +24,8 @@ audit:
 
 ::: {.exercise}
 
-Find a point-finite open covering $\mathcal{A}$ of $\mathbb{R}$ that is not locally finite.
-(The collection $\mathcal{A}$ is point-finite if each point of $\mathbb{R}$ lies in only finitely many elements of $\mathcal{A}$.)
+Find a point-finite open covering $\mathcal{A}$ of $\RR$ that is not locally finite.
+(The collection $\mathcal{A}$ is point-finite if each point of $\RR$ lies in only finitely many elements of $\mathcal{A}$.)
 :::
 
 ::: {.solution}
@@ -37,7 +37,7 @@ and let
 \[
 \mathcal A=\{(-\infty,1),(0,\infty)\}\cup\{U_n:n\ge2\}.
 \]
-This is an open covering of \(\mathbb R\): the first two sets already cover \(\mathbb R\).
+This is an open covering of \(\RR\): the first two sets already cover \(\RR\).
 
 It is point-finite. If \(x\le0\), then \(x\) lies in none of the \(U_n\). If \(x>0\), choose \(N\) with \(1/(N-1)<x\). Then for every \(n\ge N\),
 \[

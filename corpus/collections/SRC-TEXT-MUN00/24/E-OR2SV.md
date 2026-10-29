@@ -31,7 +31,7 @@ audit:
 (b) Suppose that there exist imbeddings $f: X \to Y$ and $g: Y \to X$.
 Show by means of an example that $X$ and $Y$ need not be homeomorphic.
 
-(c) Show that $\mathbb{R}^n$ and $\mathbb{R}$ are not homeomorphic if $n > 1$.
+(c) Show that $\RR^n$ and $\RR$ are not homeomorphic if $n > 1$.
 :::
 
 ::: {.solution}
@@ -47,9 +47,9 @@ g:Y\to X,\qquad g(t)=\frac14+\frac t2
 \]
 embeds $Y$ in $X$. But $X$ and $Y$ are not homeomorphic by part (a).
 
-(c) If $n>1$, the punctured space $\mathbb R^n-\{0\}$ is path connected: two points can be joined by a polygonal path avoiding the origin, using an intermediate point not lying on either line through the origin and one endpoint. By contrast,
+(c) If $n>1$, the punctured space $\RR^n-\{0\}$ is path connected: two points can be joined by a polygonal path avoiding the origin, using an intermediate point not lying on either line through the origin and one endpoint. By contrast,
 \[
-\mathbb R-\{0\}=(-\infty,0)\cup(0,\infty)
+\RR-\{0\}=(-\infty,0)\cup(0,\infty)
 \]
-is disconnected. A homeomorphism $\mathbb R^n\cong\mathbb R$ would restrict after deleting a point to a homeomorphism of these punctured spaces, impossible. Hence $\mathbb R^n\not\cong\mathbb R$ for $n>1$.
+is disconnected. A homeomorphism $\RR^n\cong\RR$ would restrict after deleting a point to a homeomorphism of these punctured spaces, impossible. Hence $\RR^n\not\cong\RR$ for $n>1$.
 :::

@@ -25,15 +25,15 @@ audit:
 
 ::: {.exercise}
 
-Show that $\mathbb{R} \times \mathbb{R}$ in the dictionary order topology is metrizable.
+Show that $\RR \times \RR$ in the dictionary order topology is metrizable.
 :::
 
 ::: {.solution}
-By [[E-QMZO5]], the dictionary order topology on $\mathbb R\times\mathbb R$ is exactly the product topology
+By [[E-QMZO5]], the dictionary order topology on $\RR\times\RR$ is exactly the product topology
 \[
-\mathbb R_d\times\mathbb R,
+\RR_d\times\RR,
 \]
-where $\mathbb R_d$ is discrete.
+where $\RR_d$ is discrete.
 
 Let
 \[
@@ -45,9 +45,9 @@ Both are metrics inducing the discrete and usual topologies respectively. Then
 \[
 D((x,y),(x',y'))=\delta(x,x')+\rho(y,y')
 \]
-is a metric on $\mathbb R^2$. For $0<r\le1$,
+is a metric on $\RR^2$. For $0<r\le1$,
 \[
 B_D((x,y),r)=\{x\}\times(y-r,y+r),
 \]
-since $\delta(x,x')\ge1$ when $x'\ne x$. These sets form a basis of $\mathbb R_d\times\mathbb R$ at $(x,y)$, and every $D$-ball about $(x,y)$ contains one of them. Hence $D$ metrizes the dictionary order topology.
+since $\delta(x,x')\ge1$ when $x'\ne x$. These sets form a basis of $\RR_d\times\RR$ at $(x,y)$, and every $D$-ball about $(x,y)$ contains one of them. Hence $D$ metrizes the dictionary order topology.
 :::

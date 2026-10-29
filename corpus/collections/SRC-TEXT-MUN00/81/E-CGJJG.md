@@ -20,7 +20,7 @@ review: draft
 :::
 
 ::: {.solution}
-Write the torus as \(T=\mathbb R^2/\mathbb Z^2\), with coordinates \([x,y]\).
+Write the torus as \(T=\RR^2/\ZZ^2\), with coordinates \([x,y]\).
 
 (a) Let
 \[
@@ -28,7 +28,7 @@ Write the torus as \(T=\mathbb R^2/\mathbb Z^2\), with coordinates \([x,y]\).
 \]
 Then \(\tau^2=1\) and \(\tau\) has no fixed points. The quotient identifies the first coordinate modulo \(1/2\), so
 \[
-T/\langle\tau\rangle\cong (\mathbb R/(\tfrac12\mathbb Z))\times(\mathbb R/\mathbb Z)\cong T.
+T/\langle\tau\rangle\cong (\RR/(\tfrac12\ZZ))\times(\RR/\ZZ)\cong T.
 \]
 Thus \(G=\{1,\tau\}\) has order \(2\) and torus quotient.
 

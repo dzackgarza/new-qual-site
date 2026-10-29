@@ -25,8 +25,8 @@ audit:
 
 ::: {.exercise}
 
-Let $\mathbb{R}$ denote the set of real numbers.
-For each of the following subsets of $\mathbb{R} \times \mathbb{R}$, determine whether it is equal to the cartesian product of two subsets of $\mathbb{R}$ .
+Let $\RR$ denote the set of real numbers.
+For each of the following subsets of $\RR \times \RR$, determine whether it is equal to the cartesian product of two subsets of $\RR$ .
 
 (a) $\{(x, y) \mid x \text{ is an integer}\}$ .
 
@@ -42,12 +42,12 @@ For each of the following subsets of $\mathbb{R} \times \mathbb{R}$, determine w
 ::: {.solution}
 (a) Yes. The set is
 \[
-\mathbb Z\times\mathbb R.
+\ZZ\times\RR.
 \]
 
 (b) Yes. It is
 \[
-\mathbb R\times(0,1].
+\RR\times(0,1].
 \]
 
 (c) No. If the set were \(A\times B\), then since \((0,1)\) and \((1,2)\) both satisfy \(y>x\), we would have
@@ -58,7 +58,7 @@ Hence \((1,1)\in A\times B\), contradicting \(1\not>1\).
 
 (d) Yes. It is
 \[
-(\mathbb R-\mathbb Z)\times\mathbb Z.
+(\RR-\ZZ)\times\ZZ.
 \]
 
 (e) No. If the open unit disk were \(A\times B\), then from

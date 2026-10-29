@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-9-1
 kind: problem
-title: Injective map from $\mathbb{Z}_+$ to $X^{\omega}$ without choice
+title: Injective map from $\ZZ_+$ to $X^{\omega}$ without choice
 classification:
   areas:
   - topology
@@ -25,11 +25,11 @@ audit:
 
 ::: {.exercise}
 
-Define an injective map $f: \mathbb{Z}_+ \to X^\omega$, where $X$ is the two-element set $\{0, 1\}$, without using the choice axiom.
+Define an injective map $f: \ZZ_+ \to X^\omega$, where $X$ is the two-element set $\{0, 1\}$, without using the choice axiom.
 :::
 
 ::: {.solution}
-For \(n\in\mathbb Z_+\), define
+For \(n\in\ZZ_+\), define
 \[
 f(n)=(\underbrace{1,\ldots,1}_{n\text{ entries}},0,0,\ldots)\in X^\omega.
 \]

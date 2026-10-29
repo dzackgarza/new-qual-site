@@ -25,21 +25,21 @@ audit:
 ::: {.exercise}
 
 Show that if $G_1$ is a subgroup of $G$, there may be no subgroup $G_2$ of $G$ such that $G = G_1 \oplus G_2$.
-[Hint: Set $G = \mathbb{Z}$ and $G_1 = 2\mathbb{Z}$.]
+[Hint: Set $G = \ZZ$ and $G_1 = 2\ZZ$.]
 :::
 
 ::: {.solution}
 Take
 \[
-G=\mathbb Z,\qquad G_1=2\mathbb Z.
+G=\ZZ,\qquad G_1=2\ZZ.
 \]
-Suppose there were a subgroup \(G_2\le\mathbb Z\) with
+Suppose there were a subgroup \(G_2\le\ZZ\) with
 \[
-\mathbb Z=2\mathbb Z\oplus G_2.
+\ZZ=2\ZZ\oplus G_2.
 \]
-Every subgroup of \(\mathbb Z\) has the form \(m\mathbb Z\) for some \(m\ge0\). If \(m=0\), then \(2\mathbb Z+G_2=2\mathbb Z\ne\mathbb Z\). If \(m>0\), then
+Every subgroup of \(\ZZ\) has the form \(m\ZZ\) for some \(m\ge0\). If \(m=0\), then \(2\ZZ+G_2=2\ZZ\ne\ZZ\). If \(m>0\), then
 \[
-2m\in2\mathbb Z\cap m\mathbb Z
+2m\in2\ZZ\cap m\ZZ
 \]
-is nonzero, contradicting directness. Therefore \(2\mathbb Z\) is a subgroup of \(\mathbb Z\) that has no complementary subgroup.
+is nonzero, contradicting directness. Therefore \(2\ZZ\) is a subgroup of \(\ZZ\) that has no complementary subgroup.
 :::

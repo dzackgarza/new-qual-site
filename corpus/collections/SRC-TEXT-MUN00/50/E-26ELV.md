@@ -22,31 +22,31 @@ Prove the following.
 
 Theorem.
 Let $X$ be a locally compact Hausdorff space with a countable basis, such that every compact subspace of $X$ has topological dimension at most $m$.
-Then $X$ is homeomorphic to a closed subspace of $\mathbb{R}^{2m+1}$.
+Then $X$ is homeomorphic to a closed subspace of $\RR^{2m+1}$.
 
-If $f: X \to \mathbb{R}^N$ is a continuous map, we say $f(x) \to \infty$ as $x \to \infty$ if given $n$, there is a compact subspace $C$ of $X$ such that $f(x) > n$ for $x \in X - C$.
+If $f: X \to \RR^N$ is a continuous map, we say $f(x) \to \infty$ as $x \to \infty$ if given $n$, there is a compact subspace $C$ of $X$ such that $f(x) > n$ for $x \in X - C$.
 
-(a) Let $\bar{\rho}$ be the uniform metric on $\mathcal{C}(X, \mathbb{R}^N)$.
+(a) Let $\bar{\rho}$ be the uniform metric on $\mathcal{C}(X, \RR^N)$.
 Show that if $f(x) \to \infty$ as $x \to \infty$ and $\bar{\rho}(f, g) < 1$, then $g(x) \to \infty$ as $x \to \infty$.
 
 (b) Show that if $f(x) \to \infty$ as $x \to \infty$, then $f$ extends to a continuous map of one-point compactifications.
-Conclude that if $f$ is injective as well, then $f$ is a homeomorphism of $X$ with a closed subspace of $\mathbb{R}^N$.
+Conclude that if $f$ is injective as well, then $f$ is a homeomorphism of $X$ with a closed subspace of $\RR^N$.
 
-(c) Given $f: X \to \mathbb{R}^N$ and given a compact subspace $C$ of $X$, let
+(c) Given $f: X \to \RR^N$ and given a compact subspace $C$ of $X$, let
 
 $$
 U_\epsilon(C) = \theset{f \mid \Delta(f \mid C) < \epsilon}.
 $$
 
-Show that $U_\epsilon(C)$ is open in $\mathcal{C}(X, \mathbb{R}^N)$.
+Show that $U_\epsilon(C)$ is open in $\mathcal{C}(X, \RR^N)$.
 
-(d) Show that if $N = 2m + 1$, then $U_\epsilon(C)$ is dense in $\mathcal{C}(X, \mathbb{R}^N)$.
-[Hint: Given $f$ and given $\epsilon, \delta > 0$, choose $g: C \to \mathbb{R}^N$ so that $d(f(x), g(x)) < \delta$ for $x \in C$, and $\Delta(g) < \epsilon$. Extend $f - g$ to $h: X \to [-\delta, \delta]^N$ using the Tietze theorem.]
+(d) Show that if $N = 2m + 1$, then $U_\epsilon(C)$ is dense in $\mathcal{C}(X, \RR^N)$.
+[Hint: Given $f$ and given $\epsilon, \delta > 0$, choose $g: C \to \RR^N$ so that $d(f(x), g(x)) < \delta$ for $x \in C$, and $\Delta(g) < \epsilon$. Extend $f - g$ to $h: X \to [-\delta, \delta]^N$ using the Tietze theorem.]
 
-(e) Show there exists a map $f: X \to \mathbb{R}^N$ such that $f(x) \to \infty$ as $x \to \infty$.
+(e) Show there exists a map $f: X \to \RR^N$ such that $f(x) \to \infty$ as $x \to \infty$.
 [Hint: Write $X$ as the union of compact subspaces $C_n$ such that $C_n \subset \operatorname{Int} C_{n+1}$ for each $n$.]
 
-(f) Let $C_n$ be as in (e). Use the fact that $\bigcap U_{1/n}(C_n)$ is dense in $\mathcal{C}(X, \mathbb{R}^N)$ to complete the proof.
+(f) Let $C_n$ be as in (e). Use the fact that $\bigcap U_{1/n}(C_n)$ is dense in $\mathcal{C}(X, \RR^N)$ to complete the proof.
 :::
 
 ::: {.solution}
@@ -58,7 +58,7 @@ Part (a): Perturbation of proper maps.
 ::: pf-proof
 
 ::: pf-step
-Let $n \in \mathbb{Z}_+$.
+Let $n \in \ZZ_+$.
 Since $f(x) \to \infty$, there exists a compact $C \subset X$ such that $\|f(x)\| > n + 1$ for all $x \in X \setminus C$.
 :::
 
@@ -84,29 +84,29 @@ Part (b): Continuous extension to one-point compactifications and closed embeddi
 ::: pf-proof
 
 ::: pf-step
-Let $X^* = X \cup \{\infty_X\}$ and $(\mathbb{R}^N)^* = \mathbb{R}^N \cup \{\infty\}$ be the one-point compactifications.
+Let $X^* = X \cup \{\infty_X\}$ and $(\RR^N)^* = \RR^N \cup \{\infty\}$ be the one-point compactifications.
 :::
 
 ::: pf-step
-Define $f^*: X^* \to (\mathbb{R}^N)^*$ by $f^*(x) = f(x)$ for $x \in X$ and $f^*(\infty_X) = \infty$.
+Define $f^*: X^* \to (\RR^N)^*$ by $f^*(x) = f(x)$ for $x \in X$ and $f^*(\infty_X) = \infty$.
 :::
 
 ::: pf-step
-For any neighborhood $V$ of $\infty$ in $(\mathbb{R}^N)^*$, $V$ contains $(\mathbb{R}^N \setminus \overline{B}_n) \cup \{\infty\}$.
-Since $f(x) \to \infty$, there is a compact $C \subset X$ with $f(X \setminus C) \subseteq \mathbb{R}^N \setminus \overline{B}_n$, so $(f^*)^{-1}(V) \supseteq (X \setminus C) \cup \{\infty_X\}$, which is open in $X^*$.
+For any neighborhood $V$ of $\infty$ in $(\RR^N)^*$, $V$ contains $(\RR^N \setminus \overline{B}_n) \cup \{\infty\}$.
+Since $f(x) \to \infty$, there is a compact $C \subset X$ with $f(X \setminus C) \subseteq \RR^N \setminus \overline{B}_n$, so $(f^*)^{-1}(V) \supseteq (X \setminus C) \cup \{\infty_X\}$, which is open in $X^*$.
 Thus $f^*$ is continuous.
 :::
 
 ::: pf-step
-If $f$ is injective, then $f^*$ is an injective continuous map from the compact Hausdorff space $X^*$ into the Hausdorff space $(\mathbb{R}^N)^*$, hence a topological embedding.
+If $f$ is injective, then $f^*$ is an injective continuous map from the compact Hausdorff space $X^*$ into the Hausdorff space $(\RR^N)^*$, hence a topological embedding.
 :::
 
 ::: pf-step
-The image $f^*(X^*)$ is compact, hence closed in $(\mathbb{R}^N)^*$.
+The image $f^*(X^*)$ is compact, hence closed in $(\RR^N)^*$.
 :::
 
 ::: pf-step
-Restricting to $X$, $f(X) = f^*(X^*) \cap \mathbb{R}^N$ is closed in $\mathbb{R}^N$, and $f: X \to f(X)$ is a homeomorphism.
+Restricting to $X$, $f(X) = f^*(X^*) \cap \RR^N$ is closed in $\RR^N$, and $f: X \to f(X)$ is a homeomorphism.
 :::
 
 :::
@@ -148,11 +148,11 @@ Part (d): Density of $U_\varepsilon(C)$ for $N = 2m + 1$.
 ::: pf-proof
 
 ::: pf-step
-Since $C$ is compact metrizable with $\dim C \le m$, the maps with $\Delta < \varepsilon$ are dense in $\mathcal{C}(C, \mathbb{R}^{2m+1})$; this is the density lemma in the proof of the imbedding theorem for compact metrizable spaces of dimension $m$.
+Since $C$ is compact metrizable with $\dim C \le m$, the maps with $\Delta < \varepsilon$ are dense in $\mathcal{C}(C, \RR^{2m+1})$; this is the density lemma in the proof of the imbedding theorem for compact metrizable spaces of dimension $m$.
 :::
 
 ::: pf-step
-Given $f \in \mathcal{C}(X, \mathbb{R}^N)$ and $\delta > 0$, choose $g_0 \in \mathcal{C}(C, \mathbb{R}^N)$ such that $\|f|_C - g_0\| < \delta$ and $\Delta(g_0) < \varepsilon$.
+Given $f \in \mathcal{C}(X, \RR^N)$ and $\delta > 0$, choose $g_0 \in \mathcal{C}(C, \RR^N)$ such that $\|f|_C - g_0\| < \delta$ and $\Delta(g_0) < \varepsilon$.
 :::
 
 ::: pf-step
@@ -160,7 +160,7 @@ By the Tietze Extension Theorem, extend the coordinate functions of $g_0 - f|_C:
 :::
 
 ::: pf-step
-Define $g = f + h \in \mathcal{C}(X, \mathbb{R}^N)$.
+Define $g = f + h \in \mathcal{C}(X, \RR^N)$.
 Then $\bar{\rho}(f, g) \le \delta$ and $g|_C = g_0 \in U_\varepsilon(C)$, proving density.
 :::
 
@@ -169,7 +169,7 @@ Then $\bar{\rho}(f, g) \le \delta$ and $g|_C = g_0 \in U_\varepsilon(C)$, provin
 :::
 
 ::: pf-step
-Part (e): Existence of a proper map $f_0: X \to \mathbb{R}^N$.
+Part (e): Existence of a proper map $f_0: X \to \RR^N$.
 
 ::: pf-proof
 
@@ -182,12 +182,12 @@ By Urysohn's Lemma, choose continuous functions $\phi_n: X \to [0, 1]$ with $\ph
 :::
 
 ::: pf-step
-Define $\psi: X \to \mathbb{R}$ by $\psi(x) = \sum_{n=1}^\infty (1 - \phi_n(x))$.
+Define $\psi: X \to \RR$ by $\psi(x) = \sum_{n=1}^\infty (1 - \phi_n(x))$.
 For $x \in X \setminus C_k$, $\psi(x) \ge k - 1$.
 :::
 
 ::: pf-step
-The map $f_0(x) = (\psi(x), 0, \dots, 0) \in \mathbb{R}^N$ is continuous and satisfies $f_0(x) \to \infty$ as $x \to \infty$.
+The map $f_0(x) = (\psi(x), 0, \dots, 0) \in \RR^N$ is continuous and satisfies $f_0(x) \to \infty$ as $x \to \infty$.
 :::
 
 :::
@@ -200,16 +200,16 @@ Part (f): an injective map $f$ with $f(x) \to \infty$ exists.
 ::: pf-proof
 
 ::: pf-step
-Since $\mathbb{R}^N$ is complete, $(\mathcal{C}(X, \mathbb{R}^N), \bar{\rho})$ is a complete metric space, hence a Baire space.
+Since $\RR^N$ is complete, $(\mathcal{C}(X, \RR^N), \bar{\rho})$ is a complete metric space, hence a Baire space.
 :::
 
 ::: pf-step
-Let $B = \{g \in \mathcal{C}(X, \mathbb{R}^N) : \bar{\rho}(f_0, g) < 1\}$.
+Let $B = \{g \in \mathcal{C}(X, \RR^N) : \bar{\rho}(f_0, g) < 1\}$.
 $B$ is a non-empty open subspace, hence a Baire space.
 :::
 
 ::: pf-step
-For each $n \in \mathbb{Z}_+$, $U_{1/n}(C_n) \cap B$ is open and dense in $B$ by step [](#s3){.pf-ref} and step [](#s4){.pf-ref}.
+For each $n \in \ZZ_+$, $U_{1/n}(C_n) \cap B$ is open and dense in $B$ by step [](#s3){.pf-ref} and step [](#s4){.pf-ref}.
 :::
 
 ::: pf-step
@@ -228,7 +228,7 @@ Thus $f$ is injective.
 :::
 
 ::: pf-step
-By step [](#s2){.pf-ref}, $f$ is a homeomorphism of $X$ onto a closed subspace of $\mathbb{R}^{2m+1}$.
+By step [](#s2){.pf-ref}, $f$ is a homeomorphism of $X$ onto a closed subspace of $\RR^{2m+1}$.
 :::
 
 :::

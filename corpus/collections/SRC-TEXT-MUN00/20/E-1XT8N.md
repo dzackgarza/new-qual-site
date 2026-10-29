@@ -19,7 +19,7 @@ audit:
 
 ::: {.exercise}
 
-Consider the map $h: \mathbb{R}^\omega \to \mathbb{R}^\omega$ defined in Exercise 8 of §19; give $\mathbb{R}^\omega$ the uniform topology.
+Consider the map $h: \RR^\omega \to \RR^\omega$ defined in Exercise 8 of §19; give $\RR^\omega$ the uniform topology.
 Under what conditions on the numbers $a_i$ and $b_i$ is $h$ continuous?
 a homeomorphism?
 :::
@@ -30,7 +30,7 @@ Here $h(\mathbf x)=(a_ix_i+b_i)_{i\ge1}$ with $a_i>0$, as in [[E-AWEWJ]], and th
 ::: pf
 
 ::: {.pf-step #translation-isometry}
-Translation $\mathbf x\mapsto\mathbf x+\mathbf b$ is an isometry of $(\mathbb R^\omega,\bar\rho)$, so $h$ is continuous, or a homeomorphism, if and only if $\mathbf x\mapsto(a_ix_i)_i$ is.
+Translation $\mathbf x\mapsto\mathbf x+\mathbf b$ is an isometry of $(\RR^\omega,\bar\rho)$, so $h$ is continuous, or a homeomorphism, if and only if $\mathbf x\mapsto(a_ix_i)_i$ is.
 
 ::: pf-proof
 $\min\{\abs{(x_i+b_i)-(y_i+b_i)},1\}=\min\{\abs{x_i-y_i},1\}$ for every $i$.

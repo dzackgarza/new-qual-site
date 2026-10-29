@@ -18,7 +18,7 @@ audit:
 
 ::: {.exercise}
 
-Show that the set $\mathcal{B}(\mathbb{R}, \mathbb{R})$ of bounded functions $f: \mathbb{R} \to \mathbb{R}$ is closed in $\mathbb{R}^{\mathbb{R}}$ in the uniform topology, but not in the topology of compact convergence.
+Show that the set $\mathcal{B}(\RR, \RR)$ of bounded functions $f: \RR \to \RR$ is closed in $\RR^{\RR}$ in the uniform topology, but not in the topology of compact convergence.
 :::
 
 ::: {.solution}

@@ -25,35 +25,35 @@ audit:
 
 ::: {.exercise}
 
-If $L$ is a straight line in the plane, describe the topology $L$ inherits as a subspace of $\mathbb{R}_\ell \times \mathbb{R}$ and as a subspace of $\mathbb{R}_\ell \times \mathbb{R}_\ell$.
+If $L$ is a straight line in the plane, describe the topology $L$ inherits as a subspace of $\RR_\ell \times \RR$ and as a subspace of $\RR_\ell \times \RR_\ell$.
 In each case it is a familiar topology.
 :::
 
 ::: {.solution}
-Parametrize a nonvertical line $L=\{(x,mx+k):x\in\mathbb R\}$ by its first coordinate $x$, and a vertical line by its second coordinate.
+Parametrize a nonvertical line $L=\{(x,mx+k):x\in\RR\}$ by its first coordinate $x$, and a vertical line by its second coordinate.
 
-For $\mathbb R_\ell\times\mathbb R$, a basic rectangle is
+For $\RR_\ell\times\RR$, a basic rectangle is
 \[
 [a,b)\times(c,d).
 \]
-If $L$ is vertical, intersection with such rectangles gives ordinary open intervals in the second coordinate, so the induced topology is the standard topology on $\mathbb R$. If $L$ is nonvertical (including horizontal lines), the trace of $[a,b)\times(c,d)$ on $L$ is
+If $L$ is vertical, intersection with such rectangles gives ordinary open intervals in the second coordinate, so the induced topology is the standard topology on $\RR$. If $L$ is nonvertical (including horizontal lines), the trace of $[a,b)\times(c,d)$ on $L$ is
 \[
 \{x\in[a,b):mx+k\in(c,d)\},
 \]
-the intersection of $[a,b)$ with a standard open set, hence open in $\mathbb R_\ell$. Conversely, $[x_0,x_0+\varepsilon)$ is the trace of $[x_0,x_0+\varepsilon)\times(c,d)$ for any open interval $(c,d)$ containing $\{mx+k:x_0\le x\le x_0+\varepsilon\}$. So the induced topology is the lower-limit topology. Hence
+the intersection of $[a,b)$ with a standard open set, hence open in $\RR_\ell$. Conversely, $[x_0,x_0+\varepsilon)$ is the trace of $[x_0,x_0+\varepsilon)\times(c,d)$ for any open interval $(c,d)$ containing $\{mx+k:x_0\le x\le x_0+\varepsilon\}$. So the induced topology is the lower-limit topology. Hence
 \[
 L\cong
 \begin{cases}
-\mathbb R,&L\text{ vertical},\\
-\mathbb R_\ell,&L\text{ nonvertical}.
+\RR,&L\text{ vertical},\\
+\RR_\ell,&L\text{ nonvertical}.
 \end{cases}
 \]
 
-For $\mathbb R_\ell\times\mathbb R_\ell$, basic rectangles are
+For $\RR_\ell\times\RR_\ell$, basic rectangles are
 \[
 [a,b)\times[c,d).
 \]
-A vertical or horizontal line inherits $\mathbb R_\ell$. A line of positive slope $m$ also inherits $\mathbb R_\ell$: the trace of $[a,b)\times[c,d)$ is
+A vertical or horizontal line inherits $\RR_\ell$. A line of positive slope $m$ also inherits $\RR_\ell$: the trace of $[a,b)\times[c,d)$ is
 \[
 [a,b)\cap\Bigl[\tfrac{c-k}{m},\tfrac{d-k}{m}\Bigr),
 \]
@@ -65,8 +65,8 @@ meets the line only at $(x_0,y_0)$, since moving to larger $x$ forces $y<y_0$. T
 \[
 L\cong
 \begin{cases}
-\mathbb R_\ell,&L\text{ vertical, horizontal, or of positive slope},\\
-\mathbb R_d,&L\text{ of negative slope}.
+\RR_\ell,&L\text{ vertical, horizontal, or of positive slope},\\
+\RR_d,&L\text{ of negative slope}.
 \end{cases}
 \]
 :::

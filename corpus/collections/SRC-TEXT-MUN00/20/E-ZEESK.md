@@ -27,10 +27,10 @@ audit:
 
 Let $X$ be a metric space with metric $d$.
 
-(a) Show that $d: X \times X \to \mathbb{R}$ is continuous.
+(a) Show that $d: X \times X \to \RR$ is continuous.
 
 (b) Let $X'$ denote a space having the same underlying set as $X$.
-Show that if $d: X' \times X' \to \mathbb{R}$ is continuous, then the topology of $X'$ is finer than the topology of $X$.
+Show that if $d: X' \times X' \to \RR$ is continuous, then the topology of $X'$ is finer than the topology of $X$.
 
 One can summarize the result of this exercise as follows: if $X$ has a metric $d$, then the topology induced by $d$ is the coarsest topology relative to which the function $d$ is continuous.
 :::
@@ -53,9 +53,9 @@ then
 \[
 |d(x,y)-d(x',y')|<\varepsilon.
 \]
-Thus $d:X\times X\to\mathbb R$ is continuous.
+Thus $d:X\times X\to\RR$ is continuous.
 
-(b) Assume $d:X'\times X'\to\mathbb R$ is continuous, where $X'$ has the same underlying set. Fix $a\in X'$. The map
+(b) Assume $d:X'\times X'\to\RR$ is continuous, where $X'$ has the same underlying set. Fix $a\in X'$. The map
 \[
 j_a:X'\to X'\times X',\qquad j_a(x)=(a,x)
 \]

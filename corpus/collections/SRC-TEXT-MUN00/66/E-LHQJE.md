@@ -18,7 +18,7 @@ audit:
 
 ::: {.exercise}
 
-Let $f$ be a loop in $\mathbb{R}^2 - a$; let $g(s) = [f(s) - a]/\norm{f(s) - a}$.
+Let $f$ be a loop in $\RR^2 - a$; let $g(s) = [f(s) - a]/\norm{f(s) - a}$.
 The map $g$ induces, via the standard quotient map $p: I \to S^1$, a continuous map $h: S^1 \to S^1$.
 Show that $n(f, a)$ equals the degree of $h$, as defined in [[E-UU8CC]].
 :::
@@ -35,7 +35,7 @@ Lifting and definition of the winding number:
 
 ::: pf-step
 
-Consider the standard universal covering map $e: \mathbb{R} \to S^1$ given by $e(t) = (\cos 2\pi t, \sin 2\pi t) = e^{2\pi i t}$.
+Consider the standard universal covering map $e: \RR \to S^1$ given by $e(t) = (\cos 2\pi t, \sin 2\pi t) = e^{2\pi i t}$.
 The normalized loop $g: [0, 1] \to S^1$ is defined by:
 \[
 g(s) = \frac{f(s) - a}{\|f(s) - a\|}.
@@ -51,7 +51,7 @@ definition of radial projection onto $S^1$.
 
 ::: pf-step
 
-By the Path Lifting Property for covering spaces, given any choice of $\tilde{g}(0) = t_0 \in e^{-1}(g(0))$, there exists a unique continuous lift $\tilde{g}: [0, 1] \to \mathbb{R}$ such that $e \circ \tilde{g} = g$.
+By the Path Lifting Property for covering spaces, given any choice of $\tilde{g}(0) = t_0 \in e^{-1}(g(0))$, there exists a unique continuous lift $\tilde{g}: [0, 1] \to \RR$ such that $e \circ \tilde{g} = g$.
 
 ::: pf-proof
 
@@ -114,7 +114,7 @@ functoriality of the fundamental group.
 
 ::: pf-step
 
-Under the canonical isomorphism $\pi_1(S^1) \cong \mathbb{Z}$ that identifies a loop's homotopy class with the difference of the endpoints of its lift in $\mathbb{R}$:
+Under the canonical isomorphism $\pi_1(S^1) \cong \ZZ$ that identifies a loop's homotopy class with the difference of the endpoints of its lift in $\RR$:
 The loop $g = h \circ \gamma$ lifts to $\tilde{g}$, so the degree of $h$ is:
 \[
 \deg(h) = \tilde{g}(1) - \tilde{g}(0).

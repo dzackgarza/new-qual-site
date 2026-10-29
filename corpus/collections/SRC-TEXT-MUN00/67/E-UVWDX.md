@@ -70,11 +70,11 @@ The subgroup $\langle u,v\rangle$ contains $x$ and $y$ by step [](#s1){.pf-ref},
 
 ::: {.pf-step #s3}
 
-The elements $u$ and $v$ are linearly independent over $\mathbb Z$.
+The elements $u$ and $v$ are linearly independent over $\ZZ$.
 
 ::: pf-proof
 
-Suppose $au+bv=0$ with $a,b\in\mathbb Z$. Then
+Suppose $au+bv=0$ with $a,b\in\ZZ$. Then
 \[
 (2a+b)x+(3a+2b)y=0,
 \]

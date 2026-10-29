@@ -88,11 +88,11 @@ Counterexamples for non-guaranteed properties:
 ::: pf-step
 **Countability and Metrizability (First-countable, Second-countable, Separable, Metrizable):**
 - The one-point compactification of an uncountable discrete space is compact Hausdorff, but fails to be first-countable (and hence not second-countable, separable, or metrizable).
-- The product space $\{0, 1\}^{\mathbb{R}}$ is compact Hausdorff by Tychonoff's Theorem, but is not first-countable and not metrizable.
+- The product space $\{0, 1\}^{\RR}$ is compact Hausdorff by Tychonoff's Theorem, but is not first-countable and not metrizable.
 :::
 
 ::: pf-step
-**Sequential compactness:** The space $\{0, 1\}^{\mathbb{R}}$ (or the Stone-Čech compactification $\beta\mathbb{N}$) is compact Hausdorff but not sequentially compact.
+**Sequential compactness:** The space $\{0, 1\}^{\RR}$ (or the Stone-Čech compactification $\beta\NN$) is compact Hausdorff but not sequentially compact.
 :::
 
 ::: pf-step

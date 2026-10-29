@@ -38,15 +38,15 @@ A composite of continuous maps is continuous.
 :::
 
 ::: {.pf-step #reverse-implication-fails}
-The map $f\colon\mathbb R\to\mathbb R^\omega$, $f(t)=(t,t,t,\ldots)$, has continuous coordinates but is not continuous for the box topology.
+The map $f\colon\RR\to\RR^\omega$, $f(t)=(t,t,t,\ldots)$, has continuous coordinates but is not continuous for the box topology.
 
 ::: pf-proof
-Each $f_n$ is the identity of $\mathbb R$.
+Each $f_n$ is the identity of $\RR$.
 The set $B=\prod_{n\ge1}(-\frac1n,\frac1n)$ is box-open, and
 $$
 f^{-1}(B)=\bigcap_{n\ge1}\left(-\tfrac1n,\tfrac1n\right)=\{0\},
 $$
-which is not open in $\mathbb R$.
+which is not open in $\RR$.
 :::
 
 :::

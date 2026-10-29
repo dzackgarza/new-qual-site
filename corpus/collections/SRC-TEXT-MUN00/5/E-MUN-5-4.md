@@ -25,7 +25,7 @@ audit:
 
 ::: {.exercise}
 
-Let $m, n \in \mathbb{Z}_{+}$ . Let $X \neq \varnothing$ .
+Let $m, n \in \ZZ_{+}$ . Let $X \neq \varnothing$ .
 
 (a) If $m \leq n$, find an injective map $f: X^m \to X^n$ .
 

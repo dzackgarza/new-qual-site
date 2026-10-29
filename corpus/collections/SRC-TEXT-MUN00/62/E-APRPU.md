@@ -51,24 +51,24 @@ is nullhomotopic: transport a nullhomotopy of \(f\) through \(f^{-1}\). Hence it
 
 Identify
 \[
-S^n-\{b\}\cong\mathbb R^n
+S^n-\{b\}\cong\RR^n
 \]
 so that \(a\) corresponds to \(0\). The assertion becomes:
 
-> If \(A\subset\mathbb R^n-\{0\}\) is compact and the inclusion
-> \(j:A\hookrightarrow\mathbb R^n-\{0\}\) is nullhomotopic, then \(0\) lies in the unbounded component of \(\mathbb R^n-A\).
+> If \(A\subset\RR^n-\{0\}\) is compact and the inclusion
+> \(j:A\hookrightarrow\RR^n-\{0\}\) is nullhomotopic, then \(0\) lies in the unbounded component of \(\RR^n-A\).
 
-Suppose instead that the component \(C\) of \(\mathbb R^n-A\) containing \(0\) is bounded. Since \(A\) is compact, \(C\cup A\) is a metrizable space. The homotopy-extension lemma used in Munkres's proof of the Borsuk lemma applies to the closed subset \(A\subset C\cup A\): because \(j\) is nullhomotopic, there is a continuous extension
+Suppose instead that the component \(C\) of \(\RR^n-A\) containing \(0\) is bounded. Since \(A\) is compact, \(C\cup A\) is a metrizable space. The homotopy-extension lemma used in Munkres's proof of the Borsuk lemma applies to the closed subset \(A\subset C\cup A\): because \(j\) is nullhomotopic, there is a continuous extension
 \[
-g:C\cup A\longrightarrow\mathbb R^n-\{0\}
+g:C\cup A\longrightarrow\RR^n-\{0\}
 \]
 with \(g|_A=j\).
 
 Let
 \[
-D=\mathbb R^n-C.
+D=\RR^n-C.
 \]
-Because \(A\) is closed, \(\mathbb R^n-A\) is locally path connected. Hence its components are open as well as closed in \(\mathbb R^n-A\). Thus \(C\) is open in \(\mathbb R^n\), so \(D\) is closed; and the union of all components of \(\mathbb R^n-A\) other than \(C\) is open in \(\mathbb R^n\), so its complement \(C\cup A\) is closed. Since \(C\cap A=\varnothing\), we have
+Because \(A\) is closed, \(\RR^n-A\) is locally path connected. Hence its components are open as well as closed in \(\RR^n-A\). Thus \(C\) is open in \(\RR^n\), so \(D\) is closed; and the union of all components of \(\RR^n-A\) other than \(C\) is open in \(\RR^n\), so its complement \(C\cup A\) is closed. Since \(C\cap A=\varnothing\), we have
 \[
 (C\cup A)\cap D=A.
 \]
@@ -80,9 +80,9 @@ g(x),&x\in C\cup A,\\
 x,&x\in D
 \end{cases}
 \]
-is a continuous map \(G:\mathbb R^n\to\mathbb R^n-\{0\}\). Since \(C\) is bounded, choose a closed ball \(B\) centered at \(0\) containing \(C\) in its interior. On \(\partial B\) we have \(G=\operatorname{id}\). Composing \(G|_B\) with radial projection
+is a continuous map \(G:\RR^n\to\RR^n-\{0\}\). Since \(C\) is bounded, choose a closed ball \(B\) centered at \(0\) containing \(C\) in its interior. On \(\partial B\) we have \(G=\operatorname{id}\). Composing \(G|_B\) with radial projection
 \[
-r:\mathbb R^n-\{0\}\longrightarrow\partial B
+r:\RR^n-\{0\}\longrightarrow\partial B
 \]
 gives a retraction
 \[
@@ -96,7 +96,7 @@ i:A\hookrightarrow S^n-\{a,b\}
 \]
 is nullhomotopic: contract \(A\) to any point of \(A\), and this contraction remains inside \(A\subset S^n-\{a,b\}\). The map \(i\) is injective, so part (a) says that \(a\) and \(b\) must lie in the same component of \(S^n-A\), a contradiction. Thus no compact contractible subspace of \(S^n\) separates \(S^n\).
 
-**(c) Invariance of domain.** Assume additionally that every embedded copy of \(S^{n-1}\) in \(S^n\) separates \(S^n\). Let \(U\subset\mathbb R^n\) be open and let
+**(c) Invariance of domain.** Assume additionally that every embedded copy of \(S^{n-1}\) in \(S^n\) separates \(S^n\). Let \(U\subset\RR^n\) be open and let
 \[
 f:U\to S^n
 \]

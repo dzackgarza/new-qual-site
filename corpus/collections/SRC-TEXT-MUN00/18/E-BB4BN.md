@@ -24,7 +24,7 @@ audit:
 
 ::: {.exercise}
 
-Show that the subspace $(a, b)$ of $\mathbb{R}$ is homeomorphic with $(0, 1)$ and the subspace $[a, b]$ of $\mathbb{R}$ is homeomorphic with $[0, 1]$.
+Show that the subspace $(a, b)$ of $\RR$ is homeomorphic with $(0, 1)$ and the subspace $[a, b]$ of $\RR$ is homeomorphic with $[0, 1]$.
 :::
 
 ::: {.solution}

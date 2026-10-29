@@ -15,7 +15,7 @@ review: draft
 ::: {.exercise}
 
 If $m > 1$, show the fundamental group of the $m$-fold projective plane is not abelian.
-[Hint: There is a homomorphism mapping this group onto the group $\mathbb{Z}/2 * \mathbb{Z}/2$.]
+[Hint: There is a homomorphism mapping this group onto the group $\ZZ/2 * \ZZ/2$.]
 :::
 
 ::: {.solution}

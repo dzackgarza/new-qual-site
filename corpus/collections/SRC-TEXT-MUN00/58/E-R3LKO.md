@@ -51,7 +51,7 @@ Hence \(j_*\) is injective. Since \(j_*f_*\) is an automorphism, \(j_*\) is surj
 
 (c) Let \(X=D^2\), \(A=S^1=\partial D^2\), and let \(f:D^2\to S^1\) be a constant map. Then \(jf\) is constant and is homotopic to \(\operatorname{id}_{D^2}\) because \(D^2\) is contractible. But
 \[
-j_*:\pi_1(S^1)\cong\mathbb Z\longrightarrow\pi_1(D^2)=0
+j_*:\pi_1(S^1)\cong\ZZ\longrightarrow\pi_1(D^2)=0
 \]
 is not an isomorphism.
 :::

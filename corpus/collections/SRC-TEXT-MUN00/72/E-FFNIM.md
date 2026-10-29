@@ -107,7 +107,7 @@ contractibility of open Euclidean balls.
 ::: pf-step
 
 **Simply-connectedness of $U \cap V$ for $n > 2$:**
-The intersection $U \cap V = h(\{x \in B^n \mid 0 < \|x\| < 3/4\})$ is homeomorphic to the punctured Euclidean ball $\mathbb{R}^n \setminus \{0\}$, which deformation retracts onto the sphere $S^{n-1}$.
+The intersection $U \cap V = h(\{x \in B^n \mid 0 < \|x\| < 3/4\})$ is homeomorphic to the punctured Euclidean ball $\RR^n \setminus \{0\}$, which deformation retracts onto the sphere $S^{n-1}$.
 Since $n > 2$, the dimension $n - 1 \ge 2$, so $S^{n-1}$ is simply connected:
 \[
 \pi_1(U \cap V) \cong \pi_1(S^{n-1}) = 0.

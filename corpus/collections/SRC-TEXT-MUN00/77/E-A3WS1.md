@@ -39,7 +39,7 @@ A proper labeling scheme $w$ on a 10-sided polygon has $m = 5$ pairs of matched 
 
 ::: pf-step
 By the classification reduction algorithm (Theorem 77.5):
-- A scheme of **projective type** reduces to a standard non-orientable normal form $c_1 c_1 c_2 c_2 \cdots c_k c_k$, representing the connected sum of $k$ real projective planes ($k \mathbb{P}^2$ or $P_k$). Each cross-cap block $c_i c_i$ uses $2$ edges.
+- A scheme of **projective type** reduces to a standard non-orientable normal form $c_1 c_1 c_2 c_2 \cdots c_k c_k$, representing the connected sum of $k$ real projective planes ($k \PP^2$ or $P_k$). Each cross-cap block $c_i c_i$ uses $2$ edges.
 - A scheme of **torus type** reduces either to the empty word / 2-sphere ($S^2$) or to a standard orientable normal form $(a_1 b_1 a_1^{-1} b_1^{-1}) \cdots (a_g b_g a_g^{-1} b_g^{-1})$, representing the connected sum of $g$ tori ($g T^2$ or $T_g$). Each handle block uses $4$ edges.
 :::
 
@@ -70,11 +70,11 @@ Each value $k \in \{1, 2, 3, 4, 5\}$ can be realized by adding $5 - k$ pairs of 
 
 ::: pf-step
 Thus, $w$ can represent:
-- $k = 1$: $\mathbb{P}^2$ (the real projective plane),
-- $k = 2$: $2\mathbb{P}^2 = \mathbb{P}^2 \# \mathbb{P}^2$ (the Klein bottle),
-- $k = 3$: $3\mathbb{P}^2$,
-- $k = 4$: $4\mathbb{P}^2$,
-- $k = 5$: $5\mathbb{P}^2$.
+- $k = 1$: $\PP^2$ (the real projective plane),
+- $k = 2$: $2\PP^2 = \PP^2 \# \PP^2$ (the Klein bottle),
+- $k = 3$: $3\PP^2$,
+- $k = 4$: $4\PP^2$,
+- $k = 5$: $5\PP^2$.
 :::
 
 :::
@@ -114,7 +114,7 @@ Thus, $w$ can represent:
 
 ::: pf-step
 Conclusion:
-- **Projective type:** $\mathbb{P}^2, \, 2\mathbb{P}^2, \, 3\mathbb{P}^2, \, 4\mathbb{P}^2, \, 5\mathbb{P}^2$.
+- **Projective type:** $\PP^2, \, 2\PP^2, \, 3\PP^2, \, 4\PP^2, \, 5\PP^2$.
 - **Torus type:** $S^2, \, T^2, \, T^2 \# T^2$.
 :::
 

@@ -27,11 +27,11 @@ audit:
 ::: {.exercise}
 
 Let $I = [0, 1]$.
-Compare the product topology on $I \times I$, the dictionary order topology on $I \times I$, and the topology $I \times I$ inherits as a subspace of $\mathbb{R} \times \mathbb{R}$ in the dictionary order topology.
+Compare the product topology on $I \times I$, the dictionary order topology on $I \times I$, and the topology $I \times I$ inherits as a subspace of $\RR \times \RR$ in the dictionary order topology.
 :::
 
 ::: {.solution}
-Let $\mathcal P$ be the product topology on $I^2$, $\mathcal D$ the dictionary order topology on $I^2$, and $\mathcal S$ the topology inherited from the dictionary order topology on $\mathbb R^2$.
+Let $\mathcal P$ be the product topology on $I^2$, $\mathcal D$ the dictionary order topology on $I^2$, and $\mathcal S$ the topology inherited from the dictionary order topology on $\RR^2$.
 
 The product and dictionary-order topologies are incomparable. The set
 \[
@@ -43,9 +43,9 @@ is product-open (since $(1/2,1]$ is open in the subspace $I$), but it is not dic
 \]
 is dictionary-order open, but is not product-open.
 
-The subspace topology $\mathcal S$ is finer than the product topology because, by [[E-QMZO5]], the ambient dictionary topology on $\mathbb R^2$ is $\mathbb R_d\times\mathbb R$; restricting to $I^2$ gives the product of discrete $I$ in the first coordinate with the usual subspace topology in the second, which contains the ordinary product topology.
+The subspace topology $\mathcal S$ is finer than the product topology because, by [[E-QMZO5]], the ambient dictionary topology on $\RR^2$ is $\RR_d\times\RR$; restricting to $I^2$ gives the product of discrete $I$ in the first coordinate with the usual subspace topology in the second, which contains the ordinary product topology.
 
-It is also finer than the dictionary order topology $\mathcal D$: for $a\in I^2$, the open rays $\{y\in I^2:y<a\}$ and $\{y\in I^2:y>a\}$ of the ordered square are the intersections of $I^2$ with the corresponding open rays of $\mathbb R^2$, so every $\mathcal D$-open set is $\mathcal S$-open. Both inclusions are strict. Strictness over $\mathcal P$ follows from the open set $\{0\}\times(0,1)$. Strictness over $\mathcal D$ follows, for example, from
+It is also finer than the dictionary order topology $\mathcal D$: for $a\in I^2$, the open rays $\{y\in I^2:y<a\}$ and $\{y\in I^2:y>a\}$ of the ordered square are the intersections of $I^2$ with the corresponding open rays of $\RR^2$, so every $\mathcal D$-open set is $\mathcal S$-open. Both inclusions are strict. Strictness over $\mathcal P$ follows from the open set $\{0\}\times(0,1)$. Strictness over $\mathcal D$ follows, for example, from
 \[
 \{1/2\}\times(1/2,1],
 \]

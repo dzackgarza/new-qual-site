@@ -53,10 +53,10 @@ By step [](#restriction-preimage-closed){.pf-ref}, $f^{-1}(C)$ is a finite union
 :::
 
 ::: {.pf-step #part-b}
-(b) For the closed sets $A_0=(-\infty,0]$ and $A_n=[\frac1n,\infty)$, $n\in\mathbb Z_+$, covering $\mathbb R$, the function $f\colon\mathbb R\to\mathbb R$ with $f(x)=0$ for $x\le0$ and $f(x)=1$ for $x>0$ is continuous on each $A_n$ but not continuous.
+(b) For the closed sets $A_0=(-\infty,0]$ and $A_n=[\frac1n,\infty)$, $n\in\ZZ_+$, covering $\RR$, the function $f\colon\RR\to\RR$ with $f(x)=0$ for $x\le0$ and $f(x)=1$ for $x>0$ is continuous on each $A_n$ but not continuous.
 
 ::: pf-proof
-The sets cover $\mathbb R$, since every $x>0$ exceeds some $\frac1n$.
+The sets cover $\RR$, since every $x>0$ exceeds some $\frac1n$.
 The restriction of $f$ to $A_0$ is constant $0$ and to each $A_n$, $n\ge1$, is constant $1$.
 The set $f^{-1}(\{0\})=(-\infty,0]$ is closed, but $f^{-1}(\{1\})=(0,\infty)$ is not closed, although $\{1\}$ is closed.
 :::

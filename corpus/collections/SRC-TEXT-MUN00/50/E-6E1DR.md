@@ -19,29 +19,29 @@ audit:
 ::: {.exercise}
 
 Corollary.
-A space $X$ can be imbedded as a closed subspace of $\mathbb{R}^N$ for some $N$ if and only if $X$ is locally compact and Hausdorff with a countable basis, and has finite topological dimension.
+A space $X$ can be imbedded as a closed subspace of $\RR^N$ for some $N$ if and only if $X$ is locally compact and Hausdorff with a countable basis, and has finite topological dimension.
 :::
 
 ::: {.solution}
 ::: pf
 
 ::: {.pf-step #s1}
-Direct implication ($\implies$): Suppose $h: X \to \mathbb{R}^N$ is an embedding onto a closed subspace $h(X) \subseteq \mathbb{R}^N$.
+Direct implication ($\implies$): Suppose $h: X \to \RR^N$ is an embedding onto a closed subspace $h(X) \subseteq \RR^N$.
 
 ::: pf-proof
 
 ::: pf-step
-**Locally compact Hausdorff:** $\mathbb{R}^N$ is locally compact and Hausdorff.
+**Locally compact Hausdorff:** $\RR^N$ is locally compact and Hausdorff.
 Closed subspaces of locally compact Hausdorff spaces are locally compact Hausdorff, so $X \cong h(X)$ is locally compact Hausdorff.
 :::
 
 ::: pf-step
-**Second-countable:** $\mathbb{R}^N$ is second-countable.
+**Second-countable:** $\RR^N$ is second-countable.
 Second-countability is hereditary to all subspaces, so $X$ has a countable basis.
 :::
 
 ::: pf-step
-**Finite topological dimension:** By the dimension properties of Euclidean space, $\dim \mathbb{R}^N = N$.
+**Finite topological dimension:** By the dimension properties of Euclidean space, $\dim \RR^N = N$.
 Topological dimension is monotonic on subspaces, so $\dim X = \dim h(X) \le N < \infty$.
 :::
 
@@ -60,13 +60,13 @@ Since $X$ is locally compact Hausdorff and second-countable, $X^*$ is a compact 
 :::
 
 ::: pf-step
-**Embedding of compactification:** By the imbedding theorem for compact metrizable spaces (Theorem 50.5), a compact metrizable space of topological dimension $m$ imbeds in $\mathbb{R}^{2m+1}$, so there exists a topological embedding $g: X^* \to \mathbb{R}^{2m+1}$.
+**Embedding of compactification:** By the imbedding theorem for compact metrizable spaces (Theorem 50.5), a compact metrizable space of topological dimension $m$ imbeds in $\RR^{2m+1}$, so there exists a topological embedding $g: X^* \to \RR^{2m+1}$.
 :::
 
 ::: pf-step
-**Construction of closed embedding into $\mathbb{R}^{2m+2}$:** Let $p_0 = g(\infty) \in \mathbb{R}^{2m+1}$.
+**Construction of closed embedding into $\RR^{2m+2}$:** Let $p_0 = g(\infty) \in \RR^{2m+1}$.
 For $x \in X$, $g(x) \neq p_0$.
-Define $F: X \to \mathbb{R}^{2m+1} \times \mathbb{R} = \mathbb{R}^{2m+2}$ by: $$F(x) = \left( g(x), \frac{1}{\|g(x) - p_0\|} \right).$$
+Define $F: X \to \RR^{2m+1} \times \RR = \RR^{2m+2}$ by: $$F(x) = \left( g(x), \frac{1}{\|g(x) - p_0\|} \right).$$
 :::
 
 ::: pf-step
@@ -83,7 +83,7 @@ Define $F: X \to \mathbb{R}^{2m+1} \times \mathbb{R} = \mathbb{R}^{2m+2}$ by: $$
 :::
 
 ::: pf-step
-Any proper continuous injection into a Hausdorff space is a closed embedding, so $F(X)$ is closed in $\mathbb{R}^{2m+2}$.
+Any proper continuous injection into a Hausdorff space is a closed embedding, so $F(X)$ is closed in $\RR^{2m+2}$.
 :::
 
 :::
@@ -91,7 +91,7 @@ Any proper continuous injection into a Hausdorff space is a closed embedding, so
 :::
 
 ::: pf-qed
-Step [](#s1){.pf-ref} proves the forward implication, and step [](#s2){.pf-ref} imbeds $X$ as a closed subspace of $\mathbb{R}^N$ with $N = 2m+2$.
+Step [](#s1){.pf-ref} proves the forward implication, and step [](#s2){.pf-ref} imbeds $X$ as a closed subspace of $\RR^N$ with $N = 2m+2$.
 :::
 
 :::

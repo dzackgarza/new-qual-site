@@ -75,7 +75,7 @@ Thus the fundamental group of $X$ is a free group of rank $k$:
 
 ::: pf-step
 
-The rank $k$ of a finitely generated free group is uniquely determined by its abelianization $\pi_1(X)^{\text{ab}} \cong \mathbb{Z}^k$ (or first homology $H_1(X) \cong \mathbb{Z}^k$).
+The rank $k$ of a finitely generated free group is uniquely determined by its abelianization $\pi_1(X)^{\text{ab}} \cong \ZZ^k$ (or first homology $H_1(X) \cong \ZZ^k$).
 
 :::
 

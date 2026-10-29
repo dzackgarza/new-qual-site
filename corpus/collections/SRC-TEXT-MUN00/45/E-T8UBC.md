@@ -51,7 +51,7 @@ d_Y(h(x),f(x))<\delta+\varepsilon/2<\varepsilon.
 \]
 Taking the supremum gives $\|h-f\|_\infty<\varepsilon$. Thus $g^{-1}$ is continuous at $G_f$.
 
-(c) Take $X=\{1/k: k\in\mathbb Z_+\}\subset\mathbb R$ and $Y=\mathbb R$, with the usual metrics. Every function on the discrete space $X$ is continuous. Let $f(1/k)=(-1)^k$, and for $n\ge1$ let $h_n(1/k)=(-1)^k$ for $k\le n$ and $h_n(1/k)=(-1)^{k+1}$ for $k>n$. The graphs lie in $(0,1]\times[-1,1]$, so they are bounded, and they are closed because the functions are continuous.
+(c) Take $X=\{1/k: k\in\ZZ_+\}\subset\RR$ and $Y=\RR$, with the usual metrics. Every function on the discrete space $X$ is continuous. Let $f(1/k)=(-1)^k$, and for $n\ge1$ let $h_n(1/k)=(-1)^k$ for $k\le n$ and $h_n(1/k)=(-1)^{k+1}$ for $k>n$. The graphs lie in $(0,1]\times[-1,1]$, so they are bounded, and they are closed because the functions are continuous.
 
 For $k>n$, the point $(1/k,h_n(1/k))=(1/k,f(1/(k+1)))$ of $G_{h_n}$ lies within $1/k-1/(k+1)<1/n^2$ of the point $(1/(k+1),f(1/(k+1)))$ of $G_f$. Likewise $(1/k,f(1/k))=(1/k,h_n(1/(k+1)))$ lies within $1/n^2$ of $G_{h_n}$. The points with $k\le n$ are common to both graphs. Hence
 \[

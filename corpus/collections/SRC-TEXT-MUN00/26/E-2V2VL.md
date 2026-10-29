@@ -81,7 +81,7 @@ If $K \neq \emptyset$, fix an arbitrary basepoint $x_0 \in K$.
 :::
 
 ::: pf-step
-For every $x \in K$, $d(x_0, x) < n$ for some integer $n \in \mathbb{Z}_+$, so $K \subseteq \bigcup_{n=1}^\infty B(x_0, n)$.
+For every $x \in K$, $d(x_0, x) < n$ for some integer $n \in \ZZ_+$, so $K \subseteq \bigcup_{n=1}^\infty B(x_0, n)$.
 :::
 
 ::: pf-step
@@ -111,7 +111,7 @@ Counterexample (closed + bounded $\not\implies$ compact):
 ::: pf-proof
 
 ::: pf-step
-Consider an infinite set $X$ (e.g. $X = \mathbb{Z}_+$) equipped with the discrete metric $d(x, y) = 1$ for all $x \neq y$ and $d(x, x) = 0$.
+Consider an infinite set $X$ (e.g. $X = \ZZ_+$) equipped with the discrete metric $d(x, y) = 1$ for all $x \neq y$ and $d(x, x) = 0$.
 :::
 
 ::: pf-step

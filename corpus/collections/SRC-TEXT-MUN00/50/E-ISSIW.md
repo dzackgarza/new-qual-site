@@ -25,11 +25,11 @@ audit:
 
 ::: {.exercise}
 
-Show that $\mathbb{R} \times \mathbb{R}$ in the dictionary order topology is locally 1-euclidean and satisfies (iii) but not (ii) of Exercise 2.
+Show that $\RR \times \RR$ in the dictionary order topology is locally 1-euclidean and satisfies (iii) but not (ii) of Exercise 2.
 :::
 
 ::: {.solution}
-Let \(X=\mathbb R\times\mathbb R\) with the dictionary order. For \((a,b)\in X\), the order interval
+Let \(X=\RR\times\RR\) with the dictionary order. For \((a,b)\in X\), the order interval
 \[
 ((a,b-1),(a,b+1))
 \]
@@ -39,7 +39,7 @@ The dictionary-order plane is metrizable by [[E-KY2W7]], so it satisfies conditi
 
 It does not satisfy condition (ii). Indeed the sets
 \[
-U_a=\{a\}\times(0,1)\qquad(a\in\mathbb R)
+U_a=\{a\}\times(0,1)\qquad(a\in\RR)
 \]
 form an uncountable family of pairwise disjoint nonempty open subsets. A second-countable space cannot have such a family: each member would contain a distinct element of a fixed countable basis. Hence \(X\) is not second-countable, so it is not a \(1\)-manifold. Thus it satisfies (iii) but not (ii).
 :::

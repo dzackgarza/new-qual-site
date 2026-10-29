@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-4-2
 kind: problem
-title: Laws of inequalities for $\mathbb{R}$
+title: Laws of inequalities for $\RR$
 classification:
   areas:
   - topology
@@ -25,7 +25,7 @@ audit:
 
 ::: {.exercise}
 
-Prove the following "laws of inequalities" for $\mathbb{R}$, using axioms (1)-(6) along with the results of Exercise 1:
+Prove the following "laws of inequalities" for $\RR$, using axioms (1)-(6) along with the results of Exercise 1:
 
 (a) $x > y$ and $w > z \Rightarrow x + w > y + z$ .
 

@@ -24,9 +24,9 @@ audit:
 
 ::: {.exercise}
 
-Consider the set $Y = [-1, 1]$ as a subspace of $\mathbb{R}$.
+Consider the set $Y = [-1, 1]$ as a subspace of $\RR$.
 Which of the following sets are open in $Y$?
-Which are open in $\mathbb{R}$?
+Which are open in $\RR$?
 
 $$
 A = \theset{x \mid \tfrac{1}{2} < \abs{x} < 1},
@@ -45,7 +45,7 @@ D = \theset{x \mid \tfrac{1}{2} \leq \abs{x} \leq 1},
 $$
 
 $$
-E = \theset{x \mid 0 < \abs{x} < 1 \text{ and } 1/x \notin \mathbb{Z}_+}.
+E = \theset{x \mid 0 < \abs{x} < 1 \text{ and } 1/x \notin \ZZ_+}.
 $$
 :::
 
@@ -64,16 +64,16 @@ and
 \[
 D=[-1,-\tfrac12]\cup[\tfrac12,1].
 \]
-Thus $A$ is open both in $\mathbb R$ and in $Y=[-1,1]$. The set $B$ is open in $Y$, since
+Thus $A$ is open both in $\RR$ and in $Y=[-1,1]$. The set $B$ is open in $Y$, since
 \[
 [-1,-\tfrac12)=Y\cap(-2,-\tfrac12),\qquad
 (\tfrac12,1]=Y\cap(\tfrac12,2),
 \]
-but it is not open in $\mathbb R$: it contains $1$, and every open interval about $1$ contains points greater than $1$. The sets $C$ and $D$ are not open even in $Y$, since the included points $\pm\tfrac12$ have no sufficiently small relative neighborhood contained in the set; consequently they are not open in $\mathbb R$ either.
+but it is not open in $\RR$: it contains $1$, and every open interval about $1$ contains points greater than $1$. The sets $C$ and $D$ are not open even in $Y$, since the included points $\pm\tfrac12$ have no sufficiently small relative neighborhood contained in the set; consequently they are not open in $\RR$ either.
 
 Finally
 \[
 E=(-1,0)\cup\left((0,1)-\{1/n:n\ge2\}\right).
 \]
-The only accumulation point of $\{1/n:n\ge2\}$ in $\mathbb R$ is $0$, which is not in $E$. Hence every point of $E$ has an ordinary open interval contained in $E$, so $E$ is open in $\mathbb R$ and therefore also in $Y$.
+The only accumulation point of $\{1/n:n\ge2\}$ in $\RR$ is $0$, which is not in $E$. Hence every point of $E$ has an ordinary open interval contained in $E$, so $E$ is open in $\RR$ and therefore also in $Y$.
 :::

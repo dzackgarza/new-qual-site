@@ -18,11 +18,11 @@ audit:
 
 ::: {.exercise}
 
-Show that $[0, 1]$ is not limit point compact as a subspace of $\mathbb{R}_\ell$.
+Show that $[0, 1]$ is not limit point compact as a subspace of $\RR_\ell$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the closed unit interval $[0, 1]$ endowed with the subspace topology from the lower limit line $\mathbb{R}_\ell$ is not limit point compact.
+**Goal:** Prove that the closed unit interval $[0, 1]$ endowed with the subspace topology from the lower limit line $\RR_\ell$ is not limit point compact.
 
 ::: pf
 
@@ -50,7 +50,7 @@ Construction of an infinite subset $A \subset [0, 1]$:
 
 ::: pf-step
 Define
-$$A = \left\{ 1 - \frac{1}{n} : n \in \mathbb{N}, \; n \ge 2 \right\} = \left\{ \frac{1}{2}, \frac{2}{3}, \frac{3}{4}, \frac{4}{5}, \dots \right\} \subset [0, 1].$$
+$$A = \left\{ 1 - \frac{1}{n} : n \in \NN, \; n \ge 2 \right\} = \left\{ \frac{1}{2}, \frac{2}{3}, \frac{3}{4}, \frac{4}{5}, \dots \right\} \subset [0, 1].$$
 :::
 
 ::: pf-step
@@ -62,13 +62,13 @@ Since the sequence $x_n = 1 - 1/n$ is strictly increasing, $A$ is an infinite su
 :::
 
 ::: pf-step
-Verification that $A$ has no limit points in $[0, 1]_{\mathbb{R}_\ell}$:
+Verification that $A$ has no limit points in $[0, 1]_{\RR_\ell}$:
 
 ::: pf-proof
-We show that for every $x \in [0, 1]$, there exists an open neighborhood $U_x$ of $x$ in $[0, 1]_{\mathbb{R}_\ell}$ such that $(U_x \setminus \{x\}) \cap A = \emptyset$.
+We show that for every $x \in [0, 1]$, there exists an open neighborhood $U_x$ of $x$ in $[0, 1]_{\RR_\ell}$ such that $(U_x \setminus \{x\}) \cap A = \emptyset$.
 
 ::: pf-step
-Case $x \in [0, 1/2)$: The set $U_x = [x, 1/2) \cap [0, 1]$ is open in $[0, 1]_{\mathbb{R}_\ell}$, contains $x$, and satisfies $U_x \cap A = \emptyset$ because every element of $A$ is $\ge 1/2$.
+Case $x \in [0, 1/2)$: The set $U_x = [x, 1/2) \cap [0, 1]$ is open in $[0, 1]_{\RR_\ell}$, contains $x$, and satisfies $U_x \cap A = \emptyset$ because every element of $A$ is $\ge 1/2$.
 :::
 
 ::: pf-step
@@ -80,7 +80,7 @@ Case $x \in (1 - 1/n, 1 - 1/(n+1))$ for some $n \ge 2$: The set $U_x = [x, 1 - 1
 :::
 
 ::: pf-step
-Case $x = 1$: The set $U_1 = [1, 2) \cap [0, 1] = \{1\}$ is open in $[0, 1]_{\mathbb{R}_\ell}$ and contains no point of $A$, so $(U_1 \setminus \{1\}) \cap A = \emptyset$.
+Case $x = 1$: The set $U_1 = [1, 2) \cap [0, 1] = \{1\}$ is open in $[0, 1]_{\RR_\ell}$ and contains no point of $A$, so $(U_1 \setminus \{1\}) \cap A = \emptyset$.
 :::
 
 :::
@@ -91,7 +91,7 @@ Case $x = 1$: The set $U_1 = [1, 2) \cap [0, 1] = \{1\}$ is open in $[0, 1]_{\ma
 Conclusion:
 
 ::: pf-proof
-The infinite subset $A \subset [0, 1]$ has no limit point in $[0, 1]_{\mathbb{R}_\ell}$. Therefore $[0, 1]$ is not limit point compact in $\mathbb{R}_\ell$.
+The infinite subset $A \subset [0, 1]$ has no limit point in $[0, 1]_{\RR_\ell}$. Therefore $[0, 1]$ is not limit point compact in $\RR_\ell$.
 :::
 
 :::

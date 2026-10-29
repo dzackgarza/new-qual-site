@@ -29,7 +29,7 @@ Give an example to show that the conclusion of the Borsuk lemma need not hold if
 ::: pf-step
 
 Statement of the Borsuk Lemma:
-    The Borsuk Lemma (Munkres §62 Lemma 62.4) states that if $A \subset \mathbb{R}^2$ is a compact subspace that does not separate $\mathbb{R}^2$ (i.e. $\mathbb{R}^2 \setminus A$ is connected), and $f: A \to \mathbb{R}^2$ is an **injective** continuous map (an imbedding), then $f(A)$ does not separate $\mathbb{R}^2$ (i.e. $\mathbb{R}^2 \setminus f(A)$ is connected).
+    The Borsuk Lemma (Munkres §62 Lemma 62.4) states that if $A \subset \RR^2$ is a compact subspace that does not separate $\RR^2$ (i.e. $\RR^2 \setminus A$ is connected), and $f: A \to \RR^2$ is an **injective** continuous map (an imbedding), then $f(A)$ does not separate $\RR^2$ (i.e. $\RR^2 \setminus f(A)$ is connected).
 
 :::
 
@@ -42,7 +42,7 @@ Construction of non-injective counterexample:
 
 ::: pf-step
 
-Let $A = [0, 1] \times \{0\} \subset \mathbb{R}^2$ be the unit interval on the $x$-axis.
+Let $A = [0, 1] \times \{0\} \subset \RR^2$ be the unit interval on the $x$-axis.
 
 :::
 
@@ -54,13 +54,13 @@ The set $A$ is compact, convex, and homeomorphic to the interval $[0, 1]$.
 
 ::: pf-step
 
-Its complement $\mathbb{R}^2 \setminus A$ is connected (path-connected), so $A$ does not separate the plane.
+Its complement $\RR^2 \setminus A$ is connected (path-connected), so $A$ does not separate the plane.
 
 :::
 
 ::: pf-step
 
-Define the continuous map $f: A \to \mathbb{R}^2$ by:
+Define the continuous map $f: A \to \RR^2$ by:
         $$f(t, 0) = (\cos 2\pi t, \sin 2\pi t).$$
 
 :::
@@ -84,19 +84,19 @@ Failure of the Borsuk conclusion for the image:
 
 ::: pf-step
 
-The image $f(A)$ is the unit circle $S^1 = \{(x, y) \in \mathbb{R}^2 \mid x^2 + y^2 = 1\}$.
+The image $f(A)$ is the unit circle $S^1 = \{(x, y) \in \RR^2 \mid x^2 + y^2 = 1\}$.
 
 :::
 
 ::: pf-step
 
-By the Jordan Curve Theorem, the complement $\mathbb{R}^2 \setminus S^1$ consists of exactly two connected components: the bounded open disk $B_1(\mathbf{0})$ and the unbounded region $\mathbb{R}^2 \setminus \overline{B_1(\mathbf{0})}$.
+By the Jordan Curve Theorem, the complement $\RR^2 \setminus S^1$ consists of exactly two connected components: the bounded open disk $B_1(\mathbf{0})$ and the unbounded region $\RR^2 \setminus \overline{B_1(\mathbf{0})}$.
 
 :::
 
 ::: pf-step
 
-Thus $f(A)$ separates the plane into 2 components, whereas $\mathbb{R}^2 \setminus A$ had only 1 component.
+Thus $f(A)$ separates the plane into 2 components, whereas $\RR^2 \setminus A$ had only 1 component.
 
 :::
 

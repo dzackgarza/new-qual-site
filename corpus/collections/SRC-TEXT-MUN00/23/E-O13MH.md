@@ -35,5 +35,5 @@ If $X$ is connected in the finer topology $\mathcal T'$, then it is connected in
 
 Equivalently, if $X$ is disconnected in the coarser topology, it remains disconnected in every finer topology.
 
-The converse implications fail. For example, $\mathbb R$ with its standard topology is connected, while the finer lower-limit topology $\mathbb R_\ell$ is disconnected. Thus connectedness can be destroyed by refinement, but cannot be created by refinement.
+The converse implications fail. For example, $\RR$ with its standard topology is connected, while the finer lower-limit topology $\RR_\ell$ is disconnected. Thus connectedness can be destroyed by refinement, but cannot be created by refinement.
 :::

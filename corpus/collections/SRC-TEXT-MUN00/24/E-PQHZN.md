@@ -30,7 +30,7 @@ Let $L$ denote the ordered set $S_\Omega \times [0, 1)$ in the dictionary order,
 The set $L$ is a classical example in topology called the long line.
 
 Theorem.
-The long line is path connected and locally homeomorphic to $\mathbb{R}$, but it cannot be imbedded in $\mathbb{R}$.
+The long line is path connected and locally homeomorphic to $\RR$, but it cannot be imbedded in $\RR$.
 
 (a) Let $X$ be an ordered set; let $a < b < c$ be points of $X$.
 Show that $[a, c)$ has the order type of $[0, 1)$ if and only if both $[a, b)$ and $[b, c)$ have the order type of $[0, 1)$.
@@ -45,10 +45,10 @@ For each element $a$ of $S_\Omega$ different from $a_0$, show that the interval 
 
 (d) Show that $L$ is path connected.
 
-(e) Show that every point of $L$ has a neighborhood homeomorphic with an open interval in $\mathbb{R}$.
+(e) Show that every point of $L$ has a neighborhood homeomorphic with an open interval in $\RR$.
 
-(f) Show that $L$ cannot be imbedded in $\mathbb{R}$, or indeed in $\mathbb{R}^n$ for any $n$.
-[Hint: Any subspace of $\mathbb{R}^n$ has a countable basis for its topology.]
+(f) Show that $L$ cannot be imbedded in $\RR$, or indeed in $\RR^n$ for any $n$.
+[Hint: Any subspace of $\RR^n$ has a countable basis for its topology.]
 :::
 
 ::: {.solution}
@@ -81,7 +81,7 @@ has order type $[0,1)$, and part (b) yields the result for $a$.
 
 (d) The argument in (c), together with (a), shows more generally that every bounded interval in $L$ is order-isomorphic to a real interval. Thus if $p<q$ in $L$, the closed interval $[p,q]$ is homeomorphic to $[0,1]$. Composing such a homeomorphism with the standard path $[0,1]\to[0,1]$ gives a path from $p$ to $q$. Hence $L$ is path connected.
 
-(e) For any $x\in L$, choose $p<x<q$. The same bounded-interval argument shows $(p,q)$ is order-isomorphic, hence homeomorphic, to an open interval of $\mathbb R$. Thus every point has a neighborhood homeomorphic to an open real interval.
+(e) For any $x\in L$, choose $p<x<q$. The same bounded-interval argument shows $(p,q)$ is order-isomorphic, hence homeomorphic, to an open interval of $\RR$. Thus every point has a neighborhood homeomorphic to an open real interval.
 
 (f) The long line is not second countable. For each $a\in S_\Omega$, the vertical interval
 \[
@@ -89,5 +89,5 @@ has order type $[0,1)$, and part (b) yields the result for $a$.
 \]
 is a nonempty open subset of $L$, and these sets are pairwise disjoint. A second-countable space can have only countably many pairwise disjoint nonempty open sets, since each contains a distinct element of a fixed countable basis. Therefore $L$ is not second countable.
 
-Every subspace of $\mathbb R^n$ is second countable, because $\mathbb R^n$ has a countable basis and intersections with the subspace form a countable basis. Hence $L$ cannot be embedded in $\mathbb R^n$ for any finite $n$, in particular not in $\mathbb R$.
+Every subspace of $\RR^n$ is second countable, because $\RR^n$ has a countable basis and intersections with the subspace form a countable basis. Hence $L$ cannot be embedded in $\RR^n$ for any finite $n$, in particular not in $\RR$.
 :::

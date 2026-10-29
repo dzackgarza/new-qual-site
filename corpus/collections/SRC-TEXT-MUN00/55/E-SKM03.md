@@ -30,7 +30,7 @@ Show that if $A$ is a nonsingular 3 by 3 matrix having nonnegative entries, then
 ::: {.solution}
 Let
 \[
-\Delta^2=\{x=(x_1,x_2,x_3)\in\mathbb R^3:x_i\ge0,\ x_1+x_2+x_3=1\}
+\Delta^2=\{x=(x_1,x_2,x_3)\in\RR^3:x_i\ge0,\ x_1+x_2+x_3=1\}
 \]
 be the standard \(2\)-simplex. Since \(A\) has nonnegative entries, \(Ax\) has nonnegative coordinates for every \(x\in\Delta^2\). Since \(A\) is nonsingular and \(x\ne0\), we also have \(Ax\ne0\). Hence
 \[

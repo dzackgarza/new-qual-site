@@ -20,39 +20,39 @@ audit:
 
 A space $Y$ is said to have the universal extension property if for each triple consisting of a normal space $X$, a closed subset $A$ of $X$, and a continuous function $f: A \to Y$, there exists an extension of $f$ to a continuous map of $X$ into $Y$.
 
-(a) Show that $\mathbb{R}^J$ has the universal extension property.
+(a) Show that $\RR^J$ has the universal extension property.
 
-(b) Show that if $Y$ is homeomorphic to a retract of $\mathbb{R}^J$, then $Y$ has the universal extension property.
+(b) Show that if $Y$ is homeomorphic to a retract of $\RR^J$, then $Y$ has the universal extension property.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the product space $\mathbb{R}^J$ and all retracts of $\mathbb{R}^J$ satisfy the Universal Extension Property (UEP).
+**Goal:** Prove that the product space $\RR^J$ and all retracts of $\RR^J$ satisfy the Universal Extension Property (UEP).
 
 ::: pf
 
 ::: pf-step
-Part (a): $\mathbb{R}^J$ has the Universal Extension Property.
+Part (a): $\RR^J$ has the Universal Extension Property.
 
 ::: pf-proof
 
 ::: pf-step
-Let $X$ be a normal space, $A \subseteq X$ a closed subset, and $f: A \to \mathbb{R}^J$ a continuous map.
+Let $X$ be a normal space, $A \subseteq X$ a closed subset, and $f: A \to \RR^J$ a continuous map.
 :::
 
 ::: pf-step
-For each $\alpha \in J$, let $\pi_\alpha: \mathbb{R}^J \to \mathbb{R}$ be the canonical projection onto the $\alpha$-th coordinate.
+For each $\alpha \in J$, let $\pi_\alpha: \RR^J \to \RR$ be the canonical projection onto the $\alpha$-th coordinate.
 :::
 
 ::: pf-step
-The coordinate map $f_\alpha = \pi_\alpha \circ f: A \to \mathbb{R}$ is continuous.
+The coordinate map $f_\alpha = \pi_\alpha \circ f: A \to \RR$ is continuous.
 :::
 
 ::: pf-step
-By the Tietze Extension Theorem (Theorem 35.1), because $X$ is normal and $A$ is closed, there exists a continuous map $g_\alpha: X \to \mathbb{R}$ extending $f_\alpha$, so $g_\alpha|_A = f_\alpha$.
+By the Tietze Extension Theorem (Theorem 35.1), because $X$ is normal and $A$ is closed, there exists a continuous map $g_\alpha: X \to \RR$ extending $f_\alpha$, so $g_\alpha|_A = f_\alpha$.
 :::
 
 ::: pf-step
-Define $g: X \to \mathbb{R}^J$ by $g(x) = (g_\alpha(x))_{\alpha \in J}$.
+Define $g: X \to \RR^J$ by $g(x) = (g_\alpha(x))_{\alpha \in J}$.
 :::
 
 ::: pf-step
@@ -72,16 +72,16 @@ Thus $g$ is a continuous extension of $f$ to $X$.
 :::
 
 ::: pf-step
-Part (b): Retracts of $\mathbb{R}^J$ have the Universal Extension Property.
+Part (b): Retracts of $\RR^J$ have the Universal Extension Property.
 
 ::: pf-proof
 
 ::: pf-step
-Let $Y$ be a retract of $\mathbb{R}^J$ (the case where $Y$ is homeomorphic to a retract follows by composing with the homeomorphism).
+Let $Y$ be a retract of $\RR^J$ (the case where $Y$ is homeomorphic to a retract follows by composing with the homeomorphism).
 :::
 
 ::: pf-step
-Let $i: Y \hookrightarrow \mathbb{R}^J$ be the inclusion map, and let $r: \mathbb{R}^J \to Y$ be a continuous retraction, so $r \circ i = \operatorname{id}_Y$.
+Let $i: Y \hookrightarrow \RR^J$ be the inclusion map, and let $r: \RR^J \to Y$ be a continuous retraction, so $r \circ i = \operatorname{id}_Y$.
 :::
 
 ::: pf-step
@@ -89,11 +89,11 @@ Let $X$ be normal, $A \subseteq X$ closed, and $f: A \to Y$ continuous.
 :::
 
 ::: pf-step
-The composite map $i \circ f: A \to \mathbb{R}^J$ is continuous.
+The composite map $i \circ f: A \to \RR^J$ is continuous.
 :::
 
 ::: pf-step
-By Part (a), $i \circ f$ extends to a continuous map $G: X \to \mathbb{R}^J$ such that $G|_A = i \circ f$.
+By Part (a), $i \circ f$ extends to a continuous map $G: X \to \RR^J$ such that $G|_A = i \circ f$.
 :::
 
 ::: pf-step
@@ -119,7 +119,7 @@ Thus $g$ is a continuous extension of $f$ to $X$.
 
 ::: pf-step
 Conclusion:
-$\mathbb{R}^J$ and all its retracts satisfy the Universal Extension Property. Q.E.D.
+$\RR^J$ and all its retracts satisfy the Universal Extension Property. Q.E.D.
 :::
 
 :::

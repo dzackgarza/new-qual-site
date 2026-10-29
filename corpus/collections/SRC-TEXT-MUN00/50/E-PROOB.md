@@ -36,7 +36,7 @@ Let \(K\subset M\) be compact. Cover \(K\) by finitely many coordinate neighborh
 \[
 K=K_1\cup\cdots\cup K_r
 \]
-with each \(K_i\) contained in one coordinate chart. Under that chart, \(K_i\) is homeomorphic to a compact, hence closed, subspace of \(\mathbb R^m\). Since \(\dim\mathbb R^m\le m\) and dimension does not increase on closed subspaces,
+with each \(K_i\) contained in one coordinate chart. Under that chart, \(K_i\) is homeomorphic to a compact, hence closed, subspace of \(\RR^m\). Since \(\dim\RR^m\le m\) and dimension does not increase on closed subspaces,
 \[
 \dim K_i\le m.
 \]

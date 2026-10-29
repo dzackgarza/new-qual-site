@@ -19,16 +19,16 @@ audit:
 
 ::: {.exercise}
 
-Consider the five topologies on $\mathbb{R}$ given in Exercise 7 of §13.
+Consider the five topologies on $\RR$ given in Exercise 7 of §13.
 
-(a) Determine the closure of the set $K = \theset{1/n \mid n \in \mathbb{Z}_+}$ under each of these topologies.
+(a) Determine the closure of the set $K = \theset{1/n \mid n \in \ZZ_+}$ under each of these topologies.
 
 (b) Which of these topologies satisfy the Hausdorff axiom?
 the $T_1$ axiom?
 :::
 
 ::: {.solution}
-The five topologies of [[E-ALTNF]] are: $\mathcal T_1$ the standard topology; $\mathcal T_2$ the topology of $\mathbb R_K$, with basis the intervals $(a,b)$ and the sets $(a,b)-K$; $\mathcal T_3$ the finite complement topology; $\mathcal T_4$ the upper limit topology, with basis the intervals $(a,b]$; and $\mathcal T_5$ the topology with basis the rays $(-\infty,a)$.
+The five topologies of [[E-ALTNF]] are: $\mathcal T_1$ the standard topology; $\mathcal T_2$ the topology of $\RR_K$, with basis the intervals $(a,b)$ and the sets $(a,b)-K$; $\mathcal T_3$ the finite complement topology; $\mathcal T_4$ the upper limit topology, with basis the intervals $(a,b]$; and $\mathcal T_5$ the topology with basis the rays $(-\infty,a)$.
 
 ::: pf
 
@@ -53,7 +53,7 @@ In $\mathcal T_2$, $\overline K=\boxed{K}$.
 
 The basic set $(-1,1)-K$ contains $0$ and misses $K$.
 Every other point outside $K$ has a standard open interval missing $K$, by the proof of step [](#s1){.pf-ref}.
-So $\mathbb R-K$ is open.
+So $\RR-K$ is open.
 
 :::
 
@@ -61,11 +61,11 @@ So $\mathbb R-K$ is open.
 
 ::: {.pf-step #s3}
 
-In $\mathcal T_3$, $\overline K=\boxed{\mathbb R}$.
+In $\mathcal T_3$, $\overline K=\boxed{\RR}$.
 
 ::: pf-proof
 
-The closed sets are $\mathbb R$ and the finite sets, and $K$ is infinite.
+The closed sets are $\RR$ and the finite sets, and $K$ is infinite.
 
 :::
 
@@ -79,7 +79,7 @@ In $\mathcal T_4$, $\overline K=\boxed{K}$.
 
 The basic set $(-1,0]$ contains $0$ and misses $K$.
 For $x<0$, $x>1$, and $\frac1{n+1}<x<\frac1n$, the basic sets $(x-1,x]$, $(1,x]$, and $(\frac1{n+1},x]$ contain $x$ and miss $K$.
-So $\mathbb R-K$ is open.
+So $\RR-K$ is open.
 
 :::
 
@@ -91,7 +91,7 @@ In $\mathcal T_5$, $\overline K=\boxed{[0,\infty)}$.
 
 ::: pf-proof
 
-A union of rays $(-\infty,a)$ is $\varnothing$, $\mathbb R$, or a ray $(-\infty,c)$, so the closed sets are $\varnothing$, $\mathbb R$, and the rays $[c,\infty)$.
+A union of rays $(-\infty,a)$ is $\varnothing$, $\RR$, or a ray $(-\infty,c)$, so the closed sets are $\varnothing$, $\RR$, and the rays $[c,\infty)$.
 A ray $[c,\infty)$ contains $K$ if and only if $c\le\frac1n$ for every $n$, that is, $c\le0$; the smallest is $[0,\infty)$.
 
 :::
@@ -104,7 +104,7 @@ $\mathcal T_1$, $\mathcal T_2$, and $\mathcal T_4$ are Hausdorff, hence $T_1$.
 
 ::: pf-proof
 
-$\mathcal T_1$ is the metric topology of $\mathbb R$, and $\mathcal T_2$ and $\mathcal T_4$ are finer than $\mathcal T_1$ by [[E-ALTNF]]; disjoint $\mathcal T_1$-open neighborhoods remain open in a finer topology.
+$\mathcal T_1$ is the metric topology of $\RR$, and $\mathcal T_2$ and $\mathcal T_4$ are finer than $\mathcal T_1$ by [[E-ALTNF]]; disjoint $\mathcal T_1$-open neighborhoods remain open in a finer topology.
 
 :::
 
@@ -117,7 +117,7 @@ $\mathcal T_3$ is $T_1$ but not Hausdorff.
 ::: pf-proof
 
 Singletons are finite, hence closed.
-Two nonempty open sets have finite complements, so their intersection has finite complement in the infinite set $\mathbb R$ and is nonempty.
+Two nonempty open sets have finite complements, so their intersection has finite complement in the infinite set $\RR$ and is nonempty.
 
 :::
 

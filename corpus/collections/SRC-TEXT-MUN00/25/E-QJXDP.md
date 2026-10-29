@@ -32,7 +32,7 @@ Definition of the space $X$ (the infinite broom):
 ::: pf-proof
 
 ::: pf-step
-In $\mathbb{R}^2$, let $a_n = (1, 1/n)$ for $n \in \mathbb{Z}_+$, let $L_n$ be the closed line segment from the origin $(0, 0)$ to $a_n$, and let $p = (1, 0)$.
+In $\RR^2$, let $a_n = (1, 1/n)$ for $n \in \ZZ_+$, let $L_n$ be the closed line segment from the origin $(0, 0)$ to $a_n$, and let $p = (1, 0)$.
 
 ::: pf-proof
 definition of the infinite broom in Munkres Figure 25.1.
@@ -41,7 +41,7 @@ definition of the infinite broom in Munkres Figure 25.1.
 :::
 
 ::: pf-step
-The space $X = \left(\bigcup_{n=1}^\infty L_n\right) \cup \{p\}$ is equipped with the subspace topology from $\mathbb{R}^2$.
+The space $X = \left(\bigcup_{n=1}^\infty L_n\right) \cup \{p\}$ is equipped with the subspace topology from $\RR^2$.
 
 ::: pf-proof
 definition of $X$.
@@ -81,7 +81,7 @@ definition of local connectedness at a point.
 Consider the open neighborhood $U = B(p, 1/2) \cap X$.
 
 ::: pf-proof
-$B(p, 1/2)$ is an open ball in $\mathbb{R}^2$ disjoint from the origin $(0, 0)$.
+$B(p, 1/2)$ is an open ball in $\RR^2$ disjoint from the origin $(0, 0)$.
 :::
 
 :::
@@ -96,7 +96,7 @@ setup.
 :::
 
 ::: pf-step
-Since $V$ is open in $X$, $V = W \cap X$ for some open set $W \subseteq \mathbb{R}^2$ containing $p = (1, 0)$.
+Since $V$ is open in $X$, $V = W \cap X$ for some open set $W \subseteq \RR^2$ containing $p = (1, 0)$.
 
 ::: pf-proof
 subspace topology.
@@ -108,7 +108,7 @@ subspace topology.
 Since $a_n = (1, 1/n) \to p$, $W$ contains $a_n$ for all sufficiently large $n \ge N$.
 
 ::: pf-proof
-definition of limit in $\mathbb{R}^2$.
+definition of limit in $\RR^2$.
 :::
 
 :::

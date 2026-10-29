@@ -18,10 +18,10 @@ audit:
 
 ::: {.exercise}
 
-Let $p: \mathbb{R} \to S^1$ be the standard covering map; consider the covering map $p \times p: \mathbb{R} \times \mathbb{R} \to S^1 \times S^1$.
+Let $p: \RR \to S^1$ be the standard covering map; consider the covering map $p \times p: \RR \times \RR \to S^1 \times S^1$.
 Let $b_0 = (1, 0) \in S^1$; set $X = (b_0 \times S^1) \cup (S^1 \times b_0)$; let $E = (p \times p)^{-1}(X)$; and let $q: E \to X$ be the covering map obtained by restricting $p \times p$.
 The fundamental group of $X$ has free generators $\alpha$ and $\beta$, where $\alpha$ is represented by a loop in $b_0 \times S^1$ and $\beta$ by a loop in $S^1 \times b_0$.
-Find a system of free generators for the subgroup $q_*(\pi_1(E, e_0))$, where $e_0$ is the origin in $\mathbb{R}^2$.
+Find a system of free generators for the subgroup $q_*(\pi_1(E, e_0))$, where $e_0$ is the origin in $\RR^2$.
 :::
 
 ::: {.solution}
@@ -39,11 +39,11 @@ The base space $X = (b_0 \times S^1) \cup (S^1 \times b_0) \cong S^1 \vee S^1$ h
 :::
 
 ::: pf-step
-The total space $E = (p \times p)^{-1}(X) = (\mathbb{R} \times \mathbb{Z}) \cup (\mathbb{Z} \times \mathbb{R}) \subset \mathbb{R}^2$ is the infinite grid graph with vertices $V = \mathbb{Z}^2$.
+The total space $E = (p \times p)^{-1}(X) = (\RR \times \ZZ) \cup (\ZZ \times \RR) \subset \RR^2$ is the infinite grid graph with vertices $V = \ZZ^2$.
 :::
 
 ::: pf-step
-A path in $E$ starting at $(0, 0)$ corresponding to a word $w \in F(\alpha, \beta)$ terminates at $(\operatorname{exp}_\beta(w), \operatorname{exp}_\alpha(w)) \in \mathbb{Z}^2$.
+A path in $E$ starting at $(0, 0)$ corresponding to a word $w \in F(\alpha, \beta)$ terminates at $(\operatorname{exp}_\beta(w), \operatorname{exp}_\alpha(w)) \in \ZZ^2$.
 :::
 
 ::: pf-step
@@ -64,17 +64,17 @@ Maximal spanning tree construction in the grid graph $E$:
 ::: pf-proof
 
 ::: pf-step
-Let $T \subset E$ be the tree consisting of the entire horizontal axis $\mathbb{R} \times \{0\}$ together with all vertical lines $\{m\} \times \mathbb{R}$ for all $m \in \mathbb{Z}$:
-$$T = (\mathbb{R} \times \{0\}) \cup (\mathbb{Z} \times \mathbb{R}).$$
+Let $T \subset E$ be the tree consisting of the entire horizontal axis $\RR \times \{0\}$ together with all vertical lines $\{m\} \times \RR$ for all $m \in \ZZ$:
+$$T = (\RR \times \{0\}) \cup (\ZZ \times \RR).$$
 :::
 
 ::: pf-step
-$T$ contains all vertices $\mathbb{Z}^2$ and contains no cycles, so $T$ is a maximal spanning tree for $E$.
+$T$ contains all vertices $\ZZ^2$ and contains no cycles, so $T$ is a maximal spanning tree for $E$.
 :::
 
 ::: pf-step
 The edges of $E$ not in $T$ are precisely the horizontal unit segments at non-zero integer heights:
-$$e_{m, n} = [m, m+1] \times \{n\}, \quad \text{for } m \in \mathbb{Z}, \, n \in \mathbb{Z} \setminus \{0\}.$$
+$$e_{m, n} = [m, m+1] \times \{n\}, \quad \text{for } m \in \ZZ, \, n \in \ZZ \setminus \{0\}.$$
 :::
 
 :::
@@ -92,7 +92,7 @@ By the standard maximal-tree theorem for fundamental groups of 1-complexes (Theo
 
 ::: pf-step
 The unique simple path in $T$ from $(0, 0)$ to $(m, n)$ is:
-$$(0, 0) \xrightarrow{\text{along } \mathbb{R} \times \{0\}} (m, 0) \xrightarrow{\text{along } \{m\} \times \mathbb{R}} (m, n),$$
+$$(0, 0) \xrightarrow{\text{along } \RR \times \{0\}} (m, 0) \xrightarrow{\text{along } \{m\} \times \RR} (m, n),$$
 which projects under $q$ to the word $\beta^m \alpha^n$.
 :::
 
@@ -101,7 +101,7 @@ Traversing the horizontal edge $e_{m, n}$ from $(m, n)$ to $(m+1, n)$ projects t
 :::
 
 ::: pf-step
-The return path in $T$ from $(m+1, n)$ to $(0, 0)$ traverses $\{m+1\} \times \mathbb{R}$ down to $(m+1, 0)$ and then $\mathbb{R} \times \{0\}$ back to $(0, 0)$, projecting to $\alpha^{-n} \beta^{-(m+1)}$.
+The return path in $T$ from $(m+1, n)$ to $(0, 0)$ traverses $\{m+1\} \times \RR$ down to $(m+1, 0)$ and then $\RR \times \{0\}$ back to $(0, 0)$, projecting to $\alpha^{-n} \beta^{-(m+1)}$.
 :::
 
 ::: pf-step
@@ -116,7 +116,7 @@ $$g_{m, n} = \beta^m \alpha^n \beta \alpha^{-n} \beta^{-(m+1)}.$$
 ::: pf-step
 Conclusion:
 A system of free generators for $q_*(\pi_1(E, e_0))$ is:
-$$\{ \beta^m \alpha^n \beta \alpha^{-n} \beta^{-(m+1)} \mid m \in \mathbb{Z}, \, n \in \mathbb{Z} \setminus \{0\} \}.$$
+$$\{ \beta^m \alpha^n \beta \alpha^{-n} \beta^{-(m+1)} \mid m \in \ZZ, \, n \in \ZZ \setminus \{0\} \}.$$
 :::
 
 :::

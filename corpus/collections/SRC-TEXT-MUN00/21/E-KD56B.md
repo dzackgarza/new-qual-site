@@ -24,14 +24,14 @@ audit:
 
 ::: {.exercise}
 
-Show that $\mathbb{R}_\ell$ and the ordered square satisfy the first countability axiom.
+Show that $\RR_\ell$ and the ordered square satisfy the first countability axiom.
 (This result does not, of course, imply that they are metrizable.)
 :::
 
 ::: {.solution}
 For the lower-limit line, the family
 \[
-\mathcal B_x=\{[x,x+1/n):n\in\mathbb Z_+\}
+\mathcal B_x=\{[x,x+1/n):n\in\ZZ_+\}
 \]
 is a countable neighborhood basis at $x$. Indeed every basic neighborhood $[x,b)$ contains one of these for sufficiently large $n$.
 

@@ -18,18 +18,18 @@ audit:
 
 ::: {.exercise}
 
-Given $n$ and $\epsilon$, define a continuous function $f: I \to \mathbb{R}$ such that $f \in U_n$ and $\abs{f(x)} \leq \epsilon$ for all $x$.
+Given $n$ and $\epsilon$, define a continuous function $f: I \to \RR$ such that $f \in U_n$ and $\abs{f(x)} \leq \epsilon$ for all $x$.
 :::
 
 ::: {.solution}
-Here $U_n = \{f \in \mathcal{C}(I, \mathbb{R}) : \forall x \in I, \exists t \in I, 0 < |x - t| < \frac{1}{n} \text{ and } |\frac{f(x) - f(t)}{x - t}| > n\}$.
+Here $U_n = \{f \in \mathcal{C}(I, \RR) : \forall x \in I, \exists t \in I, 0 < |x - t| < \frac{1}{n} \text{ and } |\frac{f(x) - f(t)}{x - t}| > n\}$.
 
 ::: pf
 
 ::: pf-step
 
 Parameter selection:
-    Given $n \in \mathbb{Z}_+$ and $\varepsilon > 0$, choose an integer $k \in \mathbb{Z}_+$ sufficiently large such that:
+    Given $n \in \ZZ_+$ and $\varepsilon > 0$, choose an integer $k \in \ZZ_+$ sufficiently large such that:
     $$k > 2n \quad \text{and} \quad k > \frac{2n}{\varepsilon}.$$
     Let $h = \frac{1}{2k}$. Then $h < \frac{1}{4n} < \frac{1}{n}$ and $\frac{\varepsilon}{h} = 2k\varepsilon > 4n > n$.
 
@@ -39,7 +39,7 @@ Parameter selection:
 
 Construction of the sawtooth function $f$:
     Partition $[0, 1]$ into $2k$ subintervals of equal length $h = \frac{1}{2k}$ by the division points $t_j = jh$ for $j = 0, 1, \dots, 2k$.
-    Define $f: [0, 1] \to \mathbb{R}$ to be the continuous piecewise linear function with values at the vertices:
+    Define $f: [0, 1] \to \RR$ to be the continuous piecewise linear function with values at the vertices:
     $$f(t_j) = \begin{cases} \varepsilon & \text{if } j \text{ is odd}, \\ 0 & \text{if } j \text{ is even}, \end{cases}$$
     and linearly interpolated on each subinterval $[t_{j-1}, t_j]$.
 

@@ -25,16 +25,16 @@ A space $X$ is said to be topologically complete if there exists a metric for th
 (b) Show that a countable product of topologically complete spaces is topologically complete (in the product topology).
 
 (c) Show that an open subspace of a topologically complete space is topologically complete.
-[Hint: If $U \subset X$ and $X$ is complete under the metric $d$, define $\phi: U \to \mathbb{R}$ by the equation
+[Hint: If $U \subset X$ and $X$ is complete under the metric $d$, define $\phi: U \to \RR$ by the equation
 
 $$
 \phi(x) = 1/d(x, X - U).
 $$
 
-Imbed $U$ in $X \times \mathbb{R}$ by setting $f(x) = x \times \phi(x)$.]
+Imbed $U$ in $X \times \RR$ by setting $f(x) = x \times \phi(x)$.]
 
 (d) Show that if $A$ is a $G_\delta$ set in a topologically complete space, then $A$ is topologically complete.
-[Hint: Let $A$ be the intersection of the open sets $U_n$, for $n \in \mathbb{Z}_+$. Consider the diagonal imbedding $f(a) = (a, a, \ldots)$ of $A$ into $\prod U_n$.] Conclude that the irrationals are topologically complete.
+[Hint: Let $A$ be the intersection of the open sets $U_n$, for $n \in \ZZ_+$. Consider the diagonal imbedding $f(a) = (a, a, \ldots)$ of $A$ into $\prod U_n$.] Conclude that the irrationals are topologically complete.
 :::
 
 ::: {.solution}
@@ -175,34 +175,34 @@ If $U = X$, $U$ is already complete. If $U \subsetneq X$, the closed set $F = X 
 
 ::: pf-step
 
-Define $\phi: U \to \mathbb{R}$ by $\phi(x) = \frac{1}{d(x, F)}$. Since the distance function $x \mapsto d(x, F)$ is continuous and non-zero on $U$, $\phi$ is continuous.
+Define $\phi: U \to \RR$ by $\phi(x) = \frac{1}{d(x, F)}$. Since the distance function $x \mapsto d(x, F)$ is continuous and non-zero on $U$, $\phi$ is continuous.
 
 :::
 
 ::: pf-step
 
-Define the embedding $f: U \to X \times \mathbb{R}$ by $f(x) = (x, \phi(x))$. The map $f$ is a homeomorphism of $U$ onto its image $f(U) \subset X \times \mathbb{R}$ (with inverse being the first projection $\pi_1$).
+Define the embedding $f: U \to X \times \RR$ by $f(x) = (x, \phi(x))$. The map $f$ is a homeomorphism of $U$ onto its image $f(U) \subset X \times \RR$ (with inverse being the first projection $\pi_1$).
 
 :::
 
 ::: pf-step
 
-By parts (a) and (b), the product space $X \times \mathbb{R}$ is complete under the metric $D((x_1, t_1), (x_2, t_2)) = d(x_1, x_2) + |t_1 - t_2|$.
+By parts (a) and (b), the product space $X \times \RR$ is complete under the metric $D((x_1, t_1), (x_2, t_2)) = d(x_1, x_2) + |t_1 - t_2|$.
 
 :::
 
 ::: pf-step
 
-We claim that the graph $f(U) = \{(x, \phi(x)) : x \in U\}$ is a closed subset of $X \times \mathbb{R}$:
-    Let $(x_k, \phi(x_k)) \to (x, t)$ in $X \times \mathbb{R}$ as $k \to \infty$. Then $x_k \to x$ in $X$ and $\phi(x_k) \to t$ in $\mathbb{R}$.
-    If $x \in F$, then $d(x_k, F) \to d(x, F) = 0$, so $\phi(x_k) = \frac{1}{d(x_k, F)} \to \infty$, which contradicts $\phi(x_k) \to t \in \mathbb{R}$.
+We claim that the graph $f(U) = \{(x, \phi(x)) : x \in U\}$ is a closed subset of $X \times \RR$:
+    Let $(x_k, \phi(x_k)) \to (x, t)$ in $X \times \RR$ as $k \to \infty$. Then $x_k \to x$ in $X$ and $\phi(x_k) \to t$ in $\RR$.
+    If $x \in F$, then $d(x_k, F) \to d(x, F) = 0$, so $\phi(x_k) = \frac{1}{d(x_k, F)} \to \infty$, which contradicts $\phi(x_k) \to t \in \RR$.
     Thus $x \in U$, and by continuity of $\phi$, $t = \lim \phi(x_k) = \phi(x)$.
 
 :::
 
 ::: pf-step
 
-Hence $(x, t) = (x, \phi(x)) \in f(U)$, proving that $f(U)$ is closed in $X \times \mathbb{R}$.
+Hence $(x, t) = (x, \phi(x)) \in f(U)$, proving that $f(U)$ is closed in $X \times \RR$.
 
 :::
 
@@ -277,38 +277,38 @@ By part (a), the closed subspace $\Delta(A) \subseteq Y$ is topologically comple
 
 ::: pf-step
 
-Application to the irrational numbers $\mathbb{R} \setminus \mathbb{Q}$:
+Application to the irrational numbers $\RR \setminus \QQ$:
     *Proof:*
 
 ::: pf-proof
 
 ::: pf-step
 
-The real line $\mathbb{R}$ with its standard metric is complete, hence topologically complete.
+The real line $\RR$ with its standard metric is complete, hence topologically complete.
 
 :::
 
 ::: pf-step
 
-The rationals $\mathbb{Q} = \{q_1, q_2, q_3, \dots\}$ are countable, so $\mathbb{Q} = \bigcup_{n=1}^\infty \{q_n\}$ is an $F_\sigma$ set.
+The rationals $\QQ = \{q_1, q_2, q_3, \dots\}$ are countable, so $\QQ = \bigcup_{n=1}^\infty \{q_n\}$ is an $F_\sigma$ set.
 
 :::
 
 ::: pf-step
 
-The irrational numbers are the complement $\mathbb{R} \setminus \mathbb{Q} = \bigcap_{n=1}^\infty (\mathbb{R} \setminus \{q_n\})$.
+The irrational numbers are the complement $\RR \setminus \QQ = \bigcap_{n=1}^\infty (\RR \setminus \{q_n\})$.
 
 :::
 
 ::: pf-step
 
-Since each $\mathbb{R} \setminus \{q_n\}$ is open in $\mathbb{R}$, $\mathbb{R} \setminus \mathbb{Q}$ is a $G_\delta$ set in $\mathbb{R}$.
+Since each $\RR \setminus \{q_n\}$ is open in $\RR$, $\RR \setminus \QQ$ is a $G_\delta$ set in $\RR$.
 
 :::
 
 ::: pf-step
 
-By step [](#s4){.pf-ref}, the irrational numbers $\mathbb{R} \setminus \mathbb{Q}$ are topologically complete.
+By step [](#s4){.pf-ref}, the irrational numbers $\RR \setminus \QQ$ are topologically complete.
 
 :::
 

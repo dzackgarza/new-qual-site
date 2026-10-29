@@ -17,14 +17,14 @@ review: draft
 Prove the following.
 
 Theorem (Arzela's theorem, general version).
-Let $X$ be a Hausdorff space that is $\sigma$-compact; let $f_n$ be a sequence of functions $f_n: X \to \mathbb{R}^k$.
+Let $X$ be a Hausdorff space that is $\sigma$-compact; let $f_n$ be a sequence of functions $f_n: X \to \RR^k$.
 If the collection $(f_n)$ is pointwise bounded and equicontinuous, then the sequence $f_n$ has a subsequence that converges, in the topology of compact convergence, to a continuous function.
 
-[Hint: Show that $\mathcal{C}(X, \mathbb{R}^k)$ is first-countable.]
+[Hint: Show that $\mathcal{C}(X, \RR^k)$ is first-countable.]
 :::
 
 ::: {.solution}
-Choose compact sets $A_1\subset A_2\subset\cdots$ whose interiors cover the $\sigma$-compact Hausdorff space $X$. On $C(X,\mathbb R^k)$ the compact-convergence topology is metrizable, for example by
+Choose compact sets $A_1\subset A_2\subset\cdots$ whose interiors cover the $\sigma$-compact Hausdorff space $X$. On $C(X,\RR^k)$ the compact-convergence topology is metrizable, for example by
 \[
 \rho(f,g)=\sum_{j\ge1}2^{-j}\min\{1,\sup_{A_j}|f-g|\},
 \]

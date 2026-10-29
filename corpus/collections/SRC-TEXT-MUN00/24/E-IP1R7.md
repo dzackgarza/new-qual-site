@@ -24,13 +24,13 @@ audit:
 
 ::: {.exercise}
 
-Assume that $\mathbb{R}$ is uncountable.
-Show that if $A$ is a countable subset of $\mathbb{R}^2$, then $\mathbb{R}^2 - A$ is path connected.
-[Hint: How many lines are there passing through a given point of $\mathbb{R}^2$?]
+Assume that $\RR$ is uncountable.
+Show that if $A$ is a countable subset of $\RR^2$, then $\RR^2 - A$ is path connected.
+[Hint: How many lines are there passing through a given point of $\RR^2$?]
 :::
 
 ::: {.solution}
-Let $p,q\in\mathbb R^2-A$. There are uncountably many lines through $p$, while only countably many of them contain a point of $A$; also at most one contains $q$. Choose a line $L$ through $p$ that contains neither $q$ nor any point of $A$.
+Let $p,q\in\RR^2-A$. There are uncountably many lines through $p$, while only countably many of them contain a point of $A$; also at most one contains $q$. Choose a line $L$ through $p$ that contains neither $q$ nor any point of $A$.
 
 For each $a\in A$, the line through $q$ and $a$ is different from $L$, because $q\notin L$, so it meets $L$ in at most one point. Let $E\subseteq L$ be the countable set of these intersection points. Since $L$ is uncountable, choose $r\in L-E$.
 
@@ -38,5 +38,5 @@ The segment $[p,r]$ lies in $L$ and therefore avoids $A$. If $[q,r]$ met $A$ at 
 \[
 p\longrightarrow r\longrightarrow q
 \]
-is a path in $\mathbb R^2-A$. Therefore $\mathbb R^2-A$ is path connected.
+is a path in $\RR^2-A$. Therefore $\RR^2-A$ is path connected.
 :::

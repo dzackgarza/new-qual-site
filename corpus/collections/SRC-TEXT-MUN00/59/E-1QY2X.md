@@ -21,7 +21,7 @@ audit:
 Criticize the following "proof" that $S^2$ is simply connected.
 Let $f$ be a loop in $S^2$ based at $x_0$.
 Choose a point $p$ of $S^2$ not lying in the image of $f$.
-Since $S^2 - \theset{p}$ is homeomorphic with $\mathbb{R}^2$, and $\mathbb{R}^2$ is simply connected, the loop $f$ is path homotopic to the constant loop.
+Since $S^2 - \theset{p}$ is homeomorphic with $\RR^2$, and $\RR^2$ is simply connected, the loop $f$ is path homotopic to the constant loop.
 :::
 
 ::: {.solution}
@@ -57,7 +57,7 @@ By post-composing with the standard quotient map $[0, 1]^2 \to S^2$, one can con
 
 ::: pf-step
 
-For such a space-filling loop, $S^2 \setminus \operatorname{im}(f) = \emptyset$. No such missing point $p$ exists, so the punctured-sphere homeomorphism $S^2 \setminus \{p\} \cong \mathbb{R}^2$ cannot be directly applied to the loop $f$.
+For such a space-filling loop, $S^2 \setminus \operatorname{im}(f) = \emptyset$. No such missing point $p$ exists, so the punctured-sphere homeomorphism $S^2 \setminus \{p\} \cong \RR^2$ cannot be directly applied to the loop $f$.
 
 :::
 
@@ -74,6 +74,6 @@ Rigorous resolution:
 :::
 
     To prove $\pi_1(S^2, x_0) = 0$ rigorously, one must circumvent this issue via either:
-    1. **Homotopic Perturbation / Approximation:** Use the Lebesgue Covering Lemma on an open cover of small charts to approximate $f$ by a homotopic piecewise-linear or smooth loop $g \simeq f$ that is not surjective, and then contract $g$ in $S^2 \setminus \{p\} \cong \mathbb{R}^2$.
-    2. **Seifert-van Kampen Theorem:** Cover $S^2$ by two overlapping open hemispheres $U = S^2 \setminus \{(0, 0, 1)\}$ and $V = S^2 \setminus \{(0, 0, -1)\}$, each homeomorphic to $\mathbb{R}^2$ (simply connected) with path-connected intersection $U \cap V \simeq S^1$, directly concluding $\pi_1(S^2) \cong \pi_1(U) \ast_{\pi_1(U \cap V)} \pi_1(V) = 0$. Q.E.D.
+    1. **Homotopic Perturbation / Approximation:** Use the Lebesgue Covering Lemma on an open cover of small charts to approximate $f$ by a homotopic piecewise-linear or smooth loop $g \simeq f$ that is not surjective, and then contract $g$ in $S^2 \setminus \{p\} \cong \RR^2$.
+    2. **Seifert-van Kampen Theorem:** Cover $S^2$ by two overlapping open hemispheres $U = S^2 \setminus \{(0, 0, 1)\}$ and $V = S^2 \setminus \{(0, 0, -1)\}$, each homeomorphic to $\RR^2$ (simply connected) with path-connected intersection $U \cap V \simeq S^1$, directly concluding $\pi_1(S^2) \cong \pi_1(U) \ast_{\pi_1(U \cap V)} \pi_1(V) = 0$. Q.E.D.
 :::

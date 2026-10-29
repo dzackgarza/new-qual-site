@@ -24,8 +24,8 @@ audit:
 
 ::: {.exercise}
 
-Show that the euclidean metric $d$ on $\mathbb{R}^n$ is a metric, as follows.
-If $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$ and $c \in \mathbb{R}$, define
+Show that the euclidean metric $d$ on $\RR^n$ is a metric, as follows.
+If $\mathbf{x}, \mathbf{y} \in \RR^n$ and $c \in \RR$, define
 
 $$
 \begin{array}{c}

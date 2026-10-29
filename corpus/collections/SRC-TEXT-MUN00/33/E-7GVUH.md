@@ -28,24 +28,24 @@ where $p, q$ range over the rationals.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the level set $f^{-1}(r)$ of the Urysohn function $f(x) = \inf \{p \in \mathbb{Q} \mid x \in U_p\}$ is given by the difference $\bigcap_{p > r, p \in \mathbb{Q}} U_p \setminus \bigcup_{q < r, q \in \mathbb{Q}} U_q$.
+**Goal:** Prove that the level set $f^{-1}(r)$ of the Urysohn function $f(x) = \inf \{p \in \QQ \mid x \in U_p\}$ is given by the difference $\bigcap_{p > r, p \in \QQ} U_p \setminus \bigcup_{q < r, q \in \QQ} U_q$.
 
 ::: pf
 
 ::: pf-step
 Definition and properties of the Urysohn function $f$:
-Let $\{U_p\}_{p \in \mathbb{Q}}$ be the nested collection of open sets satisfying $\overline{U}_p \subseteq U_{p'}$ for all rationals $p < p'$, with $U_p = \varnothing$ for $p < 0$ and $U_p = X$ for $p > 1$. The function $f: X \to [0, 1]$ is defined by:
-$$f(x) = \inf \{p \in \mathbb{Q} \mid x \in U_p\}.$$
+Let $\{U_p\}_{p \in \QQ}$ be the nested collection of open sets satisfying $\overline{U}_p \subseteq U_{p'}$ for all rationals $p < p'$, with $U_p = \varnothing$ for $p < 0$ and $U_p = X$ for $p > 1$. The function $f: X \to [0, 1]$ is defined by:
+$$f(x) = \inf \{p \in \QQ \mid x \in U_p\}.$$
 :::
 
 ::: {.pf-step #sublevel-set-characterization}
 Characterization of the sublevel set $\{x \in X \mid f(x) \le r\}$:
-$f(x) \le r \iff x \in \bigcap_{p > r, p \in \mathbb{Q}} U_p$.
+$f(x) \le r \iff x \in \bigcap_{p > r, p \in \QQ} U_p$.
 
 ::: pf-proof
 
 ::: pf-step
-If $f(x) \le r$, then for any rational $p > r$, since $\inf\{t \in \mathbb{Q} \mid x \in U_t\} \le r < p$, there exists a rational $t < p$ with $x \in U_t$. Because $t < p$, $U_t \subseteq U_p$, so $x \in U_p$. Thus $x \in \bigcap_{p > r} U_p$.
+If $f(x) \le r$, then for any rational $p > r$, since $\inf\{t \in \QQ \mid x \in U_t\} \le r < p$, there exists a rational $t < p$ with $x \in U_t$. Because $t < p$, $U_t \subseteq U_p$, so $x \in U_p$. Thus $x \in \bigcap_{p > r} U_p$.
 :::
 
 ::: pf-step
@@ -58,7 +58,7 @@ Conversely, if $x \in \bigcap_{p > r} U_p$, then $x \in U_p$ for every rational 
 
 ::: {.pf-step #strict-sublevel-set-characterization}
 Characterization of the strict sublevel set $\{x \in X \mid f(x) < r\}$:
-$f(x) < r \iff x \in \bigcup_{q < r, q \in \mathbb{Q}} U_q$.
+$f(x) < r \iff x \in \bigcup_{q < r, q \in \QQ} U_q$.
 
 ::: pf-proof
 
@@ -85,12 +85,12 @@ For any point $x \in X$, $f(x) = r$ if and only if $f(x) \le r$ and $f(x) \not< 
 
 ::: pf-step
 By steps [](#sublevel-set-characterization){.pf-ref} and [](#strict-sublevel-set-characterization){.pf-ref}:
-$$f(x) = r \iff x \in \left( \bigcap_{p > r, p \in \mathbb{Q}} U_p \right) \quad \text{and} \quad x \notin \left( \bigcup_{q < r, q \in \mathbb{Q}} U_q \right).$$
+$$f(x) = r \iff x \in \left( \bigcap_{p > r, p \in \QQ} U_p \right) \quad \text{and} \quad x \notin \left( \bigcup_{q < r, q \in \QQ} U_q \right).$$
 :::
 
 ::: pf-step
 Set-theoretically, this is equivalent to:
-$$x \in \bigcap_{p > r, p \in \mathbb{Q}} U_p \setminus \bigcup_{q < r, q \in \mathbb{Q}} U_q.$$
+$$x \in \bigcap_{p > r, p \in \QQ} U_p \setminus \bigcup_{q < r, q \in \QQ} U_q.$$
 :::
 
 :::

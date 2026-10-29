@@ -20,7 +20,7 @@ audit:
 
 Let $(Y, d)$ be a metric space; let $X$ be a space.
 Define a topology on $\mathcal{C}(X, Y)$ as follows.
-Given $f \in \mathcal{C}(X, Y)$, and given a positive continuous function $\delta: X \to \mathbb{R}_+$ on $X$, let
+Given $f \in \mathcal{C}(X, Y)$, and given a positive continuous function $\delta: X \to \RR_+$ on $X$, let
 
 $$
 B(f, \delta) = \theset{g \mid d(f(x), g(x)) < \delta(x) \text{ for all } x \in X}.
@@ -42,7 +42,7 @@ We call it the fine topology.
 
 ::: {.pf-step #s1}
 
-Part (a): The sets $\mathcal{B} = \{B(f, \delta) : f \in \mathcal{C}(X, Y), \delta \in \mathcal{C}(X, \mathbb{R}_+)\}$ form a basis.
+Part (a): The sets $\mathcal{B} = \{B(f, \delta) : f \in \mathcal{C}(X, Y), \delta \in \mathcal{C}(X, \RR_+)\}$ form a basis.
     *Proof:*
 
 ::: pf-proof
@@ -67,7 +67,7 @@ For each $x \in X$, $d(f_1(x), g(x)) < \delta_1(x)$ and $d(f_2(x), g(x)) < \delt
 
 ::: pf-step
 
-Define $\delta_3: X \to \mathbb{R}_+$ by:
+Define $\delta_3: X \to \RR_+$ by:
         $$\delta_3(x) = \min\{\delta_1(x) - d(f_1(x), g(x)), \; \delta_2(x) - d(f_2(x), g(x))\}.$$
 
 :::
@@ -187,7 +187,7 @@ When $X$ is discrete, every map $f: X \to Y$ is continuous, so $\mathcal{C}(X, Y
 
 ::: pf-step
 
-Furthermore, every function $\delta: X \to \mathbb{R}_+$ is continuous.
+Furthermore, every function $\delta: X \to \RR_+$ is continuous.
 
 :::
 

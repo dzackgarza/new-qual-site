@@ -55,7 +55,7 @@ Taking the union over $\alpha$ gives
 \[
 \bigcup_\alpha\overline{A_\alpha}\subseteq\overline{\bigcup_\alpha A_\alpha}.
 \]
-Equality can fail. In $\mathbb R$, let $A_n=\{1/n\}$. Then
+Equality can fail. In $\RR$, let $A_n=\{1/n\}$. Then
 \[
 \bigcup_n\overline{A_n}=\{1/n:n\ge1\},
 \]

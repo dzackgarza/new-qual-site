@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-4-3
 kind: problem
-title: Inductive sets and basic properties of $\mathbb{Z}_+$
+title: Inductive sets and basic properties of $\ZZ_+$
 classification:
   areas:
   - topology
@@ -27,25 +27,25 @@ audit:
 
 (a) Show that if $\mathcal{A}$ is a collection of inductive sets, then the intersection of the elements of $\mathcal{A}$ is an inductive set.
 
-(b) Prove the basic properties (1) and (2) of $\mathbb{Z}_{+}$ .
+(b) Prove the basic properties (1) and (2) of $\ZZ_{+}$ .
 :::
 
 ::: {.solution}
-(a) Let \(\mathcal A\) be a collection of inductive subsets of \(\mathbb R\), and put
+(a) Let \(\mathcal A\) be a collection of inductive subsets of \(\RR\), and put
 \[
 I=\bigcap_{A\in\mathcal A}A.
 \]
 Every \(A\in\mathcal A\) contains \(1\), so \(1\in I\). If \(x\in I\), then \(x\in A\) for every \(A\in\mathcal A\). Since each \(A\) is inductive, \(x+1\in A\) for every \(A\), hence \(x+1\in I\). Thus \(I\) is inductive.
 
-(b) By definition, \(\mathbb Z_+\) is the intersection of all inductive subsets of \(\mathbb R\). By part (a), \(\mathbb Z_+\) is itself inductive. This is property (1).
+(b) By definition, \(\ZZ_+\) is the intersection of all inductive subsets of \(\RR\). By part (a), \(\ZZ_+\) is itself inductive. This is property (1).
 
-For property (2), let \(A\subset\mathbb Z_+\) be an inductive set of positive integers. Since \(A\) is an inductive subset of \(\mathbb R\), and \(\mathbb Z_+\) is the intersection of all such subsets,
+For property (2), let \(A\subset\ZZ_+\) be an inductive set of positive integers. Since \(A\) is an inductive subset of \(\RR\), and \(\ZZ_+\) is the intersection of all such subsets,
 \[
-\mathbb Z_+\subset A.
+\ZZ_+\subset A.
 \]
-But by hypothesis \(A\subset\mathbb Z_+\). Hence
+But by hypothesis \(A\subset\ZZ_+\). Hence
 \[
-A=\mathbb Z_+,
+A=\ZZ_+,
 \]
 which is the principle of induction.
 :::

@@ -58,7 +58,7 @@ Conclude that $f(a) = f(b)$.
 
 We verify the basis-intersection condition. At \(a\), type-(iii) neighborhoods are nested after decreasing the even cutoff; similarly type-(iv) neighborhoods at \(b\). At a top point \(p_{n,k}\), intersecting any two basis neighborhoods containing it can be refined by deleting the union of the two finite exceptional sets from \(C_{n,k}\). At any other point of \(X\), a sufficiently short horizontal open segment avoids all finitely many excluded points and all top points involved, and lies inside the intersection. Intersections involving a type-(iii) or type-(iv) set and an ordinary or type-(ii) neighborhood are handled by shortening the latter within the relevant half-plane. Hence the stated sets form a basis.
 
-(b) For any continuous \(f:X\to\mathbb R\) and \(c\in\mathbb R\),
+(b) For any continuous \(f:X\to\RR\) and \(c\in\RR\),
 \[
 f^{-1}(c)=\bigcap_{r=1}^\infty f^{-1}((c-1/r,c+1/r)),
 \]

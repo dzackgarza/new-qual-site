@@ -30,7 +30,7 @@ Prove the following "theorem of meteorology": at any given moment in time, there
 ::: {.solution}
 Model the surface of the earth by the sphere \(S^2\). Assume temperature and barometric pressure vary continuously over the surface at the fixed time in question. Define
 \[
-F:S^2\to\mathbb R^2,
+F:S^2\to\RR^2,
 \qquad
 F(x)=(T(x),P(x)),
 \]

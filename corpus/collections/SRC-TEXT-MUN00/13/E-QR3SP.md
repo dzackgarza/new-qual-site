@@ -49,7 +49,7 @@ X-\bigcap_{i=1}^nU_i=\bigcup_{i=1}^n(X-U_i),
 \]
 a finite union of countable sets. Hence $\mathcal T_c$ is a topology.
 
-The analogous collection $\mathcal T_\infty$ is not a topology in general. Take $X=\mathbb Z_+$,
+The analogous collection $\mathcal T_\infty$ is not a topology in general. Take $X=\ZZ_+$,
 \[
 U=\{2,4,6,\dots\},\qquad V=\{3,5,7,\dots\}.
 \]

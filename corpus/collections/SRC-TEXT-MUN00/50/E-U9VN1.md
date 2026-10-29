@@ -26,13 +26,13 @@ audit:
 ::: {.exercise}
 
 Corollary.
-Every $m$-manifold can be imbedded in $\mathbb{R}^{2m+1}$ as a closed subspace.
+Every $m$-manifold can be imbedded in $\RR^{2m+1}$ as a closed subspace.
 :::
 
 ::: {.solution}
-An \(m\)-manifold \(M\) is locally compact Hausdorff and second-countable, and every compact subspace of \(M\) has dimension at most \(m\), as shown in the proof of [[E-PROOB]]. By [[E-26ELV]], a locally compact Hausdorff space with a countable basis, all of whose compact subspaces have dimension at most \(m\), embeds as a closed subspace of \(\mathbb R^{2m+1}\). Therefore there is an embedding
+An \(m\)-manifold \(M\) is locally compact Hausdorff and second-countable, and every compact subspace of \(M\) has dimension at most \(m\), as shown in the proof of [[E-PROOB]]. By [[E-26ELV]], a locally compact Hausdorff space with a countable basis, all of whose compact subspaces have dimension at most \(m\), embeds as a closed subspace of \(\RR^{2m+1}\). Therefore there is an embedding
 \[
-M\hookrightarrow\mathbb R^{2m+1}
+M\hookrightarrow\RR^{2m+1}
 \]
 whose image is closed.
 :::

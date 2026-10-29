@@ -30,11 +30,11 @@ Describe maps $f: X \to Y$ and $g: Y \to X$ that are homotopy inverse to each ot
 ::: pf-step
 
 Geometric models for $X$ and $Y$:
-    1. Figure eight $X = C_1 \cup C_2 \subset \mathbb{R}^2$, where $C_1$ and $C_2$ are circles intersecting at the single basepoint $p = (0, 0)$.
-    2. Theta space $Y = U \cup L \cup I_0 \subset \mathbb{R}^2$, where:
+    1. Figure eight $X = C_1 \cup C_2 \subset \RR^2$, where $C_1$ and $C_2$ are circles intersecting at the single basepoint $p = (0, 0)$.
+    2. Theta space $Y = U \cup L \cup I_0 \subset \RR^2$, where:
        - $U = \{(x, y) \in S^1 : y \ge 0\}$ is the upper semicircle from $a = (-1, 0)$ to $b = (1, 0)$,
        - $L = \{(x, y) \in S^1 : y \le 0\}$ is the lower semicircle from $a$ to $b$,
-       - $I_0 = \{(x, 0) \in \mathbb{R}^2 : -1 \le x \le 1\}$ is the horizontal diameter from $a$ to $b$.
+       - $I_0 = \{(x, 0) \in \RR^2 : -1 \le x \le 1\}$ is the horizontal diameter from $a$ to $b$.
 
 :::
 

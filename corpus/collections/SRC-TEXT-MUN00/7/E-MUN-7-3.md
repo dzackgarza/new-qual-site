@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-7-3
 kind: problem
-title: Bijection between $\mathcal{P}(\mathbb{Z}_+)$ and $X^{\omega}$
+title: Bijection between $\mathcal{P}(\ZZ_+)$ and $X^{\omega}$
 classification:
   areas:
   - topology
@@ -25,11 +25,11 @@ audit:
 
 ::: {.exercise}
 
-Let $X$ be the two-element set $\{0,1\}$ . Show there is a bijective correspondence between the set $\mathcal{P}(\mathbb{Z}_{+})$ and the cartesian product $X^{\omega}$ .
+Let $X$ be the two-element set $\{0,1\}$ . Show there is a bijective correspondence between the set $\mathcal{P}(\ZZ_{+})$ and the cartesian product $X^{\omega}$ .
 :::
 
 ::: {.solution}
-For \(S\subset\mathbb Z_+\), define its characteristic function
+For \(S\subset\ZZ_+\), define its characteristic function
 \[
 \chi_S\in X^\omega,
 \qquad
@@ -41,11 +41,11 @@ For \(S\subset\mathbb Z_+\), define its characteristic function
 \]
 This gives a map
 \[
-\Phi:\mathcal P(\mathbb Z_+)\to X^\omega.
+\Phi:\mathcal P(\ZZ_+)\to X^\omega.
 \]
 It is injective because distinct subsets have different characteristic functions. It is surjective because for any \(x=(x_n)\in X^\omega\), the subset
 \[
-S_x=\{n\in\mathbb Z_+:x_n=1\}
+S_x=\{n\in\ZZ_+:x_n=1\}
 \]
 satisfies \(\chi_{S_x}=x\). Therefore \(\Phi\) is a bijection.
 :::

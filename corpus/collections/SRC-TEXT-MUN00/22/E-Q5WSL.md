@@ -20,11 +20,11 @@ audit:
 
 Show that the following are topological groups:
 
-(a) $(\mathbb{Z}, +)$
+(a) $(\ZZ, +)$
 
-(b) $(\mathbb{R}, +)$
+(b) $(\RR, +)$
 
-(c) $(\mathbb{R}_+, \cdot)$
+(c) $(\RR_+, \cdot)$
 
 (d) $(S^1, \cdot)$, where we take $S^1$ to be the space of all complex numbers $z$ for which $\abs{z} = 1$.
 

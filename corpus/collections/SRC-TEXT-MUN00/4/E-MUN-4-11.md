@@ -18,14 +18,14 @@ audit:
 
 ::: {.exercise}
 
-Given $m \in \mathbb{Z}$, we say that $m$ is even if $m / 2 \in \mathbb{Z}$, and $m$ is odd otherwise.
+Given $m \in \ZZ$, we say that $m$ is even if $m / 2 \in \ZZ$, and $m$ is odd otherwise.
 
-(a) Show that if $m$ is odd, $m = 2n + 1$ for some $n \in \mathbb{Z}$ . [Hint: Choose $n$ so that $n < m / 2 < n + 1$ .]
+(a) Show that if $m$ is odd, $m = 2n + 1$ for some $n \in \ZZ$ . [Hint: Choose $n$ so that $n < m / 2 < n + 1$ .]
 
-(b) Show that if $p$ and $q$ are odd, so are $p \cdot q$ and $p^n$, for any $n \in \mathbb{Z}_+$ .
+(b) Show that if $p$ and $q$ are odd, so are $p \cdot q$ and $p^n$, for any $n \in \ZZ_+$ .
 
-(c) Show that if $a > 0$ is rational, then $a = m / n$ for some $m, n \in \mathbb{Z}_+$ where not both $m$ and $n$ are even.
-[Hint: Let $n$ be the smallest element of the set $\{x \mid x \in \mathbb{Z}_+ \text{ and } x \cdot a \in \mathbb{Z}_+\}$ .]
+(c) Show that if $a > 0$ is rational, then $a = m / n$ for some $m, n \in \ZZ_+$ where not both $m$ and $n$ are even.
+[Hint: Let $n$ be the smallest element of the set $\{x \mid x \in \ZZ_+ \text{ and } x \cdot a \in \ZZ_+\}$ .]
 
 (d) Theorem.
 $\sqrt{2}$ is irrational.

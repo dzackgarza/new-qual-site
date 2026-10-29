@@ -24,22 +24,22 @@ audit:
 
 ::: {.exercise}
 
-Let $f_n: \mathbb{R} \to \mathbb{R}$ be the function
+Let $f_n: \RR \to \RR$ be the function
 
 $$
 f_n(x) = \frac{1}{n^3[x - (1/n)]^2 + 1}.
 $$
 
-Let $f: \mathbb{R} \to \mathbb{R}$ be the zero function.
+Let $f: \RR \to \RR$ be the zero function.
 
-(a) Show that $f_n(x) \to f(x)$ for each $x \in \mathbb{R}$.
+(a) Show that $f_n(x) \to f(x)$ for each $x \in \RR$.
 
 (b) Show that $f_n$ does not converge uniformly to $f$.
 (This shows that the converse of Theorem 21.6 does not hold; the limit function $f$ may be continuous even though the convergence is not uniform.)
 :::
 
 ::: {.solution}
-(a) Fix $x\in\mathbb R$. If $x=0$, then
+(a) Fix $x\in\RR$. If $x=0$, then
 \[
 f_n(0)=\frac1{n+1}\longrightarrow0.
 \]
@@ -59,7 +59,7 @@ f_n(1/n)=1.
 \]
 Therefore
 \[
-\sup_{x\in\mathbb R}|f_n(x)-0|=1
+\sup_{x\in\RR}|f_n(x)-0|=1
 \]
 for every $n$. In particular the supremum error does not tend to zero, so the convergence is not uniform.
 :::

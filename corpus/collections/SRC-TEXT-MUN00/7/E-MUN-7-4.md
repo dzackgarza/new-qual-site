@@ -41,7 +41,7 @@ Assuming the reals are uncountable, show that the transcendental numbers are unc
 ::: {.solution}
 (a) For each \(n\ge1\), let \(P_n\) be the set of monic degree-\(n\) polynomials with rational coefficients. The coefficient map gives a bijection
 \[
-P_n\cong\mathbb Q^n.
+P_n\cong\QQ^n.
 \]
 Since finite products of countable sets are countable, each \(P_n\) is countable. Hence
 \[
@@ -53,7 +53,7 @@ Each polynomial in \(P\) has only finitely many real roots. The set \(\mathcal A
 
 (b) Let \(T\) be the set of transcendental reals. Then
 \[
-\mathbb R=\mathcal A\cup T.
+\RR=\mathcal A\cup T.
 \]
-If \(T\) were countable, the right side would be a union of two countable sets and hence countable, contradicting the assumed uncountability of \(\mathbb R\). Therefore \(T\) is uncountable.
+If \(T\) were countable, the right side would be a union of two countable sets and hence countable, contradicting the assumed uncountability of \(\RR\). Therefore \(T\) is uncountable.
 :::

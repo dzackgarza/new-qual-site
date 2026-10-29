@@ -48,7 +48,7 @@ connected sum of polygonal schemas for $P^2$ ($c^2$) and $T$ ($aba^{-1}b^{-1}$).
 
 The cellular chain complex for $X$ is:
 \[
-0 \longrightarrow \mathbb{Z} \xrightarrow{\partial_2} \mathbb{Z}c \oplus \mathbb{Z}a \oplus \mathbb{Z}b \xrightarrow{\partial_1} \mathbb{Z} \longrightarrow 0.
+0 \longrightarrow \ZZ \xrightarrow{\partial_2} \ZZ c \oplus \ZZ a \oplus \ZZ b \xrightarrow{\partial_1} \ZZ \longrightarrow 0.
 \]
 
 ::: pf-proof
@@ -78,7 +78,7 @@ abelianizing the boundary loop word $c^2 a b a^{-1} b^{-1}$.
 
 The first homology group is:
 \[
-H_1(P^2 \# T) = \frac{\mathbb{Z}c \oplus \mathbb{Z}a \oplus \mathbb{Z}b}{\operatorname{im}(\partial_2)} = \frac{\mathbb{Z}c}{2\mathbb{Z}c} \oplus \mathbb{Z}a \oplus \mathbb{Z}b \cong \mathbb{Z}_2 \oplus \mathbb{Z} \oplus \mathbb{Z} \cong \mathbb{Z}^2 \oplus \mathbb{Z}_2.
+H_1(P^2 \# T) = \frac{\ZZ c \oplus \ZZ a \oplus \ZZ b}{\operatorname{im}(\partial_2)} = \frac{\ZZ c}{2\ZZ c} \oplus \ZZ a \oplus \ZZ b \cong \ZZ_2 \oplus \ZZ \oplus \ZZ \cong \ZZ^2 \oplus \ZZ_2.
 \]
 
 ::: pf-proof
@@ -158,7 +158,7 @@ Dyck's Theorem / classification invariants.
 ::: pf-step
 
 Conclusion:
-$H_1(P^2 \# T) \cong \mathbb{Z}^2 \oplus \mathbb{Z}_2$, and $P^2 \# T$ is homeomorphic to $P^2 \# P^2 \# P^2$ ($3 P^2$). Q.E.D.
+$H_1(P^2 \# T) \cong \ZZ^2 \oplus \ZZ_2$, and $P^2 \# T$ is homeomorphic to $P^2 \# P^2 \# P^2$ ($3 P^2$). Q.E.D.
 
 ::: pf-proof
 

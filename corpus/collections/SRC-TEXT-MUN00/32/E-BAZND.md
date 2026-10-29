@@ -18,11 +18,11 @@ review: draft
 Prove the following.
 
 Theorem.
-If $J$ is uncountable, then $\mathbb{R}^J$ is not normal.
+If $J$ is uncountable, then $\RR^J$ is not normal.
 
 Proof.
-(This proof is due to A. H. Stone, as adapted in [S-S].) Let $X = (\mathbb{Z}_+)^J$; it will suffice to show that $X$ is not normal, since $X$ is a closed subspace of $\mathbb{R}^J$.
-We use functional notation for the elements of $X$, so that the typical element of $X$ is a function $\mathbf{x}: J \to \mathbb{Z}_+$.
+(This proof is due to A. H. Stone, as adapted in [S-S].) Let $X = (\ZZ_+)^J$; it will suffice to show that $X$ is not normal, since $X$ is a closed subspace of $\RR^J$.
+We use functional notation for the elements of $X$, so that the typical element of $X$ is a function $\mathbf{x}: J \to \ZZ_+$.
 
 (a) If $\mathbf{x} \in X$ and if $B$ is a finite subset of $J$, let $U(\mathbf{x}, B)$ denote the set consisting of all those elements $\mathbf{y}$ of $X$ such that $\mathbf{y}(\alpha) = \mathbf{x}(\alpha)$ for $\alpha \in B$.
 Show the sets $U(\mathbf{x}, B)$ are a basis for $X$.
@@ -60,7 +60,7 @@ $$
 
 [Hint: To begin, note that $\mathbf{x}_1(\alpha) = 1$ for all $\alpha$; now choose $B_1$ so that $U(\mathbf{x}_1, B_1) \subset U$.]
 
-(d) Let $A$ be the set $\theset{\alpha_1, \alpha_2, \ldots}$ constructed in (c). Define $\mathbf{y}: J \to \mathbb{Z}_+$ by the equations
+(d) Let $A$ be the set $\theset{\alpha_1, \alpha_2, \ldots}$ constructed in (c). Define $\mathbf{y}: J \to \ZZ_+$ by the equations
 
 $$
 \mathbf{y}(\alpha_j) = j \quad \text{for } \alpha_j \in A,
@@ -82,7 +82,7 @@ is not empty.
 :::
 
 ::: {.solution}
-Let \(X=(\mathbb Z_+)^J\), with each factor discrete.
+Let \(X=(\ZZ_+)^J\), with each factor discrete.
 
 (a) In the product topology, a basic open set specifies open conditions in only finitely many coordinates. Since the factors are discrete, we may refine each specified coordinate condition to a singleton. Thus the sets
 \[
@@ -96,7 +96,7 @@ with \(B\subset J\) finite, form a basis.
 \]
 The cylinder imposing these two equalities is an open neighborhood of \(\mathbf x\) contained in \(X\setminus P_n\). Hence \(P_n\) is closed.
 
-The sets \(P_1\) and \(P_2\) are disjoint. If \(\mathbf x\) belonged to both, then no two distinct coordinates could have the same value: a repetition at value \(1\) is forbidden by membership in \(P_2\), a repetition at value \(2\) is forbidden by membership in \(P_1\), and a repetition at any other value is forbidden by both. Thus \(\mathbf x:J\to\mathbb Z_+\) would be injective, impossible because \(J\) is uncountable.
+The sets \(P_1\) and \(P_2\) are disjoint. If \(\mathbf x\) belonged to both, then no two distinct coordinates could have the same value: a repetition at value \(1\) is forbidden by membership in \(P_2\), a repetition at value \(2\) is forbidden by membership in \(P_1\), and a repetition at any other value is forbidden by both. Thus \(\mathbf x:J\to\ZZ_+\) would be injective, impossible because \(J\) is uncountable.
 
 (c) We construct the sequences recursively. For \(i=1\), \(\mathbf x_1\) is the constant function \(1\), hence lies in \(P_1\subset U\). By (a), choose a finite set \(C_1\subset J\) such that
 \[
@@ -126,15 +126,15 @@ Because \(B\cap A\) is finite, choose \(i\) such that
 B\cap A\subset B_i.
 \]
 
-The coordinate prescriptions defining \(U(\mathbf x_{i+1},B_{i+1})\) and \(U(\mathbf y,B)\) are compatible. On \(B\cap B_{i+1}\), every coordinate lies in \(B\cap A\subset B_i\), and for \(\alpha_j\in B_i\) both functions take the value \(j\). On coordinates of \(B\setminus A\), only \(\mathbf y\) prescribes a value, and on coordinates of \(B_{i+1}\setminus B\), only \(\mathbf x_{i+1}\) does. Hence one can define a function \(\mathbf z:J\to\mathbb Z_+\) agreeing with both prescriptions on \(B\cup B_{i+1}\), arbitrarily elsewhere. Then
+The coordinate prescriptions defining \(U(\mathbf x_{i+1},B_{i+1})\) and \(U(\mathbf y,B)\) are compatible. On \(B\cap B_{i+1}\), every coordinate lies in \(B\cap A\subset B_i\), and for \(\alpha_j\in B_i\) both functions take the value \(j\). On coordinates of \(B\setminus A\), only \(\mathbf y\) prescribes a value, and on coordinates of \(B_{i+1}\setminus B\), only \(\mathbf x_{i+1}\) does. Hence one can define a function \(\mathbf z:J\to\ZZ_+\) agreeing with both prescriptions on \(B\cup B_{i+1}\), arbitrarily elsewhere. Then
 \[
 \mathbf z\in U(\mathbf x_{i+1},B_{i+1})\cap U(\mathbf y,B).
 \]
 Thus every open \(U\supset P_1\) and \(V\supset P_2\) intersect, so the disjoint closed sets \(P_1,P_2\) cannot be separated by disjoint open neighborhoods. Hence \(X\) is not normal.
 
-Finally, \(X=(\mathbb Z_+)^J\) is closed in \(\mathbb R^J\), since
+Finally, \(X=(\ZZ_+)^J\) is closed in \(\RR^J\), since
 \[
-X=\bigcap_{\alpha\in J}\pi_\alpha^{-1}(\mathbb Z_+)
+X=\bigcap_{\alpha\in J}\pi_\alpha^{-1}(\ZZ_+)
 \]
-and \(\mathbb Z_+\) is closed in \(\mathbb R\). If \(\mathbb R^J\) were normal, its closed subspace \(X\) would be normal, contradiction. Therefore \(\mathbb R^J\) is not normal for uncountable \(J\).
+and \(\ZZ_+\) is closed in \(\RR\). If \(\RR^J\) were normal, its closed subspace \(X\) would be normal, contradiction. Therefore \(\RR^J\) is not normal for uncountable \(J\).
 :::

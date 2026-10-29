@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-4-8
 kind: problem
-title: Greatest lower bound property of $\mathbb{R}$
+title: Greatest lower bound property of $\RR$
 classification:
   areas:
   - topology
@@ -25,15 +25,15 @@ audit:
 
 ::: {.exercise}
 
-(a) Show that $\mathbb{R}$ has the greatest lower bound property.
+(a) Show that $\RR$ has the greatest lower bound property.
 
-(b) Show that $\inf \{1 / n \mid n \in \mathbb{Z}_+\} = 0$ .
+(b) Show that $\inf \{1 / n \mid n \in \ZZ_+\} = 0$ .
 
-(c) Show that given $a$ with $0 < a < 1$, $\inf \{a^n \mid n \in \mathbb{Z}_+\} = 0$ . [Hint: Let $h = (1 - a) / a$, and show that $(1 + h)^n \geq 1 + nh$ .]
+(c) Show that given $a$ with $0 < a < 1$, $\inf \{a^n \mid n \in \ZZ_+\} = 0$ . [Hint: Let $h = (1 - a) / a$, and show that $(1 + h)^n \geq 1 + nh$ .]
 :::
 
 ::: {.solution}
-(a) Let \(A\subset\mathbb R\) be nonempty and bounded below. Then
+(a) Let \(A\subset\RR\) be nonempty and bounded below. Then
 \[
 -A=\{-a:a\in A\}
 \]
@@ -47,7 +47,7 @@ For every \(a\in A\), \(-a\le s\), so \(-s\le a\); hence \(-s\) is a lower bound
 \]
 Therefore \(-s=\inf A\), proving the greatest lower bound property.
 
-(b) Every \(1/n\) is positive, so \(0\) is a lower bound. If \(c>0\), the Archimedean property gives \(n\in\mathbb Z_+\) with
+(b) Every \(1/n\) is positive, so \(0\) is a lower bound. If \(c>0\), the Archimedean property gives \(n\in\ZZ_+\) with
 \[
 n>1/c,
 \]
@@ -57,7 +57,7 @@ hence
 \]
 So no positive number is a lower bound. Therefore
 \[
-\boxed{\inf\{1/n:n\in\mathbb Z_+\}=0.}
+\boxed{\inf\{1/n:n\in\ZZ_+\}=0.}
 \]
 
 (c) Let \(0<a<1\) and put
@@ -80,6 +80,6 @@ a^n=\frac1{(1+h)^n}\le\frac1{1+nh}.
 \]
 Given \(\varepsilon>0\), the Archimedean property lets us choose \(n\) with \(1+nh>1/\varepsilon\), so \(a^n<\varepsilon\). Since all \(a^n>0\), it follows that
 \[
-\boxed{\inf\{a^n:n\in\mathbb Z_+\}=0.}
+\boxed{\inf\{a^n:n\in\ZZ_+\}=0.}
 \]
 :::

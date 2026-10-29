@@ -19,12 +19,12 @@ audit:
 ::: {.exercise}
 
 Let $X$ be a space such that $X \times I$ is normal.
-Let $A$ be a closed subspace of $X$; let $f: A \to Y$ be a continuous map, where $Y$ is an open subspace of $\mathbb{R}^n$.
+Let $A$ be a closed subspace of $X$; let $f: A \to Y$ be a continuous map, where $Y$ is an open subspace of $\RR^n$.
 If $f$ is homotopic to a map that is extendable to a continuous map $h: X \to Y$, then $f$ itself is extendable to a continuous map $g: X \to Y$, such that $g \simeq h$.
 :::
 
 ::: {.solution}
-**Goal:** Prove the Homotopy Extension Property for $(X, A)$ into an open set $Y \subseteq \mathbb{R}^n$ under the hypothesis that $X \times I$ is normal.
+**Goal:** Prove the Homotopy Extension Property for $(X, A)$ into an open set $Y \subseteq \RR^n$ under the hypothesis that $X \times I$ is normal.
 
 ::: pf
 
@@ -43,7 +43,7 @@ $$T = (X \times \{1\}) \cup (A \times I).$$
 :::
 
 ::: pf-step
-Define $F: T \to Y \subseteq \mathbb{R}^n$ by:
+Define $F: T \to Y \subseteq \RR^n$ by:
 $$F(x, 1) = h(x) \quad \text{for } x \in X,$$
 $$F(a, t) = H(a, t) \quad \text{for } (a, t) \in A \times I.$$
 :::
@@ -57,13 +57,13 @@ On the intersection $(X \times \{1\}) \cap (A \times I) = A \times \{1\}$, $F(a,
 :::
 
 ::: pf-step
-Extension into $\mathbb{R}^n$ via Tietze Extension Theorem:
+Extension into $\RR^n$ via Tietze Extension Theorem:
 
 ::: pf-proof
 
 ::: pf-step
-Since $X \times I$ is normal, $T$ is closed in $X \times I$, and each coordinate map of $F$ maps into $\mathbb{R}$, by the Tietze Extension Theorem there exists a continuous extension:
-$$\widetilde{F}: X \times I \to \mathbb{R}^n \quad \text{such that } \widetilde{F}|_T = F.$$
+Since $X \times I$ is normal, $T$ is closed in $X \times I$, and each coordinate map of $F$ maps into $\RR$, by the Tietze Extension Theorem there exists a continuous extension:
+$$\widetilde{F}: X \times I \to \RR^n \quad \text{such that } \widetilde{F}|_T = F.$$
 :::
 
 :::
@@ -76,7 +76,7 @@ Deformation into the open subset $Y$:
 ::: pf-proof
 
 ::: pf-step
-Since $Y$ is open in $\mathbb{R}^n$, the preimage $U = \widetilde{F}^{-1}(Y)$ is an open subset of $X \times I$ containing $T$.
+Since $Y$ is open in $\RR^n$, the preimage $U = \widetilde{F}^{-1}(Y)$ is an open subset of $X \times I$ containing $T$.
 :::
 
 ::: pf-step

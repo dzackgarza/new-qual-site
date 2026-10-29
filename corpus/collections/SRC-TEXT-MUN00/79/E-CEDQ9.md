@@ -21,15 +21,15 @@ Show that if $n > 1$, every continuous map $f: S^n \to S^1$ is nulhomotopic.
 ::: {.solution}
 Let \(n>1\) and \(f:S^n\to S^1\). Choose a basepoint \(x_0\in S^n\), and let
 \[
-p:\mathbb R\longrightarrow S^1,\qquad p(t)=e^{2\pi i t}
+p:\RR\longrightarrow S^1,\qquad p(t)=e^{2\pi i t}
 \]
 be the universal covering map. Since \(S^n\) is simply connected for \(n>1\),
 \[
-f_*\pi_1(S^n,x_0)=0\subset p_*\pi_1(\mathbb R,\tilde b_0)=0.
+f_*\pi_1(S^n,x_0)=0\subset p_*\pi_1(\RR,\tilde b_0)=0.
 \]
 The lifting criterion therefore gives a lift
 \[
-\tilde f:S^n\to\mathbb R,\qquad p\tilde f=f.
+\tilde f:S^n\to\RR,\qquad p\tilde f=f.
 \]
-Because \(\mathbb R\) is contractible, \(\tilde f\) is homotopic to a constant map. Composing this homotopy with \(p\) gives a homotopy of \(f\) to a constant map in \(S^1\). Hence every map \(S^n\to S^1\) is nullhomotopic.
+Because \(\RR\) is contractible, \(\tilde f\) is homotopic to a constant map. Composing this homotopy with \(p\) gives a homotopy of \(f\) to a constant map in \(S^1\). Hence every map \(S^n\to S^1\) is nullhomotopic.
 :::

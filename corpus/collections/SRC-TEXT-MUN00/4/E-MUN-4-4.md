@@ -25,9 +25,9 @@ audit:
 
 ::: {.exercise}
 
-(a) Prove by induction that given $n \in \mathbb{Z}_+$, every nonempty subset of $\{1, \ldots, n\}$ has a largest element.
+(a) Prove by induction that given $n \in \ZZ_+$, every nonempty subset of $\{1, \ldots, n\}$ has a largest element.
 
-(b) Explain why you cannot conclude from (a) that every nonempty subset of $\mathbb{Z}_{+}$ has a largest element.
+(b) Explain why you cannot conclude from (a) that every nonempty subset of $\ZZ_{+}$ has a largest element.
 :::
 
 ::: {.solution}
@@ -39,7 +39,7 @@ Assume \(P(n)\), and let \(A\subset\{1,\dots,n+1\}\) be nonempty. If \(n+1\in A\
 \[
 A\subset\{1,\dots,n\},
 \]
-so \(A\) has a largest element by the inductive hypothesis. Thus \(P(n+1)\) holds. By induction, \(P(n)\) holds for every \(n\in\mathbb Z_+\).
+so \(A\) has a largest element by the inductive hypothesis. Thus \(P(n+1)\) holds. By induction, \(P(n)\) holds for every \(n\in\ZZ_+\).
 
-(b) Part (a) concerns subsets contained in one fixed finite initial segment \(\{1,\dots,n\}\). A general nonempty subset of \(\mathbb Z_+\) need not be bounded above and hence need not lie in any such segment. For example, \(\mathbb Z_+\) itself has no largest element, since \(m+1\in\mathbb Z_+\) and \(m+1>m\) for every \(m\in\mathbb Z_+\).
+(b) Part (a) concerns subsets contained in one fixed finite initial segment \(\{1,\dots,n\}\). A general nonempty subset of \(\ZZ_+\) need not be bounded above and hence need not lie in any such segment. For example, \(\ZZ_+\) itself has no largest element, since \(m+1\in\ZZ_+\) and \(m+1>m\) for every \(m\in\ZZ_+\).
 :::

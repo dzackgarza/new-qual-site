@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-7-2
 kind: problem
-title: Bijections in the countability proofs for $\mathbb{Q}$
+title: Bijections in the countability proofs for $\QQ$
 classification:
   areas:
   - topology
@@ -29,7 +29,7 @@ Show that the maps $f$ and $g$ of Examples 1 and 2 are bijections.
 :::
 
 ::: {.solution}
-For Example 1, the map \(f:\mathbb Z\to\mathbb Z_+\) is
+For Example 1, the map \(f:\ZZ\to\ZZ_+\) is
 \[
 f(n)=
 \begin{cases}
@@ -37,7 +37,7 @@ f(n)=
 -2n+1,&n\le0.
 \end{cases}
 \]
-Positive integers go to the positive even integers, while nonpositive integers go to the positive odd integers. These two image sets are disjoint and together exhaust \(\mathbb Z_+\). Explicitly,
+Positive integers go to the positive even integers, while nonpositive integers go to the positive odd integers. These two image sets are disjoint and together exhaust \(\ZZ_+\). Explicitly,
 \[
 f^{-1}(m)=
 \begin{cases}
@@ -49,11 +49,11 @@ Thus \(f\) is bijective.
 
 For Example 2, let
 \[
-A=\{(x,y)\in\mathbb Z_+^2:y\le x\}.
+A=\{(x,y)\in\ZZ_+^2:y\le x\}.
 \]
 The first map is
 \[
-F:\mathbb Z_+^2\to A,
+F:\ZZ_+^2\to A,
 \qquad
 F(x,y)=(x+y-1,y).
 \]
@@ -65,7 +65,7 @@ which is well-defined because \(u\ge v\). Hence \(F\) is bijective.
 
 The second map is
 \[
-G:A\to\mathbb Z_+,
+G:A\to\ZZ_+,
 \qquad
 G(x,y)=\frac{x(x-1)}2+y.
 \]

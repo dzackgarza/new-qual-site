@@ -25,20 +25,20 @@ audit:
 
 ::: {.exercise}
 
-Both $\{1,2\} \times \mathbb{Z}_{+}$ and $\mathbb{Z}_{+} \times \{1,2\}$ are well-ordered in the dictionary order.
+Both $\{1,2\} \times \ZZ_{+}$ and $\ZZ_{+} \times \{1,2\}$ are well-ordered in the dictionary order.
 Do they have the same order type?
 :::
 
 ::: {.solution}
 In dictionary order,
 \[
-\{1,2\}\times\mathbb Z_+
+\{1,2\}\times\ZZ_+
 \]
 has all pairs \((1,n)\) first, followed by all pairs \((2,n)\). In particular, the element \((2,1)\) has infinitely many predecessors, namely all \((1,n)\).
 
 On the other hand,
 \[
-\mathbb Z_+\times\{1,2\}
+\ZZ_+\times\{1,2\}
 \]
 has the order
 \[

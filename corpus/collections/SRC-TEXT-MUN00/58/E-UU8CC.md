@@ -101,7 +101,7 @@ Thus
 
 (d) A constant map induces the zero homomorphism, so its degree is \(0\). The identity induces the identity homomorphism, so its degree is \(1\). The reflection \(\rho(e^{2\pi it})=e^{-2\pi it}\) reverses the standard generator, so \(\deg\rho=-1\). Finally, \(z\mapsto z^n\) lifts under \(t\mapsto e^{2\pi it}\) to \(t\mapsto nt\), so it carries the generator to \(n\) times itself and has degree \(n\).
 
-(e) Suppose \(\deg h=\deg k=d\). Choose lifts of \(h\) and \(k\) to the universal covering \(q:\mathbb R\to S^1\):
+(e) Suppose \(\deg h=\deg k=d\). Choose lifts of \(h\) and \(k\) to the universal covering \(q:\RR\to S^1\):
 \[
 h(e^{2\pi it})=e^{2\pi iH(t)},\qquad
 k(e^{2\pi it})=e^{2\pi iK(t)}.

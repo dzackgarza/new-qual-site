@@ -24,7 +24,7 @@ Show that if $X$ has a countable basis $\theset{B_n}$, then every basis $\mathca
 :::
 
 ::: {.solution}
-**Goal:** Prove that if a topological space $X$ has a countable basis $\mathcal{B} = \{B_n\}_{n \in \mathbb{Z}_+}$, then every basis $\mathcal{C}$ for $X$ contains a countable subcollection $\mathcal{C}' \subseteq \mathcal{C}$ that is also a basis for $X$.
+**Goal:** Prove that if a topological space $X$ has a countable basis $\mathcal{B} = \{B_n\}_{n \in \ZZ_+}$, then every basis $\mathcal{C}$ for $X$ contains a countable subcollection $\mathcal{C}' \subseteq \mathcal{C}$ that is also a basis for $X$.
 
 ::: pf
 
@@ -35,7 +35,7 @@ Selection of a countable subcollection $\mathcal{C}' \subseteq \mathcal{C}$:
 
 ::: pf-step
 Define the index set of pairs:
-$$J = \{(n, m) \in \mathbb{Z}_+ \times \mathbb{Z}_+ \mid \exists C \in \mathcal{C} \text{ such that } B_n \subseteq C \subseteq B_m\}.$$
+$$J = \{(n, m) \in \ZZ_+ \times \ZZ_+ \mid \exists C \in \mathcal{C} \text{ such that } B_n \subseteq C \subseteq B_m\}.$$
 :::
 
 ::: pf-step
@@ -48,7 +48,7 @@ $$\mathcal{C}' = \{C_{n, m} \mid (n, m) \in J\} \subseteq \mathcal{C}.$$
 :::
 
 ::: pf-step
-Because $J \subseteq \mathbb{Z}_+ \times \mathbb{Z}_+$, $J$ is at most countable, and hence $\mathcal{C}'$ is a countable collection.
+Because $J \subseteq \ZZ_+ \times \ZZ_+$, $J$ is at most countable, and hence $\mathcal{C}'$ is a countable collection.
 :::
 
 :::
@@ -65,7 +65,7 @@ Let $U \subseteq X$ be an arbitrary open set, and let $x \in U$.
 :::
 
 ::: pf-step
-Since $\mathcal{B} = \{B_n\}$ is a basis and $U$ is open, there exists $m \in \mathbb{Z}_+$ such that $x \in B_m \subseteq U$.
+Since $\mathcal{B} = \{B_n\}$ is a basis and $U$ is open, there exists $m \in \ZZ_+$ such that $x \in B_m \subseteq U$.
 :::
 
 ::: pf-step
@@ -73,7 +73,7 @@ Since $\mathcal{C}$ is a basis and $B_m$ is open, there exists $C \in \mathcal{C
 :::
 
 ::: pf-step
-Since $\mathcal{B}$ is a basis and $C$ is open, there exists $n \in \mathbb{Z}_+$ such that $x \in B_n \subseteq C$.
+Since $\mathcal{B}$ is a basis and $C$ is open, there exists $n \in \ZZ_+$ such that $x \in B_n \subseteq C$.
 :::
 
 ::: pf-step

@@ -25,14 +25,14 @@ audit:
 
 ::: {.exercise}
 
-Suppose that $A$ is a set and $\{f_n\}_{n \in \mathbf{Z}_+}$ is a given indexed family of injective functions
+Suppose that $A$ is a set and $\{f_n\}_{n \in \ZZ_+}$ is a given indexed family of injective functions
 
 $$
 f _ {n}: \{1, \dots , n \} \longrightarrow A.
 $$
 
 Show that $A$ is infinite.
-Can you define an injective function $f: \mathbb{Z}_+ \to A$ without using the choice axiom?
+Can you define an injective function $f: \ZZ_+ \to A$ without using the choice axiom?
 :::
 
 ::: {.solution}
@@ -42,7 +42,7 @@ f_n:\{1,\ldots,n\}\to A
 \]
 has an image containing exactly \(n\) distinct elements. If \(A\) were finite, say \(|A|=N\), then \(f_{N+1}\) would inject an \((N+1)\)-element set into an \(N\)-element set, impossible. Thus \(A\) is infinite.
 
-Moreover, an injection \(\mathbb Z_+\to A\) can be defined without the choice axiom because the entire indexed family \(\{f_n\}\) is already given.
+Moreover, an injection \(\ZZ_+\to A\) can be defined without the choice axiom because the entire indexed family \(\{f_n\}\) is already given.
 
 Fix once and for all an explicit enumeration
 \[
@@ -62,5 +62,5 @@ The set on the right is nonempty because \(S\) is infinite. Then
 \[
 F(m)=a_{r_m}
 \]
-defines an injection \(F:\mathbb Z_+\to A\). Every selection was made by taking a least positive integer, so no choice axiom is used.
+defines an injection \(F:\ZZ_+\to A\). Every selection was made by taking a least positive integer, so no choice axiom is used.
 :::

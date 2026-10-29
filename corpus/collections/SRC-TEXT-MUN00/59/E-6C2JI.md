@@ -83,11 +83,11 @@ $$U = X \setminus \{q\} = A \vee (B \setminus \{q\}) \quad \text{and} \quad V = 
 :::
 
 ::: pf-step
-The open arc $B \setminus \{q\}$ deformation retracts to $x_0$, so $U \simeq A \cong S^1$ and $\pi_1(U, x_0) \cong \mathbb{Z} \neq \{1\}$.
+The open arc $B \setminus \{q\}$ deformation retracts to $x_0$, so $U \simeq A \cong S^1$ and $\pi_1(U, x_0) \cong \ZZ \neq \{1\}$.
 :::
 
 ::: pf-step
-Symmetrically, $V \simeq B \cong S^1$ and $\pi_1(V, x_0) \cong \mathbb{Z} \neq \{1\}$.
+Symmetrically, $V \simeq B \cong S^1$ and $\pi_1(V, x_0) \cong \ZZ \neq \{1\}$.
 :::
 
 ::: pf-step
@@ -96,7 +96,7 @@ $$\pi_1(U \cap V, x_0) = \{1\}.$$
 :::
 
 ::: pf-step
-Since $\pi_1(U \cap V, x_0)$ is the trivial group, both homomorphisms $i_*$ and $j_*$ are trivial, while $\pi_1(U, x_0) \cong \mathbb{Z}$ and $\pi_1(V, x_0) \cong \mathbb{Z}$ are non-trivial.
+Since $\pi_1(U \cap V, x_0)$ is the trivial group, both homomorphisms $i_*$ and $j_*$ are trivial, while $\pi_1(U, x_0) \cong \ZZ$ and $\pi_1(V, x_0) \cong \ZZ$ are non-trivial.
 :::
 
 :::

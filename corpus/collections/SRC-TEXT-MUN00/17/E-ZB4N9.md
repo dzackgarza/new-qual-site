@@ -25,7 +25,7 @@ audit:
 
 ::: {.exercise}
 
-Find the boundary and the interior of each of the following subsets of $\mathbb{R}^2$.
+Find the boundary and the interior of each of the following subsets of $\RR^2$.
 
 (a) $A = \theset{x \times y \mid y = 0}$
 
@@ -41,7 +41,7 @@ Find the boundary and the interior of each of the following subsets of $\mathbb{
 :::
 
 ::: {.solution}
-All interiors and boundaries are taken in $\mathbb R^2$.
+All interiors and boundaries are taken in $\RR^2$.
 
 (a) For the $x$-axis
 \[
@@ -80,11 +80,11 @@ Hence
 
 (d) The set
 \[
-D=\mathbb Q\times\mathbb R
+D=\QQ\times\RR
 \]
-is dense in $\mathbb R^2$ because every open rectangle contains a rational first coordinate. Its interior is empty because every open rectangle also contains irrational first coordinates. Thus
+is dense in $\RR^2$ because every open rectangle contains a rational first coordinate. Its interior is empty because every open rectangle also contains irrational first coordinates. Thus
 \[
-\operatorname{Int}D=\varnothing,\qquad \operatorname{Bd}D=\mathbb R^2.
+\operatorname{Int}D=\varnothing,\qquad \operatorname{Bd}D=\RR^2.
 \]
 
 (e) For
@@ -114,10 +114,10 @@ The function $g(x,y)=y-1/x$ is continuous on the open set $\{x\ne0\}$. Hence $\{
 \]
 Every point $(0,y_0)$ is the limit of the points $(\frac1n,y_0)$, which lie in $F$ for every $n\ge y_0$. A point with $x\ne0$ and $y>1/x$ lies in the open set $\{x\ne0,\ g>0\}$, which misses $F$. Thus
 \[
-\overline F=F\cup(\{0\}\times\mathbb R),
+\overline F=F\cup(\{0\}\times\RR),
 \]
 and
 \[
-\operatorname{Bd}F=\{(x,1/x):x\ne0\}\cup(\{0\}\times\mathbb R).
+\operatorname{Bd}F=\{(x,1/x):x\ne0\}\cup(\{0\}\times\RR).
 \]
 :::

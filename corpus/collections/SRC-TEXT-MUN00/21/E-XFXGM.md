@@ -25,7 +25,7 @@ audit:
 
 ::: {.exercise}
 
-Let $X_n$ be a metric space with metric $d_n$, for $n \in \mathbb{Z}_+$.
+Let $X_n$ be a metric space with metric $d_n$, for $n \in \ZZ_+$.
 
 (a) Show that
 

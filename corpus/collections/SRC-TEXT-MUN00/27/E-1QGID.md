@@ -19,28 +19,28 @@ audit:
 
 ::: {.exercise}
 
-Recall that $\mathbb{R}_K$ denotes $\mathbb{R}$ in the $K$-topology.
+Recall that $\RR_K$ denotes $\RR$ in the $K$-topology.
 
-(a) Show that $[0, 1]$ is not compact as a subspace of $\mathbb{R}_K$.
+(a) Show that $[0, 1]$ is not compact as a subspace of $\RR_K$.
 
-(b) Show that $\mathbb{R}_K$ is connected.
-[Hint: $(-\infty, 0)$ and $(0, \infty)$ inherit their usual topologies as subspaces of $\mathbb{R}_K$.]
+(b) Show that $\RR_K$ is connected.
+[Hint: $(-\infty, 0)$ and $(0, \infty)$ inherit their usual topologies as subspaces of $\RR_K$.]
 
-(c) Show that $\mathbb{R}_K$ is not path connected.
+(c) Show that $\RR_K$ is not path connected.
 :::
 
 ::: {.solution}
-**Goal:** Analyze compactness of $[0, 1]$, connectedness of $\mathbb{R}_K$, and non-path-connectedness of $\mathbb{R}_K$.
+**Goal:** Analyze compactness of $[0, 1]$, connectedness of $\RR_K$, and non-path-connectedness of $\RR_K$.
 
 ::: pf
 
 ::: {.pf-step #part-a}
-Part (a): $[0, 1]$ is not compact in $\mathbb{R}_K$.
+Part (a): $[0, 1]$ is not compact in $\RR_K$.
 
 ::: pf-proof
 
 ::: pf-step
-The basis for $\mathbb{R}_K$ includes sets of the form $(a, b) \setminus K$, where $K = \{\frac{1}{n} : n \in \mathbb{Z}_+\}$.
+The basis for $\RR_K$ includes sets of the form $(a, b) \setminus K$, where $K = \{\frac{1}{n} : n \in \ZZ_+\}$.
 :::
 
 ::: pf-step
@@ -61,7 +61,7 @@ Since $(-1, 1) \setminus K$ contains no point of $K$, and each interval $(\frac{
 :::
 
 ::: pf-step
-Thus no finite subcover exists, so $[0, 1]$ is not compact in $\mathbb{R}_K$.
+Thus no finite subcover exists, so $[0, 1]$ is not compact in $\RR_K$.
 :::
 
 :::
@@ -69,7 +69,7 @@ Thus no finite subcover exists, so $[0, 1]$ is not compact in $\mathbb{R}_K$.
 :::
 
 ::: pf-step
-Part (b): $\mathbb{R}_K$ is connected.
+Part (b): $\RR_K$ is connected.
 
 ::: pf-proof
 
@@ -82,7 +82,7 @@ The subspace topology on $(0, \infty)$ is also the standard Euclidean topology b
 :::
 
 ::: pf-step
-Suppose $\mathbb{R}_K = U \cup V$ is a separation of $\mathbb{R}_K$ into disjoint open sets. Without loss of generality, let $0 \in U$.
+Suppose $\RR_K = U \cup V$ is a separation of $\RR_K$ into disjoint open sets. Without loss of generality, let $0 \in U$.
 :::
 
 ::: pf-step
@@ -98,11 +98,11 @@ Similarly, $U \cap (0, \infty) \supseteq ((0, \varepsilon) \setminus K) \neq \em
 :::
 
 ::: pf-step
-Thus $\mathbb{R} = (-\infty, 0) \cup \{0\} \cup (0, \infty) \subseteq U$, so $V = \emptyset$.
+Thus $\RR = (-\infty, 0) \cup \{0\} \cup (0, \infty) \subseteq U$, so $V = \emptyset$.
 :::
 
 ::: pf-step
-Hence no separation exists, so $\mathbb{R}_K$ is connected.
+Hence no separation exists, so $\RR_K$ is connected.
 :::
 
 :::
@@ -110,32 +110,32 @@ Hence no separation exists, so $\mathbb{R}_K$ is connected.
 :::
 
 ::: pf-step
-Part (c): $\mathbb{R}_K$ is not path connected.
+Part (c): $\RR_K$ is not path connected.
 
 ::: pf-proof
 
 ::: pf-step
-Suppose there exists a continuous path $\gamma: [0, 1] \to \mathbb{R}_K$ with $\gamma(0) = 0$ and $\gamma(1) = 1$.
+Suppose there exists a continuous path $\gamma: [0, 1] \to \RR_K$ with $\gamma(0) = 0$ and $\gamma(1) = 1$.
 :::
 
 ::: pf-step
-Since the topology of $\mathbb{R}_K$ is strictly finer than the standard topology on $\mathbb{R}$, $\gamma$ is also continuous as a map into the standard Euclidean space $\mathbb{R}$.
+Since the topology of $\RR_K$ is strictly finer than the standard topology on $\RR$, $\gamma$ is also continuous as a map into the standard Euclidean space $\RR$.
 :::
 
 ::: pf-step
-By the Intermediate Value Theorem, the image $\gamma([0, 1])$ is a connected subset of standard $\mathbb{R}$ containing $0$ and $1$, so $[0, 1] \subseteq \gamma([0, 1])$.
+By the Intermediate Value Theorem, the image $\gamma([0, 1])$ is a connected subset of standard $\RR$ containing $0$ and $1$, so $[0, 1] \subseteq \gamma([0, 1])$.
 :::
 
 ::: pf-step
-Since $[0, 1]$ is compact in standard $\mathbb{R}$ and $\gamma: [0, 1] \to \mathbb{R}_K$ is continuous, the image $\gamma([0, 1])$ is compact in $\mathbb{R}_K$.
+Since $[0, 1]$ is compact in standard $\RR$ and $\gamma: [0, 1] \to \RR_K$ is continuous, the image $\gamma([0, 1])$ is compact in $\RR_K$.
 :::
 
 ::: pf-step
-The interval $[0, 1]$ is closed in $\mathbb{R}_K$ because $\mathbb{R}_K \setminus [0, 1] = (-\infty, 0) \cup (1, \infty)$ is open in $\mathbb{R}_K$.
+The interval $[0, 1]$ is closed in $\RR_K$ because $\RR_K \setminus [0, 1] = (-\infty, 0) \cup (1, \infty)$ is open in $\RR_K$.
 :::
 
 ::: pf-step
-As a closed subset of the compact space $\gamma([0, 1])$, $[0, 1]$ must be compact in $\mathbb{R}_K$.
+As a closed subset of the compact space $\gamma([0, 1])$, $[0, 1]$ must be compact in $\RR_K$.
 :::
 
 ::: pf-step
@@ -143,7 +143,7 @@ This directly contradicts step [](#part-a){.pf-ref}.
 :::
 
 ::: pf-step
-Thus no continuous path connects $0$ to $1$, so $\mathbb{R}_K$ is not path connected. Q.E.D.
+Thus no continuous path connects $0$ to $1$, so $\RR_K$ is not path connected. Q.E.D.
 :::
 
 :::

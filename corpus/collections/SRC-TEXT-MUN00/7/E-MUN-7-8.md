@@ -40,7 +40,7 @@ x\mapsto\{x\}.
 
 For the opposite direction, use the axiom of choice to choose, for every nonempty \(S\in\mathcal B\), a surjection
 \[
-e_S:\mathbb Z_+\to S.
+e_S:\ZZ_+\to S.
 \]
 (For \(S=\varnothing\), choose a fixed dummy sequence.) Since the range of \(e_S\) is exactly \(S\), distinct subsets give distinct chosen sequences of elements. Thus
 \[
@@ -54,10 +54,10 @@ defines an injection
 Now
 \[
 (X^\omega)^\omega
-\cong X^{\mathbb Z_+\times\mathbb Z_+}
+\cong X^{\ZZ_+\times\ZZ_+}
 \cong X^\omega,
 \]
-because \(\mathbb Z_+\times\mathbb Z_+\) is countably infinite. Hence there is an injection \(\mathcal B\to X^\omega\). Schroeder--Bernstein gives
+because \(\ZZ_+\times\ZZ_+\) is countably infinite. Hence there is an injection \(\mathcal B\to X^\omega\). Schroeder--Bernstein gives
 \[
 \boxed{|\mathcal B|=|X^\omega|}.
 \]

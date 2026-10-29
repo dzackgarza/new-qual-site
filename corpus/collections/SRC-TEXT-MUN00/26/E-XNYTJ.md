@@ -18,7 +18,7 @@ review: draft
 (a) Prove the following partial converse to the uniform limit theorem.
 
 Theorem.
-Let $f_n: X \to \mathbb{R}$ be a sequence of continuous functions, with $f_n(x) \to f(x)$ for each $x \in X$.
+Let $f_n: X \to \RR$ be a sequence of continuous functions, with $f_n(x) \to f(x)$ for each $x \in X$.
 If $f$ is continuous, and if the sequence $f_n$ is monotone increasing, and if $X$ is compact, then the convergence is uniform.
 [We say that $f_n$ is monotone increasing if $f_n(x) \leq f_{n+1}(x)$ for all $n$ and $x$.]
 
@@ -41,7 +41,7 @@ For every \(n\ge N\), monotonicity gives
 \]
 uniformly in \(x\). Hence \(f_n\to f\) uniformly.
 
-(b) Compactness is necessary. On \(X=\mathbb R\), let
+(b) Compactness is necessary. On \(X=\RR\), let
 \[
 f_n(x)=\frac{n}{n+|x|}.
 \]

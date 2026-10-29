@@ -19,13 +19,13 @@ audit:
 ::: {.exercise}
 
 There is a space that is locally 2-euclidean and satisfies (v) but not (iv) of Exercise 2. It is constructed as follows.
-Let $A$ be the following subspace of $\mathbb{R}^3$:
+Let $A$ be the following subspace of $\RR^3$:
 
 $$
 A = \theset{(x, y, 0) \mid x > 0}.
 $$
 
-Given $c$ real, let $B_c$ be the following subspace of $\mathbb{R}^3$:
+Given $c$ real, let $B_c$ be the following subspace of $\RR^3$:
 
 $$
 B_c = \theset{(x, y, c) \mid x \leq 0}.
@@ -38,7 +38,7 @@ Topologize $X$ by taking as a basis all sets of the following three types:
 
 (ii) $V$, where $V$ is open in the subspace of $B_c$ consisting of points with $x < 0$.
 
-(iii) For each open interval $I = (a, b)$ of $\mathbb{R}$, each real number $c$, and each $\epsilon > 0$, the set $A_c(I, \epsilon) \cup B_c(I, \epsilon)$, where
+(iii) For each open interval $I = (a, b)$ of $\RR$, each real number $c$, and each $\epsilon > 0$, the set $A_c(I, \epsilon) \cup B_c(I, \epsilon)$, where
 
 $$
 A_c(I, \epsilon) = \theset{(x, y, 0) \mid 0 < x < \epsilon \text{ and } c + ax < y < c + bx},
@@ -54,7 +54,7 @@ The space $X$ is called the "Prüfer manifold."
 
 (b) Show the sets of types (i)-(iii) form a basis for a topology on $X$.
 
-(c) Show the map $f_c: \mathbb{R}^2 \to X$ given by
+(c) Show the map $f_c: \RR^2 \to X$ given by
 
 $$
 f_c(x, y) =
@@ -64,7 +64,7 @@ f_c(x, y) =
 \end{cases}
 $$
 
-defines a homeomorphism of $\mathbb{R}^2$ with the subspace $A \cup B_c$ of $X$.
+defines a homeomorphism of $\RR^2$ with the subspace $A \cup B_c$ of $X$.
 
 (d) Show that $A \cup B_c$ is open in $X$; conclude that $X$ is 2-euclidean.
 
@@ -74,7 +74,7 @@ defines a homeomorphism of $\mathbb{R}^2$ with the subspace $A \cup B_c$ of $X$.
 [Hint: The subspace
 
 $$
-L = \theset{(0, 0, c) \mid c \in \mathbb{R}}
+L = \theset{(0, 0, c) \mid c \in \RR}
 $$
 
 of $X$ is closed and discrete.
@@ -122,14 +122,14 @@ Thus types (i)-(iii) form a basis.
 
 ::: pf-step
 
-Part (c) & (d): Homeomorphism $f_c: \mathbb{R}^2 \to A \cup B_c$ and local 2-euclidean structure.
+Part (c) & (d): Homeomorphism $f_c: \RR^2 \to A \cup B_c$ and local 2-euclidean structure.
     *Proof:*
 
 ::: pf-proof
 
 ::: pf-step
 
-$f_c$ is bijective from $\mathbb{R}^2$ onto $A \cup B_c$: on $x > 0$ it is the bijection onto $A$ of step [](#s2-2){.pf-ref}, on $x \le 0$ it is the bijection $(x, y) \mapsto (x, y, c)$ onto $B_c$, and the images $A$ (third coordinate $0$, $x > 0$) and $B_c$ ($x \le 0$) are disjoint.
+$f_c$ is bijective from $\RR^2$ onto $A \cup B_c$: on $x > 0$ it is the bijection onto $A$ of step [](#s2-2){.pf-ref}, on $x \le 0$ it is the bijection $(x, y) \mapsto (x, y, c)$ onto $B_c$, and the images $A$ (third coordinate $0$, $x > 0$) and $B_c$ ($x \le 0$) are disjoint.
 
 :::
 
@@ -147,19 +147,19 @@ On $x < 0$, $f_c(x, y) = (x, y, c)$ is the standard Cartesian identification.
 
 ::: pf-step
 
-At $x = 0$, the image of the basic product neighborhood $(-\varepsilon, \varepsilon) \times (a, b) \subset \mathbb{R}^2$ under $f_c$ is precisely $A_c((a, b), \varepsilon) \cup B_c((a, b), \varepsilon)$, which is the type (iii) basis element of $X$.
+At $x = 0$, the image of the basic product neighborhood $(-\varepsilon, \varepsilon) \times (a, b) \subset \RR^2$ under $f_c$ is precisely $A_c((a, b), \varepsilon) \cup B_c((a, b), \varepsilon)$, which is the type (iii) basis element of $X$.
 
 :::
 
 ::: pf-step
 
-Thus $f_c$ is a homeomorphism of $\mathbb{R}^2$ onto $A \cup B_c$.
+Thus $f_c$ is a homeomorphism of $\RR^2$ onto $A \cup B_c$.
 
 :::
 
 ::: pf-step
 
-For any $p \in A \cup B_c$, $p$ possesses a basis neighborhood contained in $A \cup B_c$, so $A \cup B_c$ is open in $X$. Since $\{A \cup B_c : c \in \mathbb{R}\}$ is an open cover of $X$ by Euclidean planes $\mathbb{R}^2$, $X$ is locally 2-euclidean.
+For any $p \in A \cup B_c$, $p$ possesses a basis neighborhood contained in $A \cup B_c$, so $A \cup B_c$ is open in $X$. Since $\{A \cup B_c : c \in \RR\}$ is an open cover of $X$ by Euclidean planes $\RR^2$, $X$ is locally 2-euclidean.
 
 :::
 
@@ -176,7 +176,7 @@ Part (e): $X$ is Hausdorff.
 
 ::: pf-step
 
-Distinct points in the same sheet $A \cup B_c$ are separated because $A \cup B_c \cong \mathbb{R}^2$ is Hausdorff.
+Distinct points in the same sheet $A \cup B_c$ are separated because $A \cup B_c \cong \RR^2$ is Hausdorff.
 
 :::
 
@@ -210,7 +210,7 @@ Part (f): $X$ is not normal.
 
 ::: {.pf-step #s4-1}
 
-The subspace $L = \{(0, 0, c) : c \in \mathbb{R}\} \subset X$ is closed and discrete, since each basic neighborhood $A_c((-1, 1), 1) \cup B_c((-1, 1), 1)$ contains only the point $(0, 0, c)$ of $L$.
+The subspace $L = \{(0, 0, c) : c \in \RR\} \subset X$ is closed and discrete, since each basic neighborhood $A_c((-1, 1), 1) \cup B_c((-1, 1), 1)$ contains only the point $(0, 0, c)$ of $L$.
 
 :::
 
@@ -222,7 +222,7 @@ $L$ is closed: a point of $A$ has a type (i) neighborhood, a point of $B_c$ with
 
 ::: {.pf-step #s4-3}
 
-The countable set $D = (\mathbb{Q}_+ \times \mathbb{Q}) \times \{0\} \subset A$ meets every neighborhood of every point of $L$, because each such neighborhood contains a type (iii) set, whose part $A_c(I, \varepsilon)$ is a nonempty open subset of the half-plane $A$.
+The countable set $D = (\QQ_+ \times \QQ) \times \{0\} \subset A$ meets every neighborhood of every point of $L$, because each such neighborhood contains a type (iii) set, whose part $A_c(I, \varepsilon)$ is a nonempty open subset of the half-plane $A$.
 
 :::
 

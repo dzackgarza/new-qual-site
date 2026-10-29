@@ -30,7 +30,7 @@ The operations of closure $A \to \overline{A}$ and complementation $A \to X - A$
 
 (a) Show that starting with a given set $A$, one can form no more than 14 distinct sets by applying these two operations successively.
 
-(b) Find a subset $A$ of $\mathbb{R}$ (in its usual topology) for which the maximum of 14 is obtained.
+(b) Find a subset $A$ of $\RR$ (in its usual topology) for which the maximum of 14 is obtained.
 :::
 
 ::: {.solution}
@@ -62,14 +62,14 @@ so taking closures gives $kikU=kU$, hence $kikiA=kiA$; the other identity follow
 \]
 There are at most seven such sets, and possibly their seven complements, for a total of at most $14$.
 
-The bound is sharp in $\mathbb R$. Let
+The bound is sharp in $\RR$. Let
 \[
-A=\{0\}\cup(1,2)\cup(2,3)\cup(\mathbb Q\cap(4,5)).
+A=\{0\}\cup(1,2)\cup(2,3)\cup(\QQ\cap(4,5)).
 \]
 The seven sets obtained from the seven reduced $k,i$ words are
 \[
 \begin{aligned}
-A&=\{0\}\cup(1,2)\cup(2,3)\cup(\mathbb Q\cap(4,5)),\\
+A&=\{0\}\cup(1,2)\cup(2,3)\cup(\QQ\cap(4,5)),\\
 iA&=(1,2)\cup(2,3),\\
 kA&=\{0\}\cup[1,3]\cup[4,5],\\
 kiA&=[1,3],\\

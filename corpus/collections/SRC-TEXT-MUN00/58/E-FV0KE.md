@@ -25,11 +25,11 @@ audit:
 ::: {.exercise}
 
 Find a space $X$ and a point $x_0$ of $X$ such that the inclusion $\theset{x_0} \to X$ is a homotopy equivalence, but $\theset{x_0}$ is not a deformation retract of $X$.
-[Hint: Let $X$ be the subspace of $\mathbb{R}^2$ that is the union of the line segments $(1/n) \times I$, for $n \in \mathbb{Z}_+$, the line segment $0 \times I$, and the line segment $I \times 0$; let $x_0$ be the point $(0, 1)$. If $\theset{x_0}$ is a deformation retract of $X$, show that for any neighborhood $U$ of $x_0$, the path component of $U$ containing $x_0$ contains a neighborhood of $x_0$.]
+[Hint: Let $X$ be the subspace of $\RR^2$ that is the union of the line segments $(1/n) \times I$, for $n \in \ZZ_+$, the line segment $0 \times I$, and the line segment $I \times 0$; let $x_0$ be the point $(0, 1)$. If $\theset{x_0}$ is a deformation retract of $X$, show that for any neighborhood $U$ of $x_0$, the path component of $U$ containing $x_0$ contains a neighborhood of $x_0$.]
 :::
 
 ::: {.solution}
-Let \(X\subset\mathbb R^2\) be the comb space from the hint:
+Let \(X\subset\RR^2\) be the comb space from the hint:
 \[
 X=(I\times\{0\})\cup(\{0\}\times I)\cup\bigcup_{n\ge1}(\{1/n\}\times I),
 \]

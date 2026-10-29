@@ -18,7 +18,7 @@ audit:
 
 ::: {.exercise}
 
-Consider the covering map $p: \mathbb{R} \times \mathbb{R}_+ \to \mathbb{R}^2 - 0$ of Example 6 of §53. Find liftings of the paths
+Consider the covering map $p: \RR \times \RR_+ \to \RR^2 - 0$ of Example 6 of §53. Find liftings of the paths
 
 $$
 f(t) = (2 - t, 0),
@@ -36,7 +36,7 @@ Sketch these paths and their liftings.
 :::
 
 ::: {.solution}
-The covering map is $p: \mathbb{R} \times \mathbb{R}_+ \to \mathbb{R}^2 \setminus \{0\}$, $p(\theta, r) = (r \cos 2\pi \theta, r \sin 2\pi \theta)$.
+The covering map is $p: \RR \times \RR_+ \to \RR^2 \setminus \{0\}$, $p(\theta, r) = (r \cos 2\pi \theta, r \sin 2\pi \theta)$.
 
 ::: pf
 
@@ -55,14 +55,14 @@ For all $t \in [0, 1]$, $2 - t > 0$, so $f(t)$ lies on the positive $x$-axis at 
 
 ::: pf-step
 
-Choosing an initial lift point in $p^{-1}(f(0)) = p^{-1}(2, 0) = \{(n, 2) : n \in \mathbb{Z}\}$, the continuous lift starting at $(n, 2)$ is:
+Choosing an initial lift point in $p^{-1}(f(0)) = p^{-1}(2, 0) = \{(n, 2) : n \in \ZZ\}$, the continuous lift starting at $(n, 2)$ is:
         $$\tilde{f}_n(t) = (n, 2 - t) \quad \text{for } t \in [0, 1].$$
 
 :::
 
 ::: pf-step
 
-For $n = 0$, $\tilde{f}_0(t) = (0, 2 - t)$, which is a straight vertical segment in $\mathbb{R} \times \mathbb{R}_+$ running from $(0, 2)$ down to $(0, 1)$.
+For $n = 0$, $\tilde{f}_0(t) = (0, 2 - t)$, which is a straight vertical segment in $\RR \times \RR_+$ running from $(0, 2)$ down to $(0, 1)$.
 
 :::
 
@@ -79,7 +79,7 @@ Lifting of $g(t) = ((1 + t) \cos 2\pi t, (1 + t) \sin 2\pi t)$ for $t \in [0, 1]
 
 ::: pf-step
 
-The path $g(t)$ is an expanding spiral in $\mathbb{R}^2 \setminus \{0\}$ starting at $(1, 0)$ and ending at $(2, 0)$ after winding once counterclockwise around the origin.
+The path $g(t)$ is an expanding spiral in $\RR^2 \setminus \{0\}$ starting at $(1, 0)$ and ending at $(2, 0)$ after winding once counterclockwise around the origin.
 
 :::
 
@@ -115,7 +115,7 @@ Lifting of the concatenation $h(t) = (f * g)(t)$:
 
 ::: pf-step
 
-The concatenated path $h: [0, 1] \to \mathbb{R}^2 \setminus \{0\}$ is given by:
+The concatenated path $h: [0, 1] \to \RR^2 \setminus \{0\}$ is given by:
         $$h(t) = \begin{cases} f(2t) = (2 - 2t, 0) & \text{for } 0 \le t \le 1/2, \\ g(2t - 1) = (2t \cos 2\pi(2t-1), 2t \sin 2\pi(2t-1)) & \text{for } 1/2 \le t \le 1. \end{cases}$$
 
 :::
@@ -151,6 +151,6 @@ Geometric description / sketches:
 
 :::
 
-    - **In $\mathbb{R}^2 \setminus \{0\}$:** $f$ is a segment on the positive $x$-axis from $(2, 0)$ to $(1, 0)$; $g$ is a counterclockwise spiral from $(1, 0)$ to $(2, 0)$; $h$ traces the inward radial segment and then the outward spiral.
-    - **In the covering space $\mathbb{R} \times \mathbb{R}_+$:** $\tilde{f}_0$ is the vertical line segment from $(0, 2)$ to $(0, 1)$; $\tilde{g}_0$ is the straight line segment from $(0, 1)$ to $(1, 2)$; $\tilde{h}_0$ is the polygonal path connecting $(0, 2) \to (0, 1) \to (1, 2)$. Q.E.D.
+    - **In $\RR^2 \setminus \{0\}$:** $f$ is a segment on the positive $x$-axis from $(2, 0)$ to $(1, 0)$; $g$ is a counterclockwise spiral from $(1, 0)$ to $(2, 0)$; $h$ traces the inward radial segment and then the outward spiral.
+    - **In the covering space $\RR \times \RR_+$:** $\tilde{f}_0$ is the vertical line segment from $(0, 2)$ to $(0, 1)$; $\tilde{g}_0$ is the straight line segment from $(0, 1)$ to $(1, 2)$; $\tilde{h}_0$ is the polygonal path connecting $(0, 2) \to (0, 1) \to (1, 2)$. Q.E.D.
 :::

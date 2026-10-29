@@ -33,7 +33,7 @@ What space is indicated by each of the following labelling schemes for a collect
 ::: pf-step
 
 Part (a): Scheme $abc, dae, bef, cdf$.
-    The space is the **Klein bottle** ($K^2 \cong \#^2 \mathbb{R}P^2$).
+    The space is the **Klein bottle** ($K^2 \cong \#^2 \RP^2$).
     *Proof:*
 
 ::: pf-proof
@@ -81,7 +81,7 @@ Part (a): Scheme $abc, dae, bef, cdf$.
 ::: pf-step
 
 Part (b): Scheme $abc, cba, def, dfe^{-1}$.
-    The space is the disjoint union of the **2-sphere** and the **real projective plane**: $S^2 \sqcup \mathbb{R}P^2$.
+    The space is the disjoint union of the **2-sphere** and the **real projective plane**: $S^2 \sqcup \RP^2$.
     *Proof:*
 
 ::: pf-proof
@@ -104,13 +104,13 @@ Part (b): Scheme $abc, cba, def, dfe^{-1}$.
 
 **Component $X_2 = T_3 \cup T_4$:**
         - Gluing $T_3(def)$ and $T_4(dfe^{-1})$ along the shared edges $d$ and $f$ produces a 2-gon with remaining boundary edges identified as $e e$ (or $e \sim e^{-1}$).
-        - A 2-gon with boundary scheme $e^2$ is the standard polygonal presentation of the real projective plane $\mathbb{R}P^2$.
+        - A 2-gon with boundary scheme $e^2$ is the standard polygonal presentation of the real projective plane $\RP^2$.
 
 :::
 
 ::: pf-step
 
-**Conclusion:** $X \cong S^2 \sqcup \mathbb{R}P^2$. Q.E.D.
+**Conclusion:** $X \cong S^2 \sqcup \RP^2$. Q.E.D.
 
 :::
 

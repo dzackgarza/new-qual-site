@@ -19,13 +19,13 @@ audit:
 
 ::: {.exercise}
 
-Let $g: \mathbb{Z}_+ \to \mathbb{Q}$ be a bijective function; let $x_n = g(n)$.
-Define $f: \mathbb{R} \to \mathbb{R}$ as follows:
+Let $g: \ZZ_+ \to \QQ$ be a bijective function; let $x_n = g(n)$.
+Define $f: \RR \to \RR$ as follows:
 
 $$
 \begin{array}{ll}
-f(x_n) = 1/n & \text{for } x_n \in \mathbb{Q}, \\
-f(x) = 0 & \text{for } x \notin \mathbb{Q}.
+f(x_n) = 1/n & \text{for } x_n \in \QQ, \\
+f(x) = 0 & \text{for } x \notin \QQ.
 \end{array}
 $$
 
@@ -39,7 +39,7 @@ Can you find a sequence of continuous functions $f_n$ converging to $f$?
 
 ::: pf-step
 
-Continuity at every irrational point $x_0 \in \mathbb{R} \setminus \mathbb{Q}$:
+Continuity at every irrational point $x_0 \in \RR \setminus \QQ$:
     *Proof:*
 
 ::: pf-proof
@@ -52,7 +52,7 @@ At an irrational point $x_0$, $f(x_0) = 0$.
 
 ::: pf-step
 
-Let $\varepsilon > 0$. Choose an integer $N \in \mathbb{Z}_+$ such that $\frac{1}{N} < \varepsilon$.
+Let $\varepsilon > 0$. Choose an integer $N \in \ZZ_+$ such that $\frac{1}{N} < \varepsilon$.
 
 :::
 
@@ -76,13 +76,13 @@ If $|x - x_0| < \delta$, then $x \notin S_N$.
 
 ::: pf-step
 
-Case 1: If $x \notin \mathbb{Q}$, $|f(x) - f(x_0)| = |0 - 0| = 0 < \varepsilon$.
+Case 1: If $x \notin \QQ$, $|f(x) - f(x_0)| = |0 - 0| = 0 < \varepsilon$.
 
 :::
 
 ::: pf-step
 
-Case 2: If $x \in \mathbb{Q}$, then $x = x_k$ for some $k > N$, so $|f(x) - f(x_0)| = \frac{1}{k} < \frac{1}{N} < \varepsilon$.
+Case 2: If $x \in \QQ$, then $x = x_k$ for some $k > N$, so $|f(x) - f(x_0)| = \frac{1}{k} < \frac{1}{N} < \varepsilon$.
 
 :::
 
@@ -98,14 +98,14 @@ Thus $|f(x) - f(x_0)| < \varepsilon$ for all $x \in (x_0 - \delta, x_0 + \delta)
 
 ::: pf-step
 
-Discontinuity at every rational point $x_m \in \mathbb{Q}$:
+Discontinuity at every rational point $x_m \in \QQ$:
     *Proof:*
 
 ::: pf-proof
 
 ::: pf-step
 
-At $x_m \in \mathbb{Q}$, $f(x_m) = \frac{1}{m} > 0$.
+At $x_m \in \QQ$, $f(x_m) = \frac{1}{m} > 0$.
 
 :::
 
@@ -117,7 +117,7 @@ Let $\varepsilon_0 = \frac{1}{2m} > 0$.
 
 ::: pf-step
 
-For any $\delta > 0$, the interval $(x_m - \delta, x_m + \delta)$ contains an irrational number $y$ by density of $\mathbb{R} \setminus \mathbb{Q}$ in $\mathbb{R}$.
+For any $\delta > 0$, the interval $(x_m - \delta, x_m + \delta)$ contains an irrational number $y$ by density of $\RR \setminus \QQ$ in $\RR$.
 
 :::
 
@@ -146,7 +146,7 @@ Construction of continuous functions $f_k \to f$ pointwise:
 
 ::: pf-step
 
-For each fixed $k \in \mathbb{Z}_+$, consider the first $k$ rational numbers $\{x_1, \dots, x_k\}$.
+For each fixed $k \in \ZZ_+$, consider the first $k$ rational numbers $\{x_1, \dots, x_k\}$.
 
 :::
 
@@ -158,14 +158,14 @@ For each $n \in \{1, \dots, k\}$, choose $\delta_{n, k} > 0$ such that the inter
 
 ::: pf-step
 
-Define a continuous "tent" function $\phi_{n, k}: \mathbb{R} \to [0, \frac{1}{n}]$ supported on $[x_n - \delta_{n, k}, x_n + \delta_{n, k}]$ by:
+Define a continuous "tent" function $\phi_{n, k}: \RR \to [0, \frac{1}{n}]$ supported on $[x_n - \delta_{n, k}, x_n + \delta_{n, k}]$ by:
         $$\phi_{n, k}(x) = \max\left\{0, \; \frac{1}{n}\left(1 - \frac{|x - x_n|}{\delta_{n, k}}\right)\right\}.$$
 
 :::
 
 ::: pf-step
 
-Define $f_k: \mathbb{R} \to \mathbb{R}$ by $f_k(x) = \sum_{n=1}^k \phi_{n, k}(x)$. Each $f_k$ is continuous as a finite sum of continuous functions.
+Define $f_k: \RR \to \RR$ by $f_k(x) = \sum_{n=1}^k \phi_{n, k}(x)$. Each $f_k$ is continuous as a finite sum of continuous functions.
 
 :::
 
@@ -183,7 +183,7 @@ Let $x$ be irrational and $\varepsilon > 0$. Choose $N$ with $1/N < \varepsilon$
 
 ::: pf-step
 
-Thus $f_k \to f$ pointwise on $\mathbb{R}$. Q.E.D.
+Thus $f_k \to f$ pointwise on $\RR$. Q.E.D.
 
 :::
 

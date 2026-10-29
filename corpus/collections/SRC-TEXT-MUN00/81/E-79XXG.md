@@ -85,7 +85,7 @@ The map $\tau: E \to E$ swapping $v_1 \leftrightarrow v_2$, $A_1 \leftrightarrow
 
 ::: pf-step
 
-Thus $\mathcal{C}(E, p, X) = \{\operatorname{id}, \tau\} \cong \mathbb{Z}/2\mathbb{Z}$.
+Thus $\mathcal{C}(E, p, X) = \{\operatorname{id}, \tau\} \cong \ZZ/2\ZZ$.
 
 :::
 
@@ -120,7 +120,7 @@ The total space has 3 vertices $\{v_1, v_2, v_3\}$ arranged in a 3-fold rotation
 
 ::: pf-step
 
-The 3-fold cyclic rotation $\rho$ generates the group of label-preserving automorphisms: $\mathcal{C}(E, p, X) = \{\operatorname{id}, \rho, \rho^2\} \cong \mathbb{Z}/3\mathbb{Z}$.
+The 3-fold cyclic rotation $\rho$ generates the group of label-preserving automorphisms: $\mathcal{C}(E, p, X) = \{\operatorname{id}, \rho, \rho^2\} \cong \ZZ/3\ZZ$.
 
 :::
 
@@ -202,7 +202,7 @@ No 90-degree rotational symmetry preserves the alternating edge labeling.
 
 ::: pf-step
 
-Thus the group of covering transformations is $\mathcal{C}(E, p, X) = \{\operatorname{id}, \sigma\} \cong \mathbb{Z}/2\mathbb{Z}$.
+Thus the group of covering transformations is $\mathcal{C}(E, p, X) = \{\operatorname{id}, \sigma\} \cong \ZZ/2\ZZ$.
 
 :::
 

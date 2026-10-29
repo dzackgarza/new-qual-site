@@ -55,7 +55,7 @@ Subspaces:
 
 ::: pf-step
 Products:
-- Finite products of paracompact spaces need not be paracompact: The Sorgenfrey line $\mathbb{R}_l$ is paracompact (and Lindelöf), but the Sorgenfrey plane $\mathbb{R}_l \times \mathbb{R}_l$ is not normal, hence not paracompact.
+- Finite products of paracompact spaces need not be paracompact: The Sorgenfrey line $\RR_l$ is paracompact (and Lindelöf), but the Sorgenfrey plane $\RR_l \times \RR_l$ is not normal, hence not paracompact.
 - If $X$ is paracompact and $Y$ is compact, then $X \times Y$ is paracompact.
 :::
 
@@ -88,7 +88,7 @@ In a complete metric space, every countable intersection of dense open sets is d
 Subspaces (Alexandrov's Theorem):
 - A subspace $Y$ of a completely metrizable space $X$ is topologically complete if and only if $Y$ is a $G_\delta$ set in $X$ (Munkres Theorem 43.7).
 - In particular, every closed subspace and every open subspace of a completely metrizable space is topologically complete.
-- Non-$G_\delta$ subspaces, such as $\mathbb{Q} \subset \mathbb{R}$, are not topologically complete.
+- Non-$G_\delta$ subspaces, such as $\QQ \subset \RR$, are not topologically complete.
 :::
 
 ::: pf-step

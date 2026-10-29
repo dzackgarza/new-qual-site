@@ -25,14 +25,14 @@ audit:
 
 ::: {.exercise}
 
-(a) Let $\mathbb{Z}_{-}$ denote the set of negative integers in the usual order.
-Show that a simply ordered set $A$ fails to be well-ordered if and only if it contains a subset having the same order type as $\mathbb{Z}_{-}$ .
+(a) Let $\ZZ_{-}$ denote the set of negative integers in the usual order.
+Show that a simply ordered set $A$ fails to be well-ordered if and only if it contains a subset having the same order type as $\ZZ_{-}$ .
 
 (b) Show that if $A$ is simply ordered and every countable subset of $A$ is well-ordered, then $A$ is well-ordered.
 :::
 
 ::: {.solution}
-(a) If \(A\) contains a subset order-isomorphic to \(\mathbb Z_-\), then \(A\) is not well-ordered, since that subset has no smallest element.
+(a) If \(A\) contains a subset order-isomorphic to \(\ZZ_-\), then \(A\) is not well-ordered, since that subset has no smallest element.
 
 Conversely, suppose \(A\) is not well-ordered. Then some nonempty subset \(B\subset A\) has no smallest element. Choose \(b_1\in B\). Since \(b_1\) is not smallest in \(B\), choose \(b_2\in B\) with \(b_2<b_1\). Continuing recursively, choose
 \[
@@ -46,7 +46,7 @@ and the map
 \[
 -n\longmapsto b_n
 \]
-is an order isomorphism from \(\mathbb Z_-\) onto the subset \(\{b_n:n\ge1\}\subset A\).
+is an order isomorphism from \(\ZZ_-\) onto the subset \(\{b_n:n\ge1\}\subset A\).
 
-(b) Suppose every countable subset of the simply ordered set \(A\) is well-ordered. If \(A\) were not well-ordered, part (a) would give a countable subset of \(A\) order-isomorphic to \(\mathbb Z_-\), which is not well-ordered. Contradiction. Hence \(A\) is well-ordered.
+(b) Suppose every countable subset of the simply ordered set \(A\) is well-ordered. If \(A\) were not well-ordered, part (a) would give a countable subset of \(A\) order-isomorphic to \(\ZZ_-\), which is not well-ordered. Contradiction. Hence \(A\) is well-ordered.
 :::

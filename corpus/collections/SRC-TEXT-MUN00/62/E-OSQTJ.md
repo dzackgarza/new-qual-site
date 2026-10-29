@@ -39,7 +39,7 @@ is nullhomotopic: contract \(A\) to any point \(a_0\in A\), and regard the contr
 
 Identify
 \[
-S^2-\{a,b\}\cong S^1\times\mathbb R.
+S^2-\{a,b\}\cong S^1\times\RR.
 \]
 The Borsuk lemma from this section says that if a compact subset of \(S^2\) separates two points \(a,b\), then its inclusion in the twice-punctured sphere cannot be nullhomotopic; equivalently, a compact set with nullhomotopic inclusion into \(S^2-\{a,b\}\) cannot separate \(a\) from \(b\). This contradicts the preceding paragraph.
 

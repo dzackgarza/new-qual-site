@@ -21,11 +21,11 @@ audit:
 Determine the **closures** of the following subsets of the **ordered square** $I_o^2 = [0, 1] \times [0, 1]$ equipped with the dictionary order topology:
 
 $$
-A = \left\{ \frac{1}{n} \times 0 \;\middle|\; n \in \mathbb{Z}_+ \right\},
+A = \left\{ \frac{1}{n} \times 0 \;\middle|\; n \in \ZZ_+ \right\},
 $$
 
 $$
-B = \left\{ \left(1 - \frac{1}{n}\right) \times \frac{1}{2} \;\middle|\; n \in \mathbb{Z}_+ \right\},
+B = \left\{ \left(1 - \frac{1}{n}\right) \times \frac{1}{2} \;\middle|\; n \in \ZZ_+ \right\},
 $$
 
 $$

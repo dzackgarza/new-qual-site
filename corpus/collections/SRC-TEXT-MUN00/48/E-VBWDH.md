@@ -17,7 +17,7 @@ review: draft
 Prove the following.
 
 Theorem (Uniform boundedness principle).
-Let $X$ be a complete metric space, and let $\mathcal{F}$ be a subset of $\mathcal{C}(X, \mathbb{R})$ such that for each $a \in X$, the set
+Let $X$ be a complete metric space, and let $\mathcal{F}$ be a subset of $\mathcal{C}(X, \RR)$ such that for each $a \in X$, the set
 
 $$
 \mathcal{F}_a = \theset{f(a) \mid f \in \mathcal{F}}
@@ -29,7 +29,7 @@ Then there is a nonempty open set $U$ of $X$ on which the functions in $\mathcal
 :::
 
 ::: {.solution}
-For $N\in\mathbb Z_+$ set
+For $N\in\ZZ_+$ set
 \[
 A_N=\{x\in X:|f(x)|\le N\text{ for every }f\in\mathcal F\}.
 \]
