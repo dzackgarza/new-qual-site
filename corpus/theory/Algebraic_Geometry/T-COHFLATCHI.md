@@ -30,5 +30,5 @@ For a closed subscheme $X\subseteq\PP_T^n$, apply the theorem to $\mcf=\OO_X$. F
 
 For such a flat projective family, the fibre dimension, degree, arithmetic genus, and Euler characteristic $\chi(\OO_{X_t})$ are determined by the common Hilbert polynomial and are therefore constant. Properties not determined by the Hilbert polynomial may change: irreducibility, reducedness, smoothness, and Picard number need not be constant in a flat family. A flat family of plane conics can specialize from smooth conics to a double line while retaining the polynomial $2m+1$.
 
-If $X$ is integral and $Z\subseteq X$ is a smooth center of codimension at least $2$, the blowup $\Bl_ZX\to X$ is not flat: its generic fibre is a point, whereas the fibre over a point of $Z$ is a projective space of positive dimension. This does not apply to a blowup along an effective Cartier divisor, which is an isomorphism.
+If $X$ is a smooth variety and $Z\subseteq X$ is a smooth closed subvariety of codimension $c\geq2$, the blowup $\Bl_ZX\to X$ is not flat: its generic fibre is a point, whereas the fibre over a point of $Z$ is $\PP^{c-1}$. This does not apply to a blowup along an effective Cartier divisor, which is an isomorphism.
 :::
