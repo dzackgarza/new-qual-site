@@ -32,9 +32,9 @@ What are the polynomials in two real variables that are invariant under the acti
 ::: {.solution}
 Let $D_4$ act on $\RR[x,y]$ through the symmetries of the square with vertices $(\pm1,\pm1)$ in the $(x,y)$-plane.
 Then
-\[
+$$
 \RR[x,y]^{D_4}=\RR[x^2+y^2,\,x^2y^2].
-\]
+$$
 
 ::: pf
 
@@ -98,11 +98,11 @@ The pair $x^2+y^2$, $x^4+y^4$ generates the same ring.
 
 ::: pf-proof
 
-\[
+$$
 x^4+y^4=(x^2+y^2)^2-2x^2y^2,
 \qquad
 x^2y^2=\frac{(x^2+y^2)^2-(x^4+y^4)}{2},
-\]
+$$
 and $2$ is invertible in $\RR$.
 
 :::
