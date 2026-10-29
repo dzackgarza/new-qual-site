@@ -44,17 +44,17 @@ audit:
 
 ::: {.solution}
 
-Let $m^*$ be Lebesgue outer measure on $\RR^n$ and $m$ Lebesgue measure. For every $A \subseteq \RR^n$ and $\eps > 0$ there is a measurable $B \supseteq A$ with $m(B) \le m^*(A) + \eps$, by outer regularity.
+Let $m^*$ be Lebesgue outer measure on $\RR^n$ and $m$ Lebesgue measure. For every $A \subseteq \RR^n$ and $\varepsilon > 0$ there is a measurable $B \supseteq A$ with $m(B) \le m^*(A) + \varepsilon$, by outer regularity.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-(a) If $E_1 \subseteq E_2 \subseteq \cdots$ and $E = \bigcup_j E_j$, then $m^*(E_j) \to m^*(E)$.
+(a, from below) If $E_1 \subseteq E_2 \subseteq \cdots$ and $E = \bigcup_j E_j$, then $m^*(E_j) \to m^*(E)$.
 
 ::: pf-proof
 
-Monotonicity gives $m^*(E_j) \le m^*(E_{j+1}) \le m^*(E)$. Fix $\eps > 0$ and choose measurable $B_k \supseteq E_k$ with $m(B_k) \le m^*(E_k) + \eps$. Put $C_j = \bigcap_{k \ge j} B_k$. Since $E_j \subseteq E_k \subseteq B_k$ for $k \ge j$, $C_j \supseteq E_j$; the $C_j$ increase; and $m(C_j) \le m(B_j)$. So $E \subseteq \bigcup_j C_j$, and continuity from below for $m$ gives $m^*(E) \le \lim_j m(C_j) \le \lim_j m^*(E_j) + \eps$. Since $\eps$ is arbitrary, $m^*(E) \le \lim_j m^*(E_j)$.
+Monotonicity gives $m^*(E_j) \le m^*(E_{j+1}) \le m^*(E)$. Fix $\varepsilon > 0$ and choose measurable $B_k \supseteq E_k$ with $m(B_k) \le m^*(E_k) + \varepsilon$. Put $C_j = \bigcap_{k \ge j} B_k$. Since $E_j \subseteq E_k \subseteq B_k$ for $k \ge j$, $C_j \supseteq E_j$; the $C_j$ increase; and $m(C_j) \le m(B_j)$. So $E \subseteq \bigcup_j C_j$, and continuity from below for $m$ gives $m^*(E) \le \lim_j m(C_j) \le \lim_j m^*(E_j) + \varepsilon$. Since $\varepsilon$ is arbitrary, $m^*(E) \le \lim_j m^*(E_j)$.
 
 :::
 
@@ -62,7 +62,7 @@ Monotonicity gives $m^*(E_j) \le m^*(E_{j+1}) \le m^*(E)$. Fix $\eps > 0$ and ch
 
 ::: {.pf-step #s2}
 
-(a) If $E_1 \supseteq E_2 \supseteq \cdots$ are measurable, $m(E_1) < \infty$, and $E = \bigcap_j E_j$, then $m(E_j) \to m(E)$.
+(a, from above) If $E_1 \supseteq E_2 \supseteq \cdots$ are measurable, $m(E_1) < \infty$, and $E = \bigcap_j E_j$, then $m(E_j) \to m(E)$.
 
 ::: pf-proof
 
@@ -126,7 +126,7 @@ If $f = 0$ a.e., then $\int f = 0$. The converse is step [](#nonneg){.pf-ref}.
 
 ::: pf-proof
 
-Lebesgue integrability is defined for measurable functions. If $f$ is measurable and $|f| \le M$, then $\int |f| \le M\mu(X) < \infty$.
+Lebesgue integrability is defined for measurable functions. If $f$ is measurable and $\abs{f} \le M$, then $\int \abs{f} \le M\mu(X) < \infty$.
 
 :::
 
@@ -138,7 +138,7 @@ Lebesgue integrability is defined for measurable functions. If $f$ is measurable
 
 ::: pf-proof
 
-It suffices to approximate $g \in L^1$ with $g \ge 0$, and then $f^+$ and $f^-$ separately. The simple functions $s_n = \min\big(2^{-n}\lfloor 2^n g\rfloor, n\big)$ satisfy $0 \le s_n \le g$ and $s_n \to g$ wherever $g < \infty$, hence a.e., so dominated convergence with dominating function $g$ gives $\|g - s_n\|_1 \to 0$.
+It suffices to approximate $g \in L^1$ with $g \ge 0$, and then $f^+$ and $f^-$ separately. The simple functions $s_n = \min\big(2^{-n}\lfloor 2^n g\rfloor, n\big)$ satisfy $0 \le s_n \le g$ and $s_n \to g$ wherever $g < \infty$, hence a.e., so dominated convergence with dominating function $g$ gives $\norm{g - s_n}_1 \to 0$.
 
 :::
 
@@ -150,7 +150,7 @@ It suffices to approximate $g \in L^1$ with $g \ge 0$, and then $f^+$ and $f^-$ 
 
 ::: pf-proof
 
-By step [](#s6){.pf-ref} it suffices to approximate $\chi_E$ with $m(E) < \infty$. Outer regularity gives an open $G \supseteq E$ with $m(G \setminus E) < \eps$. $G$ is a countable disjoint union of open intervals $I_k$, and $G_N = \bigcup_{k \le N} I_k$ satisfies $m(G \setminus G_N) \to 0$. So $\|\chi_{G_N} - \chi_E\|_1 = m(G_N \triangle E) < 2\eps$ for large $N$.
+By step [](#s6){.pf-ref} it suffices to approximate $\chi_E$ with $m(E) < \infty$. Outer regularity gives an open $G \supseteq E$ with $m(G \setminus E) < \varepsilon$. $G$ is a countable disjoint union of open intervals $I_k$, and $G_N = \bigcup_{k \le N} I_k$ satisfies $m(G \setminus G_N) \to 0$. So $\norm{\chi_{G_N} - \chi_E}_1 = m(G_N \triangle E) \le m(G\setminus E) + m(G\setminus G_N) < 2\varepsilon$ for large $N$, and $\chi_{G_N}$ is a step function.
 
 :::
 
@@ -162,9 +162,15 @@ By step [](#s6){.pf-ref} it suffices to approximate $\chi_E$ with $m(E) < \infty
 
 ::: pf-proof
 
-Given $f \in L^1$, dominated convergence gives $R$ with $\|f - f\chi_{B(0,R)}\|_1 < \eps/2$. Let $\phi \ge 0$ be smooth with compact support and $\int \phi = 1$, and $\phi_\delta(x) = \delta^{-n}\phi(x/\delta)$. Then $(f\chi_{B(0,R)}) \ast \phi_\delta$ is smooth with compact support, and $\|(f\chi_{B(0,R)}) \ast \phi_\delta - f\chi_{B(0,R)}\|_1 \to 0$ as $\delta \to 0$ by continuity of translation in $L^1$.
+Given $f \in L^1$ and $\varepsilon>0$, dominated convergence gives $R$ with $\norm{f - f\chi_{B(0,R)}}_1 < \varepsilon/2$. Let $\phi \ge 0$ be smooth with compact support and $\int \phi = 1$, and $\phi_\delta(x) = \delta^{-n}\phi(x/\delta)$. Then $(f\chi_{B(0,R)}) \ast \phi_\delta$ is smooth with compact support, and $\norm{(f\chi_{B(0,R)}) \ast \phi_\delta - f\chi_{B(0,R)}}_1 \to 0$ as $\delta \to 0$ by continuity of translation in $L^1$, so some $(f\chi_{B(0,R)}) \ast \phi_\delta$ lies within $\varepsilon$ of $f$.
 
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), the steps labelled (b) through (h) prove those parts, and step [](#nonneg){.pf-ref} supplies the converse directions of (c) and (d).
 
 :::
 
