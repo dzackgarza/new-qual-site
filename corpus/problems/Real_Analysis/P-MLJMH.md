@@ -17,21 +17,29 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The source reads 'Given a definition' and 'Carefully proved'; the statement corrects these to 'Give a definition' and 'Carefully prove'."
 ---
 
 ::: {.problem}
-a. In parts:
-  - Given a definition of $L^\infty(\RR^n)$.
-  - Verify that $\norm{\wait}_\infty$ defines a norm on $L^\infty(\RR^n)$.
-  - Carefully proved that $(L^\infty(\RR^n), \norm{\wait}_\infty)$ is a Banach space.
+(a)
 
-b. Prove that for any measurable $f:\RR^n \to \CC$,
-\[
-L^1(\RR^n) \intersect L^\infty(\RR^n) \subset L^2(\RR^n) \qtext{and} \norm{f}_2 \leq \norm{f}_1^{1\over 2} \cdot \norm{f}_\infty^{1\over 2}
-.\]
+(i) Give a definition of $L^\infty(\RR^n)$.
+
+(ii) Verify that $\norm{\wait}_\infty$ defines a norm on $L^\infty(\RR^n)$.
+
+(iii) Carefully prove that $(L^\infty(\RR^n), \norm{\wait}_\infty)$ is a Banach space.
+
+(b) Prove that for any measurable $f:\RR^n \to \CC$,
+$$
+L^1(\RR^n) \intersect L^\infty(\RR^n) \subset L^2(\RR^n) \qtext{and} \norm{f}_2 \leq \norm{f}_1^{1\over 2} \cdot \norm{f}_\infty^{1\over 2}.
+$$
 :::
+
 ::: {.solution}
-$L^\infty(\RR^n)$ is the space of a.e.-equivalence classes of measurable $f\colon \RR^n \to \CC$ with $\|f\|_\infty \coloneqq \inf\theset{M \ge 0 : |f| \le M \text{ a.e.}} < \infty$.
+(a)(i) $L^\infty(\RR^n)$ is the space of a.e.-equivalence classes of measurable $f\colon \RR^n \to \CC$ with $\|f\|_\infty \coloneqq \inf\theset{M \ge 0 : |f| \le M \text{ a.e.}} < \infty$.
 
 ::: pf
 
