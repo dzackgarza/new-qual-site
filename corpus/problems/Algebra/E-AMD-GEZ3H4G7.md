@@ -28,21 +28,21 @@ Let $F\subseteq L\subseteq\Omega$ be fields and let $\alpha\in\Omega$ be algebra
 Assume $F\subseteq L\subseteq\Omega$ are fields and $\alpha\in\Omega$ is algebraic over $F$. Then $\alpha$ is also algebraic over $L$, since its minimal polynomial over $F$ lies in $L[x]$ and annihilates $\alpha$.
 
 Let
-\[
+$$
 m_F=m_{\alpha,F},\qquad m_L=m_{\alpha,L}.
-\]
+$$
 Divide $m_F$ by $m_L$ in $L[x]$:
-\[
+$$
 m_F=q\,m_L+r,\qquad \deg r<\deg m_L.
-\]
+$$
 Evaluating at $\alpha$ gives
-\[
+$$
 0=m_F(\alpha)=r(\alpha),
-\]
+$$
 because $m_L(\alpha)=0$. By minimality of $m_L$, the only polynomial in $L[x]$ of degree smaller than $\deg m_L$ that annihilates $\alpha$ is the zero polynomial. Hence $r=0$.
 
 Therefore
-\[
+$$
 \boxed{m_{\alpha,L}\mid m_{\alpha,F}\quad\text{in }L[x].}
-\]
+$$
 :::
