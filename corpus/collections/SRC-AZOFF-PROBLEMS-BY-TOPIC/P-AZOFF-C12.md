@@ -34,6 +34,10 @@ audit:
     conjugation composed with T composed with conjugation at the three
     distinct points alpha, beta, and conjugate beta, and verified the
     counterexample T(z)=-1/z. The source error is recorded in COMPLAINTS.md.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source asked to prove (a)-(d) equivalent, false for T(z) = -1/z; the statement asks for (a)-(c) equivalent and (d) sufficient. The rendered erratum remark is removed.'
 ---
 
 ::: {.problem}
@@ -386,7 +390,7 @@ with $T(\alpha)=\alpha$, so condition (d) fails.
 
 ::: {.pf-step #s8}
 
-The true implication pattern for the four printed conditions is
+The implication pattern for the four conditions is
 $$
 \boxed{
 \text{(d)}
@@ -417,16 +421,4 @@ Step [](#s8){.pf-ref} proves the equivalence of (a)--(c), the implication from (
 
 :::
 
-:::
-
-::: {.remark}
-Erratum: the source asks to prove that all four printed conditions are
-equivalent. This is false. The Möbius transformation
-$$
-T(z)=-\frac1z
-$$
-has real coefficients and therefore satisfies (a)--(c), but its fixed-point
-equation is $z^2=-1$, so it has no real fixed point and cannot satisfy (d).
-The corrected statement keeps the four source conditions and asks for
-(d) $\Rightarrow$ (a) $\Leftrightarrow$ (b) $\Leftrightarrow$ (c).
 :::
