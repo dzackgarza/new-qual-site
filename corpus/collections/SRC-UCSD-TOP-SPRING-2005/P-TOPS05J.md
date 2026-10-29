@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS05J
 kind: problem
-title: "Split short exact sequence for homology of a product relative to its wedge"
+title: 'Split short exact sequence for the homology of a product relative to its wedge'
 classification:
   areas:
   - topology

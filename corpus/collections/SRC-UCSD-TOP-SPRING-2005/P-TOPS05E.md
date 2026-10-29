@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS05E
 kind: problem
-title: "Closed non-orientable 3-manifold has nonzero H^1"
+title: 'A closed non-orientable $3$-manifold has $H^1\ne0$'
 classification:
   areas:
   - topology

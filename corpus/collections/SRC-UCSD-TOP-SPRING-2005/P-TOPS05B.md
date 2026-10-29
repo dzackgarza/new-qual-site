@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS05B
 kind: problem
-title: "Z_k-orientable manifold for k > 2 is orientable"
+title: 'A $\ZZ/k$-orientable manifold with $k>2$ is orientable'
 classification:
   areas:
   - topology

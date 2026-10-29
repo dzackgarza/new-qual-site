@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS05H
 kind: problem
-title: "No map from HP^n to CP^{2n} sending generator to a nonzero multiple"
+title: 'No map $\quatprojective^n\to\CP^{2n}$ sending the generator to a nonzero multiple'
 classification:
   areas:
   - topology

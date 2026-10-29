@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS05C
 kind: problem
-title: "Cohomology and homology of RP^2 x RP^3 and Bockstein action"
+title: 'Cohomology and homology of $\RP^2\times\RP^3$ and the Bockstein'
 classification:
   areas:
   - topology
