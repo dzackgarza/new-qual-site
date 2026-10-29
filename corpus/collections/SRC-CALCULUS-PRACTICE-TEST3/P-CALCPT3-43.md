@@ -12,7 +12,7 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-10-30
-  note: "Transcribed from Question 43 of assets/attachments/calculus_practice_test3.pdf, read from the page render; the MinerU extraction garbles the equation and drops an upper summation limit."
+  note: "Transcribed from Question 43 of assets/attachments/calculus_practice_test3.pdf and checked against its MinerU Flash extraction, which reads choice (E) as I and II. The 300 dpi page render reads I and III."
 ---
 
 ::: {.problem}
