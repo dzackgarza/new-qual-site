@@ -31,14 +31,17 @@ audit:
     through a punctured sphere, which is homeomorphic to Euclidean space and is
     contractible. Thus both maps are null-homotopic; for n>=2 their constant
     endpoints are joined by a path in the sphere. Recorded the S^0 counterexample.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source states the claim for every n, which fails for n=1 because S^0 is disconnected. The statement now assumes n>=2.
 ---
 
 ::: {.problem}
-Prove that if $f,g:X\to S^{n-1}$ are continuous and both not surjective then $f$ is homotopic to $g$.
+Let $n\ge2$. Prove that if $f,g:X\to S^{n-1}$ are continuous and both not surjective then $f$ is homotopic to $g$.
 :::
 
 ::: {.solution}
-For the intended statement assume $n\ge2$.
 
 ::: pf
 
@@ -125,13 +128,7 @@ is a homotopy from $c_a$ to $c_b$.
 
 :::
 
-::: pf-step
-Hence for $n\ge2$,
-\[
-f\simeq g.
-\]
-
-::: pf-proof
+::: pf-qed
 By step [](#f-g-constant){.pf-ref},
 \[
 f\simeq c_a
@@ -146,34 +143,6 @@ Symmetry and transitivity of homotopy give
 \[
 f\simeq c_a\simeq c_b\simeq g.
 \]
-:::
-
-:::
-
-::: pf-step
-The source statement is false when $n=1$.
-
-::: pf-proof
-Let $X=\{*\}$ and identify
-\[
-S^0=\{-1,1\}.
-\]
-Define
-\[
-f(*)=1,
-\qquad
-g(*)=-1.
-\]
-Both maps are non-surjective.
-If they were homotopic, a homotopy
-\[
-X\times I\to S^0
-\]
-would give a path in $S^0$ from $1$ to $-1$.
-No such path exists because $S^0$ is discrete.
-Thus the unqualified statement fails for $n=1$.
-:::
-
 :::
 
 :::
