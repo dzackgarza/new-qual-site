@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-UVNVV
 kind: problem
-title: Injectivity relates to derivatives
+title: "A zero of $f'$ of order $n$ makes $f$ locally $(n+1)$-to-one"
 classification:
   areas:
   - complex-analysis
@@ -16,19 +16,21 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source omits that f is holomorphic; the statement adds it.
 ---
 
 ::: {.exercise}
-Show that if $z_0$ is a zero of $f'$ of order $n$, then $f$ is $(n+1)$-to-one in a neighborhood of $z_0$.
+Let $f$ be holomorphic near $z_0$. Show that if $z_0$ is a zero of $f'$ of order $n$, then $f$ is $(n+1)$-to-one in a neighborhood of $z_0$.
 :::
 
 ::: {.solution}
-**Goal:** Show that if $z_0$ is a zero of $f'$ of order $n$, then $f$ is $(n+1)$-to-one in a neighborhood of $z_0$ (for $z$ near $z_0$, the equation $f(z) = w$ has exactly $n+1$ solutions in a punctured neighborhood of $z_0$, for $w$ near $f(z_0)$, $w \neq f(z_0)$).
-
 ::: pf
 
 ::: {.pf-step #expand-fprime}
-Setup: expand $f$ about $z_0$.
+$f(z) - f(z_0) = (z - z_0)^{n+1} \phi(z)$ with $\phi$ holomorphic near $z_0$ and $\phi(z_0) \neq 0$.
 
 ::: pf-proof
 Since $z_0$ is a zero of $f'$ of order $n$, we have $f'(z) = (z - z_0)^n h(z)$ with $h$ analytic near $z_0$, $h(z_0) \neq 0$.
@@ -74,7 +76,7 @@ For $w' \neq 0$ near $0$, the equation $w^{n+1} = w'$ has exactly $n+1$ distinct
 :::
 
 ::: pf-qed
-Step [](#zeta-biholomorphism){.pf-ref} shows the change of variables $z \leftrightarrow \zeta$ is one-to-one, and step [](#power-map-multiplicity){.pf-ref} shows $f$ in these coordinates is $(n+1)$-to-one; composing, $f$ is $(n+1)$-to-one near $z_0$.
+By step [](#zeta-biholomorphism){.pf-ref}, $\zeta$ maps a neighborhood $U$ of $z_0$ bijectively onto a disk $\abs{\zeta}<r$. For $0<\abs{w-f(z_0)}<r^{n+1}$, the preceding step and step [](#power-map-multiplicity){.pf-ref} show that $f(z)=w$ has exactly $n+1$ solutions $z\in U$, all different from $z_0$; and $f(z)=f(z_0)$ only at $z=z_0$ in $U$.
 :::
 
 :::
