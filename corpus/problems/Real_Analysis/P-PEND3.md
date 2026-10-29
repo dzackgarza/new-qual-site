@@ -50,7 +50,7 @@ Let $m^*$ be Lebesgue outer measure on $\RR^n$ and $m$ Lebesgue measure. For eve
 
 ::: {.pf-step #s1}
 
-If $E_1 \subseteq E_2 \subseteq \cdots$ and $E = \bigcup_j E_j$, then $m^*(E_j) \to m^*(E)$.
+(a) If $E_1 \subseteq E_2 \subseteq \cdots$ and $E = \bigcup_j E_j$, then $m^*(E_j) \to m^*(E)$.
 
 ::: pf-proof
 
@@ -62,7 +62,7 @@ Monotonicity gives $m^*(E_j) \le m^*(E_{j+1}) \le m^*(E)$. Fix $\eps > 0$ and ch
 
 ::: {.pf-step #s2}
 
-If $E_1 \supseteq E_2 \supseteq \cdots$ are measurable, $m(E_1) < \infty$, and $E = \bigcap_j E_j$, then $m(E_j) \to m(E)$.
+(a) If $E_1 \supseteq E_2 \supseteq \cdots$ are measurable, $m(E_1) < \infty$, and $E = \bigcap_j E_j$, then $m(E_j) \to m(E)$.
 
 ::: pf-proof
 
@@ -74,7 +74,7 @@ The sets $E_1 \setminus E_j$ increase to $E_1 \setminus E$, so continuity from b
 
 ::: pf-step
 
-A countable union of null sets is null.
+(b) A countable union of null sets is null.
 
 ::: pf-proof
 
@@ -86,11 +86,11 @@ $m^*(\bigcup_k E_k) \le \sum_k m^*(E_k) = 0$ by countable subadditivity.
 
 ::: {.pf-step #nonneg}
 
-For measurable $f \ge 0$, $f = 0$ a.e. if and only if $\int f = 0$, if and only if $\int_E f = 0$ for every measurable $E$.
+If $g \ge 0$ is measurable and $\int g = 0$, then $g = 0$ a.e.
 
 ::: pf-proof
 
-If $f = 0$ a.e., then $f\chi_E = 0$ a.e. and $\int_E f = 0$ for every $E$, in particular for $E = \RR^n$. If $\int f = 0$, then $\int f \ge \frac1n m\theset{f \ge 1/n}$ gives $m\theset{f \ge 1/n} = 0$ for every $n$, and $\theset{f > 0} = \bigcup_n \theset{f \ge 1/n}$ is null.
+For every $k$, $\int g \ge \frac1k m\theset{g \ge 1/k}$ gives $m\theset{g \ge 1/k} = 0$, so $\theset{g > 0} = \bigcup_k \theset{g \ge 1/k}$ is null by (b).
 
 :::
 
@@ -98,7 +98,7 @@ If $f = 0$ a.e., then $f\chi_E = 0$ a.e. and $\int_E f = 0$ for every $E$, in pa
 
 ::: pf-step
 
-For integrable real-valued $f$, $f = 0$ a.e. if and only if $\int_E f = 0$ for every measurable $E$.
+(c) For integrable real-valued $f$, $f = 0$ a.e. if and only if $\int_E f = 0$ for every measurable $E$.
 
 ::: pf-proof
 
@@ -110,7 +110,19 @@ If $f = 0$ a.e., then $f\chi_E = 0$ a.e. and $\int_E f = 0$. Conversely, $E = \t
 
 ::: pf-step
 
-On a measure space with $\mu(X) < \infty$, a bounded function is integrable if and only if it is measurable.
+(d) For measurable $f \ge 0$, $f = 0$ a.e. if and only if $\int f = 0$.
+
+::: pf-proof
+
+If $f = 0$ a.e., then $\int f = 0$. The converse is step [](#nonneg){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-step
+
+(e) On a measure space with $\mu(X) < \infty$, a bounded function is integrable if and only if it is measurable.
 
 ::: pf-proof
 
@@ -122,7 +134,7 @@ Lebesgue integrability is defined for measurable functions. If $f$ is measurable
 
 ::: {.pf-step #s6}
 
-Simple functions are dense in $L^1$.
+(f) Simple functions are dense in $L^1$.
 
 ::: pf-proof
 
@@ -134,7 +146,7 @@ It suffices to approximate $g \in L^1$ with $g \ge 0$, and then $f^+$ and $f^-$ 
 
 ::: pf-step
 
-Step functions are dense in $L^1(\RR)$.
+(g) Step functions are dense in $L^1(\RR)$.
 
 ::: pf-proof
 
@@ -146,7 +158,7 @@ By step [](#s6){.pf-ref} it suffices to approximate $\chi_E$ with $m(E) < \infty
 
 ::: pf-step
 
-$C_c^\infty(\RR^n)$ is dense in $L^1(\RR^n)$.
+(h) $C_c^\infty(\RR^n)$ is dense in $L^1(\RR^n)$.
 
 ::: pf-proof
 
