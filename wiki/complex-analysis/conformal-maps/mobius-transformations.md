@@ -13,8 +13,6 @@ topics:
 
 [[D-TM4TE]]
 
-[[FD-GK7JE]]
-
 [[FE-O47RH]]
 
 ::: {.remark title="Holomorphic with nonvanishing derivative is conformal"}

@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-TM4TE
 kind: definition
 title: Conformal maps and biholomorphisms
+prompts:
+- What is a conformal map?
 classification:
   areas:
   - complex-analysis
@@ -23,4 +25,12 @@ A bijective conformal map $f\colon U\to V$ is a \dfn{biholomorphism}, and $U$ an
 
 ::: {.remark}
 A conformal map preserves signed angles between $C^1$ curves with nonzero tangent vectors, because its derivative at each point is multiplication by a nonzero complex number; see the proposition on [[D-PCDNH]].
+:::
+
+::: {.proposition}
+A conformal map $f\colon\Omega\to\CC$ is locally injective: every $z_0\in\Omega$ has an open neighborhood on which $f$ is injective.
+:::
+
+::: {.proof}
+Since $f'(z_0)\neq0$, the holomorphic inverse function theorem gives an open neighborhood $V$ of $z_0$ such that $f|_V$ is a bijection onto an open set with holomorphic inverse; in particular $f|_V$ is injective.
 :::
