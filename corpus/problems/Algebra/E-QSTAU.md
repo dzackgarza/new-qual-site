@@ -19,9 +19,9 @@ audit:
 ---
 
 ::: {.problem}
-4. If $R$ is an integral domain and $A$ is an $n \times n$ matrix over $R$, prove that if a system of linear equations $A x=0$ has a nonzero solution then $\operatorname{det} A=0$.
-   Is the converse true?
-   What if we drop the assumption that $R$ is an integral domain?
+If $R$ is an integral domain and $A$ is an $n \times n$ matrix over $R$, prove that if a system of linear equations $A x=0$ has a nonzero solution then $\det A=0$.
+Is the converse true?
+What if we drop the assumption that $R$ is an integral domain?
 :::
 
 ::: {.solution}
@@ -42,7 +42,7 @@ Some coordinate $x_j$ is nonzero, and $(\det A)x_j=0$ in the domain $R$ forces $
 Over an integral domain the converse holds: if $\det A=0$, then $Ax=0$ has a nonzero solution in $R^n$.
 
 ::: pf-proof
-Let $F=\operatorname{Frac}(R)$.
+Let $F=\Frac(R)$.
 Since $\det A=0$, $A$ is singular over the field $F$, so $Ay=0$ for some $0\neq y\in F^n$.
 Write $y_i=a_i/b_i$ with $a_i,b_i\in R$, $b_i\neq0$, and put $d=b_1\cdots b_n\neq0$.
 Then $x=dy\in R^n$ is nonzero and $Ax=d\,Ay=0$.
