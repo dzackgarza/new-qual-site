@@ -4,7 +4,7 @@ id: FD-U6KUJ
 kind: definition
 title: Torsion-free module
 prompts:
-- What does it mean for a module to be torsionfree?
+- What does it mean for a module to be torsion-free?
 classification:
   areas:
   - algebra
