@@ -5,7 +5,7 @@ kind: problem
 title: Implicit function theorem from the inverse function theorem
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Multivariable Calculus
 relations: []
