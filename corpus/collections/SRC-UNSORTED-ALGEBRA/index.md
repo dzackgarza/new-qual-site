@@ -49,7 +49,6 @@ source:
   - id: E-AMD-7FMEI2QD
   - id: E-AMD-7YJUIMVH
   - id: E-AMD-A3SS4EYY
-  - id: E-AMD-AY43ETMO
   - id: E-AMD-BBG6IC7K
   - id: E-AMD-BII4UYJ7
   - id: E-AMD-BKDDOBZG
