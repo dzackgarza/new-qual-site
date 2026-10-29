@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-5-01
 kind: problem
-title: Maxim algebraic topology 5.1
+title: Classification of $S^1$-bundles over $S^2$
 classification:
   areas: [topology]
   topics: []
