@@ -18,7 +18,7 @@ from .pandoc_batch import PandocServer
 from .publication import ReferenceItem, load_publications
 from .static_site import build_asset_catalog
 from .tex import unrenderable_tex
-from .wiki import WikiPage, link_citations, parse_pages, resolve_links, validate_wiki_sources, validate_wiki_tree
+from .wiki import WikiPage, link_citations, parse_pages, resolve_links, title_card_links, validate_wiki_sources, validate_wiki_tree
 
 
 def load(
@@ -40,6 +40,7 @@ def load(
     for item in parsed:
         card_titles[item.card.id] = typeset_dashes(item.card.title)
         card_routes[item.card.id] = Path(index.card_route(item.card)) / f"{item.card.id}.html"
+    parsed = [item.model_copy(update={"ast": title_card_links(item.ast, card_titles)}) for item in parsed]
     if wiki_pages:
         assets = build_asset_catalog(root / "assets")
         errors.extend(validate_wiki_tree(wiki_pages))

@@ -76,7 +76,7 @@ mathematical correction under its own node, not under copy policy.
   - **`ad-smart-titles`**. **Needs:** none. `--` and `$…$` reach titles, prompts, link
     text and `<title>`. **Acceptance:** dashes typeset; tab titles carry no TeX. **Closed.**
   - **`ad-bare-id-links`**. **Needs:** none. 148 wikilinks display a bare card id.
-    **Acceptance:** link text is the card title or authored text.
+    **Acceptance:** link text is the card title or authored text. **Closed.**
   - **`ad-collection-pages`**. **Needs:** none. Drop cap splits the count; "1 problems.";
     derived "Problem N" locators; transcluded collections render empty (workshop packets).
     **Acceptance:** each corrected on the deployed pages.

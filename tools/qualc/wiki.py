@@ -22,7 +22,7 @@ import panflute as pf
 import yaml
 
 from .diagnostics import Diagnostic, DiagnosticCode
-from .model import FRONT_MATTER, MARKDOWN, drop_path_captions, load_citations, typeset_dashes, unlist_step_claims, from_ast, load_front_matter, reject_extraction_residue, unread_math
+from .model import FRONT_MATTER, MARKDOWN, drop_path_captions, load_citations, to_json, typeset_dashes, unlist_step_claims, from_ast, load_front_matter, reject_extraction_residue, unread_math
 from .pandoc_batch import PARALLEL_WORKERS, Citations, PandocFailure, PandocResult, PandocServer
 from .static_site import AssetCatalog, _asset_source
 from .tex import mark_definienda
@@ -630,6 +630,26 @@ def _carries_math(inlines: list[pf.Inline]) -> bool:
     return False
 
 
+def _title_bare_link(link: pf.Link, raw: str, card_titles: dict[str, str]) -> None:
+    """An unlabelled wikilink to a card displays the card's title, not its id."""
+    card_id = Path(urlsplit(raw).path).stem
+    if card_id in card_titles and pf.stringify(link).strip() == card_id:
+        link.content = _text_inlines(card_titles[card_id])
+        if _carries_math(link.content) and MATH_LINK_CLASS not in link.classes:
+            link.classes.append(MATH_LINK_CLASS)
+
+
+def title_card_links(ast: str, card_titles: dict[str, str]) -> str:
+    """A card body with every unlabelled wikilink to a card showing that card's title."""
+
+    def visit(element: pf.Element, doc: pf.Doc) -> None:
+        del doc
+        if isinstance(element, pf.Link):
+            _title_bare_link(element, element.url, card_titles)
+
+    return to_json(from_ast(ast).walk(visit))
+
+
 def resolve_links(
     pages: list[WikiPage],
     card_routes: dict[str, Path],
@@ -665,9 +685,8 @@ def resolve_links(
                     )
                 else:
                     element.url = target
-                card_id = Path(urlsplit(raw).path).stem
-                if isinstance(element, pf.Link) and card_id in card_titles and pf.stringify(element).strip() == card_id:
-                    element.content = _text_inlines(card_titles[card_id])
+                if isinstance(element, pf.Link):
+                    _title_bare_link(element, raw, card_titles)
                 if isinstance(element, pf.Link) and _carries_math(element.content) and MATH_LINK_CLASS not in element.classes:
                     element.classes.append(MATH_LINK_CLASS)
             except MissingPageReference as exc:
