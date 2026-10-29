@@ -13,25 +13,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Checked against Problem 21 of the retained Kent State Algebra Qualifying Exam Problems — Ring Theory compilation, version August 29, 2017.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source prints $I_i+\bigcap I_j=R$, which fails whenever $I_i\neq R$ because $\bigcap_j I_j\subseteq I_i$. The statement now intersects over $j\neq i$.
 ---
 
 ::: {.problem}
-[NEW] Let R be a commutative ring with identity and let $I _ { 1 } , I _ { 2 } , \ldots , I _ { n }$ be pairwise comaximal ideals of $R \ ( { \mathrm { i . e . , } } \ I _ { i } + I _ { j } = R { \mathrm { i f } } \ i \neq j )$ . Show that $I _ { i } + \bigcap I _ { j } = R$ for all i.
-:::
-
-::: {.remark}
-Erratum: the intersection must exclude $I_i$. The literal statement
-$$
-I_i+\bigcap_j I_j=R
-$$
-is generally false because
-$$
-\bigcap_j I_j\subseteq I_i.
-$$
-The intended conclusion is
-$$
-I_i+\bigcap_{j\ne i}I_j=R.
-$$
+[NEW] Let R be a commutative ring with identity and let $I _ { 1 } , I _ { 2 } , \ldots , I _ { n }$ be pairwise comaximal ideals of $R \ ( { \mathrm { i . e . , } } \ I _ { i } + I _ { j } = R { \mathrm { i f } } \ i \neq j )$ . Show that $I _ { i } + \bigcap _ { j \neq i } I _ { j } = R$ for all i.
 :::
 
 ::: {.solution}
@@ -59,7 +48,6 @@ such that
 $$
 a_j+b_j=1.
 $$
-
 
 ::: pf-proof
 
@@ -99,7 +87,6 @@ $$
 b\in\bigcap_{j\ne i}I_j.
 $$
 
-
 ::: pf-proof
 
 Fix
@@ -129,7 +116,6 @@ One has
 $$
 1-b\in I_i.
 $$
-
 
 ::: pf-proof
 
@@ -173,7 +159,6 @@ R.
 }
 $$
 
-
 ::: pf-proof
 
 By step [](#s1-2){.pf-ref},
@@ -200,7 +185,7 @@ Any ideal containing $1$ is the whole ring, so the sum equals $R$.
 
 ::: pf-qed
 
-The index $i$ was arbitrary, so step [](#s1-4){.pf-ref} proves the corrected conclusion for every $i$.
+The index $i$ was arbitrary, so step [](#s1-4){.pf-ref} proves the conclusion for every $i$.
 
 :::
 
