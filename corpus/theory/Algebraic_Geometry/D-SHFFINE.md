@@ -33,7 +33,7 @@ Let $X$ be a locally compact paracompact Hausdorff space and $\mathcal{F}$ a she
   $$
   is surjective, where $\Gamma_c(X,\mathcal F)$ denotes the global sections with compact support.
 
-- $\mathcal{F}$ is \dfn{fine} if for every locally finite open cover $\{U_i\}$ of $X$ there are sheaf endomorphisms $\eta_i \colon \mathcal{F} \to \mathcal{F}$ with the support of $\eta_i$ contained in $U_i$ and $\sum_i \eta_i = \mathrm{id}_{\mathcal{F}}$.
+- $\mathcal{F}$ is \dfn{fine} if for every locally finite open cover $\{U_i\}$ of $X$ there are sheaf endomorphisms $\eta_i \colon \mathcal{F} \to \mathcal{F}$ with the support of $\eta_i$ contained in $U_i$ and $\sum_i \eta_i = \id_{\mathcal{F}}$.
 :::
 
 ::: {.proposition}
