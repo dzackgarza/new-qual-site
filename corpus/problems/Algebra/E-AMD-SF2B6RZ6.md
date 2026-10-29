@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that $HK$ is a subgroup of $G$ iff $HK = KH$.
+Let $H$ and $K$ be subgroups of a group $G$. Show that $HK$ is a subgroup of $G$ iff $HK = KH$.
 :::
 
 ::: {.solution}
@@ -32,55 +32,50 @@ Show that $HK$ is a subgroup of $G$ iff $HK = KH$.
 ::: pf
 
 ::: {.pf-step #hk-subgroup-implies-hk-eq-kh}
-If \(HK\le G\), then \(HK=KH\).
+If $HK\le G$, then $HK=KH$.
 
 ::: pf-proof
-Since \(HK\) is a subgroup, it is closed under inverses. Therefore
-\[
+Since $HK$ is a subgroup, it is closed under inverses. Therefore
+$$
 HK=(HK)^{-1}=K^{-1}H^{-1}=KH,
-\]
-because \(H^{-1}=H\) and \(K^{-1}=K\).
+$$
+because $H^{-1}=H$ and $K^{-1}=K$.
 :::
 
 :::
 
 ::: {.pf-step #hk-eq-kh-implies-closed}
-Conversely, suppose \(HK=KH\). Then \(HK\) is nonempty and closed under \(xy^{-1}\).
+Conversely, suppose $HK=KH$. Then $HK$ is nonempty and closed under $xy^{-1}$.
 
 ::: pf-proof
-The identity lies in \(HK\). Let
-\[
+The identity lies in $HK$. Let
+$$
 x=h_1k_1,
 \qquad
 y=h_2k_2
-\]
-with \(h_1,h_2\in H\) and \(k_1,k_2\in K\). Then
-\[
+$$
+with $h_1,h_2\in H$ and $k_1,k_2\in K$. Then
+$$
 xy^{-1}=h_1k_1k_2^{-1}h_2^{-1}.
-\]
-Since \(k_1k_2^{-1}\in K\) and \(h_2^{-1}\in H\), the product
-\[
+$$
+Since $k_1k_2^{-1}\in K$ and $h_2^{-1}\in H$, the product
+$$
 (k_1k_2^{-1})h_2^{-1}\in KH=HK.
-\]
-Thus there exist \(h_3\in H\), \(k_3\in K\) with
-\[
+$$
+Thus there exist $h_3\in H$, $k_3\in K$ with
+$$
 (k_1k_2^{-1})h_2^{-1}=h_3k_3.
-\]
+$$
 Hence
-\[
+$$
 xy^{-1}=h_1h_3k_3\in HK.
-\]
+$$
 :::
 
 :::
 
-::: pf-step
-Therefore \(HK\le G\) if and only if \(HK=KH\).
-
-::: pf-proof
-By step [](#hk-eq-kh-implies-closed){.pf-ref}, the nonempty subset \(HK\) satisfies the one-step subgroup criterion \(x,y\in HK\Rightarrow xy^{-1}\in HK\), so it is a subgroup. Together with step [](#hk-subgroup-implies-hk-eq-kh){.pf-ref} this proves the equivalence.
-:::
-
+::: pf-qed
+By step [](#hk-eq-kh-implies-closed){.pf-ref}, if $HK=KH$ then the nonempty subset $HK$ satisfies the one-step subgroup criterion $x,y\in HK\Rightarrow xy^{-1}\in HK$, so $HK\le G$. Step [](#hk-subgroup-implies-hk-eq-kh){.pf-ref} gives the converse.
 :::
 
 :::
