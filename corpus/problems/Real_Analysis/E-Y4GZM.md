@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.exercise}
-- Show that if $f, g$ are continuous and compactly supported, then so is $f\ast g$.
+Show that if $f, g$ are continuous and compactly supported, then so is $f\ast g$.
 :::
 
 ::: {.solution}
@@ -91,12 +91,6 @@ If $x \notin \supp f + \supp g$, then $(x - \supp g) \cap \supp f = \emptyset$, 
 :::
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
 
 :::
 
