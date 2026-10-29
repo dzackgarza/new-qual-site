@@ -21,6 +21,7 @@ Describe the universal cover of $X = (S^1 \cross S^1) \vee S^2$ and compute $\pi
 ::: {.solution}
 
 \envlist
+
 ::: {.concept}
 \envlist
 

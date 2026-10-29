@@ -584,13 +584,15 @@ def validate_fenced_divs(markdown: str, first_line: int) -> None:
 
     An opener must start at column 0, and it must stand on its own line. A
     mid-line `:::` outside a code span, an opener indented four or more spaces,
-    and an opener followed by text are errors: Pandoc reads each as paragraph
+    an opener followed by text, and an opener on the line after text are
+    errors: Pandoc reads each as paragraph
     or code text, so the next bare `:::` closes the enclosing div instead.
     Balancing uses only opener/closer order; no mathematics is interpreted.
     Errors name file lines: `first_line` is the file line on which `markdown`
     starts.
     """
     stack: list[_FencedDivNode] = []
+    previous = ""
 
     for index, line in enumerate(markdown.splitlines()):
         number = index + first_line
@@ -604,13 +606,19 @@ def validate_fenced_divs(markdown: str, first_line: int) -> None:
                     f"indented fenced div on line {number}; a fence must start at column 0"
                 )
             opening = _fenced_div_opening(content, number)
+            if opening is not None and previous.strip() and _FENCED_DIV_LINE.match(previous) is None:
+                raise ValueError(
+                    f"fenced-div opener on line {number} follows text; put a blank line before it"
+                )
             if opening is not None:
                 _, width, rest = opening
                 stack.append(_FencedDivNode(index, indent, width, rest))
+                previous = content
                 continue
             if not stack:
                 raise ValueError(f"unmatched fenced-div closer on line {number}")
             stack.pop()
+            previous = content
             continue
 
         for fence in _MIDLINE_FENCE.finditer(content):
@@ -618,6 +626,7 @@ def validate_fenced_divs(markdown: str, first_line: int) -> None:
                 raise ValueError(
                     f"fenced-div opener after text on line {number}; put the opener on its own line"
                 )
+        previous = content
 
     if stack:
         node = stack[-1]

@@ -21,6 +21,7 @@ Show there is no homeomorphism $\CP^2 \mapsvia{f} \CP^2$ such that $f(\CP^1)$ is
 ::: {.solution}
 
 \envlist
+
 ::: {.concept}
 \envlist
 

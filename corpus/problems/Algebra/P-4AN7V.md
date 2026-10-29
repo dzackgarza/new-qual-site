@@ -82,6 +82,7 @@ $$
 \quad\Longleftrightarrow\quad
 n\text{ is squarefree}.
 $$
+
 ::: pf-proof
 
 Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.

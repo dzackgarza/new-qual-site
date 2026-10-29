@@ -60,6 +60,7 @@ and
 \[
 \operatorname{Gal}(L_a/\mathbb Q)\cong S_3.
 \]
+
 ::: pf-proof
 Let
 \[
@@ -123,6 +124,7 @@ and
 \[
 \operatorname{Gal}(L_b/\mathbb Q)\cong S_3\times C_2.
 \]
+
 ::: pf-proof
 Put
 \[
@@ -191,6 +193,7 @@ In particular,
 \[
 |\operatorname{Gal}(L_c/\mathbb Q)|=120.
 \]
+
 ::: pf-proof
 Let
 \[
@@ -277,6 +280,7 @@ and
 \[
 \operatorname{Gal}(L_d/\mathbb Q)\cong S_3.
 \]
+
 ::: pf-proof
 The only possible rational roots are $\pm1$, and
 \[

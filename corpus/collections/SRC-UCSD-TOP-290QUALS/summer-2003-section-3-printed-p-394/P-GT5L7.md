@@ -21,6 +21,7 @@ Show that $\ZZ^{\ast 2}$ has subgroups isomorphic to $\ZZ^{\ast n}$ for every $n
 ::: {.solution}
 
 \envlist
+
 ::: {.concept}
 \envlist
 
