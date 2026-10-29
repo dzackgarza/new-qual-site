@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that the transitive subgroups of $S_3$ are $S_3, A_3$
+Show that the transitive subgroups of $S_3$ are $S_3$ and $A_3$.
 :::
 
 ::: {.hint}
@@ -27,12 +27,9 @@ By orbit-stabilizer, $3$ divides the order of a transitive subgroup of $S_3$.
 :::
 
 ::: {.solution}
+Let $H \leq S_3$ act transitively on $X = \theset{1,2,3}$.
 
 ::: pf
-
-::: pf-step
-Let $H \leq S_3$ act transitively on $X = \theset{1,2,3}$.
-:::
 
 ::: {.pf-step #h-order-divisible-by-3}
 $3$ divides $\abs H$.
