@@ -26,29 +26,43 @@ What is the quaternion group $Q_8$? Give its presentation and list the number of
 :::
 
 ::: {.solution}
-The quaternion group is
-\[
-Q_8=\{\pm1,\pm i,\pm j,\pm k\},
-\]
-with multiplication determined by
-\[
-i^2=j^2=k^2=ijk=-1.
-\]
-Equivalently,
-\[
-Q_8=\langle i,j\mid i^4=1,\ i^2=j^2,\ jij^{-1}=i^{-1}\rangle.
-\]
 
-The element orders are immediate from the relations:
-\[
-\operatorname{ord}(1)=1,\qquad \operatorname{ord}(-1)=2,
-\]
-and each of \(\pm i,\pm j,\pm k\) squares to \(-1\), so each has order \(4\). Thus the counts are
-\[
-\begin{array}{c|ccc}
-\text{order}&1&2&4\\\hline
-\text{number of elements}&1&1&6.
-\end{array}
-\]
-In particular, \(-1\) is the unique involution of \(Q_8\).
+::: pf
+
+::: {.pf-step #def}
+
+$Q_8=\{\pm1,\pm i,\pm j,\pm k\}$, with multiplication determined by
+$$
+i^2=j^2=k^2=ijk=-1,
+$$
+and
+$$
+Q_8=\langle i,j\mid i^4=1,\ i^2=j^2,\ jij^{-1}=i^{-1}\rangle.
+$$
+
+::: pf-proof
+
+The relations give $k=ij$, so $i$ and $j$ generate. In $Q_8$, $i^4=(-1)^2=1$, $i^2=-1=j^2$, and, since $j^{-1}=-j$, $ji=-k$ and $kj=-i$,
+$$
+jij^{-1}=-(ji)j=kj=-i=i^{-1}.
+$$ The presented group has order at most $8$: every element is $i^aj^b$ with $0\le a\le3$ and $0\le b\le1$, since $j^2=i^2$ and $ji=i^{-1}j$. As $Q_8$ is a quotient of it of order $8$, the two are isomorphic.
+
+:::
+
+:::
+
+::: pf-step
+
+$Q_8$ has $\boxed{1}$ element of order $1$, $\boxed{1}$ element of order $2$, and $\boxed{6}$ elements of order $4$.
+
+::: pf-proof
+
+The identity $1$ has order $1$ and $-1$ has order $2$. By step [](#def){.pf-ref}, each of $\pm i,\pm j,\pm k$ squares to $-1$, so it has order $4$. In particular, $-1$ is the unique involution of $Q_8$.
+
+:::
+
+:::
+
+:::
+
 :::
