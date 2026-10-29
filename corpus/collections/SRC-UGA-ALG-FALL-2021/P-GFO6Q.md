@@ -13,9 +13,14 @@ classification:
   - Classification
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source posed the problem for a finite-dimensional unital C-algebra, where part (a) fails for M_2(C). The statement now assumes R is commutative.
 ---
 ::: {.problem}
-Let $R$ be a finite-dimensional unital algebra over $\mathbb{C}$. The codimension of a $\mathbb{C}$-subspace $I \subseteq R$ is defined by
+Let $R$ be a finite-dimensional commutative unital algebra over $\mathbb{C}$. The codimension of a $\mathbb{C}$-subspace $I \subseteq R$ is defined by
 $$
 \operatorname{codim}_R I = \dim_{\mathbb{C}} R - \dim_{\mathbb{C}} I.
 $$
@@ -33,15 +38,11 @@ $$
 
 ::: {.pf-step #s1}
 
-Part (a) is false for noncommutative algebras.
+Every maximal ideal $\mathfrak m\subset R$ has codimension $1$.
 
 ::: pf-proof
 
-Let $R=M_2(\mathbb C)$. This is a simple unital $\mathbb C$-algebra: if a nonzero two-sided ideal contains a matrix $A=(a_{ij})$ with $a_{ij}\neq0$, multiplication by matrix units yields $E_{ki}AE_{jl}=a_{ij}E_{kl}$, so the ideal contains every matrix unit and therefore equals $R$. Thus $(0)$ is a maximal two-sided ideal and
-\[
-\boxed{\operatorname{codim}_R(0)=4\neq1}.
-\]
-If the term "ideal" denotes a left ideal, the claim also fails: a maximal left ideal of $M_2(\mathbb C)$ has codimension two. Under the additional hypothesis that $R$ is commutative, however, (a) is true: $R/\mathfrak m$ is a finite field extension of the algebraically closed field $\mathbb C$, hence equals $\mathbb C$ and has dimension one.
+Since $R$ is commutative and $\mathfrak m$ is maximal, $K=R/\mathfrak m$ is a field. It contains $\mathbb C$ through the unit map, and $\dim_{\mathbb C}K\le\dim_{\mathbb C}R<\infty$, so every $\alpha\in K$ is algebraic over $\mathbb C$. As $\mathbb C$ is algebraically closed, the minimal polynomial of $\alpha$ is linear, so $\alpha\in\mathbb C$. Thus $K=\mathbb C$ and $\operatorname{codim}_R\mathfrak m=\dim_{\mathbb C}R/\mathfrak m=1$.
 
 :::
 
@@ -53,8 +54,7 @@ If $\dim_{\mathbb C}R=2$, then a surjective $\mathbb C$-algebra homomorphism $\m
 
 ::: pf-proof
 
-Choose $u\in R$ outside $\mathbb C1_R$. The two elements $1_R,u$ form a vector-space basis of $R$. Since every element is a linear combination of $1_R$ and $u$, the unital homomorphism $\mathbb C[t]\to R$ sending $t\mapsto u$ is surjective. (Its existence is well-defined even without an initial commutativity assumption because the domain is the polynomial algebra on one generator.)
-
+Choose $u\in R$ outside $\mathbb C1_R$. The two elements $1_R,u$ form a vector-space basis of $R$. Since every element is a linear combination of $1_R$ and $u$, the unital homomorphism $\mathbb C[t]\to R$ sending $t\mapsto u$ is surjective.
 :::
 
 :::
@@ -78,14 +78,10 @@ By step [](#s2){.pf-ref}, $R\cong\mathbb C[t]/(f)$ for an ideal $(f)$ of $\mathb
 
 ::: pf-qed
 
-Step [](#s1){.pf-ref} supplies the counterexample to part (a) as stated and explains its commutative variant; steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove parts (b) and (c).
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove parts (a), (b) and (c).
 
 :::
 
 :::
 
-:::
-
-::: {.remark}
-The original solution is superseded: the claim that every maximal two-sided ideal of a finite-dimensional complex algebra has codimension one fails for matrix algebras.
 :::
