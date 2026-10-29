@@ -18,12 +18,12 @@ audit:
 ---
 
 ::: {.exercise}
-- Derive the reverse triangle inequality from the triangle inequality.
+(a) Derive the reverse triangle inequality from the triangle inequality.
 
-- Let $E\subseteq \RR$.
-  Define $\sup E$ and $\inf E$.
+(b) Let $E\subseteq \RR$.
+Define $\sup E$ and $\inf E$.
 
-- What is the **Archimedean** property?
+(c) What is the **Archimedean** property?
 :::
 
 ::: {.solution}
