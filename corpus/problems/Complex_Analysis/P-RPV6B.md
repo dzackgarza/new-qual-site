@@ -136,6 +136,21 @@ Apply part (b), using step [](#real-part){.pf-ref}.
 
 :::
 
-::: {.remark title="Generalization"}
-Parts (a), (b) and (c) are instances of one statement: an analytic function on a domain whose image has empty interior in $\CC$ is constant, by the open mapping theorem. In particular $f$ is constant whenever $f(\Omega)$ lies in a smooth curve, such as a circle $\theset{\abs w=r}$, a line $\theset{\Re w=c}$, or a ray. The same argument shows that a real-valued analytic function on a domain is constant.
+::: {.solution title="Generalization of (a) and (b)"}
+
+::: pf
+
+::: pf-step
+If $f$ is analytic on a domain $\Omega$ and $f(\Omega)$ has empty interior in $\CC$, then $f$ is constant.
+Parts (a) and (b) are the cases where $f(\Omega)$ lies in a circle $\theset{\abs w=r}$ or a line $\theset{\Re w=c}$; more generally $f$ is constant whenever $f(\Omega)$ lies in a smooth curve, and a real-valued analytic function on a domain is constant.
+
+::: pf-proof
+If $f$ were nonconstant, the open mapping theorem would make $f(\Omega)$ a nonempty open set, which has nonempty interior.
+A circle, a line, a ray and any smooth curve have empty interior in $\CC$, and a real-valued $f$ has $f(\Omega)\subseteq\RR$.
+:::
+
+:::
+
+:::
+
 :::
