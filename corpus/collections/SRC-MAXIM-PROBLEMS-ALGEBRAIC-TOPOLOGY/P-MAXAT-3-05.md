@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-3-05
 kind: problem
-title: Maxim algebraic topology 3.5
+title: Cohomology rings of $\SU(n)$, $\U(n)$ and $V_k(\CC^n)$
 classification:
   areas: [topology]
   topics: []
