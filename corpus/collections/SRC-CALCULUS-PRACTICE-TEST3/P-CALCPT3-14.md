@@ -5,7 +5,7 @@ kind: problem
 title: "Years for the dollar to fall to one millionth of its value at a five-year halving time"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Exponential Growth and Decay]
 relations: []
 review: draft
 audit:
