@@ -11,14 +11,14 @@ title: "Algebra qual prep: linear algebra"
 
 [Computing a Jordan canonical form: an example](https://empslocal.ex.ac.uk/people/staff/rjchapma/courses/jcf.pdf)
 
-### Jordan canonical form and the minimal and characteristic polynomials
+## Jordan canonical form and the minimal and characteristic polynomials
 
-Let $F$ be an algebraically closed field, $A\in \Mat_n(F)$, and $\operatorname{Spec}(A)$ the set of eigenvalues of $A$.
+Let $F$ be an algebraically closed field, $A\in \Mat_n(F)$, and $\sigma(A)$ the set of eigenvalues of $A$, the spectrum of $A$.
 Write $J(d,\lambda)$ for the Jordan block of size $d$ with eigenvalue $\lambda$, and call it a Jordan $\lambda$-block.
 
-1. For $\lambda\in F$, $\lambda\in\operatorname{Spec}(A)$ if and only if the Jordan canonical form of $A$ contains at least one Jordan $\lambda$-block.
-2. The characteristic polynomial is $\chi_A(x)=\prod_{\lambda\in\operatorname{Spec}(A)}(x-\lambda)^{s_\lambda}$, where $s_\lambda$ is the sum of the sizes of all Jordan $\lambda$-blocks.
-3. The minimal polynomial is $\mu_A(x)=\prod_{\lambda\in\operatorname{Spec}(A)}(x-\lambda)^{m_\lambda}$, where $m_\lambda$ is the maximum size of a Jordan $\lambda$-block.
+1. For $\lambda\in F$, $\lambda\in\sigma(A)$ if and only if the Jordan canonical form of $A$ contains at least one Jordan $\lambda$-block.
+2. The characteristic polynomial is $\chi_A(x)=\prod_{\lambda\in\sigma(A)}(x-\lambda)^{s_\lambda}$, where $s_\lambda$ is the sum of the sizes of all Jordan $\lambda$-blocks.
+3. The minimal polynomial is $\mu_A(x)=\prod_{\lambda\in\sigma(A)}(x-\lambda)^{m_\lambda}$, where $m_\lambda$ is the maximum size of a Jordan $\lambda$-block.
 
 For $\lambda\in F$ and $k\geq 1$, the number $n_A(k,\lambda)$ of Jordan $\lambda$-blocks of size at least $k$ is
 $$
