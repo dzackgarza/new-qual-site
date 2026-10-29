@@ -326,7 +326,15 @@ mathematical correction under its own node, not under copy policy.
     wiki `order` does not follow wiki/prelim/index.md (`NAV-01`). F14: worked-exams pages hold
     no worked material, and the index link label differs from the page title. F15:
     "$\deg P + 1$ integrations by parts" on useful-tricks.md and which-technique.md.
-    **Acceptance:** each read and repaired, or kept with the reason.
+    **Acceptance:** each read and repaired, or kept with the reason. **Closed.** The worked-exams
+    pages are kept and renamed UGA prelim exams; the Berkeley syllabus PDF has no collection
+    and stays a PDF link.
+  - **`ad3-prelim-practice-areas`**. **Needs:** none. F9 extends past its three cards:
+    SRC-PRELIM-PRACTICE-WEEK3-2020 (`real-analysis`), SRC-PRELIM-PRACTICE-WEEK4-2020
+    (`applied-algebra`) and the other P-PRACT20-W3-* and P-PRACT20-W4-* cards carry core-qual
+    areas for prelim practice drills (COMPLAINTS.md "2020 prelim practice weeks 3 and 4").
+    **Acceptance:** each card and both collections read and given the area of the exam track
+    they belong to.
 
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1

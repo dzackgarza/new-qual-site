@@ -57,6 +57,21 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** blocked on recovering the original UCSD 290 covering-spaces sheet; until then the card stays unauthored rather than being given an invented statement.
 
+### 2020 prelim practice weeks 3 and 4 carry core-qual areas
+
+- **Object and need:** `SRC-PRELIM-PRACTICE-WEEK3-2020` (area `real-analysis`) and `SRC-PRELIM-PRACTICE-WEEK4-2020` (area `applied-algebra`), their `source.area`, and every `P-PRACT20-W3-*` and `P-PRACT20-W4-*` card.
+  The packets are calculus, differential equations and linear algebra drills for the prelim; weeks 5 and 6 of the same series are `prelim`.
+
+- **Observed evidence:** `applied-algebra` is the UCSD Math 202 track and `real-analysis` the core analysis qual (AGENTS.md "Areas").
+  The problem browser's Area pane for any collection that reuses these cards shows those areas.
+
+- **Impact and owner:** the cards are missing from the prelim area and are filed under exams they are not on.
+  P-PRACT20-W3-13, P-PRACT20-W3-18 and P-PRACT20-W4-06 are repaired; the rest of both packets and the two collection cards are not.
+
+- **Uncertainty:** verified for the three repaired cards by reading; the others need a reading each.
+
+- **Repair:** `ad3-prelim-practice-areas` in [TODO.md](TODO.md#execution-dag): read each card and set its area.
+
 ## Workflow and rendering papercuts
 
 ### Shared QC installation lacks its PR workflow and branch protection
