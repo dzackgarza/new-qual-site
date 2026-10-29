@@ -56,7 +56,7 @@ is surjective with torsion kernel, so
 $$
 N^1(X)\cong\NS(X)/\NS(X)_{\mathrm{tors}}.
 $$
-Their common rank $\rho(X)$ is the **Picard number**.
+Their common rank $\rho(X)$ is the \dfn{Picard number}.
 :::
 
 ::: {.remark}
