@@ -174,10 +174,10 @@ sections:
     title: Topology workshop packets
     parent: topology
     lede: >-
-      Two topology workshop packets. The numbered-day packet covers compactness,
-      connectedness, separation axioms, and counterexamples, then fundamental groups, covering
-      spaces, and homology. The May 2020 packet
-      covers the same topics in one week. Problems are listed in day or worksheet order.
+      Two UNL topology workshops. The first runs by day through compactness, connectedness,
+      separation axioms, and counterexamples, then fundamental groups, covering spaces, and
+      homology, followed by a legacy packet on homotopy and retractions and a revised packet
+      that covers the same topics. The May 2020 workshop is a sequence of worksheets, 1 to 5.
     items:
       - ref: SRC-TOP-WORKSHOP
       - ref: SRC-TOP-WORKSHOP-2020
