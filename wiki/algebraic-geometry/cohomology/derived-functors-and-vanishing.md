@@ -36,7 +36,7 @@ Affine vanishing fails for sheaves that are not quasicoherent: on $X=\AA^1_k$ wi
 [[PR-COHLES]]
 
 For a closed subscheme $Y\subseteq\PP^n$ with ideal sheaf $\mci_Y$, the twisted ideal sequence $0\to\mci_Y(d)\to\OO_{\PP^n}(d)\to\OO_Y(d)\to0$ and $H^i(\PP^n,\OO(d))=0$ for $0<i<n$ give $H^i(Y,\OO_Y(d))\cong H^{i+1}(\PP^n,\mci_Y(d))$ for $1\le i\le n-2$.
-For a $k$-rational point $p$ on a curve over $k$, the skyscraper sequence $0\to\OO(D-p)\to\OO(D)\to k(p)\to0$ gives $\ell(D)-1\le\ell(D-p)\le\ell(D)$.
+For a divisor $D$ on a nonsingular projective curve over $k$ and a $k$-rational point $p$, the skyscraper sequence $0\to\OO(D-p)\to\OO(D)\to k(p)\to0$ gives $\ell(D)-1\le\ell(D-p)\le\ell(D)$.
 
 ## The six operations
 
