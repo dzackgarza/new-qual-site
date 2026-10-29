@@ -29,7 +29,7 @@ order: 40
 
 - [Solution outlines for chapter 8 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch8Sltns.pdf)
 
-- [[SRC-CH9-FACTOR-GROUP-SOLUTIONS|Chapter 9 factor-group solutions]]
+- [[SRC-CH9-FACTOR-GROUP-SOLUTIONS|Solution outlines for chapter 9 (factor groups) of Gallian, *Contemporary Abstract Algebra*]]
 
 - [Solution outlines for chapter 10, part A, of Gallian, *Contemporary Abstract Algebra*](attachments/Ch10PtASltns.pdf)
 
