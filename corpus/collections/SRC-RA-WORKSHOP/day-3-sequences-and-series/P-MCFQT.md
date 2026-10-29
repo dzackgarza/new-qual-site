@@ -31,7 +31,7 @@ $a_n = \sqrt{n}(\sqrt{n+1} - \sqrt{n}) = \sqrt{n}\cdot\frac{(n+1) - n}{\sqrt{n+1
 
 ::: pf-proof
 
-rationalize: $\sqrt{n+1} - \sqrt{n} = \frac{(n+1)-n}{\sqrt{n+1}+\sqrt{n}}$.
+Multiplying and dividing by the conjugate gives $\sqrt{n+1} - \sqrt{n} = \frac{(n+1)-n}{\sqrt{n+1}+\sqrt{n}}$.
 
 :::
 
@@ -43,7 +43,7 @@ $a_n = \dfrac{1}{\frac{\sqrt{n+1}}{\sqrt{n}} + 1} = \dfrac{1}{\sqrt{1 + 1/n} + 1
 
 ::: pf-proof
 
-divide numerator and denominator by $\sqrt{n}$.
+Divide numerator and denominator by $\sqrt{n}$.
 
 :::
 
@@ -55,17 +55,21 @@ $\sqrt{1 + 1/n} \to 1$ as $n \to \infty$.
 
 ::: pf-proof
 
-continuity of the square root and $1 + 1/n \to 1$ (or the standard squeeze $1 \le \sqrt{1+1/n} \le 1 + 1/(2n)$-style bound).
+The bounds $1 \le \sqrt{1+1/n} \le 1 + 1/(2n)$ hold because $(1+1/(2n))^2 = 1 + 1/n + 1/(4n^2)$, and the squeeze theorem applies.
 
 :::
 
 :::
 
-::: pf-qed
+::: pf-step
 
-: $a_n \to \dfrac{1}{1 + 1} = \dfrac{1}{2}$.
+$a_n \to \dfrac{1}{1 + 1} = \dfrac{1}{2}$.
 
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, by the quotient law for limits.
+::: pf-proof
+
+This follows from steps [](#s2){.pf-ref} and [](#s3){.pf-ref} by the quotient law for limits, since the limit $2$ of the denominator is nonzero.
+
+:::
 
 :::
 
