@@ -23,6 +23,8 @@ Over a unique factorization domain $R$ with field of fractions $F$, a product of
 
 [[T-JEZZY]]
 
+[[PR-I1T7M]]
+
 ## Standard factorizations and root counts
 
 [[FF-ED3CD]]
