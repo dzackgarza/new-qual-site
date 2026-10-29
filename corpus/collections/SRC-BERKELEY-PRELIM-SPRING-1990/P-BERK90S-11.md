@@ -41,7 +41,7 @@ is uniformly continuous.
 ::: {.hint}
 For fixed $c>0$, every closed disc of radius $c$ centered at a
 point with real part greater than $c$ lies in the domain of $f$.
-Apply the [[FF-HO7RN|Cauchy estimate]] for the first derivative
+Apply the [[FT-5MASA|Cauchy estimate]] for the first derivative
 on these discs, then integrate along a line segment in the
 smaller half-plane.
 :::

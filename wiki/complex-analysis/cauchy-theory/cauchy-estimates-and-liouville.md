@@ -13,9 +13,7 @@ topics:
 
 [[T-22RQZ]]
 
-[[FT-5MASA]] [[FT-REHJT]]
-
-[[FF-HO7RN]]
+[[FT-5MASA]]
 
 ::: {.slogan}
 The $k$th Taylor coefficient of $f$ at $z_0$ is bounded by the supremum of $\abs f$ on a circle of radius $R$ about $z_0$, divided by $R^k$:
