@@ -26,17 +26,40 @@ audit:
 ---
 
 ::: {.problem}
-What group-theoretic construct relates the stabilizer of two points in the same orbit under a group action?
+Let a group $G$ act on a set $X$. How are the stabilizers of two points in the same orbit related? Prove that if $y=g\cdot x$ with $g\in G$ and $x\in X$, then $G_y=gG_xg^{-1}$.
 :::
 
 ::: {.solution}
-If $y=g\cdot x$, then
-\[
-G_y=gG_xg^{-1}.
-\]
-Indeed, for $h\in G_x$,
-\[
-(ghg^{-1})\cdot y=gh\cdot x=g\cdot x=y,
-\]
-so $gG_xg^{-1}\subseteq G_y$. Applying the same argument with $g^{-1}$ gives the reverse inclusion. Thus stabilizers of points in the same orbit are conjugate.
+
+::: pf
+
+::: {.pf-step #forward}
+
+$gG_xg^{-1}\subseteq G_y$.
+
+::: pf-proof
+
+For $h\in G_x$,
+$$
+(ghg^{-1})\cdot y=gh\cdot x=g\cdot x=y.
+$$
+
+:::
+
+:::
+
+::: pf-step
+
+$G_y=gG_xg^{-1}$, so stabilizers of points in one orbit are $\boxed{\text{conjugate}}$.
+
+::: pf-proof
+
+Since $x=g^{-1}\cdot y$, step [](#forward){.pf-ref} with the roles of $x$ and $y$ exchanged and $g^{-1}$ in place of $g$ gives $g^{-1}G_yg\subseteq G_x$, that is, $G_y\subseteq gG_xg^{-1}$.
+
+:::
+
+:::
+
+:::
+
 :::
