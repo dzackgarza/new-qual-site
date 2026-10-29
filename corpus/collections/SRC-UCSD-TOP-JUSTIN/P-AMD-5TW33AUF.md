@@ -21,10 +21,8 @@ Let $p(z) = \sum_{j=0}^n a_j z^j$ be a polynomial of degree $n \ge 1$ with $a_n 
 :::
 
 ::: {.solution}
-**Goal:** Let $p(z) = \sum_{j=0}^n a_j z^j$ with $a_n \neq 0$ and $n \ge 1$ be a polynomial with complex coefficients.
-Extend $p$ to a continuous map on the Riemann sphere $\widehat{\CC} = \CC \cup \{\infty\} \cong S^2$ by setting $p(\infty) = \infty$.
-Determine the topological degree $\deg(p)$.
-(If $n = 0$, $p(z) \equiv a_0$ is constant).
+Let $p(z) = \sum_{j=0}^n a_j z^j$ be a polynomial with complex coefficients and $a_n \neq 0$.
+For $n \ge 1$, extend $p$ to the Riemann sphere $\widehat{\CC} = \CC \cup \{\infty\} \cong S^2$ by $p(\infty) = \infty$; for $n = 0$, $p \equiv a_0$ is constant on $\widehat{\CC}$.
 
 ::: pf
 
