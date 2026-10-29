@@ -21,6 +21,27 @@ Show that $f$ is a polynomial of degree at most $n$.
 :::
 
 ::: {.solution}
-By Liouville or MMP, $f^{(n)}$ is bounded and entire and thus constant.
-Integrating a constant $n$ times yields a polynomial of degree t most $n$.
+
+::: pf
+
+::: {.pf-step #constant}
+$f^{(n)}$ is constant, so $f^{(k)}\equiv 0$ for all $k>n$.
+
+::: pf-proof
+$f^{(n)}$ is entire and bounded, hence constant by Liouville's theorem.
+:::
+
+:::
+
+::: pf-step
+$f$ is a polynomial of degree at most $n$.
+
+::: pf-proof
+The Taylor series $f(z) = \sum_{k\geq 0}\frac{f^{(k)}(0)}{k!}z^k$ converges on $\CC$, and by step [](#constant){.pf-ref} its terms with $k>n$ vanish.
+:::
+
+:::
+
+:::
+
 :::
