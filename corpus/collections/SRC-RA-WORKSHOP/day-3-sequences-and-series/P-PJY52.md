@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PJY52
 kind: problem
-title: If the series $\sum_{n=0}^\infty a_n$ converges
+title: A conditionally convergent series has radius of convergence 1
 classification:
   areas:
   - real-analysis
