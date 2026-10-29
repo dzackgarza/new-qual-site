@@ -371,3 +371,10 @@ Steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref}, []
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The problem is also posed in two other forms.
+
+- Show that $f$ and $g$ have the same principal part at each $k\in\ZZ$, then show that $h=f-g$ is bounded on $\CC$ and conclude $f=g$. Parts (b), (c) and (d) are this argument: the boundedness of $h$ is the first half of the proof of (d).
+- Show only that there is an entire function $h$ with $f=g+h$. This is the first sentence of the proof of (d): by (a) and (b), $f-g$ is bounded near each integer, so Riemann's removable singularity theorem extends it over $\ZZ$.
+:::
