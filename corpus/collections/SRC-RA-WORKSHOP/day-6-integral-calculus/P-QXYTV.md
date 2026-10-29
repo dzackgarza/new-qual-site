@@ -20,51 +20,57 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f:[a,b]\to\mathbb{R}$ is continuous, $f\geq 0$ on $[a,b]$, and put $M=\sup\{f(x):x\in[a,b]\}$.
+Suppose that $f:[a,b]\to\RR$ is continuous, $f\geq 0$ on $[a,b]$, and put $M=\sup\{f(x):x\in[a,b]\}$.
 Prove that $$\lim_{p\to\infty}\left(\int_a^b f(x)^p\,dx\right)^{1/p}=M.$$
 :::
 
 ::: {.solution}
+
+Assume $a<b$ and write $I_p\coloneqq\left(\int_a^b f^p\right)^{1/p}$. If $M=0$, then $f\equiv0$ and $I_p=0$ for every $p$, so assume $M>0$.
+
 ::: pf
 
-::: {.pf-step #s1}
-Upper bound: $(\int_a^b f^p)^{1/p} \le M\,(b-a)^{1/p}$.
+::: {.pf-step #upper}
+
+$\limsup_{p\to\infty} I_p \le M$.
 
 ::: pf-proof
-$0 \le f \le M$ on $[a,b]$, so $\int_a^b f^p \le M^p (b-a)$, and $(b-a)^{1/p} \to 1$.
-:::
+
+Since $0 \le f \le M$ on $[a,b]$, we have $\int_a^b f^p \le M^p (b-a)$, so $I_p\le M(b-a)^{1/p}$. Since $(b-a)^{1/p} \to 1$, the bound follows.
 
 :::
 
-::: {.pf-step #s2}
-Hence $\limsup_{p\to\infty}(\int_a^b f^p)^{1/p} \le M$.
+:::
+
+::: {.pf-step #lower}
+
+For each $0 < \varepsilon < M$, $\liminf_{p\to\infty} I_p \ge M - \varepsilon$.
 
 ::: pf-proof
-Step [](#s1){.pf-ref} and $(b-a)^{1/p} \to 1$.
-:::
 
-:::
+Since $f$ is continuous on the compact interval $[a,b]$, it attains $M$ at some $x_0 \in [a,b]$.
+The set $\{x\in[a,b] : f(x) > M - \varepsilon\}$ is relatively open in $[a,b]$ and contains $x_0$, so it contains an interval of length $\delta > 0$.
+Hence
+$$
+\int_a^b f^p \ge (M-\varepsilon)^p \delta, \qquad \text{so} \qquad I_p \ge (M-\varepsilon)\,\delta^{1/p} \to M - \varepsilon .
+$$
 
-::: {.pf-step #s3}
-Lower bound: for each $0 < \eps < M$, $\liminf_{p\to\infty}(\int_a^b f^p)^{1/p} \ge M - \eps$.
-
-::: pf-proof
-since $f$ is continuous, it attains $M$ at some $x_0 \in [a,b]$.
-
-The set $\{f > M - \eps\}$ is open (continuity) and contains $x_0$, so it contains an interval of length $\delta > 0$.
-Hence \[ \int_a^b f^p \ge (M-\eps)^p \delta, \qquad \text{so} \qquad \Big(\int_a^b f^p\Big)^{1/p} \ge (M-\eps)\,\delta^{1/p} \to M - \eps . \]
 :::
 
 :::
 
 ::: pf-step
-$\lim_{p\to\infty}(\int_a^b f^p)^{1/p} = M$.
+
+$\lim_{p\to\infty} I_p = M$.
 
 ::: pf-proof
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} (letting $\eps \to 0$).
-:::
+
+Step [](#lower){.pf-ref}, with $\varepsilon \to 0$, gives $\liminf_{p\to\infty} I_p\ge M$, and step [](#upper){.pf-ref} gives $\limsup_{p\to\infty} I_p\le M$.
 
 :::
 
 :::
+
+:::
+
 :::
