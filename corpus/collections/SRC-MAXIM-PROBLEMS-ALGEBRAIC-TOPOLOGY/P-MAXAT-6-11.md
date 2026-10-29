@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-6-11
 kind: problem
-title: Maxim algebraic topology 6.11
+title: Cohomology rings of $B\U(n)$ and $B\Orth(n)$
 classification:
   areas: [topology]
   topics: []
