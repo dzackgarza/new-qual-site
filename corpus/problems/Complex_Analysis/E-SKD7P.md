@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SKD7P
 kind: problem
-title: Power series converge uniformly on their radius of convergence
+title: Power series converge uniformly on compact subdiscs of the disc of convergence
 classification:
   areas:
   - complex-analysis
@@ -12,45 +12,49 @@ classification:
   - Convergence Tests
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source reads "Show that any power series converges uniformly within its radius of convergence." This is false on the open disc of convergence: $\sum_k z^k$ does not converge uniformly on $\abs{z}<1$. The statement now asks for uniform convergence on every closed disc of radius $r$ strictly less than the radius of convergence.'
 ---
 
 ::: {.exercise}
-Show that any power series converges uniformly within its radius of convergence.
-
+Show that a power series $\sum_{k\geq 0} c_k(z-z_0)^k$ with radius of convergence $R>0$ converges uniformly on every closed disc $\abs{z-z_0}\leq r$ with $0<r<R$.
 :::
 
 ::: {.solution}
-Write $S_N(z) \definedas \sum_{0\leq k\leq N} c_k (z-z_0)^k$ and $S \definedas \lim_{N\to\infty} S_N$.
-Suppose $R\definedas \inverseof{\qty{\limsup_k \abs{c_k}^{1\over k} }}$ is the radius of convergence and let $r\leq R$, we'll show $S_N\to S$ uniformly on any disc $\abs{z-z_0}< r$.
+By the Cauchy--Hadamard formula, $R = 1/L$ where $L \coloneqq \limsup_k \abs{c_k}^{1/k}$, with $R=\infty$ when $L=0$. Fix $0<r<R$ and put $f_k(z) \coloneqq c_k(z-z_0)^k$.
 
-Use the $M\dash$test: $\sum f_k$ converges if $\norm{f_k}_\infty\leq M_k$ where $\theset{M_k}\in \ell^1(\NN)$.
-Define $f_k \definedas c_k (z-z_0)^k$, then
-\[
-\norm{f_k}_\infty =\sup_{\abs{z-z_0}\leq r} \abs{c_k(z-z_0)^k} \leq \abs{c_k} r^k \definedas M_k
-.\]
-Then
-\[
-\sum_{k\geq 0} M_k = \sum_{k\geq 0} \abs{c_k} r^k
-,\]
-and the claim is that this converges.
+::: pf
 
-Note that since $r\leq R$, we have convergence of
-\[
-\sum_{k\geq 0} c_k r^k
-.\]
-Recall that root test:
-\[
-\sum_k a_k \text{ converges absolutely if } \limsup_k \abs{a_k}^{1\over k} < 1
-.\]
-Here we take $a_k \definedas c_k r^k$, then
-\[
-\limsup_k \abs{a_k}^{1\over k}
-&\definedas \limsup_k \abs{c_k r^k}^{1\over k} \\
-&= \limsup_k \abs{c_k}^{1\over k} r \\
-&< \limsup_k \abs{c_k}^{1\over k} R\\
-&\definedas \limsup_k \abs{c_k}^{1\over k} \inverseof{\qty{\limsup_{k} \abs{c_k}^{1\over k} }} \\
-&= 1
-,\]
-so $\sum_k \abs{c_k r^k} < \infty$.
-Thus $\theset{M_k}\in \ell^1(\NN)$, and so $\sum_k f_k$ converges uniformly and absolutely on $\abs{z-z_0} = r < R$.
+::: {.pf-step #bound}
+$\sup_{\abs{z-z_0}\leq r}\abs{f_k(z)} \leq M_k \coloneqq \abs{c_k}r^k$.
+
+::: pf-proof
+On the closed disc, $\abs{z-z_0}^k\leq r^k$.
+:::
+
+:::
+
+::: {.pf-step #summable}
+$\sum_{k\geq 0} M_k < \infty$.
+
+::: pf-proof
+$\limsup_k M_k^{1/k} = rL < 1$, because $r<R=1/L$ (and $rL=0$ when $L=0$). The root test gives convergence.
+:::
+
+:::
+
+::: pf-step
+$\sum_k f_k$ converges uniformly on $\abs{z-z_0}\leq r$.
+
+::: pf-proof
+This is the Weierstrass $M$-test, with steps [](#bound){.pf-ref} and [](#summable){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::
