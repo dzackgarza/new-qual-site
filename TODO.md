@@ -239,6 +239,8 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 `publication-milestone` is **closed** (2026-09-17, `0c2a0b3ff`). Its source-intake, correctness, tooling, adjudication, migration, and complaint-remediation prerequisites are also closed and are not executable work unless a concrete later regression reopens their actual owner.
 
 **Owner decision, 2026-10-02: the current work is [Author solutions](#7-author-solutions).** Solutions no longer wait behind `copy-policy-repair` or `audited-deployment`; both are suspended, and no pass may delete, merge or consolidate owner-written cards.
+
+**Owner decision, 2026-10-29: `copy-policy-repair` is resumed** and runs as a workflow over the reopened population (`corpus/theory/{Algebra,Algebraic_Geometry,Complex_Analysis,Real_Analysis,Topology}`, `corpus/problems`, `wiki`). Problem cards under `corpus/collections/` are reader-facing too and remain in its population after that pass.
 #### Steward checkpoint — 2026-09-26
 
 This section records the 2026-09-26 wind-down checkpoint. The workstream was subsequently resumed later on 2026-09-26 at `copy-policy-repair`; the closure facts and deployment evidence below remain valid.
