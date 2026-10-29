@@ -24,8 +24,7 @@ Show $\tilde H_i(\Sigma X) \cong \tilde H_{i-1}(X)$
 :::
 
 ::: {.solution}
-**Goal:** Let $X$ be a topological space.
-Prove that the suspension $\Sigma X = (X \times [-1, 1]) / (X \times \{1\} \sim N, X \times \{-1\} \sim S)$ satisfies $\widetilde{H}_i(\Sigma X) \cong \widetilde{H}_{i-1}(X)$ for all $i \in \ZZ$, and prove that $\Sigma S^n \cong S^{n+1}$ for all $n \ge 0$.
+Let $X$ be a topological space, and let $\Sigma X = (X \times [-1, 1]) / (X \times \{1\} \sim N, X \times \{-1\} \sim S)$ be its suspension, with cone points $N$ and $S$.
 
 ::: pf
 
