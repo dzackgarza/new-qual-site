@@ -29,8 +29,6 @@ Is every complete bounded metric space compact? If so, give a proof; if not, giv
 :::
 
 ::: {.solution}
-**Goal:** Disprove the claim by exhibiting an infinite discrete metric space and proving it is complete and bounded but not compact.
-
 ::: pf
 
 ::: pf-step
