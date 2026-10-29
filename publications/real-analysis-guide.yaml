@@ -33,7 +33,7 @@ sections:
       - ref: FF-Z3E3C
   - slug: metric-spaces
     title: Metric spaces, compactness and completeness
-    parent: sequences-and-series-of-numbers
+    parent: GUIDE-REAL-ANALYSIS
     lede: >-
       For a metric space $X$, compactness (every open cover has a finite subcover), sequential
       compactness, and completeness together with total boundedness are equivalent. The
@@ -61,7 +61,7 @@ sections:
       - ref: T-7FJFK
   - slug: continuity
     title: Continuity
-    parent: metric-spaces
+    parent: GUIDE-REAL-ANALYSIS
     lede: >-
       For metric spaces $X$, $Y$ and $f\colon X\to Y$, the following are equivalent: for every
       $x\in X$ and $\varepsilon>0$ there exists $\delta>0$ with $d(f(x),f(y))<\varepsilon$
@@ -83,7 +83,7 @@ sections:
       - ref: T-O4UD3
   - slug: differentiation
     title: Differentiation
-    parent: continuity
+    parent: GUIDE-REAL-ANALYSIS
     lede: >-
       Fermat's theorem: if $f\colon(a,b)\to\RR$ has a local extremum at $c$ and is
       differentiable at $c$, then $f'(c)=0$. The mean value theorem: if $f$ is continuous on
@@ -107,7 +107,7 @@ sections:
       - ref: PR-LTRLV
   - slug: riemann-stieltjes-integration
     title: Riemann--Stieltjes integration
-    parent: differentiation
+    parent: GUIDE-REAL-ANALYSIS
     lede: >-
       For $\alpha$ increasing on $[a,b]$, a bounded $f$ is Riemann--Stieltjes integrable with
       respect to $\alpha$ if and only if for every $\varepsilon>0$ there is a partition $P$ of
@@ -133,7 +133,7 @@ sections:
       - ref: PR-TDH2A
   - slug: sequences-and-series-of-functions
     title: Sequences and series of functions
-    parent: riemann-stieltjes-integration
+    parent: GUIDE-REAL-ANALYSIS
     lede: >-
       A sequence $f_n\colon E\to\RR$ converges uniformly to $f$ if $\sup_{x\in
       E}\abs{f_n(x)-f(x)}\to0$. A uniform limit of continuous functions is continuous, and if
@@ -212,7 +212,7 @@ sections:
       - ref: T-CGFCU
   - slug: the-lebesgue-integral
     title: The Lebesgue integral
-    parent: measure-and-measurable-functions
+    parent: GUIDE-REAL-ANALYSIS
     lede: >-
       For measurable $f\ge0$, $\int f=\sup\{\int\varphi:\varphi\text{ simple},\ 0\le\varphi\le
       f\}$. The monotone convergence theorem: if $0\le f_n\uparrow f$, then $\int f_n\to\int
@@ -246,7 +246,7 @@ sections:
       - ref: T-X7XZX
   - slug: lp-spaces
     title: $L^p$ spaces and convolution
-    parent: the-lebesgue-integral
+    parent: GUIDE-REAL-ANALYSIS
     lede: >-
       For $1\le p\le\infty$ and $1/p+1/q=1$, Hölder's inequality
       $\norm{fg}_1\le\norm{f}_p\norm{g}_q$ and Minkowski's inequality
@@ -284,7 +284,7 @@ sections:
       - ref: T-HHFGB
   - slug: hilbert-spaces-and-duality
     title: Hilbert spaces and duality
-    parent: lp-spaces
+    parent: GUIDE-REAL-ANALYSIS
     lede: >-
       $L^2$ is a Hilbert space with inner product $\inner{f}{g}=\int f\bar g$. In a Hilbert
       space $H$, every nonempty closed convex set has a unique element of least norm, so
@@ -327,7 +327,7 @@ sections:
       - ref: T-TTLXS
   - slug: fourier-analysis
     title: Fourier analysis
-    parent: hilbert-spaces-and-duality
+    parent: GUIDE-REAL-ANALYSIS
     lede: >-
       For $f\in L^1(\RR)$, $\hat f(\xi)=\int_\RR f(x)e^{-2\pi ix\xi}\,dx$ is continuous with
       $\norm{\hat f}_\infty\le\norm{f}_1$, and $\widehat{f*g}=\hat f\,\hat g$ for $f,g\in
