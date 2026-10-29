@@ -27,7 +27,7 @@ $$
 :::
 
 ::: {.fact}
-A covering space of an [[D-K5MLW|orientable]] manifold is an orientable manifold.
+A covering space of an [[D-6CI7D|orientable]] manifold is an orientable manifold.
 
 :::
 

@@ -25,7 +25,7 @@ title: Summary of standard topics
 
   * [[D-XC53X|Degree]] of maps $S^n \to S^n$
 
-  * [[D-K5MLW|Orientability]] and [[D-EILKJ|compactness]]
+  * [[D-6CI7D|Orientability]] and [[D-EILKJ|compactness]]
 
   * Top homology and cohomology of manifolds
 

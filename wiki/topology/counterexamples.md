@@ -107,7 +107,7 @@ For good pointed spaces $X_\alpha$, $\tilde H_*(\bigvee_\alpha X_\alpha)\cong\bi
 ## Manifolds
 
 ::: {.example title="A closed manifold need not have top homology $\ZZ$"}
-For a connected closed $n$-manifold $M$, $H_n(M)\cong\ZZ$ if $M$ is [[D-K5MLW|orientable]] and $H_n(M)=0$ otherwise.
+For a connected closed $n$-manifold $M$, $H_n(M)\cong\ZZ$ if $M$ is [[D-6CI7D|orientable]] and $H_n(M)=0$ otherwise.
 The Klein bottle is non-orientable and has $H_2=0$, while the torus has $H_2\cong\ZZ$.
 
 :::
