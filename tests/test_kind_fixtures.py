@@ -711,3 +711,17 @@ def test_commented_entry_may_be_a_nested_collection(tmp_path: Path) -> None:
     assert isinstance(parsed.source, CompilationSource)
     assert [(e.id, e.comment) for e in parsed.source.sections[0].problems] == [("SRC-UGA-FIX", "the Spring 2019 paper, whole")]
     assert parsed.source.listed_problem_ids() == []
+
+
+def test_an_appearance_comment_is_read_like_other_inline_text(tmp_path: Path) -> None:
+    """A comment is authored Markdown: `--` typesets as an en dash."""
+    work = fixture_repo(tmp_path)
+    _copy(work / "corpus", "PRB-INDEXP", "P-INDEXP")
+    _copy(work / "corpus", "EXE-CENTER", "E-CENTER")
+    _edit(work / "corpus" / "SRC-UGA-FIX.md", "    term: spring\n", APPEARANCE.format(comment="Stein--Shakarchi, Exercise 1"))
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    page = (work / "build" / "quarto" / "_site" / "exam" / "SRC-UGA-FIX.html").read_text()
+    assert "Stein–Shakarchi, Exercise 1" in page
+    assert "Stein--Shakarchi" not in page

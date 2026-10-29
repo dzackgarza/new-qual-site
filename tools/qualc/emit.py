@@ -1641,7 +1641,7 @@ def _collection_listing(
             )
         ]
         if row["comment"]:
-            inlines.extend((pf.Space(), pf.Str("—"), pf.Space(), pf.Str(row["comment"])))
+            inlines.extend((pf.Space(), pf.Str("—"), pf.Space(), *_inlines(row["comment"], inline_cache)))
         return pf.ListItem(pf.Plain(*inlines))
 
     blocks: list[pf.Block] = []
@@ -2512,6 +2512,7 @@ def project(
             "select distinct section_name from collection_problems where section_name is not null",
         )
     )
+    inline_values.extend(row["comment"] for row in _rows(con, "select distinct comment from collection_problems where comment is not null"))
     inline_cache = build_inline_cache(pandoc, inline_values)
 
     jcache, api = load_json(con)
