@@ -433,6 +433,14 @@ mathematical correction under its own node, not under copy policy.
     workshops guide repeats P-6XW74 and P-KPEPM; the real-analysis-workshop-packet lede cites
     numbers no card shows. **Acceptance:** each read and repaired, or kept with the reason.
 
+  Round 3 (site surfaces) injected the node below; `audited-deployment` needs it.
+  - **`ad3-duplicate-extractions`**. **Needs:** none. 133 PDFs under `assets/attachments/`
+    each have two extractions, `<stem>_extracted.md` beside the PDF and
+    `assets/attachments/extracted/<stem>.md`, and the MD chip can open the wrong one.
+    **Acceptance:** each PDF keeps one extraction beside it whose MinerU Flash or Mistral OCR
+    provenance the repository establishes; the other copy is trashed and every reference to it
+    repointed; a PDF with neither copy established is regenerated with MinerU Flash.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
