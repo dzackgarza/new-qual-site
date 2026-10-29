@@ -37,7 +37,7 @@ Since $m$ is irreducible, $(m)$ is maximal, so $K[\alpha]$ is a field and equals
 
 ::: {.pf-step #s2}
 
-$1,\alpha,\dots,\alpha^{d-1}$ is a $K$-basis of $K(\alpha)$.
+$1,\alpha,\ldots,\alpha^{d-1}$ is a $K$-basis of $K(\alpha)$.
 
 ::: pf-proof
 
