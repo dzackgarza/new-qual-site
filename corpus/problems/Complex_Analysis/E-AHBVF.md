@@ -18,15 +18,32 @@ Expand $f(z) = z^2\cos\qty{z\over 3}$ about $z=0$.
 :::
 
 ::: {.solution}
-\[
-\cos\qty{z\over3}
-=\sum_{k=0}^\infty(-1)^k{(z/3)^{2k}\over(2k)!},
-\]
-so
-\[
-z^2\cos\qty{z\over3}
-=\sum_{k=0}^\infty(-1)^k{z^{2k+2}\over 3^{2k}(2k)!}
-=z^2-{z^4\over 2!\,3^2}+{z^6\over 4!\,3^4}-\cdots.
-\]
-This is an ordinary Taylor series; there are no negative powers.
+
+::: pf
+
+::: {.pf-step #cos}
+$\cos\qty{\frac z3}=\sum_{k=0}^\infty(-1)^k\frac{(z/3)^{2k}}{(2k)!}$ for all $z\in\CC$.
+
+::: pf-proof
+Substitute $z/3$ into the Taylor series of $\cos$, which converges on all of $\CC$.
+:::
+
+:::
+
+::: pf-step
+$$
+z^2\cos\qty{\frac z3}
+=\boxed{\sum_{k=0}^\infty(-1)^k\frac{z^{2k+2}}{3^{2k}(2k)!}
+=z^2-\frac{z^4}{2!\,3^2}+\frac{z^6}{4!\,3^4}-\cdots}
+$$
+for all $z\in\CC$.
+
+::: pf-proof
+Multiply the series of step [](#cos){.pf-ref} by $z^2$.
+:::
+
+:::
+
+:::
+
 :::
