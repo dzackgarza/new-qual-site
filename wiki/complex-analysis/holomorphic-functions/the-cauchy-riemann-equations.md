@@ -157,7 +157,7 @@ $$
 ## Exercises
 
 [[E-BGKED]] [[E-PAQPF]]
-[[E-6F2HU]]
+[[E-THK2Z]]
 [[E-FXYTL]]
 [[E-WKY7C]]
 [[E-UVNVV]]

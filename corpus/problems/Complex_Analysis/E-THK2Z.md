@@ -56,3 +56,7 @@ $f = u$ is constant by step [](#u-constant){.pf-ref}.
 :::
 
 :::
+
+::: {.remark title="By the open mapping theorem"}
+If $f$ were nonconstant, the [[FT-OEYLQ|open mapping theorem]] would make $f(\Omega)$ a nonempty open subset of $\CC$, but $f(\Omega)\subseteq\RR$ and $\RR$ contains no nonempty open subset of $\CC$.
+:::
