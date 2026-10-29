@@ -100,6 +100,20 @@ mathematical correction under its own node, not under copy policy.
     topology cards (D-EBNUE, D-IGUUS, …); FF-AE7ID/C-CT2NX merge; fundamental-group/theorems
     change-of-basepoint restatement; curves-in-projective-space opening and projection
     paragraphs; T-2YTCZ proof notation. **Acceptance:** each read and repaired.
+  - **`ad2-complex-analysis-content`**. **Needs:** none. The power-series Dirichlet's-test proof
+    swaps the two sequences. CARD-04: PR-K57J6/E-TZJKN; E-6F2HU/E-THK2Z; PR-OOHUL/E-PAQPF;
+    PR-Y36BS/D-E7A5W proposition/Cauchy–Riemann page remark; T-E76LX/P-Y5SS5; D-4CSPM/D-OMBQT;
+    T-GROTS/T-SRY2V/C-7S2CO; PR-NZZ2C/E-EG3W7; T-77SHB/PR-FL6T7; PR-AQFRA/PR-PDYJC; T-DAETF/T-VM6MJ;
+    E-TJ3WM/E-XQ4BA; T-W26VL/FF-4GUYL; D-MFPYG proposition/PR-ULJAJ; C-FVT4V/P-Z776N/E-I26BF/D-OHFRH
+    proposition; T-MCB7V/T-4ALS2; E-ISFYB/E-C5QHZ; E-LXY7N/E-GFNDF; T-C5VEI/FT-2N57U; D-VAXQT/D-IWIA5;
+    T-ZZJDP/FT-5NI77/FT-LGWHM/D-BQLJV/FD-BRJK5; D-VKP6N/FD-BACTZ/FD-ZPKLQ;
+    D-AUD6K/FD-C7EQD/FD-EKGLW/PR-NITIQ; D-65VIK/PR-5A64G/PR-ITZIT; PR-VUBCC/PR-EWOP5/E-WNXIR;
+    P-DO7TE/E-4GLUR. Candidates: E-SMOHZ isolated-singularity reason; PR-PDYJC needs α<2 but PR-BPP7D
+    uses angle 2π; Montel page cites a D-IJMPJ remark; D-YKB3V "Toy contour" heading; E-QVMUV
+    "exactly" on the annulus; extra proofs in remarks (PR-K57J6, Schwarz lemma, T-ZZJDP, PR-NITIQ,
+    PR-EWOP5, PR-5A64G); possible duplicates E-UVNVV/E-I26BF, PR-YO7MV/FD-3BK6U, D-2CCDB/FD-XVMEE,
+    D-HHVPT/FD-ST7TD; `STYLE-03` `\mathbb` on maximum-modulus-and-open-mapping and
+    cauchy-estimates-and-liouville. **Acceptance:** each read and repaired, or kept with the reason.
   - **`ad2-site-surfaces`**. **Needs:** none. Renderer: a "problem N" locator is derived when an
     appearance comment is empty; solved counts include child-collection rows
     (SRC-MATH8100-FALL-2019-ASSIGNMENTS, SRC-RA-WORKSHOP); institution ids are upper-cased
