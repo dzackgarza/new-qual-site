@@ -10,12 +10,29 @@ classification:
   - Maximal Ideals
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source reads "Show that every nonzero ring has a maximal ideal."; without an identity the claim fails (the rational numbers with zero multiplication have no maximal ideal), so the statement assumes a commutative ring with identity.
 ---
 
 ::: {.problem}
-Show that every nonzero ring has a maximal ideal.
+Show that every nonzero commutative ring with identity has a maximal ideal.
 :::
 
 ::: {.solution}
-If $R\ne0$, then $(0)$ is a proper ideal. By Zorn's lemma, as in [[P-USAQT]], it lies in a maximal ideal.
+::: pf
+
+::: pf-step
+A nonzero commutative ring $R$ with identity has a maximal ideal.
+
+::: pf-proof
+Since $1\ne0$ in $R$, the ideal $(0)$ is proper, and by [[P-USAQT]] every proper ideal is contained in a maximal ideal.
+:::
+
+:::
+
+:::
+
 :::
