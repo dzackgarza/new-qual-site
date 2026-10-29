@@ -12,7 +12,7 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-10-30
-  note: "Transcribed from Question 11 of assets/attachments/calculus_practice_test3.pdf, read from the page render; the MinerU extraction omits this question. The scan has a handwritten 3 above the printed exponent of z; the printed exponent 2 is transcribed. The answer is the same for either exponent."
+  note: "Transcribed from Question 11 of assets/attachments/calculus_practice_test3.pdf and checked against its MinerU Flash extraction, which reads the exponent of z as 3/2. The 300 dpi page render shows a printed 2 with a handwritten 3 above it; the printed exponent 2 is transcribed. The answer is the same for either exponent."
 ---
 
 ::: {.problem}
