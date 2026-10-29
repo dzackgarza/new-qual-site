@@ -23,7 +23,7 @@ Show that the complement of a finite set of points in $\RR^n$ is simply-connecte
 :::
 
 ::: {.solution}
-**Goal.** Show $\RR^n \sm \theset{p_1, \dots, p_k}$ is simply connected for $n \ge 3$.
+Write the finite set as $\theset{p_1, \dots, p_k}$.
 
 ::: pf
 
