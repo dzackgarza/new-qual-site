@@ -22,68 +22,73 @@ audit:
 
 ::: {.problem}
 Compute the following integrals.
-(i) $\displaystyle \int_0^\infty \frac{x^{a-1}}{1 + x^n} \, dx$, $0< a < n$ (ii) $\displaystyle \int_0^\infty \frac{\log x}{(1 + x^2)^2}\, dx$
+
+(i) $\displaystyle \int_0^\infty \frac{x^{a-1}}{1 + x^n} \, dx$, $0< a < n$
+
+(ii) $\displaystyle \int_0^\infty \frac{\log x}{(1 + x^2)^2}\, dx$
 :::
 
 ::: {.solution}
-**Goal:** Compute (i) $\int_0^\infty \frac{x^{a-1}}{1 + x^n}\,dx$ for $0 < a < n$, and (ii) $\int_0^\infty \frac{\log x}{(1 + x^2)^2}\,dx$.
+
+For (i), let $I\coloneqq\int_0^\infty \frac{x^{a-1}}{1+x^n}\,dx$ and $f(z)\coloneqq z^{a-1}/(1+z^n)$, with $z^{a-1}\coloneqq\abs{z}^{a-1}e^{i(a-1)\arg z}$ for $0\leq\arg z\leq 2\pi/n$.
+For $0<\varepsilon<1<R$, let $\Gamma$ be the boundary of the sector $\theset{\varepsilon\leq\abs{z}\leq R,\ 0\leq\arg z\leq2\pi/n}$, oriented counterclockwise.
 
 ::: pf
 
-::: {.pf-step #sector-contour-setup}
-For (i), use the keyhole contour or the sector contour of angle $2\pi/n$ around the pole $e^{i\pi/n}$.
+::: {.pf-step #sector}
+$I\qty(1-e^{2\pi i a/n})=2\pi i\Res_{z=e^{i\pi/n}}f$.
 
 ::: pf-proof
-Integrate $f(z) = z^{a-1}/(1 + z^n)$ over the sector $\{0 \le \arg z \le 2\pi/n\}$ (with $z^{a-1}$ the branch $\abs{z}^{a-1}e^{i(a-1)\arg z}$): boundary rays are the positive real axis and the ray at angle $2\pi/n$; the only pole inside is $z_0 = e^{i\pi/n}$.
-Let $I = \int_0^\infty x^{a-1}/(1+x^n)\,dx$.
-On the second ray, $z = xe^{2\pi i/n}$, $z^{a-1} = x^{a-1} e^{2\pi i(a-1)/n}$, $dz = e^{2\pi i/n}dx$, so the integral there is $e^{2\pi i a/n} I$.
-The small circle around 0 and the large arc vanish ($a > 0$ handles the small circle; $a < n$ handles the large arc).
-Hence $I(1 - e^{2\pi i a/n}) = 2\pi i \Res_{z_0} f$.
+The only zero of $1+z^n$ inside $\Gamma$ is $z_0=e^{i\pi/n}$.
+On the ray $z=xe^{2\pi i/n}$, $f(z)\,dz=e^{2\pi i(a-1)/n}e^{2\pi i/n}\frac{x^{a-1}}{1+x^n}\,dx$, and this ray is traversed inward, so it contributes $-e^{2\pi ia/n}\int_\varepsilon^R\frac{x^{a-1}}{1+x^n}\,dx$.
+The arc of radius $\varepsilon$ contributes $O(\varepsilon^{a})\to0$ because $a>0$, and the arc of radius $R$ contributes $O(R^{a-n})\to0$ because $a<n$.
+The residue theorem then gives the identity in the limit.
 :::
 
 :::
 
-::: {.pf-step #residue-computation}
-Compute the residue.
+::: {.pf-step #residue}
+$\Res_{z=z_0}f=-\frac1ne^{i\pi a/n}$.
 
 ::: pf-proof
-$\Res_{z_0} \frac{z^{a-1}}{1+z^n} = \frac{z_0^{a-1}}{n z_0^{n-1}} = \frac{1}{n} z_0^{a-n} = \frac{1}{n} e^{i\pi(a-n)/n} = -\frac{1}{n} e^{i\pi a/n}$ since $e^{-i\pi} = -1$.
-:::
-
-:::
-
-::: {.pf-step #solve-for-I}
-Solve for $I$.
-
-::: pf-proof
-From steps [](#sector-contour-setup){.pf-ref} and [](#residue-computation){.pf-ref}: $I(1 - e^{2\pi i a/n}) = 2\pi i \cdot \qty(-\frac{1}{n} e^{i\pi a/n})$, so $I = \frac{-2\pi i}{n} \frac{e^{i\pi a/n}}{1 - e^{2\pi i a/n}} = \frac{2\pi i}{n} \frac{e^{i\pi a/n}}{e^{2\pi i a/n} - 1} = \frac{2\pi i}{n} \cdot \frac{1}{e^{i\pi a/n} - e^{-i\pi a/n}} = \frac{2\pi i}{n} \cdot \frac{1}{2i\sin(\pi a/n)} = \frac{\pi}{n \sin(\pi a/n)}$.
+The pole is simple, so the residue is $\frac{z_0^{a-1}}{nz_0^{n-1}}=\frac1nz_0^{a-n}=\frac1ne^{i\pi a/n}e^{-i\pi}$.
 :::
 
 :::
 
 ::: pf-step
-For (ii), differentiate the $a$-family at the right point or integrate by parts: use $F(a) = \int_0^\infty \frac{x^{a-1}}{1 + x^2}\,dx = \frac{\pi}{\sin(\pi a/2)}$ (case $n = 2$ of (i), valid for $0 < a < 2$) and differentiate with respect to $a$ at $a = 1$... but the integrand is $\log x/(1+x^2)^2$, not $\log x \cdot x^{a-1}/(1+x^2)$.
-Instead, differentiate $G(a) = \int_0^\infty \frac{x^{a-1}}{1 + x^2}\,dx$: $G'(a) = \int_0^\infty \frac{\log x \, x^{a-1}}{1+x^2}\,dx$.
-We need $\int \frac{\log x}{(1+x^2)^2}$.
-Relate: $\ddd{}{a} \int_0^\infty \frac{x^{a-1}}{(1+x^2)^2}\,dx = \int_0^\infty \frac{\log x \, x^{a-1}}{(1+x^2)^2}\,dx$; at $a = 1$ this is exactly the desired integral.
-So compute $H(a) = \int_0^\infty \frac{x^{a-1}}{(1+x^2)^2}\,dx$ by differentiating the standard $\int_0^\infty \frac{x^{a-1}}{1 + x^2}\,dx = \frac{\pi}{\sin(\pi a/2)}$ with respect to the exponent of the denominator: alternatively use $\frac{1}{(1+x^2)^2} = -\dd{}{\beta}\frac{1}{\beta + x^2}\big|_{\beta = 1}$, or directly: $H(a) = \lim_{\beta \to 1} -\dd{}{\beta} \int_0^\infty \frac{x^{a-1}}{\beta + x^2}\,dx$.
-Using $\int_0^\infty \frac{x^{a-1}}{\beta + x^2}\,dx = \beta^{a/2 - 1}\frac{\pi}{2\sin(\pi a/2)}$ (substitute $x = \sqrt\beta t$): $H(a) = -\dd{}{\beta}\qty[\beta^{a/2 - 1}]\big|_{\beta=1} \frac{\pi}{2\sin(\pi a/2)} = \qty(1 - a/2)\frac{\pi}{2\sin(\pi a/2)}$.
-At $a = 1$: $H(1) = \frac{1}{2} \cdot \frac{\pi}{2\sin(\pi/2)} = \frac{\pi}{4}$.
-:::
-
-::: {.pf-step #log-integral-eq-hprime}
-Then $\int_0^\infty \frac{\log x}{(1+x^2)^2}\,dx = H'(1)$.
+(i) $I=\boxed{\dfrac{\pi}{n\sin(\pi a/n)}}$.
 
 ::: pf-proof
-$H'(a) = \int_0^\infty \frac{\log x \, x^{a-1}}{(1+x^2)^2}\,dx$ by differentiation under the integral (justified by dominated convergence on $[\delta, R]$ plus uniform convergence of the derivative integrals away from $0$ and $\infty$). So evaluate $H'(1)$: with $H(a) = \frac{\pi}{2}\qty(1 - a/2)\csc(\pi a/2)$, $H'(a) = \frac{\pi}{2}\qty[-\frac12 \csc\qty(\frac{\pi a}{2}) + \qty(1 - \frac a2)\qty(-\frac{\pi}{2}\cot\qty(\frac{\pi a}{2})\csc\qty(\frac{\pi a}{2}))]$.
-At $a = 1$: $\csc(\pi/2) = 1$, $\cot(\pi/2) = 0$, so $H'(1) = \frac{\pi}{2} \cdot \qty(-\frac12) = -\frac{\pi}{4}$.
+By steps [](#sector){.pf-ref} and [](#residue){.pf-ref},
+$$
+I=\frac{-2\pi i}{n}\cdot\frac{e^{i\pi a/n}}{1-e^{2\pi ia/n}}=\frac{2\pi i}{n}\cdot\frac{1}{e^{i\pi a/n}-e^{-i\pi a/n}}=\frac{2\pi i}{n}\cdot\frac1{2i\sin(\pi a/n)}.
+$$
 :::
 
 :::
 
-::: pf-qed
-Step [](#solve-for-I){.pf-ref} gives (i): $\int_0^\infty \frac{x^{a-1}}{1+x^n}\,dx = \frac{\pi}{n\sin(\pi a/n)}$.
-Step [](#log-integral-eq-hprime){.pf-ref} gives (ii): $\int_0^\infty \frac{\log x}{(1+x^2)^2}\,dx = -\frac{\pi}{4}$.
+::: {.pf-step #inversion}
+With $J\coloneqq\int_0^\infty \frac{\log x}{(1+x^2)^2}\,dx$, $2J=\int_0^\infty\log x\,\frac{1-x^2}{(1+x^2)^2}\,dx$.
+
+::: pf-proof
+The integral $J$ converges absolutely, since the integrand is $O(\abs{\log x})$ near $0$ and $O(x^{-4}\log x)$ at $\infty$.
+The substitution $x=1/t$ gives $J=-\int_0^\infty\frac{t^2\log t}{(1+t^2)^2}\,dt$; add this to $J$.
+:::
+
+:::
+
+::: pf-step
+(ii) $J=\boxed{-\dfrac\pi4}$.
+
+::: pf-proof
+Since $\frac{d}{dx}\frac{x}{1+x^2}=\frac{1-x^2}{(1+x^2)^2}$, integration by parts in step [](#inversion){.pf-ref} gives
+$$
+2J=\qty[\frac{x\log x}{1+x^2}]_0^\infty-\int_0^\infty\frac{dx}{1+x^2}=0-\frac\pi2,
+$$
+because $x\log x\to0$ as $x\to0$ and $\frac{x\log x}{1+x^2}\to0$ as $x\to\infty$.
+:::
+
 :::
 
 :::
