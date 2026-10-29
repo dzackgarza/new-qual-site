@@ -25,30 +25,30 @@ Why are they equivalent?
 :::
 
 ::: {.solution}
-Let $H\le G$ be a subgroup, let $k$ be a field, and let $V$ be a left $k[H]$-module.
+Let $H\le G$ be a subgroup of finite index, let $k$ be a field, and let $V$ be a left $k[H]$-module.
 
 ::: pf
 
 ::: pf-step
 
 The tensor-product definition is
-\[
+$$
 \operatorname{Ind}_H^G V
 =
 k[G]\otimes_{k[H]}V,
-\]
+$$
 with $G$ acting by left multiplication on the $k[G]$ factor.
 
 ::: pf-proof
 
 For $g\in G$ define
-\[
+$$
 g\cdot(x\otimes v)=(gx)\otimes v.
-\]
+$$
 This is well defined because left multiplication commutes with the balancing relation
-\[
+$$
 xh\otimes v=x\otimes hv.
-\]
+$$
 
 :::
 
@@ -57,15 +57,15 @@ xh\otimes v=x\otimes hv.
 ::: pf-step
 
 The function-model definition is
-\[
+$$
 \mathcal F
 =
 \{f:G\to V:f(gh)=h^{-1}f(g)\text{ for all }g\in G,h\in H\},
-\]
+$$
 with
-\[
+$$
 (g_0\cdot f)(g)=f(g_0^{-1}g).
-\]
+$$
 
 ::: pf-proof
 
@@ -78,24 +78,24 @@ The covariance relation is preserved by left translation, so this is a $G$-repre
 ::: {.pf-step #s3}
 
 Choose representatives $T\subseteq G$ for the left cosets $G/H$. Then both models are naturally isomorphic, as vector spaces, to
-\[
+$$
 \bigoplus_{t\in T} V.
-\]
+$$
 
 ::: pf-proof
 
 For the tensor model,
-\[
+$$
 k[G]=\bigoplus_{t\in T} t\,k[H]
-\]
+$$
 as a right $k[H]$-module, hence
-\[
+$$
 k[G]\otimes_{k[H]}V
 \cong
 \bigoplus_{t\in T}V.
-\]
+$$
 
-For the function model, the covariance relation determines $f$ uniquely from the values $f(t)$ on the representatives $t\in T$. Thus evaluation on $T$ gives the same direct-sum vector space.
+For the function model, the covariance relation determines $f$ uniquely from the values $f(t)$ on the representatives $t\in T$, and these values are arbitrary. Thus evaluation on $T$ identifies $\mathcal F$ with $\prod_{t\in T}V$, which equals $\bigoplus_{t\in T}V$ because $T$ is finite.
 
 :::
 
@@ -103,20 +103,26 @@ For the function model, the covariance relation determines $f$ uniquely from the
 
 ::: pf-step
 
-The two identifications in step [](#s3){.pf-ref} intertwine the $G$-actions.
+The two identifications in step [](#s3){.pf-ref} intertwine the $G$-actions, so the two definitions give isomorphic $G$-modules.
 
 ::: pf-proof
 
-For each $g\in G$ and $t\in T$, write uniquely
-\[
+For $t\in T$ and $v\in V$, let $f_{t,v}\in\mathcal F$ be the function supported on $tH$ with $f_{t,v}(th)=h^{-1}v$.
+The identifications of step [](#s3){.pf-ref} send $t\otimes v$ and $f_{t,v}$ to the same element of $\bigoplus_{t\in T}V$, so $\Phi(t\otimes v)=f_{t,v}$ defines a linear isomorphism $\Phi$.
+For $g\in G$ and $t\in T$, write uniquely
+$$
 gt=t'h
 \qquad(t'\in T,\ h\in H).
-\]
+$$
 In the tensor model,
-\[
+$$
 g\cdot(t\otimes v)=t'h\otimes v=t'\otimes hv.
-\]
-In the function model, left translation produces exactly the same permutation of cosets together with the same $H$-action on the corresponding $V$-coordinate. Hence the two $G$-modules are isomorphic.
+$$
+In the function model, $g\cdot f_{t,v}=f_{t,v}(g^{-1}\,\cdot\,)$ is supported on $gtH=t'H$, and for $h'\in H$,
+$$
+(g\cdot f_{t,v})(t'h')=f_{t,v}(t\,h^{-1}h')=h'^{-1}hv=f_{t',hv}(t'h').
+$$
+Hence $\Phi(g\cdot(t\otimes v))=g\cdot\Phi(t\otimes v)$.
 
 :::
 
@@ -124,5 +130,4 @@ In the function model, left translation produces exactly the same permutation of
 
 :::
 
-Therefore the tensor-product and equivariant-function constructions are equivalent definitions of induction.
 :::
