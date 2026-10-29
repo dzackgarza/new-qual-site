@@ -13,7 +13,6 @@ The order of remaining work is the [TODO.md milestone](../TODO.md#milestone-publ
 | File | State | What |
 | --- | --- | --- |
 | `C-unsolved-cards.md` | active, generated | Every unsolved problem card. Issue #2 target. **Generated** — `just unsolved`, and by the commit gate when a commit touches the corpus. Do not hand-edit or mirror its changing count here: a card leaves by gaining a solution. |
-| `D-duplicate-bodies.md` | done | Duplicate-body pair, dispositioned (keep both). |
 | `F-wiki-doctor.md` | done | `just doctor` findings; the 5 structural one-child directories are recorded non-defects with real content. |
 | [H-complaint-defects.md](H-complaint-defects.md) | active | Headings promoted from `COMPLAINTS.md`; owned by `math-defect-repair`. |
 
