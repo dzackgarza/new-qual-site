@@ -5,7 +5,7 @@ order: 20
 
 # Problems
 
-- [[attachments/Big_List_of_Math_Problems.pdf|Mathematical Trivium problem collection]]
+- [[SRC-MATHEMATICAL-TRIVIUM|Mathematical Trivium problem collection]]
 
 - [Duke analysis and linear algebra quals](https://services.math.duke.edu/graduate/wqual/oldquals.html)
 
@@ -17,9 +17,9 @@ order: 20
 
 - [Multiple-choice calculus questions from a practice test](attachments/calculus_practice_test3.pdf)
 
-- [Multiple-choice linear algebra questions from a practice test](attachments/linear_algebra_from_test2.pdf)
+- [[SRC-LINEAR-ALGEBRA-TEST2-REVIEW|Multiple-choice linear algebra questions from a practice test]]
 
-- [[attachments/Series_Problems_.pdf|Sequence and series problems with solutions]]
+- [[SRC-SEQUENCES-SERIES-ASSIGNMENT-2|Sequence and series problems with solutions]]
 
 ## Multiple-choice review questions by chapter
 
