@@ -29,8 +29,8 @@ Let $G$ be a group, $H\leq G$, and $x\in G$. Show that $C_H(x) = H \intersect C_
 
 ::: pf
 
-::: {.pf-step #h-in-ch-iff-h-cap-cg}
-An element $h$ lies in $C_H(x)$ if and only if it lies in $H\cap C_G(x)$.
+::: pf-step
+$C_H(x)=H\cap C_G(x)$.
 
 ::: pf-proof
 By definition,
@@ -43,21 +43,7 @@ Also,
 $$
 h\in C_G(x)\quad\Longleftrightarrow\quad h\in G\text{ and }hx=xh.
 $$
-Since $H\le G$, for $h\in H$ the condition $h\in C_G(x)$ is exactly $hx=xh$. Therefore
-$$
-h\in C_H(x)
-\quad\Longleftrightarrow\quad
-h\in H\cap C_G(x).
-$$
-:::
-
-:::
-
-::: pf-step
-Hence $C_H(x)=H\cap C_G(x)$.
-
-::: pf-proof
-The two subsets have the same elements by step [](#h-in-ch-iff-h-cap-cg){.pf-ref}.
+Since $H\le G$, for $h\in H$ the condition $h\in C_G(x)$ is exactly $hx=xh$. Therefore $h\in C_H(x)$ if and only if $h\in H\cap C_G(x)$, and the two subsets have the same elements.
 :::
 
 :::
