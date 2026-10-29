@@ -16,7 +16,7 @@ review: draft
 ::: {.definition}
 Let $X$ be a topological space.
 A \dfn{separation} of $X$ is a pair $(U, V)$ of disjoint nonempty open subsets of $X$ with $X = U\union V$.
-The space $X$ is \dfn{disconnected} if it has a separation, and connected otherwise.
+The space $X$ is \dfn{disconnected} if it has a separation, and connected otherwise [@Mun00].
 :::
 
 ::: {.proposition}
@@ -37,8 +37,4 @@ Then $Y$ is disconnected if and only if there exist disjoint nonempty subsets $A
 ::: {.example}
 The subspace $\QQ\subseteq\RR$ is disconnected, and every connected subspace of $\QQ$ has at most one point, so the connected components of $\QQ$ are its singletons.
 For an irrational number $r$, the sets $\QQ\intersect(-\infty, r)$ and $\QQ\intersect(r, \infty)$ form a separation of $\QQ$.
-:::
-
-::: {.concept}
-[@Mun00].
 :::
