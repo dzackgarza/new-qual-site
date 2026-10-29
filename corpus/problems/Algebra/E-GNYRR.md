@@ -19,28 +19,32 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: source-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source did not declare the operator A or the field; the statement now does, and writes the basis vectors as v_i.'
 ---
 
 ::: {.exercise}
-Prove Cayley-Hamilton in the following way.
-Let $V=\spanof\theset{\vector v_1,\ldots,\vector v_n}$ and define
-\[
-\Fil_iV=\spanof\theset{\vector v_1,\ldots,\vector v_i},
+Prove the Cayley-Hamilton theorem in the following way.
+Let $A$ be a linear operator on a finite-dimensional vector space $V$ over a field $k$, let $v_1,\ldots,v_n$ be a basis of $V$, and define
+$$
+\Fil_iV=\spanof\theset{v_1,\ldots,v_i},
 \qquad
 \Fil_0V=\theset{0}.
-\]
+$$
 Suppose the matrix of $A$ in this basis is upper triangular, with diagonal entries $\lambda_1,\ldots,\lambda_n$.
 Show that
-\[
+$$
 A(\Fil_iV)\subseteq\Fil_iV,
 \qquad
 (A-\lambda_iI)\Fil_iV\subseteq\Fil_{i-1}V.
-\]
+$$
 Deduce that
-\[
+$$
 (A-\lambda_1I)\cdots(A-\lambda_nI)V=0
-\]
-and hence $\chi_A(A)=0$. Finally, deduce Cayley-Hamilton for an arbitrary operator over an arbitrary field by extending scalars to an algebraic closure and triangularizing there.
+$$
+and hence $\chi_A(A)=0$. Finally, deduce the Cayley-Hamilton theorem for an arbitrary operator over an arbitrary field by extending scalars to an algebraic closure and triangularizing there.
 :::
 
 ::: {.solution}
@@ -52,32 +56,32 @@ For every $i$, the flag subspace $\Fil_iV$ is $A$-invariant.
 
 ::: pf-proof
 Because the matrix of $A$ in the ordered basis $v_1,\ldots,v_n$ is upper triangular, for each $j$ one has
-\[
+$$
 Av_j\in\spanof\theset{v_1,\ldots,v_j}=\Fil_jV.
-\]
+$$
 Thus if $j\le i$, then $Av_j\in\Fil_iV$. Since $\Fil_iV$ is spanned by $v_1,\ldots,v_i$, it follows that
-\[
+$$
 A(\Fil_iV)\subseteq\Fil_iV.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #filtration-drop}
 For every $i$, one has
-\[
+$$
 (A-\lambda_iI)\Fil_iV\subseteq\Fil_{i-1}V.
-\]
+$$
 
 ::: pf-proof
 For $j<i$, both $Av_j$ and $\lambda_i v_j$ lie in $\Fil_{i-1}V$, hence so does $(A-\lambda_iI)v_j$. For $j=i$, upper triangularity gives
-\[
+$$
 Av_i=\lambda_i v_i+w
-\]
+$$
 for some $w\in\Fil_{i-1}V$. Therefore
-\[
+$$
 (A-\lambda_iI)v_i=w\in\Fil_{i-1}V.
-\]
+$$
 Since $v_1,\ldots,v_i$ span $\Fil_iV$, the inclusion follows.
 :::
 
@@ -85,20 +89,20 @@ Since $v_1,\ldots,v_i$ span $\Fil_iV$, the inclusion follows.
 
 ::: {.pf-step #product-annihilates-v}
 The product of the linear factors annihilates $V$:
-\[
+$$
 (A-\lambda_1I)\cdots(A-\lambda_nI)V=0.
-\]
+$$
 
 ::: pf-proof
 By step [](#filtration-drop){.pf-ref},
-\[
+$$
 (A-\lambda_nI)\Fil_nV\subseteq\Fil_{n-1}V.
-\]
+$$
 Applying successively the factors with indices $n-1,n-2,\ldots,1$ gives
-\[
+$$
 (A-\lambda_1I)\cdots(A-\lambda_nI)\Fil_nV
 \subseteq\Fil_0V=0.
-\]
+$$
 Since $\Fil_nV=V$, the displayed product is the zero operator.
 :::
 
@@ -106,48 +110,48 @@ Since $\Fil_nV=V$, the displayed product is the zero operator.
 
 ::: {.pf-step #char-poly-eq-zero}
 For an upper-triangular matrix,
-\[
+$$
 \chi_A(t)=\prod_{i=1}^n(t-\lambda_i),
-\]
+$$
 so $\chi_A(A)=0$.
 
 ::: pf-proof
 The determinant of $tI-A$ is the product of its diagonal entries, namely
-\[
+$$
 \det(tI-A)=\prod_{i=1}^n(t-\lambda_i).
-\]
+$$
 Evaluating this polynomial at $A$ yields exactly the product in step [](#product-annihilates-v){.pf-ref}. Hence $\chi_A(A)=0$.
 :::
 
 :::
 
 ::: pf-step
-Cayley-Hamilton holds for every endomorphism of a finite-dimensional vector space over an arbitrary field.
+The Cayley-Hamilton theorem holds for every endomorphism of a finite-dimensional vector space over an arbitrary field.
 
 ::: pf-proof
 Let $A\in\Endo_k(V)$ and let $\overline{k}$ be an algebraic closure of $k$. Extend scalars:
-\[
+$$
 \overline{V}=V\otimes_k\overline{k},
 \qquad
 \overline{A}=A\otimes1.
-\]
+$$
 Over $\overline{k}$, the characteristic polynomial of $A$ splits, so $\overline{A}$ admits an upper-triangular matrix in some basis. By step [](#char-poly-eq-zero){.pf-ref},
-\[
+$$
 \chi_{\overline{A}}(\overline{A})=0.
-\]
+$$
 Scalar extension does not change the characteristic polynomial coefficients, so
-\[
+$$
 \chi_{\overline{A}}(t)=\chi_A(t)
-\]
+$$
 viewed in $\overline{k}[t]$. Thus
-\[
+$$
 \chi_A(A)\otimes1=0
-\]
+$$
 in $\Endo_{\overline{k}}(\overline{V})$. The natural map
-\[
+$$
 \Endo_k(V)\longrightarrow\Endo_{\overline{k}}(V\otimes_k\overline{k}),
 \qquad T\longmapsto T\otimes1,
-\]
+$$
 is injective because $k\to\overline{k}$ is a field extension. Therefore $\chi_A(A)=0$ already over $k$.
 :::
 
