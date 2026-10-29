@@ -4,6 +4,8 @@ id: T-CGFCU
 kind: theorem
 title: Lusin's theorem
 slogan: 'A measurable function on a set of finite measure has a continuous restriction to a closed subset whose complement has arbitrarily small measure.'
+prompts:
+- State Lusin's theorem.
 classification:
   areas:
   - real-analysis

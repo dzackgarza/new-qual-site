@@ -37,8 +37,6 @@ Finally, by inner regularity of Lebesgue measure choose a closed $A_\varepsilon\
 
 [[T-CGFCU]]
 
-[[FT-XIVPL]]
-
 ::: {.proof title="Lusin's theorem"}
 Let $E\subseteq\RR^d$ be measurable with $m(E)<\infty$ and $f$ measurable and finite almost everywhere on $E$, and let $\varepsilon>0$.
 Choose step functions $f_n$ with $f_n\to f$ almost everywhere on $E$.
