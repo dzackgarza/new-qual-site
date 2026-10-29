@@ -36,9 +36,9 @@ The extended ideal $\mathfrak pR_{\mathfrak p}$ is proper.
 
 ::: pf-proof
 Suppose $1\in\mathfrak pR_{\mathfrak p}$. Then $1=a/s$ for some $a\in\mathfrak p$ and $s\notin\mathfrak p$. Equality in the localization implies that for some $t\notin\mathfrak p$,
-\[
+$$
 t(s-a)=0.
-\]
+$$
 Hence $ts=ta\in\mathfrak p$. Since $\mathfrak p$ is prime while $t,s\notin\mathfrak p$, this is impossible. Thus $\mathfrak pR_{\mathfrak p}$ is proper.
 :::
 
@@ -49,9 +49,9 @@ A fraction $a/s\in R_{\mathfrak p}$ lies in $\mathfrak pR_{\mathfrak p}$ if and 
 
 ::: pf-proof
 If $a\in\mathfrak p$, then $a/s\in\mathfrak pR_{\mathfrak p}$. Conversely, suppose $a/s\in\mathfrak pR_{\mathfrak p}$. Then $a/s=b/u$ for some $b\in\mathfrak p$ and $u\notin\mathfrak p$. Thus for some $t\notin\mathfrak p$,
-\[
+$$
 t(au-bs)=0,
-\]
+$$
 so $tau=tbs\in\mathfrak p$. Since $t,u\notin\mathfrak p$ and $\mathfrak p$ is prime, it follows that $a\in\mathfrak p$.
 :::
 
@@ -62,9 +62,9 @@ Every element outside $\mathfrak pR_{\mathfrak p}$ is a unit.
 
 ::: pf-proof
 Let $a/s\notin\mathfrak pR_{\mathfrak p}$. By step [](#fraction-in-pRp-iff){.pf-ref}, $a\notin\mathfrak p$, so $a\in S$. Therefore $s/a$ is a valid element of $R_{\mathfrak p}$ and
-\[
+$$
 \frac{a}{s}\frac{s}{a}=1.
-\]
+$$
 Thus $a/s$ is a unit.
 :::
 
