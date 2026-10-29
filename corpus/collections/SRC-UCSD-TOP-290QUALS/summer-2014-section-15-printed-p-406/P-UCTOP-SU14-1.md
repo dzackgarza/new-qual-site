@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU14-1
 kind: problem
-title: Fundamental group and homology of R^3 minus coordinate axes
+title: 'Fundamental group and homology of $\RR^3$ minus the coordinate axes'
 classification:
   areas:
   - topology

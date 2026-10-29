@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU12-2
 kind: problem
-title: Homology of S^2 × I glued by antipodal map
+title: 'Homology of $S^2\times I$ with its ends glued by the antipodal map'
 classification:
   areas:
   - topology

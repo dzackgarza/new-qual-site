@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-FA12-3
 kind: problem
-title: Homology and cohomology of RP^2 × Y with H_2(Y) = Z_4
+title: 'Homology and cohomology of $\RP^2\times Y$ with $H_2(Y)\cong\ZZ/4$'
 classification:
   areas:
   - topology

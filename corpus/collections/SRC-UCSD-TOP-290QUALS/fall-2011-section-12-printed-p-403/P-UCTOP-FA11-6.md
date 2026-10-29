@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-FA11-6
 kind: problem
-title: π_3 of Poincare homology sphere wedge S^3
+title: '$\pi_3$ of the Poincaré homology sphere wedge $S^3$'
 classification:
   areas:
   - topology

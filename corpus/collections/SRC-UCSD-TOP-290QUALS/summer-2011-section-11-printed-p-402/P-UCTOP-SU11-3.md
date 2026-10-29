@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU11-3
 kind: problem
-title: Cohomology ring of CP^n / CP^k
+title: 'Cohomology ring of $\CP^n/\CP^k$'
 classification:
   areas:
   - topology

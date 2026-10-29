@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU14-3
 kind: problem
-title: Homology and cohomology of Klein bottle × Klein bottle
+title: 'Homology and cohomology of the product of two Klein bottles'
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-FA11-8
 kind: problem
-title: No self-map of CP^2 × CP^2 with degree -1
+title: 'No self-map of $\CP^2\times\CP^2$ has degree $-1$'
 classification:
   areas:
   - topology

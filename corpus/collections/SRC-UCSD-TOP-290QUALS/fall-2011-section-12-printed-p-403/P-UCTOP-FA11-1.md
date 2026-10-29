@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-FA11-1
 kind: problem
-title: Non-antipodal maps to S^2 are homotopic
+title: 'Maps to $S^2$ that never take antipodal values are homotopic'
 classification:
   areas:
   - topology

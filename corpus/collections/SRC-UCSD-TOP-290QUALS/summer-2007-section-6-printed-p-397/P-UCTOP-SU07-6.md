@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU07-6
 kind: problem
-title: π_3(RP^3 ∨ S^3) via Hurewicz
+title: '$\pi_3(\RP^3\vee S^3)$ via the Hurewicz theorem'
 classification:
   areas:
   - topology

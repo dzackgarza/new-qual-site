@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU01-3
 kind: problem
-title: Cohomology ring of CP^2 # (S^2 × S^2)
+title: 'Cohomology ring of $\CP^2\#(S^2\times S^2)$'
 classification:
   areas:
   - topology

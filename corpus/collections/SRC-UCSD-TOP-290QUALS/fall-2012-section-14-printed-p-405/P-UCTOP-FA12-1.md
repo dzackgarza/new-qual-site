@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-FA12-1
 kind: problem
-title: X_4 cannot cover X_3 but X_5 can
+title: '$X_4$ cannot cover $X_3$ but $X_5$ can'
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-FA12-6
 kind: problem
-title: H_1 = H_3 = 0 and H_2 is free for simply-connected closed 4-manifold
+title: '$H_1=H_3=0$ and $H_2$ is free for a simply connected closed $4$-manifold'
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU07-4
 kind: problem
-title: Homology of S^4 minus knotted torus
+title: 'Homology of the complement of a knotted torus in $S^4$'
 classification:
   areas:
   - topology

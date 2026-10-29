@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-FA12-8
 kind: problem
-title: π_2 of p-fold cover of S^3 wedge S^2
+title: '$\pi_2$ of the $p$-fold cover of $S^3\vee S^2$'
 classification:
   areas:
   - topology

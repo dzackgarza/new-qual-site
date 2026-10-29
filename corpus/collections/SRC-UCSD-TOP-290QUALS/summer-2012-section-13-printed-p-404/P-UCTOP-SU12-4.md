@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU12-4
 kind: problem
-title: Homology of RP^2 × X where H_k(X;Z) = Z/kZ
+title: 'Homology of $\RP^2\times X$ where $H_k(X;\ZZ)\cong\ZZ/k\ZZ$'
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU01-4
 kind: problem
-title: Simply-connected CW-complex with H_2 = Z⊕Z is homotopy equivalent to S^2 ∨ S^2
+title: 'A simply connected CW complex with $H_2\cong\ZZ\oplus\ZZ$ is homotopy equivalent to $S^2\vee S^2$'
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU01-6
 kind: problem
-title: Homotopy equivalence of CP^{2n} is orientation-preserving
+title: 'A self-homotopy equivalence of $\CP^{2n}$ is orientation-preserving'
 classification:
   areas:
   - topology

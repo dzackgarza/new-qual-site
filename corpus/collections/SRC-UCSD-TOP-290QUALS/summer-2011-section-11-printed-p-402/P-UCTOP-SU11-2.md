@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU11-2
 kind: problem
-title: Double covers of RP^3 × S^1
+title: 'Double covers of $\RP^3\times S^1$'
 classification:
   areas:
   - topology

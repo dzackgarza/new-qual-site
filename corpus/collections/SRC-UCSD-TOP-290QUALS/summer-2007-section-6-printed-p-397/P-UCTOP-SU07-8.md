@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU07-8
 kind: problem
-title: Suspension of homology sphere is homotopy equivalent to S^4
+title: 'The suspension of a homology $3$-sphere is homotopy equivalent to $S^4$'
 classification:
   areas:
   - topology

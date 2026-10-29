@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU14-8
 kind: problem
-title: π_2 of CW complex with 2-cells attached to S^1
+title: '$\pi_2$ of a CW complex built from $S^1$ by attaching $2$-cells'
 classification:
   areas:
   - topology
