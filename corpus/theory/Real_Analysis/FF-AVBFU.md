@@ -6,6 +6,7 @@ title: Properties of the set of discontinuities $D_f$ of a function
 slogan: 'Discontinuity sets are $F_\sigma$; pointwise limits of continuous functions have meager ones, bounded Riemann integrable functions have null ones, and monotone functions have countable ones.'
 prompts:
 - What can be said about $D_f$, the set of discontinuities of a function?
+- Characterize the set $D_f$ of discontinuities of a function.
 classification:
   areas:
   - real-analysis

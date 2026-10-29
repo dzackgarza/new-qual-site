@@ -37,7 +37,7 @@ Hence $f$ is continuous exactly where $f(x_0)=0$, that is, on $\RR\setminus\QQ$.
 
 [[PR-F5V7D]]
 
-[[FF-AVBFU]] [[FF-5EBCJ]]
+[[FF-AVBFU]]
 
 ::: {.proof}
 The discontinuity set $D_f = \bigcup_{k\geq1}\theset{\omega_f\geq 1/k}$ is an $F_\sigma$ set, since $f$ is continuous at $x$ if and only if $\omega_f(x) = 0$ and each $\theset{\omega_f\geq1/k}$ is closed.
