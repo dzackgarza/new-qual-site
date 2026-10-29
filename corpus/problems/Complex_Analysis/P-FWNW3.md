@@ -19,41 +19,49 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source read "any holomorphic function f on a simply connected domain (or compact set with connected complement) can be uniformly approximated by polynomials on compact subsets". A function is not holomorphic on a compact set, so the parenthetical case now requires f holomorphic on a neighborhood of K and asks for approximation on K; the two cases are parts (a) and (b).
 ---
 
 ::: {.problem}
-Show that any holomorphic function $f$ on a simply connected domain (or compact set with connected complement) can be uniformly approximated by polynomials on compact subsets.
+(a) Let $K\subset\CC$ be compact with $\CC\setminus K$ connected, and let $f$ be holomorphic on a neighborhood of $K$. Show that $f$ can be uniformly approximated by polynomials on $K$.
+
+(b) Let $\Omega\subseteq\CC$ be a simply connected domain and $f$ holomorphic on $\Omega$. Show that $f$ can be uniformly approximated by polynomials on every compact subset of $\Omega$.
 :::
 
 ::: {.solution}
-There are two standard forms of the statement.
-
 ::: pf
 
-::: pf-step
-Let $K\subset\mathbb C$ be compact with connected complement, and suppose $f$ is holomorphic on a neighborhood of $K$. By Runge's theorem, for every $\varepsilon>0$ there exists a polynomial $p$ such that
-\[
-\sup_{z\in K}|f(z)-p(z)|<\varepsilon.
-\]
-Indeed, Runge gives approximation by rational functions whose poles may be chosen in the components of $\widehat{\mathbb C}\setminus K$. Since this complement is connected, the only required pole may be placed at $\infty$; rational functions with their only pole at $\infty$ are polynomials.
+::: {.pf-step #part-a}
+(a) For every $\varepsilon>0$ there is a polynomial $p$ with $\sup_{z\in K}\abs{f(z)-p(z)}<\varepsilon$.
+
+::: pf-proof
+Runge's theorem approximates $f$ uniformly on $K$ by rational functions with poles in a prescribed set containing one point of each component of $\widehat\CC\setminus K$. Because $\CC\setminus K$ is connected, $\widehat\CC\setminus K$ has one component, which contains $\infty$, so we may prescribe the single pole $\infty$. A rational function whose only pole is $\infty$ is a polynomial.
+:::
+
+:::
+
+::: {.pf-step #hull}
+(b) Let $K\subset\Omega$ be compact, and let $\widehat K$ be the union of $K$ with the bounded components of $\CC\setminus K$. Then $\widehat K$ is compact, $\CC\setminus\widehat K$ is connected, and $\widehat K\subset\Omega$.
+
+::: pf-proof
+$\CC\setminus\widehat K$ is the unbounded component of $\CC\setminus K$, which is open and connected, and $\widehat K$ is closed and bounded.
+A plane domain $\Omega$ is simply connected exactly when $\widehat\CC\setminus\Omega$ is connected.
+The set $\widehat\CC\setminus\Omega$ is connected, contains $\infty$, and does not meet $K$, so it lies in the component of $\widehat\CC\setminus K$ that contains $\infty$.
+Hence no bounded component of $\CC\setminus K$ meets $\CC\setminus\Omega$, that is, every bounded component lies in $\Omega$.
+:::
+
 :::
 
 ::: pf-step
-Now let $\Omega\subset\mathbb C$ be simply connected and let $f\in H(\Omega)$. Fix a compact set $K\Subset\Omega$. Choose a bounded Jordan domain $U$ such that
-\[
-K\subset U,\qquad \overline U\subset\Omega.
-\]
-Such a $U$ exists because a simply connected plane domain admits an exhaustion by relatively compact Jordan domains. The compact set $L=\overline U$ has connected complement, and $f$ is holomorphic on a neighborhood of $L$.
+(b) For every compact $K\subset\Omega$ and $\varepsilon>0$ there is a polynomial $p$ with $\sup_{z\in K}\abs{f(z)-p(z)}<\varepsilon$.
 
-Applying the compact form of Runge's theorem to $L$, for every $\varepsilon>0$ there is a polynomial $p$ with
-\[
-\sup_{z\in L}|f(z)-p(z)|<\varepsilon.
-\]
-Since $K\subset L$,
-\[
-\sup_{z\in K}|f(z)-p(z)|<\varepsilon.
-\]
-Thus polynomials approximate $f$ uniformly on every compact subset of $\Omega$.
+::: pf-proof
+By step [](#hull){.pf-ref}, $f$ is holomorphic on the open neighborhood $\Omega$ of $\widehat K$ and $\CC\setminus\widehat K$ is connected. Step [](#part-a){.pf-ref} gives a polynomial $p$ within $\varepsilon$ of $f$ on $\widehat K\supseteq K$.
+:::
+
 :::
 
 :::
