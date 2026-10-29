@@ -90,7 +90,6 @@ source:
   - id: P-O7DMP
   - id: P-OSPIM
   - id: P-PEND3
-  - id: P-PIVLV
   - id: P-QMPVS
   - id: P-QVFZC
   - id: P-RVL3K
@@ -99,12 +98,10 @@ source:
   - id: P-V33ML
   - id: P-VLZN2
   - id: P-VPCUJ
-  - id: P-W6ITY
   - id: P-X1WOB
   - id: P-XHQRW
   - id: P-XKFPD
   - id: P-XLANN
-  - id: P-YTOGK
 ---
 
 ::: {.remark}
