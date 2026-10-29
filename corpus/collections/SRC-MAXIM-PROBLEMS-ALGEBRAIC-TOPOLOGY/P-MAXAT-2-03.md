@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-2-03
 kind: problem
-title: Maxim algebraic topology 2.3
+title: The Stiefel manifolds $V_n(\RR^\infty)$, $V_n(\CC^\infty)$, $V_n(\quaternions^\infty)$ are contractible
 classification:
   areas: [topology]
   topics: []
