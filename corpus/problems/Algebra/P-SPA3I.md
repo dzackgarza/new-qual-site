@@ -18,34 +18,41 @@ Give examples of simple groups. Are there infinitely many?
 :::
 
 ::: {.solution}
-A group is **simple** if it is nontrivial and has no normal subgroups other than $1$ and itself.
+
+A group is simple if it is nontrivial and its only normal subgroups are $1$ and itself.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #cyclic}
 
-Abelian examples:
-For every prime $p$, the cyclic group
-\[
-C_p=\ZZ/p\ZZ
-\]
-is simple. Indeed, its subgroups have orders dividing $p$, so only the trivial subgroup and the whole group occur.
+For every prime $p$, the cyclic group $C_p=\ZZ/p\ZZ$ is simple.
 
-:::
+::: pf-proof
 
-::: pf-step
-
-Nonabelian examples:
+By Lagrange's theorem a subgroup of $C_p$ has order $1$ or $p$, so the only subgroups are $1$ and $C_p$.
 
 :::
 
 :::
 
-For every $n\ge5$, the alternating group
-\[
-A_n
-\]
-is nonabelian simple.
+::: {.pf-step #alternating}
 
-Thus there are infinitely many simple groups even among finite groups. There are infinitely many abelian simple groups because there are infinitely many primes, and independently there are infinitely many pairwise nonisomorphic nonabelian simple groups $A_n$ for $n\ge5$.
+For every $n\ge5$, the alternating group $A_n$ is a nonabelian simple group.
+
+::: pf-proof
+
+This is the standard theorem on the simplicity of $A_n$ for $n\ge5$; $A_n$ is nonabelian because $(1\,2\,3)$ and $(1\,2\,4)$ do not commute.
+
+:::
+
+:::
+
+::: pf-qed
+
+There are $\boxed{\text{infinitely many}}$ simple groups, even among finite groups: step [](#cyclic){.pf-ref} gives one for each of the infinitely many primes, and step [](#alternating){.pf-ref} gives the pairwise nonisomorphic nonabelian groups $A_n$, $n\ge5$, of distinct orders $n!/2$.
+
+:::
+
+:::
+
 :::
