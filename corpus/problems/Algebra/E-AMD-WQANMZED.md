@@ -28,9 +28,9 @@ Show that if $G \actson X$ is a group action, then the stabilizer $G_x$ of a poi
 
 ::: {.solution}
 Fix $x\in X$ and write
-\[
+$$
 G_x=\{g\in G:g\cdot x=x\}.
-\]
+$$
 
 ::: pf
 
@@ -48,12 +48,12 @@ If $g,h\in G_x$, then $gh^{-1}\in G_x$.
 
 ::: pf-proof
 Since $h\cdot x=x$, applying $h^{-1}$ gives $h^{-1}\cdot x=x$. Hence
-\[
+$$
 (gh^{-1})\cdot x
 =g\cdot(h^{-1}\cdot x)
 =g\cdot x
 =x.
-\]
+$$
 Thus $gh^{-1}\in G_x$.
 :::
 
