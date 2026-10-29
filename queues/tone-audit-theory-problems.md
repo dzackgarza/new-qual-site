@@ -2956,7 +2956,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [ ] | `corpus/theory/Topology/D-KJC6W.md` | `18da6ad5d8b9b85796af23329ba8861ecc03651e` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-KVAI3.md` | `ac5a83acc21d27aece59e62967b96da257b73ec8` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-KWWVL.md` | `e90029fce20b5d5473b0f1d5a0a2b1a51f3b1695` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-L6SGU.md` | `4159adc889682a934e9279104608755827b9285f` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-LB2LS.md` | `1c5e0967eee0b15e14ba826d5772e64d7f2bd653` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-LOISU.md` | `da969cfd4d9ea3439dbe570d548a5fb07c4382a7` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-M3Y6X.md` | `86f3fb3fe82c33f8c158088a21b7068c041cfd9d` | — | Pending |

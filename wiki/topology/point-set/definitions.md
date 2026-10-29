@@ -44,8 +44,6 @@ Local connectedness and local path connectedness use the second.
 
 [[D-ASXW6]]
 
-[[D-L6SGU]]
-
 [[D-AEAAD]]
 
 [[D-AOJG3]]
