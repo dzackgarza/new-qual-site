@@ -49,8 +49,8 @@ There is a partial isometry $U$ with $\ker U=\ker T$ and $T=U|T|$.
 
 ::: pf-proof
 
-Define $U_0\colon\im|T|\to\imT$ by $U_0(|T|x)=Tx$; it is well defined and isometric by step [](#s1){.pf-ref}.
-It extends by continuity to an isometry $U_1\colon\overline{\im|T|}\to\overline{\imT}$.
+Define $U_0\colon\im|T|\to\im T$ by $U_0(|T|x)=Tx$; it is well defined and isometric by step [](#s1){.pf-ref}.
+It extends by continuity to an isometry $U_1\colon\overline{\im|T|}\to\overline{\im T}$.
 Put $U=U_1$ on $\overline{\im|T|}$ and $U=0$ on its orthogonal complement $\ker|T|=\ker T$.
 Then $U|T|x=Tx$ for every $x$.
 
@@ -64,7 +64,7 @@ If $T=WP$ with $P\ge0$ and $W$ a partial isometry with $\ker W=\ker P$, then $P=
 
 ::: pf-proof
 
-$W^*W$ is the orthogonal projection onto $(\ker W)^\perp=(\ker P)^\perp=\overline{\imP}$, so $T^*T=PW^*WP=P^2$, and $P=|T|$ by uniqueness of positive square roots.
+$W^*W$ is the orthogonal projection onto $(\ker W)^\perp=(\ker P)^\perp=\overline{\im P}$, so $T^*T=PW^*WP=P^2$, and $P=|T|$ by uniqueness of positive square roots.
 Then $W(|T|x)=Tx=U(|T|x)$, so $W=U$ on $\overline{\im|T|}$, and both vanish on $\ker|T|$.
 
 :::
@@ -77,7 +77,7 @@ If $T$ is invertible, then $U$ is unitary.
 
 ::: pf-proof
 
-Then $\ker T=0$ and $\imT=H$, so $U$ is an isometry of $H$ onto $H$.
+Then $\ker T=0$ and $\im T=H$, so $U$ is an isometry of $H$ onto $H$.
 
 :::
 
