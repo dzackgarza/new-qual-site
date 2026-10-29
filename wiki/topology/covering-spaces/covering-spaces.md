@@ -7,6 +7,7 @@ topics:
 - Group Actions
 - Free Groups
 - Free Products
+title: Covering spaces
 ---
 
 # Covering spaces
