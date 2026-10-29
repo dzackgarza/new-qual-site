@@ -16,25 +16,40 @@ review: draft
 
 ::: {.exercise}
 Let $f_k:[0,1]\to\CC$ be differentiable and suppose
-\[
-|f_k'(x)|\le M
-\]
+$$
+\abs{f_k'(x)}\le M
+$$
 for every $k$ and every $x\in[0,1]$, where $M$ is independent of $k$.
 Show that $\theset{f_k}$ is equicontinuous.
+:::
 
-> Hint: MVT.
+::: {.hint}
+Use the mean value theorem.
 :::
 
 ::: {.solution}
-For all $x,y\in[0,1]$ and all $k$, the mean-value estimate gives
-\[
-|f_k(x)-f_k(y)|\le M|x-y|.
-\]
-Hence the sequence is uniformly Lipschitz. Given $\varepsilon>0$, take
-$\delta=\varepsilon/M$ when $M>0$ (and arbitrary $\delta>0$ when $M=0$).
-Then $|x-y|<\delta$ implies
-\[
-|f_k(x)-f_k(y)|<\varepsilon
-\]
-for every $k$, so $\theset{f_k}$ is equicontinuous.
+
+::: pf
+
+::: {.pf-step #lipschitz}
+$\abs{f_k(x)-f_k(y)}\le M\abs{x-y}$ for all $x,y\in[0,1]$ and all $k$.
+
+::: pf-proof
+This is the mean value inequality for the differentiable function $f_k$ with $\abs{f_k'}\le M$.
+:::
+
+:::
+
+::: pf-step
+$\theset{f_k}$ is equicontinuous.
+
+::: pf-proof
+Given $\varepsilon>0$, let $\delta\coloneqq\varepsilon/(M+1)$.
+By step [](#lipschitz){.pf-ref}, $\abs{x-y}<\delta$ implies $\abs{f_k(x)-f_k(y)}\le M\delta<\varepsilon$ for every $k$.
+:::
+
+:::
+
+:::
+
 :::
