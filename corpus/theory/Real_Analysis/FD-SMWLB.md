@@ -21,7 +21,7 @@ A set $A\subseteq X$ is \dfn{nowhere dense} in $X$ if its [[D-ASXW6|closure]] ha
 :::
 
 ::: {.remark}
-Equivalently, $A$ is not [[FD-BA2WU|dense]] in any nonempty open subset of $X$.
+Equivalently, $A$ is not [[D-KJBAK|dense]] in any nonempty open subset of $X$.
 For $X=\RR$, a set $A$ is nowhere dense if and only if every open interval $I$ contains an open subinterval $S\subseteq I$ with $S\cap A = \emptyset$, that is, $\overline{A}$ contains no open interval.
 :::
 

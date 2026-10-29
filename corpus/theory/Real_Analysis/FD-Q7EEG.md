@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.definition}
-A topological space $X$ is \dfn{separable} if $X$ has a countable [[FD-BA2WU|dense]] subset.
+A topological space $X$ is \dfn{separable} if $X$ has a countable [[D-KJBAK|dense]] subset.
 :::

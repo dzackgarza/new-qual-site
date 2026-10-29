@@ -39,7 +39,7 @@ If $X$ is a Banach space and $\sum_n\norm{x_n}<\infty$, then $\sum_n x_n$ conver
 
 :::
 
-[[FD-BA2WU]] [[FF-NRCZN]]
+[[D-KJBAK]] [[FF-NRCZN]]
 
 [[FD-Q7EEG]]
 

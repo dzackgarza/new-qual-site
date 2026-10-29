@@ -297,7 +297,6 @@ corpus/theory/Real_Analysis/FD-5I73B.md
 corpus/theory/Real_Analysis/FD-5T3HX.md
 corpus/theory/Real_Analysis/FD-6HUIM.md
 corpus/theory/Real_Analysis/FD-AI6XN.md
-corpus/theory/Real_Analysis/FD-BA2WU.md
 corpus/theory/Real_Analysis/FD-BBR6Q.md
 corpus/theory/Real_Analysis/FD-D2QPH.md
 corpus/theory/Real_Analysis/FD-D7HOH.md

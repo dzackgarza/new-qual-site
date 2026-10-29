@@ -5,6 +5,7 @@ kind: definition
 title: Dense subspace
 prompts:
 - In terms of closure, when is $A \subset X$ dense in $X$?
+- When is a subset $A \subseteq X$ dense in $X$?
 classification:
   areas:
   - topology
