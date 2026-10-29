@@ -22,79 +22,96 @@ to the unit disk $\Delta=\{z:|z|<1\}$.
 :::
 
 ::: {.solution}
-This is a lune-type region:
+The boundary circles $\abs{z}=1$ and $\abs{z-1/2}=1/2$ of $D$ are tangent at $z=1$.
 
-![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-30_02-25-54.png)
+::: pf
 
-The usual strategy is to blow up the tangency, so send $1\to\infty$ with
-$$
-f(z) \definedas {1\over z-1}
-.$$
+::: {.pf-step #maps-to-strip}
+The Möbius map $w = \frac{1}{1-z}$ sends $D$ biholomorphically onto the strip $\{w : 1/2 < \Re w < 1\}$.
 
-::: {.claim}
-$f$ has the following effect:
+::: pf-proof
 
-![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-30_03-27-22.png)
+::: {.pf-step #circle1-to-line}
+The circle $\abs{z} = 1$ maps to the line $\Re w = 1/2$.
+
+::: pf-proof
+For $z=e^{i\theta}$ with $\theta\notin2\pi\ZZ$, $\frac{1}{1-e^{i\theta}} = \frac{1}{2} + \frac{i}{2}\cot(\theta/2)$, and $z=1$ goes to $\infty$.
+:::
 
 :::
 
-::: {.proof title="of claim"}
-Write $C_1$ for $S^1$ and $C_2$ for the smaller circle.
-Computing the image of $C_1$: parameterize as $\gamma_1(t) = e^{it}$ for $t\in [-\pi, \pi]$, then
-$$
-f(\gamma_1(t)) 
-&= {1\over e^{it} - 1} \\
-&= {e^{-it/2} \over e^{it/2} - e^{-it/2}} \\
-&= {e^{-it/2} \over 2i\sin(t/2) } \\
-&= -{i\over 2}\csc(t/2)\qty{\cos(t/2) - i\sin(t/2)} \\
-&= -{i\over 2}\qty{\cot(t/2) - i } \\
-&= {1\over 2}\qty{-1-i\cot(t/2)} \\
-&= -{1\over 2} - i\cdot {1\over 2}\cot(t/2)
-.$$
+::: {.pf-step #circle2-to-line}
+The circle $\abs{z - 1/2} = 1/2$ maps to the line $\Re w = 1$.
 
-Some analysis on $\cot(t/2)$:
-
-- $-\pi\increasesto 0 \leadsto 0\decreasesto -\infty$ 
-- $0\increasesto \pi \leadsto \infty\decreasesto 0$ 
-
-Thus for $-\cot(t/2)$,
-
-- $-\pi\increasesto 0 \leadsto 0\increasesto \infty$ 
-- $0\increasesto \pi \leadsto -\infty\increasesto 0$ 
-
-So the image is a vertical line through $\Re(z) = -{1\over 2}$ oriented from $-\infty\to\infty$.
-
-For the image of $C_2$: parameterize as $\gamma_2(t) = {1\over 2}\qty{1 + e^{it}}$, then
-$$
-f(\gamma_2(t))
-&= {1\over {1\over 2}\qty{1+e^{it}} - 1 } \\
-&= {1\over -{1\over 2} + {1\over 2}e^{it} } \\
-&= {1\over {1\over 2}\qty{e^{it} - 1}} \\
-&= {2e^{-it/2} \over e^{it/2} - e^{-it/2} } \\
-&= {2e^{-it/2} \over 2i\sin(t/2) } \\
-&= -i\csc(t/2) \qty{\cos(-t/2) + i\sin(-t/2) } \\
-&= -i\csc(t/2) \qty{\cos(t/2) - i\sin(t/2) } \\
-&= -i \qty{\cot(t/2) - i } \\
-&= -1 - i\cot(t/2)
-.$$
-By the same argument as above, this traces out a vertical line at $\Re(z) = -1$.
-
-By handedness, since the original region is on the left with respect to $C_1$ and the right with respect to $C_2$, the new region is to the left of $\Re(z) = -{1\over 2}$ and the right of $\Re(z) = -1$ (since both are oriented from $-\infty$ to $\infty$).
+::: pf-proof
+For $z = 1/2 + (1/2)e^{i\theta}$, $w = \frac{2}{1 - e^{i\theta}} = 1 + i\cot(\theta/2)$.
+:::
 
 :::
 
-From here, it's a standard exercise.
-In steps:
+::: pf-step
+$D$ maps onto the strip $\{w : 1/2 < \Re w < 1\}$.
 
-- Map $R$ to the vertical strip $-1< \Re(z) < -{1\over 2}$ using $z\mapsto {1\over z-1}$.
-- Shift using $z\mapsto z+{1\over 2}$ to send this to $-{1\over 2}< \Re(z) < 0$.
-- Rotate using $z\mapsto -iz$ to get $0<\Im(z) < {i\over 2}$, a horizontal strip.
-- Dilate using $z\mapsto 2\pi z$, which sends ${i\over 2}\to \pi i$, so the resulting region is $0 < \Im(z) < \pi$.
-- Apply $z\mapsto e^z$ to map the horizontal strip to $\HH$.
-- Apply the Cayley map $z\mapsto {z-i\over z+i}$ to map $\HH\to\DD$.
+::: pf-proof
+By steps [](#circle1-to-line){.pf-ref} and [](#circle2-to-line){.pf-ref}, the Möbius map sends $D$ onto one component of the complement of the lines $\Re w=1/2$ and $\Re w=1$.
+The point $z=-1/2\in D$ goes to $w=2/3$, so that component is the strip.
+:::
 
 :::
 
+:::
 
+:::
 
+::: {.pf-step #strip-to-disk}
+The map $w\mapsto \frac{e^{\pi i(2w-1)} - i}{e^{\pi i(2w-1)} + i}$ sends the strip $\{1/2 < \Re w < 1\}$ biholomorphically onto $\Delta$.
 
+::: pf-proof
+
+::: pf-step
+$\zeta = 2w - 1$ maps the strip onto $\{0 < \Re \zeta < 1\}$.
+
+::: pf-proof
+It maps $\Re w = 1/2$ to $\Re \zeta = 0$ and $\Re w = 1$ to $\Re \zeta = 1$.
+:::
+
+:::
+
+::: pf-step
+$\eta = e^{\pi i \zeta}$ maps $\{0 < \Re \zeta < 1\}$ biholomorphically onto the upper half-plane $\HH$.
+
+::: pf-proof
+If $\zeta=x+iy$ with $0<x<1$, then $e^{\pi i\zeta}=e^{-\pi y}e^{i\pi x}$ has argument $\pi x\in(0,\pi)$.
+Conversely every point of $\HH$ has a unique logarithm with imaginary part in $(0,\pi)$, so this map is a bijection onto $\HH$.
+:::
+
+:::
+
+::: pf-step
+$\xi = \frac{\eta - i}{\eta + i}$ maps $\HH$ biholomorphically onto $\Delta$.
+
+::: pf-proof
+This is the Cayley transform.
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+A conformal map $D \to \Delta$ is
+$$
+\boxed{z \mapsto \frac{e^{\pi i(2/(1-z) - 1)} - i}{e^{\pi i(2/(1-z) - 1)} + i}}.
+$$
+
+::: pf-proof
+This is the composition of the maps of steps [](#maps-to-strip){.pf-ref} and [](#strip-to-disk){.pf-ref}.
+:::
+
+:::
+
+:::
+
+:::
