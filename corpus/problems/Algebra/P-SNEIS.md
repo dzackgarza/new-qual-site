@@ -15,32 +15,45 @@ review: draft
 
 ::: {.problem}
 Let $H\le G$. Prove that
-\[
+$$
 xH=yH\iff x^{-1}y\in H\iff y^{-1}x\in H.
-\]
+$$
 :::
 
 ::: {.solution}
-Suppose first that $xH=yH$. Since $y\in yH=xH$, there is some $h\in H$ with
-\[
-y=xh.
-\]
-Hence
-\[
-x^{-1}y=h\in H.
-\]
-Conversely, if $x^{-1}y=h\in H$, then $y=xh$, and therefore
-\[
-yH=xhH=xH.
-\]
-Thus
-\[
-xH=yH\iff x^{-1}y\in H.
-\]
 
-Finally,
-\[
-x^{-1}y\in H\iff (x^{-1}y)^{-1}=y^{-1}x\in H,
-\]
-because subgroups are closed under inverses. Hence all three conditions are equivalent.
+::: pf
+
+::: pf-step
+
+If $xH=yH$, then $x^{-1}y\in H$.
+
+::: pf-proof
+
+Since $y=ye\in yH=xH$, there is $h\in H$ with $y=xh$, so $x^{-1}y=h\in H$.
+
+:::
+
+:::
+
+::: pf-step
+
+If $x^{-1}y\in H$, then $xH=yH$.
+
+::: pf-proof
+
+Write $x^{-1}y=h\in H$. Then $y=xh$, and $yH=xhH=xH$ because $hH=H$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Since $H$ is closed under inverses, $x^{-1}y\in H$ if and only if $(x^{-1}y)^{-1}=y^{-1}x\in H$. Together with the first two steps, all three conditions are equivalent.
+
+:::
+
+:::
+
 :::
