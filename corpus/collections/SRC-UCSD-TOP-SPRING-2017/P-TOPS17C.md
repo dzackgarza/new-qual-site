@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS17C
 kind: problem
-title: "Homology of the mapping torus as the cokernel of id - f_*"
+title: 'Homology of the mapping torus as the cokernel of $\mathrm{id}-f_*$'
 classification:
   areas:
   - topology
