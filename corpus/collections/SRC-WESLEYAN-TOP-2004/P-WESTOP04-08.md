@@ -11,6 +11,10 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: The retained extraction mangles the displayed exponent in the definition of generalized Cantor space, but explicitly names a cardinal kappa and the two-point discrete space {0,1}. The standard notation {0,1}^kappa is used while recording this extraction loss.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source defines zero-dimensional as having a basis of clopen sets, under which the two-point indiscrete space is a counterexample to the converse. The definition now also requires T_0.
 ---
 
 ::: {.problem}
@@ -18,51 +22,23 @@ A generalized Cantor space is a space homeomorphic to
 \[
 \{0,1\}^{\kappa},
 \]
-where $\{0,1\}$ is discrete and $\kappa$ is a cardinal. A space is zero-dimensional if it has a basis of clopen sets.
+where $\{0,1\}$ is discrete and $\kappa$ is a cardinal. A space is zero-dimensional if it is $T_0$ and has a basis of clopen sets.
 
 Outline a proof that a space is zero-dimensional if and only if it is homeomorphic to a subspace of a generalized Cantor space.
 :::
 
 ::: {.solution}
 
-As stated with “zero-dimensional” meaning only “has a basis of clopen sets,” the converse requires a separation hypothesis. The precise statement is:
-
-$$
-\boxed{
-X\text{ is }T_0\text{ and has a clopen basis}
-\iff
-X\text{ embeds in }\{0,1\}^{\kappa}
-\text{ for some cardinal }\kappa.}
-$$
-
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-The statement without the $T_0$ hypothesis is false.
+Every subspace of a generalized Cantor space is $T_0$.
 
 
 ::: pf-proof
 
-Let
-$$
-X=\{a,b\}
-$$
-with the indiscrete topology
-$$
-\{\varnothing,X\}.
-$$
-The family
-$$
-\{X\}
-$$
-is a basis consisting of clopen sets, so $X$ is zero-dimensional according to the definition printed in the problem.
-
-However, every product
-$$
-\{0,1\}^{\kappa}
-$$
-is Hausdorff, and every subspace of a Hausdorff space is Hausdorff. The indiscrete two-point space is not even $T_0$, hence cannot be homeomorphic to a subspace of such a product.
+The space $\{0,1\}$ is discrete, hence Hausdorff, and a product of Hausdorff spaces is Hausdorff. Every subspace of a Hausdorff space is Hausdorff, hence $T_0$.
 
 :::
 
@@ -425,7 +401,7 @@ $$
 
 ::: pf-qed
 
-Step [](#s1-1){.pf-ref} records the defect in the literal statement. Step [](#s1-2){.pf-ref} proves the forward implication, and steps [](#s1-3){.pf-ref} through [](#s1-8){.pf-ref} prove the converse under the necessary $T_0$ hypothesis.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that every subspace of a generalized Cantor space is zero-dimensional, and steps [](#s1-3){.pf-ref} through [](#s1-8){.pf-ref} embed every zero-dimensional space in one.
 
 :::
 
