@@ -29,7 +29,7 @@ A primitive polynomial $p\in \ZZ[x]$ of positive degree is irreducible in $\ZZ[x
 
 ## Standard factorizations and root counts
 
-[[FF-UC7SQ]] [[FF-ED3CD]]
+[[FF-ED3CD]]
 
 [[FF-2AKVH]] [[FF-HAMDC]]
 

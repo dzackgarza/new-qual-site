@@ -14,7 +14,7 @@ classification:
   - Factorization
 relations:
 - kind: variant-of
-  target: FF-UC7SQ
+  target: FF-ED3CD
 review: draft
 ---
 

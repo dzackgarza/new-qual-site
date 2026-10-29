@@ -6,6 +6,7 @@ title: Factorization of $x^n - a^n$
 slogan: A difference of $n$th powers always carries the linear factor $x-a$.
 prompts:
 - How does $x^n - a^n$ factor?
+- How does $x^n - y^n$ factor?
 classification:
   areas:
   - algebra
@@ -30,4 +31,12 @@ $$
 (x-a)\sum_{k=0}^{n-1}a^kx^{n-1-k}=\sum_{k=0}^{n-1}a^kx^{n-k}-\sum_{k=1}^{n}a^kx^{n-k},
 $$
 and the two sums cancel except for the terms $x^n$ and $-a^n$.
+:::
+
+::: {.remark title="Variations"}
+Take $R=\ZZ[y]$ and $a=y$: in $\ZZ[x,y]$,
+$$
+x^n-y^n=(x-y)\sum_{k=0}^{n-1}x^{n-1-k}y^k .
+$$
+The proof above applies unchanged.
 :::
