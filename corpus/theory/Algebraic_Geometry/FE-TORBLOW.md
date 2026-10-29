@@ -18,7 +18,7 @@ relations:
 review: draft
 prompts:
 - How is the blowup of a toric variety at a fixed point described on the fan?
-- Blow up P^2 at a torus-fixed point and identify the result.
+- Blow up $\PP^2$ at a torus-fixed point and identify the result.
 ---
 
 ::: {.example title="Star subdivision"}
@@ -39,7 +39,7 @@ Subdivide the first quadrant by the ray through $e_1 + e_2$, giving $\sigma_0 = 
 
 Then $U_{\sigma_0} = \Spec \CC[x, x^{-1}y]$ and $U_{\sigma_1} = \Spec \CC[y, xy^{-1}]$, both copies of $\CC^2$.
 The blowup of $\CC^2$ at the origin is $\Bl_0 \CC^2 = V(x t_1 - y t_0) \subseteq \CC^2 \times \PP^1$ with $\PP^1 = \theset{[t_0 : t_1]}$, covered by $U_i = D(t_i) \cong \CC^2$ with coordinates $x, t_1/t_0 = x^{-1}y$ on $U_0$ and $y, t_0/t_1 = xy^{-1}$ on $U_1$.
-These are the two charts above, glued the same way, so $X_{\Sigma} = \Bl_0 \CC^2$.
+These are the two charts above, glued the same way, so the toric variety of the subdivided quadrant is $\Bl_0 \CC^2$.
 :::
 
 ::: {.example title="Blowing up the plane"}
