@@ -12,31 +12,54 @@ classification:
   - Zeros
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source reads "Let f:D -> D with f(0) = f'(0) = 0" and does not say that f is holomorphic; the statement adds that hypothesis, without which the bound fails.
 ---
 
 ::: {.exercise}
-Let $f:\DD\to \DD$ with $f(0) = f'(0) = 0$.
+Let $f:\DD\to \DD$ be holomorphic with $f(0) = f'(0) = 0$.
 Show that $\abs{f''(0)} \leq 2$ and describe all $f$ for which this is an equality.
-
 :::
 
 ::: {.solution}
-By Schwarz, $\abs{f(z)}\leq \abs z$.
-Write $g(z) \definedas f(z)/z$, which is holomorphic on $\DD$ since $f$ has a zero of order at least one at $0$, and $\abs{g(z)}\leq 1$.
-Write $f(z) = \sum_k c_kz^k$; then $c_0 = 0$ since $f(0) = 0$ and $c_1 = 0$ since $f'(0) = 0$, so $f(z)=c_2z^2 + \bigo(z^3)$.
-Thus $g(z) = c_2z + \bigo(z^2)$ and $g(0) = 0$. By the maximum modulus principle, the nonconstant function $g$ with $\abs g\le1$ satisfies $\abs g<1$ on $\DD$ (and $g\equiv0$ if $g$ is constant), so $g:\DD\to\DD$ and Schwarz applies:
+Write $f(z) = \sum_{k\ge0} c_kz^k$ on $\DD$, so $c_2=f''(0)/2$.
 
-- $\abs{g(z)}\leq \abs{z}$
-- $\abs{g'(0)} \leq 1$
+::: pf
 
-We have $g'(z) = c_2 + \bigo(z)$ so $g'(0) = c_2 = {f^{(2)}(0) \over 2!}$.
-\[
-1 \geq \abs{g'(0)} = \abs{c_2} = \abs{f^{(2)}(0) \over 2} \implies \abs{ f^{(2)}(0) } \leq 2!
-.\]
+::: {.pf-step #g}
+The function $g(z)\coloneqq f(z)/z^2$, extended by $g(0)=c_2$, is holomorphic on $\DD$ with $\abs{g}\le1$.
 
-Suppose this is an equality -- then Schwarz on $g$ shows $g$ is a rotation, so
-\[
-{f(z)\over z} = g(z) = \lambda z \implies f(z) = \lambda z^2 \qquad \lambda \in S^1
-.\]
-Conversely, $f(z)=\lambda z^2$ with $\abs\lambda=1$ satisfies the hypotheses and $\abs{f''(0)}=2$.
+::: pf-proof
+Since $c_0=f(0)=0$ and $c_1=f'(0)=0$, $f(z)=z^2\sum_{k\ge2}c_kz^{k-2}$, so $g$ is holomorphic.
+For $0<r<1$ and $\abs z\le r$, the maximum modulus principle gives $\abs{g(z)}\le\max_{\abs w=r}\abs{f(w)}/r^2<1/r^2$.
+Letting $r\to1$ gives $\abs{g(z)}\le1$.
+:::
+
+:::
+
+::: {.pf-step #bound}
+$\abs{f''(0)}\le2$.
+
+::: pf-proof
+By step [](#g){.pf-ref}, $\abs{f''(0)}=2\abs{c_2}=2\abs{g(0)}\le2$.
+:::
+
+:::
+
+::: pf-step
+Equality holds exactly for $\boxed{f(z)=\lambda z^2}$ with $\abs\lambda=1$.
+
+::: pf-proof
+If $\abs{f''(0)}=2$, then $\abs{g(0)}=1$, so the function $g$ of step [](#g){.pf-ref} attains its maximum modulus at the interior point $0$ and is a constant $\lambda$ with $\abs\lambda=1$.
+Hence $f(z)=\lambda z^2$.
+Conversely, $f(z)=\lambda z^2$ with $\abs\lambda=1$ maps $\DD$ into $\DD$, satisfies $f(0)=f'(0)=0$, and has $\abs{f''(0)}=2$.
+:::
+
+:::
+
+:::
+
 :::
