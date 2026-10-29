@@ -67,7 +67,7 @@ Chapter: [[algebra/group-actions/index|Group actions]].
 
 [[T-GYVNQ]]
 
-[[T-V7JRG]]
+[[FT-PUVIQ]]
 
 [[PR-UTFSY]]
 
