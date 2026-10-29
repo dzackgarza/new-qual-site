@@ -53,7 +53,7 @@ By Montel's theorem, a sequence of holomorphic functions whose pointwise limit i
 **Nonvanishing derivative without injectivity.** $e^z$ has derivative $e^z \neq 0$ everywhere and $e^0 = e^{2\pi i}$; nonvanishing derivative gives only local injectivity.
 
 **Injective with vanishing derivative, over $\RR$.** $x\mapsto x^3$ is injective on $\RR$, has derivative $0$ at $0$, and has inverse $x^{1/3}$, which is not differentiable at $0$.
-An injective holomorphic function has nonvanishing derivative ([[C-FVT4V]]).
+An injective holomorphic function has nonvanishing derivative ([[P-Z776N]]).
 
 ## Holomorphy
 

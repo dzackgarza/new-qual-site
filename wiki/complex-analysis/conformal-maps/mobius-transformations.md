@@ -34,7 +34,7 @@ It reverses signed angles and is not conformal.
 :::
 
 ::: {.remark title="Inverses"}
-An injective holomorphic map $f$ on an open set $U$ has $f'\neq 0$ on $U$, and $\inverseof{f}\colon f(U)\to U$ is holomorphic ([[C-FVT4V]]). The biholomorphisms of an open set $\Omega$ onto itself therefore form a group $\Aut_\CC(\Omega)$, computed for the disc on [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]].
+An injective holomorphic map $f$ on an open set $U$ has $f'\neq 0$ on $U$, and $\inverseof{f}\colon f(U)\to U$ is holomorphic ([[P-Z776N]]). The biholomorphisms of an open set $\Omega$ onto itself therefore form a group $\Aut_\CC(\Omega)$, computed for the disc on [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]].
 
 :::
 

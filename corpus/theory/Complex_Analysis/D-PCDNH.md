@@ -35,6 +35,6 @@ In particular, the inverse of a biholomorphism is a biholomorphism.
 (i) By the chain rule $(f\circ\gamma_j)'(0)=f'(z_0)\,\gamma_j'(0)$.
 Multiplication by $f'(z_0)=\abs{f'(z_0)}e^{i\alpha}\neq0$ scales by $\abs{f'(z_0)}>0$ and rotates by $\alpha$, adding $\alpha$ to the argument of both tangent vectors, so the difference of their arguments is unchanged.
 
-(ii) A holomorphic bijection $U\to V$ is [[D-OHFRH|univalent]], so by the proposition on that card $f'$ has no zeros and $f^{-1}$ is holomorphic.
+(ii) A holomorphic bijection $U\to V$ is [[D-OHFRH|univalent]], so by [[P-Z776N]] $f'$ has no zeros and $f^{-1}$ is holomorphic.
 Differentiating $f(f^{-1}(w))=w$ gives $(f^{-1})'(w)=1/f'(f^{-1}(w))\neq0$.
 :::

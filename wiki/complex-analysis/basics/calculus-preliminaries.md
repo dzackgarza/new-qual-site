@@ -154,7 +154,7 @@ A continuous function on a compact metric space is uniformly continuous.
 [[D-OHFRH]]
 
 ::: {.remark}
-If $f\colon \Omega \to \Omega'$ is a holomorphic bijection, then $\inverseof{f}$ is holomorphic.
+If $f\colon \Omega \to \Omega'$ is a holomorphic bijection, then $\inverseof{f}$ is holomorphic ([[P-Z776N]]).
 For real functions the analogue fails: $f(x) = x^3$ is a smooth bijection $\RR\to\RR$ with $f'(0) = 0$, and $\inverseof{f}(x) = x^{1/3}$ is not differentiable at $0$.
 
 :::

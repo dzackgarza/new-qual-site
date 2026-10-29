@@ -59,7 +59,7 @@ Montel's theorem follows by applying the Arzelà--Ascoli theorem on each set of 
 [[D-OHFRH]]
 
 ::: {.remark title="Univalent maps"}
-If $f\colon \Omega \to \Omega'$ is holomorphic, injective, and surjective, then $f'$ does not vanish, and $\inverseof{f}$ is holomorphic.
+If $f\colon \Omega \to \Omega'$ is holomorphic, injective, and surjective, then $f'$ does not vanish, and $\inverseof{f}$ is holomorphic ([[P-Z776N]]).
 So a univalent surjection produced by the Riemann mapping argument is a biholomorphism.
 :::
 
