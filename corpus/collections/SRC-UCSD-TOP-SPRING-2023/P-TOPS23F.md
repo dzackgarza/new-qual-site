@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS23F
 kind: problem
-title: "Degree pm 1 map from S^n to a closed orientable manifold forces homology isomorphism"
+title: 'A map of degree $\pm1$ from $S^n$ to a closed orientable manifold forces a homology isomorphism'
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS23G
 kind: problem
-title: "Antipodal-preserving map of S^{2n+1} has odd degree"
+title: 'An antipodal-preserving map of $S^{2n+1}$ has odd degree'
 classification:
   areas:
   - topology

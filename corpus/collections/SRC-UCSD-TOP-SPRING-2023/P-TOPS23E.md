@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS23E
 kind: problem
-title: "Homology of RP^3 as B^3 with antipodal boundary points identified"
+title: 'Homology of $\RP^3$ as $B^3$ with antipodal boundary points identified'
 classification:
   areas:
   - topology

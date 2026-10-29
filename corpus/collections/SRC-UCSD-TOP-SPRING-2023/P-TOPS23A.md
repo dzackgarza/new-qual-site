@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS23A
 kind: problem
-title: "The Hopf fibration S^3 to S^2 has no section"
+title: 'The Hopf fibration $S^3\to S^2$ has no section'
 classification:
   areas:
   - topology

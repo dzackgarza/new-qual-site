@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS23H
 kind: problem
-title: "CP^2 # overline{CP^2} is not homotopy equivalent to S^2 x S^2 via cohomology ring"
+title: '$\CP^2\#\overline{\CP^2}$ is not homotopy equivalent to $S^2\times S^2$'
 classification:
   areas:
   - topology

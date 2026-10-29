@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS23C
 kind: problem
-title: "Kernel of F_2 to S_3 sending generators to transpositions"
+title: 'Kernel of the map $F_2\to S_3$ sending the generators to transpositions'
 classification:
   areas:
   - topology
