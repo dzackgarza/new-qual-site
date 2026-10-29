@@ -11,10 +11,16 @@ classification:
   - Surfaces
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The source writes only 'Show that chi(Sigma_g + Sigma_h) = chi(Sigma_g) + chi(Sigma_h) - 2'; the statement now defines Sigma_g and the sum as connected sum."
 ---
 
 ::: {.problem}
-- Show that $\chi(\Sigma_g + \Sigma_h) = \chi(\Sigma_g)  + \chi(\Sigma_h) - 2$.
+Let $\Sigma_g$ denote the closed orientable surface of genus $g$, and let $\Sigma_g + \Sigma_h$ denote the connected sum of $\Sigma_g$ and $\Sigma_h$.
+Show that $\chi(\Sigma_g + \Sigma_h) = \chi(\Sigma_g) + \chi(\Sigma_h) - 2$.
 :::
 
 ::: {.solution}
@@ -27,7 +33,7 @@ For closed orientable surfaces, $\chi(\Sigma_g)=2-2g$.
 
 ::: pf-proof
 
-Use the standard CW structure with one $0$-cell, $2g$ $1$-cells, and one $2$-cell.
+The standard CW structure on $\Sigma_g$ has one $0$-cell, $2g$ $1$-cells, and one $2$-cell, so $\chi(\Sigma_g) = 1 - 2g + 1$.
 
 :::
 
@@ -35,11 +41,11 @@ Use the standard CW structure with one $0$-cell, $2g$ $1$-cells, and one $2$-cel
 
 ::: pf-step
 
-The connected sum satisfies $\Sigma_g\#\Sigma_h\cong\Sigma_{g+h}$.
+The connected sum satisfies $\Sigma_g+\Sigma_h\cong\Sigma_{g+h}$.
 
 ::: pf-proof
 
-Connected sum adds the numbers of handles.
+By the classification of surfaces, the connected sum of orientable surfaces is orientable and its genus is the sum of the genera.
 
 :::
 
@@ -48,7 +54,7 @@ Connected sum adds the numbers of handles.
 ::: pf-step
 
 Hence
-$$\boxed{\chi(\Sigma_g\#\Sigma_h)=\chi(\Sigma_g)+\chi(\Sigma_h)-2.}$$
+$$\boxed{\chi(\Sigma_g+\Sigma_h)=\chi(\Sigma_g)+\chi(\Sigma_h)-2.}$$
 
 ::: pf-proof
 
