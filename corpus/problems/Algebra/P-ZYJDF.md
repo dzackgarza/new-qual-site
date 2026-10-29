@@ -22,34 +22,52 @@ audit:
 ---
 
 ::: {.problem}
-Construct an explicit polynomial over $\mathbb{Q}$ whose Galois group is the cyclic group of order 3:
-$$\operatorname{Gal}(f/\mathbb{Q}) \cong \mathbb{Z}/3\mathbb{Z}.$$
+Construct an explicit polynomial over $\QQ$ whose Galois group is the cyclic group of order 3:
+$$\Gal(f/\QQ) \cong \ZZ/3\ZZ.$$
 Prove that your polynomial satisfies this condition.
 :::
 
 ::: {.solution}
-Take
-\[
-f(x)=x^3-3x+1.
-\]
-By the rational root test, its only possible rational roots are $\pm1$, and
-\[
-f(1)=-1,
-\qquad
-f(-1)=3.
-\]
-Thus $f$ is irreducible over $\mathbb Q$.
+Let $f(x)=x^3-3x+1$.
 
-For a depressed cubic $x^3+px+q$, the discriminant is
-\[
-\Delta=-4p^3-27q^2.
-\]
-Here $p=-3$ and $q=1$, so
-\[
-\Delta=108-27=81=9^2.
-\]
-An irreducible cubic has transitive Galois group, hence either $A_3$ or $S_3$, and it lies in $A_3$ exactly when its discriminant is a square. Therefore
-\[
-\boxed{\operatorname{Gal}(f/\mathbb Q)\cong A_3\cong C_3}.
-\]
+::: pf
+
+::: {.pf-step #irreducible}
+
+$f$ is irreducible over $\QQ$.
+
+::: pf-proof
+
+By the rational root test, the only possible rational roots are $\pm1$, and $f(1)=-1$, $f(-1)=3$. A cubic with no root in $\QQ$ is irreducible over $\QQ$.
+
+:::
+
+:::
+
+::: {.pf-step #disc}
+
+The discriminant of $f$ is $81=9^2$.
+
+::: pf-proof
+
+For $x^3+px+q$ the discriminant is $-4p^3-27q^2$; with $p=-3$ and $q=1$ this is $108-27=81$.
+
+:::
+
+:::
+
+::: pf-step
+
+$\Gal(f/\QQ)\cong\boxed{A_3\cong\ZZ/3\ZZ}$.
+
+::: pf-proof
+
+By step [](#irreducible){.pf-ref}, $f$ is separable and its Galois group is a transitive subgroup of $S_3$, so it is $A_3$ or $S_3$. It lies in $A_3$ exactly when the discriminant is a square in $\QQ$, which holds by step [](#disc){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::
