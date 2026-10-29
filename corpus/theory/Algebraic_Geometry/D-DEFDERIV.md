@@ -33,9 +33,9 @@ where $A \to I^\bullet$ is any injective resolution of $A$.
 
 If instead $F$ is right exact and $\mca$ has enough projectives, the \dfn{left derived functors} are
 $$
-L^iF(A) = h^i(F(P^\bullet)) ,
+L_iF(A) = h_i(F(P_\bullet)) ,
 $$
-where $P^\bullet \to A$ is any projective resolution.
+where $P_\bullet \to A$ is any projective resolution, indexed homologically.
 
 For contravariant $F$, regard $F$ as a covariant functor on $\opcat{\mca}$.
 :::
