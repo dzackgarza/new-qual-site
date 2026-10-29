@@ -17,38 +17,39 @@ review: draft
 ::: {.problem}
 Suppose that $f: \RR\to\RR$ is a continuous function that vanishes outside of some finite interval.
 For each $z\in \CC$, define
-\[
+$$
 g(z) = \int_{-\infty}^\infty f(t) e^{-izt} \,dt
-.\]
+.$$
 
 Show that $g$ is entire.
 :::
 
 ::: {.solution}
-Choose $R>0$ such that $f(t)=0$ for $|t|>R$. Then
-\[
-g(z)=\int_{-R}^R f(t)e^{-izt}\,dt.
-\]
-Fix a compact set $K\subset\mathbb C$. If $M=\sup_{z\in K}|\Im z|$, then for
-$z\in K$ and $|t|\le R$,
-\[
-|f(t)e^{-izt}|
-\le |f(t)|e^{MR},
-\]
-and similarly
-\[
-|-it\,f(t)e^{-izt}|
-\le R|f(t)|e^{MR}.
-\]
-These are integrable majorants on $[-R,R]$. Hence differentiation under the
-integral sign is valid, giving
-\[
-g'(z)=\int_{-R}^R (-it)f(t)e^{-izt}\,dt.
-\]
-Thus $g$ is holomorphic on all of $\mathbb C$, i.e. $g$ is entire.
+Choose $R>0$ with $f(t)=0$ for $\abs{t}>R$, and let $A = \int_{-R}^R \abs{f(t)}\,dt$.
 
-Iterating the same argument gives, for every $n\ge0$,
-\[
-g^{(n)}(z)=\int_{-R}^R(-it)^n f(t)e^{-izt}\,dt.
-\]
+::: pf
+
+::: {.pf-step #series}
+For every $z \in \CC$,
+$$
+g(z)=\sum_{n=0}^\infty c_n z^n, \qquad c_n = \frac{(-i)^n}{n!}\int_{-R}^R t^n f(t)\,dt.
+$$
+
+::: pf-proof
+For fixed $z$, the series $e^{-izt} = \sum_n \frac{(-izt)^n}{n!}$ converges uniformly in $t \in [-R,R]$, by the Weierstrass M-test with bounds $\frac{(\abs{z}R)^n}{n!}$.
+So it may be multiplied by the bounded function $f$ and integrated term by term over $[-R,R]$.
+:::
+
+:::
+
+::: pf-step
+$g$ is entire.
+
+::: pf-proof
+$\abs{c_n} \leq \frac{R^n A}{n!}$, so the power series of step [](#series){.pf-ref} has infinite radius of convergence.
+:::
+
+:::
+
+:::
 :::
