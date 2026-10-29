@@ -20,7 +20,7 @@ source:
     term: summer
     year: 2008
   problems:
-  - id: E-NVXSD
+  - id: E-MGS22
     comment: Part I Problem 1; repeated exactly as the canonical continuous-image-of-compact exercise
   - id: E-E3JL6
     comment: Part I Problem 2; repeated exactly as the canonical product-Hausdorff exercise

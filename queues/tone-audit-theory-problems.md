@@ -1539,7 +1539,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Topology/E-MGS22.md` | `e5eb7b8e3bf53d0cf7f7ec65b3010fa1735edcaf` | `e5eb7b8e3bf53d0cf7f7ec65b3010fa1735edcaf` | Read; retained |
 | [x] | `corpus/problems/Topology/E-MKK6X.md` | `0860976f823b3ad4511e62871fd0afd140d6f460` | `0860976f823b3ad4511e62871fd0afd140d6f460` | Read; retained |
 | [x] | `corpus/problems/Topology/E-NTLQD.md` | `04b5ac51308009b2e3d8e5793e838c96d20058af` | `04b5ac51308009b2e3d8e5793e838c96d20058af` | Read; retained |
-| [x] | `corpus/problems/Topology/E-NVXSD.md` | `0f1fa725e935bccf326a6c84d843fa04e3f1451f` | `0f1fa725e935bccf326a6c84d843fa04e3f1451f` | Read; retained |
 | [x] | `corpus/problems/Topology/E-NZ4WI.md` | `be4c8e774407ac5b79016252b9b872d67556d187` | `be4c8e774407ac5b79016252b9b872d67556d187` | Read; retained |
 | [x] | `corpus/problems/Topology/E-OIS5D.md` | `6981497b900c703a291dad783e267a7314d10b14` | `6981497b900c703a291dad783e267a7314d10b14` | Read; retained |
 | [x] | `corpus/problems/Topology/E-OYP3Y.md` | `5cef3f69a383727a0f5e4fa6fc48b96b403c686a` | `5cef3f69a383727a0f5e4fa6fc48b96b403c686a` | Read; retained |
