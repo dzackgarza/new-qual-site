@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS00D
 kind: problem
-title: "Suspension of RP^2 is not homotopy equivalent to a compact manifold"
+title: 'The suspension of $\RP^2$ is not homotopy equivalent to a compact manifold'
 classification:
   areas:
   - topology

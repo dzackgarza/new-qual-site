@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS00F
 kind: problem
-title: "Degree-one map from S^n to M^n forces vanishing intermediate homology"
+title: 'A degree-one map $S^n\to M^n$ forces vanishing intermediate homology'
 classification:
   areas:
   - topology

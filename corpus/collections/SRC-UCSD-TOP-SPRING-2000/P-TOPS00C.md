@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS00C
 kind: problem
-title: "Cohomology ring of CP^3 x RP^2"
+title: 'Cohomology ring of $\CP^3\times\RP^2$'
 classification:
   areas:
   - topology
