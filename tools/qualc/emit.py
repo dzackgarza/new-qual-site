@@ -1262,9 +1262,14 @@ def _listing_sort(data: CardPageData, card: sqlite3.Row) -> str:
     problem browser used to emit its rows in: by area, and within an area the
     titles that begin with prose before the ones that begin with mathematics,
     because `$` sorts ahead of every letter and the page opened on 483 formulas.
+
+    The key is compared as a string, so its separator is a tab, which sorts
+    below every character an area id or title holds: `algebra` then ends
+    before `algebraic-geometry`, and a card with a second area follows the
+    single-area cards of its first area.
     """
-    areas = " ".join(_page_terms(data, card["id"], "area"))
-    return f"{areas}|{1 if card['title'].startswith('$') else 0}|{card['title']}"
+    fields = [*_page_terms(data, card["id"], "area"), "1" if card["title"].startswith("$") else "0", card["title"]]
+    return "\t".join(fields)
 
 
 def write_json_pages(

@@ -691,3 +691,33 @@ def test_site_apparatus_is_kept_out_of_the_search_index(built_fixture: Path) -> 
     page = read_html(built_fixture / "build" / "quarto" / "_site" / "tag" / "THM-SYLOW.html")
     suggest = page.root.find_all("a", **{"class": "result-slogan-suggest"})[0]
     assert "data-pagefind-ignore" in suggest.attrs
+
+
+def test_default_problem_order_is_by_first_area_then_title(tmp_path: Path) -> None:
+    """Unsearched, the browser lists algebra before algebraic geometry, and a
+    card classified under algebra and topology sits with algebra, after the
+    algebra-only cards."""
+    base = (ROOT / "tests" / "fixtures" / "kinds" / "PRB-INDEXP.md").read_text()
+
+    def card(card_id: str, title: str, areas: list[str]) -> str:
+        text = base.replace("PRB-INDEXP", card_id)
+        text = text.replace("title: Show a subgroup of index $p$ in a $p\\dash$group is normal", f"title: {title}")
+        return text.replace("  areas:\n  - algebra\n", "  areas:\n" + "".join(f"  - {area}\n" for area in areas))
+
+    work = fixture_repo(
+        tmp_path,
+        {
+            "P-ORDAG.md": card("P-ORDAG", "Aaa geometric problem", ["algebraic-geometry"]),
+            "P-ORDMULTI.md": card("P-ORDMULTI", "Aaa shared problem", ["algebra", "topology"]),
+            "P-ORDALG.md": card("P-ORDALG", "Zzz algebra problem", ["algebra"]),
+        },
+    )
+    branch = work / "wiki" / "algebraic-geometry"
+    branch.mkdir()
+    (branch / "index.md").write_text("---\ntitle: Algebraic Geometry\norder: 1\n---\n\n# Algebraic Geometry\n")
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    rows = json.loads((work / "build" / "quarto" / "_site" / "problems.json").read_text())["rows"]
+    ordered = [row["id"] for row in sorted(rows, key=lambda row: row["order"]) if row["id"].startswith("P-ORD")]
+    assert ordered == ["P-ORDALG", "P-ORDMULTI", "P-ORDAG"]
