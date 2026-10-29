@@ -19,7 +19,7 @@ The \dfn{fundamental group} $\pi_1(X, x_0)$ is the set of classes of [[D-J6XOC|l
 $$
 [\gamma][\eta]\coloneqq[\gamma\cdot\eta],
 $$
-where $\gamma\cdot\eta$ is the [[D-J6XOC|concatenation]] of $\gamma$ and $\eta$.
+where $\gamma\cdot\eta$ is the [[D-J6XOC|concatenation]] of $\gamma$ and $\eta$ [@Hat02].
 :::
 
 ::: {.proposition}
@@ -32,8 +32,4 @@ Let $h\colon I\to X$ be a path from $x_0$ to $x_1$, with reverse $\bar h$.
 Then $\beta_h\colon\pi_1(X, x_1)\to\pi_1(X, x_0)$, $\beta_h[\gamma]\coloneqq[h\cdot\gamma\cdot\bar h]$, is a group isomorphism.
 It depends only on the homotopy class of $h$ rel endpoints, and for a second path $h'$ from $x_0$ to $x_1$, $\beta_{h'} = c\circ\beta_h$, where $c$ is conjugation by $[h'\cdot\bar h]\in\pi_1(X, x_0)$.
 In particular, if $X$ is [[D-X73EB|path connected]], the groups $\pi_1(X, x)$ for $x\in X$ are all isomorphic.
-:::
-
-::: {.concept}
-See [@Hat02].
 :::
