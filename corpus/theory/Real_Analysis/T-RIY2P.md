@@ -28,7 +28,3 @@ $$
 \int_{\RR^d\setminus B_r(0)}\abs{f}\,dm<\varepsilon.
 $$
 :::
-
-::: {.proof}
-The functions $\abs{f}\chi_{\RR^d\setminus B_r(0)}$ tend to $0$ pointwise as $r\to\infty$ and are dominated by $\abs{f}\in L^1$, so their integrals tend to $0$ by dominated convergence.
-:::
