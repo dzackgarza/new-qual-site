@@ -1197,7 +1197,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Complex_Analysis/P-E2CRQ.md` | `c2336f8780c332ceb30c2e2526a33e4404129eca` | `c2336f8780c332ceb30c2e2526a33e4404129eca` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-E6JSI.md` | `fdb66c73f973a690999384d0a6b4f752165b6136` | `fdb66c73f973a690999384d0a6b4f752165b6136` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-EEUV6.md` | `3afcbba224d25be4f89a7ae193049c51a9dd1a4e` | `3afcbba224d25be4f89a7ae193049c51a9dd1a4e` | Read; retained |
-| [x] | `corpus/problems/Complex_Analysis/P-EH22O.md` | `c8eee0370653a09a0eadff0fe0d147f6beb99bc7` | `c8eee0370653a09a0eadff0fe0d147f6beb99bc7` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-EHKFZ.md` | `73c0b2f1a3c021ec5368ba1cd7509443b1178842` | `73c0b2f1a3c021ec5368ba1cd7509443b1178842` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-EHLPT.md` | `aefd2c07f741bc52dcb1f9e2f709dbe95ba9c79d` | `aefd2c07f741bc52dcb1f9e2f709dbe95ba9c79d` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-EK3L7.md` | `0ee41239576dd2e83130324ff3e015f352a70676` | `0ee41239576dd2e83130324ff3e015f352a70676` | Read; retained |

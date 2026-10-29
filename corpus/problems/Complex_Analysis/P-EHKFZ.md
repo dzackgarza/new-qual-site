@@ -68,3 +68,9 @@ where the $n=0$ term is $0$.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+For $f(z)=\sum_{n\ge0}c_nz^n$ analytic and one-to-one in $\abs{z}<1$ and $0<r<1$, the area of $f(\theset{\abs{z}<r})$ is finite and equals $\pi\sum_{n\ge1}n\abs{c_n}^2r^{2n}$.
+The proof above applies with the disk in place of the annulus: step [](#parseval){.pf-ref} holds for $0<\rho\le r$ with $c_n=0$ for $n<0$, and integrating $\rho$ from $0$ to $r$ gives the formula.
+The area of $f(\theset{\abs{z}<1})$ can be infinite: $f(z)=z/(1-z)$ is one-to-one on the unit disk and maps it onto the half-plane $\Re w>-\tfrac12$.
+:::
