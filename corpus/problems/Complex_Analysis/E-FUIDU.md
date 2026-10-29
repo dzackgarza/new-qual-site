@@ -12,7 +12,6 @@ classification:
   - Counterexamples
 relations: []
 review: draft
----
 audit:
 - event: statement-corrected
   by: Claude Opus 5.5
