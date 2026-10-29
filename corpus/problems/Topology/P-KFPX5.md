@@ -27,14 +27,12 @@ on fundamental groups.
 :::
 
 ::: {.solution}
-**Goal:** Define covering spaces and the homotopy lifting property, prove that covering maps induce injections on $\pi_1$, and prove that a $\pi_1$-isomorphism between path-connected spaces makes the covering map a homeomorphism.
 
 ::: pf
 
 ::: pf-step
 
-Part (a): Definition of covering space and covering map.
-    *Proof:*
+(a) The definition of a covering space and a covering map is as follows.
 
 ::: pf-proof
 
@@ -47,8 +45,8 @@ Let $X$ be a topological space. A covering space of $X$ consists of a topologica
 ::: pf-step
 
 An open set $U \subseteq X$ is evenly covered if the preimage $p^{-1}(U)$ can be expressed as a disjoint union of open subsets in $\widetilde{X}$:
-    $$p^{-1}(U) = \bigsqcup_{\alpha \in A} V_\alpha,$$
-    such that for each index $\alpha \in A$, the restriction $p|_{V_\alpha}: V_\alpha \to U$ is a homeomorphism.
+$$p^{-1}(U) = \bigsqcup_{\alpha \in A} V_\alpha,$$
+such that for each index $\alpha \in A$, the restriction $p|_{V_\alpha}: V_\alpha \to U$ is a homeomorphism.
 
 :::
 
@@ -64,8 +62,7 @@ The map $p$ is called a covering map, $X$ is the base space, and the sets $V_\al
 
 ::: pf-step
 
-Part (b): Statement of the Homotopy Lifting Property (HLP).
-    *Proof:*
+(b) Covering maps have the following homotopy lifting property.
 
 ::: pf-proof
 
@@ -87,8 +84,7 @@ Then there exists a unique continuous homotopy $\widetilde{H}: Y \times [0, 1] \
 
 ::: pf-step
 
-Part (b): Proof that $p_*: \pi_1(\widetilde{X}, \widetilde{x}_0) \to \pi_1(X, x_0)$ is injective.
-    *Proof:*
+(b) The homomorphism $p_*: \pi_1(\widetilde{X}, \widetilde{x}_0) \to \pi_1(X, x_0)$ is injective.
 
 ::: pf-proof
 
@@ -107,13 +103,13 @@ Suppose $[\gamma] \in \ker p_*$, which means $p_*([\gamma]) = [p \circ \gamma] =
 ::: pf-step
 
 This means there is a basepoint-preserving homotopy of paths $H: [0, 1] \times [0, 1] \to X$ such that:
-    $$H(s, 0) = (p \circ \gamma)(s), \quad H(s, 1) = x_0, \quad H(0, t) = x_0, \quad H(1, t) = x_0 \quad \text{for all } s, t \in [0, 1].$$
+$$H(s, 0) = (p \circ \gamma)(s), \quad H(s, 1) = x_0, \quad H(0, t) = x_0, \quad H(1, t) = x_0 \quad \text{for all } s, t \in [0, 1].$$
 
 :::
 
 ::: pf-step
 
-Applying the Homotopy Lifting Property with $Y = [0, 1]$ and initial map $\gamma: [0, 1] \to \widetilde{X}$, there exists a unique continuous lift $\widetilde{H}: [0, 1] \times [0, 1] \to \widetilde{X}$ with $\widetilde{H}(s, 0) = \gamma(s)$ and $p \circ \widetilde{H} = H$.
+Applying the homotopy lifting property with $Y = [0, 1]$ and initial map $\gamma: [0, 1] \to \widetilde{X}$, there exists a unique continuous lift $\widetilde{H}: [0, 1] \times [0, 1] \to \widetilde{X}$ with $\widetilde{H}(s, 0) = \gamma(s)$ and $p \circ \widetilde{H} = H$.
 
 :::
 
@@ -153,8 +149,7 @@ Therefore $\ker p_* = \{0\}$, so $p_*$ is injective.
 
 ::: {.pf-step #s4}
 
-Part (c): Bijectivity of the covering map $p$.
-    *Proof:*
+(c) The covering map $p$ is a bijection.
 
 ::: pf-proof
 
@@ -196,13 +191,13 @@ This means the loop $p \circ \beta$ is path-homotopic to $\alpha$ in $X$ via a p
 
 ::: pf-step
 
-By the Homotopy Lifting Property, $H$ lifts to a homotopy $\widetilde{H}: [0, 1] \times [0, 1] \to \widetilde{X}$ with $\widetilde{H}(s, 0) = \widetilde{\alpha}(s)$.
+By the homotopy lifting property, $H$ lifts to a homotopy $\widetilde{H}: [0, 1] \times [0, 1] \to \widetilde{X}$ with $\widetilde{H}(s, 0) = \widetilde{\alpha}(s)$.
 
 :::
 
 ::: pf-step
 
-The lift of $p \circ \beta$ starting at $\widetilde{x}_0$ is the loop $\beta$, so $\widetilde{H}(1, 1) = \beta(1) = \widetilde{x}_0$.
+The path $t \mapsto \widetilde{H}(0, t)$ lifts the constant path at $x_0$ from $\widetilde{x}_0$, so it is constant at $\widetilde{x}_0$. Hence $s \mapsto \widetilde{H}(s, 1)$ is the lift of $p \circ \beta$ starting at $\widetilde{x}_0$, which is the loop $\beta$ by uniqueness of path lifting, so $\widetilde{H}(1, 1) = \beta(1) = \widetilde{x}_0$.
 
 :::
 
@@ -230,8 +225,7 @@ Since $X$ is path-connected and the cardinality of the fiber $p^{-1}(x)$ is loca
 
 ::: pf-step
 
-Part (c): Bijective covering map is a homeomorphism.
-    *Proof:*
+(c) The bijective covering map $p$ is a homeomorphism.
 
 ::: pf-proof
 
@@ -287,14 +281,6 @@ Therefore $p$ is an open continuous bijection, so $p$ is a homeomorphism.
 
 :::
 
-::: pf-step
-
-Conclusion:
-
 :::
 
-:::
-
-    *Proof:*
-    Covering maps induce injective homomorphisms on fundamental groups via the homotopy lifting property, and every covering map between path-connected spaces that induces an isomorphism on $\pi_1$ is a homeomorphism.
 :::
