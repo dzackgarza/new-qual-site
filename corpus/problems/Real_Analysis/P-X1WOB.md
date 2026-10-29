@@ -51,7 +51,7 @@ audit:
 ::: pf-step
 
 (a) $\sum_{n\ge 1}a_n$ converges if and only if its partial sums $s_N = \sum_{n\le N}a_n$ converge to a finite limit.
-It converges if and only if it satisfies the Cauchy criterion: for every $\eps > 0$ there is $N$ with $\abs{\sum_{n=M+1}^{K}a_n} < \eps$ for all $K > M \ge N$.
+It converges if and only if it satisfies the Cauchy criterion: for every $\varepsilon > 0$ there is $N$ with $\abs{\sum_{n=M+1}^{K}a_n} < \varepsilon$ for all $K > M \ge N$.
 
 ::: pf-proof
 
@@ -66,12 +66,12 @@ In practice the criterion is checked through the comparison, ratio, root, integr
 ::: pf-step
 
 (b) $\sum f_n$ converges uniformly on $E$ if and only if its partial sums $S_N = \sum_{n\le N}f_n$ converge uniformly on $E$ to some $S$, that is, $\sup_{x\in E}\abs{S_N(x) - S(x)} \to 0$.
-It fails to converge uniformly to its pointwise sum $S$ if and only if there are $\eps > 0$, infinitely many $N$ and points $x_N \in E$ with $\abs{S_N(x_N) - S(x_N)} \ge \eps$.
+It fails to converge uniformly to its pointwise sum $S$ if and only if there are $\varepsilon > 0$, infinitely many $N$ and points $x_N \in E$ with $\abs{S_N(x_N) - S(x_N)} \ge \varepsilon$.
 
 ::: pf-proof
 
 The first sentence is the definition.
-The second is its negation: the supremum does not tend to $0$ exactly when it is at least some $\eps > 0$ for infinitely many $N$, and a supremum at least $\eps$ is witnessed by a point at which the difference is at least $\eps/2$; replace $\eps$ by $\eps/2$.
+The second is its negation: the supremum does not tend to $0$ exactly when it is at least some $\varepsilon > 0$ for infinitely many $N$, and a supremum at least $\varepsilon$ is witnessed by a point at which the difference is at least $\varepsilon/2$; replace $\varepsilon$ by $\varepsilon/2$.
 
 :::
 
