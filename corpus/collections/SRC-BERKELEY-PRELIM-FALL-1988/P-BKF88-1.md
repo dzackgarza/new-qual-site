@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Let $R$ be a finite ring.
 Prove that there exist positive integers $m>n$ such that
-\[
+$$
 x^m=x^n
-\]
+$$
 for every $x\in R$.
 :::
 

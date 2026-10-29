@@ -33,9 +33,9 @@ Suppose that $M \cap A = K$.
 
 (b) Now suppose, for the rest of this question, that the characteristic is zero.
 If $K \subset B \subset A$ is an intermediary field and $[B : K] < \infty$ then show that
-\[
+$$
 [B : K] \leq [L : M].
-\]
+$$
 
 (c) Prove that $[A : K] \leq [L : M]$.
 :::
@@ -49,9 +49,9 @@ If $\alpha\in A$ and $f(x)\in M[x]$ is its minimal polynomial over $M$, then eve
 
 ::: pf-proof
 Let
-\[
+$$
 g(x)\in K[x]
-\]
+$$
 be the minimal polynomial of $\alpha$ over $K$.
 Since $K\subseteq M$, the polynomial $f$ divides $g$ in $M[x]$.
 Fix an algebraic closure containing a splitting field of $g$.
@@ -68,19 +68,19 @@ The minimal polynomial $f(x)$ from part (a) belongs to $K[x]$.
 
 ::: pf-proof
 By definition,
-\[
+$$
 f(x)\in M[x].
-\]
+$$
 By step [](#coeffs-algebraic-over-k){.pf-ref}, every coefficient of $f$ is algebraic over $K$.
 Since the coefficients lie in $M\subseteq L$, they therefore belong to the subfield $A$ of elements of $L$ algebraic over $K$.
 Thus every coefficient lies in
-\[
+$$
 M\cap A=K.
-\]
+$$
 Hence
-\[
+$$
 f(x)\in K[x].
-\]
+$$
 This proves part (a).
 :::
 
@@ -88,16 +88,16 @@ This proves part (a).
 
 ::: {.pf-step #primitive-element-b}
 In characteristic zero, if $K\subseteq B\subseteq A$ and $[B:K]<\infty$, then there is an element $\alpha\in B$ with
-\[
+$$
 B=K(\alpha).
-\]
+$$
 
 ::: pf-proof
 A finite extension in characteristic zero is separable.
 The primitive element theorem therefore applies to $B/K$, giving
-\[
+$$
 B=K(\alpha)
-\]
+$$
 for some $\alpha\in B$.
 :::
 
@@ -108,63 +108,63 @@ For the element $\alpha$ from step [](#primitive-element-b){.pf-ref}, its minima
 
 ::: pf-proof
 Let
-\[
+$$
 g(x)\in K[x]
-\]
+$$
 be the minimal polynomial of $\alpha$ over $K$, and let
-\[
+$$
 f(x)\in M[x]
-\]
+$$
 be the minimal polynomial over $M$.
 Since $\alpha\in B\subseteq A$, part (a), proved in step [](#part-a-f-in-k){.pf-ref}, gives
-\[
+$$
 f(x)\in K[x].
-\]
+$$
 Also $f$ divides $g$ in $M[x]$ and both are monic.
 Now $g$ is irreducible in $K[x]$, while $f\in K[x]$ is a nonconstant divisor of $g$.
 Therefore
-\[
+$$
 f=g.
-\]
+$$
 Consequently
-\[
+$$
 [M(\alpha):M]
 =\deg f
 =\deg g
 =[K(\alpha):K]
 =[B:K].
-\]
+$$
 :::
 
 :::
 
 ::: pf-step
 Every finite intermediate field $B$ as in part (b) satisfies
-\[
+$$
 [B:K]\le[L:M].
-\]
+$$
 
 ::: pf-proof
 By steps [](#primitive-element-b){.pf-ref} and [](#same-min-poly){.pf-ref},
-\[
+$$
 [B:K]=[M(\alpha):M].
-\]
+$$
 Since
-\[
+$$
 \alpha\in B\subseteq A\subseteq L,
-\]
+$$
 and $M\subseteq L$, one has
-\[
+$$
 M(\alpha)\subseteq L.
-\]
+$$
 The tower law therefore gives
-\[
+$$
 [M(\alpha):M]\le[L:M].
-\]
+$$
 Hence
-\[
+$$
 [B:K]\le[L:M].
-\]
+$$
 This proves part (b).
 :::
 
@@ -172,42 +172,42 @@ This proves part (b).
 
 ::: pf-step
 The whole algebraic extension $A/K$ satisfies
-\[
+$$
 [A:K]\le[L:M].
-\]
+$$
 
 ::: pf-proof
 Set
-\[
+$$
 d:=[L:M].
-\]
+$$
 Suppose, toward a contradiction, that
-\[
+$$
 [A:K]>d.
-\]
+$$
 Then there exist $d+1$ elements
-\[
+$$
 \alpha_1,\ldots,\alpha_{d+1}\in A
-\]
+$$
 which are linearly independent over $K$.
 Because every $\alpha_i$ is algebraic over $K$, the field
-\[
+$$
 B:=K(\alpha_1,\ldots,\alpha_{d+1})
-\]
+$$
 is a finite extension of $K$ contained in $A$.
 Its $K$-dimension is at least $d+1$, since it contains the $d+1$ linearly independent elements above.
 Thus
-\[
+$$
 [B:K]\ge d+1,
-\]
+$$
 contradicting part (b), which gives
-\[
+$$
 [B:K]\le d.
-\]
+$$
 Therefore
-\[
+$$
 [A:K]\le d=[L:M].
-\]
+$$
 This proves part (c).
 :::
 

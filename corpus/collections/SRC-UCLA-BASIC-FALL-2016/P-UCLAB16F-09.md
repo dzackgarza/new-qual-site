@@ -24,22 +24,22 @@ Show that the sequence converges uniformly if and only if the collection of func
 ::: {.solution}
 
 Let
-\[
+$$
 f(x)=\lim_{n\to\infty}f_n(x)
-\]
+$$
 for
-\[
+$$
 x\in[0,1].
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 Suppose first that
-\[
+$$
 f_n\to f
-\]
+$$
 uniformly.
 Then $f$ is continuous.
 
@@ -55,9 +55,9 @@ A uniform limit of continuous functions on a metric space is continuous.
 ::: {.pf-step #s1-2}
 
 Under uniform convergence, the family
-\[
+$$
 \{f_n:n\ge1\}
-\]
+$$
 is equicontinuous.
 
 
@@ -65,43 +65,43 @@ is equicontinuous.
 
 Fix $\varepsilon>0$.
 Choose $N$ such that
-\[
+$$
 \|f_n-f\|_\infty<\frac{\varepsilon}{3}
-\]
+$$
 for every $n\ge N$.
 
 By step [](#s1-1){.pf-ref}, $f$ is continuous on the compact interval $[0,1]$, hence uniformly continuous.
 Choose $\delta_0>0$ such that
-\[
+$$
 |x-y|<\delta_0
-\]
+$$
 implies
-\[
+$$
 |f(x)-f(y)|<\frac{\varepsilon}{3}.
-\]
+$$
 
 For each of the finitely many functions
-\[
+$$
 f_1,\ldots,f_{N-1},
-\]
+$$
 uniform continuity on $[0,1]$ gives a number $\delta_j>0$ such that
-\[
+$$
 |x-y|<\delta_j
-\]
+$$
 implies
-\[
+$$
 |f_j(x)-f_j(y)|<\varepsilon.
-\]
+$$
 Set
-\[
+$$
 \delta
 =
 \min\{\delta_0,\delta_1,\ldots,\delta_{N-1}\}.
-\]
+$$
 
 If $n<N$, the desired estimate follows from the choice of $\delta_n$.
 If $n\ge N$, then
-\[
+$$
 \begin{aligned}
 |f_n(x)-f_n(y)|
 &\le
@@ -119,7 +119,7 @@ If $n\ge N$, then
 &=
 \varepsilon.
 \end{aligned}
-\]
+$$
 Thus one $\delta$ works for every $n$, proving equicontinuity.
 
 :::
@@ -136,31 +136,31 @@ Then the pointwise limit $f$ is continuous.
 
 Fix $\varepsilon>0$.
 By equicontinuity, choose $\delta>0$ such that
-\[
+$$
 |x-y|<\delta
-\]
+$$
 implies
-\[
+$$
 |f_n(x)-f_n(y)|<\frac{\varepsilon}{3}
-\]
+$$
 for every $n$.
 
 Fix $x,y$ with
-\[
+$$
 |x-y|<\delta.
-\]
+$$
 Taking $n\to\infty$ in
-\[
+$$
 |f_n(x)-f_n(y)|<\frac{\varepsilon}{3}
-\]
+$$
 gives
-\[
+$$
 |f(x)-f(y)|
 \le
 \frac{\varepsilon}{3}
 <
 \varepsilon.
-\]
+$$
 Thus $f$ is uniformly continuous, in particular continuous.
 
 :::
@@ -171,17 +171,17 @@ Thus $f$ is uniformly continuous, in particular continuous.
 
 Fix $\varepsilon>0$.
 There exists $\delta>0$ such that
-\[
+$$
 |x-y|<\delta
-\]
+$$
 implies both
-\[
+$$
 |f_n(x)-f_n(y)|<\frac{\varepsilon}{3}
-\]
+$$
 for every $n$ and
-\[
+$$
 |f(x)-f(y)|<\frac{\varepsilon}{3}.
-\]
+$$
 
 
 ::: pf-proof
@@ -196,24 +196,24 @@ The same $\delta$ works for $f$ by the limiting argument in step [](#s1-3){.pf-r
 ::: {.pf-step #s1-5}
 
 There exist finitely many points
-\[
+$$
 x_1,\ldots,x_m\in[0,1]
-\]
+$$
 such that every $x\in[0,1]$ satisfies
-\[
+$$
 |x-x_j|<\delta
-\]
+$$
 for some $j$.
 
 
 ::: pf-proof
 
 The open intervals
-\[
+$$
 (x-\delta,x+\delta),
 \qquad
 x\in[0,1],
-\]
+$$
 form an open cover of the compact interval $[0,1]$.
 Choose a finite subcover and let its centers be $x_1,\ldots,x_m$.
 
@@ -224,22 +224,22 @@ Choose a finite subcover and let its centers be $x_1,\ldots,x_m$.
 ::: {.pf-step #s1-6}
 
 There exists $N$ such that for every $n\ge N$ and every
-\[
+$$
 j=1,\ldots,m,
-\]
+$$
 one has
-\[
+$$
 |f_n(x_j)-f(x_j)|<\frac{\varepsilon}{3}.
-\]
+$$
 
 
 ::: pf-proof
 
 For each fixed $x_j$, pointwise convergence gives an index $N_j$ such that the displayed estimate holds for $n\ge N_j$.
 Take
-\[
+$$
 N=\max_jN_j.
-\]
+$$
 
 :::
 
@@ -248,20 +248,20 @@ N=\max_jN_j.
 ::: {.pf-step #s1-7}
 
 For every $n\ge N$ and every $x\in[0,1]$,
-\[
+$$
 |f_n(x)-f(x)|<\varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
 Choose $x_j$ with
-\[
+$$
 |x-x_j|<\delta
-\]
+$$
 as in step [](#s1-5){.pf-ref}.
 Then steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref} give
-\[
+$$
 \begin{aligned}
 |f_n(x)-f(x)|
 &\le
@@ -279,7 +279,7 @@ Then steps [](#s1-4){.pf-ref} and [](#s1-6){.pf-ref} give
 &=
 \varepsilon.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -301,13 +301,13 @@ Step [](#s1-7){.pf-ref} is exactly the definition of uniform convergence.
 ::: {.pf-step #s1-9}
 
 Therefore
-\[
+$$
 \boxed{
 f_n\to f\text{ uniformly}
 \iff
 \{f_n\}\text{ is equicontinuous}
 }.
-\]
+$$
 
 
 ::: pf-proof

@@ -19,9 +19,9 @@ audit:
 ---
 ::: {.problem}
 Let $k$ be a field and let the group $G = \GL(m, k) \cross \GL(n, k)$ acts on the set of $m\times n$ matrices $M_{m, n}(k)$ as follows:
-\[
+$$
 (A, B) \cdot X = AX\inverseof{B}
-\]
+$$
 where $(A, B) \in G$ and $X\in M_{m, n}(k)$.
 
 a. State what it means for a group to act on a set.
@@ -53,10 +53,10 @@ The formula $(A,B)\cdot X=AXB^{-1}$ defines an action of $\mathrm{GL}(m,k)\times
 ::: pf-proof
 
 The identity pair acts by $I_mXI_n=X$. For two pairs $(A_1,B_1)$ and $(A_2,B_2)$, the iterated action is
-\[
+$$
 A_1(A_2XB_2^{-1})B_1^{-1}
 =(A_1A_2)X(B_1B_2)^{-1},
-\]
+$$
 which equals their product acting on $X$. Thus the axioms in step [](#s1){.pf-ref} hold.
 
 :::
@@ -78,9 +78,9 @@ Multiplication on either side by an invertible matrix preserves rank. Conversely
 ::: {.pf-step #s4}
 
 A complete set of orbit representatives is
-\[
+$$
 \boxed{S=\{D_r:0\leq r\leq\min(m,n)\}},
-\]
+$$
 where $D_r$ has ones in the first $r$ diagonal positions and zeros elsewhere.
 
 ::: pf-proof

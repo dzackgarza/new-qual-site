@@ -43,23 +43,23 @@ Fix a deformation retraction of $Y$ onto $X$.
 ::: pf-proof
 
 Since $X$ is a deformation retract of $Y$, there are a retraction
-\[
+$$
 r:Y\to X
-\]
+$$
 and a continuous homotopy
-\[
+$$
 H:Y\times[0,1]\to Y
-\]
+$$
 such that
-\[
+$$
 H(y,0)=y,
 \qquad
 H(y,1)=r(y)
-\]
+$$
 for every $y\in Y$, and
-\[
+$$
 H(x,t)=x
-\]
+$$
 for every $x\in X$ and $t\in[0,1]$.
 
 :::
@@ -74,17 +74,17 @@ Every point of $Y$ can be joined by a path in $Y$ to a point of $X$.
 
 Let $y\in Y$.
 Define
-\[
+$$
 \alpha_y:[0,1]\to Y,
 \qquad
 \alpha_y(t)=H(y,t).
-\]
+$$
 Continuity of $H$ implies that $\alpha_y$ is continuous, and step [](#s1){.pf-ref} gives
-\[
+$$
 \alpha_y(0)=y,
 \qquad
 \alpha_y(1)=r(y)\in X.
-\]
+$$
 Thus $\alpha_y$ is a path from $y$ to a point of $X$.
 
 :::
@@ -99,23 +99,23 @@ Any two points of $Y$ can be joined by a path in $Y$.
 
 Let $y_0,y_1\in Y$.
 By step [](#s2){.pf-ref} there are paths
-\[
+$$
 \alpha_0:y_0\leadsto r(y_0),
 \qquad
 \alpha_1:y_1\leadsto r(y_1).
-\]
+$$
 Since $X$ is path connected, there is a path
-\[
+$$
 \beta:[0,1]\to X
-\]
+$$
 from $r(y_0)$ to $r(y_1)$.
 Composing with the inclusion $X\hookrightarrow Y$, we may regard $\beta$ as a path in $Y$.
 
 Let $\overline{\alpha_1}(t)=\alpha_1(1-t)$ be the reverse of $\alpha_1$.
 Then the concatenation
-\[
+$$
 \alpha_0*\beta*\overline{\alpha_1}
-\]
+$$
 is a path in $Y$ from $y_0$ to $y_1$.
 
 :::

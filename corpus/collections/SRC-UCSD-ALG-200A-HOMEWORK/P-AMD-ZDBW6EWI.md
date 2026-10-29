@@ -36,9 +36,9 @@ audit:
 Let $G$ be a cyclic group of order $n$.
 
 Show that $\operatorname{Aut}(G)$ is abelian and
-\[
+$$
 |\operatorname{Aut}(G)|=\varphi(n).
-\]
+$$
 :::
 
 ::: {.solution}
@@ -48,26 +48,26 @@ Fix a generator $g$ of $G$.
 
 ::: {.pf-step #aut-iso-to-units}
 There is a group isomorphism
-\[
+$$
 (\ZZ/n\ZZ)^\times\cong\operatorname{Aut}(G).
-\]
+$$
 
 ::: pf-proof
 For an integer $a$ with $\gcd(a,n)=1$, define
-\[
+$$
 \sigma_a(x)=x^a.
-\]
+$$
 The element $g^a$ is a generator of $G$ exactly when $\gcd(a,n)=1$, so these power maps are precisely the automorphisms of $G$: an automorphism is determined by the image of $g$, and that image must be a generator.
 Moreover,
-\[
+$$
 \sigma_a=\sigma_b\iff a\equiv b\pmod n,
 \qquad
 \sigma_a\circ\sigma_b=\sigma_{ab}.
-\]
+$$
 Hence
-\[
+$$
 [a]\longmapsto\sigma_a
-\]
+$$
 is a well-defined bijective homomorphism $(\ZZ/n\ZZ)^\times\to\operatorname{Aut}(G)$.
 :::
 
@@ -88,18 +88,18 @@ The group $\operatorname{Aut}(G)$ has order $\varphi(n)$.
 
 ::: pf-proof
 The units in $\ZZ/n\ZZ$ are exactly the residue classes $[a]$ with
-\[
+$$
 \gcd(a,n)=1.
-\]
+$$
 By definition, Euler's totient $\varphi(n)$ is the number of residue classes modulo $n$ represented by integers coprime to $n$.
 Therefore
-\[
+$$
 |(\ZZ/n\ZZ)^\times|=\varphi(n).
-\]
+$$
 Using step [](#aut-iso-to-units){.pf-ref},
-\[
+$$
 |\operatorname{Aut}(G)|=\varphi(n).
-\]
+$$
 :::
 
 :::

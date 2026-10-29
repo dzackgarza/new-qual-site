@@ -23,9 +23,9 @@ audit:
 
 ::: {.problem}
 Let $U\subset\RR^p$ be open and let $f:U\to\RR^n$ be $C^1$. Suppose that for some $x_0\in U$, the derivative $Df_{x_0}$ has rank $p$. Prove that, after suitable local changes of coordinates near $x_0$ and $f(x_0)$, the map $f$ is the standard linear inclusion
-\[
+$$
 u\longmapsto (u,0)\in\RR^p\times\RR^{n-p}.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -37,9 +37,9 @@ Choose $p$ target coordinates with an invertible Jacobian minor.
 
 ::: pf-proof
 Since $Df_{x_0}$ has rank $p$, some $p\times p$ minor is invertible. After permuting the coordinates of $\RR^n$, assume it is the minor formed by the first $p$ components. Write
-\[
+$$
 F=(f_1,\ldots,f_p):U\to\RR^p.
-\]
+$$
 Then $DF_{x_0}$ is invertible.
 :::
 
@@ -50,19 +50,19 @@ Use $F$ as a coordinate system on the domain.
 
 ::: pf-proof
 By the inverse function theorem, there are neighborhoods $V$ of $x_0$ and $W$ of $F(x_0)$ such that
-\[
+$$
 F:V\to W
-\]
+$$
 is a $C^1$ diffeomorphism. Let $H=F^{-1}$.
 
 In the new domain coordinate $u=F(x)$, write
-\[
+$$
 f(H(u))=(u,\phi(u)),
-\]
+$$
 where
-\[
+$$
 \phi(u)=\bigl(f_{p+1}(H(u)),\ldots,f_n(H(u))\bigr).
-\]
+$$
 :::
 
 :::
@@ -72,23 +72,23 @@ Straighten the graph in the target.
 
 ::: pf-proof
 Near $(F(x_0),\phi(F(x_0)))=f(x_0)$ define
-\[
+$$
 \Psi(u,v)=(u,v-\phi(u)),
 \qquad
 (u,v)\in\RR^p\times\RR^{n-p}.
-\]
+$$
 Its derivative has block form
-\[
+$$
 D\Psi=
 \begin{pmatrix}
 I_p&0\\
 -D\phi&I_{n-p}
 \end{pmatrix},
-\]
+$$
 which is invertible everywhere. In fact the inverse is explicitly
-\[
+$$
 \Psi^{-1}(u,w)=(u,w+\phi(u)).
-\]
+$$
 Thus $\Psi$ is a local $C^1$ change of target coordinates.
 :::
 
@@ -99,15 +99,15 @@ Compute the map in the new coordinates.
 
 ::: pf-proof
 For $u\in W$,
-\[
+$$
 \Psi(f(H(u)))
 =\Psi(u,\phi(u))
 =(u,0).
-\]
+$$
 Hence, after the domain coordinate change $x\mapsto F(x)$ and the target coordinate change $\Psi$, the map $f$ is exactly the standard linear inclusion
-\[
+$$
 u\mapsto(u,0).
-\]
+$$
 :::
 
 :::

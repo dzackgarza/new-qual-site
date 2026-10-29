@@ -45,24 +45,24 @@ Evaluate the first limit.
 
 ::: pf-proof
 
-For \(n\ge1\),
-\[
+For $n\ge1$,
+$$
 \frac{\min(nx,1)}x=
 \begin{cases}
 n,&0<x\le 1/n,\\
 1/x,&1/n<x\le1.
 \end{cases}
-\]
+$$
 Hence
-\[
+$$
 \int_0^1\frac{\min(nx,1)}x\,dx
 =\int_0^{1/n}n\,dx+\int_{1/n}^1\frac{dx}{x}
 =1+\log n.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{L=+\infty.}
-\]
+$$
 
 :::
 
@@ -74,21 +74,21 @@ Evaluate the oscillatory integral.
 
 ::: pf-proof
 
-Let \(u(x)=x^{-3/2}\). Then \(u'(x)=-\frac32x^{-5/2}\in L^1([1,\infty))\). Integration by parts gives, for \(R>1\),
-\[
+Let $u(x)=x^{-3/2}$. Then $u'(x)=-\frac32x^{-5/2}\in L^1([1,\infty))$. Integration by parts gives, for $R>1$,
+$$
 \int_1^R u(x)e^{inx}\,dx
 =\left[\frac{u(x)e^{inx}}{in}\right]_1^R
 -\frac1{in}\int_1^R u'(x)e^{inx}\,dx.
-\]
-Letting \(R\to\infty\), since \(u(R)\to0\),
-\[
+$$
+Letting $R\to\infty$, since $u(R)\to0$,
+$$
 \left|\int_1^\infty x^{-3/2}e^{inx}\,dx\right|
 \le \frac1n\left(1+\int_1^\infty|u'(x)|\,dx\right).
-\]
-The right side tends to \(0\). Thus
-\[
+$$
+The right side tends to $0$. Thus
+$$
 \boxed{L=0.}
-\]
+$$
 
 :::
 
@@ -100,23 +100,23 @@ Evaluate the third integral exactly.
 
 ::: pf-proof
 
-Put \(u=n^2x^2\). Then \(du=2n^2x\,dx\), so
-\[
+Put $u=n^2x^2$. Then $du=2n^2x\,dx$, so
+$$
 \begin{aligned}
 \int_0^\infty e^{-n^2x^2}\cos(e^{-n^2x^2})n^2x\,dx
 &=\frac12\int_0^\infty e^{-u}\cos(e^{-u})\,du.
 \end{aligned}
-\]
-Now set \(y=e^{-u}\). Since \(du=-dy/y\),
-\[
+$$
+Now set $y=e^{-u}$. Since $du=-dy/y$,
+$$
 \frac12\int_0^\infty e^{-u}\cos(e^{-u})\,du
 =\frac12\int_0^1\cos y\,dy
 =\frac12\sin1.
-\]
-The expression is independent of \(n\), hence
-\[
+$$
+The expression is independent of $n$, hence
+$$
 \boxed{L=\frac12\sin1.}
-\]
+$$
 
 :::
 

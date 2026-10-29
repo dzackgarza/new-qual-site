@@ -42,26 +42,26 @@ Factor the kernel by a pointwise estimate.
 ::: pf-proof
 
 For $x,y\ge1$,
-\[
+$$
 (x-1)(y-1)\ge0,
-\]
+$$
 so
-\[
+$$
 xy\ge x+y-1.
-\]
+$$
 Therefore
-\[
+$$
 e^{-xy}\le e^{-(x+y-1)}=e\,e^{-x}e^{-y}.
-\]
+$$
 Since $f,g\ge0$,
-\[
+$$
 \begin{aligned}
 \int_{[1,\infty)^2}e^{-xy}f(x)g(y)\,dx\,dy
 &\le e
 \left(\int_1^\infty e^{-x}f(x)\,dx\right)
 \left(\int_1^\infty e^{-y}g(y)\,dy\right).
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -74,25 +74,25 @@ Apply Cauchy--Schwarz in each variable.
 ::: pf-proof
 
 Cauchy--Schwarz gives
-\[
+$$
 \int_1^\infty e^{-x}f(x)\,dx
 \le
 \left(\int_1^\infty e^{-2x}\,dx\right)^{1/2}\|f\|_2
 =\frac{e^{-1}}{\sqrt2}\|f\|_2.
-\]
+$$
 Similarly,
-\[
+$$
 \int_1^\infty e^{-y}g(y)\,dy
 \le \frac{e^{-1}}{\sqrt2}\|g\|_2.
-\]
+$$
 Combining these estimates yields
-\[
+$$
 \begin{aligned}
 \left|\int_{[1,\infty)^2}e^{-xy}f(x)g(y)\,dx\,dy\right|
 &\le e\left(\frac{e^{-1}}{\sqrt2}\right)^2\|f\|_2\|g\|_2\\
 &=\boxed{\frac1{2e}\|f\|_2\|g\|_2}.
 \end{aligned}
-\]
+$$
 This is the required inequality.
 
 :::

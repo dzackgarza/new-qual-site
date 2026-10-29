@@ -42,9 +42,9 @@ Let $p$ be a positive prime number, $\FF_p$ the field with $p$ elements, and let
 ::: {.pf-step #s1}
 
 The order of $G=\operatorname{GL}_2(\FF_p)$ is
-\[
+$$
 |G|=(p^2-1)(p^2-p)=p(p-1)^2(p+1).
-\]
+$$
 
 ::: pf-proof
 
@@ -58,23 +58,23 @@ Once it is chosen, the second column may be any vector not in its one-dimensiona
 ::: {.pf-step #s2}
 
 The map
-\[
+$$
 \varphi:\ZZ/p\ZZ\longrightarrow U,
 \qquad
 \bar a\longmapsto
 \begin{pmatrix}1&a\\0&1\end{pmatrix}
-\]
+$$
 is an isomorphism of groups.
 
 ::: pf-proof
 
 Matrix multiplication gives
-\[
+$$
 \begin{pmatrix}1&a\\0&1\end{pmatrix}
 \begin{pmatrix}1&b\\0&1\end{pmatrix}
 =
 \begin{pmatrix}1&a+b\\0&1\end{pmatrix},
-\]
+$$
 so $\varphi$ is a homomorphism from the additive group of $\FF_p$. It is visibly bijective.
 
 :::
@@ -88,9 +88,9 @@ The subgroup $U$ is a Sylow $p$-subgroup of $G$.
 ::: pf-proof
 
 By step [](#s2){.pf-ref}, $|U|=p$. From step [](#s1){.pf-ref},
-\[
+$$
 |G|=p(p-1)^2(p+1),
-\]
+$$
 and neither $p-1$ nor $p+1$ is divisible by $p$. Hence the highest power of $p$ dividing $|G|$ is $p$ itself.
 
 :::
@@ -100,38 +100,38 @@ and neither $p-1$ nor $p+1$ is divisible by $p$. Hence the highest power of $p$ 
 ::: {.pf-step #s4}
 
 The normalizer of $U$ is the subgroup
-\[
+$$
 N_G(U)=
 \left\{
 \begin{pmatrix}a&b\\0&d\end{pmatrix}:
  a,d\in\FF_p^\times,\ b\in\FF_p
 \right\}.
-\]
+$$
 
 ::: pf-proof
 
 Every nonidentity element of $U$ has the form
-\[
+$$
 u_t=\begin{pmatrix}1&t\\0&1\end{pmatrix},\qquad t\ne0,
-\]
+$$
 and its fixed-point space is exactly the line
-\[
+$$
 L=\FF_p e_1.
-\]
+$$
 If $gUg^{-1}=U$, then for nontrivial $u\in U$, the fixed line of $gug^{-1}$ is $gL$.
 But every nontrivial element of $U$ has fixed line $L$, so $gL=L$.
 Thus $g$ is upper triangular.
 
 Conversely, if
-\[
+$$
 g=\begin{pmatrix}a&b\\0&d\end{pmatrix}
-\]
+$$
 with $a,d\ne0$, then a direct calculation gives
-\[
+$$
 g\begin{pmatrix}1&t\\0&1\end{pmatrix}g^{-1}
 =
 \begin{pmatrix}1&(a/d)t\\0&1\end{pmatrix}\in U.
-\]
+$$
 Hence every invertible upper-triangular matrix normalizes $U$.
 
 :::
@@ -145,19 +145,19 @@ There are exactly $p+1$ subgroups of order $p$ in $G$.
 ::: pf-proof
 
 By step [](#s3){.pf-ref}, the subgroups of order $p$ are exactly the Sylow $p$-subgroups, and all Sylow $p$-subgroups are conjugate. Therefore their number is
-\[
+$$
 [G:N_G(U)].
-\]
+$$
 By step [](#s4){.pf-ref},
-\[
+$$
 |N_G(U)|=p(p-1)^2,
-\]
+$$
 so
-\[
+$$
 [G:N_G(U)]
 =\frac{p(p-1)^2(p+1)}{p(p-1)^2}
 =p+1.
-\]
+$$
 
 :::
 

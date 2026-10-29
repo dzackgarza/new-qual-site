@@ -36,18 +36,18 @@ Prove that $K/F$ is normal if and only if $\operatorname{Gal}(E/K)$ is a normal 
 ::: {.pf-step #s1}
 
 Put
-\[
+$$
 G=\operatorname{Gal}(E/F),\qquad H=\operatorname{Gal}(E/K).
-\]
-Then for every \(\sigma\in G\),
-\[
+$$
+Then for every $\sigma\in G$,
+$$
 \sigma H\sigma^{-1}=\operatorname{Gal}(E/\sigma(K)).
-\]
+$$
 
 ::: pf-proof
 
-An element \(\tau\in G\) lies in \(\sigma H\sigma^{-1}\) exactly when \(\sigma^{-1}\tau\sigma\) fixes \(K\) pointwise.
-This is equivalent to \(\tau\) fixing \(\sigma(K)\) pointwise, which is precisely \(\tau\in\operatorname{Gal}(E/\sigma(K))\).
+An element $\tau\in G$ lies in $\sigma H\sigma^{-1}$ exactly when $\sigma^{-1}\tau\sigma$ fixes $K$ pointwise.
+This is equivalent to $\tau$ fixing $\sigma(K)$ pointwise, which is precisely $\tau\in\operatorname{Gal}(E/\sigma(K))$.
 
 :::
 
@@ -55,20 +55,20 @@ This is equivalent to \(\tau\) fixing \(\sigma(K)\) pointwise, which is precisel
 
 ::: {.pf-step #s2}
 
-Suppose first that \(K/F\) is normal.
-Then \(H\trianglelefteq G\).
+Suppose first that $K/F$ is normal.
+Then $H\trianglelefteq G$.
 
 ::: pf-proof
 
-Fix \(\sigma\in G\). The restriction \(\sigma|_K:K\to E\) is an \(F\)-embedding.
-Because \(K/F\) is finite and normal, every \(F\)-embedding of \(K\) into an algebraic closure has image \(K\). Hence \(\sigma(K)=K\). By step [](#s1){.pf-ref},
-\[
+Fix $\sigma\in G$. The restriction $\sigma|_K:K\to E$ is an $F$-embedding.
+Because $K/F$ is finite and normal, every $F$-embedding of $K$ into an algebraic closure has image $K$. Hence $\sigma(K)=K$. By step [](#s1){.pf-ref},
+$$
 \sigma H\sigma^{-1}
 =\operatorname{Gal}(E/\sigma(K))
 =\operatorname{Gal}(E/K)
 =H.
-\]
-Since this holds for every \(\sigma\in G\), the subgroup \(H\) is normal in \(G\).
+$$
+Since this holds for every $\sigma\in G$, the subgroup $H$ is normal in $G$.
 
 :::
 
@@ -76,18 +76,18 @@ Since this holds for every \(\sigma\in G\), the subgroup \(H\) is normal in \(G\
 
 ::: {.pf-step #s3}
 
-Conversely, suppose \(H\trianglelefteq G\). Then \(\sigma(K)=K\) for every \(\sigma\in G\).
+Conversely, suppose $H\trianglelefteq G$. Then $\sigma(K)=K$ for every $\sigma\in G$.
 
 ::: pf-proof
 
-By the fundamental theorem of Galois theory, \(K=E^H\). For \(\sigma\in G\), one has
-\[
+By the fundamental theorem of Galois theory, $K=E^H$. For $\sigma\in G$, one has
+$$
 \sigma(K)=\sigma(E^H)=E^{\sigma H\sigma^{-1}}.
-\]
-Since \(H\trianglelefteq G\), \(\sigma H\sigma^{-1}=H\), and therefore
-\[
+$$
+Since $H\trianglelefteq G$, $\sigma H\sigma^{-1}=H$, and therefore
+$$
 \sigma(K)=E^H=K.
-\]
+$$
 
 :::
 
@@ -95,20 +95,20 @@ Since \(H\trianglelefteq G\), \(\sigma H\sigma^{-1}=H\), and therefore
 
 ::: {.pf-step #s4}
 
-Under the hypothesis of step [](#s3){.pf-ref}, the extension \(K/F\) is normal.
+Under the hypothesis of step [](#s3){.pf-ref}, the extension $K/F$ is normal.
 
 ::: pf-proof
 
-Let \(\iota:K\hookrightarrow\overline F\) be any \(F\)-embedding into an algebraic closure.
-Because \(E/K\) is algebraic, the embedding-extension theorem extends \(\iota\) to an \(F\)-embedding
-\[
+Let $\iota:K\hookrightarrow\overline F$ be any $F$-embedding into an algebraic closure.
+Because $E/K$ is algebraic, the embedding-extension theorem extends $\iota$ to an $F$-embedding
+$$
 \widetilde\iota:E\hookrightarrow\overline F.
-\]
-The extension \(E/F\) is finite Galois, hence normal, so every \(F\)-embedding of \(E\) into \(\overline F\) has image \(E\). Thus \(\widetilde\iota\) is an element of \(G=\operatorname{Gal}(E/F)\). By step [](#s3){.pf-ref},
-\[
+$$
+The extension $E/F$ is finite Galois, hence normal, so every $F$-embedding of $E$ into $\overline F$ has image $E$. Thus $\widetilde\iota$ is an element of $G=\operatorname{Gal}(E/F)$. By step [](#s3){.pf-ref},
+$$
 \iota(K)=\widetilde\iota(K)=K.
-\]
-Therefore every \(F\)-embedding of \(K\) into \(\overline F\) preserves \(K\), which is the normality criterion for the finite extension \(K/F\).
+$$
+Therefore every $F$-embedding of $K$ into $\overline F$ preserves $K$, which is the normality criterion for the finite extension $K/F$.
 
 :::
 
@@ -117,11 +117,11 @@ Therefore every \(F\)-embedding of \(K\) into \(\overline F\) preserves \(K\), w
 ::: {.pf-step #s5}
 
 Hence
-\[
+$$
 \boxed{K/F\text{ is normal}
 \quad\Longleftrightarrow\quad
 \operatorname{Gal}(E/K)\trianglelefteq\operatorname{Gal}(E/F)}.
-\]
+$$
 
 ::: pf-proof
 

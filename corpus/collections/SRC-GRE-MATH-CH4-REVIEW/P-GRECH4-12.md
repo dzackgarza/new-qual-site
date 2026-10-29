@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Find the general solution of the differential equation:
 
-\[
+$$
 \frac{dy}{dx} = \frac{x + y}{x}
-\]
+$$
 
 (A) $e^{y/x} = cx$
 (B) $e^{y/x} = cy$

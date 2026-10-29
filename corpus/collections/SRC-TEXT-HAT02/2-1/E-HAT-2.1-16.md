@@ -39,21 +39,21 @@ Use the long exact sequence of the pair $(X,A)$.
 ::: pf-step
 
 One has
-\[
+$$
 \boxed{H_0(X,A)=0
 \iff A\text{ meets every path-component of }X.}
-\]
+$$
 
 ::: pf-proof
 
 The tail of the long exact sequence is
-\[
+$$
 H_0(A)\xrightarrow{i_*}H_0(X)\to H_0(X,A)\to0.
-\]
+$$
 Thus $H_0(X,A)=0$ iff
-\[
+$$
 i_*:H_0(A)\to H_0(X)
-\]
+$$
 is surjective.
 
 The group $H_0(X)$ is free on the path-components of $X$, and a component of $A$ maps to the generator of the component of $X$ containing it. Hence $i_*$ is surjective exactly when every component of $X$ contains a point, equivalently a component, of $A$.
@@ -65,26 +65,26 @@ The group $H_0(X)$ is free on the path-components of $X$, and a component of $A$
 ::: {.pf-step #s2}
 
 One has
-\[
+$$
 H_1(X,A)=0
-\]
+$$
 if and only if
-\[
+$$
 H_1(A)\to H_1(X)
-\]
+$$
 is surjective and
-\[
+$$
 H_0(A)\to H_0(X)
-\]
+$$
 is injective.
 
 ::: pf-proof
 
 Use the exact segment
-\[
+$$
 H_1(A)\to H_1(X)\to H_1(X,A)
 \to H_0(A)\to H_0(X)
-\]
+$$
 and apply the five-term criterion proved in Exercise 15.
 
 :::
@@ -94,9 +94,9 @@ and apply the five-term criterion proved in Exercise 15.
 ::: {.pf-step #s3}
 
 The map
-\[
+$$
 H_0(A)\to H_0(X)
-\]
+$$
 is injective if and only if each path-component of $X$ contains at most one path-component of $A$.
 
 ::: pf-proof
@@ -110,9 +110,9 @@ Again use the component bases. Two distinct component generators of $H_0(A)$ hav
 ::: pf-step
 
 Hence
-\[
+$$
 \boxed{H_1(X,A)=0}
-\]
+$$
 if and only if $H_1(A)\to H_1(X)$ is surjective and every path-component of $X$ contains at most one path-component of $A$.
 
 ::: pf-proof

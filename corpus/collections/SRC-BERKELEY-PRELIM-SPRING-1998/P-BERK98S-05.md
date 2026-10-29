@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Let $A$ be the ring of real $2\times2$ matrices of the form
-\[
+$$
 \begin{pmatrix}a&b\\0&c\end{pmatrix}.
-\]
+$$
 Determine all two-sided ideals of $A$.
 :::
 

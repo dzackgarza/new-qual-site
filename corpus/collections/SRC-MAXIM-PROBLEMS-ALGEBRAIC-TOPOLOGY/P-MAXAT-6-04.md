@@ -33,13 +33,13 @@ If $\RP^n$ is parallelizable, then its double cover $S^n$ is parallelizable.
 ::: pf-proof
 
 Let
-\[
+$$
 p:S^n\to\RP^n
-\]
+$$
 be the antipodal covering. Since $p$ is a local diffeomorphism,
-\[
+$$
 TS^n\cong p^*T\RP^n.
-\]
+$$
 The pullback of a trivial bundle is trivial, so parallelizability of $T\RP^n$ implies parallelizability of $TS^n$.
 
 :::
@@ -49,19 +49,19 @@ The pullback of a trivial bundle is trivial, so parallelizability of $T\RP^n$ im
 ::: {.pf-step #s1-2}
 
 By the theorem on parallelizable spheres,
-\[
+$$
 S^n\text{ parallelizable}
 \quad\Longrightarrow\quad
 n\in\{1,3,7\}.
-\]
+$$
 
 
 ::: pf-proof
 
 If $S^n$ is parallelizable, it has $n$ pointwise linearly independent tangent vector fields. Together with the radial vector field in $\RR^{n+1}$ these determine a nonsingular bilinear multiplication after the standard clutching construction, equivalently an element of Hopf invariant one. Adams's Hopf invariant one theorem says such an element exists only in dimensions
-\[
+$$
 n=1,3,7
-\]
+$$
 for positive-dimensional spheres. This is the classical theorem that the only parallelizable spheres are $S^0,S^1,S^3,S^7$.
 
 :::
@@ -71,9 +71,9 @@ for positive-dimensional spheres. This is the classical theorem that the only pa
 ::: {.pf-step #s1-3}
 
 Therefore, if $\RP^n$ is parallelizable and $n>0$, then
-\[
+$$
 n\in\{1,3,7\}.
-\]
+$$
 
 
 ::: pf-proof
@@ -92,18 +92,18 @@ The spaces $\RP^1$, $\RP^3$, and $\RP^7$ are in fact parallelizable.
 ::: pf-proof
 
 Use the normed real division algebras
-\[
+$$
 \CC,\qquad\quaternions,\qquad\octonions
-\]
+$$
 of real dimensions $2,4,8$. Their unit spheres are respectively
-\[
+$$
 S^1,S^3,S^7.
-\]
+$$
 Fix an orthonormal basis $1,e_1,\ldots,e_n$ of imaginary units. On the unit sphere, the vector fields
-\[
+$$
 V_i(x)=e_i x,
 \qquad i=1,\ldots,n,
-\]
+$$
 are tangent and pointwise linearly independent because multiplication by a nonzero element is an invertible linear map and $\langle e_ix,x\rangle=0$ by norm multiplicativity.
 
 :::
@@ -113,22 +113,22 @@ are tangent and pointwise linearly independent because multiplication by a nonze
 ::: {.pf-step #s1-5}
 
 These framings descend through the antipodal quotient
-\[
+$$
 S^n\to\RP^n
-\]
+$$
 for $n=1,3,7$.
 
 
 ::: pf-proof
 
 Bilinearity gives
-\[
+$$
 V_i(-x)=e_i(-x)=-e_ix=-V_i(x).
-\]
+$$
 The derivative of the antipodal map is also $-I$, so
-\[
+$$
 d(-I)_x(V_i(x))=V_i(-x).
-\]
+$$
 Thus each vector field is equivariant for the deck transformation and descends to a tangent vector field on projective space. Pointwise linear independence is preserved under the covering map, giving a global frame downstairs.
 
 :::
@@ -138,9 +138,9 @@ Thus each vector field is equivariant for the deck transformation and descends t
 ::: {.pf-step #s1-6}
 
 Hence
-\[
+$$
 \RP^1,\quad\RP^3,\quad\RP^7
-\]
+$$
 are parallelizable.
 
 
@@ -155,11 +155,11 @@ Step [](#s1-4){.pf-ref} constructs global frames upstairs and step [](#s1-5){.pf
 ::: {.pf-step #s1-7}
 
 Therefore
-\[
+$$
 \boxed{
 \RP^n\text{ is parallelizable for }n>0
 \iff n=1,3,7.}
-\]
+$$
 
 
 ::: pf-proof

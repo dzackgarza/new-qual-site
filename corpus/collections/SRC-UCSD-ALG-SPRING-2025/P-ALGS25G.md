@@ -44,11 +44,11 @@ Prove that $F_1$ is algebraically closed.
 
 ::: pf-step
 
-Let \(K/F_0\) be finite Galois, set
-\[
+Let $K/F_0$ be finite Galois, set
+$$
 G=\operatorname{Gal}(K/F_0),
-\]
-and let \(P\) be a Sylow \(p\)-subgroup of \(G\).
+$$
+and let $P$ be a Sylow $p$-subgroup of $G$.
 
 ::: pf-proof
 
@@ -60,19 +60,19 @@ This is the setup suggested by the hint.
 
 ::: {.pf-step #s2}
 
-Let \(L=K^P\) be the fixed field of \(P\). Then
-\[
+Let $L=K^P$ be the fixed field of $P$. Then
+$$
 [L:F_0]=[G:P].
-\]
+$$
 
 ::: pf-proof
 
 By the fundamental theorem of Galois theory,
-\[
+$$
 [K:L]=|P|,
 \qquad
 [K:F_0]=|G|.
-\]
+$$
 The tower law gives the displayed equality.
 
 :::
@@ -81,11 +81,11 @@ The tower law gives the displayed equality.
 
 ::: {.pf-step #s3}
 
-The integer \([G:P]\) is not divisible by \(p\).
+The integer $[G:P]$ is not divisible by $p$.
 
 ::: pf-proof
 
-This is the defining property of a Sylow \(p\)-subgroup.
+This is the defining property of a Sylow $p$-subgroup.
 
 :::
 
@@ -93,15 +93,15 @@ This is the defining property of a Sylow \(p\)-subgroup.
 
 ::: {.pf-step #s4}
 
-One must have \(L=F_0\).
+One must have $L=F_0$.
 
 ::: pf-proof
 
-If \(L\ne F_0\), then the defining property of \(F_0\) would imply
-\[
+If $L\ne F_0$, then the defining property of $F_0$ would imply
+$$
 p\mid[L:F_0].
-\]
-By step [](#s2){.pf-ref} this would mean \(p\mid[G:P]\), contradicting step [](#s3){.pf-ref}.
+$$
+By step [](#s2){.pf-ref} this would mean $p\mid[G:P]$, contradicting step [](#s3){.pf-ref}.
 
 :::
 
@@ -109,11 +109,11 @@ By step [](#s2){.pf-ref} this would mean \(p\mid[G:P]\), contradicting step [](#
 
 ::: pf-step
 
-Therefore \(P=G\), so \(G\) is a \(p\)-group.
+Therefore $P=G$, so $G$ is a $p$-group.
 
 ::: pf-proof
 
-By step [](#s4){.pf-ref}, the fixed field of \(P\) is \(F_0\). Under the Galois correspondence, the subgroup fixing \(F_0\) is all of \(G\). Hence \(P=G\).
+By step [](#s4){.pf-ref}, the fixed field of $P$ is $F_0$. Under the Galois correspondence, the subgroup fixing $F_0$ is all of $G$. Hence $P=G$.
 
 **(b).**
 
@@ -123,11 +123,11 @@ By step [](#s4){.pf-ref}, the fixed field of \(P\) is \(F_0\). Under the Galois 
 
 ::: {.pf-step #s6}
 
-Suppose for contradiction that \(F_1\) is not algebraically closed. Then there exists a finite proper extension \(L/F_1\).
+Suppose for contradiction that $F_1$ is not algebraically closed. Then there exists a finite proper extension $L/F_1$.
 
 ::: pf-proof
 
-If \(F_1\) is not algebraically closed, choose an element \(\alpha\) algebraic over \(F_1\) but not in \(F_1\). Then \(L=F_1(\alpha)\) is finite and proper over \(F_1\).
+If $F_1$ is not algebraically closed, choose an element $\alpha$ algebraic over $F_1$ but not in $F_1$. Then $L=F_1(\alpha)$ is finite and proper over $F_1$.
 
 :::
 
@@ -135,11 +135,11 @@ If \(F_1\) is not algebraically closed, choose an element \(\alpha\) algebraic o
 
 ::: pf-step
 
-Let \(K/F_0\) be a finite Galois extension containing \(L\).
+Let $K/F_0$ be a finite Galois extension containing $L$.
 
 ::: pf-proof
 
-The extension \(L/F_0\) is finite because both \([L:F_1]\) and \([F_1:F_0]=p\) are finite. Since \(F_0\) has characteristic zero, \(L/F_0\) is separable. Its normal closure \(K\) is therefore a finite Galois extension of \(F_0\).
+The extension $L/F_0$ is finite because both $[L:F_1]$ and $[F_1:F_0]=p$ are finite. Since $F_0$ has characteristic zero, $L/F_0$ is separable. Its normal closure $K$ is therefore a finite Galois extension of $F_0$.
 
 :::
 
@@ -148,14 +148,14 @@ The extension \(L/F_0\) is finite because both \([L:F_1]\) and \([F_1:F_0]=p\) a
 ::: pf-step
 
 The group
-\[
+$$
 G=\operatorname{Gal}(K/F_0)
-\]
-is a \(p\)-group.
+$$
+is a $p$-group.
 
 ::: pf-proof
 
-Apply part (a) to the finite Galois extension \(K/F_0\).
+Apply part (a) to the finite Galois extension $K/F_0$.
 
 :::
 
@@ -164,18 +164,18 @@ Apply part (a) to the finite Galois extension \(K/F_0\).
 ::: pf-step
 
 Let
-\[
+$$
 H=\operatorname{Gal}(K/F_1).
-\]
-Then \([G:H]=p\), and \(H\ne1\).
+$$
+Then $[G:H]=p$, and $H\ne1$.
 
 ::: pf-proof
 
-By the Galois correspondence and \([F_1:F_0]=p\),
-\[
+By the Galois correspondence and $[F_1:F_0]=p$,
+$$
 [G:H]=[F_1:F_0]=p.
-\]
-Also \(K\supseteq L\supsetneq F_1\), so \([K:F_1]>1\), hence \(|H|>1\).
+$$
+Also $K\supseteq L\supsetneq F_1$, so $[K:F_1]>1$, hence $|H|>1$.
 
 :::
 
@@ -183,11 +183,11 @@ Also \(K\supseteq L\supsetneq F_1\), so \([K:F_1]>1\), hence \(|H|>1\).
 
 ::: pf-step
 
-The nontrivial finite \(p\)-group \(H\) has a subgroup \(H'\) of index \(p\).
+The nontrivial finite $p$-group $H$ has a subgroup $H'$ of index $p$.
 
 ::: pf-proof
 
-Every finite \(p\)-group has a maximal proper subgroup, and the quotient by such a subgroup is a nontrivial finite simple \(p\)-group, hence cyclic of order \(p\). Equivalently, one may take any subgroup of order \(|H|/p\), which exists by the standard subgroup structure of finite \(p\)-groups.
+Every finite $p$-group has a maximal proper subgroup, and the quotient by such a subgroup is a nontrivial finite simple $p$-group, hence cyclic of order $p$. Equivalently, one may take any subgroup of order $|H|/p$, which exists by the standard subgroup structure of finite $p$-groups.
 
 :::
 
@@ -195,17 +195,17 @@ Every finite \(p\)-group has a maximal proper subgroup, and the quotient by such
 
 ::: {.pf-step #s11}
 
-Let \(F_2=K^{H'}\). Then
-\[
+Let $F_2=K^{H'}$. Then
+$$
 [F_2:F_1]=p.
-\]
+$$
 
 ::: pf-proof
 
-Because \(H'\le H\), the fixed fields satisfy \(F_1=K^H\subseteq K^{H'}=F_2\). The Galois correspondence gives
-\[
+Because $H'\le H$, the fixed fields satisfy $F_1=K^H\subseteq K^{H'}=F_2$. The Galois correspondence gives
+$$
 [F_2:F_1]=[H:H']=p.
-\]
+$$
 
 :::
 
@@ -213,11 +213,11 @@ Because \(H'\le H\), the fixed fields satisfy \(F_1=K^H\subseteq K^{H'}=F_2\). T
 
 ::: pf-step
 
-This contradicts the hypothesis that \(F_1\) has no extension of degree \(p\). Therefore \(F_1\) is algebraically closed.
+This contradicts the hypothesis that $F_1$ has no extension of degree $p$. Therefore $F_1$ is algebraically closed.
 
 ::: pf-proof
 
-The field \(F_2\) in step [](#s11){.pf-ref} is a degree-\(p\) extension of \(F_1\), forbidden by hypothesis. Hence the assumption in step [](#s6){.pf-ref} was false. Thus \(F_1\) has no proper finite algebraic extension. Any algebraic element over \(F_1\) would generate such a finite extension, so every algebraic element already lies in \(F_1\); equivalently, \(F_1\) is algebraically closed.
+The field $F_2$ in step [](#s11){.pf-ref} is a degree-$p$ extension of $F_1$, forbidden by hypothesis. Hence the assumption in step [](#s6){.pf-ref} was false. Thus $F_1$ has no proper finite algebraic extension. Any algebraic element over $F_1$ would generate such a finite extension, so every algebraic element already lies in $F_1$; equivalently, $F_1$ is algebraically closed.
 
 :::
 

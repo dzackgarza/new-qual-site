@@ -34,9 +34,9 @@ Let $S=\xi_1+\xi_2$.
 ::: {.pf-step #s1-1}
 
 If $\xi_i\sim N(a_i,\sigma_i^2)$, then its characteristic function is
-\[
+$$
 \varphi_i(t)=\exp\left(ia_it-\frac12\sigma_i^2t^2\right).
-\]
+$$
 
 
 ::: pf-proof
@@ -50,20 +50,20 @@ This is obtained by completing the square in the Fourier transform of the normal
 ::: {.pf-step #s1-2}
 
 Independence gives
-\[
+$$
 \varphi_S(t)=\varphi_1(t)\varphi_2(t)
 =\exp\left(i(a_1+a_2)t
 -\frac12(\sigma_1^2+\sigma_2^2)t^2\right).
-\]
+$$
 
 
 ::: pf-proof
 
 Since $\xi_1$ and $\xi_2$ are independent,
-\[
+$$
 \mathbf E e^{it(\xi_1+\xi_2)}
 =\mathbf E e^{it\xi_1}\,\mathbf E e^{it\xi_2}.
-\]
+$$
 Substitute step [](#s1-1){.pf-ref} and combine exponents.
 
 :::
@@ -73,10 +73,10 @@ Substitute step [](#s1-1){.pf-ref} and combine exponents.
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{\xi_1+\xi_2\sim
 N(a_1+a_2,\sigma_1^2+\sigma_2^2)}.
-\]
+$$
 
 
 ::: pf-proof
@@ -90,11 +90,11 @@ The characteristic function in step [](#s1-2){.pf-ref} is exactly that of the di
 ::: {.pf-step #s1-4}
 
 If instead $\xi_i\sim\operatorname{Poisson}(\lambda_i)$, then for every integer $n\geq0$,
-\[
+$$
 P(S=n)=\sum_{k=0}^{n}
 e^{-\lambda_1}\frac{\lambda_1^k}{k!}
 e^{-\lambda_2}\frac{\lambda_2^{n-k}}{(n-k)!}.
-\]
+$$
 
 
 ::: pf-proof
@@ -108,24 +108,24 @@ The disjoint possibilities for $S=n$ are $\xi_1=k$ and $\xi_2=n-k$ for $k=0,\ldo
 ::: {.pf-step #s1-5}
 
 The sum in step [](#s1-4){.pf-ref} simplifies to
-\[
+$$
 P(S=n)=e^{-(\lambda_1+\lambda_2)}
 \frac{(\lambda_1+\lambda_2)^n}{n!}.
-\]
+$$
 
 
 ::: pf-proof
 
 Factor out $e^{-(\lambda_1+\lambda_2)}/n!$ and use
-\[
+$$
 \frac{n!}{k!(n-k)!}=\binom nk.
-\]
+$$
 The remaining sum is
-\[
+$$
 \sum_{k=0}^{n}\binom nk
 \lambda_1^k\lambda_2^{n-k}
 =(\lambda_1+\lambda_2)^n
-\]
+$$
 by the binomial theorem.
 
 :::
@@ -135,10 +135,10 @@ by the binomial theorem.
 ::: {.pf-step #s1-6}
 
 Hence
-\[
+$$
 \boxed{\xi_1+\xi_2\sim
 \operatorname{Poisson}(\lambda_1+\lambda_2)}.
-\]
+$$
 
 
 ::: pf-proof

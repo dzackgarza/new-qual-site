@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Let $R$ be a subring of a commutative ring $S$, and suppose the additive index $[S:R]$ is finite and equal to $n$. Let $m$ be an integer relatively prime to $n$. Prove that the natural map
-\[
+$$
 R/mR\longrightarrow S/mS
-\]
+$$
 is a ring isomorphism.
 :::
 

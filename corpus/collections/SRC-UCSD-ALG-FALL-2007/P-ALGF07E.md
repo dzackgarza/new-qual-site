@@ -32,10 +32,10 @@ In particular, prove that your condition is necessary.
 
 ::: {.solution}
 The necessary and sufficient condition is
-\[
+$$
 f_i\in F^p:=\{a^p:a\in F\}
 \qquad\text{for every }i.
-\]
+$$
 Equivalently, every coefficient of $f$ must have a $p$-th root in $F$.
 
 ::: pf
@@ -45,24 +45,24 @@ In characteristic $p$, taking the $p$-th power of a polynomial applies Frobenius
 
 ::: pf-proof
 Let
-\[
+$$
 g(x)=\sum_j g_jx^j\in F[x].
-\]
+$$
 Since the binomial coefficients
-\[
+$$
 \binom pk
-\]
+$$
 are divisible by $p$ for $0<k<p$, one has
-\[
+$$
 (a+b)^p=a^p+b^p
-\]
+$$
 in every ring of characteristic $p$.
 Applying this repeatedly to the finite sum defining $g$ gives
-\[
+$$
 g(x)^p
 =\sum_j(g_jx^j)^p
 =\sum_j g_j^p x^{jp}.
-\]
+$$
 :::
 
 :::
@@ -72,20 +72,20 @@ If every $f_i$ is a $p$-th power in $F$, then $f(x^p)$ is a $p$-th power in $F[x
 
 ::: pf-proof
 For each $i$, choose $g_i\in F$ such that
-\[
+$$
 g_i^p=f_i.
-\]
+$$
 Set
-\[
+$$
 g(x):=\sum_i g_i x^i.
-\]
+$$
 By step [](#frobenius-on-polynomials){.pf-ref},
-\[
+$$
 g(x)^p
 =\sum_i g_i^p x^{ip}
 =\sum_i f_i x^{ip}
 =f(x^p).
-\]
+$$
 Thus the condition is sufficient.
 :::
 
@@ -96,25 +96,25 @@ If $f(x^p)=g(x)^p$ for some $g\in F[x]$, then every $f_i$ is a $p$-th power in $
 
 ::: pf-proof
 Write
-\[
+$$
 g(x)=\sum_j g_jx^j.
-\]
+$$
 By step [](#frobenius-on-polynomials){.pf-ref},
-\[
+$$
 g(x)^p=\sum_j g_j^p x^{jp}.
-\]
+$$
 On the other hand,
-\[
+$$
 f(x^p)=\sum_i f_i x^{ip}.
-\]
+$$
 Equality of polynomials implies equality of the coefficient of $x^{ip}$ for every $i$, hence
-\[
+$$
 f_i=g_i^p.
-\]
+$$
 Therefore
-\[
+$$
 f_i\in F^p
-\]
+$$
 for every $i$.
 This proves necessity and completes the equivalence.
 :::

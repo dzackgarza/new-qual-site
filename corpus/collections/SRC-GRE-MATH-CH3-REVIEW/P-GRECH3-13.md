@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 If the variables $P$, $V$, and $T$ are related by the equation $PV=nRT$, where $n$ and $R$ are constants, simplify the expression
-\[
+$$
 \frac{\partial V}{\partial T}\cdot\frac{\partial T}{\partial P}\cdot\frac{\partial P}{\partial V}.
-\]
+$$
 
 (A) $-1$
 (B) $1$

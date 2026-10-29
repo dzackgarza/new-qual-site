@@ -15,9 +15,9 @@ audit:
 
 ::: {.problem}
 Let $f$ be nonconstant and holomorphic on an open set containing the closed unit disk, and suppose
-\[
+$$
 |f(z)|=1\qquad(|z|=1).
-\]
+$$
 
 1. Show that $f$ has a zero in the open unit disk.
 

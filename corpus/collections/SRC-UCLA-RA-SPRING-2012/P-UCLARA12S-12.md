@@ -18,14 +18,14 @@ audit:
 
 ::: {.problem}
 Show that the only entire function $f$ satisfying both
-\[
+$$
 |f'(z)|\le e^{|z|}
-\]
+$$
 and
-\[
+$$
 f\!\left(\frac{n}{\sqrt{1+|n|}}\right)=0
 \qquad\text{for every }n\in\ZZ
-\]
+$$
 is the zero function.
 :::
 

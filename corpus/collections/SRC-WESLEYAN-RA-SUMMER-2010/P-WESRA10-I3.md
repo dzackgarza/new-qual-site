@@ -26,9 +26,9 @@ State the spectral theorem for compact symmetric (self-adjoint) operators on a H
 ::: {.pf-step #s1-1}
 
 Let $H$ be a real or complex Hilbert space and let
-\[
+$$
 T:H\to H
-\]
+$$
 be compact and self-adjoint. Then every nonzero spectral value of $T$ is a
 real eigenvalue, each nonzero eigenspace is finite-dimensional, distinct
 eigenspaces are orthogonal, and $0$ is the only possible accumulation point
@@ -47,10 +47,10 @@ This is the spectral theorem for compact self-adjoint operators.
 
 There is an orthonormal family of eigenvectors $(e_j)$ for the nonzero
 eigenvalues $(\lambda_j)$ such that
-\[
+$$
 \overline{\operatorname{span}}\{e_j\}
 =(\ker T)^\perp,
-\]
+$$
 and, after adjoining any orthonormal basis of $\ker T$, one obtains an
 orthonormal basis of $H$ consisting entirely of eigenvectors of $T$.
 
@@ -67,16 +67,16 @@ spectral theorem. The kernel is precisely the eigenspace for eigenvalue $0$.
 ::: {.pf-step #s1-3}
 
 For every $x\in H$,
-\[
+$$
 \boxed{
 Tx=\sum_j \lambda_j\langle x,e_j\rangle e_j
 }
-\]
+$$
 where the sum is finite or countable and converges in the Hilbert-space norm.
 If there are infinitely many nonzero eigenvalues, then
-\[
+$$
 \lambda_j\to0.
-\]
+$$
 
 
 ::: pf-proof

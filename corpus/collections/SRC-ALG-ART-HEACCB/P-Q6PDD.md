@@ -38,12 +38,12 @@ Every eigenvalue of a Hermitian matrix is real.
 ::: pf-proof
 
 Let $Av=\lambda v$ with $v\ne0$. Since $A=A^*$,
-\[
+$$
 \lambda\langle v,v\rangle
 =\langle Av,v\rangle
 =\langle v,Av\rangle
 =\overline\lambda\langle v,v\rangle.
-\]
+$$
 Because $\langle v,v\rangle>0$, one has $\lambda=\overline\lambda$, so $\lambda\in\RR$.
 
 :::
@@ -57,13 +57,13 @@ If $v$ is an eigenvector with eigenvalue $\lambda$, then $v^\perp$ is $A$-invari
 ::: pf-proof
 
 For $w\in v^\perp$,
-\[
+$$
 \langle Aw,v\rangle
 =\langle w,A^*v\rangle
 =\langle w,Av\rangle
 =\lambda\langle w,v\rangle
 =0.
-\]
+$$
 Hence $Aw\in v^\perp$.
 
 :::
@@ -85,22 +85,22 @@ We argue by induction on the dimension. The result is trivial in dimension $1$. 
 ::: {.pf-step #s4}
 
 Let $v_1,\dots,v_n$ be such an orthonormal eigenbasis with eigenvalues $\lambda_1,\dots,\lambda_n\in\RR$. Put
-\[
+$$
 P=[v_1\ \cdots\ v_n],
 \qquad
 D=\operatorname{diag}(\lambda_1,\dots,\lambda_n).
-\]
+$$
 Then $P$ is invertible with orthogonal columns and
-\[
+$$
 \boxed{A=PDP^{-1}}.
-\]
+$$
 
 ::: pf-proof
 
 The columns form a basis, so $P$ is invertible; in fact $P$ is unitary because the columns are orthonormal. The eigenvector equations $Av_i=\lambda_i v_i$ combine to
-\[
+$$
 AP=PD,
-\]
+$$
 which is equivalent to $A=PDP^{-1}$.
 
 :::

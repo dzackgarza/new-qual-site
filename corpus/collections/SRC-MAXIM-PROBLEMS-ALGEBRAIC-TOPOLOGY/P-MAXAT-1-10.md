@@ -22,9 +22,9 @@ If M is a compact, closed, oriented manifold of dimension n, show that the torsi
 ::: {.solution}
 
 All (co)homology groups below have integral coefficients. Write
-\[
+$$
 T(A)=\{a\in A: ma=0\text{ for some }m>0\}
-\]
+$$
 for the torsion subgroup of a finitely generated abelian group $A$.
 
 ::: pf
@@ -32,12 +32,12 @@ for the torsion subgroup of a finitely generated abelian group $A$.
 ::: {.pf-step #s1-1}
 
 The universal coefficient theorem gives a short exact sequence
-\[
+$$
 0\to\operatorname{Ext}^1(H_{i-1}(M),\ZZ)
 \longrightarrow H^i(M)
 \longrightarrow\operatorname{Hom}(H_i(M),\ZZ)
 \to0.
-\]
+$$
 
 
 ::: pf-proof
@@ -51,26 +51,26 @@ This is the universal coefficient theorem for cohomology applied to the singular
 ::: {.pf-step #s1-2}
 
 The group $\operatorname{Hom}(H_i(M),\ZZ)$ is torsion-free, and
-\[
+$$
 \operatorname{Ext}^1(H_{i-1}(M),\ZZ)
 \cong T(H_{i-1}(M)).
-\]
+$$
 
 
 ::: pf-proof
 
 The manifold has finite CW type, so its homology groups are finitely generated. Write
-\[
+$$
 H_{i-1}(M)\cong\ZZ^r\oplus
 \bigoplus_j\ZZ/d_j.
-\]
+$$
 Then
-\[
+$$
 \operatorname{Ext}^1(\ZZ,\ZZ)=0,
 \qquad
 \operatorname{Ext}^1(\ZZ/d_j,\ZZ)
 \cong\ZZ/d_j,
-\]
+$$
 so the Ext group is isomorphic to the torsion summand. Also every subgroup of a free abelian group is torsion-free, and $\operatorname{Hom}$ of a finitely generated abelian group into $\ZZ$ is free abelian.
 
 :::
@@ -80,10 +80,10 @@ so the Ext group is isomorphic to the torsion summand. Also every subgroup of a 
 ::: {.pf-step #s1-3}
 
 Consequently,
-\[
+$$
 T(H^i(M))
 \cong T(H_{i-1}(M)).
-\]
+$$
 
 
 ::: pf-proof
@@ -97,17 +97,17 @@ In the exact sequence of step [](#s1-1){.pf-ref}, the left group is torsion by s
 ::: {.pf-step #s1-4}
 
 Poincaré duality gives
-\[
+$$
 H^{n-i+1}(M)\cong H_{i-1}(M).
-\]
+$$
 
 
 ::: pf-proof
 
 For a closed oriented $n$-manifold, cap product with the fundamental class is an isomorphism
-\[
+$$
 H^k(M;\ZZ)\xrightarrow{\ \cong\ }H_{n-k}(M;\ZZ).
-\]
+$$
 Set $k=n-i+1$. Then $n-k=i-1$.
 
 :::
@@ -117,10 +117,10 @@ Set $k=n-i+1$. Then $n-k=i-1$.
 ::: {.pf-step #s1-5}
 
 Taking torsion subgroups in step [](#s1-4){.pf-ref} gives
-\[
+$$
 T(H^{n-i+1}(M))
 \cong T(H_{i-1}(M)).
-\]
+$$
 
 
 ::: pf-proof
@@ -134,10 +134,10 @@ An isomorphism of abelian groups carries torsion elements exactly to torsion ele
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{
 T(H^i(M))\cong T(H^{n-i+1}(M)).}
-\]
+$$
 
 
 ::: pf-proof

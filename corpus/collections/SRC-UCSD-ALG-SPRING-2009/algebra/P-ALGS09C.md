@@ -41,19 +41,19 @@ If $K$ is isomorphic to a subfield of $L$, then $m\mid n$.
 
 Suppose $K$ is identified with a subfield of $L$.
 Then $L$ is a finite-dimensional vector space over $K$, so the tower law gives
-\[
+$$
 [L:\FF_p]=[L:K][K:\FF_p].
-\]
+$$
 Since
-\[
+$$
 [L:\FF_p]=n,
 \qquad
 [K:\FF_p]=m,
-\]
+$$
 we obtain
-\[
+$$
 n=[L:K]m.
-\]
+$$
 Hence $m\mid n$.
 
 :::
@@ -67,51 +67,51 @@ If $m\mid n$, then $K$ is isomorphic to a subfield of $L$.
 ::: pf-proof
 
 Write
-\[
+$$
 n=rm.
-\]
+$$
 Every element $x\in L=\FF_{p^n}$ satisfies
-\[
+$$
 x^{p^n}=x.
-\]
+$$
 Consider the set
-\[
+$$
 F=\{x\in L:x^{p^m}=x\}.
-\]
+$$
 This is a subfield of $L$: if $x,y\in F$, then in characteristic $p$,
-\[
+$$
 (x+y)^{p^m}=x^{p^m}+y^{p^m}=x+y,
-\]
+$$
 and
-\[
+$$
 (xy)^{p^m}=x^{p^m}y^{p^m}=xy.
-\]
+$$
 Also, if $x\ne0$, then
-\[
+$$
 (x^{-1})^{p^m}=(x^{p^m})^{-1}=x^{-1}.
-\]
+$$
 
 It remains to show that $F$ has exactly $p^m$ elements.
 Since $m\mid n$,
-\[
+$$
 p^m-1\mid p^n-1.
-\]
+$$
 The multiplicative group $L^\times$ is cyclic of order $p^n-1$, so it has exactly $p^m-1$ solutions to
-\[
+$$
 x^{p^m-1}=1.
-\]
+$$
 Together with $x=0$, these are exactly the roots of
-\[
+$$
 x^{p^m}-x.
-\]
+$$
 Hence
-\[
+$$
 |F|=p^m.
-\]
+$$
 There is, up to isomorphism, a unique field with $p^m$ elements, so
-\[
+$$
 F\cong K.
-\]
+$$
 Thus $K$ is isomorphic to a subfield of $L$.
 
 :::
@@ -121,11 +121,11 @@ Thus $K$ is isomorphic to a subfield of $L$.
 ::: pf-step
 
 Therefore
-\[
+$$
 K\hookrightarrow L
 \quad\Longleftrightarrow\quad
 m\mid n.
-\]
+$$
 
 ::: pf-proof
 

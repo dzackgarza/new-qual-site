@@ -30,18 +30,18 @@ Prove that any two successive Fibonacci numbers $F_n, F_{n+1}$ are relatively pr
 ::: {.pf-step #s1}
 
 For every $n\ge1$,
-\[
+$$
 \gcd(F_{n+1},F_n)=\gcd(F_n,F_{n-1}).
-\]
+$$
 
 ::: pf-proof
 
 Since $F_{n+1}=F_n+F_{n-1}$,
-\[
+$$
 \gcd(F_{n+1},F_n)
 =\gcd(F_n+F_{n-1},F_n)
 =\gcd(F_{n-1},F_n),
-\]
+$$
 using the Euclidean identity $\gcd(a+b,b)=\gcd(a,b)$.
 
 :::
@@ -51,9 +51,9 @@ using the Euclidean identity $\gcd(a+b,b)=\gcd(a,b)$.
 ::: pf-step
 
 Iterating step [](#s1){.pf-ref} gives
-\[
+$$
 \gcd(F_{n+1},F_n)=\gcd(F_1,F_0)=1
-\]
+$$
 for every $n\ge0$.
 
 ::: pf-proof

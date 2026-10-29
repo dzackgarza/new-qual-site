@@ -28,27 +28,27 @@ State a theorem expressing the $m$th derivative of an analytic function as a con
 **Cauchy's integral formula for derivatives.**
 
 Let
-\[
+$$
 f:D\to\CC
-\]
+$$
 be holomorphic, let
-\[
+$$
 z_0\in D,
-\]
+$$
 and choose
-\[
+$$
 r>0
-\]
+$$
 such that
-\[
+$$
 \overline{B(z_0,r)}
 \subset D.
-\]
+$$
 Then for every integer
-\[
+$$
 m\ge0,
-\]
-\[
+$$
+$$
 \boxed{
 f^{(m)}(z_0)
 =
@@ -58,38 +58,38 @@ f^{(m)}(z_0)
 {(\zeta-z_0)^{m+1}}
 \,d\zeta.
 }
-\]
+$$
 The circle is positively oriented.
 
 
 ::: pf-proof
 
 For
-\[
+$$
 m=0,
-\]
+$$
 this is the ordinary Cauchy integral formula.
 
 Differentiating
-\[
+$$
 f(z)
 =
 \frac1{2\pi i}
 \int_{|\zeta-z_0|=r}
 \frac{f(\zeta)}{\zeta-z}
 \,d\zeta
-\]
+$$
 with respect to $z$, and repeating $m$ times, gives
-\[
+$$
 \frac{d^m}{dz^m}
 \frac1{\zeta-z}
 =
 \frac{m!}{(\zeta-z)^{m+1}}.
-\]
+$$
 Evaluation at
-\[
+$$
 z=z_0
-\]
+$$
 gives the displayed formula.
 
 :::
@@ -100,7 +100,7 @@ gives the displayed formula.
 
 More generally, if $\gamma$ is a positively oriented simple closed
 contour in $D$ whose interior lies in $D$ and contains $z_0$, then
-\[
+$$
 f^{(m)}(z_0)
 =
 \frac{m!}{2\pi i}
@@ -108,7 +108,7 @@ f^{(m)}(z_0)
 \frac{f(\zeta)}
 {(\zeta-z_0)^{m+1}}
 \,d\zeta.
-\]
+$$
 
 
 ::: pf-proof

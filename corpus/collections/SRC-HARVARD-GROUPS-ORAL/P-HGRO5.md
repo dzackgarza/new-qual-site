@@ -27,7 +27,7 @@ Give an example of a nonabelian group of order $27$.
 
 ::: {.solution}
 Take the unitriangular group
-\[
+$$
 G=UT_3(\mathbf F_3)
 =
 \left\{
@@ -38,7 +38,7 @@ G=UT_3(\mathbf F_3)
 \end{pmatrix}
 :a,b,c\in\mathbf F_3
 \right\}.
-\]
+$$
 
 ::: pf
 
@@ -62,15 +62,15 @@ The group $G$ is nonabelian.
 ::: pf-proof
 
 Let
-\[
+$$
 x=I+E_{12},\qquad y=I+E_{23}.
-\]
+$$
 Since $E_{12}E_{23}=E_{13}$ but $E_{23}E_{12}=0$,
-\[
+$$
 xy=I+E_{12}+E_{23}+E_{13},
 \qquad
 yx=I+E_{12}+E_{23}.
-\]
+$$
 Hence $xy\ne yx$, so $G$ is nonabelian.
 
 :::

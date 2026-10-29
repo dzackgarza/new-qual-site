@@ -32,31 +32,31 @@ Show that $W$ is an $F_\sigma$ set in $X$ if and only if $X - W$ is a $G_\delta$
 
 ::: {.solution}
 Suppose first that
-\[
+$$
 W=\bigcup_{n=1}^{\infty}F_n
-\]
-with each \(F_n\) closed. By De Morgan's law,
-\[
+$$
+with each $F_n$ closed. By De Morgan's law,
+$$
 X-W
  =X-\bigcup_nF_n
  =\bigcap_n(X-F_n).
-\]
-Each \(X-F_n\) is open, so \(X-W\) is a \(G_\delta\) set.
+$$
+Each $X-F_n$ is open, so $X-W$ is a $G_\delta$ set.
 
 Conversely, suppose
-\[
+$$
 X-W=\bigcap_{n=1}^{\infty}U_n
-\]
-with each \(U_n\) open. Again by De Morgan's law,
-\[
+$$
+with each $U_n$ open. Again by De Morgan's law,
+$$
 W
 =X-\bigcap_nU_n
 =\bigcup_n(X-U_n).
-\]
-Each \(X-U_n\) is closed, so \(W\) is \(F_\sigma\).
+$$
+Each $X-U_n$ is closed, so $W$ is $F_\sigma$.
 
 Therefore
-\[
+$$
 \boxed{W\text{ is }F_\sigma\iff X-W\text{ is }G_\delta.}
-\]
+$$
 :::

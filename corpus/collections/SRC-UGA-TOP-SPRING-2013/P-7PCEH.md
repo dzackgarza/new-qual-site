@@ -42,32 +42,32 @@ c. Prove that the fundamental group of $X_2$ is a free group on two generators.
 
 ::: pf-step
 
-A subspace \(A\subseteq X\) is a deformation retract of \(X\) if there is a continuous map
-\[
+A subspace $A\subseteq X$ is a deformation retract of $X$ if there is a continuous map
+$$
 H:X\times[0,1]\to X
-\]
+$$
 such that
-\[
+$$
 H(x,0)=x
 \qquad(x\in X),
-\]
-\[
+$$
+$$
 H(x,1)\in A
 \qquad(x\in X),
-\]
+$$
 and
-\[
+$$
 H(a,t)=a
 \qquad(a\in A,\ 0\le t\le1).
-\]
+$$
 
 ::: pf-proof
 
-At time \(1\), the map
-\[
+At time $1$, the map
+$$
 r(x)=H(x,1)
-\]
-has image in \(A\) and satisfies \(r(a)=a\) for \(a\in A\), so it is a retraction onto \(A\). The last displayed condition says that the homotopy from \(\operatorname{id}_X\) to \(r\) is relative to \(A\); this is the standard deformation-retraction condition.
+$$
+has image in $A$ and satisfies $r(a)=a$ for $a\in A$, so it is a retraction onto $A$. The last displayed condition says that the homotopy from $\operatorname{id}_X$ to $r$ is relative to $A$; this is the standard deformation-retraction condition.
 
 :::
 
@@ -76,28 +76,28 @@ has image in \(A\) and satisfies \(r(a)=a\) for \(a\in A\), so it is a retractio
 ::: {.pf-step #s2}
 
 Regard
-\[
+$$
 X_2=S^1\cup(\{0\}\times[-1,1])
-\]
+$$
 as a graph with two vertices
-\[
+$$
 v_+=(0,1),
 \qquad
 v_-=(0,-1)
-\]
+$$
 and three edges: the left semicircle, the right semicircle, and the vertical diameter
-\[
+$$
 T=\{0\}\times[-1,1].
-\]
+$$
 Then
-\[
+$$
 X_2/T\cong S^1\vee S^1=X_1.
-\]
+$$
 
 ::: pf-proof
 
-The subgraph \(T\) is a single edge joining the two vertices, hence is a maximal tree in \(X_2\). Collapsing \(T\) identifies \(v_+\) and \(v_-\) to one point.
-Each of the two semicircular edges then becomes a loop based at this point, so the quotient is a wedge of two circles, i.e. the planar figure eight \(X_1\).
+The subgraph $T$ is a single edge joining the two vertices, hence is a maximal tree in $X_2$. Collapsing $T$ identifies $v_+$ and $v_-$ to one point.
+Each of the two semicircular edges then becomes a loop based at this point, so the quotient is a wedge of two circles, i.e. the planar figure eight $X_1$.
 
 :::
 
@@ -106,15 +106,15 @@ Each of the two semicircular edges then becomes a loop based at this point, so t
 ::: {.pf-step #s3}
 
 The quotient map
-\[
+$$
 q:X_2\to X_2/T
-\]
+$$
 is a homotopy equivalence.
 
 ::: pf-proof
 
-The pair \((X_2,T)\) is a CW pair and \(T\) is contractible.
-For a CW pair, collapsing a contractible subcomplex to a point yields a homotopy-equivalent quotient (Hatcher, *Algebraic Topology*, Proposition 0.17). Therefore \(q\) is a homotopy equivalence.
+The pair $(X_2,T)$ is a CW pair and $T$ is contractible.
+For a CW pair, collapsing a contractible subcomplex to a point yields a homotopy-equivalent quotient (Hatcher, *Algebraic Topology*, Proposition 0.17). Therefore $q$ is a homotopy equivalence.
 
 :::
 
@@ -123,21 +123,21 @@ For a CW pair, collapsing a contractible subcomplex to a point yields a homotopy
 ::: {.pf-step #s4}
 
 Consequently,
-\[
+$$
 \boxed{\pi_1(X_1)\cong\pi_1(X_2)}.
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s2){.pf-ref},
-\[
+$$
 X_2/T\cong X_1.
-\]
-By step [](#s3){.pf-ref}, \(q\) is a homotopy equivalence, so it induces an isomorphism on fundamental groups.
+$$
+By step [](#s3){.pf-ref}, $q$ is a homotopy equivalence, so it induces an isomorphism on fundamental groups.
 Hence
-\[
+$$
 \pi_1(X_2)\cong\pi_1(X_2/T)\cong\pi_1(X_1).
-\]
+$$
 
 :::
 
@@ -145,28 +145,28 @@ Hence
 
 ::: pf-step
 
-The fundamental group of \(X_2\) is the free group on two generators:
-\[
+The fundamental group of $X_2$ is the free group on two generators:
+$$
 \boxed{\pi_1(X_2)\cong F_2}.
-\]
+$$
 
 ::: pf-proof
 
 By steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref},
-\[
+$$
 \pi_1(X_2)
 \cong
 \pi_1(S^1\vee S^1).
-\]
+$$
 Applying Seifert--van Kampen to the wedge of two circles gives
-\[
+$$
 \pi_1(S^1\vee S^1)
 \cong
 \pi_1(S^1)*\pi_1(S^1)
 \cong
 \ZZ*\ZZ
 =F_2.
-\]
+$$
 
 :::
 

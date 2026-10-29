@@ -32,38 +32,38 @@ Is the axiom of choice needed?
 :::
 
 ::: {.solution}
-(a) Since \(f:A\to B\) is surjective, every fiber
-\[
+(a) Since $f:A\to B$ is surjective, every fiber
+$$
 f^{-1}(\{b\})\qquad(b\in B)
-\]
+$$
 is nonempty. The axiom of choice applied to this family of nonempty sets gives a choice function selecting
-\[
+$$
 h(b)\in f^{-1}(\{b\})
-\]
-for every \(b\in B\). Then
-\[
+$$
+for every $b\in B$. Then
+$$
 f(h(b))=b
-\]
-for every \(b\), hence
-\[
+$$
+for every $b$, hence
+$$
 f\circ h=i_B.
-\]
-Thus \(h\) is a right inverse of \(f\).
+$$
+Thus $h$ is a right inverse of $f$.
 
-(b) Suppose \(f:A\to B\) is injective and \(A\ne\varnothing\). Choose one fixed point \(a_0\in A\). Define
-\[
+(b) Suppose $f:A\to B$ is injective and $A\ne\varnothing$. Choose one fixed point $a_0\in A$. Define
+$$
 g:B\to A,
 \qquad
 g(b)=
 \begin{cases}
 f^{-1}(b),&b\in f(A),\\a_0,&b\notin f(A).
 \end{cases}
-\]
-The inverse value in the first case is unique because \(f\) is injective. Hence, for every \(a\in A\),
-\[
+$$
+The inverse value in the first case is unique because $f$ is injective. Hence, for every $a\in A$,
+$$
 g(f(a))=a,
-\]
-so \(g\circ f=i_A\). Thus \(g\) is a left inverse.
+$$
+so $g\circ f=i_A$. Thus $g$ is a left inverse.
 
-No axiom of choice is needed in (b): only one element \(a_0\) is chosen from the single nonempty set \(A\), and all remaining values are uniquely determined.
+No axiom of choice is needed in (b): only one element $a_0$ is chosen from the single nonempty set $A$, and all remaining values are uniquely determined.
 :::

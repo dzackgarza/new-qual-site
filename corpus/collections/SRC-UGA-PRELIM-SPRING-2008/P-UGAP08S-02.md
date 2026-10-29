@@ -16,9 +16,9 @@ audit:
 
 ::: {.problem}
 Prove from the $\varepsilon$-$\delta$ definition that the function
-\[
+$$
 f:\RR\to\RR,\qquad f(x)=x^3,
-\]
+$$
 is continuous at $2$.
 :::
 
@@ -29,26 +29,26 @@ is continuous at $2$.
 ::: pf-step
 
 Let
-\[
+$$
 \varepsilon>0
-\]
+$$
 be given.
 
 
 ::: pf-proof
 
 To prove continuity at $2$, we must produce
-\[
+$$
 \delta>0
-\]
+$$
 such that
-\[
+$$
 |x-2|<\delta
-\]
+$$
 implies
-\[
+$$
 |x^3-8|<\varepsilon.
-\]
+$$
 
 :::
 
@@ -57,22 +57,22 @@ implies
 ::: pf-step
 
 Factor the difference:
-\[
+$$
 |x^3-8|
 =
 |x-2|
 \,|x^2+2x+4|.
-\]
+$$
 
 
 ::: pf-proof
 
 Use
-\[
+$$
 x^3-2^3
 =
 (x-2)(x^2+2x+4).
-\]
+$$
 
 :::
 
@@ -81,29 +81,29 @@ x^3-2^3
 ::: pf-step
 
 If
-\[
+$$
 |x-2|<1,
-\]
+$$
 then
-\[
+$$
 1<x<3.
-\]
+$$
 
 
 ::: pf-proof
 
 The inequality
-\[
+$$
 |x-2|<1
-\]
+$$
 is equivalent to
-\[
+$$
 -1<x-2<1,
-\]
+$$
 hence
-\[
+$$
 1<x<3.
-\]
+$$
 
 :::
 
@@ -112,23 +112,23 @@ hence
 ::: {.pf-step #s1-4}
 
 Under the same restriction,
-\[
+$$
 |x^2+2x+4|<19.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 1<x<3,
-\]
+$$
 one has
-\[
+$$
 |x|<3.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 |x^2+2x+4|
 &\le
@@ -138,7 +138,7 @@ Therefore
 &=
 19.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -147,7 +147,7 @@ Therefore
 ::: pf-step
 
 Choose
-\[
+$$
 \boxed{
 \delta
 =
@@ -157,15 +157,15 @@ Choose
 \frac{\varepsilon}{19}
 \right\}.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 This choice guarantees both the bound in step [](#s1-4){.pf-ref} and the final
-\[
+$$
 \varepsilon
-\]
+$$
 estimate.
 
 :::
@@ -175,26 +175,26 @@ estimate.
 ::: {.pf-step #s1-6}
 
 If
-\[
+$$
 |x-2|<\delta,
-\]
+$$
 then
-\[
+$$
 |x^3-8|
 <
 \varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
 Because
-\[
+$$
 \delta\le1,
-\]
+$$
 step [](#s1-4){.pf-ref} applies.
 Hence
-\[
+$$
 \begin{aligned}
 |x^3-8|
 &=
@@ -207,7 +207,7 @@ Hence
 &\le
 \varepsilon.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -216,20 +216,20 @@ Hence
 ::: {.pf-step #s1-7}
 
 Therefore
-\[
+$$
 \boxed{
 f(x)=x^3
 \text{ is continuous at }2.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-6){.pf-ref} is exactly the
-\[
+$$
 \varepsilon\text{--}\delta
-\]
+$$
 definition of continuity at $2$.
 
 :::

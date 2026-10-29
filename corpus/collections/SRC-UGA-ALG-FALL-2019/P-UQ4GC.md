@@ -207,9 +207,9 @@ Thus $\Lambda^\vee = \left\{ \sum_{i=1}^n z_i e_i^* \;\middle|\; z_i \in \ZZ \ri
 ::: {.pf-step #s4}
 
 The discriminant group has order
-\[
+$$
 \boxed{|\Lambda^\vee/\Lambda|=|\det M|}.
-\]
+$$
 
 ::: pf-proof
 

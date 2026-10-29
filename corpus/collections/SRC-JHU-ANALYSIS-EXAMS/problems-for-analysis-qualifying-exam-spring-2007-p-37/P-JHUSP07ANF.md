@@ -26,14 +26,14 @@ audit:
 
 ::: {.problem}
 Let $(f_n)$ be a sequence in $L^4([0,1])$ such that
-\[
+$$
 \int_0^1|f_n|^4\le1
 \qquad\text{for all }n,
-\]
+$$
 and
-\[
+$$
 \int_0^1|f_n|\longrightarrow0.
-\]
+$$
 Show that $f_n\rightharpoonup0$ weakly in $L^4([0,1])$.
 :::
 

@@ -34,9 +34,9 @@ audit:
 
 ::: {.problem}
 a. If $\mathcal{E}$ is a locally free sheaf of rank $r$ on a (nonsingular) curve $C$, then there is a sequence
-\[
+$$
 0=\mathcal{E}_0 \subseteq \mathcal{E}_1 \subseteq \ldots \subseteq \mathcal{E}_r=\mathcal{E}
-\]
+$$
 of subsheaves such that $\mathcal{E}_i / \mathcal{E}_{i-1}$ is an invertible sheaf for each $i=1, \ldots, r$.
 We say that $\mathcal{E}$ is a successive extension of invertible sheaves.
 

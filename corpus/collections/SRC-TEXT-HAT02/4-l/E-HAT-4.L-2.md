@@ -30,58 +30,58 @@ Use cohomology operations to show that the spaces $(S^1 \times \CP^\infty) / (S^
 
 ::: {.solution}
 Put
-\[
+$$
 X=(S^1\times\CP^\infty)/(S^1\times\{x_0\}),
 \qquad
 Y=S^3\times\CP^\infty.
-\]
-With \(\ZZ_2\)-coefficients, the relative Künneth theorem gives
-\[
+$$
+With $\ZZ_2$-coefficients, the relative Künneth theorem gives
+$$
 \widetilde H^*(X;\ZZ_2)
 \cong
 H^*(S^1;\ZZ_2)\otimes
 \widetilde H^*(\CP^\infty;\ZZ_2).
-\]
+$$
 Let
-\[
+$$
 a\in H^1(S^1;\ZZ_2),
 \qquad
 x\in H^2(\CP^\infty;\ZZ_2)
-\]
-be the standard generators. Then the unique nonzero class in \(H^3(X;\ZZ_2)\) is
-\[
+$$
+be the standard generators. Then the unique nonzero class in $H^3(X;\ZZ_2)$ is
+$$
 u=a\times x.
-\]
+$$
 Using the Cartan formula,
-\[
+$$
 Sq^2(u)
 =Sq^2(a\times x)
 =a\times Sq^2x,
-\]
-since \(Sq^1a=a^2=0\) and \(Sq^2a=0\) by instability. For the degree-two generator of \(\CP^\infty\),
-\[
+$$
+since $Sq^1a=a^2=0$ and $Sq^2a=0$ by instability. For the degree-two generator of $\CP^\infty$,
+$$
 Sq^2x=x^2.
-\]
+$$
 Hence
-\[
+$$
 Sq^2(u)=a\times x^2\ne0
 \in H^5(X;\ZZ_2).
 \tag{1}
-\]
+$$
 
-On the other hand, the unique nonzero class in \(H^3(Y;\ZZ_2)\) is the pullback
-\[
+On the other hand, the unique nonzero class in $H^3(Y;\ZZ_2)$ is the pullback
+$$
 v=\operatorname{pr}_1^*(\iota_3)
-\]
-of the fundamental class of \(S^3\). Naturality gives
-\[
+$$
+of the fundamental class of $S^3$. Naturality gives
+$$
 Sq^2(v)=\operatorname{pr}_1^*(Sq^2\iota_3)=0,
 \tag{2}
-\]
-because \(H^5(S^3;\ZZ_2)=0\).
+$$
+because $H^5(S^3;\ZZ_2)=0$.
 
-Any homotopy equivalence \(X\simeq Y\) would induce an isomorphism on mod-2 cohomology carrying the unique nonzero degree-three class to the unique nonzero degree-three class and commuting with \(Sq^2\). Equations (1) and (2) contradict this. Therefore
-\[
+Any homotopy equivalence $X\simeq Y$ would induce an isomorphism on mod-2 cohomology carrying the unique nonzero degree-three class to the unique nonzero degree-three class and commuting with $Sq^2$. Equations (1) and (2) contradict this. Therefore
+$$
 \boxed{X\not\simeq S^3\times\CP^\infty.}
-\]
+$$
 :::

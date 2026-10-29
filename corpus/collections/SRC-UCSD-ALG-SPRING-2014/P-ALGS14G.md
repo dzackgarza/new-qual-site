@@ -37,9 +37,9 @@ In fact every Galois extension with group $S_3$ arises this way.
 
 Choose a subgroup $H\leq G:=\operatorname{Gal}(L/K)$ of order $2$, and put $E=L^H$.
 Then
-\[
+$$
 [E:K]=[G:H]=3.
-\]
+$$
 
 ::: pf-proof
 
@@ -66,9 +66,9 @@ Since $[E:K]=3$, the minimal polynomial of a primitive element has degree $3$.
 ::: {.pf-step #s3}
 
 The normal closure of $E/K$ inside $L$ is $L^{\operatorname{core}_G(H)}$, where
-\[
+$$
 \operatorname{core}_G(H)=\bigcap_{g\in G}gHg^{-1}.
-\]
+$$
 
 ::: pf-proof
 

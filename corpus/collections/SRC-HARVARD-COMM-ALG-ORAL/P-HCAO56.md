@@ -30,9 +30,9 @@ Explain how to decide whether a given polynomial belongs to an ideal $I$ in a po
 
 ::: {.solution}
 Suppose
-\[
+$$
 I=\langle f_1,\ldots,f_r\rangle\subseteq k[x_1,\ldots,x_n].
-\]
+$$
 Choose a term order and compute a Gröbner basis $G$ of $I$.
 
 ::: pf
@@ -54,9 +54,9 @@ the resulting normal form is independent of the reductions used.
 ::: pf-step
 
 Then
-\[
+$$
 f\in I\quad\Longleftrightarrow\quad r=0.
-\]
+$$
 
 ::: pf-proof
 

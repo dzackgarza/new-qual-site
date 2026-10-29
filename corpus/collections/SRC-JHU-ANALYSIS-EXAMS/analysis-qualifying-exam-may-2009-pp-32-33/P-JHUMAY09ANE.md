@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Let $f,g\in L^2(\RR)$. Prove that
-\[
+$$
 (f*g)(x)=\int_{\RR}f(y)g(x-y)\,dy
-\]
+$$
 defines a bounded continuous function on $\RR$.
 :::
 

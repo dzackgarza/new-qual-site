@@ -29,26 +29,26 @@ Show that a closed simply-connected 3-manifold is homotopy equivalent to $S^3$.
 :::
 
 ::: {.solution}
-Let \(M\) be a closed simply-connected \(3\)-manifold. Poincaré duality gives
-\[
+Let $M$ be a closed simply-connected $3$-manifold. Poincaré duality gives
+$$
 H_i(M;\ZZ)\cong
 \begin{cases}
 \ZZ,&i=0,3,\\
 0,&i=1,2.
 \end{cases}
-\]
-Thus \(M\) is a homology \(3\)-sphere.
+$$
+Thus $M$ is a homology $3$-sphere.
 
-Since \(M\) is simply connected and \(H_2(M)=0\), the Hurewicz theorem implies \(\pi_2(M)=0\): otherwise \(\pi_2\) would be the first nonzero higher homotopy group and would map isomorphically to \(H_2\). Hence \(M\) is \(2\)-connected. Hurewicz now gives
-\[
+Since $M$ is simply connected and $H_2(M)=0$, the Hurewicz theorem implies $\pi_2(M)=0$: otherwise $\pi_2$ would be the first nonzero higher homotopy group and would map isomorphically to $H_2$. Hence $M$ is $2$-connected. Hurewicz now gives
+$$
 \pi_3(M)\xrightarrow{\cong}H_3(M)\cong\ZZ.
-\]
+$$
 Choose
-\[
+$$
 f:S^3\to M
-\]
-representing a generator. Then \(f_*\) is an isomorphism on \(H_3\), and it is automatically an isomorphism on all other homology groups as well. Both spaces are simply connected CW complexes (or have CW type), so the homology Whitehead theorem implies
-\[
+$$
+representing a generator. Then $f_*$ is an isomorphism on $H_3$, and it is automatically an isomorphism on all other homology groups as well. Both spaces are simply connected CW complexes (or have CW type), so the homology Whitehead theorem implies
+$$
 \boxed{M\simeq S^3.}
-\]
+$$
 :::

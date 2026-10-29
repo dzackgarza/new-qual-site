@@ -59,9 +59,9 @@ If $X$ is a noetherian scheme, then its underlying topological space is a Zarisk
 By definition of a noetherian scheme, the underlying space is noetherian.
 
 Let
-\[
+$$
 Z\subseteq X
-\]
+$$
 be a nonempty irreducible closed subset.  Hartshorne II.2.9 shows that every nonempty irreducible closed subset of a scheme has a unique generic point.  Therefore $Z$ has a unique generic point.  This is exactly the definition of a Zariski space.
 :::
 
@@ -72,19 +72,19 @@ Any minimal nonempty closed subset $Y$ of a Zariski space consists of one point.
 
 ::: pf-proof
 For any $y\in Y$, the closure
-\[
+$$
 \overline{\{y\}}
-\]
+$$
 is a nonempty closed subset of $Y$.  By minimality,
-\[
+$$
 \overline{\{y\}}=Y.
-\]
+$$
 Thus every point of $Y$ is a generic point of $Y$.
 
 The set $Y$ is irreducible: if
-\[
+$$
 Y=Y_1\cup Y_2
-\]
+$$
 with $Y_i$ closed in $Y$, then every nonempty $Y_i$ is a nonempty closed subset of $X$ contained in $Y$, hence must equal $Y$ by minimality.  So one of $Y_1,Y_2$ equals $Y$.
 
 Since $Y$ is irreducible and the space is Zariski, $Y$ has a unique generic point.  But every point of $Y$ is generic, so $Y$ has exactly one point.
@@ -97,19 +97,19 @@ A Zariski space satisfies the $T_0$ axiom.
 
 ::: pf-proof
 Let $x\ne y$.  The closures
-\[
+$$
 \overline{\{x\}},\qquad\overline{\{y\}}
-\]
+$$
 are irreducible closed subsets.  If they were equal, then $x$ and $y$ would both be generic points of the same irreducible closed subset, contradicting uniqueness.
 
 Thus the closures differ.  After interchanging $x$ and $y$ if necessary, assume
-\[
+$$
 y\notin\overline{\{x\}}.
-\]
+$$
 Then
-\[
+$$
 X\setminus\overline{\{x\}}
-\]
+$$
 is an open set containing $y$ but not $x$.  Hence $X$ is $T_0$.
 :::
 
@@ -120,13 +120,13 @@ If $X$ is an irreducible Zariski space with generic point $\eta$, then $\eta$ li
 
 ::: pf-proof
 Let $U\subseteq X$ be nonempty.  If $\eta\notin U$, then the closed set
-\[
+$$
 X\setminus U
-\]
+$$
 contains $\eta$, hence contains
-\[
+$$
 \overline{\{\eta\}}=X.
-\]
+$$
 This would force $U=\varnothing$, contradiction.
 :::
 
@@ -134,28 +134,28 @@ This would force $U=\varnothing$, contradiction.
 
 ::: {.pf-step #minimal-points-are-closed-points}
 Under the specialization order
-\[
+$$
 x_1>x_0
 \quad\Longleftrightarrow\quad
 x_0\in\overline{\{x_1\}},
-\]
+$$
 the minimal points are exactly the closed points.
 
 ::: pf-proof
 If $x$ is closed, then
-\[
+$$
 \overline{\{x\}}=\{x\},
-\]
+$$
 so $x$ has no proper specialization and is minimal.
 
 Conversely, if $x$ is minimal, every point of the nonempty closed set
-\[
+$$
 \overline{\{x\}}
-\]
+$$
 is a specialization of $x$.  Minimality therefore forces
-\[
+$$
 \overline{\{x\}}=\{x\},
-\]
+$$
 so $x$ is closed.
 :::
 
@@ -166,30 +166,30 @@ The maximal points for the specialization order are exactly the generic points o
 
 ::: pf-proof
 Let $x$ be maximal.  The irreducible closed subset
-\[
+$$
 \overline{\{x\}}
-\]
+$$
 is contained in some irreducible component $C$ of $X$.  Let $\eta_C$ be the generic point of $C$.  Then
-\[
+$$
 x\in C=\overline{\{\eta_C\}},
-\]
+$$
 so $\eta_C$ is a generization of $x$.  Maximality gives
-\[
+$$
 x=\eta_C.
-\]
+$$
 
 Conversely, let $x=\eta_C$ be the generic point of an irreducible component $C$, and suppose $y$ is a generization of $x$.  Then
-\[
+$$
 x\in\overline{\{y\}},
-\]
+$$
 so
-\[
+$$
 C=\overline{\{x\}}\subseteq\overline{\{y\}}.
-\]
+$$
 The right side is irreducible and closed.  Maximality of the irreducible component $C$ forces
-\[
+$$
 \overline{\{y\}}=C.
-\]
+$$
 Thus $y$ and $x$ are both generic points of $C$, and uniqueness gives $y=x$.  Hence $x$ is maximal.
 :::
 
@@ -200,9 +200,9 @@ Closed subsets are stable under specialization, and open subsets are stable unde
 
 ::: pf-proof
 Let $F\subseteq X$ be closed and let $x\in F$.  If $x_0$ is a specialization of $x$, then
-\[
+$$
 x_0\in\overline{\{x\}}\subseteq F
-\]
+$$
 because $F$ is closed.  Thus $F$ is stable under specialization.
 
 Now let $U$ be open, let $x\in U$, and let $y$ be a generization of $x$.  If $y\notin U$, then the closed complement $X\setminus U$ contains $y$ and therefore all its specializations, including $x$, contradiction.  Hence $y\in U$.
@@ -212,38 +212,38 @@ Now let $U$ be open, let $x\in U$, and let $y$ be a generization of $x$.  If $y\
 
 ::: {.pf-step #tx-noetherian}
 Let $X$ be a noetherian topological space.  Recall that $t(X)$ is the set of nonempty irreducible closed subsets of $X$, with closed subsets
-\[
+$$
 t(Y)=\{Z\in t(X):Z\subseteq Y\}
-\]
+$$
 for closed $Y\subseteq X$.  Then $t(X)$ is noetherian.
 
 ::: pf-proof
 The assignment
-\[
+$$
 Y\longmapsto t(Y)
-\]
+$$
 preserves inclusions and arbitrary intersections.  It also preserves finite unions: if an irreducible closed subset $Z$ is contained in
-\[
+$$
 Y_1\cup Y_2,
-\]
+$$
 then
-\[
+$$
 Z=(Z\cap Y_1)\cup(Z\cap Y_2),
-\]
+$$
 so irreducibility forces $Z\subseteq Y_1$ or $Z\subseteq Y_2$.  Hence
-\[
+$$
 t(Y_1\cup Y_2)=t(Y_1)\cup t(Y_2).
-\]
+$$
 Thus these $t(Y)$ are exactly the closed sets of the topology on $t(X)$.
 
 If
-\[
+$$
 t(Y_1)\supseteq t(Y_2)\supseteq\cdots
-\]
+$$
 is a descending chain of closed subsets of $t(X)$, then
-\[
+$$
 Y_1\supseteq Y_2\supseteq\cdots.
-\]
+$$
 Indeed, if $x\in Y_{n+1}$ then the irreducible closed set $\overline{\{x\}}$ lies in $t(Y_{n+1})\subseteq t(Y_n)$, so $x\in Y_n$.
 
 Since $X$ is noetherian, the chain $Y_n$ stabilizes, hence so does the chain $t(Y_n)$.  Therefore $t(X)$ is noetherian.
@@ -256,30 +256,30 @@ Every nonempty irreducible closed subset of $t(X)$ has a unique generic point.
 
 ::: pf-proof
 Let
-\[
+$$
 t(Y)\subseteq t(X)
-\]
+$$
 be nonempty and irreducible.  If $Y$ were reducible,
-\[
+$$
 Y=Y_1\cup Y_2
-\]
+$$
 with proper closed subsets $Y_i$, then
-\[
+$$
 t(Y)=t(Y_1)\cup t(Y_2)
-\]
+$$
 would be reducible.  Hence $Y$ is irreducible.
 
 Thus $Y$ itself is a point of $t(X)$.  Its closure in $t(X)$ is
-\[
+$$
 \overline{\{Y\}}=t(Y),
-\]
+$$
 because a closed set $t(F)$ contains the point $Y$ exactly when $Y\subseteq F$, and then it contains every irreducible closed subset of $Y$.
 So $Y$ is a generic point of $t(Y)$.
 
 If another point $Z\in t(X)$ had the same closure, then
-\[
+$$
 t(Z)=t(Y).
-\]
+$$
 Since $Z\in t(Z)=t(Y)$, one has $Z\subseteq Y$, and similarly $Y\subseteq Z$.  Thus $Z=Y$.  The generic point is unique.
 :::
 
@@ -296,24 +296,24 @@ Step [](#tx-noetherian){.pf-ref} gives noetherianity and step [](#tx-unique-gene
 
 ::: {.pf-step #alpha-continuous-formula}
 Define
-\[
+$$
 \alpha:X\longrightarrow t(X),
 \qquad
 x\longmapsto\overline{\{x\}}.
-\]
+$$
 Then $\alpha$ is continuous and
-\[
+$$
 \alpha^{-1}(t(Y))=Y
-\]
+$$
 for every closed subset $Y\subseteq X$.
 
 ::: pf-proof
 For $x\in X$,
-\[
+$$
 \alpha(x)\in t(Y)
 \iff
 \overline{\{x\}}\subseteq Y.
-\]
+$$
 Because $Y$ is closed, this is equivalent to $x\in Y$.  Thus the inverse image of the closed set $t(Y)$ is the closed set $Y$, proving continuity and the formula.
 :::
 
@@ -324,9 +324,9 @@ If $X$ is a Zariski space, then $\alpha:X\to t(X)$ is a bijection.
 
 ::: pf-proof
 Every point of $t(X)$ is an irreducible closed subset $Y\subseteq X$.  Since $X$ is a Zariski space, $Y$ has a generic point $y$, and
-\[
+$$
 \alpha(y)=\overline{\{y\}}=Y.
-\]
+$$
 Thus $\alpha$ is surjective.
 
 If $\alpha(x)=\alpha(y)$, then $x$ and $y$ are both generic points of the same irreducible closed subset.  Uniqueness gives $x=y$.  Thus $\alpha$ is injective.
@@ -341,13 +341,13 @@ If $X$ is a Zariski space, then $\alpha$ is a homeomorphism.
 By step [](#alpha-bijective){.pf-ref}, $\alpha$ is bijective, and by step [](#alpha-continuous-formula){.pf-ref} it is continuous.
 
 Let $Y\subseteq X$ be closed.  For every irreducible closed subset $Z\subseteq Y$, the Zariski-space property gives a generic point $z\in Z\subseteq Y$, and
-\[
+$$
 \alpha(z)=Z.
-\]
+$$
 Hence
-\[
+$$
 \alpha(Y)=t(Y),
-\]
+$$
 which is closed in $t(X)$.  Therefore $\alpha$ is a closed continuous bijection and hence a homeomorphism.
 :::
 
@@ -364,12 +364,12 @@ By step [](#tx-is-zariski-space){.pf-ref}, $t(X)$ is a Zariski space.  The prope
 
 ::: {.pf-step #zariski-iff-alpha-homeomorphism}
 Therefore, for a noetherian space $X$,
-\[
+$$
 \boxed{
 X\text{ is a Zariski space}
 \iff
 \alpha:X\xrightarrow{\sim}t(X)\text{ is a homeomorphism}.}
-\]
+$$
 
 ::: pf-proof
 Steps [](#alpha-homeomorphism){.pf-ref} and [](#converse-alpha-homeomorphism-implies-zariski){.pf-ref} prove the two implications.

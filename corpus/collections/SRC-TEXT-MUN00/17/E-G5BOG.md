@@ -30,8 +30,8 @@ Show that a subspace of a Hausdorff space is Hausdorff.
 
 ::: {.solution}
 Let $Y\subseteq X$, where $X$ is Hausdorff, and let $y_1\ne y_2$ be points of $Y$. Choose disjoint open sets $U_1,U_2\subseteq X$ with $y_i\in U_i$. Then
-\[
+$$
 U_1\cap Y,\qquad U_2\cap Y
-\]
+$$
 are disjoint open neighborhoods of $y_1,y_2$ in the subspace $Y$. Hence $Y$ is Hausdorff.
 :::

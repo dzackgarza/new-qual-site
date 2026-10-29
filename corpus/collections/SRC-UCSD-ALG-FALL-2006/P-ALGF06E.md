@@ -39,9 +39,9 @@ Justify your answers.
 
 ::: {.solution}
 Write
-\[
+$$
 f:=Y^2+X.
-\]
+$$
 
 ::: pf
 
@@ -51,24 +51,24 @@ The polynomial $f$ is irreducible in $\QQ(X)[Y]$.
 ::: pf-proof
 Because $f$ is quadratic in $Y$, it is reducible over $\QQ(X)$ if and only if it has a root in $\QQ(X)$.
 Such a root would give an element $r(X)\in\QQ(X)$ satisfying
-\[
+$$
 r(X)^2=-X.
-\]
+$$
 Let $v_X$ denote the exponent of $X$ in a nonzero rational function: if
-\[
+$$
 r(X)=X^k\frac{a(X)}{b(X)},
 \qquad
 a(0)b(0)\neq0,
-\]
+$$
 then $v_X(r)=k$.
 For every nonzero $r$,
-\[
+$$
 v_X(r^2)=2v_X(r)
-\]
+$$
 is even, whereas
-\[
+$$
 v_X(-X)=1.
-\]
+$$
 Therefore $-X$ is not a square in $\QQ(X)$, so $f$ has no root and is irreducible.
 :::
 
@@ -76,13 +76,13 @@ Therefore $-X$ is not a square in $\QQ(X)$, so $f$ has no root and is irreducibl
 
 ::: {.pf-step #r1-local}
 The ring
-\[
+$$
 R_1=\QQ(X)[Y]/(f^3)
-\]
+$$
 is local, with unique maximal ideal
-\[
+$$
 \mathfrak m_1=(f)/(f^3).
-\]
+$$
 
 ::: pf-proof
 Since $\QQ(X)$ is a field, $\QQ(X)[Y]$ is a principal ideal domain.
@@ -91,13 +91,13 @@ By step [](#f-irreducible){.pf-ref}, the irreducible polynomial $f$ generates a 
 Maximal ideals of $R_1$ correspond to maximal ideals $M$ of $\QQ(X)[Y]$ containing $(f^3)$.
 If $f^3\in M$, then $f\in M$ because every maximal ideal is prime.
 Hence
-\[
+$$
 (f)\subseteq M.
-\]
+$$
 Since $(f)$ itself is maximal, this forces
-\[
+$$
 M=(f).
-\]
+$$
 Thus $R_1$ has exactly one maximal ideal, namely $(f)/(f^3)$, and is local.
 :::
 
@@ -105,54 +105,54 @@ Thus $R_1$ has exactly one maximal ideal, namely $(f)/(f^3)$, and is local.
 
 ::: pf-step
 The ring
-\[
+$$
 R_2=\QQ[X,Y]/(f^3)
-\]
+$$
 has at least two distinct maximal ideals.
 
 ::: pf-proof
 In $\QQ[X,Y]$, consider
-\[
+$$
 \mathfrak m=(X,Y)
-\]
+$$
 and
-\[
+$$
 \mathfrak n=(X+1,Y-1).
-\]
+$$
 Both are maximal because evaluation at $(0,0)$ and $(-1,1)$ gives
-\[
+$$
 \QQ[X,Y]/\mathfrak m\cong\QQ,
 \qquad
 \QQ[X,Y]/\mathfrak n\cong\QQ.
-\]
+$$
 Moreover,
-\[
+$$
 f(0,0)=0
-\]
+$$
 and
-\[
+$$
 f(-1,1)=1-1=0,
-\]
+$$
 so
-\[
+$$
 f\in\mathfrak m\cap\mathfrak n.
-\]
+$$
 Hence $(f^3)$ is contained in both maximal ideals.
 Their images
-\[
+$$
 \overline{\mathfrak m}:=\mathfrak m/(f^3),
 \qquad
 \overline{\mathfrak n}:=\mathfrak n/(f^3)
-\]
+$$
 are therefore maximal ideals of $R_2$.
 They are distinct because, for example,
-\[
+$$
 X\in\mathfrak m
-\]
+$$
 but
-\[
+$$
 X\notin\mathfrak n
-\]
+$$
 as $X(-1,1)=-1\neq0$.
 Thus $R_2$ is not local.
 :::
@@ -161,26 +161,26 @@ Thus $R_2$ is not local.
 
 ::: pf-step
 The ideal
-\[
+$$
 \mathfrak p:=(f)/(f^3)\subset R_2
-\]
+$$
 is prime but not maximal.
 
 ::: pf-proof
 The quotient by $\mathfrak p$ is
-\[
+$$
 R_2/\mathfrak p
 \cong
 \QQ[X,Y]/(f).
-\]
+$$
 Since
-\[
+$$
 f=X+Y^2,
-\]
+$$
 substituting $X=-Y^2$ gives an isomorphism
-\[
+$$
 \QQ[X,Y]/(X+Y^2)\cong\QQ[Y].
-\]
+$$
 The ring $\QQ[Y]$ is an integral domain, so $\mathfrak p$ is prime.
 It is not a field, so $\mathfrak p$ is not maximal.
 :::
@@ -193,9 +193,9 @@ There are no prime ideals of $R_1$ which are not maximal.
 ::: pf-proof
 Every prime ideal contains every nilpotent element.
 In $R_1$, the ideal
-\[
+$$
 \mathfrak m_1=(f)/(f^3)
-\]
+$$
 consists of nilpotent elements modulo $(f^3)$ in the sense that every element of the ideal has a sufficiently high power equal to zero.
 Thus every prime ideal of $R_1$ contains $\mathfrak m_1$.
 But step [](#r1-local){.pf-ref} shows that $\mathfrak m_1$ is maximal.

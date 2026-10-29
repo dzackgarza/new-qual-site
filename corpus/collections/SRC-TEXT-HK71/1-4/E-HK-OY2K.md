@@ -33,17 +33,17 @@ $$
 
 ::: {.solution}
 All solutions are
-\[
+$$
 (x_1,x_2,x_3,x_4,x_5)
 =(1+2s-t,\ 2-s+t,\ s,\ t,\ 1),
 \qquad s,t\in F.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 Row reduction of the augmented matrix yields
-\[
+$$
 \left[
 \begin{array}{ccccc|c}
 1&0&-2&1&0&1\\
@@ -52,7 +52,7 @@ Row reduction of the augmented matrix yields
 0&0&0&0&0&0
 \end{array}
 \right].
-\]
+$$
 
 ::: pf-proof
 Applying Gaussian elimination to the coefficient matrix together with the
@@ -66,21 +66,21 @@ The displayed family is exactly the solution set.
 
 ::: pf-proof
 The reduced system is
-\[
+$$
 x_1-2x_3+x_4=1,
 \qquad
 x_2+x_3-x_4=2,
 \qquad
 x_5=1.
-\]
+$$
 Set the free variables $x_3=s$ and $x_4=t$. Then
-\[
+$$
 x_1=1+2s-t,
 \qquad
 x_2=2-s+t,
 \qquad
 x_5=1,
-\]
+$$
 which gives precisely the stated solutions.
 :::
 

@@ -28,9 +28,9 @@ Give an example to show that if $X$ is paracompact, it does not follow that for 
 :::
 
 ::: {.solution}
-Take \(X=\RR\), which is metrizable and hence paracompact, and consider the open cover
-\[
+Take $X=\RR$, which is metrizable and hence paracompact, and consider the open cover
+$$
 \mathcal U=\{(-n,n):n\in\ZZ_+\}.
-\]
-Any subcollection that covers \(\RR\) must contain intervals with arbitrarily large \(n\), so it must be infinite. But every member of \(\mathcal U\) contains \(0\). Hence any infinite subcollection fails even to be point-finite at \(0\), and therefore cannot be locally finite. Thus this open cover has no locally finite subcover, although \(X\) is paracompact.
+$$
+Any subcollection that covers $\RR$ must contain intervals with arbitrarily large $n$, so it must be infinite. But every member of $\mathcal U$ contains $0$. Hence any infinite subcollection fails even to be point-finite at $0$, and therefore cannot be locally finite. Thus this open cover has no locally finite subcover, although $X$ is paracompact.
 :::

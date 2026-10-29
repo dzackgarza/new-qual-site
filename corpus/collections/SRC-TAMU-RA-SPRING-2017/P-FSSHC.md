@@ -39,20 +39,20 @@ If $a=(a_n)\in B$ has $|a_m|<1$ for some $m$, then $a$ is not an extreme point o
 ::: pf-proof
 
 Choose $\delta>0$ with
-\[
+$$
 |a_m\pm\delta|\le1.
-\]
+$$
 Define $b^+,b^-\in C$ by changing only the $m$-th coordinate:
-\[
+$$
 b_n^\pm=a_n\quad(n\ne m),
 \qquad
 b_m^\pm=a_m\pm\delta.
-\]
+$$
 Changing one coordinate preserves convergence, and $\|b^\pm\|_\infty\le1$, so $b^\pm\in B$.
 They are distinct and
-\[
+$$
 a={b^++b^-\over2}.
-\]
+$$
 
 :::
 
@@ -65,23 +65,23 @@ If $a=(a_n)\in B$ satisfies $|a_n|=1$ for every $n$, then $a$ is an extreme poin
 ::: pf-proof
 
 Suppose
-\[
+$$
 a=\lambda b+(1-\lambda)c,
 \qquad
 0<\lambda<1,
 \qquad
 b,c\in B.
-\]
+$$
 For each $n$,
-\[
+$$
 1=|a_n|
 \le\lambda|b_n|+(1-\lambda)|c_n|
 \le1.
-\]
+$$
 Since the scalars are real and $a_n=\pm1$, equality forces
-\[
+$$
 b_n=c_n=a_n.
-\]
+$$
 Thus $b=c=a$.
 
 :::
@@ -91,10 +91,10 @@ Thus $b=c=a$.
 ::: {.pf-step #s3}
 
 The extreme points are exactly the convergent sign sequences:
-\[
+$$
 \operatorname{Ext}(B)
 =\left\{a\in C:|a_n|=1\text{ for all }n\right\}.
-\]
+$$
 Equivalently, they are the $\{\pm1\}$-valued sequences that are eventually constant.
 
 ::: pf-proof
@@ -109,21 +109,21 @@ The first description follows from steps [](#s1){.pf-ref} and [](#s2){.pf-ref}. 
 
 Let $a=(a_n)\in B$ and let $L=\lim_n a_n$.
 For each $N$, define
-\[
+$$
 a^{(N)}=(a_1,\ldots,a_N,L,L,\ldots).
-\]
+$$
 Then
-\[
+$$
 \|a-a^{(N)}\|_\infty\longrightarrow0.
-\]
+$$
 
 ::: pf-proof
 
 We have
-\[
+$$
 \|a-a^{(N)}\|_\infty
 =\sup_{n>N}|a_n-L|,
-\]
+$$
 which tends to $0$ because $a_n\to L$.
 
 :::
@@ -137,20 +137,20 @@ Every $a^{(N)}$ in step [](#s4){.pf-ref} belongs to $\operatorname{conv}(\operat
 ::: pf-proof
 
 The vector
-\[
+$$
 (a_1,\ldots,a_N,L)
-\]
+$$
 lies in the cube $[-1,1]^{N+1}$.
 This cube is the convex hull of its vertices $\{\pm1\}^{N+1}$.
 For each vertex
-\[
+$$
 (\varepsilon_1,\ldots,\varepsilon_N,\varepsilon_\infty),
-\]
+$$
 associate the convergent sequence
-\[
+$$
 (\varepsilon_1,\ldots,\varepsilon_N,
 \varepsilon_\infty,\varepsilon_\infty,\ldots),
-\]
+$$
 which is an extreme point by step [](#s3){.pf-ref}. The same convex combination representing $(a_1,\ldots,a_N,L)$ in the cube represents $a^{(N)}$ as a convex combination of these extreme sequences.
 
 :::
@@ -160,17 +160,17 @@ which is an extreme point by step [](#s3){.pf-ref}. The same convex combination 
 ::: pf-step
 
 The unit ball is the norm-closed convex hull of its extreme points:
-\[
+$$
 \boxed{B=\overline{\operatorname{conv}}(\operatorname{Ext}(B))}.
-\]
+$$
 
 ::: pf-proof
 
 By steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, every $a\in B$ is a norm limit of elements of $\operatorname{conv}(\operatorname{Ext}(B))$.
 Thus
-\[
+$$
 B\subseteq\overline{\operatorname{conv}}(\operatorname{Ext}(B)).
-\]
+$$
 The reverse inclusion holds because $B$ is closed and convex and contains all its extreme points.
 
 :::

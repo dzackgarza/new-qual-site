@@ -32,24 +32,24 @@ Do you know what quasi-separated means?
 
 ::: {.pf-step #quasi-separated-definition}
 A morphism
-\[
+$$
 f:X\longrightarrow Y
-\]
+$$
 is quasi-separated if its relative diagonal
-\[
+$$
 \Delta_{X/Y}:X\longrightarrow X\times_YX
-\]
+$$
 is quasicompact.
 
 ::: pf-proof
 This is the definition.  Thus quasi-separatedness is obtained from separatedness by weakening the requirement
-\[
+$$
 \Delta_{X/Y}\text{ closed immersion}
-\]
+$$
 to the finiteness condition
-\[
+$$
 \Delta_{X/Y}\text{ quasicompact}.
-\]
+$$
 :::
 
 :::
@@ -59,18 +59,18 @@ A scheme $X$ is quasi-separated if and only if the intersection of any two affin
 
 ::: pf-proof
 Regard quasi-separatedness of $X$ as quasi-separatedness of the structure morphism
-\[
+$$
 X\longrightarrow\operatorname{Spec}\ZZ.
-\]
+$$
 
 For affine opens $U,V\subseteq X$, the inverse image of
-\[
+$$
 U\times V\subseteq X\times X
-\]
+$$
 under the diagonal is
-\[
+$$
 U\cap V.
-\]
+$$
 Since the products $U\times V$ form an affine open cover of $X\times X$, the diagonal is quasicompact exactly when each such inverse image $U\cap V$ is quasicompact.
 :::
 
@@ -83,16 +83,16 @@ Equivalently, $X$ is quasi-separated if the intersection of any two quasicompact
 The implication to affine opens is immediate because affine schemes are quasicompact.
 
 Conversely, let $U,V$ be quasicompact opens.  Choose finite affine covers
-\[
+$$
 U=\bigcup_{i=1}^r U_i,
 \qquad
 V=\bigcup_{j=1}^s V_j.
-\]
+$$
 Then
-\[
+$$
 U\cap V
 =\bigcup_{i,j}(U_i\cap V_j).
-\]
+$$
 If intersections of affine opens are quasicompact, this is a finite union of quasicompact opens and is therefore quasicompact.
 :::
 
@@ -103,9 +103,9 @@ Every separated morphism is quasi-separated.
 
 ::: pf-proof
 If $f$ is separated, then
-\[
+$$
 \Delta_{X/Y}:X\to X\times_YX
-\]
+$$
 is a closed immersion.  Closed immersions are quasicompact, so the diagonal is quasicompact.  Hence $f$ is quasi-separated.
 :::
 
@@ -116,9 +116,9 @@ Every morphism with Noetherian source is quasi-separated; in particular every mo
 
 ::: pf-proof
 If $X$ is Noetherian, every open subset of $X$ is quasicompact.  For the diagonal
-\[
+$$
 \Delta_{X/Y}:X\longrightarrow X\times_YX,
-\]
+$$
 the inverse image of every affine open of the target is an open subset of $X$, hence is quasicompact.  Thus the diagonal is a quasicompact morphism.
 :::
 

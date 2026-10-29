@@ -15,14 +15,14 @@ review: draft
 
 ::: {.problem}
 Let $X$ be a space whose homology is given by
-\[
+$$
 H_k(X; \ZZ) =
 \begin{cases}
 \ZZ_4 & \text{if } k = 2, \\
 \ZZ & \text{if } k = 0, \\
 0 & \text{otherwise.}
 \end{cases}
-\]
+$$
 Compute $H_*(\RP^2 \times X; \ZZ)$ and $H_*(\RP^2 \times X; \ZZ_2)$.
 :::
 

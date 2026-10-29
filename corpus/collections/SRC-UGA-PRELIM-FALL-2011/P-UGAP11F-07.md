@@ -16,9 +16,9 @@ audit:
 
 ::: {.problem}
 Let $f:X\to Y$ be a map of sets and let $S\subseteq Y$. Give, with proof, necessary and sufficient conditions for
-\[
+$$
 f\bigl(f^{-1}(S)\bigr)=S.
-\]
+$$
 :::
 
 ::: {.solution}

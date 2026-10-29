@@ -18,20 +18,20 @@ audit:
 
 ::: {.problem}
 Problem 2. Given $f\in L^2(\RR)$ and $h>0$, define
-\[
+$$
 Q(f,h)=\int_{\RR}\frac{2f(x)-f(x+h)-f(x-h)}{h^2}\,\overline{f(x)}\,dx.
-\]
+$$
 
 (a) Show that
-\[
+$$
 Q(f,h)\ge0
-\]
+$$
 for all $f\in L^2(\RR)$ and all $h>0$.
 
 (b) Show that the set
-\[
+$$
 E=\left\{f\in L^2(\RR):\limsup_{h\to0}Q(f,h)\le1\right\}
-\]
+$$
 is closed in $L^2(\RR)$.
 :::
 
@@ -42,33 +42,33 @@ is closed in $L^2(\RR)$.
 ::: {.pf-step #s1-1}
 
 For every $f\in L^2(\RR)$ and $h>0$,
-\[
+$$
 \boxed{
 Q(f,h)
 =
 \frac1{h^2}
 \int_{\RR}|f(x+h)-f(x)|^2\,dx}.
-\]
+$$
 
 
 ::: pf-proof
 
 Set
-\[
+$$
 A_h
 =
 \int_{\RR}f(x+h)\overline{f(x)}\,dx.
-\]
+$$
 By the change of variables $y=x-h$,
-\[
+$$
 \int_{\RR}f(x-h)\overline{f(x)}\,dx
 =
 \int_{\RR}f(y)\overline{f(y+h)}\,dy
 =
 \overline{A_h}.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 h^2Q(f,h)
 &=
@@ -79,9 +79,9 @@ h^2Q(f,h)
 2\|f\|_2^2
 -2\operatorname{Re}A_h.
 \end{aligned}
-\]
+$$
 Translation preserves the $L^2$ norm, so
-\[
+$$
 \begin{aligned}
 \|f(\cdot+h)-f\|_2^2
 &=
@@ -92,7 +92,7 @@ Translation preserves the $L^2$ norm, so
 2\|f\|_2^2
 -2\operatorname{Re}A_h.
 \end{aligned}
-\]
+$$
 The two expressions are equal.
 
 :::
@@ -102,9 +102,9 @@ The two expressions are equal.
 ::: {.pf-step #s1-2}
 
 Hence
-\[
+$$
 \boxed{Q(f,h)\ge0}.
-\]
+$$
 
 
 ::: pf-proof
@@ -119,26 +119,26 @@ $h^2>0$.
 ::: {.pf-step #s1-3}
 
 Let $\widehat f$ denote the unitary Fourier transform of $f$. Then
-\[
+$$
 \boxed{
 Q(f,h)
 =
 \int_{\RR}
 \frac{4\sin^2(h\xi/2)}{h^2}
 |\widehat f(\xi)|^2\,d\xi}.
-\]
+$$
 
 
 ::: pf-proof
 
 Translation satisfies
-\[
+$$
 \widehat{f(\cdot+h)}(\xi)
 =
 e^{ih\xi}\widehat f(\xi).
-\]
+$$
 By Plancherel and step [](#s1-1){.pf-ref},
-\[
+$$
 \begin{aligned}
 Q(f,h)
 &=
@@ -155,7 +155,7 @@ Q(f,h)
 \frac{4\sin^2(h\xi/2)}{h^2}
 |\widehat f(\xi)|^2\,d\xi.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -164,32 +164,32 @@ Q(f,h)
 ::: {.pf-step #s1-4}
 
 For every $\xi\in\RR$,
-\[
+$$
 \frac{4\sin^2(h\xi/2)}{h^2}
 \longrightarrow
 \xi^2
 \qquad(h\to0),
-\]
+$$
 and
-\[
+$$
 0
 \le
 \frac{4\sin^2(h\xi/2)}{h^2}
 \le
 \xi^2.
-\]
+$$
 
 
 ::: pf-proof
 
 The limit follows from
-\[
+$$
 \frac{\sin t}{t}\to1.
-\]
+$$
 The bound follows from
-\[
+$$
 |\sin t|\le|t|.
-\]
+$$
 
 :::
 
@@ -198,28 +198,28 @@ The bound follows from
 ::: {.pf-step #s1-5}
 
 For every $f\in L^2(\RR)$,
-\[
+$$
 \boxed{
 \lim_{h\to0}Q(f,h)
 =
 \int_{\RR}
 \xi^2|\widehat f(\xi)|^2\,d\xi}
-\]
+$$
 as an equality in $[0,\infty]$.
 
 
 ::: pf-proof
 
 If
-\[
+$$
 \int_{\RR}\xi^2|\widehat f(\xi)|^2\,d\xi<\infty,
-\]
+$$
 then steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} allow the dominated convergence theorem, yielding
 the equality.
 
 If the weighted integral is infinite, Fatou's lemma applied to step [](#s1-3){.pf-ref}
 gives
-\[
+$$
 \begin{aligned}
 \liminf_{h\to0}Q(f,h)
 &\ge
@@ -232,7 +232,7 @@ gives
 \xi^2|\widehat f(\xi)|^2\,d\xi
 =\infty.
 \end{aligned}
-\]
+$$
 Thus $Q(f,h)\to\infty$ in this case.
 
 :::
@@ -242,7 +242,7 @@ Thus $Q(f,h)\to\infty$ in this case.
 ::: {.pf-step #s1-6}
 
 Consequently,
-\[
+$$
 \boxed{
 E
 =
@@ -252,16 +252,16 @@ f\in L^2(\RR):
 \xi^2|\widehat f(\xi)|^2\,d\xi
 \le1
 \right\}}.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-5){.pf-ref}, the limit of $Q(f,h)$ exists in $[0,\infty]$. Therefore
-\[
+$$
 \limsup_{h\to0}Q(f,h)
 \le1
-\]
+$$
 is equivalent to the displayed weighted Fourier integral being at most $1$.
 
 :::
@@ -271,15 +271,15 @@ is equivalent to the displayed weighted Fourier integral being at most $1$.
 ::: {.pf-step #s1-7}
 
 Suppose
-\[
+$$
 f_n\in E
 \qquad\text{and}\qquad
 f_n\to f
-\]
+$$
 in $L^2(\RR)$. Then
-\[
+$$
 \widehat f_n\to\widehat f
-\]
+$$
 in $L^2(\RR)$.
 
 
@@ -295,9 +295,9 @@ $L^2(\RR)$.
 ::: {.pf-step #s1-8}
 
 There is a subsequence
-\[
+$$
 \widehat f_{n_j}
-\]
+$$
 converging to $\widehat f$ almost everywhere.
 
 
@@ -313,17 +313,17 @@ everywhere. Apply this to the convergence in step [](#s1-7){.pf-ref}.
 ::: {.pf-step #s1-9}
 
 One has
-\[
+$$
 \int_{\RR}
 \xi^2|\widehat f(\xi)|^2\,d\xi
 \le1.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-8){.pf-ref} and Fatou's lemma,
-\[
+$$
 \begin{aligned}
 \int_{\RR}
 \xi^2|\widehat f(\xi)|^2\,d\xi
@@ -332,13 +332,13 @@ By step [](#s1-8){.pf-ref} and Fatou's lemma,
 \int_{\RR}
 \xi^2|\widehat f_{n_j}(\xi)|^2\,d\xi.
 \end{aligned}
-\]
+$$
 Since every $f_{n_j}\in E$, step [](#s1-6){.pf-ref} gives
-\[
+$$
 \int_{\RR}
 \xi^2|\widehat f_{n_j}(\xi)|^2\,d\xi
 \le1.
-\]
+$$
 Hence the liminf is at most $1$.
 
 :::
@@ -348,9 +348,9 @@ Hence the liminf is at most $1$.
 ::: {.pf-step #s1-10}
 
 Therefore
-\[
+$$
 \boxed{f\in E}.
-\]
+$$
 
 
 ::: pf-proof

@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Let $f:\RR\to\RR$ be continuous and define
-\[
+$$
 f_n(x)=\frac1n\sum_{k=0}^{n-1}f\left(x+\frac{k}{n}\right).
-\]
+$$
 Prove that $(f_n)$ converges uniformly to a limit on every finite interval $[a,b]$.
 :::
 

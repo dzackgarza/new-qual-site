@@ -23,35 +23,35 @@ Problem 2. Let $\{f_n\}$ denote a bounded sequence in $L^2([0,1])$. Suppose the 
 ::: {.solution}
 
 Let
-\[
+$$
 f_n(x)\to f(x)
-\]
-for almost every \(x\in[0,1]\), and assume
-\[
+$$
+for almost every $x\in[0,1]$, and assume
+$$
 \sup_n\|f_n\|_2\le M.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-The limit \(f\) belongs to \(L^2([0,1])\) and satisfies
-\[
+The limit $f$ belongs to $L^2([0,1])$ and satisfies
+$$
 \boxed{\|f\|_2\le M}.
-\]
+$$
 
 
 ::: pf-proof
 
 By Fatou's lemma,
-\[
+$$
 \int_0^1|f|^2
 \le
 \liminf_{n\to\infty}
 \int_0^1|f_n|^2
 \le
 M^2.
-\]
+$$
 
 :::
 
@@ -60,16 +60,16 @@ M^2.
 ::: {.pf-step #s1-2}
 
 One has
-\[
+$$
 \boxed{
 h_n(x)\to0}
-\]
-for almost every \(x\).
+$$
+for almost every $x$.
 
 
 ::: pf-proof
 
-This is immediate from the assumed a.e. convergence \(f_n\to f\).
+This is immediate from the assumed a.e. convergence $f_n\to f$.
 
 :::
 
@@ -77,17 +77,17 @@ This is immediate from the assumed a.e. convergence \(f_n\to f\).
 
 ::: {.pf-step #s1-3}
 
-The sequence \((h_n)\) is uniformly bounded in \(L^2\):
-\[
+The sequence $(h_n)$ is uniformly bounded in $L^2$:
+$$
 \boxed{
 \|h_n\|_2\le2M}.
-\]
+$$
 
 
 ::: pf-proof
 
 By the triangle inequality and step [](#s1-1){.pf-ref},
-\[
+$$
 \|h_n\|_2
 \le
 \|f_n\|_2+\|f\|_2
@@ -95,7 +95,7 @@ By the triangle inequality and step [](#s1-1){.pf-ref},
 M+M
 =
 2M.
-\]
+$$
 
 :::
 
@@ -103,16 +103,16 @@ M+M
 
 ::: {.pf-step #s1-4}
 
-Choose \(\delta>0\) so small that
-\[
+Choose $\delta>0$ so small that
+$$
 \boxed{
 2M\sqrt\delta<\frac{\varepsilon}{2}}.
-\]
+$$
 
 
 ::: pf-proof
 
-The left-hand side tends to \(0\) as \(\delta\downarrow0\).
+The left-hand side tends to $0$ as $\delta\downarrow0$.
 
 :::
 
@@ -121,22 +121,22 @@ The left-hand side tends to \(0\) as \(\delta\downarrow0\).
 ::: {.pf-step #s1-5}
 
 By Egorov's theorem, there exists a measurable set
-\[
+$$
 E\subset[0,1]
-\]
+$$
 with
-\[
+$$
 |E|<\delta
-\]
-such that \(h_n\to0\) uniformly on
-\[
+$$
+such that $h_n\to0$ uniformly on
+$$
 [0,1]\setminus E.
-\]
+$$
 
 
 ::: pf-proof
 
-The underlying measure space has finite measure, and \(h_n\to0\) almost everywhere by step [](#s1-2){.pf-ref}.
+The underlying measure space has finite measure, and $h_n\to0$ almost everywhere by step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -144,13 +144,13 @@ The underlying measure space has finite measure, and \(h_n\to0\) almost everywhe
 
 ::: pf-step
 
-For sufficiently large \(n\),
-\[
+For sufficiently large $n$,
+$$
 \boxed{
 \sup_{x\in[0,1]\setminus E}|h_n(x)|
 <
 \frac{\varepsilon}{2}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -163,19 +163,19 @@ Use the uniform convergence from step [](#s1-5){.pf-ref}.
 
 ::: {.pf-step #s1-7}
 
-Hence for all sufficiently large \(n\),
-\[
+Hence for all sufficiently large $n$,
+$$
 \int_{[0,1]\setminus E}
 |h_n(x)|\,dx
 <
 \frac{\varepsilon}{2}.
-\]
+$$
 
 
 ::: pf-proof
 
-The complement has measure at most \(1\), so
-\[
+The complement has measure at most $1$, so
+$$
 \int_{[0,1]\setminus E}|h_n|
 \le
 \sup_{[0,1]\setminus E}|h_n|
@@ -183,7 +183,7 @@ The complement has measure at most \(1\), so
 |[0,1]\setminus E|
 <
 \frac{\varepsilon}{2}.
-\]
+$$
 
 :::
 
@@ -191,18 +191,18 @@ The complement has measure at most \(1\), so
 
 ::: pf-step
 
-On \(E\),
-\[
+On $E$,
+$$
 \int_E|h_n|
 \le
 \|h_n\|_2\,|E|^{1/2}.
-\]
+$$
 
 
 ::: pf-proof
 
 Apply Cauchy--Schwarz:
-\[
+$$
 \int_E|h_n|
 =
 \int_E|h_n|\cdot1
@@ -211,7 +211,7 @@ Apply Cauchy--Schwarz:
 \int_E|h_n|^2
 \right)^{1/2}
 |E|^{1/2}.
-\]
+$$
 
 :::
 
@@ -220,18 +220,18 @@ Apply Cauchy--Schwarz:
 ::: {.pf-step #s1-9}
 
 Therefore
-\[
+$$
 \int_E|h_n|
 <
 \frac{\varepsilon}{2}
-\]
-for every \(n\).
+$$
+for every $n$.
 
 
 ::: pf-proof
 
-Use step [](#s1-3){.pf-ref}, the bound \(|E|<\delta\), and step [](#s1-4){.pf-ref}:
-\[
+Use step [](#s1-3){.pf-ref}, the bound $|E|<\delta$, and step [](#s1-4){.pf-ref}:
+$$
 \int_E|h_n|
 \le
 2M\sqrt{|E|}
@@ -239,7 +239,7 @@ Use step [](#s1-3){.pf-ref}, the bound \(|E|<\delta\), and step [](#s1-4){.pf-re
 2M\sqrt\delta
 <
 \frac{\varepsilon}{2}.
-\]
+$$
 
 :::
 
@@ -248,16 +248,16 @@ Use step [](#s1-3){.pf-ref}, the bound \(|E|<\delta\), and step [](#s1-4){.pf-re
 ::: {.pf-step #s1-10}
 
 Hence
-\[
+$$
 \boxed{
 \|h_n\|_1\to0}.
-\]
+$$
 
 
 ::: pf-proof
 
-For all sufficiently large \(n\),
-\[
+For all sufficiently large $n$,
+$$
 \|h_n\|_1
 =
 \int_{[0,1]\setminus E}|h_n|
@@ -265,7 +265,7 @@ For all sufficiently large \(n\),
 \int_E|h_n|
 <
 \varepsilon
-\]
+$$
 by steps [](#s1-7){.pf-ref} and [](#s1-9){.pf-ref}.
 
 :::
@@ -274,12 +274,12 @@ by steps [](#s1-7){.pf-ref} and [](#s1-9){.pf-ref}.
 
 ::: pf-step
 
-For \(R>0\), define the truncation
-\[
+For $R>0$, define the truncation
+$$
 g_R
 =
 g\,\mathbf 1_{\{|g|\le R\}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -293,30 +293,30 @@ This is a measurable bounded function.
 ::: {.pf-step #s1-12}
 
 One has
-\[
+$$
 \boxed{
 g_R\in L^\infty\cap L^2}
-\]
+$$
 and
-\[
+$$
 \boxed{
 \|g-g_R\|_2\to0}
-\]
-as \(R\to\infty\).
+$$
+as $R\to\infty$.
 
 
 ::: pf-proof
 
-The function \(g_R\) is bounded by \(R\), hence lies in \(L^\infty\), and clearly lies in \(L^2\).
+The function $g_R$ is bounded by $R$, hence lies in $L^\infty$, and clearly lies in $L^2$.
 
 Moreover,
-\[
+$$
 |g-g_R|^2
 =
 |g|^2\mathbf 1_{\{|g|>R\}}
 \to0
-\]
-pointwise and is dominated by \(|g|^2\in L^1\). Dominated convergence gives the \(L^2\)-convergence.
+$$
+pointwise and is dominated by $|g|^2\in L^1$. Dominated convergence gives the $L^2$-convergence.
 
 :::
 
@@ -324,24 +324,24 @@ pointwise and is dominated by \(|g|^2\in L^1\). Dominated convergence gives the 
 
 ::: {.pf-step #s1-13}
 
-For fixed \(R\),
-\[
+For fixed $R$,
+$$
 \boxed{
 \int_0^1h_n g_R\to0}.
-\]
+$$
 
 
 ::: pf-proof
 
-Since \(g_R\in L^\infty\),
-\[
+Since $g_R\in L^\infty$,
+$$
 \left|
 \int h_n g_R
 \right|
 \le
 \|g_R\|_\infty
 \|h_n\|_1.
-\]
+$$
 Apply step [](#s1-10){.pf-ref}.
 
 :::
@@ -350,21 +350,21 @@ Apply step [](#s1-10){.pf-ref}.
 
 ::: {.pf-step #s1-14}
 
-For every \(n\),
-\[
+For every $n$,
+$$
 \left|
 \int_0^1
 h_n(g-g_R)
 \right|
 \le
 2M\,\|g-g_R\|_2.
-\]
+$$
 
 
 ::: pf-proof
 
 By Cauchy--Schwarz and step [](#s1-3){.pf-ref},
-\[
+$$
 \left|
 \int h_n(g-g_R)
 \right|
@@ -373,7 +373,7 @@ By Cauchy--Schwarz and step [](#s1-3){.pf-ref},
 \|g-g_R\|_2
 \le
 2M\|g-g_R\|_2.
-\]
+$$
 
 :::
 
@@ -381,12 +381,12 @@ By Cauchy--Schwarz and step [](#s1-3){.pf-ref},
 
 ::: {.pf-step #s1-15}
 
-Given \(\varepsilon>0\), choose \(R\) so large that
-\[
+Given $\varepsilon>0$, choose $R$ so large that
+$$
 2M\|g-g_R\|_2
 <
 \frac{\varepsilon}{2}.
-\]
+$$
 
 
 ::: pf-proof
@@ -399,14 +399,14 @@ Use the convergence in step [](#s1-12){.pf-ref}.
 
 ::: {.pf-step #s1-16}
 
-For this fixed \(R\), choose \(N\) so large that for \(n\ge N\),
-\[
+For this fixed $R$, choose $N$ so large that for $n\ge N$,
+$$
 \left|
 \int h_n g_R
 \right|
 <
 \frac{\varepsilon}{2}.
-\]
+$$
 
 
 ::: pf-proof
@@ -419,26 +419,26 @@ Use step [](#s1-13){.pf-ref}.
 
 ::: {.pf-step #s1-17}
 
-Then for \(n\ge N\),
-\[
+Then for $n\ge N$,
+$$
 \left|
 \int_0^1h_n g
 \right|
 <
 \varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
 Split:
-\[
+$$
 \int h_n g
 =
 \int h_n g_R
 +
 \int h_n(g-g_R),
-\]
+$$
 and use steps [](#s1-14){.pf-ref} through [](#s1-16){.pf-ref}.
 
 :::
@@ -448,25 +448,25 @@ and use steps [](#s1-14){.pf-ref} through [](#s1-16){.pf-ref}.
 ::: {.pf-step #s1-18}
 
 Therefore
-\[
+$$
 \boxed{
 \int_0^1f_n g
 \to
 \int_0^1f g}
-\]
-for every \(g\in L^2([0,1])\).
+$$
+for every $g\in L^2([0,1])$.
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 h_n=f_n-f,
-\]
+$$
 step [](#s1-17){.pf-ref} says
-\[
+$$
 \int h_n g\to0.
-\]
+$$
 
 :::
 
@@ -475,16 +475,16 @@ step [](#s1-17){.pf-ref} says
 ::: {.pf-step #s1-19}
 
 Hence
-\[
+$$
 \boxed{
 f_n\rightharpoonup f
 \text{ weakly in }L^2([0,1]).}
-\]
+$$
 
 
 ::: pf-proof
 
-Step [](#s1-18){.pf-ref} is exactly the definition of weak convergence in the Hilbert space \(L^2([0,1])\).
+Step [](#s1-18){.pf-ref} is exactly the definition of weak convergence in the Hilbert space $L^2([0,1])$.
 
 :::
 

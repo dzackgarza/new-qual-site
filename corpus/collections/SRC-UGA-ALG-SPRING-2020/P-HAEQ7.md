@@ -67,9 +67,9 @@ By step [](#s1){.pf-ref}, $(J_i-\lambda_i I_{m_i})^{m_i}=N_i^{m_i}=0$. By step [
 ::: {.pf-step #s4}
 
 The operator $T$ satisfies
-\[
+$$
 \boxed{p(T)=0}.
-\]
+$$
 
 ::: pf-proof
 

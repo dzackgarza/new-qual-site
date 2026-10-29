@@ -27,16 +27,16 @@ Compute a presentation for the fundamental group of $X$.
 :::
 
 ::: {.solution}
-Let \(a,b\) be the standard generators of
-\[
+Let $a,b$ be the standard generators of
+$$
 \pi_1(T^2)\cong\langle a,b\mid [a,b]=1\rangle.
-\]
-The attaching map winds once positively around each circle factor, so its class is \(ab\). Attaching the disk kills this element. Hence
-\[
+$$
+The attaching map winds once positively around each circle factor, so its class is $ab$. Attaching the disk kills this element. Hence
+$$
 \pi_1(X)\cong\langle a,b\mid [a,b],ab\rangle.
-\]
-From \(ab=1\) we obtain \(b=a^{-1}\), after which the commutator relation is automatic. Therefore
-\[
+$$
+From $ab=1$ we obtain $b=a^{-1}$, after which the commutator relation is automatic. Therefore
+$$
 \boxed{\pi_1(X)\cong\ZZ}.
-\]
+$$
 :::

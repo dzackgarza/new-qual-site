@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Prove that
-\[
+$$
 \alpha=\sqrt3+\sqrt5
-\]
+$$
 is algebraic over $\QQ$ by explicitly finding a polynomial in $\QQ[x]$ having $\alpha$ as a root.
 :::
 

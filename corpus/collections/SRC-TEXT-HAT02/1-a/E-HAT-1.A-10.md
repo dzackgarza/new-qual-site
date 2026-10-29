@@ -32,9 +32,9 @@ Show there is a finite graph $Z \supset Y$ having the same vertices as $Y$, such
 
 ::: {.solution}
 Write the rose as
-\[
+$$
 X=S^1_1\vee\cdots\vee S^1_n
-\]
+$$
 and orient and label the $i$th circle by $a_i$.
 The covering graph $\widetilde X$ inherits these oriented labels.
 Let $V$ be the finite vertex set of $Y$.
@@ -44,9 +44,9 @@ Let $V$ be the finite vertex set of $Y$.
 ::: pf-step
 
 For each label $a_i$, the $a_i$-edges already present in $Y$ define a partial bijection
-\[
+$$
 \sigma_i:D_i\longrightarrow R_i
-\]
+$$
 between subsets $D_i,R_i\subseteq V$.
 
 ::: pf-proof
@@ -66,13 +66,13 @@ The complements $V\setminus D_i$ and $V\setminus R_i$ have the same finite cardi
 ::: pf-proof
 
 Since $\sigma_i:D_i\to R_i$ is a bijection,
-\[
+$$
 |D_i|=|R_i|.
-\]
+$$
 Subtracting from the finite number $|V|$ gives
-\[
+$$
 |V\setminus D_i|=|V\setminus R_i|.
-\]
+$$
 
 :::
 
@@ -81,16 +81,16 @@ Subtracting from the finite number $|V|$ gives
 ::: pf-step
 
 Extend each partial bijection $\sigma_i$ to a permutation
-\[
+$$
 \bar\sigma_i:V\longrightarrow V.
-\]
+$$
 
 ::: pf-proof
 
 Choose any bijection
-\[
+$$
 V\setminus D_i\longrightarrow V\setminus R_i
-\]
+$$
 and combine it with $\sigma_i$.
 Because the two domains are disjoint and the two images are disjoint, the result is a permutation of $V$ extending $\sigma_i$.
 
@@ -116,9 +116,9 @@ No new vertices are introduced.
 ::: {.pf-step #s5}
 
 The evident label-preserving map
-\[
+$$
 Z\longrightarrow X
-\]
+$$
 is a finite-sheeted covering map.
 
 ::: pf-proof
@@ -137,9 +137,9 @@ Its number of sheets is $|V|<\infty$.
 ::: pf-step
 
 Therefore the projection $Y\to X$ extends to the required finite covering
-\[
+$$
 \boxed{Z\to X}
-\]
+$$
 with $V(Z)=V(Y)$.
 
 ::: pf-proof

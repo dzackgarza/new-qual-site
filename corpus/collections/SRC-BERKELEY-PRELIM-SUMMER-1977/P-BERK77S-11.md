@@ -27,13 +27,13 @@ audit:
 
 ::: {.problem}
 Let $f(x,t)$ be a $C^1$ function satisfying
-\[
+$$
 \frac{\partial f}{\partial x}=\frac{\partial f}{\partial t}.
-\]
+$$
 Suppose $f(x,0)>0$ for every $x$. Prove that
-\[
+$$
 f(x,t)>0
-\]
+$$
 for every $x,t$.
 :::
 

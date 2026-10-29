@@ -33,34 +33,34 @@ This can be done with short exact sequences in which all the groups are either $
 
 ::: {.solution}
 Use the five-lemma notation
-\[
+$$
 \begin{array}{ccccccccc}
 A&\longrightarrow&B&\longrightarrow&C&\longrightarrow&D&\longrightarrow&E\\
 \downarrow\alpha&&\downarrow\beta&&\downarrow\gamma&&\downarrow\delta&&\downarrow\varepsilon\\
 A'&\longrightarrow&B'&\longrightarrow&C'&\longrightarrow&D'&\longrightarrow&E'.
 \end{array}
-\]
+$$
 Take the upper exact sequence to be
-\[
+$$
 0\longrightarrow0\longrightarrow\ZZ
 \xrightarrow{\operatorname{id}}\ZZ\longrightarrow0
-\]
+$$
 and the lower exact sequence to be
-\[
+$$
 0\longrightarrow\ZZ
 \xrightarrow{\operatorname{id}}\ZZ
 \longrightarrow0\longrightarrow0.
-\]
+$$
 Thus
-\[
+$$
 (A,B,C,D,E)=(0,0,\ZZ,\ZZ,0)
-\]
+$$
 and
-\[
+$$
 (A',B',C',D',E')=(0,\ZZ,\ZZ,0,0).
-\]
+$$
 Define
-\[
+$$
 \alpha=0,
 \qquad
 \beta=0,
@@ -70,7 +70,7 @@ Define
 \delta=0,
 \qquad
 \varepsilon=0.
-\]
+$$
 
 ::: pf
 
@@ -105,13 +105,13 @@ The four outer vertical maps are zero but the middle map is nonzero.
 ::: pf-proof
 
 By construction
-\[
+$$
 \alpha=\beta=\delta=\varepsilon=0,
-\]
+$$
 whereas
-\[
+$$
 \gamma=\operatorname{id}_{\ZZ}\ne0.
-\]
+$$
 
 :::
 

@@ -56,21 +56,21 @@ Part (a) is false.
 ::: pf-proof
 
 Take $X=\RR$ with Lebesgue measure and let
-\[
+$$
 g_n=f_n=\mathbf1_{[n,n+1]}.
-\]
+$$
 Then $f_n,g_n\in L^1$, $|f_n|\le g_n$, and
-\[
+$$
 \int_{\RR}g_n\,dx=1
-\]
+$$
 for every $n$. Moreover, for every fixed $x\in\RR$,
-\[
+$$
 f_n(x)=g_n(x)\longrightarrow0,
-\]
+$$
 so $f=g=0$ almost everywhere. However
-\[
+$$
 \int f_n\,dx=1\not\longrightarrow0=\int f\,dx.
-\]
+$$
 Thus the assertion is false.
 
 :::
@@ -84,27 +84,27 @@ Part (b) is false.
 ::: pf-proof
 
 Let
-\[
+$$
 F(x,y)=\frac{xy}{(x^2+y^2)^2}
-\]
+$$
 away from the origin and define $F(0,0)=0$. For each fixed $y\ne0$, the function $x\mapsto F(x,y)$ is integrable on $[-1,1]$ and odd, so
-\[
+$$
 \int_{-1}^1F(x,y)\,dx=0.
-\]
+$$
 The same holds with $x$ and $y$ interchanged. Hence both iterated integrals exist and equal $0$.
 
 Nevertheless $F$ is not integrable on the square. In polar coordinates near the origin,
-\[
+$$
 |F(r\cos\theta,r\sin\theta)|
 =\frac{|\cos\theta\sin\theta|}{r^2}.
-\]
+$$
 Thus on any angular sector on which $|\cos\theta\sin\theta|$ is bounded below by a positive constant,
-\[
+$$
 \iint |F|\,dx\,dy
 \gtrsim \int_0^\varepsilon \frac1{r^2}r\,dr
 =\int_0^\varepsilon\frac{dr}{r}
 =\infty.
-\]
+$$
 So equality of the two iterated integrals does not justify an application of Fubini--Tonelli here.
 
 :::
@@ -118,10 +118,10 @@ Part (c) is true.
 ::: pf-proof
 
 The function $f$ is continuous, hence Lebesgue measurable. Since $g$ is measurable, $f-g$ is measurable. Therefore
-\[
+$$
 \{x:f(x)>g(x)\}
 =\{x:(f-g)(x)>0\}
-\]
+$$
 is Lebesgue measurable.
 
 :::
@@ -135,26 +135,26 @@ Part (d) is true.
 ::: pf-proof
 
 Let $U\subset X^*$ be a nonempty weak*-open set and choose $\phi_0\in U$. There exist $x_1,\dots,x_N\in X$ and $\varepsilon>0$ such that
-\[
+$$
 V:=\{\phi\in X^*:|\phi(x_j)-\phi_0(x_j)|<\varepsilon\text{ for }1\le j\le N\}
 \subset U.
-\]
+$$
 Put
-\[
+$$
 M=\operatorname{span}\{x_1,\dots,x_N\}.
-\]
+$$
 Since $X$ is infinite dimensional, $M\ne X$. By Hahn--Banach there is a nonzero functional $\psi\in X^*$ such that
-\[
+$$
 \psi|_M=0.
-\]
+$$
 Hence for every scalar $t$,
-\[
+$$
 (\phi_0+t\psi)(x_j)=\phi_0(x_j),
-\]
+$$
 so $\phi_0+t\psi\in V\subset U$. But
-\[
+$$
 \|\phi_0+t\psi\|\ge |t|\,\|\psi\|-\|\phi_0\|\longrightarrow\infty
-\]
+$$
 as $|t|\to\infty$. Thus every nonempty weak*-open subset of $X^*$ is norm-unbounded.
 
 :::

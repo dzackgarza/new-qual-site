@@ -26,9 +26,9 @@ For a harder exercise, find an example where Y is locally path connected.)
 
 ::: {.solution}
 Take $X=\QQ$ with its usual subspace topology from $\RR$, take $Y$ to be the same underlying set with the discrete topology, and let
-\[
+$$
 p:Y\to X
-\]
+$$
 be the identity on the underlying set.
 
 ::: pf

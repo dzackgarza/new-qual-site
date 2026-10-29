@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Prove that every finite group of order $n$ is isomorphic to a subgroup of
-\[
+$$
 O(n),
-\]
+$$
 the group of real $n\times n$ orthogonal matrices.
 :::
 

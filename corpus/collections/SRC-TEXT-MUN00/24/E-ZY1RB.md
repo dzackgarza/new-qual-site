@@ -33,9 +33,9 @@ Show that if $X$ is connected, then $X$ is a linear continuum.
 Let $X$ be connected in its order topology.
 
 First, the order must be dense. If $x<y$ and no point lies strictly between them, then
-\[
+$$
 (-\infty,y)\qquad\text{and}\qquad(x,\infty)
-\]
+$$
 are disjoint nonempty open sets whose union is $X$, a separation. Thus for every $x<y$ there is $z$ with $x<z<y$.
 
 Now let $A\subseteq X$ be nonempty and bounded above, and let $B$ be the set of upper bounds of $A$. If $B$ had no least element, then both $B$ and $X-B$ would be nonempty open sets. Indeed, if $b\in B$, choose a smaller upper bound $b'<b$; then $(b',\infty)$ is a neighborhood of $b$ contained in $B$. If $x\notin B$, choose $a\in A$ with $x<a$; then $(-\infty,a)$ is a neighborhood of $x$ contained in $X-B$. These two sets would separate $X$, contradiction.

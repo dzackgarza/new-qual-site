@@ -20,17 +20,17 @@ audit:
 ---
 
 ::: {.problem}
-Let $R$ be a ring with $1$ and let $M$ be a left \(R\dash\)module.
+Let $R$ be a ring with $1$ and let $M$ be a left $R\dash$module.
 If $I$ is a left ideal of $R$, define 
-\[
+$$
 IM \definedas \theset{ \sum_{i=1}^{N < \infty} a_i m_i \st a_i \in I, m_i \in M, n\in \NN}
-,\]
-i.e. the set of finite sums of of elements of the form $am$ where \( a\in I, m\in M \).
+,$$
+i.e. the set of finite sums of of elements of the form $am$ where $a\in I, m\in M$.
 
 a. Prove that $IM \leq M$ is a submodule.
 
-b. Let $M, N$ be left \(R\dash\)modules, $I$ a nilpotent left ideal of $R$, and $f: M\to N$ an \(R\dash\)module morphism.
-Prove that if the induced morphism \( \bar{f}: M/IM \to N/IN \) is surjective, then $f$ is surjective.
+b. Let $M, N$ be left $R\dash$modules, $I$ a nilpotent left ideal of $R$, and $f: M\to N$ an $R\dash$module morphism.
+Prove that if the induced morphism $\bar{f}: M/IM \to N/IN$ is surjective, then $f$ is surjective.
 :::
 
 ::: {.solution}
@@ -45,13 +45,13 @@ The subset $IM\subseteq M$ is a left $R$-submodule.
 ::: pf-proof
 
 For (a), $IM$ contains $0$ and is closed under addition by concatenating finite sums. If
-\[
+$$
 x=\sum_i a_i m_i\in IM
-\]
+$$
 and $r\in R$, then, because $I$ is a left ideal,
-\[
+$$
 rx=\sum_i (ra_i)m_i\in IM.
-\]
+$$
 Thus $IM$ is a left $R$-submodule of $M$.
 
 :::
@@ -66,13 +66,13 @@ Surjectivity of $\bar f:M/IM\to N/IN$ implies $N=f(M)+IN$.
 ::: pf-proof
 
 For (b), surjectivity of $\bar f$ means that for every $n\in N$ there exist $m\in M$ and $u\in IN$ such that
-\[
+$$
 n=f(m)+u.
-\]
+$$
 Hence
-\[
+$$
 N=f(M)+IN.
-\]
+$$
 
 :::
 
@@ -86,17 +86,17 @@ If $I$ is nilpotent, then $f:M\to N$ is surjective.
 ::: pf-proof
 
 Let $Q=N/f(M)$. Since $f(M)$ is a submodule, $Q$ is a left $R$-module. The equality from step [](#s1-2){.pf-ref} gives
-\[
+$$
 Q=IQ.
-\]
+$$
 Iterating,
-\[
+$$
 Q=I^kQ
-\]
+$$
 for every $k\ge1$. If $I$ is nilpotent, choose $k$ with $I^k=0$. Then
-\[
+$$
 Q=I^kQ=0.
-\]
+$$
 Therefore $N=f(M)$, so $f$ is surjective.
 
 :::

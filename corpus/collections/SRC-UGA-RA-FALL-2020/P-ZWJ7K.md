@@ -54,13 +54,13 @@ Open strict superlevel sets imply lower semicontinuity.
 ::: pf-proof
 
 Assume $\{f>a\}$ is open for every $a\in\RR$. Fix $x$ and $a<f(x)$. Since $x\in\{f>a\}$, every sequence $y_n\to x$ is eventually in $\{f>a\}$, so
-\[
+$$
 \liminf_{n\to\infty}f(y_n)\ge a.
-\]
+$$
 Letting $a\uparrow f(x)$ gives
-\[
+$$
 f(x)\le\liminf_{y\to x}f(y).
-\]
+$$
 
 :::
 
@@ -73,9 +73,9 @@ Lower semicontinuity implies open strict superlevel sets.
 ::: pf-proof
 
 Assume $f(x)\le\liminf_{y\to x}f(y)$ at every $x$. If $\{f>a\}$ were not open, there would be $x\in\{f>a\}$ and a sequence $y_n\to x$ with $f(y_n)\le a$. Then
-\[
+$$
 \liminf_{n\to\infty}f(y_n)\le a<f(x),
-\]
+$$
 a contradiction. Thus $\{f>a\}$ is open.
 
 :::
@@ -89,13 +89,13 @@ Take an arbitrary supremum.
 ::: pf-proof
 
 Let
-\[
+$$
 g(x)=\sup_{f\in\mathcal F}f(x),
-\]
+$$
 possibly with value $+\infty$. For every real $a$,
-\[
+$$
 \{g>a\}=\bigcup_{f\in\mathcal F}\{f>a\}.
-\]
+$$
 Every set on the right is open because each $f$ is lower semicontinuous, and arbitrary unions of open sets are open. Hence $g$ is lower semicontinuous as an extended-real-valued function. In particular all strict superlevel sets $\{g>a\}$ are Borel, so $g$ is Borel measurable.
 
 :::

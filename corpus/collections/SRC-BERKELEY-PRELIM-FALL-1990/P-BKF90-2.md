@@ -26,10 +26,10 @@ audit:
 ::: {.problem}
 Let $C$ be the positively oriented unit circle.
 Evaluate
-\[
+$$
 \frac1{2\pi i}\int_C
 \frac{dz}{(z-2)(1+2z)^2(1-3z)^3}.
-\]
+$$
 :::
 
 ::: {.solution}

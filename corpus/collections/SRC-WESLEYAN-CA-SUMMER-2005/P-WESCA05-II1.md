@@ -17,9 +17,9 @@ audit:
 
 ::: {.problem}
 Expand
-\[
+$$
 f(z)=e^{1/z^2}
-\]
+$$
 in a Laurent series on the annulus $0<|z|<\infty$.
 :::
 
@@ -30,15 +30,15 @@ in a Laurent series on the annulus $0<|z|<\infty$.
 ::: {.pf-step #s1-1}
 
 The exponential power series gives
-\[
+$$
 e^w=\sum_{n=0}^{\infty}\frac{w^n}{n!}
-\]
-for every \(w\in\CC\).
+$$
+for every $w\in\CC$.
 
 
 ::: pf-proof
 
-The exponential function is entire, and its Taylor series about \(0\) has infinite radius of convergence.
+The exponential function is entire, and its Taylor series about $0$ has infinite radius of convergence.
 
 :::
 
@@ -46,21 +46,21 @@ The exponential function is entire, and its Taylor series about \(0\) has infini
 
 ::: {.pf-step #s1-2}
 
-For every \(z\ne0\), substituting
-\[
+For every $z\ne0$, substituting
+$$
 w=\frac1{z^2}
-\]
+$$
 into step [](#s1-1){.pf-ref} gives
-\[
+$$
 e^{1/z^2}
 =
 \sum_{n=0}^{\infty}\frac{1}{n!z^{2n}}.
-\]
+$$
 
 
 ::: pf-proof
 
-If \(z\ne0\), then \(w=1/z^2\) is a well-defined complex number. Since the series in step [](#s1-1){.pf-ref} converges for every complex \(w\), this substitution is valid.
+If $z\ne0$, then $w=1/z^2$ is a well-defined complex number. Since the series in step [](#s1-1){.pf-ref} converges for every complex $w$, this substitution is valid.
 
 :::
 
@@ -68,8 +68,8 @@ If \(z\ne0\), then \(w=1/z^2\) is a well-defined complex number. Since the serie
 
 ::: {.pf-step #s1-3}
 
-Hence the Laurent expansion on \(0<|z|<\infty\) is
-\[
+Hence the Laurent expansion on $0<|z|<\infty$ is
+$$
 \boxed{
 e^{1/z^2}
 =
@@ -77,12 +77,12 @@ e^{1/z^2}
 +\frac1{3!z^6}+\cdots
 =
 \sum_{n=0}^{\infty}\frac{z^{-2n}}{n!}.}
-\]
+$$
 
 
 ::: pf-proof
 
-Step [](#s1-2){.pf-ref} gives the Laurent series. Its convergence domain is exactly the punctured plane: for every \(z\ne0\), it is the convergent exponential series evaluated at \(1/z^2\), while the expression is not defined at \(z=0\).
+Step [](#s1-2){.pf-ref} gives the Laurent series. Its convergence domain is exactly the punctured plane: for every $z\ne0$, it is the convergent exponential series evaluated at $1/z^2$, while the expression is not defined at $z=0$.
 
 :::
 

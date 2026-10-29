@@ -27,16 +27,16 @@ audit:
 
 ::: {.problem}
 For $n\in \NN$, define
-\[
+$$
 e_{n} = \left (1+ {1\over n} \right)^{n} 
 \qtext{and}
 E_{n} = \left( 1+ {1\over n} \right)^{n+1}
-\]
+$$
 
 Show that $e_n < E_n$, and prove Bernoulli's inequality:
-\[
+$$
 (1+x)^n \geq 1+nx && -1 < x < \infty  ,\,\, n\in \NN
-.\]
+.$$
 
 Use this to show the following:
 
@@ -69,9 +69,9 @@ Bernoulli's inequality: for $-1 < x$, $(1+x)^n \ge 1 + nx$ for every $n \in \NN$
 ::: pf-proof
 
 by induction on $n$. For $n = 1$ it is an equality. If $(1+x)^n \ge 1+nx$, then multiplying by $1+x \ge 0$ (since $x > -1$),
-\[
+$$
 (1+x)^{n+1} \ge (1+nx)(1+x) = 1 + (n+1)x + nx^2 \ge 1 + (n+1)x,
-\]
+$$
 as $nx^2 \ge 0$.
 
 :::
@@ -85,17 +85,17 @@ $e_n$ is increasing.
 ::: pf-proof
 
 with $e_n = ((n+1)/n)^n$,
-\[
+$$
 \frac{e_{n+1}}{e_n} = \Big(\frac{n+2}{n+1}\Big)^{n+1}\Big(\frac{n}{n+1}\Big)^n = \Big(1 + \frac{1}{n+1}\Big)\Big(1 - \frac{1}{(n+1)^2}\Big)^n,
-\]
+$$
 since $\frac{n(n+2)}{(n+1)^2} = 1 - \frac{1}{(n+1)^2}$. Bernoulli's inequality (step [](#s2){.pf-ref}) with $x = -\frac{1}{(n+1)^2}$ gives
-\[
+$$
 \Big(1 - \frac{1}{(n+1)^2}\Big)^n \ge 1 - \frac{n}{(n+1)^2} = \frac{n^2+n+1}{(n+1)^2},
-\]
+$$
 so
-\[
+$$
 \frac{e_{n+1}}{e_n} \ge \frac{n+2}{n+1}\cdot\frac{n^2+n+1}{(n+1)^2} = \frac{(n+2)(n^2+n+1)}{(n+1)^3} = \frac{(n+1)^3 + 1}{(n+1)^3} > 1.
-\]
+$$
 Hence $e_{n+1} > e_n$.
 
 :::
@@ -109,17 +109,17 @@ $E_n$ is decreasing.
 ::: pf-proof
 
 with $E_n = ((n+1)/n)^{n+1}$,
-\[
+$$
 \frac{E_n}{E_{n+1}} = \Big(\frac{n+1}{n}\Big)^{n+1}\Big(\frac{n+1}{n+2}\Big)^{n+2} = \Big(1 + \frac{1}{n(n+2)}\Big)^{n+1}\cdot\frac{n+1}{n+2},
-\]
+$$
 since $\frac{(n+1)^2}{n(n+2)} = 1 + \frac{1}{n(n+2)}$. Bernoulli's inequality (step [](#s2){.pf-ref}) with $x = \frac{1}{n(n+2)} > 0$ gives
-\[
+$$
 \Big(1 + \frac{1}{n(n+2)}\Big)^{n+1} \ge 1 + \frac{n+1}{n(n+2)} = \frac{n^2+3n+1}{n(n+2)},
-\]
+$$
 so
-\[
+$$
 \frac{E_n}{E_{n+1}} \ge \frac{(n^2+3n+1)(n+1)}{n(n+2)^2} = \frac{n^3 + 4n^2 + 4n + 1}{n^3 + 4n^2 + 4n} > 1.
-\]
+$$
 Hence $E_{n+1} < E_n$.
 
 :::

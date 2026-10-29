@@ -27,16 +27,16 @@ audit:
 Suppose $V$ is an $n$-dimensional vector space over the field $F$.
 Let $W\subset V$ be a subspace of dimension $r<n$.
 Show that
-\[
+$$
 W=\bigcap\{U\mid U\text{ is an }(n-1)\text{-dimensional subspace of }V\text{ and }W\subset U\}.
-\]
+$$
 :::
 
 ::: {.solution}
 Let
-\[
+$$
 \mathcal H=\{U\le V:\dim U=n-1\text{ and }W\subseteq U\}.
-\]
+$$
 
 ::: pf
 
@@ -59,25 +59,25 @@ If $v\notin W$, then some hyperplane $U\in\mathcal H$ does not contain $v$.
 ::: pf-proof
 
 Choose a basis
-\[
+$$
 w_1,\ldots,w_r
-\]
+$$
 of $W$. Since $v\notin W$, the list
-\[
+$$
 w_1,\ldots,w_r,v
-\]
+$$
 is linearly independent. Extend it to a basis of $V$:
-\[
+$$
 w_1,\ldots,w_r,v,u_{r+2},\ldots,u_n.
-\]
+$$
 Now set
-\[
+$$
 U=\operatorname{span}(w_1,\ldots,w_r,u_{r+2},\ldots,u_n).
-\]
+$$
 This subspace is spanned by $n-1$ basis vectors, so
-\[
+$$
 \dim U=n-1.
-\]
+$$
 It contains $W$, hence $U\in\mathcal H$. But $v\notin U$, because otherwise the displayed basis of $V$ would be linearly dependent.
 
 :::
@@ -91,13 +91,13 @@ Therefore the intersection is exactly $W$.
 ::: pf-proof
 
 By step [](#s1){.pf-ref},
-\[
+$$
 W\subseteq\bigcap_{U\in\mathcal H}U.
-\]
+$$
 By step [](#s2){.pf-ref}, every $v\notin W$ is omitted by at least one member of $\mathcal H$, so no vector outside $W$ belongs to the intersection. Hence
-\[
+$$
 \boxed{W=\bigcap_{U\in\mathcal H}U}.
-\]
+$$
 
 :::
 

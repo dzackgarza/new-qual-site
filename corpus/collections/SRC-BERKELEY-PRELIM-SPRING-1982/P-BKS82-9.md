@@ -24,13 +24,13 @@ audit:
 
 ::: {.problem}
 Find the Jordan canonical form over $\RR$ of
-\[
+$$
 \begin{pmatrix}
 4&1&0\\
 -4&0&0\\
 19&17&5
 \end{pmatrix}.
-\]
+$$
 :::
 
 ::: {.solution}

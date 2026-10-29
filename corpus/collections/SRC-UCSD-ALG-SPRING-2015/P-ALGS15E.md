@@ -51,9 +51,9 @@ Since $J$ is an ideal, every generator $r/1$ with $r\in J^c$ lies in $J$, so $(J
 
 Conversely, let $a/s\in J$.
 Since $s/1$ is a unit in $S^{-1}R$, multiplication by $s/1$ gives
-\[
+$$
 \frac a1=\frac s1\frac as\in J.
-\]
+$$
 Thus $a\in J^c$, so $a/1\in (J^c)^e$.
 Multiplying by the unit $1/s$ shows $a/s\in (J^c)^e$.
 Hence $J\subseteq(J^c)^e$.
@@ -65,28 +65,28 @@ Hence $J\subseteq(J^c)^e$.
 ::: pf-step
 
 For every ideal $I\subseteq R$,
-\[
+$$
 (I^e)^c=\{x\in R: sx\in I\text{ for some }s\in S\}.
-\]
+$$
 
 ::: pf-proof
 
 An element $x\in R$ lies in $(I^e)^c$ exactly when $x/1\in I^e=S^{-1}I$.
 This means that in $S^{-1}R$ one has
-\[
+$$
 \frac x1=\frac a s
-\]
+$$
 for some $a\in I$ and $s\in S$.
 Equality in the localization means that there exists $t\in S$ such that
-\[
+$$
 t(sx-a)=0.
-\]
+$$
 Therefore $(ts)x=ta\in I$, with $ts\in S$.
 
 Conversely, if $sx\in I$ for some $s\in S$, then
-\[
+$$
 \frac x1=\frac{sx}{s}\in S^{-1}I=I^e,
-\]
+$$
 so $x\in(I^e)^c$.
 
 **Part (b).**
@@ -103,14 +103,14 @@ If $R$ is Noetherian, then $S^{-1}R$ is Noetherian.
 
 Let $J\subseteq S^{-1}R$ be an ideal.
 By step [](#s1){.pf-ref},
-\[
+$$
 J=(J^c)^e.
-\]
+$$
 Since $R$ is Noetherian, $J^c$ is finitely generated, say $J^c=(a_1,\dots,a_n)$.
 Extension then gives
-\[
+$$
 J=(a_1/1,\dots,a_n/1),
-\]
+$$
 so every ideal of $S^{-1}R$ is finitely generated.
 Hence $S^{-1}R$ is Noetherian.
 
@@ -125,19 +125,19 @@ The converse need not hold.
 ::: pf-proof
 
 Let
-\[
+$$
 R=k[x_1,x_2,x_3,\dots]
-\]
+$$
 be the polynomial ring in countably many indeterminates over a field $k$, and let $S=R\setminus\{0\}$.
 The ring $R$ is not Noetherian because
-\[
+$$
 (x_1)\subsetneq(x_1,x_2)\subsetneq(x_1,x_2,x_3)\subsetneq\cdots
-\]
+$$
 is a strictly ascending chain of ideals.
 Since $R$ is a domain,
-\[
+$$
 S^{-1}R=\operatorname{Frac}(R),
-\]
+$$
 which is a field and therefore Noetherian.
 Thus Noetherianity of $S^{-1}R$ does not imply Noetherianity of $R$.
 

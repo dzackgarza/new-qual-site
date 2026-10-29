@@ -59,13 +59,13 @@ Since $1225=5^2 7^2$, the Sylow theorems give $n_7\mid25$ and $n_7\equiv1\pmod7$
 ::: {.pf-step #s1-3}
 
 The complete list of isomorphism classes of groups of order $1225$ is
-\[
+$$
 \boxed{\begin{gathered}
 C_{25}\times C_{49},\qquad C_{25}\times C_7\times C_7,\\
 C_5\times C_5\times C_{49},\qquad
 C_5\times C_5\times C_7\times C_7.
 \end{gathered}}
-\]
+$$
 
 
 ::: pf-proof

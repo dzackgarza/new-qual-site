@@ -20,17 +20,17 @@ Prove that either $f(z) = 0$ for all $z \in \CC$ or $f(z) \neq 0$ for all $z \in
 
 ::: {.solution}
 The function
-\[
+$$
 g(z)=e^{-z}f(z)
-\]
+$$
 is entire and satisfies
-\[
+$$
 |g(z)|=e^{-\operatorname{Re}z}|f(z)|\le1.
-\]
+$$
 By Liouville's theorem, $g$ is constant: $g\equiv c$. Hence
-\[
+$$
 f(z)=ce^z.
-\]
+$$
 If $c=0$, then $f\equiv0$; if $c\ne0$, then $e^z\ne0$ for every $z$, so
 $f$ has no zeros.
 :::

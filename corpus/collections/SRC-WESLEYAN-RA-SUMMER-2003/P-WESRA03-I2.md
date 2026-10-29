@@ -27,15 +27,15 @@ Define a measure on a measurable space $(Y,\tau(Y))$.
 
 ::: {.solution}
 A measure on $(Y,\tau(Y))$ is a function
-\[
+$$
 \mu:\tau(Y)\to[0,\infty]
-\]
+$$
 such that
-\[
+$$
 \mu(\varnothing)=0
-\]
+$$
 and, for every pairwise disjoint sequence $(E_n)$ in $\tau(Y)$,
-\[
+$$
 \boxed{\mu\!\left(\bigcup_{n=1}^\infty E_n\right)=\sum_{n=1}^\infty\mu(E_n).}
-\]
+$$
 :::

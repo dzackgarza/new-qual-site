@@ -20,13 +20,13 @@ audit:
 
 ::: {.problem}
 Let $G$ be an abelian subgroup of $S_{999}$ of order $1111$. Prove that there is
-\[
+$$
 i\in\{1,\dots,999\}
-\]
+$$
 such that
-\[
+$$
 \sigma(i)=i
-\]
+$$
 for every $\sigma\in G$.
 :::
 

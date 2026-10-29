@@ -40,46 +40,46 @@ $$
 
 ::: {.solution}
 Let
-\[
+$$
 I(x)=\int_x^{x+1}\log\Gamma(t)\,dt.
-\]
+$$
 By Leibniz' rule,
-\[
+$$
 I'(x)=\log\Gamma(x+1)-\log\Gamma(x).
-\]
+$$
 Using $\Gamma(x+1)=x\Gamma(x)$,
-\[
+$$
 I'(x)=\log x.
-\]
+$$
 Therefore
-\[
+$$
 I(x)=x\log x-x+c
-\]
+$$
 for a constant $c$.
 
 For part (b), $\Gamma(x)$ is increasing for all sufficiently large $x$. Hence for all sufficiently large integers $n$,
-\[
+$$
 \int_{n-1}^{n}\log\Gamma(t)\,dt
 \le \log\Gamma(n)
 \le \int_n^{n+1}\log\Gamma(t)\,dt.
-\]
+$$
 Applying part (a) at $x=n-1$ and $x=n$ gives
-\[
+$$
 (n-1)\log(n-1)-(n-1)+c
 \le \log\Gamma(n)
 \le n\log n-n+c.
-\]
+$$
 Now
-\[
+$$
 (n-1)\log(n-1)=n\log n+O(n),
-\]
+$$
 so both bounds imply
-\[
+$$
 \log\Gamma(n)=n\log n+O(n).
-\]
+$$
 Dividing by $n\log n$ yields
-\[
+$$
 \frac{\log\Gamma(n)}{n\log n}\to1,
-\]
+$$
 that is, $\log\Gamma(n)\sim n\log n$.
 :::

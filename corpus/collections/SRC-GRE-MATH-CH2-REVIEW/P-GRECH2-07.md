@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Evaluate the following limit:
 
-\[
+$$
 \lim_{x \to 0} \left[ \frac{1}{x^2} \int_0^x \frac{t + t^2}{1 + \sin t} dt \right]
-\]
+$$
 
 (A) $\frac{1}{2\pi}$
 (B) $\frac{1}{\pi}$

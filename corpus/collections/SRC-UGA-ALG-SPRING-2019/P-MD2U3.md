@@ -118,9 +118,9 @@ $$P \cong \ZZ/9\ZZ \quad \text{or} \quad P \cong \ZZ/3\ZZ \times \ZZ/3\ZZ.$$
 ::: {.pf-step #s4}
 
 There are exactly two isomorphism classes, represented by
-\[
+$$
 \boxed{C_{45}\qquad\text{and}\qquad C_3\times C_{15}}.
-\]
+$$
 
 ::: pf-proof
 

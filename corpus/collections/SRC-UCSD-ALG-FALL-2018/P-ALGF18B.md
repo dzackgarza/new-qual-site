@@ -47,17 +47,17 @@ The matrix $g-I$ is nilpotent.
 
 ::: pf-proof
 In characteristic $p$, commuting elements satisfy
-\[
+$$
 (X-Y)^p=X^p-Y^p.
-\]
+$$
 Since $g$ commutes with $I$, iterating this identity $m$ times gives
-\[
+$$
 (g-I)^{p^m}=g^{p^m}-I.
-\]
+$$
 The hypothesis $g^{p^m}=I$ therefore yields
-\[
+$$
 (g-I)^{p^m}=0.
-\]
+$$
 :::
 
 :::
@@ -67,9 +67,9 @@ $g^p=I$.
 
 ::: pf-proof
 By step [](#s1){.pf-ref}, $N=g-I$ is a nilpotent $n\times n$ matrix, so its minimal polynomial is $x^k$ for some $k\le n$, and hence $N^n=0$. Since $p\ge n$, also $N^p=0$. As $g=I+N$ with $I$ and $N$ commuting, in characteristic $p$
-\[
+$$
 g^p=(I+N)^p=I+N^p=I.
-\]
+$$
 :::
 
 :::

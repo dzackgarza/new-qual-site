@@ -38,13 +38,13 @@ Find, with proof, all subspaces $Z$ of $Y$ which are retracts of $Y$.
 ::: {.pf-step #s1}
 
 The retracts are precisely the sets
-\[
+$$
 [a,b]\qquad(0\le a\le b<\infty)
-\]
+$$
 and
-\[
+$$
 [a,\infty)\qquad(a\ge0).
-\]
+$$
 Thus singletons occur when $a=b$, and $Y$ itself occurs when $a=0$ in the second family.
 
 ::: pf-proof
@@ -62,19 +62,19 @@ Every retract $Z\subseteq Y$ is closed in $Y$.
 ::: pf-proof
 
 Let
-\[
+$$
 r:Y\to Z
-\]
+$$
 be a retraction and let $i:Z\hookrightarrow Y$ be the inclusion.
 Then $e=i\circ r:Y\to Y$ is continuous and
-\[
+$$
 Z=\{y\in Y:e(y)=y\}.
-\]
+$$
 Because $Y$ is Hausdorff, the diagonal $\Delta_Y\subseteq Y\times Y$ is closed.
 Hence
-\[
+$$
 Z=(e,\operatorname{id}_Y)^{-1}(\Delta_Y)
-\]
+$$
 is closed in $Y$.
 
 :::
@@ -88,9 +88,9 @@ Every retract $Z\subseteq Y$ is connected.
 ::: pf-proof
 
 The space $Y=[0,\infty)$ is connected, and
-\[
+$$
 Z=r(Y)
-\]
+$$
 is connected as the continuous image of a connected space.
 
 :::
@@ -118,9 +118,9 @@ Every bounded interval $[a,b]$ listed in step [](#s1){.pf-ref} is a retract of $
 ::: pf-proof
 
 Define
-\[
+$$
 r(x)=\min\{b,\max\{a,x\}\}.
-\]
+$$
 This is continuous, takes values in $[a,b]$, and restricts to the identity on $[a,b]$.
 
 :::
@@ -134,9 +134,9 @@ Every ray $[a,\infty)$ listed in step [](#s1){.pf-ref} is a retract of $Y$.
 ::: pf-proof
 
 Define
-\[
+$$
 r(x)=\max\{a,x\}.
-\]
+$$
 Again $r$ is continuous, has image in $Z$, and satisfies $r|_Z=\operatorname{id}_Z$.
 
 :::

@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let $(f_n)$ be a sequence of holomorphic functions on $\DD$ satisfying $|f_n(z)|\le1$ for every $z\in\DD$ and every $n$.
 Let
-\[
+$$
 A=\{z\in\DD:\lim_{n\to\infty}f_n(z)\text{ exists}\}.
-\]
+$$
 Show that if $A$ has an accumulation point in $\DD$, then there exists a holomorphic function $f$ on $\DD$ such that $f_n\to f$ locally uniformly on $\DD$.
 :::
 

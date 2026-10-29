@@ -28,11 +28,11 @@ Write $X=(x_1\ \cdots\ x_n)$, where $x_j\in\RR^n$.
 ::: {.pf-step #s1-1}
 
 There is an orthonormal basis $u_1,\ldots,u_n$ such that
-\[
+$$
 \operatorname{span}(u_1,\ldots,u_j)=
 \operatorname{span}(x_1,\ldots,x_j)
 \quad(1\leq j\leq n).
-\]
+$$
 
 
 ::: pf-proof
@@ -46,9 +46,9 @@ Nondegeneracy of $X$ means its columns are linearly independent. Apply Gram--Sch
 ::: {.pf-step #s1-2}
 
 The matrix $X$ has a factorization
-\[
+$$
 \boxed{X=UT}
-\]
+$$
 with $U$ orthogonal and $T$ upper triangular.
 
 

@@ -19,9 +19,9 @@ audit:
 
 ::: {.problem}
 Let $G$ be a finite nontrivial group such that any two nonidentity elements of $G$ are conjugate. Prove that
-\[
+$$
 |G|=2.
-\]
+$$
 :::
 
 ::: {.solution}

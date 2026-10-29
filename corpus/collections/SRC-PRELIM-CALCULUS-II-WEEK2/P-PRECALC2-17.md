@@ -31,25 +31,25 @@ Is it possible to choose $\left( b _ { n } \right)$ so that $\sum _ { n = 1 } ^ 
 
 ## A nonmonotone alternating-series counterexample
 
-For \(k\ge1\), define
-\[
+For $k\ge1$, define
+$$
 \boxed{
 a_{2k}=\frac1k,
 \qquad
 a_{2k-1}=\frac1{2k}}.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
-Every \(a_n\) is positive.
+Every $a_n$ is positive.
 
 
 ::: pf-proof
 
-Both formulas defining \(a_{2k}\) and \(a_{2k-1}\) are positive for
-\(k\ge1\).
+Both formulas defining $a_{2k}$ and $a_{2k-1}$ are positive for
+$k\ge1$.
 
 :::
 
@@ -58,22 +58,22 @@ Both formulas defining \(a_{2k}\) and \(a_{2k-1}\) are positive for
 ::: pf-step
 
 One has
-\[
+$$
 \boxed{a_n\to0}.
-\]
+$$
 
 
 ::: pf-proof
 
 Along the even subsequence,
-\[
+$$
 a_{2k}=\frac1k\to0.
-\]
+$$
 Along the odd subsequence,
-\[
+$$
 a_{2k-1}=\frac1{2k}\to0.
-\]
-Since both subsequences tend to \(0\), the whole sequence does.
+$$
+Since both subsequences tend to $0$, the whole sequence does.
 
 :::
 
@@ -81,32 +81,32 @@ Since both subsequences tend to \(0\), the whole sequence does.
 
 ::: {.pf-step #s1-3}
 
-The contribution of the \(k\)th odd-even pair to the alternating
+The contribution of the $k$th odd-even pair to the alternating
 series is
-\[
+$$
 \boxed{
 (-1)^{2k-1}a_{2k-1}
 +
 (-1)^{2k}a_{2k}
 =
 \frac1{2k}}.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 (-1)^{2k-1}=-1
 \qquad\text{and}\qquad
 (-1)^{2k}=1,
-\]
+$$
 one has
-\[
+$$
 -\frac1{2k}+\frac1k
 =
 \frac1{2k}.
-\]
+$$
 
 :::
 
@@ -115,16 +115,16 @@ one has
 ::: pf-step
 
 The even partial sums satisfy
-\[
+$$
 S_{2N}
 =
 \sum_{k=1}^{N}\frac1{2k}.
-\]
+$$
 
 
 ::: pf-proof
 
-Group the first \(2N\) terms into the \(N\) consecutive pairs computed in
+Group the first $2N$ terms into the $N$ consecutive pairs computed in
 step [](#s1-3){.pf-ref}.
 
 :::
@@ -134,20 +134,20 @@ step [](#s1-3){.pf-ref}.
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 S_{2N}\to+\infty.
-\]
+$$
 
 
 ::: pf-proof
 
-\[
+$$
 S_{2N}
 =
 \frac12
 \sum_{k=1}^{N}\frac1k,
-\]
-and the harmonic partial sums diverge to \(+\infty\).
+$$
+and the harmonic partial sums diverge to $+\infty$.
 
 :::
 
@@ -156,12 +156,12 @@ and the harmonic partial sums diverge to \(+\infty\).
 ::: {.pf-step #s1-6}
 
 Hence
-\[
+$$
 \boxed{
 \sum_{n=1}^{\infty}
 (-1)^na_n
 \text{ diverges}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -176,22 +176,22 @@ to the same finite limit. Step [](#s1-5){.pf-ref} shows the even partial sums di
 ::: {.pf-step #s1-7}
 
 The sequence
-\[
+$$
 \frac1{\sqrt n}
-\]
-is positive, decreasing, and tends to \(0\).
+$$
+is positive, decreasing, and tends to $0$.
 
 
 ::: pf-proof
 
 The function
-\[
+$$
 x\mapsto x^{-1/2}
-\]
-is positive and decreasing on \((0,\infty)\), and
-\[
+$$
+is positive and decreasing on $(0,\infty)$, and
+$$
 n^{-1/2}\to0.
-\]
+$$
 
 :::
 
@@ -200,14 +200,14 @@ n^{-1/2}\to0.
 ::: {.pf-step #s1-8}
 
 Therefore
-\[
+$$
 \boxed{
 \sum_{n=1}^{\infty}b_n
 =
 \sum_{n=1}^{\infty}
 \frac{(-1)^n}{\sqrt n}
 \text{ converges}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -221,21 +221,21 @@ Apply the alternating series test using step [](#s1-7){.pf-ref}.
 ::: {.pf-step #s1-9}
 
 But
-\[
+$$
 \boxed{
 b_n^2=\frac1n}.
-\]
+$$
 
 
 ::: pf-proof
 
-\[
+$$
 \left(
 \frac{(-1)^n}{\sqrt n}
 \right)^2
 =
 \frac1n.
-\]
+$$
 
 :::
 
@@ -244,13 +244,13 @@ b_n^2=\frac1n}.
 ::: {.pf-step #s1-10}
 
 Hence
-\[
+$$
 \boxed{
 \sum_{n=1}^{\infty}b_n^2
 =
 \sum_{n=1}^{\infty}\frac1n
 \text{ diverges}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -264,19 +264,19 @@ Use step [](#s1-9){.pf-ref} and divergence of the harmonic series.
 ::: pf-step
 
 Suppose
-\[
+$$
 \sum_{n=1}^{\infty}|b_n|
-\]
+$$
 converges. Then
-\[
+$$
 \boxed{b_n\to0}.
-\]
+$$
 
 
 ::: pf-proof
 
 A necessary condition for convergence of any series is that its terms tend
-to zero. Apply this to the nonnegative series \(\sum|b_n|\).
+to zero. Apply this to the nonnegative series $\sum|b_n|$.
 
 :::
 
@@ -284,19 +284,19 @@ to zero. Apply this to the nonnegative series \(\sum|b_n|\).
 
 ::: pf-step
 
-Hence there exists \(N\) such that
-\[
+Hence there exists $N$ such that
+$$
 \boxed{|b_n|\le1}
 \qquad(n\ge N).
-\]
+$$
 
 
 ::: pf-proof
 
-Since \(b_n\to0\), eventually
-\[
+Since $b_n\to0$, eventually
+$$
 |b_n|<1.
-\]
+$$
 
 :::
 
@@ -304,24 +304,24 @@ Since \(b_n\to0\), eventually
 
 ::: {.pf-step #s1-13}
 
-For \(n\ge N\),
-\[
+For $n\ge N$,
+$$
 \boxed{
 b_n^2
 =
 |b_n|^2
 \le
 |b_n|}.
-\]
+$$
 
 
 ::: pf-proof
 
-If \(0\le x\le1\), then
-\[
+If $0\le x\le1$, then
+$$
 x^2\le x.
-\]
-Apply this with \(x=|b_n|\).
+$$
+Apply this with $x=|b_n|$.
 
 :::
 
@@ -330,9 +330,9 @@ Apply this with \(x=|b_n|\).
 ::: {.pf-step #s1-14}
 
 Therefore
-\[
+$$
 \sum_{n=N}^{\infty}b_n^2
-\]
+$$
 converges.
 
 
@@ -340,9 +340,9 @@ converges.
 
 By step [](#s1-13){.pf-ref}, the nonnegative series is termwise bounded by the convergent
 tail
-\[
+$$
 \sum_{n=N}^{\infty}|b_n|.
-\]
+$$
 Apply the comparison test.
 
 :::
@@ -352,12 +352,12 @@ Apply the comparison test.
 ::: {.pf-step #s1-15}
 
 Thus
-\[
+$$
 \boxed{
 \sum |b_n|<\infty
 \quad\Longrightarrow\quad
 \sum b_n^2<\infty}.
-\]
+$$
 
 
 ::: pf-proof
@@ -371,14 +371,14 @@ not affect convergence.
 
 ::: {.pf-step #s1-16}
 
-Consequently, it is impossible to choose \((b_n)\) so that
-\[
+Consequently, it is impossible to choose $(b_n)$ so that
+$$
 \sum b_n
-\]
+$$
 converges absolutely while
-\[
+$$
 \sum b_n^2
-\]
+$$
 diverges.
 
 

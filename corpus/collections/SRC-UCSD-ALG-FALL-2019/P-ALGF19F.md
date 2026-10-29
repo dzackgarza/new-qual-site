@@ -38,9 +38,9 @@ Prove that $f(x) \mid (x^{p^\ell} - x)$.
 
 ::: {.solution}
 Set
-\[
+$$
 g(x)=x^{p^\ell}-x\in\FF_p[x].
-\]
+$$
 
 ::: pf
 
@@ -51,29 +51,29 @@ The roots of $g$ in an algebraic closure form a field with $p^\ell$ elements.
 ::: pf-proof
 
 In characteristic $p$, the Frobenius map satisfies
-\[
+$$
 (u+v)^{p^\ell}=u^{p^\ell}+v^{p^\ell}.
-\]
+$$
 Hence the set
-\[
+$$
 K:=\{u\in\overline{\FF}_p:u^{p^\ell}=u\}
-\]
+$$
 is closed under addition, subtraction, and multiplication. If $u\in K$ is nonzero, then
-\[
+$$
 (u^{-1})^{p^\ell}=(u^{p^\ell})^{-1}=u^{-1},
-\]
+$$
 so $K$ is a field.
 
 Moreover,
-\[
+$$
 g'(x)=p^\ell x^{p^\ell-1}-1=-1.
-\]
+$$
 Thus $g$ has no repeated roots. Since $g$ splits in the algebraic closure and has degree $p^\ell$, it has exactly $p^\ell$ distinct roots. Therefore
-\[
+$$
 |K|=p^\ell,
 \qquad
 [K:\FF_p]=\ell.
-\]
+$$
 
 :::
 
@@ -86,27 +86,27 @@ Every irreducible factor of $g$ has degree $1$ or $\ell$.
 ::: pf-proof
 
 Let $h(x)\in\FF_p[x]$ be an irreducible factor of $g$, and let $\alpha$ be a root of $h$ in $\overline{\FF}_p$. Since $h\mid g$,
-\[
+$$
 \alpha^{p^\ell}=\alpha,
-\]
+$$
 so $\alpha\in K$ by step [](#s1){.pf-ref}.
 
 Because $h$ is the minimal polynomial of $\alpha$ over $\FF_p$,
-\[
+$$
 \deg h=[\FF_p(\alpha):\FF_p].
-\]
+$$
 The tower
-\[
+$$
 \FF_p\subseteq\FF_p(\alpha)\subseteq K
-\]
+$$
 shows that $\deg h$ divides
-\[
+$$
 [K:\FF_p]=\ell.
-\]
+$$
 Since $\ell$ is prime,
-\[
+$$
 \deg h\in\{1,\ell\}.
-\]
+$$
 This proves part (a).
 
 :::
@@ -120,27 +120,27 @@ Every monic irreducible polynomial of degree $\ell$ divides $g$.
 ::: pf-proof
 
 Let $f(x)\in\FF_p[x]$ be monic and irreducible of degree $\ell$, and put
-\[
+$$
 L=\FF_p[x]/(f).
-\]
+$$
 Then $L$ is a field with
-\[
+$$
 |L|=p^\ell.
-\]
+$$
 If $u\in L$ is nonzero, Lagrange's theorem in the multiplicative group $L^\times$ gives
-\[
+$$
 u^{p^\ell-1}=1,
-\]
+$$
 hence $u^{p^\ell}=u$; the same equality is trivial for $u=0$.
 
 Let $\alpha$ be the residue class of $x$ in $L$. Then
-\[
+$$
 \alpha^{p^\ell}-\alpha=0.
-\]
+$$
 Since $f$ is the minimal polynomial of $\alpha$ over $\FF_p$, it follows that
-\[
+$$
 f(x)\mid x^{p^\ell}-x.
-\]
+$$
 This proves part (b).
 
 :::
@@ -154,9 +154,9 @@ The polynomial $g$ has exactly $p$ monic linear factors, each with multiplicity 
 ::: pf-proof
 
 Every $a\in\FF_p$ satisfies $a^p=a$, and iterating Frobenius gives
-\[
+$$
 a^{p^\ell}=a.
-\]
+$$
 Thus each $x-a$ divides $g$. These are the $p$ monic linear polynomials over $\FF_p$.
 
 By step [](#s1){.pf-ref}, $g'(x)=-1$, so $g$ is squarefree. Hence each of these linear factors occurs exactly once.
@@ -168,9 +168,9 @@ By step [](#s1){.pf-ref}, $g'(x)=-1$, so $g$ is squarefree. Hence each of these 
 ::: pf-step
 
 There are exactly
-\[
+$$
 \frac{p^\ell-p}{\ell}
-\]
+$$
 monic irreducible polynomials of degree $\ell$ over $\FF_p$.
 
 ::: pf-proof
@@ -178,13 +178,13 @@ monic irreducible polynomials of degree $\ell$ over $\FF_p$.
 By step [](#s2){.pf-ref}, every irreducible factor of $g$ has degree $1$ or $\ell$. By step [](#s3){.pf-ref}, every monic irreducible polynomial of degree $\ell$ occurs as a factor of $g$, and by squarefreeness it occurs once.
 
 Let $N$ be the number of monic irreducible polynomials of degree $\ell$. Comparing degrees in the factorization of $g$ and using step [](#s4){.pf-ref} gives
-\[
+$$
 p^\ell=p+N\ell.
-\]
+$$
 Therefore
-\[
+$$
 N=\frac{p^\ell-p}{\ell}.
-\]
+$$
 This proves part (c).
 
 :::

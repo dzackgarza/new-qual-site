@@ -24,19 +24,19 @@ audit:
 
 ::: {.exercise}
 Let $\langle\cdot,\cdot\rangle$ denote the usual inner product on $\RR^2$:
-\[
+$$
 \langle (x_1,y_1),(x_2,y_2)\rangle=x_1x_2+y_1y_2.
-\]
+$$
 On $\CC$, define the Hermitian inner product by
-\[
+$$
 (z,w)=z\overline w.
-\]
+$$
 Show that
-\[
+$$
 \langle z,w\rangle
 =\frac12\bigl[(z,w)+(w,z)\bigr]
 =\operatorname{Re}(z,w),
-\]
+$$
 where $z=x+iy\in\CC$ is identified with $(x,y)\in\RR^2$.
 :::
 
@@ -47,24 +47,24 @@ where $z=x+iy\in\CC$ is identified with $(x,y)\in\RR^2$.
 ::: {.pf-step #s1}
 
 Write
-\[
+$$
 z=x_1+iy_1,
 \qquad
 w=x_2+iy_2.
-\]
+$$
 Then
-\[
+$$
 (z,w)=z\overline w
 =(x_1x_2+y_1y_2)+i(y_1x_2-x_1y_2).
-\]
+$$
 
 ::: pf-proof
 
 Expand
-\[
+$$
 (x_1+iy_1)(x_2-iy_2)
 =x_1x_2+y_1y_2+i(y_1x_2-x_1y_2).
-\]
+$$
 
 :::
 
@@ -73,9 +73,9 @@ Expand
 ::: {.pf-step #s2}
 
 Therefore
-\[
+$$
 \operatorname{Re}(z,w)=x_1x_2+y_1y_2=\langle z,w\rangle.
-\]
+$$
 
 ::: pf-proof
 
@@ -88,16 +88,16 @@ The real part of the expression in step [](#s1){.pf-ref} is $x_1x_2+y_1y_2$, whi
 ::: {.pf-step #s3}
 
 One has
-\[
+$$
 (w,z)=\overline{(z,w)}.
-\]
+$$
 
 ::: pf-proof
 
 Indeed,
-\[
+$$
 (w,z)=w\overline z=\overline{z\overline w}=\overline{(z,w)}.
-\]
+$$
 
 :::
 
@@ -106,16 +106,16 @@ Indeed,
 ::: {.pf-step #s4}
 
 Hence
-\[
+$$
 \frac12\bigl[(z,w)+(w,z)\bigr]=\operatorname{Re}(z,w).
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s3){.pf-ref}, the left-hand side is
-\[
+$$
 \frac12\bigl((z,w)+\overline{(z,w)}\bigr),
-\]
+$$
 which is the real part of $(z,w)$.
 
 :::
@@ -125,11 +125,11 @@ which is the real part of $(z,w)$.
 ::: pf-step
 
 Combining the preceding identities gives
-\[
+$$
 \langle z,w\rangle
 =\frac12\bigl[(z,w)+(w,z)\bigr]
 =\operatorname{Re}(z,w).
-\]
+$$
 
 ::: pf-proof
 

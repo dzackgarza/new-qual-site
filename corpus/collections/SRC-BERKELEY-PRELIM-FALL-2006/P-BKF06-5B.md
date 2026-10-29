@@ -27,11 +27,11 @@ audit:
 
 ::: {.problem}
 Let $f$ and $g$ be entire functions such that
-\[
+$$
 \int_{|z|=1}\frac{f(z)}{(\sin z)^m}\,dz
 =
 \int_{|z|=1}\frac{g(z)}{(\sin z)^m}\,dz
-\]
+$$
 for every positive integer $m$.
 Prove that $f=g$.
 :::

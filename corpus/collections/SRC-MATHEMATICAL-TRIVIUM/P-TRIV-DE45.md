@@ -22,27 +22,27 @@ The surface of a sphere of radius R is kept at a constant temperature $T _ { U }
 ::: {.solution}
 
 Put
-\[
+$$
 \mu=\cos\theta,
 \qquad
 T_0=\frac{T_U+T_L}{2},
 \qquad
 \Delta T=T_U-T_L.
-\]
+$$
 The boundary temperature is
-\[
+$$
 T(R,\mu)=T_0+\frac{\Delta T}{2}\operatorname{sgn}(\mu).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 Every axisymmetric harmonic function regular at the center has an expansion
-\[
+$$
 T(r,\theta)=\sum_{\ell=0}^{\infty}A_\ell
 \left(\frac rR\right)^\ell P_\ell(\cos\theta).
-\]
+$$
 
 
 ::: pf-proof
@@ -56,21 +56,21 @@ Separation of Laplace's equation in spherical coordinates gives radial factors $
 ::: {.pf-step #s1-2}
 
 The coefficients are
-\[
+$$
 A_0=T_0,
 \qquad
 A_\ell=\frac{2\ell+1}{2}
 \int_{-1}^{1}T(R,\mu)P_\ell(\mu)\,d\mu.
-\]
+$$
 
 
 ::: pf-proof
 
 At $r=R$, step [](#s1-1){.pf-ref} is the Legendre expansion of the boundary function. Orthogonality,
-\[
+$$
 \int_{-1}^{1}P_\ell(\mu)P_j(\mu)\,d\mu
 =\frac{2}{2\ell+1}\delta_{\ell j},
-\]
+$$
 gives the coefficient formula. The average of the two hemisphere temperatures is $A_0=T_0$.
 
 :::
@@ -80,19 +80,19 @@ gives the coefficient formula. The average of the two hemisphere temperatures is
 ::: {.pf-step #s1-3}
 
 Apart from $A_0$, only odd degrees occur, and
-\[
+$$
 A_1=\frac{3}{4}\Delta T.
-\]
+$$
 
 
 ::: pf-proof
 
 The function $\operatorname{sgn}(\mu)$ is odd, so its Legendre expansion contains only odd $P_\ell$. For $\ell=1$, $P_1(\mu)=\mu$, hence
-\[
+$$
 A_1=\frac32\frac{\Delta T}{2}
 \int_{-1}^{1}\operatorname{sgn}(\mu)\mu\,d\mu
 =\frac{3\Delta T}{4},
-\]
+$$
 because the integral is $1$.
 
 :::
@@ -102,24 +102,24 @@ because the integral is $1$.
 ::: {.pf-step #s1-4}
 
 The cubic coefficient is
-\[
+$$
 A_3=-\frac{7}{16}\Delta T.
-\]
+$$
 
 
 ::: pf-proof
 
 Since $P_3(\mu)=(5\mu^3-3\mu)/2$,
-\[
+$$
 \int_{-1}^{1}\operatorname{sgn}(\mu)P_3(\mu)\,d\mu
 =2\int_0^1P_3(\mu)\,d\mu
 =-\frac14.
-\]
+$$
 Thus
-\[
+$$
 A_3=\frac72\frac{\Delta T}{2}\left(-\frac14\right)
 =-\frac{7\Delta T}{16}.
-\]
+$$
 
 :::
 
@@ -128,7 +128,7 @@ A_3=\frac72\frac{\Delta T}{2}\left(-\frac14\right)
 ::: {.pf-step #s1-5}
 
 Therefore, through third order in $r/R$,
-\[
+$$
 \boxed{
 T(r,\theta)=
 \frac{T_U+T_L}{2}
@@ -137,7 +137,7 @@ T(r,\theta)=
 \left(\frac rR\right)^3
 \bigl(5\cos^3\theta-3\cos\theta\bigr)
 +O\!\left((r/R)^5\right).}
-\]
+$$
 
 
 ::: pf-proof

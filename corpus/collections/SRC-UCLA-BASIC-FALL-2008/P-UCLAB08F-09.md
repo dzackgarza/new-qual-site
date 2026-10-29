@@ -43,37 +43,37 @@ Prove your assertion.
 ::: {.pf-step #p2-s1}
 
 Every linear transformation
-\[
+$$
 T:\CC^n\to\CC^n
-\]
+$$
 has a nonzero eigenvector.
 
 ::: pf-proof
 
 Let
-\[
+$$
 p_T(\lambda)=\det(\lambda I-T)
-\]
+$$
 be the characteristic polynomial. It has degree $n$. By the fundamental theorem of algebra, there exists
-\[
+$$
 \lambda\in\CC
-\]
+$$
 such that
-\[
+$$
 p_T(\lambda)=0.
-\]
+$$
 Thus
-\[
+$$
 \det(\lambda I-T)=0,
-\]
+$$
 so $\lambda I-T$ is singular. Hence its kernel contains a nonzero vector $v$, and
-\[
+$$
 (\lambda I-T)v=0.
-\]
+$$
 Therefore
-\[
+$$
 Tv=\lambda v,
-\]
+$$
 so $v$ is a nonzero eigenvector.
 
 :::
@@ -87,17 +87,17 @@ The corresponding assertion over $\RR$ is false in general.
 ::: pf-proof
 
 Consider the real-linear transformation
-\[
+$$
 T:\RR^2\to\RR^2
-\]
+$$
 with matrix
-\[
+$$
 A=
 \begin{pmatrix}
 0&-1\\
 1&0
 \end{pmatrix},
-\]
+$$
 the rotation through $90^\circ$.
 
 :::
@@ -111,11 +111,11 @@ The transformation in step [](#p2-s2){.pf-ref} has no nonzero real eigenvector.
 ::: pf-proof
 
 If
-\[
+$$
 Av=\lambda v
-\]
+$$
 for some nonzero $v\in\RR^2$ and $\lambda\in\RR$, then $\lambda$ would be a real root of the characteristic polynomial
-\[
+$$
 \det(\lambda I-A)
 =
 \det
@@ -125,11 +125,11 @@ for some nonzero $v\in\RR^2$ and $\lambda\in\RR$, then $\lambda$ would be a real
 \end{pmatrix}
 =
 \lambda^2+1.
-\]
+$$
 But
-\[
+$$
 \lambda^2+1>0
-\]
+$$
 for every real $\lambda$. Thus no such eigenvector exists.
 
 :::
@@ -139,11 +139,11 @@ for every real $\lambda$. Thus no such eigenvector exists.
 ::: {.pf-step #p2-s4}
 
 Therefore
-\[
+$$
 \boxed{
 \text{every complex linear map has an eigenvector, but a real linear map need not}
 }.
-\]
+$$
 
 ::: pf-proof
 

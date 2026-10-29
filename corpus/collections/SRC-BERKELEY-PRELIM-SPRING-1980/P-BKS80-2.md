@@ -19,9 +19,9 @@ audit:
 
 ::: {.problem}
 For each $n\ge1$, let $f_n:\RR\to\RR$ be differentiable with
-\[
+$$
 |f_n'(x)|\le1
-\]
+$$
 for all $n,x$. Suppose $f_n(x)\to g(x)$ for every $x\in\RR$.
 Prove that $g$ is continuous.
 :::

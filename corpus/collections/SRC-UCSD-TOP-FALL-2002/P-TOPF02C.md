@@ -46,9 +46,9 @@ definition of Moore space.
 
 ::: pf-step
 The cellular chain complex of $Y$ is:
-\[
+$$
 C_3 = \ZZ\langle e^3 \rangle, \quad C_2 = \ZZ\langle e^2 \rangle, \quad C_1 = 0, \quad C_0 = \ZZ\langle e^0 \rangle,
-\]
+$$
 with boundary maps $d_3(e^3) = 4 e^2$, $d_2 = 0$, and $d_1 = 0$.
 
 ::: pf-proof
@@ -59,9 +59,9 @@ degree of attaching map on 2-cells.
 
 ::: pf-step
 The resulting integral homology groups are:
-\[
+$$
 H_0(Y; \ZZ) \cong \ZZ, \quad H_1(Y; \ZZ) = 0, \quad H_2(Y; \ZZ) = \ker(d_2)/\operatorname{im}(d_3) \cong \ZZ/4\ZZ = \ZZ_4, \quad H_k(Y; \ZZ) = 0 \ (k \ge 3).
-\]
+$$
 
 ::: pf-proof
 homology of cellular chain complex.

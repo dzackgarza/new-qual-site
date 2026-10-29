@@ -55,9 +55,9 @@ Let $r$ denote the number of $2$-cells.
 ::: {.pf-step #s2}
 
 One necessarily has
-\[
+$$
 r\ge1.
-\]
+$$
 
 ::: pf-proof
 
@@ -65,9 +65,9 @@ If $r=0$, the surface would equal its $1$-skeleton, a graph with one vertex and 
 Its second homology with $\ZZ/2$ coefficients would therefore vanish.
 
 On the other hand, every connected compact surface without boundary has a mod-$2$ fundamental class, so
-\[
+$$
 H_2(S;\ZZ/2)\cong\ZZ/2.
-\]
+$$
 This contradiction shows that at least one $2$-cell is present.
 
 :::
@@ -77,28 +77,28 @@ This contradiction shows that at least one $2$-cell is present.
 ::: {.pf-step #s3}
 
 The Euler characteristic satisfies
-\[
+$$
 \chi(S)=1-2+r=r-1\ge0.
-\]
+$$
 
 ::: pf-proof
 
 For a finite CW decomposition,
-\[
+$$
 \chi(S)=c_0-c_1+c_2.
-\]
+$$
 Here
-\[
+$$
 c_0=1,
 \qquad
 c_1=2,
 \qquad
 c_2=r.
-\]
+$$
 Thus
-\[
+$$
 \chi(S)=1-2+r=r-1.
-\]
+$$
 By step [](#s2){.pf-ref}, $r\ge1$, so $\chi(S)\ge0$.
 
 :::
@@ -108,7 +108,7 @@ By step [](#s2){.pf-ref}, $r\ge1$, so $\chi(S)\ge0$.
 ::: {.pf-step #s4}
 
 By the classification of compact connected surfaces, the only possible surfaces are
-\[
+$$
 S^2,
 \qquad
 \RP^2,
@@ -116,29 +116,29 @@ S^2,
 T^2,
 \qquad
 K,
-\]
+$$
 where $K$ is the Klein bottle.
 
 ::: pf-proof
 
 For the closed orientable surface $\Sigma_g$ of genus $g$,
-\[
+$$
 \chi(\Sigma_g)=2-2g.
-\]
+$$
 The condition $\chi\ge0$ gives
-\[
+$$
 g=0\quad\text{or}\quad g=1,
-\]
+$$
 namely $S^2$ and $T^2$.
 
 For the closed nonorientable surface $N_k$ of nonorientable genus $k\ge1$,
-\[
+$$
 \chi(N_k)=2-k.
-\]
+$$
 The condition $\chi\ge0$ gives
-\[
+$$
 k=1\quad\text{or}\quad k=2,
-\]
+$$
 namely $\RP^2$ and the Klein bottle.
 No other closed connected surface has nonnegative Euler characteristic.
 
@@ -153,20 +153,20 @@ The sphere $S^2$ admits a decomposition with one $0$-cell and two $1$-cells.
 ::: pf-proof
 
 Embed a figure-eight graph
-\[
+$$
 S^1\vee S^1
-\]
+$$
 in $S^2$ so that the two circles meet at a single point.
 Use the common point as the unique $0$-cell and the two circle interiors as the two $1$-cells.
 The complement of this figure-eight in $S^2$ has three connected components, each an open disk.
 Taking these three components as $2$-cells gives a CW decomposition with cell counts
-\[
+$$
 (c_0,c_1,c_2)=(1,2,3).
-\]
+$$
 Indeed, its Euler characteristic is
-\[
+$$
 1-2+3=2=\chi(S^2).
-\]
+$$
 
 :::
 
@@ -179,9 +179,9 @@ The projective plane $\RP^2$ admits such a decomposition with two $2$-cells.
 ::: pf-proof
 
 Start with the standard polygon model of $\RP^2$ as a $2$-gon whose boundary word is
-\[
+$$
 aa.
-\]
+$$
 Its two polygon vertices are identified to one vertex, and the two boundary sides are identified to one $1$-cell $a$.
 
 Inside the polygon add an arc $b$ joining the two vertices.
@@ -189,9 +189,9 @@ After the vertex identification, the interior of this arc is a second $1$-cell w
 The arc divides the polygon into two disks, which become two $2$-cells after the quotient.
 This is merely a subdivision of the standard polygon model, so the quotient is still $\RP^2$.
 Thus
-\[
+$$
 (c_0,c_1,c_2)=(1,2,2).
-\]
+$$
 
 :::
 
@@ -204,14 +204,14 @@ The torus $T^2$ admits such a decomposition with one $2$-cell.
 ::: pf-proof
 
 Use the standard square model with boundary word
-\[
+$$
 aba^{-1}b^{-1}.
-\]
+$$
 All four vertices are identified to one $0$-cell, the edge classes $a$ and $b$ give exactly two $1$-cells, and the square interior is one $2$-cell.
 Hence
-\[
+$$
 (c_0,c_1,c_2)=(1,2,1).
-\]
+$$
 
 :::
 
@@ -224,14 +224,14 @@ The Klein bottle $K$ also admits such a decomposition with one $2$-cell.
 ::: pf-proof
 
 Use the standard square model of the Klein bottle with boundary word
-\[
+$$
 aba^{-1}b.
-\]
+$$
 Again all four vertices become one $0$-cell, the two edge classes $a,b$ give exactly two $1$-cells, and the square interior gives one $2$-cell.
 Thus
-\[
+$$
 (c_0,c_1,c_2)=(1,2,1).
-\]
+$$
 
 :::
 
@@ -240,9 +240,9 @@ Thus
 ::: pf-step
 
 Therefore the complete list is
-\[
+$$
 \boxed{S^2,\ \RP^2,\ T^2,\ \text{and the Klein bottle}.}
-\]
+$$
 
 ::: pf-proof
 

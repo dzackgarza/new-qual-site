@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Let $R=M_n(F)$ be the ring of $n\times n$ matrices over a field $F$. If $S$ is a ring and
-\[
+$$
 h:R\to S
-\]
+$$
 is a ring homomorphism, show that $h$ is either injective or zero.
 :::
 

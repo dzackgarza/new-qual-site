@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Prove that for every \(a\in\CC\) and every integer \(n\ge2\), the polynomial
-\[
+Prove that for every $a\in\CC$ and every integer $n\ge2$, the polynomial
+$$
 az^n+z+1
-\]
-has at least one root in \(|z|\le2\).
+$$
+has at least one root in $|z|\le2$.
 :::
 
 ::: {.solution}

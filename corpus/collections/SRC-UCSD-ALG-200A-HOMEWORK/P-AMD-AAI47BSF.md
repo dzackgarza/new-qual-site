@@ -36,11 +36,11 @@ Show: $H \leq N$
 
 ::: {.solution}
 Let
-\[
+$$
 \pi:G\longrightarrow G/N,
 \qquad
 \pi(g)=gN,
-\]
+$$
 be the quotient homomorphism, and restrict it to $H$.
 
 ::: pf
@@ -52,21 +52,21 @@ The integer $|\pi(H)|$ divides $|H|$.
 ::: pf-proof
 
 The restriction
-\[
+$$
 \pi|_H:H\longrightarrow G/N
-\]
+$$
 has kernel
-\[
+$$
 \ker(\pi|_H)=H\cap N.
-\]
+$$
 By the first isomorphism theorem,
-\[
+$$
 \pi(H)\cong H/(H\cap N).
-\]
+$$
 Since $H$ is finite,
-\[
+$$
 |\pi(H)|=[H:H\cap N],
-\]
+$$
 which divides $|H|$ by Lagrange's theorem.
 
 :::
@@ -81,9 +81,9 @@ The integer $|\pi(H)|$ divides $[G:N]$.
 
 The image $\pi(H)$ is a subgroup of the finite quotient group $G/N$.
 Therefore Lagrange's theorem gives
-\[
+$$
 |\pi(H)|\mid|G/N|=[G:N].
-\]
+$$
 
 :::
 
@@ -97,17 +97,17 @@ The image $\pi(H)$ is trivial.
 
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $|\pi(H)|$ divides both $|H|$ and $[G:N]$.
 The hypothesis says
-\[
+$$
 \gcd(|H|,[G:N])=1.
-\]
+$$
 Hence
-\[
+$$
 |\pi(H)|=1.
-\]
+$$
 Thus
-\[
+$$
 \pi(H)=\{N\}.
-\]
+$$
 
 :::
 
@@ -120,18 +120,18 @@ Therefore $H\le N$.
 ::: pf-proof
 
 By step [](#s3){.pf-ref}, every $h\in H$ satisfies
-\[
+$$
 \pi(h)=N,
-\]
+$$
 so $h\in\ker\pi=N$.
 Hence
-\[
+$$
 H\subseteq N,
-\]
+$$
 that is,
-\[
+$$
 H\le N.
-\]
+$$
 
 :::
 

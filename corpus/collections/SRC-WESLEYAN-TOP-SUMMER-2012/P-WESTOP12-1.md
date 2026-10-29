@@ -37,19 +37,19 @@ For path-connected spaces $X$ and $Y$, give an explicit example satisfying each 
 
 Statement (1) is possible.
 Take
-\[
+$$
 X=\{*\},
 \qquad
 Y=[0,1].
-\]
+$$
 
 
 ::: pf-proof
 
 Both spaces are contractible, so
-\[
+$$
 X\simeq Y.
-\]
+$$
 They are not homeomorphic because one has one point and the other has
 infinitely many.
 
@@ -61,11 +61,11 @@ infinitely many.
 
 Statement (2) is possible as literally stated.
 Take two disjoint copies of the circle:
-\[
+$$
 X=S^1\times\{0\},
 \qquad
 Y=S^1\times\{1\}.
-\]
+$$
 
 
 ::: pf-proof
@@ -86,25 +86,25 @@ Statement (3) is impossible.
 ::: pf-proof
 
 If $X$ is a deformation retract of $Y$, the inclusion
-\[
+$$
 i:X\hookrightarrow Y
-\]
+$$
 and the retraction
-\[
+$$
 r:Y\to X
-\]
+$$
 satisfy
-\[
+$$
 r\circ i=\operatorname{id}_X
-\]
+$$
 and
-\[
+$$
 i\circ r\simeq\operatorname{id}_Y.
-\]
+$$
 Thus $i$ and $r$ are homotopy inverses, so
-\[
+$$
 X\simeq Y.
-\]
+$$
 
 :::
 
@@ -114,35 +114,35 @@ X\simeq Y.
 
 Statement (4) is possible.
 Take
-\[
+$$
 X=S^1
-\]
+$$
 as the circle summand of
-\[
+$$
 Y=S^1\vee S^2.
-\]
+$$
 
 
 ::: pf-proof
 
 Collapse the $S^2$ summand to the wedge point.
 This gives a retraction
-\[
+$$
 r:Y\to X.
-\]
+$$
 
 If $X$ were a deformation retract of $Y$, then step [](#s1-3){.pf-ref} would imply
-\[
+$$
 X\simeq Y.
-\]
+$$
 But
-\[
+$$
 H_2(X)=0
-\]
+$$
 while
-\[
+$$
 H_2(Y)\cong\ZZ.
-\]
+$$
 Hence the retraction is not a deformation retraction.
 
 :::
@@ -174,9 +174,9 @@ Statement (6) is impossible.
 Homotopy equivalent path-connected spaces have isomorphic fundamental
 groups.
 Homotopy inverse maps induce mutually inverse homomorphisms on
-\[
+$$
 \pi_1.
-\]
+$$
 
 :::
 
@@ -186,25 +186,25 @@ Homotopy inverse maps induce mutually inverse homomorphisms on
 
 Statement (7) is possible.
 Take
-\[
+$$
 X=\{*\},
 \qquad
 Y=S^2.
-\]
+$$
 
 
 ::: pf-proof
 
 Both fundamental groups are trivial:
-\[
+$$
 \pi_1(X)=0=\pi_1(Y).
-\]
+$$
 But
-\[
+$$
 H_2(X)=0,
 \qquad
 H_2(Y)\cong\ZZ.
-\]
+$$
 Therefore $X$ and $Y$ cannot be homotopy equivalent.
 
 :::
@@ -234,13 +234,13 @@ Statement (9) is impossible.
 ::: pf-proof
 
 If $X$ is contractible, then
-\[
+$$
 X\simeq\{*\}.
-\]
+$$
 Homotopy invariance of the fundamental group gives
-\[
+$$
 \pi_1(X)\cong0.
-\]
+$$
 
 :::
 
@@ -250,21 +250,21 @@ Homotopy invariance of the fundamental group gives
 
 Statement (10) is possible.
 Take
-\[
+$$
 X=S^2.
-\]
+$$
 
 
 ::: pf-proof
 
 The sphere is simply connected:
-\[
+$$
 \pi_1(S^2)=0.
-\]
+$$
 It is not contractible because
-\[
+$$
 H_2(S^2)\cong\ZZ\ne0.
-\]
+$$
 
 :::
 
@@ -274,28 +274,28 @@ H_2(S^2)\cong\ZZ\ne0.
 
 Statement (11) is possible.
 Take
-\[
+$$
 X=S^1\vee S^1,
 \qquad
 Y=T^2.
-\]
+$$
 
 
 ::: pf-proof
 
 For the wedge,
-\[
+$$
 \pi_1(X)\cong F_2,
-\]
+$$
 while
-\[
+$$
 \pi_1(Y)\cong\ZZ^2.
-\]
+$$
 These groups are not isomorphic because the first is nonabelian and the
 second is abelian.
 
 However,
-\[
+$$
 H_1(X)
 \cong
 F_2^{\mathrm{ab}}
@@ -303,7 +303,7 @@ F_2^{\mathrm{ab}}
 \ZZ^2
 \cong
 H_1(Y).
-\]
+$$
 
 :::
 
@@ -317,19 +317,19 @@ Statement (12) is impossible.
 ::: pf-proof
 
 For every path-connected space $Z$,
-\[
+$$
 H_1(Z;\ZZ)
 \cong
 \pi_1(Z)^{\mathrm{ab}}.
-\]
+$$
 Hence an isomorphism
-\[
+$$
 \pi_1(X)\cong\pi_1(Y)
-\]
+$$
 induces an isomorphism of abelianizations and therefore
-\[
+$$
 H_1(X)\cong H_1(Y).
-\]
+$$
 
 :::
 
@@ -339,27 +339,27 @@ H_1(X)\cong H_1(Y).
 
 Statement (13) is possible.
 Take
-\[
+$$
 X=S^1,
 \qquad
 Y=\{*\}.
-\]
+$$
 
 
 ::: pf-proof
 
 Both second homology groups vanish:
-\[
+$$
 H_2(S^1)=0=H_2(\{*\}).
-\]
+$$
 But
-\[
+$$
 \pi_1(S^1)\cong\ZZ
-\]
+$$
 and
-\[
+$$
 \pi_1(\{*\})=0.
-\]
+$$
 
 :::
 
@@ -369,23 +369,23 @@ and
 
 Statement (14) is possible.
 Take
-\[
+$$
 X=\{*\},
 \qquad
 Y=S^2.
-\]
+$$
 
 
 ::: pf-proof
 
 Both fundamental groups are trivial, while
-\[
+$$
 H_2(X)=0
-\]
+$$
 and
-\[
+$$
 H_2(Y)\cong\ZZ.
-\]
+$$
 
 :::
 
@@ -394,7 +394,7 @@ H_2(Y)\cong\ZZ.
 ::: pf-step
 
 The complete classification is
-\[
+$$
 \boxed{
 \begin{array}{c|cccccccccccccc}
 \text{statement}
@@ -404,7 +404,7 @@ The complete classification is
 &Y&Y&N&Y&N&N&Y&N&N&Y&Y&N&Y&Y
 \end{array}
 }
-\]
+$$
 
 
 ::: pf-proof

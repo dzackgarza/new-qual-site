@@ -68,11 +68,11 @@ The subsets $pA$ and $A[p]$ are $R$-submodules of $A$.
 ::: pf-proof
 
 The map
-\[
+$$
 \mu_p:A\longrightarrow A,
 \qquad
 a\longmapsto pa
-\]
+$$
 is $R$-linear because $R$ is commutative. Its image is $pA$ and its kernel is
 $A[p]$. Images and kernels of module homomorphisms are submodules.
 
@@ -83,9 +83,9 @@ $A[p]$. Images and kernels of module homomorphisms are submodules.
 ::: pf-step
 
 The formula
-\[
+$$
 (r+(p))(a+pA)=ra+pA
-\]
+$$
 makes $A/pA$ into an $R/(p)$-vector space.
 
 ::: pf-proof
@@ -102,24 +102,24 @@ space.
 ::: pf-step
 
 The formula
-\[
+$$
 (r+(p))a=ra
-\]
+$$
 makes $A[p]$ into an $R/(p)$-vector space.
 
 ::: pf-proof
 
 First check well-definedness in the scalar coset. If $r-r'\in(p)$, write
 $r-r'=tp$. For $a\in A[p]$,
-\[
+$$
 (r-r')a=t(pa)=0,
-\]
+$$
 so $ra=r'a$.
 
 For $a\in A[p]$ and $r\in R$,
-\[
+$$
 p(ra)=r(pa)=0,
-\]
+$$
 so $ra\in A[p]$. Each module axiom for $A[p]$ over $R/(p)$, evaluated on
 coset representatives, is the corresponding axiom for $A$ over $R$. Thus $A[p]$ is an $R/(p)$-module,
 and hence, by step [](#s1){.pf-ref}, an $R/(p)$-vector space.

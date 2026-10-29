@@ -33,18 +33,18 @@ If $X$ is a finite graph and $Y$ is a subgraph homeomorphic to $S^1$ and contain
 ::: {.solution}
 Let $Y\subseteq X$ be the given subgraph homeomorphic to $S^1$ and containing the basepoint $x_0$.
 Choose an edge
-\[
+$$
 e\subseteq Y.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 The subgraph
-\[
+$$
 Y\setminus \mathring e
-\]
+$$
 is a tree.
 
 ::: pf-proof
@@ -59,13 +59,13 @@ Thus it is connected and contains no cycle.
 ::: pf-step
 
 Extend
-\[
+$$
 Y\setminus \mathring e
-\]
+$$
 to a maximal tree
-\[
+$$
 T\subseteq X.
-\]
+$$
 
 ::: pf-proof
 
@@ -99,9 +99,9 @@ For every edge $f$ of $X\setminus T$, the associated basis loop starts at $x_0$,
 
 Take $f=e$.
 Because
-\[
+$$
 Y\setminus\mathring e\subseteq T,
-\]
+$$
 the unique path in $T$ between the endpoints of $e$ is exactly the complementary arc of $Y$.
 Hence the basis loop associated to $e$ traverses precisely the circle $Y$, up to orientation.
 Thus one basis element is represented by $Y$.

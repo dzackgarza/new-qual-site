@@ -39,13 +39,13 @@ Compute $\pi_1 (\RR^3 \backslash L, \ast)$.
 
 ::: {.solution}
 Write
-\[
+$$
 A=\{(0,0,z):z\in\RR\}
-\]
+$$
 for the $z$-axis and
-\[
+$$
 C=\{(x,y,0):x^2+y^2=1\}
-\]
+$$
 for the unit circle, so $L=A\cup C$.
 
 ::: pf
@@ -53,45 +53,45 @@ for the unit circle, so $L=A\cup C$.
 ::: {.pf-step #s1}
 
 There is a homeomorphism
-\[
+$$
 \RR^3\setminus A
 \cong
 S^1\times(0,\infty)\times\RR
-\]
+$$
 under which $C$ corresponds to
-\[
+$$
 S^1\times\{(1,0)\}.
-\]
+$$
 
 ::: pf-proof
 
 For $(x,y,z)\notin A$, put
-\[
+$$
 r=\sqrt{x^2+y^2}>0,
 \qquad
 u=\frac{x+iy}{r}\in S^1.
-\]
+$$
 Then
-\[
+$$
 \Phi(x,y,z)=(u,r,z)
-\]
+$$
 defines a continuous map
-\[
+$$
 \Phi:\RR^3\setminus A\longrightarrow S^1\times(0,\infty)\times\RR.
-\]
+$$
 Its inverse is
-\[
+$$
 \Phi^{-1}(u,r,z)
 =
 (r\operatorname{Re}u,r\operatorname{Im}u,z),
-\]
+$$
 which is continuous, so $\Phi$ is a homeomorphism.
 
 A point of $C$ has $r=1$ and $z=0$, while $u$ ranges over all of $S^1$.
 Hence
-\[
+$$
 \Phi(C)=S^1\times\{(1,0)\}.
-\]
+$$
 
 :::
 
@@ -100,21 +100,21 @@ Hence
 ::: {.pf-step #s2}
 
 Consequently,
-\[
+$$
 \RR^3\setminus L
 \cong
 S^1\times
 \left(((0,\infty)\times\RR)\setminus\{(1,0)\}\right).
-\]
+$$
 
 ::: pf-proof
 
 Since $L=A\cup C$,
-\[
+$$
 \RR^3\setminus L
 =
 (\RR^3\setminus A)\setminus C.
-\]
+$$
 Apply the homeomorphism from step [](#s1){.pf-ref} and remove its image of $C$.
 
 :::
@@ -124,39 +124,39 @@ Apply the homeomorphism from step [](#s1){.pf-ref} and remove its image of $C$.
 ::: {.pf-step #s3}
 
 The space
-\[
+$$
 ((0,\infty)\times\RR)\setminus\{(1,0)\}
-\]
+$$
 deformation retracts onto a circle.
 
 ::: pf-proof
 
 The map
-\[
+$$
 h:(0,\infty)\times\RR\longrightarrow\RR^2,
 \qquad
 h(r,z)=(\log r,z),
-\]
+$$
 is a homeomorphism with inverse
-\[
+$$
 h^{-1}(s,z)=(e^s,z).
-\]
+$$
 It sends $(1,0)$ to $(0,0)$.
 Hence it restricts to a homeomorphism
-\[
+$$
 ((0,\infty)\times\RR)\setminus\{(1,0)\}
 \cong
 \RR^2\setminus\{0\}.
-\]
+$$
 
 The punctured plane strongly deformation retracts onto the unit circle by
-\[
+$$
 H(v,t)
 =
 \left((1-t)+\frac{t}{\lVert v\rVert}\right)v,
 \qquad
 v\in\RR^2\setminus\{0\},\quad 0\le t\le1.
-\]
+$$
 Therefore the stated space deformation retracts onto $S^1$.
 
 :::
@@ -170,9 +170,9 @@ The complement $\RR^3\setminus L$ deformation retracts onto the torus $S^1\times
 ::: pf-proof
 
 By step [](#s2){.pf-ref} the complement is a product of $S^1$ with the space considered in step [](#s3){.pf-ref}. Taking the product of the identity map of $S^1$ with the deformation retraction from step [](#s3){.pf-ref} gives a deformation retraction
-\[
+$$
 \RR^3\setminus L\simeq S^1\times S^1.
-\]
+$$
 
 :::
 
@@ -181,18 +181,18 @@ By step [](#s2){.pf-ref} the complement is a product of $S^1$ with the space con
 ::: pf-step
 
 Therefore
-\[
+$$
 \pi_1(\RR^3\setminus L,*)\cong\ZZ^2.
-\]
+$$
 
 ::: pf-proof
 
 Fundamental groups are invariant under deformation retraction, and for path-connected spaces
-\[
+$$
 \pi_1(X\times Y)\cong\pi_1(X)\times\pi_1(Y).
-\]
+$$
 Thus step [](#s4){.pf-ref} gives
-\[
+$$
 \pi_1(\RR^3\setminus L,*)
 \cong
 \pi_1(S^1\times S^1)
@@ -200,11 +200,11 @@ Thus step [](#s4){.pf-ref} gives
 \pi_1(S^1)\times\pi_1(S^1)
 \cong
 \ZZ\times\ZZ.
-\]
+$$
 Hence
-\[
+$$
 \boxed{\pi_1(\RR^3\setminus L,*)\cong\ZZ^2.}
-\]
+$$
 
 :::
 

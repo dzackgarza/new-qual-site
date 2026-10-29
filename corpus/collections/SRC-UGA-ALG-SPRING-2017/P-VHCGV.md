@@ -33,17 +33,17 @@ Then $A=2J_n(0)$.
 Since $A^{n-1}\ne0$ and $A^n=0$, its minimal polynomial is $x^n$; hence its Jordan form consists of one block, namely $J_n(0)$.
 
 For the standard basis $e_1,\ldots,e_n$, set
-\[
+$$
 v_j=2^{-(j-1)}e_j\qquad(1\le j\le n).
-\]
+$$
 Then $Av_1=0$ and, for $j\ge2$,
-\[
+$$
 Av_j=2^{-(j-1)}(2e_{j-1})=v_{j-1}.
-\]
+$$
 Thus in the ordered basis $(v_1,\ldots,v_n)$ the matrix is $J_n(0)$.
 Taking
-\[
+$$
 P=\operatorname{diag}(1,2^{-1},2^{-2},\ldots,2^{-(n-1)})
-\]
+$$
 gives $P^{-1}AP=J_n(0)$.
 :::

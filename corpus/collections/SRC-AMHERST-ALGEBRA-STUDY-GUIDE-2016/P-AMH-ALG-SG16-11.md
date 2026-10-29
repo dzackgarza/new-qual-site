@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 (February 2013) Let $G_1$ and $G_2$ be groups, let $\varphi:G_1\to G_2$ be a homomorphism, and let $H_1\subseteq G_1$ be a subgroup.
 Recall that the set
-\[
+$$
 H_2=\{\varphi(x)\mid x\in H_1\}
-\]
+$$
 is a subgroup of $G_2$, called the image of $H_1$ under $\varphi$, sometimes notated $\varphi(H_1)$.
 If $G_1$ is finite, prove that $|H_2|\mid |G_1|$.
 That is, prove that the order of $H_2$ divides the order of $G_1$.

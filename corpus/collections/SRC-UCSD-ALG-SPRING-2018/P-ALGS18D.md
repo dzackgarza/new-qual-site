@@ -50,9 +50,9 @@ Thus $F$ has the lifting property for surjections.
 
 Suppose conversely that $M$ is finitely generated and projective.
 Then there is a surjection
-\[
+$$
 \pi:A^n\twoheadrightarrow M
-\]
+$$
 for some $n$.
 
 ::: pf-proof

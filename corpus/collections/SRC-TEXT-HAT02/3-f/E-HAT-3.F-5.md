@@ -30,53 +30,53 @@ Use this to get another proof that $\operatorname{Ext}(\ZZ_{p^\infty}, \ZZ) \app
 
 ::: {.solution}
 Apply $\operatorname{Hom}(A,-)$ and its derived functor $\operatorname{Ext}(A,-)$ to
-\[
+$$
 0\longrightarrow\ZZ\longrightarrow\QQ
 \longrightarrow\QQ/\ZZ\longrightarrow0.
-\]
+$$
 Since $\QQ$ is divisible, Exercise 4 gives
-\[
+$$
 \operatorname{Ext}(A,\QQ)=0.
-\]
+$$
 The resulting exact sequence therefore contains
-\[
+$$
 \operatorname{Hom}(A,\QQ)
 \longrightarrow
 \operatorname{Hom}(A,\QQ/\ZZ)
 \longrightarrow
 \operatorname{Ext}(A,\ZZ)
 \longrightarrow0.
-\]
+$$
 Hence
-\[
+$$
 \boxed{\operatorname{Ext}(A,\ZZ)
 \cong\operatorname{coker}\bigl(\operatorname{Hom}(A,\QQ)\to
 \operatorname{Hom}(A,\QQ/\ZZ)\bigr).}
-\]
+$$
 
 Now take $A=\ZZ_{p^\infty}$. Since $A$ is torsion and $\QQ$ is torsionfree,
-\[
+$$
 \operatorname{Hom}(A,\QQ)=0.
-\]
+$$
 Thus
-\[
+$$
 \operatorname{Ext}(\ZZ_{p^\infty},\ZZ)
 \cong\operatorname{Hom}(\ZZ_{p^\infty},\QQ/\ZZ).
-\]
+$$
 The $p$-primary subgroup of $\QQ/\ZZ$ is itself isomorphic to $\ZZ_{p^\infty}$, so every homomorphism lands there and
-\[
+$$
 \operatorname{Hom}(\ZZ_{p^\infty},\QQ/\ZZ)
 \cong\operatorname{End}(\ZZ_{p^\infty}).
-\]
+$$
 An endomorphism is determined by compatible multipliers modulo $p^n$ on the unique cyclic subgroup of order $p^n$. Hence
-\[
+$$
 \operatorname{End}(\ZZ_{p^\infty})
 \cong\varprojlim_n\ZZ/p^n\ZZ
 =\widehat{\ZZ}_p.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{\operatorname{Ext}(\ZZ_{p^\infty},\ZZ)
 \cong\widehat{\ZZ}_p.}
-\]
+$$
 :::

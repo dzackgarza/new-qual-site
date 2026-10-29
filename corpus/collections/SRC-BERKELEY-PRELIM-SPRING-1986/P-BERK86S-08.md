@@ -26,17 +26,17 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 A(z)=\begin{pmatrix}
 4z^2&1&-1\\
 -1&2z^2&0\\
 3&0&1
 \end{pmatrix}.
-\]
+$$
 How many distinct values $z$ satisfy
-\[
+$$
 |z|<1
-\]
+$$
 and make $A(z)$ noninvertible?
 :::
 

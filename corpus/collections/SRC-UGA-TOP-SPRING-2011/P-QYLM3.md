@@ -33,13 +33,13 @@ What are the possibilities for the homology $H_* (X; Z)$?
 ::: {.pf-step #s1}
 
 Up to homotopy, there are exactly two possible attaching maps
-\[
+$$
 f:S^1\to\RP^2:
-\]
+$$
 the nullhomotopic map and a map representing the nonzero element of
-\[
+$$
 \pi_1(\RP^2)\cong\ZZ/2\ZZ.
-\]
+$$
 
 ::: pf-proof
 
@@ -58,12 +58,12 @@ Therefore the homology of $X$ depends only on which of these two classes contain
 
 Use the standard CW structure on $\RP^2$ with one cell in each dimension $0,1,2$.
 Its cellular chain complex is
-\[
+$$
 0\longrightarrow\ZZ
 \xrightarrow{\;2\;}\ZZ
 \xrightarrow{\;0\;}\ZZ
 \longrightarrow0.
-\]
+$$
 
 ::: pf-proof
 
@@ -78,20 +78,20 @@ There is one $0$-cell, hence the boundary $C_1\to C_0$ is zero.
 ::: {.pf-step #s3}
 
 If $f$ is nullhomotopic, then the cellular chain complex of $X$ in positive degrees is
-\[
+$$
 0\longrightarrow\ZZ^2
 \xrightarrow{\;(2\;0)\;}\ZZ
 \xrightarrow{\;0\;}\ZZ
 \longrightarrow0.
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s1){.pf-ref} we may take the new attaching map to be constant.
 Thus the new $2$-cell contributes zero to the cellular boundary, while the original $2$-cell contributes $2$ by step [](#s2){.pf-ref}. With respect to the basis consisting of the original and new $2$-cells,
-\[
+$$
 d_2(u,v)=2u.
-\]
+$$
 
 :::
 
@@ -100,7 +100,7 @@ d_2(u,v)=2u.
 ::: {.pf-step #s4}
 
 In the nullhomotopic case,
-\[
+$$
 H_k(X;\ZZ)
 \cong
 \begin{cases}
@@ -109,23 +109,23 @@ H_k(X;\ZZ)
 \ZZ,&k=2,\\
 0,&k\ge3.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 For the differential in step [](#s3){.pf-ref},
-\[
+$$
 \ker d_2=\{(0,v):v\in\ZZ\}\cong\ZZ,
-\]
+$$
 so $H_2(X;\ZZ)\cong\ZZ$.
 Also
-\[
+$$
 H_1(X;\ZZ)
 =
 \ZZ/\operatorname{im}(d_2)
 =
 \ZZ/2\ZZ.
-\]
+$$
 The space is connected, so $H_0\cong\ZZ$, and it has no cells above dimension $2$.
 Equivalently, in this case $X\simeq\RP^2\vee S^2$.
 
@@ -136,26 +136,26 @@ Equivalently, in this case $X\simeq\RP^2\vee S^2$.
 ::: pf-step
 
 If $f$ represents the nonzero element of $\pi_1(\RP^2)$, then the cellular chain complex of $X$ in positive degrees is
-\[
+$$
 0\longrightarrow\ZZ^2
 \xrightarrow{\;(2\;1)\;}\ZZ
 \xrightarrow{\;0\;}\ZZ
 \longrightarrow0.
-\]
+$$
 
 ::: pf-proof
 
 By cellular approximation, take the nontrivial attaching map to land in the $1$-skeleton $S^1$.
 The generator of $\pi_1(S^1)\cong\ZZ$ maps to the nonzero class modulo $2$ in
-\[
+$$
 \pi_1(\RP^2)\cong\ZZ/2\ZZ,
-\]
+$$
 so we may choose the degree-$1$ loop on the $1$-skeleton as a representative.
 Hence the new $2$-cell contributes cellular boundary $1$, while the original $2$-cell contributes $2$.
 Thus
-\[
+$$
 d_2(u,v)=2u+v.
-\]
+$$
 
 :::
 
@@ -164,28 +164,28 @@ d_2(u,v)=2u+v.
 ::: {.pf-step #s6}
 
 In the nontrivial case,
-\[
+$$
 H_k(X;\ZZ)
 \cong
 \begin{cases}
 \ZZ,&k=0,2,\\
 0,&k\ne0,2.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 The map
-\[
+$$
 d_2:\ZZ^2\to\ZZ,
 \qquad
 (u,v)\longmapsto2u+v
-\]
+$$
 is surjective, so $H_1(X;\ZZ)=0$.
 Its kernel is
-\[
+$$
 \{(u,-2u):u\in\ZZ\}\cong\ZZ,
-\]
+$$
 so $H_2(X;\ZZ)\cong\ZZ$.
 Again $H_0\cong\ZZ$ and all groups above degree $2$ vanish.
 

@@ -20,13 +20,13 @@ audit:
 
 ::: {.problem}
 Let $f,g:[0,1]\to[0,\infty)$ be continuous and suppose
-\[
+$$
 \sup_{0\le x\le1}f(x)=\sup_{0\le x\le1}g(x).
-\]
+$$
 Prove that there exists $t\in[0,1]$ such that
-\[
+$$
 f(t)^2+3f(t)=g(t)^2+3g(t).
-\]
+$$
 :::
 
 ::: {.solution}

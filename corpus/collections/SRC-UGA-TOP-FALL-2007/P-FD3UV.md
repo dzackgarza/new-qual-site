@@ -33,22 +33,22 @@ Show that any continuous map $f : \RP^2 \to S^1 \times S^1$ is necessarily null-
 
 ::: {.pf-step #f-star-zero}
 The induced homomorphism
-\[
+$$
 f_*:\pi_1(\RP^2)\to\pi_1(T^2)
-\]
+$$
 is zero.
 
 ::: pf-proof
 We have
-\[
+$$
 \pi_1(\RP^2)\cong\ZZ/2\ZZ,
 \qquad
 \pi_1(T^2)\cong\ZZ^2.
-\]
+$$
 If $u=f_*([1])$, then
-\[
+$$
 2u=f_*(2[1])=0.
-\]
+$$
 The group $\ZZ^2$ is torsion-free, so $u=0$.
 :::
 
@@ -56,27 +56,27 @@ The group $\ZZ^2$ is torsion-free, so $u=0$.
 
 ::: {.pf-step #f-lifts}
 The map $f$ lifts to the universal cover
-\[
+$$
 p:\RR^2\to T^2.
-\]
+$$
 
 ::: pf-proof
 Choose basepoints.
 The covering-space lifting criterion requires
-\[
+$$
 f_*\pi_1(\RP^2)
 \subseteq
 p_*\pi_1(\RR^2).
-\]
+$$
 Both sides are zero: the left by step [](#f-star-zero){.pf-ref} and the right because $\RR^2$ is simply connected.
 Thus there is a continuous lift
-\[
+$$
 \widetilde f:\RP^2\to\RR^2
-\]
+$$
 such that
-\[
+$$
 p\circ\widetilde f=f.
-\]
+$$
 :::
 
 :::

@@ -33,9 +33,9 @@ If $\Gamma$ is a finite graph of finite groups with injective edge homomorphisms
 Let $\Gamma$ be a finite connected graph of finite groups with injective edge homomorphisms.
 Write $G_v$ for the vertex groups and $G_e$ for the edge groups.
 Choose
-\[
+$$
 N
-\]
+$$
 to be a common multiple of the orders of all vertex and edge groups.
 
 ::: pf
@@ -43,22 +43,22 @@ to be a common multiple of the orders of all vertex and edge groups.
 ::: {.pf-step #s1}
 
 Over each vertex space $K(G_v,1)$ take
-\[
+$$
 \frac{N}{|G_v|}
-\]
+$$
 disjoint copies of its universal cover
-\[
+$$
 E G_v\to K(G_v,1).
-\]
+$$
 The resulting map over the vertex space has total degree $N$.
 
 ::: pf-proof
 
 Each universal cover has degree $|G_v|$ because its deck group is the finite group $G_v$.
 Hence
-\[
+$$
 \frac{N}{|G_v|}\cdot |G_v|=N.
-\]
+$$
 
 :::
 
@@ -67,13 +67,13 @@ Hence
 ::: {.pf-step #s2}
 
 Over each edge mapping cylinder take
-\[
+$$
 \frac{N}{|G_e|}
-\]
+$$
 copies of the universal lifted edge cylinder
-\[
+$$
 E G_e\times I.
-\]
+$$
 
 ::: pf-proof
 
@@ -92,30 +92,30 @@ The boundary components of these lifted edge cylinders can be matched exactly wi
 
 Fix an incidence of an edge $e$ at a vertex $v$.
 Since the edge homomorphism
-\[
+$$
 G_e\hookrightarrow G_v
-\]
+$$
 is injective, pulling the universal cover
-\[
+$$
 E G_v\to K(G_v,1)
-\]
+$$
 back along
-\[
+$$
 K(G_e,1)\to K(G_v,1)
-\]
+$$
 produces
-\[
+$$
 [G_v:G_e]
-\]
+$$
 disjoint copies of $E G_e$.
 Across the $N/|G_v|$ chosen copies of $E G_v$, the total number of such boundary copies is therefore
-\[
+$$
 \frac{N}{|G_v|}[G_v:G_e]
 =
 \frac{N}{|G_v|}\frac{|G_v|}{|G_e|}
 =
 \frac{N}{|G_e|},
-\]
+$$
 exactly the number of lifted edge cylinders from step [](#s2){.pf-ref}.
 Hence the boundary copies can be paired and glued.
 The same count holds at the other endpoint of the edge.
@@ -127,9 +127,9 @@ The same count holds at the other endpoint of the edge.
 ::: pf-step
 
 After performing these gluings for every edge, one obtains a finite-sheeted covering
-\[
+$$
 \widehat K\to K\Gamma
-\]
+$$
 of degree $N$.
 
 ::: pf-proof
@@ -164,24 +164,24 @@ Therefore the original graph product contains a free subgroup of finite index.
 ::: pf-proof
 
 Choose any connected component
-\[
+$$
 \widehat K_0\subseteq\widehat K.
-\]
+$$
 Since $K\Gamma$ is connected, the restriction
-\[
+$$
 \widehat K_0\to K\Gamma
-\]
+$$
 is a connected finite-sheeted covering, of some finite degree $d\le N$.
 The corresponding subgroup
-\[
+$$
 H=(p_*)\pi_1(\widehat K_0)
 \le\pi_1(K\Gamma)
-\]
+$$
 has index $d$, and by step [](#s5){.pf-ref} the group $H$ is free.
 Hence
-\[
+$$
 \boxed{\pi_1(K\Gamma)\text{ is virtually free}.}
-\]
+$$
 
 :::
 

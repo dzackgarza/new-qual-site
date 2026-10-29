@@ -26,10 +26,10 @@ audit:
 
 ::: {.problem}
 Let $a>0$ and $x_0>0$. Define recursively
-\[
+$$
 x_n=\frac12\left(x_{n-1}+\frac{a}{x_{n-1}}\right),
 \qquad n\ge1.
-\]
+$$
 Prove that $(x_n)$ converges, and find its limit.
 :::
 

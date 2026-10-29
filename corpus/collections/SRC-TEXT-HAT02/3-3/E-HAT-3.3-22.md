@@ -31,21 +31,21 @@ Show that $H_c^n(X \times \RR; G) \approx H_c^{n-1}(X; G)$ for all $n$.
 
 ::: {.solution}
 Under the standing locally compact Hausdorff hypotheses for compactly supported cohomology,
-\[
+$$
 H_c^q(Y;G)\cong\widetilde H^q(Y^+;G),
-\]
+$$
 where $Y^+$ denotes the one-point compactification.
 
 One-point compactification converts products into smash products:
-\[
+$$
 (X\times\RR)^+\cong X^+\wedge\RR^+.
-\]
+$$
 Since $\RR^+\cong S^1$, this is the reduced suspension
-\[
+$$
 X^+\wedge S^1\cong\Sigma X^+.
-\]
+$$
 Hence the suspension isomorphism gives
-\[
+$$
 H_c^n(X\times\RR;G)
 \cong
 \widetilde H^n(\Sigma X^+;G)
@@ -53,10 +53,10 @@ H_c^n(X\times\RR;G)
 \widetilde H^{n-1}(X^+;G)
 \cong
 H_c^{n-1}(X;G).
-\]
+$$
 Thus
-\[
+$$
 \boxed{H_c^n(X\times\RR;G)\cong H_c^{n-1}(X;G)}
-\]
+$$
 for all $n$.
 :::

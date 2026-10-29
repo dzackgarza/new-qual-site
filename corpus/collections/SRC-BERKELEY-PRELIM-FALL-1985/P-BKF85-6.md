@@ -17,20 +17,20 @@ audit:
 
 ::: {.problem}
 Let $k\in\RR$, let $n\ge2$, and let $A=(a_{ij})$ be the $n\times n$ matrix with
-\[
+$$
 a_{ii}=k,
 \qquad
 a_{i,i+1}=a_{i+1,i}=1,
-\]
+$$
 and all other entries equal to $0$.
 
 Let $\lambda_{\min}$ and $\lambda_{\max}$ be the smallest and largest eigenvalues of $A$.
 Show that
-\[
+$$
 \lambda_{\min}\le k-1
 \qquad\text{and}\qquad
 \lambda_{\max}\ge k+1.
-\]
+$$
 :::
 
 ::: {.solution}

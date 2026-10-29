@@ -17,9 +17,9 @@ audit:
 
 ::: {.problem}
 Find the winding number of
-\[
+$$
 \gamma(t)=4e^{it}+2i,\qquad 0\le t\le2\pi,
-\]
+$$
 about the point $10+10i$.
 :::
 

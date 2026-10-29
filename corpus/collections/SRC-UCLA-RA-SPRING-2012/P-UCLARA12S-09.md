@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Prove Jordan's lemma: if $f:\CC\to\CC$ is meromorphic, $R>0$, and $k>0$, then
-\[
+$$
 \left|\int_\Gamma f(z)e^{ikz}\,dz\right|\le \frac{100}{k}\sup_{z\in\Gamma}|f(z)|,
-\]
+$$
 where $\Gamma$ is the quarter-circle $z=Re^{i\theta}$, $0\le\theta\le\pi/2$.
 :::
 

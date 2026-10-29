@@ -48,9 +48,9 @@ The number $n_5$ of Sylow $5$-subgroups divides $14$ and is congruent to $1$ mod
 ::: {.pf-step #s1-2}
 
 Three groups of order $70$ are
-\[
+$$
 \boxed{C_{70},\quad D_{70},\quad C_5\times D_{14}}.
-\]
+$$
 
 
 ::: pf-proof

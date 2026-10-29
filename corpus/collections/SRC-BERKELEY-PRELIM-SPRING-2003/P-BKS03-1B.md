@@ -20,9 +20,9 @@ audit:
 (a) Prove there is no continuously differentiable measure-preserving bijection $f:\RR\to\RR_{>0}$.
 
 (b) Find a continuously differentiable measure-preserving bijection
-\[
+$$
 f:\RR^2\to\RR\times\RR_{>0}.
-\]
+$$
 :::
 
 ::: {.solution}

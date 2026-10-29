@@ -16,9 +16,9 @@ audit:
 
 ::: {.problem}
 Prove that if $\sum a_n$ converges and $\sum b_n$ converges absolutely, then
-\[
+$$
 \sum a_nb_n
-\]
+$$
 converges absolutely. What can be said if $\sum a_n$ and $\sum b_n$ are both only conditionally convergent?
 :::
 
@@ -34,13 +34,13 @@ If $\sum a_n$ converges, then the sequence $(a_n)$ is bounded.
 ::: pf-proof
 
 Convergence of the series implies
-\[
+$$
 a_n\to0.
-\]
+$$
 Every convergent sequence is bounded, so there is $M>0$ such that
-\[
+$$
 |a_n|\le M
-\]
+$$
 for every $n$.
 
 :::
@@ -50,26 +50,26 @@ for every $n$.
 ::: {.pf-step #s1-2}
 
 If $\sum b_n$ converges absolutely, then
-\[
+$$
 \boxed{\sum_{n=1}^\infty a_nb_n\text{ converges absolutely}}.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref},
-\[
+$$
 |a_nb_n|
 \le
 M|b_n|.
-\]
+$$
 Hence
-\[
+$$
 \sum_{n=1}^\infty|a_nb_n|
 \le
 M\sum_{n=1}^\infty|b_n|
 <\infty.
-\]
+$$
 The comparison test gives absolute convergence.
 
 :::
@@ -85,22 +85,22 @@ series can converge absolutely.
 ::: pf-proof
 
 Take
-\[
+$$
 a_n=b_n=\frac{(-1)^n}{n}.
-\]
+$$
 Each of
-\[
+$$
 \sum a_n,\qquad \sum b_n
-\]
+$$
 converges by the alternating-series test but fails to converge absolutely.
 However,
-\[
+$$
 a_nb_n=\frac1{n^2},
-\]
+$$
 so
-\[
+$$
 \sum a_nb_n
-\]
+$$
 converges absolutely.
 
 :::
@@ -116,14 +116,14 @@ series can also diverge.
 ::: pf-proof
 
 Take
-\[
+$$
 a_n=b_n=\frac{(-1)^n}{\sqrt n}.
-\]
+$$
 Again both original series converge by the alternating-series test and fail
 to converge absolutely. But
-\[
+$$
 a_nb_n=\frac1n,
-\]
+$$
 so the product series is the harmonic series and diverges.
 
 :::
@@ -133,9 +133,9 @@ so the product series is the harmonic series and diverges.
 ::: {.pf-step #s1-5}
 
 Thus under conditional convergence alone,
-\[
+$$
 \boxed{\text{no general convergence conclusion for }\sum a_nb_n\text{ is possible}}.
-\]
+$$
 
 
 ::: pf-proof

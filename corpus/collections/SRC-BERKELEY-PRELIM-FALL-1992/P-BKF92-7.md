@@ -23,9 +23,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_C\frac{e^z}{z(2z+1)^2}\,dz,
-\]
+$$
 where $C$ is the unit circle oriented counterclockwise.
 :::
 

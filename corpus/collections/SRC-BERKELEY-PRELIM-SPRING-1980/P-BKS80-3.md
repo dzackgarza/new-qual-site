@@ -22,13 +22,13 @@ audit:
 
 ::: {.problem}
 Let $P_2$ be the real polynomials of degree at most two and define
-\[
+$$
 J(f)=\int_0^1 f(x)^2\,dx.
-\]
+$$
 Let
-\[
+$$
 Q=\{f\in P_2:f(1)=1\}.
-\]
+$$
 Show that $J$ attains a minimum on $Q$ and determine the minimizing polynomial.
 :::
 

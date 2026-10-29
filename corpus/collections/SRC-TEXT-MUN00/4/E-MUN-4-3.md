@@ -31,21 +31,21 @@ audit:
 :::
 
 ::: {.solution}
-(a) Let \(\mathcal A\) be a collection of inductive subsets of \(\RR\), and put
-\[
+(a) Let $\mathcal A$ be a collection of inductive subsets of $\RR$, and put
+$$
 I=\bigcap_{A\in\mathcal A}A.
-\]
-Every \(A\in\mathcal A\) contains \(1\), so \(1\in I\). If \(x\in I\), then \(x\in A\) for every \(A\in\mathcal A\). Since each \(A\) is inductive, \(x+1\in A\) for every \(A\), hence \(x+1\in I\). Thus \(I\) is inductive.
+$$
+Every $A\in\mathcal A$ contains $1$, so $1\in I$. If $x\in I$, then $x\in A$ for every $A\in\mathcal A$. Since each $A$ is inductive, $x+1\in A$ for every $A$, hence $x+1\in I$. Thus $I$ is inductive.
 
-(b) By definition, \(\ZZ_+\) is the intersection of all inductive subsets of \(\RR\). By part (a), \(\ZZ_+\) is itself inductive. This is property (1).
+(b) By definition, $\ZZ_+$ is the intersection of all inductive subsets of $\RR$. By part (a), $\ZZ_+$ is itself inductive. This is property (1).
 
-For property (2), let \(A\subset\ZZ_+\) be an inductive set of positive integers. Since \(A\) is an inductive subset of \(\RR\), and \(\ZZ_+\) is the intersection of all such subsets,
-\[
+For property (2), let $A\subset\ZZ_+$ be an inductive set of positive integers. Since $A$ is an inductive subset of $\RR$, and $\ZZ_+$ is the intersection of all such subsets,
+$$
 \ZZ_+\subset A.
-\]
-But by hypothesis \(A\subset\ZZ_+\). Hence
-\[
+$$
+But by hypothesis $A\subset\ZZ_+$. Hence
+$$
 A=\ZZ_+,
-\]
+$$
 which is the principle of induction.
 :::

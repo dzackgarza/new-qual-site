@@ -38,21 +38,21 @@ One standard form of Nakayama's lemma is the following.
 ::: {.pf-step #nakayama-im-equals-m}
 Let $R$ be a commutative ring, let $M$ be a finitely generated
 $R$-module, and let $I\subseteq\operatorname{Jac}(R)$. If
-\[
+$$
 IM=M,
-\]
+$$
 then $M=0$.
 
 ::: pf-proof
 Choose a minimal generating set $m_1,\ldots,m_r$ for $M$. If $r>0$, the
 equality $IM=M$ gives
-\[
+$$
 m_r=a_1m_1+\cdots+a_rm_r
-\]
+$$
 with each $a_i\in I$. Thus
-\[
+$$
 (1-a_r)m_r=a_1m_1+\cdots+a_{r-1}m_{r-1}.
-\]
+$$
 Since $a_r\in\operatorname{Jac}(R)$, $1-a_r$ is a unit. Hence $m_r$ lies in
 the span of the preceding generators, contradicting minimality. Therefore
 $r=0$ and $M=0$.
@@ -62,9 +62,9 @@ $r=0$ and $M=0$.
 
 ::: pf-step
 Equivalently, if $N\subseteq M$ and
-\[
+$$
 M=N+IM,
-\]
+$$
 with $M$ finitely generated and $I\subseteq\operatorname{Jac}(R)$, then
 $M=N$.
 
@@ -76,9 +76,9 @@ Apply step [](#nakayama-im-equals-m){.pf-ref} to the finitely generated quotient
 
 ::: pf-step
 A concrete nonzero ideal satisfying the hypotheses is
-\[
+$$
 I=(x)\subset R=k[x]_{(x)}.
-\]
+$$
 
 ::: pf-proof
 The localization $R=k[x]_{(x)}$ is a local ring with maximal ideal $(x)$.

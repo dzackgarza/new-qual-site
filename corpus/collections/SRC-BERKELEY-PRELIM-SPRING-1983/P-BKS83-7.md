@@ -23,10 +23,10 @@ audit:
 
 ::: {.problem}
 Let $p$ be prime and let
-\[
+$$
 G=(\ZZ/p\ZZ)^n,
 \qquad 1\le n\le p.
-\]
+$$
 Prove that $G$ has no automorphism of order $p^2$.
 :::
 

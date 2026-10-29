@@ -37,9 +37,9 @@ If $f^{-1}(V)$ is quasi-compact for every affine open $V\subseteq Y$, then $f$ i
 
 ::: pf-proof
 Choose any affine open cover
-\[
+$$
 Y=\bigcup_iV_i.
-\]
+$$
 The hypothesis says that every $f^{-1}(V_i)$ is quasi-compact, which is exactly the definition given in the problem.
 :::
 
@@ -47,21 +47,21 @@ The hypothesis says that every $f^{-1}(V_i)$ is quasi-compact, which is exactly 
 
 ::: {.pf-step #choose-distinguished-neighborhoods}
 Conversely, suppose $f$ is quasi-compact in the stated sense.  Thus there is an affine open cover
-\[
+$$
 Y=\bigcup_iV_i
-\]
+$$
 such that every $f^{-1}(V_i)$ is quasi-compact.  Fix an arbitrary affine open
-\[
+$$
 V\subseteq Y.
-\]
+$$
 For every $y\in V$ there is an index $i$ and a distinguished open
-\[
+$$
 W_y=D(g_y)\subseteq V_i
-\]
+$$
 such that
-\[
+$$
 y\in W_y\subseteq V\cap V_i.
-\]
+$$
 
 ::: pf-proof
 Choose $i$ with $y\in V_i$.  Then $V\cap V_i$ is an open neighborhood of $y$ in the affine scheme $V_i$.  Distinguished opens form a basis of an affine scheme, so there is some $g_y\in\Gamma(V_i,\mathcal O_Y)$ with the asserted property.
@@ -71,30 +71,30 @@ Choose $i$ with $y\in V_i$.  Then $V\cap V_i$ is an open neighborhood of $y$ in 
 
 ::: {.pf-step #preimage-wy-qc}
 For each $y\in V$, the inverse image
-\[
+$$
 f^{-1}(W_y)
-\]
+$$
 is quasi-compact.
 
 ::: pf-proof
 Fix $y$ and write $W_y=D(g_y)\subseteq V_i$.
 Since $f^{-1}(V_i)$ is quasi-compact, choose a finite affine open cover
-\[
+$$
 f^{-1}(V_i)=U_1\cup\cdots\cup U_n.
-\]
+$$
 On each affine $U_j$, the pullback of $g_y$ is a global function, and
-\[
+$$
 U_j\cap f^{-1}(W_y)
-\]
+$$
 is its distinguished nonvanishing locus.
 Hence it is affine, in particular quasi-compact.
 
 Therefore
-\[
+$$
 f^{-1}(W_y)
 =
 \bigcup_{j=1}^n\bigl(U_j\cap f^{-1}(W_y)\bigr)
-\]
+$$
 is a finite union of quasi-compact open subsets and is quasi-compact.
 :::
 
@@ -105,13 +105,13 @@ Finitely many of the opens $W_y$ cover $V$.
 
 ::: pf-proof
 The sets $W_y$ form an open cover of $V$.  Since $V$ is affine, its underlying topological space is quasi-compact.  Hence there are points
-\[
+$$
 y_1,\ldots,y_m\in V
-\]
+$$
 such that
-\[
+$$
 V=W_{y_1}\cup\cdots\cup W_{y_m}.
-\]
+$$
 :::
 
 :::
@@ -121,11 +121,11 @@ The inverse image $f^{-1}(V)$ is quasi-compact.
 
 ::: pf-proof
 By step [](#finite-subcover-of-v){.pf-ref},
-\[
+$$
 f^{-1}(V)
 =
 f^{-1}(W_{y_1})\cup\cdots\cup f^{-1}(W_{y_m}).
-\]
+$$
 Each term is quasi-compact by step [](#preimage-wy-qc){.pf-ref}, so their finite union is quasi-compact.
 :::
 

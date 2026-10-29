@@ -42,54 +42,54 @@ has nonpositive entries.
 :::
 
 ::: {.solution}
-We prove that \(v_i\le0\) for every \(i\), and also that \(v_i=0\) whenever \(x_i>0\). Since \(s\mapsto s^2\) is strictly increasing on \([0,\infty)\), the minimizer \(x\) also minimizes the squared distance \(\norm{y-Az}^2\) over the nonnegative vectors.
+We prove that $v_i\le0$ for every $i$, and also that $v_i=0$ whenever $x_i>0$. Since $s\mapsto s^2$ is strictly increasing on $[0,\infty)$, the minimizer $x$ also minimizes the squared distance $\norm{y-Az}^2$ over the nonnegative vectors.
 
 ::: pf
 
 ::: {.pf-step #setup}
-Let \(\varphi(z)=\norm{y-Az}^2\), and let \(a_i=Ae_i\) be the \(i\)-th column of \(A\). For every real \(t\),
-\[
+Let $\varphi(z)=\norm{y-Az}^2$, and let $a_i=Ae_i$ be the $i$-th column of $A$. For every real $t$,
+$$
 \varphi(x+te_i)=\varphi(x)-2t v_i+t^2\norm{a_i}^2.
-\]
+$$
 
 ::: pf-proof
-Since \(y-A(x+te_i)=y-Ax-ta_i\),
-\[
+Since $y-A(x+te_i)=y-Ax-ta_i$,
+$$
 \norm{y-Ax-ta_i}^2
 =\norm{y-Ax}^2-2t\langle a_i,y-Ax\rangle+t^2\norm{a_i}^2
 =\varphi(x)-2t v_i+t^2\norm{a_i}^2.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #one-sided}
-For every \(i\), \(v_i\le0\).
+For every $i$, $v_i\le0$.
 
 ::: pf-proof
-For \(t>0\), the vector \(x+te_i\) has nonnegative entries, so minimality of \(x\) gives \(\varphi(x+te_i)\ge\varphi(x)\). By step [](#setup){.pf-ref},
-\[
+For $t>0$, the vector $x+te_i$ has nonnegative entries, so minimality of $x$ gives $\varphi(x+te_i)\ge\varphi(x)$. By step [](#setup){.pf-ref},
+$$
 0\le\frac{\varphi(x+te_i)-\varphi(x)}{t}=-2v_i+t\norm{a_i}^2.
-\]
-Letting \(t\to0^+\) gives \(-2v_i\ge0\), hence \(v_i\le0\).
+$$
+Letting $t\to0^+$ gives $-2v_i\ge0$, hence $v_i\le0$.
 :::
 
 :::
 
 ::: {.pf-step #support}
-If \(x_i>0\), then \(v_i=0\).
+If $x_i>0$, then $v_i=0$.
 
 ::: pf-proof
-Choose \(\delta>0\) with \(x_i-\delta>0\). For every \(t\in(-\delta,\delta)\), the vector \(x+te_i\) has nonnegative entries, so \(t=0\) is a local minimum of \(t\mapsto\varphi(x+te_i)\). By step [](#setup){.pf-ref}, this function is differentiable at \(0\) with derivative \(-2v_i\). Hence \(v_i=0\).
+Choose $\delta>0$ with $x_i-\delta>0$. For every $t\in(-\delta,\delta)$, the vector $x+te_i$ has nonnegative entries, so $t=0$ is a local minimum of $t\mapsto\varphi(x+te_i)$. By step [](#setup){.pf-ref}, this function is differentiable at $0$ with derivative $-2v_i$. Hence $v_i=0$.
 :::
 
 :::
 
 ::: {.pf-step #conclusion}
-Thus \(v\le0\), and \(x_i v_i=0\) for every \(i\).
+Thus $v\le0$, and $x_i v_i=0$ for every $i$.
 
 ::: pf-proof
-Step [](#one-sided){.pf-ref} gives \(v_i\le0\) for every \(i\). If \(x_i>0\), step [](#support){.pf-ref} gives \(v_i=0\); if \(x_i=0\), then \(x_i v_i=0\). Hence \(x_i v_i=0\) for every \(i\), and \(x^Tv=0\).
+Step [](#one-sided){.pf-ref} gives $v_i\le0$ for every $i$. If $x_i>0$, step [](#support){.pf-ref} gives $v_i=0$; if $x_i=0$, then $x_i v_i=0$. Hence $x_i v_i=0$ for every $i$, and $x^Tv=0$.
 :::
 
 :::

@@ -36,15 +36,15 @@ Prove that an abelian group $A$ is injective as a $\ZZ$-module if and only if it
 Suppose first that $A$ is injective.
 Let $a\in A$ and let $n\ge1$.
 Define a homomorphism
-\[
+$$
 f:n\ZZ\longrightarrow A,
 \qquad f(n)=a.
-\]
+$$
 By injectivity, $f$ extends along $n\ZZ\hookrightarrow\ZZ$ to a homomorphism $F:\ZZ\to A$.
 If $b=F(1)$, then
-\[
+$$
 a=f(n)=F(n)=nb.
-\]
+$$
 Thus $A$ is divisible.
 
 ::: pf-proof
@@ -61,11 +61,11 @@ Conversely, assume that $A$ is divisible.
 Let $B\subseteq C$ be abelian groups and let $f:B\to A$ be a homomorphism.
 We prove that $f$ extends to $C$.
 Consider pairs $(D,g)$ with
-\[
+$$
 B\subseteq D\subseteq C,
 \qquad g:D\to A,
 \qquad g|_B=f,
-\]
+$$
 ordered by extension.
 Every chain has an upper bound obtained by taking the union of the domains and the compatible maps, so by Zorn's lemma there is a maximal pair $(D,g)$.
 
@@ -81,9 +81,9 @@ For a chain, the maps agree on overlaps because the pairs are ordered by extensi
 
 Suppose $D\ne C$ and choose $c\in C\setminus D$.
 Set
-\[
+$$
 I=\{n\in\ZZ:nc\in D\}.
-\]
+$$
 Then $I$ is an ideal of $\ZZ$, so $I=m\ZZ$ for some $m\ge0$.
 
 ::: pf-proof
@@ -97,10 +97,10 @@ $I$ is closed under addition and multiplication by arbitrary integers.
 ::: {.pf-step #s4}
 
 If $m=0$, define
-\[
+$$
 \widetilde g(d+kc)=g(d)
 \qquad(d\in D,\ k\in\ZZ).
-\]
+$$
 This is well defined and extends $g$ to the strictly larger subgroup $D+\ZZ c$, contradicting maximality.
 
 ::: pf-proof
@@ -115,13 +115,13 @@ If $d+kc=d'+k'c$, then $(k-k')c=d'-d\in D$, so $k-k'\in I=0$; hence $k=k'$ and t
 
 Now suppose $m>0$.
 Since $mc\in D$ and $A$ is divisible, choose $a\in A$ such that
-\[
+$$
 ma=g(mc).
-\]
+$$
 Define
-\[
+$$
 \widetilde g(d+kc)=g(d)+ka.
-\]
+$$
 Then $\widetilde g:D+\ZZ c\to A$ is a well-defined homomorphism extending $g$.
 
 ::: pf-proof
@@ -129,9 +129,9 @@ Then $\widetilde g:D+\ZZ c\to A$ is a well-defined homomorphism extending $g$.
 If $d+kc=d'+k'c$, then $(k-k')c=d'-d\in D$, so $m\mid(k-k')$ because $I=m\ZZ$.
 Write $k-k'=qm$.
 Then
-\[
+$$
 g(d'-d)=g((k-k')c)=qg(mc)=qma=(k-k')a,
-\]
+$$
 which gives $g(d)+ka=g(d')+k'a$.
 Additivity is immediate from the formula.
 

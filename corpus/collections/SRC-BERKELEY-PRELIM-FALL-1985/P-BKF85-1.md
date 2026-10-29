@@ -17,9 +17,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_0^\infty \frac{1-\cos(ax)}{x^2}\,dx
-\]
+$$
 for $a\in\RR$.
 :::
 

@@ -27,26 +27,26 @@ Let $M$ be a real $n\times n$ matrix. Prove that $M$ and $MM^T$ have the same ra
 ::: {.pf-step #s1-1}
 
 One has
-\[
+$$
 \operatorname{im}(MM^T)
 \subseteq
 \operatorname{im}M.
-\]
+$$
 
 
 ::: pf-proof
 
 Every vector in the range of $MM^T$ has the form
-\[
+$$
 MM^Tx
-\]
+$$
 for some $x\in\RR^n$.
 But
-\[
+$$
 MM^Tx
 =
 M(M^Tx),
-\]
+$$
 which lies in the range of $M$.
 
 :::
@@ -56,38 +56,38 @@ which lies in the range of $M$.
 ::: {.pf-step #s1-2}
 
 One has
-\[
+$$
 \boxed{
 \ker(MM^T)
 =
 \ker M^T.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 If
-\[
+$$
 M^Tx=0,
-\]
+$$
 then clearly
-\[
+$$
 MM^Tx=0.
-\]
+$$
 Thus
-\[
+$$
 \ker M^T
 \subseteq
 \ker(MM^T).
-\]
+$$
 
 Conversely, suppose
-\[
+$$
 MM^Tx=0.
-\]
+$$
 Then
-\[
+$$
 0
 =
 x^TMM^Tx
@@ -95,11 +95,11 @@ x^TMM^Tx
 (M^Tx)^T(M^Tx)
 =
 \|M^Tx\|_2^2.
-\]
+$$
 Hence
-\[
+$$
 M^Tx=0.
-\]
+$$
 Thus the reverse inclusion also holds.
 
 :::
@@ -109,19 +109,19 @@ Thus the reverse inclusion also holds.
 ::: {.pf-step #s1-3}
 
 The two matrices have the same rank:
-\[
+$$
 \boxed{
 \operatorname{rank}(MM^T)
 =
 \operatorname{rank}M.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 By rank-nullity and step [](#s1-2){.pf-ref},
-\[
+$$
 \begin{aligned}
 \operatorname{rank}(MM^T)
 &=
@@ -131,13 +131,13 @@ n-\dim\ker M^T\\
 &=
 \operatorname{rank}M^T.
 \end{aligned}
-\]
+$$
 The row rank equals the column rank, so
-\[
+$$
 \operatorname{rank}M^T
 =
 \operatorname{rank}M.
-\]
+$$
 
 :::
 
@@ -146,13 +146,13 @@ The row rank equals the column rank, so
 ::: {.pf-step #s1-4}
 
 Therefore
-\[
+$$
 \boxed{
 \operatorname{im}(MM^T)
 =
 \operatorname{im}M.
 }
-\]
+$$
 
 
 ::: pf-proof

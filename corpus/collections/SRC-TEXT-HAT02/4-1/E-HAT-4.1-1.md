@@ -35,16 +35,16 @@ For $n\ge1$, any coordinate choice for the concatenation sum on $\pi_n(X,x_0)$ i
    Therefore $q_j\simeq q_1\circ \sigma$ rel boundary.
 
 4. Hence
-   \[
+   $$
    f +' g \simeq (f\vee g)\circ q_1\circ \sigma.
-   \]
+   $$
    Since $\sigma$ is homotopic to $\mathrm{id}$, this gives $f +' g \simeq f+g$.
 
 5. Expanding the definitions gives
-   \[
+   $$
    (f + g) +' (h + k)=((f\vee g)+(h\vee k))\circ q_j \simeq
    (f +' h)+(g +' k).
-   \]
+   $$
 
 6. Taking $h=k$ and swapping coordinates gives $f +' k \simeq f+k$, so the operations are the same in $\pi_n$.
 

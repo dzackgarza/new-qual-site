@@ -37,18 +37,18 @@ It is called an isometric imbedding of $X$ in $Y$.
 
 ::: {.solution}
 If $f(x_1)=f(x_2)$, then
-\[
+$$
 d_X(x_1,x_2)=d_Y(f(x_1),f(x_2))=0,
-\]
+$$
 so $x_1=x_2$. Thus $f$ is injective.
 
 Moreover
-\[
+$$
 d_Y(f(x_1),f(x_2))=d_X(x_1,x_2)
-\]
+$$
 shows directly that $f$ is continuous: the inverse image of the radius-$r$ ball in $f(X)$ about $f(x)$ is the radius-$r$ ball in $X$ about $x$. The inverse map
-\[
+$$
 f^{-1}:f(X)\to X
-\]
+$$
 has the same property and is therefore continuous. Hence $f:X\to f(X)$ is a homeomorphism, so $f$ is an embedding.
 :::

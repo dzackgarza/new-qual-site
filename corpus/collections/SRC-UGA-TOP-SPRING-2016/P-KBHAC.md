@@ -41,26 +41,26 @@ Write $\Sigma_{g,b}$ for the compact orientable surface of genus $g$ with $b$ bo
 ::: {.pf-step #s1}
 
 The orientable surfaces with Euler characteristic $-1$ are exactly
-\[
+$$
 \boxed{\Sigma_{0,3},\qquad \Sigma_{1,1}}.
-\]
+$$
 Thus they are a pair of pants and a torus with one open disk removed.
 
 ::: pf-proof
 
 The classification theorem for compact connected orientable surfaces gives
-\[
+$$
 \chi(\Sigma_{g,b})=2-2g-b,
 \qquad g,b\ge0.
-\]
+$$
 The equation $\chi=-1$ is therefore
-\[
+$$
 2g+b=3.
-\]
+$$
 Its only solutions in nonnegative integers are
-\[
+$$
 (g,b)=(0,3),\ (1,1).
-\]
+$$
 
 :::
 
@@ -69,26 +69,26 @@ Its only solutions in nonnegative integers are
 ::: {.pf-step #s2}
 
 The nonorientable surfaces with Euler characteristic $-1$ are exactly
-\[
+$$
 \boxed{N_{1,2},\qquad N_{2,1},\qquad N_{3,0}}.
-\]
+$$
 Equivalently, these are a projective plane with two open disks removed, a Klein bottle with one open disk removed, and the closed connected sum of three projective planes.
 
 ::: pf-proof
 
 The classification theorem for compact connected nonorientable surfaces gives
-\[
+$$
 \chi(N_{k,b})=2-k-b,
 \qquad k\ge1,\ b\ge0.
-\]
+$$
 Thus $\chi=-1$ is equivalent to
-\[
+$$
 k+b=3.
-\]
+$$
 The only solutions are
-\[
+$$
 (k,b)=(1,2),\ (2,1),\ (3,0).
-\]
+$$
 Since $N_{2,0}$ is the Klein bottle, $N_{2,1}$ is a Klein bottle with one open disk removed.
 
 :::

@@ -36,41 +36,41 @@ Prove that there exists a point z on the unit circle such that the product of th
 
 ::: {.solution}
 (a) Write $f(z)=\sum_{n\ge0}a_nz^n$. Cauchy's estimate on $|z|=R$ gives
-\[
+$$
 |a_n|\le \frac{AR^k+B}{R^n}.
-\]
+$$
 For $n>k$, letting $R\to\infty$ yields $a_n=0$. Hence $f$ is a polynomial of degree at most $k$.
 
 (b) By hypothesis there is an open boundary arc
-\[
+$$
 I=\{e^{it}:\theta<t<\varphi\}
-\]
+$$
 on which $f(z)\to0$ uniformly as $|z|\to1$ inside the sector. Thus defining $f=0$ on $I$ gives a continuous extension to that arc. Fix a smaller open subarc $I'\Subset I$. After rotating coordinates, a neighborhood of each point of $I'$ is conformally equivalent to a half-disc whose diameter lies on the real axis, and the boundary values of $f$ there are identically $0$, hence real. By the Schwarz reflection principle, $f$ extends holomorphically across $I'$, with the extension vanishing on $I'$. The identity theorem then forces the extension, and hence $f$ on $\DD$, to vanish identically.
 
 (c) Let
-\[
+$$
 P(z)=\prod_{j=1}^n(z-w_j).
-\]
+$$
 Since $P$ is monic, $P(0)=(-1)^n\prod_jw_j$, so $|P(0)|=1$. By the maximum modulus principle applied on the closed unit disc,
-\[
+$$
 1=|P(0)|\le \max_{|z|=1}|P(z)|.
-\]
+$$
 Hence some $z$ on the unit circle satisfies
-\[
+$$
 \prod_{j=1}^n|z-w_j|=|P(z)|\ge1.
-\]
+$$
 On the other hand, $P(w_1)=0$. The continuous function $|P|$ on the connected unit circle therefore takes every value between $0$ and its maximum, in particular the value $1$. Thus there is $w$ on the unit circle with
-\[
+$$
 \prod_{j=1}^n|w-w_j|=1.
-\]
+$$
 
 (d) Suppose $|\Re f|\le M$. Then
-\[
+$$
 g(z)=e^{f(z)}
-\]
+$$
 is entire and satisfies $|g(z)|=e^{\Re f(z)}\le e^M$. By Liouville, $g$ is constant. Differentiating gives
-\[
+$$
 0=g'(z)=f'(z)e^{f(z)},
-\]
+$$
 so $f'\equiv0$ and $f$ is constant.
 :::

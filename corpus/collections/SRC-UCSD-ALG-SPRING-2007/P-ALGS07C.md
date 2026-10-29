@@ -40,9 +40,9 @@ An $\RR[x]$-module structure on $V$ extending its given $\RR$-vector-space struc
 
 Given such a module structure, define $T(v)=x\cdot v$.
 Since the $\RR$-action is fixed, $T$ is $\RR$-linear, and then
-\[
+$$
 p(x)\cdot v=p(T)v
-\]
+$$
 for every $p\in\RR[x]$.
 Conversely, any $T\in\operatorname{End}_{\RR}(V)$ defines an $\RR[x]$-action by this formula.
 An isomorphism $V_T\to V_{T'}$ is exactly an invertible $\RR$-linear map $P$ satisfying $PT=T'P$, so isomorphism classes are similarity classes of operators on $\RR^3$.
@@ -60,23 +60,23 @@ As an $\RR[x]$-module, $V$ is finitely generated torsion of total elementary-div
 A real basis of $V$ also generates $V$ as an $\RR[x]$-module, so $V$ is finitely generated.
 Let $\chi_T(x)$ be the characteristic polynomial of $T$.
 By Cayley--Hamilton,
-\[
+$$
 \chi_T(T)=0,
-\]
+$$
 so $\chi_T(x)$ annihilates all of $V$; hence $V$ is torsion.
 Since $\RR[x]$ is a PID, the elementary-divisor theorem gives
-\[
+$$
 V\cong\bigoplus_j \RR[x]/(p_j^{e_j}),
-\]
+$$
 with $p_j$ monic irreducible.
 As real vector spaces,
-\[
+$$
 \dim_{\RR}\RR[x]/(p_j^{e_j})=e_j\deg p_j,
-\]
+$$
 so
-\[
+$$
 \sum_j e_j\deg p_j=3.
-\]
+$$
 
 :::
 
@@ -91,10 +91,10 @@ The only monic irreducibles over $\RR$ have degree $1$ or $2$.
 Every real polynomial of odd degree has a real root.
 Thus an irreducible real polynomial has degree at most $2$.
 The monic irreducibles are the linear factors $x-\lambda$ and the quadratics
-\[
+$$
 x^2+ax+b,
 \qquad a^2-4b<0.
-\]
+$$
 
 :::
 
@@ -109,13 +109,13 @@ Therefore every $3$-dimensional $\RR[x]$-module is isomorphic to exactly one mod
 ::: {.pf-step #s4-1}
 
 Three linear elementary divisors:
-\[
+$$
 \RR[x]/(x-\lambda_1)
 \oplus
 \RR[x]/(x-\lambda_2)
 \oplus
 \RR[x]/(x-\lambda_3),
-\]
+$$
 with $\lambda_i\in\RR$.
 
 :::
@@ -123,11 +123,11 @@ with $\lambda_i\in\RR$.
 ::: {.pf-step #s4-2}
 
 One squared linear divisor and one linear divisor:
-\[
+$$
 \RR[x]/((x-\lambda)^2)
 \oplus
 \RR[x]/(x-\mu),
-\]
+$$
 with $\lambda,\mu\in\RR$.
 
 :::
@@ -135,9 +135,9 @@ with $\lambda,\mu\in\RR$.
 ::: {.pf-step #s4-3}
 
 One cubed linear divisor:
-\[
+$$
 \RR[x]/((x-\lambda)^3),
-\]
+$$
 with $\lambda\in\RR$.
 
 :::
@@ -145,19 +145,19 @@ with $\lambda\in\RR$.
 ::: {.pf-step #s4-4}
 
 One irreducible quadratic divisor and one linear divisor:
-\[
+$$
 \RR[x]/(q(x))
 \oplus
 \RR[x]/(x-\lambda),
-\]
+$$
 where $q(x)=x^2+ax+b$ satisfies $a^2-4b<0$ and $\lambda\in\RR$.
 
 ::: pf-proof
 
 The degree equation in step [](#s2){.pf-ref} has only the partitions
-\[
+$$
 3=1+1+1=2+1=3.
-\]
+$$
 If all irreducibles involved are linear, these give respectively steps [](#s4-1){.pf-ref}, [](#s4-2){.pf-ref} and [](#s4-3){.pf-ref}; in the degree-$2$ summand of step [](#s4-2){.pf-ref} the elementary divisor must be $(x-\lambda)^2$.
 If an irreducible quadratic occurs, it contributes degree $2$, leaving exactly one linear degree-$1$ summand, which gives step [](#s4-4){.pf-ref}. There is no other possibility because irreducibles over $\RR$ have degree only $1$ or $2$.
 The elementary-divisor theorem also gives uniqueness of the multiset of elementary divisors, hence these families classify the module structures up to isomorphism.

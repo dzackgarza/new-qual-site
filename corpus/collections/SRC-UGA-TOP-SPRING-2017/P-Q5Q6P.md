@@ -32,9 +32,9 @@ Show that $S^1 \times S^1$ is not the union of two disks (where there is no assu
 
 ::: {.solution}
 Let
-\[
+$$
 T^2=S^1\times S^1.
-\]
+$$
 
 ::: pf
 
@@ -46,18 +46,18 @@ If an embedded closed disk $D\subset T^2$ is given, then $D$ is contained in a c
 
 The boundary $\partial D$ is an embedded circle in the surface $T^2$.
 By the collar theorem for surfaces, $\partial D$ has a collar
-\[
+$$
 \partial D\times(-\varepsilon,\varepsilon)
-\]
+$$
 in which $D$ occupies one side of the collar.
 Adjoining a sufficiently thin strip from the other side gives a slightly larger embedded disk $D'$ with
-\[
+$$
 D\subset\operatorname{int}(D').
-\]
+$$
 The open set
-\[
+$$
 U=\operatorname{int}(D')
-\]
+$$
 is homeomorphic to an open disk and hence is contractible.
 
 :::
@@ -67,26 +67,26 @@ is homeomorphic to an open disk and hence is contractible.
 ::: {.pf-step #s2}
 
 Suppose, for contradiction, that
-\[
+$$
 T^2=A\cup B
-\]
+$$
 with $A$ and $B$ each homeomorphic to a closed disk.
 Then there are contractible open sets $U,V\subset T^2$ such that
-\[
+$$
 A\subset U,
 \qquad
 B\subset V,
 \qquad
 T^2=U\cup V.
-\]
+$$
 
 ::: pf-proof
 
 Apply step [](#s1){.pf-ref} separately to $A$ and $B$.
 Since $A\cup B=T^2$, any open neighborhoods $U\supset A$ and $V\supset B$ also satisfy
-\[
+$$
 U\cup V=T^2.
-\]
+$$
 
 :::
 
@@ -99,44 +99,44 @@ If a space $X$ is the union of two contractible open sets $U$ and $V$, then the 
 ::: pf-proof
 
 Let
-\[
+$$
 \alpha\in H^p(X;\ZZ),
 \qquad
 \beta\in H^q(X;\ZZ),
 \qquad
 p,q>0.
-\]
+$$
 Because $U$ and $V$ are contractible,
-\[
+$$
 H^p(U;\ZZ)=0,
 \qquad
 H^q(V;\ZZ)=0.
-\]
+$$
 Hence the long exact sequences of the pairs $(X,U)$ and $(X,V)$ show that $\alpha$ and $\beta$ lift to relative classes
-\[
+$$
 \bar\alpha\in H^p(X,U;\ZZ),
 \qquad
 \bar\beta\in H^q(X,V;\ZZ).
-\]
+$$
 
 The relative cup product has the form
-\[
+$$
 H^p(X,U;\ZZ)\times H^q(X,V;\ZZ)
 \longrightarrow
 H^{p+q}(X,U\cup V;\ZZ).
-\]
+$$
 Since $U\cup V=X$, its target is
-\[
+$$
 H^{p+q}(X,X;\ZZ)=0.
-\]
+$$
 Under the natural map from relative to absolute cohomology, the relative product maps to
-\[
+$$
 \alpha\smile\beta.
-\]
+$$
 Therefore
-\[
+$$
 \alpha\smile\beta=0.
-\]
+$$
 No condition on $U\cap V$ was used.
 
 :::
@@ -150,34 +150,34 @@ The torus has degree-one classes whose cup product is nonzero.
 ::: pf-proof
 
 Let
-\[
+$$
 p_1,p_2:T^2=S^1\times S^1\longrightarrow S^1
-\]
+$$
 be the coordinate projections, and let
-\[
+$$
 u\in H^1(S^1;\ZZ)\cong\ZZ
-\]
+$$
 be a generator.
 Set
-\[
+$$
 \alpha=p_1^*u,
 \qquad
 \beta=p_2^*u.
-\]
+$$
 The integral cohomology ring of the torus is the exterior algebra on these two degree-one generators.
 In particular,
-\[
+$$
 H^2(T^2;\ZZ)\cong\ZZ
-\]
+$$
 and
-\[
+$$
 \alpha\smile\beta
-\]
+$$
 is a generator of this group.
 Thus
-\[
+$$
 \alpha\smile\beta\ne0.
-\]
+$$
 
 :::
 
@@ -190,13 +190,13 @@ Therefore $T^2$ cannot be the union of two disks.
 ::: pf-proof
 
 Under the assumption in step [](#s2){.pf-ref}, the contractible open cover $T^2=U\cup V$ would imply by step [](#s3){.pf-ref} that
-\[
+$$
 \alpha\smile\beta=0
-\]
+$$
 for the classes in step [](#s4){.pf-ref}. But step [](#s4){.pf-ref} gives
-\[
+$$
 \alpha\smile\beta\ne0.
-\]
+$$
 This contradiction proves that no two embedded disks, regardless of how they intersect, can cover $S^1\times S^1$.
 
 :::

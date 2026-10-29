@@ -21,9 +21,9 @@ audit:
 ::: {.problem}
 Let $R$ be a commutative ring with unit and let $M$ be an $R$-module.
 Define the annihilator of $M$ to be
-\[
+$$
 \operatorname{Ann}(M):=\{r \in R \mid r \cdot m=0 \text { for all } m \in M\}
-\]
+$$
 
 a. Prove that $\operatorname{Ann}(M)$ is an ideal in $R$.
 
@@ -51,9 +51,9 @@ The element $0$ annihilates every element of $M$. If $r,s$ annihilate $M$, then 
 ::: {.pf-step #s2}
 
 Every ideal $I\subseteq R$ is the annihilator of an $R$-module:
-\[
+$$
 \boxed{\operatorname{Ann}(R/I)=I}.
-\]
+$$
 
 ::: pf-proof
 
@@ -66,9 +66,9 @@ For $r\in I$ and $x+I\in R/I$, the product $r(x+I)=rx+I$ is zero, hence $I\subse
 ::: {.pf-step #s3}
 
 For $R=\ZZ$ and $M=\QQ/\ZZ$, every element of $M$ has a nonzero annihilator, but
-\[
+$$
 \boxed{\operatorname{Ann}(M)=\{0\}}.
-\]
+$$
 
 ::: pf-proof
 

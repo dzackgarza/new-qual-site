@@ -31,42 +31,42 @@ Hint: You may assume the double integral in (a) equals the iterated integral $\i
 ::: {.pf-step #s1-1}
 
 Under the hypotheses of part (a), one has
-\[
+$$
 \boxed{F(x,y)=0}
-\]
+$$
 for every $(x,y)\in\RR^2$.
 
 
 ::: pf-proof
 
 Fix $(x_0,y_0)\in\RR^2$. Suppose, for contradiction, that
-\[
+$$
 F(x_0,y_0)>0.
-\]
+$$
 By continuity, there exists $\delta>0$ such that
-\[
+$$
 F(x,y)>\frac12F(x_0,y_0)>0
-\]
+$$
 whenever
-\[
+$$
 |x-x_0|<\delta,
 \qquad
 |y-y_0|<\delta.
-\]
+$$
 Choose a square $S$ centered at $(x_0,y_0)$ with sides parallel to the axes and contained in this neighborhood. Then
-\[
+$$
 \iint_S F(x,y)\,dx\,dy>0,
-\]
+$$
 contradicting the hypothesis that the integral over every such square is zero.
 
 The case
-\[
+$$
 F(x_0,y_0)<0
-\]
+$$
 is identical, giving a square on which $F<0$ and hence a strictly negative integral. Therefore neither sign is possible, so
-\[
+$$
 F(x_0,y_0)=0.
-\]
+$$
 Since the point was arbitrary, $F\equiv0$.
 
 :::
@@ -76,7 +76,7 @@ Since the point was arbitrary, $F\equiv0$.
 ::: {.pf-step #s1-2}
 
 Define
-\[
+$$
 G(x,y)
 =
 \frac{\partial}{\partial y}
@@ -84,7 +84,7 @@ G(x,y)
 -
 \frac{\partial}{\partial x}
 \left(\frac{\partial f}{\partial y}\right)(x,y).
-\]
+$$
 Then $G$ is continuous.
 
 
@@ -99,24 +99,24 @@ Both mixed partial derivatives appearing in the definition are continuous by hyp
 ::: {.pf-step #s1-3}
 
 Let
-\[
+$$
 S=[a,b]\times[c,d]
-\]
+$$
 be any square with sides parallel to the axes. Then
-\[
+$$
 \iint_S
 \frac{\partial}{\partial y}
 \left(\frac{\partial f}{\partial x}\right)
 \,dx\,dy
 =
 f(b,d)-f(a,d)-f(b,c)+f(a,c).
-\]
+$$
 
 
 ::: pf-proof
 
 Using the permitted iterated-integral interpretation,
-\[
+$$
 \begin{aligned}
 \iint_S
 (f_x)_y\,dx\,dy
@@ -134,7 +134,7 @@ Using the permitted iterated-integral interpretation,
 -
 \bigl(f(b,c)-f(a,c)\bigr).
 \end{aligned}
-\]
+$$
 This is the displayed expression.
 
 :::
@@ -144,20 +144,20 @@ This is the displayed expression.
 ::: {.pf-step #s1-4}
 
 For the same square $S$,
-\[
+$$
 \iint_S
 \frac{\partial}{\partial x}
 \left(\frac{\partial f}{\partial y}\right)
 \,dx\,dy
 =
 f(b,d)-f(a,d)-f(b,c)+f(a,c).
-\]
+$$
 
 
 ::: pf-proof
 
 Using the other order of integration,
-\[
+$$
 \begin{aligned}
 \iint_S
 (f_y)_x\,dx\,dy
@@ -175,7 +175,7 @@ Using the other order of integration,
 -
 \bigl(f(a,d)-f(a,c)\bigr),
 \end{aligned}
-\]
+$$
 which simplifies to the same quantity as in step [](#s1-3){.pf-ref}.
 
 :::
@@ -185,9 +185,9 @@ which simplifies to the same quantity as in step [](#s1-3){.pf-ref}.
 ::: {.pf-step #s1-5}
 
 For every square $S$ with sides parallel to the axes,
-\[
+$$
 \iint_S G(x,y)\,dx\,dy=0.
-\]
+$$
 
 
 ::: pf-proof
@@ -201,7 +201,7 @@ Subtract the equal values in steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref}.
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{
 \frac{\partial}{\partial y}
 \left(\frac{\partial f}{\partial x}\right)
@@ -209,16 +209,16 @@ Therefore
 \frac{\partial}{\partial x}
 \left(\frac{\partial f}{\partial y}\right)
 }
-\]
+$$
 everywhere in the plane.
 
 
 ::: pf-proof
 
 The function $G$ is continuous by step [](#s1-2){.pf-ref} and has integral zero over every axis-parallel square by step [](#s1-5){.pf-ref}. Part (a), proved in step [](#s1-1){.pf-ref}, therefore gives
-\[
+$$
 G\equiv0.
-\]
+$$
 This is exactly the stated equality of mixed partial derivatives.
 
 :::

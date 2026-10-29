@@ -60,9 +60,9 @@ Open cover for Seifert–van Kampen Theorem:
 
 Let $p = h(0) \in X \setminus A$ be the center of the attached cell.
 Define the open subsets:
-\[
+$$
 U = X \setminus \{p\}, \qquad V = h\big(\{x \in B^n \mid \|x\| < 3/4\}\big).
-\]
+$$
 
 ::: pf-proof
 
@@ -78,9 +78,9 @@ openness in the quotient topology.
 The punctured ball $B^n \setminus \{0\}$ deformation retracts radially onto the boundary $S^{n-1}$.
 This radial deformation extends continuously to $X \setminus \{p\}$ by fixing $A$ pointwise, so $A$ is a deformation retract of $U$.
 Thus the inclusion $A \hookrightarrow U$ induces an isomorphism:
-\[
+$$
 \pi_1(A, a) \cong \pi_1(U, a).
-\]
+$$
 
 ::: pf-proof
 
@@ -109,9 +109,9 @@ contractibility of open Euclidean balls.
 **Simply-connectedness of $U \cap V$ for $n > 2$:**
 The intersection $U \cap V = h(\{x \in B^n \mid 0 < \|x\| < 3/4\})$ is homeomorphic to the punctured Euclidean ball $\RR^n \setminus \{0\}$, which deformation retracts onto the sphere $S^{n-1}$.
 Since $n > 2$, the dimension $n - 1 \ge 2$, so $S^{n-1}$ is simply connected:
-\[
+$$
 \pi_1(U \cap V) \cong \pi_1(S^{n-1}) = 0.
-\]
+$$
 
 ::: pf-proof
 
@@ -134,9 +134,9 @@ Seifert–van Kampen Theorem:
 ::: pf-step
 
 By the Seifert–van Kampen Theorem, since $U \cap V$ is path-connected:
-\[
+$$
 \pi_1(X, a) \cong \pi_1(U, a) *_{\pi_1(U \cap V)} \pi_1(V) \cong \pi_1(A, a) *_0 0 \cong \pi_1(A, a).
-\]
+$$
 
 ::: pf-proof
 

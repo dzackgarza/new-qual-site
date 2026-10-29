@@ -28,9 +28,9 @@ audit:
 
 ::: {.problem}
 Let $a>0$. Show that
-\[
+$$
 ae^x=1+x+\frac{x^2}{2}
-\]
+$$
 has exactly one real solution.
 :::
 

@@ -17,16 +17,16 @@ audit:
 
 ::: {.problem}
 Let $f:\RR^d\to[0,\infty)$ be measurable and define
-\[
+$$
 \mu(A)=\int_{\RR^d}f\,\mathbf1_A.
-\]
+$$
 
 (a) Prove that $\mu$ is a countably additive measure on the Lebesgue measurable sets.
 
 (b) If $M_0\subseteq M_1\subseteq\cdots$ are measurable and $M=\bigcup_nM_n$, prove that
-\[
+$$
 \lim_{n\to\infty}\int_{\RR^d}f\mathbf1_{M_n}
-\]
+$$
 exists, identifying the limit.
 :::
 

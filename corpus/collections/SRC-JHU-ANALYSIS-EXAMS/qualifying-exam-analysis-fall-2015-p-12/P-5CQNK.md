@@ -45,19 +45,19 @@ Part (a) is false.
 ::: pf-proof
 
 Take $f$ to be the Cantor--Lebesgue function. Then $f:[0,1]\to[0,1]$ is continuous and increasing, with
-\[
+$$
 f(0)=0,
 \qquad
 f(1)=1.
-\]
+$$
 However,
-\[
+$$
 f'(x)=0
-\]
+$$
 for almost every $x\in[0,1]$. Hence
-\[
+$$
 m\{x:f'(x)>0\}=0.
-\]
+$$
 So there need not exist a positive-measure set on which $f'>0$.
 
 :::
@@ -73,22 +73,22 @@ Reduce part (b) to the preimage of a null set.
 Now assume $f$ is strictly increasing and absolutely continuous, with $f(0)=0$ and $f(1)=1$. Then $f$ is a homeomorphism of $[0,1]$ onto itself.
 
 Let
-\[
+$$
 D:=\{x\in[0,1]:f'(x)>0\},
-\]
+$$
 where $f'$ is defined arbitrarily on the null set where the derivative does not exist. Since derivatives of absolutely continuous functions are measurable, $D$ is measurable.
 
 Let $E\subset[0,1]$ be Lebesgue measurable. Write
-\[
+$$
 E=B\cup N,
-\]
+$$
 where $B$ is Borel and $N$ is null. Then
-\[
+$$
 f^{-1}(E)\cap D
 =\bigl(f^{-1}(B)\cap D\bigr)
 \cup
 \bigl(f^{-1}(N)\cap D\bigr).
-\]
+$$
 The first set is measurable because $f$ is continuous. It remains to control the second.
 
 :::
@@ -102,27 +102,27 @@ Show that the null part has null preimage on $D$.
 ::: pf-proof
 
 Set
-\[
+$$
 A:=f^{-1}(N)\cap D.
-\]
+$$
 Because $f$ is absolutely continuous and strictly increasing, the change-of-variables formula for monotone absolutely continuous functions gives, for every measurable $A\subset[0,1]$,
-\[
+$$
 m(f(A))=\int_A f'(x)\,dx.
-\]
+$$
 Since
-\[
+$$
 f(A)\subseteq N,
-\]
+$$
 we have $m(f(A))=0$. Therefore
-\[
+$$
 \int_A f'(x)\,dx=0.
-\]
+$$
 But $f'(x)>0$ on $A$. Hence $m(A)=0$.
 
 Thus $f^{-1}(N)\cap D$ is measurable, and therefore so is
-\[
+$$
 \boxed{f^{-1}(E)\cap\{f'>0\}.}
-\]
+$$
 So part (b) is true.
 
 :::

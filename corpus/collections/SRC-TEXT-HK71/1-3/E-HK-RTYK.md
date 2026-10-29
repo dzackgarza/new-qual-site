@@ -33,13 +33,13 @@ $$
 
 ::: {.solution}
 A row-reduced matrix row-equivalent to $A$ is
-\[
+$$
 R=\begin{bmatrix}
 1&0&i\\
 0&1&\dfrac{-1+i}{2}\\
 0&0&0
 \end{bmatrix}.
-\]
+$$
 
 ::: pf
 
@@ -48,22 +48,22 @@ Row reduction of $A$ yields $R$.
 
 ::: pf-proof
 Applying elementary row operations to
-\[
+$$
 A=\begin{bmatrix}
 i&-(1+i)&0\\
 1&-2&1\\
 1&2i&-1
 \end{bmatrix}
-\]
+$$
 gives the reduced row-echelon form
-\[
+$$
 \operatorname{rref}(A)
 =\begin{bmatrix}
 1&0&i\\
 0&1&(-1+i)/2\\
 0&0&0
 \end{bmatrix}.
-\]
+$$
 Each step in Gaussian elimination is an elementary row operation, so this
 matrix is row-equivalent to $A$.
 :::

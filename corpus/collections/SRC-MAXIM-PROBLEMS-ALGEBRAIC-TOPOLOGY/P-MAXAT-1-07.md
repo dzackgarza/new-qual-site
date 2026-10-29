@@ -28,9 +28,9 @@ The statement is false.
 ::: {.pf-step #s1-1}
 
 Take
-\[
+$$
 M=S^3.
-\]
+$$
 Then $M$ is an orientable manifold.
 
 
@@ -45,9 +45,9 @@ The sphere $S^3$ is the boundary of the oriented $4$-ball and carries its standa
 ::: {.pf-step #s1-2}
 
 Suppose, for contradiction, that there were a connected nonorientable manifold $N$ and a two-sheeted covering
-\[
+$$
 p:S^3\to N.
-\]
+$$
 
 
 ::: pf-proof
@@ -74,9 +74,9 @@ The sphere $S^3$ is simply connected. A connected simply connected covering spac
 ::: {.pf-step #s1-4}
 
 Hence
-\[
+$$
 \pi_1(N)\cong\ZZ/2\ZZ.
-\]
+$$
 
 
 ::: pf-proof
@@ -121,10 +121,10 @@ Every orientation-reversing self-map of $S^3$ has a fixed point.
 ::: pf-proof
 
 If $f:S^3\to S^3$ reverses orientation, then $\deg f=-1$. Its Lefschetz number is
-\[
+$$
 L(f)=\operatorname{tr}(f_*|H_0)-\operatorname{tr}(f_*|H_3)
 =1-(-1)=2\ne0.
-\]
+$$
 By the Lefschetz fixed-point theorem, $f$ has a fixed point.
 
 :::
@@ -160,9 +160,9 @@ This is the contradiction obtained in step [](#s1-8){.pf-ref} from the assumptio
 ::: {.pf-step #s1-10}
 
 Therefore the proposed statement is
-\[
+$$
 \boxed{\text{False}.}
-\]
+$$
 
 
 ::: pf-proof

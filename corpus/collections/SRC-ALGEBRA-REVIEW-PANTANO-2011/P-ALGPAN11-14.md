@@ -58,16 +58,16 @@ Assertion II follows by induction.
 
 For $n=1$ it is tautological.
 If
-\[
+$$
 n(x\oplus y)=nx\oplus ny,
-\]
+$$
 then, using associativity and commutativity of $\oplus$,
-\[
+$$
 (n+1)(x\oplus y)
 =n(x\oplus y)\oplus(x\oplus y)
 =(nx\oplus x)\oplus(ny\oplus y)
 =(n+1)x\oplus(n+1)y.
-\]
+$$
 
 :::
 
@@ -80,16 +80,16 @@ Assertion III follows from associativity of $\odot$.
 ::: pf-proof
 
 For fixed $x$, induction on $n$ gives
-\[
+$$
 x^m\odot x^n=x^{m+n}.
-\]
+$$
 Indeed the step from $n$ to $n+1$ is
-\[
+$$
 x^m\odot x^{n+1}
 =x^m\odot(x^n\odot x)
 =(x^m\odot x^n)\odot x
 =x^{m+n+1}.
-\]
+$$
 
 :::
 
@@ -103,9 +103,9 @@ Assertion I can fail.
 
 Take $S=S_3$, let $\odot$ be its group multiplication, and transport the group law of the cyclic group $C_6$ to the same six-element set to define a commutative associative operation $\oplus$.
 For noncommuting $x,y\in S_3$,
-\[
+$$
 (xy)^2=xyxy\ne xxyy=x^2y^2
-\]
+$$
 in general.
 Thus I is not forced by the stated axioms.
 

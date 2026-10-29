@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Let $[x]$ denote the greatest integer $\le x$. If $n$ is a positive integer, then
 
-\[
+$$
 \lim_{x \to -n^-} (|x| - [x]) - \lim_{x \to n^-} (|x| - [x]) = ?
-\]
+$$
 
 (A) $-2$
 (B) $0$

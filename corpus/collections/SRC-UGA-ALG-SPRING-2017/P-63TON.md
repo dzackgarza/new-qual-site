@@ -54,9 +54,9 @@ The ring $\ZZ[2\sqrt2]$ is not a UFD.
 ::: pf-proof
 
 Put $R=\ZZ[2\sqrt2]=\{u+2v\sqrt2:u,v\in\ZZ\}$ and $F=\QQ(\sqrt2)$, its fraction field. In $R[x]$ the monic polynomial $p=x^2-2$ satisfies
-\[
+$$
 p=(x-\sqrt2)(x+\sqrt2)
-\]
+$$
 in $F[x]$. Both factors are nonconstant and monic. The element $\sqrt2$ is not in $R$: an equality $\sqrt2=u+2v\sqrt2$ with integers $u,v$ would imply $u=0$ and $2v=1$, which is impossible. Thus $x-\sqrt2\notin R[x]$. Step [](#s2){.pf-ref} applies and shows that $R$ is not a UFD.
 
 :::

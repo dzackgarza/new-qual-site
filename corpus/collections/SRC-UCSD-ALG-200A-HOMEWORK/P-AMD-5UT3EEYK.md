@@ -49,9 +49,9 @@ Show: TFAE; $\text{clos}(H)$ satisfies:
 
 ::: {.solution}
 Define
-\[
+$$
 C=\left\langle gHg^{-1}:g\in G\right\rangle.
-\]
+$$
 
 ::: pf
 
@@ -64,15 +64,15 @@ The subgroup $C$ is normal in $G$ and contains $H$.
 Taking $g=e$ shows that $H\le C$.
 
 For $x,g\in G$ and $h\in H$,
-\[
+$$
 x(ghg^{-1})x^{-1}=(xg)h(xg)^{-1},
-\]
+$$
 which is again one of the generators used to define $C$.
 Thus conjugation by any $x\in G$ carries $C$ into $C$.
 Applying the same argument to $x^{-1}$ gives the reverse inclusion, so
-\[
+$$
 xCx^{-1}=C.
-\]
+$$
 Hence $C\normal G$.
 
 :::
@@ -87,9 +87,9 @@ The subgroup $C$ is the smallest normal subgroup of $G$ containing $H$.
 
 Let $N\normal G$ with $H\le N$.
 For every $g\in G$, normality gives
-\[
+$$
 gHg^{-1}\le gNg^{-1}=N.
-\]
+$$
 Therefore $N$ contains every generator of $C$, and hence $C\le N$.
 Together with step [](#s1){.pf-ref}, this proves that $C$ is precisely the smallest normal subgroup of $G$ containing $H$.
 
@@ -100,16 +100,16 @@ Together with step [](#s1){.pf-ref}, this proves that $C$ is precisely the small
 ::: {.pf-step #s3}
 
 We have
-\[
+$$
 C=\bigcap_{\substack{H\le N\\N\normal G}}N.
-\]
+$$
 
 ::: pf-proof
 
 Let
-\[
+$$
 I=\bigcap_{\substack{H\le N\\N\normal G}}N.
-\]
+$$
 The family being intersected is nonempty because it contains $G$ itself.
 By step [](#s2){.pf-ref}, $C$ is contained in every member of this family, so $C\le I$.
 On the other hand, step [](#s1){.pf-ref} says that $C$ itself is a normal subgroup containing $H$, so it is one of the subgroups occurring in the intersection.
@@ -128,22 +128,22 @@ Every homomorphism $\phi:G\to X$ satisfying $\phi(H)=\{e_X\}$ factors uniquely t
 
 The hypothesis $\phi(H)=\{e_X\}$ says $H\le\ker\phi$.
 Since $\ker\phi\normal G$, step [](#s2){.pf-ref} gives
-\[
+$$
 C\le\ker\phi.
-\]
+$$
 Let $q:G\to G/C$ be the quotient map.
 Define
-\[
+$$
 \bar\phi:G/C\longrightarrow X,
 \qquad
 \bar\phi(gC)=\phi(g).
-\]
+$$
 If $gC=g'C$, then $g'^{-1}g\in C\le\ker\phi$, so $\phi(g)=\phi(g')$.
 Thus $\bar\phi$ is well-defined.
 It is a homomorphism and satisfies
-\[
+$$
 \phi=\bar\phi\circ q.
-\]
+$$
 Because $q$ is surjective, any homomorphism with this factorization is forced to send $gC=q(g)$ to $\phi(g)$, so $\bar\phi$ is unique.
 
 :::
@@ -160,18 +160,18 @@ Let $D\normal G$ contain $H$, and suppose every homomorphism from $G$ that kills
 By step [](#s2){.pf-ref}, $C\le D$.
 
 The quotient map
-\[
+$$
 q_C:G\longrightarrow G/C
-\]
+$$
 kills $H$, so by the assumed factorization property there is a homomorphism $\psi:G/D\to G/C$ such that
-\[
+$$
 q_C=\psi\circ q_D,
-\]
+$$
 where $q_D:G\to G/D$ is the quotient map.
 If $d\in D$, then $q_D(d)=D$, hence
-\[
+$$
 q_C(d)=\psi(D)=C.
-\]
+$$
 Thus $d\in C$, so $D\le C$.
 Therefore $D=C$.
 

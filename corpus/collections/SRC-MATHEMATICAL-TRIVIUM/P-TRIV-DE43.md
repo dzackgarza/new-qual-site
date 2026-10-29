@@ -28,18 +28,18 @@ so that $u = 0$ whenever any of the coordinates is equal to 0 or L. What are the
 ::: {.solution}
 
 Seek a separated nonzero solution
-\[
+$$
 u(x,y,z)=X(x)Y(y)Z(z).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 Separation of variables gives
-\[
+$$
 \frac{X''}{X}+\frac{Y''}{Y}+\frac{Z''}{Z}+k^2=0.
-\]
+$$
 
 
 ::: pf-proof
@@ -53,17 +53,17 @@ Substitute $XYZ$ into $(\nabla^2+k^2)u=0$ and divide by $XYZ$ wherever it is non
 ::: {.pf-step #s1-2}
 
 Write
-\[
+$$
 X''+\alpha^2X=0,
 \qquad
 Y''+\beta^2Y=0,
 \qquad
 Z''+\gamma^2Z=0,
-\]
+$$
 with
-\[
+$$
 k^2=\alpha^2+\beta^2+\gamma^2.
-\]
+$$
 
 
 ::: pf-proof
@@ -77,12 +77,12 @@ Since the sum in step [](#s1-1){.pf-ref} is constant, each coordinate-dependent 
 ::: {.pf-step #s1-3}
 
 The Dirichlet conditions in the $x$ coordinate require
-\[
+$$
 \alpha=\frac{n_x\pi}{L},
 \qquad
 X(x)=A\sin\frac{n_x\pi x}{L},
 \qquad n_x=1,2,3,\ldots.
-\]
+$$
 
 
 ::: pf-proof
@@ -96,12 +96,12 @@ The conditions $u=0$ on $x=0$ and $x=L$ imply $X(0)=X(L)=0$ for a nonzero separa
 ::: {.pf-step #s1-4}
 
 Similarly,
-\[
+$$
 \beta=\frac{n_y\pi}{L},
 \qquad
 \gamma=\frac{n_z\pi}{L},
 \qquad n_y,n_z=1,2,3,\ldots.
-\]
+$$
 
 
 ::: pf-proof
@@ -115,20 +115,20 @@ Apply the argument of step [](#s1-3){.pf-ref} to the pairs of faces $y=0,L$ and 
 ::: {.pf-step #s1-5}
 
 Hence the separated eigenmodes are
-\[
+$$
 \boxed{
 u_{n_x,n_y,n_z}(x,y,z)=C
 \sin\frac{n_x\pi x}{L}
 \sin\frac{n_y\pi y}{L}
 \sin\frac{n_z\pi z}{L}}
-\]
+$$
 and the allowed values are
-\[
+$$
 \boxed{
 k^2=\frac{\pi^2}{L^2}
 \left(n_x^2+n_y^2+n_z^2\right),
 \qquad n_x,n_y,n_z\in\NN.}
-\]
+$$
 
 
 ::: pf-proof

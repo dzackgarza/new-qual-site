@@ -31,9 +31,9 @@ For an order-preserving map $f:X\to Y$, let $F_f:\mathcal C_X\to\mathcal C_Y$ be
 
 View $\ZZ$ and $\RR$ with their usual orders, and let $i:\ZZ\hookrightarrow\RR$ be the inclusion.
 Find the left and right adjoints of
-\[
+$$
 F_i:\mathcal C_{\ZZ}\longrightarrow\mathcal C_{\RR},
-\]
+$$
 and justify your answer carefully.
 :::
 

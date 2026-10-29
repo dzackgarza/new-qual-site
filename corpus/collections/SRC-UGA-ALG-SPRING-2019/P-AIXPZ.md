@@ -26,9 +26,9 @@ Show that $A$ is also diagonalizable over $\CC$.
 ::: {.pf-step #s1}
 
 The minimal polynomial of $A^k$ has the form
-\[
+$$
 m_{A^k}(x)=\prod_{i=1}^r(x-\lambda_i)
-\]
+$$
 for pairwise distinct nonzero complex numbers $\lambda_i$.
 
 ::: pf-proof

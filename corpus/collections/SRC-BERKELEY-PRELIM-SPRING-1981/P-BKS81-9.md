@@ -29,9 +29,9 @@ Show that the following are equivalent:
 1. $\operatorname{tr}A$ is not an eigenvalue of $A$.
 2. $(\lambda_1+\lambda_2)(\lambda_2+\lambda_3)(\lambda_1+\lambda_3)\ne0$.
 3. The map $L:S\to S$ is an isomorphism, where $S$ is the space of real $3\times3$ skew-symmetric matrices and
-   \[
+   $$
    L(W)=AW+WA.
-   \]
+   $$
 :::
 
 ::: {.solution}

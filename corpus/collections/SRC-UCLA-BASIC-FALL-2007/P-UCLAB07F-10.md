@@ -26,14 +26,14 @@ Suppose $\{v_j\}_{j=1}^n$ is a basis of $\CC^n$.
 ::: {.solution}
 
 Let
-\[
+$$
 V=
 \begin{pmatrix}
 |&&|\\
 v_1&\cdots&v_n\\
 |&&|
 \end{pmatrix}.
-\]
+$$
 Since the $v_j$ form a basis, $V$ is invertible.
 
 ::: pf
@@ -41,36 +41,36 @@ Since the $v_j$ form a basis, $V$ is invertible.
 ::: {.pf-step #s1-1}
 
 Define
-\[
+$$
 W=(V^{-1})^*,
-\]
+$$
 and let $w_1,\ldots,w_n$ be the columns of $W$.
 Then
-\[
+$$
 (w_j,v_k)=\delta_{jk}.
-\]
+$$
 
 
 ::: pf-proof
 
 With the convention in the problem,
-\[
+$$
 (u,v)=u^*v.
-\]
+$$
 Since
-\[
+$$
 W^*V
 =
 \bigl((V^{-1})^*\bigr)^*V
 =
 V^{-1}V
 =I,
-\]
+$$
 the $(j,k)$ entry of $W^*V$ is
-\[
+$$
 w_j^*v_k
 =(w_j,v_k),
-\]
+$$
 and this entry equals $\delta_{jk}$.
 
 :::
@@ -85,9 +85,9 @@ The vectors $w_1,\ldots,w_n$ form a basis of $\CC^n$.
 ::: pf-proof
 
 The matrix
-\[
+$$
 W=(V^{-1})^*
-\]
+$$
 is invertible because $V^{-1}$ is invertible. Hence its columns form a basis.
 
 :::
@@ -97,23 +97,23 @@ is invertible because $V^{-1}$ is invertible. Hence its columns form a basis.
 ::: {.pf-step #s1-3}
 
 Suppose
-\[
+$$
 Tv_k=\lambda_kv_k
-\]
+$$
 for $k=1,\ldots,n$. Then
-\[
+$$
 (T^*w_j,v_k)=\lambda_k\delta_{jk}.
-\]
+$$
 
 
 ::: pf-proof
 
 For the standard Hermitian inner product,
-\[
+$$
 (T^*u,v)=(u,Tv).
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 (T^*w_j,v_k)
 &=
@@ -125,7 +125,7 @@ Therefore
 &=
 \lambda_k\delta_{jk},
 \end{aligned}
-\]
+$$
 using linearity in the second argument and step [](#s1-1){.pf-ref}.
 
 :::
@@ -135,34 +135,34 @@ using linearity in the second argument and step [](#s1-1){.pf-ref}.
 ::: {.pf-step #s1-4}
 
 For every $j$,
-\[
+$$
 \boxed{T^*w_j=\overline{\lambda_j}\,w_j}.
-\]
+$$
 
 
 ::: pf-proof
 
 For every $k$, step [](#s1-3){.pf-ref} gives
-\[
+$$
 (T^*w_j,v_k)=\lambda_j\delta_{jk}.
-\]
+$$
 Because the inner product is conjugate-linear in the first argument,
-\[
+$$
 (\overline{\lambda_j}w_j,v_k)
 =
 \lambda_j(w_j,v_k)
 =
 \lambda_j\delta_{jk}.
-\]
+$$
 Hence
-\[
+$$
 (T^*w_j-\overline{\lambda_j}w_j,v_k)=0
-\]
+$$
 for every $k$.
 Since $v_1,\ldots,v_n$ span $\CC^n$, the vector
-\[
+$$
 T^*w_j-\overline{\lambda_j}w_j
-\]
+$$
 is orthogonal to every vector in $\CC^n$, so it is zero.
 
 :::

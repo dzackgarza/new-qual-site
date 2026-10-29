@@ -17,13 +17,13 @@ audit:
 
 ::: {.problem}
 Let $(X,\mathcal B,\mu)$ be a measure space and let $A_n\in\mathcal B$ satisfy
-\[
+$$
 \sum_{n=1}^\infty\mu(A_n)<\infty.
-\]
+$$
 Prove
-\[
+$$
 \mu\!\left(\bigcap_{n=1}^\infty\bigcup_{k=n}^\infty A_k\right)=0.
-\]
+$$
 :::
 
 ::: {.solution}

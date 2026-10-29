@@ -28,17 +28,17 @@ A subset $D\subseteq X$ is called dense if $\overline D=X$.
 ::: {.pf-step #s1-1}
 
 Take
-\[
+$$
 X=\RR
-\]
+$$
 with its usual topology,
-\[
+$$
 D=\QQ,
-\]
+$$
 and
-\[
+$$
 A=\RR\setminus\QQ.
-\]
+$$
 
 
 ::: pf-proof
@@ -51,16 +51,16 @@ This specifies a concrete example.
 
 ::: {.pf-step #s1-2}
 
-The set \(D=\QQ\) is dense in \(\RR\).
+The set $D=\QQ$ is dense in $\RR$.
 
 
 ::: pf-proof
 
-Every nonempty open interval in \(\RR\) contains a rational number.
+Every nonempty open interval in $\RR$ contains a rational number.
 Equivalently,
-\[
+$$
 \overline{\QQ}=\RR.
-\]
+$$
 
 :::
 
@@ -69,9 +69,9 @@ Equivalently,
 ::: {.pf-step #s1-3}
 
 One has
-\[
+$$
 \boxed{D\cap A=\varnothing}.
-\]
+$$
 
 
 ::: pf-proof
@@ -84,24 +84,24 @@ The sets of rational and irrational numbers are disjoint.
 
 ::: {.pf-step #s1-4}
 
-Since \(A\ne\varnothing\),
-\[
+Since $A\ne\varnothing$,
+$$
 \boxed{
 D\cap A
 \text{ is not dense in }A}.
-\]
+$$
 
 
 ::: pf-proof
 
-The closure in \(A\) of the empty set is empty:
-\[
+The closure in $A$ of the empty set is empty:
+$$
 \overline{\varnothing}^{\,A}
 =
 \varnothing
 \ne
 A.
-\]
+$$
 
 :::
 
@@ -109,7 +109,7 @@ A.
 
 ::: {.pf-step #s1-5}
 
-Therefore, for an arbitrary subspace \(A\subseteq X\), density of \(D\) in \(X\) does not imply density of \(D\cap A\) in \(A\).
+Therefore, for an arbitrary subspace $A\subseteq X$, density of $D$ in $X$ does not imply density of $D\cap A$ in $A$.
 
 
 ::: pf-proof
@@ -123,15 +123,15 @@ Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} give the required counterexa
 ::: {.pf-step #s1-6}
 
 Let
-\[
+$$
 U\subseteq A
-\]
-be a nonempty open set in the subspace topology on \(A\).
+$$
+be a nonempty open set in the subspace topology on $A$.
 
 
 ::: pf-proof
 
-To prove density of \(D\cap A\) in \(A\), it suffices to show that every nonempty open subset of \(A\) meets \(D\cap A\).
+To prove density of $D\cap A$ in $A$, it suffices to show that every nonempty open subset of $A$ meets $D\cap A$.
 
 :::
 
@@ -140,13 +140,13 @@ To prove density of \(D\cap A\) in \(A\), it suffices to show that every nonempt
 ::: {.pf-step #s1-7}
 
 There exists an open set
-\[
+$$
 V\subseteq X
-\]
+$$
 such that
-\[
+$$
 \boxed{U=A\cap V}.
-\]
+$$
 
 
 ::: pf-proof
@@ -159,19 +159,19 @@ This is the definition of the subspace topology.
 
 ::: {.pf-step #s1-8}
 
-Since both \(A\) and \(V\) are open in \(X\),
-\[
+Since both $A$ and $V$ are open in $X$,
+$$
 \boxed{U\text{ is open in }X}.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-7){.pf-ref},
-\[
+$$
 U=A\cap V,
-\]
-an intersection of two open subsets of \(X\).
+$$
+an intersection of two open subsets of $X$.
 
 :::
 
@@ -179,16 +179,16 @@ an intersection of two open subsets of \(X\).
 
 ::: {.pf-step #s1-9}
 
-Because \(U\ne\varnothing\) and \(D\) is dense in \(X\),
-\[
+Because $U\ne\varnothing$ and $D$ is dense in $X$,
+$$
 \boxed{U\cap D\ne\varnothing}.
-\]
+$$
 
 
 ::: pf-proof
 
 A subset is dense exactly when it meets every nonempty open set.
-Apply this to the nonempty open set \(U\subseteq X\) from step [](#s1-8){.pf-ref}.
+Apply this to the nonempty open set $U\subseteq X$ from step [](#s1-8){.pf-ref}.
 
 :::
 
@@ -196,17 +196,17 @@ Apply this to the nonempty open set \(U\subseteq X\) from step [](#s1-8){.pf-ref
 
 ::: {.pf-step #s1-10}
 
-Since \(U\subseteq A\),
-\[
+Since $U\subseteq A$,
+$$
 U\cap D
 =
 U\cap(D\cap A).
-\]
+$$
 
 
 ::: pf-proof
 
-Every point of \(U\) already lies in \(A\).
+Every point of $U$ already lies in $A$.
 
 :::
 
@@ -215,10 +215,10 @@ Every point of \(U\) already lies in \(A\).
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{
 U\cap(D\cap A)\ne\varnothing}.
-\]
+$$
 
 
 ::: pf-proof
@@ -231,12 +231,12 @@ Combine steps [](#s1-9){.pf-ref} through [](#s1-10){.pf-ref}.
 
 ::: {.pf-step #s1-12}
 
-Hence every nonempty open subset of \(A\) meets \(D\cap A\).
+Hence every nonempty open subset of $A$ meets $D\cap A$.
 
 
 ::: pf-proof
 
-The set \(U\) in step [](#s1-6){.pf-ref} was arbitrary.
+The set $U$ in step [](#s1-6){.pf-ref} was arbitrary.
 
 :::
 
@@ -245,17 +245,17 @@ The set \(U\) in step [](#s1-6){.pf-ref} was arbitrary.
 ::: {.pf-step #s1-13}
 
 Thus
-\[
+$$
 \boxed{
 \overline{D\cap A}^{\,A}
 =
 A}.
-\]
+$$
 
 
 ::: pf-proof
 
-Step [](#s1-12){.pf-ref} is exactly the open-set characterization of density in the subspace \(A\).
+Step [](#s1-12){.pf-ref} is exactly the open-set characterization of density in the subspace $A$.
 
 :::
 
@@ -264,11 +264,11 @@ Step [](#s1-12){.pf-ref} is exactly the open-set characterization of density in 
 ::: {.pf-step #s1-14}
 
 Therefore
-\[
+$$
 \boxed{
 D\cap A
 \text{ is dense in }A}.
-\]
+$$
 
 
 ::: pf-proof

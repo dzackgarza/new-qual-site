@@ -28,15 +28,15 @@ audit:
 
 ::: {.problem}
 Let $f:\RR^2\setminus\{(0,0)\}\to\RR$ be $C^1$. Suppose there is $M>0$ such that
-\[
+$$
 \left|\frac{\partial f}{\partial x}\right|\le M,
 \qquad
 \left|\frac{\partial f}{\partial y}\right|\le M
-\]
+$$
 throughout the punctured plane. Prove that
-\[
+$$
 \lim_{(x,y)\to(0,0)}f(x,y)
-\]
+$$
 exists.
 :::
 

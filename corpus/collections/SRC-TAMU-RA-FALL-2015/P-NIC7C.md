@@ -30,22 +30,22 @@ Show that for each continuous linear functional $\phi$ on $X$ there is a continu
 
 ::: {.solution}
 Because $T$ is one-to-one, it is a linear bijection from $X$ onto $T(X)$. The range $T(X)$ is closed in the Banach space $Y$, hence is itself Banach. Therefore the bounded inverse theorem applied to
-\[
+$$
 T:X\longrightarrow T(X)
-\]
+$$
 shows that $T^{-1}:T(X)\to X$ is bounded.
 
 Fix $\phi\in X^*$ and define
-\[
+$$
 \lambda:T(X)\to\CC,\qquad \lambda(y)=\phi(T^{-1}y).
-\]
+$$
 Then $\lambda$ is linear and continuous, with
-\[
+$$
 |\lambda(y)|\le \|\phi\|\,\|T^{-1}\|\,\|y\|.
-\]
+$$
 By the Hahn--Banach theorem, $\lambda$ extends to some $\psi\in Y^*$. For every $x\in X$,
-\[
+$$
 (\psi\circ T)(x)=\psi(Tx)=\lambda(Tx)=\phi(x).
-\]
+$$
 Hence $\phi=\psi\circ T$.
 :::

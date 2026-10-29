@@ -28,13 +28,13 @@ Give an example of a subset of $[0,1]$ with positive Lebesgue measure whose clos
 ::: {.solution}
 Take the Smith--Volterra--Cantor set $S\subset[0,1]$.
 It is closed and nowhere dense, and
-\[
+$$
 m(S)=\frac12.
-\]
+$$
 Since $S$ is closed,
-\[
+$$
 \overline S=S,
-\]
+$$
 and nowhere density means that $S$ contains no nonempty open interval.
 Thus $S$ has the required properties.
 :::

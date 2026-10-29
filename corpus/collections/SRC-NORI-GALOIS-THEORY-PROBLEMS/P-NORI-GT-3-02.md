@@ -39,9 +39,9 @@ The multiplicative group of every finite field is cyclic; for $\FF_p$ its order 
 ::: {.pf-step #s1-2}
 
 A nontrivial element $\omega\in\FF_p$ satisfying $\omega^3=1$ exists if and only if
-\[
+$$
 3\mid(p-1).
-\]
+$$
 
 
 ::: pf-proof
@@ -60,9 +60,9 @@ The prime $p=3$ does not admit such an $\omega$.
 ::: pf-proof
 
 In characteristic $3$,
-\[
+$$
 X^3-1=(X-1)^3,
-\]
+$$
 so the only cube root of unity in $\FF_3$ is $1$.
 
 :::
@@ -72,9 +72,9 @@ so the only cube root of unity in $\FF_3$ is $1$.
 ::: {.pf-step #s1-4}
 
 Therefore the required primes are precisely
-\[
+$$
 \boxed{p\equiv1\pmod3}.
-\]
+$$
 
 
 ::: pf-proof
@@ -88,18 +88,18 @@ Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} cover all primes. For a prim
 ::: {.pf-step #s1-5}
 
 Fix such a prime $p$ and a nontrivial cube root $\omega\in\FF_p$. Let
-\[
+$$
 f(X)=X^p-\omega X.
-\]
+$$
 Then $f$ is separable.
 
 
 ::: pf-proof
 
 In characteristic $p$,
-\[
+$$
 f'(X)=pX^{p-1}-\omega=-\omega\ne0.
-\]
+$$
 Thus $f$ has no repeated roots.
 
 :::
@@ -109,9 +109,9 @@ Thus $f$ has no repeated roots.
 ::: {.pf-step #s1-6}
 
 If $\alpha$ is a root, then
-\[
+$$
 \alpha^p=\omega\alpha.
-\]
+$$
 
 
 ::: pf-proof
@@ -125,28 +125,28 @@ This is exactly the equation $f(\alpha)=0$.
 ::: {.pf-step #s1-7}
 
 Every root satisfies
-\[
+$$
 \alpha^{p^3}=\alpha.
-\]
+$$
 
 
 ::: pf-proof
 
 Because $\omega\in\FF_p$, one has $\omega^p=\omega$. Applying the $p$-power map successively to step [](#s1-6){.pf-ref} gives
-\[
+$$
 \alpha^{p^2}
 =(\omega\alpha)^p
 =\omega\alpha^p
 =\omega^2\alpha,
-\]
+$$
 and then
-\[
+$$
 \alpha^{p^3}
 =(\omega^2\alpha)^p
 =\omega^2\alpha^p
 =\omega^3\alpha
 =\alpha.
-\]
+$$
 
 :::
 
@@ -168,18 +168,18 @@ The roots of $X^{p^3}-X$ in an algebraic closure are exactly the elements of $\F
 ::: {.pf-step #s1-9}
 
 The root set
-\[
+$$
 V=\{x\in\FF_{p^3}:x^p=\omega x\}
-\]
+$$
 is a one-dimensional vector space over $\FF_p$, so it consists of the $p$ roots of $f$.
 
 
 ::: pf-proof
 
 The equation is the kernel of the $\FF_p$-linear map
-\[
+$$
 T(x)=x^p-\omega x.
-\]
+$$
 By step [](#s1-5){.pf-ref}, $f$ has exactly $p$ distinct roots in its splitting field, and step [](#s1-8){.pf-ref} puts all of them in $\FF_{p^3}$. Hence $|V|=p$, so $V$ has dimension one over $\FF_p$.
 
 :::
@@ -189,9 +189,9 @@ By step [](#s1-5){.pf-ref}, $f$ has exactly $p$ distinct roots in its splitting 
 ::: {.pf-step #s1-10}
 
 If $0\ne\alpha\in V$, then the splitting field is
-\[
+$$
 E=\FF_p(\alpha).
-\]
+$$
 
 
 ::: pf-proof
@@ -210,9 +210,9 @@ The element $\alpha$ does not lie in $\FF_p$.
 ::: pf-proof
 
 If $\alpha\in\FF_p$, then $\alpha^p=\alpha$. Step [](#s1-6){.pf-ref} would give
-\[
+$$
 \alpha=\omega\alpha.
-\]
+$$
 Since $\alpha\ne0$, this would imply $\omega=1$, contrary to the choice of $\omega$.
 
 :::
@@ -222,9 +222,9 @@ Since $\alpha\ne0$, this would imply $\omega=1$, contrary to the choice of $\ome
 ::: {.pf-step #s1-12}
 
 Since $\alpha\in\FF_{p^3}\setminus\FF_p$ and $3$ is prime,
-\[
+$$
 \FF_p(\alpha)=\FF_{p^3}.
-\]
+$$
 
 
 ::: pf-proof
@@ -238,9 +238,9 @@ The extension $\FF_{p^3}/\FF_p$ has degree $3$. By the tower law, an intermediat
 ::: {.pf-step #s1-13}
 
 Therefore the splitting field has
-\[
+$$
 \boxed{p^3}
-\]
+$$
 elements.
 
 

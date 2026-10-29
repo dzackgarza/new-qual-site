@@ -102,9 +102,9 @@ Hence the product of those distinct linear factors divides $f$.
 ::: {.pf-step #s6}
 
 Both $f$ and $P_\alpha$ are monic, and the two divisibilities force
-\[
+$$
 f(x)=P_\alpha(x)=\prod_{j=1}^m(x-g_j(\alpha)).
-\]
+$$
 
 ::: pf-proof
 

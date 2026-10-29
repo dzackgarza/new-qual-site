@@ -24,17 +24,17 @@ audit:
 
 ::: {.problem}
 Let $x(t)$ solve
-\[
+$$
 x''-2b x'+cx=0
-\]
+$$
 for all real $t$, where $b,c\in\RR$, and suppose
-\[
+$$
 x(0)=x(1)=0.
-\]
+$$
 Prove that
-\[
+$$
 x(n)=0
-\]
+$$
 for every integer $n$.
 :::
 

@@ -43,54 +43,54 @@ For every positive even integer $n$, give an $n$-dimensional real vector space $
 ::: {.pf-step #p2-s1}
 
 Suppose
-\[
+$$
 \dim_{\RR}V=2m+1
-\]
+$$
 is odd.
 Then the characteristic polynomial
-\[
+$$
 \chi_T(\lambda)
 =
 \det(\lambda I-T)
-\]
+$$
 has a real root.
 
 ::: pf-proof
 
 The polynomial
-\[
+$$
 \chi_T(\lambda)
-\]
+$$
 has real coefficients because $T$ is real-linear, and its degree is
-\[
+$$
 2m+1,
-\]
+$$
 which is odd.
 Its leading coefficient is $1$.
 Therefore
-\[
+$$
 \chi_T(\lambda)\to+\infty
-\]
+$$
 as
-\[
+$$
 \lambda\to+\infty,
-\]
+$$
 while
-\[
+$$
 \chi_T(\lambda)\to-\infty
-\]
+$$
 as
-\[
+$$
 \lambda\to-\infty.
-\]
+$$
 By the intermediate value theorem, there exists
-\[
+$$
 \lambda_0\in\RR
-\]
+$$
 such that
-\[
+$$
 \chi_T(\lambda_0)=0.
-\]
+$$
 
 :::
 
@@ -99,41 +99,41 @@ such that
 ::: {.pf-step #p2-s2}
 
 There exists a nonzero real vector
-\[
+$$
 v\in V
-\]
+$$
 such that
-\[
+$$
 \boxed{Tv=\lambda_0v}.
-\]
+$$
 
 ::: pf-proof
 
 The equality
-\[
+$$
 \chi_T(\lambda_0)=0
-\]
+$$
 means
-\[
+$$
 \det(\lambda_0I-T)=0.
-\]
+$$
 Thus
-\[
+$$
 \lambda_0I-T
-\]
+$$
 is singular.
 Hence its kernel contains a nonzero vector
-\[
+$$
 v\in V.
-\]
+$$
 For such $v$,
-\[
+$$
 (\lambda_0I-T)v=0,
-\]
+$$
 so
-\[
+$$
 Tv=\lambda_0v.
-\]
+$$
 Thus every real-linear operator on an odd-dimensional real vector space has a nonzero real eigenvector.
 
 :::
@@ -143,29 +143,29 @@ Thus every real-linear operator on an odd-dimensional real vector space has a no
 ::: {.pf-step #p2-s3}
 
 Now let
-\[
+$$
 n=2m
-\]
+$$
 be positive and even.
 Take
-\[
+$$
 V=\RR^{2m}
-\]
+$$
 and let $T$ be block diagonal with $m$ copies of
-\[
+$$
 R=
 \begin{pmatrix}
 0&-1\\
 1&0
 \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 
 This defines a real-linear endomorphism of the $2m$-dimensional real vector space
-\[
+$$
 \RR^{2m}.
-\]
+$$
 
 :::
 
@@ -178,34 +178,34 @@ The $2\times2$ matrix $R$ has no nonzero real eigenvector.
 ::: pf-proof
 
 Suppose
-\[
+$$
 Rw=\lambda w
-\]
+$$
 for some nonzero
-\[
+$$
 w\in\RR^2
-\]
+$$
 and real number $\lambda$.
 Since
-\[
+$$
 R^2=-I,
-\]
+$$
 applying $R$ once more gives
-\[
+$$
 -w
 =
 R^2w
 =
 \lambda^2w.
-\]
+$$
 Thus
-\[
+$$
 (\lambda^2+1)w=0.
-\]
+$$
 Because $w\ne0$,
-\[
+$$
 \lambda^2+1=0,
-\]
+$$
 which has no real solution.
 Therefore $R$ has no nonzero real eigenvector.
 
@@ -220,24 +220,24 @@ The block-diagonal transformation $T$ from step [](#p2-s3){.pf-ref} has no nonze
 ::: pf-proof
 
 Suppose
-\[
+$$
 Tv=\lambda v
-\]
+$$
 for some real $\lambda$ and nonzero
-\[
+$$
 v=(v_1,\ldots,v_m),
 \qquad
 v_j\in\RR^2.
-\]
+$$
 At least one block coordinate
-\[
+$$
 v_j
-\]
+$$
 is nonzero.
 The eigenvalue equation holds blockwise:
-\[
+$$
 Rv_j=\lambda v_j.
-\]
+$$
 This contradicts step [](#p2-s4){.pf-ref}.
 Hence no such nonzero $v$ exists.
 
@@ -248,14 +248,14 @@ Hence no such nonzero $v$ exists.
 ::: {.pf-step #p2-s6}
 
 Therefore:
-\[
+$$
 \boxed{
 \begin{aligned}
 &\text{every odd-dimensional real-linear operator has a real eigenvector,}\\
 &\text{whereas in every positive even dimension there is an operator with none.}
 \end{aligned}
 }
-\]
+$$
 
 ::: pf-proof
 

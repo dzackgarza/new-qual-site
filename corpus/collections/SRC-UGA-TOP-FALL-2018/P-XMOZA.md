@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 X=\left\{(x,y)\in\RR^2:x>0,\ y\ge0,\ \text{and }\frac yx\in\QQ\right\}
-\]
+$$
 and equip $X$ with the subspace topology induced by the usual topology on $\RR^2$.
 Prove or disprove that $X$ is connected.
 :::
@@ -40,27 +40,27 @@ The space $X$ is not connected.
 ::: {.pf-step #s1}
 
 Let
-\[
+$$
 U=\{(x,y)\in\RR^2:y<\sqrt2\,x\},
 \qquad
 V=\{(x,y)\in\RR^2:y>\sqrt2\,x\}.
-\]
+$$
 Then $U$ and $V$ are disjoint open subsets of $\RR^2$.
 
 ::: pf-proof
 
 The map
-\[
+$$
 g:\RR^2\longrightarrow\RR,
 \qquad
 g(x,y)=y-\sqrt2\,x
-\]
+$$
 is continuous, and
-\[
+$$
 U=g^{-1}((-\infty,0)),
 \qquad
 V=g^{-1}((0,\infty)).
-\]
+$$
 Thus both sets are open, and their defining inequalities make them disjoint.
 
 :::
@@ -70,32 +70,32 @@ Thus both sets are open, and their defining inequalities make them disjoint.
 ::: {.pf-step #s2}
 
 The subsets
-\[
+$$
 A=X\cap U,
 \qquad
 B=X\cap V
-\]
+$$
 are disjoint open subsets of $X$ whose union is $X$.
 
 ::: pf-proof
 
 They are open in $X$ by the definition of the subspace topology and are disjoint by step [](#s1){.pf-ref}. Now let $(x,y)\in X$.
 Because $x>0$ and $y/x\in\QQ$, while $\sqrt2\notin\QQ$, one has
-\[
+$$
 \frac yx\neq\sqrt2.
-\]
+$$
 Hence either
-\[
+$$
 y<\sqrt2\,x
-\]
+$$
 or
-\[
+$$
 y>\sqrt2\,x.
-\]
+$$
 Thus every point of $X$ lies in $A$ or $B$, so
-\[
+$$
 X=A\cup B.
-\]
+$$
 
 :::
 
@@ -108,14 +108,14 @@ Both $A$ and $B$ are nonempty.
 ::: pf-proof
 
 The point $(1,1)$ belongs to $X$ and satisfies
-\[
+$$
 1<\sqrt2,
-\]
+$$
 so $(1,1)\in A$.
 Likewise, $(1,2)\in X$ and
-\[
+$$
 2>\sqrt2,
-\]
+$$
 so $(1,2)\in B$.
 
 :::

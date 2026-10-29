@@ -22,9 +22,9 @@ Give three equivalent characterizations of analyticity of a complex-valued funct
 ::: {.solution}
 
 Let
-\[
+$$
 f:D\to\CC.
-\]
+$$
 The following are equivalent.
 
 ::: pf
@@ -34,16 +34,16 @@ The following are equivalent.
 **Complex differentiability at every point.**
 
 For every
-\[
+$$
 z_0\in D,
-\]
+$$
 the limit
-\[
+$$
 f'(z_0)
 =
 \lim_{z\to z_0}
 \frac{f(z)-f(z_0)}{z-z_0}
-\]
+$$
 exists.
 
 
@@ -61,40 +61,40 @@ In one complex variable, “holomorphic” and “analytic” are equivalent.
 **Local power-series representation.**
 
 For every
-\[
+$$
 z_0\in D,
-\]
+$$
 there is
-\[
+$$
 r>0
-\]
+$$
 with
-\[
+$$
 B(z_0,r)\subseteq D
-\]
+$$
 and coefficients
-\[
+$$
 a_0,a_1,a_2,\dots\in\CC
-\]
+$$
 such that
-\[
+$$
 f(z)
 =
 \sum_{n=0}^{\infty}
 a_n(z-z_0)^n
 \qquad
 (|z-z_0|<r).
-\]
+$$
 
 
 ::: pf-proof
 
 If $f$ is holomorphic, Cauchy's integral formula gives
-\[
+$$
 a_n
 =
 \frac{f^{(n)}(z_0)}{n!},
-\]
+$$
 and the Taylor series converges to $f$ on every sufficiently small disk.
 
 Conversely, a convergent power series may be differentiated term-by-term
@@ -109,16 +109,16 @@ inside its radius of convergence, so it defines a holomorphic function.
 **Morera's criterion.**
 
 The function $f$ is continuous on $D$ and
-\[
+$$
 \oint_{\partial T}
 f(z)\,dz
 =
 0
-\]
+$$
 for every closed triangle
-\[
+$$
 T\subset D.
-\]
+$$
 
 
 ::: pf-proof
@@ -136,14 +136,14 @@ around every triangle vanishes is holomorphic.
 ::: {.pf-step #s1-4}
 
 Therefore each of the three statements
-\[
+$$
 \boxed{
 \begin{array}{c}
 f\text{ is complex differentiable at every point of }D,\\
 f\text{ is locally represented by a convergent power series},\\
 f\text{ is continuous and has zero integral around every triangle}
 \end{array}}
-\]
+$$
 is equivalent to analyticity on $D$.
 
 

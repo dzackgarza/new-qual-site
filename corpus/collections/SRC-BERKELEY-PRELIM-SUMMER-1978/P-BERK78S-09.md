@@ -42,19 +42,19 @@ audit:
 ::: {.problem}
 Let $X,Y$ be nonempty subsets of a proper metric space $M$, meaning that
 every closed bounded subset of $M$ is compact, and define
-\[
+$$
 d(X,Y)=\inf\{d(x,y):x\in X,\ y\in Y\}.
-\]
+$$
 
 1. Suppose $X=\{x\}$ consists of one point and $Y$ is closed. Prove that
-   \[
+   $$
    d(X,Y)=d(x,y)
-   \]
+   $$
    for some $y\in Y$.
 2. Suppose $X$ is compact and $Y$ is closed. Prove that
-   \[
+   $$
    d(X,Y)=d(x,y)
-   \]
+   $$
    for some $x\in X$ and $y\in Y$.
 3. Give an example showing that the conclusion of part 2 can fail if $X$ and $Y$ are closed but not compact.
 :::

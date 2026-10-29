@@ -32,27 +32,27 @@ audit:
 
 ::: {.problem}
 Give an example showing that
-\[
+$$
 H\normal K\normal G
-\]
+$$
 does not necessarily imply $H\normal G$.
 :::
 
 ::: {.solution}
 Take
-\[
+$$
 G=A_4,
-\]
+$$
 and let
-\[
+$$
 K=V_4
 =\{e,(12)(34),(13)(24),(14)(23)\}.
-\]
+$$
 Finally set
-\[
+$$
 H=\langle(12)(34)\rangle
 =\{e,(12)(34)\}.
-\]
+$$
 
 ::: pf
 
@@ -65,9 +65,9 @@ We have $K\normal G$.
 The subgroup $K$ consists of the identity together with all three double transpositions in $A_4$.
 Conjugation in $S_4$ preserves cycle type, so every conjugate of a double transposition is again a double transposition.
 Hence conjugation by every element of $A_4$ preserves $K$, and therefore
-\[
+$$
 K\normal A_4.
-\]
+$$
 
 :::
 
@@ -81,9 +81,9 @@ We have $H\normal K$.
 
 The Klein four group $K$ is abelian.
 Every subgroup of an abelian group is normal, so
-\[
+$$
 H\normal K.
-\]
+$$
 
 :::
 
@@ -96,23 +96,23 @@ The subgroup $H$ is not normal in $G$.
 ::: pf-proof
 
 Let
-\[
+$$
 g=(123)\in A_4.
-\]
+$$
 Conjugating the nonidentity element of $H$ gives
-\[
+$$
 g(12)(34)g^{-1}
 =(23)(14)
 =(14)(23).
-\]
+$$
 This element is not in
-\[
+$$
 H=\{e,(12)(34)\}.
-\]
+$$
 Hence
-\[
+$$
 gHg^{-1}\ne H,
-\]
+$$
 so $H\not\normal A_4$.
 
 :::
@@ -126,9 +126,9 @@ Thus normality is not transitive.
 ::: pf-proof
 
 Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
-\[
+$$
 H\normal K\normal G,
-\]
+$$
 while step [](#s3){.pf-ref} gives $H\not\normal G$.
 
 :::

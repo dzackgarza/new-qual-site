@@ -38,21 +38,21 @@ is a basis for $\RR^2$.
 The collection is countable because it is indexed by a subset of $\QQ^4$.
 
 Let $U\subseteq\RR^2$ be open and $(x,y)\in U$. Choose an ordinary open rectangle
-\[
+$$
 (x-\varepsilon,x+\varepsilon)\times(y-\delta,y+\delta)\subseteq U.
-\]
+$$
 By density of $\QQ$, choose rationals
-\[
+$$
 a<x<b,\qquad c<y<d
-\]
+$$
 with
-\[
+$$
 (a,b)\subseteq(x-\varepsilon,x+\varepsilon),\qquad
 (c,d)\subseteq(y-\delta,y+\delta).
-\]
+$$
 Then
-\[
+$$
 (x,y)\in(a,b)\times(c,d)\subseteq U.
-\]
+$$
 By the basis criterion, the stated countable collection is a basis for the standard topology on $\RR^2$.
 :::

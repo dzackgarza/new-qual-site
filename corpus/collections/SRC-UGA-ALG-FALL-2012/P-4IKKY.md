@@ -67,13 +67,13 @@ There exists a decomposition $U=V\oplus W$ into $f$-invariant subspaces with $V$
 ::: pf-proof
 
 By the structure theorem for finitely generated modules over a PID, step [](#s1-1){.pf-ref} yields
-\[
+$$
 U\cong k[t]^n\oplus\bigoplus_{j=1}^s k[t]/(p_j(t)),
-\]
+$$
 where each $p_j$ is nonzero. Take $V$ to be the image of the free summand and $W$ the torsion summand under such an isomorphism. Both are $k[t]$-submodules, hence $f$-invariant. If $v_1,\ldots,v_n$ are the images of its standard free generators, then $f^d(v_i)=t^dv_i$ form a $k$-basis of $V$ as $i$ and $d\geq0$ vary. Also
-\[
+$$
 \dim_k W=\sum_{j=1}^s\deg p_j<\infty.
-\]
+$$
 
 :::
 

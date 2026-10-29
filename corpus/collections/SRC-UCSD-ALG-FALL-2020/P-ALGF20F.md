@@ -36,9 +36,9 @@ Prove that $N = M$.
 
 ::: {.solution}
 Fix $x\in M$ and define
-\[
+$$
 I_x:=\{a\in A:ax\in N\}.
-\]
+$$
 
 ::: pf
 
@@ -49,13 +49,13 @@ The subset $I_x$ is an ideal of $A$.
 ::: pf-proof
 
 If $a,b\in I_x$, then
-\[
+$$
 (a-b)x=ax-bx\in N,
-\]
+$$
 so $a-b\in I_x$. If $r\in A$ and $a\in I_x$, then
-\[
+$$
 (ra)x=r(ax)\in N,
-\]
+$$
 so $ra\in I_x$. Thus $I_x\trianglelefteq A$.
 
 :::
@@ -69,30 +69,30 @@ For each $i$, some power of $a_i$ lies in $I_x$.
 ::: pf-proof
 
 The equality
-\[
+$$
 S_i^{-1}M=S_i^{-1}N
-\]
+$$
 implies that the element $x/1\in S_i^{-1}M$ comes from $S_i^{-1}N$. Equivalently, its class in
-\[
+$$
 S_i^{-1}(M/N)
-\]
+$$
 is zero. By the defining zero criterion for localization, there exists
-\[
+$$
 s_i\in S_i
-\]
+$$
 such that
-\[
+$$
 s_i(x+N)=0
 \quad\text{in }M/N.
-\]
+$$
 Thus $s_i x\in N$. Since every element of $S_i$ has the form $a_i^{r_i}$ for some $r_i\ge0$, we obtain
-\[
+$$
 a_i^{r_i}\in I_x.
-\]
+$$
 Hence
-\[
+$$
 a_i\in\sqrt{I_x}
-\]
+$$
 for every $i$.
 
 :::
@@ -106,17 +106,17 @@ The radical of $I_x$ is the whole ring $A$.
 ::: pf-proof
 
 By step [](#s2){.pf-ref}, the ideal $\sqrt{I_x}$ contains every generator $a_i$. Since
-\[
+$$
 (a_1,\ldots,a_n)=A,
-\]
+$$
 it follows that
-\[
+$$
 1\in(a_1,\ldots,a_n)\subseteq\sqrt{I_x}.
-\]
+$$
 Therefore
-\[
+$$
 \sqrt{I_x}=A.
-\]
+$$
 
 :::
 
@@ -129,17 +129,17 @@ The element $x$ lies in $N$.
 ::: pf-proof
 
 By step [](#s3){.pf-ref},
-\[
+$$
 1\in\sqrt{I_x}.
-\]
+$$
 By definition of the radical, some positive power of $1$ lies in $I_x$; hence
-\[
+$$
 1\in I_x.
-\]
+$$
 Therefore
-\[
+$$
 x=1\cdot x\in N.
-\]
+$$
 
 :::
 

@@ -35,28 +35,28 @@ Does there exist a map of degree 2013 from $S^2 \to S^2$?
 ::: {.pf-step #s1}
 
 Define
-\[
+$$
 g:S^1\to S^1,
 \qquad
 g(z)=z^{2013}.
-\]
+$$
 Then $g$ has degree $2013$.
 
 ::: pf-proof
 
 With the standard parametrization
-\[
+$$
 S^1=\{e^{2\pi i t}:t\in\RR/\ZZ\},
-\]
+$$
 the map $g$ is induced by
-\[
+$$
 t\longmapsto 2013t
-\]
+$$
 on $\RR/\ZZ$.
 Hence
-\[
+$$
 g_*:H_1(S^1;\ZZ)\to H_1(S^1;\ZZ)
-\]
+$$
 is multiplication by $2013$.
 Thus $\deg g=2013$.
 
@@ -67,20 +67,20 @@ Thus $\deg g=2013$.
 ::: pf-step
 
 Suspend $g$ to obtain
-\[
+$$
 \Sigma g:\Sigma S^1\to\Sigma S^1.
-\]
+$$
 Using the standard homeomorphism $\Sigma S^1\cong S^2$, regard this as a map
-\[
+$$
 f:S^2\to S^2.
-\]
+$$
 
 ::: pf-proof
 
 The suspension functor sends a map $g:S^1\to S^1$ to the map
-\[
+$$
 \Sigma g([z,t])=[g(z),t].
-\]
+$$
 Since $\Sigma S^1$ is homeomorphic to $S^2$, this gives the required self-map of the sphere.
 
 :::
@@ -94,24 +94,24 @@ The map $f$ has degree $2013$.
 ::: pf-proof
 
 The reduced-homology suspension isomorphism
-\[
+$$
 \sigma:\widetilde H_1(S^1;\ZZ)
 \xrightarrow{\cong}
 \widetilde H_2(\Sigma S^1;\ZZ)
-\]
+$$
 is natural.
 Therefore
-\[
+$$
 (\Sigma g)_*\circ\sigma
 =
 \sigma\circ g_*.
-\]
+$$
 By step [](#s1){.pf-ref}, $g_*$ is multiplication by $2013$.
 Since $\sigma$ is an isomorphism, the naturality identity implies that $(\Sigma g)_*$ is also multiplication by $2013$.
 Hence
-\[
+$$
 \deg f=2013.
-\]
+$$
 Thus such a map exists.
 
 :::

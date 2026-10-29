@@ -47,41 +47,41 @@ Let $n\ge2$. Prove that if $f,g:X\to S^{n-1}$ are continuous and both not surjec
 
 ::: {.pf-step #non-surjective-nullhomotopic}
 Every non-surjective continuous map
-\[
+$$
 h:X\to S^{n-1}
-\]
+$$
 is null-homotopic.
 
 ::: pf-proof
 Because $h$ is not surjective, choose
-\[
+$$
 p\in S^{n-1}\setminus h(X).
-\]
+$$
 Then $h$ factors through the punctured sphere
-\[
+$$
 S^{n-1}\setminus\{p\}.
-\]
+$$
 Stereographic projection from $p$ gives a homeomorphism
-\[
+$$
 \sigma:S^{n-1}\setminus\{p\}\longrightarrow\RR^{n-1}.
-\]
+$$
 Choose a point $x_0\in\RR^{n-1}$ and define
-\[
+$$
 H:X\times I\to S^{n-1}\setminus\{p\}
-\]
+$$
 by
-\[
+$$
 H(x,t)
 =\sigma^{-1}\bigl((1-t)\sigma(h(x))+t x_0\bigr).
-\]
+$$
 This is continuous, with
-\[
+$$
 H(x,0)=h(x)
-\]
+$$
 and
-\[
+$$
 H(x,1)=\sigma^{-1}(x_0),
-\]
+$$
 independent of $x$.
 Thus $h$ is homotopic to a constant map.
 :::
@@ -90,11 +90,11 @@ Thus $h$ is homotopic to a constant map.
 
 ::: {.pf-step #f-g-constant}
 The maps $f$ and $g$ are homotopic to constant maps
-\[
+$$
 c_a(x)=a,
 \qquad
 c_b(x)=b
-\]
+$$
 for some $a,b\in S^{n-1}$.
 
 ::: pf-proof
@@ -108,21 +108,21 @@ For $n\ge2$, any two constant maps $X\to S^{n-1}$ are homotopic.
 
 ::: pf-proof
 Since
-\[
+$$
 n-1\ge1,
-\]
+$$
 the sphere $S^{n-1}$ is path-connected.
 Choose a path
-\[
+$$
 \gamma:I\to S^{n-1}
-\]
+$$
 from $a$ to $b$.
 Then
-\[
+$$
 K:X\times I\to S^{n-1},
 \qquad
 K(x,t)=\gamma(t),
-\]
+$$
 is a homotopy from $c_a$ to $c_b$.
 :::
 
@@ -130,19 +130,19 @@ is a homotopy from $c_a$ to $c_b$.
 
 ::: pf-qed
 By step [](#f-g-constant){.pf-ref},
-\[
+$$
 f\simeq c_a
 \qquad\text{and}\qquad
 g\simeq c_b.
-\]
+$$
 By step [](#constants-homotopic){.pf-ref},
-\[
+$$
 c_a\simeq c_b.
-\]
+$$
 Symmetry and transitivity of homotopy give
-\[
+$$
 f\simeq c_a\simeq c_b\simeq g.
-\]
+$$
 :::
 
 :::

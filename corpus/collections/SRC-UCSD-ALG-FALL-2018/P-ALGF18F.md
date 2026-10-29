@@ -45,30 +45,30 @@ Throughout, an integer $i$ occurring in an expression such as $\alpha-i$ is unde
 ::: {.pf-step #s1}
 
 For every positive integer $i$,
-\[
+$$
 \alpha^{q^i}=\alpha-i.
-\]
+$$
 
 ::: pf-proof
 
 Since $\alpha$ is a root of $x^q-x+1$,
-\[
+$$
 \alpha^q=\alpha-1.
-\]
+$$
 This is the case $i=1$.
 
 Assume
-\[
+$$
 \alpha^{q^i}=\alpha-i.
-\]
+$$
 Raising both sides to the $q$th power gives
-\[
+$$
 \alpha^{q^{i+1}}=(\alpha-i)^q.
-\]
+$$
 The $q$th-power map is a field homomorphism in characteristic $p$, and every element of the prime field is fixed by it. Hence
-\[
+$$
 (\alpha-i)^q=\alpha^q-i=(\alpha-1)-i=\alpha-(i+1).
-\]
+$$
 Induction proves the formula for all $i\ge1$, proving part (a).
 
 :::
@@ -82,25 +82,25 @@ The element $\alpha$ lies in $\FF_{q^p}$ but not in $\FF_q$.
 ::: pf-proof
 
 Taking $i=p$ in step [](#s1){.pf-ref} and using characteristic $p$ gives
-\[
+$$
 \alpha^{q^p}=\alpha-p=\alpha.
-\]
+$$
 The roots of
-\[
+$$
 x^{q^p}-x
-\]
+$$
 in the algebraic closure are precisely the elements of $\FF_{q^p}$, so
-\[
+$$
 \alpha\in\FF_{q^p}.
-\]
+$$
 On the other hand,
-\[
+$$
 \alpha^q=\alpha-1\neq\alpha,
-\]
+$$
 so $\alpha$ is not fixed by the $q$th-power Frobenius and therefore
-\[
+$$
 \alpha\notin\FF_q.
-\]
+$$
 
 :::
 
@@ -109,21 +109,21 @@ so $\alpha$ is not fixed by the $q$th-power Frobenius and therefore
 ::: {.pf-step #s3}
 
 One has
-\[
+$$
 [\FF_q(\alpha):\FF_q]=p.
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s2){.pf-ref},
-\[
+$$
 \FF_q(\alpha)\subseteq\FF_{q^p}.
-\]
+$$
 Hence the tower law gives
-\[
+$$
 [\FF_q(\alpha):\FF_q]\mid
 [\FF_{q^p}:\FF_q]=p.
-\]
+$$
 Since $p$ is prime, the degree is either $1$ or $p$.
 The degree cannot be $1$ because $\alpha\notin\FF_q$ by step [](#s2){.pf-ref}.
 Therefore it is $p$.
@@ -135,25 +135,25 @@ Therefore it is $p$.
 ::: pf-step
 
 The extension $\FF_q[\alpha]/\FF_q$ is Galois of degree $p$, so
-\[
+$$
 \left|\operatorname{Gal}(\FF_q[\alpha]/\FF_q)\right|=p.
-\]
+$$
 
 ::: pf-proof
 
 Because $\alpha$ is algebraic over $\FF_q$,
-\[
+$$
 \FF_q[\alpha]=\FF_q(\alpha).
-\]
+$$
 By steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
-\[
+$$
 \FF_q(\alpha)\subseteq\FF_{q^p}
-\]
+$$
 and both extensions of $\FF_q$ have degree $p$.
 Hence
-\[
+$$
 \FF_q(\alpha)=\FF_{q^p}.
-\]
+$$
 The polynomial $x^{q^p}-x$ splits over $\FF_{q^p}$ and has derivative $-1$, so it is separable.
 Therefore $\FF_{q^p}/\FF_q$ is Galois.
 Its Galois group has order equal to the extension degree, namely $p$.
@@ -170,28 +170,28 @@ Every irreducible factor of $x^q-x+1$ in $\FF_q[x]$ has degree $p$.
 ::: pf-proof
 
 Let
-\[
+$$
 r(x)\in\FF_q[x]
-\]
+$$
 be an irreducible factor, and let $\beta$ be a root of $r$ in the algebraic closure.
 Then $\beta$ is also a root of $x^q-x+1$, so the argument of step [](#s1){.pf-ref} gives
-\[
+$$
 \beta^{q^p}=\beta
 \qquad\text{and}\qquad
 \beta^q=\beta-1\neq\beta.
-\]
+$$
 Thus
-\[
+$$
 \beta\in\FF_{q^p}\setminus\FF_q.
-\]
+$$
 Exactly as in step [](#s3){.pf-ref},
-\[
+$$
 [\FF_q(\beta):\FF_q]=p.
-\]
+$$
 Since $r$ is the minimal polynomial of $\beta$ over $\FF_q$,
-\[
+$$
 \deg r=p.
-\]
+$$
 This proves part (c).
 
 :::

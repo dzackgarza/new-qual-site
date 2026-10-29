@@ -16,9 +16,9 @@ review: draft
 
 ::: {.problem}
 Determine $\sqrt{I}$ for
-\[
+$$
 I\definedas \generators{x_1^3 - x_2^6,\, x_1 x_2 - x_2^3} \normal \CC[x_1, x_2]
-.\]
+.$$
 :::
 
 ::: {.solution}

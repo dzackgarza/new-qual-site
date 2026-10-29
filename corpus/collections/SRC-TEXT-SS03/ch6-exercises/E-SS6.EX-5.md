@@ -26,31 +26,31 @@ $$
 
 ::: {.solution}
 Put
-\[
+$$
 s=\frac12+it.
-\]
+$$
 Then $1-s=\frac12-it=\overline s$. Since $\Gamma(\overline s)=\overline{\Gamma(s)}$,
-\[
+$$
 \Gamma(s)\Gamma(1-s)=|\Gamma(s)|^2.
-\]
+$$
 The reflection formula gives
-\[
+$$
 |\Gamma(1/2+it)|^2
 =\frac{\pi}{\sin\pi(1/2+it)}.
-\]
+$$
 Now
-\[
+$$
 \sin\left(\frac\pi2+i\pi t\right)=\cosh(\pi t)
 =\frac{e^{\pi t}+e^{-\pi t}}2.
-\]
+$$
 Therefore
-\[
+$$
 |\Gamma(1/2+it)|^2
 =\frac{2\pi}{e^{\pi t}+e^{-\pi t}},
-\]
+$$
 and taking the positive square root yields
-\[
+$$
 \boxed{|\Gamma(1/2+it)|
 =\sqrt{\frac{2\pi}{e^{\pi t}+e^{-\pi t}}}}.
-\]
+$$
 :::

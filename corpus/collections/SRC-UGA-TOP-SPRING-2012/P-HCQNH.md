@@ -38,9 +38,9 @@ Find, with proof, a general formula relating the Euler characteristics of $X, U,
 ::: {.problem}
 Let $X$ be a topological space and let $U,V\subset X$ be open subsets with $X=U\cup V$.
 Prove that the Euler characteristics of $U$, $V$, $U\cap V$, and $X$ obey the relation
-\[
+$$
 \chi(X)=\chi(U)+\chi(V)-\chi(U\cap V).
-\]
+$$
 
 (You may assume that the homologies of $U$, $V$, $U\cap V$, $X$ are finite-dimensional so that their Euler characteristics are well-defined.)
 :::
@@ -53,25 +53,25 @@ Prove that the Euler characteristics of $U$, $V$, $U\cap V$, and $X$ obey the re
 
 The Spring 2012 wording needs the usual proviso that the ordinary Euler characteristics involved are defined; the Spring 2015 wording supplies this proviso explicitly.
 Work with rational coefficients and assume, as intended in the latter wording, that
-\[
+$$
 H_k(X;\QQ),\quad
 H_k(U;\QQ),\quad
 H_k(V;\QQ),\quad
 H_k(U\cap V;\QQ)
-\]
-are finite-dimensional for every \(k\) and vanish for all sufficiently large \(k\), so that the ordinary Euler characteristics are finite sums.
+$$
+are finite-dimensional for every $k$ and vanish for all sufficiently large $k$, so that the ordinary Euler characteristics are finite sums.
 Then
-\[
+$$
 \boxed{
 \chi(X)=\chi(U)+\chi(V)-\chi(U\cap V)}.
-\]
+$$
 
 ::: pf-proof
 
 Under this finite-type interpretation of the stated proviso,
-\[
+$$
 \chi(Y)=\sum_{k\ge0}(-1)^k\dim_{\QQ}H_k(Y;\QQ)
-\]
+$$
 is a finite sum for each of the four spaces.
 Without such a hypothesis, the ordinary Euler characteristic need not be defined, so no unrestricted numerical identity can be asserted.
 
@@ -81,8 +81,8 @@ Without such a hypothesis, the ordinary Euler characteristic need not be defined
 
 ::: pf-step
 
-The open cover \(X=U\cup V\) gives the Mayer--Vietoris long exact sequence
-\[
+The open cover $X=U\cup V$ gives the Mayer--Vietoris long exact sequence
+$$
 \cdots\longrightarrow
 H_k(U\cap V)
 \longrightarrow
@@ -92,13 +92,13 @@ H_k(X)
 \longrightarrow
 H_{k-1}(U\cap V)
 \longrightarrow\cdots,
-\]
-with all homology groups taken over \(\QQ\).
+$$
+with all homology groups taken over $\QQ$.
 
 ::: pf-proof
 
 This is the singular-homology Mayer--Vietoris theorem for an open cover.
-The openness of \(U\) and \(V\) is the standard hypothesis in this formulation.
+The openness of $U$ and $V$ is the standard hypothesis in this formulation.
 
 :::
 
@@ -110,8 +110,8 @@ Under the finite-type hypothesis in step [](#s1){.pf-ref}, the Mayer--Vietoris s
 
 ::: pf-proof
 
-Choose \(N\) so large that all four homology groups vanish in degrees greater than \(N\). Then the portion of the Mayer--Vietoris sequence from degree \(N\) down through degree \(0\) has zeros at both ends:
-\[
+Choose $N$ so large that all four homology groups vanish in degrees greater than $N$. Then the portion of the Mayer--Vietoris sequence from degree $N$ down through degree $0$ has zeros at both ends:
+$$
 0\to H_N(U\cap V)
 \to H_N(U)\oplus H_N(V)
 \to H_N(X)
@@ -119,7 +119,7 @@ Choose \(N\) so large that all four homology groups vanish in degrees greater th
 \to H_0(U)\oplus H_0(V)
 \to H_0(X)
 \to0.
-\]
+$$
 Every term is finite-dimensional by hypothesis.
 
 :::
@@ -133,21 +133,21 @@ The alternating sum of the dimensions of the terms in this finite exact sequence
 ::: pf-proof
 
 For any finite exact sequence
-\[
+$$
 0\to E_m\to E_{m-1}\to\cdots\to E_0\to0
-\]
+$$
 of finite-dimensional vector spaces,
-\[
+$$
 \sum_{j=0}^m(-1)^j\dim E_j=0.
-\]
-Indeed, if \(I_j\) denotes the image of \(E_j\to E_{j-1}\), exactness gives short exact sequences
-\[
+$$
+Indeed, if $I_j$ denotes the image of $E_j\to E_{j-1}$, exactness gives short exact sequences
+$$
 0\to I_{j+1}\to E_j\to I_j\to0,
-\]
+$$
 so
-\[
+$$
 \dim E_j=\dim I_{j+1}+\dim I_j.
-\]
+$$
 The alternating sum telescopes, with the end images zero.
 
 :::
@@ -157,22 +157,22 @@ The alternating sum telescopes, with the end images zero.
 ::: {.pf-step #s5}
 
 Applying step [](#s4){.pf-ref} to the sequence in step [](#s3){.pf-ref} gives
-\[
+$$
 \chi(U\cap V)-\chi(U)-\chi(V)+\chi(X)=0.
-\]
+$$
 
 ::: pf-proof
 
-In each degree \(k\), the three consecutive types of terms are
-\[
+In each degree $k$, the three consecutive types of terms are
+$$
 H_k(U\cap V),
 \qquad
 H_k(U)\oplus H_k(V),
 \qquad
 H_k(X).
-\]
-Accounting for the one-step shift between degree \(k\) and degree \(k-1\), the zero alternating sum from step [](#s4){.pf-ref} is, up to an irrelevant overall sign,
-\[
+$$
+Accounting for the one-step shift between degree $k$ and degree $k-1$, the zero alternating sum from step [](#s4){.pf-ref} is, up to an irrelevant overall sign,
+$$
 \sum_{k\ge0}(-1)^k
 \left(
 \dim H_k(U\cap V)
@@ -180,13 +180,13 @@ Accounting for the one-step shift between degree \(k\) and degree \(k-1\), the z
 -\dim H_k(V)
 +\dim H_k(X)
 \right)=0.
-\]
+$$
 Using
-\[
+$$
 \dim(H_k(U)\oplus H_k(V))
 =
 \dim H_k(U)+\dim H_k(V)
-\]
+$$
 and the definition of Euler characteristic yields the displayed identity.
 
 :::
@@ -196,9 +196,9 @@ and the definition of Euler characteristic yields the displayed identity.
 ::: pf-step
 
 Therefore, whenever the ordinary Euler characteristics in the source problem are defined under the preceding finite-type condition,
-\[
+$$
 \boxed{\chi(X)=\chi(U)+\chi(V)-\chi(U\cap V)}.
-\]
+$$
 
 ::: pf-proof
 

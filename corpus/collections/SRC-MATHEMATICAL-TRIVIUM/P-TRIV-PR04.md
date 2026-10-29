@@ -37,9 +37,9 @@ Drawing the tickets sequentially without replacement produces a uniformly random
 ::: pf-proof
 
 For any prescribed ordered list of all $N$ tickets, the probability that the draws occur in that order is
-\[
+$$
 \frac1N\frac1{N-1}\cdots\frac11=\frac1{N!}.
-\]
+$$
 Thus every permutation is equally likely.
 
 :::
@@ -62,9 +62,9 @@ Fix any ticket. Among the $N!$ permutations from step [](#s1-1){.pf-ref}, exactl
 ::: {.pf-step #s1-3}
 
 Since exactly $n$ tickets are happy, the probability that student $j$ receives one is
-\[
+$$
 \boxed{\frac nN}.
-\]
+$$
 
 
 ::: pf-proof

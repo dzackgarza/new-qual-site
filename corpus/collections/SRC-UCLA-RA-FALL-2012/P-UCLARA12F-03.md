@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let $H$ be a Hilbert space and let $E\subseteq H$ be a closed convex subset.
 Prove that there exists a unique $x\in E$ such that
-\[
+$$
 \|x\|=\inf_{y\in E}\|y\|.
-\]
+$$
 :::
 
 ::: {.solution}

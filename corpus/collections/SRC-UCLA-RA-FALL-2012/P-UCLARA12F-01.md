@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Let $1<p<\infty$ and let $(f_n)$ be a sequence of functions $f_n:\RR^3\to\RR$ such that
-\[
+$$
 \limsup_{n\to\infty}\|f_n\|_{L^p}<\infty.
-\]
+$$
 Show that if $f_n$ converges almost everywhere, then $f_n$ converges weakly in $L^p$.
 :::
 

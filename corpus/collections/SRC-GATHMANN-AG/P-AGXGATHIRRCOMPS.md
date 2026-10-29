@@ -16,9 +16,9 @@ review: draft
 
 ::: {.problem}
 Find the irreducible components of
-\[
+$$
 X = V(x - yz, xz - y^2) \subset \AA^3/\CC
-.\]
+.$$
 :::
 
 ::: {.solution}

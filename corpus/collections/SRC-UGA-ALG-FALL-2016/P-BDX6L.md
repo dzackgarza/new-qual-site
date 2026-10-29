@@ -33,18 +33,18 @@ Prove that $A$ and $B$ are *simultaneously* diagonalizable.
 
 ::: pf-step
 Let
-\[
+$$
 V=\CC^n=\bigoplus_{\lambda}E_\lambda(A)
-\]
+$$
 be the eigenspace decomposition for $A$.
 Each eigenspace $E_\lambda(A)$ is invariant under $B$.
 
 ::: pf-proof
 Because $A$ is diagonalizable, the direct-sum decomposition by eigenspaces holds.
 If $v\in E_\lambda(A)$, then
-\[
+$$
 A(Bv)=B(Av)=B(\lambda v)=\lambda Bv,
-\]
+$$
 using $AB=BA$. Hence $Bv\in E_\lambda(A)$.
 :::
 
@@ -52,20 +52,20 @@ using $AB=BA$. Hence $Bv\in E_\lambda(A)$.
 
 ::: {.pf-step #b-lambda-diagonalizable}
 For every eigenvalue $\lambda$ of $A$, the restriction
-\[
+$$
 B_\lambda:=B|_{E_\lambda(A)}
-\]
+$$
 is diagonalizable.
 
 ::: pf-proof
 Since $B$ is diagonalizable over $\CC$, its minimal polynomial is a product of distinct linear factors:
-\[
+$$
 \mu_B(t)=\prod_{j=1}^r(t-\beta_j).
-\]
+$$
 Because $E_\lambda(A)$ is $B$-invariant, the restriction $B_\lambda$ is well-defined, and every polynomial annihilating $B$ also annihilates $B_\lambda$. Hence
-\[
+$$
 \mu_{B_\lambda}(t)\mid \mu_B(t).
-\]
+$$
 Therefore $\mu_{B_\lambda}$ also has no repeated root, so $B_\lambda$ is diagonalizable.
 :::
 
@@ -86,9 +86,9 @@ Taking the union of these bases over all eigenvalues $\lambda$ gives a basis of 
 
 ::: pf-proof
 The eigenspaces of $A$ form the direct sum
-\[
+$$
 \CC^n=\bigoplus_\lambda E_\lambda(A).
-\]
+$$
 Therefore the union of the bases from step [](#common-eigenvector-basis){.pf-ref} is a basis of $\CC^n$.
 Each basis vector is a common eigenvector, so the matrices of both $A$ and $B$ in this basis are diagonal.
 Hence $A$ and $B$ are simultaneously diagonalizable.

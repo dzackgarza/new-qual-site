@@ -33,11 +33,11 @@ Show that $\chi(X) = 1$ if $X$ is a tree, and that the rank (number of elements 
 
 ::: {.solution}
 Write
-\[
+$$
 V=\#\{\text{vertices of }X\},
 \qquad
 E=\#\{\text{edges of }X\}.
-\]
+$$
 
 ::: pf
 
@@ -52,9 +52,9 @@ For $V=1$ there are no edges.
 If $V>1$, a finite tree has a leaf vertex $v$ of degree one.
 Deleting $v$ and its unique incident edge leaves a tree with $V-1$ vertices.
 By induction it has $V-2$ edges, so the original tree has
-\[
+$$
 (V-2)+1=V-1
-\]
+$$
 edges.
 
 :::
@@ -64,16 +64,16 @@ edges.
 ::: pf-step
 
 Hence if $X$ is a finite tree,
-\[
+$$
 \boxed{\chi(X)=1.}
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s1){.pf-ref},
-\[
+$$
 \chi(X)=V-E=V-(V-1)=1.
-\]
+$$
 
 :::
 
@@ -96,18 +96,18 @@ Then step [](#s1){.pf-ref} gives $V-1$ edges in $T$.
 ::: {.pf-step #s4}
 
 Collapsing $T$ to a point gives a homotopy equivalence
-\[
+$$
 X\simeq \bigvee^{E-V+1}S^1.
-\]
+$$
 
 ::: pf-proof
 
 A tree is contractible, and collapsing a contractible subcomplex of a graph to a point is a homotopy equivalence.
 Every edge of $X\setminus T$ becomes a circle after the collapse.
 The number of such edges is
-\[
+$$
 E-(V-1)=E-V+1.
-\]
+$$
 
 :::
 
@@ -116,21 +116,21 @@ E-(V-1)=E-V+1.
 ::: pf-step
 
 Therefore
-\[
+$$
 \pi_1(X)\cong F_{E-V+1},
-\]
+$$
 so its rank is
-\[
+$$
 E-V+1=1-(V-E)=\boxed{1-\chi(X)}.
-\]
+$$
 
 ::: pf-proof
 
 The fundamental group of a wedge of $r$ circles is the free group of rank $r$.
 Apply step [](#s4){.pf-ref} and the definition
-\[
+$$
 \chi(X)=V-E.
-\]
+$$
 
 :::
 

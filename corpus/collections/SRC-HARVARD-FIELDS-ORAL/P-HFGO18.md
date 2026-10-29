@@ -27,9 +27,9 @@ Prove that every real polynomial of odd degree has a real root.
 
 ::: {.solution}
 Let
-\[
+$$
 f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_0
-\]
+$$
 with $a_n\ne0$ and $n$ odd.
 
 ::: pf
@@ -42,11 +42,11 @@ and negative $x$.
 ::: pf-proof
 
 Divide by the leading term:
-\[
+$$
 \frac{f(x)}{a_nx^n}
 =1+\frac{a_{n-1}}{a_nx}+\cdots+\frac{a_0}{a_nx^n}
 \longrightarrow1
-\]
+$$
 as $|x|\to\infty$. Hence for sufficiently large $R>0$, $f(R)$ has the sign of
 $a_n$, while, because $n$ is odd, $f(-R)$ has the opposite sign.
 
@@ -63,9 +63,9 @@ The polynomial $f$ has a real zero.
 Polynomials are continuous. By step [](#s1){.pf-ref}, for sufficiently large $R$ the numbers
 $f(-R)$ and $f(R)$ have opposite signs. The intermediate value theorem therefore
 gives some $c\in[-R,R]$ such that
-\[
+$$
 f(c)=0.
-\]
+$$
 
 :::
 

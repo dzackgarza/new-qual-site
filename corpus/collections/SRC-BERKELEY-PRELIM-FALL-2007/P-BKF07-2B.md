@@ -27,9 +27,9 @@ audit:
 ---
 
 ::: {.problem}
-Let \(A\) be an \(n\times n\) complex matrix.
-Suppose \(m\ge1\) and \(A^m\) is diagonalizable.
-Prove that \(A^{m+1}\) is diagonalizable.
+Let $A$ be an $n\times n$ complex matrix.
+Suppose $m\ge1$ and $A^m$ is diagonalizable.
+Prove that $A^{m+1}$ is diagonalizable.
 :::
 
 ::: {.solution}

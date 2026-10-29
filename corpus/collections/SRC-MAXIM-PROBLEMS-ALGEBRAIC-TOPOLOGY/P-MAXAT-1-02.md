@@ -28,17 +28,17 @@ Assume $n\geq1$. By the preceding Euler-characteristic criterion, the boundary o
 ::: {.pf-step #s1-1}
 
 Real projective space $\RP^{2n}$ has a CW decomposition with exactly one cell in every dimension
-\[
+$$
 0,1,\ldots,2n.
-\]
+$$
 
 
 ::: pf-proof
 
 The standard filtration
-\[
+$$
 \RP^0\subset\RP^1\subset\cdots\subset\RP^{2n}
-\]
+$$
 is obtained by attaching one $k$-cell in passing from $\RP^{k-1}$ to $\RP^k$.
 
 :::
@@ -48,10 +48,10 @@ is obtained by attaching one $k$-cell in passing from $\RP^{k-1}$ to $\RP^k$.
 ::: {.pf-step #s1-2}
 
 Therefore
-\[
+$$
 \chi(\RP^{2n})
 =\sum_{k=0}^{2n}(-1)^k=1.
-\]
+$$
 
 
 ::: pf-proof
@@ -65,18 +65,18 @@ Euler characteristic is the alternating sum of the numbers of cells in a finite 
 ::: {.pf-step #s1-3}
 
 Complex projective space $\CP^{2n}$ has one cell in each even real dimension
-\[
+$$
 0,2,4,\ldots,4n
-\]
+$$
 and no odd-dimensional cells.
 
 
 ::: pf-proof
 
 The standard filtration
-\[
+$$
 \CP^0\subset\CP^1\subset\cdots\subset\CP^{2n}
-\]
+$$
 attaches one real $2k$-cell at the $k$th stage.
 
 :::
@@ -86,9 +86,9 @@ attaches one real $2k$-cell at the $k$th stage.
 ::: {.pf-step #s1-4}
 
 Hence
-\[
+$$
 \chi(\CP^{2n})=2n+1.
-\]
+$$
 
 
 ::: pf-proof
@@ -102,13 +102,13 @@ All $2n+1$ cells from step [](#s1-3){.pf-ref} have even dimension, so each contr
 ::: {.pf-step #s1-5}
 
 Quaternionic projective space $\quatprojective^{2n}$ has one cell in each real dimension
-\[
+$$
 0,4,8,\ldots,8n,
-\]
+$$
 so
-\[
+$$
 \chi(\quatprojective^{2n})=2n+1.
-\]
+$$
 
 
 ::: pf-proof
@@ -148,11 +148,11 @@ If any one were such a boundary, its Euler characteristic would be even by the b
 ::: {.pf-step #s1-8}
 
 Therefore
-\[
+$$
 \boxed{
 \RP^{2n},\ \CP^{2n},\ \quatprojective^{2n}
 \text{ are not boundaries}.}
-\]
+$$
 
 
 ::: pf-proof

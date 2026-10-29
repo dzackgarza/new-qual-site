@@ -26,9 +26,9 @@ Prove that $x > \ln x$ for all $x > 0$.
 
 ::: pf-step
 Define $f:(0,\infty)\to\RR$ by
-\[
+$$
 f(x)=x-\ln x.
-\]
+$$
 :::
 
 ::: {.pf-step #s2}
@@ -36,9 +36,9 @@ The function $f$ has a global minimum at $x=1$.
 
 ::: pf-proof
 We have
-\[
+$$
 f'(x)=1-\frac1x=\frac{x-1}{x}.
-\]
+$$
 Thus $f'(x)<0$ for $0<x<1$, $f'(1)=0$, and $f'(x)>0$ for $x>1$. Hence $f$ decreases on $(0,1]$ and increases on $[1,\infty)$, so its global minimum occurs at $1$.
 :::
 

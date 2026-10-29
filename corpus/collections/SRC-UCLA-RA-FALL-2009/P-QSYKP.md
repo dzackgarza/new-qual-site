@@ -35,36 +35,36 @@ If $u=v-\Delta v$ where $\Delta = \partial_x^2 + \partial_y^2$ is the Laplacian,
 
 ::: {.solution}
 For $(n,m)\in\ZZ^2$, set
-\[
+$$
 \lambda_{n,m}=1+4\pi^2(n^2+m^2).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 The Fourier expansion of $u=v-\Delta v$ is
-\[
+$$
 u(x,y)
 =\sum_{n,m\in\ZZ}\lambda_{n,m}a_{n,m}e^{2\pi i(nx+my)}.
-\]
+$$
 
 ::: pf-proof
 
 For each Fourier mode,
-\[
+$$
 \begin{aligned}
 \Delta e^{2\pi i(nx+my)}
 &=\left((2\pi in)^2+(2\pi im)^2\right)e^{2\pi i(nx+my)}\\
 &=-4\pi^2(n^2+m^2)e^{2\pi i(nx+my)}.
 \end{aligned}
-\]
+$$
 Since $v$ is a trigonometric polynomial, the sum is finite and differentiation term by term is immediate.
 Therefore the coefficient of the $(n,m)$ mode in $v-\Delta v$ is
-\[
+$$
 \bigl(1+4\pi^2(n^2+m^2)\bigr)a_{n,m}
 =\lambda_{n,m}a_{n,m}.
-\]
+$$
 
 :::
 
@@ -73,18 +73,18 @@ Therefore the coefficient of the $(n,m)$ mode in $v-\Delta v$ is
 ::: {.pf-step #s2}
 
 One has
-\[
+$$
 \|u\|_{L^2([0,1]^2)}^2
 =\sum_{n,m\in\ZZ}\lambda_{n,m}^2|a_{n,m}|^2.
-\]
+$$
 
 ::: pf-proof
 
 The functions
-\[
+$$
 e^{2\pi i(nx+my)},
 \qquad (n,m)\in\ZZ^2,
-\]
+$$
 are orthonormal in $L^2([0,1]^2)$.
 Applying the Pythagorean identity to the finite expansion in step [](#s1){.pf-ref} gives the displayed equality.
 
@@ -95,36 +95,36 @@ Applying the Pythagorean identity to the finite expansion in step [](#s1){.pf-re
 ::: {.pf-step #s3}
 
 The numerical series
-\[
+$$
 S=\sum_{n,m\in\ZZ}\frac1{\lambda_{n,m}^2}
-\]
+$$
 converges.
 
 ::: pf-proof
 
 Because $4\pi^2>1$,
-\[
+$$
 \lambda_{n,m}
 \ge 1+n^2+m^2.
-\]
+$$
 Moreover,
-\[
+$$
 (1+n^2+m^2)^2
 \ge(1+n^2)(1+m^2).
-\]
+$$
 Hence
-\[
+$$
 \frac1{\lambda_{n,m}^2}
 \le
 \frac1{(1+n^2)(1+m^2)}.
-\]
+$$
 Therefore
-\[
+$$
 S
 \le
 \left(\sum_{n\in\ZZ}\frac1{1+n^2}\right)^2
 <\infty,
-\]
+$$
 since the one-dimensional series is dominated in its tails by a constant multiple of $\sum_{n\ge1}n^{-2}$.
 
 :::
@@ -134,20 +134,20 @@ since the one-dimensional series is dominated in its tails by a constant multipl
 ::: {.pf-step #s4}
 
 For every $(x,y)\in[0,1]^2$,
-\[
+$$
 |v(x,y)|
 \le \sqrt S\,\|u\|_{L^2([0,1]^2)}.
-\]
+$$
 
 ::: pf-proof
 
 Since the Fourier sum for $v$ is finite,
-\[
+$$
 |v(x,y)|
 \le\sum_{n,m}|a_{n,m}|.
-\]
+$$
 Insert the weights $\lambda_{n,m}$ and apply Cauchy--Schwarz:
-\[
+$$
 \begin{aligned}
 \sum_{n,m}|a_{n,m}|
 &=\sum_{n,m}\lambda_{n,m}|a_{n,m}|\frac1{\lambda_{n,m}}\\
@@ -155,11 +155,11 @@ Insert the weights $\lambda_{n,m}$ and apply Cauchy--Schwarz:
 \left(\sum_{n,m}\lambda_{n,m}^2|a_{n,m}|^2\right)^{1/2}
 \left(\sum_{n,m}\frac1{\lambda_{n,m}^2}\right)^{1/2}.
 \end{aligned}
-\]
+$$
 By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, this is
-\[
+$$
 \sqrt S\,\|u\|_2.
-\]
+$$
 
 :::
 
@@ -168,16 +168,16 @@ By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, this is
 ::: pf-step
 
 Consequently
-\[
+$$
 \boxed{
 \|v\|_{L^\infty([0,1]^2)}
 \le C\|u\|_{L^2([0,1]^2)}
 }
-\]
+$$
 with the constant
-\[
+$$
 C=\sqrt S
-\]
+$$
 independent of $v$.
 
 ::: pf-proof

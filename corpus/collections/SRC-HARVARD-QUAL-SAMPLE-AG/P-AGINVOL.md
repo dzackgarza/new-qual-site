@@ -37,30 +37,30 @@ Fix an origin $0\in E$, so that the elliptic curve is a complex Lie group.
 
 ::: {.pf-step #automorphism-decomposition}
 Every holomorphic automorphism $\varphi:E\to E$ has a unique form
-\[
+$$
 \varphi=t_a\circ u,
 \qquad
 a=\varphi(0),
 \qquad
 u(0)=0,
-\]
+$$
 where $t_a(x)=x+a$ is translation and $u$ is a group automorphism of $E$.
 
 ::: pf-proof
 Set
-\[
+$$
 u=t_{-a}\circ\varphi.
-\]
+$$
 Then $u(0)=0$, and clearly $\varphi=t_a\circ u$; uniqueness follows by evaluating at $0$.
 
 To see that an automorphism fixing $0$ is a group automorphism, write
-\[
+$$
 E\cong\CC/\Lambda.
-\]
+$$
 The map $u$ lifts to a holomorphic map $U:\CC\to\CC$ with $U(0)=0$.  Its derivative $U'$ is $\Lambda$-periodic and hence descends to a holomorphic function on the compact Riemann surface $E$.  Therefore $U'$ is constant, so
-\[
+$$
 U(z)=cz
-\]
+$$
 for some $c\in\CC$.  Since $u$ is an automorphism, $c\Lambda=\Lambda$.  Thus $u$ is induced by multiplication by $c$ and is a group automorphism.
 :::
 
@@ -70,43 +70,43 @@ for some $c\in\CC$.  Since $u$ is an automorphism, $c\Lambda=\Lambda$.  Thus $u$
 The nonidentity involutions of $E$ are exactly the following two types:
 
 1. translations
-\[
+$$
 t_a(x)=x+a,
 \qquad
 0\ne a\in E[2];
-\]
+$$
 
 2. involutions
-\[
+$$
 \sigma_a(x)=a-x,
 \qquad
 a\in E.
-\]
+$$
 
 ::: pf-proof
 Let $\varphi=t_a\circ u$ be an involution.  By step [](#automorphism-decomposition){.pf-ref}, after uniformizing $E=\CC/\Lambda$, the origin-fixing automorphism $u$ is multiplication by some $c$ with $c\Lambda=\Lambda$.  The linear part of $\varphi^2$ is $u^2$, so
-\[
+$$
 c^2=1.
-\]
+$$
 Hence $c=1$ or $c=-1$.
 
 If $u=1$, then
-\[
+$$
 \varphi^2=t_{2a},
-\]
+$$
 so $\varphi$ is a nontrivial involution exactly when
-\[
+$$
 0\ne a\in E[2].
-\]
+$$
 
 If $u=-1$, then
-\[
+$$
 \varphi(x)=a-x=\sigma_a(x),
-\]
+$$
 and
-\[
+$$
 \sigma_a^2(x)=a-(a-x)=x
-\]
+$$
 for every $a\in E$.
 :::
 
@@ -117,24 +117,24 @@ A nontrivial translation involution $t_a$, with $a\in E[2]\setminus\{0\}$, has n
 
 ::: pf-proof
 A fixed point would satisfy
-\[
+$$
 x+a=x,
-\]
+$$
 which forces $a=0$, contrary to the hypothesis.  Thus the quotient map
-\[
+$$
 E\longrightarrow E/\langle t_a\rangle
-\]
+$$
 is an unramified double cover.
 
 If the quotient has genus $g'$, Riemann--Hurwitz gives
-\[
+$$
 2g(E)-2
 =2(2g'-2).
-\]
+$$
 Since $g(E)=1$, this is
-\[
+$$
 0=2(2g'-2),
-\]
+$$
 so $g'=1$.  The quotient is therefore another elliptic curve; equivalently, this quotient map is a degree-two isogeny.
 :::
 
@@ -142,27 +142,27 @@ so $g'=1$.  The quotient is therefore another elliptic curve; equivalently, this
 
 ::: {.pf-step #sigma-fixed-points}
 The involution
-\[
+$$
 \sigma_a(x)=a-x
-\]
+$$
 has exactly four fixed points, namely the four solutions of
-\[
+$$
 2x=a.
-\]
+$$
 
 ::: pf-proof
 The fixed-point equation is
-\[
+$$
 a-x=x,
-\]
+$$
 equivalently $2x=a$.  Multiplication by $2$,
-\[
+$$
 [2]:E\longrightarrow E,
-\]
+$$
 is surjective over $\CC$ and has kernel
-\[
+$$
 E[2]\cong(\ZZ/2\ZZ)^2,
-\]
+$$
 which has four elements.  Thus every fibre of $[2]$ has four points, so $2x=a$ has exactly four solutions.
 :::
 
@@ -170,25 +170,25 @@ which has four elements.  Thus every fibre of $[2]$ has four points, so $2x=a$ h
 
 ::: {.pf-step #sigma-quotient-genus-zero}
 The quotient
-\[
+$$
 E/\langle\sigma_a\rangle
-\]
+$$
 has genus $0$ and hence is isomorphic to $\CP^1$.
 
 ::: pf-proof
 The quotient map has degree $2$.  By step [](#sigma-fixed-points){.pf-ref} it is simply ramified at four points, so the total ramification contribution in Riemann--Hurwitz is $4$.  If the quotient has genus $g'$, then
-\[
+$$
 2g(E)-2
 =2(2g'-2)+4.
-\]
+$$
 Since $g(E)=1$,
-\[
+$$
 0=2(2g'-2)+4=4g',
-\]
+$$
 hence $g'=0$.  Every compact Riemann surface of genus $0$ is biholomorphic to the Riemann sphere
-\[
+$$
 \widehat{\CC}=\CP^1.
-\]
+$$
 :::
 
 :::
@@ -198,40 +198,40 @@ The quotient in step [](#sigma-quotient-genus-zero){.pf-ref} can also be identif
 
 ::: pf-proof
 Choose $b\in E$ with
-\[
+$$
 2b=a.
-\]
+$$
 Then translation by $b$ conjugates $\sigma_a$ to the standard negation involution:
-\[
+$$
 t_{-b}\circ\sigma_a\circ t_b(x)
 =a-x-2b
 =-x.
-\]
+$$
 Thus it is enough to identify
-\[
+$$
 E/\{\pm1\}.
-\]
+$$
 
 Put $E$ in a Weierstrass form
-\[
+$$
 y^2=4x^3-g_2x-g_3.
-\]
+$$
 The group inverse is
-\[
+$$
 (x,y)\longmapsto(x,-y).
-\]
+$$
 The $x$-coordinate therefore defines a degree-two map
-\[
+$$
 E\longrightarrow\CP^1
-\]
+$$
 whose generic fibre is the pair
-\[
+$$
 \{(x,y),(x,-y)\}.
-\]
+$$
 Hence its fibres are precisely the orbits of the involution, so it is the quotient map
-\[
+$$
 E\longrightarrow E/\{\pm1\}\cong\CP^1.
-\]
+$$
 Its four branch points are the four fixed points $E[2]$ of negation.
 :::
 

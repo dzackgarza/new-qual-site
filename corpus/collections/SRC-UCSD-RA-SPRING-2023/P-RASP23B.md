@@ -42,22 +42,22 @@ Prove convergence when $\mu(X)<\infty$.
 ::: pf-proof
 
 Uniform convergence gives
-\[
+$$
 \|f_n-f\|_\infty\longrightarrow0.
-\]
+$$
 Since $\mu(X)<\infty$,
-\[
+$$
 \begin{aligned}
 \left|\int_X f_n\,d\mu-\int_X f\,d\mu\right|
 &\le\int_X|f_n-f|\,d\mu\\
 &\le \mu(X)\|f_n-f\|_\infty
 \longrightarrow0.
 \end{aligned}
-\]
+$$
 Thus
-\[
+$$
 \boxed{\int_Xf_n\,d\mu\longrightarrow\int_Xf\,d\mu.}
-\]
+$$
 
 :::
 
@@ -70,18 +70,18 @@ Show that finite total measure is necessary in general.
 ::: pf-proof
 
 Take $X=[0,\infty)$ with Lebesgue measure and define
-\[
+$$
 f_n(x)=\frac1n\mathbf1_{[0,n]}(x).
-\]
+$$
 Then
-\[
+$$
 \|f_n\|_\infty=\frac1n\longrightarrow0,
-\]
+$$
 so $f_n\to0$ uniformly. However,
-\[
+$$
 \int_0^\infty f_n(x)\,dx
 =\frac1n\,m([0,n])=1
-\]
+$$
 for every $n$. Therefore the integrals do not converge to the integral of the uniform limit.
 
 :::

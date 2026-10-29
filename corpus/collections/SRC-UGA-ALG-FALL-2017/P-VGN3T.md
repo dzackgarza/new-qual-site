@@ -49,9 +49,9 @@ For integers $a,b,c,d$, the product $(a+bu)(c+du)=(ac-5bd)+(ad+bc)u$ belongs to 
 ::: {.pf-step #s2}
 
 The units of $R$ are
-\[
+$$
 \boxed{R^\times=\{1,-1\}}.
-\]
+$$
 
 ::: pf-proof
 

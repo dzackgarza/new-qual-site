@@ -26,14 +26,14 @@ audit:
 
 ::: {.problem}
 Let $F$ be a finite field with $q$ elements. For $f\in F[x]$, write
-\[
+$$
 \varphi_f(a)=f(a)
 \qquad(a\in F).
-\]
+$$
 Prove that every function $\varphi:F\to F$ equals $\varphi_f$ for some $f\in F[x]$, and that $f$ is determined by $\varphi$ up to addition of a multiple of
-\[
+$$
 x^q-x.
-\]
+$$
 :::
 
 ::: {.solution}

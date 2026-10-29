@@ -32,9 +32,9 @@ Show the inclusion $S^{n-1} - S \hookrightarrow D^n - D$ induces an isomorphism 
 
 ::: {.solution}
 Let
-\[
+$$
 i:S^{n-1}-S\longrightarrow D^n-D
-\]
+$$
 be the inclusion. We prove that $i_*$ is an isomorphism in every degree by the doubling construction in the hint.
 
 ::: pf
@@ -42,13 +42,13 @@ be the inclusion. We prove that $i_*$ is an isomorphism in every degree by the d
 ::: pf-step
 
 Glue two copies $(D^n_+,D_+)$ and $(D^n_-,D_-)$ of $(D^n,D)$ to the two ends of
-\[
+$$
 (S^{n-1}\times I,S\times I).
-\]
+$$
 The resulting pair is homeomorphic to
-\[
+$$
 (S^n,S^k).
-\]
+$$
 
 ::: pf-proof
 
@@ -61,11 +61,11 @@ The two $n$-disks together with the boundary cylinder form $S^n$. The two copies
 ::: pf-step
 
 Taking complements gives a decomposition of $S^n-S^k$ into two open sets $U_+$ and $U_-$ such that
-\[
+$$
 U_\pm\simeq D^n-D,
 \qquad
 U_+\cap U_-\simeq S^{n-1}-S,
-\]
+$$
 and the two maps from the intersection to the two pieces induce the same map on homology, namely $i_*$ after these identifications.
 
 ::: pf-proof
@@ -79,20 +79,20 @@ Thicken each disk half slightly into the connecting cylinder. Each thickened hal
 ::: pf-step
 
 The Mayer--Vietoris sequence for this decomposition has the segment
-\[
+$$
 \cdots\to H_j(S^{n-1}-S)
 \xrightarrow{(i_*,-i_*)}
 H_j(D^n-D)\oplus H_j(D^n-D)
 \to H_j(S^n-S^k)\to\cdots .
-\]
+$$
 Moreover, Alexander duality gives
-\[
+$$
 \widetilde H_j(S^n-S^k)\cong
 \begin{cases}
 \ZZ,&j=n-k-1,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
@@ -105,17 +105,17 @@ The Mayer--Vietoris map has the usual sign convention. The displayed complement 
 ::: pf-step
 
 Exactness forces
-\[
+$$
 \boxed{i_*:H_j(S^{n-1}-S)\xrightarrow{\cong}H_j(D^n-D)}
-\]
+$$
 for every $j$.
 
 ::: pf-proof
 
 Apply the Mayer--Vietoris sequence simultaneously in degrees $j$ and $j+1$. The doubled sphere complement has reduced homology in only the single degree $n-k-1$. In all other degrees exactness immediately makes the diagonal map $(i_*,-i_*)$ identify the first group with the kernel of the difference map and hence makes $i_*$ an isomorphism. In the exceptional degree and the adjacent degree, the same conclusion follows from exactness together with the fact that the connecting morphism supplies the unique $\ZZ$ class of the sphere complement. Equivalently, this is the standard Mayer--Vietoris proof of the relative Alexander duality statement for a properly embedded disk pair; its relative group
-\[
+$$
 H_j(D^n-D,S^{n-1}-S)
-\]
+$$
 vanishes in every degree. Vanishing of these relative groups is exactly the assertion that $i_*$ is an isomorphism for all $j$.
 
 :::

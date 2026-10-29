@@ -37,9 +37,9 @@ Let $\zeta_5$ be a primitive fifth root of unity and set $K=\QQ(\zeta_5)$.
 ::: pf-proof
 
 The field $K$ is the splitting field over $\QQ$ of the fifth cyclotomic polynomial
-\[
+$$
 \Phi_5(x)=x^4+x^3+x^2+x+1,
-\]
+$$
 so $K/\QQ$ is Galois.
 
 :::
@@ -49,17 +49,17 @@ so $K/\QQ$ is Galois.
 ::: {.pf-step #s2}
 
 Every automorphism of $K/\QQ$ is determined by
-\[
+$$
 \zeta_5\longmapsto\zeta_5^a,\qquad a\in(\ZZ/5\ZZ)^\times,
-\]
+$$
 and every such choice occurs.
 
 ::: pf-proof
 
 The conjugates of $\zeta_5$ are exactly the primitive fifth roots $\zeta_5^a$ with $a$ invertible modulo $5$. The usual cyclotomic Galois action therefore gives an isomorphism
-\[
+$$
 \operatorname{Gal}(K/\QQ)\cong(\ZZ/5\ZZ)^\times.
-\]
+$$
 
 :::
 

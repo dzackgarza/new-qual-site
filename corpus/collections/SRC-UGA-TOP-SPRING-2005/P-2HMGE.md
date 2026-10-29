@@ -39,24 +39,24 @@ Show that a connected, normal topological space with more than a single point is
 
 Choose distinct points $x_0,x_1\in X$.
 There is a continuous map
-\[
+$$
 f:X\longrightarrow[0,1]
-\]
+$$
 such that $f(x_0)=0$ and $f(x_1)=1$.
 
 ::: pf-proof
 
 Under the standard convention used here, a normal space is $T_1$, so the singletons
-\[
+$$
 \{x_0\},\qquad \{x_1\}
-\]
+$$
 are disjoint closed subsets of $X$.
 Urysohn's lemma therefore gives a continuous map $f:X\to[0,1]$ with
-\[
+$$
 f(x_0)=0,
 \qquad
 f(x_1)=1.
-\]
+$$
 
 :::
 
@@ -65,9 +65,9 @@ f(x_1)=1.
 ::: {.pf-step #s2}
 
 One has
-\[
+$$
 f(X)=[0,1].
-\]
+$$
 
 ::: pf-proof
 
@@ -75,11 +75,11 @@ The continuous image of a connected space is connected, so $f(X)$ is a connected
 
 Let $t\in(0,1)$.
 If $t\notin f(X)$, then
-\[
+$$
 f(X)\cap(-\infty,t)
 \qquad\text{and}\qquad
 f(X)\cap(t,\infty)
-\]
+$$
 are disjoint nonempty relatively open subsets whose union is $f(X)$: the first contains $0$, and the second contains $1$.
 This contradicts connectedness of $f(X)$.
 Hence every $t\in(0,1)$ belongs to $f(X)$, and the endpoints already belong to $f(X)$ by step [](#s1){.pf-ref}. Thus $f(X)=[0,1]$.
@@ -96,9 +96,9 @@ The space $X$ is uncountable.
 
 If $X$ were countable, then its image $f(X)$ under any function would be countable.
 But step [](#s2){.pf-ref} gives
-\[
+$$
 f(X)=[0,1],
-\]
+$$
 and the interval $[0,1]$ is uncountable by Cantor's diagonal argument.
 This contradiction proves that $X$ is uncountable.
 

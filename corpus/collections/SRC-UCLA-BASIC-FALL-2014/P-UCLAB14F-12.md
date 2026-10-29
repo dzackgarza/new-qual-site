@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Problem 12. Let $A=(a_{ij})_{1\leq i,j\leq n}$, where
-\[
+$$
 a_{ij}=\frac1{i+j-1}.
-\]
+$$
 Prove that $A$ is positive definite.
 :::
 
@@ -31,21 +31,21 @@ Prove that $A$ is positive definite.
 ::: {.pf-step #s1-1}
 
 For every $1\le i,j\le n$,
-\[
+$$
 a_{ij}
 =
 \int_0^1 x^{i+j-2}\,dx.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 i+j-2\ge0,
-\]
+$$
 one has
-\[
+$$
 \int_0^1x^{i+j-2}\,dx
 =
 \left[
@@ -53,7 +53,7 @@ one has
 \right]_0^1
 =
 \frac1{i+j-1}.
-\]
+$$
 
 :::
 
@@ -62,7 +62,7 @@ one has
 ::: {.pf-step #s1-2}
 
 Let
-\[
+$$
 c=
 \begin{pmatrix}
 c_1\\
@@ -70,9 +70,9 @@ c_1\\
 c_n
 \end{pmatrix}
 \in\RR^n.
-\]
+$$
 Then
-\[
+$$
 c^tAc
 =
 \int_0^1
@@ -80,13 +80,13 @@ c^tAc
 \sum_{i=1}^n c_i x^{i-1}
 \right)^2
 \,dx.
-\]
+$$
 
 
 ::: pf-proof
 
 Using step [](#s1-1){.pf-ref},
-\[
+$$
 \begin{aligned}
 c^tAc
 &=
@@ -107,7 +107,7 @@ c_ic_jx^{i-1}x^{j-1}
 \right)^2
 \,dx.
 \end{aligned}
-\]
+$$
 The interchange of finite sums and the integral is immediate.
 
 :::
@@ -117,18 +117,18 @@ The interchange of finite sums and the integral is immediate.
 ::: {.pf-step #s1-3}
 
 If $c\ne0$, then the polynomial
-\[
+$$
 p_c(x)=\sum_{i=1}^n c_i x^{i-1}
-\]
+$$
 is not identically zero.
 
 
 ::: pf-proof
 
 If $p_c$ were the zero polynomial, all of its coefficients
-\[
+$$
 c_1,\ldots,c_n
-\]
+$$
 would vanish.
 That would imply $c=0$, contrary to hypothesis.
 
@@ -139,9 +139,9 @@ That would imply $c=0$, contrary to hypothesis.
 ::: {.pf-step #s1-4}
 
 If $c\ne0$, then
-\[
+$$
 \int_0^1 p_c(x)^2\,dx>0.
-\]
+$$
 
 
 ::: pf-proof
@@ -149,22 +149,22 @@ If $c\ne0$, then
 By step [](#s1-3){.pf-ref}, the polynomial $p_c$ is nonzero.
 A nonzero polynomial has only finitely many roots.
 Hence there is some
-\[
+$$
 x_0\in[0,1]
-\]
+$$
 with
-\[
+$$
 p_c(x_0)\ne0.
-\]
+$$
 By continuity, there is a nontrivial interval around $x_0$ on which
-\[
+$$
 |p_c(x)|\ge\eta>0
-\]
+$$
 for some $\eta$.
 Therefore
-\[
+$$
 \int_0^1p_c(x)^2\,dx>0.
-\]
+$$
 
 :::
 
@@ -173,9 +173,9 @@ Therefore
 ::: {.pf-step #s1-5}
 
 For every nonzero $c\in\RR^n$,
-\[
+$$
 \boxed{c^tAc>0}.
-\]
+$$
 
 
 ::: pf-proof
@@ -189,17 +189,17 @@ Combine steps [](#s1-2){.pf-ref} and [](#s1-4){.pf-ref}.
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{A\text{ is positive definite}}.
-\]
+$$
 
 
 ::: pf-proof
 
 The defining condition for positive definiteness of a real symmetric matrix is that
-\[
+$$
 c^tAc>0
-\]
+$$
 for every nonzero vector $c$.
 Step [](#s1-5){.pf-ref} verifies this condition.
 

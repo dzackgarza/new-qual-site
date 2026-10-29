@@ -27,13 +27,13 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 A=\begin{pmatrix}3&-2\\1&0\end{pmatrix}.
-\]
+$$
 Compute
-\[
+$$
 e^A:=\sum_{n=0}^{\infty}\frac{A^n}{n!}.
-\]
+$$
 :::
 
 ::: {.solution}

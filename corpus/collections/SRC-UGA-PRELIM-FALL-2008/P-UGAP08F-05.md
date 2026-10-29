@@ -16,17 +16,17 @@ audit:
 
 ::: {.problem}
 Suppose $U$ and $V$ are subspaces of a vector space $X$ with
-\[
+$$
 U\cap V=\{0\}.
-\]
+$$
 Define
-\[
+$$
 U+V=\{x\in X:x=u+v\text{ for some }u\in U,\ v\in V\}.
-\]
+$$
 If $\{u_1,\ldots,u_m\}$ is a basis for $U$ and $\{v_1,\ldots,v_n\}$ is a basis for $V$, prove that
-\[
+$$
 \{u_1,\ldots,u_m,v_1,\ldots,v_n\}
-\]
+$$
 is a basis for $U+V$.
 :::
 

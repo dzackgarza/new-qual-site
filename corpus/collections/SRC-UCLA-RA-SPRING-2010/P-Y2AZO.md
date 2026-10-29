@@ -38,13 +38,13 @@ If you use a covering lemma, you should prove it.
 
 ::: {.solution}
 Write
-\[
+$$
 Mf(x)=\sup_{r>0}\frac1{2r}\int_{x-r}^{x+r}|f(t)|\,dt
-\]
+$$
 and, for $\lambda>0$, set
-\[
+$$
 E_\lambda=\{x\in\RR:Mf(x)>\lambda\}.
-\]
+$$
 
 ::: pf
 
@@ -56,25 +56,25 @@ The set $E_\lambda$ is open.
 
 Fix $x\in E_\lambda$.
 Choose $r>0$ such that
-\[
+$$
 \frac1{2r}\int_{x-r}^{x+r}|f(t)|\,dt>\lambda.
-\]
+$$
 Define
-\[
+$$
 F(s)=\int_{-\infty}^{s}|f(t)|\,dt.
-\]
+$$
 Because $f\in L^1(\RR)$, the function $F$ is continuous.
 Hence
-\[
+$$
 y\longmapsto \int_{y-r}^{y+r}|f(t)|\,dt
 =F(y+r)-F(y-r)
-\]
+$$
 is continuous.
 It is strictly larger than $2r\lambda$ at $y=x$, so it remains larger than $2r\lambda$ for all $y$ in some neighborhood of $x$.
 For such $y$,
-\[
+$$
 Mf(y)\ge\frac1{2r}\int_{y-r}^{y+r}|f(t)|\,dt>\lambda.
-\]
+$$
 Thus a neighborhood of $x$ lies in $E_\lambda$.
 
 :::
@@ -84,11 +84,11 @@ Thus a neighborhood of $x$ lies in $E_\lambda$.
 ::: {.pf-step #s2}
 
 Finite interval covering lemma: if $\mathcal F$ is a finite family of bounded intervals, then there are pairwise disjoint intervals $I_1,\ldots,I_N\in\mathcal F$ such that
-\[
+$$
 \bigcup_{I\in\mathcal F}I
 \subseteq
 \bigcup_{j=1}^N 3I_j,
-\]
+$$
 where $3I_j$ denotes the interval with the same center as $I_j$ and three times its length.
 
 ::: pf-proof
@@ -102,22 +102,22 @@ By construction the selected intervals $I_1,\ldots,I_N$ are pairwise disjoint.
 
 Let $J\in\mathcal F$.
 At the stage when $J$ was deleted, it either was itself selected or it met a selected interval $I_j$ with
-\[
+$$
 |J|\le |I_j|,
-\]
+$$
 because $I_j$ had maximal length among the intervals then remaining.
 Let $c_J,c_j$ be the centers of $J,I_j$ and put $L=|I_j|$.
 Since $J$ meets $I_j$,
-\[
+$$
 |c_J-c_j|\le\frac{|J|+L}{2}\le L.
-\]
+$$
 For every $y\in J$,
-\[
+$$
 |y-c_j|
 \le |y-c_J|+|c_J-c_j|
 \le\frac{|J|}{2}+L
 \le\frac{3L}{2}.
-\]
+$$
 Thus $J\subseteq3I_j$.
 This holds for every $J\in\mathcal F$, proving the lemma.
 
@@ -128,36 +128,36 @@ This holds for every $J\in\mathcal F$, proving the lemma.
 ::: {.pf-step #s3}
 
 Every compact set $K\subseteq E_\lambda$ satisfies
-\[
+$$
 m(K)\le\frac{3}{\lambda}\|f\|_{L^1}.
-\]
+$$
 
 ::: pf-proof
 
 For every $x\in K$, choose $r_x>0$ such that the centered interval
-\[
+$$
 I_x=(x-r_x,x+r_x)
-\]
+$$
 satisfies
-\[
+$$
 \frac1{|I_x|}\int_{I_x}|f(t)|\,dt>\lambda.
-\]
+$$
 The intervals $I_x$ form an open cover of the compact set $K$, so finitely many of them, say
-\[
+$$
 J_1,\ldots,J_M,
-\]
+$$
 still cover $K$.
 Apply step [](#s2){.pf-ref} to this finite family.
 We obtain pairwise disjoint intervals
-\[
+$$
 I_1,\ldots,I_N
-\]
+$$
 among the $J_i$ such that
-\[
+$$
 K\subseteq\bigcup_{j=1}^N3I_j.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 m(K)
 &\le \sum_{j=1}^N|3I_j|\\
@@ -165,7 +165,7 @@ m(K)
 &<\frac3\lambda\sum_{j=1}^N\int_{I_j}|f(t)|\,dt\\
 &\le\frac3\lambda\|f\|_{L^1}.
 \end{aligned}
-\]
+$$
 The last inequality uses the pairwise disjointness of the selected intervals.
 
 :::
@@ -175,33 +175,33 @@ The last inequality uses the pairwise disjointness of the selected intervals.
 ::: pf-step
 
 One has
-\[
+$$
 m(E_\lambda)\le\frac{3}{\lambda}\|f\|_{L^1}.
-\]
+$$
 
 ::: pf-proof
 
 Since $E_\lambda$ is open by step [](#s1){.pf-ref}, define
-\[
+$$
 K_n=\left\{x\in E_\lambda:
 |x|\le n,
 \ \operatorname{dist}(x,E_\lambda^c)\ge\frac1n
 \right\}.
-\]
+$$
 Each $K_n$ is closed and bounded, hence compact.
 The sets are increasing and
-\[
+$$
 \bigcup_{n=1}^{\infty}K_n=E_\lambda:
-\]
+$$
 indeed, every point of the open set $E_\lambda$ has positive distance from its complement and finite absolute value.
 By continuity of Lebesgue measure from below and step [](#s3){.pf-ref},
-\[
+$$
 \begin{aligned}
 m(E_\lambda)
 &=\lim_{n\to\infty}m(K_n)\\
 &\le\frac3\lambda\|f\|_{L^1}.
 \end{aligned}
-\]
+$$
 Thus the desired weak-type $(1,1)$ estimate holds with $A=3$.
 
 :::

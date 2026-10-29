@@ -17,75 +17,75 @@ audit:
 
 ::: {.problem}
 How many roots of
-\[
+$$
 z^4-6z+3=0
-\]
+$$
 have absolute value strictly between $1$ and $2$?
 :::
 
 ::: {.solution}
 
 Let
-\[
+$$
 P(z)=z^4-6z+3.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 The polynomial $P$ has exactly one zero in the disk
-\[
+$$
 |z|<1.
-\]
+$$
 
 
 ::: pf-proof
 
 On the circle
-\[
+$$
 |z|=1,
-\]
+$$
 write
-\[
+$$
 P(z)
 =
 -6z+(z^4+3).
-\]
+$$
 Then
-\[
+$$
 |-6z|
 =
 6,
-\]
+$$
 while
-\[
+$$
 |z^4+3|
 \le
 |z|^4+3
 =
 4.
-\]
+$$
 Thus
-\[
+$$
 |z^4+3|
 <
 |-6z|
-\]
+$$
 on the entire unit circle.
 
 By Rouché's theorem, $P$ and
-\[
+$$
 -6z
-\]
+$$
 have the same number of zeros in
-\[
+$$
 |z|<1,
-\]
+$$
 counted with multiplicity. The latter has exactly one zero there, namely
-\[
+$$
 z=0.
-\]
+$$
 Hence $P$ has exactly one zero in the unit disk.
 
 :::
@@ -95,53 +95,53 @@ Hence $P$ has exactly one zero in the unit disk.
 ::: {.pf-step #s1-2}
 
 The polynomial $P$ has exactly four zeros in the disk
-\[
+$$
 |z|<2.
-\]
+$$
 
 
 ::: pf-proof
 
 On the circle
-\[
+$$
 |z|=2,
-\]
+$$
 write
-\[
+$$
 P(z)
 =
 z^4+(-6z+3).
-\]
+$$
 Then
-\[
+$$
 |z^4|
 =
 16,
-\]
+$$
 while
-\[
+$$
 |-6z+3|
 \le
 6|z|+3
 =
 15.
-\]
+$$
 Thus
-\[
+$$
 |-6z+3|
 <
 |z^4|
-\]
+$$
 on the entire circle.
 
 By Rouché's theorem, $P$ and
-\[
+$$
 z^4
-\]
+$$
 have the same number of zeros in
-\[
+$$
 |z|<2,
-\]
+$$
 counted with multiplicity. The polynomial $z^4$ has four zeros there,
 counted with multiplicity. Therefore $P$ has four zeros in the disk.
 
@@ -152,11 +152,11 @@ counted with multiplicity. Therefore $P$ has four zeros in the disk.
 ::: {.pf-step #s1-3}
 
 The polynomial has no zero on either boundary circle
-\[
+$$
 |z|=1
 \qquad\text{or}\qquad
 |z|=2.
-\]
+$$
 
 
 ::: pf-proof
@@ -172,30 +172,30 @@ remaining terms. Hence their sum cannot vanish there.
 ::: {.pf-step #s1-4}
 
 Exactly
-\[
+$$
 \boxed{3}
-\]
+$$
 roots of $P$ have modulus strictly between $1$ and $2$.
 
 
 ::: pf-proof
 
 Step [](#s1-2){.pf-ref} gives four zeros in
-\[
+$$
 |z|<2,
-\]
+$$
 and step [](#s1-1){.pf-ref} gives one zero in
-\[
+$$
 |z|<1.
-\]
+$$
 By step [](#s1-3){.pf-ref}, no zero lies on either boundary circle. Therefore the annulus
-\[
+$$
 1<|z|<2
-\]
+$$
 contains
-\[
+$$
 4-1=3
-\]
+$$
 zeros, counted with multiplicity.
 
 :::

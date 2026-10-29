@@ -36,35 +36,35 @@ Find a row-reduced echelon matrix R which is row-equivalent to A and an invertib
 
 ::: {.solution}
 A row-reduced echelon form of $A$ is
-\[
+$$
 R=
 \begin{bmatrix}
 1&0&0&-\frac78\\
 0&1&0&-\frac14\\
 0&0&1&\frac{11}{8}
 \end{bmatrix}.
-\]
+$$
 Take
-\[
+$$
 P=
 \begin{bmatrix}
 \frac38&-\frac14&\frac38\\
 \frac14&0&-\frac14\\
 \frac18&\frac14&\frac18
 \end{bmatrix}.
-\]
+$$
 Direct multiplication gives
-\[
+$$
 PA=
 \begin{bmatrix}
 1&0&0&-\frac78\\
 0&1&0&-\frac14\\
 0&0&1&\frac{11}{8}
 \end{bmatrix}=R.
-\]
+$$
 Moreover
-\[
+$$
 \det P=\frac1{16}\ne0,
-\]
+$$
 so $P$ is invertible. Hence $R=PA$ with the required properties.
 :::

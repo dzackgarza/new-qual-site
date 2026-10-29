@@ -52,35 +52,35 @@ There is a connected open neighborhood $U_x$ of $x$.
 ::: pf-proof
 By local connectedness, the point $x$ has a neighborhood base of connected open sets.
 In particular, taking the neighborhood $X$ itself gives a connected open neighborhood
-\[
+$$
 x\in U_x\subseteq X.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #nbhd-in-component}
 The neighborhood $U_x$ from step [](#connected-nbhd-exists){.pf-ref} satisfies
-\[
+$$
 U_x\subseteq C.
-\]
+$$
 
 ::: pf-proof
 Both $C$ and $U_x$ are connected, and they meet at $x$.
 The union of two connected subsets with nonempty intersection is connected, so
-\[
+$$
 C\cup U_x
-\]
+$$
 is connected.
 Since $C$ is a connected component, it is maximal among connected subsets of $X$.
 Because
-\[
+$$
 C\subseteq C\cup U_x,
-\]
+$$
 maximality forces
-\[
+$$
 C\cup U_x=C.
-\]
+$$
 Hence $U_x\subseteq C$.
 :::
 
@@ -91,13 +91,13 @@ The component $C$ is open in $X$.
 
 ::: pf-proof
 By steps [](#connected-nbhd-exists){.pf-ref} and [](#nbhd-in-component){.pf-ref}, for every $x\in C$ there is an open set $U_x$ satisfying
-\[
+$$
 x\in U_x\subseteq C.
-\]
+$$
 Therefore
-\[
+$$
 C = \bigcup_{x \in C} U_x.
-\]
+$$
 An arbitrary union of open sets is open, so $C$ is open.
 :::
 

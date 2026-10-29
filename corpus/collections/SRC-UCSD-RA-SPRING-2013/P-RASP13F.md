@@ -52,28 +52,28 @@ Fourier transform the equation.
 ::: pf-proof
 
 Use the convention
-\[
+$$
 \widehat v(z)=\int_{\RR^n}e^{-2\pi i x\cdot z}v(x)\,dx.
-\]
+$$
 Under the stated $L^1$ hypotheses on $u$ and its first and second derivatives,
-\[
+$$
 \widehat{\partial_j u}(z)=2\pi i z_j\widehat u(z),
 \qquad
 \widehat{\partial_j^2u}(z)=-4\pi^2z_j^2\widehat u(z).
-\]
+$$
 Therefore
-\[
+$$
 \widehat{-\Delta u+u}(z)
 =\bigl(1+4\pi^2|z|^2\bigr)\widehat u(z).
-\]
+$$
 Since $-\Delta u+u=f$,
-\[
+$$
 \bigl(1+4\pi^2|z|^2\bigr)\widehat u(z)=\widehat f(z),
-\]
+$$
 and hence
-\[
+$$
 \boxed{\widehat u(z)=\frac{\widehat f(z)}{1+4\pi^2|z|^2}.}
-\]
+$$
 
 :::
 
@@ -86,23 +86,23 @@ Express the multiplier by Gaussian multipliers.
 ::: pf-proof
 
 For every $z$,
-\[
+$$
 \frac1{1+4\pi^2|z|^2}
 =\int_0^\infty e^{-t}e^{-4\pi^2t|z|^2}\,dt.
-\]
+$$
 Set
-\[
+$$
 H_t(x)=\frac1{(4\pi t)^{n/2}}e^{-|x|^2/(4t)}.
-\]
+$$
 Then $\|H_t\|_1=1$ and, for the same Fourier convention,
-\[
+$$
 \widehat{H_t}(z)=e^{-4\pi^2t|z|^2}.
-\]
+$$
 Thus
-\[
+$$
 e^{-4\pi^2t|z|^2}\widehat f(z)
 =\widehat{H_t*f}(z).
-\]
+$$
 
 :::
 
@@ -115,30 +115,30 @@ Integrate the heat kernels and invert the transform.
 ::: pf-proof
 
 Define
-\[
+$$
 v(x)=\int_0^\infty e^{-t}(H_t*f)(x)\,dt.
-\]
+$$
 Young's inequality gives
-\[
+$$
 \int_0^\infty e^{-t}\|H_t*f\|_1\,dt
 \le \|f\|_1\int_0^\infty e^{-t}\,dt
 =\|f\|_1.
-\]
+$$
 Hence $v\in L^1$, and Fubini permits taking its Fourier transform under the $t$-integral:
-\[
+$$
 \begin{aligned}
 \widehat v(z)
 &=\int_0^\infty e^{-t}\widehat{H_t*f}(z)\,dt\\
 &=\widehat f(z)\int_0^\infty e^{-t}e^{-4\pi^2t|z|^2}\,dt\\
 &=\frac{\widehat f(z)}{1+4\pi^2|z|^2}.
 \end{aligned}
-\]
+$$
 By Step 1, $\widehat v=\widehat u$. Fourier-transform uniqueness on $L^1$ gives $u=v$ almost everywhere. Expanding the convolution yields
-\[
+$$
 \boxed{
 u(x)=\int_0^\infty\frac{e^{-t}}{(4\pi t)^{n/2}}
 \int_{\RR^n}e^{-|x-y|^2/(4t)}f(y)\,dy\,dt.}
-\]
+$$
 The right-hand side is the natural continuous representative of the solution.
 
 :::

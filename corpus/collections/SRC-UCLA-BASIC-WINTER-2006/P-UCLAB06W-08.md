@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Let $T:V\to W$ be a linear transformation of finite-dimensional real inner product spaces.
 Show that there exists a unique linear transformation $T^t:W\to V$ such that
-\[
+$$
 \langle T(v),w\rangle_W=\langle v,T^t(w)\rangle_V
-\]
+$$
 for all $v\in V$ and $w\in W$, where $\langle\ ,\ \rangle_X$ denotes the inner product on $X=V$ or $W$.
 :::
 

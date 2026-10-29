@@ -31,8 +31,8 @@ Show that $A$ is open in $X$.
 
 ::: {.solution}
 For each $x\in A$, choose the open set $U_x$ supplied by the hypothesis. Then
-\[
+$$
 A=\bigcup_{x\in A}U_x.
-\]
+$$
 Indeed, every $x\in A$ belongs to $U_x$, while every $U_x$ is contained in $A$. Since arbitrary unions of open sets are open, $A$ is open.
 :::

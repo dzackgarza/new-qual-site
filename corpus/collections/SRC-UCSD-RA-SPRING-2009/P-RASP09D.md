@@ -43,23 +43,23 @@ Use oddness of the kernel to expose cancellation.
 ::: pf-proof
 
 Set
-\[
+$$
 K(x):=\frac{x_1+x_2}{|x|^3},
 \qquad x\ne0.
-\]
+$$
 Then
-\[
+$$
 K(-x)=-K(x).
-\]
+$$
 For $\varepsilon>0$, the domain $\{|x|>\varepsilon\}$ is symmetric under $x\mapsto -x$. Therefore, after the change of variables $x\mapsto -x$,
-\[
+$$
 \begin{aligned}
 I_\varepsilon(\varphi)
 &:=\int_{|x|>\varepsilon}\varphi(x)K(x)\,dx\\
 &=\frac12\int_{|x|>\varepsilon}
 \bigl(\varphi(x)-\varphi(-x)\bigr)K(x)\,dx.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -72,30 +72,30 @@ Show that the symmetrized integrand is absolutely integrable near the origin.
 ::: pf-proof
 
 Fix $R>0$ so that $\operatorname{supp}\varphi\subset B(0,R)$. For $|x|\le R$,
-\[
+$$
 |\varphi(x)-\varphi(-x)|
 \le 2|x|\sup_{|y|\le R}|\nabla\varphi(y)|.
-\]
+$$
 Also
-\[
+$$
 |K(x)|
 \le \frac{|x_1|+|x_2|}{|x|^3}
 \le \frac{\sqrt2}{|x|^2}.
-\]
+$$
 Hence
-\[
+$$
 \left|
 \bigl(\varphi(x)-\varphi(-x)\bigr)K(x)
 \right|
 \le
 \frac{2\sqrt2}{|x|}
 \sup_{|y|\le R}|\nabla\varphi(y)|.
-\]
+$$
 The function $|x|^{-1}$ is locally integrable on $\RR^2$, because in polar coordinates
-\[
+$$
 \int_{|x|<R}\frac{dx}{|x|}
 =2\pi R<\infty.
-\]
+$$
 Thus the symmetrized integrand is absolutely integrable near $0$; away from $0$ it is integrable because $\varphi$ has compact support.
 
 :::
@@ -109,11 +109,11 @@ Pass to the principal-value limit.
 ::: pf-proof
 
 By Step 2 and dominated convergence,
-\[
+$$
 \lim_{\varepsilon\downarrow0}I_\varepsilon(\varphi)
 =\frac12\int_{\RR^2}
 \bigl(\varphi(x)-\varphi(-x)\bigr)K(x)\,dx.
-\]
+$$
 Therefore the principal value exists for every test function $\varphi$.
 
 :::
@@ -127,11 +127,11 @@ Verify continuity on the test-function space.
 ::: pf-proof
 
 Let $L\subset\RR^2$ be compact, and suppose $\operatorname{supp}\varphi\subset L$. Choose $R$ with
-\[
+$$
 L\cup(-L)\subset B(0,R).
-\]
+$$
 Using the estimate from Step 2,
-\[
+$$
 \begin{aligned}
 |\langle \operatorname{PV}(K),\varphi\rangle|
 &\le \frac12\int_{B(0,R)}
@@ -139,13 +139,13 @@ Using the estimate from Step 2,
 \sup_{B(0,R)}|\nabla\varphi|\,dx\\
 &\le C_R\sup_{B(0,R)}|\nabla\varphi|.
 \end{aligned}
-\]
+$$
 Thus the functional is continuous on every fixed compact-support test-function space. It is linear by construction, so
-\[
+$$
 \boxed{
 \operatorname{PV}\!\left(\frac{x_1+x_2}{|x|^3}\right)
 \in\mathcal D'(\RR^2).}
-\]
+$$
 
 :::
 

@@ -28,8 +28,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(U\subseteq\CC\) be the open right half-plane with the interval \((0,1]\subseteq\RR\) deleted.
-Find an explicit conformal equivalence from \(U\) onto the open unit disk.
+Let $U\subseteq\CC$ be the open right half-plane with the interval $(0,1]\subseteq\RR$ deleted.
+Find an explicit conformal equivalence from $U$ onto the open unit disk.
 :::
 
 ::: {.solution}

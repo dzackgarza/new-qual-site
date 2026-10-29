@@ -23,25 +23,25 @@ audit:
 Let $R$ and $S$ be commutative rings, and $f:R\rightarrow S$ a ring homomorphism.
 
 - Show that if $I$ is a prime ideal of $S$, then
-  \[
+  $$
   f^{-1}(I)=\{r\in R:f(r)\in I\}
-  \]
+  $$
   is a prime ideal of $R$.
 
 - Let $N$ be the set of nilpotent elements of $R$:
-  \[
+  $$
   N=\{r\in R:r^m=0\text{ for some }m\geq 1\}.
-  \]
+  $$
   $N$ is called the *nilradical* of $R$.
   Prove that it is an ideal which is contained in every prime ideal.
 
 - Part (a) lets us define a function
-  \[
+  $$
   \begin{aligned}
   f^*:\{\text{prime ideals of }S\} &\rightarrow \{\text{prime ideals of }R\},\\
   I &\mapsto f^{-1}(I).
   \end{aligned}
-  \]
+  $$
   Let $N$ be the nilradical of $R$.
   Show that if $S=R/N$ and $f:R\rightarrow R/N$ is the quotient map, then $f^*$ is a bijection
 :::
@@ -72,9 +72,9 @@ composition of ring homomorphisms.
 ::: pf-step
 
 The kernel of $\pi \circ f$ is:
-\[
+$$
 \ker(\pi \circ f) = \{r \in R \mid f(r) \in I\} = f^{-1}(I).
-\]
+$$
 By the First Isomorphism Theorem for rings, $R / f^{-1}(I) \cong \operatorname{Im}(\pi \circ f) \subseteq S/I$.
 
 ::: pf-proof
@@ -126,9 +126,9 @@ commutativity of $R$.
 
 If $x, y \in N$ with $x^m = 0$ and $y^n = 0$, consider $(x + y)^{m + n - 1}$.
 By the binomial theorem in a commutative ring:
-\[
+$$
 (x + y)^{m + n - 1} = \sum_{k=0}^{m + n - 1} \binom{m + n - 1}{k} x^k y^{m + n - 1 - k}.
-\]
+$$
 For each term, either $k \ge m$ (so $x^k = 0$) or $(m + n - 1 - k) \ge n$ (so $y^{m+n-1-k} = 0$).
 Thus $(x + y)^{m + n - 1} = 0$, so $x + y \in N$.
 Therefore $N$ is an ideal of $R$.
@@ -169,9 +169,9 @@ Part (c): Proof that $f^*: \operatorname{Spec}(R/N) \to \operatorname{Spec}(R)$ 
 ::: pf-step
 
 By the Correspondence Theorem for rings, the quotient map $f: R \to R/N$ induces an inclusion-preserving bijection between ideals of $R/N$ and ideals of $R$ containing $\ker(f) = N$:
-\[
+$$
 J \mapsto f^{-1}(J), \qquad \mathfrak{a} \mapsto f(\mathfrak{a}) = \mathfrak{a}/N.
-\]
+$$
 
 ::: pf-proof
 
@@ -197,9 +197,9 @@ Part (a).
 
 By Part (b), every prime ideal $\mathfrak{p} \in \operatorname{Spec}(R)$ contains $N = \ker(f)$.
 For any such prime $\mathfrak{p}$, the quotient isomorphism:
-\[
+$$
 (R/N) / (\mathfrak{p}/N) \cong R/\mathfrak{p}
-\]
+$$
 shows that $\mathfrak{p}/N$ is a prime ideal of $R/N$ because $R/\mathfrak{p}$ is an integral domain.
 
 ::: pf-proof

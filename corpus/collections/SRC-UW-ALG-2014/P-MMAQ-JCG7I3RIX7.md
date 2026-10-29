@@ -53,9 +53,9 @@ definition of index.
 
 The group $G$ acts on $X$ by left multiplication: $g \cdot (x H) = (gx) H$.
 This action induces a group homomorphism:
-\[
+$$
 \rho: G \to S(X) \cong S_n.
-\]
+$$
 
 ::: pf-proof
 
@@ -95,9 +95,9 @@ Lagrange's Theorem for subgroups of $S_n$.
 
 Furthermore, $N = \ker(\rho) \subseteq H$ because for any $g \in N$, $g \cdot (eH) = eH \implies g \in H$.
 By multiplicativity of indices:
-\[
+$$
 [G : N] = [G : H][H : N] = n [H : N] \ge n.
-\]
+$$
 Thus $n \le [G : N] \le n!$, and $[G : N] \mid n!$.
 
 ::: pf-proof
@@ -133,9 +133,9 @@ assumption for contradiction.
 ::: pf-step
 
 By Sylow’s Third Theorem, the number $n_3$ of Sylow 3-subgroups satisfies:
-\[
+$$
 n_3 \equiv 1 \pmod 3 \quad \text{and} \quad n_3 \mid 4 \implies n_3 \in \{1, 4\}.
-\]
+$$
 
 ::: pf-proof
 

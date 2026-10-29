@@ -25,9 +25,9 @@ audit:
 ::: {.problem}
 Let $n>0$ be an integer.
 Evaluate
-\[
+$$
 \int_{-\infty}^{\infty}\frac{dx}{1+x^{2n}}.
-\]
+$$
 :::
 
 ::: {.solution}

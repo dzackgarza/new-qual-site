@@ -27,14 +27,14 @@ audit:
 Let $f\in L^\infty([0,1])$.
 
 (a) Prove that for $1<p<\infty$,
-\[
+$$
 \|f\|_p\le\|f\|_\infty.
-\]
+$$
 
 (b) Prove that
-\[
+$$
 \lim_{p\to\infty}\|f\|_p=\|f\|_\infty.
-\]
+$$
 :::
 
 ::: {.solution}

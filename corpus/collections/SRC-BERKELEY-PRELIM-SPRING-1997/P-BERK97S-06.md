@@ -21,13 +21,13 @@ audit:
 ::: {.problem}
 Let $X$ be a topological space and let $V$ be an $n$-dimensional subspace of the real vector space of continuous functions on $X$.
 Prove that there are a basis
-\[
+$$
 \{f_1,\dots,f_n\}
-\]
+$$
 of $V$ and points $x_1,\dots,x_n\in X$ such that
-\[
+$$
 f_i(x_j)=\delta_{ij}.
-\]
+$$
 :::
 
 ::: {.solution}

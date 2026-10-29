@@ -51,21 +51,21 @@ Statement (1) is false.
 ::: pf-proof
 
 Take
-\[
+$$
 E=\QQ\cap[0,1].
-\]
-Then \(E\) is Lebesgue measurable and \(m(E)=0\), but it is dense in \([0,1]\). Hence
-\[
+$$
+Then $E$ is Lebesgue measurable and $m(E)=0$, but it is dense in $[0,1]$. Hence
+$$
 \operatorname{dist}(x,E)=\operatorname{dist}(x,[0,1]),
-\]
+$$
 so
-\[
+$$
 E_k=(-1/k,1+1/k).
-\]
+$$
 Therefore
-\[
+$$
 m(E_k)=1+2/k\longrightarrow1\ne0=m(E).
-\]
+$$
 Thus the assertion is false.
 
 :::
@@ -78,19 +78,19 @@ Statement (2) is true.
 
 ::: pf-proof
 
-A differentiable function is continuous, hence Borel measurable. For each \(n\ge2\), define the Borel function
-\[
+A differentiable function is continuous, hence Borel measurable. For each $n\ge2$, define the Borel function
+$$
 q_n(x)=
 \begin{cases}
 n\bigl(f(x+1/n)-f(x)\bigr),&x<1-1/n,\\
 n\bigl(f(x)-f(x-1/n)\bigr),&x\ge1-1/n.
 \end{cases}
-\]
-For each fixed \(x\in(0,1)\), eventually \(x<1-1/n\), and differentiability gives
-\[
+$$
+For each fixed $x\in(0,1)$, eventually $x<1-1/n$, and differentiability gives
+$$
 q_n(x)\longrightarrow f'(x).
-\]
-Thus \(f'\) is a pointwise limit of Borel functions and is therefore Borel measurable.
+$$
+Thus $f'$ is a pointwise limit of Borel functions and is therefore Borel measurable.
 
 :::
 
@@ -103,20 +103,20 @@ Statement (3) is true.
 ::: pf-proof
 
 The hypothesis says
-\[
+$$
 \sum_{j=1}^n\mathbf1_{E_j}(x)\ge q
 \qquad\text{for every }x\in X.
-\]
+$$
 Integrating,
-\[
+$$
 \sum_{j=1}^n\mu(E_j)
 =\int_X\sum_{j=1}^n\mathbf1_{E_j}\,d\mu
 \ge q\mu(X)=q.
-\]
+$$
 Hence at least one term satisfies
-\[
+$$
 \boxed{\mu(E_{j_0})\ge q/n.}
-\]
+$$
 
 :::
 
@@ -129,14 +129,14 @@ Statement (4) is false.
 ::: pf-proof
 
 Let
-\[
+$$
 f=\mathbf1_{[0,1/2]}.
-\]
-Continuous piecewise-linear functions obtained by smoothing the jump on an interval of width \(1/n\) converge to \(f\) in \(L^1([0,1])\). Thus \(f\) lies in the \(L^1\)-closure of \(C([0,1])\).
+$$
+Continuous piecewise-linear functions obtained by smoothing the jump on an interval of width $1/n$ converge to $f$ in $L^1([0,1])$. Thus $f$ lies in the $L^1$-closure of $C([0,1])$.
 
-But the \(L^1\)-class of \(f\) has no continuous representative: any continuous representative equal to \(1\) almost everywhere on \((0,1/2)\) must equal \(1\) everywhere there by continuity, and similarly must equal \(0\) everywhere on \((1/2,1)\), contradicting continuity at \(1/2\). Hence \(f\notin C([0,1])\) as an \(L^1\)-class.
+But the $L^1$-class of $f$ has no continuous representative: any continuous representative equal to $1$ almost everywhere on $(0,1/2)$ must equal $1$ everywhere there by continuity, and similarly must equal $0$ everywhere on $(1/2,1)$, contradicting continuity at $1/2$. Hence $f\notin C([0,1])$ as an $L^1$-class.
 
-Therefore \(C([0,1])\) is not closed in \(L^1([0,1])\).
+Therefore $C([0,1])$ is not closed in $L^1([0,1])$.
 
 :::
 

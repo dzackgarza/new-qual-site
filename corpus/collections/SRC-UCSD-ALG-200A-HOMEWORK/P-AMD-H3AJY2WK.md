@@ -35,35 +35,35 @@ audit:
 ::: {.problem}
 Assume that $G$ acts transitively on a set $X$, and let $H\normal G$.
 Restrict the action to $H$, and let
-\[
+$$
 Y=\{\mathcal O_\alpha\}_{\alpha\in I}
-\]
+$$
 be the set of $H$-orbits in $X$.
 
 1. For $g\in G$ and an $H$-orbit $\mathcal O_\alpha$, define
-   \[
+   $$
    g\mathcal O_\alpha=\{gx:x\in\mathcal O_\alpha\}.
-   \]
+   $$
    Show that $g\mathcal O_\alpha$ is again an $H$-orbit, that this rule defines an action of $G$ on $Y$, and that this action is transitive.
    Conclude that all $H$-orbits in $X$ have the same cardinality.
 
 2. If $x\in\mathcal O_\alpha$, prove
-   \[
+   $$
    |\mathcal O_\alpha|=|H:H\cap G_x|
    \qquad\text{and}\qquad
    |Y|=|G:HG_x|,
-   \]
+   $$
    where
-   \[
+   $$
    G_x=\{g\in G:gx=x\}.
-   \]
+   $$
 :::
 
 ::: {.solution}
 For $x\in X$, write
-\[
+$$
 \mathcal O_x=Hx=\{hx:h\in H\}
-\]
+$$
 for its $H$-orbit.
 
 ::: pf
@@ -71,18 +71,18 @@ for its $H$-orbit.
 ::: {.pf-step #s1}
 
 For every $g\in G$ and $x\in X$,
-\[
+$$
 g\mathcal O_x=\mathcal O_{gx}.
-\]
+$$
 
 ::: pf-proof
 
 Since $H\normal G$,
-\[
+$$
 gHg^{-1}=H.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 g\mathcal O_x
 &=g(Hx)\\
@@ -91,7 +91,7 @@ g\mathcal O_x
 &=H(gx)\\
 &=\mathcal O_{gx}.
 \end{aligned}
-\]
+$$
 Thus $g$ sends every $H$-orbit onto another $H$-orbit.
 
 :::
@@ -101,25 +101,25 @@ Thus $g$ sends every $H$-orbit onto another $H$-orbit.
 ::: pf-step
 
 The rule
-\[
+$$
 g\cdot\mathcal O_x:=g\mathcal O_x
-\]
+$$
 defines an action of $G$ on $Y$.
 
 ::: pf-proof
 
 By step [](#s1){.pf-ref}, the rule takes $Y$ to itself.
 For the identity element,
-\[
+$$
 e\cdot\mathcal O_x=\mathcal O_x.
-\]
+$$
 For $g_1,g_2\in G$,
-\[
+$$
 g_1\cdot(g_2\cdot\mathcal O_x)
 =g_1(g_2\mathcal O_x)
 =(g_1g_2)\mathcal O_x
 =(g_1g_2)\cdot\mathcal O_x.
-\]
+$$
 Hence the action axioms hold.
 
 :::
@@ -134,13 +134,13 @@ The induced action of $G$ on $Y$ is transitive.
 
 Let $\mathcal O_x,\mathcal O_y\in Y$.
 Because the original $G$-action on $X$ is transitive, there exists $g\in G$ with
-\[
+$$
 gx=y.
-\]
+$$
 Then step [](#s1){.pf-ref} gives
-\[
+$$
 g\mathcal O_x=\mathcal O_{gx}=\mathcal O_y.
-\]
+$$
 Thus every $H$-orbit can be carried to every other one.
 
 :::
@@ -155,20 +155,20 @@ All $H$-orbits in $X$ have the same cardinality.
 
 Let $\mathcal O_x,\mathcal O_y\in Y$.
 By step [](#s3){.pf-ref}, choose $g\in G$ such that
-\[
+$$
 g\mathcal O_x=\mathcal O_y.
-\]
+$$
 The map
-\[
+$$
 \mathcal O_x\longrightarrow\mathcal O_y,
 \qquad
 z\longmapsto gz
-\]
+$$
 is bijective, with inverse $z\mapsto g^{-1}z$.
 Hence
-\[
+$$
 |\mathcal O_x|=|\mathcal O_y|.
-\]
+$$
 
 :::
 
@@ -177,28 +177,28 @@ Hence
 ::: pf-step
 
 If $x\in\mathcal O_\alpha$, then
-\[
+$$
 |\mathcal O_\alpha|=|H:H\cap G_x|.
-\]
+$$
 
 ::: pf-proof
 
 Since $x\in\mathcal O_\alpha$, we have
-\[
+$$
 \mathcal O_\alpha=Hx.
-\]
+$$
 The stabilizer of $x$ for the restricted $H$-action is
-\[
+$$
 H_x=\{h\in H:hx=x\}=H\cap G_x.
-\]
+$$
 The orbit-stabilizer bijection therefore gives
-\[
+$$
 Hx\cong H/(H\cap G_x)
-\]
+$$
 as sets, and hence
-\[
+$$
 |\mathcal O_\alpha|=|H:H\cap G_x|.
-\]
+$$
 
 :::
 
@@ -214,11 +214,11 @@ Because $H\normal G$, the product $HG_x$ is a subgroup of $G$.
 
 Now let $g\in G$.
 By step [](#s1){.pf-ref},
-\[
+$$
 g\mathcal O_x=\mathcal O_{gx}.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 g\mathcal O_x=\mathcal O_x
 &\iff gx\in Hx\\
@@ -226,11 +226,11 @@ g\mathcal O_x=\mathcal O_x
 &\iff h^{-1}g\in G_x\text{ for some }h\in H\\
 &\iff g\in HG_x.
 \end{aligned}
-\]
+$$
 Thus
-\[
+$$
 \operatorname{Stab}_G(\mathcal O_x)=HG_x.
-\]
+$$
 
 :::
 
@@ -239,9 +239,9 @@ Thus
 ::: pf-step
 
 We have
-\[
+$$
 |Y|=|G:HG_x|.
-\]
+$$
 
 ::: pf-proof
 
@@ -249,9 +249,9 @@ By step [](#s3){.pf-ref}, the $G$-action on $Y$ is transitive.
 Hence $Y$ is the orbit of $\mathcal O_x$ under this action.
 By step [](#s6){.pf-ref}, the stabilizer of $\mathcal O_x$ is $HG_x$.
 Orbit-stabilizer therefore gives
-\[
+$$
 |Y|=|G:\operatorname{Stab}_G(\mathcal O_x)|=|G:HG_x|.
-\]
+$$
 
 :::
 

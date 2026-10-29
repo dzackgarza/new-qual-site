@@ -33,13 +33,13 @@ Give an example of a term order which refines the partial order by total degree.
 Graded lexicographic order is one example.
 
 For monomials $x^\alpha,x^\beta$ in $k[x_1,\ldots,x_n]$, declare
-\[
+$$
 x^\alpha\prec x^\beta
-\]
+$$
 when either
-\[
+$$
 |\alpha|<|\beta|,
-\]
+$$
 or $|\alpha|=|\beta|$ and $\alpha$ precedes $\beta$ lexicographically.
 
 ::: pf

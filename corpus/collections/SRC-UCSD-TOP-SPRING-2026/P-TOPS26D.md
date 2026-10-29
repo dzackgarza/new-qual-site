@@ -15,14 +15,14 @@ review: draft
 
 ::: {.problem}
 Let $X$ be a topological space with homology groups
-\[
+$$
 H_k(X; \ZZ) =
 \begin{cases}
 \ZZ & \text{if } k = 0, \\
 \ZZ_6 & \text{if } k = 3, \\
 0 & \text{otherwise.}
 \end{cases}
-\]
+$$
 Compute the homology groups $H_\bullet(X \times \RP^4; \ZZ)$ and $H_\bullet(X \times \RP^4; \ZZ_2)$.
 :::
 

@@ -25,12 +25,12 @@ audit:
 ---
 ::: {.problem}
 Consider the $\ZZ\dash$submodule $N$ of $\ZZ^3$ spanned by
-\[
+$$
 f_1 &= [-1, 0, 1], \\
 f_2 &= [2,-3,1], \\
 f_3 &= [0, 3, 1], \\
 f_4 &= [3,1,5]
-.\]
+.$$
 Find a basis for $N$ and describe $\ZZ^3/N$.
 :::
 
@@ -41,16 +41,16 @@ Find a basis for $N$ and describe $\ZZ^3/N$.
 ::: {.pf-step #s1}
 
 The standard basis vector $e_1=(1,0,0)$ belongs to $N$ because
-\[
+$$
 e_1=2f_1+6f_2+7f_3-3f_4.
-\]
+$$
 
 ::: pf-proof
 
 Direct substitution gives
-\[
+$$
 2(-1,0,1)+6(2,-3,1)+7(0,3,1)-3(3,1,5)=(1,0,0).
-\]
+$$
 
 :::
 
@@ -59,16 +59,16 @@ Direct substitution gives
 ::: {.pf-step #s2}
 
 The standard basis vector $e_2=(0,1,0)$ belongs to $N$ because
-\[
+$$
 e_2=-f_1-2f_2-2f_3+f_4.
-\]
+$$
 
 ::: pf-proof
 
 Direct substitution gives
-\[
+$$
 -(-1,0,1)-2(2,-3,1)-2(0,3,1)+(3,1,5)=(0,1,0).
-\]
+$$
 
 :::
 
@@ -77,16 +77,16 @@ Direct substitution gives
 ::: {.pf-step #s3}
 
 The standard basis vector $e_3=(0,0,1)$ belongs to $N$ because
-\[
+$$
 e_3=3f_1+6f_2+7f_3-3f_4.
-\]
+$$
 
 ::: pf-proof
 
 Direct substitution gives
-\[
+$$
 3(-1,0,1)+6(2,-3,1)+7(0,3,1)-3(3,1,5)=(0,0,1).
-\]
+$$
 
 :::
 
@@ -107,13 +107,13 @@ By step [](#s1){.pf-ref}, step [](#s2){.pf-ref}, and step [](#s3){.pf-ref}, the 
 ::: {.pf-step #s5}
 
 Therefore one basis for $N$ is
-\[
+$$
 \boxed{\{e_1,e_2,e_3\}},
-\]
+$$
 and
-\[
+$$
 \boxed{\ZZ^3/N=0}.
-\]
+$$
 
 ::: pf-proof
 

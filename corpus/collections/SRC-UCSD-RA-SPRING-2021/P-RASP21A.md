@@ -34,41 +34,41 @@ Prove that either $m(A)=0$ or $m(B)=0$.
 
 ::: {.solution}
 Suppose, toward a contradiction, that
-\[
+$$
 m(A)>0
 \qquad\text{and}\qquad
 m(B)>0.
-\]
+$$
 Because Lebesgue measure on $\RR$ is $\sigma$-finite, there exist bounded measurable subsets
-\[
+$$
 A_0\subseteq A,\qquad B_0\subseteq B
-\]
+$$
 with
-\[
+$$
 0<m(A_0)<\infty,\qquad 0<m(B_0)<\infty.
-\]
+$$
 
 For $t\in\RR$, set
-\[
+$$
 h(t):=m\bigl(A_0\cap(t-B_0)\bigr).
-\]
+$$
 Equivalently,
-\[
+$$
 h=\mathbf1_{A_0}*\mathbf1_{B_0}
-\]
+$$
 up to the harmless reflection convention for convolution. Since $\mathbf1_{A_0},\mathbf1_{B_0}\in L^1(\RR)$, the function $h$ is continuous. Moreover, by Tonelli,
-\[
+$$
 \int_{\RR}h(t)\,dt=m(A_0)m(B_0)>0.
-\]
+$$
 Hence $h(t_0)>0$ for some $t_0$. By continuity, $h>0$ on a nonempty open interval $I$ containing $t_0$.
 
 If $h(t)>0$, then $A_0\cap(t-B_0)\neq\varnothing$, so there are $a\in A_0$ and $b\in B_0$ with $t=a+b$. Thus
-\[
+$$
 I\subseteq A_0+B_0\subseteq A+B.
-\]
+$$
 Every nonempty open interval contains a rational number, contradicting
-\[
+$$
 A+B\subseteq\RR\setminus\QQ.
-\]
+$$
 Therefore at least one of $A$ or $B$ must have measure zero.
 :::

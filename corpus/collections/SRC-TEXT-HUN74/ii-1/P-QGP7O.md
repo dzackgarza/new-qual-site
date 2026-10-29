@@ -37,9 +37,9 @@ Show that $G$ is a free abelian group.
 ::: {.pf-step #s1}
 
 There are integers $r\ge0$ and $d_1,\ldots,d_t>1$ such that
-\[
+$$
 G\cong \ZZ^r\oplus \ZZ/d_1\ZZ\oplus\cdots\oplus\ZZ/d_t\ZZ.
-\]
+$$
 
 ::: pf-proof
 
@@ -57,9 +57,9 @@ One must have $t=0$.
 ::: pf-proof
 
 If $t>0$, then the element corresponding to
-\[
+$$
 (0,\ldots,0,1\bmod d_1,0,\ldots,0)
-\]
+$$
 is nonzero and has finite order $d_1$. This contradicts the hypothesis that no
 nonzero element of $G$ has finite order.
 

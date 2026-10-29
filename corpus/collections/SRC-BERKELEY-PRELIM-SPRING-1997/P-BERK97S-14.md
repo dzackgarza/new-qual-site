@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Show that
-\[
+$$
 \det(\exp M)=e^{\operatorname{tr}M}
-\]
+$$
 for every complex $n\times n$ matrix $M$.
 :::
 

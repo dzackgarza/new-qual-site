@@ -30,9 +30,9 @@ $H(G)$ if and only if $A$ meets every connected component of
 $\CC_\infty\setminus G$.
 
 Assume (i). The set
-\[
+$$
 A=\{0,\infty\}
-\]
+$$
 meets both complementary components, because $0\in F_0$ and
 $\infty\in F_\infty$. Runge's theorem therefore gives (ii).
 

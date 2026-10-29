@@ -56,29 +56,29 @@ Statement (1) is true.
 ::: pf-proof
 
 Because $\mu$ is $\sigma$-finite, choose measurable sets $X_n$ such that
-\[
+$$
 X=\bigcup_{n=1}^\infty X_n,
 \qquad
 \mu(X_n)<\infty.
-\]
+$$
 Define
-\[
+$$
 \nu(E):=\sum_{n=1}^\infty
 2^{-n}\frac{\mu(E\cap X_n)}{1+\mu(X_n)}.
-\]
+$$
 Each summand is a finite measure, so $\nu$ is a measure, and
-\[
+$$
 \nu(X)\le\sum_{n=1}^\infty2^{-n}<\infty.
-\]
+$$
 
 If $\mu(E)=0$, then every summand is zero, so $\nu(E)=0$; hence $\nu\ll\mu$. Conversely, if $\nu(E)=0$, all nonnegative summands vanish, so
-\[
+$$
 \mu(E\cap X_n)=0
-\]
+$$
 for every $n$. Since the $X_n$ cover $X$,
-\[
+$$
 \mu(E)=0.
-\]
+$$
 Thus $\mu\ll\nu$ as well.
 
 :::
@@ -92,32 +92,32 @@ Statement (2) is false.
 ::: pf-proof
 
 For $n\ge1$, let
-\[
+$$
 I_n=[n,n+n^{-3}]
-\]
+$$
 and define
-\[
+$$
 f(x):=\sum_{n=1}^\infty n\,\mathbf1_{I_n}(x).
-\]
+$$
 Then
-\[
+$$
 \|f\|_1
 =\sum_{n=1}^\infty n\,m(I_n)
 =\sum_{n=1}^\infty\frac1{n^2}<\infty.
-\]
+$$
 Every bounded interval meets only finitely many of the supports $I_n$, so in particular
-\[
+$$
 \int_a^{a+1}|f(x)|^2\,dx<\infty
-\]
+$$
 for every $a\in\RR$.
 
 However,
-\[
+$$
 \|f\|_2^2
 =\sum_{n=1}^\infty n^2m(I_n)
 =\sum_{n=1}^\infty\frac1n
 =\infty.
-\]
+$$
 Hence $f\notin L^2(\RR)$.
 
 :::
@@ -131,20 +131,20 @@ Statement (3) is true.
 ::: pf-proof
 
 The usual Fourier translation identity holds first for Schwartz functions:
-\[
+$$
 \widehat{\tau_y\psi}(\xi)
 =e^{-2\pi i\langle\xi,y\rangle}\widehat\psi(\xi).
-\]
+$$
 The same identity extends to tempered distributions by duality. Indeed, for every $\varphi\in\mathcal S$,
-\[
+$$
 \begin{aligned}
 \langle\widehat{\tau_y f},\varphi\rangle
 &=\langle\tau_y f,\widehat\varphi\rangle\\
 &=\langle f,\tau_{-y}\widehat\varphi\rangle.
 \end{aligned}
-\]
+$$
 For $\psi(x)\coloneqq e^{-2\pi i\langle x,y\rangle}\varphi(x)$, a Schwartz function, $\widehat\psi(\xi)=\widehat\varphi(\xi+y)=(\tau_{-y}\widehat\varphi)(\xi)$. Hence
-\[
+$$
 \langle f,\tau_{-y}\widehat\varphi\rangle
 =\langle f,\widehat\psi\rangle
 =\langle\widehat f,\psi\rangle
@@ -152,13 +152,13 @@ For $\psi(x)\coloneqq e^{-2\pi i\langle x,y\rangle}\varphi(x)$, a Schwartz funct
 e^{-2\pi i\langle\cdot,y\rangle}\widehat f,
 \varphi
 \right\rangle.
-\]
+$$
 Therefore, in $\mathcal S'$,
-\[
+$$
 \boxed{
 \widehat{\tau_y f}
 =e^{-2\pi i\langle\cdot,y\rangle}\widehat f.}
-\]
+$$
 
 :::
 

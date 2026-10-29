@@ -41,9 +41,9 @@ Cf.
 (2.12).
 
 b. Let $e<0$, let $D$ be any divisor of degree $d=-e$, and let $\xi \in H^1(\mathcal{L}(-D))$ be a nonzero element defining an extension
-\[
+$$
 0 \rightarrow \mathcal{O}_C \rightarrow \mathcal{E} \rightarrow \mathcal{L}(D) \rightarrow 0 .
-\]
+$$
 Let $H \subseteq|D+K|$ be the sublinear system of codimension 1 defined by $\ker \xi$, where $\xi$ is considered as a linear functional on $H^0(\mathcal{L}(D+K))$.
 For any effective divisor $E$ of degree $d-1$, let $L_E \subseteq|D+K|$ be the sublinear system $|D+K-E|+E$.
 Show that $\mathcal{E}$ is normalized if and only if for each $E$ as above, $L_E \nsubseteq H$.

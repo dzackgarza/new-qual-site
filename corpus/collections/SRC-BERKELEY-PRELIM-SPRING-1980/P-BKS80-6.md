@@ -28,9 +28,9 @@ audit:
 ::: {.problem}
 Let $G$ be a finite group of order $n>2$ and $H<G$ a proper subgroup of order $m$.
 Assume
-\[
+$$
 (n/m)!<2n.
-\]
+$$
 Prove that $G$ has a proper nontrivial normal subgroup.
 :::
 

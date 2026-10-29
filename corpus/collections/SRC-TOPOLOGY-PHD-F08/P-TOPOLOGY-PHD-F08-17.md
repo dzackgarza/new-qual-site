@@ -54,9 +54,9 @@ The symbol has $10$ sides, and each of the five letters $x, y, z, w, \nu$ appear
 
 ::: pf-proof
 The boundary word is
-\[
+$$
 xy^{-1}x^{-1}zwz^{-1}\nu yw^{-1}\nu^{-1}.
-\]
+$$
 The five labels are $x,y,z,w,\nu$, and inspection shows that each occurs exactly twice, once with exponent $+1$ and once with exponent $-1$.
 :::
 
@@ -74,16 +74,16 @@ By step [](#sides-and-exponents){.pf-ref}, every pair occurs once positively and
 
 ::: {.pf-step #vertex-classes}
 After the edge identifications there are exactly two vertex classes:
-\[
+$$
 \{v_0,v_3,v_6\}
 \qquad\text{and}\qquad
 \{v_1,v_2,v_4,v_5,v_7,v_8,v_9\},
-\]
+$$
 where $v_0,\ldots,v_9$ are the polygon vertices in boundary order.
 
 ::: pf-proof
 Matching the directed edge pairs gives
-\[
+$$
 \begin{array}{c|c}
 \text{label}&\text{vertex identifications}\\
 \hline
@@ -93,15 +93,15 @@ z&v_3\sim v_6,\quad v_4\sim v_5,\\
 w&v_4\sim v_9,\quad v_5\sim v_8,\\
 \nu&v_6\sim v_0,\quad v_7\sim v_9.
 \end{array}
-\]
+$$
 The first coordinates in the $x,z,\nu$ relations produce
-\[
+$$
 v_0\sim v_3\sim v_6.
-\]
+$$
 The remaining relations produce
-\[
+$$
 v_1\sim v_2\sim v_7\sim v_9\sim v_4\sim v_5\sim v_8.
-\]
+$$
 No displayed relation joins these two classes, so there are exactly two quotient vertices.
 :::
 
@@ -109,48 +109,48 @@ No displayed relation joins these two classes, so there are exactly two quotient
 
 ::: {.pf-step #euler-char-computation}
 The quotient has
-\[
+$$
 V=2,
 \qquad
 E=5,
 \qquad
 F=1,
-\]
+$$
 and hence
-\[
+$$
 \chi=V-E+F=-2.
-\]
+$$
 
 ::: pf-proof
 The vertex count is step [](#vertex-classes){.pf-ref}. There is one edge in the quotient for each of the five paired labels, so $E=5$, and the polygon interior gives one $2$-cell, so $F=1$.
 Therefore
-\[
+$$
 \chi=2-5+1=-2.
-\]
+$$
 :::
 
 :::
 
 ::: pf-step
 The surface is the orientable surface of genus $2$, namely
-\[
+$$
 \boxed{(S^1\times S^1)\#(S^1\times S^1)},
-\]
+$$
 and its Euler characteristic is
-\[
+$$
 \boxed{-2}.
-\]
+$$
 
 ::: pf-proof
 By step [](#orientable){.pf-ref} the surface is orientable.
 The classification theorem for compact connected orientable surfaces gives
-\[
+$$
 \chi=2-2g.
-\]
+$$
 Using step [](#euler-char-computation){.pf-ref},
-\[
+$$
 -2=2-2g,
-\]
+$$
 so $g=2$.
 :::
 
@@ -169,13 +169,13 @@ Regluing each pair reconstructs the surface.
 
 ::: {.pf-step #normal-forms}
 Cut-and-paste moves reduce every such paired polygon to one of the two normal forms
-\[
+$$
 a_1b_1a_1^{-1}b_1^{-1}\cdots a_gb_ga_g^{-1}b_g^{-1}
-\]
+$$
 or
-\[
+$$
 a_1a_1a_2a_2\cdots a_ka_k.
-\]
+$$
 
 ::: pf-proof
 These are the polygonal normal forms in the classification theorem for compact connected surfaces.
@@ -187,23 +187,23 @@ The second contains orientation-reversing pairs and represents the connected sum
 
 ::: pf-step
 The normal form determines the surface: the orientable form has
-\[
+$$
 \chi=2-2g,
-\]
+$$
 and the nonorientable form has
-\[
+$$
 \chi=2-k.
-\]
+$$
 
 ::: pf-proof
 For the orientable normal form, the standard one-vertex CW structure has one face and $2g$ edges, giving
-\[
+$$
 \chi=1-2g+1=2-2g.
-\]
+$$
 For the nonorientable normal form it has one face and $k$ edges, giving
-\[
+$$
 \chi=1-k+1=2-k.
-\]
+$$
 Orientability distinguishes the two families, and within each family the Euler characteristic determines the genus.
 Thus the paired polygon determines the homeomorphism type after reduction to normal form.
 :::

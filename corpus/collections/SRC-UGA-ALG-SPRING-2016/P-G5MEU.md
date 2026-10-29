@@ -36,9 +36,9 @@ Set $\theta=\sqrt2+\sqrt5$.
 ::: {.pf-step #s1-1}
 
 The extension has degree
-\[
+$$
 \boxed{[K:\QQ]=4}.
-\]
+$$
 
 
 ::: pf-proof
@@ -52,9 +52,9 @@ From $\theta^2=7+2\sqrt{10}$ follows $\sqrt{10}=(\theta^2-7)/2\in K$. Since $\th
 ::: {.pf-step #s1-2}
 
 The extension $K/\QQ$ is Galois, with group
-\[
+$$
 \boxed{G\cong C_2\times C_2}.
-\]
+$$
 
 
 ::: pf-proof
@@ -68,7 +68,7 @@ The field $K=\QQ(\sqrt2,\sqrt5)$ is the splitting field of the separable polynom
 ::: {.pf-step #s1-3}
 
 The complete Galois correspondence is
-\[
+$$
 \boxed{\begin{array}{c|c}
 H&K^H\\ \hline
 G&\QQ\\
@@ -77,7 +77,7 @@ G&\QQ\\
 \langle\sigma_2\sigma_5\rangle&\QQ(\sqrt{10})\\
 \{1\}&K
 \end{array}}
-\]
+$$
 where $\sigma_i$ changes the sign of $\sqrt i$ and fixes the other generator.
 
 

@@ -26,19 +26,19 @@ audit:
 
 ::: {.problem}
 For $n\in\ZZ$, define
-\[
+$$
 f_n(x)=\frac{(x-i)^n}{\sqrt\pi\,(x+i)^{n+1}},
 \qquad x\in\RR.
-\]
+$$
 Prove that the functions $f_n$ are orthonormal:
-\[
+$$
 \int_{-\infty}^{\infty}f_m(x)\overline{f_n(x)}\,dx
 =
 \begin{cases}
 1,&m=n,\\
 0,&m\ne n.
 \end{cases}
-\]
+$$
 :::
 
 ::: {.solution}

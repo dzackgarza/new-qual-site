@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let $A$ be an $n\times n$ Hermitian matrix satisfying
-\[
+$$
 A^5+A^3+A=3I.
-\]
+$$
 Prove that $A=I$.
 :::
 

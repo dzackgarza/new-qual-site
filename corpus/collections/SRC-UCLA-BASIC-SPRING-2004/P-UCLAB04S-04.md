@@ -29,7 +29,7 @@ Yes.
 ::: {.pf-step #s1-1}
 
 Define
-\[
+$$
 K=
 \left\{
 0
@@ -38,25 +38,25 @@ K=
 \left\{
 \frac1n:n\in\NN
 \right\}.
-\]
+$$
 Then
-\[
+$$
 K\subseteq\QQ
-\]
+$$
 and $K$ is infinite.
 
 
 ::: pf-proof
 
 Every number
-\[
+$$
 0,\frac11,\frac12,\frac13,\ldots
-\]
+$$
 is rational.
 The numbers
-\[
+$$
 \frac1n
-\]
+$$
 are pairwise distinct, so $K$ contains infinitely many points.
 
 :::
@@ -71,9 +71,9 @@ The set $K$ is bounded.
 ::: pf-proof
 
 Every point of $K$ lies in the interval
-\[
+$$
 [0,1].
-\]
+$$
 
 :::
 
@@ -87,52 +87,52 @@ The set $K$ is closed in $\RR$.
 ::: pf-proof
 
 Let
-\[
+$$
 x\in\RR\setminus K.
-\]
+$$
 If
-\[
+$$
 x<0
 \quad\text{or}\quad
 x>1,
-\]
+$$
 there is clearly an open interval around $x$ disjoint from $K$.
 
 Suppose
-\[
+$$
 0<x<1
-\]
+$$
 and
-\[
+$$
 x\notin K.
-\]
+$$
 Choose $N$ so large that
-\[
+$$
 \frac1N<\frac{x}{2}.
-\]
+$$
 Then all points
-\[
+$$
 \frac1n
-\]
+$$
 with
-\[
+$$
 n\ge N
-\]
+$$
 lie in
-\[
+$$
 \left(0,\frac{x}{2}\right),
-\]
+$$
 and hence are at distance at least $x/2$ from $x$.
 
 The remaining set
-\[
+$$
 \left\{
 \frac11,\ldots,\frac1{N-1}
 \right\}
-\]
+$$
 is finite and does not contain $x$.
 Therefore
-\[
+$$
 d
 =
 \min_{1\le n<N}
@@ -141,25 +141,25 @@ x-\frac1n
 \right|
 >
 0.
-\]
+$$
 Taking
-\[
+$$
 r
 <
 \min\left\{
 \frac{x}{2},
 \frac d2
 \right\}
-\]
+$$
 gives an open interval
-\[
+$$
 (x-r,x+r)
-\]
+$$
 that misses every point of $K$.
 Thus
-\[
+$$
 \RR\setminus K
-\]
+$$
 is open, so $K$ is closed.
 
 :::
@@ -189,7 +189,7 @@ Therefore there exist infinite compact subsets of $\QQ$.
 
 The set $K$ from step [](#s1-1){.pf-ref} is an infinite subset of $\QQ$, and step [](#s1-4){.pf-ref} proves that it is compact.
 Hence
-\[
+$$
 \boxed{
 \left\{
 0
@@ -199,7 +199,7 @@ Hence
 \frac1n:n\in\NN
 \right\}
 }
-\]
+$$
 is an explicit example.
 
 :::

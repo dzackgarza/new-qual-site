@@ -18,12 +18,12 @@ Compute $\int _ { 0 } ^ { \infty } \frac { \log ( t ) } { 1 + t ^ { 2 } } d t .$
 ::: {.solution}
 
 Let
-\[
+$$
 I
 =
 \int_0^\infty
 \frac{\log t}{1+t^2}\,dt.
-\]
+$$
 
 ::: pf
 
@@ -34,32 +34,32 @@ The improper integral is absolutely convergent.
 
 ::: pf-proof
 
-On \((0,1]\),
-\[
+On $(0,1]$,
+$$
 0<
 \frac1{1+t^2}
 \le1,
-\]
+$$
 so
-\[
+$$
 \int_0^1
 \frac{|\log t|}{1+t^2}\,dt
 \le
 \int_0^1|\log t|\,dt
 =
 1.
-\]
+$$
 
-For \(t\ge1\),
-\[
+For $t\ge1$,
+$$
 \frac{\log t}{1+t^2}
 \le
 \frac{\log t}{t^2}.
-\]
+$$
 Integration by parts gives
-\[
+$$
 \int_1^\infty\frac{\log t}{t^2}\,dt<\infty.
-\]
+$$
 Thus the original integral converges absolutely.
 
 :::
@@ -68,8 +68,8 @@ Thus the original integral converges absolutely.
 
 ::: {.pf-step #s1-2}
 
-Split the integral at \(1\):
-\[
+Split the integral at $1$:
+$$
 I
 =
 \int_0^1
@@ -77,7 +77,7 @@ I
 +
 \int_1^\infty
 \frac{\log t}{1+t^2}\,dt.
-\]
+$$
 
 
 ::: pf-proof
@@ -92,19 +92,19 @@ integral.
 ::: pf-step
 
 In the second integral, set
-\[
+$$
 \boxed{t=\frac1u}.
-\]
+$$
 
 
 ::: pf-proof
 
 This substitution exchanges the intervals
-\[
+$$
 [1,\infty)
 \qquad\text{and}\qquad
 (0,1].
-\]
+$$
 
 :::
 
@@ -113,25 +113,25 @@ This substitution exchanges the intervals
 ::: {.pf-step #s1-4}
 
 Then
-\[
+$$
 dt=-\frac{du}{u^2}
-\]
+$$
 and
-\[
+$$
 1+t^2
 =
 1+\frac1{u^2}
 =
 \frac{1+u^2}{u^2}.
-\]
+$$
 
 
 ::: pf-proof
 
 Differentiate
-\[
+$$
 t=u^{-1}
-\]
+$$
 and simplify the denominator.
 
 :::
@@ -141,22 +141,22 @@ and simplify the denominator.
 ::: {.pf-step #s1-5}
 
 Also,
-\[
+$$
 \log t
 =
 \log\frac1u
 =
 -\log u.
-\]
+$$
 
 
 ::: pf-proof
 
 Use
-\[
+$$
 \log(u^{-1})=-\log u
-\]
-for \(u>0\).
+$$
+for $u>0$.
 
 :::
 
@@ -165,19 +165,19 @@ for \(u>0\).
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \int_1^\infty
 \frac{\log t}{1+t^2}\,dt
 =
 -\int_0^1
 \frac{\log u}{1+u^2}\,du.
-\]
+$$
 
 
 ::: pf-proof
 
 Using steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
-\[
+$$
 \begin{aligned}
 \int_1^\infty
 \frac{\log t}{1+t^2}\,dt
@@ -192,7 +192,7 @@ Using steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 -\int_0^1
 \frac{\log u}{1+u^2}\,du.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -201,7 +201,7 @@ Using steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref},
 ::: {.pf-step #s1-7}
 
 Hence the two pieces cancel:
-\[
+$$
 \begin{aligned}
 I
 &=
@@ -213,13 +213,13 @@ I
 &=
 0.
 \end{aligned}
-\]
+$$
 
 
 ::: pf-proof
 
-Substitute step [](#s1-6){.pf-ref} into step [](#s1-2){.pf-ref} and rename the dummy variable \(u\) as
-\(t\).
+Substitute step [](#s1-6){.pf-ref} into step [](#s1-2){.pf-ref} and rename the dummy variable $u$ as
+$t$.
 
 :::
 
@@ -228,13 +228,13 @@ Substitute step [](#s1-6){.pf-ref} into step [](#s1-2){.pf-ref} and rename the d
 ::: {.pf-step #s1-8}
 
 Therefore
-\[
+$$
 \boxed{
 \int_0^\infty
 \frac{\log t}{1+t^2}\,dt
 =
 0}.
-\]
+$$
 
 
 ::: pf-proof

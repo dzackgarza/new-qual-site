@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Let $K$ be a Galois extension of $F$, and let $F \subset E \subset K$ be inclusions of fields.
 Let $G \definedas \Gal(K/F)$ and $H \definedas \Gal(K/E)$, and suppose $H$ contains $N_G(P)$, where $P$ is a Sylow $p$-subgroup of $G$ for $p$ a prime.
-Prove that \( [E: F] \equiv 1 \mod p \).
+Prove that $[E: F] \equiv 1 \mod p$.
 :::
 
 ::: {.concept}
@@ -41,9 +41,9 @@ The correspondence:
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwyLCJFIl0sWzAsMCwiSyJdLFswLDQsIkYiXSxbNCwwLCIxIl0sWzQsMiwiSCBcXGRhIFxcR2FsKEsvRSlcXGhzcGFjZXs0ZW19Il0sWzQsNCwiRyBcXGRhIFxcR2FsKEsvRilcXGhzcGFjZXs0ZW19Il0sWzIsMCwiW0U6Rl0iLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDEsIltLOkVdIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMiwxLCJbSzpGXSIsMix7ImN1cnZlIjo1LCJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFszLDQsIltIOjFdIiwyLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbNCw1LCJbRzpIXSIsMix7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzMsNSwiW0c6MV0iLDAseyJjdXJ2ZSI6LTUsInN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzgsNCwiXFxHYWwoSy9cXHdhaXQpIiwyLHsib2Zmc2V0Ijo1LCJzaG9ydGVuIjp7InNvdXJjZSI6MjB9fV1d)
 
 Normalizers:
-\[
+$$
 N_G(P) = \theset{g\in G \st gP\inverseof{g} = P}
-.\]
+.$$
 
 :::
 
@@ -52,11 +52,11 @@ N_G(P) = \theset{g\in G \st gP\inverseof{g} = P}
 
 - Reduce to a group theory problem: $[E:F] = [G:H]$, despite the fact that $E/F$ is not necessarily Galois.
   This is because we can count in towers:
-  \[
+  $$
   [K:F] = [K:E][E:F] &\implies [G:1] = [K:E][H:1] \\
   &\implies \size G = [K:E] \size H \\
   &\implies [G:H] = {\size G \over \size H} = [K:E]
-  .\]
+  .$$
 
 - Essential fact: if $P \in \Syl_p(G)$, we can use that $P \subseteq N_G(P) \subset H$ and so $P\in \Syl_p(H)$ as well.
 
@@ -73,29 +73,29 @@ N_G(P) = \theset{g\in G \st gP\inverseof{g} = P}
   - For $N_G(P) \subseteq N_H(P)$, use that $N_G(P) \subseteq H$ and so $gP\inverseof{g} = P$ implies $g\in H$, so $g\in N_H(P)$.
 
 - Now morally one might want to apply an isomorphism theorem:
-\[
+$$
 {G/ N_G(P) \over H/N_H(P)}=
 {G/ N_H(P) \over H/N_H(P)}\cong
 {G\over H}
-,\]
+,$$
   but we don't have normality.
   However, we can still get away with the corresponding counting argument if everything is finite:
-  \[
+  $$
   {[G: N_G(P)] \over [H:N_H(P)] }=
   {[G: N_H(P)] \over [H:N_H(P)] }=
   {\size G / \size N_H(P) \over \size H / \size N_H(P)}
   = {\size G \over \size H} 
   = [G: H]
-  .\]
+  .$$
 
 - We have an equation of the form $n_p(G)/n_p(H) = m$, and we want to show $m\equiv 1 \mod p$.
   So write
-  \[
+  $$
   {n_p(G) \over n_p(H) } 
   = m \implies m n_p(H) &= n_p(G) \\
   \implies m n_p(H) &\equiv n_p(G) \mod p \\
   \implies m\cdot 1 &\equiv 1 \mod p \\
   \implies m &\equiv 1 \mod p
-  .\]
+  .$$
 
 :::

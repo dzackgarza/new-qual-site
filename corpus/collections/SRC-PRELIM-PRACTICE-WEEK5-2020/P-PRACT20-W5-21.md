@@ -33,13 +33,13 @@ origin.
 ::: pf-proof
 
 If $z=t\in\RR\setminus\{0\}$, then
-\[
+$$
 \overline z=z=t,
-\]
+$$
 so
-\[
+$$
 \frac{\overline z^{\,2}}{z^2}=1.
-\]
+$$
 Hence along this path the limit is $1$.
 
 :::
@@ -55,24 +55,24 @@ origin.
 ::: pf-proof
 
 Take
-\[
+$$
 z=t(1+i),
 \qquad
 t\in\RR\setminus\{0\}.
-\]
+$$
 Then
-\[
+$$
 \overline z=t(1-i),
-\]
+$$
 and therefore
-\[
+$$
 \frac{\overline z^{\,2}}{z^2}
 =
 \frac{(1-i)^2}{(1+i)^2}
 =
 \frac{-2i}{2i}
 =-1.
-\]
+$$
 Hence along this path the limit is $-1$.
 
 :::
@@ -82,9 +82,9 @@ Hence along this path the limit is $-1$.
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{\lim_{z\to0}\frac{\overline z^{\,2}}{z^2}\text{ does not exist}}.
-\]
+$$
 
 
 ::: pf-proof

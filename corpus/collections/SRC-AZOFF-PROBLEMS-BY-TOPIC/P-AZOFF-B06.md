@@ -29,9 +29,9 @@ audit:
 
 ::: {.problem}
 Let $F:\RR^2\to\RR$ be continuously differentiable, with $F(0,0)=0$ and
-\[
+$$
 \|\nabla F(0,0)\|<1.
-\]
+$$
 Prove that there is $r>0$ such that $|F(x,y)|<r$ whenever $\|(x,y)\|<r$.
 :::
 

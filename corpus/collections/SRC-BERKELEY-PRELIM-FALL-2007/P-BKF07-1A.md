@@ -27,10 +27,10 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 \ZZ[i]=\{a+bi:a,b\in\ZZ\}.
-\]
-List all subrings of \(\ZZ[i]\), with each subring appearing exactly once.
+$$
+List all subrings of $\ZZ[i]$, with each subring appearing exactly once.
 :::
 
 ::: {.solution}

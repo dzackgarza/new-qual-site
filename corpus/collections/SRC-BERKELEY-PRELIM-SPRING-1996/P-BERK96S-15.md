@@ -27,19 +27,19 @@ audit:
 
 ::: {.problem}
 Let $A,B$ be real $n\times n$ matrices. Suppose
-\[
+$$
 A^T=A,
 \qquad
 v^TAv\ge0\quad\text{for every }v\in\RR^n,
-\]
+$$
 and
-\[
+$$
 AB+BA=0.
-\]
+$$
 Show that
-\[
+$$
 AB=BA=0.
-\]
+$$
 Give an example in which neither $A$ nor $B$ is zero.
 :::
 

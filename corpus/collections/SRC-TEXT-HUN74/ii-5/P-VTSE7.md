@@ -31,9 +31,9 @@ Show that if every Sylow $p$-subgroup of a finite group $G$ is normal for every 
 
 ::: {.solution}
 Let
-\[
+$$
 |G|=p_1^{a_1}\cdots p_r^{a_r},
-\]
+$$
 and let $P_i$ be the Sylow $p_i$-subgroup. By hypothesis each $P_i$ is normal.
 
 ::: pf
@@ -60,13 +60,13 @@ $P_j$.
 ::: pf-proof
 
 Let $x\in P_i$ and $y\in P_j$. Because $P_i\trianglelefteq G$,
-\[
+$$
 [x,y]=xyx^{-1}y^{-1}\in P_i.
-\]
+$$
 Because $P_j\trianglelefteq G$, the same commutator lies in $P_j$. Hence
-\[
+$$
 [x,y]\in P_i\cap P_j=\{e\}
-\]
+$$
 by step [](#s1){.pf-ref}, so $xy=yx$.
 
 :::
@@ -76,11 +76,11 @@ by step [](#s1){.pf-ref}, so $xy=yx$.
 ::: {.pf-step #s3}
 
 The multiplication map
-\[
+$$
 \mu:P_1\times\cdots\times P_r\longrightarrow G,
 \qquad
 (x_1,\ldots,x_r)\longmapsto x_1\cdots x_r
-\]
+$$
 is a homomorphism.
 
 ::: pf-proof
@@ -100,12 +100,12 @@ The homomorphism $\mu$ is injective.
 ::: pf-proof
 
 Suppose $x_1\cdots x_r=e$ with $x_i\in P_i$. Fix $i$. Then
-\[
+$$
 x_i=\left(\prod_{j\ne i}x_j\right)^{-1}.
-\]
+$$
 The left side has $p_i$-power order. The right side belongs to the product of
 the other Sylow subgroups, whose order divides
-\(\prod_{j\ne i}p_j^{a_j}\), which is coprime to $p_i$. Hence $x_i=e$.
+$\prod_{j\ne i}p_j^{a_j}$, which is coprime to $p_i$. Hence $x_i=e$.
 Since this holds for every $i$, the kernel is trivial.
 
 :::
@@ -119,11 +119,11 @@ The homomorphism $\mu$ is surjective.
 ::: pf-proof
 
 Its domain has order
-\[
+$$
 \prod_{i=1}^r|P_i|
 =\prod_{i=1}^rp_i^{a_i}
 =|G|.
-\]
+$$
 By step [](#s4){.pf-ref}, $\mu$ is injective between finite groups of the same order, hence
 surjective.
 
@@ -134,9 +134,9 @@ surjective.
 ::: pf-step
 
 Therefore
-\[
+$$
 G\cong P_1\times\cdots\times P_r.
-\]
+$$
 
 ::: pf-proof
 

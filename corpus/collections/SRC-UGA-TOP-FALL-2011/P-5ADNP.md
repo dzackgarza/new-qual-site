@@ -55,15 +55,15 @@ The set $A\cap\cl_X(B)$ is closed in $A$ and contains $B$.
 ::: pf-proof
 The set $\cl_X(B)$ is closed in $X$, so its intersection with $A$ is closed in the subspace $A$.
 Also
-\[
+$$
 B\subseteq A
 \qquad\text{and}\qquad
 B\subseteq\cl_X(B),
-\]
+$$
 hence
-\[
+$$
 B\subseteq A\cap\cl_X(B).
-\]
+$$
 :::
 
 :::
@@ -81,23 +81,23 @@ Apply step [](#a-cap-clx-closed){.pf-ref}.
 ::: {.pf-step #contained-in-every-c}
 Let $C$ be any closed subset of $A$ containing $B$.
 Then
-\[
+$$
 A\cap\cl_X(B)\subseteq C.
-\]
+$$
 
 ::: pf-proof
 Because $C$ is closed in the subspace $A$, there is a closed set $F\subseteq X$ such that
-\[
+$$
 C=A\cap F.
-\]
+$$
 Since $B\subseteq C\subseteq F$ and $F$ is closed in $X$, minimality of the closure in $X$ gives
-\[
+$$
 \cl_X(B)\subseteq F.
-\]
+$$
 Intersecting with $A$ yields
-\[
+$$
 A\cap\cl_X(B)\subseteq A\cap F=C.
-\]
+$$
 :::
 
 :::
@@ -114,9 +114,9 @@ By step [](#contained-in-every-c){.pf-ref}, $A\cap\cl_X(B)$ lies in every such $
 
 ::: pf-step
 Therefore
-\[
+$$
 \boxed{\cl_A(B)=A\cap\cl_X(B)}.
-\]
+$$
 
 ::: pf-proof
 Combine step [](#cla-subset-a-cap-clx){.pf-ref} and step [](#a-cap-clx-subset-cla){.pf-ref}.

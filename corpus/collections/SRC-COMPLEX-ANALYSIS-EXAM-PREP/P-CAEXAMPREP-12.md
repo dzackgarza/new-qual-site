@@ -15,9 +15,9 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 A=\{x+iy:xy>1,\ x>0,\ y>0\}.
-\]
+$$
 What is the image of $A$ under the map $f(z)=z^2$?
 :::
 
@@ -27,26 +27,26 @@ What is the image of $A$ under the map $f(z)=z^2$?
 
 ::: {.pf-step #s1-1}
 
-If \(z=x+iy\in A\), then
-\[
+If $z=x+iy\in A$, then
+$$
 \operatorname{Im}(z^2)>2.
-\]
+$$
 
 
 ::: pf-proof
 
-For \(z=x+iy\),
-\[
+For $z=x+iy$,
+$$
 z^2=(x^2-y^2)+2ixy.
-\]
-Since \(z\in A\) means \(xy>1\), it follows that
-\[
+$$
+Since $z\in A$ means $xy>1$, it follows that
+$$
 \operatorname{Im}(z^2)=2xy>2.
-\]
+$$
 Thus
-\[
+$$
 f(A)\subseteq\{w:\operatorname{Im}w>2\}.
-\]
+$$
 
 :::
 
@@ -54,25 +54,25 @@ f(A)\subseteq\{w:\operatorname{Im}w>2\}.
 
 ::: {.pf-step #s1-2}
 
-Every \(w\) with \(\operatorname{Im}w>2\) is equal to \(z^2\) for some \(z\in A\).
+Every $w$ with $\operatorname{Im}w>2$ is equal to $z^2$ for some $z\in A$.
 
 
 ::: pf-proof
 
-Let \(w\) satisfy \(\operatorname{Im}w>2\). Then \(w\ne0\) and its argument may be chosen as \(\theta\in(0,\pi)\). Write
-\[
+Let $w$ satisfy $\operatorname{Im}w>2$. Then $w\ne0$ and its argument may be chosen as $\theta\in(0,\pi)$. Write
+$$
 w=re^{i\theta},
 \qquad r>0,
-\]
+$$
 and take
-\[
+$$
 z=\sqrt r\,e^{i\theta/2}=x+iy.
-\]
-Because \(0<\theta/2<\pi/2\), one has \(x>0\) and \(y>0\). Moreover \(z^2=w\), so
-\[
+$$
+Because $0<\theta/2<\pi/2$, one has $x>0$ and $y>0$. Moreover $z^2=w$, so
+$$
 2xy=\operatorname{Im}(z^2)=\operatorname{Im}w>2,
-\]
-hence \(xy>1\). Therefore \(z\in A\).
+$$
+hence $xy>1$. Therefore $z\in A$.
 
 :::
 
@@ -81,9 +81,9 @@ hence \(xy>1\). Therefore \(z\in A\).
 ::: {.pf-step #s1-3}
 
 The image is
-\[
+$$
 \boxed{f(A)=\{w\in\CC:\operatorname{Im}w>2\}}.
-\]
+$$
 
 
 ::: pf-proof

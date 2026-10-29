@@ -39,13 +39,13 @@ audit:
 
 ::: {.problem}
 A locally free sheaf $\mathcal{E}$ on a curve $C$ is said to be **stable** if for every quotient locally free sheaf
-\[
+$$
 \mathcal{E} \rightarrow \mathcal{F} \rightarrow 0, \qquad \mathcal{F} \neq \mathcal{E}, \mathcal{F} \neq 0
-,\]
+,$$
 we have
-\[
+$$
 (\operatorname{deg} \mathcal{F}) / \operatorname{rank} \mathcal{F}>(\operatorname{deg} \mathcal{E}) / \operatorname{rank} \mathcal{E}
-.\]
+.$$
 Replacing $>$ by $\geqslant$ defines **semistable**.
 
 a. A decomposable $\mathcal{E}$ is never stable.

@@ -57,9 +57,9 @@ The congruence $2^4=16\equiv-1\pmod{17}$ gives $2^8\equiv1\pmod{17}$. The order 
 ::: {.pf-step #s1-3}
 
 If $\alpha^{17}=1$ and $\alpha\neq1$, then
-\[
+$$
 \boxed{[F(\alpha):F]=8}.
-\]
+$$
 
 
 ::: pf-proof

@@ -30,9 +30,9 @@ audit:
 
 ::: {.problem}
 Compute
-\[
+$$
 \int_0^\infty \frac{x^{50}}{x^{100}+1}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -55,40 +55,40 @@ Write $\Sigma_{g,b}$ for the compact connected orientable surface of genus $g$ w
 ::: {.pf-step #s1}
 
 The orientable surfaces with Euler characteristic $-3$ are exactly
-\[
+$$
 \Sigma_{0,5},
 \qquad
 \Sigma_{1,3},
 \qquad
 \Sigma_{2,1}.
-\]
+$$
 
 ::: pf-proof
 
 By the classification theorem for compact connected surfaces, every orientable example is homeomorphic to a unique $\Sigma_{g,b}$ with
-\[
+$$
 g\ge0,
 \qquad
 b\ge0,
-\]
+$$
 and
-\[
+$$
 \chi(\Sigma_{g,b})=2-2g-b.
-\]
+$$
 The condition $\chi=-3$ is therefore
-\[
+$$
 2-2g-b=-3,
 \qquad\text{equivalently}\qquad
 2g+b=5.
-\]
+$$
 Since $g,b$ are nonnegative integers, the only solutions are
-\[
+$$
 (g,b)=(0,5),
 \qquad
 (1,3),
 \qquad
 (2,1).
-\]
+$$
 
 :::
 
@@ -97,7 +97,7 @@ Since $g,b$ are nonnegative integers, the only solutions are
 ::: {.pf-step #s2}
 
 The nonorientable surfaces with Euler characteristic $-3$ are exactly
-\[
+$$
 N_{1,4},
 \quad
 N_{2,3},
@@ -107,28 +107,28 @@ N_{3,2},
 N_{4,1},
 \quad
 N_{5,0}.
-\]
+$$
 
 ::: pf-proof
 
 Again by the classification theorem, every compact connected nonorientable surface is homeomorphic to a unique $N_{k,b}$ with
-\[
+$$
 k\ge1,
 \qquad
 b\ge0,
-\]
+$$
 and
-\[
+$$
 \chi(N_{k,b})=2-k-b.
-\]
+$$
 Thus $\chi=-3$ is equivalent to
-\[
+$$
 k+b=5.
-\]
+$$
 The positive-integer/nonnegative-integer solutions are
-\[
+$$
 (k,b)=(1,4),(2,3),(3,2),(4,1),(5,0).
-\]
+$$
 
 :::
 
@@ -181,7 +181,7 @@ The Klein bottle is $N_{2,0}$, so deleting three disks gives $N_{2,3}$.
 :::
 
 Therefore the number of homeomorphism classes is
-\[
+$$
 \boxed{8}.
-\]
+$$
 :::

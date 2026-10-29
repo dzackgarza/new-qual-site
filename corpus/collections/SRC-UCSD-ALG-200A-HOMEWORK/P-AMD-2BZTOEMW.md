@@ -37,9 +37,9 @@ audit:
 
 ::: {.problem}
 Let $p$ be a prime and let $G$ be a finite group with
-\[
+$$
 |G|=p(p+1).
-\]
+$$
 Prove that $G$ has either a normal subgroup of order $p$ or a normal subgroup of order $p+1$.
 :::
 
@@ -51,28 +51,28 @@ Let $n_p$ denote the number of Sylow $p$-subgroups of $G$.
 ::: pf-step
 
 One has
-\[
+$$
 n_p\in\{1,p+1\}.
-\]
+$$
 
 ::: pf-proof
 
 Since $p$ occurs to the first power in $|G|=p(p+1)$, a Sylow $p$-subgroup has order $p$.
 Sylow's theorem gives
-\[
+$$
 n_p\equiv1\pmod p
 \qquad\text{and}\qquad
 n_p\mid p+1.
-\]
+$$
 In particular,
-\[
+$$
 1\le n_p\le p+1.
-\]
+$$
 The only positive integers in this interval congruent to $1$ modulo $p$ are $1$ and $p+1$.
 Hence
-\[
+$$
 n_p\in\{1,p+1\}.
-\]
+$$
 
 :::
 
@@ -87,9 +87,9 @@ If $n_p=1$, then $G$ has a normal subgroup of order $p$.
 The unique Sylow $p$-subgroup is normal and has order $p$.
 
 Assume from now on that
-\[
+$$
 n_p=p+1.
-\]
+$$
 
 :::
 
@@ -98,9 +98,9 @@ n_p=p+1.
 ::: {.pf-step #s3}
 
 Distinct Sylow $p$-subgroups intersect trivially, and their nonidentity elements account for exactly
-\[
+$$
 (p+1)(p-1)=p^2-1
-\]
+$$
 elements of $G$.
 
 ::: pf-proof
@@ -109,9 +109,9 @@ Every Sylow $p$-subgroup has prime order $p$.
 Two distinct subgroups of order $p$ can intersect only in the identity, since a nontrivial intersection would have order $p$ and force the subgroups to be equal.
 Thus the $p+1$ Sylow $p$-subgroups have pairwise disjoint sets of $p-1$ nonidentity elements.
 Their union therefore contains
-\[
+$$
 (p+1)(p-1)=p^2-1
-\]
+$$
 nonidentity elements.
 
 :::
@@ -125,15 +125,15 @@ Exactly $p$ nonidentity elements of $G$ have order different from $p$.
 ::: pf-proof
 
 The group has
-\[
+$$
 |G|=p^2+p
-\]
+$$
 elements.
 By step [](#s3){.pf-ref}, exactly $p^2-1$ of them are nonidentity elements of order $p$.
 After removing those elements and the identity, the number remaining is
-\[
+$$
 p^2+p-(p^2-1)-1=p.
-\]
+$$
 These remaining elements are precisely the nonidentity elements whose order is not $p$.
 
 :::
@@ -143,24 +143,24 @@ These remaining elements are precisely the nonidentity elements whose order is n
 ::: {.pf-step #s5}
 
 For every Sylow $p$-subgroup $P$ of $G$,
-\[
+$$
 N_G(P)=P.
-\]
+$$
 
 ::: pf-proof
 
 By the orbit-stabilizer formula for the conjugation action of $G$ on its Sylow $p$-subgroups,
-\[
+$$
 [G:N_G(P)]=n_p=p+1.
-\]
+$$
 Therefore
-\[
+$$
 |N_G(P)|=\frac{|G|}{p+1}=p.
-\]
+$$
 Since $P\le N_G(P)$ and $|P|=p$, it follows that
-\[
+$$
 N_G(P)=P.
-\]
+$$
 
 :::
 
@@ -175,18 +175,18 @@ Then $C_G(x)$ contains no nonidentity element of order $p$.
 
 Such an $x$ exists by step [](#s4){.pf-ref}. Suppose, for contradiction, that $y\in C_G(x)$ has order $p$.
 Then
-\[
+$$
 P=\langle y\rangle
-\]
+$$
 is a Sylow $p$-subgroup of $G$.
 Because $x$ commutes with $y$, it normalizes $P$, so
-\[
+$$
 x\in N_G(P).
-\]
+$$
 By step [](#s5){.pf-ref},
-\[
+$$
 N_G(P)=P.
-\]
+$$
 Hence $x\in P$, forcing $x$ to have order $1$ or $p$, contrary to the choice of $x$.
 Therefore $C_G(x)$ has no nonidentity element of order $p$.
 
@@ -201,17 +201,17 @@ The order of $C_G(x)$ is not divisible by $p$ and hence divides $p+1$.
 ::: pf-proof
 
 If $p$ divided $|C_G(x)|$, Cauchy's theorem would give an element of order $p$ in $C_G(x)$, contradicting step [](#s6){.pf-ref}. Thus
-\[
+$$
 p\nmid |C_G(x)|.
-\]
+$$
 Since $C_G(x)\le G$, Lagrange's theorem gives
-\[
+$$
 |C_G(x)|\mid p(p+1).
-\]
+$$
 Because $p$ is coprime to $p+1$ and does not divide $|C_G(x)|$, it follows that
-\[
+$$
 |C_G(x)|\mid p+1.
-\]
+$$
 
 :::
 
@@ -220,33 +220,33 @@ Because $p$ is coprime to $p+1$ and does not divide $|C_G(x)|$, it follows that
 ::: {.pf-step #s8}
 
 The conjugacy class of $x$ has exactly $p$ elements, and
-\[
+$$
 |C_G(x)|=p+1.
-\]
+$$
 
 ::: pf-proof
 
 The conjugacy-class formula gives
-\[
+$$
 |x^G|=[G:C_G(x)]=\frac{p(p+1)}{|C_G(x)|}.
-\]
+$$
 By step [](#s7){.pf-ref}, $|C_G(x)|$ divides $p+1$, so $|x^G|$ is divisible by $p$.
 Conjugation preserves element order, so every element of $x^G$ is nonidentity and has order different from $p$.
 By step [](#s4){.pf-ref} there are exactly $p$ such elements in all of $G$.
 Therefore
-\[
+$$
 |x^G|\le p.
-\]
+$$
 Since $|x^G|$ is a positive multiple of $p$, one must have
-\[
+$$
 |x^G|=p.
-\]
+$$
 Consequently
-\[
+$$
 |C_G(x)|=\frac{|G|}{|x^G|}
 =\frac{p(p+1)}p
 =p+1.
-\]
+$$
 
 :::
 
@@ -260,9 +260,9 @@ The subgroup $C_G(x)$ consists exactly of the identity together with all element
 
 By step [](#s6){.pf-ref}, every nonidentity element of $C_G(x)$ has order different from $p$.
 By step [](#s8){.pf-ref},
-\[
+$$
 |C_G(x)|=p+1,
-\]
+$$
 so $C_G(x)$ contains exactly $p$ nonidentity elements.
 By step [](#s4){.pf-ref}, the whole group $G$ has exactly $p$ nonidentity elements whose order is not $p$.
 Hence $C_G(x)$ contains all of them.
@@ -278,18 +278,18 @@ The subgroup $C_G(x)$ is normal in $G$.
 ::: pf-proof
 
 Let
-\[
+$$
 S=\{1\}\cup\{g\in G:\operatorname{ord}(g)\ne p\}.
-\]
+$$
 By step [](#s9){.pf-ref},
-\[
+$$
 C_G(x)=S.
-\]
+$$
 Conjugation preserves element order, so $S$ is invariant under conjugation by every element of $G$.
 Therefore
-\[
+$$
 C_G(x)\normal G.
-\]
+$$
 
 :::
 

@@ -35,9 +35,9 @@ c. Determine the Galois group of $E$ over $\QQ$ and determine all of the interme
 ::: {.pf-step #s1}
 
 The minimal polynomial of $u$ is
-\[
+$$
 \boxed{f(x)=x^4-4x^2+2}.
-\]
+$$
 
 ::: pf-proof
 
@@ -142,10 +142,10 @@ $u \in E$ and $v \in E$ by step [](#s2-2){.pf-ref}, so $\pm u, \pm v \in E$.
 ::: {.pf-step #s3}
 
 The Galois group and the complete list of intermediate fields are
-\[
+$$
 \boxed{\Gal(E/\QQ)\cong C_4,\qquad
 \QQ\subset\QQ(\sqrt2)\subset E}.
-\]
+$$
 
 ::: pf-proof
 

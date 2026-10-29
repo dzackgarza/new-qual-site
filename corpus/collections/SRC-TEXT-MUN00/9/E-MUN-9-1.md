@@ -29,11 +29,11 @@ Define an injective map $f: \ZZ_+ \to X^\omega$, where $X$ is the two-element se
 :::
 
 ::: {.solution}
-For \(n\in\ZZ_+\), define
-\[
+For $n\in\ZZ_+$, define
+$$
 f(n)=(\underbrace{1,\ldots,1}_{n\text{ entries}},0,0,\ldots)\in X^\omega.
-\]
-If \(m<n\), then the \(n\)-th coordinate of \(f(m)\) is \(0\), whereas the \(n\)-th coordinate of \(f(n)\) is \(1\). Hence \(f(m)\ne f(n)\), so \(f\) is injective.
+$$
+If $m<n$, then the $n$-th coordinate of $f(m)$ is $0$, whereas the $n$-th coordinate of $f(n)$ is $1$. Hence $f(m)\ne f(n)$, so $f$ is injective.
 
 The construction is explicit and makes no choices from an arbitrary family of sets, so no form of the axiom of choice is used.
 :::

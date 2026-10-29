@@ -71,14 +71,14 @@ By step [](#s2){.pf-ref}, $n_5$ divides $169$ and is congruent to $1$ modulo $5$
 ::: {.pf-step #s4}
 
 There are exactly four isomorphism classes, represented by
-\[
+$$
 \boxed{\begin{gathered}
 C_{25}\times C_{169},\qquad
 C_{25}\times C_{13}\times C_{13},\\
 C_5\times C_5\times C_{169},\qquad
 C_5\times C_5\times C_{13}\times C_{13}.
 \end{gathered}}
-\]
+$$
 
 ::: pf-proof
 

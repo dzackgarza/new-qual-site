@@ -44,11 +44,11 @@ By construction, $S$ is a right ideal and $I\subseteq S$, so $S\ne0$.
 
 Let $J\subseteq A$ be a right ideal isomorphic to $I$, and let $a\in A$.
 Left multiplication by $a$ defines a homomorphism of right $A$-modules
-\[
+$$
 \lambda_a:J\longrightarrow A,
 \qquad
 x\longmapsto ax.
-\]
+$$
 Since $J$ is simple, $\ker\lambda_a$ is either $J$ or $0$.
 Thus $aJ=0$, or else $aJ$ is a simple right ideal isomorphic to $J$, hence to $I$.
 In either case $aJ\subseteq S$.
@@ -67,9 +67,9 @@ The right $A$-module $A_A$ is a sum of simple submodules.
 
 The ring $A$ is simple and $S$ from step [](#s1){.pf-ref} is a nonzero two-sided ideal.
 Therefore
-\[
+$$
 S=A.
-\]
+$$
 Every summand used to define $S$ is a minimal right ideal, hence a simple right $A$-module.
 Thus $A_A$ is a sum of simple submodules.
 
@@ -85,17 +85,17 @@ A module that is a sum of simple submodules is a direct sum of simple submodules
 
 Let $M$ be a sum of simple submodules.
 Choose, by Zorn's lemma, a maximal family $\{M_\lambda\}_{\lambda\in\Lambda}$ of simple submodules whose sum is direct, and put
-\[
+$$
 N=\bigoplus_{\lambda\in\Lambda}M_\lambda.
-\]
+$$
 Suppose $N\ne M$.
 Because $M$ is a sum of simple submodules, there is a simple submodule $T\subseteq M$ with $T\nsubseteq N$.
 Now $T\cap N$ is a submodule of the simple module $T$, so it is either $0$ or $T$.
 It cannot be $T$, because $T\nsubseteq N$.
 Hence $T\cap N=0$, and therefore
-\[
+$$
 N\oplus T
-\]
+$$
 is a strictly larger direct sum of simple submodules, contradicting maximality.
 Thus $N=M$.
 
@@ -110,22 +110,22 @@ The module $A_A$ is a finite direct sum of simple right ideals.
 ::: pf-proof
 
 By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, write
-\[
+$$
 A=\bigoplus_{\lambda\in\Lambda} I_\lambda,
-\]
+$$
 where every $I_\lambda$ is a simple right ideal.
 Because an element of a direct sum has finite support, there is a finite set $F\subseteq\Lambda$ such that
-\[
+$$
 1\in\bigoplus_{\lambda\in F}I_\lambda.
-\]
+$$
 The finite sum on the right is a right ideal, so
-\[
+$$
 A=1A\subseteq\bigoplus_{\lambda\in F}I_\lambda\subseteq A.
-\]
+$$
 Hence
-\[
+$$
 A=\bigoplus_{\lambda\in F}I_\lambda,
-\]
+$$
 a finite direct sum of simple right $A$-modules.
 
 :::

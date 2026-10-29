@@ -17,27 +17,27 @@ audit:
 
 ::: {.problem}
 Suppose $f:\RR^3\to\RR$ is continuously differentiable and
-\[
+$$
 \nabla f(0,0,0)\ne0.
-\]
+$$
 Show that there exist continuously differentiable functions
-\[
+$$
 g,h:\RR^3\to\RR
-\]
+$$
 such that
-\[
+$$
 (x,y,z)\longmapsto
 \bigl(f(x,y,z),g(x,y,z),h(x,y,z)\bigr)
-\]
+$$
 is one-to-one on some neighborhood of $(0,0,0)$.
 :::
 
 ::: {.solution}
 
 Since
-\[
+$$
 \nabla f(0,0,0)\ne0,
-\]
+$$
 at least one first partial derivative of $f$ at the origin is nonzero.
 
 ::: pf
@@ -45,15 +45,15 @@ at least one first partial derivative of $f$ at the origin is nonzero.
 ::: {.pf-step #s1-1}
 
 After permuting the coordinates if necessary, assume
-\[
+$$
 f_x(0,0,0)\ne0.
-\]
+$$
 
 
 ::: pf-proof
 
 The gradient is
-\[
+$$
 \nabla f(0,0,0)
 =
 \bigl(
@@ -61,7 +61,7 @@ f_x(0,0,0),
 f_y(0,0,0),
 f_z(0,0,0)
 \bigr).
-\]
+$$
 Since this vector is nonzero, at least one coordinate is nonzero.
 Relabel the coordinate axes so that it is the first.
 
@@ -72,13 +72,13 @@ Relabel the coordinate axes so that it is the first.
 ::: {.pf-step #s1-2}
 
 Define
-\[
+$$
 g(x,y,z)=y
 \qquad\text{and}\qquad
 h(x,y,z)=z.
-\]
+$$
 Then the map
-\[
+$$
 \Phi:\RR^3\to\RR^3,
 \qquad
 \Phi(x,y,z)
@@ -86,7 +86,7 @@ Then the map
 \bigl(
 f(x,y,z),y,z
 \bigr)
-\]
+$$
 is continuously differentiable.
 
 
@@ -102,7 +102,7 @@ Therefore $\Phi$ is $C^1$.
 ::: {.pf-step #s1-3}
 
 The derivative matrix of $\Phi$ at the origin is
-\[
+$$
 D\Phi(0)
 =
 \begin{pmatrix}
@@ -110,15 +110,15 @@ f_x(0)&f_y(0)&f_z(0)\\
 0&1&0\\
 0&0&1
 \end{pmatrix}.
-\]
+$$
 
 
 ::: pf-proof
 
 Differentiate the three component functions
-\[
+$$
 f,\quad y,\quad z
-\]
+$$
 with respect to the variables $x,y,z$.
 
 :::
@@ -128,21 +128,21 @@ with respect to the variables $x,y,z$.
 ::: {.pf-step #s1-4}
 
 The determinant of $D\Phi(0)$ is
-\[
+$$
 \det D\Phi(0)
 =
 f_x(0,0,0)
 \ne0.
-\]
+$$
 
 
 ::: pf-proof
 
 The matrix in step [](#s1-3){.pf-ref} is upper triangular.
 Its determinant is the product of its diagonal entries:
-\[
+$$
 f_x(0,0,0)\cdot1\cdot1.
-\]
+$$
 This is nonzero by step [](#s1-1){.pf-ref}.
 
 :::
@@ -152,39 +152,39 @@ This is nonzero by step [](#s1-1){.pf-ref}.
 ::: {.pf-step #s1-5}
 
 There exists an open neighborhood
-\[
+$$
 U
-\]
+$$
 of $(0,0,0)$ such that
-\[
+$$
 \Phi|_U
-\]
+$$
 is one-to-one.
 
 
 ::: pf-proof
 
 The inverse function theorem applies to the $C^1$ map $\Phi$ because
-\[
+$$
 \det D\Phi(0)\ne0
-\]
+$$
 by step [](#s1-4){.pf-ref}.
 Hence there exist open neighborhoods
-\[
+$$
 U
 \ni
 (0,0,0)
-\]
+$$
 and
-\[
+$$
 V
 \ni
 \Phi(0,0,0)
-\]
+$$
 such that
-\[
+$$
 \Phi|_U:U\to V
-\]
+$$
 is a $C^1$ diffeomorphism.
 In particular, it is one-to-one.
 
@@ -195,9 +195,9 @@ In particular, it is one-to-one.
 ::: {.pf-step #s1-6}
 
 Therefore the functions
-\[
+$$
 \boxed{g(x,y,z)=y,\qquad h(x,y,z)=z}
-\]
+$$
 have the required property.
 
 

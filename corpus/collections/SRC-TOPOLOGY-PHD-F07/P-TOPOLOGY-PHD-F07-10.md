@@ -44,9 +44,9 @@ It is connected with this subspace topology.
 
 ::: pf-proof
 The topology that $A$ inherits from $\overline A$ is the same as the topology that it inherits directly from $X$: if $U$ is open in $X$, then
-\[
+$$
 A\cap(U\cap\overline A)=A\cap U,
-\]
+$$
 because $A\subseteq\overline A$.
 Thus the given connectedness of $A$ is unchanged when $A$ is viewed as a subspace of $\overline A$.
 :::
@@ -56,9 +56,9 @@ Thus the given connectedness of $A$ is unchanged when $A$ is viewed as a subspac
 ::: {.pf-step #assume-separation}
 Suppose, for contradiction, that $\overline A$ is disconnected.
 Then there are nonempty disjoint subsets $U,V\subseteq\overline A$ that are open in $\overline A$ and satisfy
-\[
+$$
 \overline A=U\cup V.
-\]
+$$
 
 ::: pf-proof
 This is exactly the definition of a separation of the subspace $\overline A$.
@@ -71,15 +71,15 @@ The connected set $A$ is contained entirely in one of $U$ or $V$.
 
 ::: pf-proof
 We have
-\[
+$$
 A=(A\cap U)\cup(A\cap V).
-\]
+$$
 The two sets on the right are disjoint and open in $A$, because $U$ and $V$ are open in $\overline A$.
 If both were nonempty, they would separate $A$, contradicting step [](#a-connected-in-closure){.pf-ref}. Hence one is empty.
 After interchanging $U$ and $V$ if necessary, assume
-\[
+$$
 A\subseteq U.
-\]
+$$
 :::
 
 :::
@@ -89,9 +89,9 @@ The set $U$ is closed in $\overline A$.
 
 ::: pf-proof
 Since
-\[
+$$
 \overline A\setminus U=V
-\]
+$$
 and $V$ is open in $\overline A$, the set $U$ is closed in $\overline A$.
 :::
 
@@ -102,16 +102,16 @@ The closure of $A$ taken inside the subspace $\overline A$ is all of $\overline 
 
 ::: pf-proof
 The closure of a subset $B\subseteq Z\subseteq X$ in the subspace $Z$ is
-\[
+$$
 \operatorname{Cl}_Z(B)=Z\cap\operatorname{Cl}_X(B).
-\]
+$$
 Taking $B=A$ and $Z=\overline A$ gives
-\[
+$$
 \operatorname{Cl}_{\overline A}(A)
 =\overline A\cap\operatorname{Cl}_X(A)
 =\overline A\cap\overline A
 =\overline A.
-\]
+$$
 :::
 
 :::
@@ -124,9 +124,9 @@ By step [](#a-subset-of-u){.pf-ref}, $A\subseteq U$.
 By step [](#u-closed){.pf-ref}, $U$ is closed in $\overline A$.
 Therefore $U$ contains the closure of $A$ in $\overline A$.
 By step [](#closure-of-a-is-closure){.pf-ref}, that closure is all of $\overline A$, so
-\[
+$$
 \overline A\subseteq U.
-\]
+$$
 Hence $U=\overline A$, forcing $V=\varnothing$, contrary to step [](#assume-separation){.pf-ref}.
 :::
 

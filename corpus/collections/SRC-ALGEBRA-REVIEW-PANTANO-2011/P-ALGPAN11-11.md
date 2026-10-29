@@ -26,9 +26,9 @@ For a fixed element $a$ of a group $G$, determine when the map $x\mapsto axa^{-2
 
 ::: {.solution}
 The map
-\[
+$$
 \varphi(x)=axa^{-2}
-\]
+$$
 is a homomorphism if and only if $\boxed{a=e}$.
 
 ::: pf
@@ -41,9 +41,9 @@ A homomorphism forces $a=e$.
 
 Every group homomorphism sends the identity to the identity.
 But
-\[
+$$
 \varphi(e)=aea^{-2}=a^{-1}.
-\]
+$$
 Hence $a^{-1}=e$, so $a=e$.
 
 :::

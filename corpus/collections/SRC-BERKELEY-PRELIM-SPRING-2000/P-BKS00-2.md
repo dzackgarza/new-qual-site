@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Let $\{f_n\}_{n=1}^\infty$ be a uniformly bounded equicontinuous sequence of real-valued functions on a compact metric space $(X,d)$. Define
-\[
+$$
 g_n(x)=\max\{f_1(x),\ldots,f_n(x)\}.
-\]
+$$
 Prove that $\{g_n\}$ converges uniformly on $X$.
 :::
 

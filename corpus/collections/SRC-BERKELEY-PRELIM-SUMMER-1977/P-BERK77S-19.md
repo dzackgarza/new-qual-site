@@ -27,13 +27,13 @@ audit:
 
 ::: {.problem}
 Let $p$ be an odd prime. If
-\[
+$$
 x^2\equiv-1\pmod p
-\]
+$$
 has a solution, prove that
-\[
+$$
 p\equiv1\pmod4.
-\]
+$$
 :::
 
 ::: {.solution}

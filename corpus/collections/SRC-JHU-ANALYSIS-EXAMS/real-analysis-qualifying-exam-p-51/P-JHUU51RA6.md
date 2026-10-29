@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Define $u\in\mathcal D'(\RR)$ formally by
-\[
+$$
 \langle u,\varphi\rangle
 =
 \lim_{\varepsilon\to0^+}
@@ -35,11 +35,11 @@ Define $u\in\mathcal D'(\RR)$ formally by
 \int_{\varepsilon}^{\infty}\frac{\varphi(x)}x\,dx
 \right),
 \qquad \varphi\in C_c^\infty(\RR).
-\]
+$$
 Show that the limit exists and that
-\[
+$$
 u=(\log|x|)'
-\]
+$$
 in the sense of distributions.
 :::
 
@@ -54,27 +54,27 @@ The principal-value limit exists.
 ::: pf-proof
 
 Fix $\varphi\in C_c^\infty(\RR)$. For $0<\varepsilon<1$, symmetry gives
-\[
+$$
 \int_{-1}^{-\varepsilon}\frac{\varphi(0)}x\,dx
 +
 \int_{\varepsilon}^{1}\frac{\varphi(0)}x\,dx=0.
-\]
+$$
 Hence the truncated principal value can be rewritten as
-\[
+$$
 \begin{aligned}
 &\int_{\varepsilon<|x|<1}\frac{\varphi(x)-\varphi(0)}x\,dx
 +
 \int_{|x|\ge1}\frac{\varphi(x)}x\,dx.
 \end{aligned}
-\]
+$$
 The second integral is absolutely convergent because $\varphi$ has compact support. Near $0$, the mean-value theorem gives
-\[
+$$
 |\varphi(x)-\varphi(0)|\le C|x|,
-\]
+$$
 so
-\[
+$$
 \left|\frac{\varphi(x)-\varphi(0)}x\right|\le C.
-\]
+$$
 Thus the first integral converges absolutely as $\varepsilon\to0^+$. Therefore the principal-value limit exists.
 
 :::
@@ -88,15 +88,15 @@ The locally integrable function $\log|x|$ defines a distribution.
 ::: pf-proof
 
 Since
-\[
+$$
 \int_0^1|\log x|\,dx<\infty,
-\]
+$$
 we have $\log|x|\in L^1_{\mathrm{loc}}(\RR)$. Hence it defines a distribution by
-\[
+$$
 \langle \log|x|,\varphi\rangle
 =
 \int_{\RR}\log|x|\,\varphi(x)\,dx.
-\]
+$$
 
 :::
 
@@ -109,12 +109,12 @@ Its distributional derivative equals $u$.
 ::: pf-proof
 
 By definition,
-\[
+$$
 \langle (\log|x|)',\varphi\rangle
 =-\int_{\RR}\log|x|\,\varphi'(x)\,dx.
-\]
+$$
 Split at $\pm\varepsilon$ and integrate by parts:
-\[
+$$
 \begin{aligned}
 &-\int_{-\infty}^{-\varepsilon}\log|x|\,\varphi'(x)\,dx
 -\int_{\varepsilon}^{\infty}\log x\,\varphi'(x)\,dx\\
@@ -125,25 +125,25 @@ Split at $\pm\varepsilon$ and integrate by parts:
 +
 \log\varepsilon\,[\varphi(\varepsilon)-\varphi(-\varepsilon)].
 \end{aligned}
-\]
+$$
 Because $\varphi$ is smooth,
-\[
+$$
 \varphi(\varepsilon)-\varphi(-\varepsilon)=O(\varepsilon),
-\]
+$$
 and therefore
-\[
+$$
 \log\varepsilon\,[\varphi(\varepsilon)-\varphi(-\varepsilon)]\to0
-\]
+$$
 as $\varepsilon\to0^+$. Taking the limit yields
-\[
+$$
 \langle (\log|x|)',\varphi\rangle
 =\operatorname{p.v.}\int_{\RR}\frac{\varphi(x)}x\,dx
 =\langle u,\varphi\rangle.
-\]
+$$
 Thus
-\[
+$$
 \boxed{u=(\log|x|)'}
-\]
+$$
 in $\mathcal D'(\RR)$.
 
 :::

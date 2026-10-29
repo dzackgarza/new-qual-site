@@ -16,9 +16,9 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 F(x)=\int_3^{\sin x}\sqrt{1+t^4}\,dt.
-\]
+$$
 Compute $F'(x)$ and carefully state the theorems needed to justify the answer.
 :::
 

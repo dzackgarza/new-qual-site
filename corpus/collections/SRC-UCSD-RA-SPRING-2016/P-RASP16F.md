@@ -38,28 +38,28 @@ Prove that $f \in L^p(\mu)$ and $f_k \to f$ in $L^q(\mu)$ for any $q \in (1, p)$
 
 ::: pf-step
 
-Show that the limit belongs to \(L^p\).
+Show that the limit belongs to $L^p$.
 
 ::: pf-proof
 
 Let
-\[
+$$
 M:=\sup_k\|f_k\|_p<\infty.
-\]
-Since \(f_k\to f\) in \(L^1\), there is a subsequence \((f_{k_j})\) such that
-\[
+$$
+Since $f_k\to f$ in $L^1$, there is a subsequence $(f_{k_j})$ such that
+$$
 f_{k_j}(x)\to f(x)
-\]
-for almost every \(x\in X\). By Fatou's lemma,
-\[
+$$
+for almost every $x\in X$. By Fatou's lemma,
+$$
 \int_X |f|^p\,d\mu
 \le \liminf_{j\to\infty}\int_X |f_{k_j}|^p\,d\mu
 \le M^p.
-\]
+$$
 Hence
-\[
+$$
 \boxed{f\in L^p(\mu),\qquad \|f\|_p\le M.}
-\]
+$$
 
 :::
 
@@ -67,24 +67,24 @@ Hence
 
 ::: pf-step
 
-Obtain a uniform \(L^p\) bound for the differences.
+Obtain a uniform $L^p$ bound for the differences.
 
 ::: pf-proof
 
 Set
-\[
+$$
 h_k:=f_k-f.
-\]
+$$
 Then
-\[
+$$
 \|h_k\|_1\longrightarrow0
-\]
+$$
 and, by the triangle inequality,
-\[
+$$
 \|h_k\|_p
 \le \|f_k\|_p+\|f\|_p
 \le 2M.
-\]
+$$
 
 :::
 
@@ -92,42 +92,42 @@ and, by the triangle inequality,
 
 ::: pf-step
 
-Interpolate between \(L^1\) and \(L^p\).
+Interpolate between $L^1$ and $L^p$.
 
 ::: pf-proof
 
-Fix \(q\in(1,p)\). Choose \(\theta\in(0,1)\) so that
-\[
+Fix $q\in(1,p)$. Choose $\theta\in(0,1)$ so that
+$$
 \frac1q=\frac\theta1+\frac{1-\theta}{p}.
-\]
+$$
 The standard interpolation inequality gives
-\[
+$$
 \|h_k\|_q
 \le \|h_k\|_1^\theta\|h_k\|_p^{1-\theta}.
-\]
+$$
 For completeness, this follows from Hölder after writing
-\[
+$$
 |h_k|^q=|h_k|^{\theta q}|h_k|^{(1-\theta)q}
-\]
+$$
 with conjugate exponents
-\[
+$$
 \frac1{\theta q}
 \qquad\text{and}\qquad
 \frac p{(1-\theta)q},
-\]
-whose reciprocals sum to \(1\) precisely because of the defining relation for \(\theta\).
+$$
+whose reciprocals sum to $1$ precisely because of the defining relation for $\theta$.
 
 Using Step 2,
-\[
+$$
 \|f_k-f\|_q
 =\|h_k\|_q
 \le (2M)^{1-\theta}\|h_k\|_1^\theta
 \longrightarrow0.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{f_k\to f\text{ in }L^q(\mu)\text{ for every }1<q<p.}
-\]
+$$
 
 :::
 

@@ -23,9 +23,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 I=\frac1{2\pi i}\int_{|z|=1}\frac{(z+2)^2}{z^2(2z-1)}\,dz,
-\]
+$$
 where the circle is oriented counterclockwise.
 :::
 

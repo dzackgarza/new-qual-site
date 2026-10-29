@@ -19,9 +19,9 @@ audit:
 
 ::: {.problem}
 Suppose $(f_n)$ is a sequence of bounded functions from $\RR$ to $\RR$ that converges uniformly to a function $f$. Prove that there is an $M>0$ such that
-\[
+$$
 |f_n(x)|\le M
-\]
+$$
 for all natural numbers $n$ and all real numbers $x$.
 :::
 

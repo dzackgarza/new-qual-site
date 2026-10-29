@@ -22,13 +22,13 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 f(z)=\sum_{n=0}^{\infty}a_nz^n
-\]
+$$
 be analytic in the unit disk. Assume $a_1\ne0$ and
-\[
+$$
 \sum_{n=2}^{\infty}n|a_n|\le |a_1|.
-\]
+$$
 Prove that $f$ is injective.
 :::
 

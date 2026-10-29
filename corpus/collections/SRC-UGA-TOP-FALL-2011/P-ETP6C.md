@@ -35,41 +35,41 @@ Find, for all $k$, the relative homology $H_k (S^n , E)$.
 
 ::: {.pf-step #cw-structure}
 The equator is
-\[
+$$
 E=S^n\cap\{x_n=0\}\cong S^{n-1}.
-\]
-Give \(S^n\) a CW structure for which \(E\) is a subcomplex and the only cells of \(S^n\) not already in \(E\) are the two open \(n\)-cells
-\[
+$$
+Give $S^n$ a CW structure for which $E$ is a subcomplex and the only cells of $S^n$ not already in $E$ are the two open $n$-cells
+$$
 e_+^n=\{x\in S^n:x_n>0\},
 \qquad
 e_-^n=\{x\in S^n:x_n<0\}.
-\]
+$$
 
 ::: pf-proof
 The closed upper and lower hemispheres
-\[
+$$
 D_+^n=\{x\in S^n:x_n\ge0\},
 \qquad
 D_-^n=\{x\in S^n:x_n\le0\}
-\]
-are each homeomorphic to \(D^n\), and both have boundary \(E\cong S^{n-1}\). Choose any CW structure on \(E\). Attaching the interiors of these two hemispheres to \(E\) gives the stated CW structure on \(S^n\). For \(n=1\), the equator is \(S^0\), and the same description says that the two open semicircles are the two relative \(1\)-cells.
+$$
+are each homeomorphic to $D^n$, and both have boundary $E\cong S^{n-1}$. Choose any CW structure on $E$. Attaching the interiors of these two hemispheres to $E$ gives the stated CW structure on $S^n$. For $n=1$, the equator is $S^0$, and the same description says that the two open semicircles are the two relative $1$-cells.
 :::
 
 :::
 
 ::: {.pf-step #relative-chain-groups}
 The relative cellular chain groups are
-\[
+$$
 C_k(S^n,E)
 \cong
 \begin{cases}
 \ZZ^2,&k=n,\\
 0,&k\ne n.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
-For a CW pair \((X,A)\), the relative cellular chain group \(C_k(X,A)\) is free abelian on the \(k\)-cells of \(X\) that are not cells of \(A\). By step [](#cw-structure){.pf-ref}, exactly two cells of \(S^n\) lie outside the subcomplex \(E\), and both have dimension \(n\). They are \(e_+^n\) and \(e_-^n\). Therefore the relative cellular chain group is \(\ZZ^2\) in degree \(n\) and zero in every other degree.
+For a CW pair $(X,A)$, the relative cellular chain group $C_k(X,A)$ is free abelian on the $k$-cells of $X$ that are not cells of $A$. By step [](#cw-structure){.pf-ref}, exactly two cells of $S^n$ lie outside the subcomplex $E$, and both have dimension $n$. They are $e_+^n$ and $e_-^n$. Therefore the relative cellular chain group is $\ZZ^2$ in degree $n$ and zero in every other degree.
 :::
 
 :::
@@ -78,18 +78,18 @@ For a CW pair \((X,A)\), the relative cellular chain group \(C_k(X,A)\) is free 
 Every differential in the relative cellular chain complex is zero.
 
 ::: pf-proof
-The only nonzero relative chain group is \(C_n(S^n,E)\). Its target under the boundary map is
-\[
+The only nonzero relative chain group is $C_n(S^n,E)$. Its target under the boundary map is
+$$
 C_{n-1}(S^n,E)=0,
-\]
-so \(\partial_n=0\). All other differentials have zero domain.
+$$
+so $\partial_n=0$. All other differentials have zero domain.
 :::
 
 :::
 
 ::: pf-step
-Hence, for every \(n\ge1\),
-\[
+Hence, for every $n\ge1$,
+$$
 \boxed{
 H_k(S^n,E;\ZZ)
 \cong
@@ -97,11 +97,11 @@ H_k(S^n,E;\ZZ)
 \ZZ\oplus\ZZ,&k=n,\\
 0,&k\ne n.
 \end{cases}}
-\]
+$$
 
 ::: pf-proof
 Relative cellular homology computes the singular relative homology of a CW pair.
-By step [](#relative-chain-groups){.pf-ref} and step [](#differentials-vanish){.pf-ref}, its chain complex has \(\ZZ^2\) in degree \(n\), zero elsewhere, and zero differentials.
+By step [](#relative-chain-groups){.pf-ref} and step [](#differentials-vanish){.pf-ref}, its chain complex has $\ZZ^2$ in degree $n$, zero elsewhere, and zero differentials.
 Its homology is therefore exactly the displayed group.
 :::
 

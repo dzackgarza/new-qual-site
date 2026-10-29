@@ -18,24 +18,24 @@ audit:
 
 ::: {.problem}
 Let $V$ and $W$ be complex inner-product spaces with
-\[
+$$
 \dim V\le\dim W<\infty.
-\]
+$$
 Prove that there is a linear map $T:V\to W$ such that
-\[
+$$
 \langle T(v),T(v')\rangle_W=\langle v,v'\rangle_V
-\]
+$$
 for all $v,v'\in V$.
 :::
 
 ::: {.solution}
 
 Let
-\[
+$$
 m=\dim V,
 \qquad
 n=\dim W,
-\]
+$$
 so that $m\le n$.
 
 ::: pf
@@ -43,9 +43,9 @@ so that $m\le n$.
 ::: pf-step
 
 There is an orthonormal basis
-\[
+$$
 v_1,\ldots,v_m
-\]
+$$
 of $V$.
 
 
@@ -60,18 +60,18 @@ Choose any basis of $V$ and apply the Gram--Schmidt process.
 ::: pf-step
 
 There are orthonormal vectors
-\[
+$$
 w_1,\ldots,w_m
-\]
+$$
 in $W$.
 
 
 ::: pf-proof
 
 Choose an orthonormal basis
-\[
+$$
 w_1,\ldots,w_n
-\]
+$$
 of $W$ by Gram--Schmidt. Since $m\le n$, retain its first $m$ vectors.
 
 :::
@@ -81,15 +81,15 @@ of $W$ by Gram--Schmidt. Since $m\le n$, retain its first $m$ vectors.
 ::: {.pf-step #s1-3}
 
 Define
-\[
+$$
 T:V\to W
-\]
+$$
 by
-\[
+$$
 T\left(\sum_{i=1}^m a_iv_i\right)
 =
 \sum_{i=1}^m a_iw_i.
-\]
+$$
 Then $T$ is a well-defined linear map.
 
 
@@ -104,29 +104,29 @@ Every vector of $V$ has a unique coordinate expansion in the basis $v_1,\ldots,v
 ::: {.pf-step #s1-4}
 
 For
-\[
+$$
 v=\sum_{i=1}^m a_iv_i
 \qquad\text{and}\qquad
 v'=\sum_{i=1}^m b_iv_i,
-\]
+$$
 one has
-\[
+$$
 \langle Tv,Tv'\rangle_W
 =
 \sum_{i=1}^m a_i\overline{b_i}.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-3){.pf-ref},
-\[
+$$
 Tv=\sum_i a_iw_i,
 \qquad
 Tv'=\sum_i b_iw_i.
-\]
+$$
 Since the $w_i$ are orthonormal,
-\[
+$$
 \begin{aligned}
 \langle Tv,Tv'\rangle_W
 &=
@@ -134,7 +134,7 @@ Since the $w_i$ are orthonormal,
 &=
 \sum_i a_i\overline{b_i}.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -143,11 +143,11 @@ Since the $w_i$ are orthonormal,
 ::: {.pf-step #s1-5}
 
 One also has
-\[
+$$
 \langle v,v'\rangle_V
 =
 \sum_{i=1}^m a_i\overline{b_i}.
-\]
+$$
 
 
 ::: pf-proof
@@ -161,13 +161,13 @@ The vectors $v_1,\ldots,v_m$ form an orthonormal basis of $V$, so the same compu
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{
 \langle T(v),T(v')\rangle_W
 =
 \langle v,v'\rangle_V
 }
-\]
+$$
 for all $v,v'\in V$.
 
 

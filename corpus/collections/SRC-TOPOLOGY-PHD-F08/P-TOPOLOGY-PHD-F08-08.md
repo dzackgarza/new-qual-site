@@ -34,30 +34,30 @@ Prove that the open interval $(0,1)$ considered as a subset of $\RR$ in the usua
 
 ::: {.solution}
 For each integer $n\ge2$, set
-\[
+$$
 U_n=\left(\frac1n,1\right)\subseteq(0,1).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #cover-is-open}
 The family
-\[
+$$
 \{U_n:n\ge2\}
-\]
+$$
 is an open cover of $(0,1)$.
 
 ::: pf-proof
 Each $U_n$ is open in the subspace topology on $(0,1)$.
 Let $x\in(0,1)$.
 By the Archimedean property, choose an integer $n$ with
-\[
+$$
 n>\frac1x.
-\]
+$$
 Then
-\[
+$$
 \frac1n<x<1,
-\]
+$$
 so $x\in U_n$.
 Thus the family covers $(0,1)$.
 :::
@@ -69,30 +69,30 @@ No finite subfamily of this cover covers $(0,1)$.
 
 ::: pf-proof
 Take finitely many sets
-\[
+$$
 U_{n_1},\ldots,U_{n_k}
-\]
+$$
 and let
-\[
+$$
 N=\max\{n_1,\ldots,n_k\}.
-\]
+$$
 Since $1/n$ decreases as $n$ increases,
-\[
+$$
 U_{n_i}\subseteq U_N
-\]
+$$
 for every $i$.
 Hence
-\[
+$$
 U_{n_1}\cup\cdots\cup U_{n_k}=U_N.
-\]
+$$
 But
-\[
+$$
 \frac1{2N}\in(0,1)
-\]
+$$
 and
-\[
+$$
 \frac1{2N}\notin U_N
-\]
+$$
 because $1/(2N)<1/N$.
 Therefore the finite subfamily does not cover $(0,1)$.
 :::

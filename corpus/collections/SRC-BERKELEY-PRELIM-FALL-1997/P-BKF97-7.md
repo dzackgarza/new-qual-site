@@ -27,9 +27,9 @@ audit:
 ::: {.problem}
 Define the index of a real symmetric matrix $A$ to be the number of strictly positive eigenvalues of $A$ minus the number of strictly negative eigenvalues.
 Suppose $A,B$ are real symmetric $n\times n$ matrices such that
-\[
+$$
 x^TAx\le x^TBx
-\]
+$$
 for every $x\in\RR^n$.
 Prove that the index of $A$ is at most the index of $B$.
 :::

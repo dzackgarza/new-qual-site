@@ -21,17 +21,17 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 A=\begin{pmatrix}
 1&-1&0\\
 -1&2&-1\\
 0&-1&1
 \end{pmatrix}.
-\]
+$$
 Determine all real numbers $a$ for which
-\[
+$$
 \lim_{n\to\infty}a^nA^n
-\]
+$$
 exists and is nonzero as a matrix.
 :::
 

@@ -27,13 +27,13 @@ audit:
 Let $f:\RR^n\to\RR$ be a function whose partial derivatives of order at most $2$ are everywhere defined and continuous.
 
 1. Let $a\in\RR^n$ be a critical point of $f$, i.e.
-   \[
+   $$
    \frac{\partial f}{\partial x_j}(a)=0,\qquad j=1,\ldots,n.
-   \]
+   $$
    Prove that $a$ is a local minimum provided the Hessian matrix
-   \[
+   $$
    \left(\frac{\partial^2f}{\partial x_i\partial x_j}\right)
-   \]
+   $$
    is positive definite at $x=a$.
 
 2. Assume the Hessian matrix is positive definite at every $x\in\RR^n$.

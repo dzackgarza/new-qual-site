@@ -23,28 +23,28 @@ Find the electrostatic potential outside the sphere if we set the surface of the
 ::: {.solution}
 
 Use spherical coordinates with polar axis in the direction of the applied field, so the imposed far-field potential is
-\[
+$$
 \Phi(r,\theta)\sim-Er\cos\theta
 \qquad(r\to\infty).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 The most general axisymmetric harmonic potential outside the sphere compatible with the prescribed far field has the form
-\[
+$$
 \Phi(r,\theta)=-Er\cos\theta
 +\sum_{\ell=0}^{\infty}A_\ell r^{-\ell-1}P_\ell(\cos\theta).
-\]
+$$
 
 
 ::: pf-proof
 
 Axisymmetric separated solutions of Laplace's equation are
-\[
+$$
 (C_\ell r^\ell+D_\ell r^{-\ell-1})P_\ell(\cos\theta).
-\]
+$$
 At infinity, the only allowed growing term is the specified uniform-field term $-ErP_1(\cos\theta)$. Every additional term must decay, giving the displayed expansion.
 
 :::
@@ -54,19 +54,19 @@ At infinity, the only allowed growing term is the specified uniform-field term $
 ::: {.pf-step #s1-2}
 
 The condition $\Phi(a,\theta)=0$ forces
-\[
+$$
 A_1=Ea^3
-\]
+$$
 and $A_\ell=0$ for every $\ell\ne1$.
 
 
 ::: pf-proof
 
 At $r=a$,
-\[
+$$
 0=-EaP_1(\cos\theta)
 +\sum_{\ell=0}^{\infty}A_\ell a^{-\ell-1}P_\ell(\cos\theta).
-\]
+$$
 Uniqueness of the Legendre expansion gives $A_1a^{-2}=Ea$ and all other coefficients zero.
 
 :::
@@ -76,11 +76,11 @@ Uniqueness of the Legendre expansion gives $A_1a^{-2}=Ea$ and all other coeffici
 ::: {.pf-step #s1-3}
 
 Thus
-\[
+$$
 \boxed{
 \Phi(r,\theta)=-E\left(r-\frac{a^3}{r^2}\right)\cos\theta,
 \qquad r\geq a.}
-\]
+$$
 
 
 ::: pf-proof
@@ -99,13 +99,13 @@ The induced total charge on the sphere is zero.
 ::: pf-proof
 
 The exterior radial field at the surface is
-\[
+$$
 E_r(a,\theta)=-\partial_r\Phi(a,\theta)=3E\cos\theta.
-\]
+$$
 Hence the surface charge density is proportional to $\cos\theta$. Its integral over the sphere is proportional to
-\[
+$$
 \int_0^\pi\cos\theta\sin\theta\,d\theta=0.
-\]
+$$
 Equivalently, step [](#s1-2){.pf-ref} has no $r^{-1}$ monopole term. Thus the solution is consistent with the stipulated zero total charge.
 
 :::

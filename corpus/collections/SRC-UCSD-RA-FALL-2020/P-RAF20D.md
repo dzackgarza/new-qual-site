@@ -128,43 +128,43 @@ $\liminf_{p\to\infty} \frac{\int |g|^{p+1}}{\int |g|^p} \ge \|g\|_\infty$.
 ::: pf-proof
 
 Write $M=\|g\|_\infty>0$ and fix $\varepsilon\in(0,M)$. Let
-\[
+$$
 A=\{|g|>M-\varepsilon/2\},
 \qquad
 B=\{|g|\le M-\varepsilon\}.
-\]
+$$
 By the definition of essential supremum, $\mu(A)>0$. If
-\[
+$$
 Z_p=\int_X|g|^p\,d\mu,
-\]
+$$
 then
-\[
+$$
 Z_p\ge (M-\varepsilon/2)^p\mu(A),
-\]
+$$
 whereas
-\[
+$$
 \int_B|g|^p\,d\mu\le (M-\varepsilon)^p\mu(X).
-\]
+$$
 Therefore
-\[
+$$
 \frac{\int_B|g|^p\,d\mu}{Z_p}
 \le
 \frac{\mu(X)}{\mu(A)}
 \left(\frac{M-\varepsilon}{M-\varepsilon/2}\right)^p
 \longrightarrow0.
-\]
+$$
 Now
-\[
+$$
 \frac{\int|g|^{p+1}}{Z_p}
 =\frac{\int |g|\,|g|^p}{Z_p}
 \ge (M-\varepsilon)
 \frac{\int_{X\setminus B}|g|^p}{Z_p}.
-\]
+$$
 The last factor tends to $1$, so
-\[
+$$
 \liminf_{p\to\infty}\frac{\int|g|^{p+1}}{\int|g|^p}
 \ge M-\varepsilon.
-\]
+$$
 Letting $\varepsilon\downarrow0$ proves the desired lower bound.
 
 :::

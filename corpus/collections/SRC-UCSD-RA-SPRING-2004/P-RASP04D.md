@@ -50,11 +50,11 @@ Differentiate the convolution in $x$.
 ::: pf-proof
 
 Because $f$ has compact support and $\varphi'\in C_c(\RR)$, differentiation under the integral is justified by dominated convergence. Thus for every $x$,
-\[
+$$
 \frac d{dx}(\varphi*f)(x)
 =\int_{\RR}\varphi'(x-y)f(y)\,dy
 =(\varphi'*f)(x).
-\]
+$$
 
 :::
 
@@ -67,21 +67,21 @@ Move the derivative from $\varphi$ to $f$.
 ::: pf-proof
 
 Since
-\[
+$$
 \frac d{dy}\varphi(x-y)=-\varphi'(x-y),
-\]
+$$
 integration by parts gives
-\[
+$$
 \begin{aligned}
 (\varphi'*f)(x)
 &=-\int_{\RR}\frac d{dy}\bigl(\varphi(x-y)\bigr)f(y)\,dy\\
 &=\int_{\RR}\varphi(x-y)f'(y)\,dy.
 \end{aligned}
-\]
+$$
 There is no boundary term because both factors have compact support. Hence
-\[
+$$
 \boxed{\varphi'*f=\varphi*f'.}
-\]
+$$
 
 :::
 
@@ -94,47 +94,47 @@ Approximate $f$ by smooth compactly supported functions.
 ::: pf-proof
 
 Let $\rho\in C_c^\infty(\RR)$ be nonnegative with
-\[
+$$
 \int_{\RR}\rho=1,
-\]
+$$
 and set
-\[
+$$
 \rho_\varepsilon(x)=\varepsilon^{-1}\rho(x/\varepsilon),
 \qquad
 f_\varepsilon=\rho_\varepsilon*f.
-\]
+$$
 Then $f_\varepsilon\in C_c^\infty(\RR)$.
 
 Because $f$ is continuous with compact support, it is uniformly continuous on $\RR$. Therefore
-\[
+$$
 \begin{aligned}
 |f_\varepsilon(x)-f(x)|
 &\le \int \rho_\varepsilon(y)|f(x-y)-f(x)|\,dy\\
 &\le \sup_{|y|\le C\varepsilon}|f(x-y)-f(x)|,
 \end{aligned}
-\]
+$$
 where $C$ bounds the support of $\rho$. Hence
-\[
+$$
 \|f_\varepsilon-f\|_\infty\longrightarrow0.
-\]
+$$
 
 Since $f$ is absolutely continuous with compact support, $f'\in L^1(\RR)$. By Step 2,
-\[
+$$
 f_\varepsilon'=\rho_\varepsilon*f'.
-\]
+$$
 The family $(\rho_\varepsilon)$ is an approximate identity in $L^1$, so
-\[
+$$
 \|f_\varepsilon'-f'\|_1
 =\|\rho_\varepsilon*f'-f'\|_1
 \longrightarrow0.
-\]
+$$
 Choosing any sequence $\varepsilon_n\downarrow0$ and setting $f_n=f_{\varepsilon_n}$ gives
-\[
+$$
 \boxed{
 \|f_n-f\|_\infty\to0,
 \qquad
 \|f_n'-f'\|_1\to0.}
-\]
+$$
 
 :::
 

@@ -18,7 +18,7 @@ audit:
 
 ::: {.problem}
 Problem 8. Compute the eigenvalues of the following $n\times n$ matrix:
-\[
+$$
 M=
 \begin{pmatrix}
 k&1&1&\cdots&1\\
@@ -27,14 +27,14 @@ k&1&1&\cdots&1\\
 \vdots&\vdots&\vdots&\ddots&\vdots\\
 1&1&1&\cdots&k
 \end{pmatrix}.
-\]
+$$
 Use the eigenvalues to compute $\det(M)$.
 :::
 
 ::: {.solution}
 
 Let
-\[
+$$
 \mathbf 1=
 \begin{pmatrix}
 1\\
@@ -42,11 +42,11 @@ Let
 1
 \end{pmatrix}
 \in\RR^n,
-\]
+$$
 and let
-\[
+$$
 J=\mathbf1\mathbf1^t
-\]
+$$
 be the all-ones matrix.
 
 ::: pf
@@ -54,18 +54,18 @@ be the all-ones matrix.
 ::: {.pf-step #s1-1}
 
 The matrix $M$ can be written as
-\[
+$$
 \boxed{M=(k-1)I+J}.
-\]
+$$
 
 
 ::: pf-proof
 
 The matrix $(k-1)I$ contributes $k-1$ on the diagonal and $0$ off the diagonal.
 Adding $J$, which has every entry equal to $1$, produces diagonal entries
-\[
+$$
 (k-1)+1=k
-\]
+$$
 and off-diagonal entries $1$.
 
 :::
@@ -75,9 +75,9 @@ and off-diagonal entries $1$.
 ::: {.pf-step #s1-2}
 
 One has
-\[
+$$
 J\mathbf1=n\mathbf1.
-\]
+$$
 
 
 ::: pf-proof
@@ -91,31 +91,31 @@ Every row of $J$ consists of $n$ ones, so every coordinate of $J\mathbf1$ equals
 ::: {.pf-step #s1-3}
 
 If
-\[
+$$
 v\in\mathbf1^\perp,
-\]
+$$
 then
-\[
+$$
 Jv=0.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 J=\mathbf1\mathbf1^t,
-\]
+$$
 one has
-\[
+$$
 Jv
 =
 \mathbf1(\mathbf1^tv).
-\]
+$$
 The condition $v\in\mathbf1^\perp$ means
-\[
+$$
 \mathbf1^tv=0.
-\]
+$$
 Therefore $Jv=0$.
 
 :::
@@ -125,15 +125,15 @@ Therefore $Jv=0$.
 ::: {.pf-step #s1-4}
 
 The vector $\mathbf1$ is an eigenvector of $M$ with eigenvalue
-\[
+$$
 \boxed{k+n-1}.
-\]
+$$
 
 
 ::: pf-proof
 
 Using steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
-\[
+$$
 \begin{aligned}
 M\mathbf1
 &=
@@ -143,7 +143,7 @@ M\mathbf1
 &=
 (k+n-1)\mathbf1.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -152,19 +152,19 @@ M\mathbf1
 ::: {.pf-step #s1-5}
 
 Every vector in $\mathbf1^\perp$ is an eigenvector of $M$ with eigenvalue
-\[
+$$
 \boxed{k-1}.
-\]
+$$
 
 
 ::: pf-proof
 
 If $v\in\mathbf1^\perp$, then by steps [](#s1-1){.pf-ref} and [](#s1-3){.pf-ref},
-\[
+$$
 Mv
 =(k-1)v+Jv
 =(k-1)v.
-\]
+$$
 
 :::
 
@@ -173,26 +173,26 @@ Mv
 ::: {.pf-step #s1-6}
 
 The eigenvalues of $M$ are
-\[
+$$
 \boxed{k+n-1}
-\]
+$$
 with multiplicity $1$ and
-\[
+$$
 \boxed{k-1}
-\]
+$$
 with multiplicity $n-1$.
 
 
 ::: pf-proof
 
 The space decomposes orthogonally as
-\[
+$$
 \RR^n
 =
 \operatorname{span}\{\mathbf1\}
 \oplus
 \mathbf1^\perp.
-\]
+$$
 The first summand has dimension $1$ and carries the eigenvalue from step [](#s1-4){.pf-ref}.
 The second has dimension $n-1$ and carries the eigenvalue from step [](#s1-5){.pf-ref}.
 Together these account for all $n$ dimensions.
@@ -204,12 +204,12 @@ Together these account for all $n$ dimensions.
 ::: {.pf-step #s1-7}
 
 Therefore
-\[
+$$
 \boxed{
 \det(M)
 =(k+n-1)(k-1)^{n-1}
 }.
-\]
+$$
 
 
 ::: pf-proof

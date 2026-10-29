@@ -24,10 +24,10 @@ A continuous function $f:X\to Y$ is called *proper* if $f^{-1}(K)$ is compact fo
 (b) Give an example of a function that is continuous but not proper.
 
 (c) Suppose $f:\RR\to\RR$ is $C^1$ and
-\[
+$$
 |f'(x)|\geq1
 \qquad\text{for every }x\in\RR.
-\]
+$$
 Show that $f$ is proper.
 :::
 

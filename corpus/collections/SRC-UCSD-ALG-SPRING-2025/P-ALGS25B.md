@@ -40,11 +40,11 @@ Suppose $N$ is a normal subgroup of $G$ and $P$ is a Sylow $p$-subgroup of $N$.
 
 ::: {.pf-step #s1}
 
-Choose a Sylow \(p\)-subgroup \(Q\) of \(G\) containing \(P\).
+Choose a Sylow $p$-subgroup $Q$ of $G$ containing $P$.
 
 ::: pf-proof
 
-Every \(p\)-subgroup of a finite group is contained in a Sylow \(p\)-subgroup.
+Every $p$-subgroup of a finite group is contained in a Sylow $p$-subgroup.
 
 :::
 
@@ -53,13 +53,13 @@ Every \(p\)-subgroup of a finite group is contained in a Sylow \(p\)-subgroup.
 ::: {.pf-step #s2}
 
 One has
-\[
+$$
 P=Q\cap N.
-\]
+$$
 
 ::: pf-proof
 
-Because \(N\trianglelefteq G\), the intersection \(Q\cap N\) is a \(p\)-subgroup of \(N\). It contains \(P\), since \(P\le Q\) by step [](#s1){.pf-ref} and \(P\le N\) by hypothesis. But \(P\) is a Sylow \(p\)-subgroup of \(N\), so no strictly larger \(p\)-subgroup of \(N\) can contain it. Hence equality holds.
+Because $N\trianglelefteq G$, the intersection $Q\cap N$ is a $p$-subgroup of $N$. It contains $P$, since $P\le Q$ by step [](#s1){.pf-ref} and $P\le N$ by hypothesis. But $P$ is a Sylow $p$-subgroup of $N$, so no strictly larger $p$-subgroup of $N$ can contain it. Hence equality holds.
 
 **(b).**
 
@@ -69,19 +69,19 @@ Because \(N\trianglelefteq G\), the intersection \(Q\cap N\) is a \(p\)-subgroup
 
 ::: {.pf-step #s3}
 
-If \(g\in N_G(Q)\), then \(g\in N_G(P)\).
+If $g\in N_G(Q)$, then $g\in N_G(P)$.
 
 ::: pf-proof
 
-Using step [](#s2){.pf-ref} and normality of \(N\),
-\[
+Using step [](#s2){.pf-ref} and normality of $N$,
+$$
 gPg^{-1}
 =g(Q\cap N)g^{-1}
 =(gQg^{-1})\cap(gNg^{-1})
 =Q\cap N
 =P.
-\]
-Thus \(g\) normalizes \(P\).
+$$
+Thus $g$ normalizes $P$.
 
 :::
 
@@ -90,9 +90,9 @@ Thus \(g\) normalizes \(P\).
 ::: pf-step
 
 Therefore
-\[
+$$
 N_G(Q)\subseteq N_G(P).
-\]
+$$
 
 ::: pf-proof
 
@@ -106,15 +106,15 @@ This is exactly step [](#s3){.pf-ref}.
 
 ::: pf-step
 
-Fix \(g\in G\) and set
-\[
+Fix $g\in G$ and set
+$$
 H=\left\langle N_G(P)\cup gN_G(P)g^{-1}\right\rangle.
-\]
-Then both \(Q\) and \(gQg^{-1}\) are subgroups of \(H\).
+$$
+Then both $Q$ and $gQg^{-1}$ are subgroups of $H$.
 
 ::: pf-proof
 
-One has \(Q\le N_G(Q)\le N_G(P)\) by part (b), so \(Q\le H\). Conjugating this inclusion gives \(gQg^{-1}\le gN_G(P)g^{-1}\le H\).
+One has $Q\le N_G(Q)\le N_G(P)$ by part (b), so $Q\le H$. Conjugating this inclusion gives $gQg^{-1}\le gN_G(P)g^{-1}\le H$.
 
 :::
 
@@ -122,11 +122,11 @@ One has \(Q\le N_G(Q)\le N_G(P)\) by part (b), so \(Q\le H\). Conjugating this i
 
 ::: {.pf-step #s6}
 
-The subgroups \(Q\) and \(gQg^{-1}\) are Sylow \(p\)-subgroups of \(H\).
+The subgroups $Q$ and $gQg^{-1}$ are Sylow $p$-subgroups of $H$.
 
 ::: pf-proof
 
-They have the same order as a Sylow \(p\)-subgroup of \(G\). Since \(H\le G\), no \(p\)-subgroup of \(H\) can have larger order. Thus both are Sylow in \(H\).
+They have the same order as a Sylow $p$-subgroup of $G$. Since $H\le G$, no $p$-subgroup of $H$ can have larger order. Thus both are Sylow in $H$.
 
 :::
 
@@ -134,14 +134,14 @@ They have the same order as a Sylow \(p\)-subgroup of \(G\). Since \(H\le G\), n
 
 ::: {.pf-step #s7}
 
-There exists \(h\in H\) such that
-\[
+There exists $h\in H$ such that
+$$
 hQh^{-1}=gQg^{-1}.
-\]
+$$
 
 ::: pf-proof
 
-Apply Sylow conjugacy inside the finite group \(H\) to the two Sylow \(p\)-subgroups from step [](#s6){.pf-ref}.
+Apply Sylow conjugacy inside the finite group $H$ to the two Sylow $p$-subgroups from step [](#s6){.pf-ref}.
 
 :::
 
@@ -149,15 +149,15 @@ Apply Sylow conjugacy inside the finite group \(H\) to the two Sylow \(p\)-subgr
 
 ::: {.pf-step #s8}
 
-One has \(g^{-1}h\in N_G(Q)\subseteq H\).
+One has $g^{-1}h\in N_G(Q)\subseteq H$.
 
 ::: pf-proof
 
 Rearranging step [](#s7){.pf-ref} gives
-\[
+$$
 (g^{-1}h)Q(g^{-1}h)^{-1}=Q,
-\]
-so \(g^{-1}h\in N_G(Q)\). Part (b) gives \(N_G(Q)\le N_G(P)\le H\).
+$$
+so $g^{-1}h\in N_G(Q)$. Part (b) gives $N_G(Q)\le N_G(P)\le H$.
 
 :::
 
@@ -165,14 +165,14 @@ so \(g^{-1}h\in N_G(Q)\). Part (b) gives \(N_G(Q)\le N_G(P)\le H\).
 
 ::: pf-step
 
-Therefore \(g\in H\), i.e.
-\[
+Therefore $g\in H$, i.e.
+$$
 g\in\left\langle N_G(P)\cup gN_G(P)g^{-1}\right\rangle.
-\]
+$$
 
 ::: pf-proof
 
-Both \(h\) and \(g^{-1}h\) lie in \(H\) by steps [](#s7){.pf-ref} and [](#s8){.pf-ref}. Hence \(g^{-1}=(g^{-1}h)h^{-1}\in H\), so \(g\in H\).
+Both $h$ and $g^{-1}h$ lie in $H$ by steps [](#s7){.pf-ref} and [](#s8){.pf-ref}. Hence $g^{-1}=(g^{-1}h)h^{-1}\in H$, so $g\in H$.
 
 :::
 

@@ -31,9 +31,9 @@ Verify that $f \simeq g$ implies $f_* = g_*$ for induced homomorphisms of reduce
 
 ::: {.solution}
 Suppose
-\[
+$$
 f,g:X\to Y
-\]
+$$
 are homotopic.
 
 ::: pf
@@ -41,18 +41,18 @@ are homotopic.
 ::: {.pf-step #s1}
 
 For every $n>0$,
-\[
+$$
 \widetilde H_n(f)=\widetilde H_n(g).
-\]
+$$
 
 ::: pf-proof
 
 For $n>0$ one has
-\[
+$$
 \widetilde H_n(X)=H_n(X),
 \qquad
 \widetilde H_n(Y)=H_n(Y).
-\]
+$$
 Homotopic maps induce the same homomorphism on ordinary homology, so the induced maps agree.
 
 :::
@@ -66,19 +66,19 @@ The same holds in degree zero.
 ::: pf-proof
 
 For a nonempty space $Z$,
-\[
+$$
 \widetilde H_0(Z)=\ker\bigl(\epsilon:H_0(Z)\to\ZZ\bigr),
-\]
+$$
 where $\epsilon$ sends each path-component generator to $1$. Every continuous map commutes with augmentation:
-\[
+$$
 \epsilon\,f_* = \epsilon,
 \qquad
 \epsilon\,g_* = \epsilon.
-\]
+$$
 Since homotopic maps satisfy
-\[
+$$
 f_*=g_*:H_0(X)\to H_0(Y),
-\]
+$$
 their restrictions to the augmentation kernel are equal. These restrictions are precisely the induced maps on $\widetilde H_0$. If $X$ is empty the assertion is trivial.
 
 :::
@@ -88,9 +88,9 @@ their restrictions to the augmentation kernel are equal. These restrictions are 
 ::: pf-step
 
 Hence
-\[
+$$
 \boxed{f_*=g_*:\widetilde H_n(X)\to\widetilde H_n(Y)\text{ for all }n.}
-\]
+$$
 
 ::: pf-proof
 

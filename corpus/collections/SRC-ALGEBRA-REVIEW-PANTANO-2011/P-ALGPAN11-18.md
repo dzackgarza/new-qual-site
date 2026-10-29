@@ -53,10 +53,10 @@ There are five rotations of the regular pentagram, through multiples of $2\pi/5$
 These ten symmetries preserve adjacency in the star and exhaust the Euclidean symmetries of its five vertices.
 
 If $r$ is a rotation by $2\pi/5$ and $s$ a reflection, then
-\[
+$$
 r^5=s^2=e,
 \qquad srs=r^{-1}.
-\]
+$$
 Thus the group has the presentation of $D_5$ and has order $10$.
 
 :::

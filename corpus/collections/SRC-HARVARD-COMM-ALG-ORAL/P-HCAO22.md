@@ -55,13 +55,13 @@ The ring $\widetilde R$ is Noetherian.
 ::: pf-proof
 Apply the Krull--Akizuki theorem to the one-dimensional Noetherian domain $R$
 and the finite field extension
-\[
+$$
 K/K.
-\]
+$$
 It states that every intermediate ring
-\[
+$$
 R\subseteq A\subseteq K
-\]
+$$
 is Noetherian. Taking $A=\widetilde R$ gives the claim.
 :::
 
@@ -74,9 +74,9 @@ The ring $\widetilde R$ has dimension $1$.
 The extension $R\subseteq\widetilde R$ is integral. By lying over and going up,
 chains of prime ideals in $R$ lift to chains in $\widetilde R$, while contraction
 of a strict chain of primes in an integral extension remains strict. Hence
-\[
+$$
 \dim\widetilde R=\dim R=1.
-\]
+$$
 :::
 
 :::

@@ -34,9 +34,9 @@ Find
 ::: {.solution}
 
 Assume the energy levels are indexed by the nonnegative integers $0,1,2,\ldots$, and put
-\[
+$$
 r=e^{-\alpha}\in(0,1).
-\]
+$$
 Then the one-step transition probabilities are $P_{ij}=c_i r^{|i-j|}$.
 
 ::: pf
@@ -44,18 +44,18 @@ Then the one-step transition probabilities are $P_{ij}=c_i r^{|i-j|}$.
 ::: pf-step
 
 Row normalization requires
-\[
+$$
 c_i^{-1}=\sum_{j=0}^{\infty}r^{|i-j|}.
-\]
+$$
 
 
 ::: pf-proof
 
 For fixed $i$, transition probabilities must sum to one:
-\[
+$$
 1=\sum_{j=0}^{\infty}P_{ij}
 =c_i\sum_{j=0}^{\infty}r^{|i-j|}.
-\]
+$$
 Solve for $c_i$.
 
 :::
@@ -65,25 +65,25 @@ Solve for $c_i$.
 ::: {.pf-step #s1-2}
 
 The normalizing sum is
-\[
+$$
 \sum_{j=0}^{\infty}r^{|i-j|}
 =\frac{1+r-r^{i+1}}{1-r}.
-\]
+$$
 
 
 ::: pf-proof
 
 Split at $j=i$:
-\[
+$$
 \sum_{j=0}^{i}r^{i-j}
 +\sum_{j=i+1}^{\infty}r^{j-i}
 =\sum_{k=0}^{i}r^k+\sum_{k=1}^{\infty}r^k.
-\]
+$$
 The two geometric sums equal
-\[
+$$
 \frac{1-r^{i+1}}{1-r}+\frac r{1-r}
 =\frac{1+r-r^{i+1}}{1-r}.
-\]
+$$
 
 :::
 
@@ -92,12 +92,12 @@ The two geometric sums equal
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{
 c_i=\frac{1-r}{1+r-r^{i+1}}
 =\frac{1-e^{-\alpha}}
 {1+e^{-\alpha}-e^{-(i+1)\alpha}}.}
-\]
+$$
 
 
 ::: pf-proof
@@ -111,9 +111,9 @@ Invert the expression in step [](#s1-2){.pf-ref} and substitute $r=e^{-\alpha}$.
 ::: {.pf-step #s1-4}
 
 By the Chapman--Kolmogorov equation,
-\[
+$$
 P_{ij}(2)=\sum_{k=0}^{\infty}P_{ik}(1)P_{kj}(1).
-\]
+$$
 
 
 ::: pf-proof
@@ -127,13 +127,13 @@ To move from level $i$ to level $j$ in two steps, condition on the intermediate 
 ::: {.pf-step #s1-5}
 
 Hence
-\[
+$$
 \boxed{
 P_{ij}(2)
 =c_i\sum_{k=0}^{\infty}c_k
 e^{-\alpha(|i-k|+|k-j|)}}.
 }
-\]
+$$
 
 
 ::: pf-proof
@@ -147,7 +147,7 @@ Substitute $P_{ik}(1)=c_i e^{-\alpha|i-k|}$ and $P_{kj}(1)=c_k e^{-\alpha|k-j|}$
 ::: {.pf-step #s1-6}
 
 Substituting the normalization from step [](#s1-3){.pf-ref} gives the fully explicit convergent series
-\[
+$$
 \boxed{
 P_{ij}(2)
 =\frac{(1-r)^2}{1+r-r^{i+1}}
@@ -155,7 +155,7 @@ P_{ij}(2)
 \frac{r^{|i-k|+|k-j|}}
 {1+r-r^{k+1}},
 \qquad r=e^{-\alpha}.}
-\]
+$$
 
 
 ::: pf-proof

@@ -28,20 +28,20 @@ Show that if $X$ and $Y$ are topological spaces and $A\subseteq X$, $B\subseteq 
 ::: {.solution}
 We prove both inclusions by the neighborhood characterization of closure.
 
-Suppose \((x,y)\in\operatorname{Cl}_{X\times Y}(A\times B)\). If \(U\subset X\) is any open neighborhood of \(x\), then \(U\times Y\) is an open neighborhood of \((x,y)\), so it meets \(A\times B\). Hence \(U\cap A\ne\varnothing\). Thus \(x\in\operatorname{Cl}_X(A)\). Similarly, using \(X\times V\), we get \(y\in\operatorname{Cl}_Y(B)\). Therefore
-\[
+Suppose $(x,y)\in\operatorname{Cl}_{X\times Y}(A\times B)$. If $U\subset X$ is any open neighborhood of $x$, then $U\times Y$ is an open neighborhood of $(x,y)$, so it meets $A\times B$. Hence $U\cap A\ne\varnothing$. Thus $x\in\operatorname{Cl}_X(A)$. Similarly, using $X\times V$, we get $y\in\operatorname{Cl}_Y(B)$. Therefore
+$$
 \operatorname{Cl}_{X\times Y}(A\times B)
 \subseteq
 \operatorname{Cl}_X(A)\times\operatorname{Cl}_Y(B).
-\]
+$$
 
-Conversely, suppose \(x\in\operatorname{Cl}_X(A)\) and \(y\in\operatorname{Cl}_Y(B)\). Let \(W\) be any open neighborhood of \((x,y)\) in \(X\times Y\). There are open sets \(U\ni x\) and \(V\ni y\) with
-\[
+Conversely, suppose $x\in\operatorname{Cl}_X(A)$ and $y\in\operatorname{Cl}_Y(B)$. Let $W$ be any open neighborhood of $(x,y)$ in $X\times Y$. There are open sets $U\ni x$ and $V\ni y$ with
+$$
 (x,y)\in U\times V\subseteq W.
-\]
-Since \(x\in\operatorname{Cl}_X(A)\) and \(y\in\operatorname{Cl}_Y(B)\), choose \(a\in U\cap A\) and \(b\in V\cap B\). Then
-\[
+$$
+Since $x\in\operatorname{Cl}_X(A)$ and $y\in\operatorname{Cl}_Y(B)$, choose $a\in U\cap A$ and $b\in V\cap B$. Then
+$$
 (a,b)\in W\cap(A\times B).
-\]
-Thus every neighborhood of \((x,y)\) meets \(A\times B\), so \((x,y)\in\operatorname{Cl}_{X\times Y}(A\times B)\). Hence equality holds.
+$$
+Thus every neighborhood of $(x,y)$ meets $A\times B$, so $(x,y)\in\operatorname{Cl}_{X\times Y}(A\times B)$. Hence equality holds.
 :::

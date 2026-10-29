@@ -27,29 +27,29 @@ audit:
 
 ::: {.problem}
 Give an ideal $I=\langle f_1,\ldots,f_t\rangle$ and a term order such that
-\[
+$$
 \operatorname{in}(I)\ne
 \langle \operatorname{in}(f_1),\ldots,\operatorname{in}(f_t)\rangle.
-\]
+$$
 :::
 
 ::: {.solution}
 Work in $k[x,y]$ with lexicographic order $x\succ y$, and take
-\[
+$$
 I=\langle f_1,f_2\rangle,
 \qquad
 f_1=x^2+y,
 \qquad
 f_2=x^2+x.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #generators-share-initial-monomial}
 The two displayed generators have the same initial monomial:
-\[
+$$
 \operatorname{in}(f_1)=\operatorname{in}(f_2)=x^2.
-\]
+$$
 
 ::: pf-proof
 Under lexicographic order with $x\succ y$, the monomial $x^2$ is larger than
@@ -60,11 +60,11 @@ both $x$ and $y$.
 
 ::: {.pf-step #difference-has-initial-monomial-x}
 Their difference belongs to $I$ and has initial monomial $x$:
-\[
+$$
 f_2-f_1=x-y,
 \qquad
 \operatorname{in}(x-y)=x.
-\]
+$$
 
 ::: pf-proof
 Ideals are closed under subtraction, and $x\succ y$ in the chosen order.
@@ -74,16 +74,16 @@ Ideals are closed under subtraction, and $x\succ y$ in the chosen order.
 
 ::: pf-step
 Therefore
-\[
+$$
 \operatorname{in}(I)\ne
 \langle \operatorname{in}(f_1),\operatorname{in}(f_2)\rangle.
-\]
+$$
 
 ::: pf-proof
 By step [](#difference-has-initial-monomial-x){.pf-ref}, $x\in\operatorname{in}(I)$. By step [](#generators-share-initial-monomial){.pf-ref},
-\[
+$$
 \langle \operatorname{in}(f_1),\operatorname{in}(f_2)\rangle=(x^2),
-\]
+$$
 and $x\notin(x^2)$. Thus the inclusion of the generator-initial ideal into
 $\operatorname{in}(I)$ is strict.
 :::

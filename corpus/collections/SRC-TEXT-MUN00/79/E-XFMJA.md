@@ -26,38 +26,38 @@ There is an isomorphism of $\pi_1(T, b_0 \times b_0)$ with $\ZZ \times \ZZ$ indu
 
 ::: {.solution}
 Write
-\[
+$$
 q:\RR\to S^1,\qquad q(t)=e^{2\pi i t}.
-\]
-Under the standard identification \(\pi_1(T)\cong\ZZ\oplus\ZZ\):
+$$
+Under the standard identification $\pi_1(T)\cong\ZZ\oplus\ZZ$:
 
 (a) Define
-\[
+$$
 p_m:S^1\times\RR\to S^1\times S^1,\qquad
 p_m(z,t)=(z^m,q(t)).
-\]
-This is a covering map. Since \(\pi_1(S^1\times\RR)\cong\ZZ\), the generator represented by the first circle maps to \((m,0)\). Thus the corresponding subgroup is
-\[
+$$
+This is a covering map. Since $\pi_1(S^1\times\RR)\cong\ZZ$, the generator represented by the first circle maps to $(m,0)$. Thus the corresponding subgroup is
+$$
 \langle(m,0)\rangle.
-\]
+$$
 
 (b) The universal covering
-\[
+$$
 p:\RR^2\to T,\qquad p(s,t)=(q(s),q(t))
-\]
+$$
 has simply connected total space, so its associated subgroup is trivial.
 
 (c) Define
-\[
+$$
 p_{m,n}:T\to T,\qquad p_{m,n}(z,w)=(z^m,w^n).
-\]
+$$
 Then
-\[
+$$
 (p_{m,n})_*:\ZZ^2\to\ZZ^2,\qquad (r,s)\mapsto(mr,ns),
-\]
+$$
 so its image is precisely
-\[
+$$
 \langle(m,0),(0,n)\rangle.
-\]
+$$
 Hence these three maps realize the required covering spaces.
 :::

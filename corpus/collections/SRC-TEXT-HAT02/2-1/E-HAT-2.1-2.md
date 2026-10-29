@@ -33,17 +33,17 @@ Find other pairs of identifications of edges that produce $\Delta$-complexes def
 
 ::: {.solution}
 Let the vertices of the tetrahedron be
-\[
+$$
 \nu_0,\nu_1,\nu_2,\nu_3.
-\]
+$$
 The union
-\[
+$$
 Q=[\nu_0,\nu_1,\nu_3]\cup[\nu_0,\nu_2,\nu_3]
-\]
+$$
 is a square split by the diagonal $[\nu_0,\nu_3]$, with boundary traversed as
-\[
+$$
 \nu_0\to\nu_1\to\nu_3\to\nu_2\to\nu_0.
-\]
+$$
 
 ::: pf
 
@@ -54,11 +54,11 @@ The tetrahedron deformation retracts onto $Q$ in a way compatible with identific
 ::: pf-proof
 
 The two omitted faces
-\[
+$$
 [\nu_0,\nu_1,\nu_2],
 \qquad
 [\nu_1,\nu_2,\nu_3]
-\]
+$$
 form an open book on the edge $[\nu_1,\nu_2]$ opposite the diagonal $[\nu_0,\nu_3]$.
 Collapse each line segment transverse to $Q$ linearly onto $Q$.
 This fixes $Q$ pointwise and gives a deformation retraction.
@@ -71,32 +71,32 @@ Since all edge identifications below involve only edges of $Q$, the retraction d
 ::: {.pf-step #s2}
 
 The identifications in the problem,
-\[
+$$
 [\nu_0,\nu_1]\sim[\nu_1,\nu_3],
 \qquad
 [\nu_0,\nu_2]\sim[\nu_2,\nu_3],
-\]
+$$
 produce the Klein bottle.
 
 ::: pf-proof
 
 Call the first edge class $a$ and the second $b$.
 Around the square boundary
-\[
+$$
 \nu_0\to\nu_1\to\nu_3\to\nu_2\to\nu_0
-\]
+$$
 the four directed sides become
-\[
+$$
 a,\ a,\ b^{-1},\ b^{-1}.
-\]
+$$
 Thus the quotient polygon has boundary word
-\[
+$$
 a^2b^{-2}.
-\]
+$$
 After replacing $b$ by $b^{-1}$ this is the standard nonorientable genus-two word
-\[
+$$
 a^2b^2,
-\]
+$$
 which is a Klein-bottle polygon.
 By step [](#s1){.pf-ref} the full tetrahedral quotient deformation retracts onto this surface.
 
@@ -107,20 +107,20 @@ By step [](#s1){.pf-ref} the full tetrahedral quotient deformation retracts onto
 ::: {.pf-step #s3}
 
 A torus is obtained by the pairings
-\[
+$$
 [\nu_0,\nu_2]\sim[\nu_1,\nu_3],
 \qquad
 [\nu_0,\nu_1]\sim[\nu_2,\nu_3],
-\]
+$$
 with the displayed orderings preserved.
 
 ::: pf-proof
 
 Let the first edge class be $b$ and the second $a$.
 The square boundary word is then
-\[
+$$
 a\,b\,a^{-1}\,b^{-1},
-\]
+$$
 the standard torus polygon.
 
 :::
@@ -130,18 +130,18 @@ the standard torus polygon.
 ::: {.pf-step #s4}
 
 A $2$-sphere is obtained by the pairings
-\[
+$$
 [\nu_0,\nu_2]\sim[\nu_3,\nu_2],
 \qquad
 [\nu_0,\nu_1]\sim[\nu_3,\nu_1].
-\]
+$$
 
 ::: pf-proof
 
 With suitable labels the square boundary word is
-\[
+$$
 a\,a^{-1}\,b\,b^{-1}.
-\]
+$$
 The two adjacent inverse pairs cancel by folding the corresponding bigons, leaving a $2$-sphere.
 Equivalently, this is the usual two-disk decomposition of $S^2$ after the cancellations.
 
@@ -152,11 +152,11 @@ Equivalently, this is the usual two-disk decomposition of $S^2$ after the cancel
 ::: {.pf-step #s5}
 
 A projective plane is obtained by the pairings
-\[
+$$
 [\nu_0,\nu_2]\sim[\nu_3,\nu_1],
 \qquad
 [\nu_0,\nu_1]\sim[\nu_3,\nu_2].
-\]
+$$
 
 ::: pf-proof
 
@@ -165,9 +165,9 @@ One edge is a maximal-tree edge joining the two vertices.
 Collapse it.
 The remaining $1$-cell becomes a loop, and tracing the square boundary shows that the $2$-cell attaches by degree two around this loop.
 Thus the quotient has the standard CW structure
-\[
+$$
 e^0\cup_{2}e^1\cup e^2
-\]
+$$
 of $\RP^2$.
 
 :::

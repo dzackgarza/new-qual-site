@@ -28,11 +28,11 @@ audit:
 ::: {.problem}
 Let $M$ be an $A$-module, and let $S\subseteq A$ be a multiplicative set.
 Must
-\[
+$$
 S^{-1}\operatorname{Ann}_A(M)
 =
 \operatorname{Ann}_{S^{-1}A}(S^{-1}M)
-\]
+$$
 hold?
 Prove the equality or give a counterexample.
 What changes if $M$ is finitely generated?
@@ -40,11 +40,11 @@ What changes if $M$ is finitely generated?
 
 ::: {.solution}
 There is always an inclusion
-\[
+$$
 S^{-1}\operatorname{Ann}_A(M)
 \subseteq
 \operatorname{Ann}_{S^{-1}A}(S^{-1}M),
-\]
+$$
 but equality can fail for infinitely generated $M$. It holds when $M$ is
 finitely generated.
 
@@ -56,9 +56,9 @@ The inclusion always holds.
 ::: pf-proof
 If $a\in\operatorname{Ann}_A(M)$, then $am=0$ for every $m\in M$. Hence for
 every $s,t\in S$,
-\[
+$$
 \frac as\frac mt=\frac{am}{st}=0
-\]
+$$
 in $S^{-1}M$.
 :::
 
@@ -69,17 +69,17 @@ Equality can fail without finite generation.
 
 ::: pf-proof
 Take
-\[
+$$
 A=\ZZ,
 \qquad
 S=\{1,2,2^2,\ldots\},
 \qquad
 M=\bigoplus_{n\ge1}\ZZ/2^n\ZZ.
-\]
+$$
 Every element of $M$ is killed by some power of $2$, so $S^{-1}M=0$. Thus
-\[
+$$
 \operatorname{Ann}_{S^{-1}A}(S^{-1}M)=S^{-1}A=\ZZ[1/2].
-\]
+$$
 On the other hand, no nonzero integer annihilates every summand
 $\ZZ/2^n\ZZ$, so $\operatorname{Ann}_A(M)=0$. Hence its localization
 is zero.
@@ -93,15 +93,15 @@ If $M$ is finitely generated, equality holds.
 ::: pf-proof
 Let $m_1,\ldots,m_r$ generate $M$, and suppose
 $a/s\in S^{-1}A$ annihilates $S^{-1}M$. For each $i$,
-\[
+$$
 \frac a1\frac{m_i}1=0,
-\]
+$$
 so there exists $t_i\in S$ with $t_i a m_i=0$ in $M$. Put
 $t=t_1\cdots t_r\in S$. Then $ta$ kills every generator and hence all of
 $M$, so $ta\in\operatorname{Ann}_A(M)$. But
-\[
+$$
 \frac as=\frac{ta}{ts}
-\]
+$$
 lies in $S^{-1}\operatorname{Ann}_A(M)$.
 :::
 

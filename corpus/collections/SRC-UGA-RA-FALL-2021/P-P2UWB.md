@@ -34,9 +34,9 @@ Prove that if $E$ is measurable and $m(E)<\infty$, then for all $\epsilon>0$ the
 
 b.
 Let $E \subset \RR$ be a measurable set, such that $0<m(E)<\infty$. Use part (a) to show that
-\[
+$$
 \lim _{n \rightarrow \infty} \int_{E} \sin (n t) d t=0
-\]
+$$
 :::
 ::: {.solution}
 
@@ -49,33 +49,33 @@ Approximate a finite-measure measurable set by an elementary set.
 ::: pf-proof
 
 Let $E\subset\RR^d$ be measurable with $m(E)<\infty$, and fix $\varepsilon>0$. By outer regularity choose an open set $U\supset E$ such that
-\[
+$$
 m(U\setminus E)<\varepsilon/2.
-\]
+$$
 Then $m(U)<\infty$.
 
 Every open subset of $\RR^d$ is a countable union of pairwise disjoint half-open rectangles (for example dyadic cubes), say
-\[
+$$
 U=\bigcup_{j=1}^\infty Q_j,
 \qquad
 m(U)=\sum_{j=1}^\infty m(Q_j).
-\]
+$$
 Choose $N$ so that
-\[
+$$
 m\!\left(U\setminus\bigcup_{j=1}^NQ_j\right)<\varepsilon/2.
-\]
+$$
 Let
-\[
+$$
 F=\bigcup_{j=1}^NQ_j.
-\]
+$$
 Then $F$ is elementary and
-\[
+$$
 E\triangle F\subset (U\setminus E)\cup(U\setminus F),
-\]
+$$
 so
-\[
+$$
 m(E\triangle F)<\varepsilon.
-\]
+$$
 
 :::
 
@@ -88,28 +88,28 @@ Prove the oscillatory integral limit.
 ::: pf-proof
 
 Let $E\subset\RR$ be measurable with $0<m(E)<\infty$. Fix $\varepsilon>0$ and choose an elementary set $F$, a finite union of intervals, with
-\[
+$$
 m(E\triangle F)<\varepsilon/2.
-\]
+$$
 Then
-\[
+$$
 \left|\int_E\sin(nt)\,dt-\int_F\sin(nt)\,dt\right|
 \le m(E\triangle F)<\varepsilon/2.
-\]
+$$
 If $F$ is the disjoint union of $N$ bounded intervals $[a_j,b_j]$, then
-\[
+$$
 \left|\int_F\sin(nt)\,dt\right|
 \le\sum_{j=1}^N\frac{|\cos(na_j)-\cos(nb_j)|}{n}
 \le\frac{2N}{n}\longrightarrow0.
-\]
+$$
 Hence for all sufficiently large $n$,
-\[
+$$
 \left|\int_E\sin(nt)\,dt\right|<\varepsilon.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{\lim_{n\to\infty}\int_E\sin(nt)\,dt=0.}
-\]
+$$
 
 :::
 

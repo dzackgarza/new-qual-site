@@ -35,17 +35,17 @@ If $6\nmid n$, there are no such elements.
 ::: pf-proof
 
 Suppose $\alpha\in\FF_{p^n}$ satisfies
-\[
+$$
 \FF_p(\alpha)=\FF_{p^6}.
-\]
+$$
 Then
-\[
+$$
 [\FF_p(\alpha):\FF_p]=6.
-\]
+$$
 Since $\FF_p(\alpha)$ is a subfield of $\FF_{p^n}$, the tower law gives
-\[
+$$
 6\mid n.
-\]
+$$
 Therefore no such $\alpha$ exists when $6\nmid n$.
 
 :::
@@ -71,13 +71,13 @@ Under the assumption $6\mid n$, the desired elements are exactly the elements of
 ::: pf-proof
 
 For $\alpha\in\FF_{p^6}$,
-\[
+$$
 \FF_p(\alpha)=\FF_{p^6}
-\]
+$$
 if and only if
-\[
+$$
 [\FF_p(\alpha):\FF_p]=6.
-\]
+$$
 By step [](#s2){.pf-ref}, every element satisfying the original condition lies in this distinguished copy of $\FF_{p^6}$ inside $\FF_{p^n}$.
 
 :::
@@ -87,13 +87,13 @@ By step [](#s2){.pf-ref}, every element satisfying the original condition lies i
 ::: {.pf-step #s4}
 
 The number of elements of degree exactly $2$ over $\FF_p$ is
-\[
+$$
 p^2-p,
-\]
+$$
 and the number of elements of degree exactly $3$ is
-\[
+$$
 p^3-p.
-\]
+$$
 
 ::: pf-proof
 
@@ -108,24 +108,24 @@ Likewise, the only proper divisor of $3$ is $1$, so the elements of $\FF_{p^3}$ 
 ::: {.pf-step #s5}
 
 The number of elements of degree exactly $6$ over $\FF_p$ is
-\[
+$$
 p^6-p^3-p^2+p.
-\]
+$$
 
 ::: pf-proof
 
 For any $\alpha\in\FF_{p^6}$, the degree
-\[
+$$
 d=[\FF_p(\alpha):\FF_p]
-\]
+$$
 divides $6$, so $d\in\{1,2,3,6\}$. These four degree classes are disjoint and exhaust $\FF_{p^6}$. The degree-$1$ class has $p$ elements, while step [](#s4){.pf-ref} gives the degree-$2$ and degree-$3$ counts. Therefore, if $N_6$ denotes the degree-$6$ count,
-\[
+$$
 p^6=p+(p^2-p)+(p^3-p)+N_6.
-\]
+$$
 Solving gives
-\[
+$$
 N_6=p^6-p^3-p^2+p.
-\]
+$$
 
 :::
 
@@ -134,12 +134,12 @@ N_6=p^6-p^3-p^2+p.
 ::: pf-step
 
 Hence the requested number is
-\[
+$$
 \boxed{\begin{cases}
 0,&6\nmid n,\\[2mm]
 p^6-p^3-p^2+p,&6\mid n.
 \end{cases}}
-\]
+$$
 
 ::: pf-proof
 

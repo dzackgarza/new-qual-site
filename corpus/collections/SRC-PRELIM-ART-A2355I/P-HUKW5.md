@@ -42,14 +42,14 @@ vector-valued function definition.
 
 ::: pf-step
 If the partial derivatives $\frac{\partial f_i}{\partial x_j}(a)$ exist at $a \in \RR^n$ for all $1 \le i \le m$ and $1 \le j \le n$, the \dfn{Jacobian matrix} $J_f(a) \in M_{m \times n}(\RR)$ is defined as:
-\[
+$$
 J_f(a) = \begin{pmatrix}
 \frac{\partial f_1}{\partial x_1}(a) & \frac{\partial f_1}{\partial x_2}(a) & \cdots & \frac{\partial f_1}{\partial x_n}(a) \\
 \frac{\partial f_2}{\partial x_1}(a) & \frac{\partial f_2}{\partial x_2}(a) & \cdots & \frac{\partial f_2}{\partial x_n}(a) \\
 \vdots & \vdots & \ddots & \vdots \\
 \frac{\partial f_m}{\partial x_1}(a) & \frac{\partial f_m}{\partial x_2}(a) & \cdots & \frac{\partial f_m}{\partial x_n}(a)
 \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 definition of total derivative matrix representation with respect to standard bases.
@@ -77,12 +77,12 @@ given mapping.
 
 ::: pf-step
 Compute the partial derivatives with respect to $r$ and $\theta$:
-\[
+$$
 \frac{\partial f_1}{\partial r} = \cos\theta, \qquad \frac{\partial f_1}{\partial \theta} = -r\sin\theta,
-\]
-\[
+$$
+$$
 \frac{\partial f_2}{\partial r} = \sin\theta, \qquad \frac{\partial f_2}{\partial \theta} = r\cos\theta.
-\]
+$$
 
 ::: pf-proof
 product and trigonometric differentiation rules.
@@ -92,12 +92,12 @@ product and trigonometric differentiation rules.
 
 ::: {.pf-step #s2-3}
 The general Jacobian matrix at $(r, \theta)$ is:
-\[
+$$
 J_f(r, \theta) = \begin{pmatrix}
 \cos\theta & -r\sin\theta \\
 \sin\theta & r\cos\theta
 \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 assembling partial derivatives into $2 \times 2$ matrix.
@@ -129,12 +129,12 @@ trigonometric values $\cos(0) = 1, \sin(0) = 0$.
 
 ::: pf-step
 Thus:
-\[
+$$
 J_f(0, 0) = \begin{pmatrix}
 1 & 0 \\
 0 & 0
 \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 substituting values from step [](#s3-1){.pf-ref} into step [](#s2-3){.pf-ref}.

@@ -12,18 +12,18 @@ audit:
 
 ::: {.problem}
 The fundamental group $\pi_1(X,x)$ can be described as pointed homotopy classes of pointed maps
-\[
+$$
 (S^1,p)\to(X,x).
-\]
+$$
 Describe the set of pointed homotopy classes of pointed maps
-\[
+$$
 (S^0,p)\to(X,x),
-\]
+$$
 where
-\[
+$$
 S^0=\{-1,1\},
 \qquad p=1.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -33,13 +33,13 @@ S^0=\{-1,1\},
 ::: {.pf-step #s1-1}
 
 A pointed map
-\[
+$$
 f:(S^0,1)\to(X,x)
-\]
+$$
 is completely determined by the point
-\[
+$$
 y=f(-1)\in X.
-\]
+$$
 
 
 ::: pf-proof
@@ -53,13 +53,13 @@ Pointedness forces $f(1)=x$. Since $S^0$ has only the two points $1$ and $-1$, t
 ::: pf-step
 
 Let $f_y$ and $f_z$ be the pointed maps corresponding to $y,z\in X$. A pointed homotopy from $f_y$ to $f_z$ is a continuous map
-\[
+$$
 H:S^0\times I\to X
-\]
+$$
 such that
-\[
+$$
 H(1,t)=x
-\]
+$$
 for all $t$, with $H(-1,0)=y$ and $H(-1,1)=z$.
 
 
@@ -79,15 +79,15 @@ Such a pointed homotopy exists if and only if $y$ and $z$ lie in the same path c
 ::: pf-proof
 
 If $H$ exists, then
-\[
+$$
 \gamma(t)=H(-1,t)
-\]
+$$
 is a path from $y$ to $z$. Conversely, if $\gamma:I\to X$ is a path from $y$ to $z$, define
-\[
+$$
 H(-1,t)=\gamma(t),
 \qquad
 H(1,t)=x.
-\]
+$$
 Because $S^0\times I$ is the disjoint union of two copies of $I$, this $H$ is continuous and is a pointed homotopy.
 
 :::
@@ -97,9 +97,9 @@ Because $S^0\times I$ is the disjoint union of two copies of $I$, this $H$ is co
 ::: {.pf-step #s1-4}
 
 Therefore the set of pointed homotopy classes is naturally identified with the set of path components of $X$:
-\[
+$$
 \boxed{[(S^0,1),(X,x)]_*\cong\pi_0(X).}
-\]
+$$
 
 
 ::: pf-proof

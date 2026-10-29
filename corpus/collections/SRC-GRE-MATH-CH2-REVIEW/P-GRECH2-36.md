@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 What positive value of $a$ satisfies the following equation?
 
-\[
+$$
 \int_{e}^{a^e} \frac{dx}{x \int_{a}^{ax} \frac{dy}{y}} = 1
-\]
+$$
 
 (A) $\frac{1}{e}$
 (B) $\sqrt[4]{e}$

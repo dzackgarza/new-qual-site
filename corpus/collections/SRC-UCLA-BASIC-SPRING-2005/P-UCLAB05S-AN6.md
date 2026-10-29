@@ -17,11 +17,11 @@ audit:
 
 ::: {.problem}
 Consider the set of functions $f:[0,1]\to\RR$ satisfying
-\[
+$$
 |f(x)-f(y)|\leq|x-y|
 \qquad\text{and}\qquad
 \int_0^1 f(x)\,dx=1.
-\]
+$$
 Show that this is a compact subset of $C([0,1])$.
 :::
 

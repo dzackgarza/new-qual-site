@@ -33,14 +33,14 @@ Then $\prod A_\alpha$ is a subspace of $\prod X_\alpha$ if both products are giv
 Let $A=\prod A_\alpha\subseteq X=\prod X_\alpha$.
 
 For the box topology, a basic open set of the subspace $A$ has the form
-\[
+$$
 A\cap\prod U_\alpha=\prod(A_\alpha\cap U_\alpha),
-\]
+$$
 which is a basic box-open set in the product of the subspaces $A_\alpha$. Conversely every basic box-open set in $\prod A_\alpha$ has this form. Thus the topologies agree.
 
 For the product topology the same computation applies, with $U_\alpha=X_\alpha$ for all but finitely many $\alpha$. Then
-\[
+$$
 A_\alpha\cap U_\alpha=A_\alpha
-\]
+$$
 for all but finitely many $\alpha$, exactly the basis condition for the product topology on $\prod A_\alpha$. Hence the two subspace descriptions agree in the product topology as well.
 :::

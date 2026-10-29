@@ -45,13 +45,13 @@ Let $t$ denote the loop in the mapping torus traced by the basepoint as the $I$-
 ::: pf-step
 
 If $X=S^1\vee S^1$ with free generators $a,b$ of
-\[
+$$
 \pi_1(X,x_0)\cong F(a,b),
-\]
+$$
 then $T_f$ is obtained from
-\[
+$$
 X\vee S^1
-\]
+$$
 by attaching two $2$-cells.
 
 ::: pf-proof
@@ -68,11 +68,11 @@ Thus its $1$-skeleton is $X\vee S^1$.
 ::: {.pf-step #s2}
 
 The two attaching maps impose
-\[
+$$
 t a t^{-1}=f_*(a),
 \qquad
 t b t^{-1}=f_*(b).
-\]
+$$
 
 ::: pf-proof
 
@@ -81,13 +81,13 @@ Consider the square obtained from the cylinder over the $a$-edge.
 Its oriented boundary traverses the bottom edge, the right vertical edge, the top edge backwards, and the left vertical edge backwards.
 Because the quotient identifies $(x,0)$ with $(f(x),1)$, the bottom edge represents $f_*(a)$ in the chosen top copy, while the reversed top edge represents $a^{-1}$.
 Hence the boundary word is
-\[
+$$
 f_*(a)\,t\,a^{-1}\,t^{-1},
-\]
+$$
 so its relation is equivalent to
-\[
+$$
 t a t^{-1} f_*(a)^{-1}=1.
-\]
+$$
 The same argument for the $b$-edge gives the second relation.
 
 :::
@@ -97,13 +97,13 @@ The same argument for the $b$-edge gives the second relation.
 ::: {.pf-step #s3}
 
 Therefore
-\[
+$$
 \boxed{
 \pi_1(T_f)
 \cong
 \left\langle a,b,t\ \middle|\ t a t^{-1}=f_*(a),\ t b t^{-1}=f_*(b)\right\rangle .
 }
-\]
+$$
 
 ::: pf-proof
 
@@ -117,16 +117,16 @@ Van Kampen for CW complexes yields the displayed presentation.
 ::: {.pf-step #s4}
 
 Now suppose
-\[
+$$
 X=S^1\times S^1
-\]
+$$
 with the standard generators $a,b$ of
-\[
+$$
 \pi_1(X)\cong\ZZ^2
 \cong\langle a,b\mid [a,b]=1\rangle.
-\]
+$$
 Then
-\[
+$$
 \boxed{
 \pi_1(T_f)
 \cong
@@ -136,16 +136,16 @@ t a t^{-1}=f_*(a),\
 t b t^{-1}=f_*(b)
 \right\rangle .
 }
-\]
+$$
 
 ::: pf-proof
 
 Use the usual CW structure on the torus with one $0$-cell, two $1$-cells $a,b$, and one $2$-cell attached along the commutator $[a,b]$.
 The mapping-torus $1$-skeleton adds the stable loop $t$.
 The original torus $2$-cell contributes the relation
-\[
+$$
 [a,b]=1,
-\]
+$$
 while the cylinders over the $a$- and $b$-edges contribute the two conjugacy relations from step [](#s2){.pf-ref}.
 The product of the torus $2$-cell with $I$ gives a $3$-cell and therefore introduces no additional relation in the fundamental-group presentation.
 

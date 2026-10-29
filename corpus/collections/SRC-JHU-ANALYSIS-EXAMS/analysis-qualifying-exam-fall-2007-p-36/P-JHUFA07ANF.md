@@ -37,20 +37,20 @@ Construct an open dense set of finite positive measure.
 
 ::: pf-proof
 Enumerate the rationals as $\QQ=\{q_1,q_2,\ldots\}$ and set
-\[
+$$
 U=\bigcup_{n=1}^\infty \left(q_n-2^{-n-3},q_n+2^{-n-3}\right).
-\]
+$$
 Then $U$ is open.
 It contains $\QQ$, so it is dense in $\RR$.
 Moreover, by countable subadditivity,
-\[
+$$
 m(U)\le \sum_{n=1}^\infty 2^{-n-2}=\frac14<\infty.
-\]
+$$
 Since $U$ contains a nonempty open interval, $m(U)>0$.
 Thus
-\[
+$$
 0<m(U)<\infty.
-\]
+$$
 :::
 
 :::
@@ -60,14 +60,14 @@ Dilate to obtain measure exactly one.
 
 ::: pf-proof
 Let $a=m(U)>0$ and define
-\[
+$$
 V=a^{-1}U=\{a^{-1}x:x\in U\}.
-\]
+$$
 A nonzero dilation is a homeomorphism of $\RR$, so $V$ is again open and dense.
 By the scaling property of Lebesgue measure,
-\[
+$$
 m(V)=a^{-1}m(U)=1.
-\]
+$$
 Hence an open dense subset of $\RR$ of Lebesgue measure exactly one does exist.
 :::
 

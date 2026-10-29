@@ -36,9 +36,9 @@ Homology of the sphere complement $S^n \setminus S$:
 
 By Alexander Duality (or the Mayer–Vietoris sphere-complement induction in Hatcher §2.B):
 For any embedded sphere $S \cong S^k \subset S^n$ ($0 \le k < n$), the reduced homology of the complement is:
-\[
+$$
 \widetilde{H}_i(S^n \setminus S) \cong \begin{cases} \ZZ & \text{if } i = n - k - 1, \\ 0 & \text{otherwise.} \end{cases}
-\]
+$$
 Thus the homology of $S^n \setminus S$ matches the homology of the sphere $S^{n-k-1}$ in all dimensions.
 
 ::: pf-proof
@@ -63,9 +63,9 @@ Local retraction in the coordinate ball $D^n$:
 
 In the coordinate disk $D^n \cong D^k \times D^{n-k}$, the intersection with $S$ is $D^k \times \{0\}$.
 The complement inside $D^n$ is:
-\[
+$$
 D^n \setminus (D^k \times \{0\}) \cong D^k \times (D^{n-k} \setminus \{0\}).
-\]
+$$
 
 ::: pf-proof
 
@@ -125,9 +125,9 @@ Mayer–Vietoris sequence with contractible disk complements.
 ::: pf-step
 
 Factoring the inclusion $i: S^{n-k-1} \hookrightarrow S^n \setminus S$ as:
-\[
+$$
 S^{n-k-1} \xrightarrow{j} D^n \setminus D^k \hookrightarrow S^n \setminus S,
-\]
+$$
 the map $i_*$ is the composite of the homotopy equivalence $j_*$ and the Mayer–Vietoris isomorphism.
 Therefore $i_*: \widetilde{H}_i(S^{n-k-1}) \xrightarrow{\cong} \widetilde{H}_i(S^n \setminus S)$ is an isomorphism for all $i$.
 

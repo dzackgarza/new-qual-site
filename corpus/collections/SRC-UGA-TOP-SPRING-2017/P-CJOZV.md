@@ -32,11 +32,11 @@ Justify your answer.
 
 ::: {.solution}
 Let
-\[
+$$
 X=A\vee B,
 \qquad
 A\cong B\cong\RP^2,
-\]
+$$
 and let $a,b$ denote the nontrivial elements of $\pi_1(A)$ and $\pi_1(B)$ respectively.
 
 ::: pf
@@ -44,21 +44,21 @@ and let $a,b$ denote the nontrivial elements of $\pi_1(A)$ and $\pi_1(B)$ respec
 ::: {.pf-step #s1}
 
 The fundamental group of $X$ is
-\[
+$$
 \pi_1(X)\cong C_2*C_2
 =\left\langle a,b\mid a^2=b^2=1\right\rangle.
-\]
+$$
 
 ::: pf-proof
 
 Since $X$ is the wedge of the path-connected spaces $A$ and $B$, van Kampen's theorem gives
-\[
+$$
 \pi_1(X)\cong\pi_1(A)*\pi_1(B).
-\]
+$$
 Because
-\[
+$$
 \pi_1(A)\cong\pi_1(B)\cong C_2,
-\]
+$$
 the displayed presentation follows.
 
 :::
@@ -68,34 +68,34 @@ the displayed presentation follows.
 ::: {.pf-step #s2}
 
 Equivalence classes of three-sheeted covers of $X$ are in bijection with simultaneous-conjugacy classes of pairs
-\[
+$$
 (\sigma,\tau)\in S_3\times S_3
-\]
+$$
 satisfying
-\[
+$$
 \sigma^2=\tau^2=1.
-\]
+$$
 
 ::: pf-proof
 
 Choose labels $1,2,3$ on the fiber over the wedge point.
 Monodromy gives a homomorphism
-\[
+$$
 \rho:\pi_1(X)\longrightarrow S_3.
-\]
+$$
 By step [](#s1){.pf-ref}, such a homomorphism is determined by
-\[
+$$
 \sigma=\rho(a),
 \qquad
 \tau=\rho(b),
-\]
+$$
 and the relations force $\sigma^2=\tau^2=1$.
 
 Conversely, any such pair defines a permutation representation of $\pi_1(X)$ and hence a three-sheeted cover.
 Relabeling the fiber by $g\in S_3$ replaces the pair by
-\[
+$$
 (g\sigma g^{-1},g\tau g^{-1}),
-\]
+$$
 and two covers over $X$ are equivalent exactly when their monodromy representations differ by such a relabeling.
 
 :::
@@ -105,7 +105,7 @@ and two covers over $X$ are equivalent exactly when their monodromy representati
 ::: {.pf-step #s3}
 
 Up to simultaneous conjugacy, there are exactly five possible monodromy pairs:
-\[
+$$
 \begin{aligned}
 & (1,1),\\
 & (1,(12)),\\
@@ -113,7 +113,7 @@ Up to simultaneous conjugacy, there are exactly five possible monodromy pairs:
 & ((12),(12)),\\
 & ((12),(23)).
 \end{aligned}
-\]
+$$
 
 ::: pf-proof
 
@@ -121,20 +121,20 @@ The only involutions in $S_3$ are the identity and the three transpositions.
 
 If neither entry is a transposition, the pair is $(1,1)$.
 If exactly one entry is a transposition, conjugacy makes it $(12)$, giving the two ordered possibilities
-\[
+$$
 (1,(12)),
 \qquad
 ((12),1).
-\]
+$$
 If both entries are transpositions, either they are equal, giving the class
-\[
+$$
 ((12),(12)),
-\]
+$$
 or they are distinct.
 Every ordered pair of distinct transpositions is simultaneously conjugate to
-\[
+$$
 ((12),(23)).
-\]
+$$
 These cases are mutually inequivalent because simultaneous conjugacy preserves which entries are trivial and whether the two nontrivial entries are equal.
 
 :::
@@ -151,14 +151,14 @@ A covering is connected exactly when the monodromy action on the fiber is transi
 
 For the first four pairs in step [](#s3){.pf-ref}, the generated subgroup fixes at least one element of $\{1,2,3\}$, so the action is not transitive.
 For the last pair,
-\[
+$$
 \langle(12),(23)\rangle=S_3,
-\]
+$$
 which acts transitively.
 Hence only
-\[
+$$
 ((12),(23))
-\]
+$$
 gives a connected three-sheeted cover.
 
 :::
@@ -173,18 +173,18 @@ The five covers can be described explicitly from the restrictions over the two p
 
 Write $v_1,v_2,v_3$ for the three points over the wedge point.
 A transposition for the $A$-generator joins the corresponding two fiber points inside a copy of the universal cover
-\[
+$$
 S^2\longrightarrow\RP^2,
-\]
+$$
 while a fixed fiber point contributes a copy of $A\cong\RP^2$.
 The same description applies to $B$.
 
 Thus the five cases are as follows.
 
 For $(1,1)$, all three sheets are fixed by both generators, so the cover is
-\[
+$$
 X\sqcup X\sqcup X.
-\]
+$$
 
 For $(1,(12))$, the orbit $\{1,2\}$ gives a connected double cover consisting of one $S^2$ over $B$ with one copy of $A$ attached at each of the two points $v_1,v_2$, while the fixed point $v_3$ gives a separate copy of $X$.
 
@@ -202,9 +202,9 @@ Gluing these four pieces at the indicated fiber points gives the unique connecte
 ::: pf-step
 
 Therefore the complete answer is: five equivalence classes of three-sheeted covers in general, represented by the five pairs in step [](#s3){.pf-ref}; if “cover” is intended to mean connected cover, there is exactly one, represented by
-\[
+$$
 \boxed{((12),(23)).}
-\]
+$$
 
 ::: pf-proof
 

@@ -24,29 +24,29 @@ audit:
 ::: {.problem}
 Let $\mu$ be a measure and let $F_1\supseteq F_2\supseteq\cdots$ be measurable.
 Is it always true that
-\[
+$$
 \mu\!\left(\bigcap_{n=1}^\infty F_n\right)=\lim_{n\to\infty}\mu(F_n)?
-\]
+$$
 :::
 
 ::: {.solution}
 No, not without a finiteness hypothesis.
 For Lebesgue measure on $\RR$, let
-\[
+$$
 F_n=[n,\infty).
-\]
+$$
 Then $(F_n)$ is decreasing and
-\[
+$$
 \bigcap_{n=1}^\infty F_n=\varnothing,
-\]
+$$
 so the measure of the intersection is $0$, while
-\[
+$$
 \mu(F_n)=\infty
-\]
+$$
 for every $n$.
 
 If $\mu(F_1)<\infty$, then continuity from above does hold:
-\[
+$$
 \mu\!\left(\bigcap_nF_n\right)=\lim_n\mu(F_n).
-\]
+$$
 :::

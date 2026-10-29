@@ -30,26 +30,26 @@ $$
 If $0$ is a zero of $f$, factor $f(z)=z^m g(z)$ with $g(0)\ne0$; this removes only finitely many zeros, so it suffices to treat the case $f(0)\ne0$.
 
 Let $M=\sup_{\DD}|f|$. For $0<r<1$ such that no zero lies on $|z|=r$, Jensen's formula gives
-\[
+$$
 \log |f(0)|+\sum_{|z_n|<r}\log\frac r{|z_n|}
 =\frac1{2\pi}\int_0^{2\pi}\log|f(re^{i\theta})|\,d\theta
 \le \log M.
-\]
+$$
 Hence
-\[
+$$
 \sum_{|z_n|<r}\log\frac r{|z_n|}\le \log\frac M{|f(0)|}.
 \tag{1}
-\]
+$$
 Fix $0<R<1$ and let $r\uparrow1$ through radii larger than $R$. From (1),
-\[
+$$
 \sum_{|z_n|<R}\log\frac1{|z_n|}\le \log\frac M{|f(0)|}.
-\]
+$$
 Letting $R\uparrow1$ and using monotone convergence for the nonnegative terms yields
-\[
+$$
 \sum_n\log\frac1{|z_n|}<\infty.
-\]
+$$
 Finally, for $0<t<1$, $-\log t\ge1-t$. Therefore
-\[
+$$
 \sum_n(1-|z_n|)\le \sum_n\log\frac1{|z_n|}<\infty.
-\]
+$$
 :::

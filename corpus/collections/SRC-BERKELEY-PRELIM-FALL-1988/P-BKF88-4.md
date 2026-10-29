@@ -17,7 +17,7 @@ audit:
 
 ::: {.problem}
 Find the Jordan canonical form of
-\[
+$$
 \begin{pmatrix}
 1&0&0&0&0&0\\
 1&1&0&0&0&0\\
@@ -26,7 +26,7 @@ Find the Jordan canonical form of
 1&0&0&0&1&0\\
 1&1&1&1&1&1
 \end{pmatrix}.
-\]
+$$
 :::
 
 ::: {.solution}

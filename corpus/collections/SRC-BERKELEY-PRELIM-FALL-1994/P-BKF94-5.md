@@ -28,9 +28,9 @@ audit:
 
 ::: {.problem}
 (a) Find a basis for the real solution space of
-\[
+$$
 \sum_{n=0}^{7}\frac{d^nx}{dt^n}=0.
-\]
+$$
 
 (b) Find a basis for the subspace of solutions satisfying $x(t)\to0$ as $t\to+\infty$.
 :::

@@ -33,11 +33,11 @@ If a finite CW complex $X$ is the union of subcomplexes $A$ and $B$, show that $
 Because $A$ and $B$ are subcomplexes of $X$, every open cell of $X=A\cup B$ lies in $A$ or in $B$, and it lies in both exactly when it is a cell of $A\cap B$.
 
 Let $c_i(Z)$ denote the number of $i$-cells of a finite CW complex $Z$. For each $i$, ordinary inclusion--exclusion for the finite sets of $i$-cells gives
-\[
+$$
 c_i(X)=c_i(A)+c_i(B)-c_i(A\cap B).
-\]
+$$
 Taking alternating sums,
-\[
+$$
 \begin{aligned}
 \chi(X)
 &=\sum_i(-1)^i c_i(X)\\
@@ -46,5 +46,5 @@ Taking alternating sums,
  -\sum_i(-1)^i c_i(A\cap B)\\
 &=\boxed{\chi(A)+\chi(B)-\chi(A\cap B)}.
 \end{aligned}
-\]
+$$
 :::

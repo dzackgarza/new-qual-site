@@ -29,11 +29,11 @@ audit:
 Let $V$ be a finite-dimensional vector space over a field $F$, and let $f:V\to V$ be linear.
 Let $S^2f$ denote the induced endomorphism of the symmetric square $S^2V$.
 Prove that
-\[
+$$
 2\operatorname{tr}(S^2f)
 =
 \operatorname{tr}(f)^2+\operatorname{tr}(f^2).
-\]
+$$
 :::
 
 ::: {.solution}

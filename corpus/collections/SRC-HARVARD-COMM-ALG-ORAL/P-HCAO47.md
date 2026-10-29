@@ -33,17 +33,17 @@ If $x\in A$ is a unit in $B$, show that $x$ is a unit in $A$.
 ::: {.solution}
 Let $y=x^{-1}\in B$. Since $B$ is integral over $A$, the element $y$ is
 integral over $A$. Hence there is a monic relation
-\[
+$$
 y^n+a_{n-1}y^{n-1}+\cdots+a_1y+a_0=0,
 \qquad a_i\in A.
-\]
+$$
 Multiplying by $x^{n-1}$ and using $xy=1$ gives
-\[
+$$
 y+a_{n-1}+a_{n-2}x+\cdots+a_1x^{n-2}+a_0x^{n-1}=0.
-\]
+$$
 Therefore
-\[
+$$
 y=-a_{n-1}-a_{n-2}x-\cdots-a_0x^{n-1}\in A.
-\]
+$$
 But $xy=1$, so $x$ has an inverse $y$ already in $A$. Thus $x\in A^\times$.
 :::

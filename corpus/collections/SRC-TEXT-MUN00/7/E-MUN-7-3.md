@@ -29,8 +29,8 @@ Let $X$ be the two-element set $\{0,1\}$ . Show there is a bijective corresponde
 :::
 
 ::: {.solution}
-For \(S\subset\ZZ_+\), define its characteristic function
-\[
+For $S\subset\ZZ_+$, define its characteristic function
+$$
 \chi_S\in X^\omega,
 \qquad
 \chi_S(n)=
@@ -38,14 +38,14 @@ For \(S\subset\ZZ_+\), define its characteristic function
 1,&n\in S,\\
 0,&n\notin S.
 \end{cases}
-\]
+$$
 This gives a map
-\[
+$$
 \Phi:\mathcal P(\ZZ_+)\to X^\omega.
-\]
-It is injective because distinct subsets have different characteristic functions. It is surjective because for any \(x=(x_n)\in X^\omega\), the subset
-\[
+$$
+It is injective because distinct subsets have different characteristic functions. It is surjective because for any $x=(x_n)\in X^\omega$, the subset
+$$
 S_x=\{n\in\ZZ_+:x_n=1\}
-\]
-satisfies \(\chi_{S_x}=x\). Therefore \(\Phi\) is a bijection.
+$$
+satisfies $\chi_{S_x}=x$. Therefore $\Phi$ is a bijection.
 :::

@@ -41,24 +41,24 @@ A surjective homomorphic image of a left Artinian ring is left Artinian.
 ::: pf-proof
 
 Let
-\[
+$$
 J_1\supseteq J_2\supseteq J_3\supseteq\cdots
-\]
-be a descending chain of left ideals of \(R\). Since \(f:A\to R\) is surjective, each preimage \(f^{-1}(J_i)\) is a left ideal of \(A\), and
-\[
+$$
+be a descending chain of left ideals of $R$. Since $f:A\to R$ is surjective, each preimage $f^{-1}(J_i)$ is a left ideal of $A$, and
+$$
 f^{-1}(J_1)\supseteq f^{-1}(J_2)\supseteq f^{-1}(J_3)\supseteq\cdots.
-\]
-Because \(A\) is left Artinian, there is \(N\) such that
-\[
+$$
+Because $A$ is left Artinian, there is $N$ such that
+$$
 f^{-1}(J_i)=f^{-1}(J_N)
 \qquad(i\ge N).
-\]
-Applying \(f\) and using surjectivity gives
-\[
+$$
+Applying $f$ and using surjectivity gives
+$$
 J_i=f(f^{-1}(J_i))=f(f^{-1}(J_N))=J_N
 \qquad(i\ge N).
-\]
-Thus every descending chain of left ideals of \(R\) stabilizes.
+$$
+Thus every descending chain of left ideals of $R$ stabilizes.
 
 :::
 
@@ -70,23 +70,23 @@ Every Artinian integral domain is a field.
 
 ::: pf-proof
 
-Let \(A\) be an Artinian integral domain and let \(0\ne a\in A\). The descending chain
-\[
+Let $A$ be an Artinian integral domain and let $0\ne a\in A$. The descending chain
+$$
 (a)\supseteq(a^2)\supseteq(a^3)\supseteq\cdots
-\]
-stabilizes, so for some \(n\ge1\),
-\[
+$$
+stabilizes, so for some $n\ge1$,
+$$
 (a^n)=(a^{n+1}).
-\]
-Hence \(a^n\in(a^{n+1})\), so there exists \(b\in A\) with
-\[
+$$
+Hence $a^n\in(a^{n+1})$, so there exists $b\in A$ with
+$$
 a^n=a^{n+1}b.
-\]
-Because \(A\) is a domain and \(a^n\ne0\), cancellation gives
-\[
+$$
+Because $A$ is a domain and $a^n\ne0$, cancellation gives
+$$
 1=ab.
-\]
-Thus every nonzero element of \(A\) is a unit, so \(A\) is a field.
+$$
+Thus every nonzero element of $A$ is a unit, so $A$ is a field.
 
 :::
 
@@ -98,11 +98,11 @@ Every prime ideal in a commutative Artinian ring is maximal.
 
 ::: pf-proof
 
-Let \(\mathfrak p\) be a prime ideal of the commutative Artinian ring \(A\). The quotient \(A/\mathfrak p\) is an integral domain. By step [](#s1){.pf-ref}, applied to the quotient map
-\[
+Let $\mathfrak p$ be a prime ideal of the commutative Artinian ring $A$. The quotient $A/\mathfrak p$ is an integral domain. By step [](#s1){.pf-ref}, applied to the quotient map
+$$
 A\twoheadrightarrow A/\mathfrak p,
-\]
-the quotient is Artinian. By step [](#s2){.pf-ref} it is therefore a field. Hence \(\mathfrak p\) is maximal.
+$$
+the quotient is Artinian. By step [](#s2){.pf-ref} it is therefore a field. Hence $\mathfrak p$ is maximal.
 
 :::
 

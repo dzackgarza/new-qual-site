@@ -34,10 +34,10 @@ Calculate $H_* (X; \ZZ)$ from a CW complex description of $X$.
 
 ::: {.solution}
 Write
-\[
+$$
 E=\{(x_1,x_2,0)\in S^2\}
 \cong S^1
-\]
+$$
 for the equator, and let $D_+$ and $D_-$ be the closed upper and lower hemispheres.
 
 ::: pf
@@ -45,26 +45,26 @@ for the equator, and let $D_+$ and $D_-$ be the closed upper and lower hemispher
 ::: {.pf-step #s1}
 
 The image of the equator in $X$ is
-\[
+$$
 E/(x\sim -x)\cong\RP^1\cong S^1.
-\]
+$$
 Give it a CW structure with one $0$-cell $v$ and one $1$-cell $e$.
 
 ::: pf-proof
 
 The antipodal action on the circle is free, and the quotient map
-\[
+$$
 q_E:S^1\longrightarrow S^1/(z\sim -z)
-\]
+$$
 is the standard two-sheeted covering.
 Identifying the quotient circle with $S^1$ via
-\[
+$$
 [z]\longmapsto z^2,
-\]
+$$
 the quotient map becomes
-\[
+$$
 z\longmapsto z^2.
-\]
+$$
 Thus the quotient equator is a circle and has the stated one-vertex CW structure.
 
 :::
@@ -75,13 +75,13 @@ Thus the quotient equator is a circle and has the stated one-vertex CW structure
 
 The interiors of $D_+$ and $D_-$ descend to two open $2$-cells $e_+^2$ and $e_-^2$ of $X$.
 Hence $X$ has a CW structure with
-\[
+$$
 \#\{0\text{-cells}\}=1,
 \qquad
 \#\{1\text{-cells}\}=1,
 \qquad
 \#\{2\text{-cells}\}=2.
-\]
+$$
 
 ::: pf-proof
 
@@ -89,9 +89,9 @@ The equivalence relation identifies points only on the equator.
 Therefore the quotient map is injective on each open hemisphere, so each hemisphere interior maps homeomorphically onto an open disk in $X$.
 
 The characteristic map of either $2$-cell is the quotient map
-\[
+$$
 D_\pm\longrightarrow X.
-\]
+$$
 Its boundary lands in the quotient equator from step [](#s1){.pf-ref}.
 Together with the cells $v,e$, these two hemisphere interiors exhaust $X$.
 
@@ -103,29 +103,29 @@ Together with the cells $v,e$, these two hemisphere interiors exhaust $X$.
 
 After choosing orientations of the two $2$-cells suitably, both attaching maps have degree $2$ on the $1$-skeleton.
 Thus
-\[
+$$
 d_2:\ZZ e_+^2\oplus\ZZ e_-^2\longrightarrow\ZZ e
-\]
+$$
 is given by
-\[
+$$
 d_2(a,b)=2a+2b.
-\]
+$$
 
 ::: pf-proof
 
 The boundary circle of either hemisphere is the original equator $E$.
 By step [](#s1){.pf-ref}, its attaching map is exactly the antipodal quotient
-\[
+$$
 S^1\longrightarrow E/(x\sim -x)\cong S^1,
-\]
+$$
 which, under the coordinate $z\mapsto z^2$, has degree $2$.
 
 The cellular boundary formula says that the coefficient of the unique $1$-cell is this degree.
 Reversing the chosen orientation of a $2$-cell reverses the sign of its coefficient, so we may orient both cells so that the two coefficients are $+2$.
 Therefore
-\[
+$$
 d_2=(2\ \ 2).
-\]
+$$
 
 :::
 
@@ -134,18 +134,18 @@ d_2=(2\ \ 2).
 ::: {.pf-step #s4}
 
 The cellular differential
-\[
+$$
 d_1:\ZZ e\longrightarrow\ZZ v
-\]
+$$
 is zero.
 
 ::: pf-proof
 
 The unique $1$-cell is a loop whose two endpoints are both the unique $0$-cell $v$.
 Hence its cellular boundary is
-\[
+$$
 v-v=0.
-\]
+$$
 
 :::
 
@@ -154,7 +154,7 @@ v-v=0.
 ::: {.pf-step #s5}
 
 The cellular chain complex is therefore
-\[
+$$
 0
 \longrightarrow
 \ZZ^2
@@ -163,7 +163,7 @@ The cellular chain complex is therefore
 \xrightarrow{\ 0\ }
 \ZZ
 \longrightarrow0.
-\]
+$$
 
 ::: pf-proof
 
@@ -176,23 +176,23 @@ This is immediate from the cell counts in step [](#s2){.pf-ref} and the boundary
 ::: {.pf-step #s6}
 
 The second homology group is
-\[
+$$
 \boxed{H_2(X;\ZZ)\cong\ZZ.}
-\]
+$$
 
 ::: pf-proof
 
 There are no $3$-cells, so
-\[
+$$
 H_2(X)=\ker d_2.
-\]
+$$
 From step [](#s5){.pf-ref},
-\[
+$$
 \ker d_2
 =\{(a,b)\in\ZZ^2:2a+2b=0\}
 =\{(a,-a):a\in\ZZ\}
 \cong\ZZ.
-\]
+$$
 
 :::
 
@@ -201,24 +201,24 @@ From step [](#s5){.pf-ref},
 ::: {.pf-step #s7}
 
 The first homology group is
-\[
+$$
 \boxed{H_1(X;\ZZ)\cong\ZZ/2\ZZ.}
-\]
+$$
 
 ::: pf-proof
 
 Since $d_1=0$,
-\[
+$$
 H_1(X)
 =\frac{\ker d_1}{\operatorname{im}d_2}
 =\frac{\ZZ}{2\ZZ}.
-\]
+$$
 Indeed,
-\[
+$$
 \operatorname{im}d_2
 =\{2a+2b:a,b\in\ZZ\}
 =2\ZZ.
-\]
+$$
 
 :::
 
@@ -227,7 +227,7 @@ Indeed,
 ::: pf-step
 
 Finally,
-\[
+$$
 \boxed{
 H_i(X;\ZZ)
 \cong
@@ -236,14 +236,14 @@ H_i(X;\ZZ)
 \ZZ/2\ZZ, & i=1,\\
 0, & i\ge3.
 \end{cases}}
-\]
+$$
 
 ::: pf-proof
 
 The space has one $0$-cell and $d_1=0$, so
-\[
+$$
 H_0(X)\cong\ZZ.
-\]
+$$
 Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} compute the remaining nonzero groups.
 There are no cells in dimensions at least $3$, so the higher homology groups vanish.
 

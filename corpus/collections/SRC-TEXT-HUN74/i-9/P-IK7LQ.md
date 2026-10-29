@@ -37,9 +37,9 @@ for every integer $m\ne0$.
 ::: {.pf-step #s1}
 
 There exist reduced words $u$ and $v$ such that
-\[
+$$
 g=uvu^{-1},
-\]
+$$
 where $v$ is nonempty and cyclically reduced.
 
 ::: pf-proof
@@ -77,9 +77,9 @@ For every integer $m\ge1$, one has $g^m\ne1$.
 ::: pf-proof
 
 Using step [](#s1){.pf-ref},
-\[
+$$
 g^m=(uvu^{-1})^m=uv^m u^{-1}.
-\]
+$$
 If $g^m=1$, conjugating by $u^{-1}$ and $u$ would give $v^m=1$, contradicting
 step [](#s2){.pf-ref} because a nonempty reduced word in a free group does not represent the
 identity.

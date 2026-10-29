@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Show that there are no natural numbers $x,y\ge1$ such that
-\[
+$$
 x^2+y^2=7xy.
-\]
+$$
 :::
 
 ::: {.solution}

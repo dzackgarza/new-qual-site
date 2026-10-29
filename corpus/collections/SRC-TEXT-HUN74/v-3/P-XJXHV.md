@@ -43,18 +43,18 @@ If $u\in F$ is separable over $K$, then $u$ is separable over $E$.
 ::: pf-proof
 
 Let
-\[
+$$
 m_K(x)\in K[x]
-\]
+$$
 be the minimal polynomial of $u$ over $K$, and let
-\[
+$$
 m_E(x)\in E[x]
-\]
+$$
 be the minimal polynomial of $u$ over $E$. Since $K[x]\subseteq E[x]$ and
 $m_K(u)=0$, minimality of $m_E$ implies
-\[
+$$
 m_E\mid m_K\qquad\text{in }E[x].
-\]
+$$
 
 Because $u$ is separable over $K$, the polynomial $m_K$ has no repeated root in
 a splitting field. Every divisor of a polynomial with distinct roots likewise

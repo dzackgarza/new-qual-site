@@ -28,20 +28,20 @@ Let $H$ be a subgroup of a finite group $G$ and $A\colon H\to GL(n,\CC)$ be a re
 
 ::: pf-step
 For any character $\phi$ of $G$,
-\[
+$$
 (\chi^{A\uparrow_H^G},\phi)_G
 =(\chi^A,\phi\downarrow_H^G)_H.
-\]
+$$
 
 ::: pf-proof
 The induced-character formula is
-\[
+$$
 \chi^{A\uparrow_H^G}(g)
 =\frac1{|H|}\sum_{\substack{x\in G\\x^{-1}gx\in H}}
 \chi^A(x^{-1}gx).
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 (\chi^{A\uparrow_H^G},\phi)_G
 &=\frac1{|G|}\sum_{g\in G}
@@ -50,20 +50,20 @@ Therefore
 \sum_{x\in G}\sum_{h\in H}
 \chi^A(h)\overline{\phi(xhx^{-1})}.
 \end{aligned}
-\]
+$$
 Because characters are class functions,
-\[
+$$
 \phi(xhx^{-1})=\phi(h).
-\]
+$$
 Thus the inner sum is independent of $x$, and
-\[
+$$
 \begin{aligned}
 (\chi^{A\uparrow_H^G},\phi)_G
 &=\frac1{|H|}\sum_{h\in H}
 \chi^A(h)\overline{\phi(h)}\\
 &=(\chi^A,\phi\downarrow_H^G)_H.
 \end{aligned}
-\]
+$$
 This is Frobenius reciprocity.
 :::
 
@@ -74,17 +74,17 @@ An irreducible representation can induce to a reducible representation.
 
 ::: pf-proof
 Take
-\[
+$$
 G=C_2=\{1,s\},\qquad H=\{1\}.
-\]
+$$
 The unique one-dimensional representation $A$ of the trivial group $H$ is irreducible. Its induction to $G$ is the regular representation
-\[
+$$
 A\uparrow_H^G\cong\CC[G],
-\]
+$$
 which decomposes as
-\[
+$$
 \CC[G]\cong \mathbf1\oplus\operatorname{sgn}.
-\]
+$$
 Hence $A\uparrow_H^G$ is reducible.
 :::
 
@@ -92,49 +92,49 @@ Hence $A\uparrow_H^G$ is reducible.
 
 ::: pf-step
 If $K\le H\le G$ and $B$ is a representation of $K$, then
-\[
+$$
 B\uparrow_K^G
 \cong
 (B\uparrow_K^H)\uparrow_H^G.
-\]
+$$
 
 ::: pf-proof
 Using the group-algebra construction of induction,
-\[
+$$
 B\uparrow_K^H
 =\CC[H]\otimes_{\CC[K]}B
-\]
+$$
 and hence
-\[
+$$
 (B\uparrow_K^H)\uparrow_H^G
 =\CC[G]\otimes_{\CC[H]}
 \bigl(\CC[H]\otimes_{\CC[K]}B\bigr).
-\]
+$$
 Define
-\[
+$$
 \Phi:\CC[G]\otimes_{\CC[H]}
 \bigl(\CC[H]\otimes_{\CC[K]}B\bigr)
 \longrightarrow
 \CC[G]\otimes_{\CC[K]}B
-\]
+$$
 by
-\[
+$$
 \Phi(g\otimes(h\otimes v))=gh\otimes v.
-\]
+$$
 This is well-defined because the balancing relations over $\CC[H]$ and $\CC[K]$ map to the balancing relation in the target.
 
 Conversely define
-\[
+$$
 \Psi(g\otimes v)=g\otimes(1\otimes v).
-\]
+$$
 This is well-defined over $\CC[K]$: for $k\in K$,
-\[
+$$
 \Psi(gk\otimes v)
 =gk\otimes(1\otimes v)
 =g\otimes(k\otimes v)
 =g\otimes(1\otimes kv)
 =\Psi(g\otimes kv).
-\]
+$$
 The maps $\Phi$ and $\Psi$ are inverse to one another and commute with the left $G$-action. Therefore they give an isomorphism of $G$-representations, proving transitivity of induction.
 :::
 

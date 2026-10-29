@@ -19,9 +19,9 @@ review: draft
 ::: {.problem}
 Let $Y \subseteq \PP^n$ be a nonempty algebraic set, and let $\theta: \AA^{n+1} \sm \theset{(0,\ldots,0)} \to \PP^n$ send the point with affine coordinates $(a_0,\ldots,a_n)$ to the point with homogeneous coordinates $\thevector{a_0 : \cdots : a_n}$.
 The **affine cone** over $Y$ is
-\[
+$$
 C(Y) = \inverseof{\theta}(Y) \union \theset{(0,\ldots,0)} .
-\]
+$$
 
 1. Show that $C(Y)$ is an algebraic set in $\AA^{n+1}$ whose ideal equals $I(Y)$, regarded as an ordinary ideal of $k[x_0,\ldots,x_n]$.
 
@@ -43,7 +43,7 @@ Every homogeneous polynomial of positive degree also vanishes at $\vector{0}$, s
 **Part 2.** An algebraic set is irreducible exactly when its ideal is prime, and by part 1 the two ideals coincide: $I(Y) = I(C(Y))$.
 
 **Part 3.** Using the previous exercise,
-\[
+$$
 \dim C(Y) = \dim S(C(Y)) = \dim S(Y) = \dim Y + 1 .
-\]
+$$
 :::

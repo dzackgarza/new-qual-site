@@ -17,10 +17,10 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 f(z)=\frac{z-a}{1-\overline a z},
 \qquad |a|<1,
-\]
+$$
 be defined on the unit disk $D=\{z:|z|<1\}$.
 Using the Maximum Principle, show that $f$ maps $D$ onto $D$.
 :::

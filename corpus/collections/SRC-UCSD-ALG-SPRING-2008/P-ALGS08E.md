@@ -54,9 +54,9 @@ If the Galois group is $\ZZ_2\times\ZZ_2$, then $p(x)$ is solvable by radicals.
 
 The group $\ZZ_2\times\ZZ_2$ is abelian, hence solvable.
 For example, if $H$ is any subgroup of order $2$, then
-\[
+$$
 1\triangleleft H\triangleleft \ZZ_2\times\ZZ_2
-\]
+$$
 has abelian quotients.
 By step [](#s1){.pf-ref}, $p(x)$ is solvable by radicals.
 
@@ -71,15 +71,15 @@ If the Galois group is $S_3$, then $p(x)$ is also solvable by radicals.
 ::: pf-proof
 
 The alternating subgroup $A_3$ is normal in $S_3$, and
-\[
+$$
 1\triangleleft A_3\triangleleft S_3
-\]
+$$
 has quotients
-\[
+$$
 A_3\cong C_3,
 \qquad
 S_3/A_3\cong C_2.
-\]
+$$
 Thus $S_3$ is solvable.
 By step [](#s1){.pf-ref}, $p(x)$ is solvable by radicals in this case as well.
 

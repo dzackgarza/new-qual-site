@@ -39,11 +39,11 @@ Suppose $E$ is a splitting field of $x^n - a$ over $\FF_p$.
 
 ::: {.pf-step #s1}
 
-Since \(n\mid p-1\), every \(n\)-th root of unity lies in \(\FF_p^\times\).
+Since $n\mid p-1$, every $n$-th root of unity lies in $\FF_p^\times$.
 
 ::: pf-proof
 
-The multiplicative group \(\FF_p^\times\) is cyclic of order \(p-1\). Therefore it contains a unique subgroup of order \(n\), namely the full group \(\mu_n\) of \(n\)-th roots of unity.
+The multiplicative group $\FF_p^\times$ is cyclic of order $p-1$. Therefore it contains a unique subgroup of order $n$, namely the full group $\mu_n$ of $n$-th roots of unity.
 
 :::
 
@@ -51,14 +51,14 @@ The multiplicative group \(\FF_p^\times\) is cyclic of order \(p-1\). Therefore 
 
 ::: {.pf-step #s2}
 
-Let \(\alpha\in E\) satisfy \(\alpha^n=a\). Then
-\[
+Let $\alpha\in E$ satisfy $\alpha^n=a$. Then
+$$
 E=\FF_p(\alpha).
-\]
+$$
 
 ::: pf-proof
 
-The roots of \(x^n-a\) are precisely \(\xi\alpha\) with \(\xi\in\mu_n\). By step [](#s1){.pf-ref}, every such \(\xi\) lies in \(\FF_p\). Hence adjoining one root \(\alpha\) already adjoins all roots, so it gives the splitting field.
+The roots of $x^n-a$ are precisely $\xi\alpha$ with $\xi\in\mu_n$. By step [](#s1){.pf-ref}, every such $\xi$ lies in $\FF_p$. Hence adjoining one root $\alpha$ already adjoins all roots, so it gives the splitting field.
 
 :::
 
@@ -66,11 +66,11 @@ The roots of \(x^n-a\) are precisely \(\xi\alpha\) with \(\xi\in\mu_n\). By step
 
 ::: {.pf-step #s3}
 
-The polynomial \(x^n-a\) is separable over \(\FF_p\).
+The polynomial $x^n-a$ is separable over $\FF_p$.
 
 ::: pf-proof
 
-Because \(n\mid p-1\), one has \(p\nmid n\). The derivative is \(nx^{n-1}\), which has no common root with \(x^n-a\) because \(a\ne0\). Thus all roots are distinct.
+Because $n\mid p-1$, one has $p\nmid n$. The derivative is $nx^{n-1}$, which has no common root with $x^n-a$ because $a\ne0$. Thus all roots are distinct.
 
 :::
 
@@ -78,11 +78,11 @@ Because \(n\mid p-1\), one has \(p\nmid n\). The derivative is \(nx^{n-1}\), whi
 
 ::: pf-step
 
-Therefore \(E/\FF_p\) is Galois.
+Therefore $E/\FF_p$ is Galois.
 
 ::: pf-proof
 
-By step [](#s2){.pf-ref}, \(E\) is the splitting field of \(x^n-a\), and by step [](#s3){.pf-ref} that polynomial is separable. A splitting field of a separable polynomial is Galois.
+By step [](#s2){.pf-ref}, $E$ is the splitting field of $x^n-a$, and by step [](#s3){.pf-ref} that polynomial is separable. A splitting field of a separable polynomial is Galois.
 
 :::
 
@@ -90,15 +90,15 @@ By step [](#s2){.pf-ref}, \(E\) is the splitting field of \(x^n-a\), and by step
 
 ::: pf-step
 
-For \(\sigma\in\operatorname{Gal}(E/\FF_p)\), define
-\[
+For $\sigma\in\operatorname{Gal}(E/\FF_p)$, define
+$$
 \chi(\sigma)=\frac{\sigma(\alpha)}{\alpha}.
-\]
-Then \(\chi(\sigma)\in\mu_n\subseteq\FF_p^\times\).
+$$
+Then $\chi(\sigma)\in\mu_n\subseteq\FF_p^\times$.
 
 ::: pf-proof
 
-Since \(\sigma(\alpha)\) is another root of \(x^n-a\), step [](#s2){.pf-ref} gives \(\sigma(\alpha)=\xi\alpha\) for some \(\xi\in\mu_n\). Thus the quotient is exactly \(\xi\).
+Since $\sigma(\alpha)$ is another root of $x^n-a$, step [](#s2){.pf-ref} gives $\sigma(\alpha)=\xi\alpha$ for some $\xi\in\mu_n$. Thus the quotient is exactly $\xi$.
 
 :::
 
@@ -107,21 +107,21 @@ Since \(\sigma(\alpha)\) is another root of \(x^n-a\), step [](#s2){.pf-ref} giv
 ::: pf-step
 
 The map
-\[
+$$
 \chi:\operatorname{Gal}(E/\FF_p)\hookrightarrow\FF_p^\times
-\]
+$$
 is an injective group homomorphism.
 
 ::: pf-proof
 
-For \(\sigma,\tau\in\operatorname{Gal}(E/\FF_p)\), the element \(\chi(\tau)\) lies in the base field and is therefore fixed by \(\sigma\). Hence
-\[
+For $\sigma,\tau\in\operatorname{Gal}(E/\FF_p)$, the element $\chi(\tau)$ lies in the base field and is therefore fixed by $\sigma$. Hence
+$$
 \chi(\sigma\tau)
 =\frac{\sigma(\tau(\alpha))}{\alpha}
 =\frac{\sigma(\chi(\tau)\alpha)}{\alpha}
 =\chi(\tau)\chi(\sigma).
-\]
-The target is abelian, so this is the homomorphism law. If \(\chi(\sigma)=1\), then \(\sigma(\alpha)=\alpha\); since \(E=\FF_p(\alpha)\), this forces \(\sigma=1\). Thus \(\chi\) is injective.
+$$
+The target is abelian, so this is the homomorphism law. If $\chi(\sigma)=1$, then $\sigma(\alpha)=\alpha$; since $E=\FF_p(\alpha)$, this forces $\sigma=1$. Thus $\chi$ is injective.
 
 :::
 
@@ -129,21 +129,21 @@ The target is abelian, so this is the homomorphism law. If \(\chi(\sigma)=1\), t
 
 ::: {.pf-step #s7}
 
-Let \(\operatorname{Fr}:E\to E\) be the Frobenius automorphism \(x\mapsto x^p\). Then
-\[
+Let $\operatorname{Fr}:E\to E$ be the Frobenius automorphism $x\mapsto x^p$. Then
+$$
 \chi(\operatorname{Fr})=a^{(p-1)/n}.
-\]
+$$
 
 ::: pf-proof
 
-Using \(\alpha^n=a\) and \(n\mid p-1\),
-\[
+Using $\alpha^n=a$ and $n\mid p-1$,
+$$
 \chi(\operatorname{Fr})
 =\frac{\alpha^p}{\alpha}
 =\alpha^{p-1}
 =(\alpha^n)^{(p-1)/n}
 =a^{(p-1)/n}.
-\]
+$$
 
 :::
 
@@ -151,11 +151,11 @@ Using \(\alpha^n=a\) and \(n\mid p-1\),
 
 ::: {.pf-step #s8}
 
-The Galois group \(\operatorname{Gal}(E/\FF_p)\) is generated by Frobenius.
+The Galois group $\operatorname{Gal}(E/\FF_p)$ is generated by Frobenius.
 
 ::: pf-proof
 
-The field \(E\) is a finite extension of the finite field \(\FF_p\), hence itself finite. The Galois group of a finite extension of finite fields is cyclic and generated by the Frobenius automorphism.
+The field $E$ is a finite extension of the finite field $\FF_p$, hence itself finite. The Galois group of a finite extension of finite fields is cyclic and generated by the Frobenius automorphism.
 
 :::
 
@@ -164,21 +164,21 @@ The field \(E\) is a finite extension of the finite field \(\FF_p\), hence itsel
 ::: pf-step
 
 Consequently,
-\[
+$$
 \chi\bigl(\operatorname{Gal}(E/\FF_p)\bigr)
 =\left\langle a^{(p-1)/n}\right\rangle
 \subseteq\FF_p^\times.
-\]
+$$
 Hence
-\[
+$$
 \operatorname{Gal}(E/\FF_p)
 \cong
 \left\langle a^{(p-1)/n}\right\rangle.
-\]
+$$
 
 ::: pf-proof
 
-By step [](#s8){.pf-ref} the Galois group is generated by \(\operatorname{Fr}\), and by step [](#s7){.pf-ref} its image under the injective homomorphism \(\chi\) is \(a^{(p-1)/n}\). Therefore the image is exactly the cyclic subgroup generated by that element, and injectivity gives the desired isomorphism.
+By step [](#s8){.pf-ref} the Galois group is generated by $\operatorname{Fr}$, and by step [](#s7){.pf-ref} its image under the injective homomorphism $\chi$ is $a^{(p-1)/n}$. Therefore the image is exactly the cyclic subgroup generated by that element, and injectivity gives the desired isomorphism.
 
 :::
 

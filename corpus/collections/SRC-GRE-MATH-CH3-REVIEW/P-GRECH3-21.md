@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Which of the following vectors is normal to the surface
-\[
+$$
 \log(x+y^2-z^3)=x-1
-\]
+$$
 at the point where $y=8$ and $z=4$?
 
 (A) $\hat{\mathbf{i}}-\hat{\mathbf{j}}-2\hat{\mathbf{k}}$

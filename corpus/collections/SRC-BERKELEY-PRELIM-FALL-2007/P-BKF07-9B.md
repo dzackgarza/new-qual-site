@@ -27,18 +27,18 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be holomorphic on a neighborhood of the closed unit disk
-\[
+Let $f$ be holomorphic on a neighborhood of the closed unit disk
+$$
 \overline{B_1(0)}=\{z:|z|\le1\}.
-\]
+$$
 Suppose
-\[
+$$
 \max_{|z|=1}|f(z)|\le1.
-\]
-Prove that there exists \(z\) with \(|z|\le1\) such that
-\[
+$$
+Prove that there exists $z$ with $|z|\le1$ such that
+$$
 f(z)=z.
-\]
+$$
 :::
 
 ::: {.solution}

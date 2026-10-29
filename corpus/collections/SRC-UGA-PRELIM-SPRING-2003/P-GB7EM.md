@@ -38,9 +38,9 @@ Part (a): Definition of differentiability:
 ::: pf-step
 
 A function $f: \RR^n \to \RR$ is differentiable at a point $p \in \RR^n$ if there exists a linear transformation $L: \RR^n \to \RR$ (or equivalently a gradient vector $\nabla f(p) \in \RR^n$ such that $L(h) = \langle \nabla f(p), h \rangle$) satisfying:
-\[
+$$
 \lim_{h \to 0} \frac{|f(p + h) - f(p) - L(h)|}{\|h\|} = 0.
-\]
+$$
 Equivalently, $f(p + h) = f(p) + L(h) + o(\|h\|)$ as $\|h\| \to 0$.
 
 ::: pf-proof
@@ -77,9 +77,9 @@ $|f(p+h) - f(p)| \le |L(h)| + o(\|h\|) \le \|L\| \|h\| + o(\|h\|) \to 0$ as $h \
 
 We evaluate the limit of $f(x, y) = \frac{xy}{x^2 + y^2}$ as $(x, y) \to (0, 0)$ along lines $y = mx$:
 For $x \neq 0$:
-\[
+$$
 f(x, mx) = \frac{x(mx)}{x^2 + (mx)^2} = \frac{m x^2}{x^2(1 + m^2)} = \frac{m}{1 + m^2}.
-\]
+$$
 
 ::: pf-proof
 

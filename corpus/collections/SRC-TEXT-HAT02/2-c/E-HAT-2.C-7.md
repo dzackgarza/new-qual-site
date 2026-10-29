@@ -30,31 +30,31 @@ Verify that the Lefschetz fixed point theorem holds also when $\tau(f)$ is defin
 
 ::: {.solution}
 Let $F$ be a field and define
-\[
+$$
 \tau_F(f)=\sum_n(-1)^n\operatorname{tr}\bigl(f_*:H_n(X;F)\to H_n(X;F)\bigr).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 For a finite chain complex of finite-dimensional $F$-vector spaces and a chain endomorphism $T$, one has
-\[
+$$
 \sum_n(-1)^n\operatorname{tr}(T|C_n)
 =
 \sum_n(-1)^n\operatorname{tr}(T_*|H_n).
-\]
+$$
 
 ::: pf-proof
 
 Use the invariant subspaces $B_n\subset Z_n\subset C_n$. Additivity of trace in short exact sequences gives
-\[
+$$
 \operatorname{tr}(T|C_n)=\operatorname{tr}(T|Z_n)+\operatorname{tr}(T|B_{n-1})
-\]
+$$
 and
-\[
+$$
 \operatorname{tr}(T|Z_n)=\operatorname{tr}(T|B_n)+\operatorname{tr}(T_*|H_n).
-\]
+$$
 Summing with alternating signs cancels the boundary terms.
 
 :::
@@ -64,9 +64,9 @@ Summing with alternating signs cancels the boundary terms.
 ::: {.pf-step #s2}
 
 If $f:X\to X$ has no fixed points, then after the subdivisions and simplicial approximation used in Hatcher's proof of the Lefschetz theorem there is a simplicial map $g$ homotopic to $f$ such that
-\[
+$$
 g(\sigma)\cap\sigma=\varnothing
-\]
+$$
 for every simplex $\sigma$ of the domain subdivision.
 
 ::: pf-proof
@@ -92,9 +92,9 @@ The condition in step [](#s2){.pf-ref} says that no oriented simplex maps with a
 ::: pf-step
 
 Hence a fixed-point-free map has
-\[
+$$
 \tau_F(f)=0.
-\]
+$$
 
 ::: pf-proof
 
@@ -107,7 +107,7 @@ By steps [](#s1){.pf-ref} and [](#s3){.pf-ref} the alternating trace on homology
 :::
 
 Taking the contrapositive proves the field-coefficient Lefschetz theorem:
-\[
+$$
 \boxed{\tau_F(f)\ne0\Longrightarrow f\text{ has a fixed point}.}
-\]
+$$
 :::

@@ -15,9 +15,9 @@ audit:
 ::: {.problem}
 Let $\lambda>1$.
 Show that the equation
-\[
+$$
 \lambda=z+e^{-z}
-\]
+$$
 has exactly one solution in the right half-plane, and that this solution is real.
 :::
 

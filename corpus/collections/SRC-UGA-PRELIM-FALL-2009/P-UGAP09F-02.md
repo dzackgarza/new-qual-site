@@ -18,20 +18,20 @@ audit:
 Work the following calculus problems.
 
 (a) Compute the derivative of
-\[
+$$
 f(x)=\sec^3\!\bigl(\tan(x^2)\bigr).
-\]
+$$
 
 (b) Find the Taylor expansion for $f(x)=\ln x$ about $a=2$, and determine its radius of convergence.
 
 (c) Set up, but do not evaluate, the triple integral needed to compute the integral of
-\[
+$$
 f(x,y,z)=x\sin(y+z)
-\]
+$$
 over the region
-\[
+$$
 R=\{(x,y,z)\in\RR^3:x\ge0,\ y+z\ge2,\ x^2+y^2+z^2\le4\}.
-\]
+$$
 :::
 
 ::: {.solution}

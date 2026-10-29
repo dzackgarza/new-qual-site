@@ -20,10 +20,10 @@ How many such functions are there?
 
 ::: {.solution}
 Let
-\[
+$$
 G=\CC\setminus[-1,1],
 \qquad q(z)=z^2-1.
-\]
+$$
 The function $q$ is holomorphic and nonvanishing on $G$. A nonvanishing
 holomorphic function has a holomorphic square root precisely when its winding
 number around $0$ along every closed curve is even. The fundamental group of
@@ -32,9 +32,9 @@ loop the function $q=(z-1)(z+1)$ has winding number $2$. Hence $q$ has a
 holomorphic square root on $G$.
 
 Equivalently, this is the classical branch
-\[
+$$
 f(z)=\sqrt{z^2-1}
-\]
+$$
 characterized by $f(z)/z\to1$ as $z\to\infty$.
 
 As an ordinary complex-valued holomorphic function, $f$ does not extend

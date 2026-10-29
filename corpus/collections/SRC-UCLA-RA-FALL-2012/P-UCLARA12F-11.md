@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Find all holomorphic functions $f:\CC\to\CC$ satisfying
-\[
+$$
 f(z+1)=f(z),\qquad f(z+i)=e^{2\pi}f(z)
-\]
+$$
 for every $z\in\CC$.
 :::
 

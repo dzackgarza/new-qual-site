@@ -18,9 +18,9 @@ A subset $E$ of a metric space $X$ is a $G_\delta$ set if $E = \bigcap_{n=1}^\in
 ::: {.solution}
 
 Suppose for contradiction that
-\[
+$$
 \QQ=\bigcap_{n=1}^{\infty}G_n,
-\]
+$$
 where every $G_n$ is open in $\RR$.
 
 ::: pf
@@ -33,17 +33,17 @@ Every $G_n$ is dense in $\RR$.
 ::: pf-proof
 
 Since
-\[
+$$
 \QQ\subseteq G_n
-\]
+$$
 for every $n$ and $\QQ$ is dense in $\RR$,
-\[
+$$
 \overline{G_n}
 \supseteq
 \overline{\QQ}
 =
 \RR.
-\]
+$$
 Thus $\overline{G_n}=\RR$, so $G_n$ is dense.
 
 :::
@@ -53,9 +53,9 @@ Thus $\overline{G_n}=\RR$, so $G_n$ is dense.
 ::: {.pf-step #s1-2}
 
 For each $n$, the complement
-\[
+$$
 F_n=\RR\setminus G_n
-\]
+$$
 is closed and nowhere dense.
 
 
@@ -71,13 +71,13 @@ Because $G_n$ is dense by step [](#s1-1){.pf-ref}, no nonempty open interval can
 ::: {.pf-step #s1-3}
 
 Enumerate the rational numbers as
-\[
+$$
 \QQ=\{q_1,q_2,\ldots\}.
-\]
+$$
 Then each singleton
-\[
+$$
 \{q_m\}
-\]
+$$
 is closed and nowhere dense.
 
 
@@ -92,19 +92,19 @@ Singletons are closed in $\RR$. They have empty interior, so they are nowhere de
 ::: {.pf-step #s1-4}
 
 Under the assumption that $\QQ=\bigcap_nG_n$,
-\[
+$$
 \RR
 =
 \left(\bigcup_{n=1}^{\infty}F_n\right)
 \cup
 \left(\bigcup_{m=1}^{\infty}\{q_m\}\right).
-\]
+$$
 
 
 ::: pf-proof
 
 By De Morgan's law,
-\[
+$$
 \RR\setminus\QQ
 =
 \RR\setminus\bigcap_{n=1}^{\infty}G_n
@@ -112,13 +112,13 @@ By De Morgan's law,
 \bigcup_{n=1}^{\infty}(\RR\setminus G_n)
 =
 \bigcup_{n=1}^{\infty}F_n.
-\]
+$$
 Also
-\[
+$$
 \QQ
 =
 \bigcup_{m=1}^{\infty}\{q_m\}.
-\]
+$$
 Taking the union of $\QQ$ and its complement gives the displayed equality.
 
 :::
@@ -143,9 +143,9 @@ Problem 4 therefore implies that $\RR$ cannot be a countable union of such sets.
 ::: {.pf-step #s1-6}
 
 Hence
-\[
+$$
 \boxed{\QQ\text{ is not a }G_\delta\text{ subset of }\RR}.
-\]
+$$
 
 
 ::: pf-proof

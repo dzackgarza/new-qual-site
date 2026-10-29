@@ -35,9 +35,9 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 R = k[x_1, x_2, x_3, x_4] / \generators{x_1 x_4 - x_2 x_3}
-\]
+$$
 and show the following:
 
 a. $R$ is an integral domain of dimension 3.

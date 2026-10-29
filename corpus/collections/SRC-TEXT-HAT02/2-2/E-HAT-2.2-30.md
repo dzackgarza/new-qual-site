@@ -42,12 +42,12 @@ Use this to compute the homology of the mapping tori of the following maps:
 
 ::: {.solution}
 For the mapping torus $T_f$, the Wang sequence yields short exact sequences
-\[
+$$
 0\to\operatorname{coker}(1-f_*:H_n(X)\to H_n(X))
 \to H_n(T_f)
 \to\ker(1-f_*:H_{n-1}(X)\to H_{n-1}(X))
 \to0.
-\]
+$$
 In the cases below the kernel term is free, so each sequence splits as an abstract group.
 
 ::: pf
@@ -55,14 +55,14 @@ In the cases below the kernel term is free, so each sequence splits as an abstra
 ::: pf-step
 
 For a reflection $f:S^2\to S^2$,
-\[
+$$
 H_i(T_f)\cong
 \begin{cases}
 \ZZ,&i=0,1,\\
 \ZZ_2,&i=2,\\
 0,&i\ge3.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
@@ -75,13 +75,13 @@ On $H_2(S^2)=\ZZ$, a reflection acts by $-1$, so $1-f_*$ is multiplication by $2
 ::: pf-step
 
 If $f:S^2\to S^2$ has degree $2$, then
-\[
+$$
 H_i(T_f)\cong
 \begin{cases}
 \ZZ,&i=0,1,\\
 0,&i\ge2.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
@@ -96,7 +96,7 @@ Let $T^2=S^1\times S^1$ and choose the standard basis of $H_1(T^2)=\ZZ^2$.
 ::: pf-step
 
 If $f$ is the identity on the first factor and a reflection on the second, then
-\[
+$$
 H_i(T_f)\cong
 \begin{cases}
 \ZZ,&i=0,\\
@@ -105,22 +105,22 @@ H_i(T_f)\cong
 0,&i=3,\\
 0,&i>3.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 On $H_1$, $f_*=\operatorname{diag}(1,-1)$, so
-\[
+$$
 1-f_*=\operatorname{diag}(0,2).
-\]
+$$
 Its kernel is $\ZZ$ and its cokernel is $\ZZ\oplus\ZZ_2$. On $H_2(T^2)=\ZZ$, $f_*$ is multiplication by the determinant $-1$, so $1-f_*=2$. Hence
-\[
+$$
 H_2(T_f)\cong\ZZ_2\oplus\ZZ,
-\]
+$$
 while
-\[
+$$
 H_1(T_f)\cong(\ZZ\oplus\ZZ_2)\oplus\ZZ.
-\]
+$$
 There is no $H_3$ because multiplication by $2$ on $H_2$ has trivial kernel.
 
 :::
@@ -130,21 +130,21 @@ There is no $H_3$ because multiplication by $2$ on $H_2$ has trivial kernel.
 ::: pf-step
 
 If $f$ reflects both factors, then
-\[
+$$
 H_i(T_f)\cong
 \begin{cases}
 \ZZ,&i=0,2,3,\\
 \ZZ\oplus\ZZ_2\oplus\ZZ_2,&i=1,\\
 0,&i>3.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 On $H_1$, $f_*=-I$, so $1-f_*=2I$. Its kernel is zero and its cokernel is $(\ZZ_2)^2$. On $H_2$, $f_*$ is multiplication by $\det(-I)=+1$, so $1-f_*=0$. Thus $H_3\cong\ZZ$, $H_2\cong\ZZ$, and
-\[
+$$
 H_1\cong(\ZZ_2)^2\oplus\ZZ.
-\]
+$$
 
 :::
 
@@ -153,37 +153,37 @@ H_1\cong(\ZZ_2)^2\oplus\ZZ.
 ::: pf-step
 
 If $f$ interchanges the two factors and then reflects one factor, then
-\[
+$$
 H_i(T_f)\cong
 \begin{cases}
 \ZZ,&i=0,2,3,\\
 \ZZ\oplus\ZZ_2,&i=1,\\
 0,&i>3.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 Up to changing the basis, the induced map on $H_1$ has matrix
-\[
+$$
 A=
 \begin{pmatrix}
 0&-1\\
 1&0
 \end{pmatrix}.
-\]
+$$
 Thus
-\[
+$$
 I-A=
 \begin{pmatrix}
 1&1\\
 -1&1
 \end{pmatrix}.
-\]
+$$
 This matrix has determinant $2$ and Smith normal form $\operatorname{diag}(1,2)$, so its kernel is zero and its cokernel is $\ZZ_2$. Since $\det A=1$, the induced map on $H_2$ is the identity, hence $1-f_*=0$ there. Therefore $H_3\cong\ZZ$, $H_2\cong\ZZ$, and
-\[
+$$
 H_1\cong\ZZ_2\oplus\ZZ.
-\]
+$$
 
 :::
 

@@ -43,15 +43,15 @@ Control the zero Fourier mode.
 ::: pf-proof
 
 With
-\[
+$$
 \widehat f(k)=\int_0^1 f(x)e^{-2\pi ikx}\,dx,
-\]
+$$
 we have
-\[
+$$
 |\widehat f(0)|
 =\left|\int_0^1f(x)\,dx\right|
 \le \|f\|_{L^1(\circlegroup)}.
-\]
+$$
 
 :::
 
@@ -59,22 +59,22 @@ we have
 
 ::: pf-step
 
-Express the nonzero Fourier coefficients through \(f'\).
+Express the nonzero Fourier coefficients through $f'$.
 
 ::: pf-proof
 
-For \(k\ne0\), periodicity of \(f\) and integration by parts give
-\[
+For $k\ne0$, periodicity of $f$ and integration by parts give
+$$
 \widehat{f'}(k)
 =2\pi i k\,\widehat f(k).
-\]
+$$
 Hence
-\[
+$$
 |\widehat f(k)|
 =\frac{|\widehat{f'}(k)|}{2\pi|k|}.
-\]
+$$
 Therefore, by Cauchy--Schwarz,
-\[
+$$
 \begin{aligned}
 \sum_{k\ne0}|\widehat f(k)|
 &\le \frac1{2\pi}
@@ -84,19 +84,19 @@ Therefore, by Cauchy--Schwarz,
 \left(\sum_{k\ne0}|\widehat{f'}(k)|^2\right)^{1/2}
 \sqrt{2\sum_{k=1}^\infty\frac1{k^2}}.
 \end{aligned}
-\]
+$$
 By Parseval,
-\[
+$$
 \sum_{k\in\ZZ}|\widehat{f'}(k)|^2
 =\|f'\|_2^2.
-\]
+$$
 Thus
-\[
+$$
 \sum_{k\ne0}|\widehat f(k)|
 \le
 \frac1{\sqrt2\,\pi}\|f'\|_2
 \sqrt{\sum_{k=1}^\infty\frac1{k^2}}.
-\]
+$$
 
 :::
 
@@ -109,13 +109,13 @@ Combine the estimates.
 ::: pf-proof
 
 Adding the zero mode from Step 1 yields
-\[
+$$
 \boxed{
 \sum_{k=-\infty}^\infty|\widehat f(k)|
 \le \|f\|_1
 +\frac1{\sqrt2\,\pi}\|f'\|_2
 \sqrt{\sum_{k=1}^\infty\frac1{k^2}}.}
-\]
+$$
 In particular the Fourier series is absolutely convergent.
 
 :::

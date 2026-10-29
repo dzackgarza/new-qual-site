@@ -37,9 +37,9 @@ The operation is commutative.
 ::: pf-proof
 
 Since multiplication and addition in $\QQ$ are commutative,
-\[
+$$
 a*b=ab+a+b=ba+b+a=b*a.
-\]
+$$
 
 :::
 
@@ -52,9 +52,9 @@ The $*$-identity is $0$.
 ::: pf-proof
 
 For every $a\in\QQ$,
-\[
+$$
 a*0=a\cdot0+a+0=a,
-\]
+$$
 and by commutativity also $0*a=a$.
 
 :::
@@ -68,17 +68,17 @@ Not every rational has a $*$-inverse.
 ::: pf-proof
 
 The identity
-\[
+$$
 a*b=0
-\]
+$$
 is equivalent to
-\[
+$$
 (a+1)(b+1)=1.
-\]
+$$
 For $a\ne-1$ this gives $b=(a+1)^{-1}-1$, but for $a=-1$ one has
-\[
+$$
 (-1)*b=-1
-\]
+$$
 for every $b$.
 Thus $-1$ has no inverse.
 

@@ -41,11 +41,11 @@ Prove that $M_1 \otimes_A M_2$ is a flat $A$-module.
 ::: {.pf-step #s1}
 
 Choose free $A$-modules $F_1,F_2$ and modules $Q_1,Q_2$ such that
-\[
+$$
 F_1\cong P_1\oplus Q_1,
 \qquad
 F_2\cong P_2\oplus Q_2.
-\]
+$$
 
 ::: pf-proof
 
@@ -64,17 +64,17 @@ The tensor product $F_1\otimes_A F_2$ is free.
 
 Let $(e_i)_{i\in I}$ and $(f_j)_{j\in J}$ be bases of $F_1$ and $F_2$.
 Then
-\[
+$$
 F_1\cong\bigoplus_{i\in I}A,
 \qquad
 F_2\cong\bigoplus_{j\in J}A.
-\]
+$$
 Tensor product commutes with direct sums in each variable, so
-\[
+$$
 F_1\otimes_A F_2
 \cong
 \bigoplus_{(i,j)\in I\times J}A.
-\]
+$$
 Thus it is free, with basis given by the pure tensors $e_i\otimes f_j$.
 
 :::
@@ -88,20 +88,20 @@ The module $P_1\otimes_A P_2$ is a direct summand of $F_1\otimes_A F_2$.
 ::: pf-proof
 
 Using step [](#s1){.pf-ref} and distributivity of tensor product over direct sums,
-\[
+$$
 F_1\otimes_A F_2
 \cong
 (P_1\oplus Q_1)\otimes_A(P_2\oplus Q_2)
-\]
+$$
 and hence
-\[
+$$
 F_1\otimes_A F_2
 \cong
 (P_1\otimes_A P_2)
 \oplus(P_1\otimes_A Q_2)
 \oplus(Q_1\otimes_A P_2)
 \oplus(Q_1\otimes_A Q_2).
-\]
+$$
 Therefore $P_1\otimes_A P_2$ is a direct summand.
 
 :::
@@ -125,11 +125,11 @@ This proves part (a).
 ::: {.pf-step #s5}
 
 For every $A$-module $X$, there is a natural isomorphism
-\[
+$$
 X\otimes_A(M_1\otimes_A M_2)
 \cong
 (X\otimes_A M_1)\otimes_A M_2.
-\]
+$$
 
 ::: pf-proof
 
@@ -142,28 +142,28 @@ This is the associativity isomorphism for tensor products over the commutative r
 ::: {.pf-step #s6}
 
 The functor
-\[
+$$
 -\otimes_A(M_1\otimes_A M_2)
-\]
+$$
 is exact.
 
 ::: pf-proof
 
 Since $M_1$ is flat, the functor
-\[
+$$
 -\otimes_A M_1
-\]
+$$
 is exact.
 Since $M_2$ is flat, the functor
-\[
+$$
 -\otimes_A M_2
-\]
+$$
 is exact as well.
 Their composite is therefore exact.
 By step [](#s5){.pf-ref}, that composite is naturally isomorphic to
-\[
+$$
 -\otimes_A(M_1\otimes_A M_2).
-\]
+$$
 Hence the latter functor is exact.
 
 :::

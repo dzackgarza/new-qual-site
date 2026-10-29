@@ -41,20 +41,20 @@ Every group $G$ of order $3\cdot5\cdot13$ has a normal cyclic subgroup $N$ of or
 
 Let $n_{13}$ and $n_5$ be the numbers of Sylow $13$- and Sylow $5$-subgroups.
 The Sylow congruences and divisibilities give
-\[
+$$
 n_{13}\equiv1\pmod{13},\qquad n_{13}\mid15,
-\]
+$$
 and
-\[
+$$
 n_5\equiv1\pmod5,\qquad n_5\mid39.
-\]
+$$
 Among the divisors of $15$, only $1$ is congruent to $1$ modulo $13$, and among the divisors of $39$, only $1$ is congruent to $1$ modulo $5$.
 Thus the Sylow subgroups $Q$ of order $13$ and $R$ of order $5$ are both unique and hence normal.
 
 Since $Q\cap R=1$ and both are normal, their commutator subgroup satisfies
-\[
+$$
 [Q,R]\subseteq Q\cap R=1.
-\]
+$$
 Hence $N=QR=Q\times R$ has order $65$.
 Both $Q$ and $R$ are cyclic of prime order, so $N\cong C_{13}\times C_5\cong C_{65}$.
 It is normal because it is a product of normal subgroups.
@@ -72,17 +72,17 @@ The group $G$ is a semidirect product $C_{65}\rtimes C_3$.
 Let $P$ be a Sylow $3$-subgroup of $G$.
 Then $|P|=3$, $N\cap P=1$, and $N$ is normal.
 Therefore $NP$ is a subgroup and
-\[
+$$
 |NP|=\frac{|N||P|}{|N\cap P|}=65\cdot3=|G|.
-\]
+$$
 Thus $G=NP$ and
-\[
+$$
 G\cong N\rtimes P\cong C_{65}\rtimes C_3.
-\]
+$$
 The isomorphism type is therefore determined by the conjugation homomorphism
-\[
+$$
 \varphi:C_3\longrightarrow\operatorname{Aut}(C_{65}),
-\]
+$$
 up to changing generators of the two cyclic factors.
 
 :::
@@ -96,11 +96,11 @@ There are exactly two possible actions up to isomorphism: the trivial action and
 ::: pf-proof
 
 By the Chinese remainder theorem,
-\[
+$$
 \operatorname{Aut}(C_{65})
 \cong (\ZZ/65\ZZ)^\times
 \cong (\ZZ/5\ZZ)^\times\times(\ZZ/13\ZZ)^\times.
-\]
+$$
 The two factors are cyclic of orders $4$ and $12$, respectively.
 Consequently the first factor has no nontrivial element of order dividing $3$, while the second has a unique subgroup of order $3$.
 
@@ -120,9 +120,9 @@ Both possibilities occur and they are not isomorphic.
 ::: pf-proof
 
 For the trivial action, the semidirect product is the direct product
-\[
+$$
 C_{65}\times C_3\cong C_{195},
-\]
+$$
 which is abelian.
 
 For the nontrivial action, choose an automorphism of $C_{13}$ of order $3$, extend it trivially across the $C_5$ factor of $C_{65}$, and form $C_{65}\rtimes C_3$.

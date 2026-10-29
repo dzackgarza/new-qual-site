@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_0^\infty \frac{x^{a-1}}{1+x}\,dx,
-\]
+$$
 where $a$ is a complex number. What restrictions must be imposed on $a$?
 :::
 

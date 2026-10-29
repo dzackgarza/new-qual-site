@@ -27,18 +27,18 @@ State Holder's inequality for functions in $L^p$ spaces.
 
 ::: {.solution}
 Let $(X,\mathcal M,\mu)$ be a measure space, let $1\le p,q\le\infty$ satisfy
-\[
+$$
 \frac1p+\frac1q=1,
-\]
+$$
 and let $f\in L^p(\mu)$ and $g\in L^q(\mu)$.
 Then $fg\in L^1(\mu)$ and
-\[
+$$
 \boxed{
 \int_X|fg|\,d\mu
 \le \|f\|_p\,\|g\|_q.}
-\]
+$$
 Equivalently,
-\[
+$$
 \|fg\|_1\le\|f\|_p\|g\|_q.
-\]
+$$
 :::

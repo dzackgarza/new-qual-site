@@ -22,9 +22,9 @@ Show that if a connected manifold M is the boundary of a compact manifold, then 
 ::: {.solution}
 
 Let $W$ be a compact manifold with boundary
-\[
+$$
 \partial W=M.
-\]
+$$
 All homology groups below are taken with coefficients in $\FF_2$, so no orientability assumption is needed.
 
 ::: pf
@@ -32,10 +32,10 @@ All homology groups below are taken with coefficients in $\FF_2$, so no orientab
 ::: {.pf-step #s1-1}
 
 If $\dim W=n$, then Poincaré--Lefschetz duality gives
-\[
+$$
 H_i(W,M;\FF_2)
 \cong H^{n-i}(W;\FF_2).
-\]
+$$
 
 
 ::: pf-proof
@@ -49,26 +49,26 @@ Every manifold is orientable over $\FF_2$. Poincaré--Lefschetz duality for the 
 ::: {.pf-step #s1-2}
 
 Consequently,
-\[
+$$
 \chi(W,M)=(-1)^n\chi(W).
-\]
+$$
 
 
 ::: pf-proof
 
 Over the field $\FF_2$, the universal coefficient theorem gives
-\[
+$$
 \dim H^j(W;\FF_2)=\dim H_j(W;\FF_2).
-\]
+$$
 Using step [](#s1-1){.pf-ref},
-\[
+$$
 \begin{aligned}
 \chi(W,M)
 &=\sum_i(-1)^i\dim H_i(W,M;\FF_2)\\
 &=\sum_i(-1)^i\dim H^{n-i}(W;\FF_2)\\
 &=(-1)^n\chi(W).
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -77,17 +77,17 @@ Using step [](#s1-1){.pf-ref},
 ::: {.pf-step #s1-3}
 
 Additivity of Euler characteristic for the pair $(W,M)$ gives
-\[
+$$
 \chi(W)=\chi(M)+\chi(W,M).
-\]
+$$
 
 
 ::: pf-proof
 
 The long exact homology sequence of the pair $(W,M)$ is finite-dimensional in each degree and vanishes outside finitely many degrees. Taking the alternating sum of dimensions in this exact sequence gives
-\[
+$$
 \chi(W)-\chi(M)-\chi(W,M)=0.
-\]
+$$
 
 :::
 
@@ -96,9 +96,9 @@ The long exact homology sequence of the pair $(W,M)$ is finite-dimensional in ea
 ::: {.pf-step #s1-4}
 
 Combining steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} yields
-\[
+$$
 \chi(M)=\bigl(1-(-1)^n\bigr)\chi(W).
-\]
+$$
 
 
 ::: pf-proof
@@ -117,9 +117,9 @@ Hence $\chi(M)$ is even.
 ::: pf-proof
 
 If $n$ is even, step [](#s1-4){.pf-ref} gives $\chi(M)=0$. If $n$ is odd, it gives
-\[
+$$
 \chi(M)=2\chi(W).
-\]
+$$
 In either case $\chi(M)\in2\ZZ$.
 
 :::
@@ -129,9 +129,9 @@ In either case $\chi(M)\in2\ZZ$.
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{\chi(M)\text{ is even}.}
-\]
+$$
 
 
 ::: pf-proof

@@ -35,7 +35,7 @@ What are the solutions of $AX = 0$ ?
 
 ::: {.solution}
 Row reduction gives
-\[
+$$
 \begin{bmatrix}
 1&-i\\
 2&2\\
@@ -47,7 +47,7 @@ i&1+i
 0&1\\
 0&0
 \end{bmatrix}.
-\]
+$$
 
 ::: pf
 
@@ -57,13 +57,13 @@ $A$.
 
 ::: pf-proof
 Subtract $2R_1$ from $R_2$ and $iR_1$ from $R_3$. This gives
-\[
+$$
 \begin{bmatrix}
 1&-i\\
 0&2+2i\\
 0&i
 \end{bmatrix}.
-\]
+$$
 The second column contains a nonzero pivot below the first. Scaling that row to
 make the pivot $1$, clearing the second column above and below it, yields the
 displayed RREF.

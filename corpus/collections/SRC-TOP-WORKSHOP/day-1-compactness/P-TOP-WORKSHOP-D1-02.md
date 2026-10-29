@@ -61,22 +61,22 @@ Products of open sets form a basis for the product topology.
 ::: {.pf-step #s3}
 
 One has
-\[
+$$
 \overline{U\times V}=\overline U\times\overline V.
-\]
+$$
 
 ::: pf-proof
 
 The set $\overline U\times\overline V$ is closed in $X\times Y$ and contains $U\times V$, so
-\[
+$$
 \overline{U\times V}\subseteq\overline U\times\overline V.
-\]
+$$
 
 Conversely, let $(u,v)\in\overline U\times\overline V$ and let $O$ be any open neighborhood of $(u,v)$.
 Choose a basic open set $O_X\times O_Y$ with
-\[
+$$
 (u,v)\in O_X\times O_Y\subseteq O.
-\]
+$$
 Since $u\in\overline U$, the set $O_X$ meets $U$; since $v\in\overline V$, the set $O_Y$ meets $V$.
 Hence $(O_X\times O_Y)\cap(U\times V)$ is nonempty.
 Thus every neighborhood of $(u,v)$ meets $U\times V$, proving $(u,v)\in\overline{U\times V}$.
@@ -96,30 +96,30 @@ We verify directly that their product is compact.
 Let $\mathcal W$ be an open cover of $\overline U\times\overline V$.
 Fix $u\in\overline U$.
 For each $v\in\overline V$, choose $W_v\in\mathcal W$ containing $(u,v)$ and a basic open rectangle
-\[
+$$
 N_v\times M_v\subseteq W_v
-\]
+$$
 with $u\in N_v$ and $v\in M_v$.
 Compactness of $\overline V$ gives finitely many points $v_1,\dots,v_r$ such that
-\[
+$$
 \overline V\subseteq M_{v_1}\cup\cdots\cup M_{v_r}.
-\]
+$$
 Then
-\[
+$$
 N_u:=N_{v_1}\cap\cdots\cap N_{v_r}
-\]
+$$
 is an open neighborhood of $u$, and $N_u\times\overline V$ is covered by the finitely many sets $W_{v_1},\dots,W_{v_r}$.
 
 As $u$ varies, the sets $N_u$ cover $\overline U$.
 Compactness of $\overline U$ yields $u_1,\dots,u_s$ with
-\[
+$$
 \overline U\subseteq N_{u_1}\cup\cdots\cup N_{u_s}.
-\]
+$$
 The finitely many members of $\mathcal W$ chosen for these $s$ neighborhoods cover all of $\overline U\times\overline V$.
 Thus $\overline U\times\overline V$ is compact, and step [](#s3){.pf-ref} gives compactness of
-\[
+$$
 \overline{U\times V}=\overline U\times\overline V.
-\]
+$$
 
 :::
 

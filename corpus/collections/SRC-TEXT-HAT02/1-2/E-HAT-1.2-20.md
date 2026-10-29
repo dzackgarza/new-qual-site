@@ -34,9 +34,9 @@ Show that $X$ and $\bigvee_\infty S^1$ are in fact homotopy equivalent, but not 
 
 ::: {.solution}
 Let $o=(0,0)$, the common tangency point of all the circles $C_n$, and let
-\[
+$$
 W=\bigvee_{n=1}^{\infty}S^1_n
-\]
+$$
 with the usual CW wedge topology.
 
 ::: pf
@@ -44,9 +44,9 @@ with the usual CW wedge topology.
 ::: pf-step
 
 There is a continuous map
-\[
+$$
 f:W\to X
-\]
+$$
 whose restriction to $S^1_n$ is a homeomorphism onto $C_n$ taking the wedge point to $o$.
 
 ::: pf-proof
@@ -62,30 +62,30 @@ Thus the circlewise maps assemble to a continuous $f$.
 ::: pf-step
 
 There is a continuous map
-\[
+$$
 g:X\to W
-\]
+$$
 such that each restriction
-\[
+$$
 g|_{C_n}:C_n\to S^1_n
-\]
+$$
 has degree one.
 
 ::: pf-proof
 
 Fix a small radius $\varepsilon>0$.
 On each $C_n$, collapse the connected arc
-\[
+$$
 C_n\cap \overline{B_\varepsilon(o)}
-\]
+$$
 containing $o$ to the wedge point, and map the complementary arc monotonically once around $S^1_n$.
 This gives a continuous based degree-one map on each $C_n$.
 
 The definitions agree at the only common point $o$.
 Moreover,
-\[
+$$
 g\bigl(X\cap B_\varepsilon(o)\bigr)
-\]
+$$
 is exactly the wedge point.
 Hence $g$ is continuous at $o$, regardless of how small the prescribed neighborhoods of the wedge point are on the individual circles of $W$.
 
@@ -99,9 +99,9 @@ Thus continuity at such $x$ reduces to continuity of $g|_{C_n}$.
 ::: {.pf-step #s3}
 
 The composite
-\[
+$$
 g f:W\to W
-\]
+$$
 is homotopic to the identity on $W$.
 
 ::: pf-proof
@@ -118,9 +118,9 @@ Because $W$ has the CW weak topology, these circlewise homotopies assemble to a 
 ::: {.pf-step #s4}
 
 The composite
-\[
+$$
 fg:X\to X
-\]
+$$
 is homotopic to the identity on $X$.
 
 ::: pf-proof
@@ -141,9 +141,9 @@ Hence $fg\simeq\operatorname{id}_X$.
 ::: pf-step
 
 Therefore
-\[
+$$
 X\simeq W.
-\]
+$$
 
 ::: pf-proof
 
@@ -156,7 +156,7 @@ The maps $f$ and $g$ are homotopy inverses by steps [](#s3){.pf-ref} and [](#s4)
 ::: pf-step
 
 Consequently
-\[
+$$
 \boxed{
 \pi_1(X,o)
 \cong
@@ -164,18 +164,18 @@ Consequently
 \cong
 *_{n=1}^{\infty}\ZZ.
 }
-\]
+$$
 
 ::: pf-proof
 
 Homotopy equivalence gives
-\[
+$$
 \pi_1(X,o)\cong\pi_1(W,*).
-\]
+$$
 The wedge-point neighborhoods in each circle deformation retract to the wedge point, so the wedge-sum form of van Kampen gives
-\[
+$$
 \pi_1(W,*)\cong *_{n\ge1}\pi_1(S^1_n,*).
-\]
+$$
 Each factor is infinite cyclic.
 
 :::
@@ -190,9 +190,9 @@ The space $X$ is first countable at $o$.
 
 It is a subspace of the metric space $\RR^2$.
 Thus the sets
-\[
+$$
 X\cap B_{1/m}(o),\qquad m=1,2,\dots,
-\]
+$$
 form a countable neighborhood base at $o$.
 
 :::
@@ -207,19 +207,19 @@ The infinite CW wedge $W$ is not first countable at its wedge point.
 
 Suppose $U_1,U_2,\dots$ were a countable neighborhood base at the wedge point $*$.
 For each $n$, because $U_n\cap S^1_n$ is a neighborhood of $*$ in the $n$th circle, choose a point
-\[
+$$
 p_n\in U_n\cap(S^1_n\setminus\{*\}).
-\]
+$$
 On each circle choose an open arc $V_n$ about $*$ that omits $p_n$.
 The union
-\[
+$$
 V=\bigcup_{n\ge1}V_n
-\]
+$$
 is a neighborhood of $*$ in the CW wedge topology, since its intersection with every circle is open.
 But for every $n$,
-\[
+$$
 p_n\in U_n\setminus V,
-\]
+$$
 so $U_n\nsubseteq V$.
 This contradicts the assumption that the $U_n$ form a neighborhood base.
 

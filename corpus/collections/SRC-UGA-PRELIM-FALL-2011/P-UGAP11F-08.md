@@ -16,13 +16,13 @@ audit:
 
 ::: {.problem}
 Draw representative level sets
-\[
+$$
 f^{-1}(c),\qquad c\in\RR,
-\]
+$$
 for
-\[
+$$
 f(x,y)=x^2-y^2.
-\]
+$$
 Next compute and draw $\nabla f$ at a representative collection of points in $\RR^2$. Explain how gradients and level sets must be related in general.
 :::
 

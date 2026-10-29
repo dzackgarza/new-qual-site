@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Compute
-\[
+$$
 \lim_{n\to\infty}\left(\frac{n^n}{n!}\right)^{1/n}.
-\]
+$$
 :::
 
 ::: {.solution}

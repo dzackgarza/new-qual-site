@@ -38,11 +38,11 @@ Let $X$ denote the pictured surface.
 ::: {.pf-step #s1}
 
 Choose an exhaustion
-\[
+$$
 M_1\subset M_2\subset\cdots\subset X,
 \qquad
 X=\bigcup_{n\ge1}M_n,
-\]
+$$
 where each $M_n$ is a compact connected orientable surface containing finitely many consecutive handles and having two boundary circles in the cylindrical ends.
 
 ::: pf-proof
@@ -59,9 +59,9 @@ Every point of $X$ lies between some such pair of cuts, so the union is all of $
 ::: {.pf-step #s2}
 
 Each $M_n$ deformation retracts onto a finite connected graph $G_n$, and the spines may be chosen so that
-\[
+$$
 G_n\subset G_{n+1}
-\]
+$$
 and $G_{n+1}$ is obtained from $G_n$ by adjoining finitely many new loops along a tree.
 
 ::: pf-proof
@@ -80,32 +80,32 @@ Thus the spines can be chosen compatibly as claimed.
 ::: {.pf-step #s3}
 
 For each $n$,
-\[
+$$
 \pi_1(M_n)\cong F(B_n)
-\]
+$$
 for a finite basis $B_n$, and the inclusion
-\[
+$$
 \pi_1(M_n)\longrightarrow\pi_1(M_{n+1})
-\]
+$$
 identifies $F(B_n)$ with a free factor of $F(B_{n+1})$.
 
 ::: pf-proof
 
 By step [](#s2){.pf-ref},
-\[
+$$
 \pi_1(M_n)\cong\pi_1(G_n),
-\]
+$$
 and the fundamental group of a finite connected graph is free.
 Choose a maximal tree in $G_n$ and extend it to a maximal tree in $G_{n+1}$.
 The edges outside the tree give a free basis $B_n$, and the newly added non-tree edges give additional generators in $B_{n+1}$.
 Hence
-\[
+$$
 B_n\subset B_{n+1}
-\]
+$$
 and
-\[
+$$
 F(B_{n+1})\cong F(B_n)*F(B_{n+1}\setminus B_n).
-\]
+$$
 
 :::
 
@@ -114,9 +114,9 @@ F(B_{n+1})\cong F(B_n)*F(B_{n+1}\setminus B_n).
 ::: {.pf-step #s4}
 
 Let
-\[
+$$
 B=\bigcup_{n\ge1}B_n.
-\]
+$$
 Then $B$ is countably infinite.
 
 ::: pf-proof
@@ -132,9 +132,9 @@ Thus $B$ is infinite.
 ::: {.pf-step #s5}
 
 The natural homomorphism
-\[
+$$
 \Phi:F(B)\longrightarrow\pi_1(X)
-\]
+$$
 is surjective.
 
 ::: pf-proof
@@ -142,13 +142,13 @@ is surjective.
 Let $\gamma:S^1\to X$ be any based loop.
 Its image is compact.
 Since the interiors of the exhaustion pieces cover $X$, compactness gives some $n$ with
-\[
+$$
 \gamma(S^1)\subseteq M_n.
-\]
+$$
 Hence $[\gamma]$ lies in the image of
-\[
+$$
 \pi_1(M_n)=F(B_n)\subseteq F(B).
-\]
+$$
 
 :::
 
@@ -163,14 +163,14 @@ The homomorphism $\Phi$ is injective.
 Let a reduced word $w$ in finitely many generators from $B$ map to the identity in $\pi_1(X)$.
 Choose $n$ so that all letters of $w$ lie in $B_n$.
 Since $\Phi(w)=1$, a loop in $M_n$ representing $w$ admits a nullhomotopy
-\[
+$$
 H:D^2\to X.
-\]
+$$
 The image $H(D^2)$ is compact, so it is contained in some larger exhaustion piece $M_m$ with $m\ge n$.
 Thus $w$ is trivial in
-\[
+$$
 \pi_1(M_m)=F(B_m).
-\]
+$$
 But step [](#s3){.pf-ref} says $F(B_n)$ embeds as a free factor of $F(B_m)$.
 Therefore a reduced word in $B_n$ that is trivial in $F(B_m)$ was already trivial in $F(B_n)$.
 Hence $w=1$ in $F(B)$.
@@ -182,9 +182,9 @@ Hence $w=1$ in $F(B)$.
 ::: pf-step
 
 Consequently
-\[
+$$
 \boxed{\pi_1(X)\cong F(B),}
-\]
+$$
 the free group on countably infinitely many generators.
 
 ::: pf-proof

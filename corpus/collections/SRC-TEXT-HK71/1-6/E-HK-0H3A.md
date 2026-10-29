@@ -30,14 +30,14 @@ An $n \times n$ matrix A is called upper-triangular if $A_{ij} = 0$ for i > j, t
 
 ::: {.solution}
 For an upper-triangular matrix,
-\[
+$$
 \det A=A_{11}A_{22}\cdots A_{nn}.
-\]
+$$
 Indeed, in the Leibniz expansion every nonzero term must choose column $i$ in row $i$ successively: row $n$ has no nonzero entry left of column $n$, then row $n-1$ must use column $n-1$, and so on. Thus only the identity permutation contributes.
 
 A square matrix over a field is invertible if and only if its determinant is nonzero. Therefore $A$ is invertible exactly when
-\[
+$$
 A_{11}A_{22}\cdots A_{nn}\ne0,
-\]
+$$
 which is equivalent to every diagonal entry $A_{ii}$ being nonzero.
 :::

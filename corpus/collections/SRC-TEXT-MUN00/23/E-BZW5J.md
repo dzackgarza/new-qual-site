@@ -30,8 +30,8 @@ Show that if $A \cap A_\alpha \neq \varnothing$ for all $\alpha$, then $A \cup (
 
 ::: {.solution}
 Let
-\[
+$$
 C=A\cup\bigcup_\alpha A_\alpha.
-\]
+$$
 Suppose $C=U\cup V$ is a separation. Since $A$ is connected, it lies entirely in one side, say $A\subseteq U$. For each $\alpha$, the connected set $A_\alpha$ meets $A$, hence meets $U$. Therefore $A_\alpha$ cannot meet $V$, so $A_\alpha\subseteq U$. Thus $C\subseteq U$, contradicting that $V$ is nonempty. Hence $C$ is connected.
 :::

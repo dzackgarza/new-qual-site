@@ -27,13 +27,13 @@ audit:
 
 ::: {.problem}
 Let $(a_n)$ be a sequence of nonnegative real numbers such that for every nonnegative sequence $(b_n)\in\ell^2(\NN)$,
-\[
+$$
 \sum_{n=1}^\infty a_n b_n<\infty.
-\]
+$$
 Show that
-\[
+$$
 \sum_{n=1}^\infty a_n^2<\infty.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -47,19 +47,19 @@ Define the partial-sum functionals.
 ::: pf-proof
 
 For each $N\ge1$, define
-\[
+$$
 T_N:\ell^2(\NN)\to\RR,
 \qquad
 T_N(b)=\sum_{n=1}^N a_n b_n.
-\]
+$$
 Each $T_N$ is a bounded linear functional, represented by the finite vector
-\[
+$$
 (a_1,\dots,a_N,0,0,\dots)\in\ell^2.
-\]
+$$
 Hence
-\[
+$$
 \|T_N\|=\left(\sum_{n=1}^N a_n^2\right)^{1/2}.
-\]
+$$
 
 :::
 
@@ -72,19 +72,19 @@ Prove pointwise boundedness.
 ::: pf-proof
 
 Fix $b\in\ell^2(\NN)$. By replacing $b$ with $|b|$, it is enough to consider nonnegative sequences. The hypothesis says
-\[
+$$
 \sum_{n=1}^\infty a_n|b_n|<\infty.
-\]
+$$
 Therefore
-\[
+$$
 |T_N(b)|
 \le \sum_{n=1}^N a_n|b_n|
 \le \sum_{n=1}^\infty a_n|b_n|,
-\]
+$$
 so
-\[
+$$
 \sup_N|T_N(b)|<\infty
-\]
+$$
 for every $b\in\ell^2$.
 
 :::
@@ -98,17 +98,17 @@ Apply the Uniform Boundedness Principle.
 ::: pf-proof
 
 Since $\ell^2$ is Banach and the family $(T_N)$ is pointwise bounded, the Uniform Boundedness Principle gives
-\[
+$$
 \sup_N\|T_N\|<\infty.
-\]
+$$
 Using Step 1,
-\[
+$$
 \sup_N\sum_{n=1}^N a_n^2<\infty.
-\]
+$$
 The partial sums are increasing, so they converge to a finite limit. Hence
-\[
+$$
 \boxed{\sum_{n=1}^\infty a_n^2<\infty.}
-\]
+$$
 
 :::
 

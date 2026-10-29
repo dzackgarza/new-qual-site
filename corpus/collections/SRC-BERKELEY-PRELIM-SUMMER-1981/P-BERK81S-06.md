@@ -31,9 +31,9 @@ audit:
 ::: {.problem}
 Let $SO(3)$ be the group of orthogonal transformations of $\RR^3$ of determinant $1$.
 Let
-\[
+$$
 Q=\{A\in SO(3):A^T=A,\ A\ne I\},
-\]
+$$
 and let $\RP^2$ denote the space of lines through the origin in $\RR^3$.
 
 1. Show that $\RP^2$ and $SO(3)$ are compact metric spaces in their usual topologies.

@@ -44,13 +44,13 @@ Define a norm.
 ::: pf-proof
 
 A norm is a map $\|\cdot\|:B\to[0,\infty)$ such that for all $x,y\in B$ and $a\in\RR$,
-\[
+$$
 \|x\|=0\iff x=0,
 \qquad
 \|ax\|=|a|\,\|x\|,
 \qquad
 \|x+y\|\le\|x\|+\|y\|.
-\]
+$$
 
 :::
 
@@ -63,23 +63,23 @@ Construct the induced metric.
 ::: pf-proof
 
 Define
-\[
+$$
 d(x,y)=\|x-y\|.
-\]
+$$
 Then $d(x,y)\ge0$, and
-\[
+$$
 d(x,y)=0\iff x-y=0\iff x=y.
-\]
+$$
 Also
-\[
+$$
 d(x,y)=\|x-y\|=\|-(y-x)\|=d(y,x),
-\]
+$$
 and the norm triangle inequality gives
-\[
+$$
 d(x,z)=\|x-z\|
 \le\|x-y\|+\|y-z\|
 =d(x,y)+d(y,z).
-\]
+$$
 Thus $d$ is a metric.
 
 :::
@@ -106,13 +106,13 @@ State Uniform Boundedness.
 
 Let $B$ be Banach, let $N$ be normed, and let $\mathcal T$ be a family of bounded linear operators $T:B\to N$.
 If for every $x\in B$,
-\[
+$$
 \sup_{T\in\mathcal T}\|Tx\|<\infty,
-\]
+$$
 then
-\[
+$$
 \boxed{\sup_{T\in\mathcal T}\|T\|<\infty.}
-\]
+$$
 This is the Uniform Boundedness Principle, or Banach--Steinhaus theorem.
 
 :::
@@ -126,32 +126,32 @@ Explain the Baire-category argument.
 ::: pf-proof
 
 For $m\in\NN$, set
-\[
+$$
 E_m=\left\{x\in B:\sup_{T\in\mathcal T}\|Tx\|\le m\right\}.
-\]
+$$
 Each $E_m$ is closed, because it is the intersection over $T\in\mathcal T$ of the closed sets $\{x:\|Tx\|\le m\}$.
 Pointwise boundedness says
-\[
+$$
 B=\bigcup_{m=1}^\infty E_m.
-\]
+$$
 Since $B$ is complete, Baire's theorem implies that some $E_m$ contains a ball
-\[
+$$
 B(x_0,r)\subseteq E_m.
-\]
+$$
 If $\|h\|<r$, then $x_0$ and $x_0+h$ lie in $E_m$, so for every $T\in\mathcal T$,
-\[
+$$
 \|Th\|
 \le\|T(x_0+h)\|+\|Tx_0\|
 \le2m.
-\]
+$$
 By scaling, for arbitrary $x\ne0$,
-\[
+$$
 \|Tx\|\le \frac{2m}{r}\|x\|.
-\]
+$$
 Hence
-\[
+$$
 \sup_{T\in\mathcal T}\|T\|\le\frac{2m}{r}<\infty.
-\]
+$$
 
 :::
 

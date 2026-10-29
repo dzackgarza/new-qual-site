@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let $F$ be a field of characteristic $p>0$, with $p\ne3$. If $\alpha$ is a zero of
-\[
+$$
 f(x)=x^p-x+3
-\]
+$$
 in an extension field of $F$, prove that $f(x)$ has $p$ distinct zeros in $F(\alpha)$.
 :::
 

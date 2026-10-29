@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let $g\colon \RR \to \RR$ be a differentiable and integrable function. The integral curve of the differential equation
 
-\[
+$$
 [y + g(x)]\,dx + [x - g(y)]\,dy = 0
-\]
+$$
 
 that passes through the point $(1, 1)$ must also pass through which of the following points?
 

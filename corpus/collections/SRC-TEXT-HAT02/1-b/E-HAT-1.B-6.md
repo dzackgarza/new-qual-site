@@ -34,11 +34,11 @@ How would one modify this example to get $\pi_1(K\Gamma)$ isomorphic to the subg
 ::: {.solution}
 Consider first an arbitrary graph of groups in which every vertex and edge group is infinite cyclic and every edge homomorphism is injective.
 After choosing generators, every edge homomorphism has the form
-\[
+$$
 \ZZ\longrightarrow\ZZ,
 \qquad
 k\longmapsto m k
-\]
+$$
 for some nonzero integer $m$.
 
 ::: pf
@@ -65,9 +65,9 @@ Every lifted boundary map of an edge strip is an affine homeomorphism of $\RR$.
 ::: pf-proof
 
 A map $S^1\to S^1$ inducing multiplication by a nonzero integer $m$ on fundamental groups lifts to
-\[
+$$
 t\longmapsto mt+c
-\]
+$$
 on universal covers.
 This is a homeomorphism of $\RR$.
 
@@ -78,9 +78,9 @@ This is a homeomorphism of $\RR$.
 ::: pf-step
 
 The universal cover is homeomorphic to
-\[
+$$
 \boxed{T\times\RR}.
-\]
+$$
 
 ::: pf-proof
 
@@ -90,11 +90,11 @@ Since the incidence graph $T$ is a tree, each new vertex is reached by a unique 
 The resulting tree of lines and strips is exactly the product cell structure on $T\times\RR$.
 
 Now specialize to the ray
-\[
+$$
 G_1\xrightarrow{\times2}G_2\xrightarrow{\times3}G_3\xrightarrow{\times4}\cdots,
 \qquad
 G_k\cong\ZZ.
-\]
+$$
 
 :::
 
@@ -103,14 +103,14 @@ G_k\cong\ZZ.
 ::: pf-step
 
 Since the underlying graph is a tree, the graph product is the direct limit
-\[
+$$
 \pi_1(K\Gamma)
 \cong
 \varinjlim
 \bigl(
 \ZZ\xrightarrow{2}\ZZ\xrightarrow{3}\ZZ\xrightarrow{4}\cdots
 \bigr).
-\]
+$$
 
 ::: pf-proof
 
@@ -129,25 +129,25 @@ This direct limit is isomorphic to $\QQ$.
 ::: pf-proof
 
 Embed the $k$th copy of $\ZZ$ into $\QQ$ by
-\[
+$$
 \phi_k(r)=\frac{r}{k!}.
-\]
+$$
 These maps are compatible because
-\[
+$$
 \phi_{k+1}((k+1)r)
 =\frac{(k+1)r}{(k+1)!}
 =\frac r{k!}
 =\phi_k(r).
-\]
+$$
 Thus the direct limit identifies with
-\[
+$$
 \bigcup_{k\ge1}\frac1{k!}\ZZ.
-\]
+$$
 Every rational number $a/b$ lies in this union because $b$ divides $k!$ for all sufficiently large $k$.
 Hence
-\[
+$$
 \varinjlim G_k\cong\QQ.
-\]
+$$
 
 :::
 
@@ -156,22 +156,22 @@ Hence
 ::: pf-step
 
 To obtain the subgroup of rationals whose denominator is a power of $2$, replace the sequence by
-\[
+$$
 \ZZ\xrightarrow{2}\ZZ\xrightarrow{2}\ZZ\xrightarrow{2}\cdots.
-\]
+$$
 
 ::: pf-proof
 
 The same direct-limit calculation embeds the $k$th copy as
-\[
+$$
 2^{-(k-1)}\ZZ.
-\]
+$$
 Therefore the limit is
-\[
+$$
 \bigcup_{k\ge0}2^{-k}\ZZ
 =\ZZ[1/2]
 =\left\{\frac a{2^k}:a\in\ZZ,\ k\ge0\right\}.
-\]
+$$
 
 :::
 

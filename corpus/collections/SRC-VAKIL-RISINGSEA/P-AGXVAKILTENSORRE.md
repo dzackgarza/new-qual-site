@@ -16,11 +16,11 @@ review: draft
 
 ::: {.problem}
 Show that the endofunctor
-\[
+$$
 F: \mods{R} &\to \mods{R} \\
 X &\mapsto X\tensor_R N \\
 (X\xrightarrow{f} Y) &\mapsto (X\tensor_R N \xrightarrow{f \tensor \id_N} Y\tensor_R N)
-\]
+$$
 is right exact.
 :::
 
@@ -32,9 +32,9 @@ No isomorphism $\hom_{\mods{R}}(X, Y) \tensor_R \hom_{\mods{R}}(A, B) \to \hom_{
 
 ::: {.solution}
 Let
-\[
+$$
 A\xrightarrow{f} B \xrightarrow{g} C \to 0
-\]
+$$
 be an exact sequence in $\mods{R}$, so $\ker g = \im f$ and $g$ is surjective.
 Write $I \definedas \im(f\tensor \id_N) \subseteq B\tensor_R N$ and $Q\definedas (B\tensor_R N)/I$, and write $[x]$ for the class of $x\in B\tensor_R N$ in $Q$.
 Every element of a tensor product is a finite sum of elementary tensors, so two $R$-linear maps out of a tensor product that agree on elementary tensors are equal.
@@ -94,11 +94,11 @@ $\beta_0$ is $R$-bilinear.
 ::: pf-proof
 Let $g(b) = c$, $g(b') = c'$, and $r\in R$.
 Then $g(b + b') = c + c'$ and $g(rb) = rc$, so by step [](#beta-well-defined){.pf-ref} these lifts compute $\beta_0$:
-\[
+$$
 \beta_0(c + c', n) = [(b+b')\tensor n] = [b\tensor n] + [b'\tensor n],
 \qquad
 \beta_0(rc, n) = [rb\tensor n] = r[b\tensor n].
-\]
+$$
 With the lift $b$ of $c$ fixed, $n\mapsto [b\tensor n]$ is additive and $R$-linear because $b\tensor n$ is additive and $R$-linear in $n$.
 :::
 
@@ -117,9 +117,9 @@ $\bar g$ is injective.
 
 ::: pf-proof
 For every elementary tensor $b\tensor n$ of $B\tensor_R N$,
-\[
+$$
 \beta(\bar g([b\tensor n])) = \beta(g(b)\tensor n) = [b\tensor n]
-\]
+$$
 by steps [](#induced){.pf-ref} and [](#section-map){.pf-ref}.
 The classes $[b\tensor n]$ generate $Q$, and $\beta\circ\bar g$ and $\id_Q$ are $R$-linear, so $\beta\circ\bar g = \id_Q$.
 A map with a left inverse is injective.
@@ -139,9 +139,9 @@ Step [](#complex){.pf-ref} gives the reverse inclusion.
 
 ::: pf-qed
 Steps [](#exact-middle){.pf-ref} and [](#surjective){.pf-ref} show that
-\[
+$$
 A\tensor_R N \xrightarrow{f\tensor \id_N} B\tensor_R N \xrightarrow{g\tensor \id_N} C\tensor_R N \to 0
-\]
+$$
 is exact at $B\tensor_R N$ and at $C\tensor_R N$.
 This holds for every exact sequence $A\to B\to C\to 0$, so $F$ is right exact.
 :::

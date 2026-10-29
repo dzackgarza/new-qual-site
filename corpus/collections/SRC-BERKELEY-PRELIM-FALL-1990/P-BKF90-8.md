@@ -24,14 +24,14 @@ audit:
 
 ::: {.problem}
 Let $f:\RR\to\RR$ be continuous, nonnegative, and satisfy
-\[
+$$
 \int_0^\infty f(x)\,dx<\infty.
-\]
+$$
 Prove that
-\[
+$$
 \frac1n\int_0^n x f(x)\,dx\longrightarrow0
 \qquad(n\to\infty).
-\]
+$$
 :::
 
 ::: {.solution}

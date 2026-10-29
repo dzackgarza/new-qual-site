@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 Let $f=u+iv$ be analytic on a connected open set $D\subset\CC$. Suppose there are real constants $a,b,c$ with
-\[
+$$
 a^2+b^2\ne0
-\]
+$$
 and
-\[
+$$
 au+bv=c
-\]
+$$
 throughout $D$. Prove that $f$ is constant on $D$.
 :::
 

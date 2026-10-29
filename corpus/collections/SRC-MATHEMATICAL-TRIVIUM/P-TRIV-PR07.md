@@ -28,9 +28,9 @@ The coefficient triple $(a,b,c)$ is uniformly distributed on the unit cube $[0,1
 ::: {.pf-step #s1-1}
 
 The quadratic has real roots exactly when
-\[
+$$
 b^2\geq4ac.
-\]
+$$
 
 
 ::: pf-proof
@@ -44,12 +44,12 @@ Except on the probability-zero set $a=0$, the equation is quadratic. Its roots a
 ::: {.pf-step #s1-2}
 
 For fixed $(a,c)$, the admissible $b$-interval has length
-\[
+$$
 \begin{cases}
 1-2\sqrt{ac},&ac\leq1/4,\\
 0,&ac>1/4.
 \end{cases}
-\]
+$$
 
 
 ::: pf-proof
@@ -63,9 +63,9 @@ Since $0\leq b\leq1$, step [](#s1-1){.pf-ref} is equivalent to $b\geq2\sqrt{ac}$
 ::: pf-step
 
 Therefore the desired probability is
-\[
+$$
 P=\iint_{ac\leq1/4}(1-2\sqrt{ac})\,da\,dc.
-\]
+$$
 
 
 ::: pf-proof
@@ -79,10 +79,10 @@ The unit cube has volume $1$, so probability equals volume. Integrating first in
 ::: pf-step
 
 Split the $a$-integral at $a=1/4$:
-\[
+$$
 P=\int_0^{1/4}\int_0^1(1-2\sqrt{ac})\,dc\,da
 +\int_{1/4}^{1}\int_0^{1/(4a)}(1-2\sqrt{ac})\,dc\,da.
-\]
+$$
 
 
 ::: pf-proof
@@ -96,19 +96,19 @@ If $0<a\leq1/4$, then $ac\leq1/4$ for every $0\leq c\leq1$. If $a>1/4$, the cond
 ::: {.pf-step #s1-5}
 
 The first integral equals
-\[
+$$
 \frac1{12}.
-\]
+$$
 
 
 ::: pf-proof
 
 Integrating first in $c$ gives $1-(4/3)\sqrt a$, so
-\[
+$$
 \int_0^{1/4}\left(1-\frac43\sqrt a\right)da
 =\frac14-\frac43\frac23\left(\frac14\right)^{3/2}
 =\frac1{12}.
-\]
+$$
 
 :::
 
@@ -117,19 +117,19 @@ Integrating first in $c$ gives $1-(4/3)\sqrt a$, so
 ::: {.pf-step #s1-6}
 
 The second integral equals
-\[
+$$
 \frac1{12}\log4.
-\]
+$$
 
 
 ::: pf-proof
 
 For fixed $a>1/4$,
-\[
+$$
 \int_0^{1/(4a)}(1-2\sqrt{ac})\,dc
 =\frac1{4a}-\frac43\sqrt a\left(\frac1{4a}\right)^{3/2}
 =\frac1{12a}.
-\]
+$$
 Integrating from $1/4$ to $1$ gives $(1/12)\log4$.
 
 :::
@@ -139,9 +139,9 @@ Integrating from $1/4$ to $1$ gives $(1/12)\log4$.
 ::: {.pf-step #s1-7}
 
 Hence
-\[
+$$
 \boxed{P=\frac{1+\log4}{12}}.
-\]
+$$
 
 
 ::: pf-proof

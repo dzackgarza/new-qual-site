@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let $V$ be the vector space of real $3\times3$ skew-symmetric matrices.
 Prove that
-\[
+$$
 \langle A,B\rangle=\frac12\operatorname{Tr}(AB^T)
-\]
+$$
 defines an inner product on $V$, and exhibit an orthonormal basis.
 :::
 
@@ -32,11 +32,11 @@ defines an inner product on $V$, and exhibit an orthonormal basis.
 ::: {.pf-step #s1-1}
 
 The formula
-\[
+$$
 \langle A,B\rangle
 =
 \frac12\operatorname{Tr}(AB^T)
-\]
+$$
 is bilinear in $A$ and $B$.
 
 
@@ -44,7 +44,7 @@ is bilinear in $A$ and $B$.
 
 Matrix multiplication is bilinear, transpose is linear, and trace is linear.
 Thus for scalars $\alpha,\beta$ and matrices $A_1,A_2,B$,
-\[
+$$
 \begin{aligned}
 \langle \alpha A_1+\beta A_2,B\rangle
 &=
@@ -55,7 +55,7 @@ Thus for scalars $\alpha,\beta$ and matrices $A_1,A_2,B$,
 +
 \beta\langle A_2,B\rangle.
 \end{aligned}
-\]
+$$
 The same argument applies in the second variable.
 
 :::
@@ -65,17 +65,17 @@ The same argument applies in the second variable.
 ::: {.pf-step #s1-2}
 
 The form is symmetric:
-\[
+$$
 \langle A,B\rangle
 =
 \langle B,A\rangle.
-\]
+$$
 
 
 ::: pf-proof
 
 Using invariance of trace under transpose,
-\[
+$$
 \begin{aligned}
 \langle A,B\rangle
 &=
@@ -87,7 +87,7 @@ Using invariance of trace under transpose,
 &=
 \langle B,A\rangle.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -96,29 +96,29 @@ Using invariance of trace under transpose,
 ::: {.pf-step #s1-3}
 
 For every $A=(a_{ij})\in V$,
-\[
+$$
 \langle A,A\rangle
 =
 \frac12\sum_{i,j=1}^3 a_{ij}^2.
-\]
+$$
 
 
 ::: pf-proof
 
 The $(i,i)$ entry of
-\[
+$$
 AA^T
-\]
+$$
 is
-\[
+$$
 \sum_{j=1}^3a_{ij}^2.
-\]
+$$
 Hence
-\[
+$$
 \operatorname{Tr}(AA^T)
 =
 \sum_{i,j=1}^3a_{ij}^2.
-\]
+$$
 Multiply by $1/2$.
 
 :::
@@ -133,13 +133,13 @@ The form is positive definite.
 ::: pf-proof
 
 Step [](#s1-3){.pf-ref} gives
-\[
+$$
 \langle A,A\rangle\ge0.
-\]
+$$
 Equality holds exactly when every entry $a_{ij}$ is zero, that is, exactly when
-\[
+$$
 A=0.
-\]
+$$
 Thus the form is positive definite.
 
 :::
@@ -149,13 +149,13 @@ Thus the form is positive definite.
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 \boxed{
 \langle A,B\rangle
 =
 \frac12\operatorname{Tr}(AB^T)
 }
-\]
+$$
 defines an inner product on $V$.
 
 
@@ -170,7 +170,7 @@ Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, and [](#s1-4){.pf-ref} verify b
 ::: {.pf-step #s1-6}
 
 Define
-\[
+$$
 E_1=
 \begin{pmatrix}
 0&1&0\\
@@ -191,18 +191,18 @@ E_3=
 0&0&1\\
 0&-1&0
 \end{pmatrix}.
-\]
+$$
 Then
-\[
+$$
 E_1,E_2,E_3
-\]
+$$
 form a basis of $V$.
 
 
 ::: pf-proof
 
 Every real $3\times3$ skew-symmetric matrix has the form
-\[
+$$
 \begin{pmatrix}
 0&a&b\\
 -a&0&c\\
@@ -210,7 +210,7 @@ Every real $3\times3$ skew-symmetric matrix has the form
 \end{pmatrix}
 =
 aE_1+bE_2+cE_3.
-\]
+$$
 This representation is unique, so the three matrices form a basis.
 
 :::
@@ -226,25 +226,25 @@ The basis in step [](#s1-6){.pf-ref} is orthonormal.
 
 Each $E_i$ has exactly two nonzero entries, namely $1$ and $-1$.
 Hence step [](#s1-3){.pf-ref} gives
-\[
+$$
 \langle E_i,E_i\rangle
 =
 \frac12(1^2+(-1)^2)
 =1.
-\]
+$$
 
 If $i\ne j$, the supports of $E_i$ and $E_j$ are disjoint.
 Therefore
-\[
+$$
 \operatorname{Tr}(E_iE_j^T)
 =
 \sum_{r,s}(E_i)_{rs}(E_j)_{rs}
 =0,
-\]
+$$
 so
-\[
+$$
 \langle E_i,E_j\rangle=0.
-\]
+$$
 
 :::
 
@@ -253,7 +253,7 @@ so
 ::: {.pf-step #s1-8}
 
 Thus an orthonormal basis is
-\[
+$$
 \boxed{
 \left\{
 \begin{pmatrix}
@@ -273,7 +273,7 @@ Thus an orthonormal basis is
 \end{pmatrix}
 \right\}.
 }
-\]
+$$
 
 
 ::: pf-proof

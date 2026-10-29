@@ -28,9 +28,9 @@ Prove the claim or give a counterexample.
 
 ::: {.solution}
 No. The extension
-\[
+$$
 \overline{\QQ}/\QQ
-\]
+$$
 is algebraic but infinite.
 
 ::: pf
@@ -55,14 +55,14 @@ The degree $[\overline{\QQ}:\QQ]$ is infinite.
 ::: pf-proof
 
 For every positive integer $n$, the polynomial
-\[
+$$
 x^n-2
-\]
+$$
 is irreducible over $\QQ$ by Eisenstein's criterion at $2$. Hence, if
 $\alpha_n=\sqrt[n]{2}$, then
-\[
+$$
 [\QQ(\alpha_n):\QQ]=n.
-\]
+$$
 Each field $\QQ(\alpha_n)$ lies inside $\overline{\QQ}$. If the
 degree of $\overline{\QQ}/\QQ$ were finite, every intermediate
 extension would have degree bounded by that finite number, contradicting the

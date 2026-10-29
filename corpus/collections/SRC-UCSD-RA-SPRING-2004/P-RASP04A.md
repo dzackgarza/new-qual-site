@@ -48,9 +48,9 @@ Part (a) is true.
 ::: pf-proof
 
 Let $A=\RR\setminus E$ with $m(E)=0$. Every nonempty open interval has positive Lebesgue measure, so no nonempty open interval can be contained in $E$. Equivalently, every nonempty open interval meets $A$. Thus $A$ is dense in $\RR$, and
-\[
+$$
 \boxed{\overline A=\RR.}
-\]
+$$
 
 :::
 
@@ -63,13 +63,13 @@ Part (b) is false.
 ::: pf-proof
 
 Take
-\[
+$$
 E=\QQ.
-\]
+$$
 Then $E$ is Borel and has Lebesgue measure zero, but
-\[
+$$
 \overline E=\RR.
-\]
+$$
 Hence the interior of $\overline E$ is all of $\RR$, so $E$ is not nowhere dense.
 
 :::
@@ -83,17 +83,17 @@ Part (c) is false.
 ::: pf-proof
 
 Take
-\[
+$$
 X=\ell^2
-\]
+$$
 and let
-\[
+$$
 E=c_{00}
-\]
+$$
 be the subspace of finitely supported sequences. Then $E$ is a proper linear subspace of $\ell^2$, but it is dense in $\ell^2$. Therefore
-\[
+$$
 \overline E=X,
-\]
+$$
 so $E$ is not nowhere dense.
 
 :::
@@ -107,25 +107,25 @@ Part (d) is true.
 ::: pf-proof
 
 Suppose the subspace $E\subset X$ has nonempty interior. Then for some $x_0\in E$ and $r>0$,
-\[
+$$
 B(x_0,r)\subset E.
-\]
+$$
 Since $x_0\in E$ and $E$ is a subspace, subtracting $x_0$ gives
-\[
+$$
 B(0,r)\subset E.
-\]
+$$
 Now fix any $x\in X$. Choose $t>0$ so small that
-\[
+$$
 \|tx\|<r.
-\]
+$$
 Then $tx\in E$, and since $E$ is a subspace,
-\[
+$$
 x=t^{-1}(tx)\in E.
-\]
+$$
 Thus
-\[
+$$
 \boxed{E=X.}
-\]
+$$
 
 :::
 

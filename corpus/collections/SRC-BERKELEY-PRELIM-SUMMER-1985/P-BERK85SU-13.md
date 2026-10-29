@@ -25,13 +25,13 @@ audit:
 
 ::: {.problem}
 Let $P(z)$ be a polynomial of degree less than $k$ with complex coefficients, and let
-\[
+$$
 \omega_1,\ldots,\omega_k
-\]
+$$
 be the $k$th roots of unity in $\CC$. Prove that
-\[
+$$
 \frac1k\sum_{i=1}^k P(\omega_i)=P(0).
-\]
+$$
 :::
 
 ::: {.solution}

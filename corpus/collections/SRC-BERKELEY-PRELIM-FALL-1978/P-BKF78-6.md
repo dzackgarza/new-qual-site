@@ -27,11 +27,11 @@ audit:
 
 ::: {.problem}
 Solve the differential equation
-\[
+$$
 \frac{dy}{dx}=x^2y-3x^2,
 \qquad
 y(0)=1.
-\]
+$$
 :::
 
 ::: {.solution}

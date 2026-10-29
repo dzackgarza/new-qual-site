@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_{-\infty}^{\infty}\frac{\cos x}{1+x^4}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}

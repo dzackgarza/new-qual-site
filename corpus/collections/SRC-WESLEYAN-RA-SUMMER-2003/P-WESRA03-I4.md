@@ -27,19 +27,19 @@ State the Lebesgue Dominated Convergence Theorem.
 
 ::: {.solution}
 Let $(X,\mathcal A,\mu)$ be a measure space and let $f_n$ be measurable functions such that
-\[
+$$
 f_n\to f\quad\text{almost everywhere}.
-\]
+$$
 Suppose there is $g\in L^1(\mu)$ with
-\[
+$$
 |f_n|\le g\quad\text{almost everywhere for every }n.
-\]
+$$
 Then $f\in L^1(\mu)$,
-\[
+$$
 \|f_n-f\|_1\to0,
-\]
+$$
 and in particular
-\[
+$$
 \boxed{\int_X f_n\,d\mu\longrightarrow\int_X f\,d\mu.}
-\]
+$$
 :::

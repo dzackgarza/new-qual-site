@@ -27,30 +27,30 @@ If $(X,\mathcal T')$ is normal, must $(X,\mathcal T)$ also be normal?
 ::: {.solution}
 
 The answer is
-\[
+$$
 \boxed{\text{no}}.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 Let
-\[
+$$
 X=\{a,b,c\}
-\]
+$$
 and define
-\[
+$$
 \boxed{
 \mathcal T
 =
 \{\varnothing,\{c\},\{a,c\},\{b,c\},X\}}.
-\]
+$$
 
 
 ::: pf-proof
 
-The displayed family contains \(\varnothing\) and \(X\). Arbitrary unions and finite intersections of its members remain in the same list, so it is a topology.
+The displayed family contains $\varnothing$ and $X$. Arbitrary unions and finite intersections of its members remain in the same list, so it is a topology.
 
 :::
 
@@ -59,16 +59,16 @@ The displayed family contains \(\varnothing\) and \(X\). Arbitrary unions and fi
 ::: pf-step
 
 Let
-\[
+$$
 \boxed{
 \mathcal T'=\mathcal P(X)}
-\]
+$$
 be the discrete topology.
 
 
 ::: pf-proof
 
-The power set of \(X\) is the discrete topology.
+The power set of $X$ is the discrete topology.
 
 :::
 
@@ -77,22 +77,22 @@ The power set of \(X\) is the discrete topology.
 ::: pf-step
 
 One has
-\[
+$$
 \boxed{
 \mathcal T\subsetneq\mathcal T'}.
-\]
+$$
 
 
 ::: pf-proof
 
-Every member of \(\mathcal T\) is a subset of \(X\), hence belongs to \(\mathcal T'\). The inclusion is strict because, for example,
-\[
+Every member of $\mathcal T$ is a subset of $X$, hence belongs to $\mathcal T'$. The inclusion is strict because, for example,
+$$
 \{a\}\in\mathcal T'
-\]
+$$
 but
-\[
+$$
 \{a\}\notin\mathcal T.
-\]
+$$
 
 :::
 
@@ -101,9 +101,9 @@ but
 ::: {.pf-step #s1-4}
 
 The space
-\[
+$$
 (X,\mathcal T')
-\]
+$$
 is normal.
 
 
@@ -117,27 +117,27 @@ In a discrete space every subset is both open and closed. Thus two disjoint clos
 
 ::: {.pf-step #s1-5}
 
-In the coarser topology \(\mathcal T\), the sets
-\[
+In the coarser topology $\mathcal T$, the sets
+$$
 \boxed{\{a\}}
-\]
+$$
 and
-\[
+$$
 \boxed{\{b\}}
-\]
+$$
 are closed.
 
 
 ::: pf-proof
 
 Their complements are
-\[
+$$
 X-\{a\}=\{b,c\}\in\mathcal T
-\]
+$$
 and
-\[
+$$
 X-\{b\}=\{a,c\}\in\mathcal T.
-\]
+$$
 
 :::
 
@@ -150,7 +150,7 @@ These two closed sets are disjoint.
 
 ::: pf-proof
 
-The points \(a\) and \(b\) are distinct.
+The points $a$ and $b$ are distinct.
 
 :::
 
@@ -158,18 +158,18 @@ The points \(a\) and \(b\) are distinct.
 
 ::: {.pf-step #s1-7}
 
-Every open neighborhood of \(a\) in \((X,\mathcal T)\) contains \(c\).
+Every open neighborhood of $a$ in $(X,\mathcal T)$ contains $c$.
 
 
 ::: pf-proof
 
-The only open sets containing \(a\) are
-\[
+The only open sets containing $a$ are
+$$
 \{a,c\}
 \qquad\text{and}\qquad
 X,
-\]
-and both contain \(c\).
+$$
+and both contain $c$.
 
 :::
 
@@ -177,17 +177,17 @@ and both contain \(c\).
 
 ::: {.pf-step #s1-8}
 
-Every open neighborhood of \(b\) in \((X,\mathcal T)\) also contains \(c\).
+Every open neighborhood of $b$ in $(X,\mathcal T)$ also contains $c$.
 
 
 ::: pf-proof
 
-The only open sets containing \(b\) are
-\[
+The only open sets containing $b$ are
+$$
 \{b,c\}
 \qquad\text{and}\qquad
 X.
-\]
+$$
 
 :::
 
@@ -195,12 +195,12 @@ X.
 
 ::: {.pf-step #s1-9}
 
-Therefore the closed sets \(\{a\}\) and \(\{b\}\) cannot be separated by disjoint open neighborhoods.
+Therefore the closed sets $\{a\}$ and $\{b\}$ cannot be separated by disjoint open neighborhoods.
 
 
 ::: pf-proof
 
-Any open neighborhood of \(\{a\}\) contains \(c\) by step [](#s1-7){.pf-ref}, and any open neighborhood of \(\{b\}\) contains \(c\) by step [](#s1-8){.pf-ref}. Hence any such two neighborhoods intersect at \(c\).
+Any open neighborhood of $\{a\}$ contains $c$ by step [](#s1-7){.pf-ref}, and any open neighborhood of $\{b\}$ contains $c$ by step [](#s1-8){.pf-ref}. Hence any such two neighborhoods intersect at $c$.
 
 :::
 
@@ -209,11 +209,11 @@ Any open neighborhood of \(\{a\}\) contains \(c\) by step [](#s1-7){.pf-ref}, an
 ::: {.pf-step #s1-10}
 
 Thus
-\[
+$$
 \boxed{
 (X,\mathcal T)
 \text{ is not normal}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -231,7 +231,7 @@ Hence normality does not necessarily pass from a finer topology to a strictly co
 
 ::: pf-proof
 
-The finer space \((X,\mathcal T')\) is normal by step [](#s1-4){.pf-ref}, whereas the coarser space \((X,\mathcal T)\) is not normal by step [](#s1-10){.pf-ref}.
+The finer space $(X,\mathcal T')$ is normal by step [](#s1-4){.pf-ref}, whereas the coarser space $(X,\mathcal T)$ is not normal by step [](#s1-10){.pf-ref}.
 
 :::
 

@@ -41,35 +41,35 @@ pointwise convergence alone does not justify exchanging limit and integral.
 ::: pf-proof
 
 There are sequences
-\[
+$$
 f_n\to f
-\]
+$$
 pointwise for which
-\[
+$$
 \int f_n
-\]
+$$
 does not converge to
-\[
+$$
 \int f.
-\]
+$$
 
 The theorem identifies a sharp and useful sufficient condition:
 if
-\[
+$$
 |f_n|
 \le
 g
-\]
+$$
 for one integrable function
-\[
+$$
 g\in L^1,
-\]
+$$
 then
-\[
+$$
 \int f_n
 \longrightarrow
 \int f.
-\]
+$$
 Thus one fixed integrable majorant converts pointwise convergence into
 convergence of the global integral.
 
@@ -85,37 +85,37 @@ The Uniform Boundedness Theorem is analogous in functional analysis.
 ::: pf-proof
 
 Let
-\[
+$$
 \mathcal F
 \subseteq
 \mathcal L(X,Y),
-\]
+$$
 where
-\[
+$$
 X
-\]
+$$
 is Banach.
 If for every fixed vector
-\[
+$$
 x\in X
-\]
+$$
 the set
-\[
+$$
 \{Tx:T\in\mathcal F\}
-\]
+$$
 is bounded, then the theorem concludes that
-\[
+$$
 \sup_{T\in\mathcal F}\|T\|
 <
 \infty.
-\]
+$$
 
 This is much stronger than any one of the pointwise bounds:
 it produces a single constant controlling every operator simultaneously.
 The completeness of
-\[
+$$
 X
-\]
+$$
 is the structural hypothesis that makes the conclusion possible.
 
 :::
@@ -130,16 +130,16 @@ The two theorems are therefore conceptually parallel.
 ::: pf-proof
 
 Dominated convergence starts from
-\[
+$$
 f_n(x)\to f(x)
-\]
+$$
 for almost every individual point $x$ and derives convergence of integrals
 by means of one global dominating function.
 
 Uniform boundedness starts from boundedness of
-\[
+$$
 \{Tx:T\in\mathcal F\}
-\]
+$$
 for each individual vector $x$ and derives one global operator-norm bound by
 using completeness and the Baire category theorem.
 

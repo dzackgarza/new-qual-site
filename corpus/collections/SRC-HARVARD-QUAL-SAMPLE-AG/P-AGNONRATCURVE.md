@@ -28,9 +28,9 @@ Find an example of a projective curve which is not rational.
 
 ::: {.solution}
 Consider the Fermat cubic
-\[
+$$
 C=V(x^3+y^3+z^3)\subseteq\PP^2_{\CC}.
-\]
+$$
 
 ::: pf
 
@@ -39,21 +39,21 @@ The curve $C$ is smooth.
 
 ::: pf-proof
 The three partial derivatives of
-\[
+$$
 F=x^3+y^3+z^3
-\]
+$$
 are
-\[
+$$
 F_x=3x^2,
 \qquad
 F_y=3y^2,
 \qquad
 F_z=3z^2.
-\]
+$$
 Over $\CC$, they vanish simultaneously only at
-\[
+$$
 x=y=z=0,
-\]
+$$
 which is not a point of projective space.  Hence the projective Jacobian criterion shows that $C$ is smooth.
 :::
 
@@ -61,19 +61,19 @@ which is not a point of projective space.  Hence the projective Jacobian criteri
 
 ::: pf-step
 The genus of $C$ is
-\[
+$$
 g(C)=1.
-\]
+$$
 
 ::: pf-proof
 A smooth plane curve of degree $d$ has genus
-\[
+$$
 g=\frac{(d-1)(d-2)}2.
-\]
+$$
 For $d=3$ this gives
-\[
+$$
 g(C)=\frac{2\cdot1}{2}=1.
-\]
+$$
 :::
 
 :::
@@ -83,17 +83,17 @@ The curve $C$ is not rational.
 
 ::: pf-proof
 If $C$ were rational, its function field would be isomorphic to
-\[
+$$
 \CC(t),
-\]
+$$
 so its smooth projective model would be $\PP^1_{\CC}$.  Equivalently, $C$ would be birational to $\PP^1$.
 
 Genus is a birational invariant of smooth projective curves, but
-\[
+$$
 g(C)=1
 \qquad\text{and}\qquad
 g(\PP^1)=0.
-\]
+$$
 This is impossible.  Hence $C$ is not rational.
 :::
 
@@ -101,9 +101,9 @@ This is impossible.  Hence $C$ is not rational.
 
 ::: {.pf-step #final-example}
 Therefore
-\[
+$$
 \boxed{V(x^3+y^3+z^3)\subseteq\PP^2_{\CC}}
-\]
+$$
 is a projective curve that is not rational.
 
 ::: pf-proof

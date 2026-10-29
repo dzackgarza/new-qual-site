@@ -51,13 +51,13 @@ The number of Sylow $p$-subgroups of $G$ is $m$.
 
 Because $p\nmid m$, a Sylow $p$-subgroup has order exactly $p$.
 The conjugation action on the Sylow $p$-subgroups gives
-\[
+$$
 n_p=[G:N_G(P)].
-\]
+$$
 Using $N_G(P)=P$,
-\[
+$$
 n_p=\frac{pm}{p}=m.
-\]
+$$
 
 :::
 
@@ -73,9 +73,9 @@ Distinct subgroups of order $p$ intersect only in the identity.
 Each of the $m$ Sylow $p$-subgroups from step [](#s1){.pf-ref} contains exactly $p-1$ nonidentity elements, all of order $p$.
 Every element of order $p$ generates a Sylow $p$-subgroup.
 Hence the sets of nonidentity elements of the Sylow $p$-subgroups partition the elements of order $p$, and their total number is
-\[
+$$
 m(p-1).
-\]
+$$
 
 :::
 
@@ -84,21 +84,21 @@ m(p-1).
 ::: {.pf-step #s3}
 
 If $H\le G$ has order $m$, then
-\[
+$$
 H=\{x\in G:o(x)\ne p\}.
-\]
+$$
 
 ::: pf-proof
 
 By Lagrange's theorem and $p\nmid m$, no element of $H$ has order $p$.
 Therefore
-\[
+$$
 H\subseteq\{x\in G:o(x)\ne p\}.
-\]
+$$
 By step [](#s2){.pf-ref}, the set on the right has cardinality
-\[
+$$
 pm-m(p-1)=m.
-\]
+$$
 Since $|H|=m$, the inclusion is an equality.
 
 :::
@@ -113,9 +113,9 @@ Every subgroup $H$ of order $m$ is characteristic in $G$.
 
 Automorphisms preserve element orders.
 Thus every automorphism of $G$ preserves the set
-\[
+$$
 \{x\in G:o(x)\ne p\},
-\]
+$$
 which equals $H$ by step [](#s3){.pf-ref}.
 Hence $H$ is characteristic.
 This proves part (a).
@@ -127,34 +127,34 @@ This proves part (a).
 ::: {.pf-step #s5}
 
 If $G$ is solvable, then it has a normal subgroup $N$ with
-\[
+$$
 G/N\cong\ZZ/\ell\ZZ
-\]
+$$
 for some prime $\ell$.
 
 ::: pf-proof
 
 A nontrivial solvable group cannot be perfect: if
-\[
+$$
 [G,G]=G,
-\]
+$$
 then its derived series would remain equal to $G$ and could not terminate at the identity.
 Hence the abelianization
-\[
+$$
 G^{\mathrm{ab}}=G/[G,G]
-\]
+$$
 is a nontrivial finite abelian group.
 
 Choose a maximal proper subgroup $M<G^{\mathrm{ab}}$.
 Then $G^{\mathrm{ab}}/M$ is a finite simple abelian group, hence cyclic of prime order $\ell$.
 Let $N$ be the inverse image of $M$ under the quotient map
-\[
+$$
 G\twoheadrightarrow G^{\mathrm{ab}}.
-\]
+$$
 Then $N\trianglelefteq G$ and
-\[
+$$
 G/N\cong G^{\mathrm{ab}}/M\cong\ZZ/\ell\ZZ.
-\]
+$$
 This proves part (b).
 
 :::
@@ -169,25 +169,25 @@ If $N\trianglelefteq G$ is a proper normal subgroup and $p$ divides $|N|$, then 
 
 If $p\mid|N|$, then a Sylow $p$-subgroup of $N$ has order $p$ and is also a Sylow $p$-subgroup of $G$.
 Because $N$ is normal, it contains every $G$-conjugate of that Sylow subgroup; in particular, after conjugating if necessary, we may take
-\[
+$$
 P\le N.
-\]
+$$
 
 For completeness, the Frattini argument in this situation gives
-\[
+$$
 G=N\,N_G(P).
-\]
+$$
 Indeed, for any $g\in G$, normality of $N$ implies $gPg^{-1}\le N$; it is another Sylow $p$-subgroup of $N$.
 By Sylow conjugacy inside $N$, there exists $n\in N$ such that
-\[
+$$
 n(gPg^{-1})n^{-1}=P.
-\]
+$$
 Thus $ng\in N_G(P)$, and so $g\in N N_G(P)$.
 
 Now $N_G(P)=P\le N$, so
-\[
+$$
 G=N\,N_G(P)=N,
-\]
+$$
 contradicting that $N$ is proper.
 
 :::
@@ -201,24 +201,24 @@ If $G$ is solvable, it has a normal subgroup of order $m$.
 ::: pf-proof
 
 Take $N\trianglelefteq G$ from step [](#s5){.pf-ref}, so
-\[
+$$
 [G:N]=\ell
-\]
+$$
 for a prime $\ell$.
 If $\ell\ne p$, then
-\[
+$$
 |N|=\frac{pm}{\ell}
-\]
+$$
 is divisible by $p$, because $\ell$ divides $m$.
 This contradicts step [](#s6){.pf-ref}.
 Therefore
-\[
+$$
 \ell=p.
-\]
+$$
 Consequently
-\[
+$$
 |N|=\frac{|G|}{p}=m.
-\]
+$$
 Since $N\trianglelefteq G$, this is the required normal subgroup.
 This proves part (c).
 

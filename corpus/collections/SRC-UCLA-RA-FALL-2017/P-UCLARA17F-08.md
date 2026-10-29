@@ -18,23 +18,23 @@ audit:
 
 ::: {.problem}
 Problem 8. Show that a harmonic function $u:\DD\to\RR$ is uniformly continuous if and only if it admits the representation
-\[
+$$
 u(z)=\frac1{2\pi}\int_0^{2\pi}\operatorname{Re}\!\left(\frac{e^{i\theta}+z}{e^{i\theta}-z}\right)f(e^{i\theta})\,d\theta,
 \qquad z\in\DD,
-\]
+$$
 with $f:\partial\DD\to\RR$ continuous.
 :::
 
 ::: {.solution}
 
 For $z\in\DD$ and $\zeta\in\partial\DD$, write
-\[
+$$
 P(z,\zeta)
 \coloneqq
 \operatorname{Re}\!\left(\frac{\zeta+z}{\zeta-z}\right)
 =
 \frac{1-|z|^2}{|\zeta-z|^2}.
-\]
+$$
 
 ::: pf
 
@@ -50,11 +50,11 @@ Let $\zeta\in\partial\DD$ and choose any sequence $(z_n)$ in $\DD$ with $z_n\to\
 If $(w_n)$ is another sequence in $\DD$ with $w_n\to\zeta$, then $|z_n-w_n|\to0$, so uniform continuity gives $|u(z_n)-u(w_n)|\to0$. Thus the limit depends only on $\zeta$; define it to be $f(\zeta)$, and set $f=u$ on $\DD$.
 
 To prove continuity at a boundary point $\zeta$, fix $\varepsilon>0$ and choose $\delta>0$ from uniform continuity of $u$. If $x\in\overline{\DD}$ and $|x-\zeta|<\delta/2$, choose $x_n\in\DD$ with $x_n\to x$ and $\zeta_n\in\DD$ with $\zeta_n\to\zeta$. For all sufficiently large $n$,
-\[
+$$
 |x_n-\zeta_n|
 \le |x_n-x|+|x-\zeta|+|\zeta-\zeta_n|
 <\delta.
-\]
+$$
 Hence $|u(x_n)-u(\zeta_n)|<\varepsilon$, and passage to the limit gives $|f(x)-f(\zeta)|\le\varepsilon$. Therefore $f$ is continuous on $\overline{\DD}$. Uniqueness follows because $\DD$ is dense in $\overline{\DD}$.
 
 :::
@@ -64,32 +64,32 @@ Hence $|u(x_n)-u(\zeta_n)|<\varepsilon$, and passage to the limit gives $|f(x)-f
 ::: {.pf-step #s2}
 
 Under the hypothesis of step [](#s1){.pf-ref},
-\[
+$$
 u(z)=\frac1{2\pi}\int_0^{2\pi}P(z,e^{i\theta})f(e^{i\theta})\,d\theta
 \qquad (z\in\DD).
-\]
+$$
 
 
 ::: pf-proof
 
 Fix $z=re^{i\varphi}\in\DD$ and choose $R$ with $r<R<1$. Since $u$ is harmonic on the closed disk $\{|w|\le R\}$, the Poisson formula on that disk gives
-\[
+$$
 u(z)
 =
 \frac1{2\pi}\int_0^{2\pi}
 P\!\left(\frac zR,e^{i\theta}\right)
 u(Re^{i\theta})\,d\theta.
-\]
+$$
 As $R\uparrow1$, continuity of $f$ on the compact disk $\overline{\DD}$ implies
-\[
+$$
 \sup_{\theta}|u(Re^{i\theta})-f(e^{i\theta})|\longrightarrow0.
-\]
+$$
 Also, because $r<1$ is fixed,
-\[
+$$
 P\!\left(\frac zR,e^{i\theta}\right)
 \longrightarrow
 P(z,e^{i\theta})
-\]
+$$
 uniformly in $\theta$. Passing to the limit in the integral yields the claimed representation.
 
 :::
@@ -99,13 +99,13 @@ uniformly in $\theta$. Passing to the limit in the integral yields the claimed r
 ::: {.pf-step #s3}
 
 Conversely, suppose that $f:\partial\DD\to\RR$ is continuous and that
-\[
+$$
 u(z)=\frac1{2\pi}\int_0^{2\pi}P(z,e^{i\theta})f(e^{i\theta})\,d\theta.
-\]
+$$
 Then for every $\zeta_0\in\partial\DD$,
-\[
+$$
 \lim_{z\to\zeta_0,\ z\in\DD}u(z)=f(\zeta_0).
-\]
+$$
 
 
 ::: pf-proof
@@ -113,9 +113,9 @@ Then for every $\zeta_0\in\partial\DD$,
 ::: {.pf-step #s3-1}
 
 For every $z\in\DD$,
-\[
+$$
 \frac1{2\pi}\int_0^{2\pi}P(z,e^{i\theta})\,d\theta=1.
-\]
+$$
 
 
 ::: pf-proof
@@ -129,10 +129,10 @@ The Poisson kernel is the harmonic extension of the constant boundary function $
 ::: pf-step
 
 Fix $\varepsilon>0$. There is an open arc $I\subset\partial\DD$ containing $\zeta_0$ such that
-\[
+$$
 |f(\zeta)-f(\zeta_0)|<\varepsilon
 \qquad (\zeta\in I).
-\]
+$$
 
 
 ::: pf-proof
@@ -146,30 +146,30 @@ This is continuity of $f$ at $\zeta_0$.
 ::: {.pf-step #s3-3}
 
 If $J=\partial\DD\setminus I$, then
-\[
+$$
 \sup_{\zeta\in J}P(z,\zeta)\longrightarrow0
 \qquad\text{as }z\to\zeta_0, z\in\DD.
-\]
+$$
 
 
 ::: pf-proof
 
 The compact set $J$ does not contain $\zeta_0$, so
-\[
+$$
 d\coloneqq\min_{\zeta\in J}|\zeta-\zeta_0|>0.
-\]
+$$
 For $|z-\zeta_0|<d/2$ and $\zeta\in J$,
-\[
+$$
 |\zeta-z|
 \ge |\zeta-\zeta_0|-|z-\zeta_0|
 \ge d/2.
-\]
+$$
 Therefore
-\[
+$$
 0\le P(z,\zeta)
 =\frac{1-|z|^2}{|\zeta-z|^2}
 \le \frac{4(1-|z|^2)}{d^2},
-\]
+$$
 and the right-hand side tends to $0$ as $z\to\zeta_0$.
 
 :::
@@ -184,11 +184,11 @@ $u(z)\to f(\zeta_0)$ as $z\to\zeta_0$ within $\DD$.
 ::: pf-proof
 
 Let
-\[
+$$
 M\coloneqq\max_{\zeta\in\partial\DD}|f(\zeta)-f(\zeta_0)|.
-\]
+$$
 Using step [](#s3-1){.pf-ref} and splitting the boundary integral over $I$ and $J$,
-\[
+$$
 \begin{aligned}
 |u(z)-f(\zeta_0)|
 &\le
@@ -201,11 +201,11 @@ P(z,\zeta)|f(\zeta)-f(\zeta_0)|\,|d\zeta| \\
 \varepsilon+
 M\sup_{\zeta\in J}P(z,\zeta).
 \end{aligned}
-\]
+$$
 By step [](#s3-3){.pf-ref} the second term tends to $0$. Hence
-\[
+$$
 \limsup_{z\to\zeta_0}|u(z)-f(\zeta_0)|\le\varepsilon.
-\]
+$$
 Since $\varepsilon>0$ was arbitrary, the limit is $0$.
 
 :::

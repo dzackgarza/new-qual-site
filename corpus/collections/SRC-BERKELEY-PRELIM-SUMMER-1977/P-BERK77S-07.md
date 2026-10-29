@@ -30,13 +30,13 @@ audit:
 
 ::: {.problem}
 Let $A:\RR^6\to\RR^6$ be linear and suppose
-\[
+$$
 A^{26}=I.
-\]
+$$
 Show that
-\[
+$$
 \RR^6=V_1\oplus V_2\oplus V_3,
-\]
+$$
 where $V_1,V_2,V_3$ are two-dimensional $A$-invariant subspaces.
 :::
 

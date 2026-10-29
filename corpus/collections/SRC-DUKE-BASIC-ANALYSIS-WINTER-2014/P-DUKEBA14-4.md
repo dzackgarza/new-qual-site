@@ -23,11 +23,11 @@ audit:
 
 ::: {.problem}
 On $\RR^n$ define
-\[
+$$
 \rho_1(x,y)=\max_{1\le j\le n}|x^j-y^j|,
 \qquad
 \rho_2(x,y)=\left(\sum_{j=1}^n|x^j-y^j|^2\right)^{1/2}.
-\]
+$$
 Prove that a set $U\subset\RR^n$ is $\rho_1$-open if and only if it is $\rho_2$-open.
 :::
 
@@ -40,9 +40,9 @@ Compare the two metrics.
 
 ::: pf-proof
 For every $x,y\in\RR^n$,
-\[
+$$
 \rho_1(x,y)\le\rho_2(x,y)\le\sqrt n\,\rho_1(x,y).
-\]
+$$
 The first inequality holds because each coordinate difference is bounded by the Euclidean norm; the second follows by bounding all $n$ summands by $\rho_1(x,y)^2$.
 :::
 
@@ -53,14 +53,14 @@ Compare metric balls.
 
 ::: pf-proof
 The inequalities imply
-\[
+$$
 B_{\rho_2}(x,r)\subseteq B_{\rho_1}(x,r)
-\]
+$$
 and
-\[
+$$
 B_{\rho_1}\!\left(x,\frac r{\sqrt n}\right)
 \subseteq B_{\rho_2}(x,r).
-\]
+$$
 Thus every neighborhood for either metric contains a neighborhood for the other. Consequently the two metrics induce exactly the same open sets.
 :::
 

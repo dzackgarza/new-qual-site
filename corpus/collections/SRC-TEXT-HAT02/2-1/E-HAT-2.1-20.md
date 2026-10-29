@@ -32,11 +32,11 @@ More generally, thinking of $SX$ as the union of two cones $CX$ with their bases
 
 ::: {.solution}
 Write the suspension as
-\[
+$$
 SX=C_+X\cup C_-X,
 \qquad
 C_+X\cap C_-X=X,
-\]
+$$
 where both cones are contractible.
 
 ::: pf
@@ -44,19 +44,19 @@ where both cones are contractible.
 ::: {.pf-step #s1}
 
 For every $n$,
-\[
+$$
 \boxed{\widetilde H_{n+1}(SX)\cong\widetilde H_n(X).}
-\]
+$$
 
 ::: pf-proof
 
 The reduced Mayer--Vietoris sequence contains
-\[
+$$
 \widetilde H_{n+1}(C_+X)\oplus\widetilde H_{n+1}(C_-X)
 \to\widetilde H_{n+1}(SX)
 \to\widetilde H_n(X)
 \to\widetilde H_n(C_+X)\oplus\widetilde H_n(C_-X).
-\]
+$$
 Both outer groups vanish because cones are contractible, so the middle map is an isomorphism.
 
 Now let $Y_r$ be the union of $r\ge1$ cones on $X$, all with their bases identified.
@@ -68,25 +68,25 @@ Now let $Y_r$ be the union of $r\ge1$ cones on $X$, all with their bases identif
 ::: {.pf-step #s2}
 
 For $r\ge2$,
-\[
+$$
 Y_r\simeq\bigvee^{r-1}SX.
-\]
+$$
 
 ::: pf-proof
 
 Choose one cone $C_1X\subset Y_r$. It is a contractible subcomplex, so collapsing it to a point is a homotopy equivalence:
-\[
+$$
 Y_r\simeq Y_r/C_1X.
-\]
+$$
 For each remaining cone $C_iX$, its common base $X$ has been collapsed to that point. The quotient
-\[
+$$
 C_iX/X
-\]
+$$
 is the suspension $SX$. Different cones meet only in the collapsed base, so
-\[
+$$
 Y_r/C_1X\cong\bigvee_{i=2}^r(C_iX/X)
 \cong\bigvee^{r-1}SX.
-\]
+$$
 
 :::
 
@@ -95,13 +95,13 @@ Y_r/C_1X\cong\bigvee_{i=2}^r(C_iX/X)
 ::: pf-step
 
 Hence for every $k$,
-\[
+$$
 \boxed{
 \widetilde H_k(Y_r)
 \cong
 \bigoplus^{r-1}\widetilde H_{k-1}(X).
 }
-\]
+$$
 
 ::: pf-proof
 

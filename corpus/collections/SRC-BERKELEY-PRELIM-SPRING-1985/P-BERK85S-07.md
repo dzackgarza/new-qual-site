@@ -26,10 +26,10 @@ audit:
 
 ::: {.problem}
 Prove that
-\[
+$$
 \int_0^\infty e^{-x^2}\cos(2bx)\,dx
 =\frac{\sqrt\pi}{2}e^{-b^2}.
-\]
+$$
 What restrictions, if any, must be placed on $b$?
 :::
 

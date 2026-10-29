@@ -43,28 +43,28 @@ Let $[\gamma]\in\pi_1(X,x_0)$ be arbitrary.
 ::: pf-proof
 
 Choose a representative loop
-\[
+$$
 \gamma:S^1\longrightarrow X
-\]
+$$
 based at $x_0$.
 Fix the basepoint
-\[
+$$
 *=1\in S^1,
-\]
+$$
 so that
-\[
+$$
 \gamma(*)=x_0.
-\]
+$$
 By hypothesis, there is a free homotopy
-\[
+$$
 H:S^1\times[0,1]\longrightarrow X
-\]
+$$
 from $\gamma$ to the constant map at $x_0$:
-\[
+$$
 H(z,0)=\gamma(z),
 \qquad
 H(z,1)=x_0.
-\]
+$$
 
 :::
 
@@ -77,17 +77,17 @@ The track of the basepoint during the free homotopy is a loop at $x_0$.
 ::: pf-proof
 
 Define
-\[
+$$
 \alpha(t)=H(*,t).
-\]
+$$
 At the two endpoints,
-\[
+$$
 \alpha(0)=H(*,0)=\gamma(*)=x_0
-\]
+$$
 and
-\[
+$$
 \alpha(1)=H(*,1)=x_0.
-\]
+$$
 Thus $\alpha$ is a loop based at $x_0$.
 
 :::
@@ -101,17 +101,17 @@ The loop $\gamma*\alpha*\alpha^{-1}$ is null-homotopic.
 ::: pf-proof
 
 Let
-\[
+$$
 q:[0,1]\longrightarrow S^1,
 \qquad
 q(s)=e^{2\pi i s},
-\]
+$$
 and define
-\[
+$$
 F:[0,1]^2\longrightarrow X,
 \qquad
 F(s,t)=H(q(s),t).
-\]
+$$
 Since $q(0)=q(1)=*$, the four oriented sides of the square map as follows:
 
 - the bottom edge $t=0$, from left to right, maps to $\gamma$;
@@ -120,15 +120,15 @@ Since $q(0)=q(1)=*$, the four oriented sides of the square map as follows:
 - the left edge $s=0$, from top to bottom, maps to $\alpha^{-1}$.
 
 Hence the restriction of $F$ to the oriented boundary $\partial[0,1]^2$ represents
-\[
+$$
 \gamma*\alpha*c_{x_0}*\alpha^{-1}.
-\]
+$$
 But this boundary map extends over the whole square by $F$.
 Since the square is a disk, its boundary loop is null-homotopic.
 Therefore
-\[
+$$
 [\gamma][\alpha][\alpha]^{-1}=e
-\]
+$$
 in $\pi_1(X,x_0)$.
 
 :::
@@ -142,21 +142,21 @@ The class $[\gamma]$ is trivial.
 ::: pf-proof
 
 From step [](#s3){.pf-ref},
-\[
+$$
 [\gamma][\alpha][\alpha]^{-1}=e.
-\]
+$$
 Since
-\[
+$$
 [\alpha][\alpha]^{-1}=e,
-\]
+$$
 we obtain
-\[
+$$
 [\gamma]=e.
-\]
+$$
 The class $[\gamma]$ was arbitrary, so
-\[
+$$
 \boxed{\pi_1(X,x_0)=\{e\}}.
-\]
+$$
 
 :::
 

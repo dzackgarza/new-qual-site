@@ -23,9 +23,9 @@ Justify your answer.
 
 ::: {.solution}
 Let
-\[
+$$
 K=\{z:3\le |z|\le4\}.
-\]
+$$
 The complement $\CC\setminus K$ has two components: the bounded
 component $|z|<3$ and the unbounded component $|z|>4$. The points $2$ and $6$
 lie in these two components respectively. Since $f$ is holomorphic on a
@@ -36,20 +36,20 @@ $R_n\to f$ uniformly on $K$.
 For part (b), suppose instead that rational functions with poles only at $6$
 converged uniformly to $f$ on $K$. Take the circle $\gamma(t)=\frac72e^{it}$.
 Every such $R_n$ is holomorphic inside $\gamma$, so
-\[
+$$
 \int_\gamma R_n(z)\,dz=0.
-\]
+$$
 Uniform convergence on $\gamma\subset K$ would imply
-\[
+$$
 \int_\gamma f(z)\,dz=0.
-\]
+$$
 But $\gamma$ encloses the pole at $1$ and not the pole at $5$, so
-\[
+$$
 \int_\gamma f(z)\,dz
 =2\pi i\operatorname{Res}(f,1)
 =2\pi i\frac1{1-5}
 =-\frac{\pi i}{2}\ne0,
-\]
+$$
 a contradiction. Hence approximation with poles allowed only at $6$ is
 impossible.
 :::

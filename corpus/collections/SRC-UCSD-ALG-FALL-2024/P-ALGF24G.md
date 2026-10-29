@@ -35,17 +35,17 @@ Prove that $\{\beta^m \mid \beta \in X\}$ is the set of zeros of $g(x)$ in $E$.
 
 (b) Suppose there exist $\alpha \in E$ and $r \in F$ such that $\alpha, r\alpha \in X$.
 Prove that
-\[
+$$
 \ell_r \colon X \to X, \qquad \ell_r(\beta) = r\beta
-\]
+$$
 is well-defined.
 If $\alpha\ne0$, deduce that $r$ is a root of unity.
 
 (c) Suppose $\alpha\ne0$, $\alpha, r\alpha \in X$, $r \in F$, and the multiplicative order of $r$ is $m$.
 Prove that
-\[
+$$
 m_{\alpha,F}(x) = m_{\alpha^m,F}(x^m);
-\]
+$$
 that means $f(x) = g(x^m)$.
 :::
 
@@ -64,17 +64,17 @@ Fix an algebraic closure $\overline F$ containing $E$, and write $\Gamma=\operat
 ::: {.pf-step #s1}
 
 For every $u\in E$, the roots in $\overline F$ of its minimal polynomial over $F$ are exactly
-\[
+$$
 \{\sigma(u):\sigma\in\Gamma\}.
-\]
+$$
 In particular, all these roots lie in $E$, and $\Gamma$ acts transitively on $X$.
 
 ::: pf-proof
 
 If $h$ is the minimal polynomial of $u$, then
-\[
+$$
 h(\sigma(u))=\sigma(h(u))=0
-\]
+$$
 for every $\sigma\in\Gamma$.
 
 Conversely, if $v\in\overline F$ is a root of $h$, evaluation gives an $F$-isomorphism $F(u)\to F(v)$ sending $u$ to $v$.
@@ -102,10 +102,10 @@ The set of roots of $g=m_{\alpha^m,F}$ in $E$ is $\{\beta^m:\beta\in X\}$.
 ::: pf-proof
 
 Applying step [](#s1){.pf-ref} to $\alpha^m$ gives its conjugates as
-\[
+$$
 \{\sigma(\alpha^m):\sigma\in\Gamma\}
 =\{\sigma(\alpha)^m:\sigma\in\Gamma\}.
-\]
+$$
 Transitivity on $X$ from step [](#s1){.pf-ref} identifies this set with $\{\beta^m:\beta\in X\}$.
 This proves part (a), including that $g$ splits in $E$.
 
@@ -120,9 +120,9 @@ Under the hypotheses of (b), multiplication by $r$ maps $X$ into itself.
 ::: pf-proof
 
 Given $\beta\in X$, choose $\sigma\in\Gamma$ with $\sigma(\alpha)=\beta$ by step [](#s1){.pf-ref}. Since $r\in F$ and $r\alpha\in X$, we have
-\[
+$$
 r\beta=\sigma(r\alpha)\in X.
-\]
+$$
 Thus $\ell_r$ is well-defined.
 This argument does not require $\alpha\ne0$.
 
@@ -150,18 +150,18 @@ Cancelling $\alpha\ne0$ yields $r^k=1$, proving the remaining conclusion of part
 ::: {.pf-step #s5}
 
 Under the hypotheses of (c), each fiber of the map
-\[
+$$
 X\longrightarrow Y:=\{\beta^m:\beta\in X\},\qquad \beta\longmapsto\beta^m,
-\]
+$$
 is an orbit of $\langle r\rangle$ and has exactly $m$ elements.
 
 ::: pf-proof
 
 By the argument in step [](#s4){.pf-ref}, every element of $X$ is nonzero.
 For each $\beta\in X$, step [](#s3){.pf-ref} shows that
-\[
+$$
 \beta,r\beta,\ldots,r^{m-1}\beta
-\]
+$$
 all lie in $X$.
 They are distinct because $r$ has order $m$ and $\beta\ne0$, and they have the same $m$th power.
 
@@ -182,20 +182,20 @@ The polynomial identity $f(x)=g(x^m)$ holds, proving part (c).
 
 The polynomials $f$ and $g$ are irreducible in characteristic zero, hence separable.
 Together with step [](#s2){.pf-ref}, this gives
-\[
+$$
 f(x)=\prod_{\beta\in X}(x-\beta),\qquad
 g(t)=\prod_{y\in Y}(t-y).
-\]
+$$
 For each $y\in Y$, choose $\beta\in X$ with $\beta^m=y$.
 By step [](#s5){.pf-ref}, the roots in this fiber are exactly $r^i\beta$ for $0\le i<m$.
 These are $m$ distinct roots of the monic degree-$m$ polynomial $x^m-y$, so
-\[
+$$
 \prod_{i=0}^{m-1}(x-r^i\beta)=x^m-y.
-\]
+$$
 Grouping the factors of $f$ by these fibers now yields
-\[
+$$
 f(x)=\prod_{y\in Y}(x^m-y)=g(x^m).
-\]
+$$
 Finally $f=m_{\alpha,F}$ by monicity and irreducibility, so this is precisely the stated identity of minimal polynomials.
 
 :::

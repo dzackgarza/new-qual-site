@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Let $f:\RR^n\to\RR^n$ be differentiable. Suppose there is a differentiable function $g:\RR^n\to\RR$ with no critical points such that
-\[
+$$
 g\circ f=0
-\]
+$$
 identically. Prove that the Jacobian determinant of $f$ vanishes identically.
 :::
 

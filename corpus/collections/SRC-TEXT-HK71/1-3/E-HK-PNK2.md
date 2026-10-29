@@ -33,11 +33,11 @@ $$
 
 ::: {.solution}
 Let
-\[
+$$
 A=\begin{bmatrix}2&0&0\\a&-1&0\\b&c&3\end{bmatrix},
 \qquad
 B=\begin{bmatrix}1&1&2\\-2&0&-1\\1&3&5\end{bmatrix}.
-\]
+$$
 
 ::: pf
 
@@ -46,9 +46,9 @@ The matrix $A$ has rank $3$.
 
 ::: pf-proof
 $A$ is lower triangular and
-\[
+$$
 \det A=2(-1)3=-6\ne0.
-\]
+$$
 Hence $A$ is invertible and has rank $3$.
 :::
 
@@ -59,14 +59,14 @@ The matrix $B$ has rank $2$.
 
 ::: pf-proof
 Its determinant is
-\[
+$$
 \det B=0,
-\]
+$$
 so its rank is at most $2$. The minor formed by the first two rows and first two
 columns is
-\[
+$$
 \det\begin{bmatrix}1&1\\-2&0\end{bmatrix}=2\ne0,
-\]
+$$
 so its rank is at least $2$.
 :::
 

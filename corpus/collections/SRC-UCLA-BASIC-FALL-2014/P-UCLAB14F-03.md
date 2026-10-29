@@ -32,17 +32,17 @@ The pointwise limit $f$ is nondecreasing.
 ::: pf-proof
 
 If
-\[
+$$
 x\le y,
-\]
+$$
 then for every $n$,
-\[
+$$
 f_n(x)\le f_n(y).
-\]
+$$
 Taking $n\to\infty$ and using pointwise convergence gives
-\[
+$$
 f(x)\le f(y).
-\]
+$$
 
 :::
 
@@ -52,15 +52,15 @@ f(x)\le f(y).
 
 Fix $\varepsilon>0$.
 There is a partition
-\[
+$$
 0=x_0<x_1<\cdots<x_m=1
-\]
+$$
 such that
-\[
+$$
 f(x_j)-f(x_{j-1})
 <
 \frac{\varepsilon}{3}
-\]
+$$
 for every $j$.
 
 
@@ -68,18 +68,18 @@ for every $j$.
 
 The function $f$ is continuous on the compact interval $[0,1]$, hence uniformly continuous.
 Choose $\delta>0$ such that
-\[
+$$
 |x-y|<\delta
-\]
+$$
 implies
-\[
+$$
 |f(x)-f(y)|<\frac{\varepsilon}{3}.
-\]
+$$
 Choose a partition whose mesh is smaller than $\delta$.
 Since $f$ is nondecreasing by step [](#s1-1){.pf-ref},
-\[
+$$
 0\le f(x_j)-f(x_{j-1})<\frac{\varepsilon}{3}.
-\]
+$$
 
 :::
 
@@ -88,11 +88,11 @@ Since $f$ is nondecreasing by step [](#s1-1){.pf-ref},
 ::: pf-step
 
 There exists $N$ such that for every $n\ge N$ and every partition point $x_j$,
-\[
+$$
 |f_n(x_j)-f(x_j)|
 <
 \frac{\varepsilon}{3}.
-\]
+$$
 
 
 ::: pf-proof
@@ -100,9 +100,9 @@ There exists $N$ such that for every $n\ge N$ and every partition point $x_j$,
 For each fixed $j$, pointwise convergence gives an index $N_j$ such that the displayed inequality holds for all $n\ge N_j$.
 There are only finitely many partition points.
 Take
-\[
+$$
 N=\max_j N_j.
-\]
+$$
 
 :::
 
@@ -111,27 +111,27 @@ N=\max_j N_j.
 ::: {.pf-step #s1-4}
 
 Let $n\ge N$ and
-\[
+$$
 x_{j-1}\le x\le x_j.
-\]
+$$
 Then
-\[
+$$
 f_n(x)-f(x)<\frac{2\varepsilon}{3}.
-\]
+$$
 
 
 ::: pf-proof
 
 Monotonicity of $f_n$ gives
-\[
+$$
 f_n(x)\le f_n(x_j),
-\]
+$$
 while monotonicity of $f$ gives
-\[
+$$
 f(x)\ge f(x_{j-1}).
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 f_n(x)-f(x)
 &\le
@@ -145,7 +145,7 @@ f_n(x_j)-f(x_{j-1})\\
 +
 \frac{\varepsilon}{3}.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -154,23 +154,23 @@ f_n(x_j)-f(x_{j-1})\\
 ::: {.pf-step #s1-5}
 
 Under the same hypotheses,
-\[
+$$
 f(x)-f_n(x)<\frac{2\varepsilon}{3}.
-\]
+$$
 
 
 ::: pf-proof
 
 Monotonicity gives
-\[
+$$
 f(x)\le f(x_j)
-\]
+$$
 and
-\[
+$$
 f_n(x)\ge f_n(x_{j-1}).
-\]
+$$
 Hence
-\[
+$$
 \begin{aligned}
 f(x)-f_n(x)
 &\le
@@ -184,7 +184,7 @@ f(x_j)-f_n(x_{j-1})\\
 +
 \frac{\varepsilon}{3}.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -193,30 +193,30 @@ f(x_j)-f_n(x_{j-1})\\
 ::: {.pf-step #s1-6}
 
 For every $n\ge N$ and every $x\in[0,1]$,
-\[
+$$
 |f_n(x)-f(x)|<\varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
 Choose the partition interval containing $x$.
 Steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} give
-\[
+$$
 -\frac{2\varepsilon}{3}
 <
 f_n(x)-f(x)
 <
 \frac{2\varepsilon}{3}.
-\]
+$$
 Thus
-\[
+$$
 |f_n(x)-f(x)|
 <
 \frac{2\varepsilon}{3}
 <
 \varepsilon.
-\]
+$$
 
 :::
 
@@ -225,9 +225,9 @@ Thus
 ::: {.pf-step #s1-7}
 
 Therefore
-\[
+$$
 \boxed{f_n\to f\text{ uniformly on }[0,1]}.
-\]
+$$
 
 
 ::: pf-proof

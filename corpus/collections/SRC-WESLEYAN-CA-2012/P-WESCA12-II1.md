@@ -26,35 +26,35 @@ Let $A$ and $B$ be the radii of convergence of $\sum a_kz^k$ and $\sum b_kz^k$.
 ::: {.solution}
 
 Let
-\[
+$$
 R
-\]
+$$
 denote the radius of convergence of
-\[
+$$
 \sum_{k=0}^{\infty}
 a_kb_k z^k.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 Fix real numbers
-\[
+$$
 0<r<A,
 \qquad
 0<s<B.
-\]
+$$
 Then
-\[
+$$
 \sum_{k=0}^{\infty}
 |a_k|r^k
-\]
+$$
 and
-\[
+$$
 \sum_{k=0}^{\infty}
 |b_k|s^k
-\]
+$$
 converge.
 
 
@@ -70,28 +70,28 @@ of convergence.
 ::: {.pf-step #s1-2}
 
 The sequence
-\[
+$$
 |b_k|s^k
-\]
+$$
 is bounded.
 
 
 ::: pf-proof
 
 Every convergent series has terms tending to zero. Therefore
-\[
+$$
 |b_k|s^k\to0.
-\]
+$$
 In particular, the sequence is bounded: there exists
-\[
+$$
 M<\infty
-\]
+$$
 such that
-\[
+$$
 |b_k|s^k\le M
 \qquad
 (k\ge0).
-\]
+$$
 
 :::
 
@@ -100,17 +100,17 @@ such that
 ::: {.pf-step #s1-3}
 
 The series
-\[
+$$
 \sum_{k=0}^{\infty}
 |a_kb_k|(rs)^k
-\]
+$$
 converges.
 
 
 ::: pf-proof
 
 Using step [](#s1-2){.pf-ref},
-\[
+$$
 \begin{aligned}
 |a_kb_k|(rs)^k
 &=
@@ -119,11 +119,11 @@ Using step [](#s1-2){.pf-ref},
 &\le
 M|a_k|r^k.
 \end{aligned}
-\]
+$$
 The comparison series
-\[
+$$
 \sum M|a_k|r^k
-\]
+$$
 converges by step [](#s1-1){.pf-ref}.
 
 :::
@@ -133,22 +133,22 @@ converges by step [](#s1-1){.pf-ref}.
 ::: {.pf-step #s1-4}
 
 Hence
-\[
+$$
 R\ge rs.
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-3){.pf-ref} says the coefficientwise-product power series converges absolutely
 at every
-\[
+$$
 z
-\]
+$$
 with
-\[
+$$
 |z|=rs.
-\]
+$$
 Therefore its radius of convergence is at least $rs$.
 
 :::
@@ -158,57 +158,57 @@ Therefore its radius of convergence is at least $rs$.
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 \boxed{
 R\ge AB.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 If
-\[
+$$
 A=0
 \quad\text{or}\quad
 B=0,
-\]
+$$
 the inequality is trivial.
 
 Assume
-\[
+$$
 A,B>0.
-\]
+$$
 Step [](#s1-4){.pf-ref} holds for every
-\[
+$$
 r<A,
 \qquad
 s<B.
-\]
+$$
 Let
-\[
+$$
 r\uparrow A,
 \qquad
 s\uparrow B.
-\]
+$$
 Then
-\[
+$$
 rs\uparrow AB,
-\]
+$$
 so
-\[
+$$
 R\ge AB.
-\]
+$$
 
 If one of $A,B$ is infinite, choose arbitrarily large finite $r$ or $s$;
 the same argument gives
-\[
+$$
 R=\infty
-\]
+$$
 whenever
-\[
+$$
 AB=\infty.
-\]
+$$
 
 :::
 
@@ -222,74 +222,74 @@ The inequality can be strict.
 ::: pf-proof
 
 Define
-\[
+$$
 a_k
 =
 \begin{cases}
 1,&k\text{ even},\\
 0,&k\text{ odd},
 \end{cases}
-\]
+$$
 and
-\[
+$$
 b_k
 =
 \begin{cases}
 0,&k\text{ even},\\
 1,&k\text{ odd}.
 \end{cases}
-\]
+$$
 
 Then
-\[
+$$
 \sum a_k z^k
 =
 1+z^2+z^4+\cdots
 =
 \frac1{1-z^2}
-\]
+$$
 for
-\[
+$$
 |z|<1,
-\]
+$$
 so its radius is
-\[
+$$
 A=1.
-\]
+$$
 
 Likewise,
-\[
+$$
 \sum b_k z^k
 =
 z+z^3+z^5+\cdots
 =
 \frac{z}{1-z^2},
-\]
+$$
 so
-\[
+$$
 B=1.
-\]
+$$
 
 But
-\[
+$$
 a_kb_k=0
 \qquad
 \text{for every }k.
-\]
+$$
 Hence
-\[
+$$
 \sum a_kb_kz^k
 \equiv
 0
-\]
+$$
 has infinite radius of convergence:
-\[
+$$
 R=\infty.
-\]
+$$
 Thus
-\[
+$$
 R>AB=1.
-\]
+$$
 
 :::
 

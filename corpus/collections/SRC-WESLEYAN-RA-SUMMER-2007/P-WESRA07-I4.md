@@ -27,14 +27,14 @@ Give a precise statement of Egorov's theorem.
 
 ::: {.solution}
 Let $(X,\mathcal A,\mu)$ be a finite measure space, and let $f_n,f:X\to\CC$ be measurable functions such that
-\[
+$$
 f_n(x)\longrightarrow f(x)
-\]
+$$
 for almost every $x\in X$.
 
 Then $f_n\to f$ almost uniformly: for every $\varepsilon>0$ there exists $E\in\mathcal A$ with
-\[
+$$
 \mu(E)<\varepsilon
-\]
+$$
 such that $f_n\to f$ uniformly on $X\setminus E$.
 :::

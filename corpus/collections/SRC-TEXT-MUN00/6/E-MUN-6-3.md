@@ -30,20 +30,20 @@ Let $X$ be the two-element set $\{0,1\}$ . Find a bijective correspondence betwe
 
 ::: {.solution}
 Let
-\[
+$$
 P=\{(y_1,y_2,\dots)\in X^\omega:y_1=0\}.
-\]
-This is a proper subset of \(X^\omega\), since for example \((1,0,0,\dots)\notin P\).
+$$
+This is a proper subset of $X^\omega$, since for example $(1,0,0,\dots)\notin P$.
 
 Define
-\[
+$$
 F:X^\omega\longrightarrow P,
 \qquad
 F(x_1,x_2,x_3,\dots)=(0,x_1,x_2,x_3,\dots).
-\]
+$$
 The inverse map is the left shift
-\[
+$$
 G(0,y_2,y_3,\dots)=(y_2,y_3,\dots).
-\]
-Then \(GF=\mathrm{id}_{X^\omega}\) and \(FG=\mathrm{id}_P\). Thus \(F\) is a bijection of \(X^\omega\) with the proper subset \(P\).
+$$
+Then $GF=\mathrm{id}_{X^\omega}$ and $FG=\mathrm{id}_P$. Thus $F$ is a bijection of $X^\omega$ with the proper subset $P$.
 :::

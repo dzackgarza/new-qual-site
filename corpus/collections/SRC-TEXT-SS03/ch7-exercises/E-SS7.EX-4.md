@@ -39,48 +39,48 @@ Prove as a result that $L ( s )$ is continuable into the complex plane, with the
 
 ::: {.solution}
 Because $a_n$ has period $q$,
-\[
+$$
 \sum_{n=1}^\infty a_ne^{-nx}
 =\sum_{k=0}^\infty\sum_{r=1}^q a_re^{-(kq+r)x}
 =\frac{\sum_{r=1}^q a_re^{-rx}}{1-e^{-qx}}
 =\frac{Q(x)}{e^{qx}-1}.
 \tag{1}
-\]
+$$
 For $\Re s>1$, absolute convergence permits termwise integration, and
-\[
+$$
 \int_0^\infty e^{-nx}x^{s-1}\,dx=\Gamma(s)n^{-s}.
-\]
+$$
 Using (1),
-\[
+$$
 \Gamma(s)L(s)
 =\int_0^\infty\frac{Q(x)x^{s-1}}{e^{qx}-1}\,dx,
-\]
+$$
 which proves the asserted formula.
 
 For continuation, split the integral at $1$. The integral over $[1,\infty)$ is entire in $s$, because its integrand decays exponentially in $x$ uniformly on compact subsets of the $s$-plane.
 
 Near $x=0$, the function
-\[
+$$
 H(x)=\frac{xQ(x)}{e^{qx}-1}
-\]
+$$
 is holomorphic, with
-\[
+$$
 H(0)=\frac{Q(0)}q=\frac1q\sum_{r=1}^q a_r.
-\]
+$$
 Write its Taylor expansion $H(x)=\sum_{m\ge0}c_mx^m$. For each $N$,
-\[
+$$
 \int_0^1\frac{Q(x)x^{s-1}}{e^{qx}-1}\,dx
 =\sum_{m=0}^N\frac{c_m}{s+m-1}+R_N(s),
-\]
+$$
 where $R_N$ is holomorphic for $\Re s>-N$. Multiplication by $1/\Gamma(s)$ cancels every possible pole at $s=0,-1,-2,\ldots$. Hence $L(s)$ continues meromorphically to the whole plane with only a possible pole at $s=1$.
 
 At $s=1$, its residue is
-\[
+$$
 \frac{c_0}{\Gamma(1)}=\frac1q\sum_{r=1}^q a_r.
-\]
+$$
 Therefore $L$ is regular at $s=1$ exactly when
-\[
+$$
 \sum_{r=1}^q a_r=0.
-\]
+$$
 For a nontrivial Dirichlet character modulo $q$, this sum is zero, whereas for the principal character it is nonzero; this gives the stated application to Dirichlet $L$-series.
 :::

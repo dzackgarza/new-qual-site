@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be entire and suppose
-\[
+Let $f$ be entire and suppose
+$$
 f(\CC)\subseteq\{z\in\CC:\operatorname{Im}z>0\}.
-\]
-Show that \(f\) is constant.
+$$
+Show that $f$ is constant.
 :::
 
 ::: {.solution}

@@ -31,9 +31,9 @@ Homology groups of the factors:
 
 ::: pf-step
 For $X = \RP^2$:
-\[
+$$
 H_0(X; \ZZ) \cong \ZZ, \quad H_1(X; \ZZ) \cong \ZZ_2, \quad H_k(X; \ZZ) = 0 \text{ for all } k \ge 2.
-\]
+$$
 
 ::: pf-proof
 cellular homology of $\RP^2$.
@@ -43,9 +43,9 @@ cellular homology of $\RP^2$.
 
 ::: pf-step
 For $Y = \RP^3$:
-\[
+$$
 H_0(Y; \ZZ) \cong \ZZ, \quad H_1(Y; \ZZ) \cong \ZZ_2, \quad H_2(Y; \ZZ) = 0, \quad H_3(Y; \ZZ) \cong \ZZ, \quad H_k(Y; \ZZ) = 0 \text{ for all } k \ge 4.
-\]
+$$
 
 ::: pf-proof
 cellular homology of the orientable 3-manifold $\RP^3$.
@@ -64,9 +64,9 @@ The Künneth Formula:
 
 ::: pf-step
 By the Künneth Theorem for singular homology with coefficients in a PID:
-\[
+$$
 H_n(X \times Y; \ZZ) \cong \bigoplus_{i+j=n} \big(H_i(X) \otimes_{\ZZ} H_j(Y)\big) \oplus \bigoplus_{i+j=n-1} \operatorname{Tor}_1^{\ZZ}(H_i(X), H_j(Y)).
-\]
+$$
 
 ::: pf-proof
 Künneth Theorem for product spaces over $\ZZ$.
@@ -132,7 +132,7 @@ Step [](#factor-homology-groups){.pf-ref} and Künneth formula algebra.
 ::: pf-qed
 Conclusion:
 The integral homology groups $H_n(\RP^2 \times \RP^3; \ZZ)$ are:
-\[
+$$
 H_n(\RP^2 \times \RP^3; \ZZ) \cong \begin{cases}
 \ZZ & n = 0, \\
 \ZZ_2 \oplus \ZZ_2 & n = 1, \\
@@ -141,7 +141,7 @@ H_n(\RP^2 \times \RP^3; \ZZ) \cong \begin{cases}
 \ZZ_2 & n = 4, \\
 0 & n \ge 5.
 \end{cases}
-\]
+$$
 
 Step [](#degree-by-degree-computation){.pf-ref}.
 :::

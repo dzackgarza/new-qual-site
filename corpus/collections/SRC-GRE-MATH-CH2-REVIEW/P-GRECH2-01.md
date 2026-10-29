@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Consider the sequence $(x_n)$ whose terms are given by the formula
 
-\[
+$$
 x_n = \frac{(\cos n\pi)(\sin^2 n)}{\sqrt[e]{n}}
-\]
+$$
 
 for each integer $n \ge 1$. Given that this sequence converges, what is its limit?
 

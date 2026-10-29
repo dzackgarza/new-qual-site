@@ -18,10 +18,10 @@ audit:
 
 ::: {.problem}
 How many roots, counted with multiplicity, does
-\[
+$$
 g(z)=6z^3+e^z+1
-\]
-have in the unit disk \(|z|<1\)?
+$$
+have in the unit disk $|z|<1$?
 :::
 
 ::: {.solution}

@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_0^\pi\frac{\cos4\theta}{1+\cos^2\theta}\,d\theta.
-\]
+$$
 :::
 
 ::: {.solution}

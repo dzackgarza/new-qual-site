@@ -38,44 +38,44 @@ Use this to show:
 
 ::: {.solution}
 Consider the two short exact sequences
-\[
+$$
 0\to{}_pA\to A\xrightarrow{p}pA\to0,
 \qquad
 0\to pA\to A\to A_p\to0.
-\]
+$$
 Since ${}_pA$ and $A_p$ are killed by $p$, every homomorphism from either group to the torsionfree group $\ZZ$ is zero.
 
 Applying $\operatorname{Hom}(-,\ZZ)$ and $\operatorname{Ext}(-,\ZZ)$ to the first sequence gives the tail
-\[
+$$
 0\to\operatorname{Ext}(pA,\ZZ)
 \to\operatorname{Ext}(A,\ZZ)
 \to\operatorname{Ext}({}_pA,\ZZ)\to0.
-\]
+$$
 Applying them to the second gives
-\[
+$$
 0\to\operatorname{Hom}(A,\ZZ)\to\operatorname{Hom}(pA,\ZZ)
 \to\operatorname{Ext}(A_p,\ZZ)
 \to\operatorname{Ext}(A,\ZZ)
 \to\operatorname{Ext}(pA,\ZZ)\to0.
-\]
+$$
 Splicing at $\operatorname{Ext}(pA,\ZZ)$ yields
-\[
+$$
 \operatorname{Hom}(pA,\ZZ)\to\operatorname{Ext}(A_p,\ZZ)\to
 \operatorname{Ext}(A,\ZZ)\to\operatorname{Ext}(A,\ZZ)\to
 \operatorname{Ext}({}_pA,\ZZ)\to0.
-\]
+$$
 The composite of the two middle maps is induced contravariantly by
-\[
+$$
 A\xrightarrow{p}pA\hookrightarrow A,
-\]
+$$
 which is multiplication by $p$ on $A$. By functoriality of Ext, the composite is therefore multiplication by $p$ on $\operatorname{Ext}(A,\ZZ)$. Hence the spliced sequence is precisely
-\[
+$$
 \boxed{
 \operatorname{Hom}(pA,\ZZ)\to\operatorname{Ext}(A_p,\ZZ)\to
 \operatorname{Ext}(A,\ZZ)\xrightarrow{p}
 \operatorname{Ext}(A,\ZZ)\to
 \operatorname{Ext}({}_pA,\ZZ)\to0.}
-\]
+$$
 
 ::: pf
 
@@ -110,20 +110,20 @@ Conversely, if $\operatorname{Hom}(A,\ZZ)=0$ and $\operatorname{Ext}(A,\ZZ)$ is 
 ::: pf-proof
 
 Precomposition with the surjection $A\xrightarrow p pA$ injects
-\[
+$$
 \operatorname{Hom}(pA,\ZZ)\hookrightarrow\operatorname{Hom}(A,\ZZ)=0,
-\]
+$$
 so $\operatorname{Hom}(pA,\ZZ)=0$. The spliced exact sequence therefore identifies
-\[
+$$
 \operatorname{Ext}(A_p,\ZZ)
-\]
+$$
 with the kernel of multiplication by $p$ on $\operatorname{Ext}(A,\ZZ)$. This kernel is zero by torsionfreeness.
 
 But $A_p$ is a vector space over $\ZZ_p$, and if it were nonzero it would admit a nonzero homomorphism to the subgroup $\ZZ_p\subset\QQ/\ZZ$. Using
-\[
+$$
 \operatorname{Ext}(A_p,\ZZ)
 \cong\operatorname{Hom}(A_p,\QQ/\ZZ)
-\]
+$$
 from Exercise 5 (since $\operatorname{Hom}(A_p,\QQ)=0$), this would contradict $\operatorname{Ext}(A_p,\ZZ)=0$. Hence $A_p=0$, i.e. $pA=A$, for every prime $p$. Therefore $A$ is divisible.
 
 :::

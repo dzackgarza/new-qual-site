@@ -52,15 +52,15 @@ The group $S_3$ is solvable.
 ::: pf-proof
 
 The chain
-\[
+$$
 S_3\trianglerighteq A_3\trianglerighteq\{e\}
-\]
+$$
 is a normal series. Its factors are
-\[
+$$
 S_3/A_3\cong\ZZ_2,
 \qquad
 A_3\cong\ZZ_3,
-\]
+$$
 which are abelian. Hence $S_3$ is solvable.
 
 :::
@@ -74,23 +74,23 @@ The group $S_4$ is solvable.
 ::: pf-proof
 
 Let
-\[
+$$
 V=\{e,(12)(34),(13)(24),(14)(23)\}.
-\]
+$$
 Conjugation in $S_4$ preserves cycle type, so it permutes the three nonidentity
 elements of $V$; hence $V\trianglelefteq S_4$. Also $V\le A_4$. Thus
-\[
+$$
 S_4\trianglerighteq A_4\trianglerighteq V\trianglerighteq\{e\}
-\]
+$$
 is a normal series, and its factors have orders $2$, $3$, and $4$ respectively.
 More precisely,
-\[
+$$
 S_4/A_4\cong\ZZ_2,
 \qquad
 A_4/V\cong\ZZ_3,
 \qquad
 V\cong\ZZ_2^2.
-\]
+$$
 All factors are abelian, so $S_4$ is solvable.
 
 :::
@@ -118,13 +118,13 @@ The center of $S_4$ is trivial.
 ::: pf-proof
 
 Let $\sigma\in Z(S_4)$. Since $\sigma$ commutes with every transposition,
-\[
+$$
 \sigma(ij)\sigma^{-1}=(ij)
-\]
+$$
 for every $i\ne j$. But conjugation relabels a transposition:
-\[
+$$
 \sigma(ij)\sigma^{-1}=(\sigma(i)\ \sigma(j)).
-\]
+$$
 Hence $\{\sigma(i),\sigma(j)\}=\{i,j\}$ for every pair $i\ne j$. Fixing $i$
 and choosing two distinct $j,k\ne i$ forces $\sigma(i)=i$. Thus every point is
 fixed and $\sigma=e$.

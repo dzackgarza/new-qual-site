@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Determine the number of zeros of
-\[
+$$
 e^{z^2}-4z^2
-\]
+$$
 in the open unit disk.
 :::
 

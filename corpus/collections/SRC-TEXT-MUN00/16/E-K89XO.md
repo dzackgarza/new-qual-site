@@ -30,16 +30,16 @@ Show that $\pi_1: X \times Y \to X$ and $\pi_2: X \times Y \to Y$ are open maps.
 
 ::: {.solution}
 Let $U\subseteq X\times Y$ be open. For every $(x,y)\in U$ there is a basic product $V_{x,y}\times W_{x,y}$ with
-\[
+$$
 (x,y)\in V_{x,y}\times W_{x,y}\subseteq U.
-\]
+$$
 Then
-\[
+$$
 \pi_1(U)=\bigcup_{(x,y)\in U}V_{x,y},
-\]
+$$
 which is open in $X$. Thus $\pi_1$ is open. The same argument, interchanging the factors, gives
-\[
+$$
 \pi_2(U)=\bigcup_{(x,y)\in U}W_{x,y},
-\]
+$$
 so $\pi_2$ is open as well.
 :::

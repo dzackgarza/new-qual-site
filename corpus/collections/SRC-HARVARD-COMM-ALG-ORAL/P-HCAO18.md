@@ -40,10 +40,10 @@ the nonzero holomorphic functions having only finitely many zeros.
 The ring $\mathcal O(\Omega)$ is not a UFD, while $\mathcal O_F(\Omega)$ is a
 UFD. In both rings, the prime elements are exactly the associates of the
 functions
-\[
+$$
 z\longmapsto z-a,
 \qquad a\in\Omega.
-\]
+$$
 
 ::: pf
 
@@ -62,14 +62,14 @@ For every $a\in\Omega$, the function $z-a$ is prime in both rings.
 
 ::: pf-proof
 Suppose
-\[
+$$
 (z-a)\mid fg.
-\]
+$$
 Then $(fg)(a)=0$, so $f(a)=0$ or $g(a)=0$. If $f(a)=0$, holomorphic division
 at a zero gives
-\[
+$$
 f(z)=(z-a)h(z)
-\]
+$$
 with $h$ holomorphic on $\Omega$, hence $(z-a)\mid f$; similarly if $g(a)=0$.
 
 If $f\in\mathcal O_F(\Omega)$, then $h$ has one fewer zero counted with
@@ -85,9 +85,9 @@ $a\in\Omega$.
 
 ::: pf-proof
 Let $f$ be a nonzero nonunit. By step [](#units-are-zero-free){.pf-ref} it has a zero $a\in\Omega$, so
-\[
+$$
 f=(z-a)h
-\]
+$$
 for some holomorphic $h$.
 
 If $f$ is irreducible, then one of the two factors is a unit. The factor
@@ -103,13 +103,13 @@ elements.
 
 ::: pf-proof
 Let the zeros of $f$ be
-\[
+$$
 a_1,\ldots,a_r
-\]
+$$
 with multiplicities $m_1,\ldots,m_r$. Repeated holomorphic division gives
-\[
+$$
 f(z)=u(z)\prod_{i=1}^r(z-a_i)^{m_i},
-\]
+$$
 where $u$ has no zeros. By step [](#units-are-zero-free){.pf-ref}, $u$ is a unit, and by step [](#z-minus-a-is-prime){.pf-ref} each $z-a_i$ is
 prime.
 :::

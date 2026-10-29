@@ -40,37 +40,37 @@ More than one right inverse?
 :::
 
 ::: {.solution}
-(a) Suppose \(g\circ f=i_A\). If \(f(a_1)=f(a_2)\), then
-\[
+(a) Suppose $g\circ f=i_A$. If $f(a_1)=f(a_2)$, then
+$$
 a_1=g(f(a_1))=g(f(a_2))=a_2,
-\]
-so \(f\) is injective. If \(f\circ h=i_B\), then every \(b\in B\) has the form \(b=f(h(b))\), so \(f\) is surjective.
+$$
+so $f$ is injective. If $f\circ h=i_B$, then every $b\in B$ has the form $b=f(h(b))$, so $f$ is surjective.
 
 (b) Let
-\[
+$$
 f:\{0\}\hookrightarrow\{0,1\}
-\]
-be inclusion. The map \(g:\{0,1\}\to\{0\}\) is a left inverse, but no right inverse exists because \(f\) is not surjective.
+$$
+be inclusion. The map $g:\{0,1\}\to\{0\}$ is a left inverse, but no right inverse exists because $f$ is not surjective.
 
 (c) Let
-\[
+$$
 f:\{0,1\}\to\{0\}
-\]
-be the constant map. Choosing \(h(0)=0\) gives a right inverse, but no left inverse exists because \(f\) is not injective.
+$$
+be the constant map. Choosing $h(0)=0$ gives a right inverse, but no left inverse exists because $f$ is not injective.
 
 (d) Yes in both cases. For the inclusion
-\[
+$$
 f:\{0,1\}\hookrightarrow\{0,1,2\},
-\]
-a left inverse must fix \(0,1\) but may send \(2\) to either \(0\) or \(1\), giving two left inverses. For the constant surjection
-\[
+$$
+a left inverse must fix $0,1$ but may send $2$ to either $0$ or $1$, giving two left inverses. For the constant surjection
+$$
 f:\{0,1\}\to\{0\},
-\]
-either choice \(h(0)=0\) or \(h(0)=1\) is a right inverse.
+$$
+either choice $h(0)=0$ or $h(0)=1$ is a right inverse.
 
-(e) Suppose \(g\circ f=i_A\) and \(f\circ h=i_B\). Part (a) shows that \(f\) is both injective and surjective, hence bijective. Moreover,
-\[
+(e) Suppose $g\circ f=i_A$ and $f\circ h=i_B$. Part (a) shows that $f$ is both injective and surjective, hence bijective. Moreover,
+$$
 g=g\circ i_B=g\circ(f\circ h)=(g\circ f)\circ h=i_A\circ h=h.
-\]
-Thus the common map \(g=h\) is the unique inverse \(f^{-1}\).
+$$
+Thus the common map $g=h$ is the unique inverse $f^{-1}$.
 :::

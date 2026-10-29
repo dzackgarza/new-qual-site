@@ -29,9 +29,9 @@ Check if it should be dropped with 5% significance level.
 ::: {.solution}
 
 Assume the eight field yields are an independent sample from a normal population and test the single suspected high observation $35.9$ using Grubbs' statistic
-\[
+$$
 G=\frac{|x_{\mathrm{sus}}-\bar x|}{s},
-\]
+$$
 where $s$ is the sample standard deviation.
 
 ::: pf
@@ -39,17 +39,17 @@ where $s$ is the sample standard deviation.
 ::: {.pf-step #s1-1}
 
 The sample mean is
-\[
+$$
 \bar x=28.925.
-\]
+$$
 
 
 ::: pf-proof
 
 The eight observations sum to $231.4$, so
-\[
+$$
 \bar x=\frac{231.4}{8}=28.925.
-\]
+$$
 
 :::
 
@@ -58,10 +58,10 @@ The eight observations sum to $231.4$, so
 ::: {.pf-step #s1-2}
 
 The sample standard deviation is
-\[
+$$
 s=\sqrt{\frac1{7}\sum_{i=1}^8(x_i-\bar x)^2}
 \approx3.7465.
-\]
+$$
 
 
 ::: pf-proof
@@ -75,11 +75,11 @@ Using the mean from step [](#s1-1){.pf-ref}, the sum of squared deviations is ap
 ::: pf-step
 
 For the suspected observation $35.9$,
-\[
+$$
 G_{\mathrm{obs}}
 =\frac{35.9-28.925}{3.7465}
 \approx1.862.
-\]
+$$
 
 
 ::: pf-proof
@@ -93,19 +93,19 @@ The suspected value is the sample maximum, so its absolute deviation from the me
 ::: pf-step
 
 At significance level $0.05$ with $n=8$, the two-sided Grubbs critical value is
-\[
+$$
 G_{0.05,8}\approx2.1266.
-\]
+$$
 
 
 ::: pf-proof
 
 For a single suspected outlier under normal sampling, the two-sided Grubbs critical value is
-\[
+$$
 G_{\alpha,n}
 =\frac{n-1}{\sqrt n}
 \sqrt{\frac{t^2}{n-2+t^2}},
-\]
+$$
 where $t$ is the upper $\alpha/(2n)$ quantile of Student's $t$ distribution with $n-2$ degrees of freedom. Substitution of $n=8$ and $\alpha=0.05$ gives $G_{0.05,8}\approx2.1266$.
 
 :::
@@ -115,9 +115,9 @@ where $t$ is the upper $\alpha/(2n)$ quantile of Student's $t$ distribution with
 ::: {.pf-step #s1-5}
 
 Since
-\[
+$$
 G_{\mathrm{obs}}\approx1.862<2.1266\approx G_{0.05,8},
-\]
+$$
 the observation $35.9$ is not rejected as an outlier at the 5% significance level.
 
 
@@ -132,9 +132,9 @@ Grubbs' test rejects the suspected observation exactly when the observed statist
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{\text{the third-field observation should not be dropped at the 5% level}.}
-\]
+$$
 
 
 ::: pf-proof

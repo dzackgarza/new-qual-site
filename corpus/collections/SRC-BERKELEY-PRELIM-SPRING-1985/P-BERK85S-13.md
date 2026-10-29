@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 Let $a\in\CC$ and let $n\ge2$ be an integer. Prove that
-\[
+$$
 1+z+az^n=0
-\]
+$$
 has at least one root in the closed disk
-\[
+$$
 |z|\le2.
-\]
+$$
 :::
 
 ::: {.solution}

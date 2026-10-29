@@ -43,29 +43,29 @@ Expand both sums in the two orthonormal bases.
 ::: pf-proof
 
 For each fixed $j$, Parseval's identity in $K$ gives
-\[
+$$
 \|Tu_j\|_K^2
 =\sum_{k=1}^\infty |\langle Tu_j,v_k\rangle_K|^2.
-\]
+$$
 Hence, by Tonelli's theorem for the nonnegative double series,
-\[
+$$
 \sum_{j=1}^\infty\|Tu_j\|_K^2
 =\sum_{j=1}^\infty\sum_{k=1}^\infty
 |\langle Tu_j,v_k\rangle|^2
 =\sum_{k=1}^\infty\sum_{j=1}^\infty
 |\langle u_j,T^*v_k\rangle|^2.
-\]
+$$
 Applying Parseval in $H$ to each $T^*v_k$ yields
-\[
+$$
 \sum_{j=1}^\infty |\langle u_j,T^*v_k\rangle|^2
 =\|T^*v_k\|_H^2.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{
 \sum_{j=1}^\infty\|Tu_j\|_K^2
 =\sum_{k=1}^\infty\|T^*v_k\|_H^2,}
-\]
+$$
 with equality in $[0,\infty]$.
 
 :::
@@ -79,15 +79,15 @@ Bound $T$ on finite linear combinations of the basis vectors.
 ::: pf-proof
 
 Let
-\[
+$$
 x=\sum_{j=1}^N a_j u_j.
-\]
+$$
 Then
-\[
+$$
 Tx=\sum_{j=1}^N a_jTu_j,
-\]
+$$
 so by the triangle inequality and Cauchy--Schwarz,
-\[
+$$
 \begin{aligned}
 \|Tx\|_K
 &\le\sum_{j=1}^N|a_j|\,\|Tu_j\|_K\\
@@ -97,7 +97,7 @@ so by the triangle inequality and Cauchy--Schwarz,
 &\le \|x\|_H
 \left(\sum_{j=1}^\infty\|Tu_j\|_K^2\right)^{1/2}.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -110,21 +110,21 @@ Pass to all of $H$.
 ::: pf-proof
 
 If
-\[
+$$
 \sum_{j=1}^\infty\|Tu_j\|_K^2=\infty,
-\]
+$$
 the desired inequality is trivial. Otherwise Step 2 gives a uniform bound on the dense subspace of finite linear combinations of the $u_j$. By continuity of $T$, the same bound holds for every $x\in H$:
-\[
+$$
 \|Tx\|_K
 \le \|x\|_H
 \left(\sum_{j=1}^\infty\|Tu_j\|_K^2\right)^{1/2}.
-\]
+$$
 Taking the supremum over $\|x\|_H=1$ and squaring gives
-\[
+$$
 \boxed{
 \|T\|_{op}^2
 \le\sum_{j=1}^\infty\|Tu_j\|_K^2.}
-\]
+$$
 
 :::
 

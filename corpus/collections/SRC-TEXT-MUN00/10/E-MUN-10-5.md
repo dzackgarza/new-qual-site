@@ -29,13 +29,13 @@ Show the well-ordering theorem implies the choice axiom.
 :::
 
 ::: {.solution}
-Let \(\mathcal A\) be a collection of nonempty sets. Put
-\[
+Let $\mathcal A$ be a collection of nonempty sets. Put
+$$
 U=\bigcup_{A\in\mathcal A}A.
-\]
-By the well-ordering theorem, choose a well-order \(<\) on \(U\). For each \(A\in\mathcal A\), the subset \(A\) is nonempty, so it has a unique \(<\)-smallest element. Define
-\[
+$$
+By the well-ordering theorem, choose a well-order $<$ on $U$. For each $A\in\mathcal A$, the subset $A$ is nonempty, so it has a unique $<$-smallest element. Define
+$$
 c(A)=\min_{<}A.
-\]
-Then \(c(A)\in A\) for every \(A\in\mathcal A\). Thus \(c\) is a choice function on \(\mathcal A\), proving the axiom of choice.
+$$
+Then $c(A)\in A$ for every $A\in\mathcal A$. Thus $c$ is a choice function on $\mathcal A$, proving the axiom of choice.
 :::

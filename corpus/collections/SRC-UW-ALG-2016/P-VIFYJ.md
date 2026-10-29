@@ -38,9 +38,9 @@ Proof that $A$ is an integral domain:
 ::: pf-step
 The defining relation is $f(x, y) = y^2 - (x-1)^3 - (x-1)^2 = y^2 - x(x-1)^2$.
 View $f(x, y)$ as a monic polynomial of degree 2 in $y$ over the UFD $R = \CC[x]$:
-\[
+$$
 f(x, y) = y^2 - x(x-1)^2 \in R[y].
-\]
+$$
 
 :::
 
@@ -95,17 +95,17 @@ Integral closure of $A$:
 Let $K = \operatorname{Frac}(A)$ be the fraction field of $A$.
 Define $t = \frac{y}{x-1} \in K$.
 Then:
-\[
+$$
 t^2 = \frac{y^2}{(x-1)^2} = \frac{x(x-1)^2}{(x-1)^2} = x \implies x = t^2.
-\]
+$$
 
 :::
 
 ::: pf-step
 Express $y$ in terms of $t$:
-\[
+$$
 y = t(x - 1) = t(t^2 - 1) = t^3 - t.
-\]
+$$
 Thus $A = \CC[x, y] = \CC[t^2, t^3 - t] \subseteq \CC[t] \subset K$.
 
 :::

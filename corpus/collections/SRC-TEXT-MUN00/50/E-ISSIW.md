@@ -29,17 +29,17 @@ Show that $\RR \times \RR$ in the dictionary order topology is locally 1-euclide
 :::
 
 ::: {.solution}
-Let \(X=\RR\times\RR\) with the dictionary order. For \((a,b)\in X\), the order interval
-\[
+Let $X=\RR\times\RR$ with the dictionary order. For $(a,b)\in X$, the order interval
+$$
 ((a,b-1),(a,b+1))
-\]
-is exactly \(\{a\}\times(b-1,b+1)\), and projection onto the second coordinate is an order-preserving homeomorphism with \((b-1,b+1)\). Thus \(X\) is locally \(1\)-euclidean.
+$$
+is exactly $\{a\}\times(b-1,b+1)$, and projection onto the second coordinate is an order-preserving homeomorphism with $(b-1,b+1)$. Thus $X$ is locally $1$-euclidean.
 
 The dictionary-order plane is metrizable by [[E-KY2W7]], so it satisfies condition (iii) of [[E-OYPV7]].
 
 It does not satisfy condition (ii). Indeed the sets
-\[
+$$
 U_a=\{a\}\times(0,1)\qquad(a\in\RR)
-\]
-form an uncountable family of pairwise disjoint nonempty open subsets. A second-countable space cannot have such a family: each member would contain a distinct element of a fixed countable basis. Hence \(X\) is not second-countable, so it is not a \(1\)-manifold. Thus it satisfies (iii) but not (ii).
+$$
+form an uncountable family of pairwise disjoint nonempty open subsets. A second-countable space cannot have such a family: each member would contain a distinct element of a fixed countable basis. Hence $X$ is not second-countable, so it is not a $1$-manifold. Thus it satisfies (iii) but not (ii).
 :::

@@ -14,10 +14,10 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_0^{2\pi}
 \frac{\cos^2(3\theta)}{5-4\cos(2\theta)}\,d\theta.
-\]
+$$
 :::
 
 ::: {.solution}

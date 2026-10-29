@@ -28,27 +28,27 @@ Prove that $f+g$ is measurable.
 
 ::: {.solution}
 The map
-\[
+$$
 F:X\to\RR^2,
 \qquad
 F(x)=(f(x),g(x)),
-\]
+$$
 is measurable with respect to the product Borel sigma-algebra: for every Borel rectangle $A\times B$,
-\[
+$$
 F^{-1}(A\times B)=f^{-1}(A)\cap g^{-1}(B)\in\mathcal B,
-\]
+$$
 and such rectangles generate $\mathcal B(\RR^2)$.
 
 The addition map
-\[
+$$
 S:\RR^2\to\RR,
 \qquad
 S(u,v)=u+v,
-\]
+$$
 is continuous, hence Borel measurable.
 Therefore
-\[
+$$
 f+g=S\circ F
-\]
+$$
 is measurable.
 :::

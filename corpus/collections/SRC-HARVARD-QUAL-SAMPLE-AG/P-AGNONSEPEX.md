@@ -28,15 +28,15 @@ Give an example of a non-separated morphism.
 
 ::: {.solution}
 Let $k$ be a field.  Take two copies
-\[
+$$
 U_1=\operatorname{Spec}k[t],
 \qquad
 U_2=\operatorname{Spec}k[t],
-\]
+$$
 and glue them along the common open subset
-\[
+$$
 D(t)=\operatorname{Spec}k[t,t^{-1}]
-\]
+$$
 by the identity.  Denote the resulting scheme by $X$.
 
 ::: pf
@@ -46,11 +46,11 @@ The scheme $X$ is the affine line with doubled origin.
 
 ::: pf-proof
 Away from $t=0$, the two copies are identified, so every nonzero point occurs once.  The origins
-\[
+$$
 0_1\in U_1,
 \qquad
 0_2\in U_2
-\]
+$$
 are not in the gluing locus and remain distinct.  Thus the underlying scheme has one copy of every nonzero point and two origins.
 :::
 
@@ -58,50 +58,50 @@ are not in the gluing locus and remain distinct.  Thus the underlying scheme has
 
 ::: {.pf-step #not-separated}
 The structure morphism
-\[
+$$
 \boxed{X\longrightarrow\operatorname{Spec}k}
-\]
+$$
 is not separated.
 
 ::: pf-proof
 Consider the diagonal
-\[
+$$
 \Delta:X\longrightarrow X\times_kX.
-\]
+$$
 If $X$ were separated, its image would be closed.
 
 Look at the affine open
-\[
+$$
 U_1\times_kU_2
 \cong
 \operatorname{Spec}k[x,y]
 \subseteq X\times_kX.
-\]
+$$
 The intersection of the diagonal image with this open consists of the pairs
-\[
+$$
 (a,a)
-\]
+$$
 with $a\ne0$, because the two charts represent the same point of $X$ precisely on the gluing locus $\Gm$.  Hence
-\[
+$$
 \Delta(X)\cap(U_1\times U_2)
 =V(x-y)\cap D(x)
-\]
+$$
 inside $\AA^2$.
 
 Its closure in $U_1\times U_2$ is the whole line
-\[
+$$
 V(x-y),
-\]
+$$
 which contains the point
-\[
+$$
 (0_1,0_2).
-\]
+$$
 But $0_1\ne0_2$ in $X$, so this point is not on the diagonal.  Therefore the diagonal is not closed in $X\times_kX$.
 
 Thus
-\[
+$$
 X\to\operatorname{Spec}k
-\]
+$$
 is not separated.
 :::
 

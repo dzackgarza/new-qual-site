@@ -24,9 +24,9 @@ audit:
 
 ::: {.problem}
 Let $X$ be a metric space and let $(x_n)$ converge to $x_0\in X$. Prove that
-\[
+$$
 C=\{x_0,x_1,x_2,\ldots\}
-\]
+$$
 is compact.
 :::
 

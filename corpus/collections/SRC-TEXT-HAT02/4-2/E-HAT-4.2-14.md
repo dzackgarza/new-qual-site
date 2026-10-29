@@ -29,26 +29,26 @@ If an $n$-dimensional CW complex $X$ contains a subcomplex $Y$ homotopy equivale
 :::
 
 ::: {.solution}
-Let \(i:Y\hookrightarrow X\), where \(X\) is \(n\)-dimensional and \(Y\simeq S^n\).
+Let $i:Y\hookrightarrow X$, where $X$ is $n$-dimensional and $Y\simeq S^n$.
 
-Assume first \(n\ge2\). Since \(X\) has no \((n+1)\)-cells, an \(n\)-cycle in the cellular chain complex cannot become a boundary after inclusion in \(X\). Thus the inclusion induces an injection
-\[
+Assume first $n\ge2$. Since $X$ has no $(n+1)$-cells, an $n$-cycle in the cellular chain complex cannot become a boundary after inclusion in $X$. Thus the inclusion induces an injection
+$$
 i_*:H_n(Y;\ZZ)\hookrightarrow H_n(X;\ZZ).
-\]
+$$
 The Hurewicz map
-\[
+$$
 \pi_n(Y)\xrightarrow{\cong}H_n(Y;\ZZ)
-\]
-is an isomorphism because \(Y\simeq S^n\). If \(\alpha\in\pi_n(Y)\) maps to zero in \(\pi_n(X)\), naturality of Hurewicz gives
-\[
+$$
+is an isomorphism because $Y\simeq S^n$. If $\alpha\in\pi_n(Y)$ maps to zero in $\pi_n(X)$, naturality of Hurewicz gives
+$$
 i_*h(\alpha)=h(i_*\alpha)=0.
-\]
-Injectivity on \(H_n\) implies \(h(\alpha)=0\), hence \(\alpha=0\). Therefore \(i_*:\pi_n(Y)\to\pi_n(X)\) is injective.
+$$
+Injectivity on $H_n$ implies $h(\alpha)=0$, hence $\alpha=0$. Therefore $i_*:\pi_n(Y)\to\pi_n(X)$ is injective.
 
-For \(n=1\), \(X\) is a graph, so \(\pi_1(X)\) is free and hence torsionfree. The generator of \(\pi_1(Y)\cong\ZZ\) has nonzero image in \(H_1(X)\) by the same cellular-chain argument, so its image in \(\pi_1(X)\) is nontrivial and therefore has infinite order. Thus \(\ZZ\to\pi_1(X)\) is injective.
+For $n=1$, $X$ is a graph, so $\pi_1(X)$ is free and hence torsionfree. The generator of $\pi_1(Y)\cong\ZZ$ has nonzero image in $H_1(X)$ by the same cellular-chain argument, so its image in $\pi_1(X)$ is nontrivial and therefore has infinite order. Thus $\ZZ\to\pi_1(X)$ is injective.
 
 Hence in all cases
-\[
+$$
 \boxed{\pi_n(Y)\hookrightarrow\pi_n(X).}
-\]
+$$
 :::

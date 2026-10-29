@@ -31,32 +31,32 @@ For $X$ a finite CW complex and $F$ a field, show that the Euler characteristic 
 
 ::: {.solution}
 Let $C_*^{CW}(X;F)$ be the cellular chain complex over the field $F$. Since $X$ is finite, every chain group is finite-dimensional and
-\[
+$$
 \dim_F C_n^{CW}(X;F)=c_n,
-\]
+$$
 the number of $n$-cells of $X$.
 
 Write
-\[
+$$
 Z_n=\ker d_n,
 \qquad
 B_n=\operatorname{im}d_{n+1}.
-\]
+$$
 There are short exact sequences
-\[
+$$
 0\to Z_n\to C_n\to B_{n-1}\to0
-\]
+$$
 and
-\[
+$$
 0\to B_n\to Z_n\to H_n(X;F)\to0.
-\]
+$$
 Taking dimensions gives
-\[
+$$
 \dim C_n
 =\dim B_n+\dim H_n(X;F)+\dim B_{n-1}.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 \chi(X)
 &=\sum_n(-1)^n\dim C_n\\
@@ -64,10 +64,10 @@ Therefore
  +\sum_n(-1)^n\dim B_n
  +\sum_n(-1)^n\dim B_{n-1}.
 \end{aligned}
-\]
+$$
 The two boundary sums cancel after shifting the index, leaving
-\[
+$$
 \boxed{
 \chi(X)=\sum_n(-1)^n\dim_F H_n(X;F).}
-\]
+$$
 :::

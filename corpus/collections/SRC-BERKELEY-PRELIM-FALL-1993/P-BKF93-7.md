@@ -24,15 +24,15 @@ audit:
 
 ::: {.problem}
 Identify $M_n(\RR)$ with $\RR^{n^2}$ and let
-\[
+$$
 F:M_n(\RR)\to\RR,
 \qquad
 F(X)=\det X.
-\]
+$$
 For $n\ge2$, find all critical points of $F$, i.e. all matrices $X$ such that
-\[
+$$
 DF(X)=0.
-\]
+$$
 :::
 
 ::: {.solution}

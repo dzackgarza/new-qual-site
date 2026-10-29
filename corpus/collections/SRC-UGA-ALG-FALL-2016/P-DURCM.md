@@ -34,26 +34,26 @@ Show that $N \cong \im f \oplus \ker g$.
 
 - Claim: $\im f + \ker g \subseteq N$, and this is in fact an equality.
   - For $n\in N$, write
-  \[
+  $$
   n = n + (f\circ g)(n) - (f\circ g)(n) = \qty{n - (f\circ g)(n) } + (f\circ g)(n)
-  .\]
+  .$$
   - The first term is in $\ker g$:
-  \[
+  $$
   g \qty{ n - (f\circ g)(n) }
   &= g(n) - (g\circ f \circ g)(n)\\
   &= g(n) - (\id_N \circ g)(n)\\
   &= g(n) - g(n) \\
   &= 0
-  .\]
+  .$$
   - The second term is in $\im f$: it is $(f\circ g)(n) = f(g(n))$, which is the image under $f$ of the element $g(n) \in M$.
 - Claim: the sum is direct.
   - Suppose $n\in \ker(g) \intersect \im(f)$, so $g(n) = 0$ and $n=f(m)$ for some $m\in M$.
   Then
-  \[
+  $$
   0 = g(n) = g(f(m)) = (g\circ f)(m)
   = \id_M(m) = m
-  ,\]
-  so $m=0$ and since $f$ is a morphism in \(R\dash\)modules, $n\definedas f(m) = 0$.
+  ,$$
+  so $m=0$ and since $f$ is a morphism in $R\dash$modules, $n\definedas f(m) = 0$.
 :::
 
 

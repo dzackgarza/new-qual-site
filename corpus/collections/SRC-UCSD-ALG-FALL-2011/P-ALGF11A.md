@@ -34,97 +34,97 @@ Show that if $G$ has a subgroup $H$ of order $12$ then $G \cong A_5$.
 
 
 ::: {.solution}
-Let \(G\) act by left multiplication on the set of left cosets \(G/H\).
+Let $G$ act by left multiplication on the set of left cosets $G/H$.
 Since
-\[
+$$
 [G:H]=\frac{60}{12}=5,
-\]
+$$
 this action gives a homomorphism
-\[
+$$
 \rho:G\longrightarrow S_5.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #rho-nontrivial}
-The homomorphism \(\rho\) is nontrivial.
+The homomorphism $\rho$ is nontrivial.
 
 ::: pf-proof
-If \(\rho\) were trivial, every \(g\in G\) would fix the coset \(H\).
+If $\rho$ were trivial, every $g\in G$ would fix the coset $H$.
 Thus
-\[
+$$
 gH=H
-\]
-for every \(g\in G\), which implies \(g\in H\) for every \(g\).
-Hence \(G=H\), contradicting \(|G|=60\) and \(|H|=12\).
-Therefore \(\rho\) is nontrivial.
+$$
+for every $g\in G$, which implies $g\in H$ for every $g$.
+Hence $G=H$, contradicting $|G|=60$ and $|H|=12$.
+Therefore $\rho$ is nontrivial.
 :::
 
 :::
 
 ::: {.pf-step #rho-injective}
-The homomorphism \(\rho\) is injective.
+The homomorphism $\rho$ is injective.
 
 ::: pf-proof
 The kernel
-\[
+$$
 \ker\rho
-\]
-is a normal subgroup of the simple group \(G\).
+$$
+is a normal subgroup of the simple group $G$.
 Hence
-\[
+$$
 \ker\rho\in\{1,G\}.
-\]
-By step [](#rho-nontrivial){.pf-ref}, \(\rho\) is nontrivial, so \(\ker\rho\neq G\).
+$$
+By step [](#rho-nontrivial){.pf-ref}, $\rho$ is nontrivial, so $\ker\rho\neq G$.
 Therefore
-\[
+$$
 \ker\rho=1,
-\]
-and \(\rho\) is injective.
+$$
+and $\rho$ is injective.
 :::
 
 :::
 
 ::: {.pf-step #image-in-a5}
-The image \(\rho(G)\) is contained in \(A_5\).
+The image $\rho(G)$ is contained in $A_5$.
 
 ::: pf-proof
 Consider the sign homomorphism restricted to the image:
-\[
+$$
 \operatorname{sgn}|_{\rho(G)}:\rho(G)\longrightarrow\{\pm1\}.
-\]
-Because \(\rho:G\to\rho(G)\) is an isomorphism by step [](#rho-injective){.pf-ref}, the group \(\rho(G)\) is simple.
-If the restricted sign map were nontrivial, its kernel would be a normal subgroup of index \(2\) in \(\rho(G)\), hence a nontrivial proper normal subgroup.
+$$
+Because $\rho:G\to\rho(G)$ is an isomorphism by step [](#rho-injective){.pf-ref}, the group $\rho(G)$ is simple.
+If the restricted sign map were nontrivial, its kernel would be a normal subgroup of index $2$ in $\rho(G)$, hence a nontrivial proper normal subgroup.
 This contradicts simplicity.
-Thus the restricted sign map is trivial, so every element of \(\rho(G)\) is even and
-\[
+Thus the restricted sign map is trivial, so every element of $\rho(G)$ is even and
+$$
 \rho(G)\subseteq A_5.
-\]
+$$
 :::
 
 :::
 
 ::: pf-step
-Hence \(G\cong A_5\).
+Hence $G\cong A_5$.
 
 ::: pf-proof
 By injectivity,
-\[
+$$
 |\rho(G)|=|G|=60.
-\]
+$$
 Also
-\[
+$$
 |A_5|=\frac{5!}{2}=60.
-\]
-By step [](#image-in-a5){.pf-ref}, \(\rho(G)\subseteq A_5\), and the two finite groups have the same order.
+$$
+By step [](#image-in-a5){.pf-ref}, $\rho(G)\subseteq A_5$, and the two finite groups have the same order.
 Therefore
-\[
+$$
 \rho(G)=A_5.
-\]
-Since \(\rho\) is injective,
-\[
+$$
+Since $\rho$ is injective,
+$$
 G\cong A_5.
-\]
+$$
 :::
 
 :::

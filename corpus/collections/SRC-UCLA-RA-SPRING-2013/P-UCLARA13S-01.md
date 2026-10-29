@@ -18,50 +18,50 @@ audit:
 
 ::: {.problem}
 Suppose $f:\RR\to\RR$ is bounded and Lebesgue measurable, and
-\[
+$$
 \lim_{h\to0^+}\frac1h\int_0^1 |f(x+h)-f(x)|\,dx=0.
-\]
+$$
 Show that $f$ is almost everywhere constant on $[0,1]$.
 :::
 
 ::: {.solution}
 
 Define
-\[
+$$
 F(x)
 \coloneqq
 \int_0^x f(t)\,dt.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 There is a measurable set $E\subset[0,1]$ of full measure such that for every $x\in E$,
-\[
+$$
 \lim_{h\to0^+}
 \frac{F(x+h)-F(x)}{h}
 =
 f(x).
-\]
+$$
 
 
 ::: pf-proof
 
 Because $f$ is bounded, it belongs to $L^1_{\mathrm{loc}}(\RR)$. The Lebesgue differentiation theorem therefore gives
-\[
+$$
 \lim_{h\to0^+}
 \frac1h
 \int_x^{x+h}f(t)\,dt
 =
 f(x)
-\]
+$$
 for almost every $x$. Since
-\[
+$$
 F(x+h)-F(x)
 =
 \int_x^{x+h}f(t)\,dt,
-\]
+$$
 the displayed limit follows on a full-measure subset $E$ of $[0,1]$.
 
 :::
@@ -71,15 +71,15 @@ the displayed limit follows on a full-measure subset $E$ of $[0,1]$.
 ::: {.pf-step #s1-2}
 
 If $a,b\in E$ with $a<b$, then
-\[
+$$
 f(a)=f(b).
-\]
+$$
 
 
 ::: pf-proof
 
 For $0<h<b-a$, one has
-\[
+$$
 \begin{aligned}
 &\bigl(F(a+h)-F(a)\bigr)
 -
@@ -96,9 +96,9 @@ For $0<h<b-a$, one has
 \int_a^b
 \bigl(f(t)-f(t+h)\bigr)\,dt.
 \end{aligned}
-\]
+$$
 Hence
-\[
+$$
 \begin{aligned}
 &\left|
 \frac{F(a+h)-F(a)}{h}
@@ -114,11 +114,11 @@ Hence
 \int_0^1
 |f(t+h)-f(t)|\,dt.
 \end{aligned}
-\]
+$$
 The last quantity tends to $0$ by hypothesis. By step [](#s1-1){.pf-ref}, the left-hand side tends to
-\[
+$$
 |f(a)-f(b)|.
-\]
+$$
 Therefore $f(a)=f(b)$.
 
 :::
@@ -128,22 +128,22 @@ Therefore $f(a)=f(b)$.
 ::: {.pf-step #s1-3}
 
 There is a constant $c\in\RR$ such that
-\[
+$$
 f(x)=c
-\]
+$$
 for almost every $x\in[0,1]$.
 
 
 ::: pf-proof
 
 The set $E$ from step [](#s1-1){.pf-ref} has full measure and is therefore nonempty. Fix $a_0\in E$ and set
-\[
+$$
 c=f(a_0).
-\]
+$$
 For any $x\in E$, step [](#s1-2){.pf-ref} applied to the ordered pair $a_0,x$ gives
-\[
+$$
 f(x)=c.
-\]
+$$
 Thus $f=c$ on the full-measure set $E$.
 
 :::

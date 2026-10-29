@@ -38,13 +38,13 @@ Choose a minimizing sequence.
 ::: pf-proof
 
 Let $C$ be a nonempty closed convex subset of a Hilbert space $H$, and set
-\[
+$$
 d:=\inf_{x\in C}\|x\|.
-\]
+$$
 Choose $x_n\in C$ so that
-\[
+$$
 \|x_n\|^2\longrightarrow d^2.
-\]
+$$
 
 :::
 
@@ -57,29 +57,29 @@ Prove that the minimizing sequence is Cauchy.
 ::: pf-proof
 
 By convexity,
-\[
+$$
 \frac{x_n+x_m}{2}\in C,
-\]
+$$
 so
-\[
+$$
 \left\|\frac{x_n+x_m}{2}\right\|\ge d.
-\]
+$$
 The parallelogram identity gives
-\[
+$$
 \|x_n-x_m\|^2
 =2\|x_n\|^2+2\|x_m\|^2-\|x_n+x_m\|^2.
-\]
+$$
 Since
-\[
+$$
 \|x_n+x_m\|^2
 =4\left\|\frac{x_n+x_m}{2}\right\|^2
 \ge4d^2,
-\]
+$$
 we obtain
-\[
+$$
 \|x_n-x_m\|^2
 \le2\|x_n\|^2+2\|x_m\|^2-4d^2.
-\]
+$$
 The right-hand side tends to $0$ as $m,n\to\infty$. Thus $(x_n)$ is Cauchy.
 
 :::
@@ -93,9 +93,9 @@ Obtain a minimum-norm point.
 ::: pf-proof
 
 Since $H$ is complete, $x_n\to x$ for some $x\in H$. Since $C$ is closed, $x\in C$. Continuity of the norm gives
-\[
+$$
 \|x\|=\lim_n\|x_n\|=d.
-\]
+$$
 Thus $x$ has minimum norm in $C$.
 
 :::
@@ -109,17 +109,17 @@ Prove uniqueness.
 ::: pf-proof
 
 Suppose $x,y\in C$ both satisfy
-\[
+$$
 \|x\|=\|y\|=d.
-\]
+$$
 Again $(x+y)/2\in C$, so its norm is at least $d$. The parallelogram identity yields
-\[
+$$
 \begin{aligned}
 \|x-y\|^2
 &=2\|x\|^2+2\|y\|^2-\|x+y\|^2\\
 &\le4d^2-4d^2=0.
 \end{aligned}
-\]
+$$
 Hence $x=y$. Therefore every nonempty closed convex subset of a Hilbert space has a unique element of minimum norm.
 
 :::

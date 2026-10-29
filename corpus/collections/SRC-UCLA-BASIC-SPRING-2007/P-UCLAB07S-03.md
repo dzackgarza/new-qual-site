@@ -19,32 +19,32 @@ audit:
 ::: {.problem}
 Let $\mathcal S$ be the vector space of real sequences $(a_0,a_1,a_2,\ldots)$.
 For fixed $A,B\in\RR$, prove that the set of sequences satisfying
-\[
+$$
 x_{n+2}=Ax_{n+1}+Bx_n\qquad(n\ge0)
-\]
+$$
 is a two-dimensional linear subspace of $\mathcal S$.
 :::
 
 ::: {.solution}
 
 Let
-\[
+$$
 W
 \subseteq
 \mathcal S
-\]
+$$
 be the set of sequences satisfying the recurrence
-\[
+$$
 x_{n+2}
 =
 Ax_{n+1}
 +
 Bx_n
-\]
+$$
 for every
-\[
+$$
 n\ge0.
-\]
+$$
 
 ::: pf
 
@@ -56,18 +56,18 @@ The zero sequence belongs to $W$.
 ::: pf-proof
 
 For the zero sequence,
-\[
+$$
 x_n=0
-\]
+$$
 for every $n$, and hence
-\[
+$$
 x_{n+2}
 =0
 =
 A\cdot0+B\cdot0
 =
 Ax_{n+1}+Bx_n.
-\]
+$$
 
 :::
 
@@ -81,26 +81,26 @@ The set $W$ is closed under addition.
 ::: pf-proof
 
 Let
-\[
+$$
 x=(x_n)
 \quad\text{and}\quad
 y=(y_n)
-\]
+$$
 belong to $W$.
 Then for every $n$,
-\[
+$$
 x_{n+2}
 =
 Ax_{n+1}+Bx_n
-\]
+$$
 and
-\[
+$$
 y_{n+2}
 =
 Ay_{n+1}+By_n.
-\]
+$$
 Adding gives
-\[
+$$
 \begin{aligned}
 (x+y)_{n+2}
 &=
@@ -114,11 +114,11 @@ A(x+y)_{n+1}
 +
 B(x+y)_n.
 \end{aligned}
-\]
+$$
 Thus
-\[
+$$
 x+y\in W.
-\]
+$$
 
 :::
 
@@ -132,15 +132,15 @@ The set $W$ is closed under scalar multiplication.
 ::: pf-proof
 
 Let
-\[
+$$
 x=(x_n)\in W
-\]
+$$
 and
-\[
+$$
 c\in\RR.
-\]
+$$
 Then
-\[
+$$
 \begin{aligned}
 (cx)_{n+2}
 &=
@@ -156,11 +156,11 @@ A(cx)_{n+1}
 +
 B(cx)_n.
 \end{aligned}
-\]
+$$
 Hence
-\[
+$$
 cx\in W.
-\]
+$$
 
 :::
 
@@ -182,28 +182,28 @@ Steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref} verify that $W$ contains zer
 ::: {.pf-step #s1-5}
 
 Define
-\[
+$$
 \Phi:W\to\RR^2
-\]
+$$
 by
-\[
+$$
 \Phi(x)
 =
 (x_0,x_1).
-\]
+$$
 Then $\Phi$ is linear.
 
 
 ::: pf-proof
 
 Taking the first two coordinates is linear:
-\[
+$$
 \Phi(cx+dy)
 =
 (cx_0+dy_0,cx_1+dy_1)
 =
 c\Phi(x)+d\Phi(y).
-\]
+$$
 
 :::
 
@@ -217,24 +217,24 @@ The map $\Phi$ is injective.
 ::: pf-proof
 
 Suppose
-\[
+$$
 \Phi(x)=\Phi(y).
-\]
+$$
 Then
-\[
+$$
 x_0=y_0,
 \qquad
 x_1=y_1.
-\]
+$$
 The recurrence determines every later term from the preceding two.
 Indeed, if
-\[
+$$
 x_n=y_n
 \qquad\text{and}\qquad
 x_{n+1}=y_{n+1},
-\]
+$$
 then
-\[
+$$
 \begin{aligned}
 x_{n+2}
 &=
@@ -244,16 +244,16 @@ Ay_{n+1}+By_n\\
 &=
 y_{n+2}.
 \end{aligned}
-\]
+$$
 By induction,
-\[
+$$
 x_n=y_n
-\]
+$$
 for every $n$.
 Thus
-\[
+$$
 x=y.
-\]
+$$
 
 :::
 
@@ -267,33 +267,33 @@ The map $\Phi$ is surjective.
 ::: pf-proof
 
 Let
-\[
+$$
 (u,v)\in\RR^2.
-\]
+$$
 Define a sequence recursively by
-\[
+$$
 x_0=u,
 \qquad
 x_1=v,
-\]
+$$
 and
-\[
+$$
 x_{n+2}
 =
 Ax_{n+1}+Bx_n
-\]
+$$
 for
-\[
+$$
 n\ge0.
-\]
+$$
 This defines a real sequence
-\[
+$$
 x=(x_n)
-\]
+$$
 belonging to $W$ and satisfying
-\[
+$$
 \Phi(x)=(u,v).
-\]
+$$
 Hence every element of $\RR^2$ lies in the image.
 
 :::
@@ -303,9 +303,9 @@ Hence every element of $\RR^2$ lies in the image.
 ::: {.pf-step #s1-8}
 
 Therefore
-\[
+$$
 W\cong\RR^2.
-\]
+$$
 
 
 ::: pf-proof
@@ -320,22 +320,22 @@ Hence it is a vector-space isomorphism.
 ::: {.pf-step #s1-9}
 
 Consequently
-\[
+$$
 \boxed{\dim W=2}.
-\]
+$$
 
 
 ::: pf-proof
 
 Isomorphic finite-dimensional vector spaces have the same dimension.
 Since
-\[
+$$
 \dim\RR^2=2,
-\]
+$$
 step [](#s1-8){.pf-ref} gives
-\[
+$$
 \dim W=2.
-\]
+$$
 
 :::
 

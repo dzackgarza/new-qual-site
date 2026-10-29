@@ -45,9 +45,9 @@ for any $v, w \in V$ with $v \neq 0$, there exists $A \in R$ such that $vA = w$.
 ::: pf-step
 
 For any non-zero row vector $v \in V \setminus \{0\}$, define:
-\[
+$$
 I_v = \{A \in M_n(\QQ) : vA = 0\} = \operatorname{Ann}_R(v).
-\]
+$$
 
 ::: pf-proof
 

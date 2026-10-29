@@ -41,9 +41,9 @@ If $a$ is irreducible, then $(a)$ is maximal.
 ::: pf-proof
 
 Suppose
-\[
+$$
 (a)\subseteq I\subseteq R.
-\]
+$$
 Since $R$ is a PID, $I=(b)$ for some $b\in R$. The inclusion
 $(a)\subseteq(b)$ means that $a=bc$ for some $c\in R$.
 
@@ -63,20 +63,20 @@ If $(a)$ is maximal, then $a$ is irreducible.
 ::: pf-proof
 
 Suppose
-\[
+$$
 a=bc.
-\]
+$$
 Then
-\[
+$$
 (a)\subseteq(b)\subseteq R.
-\]
+$$
 Maximality of $(a)$ gives either $(b)=(a)$ or $(b)=R$.
 
 If $(b)=R$, then $b$ is a unit. If $(b)=(a)$, then $b=au$ for some $u\in R$;
 substituting into $a=bc$ gives
-\[
+$$
 a=auc.
-\]
+$$
 Since $R$ is a domain and $a\ne0$, cancellation yields $uc=1$, so $c$ is a
 unit. Therefore every factorization of $a$ has a unit factor, and $a$ is
 irreducible.

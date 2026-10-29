@@ -48,20 +48,20 @@ After filling all of them in, the function is bounded and entire; Liouville's
 theorem makes it constant.
 
 (d) **True.** Write the Laurent series
-\[
+$$
 f(z)=\sum_{k=-\infty}^{\infty}a_kz^k
-\]
+$$
 on $0<|z|<1$. Taking $\gamma$ to be a small positively oriented circle,
-\[
+$$
 \int_\gamma z^pf(z)\,dz=2\pi i\,a_{-p-1}.
-\]
+$$
 The hypothesis for every $p\ge0$ therefore kills every negative Laurent
 coefficient. Hence the singularity at $0$ is removable.
 
 (e) **False.** Given any $\epsilon>0$, choose
-\[
+$$
 p_N(z)=\frac\epsilon2 z^N.
-\]
+$$
 Then $|p_N(z)|<\epsilon$ on $\overline{\DD}$, while
 $|p_N(a)|=(\epsilon/2)|a|^N>1$ for all sufficiently large $N$.
 :::

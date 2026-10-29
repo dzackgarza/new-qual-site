@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be holomorphic on the unit disk \(\DD\), with \(f(0)=0\) and \(|f(z)|\le1\). Prove that for every integer \(m\ge1\),
-\[
+Let $f$ be holomorphic on the unit disk $\DD$, with $f(0)=0$ and $|f(z)|\le1$. Prove that for every integer $m\ge1$,
+$$
 f(z)-2^m z^m
-\]
-has exactly \(m\) zeros, counted with multiplicity, in \(|z|<\frac12\).
+$$
+has exactly $m$ zeros, counted with multiplicity, in $|z|<\frac12$.
 :::
 
 ::: {.solution}

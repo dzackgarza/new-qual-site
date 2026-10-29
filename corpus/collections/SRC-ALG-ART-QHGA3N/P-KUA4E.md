@@ -23,17 +23,17 @@ Show that $N(N(P)) = N(P)$ where $N$ is the normalizer in $G$.
 :::
 
 ::: {.solution}
-Write \(N_G(H)\) for the normalizer of a subgroup \(H\le G\).
+Write $N_G(H)$ for the normalizer of a subgroup $H\le G$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The subgroup \(P\) is normal in \(N_G(P)\), hence is the unique Sylow \(p\)-subgroup of \(N_G(P)\).
+The subgroup $P$ is normal in $N_G(P)$, hence is the unique Sylow $p$-subgroup of $N_G(P)$.
 
 ::: pf-proof
 
-By definition, every element of \(N_G(P)\) conjugates \(P\) to itself, so \(P\trianglelefteq N_G(P)\). Since \(P\) is Sylow in \(G\), it has the largest possible \(p\)-power order among subgroups of \(G\), hence also among subgroups of \(N_G(P)\le G\). Thus \(P\) is Sylow in \(N_G(P)\). A normal Sylow subgroup is unique.
+By definition, every element of $N_G(P)$ conjugates $P$ to itself, so $P\trianglelefteq N_G(P)$. Since $P$ is Sylow in $G$, it has the largest possible $p$-power order among subgroups of $G$, hence also among subgroups of $N_G(P)\le G$. Thus $P$ is Sylow in $N_G(P)$. A normal Sylow subgroup is unique.
 
 :::
 
@@ -42,13 +42,13 @@ By definition, every element of \(N_G(P)\) conjugates \(P\) to itself, so \(P\tr
 ::: {.pf-step #s2}
 
 One always has
-\[
+$$
 N_G(P)\subseteq N_G(N_G(P)).
-\]
+$$
 
 ::: pf-proof
 
-Every subgroup is normal in its own normalizer. Applying this to the subgroup \(N_G(P)\le G\) gives \(N_G(P)\trianglelefteq N_G(N_G(P))\), hence the displayed inclusion.
+Every subgroup is normal in its own normalizer. Applying this to the subgroup $N_G(P)\le G$ gives $N_G(P)\trianglelefteq N_G(N_G(P))$, hence the displayed inclusion.
 
 :::
 
@@ -56,18 +56,18 @@ Every subgroup is normal in its own normalizer. Applying this to the subgroup \(
 
 ::: {.pf-step #s3}
 
-If \(x\in N_G(N_G(P))\), then
-\[
+If $x\in N_G(N_G(P))$, then
+$$
 xPx^{-1}=P.
-\]
+$$
 
 ::: pf-proof
 
-Because \(x\) normalizes \(N_G(P)\),
-\[
+Because $x$ normalizes $N_G(P)$,
+$$
 xN_G(P)x^{-1}=N_G(P).
-\]
-Since \(P\le N_G(P)\), this implies \(xPx^{-1}\le N_G(P)\). Conjugation preserves order, so \(xPx^{-1}\) is a Sylow \(p\)-subgroup of \(N_G(P)\). By the uniqueness from step [](#s1){.pf-ref}, it must equal \(P\).
+$$
+Since $P\le N_G(P)$, this implies $xPx^{-1}\le N_G(P)$. Conjugation preserves order, so $xPx^{-1}$ is a Sylow $p$-subgroup of $N_G(P)$. By the uniqueness from step [](#s1){.pf-ref}, it must equal $P$.
 
 :::
 
@@ -76,16 +76,16 @@ Since \(P\le N_G(P)\), this implies \(xPx^{-1}\le N_G(P)\). Conjugation preserve
 ::: {.pf-step #s4}
 
 Therefore
-\[
+$$
 \boxed{N_G(N_G(P))=N_G(P)}.
-\]
+$$
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref}, every element of \(N_G(N_G(P))\) normalizes \(P\), so
-\[
+By step [](#s3){.pf-ref}, every element of $N_G(N_G(P))$ normalizes $P$, so
+$$
 N_G(N_G(P))\subseteq N_G(P).
-\]
+$$
 Combine this with step [](#s2){.pf-ref}.
 
 :::

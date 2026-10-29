@@ -46,17 +46,17 @@ Prove the distribution-function bound.
 
 ::: pf-proof
 
-For \(t>0\), on the set \(\{f\ge t\}\) we have \(f\ge t\). Hence
-\[
+For $t>0$, on the set $\{f\ge t\}$ we have $f\ge t$. Hence
+$$
 t\,\varphi(t)
 =t\,m(\{f\ge t\})
 \le \int_{\{f\ge t\}}f\,dm
 \le \|f\|_1.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{\varphi(t)\le \frac{\|f\|_1}{t}.}
-\]
+$$
 
 :::
 
@@ -68,23 +68,23 @@ Prove the layer-cake formula.
 
 ::: pf-proof
 
-For every \(x\), since \(f(x)\ge0\),
-\[
+For every $x$, since $f(x)\ge0$,
+$$
 f(x)=\int_0^\infty \mathbf1_{\{t\le f(x)\}}\,dt.
-\]
-The integrand is nonnegative and measurable on \(\RR\times(0,\infty)\). Tonelli's theorem gives
-\[
+$$
+The integrand is nonnegative and measurable on $\RR\times(0,\infty)$. Tonelli's theorem gives
+$$
 \begin{aligned}
 \int_{\RR}f(x)\,dx
 &=\int_0^\infty
 m(\{x:f(x)\ge t\})\,dt\\
 &=\int_0^\infty\varphi(t)\,dt.
 \end{aligned}
-\]
+$$
 Thus
-\[
+$$
 \boxed{\int_{\RR}f\,dm=\int_0^\infty\varphi(t)\,dt.}
-\]
+$$
 
 :::
 
@@ -96,22 +96,22 @@ Deduce integrability from the assumed distribution bound.
 
 ::: pf-proof
 
-Because \(0\le f\le1\),
-\[
+Because $0\le f\le1$,
+$$
 \varphi(t)=0
 \qquad(t>1).
-\]
+$$
 Using Step 2 and the hypothesis,
-\[
+$$
 \int_{\RR}f\,dm
 =\int_0^1\varphi(t)\,dt
 \le \int_0^1 t^{-1/2}\,dt
 =2.
-\]
+$$
 Hence
-\[
+$$
 \boxed{f\in L^1(\RR).}
-\]
+$$
 
 :::
 

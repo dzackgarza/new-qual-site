@@ -80,9 +80,9 @@ The subgroups obtained from different points of the fibre are conjugate, and eve
 ::: pf-proof
 
 If $\widetilde x'$ lies over $x$ and $\eta$ is a path from $\widetilde x'$ to $\widetilde x$, change of basepoint gives
-\[
+$$
 p_*\pi_1(\widetilde X,\widetilde x')=[p\eta]\,p_*\pi_1(\widetilde X,\widetilde x)\,[p\eta]^{-1}.
-\]
+$$
 Conversely, for any loop $\gamma$ at $x$, lift $\gamma$ from $\widetilde x$ and let $\widetilde x'$ be its endpoint.
 Applying the preceding formula to the lifted path produces the conjugate by $[\gamma]$.
 Hence all conjugates arise.

@@ -51,103 +51,103 @@ where the equivalence relation $\sim_n$ identifies a point $x$ on the boundary $
 
 ::: {.pf-step #meridian-longitude}
 Let
-\[
+$$
 \mu(s)=(e^{is},1),
 \qquad
 \lambda(t)=(1,e^{it})
-\]
+$$
 be the meridian and longitude of the boundary torus
-\[
+$$
 T=\partial(D^2\times S^1).
-\]
+$$
 Then
-\[
+$$
 \pi_1(T)\cong \ZZ\mu\oplus\ZZ\lambda.
-\]
-For either copy of the solid torus, the boundary inclusion kills \(\mu\) and sends \(\lambda\) to a generator of the fundamental group of the solid torus.
+$$
+For either copy of the solid torus, the boundary inclusion kills $\mu$ and sends $\lambda$ to a generator of the fundamental group of the solid torus.
 
 ::: pf-proof
-The solid torus \(V=D^2\times S^1\) deformation retracts onto its core \(\{0\}\times S^1\), so
-\[
+The solid torus $V=D^2\times S^1$ deformation retracts onto its core $\{0\}\times S^1$, so
+$$
 \pi_1(V)\cong\ZZ.
-\]
-The loop \(\mu\) bounds the disk \(D^2\times\{1\}\), while \(\lambda\) is homotopic to the core circle.
+$$
+The loop $\mu$ bounds the disk $D^2\times\{1\}$, while $\lambda$ is homotopic to the core circle.
 :::
 
 :::
 
 ::: {.pf-step #gluing-action}
-The gluing map acts on \(\pi_1(T)\) by
-\[
+The gluing map acts on $\pi_1(T)$ by
+$$
 \phi_{n*}(\mu)=\mu+n\lambda,
 \qquad
 \phi_{n*}(\lambda)=\lambda.
-\]
+$$
 
 ::: pf-proof
 Along the meridian,
-\[
+$$
 \phi_n(e^{is},1)=(e^{is},e^{ins}),
-\]
-so the image winds once in the meridian direction and \(n\) times in the longitude direction.
+$$
+so the image winds once in the meridian direction and $n$ times in the longitude direction.
 Along the longitude,
-\[
+$$
 \phi_n(1,e^{it})=(1,e^{it}),
-\]
-so \(\lambda\) is fixed.
+$$
+so $\lambda$ is fixed.
 :::
 
 :::
 
 ::: {.pf-step #s3}
-Let \(a\) and \(b\) denote the core generators of the first and second copies of \(V\), respectively. Van Kampen gives
-\[
+Let $a$ and $b$ denote the core generators of the first and second copies of $V$, respectively. Van Kampen gives
+$$
 \pi_1(X_n)
 \cong
 \left\langle a,b\ \middle|\
  i_{1*}(\mu)=i_{2*}\phi_{n*}(\mu),\
  i_{1*}(\lambda)=i_{2*}\phi_{n*}(\lambda)
 \right\rangle.
-\]
+$$
 
 ::: pf-proof
-Use collar neighborhoods of the common boundary torus after gluing. They give an open cover whose two pieces deformation retract onto the two solid tori and whose intersection deformation retracts onto \(T\). The displayed presentation is the resulting pushout presentation from Seifert--van Kampen.
+Use collar neighborhoods of the common boundary torus after gluing. They give an open cover whose two pieces deformation retract onto the two solid tori and whose intersection deformation retracts onto $T$. The displayed presentation is the resulting pushout presentation from Seifert--van Kampen.
 :::
 
 :::
 
 ::: {.pf-step #s4}
 The meridian relation is
-\[
+$$
 1=b^n,
-\]
+$$
 and the longitude relation is
-\[
+$$
 a=b.
-\]
+$$
 
 ::: pf-proof
 By step [](#meridian-longitude){.pf-ref},
-\[
+$$
 i_{1*}(\mu)=1,
 \qquad
  i_{1*}(\lambda)=a,
-\]
+$$
 and for the second solid torus
-\[
+$$
 i_{2*}(\mu)=1,
 \qquad
  i_{2*}(\lambda)=b.
-\]
+$$
 Using step [](#gluing-action){.pf-ref},
-\[
+$$
 i_{2*}\phi_{n*}(\mu)
 =i_{2*}(\mu+n\lambda)=b^n,
-\]
+$$
 while
-\[
+$$
 i_{2*}\phi_{n*}(\lambda)=b.
-\]
+$$
 Substitute these into step [](#s3){.pf-ref}.
 :::
 
@@ -155,28 +155,28 @@ Substitute these into step [](#s3){.pf-ref}.
 
 ::: pf-step
 Therefore
-\[
+$$
 \boxed{\pi_1(X_n)\cong \ZZ/n\ZZ}.
-\]
+$$
 Equivalently,
-\[
+$$
 \pi_1(X_n)\cong
 \begin{cases}
 \ZZ,&n=0,\\
 \ZZ/|n|\ZZ,&n\ne0.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 By step [](#s4){.pf-ref},
-\[
+$$
 \pi_1(X_n)
 \cong
 \langle a,b\mid b^n=1,\ a=b\rangle
 \cong
 \langle a\mid a^n=1\rangle.
-\]
-For \(n=0\), the relation \(a^0=1\) is vacuous, giving \(\ZZ\). For \(n\ne0\), the relation has order \(|n|\), giving \(\ZZ/|n|\ZZ\).
+$$
+For $n=0$, the relation $a^0=1$ is vacuous, giving $\ZZ$. For $n\ne0$, the relation has order $|n|$, giving $\ZZ/|n|\ZZ$.
 :::
 
 :::

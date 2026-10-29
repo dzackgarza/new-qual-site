@@ -29,15 +29,15 @@ Describe $A$ when $\theta$ is algebraic and when $\theta$ is transcendental.
 
 ::: {.solution}
 Let
-\[
+$$
 \operatorname{ev}_\theta:F[x]\longrightarrow F[\theta],
 \qquad
 f(x)\longmapsto f(\theta).
-\]
+$$
 Then
-\[
+$$
 A=\ker(\operatorname{ev}_\theta).
-\]
+$$
 
 ::: pf
 
@@ -49,13 +49,13 @@ If $\theta$ is transcendental over $F$, then $A=(0)$.
 
 By definition of transcendence, no nonzero polynomial in $F[x]$ vanishes at
 $\theta$. Hence
-\[
+$$
 \ker(\operatorname{ev}_\theta)=0.
-\]
+$$
 Therefore
-\[
+$$
 F[\theta]\cong F[x].
-\]
+$$
 
 :::
 
@@ -64,27 +64,27 @@ F[\theta]\cong F[x].
 ::: pf-step
 
 If $\theta$ is algebraic over $F$, then
-\[
+$$
 A=(m_\theta(x)),
-\]
+$$
 where $m_\theta$ is the minimal polynomial of $\theta$ over $F$.
 
 ::: pf-proof
 
 Certainly $m_\theta(\theta)=0$, so
-\[
+$$
 (m_\theta)\subseteq A.
-\]
+$$
 Conversely, let $f\in A$. Divide by the monic polynomial $m_\theta$:
-\[
+$$
 f=qm_\theta+r,
 \qquad
 \deg r<\deg m_\theta.
-\]
+$$
 Evaluating at $\theta$ gives
-\[
+$$
 0=f(\theta)=r(\theta).
-\]
+$$
 By minimality of the degree of $m_\theta$, this forces $r=0$. Thus
 $m_\theta$ divides $f$, and $A=(m_\theta)$.
 
@@ -95,11 +95,11 @@ $m_\theta$ divides $f$, and $A=(m_\theta)$.
 :::
 
 Hence
-\[
+$$
 F[\theta]\cong
 \begin{cases}
 F[x], & \theta\text{ transcendental},\\
 F[x]/(m_\theta), & \theta\text{ algebraic}.
 \end{cases}
-\]
+$$
 :::

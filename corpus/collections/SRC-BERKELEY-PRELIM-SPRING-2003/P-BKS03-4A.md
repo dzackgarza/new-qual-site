@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Prove that for every integer $n\ge0$ there is a polynomial $T_n(x)\in\ZZ[x]$ such that
-\[
+$$
 2\cos(nz)=T_n(2\cos z)
-\]
+$$
 for every $z$.
 :::
 

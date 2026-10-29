@@ -27,9 +27,9 @@ It suffices to take $a=0$ and $r=1$.
 
 ::: {.pf-step #counterexample-function}
 The function
-\[
+$$
 f(z):=\sqrt{1-z},\qquad |z|<1,
-\]
+$$
 with the principal square root, is analytic on $|z|<1$ and extends continuously to $|z|\leq 1$.
 
 ::: pf-proof
@@ -43,17 +43,17 @@ The function in [](#counterexample-function){.pf-ref} has no analytic extension 
 
 ::: pf-proof
 Suppose that such an extension $F$ exists. On $|z|<1$ one has
-\[
+$$
 F(z)^2=f(z)^2=1-z.
-\]
+$$
 Both sides are analytic on the connected disc $|z|<1+\delta$, so the identity theorem gives
-\[
+$$
 F(z)^2=1-z
-\]
+$$
 throughout that disc. Evaluating at $z=1$ gives $F(1)=0$. Differentiating the identity and then setting $z=1$ gives
-\[
+$$
 2F(1)F'(1)=-1,
-\]
+$$
 whose left-hand side is $0$, a contradiction.
 :::
 

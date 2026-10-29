@@ -27,27 +27,27 @@ Show that a space $(X,\tau)$ is completely normal if and only if every subset of
 :::
 
 ::: {.solution}
-Suppose first that \(X\) is completely normal, and let \(Y\subset X\). Since \(X\) is \(T_1\), so is \(Y\). Let \(C,D\subset Y\) be disjoint closed subsets of \(Y\). Then
-\[
+Suppose first that $X$ is completely normal, and let $Y\subset X$. Since $X$ is $T_1$, so is $Y$. Let $C,D\subset Y$ be disjoint closed subsets of $Y$. Then
+$$
 \overline C^{\,X}\cap D=\varnothing,
 \qquad
 C\cap\overline D^{\,X}=\varnothing,
-\]
-because \(C=Y\cap\overline C^{\,X}\) and \(D=Y\cap\overline D^{\,X}\). Thus \(C\) and \(D\) are separated subsets of \(X\). Complete normality gives disjoint open sets \(U,V\subset X\) with \(C\subset U\) and \(D\subset V\). Then \(U\cap Y\) and \(V\cap Y\) separate \(C\) and \(D\) in \(Y\). Hence every subspace \(Y\) is normal.
+$$
+because $C=Y\cap\overline C^{\,X}$ and $D=Y\cap\overline D^{\,X}$. Thus $C$ and $D$ are separated subsets of $X$. Complete normality gives disjoint open sets $U,V\subset X$ with $C\subset U$ and $D\subset V$. Then $U\cap Y$ and $V\cap Y$ separate $C$ and $D$ in $Y$. Hence every subspace $Y$ is normal.
 
-Conversely, suppose every subset of \(X\), with its subspace topology, is normal. In particular \(X\) itself is normal and hence \(T_1\). Let \(A,B\subset X\) be separated in the sense of the problem. Equivalently,
-\[
+Conversely, suppose every subset of $X$, with its subspace topology, is normal. In particular $X$ itself is normal and hence $T_1$. Let $A,B\subset X$ be separated in the sense of the problem. Equivalently,
+$$
 \overline A\cap B=\varnothing,
 \qquad
 A\cap\overline B=\varnothing.
-\]
+$$
 Set
-\[
+$$
 Y=X\setminus(\overline A\cap\overline B).
-\]
-Then \(A,B\subset Y\), and within \(Y\) the sets
-\[
+$$
+Then $A,B\subset Y$, and within $Y$ the sets
+$$
 \overline A\cap Y,\qquad \overline B\cap Y
-\]
-are disjoint closed sets containing \(A\) and \(B\), respectively. Since \(Y\) is normal, there are disjoint sets \(U_Y,V_Y\), open in \(Y\), containing these two closed sets. Because \(Y\) is open in \(X\), \(U_Y\) and \(V_Y\) are open in \(X\). They are disjoint and contain \(A\) and \(B\). Therefore \(X\) is completely normal.
+$$
+are disjoint closed sets containing $A$ and $B$, respectively. Since $Y$ is normal, there are disjoint sets $U_Y,V_Y$, open in $Y$, containing these two closed sets. Because $Y$ is open in $X$, $U_Y$ and $V_Y$ are open in $X$. They are disjoint and contain $A$ and $B$. Therefore $X$ is completely normal.
 :::

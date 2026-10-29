@@ -14,9 +14,9 @@ audit:
 
 ::: {.problem}
 Let $F$ be a field and let $R$ be a subring of $F[x]$ with $F\subset R$. Prove that there exist finitely many polynomials $f_1,\ldots,f_n\in F[x]$ such that
-\[
+$$
 R=F[f_1,\ldots,f_n].
-\]
+$$
 :::
 
 ::: {.solution}

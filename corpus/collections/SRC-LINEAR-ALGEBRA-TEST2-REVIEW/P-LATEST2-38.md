@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 M=\begin{pmatrix}0&1&0\\0&0&1\\1&0&0\end{pmatrix}.
-\]
+$$
 Determine $M^{100}$ from the following choices:
 
 (A) $M$

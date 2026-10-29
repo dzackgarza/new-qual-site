@@ -39,9 +39,9 @@ Seifert–van Kampen theorem and cellular approximation for $k$-dimensional CW c
 
 ::: pf-step
 By the Hurewicz Theorem:
-\[
+$$
 \pi_k(X) \cong H_k(X; \ZZ) \cong \bigoplus_{j=1}^n H_k(S^k; \ZZ) \cong \ZZ^n.
-\]
+$$
 
 ::: pf-proof
 Hurewicz isomorphism theorem for $(k-1)$-connected spaces and homology of wedge sums.
@@ -145,9 +145,9 @@ invertible $\ZZ$-linear endomorphisms of $\ZZ^n$ form the group $\operatorname{G
 
 ::: pf-step
 Conclusion: The map $[f] \mapsto M(f)$ induces an isomorphism of groups:
-\[
+$$
 \operatorname{Aut}\left(\bigvee_{j=1}^n S^k\right) \cong \operatorname{GL}_n(\ZZ).
-\]
+$$
 
 ::: pf-proof
 Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.

@@ -26,15 +26,15 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 R_1=\FF_p[x]/(x^2-2),
 \qquad
 R_2=\FF_p[x]/(x^2-3).
-\]
+$$
 Determine whether $R_1$ and $R_2$ are isomorphic in each of the cases
-\[
+$$
 p=2,\qquad p=5,\qquad p=11.
-\]
+$$
 :::
 
 ::: {.solution}

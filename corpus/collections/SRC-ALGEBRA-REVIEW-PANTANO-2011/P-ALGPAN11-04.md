@@ -36,9 +36,9 @@ Any automorphism fixes every rational number.
 Let $\varphi:\QQ\to\QQ$ be a field automorphism.
 Since $\varphi(1)=1$, additivity gives $\varphi(n)=n$ for every $n\in\ZZ$.
 For $m/n\in\QQ$ with $n\ne0$,
-\[
+$$
 \varphi(m/n)=\varphi(m)\varphi(n)^{-1}=m/n.
-\]
+$$
 Thus $\varphi=\operatorname{id}_{\QQ}$.
 
 :::

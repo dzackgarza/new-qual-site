@@ -33,71 +33,71 @@ Prove that for any proper subgroup $H$ we have that $H \neq N_G(H)$.
 
 ::: pf-step
 Let
-\[
+$$
 1=Z_0(G)\le Z_1(G)\le \cdots \le Z_c(G)=G
-\]
-be the upper central series of the nilpotent group \(G\).
+$$
+be the upper central series of the nilpotent group $G$.
 
 ::: pf-proof
-By nilpotence, the upper central series reaches \(G\) after finitely many steps.
+By nilpotence, the upper central series reaches $G$ after finitely many steps.
 :::
 
 :::
 
 ::: pf-step
-Since \(H<G\), there is a least index \(i\ge 1\) such that \(Z_i(G)\nsubseteq H\). Thus
-\[
+Since $H<G$, there is a least index $i\ge 1$ such that $Z_i(G)\nsubseteq H$. Thus
+$$
 Z_{i-1}(G)\le H.
-\]
+$$
 
 ::: pf-proof
-Because \(Z_0(G)=1\le H\) and \(Z_c(G)=G\nsubseteq H\), such a least \(i\) exists.
+Because $Z_0(G)=1\le H$ and $Z_c(G)=G\nsubseteq H$, such a least $i$ exists.
 :::
 
 :::
 
 ::: {.pf-step #x-not-in-h-commutator-in-h}
-Choose \(x\in Z_i(G)\setminus H\). Then for every \(h\in H\),
-\[
+Choose $x\in Z_i(G)\setminus H$. Then for every $h\in H$,
+$$
 [x,h]\in Z_{i-1}(G)\le H.
-\]
+$$
 
 ::: pf-proof
 By definition of the upper central series,
-\[
+$$
 Z_i(G)/Z_{i-1}(G)=Z\bigl(G/Z_{i-1}(G)\bigr).
-\]
-Hence the image of \(x\) is central modulo \(Z_{i-1}(G)\), so \([x,h]\in Z_{i-1}(G)\).
+$$
+Hence the image of $x$ is central modulo $Z_{i-1}(G)$, so $[x,h]\in Z_{i-1}(G)$.
 :::
 
 :::
 
 ::: {.pf-step #x-normalizes-h}
-The element \(x\) normalizes \(H\).
+The element $x$ normalizes $H$.
 
 ::: pf-proof
-For \(h\in H\), one has
-\[
+For $h\in H$, one has
+$$
 xhx^{-1}=[x,h]h\in H.
-\]
-Thus \(xHx^{-1}\subseteq H\). Applying the same argument to \(x^{-1}\in Z_i(G)\) gives
-\[
+$$
+Thus $xHx^{-1}\subseteq H$. Applying the same argument to $x^{-1}\in Z_i(G)$ gives
+$$
 x^{-1}Hx\subseteq H,
-\]
-and conjugating this inclusion by \(x\) yields \(H\subseteq xHx^{-1}\). Therefore
-\[
+$$
+and conjugating this inclusion by $x$ yields $H\subseteq xHx^{-1}$. Therefore
+$$
 xHx^{-1}=H,
-\]
-so \(x\in N_G(H)\).
+$$
+so $x\in N_G(H)$.
 :::
 
 :::
 
 ::: pf-step
-Since \(x\notin H\), we have \(H<N_G(H)\).
+Since $x\notin H$, we have $H<N_G(H)$.
 
 ::: pf-proof
-By step [](#x-not-in-h-commutator-in-h){.pf-ref}, \(x\notin H\), while by step [](#x-normalizes-h){.pf-ref}, \(x\in N_G(H)\). Hence the inclusion \(H\le N_G(H)\) is proper.
+By step [](#x-not-in-h-commutator-in-h){.pf-ref}, $x\notin H$, while by step [](#x-normalizes-h){.pf-ref}, $x\in N_G(H)$. Hence the inclusion $H\le N_G(H)$ is proper.
 :::
 
 :::

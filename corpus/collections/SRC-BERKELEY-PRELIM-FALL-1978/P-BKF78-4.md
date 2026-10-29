@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_0^{2\pi}\frac{d\theta}{1-2r\cos\theta+r^2},
-\]
+$$
 where $r^2\ne1$.
 :::
 

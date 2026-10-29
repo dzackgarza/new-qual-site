@@ -17,9 +17,9 @@ audit:
 
 ::: {.problem}
 Suppose $f,g,h:A\to A$ are functions. Prove that if $f$ is injective and
-\[
+$$
 f\circ g=f\circ h,
-\]
+$$
 then $g=h$.
 :::
 
@@ -30,22 +30,22 @@ then $g=h$.
 ::: pf-step
 
 Let
-\[
+$$
 x\in A
-\]
+$$
 be arbitrary.
 
 
 ::: pf-proof
 
 To prove equality of functions
-\[
+$$
 g=h,
-\]
+$$
 it suffices to prove
-\[
+$$
 g(x)=h(x)
-\]
+$$
 for every $x\in A$.
 
 :::
@@ -55,13 +55,13 @@ for every $x\in A$.
 ::: {.pf-step #s1-2}
 
 The hypothesis
-\[
+$$
 f\circ g=f\circ h
-\]
+$$
 gives
-\[
+$$
 f(g(x))=f(h(x)).
-\]
+$$
 
 
 ::: pf-proof
@@ -75,25 +75,25 @@ Evaluate the two equal functions at the chosen point $x$.
 ::: {.pf-step #s1-3}
 
 Since $f$ is injective,
-\[
+$$
 g(x)=h(x).
-\]
+$$
 
 
 ::: pf-proof
 
 Injectivity means
-\[
+$$
 f(a)=f(b)
 \quad\Longrightarrow\quad
 a=b.
-\]
+$$
 Apply this to
-\[
+$$
 a=g(x),
 \qquad
 b=h(x),
-\]
+$$
 using step [](#s1-2){.pf-ref}.
 
 :::
@@ -103,11 +103,11 @@ using step [](#s1-2){.pf-ref}.
 ::: {.pf-step #s1-4}
 
 Therefore
-\[
+$$
 \boxed{
 g=h.
 }
-\]
+$$
 
 
 ::: pf-proof

@@ -38,11 +38,11 @@ Find the number of elements in $\FF_2(\alpha)$.
 
 ::: pf-step
 
-The polynomial \(f(x)=x^4+x+1\) has no root in \(\FF_2\).
+The polynomial $f(x)=x^4+x+1$ has no root in $\FF_2$.
 
 ::: pf-proof
 
-One has \(f(0)=1\) and \(f(1)=1+1+1=1\) in \(\FF_2\). Thus \(f\) has no linear factor.
+One has $f(0)=1$ and $f(1)=1+1+1=1$ in $\FF_2$. Thus $f$ has no linear factor.
 
 :::
 
@@ -50,15 +50,15 @@ One has \(f(0)=1\) and \(f(1)=1+1+1=1\) in \(\FF_2\). Thus \(f\) has no linear f
 
 ::: pf-step
 
-The polynomial \(f\) has no irreducible quadratic factor.
+The polynomial $f$ has no irreducible quadratic factor.
 
 ::: pf-proof
 
-The only monic irreducible quadratic over \(\FF_2\) is \(q(x)=x^2+x+1\): the other monic quadratics have a root in \(\FF_2\). If a degree-four polynomial over a field is reducible and has no linear factor, it is a product of two irreducible quadratics.
-Hence, if \(f\) were reducible, both quadratic factors would have to equal \(q\), so
-\[
+The only monic irreducible quadratic over $\FF_2$ is $q(x)=x^2+x+1$: the other monic quadratics have a root in $\FF_2$. If a degree-four polynomial over a field is reducible and has no linear factor, it is a product of two irreducible quadratics.
+Hence, if $f$ were reducible, both quadratic factors would have to equal $q$, so
+$$
 f(x)=q(x)^2=(x^2+x+1)^2=x^4+x^2+1,
-\]
+$$
 which is false.
 
 :::
@@ -67,16 +67,16 @@ which is false.
 
 ::: pf-step
 
-Therefore \(f\) is irreducible, so
-\[
+Therefore $f$ is irreducible, so
+$$
 E=\FF_2[x]/(f)
-\]
-is a field with \(2^4=16\) elements.
+$$
+is a field with $2^4=16$ elements.
 
 ::: pf-proof
 
-A quotient \(k[x]/(f)\) is a field exactly when \(f\) is irreducible.
-Since \(\deg f=4\), the quotient is a four-dimensional vector space over \(\FF_2\), hence has \(2^4\) elements.
+A quotient $k[x]/(f)$ is a field exactly when $f$ is irreducible.
+Since $\deg f=4$, the quotient is a four-dimensional vector space over $\FF_2$, hence has $2^4$ elements.
 This proves part (a).
 
 :::
@@ -85,18 +85,18 @@ This proves part (a).
 
 ::: {.pf-step #s4}
 
-Let \(\beta=x+(f)\in E\). Then \(\beta^4=\beta+1\), and for \(\alpha=\beta^2+\beta\) one has
-\[
+Let $\beta=x+(f)\in E$. Then $\beta^4=\beta+1$, and for $\alpha=\beta^2+\beta$ one has
+$$
 \alpha^2=\alpha+1.
-\]
+$$
 
 ::: pf-proof
 
-The relation \(f(\beta)=0\) gives \(\beta^4+\beta+1=0\), hence \(\beta^4=\beta+1\). In characteristic \(2\),
-\[
+The relation $f(\beta)=0$ gives $\beta^4+\beta+1=0$, hence $\beta^4=\beta+1$. In characteristic $2$,
+$$
 \alpha^2=(\beta^2+\beta)^2=\beta^4+\beta^2=(\beta+1)+\beta^2=\alpha+1.
-\]
-Thus \(\alpha^2+\alpha+1=0\).
+$$
+Thus $\alpha^2+\alpha+1=0$.
 
 :::
 
@@ -104,12 +104,12 @@ Thus \(\alpha^2+\alpha+1=0\).
 
 ::: {.pf-step #s5}
 
-The element \(\alpha\) does not lie in \(\FF_2\), so its minimal polynomial over \(\FF_2\) is \(t^2+t+1\).
+The element $\alpha$ does not lie in $\FF_2$, so its minimal polynomial over $\FF_2$ is $t^2+t+1$.
 
 ::: pf-proof
 
-The polynomial \(t^2+t+1\) has no root in \(\FF_2\), hence is irreducible.
-By step [](#s4){.pf-ref}, \(\alpha\) is a root, so its minimal polynomial is this quadratic.
+The polynomial $t^2+t+1$ has no root in $\FF_2$, hence is irreducible.
+By step [](#s4){.pf-ref}, $\alpha$ is a root, so its minimal polynomial is this quadratic.
 
 :::
 
@@ -118,15 +118,15 @@ By step [](#s4){.pf-ref}, \(\alpha\) is a root, so its minimal polynomial is thi
 ::: pf-step
 
 Therefore
-\[
+$$
 [\FF_2(\alpha):\FF_2]=2,
 \qquad
 |\FF_2(\alpha)|=2^2=4.
-\]
+$$
 
 ::: pf-proof
 
-The extension degree equals the degree of the minimal polynomial from step [](#s5){.pf-ref}. A degree-two extension of \(\FF_2\) has four elements.
+The extension degree equals the degree of the minimal polynomial from step [](#s5){.pf-ref}. A degree-two extension of $\FF_2$ has four elements.
 This proves part (b).
 
 :::

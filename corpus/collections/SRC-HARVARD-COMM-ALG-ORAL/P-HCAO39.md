@@ -41,9 +41,9 @@ Modulo the maximal ideal, $T$ becomes the identity matrix.
 ::: pf-proof
 Every entry of $M$ lies in $\mathfrak m$, so its image in
 $R/\mathfrak m$ is zero. Hence
-\[
+$$
 \overline T=I_n
-\]
+$$
 in $M_n(R/\mathfrak m)$.
 :::
 
@@ -54,9 +54,9 @@ Therefore $\det(T)$ is a unit of $R$.
 
 ::: pf-proof
 Reducing the determinant modulo $\mathfrak m$ gives
-\[
+$$
 \det(T)\equiv1\pmod{\mathfrak m}.
-\]
+$$
 Thus $\det(T)\notin\mathfrak m$. In a local ring, the nonunits are exactly the
 elements of the maximal ideal, so $\det(T)$ is a unit.
 :::
@@ -68,13 +68,13 @@ Hence $T=I_n+M$ is invertible.
 
 ::: pf-proof
 The adjugate identity gives
-\[
+$$
 T\operatorname{adj}(T)=\det(T)I_n.
-\]
+$$
 Since $\det(T)$ is a unit by step [](#det-t-is-unit){.pf-ref},
-\[
+$$
 T^{-1}=\det(T)^{-1}\operatorname{adj}(T).
-\]
+$$
 :::
 
 :::

@@ -23,16 +23,16 @@ audit:
 
 ::: {.problem}
 Let $T:V\to V$ be linear. Suppose $x\in V$ satisfies
-\[
+$$
 T^m x=0,
 \qquad
 T^{m-1}x\ne0
-\]
+$$
 for some positive integer $m$.
 Show that
-\[
+$$
 x,Tx,\ldots,T^{m-1}x
-\]
+$$
 are linearly independent.
 :::
 

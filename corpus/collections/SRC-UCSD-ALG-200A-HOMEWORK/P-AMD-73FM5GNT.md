@@ -42,9 +42,9 @@ audit:
 
 ::: {.problem}
 Assume that every nonabelian finite group $H$ with
-\[
+$$
 |H|<60
-\]
+$$
 is not simple.
 Prove that every finite group $G$ with $|G|<60$ is solvable.
 
@@ -76,9 +76,9 @@ If $G$ is abelian, then $G$ is solvable.
 ::: pf-proof
 
 Indeed,
-\[
+$$
 G^{(1)}=[G,G]=1.
-\]
+$$
 
 :::
 
@@ -88,18 +88,18 @@ G^{(1)}=[G,G]=1.
 
 Suppose that $G$ is nonabelian.
 Then $G$ has a nontrivial proper normal subgroup
-\[
+$$
 1<N<G.
-\]
+$$
 
 ::: pf-proof
 
 By hypothesis, every nonabelian group of order less than $60$ is not simple.
 Since $G$ is nonabelian and $|G|<60$, the group $G$ is not simple.
 Therefore it has a normal subgroup $N$ satisfying
-\[
+$$
 1<N<G.
-\]
+$$
 
 :::
 
@@ -112,11 +112,11 @@ Both $N$ and $G/N$ are solvable.
 ::: pf-proof
 
 Because $N$ is nontrivial and proper,
-\[
+$$
 |N|<|G|
 \qquad\text{and}\qquad
 |G/N|<|G|.
-\]
+$$
 The induction hypothesis therefore applies to both $N$ and $G/N$.
 
 :::
@@ -130,23 +130,23 @@ If $N\trianglelefteq G$, and both $N$ and $G/N$ are solvable, then $G$ is solvab
 ::: pf-proof
 
 Choose integers $r,s\ge 0$ such that
-\[
+$$
 (G/N)^{(r)}=1
 \qquad\text{and}\qquad
 N^{(s)}=1.
-\]
+$$
 For the quotient map $\pi:G\to G/N$, derived subgroups commute with taking images, so
-\[
+$$
 \pi\bigl(G^{(r)}\bigr)=(G/N)^{(r)}=1.
-\]
+$$
 Hence
-\[
+$$
 G^{(r)}\le N.
-\]
+$$
 Taking $s$ further derived subgroups gives
-\[
+$$
 G^{(r+s)}=(G^{(r)})^{(s)}\le N^{(s)}=1.
-\]
+$$
 Thus $G$ is solvable.
 
 :::

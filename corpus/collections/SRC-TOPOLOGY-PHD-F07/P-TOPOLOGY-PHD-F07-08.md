@@ -35,43 +35,43 @@ Prove that if for each $\mu\in M$ the maps $f_\mu:X_\mu\to Y_\mu$ are continuous
 
 ::: {.solution}
 For each $\mu\in M$, write
-\[
+$$
 p_\mu:X\to X_\mu,
 \qquad
 q_\mu:Y\to Y_\mu
-\]
+$$
 for the coordinate projections.
 
 ::: pf
 
 ::: {.pf-step #preimage-equality}
 For every $\mu\in M$ and every open set $V\subseteq Y_\mu$,
-\[
+$$
 f^{-1}\bigl(q_\mu^{-1}(V)\bigr)
 =p_\mu^{-1}\bigl(f_\mu^{-1}(V)\bigr).
-\]
+$$
 
 ::: pf-proof
 For $x\in X$,
-\[
+$$
 x\in f^{-1}\bigl(q_\mu^{-1}(V)\bigr)
-\]
+$$
 if and only if
-\[
+$$
 q_\mu(f(x))\in V.
-\]
+$$
 By the definition of $f$,
-\[
+$$
 q_\mu(f(x))=f(x)_\mu=f_\mu(x_\mu)=f_\mu(p_\mu(x)).
-\]
+$$
 Thus the preceding condition is equivalent to
-\[
+$$
 p_\mu(x)\in f_\mu^{-1}(V),
-\]
+$$
 which is exactly
-\[
+$$
 x\in p_\mu^{-1}\bigl(f_\mu^{-1}(V)\bigr).
-\]
+$$
 :::
 
 :::
@@ -81,25 +81,25 @@ The inverse image under $f$ of every subbasic open set of $Y$ is open in $X$.
 
 ::: pf-proof
 The product topology on $Y$ has subbasis
-\[
+$$
 \mathcal S
 =\{q_\mu^{-1}(V):\mu\in M,\ V\subseteq Y_\mu\text{ open}\}.
-\]
+$$
 Take $q_\mu^{-1}(V)\in\mathcal S$.
 Because $f_\mu$ is continuous,
-\[
+$$
 f_\mu^{-1}(V)
-\]
+$$
 is open in $X_\mu$.
 Because $X$ has the product topology, the coordinate projection $p_\mu$ is continuous, so
-\[
+$$
 p_\mu^{-1}\bigl(f_\mu^{-1}(V)\bigr)
-\]
+$$
 is open in $X$.
 By step [](#preimage-equality){.pf-ref} this set is precisely
-\[
+$$
 f^{-1}\bigl(q_\mu^{-1}(V)\bigr).
-\]
+$$
 :::
 
 :::

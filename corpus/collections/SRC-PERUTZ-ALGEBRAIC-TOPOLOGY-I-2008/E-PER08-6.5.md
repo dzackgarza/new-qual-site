@@ -29,11 +29,11 @@ Show that $\operatorname{Aut}(\widetilde X/X)\cong(N_GH)/H$, where $N_GH=\{g\in 
 
 ::: {.solution}
 We prove
-\[
+$$
 \operatorname{Aut}(Y/X)\cong N_G(H)/H,
 \qquad
 N_G(H)=\{g\in G:gHg^{-1}=H\}.
-\]
+$$
 
 ::: pf
 

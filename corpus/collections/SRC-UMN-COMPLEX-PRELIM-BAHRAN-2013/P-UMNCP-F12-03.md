@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-For \(\alpha>0\), evaluate
-\[
+For $\alpha>0$, evaluate
+$$
 \int_0^\infty \frac{\log x}{x^2+\alpha^2}\,dx,
-\]
+$$
 carefully justifying all steps.
 :::
 

@@ -38,18 +38,18 @@ There is an entire function $g$, constant if and only if $f$ is constant, whose 
 
 ::: pf-proof
 Write the line as
-\[
+$$
 L=z_0+e^{i\theta}\RR.
-\]
+$$
 Define
-\[
+$$
 g(z):=i e^{-i\theta}\bigl(f(z)-z_0\bigr).
-\]
+$$
 Then $g$ is entire, and multiplication by $ie^{-i\theta}$ sends the direction $e^{i\theta}\RR$ to $i\RR$.
 Hence
-\[
+$$
 g(\CC)\cap i\RR=\varnothing.
-\]
+$$
 Moreover, $g$ is constant if and only if $f$ is constant.
 Thus it suffices to prove the claim for $g$.
 :::
@@ -58,11 +58,11 @@ Thus it suffices to prove the claim for $g$.
 
 ::: {.pf-step #image-in-half-plane}
 The connected set $g(\CC)$ lies entirely in one of the two open half-planes
-\[
+$$
 \{w:\operatorname{Re}w>0\},
 \qquad
 \{w:\operatorname{Re}w<0\}.
-\]
+$$
 
 ::: pf-proof
 The complement $\CC\setminus i\RR$ has exactly those two connected components.
@@ -74,18 +74,18 @@ Because it avoids $i\RR$, it must be contained in a single component.
 
 ::: {.pf-step #exp-g-bounded}
 After replacing $g$ by $-g$ if necessary, assume
-\[
+$$
 \operatorname{Re}g(z)<0
 \qquad(z\in\CC).
-\]
+$$
 Then $e^{g}$ is a bounded entire function.
 
 ::: pf-proof
 If the image lies in the right half-plane, replace $g$ by $-g$; this does not affect whether $g$ is constant.
 Under the displayed assumption,
-\[
+$$
 |e^{g(z)}|=e^{\operatorname{Re}g(z)}<1
-\]
+$$
 for every $z$.
 Thus $e^g$ is entire and bounded.
 :::
@@ -98,9 +98,9 @@ Therefore $g$, and hence $f$, is constant.
 ::: pf-proof
 By Liouville's theorem, the bounded entire function $e^g$ is constant.
 Differentiating gives
-\[
+$$
 0=(e^g)'=g'e^g.
-\]
+$$
 Since $e^g$ never vanishes, $g'=0$ identically.
 Hence $g$ is constant, and by step [](#g-def-and-property){.pf-ref} so is $f$.
 :::

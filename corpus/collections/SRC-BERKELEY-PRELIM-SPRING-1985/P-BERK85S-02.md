@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let $G$ be an abelian group. Suppose $a,b\in G$ have finite orders $r,s$ with
-\[
+$$
 \gcd(r,s)=1.
-\]
+$$
 Show that $ab$ has order $rs$.
 :::
 

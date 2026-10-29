@@ -46,9 +46,9 @@ Suppose, for contradiction, that the array is not identically zero.
 
 ::: {.pf-step #M-positive}
 After replacing every $u_{m,n}$ by $-u_{m,n}$ if necessary, we may assume that the maximum value
-\[
+$$
 M:=\max_{1\le m,n\le N}u_{m,n}
-\]
+$$
 is strictly positive.
 
 ::: pf-proof
@@ -71,9 +71,9 @@ Hence no maximizing point can have $m\in\{1,N\}$ or $n\in\{1,N\}$.
 ::: {.pf-step #neighbor-strictly-less}
 Choose a maximizing point $(m,n)$ with $m$ minimal.
 Then
-\[
+$$
 u_{m-1,n}<M,
-\]
+$$
 while each of the other three neighboring values is at most $M$.
 
 ::: pf-proof
@@ -90,19 +90,19 @@ The averaging identity now contradicts $u_{m,n}=M$.
 
 ::: pf-proof
 Using step [](#neighbor-strictly-less){.pf-ref},
-\[
+$$
 \begin{aligned}
 u_{m,n}
 &=\frac14\bigl(u_{m-1,n}+u_{m+1,n}+u_{m,n-1}+u_{m,n+1}\bigr)\\
 &<\frac14(M+M+M+M)=M.
 \end{aligned}
-\]
+$$
 But $(m,n)$ was chosen so that $u_{m,n}=M$.
 This contradiction shows that the assumption of a nonzero array is impossible.
 Therefore
-\[
+$$
 \boxed{u_{m,n}=0\text{ for all }1\le m,n\le N}.
-\]
+$$
 :::
 
 :::

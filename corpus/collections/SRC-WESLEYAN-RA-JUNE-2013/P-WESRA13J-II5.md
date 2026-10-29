@@ -19,9 +19,9 @@ audit:
 Let $(X,\mathcal B,\mu)$ satisfy $\mu(X)<\infty$.
 Let $(f_n)$ be a uniformly bounded sequence of measurable functions and suppose $f_n\to0$ in measure.
 Prove
-\[
+$$
 \int_X|f_n|\,d\mu\to0.
-\]
+$$
 :::
 
 ::: {.solution}

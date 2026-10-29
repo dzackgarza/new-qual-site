@@ -21,18 +21,18 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int 2018^x\,dx.
-\]
+$$
 :::
 
 ::: {.solution}
 Since
-\[
+$$
 \frac{d}{dx}2018^x=(\ln 2018)2018^x,
-\]
+$$
 we have
-\[
+$$
 \boxed{\int 2018^x\,dx=\frac{2018^x}{\ln 2018}+C.}
-\]
+$$
 :::

@@ -24,17 +24,17 @@ audit:
 ::: {.problem}
 Evaluate or justify the following:
 
-1. For \(x>0\), the infinite nested radical
-\[
+1. For $x>0$, the infinite nested radical
+$$
 R(x)=\sqrt{x\sqrt[3]{x\sqrt[4]{x\sqrt[5]{x\cdots}}}}
-\]
-and an antiderivative of \(R(x)\).
-2. \(\displaystyle \int_0^1\frac{\sin(\log x)}{\log x}\,dx\).
-3. \(\displaystyle \int_{-\infty}^{\infty}\frac{\sin^2x}{x^2}\,dx\).
-4. \(\displaystyle \lim_{n\to\infty}\int_0^1\frac{x^n}{1+x}\,dx\).
-5. \(\displaystyle \int_0^\infty \frac{\sin x}{x e^{\sqrt3x}}\,dx\).
-6. \(\displaystyle \int_{-\infty}^{\infty}\frac{\cos x}{1+x^2}\,dx\).
-7. \(\displaystyle \int\sqrt{\frac{1+x}{1-x}}\,dx\) for \(-1<x<1\).
+$$
+and an antiderivative of $R(x)$.
+2. $\displaystyle \int_0^1\frac{\sin(\log x)}{\log x}\,dx$.
+3. $\displaystyle \int_{-\infty}^{\infty}\frac{\sin^2x}{x^2}\,dx$.
+4. $\displaystyle \lim_{n\to\infty}\int_0^1\frac{x^n}{1+x}\,dx$.
+5. $\displaystyle \int_0^\infty \frac{\sin x}{x e^{\sqrt3x}}\,dx$.
+6. $\displaystyle \int_{-\infty}^{\infty}\frac{\cos x}{1+x^2}\,dx$.
+7. $\displaystyle \int\sqrt{\frac{1+x}{1-x}}\,dx$ for $-1<x<1$.
 :::
 
 ::: {.solution}
@@ -47,28 +47,28 @@ Evaluate the infinite nested radical.
 
 ::: pf-proof
 
-Truncate after the \(N\)-th root and write the result as \(R_N(x)=x^{a_{2,N}}\). If the exponent at the \(k\)-th level is \(a_{k,N}\), then
-\[
+Truncate after the $N$-th root and write the result as $R_N(x)=x^{a_{2,N}}$. If the exponent at the $k$-th level is $a_{k,N}$, then
+$$
 a_{N,N}=\frac1N,
 \qquad
 a_{k,N}=\frac{1+a_{k+1,N}}k.
-\]
+$$
 Unrolling gives
-\[
+$$
 a_{2,N}=\frac1{2!}+\frac1{3!}+\cdots+\frac1{N!}.
-\]
+$$
 Hence
-\[
+$$
 a_{2,N}\longrightarrow e-2,
-\]
-so for \(x>0\),
-\[
+$$
+so for $x>0$,
+$$
 R(x)=x^{e-2}.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{\int R(x)\,dx=\frac{x^{e-1}}{e-1}+C.}
-\]
+$$
 
 :::
 
@@ -80,23 +80,23 @@ Evaluate the logarithmic sine integral.
 
 ::: pf-proof
 
-Put \(t=-\log x\). Then \(x=e^{-t}\), \(dx=-e^{-t}dt\), and
-\[
+Put $t=-\log x$. Then $x=e^{-t}$, $dx=-e^{-t}dt$, and
+$$
 \int_0^1\frac{\sin(\log x)}{\log x}\,dx
 =\int_0^\infty e^{-t}\frac{\sin t}{t}\,dt.
-\]
-For \(a>0\), define
-\[
+$$
+For $a>0$, define
+$$
 F(b)=\int_0^\infty e^{-at}\frac{\sin(bt)}t\,dt.
-\]
+$$
 Differentiation under the integral gives
-\[
+$$
 F'(b)=\int_0^\infty e^{-at}\cos(bt)\,dt=\frac{a}{a^2+b^2},
-\]
-and \(F(0)=0\). Thus \(F(b)=\arctan(b/a)\). Taking \(a=b=1\),
-\[
+$$
+and $F(0)=0$. Thus $F(b)=\arctan(b/a)$. Taking $a=b=1$,
+$$
 \boxed{\int_0^1\frac{\sin(\log x)}{\log x}\,dx=\frac\pi4.}
-\]
+$$
 
 :::
 
@@ -108,23 +108,23 @@ Evaluate the squared-sinc integral.
 
 ::: pf-proof
 
-Use the Fourier transform \(\widehat f(\xi)=\int_{\RR}f(t)e^{-it\xi}\,dt\). For \(f=\mathbf1_{[-1,1]}\),
-\[
+Use the Fourier transform $\widehat f(\xi)=\int_{\RR}f(t)e^{-it\xi}\,dt$. For $f=\mathbf1_{[-1,1]}$,
+$$
 \widehat f(\xi)=\frac{2\sin\xi}{\xi}.
-\]
+$$
 Plancherel's theorem in this normalization gives
-\[
+$$
 \int_{\RR}|\widehat f(\xi)|^2\,d\xi
 =2\pi\int_{\RR}|f(t)|^2\,dt=4\pi.
-\]
+$$
 Therefore
-\[
+$$
 4\int_{-\infty}^{\infty}\frac{\sin^2\xi}{\xi^2}\,d\xi=4\pi,
-\]
+$$
 so
-\[
+$$
 \boxed{\int_{-\infty}^{\infty}\frac{\sin^2x}{x^2}\,dx=\pi.}
-\]
+$$
 
 :::
 
@@ -136,14 +136,14 @@ Pass the limit through the integral.
 
 ::: pf-proof
 
-For \(x\in[0,1)\), \(x^n/(1+x)\to0\), while
-\[
+For $x\in[0,1)$, $x^n/(1+x)\to0$, while
+$$
 0\le\frac{x^n}{1+x}\le1.
-\]
+$$
 Dominated convergence therefore gives
-\[
+$$
 \boxed{\lim_{n\to\infty}\int_0^1\frac{x^n}{1+x}\,dx=0.}
-\]
+$$
 
 :::
 
@@ -155,15 +155,15 @@ Evaluate the exponentially damped sine integral.
 
 ::: pf-proof
 
-The calculation in step [](#s2){.pf-ref} gives, for \(a>0\),
-\[
+The calculation in step [](#s2){.pf-ref} gives, for $a>0$,
+$$
 \int_0^\infty e^{-ax}\frac{\sin x}{x}\,dx=\arctan\frac1a.
-\]
-With \(a=\sqrt3\),
-\[
+$$
+With $a=\sqrt3$,
+$$
 \boxed{\int_0^\infty\frac{\sin x}{xe^{\sqrt3x}}\,dx
 =\arctan\frac1{\sqrt3}=\frac\pi6.}
-\]
+$$
 
 :::
 
@@ -176,22 +176,22 @@ Evaluate the Cauchy-kernel cosine transform.
 ::: pf-proof
 
 Integrate
-\[
+$$
 \frac{e^{iz}}{1+z^2}
-\]
-over the upper semicircle of radius \(R>1\). The only enclosed pole is \(z=i\), with residue
-\[
+$$
+over the upper semicircle of radius $R>1$. The only enclosed pole is $z=i$, with residue
+$$
 \operatorname*{Res}_{z=i}\frac{e^{iz}}{1+z^2}
 =\frac{e^{-1}}{2i}.
-\]
-The residue theorem gives a contour integral tending to \(\pi/e\). The semicircular contribution tends to \(0\): away from the endpoints the factor \(e^{-\operatorname{Im}z}\) gives exponential decay, and the two endpoint pieces are \(O(R^{-1})\). Hence
-\[
+$$
+The residue theorem gives a contour integral tending to $\pi/e$. The semicircular contribution tends to $0$: away from the endpoints the factor $e^{-\operatorname{Im}z}$ gives exponential decay, and the two endpoint pieces are $O(R^{-1})$. Hence
+$$
 \int_{-\infty}^{\infty}\frac{e^{ix}}{1+x^2}\,dx=\frac\pi e.
-\]
+$$
 Taking real parts yields
-\[
+$$
 \boxed{\int_{-\infty}^{\infty}\frac{\cos x}{1+x^2}\,dx=\frac\pi e.}
-\]
+$$
 
 :::
 
@@ -203,29 +203,29 @@ Integrate the square-root quotient.
 
 ::: pf-proof
 
-Put \(x=\cos\theta\), where \(0<\theta<\pi\). Then
-\[
+Put $x=\cos\theta$, where $0<\theta<\pi$. Then
+$$
 \sqrt{\frac{1+x}{1-x}}
 =\sqrt{\frac{1+\cos\theta}{1-\cos\theta}}
 =\cot\frac\theta2,
 \qquad
 dx=-\sin\theta\,d\theta.
-\]
+$$
 Thus
-\[
+$$
 \sqrt{\frac{1+x}{1-x}}\,dx
 =-(1+\cos\theta)\,d\theta.
-\]
+$$
 Consequently
-\[
+$$
 \int\sqrt{\frac{1+x}{1-x}}\,dx
 =-\theta-\sin\theta+C.
-\]
-Since \(-\arccos x=\arcsin x-\pi/2\) and \(\sin\theta=\sqrt{1-x^2}\), the constant absorbs \(-\pi/2\), giving
-\[
+$$
+Since $-\arccos x=\arcsin x-\pi/2$ and $\sin\theta=\sqrt{1-x^2}$, the constant absorbs $-\pi/2$, giving
+$$
 \boxed{\int\sqrt{\frac{1+x}{1-x}}\,dx
 =\arcsin x-\sqrt{1-x^2}+C.}
-\]
+$$
 
 :::
 

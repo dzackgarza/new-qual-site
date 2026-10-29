@@ -33,9 +33,9 @@ Prove that $G$ has a characteristic subgroup $H$ which has order $m$.
 
 ::: {.solution}
 Let $P$ be a cyclic Sylow $2$-subgroup of $G$, so
-\[
+$$
 |P|=2^k.
-\]
+$$
 
 ::: pf
 
@@ -55,26 +55,26 @@ Hence assume from now on that $k\ge 1$.
 ::: {.pf-step #s2}
 
 The normalizer of $P$ centralizes $P$:
-\[
+$$
 N_G(P)=C_G(P).
-\]
+$$
 
 ::: pf-proof
 
 Conjugation gives an injective homomorphism
-\[
+$$
 N_G(P)/C_G(P)\hookrightarrow \operatorname{Aut}(P).
-\]
+$$
 Since $P$ is cyclic of order $2^k$,
-\[
+$$
 |\operatorname{Aut}(P)|=\varphi(2^k),
-\]
+$$
 which is a power of $2$.
 
 On the other hand, $P\subseteq C_G(P)$ because $P$ is abelian, and $P$ is a Sylow $2$-subgroup of $N_G(P)$. Therefore
-\[
+$$
 [N_G(P):C_G(P)]\mid [N_G(P):P],
-\]
+$$
 and the latter index is odd. Thus $[N_G(P):C_G(P)]$ is both a power of $2$ and odd, so it equals $1$.
 
 :::
@@ -88,19 +88,19 @@ If two elements of $P$ are conjugate in $G$, then they are equal.
 ::: pf-proof
 
 Suppose $a\in P$ and $g^{-1}ag\in P$. Put
-\[
+$$
 b=g^{-1}ag.
-\]
+$$
 Because $P$ is cyclic, it is abelian, so $P\le C_G(b)$. Also $g^{-1}Pg\le C_G(b)$, since $P\le C_G(a)$. Both $P$ and $g^{-1}Pg$ have order $2^k$, hence both are Sylow $2$-subgroups of $C_G(b)$.
 
 By the Sylow conjugacy theorem inside $C_G(b)$, there exists $c\in C_G(b)$ such that
-\[
+$$
 c^{-1}(g^{-1}Pg)c=P.
-\]
+$$
 Thus $gc\in N_G(P)$. By step [](#s2){.pf-ref}, $gc\in C_G(P)$, so
-\[
+$$
 a=(gc)^{-1}a(gc)=c^{-1}g^{-1}agc=c^{-1}bc=b.
-\]
+$$
 Hence conjugacy inside $G$ does not fuse distinct elements of $P$.
 
 :::
@@ -110,9 +110,9 @@ Hence conjugacy inside $G$ does not fuse distinct elements of $P$.
 ::: {.pf-step #s4}
 
 The transfer homomorphism
-\[
+$$
 V:G\longrightarrow P
-\]
+$$
 is surjective.
 
 ::: pf-proof
@@ -120,15 +120,15 @@ is surjective.
 Since $P$ is abelian, the transfer from $G$ to $P/P'$ takes values in $P$ itself. For $u\in P$, decompose the right cosets of $P$ in $G$ into orbits under right multiplication by the cyclic group $\langle u\rangle$. If an orbit has length $r$, the corresponding factor in the transfer formula is a $G$-conjugate of $u^r$ which lies in $P$.
 
 By step [](#s3){.pf-ref}, that conjugate must equal $u^r$. Multiplying over all orbits therefore gives
-\[
+$$
 V(u)=u^{\sum r}=u^{[G:P]}=u^m.
-\]
+$$
 Because $m$ is odd and $|P|=2^k$, the map
-\[
+$$
 P\longrightarrow P,
 \qquad
 u\longmapsto u^m
-\]
+$$
 is an automorphism of the cyclic group $P$. Hence the restriction $V|_P$ is surjective, and therefore $V$ is surjective.
 
 :::
@@ -138,21 +138,21 @@ is an automorphism of the cyclic group $P$. Hence the restriction $V|_P$ is surj
 ::: pf-step
 
 The kernel
-\[
+$$
 H:=\ker V
-\]
+$$
 is a normal subgroup of order $m$.
 
 ::: pf-proof
 
 By step [](#s4){.pf-ref}, $V$ is a surjective homomorphism onto $P$, so the first isomorphism theorem gives
-\[
+$$
 [G:H]=|P|=2^k.
-\]
+$$
 Consequently
-\[
+$$
 |H|=\frac{|G|}{2^k}=m.
-\]
+$$
 As a kernel, $H$ is normal in $G$.
 
 :::
@@ -166,9 +166,9 @@ The subgroup $H$ is characteristic in $G$.
 ::: pf-proof
 
 First, $H$ is the unique normal subgroup of $G$ having order $m$. Indeed, if $K\trianglelefteq G$ also has order $m$, then $HK$ is a subgroup because both $H$ and $K$ are normal, and
-\[
+$$
 |HK|=\frac{|H||K|}{|H\cap K|}
-\]
+$$
 is odd. Since the largest odd divisor of $|G|=2^k m$ is $m$, we have $|HK|\le m$. But $H\subseteq HK$ and $|H|=m$, so $HK=H$, whence $K\subseteq H$. Equal orders give $K=H$.
 
 Every automorphism of $G$ sends a normal subgroup of order $m$ to another normal subgroup of order $m$. By uniqueness it fixes $H$. Therefore $H$ is characteristic.

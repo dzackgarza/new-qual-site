@@ -12,13 +12,13 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 X=D^2\times S^1
-\]
+$$
 be a solid torus, and let
-\[
+$$
 A=S^1\times S^1
-\]
+$$
 be its boundary. Compute $H_n(X,A)$ for all $n$.
 :::
 

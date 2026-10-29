@@ -26,21 +26,21 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 A=
 \begin{pmatrix}
 1&2\\
 3&4
 \end{pmatrix}.
-\]
+$$
 Show that every real matrix $B$ satisfying
-\[
+$$
 AB=BA
-\]
+$$
 has the form
-\[
+$$
 B=sI+tA
-\]
+$$
 for some $s,t\in\RR$.
 :::
 

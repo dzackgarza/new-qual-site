@@ -21,14 +21,14 @@ Show that a morphism of sheaves is an isomorphism if and only if it is both inje
 ::: {.solution}
 Let $\phi: \mcf \to \mcg$ be a morphism of sheaves.
 Being injective and surjective says exactly that the sequence
-\[
+$$
 0 \to \mcf \mapsvia{\phi} \mcg \to 0
-\]
+$$
 is exact as a sequence of sheaves.
 By the stalkwise criterion for exactness, this holds if and only if
-\[
+$$
 0 \to \mcf_P \mapsvia{\phi_P} \mcg_P \to 0
-\]
+$$
 is exact for every $P$, that is, if and only if every $\phi_P$ is an isomorphism of abelian groups.
 
 It remains to see that a morphism of sheaves which is an isomorphism on all stalks is an isomorphism.

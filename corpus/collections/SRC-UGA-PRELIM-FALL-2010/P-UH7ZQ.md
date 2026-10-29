@@ -26,20 +26,20 @@ c. Given $\varepsilon > 0$, there is $N \in \NN$ so that whenever $n > N$, we ha
 
 ::: {.solution}
 (a) The negation is:
-\[
+$$
 \text{For every integer }x\text{ there is an integer }y\text{ such that }x+y\text{ is even.}
-\]
+$$
 
 (b) The negation is:
-\[
+$$
 \text{There is an odd integer }x\text{ and an integer }y\text{ such that }xy\text{ is even.}
-\]
+$$
 
 (c) The negation is:
-\[
+$$
 \text{There exists }\varepsilon>0\text{ such that for every }N\in\NN
 \text{ there is }n>N\text{ with }
 \left|\frac{n+2}{n+1}-1\right|\ge\varepsilon.
-\]
+$$
 These follow by replacing each quantifier by its opposite and negating the final predicate.
 :::

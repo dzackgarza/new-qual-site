@@ -47,17 +47,17 @@ Statement (a) is false.
 ::: pf-proof
 
 Let
-\[
+$$
 f(x)=\frac{\mathbf 1_{[1,\infty)}(x)}{x}.
-\]
+$$
 Then
-\[
+$$
 \int_1^\infty |f(x)|^2\,dx=\int_1^\infty x^{-2}\,dx<\infty,
-\]
+$$
 so $f\in L^2(\RR)$, whereas
-\[
+$$
 \int_1^\infty |f(x)|\,dx=\int_1^\infty x^{-1}\,dx=\infty.
-\]
+$$
 Thus $f\notin L^1(\RR)$.
 
 :::
@@ -71,17 +71,17 @@ Statement (b) is false.
 ::: pf-proof
 
 Let
-\[
+$$
 g(x)=x^{-2/3}\mathbf 1_{(0,1)}(x).
-\]
+$$
 Then
-\[
+$$
 \int_0^1 |g(x)|\,dx=\int_0^1x^{-2/3}\,dx<\infty,
-\]
+$$
 so $g\in L^1(\RR)$, but
-\[
+$$
 \int_0^1 |g(x)|^2\,dx=\int_0^1x^{-4/3}\,dx=\infty.
-\]
+$$
 Hence $g\notin L^2(\RR)$.
 
 :::
@@ -95,12 +95,12 @@ Statement (c) is true.
 ::: pf-proof
 
 By Cauchy--Schwarz,
-\[
+$$
 \|f\|_{L^1([0,1])}
 =\int_0^1|f(x)|\cdot1\,dx
 \le \|f\|_{L^2([0,1])}\|1\|_{L^2([0,1])}
 =\|f\|_2.
-\]
+$$
 Thus every $L^2([0,1])$ function belongs to $L^1([0,1])$.
 
 :::
@@ -114,9 +114,9 @@ Statement (d) is false.
 ::: pf-proof
 
 The same function
-\[
+$$
 g(x)=x^{-2/3},\qquad 0<x<1,
-\]
+$$
 belongs to $L^1([0,1])$ but not to $L^2([0,1])$, by the calculation in step [](#s2){.pf-ref}.
 
 :::

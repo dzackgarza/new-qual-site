@@ -23,9 +23,9 @@ audit:
 Let $G$ and $H$ be finite groups and let $A:G\to\mathrm{GL}_n(\CC)$ and $B:H\to\mathrm{GL}_m(\CC)$ be representations of $G$ and $H$ respectively.
 
 (a) Show that $A\times B:G\times H\to\mathrm{GL}_{nm}(\CC)$ is a representation where for $(\sigma,\tau)\in G\times H$,
-\[
+$$
 (A\times B)((\sigma,\tau))=A(\sigma)\otimes B(\tau)
-\]
+$$
 and for matrices $M$ and $N$, $M\otimes N$ is the Kronecker product of $M$ and $N$.
 
 (b) Show that if $A$ is an irreducible representation of $G$ and $B$ is an irreducible representation of $H$, then $A\times B$ is an irreducible representation of $G\times H$.
@@ -40,18 +40,18 @@ and for matrices $M$ and $N$, $M\otimes N$ is the Kronecker product of $M$ and $
 ::: pf-step
 
 The map
-\[
+$$
 A\times B:G\times H\to \mathrm{GL}_{nm}(\CC),\qquad
 (A\times B)(g,h)=A(g)\otimes B(h),
-\]
+$$
 is a representation.
 
 ::: pf-proof
 
 For compatible matrices,
-\[
+$$
 (M_1\otimes N_1)(M_2\otimes N_2)=(M_1M_2)\otimes(N_1N_2).
-\]
+$$
 Hence multiplication in $G\times H$ is respected, and $(A\times B)(e_G,e_H)=I_{nm}$.
 
 :::
@@ -61,9 +61,9 @@ Hence multiplication in $G\times H$ is respected, and $(A\times B)(e_G,e_H)=I_{n
 ::: {.pf-step #s2}
 
 Its character is
-\[
+$$
 \chi_{A\times B}(g,h)=\chi_A(g)\chi_B(h).
-\]
+$$
 
 ::: pf-proof
 
@@ -80,10 +80,10 @@ If $A$ and $B$ are irreducible, then $A\times B$ is irreducible.
 ::: pf-proof
 
 Using step [](#s2){.pf-ref},
-\[
+$$
 \langle\chi_{A\times B},\chi_{A\times B}\rangle_{G\times H}
 =\langle\chi_A,\chi_A\rangle_G\,\langle\chi_B,\chi_B\rangle_H=1.
-\]
+$$
 Thus the character has norm $1$, hence is irreducible.
 
 :::
@@ -93,10 +93,10 @@ Thus the character has norm $1$, hence is irreducible.
 ::: {.pf-step #s4}
 
 More generally, for irreducibles $A_i,A_j$ of $G$ and $B_r,B_s$ of $H$,
-\[
+$$
 \langle\chi_{A_i\times B_r},\chi_{A_j\times B_s}\rangle_{G\times H}
 =\langle\chi_{A_i},\chi_{A_j}\rangle_G\,\langle\chi_{B_r},\chi_{B_s}\rangle_H.
-\]
+$$
 
 ::: pf-proof
 

@@ -47,13 +47,13 @@ You do not need to give detailed proofs.
 
 ::: {.solution}
 For part (i), let the six vertices of the polygon, in boundary order, be
-\[
+$$
 v_0,v_1,\ldots,v_5,
-\]
+$$
 so that its directed boundary word is
-\[
+$$
 x\,y\,z\,x^{-1}\,z\,y^{-1}.
-\]
+$$
 
 ::: pf
 
@@ -62,7 +62,7 @@ All six polygon vertices are identified to one vertex in the quotient.
 
 ::: pf-proof
 Matching equally labelled edges in the directions indicated by their labels gives the endpoint identifications
-\[
+$$
 \begin{array}{c|c}
 \text{edge pair}&\text{vertex identifications}\\
 \hline
@@ -70,17 +70,17 @@ x,\ x^{-1}&v_0\sim v_4,\quad v_1\sim v_3,\\
 y,\ y^{-1}&v_1\sim v_0,\quad v_2\sim v_5,\\
 z,\ z&v_2\sim v_4,\quad v_3\sim v_5.
 \end{array}
-\]
+$$
 The first two rows already give
-\[
+$$
 v_4\sim v_0\sim v_1\sim v_3
 \qquad\text{and}\qquad
 v_2\sim v_5.
-\]
+$$
 The $z$-identifications join these two classes, since
-\[
+$$
 v_2\sim v_4.
-\]
+$$
 Hence every $v_i$ belongs to the same equivalence class.
 :::
 
@@ -88,24 +88,24 @@ Hence every $v_i$ belongs to the same equivalence class.
 
 ::: {.pf-step #euler-characteristic}
 The quotient surface has Euler characteristic
-\[
+$$
 \chi=-1.
-\]
+$$
 
 ::: pf-proof
 The polygon quotient gives a CW structure with one $2$-cell, one $1$-cell for each paired label $x,y,z$, and by step [](#vertices-identified){.pf-ref} one $0$-cell.
 Thus
-\[
+$$
 F=1,
 \qquad
 E=3,
 \qquad
 V=1,
-\]
+$$
 and therefore
-\[
+$$
 \chi=V-E+F=1-3+1=-1.
-\]
+$$
 :::
 
 :::
@@ -115,9 +115,9 @@ The quotient surface is nonorientable.
 
 ::: pf-proof
 In the boundary word the two occurrences of $z$ have the same exponent:
-\[
+$$
 \cdots z\cdots z\cdots.
-\]
+$$
 Thus the two $z$-edges are glued with the same boundary direction rather than with opposite boundary directions.
 For an orientation on the polygon interior to descend across a paired boundary edge, the induced boundary orientations on the two copies must be opposite.
 The $z$-pair violates this condition, so no orientation descends to the quotient surface.
@@ -128,28 +128,28 @@ Hence the surface is nonorientable.
 
 ::: pf-step
 The surface in part (i) is
-\[
+$$
 \boxed{\RP^2\#\RP^2\#\RP^2},
-\]
+$$
 the nonorientable surface of genus $3$, and its Euler characteristic is
-\[
+$$
 \boxed{-1}.
-\]
+$$
 
 ::: pf-proof
 By the classification theorem for compact connected surfaces, a closed nonorientable surface is uniquely a connected sum
-\[
+$$
 N_k=\#^k\RP^2
-\]
+$$
 for some $k\ge1$, and
-\[
+$$
 \chi(N_k)=2-k.
-\]
+$$
 By steps [](#euler-characteristic){.pf-ref} and [](#nonorientable){.pf-ref} the present surface is nonorientable and has Euler characteristic $-1$.
 Therefore
-\[
+$$
 -1=2-k,
-\]
+$$
 so $k=3$.
 :::
 
@@ -176,39 +176,39 @@ Consequently the boundary has an even number of sides and can be encoded by a wo
 
 ::: {.pf-step #orientable-normal-form}
 In the orientable case, elementary cut-and-paste changes of the polygon reduce the edge word to
-\[
+$$
 a_1b_1a_1^{-1}b_1^{-1}
 \cdots
 a_gb_ga_g^{-1}b_g^{-1}.
-\]
+$$
 Its quotient is the orientable surface
-\[
+$$
 \Sigma_g=\#^g(S^1\times S^1)
-\]
+$$
 of genus $g$, with
-\[
+$$
 \chi(\Sigma_g)=2-2g.
-\]
+$$
 
 ::: pf-proof
 For an orientable quotient, every paired label can be arranged to occur once in each direction.
 The standard polygon-reduction moves gather the pairs into commutator blocks
-\[
+$$
 [a_i,b_i]=a_ib_ia_i^{-1}b_i^{-1}.
-\]
+$$
 Each block is the usual fundamental polygon for one torus handle, so the quotient is a connected sum of $g$ tori.
 The standard one-vertex CW structure has
-\[
+$$
 V=1,
 \qquad
 E=2g,
 \qquad
 F=1,
-\]
+$$
 giving
-\[
+$$
 \chi=1-2g+1=2-2g.
-\]
+$$
 The sphere is the genus-$0$ case; it may also be represented by a $2$-gon with word $aa^{-1}$.
 :::
 
@@ -216,37 +216,37 @@ The sphere is the genus-$0$ case; it may also be represented by a $2$-gon with w
 
 ::: {.pf-step #nonorientable-normal-form}
 In the nonorientable case, elementary cut-and-paste changes reduce the edge word to
-\[
+$$
 a_1a_1a_2a_2\cdots a_ka_k.
-\]
+$$
 Its quotient is the nonorientable surface
-\[
+$$
 N_k=\#^k\RP^2
-\]
+$$
 of genus $k$, with
-\[
+$$
 \chi(N_k)=2-k.
-\]
+$$
 
 ::: pf-proof
 The presence of a paired edge occurring twice with the same direction produces a crosscap.
 The polygon-reduction moves collect all orientation-reversing pairs into square blocks
-\[
+$$
 a_i a_i.
-\]
+$$
 A single square block is the standard polygonal presentation of $\RP^2$, and concatenating $k$ such blocks gives the connected sum of $k$ projective planes.
 Its standard one-vertex CW structure has
-\[
+$$
 V=1,
 \qquad
 E=k,
 \qquad
 F=1,
-\]
+$$
 so
-\[
+$$
 \chi=1-k+1=2-k.
-\]
+$$
 :::
 
 :::
@@ -258,13 +258,13 @@ These normal forms classify compact connected surfaces without boundary.
 Every such surface has a paired polygon presentation by step [](#polygon-presentation-exists){.pf-ref}. The reduction in steps [](#orientable-normal-form){.pf-ref} and [](#nonorientable-normal-form){.pf-ref} places it in exactly one of two families: orientable or nonorientable.
 Orientability distinguishes the two families.
 Within the orientable family, the Euler characteristic determines
-\[
+$$
 g=1-\frac{\chi}{2};
-\]
+$$
 within the nonorientable family it determines
-\[
+$$
 k=2-\chi.
-\]
+$$
 Thus the polygonal normal form records exactly the orientability and genus, which are the invariants in the classification theorem.
 :::
 

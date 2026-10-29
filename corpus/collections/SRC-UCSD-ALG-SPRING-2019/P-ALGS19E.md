@@ -33,16 +33,16 @@ Prove that $\operatorname{Hom}_A(P_1, P_2)$ is a projective $A$-module.
 
 ::: {.pf-step #s1}
 
-Since \(P_1\) and \(P_2\) are finitely generated projective, there exist finitely generated modules \(Q_1,Q_2\) and integers \(m,n\ge 0\) such that
-\[
+Since $P_1$ and $P_2$ are finitely generated projective, there exist finitely generated modules $Q_1,Q_2$ and integers $m,n\ge 0$ such that
+$$
 P_1\oplus Q_1\cong A^m,
 \qquad
 P_2\oplus Q_2\cong A^n.
-\]
+$$
 
 ::: pf-proof
 
-A finitely generated projective module is a direct summand of a finite free module. Indeed, choose a surjection \(A^m\twoheadrightarrow P_1\); projectivity splits it, so \(A^m\cong P_1\oplus Q_1\). The same argument applies to \(P_2\).
+A finitely generated projective module is a direct summand of a finite free module. Indeed, choose a surjection $A^m\twoheadrightarrow P_1$; projectivity splits it, so $A^m\cong P_1\oplus Q_1$. The same argument applies to $P_2$.
 
 :::
 
@@ -51,18 +51,18 @@ A finitely generated projective module is a direct summand of a finite free modu
 ::: {.pf-step #s2}
 
 There is a natural direct-sum decomposition
-\[
+$$
 \operatorname{Hom}_A(P_1\oplus Q_1,P_2\oplus Q_2)
 \cong
 \operatorname{Hom}_A(P_1,P_2)
 \oplus\operatorname{Hom}_A(P_1,Q_2)
 \oplus\operatorname{Hom}_A(Q_1,P_2)
 \oplus\operatorname{Hom}_A(Q_1,Q_2).
-\]
+$$
 
 ::: pf-proof
 
-A homomorphism from \(P_1\oplus Q_1\) to \(P_2\oplus Q_2\) is uniquely determined by its four component maps obtained by composing the two source inclusions with the two target projections. Conversely, any four such component maps assemble uniquely to a homomorphism of the direct sums.
+A homomorphism from $P_1\oplus Q_1$ to $P_2\oplus Q_2$ is uniquely determined by its four component maps obtained by composing the two source inclusions with the two target projections. Conversely, any four such component maps assemble uniquely to a homomorphism of the direct sums.
 
 :::
 
@@ -71,15 +71,15 @@ A homomorphism from \(P_1\oplus Q_1\) to \(P_2\oplus Q_2\) is uniquely determine
 ::: {.pf-step #s3}
 
 The module in the left-hand side of step [](#s2){.pf-ref} is finite free:
-\[
+$$
 \operatorname{Hom}_A(P_1\oplus Q_1,P_2\oplus Q_2)
 \cong \operatorname{Hom}_A(A^m,A^n)
 \cong A^{mn}.
-\]
+$$
 
 ::: pf-proof
 
-Use the isomorphisms from step [](#s1){.pf-ref}. An \(A\)-linear map \(A^m\to A^n\) is uniquely specified by an \(n\times m\) matrix with entries in \(A\), and the set of such matrices is the free \(A\)-module \(A^{mn}\).
+Use the isomorphisms from step [](#s1){.pf-ref}. An $A$-linear map $A^m\to A^n$ is uniquely specified by an $n\times m$ matrix with entries in $A$, and the set of such matrices is the free $A$-module $A^{mn}$.
 
 :::
 
@@ -87,11 +87,11 @@ Use the isomorphisms from step [](#s1){.pf-ref}. An \(A\)-linear map \(A^m\to A^
 
 ::: pf-step
 
-Therefore \(\operatorname{Hom}_A(P_1,P_2)\) is projective.
+Therefore $\operatorname{Hom}_A(P_1,P_2)$ is projective.
 
 ::: pf-proof
 
-By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, \(\operatorname{Hom}_A(P_1,P_2)\) is a direct summand of the free module \(A^{mn}\). Every direct summand of a free module is projective.
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, $\operatorname{Hom}_A(P_1,P_2)$ is a direct summand of the free module $A^{mn}$. Every direct summand of a free module is projective.
 
 :::
 

@@ -40,15 +40,15 @@ c. For all $n\geq1$, prove that $H_n(X)\cong H_{n+1}(SX)$.
 
 ::: {.solution}
 Let
-\[
+$$
 q:X\times[-1,1]\longrightarrow SX
-\]
+$$
 be the quotient map, and write
-\[
+$$
 N=q(X\times\{1\}),
 \qquad
 S=q(X\times\{-1\})
-\]
+$$
 for the north and south suspension points.
 
 ::: pf
@@ -56,38 +56,38 @@ for the north and south suspension points.
 ::: {.pf-step #s1}
 
 The subspaces
-\[
+$$
 U=SX\setminus\{S\},
 \qquad
 V=SX\setminus\{N\}
-\]
+$$
 are open, contractible, and satisfy $SX=U\cup V$.
 
 ::: pf-proof
 
 The sets are open because
-\[
+$$
 q^{-1}(U)=X\times(-1,1],
 \qquad
 q^{-1}(V)=X\times[-1,1)
-\]
+$$
 are open in the product $X\times[-1,1]$ with its relative topology.
 Their union is all of $SX$.
 
 On $U$, define
-\[
+$$
 H_U([x,t],s)=[x,(1-s)t+s],
 \qquad 0\le s\le1.
-\]
+$$
 For $t>-1$ the second coordinate remains greater than $-1$, and when $t=1$ the expression stays at the north pole, so the formula is well defined on the quotient.
 It is induced by a continuous map on $X\times(-1,1]\times[0,1]$, hence is continuous.
 At $s=0$ it is the identity and at $s=1$ it is the constant map to $N$.
 Thus $U$ is contractible.
 
 Similarly,
-\[
+$$
 H_V([x,t],s)=[x,(1-s)t-s]
-\]
+$$
 contracts $V$ to $S$.
 This proves part (a).
 
@@ -102,14 +102,14 @@ The intersection $U\cap V$ is homeomorphic to $X\times(-1,1)$ and hence homotopy
 ::: pf-proof
 
 One has
-\[
+$$
 q^{-1}(U\cap V)=X\times(-1,1).
-\]
+$$
 No two distinct points of this set are identified by the suspension quotient, since the only nontrivial identifications occur at the levels $t=\pm1$.
 The restriction of $q$ to this saturated open subset is therefore a bijective quotient map, hence a homeomorphism
-\[
+$$
 X\times(-1,1)\xrightarrow{\cong}U\cap V.
-\]
+$$
 Projection onto $X$ is a homotopy equivalence because $(-1,1)$ is contractible.
 
 :::
@@ -119,20 +119,20 @@ Projection onto $X$ is a homotopy equivalence because $(-1,1)$ is contractible.
 ::: pf-step
 
 If $X$ is path-connected, then
-\[
+$$
 \boxed{\pi_1(SX)=\{0\}}.
-\]
+$$
 
 ::: pf-proof
 
 If $X$ is path-connected, then step [](#s2){.pf-ref} implies that $U\cap V$ is path-connected.
 The sets $U$ and $V$ are open and contractible by step [](#s1){.pf-ref}, hence path-connected and simply connected.
 The Seifert–van Kampen theorem gives
-\[
+$$
 \pi_1(SX)
 \cong
 \pi_1(U)*_{\pi_1(U\cap V)}\pi_1(V).
-\]
+$$
 Both outer groups are trivial, so their amalgamated product is trivial.
 This proves part (b).
 
@@ -143,36 +143,36 @@ This proves part (b).
 ::: pf-step
 
 For every $n\ge1$ there is an isomorphism
-\[
+$$
 \boxed{H_{n+1}(SX)\cong H_n(X)}.
-\]
+$$
 
 ::: pf-proof
 
 Apply the Mayer–Vietoris sequence to the open cover $SX=U\cup V$.
 For $n\ge1$, contractibility of $U$ and $V$ gives
-\[
+$$
 H_{n+1}(U)\oplus H_{n+1}(V)=0,
 \qquad
 H_n(U)\oplus H_n(V)=0.
-\]
+$$
 Hence the relevant exact segment is
-\[
+$$
 0
 \longrightarrow H_{n+1}(SX)
 \xrightarrow{\partial}
 H_n(U\cap V)
 \longrightarrow0.
-\]
+$$
 Thus $\partial$ is an isomorphism.
 By step [](#s2){.pf-ref},
-\[
+$$
 H_n(U\cap V)\cong H_n(X).
-\]
+$$
 Combining the two isomorphisms yields
-\[
+$$
 H_{n+1}(SX)\cong H_n(X)
-\]
+$$
 for every $n\ge1$, which is part (c).
 
 :::

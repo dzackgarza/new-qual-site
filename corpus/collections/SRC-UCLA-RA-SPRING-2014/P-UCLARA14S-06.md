@@ -22,9 +22,9 @@ Let $H$ be a Hilbert space and $(a_n)$ a sequence with $\|a_n\|=1$ for every $n$
 (a) Show that if $(a_n)$ spans $H$ linearly, then $H$ is finite-dimensional.
 
 (b) Show that if
-\[
+$$
 \langle a_n,\xi\rangle\to0\qquad\text{for every }\xi\in H,
-\]
+$$
 then $0$ belongs to the closed convex hull of $\{a_n:n\ge1\}$.
 :::
 
@@ -35,20 +35,20 @@ then $0$ belongs to the closed convex hull of $\{a_n:n\ge1\}$.
 ::: {.pf-step #s1-1}
 
 For each $N\ge1$, let
-\[
+$$
 S_N
 \coloneqq
 \operatorname{span}\{a_1,\dots,a_N\}.
-\]
+$$
 If $H$ is infinite dimensional, then every $S_N$ is closed and nowhere dense in $H$.
 
 
 ::: pf-proof
 
 Each $S_N$ is finite dimensional, hence closed. If some $S_N$ had nonempty interior, then because $S_N$ is a linear subspace it would contain a ball about $0$. Scalar dilation would then imply that $S_N$ contains every vector of $H$, so
-\[
+$$
 S_N=H.
-\]
+$$
 That would make $H$ finite dimensional, contrary to the assumption. Thus every $S_N$ has empty interior; being closed, it is nowhere dense.
 
 :::
@@ -58,11 +58,11 @@ That would make $H$ finite dimensional, contrary to the assumption. Thus every $
 ::: {.pf-step #s1-2}
 
 If $(a_n)$ spans $H$ linearly, then
-\[
+$$
 H
 =
 \bigcup_{N=1}^\infty S_N.
-\]
+$$
 
 
 ::: pf-proof
@@ -76,9 +76,9 @@ Every vector in the algebraic span of the sequence is a finite linear combinatio
 ::: {.pf-step #s1-3}
 
 If $(a_n)$ spans $H$ linearly, then
-\[
+$$
 \boxed{H\text{ is finite dimensional}.}
-\]
+$$
 
 
 ::: pf-proof
@@ -92,49 +92,49 @@ Suppose $H$ were infinite dimensional. By step [](#s1-1){.pf-ref}, each $S_N$ wo
 ::: pf-step
 
 Assume now that
-\[
+$$
 \langle a_n,\xi\rangle\longrightarrow0
 \qquad
 (\xi\in H).
-\]
+$$
 Fix $\varepsilon>0$. There exist an integer $r\ge1$ and indices
-\[
+$$
 n_1<n_2<\cdots<n_r
-\]
+$$
 such that
-\[
+$$
 \frac1r<\frac{\varepsilon^2}{2}
-\]
+$$
 and
-\[
+$$
 |\langle a_{n_i},a_{n_j}\rangle|
 <
 \frac{\varepsilon^2}{2}
 \qquad
 (i\ne j).
-\]
+$$
 
 
 ::: pf-proof
 
 Choose $r$ so large that $1/r<\varepsilon^2/2$. Set
-\[
+$$
 n_1=1.
-\]
+$$
 Suppose $n_1<\cdots<n_k$ have been chosen. For each fixed $j\le k$, the weak convergence hypothesis applied to
-\[
+$$
 \xi=a_{n_j}
-\]
+$$
 gives
-\[
+$$
 \langle a_n,a_{n_j}\rangle\to0.
-\]
+$$
 Since there are only finitely many previous vectors, choose $n_{k+1}>n_k$ sufficiently large that
-\[
+$$
 |\langle a_{n_{k+1}},a_{n_j}\rangle|
 <
 \frac{\varepsilon^2}{2}
-\]
+$$
 for every $j\le k$. Continue until $r$ indices have been selected.
 
 :::
@@ -144,22 +144,22 @@ for every $j\le k$. Continue until $r$ indices have been selected.
 ::: {.pf-step #s1-5}
 
 The convex combination
-\[
+$$
 c
 \coloneqq
 \frac1r
 \sum_{j=1}^r a_{n_j}
-\]
+$$
 satisfies
-\[
+$$
 \|c\|<\varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
 Using $\|a_{n_j}\|=1$,
-\[
+$$
 \begin{aligned}
 \|c\|^2
 &=
@@ -189,7 +189,7 @@ r
 &<
 \varepsilon^2.
 \end{aligned}
-\]
+$$
 Hence $\|c\|<\varepsilon$.
 
 :::
@@ -199,13 +199,13 @@ Hence $\|c\|<\varepsilon$.
 ::: {.pf-step #s1-6}
 
 One has
-\[
+$$
 \boxed{
 0\in
 \overline{\operatorname{conv}}
 \{a_n:n\ge1\}
 }.
-\]
+$$
 
 
 ::: pf-proof

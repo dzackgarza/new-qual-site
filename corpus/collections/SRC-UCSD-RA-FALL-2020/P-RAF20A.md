@@ -59,20 +59,20 @@ Statement (1) is false.
 ::: pf-proof
 
 Take $X=\ell^2$ and let
-\[
+$$
 A:=\{e_n:n\ge1\},
-\]
+$$
 where $(e_n)$ is the standard orthonormal basis. Since
-\[
+$$
 \|e_n-e_m\|_2=\sqrt2
 \qquad(n\ne m),
-\]
+$$
 the set $A$ is norm closed.
 
 For every $x=(x_k)\in\ell^2$,
-\[
+$$
 \langle e_n,x\rangle=x_n\longrightarrow0,
-\]
+$$
 so $e_n\rightharpoonup0$ weakly. But $0\notin A$. Hence a norm-closed subset of a Banach space need not be sequentially weakly closed.
 
 :::
@@ -86,13 +86,13 @@ Statement (2) is true.
 ::: pf-proof
 
 Because $X$ is Hausdorff, every compact subset $K_j$ is closed. The nested family $(K_j)$ has the finite-intersection property: for every $N$,
-\[
+$$
 \bigcap_{j=1}^N K_j=K_N\ne\varnothing.
-\]
+$$
 Since $X$ is compact, every family of closed subsets with the finite-intersection property has nonempty total intersection. Therefore
-\[
+$$
 \boxed{\bigcap_{j=1}^\infty K_j\ne\varnothing.}
-\]
+$$
 
 :::
 
@@ -105,26 +105,26 @@ Statement (3) is false.
 ::: pf-proof
 
 Take $X=\RR$ and
-\[
+$$
 \mu_n=\delta_{1/n},
 \qquad
 \mu=\delta_0.
-\]
+$$
 For every $\varphi\in C_c(\RR)$,
-\[
+$$
 \int\varphi\,d\mu_n=\varphi(1/n)\longrightarrow\varphi(0)=\int\varphi\,d\mu,
-\]
+$$
 so $\mu_n\to\mu$ vaguely.
 
 However, for the Borel set $E=\{0\}$,
-\[
+$$
 \mu_n(E)=0
 \qquad\text{for every }n,
-\]
+$$
 whereas
-\[
+$$
 \mu(E)=1.
-\]
+$$
 Thus vague convergence does not imply convergence on every Borel set.
 
 :::
@@ -138,25 +138,25 @@ Statement (4) is false.
 ::: pf-proof
 
 Choose nonzero functions
-\[
+$$
 \phi,\psi\in C_c^\infty(\RR^n)
-\]
+$$
 with disjoint supports. Let
-\[
+$$
 f=\mathcal F^{-1}\phi,
 \qquad
 g=\mathcal F^{-1}\psi.
-\]
+$$
 The inverse Fourier transform maps $C_c^\infty$ into the Schwartz space, so $f,g\in\mathcal S$ and neither is identically zero.
 
 By the convolution theorem,
-\[
+$$
 \widehat{f*g}=\widehat f\,\widehat g=\phi\psi=0.
-\]
+$$
 Since the Fourier transform is injective on $\mathcal S$,
-\[
+$$
 f*g=0.
-\]
+$$
 Thus two nonzero Schwartz functions can have zero convolution.
 
 :::

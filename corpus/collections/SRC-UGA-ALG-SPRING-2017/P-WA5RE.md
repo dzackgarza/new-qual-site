@@ -52,9 +52,9 @@ These are the defining properties of a splitting field.
 ::: {.pf-step #s1-2}
 
 The polynomial
-\[
+$$
 \boxed{g(x)=x^{q^n}-x\in F[x]}
-\]
+$$
 has as its distinct roots exactly the elements of $E$.
 
 

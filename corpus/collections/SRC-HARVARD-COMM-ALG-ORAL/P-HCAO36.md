@@ -44,7 +44,7 @@ extension.
 
 ::: pf-proof
 Take
-\[
+$$
 A=\ZZ,
 \qquad
 B=\QQ,
@@ -52,11 +52,11 @@ B=\QQ,
 I=(2),
 \qquad
 J=(1).
-\]
+$$
 Then $I\subsetneq J$, but $2$ is a unit in $\QQ$, so
-\[
+$$
 IB=2\QQ=\QQ=JB.
-\]
+$$
 :::
 
 :::
@@ -66,13 +66,13 @@ If $B$ is faithfully flat over $A$, then $IB=JB$ implies $I=J$.
 
 ::: pf-proof
 Because $I\subseteq J$, there is an exact sequence
-\[
+$$
 0\longrightarrow I\longrightarrow J\longrightarrow J/I\longrightarrow0.
-\]
+$$
 Flatness of $B$ gives
-\[
+$$
 (J/I)\otimes_A B\cong JB/IB.
-\]
+$$
 If $IB=JB$, the right-hand side is zero. Faithful flatness detects zero
 modules, so $J/I=0$. Hence $I=J$.
 :::
@@ -82,9 +82,9 @@ modules, so $J/I=0$. Hence $I=J$.
 ::: pf-step
 If $B$ is faithfully flat over $A$, then every ideal is contracted from
 its extension:
-\[
+$$
 IB\cap A=I
-\]
+$$
 for every ideal $I\subseteq A$.
 
 ::: pf-proof

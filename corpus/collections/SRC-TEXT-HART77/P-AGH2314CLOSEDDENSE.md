@@ -33,16 +33,16 @@ Give an example to show that this is not true for arbitrary schemes.
 
 ::: {.pf-step #affine-opens-finitely-generated-k-algebra}
 Let $X$ be of finite type over a field $k$.  Every affine open
-\[
+$$
 U=\Spec A\subseteq X
-\]
+$$
 has $A$ a finitely generated $k$-algebra.
 
 ::: pf-proof
 Apply Hartshorne II.3.3(c) to the finite type structure morphism
-\[
+$$
 X\longrightarrow\Spec k.
-\]
+$$
 Since the target is affine, every affine open in $X$ has coordinate ring finitely generated over $k$.
 :::
 
@@ -53,15 +53,15 @@ If $x\in X$ has residue field $\kappa(x)$ finite over $k$, then $x$ is a closed 
 
 ::: pf-proof
 Suppose $y$ is a specialization of $x$.  Choose an affine neighborhood
-\[
+$$
 V=\Spec B
-\]
+$$
 of $y$.  Open subsets are stable under generization, so $x\in V$ as well.
 
 Let $\mathfrak p\subseteq B$ be the prime corresponding to $x$.  By step [](#affine-opens-finitely-generated-k-algebra){.pf-ref}, $B$ is a finitely generated $k$-algebra, hence so is $B/\mathfrak p$.  Moreover
-\[
+$$
 B/\mathfrak p\subseteq\kappa(x),
-\]
+$$
 and $\kappa(x)$ is finite-dimensional over $k$.  Therefore $B/\mathfrak p$ is finite-dimensional over $k$.  Being a domain, it is a field.  Thus $\mathfrak p$ is maximal in $B$.
 
 Hence $x$ has no proper specialization inside $V$.  Since $y\in V$ is a specialization of $x$, we obtain $y=x$.  Therefore $x$ has no proper specialization in $X$ and is closed.
@@ -74,15 +74,15 @@ Every nonempty open subset $W\subseteq X$ contains a closed point of $X$.
 
 ::: pf-proof
 Choose any point of $W$ and an affine neighborhood
-\[
+$$
 U=\Spec A\subseteq W.
-\]
+$$
 The nonzero ring $A$ has a maximal ideal $\mathfrak m$, giving a point $x\in U$.
 
 By step [](#affine-opens-finitely-generated-k-algebra){.pf-ref}, $A$ is a finitely generated $k$-algebra.  Zariski's lemma therefore implies that
-\[
+$$
 \kappa(x)=A/\mathfrak m
-\]
+$$
 is a finite algebraic extension of $k$.  Step [](#finite-residue-field-implies-closed){.pf-ref} now shows that $x$ is closed in all of $X$.
 :::
 
@@ -102,23 +102,23 @@ The conclusion fails for arbitrary schemes.
 
 ::: pf-proof
 Let
-\[
+$$
 R=k[t]_{(t)}
-\]
+$$
 be the local ring of the affine line at the origin, and put
-\[
+$$
 X=\Spec R.
-\]
+$$
 The only prime ideals of the discrete valuation ring $R$ are
-\[
+$$
 (0)
 \qquad\text{and}\qquad
 (t).
-\]
+$$
 The only closed point is $(t)$.  Its closure is itself:
-\[
+$$
 \overline{\{(t)\}}=\{(t)\}\ne X.
-\]
+$$
 Thus the set of closed points is not dense.
 :::
 

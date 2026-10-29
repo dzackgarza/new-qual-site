@@ -30,10 +30,10 @@ audit:
 
 ::: {.problem}
 Determine all solutions to the infinite system
-\[
+$$
 x_n+x_{n+2}+x_{n+4}=0,
 \qquad n=1,2,3,\dots,
-\]
+$$
 in the infinitely many unknowns $x_1,x_2,\dots$.
 
 How many free parameters are required?

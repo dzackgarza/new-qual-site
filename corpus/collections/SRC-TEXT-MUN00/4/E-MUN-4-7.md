@@ -29,43 +29,43 @@ Let $a \in \RR$ and $a \neq 0$ . Define $a^0 = 1$, and for $n \in \ZZ_+$, $a^{-n
 :::
 
 ::: {.solution}
-Let \(a,b\ne0\), with \(a^0=1\) and \(a^{-n}=1/a^n\) for \(n>0\).
+Let $a,b\ne0$, with $a^0=1$ and $a^{-n}=1/a^n$ for $n>0$.
 
 We first extend
-\[
+$$
 a^ra^s=a^{r+s}
-\]
-to all integers \(r,s\). For \(r,s>0\) this is the addition law for positive exponents, [[E-MUN-4-6]]. If \(r,s>0\), then
-\[
+$$
+to all integers $r,s$. For $r,s>0$ this is the addition law for positive exponents, [[E-MUN-4-6]]. If $r,s>0$, then
+$$
 a^{-r}a^{-s}=\frac1{a^ra^s}=\frac1{a^{r+s}}=a^{-(r+s)}.
-\]
-For mixed signs, say \(r\ge0\) and \(s=-q<0\),
-\[
+$$
+For mixed signs, say $r\ge0$ and $s=-q<0$,
+$$
 a^ra^{-q}=\frac{a^r}{a^q}.
-\]
-If \(r\ge q\), [[E-MUN-4-6]] gives \(a^r=a^{r-q}a^q\), hence the quotient is \(a^{r-q}\). If \(r<q\), then \(a^q=a^ra^{q-r}\), hence the quotient is
-\[
+$$
+If $r\ge q$, [[E-MUN-4-6]] gives $a^r=a^{r-q}a^q$, hence the quotient is $a^{r-q}$. If $r<q$, then $a^q=a^ra^{q-r}$, hence the quotient is
+$$
 \frac1{a^{q-r}}=a^{r-q}.
-\]
+$$
 The other mixed case follows by commutativity. Thus the addition law holds for all integer exponents.
 
-For the power law, if \(s>0\), repeated use of the addition law gives
-\[
+For the power law, if $s>0$, repeated use of the addition law gives
+$$
 (a^r)^s=a^{rs}.
-\]
-For \(s=0\) both sides equal \(1\), and for \(s=-q<0\),
-\[
+$$
+For $s=0$ both sides equal $1$, and for $s=-q<0$,
+$$
 (a^r)^s=\frac1{(a^r)^q}=\frac1{a^{rq}}=a^{-rq}=a^{rs}.
-\]
+$$
 Hence
-\[
+$$
 \boxed{(a^r)^s=a^{rs}}
-\]
-for all integers \(r,s\).
+$$
+for all integers $r,s$.
 
-Finally, [[E-MUN-4-6]] gives \((ab)^m=a^mb^m\) for \(m>0\). For \(m=0\) both sides are \(1\), and for \(m=-q<0\),
-\[
+Finally, [[E-MUN-4-6]] gives $(ab)^m=a^mb^m$ for $m>0$. For $m=0$ both sides are $1$, and for $m=-q<0$,
+$$
 (ab)^{-q}=\frac1{(ab)^q}=\frac1{a^qb^q}=a^{-q}b^{-q}.
-\]
+$$
 Thus all three laws of exponents hold for nonzero bases and arbitrary integer exponents.
 :::

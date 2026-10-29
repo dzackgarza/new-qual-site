@@ -20,24 +20,24 @@ Let $T\colon\RR^d\to\RR^d$ be an endomorphism of $X$.
 
 (b) Suppose that $T$ is not a scalar transformation.
 Consider the representation $X'\colon G\to\mathrm{GL}_d(\CC)$ given by viewing real matrices as complex matrices:
-\[
+$$
 X'(g):=X(g)\qquad\text{for all }g\in G.
-\]
+$$
 Is it possible for $X'$ to be irreducible (as a complex matrix representation)?
 Justify your answer.
 :::
 
 ::: {.solution}
-For (a), let \(G=C_4=\langle g:g^4=1
-angle\) and let \(V=\RR^2\) with
-\[
+For (a), let $G=C_4=\langle g:g^4=1
+angle$ and let $V=\RR^2$ with
+$$
 X(g)=J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.
-\]
-As a real representation this is irreducible, because a nonzero proper invariant subspace would be a real eigenline for \(J\), but \(J\) has characteristic polynomial \(t^2+1\) and hence no real eigenvalue. The endomorphism \(T=J\) commutes with the image of \(G\), but \(T\) is not a real scalar multiple of the identity.
+$$
+As a real representation this is irreducible, because a nonzero proper invariant subspace would be a real eigenline for $J$, but $J$ has characteristic polynomial $t^2+1$ and hence no real eigenvalue. The endomorphism $T=J$ commutes with the image of $G$, but $T$ is not a real scalar multiple of the identity.
 
-For (b), suppose \(T\) is a non-scalar real endomorphism commuting with \(X(G)\). Regard both \(X(g)\) and \(T\) as complex matrices. Then \(T\) still commutes with every \(X'(g)\). If \(X'\) were irreducible over \(\CC\), Schur's lemma would imply
-\[
+For (b), suppose $T$ is a non-scalar real endomorphism commuting with $X(G)$. Regard both $X(g)$ and $T$ as complex matrices. Then $T$ still commutes with every $X'(g)$. If $X'$ were irreducible over $\CC$, Schur's lemma would imply
+$$
 T=cI
-\]
-for some \(c\in\CC\). Since \(T\) has real entries, this would force \(c\in\RR\), contradicting that \(T\) is not a scalar transformation. Therefore \(X'\) cannot be irreducible.
+$$
+for some $c\in\CC$. Since $T$ has real entries, this would force $c\in\RR$, contradicting that $T$ is not a scalar transformation. Therefore $X'$ cannot be irreducible.
 :::

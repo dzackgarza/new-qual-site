@@ -27,19 +27,19 @@ Put $(1 + i)^{10}$ in the form $a + bi$ for $a, b \in \RR$.
 ::: {.pf-step #s1-1}
 
 One has
-\[
+$$
 (1+i)^2=2i.
-\]
+$$
 
 
 ::: pf-proof
 
 Expanding gives
-\[
+$$
 (1+i)^2
 =1+2i+i^2
 =2i.
-\]
+$$
 
 :::
 
@@ -48,24 +48,24 @@ Expanding gives
 ::: {.pf-step #s1-2}
 
 Therefore
-\[
+$$
 (1+i)^{10}=32i.
-\]
+$$
 
 
 ::: pf-proof
 
 Using step [](#s1-1){.pf-ref},
-\[
+$$
 (1+i)^{10}
 =\bigl((1+i)^2\bigr)^5
 =(2i)^5
 =2^5i^5.
-\]
+$$
 Since
-\[
+$$
 i^5=i,
-\]
+$$
 the value is $32i$.
 
 :::
@@ -75,9 +75,9 @@ the value is $32i$.
 ::: {.pf-step #s1-3}
 
 In the requested form,
-\[
+$$
 \boxed{(1+i)^{10}=0+32i}.
-\]
+$$
 
 
 ::: pf-proof

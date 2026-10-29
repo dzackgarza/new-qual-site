@@ -22,23 +22,23 @@ What is the length of the curve $( x ( t ) , y ( t ) ) = ( \cos ( t ) , \sin ( t
 ::: {.pf-step #s1-1}
 
 The coordinate derivatives are
-\[
+$$
 \boxed{x'(t)=-\sin t}
-\]
+$$
 and
-\[
+$$
 \boxed{y'(t)=\cos t}.
-\]
+$$
 
 
 ::: pf-proof
 
 Differentiate
-\[
+$$
 x(t)=\cos t,
 \qquad
 y(t)=\sin t.
-\]
+$$
 
 :::
 
@@ -47,16 +47,16 @@ y(t)=\sin t.
 ::: {.pf-step #s1-2}
 
 The speed of the parametrized curve is
-\[
+$$
 \boxed{
 \sqrt{x'(t)^2+y'(t)^2}=1}.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref},
-\[
+$$
 \begin{aligned}
 \sqrt{x'(t)^2+y'(t)^2}
 &=
@@ -66,7 +66,7 @@ By step [](#s1-1){.pf-ref},
 &=
 1.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -75,19 +75,19 @@ By step [](#s1-1){.pf-ref},
 ::: pf-step
 
 Therefore the arc length is
-\[
+$$
 L
 =
 \int_0^\pi
 \sqrt{x'(t)^2+y'(t)^2}\,dt
 =
 \int_0^\pi1\,dt.
-\]
+$$
 
 
 ::: pf-proof
 
-Apply the arc-length formula for a \(C^1\) parametrized plane curve and use
+Apply the arc-length formula for a $C^1$ parametrized plane curve and use
 step [](#s1-2){.pf-ref}.
 
 :::
@@ -97,19 +97,19 @@ step [](#s1-2){.pf-ref}.
 ::: {.pf-step #s1-4}
 
 Hence
-\[
+$$
 \boxed{L=\pi}.
-\]
+$$
 
 
 ::: pf-proof
 
 Evaluate
-\[
+$$
 \int_0^\pi1\,dt
 =
 \pi.
-\]
+$$
 
 :::
 

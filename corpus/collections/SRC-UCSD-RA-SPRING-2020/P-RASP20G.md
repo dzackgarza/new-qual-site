@@ -69,9 +69,9 @@ Hilbert projection theorem for closed convex sets.
 
 ::: {.pf-step #s4}
 By the characterization of the projection:
-\[
+$$
 \langle u - y, z - y \rangle \le 0 \quad \text{for all } z \in K.
-\]
+$$
 
 ::: pf-proof
 recall statement in the problem.
@@ -81,9 +81,9 @@ recall statement in the problem.
 
 ::: {.pf-step #s5}
 Setting $z = u_n \in K$ yields:
-\[
+$$
 \langle u - y, u_n - y \rangle \le 0 \quad \text{for all } n \ge 1.
-\]
+$$
 
 ::: pf-proof
 step [](#s4){.pf-ref} with $z = u_n$.
@@ -171,9 +171,9 @@ Hilbert projection theorem applied to the closed convex set $K_n$ and $x = 0$.
 
 ::: {.pf-step #s10}
 The characterization $\langle 0 - x_n, z - x_n \rangle \le 0$ for all $z \in K_n$ gives:
-\[
+$$
 \langle x_n, z \rangle \ge \|x_n\|^2 \quad \text{for all } z \in K_n.
-\]
+$$
 
 ::: pf-proof
 expanding the inner product $\langle -x_n, z - x_n \rangle = - \langle x_n, z \rangle + \|x_n\|^2 \le 0$.
@@ -206,9 +206,9 @@ step [](#s10){.pf-ref} applied to $z = x_m \in K_n$.
 
 ::: pf-step
 By the Cauchy–Schwarz inequality:
-\[
+$$
 \|x_n\|^2 \le \langle x_n, x_m \rangle \le \|x_n\| \|x_m\| \implies \|x_n\| \le \|x_m\|.
-\]
+$$
 
 ::: pf-proof
 Cauchy–Schwarz inequality in $H$.
@@ -222,9 +222,9 @@ Cauchy–Schwarz inequality in $H$.
 
 ::: {.pf-step #s12}
 Bound the distance $\|x_m - x_n\|^2$ for $m \ge n$:
-\[
+$$
 \|x_m - x_n\|^2 = \|x_m\|^2 - 2\langle x_n, x_m \rangle + \|x_n\|^2 \le \|x_m\|^2 - 2\|x_n\|^2 + \|x_n\|^2 = \|x_m\|^2 - \|x_n\|^2.
-\]
+$$
 
 ::: pf-proof
 expanding the norm squared and using $\langle x_n, x_m \rangle \ge \|x_n\|^2$ from step [](#s11-2){.pf-ref}.

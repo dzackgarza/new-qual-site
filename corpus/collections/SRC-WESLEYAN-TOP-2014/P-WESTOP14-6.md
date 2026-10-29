@@ -17,16 +17,16 @@ audit:
 Consider three hexagonal disks with boundary edges identified according to the
 arrows in the source diagram. Traversing clockwise from the top edge, the
 first two attaching words are
-\[
+$$
 w_1=abacb^{-1}c^{-1},
 \qquad
 w_2=abca^{-1}cb.
-\]
+$$
 In the third diagram the three edges labeled $a$ are all identified respecting
 their arrows, and likewise the three edges labeled $b$; its clockwise word is
-\[
+$$
 w_3=ababb^{-1}a^{-1}.
-\]
+$$
 
 For each quotient space:
 

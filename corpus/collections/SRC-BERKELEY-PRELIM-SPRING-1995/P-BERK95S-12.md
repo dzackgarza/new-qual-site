@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Let $n$ be a positive integer. Compute
-\[
+$$
 \int_0^{2\pi}\frac{1-\cos(n\theta)}{1-\cos\theta}\,d\theta.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -34,9 +34,9 @@ Let $N:\RR^n\to\RR$ be a norm.
 1. Prove that $N$ is bounded on the Euclidean unit sphere.
 2. Prove that $N$ is continuous.
 3. Prove that there are constants $A,B>0$ such that
-   \[
+   $$
    A\|x\|\le N(x)\le B\|x\|
-   \]
+   $$
    for every $x\in\RR^n$.
 :::
 

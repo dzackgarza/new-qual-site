@@ -41,13 +41,13 @@ audit:
 ::: {.problem}
 Let $X$ be a noncompact locally compact Hausdorff space, with topology $\mct$.
 Let $\widehat X=X\cup\theset{\infty}$ ($X$ with one point adjoined), and consider the family $\mcb$ of subsets of $\widehat X$ defined by
-\[
+$$
 \mcb
 =
 \mct
 \cup
 \theset{S\cup\theset{\infty}\mid S\subset X,\ X\backslash S\text{ is compact}}.
-\]
+$$
 
 (a) Prove that $\mcb$ is a topology on $\widehat X$, that the resulting space is compact, and that $X$ is dense in $\widehat X$.
 
@@ -72,26 +72,26 @@ The sets in $\mcb$ that contain $\infty$ are exactly the complements in $\wideha
 ::: pf-proof
 Since $X$ is Hausdorff, every compact subset of $X$ is closed.
 Thus, if $K\subseteq X$ is compact, then
-\[
+$$
 S=X\setminus K
-\]
+$$
 is open in $X$ and
-\[
+$$
 S\cup\{\infty\}=\widehat X\setminus K.
-\]
+$$
 Conversely, a set in the second family defining $\mcb$ has this form with
-\[
+$$
 K=X\setminus S
-\]
+$$
 compact.
 Hence
-\[
+$$
 \mcb
 =
 \mct
 \cup
 \{\widehat X\setminus K:K\subseteq X\text{ compact}\}.
-\]
+$$
 In particular, the intersection with $X$ of every member of $\mcb$ is open in $X$.
 :::
 
@@ -102,13 +102,13 @@ The family $\mcb$ contains $\emptyset$ and $\widehat X$.
 
 ::: pf-proof
 We have
-\[
+$$
 \emptyset\in\mct\subseteq\mcb.
-\]
+$$
 Also the empty set is compact, so step [](#sets-with-infinity){.pf-ref} gives
-\[
+$$
 \widehat X=\widehat X\setminus\emptyset\in\mcb.
-\]
+$$
 :::
 
 :::
@@ -118,40 +118,40 @@ The family $\mcb$ is closed under arbitrary unions.
 
 ::: pf-proof
 Let
-\[
+$$
 U=\bigcup_{i\in I}U_i,
 \qquad
 U_i\in\mcb.
-\]
+$$
 If $\infty\notin U$, then every $U_i$ lies in $X$ and is open there, so
-\[
+$$
 U\in\mct\subseteq\mcb.
-\]
+$$
 
 Suppose instead that $\infty\in U$.
 Choose $j\in I$ with $\infty\in U_j$.
 By step [](#sets-with-infinity){.pf-ref},
-\[
+$$
 K_j=\widehat X\setminus U_j
-\]
+$$
 is a compact subset of $X$.
 Set
-\[
+$$
 K=\widehat X\setminus U.
-\]
+$$
 Then $K\subseteq K_j$.
 Moreover,
-\[
+$$
 K
 =
 K_j\cap\bigcap_{i\in I}\bigl(X\setminus(U_i\cap X)\bigr).
-\]
+$$
 Each $U_i\cap X$ is open in $X$ by step [](#sets-with-infinity){.pf-ref}, so every set in the intersection on the right is closed in $X$.
 Thus $K$ is closed in the compact space $K_j$, hence compact.
 Therefore
-\[
+$$
 U=\widehat X\setminus K\in\mcb.
-\]
+$$
 :::
 
 :::
@@ -162,27 +162,27 @@ The family $\mcb$ is closed under finite intersections.
 ::: pf-proof
 It is enough to consider two members $U,V\in\mcb$.
 If at least one of them does not contain $\infty$, then
-\[
+$$
 U\cap V\subseteq X.
-\]
+$$
 By step [](#sets-with-infinity){.pf-ref}, both $U\cap X$ and $V\cap X$ are open in $X$, so
-\[
+$$
 U\cap V\in\mct\subseteq\mcb.
-\]
+$$
 
 If both contain $\infty$, write
-\[
+$$
 U=\widehat X\setminus K,
 \qquad
 V=\widehat X\setminus L
-\]
+$$
 with $K,L\subseteq X$ compact.
 Then
-\[
+$$
 U\cap V
 =
 \widehat X\setminus(K\cup L),
-\]
+$$
 and $K\cup L$ is compact.
 Hence $U\cap V\in\mcb$.
 Together with step [](#contains-empty-and-whole){.pf-ref} and step [](#closed-under-unions){.pf-ref}, this proves that $\mcb$ is a topology on $\widehat X$.
@@ -196,32 +196,32 @@ The space $\widehat X$ is compact.
 ::: pf-proof
 Let $\mathcal U$ be an open cover of $\widehat X$.
 Choose
-\[
+$$
 U_\infty\in\mathcal U
-\]
+$$
 with $\infty\in U_\infty$.
 By step [](#sets-with-infinity){.pf-ref},
-\[
+$$
 K=\widehat X\setminus U_\infty
-\]
+$$
 is compact in $X$.
 
 The sets
-\[
+$$
 U\cap X,
 \qquad
 U\in\mathcal U,
-\]
+$$
 form an open cover of $K$ in $X$.
 Compactness of $K$ gives finitely many
-\[
+$$
 U_1,\ldots,U_r\in\mathcal U
-\]
+$$
 whose intersections with $X$ cover $K$.
 Then
-\[
+$$
 U_\infty,U_1,\ldots,U_r
-\]
+$$
 cover all of $\widehat X$.
 Thus $\widehat X$ is compact.
 :::
@@ -233,20 +233,20 @@ The subspace $X$ is dense in $\widehat X$.
 
 ::: pf-proof
 Every point of $X$ already lies in $X$, so it remains only to show
-\[
+$$
 \infty\in\overline X.
-\]
+$$
 Let $U$ be any open neighborhood of $\infty$.
 By step [](#sets-with-infinity){.pf-ref},
-\[
+$$
 U=\widehat X\setminus K
-\]
+$$
 for some compact $K\subseteq X$.
 If $U\cap X$ were empty, then $K=X$, contradicting the assumption that $X$ is noncompact.
 Hence every neighborhood of $\infty$ meets $X$, and therefore
-\[
+$$
 \overline X=\widehat X.
-\]
+$$
 This completes the assertions requested in part (a).
 :::
 
@@ -261,13 +261,13 @@ Two distinct points of $X$ have disjoint open neighborhoods because $X$ is Hausd
 Now let $x\in X$.
 By local compactness, there is a compact neighborhood $K\subseteq X$ of $x$.
 Choose an open set $V\subseteq X$ with
-\[
+$$
 x\in V\subseteq K.
-\]
+$$
 Then $V$ and
-\[
+$$
 \widehat X\setminus K
-\]
+$$
 are disjoint open neighborhoods of $x$ and $\infty$, respectively.
 Thus $\widehat X$ is Hausdorff.
 :::
@@ -279,44 +279,44 @@ If $Y$ is compact Hausdorff, contains $X$ as a dense subspace, and $Y\setminus X
 
 ::: pf-proof
 Let $Y$ be compact Hausdorff, assume that $X\subseteq Y$ is dense, and that
-\[
+$$
 Y\setminus X=\{p\}.
-\]
+$$
 Define the bijection
-\[
+$$
 h:Y\longrightarrow\widehat X,
 \qquad
 h(x)=x\quad(x\in X),
 \qquad
 h(p)=\infty.
-\]
+$$
 We prove that $h$ is continuous.
 
 First let $U\subseteq\widehat X$ be open with $\infty\notin U$.
 Then $U$ is open in $X$.
 Since $Y$ is Hausdorff, $\{p\}$ is closed, so
-\[
+$$
 X=Y\setminus\{p\}
-\]
+$$
 is open in $Y$.
 Hence every set open in the subspace $X$ is open in $Y$, and therefore
-\[
+$$
 h^{-1}(U)=U
-\]
+$$
 is open in $Y$.
 
 Next let $U$ contain $\infty$.
 By step [](#sets-with-infinity){.pf-ref},
-\[
+$$
 U=\widehat X\setminus K
-\]
+$$
 for some compact $K\subseteq X$.
 The inclusion $X\hookrightarrow Y$ is continuous, so $K$ is compact in $Y$.
 Since $Y$ is Hausdorff, $K$ is closed in $Y$.
 Thus
-\[
+$$
 h^{-1}(U)=Y\setminus K
-\]
+$$
 is open.
 
 Hence $h$ is a continuous bijection from the compact space $Y$ to the Hausdorff space $\widehat X$.
@@ -331,19 +331,19 @@ The one-point compactification of $(0,1)$ is homeomorphic to $S^1$.
 
 ::: pf-proof
 The interval $(0,1)$ is homeomorphic to $\RR$, for example by
-\[
+$$
 t\longmapsto \tan\bigl(\pi(t-\tfrac12)\bigr).
-\]
+$$
 Stereographic projection identifies
-\[
+$$
 S^1\setminus\{N\}\cong\RR
-\]
+$$
 for any chosen point $N\in S^1$.
 Thus, after identifying $(0,1)$ with $S^1\setminus\{N\}$, the circle $S^1$ is a compact Hausdorff space containing $(0,1)$ densely with one-point complement.
 By step [](#uniqueness){.pf-ref}, its one-point compactification is therefore
-\[
+$$
 \boxed{S^1}.
-\]
+$$
 :::
 
 :::
@@ -353,14 +353,14 @@ The one-point compactification of $\RR^2$ is homeomorphic to $S^2$.
 
 ::: pf-proof
 Stereographic projection gives a homeomorphism
-\[
+$$
 S^2\setminus\{N\}\cong\RR^2.
-\]
+$$
 The sphere $S^2$ is compact Hausdorff, and $S^2\setminus\{N\}$ is dense with singleton complement.
 Applying step [](#uniqueness){.pf-ref} gives
-\[
+$$
 \boxed{\widehat{\RR^2}\cong S^2}.
-\]
+$$
 This proves part (c).
 :::
 

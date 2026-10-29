@@ -36,25 +36,25 @@ Prove directly from the definition that the 0th singular homology of a nonempty 
 ::: {.pf-step #s1}
 
 Since $\partial_0=0$,
-\[
+$$
 H_0(X)
 =C_0(X)/\operatorname{im}\partial_1.
-\]
+$$
 
 ::: pf-proof
 
 By definition,
-\[
+$$
 H_0(X)=\ker\partial_0/\operatorname{im}\partial_1.
-\]
+$$
 There are no singular chain groups in degree $-1$, so
-\[
+$$
 \partial_0:C_0(X)\longrightarrow0
-\]
+$$
 is the zero map and hence
-\[
+$$
 \ker\partial_0=C_0(X).
-\]
+$$
 
 :::
 
@@ -63,14 +63,14 @@ is the zero map and hence
 ::: {.pf-step #s2}
 
 Define the augmentation homomorphism
-\[
+$$
 \varepsilon:C_0(X)\longrightarrow\ZZ
-\]
+$$
 by
-\[
+$$
 \varepsilon\left(\sum_{i=1}^r n_i[x_i]\right)
 =\sum_{i=1}^r n_i.
-\]
+$$
 It is surjective.
 
 ::: pf-proof
@@ -78,9 +78,9 @@ It is surjective.
 A singular $0$-simplex is just a point of $X$, so $C_0(X)$ is the free abelian group on the points of $X$.
 Since $X$ is nonempty, choose $x_0\in X$.
 Then
-\[
+$$
 \varepsilon([x_0])=1,
-\]
+$$
 so $\varepsilon$ is surjective.
 
 :::
@@ -94,21 +94,21 @@ Every singular $0$-boundary lies in $\ker\varepsilon$.
 ::: pf-proof
 
 For a singular $1$-simplex
-\[
+$$
 \sigma:\Delta^1\longrightarrow X,
-\]
+$$
 the boundary is
-\[
+$$
 \partial_1\sigma=[\sigma(1)]-[\sigma(0)].
-\]
+$$
 Therefore
-\[
+$$
 \varepsilon(\partial_1\sigma)=1-1=0.
-\]
+$$
 By linearity,
-\[
+$$
 \operatorname{im}\partial_1\subseteq\ker\varepsilon.
-\]
+$$
 
 :::
 
@@ -122,42 +122,42 @@ If $X$ is path connected, then every element of $\ker\varepsilon$ is a singular 
 
 Fix the point $x_0$ from step [](#s2){.pf-ref}.
 For every $x\in X$, path connectedness gives a path
-\[
+$$
 \sigma_x:[0,1]\longrightarrow X
-\]
+$$
 with
-\[
+$$
 \sigma_x(0)=x_0,
 \qquad
 \sigma_x(1)=x.
-\]
+$$
 Regarded as a singular $1$-simplex,
-\[
+$$
 \partial_1\sigma_x=[x]-[x_0].
-\]
+$$
 
 Now let
-\[
+$$
 c=\sum_{i=1}^r n_i[x_i]\in\ker\varepsilon.
-\]
+$$
 Then
-\[
+$$
 \sum_{i=1}^r n_i=0,
-\]
+$$
 and hence
-\[
+$$
 c
 =\sum_{i=1}^r n_i([x_i]-[x_0])
 =\partial_1\left(\sum_{i=1}^r n_i\sigma_{x_i}\right).
-\]
+$$
 Thus
-\[
+$$
 \ker\varepsilon\subseteq\operatorname{im}\partial_1.
-\]
+$$
 Together with step [](#s3){.pf-ref},
-\[
+$$
 \ker\varepsilon=\operatorname{im}\partial_1.
-\]
+$$
 
 :::
 
@@ -166,25 +166,25 @@ Together with step [](#s3){.pf-ref},
 ::: pf-step
 
 Therefore
-\[
+$$
 H_0(X)\cong\ZZ.
-\]
+$$
 
 ::: pf-proof
 
 By steps [](#s1){.pf-ref} and [](#s4){.pf-ref},
-\[
+$$
 H_0(X)
 =C_0(X)/\operatorname{im}\partial_1
 =C_0(X)/\ker\varepsilon.
-\]
+$$
 Since $\varepsilon$ is surjective by step [](#s2){.pf-ref}, the first isomorphism theorem gives
-\[
+$$
 C_0(X)/\ker\varepsilon
 \cong
 \operatorname{im}\varepsilon
 =\ZZ.
-\]
+$$
 
 :::
 

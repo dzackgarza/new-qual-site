@@ -29,18 +29,18 @@ Show that the subspace $(a, b)$ of $\RR$ is homeomorphic with $(0, 1)$ and the s
 
 ::: {.solution}
 Assume $a<b$. The affine map
-\[
+$$
 f:[a,b]\longrightarrow[0,1],\qquad f(x)=\frac{x-a}{b-a}
-\]
+$$
 is continuous, bijective, and has continuous inverse
-\[
+$$
 f^{-1}(t)=a+(b-a)t.
-\]
+$$
 Hence $[a,b]\cong[0,1]$.
 
 Restricting the same formulas gives mutually inverse continuous maps
-\[
+$$
 (a,b)\longleftrightarrow(0,1),
-\]
+$$
 so $(a,b)\cong(0,1)$ as well.
 :::

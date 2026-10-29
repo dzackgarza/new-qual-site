@@ -39,9 +39,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_{-\infty}^{\infty}\frac{x-\sin x}{x^3}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}

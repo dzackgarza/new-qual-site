@@ -18,18 +18,18 @@ Prove that the image of a nonconstant entire function $E : \CC \to \CC$ is dense
 
 ::: {.solution}
 Suppose the image were not dense. Then some open disk
-\[
+$$
 D(a,r)
-\]
+$$
 would be disjoint from $E(\CC)$. In particular
-\[
+$$
 |E(z)-a|\ge r
 \qquad(z\in\CC).
-\]
+$$
 Thus
-\[
+$$
 F(z)=\frac1{E(z)-a}
-\]
+$$
 is an entire bounded function. Liouville's theorem makes $F$ constant, and
 therefore $E$ constant, contrary to hypothesis. Hence the image of every
 nonconstant entire function is dense in $\CC$.

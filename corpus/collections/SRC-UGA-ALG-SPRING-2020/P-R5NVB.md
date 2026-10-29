@@ -20,13 +20,13 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 A=\left[\begin{array}{ccc}
 2 & 0 & 0 \\
 4 & 6 & 1 \\
 -16 & -16 & -2
 \end{array}\right] \in M_{3}(\mathrm{C})
-.\]
+.$$
 
 a.
 Find the Jordan canonical form $J$ of $A$.
@@ -47,19 +47,19 @@ Write down the minimal polynomial of $A$.
 ::: {.pf-step #s1-1}
 
 The characteristic polynomial of $A$ is $(x-2)^3$, while its minimal polynomial is
-\[
+$$
 \boxed{m_A(x)=(x-2)^2}.
-\]
+$$
 
 
 ::: pf-proof
 
 The characteristic polynomial is
-\[
+$$
 \chi_A(x)=(x-2)^3.
-\]
+$$
 Moreover
-\[
+$$
 A-2I=
 \begin{bmatrix}
 0&0&0\\
@@ -69,11 +69,11 @@ A-2I=
 \neq0,
 \qquad
 (A-2I)^2=0.
-\]
+$$
 Thus the minimal polynomial is
-\[
+$$
 m_A(x)=(x-2)^2.
-\]
+$$
 Since $A-2I\neq0$ but $(A-2I)^2=0$, the minimal polynomial is exactly $(x-2)^2$.
 
 :::
@@ -83,22 +83,22 @@ Since $A-2I\neq0$ but $(A-2I)^2=0$, the minimal polynomial is exactly $(x-2)^2$.
 ::: {.pf-step #s1-2}
 
 The Jordan canonical form of $A$ is
-\[
+$$
 \boxed{J=\begin{pmatrix}2&1&0\\0&2&0\\0&0&2\end{pmatrix}}.
-\]
+$$
 
 
 ::: pf-proof
 
 Consequently the Jordan form has one block of size $2$ and one block of size $1$:
-\[
+$$
 J=
 \begin{bmatrix}
 2&1&0\\
 0&2&0\\
 0&0&2
 \end{bmatrix}.
-\]
+$$
 By step [](#s1-1){.pf-ref}, these are precisely the block sizes compatible with the minimal and characteristic polynomials.
 
 :::
@@ -108,26 +108,26 @@ By step [](#s1-1){.pf-ref}, these are precisely the block sizes compatible with 
 ::: {.pf-step #s1-3}
 
 An invertible conjugating matrix is
-\[
+$$
 \boxed{P=\begin{pmatrix}0&1&-1\\4&0&1\\-16&0&0\end{pmatrix}}.
-\]
+$$
 
 
 ::: pf-proof
 
 One suitable change-of-basis matrix is
-\[
+$$
 P=
 \begin{bmatrix}
 0&1&-1\\
 4&0&1\\
 -16&0&0
 \end{bmatrix}.
-\]
+$$
 Its determinant is $-16\ne0$, and direct multiplication gives
-\[
+$$
 AP=PJ,
-\]
+$$
 so $P^{-1}AP=J$.
 
 :::

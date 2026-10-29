@@ -34,13 +34,13 @@ State the test.
 
 ::: pf-proof
 Let $f:[1,\infty)\to[0,\infty)$ be decreasing. Then
-\[
+$$
 \sum_{n=1}^\infty f(n)
-\]
+$$
 converges if and only if the improper integral
-\[
+$$
 \int_1^\infty f(x)\,dx
-\]
+$$
 converges.
 :::
 
@@ -51,19 +51,19 @@ Compare each integral over a unit interval with neighboring terms.
 
 ::: pf-proof
 For $n\ge1$ and $x\in[n,n+1]$, monotonicity gives
-\[
+$$
 f(n+1)\le f(x)\le f(n).
-\]
+$$
 Hence
-\[
+$$
 f(n+1)\le \int_n^{n+1}f(x)\,dx\le f(n).
-\]
+$$
 Summing from $n=1$ to $N$ yields
-\[
+$$
 \sum_{n=2}^{N+1}f(n)
 \le \int_1^{N+1}f(x)\,dx
 \le \sum_{n=1}^{N}f(n).
-\]
+$$
 :::
 
 :::

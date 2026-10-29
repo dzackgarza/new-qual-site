@@ -29,9 +29,9 @@ Show that the union of the $X_\alpha$ is connected.
 
 ::: {.solution}
 Let
-\[
+$$
 Y=\bigcup_{\alpha\in A}X_\alpha.
-\]
+$$
 
 ::: pf
 
@@ -40,20 +40,20 @@ Any separation of $Y$ would separate one of the subspaces $X_\alpha$.
 
 ::: pf-proof
 Suppose
-\[
+$$
 Y=U\disjoint V.
-\]
+$$
 is a separation.
 Since the common point $p$ belongs to $Y$, after interchanging $U$ and $V$ if necessary assume $p\in U$.
 
 Choose $q\in V$.
 Since $q\in Y$, there is some $\alpha$ with $q\in X_\alpha$.
 Then
-\[
+$$
 p\in U\cap X_\alpha,
 \qquad
 q\in V\cap X_\alpha.
-\]
+$$
 The sets $U\cap X_\alpha$ and $V\cap X_\alpha$ are disjoint, nonempty, open in the subspace $X_\alpha$, and their union is $X_\alpha$.
 Thus they form a separation of $X_\alpha$.
 :::

@@ -24,9 +24,9 @@ audit:
 
 ::: {.problem}
 Prove directly that the 2-sphere
-\[
+$$
 S^2=\{x\in\RR^3:|x|=1\}
-\]
+$$
 is simply connected.
 :::
 
@@ -40,9 +40,9 @@ The sphere $S^2$ is path-connected.
 
 ::: pf-proof
 If $x,y\in S^2$ are not antipodal, the normalized straight-line path
-\[
+$$
 \gamma(t)=\frac{(1-t)x+ty}{\lVert(1-t)x+ty\rVert}
-\]
+$$
 joins $x$ to $y$. If $y=-x$, choose $z\in S^2$ with $z\neq\pm x$ and concatenate a path from $x$ to $z$ with one from $z$ to $-x$.
 :::
 
@@ -53,19 +53,19 @@ Every loop in $S^2$ is based-homotopic to a finite piecewise-geodesic loop.
 
 ::: pf-proof
 Let
-\[
+$$
 f:(I,\partial I)\to(S^2,x_0)
-\]
+$$
 be a loop. Cover $S^2$ by open spherical caps of angular radius strictly less than $\pi/2$. Each such cap is geodesically convex: any two of its points are joined by a unique short great-circle arc lying in the cap.
 
 By compactness of $f(I)$ and the Lebesgue-number lemma applied to the pullback cover of $I$, there is a partition
-\[
+$$
 0=t_0<t_1<\cdots<t_m=1
-\]
+$$
 such that for each $j$, the image
-\[
+$$
 f([t_{j-1},t_j])
-\]
+$$
 lies in one geodesically convex cap $U_j$.
 
 Inside $U_j$, replace the path $f|_{[t_{j-1},t_j]}$ by the unique short geodesic segment joining the same two endpoints. To see that this replacement is a homotopy rel endpoints, use central projection from the cap to a convex disk in the tangent plane: there the original path and the straight segment are joined by the ordinary linear homotopy, which fixes the endpoints; projecting back gives the desired homotopy in $U_j$.
@@ -80,19 +80,19 @@ The piecewise-geodesic loop $g$ misses some point of $S^2$.
 
 ::: pf-proof
 Each geodesic segment in $g(I)$ lies in a great circle, and each great circle is the intersection of $S^2$ with a two-dimensional linear subspace of $\RR^3$. Since $g$ has only finitely many segments, there are finitely many proper linear subspaces
-\[
+$$
 P_1,\dots,P_m\subsetneq\RR^3
-\]
+$$
 whose intersections with $S^2$ contain $g(I)$.
 
 A finite union of proper linear subspaces cannot equal $\RR^3$. Hence choose a nonzero vector
-\[
+$$
 v\notin P_1\cup\cdots\cup P_m
-\]
+$$
 and set
-\[
+$$
 q=\frac{v}{\lVert v\rVert}\in S^2.
-\]
+$$
 Then $q\notin g(I)$.
 :::
 
@@ -103,21 +103,21 @@ The loop $g$ is null-homotopic rel basepoint.
 
 ::: pf-proof
 Stereographic projection from $q$ is a homeomorphism
-\[
+$$
 \sigma:S^2\setminus\{q\}\xrightarrow{\cong}\RR^2.
-\]
+$$
 By step [](#s3){.pf-ref}, $g(I)\subset S^2\setminus\{q\}$. Let
-\[
+$$
 p=\sigma(x_0).
-\]
+$$
 The loop $\sigma\circ g$ contracts linearly to $p$ by
-\[
+$$
 H(t,s)=(1-t)\sigma(g(s))+tp.
-\]
+$$
 Because $g(0)=g(1)=x_0$, this homotopy fixes the loop basepoint:
-\[
+$$
 H(t,0)=H(t,1)=p.
-\]
+$$
 Composing with $\sigma^{-1}$ gives a based null-homotopy of $g$ in $S^2\setminus\{q\}$, hence in $S^2$.
 :::
 
@@ -126,8 +126,8 @@ Composing with $\sigma^{-1}$ gives a based null-homotopy of $g$ in $S^2\setminus
 :::
 
 By step [](#s2){.pf-ref}, the original loop $f$ is based-homotopic to $g$, and by step [](#s4){.pf-ref}, $g$ is null-homotopic. Thus every element of $\pi_1(S^2,x_0)$ is trivial. Together with path-connectedness from step [](#s1){.pf-ref},
-\[
+$$
 \pi_1(S^2,x_0)=0,
-\]
+$$
 so $S^2$ is simply connected.
 :::

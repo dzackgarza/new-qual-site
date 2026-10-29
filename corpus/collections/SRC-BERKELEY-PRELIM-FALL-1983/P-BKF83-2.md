@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Let $F$ be a field and $n\ge1$. Does there exist a surjective ring homomorphism
-\[
+$$
 M_{n+1}(F)\longrightarrow M_n(F)?
-\]
+$$
 Give a proof of your answer.
 :::
 

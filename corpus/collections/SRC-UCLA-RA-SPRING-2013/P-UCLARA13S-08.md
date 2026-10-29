@@ -18,55 +18,55 @@ audit:
 
 ::: {.problem}
 Let $A$ and $B$ be positive-definite real symmetric $n\times n$ matrices such that
-\[
+$$
 \|BA^{-1}x\|\le \|x\|\qquad\text{for every }x\in\RR^n.
-\]
+$$
 
 (a) For $x,y\in\RR^n$, show that
-\[
+$$
 z\longmapsto \langle y,B^zA^{-z}x\rangle
-\]
+$$
 admits an analytic continuation from $0<z<1$ to the whole complex plane.
 
 (b) Show that
-\[
+$$
 \|B^\theta A^{-\theta}x\|\le \|x\|
-\]
+$$
 for every $0\le\theta\le1$ and every $x\in\RR^n$.
 :::
 
 ::: {.solution}
 
 For a positive-definite real symmetric matrix $C$, choose an orthogonal diagonalization
-\[
+$$
 C=Q\operatorname{diag}(\lambda_1,\dots,\lambda_n)Q^T,
 \qquad
 \lambda_j>0,
-\]
+$$
 and for $z\in\CC$ define
-\[
+$$
 C^z
 \coloneqq
 Q\operatorname{diag}(e^{z\log\lambda_1},\dots,e^{z\log\lambda_n})Q^T.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 For every positive-definite real symmetric $C$, the matrix-valued map
-\[
+$$
 z\longmapsto C^z
-\]
+$$
 is entire on $\CC$.
 
 
 ::: pf-proof
 
 Each entry of $C^z$ is a finite linear combination of the entire functions
-\[
+$$
 z\longmapsto e^{z\log\lambda_j}.
-\]
+$$
 Therefore every matrix entry is entire.
 
 :::
@@ -76,15 +76,15 @@ Therefore every matrix entry is entire.
 ::: {.pf-step #s1-2}
 
 For fixed $x,y\in\RR^n$, the function
-\[
+$$
 F_{x,y}(z)
 \coloneqq
 y^T B^zA^{-z}x
-\]
+$$
 is entire on $\CC$ and agrees with
-\[
+$$
 \langle y,B^zA^{-z}x\rangle
-\]
+$$
 for real $z$.
 
 
@@ -114,30 +114,30 @@ Step [](#s1-2){.pf-ref} gives an entire function whose restriction to $0<z<1$ is
 ::: {.pf-step #s1-4}
 
 The hypothesis
-\[
+$$
 \|BA^{-1}x\|\le\|x\|
 \qquad
 (x\in\RR^n)
-\]
+$$
 also holds for every $x\in\CC^n$ with the standard Hermitian norm.
 
 
 ::: pf-proof
 
 Write
-\[
+$$
 x=u+iv,
 \qquad
 u,v\in\RR^n.
-\]
+$$
 Since $BA^{-1}$ is a real matrix,
-\[
+$$
 BA^{-1}x
 =
 BA^{-1}u+iBA^{-1}v.
-\]
+$$
 Hence
-\[
+$$
 \begin{aligned}
 \|BA^{-1}x\|^2
 &=
@@ -149,7 +149,7 @@ Hence
 &=
 \|x\|^2.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -158,21 +158,21 @@ Hence
 ::: {.pf-step #s1-5}
 
 For every real $t$,
-\[
+$$
 \|B^{it}\|_{\mathrm{op}}
 =
 \|A^{-it}\|_{\mathrm{op}}
 =1
-\]
+$$
 on $\CC^n$.
 
 
 ::: pf-proof
 
 In the spectral representation of $B^{it}$, the eigenvalues are
-\[
+$$
 e^{it\log\lambda_j},
-\]
+$$
 all of modulus $1$. Since the diagonalizing matrix is real orthogonal and hence unitary on $\CC^n$, $B^{it}$ is unitary. The same argument applies to $A^{-it}$.
 
 :::
@@ -182,21 +182,21 @@ all of modulus $1$. Since the diagonalizing matrix is real orthogonal and hence 
 ::: {.pf-step #s1-6}
 
 If
-\[
+$$
 \operatorname{Re}z=0,
-\]
+$$
 then
-\[
+$$
 |F_{x,y}(z)|
 \le
 \|x\|\,\|y\|.
-\]
+$$
 
 
 ::: pf-proof
 
 Write $z=it$. By Cauchy--Schwarz and step [](#s1-5){.pf-ref},
-\[
+$$
 \begin{aligned}
 |F_{x,y}(it)|
 &=
@@ -206,7 +206,7 @@ Write $z=it$. By Cauchy--Schwarz and step [](#s1-5){.pf-ref},
 &\le
 \|y\|\,\|x\|.
 \end{aligned}
-\]
+$$
 Here $y$ is real, so $y^T$ agrees with its Hermitian transpose.
 
 :::
@@ -216,36 +216,36 @@ Here $y$ is real, so $y^T$ agrees with its Hermitian transpose.
 ::: {.pf-step #s1-7}
 
 If
-\[
+$$
 \operatorname{Re}z=1,
-\]
+$$
 then
-\[
+$$
 |F_{x,y}(z)|
 \le
 \|x\|\,\|y\|.
-\]
+$$
 
 
 ::: pf-proof
 
 Write $z=1+it$. Since powers of the same matrix commute,
-\[
+$$
 B^{1+it}A^{-1-it}
 =
 B^{it}(BA^{-1})A^{-it}.
-\]
+$$
 By steps [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref},
-\[
+$$
 \|B^{it}(BA^{-1})A^{-it}\|_{\mathrm{op}}
 \le1.
-\]
+$$
 Therefore Cauchy--Schwarz gives
-\[
+$$
 |F_{x,y}(1+it)|
 \le
 \|x\|\,\|y\|.
-\]
+$$
 
 :::
 
@@ -254,26 +254,26 @@ Therefore Cauchy--Schwarz gives
 ::: {.pf-step #s1-8}
 
 The function $F_{x,y}$ is bounded on the closed strip
-\[
+$$
 S
 \coloneqq
 \{z\in\CC:0\le\operatorname{Re}z\le1\}.
-\]
+$$
 
 
 ::: pf-proof
 
 After diagonalizing $A$ and $B$, each entry of $B^zA^{-z}$ is a finite sum of terms of the form
-\[
+$$
 c\,\lambda^z\mu^{-z}
-\]
+$$
 with $\lambda,\mu>0$. On the strip,
-\[
+$$
 |\lambda^z\mu^{-z}|
 =
 \lambda^{\operatorname{Re}z}
 \mu^{-\operatorname{Re}z},
-\]
+$$
 which is bounded because $0\le\operatorname{Re}z\le1$. Hence every matrix entry, and therefore $F_{x,y}$, is bounded on $S$.
 
 :::
@@ -283,11 +283,11 @@ which is bounded because $0\le\operatorname{Re}z\le1$. Hence every matrix entry,
 ::: {.pf-step #s1-9}
 
 For every $0\le\theta\le1$,
-\[
+$$
 |F_{x,y}(\theta)|
 \le
 \|x\|\,\|y\|.
-\]
+$$
 
 
 ::: pf-proof
@@ -301,28 +301,28 @@ Steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} give the bound on both boundary 
 ::: {.pf-step #s1-10}
 
 For every $0\le\theta\le1$ and $x\in\RR^n$,
-\[
+$$
 \boxed{
 \|B^\theta A^{-\theta}x\|
 \le
 \|x\|
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 The vector
-\[
+$$
 v=B^\theta A^{-\theta}x
-\]
+$$
 is real. Hence
-\[
+$$
 \|v\|
 =
 \sup_{\substack{y\in\RR^n\\\|y\|=1}}
 |\langle y,v\rangle|.
-\]
+$$
 By step [](#s1-9){.pf-ref}, every term in this supremum is at most $\|x\|$. Thus $\|v\|\le\|x\|$.
 
 :::

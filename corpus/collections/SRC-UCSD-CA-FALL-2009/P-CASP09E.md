@@ -77,9 +77,9 @@ setup for Morera's Theorem.
 
 ::: pf-step
 For each $n \ge 1$, by Cauchy’s Integral Theorem for analytic functions on simply connected domains:
-\[
+$$
 \oint_{\partial T} f_n(z)\,dz = 0.
-\]
+$$
 
 ::: pf-proof
 Cauchy–Goursat Theorem.
@@ -98,9 +98,9 @@ restriction of uniform convergence to a compact subset.
 
 ::: pf-step
 Integration and uniform limits commute:
-\[
+$$
 \oint_{\partial T} f(z)\,dz = \lim_{n\to\infty} \oint_{\partial T} f_n(z)\,dz = \lim_{n\to\infty} 0 = 0.
-\]
+$$
 
 ::: pf-proof
 $|\oint_{\partial T} (f_n - f)\,dz| \le \sup_{z\in\partial T}|f_n(z) - f(z)| \cdot \operatorname{length}(\partial T) \to 0$.
@@ -156,9 +156,9 @@ definition of $r = r_0 / 2 < r_0$.
 
 ::: pf-step
 By Cauchy’s Integral Formula for the derivative applied to $f_n - f$:
-\[
+$$
 f_n'(z) - f'(z) = \frac{1}{2\pi i} \oint_{\gamma_z} \frac{f_n(\zeta) - f(\zeta)}{(\zeta - z)^2}\,d\zeta.
-\]
+$$
 
 ::: pf-proof
 Cauchy's differentiation formula for analytic functions.
@@ -179,9 +179,9 @@ definition of uniform convergence.
 ::: pf-step
 For all $\zeta \in \gamma_z$, $|\zeta - z| = r$.
 Applying the $ML$-inequality:
-\[
+$$
 |f_n'(z) - f'(z)| \le \frac{1}{2\pi} \frac{\varepsilon_n}{r^2} (2\pi r) = \frac{\varepsilon_n}{r}.
-\]
+$$
 
 ::: pf-proof
 $ML$-inequality with length $(\gamma_z) = 2\pi r$.
@@ -191,9 +191,9 @@ $ML$-inequality with length $(\gamma_z) = 2\pi r$.
 
 ::: {.pf-step #s3-7}
 Since the bound $\varepsilon_n / r$ is independent of $z \in K$:
-\[
+$$
 \sup_{z \in K} |f_n'(z) - f'(z)| \le \frac{\varepsilon_n}{r} \xrightarrow[n\to\infty]{} 0.
-\]
+$$
 
 ::: pf-proof
 $\lim \varepsilon_n = 0$ and $r > 0$ is fixed.

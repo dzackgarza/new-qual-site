@@ -54,9 +54,9 @@ Hoffman–Kunze Theorem 1.13 on invertible matrices and row equivalence.
 
 ::: pf-step
 Multiply row 1 by $\frac{1}{a}$:
-\[
+$$
 \begin{pmatrix} a & b \\ c & d \end{pmatrix} \xrightarrow{R_1 \leftarrow \frac{1}{a} R_1} \begin{pmatrix} 1 & b/a \\ c & d \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 elementary row operation (scaling by non-zero scalar).
@@ -66,9 +66,9 @@ elementary row operation (scaling by non-zero scalar).
 
 ::: pf-step
 Add $-c$ times row 1 to row 2:
-\[
+$$
 \begin{pmatrix} 1 & b/a \\ c & d \end{pmatrix} \xrightarrow{R_2 \leftarrow R_2 - c R_1} \begin{pmatrix} 1 & b/a \\ 0 & d - c(b/a) \end{pmatrix} = \begin{pmatrix} 1 & b/a \\ 0 & \frac{ad - bc}{a} \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 elementary row operation (row addition).
@@ -89,9 +89,9 @@ a matrix with a zero row in row echelon form cannot be row-equivalent to $I_2$.
 ::: pf-step
 If $ad - bc \neq 0$, the entry $\delta = \frac{ad - bc}{a} \neq 0$.
 Scale row 2 by $\frac{1}{\delta}$:
-\[
+$$
 \begin{pmatrix} 1 & b/a \\ 0 & \delta \end{pmatrix} \xrightarrow{R_2 \leftarrow \frac{1}{\delta} R_2} \begin{pmatrix} 1 & b/a \\ 0 & 1 \end{pmatrix} \xrightarrow{R_1 \leftarrow R_1 - \frac{b}{a} R_2} \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = I_2.
-\]
+$$
 Thus $A$ is row-equivalent to $I_2$, so $A$ is invertible.
 
 ::: pf-proof
@@ -130,9 +130,9 @@ a matrix with a zero column cannot be row-reduced to $I_2$.
 
 ::: pf-step
 If $c \neq 0$, swap rows 1 and 2:
-\[
+$$
 \begin{pmatrix} 0 & b \\ c & d \end{pmatrix} \xrightarrow{R_1 \leftrightarrow R_2} \begin{pmatrix} c & d \\ 0 & b \end{pmatrix} \xrightarrow{R_1 \leftarrow \frac{1}{c} R_1} \begin{pmatrix} 1 & d/c \\ 0 & b \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 elementary row operations.
@@ -152,9 +152,9 @@ rank 1 matrix cannot be row-reduced to $I_2$.
 ::: pf-step
 If $b \neq 0$, then $ad - bc = -bc \neq 0$.
 Scale $R_2$ by $1/b$ and clear the $(1,2)$ entry:
-\[
+$$
 \begin{pmatrix} 1 & d/c \\ 0 & b \end{pmatrix} \xrightarrow{R_2 \leftarrow \frac{1}{b} R_2} \begin{pmatrix} 1 & d/c \\ 0 & 1 \end{pmatrix} \xrightarrow{R_1 \leftarrow R_1 - \frac{d}{c} R_2} \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = I_2.
-\]
+$$
 Thus $A$ is invertible.
 
 ::: pf-proof

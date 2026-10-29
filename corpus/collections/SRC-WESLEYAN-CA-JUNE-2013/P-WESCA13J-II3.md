@@ -21,9 +21,9 @@ audit:
 
 ::: {.problem}
 Let $f$ be entire and suppose the function
-\[
+$$
 g(z)=\sqrt{f(z)}
-\]
+$$
 is also entire, that is, $g$ is entire and $g^2=f$.
 Prove or disprove: $f$ must be constant.
 :::

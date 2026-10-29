@@ -32,102 +32,102 @@ Show that every element of $K$ has a unique $p$th root in $K$.
 
 ::: {.pf-step #s1}
 
-Determine all intermediate fields of \(L=\QQ(\alpha,i)\) over \(\QQ\).
+Determine all intermediate fields of $L=\QQ(\alpha,i)$ over $\QQ$.
 
 ::: pf-proof
 
-The polynomial \(x^4-2\) is irreducible over \(\QQ\) by Eisenstein at \(2\), so
-\[
+The polynomial $x^4-2$ is irreducible over $\QQ$ by Eisenstein at $2$, so
+$$
 [\QQ(\alpha):\QQ]=4.
-\]
-Since \(\QQ(\alpha)\subset\RR\), it does not contain \(i\). Hence
-\[
+$$
+Since $\QQ(\alpha)\subset\RR$, it does not contain $i$. Hence
+$$
 [L:\QQ]=8.
-\]
-The field \(L\) is the splitting field of \(x^4-2\), whose roots are
-\[
+$$
+The field $L$ is the splitting field of $x^4-2$, whose roots are
+$$
 \alpha,\ i\alpha,\ -\alpha,\ -i\alpha.
-\]
-Thus \(L/\QQ\) is Galois of degree \(8\).
+$$
+Thus $L/\QQ$ is Galois of degree $8$.
 
 Define automorphisms
-\[
+$$
 \sigma(\alpha)=i\alpha,
 \qquad
 \sigma(i)=i,
-\]
+$$
 and
-\[
+$$
 \tau(\alpha)=\alpha,
 \qquad
 \tau(i)=-i.
-\]
+$$
 Then
-\[
+$$
 \sigma^4=\tau^2=1,
 \qquad
 \tau\sigma\tau=\sigma^{-1},
-\]
+$$
 so
-\[
+$$
 \operatorname{Gal}(L/\QQ)\cong D_4.
-\]
+$$
 
-The subgroups of \(D_4\) are exactly
-\[
+The subgroups of $D_4$ are exactly
+$$
 D_4,\quad
 \langle\sigma\rangle,\quad
 \langle\sigma^2,\tau\rangle,\quad
 \langle\sigma^2,\sigma\tau\rangle,
-\]
-\[
+$$
+$$
 \langle\sigma^2\rangle,\quad
 \langle\tau\rangle,\quad
 \langle\sigma\tau\rangle,\quad
 \langle\sigma^2\tau\rangle,\quad
 \langle\sigma^3\tau\rangle,\quad
 \{1\}.
-\]
+$$
 By Galois correspondence, these give all intermediate fields.
 
 The three index-two subgroups give the three quadratic fields:
-\[
+$$
 L^{\langle\sigma\rangle}=\QQ(i),
-\]
-\[
+$$
+$$
 L^{\langle\sigma^2,\tau\rangle}=\QQ(\alpha^2)=\QQ(\sqrt2),
-\]
-\[
+$$
+$$
 L^{\langle\sigma^2,\sigma\tau\rangle}
 =\QQ(i\alpha^2)=\QQ(\sqrt{-2}).
-\]
+$$
 
 The five order-two subgroups give the five quartic fields:
-\[
+$$
 L^{\langle\sigma^2\rangle}=\QQ(\alpha^2,i)=\QQ(\sqrt2,i),
-\]
-\[
+$$
+$$
 L^{\langle\tau\rangle}=\QQ(\alpha),
-\]
-\[
+$$
+$$
 L^{\langle\sigma^2\tau\rangle}=\QQ(i\alpha),
-\]
-\[
+$$
+$$
 L^{\langle\sigma\tau\rangle}=\QQ((1+i)\alpha),
-\]
-\[
+$$
+$$
 L^{\langle\sigma^3\tau\rangle}=\QQ((1-i)\alpha).
-\]
+$$
 For example,
-\[
+$$
 (\sigma\tau)((1+i)\alpha)
 =(1-i)(i\alpha)
 =(1+i)\alpha,
-\]
-so \((1+i)\alpha\) is fixed by \(\langle\sigma\tau\rangle\); a direct check of its orbit shows that its stabilizer is exactly that order-two subgroup, hence the generated field has degree \(4\). The other displayed generators are checked similarly.
+$$
+so $(1+i)\alpha$ is fixed by $\langle\sigma\tau\rangle$; a direct check of its orbit shows that its stabilizer is exactly that order-two subgroup, hence the generated field has degree $4$. The other displayed generators are checked similarly.
 
 Together with the fixed fields of the whole group and the trivial subgroup, the complete list is therefore
-\[
+$$
 \boxed{
 \begin{gathered}
 \QQ,\\
@@ -138,7 +138,7 @@ Together with the fixed fields of the whole group and the trivial subgroup, the 
 \QQ((1-i)\alpha),\\
 \QQ(\alpha,i).
 \end{gathered}}
-\]
+$$
 
 :::
 
@@ -146,34 +146,34 @@ Together with the fixed fields of the whole group and the trivial subgroup, the 
 
 ::: {.pf-step #s2}
 
-Every element of a finite field \(K\) of order \(p^n\) has a unique \(p\)-th root in \(K\).
+Every element of a finite field $K$ of order $p^n$ has a unique $p$-th root in $K$.
 
 ::: pf-proof
 
 Consider the Frobenius map
-\[
+$$
 F:K\longrightarrow K,
 \qquad
 F(x)=x^p.
-\]
-Because \(K\) has characteristic \(p\),
-\[
+$$
+Because $K$ has characteristic $p$,
+$$
 (x+y)^p=x^p+y^p,
-\]
-so \(F\) is a field homomorphism. Its kernel is \(0\), hence \(F\) is injective. Since \(K\) is finite, every injective self-map of \(K\) is surjective. Therefore \(F\) is an automorphism.
+$$
+so $F$ is a field homomorphism. Its kernel is $0$, hence $F$ is injective. Since $K$ is finite, every injective self-map of $K$ is surjective. Therefore $F$ is an automorphism.
 
-Thus for every \(a\in K\) there is a unique \(b\in K\) such that
-\[
+Thus for every $a\in K$ there is a unique $b\in K$ such that
+$$
 b^p=a.
-\]
+$$
 In fact the root is explicitly
-\[
+$$
 \boxed{b=a^{p^{n-1}}},
-\]
-because every \(a\in K\) satisfies \(a^{p^n}=a\), and hence
-\[
+$$
+because every $a\in K$ satisfies $a^{p^n}=a$, and hence
+$$
 \left(a^{p^{n-1}}\right)^p=a^{p^n}=a.
-\]
+$$
 Uniqueness follows from injectivity of Frobenius.
 
 :::

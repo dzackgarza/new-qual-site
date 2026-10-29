@@ -38,11 +38,11 @@ Every group $G$ of order $pq$ has a unique normal Sylow $q$-subgroup.
 ::: pf-proof
 
 The number $n_q$ of Sylow $q$-subgroups satisfies
-\[
+$$
 n_q\mid p,
 \qquad
 n_q\equiv1\pmod q.
-\]
+$$
 Since $p<q$, the only possibility is $n_q=1$.
 
 :::
@@ -52,9 +52,9 @@ Since $p<q$, the only possibility is $n_q=1$.
 ::: {.pf-step #s2}
 
 Thus every such group has the form
-\[
+$$
 G\cong C_q\rtimes_\varphi C_p
-\]
+$$
 for some homomorphism $\varphi:C_p\to\Aut(C_q)$.
 
 ::: pf-proof
@@ -77,9 +77,9 @@ If $p\nmid(q-1)$, then every group of order $pq$ is cyclic.
 Since $\Aut(C_q)\cong C_{q-1}$, a nontrivial homomorphism
 $C_p\to\Aut(C_q)$ exists only if $p\mid(q-1)$. If not, the action in step [](#s2){.pf-ref} is
 trivial, so
-\[
+$$
 G\cong C_q\times C_p\cong C_{pq}.
-\]
+$$
 
 :::
 

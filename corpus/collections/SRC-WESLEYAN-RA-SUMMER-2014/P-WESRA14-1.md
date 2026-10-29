@@ -51,49 +51,49 @@ precise forms of Littlewood's principles.
 ::: {.pf-step #s1-2}
 
 Precisely, let
-\[
+$$
 (X,\mathcal M,\mu)
-\]
+$$
 be a measure space with
-\[
+$$
 \mu(X)<\infty.
-\]
+$$
 Let
-\[
+$$
 f_n:X\to\RR
-\]
+$$
 and
-\[
+$$
 f:X\to\RR
-\]
+$$
 be measurable, and suppose
-\[
+$$
 f_n(x)\to f(x)
-\]
+$$
 for almost every
-\[
+$$
 x\in X.
-\]
+$$
 Then for every
-\[
+$$
 \varepsilon>0
-\]
+$$
 there exists a measurable set
-\[
+$$
 E\subseteq X
-\]
+$$
 such that
-\[
+$$
 \mu(E)<\varepsilon
-\]
+$$
 and
-\[
+$$
 f_n\to f
-\]
+$$
 uniformly on
-\[
+$$
 X\setminus E.
-\]
+$$
 
 
 ::: pf-proof
@@ -110,23 +110,23 @@ It is the exact mathematical statement corresponding to the phrase
 
 Equivalently, the exceptional set can be made arbitrarily small:
 for every
-\[
+$$
 \varepsilon>0
-\]
+$$
 there exists
-\[
+$$
 E
-\]
+$$
 with
-\[
+$$
 \mu(E)<\varepsilon
-\]
+$$
 such that
-\[
+$$
 \forall\eta>0+\exists N+\forall n\ge N+\forall x\in X\setminus E,
 \quad
 |f_n(x)-f(x)|<\eta.
-\]
+$$
 
 
 ::: pf-proof

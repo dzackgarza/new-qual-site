@@ -29,12 +29,12 @@ Show that every well-ordered set has the least upper bound property.
 :::
 
 ::: {.solution}
-Let \(A\) be a well-ordered set, and let \(B\subset A\) be nonempty and bounded above. The set
-\[
+Let $A$ be a well-ordered set, and let $B\subset A$ be nonempty and bounded above. The set
+$$
 U=\{u\in A:b\le u\text{ for every }b\in B\}
-\]
-of upper bounds is nonempty. Since \(A\) is well-ordered, \(U\) has a smallest element \(u_0\). By definition \(u_0\) is an upper bound of \(B\), and no smaller element is an upper bound. Hence
-\[
+$$
+of upper bounds is nonempty. Since $A$ is well-ordered, $U$ has a smallest element $u_0$. By definition $u_0$ is an upper bound of $B$, and no smaller element is an upper bound. Hence
+$$
 u_0=\sup B.
-\]
+$$
 :::

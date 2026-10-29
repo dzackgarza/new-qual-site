@@ -21,42 +21,42 @@ Hint: Prove it first for the case $G = B(0; 1)$.
 
 ::: {.solution}
 Because $f$ is $1$-periodic, it descends through the exponential map
-\[
+$$
 w=e^{2\pi i z}
-\]
+$$
 to a holomorphic function $F$ on $\CC^*$, defined by
-\[
+$$
 F(e^{2\pi i z})=f(z).
-\]
+$$
 Write its Laurent expansion
-\[
+$$
 F(w)=\sum_{n\in\ZZ}a_n w^n.
-\]
+$$
 Then
-\[
+$$
 f(z)=\sum_{n\in\ZZ}a_n e^{2\pi i n z}.
-\]
+$$
 
 Let $z=x+iy$. The growth hypothesis gives
-\[
+$$
 |f(x+iy)|\le e^{cy}.
-\]
+$$
 For every integer $n$, Fourier inversion on one period gives
-\[
+$$
 a_n e^{-2\pi n y}
 =\int_0^1 f(x+iy)e^{-2\pi i n x}\,dx,
-\]
+$$
 so
-\[
+$$
 |a_n|\le e^{(c+2\pi n)y}
 \qquad (y\in\RR).
-\]
+$$
 If $c+2\pi n>0$, let $y\to-\infty$; if $c+2\pi n<0$, let
 $y\to+\infty$. In either case $a_n=0$. Therefore a coefficient can be nonzero
 only when
-\[
+$$
 c+2\pi n=0.
-\]
+$$
 Equivalently, $c=-2\pi n=2\pi k$ for some $k\in\ZZ$. The hypothesis
 excludes this possibility, so every Laurent coefficient vanishes and
 $f\equiv0$.

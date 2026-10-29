@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Let $D\subset\CC$ be a domain and let $f:D\to\CC$ be analytic and injective.
 Prove that
-\[
+$$
 f'(z)\ne0\qquad(z\in D).
-\]
+$$
 :::
 
 ::: {.solution}
@@ -31,11 +31,11 @@ f'(z)\ne0\qquad(z\in D).
 
 If $a\in D$ and $f'(a)=0$, then there is an integer $m\ge2$ and a
 holomorphic function $g$ near $a$ such that
-\[
+$$
 f(z)-f(a)=(z-a)^m g(z),
 \qquad
 g(a)\ne0.
-\]
+$$
 
 
 ::: pf-proof
@@ -53,10 +53,10 @@ $g(a)\ne0$.
 
 There is a neighborhood $U$ of $a$ and a biholomorphic coordinate
 $\phi:U\to\phi(U)$ with $\phi(a)=0$ such that
-\[
+$$
 f(z)-f(a)=\phi(z)^m
 \qquad(z\in U).
-\]
+$$
 
 
 ::: pf-proof
@@ -64,17 +64,17 @@ f(z)-f(a)=\phi(z)^m
 By step [](#s1-1){.pf-ref}, after shrinking to a simply connected disk $U$ about $a$, the
 function $g$ has no zeros on $U$. Therefore $g$ admits a holomorphic $m$-th
 root $h$ on $U$, so $h^m=g$. Define
-\[
+$$
 \phi(z)=(z-a)h(z).
-\]
+$$
 Then
-\[
+$$
 f(z)-f(a)=\phi(z)^m.
-\]
+$$
 Moreover,
-\[
+$$
 \phi'(a)=h(a)\ne0,
-\]
+$$
 so the holomorphic inverse function theorem allows $U$ to be shrunk further
 so that $\phi$ is biholomorphic onto the open neighborhood $\phi(U)$ of $0$.
 
@@ -91,22 +91,22 @@ The assumption $f'(a)=0$ contradicts injectivity of $f$.
 
 By step [](#s1-2){.pf-ref}, the open set $\phi(U)$ contains a disk centered at $0$.
 Choose a nonzero $w$ in that disk small enough that
-\[
+$$
 w,\qquad e^{2\pi i/m}w
-\]
+$$
 both lie in $\phi(U)$. Since $m\ge2$, these two numbers are distinct but have
 the same $m$-th power. Let
-\[
+$$
 z_1=\phi^{-1}(w),
 \qquad
 z_2=\phi^{-1}(e^{2\pi i/m}w).
-\]
+$$
 Then $z_1\ne z_2$, while step [](#s1-2){.pf-ref} gives
-\[
+$$
 f(z_1)-f(a)=w^m
 =\bigl(e^{2\pi i/m}w\bigr)^m
 =f(z_2)-f(a).
-\]
+$$
 Thus $f(z_1)=f(z_2)$, contradicting injectivity.
 
 :::
@@ -116,9 +116,9 @@ Thus $f(z_1)=f(z_2)$, contradicting injectivity.
 ::: {.pf-step #s1-4}
 
 Hence
-\[
+$$
 \boxed{f'(z)\ne0\qquad(z\in D)}.
-\]
+$$
 
 
 ::: pf-proof

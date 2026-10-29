@@ -95,9 +95,9 @@ pushout identification $j(f(a)) = q(i(a))$ in $P$.
 
 Since $i: A \hookrightarrow X$ is a cofibration, the pair $(u_X, h_A)$ satisfies the HEP for $(X, A)$.
 Thus there exists a continuous homotopy $H_X: X \times I \to Y$ such that:
-\[
+$$
 H_X(x, 0) = u_X(x) \quad \text{for all } x \in X, \qquad H_X(i(a), t) = h_A(a, t) = H(f(a), t) \quad \text{for all } (a, t) \in A \times I.
-\]
+$$
 
 ::: pf-proof
 
@@ -120,12 +120,12 @@ Pasting homotopies on the pushout $P \times I$:
 ::: pf-step
 
 Since $P \times I \cong (B \times I) \sqcup_{f \times \operatorname{id}_I} (X \times I)$ is the pushout of $B \times I$ and $X \times I$ along $A \times I$, define $\widetilde{H}: P \times I \to Y$ by:
-\[
+$$
 \widetilde{H}(p', t) = \begin{cases}
 H(b, t) & \text{if } p' = j(b) \in j(B), \\
 H_X(x, t) & \text{if } p' = q(x) \in q(X).
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 

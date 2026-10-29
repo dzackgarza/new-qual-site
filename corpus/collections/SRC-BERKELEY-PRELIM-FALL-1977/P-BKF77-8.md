@@ -24,9 +24,9 @@ audit:
 ---
 ::: {.problem}
 Find all solutions of
-\[
+$$
 x''-2x'+x=\sin t
-\]
+$$
 subject to $x(0)=1$ and $x'(0)=0$.
 :::
 

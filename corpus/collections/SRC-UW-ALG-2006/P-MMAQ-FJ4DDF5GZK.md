@@ -88,9 +88,9 @@ definition of $\Phi$.
 ::: pf-step
 
 For any $h \in G$:
-\[
+$$
 \Phi\left(h \cdot \sum_{g \in G} c_g g\right) = \Phi\left(\sum_{g \in G} c_g (hg)\right) = \sum_{g \in G} c_g (hg)(\alpha) = h\left(\sum_{g \in G} c_g g(\alpha)\right) = h \cdot \Phi\left(\sum_{g \in G} c_g g\right).
-\]
+$$
 Thus $\Phi$ is a homomorphism of $F[G]$-modules.
 
 ::: pf-proof
@@ -185,9 +185,9 @@ Part (c): Existence of an eigenvector $a \in K^\times$ for the $G$-action:
 ::: pf-step
 
 Consider the Lagrange resolvent map $L: K \to K$ defined by:
-\[
+$$
 L(x) = \sum_{j=0}^{n-1} \chi(\sigma^j)^{-1} \sigma^j(x) = \sum_{j=0}^{n-1} \zeta_n^{-j} \sigma^j(x).
-\]
+$$
 
 ::: pf-proof
 
@@ -224,9 +224,9 @@ Step [](#s3-2){.pf-ref}.
 ::: pf-step
 
 Compute $\sigma(a)$:
-\[
+$$
 \sigma(a) = \sum_{j=0}^{n-1} \zeta_n^{-j} \sigma^{j+1}(x) = \zeta_n \sum_{j=0}^{n-1} \zeta_n^{-(j+1)} \sigma^{j+1}(x) = \zeta_n L(x) = \zeta_n a = \chi(\sigma) a.
-\]
+$$
 
 ::: pf-proof
 

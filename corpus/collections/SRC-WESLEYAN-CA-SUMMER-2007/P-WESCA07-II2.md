@@ -17,13 +17,13 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 \gamma(t)=2e^{it},\qquad 0\le t\le4\pi.
-\]
+$$
 Evaluate
-\[
+$$
 \int_\gamma\frac{\sin z}{z^3+z}\,dz.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -44,19 +44,19 @@ Invertibility implies both operators are bounded below.
 ::: pf-proof
 
 Suppose $T$ is invertible with bounded inverse. Then for every $x\in H$,
-\[
+$$
 \|x\|=\|T^{-1}Tx\|\le \|T^{-1}\|\,\|Tx\|,
-\]
+$$
 so
-\[
+$$
 \|Tx\|\ge \|T^{-1}\|^{-1}\|x\|.
-\]
+$$
 Thus $T$ is bounded below.
 
 Moreover $T^*$ is invertible and
-\[
+$$
 (T^*)^{-1}=(T^{-1})^*.
-\]
+$$
 Applying the same argument to $T^*$ shows that $T^*$ is bounded below.
 
 :::
@@ -70,19 +70,19 @@ A bounded-below operator is injective and has closed range.
 ::: pf-proof
 
 Assume now that
-\[
+$$
 \|Tx\|\ge c\|x\|
-\]
+$$
 for some $c>0$. Then $Tx=0$ implies $x=0$, so $T$ is injective.
 
 Let $(Tx_n)$ converge in $H$. Then
-\[
+$$
 \|x_n-x_m\|\le c^{-1}\|Tx_n-Tx_m\|,
-\]
+$$
 so $(x_n)$ is Cauchy. Since $H$ is complete, $x_n\to x$ for some $x\in H$. Continuity of $T$ gives
-\[
+$$
 Tx_n\to Tx.
-\]
+$$
 Hence the limit belongs to $\operatorname{ran}T$, so $\operatorname{ran}T$ is closed.
 
 :::
@@ -96,25 +96,25 @@ If $T$ and $T^*$ are bounded below, then $T$ is bijective.
 ::: pf-proof
 
 If $T^*$ is bounded below, then $T^*$ is injective, hence
-\[
+$$
 \ker T^*=\{0\}.
-\]
+$$
 For every bounded operator on a Hilbert space,
-\[
+$$
 (\operatorname{ran}T)^\perp=\ker T^*.
-\]
+$$
 Therefore
-\[
+$$
 (\operatorname{ran}T)^\perp=\{0\},
-\]
+$$
 which implies
-\[
+$$
 \overline{\operatorname{ran}T}=H.
-\]
+$$
 By step [](#s2){.pf-ref} the range is already closed, so
-\[
+$$
 \operatorname{ran}T=H.
-\]
+$$
 Thus $T$ is surjective as well as injective.
 
 :::
@@ -128,13 +128,13 @@ If $T$ and $T^*$ are bounded below, then $T^{-1}$ is bounded.
 ::: pf-proof
 
 Since $T$ is bijective, define $T^{-1}:H\to H$. If $y=Tx$, then
-\[
+$$
 \|T^{-1}y\|=\|x\|\le c^{-1}\|Tx\|=c^{-1}\|y\|.
-\]
+$$
 Hence
-\[
+$$
 \|T^{-1}\|\le c^{-1}.
-\]
+$$
 Therefore $T$ is invertible with bounded inverse.
 
 :::

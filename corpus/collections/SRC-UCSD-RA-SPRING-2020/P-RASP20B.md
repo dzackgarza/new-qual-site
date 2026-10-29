@@ -50,28 +50,28 @@ Compute the convolution-type limit.
 
 ::: pf-proof
 
-For fixed \(x\in\RR\), eventually \(|x|\le k\), and
-\[
+For fixed $x\in\RR$, eventually $|x|\le k$, and
+$$
 1+\frac{x^2}{k}\longrightarrow1.
-\]
-Since \(f\) is continuous at \(1\),
-\[
+$$
+Since $f$ is continuous at $1$,
+$$
 f\!\left(1+\frac{x^2}{k}\right)\longrightarrow f(1)=\pi.
-\]
+$$
 Moreover,
-\[
+$$
 \left|\mathbf1_{[-k,k]}(x)f\!\left(1+\frac{x^2}{k}\right)g(x)\right|
 \le \|f\|_\infty |g(x)|,
-\]
+$$
 and the right side is integrable. Dominated convergence therefore gives
-\[
+$$
 \lim_{k\to\infty}\int_{[-k,k]}f\!\left(1+\frac{x^2}{k}\right)g(x)\,dx
 =\pi\int_\RR g(x)\,dx.
-\]
-Since \(g\ge0\) and \(\|g\|_1=2\),
-\[
+$$
+Since $g\ge0$ and $\|g\|_1=2$,
+$$
 \boxed{L=2\pi.}
-\]
+$$
 
 :::
 
@@ -83,40 +83,40 @@ Compute the Lebesgue--Stieltjes masses.
 
 ::: pf-proof
 
-For a Lebesgue--Stieltjes measure associated to the increasing right-continuous function \(F\),
-\[
+For a Lebesgue--Stieltjes measure associated to the increasing right-continuous function $F$,
+$$
 \mu((a,b])=F(b)-F(a),
 \qquad
 \mu(\{x\})=F(x)-F(x-).
-\]
-At \(0\),
-\[
+$$
+At $0$,
+$$
 F(0)=2,
 \qquad
 F(0-)=0,
-\]
+$$
 so
-\[
+$$
 \boxed{\mu(( -\infty,0])=2.}
-\]
-At \(1\),
-\[
+$$
+At $1$,
+$$
 F(1)=4,
 \qquad
 F(1-)=3,
-\]
+$$
 so
-\[
+$$
 \boxed{\mu(\{1\})=1.}
-\]
+$$
 Finally,
-\[
+$$
 \mu([1,2])=F(2)-F(1-)=16-3=13,
-\]
+$$
 so
-\[
+$$
 \boxed{\mu([1,2])=13.}
-\]
+$$
 
 :::
 
@@ -124,29 +124,29 @@ so
 
 ::: pf-step
 
-Compute the oscillatory integral over \(E\).
+Compute the oscillatory integral over $E$.
 
 ::: pf-proof
 
 Using
-\[
+$$
 \cos^2\theta=\frac12+\frac12\cos(2\theta),
-\]
+$$
 we get
-\[
+$$
 \int_E\cos^2(k\pi x+u_k)\,dx
 =\frac12m(E)+\frac12\operatorname{Re}\left(
 e^{2iu_k}\int_Ee^{2\pi ikx}\,dx\right).
-\]
-Since \(\mathbf1_E\in L^1([0,1])\), the Riemann--Lebesgue lemma gives
-\[
+$$
+Since $\mathbf1_E\in L^1([0,1])$, the Riemann--Lebesgue lemma gives
+$$
 \int_Ee^{2\pi ikx}\,dx\longrightarrow0.
-\]
-The phase factor \(e^{2iu_k}\) has modulus \(1\), so the oscillatory term still tends to \(0\). Since \(m(E)=1/2\),
-\[
+$$
+The phase factor $e^{2iu_k}$ has modulus $1$, so the oscillatory term still tends to $0$. Since $m(E)=1/2$,
+$$
 \boxed{
 \lim_{k\to\infty}\int_E\cos^2(k\pi x+u_k)\,dx=\frac14.}
-\]
+$$
 
 :::
 

@@ -27,25 +27,25 @@ Can you conjecture whether or not $S^1$ is a retract of $\RR^2$?
 :::
 
 ::: {.solution}
-(a) Let \(i:Y\hookrightarrow Z\) be inclusion and \(r:Z\to Y\) a retraction. Then
-\[
+(a) Let $i:Y\hookrightarrow Z$ be inclusion and $r:Z\to Y$ a retraction. Then
+$$
 R=i\circ r:Z\to Z
-\]
+$$
 is continuous, and
-\[
+$$
 Y=\{z\in Z:R(z)=z\}.
-\]
-Since \(Z\) is Hausdorff, the equalizer of \(R\) and the identity map is closed. Hence \(Y\) is closed in \(Z\).
+$$
+Since $Z$ is Hausdorff, the equalizer of $R$ and the identity map is closed. Hence $Y$ is closed in $Z$.
 
-(b) If a two-point set \(A\subset\RR^2\) were a retract, the retraction \(r:\RR^2\to A\) would be a continuous surjection. But \(\RR^2\) is connected, so its continuous image \(A\) would be connected, whereas a two-point subspace of the Hausdorff plane is disconnected. Contradiction.
+(b) If a two-point set $A\subset\RR^2$ were a retract, the retraction $r:\RR^2\to A$ would be a continuous surjection. But $\RR^2$ is connected, so its continuous image $A$ would be connected, whereas a two-point subspace of the Hausdorff plane is disconnected. Contradiction.
 
 (c) The radial map
-\[
+$$
 r:\RR^2\setminus\{0\}\to S^1,
 \qquad
 r(x)=\frac{x}{\|x\|},
-\]
-is continuous and restricts to the identity on \(S^1\), so \(S^1\) is a retract of the punctured plane.
+$$
+is continuous and restricts to the identity on $S^1$, so $S^1$ is a retract of the punctured plane.
 
-One should conjecture that \(S^1\) is not a retract of the whole plane. This is true; it is the classical no-retraction theorem for the disk/circle, proved later by algebraic-topological methods.
+One should conjecture that $S^1$ is not a retract of the whole plane. This is true; it is the classical no-retraction theorem for the disk/circle, proved later by algebraic-topological methods.
 :::

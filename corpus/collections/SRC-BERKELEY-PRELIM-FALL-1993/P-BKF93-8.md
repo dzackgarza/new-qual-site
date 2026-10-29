@@ -23,9 +23,9 @@ audit:
 
 ::: {.problem}
 Let $A$ be an $n\times n$ complex matrix. Prove that if
-\[
+$$
 A^k=I
-\]
+$$
 for some positive integer $k$, then $A$ is diagonalizable.
 :::
 

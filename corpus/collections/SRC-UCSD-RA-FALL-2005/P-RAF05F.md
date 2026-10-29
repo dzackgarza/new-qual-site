@@ -45,36 +45,36 @@ Prove convergence of the distribution functions.
 ::: pf-proof
 
 Fix $r\ge0$ and set
-\[
+$$
 E_j:=\{x\in X:f_j(x)>r\},
 \qquad
 E:=\{x\in X:f(x)>r\}.
-\]
+$$
 Since $f_j\le f_{j+1}$, the sets $E_j$ are increasing. Also $E_j\subseteq E$ because $f_j\le f$.
 
 Let
-\[
+$$
 N:=\{x:f_j(x)\not\to f(x)\}.
-\]
+$$
 Then $\mu(N)=0$. If $x\in E\setminus N$, then $f(x)>r$ and $f_j(x)\to f(x)$, so $f_j(x)>r$ for all sufficiently large $j$. Hence
-\[
+$$
 E\setminus N\subseteq\bigcup_{j=1}^\infty E_j\subseteq E.
-\]
+$$
 Therefore
-\[
+$$
 \mu\!\left(\bigcup_{j=1}^\infty E_j\right)=\mu(E).
-\]
+$$
 By continuity from below,
-\[
+$$
 \mu(E_j)\longrightarrow\mu(E),
-\]
+$$
 that is,
-\[
+$$
 \boxed{
 \mu(f_j^{-1}((r,\infty]))
 \longrightarrow
 \mu(f^{-1}((r,\infty])).}
-\]
+$$
 
 :::
 
@@ -87,9 +87,9 @@ Write $f$ as an integral of its superlevel indicators.
 ::: pf-proof
 
 For every $x\in X$,
-\[
+$$
 f(x)=\int_0^\infty \mathbf1_{\{r<f(x)\}}\,dr.
-\]
+$$
 Indeed, if $f(x)=a<\infty$, the integrand is the indicator of $(0,a)$; if $f(x)=\infty$, the integral is infinite.
 
 :::
@@ -103,24 +103,24 @@ Apply Tonelli's theorem.
 ::: pf-proof
 
 The function
-\[
+$$
 (x,r)\longmapsto \mathbf1_{\{r<f(x)\}}
-\]
+$$
 is nonnegative and measurable on $X\times[0,\infty)$. Therefore Tonelli's theorem gives
-\[
+$$
 \begin{aligned}
 \int_X f(x)\,d\mu(x)
 &=\int_X\int_0^\infty \mathbf1_{\{r<f(x)\}}\,dr\,d\mu(x)\\
 &=\int_0^\infty\int_X \mathbf1_{\{f(x)>r\}}\,d\mu(x)\,dr\\
 &=\int_0^\infty \mu(f^{-1}((r,\infty]))\,dr.
 \end{aligned}
-\]
+$$
 Thus
-\[
+$$
 \boxed{
 \int_X f\,d\mu
 =\int_0^\infty \mu(f^{-1}((r,\infty]))\,dr.}
-\]
+$$
 
 :::
 

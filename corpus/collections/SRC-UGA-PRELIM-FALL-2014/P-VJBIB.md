@@ -16,9 +16,9 @@ review: draft
 
 ::: {.problem}
 Take
-\[
+$$
 A := \begin{pmatrix} 2 & -2 \\ -2 & 5 \end{pmatrix}.
-\]
+$$
 Find an orthogonal matrix $P$ for which $P^{-1}AP$ is diagonal.
 Then find the minimum value of the dot products $Ax \cdot x$ as $x$ ranges through the unit vectors in $\RR^2$.
 :::

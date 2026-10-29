@@ -28,12 +28,12 @@ audit:
 ---
 
 ::: {.problem}
-How many pairs of integers \((a,b)\) satisfy
-\[
+How many pairs of integers $(a,b)$ satisfy
+$$
 a\ge b\ge0,
 \qquad
 a^2+b^2=5\cdot17\cdot37?
-\]
+$$
 :::
 
 ::: {.solution}

@@ -40,14 +40,14 @@ If $\sum_{n=0}^\infty A^n$ converges, then every eigenvalue of $A$ has modulus l
 
 ::: pf-proof
 Convergence of the series implies its terms tend to zero:
-\[
+$$
 A^n\longrightarrow0.
-\]
+$$
 Let $v\ne0$ be an eigenvector with eigenvalue $\lambda$.
 Then
-\[
+$$
 A^nv=\lambda^n v.
-\]
+$$
 Since $A^nv\to0$ and $v\ne0$, one must have $\lambda^n\to0$.
 This is equivalent to $|\lambda|<1$.
 :::
@@ -60,16 +60,16 @@ If $\sum_{n=0}^\infty J^n$ converges, then $\sum_{n=0}^\infty A^n$ converges.
 
 ::: pf-proof
 There is an invertible matrix $S$ such that
-\[
+$$
 A=SJS^{-1},
 \qquad
 A^n=SJ^nS^{-1}.
-\]
+$$
 Hence
-\[
+$$
 \sum_{n=0}^N A^n
 =S\left(\sum_{n=0}^N J^n\right)S^{-1}.
-\]
+$$
 Thus the series for $A$ converges if the series for $J$ converges.
 For a $2\times2$ matrix, $J$ is either diagonal or a single Jordan block.
 :::
@@ -81,14 +81,14 @@ If $J=\operatorname{diag}(\lambda,\mu)$ with $|\lambda|,|\mu|<1$, then $\sum J^n
 
 ::: pf-proof
 One has
-\[
+$$
 J^n=\begin{pmatrix}\lambda^n&0\\0&\mu^n\end{pmatrix}.
-\]
+$$
 Therefore
-\[
+$$
 \sum_{n=0}^\infty J^n
 =\begin{pmatrix}\sum_{n=0}^\infty\lambda^n&0\\0&\sum_{n=0}^\infty\mu^n\end{pmatrix},
-\]
+$$
 and both scalar geometric series converge.
 :::
 
@@ -96,27 +96,27 @@ and both scalar geometric series converge.
 
 ::: {.pf-step #jordan-block-case}
 If
-\[
+$$
 J=\begin{pmatrix}\lambda&1\\0&\lambda\end{pmatrix},
 \qquad |\lambda|<1,
-\]
+$$
 then $\sum J^n$ also converges.
 
 ::: pf-proof
 Write $J=\lambda I+N$ with
-\[
+$$
 N=\begin{pmatrix}0&1\\0&0\end{pmatrix},
 \qquad N^2=0.
-\]
+$$
 For $n\ge1$, the binomial theorem gives
-\[
+$$
 J^n=\lambda^n I+n\lambda^{n-1}N
 =\begin{pmatrix}\lambda^n&n\lambda^{n-1}\\0&\lambda^n\end{pmatrix}.
-\]
+$$
 The geometric series $\sum\lambda^n$ converges, and
-\[
+$$
 \sum_{n=1}^\infty n\lambda^{n-1}=\frac1{(1-\lambda)^2}
-\]
+$$
 also converges absolutely for $|\lambda|<1$.
 Hence every entry of $\sum J^n$ converges.
 :::

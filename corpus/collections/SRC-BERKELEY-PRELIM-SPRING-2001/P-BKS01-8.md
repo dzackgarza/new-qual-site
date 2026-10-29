@@ -22,9 +22,9 @@ audit:
 
 ::: {.problem}
 If $G$ is a finite group, must
-\[
+$$
 S=\{g^2:g\in G\}
-\]
+$$
 be a subgroup?
 Give a proof or a counterexample.
 :::

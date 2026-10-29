@@ -35,7 +35,7 @@ find all solutions of AX = 0 by row-reducing A.
 
 ::: {.solution}
 Row-reduce $A$:
-\[
+$$
 \begin{bmatrix}
 3&-1&2\\
 2&1&1\\
@@ -53,7 +53,7 @@ Row-reduce $A$:
 0&7&1\\
 0&0&6
 \end{bmatrix}.
-\]
+$$
 
 ::: pf
 
@@ -69,9 +69,9 @@ row-echelon form is $I_3$.
 
 ::: pf-step
 The only solution of $AX=0$ is
-\[
+$$
 X=\begin{bmatrix}0\\0\\0\end{bmatrix}.
-\]
+$$
 
 ::: pf-proof
 Row operations preserve the solution set of a homogeneous system. Since the

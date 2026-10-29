@@ -47,10 +47,10 @@ The equation $r^6+r^3+1=0$ gives $(r^3-1)(r^6+r^3+1)=r^9-1=0$. But $r^3=1$ would
 ::: {.pf-step #s1-2}
 
 The splitting field and Galois group are
-\[
+$$
 \boxed{K=F(r)\cong\FF_{64},\qquad
 \operatorname{Gal}(K/F)=\langle\sigma\rangle\cong C_6,\quad\sigma(z)=z^2}.
-\]
+$$
 
 
 ::: pf-proof
@@ -64,10 +64,10 @@ The assumed irreducibility of the degree-six polynomial gives $[F(r):F]=6$, henc
 ::: {.pf-step #s1-3}
 
 All intermediate fields are
-\[
+$$
 \boxed{F,\quad F(r^3)\cong\FF_4,\quad
 F(r+r^8)\cong\FF_8,\quad F(r)=K}.
-\]
+$$
 
 
 ::: pf-proof

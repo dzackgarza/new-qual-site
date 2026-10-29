@@ -35,14 +35,14 @@ Every monic irreducible polynomial of degree $\ell$ over $\FF_p$ splits complete
 
 ::: pf-proof
 Let $f\in\FF_p[x]$ be monic irreducible of degree $\ell$, and let $\alpha$ be a root. Then
-\[
+$$
 [\FF_p(\alpha):\FF_p]=\ell,
-\]
+$$
 so $\FF_p(\alpha)$ has $p^\ell$ elements and is therefore isomorphic to $\FF_{p^\ell}$.
 Finite fields are perfect, so $f$ is separable. Its roots are
-\[
+$$
 \alpha,\alpha^p,\ldots,\alpha^{p^{\ell-1}},
-\]
+$$
 all lying in $\FF_{p^\ell}$ and all distinct.
 :::
 
@@ -54,13 +54,13 @@ Since $\ell$ is prime, its degree is either $1$ or $\ell$.
 
 ::: pf-proof
 The field $\FF_p(\alpha)$ is an intermediate field
-\[
+$$
 \FF_p\subseteq\FF_p(\alpha)\subseteq\FF_{p^\ell}.
-\]
+$$
 By the tower law,
-\[
+$$
 [\FF_p(\alpha):\FF_p]\mid [\FF_{p^\ell}:\FF_p]=\ell.
-\]
+$$
 Because $\ell$ is prime, the only possibilities are $1$ and $\ell$.
 :::
 
@@ -68,9 +68,9 @@ Because $\ell$ is prime, the only possibilities are $1$ and $\ell$.
 
 ::: pf-step
 Exactly
-\[
+$$
 p^\ell-p
-\]
+$$
 elements of $\FF_{p^\ell}$ have degree $\ell$ over $\FF_p$.
 
 ::: pf-proof
@@ -92,9 +92,9 @@ Conversely, every element of degree $\ell$ has a unique monic minimal polynomial
 
 ::: pf-step
 Therefore the number of monic irreducible polynomials of degree $\ell$ over $\FF_p$ is
-\[
+$$
 \boxed{\frac{p^\ell-p}{\ell}}.
-\]
+$$
 
 :::
 

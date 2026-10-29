@@ -37,9 +37,9 @@ Lifting and definition of the winding number:
 
 Consider the standard universal covering map $e: \RR \to S^1$ given by $e(t) = (\cos 2\pi t, \sin 2\pi t) = e^{2\pi i t}$.
 The normalized loop $g: [0, 1] \to S^1$ is defined by:
-\[
+$$
 g(s) = \frac{f(s) - a}{\|f(s) - a\|}.
-\]
+$$
 
 ::: pf-proof
 
@@ -64,9 +64,9 @@ Path Lifting Theorem for covering spaces.
 ::: pf-step
 
 By definition, the winding number of the loop $f$ around $a$ is the integer change:
-\[
+$$
 n(f, a) = \tilde{g}(1) - \tilde{g}(0).
-\]
+$$
 
 ::: pf-proof
 
@@ -116,9 +116,9 @@ functoriality of the fundamental group.
 
 Under the canonical isomorphism $\pi_1(S^1) \cong \ZZ$ that identifies a loop's homotopy class with the difference of the endpoints of its lift in $\RR$:
 The loop $g = h \circ \gamma$ lifts to $\tilde{g}$, so the degree of $h$ is:
-\[
+$$
 \deg(h) = \tilde{g}(1) - \tilde{g}(0).
-\]
+$$
 
 ::: pf-proof
 

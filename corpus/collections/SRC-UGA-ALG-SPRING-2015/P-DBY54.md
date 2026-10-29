@@ -42,12 +42,12 @@ Prove that every such ideal $J$ is prime.
   By maximality, $\mfp + Ra = R$, and so $\mfp + Ra$ intersects $S$.
   Similarly $\mfp + Rb = R$ so $\mfp + Rb$ intersects $S$.
 - Produce elements $x\definedas p_1 + r_1a, y\definedas p_2 + r_2b\in S$, then since $S$ is multiplicatively closed,
-\[
+$$
 xy&\definedas (p_1 + r_1 a)(p_2 + r_2b)\in S \\
 &\implies p_1 p_2 + p_1r_2 b + p_2 r_1 a + r_1 r_2 ab \in S \\ 
 &\implies xy\in \mfp + \mfp Rb + \mfp Ra + R\mfp && \text{since } p_i, ab\in \mfp \\
 &\implies xy \in (\mfp + Rb + Ra + R)\mfp \subseteq \mfp
-.\]
+.$$
   But then $xy\in S \intersect \mfp$, a contradiction.
 
 :::

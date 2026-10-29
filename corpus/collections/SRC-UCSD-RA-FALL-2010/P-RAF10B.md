@@ -43,16 +43,16 @@ Prove boundedness.
 ::: pf-proof
 
 For every $y\in\RR$,
-\[
+$$
 |g(y)|
 \le \int_{\RR}|\sin(y^2x)|\,|f(x)|\,dx
 \le \int_{\RR}|f(x)|\,dx
 =\|f\|_1.
-\]
+$$
 Hence
-\[
+$$
 \boxed{\|g\|_\infty\le\|f\|_1.}
-\]
+$$
 
 :::
 
@@ -65,17 +65,17 @@ Prove continuity.
 ::: pf-proof
 
 Let $y_k\to y$. For each fixed $x\in\RR$,
-\[
+$$
 \sin(y_k^2x)f(x)\longrightarrow \sin(y^2x)f(x).
-\]
+$$
 Moreover,
-\[
+$$
 |\sin(y_k^2x)f(x)|\le|f(x)|,
-\]
+$$
 and $f\in L^1(\RR)$. By dominated convergence,
-\[
+$$
 g(y_k)\longrightarrow g(y).
-\]
+$$
 Therefore $g$ is continuous on $\RR$.
 
 :::

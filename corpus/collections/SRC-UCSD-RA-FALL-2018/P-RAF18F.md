@@ -46,29 +46,29 @@ Define the functional on $V$ and extend it.
 ::: pf-proof
 
 For $f\in V$, set
-\[
+$$
 L(f):=\lim_{n\to\infty}n\int_0^{1/n}f(x)\,dx.
-\]
+$$
 The space $V$ is a vector subspace and $L$ is linear, because limits respect finite linear combinations.
 
 For every $n$,
-\[
+$$
 \left|n\int_0^{1/n}f(x)\,dx\right|
 \le n\frac1n\|f\|_\infty
 =\|f\|_\infty.
-\]
+$$
 Passing to the limit gives
-\[
+$$
 |L(f)|\le\|f\|_\infty.
-\]
+$$
 Thus $L$ is a bounded linear functional on $V$ with norm at most $1$. By the Hahn--Banach theorem, $L$ extends to a bounded linear functional
-\[
+$$
 \varphi\in L^\infty([0,1])^*
-\]
+$$
 with the same norm. Hence
-\[
+$$
 \varphi(f)=L(f)
-\]
+$$
 for every $f\in V$.
 
 :::
@@ -82,19 +82,19 @@ Test the extension on shrinking interval indicators.
 ::: pf-proof
 
 For $k\ge1$, let
-\[
+$$
 f_k=\mathbf1_{[0,1/k]}.
-\]
+$$
 If $n\ge k$, then $[0,1/n]\subseteq[0,1/k]$, so
-\[
+$$
 n\int_0^{1/n}f_k(x)\,dx
 =n\frac1n=1.
-\]
+$$
 Therefore $f_k\in V$ and
-\[
+$$
 \varphi(f_k)=1
 \qquad\text{for every }k.
-\]
+$$
 
 :::
 
@@ -107,17 +107,17 @@ Rule out representation by an $L^1$ density.
 ::: pf-proof
 
 Suppose there were $g\in L^1([0,1])$ such that
-\[
+$$
 \varphi(f)=\int_0^1 f(x)g(x)\,dx
-\]
+$$
 for every $f\in L^\infty([0,1])$. Applying this to $f_k$ gives
-\[
+$$
 1=\varphi(f_k)=\int_0^{1/k}g(x)\,dx.
-\]
+$$
 But absolute continuity of the Lebesgue integral for $g\in L^1$ implies
-\[
+$$
 \int_0^{1/k}g(x)\,dx\longrightarrow0
-\]
+$$
 as $k\to\infty$, a contradiction. Hence no such $g$ exists.
 
 :::

@@ -48,32 +48,32 @@ Show that $V$ is open and null.
 By definition, $V$ is a union of open sets, so $V$ is open.
 
 Suppose for contradiction that $\mu(V)>0$. Since $\mu$ is Radon, it is inner regular on the open set $V$, so there exists a compact set
-\[
+$$
 C\subseteq V
-\]
+$$
 with
-\[
+$$
 \mu(C)>0.
-\]
+$$
 For every $x\in C$, because $x\in V$, there is an open set $U_x$ such that
-\[
+$$
 x\in U_x,
 \qquad
 \mu(U_x)=0.
-\]
+$$
 The family $(U_x)_{x\in C}$ covers the compact set $C$, so finitely many of them cover $C$:
-\[
+$$
 C\subseteq U_{x_1}\cup\cdots\cup U_{x_N}.
-\]
+$$
 Hence
-\[
+$$
 \mu(C)
 \le\sum_{j=1}^N\mu(U_{x_j})=0,
-\]
+$$
 a contradiction. Therefore
-\[
+$$
 \boxed{\mu(V)=0.}
-\]
+$$
 
 :::
 
@@ -86,13 +86,13 @@ Prove the basic properties of the support in the compact probability case.
 ::: pf-proof
 
 Now assume $X$ is compact and $\mu(X)=1$, and put
-\[
+$$
 K:=\operatorname{supp}(\mu)=X\setminus V.
-\]
+$$
 Since $V$ is open, $K$ is closed in the compact space $X$, hence compact. Also
-\[
+$$
 \mu(K)=\mu(X)-\mu(V)=1.
-\]
+$$
 
 :::
 
@@ -105,26 +105,26 @@ Show that no proper compact subset of $K$ has full measure.
 ::: pf-proof
 
 Let $H\subsetneq K$ be compact. Choose
-\[
+$$
 x\in K\setminus H.
-\]
+$$
 Because $X$ is Hausdorff and $H$ is compact, there exists an open neighborhood $U$ of $x$ such that
-\[
+$$
 U\cap H=\varnothing.
-\]
+$$
 
 Since $x\in K=X\setminus V$, no open neighborhood of $x$ can have measure zero. Hence
-\[
+$$
 \mu(U)>0.
-\]
+$$
 Because $H$ and $U$ are disjoint,
-\[
+$$
 \mu(H)+\mu(U)\le\mu(X)=1.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{\mu(H)\le1-\mu(U)<1.}
-\]
+$$
 Thus every proper compact subset of the support has strictly smaller measure.
 
 :::

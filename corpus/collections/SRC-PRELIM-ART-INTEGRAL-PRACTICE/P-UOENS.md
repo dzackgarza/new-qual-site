@@ -22,20 +22,20 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int \sin x\cos x\cot x\tan x\,dx.
-\]
+$$
 :::
 
 ::: {.solution}
 Where the integrand is defined,
-\[
+$$
 \cot x\tan x=1,
-\]
+$$
 so
-\[
+$$
 \int \sin x\cos x\,dx
 =\boxed{\frac12\sin^2x+C.}
-\]
+$$
 This is an antiderivative on each open interval of the domain $\{x:\sin x\cos x\neq0\}$ of the integrand.
 :::

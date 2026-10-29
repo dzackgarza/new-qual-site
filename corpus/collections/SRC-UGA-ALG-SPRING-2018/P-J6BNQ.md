@@ -34,9 +34,9 @@ Show that $H_1 H_2$ is a subgroup of $G$.
 
 c.
 Show that 
-\[
+$$
 \Gal(K/(E_1 \cap E_2 )) = H_1 H_2
-.\]
+.$$
 :::
 
 ::: {.concept}
@@ -59,9 +59,9 @@ $H=H_1\cap H_2$.
 
 An automorphism $\sigma\in G$ lies in $H$ exactly when it fixes the compositum $E_1E_2$ pointwise.
 This certainly implies that it fixes the subfields $E_1$ and $E_2$, so
-\[
+$$
 H\subseteq H_1\cap H_2.
-\]
+$$
 
 Conversely, if $\sigma\in H_1\cap H_2$, then $\sigma$ fixes both $E_1$ and $E_2$ pointwise.
 Every element of $E_1E_2$ is obtained from elements of $E_1\cup E_2$ by finitely many field operations, and a field automorphism respects these operations.
@@ -82,9 +82,9 @@ Thus $E_i/\QQ$ is normal, and since $\operatorname{char}\QQ=0$, it is separable 
 Hence $E_i/\QQ$ is Galois.
 
 By the fundamental theorem of Galois theory for $K/\QQ$, this is equivalent to
-\[
+$$
 H_i=\Gal(K/E_i)\triangleleft G.
-\]
+$$
 
 :::
 
@@ -98,20 +98,20 @@ $H_1H_2$ is a subgroup of $G$.
 
 Let $h_1,h_1'\in H_1$ and $h_2,h_2'\in H_2$.
 Since $H_1\triangleleft G$ by step [](#s2){.pf-ref},
-\[
+$$
 h_2h_1'h_2^{-1}\in H_1.
-\]
+$$
 Therefore
-\[
+$$
 (h_1h_2)(h_1'h_2')
 =h_1(h_2h_1'h_2^{-1})(h_2h_2')\in H_1H_2.
-\]
+$$
 Similarly,
-\[
+$$
 (h_1h_2)^{-1}
 =h_2^{-1}h_1^{-1}
 =(h_2^{-1}h_1^{-1}h_2)h_2^{-1}\in H_1H_2.
-\]
+$$
 Thus $H_1H_2\le G$.
 
 :::
@@ -125,15 +125,15 @@ The fixed field of $H_1H_2$ is $E_1\cap E_2$.
 ::: pf-proof
 
 Since $H_i\subseteq H_1H_2$,
-\[
+$$
 K^{H_1H_2}\subseteq K^{H_1}\cap K^{H_2}=E_1\cap E_2.
-\]
+$$
 
 Conversely, if $x\in E_1\cap E_2$, then every $h_1\in H_1$ and every $h_2\in H_2$ fixes $x$.
 Hence every product $h_1h_2$ fixes $x$, so
-\[
+$$
 E_1\cap E_2\subseteq K^{H_1H_2}.
-\]
+$$
 
 :::
 

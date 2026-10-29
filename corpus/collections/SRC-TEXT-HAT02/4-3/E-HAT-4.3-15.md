@@ -28,20 +28,20 @@ If the fibration $p: E \to B$ is a homotopy equivalence, show that $p$ is a fibe
 :::
 
 ::: {.solution}
-The fibration \(p:E\to B\) and the identity fibration
-\[
+The fibration $p:E\to B$ and the identity fibration
+$$
 1_B:B\to B
-\]
-represent the same element of \(\mathcal M(B)\): the map
-\[
+$$
+represent the same element of $\mathcal M(B)$: the map
+$$
 p:E\to B
-\]
+$$
 is itself a homotopy equivalence and satisfies
-\[
+$$
 p=1_B\circ p.
-\]
-By the bijection of Exercise 14, equal classes in \(\mathcal M(B)\) correspond to the same class in \(\mathcal F(B)\). Thus
-\[
+$$
+By the bijection of Exercise 14, equal classes in $\mathcal M(B)$ correspond to the same class in $\mathcal F(B)$. Thus
+$$
 \boxed{p:E\to B\text{ is fiber homotopy equivalent to }1_B:B\to B.}
-\]
+$$
 :::

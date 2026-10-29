@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 f(z)=\sum_{n=0}^\infty a_nz^n,
-\]
+$$
 where every $a_n$ is a nonnegative real number and the series has radius of convergence $1$.
 Prove that $f$ cannot be analytically continued to a function analytic in a neighborhood of $z=1$.
 :::

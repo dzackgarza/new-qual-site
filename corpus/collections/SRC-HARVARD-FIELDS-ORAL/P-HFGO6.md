@@ -31,18 +31,18 @@ Yes. More generally, every finite group occurs as the Galois group of some
 field extension.
 
 Let
-\[
+$$
 Q_8=\{\pm1,\pm i,\pm j,\pm k\}
-\]
+$$
 and choose a field $k$, for example $k=\QQ$. Introduce algebraically
 independent variables
-\[
+$$
 \{x_g:g\in Q_8\}
-\]
+$$
 and set
-\[
+$$
 K=k(x_g:g\in Q_8).
-\]
+$$
 
 ::: pf
 
@@ -53,15 +53,15 @@ The group $Q_8$ acts faithfully on $K$ by $k$-automorphisms.
 ::: pf-proof
 
 For $h\in Q_8$, define
-\[
+$$
 h(x_g)=x_{hg}
-\]
+$$
 and let $h$ fix $k$. Permuting an algebraically independent transcendence basis
 extends uniquely to an automorphism of the rational function field. Moreover,
 if $h\ne1$, then
-\[
+$$
 h(x_1)=x_h\ne x_1,
-\]
+$$
 so the action is faithful.
 
 :::
@@ -71,30 +71,30 @@ so the action is faithful.
 ::: pf-step
 
 If
-\[
+$$
 F=K^{Q_8}
-\]
+$$
 is the fixed field, then $K/F$ is a finite Galois extension and
-\[
+$$
 \operatorname{Gal}(K/F)=Q_8.
-\]
+$$
 
 ::: pf-proof
 
 Artin's fixed-field theorem says that if a finite group $G$ acts faithfully by
 automorphisms on a field $K$, then
-\[
+$$
 [K:K^G]=|G|
-\]
+$$
 and $K/K^G$ is Galois with Galois group exactly $G$.
 Applying this to the action in step [](#s1){.pf-ref} gives
-\[
+$$
 [K:F]=8
-\]
+$$
 and
-\[
+$$
 \operatorname{Gal}(K/F)\cong Q_8.
-\]
+$$
 
 :::
 

@@ -27,13 +27,13 @@ Describe the Sylow $2$-subgroups of $S_4$, $S_5$, and $S_6$.
 
 ::: {.solution}
 The $2$-parts of the three group orders are
-\[
+$$
 |S_4|=24=2^3\cdot3,
 \qquad
 |S_5|=120=2^3\cdot15,
 \qquad
 |S_6|=720=2^4\cdot45.
-\]
+$$
 
 ::: pf
 
@@ -44,19 +44,19 @@ A Sylow $2$-subgroup of $S_4$ is dihedral of order $8$.
 ::: pf-proof
 
 Set
-\[
+$$
 r=(1234),
 \qquad
 s=(13).
-\]
+$$
 Then $r$ has order $4$, $s$ has order $2$, and
-\[
+$$
 srs=r^{-1}.
-\]
+$$
 Thus
-\[
+$$
 \langle r,s\rangle\cong D_8
-\]
+$$
 has order $8$, which is the full $2$-part of $|S_4|$.
 
 :::
@@ -85,10 +85,10 @@ A Sylow $2$-subgroup of $S_6$ is isomorphic to $D_8\times C_2$.
 
 Let the $D_8$ from step [](#s1){.pf-ref} act on $\{1,2,3,4\}$, and adjoin the disjoint
 transposition $(56)$. Since $(56)$ commutes with the first factor,
-\[
+$$
 \langle (1234),(13),(56)\rangle
 \cong D_8\times C_2
-\]
+$$
 has order $16$, the full $2$-part of $|S_6|$. Hence it is Sylow, and every
 Sylow $2$-subgroup of $S_6$ is conjugate to it.
 

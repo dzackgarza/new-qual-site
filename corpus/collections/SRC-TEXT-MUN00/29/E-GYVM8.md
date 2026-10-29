@@ -84,9 +84,9 @@ directedness of $A$.
 
 ::: pf-step
 Since $X$ is compact and $\{F_\alpha\}$ has the FIP, the total intersection is non-empty:
-\[
+$$
 \bigcap_{\alpha \in A} F_\alpha = \bigcap_{\alpha \in A} \overline{T_\alpha} \neq \emptyset.
-\]
+$$
 
 ::: pf-proof
 FIP characterization of compactness.
@@ -119,9 +119,9 @@ Reverse direction ($\impliedby$): Every net having a convergent subnet implies c
 We show that every family of closed sets with the FIP has non-empty intersection.
 Let $\mathcal{A}$ be a family of closed subsets of $X$ with the FIP.
 Let $\mathcal{B}$ be the collection of all non-empty finite intersections of members of $\mathcal{A}$:
-\[
+$$
 \mathcal{B} = \{F_1 \cap \dots \cap F_n \mid F_i \in \mathcal{A}, \, n \ge 1\}.
-\]
+$$
 
 ::: pf-proof
 definition of finite intersections.

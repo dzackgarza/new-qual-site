@@ -55,9 +55,9 @@ Part (a): Holomorphic functions with non-zero derivative preserve angles:
 ::: pf-step
 Let $\gamma, \eta$ be smooth curves intersecting at $z_0 = \gamma(t_0) = \eta(t_0)$ with non-zero tangent vectors $v = \gamma'(t_0)$ and $w = \eta'(t_0)$.
 The tangent vectors to the image curves $\tilde{\gamma} = f \circ \gamma$ and $\tilde{\eta} = f \circ \eta$ at $f(z_0)$ are:
-\[
+$$
 \tilde{v} = f'(z_0) v \quad \text{and} \quad \tilde{w} = f'(z_0) w.
-\]
+$$
 
 ::: pf-proof
 chain rule for complex differentiation.
@@ -68,9 +68,9 @@ chain rule for complex differentiation.
 ::: {.pf-step #scaled-inner-product}
 The Euclidean inner product on $\RR^2 \cong \CC$ is $(z_1, z_2) = \operatorname{Re}(z_1 \bar{z}_2)$.
 Compute the inner product of $\tilde{v}$ and $\tilde{w}$:
-\[
+$$
 (\tilde{v}, \tilde{w}) = \operatorname{Re}\big((f'(z_0) v) \overline{(f'(z_0) w)}\big) = \operatorname{Re}\big(|f'(z_0)|^2 v \bar{w}\big) = |f'(z_0)|^2 \operatorname{Re}(v \bar{w}) = |f'(z_0)|^2 (v, w).
-\]
+$$
 
 ::: pf-proof
 algebraic properties of complex conjugation and modulus.
@@ -81,9 +81,9 @@ algebraic properties of complex conjugation and modulus.
 ::: pf-step
 The norms are $|\tilde{v}| = |f'(z_0)| |v|$ and $|\tilde{w}| = |f'(z_0)| |w|$.
 Thus the cosine of the angle $\tilde{\alpha}$ between $\tilde{v}$ and $\tilde{w}$ satisfies:
-\[
+$$
 \cos \tilde{\alpha} = \frac{(\tilde{v}, \tilde{w})}{|\tilde{v}| |\tilde{w}|} = \frac{|f'(z_0)|^2 (v, w)}{|f'(z_0)|^2 |v| |w|} = \frac{(v, w)}{|v| |w|} = \cos \alpha.
-\]
+$$
 
 ::: pf-proof
 Step [](#scaled-inner-product){.pf-ref} and norm scaling.
@@ -93,13 +93,13 @@ Step [](#scaled-inner-product){.pf-ref} and norm scaling.
 
 ::: pf-step
 Similarly, compute the sine of the angle $\tilde{\alpha}$:
-\[
+$$
 (\tilde{v}, -i\tilde{w}) = \operatorname{Re}\big((f'(z_0) v) \overline{(-i f'(z_0) w)}\big) = |f'(z_0)|^2 \operatorname{Re}(v \cdot i \bar{w}) = |f'(z_0)|^2 (v, -iw).
-\]
+$$
 Dividing by $|\tilde{v}| |\tilde{w}|$ yields:
-\[
+$$
 \sin \tilde{\alpha} = \frac{(\tilde{v}, -i\tilde{w})}{|\tilde{v}| |\tilde{w}|} = \frac{(v, -iw)}{|v| |w|} = \sin \alpha.
-\]
+$$
 
 ::: pf-proof
 definition of oriented sine.
@@ -127,9 +127,9 @@ Part (b): Preservation of oriented angles implies holomorphicity:
 
 ::: pf-step
 Let $T = Df(z_0): \RR^2 \to \RR^2$ be the real total derivative, represented by the Jacobian matrix:
-\[
+$$
 J = \begin{pmatrix} u_x & u_y \\ v_x & v_y \end{pmatrix}, \quad \text{with } \det(J) \neq 0.
-\]
+$$
 
 ::: pf-proof
 real differentiability of $f = u + iv$.
@@ -150,9 +150,9 @@ tangent mapping of smooth curves.
 Consider the standard basis $e_1 = (1, 0)^T$ and $e_2 = (0, 1)^T$.
 $e_1$ and $e_2$ are orthogonal of equal length with $\det(e_1, e_2) = 1 > 0$.
 Thus their images $T e_1 = (u_x, v_x)^T$ and $T e_2 = (u_y, v_y)^T$ must be orthogonal, have equal non-zero length $\lambda > 0$, and satisfy $\det(T e_1, T e_2) > 0$:
-\[
+$$
 u_x u_y + v_x v_y = 0, \qquad u_x^2 + v_x^2 = u_y^2 + v_y^2 = \lambda^2 > 0, \qquad u_x v_y - u_y v_x > 0.
-\]
+$$
 
 ::: pf-proof
 preservation of right angles and orientation.
@@ -162,13 +162,13 @@ preservation of right angles and orientation.
 
 ::: {.pf-step #rotation-matrix-form}
 Any $2 \times 2$ matrix satisfying these conditions has the form of a positive scalar times a rotation matrix:
-\[
+$$
 J = \begin{pmatrix} a & -b \\ b & a \end{pmatrix} \quad (a, b \in \RR, \, a^2 + b^2 = \lambda^2 > 0).
-\]
+$$
 Therefore:
-\[
+$$
 u_x = v_y = a, \qquad u_y = -v_x = -b.
-\]
+$$
 
 ::: pf-proof
 classification of orientation-preserving conformal linear maps on $\RR^2$.
@@ -179,9 +179,9 @@ classification of orientation-preserving conformal linear maps on $\RR^2$.
 ::: pf-step
 The equations in step [](#rotation-matrix-form){.pf-ref} are the **Cauchy–Riemann equations** for $f$ at $z_0$.
 Since $f$ is real-differentiable at $z_0$ and satisfies the Cauchy–Riemann equations, $f$ is complex-differentiable (holomorphic) at $z_0$ with:
-\[
+$$
 f'(z_0) = u_x(z_0) + i v_x(z_0) = a + ib \neq 0.
-\]
+$$
 
 ::: pf-proof
 complex differentiability characterization via Cauchy–Riemann equations and real differentiability.

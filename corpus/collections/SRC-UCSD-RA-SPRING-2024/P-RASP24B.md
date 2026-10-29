@@ -42,23 +42,23 @@ Prove Scheffe's lemma in the nonnegative case.
 ::: pf-proof
 
 Since $f_n\to f$ almost everywhere,
-\[
+$$
 \min(f_n,f)\to f
-\]
+$$
 almost everywhere. Moreover,
-\[
+$$
 0\le \min(f_n,f)\le f,
-\]
+$$
 and $f\in L^1(\mu)$. Hence the Dominated Convergence Theorem gives
-\[
+$$
 \int_X\min(f_n,f)\,d\mu\longrightarrow\int_X f\,d\mu.
-\]
+$$
 For nonnegative functions,
-\[
+$$
 |f_n-f|=f_n+f-2\min(f_n,f).
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 \|f_n-f\|_1
 &=\int_Xf_n\,d\mu+\int_Xf\,d\mu
@@ -66,11 +66,11 @@ Therefore
 &\longrightarrow
 \int_Xf\,d\mu+\int_Xf\,d\mu-2\int_Xf\,d\mu=0.
 \end{aligned}
-\]
+$$
 Thus
-\[
+$$
 \boxed{f_n\to f\text{ in }L^1(\mu).}
-\]
+$$
 
 :::
 
@@ -83,27 +83,27 @@ Show that nonnegativity is essential.
 ::: pf-proof
 
 Take $X=[0,1]$ with Lebesgue measure, let $f\equiv0$, and for $n\ge2$ define
-\[
+$$
 f_n(x)=n\mathbf1_{(0,1/n)}(x)-n\mathbf1_{(1/n,2/n)}(x).
-\]
+$$
 For every $x>0$, both intervals eventually lie to the left of $x$, so $f_n(x)=0$ for all sufficiently large $n$. Thus
-\[
+$$
 f_n\to0
-\]
+$$
 almost everywhere.
 
 Also
-\[
+$$
 \int_0^1f_n(x)\,dx
 =n\frac1n-n\frac1n=0
 =\int_0^1f(x)\,dx
-\]
+$$
 for every $n$. However,
-\[
+$$
 \|f_n-f\|_1
 =\int_0^1|f_n(x)|\,dx
 =n\frac1n+n\frac1n=2.
-\]
+$$
 Hence $f_n$ does not converge to $f$ in $L^1$. Therefore the conclusion in part (a) is false without the nonnegativity hypothesis.
 
 :::

@@ -29,7 +29,7 @@ Describe explicitly all $2 \times 2$ row-reduced echelon matrices.
 
 ::: {.solution}
 All $2\times2$ row-reduced echelon matrices are exactly
-\[
+$$
 \begin{bmatrix}0&0\\0&0\end{bmatrix},
 \qquad
 \begin{bmatrix}1&a\\0&0\end{bmatrix}\quad(a\in F),
@@ -37,7 +37,7 @@ All $2\times2$ row-reduced echelon matrices are exactly
 \begin{bmatrix}0&1\\0&0\end{bmatrix},
 \qquad
 \begin{bmatrix}1&0\\0&1\end{bmatrix}.
-\]
+$$
 
 ::: pf
 

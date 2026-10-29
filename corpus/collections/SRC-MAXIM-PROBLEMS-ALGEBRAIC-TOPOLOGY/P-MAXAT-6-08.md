@@ -49,9 +49,9 @@ For $n=1$ it is the familiar embedding $\CP^1\cong S^2\hookrightarrow\RR^3$.
 
 ::: pf-qed
 Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give $N(n)=4n-1$, so
-\[
+$$
 \boxed{k_{\min}=2n-1.}
-\]
+$$
 :::
 
 :::

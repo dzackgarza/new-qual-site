@@ -30,34 +30,34 @@ Show that $h_*$ carries a generator of $\pi_1(S^1, b_0)$ to an odd power of itse
 :::
 
 ::: {.solution}
-Identify \(S^1\) with \(\RR/\ZZ\) by \(t\mapsto e^{2\pi it}\), and take \(b_0=1\). Since \(h(b_0)=b_0\), lift \(h\) to a continuous map
-\[
+Identify $S^1$ with $\RR/\ZZ$ by $t\mapsto e^{2\pi it}$, and take $b_0=1$. Since $h(b_0)=b_0$, lift $h$ to a continuous map
+$$
 H:\RR\to\RR
-\]
-with \(H(0)=0\) and
-\[
+$$
+with $H(0)=0$ and
+$$
 e^{2\pi iH(t)}=h(e^{2\pi it}).
-\]
+$$
 
 Antipode preservation gives
-\[
+$$
 h(e^{2\pi i(t+1/2)})=-h(e^{2\pi it}),
-\]
+$$
 so
-\[
+$$
 H(t+1/2)-H(t)\in \frac12+\ZZ.
-\]
-The left side is continuous in \(t\), while \(\frac12+\ZZ\) is discrete; hence it is constant. Thus for some \(m\in\ZZ\),
-\[
+$$
+The left side is continuous in $t$, while $\frac12+\ZZ$ is discrete; hence it is constant. Thus for some $m\in\ZZ$,
+$$
 H(t+1/2)=H(t)+m+\frac12
-\]
-for all \(t\). Applying this twice,
-\[
+$$
+for all $t$. Applying this twice,
+$$
 H(t+1)=H(t)+2m+1.
-\]
-Therefore the degree of \(h\) is the odd integer \(2m+1\). If \(a\) denotes the standard generator of \(\pi_1(S^1,b_0)\cong\ZZ\), then
-\[
+$$
+Therefore the degree of $h$ is the odd integer $2m+1$. If $a$ denotes the standard generator of $\pi_1(S^1,b_0)\cong\ZZ$, then
+$$
 h_*(a)=a^{\,2m+1},
-\]
+$$
 an odd power of the generator, as required.
 :::

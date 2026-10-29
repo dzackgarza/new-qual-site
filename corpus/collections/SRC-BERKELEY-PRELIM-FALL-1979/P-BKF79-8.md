@@ -24,13 +24,13 @@ audit:
 
 ::: {.problem}
 Prove that
-\[
+$$
 \lim_{n\to\infty}
 \left(
 \frac1{n+1}+\frac1{n+2}+\cdots+\frac1{2n}
 \right)
 =\log2.
-\]
+$$
 :::
 
 ::: {.solution}

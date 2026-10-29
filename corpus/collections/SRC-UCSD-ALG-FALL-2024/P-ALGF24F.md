@@ -39,9 +39,9 @@ Let $h\in\FF_p[x]$ be the monic minimal polynomial of $\alpha$.
 ::: {.pf-step #s1}
 
 For every integer $r\ge0$,
-\[
+$$
 \alpha^{p^r}=\alpha-r,
-\]
+$$
 where the integer $r$ on the right denotes its image in $\FF_p$.
 
 ::: pf-proof
@@ -49,10 +49,10 @@ where the integer $r$ on the right denotes its image in $\FF_p$.
 The identity holds for $r=0$.
 Since $f(\alpha)=0$, we have $\alpha^p=\alpha-1$.
 If the formula holds for $r$, then the characteristic-$p$ binomial theorem and $r^p=r$ in the prime field give
-\[
+$$
 \alpha^{p^{r+1}}=(\alpha-r)^p=\alpha^p-r^p
 =\alpha-1-r=\alpha-(r+1).
-\]
+$$
 Induction proves the formula.
 
 :::
@@ -66,15 +66,15 @@ The polynomial $h$ has at least $p$ distinct roots.
 ::: pf-proof
 
 For a polynomial with coefficients in $\FF_p$, the Frobenius map satisfies
-\[
+$$
 h(z^p)=h(z)^p.
-\]
+$$
 Indeed, raising the sum defining $h(z)$ to the $p$th power raises each monomial to that power and fixes every coefficient.
 Iterating and using $h(\alpha)=0$ shows that $h(\alpha^{p^r})=0$ for every $r\ge0$.
 By step [](#s1){.pf-ref}, the elements
-\[
+$$
 \alpha,\alpha-1,\ldots,\alpha-(p-1)
-\]
+$$
 are therefore roots of $h$.
 They are distinct: equality of the $r$th and $s$th terms would give $r-s=0$ in $\FF_p$, which for $0\le r,s<p$ forces $r=s$.
 Consequently $\deg h\ge p$.

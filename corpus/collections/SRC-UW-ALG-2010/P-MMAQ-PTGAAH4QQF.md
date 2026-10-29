@@ -51,9 +51,9 @@ Since $\theta$ is algebraic over $F$, the extension $F(\theta)/F$ is finite. Bec
 
 ::: pf-step
 There exists $\alpha\in N$ such that
-\[
+$$
 N=F(\alpha).
-\]
+$$
 
 ::: pf-proof
 By the primitive element theorem, every finite separable extension is simple. Apply this to the finite Galois extension $N/F$ from step [](#s2){.pf-ref}.
@@ -73,13 +73,13 @@ In fact $\beta\in N$ and $F(\beta)=N$.
 Work inside a common algebraic closure containing $K$ and $N$. Since $N/F$ is normal and $\alpha\in N$, the minimal polynomial $m_\alpha$ splits completely over $N$. Therefore every root of $m_\alpha$, in particular $\beta$, lies in $N$.
 
 Because $m_\alpha$ is irreducible over $F$ and $\beta$ is one of its roots,
-\[
+$$
 [F(\beta):F]=\deg m_\alpha=[F(\alpha):F]=[N:F].
-\]
+$$
 But $F(\beta)\subseteq N$, so equality of degrees forces
-\[
+$$
 F(\beta)=N.
-\]
+$$
 :::
 
 :::

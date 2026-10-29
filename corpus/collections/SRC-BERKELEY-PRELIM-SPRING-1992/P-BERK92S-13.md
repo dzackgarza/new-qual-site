@@ -24,13 +24,13 @@ audit:
 
 ::: {.problem}
 Let $f:\RR^3\to\RR^3$ be one-to-one and $C^1$, and let $J$ be its Jacobian determinant. For $x_0\in\RR^3$, let $Q_r(x_0)$ be the cube centered at $x_0$, of side length $r$, with edges parallel to the coordinate axes. Prove that
-\[
+$$
 |J(x_0)|
 =\lim_{r\to0}r^{-3}\operatorname{vol}(f(Q_r(x_0)))
 \le
 \limsup_{x\to x_0}
 \frac{\|f(x)-f(x_0)\|^3}{\|x-x_0\|^3}.
-\]
+$$
 Here $\|\cdot\|$ is the Euclidean norm.
 :::
 

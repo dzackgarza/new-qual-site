@@ -76,43 +76,43 @@ This reduces the problem to Problem 3.
 
 ::: {.solution}
 For part 1, Cauchy's inequality gives, for every $r>0$,
-\[
+$$
 |a_n|\le \frac{A}{r^n}e^{ar^\rho}.
-\]
+$$
 Choose
-\[
+$$
 r=\left(\frac{n}{a\rho}\right)^{1/\rho}.
-\]
+$$
 Then $ar^\rho=n/\rho$, and therefore
-\[
+$$
 |a_n|^{1/n}
 \le A^{1/n}e^{1/\rho}\left(\frac{a\rho}{n}\right)^{1/\rho}.
-\]
+$$
 Hence
-\[
+$$
 \limsup_{n\to\infty}|a_n|^{1/n}n^{1/\rho}
 \le e^{1/\rho}(a\rho)^{1/\rho}<\infty.
-\]
+$$
 
 Conversely, assume (8). Then there is $c>0$ such that, for all sufficiently large $n$,
-\[
+$$
 |a_n|\le \frac{c^n}{n^{n/\rho}}.
-\]
+$$
 After increasing a constant to absorb finitely many initial terms,
-\[
+$$
 |F(z)|\le C\sum_{n=0}^\infty \frac{(c|z|)^n}{n^{n/\rho}}.
-\]
+$$
 Since $n!\le n^n$,
-\[
+$$
 \frac1{n^{n/\rho}}\le \frac1{(n!)^{1/\rho}}.
-\]
+$$
 Thus
-\[
+$$
 |F(z)|\le C\sum_{n=0}^\infty\frac{(c|z|)^n}{(n!)^{1/\rho}}.
-\]
+$$
 By Problem 3, the entire function on the right has order $\rho$. Hence for every $\varepsilon>0$ there are constants $A_\varepsilon,a_\varepsilon>0$ such that
-\[
+$$
 |F(z)|\le A_\varepsilon e^{a_\varepsilon|z|^{\rho+\varepsilon}}.
-\]
+$$
 This proves the converse.
 :::

@@ -29,9 +29,9 @@ audit:
 
 ::: {.problem}
 Compute
-\[
+$$
 \frac1{2\pi i}\int_C\frac{dz}{\sin(1/z)},
-\]
+$$
 where $C$ is the positively oriented circle $|z|=1/5$.
 :::
 

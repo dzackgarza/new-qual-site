@@ -29,17 +29,17 @@ What relationship holds between $\int_Ef_n\,dm$ and $\int_Ef\,dm$?
 
 ::: {.solution}
 Choose $M<\infty$ such that
-\[
+$$
 |f_n(x)|\le M
 \qquad(n\ge1,\ x\in E).
-\]
+$$
 Then also $|f(x)|\le M$, and
-\[
+$$
 M\mathbf1_E\in L^1(\RR)
-\]
+$$
 because $m(E)<\infty$.
 The Dominated Convergence Theorem therefore gives
-\[
+$$
 \boxed{\lim_{n\to\infty}\int_E f_n\,dm=\int_E f\,dm.}
-\]
+$$
 :::

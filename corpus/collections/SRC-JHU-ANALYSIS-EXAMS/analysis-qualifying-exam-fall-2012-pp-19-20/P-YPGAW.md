@@ -44,17 +44,17 @@ Choose a subsequence with summable $L^1$ errors.
 
 ::: pf-proof
 Since
-\[
+$$
 \|f_n-f\|_1\longrightarrow0,
-\]
+$$
 we may choose indices
-\[
+$$
 n_1<n_2<\cdots
-\]
+$$
 such that
-\[
+$$
 \|f_{n_j}-f\|_1<2^{-j}
-\]
+$$
 for every $j$.
 :::
 
@@ -65,22 +65,22 @@ Prove almost-everywhere convergence of that subsequence.
 
 ::: pf-proof
 By Tonelli's theorem,
-\[
+$$
 \begin{aligned}
 \int_0^1\sum_{j=1}^\infty
 |f_{n_j}(x)-f(x)|\,dx
 &=\sum_{j=1}^\infty\|f_{n_j}-f\|_1\\
 &<\sum_{j=1}^\infty2^{-j}<\infty.
 \end{aligned}
-\]
+$$
 Hence
-\[
+$$
 \sum_{j=1}^\infty|f_{n_j}(x)-f(x)|<\infty
-\]
+$$
 for almost every $x$. Therefore
-\[
+$$
 |f_{n_j}(x)-f(x)|\longrightarrow0
-\]
+$$
 for almost every $x$, proving part (a).
 :::
 
@@ -91,19 +91,19 @@ Give a counterexample to uniform convergence.
 
 ::: pf-proof
 Let
-\[
+$$
 f_n=\mathbf1_{(0,1/n)},
 \qquad
 f=0.
-\]
+$$
 Then
-\[
+$$
 \|f_n-f\|_1=\frac1n\longrightarrow0.
-\]
+$$
 However,
-\[
+$$
 \|f_n-f\|_\infty=1
-\]
+$$
 for every $n$. The same is true for every subsequence, so no subsequence can converge uniformly to $f$.
 
 Thus the almost-everywhere conclusion cannot be replaced by uniform convergence.

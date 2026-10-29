@@ -17,14 +17,14 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 \gamma(t)=te^{it},\qquad 0\le t\le\pi.
-\]
+$$
 Show that
-\[
+$$
 \left|\int_\gamma z\,dz\right|
 \le \frac{\pi^2}{2}+\frac{\pi^3}{3}.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Let $D$ be a closed disk embedded in the torus
-\[
+$$
 T=S^1\times S^1,
-\]
+$$
 and let $X$ be the result of removing the interior of $D$ from $T$.
 Let $B$ be the boundary of $X$, i.e. the circle boundary of the original closed disk $D$.
 Compute $H_i(T,B)$ for all $i$.
@@ -38,7 +38,7 @@ Compute $H_i(T,B)$ for all $i$.
 ::: {.solution}
 All homology groups below have coefficients in $\ZZ$.
 Since $B\cong S^1$ and $T\cong S^1\times S^1$,
-\[
+$$
 H_i(B)\cong
 \begin{cases}
 \ZZ,&i=0,1,\\
@@ -51,32 +51,32 @@ H_i(T)\cong
 \ZZ^2,&i=1,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 The inclusion
-\[
+$$
 j:B\hookrightarrow T
-\]
+$$
 induces the zero map
-\[
+$$
 j_*:H_1(B)\longrightarrow H_1(T).
-\]
+$$
 
 ::: pf-proof
 
 The circle $B$ is the boundary of the embedded disk $D\subset T$.
 Hence the inclusion $j:B\hookrightarrow T$ extends over the disk:
-\[
+$$
 \begin{array}{ccc}
 B&\hookrightarrow&D\\
 &\searrow j&\downarrow\\
 &&T.
 \end{array}
-\]
+$$
 Since $D$ is contractible, the inclusion $B\to T$ is nullhomotopic.
 Therefore it induces the zero homomorphism on positive-dimensional homology, in particular on $H_1$.
 
@@ -87,14 +87,14 @@ Therefore it induces the zero homomorphism on positive-dimensional homology, in 
 ::: {.pf-step #s2}
 
 One has
-\[
+$$
 H_2(T,B)\cong\ZZ^2.
-\]
+$$
 
 ::: pf-proof
 
 The degree-$2$ portion of the long exact sequence of the pair $(T,B)$ is
-\[
+$$
 H_2(B)
 \longrightarrow
 H_2(T)
@@ -104,19 +104,19 @@ H_2(T,B)
 H_1(B)
 \xrightarrow{j_*}
 H_1(T).
-\]
+$$
 Using $H_2(B)=0$, $H_2(T)\cong\ZZ$, $H_1(B)\cong\ZZ$, and step [](#s1){.pf-ref} gives a short exact sequence
-\[
+$$
 0\longrightarrow\ZZ
 \longrightarrow H_2(T,B)
 \longrightarrow\ZZ
 \longrightarrow0.
-\]
+$$
 Since $\ZZ$ is free abelian, this sequence splits.
 Thus
-\[
+$$
 H_2(T,B)\cong\ZZ\oplus\ZZ.
-\]
+$$
 
 :::
 
@@ -125,16 +125,16 @@ H_2(T,B)\cong\ZZ\oplus\ZZ.
 ::: {.pf-step #s3}
 
 One has
-\[
+$$
 H_1(T,B)\cong\ZZ^2
 \qquad\text{and}\qquad
 H_0(T,B)=0.
-\]
+$$
 
 ::: pf-proof
 
 The next part of the long exact sequence is
-\[
+$$
 H_1(B)
 \xrightarrow{j_*}
 H_1(T)
@@ -147,24 +147,24 @@ H_0(T)
 \longrightarrow
 H_0(T,B)
 \longrightarrow0.
-\]
+$$
 Both $B$ and $T$ are path-connected, so the inclusion induces an isomorphism
-\[
+$$
 H_0(B)\xrightarrow{\cong}H_0(T).
-\]
+$$
 By step [](#s1){.pf-ref}, the preceding map $j_*:H_1(B)\to H_1(T)$ is zero.
 Exactness therefore forces
-\[
+$$
 H_1(T)\xrightarrow{\cong}H_1(T,B),
-\]
+$$
 so
-\[
+$$
 H_1(T,B)\cong\ZZ^2.
-\]
+$$
 Exactness at $H_0(T)$ and the fact that $H_0(B)\to H_0(T)$ is surjective give
-\[
+$$
 H_0(T,B)=0.
-\]
+$$
 
 :::
 
@@ -173,9 +173,9 @@ H_0(T,B)=0.
 ::: {.pf-step #s4}
 
 For every $i\ge3$,
-\[
+$$
 H_i(T,B)=0.
-\]
+$$
 
 ::: pf-proof
 
@@ -189,14 +189,14 @@ The long exact sequence of the pair therefore forces $H_i(T,B)=0$.
 ::: pf-step
 
 Hence
-\[
+$$
 \boxed{
 H_i(T,B)\cong
 \begin{cases}
 \ZZ^2,&i=1,2,\\
 0,&\text{otherwise}.
 \end{cases}}
-\]
+$$
 
 ::: pf-proof
 

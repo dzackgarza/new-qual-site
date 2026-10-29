@@ -18,28 +18,28 @@ audit:
 
 ::: {.problem}
 For $f\in L^1(\RR)$, define
-\[
+$$
 Mf(x):=\sup_{h>0}\frac1{2h}\int_{x-h}^{x+h}|f(y)|\,dy.
-\]
+$$
 Prove that there is a constant $A$ such that for every $\alpha>0$,
-\[
+$$
 \lambda\{x\in\RR:Mf(x)>\alpha\}\le \frac{A}{\alpha}\|f\|_{L^1}.
-\]
+$$
 If you use a covering lemma, prove it.
 :::
 
 ::: {.solution}
 
 Fix
-\[
+$$
 \alpha>0
-\]
+$$
 and set
-\[
+$$
 E_\alpha
 =
 \{x\in\RR:Mf(x)>\alpha\}.
-\]
+$$
 
 ## A finite covering lemma
 
@@ -48,41 +48,41 @@ E_\alpha
 ::: {.pf-step #s1-1}
 
 Let
-\[
+$$
 \mathcal I=\{I_1,\dots,I_N\}
-\]
-be a finite family of bounded intervals in \(\RR\). Then there exists a pairwise disjoint subfamily
-\[
+$$
+be a finite family of bounded intervals in $\RR$. Then there exists a pairwise disjoint subfamily
+$$
 J_1,\dots,J_m
-\]
+$$
 such that
-\[
+$$
 \boxed{
 \bigcup_{I\in\mathcal I}I
 \subseteq
 \bigcup_{k=1}^{m}3J_k},
-\]
-where \(3J_k\) denotes the interval with the same center as \(J_k\) and three times its length.
+$$
+where $3J_k$ denotes the interval with the same center as $J_k$ and three times its length.
 
 
 ::: pf-proof
 
-Choose \(J_1\) to be an interval of maximal length in \(\mathcal I\). Remove \(J_1\) and every interval meeting it. From the remaining family choose \(J_2\) of maximal length, remove it and every interval meeting it, and continue. Since the original family is finite, the process stops.
+Choose $J_1$ to be an interval of maximal length in $\mathcal I$. Remove $J_1$ and every interval meeting it. From the remaining family choose $J_2$ of maximal length, remove it and every interval meeting it, and continue. Since the original family is finite, the process stops.
 
 The selected intervals are pairwise disjoint by construction.
 
-Every original interval \(I\) is either selected or was removed because it met some selected interval \(J_k\) with
-\[
+Every original interval $I$ is either selected or was removed because it met some selected interval $J_k$ with
+$$
 |I|\le |J_k|,
-\]
-since \(J_k\) had maximal length among the intervals remaining at that stage.
+$$
+since $J_k$ had maximal length among the intervals remaining at that stage.
 
 Choose
-\[
+$$
 z\in I\cap J_k.
-\]
-If \(c_k\) is the center of \(J_k\), then for any \(y\in I\),
-\[
+$$
+If $c_k$ is the center of $J_k$, then for any $y\in I$,
+$$
 |y-c_k|
 \le
 |y-z|+|z-c_k|
@@ -90,11 +90,11 @@ If \(c_k\) is the center of \(J_k\), then for any \(y\in I\),
 |I|+\frac{|J_k|}{2}
 \le
 \frac{3|J_k|}{2}.
-\]
-Thus \(y\in3J_k\), so
-\[
+$$
+Thus $y\in3J_k$, so
+$$
 I\subseteq3J_k.
-\]
+$$
 Hence the union of the entire family is contained in the union of the triples of the selected intervals.
 
 :::
@@ -103,40 +103,40 @@ Hence the union of the entire family is contained in the union of the triples of
 
 ::: pf-step
 
-The set \(E_\alpha\) is open.
+The set $E_\alpha$ is open.
 
 
 ::: pf-proof
 
-Take \(x\in E_\alpha\). Then for some \(h>0\),
-\[
+Take $x\in E_\alpha$. Then for some $h>0$,
+$$
 \frac1{2h}
 \int_{x-h}^{x+h}|f(y)|\,dy
 >
 \alpha.
-\]
+$$
 Set
-\[
+$$
 A=
 \int_{x-h}^{x+h}|f(y)|\,dy.
-\]
+$$
 Then
-\[
+$$
 A>2h\alpha.
-\]
-Choose \(\delta>0\) so small that
-\[
+$$
+Choose $\delta>0$ so small that
+$$
 \frac{A}{2(h+\delta)}>\alpha.
-\]
+$$
 
-If \(|x'-x|<\delta\), then
-\[
+If $|x'-x|<\delta$, then
+$$
 [x-h,x+h]
 \subseteq
 [x'-(h+\delta),x'+(h+\delta)].
-\]
+$$
 Therefore
-\[
+$$
 \frac1{2(h+\delta)}
 \int_{x'-(h+\delta)}^{x'+(h+\delta)}
 |f(y)|\,dy
@@ -144,8 +144,8 @@ Therefore
 \frac{A}{2(h+\delta)}
 >
 \alpha.
-\]
-Hence \(Mf(x')>\alpha\), so a neighborhood of \(x\) lies in \(E_\alpha\).
+$$
+Hence $Mf(x')>\alpha$, so a neighborhood of $x$ lies in $E_\alpha$.
 
 :::
 
@@ -153,19 +153,19 @@ Hence \(Mf(x')>\alpha\), so a neighborhood of \(x\) lies in \(E_\alpha\).
 
 ::: {.pf-step #s1-3}
 
-For every \(x\in K\), choose \(h_x>0\) such that
-\[
+For every $x\in K$, choose $h_x>0$ such that
+$$
 \boxed{
 \frac1{2h_x}
 \int_{x-h_x}^{x+h_x}|f(y)|\,dy
 >
 \alpha}.
-\]
+$$
 
 
 ::: pf-proof
 
-This is the definition of \(Mf(x)>\alpha\).
+This is the definition of $Mf(x)>\alpha$.
 
 :::
 
@@ -174,15 +174,15 @@ This is the definition of \(Mf(x)>\alpha\).
 ::: pf-step
 
 The family
-\[
+$$
 \{I_x:x\in K\}
-\]
-is an open cover of \(K\).
+$$
+is an open cover of $K$.
 
 
 ::: pf-proof
 
-Each \(x\in K\) belongs to its interval \(I_x\).
+Each $x\in K$ belongs to its interval $I_x$.
 
 :::
 
@@ -191,9 +191,9 @@ Each \(x\in K\) belongs to its interval \(I_x\).
 ::: pf-step
 
 By compactness, choose a finite subcover
-\[
+$$
 I_1,\dots,I_N.
-\]
+$$
 
 
 ::: pf-proof
@@ -207,30 +207,30 @@ Every open cover of a compact set has a finite subcover.
 ::: pf-step
 
 Apply the covering lemma from step [](#s1-1){.pf-ref} to obtain pairwise disjoint intervals
-\[
+$$
 J_1,\dots,J_m
-\]
-chosen from the \(I_j\) such that
-\[
+$$
+chosen from the $I_j$ such that
+$$
 \boxed{
 K
 \subseteq
 \bigcup_{k=1}^{m}3J_k}.
-\]
+$$
 
 
 ::: pf-proof
 
 The finite subcover satisfies
-\[
+$$
 K\subseteq\bigcup_{j=1}^{N}I_j.
-\]
+$$
 The covering lemma gives
-\[
+$$
 \bigcup_{j=1}^{N}I_j
 \subseteq
 \bigcup_{k=1}^{m}3J_k.
-\]
+$$
 
 :::
 
@@ -239,23 +239,23 @@ The covering lemma gives
 ::: {.pf-step #s1-7}
 
 Therefore
-\[
+$$
 \lambda(K)
 \le
 3\sum_{k=1}^{m}|J_k|.
-\]
+$$
 
 
 ::: pf-proof
 
 By subadditivity,
-\[
+$$
 \lambda(K)
 \le
 \sum_{k=1}^{m}|3J_k|
 =
 3\sum_{k=1}^{m}|J_k|.
-\]
+$$
 
 :::
 
@@ -263,21 +263,21 @@ By subadditivity,
 
 ::: {.pf-step #s1-8}
 
-Every selected interval \(J_k\) satisfies
-\[
+Every selected interval $J_k$ satisfies
+$$
 \boxed{
 \alpha|J_k|
 <
 \int_{J_k}|f(y)|\,dy}.
-\]
+$$
 
 
 ::: pf-proof
 
-Each \(J_k\) is one of the intervals chosen in step [](#s1-3){.pf-ref}. Since
-\[
+Each $J_k$ is one of the intervals chosen in step [](#s1-3){.pf-ref}. Since
+$$
 |J_k|=2h_x,
-\]
+$$
 the average inequality from step [](#s1-3){.pf-ref} is exactly the displayed inequality.
 
 :::
@@ -287,18 +287,18 @@ the average inequality from step [](#s1-3){.pf-ref} is exactly the displayed ine
 ::: {.pf-step #s1-9}
 
 Hence
-\[
+$$
 3\sum_{k=1}^{m}|J_k|
 <
 \frac3\alpha
 \sum_{k=1}^{m}
 \int_{J_k}|f(y)|\,dy.
-\]
+$$
 
 
 ::: pf-proof
 
-Divide the inequalities in step [](#s1-8){.pf-ref} by \(\alpha\) and sum.
+Divide the inequalities in step [](#s1-8){.pf-ref} by $\alpha$ and sum.
 
 :::
 
@@ -306,18 +306,18 @@ Divide the inequalities in step [](#s1-8){.pf-ref} by \(\alpha\) and sum.
 
 ::: {.pf-step #s1-10}
 
-Since the \(J_k\) are pairwise disjoint,
-\[
+Since the $J_k$ are pairwise disjoint,
+$$
 \sum_{k=1}^{m}
 \int_{J_k}|f(y)|\,dy
 \le
 \|f\|_{L^1}.
-\]
+$$
 
 
 ::: pf-proof
 
-The sum of the integrals over pairwise disjoint measurable sets is the integral over their union, which is bounded by the integral over all of \(\RR\).
+The sum of the integrals over pairwise disjoint measurable sets is the integral over their union, which is bounded by the integral over all of $\RR$.
 
 :::
 
@@ -326,13 +326,13 @@ The sum of the integrals over pairwise disjoint measurable sets is the integral 
 ::: {.pf-step #s1-11}
 
 Therefore
-\[
+$$
 \boxed{
 \lambda(K)
 \le
 \frac3\alpha
 \|f\|_{L^1}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -345,17 +345,17 @@ Combine steps [](#s1-7){.pf-ref} through [](#s1-10){.pf-ref}.
 
 ::: pf-step
 
-Since \(E_\alpha\) is open,
-\[
+Since $E_\alpha$ is open,
+$$
 \lambda(E_\alpha)
 =
 \sup\{\lambda(K):K\subseteq E_\alpha,\ K\text{ compact}\}.
-\]
+$$
 
 
 ::: pf-proof
 
-Lebesgue measure is inner regular on open subsets of \(\RR\).
+Lebesgue measure is inner regular on open subsets of $\RR$.
 
 :::
 
@@ -364,18 +364,18 @@ Lebesgue measure is inner regular on open subsets of \(\RR\).
 ::: {.pf-step #s1-13}
 
 Taking the supremum in step [](#s1-11){.pf-ref} gives
-\[
+$$
 \boxed{
 \lambda(E_\alpha)
 \le
 \frac3\alpha
 \|f\|_{L^1}}.
-\]
+$$
 
 
 ::: pf-proof
 
-The same upper bound holds for every compact \(K\subseteq E_\alpha\), so it also bounds their supremum.
+The same upper bound holds for every compact $K\subseteq E_\alpha$, so it also bounds their supremum.
 
 :::
 
@@ -383,21 +383,21 @@ The same upper bound holds for every compact \(K\subseteq E_\alpha\), so it also
 
 ::: {.pf-step #s1-14}
 
-Thus the weak type \((1,1)\) estimate holds with
-\[
+Thus the weak type $(1,1)$ estimate holds with
+$$
 \boxed{A=3}.
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-13){.pf-ref} is precisely
-\[
+$$
 \lambda\{Mf>\alpha\}
 \le
 \frac{A}{\alpha}\|f\|_1
-\]
-with \(A=3\).
+$$
+with $A=3$.
 
 :::
 

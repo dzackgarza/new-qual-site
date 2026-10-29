@@ -35,30 +35,30 @@ Prove that there does not exist a continuous map $f:S^2\to S^2$ from the unit sp
 
 ::: {.pf-step #assume-orthogonal-map}
 Suppose, for contradiction, that a continuous map
-\[
+$$
 f:S^2\longrightarrow S^2
-\]
+$$
 satisfies
-\[
+$$
 f(x)\perp x
 \qquad
 (x\in S^2).
-\]
+$$
 
 :::
 
 ::: {.pf-step #homotopy-well-defined}
 Define
-\[
+$$
 H:S^2\times[0,1]\longrightarrow\RR^3,
 \qquad
 H(x,t)=\cos(\pi t)x+\sin(\pi t)f(x).
-\]
+$$
 Then $H(x,t)\in S^2$ for every $(x,t)$.
 
 ::: pf-proof
 Since both $x$ and $f(x)$ lie on the unit sphere and are orthogonal by step [](#assume-orthogonal-map){.pf-ref},
-\[
+$$
 \begin{aligned}
 \|H(x,t)\|^2
 &=\cos^2(\pi t)\|x\|^2
@@ -67,7 +67,7 @@ Since both $x$ and $f(x)$ lie on the unit sphere and are orthogonal by step [](#
 &=\cos^2(\pi t)+\sin^2(\pi t)\\
 &=1.
 \end{aligned}
-\]
+$$
 Thus $H$ takes values in $S^2$.
 :::
 
@@ -79,19 +79,19 @@ The map $H$ is a homotopy from the identity map of $S^2$ to the antipodal map.
 ::: pf-proof
 Continuity follows from continuity of $f$ and of the trigonometric functions.
 At the endpoints,
-\[
+$$
 H(x,0)=x
-\]
+$$
 and
-\[
+$$
 H(x,1)=-x.
-\]
+$$
 Hence
-\[
+$$
 \operatorname{id}_{S^2}\simeq a_2,
 \qquad
 a_2(x)=-x.
-\]
+$$
 :::
 
 :::
@@ -101,21 +101,21 @@ This homotopy is impossible because the two endpoint maps have different degrees
 
 ::: pf-proof
 Degree is invariant under homotopy, so step [](#identity-homotopic-to-antipodal){.pf-ref} would imply
-\[
+$$
 \deg(\operatorname{id}_{S^2})=\deg(a_2).
-\]
+$$
 But
-\[
+$$
 \deg(\operatorname{id}_{S^2})=1,
-\]
+$$
 whereas the antipodal map on $S^n$ has degree
-\[
+$$
 (-1)^{n+1},
-\]
+$$
 and therefore
-\[
+$$
 \deg(a_2)=(-1)^3=-1.
-\]
+$$
 Thus step [](#identity-homotopic-to-antipodal){.pf-ref} would force $1=-1$, a contradiction.
 :::
 

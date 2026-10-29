@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Let $A\subset\RR$ be Lebesgue measurable.
 Prove that
-\[
+$$
 B=\bigcup_{x\in A}[x-1,x+1]
-\]
+$$
 is Lebesgue measurable.
 :::
 

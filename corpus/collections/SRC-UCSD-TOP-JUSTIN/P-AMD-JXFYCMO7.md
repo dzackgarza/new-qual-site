@@ -92,9 +92,9 @@ projective modules are flat.
 ::: {.pf-step #s2-2}
 
 Since $Q_q$ is flat, tensoring the resolution $P_* \to M \to 0$ with $Q_q$ preserves exactness:
-\[
+$$
 H_p(P_* \otimes_R Q_q) \cong H_p(P_*) \otimes_R Q_q \cong \begin{cases} M \otimes_R Q_q & p = 0 \\ 0 & p > 0. \end{cases}
-\]
+$$
 
 ::: pf-proof
 
@@ -119,9 +119,9 @@ Step [](#s2-2){.pf-ref}.
 ::: pf-step
 
 By the Acyclic Assembly Lemma (or the spectral sequence of a first-quadrant bicomplex), an augmentation that is exact on rows/columns induces a quasi-isomorphism on total complexes:
-\[
+$$
 \operatorname{Tot}(P_* \otimes_R Q_*) \xrightarrow{\sim} \operatorname{Tot}(M \otimes_R Q_*) = M \otimes_R Q_*.
-\]
+$$
 
 ::: pf-proof
 
@@ -134,9 +134,9 @@ Weibel Theorem 2.7.2 (Acyclic Assembly Lemma).
 ::: pf-step
 
 Taking homology gives an isomorphism:
-\[
+$$
 H_n(\operatorname{Tot}(P_* \otimes_R Q_*)) \cong H_n(M \otimes_R Q_*) \cong \operatorname{Tor}_n^R(M, N).
-\]
+$$
 
 ::: pf-proof
 
@@ -171,9 +171,9 @@ projective modules are flat.
 ::: pf-step
 
 Tensoring the resolution $Q_* \to N \to 0$ with $P_p$ preserves exactness:
-\[
+$$
 H_q(P_p \otimes_R Q_*) \cong P_p \otimes_R H_q(Q_*) \cong \begin{cases} P_p \otimes_R N & q = 0 \\ 0 & q > 0. \end{cases}
-\]
+$$
 
 ::: pf-proof
 
@@ -186,9 +186,9 @@ flatness of $P_p$.
 ::: pf-step
 
 By the Acyclic Assembly Lemma applied to the vertical filtration:
-\[
+$$
 \operatorname{Tot}(P_* \otimes_R Q_*) \xrightarrow{\sim} P_* \otimes_R N.
-\]
+$$
 
 ::: pf-proof
 
@@ -201,9 +201,9 @@ Acyclic Assembly Lemma on vertical augmentation.
 ::: pf-step
 
 Taking homology gives:
-\[
+$$
 H_n(\operatorname{Tot}(P_* \otimes_R Q_*)) \cong H_n(P_* \otimes_R N) \cong \operatorname{Tor}_n^R(N, M),
-\]
+$$
 via the natural isomorphism $P_* \otimes_R N \cong N \otimes_R P_*$.
 
 ::: pf-proof
@@ -222,9 +222,9 @@ definition of $\operatorname{Tor}_n^R(N, M)$ via projective resolution of $M$.
 
 Conclusion:
 Combining steps [](#s2){.pf-ref} and [](#s3){.pf-ref} yields canonical isomorphisms:
-\[
+$$
 \operatorname{Tor}_n^R(M, N) \cong H_n(\operatorname{Tot}(P_* \otimes_R Q_*)) \cong \operatorname{Tor}_n^R(N, M).
-\]
+$$
 Thus $\operatorname{Tor}_*^R$ is symmetric. Q.E.D.
 
 ::: pf-proof

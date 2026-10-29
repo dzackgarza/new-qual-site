@@ -27,9 +27,9 @@ If $a$ is algebraic over $F$, prove that $[F(a):F]$ is finite.
 
 ::: {.solution}
 Let $m_a(T)\in F[T]$ be the minimal polynomial of $a$ over $F$, and set
-\[
+$$
 d=\deg m_a.
-\]
+$$
 
 ::: pf
 
@@ -41,17 +41,17 @@ less than $d$.
 ::: pf-proof
 
 Because $m_a(a)=0$, Euclidean division gives, for every $f(T)\in F[T]$,
-\[
+$$
 f(T)=q(T)m_a(T)+r(T),
 \qquad
 \deg r<d.
-\]
+$$
 Evaluating at $a$ gives $f(a)=r(a)$.
 
 Moreover, since $m_a$ is irreducible,
-\[
+$$
 F[a]\cong F[T]/(m_a)
-\]
+$$
 is a field. Hence $F(a)=F[a]$.
 
 :::
@@ -61,17 +61,17 @@ is a field. Hence $F(a)=F[a]$.
 ::: {.pf-step #s2}
 
 The elements
-\[
+$$
 1,a,\ldots,a^{d-1}
-\]
+$$
 form an $F$-basis of $F(a)$.
 
 ::: pf-proof
 
 They span by step [](#s1){.pf-ref}. If
-\[
+$$
 c_0+c_1a+\cdots+c_{d-1}a^{d-1}=0,
-\]
+$$
 then the polynomial $c_0+c_1T+\cdots+c_{d-1}T^{d-1}$ has $a$ as a root.
 Minimality of $m_a$ forces this polynomial to be zero, so all coefficients
 vanish.
@@ -83,9 +83,9 @@ vanish.
 ::: pf-step
 
 Therefore
-\[
+$$
 [F(a):F]=d<\infty.
-\]
+$$
 
 ::: pf-proof
 

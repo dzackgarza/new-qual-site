@@ -16,9 +16,9 @@ audit:
 
 ::: {.problem}
 Let $a\in\RR$ and let $I$ be an open interval containing $a$. For a function $f:I\to\RR$, give the definition of continuity at $a$. Prove that
-\[
+$$
 f(x)=x^2
-\]
+$$
 is continuous at $a=2$.
 :::
 
@@ -28,17 +28,17 @@ is continuous at $a=2$.
 
 ::: {.pf-step #s1-1}
 
-A function \(f:I\to\RR\) is continuous at \(a\in I\) if for every \(\varepsilon>0\) there exists \(\delta>0\) such that, for every \(x\in I\),
-\[
+A function $f:I\to\RR$ is continuous at $a\in I$ if for every $\varepsilon>0$ there exists $\delta>0$ such that, for every $x\in I$,
+$$
 |x-a|<\delta
 \quad\Longrightarrow\quad
 |f(x)-f(a)|<\varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
-This is the \(\varepsilon\)--\(\delta\) definition of continuity at a point.
+This is the $\varepsilon$--$\delta$ definition of continuity at a point.
 
 :::
 
@@ -46,23 +46,23 @@ This is the \(\varepsilon\)--\(\delta\) definition of continuity at a point.
 
 ::: {.pf-step #s1-2}
 
-If \(|x-2|<1\), then
-\[
+If $|x-2|<1$, then
+$$
 |x+2|<5.
-\]
+$$
 
 
 ::: pf-proof
 
-The inequality \(|x-2|<1\) implies
-\[
+The inequality $|x-2|<1$ implies
+$$
 1<x<3.
-\]
+$$
 Hence
-\[
+$$
 3<x+2<5,
-\]
-so \(|x+2|<5\).
+$$
+so $|x+2|<5$.
 
 :::
 
@@ -70,24 +70,24 @@ so \(|x+2|<5\).
 
 ::: {.pf-step #s1-3}
 
-Given \(\varepsilon>0\), set
-\[
+Given $\varepsilon>0$, set
+$$
 \delta=\min\left\{1,\frac{\varepsilon}{5}\right\}.
-\]
-If \(|x-2|<\delta\), then
-\[
+$$
+If $|x-2|<\delta$, then
+$$
 |x^2-4|<\varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
-Since \(\delta\le1\), the hypothesis \(|x-2|<\delta\) implies \(|x-2|<1\). By step [](#s1-2){.pf-ref},
-\[
+Since $\delta\le1$, the hypothesis $|x-2|<\delta$ implies $|x-2|<1$. By step [](#s1-2){.pf-ref},
+$$
 |x+2|<5.
-\]
+$$
 Therefore
-\[
+$$
 |x^2-4|
 =
 |x-2|\,|x+2|
@@ -97,7 +97,7 @@ Therefore
 5\delta
 \le
 \varepsilon.
-\]
+$$
 
 :::
 
@@ -105,15 +105,15 @@ Therefore
 
 ::: {.pf-step #s1-4}
 
-The function \(f(x)=x^2\) is continuous at \(2\).
+The function $f(x)=x^2$ is continuous at $2$.
 
 
 ::: pf-proof
 
-Step [](#s1-3){.pf-ref} verifies the definition in step [](#s1-1){.pf-ref} with \(a=2\) and \(f(2)=4\). Thus
-\[
+Step [](#s1-3){.pf-ref} verifies the definition in step [](#s1-1){.pf-ref} with $a=2$ and $f(2)=4$. Thus
+$$
 \boxed{f(x)=x^2\text{ is continuous at }2.}
-\]
+$$
 
 :::
 

@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_{|z|=1}\frac{\cos^3 z}{z^3}\,dz,
-\]
+$$
 where the unit circle is oriented counterclockwise.
 :::
 

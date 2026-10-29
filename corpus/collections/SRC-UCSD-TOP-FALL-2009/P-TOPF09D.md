@@ -45,9 +45,9 @@ dimension of manifold is 3.
 
 ::: pf-step
 The Euler characteristic is:
-\[
+$$
 \chi(M) = b_0 - b_1 + b_2 - b_3.
-\]
+$$
 
 ::: pf-proof
 definition of Euler characteristic.
@@ -75,9 +75,9 @@ Poincaré Duality Theorem for compact orientable manifolds.
 
 ::: pf-step
 By the Universal Coefficient Theorem for cohomology with field coefficients:
-\[
+$$
 H^k(M; \QQ) \cong \operatorname{Hom}_{\QQ}(H_k(M; \QQ), \QQ).
-\]
+$$
 
 ::: pf-proof
 Universal Coefficient Theorem over a field (Ext vanishes).
@@ -109,9 +109,9 @@ $b_i = \dim H_i(M; \QQ) = \dim H^{3-i}(M; \QQ) = b_{3-i}$.
 
 ::: {.pf-step #s3}
 Compute $\chi(M)$:
-\[
+$$
 \chi(M) = b_0 - b_1 + b_2 - b_3 = b_0 - b_1 + b_1 - b_0 = 0.
-\]
+$$
 
 ::: pf-proof
 $b_3 = b_0$ and $b_2 = b_1$ from step [](#s2){.pf-ref}.
@@ -141,9 +141,9 @@ construction of the orientation covering.
 
 ::: pf-step
 The Euler characteristic is multiplicative under finite covering spaces:
-\[
+$$
 \chi(\widetilde{M}) = d \cdot \chi(M) = 2 \chi(M).
-\]
+$$
 
 ::: pf-proof
 Euler characteristic of a $d$-sheeted covering space of a finite CW complex satisfies $\chi(\widetilde{M}) = d\chi(M)$.
@@ -198,9 +198,9 @@ vector space duality over $\ZZ_2$.
 
 ::: pf-step
 By the Universal Coefficient Theorem, the mod-2 Euler characteristic equals the rational Euler characteristic:
-\[
+$$
 \chi(M) = \chi_2(M) = \sum_{i=0}^3 (-1)^i \dim_{\ZZ_2} H_i(M; \ZZ_2).
-\]
+$$
 
 ::: pf-proof
 Universal Coefficient Theorem torsion cancellation for Euler characteristics.

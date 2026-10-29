@@ -29,30 +29,30 @@ For an H-space $(X, x_0)$ with multiplication $\mu: X \times X \to X$, show that
 :::
 
 ::: {.solution}
-Write the usual group operation on \(\pi_n(X,x_0)\) additively. Since
-\[
+Write the usual group operation on $\pi_n(X,x_0)$ additively. Since
+$$
 \pi_n(X\times X,(x_0,x_0))\cong \pi_n(X,x_0)\times\pi_n(X,x_0),
-\]
-the multiplication \(\mu:X\times X\to X\) induces a homomorphism
-\[
+$$
+the multiplication $\mu:X\times X\to X$ induces a homomorphism
+$$
 \mu_*:\pi_n(X)\times\pi_n(X)\longrightarrow\pi_n(X).
-\]
-Because \(x\mapsto\mu(x,x_0)\) and \(x\mapsto\mu(x_0,x)\) are homotopic to the identity,
-\[
+$$
+Because $x\mapsto\mu(x,x_0)$ and $x\mapsto\mu(x_0,x)$ are homotopic to the identity,
+$$
 \mu_*(a,0)=a,
 \qquad
 \mu_*(0,b)=b.
-\]
-Hence, using that \(\mu_*\) is a homomorphism,
-\[
+$$
+Hence, using that $\mu_*$ is a homomorphism,
+$$
 \mu_*(a,b)
 =\mu_*((a,0)+(0,b))
 =\mu_*(a,0)+\mu_*(0,b)
 =a+b.
-\]
-If \(a=[f]\) and \(b=[g]\), the class \(\mu_*(a,b)\) is represented by
-\[
+$$
+If $a=[f]$ and $b=[g]$, the class $\mu_*(a,b)$ is represented by
+$$
 x\longmapsto\mu(f(x),g(x)).
-\]
-Therefore this pointwise H-space multiplication gives exactly the usual operation on \(\pi_n(X,x_0)\).
+$$
+Therefore this pointwise H-space multiplication gives exactly the usual operation on $\pi_n(X,x_0)$.
 :::

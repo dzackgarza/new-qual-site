@@ -18,10 +18,10 @@ audit:
 
 ::: {.problem}
 Show that
-\[
+$$
 z^5+3z^3+7
-\]
-has all of its zeros in the disk \(|z|<2\).
+$$
+has all of its zeros in the disk $|z|<2$.
 :::
 
 ::: {.solution}

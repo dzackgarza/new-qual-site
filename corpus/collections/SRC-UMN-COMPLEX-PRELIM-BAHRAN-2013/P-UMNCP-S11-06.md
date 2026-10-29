@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose \(f\) is entire and there is \(M>0\) such that
-\[
+Suppose $f$ is entire and there is $M>0$ such that
+$$
 |\operatorname{Re}f(z)|\ge |\operatorname{Im}f(z)|
-\]
-whenever \(|z|\ge M\). Prove that \(f\) is constant.
+$$
+whenever $|z|\ge M$. Prove that $f$ is constant.
 :::
 
 ::: {.solution}

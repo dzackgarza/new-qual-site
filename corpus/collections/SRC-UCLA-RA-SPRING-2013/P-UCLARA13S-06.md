@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Define
-\[
+$$
 X=\left\{\xi\longmapsto\int_{\RR}e^{i\xi x}f(x)\,dx:\ f\in L^1(\RR)\right\}.
-\]
+$$
 Show that
 
 (a) $X\subset C_0(\RR)$;
@@ -33,11 +33,11 @@ Show that
 ::: {.solution}
 
 For $f\in L^1(\RR)$, write
-\[
+$$
 \mathcal Ff(\xi)
 \coloneqq
 \int_{\RR}e^{i\xi x}f(x)\,dx.
-\]
+$$
 
 ::: pf
 
@@ -49,23 +49,23 @@ For every $f\in L^1(\RR)$, the function $\mathcal Ff$ is continuous.
 ::: pf-proof
 
 Fix $\xi_0\in\RR$. If $\xi\to\xi_0$, then for every $x$,
-\[
+$$
 e^{i\xi x}f(x)
 \longrightarrow
 e^{i\xi_0x}f(x),
-\]
+$$
 while
-\[
+$$
 |e^{i\xi x}f(x)|
 =
 |f(x)|.
-\]
+$$
 Since $|f|\in L^1$, dominated convergence gives
-\[
+$$
 \mathcal Ff(\xi)
 \longrightarrow
 \mathcal Ff(\xi_0).
-\]
+$$
 
 :::
 
@@ -74,52 +74,52 @@ Since $|f|\in L^1$, dominated convergence gives
 ::: {.pf-step #s1-2}
 
 For every $f\in L^1(\RR)$,
-\[
+$$
 \mathcal Ff(\xi)\longrightarrow0
 \qquad
 (|\xi|\to\infty).
-\]
+$$
 
 
 ::: pf-proof
 
 Fix $\varepsilon>0$. Choose
-\[
+$$
 \phi\in C_c^1(\RR)
-\]
+$$
 such that
-\[
+$$
 \|f-\phi\|_1<\frac{\varepsilon}{2};
-\]
+$$
 the space $C_c^1(\RR)$ is dense in $L^1(\RR)$.
 
 For $\xi\ne0$, integration by parts gives
-\[
+$$
 \mathcal F\phi(\xi)
 =
 -\frac1{i\xi}
 \int_{\RR}
 e^{i\xi x}\phi'(x)\,dx,
-\]
+$$
 because $\phi$ has compact support. Hence
-\[
+$$
 |\mathcal F\phi(\xi)|
 \le
 \frac{\|\phi'\|_1}{|\xi|}
 \longrightarrow0.
-\]
+$$
 Also,
-\[
+$$
 |\mathcal F(f-\phi)(\xi)|
 \le
 \|f-\phi\|_1
 <
 \frac\varepsilon2.
-\]
+$$
 For sufficiently large $|\xi|$, the first term is also less than $\varepsilon/2$, so
-\[
+$$
 |\mathcal Ff(\xi)|<\varepsilon.
-\]
+$$
 
 :::
 
@@ -128,9 +128,9 @@ For sufficiently large $|\xi|$, the first term is also less than $\varepsilon/2$
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{X\subset C_0(\RR)}.
-\]
+$$
 
 
 ::: pf-proof
@@ -149,19 +149,19 @@ Every Schwartz function belongs to $X$.
 ::: pf-proof
 
 The Fourier transform is a bijection
-\[
+$$
 \mathcal S(\RR)
 \longrightarrow
 \mathcal S(\RR)
-\]
+$$
 for any fixed standard Fourier normalization. Thus if
-\[
+$$
 h\in\mathcal S(\RR),
-\]
+$$
 there is $g\in\mathcal S(\RR)\subset L^1(\RR)$ such that
-\[
+$$
 h=\mathcal Fg
-\]
+$$
 with the sign convention used here after replacing the variable by its negative if necessary. Hence $h\in X$.
 
 :::
@@ -176,30 +176,30 @@ The Schwartz space is dense in $C_0(\RR)$ in the supremum norm.
 ::: pf-proof
 
 Fix $h\in C_0(\RR)$ and $\varepsilon>0$. Choose $R>0$ so that
-\[
+$$
 |h(x)|<\varepsilon
 \qquad
 (|x|>R).
-\]
+$$
 Choose a smooth cutoff $\chi\in C_c^\infty(\RR)$ with
-\[
+$$
 0\le\chi\le1,
 \qquad
 \chi=1\text{ on }[-R,R].
-\]
+$$
 Then
-\[
+$$
 \|h-\chi h\|_\infty<\varepsilon.
-\]
+$$
 
 The continuous compactly supported function $\chi h$ is uniformly continuous. Let $(\rho_\delta)$ be a standard smooth approximate identity. For sufficiently small $\delta>0$,
-\[
+$$
 \|\rho_\delta*(\chi h)-\chi h\|_\infty<\varepsilon.
-\]
+$$
 The convolution
-\[
+$$
 \rho_\delta*(\chi h)
-\]
+$$
 is smooth and compactly supported, hence is a Schwartz function. Thus every $h\in C_0$ is uniformly approximated by Schwartz functions.
 
 :::
@@ -222,20 +222,20 @@ By step [](#s1-4){.pf-ref}, $X$ contains the Schwartz space. By step [](#s1-5){.
 ::: {.pf-step #s1-7}
 
 The Fourier transform
-\[
+$$
 \mathcal F:L^1(\RR)\to C_0(\RR)
-\]
+$$
 is bounded and injective.
 
 
 ::: pf-proof
 
 For every $f\in L^1$,
-\[
+$$
 \|\mathcal Ff\|_\infty
 \le
 \|f\|_1,
-\]
+$$
 so $\mathcal F$ is bounded. Injectivity is the standard uniqueness theorem for the Fourier transform on $L^1(\RR)$.
 
 :::
@@ -245,25 +245,25 @@ so $\mathcal F$ is bounded. Injectivity is the standard uniqueness theorem for t
 ::: {.pf-step #s1-8}
 
 Suppose, toward a contradiction, that
-\[
+$$
 X=C_0(\RR).
-\]
+$$
 Then there is a constant $C>0$ such that
-\[
+$$
 \|f\|_1
 \le
 C\|\mathcal Ff\|_\infty
 \qquad
 (f\in L^1(\RR)).
-\]
+$$
 
 
 ::: pf-proof
 
 Under the assumption, step [](#s1-7){.pf-ref} makes
-\[
+$$
 \mathcal F:L^1(\RR)\to C_0(\RR)
-\]
+$$
 a bounded linear bijection between Banach spaces. By the open mapping theorem, its inverse is bounded. The displayed estimate is exactly boundedness of that inverse.
 
 :::
@@ -273,25 +273,25 @@ a bounded linear bijection between Banach spaces. By the open mapping theorem, i
 ::: {.pf-step #s1-9}
 
 There exists a sequence $(h_j)\subset C_c^\infty(\RR)$ such that
-\[
+$$
 \sup_j\|h_j\|_\infty<\infty
-\]
+$$
 and
-\[
+$$
 h_j\longrightarrow
 h
 \coloneqq
 \mathbf 1_{[-1,1]}
-\]
+$$
 in $L^2(\RR)$.
 
 
 ::: pf-proof
 
 Take a standard smooth approximation of the indicator with values in $[0,1]$, for example by convolving $\mathbf 1_{[-1,1]}$ with compactly supported mollifiers and, if necessary, multiplying by a fixed compactly supported cutoff equal to $1$ near $[-1,1]$. Then
-\[
+$$
 0\le h_j\le1
-\]
+$$
 and $h_j\to h$ pointwise almost everywhere with supports contained in one fixed compact interval. Dominated convergence gives convergence in $L^2$, and the supremum norms are bounded by $1$.
 
 :::
@@ -301,17 +301,17 @@ and $h_j\to h$ pointwise almost everywhere with supports contained in one fixed 
 ::: {.pf-step #s1-10}
 
 Let
-\[
+$$
 g_j=\mathcal F^{-1}h_j.
-\]
+$$
 Then each $g_j$ is Schwartz, hence in $L^1\cap L^2$, and there is $g\in L^2$ such that
-\[
+$$
 g_j\longrightarrow g
-\]
+$$
 in $L^2$ and, after passing to a subsequence,
-\[
+$$
 g_j(x)\longrightarrow g(x)
-\]
+$$
 for almost every $x$.
 
 
@@ -333,9 +333,9 @@ The function $g$ from step [](#s1-10){.pf-ref} does not belong to $L^1(\RR)$.
 ::: pf-proof
 
 Suppose instead that $g\in L^1$. Then by step [](#s1-3){.pf-ref}, its $L^1$ Fourier transform has a continuous representative in $C_0(\RR)$. By compatibility of the $L^1$ and $L^2$ Fourier transforms, that continuous representative agrees almost everywhere with
-\[
+$$
 h=\mathbf 1_{[-1,1]}.
-\]
+$$
 
 No continuous function can agree almost everywhere with this indicator. Indeed, equality almost everywhere forces the continuous function to equal $1$ throughout $(-1,1)$, because the set on which it equals $1$ is dense there; similarly it must equal $0$ throughout $(1,\infty)$. Continuity at $1$ is then impossible. Hence $g\notin L^1$.
 
@@ -346,22 +346,22 @@ No continuous function can agree almost everywhere with this indicator. Indeed, 
 ::: {.pf-step #s1-12}
 
 One has
-\[
+$$
 \liminf_{j\to\infty}\|g_j\|_1
 =
 \infty.
-\]
+$$
 
 
 ::: pf-proof
 
 Along the almost-everywhere convergent subsequence from step [](#s1-10){.pf-ref}, Fatou's lemma gives
-\[
+$$
 \int_{\RR}|g(x)|\,dx
 \le
 \liminf_{j\to\infty}
 \int_{\RR}|g_j(x)|\,dx.
-\]
+$$
 The left-hand side is infinite by step [](#s1-11){.pf-ref}, so the liminf is infinite.
 
 :::
@@ -376,13 +376,13 @@ The surjectivity assumption in step [](#s1-8){.pf-ref} is impossible.
 ::: pf-proof
 
 By step [](#s1-8){.pf-ref},
-\[
+$$
 \|g_j\|_1
 \le
 C\|\mathcal Fg_j\|_\infty
 =
 C\|h_j\|_\infty.
-\]
+$$
 The right-hand side is uniformly bounded by step [](#s1-9){.pf-ref}, contradicting step [](#s1-12){.pf-ref}.
 
 :::
@@ -392,9 +392,9 @@ The right-hand side is uniformly bounded by step [](#s1-9){.pf-ref}, contradicti
 ::: {.pf-step #s1-14}
 
 Therefore
-\[
+$$
 \boxed{X\ne C_0(\RR)}.
-\]
+$$
 
 
 ::: pf-proof

@@ -41,17 +41,17 @@ As written, the statement has an exceptional case: if $U=\varnothing$, then the 
 ::: pf-proof
 
 Collapsing the empty subset makes no identifications, so
-\[
+$$
 \RR^n/\varnothing\cong\RR^n,
-\]
+$$
 which is Hausdorff.
 Thus the intended assertion requires $U\neq\varnothing$.
 
 Assume henceforth that $n\ge1$ and that $U$ is nonempty.
 Let
-\[
+$$
 q:\RR^n\longrightarrow\RR^n/U
-\]
+$$
 be the quotient map, and write $p=q(U)$ for the point obtained by collapsing $U$.
 
 :::
@@ -66,9 +66,9 @@ The boundary $\partial U$ is nonempty.
 
 Because $U$ is bounded and $n\ge1$, it is a proper subset of $\RR^n$.
 If $\partial U$ were empty, then, since $U$ is open,
-\[
+$$
 \overline U=U\cup\partial U=U,
-\]
+$$
 so $U$ would also be closed.
 This would make $U$ a nonempty proper clopen subset of the connected space $\RR^n$, a contradiction.
 
@@ -83,36 +83,36 @@ For any $x\in\partial U$, the two distinct quotient points $p$ and $q(x)$ cannot
 ::: pf-proof
 
 Since $U$ is open, no boundary point lies in $U$, so
-\[
+$$
 x\notin U
 \qquad\text{and hence}\qquad
 q(x)\neq p.
-\]
+$$
 Suppose there were disjoint open sets $O_p,O_x\subseteq\RR^n/U$ with
-\[
+$$
 p\in O_p,
 \qquad
 q(x)\in O_x.
-\]
+$$
 Their inverse images
-\[
+$$
 V=q^{-1}(O_p),
 \qquad
 W=q^{-1}(O_x)
-\]
+$$
 are disjoint open subsets of $\RR^n$.
 Because $p=q(U)$ lies in $O_p$, one has
-\[
+$$
 U\subseteq V.
-\]
+$$
 Because $x\in W$ and $x\in\partial U$, every open neighborhood of $x$ meets $U$; in particular,
-\[
+$$
 W\cap U\neq\varnothing.
-\]
+$$
 Since $U\subseteq V$, this gives
-\[
+$$
 W\cap V\neq\varnothing,
-\]
+$$
 contradicting the disjointness of $O_p$ and $O_x$.
 
 :::

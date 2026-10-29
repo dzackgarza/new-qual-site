@@ -46,22 +46,22 @@ The ring $\ZZ[2\sqrt2]$ is not a UFD.
 ::: pf-proof
 
 Put
-\[
+$$
 R=\ZZ[2\sqrt2]
 =\{a+2b\sqrt2:a,b\in\ZZ\}.
-\]
+$$
 Its fraction field contains
-\[
+$$
 \sqrt2=\frac{2\sqrt2}{2},
-\]
+$$
 and $\sqrt2$ is integral over $R$ because it satisfies the monic polynomial
-\[
+$$
 t^2-2\in R[t].
-\]
+$$
 However $\sqrt2\notin R$: an equality
-\[
+$$
 \sqrt2=a+2b\sqrt2
-\]
+$$
 with $a,b\in\ZZ$ would force $a=0$ and $2b=1$.
 
 Every UFD is integrally closed. Indeed, if a reduced fraction $a/b$ in the fraction field of a UFD satisfies a monic equation of degree $d$, multiplying by $b^d$ shows that $b$ divides $a^d$; coprimeness of $a$ and $b$ then forces $b$ to be a unit. Thus the existence of the integral element $\sqrt2\notin R$ proves that $R$ is not a UFD.
@@ -77,17 +77,17 @@ The ring $\ZZ[x,y]$ is a UFD.
 ::: pf-proof
 
 The integers form a UFD. Gauss's lemma says that if $A$ is a UFD, then the polynomial ring $A[t]$ is again a UFD: contents factor uniquely in $A$, while primitive factorizations are the same as factorizations in $\operatorname{Frac}(A)[t]$ up to units. Applying this first to
-\[
+$$
 A=\ZZ
-\]
+$$
 and then to
-\[
+$$
 A=\ZZ[x]
-\]
+$$
 gives
-\[
+$$
 \ZZ[x,y]=\ZZ[x][y]
-\]
+$$
 as a UFD.
 
 :::
@@ -97,9 +97,9 @@ as a UFD.
 ::: {.pf-step #s3}
 
 Let
-\[
+$$
 S=\ZZ+x\QQ[x].
-\]
+$$
 The only units of $S$ are $\pm1$.
 
 ::: pf-proof
@@ -117,20 +117,20 @@ The element $x\in S$ has no factorization into irreducibles.
 ::: pf-proof
 
 Suppose, toward a contradiction, that
-\[
+$$
 x=u p_1\cdots p_r
-\]
+$$
 with $u$ a unit and each $p_i$ irreducible in $S$. Degrees computed in $\QQ[x]$ add, so exactly one factor, say $p_j$, has degree $1$ and every other $p_i$ has degree $0$.
 
 Since the degree-zero elements of $S$ are integers, the equality shows that
-\[
+$$
 p_j=\pm\frac{x}{d}
-\]
+$$
 for some nonzero integer $d$. But
-\[
+$$
 \frac{x}{d}
 =2\cdot\frac{x}{2d},
-\]
+$$
 and both factors lie in $S$ and are nonunits by step [](#s3){.pf-ref}. Thus $x/d$, and hence $p_j$, is reducible, a contradiction.
 
 :::

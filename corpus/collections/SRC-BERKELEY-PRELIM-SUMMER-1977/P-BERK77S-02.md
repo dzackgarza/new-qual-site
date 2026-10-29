@@ -29,9 +29,9 @@ audit:
 
 ::: {.problem}
 Let $f$ be continuous on $\CC$ and analytic on
-\[
+$$
 \{z\in\CC:\operatorname{Im}z\ne0\}.
-\]
+$$
 Prove that $f$ is analytic on all of $\CC$.
 :::
 

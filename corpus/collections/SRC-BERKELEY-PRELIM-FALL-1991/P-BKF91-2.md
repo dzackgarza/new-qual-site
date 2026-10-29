@@ -24,9 +24,9 @@ audit:
 
 ::: {.problem}
 Let $f:\RR\to\RR$ be continuous and suppose
-\[
+$$
 |f(x)-f(y)|\ge |x-y|
-\]
+$$
 for all $x,y\in\RR$. Prove that the range of $f$ is all of $\RR$.
 :::
 

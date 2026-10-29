@@ -44,13 +44,13 @@ The quantities $\|f\|_p$ are finite for $0<p\le1$.
 
 ::: pf-proof
 For $t\ge0$ and $0<p\le1$,
-\[
+$$
 t^p\le 1+t.
-\]
+$$
 Hence
-\[
+$$
 \int_0^1 |f|^p\le 1+\|f\|_1<\infty.
-\]
+$$
 Thus $\|f\|_p=(\int|f|^p)^{1/p}$ is well defined and finite for every $0<p\le1$.
 :::
 
@@ -61,25 +61,25 @@ The logarithm of the $p$th moment is convex.
 
 ::: pf-proof
 Assume first that $f$ is not zero almost everywhere and define
-\[
+$$
 A(p)=\int_0^1 |f(x)|^p\,dx,
 \qquad
 F(p)=\log A(p),
 \qquad 0<p\le1.
-\]
+$$
 For $0<p,q\le1$ and $0<\theta<1$, Hölder's inequality gives
-\[
+$$
 \begin{aligned}
 A((1-\theta)p+\theta q)
 &=\int |f|^{(1-\theta)p}|f|^{\theta q}\\
 &\le A(p)^{1-\theta}A(q)^\theta.
 \end{aligned}
-\]
+$$
 Taking logarithms shows
-\[
+$$
 F((1-\theta)p+\theta q)
 \le (1-\theta)F(p)+\theta F(q).
-\]
+$$
 Thus $F$ is convex on $(0,1]$.
 :::
 
@@ -90,22 +90,22 @@ Compute the zeroth-moment limit.
 
 ::: pf-proof
 Let
-\[
+$$
 \alpha=m\{x:f(x)\ne0\}\in(0,1].
-\]
+$$
 For almost every $x$,
-\[
+$$
 |f(x)|^p\longrightarrow \mathbf1_{\{f\ne0\}}(x)
 \qquad(p\downarrow0).
-\]
+$$
 For $0<p\le1$ we have $|f|^p\le1+|f|$, and $1+|f|$ is integrable on $[0,1]$. Dominated convergence therefore gives
-\[
+$$
 A(p)\longrightarrow\alpha.
-\]
+$$
 Hence
-\[
+$$
 F(p)\longrightarrow\log\alpha.
-\]
+$$
 :::
 
 :::
@@ -115,17 +115,17 @@ If the zero set has positive measure, the limit is zero.
 
 ::: pf-proof
 If $m\{f=0\}>0$, then $\alpha<1$. By step [](#zeroth-moment-limit){.pf-ref},
-\[
+$$
 F(p)\longrightarrow\log\alpha<0.
-\]
+$$
 Therefore
-\[
+$$
 \log\|f\|_p=\frac{F(p)}p\longrightarrow-\infty,
-\]
+$$
 and so
-\[
+$$
 \boxed{\|f\|_p\longrightarrow0.}
-\]
+$$
 If $f=0$ almost everywhere, this conclusion is immediate because every $\|f\|_p=0$.
 :::
 
@@ -138,25 +138,25 @@ If $f\ne0$ almost everywhere, the limit still exists.
 Now suppose $\alpha=1$. Step [](#zeroth-moment-limit){.pf-ref} gives $F(p)\to0$, so define $F(0)=0$. The resulting function is convex on $[0,1]$.
 
 For $0<p<q\le1$, convexity at
-\[
+$$
 p=\frac pq q+\left(1-\frac pq\right)0
-\]
+$$
 gives
-\[
+$$
 F(p)\le \frac pq F(q).
-\]
+$$
 Thus
-\[
+$$
 \frac{F(p)}p\le\frac{F(q)}q.
-\]
+$$
 Consequently the function
-\[
+$$
 p\longmapsto \frac{F(p)}p=\log\|f\|_p
-\]
+$$
 is nondecreasing on $(0,1]$. Hence it has a limit as $p\downarrow0$, equal to its infimum, possibly $-\infty$ but never $+\infty$ because
-\[
+$$
 \frac{F(p)}p\le F(1)=\log\|f\|_1.
-\]
+$$
 Exponentiating, $\|f\|_p$ therefore has a limit in $[0,\infty)$.
 :::
 

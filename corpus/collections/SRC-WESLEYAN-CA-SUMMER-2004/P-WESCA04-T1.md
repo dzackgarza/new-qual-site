@@ -28,59 +28,59 @@ State the Casorati–Weierstrass theorem.
 **Casorati--Weierstrass Theorem.**
 
 Let $f$ be holomorphic on a punctured neighborhood
-\[
+$$
 0<|z-z_0|<r
-\]
+$$
 and suppose $z_0$ is an essential singularity of $f$.
 Then for every
-\[
+$$
 0<\rho<r,
-\]
+$$
 the image
-\[
+$$
 f\bigl(
 \{z:0<|z-z_0|<\rho\}
 \bigr)
-\]
+$$
 is dense in
-\[
+$$
 \CC.
-\]
+$$
 
 
 ::: pf-proof
 
 Equivalently, for every
-\[
+$$
 w\in\CC
-\]
+$$
 and every
-\[
+$$
 \varepsilon>0,
-\]
+$$
 there exists
-\[
+$$
 z
-\]
+$$
 with
-\[
+$$
 0<|z-z_0|<\rho
-\]
+$$
 such that
-\[
+$$
 |f(z)-w|<\varepsilon.
-\]
+$$
 
 Equivalently again, every complex number is a limit of values
-\[
+$$
 f(z_n)
-\]
+$$
 along some sequence
-\[
+$$
 z_n\to z_0,
 \qquad
 z_n\ne z_0.
-\]
+$$
 
 :::
 

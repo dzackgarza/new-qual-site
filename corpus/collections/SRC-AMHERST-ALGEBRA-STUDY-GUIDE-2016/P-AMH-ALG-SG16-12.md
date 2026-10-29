@@ -18,12 +18,12 @@ audit:
 
 ::: {.problem}
 (January 1997) Suppose that $\sigma$ is a permutation in the alternating group $A_{10}$ given by
-\[
+$$
 \begin{pmatrix}
 1&2&3&4&5&6&7&8&9&10\\
 4&7&2&6&10&1&5&?&?&3
 \end{pmatrix},
-\]
+$$
 where the images of $8$ and $9$ have been lost.
 Determine the images of $8$ and $9$ under $\sigma$.
 What is the order of $\sigma$?

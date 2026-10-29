@@ -68,19 +68,19 @@ The group $S_3$ has exactly one subgroup of index two, namely $A_3$. The Galois 
 ::: {.pf-step #s1-3}
 
 The splitting field of $(x^3-11)(x^2-2)$ has Galois group
-\[
+$$
 \boxed{S_3\times C_2}.
-\]
+$$
 
 
 ::: pf-proof
 
 Its splitting field is $E(\sqrt2)$. By step [](#s1-2){.pf-ref}, $\QQ(\sqrt2)$ is not contained in $E$, so their intersection is $\QQ$. Both are finite Galois extensions of $\QQ$, and the restriction isomorphism for their compositum gives
-\[
+$$
 \operatorname{Gal}(E(\sqrt2)/\QQ)
 \cong\operatorname{Gal}(E/\QQ)\times
 \operatorname{Gal}(\QQ(\sqrt2)/\QQ)\cong S_3\times C_2.
-\]
+$$
 
 :::
 
@@ -89,17 +89,17 @@ Its splitting field is $E(\sqrt2)$. By step [](#s1-2){.pf-ref}, $\QQ(\sqrt2)$ is
 ::: {.pf-step #s1-4}
 
 The minimal polynomial of $\theta=\sqrt[3]{11}+\sqrt2$ has degree
-\[
+$$
 \boxed{[\QQ(\theta):\QQ]=6}.
-\]
+$$
 
 
 ::: pf-proof
 
 The cubic field $\QQ(a)$ cannot contain a quadratic extension of $\QQ$, by the tower law. Thus $[\QQ(a,\sqrt2):\QQ]=6$. Expanding $(\theta-\sqrt2)^3=11$ yields
-\[
+$$
 (3\theta^2+2)\sqrt2=\theta^3+6\theta-11.
-\]
+$$
 As $\theta$ is real, the factor $3\theta^2+2$ is nonzero. Therefore $\sqrt2=(\theta^3+6\theta-11)/(3\theta^2+2)\in\QQ(\theta)$ and $a=\theta-\sqrt2\in\QQ(\theta)$. Consequently $\QQ(\theta)=\QQ(a,\sqrt2)$ and has degree six.
 
 :::

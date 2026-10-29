@@ -48,44 +48,44 @@ be the projection, let
 $$
 r=\operatorname{rank}\mce\ge2,
 $$
-and write \(\mco_X(1)\) for the tautological twisting sheaf.
+and write $\mco_X(1)$ for the tautological twisting sheaf.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-For any invertible sheaf \(\mcl\) on \(X\), there is a unique integer
-\(n\) such that
+For any invertible sheaf $\mcl$ on $X$, there is a unique integer
+$n$ such that
 $$
 \mcl_y\cong\mco_{\PP^{r-1}_{\kappa(y)}}(n)
 $$
-for every \(y\in Y\).
+for every $y\in Y$.
 
 ::: pf-proof
 
-For each \(y\), the fibre is
+For each $y$, the fibre is
 $$
 X_y\cong\PP^{r-1}_{\kappa(y)}.
 $$
-Since \(r-1\ge1\),
+Since $r-1\ge1$,
 $$
 \Pic X_y\cong\ZZ
 $$
-with generator \(\mco_{X_y}(1)\). Thus there is a unique integer \(n(y)\)
+with generator $\mco_{X_y}(1)$. Thus there is a unique integer $n(y)$
 such that
 $$
 \mcl_y\cong\mco_{X_y}(n(y)).
 $$
 
-The sheaf \(\mcl\) is flat over \(Y\): locally it is \(\mco_X\), and
-\(p\) is flat. Hence [[T-COHBC|constancy of Euler characteristic]] says
-that for every integer \(m\), the function
+The sheaf $\mcl$ is flat over $Y$: locally it is $\mco_X$, and
+$p$ is flat. Hence [[T-COHBC|constancy of Euler characteristic]] says
+that for every integer $m$, the function
 $$
 y\longmapsto
 \chi\bigl(X_y,\mcl_y(m)\bigr)
 $$
-is locally constant. The base \(Y\) is integral, hence connected, so this
-integer is independent of \(y\).
+is locally constant. The base $Y$ is integral, hence connected, so this
+integer is independent of $y$.
 
 On the fibre,
 $$
@@ -95,21 +95,21 @@ $$
 =
 \binom{m+n(y)+r-1}{r-1}
 $$
-as a polynomial in \(m\). Therefore the Hilbert polynomial
+as a polynomial in $m$. Therefore the Hilbert polynomial
 $$
 m\longmapsto\chi\bigl(X_y,\mcl_y(m)\bigr)
 $$
-is independent of \(y\). Distinct integers \(a\ne b\) give distinct
+is independent of $y$. Distinct integers $a\ne b$ give distinct
 translated polynomials
 $$
 \binom{m+a+r-1}{r-1}
 \ne
 \binom{m+b+r-1}{r-1};
 $$
-for example, their coefficients of \(m^{r-2}\) differ when \(r>2\), and
-for \(r=2\) they are the distinct linear polynomials \(m+a+1\) and
-\(m+b+1\). Thus \(n(y)\) is independent of \(y\). Denote its common value
-by \(n\).
+for example, their coefficients of $m^{r-2}$ differ when $r>2$, and
+for $r=2$ they are the distinct linear polynomials $m+a+1$ and
+$m+b+1$. Thus $n(y)$ is independent of $y$. Denote its common value
+by $n$.
 
 :::
 
@@ -117,19 +117,19 @@ by \(n\).
 
 ::: {.pf-step #s2}
 
-Every invertible sheaf \(\mcl\) on \(X\) has the form
+Every invertible sheaf $\mcl$ on $X$ has the form
 $$
 \mcl\cong p^*\mcn\tensor\mco_X(n)
 $$
-for some \(\mcn\in\Pic Y\) and \(n\in\ZZ\).
+for some $\mcn\in\Pic Y$ and $n\in\ZZ$.
 
 ::: pf-proof
 
-Let \(n\) be the integer from step [](#s1){.pf-ref} and put
+Let $n$ be the integer from step [](#s1){.pf-ref} and put
 $$
 \mcl_0=\mcl\tensor\mco_X(-n).
 $$
-Then for every \(y\in Y\),
+Then for every $y\in Y$,
 $$
 (\mcl_0)_y\cong\mco_{X_y}.
 $$
@@ -141,12 +141,12 @@ $$
 is flat and projective, and all of its fibres are projective spaces, hence
 integral. Apply
 [[P-AGH3124FIBREWISEISO|Exercise III.12.4]]
-to the two invertible sheaves \(\mcl_0\) and \(\mco_X\). There exists an
-invertible sheaf \(\mcn\) on \(Y\) such that
+to the two invertible sheaves $\mcl_0$ and $\mco_X$. There exists an
+invertible sheaf $\mcn$ on $Y$ such that
 $$
 \mcl_0\cong p^*\mcn.
 $$
-Tensoring by \(\mco_X(n)\) gives
+Tensoring by $\mco_X(n)$ gives
 $$
 \mcl\cong p^*\mcn\tensor\mco_X(n).
 $$
@@ -167,7 +167,7 @@ $$
 =
 [p^*\mcn\tensor\mco_X(n)].
 $$
-Then \(\Phi\) is a surjective group homomorphism.
+Then $\Phi$ is a surjective group homomorphism.
 
 ::: pf-proof
 
@@ -183,7 +183,7 @@ $$
 \cong
 \mco_X(n_1+n_2).
 $$
-Hence \(\Phi\) is a homomorphism. Its surjectivity is exactly step [](#s2){.pf-ref}.
+Hence $\Phi$ is a homomorphism. Its surjectivity is exactly step [](#s2){.pf-ref}.
 
 :::
 
@@ -191,7 +191,7 @@ Hence \(\Phi\) is a homomorphism. Its surjectivity is exactly step [](#s2){.pf-r
 
 ::: {.pf-step #s4}
 
-The homomorphism \(\Phi\) is injective.
+The homomorphism $\Phi$ is injective.
 
 ::: pf-proof
 
@@ -204,11 +204,11 @@ $$
 \mco_{\PP^{r-1}_{\kappa(y)}}(n)\cong
 \mco_{\PP^{r-1}_{\kappa(y)}}.
 $$
-Since \(r-1\ge1\) and
+Since $r-1\ge1$ and
 $$
 \Pic\PP^{r-1}_{\kappa(y)}\cong\ZZ[\mco(1)],
 $$
-we obtain \(n=0\). Thus
+we obtain $n=0$. Thus
 $$
 p^*\mcn\cong\mco_X.
 $$
@@ -225,11 +225,11 @@ p_*p^*\mcn
 \cong
 \mcn.
 $$
-Pushing forward \(p^*\mcn\cong\mco_X\) therefore gives
+Pushing forward $p^*\mcn\cong\mco_X$ therefore gives
 $$
 \mcn\cong\mco_Y.
 $$
-Hence the kernel of \(\Phi\) is trivial.
+Hence the kernel of $\Phi$ is trivial.
 
 :::
 
@@ -241,11 +241,11 @@ Consequently
 $$
 \boxed{\Pic\PP(\mce)\cong\Pic Y\times\ZZ}
 $$
-when \(\operatorname{rank}\mce\ge2\).
+when $\operatorname{rank}\mce\ge2$.
 
 ::: pf-proof
 
-Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that \(\Phi\) is a bijective group homomorphism.
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that $\Phi$ is a bijective group homomorphism.
 
 :::
 

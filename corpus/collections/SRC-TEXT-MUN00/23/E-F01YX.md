@@ -43,21 +43,21 @@ Show that $X_K$ is connected.
 
 ::: {.solution}
 (a) For finite $K\subseteq J$, the space $X_K$ is naturally homeomorphic to
-\[
+$$
 \prod_{\alpha\in K}X_\alpha
-\]
+$$
 by forgetting the fixed coordinates. A finite product of connected spaces is connected, so $X_K$ is connected.
 
 (b) Every $X_K$ contains the fixed point $\mathbf a$. Hence the union
-\[
+$$
 Y=\bigcup_{K\subseteq J,\ K\text{ finite}}X_K
-\]
+$$
 is a union of connected sets with a common point, and is therefore connected.
 
 (c) Let $U$ be a nonempty basic open set of the product $X$. It restricts only finitely many coordinates, say those in $K$. Choose $x\in U$ and define $y$ by
-\[
+$$
 y_\alpha=x_\alpha\quad(\alpha\in K),\qquad
  y_\alpha=a_\alpha\quad(\alpha\notin K).
-\]
+$$
 Then $y\in U\cap X_K\subseteq U\cap Y$. Thus every nonempty basic open set meets $Y$, so $\overline Y=X$. The closure of a connected set is connected, hence $X$ is connected.
 :::

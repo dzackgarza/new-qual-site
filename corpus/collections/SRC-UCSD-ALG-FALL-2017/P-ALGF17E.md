@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Consider the matrix
-\[
+$$
 A = \begin{pmatrix} 0 & 0 & -y \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{pmatrix}
-\]
+$$
 where $y$ is an indeterminate.
 
 (a) Show that the characteristic polynomial $f(x)$ of $A$ is irreducible in $\QQ(y)[x]$.
@@ -45,24 +45,24 @@ where $y$ is an indeterminate.
 
 ::: pf-step
 The characteristic polynomial of $A$ is
-\[
+$$
 f(x)=x^3+y.
-\]
+$$
 
 ::: pf-proof
 One computes
-\[
+$$
 xI-A=
 \begin{pmatrix}
 x&0&y\\
 -1&x&0\\
 0&-1&x
 \end{pmatrix}.
-\]
+$$
 Expanding the determinant along the first row gives
-\[
+$$
 \det(xI-A)=x^3+y.
-\]
+$$
 :::
 
 :::
@@ -72,20 +72,20 @@ The polynomial $x^3+y$ is irreducible in $\QQ(y)[x]$.
 
 ::: pf-proof
 Regard
-\[
+$$
 x^3+y
-\]
+$$
 as an element of the polynomial ring $\QQ[y][x]$.
 The coefficient ring $\QQ[y]$ is a UFD, and $y$ is prime in it.
 All non-leading coefficients of $x^3+y$ are divisible by $y$, while the constant coefficient $y$ is not divisible by $y^2$.
 Thus Eisenstein's criterion at the prime $y$ shows that $x^3+y$ is irreducible in
-\[
+$$
 \QQ[y][x].
-\]
+$$
 It is primitive as a polynomial in $x$, so Gauss's lemma implies that it remains irreducible over the fraction field
-\[
+$$
 \operatorname{Frac}(\QQ[y])=\QQ(y).
-\]
+$$
 This proves part (a).
 :::
 
@@ -97,22 +97,22 @@ Over $\QQ(y)$, the minimal polynomial of $A$ equals $x^3+y$.
 ::: pf-proof
 Let $e_1,e_2,e_3$ be the standard basis vectors.
 Directly from the columns of $A$,
-\[
+$$
 Ae_1=e_2,
 \qquad
 A^2e_1=e_3.
-\]
+$$
 Hence
-\[
+$$
 e_1,Ae_1,A^2e_1
-\]
+$$
 is a basis.
 Thus $e_1$ is a cyclic vector and the minimal polynomial of $A$ has degree $3$.
 By Cayley--Hamilton it divides the characteristic polynomial, which also has degree $3$.
 Therefore
-\[
+$$
 m_A(x)=x^3+y.
-\]
+$$
 :::
 
 :::
@@ -122,9 +122,9 @@ The matrix $A$ is diagonalizable over the algebraic closure of $\QQ(y)$.
 
 ::: pf-proof
 In characteristic zero,
-\[
+$$
 f'(x)=3x^2.
-\]
+$$
 The polynomials $x^3+y$ and $3x^2$ are relatively prime in $\QQ(y)[x]$, because $y\neq0$ in the field $\QQ(y)$.
 Thus $x^3+y$ has three distinct roots in an algebraic closure.
 By step [](#min-poly-q){.pf-ref}, this is the minimal polynomial of $A$, so the minimal polynomial splits into distinct linear factors over the algebraic closure.
@@ -139,19 +139,19 @@ Over $\FF_3(y)$, the minimal polynomial of $A$ is still $x^3+y$.
 
 ::: pf-proof
 The cyclic-vector computation from step [](#min-poly-q){.pf-ref} uses only the displayed matrix and therefore remains valid over $\FF_3(y)$:
-\[
+$$
 e_1,Ae_1,A^2e_1
-\]
+$$
 is still a basis.
 Hence the minimal polynomial has degree $3$.
 The characteristic polynomial remains
-\[
+$$
 x^3+y,
-\]
+$$
 so Cayley--Hamilton again gives
-\[
+$$
 m_A(x)=x^3+y.
-\]
+$$
 :::
 
 :::
@@ -161,18 +161,18 @@ The matrix $A$ is not diagonalizable over the algebraic closure of $\FF_3(y)$.
 
 ::: pf-proof
 Let $\overline F$ be an algebraic closure of $\FF_3(y)$ and choose $\alpha\in\overline F$ with
-\[
+$$
 \alpha^3=-y.
-\]
+$$
 In characteristic $3$,
-\[
+$$
 (x-\alpha)^3=x^3-\alpha^3=x^3+y.
-\]
+$$
 Thus over $\overline F$ the characteristic polynomial has only the single root $\alpha$, with multiplicity $3$.
 By step [](#min-poly-f3){.pf-ref}, the minimal polynomial has degree $3$; equivalently after scalar extension it is
-\[
+$$
 (x-\alpha)^3.
-\]
+$$
 This polynomial has a repeated factor, so the minimal polynomial is not squarefree.
 Therefore $A$ is not diagonalizable over $\overline F$.
 This proves part (c).

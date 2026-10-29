@@ -22,9 +22,9 @@ Let $f ( x ) = e ^ { g ( x ) } h ( x )$ where $h ^ { \prime } ( x ) = - g ^ { \p
 ::: pf-step
 
 Differentiate
-\[
+$$
 f(x)=e^{g(x)}h(x).
-\]
+$$
 
 
 ::: pf-proof
@@ -38,26 +38,26 @@ Use the product rule and the chain rule.
 ::: {.pf-step #s1-2}
 
 One obtains
-\[
+$$
 \boxed{
 f'(x)
 =
 e^{g(x)}g'(x)h(x)
 +
 e^{g(x)}h'(x)}.
-\]
+$$
 
 
 ::: pf-proof
 
 The derivative of
-\[
+$$
 e^{g(x)}
-\]
+$$
 is
-\[
+$$
 e^{g(x)}g'(x).
-\]
+$$
 
 :::
 
@@ -65,8 +65,8 @@ e^{g(x)}g'(x).
 
 ::: {.pf-step #s1-3}
 
-Factor out \(e^{g(x)}\):
-\[
+Factor out $e^{g(x)}$:
+$$
 \boxed{
 f'(x)
 =
@@ -74,7 +74,7 @@ e^{g(x)}
 \left(
 g'(x)h(x)+h'(x)
 \right)}.
-\]
+$$
 
 
 ::: pf-proof
@@ -88,18 +88,18 @@ This is an algebraic factorization of step [](#s1-2){.pf-ref}.
 ::: {.pf-step #s1-4}
 
 The given relation
-\[
+$$
 h'(x)=-g'(x)h(x)
-\]
+$$
 implies
-\[
+$$
 g'(x)h(x)+h'(x)=0.
-\]
+$$
 
 
 ::: pf-proof
 
-Substitute the stated formula for \(h'(x)\).
+Substitute the stated formula for $h'(x)$.
 
 :::
 
@@ -108,11 +108,11 @@ Substitute the stated formula for \(h'(x)\).
 ::: pf-step
 
 Hence
-\[
+$$
 \boxed{
 f'(x)=0}
-\]
-for every \(x\in\RR\).
+$$
+for every $x\in\RR$.
 
 
 ::: pf-proof
@@ -125,7 +125,7 @@ Combine steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 
 ::: {.pf-step #s1-6}
 
-Therefore \(f\) is constant on \(\RR\).
+Therefore $f$ is constant on $\RR$.
 
 
 ::: pf-proof
@@ -140,9 +140,9 @@ is constant there. The real line is an interval.
 ::: {.pf-step #s1-7}
 
 Thus the necessarily true statement is
-\[
+$$
 \boxed{\text{(a) }f\text{ is constant}.}
-\]
+$$
 
 
 ::: pf-proof

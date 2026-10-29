@@ -28,14 +28,14 @@ audit:
 
 ::: {.problem}
 1. Solve
-   \[
+   $$
    g'=2g,\qquad g(0)=a,
-   \]
+   $$
    where $a$ is a real constant.
 2. Suppose $f:[0,1]\to\RR$ is continuous, $f(0)=0$, and $f$ is differentiable for $0<x<1$ with
-   \[
+   $$
    0\le f'(x)\le2f(x).
-   \]
+   $$
    Prove that $f$ is identically zero.
 :::
 

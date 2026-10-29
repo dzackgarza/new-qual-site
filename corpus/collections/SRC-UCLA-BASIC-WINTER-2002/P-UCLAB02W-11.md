@@ -22,10 +22,10 @@ audit:
 ::: {.problem}
 Let $V$ be a finite-dimensional complex inner-product space and let $T:V\to V$ be linear.
 Prove that there exists an ordered orthonormal basis of $V$ such that the matrix $A=(A_{ij})$ of $T$ in this basis is upper triangular, i.e.,
-\[
+$$
 A_{ij}=0
 \qquad\text{if }i<j.
-\]
+$$
 
 Hint: first show that if $S:V\to V$ is linear and $W\subset V$ is a subspace, then $W$ is $S$-invariant if and only if $W^\perp$ is $S^*$-invariant.
 :::
@@ -43,8 +43,8 @@ Appending the unit vector $w/\|w\|$ gives an orthonormal basis of $V$ in which t
 
 Finally, reverse the order of this orthonormal basis.
 Conjugation by the reversal permutation matrix converts an upper-triangular matrix to a lower-triangular one, so in the reversed basis the entries satisfy
-\[
+$$
 A_{ij}=0\qquad(i<j),
-\]
+$$
 which is the index condition in the statement.
 :::

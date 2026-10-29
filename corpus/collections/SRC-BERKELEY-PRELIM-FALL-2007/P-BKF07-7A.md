@@ -26,15 +26,15 @@ audit:
 ---
 
 ::: {.problem}
-Let \(P\in\RR^{n\times n}\) satisfy \(P^3=P\). Let \(r=\operatorname{rank}P>0\). Show that there exist \(U,V\in\RR^{n\times r}\) with
-\[
+Let $P\in\RR^{n\times n}$ satisfy $P^3=P$. Let $r=\operatorname{rank}P>0$. Show that there exist $U,V\in\RR^{n\times r}$ with
+$$
 V^TU=I_r
-\]
+$$
 such that
-\[
+$$
 P=USV^T,
-\]
-where \(S\) is an \(r\times r\) diagonal matrix whose diagonal entries are all \(\pm1\).
+$$
+where $S$ is an $r\times r$ diagonal matrix whose diagonal entries are all $\pm1$.
 :::
 
 ::: {.solution}

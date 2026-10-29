@@ -20,13 +20,13 @@ audit:
 
 ::: {.problem}
 Find a square root of
-\[
+$$
 \begin{pmatrix}
 1&3&-3\\
 0&4&5\\
 0&0&9
 \end{pmatrix}.
-\]
+$$
 How many square roots does this matrix have?
 :::
 

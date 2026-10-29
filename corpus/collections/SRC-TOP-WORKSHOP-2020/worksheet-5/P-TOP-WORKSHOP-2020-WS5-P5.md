@@ -30,22 +30,22 @@ audit:
 :::
 
 ::: {.solution}
-(a) Identifying two distinct points in a path-connected CW complex adds a circle up to homotopy. Applying this to the north and south poles of \(S^2\) gives
-\[
+(a) Identifying two distinct points in a path-connected CW complex adds a circle up to homotopy. Applying this to the north and south poles of $S^2$ gives
+$$
 X\simeq S^2\vee S^1.
-\]
-One can see this directly by choosing a CW decomposition with the two poles as vertices; after the identification and collapse of a maximal tree, one \(1\)-cell remains from the identification while the \(2\)-sphere remains as a sphere summand.
+$$
+One can see this directly by choosing a CW decomposition with the two poles as vertices; after the identification and collapse of a maximal tree, one $1$-cell remains from the identification while the $2$-sphere remains as a sphere summand.
 
 Thus
-\[
+$$
 \pi_1(X)\cong\ZZ.
-\]
+$$
 
-(b) Connected covers correspond to subgroups of \(\ZZ\), namely \(n\ZZ\) for \(n\ge1\) and the trivial subgroup. The universal cover is a bi-infinite chain of spheres
-\[
+(b) Connected covers correspond to subgroups of $\ZZ$, namely $n\ZZ$ for $n\ge1$ and the trivial subgroup. The universal cover is a bi-infinite chain of spheres
+$$
 \cdots\cup S^2_{-1}\cup S^2_0\cup S^2_1\cup\cdots
-\]
-with the north pole of \(S^2_i\) identified with the south pole of \(S^2_{i+1}\). The generator of the deck group shifts the chain by one sphere.
+$$
+with the north pole of $S^2_i$ identified with the south pole of $S^2_{i+1}$. The generator of the deck group shifts the chain by one sphere.
 
-For \(n\ge1\), quotienting by the subgroup \(n\ZZ\) produces an \(n\)-sheeted cover: a cyclic necklace of \(n\) spheres, with successive north and south poles identified cyclically. The trivial subgroup gives the infinite chain. These are all connected covering spaces up to equivalence.
+For $n\ge1$, quotienting by the subgroup $n\ZZ$ produces an $n$-sheeted cover: a cyclic necklace of $n$ spheres, with successive north and south poles identified cyclically. The trivial subgroup gives the infinite chain. These are all connected covering spaces up to equivalence.
 :::

@@ -45,27 +45,27 @@ $$
 
 ::: pf-step
 
-Prove the \(L^p\) convolution bound.
+Prove the $L^p$ convolution bound.
 
 ::: pf-proof
 
-For \(y\in\RR\), let \(\tau_y f(x)=f(x-y)\). Translation invariance of Lebesgue measure gives
-\[
+For $y\in\RR$, let $\tau_y f(x)=f(x-y)$. Translation invariance of Lebesgue measure gives
+$$
 \|\tau_y f\|_p=\|f\|_p.
-\]
+$$
 Minkowski's integral inequality therefore yields
-\[
+$$
 \begin{aligned}
 \|\mu*f\|_p
 &=\left\|\int_{\RR}\tau_y f\,d\mu(y)\right\|_p\\
 &\le \int_{\RR}\|\tau_y f\|_p\,d\mu(y)\\
 &=\mu(\RR)\|f\|_p.
 \end{aligned}
-\]
-In particular the defining integral is finite for almost every \(x\), and
-\[
+$$
+In particular the defining integral is finite for almost every $x$, and
+$$
 \boxed{\|\mu*f\|_p\le\mu(\RR)\|f\|_p.}
-\]
+$$
 
 :::
 
@@ -77,17 +77,17 @@ Compute the Fourier transform.
 
 ::: pf-proof
 
-Assume \(f\in L^1(\RR)\). Part 1 gives \(\mu*f\in L^1\), and Tonelli--Fubini applies because
-\[
+Assume $f\in L^1(\RR)$. Part 1 gives $\mu*f\in L^1$, and Tonelli--Fubini applies because
+$$
 \int_{\RR}\int_{\RR}|f(x-y)|\,d\mu(y)\,dx
 =\mu(\RR)\|f\|_1<\infty.
-\]
+$$
 Using
-\[
+$$
 \widehat h(k)=\frac1{\sqrt{2\pi}}\int_{\RR}h(x)e^{-ikx}\,dx,
-\]
+$$
 we obtain
-\[
+$$
 \begin{aligned}
 \widehat{\mu*f}(k)
 &=\frac1{\sqrt{2\pi}}
@@ -97,11 +97,11 @@ we obtain
 \left(\int_{\RR}f(u)e^{-iku}\,du\right)d\mu(y)\\
 &=\sqrt{2\pi}\,\widehat\mu(k)\widehat f(k).
 \end{aligned}
-\]
+$$
 Thus
-\[
+$$
 \boxed{\widehat{\mu*f}=\sqrt{2\pi}\,\widehat\mu\,\widehat f.}
-\]
+$$
 
 :::
 
@@ -113,32 +113,32 @@ Apply Fourier inversion.
 
 ::: pf-proof
 
-Assume now that \(f,\widehat f\in L^1(\RR)\). Since \(\mu\) is finite,
-\[
+Assume now that $f,\widehat f\in L^1(\RR)$. Since $\mu$ is finite,
+$$
 |\widehat\mu(k)|
 \le \frac{\mu(\RR)}{\sqrt{2\pi}},
-\]
+$$
 so
-\[
+$$
 \widehat{\mu*f}
 =\sqrt{2\pi}\,\widehat\mu\,\widehat f
 \in L^1(\RR).
-\]
-The Fourier inversion theorem applied to \(\mu*f\in L^1\) gives, for almost every \(x\),
-\[
+$$
+The Fourier inversion theorem applied to $\mu*f\in L^1$ gives, for almost every $x$,
+$$
 \begin{aligned}
 (\mu*f)(x)
 &=\frac1{\sqrt{2\pi}}
 \int_{\RR}\widehat{\mu*f}(k)e^{ikx}\,dk\\
 &=\int_{\RR}\widehat\mu(k)\widehat f(k)e^{ikx}\,dk.
 \end{aligned}
-\]
+$$
 Hence
-\[
+$$
 \boxed{
 (\mu*f)(x)=\int_{\RR}\widehat\mu(k)\widehat f(k)e^{ikx}\,dk
 \quad\text{for a.e. }x.}
-\]
+$$
 
 :::
 

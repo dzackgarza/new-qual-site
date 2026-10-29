@@ -30,9 +30,9 @@ Let $E,F\subset\RR$ be measurable sets of finite measure.
 (a) Show that $\chi_E*\chi_F$ is continuous.
 
 (b) Show that
-\[
+$$
 n\bigl(\chi_E*\chi_{[0,1/n]}\bigr)\to\chi_E
-\]
+$$
 pointwise almost everywhere.
 :::
 
@@ -47,16 +47,16 @@ The convolution is continuous.
 ::: pf-proof
 
 Since $E$ and $F$ have finite measure,
-\[
+$$
 \chi_E,\chi_F\in L^2(\RR).
-\]
+$$
 For $h\in\RR$,
-\[
+$$
 \begin{aligned}
 | (\chi_E*\chi_F)(x+h)-(\chi_E*\chi_F)(x) |
 &\le \|\chi_E\|_2\,\|\chi_F(\cdot+h)-\chi_F\|_2.
 \end{aligned}
-\]
+$$
 The right-hand side is independent of $x$ and tends to $0$ as $h\to0$ by continuity of translations in $L^2$. Hence $\chi_E*\chi_F$ is uniformly continuous, in particular continuous.
 
 :::
@@ -70,17 +70,17 @@ The normalized interval convolutions converge almost everywhere to $\chi_E$.
 ::: pf-proof
 
 For every $x$,
-\[
+$$
 \begin{aligned}
 n(\chi_E*\chi_{[0,1/n]})(x)
 &=n\int_{\RR}\chi_E(y)\chi_{[0,1/n]}(x-y)\,dy\\
 &=n\int_{x-1/n}^{x}\chi_E(y)\,dy.
 \end{aligned}
-\]
+$$
 Thus this is the average of $\chi_E$ over the interval $[x-1/n,x]$. By the one-sided Lebesgue differentiation theorem, for almost every $x$,
-\[
+$$
 n\int_{x-1/n}^{x}\chi_E(y)\,dy\longrightarrow\chi_E(x).
-\]
+$$
 This proves the claim.
 
 :::

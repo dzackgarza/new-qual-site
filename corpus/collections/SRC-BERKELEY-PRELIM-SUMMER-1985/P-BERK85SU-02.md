@@ -25,14 +25,14 @@ audit:
 
 ::: {.problem}
 1. For $0\le\theta\le\pi/2$, prove
-\[
+$$
 \sin\theta\ge \frac{2}{\pi}\theta.
-\]
+$$
 
 2. Using part 1 or otherwise, prove that if $\lambda<1$, then
-\[
+$$
 \lim_{R\to\infty}R^\lambda\int_0^{\pi/2}e^{-R\sin\theta}\,d\theta=0.
-\]
+$$
 :::
 
 ::: {.solution}

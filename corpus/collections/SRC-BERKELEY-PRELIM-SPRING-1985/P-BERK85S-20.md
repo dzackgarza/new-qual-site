@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Let $f$ be analytic from the open unit disk into itself. Prove that
-\[
+$$
 |f'(z)|\le\frac1{1-|z|^2}
-\]
+$$
 for every $|z|<1$.
 :::
 

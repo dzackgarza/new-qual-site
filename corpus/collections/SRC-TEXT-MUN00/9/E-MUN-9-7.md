@@ -44,52 +44,52 @@ For a readable expository account, see [Sm].
 :::
 
 ::: {.solution}
-(a) Let \(A\) be uncountable. Since \(A\) is infinite, Theorem 9.1 gives an injection
-\[
+(a) Let $A$ be uncountable. Since $A$ is infinite, Theorem 9.1 gives an injection
+$$
 \ZZ_+\hookrightarrow A.
-\]
-There cannot be an injection \(A\hookrightarrow\ZZ_+\), for then \(A\) would be countable by Theorem 7.1. Hence \(A\) has greater cardinality than \(\ZZ_+\).
+$$
+There cannot be an injection $A\hookrightarrow\ZZ_+$, for then $A$ would be countable by Theorem 7.1. Hence $A$ has greater cardinality than $\ZZ_+$.
 
-(b) Suppose \(A\) has greater cardinality than \(B\), and \(B\) greater cardinality than \(C\). There are injections
-\[
+(b) Suppose $A$ has greater cardinality than $B$, and $B$ greater cardinality than $C$. There are injections
+$$
 C\hookrightarrow B\hookrightarrow A,
-\]
-so there is an injection \(C\hookrightarrow A\). If there were an injection \(A\hookrightarrow C\), composing with \(C\hookrightarrow B\) would give an injection \(A\hookrightarrow B\), contradicting that \(A\) has greater cardinality than \(B\). Thus \(A\) has greater cardinality than \(C\).
+$$
+so there is an injection $C\hookrightarrow A$. If there were an injection $A\hookrightarrow C$, composing with $C\hookrightarrow B$ would give an injection $A\hookrightarrow B$, contradicting that $A$ has greater cardinality than $B$. Thus $A$ has greater cardinality than $C$.
 
 (c) Let
-\[
+$$
 A_1=\ZZ_+,
 \qquad
 A_{n+1}=\mathcal P(A_n).
-\]
-The map \(a\mapsto\{a\}\) injects \(A_n\) into \(A_{n+1}\), while Cantor's theorem says there is no injection \(A_{n+1}\to A_n\). Hence \(A_{n+1}\) has greater cardinality than \(A_n\) for every \(n\).
+$$
+The map $a\mapsto\{a\}$ injects $A_n$ into $A_{n+1}$, while Cantor's theorem says there is no injection $A_{n+1}\to A_n$. Hence $A_{n+1}$ has greater cardinality than $A_n$ for every $n$.
 
 (d) Set
-\[
+$$
 A=\bigcup_{n\ge1}A_n.
-\]
-Each \(A_n\) injects into \(A\) by inclusion. For a fixed \(n\), if there were an injection \(A\to A_n\), then restricting it to the subset \(A_{n+1}\subset A\) would give an injection \(A_{n+1}\to A_n\), contradicting part (c). Hence \(A\) has greater cardinality than every \(A_n\).
+$$
+Each $A_n$ injects into $A$ by inclusion. For a fixed $n$, if there were an injection $A\to A_n$, then restricting it to the subset $A_{n+1}\subset A$ would give an injection $A_{n+1}\to A_n$, contradicting part (c). Hence $A$ has greater cardinality than every $A_n$.
 
 For the starred Exercise 8, we show
-\[
+$$
 |\mathcal P(\ZZ_+)|=|\RR|.
-\]
-An injection \(\mathcal P(\ZZ_+)\to\RR\) is given by the ternary expansion
-\[
+$$
+An injection $\mathcal P(\ZZ_+)\to\RR$ is given by the ternary expansion
+$$
 S\longmapsto \sum_{n\in S}\frac{2}{3^n}.
-\]
-Only the digits \(0\) and \(2\) occur, so distinct subsets give distinct ternary expansions and hence distinct real numbers.
+$$
+Only the digits $0$ and $2$ occur, so distinct subsets give distinct ternary expansions and hence distinct real numbers.
 
-Conversely, use the stated decimal-expansion fact, choosing for each real the unique decimal expansion not ending in an infinite string of \(9\)'s. Encode its sign, finite integer part, decimal point, and infinite digit sequence by a binary sequence; for example, encode each decimal digit by a fixed four-bit block and separate the finite sign/integer prefix from the fractional tail by a fixed delimiter. This gives an injection
-\[
+Conversely, use the stated decimal-expansion fact, choosing for each real the unique decimal expansion not ending in an infinite string of $9$'s. Encode its sign, finite integer part, decimal point, and infinite digit sequence by a binary sequence; for example, encode each decimal digit by a fixed four-bit block and separate the finite sign/integer prefix from the fractional tail by a fixed delimiter. This gives an injection
+$$
 \RR\hookrightarrow\{0,1\}^\omega.
-\]
+$$
 By the characteristic-function bijection of Exercise 7.3,
-\[
+$$
 \{0,1\}^\omega\cong\mathcal P(\ZZ_+).
-\]
+$$
 Thus there are injections both ways, and Schroeder--Bernstein yields
-\[
+$$
 \boxed{|\mathcal P(\ZZ_+)|=|\RR|}.
-\]
+$$
 :::

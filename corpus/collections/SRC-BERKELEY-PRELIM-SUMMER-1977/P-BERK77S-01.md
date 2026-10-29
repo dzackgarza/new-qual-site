@@ -32,9 +32,9 @@ Let $F$ be a field.
 1. Prove that $F[x]$ is a vector space over $F$.
 2. Prove that the subset $F_n[x]$ of polynomials of degree at most $n$ is a subspace of dimension $n+1$.
 3. Prove that for every $a\in F$ the polynomials
-   \[
+   $$
    1,x-a,\dots,(x-a)^n
-   \]
+   $$
    form a basis of $F_n[x]$.
 :::
 

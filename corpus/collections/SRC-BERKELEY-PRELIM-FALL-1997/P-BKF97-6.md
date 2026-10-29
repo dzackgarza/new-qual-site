@@ -26,9 +26,9 @@ audit:
 ::: {.problem}
 Let $\alpha_1,\ldots,\alpha_n$ be distinct real numbers.
 Show that the functions
-\[
+$$
 e^{\alpha_1t},\ldots,e^{\alpha_nt}
-\]
+$$
 are linearly independent over $\RR$.
 :::
 

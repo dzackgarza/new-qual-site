@@ -25,10 +25,10 @@ audit:
 
 ::: {.problem}
 Let $f:(0,\infty)\to(0,\infty)$ be differentiable. Prove that for every $x>0$ the finite nonzero limit
-\[
+$$
 \lim_{\delta\to0}
 \left(\frac{f(x+\delta x)}{f(x)}\right)^{1/\delta}
-\]
+$$
 exists.
 :::
 

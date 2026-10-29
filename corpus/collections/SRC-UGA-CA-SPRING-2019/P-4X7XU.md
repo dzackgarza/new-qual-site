@@ -15,17 +15,17 @@ review: draft
 
 ::: {.problem}
 Find a conformal map that maps the region 
-\[
+$$
 R = \theset{z \st \Re(z) > 0,\, \abs{z - {1\over 2} }> {1\over 2} }
-\]
+$$
 to the upper half plane.
 :::
 
 ::: {.problem}
 Find a conformal map from 
-\[
+$$
 \theset{ z\st  \abs{z -1 / 2} >1 / 2, \Re(z)>0 }
-\]
+$$
 to $\halfplane$.
 
 :::
@@ -45,12 +45,12 @@ The individual maps:
 That steps 1 and 2 work requires a bit of analysis.
 Use that $f(z) \definedas 1/z$ satisfies $f(\RR) = \RR$ and $f(i\RR) = i \RR$.
 To see where the circle $C_1$ gets mapped to, parameterize it as
-\[
+$$
 \gamma(t) \definedas \theset{{1\over 2}\qty{1+e^{it}} \st t\in [-\pi, \pi]}
-.\]
+.$$
 
 Now computing its image:
-\[
+$$
 f(\gamma(t)) 
 &= {2 \over 1 + e^{it}} \\
 &= {2e^{-it\over 2} \over e^{-it\over 2}(1 + e^{it})} \\
@@ -59,14 +59,14 @@ f(\gamma(t))
 &= \sec\qty{t\over 2}\qty{\cos\qty{-t\over 2} + i\sin\qty{-t\over 2}} \\
 &= \sec\qty{t\over 2}\qty{\cos\qty{t\over 2} - i\sin\qty{t\over 2}} \\
 &= 1 - i\tan\qty{t\over 2}
-,\]
+,$$
 and as $t$ runs from $-\pi$ to $\pi$, $-\tan\qty{t\over 2}$ runs from $+\infty$ to $-\infty$.
 So this is a line along $z=1$, oriented top to bottom as in the image.
 
 Similarly, computing $f(i\RR)$: parameterize $\gamma(t) = it$ with $t\in (-\infty, \infty)$, then
-\[
+$$
 f(\gamma(t)) = {1\over it} = -{i\over t}
-,\]
+,$$
 and as $t$ runs from $0$ to $\infty$, $-1/t$ runs from $-\infty$ to $0$, and as $t$ runs from $-\infty$ to $0$, $-1/t$ runs from $0$ to $\infty$.
 So $f(i\RR)$ is oriented from bottom to top, as in the image.
 

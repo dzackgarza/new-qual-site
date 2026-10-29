@@ -17,16 +17,16 @@ review: draft
 
 ::: {.problem}
 Prove, for every nonnegative integer $n$, that
-\[
+$$
 \int_0^\infty x^ne^{-x}\,dx=n!.
-\]
+$$
 :::
 
 ::: {.solution}
 For $n=0$,
-\[
+$$
 \int_0^\infty e^{-x}\,dx=1=0!.
-\]
+$$
 
 For the inductive step, integration by parts gives
    $$

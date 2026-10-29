@@ -42,9 +42,9 @@ Every free $A$-module is flat.
 
 Let $F=\bigoplus_{i\in I}A$.
 For every $A$-module $M$ there is a natural isomorphism
-\[
+$$
 M\otimes_A F\cong \bigoplus_{i\in I}(M\otimes_A A)\cong \bigoplus_{i\in I}M.
-\]
+$$
 Thus the functor $-\otimes_A F$ is naturally isomorphic to the direct-sum functor $M\mapsto\bigoplus_{i\in I}M$.
 Direct sums of exact sequences of modules are exact, so $-\otimes_A F$ is exact.
 Hence $F$ is flat.
@@ -61,13 +61,13 @@ A direct summand of a flat module is flat.
 
 Suppose $N\cong P\oplus Q$ and $N$ is flat.
 Then for every $A$-module $M$,
-\[
+$$
 M\otimes_A N\cong (M\otimes_A P)\oplus(M\otimes_A Q).
-\]
+$$
 Given an injection $u:M'\hookrightarrow M$, flatness of $N$ makes
-\[
+$$
 u\otimes 1_N:(M'\otimes_A P)\oplus(M'\otimes_A Q)\longrightarrow (M\otimes_A P)\oplus(M\otimes_A Q)
-\]
+$$
 injective.
 Its restriction to the first direct summand is $u\otimes 1_P$, so $u\otimes 1_P$ is injective.
 Since tensor product is always right exact, $-\otimes_A P$ is exact.
@@ -85,9 +85,9 @@ Every projective $A$-module is flat.
 
 Let $P$ be projective.
 There exists a free module $F$ and a module $Q$ such that
-\[
+$$
 F\cong P\oplus Q.
-\]
+$$
 By step [](#s1){.pf-ref}, $F$ is flat.
 By step [](#s2){.pf-ref}, its direct summand $P$ is flat.
 

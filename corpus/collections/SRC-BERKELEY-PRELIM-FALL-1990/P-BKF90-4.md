@@ -25,9 +25,9 @@ audit:
 ::: {.problem}
 Let $f$ be continuous and real-valued.
 Show that
-\[
+$$
 \int_0^1 f(x)x^2\,dx=\frac13 f(\xi)
-\]
+$$
 for some $\xi\in[0,1]$.
 :::
 

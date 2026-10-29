@@ -24,9 +24,9 @@ audit:
 ---
 ::: {.problem}
 Let $R_1,\dots,R_n$ be commutative rings with unity. Classify the following assertion as true, sometimes true, or false:
-\[
+$$
 U(R_1\oplus\cdots\oplus R_n)=U(R_1)\oplus\cdots\oplus U(R_n).
-\]
+$$
 :::
 
 ::: {.solution}

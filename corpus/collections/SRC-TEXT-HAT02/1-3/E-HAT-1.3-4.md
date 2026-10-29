@@ -38,19 +38,19 @@ Let $p,q\in S^2$ be the two endpoints of the added diameter in the first space.
 ::: {.pf-step #s1}
 
 For the sphere-with-diameter space, construct $\widetilde X$ from copies
-\[
+$$
 S_n^2\cong S^2,
 \qquad n\in\ZZ,
-\]
+$$
 by adjoining an interval $I_n$ from the point $q_n\in S_n^2$ to the point $p_{n+1}\in S_{n+1}^2$ for every $n$.
 
 ::: pf-proof
 
 Here $p_n,q_n$ denote the copies of $p,q$ in $S_n^2$.
 Thus the incidence pattern is the infinite line
-\[
+$$
 \cdots-S_{-1}^2-I_{-1}-S_0^2-I_0-S_1^2-I_1-\cdots .
-\]
+$$
 
 :::
 
@@ -59,9 +59,9 @@ Thus the incidence pattern is the infinite line
 ::: {.pf-step #s2}
 
 Define
-\[
+$$
 P:\widetilde X\to X
-\]
+$$
 by mapping every $S_n^2$ homeomorphically onto the sphere and every $I_n$ homeomorphically onto the diameter, with its endpoints sent to $q$ and $p$ respectively.
 Then $P$ is a covering map.
 
@@ -71,9 +71,9 @@ Away from $p$ and $q$, the assertion is immediate: a small neighborhood lies eit
 
 Choose a small disk neighborhood $D_p$ of $p$ in the sphere and a short initial subinterval $J_p$ of the diameter meeting the sphere only at $p$.
 The union
-\[
+$$
 U_p=D_p\cup J_p
-\]
+$$
 is a neighborhood of $p$ in $X$.
 For each $n$, its lift at $p_n$ is the union of the copy of $D_p$ in $S_n^2$ and the terminal short segment of $I_{n-1}$ ending at $p_n$.
 These lifted neighborhoods are pairwise disjoint and each maps homeomorphically to $U_p$.
@@ -95,9 +95,9 @@ Each sphere $S_n^2$ and each interval $I_n$ is simply connected, adjacent pieces
 Any loop has compact image, so it meets only finitely many of these pieces and lies in a finite subtree of the graph of spaces.
 Repeated application of van Kampen along point intersections shows that every such finite union is simply connected.
 Hence
-\[
+$$
 \pi_1(\widetilde X)=0.
-\]
+$$
 
 :::
 
@@ -108,9 +108,9 @@ Hence
 Now let $X'$ be the union of $S^2$ with a circle meeting the sphere exactly at $p$ and $q$.
 Write the two arcs of the added circle from $p$ to $q$ as $A$ and $B$.
 Let
-\[
+$$
 F_2=\langle a,b\rangle
-\]
+$$
 be the free group on two generators.
 
 ::: pf-proof
@@ -132,11 +132,11 @@ Construct $\widetilde X'$ from a copy $S_g^2$ of the sphere for every $g\in F_2$
 ::: pf-proof
 
 If each sphere copy is collapsed to a vertex, the resulting incidence graph has vertex set $F_2$ and edges
-\[
+$$
 g\longleftrightarrow ga,
 \qquad
 g\longleftrightarrow gb.
-\]
+$$
 This is the Cayley graph of $F_2$ with respect to $a,b$, hence a tree.
 
 :::
@@ -147,9 +147,9 @@ This is the Cayley graph of $F_2$ with respect to $a,b$, hence a tree.
 
 Map each $S_g^2$ homeomorphically to the sphere, each $A_g$ homeomorphically to $A$, and each $B_g$ homeomorphically to $B$.
 This defines a covering map
-\[
+$$
 P':\widetilde X'\to X'.
-\]
+$$
 
 ::: pf-proof
 
@@ -159,9 +159,9 @@ At $p_g$, exactly one lift of a short initial segment of $A$ and one lift of a s
 Together with a small disk neighborhood of $p_g$ in $S_g^2$, they map homeomorphically to the corresponding neighborhood of $p$ in $X'$.
 
 At $q_g$, the incident lifted terminal segments are those of
-\[
+$$
 A_{ga^{-1}}\quad\text{and}\quad B_{gb^{-1}},
-\]
+$$
 again giving exactly one lift of each local branch at $q$.
 Thus neighborhoods of both intersection points are evenly covered.
 

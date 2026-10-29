@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Find a sequence $(r_n)$ of positive rational numbers such that $\sum_{n=0}^{\infty}r_n$ converges and, for every prime $p$ and every positive integer $m$, the integer $p^m$ divides the numerator of $s_k-s_j$ (written in lowest terms) for all sufficiently large $k$ and $j$, where
-\[
+$$
 s_k=\sum_{n=0}^k r_n.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -28,35 +28,35 @@ and show that if $y _ { 1 }$ is a solution to this equation, then also $\begin{a
 ::: {.solution}
 
 Work on an interval on which $y_1$ does not vanish, and define
-\[
+$$
 v(x)=\int^x\frac{e^{-\int^sP(t)\,dt}}{y_1(s)^2}\,ds,
 \qquad y_2=y_1v.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 Substitution of $y_2=y_1v$ into the differential operator gives
-\[
+$$
 y_2''+Py_2'+Qy_2
 =y_1v''+(2y_1'+Py_1)v'.
-\]
+$$
 
 
 ::: pf-proof
 
 Differentiate to obtain
-\[
+$$
 y_2'=y_1'v+y_1v',
 \qquad
 y_2''=y_1''v+2y_1'v'+y_1v''.
-\]
+$$
 Therefore
-\[
+$$
 y_2''+Py_2'+Qy_2
 =v(y_1''+Py_1'+Qy_1)+y_1v''+(2y_1'+Py_1)v'.
-\]
+$$
 The first term vanishes because $y_1$ is a solution.
 
 :::
@@ -66,21 +66,21 @@ The first term vanishes because $y_1$ is a solution.
 ::: {.pf-step #s1-2}
 
 The derivative of $v$ satisfies
-\[
+$$
 v'(x)=\frac{e^{-\int^xP(t)\,dt}}{y_1(x)^2}
-\]
+$$
 and
-\[
+$$
 v''=-\left(P+2\frac{y_1'}{y_1}\right)v'.
-\]
+$$
 
 
 ::: pf-proof
 
 The first identity is the fundamental theorem of calculus. Taking the logarithmic derivative of $v'$ gives
-\[
+$$
 \frac{v''}{v'}=-P-2\frac{y_1'}{y_1},
-\]
+$$
 which is the second identity.
 
 :::
@@ -90,21 +90,21 @@ which is the second identity.
 ::: {.pf-step #s1-3}
 
 The function
-\[
+$$
 \boxed{y_2(x)=y_1(x)\int^x ds\,
 \frac{e^{-\int^sP(t)\,dt}}{y_1(s)^2}}
-\]
+$$
 solves $y''+Py'+Qy=0$.
 
 
 ::: pf-proof
 
 By step [](#s1-2){.pf-ref},
-\[
+$$
 y_1v''+(2y_1'+Py_1)v'
 =y_1\left[-P-2\frac{y_1'}{y_1}\right]v'
 +(2y_1'+Py_1)v'=0.
-\]
+$$
 Step [](#s1-1){.pf-ref} therefore gives $y_2''+Py_2'+Qy_2=0$.
 
 :::

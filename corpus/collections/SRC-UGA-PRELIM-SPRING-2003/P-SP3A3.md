@@ -32,15 +32,15 @@ No such matrix exists.
 
 ::: {.pf-step #s2}
 For every $3\times2$ matrix $A$,
-\[
+$$
 \operatorname{rank}(AA^t)\le \operatorname{rank}(A)\le 2.
-\]
+$$
 
 ::: pf-proof
 The image of the linear map represented by $AA^t$ is contained in the image of the linear map represented by $A$, because
-\[
+$$
 AA^t x=A(A^t x)
-\]
+$$
 for every $x\in\CC^3$. Hence $\operatorname{rank}(AA^t)\le\operatorname{rank}(A)$. Since $A$ has only two columns, $\operatorname{rank}(A)\le2$.
 :::
 

@@ -20,40 +20,40 @@ Prove that $|\chi(g)|\leq\dim V$ for all $g\in G$, and that the bound is sharp.
 
 ::: {.solution}
 
-Let \(d=\dim V\).
+Let $d=\dim V$.
 
 ::: pf
 
 ::: {.pf-step #eigenvalues-modulus-one}
-For every \(g\in G\), all eigenvalues of \(\varphi(g)\) have modulus \(1\).
+For every $g\in G$, all eigenvalues of $\varphi(g)$ have modulus $1$.
 
 ::: pf-proof
-Because \(G\) is finite, \(g\) has finite order, say \(g^m=e\). Hence
-\[
+Because $G$ is finite, $g$ has finite order, say $g^m=e$. Hence
+$$
 \varphi(g)^m=\varphi(g^m)=I.
-\]
-If \(\lambda\) is an eigenvalue of \(\varphi(g)\), then \(\lambda^m=1\), so \(|\lambda|=1\).
+$$
+If $\lambda$ is an eigenvalue of $\varphi(g)$, then $\lambda^m=1$, so $|\lambda|=1$.
 :::
 
 :::
 
 ::: pf-step
-For every \(g\in G\),
-\[
+For every $g\in G$,
+$$
 |\chi(g)|\le d.
-\]
+$$
 
 ::: pf-proof
-Over \(\CC\), the characteristic polynomial of \(\varphi(g)\) splits. Let its eigenvalues, counted with algebraic multiplicity, be \(\lambda_1,\ldots,\lambda_d\). Then
-\[
+Over $\CC$, the characteristic polynomial of $\varphi(g)$ splits. Let its eigenvalues, counted with algebraic multiplicity, be $\lambda_1,\ldots,\lambda_d$. Then
+$$
 \chi(g)=\operatorname{Tr}\varphi(g)=\sum_{j=1}^d\lambda_j.
-\]
-By step [](#eigenvalues-modulus-one){.pf-ref}, \(|\lambda_j|=1\) for every \(j\). Therefore the triangle inequality gives
-\[
+$$
+By step [](#eigenvalues-modulus-one){.pf-ref}, $|\lambda_j|=1$ for every $j$. Therefore the triangle inequality gives
+$$
 |\chi(g)|
 \le \sum_{j=1}^d|\lambda_j|
 =d.
-\]
+$$
 :::
 
 :::
@@ -62,18 +62,18 @@ By step [](#eigenvalues-modulus-one){.pf-ref}, \(|\lambda_j|=1\) for every \(j\)
 The bound is sharp.
 
 ::: pf-proof
-At the identity element \(e\in G\),
-\[
+At the identity element $e\in G$,
+$$
 \varphi(e)=I_V,
-\]
+$$
 so
-\[
+$$
 \chi(e)=\operatorname{Tr}(I_V)=d.
-\]
+$$
 Hence
-\[
+$$
 |\chi(e)|=d=\dim V,
-\]
+$$
 showing that equality can occur.
 :::
 

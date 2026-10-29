@@ -23,29 +23,29 @@ Give a complete statement and proof of Schur's Lemma, in the category of complex
 2. In particular, every $G$-equivariant endomorphism $T\colon V\to V$ is multiplication by a scalar.
 
 For (1), both $\ker T\subseteq V$ and $\operatorname{im}T\subseteq W$ are $G$-stable subspaces. Since $V$ and $W$ are irreducible,
-\[
+$$
 \ker T\in\{0,V\},
 \qquad
 \operatorname{im}T\in\{0,W\}.
-\]
+$$
 If $T\ne0$, then $\ker T\ne V$ and $\operatorname{im}T\ne0$, so
-\[
+$$
 \ker T=0,
 \qquad
 \operatorname{im}T=W.
-\]
+$$
 Thus $T$ is an isomorphism.
 
 For (2), let $T\in\operatorname{End}_G(V)$. Because the field is $\CC$, $T$ has an eigenvalue $\lambda\in\CC$. Then
-\[
+$$
 T-\lambda I
-\]
+$$
 is again $G$-equivariant and has nonzero kernel, so by part (1) it cannot be an isomorphism. Hence it must be the zero map. Therefore
-\[
+$$
 T=\lambda I.
-\]
+$$
 Thus
-\[
+$$
 \boxed{\operatorname{End}_G(V)=\CC\,I.}
-\]
+$$
 :::

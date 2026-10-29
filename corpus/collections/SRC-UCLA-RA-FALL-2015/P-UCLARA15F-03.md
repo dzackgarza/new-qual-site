@@ -22,50 +22,50 @@ audit:
 
 ::: {.problem}
 Let $f \in L^1_{\mathrm{loc}}(\RR^d)$ be such that for some $0 < p < 1$, we have
-\[
+$$
 \left| \int f(x) g(x)\,dx \right| \leq \left( \int |g(x)|^p\,dx \right)^{\frac{1}{p}},
-\]
+$$
 for all $g \in C_0(\RR^d)$. Show that $f(x) = 0$ a.e. Here $C_0(\RR^d)$ is the space of continuous functions with compact support on $\RR^d$.
 :::
 
 ::: {.solution}
 
 Fix
-\[
+$$
 0<p<1.
-\]
+$$
 
 ## A compact-set estimate
 
 Let
-\[
+$$
 K\subset\RR^d
-\]
+$$
 be compact.
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-Choose a bounded open set \(U\) with
-\[
+Choose a bounded open set $U$ with
+$$
 K\subset U
-\]
+$$
 such that both
-\[
+$$
 \boxed{
 \int_{U\setminus K}|f(x)|\,dx<\varepsilon}
-\]
+$$
 and
-\[
+$$
 \boxed{
 |U\setminus K|<\varepsilon}.
-\]
+$$
 
 
 ::: pf-proof
 
-Since \(f\in L^1_{\mathrm{loc}}\), it is integrable on some bounded neighborhood of \(K\), and its integral is absolutely continuous with respect to Lebesgue measure there. By outer regularity of Lebesgue measure, choose bounded open \(U\supset K\) with \(|U\setminus K|\) as small as desired; then absolute continuity of the integral makes \(\int_{U\setminus K}|f|\) small as well.
+Since $f\in L^1_{\mathrm{loc}}$, it is integrable on some bounded neighborhood of $K$, and its integral is absolutely continuous with respect to Lebesgue measure there. By outer regularity of Lebesgue measure, choose bounded open $U\supset K$ with $|U\setminus K|$ as small as desired; then absolute continuity of the integral makes $\int_{U\setminus K}|f|$ small as well.
 
 :::
 
@@ -73,23 +73,23 @@ Since \(f\in L^1_{\mathrm{loc}}\), it is integrable on some bounded neighborhood
 
 ::: pf-step
 
-By Urysohn's lemma on \(\RR^d\), choose
-\[
+By Urysohn's lemma on $\RR^d$, choose
+$$
 g\in C_c(\RR^d)
-\]
+$$
 such that
-\[
+$$
 0\le g\le1,
 \qquad
 g=1\text{ on }K,
 \qquad
 \operatorname{supp}g\subset U.
-\]
+$$
 
 
 ::: pf-proof
 
-Euclidean space is normal, and \(K\) is closed while \(U\) is open with \(K\subset U\).
+Euclidean space is normal, and $K$ is closed while $U$ is open with $K\subset U$.
 
 :::
 
@@ -98,7 +98,7 @@ Euclidean space is normal, and \(K\) is closed while \(U\) is open with \(K\subs
 ::: {.pf-step #s1-3}
 
 One has
-\[
+$$
 \left|
 \int_{\RR^d}f(x)g(x)\,dx
 -
@@ -106,13 +106,13 @@ One has
 \right|
 <
 \varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
-Since \(g=1\) on \(K\) and \(g=0\) outside \(U\),
-\[
+Since $g=1$ on $K$ and $g=0$ outside $U$,
+$$
 \begin{aligned}
 \left|
 \int fg-\int_K f
@@ -127,7 +127,7 @@ f(x)g(x)\,dx
 <
 \varepsilon
 \end{aligned}
-\]
+$$
 by step [](#s1-1){.pf-ref}.
 
 :::
@@ -137,7 +137,7 @@ by step [](#s1-1){.pf-ref}.
 ::: {.pf-step #s1-4}
 
 By the hypothesis,
-\[
+$$
 \left|
 \int fg
 \right|
@@ -145,12 +145,12 @@ By the hypothesis,
 \left(
 \int |g|^p
 \right)^{1/p}.
-\]
+$$
 
 
 ::: pf-proof
 
-This is the assumed inequality applied to the test function \(g\in C_c(\RR^d)\).
+This is the assumed inequality applied to the test function $g\in C_c(\RR^d)$.
 
 :::
 
@@ -159,26 +159,26 @@ This is the assumed inequality applied to the test function \(g\in C_c(\RR^d)\).
 ::: {.pf-step #s1-5}
 
 Since
-\[
+$$
 0\le g\le1
-\]
+$$
 and
-\[
+$$
 \operatorname{supp}g\subset U,
-\]
-\[
+$$
+$$
 \boxed{
 \int |g|^p\le |U|}.
-\]
+$$
 
 
 ::: pf-proof
 
-On \(U\),
-\[
+On $U$,
+$$
 |g|^p\le1,
-\]
-and outside \(U\), \(g=0\).
+$$
+and outside $U$, $g=0$.
 
 :::
 
@@ -187,13 +187,13 @@ and outside \(U\), \(g=0\).
 ::: pf-step
 
 Therefore
-\[
+$$
 \left|
 \int_K f
 \right|
 \le
 \varepsilon+|U|^{1/p}.
-\]
+$$
 
 
 ::: pf-proof
@@ -207,28 +207,28 @@ Use the triangle inequality with steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-
 ::: {.pf-step #s1-7}
 
 Since
-\[
+$$
 |U|
 \le
 |K|+\varepsilon,
-\]
-\[
+$$
+$$
 \left|
 \int_K f
 \right|
 \le
 \varepsilon+(|K|+\varepsilon)^{1/p}.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref},
-\[
+$$
 |U|=|K|+|U\setminus K|
 <
 |K|+\varepsilon.
-\]
+$$
 
 :::
 
@@ -236,20 +236,20 @@ By step [](#s1-1){.pf-ref},
 
 ::: {.pf-step #s1-8}
 
-Letting \(\varepsilon\downarrow0\),
-\[
+Letting $\varepsilon\downarrow0$,
+$$
 \boxed{
 \left|
 \int_K f(x)\,dx
 \right|
 \le
 |K|^{1/p}}.
-\]
+$$
 
 
 ::: pf-proof
 
-The bound in step [](#s1-7){.pf-ref} holds for every positive \(\varepsilon\), and the right-hand side converges to \(|K|^{1/p}\).
+The bound in step [](#s1-7){.pf-ref} holds for every positive $\varepsilon$, and the right-hand side converges to $|K|^{1/p}$.
 
 :::
 
@@ -257,23 +257,23 @@ The bound in step [](#s1-7){.pf-ref} holds for every positive \(\varepsilon\), a
 
 ::: pf-step
 
-Partition \(Q\) into
-\[
+Partition $Q$ into
+$$
 N^d
-\]
+$$
 closed subcubes
-\[
+$$
 Q_1,\dots,Q_{N^d}
-\]
+$$
 of side length
-\[
+$$
 s/N.
-\]
+$$
 
 
 ::: pf-proof
 
-Divide each coordinate interval into \(N\) equal pieces and take Cartesian products.
+Divide each coordinate interval into $N$ equal pieces and take Cartesian products.
 
 :::
 
@@ -282,17 +282,17 @@ Divide each coordinate interval into \(N\) equal pieces and take Cartesian produ
 ::: {.pf-step #s1-10}
 
 Since the overlaps of distinct subcubes lie in boundaries of measure zero,
-\[
+$$
 \int_Q f
 =
 \sum_{j=1}^{N^d}
 \int_{Q_j}f.
-\]
+$$
 
 
 ::: pf-proof
 
-The interiors are disjoint and cover \(Q\) up to the union of finitely many lower-dimensional faces, which has Lebesgue measure zero.
+The interiors are disjoint and cover $Q$ up to the union of finitely many lower-dimensional faces, which has Lebesgue measure zero.
 
 :::
 
@@ -301,7 +301,7 @@ The interiors are disjoint and cover \(Q\) up to the union of finitely many lowe
 ::: pf-step
 
 Hence
-\[
+$$
 \left|
 \int_Q f
 \right|
@@ -310,7 +310,7 @@ Hence
 \left|
 \int_{Q_j}f
 \right|.
-\]
+$$
 
 
 ::: pf-proof
@@ -324,7 +324,7 @@ Apply the triangle inequality to step [](#s1-10){.pf-ref}.
 ::: pf-step
 
 By step [](#s1-8){.pf-ref},
-\[
+$$
 \left|
 \int_{Q_j}f
 \right|
@@ -334,15 +334,15 @@ By step [](#s1-8){.pf-ref},
 \left(
 \frac{s^d}{N^d}
 \right)^{1/p}.
-\]
+$$
 
 
 ::: pf-proof
 
-Each \(Q_j\) is compact, and its volume is
-\[
+Each $Q_j$ is compact, and its volume is
+$$
 (s/N)^d.
-\]
+$$
 
 :::
 
@@ -351,7 +351,7 @@ Each \(Q_j\) is compact, and its volume is
 ::: {.pf-step #s1-13}
 
 Therefore
-\[
+$$
 \boxed{
 \left|
 \int_Q f
@@ -359,13 +359,13 @@ Therefore
 \le
 s^{d/p}
 N^{d-d/p}}.
-\]
+$$
 
 
 ::: pf-proof
 
-There are \(N^d\) subcubes, so
-\[
+There are $N^d$ subcubes, so
+$$
 N^d
 \left(
 \frac{s^d}{N^d}
@@ -373,7 +373,7 @@ N^d
 =
 s^{d/p}
 N^{d(1-1/p)}.
-\]
+$$
 
 :::
 
@@ -381,24 +381,24 @@ N^{d(1-1/p)}.
 
 ::: {.pf-step #s1-14}
 
-Since \(0<p<1\),
-\[
+Since $0<p<1$,
+$$
 \boxed{
 d-d/p<0}.
-\]
+$$
 
 
 ::: pf-proof
 
 Because
-\[
+$$
 1/p>1,
-\]
+$$
 one has
-\[
+$$
 1-1/p<0.
-\]
-Multiply by \(d>0\).
+$$
+Multiply by $d>0$.
 
 :::
 
@@ -406,21 +406,21 @@ Multiply by \(d>0\).
 
 ::: {.pf-step #s1-15}
 
-Letting \(N\to\infty\) in step [](#s1-13){.pf-ref} gives
-\[
+Letting $N\to\infty$ in step [](#s1-13){.pf-ref} gives
+$$
 \boxed{
 \int_Q f(x)\,dx=0}
-\]
-for every closed cube \(Q\).
+$$
+for every closed cube $Q$.
 
 
 ::: pf-proof
 
 By step [](#s1-14){.pf-ref},
-\[
+$$
 N^{d-d/p}\to0.
-\]
-The left-hand side is independent of \(N\), so its absolute value is bounded by quantities tending to zero.
+$$
+The left-hand side is independent of $N$, so its absolute value is bounded by quantities tending to zero.
 
 :::
 
@@ -429,19 +429,19 @@ The left-hand side is independent of \(N\), so its absolute value is bounded by 
 ::: {.pf-step #s1-16}
 
 Since
-\[
+$$
 f\in L^1_{\mathrm{loc}}(\RR^d),
-\]
-the Lebesgue differentiation theorem gives, for almost every \(x\),
-\[
+$$
+the Lebesgue differentiation theorem gives, for almost every $x$,
+$$
 \boxed{
 f(x)
 =
 \lim_{r\downarrow0}
 \frac1{|Q_r(x)|}
 \int_{Q_r(x)}f(y)\,dy},
-\]
-where \(Q_r(x)\) is any family of cubes centered at \(x\) with side length tending to zero.
+$$
+where $Q_r(x)$ is any family of cubes centered at $x$ with side length tending to zero.
 
 
 ::: pf-proof
@@ -459,7 +459,7 @@ Every integral in step [](#s1-16){.pf-ref} is zero.
 
 ::: pf-proof
 
-Each \(Q_r(x)\) is a closed cube, so step [](#s1-15){.pf-ref} applies.
+Each $Q_r(x)$ is a closed cube, so step [](#s1-15){.pf-ref} applies.
 
 :::
 
@@ -468,19 +468,19 @@ Each \(Q_r(x)\) is a closed cube, so step [](#s1-15){.pf-ref} applies.
 ::: {.pf-step #s1-18}
 
 Therefore
-\[
+$$
 \boxed{
 f(x)=0}
-\]
-for almost every \(x\in\RR^d\).
+$$
+for almost every $x\in\RR^d$.
 
 
 ::: pf-proof
 
-At every Lebesgue differentiation point of \(f\), steps [](#s1-16){.pf-ref} through [](#s1-17){.pf-ref} give
-\[
+At every Lebesgue differentiation point of $f$, steps [](#s1-16){.pf-ref} through [](#s1-17){.pf-ref} give
+$$
 f(x)=\lim_{r\downarrow0}0=0.
-\]
+$$
 Such points form a full-measure set.
 
 :::

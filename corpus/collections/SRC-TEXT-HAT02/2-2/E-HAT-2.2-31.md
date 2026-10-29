@@ -32,17 +32,17 @@ Use the Mayer–Vietoris sequence to show there are isomorphisms $\tilde{H}_n(X 
 
 ::: {.solution}
 Let
-\[
+$$
 W=X\vee Y
-\]
+$$
 with common basepoint $*$. By hypothesis there are neighborhoods $U\subset X$ and $V\subset Y$ that deformation retract to $*$.
 
 Choose subspaces of $W$
-\[
+$$
 A=X\cup V,
 \qquad
 B=U\cup Y,
-\]
+$$
 slightly thickened if necessary so that they form an excisive cover for Mayer--Vietoris.
 
 ::: pf
@@ -50,13 +50,13 @@ slightly thickened if necessary so that they form an excisive cover for Mayer--V
 ::: {.pf-step #s1}
 
 The inclusions induce homotopy equivalences
-\[
+$$
 A\simeq X,
 \qquad
 B\simeq Y,
 \qquad
 A\cap B=U\cup V\simeq *.
-\]
+$$
 
 ::: pf-proof
 
@@ -69,15 +69,15 @@ Retract $V$ to the wedge point while fixing $X$, and similarly retract $U$ while
 ::: pf-step
 
 The reduced Mayer--Vietoris sequence gives
-\[
+$$
 \widetilde H_n(W)\cong\widetilde H_n(A)\oplus\widetilde H_n(B)
-\]
+$$
 for every $n$.
 
 ::: pf-proof
 
 The reduced Mayer--Vietoris sequence contains
-\[
+$$
 \widetilde H_n(A\cap B)
 \longrightarrow
 \widetilde H_n(A)\oplus\widetilde H_n(B)
@@ -85,13 +85,13 @@ The reduced Mayer--Vietoris sequence contains
 \widetilde H_n(W)
 \longrightarrow
 \widetilde H_{n-1}(A\cap B).
-\]
+$$
 By step [](#s1){.pf-ref} both outer groups vanish, so the middle arrow is an isomorphism. Replacing $A$ and $B$ by their deformation retracts yields
-\[
+$$
 \boxed{
 \widetilde H_n(X\vee Y)\cong
 \widetilde H_n(X)\oplus\widetilde H_n(Y).}
-\]
+$$
 
 :::
 

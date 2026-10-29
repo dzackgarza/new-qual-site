@@ -40,9 +40,9 @@ For each $g\in G$ let $\rho(g)(xH)=gxH$. This is well-defined on cosets, its inv
 ::: {.pf-step #s2}
 
 Its kernel is the normal core
-\[
+$$
 \boxed{N=\ker\rho=\bigcap_{x\in G}xHx^{-1}}.
-\]
+$$
 
 ::: pf-proof
 

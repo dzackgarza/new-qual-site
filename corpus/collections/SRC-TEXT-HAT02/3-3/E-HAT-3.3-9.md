@@ -31,19 +31,19 @@ Show that a $p$-sheeted covering space projection $M \to N$ has degree $\pm p$, 
 
 ::: {.solution}
 Let $p:M\to N$ be a $p$-sheeted covering between connected closed orientable $n$-manifolds. Choose an evenly covered ball $B\subset N$. Its inverse image is a disjoint union of $p$ balls
-\[
+$$
 p^{-1}(B)=B_1\amalg\cdots\amalg B_p,
-\]
+$$
 each mapped homeomorphically to $B$.
 
 For each $i$, let $\varepsilon_i=\pm1$ be the local orientation sign of $p|_{B_i}$. Since $M$ and $N$ are connected and a covering map is locally a homeomorphism, the local sign is locally constant on $M$ and therefore constant. Thus all $\varepsilon_i$ equal a common sign $\varepsilon$.
 
 By Exercise 8's local-degree formula,
-\[
+$$
 \deg p=\sum_{i=1}^p\varepsilon_i=p\varepsilon.
-\]
+$$
 Hence
-\[
+$$
 \boxed{\deg p=\pm p.}
-\]
+$$
 :::

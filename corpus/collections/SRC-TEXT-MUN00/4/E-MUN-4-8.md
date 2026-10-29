@@ -33,53 +33,53 @@ audit:
 :::
 
 ::: {.solution}
-(a) Let \(A\subset\RR\) be nonempty and bounded below. Then
-\[
+(a) Let $A\subset\RR$ be nonempty and bounded below. Then
+$$
 -A=\{-a:a\in A\}
-\]
+$$
 is nonempty and bounded above. Let
-\[
+$$
 s=\sup(-A).
-\]
-For every \(a\in A\), \(-a\le s\), so \(-s\le a\); hence \(-s\) is a lower bound of \(A\). If \(\ell\) is any lower bound of \(A\), then \(\ell\le a\) for all \(a\in A\), so \(-a\le-\ell\) for all \(a\in A\). Thus \(-\ell\) is an upper bound of \(-A\), whence \(s\le-\ell\), i.e.
-\[
+$$
+For every $a\in A$, $-a\le s$, so $-s\le a$; hence $-s$ is a lower bound of $A$. If $\ell$ is any lower bound of $A$, then $\ell\le a$ for all $a\in A$, so $-a\le-\ell$ for all $a\in A$. Thus $-\ell$ is an upper bound of $-A$, whence $s\le-\ell$, i.e.
+$$
 \ell\le-s.
-\]
-Therefore \(-s=\inf A\), proving the greatest lower bound property.
+$$
+Therefore $-s=\inf A$, proving the greatest lower bound property.
 
-(b) Every \(1/n\) is positive, so \(0\) is a lower bound. If \(c>0\), the Archimedean property gives \(n\in\ZZ_+\) with
-\[
+(b) Every $1/n$ is positive, so $0$ is a lower bound. If $c>0$, the Archimedean property gives $n\in\ZZ_+$ with
+$$
 n>1/c,
-\]
+$$
 hence
-\[
+$$
 0<1/n<c.
-\]
+$$
 So no positive number is a lower bound. Therefore
-\[
+$$
 \boxed{\inf\{1/n:n\in\ZZ_+\}=0.}
-\]
+$$
 
-(c) Let \(0<a<1\) and put
-\[
+(c) Let $0<a<1$ and put
+$$
 h=\frac{1-a}{a}>0,
 \qquad
 \frac1a=1+h.
-\]
+$$
 By induction,
-\[
+$$
 (1+h)^n\ge1+nh
-\]
-for every \(n\ge1\): the induction step follows from
-\[
+$$
+for every $n\ge1$: the induction step follows from
+$$
 (1+h)^{n+1}\ge(1+nh)(1+h)=1+(n+1)h+nh^2\ge1+(n+1)h.
-\]
+$$
 Hence
-\[
+$$
 a^n=\frac1{(1+h)^n}\le\frac1{1+nh}.
-\]
-Given \(\varepsilon>0\), the Archimedean property lets us choose \(n\) with \(1+nh>1/\varepsilon\), so \(a^n<\varepsilon\). Since all \(a^n>0\), it follows that
-\[
+$$
+Given $\varepsilon>0$, the Archimedean property lets us choose $n$ with $1+nh>1/\varepsilon$, so $a^n<\varepsilon$. Since all $a^n>0$, it follows that
+$$
 \boxed{\inf\{a^n:n\in\ZZ_+\}=0.}
-\]
+$$
 :::

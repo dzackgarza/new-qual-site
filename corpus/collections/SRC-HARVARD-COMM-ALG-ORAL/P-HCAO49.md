@@ -31,13 +31,13 @@ Show that the ring $\ZZ_p$ of $p$-adic integers is a discrete valuation ring.
 
 ::: {.solution}
 Every nonzero $x\in\ZZ_p$ has a unique $p$-adic valuation
-\[
+$$
 v_p(x)=n\in\ZZ_{\ge0}
-\]
+$$
 and can be written
-\[
+$$
 x=p^n u
-\]
+$$
 with $u\in\ZZ_p^\times$.
 
 ::: pf

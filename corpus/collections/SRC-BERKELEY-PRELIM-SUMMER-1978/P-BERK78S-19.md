@@ -28,9 +28,9 @@ audit:
 
 ::: {.problem}
 Let $f:\RR\to\RR$ be continuous. Suppose $\RR$ contains a countably infinite subset $S$ such that
-\[
+$$
 \int_p^q f(x)\,dx=0
-\]
+$$
 whenever $p,q\notin S$. Prove that $f$ is identically zero.
 :::
 

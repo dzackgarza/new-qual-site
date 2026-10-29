@@ -26,9 +26,9 @@ A=\begin{pmatrix}
 $$
 
 Prove that $A$ is diagonalizable and use this fact to compute
-\[
+$$
 A^{19}.
-\]
+$$
 :::
 
 ::: {.solution}

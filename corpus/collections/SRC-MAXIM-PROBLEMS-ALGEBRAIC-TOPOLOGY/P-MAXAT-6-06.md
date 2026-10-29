@@ -33,14 +33,14 @@ If a closed manifold $M$ is the boundary of a compact manifold, then $\chi(M)$ i
 ::: pf-proof
 Suppose $M=\partial W$ with $\dim W=m$, and work with coefficients in $\FF_2$, so orientability is irrelevant.
 Poincaré--Lefschetz duality gives
-\[
+$$
 H_i(W,M;\FF_2)\cong H^{m-i}(W;\FF_2),
-\]
+$$
 so $\chi(W,M)=(-1)^m\chi(W)$.
 The long exact sequence of the pair gives $\chi(W)=\chi(M)+\chi(W,M)$. Hence
-\[
+$$
 \chi(M)=\bigl(1-(-1)^m\bigr)\chi(W),
-\]
+$$
 and the coefficient $1-(-1)^m$ is $0$ or $2$.
 :::
 

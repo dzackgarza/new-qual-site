@@ -28,26 +28,26 @@ Figure 4 of the source (integration contour for exercise 22) shows a dogbone con
 ::: {.solution}
 
 Write
-\[
+$$
 I=\int_0^1x^{-2/3}(1-x)^{-1/3}\,dx.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 The integral is the beta integral
-\[
+$$
 I=B\left(\frac13,\frac23\right).
-\]
+$$
 
 
 ::: pf-proof
 
 By definition,
-\[
+$$
 B(a,b)=\int_0^1x^{a-1}(1-x)^{b-1}\,dx.
-\]
+$$
 Taking $a=1/3$ and $b=2/3$ gives exactly the integrand $x^{-2/3}(1-x)^{-1/3}$.
 
 :::
@@ -57,19 +57,19 @@ Taking $a=1/3$ and $b=2/3$ gives exactly the integrand $x^{-2/3}(1-x)^{-1/3}$.
 ::: {.pf-step #s1-2}
 
 One has
-\[
+$$
 B\left(\frac13,\frac23\right)
 =\Gamma\left(\frac13\right)
 \Gamma\left(\frac23\right).
-\]
+$$
 
 
 ::: pf-proof
 
 The beta--gamma identity gives
-\[
+$$
 B(a,b)=\frac{\Gamma(a)\Gamma(b)}{\Gamma(a+b)}.
-\]
+$$
 Here $a+b=1$ and $\Gamma(1)=1$.
 
 :::
@@ -79,19 +79,19 @@ Here $a+b=1$ and $\Gamma(1)=1$.
 ::: {.pf-step #s1-3}
 
 Euler's reflection formula gives
-\[
+$$
 \Gamma\left(\frac13\right)
 \Gamma\left(\frac23\right)
 =\frac{2\pi}{\sqrt3}.
-\]
+$$
 
 
 ::: pf-proof
 
 Reflection states
-\[
+$$
 \Gamma(z)\Gamma(1-z)=\frac\pi{\sin(\pi z)}.
-\]
+$$
 Set $z=1/3$ and use $\sin(\pi/3)=\sqrt3/2$.
 
 :::
@@ -106,13 +106,13 @@ The dogbone contour in the hint yields the same beta--reflection evaluation.
 ::: pf-proof
 
 Choose a branch of
-\[
+$$
 f(z)=z^{-2/3}(1-z)^{-1/3}
-\]
+$$
 on the plane cut along $[0,1]$. The two boundary values along the cut differ by the monodromy factors obtained by circling the branch points $0$ and $1$. As the small circles about the endpoints shrink, their contributions vanish because the local exponents $-2/3$ and $-1/3$ are greater than $-1$. Deforming the resulting dogbone against the outer contour gives precisely the standard keyhole-contour proof of
-\[
+$$
 B(a,1-a)=\frac\pi{\sin(\pi a)}
-\]
+$$
 with $a=1/3$, hence the value in step [](#s1-3){.pf-ref}.
 
 :::
@@ -122,9 +122,9 @@ with $a=1/3$, hence the value in step [](#s1-3){.pf-ref}.
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 \boxed{I=\frac{2\pi}{\sqrt3}}.
-\]
+$$
 
 
 ::: pf-proof

@@ -73,66 +73,66 @@ If $\ell = A B$ , this reduces to the equation $\ell ^ { 2 } + \ell - 1 = 0$ , w
 
 ::: {.solution}
 Let
-\[
+$$
 F(x)=\sum_{n=0}^\infty F_nx^n.
-\]
-By induction $0\le F_n\le 2^n$, so the series converges absolutely for \(|x|<1/2\). Using \(F_0=0\), \(F_1=1\), and \(F_n=F_{n-1}+F_{n-2}\) for \(n\ge2\),
-\[
+$$
+By induction $0\le F_n\le 2^n$, so the series converges absolutely for $|x|<1/2$. Using $F_0=0$, $F_1=1$, and $F_n=F_{n-1}+F_{n-2}$ for $n\ge2$,
+$$
 \begin{aligned}
 F(x)
 &=x+\sum_{n=2}^\infty(F_{n-1}+F_{n-2})x^n\\
 &=x+xF(x)+x^2F(x).
 \end{aligned}
-\]
+$$
 Therefore
-\[
+$$
 F(x)=\frac{x}{1-x-x^2}.
-\]
+$$
 
-Let \(\alpha,\beta\) be the roots of \(t^2-t-1\). Then
-\[
+Let $\alpha,\beta$ be the roots of $t^2-t-1$. Then
+$$
 \alpha+\beta=1,\qquad \alpha\beta=-1,
-\]
+$$
 so
-\[
+$$
 (1-\alpha x)(1-\beta x)
 =1-(\alpha+\beta)x+\alpha\beta x^2
 =1-x-x^2.
-\]
+$$
 
 Write
-\[
+$$
 \frac{x}{(1-\alpha x)(1-\beta x)}
 =\frac{A}{1-\alpha x}+\frac{B}{1-\beta x}.
-\]
+$$
 Comparing numerators gives
-\[
+$$
 A+B=0,
 \qquad
 -A\beta-B\alpha=1,
-\]
+$$
 so
-\[
+$$
 A=\frac1{\alpha-\beta},
 \qquad
 B=\frac1{\beta-\alpha}.
-\]
-Expanding both geometric series near \(0\),
-\[
+$$
+Expanding both geometric series near $0$,
+$$
 F(x)=\sum_{n=0}^\infty(A\alpha^n+B\beta^n)x^n,
-\]
+$$
 and coefficient comparison yields
-\[
+$$
 F_n=A\alpha^n+B\beta^n.
-\]
+$$
 Since
-\[
+$$
 \alpha=\frac{1+\sqrt5}{2},
 \qquad
 \beta=\frac{1-\sqrt5}{2},
-\]
+$$
 we obtain Binet's formula
-\[
+$$
 \boxed{F_n=\frac{\alpha^n-\beta^n}{\sqrt5}}.
-\]
+$$
 :::

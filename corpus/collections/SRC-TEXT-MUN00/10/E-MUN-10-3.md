@@ -31,20 +31,20 @@ Do they have the same order type?
 
 ::: {.solution}
 In dictionary order,
-\[
+$$
 \{1,2\}\times\ZZ_+
-\]
-has all pairs \((1,n)\) first, followed by all pairs \((2,n)\). In particular, the element \((2,1)\) has infinitely many predecessors, namely all \((1,n)\).
+$$
+has all pairs $(1,n)$ first, followed by all pairs $(2,n)$. In particular, the element $(2,1)$ has infinitely many predecessors, namely all $(1,n)$.
 
 On the other hand,
-\[
+$$
 \ZZ_+\times\{1,2\}
-\]
+$$
 has the order
-\[
+$$
 (1,1)<(1,2)<(2,1)<(2,2)<(3,1)<(3,2)<\cdots.
-\]
+$$
 Every element has only finitely many predecessors.
 
-The property of an element having infinitely many predecessors is preserved by order isomorphism. Hence these two well-ordered sets do not have the same order type. Their order types are, respectively, \(\omega+\omega\) and \(\omega\).
+The property of an element having infinitely many predecessors is preserved by order isomorphism. Hence these two well-ordered sets do not have the same order type. Their order types are, respectively, $\omega+\omega$ and $\omega$.
 :::

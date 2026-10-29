@@ -27,11 +27,11 @@ Define what it means for a measure $\mu$ to be absolutely continuous with respec
 
 ::: {.solution}
 One writes
-\[
+$$
 \mu\ll\nu
-\]
+$$
 and says that $\mu$ is absolutely continuous with respect to $\nu$ if every $\nu$-null measurable set is also $\mu$-null:
-\[
+$$
 \boxed{\nu(E)=0\Longrightarrow\mu(E)=0\qquad(E\in\tau(X)).}
-\]
+$$
 :::

@@ -42,24 +42,24 @@ $$
 
 ::: {.solution}
 Directly translating the logical connectives gives
-\[
+$$
 D=A\cap(B\cup C)
-\]
+$$
 and
-\[
+$$
 E=(A\cap B)\cup C.
-\]
-For \(F\), use
-\[
+$$
+For $F$, use
+$$
 (x\in B\Rightarrow x\in C)
 \iff (x\notin B\text{ or }x\in C).
-\]
-Thus, among points of \(A\), the only points excluded are those lying in \(B-C\). Therefore
-\[
+$$
+Thus, among points of $A$, the only points excluded are those lying in $B-C$. Therefore
+$$
 \boxed{F=A-(B-C).}
-\]
+$$
 Equivalently,
-\[
+$$
 F=(A-B)\cup(A\cap C).
-\]
+$$
 :::

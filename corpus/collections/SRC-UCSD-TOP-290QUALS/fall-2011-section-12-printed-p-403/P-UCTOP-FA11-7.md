@@ -34,13 +34,13 @@ Homology and cohomology of the suspension $\Sigma L(p)$:
 ::: pf-step
 The reduced homology of the suspension satisfies $\widetilde{H}_{k+1}(\Sigma X) \cong \widetilde{H}_k(X)$.
 Given $\widetilde{H}_*(L(p)) = (0, \ZZ_p, 0, \ZZ)$, the homology of $X = \Sigma L(p)$ is:
-\[
+$$
 H_k(X) = \begin{cases}
 \ZZ & k = 0, 4, \\
 \ZZ_p & k = 2, \\
 0 & k = 1, 3 \text{ or } k \ge 5.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 suspension isomorphism for reduced homology.
@@ -75,9 +75,9 @@ Cohomology of the product $\Sigma L(p) \times \Sigma L(q)$ via the Künneth Form
 
 ::: pf-step
 The Künneth formula for cohomology splits as:
-\[
+$$
 H^k(X \times Y) \cong \left( \bigoplus_{i+j=k} H^i(X) \otimes H^j(Y) \right) \oplus \left( \bigoplus_{i+j=k+1} \operatorname{Tor}(H^i(X), H^j(Y)) \right).
-\]
+$$
 
 ::: pf-proof
 Künneth Theorem for cohomology with principal ideal domain coefficients $\ZZ$.
@@ -111,9 +111,9 @@ direct calculation from the Künneth components.
 ::: pf-qed
 Conclusion:
 The integral cohomology groups $H^k(\Sigma L(p) \times \Sigma L(q))$ for $k = 0, 1, \dots, 8$ are:
-\[
+$$
 \ZZ, \quad 0, \quad 0, \quad \ZZ_p \oplus \ZZ_q, \quad \ZZ \oplus \ZZ, \quad \ZZ_{\gcd(p, q)}, \quad \ZZ_{\gcd(p, q)}, \quad \ZZ_p \oplus \ZZ_q, \quad \ZZ,
-\]
+$$
 and $0$ for all $k \ge 9$.
 
 Steps [](#suspension-homology-cohomology){.pf-ref} and [](#product-cohomology-kunneth){.pf-ref}.

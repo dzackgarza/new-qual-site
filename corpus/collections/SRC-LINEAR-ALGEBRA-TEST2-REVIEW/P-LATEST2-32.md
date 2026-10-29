@@ -18,14 +18,14 @@ audit:
 
 ::: {.problem}
 Find the dimension of the subspace spanned by
-\[
+$$
 \begin{pmatrix}1\\1\\0\\0\end{pmatrix},
 \begin{pmatrix}2\\2\\0\\0\end{pmatrix},
 \begin{pmatrix}0\\1\\0\\0\end{pmatrix},
 \begin{pmatrix}2\\0\\0\\3\end{pmatrix},
 \begin{pmatrix}1\\-2\\0\\8\end{pmatrix},
 \begin{pmatrix}0\\0\\0\\0\end{pmatrix}.
-\]
+$$
 
 (A) $2$  (B) $3$  (C) $4$  (D) $5$  (E) $6$
 :::

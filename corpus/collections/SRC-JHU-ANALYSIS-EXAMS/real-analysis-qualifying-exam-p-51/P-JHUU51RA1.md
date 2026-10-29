@@ -25,42 +25,42 @@ audit:
 
 ::: {.problem}
 Let $f:[0,2]\to\RR$ be $C^1$ and suppose
-\[
+$$
 f(0)=f'(0)=f(2)=f'(2)=0.
-\]
+$$
 Prove that for every $\varepsilon>0$ there exists $t_\varepsilon>0$ such that
-\[
+$$
 \left|\int_0^2 f(x)e^{itx}\,dx\right|\le\frac{\varepsilon}{t}
 \qquad(t\ge t_\varepsilon).
-\]
+$$
 :::
 
 ::: {.solution}
 For $t>0$, integration by parts and the endpoint conditions on $f$ give
-\[
+$$
 \begin{aligned}
 \int_0^2 f(x)e^{itx}\,dx
 &=\left[\frac{f(x)e^{itx}}{it}\right]_0^2
 -\frac1{it}\int_0^2 f'(x)e^{itx}\,dx\\
 &=-\frac1{it}\int_0^2 f'(x)e^{itx}\,dx.
 \end{aligned}
-\]
+$$
 Since $f'$ is continuous on $[0,2]$, it belongs to $L^1([0,2])$. By the Riemann--Lebesgue lemma,
-\[
+$$
 \int_0^2 f'(x)e^{itx}\,dx\longrightarrow0
 \qquad(t\to\infty).
-\]
+$$
 Therefore, for the given $\varepsilon>0$, there exists $t_\varepsilon>0$ such that
-\[
+$$
 \left|\int_0^2 f'(x)e^{itx}\,dx\right|\le\varepsilon
 \qquad(t\ge t_\varepsilon).
-\]
+$$
 Substituting into the integration-by-parts identity yields
-\[
+$$
 \left|\int_0^2 f(x)e^{itx}\,dx\right|
 \le\frac{\varepsilon}{t}
 \qquad(t\ge t_\varepsilon).
-\]
+$$
 :::
 
 ::: {.remark}

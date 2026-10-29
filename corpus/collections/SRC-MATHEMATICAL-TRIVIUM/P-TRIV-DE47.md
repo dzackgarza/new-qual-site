@@ -22,11 +22,11 @@ Consider a metal rod of length L. One end is kept at temperature 0, and the othe
 ::: {.solution}
 
 Let the rod occupy $0<x<L$, take
-\[
+$$
 T(0,t)=0,
 \qquad
 T(L,t)=T_0,
-\]
+$$
 and write the heat equation as $T_t=\kappa T_{xx}$.
 
 ::: pf
@@ -34,9 +34,9 @@ and write the heat equation as $T_t=\kappa T_{xx}$.
 ::: {.pf-step #s1-1}
 
 The stationary temperature profile is
-\[
+$$
 S(x)=\frac{T_0x}{L}.
-\]
+$$
 
 
 ::: pf-proof
@@ -50,17 +50,17 @@ A stationary profile satisfies $S''=0$, hence $S=A+Bx$. The endpoint values $S(0
 ::: pf-step
 
 Set
-\[
+$$
 v(x,t)=T(x,t)-S(x).
-\]
+$$
 Then
-\[
+$$
 v_t=\kappa v_{xx},
 \qquad
 v(0,t)=v(L,t)=0,
 \qquad
 v(x,0)=-\frac{T_0x}{L}.
-\]
+$$
 
 
 ::: pf-proof
@@ -74,11 +74,11 @@ Since $S''=0$, subtracting $S$ preserves the heat equation. The boundary values 
 ::: {.pf-step #s1-3}
 
 The separated Dirichlet expansion is
-\[
+$$
 v(x,t)=\sum_{n=1}^{\infty}b_n
 \sin\frac{n\pi x}{L}
 \exp\left(-\kappa\frac{n^2\pi^2}{L^2}t\right).
-\]
+$$
 
 
 ::: pf-proof
@@ -92,24 +92,24 @@ The Dirichlet eigenfunctions of $-d^2/dx^2$ on $(0,L)$ are $\sin(n\pi x/L)$ with
 ::: {.pf-step #s1-4}
 
 The Fourier coefficients are
-\[
+$$
 b_n=\frac{2T_0(-1)^n}{n\pi}.
-\]
+$$
 
 
 ::: pf-proof
 
 By sine-series orthogonality,
-\[
+$$
 b_n=\frac2L\int_0^L
 \left(-\frac{T_0x}{L}\right)
 \sin\frac{n\pi x}{L}\,dx.
-\]
+$$
 Integration by parts gives
-\[
+$$
 \int_0^Lx\sin\frac{n\pi x}{L}\,dx
 =-\frac{L^2(-1)^n}{n\pi},
-\]
+$$
 which yields the stated coefficient.
 
 :::
@@ -119,14 +119,14 @@ which yields the stated coefficient.
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 \boxed{
 T(x,t)=\frac{T_0x}{L}
 +\frac{2T_0}{\pi}
 \sum_{n=1}^{\infty}\frac{(-1)^n}{n}
 \sin\frac{n\pi x}{L}
 \exp\left(-\kappa\frac{n^2\pi^2}{L^2}t\right).}
-\]
+$$
 
 
 ::: pf-proof

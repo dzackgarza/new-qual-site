@@ -71,12 +71,12 @@ The contribution from the region where $\cos(x^2)\ge0$ tends to $0$, while the c
 
 ::: pf-proof
 On the first region, dominated convergence applies with dominating function $1$. On the second region, which has positive measure, Fatou's lemma gives
-\[
+$$
 \liminf_{n\to\infty}\int_{\{\cos(x^2)<0\}}e^{-n\cos(x^2)}\,dx
 \ge
 \int_{\{\cos(x^2)<0\}}\liminf_{n\to\infty}e^{-n\cos(x^2)}\,dx
 =\infty.
-\]
+$$
 :::
 
 :::
@@ -119,9 +119,9 @@ As $N \to \infty$, this tends to $\int_0^\infty e^x e^{-2x}\,dx = \int_0^\infty 
 
 ::: pf-proof
 Define
-\[
+$$
 h_N(x)=\mathbf1_{[0,N]}(x)e^{-2x}\sum_{k=0}^N\frac{x^k}{k!}.
-\]
+$$
 Then $h_N\uparrow e^{-x}$ pointwise on $[0,\infty)$, so the Monotone Convergence Theorem gives the claimed limit.
 :::
 

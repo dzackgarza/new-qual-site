@@ -49,9 +49,9 @@ For every maximal proper subgroup $M<G$, either $P\subseteq M$ or $[G:M]=p^b$ fo
 ::: pf-proof
 
 Suppose $P\not\subseteq M$. Since $P\trianglelefteq G$, the product $MP$ is a subgroup strictly containing $M$. Maximality forces $MP=G$. The product formula gives
-\[
+$$
 [G:M]=[MP:M]=[P:M\cap P].
-\]
+$$
 Lagrange's theorem gives $|M\cap P|=p^a$ with $0\leq a<c$, since $M\cap P$ is a proper subgroup of the group $P$ of order $p^c$. Hence $[G:M]=p^{c-a}$, with $1\leq c-a\leq c$.
 
 :::

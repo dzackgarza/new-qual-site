@@ -18,17 +18,17 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 \DD=\{z\in\CC:|z|<1\}
-\]
+$$
 be the open unit disk and let $\overline{\DD}$ be the closed unit disk. Let $\{p_n\}$ be distinct points in $\DD$, and let $r_n>0$ be such that the disks
-\[
+$$
 D_n=\{z:|z-p_n|\le r_n\}
-\]
+$$
 satisfy (i) $D_n\subset\DD$; (ii) $D_n\cap D_m=\varnothing$ if $n\ne m$; and (iii) $\sum_n r_n<\infty$. Prove that
-\[
+$$
 X=\overline{\DD}\setminus\bigcup_n D_n
-\]
+$$
 has positive area.
 
 Hint: for $-1<x<1$ consider $\#\{n:D_n\cap\{\operatorname{Re}z=x\}\ne\varnothing\}$.

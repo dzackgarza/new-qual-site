@@ -31,9 +31,9 @@ If false, give a counterexample.
 For (i), connectedness of $\CC_\infty\setminus G$ is equivalent to
 simple connectedness of the proper plane domain $G$. Choose a Riemann map
 $\phi:G\to\DD$. If $f$ had two distinct fixed points, then
-\[
+$$
 F=\phi\circ f\circ\phi^{-1}
-\]
+$$
 would be a nonidentity disk self-map with two fixed points in $\DD$.
 Conjugating one fixed point to $0$ and applying Schwarz's lemma shows that a
 disk self-map with two interior fixed points is the identity. Hence $f$ would
@@ -41,13 +41,13 @@ be the identity, a contradiction. Therefore a nonidentity self-map has at most
 one fixed point.
 
 For (ii), the statement is false. Take
-\[
+$$
 G=\{z:1/2<|z|<2\}
-\]
+$$
 and
-\[
+$$
 f(z)=\frac1z.
-\]
+$$
 Then $f$ maps $G$ biholomorphically to itself, is not the identity, and fixes
 both $1$ and $-1$. The complement of $G$ in the sphere has two components.
 :::

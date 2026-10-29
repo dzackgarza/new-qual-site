@@ -35,9 +35,9 @@ $f$ and $1/f$ would give both $|f|\le1$ and $|f|\ge1$ in $\DD$; hence
 $|f|\equiv1$, forcing $f$ to be constant, contrary to hypothesis.
 
 Now fix $w\in\DD$. On $|z|=1$,
-\[
+$$
 |w|<1=|f(z)|.
-\]
+$$
 Rouché's theorem shows that $f-w$ and $f$ have the same number of zeros in
 $\DD$. Since $f$ has at least one zero, so does $f-w$. Thus every
 $w\in\DD$ lies in $f(\DD)$.
@@ -46,12 +46,12 @@ For (b), if $f$ had no zero in $\DD$, then $1/f$ would be holomorphic
 there and satisfy $|1/f|\le1$ on the boundary. The maximum principle would
 give $|f|\ge1$ throughout $\DD$, contradicting the given point $z_0$.
 Hence $f$ has a zero. For any $|w|<1$ we have on the boundary
-\[
+$$
 |w|<1\le|f(z)|,
-\]
+$$
 so Rouché again implies that $f-w$ has a zero. Therefore
-\[
+$$
 \boxed{\DD\subset f(\DD)}
-\]
+$$
 in both cases.
 :::

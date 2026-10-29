@@ -20,19 +20,19 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 M &= \{(w, x, y, z) \in \ZZ^4 \suchthat w + x + y + z \in 2\ZZ\} \\
 N &= \theset{
 (w, x, y, z) \in \ZZ^4 \suchthat 4\divides (w - x),~ 4\divides (x - y),~ 4\divides ( y - z)
 }
-.\]
+.$$
 
 a.
 Show that $N$ is a $\ZZ\dash$submodule of $M$ .
 
 b.
 Find vectors $u_1 , u_2 , u_3 , u_4 \in \ZZ^4$ and integers $d_1 , d_2 , d_3 , d_4$ such that
-\[
+$$
 \{
 u_1 , u_2 , u_3 , u_4 
 \} 
@@ -42,7 +42,7 @@ u_1 , u_2 , u_3 , u_4
 d_1 u_1,~ d_2 u_2,~ d_3 u_3,~ d_4 u_4 
 \}
 && \text{is a free basis for }N
-\]
+$$
 
 c.
 Use the previous part to describe $M/N$ as a direct sum of cyclic $\ZZ\dash$modules.
@@ -62,15 +62,15 @@ The module $N$ is a submodule of $M$.
 ::: pf-proof
 
 The maps
-\[
+$$
 \varphi:\ZZ^4\to\ZZ/2\ZZ,\quad
 (w,x,y,z)\mapsto w+x+y+z\bmod 2
-\]
+$$
 and
-\[
+$$
 \psi:\ZZ^4\to(\ZZ/4\ZZ)^3,\quad
 (w,x,y,z)\mapsto(w-x,x-y,y-z)\bmod4
-\]
+$$
 are homomorphisms with kernels $M$ and $N$. Hence both are submodules of $\ZZ^4$. If $v\in N$, its coordinates have a common residue modulo $4$, so their sum is divisible by $4$, and therefore even. Thus $v\in M$.
 
 :::
@@ -80,12 +80,12 @@ are homomorphisms with kernels $M$ and $N$. Hence both are submodules of $\ZZ^4$
 ::: {.pf-step #s1-2}
 
 The vectors
-\[
+$$
 \boxed{\begin{aligned}
 u_1&=(1,1,1,1),&u_2&=(0,0,0,2),\\
 u_3&=(1,0,0,1),&u_4&=(0,1,0,1)
 \end{aligned}}
-\]
+$$
 form a free basis of $M$.
 
 
@@ -100,19 +100,19 @@ Each displayed vector has even coordinate sum and hence belongs to $M$. Let $B$ 
 ::: {.pf-step #s1-3}
 
 The vectors $u_1,2u_2,4u_3,4u_4$ form a free basis of $N$; hence the aligned multipliers are
-\[
+$$
 \boxed{(d_1,d_2,d_3,d_4)=(1,2,4,4)}.
-\]
+$$
 
 
 ::: pf-proof
 
 The congruences defining $N$ mean that each vector is $ct+4(ae_1+be_2+de_4)$ for integers $a,b,c,d$: indeed, a possible $4e_3$ term can be eliminated using $4e_3=4t-4e_1-4e_2-4e_4$. Thus $N$ has basis $t,4e_4,4e_1,4e_2$; these four vectors are independent, and generate all of $N$. Since
-\[
+$$
 u_1=t,\qquad 2u_2=4e_4,\qquad
 4u_3=4e_1+4e_4,\qquad
 4u_4=4e_2+4e_4,
-\]
+$$
 the indicated aligned vectors are obtained from that basis by invertible integral column operations. They therefore form a basis of $N$.
 
 :::
@@ -122,10 +122,10 @@ the indicated aligned vectors are obtained from that basis by invertible integra
 ::: {.pf-step #s1-4}
 
 The quotient is
-\[
+$$
 \boxed{M/N\cong\ZZ/2\ZZ\oplus
 \ZZ/4\ZZ\oplus\ZZ/4\ZZ}.
-\]
+$$
 
 
 ::: pf-proof

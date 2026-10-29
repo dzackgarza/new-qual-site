@@ -42,14 +42,14 @@ The pointwise limit is linear.
 ::: pf-proof
 
 For $x,y\in X$ and scalars $a,b$,
-\[
+$$
 \begin{aligned}
 T(ax+by)
 &=\lim_{n\to\infty}T_n(ax+by)\\
 &=\lim_{n\to\infty}\bigl(aT_nx+bT_ny\bigr)\\
 &=aTx+bTy.
 \end{aligned}
-\]
+$$
 Thus $T:X\to Y$ is linear.
 
 :::
@@ -63,14 +63,14 @@ The family $(T_n)$ is uniformly bounded in operator norm.
 ::: pf-proof
 
 For every fixed $x\in X$, the sequence $(T_nx)$ converges in $Y$, hence is bounded. Therefore
-\[
+$$
 \sup_n\|T_nx\|_Y<\infty
 \qquad\text{for every }x\in X.
-\]
+$$
 Since $X$ is Banach, the Uniform Boundedness Principle applies and gives a constant $C<\infty$ such that
-\[
+$$
 \sup_n\|T_n\|_{X\to Y}\le C.
-\]
+$$
 
 :::
 
@@ -83,16 +83,16 @@ The pointwise limit is bounded.
 ::: pf-proof
 
 For every $x\in X$,
-\[
+$$
 \|Tx\|_Y
 =\left\|\lim_{n\to\infty}T_nx\right\|_Y
 =\lim_{n\to\infty}\|T_nx\|_Y
 \le C\|x\|_X.
-\]
+$$
 Hence $T$ is bounded and
-\[
+$$
 \|T\|_{X\to Y}\le C.
-\]
+$$
 Thus $T$ is a bounded linear operator from $X$ to $Y$.
 
 :::

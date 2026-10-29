@@ -21,9 +21,9 @@ audit:
 
 ::: {.problem}
 Show that
-\[
+$$
 \int_{0}^{1} \log (\sin \pi x) d x=-\log 2
-.\]
+.$$
 
 > Hint: use the following contour.
 > ![](../../assets/Complex_Analysis/999_Quals/figures/image_2020-06-17-21-52-40.png)

@@ -33,9 +33,9 @@ Every map from $\RP^2 \lor \RP^2$ to itself has a fixed point.
 
 ::: {.solution}
 Let
-\[
+$$
 X=\RP^2\vee\RP^2
-\]
+$$
 and let $f:X\to X$ be continuous.
 
 ::: pf
@@ -43,39 +43,39 @@ and let $f:X\to X$ be continuous.
 ::: {.pf-step #s1}
 
 The rational homology of $X$ is
-\[
+$$
 H_i(X;\QQ)\cong
 \begin{cases}
 \QQ, & i=0,\\
 0, & i>0.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 The integral homology of the real projective plane is
-\[
+$$
 H_i(\RP^2;\ZZ)\cong
 \begin{cases}
 \ZZ, & i=0,\\
 \ZZ/2, & i=1,\\
 0, & i\ge2.
 \end{cases}
-\]
+$$
 Tensoring with $\QQ$ kills the $2$-torsion, so
-\[
+$$
 \widetilde H_i(\RP^2;\QQ)=0
-\]
+$$
 for every $i$.
 Reduced homology takes a wedge of based CW complexes to the direct sum in positive degrees, hence
-\[
+$$
 \widetilde H_i(X;\QQ)
 \cong
 \widetilde H_i(\RP^2;\QQ)
 \oplus
 \widetilde H_i(\RP^2;\QQ)
 =0.
-\]
+$$
 Since $X$ is connected, $H_0(X;\QQ)\cong\QQ$.
 
 :::
@@ -85,29 +85,29 @@ Since $X$ is connected, $H_0(X;\QQ)\cong\QQ$.
 ::: {.pf-step #s2}
 
 Every self-map $f:X\to X$ has Lefschetz number
-\[
+$$
 L(f)=1.
-\]
+$$
 
 ::: pf-proof
 
 By definition,
-\[
+$$
 L(f)=\sum_{i\ge0}(-1)^i
 \operatorname{tr}\left(
 f_*:H_i(X;\QQ)\longrightarrow H_i(X;\QQ)
 \right).
-\]
+$$
 By step [](#s1){.pf-ref}, all positive-degree rational homology groups vanish.
 On
-\[
+$$
 H_0(X;\QQ)\cong\QQ,
-\]
+$$
 the induced map is the identity because $X$ is connected.
 Therefore
-\[
+$$
 L(f)=\operatorname{tr}(\operatorname{id}_{\QQ})=1.
-\]
+$$
 
 :::
 
@@ -122,9 +122,9 @@ Every self-map of $\RP^2\vee\RP^2$ has a fixed point.
 The space $X$ is a finite CW complex, hence a compact polyhedron.
 By the Lefschetz fixed point theorem, a self-map of $X$ with nonzero Lefschetz number has a fixed point.
 By step [](#s2){.pf-ref},
-\[
+$$
 L(f)=1\ne0.
-\]
+$$
 Thus $f$ has a fixed point.
 The proposed statement is true.
 

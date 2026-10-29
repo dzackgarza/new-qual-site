@@ -16,9 +16,9 @@ review: draft
 
 ::: {.problem}
 Let $R$ be the region in the first quadrant bounded by the curves $x^2 + y^2 = 2x$ and $y = 0$. Let $C$ be the boundary of the region $R$, oriented counterclockwise. Evaluate the line integral
-\[
+$$
 \int_C x e^x \, dx + (y e^y + x^2)\, dy.
-\]
+$$
 :::
 
 ::: {.solution}

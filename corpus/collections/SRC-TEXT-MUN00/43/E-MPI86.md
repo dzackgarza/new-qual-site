@@ -33,26 +33,26 @@ Two metrics $d$ and $d'$ on a set $X$ are said to be metrically equivalent if th
 
 ::: {.solution}
 (a) Recall that the standard bounded metric is
-\[
+$$
 \bar d(x,y)=\min\{d(x,y),1\}.
-\]
+$$
 The identity
-\[
+$$
 i:(X,d)\to(X,\bar d)
-\]
-is uniformly continuous because \(\bar d\le d\): given \(\varepsilon>0\), take \(\delta=\varepsilon\).
+$$
+is uniformly continuous because $\bar d\le d$: given $\varepsilon>0$, take $\delta=\varepsilon$.
 
-For the inverse identity, given \(\varepsilon>0\), choose
-\[
+For the inverse identity, given $\varepsilon>0$, choose
+$$
 \delta=\tfrac12\min\{\varepsilon,1\}.
-\]
-If \(\bar d(x,y)<\delta<1\), then necessarily \(d(x,y)<1\), so \(\bar d(x,y)=d(x,y)<\delta\le\varepsilon\). Thus the inverse identity is uniformly continuous. Hence \(d\) and \(\bar d\) are metrically equivalent.
+$$
+If $\bar d(x,y)<\delta<1$, then necessarily $d(x,y)<1$, so $\bar d(x,y)=d(x,y)<\delta\le\varepsilon$. Thus the inverse identity is uniformly continuous. Hence $d$ and $\bar d$ are metrically equivalent.
 
-(b) Suppose \(d\) and \(d'\) are metrically equivalent. A uniformly continuous map sends Cauchy sequences to Cauchy sequences. Since both identity maps
-\[
+(b) Suppose $d$ and $d'$ are metrically equivalent. A uniformly continuous map sends Cauchy sequences to Cauchy sequences. Since both identity maps
+$$
 (X,d)\rightleftarrows(X,d')
-\]
-are uniformly continuous, a sequence is \(d\)-Cauchy if and only if it is \(d'\)-Cauchy.
+$$
+are uniformly continuous, a sequence is $d$-Cauchy if and only if it is $d'$-Cauchy.
 
-Assume \((X,d)\) is complete and let \((x_n)\) be \(d'\)-Cauchy. Then it is \(d\)-Cauchy, hence \(x_n\to x\) in \(d\) for some \(x\in X\). Continuity of the identity \((X,d)\to(X,d')\) gives \(x_n\to x\) in \(d'\). Thus \((X,d')\) is complete. The converse is symmetric.
+Assume $(X,d)$ is complete and let $(x_n)$ be $d'$-Cauchy. Then it is $d$-Cauchy, hence $x_n\to x$ in $d$ for some $x\in X$. Continuity of the identity $(X,d)\to(X,d')$ gives $x_n\to x$ in $d'$. Thus $(X,d')$ is complete. The converse is symmetric.
 :::

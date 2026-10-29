@@ -16,11 +16,11 @@ audit:
 
 ::: {.problem}
 Fix $x\in\RR$. Using mathematical induction, show that if $x\ne1$, then for every $n\ge1$,
-\[
+$$
 x+2x^2+3x^3+\cdots+nx^n
 =
 \frac{nx^{n+2}-(n+1)x^{n+1}+x}{(x-1)^2}.
-\]
+$$
 :::
 
 ::: {.solution}

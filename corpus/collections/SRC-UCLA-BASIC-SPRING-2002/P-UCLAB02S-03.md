@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Suppose $X$ is a compact metric space, where compactness is understood in the open-cover sense.
 Prove directly that every sequence
-\[
+$$
 (x_n)_{n\geq1},\qquad x_n\in X,
-\]
+$$
 has a convergent subsequence.
 
 Do not merely quote a theorem asserting the result.
@@ -29,9 +29,9 @@ Do not merely quote a theorem asserting the result.
 ::: {.solution}
 
 Let
-\[
+$$
 (x_n)_{n\ge1}
-\]
+$$
 be an arbitrary sequence in $X$.
 
 ::: pf
@@ -44,26 +44,26 @@ If some point $x\in X$ has the property that every neighborhood of $x$ contains 
 ::: pf-proof
 
 For each positive integer $k$, the ball
-\[
+$$
 B\left(x,\frac1k\right)
-\]
+$$
 contains infinitely many terms of the sequence.
 Choose indices inductively so that
-\[
+$$
 n_1<n_2<\cdots
-\]
+$$
 and
-\[
+$$
 x_{n_k}\in B\left(x,\frac1k\right).
-\]
+$$
 Then
-\[
+$$
 d(x_{n_k},x)<\frac1k,
-\]
+$$
 so
-\[
+$$
 x_{n_k}\to x.
-\]
+$$
 
 :::
 
@@ -87,18 +87,18 @@ Thus for each $x$, at least one neighborhood contains only finitely many terms.
 ::: {.pf-step #s1-3}
 
 The family
-\[
+$$
 \{U_x:x\in X\}
-\]
+$$
 is an open cover of $X$.
 
 
 ::: pf-proof
 
 By construction,
-\[
+$$
 x\in U_x
-\]
+$$
 for each $x\in X$.
 Thus every point is covered.
 
@@ -109,15 +109,15 @@ Thus every point is covered.
 ::: {.pf-step #s1-4}
 
 By compactness, there are finitely many points
-\[
+$$
 x^{(1)},\ldots,x^{(m)}\in X
-\]
+$$
 such that
-\[
+$$
 X
 =
 U_{x^{(1)}}\cup\cdots\cup U_{x^{(m)}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -136,9 +136,9 @@ The finite union in step [](#s1-4){.pf-ref} contains only finitely many terms of
 ::: pf-proof
 
 Each set
-\[
+$$
 U_{x^{(j)}}
-\]
+$$
 contains only finitely many terms $x_n$ by step [](#s1-2){.pf-ref}.
 The union of finitely many finite sets of indices is finite.
 Hence only finitely many sequence terms lie in the union.
@@ -155,22 +155,22 @@ Step [](#s1-5){.pf-ref} is impossible.
 ::: pf-proof
 
 Every term
-\[
+$$
 x_n
-\]
+$$
 belongs to $X$.
 By step [](#s1-4){.pf-ref},
-\[
+$$
 X
 =
 \bigcup_{j=1}^mU_{x^{(j)}}.
-\]
+$$
 Therefore every sequence term lies in the finite union.
 But step [](#s1-5){.pf-ref} says only finitely many terms lie there.
 This contradicts the existence of infinitely many indexed terms
-\[
+$$
 x_1,x_2,\ldots.
-\]
+$$
 
 :::
 

@@ -27,11 +27,11 @@ What other names are there for $T_2$--$T_4$?
 ::: {.solution}
 Using the standard conventions:
 
-- \(T_0\): for any distinct \(x,y\), at least one has an open neighborhood not containing the other.
-- \(T_1\): for any distinct \(x,y\), each has an open neighborhood not containing the other; equivalently, every singleton is closed.
-- \(T_2\): distinct points have disjoint open neighborhoods. This is the \dfn{Hausdorff} axiom.
-- \(T_3\): \(T_1\) and \dfn{regular}: if \(x\notin F\) with \(F\) closed, then \(x\) and \(F\) have disjoint open neighborhoods.
-- \(T_4\): \(T_1\) and \dfn{normal}: disjoint closed sets have disjoint open neighborhoods.
+- $T_0$: for any distinct $x,y$, at least one has an open neighborhood not containing the other.
+- $T_1$: for any distinct $x,y$, each has an open neighborhood not containing the other; equivalently, every singleton is closed.
+- $T_2$: distinct points have disjoint open neighborhoods. This is the \dfn{Hausdorff} axiom.
+- $T_3$: $T_1$ and \dfn{regular}: if $x\notin F$ with $F$ closed, then $x$ and $F$ have disjoint open neighborhoods.
+- $T_4$: $T_1$ and \dfn{normal}: disjoint closed sets have disjoint open neighborhoods.
 
-Thus \(T_2,T_3,T_4\) are commonly called Hausdorff, regular, and normal, respectively, with the understanding that the \(T_1\) condition is included in the latter two names under this convention.
+Thus $T_2,T_3,T_4$ are commonly called Hausdorff, regular, and normal, respectively, with the understanding that the $T_1$ condition is included in the latter two names under this convention.
 :::

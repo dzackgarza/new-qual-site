@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Let $(f_n)$ be holomorphic functions on $\DD$ satisfying
-\[
+$$
 \int_{\DD}|f_n(z)|\,d\lambda(z)\le1
-\]
+$$
 for every $n$.
 Show that some subsequence converges uniformly on every compact subset of $\DD$.
 :::
@@ -32,18 +32,18 @@ Show that some subsequence converges uniformly on every compact subset of $\DD$.
 ::: {.pf-step #s1-1}
 
 Fix $0<r<R<1$. For every $z$ with $|z|\leq r$, the disk
-\[
+$$
 D(z,R-r)
-\]
+$$
 is contained in $\DD$.
 
 
 ::: pf-proof
 
 If $|w-z|<R-r$, then
-\[
+$$
 |w|\leq|z|+|w-z|<r+(R-r)=R<1.
-\]
+$$
 
 :::
 
@@ -52,11 +52,11 @@ If $|w-z|<R-r$, then
 ::: {.pf-step #s1-2}
 
 Since $|f_n|$ is subharmonic, the sub-mean inequality gives
-\[
+$$
 |f_n(z)|
 \leq\frac1{\pi(R-r)^2}
 \int_{D(z,R-r)}|f_n(w)|\,d\lambda(w).
-\]
+$$
 
 
 ::: pf-proof
@@ -70,18 +70,18 @@ The modulus of a holomorphic function is subharmonic. Apply its mean-value inequ
 ::: {.pf-step #s1-3}
 
 Therefore, uniformly in $n$,
-\[
+$$
 \sup_{|z|\leq r}|f_n(z)|
 \leq\frac1{\pi(R-r)^2}.
-\]
+$$
 
 
 ::: pf-proof
 
 The integral over the smaller disk in step [](#s1-2){.pf-ref} is at most
-\[
+$$
 \int_{\DD}|f_n(w)|\,d\lambda(w)\leq1
-\]
+$$
 by hypothesis.
 
 :::
@@ -104,17 +104,17 @@ Every compact $K\subset\DD$ is contained in some closed disk $\{|z|\leq r\}$ wit
 ::: {.pf-step #s1-5}
 
 Fix $0<r<R<1$. Cauchy's estimate gives a constant $C_{r,R}$ independent of $n$ such that
-\[
+$$
 \sup_{|z|\leq r}|f_n'(z)|\leq C_{r,R}.
-\]
+$$
 
 
 ::: pf-proof
 
 Choose $r<R_1<R<1$. Step [](#s1-3){.pf-ref} gives a uniform bound $M$ for $|f_n|$ on $|z|\leq R_1$. For $|z|\leq r$, the circle of radius $R_1-r$ about $z$ lies in $|w|<R_1$. Cauchy's derivative estimate gives
-\[
+$$
 |f_n'(z)|\leq \frac{M}{R_1-r},
-\]
+$$
 which is independent of $n$.
 
 :::
@@ -129,9 +129,9 @@ On every closed disk $\{|z|\leq r\}$, the sequence $(f_n)$ is uniformly bounded 
 ::: pf-proof
 
 Uniform boundedness is step [](#s1-3){.pf-ref}. The derivative bound in step [](#s1-5){.pf-ref} and the line-segment integral formula give
-\[
+$$
 |f_n(z)-f_n(w)|\leq C_{r,R}|z-w|
-\]
+$$
 for points in a slightly smaller convex disk, yielding equicontinuity.
 
 :::
@@ -141,9 +141,9 @@ for points in a slightly smaller convex disk, yielding equicontinuity.
 ::: pf-step
 
 For each integer $k\geq2$, let
-\[
+$$
 K_k=\{z:|z|\leq1-1/k\}.
-\]
+$$
 By Arzela--Ascoli, every subsequence of $(f_n)$ has a further subsequence converging uniformly on $K_k$.
 
 

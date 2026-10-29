@@ -54,33 +54,33 @@ The splitting field $E$ of $x^4-2$ has degree eight over $\QQ$ and Galois group 
 ::: pf-proof
 
 Let $\alpha=2^{1/4}$. The roots of $x^4-2$ are
-\[
+$$
 \alpha,-\alpha,i\alpha,-i\alpha,
-\]
+$$
 so the splitting field is
-\[
+$$
 E=\QQ(\alpha,i).
-\]
+$$
 By Eisenstein at $2$, $x^4-2$ is irreducible, hence $[\QQ(\alpha):\QQ]=4$. Since $\QQ(\alpha)\subset\RR$, it does not contain $i$, so
-\[
+$$
 [E:\QQ]=8.
-\]
+$$
 Define automorphisms
-\[
+$$
 r(\alpha)=i\alpha,\qquad r(i)=i,
-\]
+$$
 and
-\[
+$$
 s(\alpha)=\alpha,\qquad s(i)=-i.
-\]
+$$
 Then $r$ has order $4$, $s$ has order $2$, and
-\[
+$$
 srs=r^{-1}.
-\]
+$$
 These generate $8$ distinct automorphisms, so
-\[
+$$
 \operatorname{Gal}(E/\QQ)\cong D_8,
-\]
+$$
 the dihedral group of order $8$.
 
 :::
@@ -95,9 +95,9 @@ The intermediate field $K=\QQ(\alpha)$ is not Galois over $\QQ$.
 ::: pf-proof
 
 Take
-\[
+$$
 K=\QQ(\alpha).
-\]
+$$
 This is an intermediate field of degree $4$, but it is not normal over $\QQ$: the irreducible polynomial $x^4-2$ has the root $\alpha\in K$ but the conjugate root $i\alpha\notin K$ because $K\subset\RR$. Hence $K/\QQ$ is not Galois.
 
 :::

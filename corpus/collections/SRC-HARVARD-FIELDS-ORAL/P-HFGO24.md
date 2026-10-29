@@ -44,22 +44,22 @@ The roots of $x^8-1$ are exactly $1,\zeta_8,\ldots,\zeta_8^7$, so adjoining $\ze
 ::: pf-step
 
 One has
-\[
+$$
 K=\QQ(i,\sqrt2)
 \quad\text{and}\quad
 [K:\QQ]=\varphi(8)=4.
-\]
+$$
 
 ::: pf-proof
 
 Since $\zeta_8^2=i$ and $\zeta_8+\zeta_8^{-1}=\sqrt2$, one has $\QQ(i,\sqrt2)\subseteq K$. Conversely,
-\[
+$$
 \zeta_8=\frac{1+i}{\sqrt2}\in\QQ(i,\sqrt2),
-\]
+$$
 so equality holds. The degree is also the degree of the cyclotomic polynomial
-\[
+$$
 \Phi_8(x)=x^4+1,
-\]
+$$
 namely $\varphi(8)=4$.
 
 :::
@@ -69,10 +69,10 @@ namely $\varphi(8)=4$.
 ::: pf-step
 
 Every $\QQ$-automorphism of $K$ is uniquely determined by
-\[
+$$
 \zeta_8\longmapsto \zeta_8^a,
 \qquad a\in(\ZZ/8\ZZ)^\times,
-\]
+$$
 and every such choice occurs.
 
 ::: pf-proof
@@ -86,12 +86,12 @@ The conjugates of the primitive eighth root $\zeta_8$ over $\QQ$ are exactly the
 ::: pf-step
 
 Hence
-\[
+$$
 \operatorname{Gal}(K/\QQ)
 \cong(\ZZ/8\ZZ)^\times
 =\{1,3,5,7\}
 \cong C_2\times C_2.
-\]
+$$
 
 ::: pf-proof
 

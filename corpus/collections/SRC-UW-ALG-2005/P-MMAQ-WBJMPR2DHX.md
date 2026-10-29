@@ -34,9 +34,9 @@ Let $\FF_2$ be the field with two elements.
 ::: pf-step
 
 The order of $\operatorname{GL}_3(\FF_2)$ is
-\[
+$$
 (2^3-1)(2^3-2)(2^3-2^2)=7\cdot6\cdot4=168.
-\]
+$$
 
 ::: pf-proof
 
@@ -53,15 +53,15 @@ The number $n_7$ of Sylow $7$-subgroups is $8$.
 ::: pf-proof
 
 Since
-\[
+$$
 168=2^3\cdot3\cdot7,
-\]
+$$
 the Sylow theorems give
-\[
+$$
 n_7\equiv1\pmod7,
 \qquad
 n_7\mid24.
-\]
+$$
 The only divisors of $24$ congruent to $1$ modulo $7$ are $1$ and $8$. If $n_7=1$, the unique Sylow $7$-subgroup would be normal. Because $\operatorname{GL}_3(\FF_2)$ is simple and has order greater than $7$, this is impossible. Hence $n_7=8$.
 
 :::
@@ -75,9 +75,9 @@ There are exactly $48$ elements of order $7$ in $\operatorname{GL}_3(\FF_2)$.
 ::: pf-proof
 
 Every Sylow $7$-subgroup has order $7$, hence is cyclic and has exactly $6$ nonidentity elements, all of order $7$. Distinct subgroups of order $7$ intersect only in the identity, since their intersection is a subgroup whose order divides $7$. Thus the $8$ Sylow $7$-subgroups contribute disjoint sets of $6$ elements of order $7$, giving
-\[
+$$
 8\cdot6=48.
-\]
+$$
 
 :::
 

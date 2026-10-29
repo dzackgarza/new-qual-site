@@ -29,18 +29,18 @@ audit:
 
 ::: {.solution}
 Assume such an ordering exists. For every nonzero $z\in\CC$, trichotomy gives either $z\succ0$ or $-z\succ0$. In either case, compatibility with multiplication implies
-\[
+$$
 z^2\succ0.
-\]
+$$
 Applying this to $z=1$ and $z=i$ gives
-\[
+$$
 1\succ0,
 \qquad
 i^2=-1\succ0.
-\]
+$$
 Adding $1$ to the inequality $-1\succ0$ yields
-\[
+$$
 0\succ1,
-\]
+$$
 contradicting $1\succ0$. Therefore no total ordering on $\CC$ can satisfy the ordered-field axioms (i)--(iii).
 :::

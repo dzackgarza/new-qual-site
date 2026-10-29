@@ -18,14 +18,14 @@ audit:
 ::: {.problem}
 Let $A$ be a Hermitian-symmetric $n\times n$ complex matrix.
 Show that if
-\[
+$$
 \langle Av,v\rangle\geq0
 \qquad\text{for every }v\in\CC^n,
-\]
+$$
 then there exists an $n\times n$ matrix $T$ such that
-\[
+$$
 A=T^*T.
-\]
+$$
 :::
 
 ::: {.solution}

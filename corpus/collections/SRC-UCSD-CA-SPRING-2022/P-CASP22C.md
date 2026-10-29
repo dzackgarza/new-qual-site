@@ -29,15 +29,15 @@ $|z|=R>2$. A holomorphic function on $G$ has a primitive exactly when its
 integral around this generator vanishes.
 
 Now
-\[
+$$
 f(z)=\frac{z^2+1}{z^2-1}
 =1+\frac1{z-1}-\frac1{z+1}.
-\]
+$$
 Hence, for $R>2$,
-\[
+$$
 \int_{|z|=R}f(z)\,dz
 =2\pi i\bigl(1-1\bigr)=0.
-\]
+$$
 Therefore every closed-curve integral of $f$ in $G$ vanishes, and $f$ has a
 holomorphic primitive on $G$.
 :::

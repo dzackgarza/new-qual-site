@@ -27,14 +27,14 @@ Give a precise definition of Lebesgue outer measure on the real line.
 
 ::: {.solution}
 For $E\subseteq\RR$, the **Lebesgue outer measure** of $E$ is
-\[
+$$
 m^*(E)
 :=\inf\left\{
 \sum_{k=1}^\infty |I_k|:
 E\subseteq\bigcup_{k=1}^\infty I_k,
 \ I_k\text{ open intervals}
 \right\},
-\]
+$$
 where $|I_k|$ denotes the length of the interval $I_k$.
 
 The infimum is taken over all countable open-interval covers of $E$; it may be $+\infty$.

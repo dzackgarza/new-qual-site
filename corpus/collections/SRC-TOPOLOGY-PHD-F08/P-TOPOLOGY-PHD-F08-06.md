@@ -50,20 +50,20 @@ Justify your answers.
 
 ::: {.pf-step #identification-definition}
 A surjection $q:X\to Y$ is an identification (quotient) map if, for every $U\subseteq Y$,
-\[
+$$
 U\text{ is open in }Y
 \quad\Longleftrightarrow\quad
 q^{-1}(U)\text{ is open in }X.
-\]
+$$
 
 ::: pf-proof
 This is the definition.
 Equivalently, by taking complements, a surjective map $q$ is an identification map exactly when
-\[
+$$
 F\text{ is closed in }Y
 \quad\Longleftrightarrow\quad
 q^{-1}(F)\text{ is closed in }X
-\]
+$$
 for every $F\subseteq Y$.
 :::
 
@@ -77,28 +77,28 @@ By step [](#identification-definition){.pf-ref} it suffices to characterize clos
 
 Let $F\subseteq Y$.
 If $F$ is closed in $Y$, continuity of $\pi$ gives
-\[
+$$
 \pi^{-1}(F)\text{ closed in }X.
-\]
+$$
 
 Conversely, suppose $\pi^{-1}(F)$ is closed in $X$.
 Because $\pi$ is a closed map,
-\[
+$$
 \pi(\pi^{-1}(F))
-\]
+$$
 is closed in $Y$.
 Surjectivity gives
-\[
+$$
 \pi(\pi^{-1}(F))=F.
-\]
+$$
 Therefore $F$ is closed in $Y$.
 
 Hence
-\[
+$$
 F\text{ closed in }Y
 \quad\Longleftrightarrow\quad
 \pi^{-1}(F)\text{ closed in }X,
-\]
+$$
 so $\pi$ is an identification map.
 :::
 
@@ -110,28 +110,28 @@ Every surjective, continuous, open map is an identification map.
 ::: pf-proof
 Let $U\subseteq Y$.
 If $U$ is open in $Y$, continuity gives
-\[
+$$
 \pi^{-1}(U)\text{ open in }X.
-\]
+$$
 
 Conversely, suppose $\pi^{-1}(U)$ is open in $X$.
 Because $\pi$ is an open map,
-\[
+$$
 \pi(\pi^{-1}(U))
-\]
+$$
 is open in $Y$.
 Surjectivity gives
-\[
+$$
 \pi(\pi^{-1}(U))=U.
-\]
+$$
 Hence $U$ is open in $Y$.
 
 Thus
-\[
+$$
 U\text{ open in }Y
 \quad\Longleftrightarrow\quad
 \pi^{-1}(U)\text{ open in }X,
-\]
+$$
 which is the criterion in step [](#identification-definition){.pf-ref}.
 :::
 

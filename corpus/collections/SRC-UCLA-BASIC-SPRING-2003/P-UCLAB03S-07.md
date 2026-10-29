@@ -18,13 +18,13 @@ audit:
 ::: {.problem}
 Let $V$ be a finite-dimensional real vector space.
 For a subspace $W\subset V$, define its annihilator by
-\[
+$$
 W^0=\{f:V\to\RR\text{ linear}: f|_W=0\}.
-\]
+$$
 If $W_1,W_2\subset V$ are subspaces, prove that
-\[
+$$
 W_1^0\cap W_2^0=(W_1+W_2)^0.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -34,30 +34,30 @@ W_1^0\cap W_2^0=(W_1+W_2)^0.
 ::: {.pf-step #s1-1}
 
 One has
-\[
+$$
 W_1^0\cap W_2^0\subseteq (W_1+W_2)^0.
-\]
+$$
 
 
 ::: pf-proof
 
-Let \(f\in W_1^0\cap W_2^0\). Then
-\[
+Let $f\in W_1^0\cap W_2^0$. Then
+$$
 f(w_1)=0
 \qquad\text{and}\qquad
 f(w_2)=0
-\]
-for every \(w_1\in W_1\) and \(w_2\in W_2\). Every vector in \(W_1+W_2\) has the form \(w_1+w_2\), and linearity gives
-\[
+$$
+for every $w_1\in W_1$ and $w_2\in W_2$. Every vector in $W_1+W_2$ has the form $w_1+w_2$, and linearity gives
+$$
 f(w_1+w_2)
 =
 f(w_1)+f(w_2)
 =0.
-\]
-Thus \(f\) vanishes on \(W_1+W_2\), so
-\[
+$$
+Thus $f$ vanishes on $W_1+W_2$, so
+$$
 f\in(W_1+W_2)^0.
-\]
+$$
 
 :::
 
@@ -66,26 +66,26 @@ f\in(W_1+W_2)^0.
 ::: {.pf-step #s1-2}
 
 One has
-\[
+$$
 (W_1+W_2)^0\subseteq W_1^0\cap W_2^0.
-\]
+$$
 
 
 ::: pf-proof
 
-Let \(f\in(W_1+W_2)^0\). Since
-\[
+Let $f\in(W_1+W_2)^0$. Since
+$$
 W_1\subseteq W_1+W_2
 \qquad\text{and}\qquad
 W_2\subseteq W_1+W_2,
-\]
-the functional \(f\) vanishes on both \(W_1\) and \(W_2\). Hence
-\[
+$$
+the functional $f$ vanishes on both $W_1$ and $W_2$. Hence
+$$
 f\in W_1^0
 \qquad\text{and}\qquad
 f\in W_2^0,
-\]
-so \(f\in W_1^0\cap W_2^0\).
+$$
+so $f\in W_1^0\cap W_2^0$.
 
 :::
 
@@ -94,9 +94,9 @@ so \(f\in W_1^0\cap W_2^0\).
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{W_1^0\cap W_2^0=(W_1+W_2)^0.}
-\]
+$$
 
 
 ::: pf-proof

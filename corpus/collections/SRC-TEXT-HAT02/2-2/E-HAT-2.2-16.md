@@ -33,53 +33,53 @@ Compute the ranks of the simplicial (or cellular) chain groups $\Delta_i(\Delta^
 
 ::: {.solution}
 For the standard simplex $\Delta^n$, the group of $i$-chains is free on the $(i+1)$-element subsets of its $n+1$ vertices. Hence
-\[
+$$
 \operatorname{rank} C_i(\Delta^n)=\binom{n+1}{i+1}.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 In the reduced simplicial chain complex of $\Delta^n$,
-\[
+$$
 \operatorname{rank} Z_i
 =
 \operatorname{rank} B_i
 =
 \binom{n}{i+1}
 \qquad (0\le i\le n).
-\]
+$$
 Here $\binom{n}{n+1}=0$.
 
 ::: pf-proof
 
 The simplex is contractible, so its reduced chain complex is exact. Thus
-\[
+$$
 Z_i=B_i
-\]
+$$
 for all $i\ge0$. Since
-\[
+$$
 0\to Z_i\to C_i\xrightarrow{\partial_i}B_{i-1}\to0
-\]
+$$
 is exact, ranks satisfy
-\[
+$$
 \operatorname{rank} Z_i
 =
 \binom{n+1}{i+1}-\operatorname{rank} B_{i-1}.
-\]
+$$
 Starting with
-\[
+$$
 \operatorname{rank}B_{-1}=1
-\]
+$$
 in the augmented complex and using Pascal's identity gives inductively
-\[
+$$
 \operatorname{rank}Z_i
 =
 \binom{n+1}{i+1}-\binom{n}{i}
 =
 \binom{n}{i+1}.
-\]
+$$
 Exactness gives the same formula for $B_i$.
 
 :::
@@ -89,11 +89,11 @@ Exactness gives the same formula for $B_i$.
 ::: pf-step
 
 In the ordinary chain complex,
-\[
+$$
 \operatorname{rank}Z_0=n+1,
 \qquad
 \operatorname{rank}B_0=n,
-\]
+$$
 and for $i\ge1$ the formulas of step [](#s1){.pf-ref} remain valid.
 
 ::: pf-proof
@@ -101,9 +101,9 @@ and for $i\ge1$ the formulas of step [](#s1){.pf-ref} remain valid.
 Ordinarily $\partial_0=0$, so $Z_0=C_0$ has rank $n+1$. The augmentation kernel has rank $n$, and because $\Delta^n$ is connected this kernel is $B_0$. For $i\ge1$, reduced and ordinary chains agree.
 
 Now let
-\[
+$$
 K=(\Delta^n)^k
-\]
+$$
 be the $k$-skeleton.
 
 :::
@@ -113,18 +113,18 @@ be the $k$-skeleton.
 ::: pf-step
 
 For $i<k$,
-\[
+$$
 \widetilde H_i(K)=0.
-\]
+$$
 
 ::: pf-proof
 
 In degrees at most $k$, the chain groups and boundary maps of $K$ agree with those of the full simplex. If $i<k$, then both $C_i$ and $C_{i+1}$ are present, so
-\[
+$$
 Z_i(K)=Z_i(\Delta^n),
 \qquad
 B_i(K)=B_i(\Delta^n).
-\]
+$$
 Since the full simplex has zero reduced homology, the quotient $Z_i/B_i$ is zero.
 
 :::
@@ -134,33 +134,33 @@ Since the full simplex has zero reduced homology, the quotient $Z_i/B_i$ is zero
 ::: pf-step
 
 In degree $k$,
-\[
+$$
 \widetilde H_k(K)\cong\ZZ^{\binom{n}{k+1}}.
-\]
+$$
 
 ::: pf-proof
 
 There are no $(k+1)$-chains in the $k$-skeleton, so
-\[
+$$
 B_k(K)=0.
-\]
+$$
 On the other hand the boundary map out of $C_k$ is unchanged, hence
-\[
+$$
 Z_k(K)=Z_k(\Delta^n).
-\]
+$$
 By step [](#s1){.pf-ref} this is free of rank
-\[
+$$
 \binom{n}{k+1}.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{
 \widetilde H_i((\Delta^n)^k)=
 \begin{cases}
 0,&i<k,\\
 \ZZ^{\binom{n}{k+1}},&i=k.
 \end{cases}}
-\]
+$$
 
 :::
 

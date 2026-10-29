@@ -31,9 +31,9 @@ Measure arrival times $X,Y$ in minutes after 2:00, and assume they are independe
 ::: {.pf-step #s1-1}
 
 The two people meet exactly when
-\[
+$$
 |X-Y|\leq10.
-\]
+$$
 
 
 ::: pf-proof
@@ -47,9 +47,9 @@ The earlier arrival waits for ten minutes. Thus a meeting occurs precisely when 
 ::: {.pf-step #s1-2}
 
 The sample space is the square
-\[
+$$
 [0,60]^2
-\]
+$$
 of area $3600$.
 
 
@@ -64,11 +64,11 @@ Independence and uniformity make $(X,Y)$ uniformly distributed on this square, s
 ::: {.pf-step #s1-3}
 
 Failure occurs in the two triangles
-\[
+$$
 Y>X+10
 \qquad\text{or}\qquad
 X>Y+10.
-\]
+$$
 Each triangle has legs of length $50$ and area $1250$.
 
 
@@ -83,9 +83,9 @@ By step [](#s1-1){.pf-ref}, failure is $|X-Y|>10$. The two components lie above 
 ::: {.pf-step #s1-4}
 
 Therefore
-\[
+$$
 \boxed{P(\text{fail})=\frac{2\cdot1250}{3600}=\frac{25}{36}}.
-\]
+$$
 
 
 ::: pf-proof

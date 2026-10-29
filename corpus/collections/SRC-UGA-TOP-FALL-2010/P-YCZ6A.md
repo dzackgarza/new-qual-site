@@ -42,7 +42,7 @@ Then $S^2\times S^2$ has one $0$-cell, two $2$-cells, and one $4$-cell, and no c
 Write the cells of either copy of $S^2$ as $e^0$ and $e^2$.
 The product CW structure has one cell $e^i\times e^j$ of dimension $i+j$ for each pair of cells from the two factors.
 Thus its cells are
-\[
+$$
 e^0\times e^0,
 \qquad
 e^2\times e^0,
@@ -50,7 +50,7 @@ e^2\times e^0,
 e^0\times e^2,
 \qquad
 e^2\times e^2,
-\]
+$$
 of dimensions $0,2,2,4$, respectively.
 :::
 
@@ -58,18 +58,18 @@ of dimensions $0,2,2,4$, respectively.
 
 ::: {.pf-step #chain-complex}
 The cellular chain complex of $S^2\times S^2$ is
-\[
+$$
 0\longrightarrow \ZZ
 \xrightarrow{0}0
 \xrightarrow{0}\ZZ^2
 \xrightarrow{0}0
 \xrightarrow{0}\ZZ
 \longrightarrow0.
-\]
+$$
 
 ::: pf-proof
 By step [](#cw-structure){.pf-ref},
-\[
+$$
 C_k(S^2\times S^2;\ZZ)
 \cong
 \begin{cases}
@@ -77,7 +77,7 @@ C_k(S^2\times S^2;\ZZ)
 \ZZ^2,&k=2,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 Every cellular differential decreases degree by one.
 Since $C_1=C_3=0$, the only differentials leaving nonzero chain groups have zero target, so all cellular differentials vanish.
 :::
@@ -86,7 +86,7 @@ Since $C_1=C_3=0$, the only differentials leaving nonzero chain groups have zero
 
 ::: pf-step
 Therefore
-\[
+$$
 H_k(S^2\times S^2;\ZZ)
 \cong
 \begin{cases}
@@ -94,7 +94,7 @@ H_k(S^2\times S^2;\ZZ)
 \ZZ^2,&k=2,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 Cellular homology is the homology of the complex in step [](#chain-complex){.pf-ref}. Because every differential there is zero, each homology group is the corresponding cellular chain group.

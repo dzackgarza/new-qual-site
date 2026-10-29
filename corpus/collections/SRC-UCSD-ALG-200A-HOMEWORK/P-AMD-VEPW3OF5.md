@@ -44,9 +44,9 @@ How many distinct bracelets are there?
 ::: {.solution}
 Let $\mathcal C$ be the set of all colorings of the $r$ bead positions.
 Then
-\[
+$$
 |\mathcal C|=n^r.
-\]
+$$
 Let $D_r$ denote the dihedral group of order $2r$ acting on the bead positions, and hence on $\mathcal C$.
 The desired bracelets are exactly the $D_r$-orbits.
 
@@ -55,23 +55,23 @@ The desired bracelets are exactly the $D_r$-orbits.
 ::: {.pf-step #s1}
 
 A rotation through $k$ bead positions fixes exactly
-\[
+$$
 n^{\gcd(r,k)}
-\]
+$$
 colorings.
 
 ::: pf-proof
 
 The permutation of the $r$ bead positions induced by rotation through $k$ places has exactly
-\[
+$$
 \gcd(r,k)
-\]
+$$
 cycles.
 A coloring is fixed precisely when it is constant on each cycle.
 There are $n$ independent choices of color for each cycle, hence
-\[
+$$
 |\operatorname{Fix}(\rho^k)|=n^{\gcd(r,k)}.
-\]
+$$
 
 :::
 
@@ -80,33 +80,33 @@ There are $n$ independent choices of color for each cycle, hence
 ::: {.pf-step #s2}
 
 The total fixed-coloring contribution from all rotations is
-\[
+$$
 \sum_{d\mid r}\varphi(d)n^{r/d}.
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s1){.pf-ref}, the rotation contribution is
-\[
+$$
 \sum_{k=0}^{r-1}n^{\gcd(r,k)}.
-\]
+$$
 For a divisor $g\mid r$, the number of integers $k\pmod r$ satisfying
-\[
+$$
 \gcd(r,k)=g
-\]
+$$
 is
-\[
+$$
 \varphi(r/g).
-\]
+$$
 Therefore
-\[
+$$
 \sum_{k=0}^{r-1}n^{\gcd(r,k)}
 =\sum_{g\mid r}\varphi(r/g)n^g.
-\]
+$$
 Reindexing by $d=r/g$ gives
-\[
+$$
 \sum_{d\mid r}\varphi(d)n^{r/d}.
-\]
+$$
 
 :::
 
@@ -115,28 +115,28 @@ Reindexing by $d=r/g$ gives
 ::: {.pf-step #s3}
 
 If $r$ is odd, every reflection fixes exactly
-\[
+$$
 n^{(r+1)/2}
-\]
+$$
 colorings.
 
 ::: pf-proof
 
 For odd $r$, the axis of a reflection passes through one bead and the midpoint of the opposite edge.
 Thus the induced permutation of bead positions has one fixed bead and
-\[
+$$
 \frac{r-1}{2}
-\]
+$$
 transposed pairs.
 Hence it has
-\[
+$$
 1+\frac{r-1}{2}=\frac{r+1}{2}
-\]
+$$
 cycles.
 A fixed coloring is constant on each cycle, giving
-\[
+$$
 n^{(r+1)/2}
-\]
+$$
 fixed colorings.
 There are $r$ reflections of this type.
 
@@ -147,13 +147,13 @@ There are $r$ reflections of this type.
 ::: {.pf-step #s4}
 
 If $r$ is even, half the reflections fix
-\[
+$$
 n^{r/2+1}
-\]
+$$
 colorings and half fix
-\[
+$$
 n^{r/2}
-\]
+$$
 colorings.
 
 ::: pf-proof
@@ -162,24 +162,24 @@ For even $r$, there are two reflection types.
 
 A reflection whose axis passes through two opposite beads fixes those two bead positions and pairs the other $r-2$ positions.
 It therefore has
-\[
+$$
 2+\frac{r-2}{2}=\frac r2+1
-\]
+$$
 cycles and fixes
-\[
+$$
 n^{r/2+1}
-\]
+$$
 colorings.
 
 A reflection whose axis passes through the midpoints of two opposite edges has no fixed bead positions and pairs all $r$ positions.
 It therefore has
-\[
+$$
 \frac r2
-\]
+$$
 cycles and fixes
-\[
+$$
 n^{r/2}
-\]
+$$
 colorings.
 
 There are $r/2$ reflections of each type.
@@ -191,7 +191,7 @@ There are $r/2$ reflections of each type.
 ::: pf-step
 
 If $r$ is odd, the number of distinct bracelets is
-\[
+$$
 \boxed{
 \frac1{2r}
 \left(
@@ -199,7 +199,7 @@ If $r$ is odd, the number of distinct bracelets is
 +r n^{(r+1)/2}
 \right)
 }.
-\]
+$$
 
 ::: pf-proof
 
@@ -213,7 +213,7 @@ Combine the rotation contribution from step [](#s2){.pf-ref} with the $r$ equal 
 ::: pf-step
 
 If $r$ is even, the number of distinct bracelets is
-\[
+$$
 \boxed{
 \frac1{2r}
 \left(
@@ -222,7 +222,7 @@ If $r$ is even, the number of distinct bracelets is
 +\frac r2 n^{r/2}
 \right)
 }.
-\]
+$$
 
 ::: pf-proof
 

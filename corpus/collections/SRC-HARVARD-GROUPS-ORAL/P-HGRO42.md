@@ -37,9 +37,9 @@ number of colorings fixed by the twelve symmetries.
 ::: pf-step
 
 The six rotations fix respectively
-\[
+$$
 64,\ 2,\ 4,\ 8,\ 4,\ 2
-\]
+$$
 colorings.
 
 ::: pf-proof
@@ -47,9 +47,9 @@ colorings.
 A rotation through $k$ bead positions has $\gcd(6,k)$ cycles on the six
 positions, and a coloring fixed by that rotation is constant on each cycle.
 Hence it fixes
-\[
+$$
 2^{\gcd(6,k)}
-\]
+$$
 colorings. For $k=0,1,2,3,4,5$ this gives the displayed numbers.
 
 :::
@@ -77,9 +77,9 @@ transposed pairs, hence three orbits and $2^3=8$ fixed colorings.
 ::: pf-step
 
 Burnside's lemma gives
-\[
+$$
 \frac{64+2+4+8+4+2+3\cdot16+3\cdot8}{12}=13.
-\]
+$$
 
 ::: pf-proof
 

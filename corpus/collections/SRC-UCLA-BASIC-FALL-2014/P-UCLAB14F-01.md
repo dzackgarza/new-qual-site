@@ -18,21 +18,21 @@ audit:
 
 ::: {.problem}
 Problem 1. Show that the function
-\[
+$$
 H(x,y)=x^2+y^2+|x-y|^{-1}
-\]
+$$
 achieves its global minimum somewhere on the set
-\[
+$$
 \{(x,y)\in\RR^2:x\neq y\}.
-\]
+$$
 :::
 
 ::: {.solution}
 
 Let
-\[
+$$
 D=\{(x,y)\in\RR^2:x\ne y\}.
-\]
+$$
 The function $H$ is continuous on $D$.
 
 ::: pf
@@ -40,22 +40,22 @@ The function $H$ is continuous on $D$.
 ::: {.pf-step #s1-1}
 
 The value
-\[
+$$
 H(0,1)=2.
-\]
+$$
 
 
 ::: pf-proof
 
 Direct substitution gives
-\[
+$$
 H(0,1)
 =
 0^2+1^2+|0-1|^{-1}
 =
 1+1
 =2.
-\]
+$$
 
 :::
 
@@ -64,18 +64,18 @@ H(0,1)
 ::: {.pf-step #s1-2}
 
 Define
-\[
+$$
 K=\{(x,y)\in D:H(x,y)\le2\}.
-\]
+$$
 Then $K$ is nonempty.
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref},
-\[
+$$
 (0,1)\in K.
-\]
+$$
 
 :::
 
@@ -84,20 +84,20 @@ By step [](#s1-1){.pf-ref},
 ::: {.pf-step #s1-3}
 
 Every $(x,y)\in K$ satisfies
-\[
+$$
 x^2+y^2\le2.
-\]
+$$
 
 
 ::: pf-proof
 
 All terms in $H$ are nonnegative, so
-\[
+$$
 x^2+y^2
 \le
 H(x,y)
 \le2.
-\]
+$$
 
 :::
 
@@ -106,24 +106,24 @@ H(x,y)
 ::: {.pf-step #s1-4}
 
 Every $(x,y)\in K$ satisfies
-\[
+$$
 |x-y|\ge\frac12.
-\]
+$$
 
 
 ::: pf-proof
 
 Again,
-\[
+$$
 |x-y|^{-1}
 \le
 H(x,y)
 \le2.
-\]
+$$
 Since $|x-y|>0$ on $D$, taking reciprocals gives
-\[
+$$
 |x-y|\ge\frac12.
-\]
+$$
 
 :::
 
@@ -139,13 +139,13 @@ The set $K$ is compact in $\RR^2$.
 Step [](#s1-3){.pf-ref} shows that $K$ is bounded.
 
 By step [](#s1-4){.pf-ref},
-\[
+$$
 K
 \subseteq
 \left\{(x,y):|x-y|\ge\frac12\right\}.
-\]
+$$
 On this closed set, the formula defining $H$ is continuous. Therefore
-\[
+$$
 K
 =
 \left\{
@@ -153,7 +153,7 @@ K
 |x-y|\ge\frac12,
 H(x,y)\le2
 \right\}
-\]
+$$
 is closed in $\RR^2$.
 Thus $K$ is closed and bounded, hence compact by Heine--Borel.
 
@@ -164,13 +164,13 @@ Thus $K$ is closed and bounded, hence compact by Heine--Borel.
 ::: {.pf-step #s1-6}
 
 The restriction
-\[
+$$
 H|_K
-\]
+$$
 attains a minimum at some
-\[
+$$
 (x_0,y_0)\in K.
-\]
+$$
 
 
 ::: pf-proof
@@ -190,20 +190,20 @@ The point $(x_0,y_0)$ from step [](#s1-6){.pf-ref} is a global minimizer of $H$ 
 ::: pf-proof
 
 Because $(0,1)\in K$,
-\[
+$$
 H(x_0,y_0)
 \le
 H(0,1)
 =2.
-\]
+$$
 If
-\[
+$$
 (x,y)\in D\setminus K,
-\]
+$$
 then by definition of $K$,
-\[
+$$
 H(x,y)>2.
-\]
+$$
 Thus no point outside $K$ has smaller value than $(x_0,y_0)$, while step [](#s1-6){.pf-ref} gives minimality on $K$.
 Hence $(x_0,y_0)$ is a global minimizer on $D$.
 

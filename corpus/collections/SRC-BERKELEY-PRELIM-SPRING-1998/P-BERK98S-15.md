@@ -20,13 +20,13 @@ audit:
 
 ::: {.problem}
 For continuous real-valued functions on $[-1,1]$, define
-\[
+$$
 \langle f,g\rangle=\int_{-1}^1f(x)g(x)\,dx.
-\]
+$$
 Find the polynomial
-\[
+$$
 p(x)=a+bx^2-x^4
-\]
+$$
 that is orthogonal to every polynomial of lower degree.
 :::
 

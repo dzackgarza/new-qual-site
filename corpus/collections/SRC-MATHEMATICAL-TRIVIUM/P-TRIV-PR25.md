@@ -45,10 +45,10 @@ The uniform distribution on the cube $V=[-1,1]^n$ has density $2^{-n}$ with resp
 ::: {.pf-step #s1-1}
 
 Therefore
-\[
+$$
 \mathbf E\eta
 =\frac1{2^n}\int_V f(x)\,d^nx.
-\]
+$$
 
 
 ::: pf-proof
@@ -62,13 +62,13 @@ The joint density of the independent coordinates $\xi_1,\ldots,\xi_n$, each unif
 ::: {.pf-step #s1-2}
 
 Consequently, the source's identity $\mathbf E\eta=I$ is missing the volume factor $2^{-n}$ if
-\[
+$$
 I=\int_Vf(x)\,d^nx
-\]
+$$
 is the ordinary Lebesgue integral. The correct identity is
-\[
+$$
 \boxed{I=2^n\mathbf E\eta}.
-\]
+$$
 
 
 ::: pf-proof
@@ -82,19 +82,19 @@ Multiply step [](#s1-1){.pf-ref} by $2^n$. The source's equality becomes correct
 ::: {.pf-step #s1-3}
 
 Accordingly, an unbiased Monte Carlo estimator for the printed integral is
-\[
+$$
 \widehat I=\frac{2^n}{N}\sum_{i=1}^N\eta_i.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref} and linearity of expectation,
-\[
+$$
 \mathbf E\widehat I
 =2^n\mathbf E\eta
 =I.
-\]
+$$
 
 :::
 
@@ -103,31 +103,31 @@ By step [](#s1-1){.pf-ref} and linearity of expectation,
 ::: {.pf-step #s1-4}
 
 Since $|\eta_i|\leq C$, one has
-\[
+$$
 \mathbf D\eta_i\leq C^2
-\]
+$$
 and hence
-\[
+$$
 \mathbf D\widehat I
 \leq\frac{4^nC^2}{N}.
-\]
+$$
 
 
 ::: pf-proof
 
 The variance satisfies
-\[
+$$
 \mathbf D\eta_i
 =\mathbf E\eta_i^2-(\mathbf E\eta_i)^2
 \leq\mathbf E\eta_i^2
 \leq C^2.
-\]
+$$
 For independent samples, variances add, so
-\[
+$$
 \mathbf D\left(\frac{2^n}{N}\sum_{i=1}^N\eta_i\right)
 =\frac{4^n}{N^2}\sum_{i=1}^N\mathbf D\eta_i
 \leq\frac{4^nC^2}{N}.
-\]
+$$
 
 :::
 
@@ -136,10 +136,10 @@ For independent samples, variances add, so
 ::: {.pf-step #s1-5}
 
 Chebyshev's inequality gives
-\[
+$$
 P(|\widehat I-I|\geq\Delta)
 \leq\frac{4^nC^2}{N\Delta^2}.
-\]
+$$
 
 
 ::: pf-proof
@@ -153,13 +153,13 @@ Apply Chebyshev's inequality to the unbiased estimator from step [](#s1-3){.pf-r
 ::: {.pf-step #s1-6}
 
 Thus the sufficient sample size
-\[
+$$
 \boxed{N\geq\frac{4^nC^2}{\alpha\Delta^2}}
-\]
+$$
 ensures
-\[
+$$
 P(|\widehat I-I|<\Delta)\geq1-\alpha.
-\]
+$$
 
 
 ::: pf-proof
@@ -173,13 +173,13 @@ Under the displayed condition, the right side of step [](#s1-5){.pf-ref} is at m
 ::: {.pf-step #s1-7}
 
 If instead the intended quantity was the normalized integral
-\[
+$$
 I_{\mathrm{av}}=2^{-n}\int_Vf,
-\]
+$$
 then the source's estimator $\widetilde I=N^{-1}\sum_i\eta_i$ is unbiased and it suffices that
-\[
+$$
 \boxed{N\geq\frac{C^2}{\alpha\Delta^2}}.
-\]
+$$
 
 
 ::: pf-proof

@@ -25,39 +25,39 @@ audit:
 
 ::: {.problem}
 Let $f\in L^1(\RR)$ and define
-\[
+$$
 \widehat f(z)=\int_{\RR}e^{-ixz}f(x)\,dx.
-\]
+$$
 Show that, unless $f=0$ almost everywhere, the functions $f$ and $\widehat f$ cannot both have compact support.
 :::
 
 ::: {.solution}
 Assume that $f$ has compact support, say
-\[
+$$
 \operatorname{supp}f\subset[-R,R].
-\]
+$$
 Then for every complex number $z$ the integral
-\[
+$$
 F(z)=\int_{-R}^R e^{-ixz}f(x)\,dx
-\]
+$$
 is absolutely convergent. Moreover, for every integer $k\ge0$,
-\[
+$$
 F^{(k)}(z)=\int_{-R}^R(-ix)^k e^{-ixz}f(x)\,dx,
-\]
+$$
 with differentiation justified by dominated convergence on compact subsets of $\CC$. Hence $F$ is entire, and on the real axis it agrees with the Fourier transform $\widehat f$.
 
 Now suppose also that $\widehat f$ has compact support. Then there exists $M>0$ such that
-\[
+$$
 F(\xi)=\widehat f(\xi)=0
 \qquad\text{for all real }|\xi|>M.
-\]
+$$
 Thus the entire function $F$ vanishes on the nonempty open interval $(M,\infty)$ of the real axis. By the identity theorem for holomorphic functions,
-\[
+$$
 F\equiv0\quad\text{on }\CC.
-\]
+$$
 Therefore $\widehat f=0$ on $\RR$. By uniqueness of the Fourier transform on $L^1(\RR)$,
-\[
+$$
 f=0\quad\text{almost everywhere}.
-\]
+$$
 Consequently, a nonzero $L^1$ function and its Fourier transform cannot both have compact support.
 :::

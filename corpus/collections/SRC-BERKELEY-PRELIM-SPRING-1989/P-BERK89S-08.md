@@ -25,15 +25,15 @@ audit:
 
 ::: {.problem}
 Let $f$ be analytic from the open unit disk $D$ to itself. Suppose there are distinct $a,b\in D$ such that
-\[
+$$
 f(a)=a,
 \qquad
 f(b)=b.
-\]
+$$
 Prove that
-\[
+$$
 f(z)=z
-\]
+$$
 for all $z\in D$.
 :::
 

@@ -25,13 +25,13 @@ audit:
 ::: {.problem}
 For any open subset $U \subseteq X$, show that the functor $\Gamma(U, \wait)$ from sheaves on $X$ to abelian groups is left exact.
 That is, if
-\[
+$$
 0 \to \mcf' \to \mcf \to \mcf''
-\]
+$$
 is an exact sequence of sheaves, then
-\[
+$$
 0 \to \Gamma(U, \mcf') \to \Gamma(U, \mcf) \to \Gamma(U, \mcf'')
-\]
+$$
 is an exact sequence of groups.
 :::
 

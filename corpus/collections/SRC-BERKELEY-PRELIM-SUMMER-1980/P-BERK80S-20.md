@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Prove that the initial value problem
-\[
+$$
 \frac{dx}{dt}=3x+85\cos x,\qquad x(0)=77,
-\]
+$$
 has a solution $x(t)$ defined for all $t\in\RR$.
 :::
 

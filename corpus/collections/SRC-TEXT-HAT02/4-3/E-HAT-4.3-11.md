@@ -29,36 +29,36 @@ Show that a map $f: B_1 \to B_2$ induces $f^*: \mathcal{F}(B_2) \to \mathcal{F}(
 :::
 
 ::: {.solution}
-For a fibration \(p:E\to B_2\) and a map \(f:B_1\to B_2\), let
-\[
+For a fibration $p:E\to B_2$ and a map $f:B_1\to B_2$, let
+$$
 f^*E=\{(b,e):f(b)=p(e)\}\to B_1
-\]
+$$
 be the pullback fibration. Pullback carries fiber-preserving maps and fiber homotopies to fiber-preserving maps and fiber homotopies, so it defines
-\[
+$$
 f^*:\mathcal F(B_2)\to\mathcal F(B_1).
-\]
+$$
 
-If \(f_0\simeq f_1\) through \(H:B_1\times I\to B_2\), pull back \(E\) along \(H\). The resulting fibration over \(B_1\times I\) restricts at the two ends to \(f_0^*E\) and \(f_1^*E\). Fiber transport along the interval, obtained from the homotopy lifting property, gives mutually inverse fiber homotopy equivalences between these endpoint restrictions. Hence \(f^*\) depends only on the homotopy class of \(f\).
+If $f_0\simeq f_1$ through $H:B_1\times I\to B_2$, pull back $E$ along $H$. The resulting fibration over $B_1\times I$ restricts at the two ends to $f_0^*E$ and $f_1^*E$. Fiber transport along the interval, obtained from the homotopy lifting property, gives mutually inverse fiber homotopy equivalences between these endpoint restrictions. Hence $f^*$ depends only on the homotopy class of $f$.
 
 Functoriality of pullback gives
-\[
+$$
 (fg)^*=g^*f^*.
-\]
-If \(f:B_1\to B_2\) is a homotopy equivalence with homotopy inverse \(g\), then
-\[
+$$
+If $f:B_1\to B_2$ is a homotopy equivalence with homotopy inverse $g$, then
+$$
 gf\simeq1_{B_1},
 \qquad
 fg\simeq1_{B_2},
-\]
+$$
 so homotopy invariance gives
-\[
+$$
 f^*g^*=1,
 \qquad
 g^*f^*=1.
-\]
+$$
 Thus
-\[
+$$
 \boxed{f^*:\mathcal F(B_2)\xrightarrow{\cong}\mathcal F(B_1)}
-\]
+$$
 is a bijection.
 :::

@@ -44,15 +44,15 @@ The letter $A$ is homotopy equivalent to $O$.
 Model $A$ as two sloping legs meeting at the apex, together with a crossbar joining the legs. Let $v_1,v_2$ be the two crossbar junctions. The two sloping segments above $v_1,v_2$, together with the crossbar, form a simple closed curve $C\subset A$, hence $C$ is homeomorphic to $S^1$ and therefore to $O$.
 
 The parts of the two legs below $v_1$ and $v_2$ are closed intervals attached to $C$ at one endpoint. Collapse each such interval linearly to its attaching point while fixing $C$ pointwise. Explicitly, if a lower leg is parametrized by $\ell:[0,1]\to A$ with $\ell(0)=v_i$, set
-\[
+$$
 H_t(\ell(s))=\ell((1-t)s),
-\]
+$$
 and put $H_t(y)=y$ for $y\in C$. The two definitions agree at the attaching points, so they give a deformation retraction of $A$ onto $C$.
 
 Thus
-\[
+$$
 A\simeq C\cong O.
-\]
+$$
 :::
 
 :::
@@ -77,27 +77,27 @@ There are exactly three homotopy types among the letters in this typeface.
 Suppressing degree-$2$ subdivision vertices does not change a graph's homeomorphism type, so we suppress them throughout.
 
 Every letter except
-\[
+$$
 A,B,D,O,P,Q,R
-\]
+$$
 is a tree. Every tree contracts to a point by successively collapsing terminal edges, so these letters are contractible.
 
 Each of
-\[
+$$
 A,D,O,P,Q,R
-\]
+$$
 has exactly one independent cycle. Any trees attached to that cycle can be collapsed edge-by-edge, giving a deformation retraction onto the cycle. Hence each of these letters is homotopy equivalent to $S^1$.
 
 The letter $B$ has two loops meeting at one vertex after degree-$2$ vertices are suppressed, so it is homeomorphic to a subdivision of the figure-eight graph
-\[
+$$
 S^1\vee S^1.
-\]
+$$
 Thus $B$ is the unique letter in the third homotopy type.
 
 These three types are distinct. Their first homology groups are respectively
-\[
+$$
 0,\qquad \ZZ,\qquad \ZZ^2,
-\]
+$$
 and singular homology is invariant under homotopy equivalence. Therefore the letters have exactly three homotopy types.
 :::
 
@@ -124,9 +124,9 @@ Letters within each row are homeomorphic by mapping the corresponding edges mono
 Different rows are not homeomorphic. For finite graphs, a homeomorphism preserves the set of points of each local valence and the incidence pattern of the components obtained after deleting those branch points. Rows 1--4 are distinguished by their branch-point data; rows 5--8 are distinguished by the number and placement of branch points and pendant components relative to the unique cycle; row 9 has two independent cycles. Hence no two rows are homeomorphic.
 
 Therefore this typeface has exactly
-\[
+$$
 \boxed{9}
-\]
+$$
 homeomorphism types.
 :::
 

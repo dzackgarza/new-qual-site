@@ -16,13 +16,13 @@ audit:
 
 ::: {.problem}
 Find an invertible matrix $A$ and a diagonal matrix $B$ such that
-\[
+$$
 \begin{pmatrix}
 8&9\\
 -6&-7
 \end{pmatrix}
 =ABA^{-1}.
-\]
+$$
 :::
 
 ::: {.solution}

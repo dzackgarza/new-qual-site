@@ -30,28 +30,28 @@ Here if $n\ge 0$, then we can define $n\cdot 1$ by induction as $0\cdot 1=0$, $1
 
 ::: {.pf-step #c-equals-integer-multiples}
 One has
-\[
+$$
 C=\{n\cdot1:n\in\ZZ\},
-\]
+$$
 and this is a subring of $R$.
 
 ::: pf-proof
 The set
-\[
+$$
 D:=\{n\cdot1:n\in\ZZ\}
-\]
+$$
 contains $0$ and $1$, and is closed under addition and additive inverses because
-\[
+$$
 (m\cdot1)+(n\cdot1)=(m+n)\cdot1,
 \qquad
 -(n\cdot1)=(-n)\cdot1.
-\]
+$$
 Thus $D$ is an additive subgroup of $R$ containing $1$. By minimality of $C$, we have $C\subseteq D$. Conversely, every additive subgroup containing $1$ contains every integer multiple $n\cdot1$, so $D\subseteq C$. Hence $C=D$.
 
 Moreover
-\[
+$$
 (m\cdot1)(n\cdot1)=(mn)\cdot1,
-\]
+$$
 so $C$ is closed under multiplication and is therefore a subring of $R$.
 :::
 
@@ -59,22 +59,22 @@ so $C$ is closed under multiplication and is therefore a subring of $R$.
 
 ::: pf-step
 The map
-\[
+$$
 \phi:\ZZ\to C,
 \qquad
 \phi(n)=n\cdot1,
-\]
+$$
 is a surjective ring homomorphism.
 
 ::: pf-proof
 For $m,n\in\ZZ$,
-\[
+$$
 \phi(m+n)=(m+n)\cdot1=m\cdot1+n\cdot1=\phi(m)+\phi(n),
-\]
+$$
 and
-\[
+$$
 \phi(mn)=(mn)\cdot1=(m\cdot1)(n\cdot1)=\phi(m)\phi(n).
-\]
+$$
 Also $\phi(1)=1$. By step [](#c-equals-integer-multiples){.pf-ref}, every element of $C$ is $n\cdot1$ for some $n\in\ZZ$, so $\phi$ is surjective.
 :::
 
@@ -82,34 +82,34 @@ Also $\phi(1)=1$. By step [](#c-equals-integer-multiples){.pf-ref}, every elemen
 
 ::: pf-step
 Either
-\[
+$$
 C\cong\ZZ
-\]
+$$
 or
-\[
+$$
 C\cong\ZZ/p\ZZ
-\]
+$$
 for some prime $p$.
 
 ::: pf-proof
 Because $C$ is a subring of the integral domain $R$, it is itself an integral domain. Hence the kernel of the surjective homomorphism $\phi:\ZZ\to C$ is a prime ideal of $\ZZ$.
 
 Every ideal of $\ZZ$ is of the form $d\ZZ$ for a unique $d\ge0$. If $d>0$ and $d\ZZ$ is prime, then $d$ must be prime: if $d=ab$ with $1<a,d$ and $1<b<d$, then
-\[
+$$
 ab\in d\ZZ
-\]
+$$
 but neither $a$ nor $b$ lies in $d\ZZ$, contradicting primality. Thus
-\[
+$$
 \ker\phi=0
 \quad\text{or}\quad
 \ker\phi=p\ZZ
-\]
+$$
 for a prime $p$.
 
 By the first isomorphism theorem for rings,
-\[
+$$
 C\cong\ZZ/\ker\phi.
-\]
+$$
 Therefore either $C\cong\ZZ$, or $C\cong\ZZ/p\ZZ=\ZZ_p$ for some prime $p$.
 :::
 

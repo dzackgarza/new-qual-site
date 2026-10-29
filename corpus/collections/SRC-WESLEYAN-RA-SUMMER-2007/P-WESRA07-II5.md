@@ -23,33 +23,33 @@ audit:
 
 ::: {.problem}
 Compute
-\[
+$$
 \lim_{n\to\infty}\int_0^1\frac{1+n x^2}{(1+x^2)^n}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}
 For $x\in[0,1]$, Bernoulli's inequality gives
-\[
+$$
 (1+x^2)^n\ge 1+n x^2.
-\]
+$$
 Hence
-\[
+$$
 0\le \frac{1+n x^2}{(1+x^2)^n}\le1
-\]
+$$
 for every $n$ and every $x\in[0,1]$.
 
 For each fixed $x>0$, the denominator grows exponentially in $n$, while the numerator grows only linearly.
 More explicitly,
-\[
+$$
 \frac{1+n x^2}{(1+x^2)^n}\longrightarrow0.
-\]
+$$
 At $x=0$ the integrand equals $1$, but this single point is irrelevant for Lebesgue integration.
 Thus the integrands converge almost everywhere to $0$ and are dominated by the integrable function $1$.
 
 By the Dominated Convergence Theorem,
-\[
+$$
 \boxed{
 \lim_{n\to\infty}\int_0^1\frac{1+n x^2}{(1+x^2)^n}\,dx=0.}
-\]
+$$
 :::

@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Simplify the following:
 
-\[
+$$
 \exp \int_{3}^{5} \frac{dx}{x^2 - 3x + 2}
-\]
+$$
 
 [Note: Recall that $\exp x$ is a standard, alternate notation for $e^x$.]
 

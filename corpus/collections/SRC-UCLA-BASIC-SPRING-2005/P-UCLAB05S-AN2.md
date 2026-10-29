@@ -17,10 +17,10 @@ audit:
 
 ::: {.problem}
 Let $X$ be the set of all infinite sequences $(\sigma_n)_{n=1}^{\infty}$ of $0$'s and $1$'s, endowed with the metric
-\[
+$$
 \operatorname{dist}\bigl((\sigma_n),(\sigma_n')\bigr)
 =\sum_{n=1}^{\infty}\frac{|\sigma_n-\sigma_n'|}{2^n}.
-\]
+$$
 Give a direct proof that every infinite subset of $X$ has an accumulation point.
 :::
 

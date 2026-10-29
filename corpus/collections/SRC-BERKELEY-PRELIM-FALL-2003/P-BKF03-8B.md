@@ -32,13 +32,13 @@ How many conjugacy classes?
 ::: {.solution}
 
 The equation is
-\[
+$$
 A^3=A^2,
-\]
+$$
 equivalently
-\[
+$$
 A^2(A-I)=0.
-\]
+$$
 
 ::: pf
 
@@ -47,9 +47,9 @@ Every Jordan block of $A$ has eigenvalue $0$ or $1$.
 
 ::: pf-proof
 The polynomial
-\[
+$$
 q(x)=x^2(x-1)
-\]
+$$
 annihilates $A$.
 Therefore the minimal polynomial of $A$ divides $q$, so every eigenvalue is a root of $q$, namely $0$ or $1$.
 :::
@@ -58,9 +58,9 @@ Therefore the minimal polynomial of $A$ divides $q$, so every eigenvalue is a ro
 
 ::: {.pf-step #possible-jordan-blocks}
 The only possible Jordan blocks are
-\[
+$$
 [0],\qquad [1],\qquad J_2(0)=\begin{pmatrix}0&1\\0&0\end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 For eigenvalue $0$, the exponent of $x$ in the minimal polynomial is at most $2$, so Jordan blocks at $0$ have size at most $2$.
@@ -74,9 +74,9 @@ Thus only $[1]$ is allowed.
 
 ::: {.pf-step #conjugacy-class-multiplicities}
 A conjugacy class is uniquely determined by the multiplicities $(a,b,c)$ of these three block types, subject to
-\[
+$$
 a+b+2c=5.
-\]
+$$
 
 ::: pf-proof
 Over $\CC$, conjugacy classes are determined uniquely by Jordan normal form.
@@ -92,14 +92,14 @@ There are exactly $12$ such triples.
 ::: pf-proof
 The integer $c$ can be $0,1,$ or $2$.
 For fixed $c$, the number of nonnegative solutions of
-\[
+$$
 a+b=5-2c
-\]
+$$
 is $6-2c$.
 Therefore the total number is
-\[
+$$
 6+4+2=\boxed{12}.
-\]
+$$
 :::
 
 :::

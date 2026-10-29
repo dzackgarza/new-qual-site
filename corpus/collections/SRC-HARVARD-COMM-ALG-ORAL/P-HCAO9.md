@@ -43,11 +43,11 @@ Every finite integral domain is a field.
 
 Let $D$ be a finite integral domain and let $0\ne a\in D$. Multiplication by
 $a$ defines
-\[
+$$
 D\to D,
 \qquad
 x\mapsto ax.
-\]
+$$
 This map is injective because $D$ has no zero divisors, hence bijective because
 $D$ is finite. Therefore $1$ lies in its image, so $ab=1$ for some $b\in D$.
 Thus every nonzero element of $D$ is invertible.

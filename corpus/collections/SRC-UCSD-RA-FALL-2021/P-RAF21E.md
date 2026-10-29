@@ -41,32 +41,32 @@ $\|f_n-f\|_2^2=\|f_n\|_2^2+\|f\|_2^2-2\operatorname{Re}\langle f_n,f\rangle\to0$
 ::: pf-proof
 
 Since $L^2(\RR)$ is a Hilbert space,
-\[
+$$
 \|f_n-f\|_2^2
 =\|f_n\|_2^2+
 \|f\|_2^2
 -2\operatorname{Re}\langle f_n,f\rangle.
-\]
+$$
 Weak convergence $f_n\rightharpoonup f$ implies, by testing against the fixed vector $f$,
-\[
+$$
 \langle f_n,f\rangle\longrightarrow\langle f,f\rangle=\|f\|_2^2.
-\]
+$$
 The assumed convergence of norms gives
-\[
+$$
 \|f_n\|_2^2\longrightarrow\|f\|_2^2.
-\]
+$$
 Therefore
-\[
+$$
 \|f_n-f\|_2^2\longrightarrow
 \|f\|_2^2+
 \|f\|_2^2-
 2\|f\|_2^2
 =0.
-\]
+$$
 Hence
-\[
+$$
 \boxed{\|f_n-f\|_2\to0.}
-\]
+$$
 
 :::
 

@@ -28,11 +28,11 @@ audit:
 
 ::: {.problem}
 Find all pairs of $C^\infty$ functions $x,y:\RR\to\RR$ satisfying
-\[
+$$
 x'(t)=2x(t)-y(t),
 \qquad
 y'(t)=x(t).
-\]
+$$
 :::
 
 ::: {.solution}

@@ -31,14 +31,14 @@ is equal to 0. Prove that f is a polynomial.
 
 ::: {.solution}
 For each $n\ge0$, let
-\[
+$$
 Z_n=\{z\in\CC:f^{(n)}(z)=0\}.
-\]
+$$
 By hypothesis, for every $z_0\in\CC$ at least one Taylor coefficient of $f$ at $z_0$ vanishes. Since that coefficient is $f^{(n)}(z_0)/n!$ for some $n$, we have
-\[
+$$
 \CC=\bigcup_{n=0}^\infty Z_n.
 \tag{1}
-\]
+$$
 
 Suppose $f$ were not a polynomial. Then no derivative $f^{(n)}$ could vanish identically, since $f^{(n)}\equiv0$ would imply that $f$ is a polynomial of degree at most $n-1$. Hence, by the isolated-zero theorem, each $Z_n$ is a discrete subset of $\CC$.
 

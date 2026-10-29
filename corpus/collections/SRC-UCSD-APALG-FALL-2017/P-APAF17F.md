@@ -28,18 +28,18 @@ audit:
 For a partition $\lambda\vdash n$, let $S^\lambda$ be the corresponding irreducible representation of the symmetric group $S_n$ over $\CC$.
 
 (a) Calculate the decomposition of the induced module
-\[
+$$
 V=(S^{(2)}\otimes S^{(2)}\otimes S^{(1)})\uparrow_{S_2\times S_2\times S_1}^{S_5}
-\]
+$$
 into irreducible $S_5$-modules.
 
 (b) What is the dimension over $\CC$ of the endomorphism algebra $\operatorname{End}_{S_5}(V)$?
 
 (c) For any permutation $\sigma\in S_5$, let $\operatorname{sign}(\sigma)$ be the sign of $\sigma$.
 Define a linear operator $\varphi\colon V\to V$ by
-\[
+$$
 \varphi(v)=\frac{1}{5!}\sum_{\sigma\in S_5}\operatorname{sign}(\sigma)\,\sigma v.
-\]
+$$
 What is the rank of the operator $\varphi$?
 :::
 
@@ -50,9 +50,9 @@ What is the rank of the operator $\varphi$?
 ::: pf-step
 
 Under the Frobenius characteristic map,
-\[
+$$
 \operatorname{ch}(V)=s_{(2)}s_{(2)}s_{(1)}.
-\]
+$$
 
 ::: pf-proof
 
@@ -65,25 +65,25 @@ The representations $S^{(2)}$ of $S_2$ and $S^{(1)}$ of $S_1$ are trivial. Induc
 ::: {.pf-step #s2}
 
 One has
-\[
+$$
 s_{(2)}s_{(2)}=s_{(4)}+s_{(3,1)}+s_{(2,2)},
-\]
+$$
 and consequently
-\[
+$$
 s_{(2)}s_{(2)}s_{(1)}
 =s_{(5)}+2s_{(4,1)}+2s_{(3,2)}+s_{(3,1,1)}+s_{(2,2,1)}.
-\]
+$$
 
 ::: pf-proof
 
 The first identity follows from the Pieri rule by adding a horizontal $2$-strip to the diagram $(2)$. Multiplying by $s_{(1)}=h_1$ and applying Pieri again gives
-\[
+$$
 \begin{aligned}
 s_{(4)}s_{(1)}&=s_{(5)}+s_{(4,1)},\\
 s_{(3,1)}s_{(1)}&=s_{(4,1)}+s_{(3,2)}+s_{(3,1,1)},\\
 s_{(2,2)}s_{(1)}&=s_{(3,2)}+s_{(2,2,1)}.
 \end{aligned}
-\]
+$$
 Adding these identities yields the displayed expansion.
 
 :::
@@ -93,11 +93,11 @@ Adding these identities yields the displayed expansion.
 ::: {.pf-step #s3}
 
 Therefore
-\[
+$$
 \boxed{
 V\cong
 S^{(5)}\oplus2S^{(4,1)}\oplus2S^{(3,2)}\oplus S^{(3,1,1)}\oplus S^{(2,2,1)}.}
-\]
+$$
 
 ::: pf-proof
 
@@ -110,29 +110,29 @@ The Schur functions form the basis corresponding to irreducible $S_5$-characters
 ::: pf-step
 
 The endomorphism algebra has dimension
-\[
+$$
 \boxed{11}.
-\]
+$$
 
 ::: pf-proof
 
 For a completely reducible complex representation
-\[
+$$
 V\cong\bigoplus_\lambda m_\lambda S^\lambda,
-\]
+$$
 Schur's lemma gives
-\[
+$$
 \operatorname{End}_{S_5}(V)
 \cong\bigoplus_\lambda M_{m_\lambda}(\CC),
-\]
+$$
 so
-\[
+$$
 \dim_\CC\operatorname{End}_{S_5}(V)=\sum_\lambda m_\lambda^2.
-\]
+$$
 Using the multiplicities from step [](#s3){.pf-ref} gives
-\[
+$$
 1^2+2^2+2^2+1^2+1^2=11.
-\]
+$$
 This proves part (b).
 
 :::
@@ -142,9 +142,9 @@ This proves part (b).
 ::: pf-step
 
 The operator in part (c) has
-\[
+$$
 \boxed{\operatorname{rank}\varphi=0}.
-\]
+$$
 
 ::: pf-proof
 

@@ -42,9 +42,9 @@ classification of automorphisms of cyclic groups.
 
 ::: pf-step
 We claim that $G$ has the presentation:
-\[
+$$
 \Gamma = \langle x, y \mid x^n = 1, \, y^m = 1, \, y x y^{-1} = x^k \rangle.
-\]
+$$
 
 ::: pf-proof
 candidate presentation for semidirect products of cyclic groups.
@@ -64,15 +64,15 @@ Existence of a surjective homomorphism $\Phi: \Gamma \to G$:
 ::: pf-step
 In $G = \ZZ_n \rtimes_\phi \ZZ_m$, define the elements $\bar{x} = (1, 0)$ and $\bar{y} = (0, 1)$.
 Compute the group relations in $G$:
-\[
+$$
 \bar{x}^n = (n \cdot 1, 0) = (0, 0) = e_G,
-\]
-\[
+$$
+$$
 \bar{y}^m = (0, m \cdot 1) = (0, 0) = e_G,
-\]
-\[
+$$
+$$
 \bar{y}\bar{x}\bar{y}^{-1} = (0, 1)(1, 0)(0, -1) = (\phi(1)(1), 1)(0, -1) = (k, 1)(0, -1) = (k, 0) = \bar{x}^k.
-\]
+$$
 
 ::: pf-proof
 definition of the semidirect product multiplication $(a_1, b_1)(a_2, b_2) = (a_1 + \phi(b_1)(a_2), b_1 + b_2)$.
@@ -82,9 +82,9 @@ definition of the semidirect product multiplication $(a_1, b_1)(a_2, b_2) = (a_1
 
 ::: pf-step
 By the universal property of group presentations, there exists a unique group homomorphism $\Phi: \Gamma \to G$ such that:
-\[
+$$
 \Phi(x) = \bar{x} = (1, 0) \quad \text{and} \quad \Phi(y) = \bar{y} = (0, 1).
-\]
+$$
 
 ::: pf-proof
 universal property of presentations.
@@ -123,9 +123,9 @@ induction on word length.
 
 ::: pf-step
 Using $y x = x^k y$ and the relations $x^n = 1$ and $y^m = 1$, every element of $\Gamma$ can be written in the normal form:
-\[
+$$
 x^i y^j \quad \text{for } 0 \le i < n \text{ and } 0 \le j < m.
-\]
+$$
 Thus $\Gamma = \{x^i y^j \mid 0 \le i < n, \, 0 \le j < m\}$.
 
 ::: pf-proof

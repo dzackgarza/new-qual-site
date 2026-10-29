@@ -26,22 +26,22 @@ audit:
 
 ::: {.problem}
 Let $f\in L^1(\RR^n)$. Prove that for every $\varepsilon>0$ there exists $\delta>0$ such that if $A$ is measurable and $|A|<\delta$, then
-\[
+$$
 \left|\int_A f\right|<\varepsilon.
-\]
+$$
 :::
 
 ::: {.solution}
 Fix $\varepsilon>0$. Since $f\in L^1$, choose $M>0$ so that
-\[
+$$
 \int_{\{|f|>M\}}|f|<\frac{\varepsilon}{2}.
-\]
+$$
 Set
-\[
+$$
 \delta=\frac{\varepsilon}{2M}.
-\]
+$$
 If $|A|<\delta$, then
-\[
+$$
 \begin{aligned}
 \left|\int_A f\right|
 &\le\int_A|f|\\
@@ -49,6 +49,6 @@ If $|A|<\delta$, then
 &\le M|A|+\frac{\varepsilon}{2}\\
 &<\varepsilon.
 \end{aligned}
-\]
+$$
 Thus the Lebesgue integral is absolutely continuous with respect to Lebesgue measure.
 :::

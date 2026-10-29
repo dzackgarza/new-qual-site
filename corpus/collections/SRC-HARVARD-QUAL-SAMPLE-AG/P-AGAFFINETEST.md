@@ -33,31 +33,31 @@ There are three standard answers, depending on what information about the scheme
 
 ::: {.pf-step #recognition-criterion}
 The intrinsic recognition map is
-\[
+$$
 \eta_X:X\longrightarrow\operatorname{Spec}\Gamma(X,\mathcal O_X).
-\]
+$$
 Then
-\[
+$$
 \boxed{
 X\text{ is affine}
 \iff
 \eta_X\text{ is an isomorphism}.
 }
-\]
+$$
 
 ::: pf-proof
 For every scheme $X$ and ring $A$ there is a natural bijection
-\[
+$$
 \operatorname{Hom}_{\mathrm{Sch}}(X,\operatorname{Spec}A)
 \cong
 \operatorname{Hom}_{\mathrm{Ring}}(A,\Gamma(X,\mathcal O_X)).
-\]
+$$
 Taking $A=\Gamma(X,\mathcal O_X)$ and the identity ring map produces the canonical morphism $\eta_X$.
 
 If $X=\operatorname{Spec}B$ is affine, then
-\[
+$$
 \Gamma(X,\mathcal O_X)=B,
-\]
+$$
 and $\eta_X$ is the identity after this identification.  Conversely, if $\eta_X$ is an isomorphism, then $X$ is isomorphic to the spectrum of a ring and hence is affine.
 :::
 
@@ -65,20 +65,20 @@ and $\eta_X$ is the identity after this identification.  Conversely, if $\eta_X$
 
 ::: {.pf-step #serre-criterion}
 For a Noetherian scheme, Serre's cohomological criterion says
-\[
+$$
 \boxed{
 X\text{ affine}
 \iff
 H^i(X,\mathcal F)=0
 \text{ for every quasicoherent }\mathcal F\text{ and every }i>0.
 }
-\]
+$$
 It is enough to test
-\[
+$$
 \boxed{
 H^1(X,\mathcal I)=0
 }
-\]
+$$
 for every coherent ideal sheaf $\mathcal I\subseteq\mathcal O_X$.
 
 ::: pf-proof
@@ -89,36 +89,36 @@ This is Serre's criterion for affineness.  The forward direction is affine vanis
 
 ::: {.pf-step #global-principal-criterion}
 A concrete version of the same argument is the following.  Suppose $X$ is Noetherian and there are global functions
-\[
+$$
 f_1,\ldots,f_r\in A:=\Gamma(X,\mathcal O_X)
-\]
+$$
 such that
-\[
+$$
 \sum_i a_if_i=1
-\]
+$$
 for some $a_i\in A$ and every open
-\[
+$$
 X_{f_i}=\{x\in X:(f_i)_x\in\mathcal O_{X,x}^{\times}\}
-\]
+$$
 is affine.  Then $X$ is affine.
 
 ::: pf-proof
 The equation $\sum_i a_if_i=1$ implies that the $X_{f_i}$ cover $X$.
 
 Because $X$ is Noetherian, it is quasicompact and quasiseparated, so restriction gives
-\[
+$$
 \Gamma(X,\mathcal O_X)_{f_i}
 \cong
 \Gamma(X_{f_i},\mathcal O_X).
-\]
+$$
 Hence the canonical map
-\[
+$$
 \eta_X:X\longrightarrow\operatorname{Spec}A
-\]
+$$
 restricts to an isomorphism
-\[
+$$
 X_{f_i}\xrightarrow{\sim}D(f_i).
-\]
+$$
 The equation $\sum_i a_if_i=1$ also says that the distinguished opens $D(f_i)$ cover $\operatorname{Spec}A$.  Thus $\eta_X$ is an isomorphism on open covers of source and target, hence globally.  Apply step [](#recognition-criterion){.pf-ref}.
 :::
 
@@ -129,19 +129,19 @@ The projective line and the punctured affine plane are not affine: for both, the
 
 ::: pf-proof
 For the projective line,
-\[
+$$
 \Gamma(\PP^1_k,\mathcal O)=k,
-\]
+$$
 so the canonical map in step [](#recognition-criterion){.pf-ref} is
-\[
+$$
 \PP^1_k\longrightarrow\operatorname{Spec}k,
-\]
+$$
 which is not an isomorphism.  Thus $\PP^1$ is not affine.
 
 For $X=\AA^2_k\setminus\{0\}$, Hartogs extension gives
-\[
+$$
 \Gamma(X,\mathcal O_X)=k[x,y],
-\]
+$$
 so $\eta_X$ is the open immersion $X\hookrightarrow\AA^2_k$, which misses the origin and is not an isomorphism.  Thus $X$ is not affine, although its ring of global functions is the coordinate ring of an affine scheme.
 :::
 

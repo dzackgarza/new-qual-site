@@ -17,9 +17,9 @@ review: draft
 ::: {.problem}
 Let $G$ be a finite group and let $V$ be a finite-dimensional $G$-module over $\CC$.
 Let $\chi \colon G \to \CC$ be the character of $V$ and consider the linear operator $\varphi \colon V \to V$ given by
-\[
+$$
 \varphi(v) := \sum_{g \in G} \overline{\chi}(g)\, (g \cdot v),
-\]
+$$
 where $\overline{\chi}(g)$ denotes the complex conjugate of $\chi(g)$.
 Assume that $V$ is irreducible.
 
@@ -29,9 +29,9 @@ Prove that there exists a complex number $c \in \CC$ such that $\varphi(v) = cv$
 ::: {.solution}
 
 Let $\rho:G\to\operatorname{GL}(V)$ be the representation and set
-\[
+$$
 z:=\sum_{g\in G}\overline{\chi(g)}\,g\in\CC[G].
-\]
+$$
 Then $\varphi=\rho(z)$.
 
 ::: pf
@@ -41,16 +41,16 @@ The element $z$ is central in $\CC[G]$.
 
 ::: pf-proof
 Characters are class functions, so for every $h,g\in G$,
-\[
+$$
 \chi(hgh^{-1})=\chi(g).
-\]
+$$
 Therefore
-\[
+$$
 hzh^{-1}
 =\sum_{g\in G}\overline{\chi(g)}\,hgh^{-1}
 =\sum_{x\in G}\overline{\chi(x)}\,x
 =z,
-\]
+$$
 where we reindexed by $x=hgh^{-1}$.
 :::
 
@@ -58,9 +58,9 @@ where we reindexed by $x=hgh^{-1}$.
 
 ::: {.pf-step #phi-is-scalar}
 There exists $c\in\CC$ such that
-\[
+$$
 \varphi=cI_V.
-\]
+$$
 
 ::: pf-proof
 By step [](#z-is-central){.pf-ref}, $\rho(z)$ commutes with $\rho(h)$ for every $h\in G$. Since $V$ is irreducible over $\CC$, Schur's lemma implies that every such endomorphism is scalar. Hence $\varphi=cI_V$.
@@ -73,17 +73,17 @@ The trace of $\varphi$ is $|G|$.
 
 ::: pf-proof
 Using linearity of trace,
-\[
+$$
 \operatorname{tr}(\varphi)
 =\sum_{g\in G}\overline{\chi(g)}\operatorname{tr}(\rho(g))
 =\sum_{g\in G}\overline{\chi(g)}\chi(g)
 =\sum_{g\in G}|\chi(g)|^2.
-\]
+$$
 For an irreducible complex character,
-\[
+$$
 \langle\chi,\chi\rangle_G
 =\frac1{|G|}\sum_{g\in G}|\chi(g)|^2=1.
-\]
+$$
 Thus $\operatorname{tr}(\varphi)=|G|$.
 :::
 
@@ -91,19 +91,19 @@ Thus $\operatorname{tr}(\varphi)=|G|$.
 
 ::: pf-step
 Therefore
-\[
+$$
 \boxed{c=\frac{|G|}{\dim V}}.
-\]
+$$
 
 ::: pf-proof
 Since $\varphi=cI_V$ by step [](#phi-is-scalar){.pf-ref},
-\[
+$$
 \operatorname{tr}(\varphi)=c\dim V.
-\]
+$$
 Combining this with step [](#trace-of-phi){.pf-ref} gives
-\[
+$$
 c\dim V=|G|,
-\]
+$$
 and hence the stated value of $c$.
 :::
 

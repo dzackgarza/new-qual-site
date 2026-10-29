@@ -33,14 +33,14 @@ State the classification theorem for finitely generated abelian groups.
 
 Let $G$ be a finitely generated abelian group. Then there is a unique
 integer $r\ge0$ and unique integers
-\[
+$$
 1<d_1\mid d_2\mid\cdots\mid d_t
-\]
+$$
 such that
-\[
+$$
 G\cong \ZZ^r\oplus
 \ZZ/d_1\ZZ\oplus\cdots\oplus\ZZ/d_t\ZZ.
-\]
+$$
 
 ::: pf-proof
 
@@ -56,11 +56,11 @@ $G_{\mathrm{tors}}$.
 
 Equivalently, the torsion subgroup has a unique elementary-divisor
 decomposition
-\[
+$$
 G_{\mathrm{tors}}
 \cong
 \bigoplus_p\bigoplus_{j=1}^{m_p}\ZZ/p^{e_{p,j}}\ZZ,
-\]
+$$
 where $p$ runs over finitely many primes and, for each $p$, the positive
 integers $e_{p,j}$ are uniquely determined up to order.
 

@@ -52,9 +52,9 @@ Part (a): Multiplicity of trivial representation equals number of orbits:
 
 ::: pf-step
 For any $g \in \Gamma$, the character value $\chi(g) = \operatorname{Tr}(\rho(g))$ of the permutation representation on $\CC[\mathcal{F}]$ equals the number of fixed points:
-\[
+$$
 \chi(g) = |\operatorname{Fix}(g)| = |\{f \in \mathcal{F} \mid g \cdot f = f\}|.
-\]
+$$
 
 ::: pf-proof
 diagonal entries in the standard permutation basis are 1 for fixed points and 0 otherwise.
@@ -64,9 +64,9 @@ diagonal entries in the standard permutation basis are 1 for fixed points and 0 
 
 ::: pf-step
 The inner product with the trivial character $\mathbf{1}$ is:
-\[
+$$
 \langle \chi, \mathbf{1} \rangle = \frac{1}{|\Gamma|} \sum_{g \in \Gamma} \chi(g) \cdot 1 = \frac{1}{|\Gamma|} \sum_{g \in \Gamma} |\operatorname{Fix}(g)|.
-\]
+$$
 
 ::: pf-proof
 definition of character inner product.
@@ -76,9 +76,9 @@ definition of character inner product.
 
 ::: pf-step
 By Burnside’s Lemma (Cauchy–Frobenius Lemma):
-\[
+$$
 \frac{1}{|\Gamma|} \sum_{g \in \Gamma} |\operatorname{Fix}(g)| = |\mathcal{F} / \Gamma| = \text{number of orbits of } \mathcal{F} \text{ under } \Gamma.
-\]
+$$
 Thus the multiplicity of the trivial representation is $|\mathcal{F}/\Gamma|$.
 
 ::: pf-proof
@@ -99,9 +99,9 @@ Part (b): $\langle \chi, \chi \rangle$ counts orbits on $\mathcal{F} \times \mat
 ::: pf-step
 Consider the diagonal action of $\Gamma$ on $\mathcal{F} \times \mathcal{F}$ defined by $g \cdot (f_1, f_2) = (g \cdot f_1, g \cdot f_2)$.
 The fixed points of $g$ on $\mathcal{F} \times \mathcal{F}$ are:
-\[
+$$
 \operatorname{Fix}_{\mathcal{F} \times \mathcal{F}}(g) = \{(f_1, f_2) \in \mathcal{F} \times \mathcal{F} \mid g \cdot f_1 = f_1, \, g \cdot f_2 = f_2\} = \operatorname{Fix}(g) \times \operatorname{Fix}(g).
-\]
+$$
 
 ::: pf-proof
 product of fixed point sets.
@@ -111,9 +111,9 @@ product of fixed point sets.
 
 ::: pf-step
 Thus the permutation character $\chi_{\mathcal{F} \times \mathcal{F}}$ satisfies:
-\[
+$$
 \chi_{\mathcal{F} \times \mathcal{F}}(g) = |\operatorname{Fix}_{\mathcal{F} \times \mathcal{F}}(g)| = |\operatorname{Fix}(g)|^2 = \chi(g)^2.
-\]
+$$
 
 ::: pf-proof
 cardinality of Cartesian product.
@@ -124,9 +124,9 @@ cardinality of Cartesian product.
 ::: pf-step
 Since $\chi(g)$ is integer-valued (hence real), $\overline{\chi(g)} = \chi(g)$.
 Applying step [](#part-a-multiplicity-equals-orbits){.pf-ref} to the action on $\mathcal{F} \times \mathcal{F}$:
-\[
+$$
 |(\mathcal{F} \times \mathcal{F}) / \Gamma| = \langle \chi_{\mathcal{F} \times \mathcal{F}}, \mathbf{1} \rangle = \frac{1}{|\Gamma|} \sum_{g \in \Gamma} \chi(g)^2 = \frac{1}{|\Gamma|} \sum_{g \in \Gamma} \chi(g) \overline{\chi(g)} = \langle \chi, \chi \rangle.
-\]
+$$
 
 ::: pf-proof
 Step [](#part-a-multiplicity-equals-orbits){.pf-ref} applied to the set $\mathcal{F} \times \mathcal{F}$.
@@ -166,9 +166,9 @@ stabilizer property of $f_0$.
 ::: {.pf-step #h-orbits-are-double-cosets}
 Using the equivariant bijection $\mathcal{F} \cong \Gamma / H$ given by $\gamma f_0 \leftrightarrow \gamma H$, the action of $H$ on $\mathcal{F}$ corresponds to left multiplication of $H$ on the left coset space $\Gamma / H$.
 The $H$-orbits on $\Gamma / H$ are the double cosets $H \backslash \Gamma / H$:
-\[
+$$
 H \cdot (\tau_i H) = H \tau_i H / H.
-\]
+$$
 
 ::: pf-proof
 definition of double cosets $H \tau_i H$.

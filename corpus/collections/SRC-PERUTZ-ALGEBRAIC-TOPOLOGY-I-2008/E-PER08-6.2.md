@@ -49,9 +49,9 @@ Define the topology.
 ::: pf-proof
 
 For $[\gamma]\in\widetilde X$ and a path-connected open neighbourhood $U$ of $\gamma(1)$ for which $\pi_1(U)\to\pi_1(X)$ is trivial, set
-\[
+$$
 B([\gamma],U)=\{[\gamma*\eta]:\eta:[0,1]\to U,\ \eta(0)=\gamma(1)\}.
-\]
+$$
 These sets form a basis.
 Indeed $[\gamma]\in B([\gamma],U)$, and if $[\alpha]$ lies in the intersection of two basic sets, local path connectedness gives a smaller path-connected open $W$ around $p([\alpha])$ contained in the two corresponding base opens; then $B([\alpha],W)$ lies in the intersection.
 The triviality of the relevant $\pi_1$ images guarantees that the description is independent of the chosen paths inside $U$.
@@ -67,9 +67,9 @@ $p$ is a covering map.
 ::: pf-proof
 
 For a basic neighbourhood $B([\gamma],U)$, the restriction
-\[
+$$
 p:B([\gamma],U)\to U
-\]
+$$
 is bijective.
 Surjectivity follows from path connectedness of $U$.
 If $[\gamma*\eta_1]$ and $[\gamma*\eta_2]$ have the same endpoint, then $\eta_1*\eta_2^{-1}$ is a loop in $U$ and is null-homotopic in $X$, so the two path classes coincide.

@@ -48,26 +48,26 @@ Give $X$ a CW decomposition with two vertices, four edges, and four $2$-cells.
 
 For each sphere $X_i$, choose a great circle through $N_i$ and $S_i$.
 Its two semicircles give two $1$-cells
-\[
+$$
 a_i,b_i:N\longrightarrow S.
-\]
+$$
 The two complementary open hemispheres are $2$-cells.
 Thus the quotient $X$ has
-\[
+$$
 X^{(0)}=\{N,S\}
-\]
+$$
 and a $1$-skeleton $G=X^{(1)}$ consisting of four parallel edges
-\[
+$$
 a_1,b_1,a_2,b_2
-\]
+$$
 from $N$ to $S$.
 For the sphere $X_i$, the boundary of either hemisphere traverses one semicircle from $N$ to $S$ and the other back from $S$ to $N$.
 Hence its two $2$-cells are attached along the mutually inverse loops
-\[
+$$
 a_i b_i^{-1}
 \quad\text{and}\quad
 b_i a_i^{-1}.
-\]
+$$
 
 :::
 
@@ -81,17 +81,17 @@ The fundamental group of the $1$-skeleton is free of rank three.
 
 Choose the single edge $a_1$ as a maximal tree in $G$ and use $N$ as basepoint.
 By the standard graph computation from Seifert--van Kampen,
-\[
+$$
 \pi_1(G,N)\cong F(x,y,z),
-\]
+$$
 where we may take
-\[
+$$
 x=[a_1b_1^{-1}],
 \qquad
 y=[a_1a_2^{-1}],
 \qquad
 z=[a_1b_2^{-1}].
-\]
+$$
 Indeed, each of the three edges outside the maximal tree gives one free generator.
 
 :::
@@ -105,17 +105,17 @@ Attaching the two hemispheres of $X_1$ imposes only the relation $x=1$.
 ::: pf-proof
 
 The attaching loops for the two hemispheres of $X_1$ are
-\[
+$$
 a_1b_1^{-1}
 \quad\text{and}\quad
 b_1a_1^{-1}.
-\]
+$$
 These represent $x$ and $x^{-1}$.
 The Seifert--van Kampen theorem for attaching a $2$-cell says that the resulting fundamental group is the previous group modulo the normal closure of the attaching loop.
 Thus the two hemispheres together impose precisely
-\[
+$$
 x=1.
-\]
+$$
 
 :::
 
@@ -128,19 +128,19 @@ Attaching the two hemispheres of $X_2$ imposes only the relation $y^{-1}z=1$.
 ::: pf-proof
 
 The relevant attaching loop is
-\[
+$$
 a_2b_2^{-1}.
-\]
+$$
 Using the generators from step [](#s2){.pf-ref},
-\[
+$$
 y^{-1}z
 =(a_2a_1^{-1})(a_1b_2^{-1})
 =a_2b_2^{-1}.
-\]
+$$
 Hence one hemisphere of $X_2$ imposes
-\[
+$$
 y^{-1}z=1.
-\]
+$$
 The other hemisphere is attached along the inverse loop and contributes no additional relation.
 
 :::
@@ -150,31 +150,31 @@ The other hemisphere is attached along the inverse loop and contributes no addit
 ::: pf-step
 
 Therefore
-\[
+$$
 \pi_1(X,N)\cong\ZZ.
-\]
+$$
 
 ::: pf-proof
 
 By steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} and Seifert--van Kampen,
-\[
+$$
 \pi_1(X,N)
 \cong
 \langle x,y,z\mid x,\ y^{-1}z\rangle.
-\]
+$$
 The first relation eliminates $x$, and the second identifies $z$ with $y$.
 Thus
-\[
+$$
 \pi_1(X,N)
 \cong
 \langle y\mid\ \rangle
 \cong\ZZ.
-\]
+$$
 Geometrically, a generator is represented by going from $N$ to $S$ along the arc $a_1$ in the first sphere and returning from $S$ to $N$ along $a_2$ in the second sphere.
 Hence
-\[
+$$
 \boxed{\pi_1(X)\cong\ZZ}.
-\]
+$$
 
 :::
 

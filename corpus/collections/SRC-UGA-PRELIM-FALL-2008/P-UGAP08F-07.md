@@ -16,9 +16,9 @@ audit:
 
 ::: {.problem}
 Let $S\subseteq\ZZ$ be nonempty and closed under addition and additive inverses. Prove that there is an integer $k$ such that
-\[
+$$
 S=\{nk:n\in\ZZ\}.
-\]
+$$
 You may use the division algorithm for $\ZZ$, but no more advanced theorem.
 :::
 

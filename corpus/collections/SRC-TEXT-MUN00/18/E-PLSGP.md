@@ -31,16 +31,16 @@ Prove that for functions $f: \RR \to \RR$, the $\epsilon$-$\delta$ definition of
 Assume the epsilon-delta definition. Let $V\subseteq\RR$ be open. We show $f^{-1}(V)$ is open.
 
 Take $x\in f^{-1}(V)$. Since $f(x)\in V$ and $V$ is open, choose $\varepsilon>0$ with
-\[
+$$
 (f(x)-\varepsilon,f(x)+\varepsilon)\subseteq V.
-\]
+$$
 By epsilon-delta continuity at $x$, there is $\delta>0$ such that
-\[
+$$
 |t-x|<\delta\implies |f(t)-f(x)|<\varepsilon.
-\]
+$$
 Thus
-\[
+$$
 (x-\delta,x+\delta)\subseteq f^{-1}(V).
-\]
+$$
 Every point of $f^{-1}(V)$ therefore has an open interval contained in $f^{-1}(V)$, so $f^{-1}(V)$ is open. Hence $f$ is continuous in the open-set sense.
 :::

@@ -24,9 +24,9 @@ Assume this theorem for $n=1$ and use it to prove the theorem for $n=2$.
 ::: {.solution}
 
 Let
-\[
+$$
 x_k=(a_k,b_k)\in S\subseteq\RR^2.
-\]
+$$
 
 ::: pf
 
@@ -38,13 +38,13 @@ The real sequence $(a_k)$ is bounded.
 ::: pf-proof
 
 Since $S$ is bounded in $\RR^2$, there is $R>0$ such that
-\[
+$$
 \|(a,b)\|\le R
-\]
+$$
 for every $(a,b)\in S$. Hence
-\[
+$$
 |a_k|\le R
-\]
+$$
 for every $k$.
 
 :::
@@ -54,9 +54,9 @@ for every $k$.
 ::: pf-step
 
 There is a subsequence
-\[
+$$
 (a_{k_j})
-\]
+$$
 converging to some $a\in\RR$.
 
 
@@ -71,22 +71,22 @@ By step [](#s1-1){.pf-ref}, $(a_k)$ is bounded. Apply the one-dimensional Bolzan
 ::: {.pf-step #s1-3}
 
 The real sequence
-\[
+$$
 (b_{k_j})
-\]
+$$
 has a convergent subsequence.
 
 
 ::: pf-proof
 
 The same bound on $S$ gives
-\[
+$$
 |b_{k_j}|\le R
-\]
+$$
 for every $j$. The one-dimensional Bolzano--Weierstrass theorem therefore gives indices $j_\ell$ and a real number $b$ such that
-\[
+$$
 b_{k_{j_\ell}}\to b.
-\]
+$$
 
 :::
 
@@ -95,34 +95,34 @@ b_{k_{j_\ell}}\to b.
 ::: {.pf-step #s1-4}
 
 The subsequence
-\[
+$$
 x_{k_{j_\ell}}
-\]
+$$
 converges in $\RR^2$ to
-\[
+$$
 (a,b).
-\]
+$$
 
 
 ::: pf-proof
 
 Because $(a_{k_j})\to a$, every subsequence also converges to $a$, so
-\[
+$$
 a_{k_{j_\ell}}\to a.
-\]
+$$
 By step [](#s1-3){.pf-ref},
-\[
+$$
 b_{k_{j_\ell}}\to b.
-\]
+$$
 Therefore
-\[
+$$
 \|x_{k_{j_\ell}}-(a,b)\|^2
 =
 |a_{k_{j_\ell}}-a|^2
 +
 |b_{k_{j_\ell}}-b|^2
 \longrightarrow0.
-\]
+$$
 Thus $x_{k_{j_\ell}}\to(a,b)$.
 
 :::
@@ -137,9 +137,9 @@ The limit $(a,b)$ belongs to $S$.
 ::: pf-proof
 
 Every term $x_{k_{j_\ell}}$ lies in $S$, and $S$ is closed. A closed subset of $\RR^2$ contains the limits of all convergent sequences of its points. Hence
-\[
+$$
 (a,b)\in S.
-\]
+$$
 
 :::
 

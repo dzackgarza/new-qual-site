@@ -32,47 +32,47 @@ If $\lambda=(\lambda_1\ge\lambda_2\ge\dots\ge\lambda_k)$ is a partition of $n$, 
 
 (b) Express $\chi^{A^{(1,4)}\downarrow^{S_5}_{S_3\times S_2}}$ as a sum of irreducible characters of $S_3\times S_2$.
 Here $S_3\times S_2$ is the Young subgroup of $S_5$ consisting of all permutations $\sigma\in S_5$ such that
-\[
+$$
 \sigma(1),\sigma(2),\sigma(3)\in\{1,2,3\},\qquad \sigma(4),\sigma(5)\in\{4,5\}.
-\]
+$$
 :::
 
 
 ::: {.solution}
 
-Write \(\chi=\chi^{(4,1)}\).
+Write $\chi=\chi^{(4,1)}$.
 
 ::: pf
 
 ::: pf-step
-The values of \(\chi\) on the conjugacy classes of \(S_5\), ordered by cycle type
-\[
+The values of $\chi$ on the conjugacy classes of $S_5$, ordered by cycle type
+$$
 (1^5),\ (2,1^3),\ (2^2,1),\ (3,1^2),\ (3,2),\ (4,1),\ (5),
-\]
+$$
 are
-\[
+$$
 \boxed{4,\ 2,\ 0,\ 1,\ -1,\ 0,\ -1}.
-\]
+$$
 
 ::: pf-proof
-The Specht module \(S^{(4,1)}\) is the standard representation of \(S_5\), obtained from the permutation representation \(\CC^5\) by removing the one-dimensional invariant line spanned by \(e_1+\cdots+e_5\). Hence for every \(\sigma\in S_5\),
-\[
+The Specht module $S^{(4,1)}$ is the standard representation of $S_5$, obtained from the permutation representation $\CC^5$ by removing the one-dimensional invariant line spanned by $e_1+\cdots+e_5$. Hence for every $\sigma\in S_5$,
+$$
 \chi^{(4,1)}(\sigma)=\#\operatorname{Fix}(\sigma)-1.
-\]
+$$
 The numbers of fixed points for the seven cycle types above are respectively
-\[
+$$
 5,\ 3,\ 1,\ 2,\ 0,\ 1,\ 0,
-\]
+$$
 which yields the displayed row.
 
-This agrees with the Murnaghan--Nakayama rule: removing rim hooks from the hook diagram \((4,1)\) gives exactly the same signed contributions for each cycle type.
+This agrees with the Murnaghan--Nakayama rule: removing rim hooks from the hook diagram $(4,1)$ gives exactly the same signed contributions for each cycle type.
 :::
 
 :::
 
 ::: pf-step
-The restriction of \(S^{(4,1)}\) to the Young subgroup \(S_3\times S_2\) decomposes as
-\[
+The restriction of $S^{(4,1)}$ to the Young subgroup $S_3\times S_2$ decomposes as
+$$
 \boxed{
 S^{(4,1)}\!\downarrow_{S_3\times S_2}^{S_5}
 \cong
@@ -82,25 +82,25 @@ S^{(4,1)}\!\downarrow_{S_3\times S_2}^{S_5}
 \oplus
 (S^{(3)}\boxtimes S^{(1,1)}).
 }
-\]
+$$
 
 ::: pf-proof
-Restrict first the permutation representation \(\CC^5\). Under \(S_3\times S_2\), the first three basis vectors and the last two basis vectors span invariant subspaces, so
-\[
+Restrict first the permutation representation $\CC^5$. Under $S_3\times S_2$, the first three basis vectors and the last two basis vectors span invariant subspaces, so
+$$
 \CC^5\!\downarrow_{S_3\times S_2}
 \cong
 \CC^3\boxtimes \mathbf 1
 \oplus
 \mathbf 1\boxtimes \CC^2.
-\]
+$$
 The permutation modules decompose as
-\[
+$$
 \CC^3\cong S^{(3)}\oplus S^{(2,1)},
 \qquad
 \CC^2\cong S^{(2)}\oplus S^{(1,1)}.
-\]
+$$
 Therefore
-\[
+$$
 \CC^5\!\downarrow_{S_3\times S_2}
 \cong
 2(S^{(3)}\boxtimes S^{(2)})
@@ -108,12 +108,12 @@ Therefore
 (S^{(2,1)}\boxtimes S^{(2)})
 \oplus
 (S^{(3)}\boxtimes S^{(1,1)}).
-\]
+$$
 Finally,
-\[
+$$
 \CC^5\cong S^{(5)}\oplus S^{(4,1)},
-\]
-and the restricted trivial representation \(S^{(5)}\) is one copy of \(S^{(3)}\boxtimes S^{(2)}\). Subtracting that copy gives the asserted decomposition.
+$$
+and the restricted trivial representation $S^{(5)}$ is one copy of $S^{(3)}\boxtimes S^{(2)}$. Subtracting that copy gives the asserted decomposition.
 :::
 
 :::

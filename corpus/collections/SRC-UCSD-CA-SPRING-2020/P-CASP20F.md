@@ -22,13 +22,13 @@ Show that $f = 0$.
 ::: {.solution}
 Suppose $f\not\equiv0$. From the derivative bound, integrating along the line
 segment from $0$ to $z$ gives
-\[
+$$
 |f(z)|\le |f(0)|+|z|e^{|z|}.
-\]
+$$
 Thus
-\[
+$$
 \log M_f(R)=O(R),
-\]
+$$
 where $M_f(R)=\max_{|z|=R}|f(z)|$.
 
 If $f(0)=0$, factor $f(z)=z^m g(z)$ with $g(0)\ne0$; the same growth estimate
@@ -39,11 +39,11 @@ possibly finitely many points $\sqrt n$.
 For large $R$, every $\sqrt n\le R/2$ contributes at least $\log2$ to the
 Jensen sum. There are at least $\lfloor R^2/4\rfloor$ such zeros, so Jensen's
 formula yields
-\[
+$$
 cR^2
 \le \sum_{|a_k|<R}\log\frac{R}{|a_k|}
 \le \log M_g(R)-\log|g(0)|
 =O(R+\log R),
-\]
+$$
 a contradiction. Therefore $f\equiv0$.
 :::

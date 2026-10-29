@@ -28,9 +28,9 @@ audit:
 
 ::: {.problem}
 For real $\theta$, let
-\[
+$$
 F_\theta=\QQ(\sin\theta),\qquad E_\theta=\QQ\!\left(\sin\frac\theta3\right).
-\]
+$$
 Show that $E_\theta$ is an extension of $F_\theta$ and determine all possibilities for $[E_\theta:F_\theta]$.
 :::
 

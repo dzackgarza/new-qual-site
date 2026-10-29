@@ -24,15 +24,15 @@ audit:
 ---
 
 ::: {.problem}
-Let \( (X, \mathcal{M},\mu)  \) be a measure space and let $E_n \in \mathcal{M}$ be a measurable set for $n\geq 1$.
+Let $(X, \mathcal{M},\mu)$ be a measure space and let $E_n \in \mathcal{M}$ be a measurable set for $n\geq 1$.
 Let $f_n \definedas \chi_{E_n}$ be the indicator function of the set $E_n$ and show that 
 
-a. $f_n \converges{n\to\infty}\to 1$ uniformly \( \iff \) there exists $N\in \NN$ such that $E_n = X$ for all $n\geq N$.
+a. $f_n \converges{n\to\infty}\to 1$ uniformly $\iff$ there exists $N\in \NN$ such that $E_n = X$ for all $n\geq N$.
 
-b. $f_n(x) \converges{n\to\infty}\to 1$ for almost every $x$ \( \iff \) 
-\[
+b. $f_n(x) \converges{n\to\infty}\to 1$ for almost every $x$ $\iff$ 
+$$
 \mu \qty{ \Intersect_{n \geq 0} \Union_{k \geq n} (X \sm E_k) } = 0
-.\]
+.$$
 :::
 
 ::: {.solution}
@@ -44,9 +44,9 @@ Uniform convergence is equivalent to eventual equality $E_n=X$.
 
 ::: pf-proof
 If $\chi_{E_n}\to1$ uniformly, take $\varepsilon=1/2$. For all sufficiently large $n$ and every $x\in X$,
-\[
+$$
 |\chi_{E_n}(x)-1|<\frac12.
-\]
+$$
 Since $\chi_{E_n}(x)$ is either $0$ or $1$, this forces $\chi_{E_n}(x)=1$ for every $x$, hence $E_n=X$.
 
 Conversely, if $E_n=X$ for every $n\ge N$, then $\chi_{E_n}\equiv1$ for $n\ge N$, so the convergence is uniform.
@@ -59,20 +59,20 @@ Identify the exceptional set for pointwise convergence.
 
 ::: pf-proof
 For a fixed $x\in X$, because the values are only $0$ and $1$,
-\[
+$$
 \chi_{E_n}(x)\to1
 \iff
 x\in E_n\text{ for all sufficiently large }n.
-\]
+$$
 Thus convergence fails exactly when $x\notin E_n$ for infinitely many $n$. The set of such points is
-\[
+$$
 \limsup_{n\to\infty}(X\setminus E_n)
 =\bigcap_{N=1}^\infty\bigcup_{k\ge N}(X\setminus E_k).
-\]
+$$
 Therefore $\chi_{E_n}(x)\to1$ for almost every $x$ if and only if
-\[
+$$
 \mu\left(\bigcap_{N=1}^\infty\bigcup_{k\ge N}(X\setminus E_k)\right)=0.
-\]
+$$
 :::
 
 :::

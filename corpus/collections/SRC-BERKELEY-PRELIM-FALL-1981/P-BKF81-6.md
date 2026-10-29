@@ -25,10 +25,10 @@ audit:
 
 ::: {.problem}
 Let $f,g$ be continuous $1$-periodic functions on $\RR$. Prove that
-\[
+$$
 \lim_{n\to\infty}\int_0^1 f(x)g(nx)\,dx
 =\left(\int_0^1f\right)\left(\int_0^1g\right).
-\]
+$$
 :::
 
 ::: {.solution}

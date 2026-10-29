@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let $g(x, y)$ be the function defined for all $x$ and all nonzero $y$ such that the differential equation
 
-\[
+$$
 (\sin xy)\,dx + g(x, y)\,dy = 0
-\]
+$$
 
 is exact and $g(0, y) = 0$ for all $y \neq 0$. What is $g(x, 1)$?
 

@@ -27,11 +27,11 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\in\CC[z]\) and \(a\in\CC\). Prove that the forward orbit
-\[
+Let $f\in\CC[z]$ and $a\in\CC$. Prove that the forward orbit
+$$
 \{a,f(a),f(f(a)),\ldots\}
-\]
-is not dense in \(\CC\).
+$$
+is not dense in $\CC$.
 :::
 
 ::: {.solution}

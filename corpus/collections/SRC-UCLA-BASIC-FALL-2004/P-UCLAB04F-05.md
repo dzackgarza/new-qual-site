@@ -17,9 +17,9 @@ audit:
 
 ::: {.problem}
 Prove that $C[0,1]$, the space of continuous functions from $[0,1]$ to $\RR$, is complete for the supremum norm
-\[
+$$
 \|f\|_\infty=\sup_{x\in[0,1]}|f(x)|.
-\]
+$$
 
 You may use without proof that a uniform limit of continuous functions is continuous.
 :::
@@ -38,17 +38,17 @@ For each $x\in[0,1]$, the real sequence $(f_n(x))$ is Cauchy.
 ::: pf-proof
 
 Let $\varepsilon>0$. Since $(f_n)$ is Cauchy in the supremum norm, there is $N$ such that
-\[
+$$
 \|f_n-f_m\|_\infty<\varepsilon
-\]
+$$
 whenever $m,n\ge N$. Hence for every $x\in[0,1]$,
-\[
+$$
 |f_n(x)-f_m(x)|
 \le
 \|f_n-f_m\|_\infty
 <
 \varepsilon.
-\]
+$$
 Thus $(f_n(x))$ is Cauchy in $\RR$.
 
 :::
@@ -58,9 +58,9 @@ Thus $(f_n(x))$ is Cauchy in $\RR$.
 ::: {.pf-step #s1-2}
 
 Define
-\[
+$$
 f(x)=\lim_{n\to\infty}f_n(x)
-\]
+$$
 for each $x\in[0,1]$.
 
 
@@ -80,25 +80,25 @@ The convergence $f_n\to f$ is uniform on $[0,1]$.
 ::: pf-proof
 
 Let $\varepsilon>0$. Choose $N$ such that
-\[
+$$
 \|f_n-f_m\|_\infty<\frac{\varepsilon}{2}
-\]
+$$
 whenever $m,n\ge N$. Fix $n\ge N$ and $x\in[0,1]$. For every $m\ge N$,
-\[
+$$
 |f_n(x)-f_m(x)|<\frac{\varepsilon}{2}.
-\]
+$$
 Letting $m\to\infty$ and using step [](#s1-2){.pf-ref} gives
-\[
+$$
 |f_n(x)-f(x)|
 \le
 \frac{\varepsilon}{2}
 <
 \varepsilon.
-\]
+$$
 This bound is independent of $x$, so
-\[
+$$
 \|f_n-f\|_\infty<\varepsilon
-\]
+$$
 for every $n\ge N$.
 
 :::
@@ -113,15 +113,15 @@ The function $f$ is continuous on $[0,1]$.
 ::: pf-proof
 
 Fix $x_0\in[0,1]$ and $\varepsilon>0$. By step [](#s1-3){.pf-ref}, choose $N$ such that
-\[
+$$
 \|f-f_N\|_\infty<\frac{\varepsilon}{3}.
-\]
+$$
 Since $f_N$ is continuous at $x_0$, there is $\delta>0$ such that, whenever $x\in[0,1]$ and $|x-x_0|<\delta$,
-\[
+$$
 |f_N(x)-f_N(x_0)|<\frac{\varepsilon}{3}.
-\]
+$$
 Then
-\[
+$$
 \begin{aligned}
 |f(x)-f(x_0)|
 &\le
@@ -133,7 +133,7 @@ Then
 &<
 \varepsilon.
 \end{aligned}
-\]
+$$
 Thus $f$ is continuous at every $x_0\in[0,1]$.
 
 :::
@@ -148,13 +148,13 @@ The Cauchy sequence $(f_n)$ converges in $C[0,1]$.
 ::: pf-proof
 
 By step [](#s1-4){.pf-ref},
-\[
+$$
 f\in C[0,1].
-\]
+$$
 By step [](#s1-3){.pf-ref},
-\[
+$$
 \|f_n-f\|_\infty\to0.
-\]
+$$
 Thus $(f_n)$ converges to an element of the metric space $C[0,1]$.
 
 :::
@@ -164,9 +164,9 @@ Thus $(f_n)$ converges to an element of the metric space $C[0,1]$.
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{C[0,1]\text{ is complete for }\|\cdot\|_\infty}.
-\]
+$$
 
 
 ::: pf-proof

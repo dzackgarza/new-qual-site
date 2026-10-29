@@ -27,9 +27,9 @@ audit:
 ::: {.problem}
 Let $R$ be a commutative ring.
 Recall that an $R$-module $Q$ is flat if $-\otimes_R Q$ is an exact functor; namely, given any short exact sequence of $R$-modules $0 \to M \to N \to P \to 0$, the sequence
-\[
+$$
 0 \to M \otimes_R Q \to N \otimes_R Q \to P \otimes_R Q \to 0
-\]
+$$
 remains exact.
 
 (a) Let $Q$ be any module over an integral domain $R$.
@@ -44,14 +44,14 @@ Show that if $Q$ is flat, then $Q$ is torsionfree.
 
 ::: {.pf-step #s1}
 
-Let \(R\) be an integral domain and \(0\neq r\in R\). Multiplication by \(r\) gives an injective \(R\)-linear map
-\[
+Let $R$ be an integral domain and $0\neq r\in R$. Multiplication by $r$ gives an injective $R$-linear map
+$$
 R\xrightarrow{\cdot r}R.
-\]
+$$
 
 ::: pf-proof
 
-If \(ra=0\) in the domain \(R\) and \(r\neq0\), then \(a=0\). Hence multiplication by \(r\) is injective.
+If $ra=0$ in the domain $R$ and $r\neq0$, then $a=0$. Hence multiplication by $r$ is injective.
 
 :::
 
@@ -59,25 +59,25 @@ If \(ra=0\) in the domain \(R\) and \(r\neq0\), then \(a=0\). Hence multiplicati
 
 ::: {.pf-step #s2}
 
-If \(Q\) is flat, multiplication by every nonzero \(r\in R\) is injective on \(Q\).
+If $Q$ is flat, multiplication by every nonzero $r\in R$ is injective on $Q$.
 
 ::: pf-proof
 
 From step [](#s1){.pf-ref} we have a short exact sequence
-\[
+$$
 0\longrightarrow R\xrightarrow{\cdot r}R\longrightarrow R/rR\longrightarrow0.
-\]
-Tensoring with the flat module \(Q\) preserves exactness, so
-\[
+$$
+Tensoring with the flat module $Q$ preserves exactness, so
+$$
 0\longrightarrow R\otimes_R Q
  \xrightarrow{(\cdot r)\otimes 1}
 R\otimes_R Q
-\]
+$$
 is exact.
-Under the canonical identification \(R\otimes_RQ\cong Q\), the displayed map is precisely
-\[
+Under the canonical identification $R\otimes_RQ\cong Q$, the displayed map is precisely
+$$
 Q\xrightarrow{\cdot r}Q.
-\]
+$$
 Therefore it is injective.
 
 :::
@@ -90,7 +90,7 @@ Every flat module over an integral domain is torsionfree.
 
 ::: pf-proof
 
-Suppose \(q\in Q\) and \(0\neq r\in R\) satisfy \(rq=0\). By step [](#s2){.pf-ref}, multiplication by \(r\) on \(Q\) is injective, so \(q=0\). This is exactly torsionfreeness.
+Suppose $q\in Q$ and $0\neq r\in R$ satisfy $rq=0$. By step [](#s2){.pf-ref}, multiplication by $r$ on $Q$ is injective, so $q=0$. This is exactly torsionfreeness.
 
 :::
 
@@ -98,12 +98,12 @@ Suppose \(q\in Q\) and \(0\neq r\in R\) satisfy \(rq=0\). By step [](#s2){.pf-re
 
 ::: {.pf-step #s4}
 
-Let \(R\) be a PID and let \(M\) be finitely generated.
+Let $R$ be a PID and let $M$ be finitely generated.
 By the structure theorem,
-\[
+$$
 M\cong R^s\oplus T,
-\]
-where \(T\) is a finite direct sum of nonzero cyclic torsion modules \(R/(d_i)\) if the torsion part is nonzero.
+$$
+where $T$ is a finite direct sum of nonzero cyclic torsion modules $R/(d_i)$ if the torsion part is nonzero.
 
 ::: pf-proof
 
@@ -115,15 +115,15 @@ This is the classification theorem for finitely generated modules over a PID.
 
 ::: {.pf-step #s5}
 
-A finitely generated \(R\)-module over a PID is flat if and only if its torsion part \(T\) in step [](#s4){.pf-ref} is zero.
+A finitely generated $R$-module over a PID is flat if and only if its torsion part $T$ in step [](#s4){.pf-ref} is zero.
 
 ::: pf-proof
 
-If \(M\) is flat, then step [](#s3){.pf-ref} implies that \(M\) is torsionfree.
-Hence the torsion summand \(T\) must vanish.
+If $M$ is flat, then step [](#s3){.pf-ref} implies that $M$ is torsionfree.
+Hence the torsion summand $T$ must vanish.
 
-Conversely, if \(T=0\), then \(M\cong R^s\) is free.
-Every free module is flat because tensoring with a direct sum of copies of \(R\) is a direct sum of copies of the original exact sequence and therefore preserves exactness.
+Conversely, if $T=0$, then $M\cong R^s$ is free.
+Every free module is flat because tensoring with a direct sum of copies of $R$ is a direct sum of copies of the original exact sequence and therefore preserves exactness.
 
 :::
 

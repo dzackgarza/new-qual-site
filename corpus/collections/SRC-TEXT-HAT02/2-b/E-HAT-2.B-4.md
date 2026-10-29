@@ -35,31 +35,31 @@ In the unit sphere $S^{p+q-1} \subset \RR^{p+q}$ let $S^{p-1}$ and $S^{q-1}$ be 
 
 ::: {.solution}
 Write points of $S^{p+q-1}$ as $(x,y)\in\RR^p\oplus\RR^q$. Then
-\[
+$$
 S^{p-1}=\{(x,0):\|x\|=1\},
 \qquad
 S^{q-1}=\{(0,y):\|y\|=1\}.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 There is a homeomorphism
-\[
+$$
 S^{p+q-1}-S^{p-1}\cong S^{q-1}\times\RR^p.
-\]
+$$
 
 ::: pf-proof
 
 On the complement one has $y\ne0$. Define
-\[
+$$
 \Phi(x,y)=\left(\frac y{\|y\|},\frac x{\|y\|}\right).
-\]
+$$
 Its inverse is
-\[
+$$
 \Phi^{-1}(u,v)=\frac{(v,u)}{\sqrt{1+\|v\|^2}}.
-\]
+$$
 These formulas are continuous and inverse to one another.
 
 :::
@@ -81,14 +81,14 @@ Under the homeomorphism in step [](#s1){.pf-ref}, contract the $\RR^p$ factor li
 ::: pf-step
 
 Suppose, for contradiction, that there are disjoint embedded disks
-\[
+$$
 D^p,D^q\subset D^{p+q}
-\]
+$$
 with boundaries the two coordinate spheres $S^{p-1}$ and $S^{q-1}$.
 Then the class
-\[
+$$
 [S^{q-1}]\in H_{q-1}(S^{p+q-1}-S^{p-1})\cong\ZZ
-\]
+$$
 is a generator.
 
 ::: pf-proof
@@ -102,9 +102,9 @@ By steps [](#s1){.pf-ref} and [](#s2){.pf-ref} the coordinate $S^{q-1}$ is a def
 ::: {.pf-step #s4}
 
 By Exercise 3, the inclusion
-\[
+$$
 S^{p+q-1}-S^{p-1}\hookrightarrow D^{p+q}-D^p
-\]
+$$
 induces an isomorphism on homology.
 
 ::: pf-proof

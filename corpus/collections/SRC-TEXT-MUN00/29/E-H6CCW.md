@@ -73,9 +73,9 @@ subset containment.
 
 ::: pf-step
 Since $J$ is directed, there exists an element $\alpha \in J$ such that:
-\[
+$$
 k_1 \preceq \alpha \quad \text{and} \quad k_2 \preceq \alpha.
-\]
+$$
 
 ::: pf-proof
 directedness of $J$.
@@ -85,9 +85,9 @@ directedness of $J$.
 
 ::: {.pf-step #cofinal-upper-bound}
 Since $K$ is cofinal in $J$, there exists an element $\beta \in K$ such that:
-\[
+$$
 \alpha \preceq \beta.
-\]
+$$
 
 ::: pf-proof
 definition of cofinality of $K$ in $J$.
@@ -97,12 +97,12 @@ definition of cofinality of $K$ in $J$.
 
 ::: {.pf-step #transitivity-gives-upper-bound}
 By transitivity of $\preceq$:
-\[
+$$
 k_1 \preceq \alpha \text{ and } \alpha \preceq \beta \implies k_1 \preceq \beta,
-\]
-\[
+$$
+$$
 k_2 \preceq \alpha \text{ and } \alpha \preceq \beta \implies k_2 \preceq \beta.
-\]
+$$
 
 ::: pf-proof
 transitivity of preorder $\preceq$.

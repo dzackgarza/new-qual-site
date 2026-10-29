@@ -33,22 +33,22 @@ Let $X\subseteq\PP^N$ be a projective scheme with Hilbert polynomial $P_X(r)$.
 
 ::: {.pf-step #hilbert-euler-characteristic}
 The Hilbert polynomial is the Euler characteristic polynomial:
-\[
+$$
 P_X(r)=\chi\bigl(X,\mathcal O_X(r)\bigr).
-\]
+$$
 
 ::: pf-proof
 For $r\gg0$, Serre vanishing gives
-\[
+$$
 H^i(X,\mathcal O_X(r))=0
 \qquad(i>0),
-\]
+$$
 so
-\[
+$$
 \chi(X,\mathcal O_X(r))
 =h^0(X,\mathcal O_X(r))
 =P_X(r).
-\]
+$$
 The Euler characteristic $\chi(X,\mathcal O_X(r))$ is itself polynomial in $r$, so equality for all sufficiently large integers identifies it with the same polynomial $P_X$.
 :::
 
@@ -56,12 +56,12 @@ The Euler characteristic $\chi(X,\mathcal O_X(r))$ is itself polynomial in $r$, 
 
 ::: {.pf-step #constant-term-definition}
 Therefore the constant term is
-\[
+$$
 \boxed{
 P_X(0)=\chi(X,\mathcal O_X)
 =\sum_i(-1)^i h^i(X,\mathcal O_X).
 }
-\]
+$$
 
 ::: pf-proof
 Set $r=0$ in the polynomial identity from step [](#hilbert-euler-characteristic){.pf-ref}.
@@ -71,15 +71,15 @@ Set $r=0$ in the polynomial identity from step [](#hilbert-euler-characteristic)
 
 ::: {.pf-step #curve-constant-term}
 If $C$ is a projective curve, then
-\[
+$$
 \boxed{P_C(0)=1-p_a(C).}
-\]
+$$
 
 ::: pf-proof
 The arithmetic genus of a projective curve is defined by
-\[
+$$
 p_a(C)=1-\chi(C,\mathcal O_C).
-\]
+$$
 Use step [](#constant-term-definition){.pf-ref}.
 :::
 
@@ -87,16 +87,16 @@ Use step [](#constant-term-definition){.pf-ref}.
 
 ::: {.pf-step #smooth-curve-formula}
 In particular, if $C$ is a smooth connected projective curve of genus $g$, then
-\[
+$$
 \boxed{P_C(r)=\deg(C)\,r+1-g,}
-\]
+$$
 so the constant term is $1-g$.
 
 ::: pf-proof
 For a smooth connected projective curve,
-\[
+$$
 p_a(C)=g.
-\]
+$$
 The coefficient of $r$ in the Hilbert polynomial is the degree, while step [](#curve-constant-term){.pf-ref} gives the constant term $1-g$.
 :::
 
@@ -104,13 +104,13 @@ The coefficient of $r$ in the Hilbert polynomial is the degree, while step [](#c
 
 ::: {.pf-step #general-dimension-formula}
 More generally, if $X$ has pure dimension $n$, the arithmetic genus satisfies
-\[
+$$
 p_a(X)=(-1)^n\bigl(\chi(\mathcal O_X)-1\bigr),
-\]
+$$
 so
-\[
+$$
 \boxed{P_X(0)=1+(-1)^n p_a(X).}
-\]
+$$
 
 ::: pf-proof
 Substitute the identity $P_X(0)=\chi(\mathcal O_X)$ from step [](#constant-term-definition){.pf-ref} into the definition of arithmetic genus and solve for $P_X(0)$.

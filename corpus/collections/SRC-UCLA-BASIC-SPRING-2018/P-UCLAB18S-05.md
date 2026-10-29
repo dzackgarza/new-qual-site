@@ -37,18 +37,18 @@ Assertion 1 is true.
 ::: pf-proof
 
 Let
-\[
+$$
 x\in\RR^2
-\]
+$$
 be nonzero.
 Since $A$ and $B$ are positive definite,
-\[
+$$
 x^TAx>0
 \qquad\text{and}\qquad
 x^TBx>0.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 x^T(A+B)x
 &=
@@ -56,12 +56,12 @@ x^TAx+x^TBx\\
 &>
 0.
 \end{aligned}
-\]
+$$
 Also $A+B$ is symmetric because both $A$ and $B$ are symmetric.
 Hence
-\[
+$$
 \boxed{A+B\text{ is positive definite}.}
-\]
+$$
 
 :::
 
@@ -75,7 +75,7 @@ Assertion 2 is false.
 ::: pf-proof
 
 Consider
-\[
+$$
 A=
 \begin{pmatrix}
 4&0\\
@@ -87,7 +87,7 @@ B=
 1&\frac45\\
 \frac45&1
 \end{pmatrix}.
-\]
+$$
 The following steps verify that $A$ and $B$ are positive definite while $AB+BA$ is not.
 
 :::
@@ -102,21 +102,21 @@ The matrix $A$ is positive definite.
 ::: pf-proof
 
 For
-\[
+$$
 x=
 \begin{pmatrix}
 u\\v
 \end{pmatrix}
 \ne0,
-\]
+$$
 one has
-\[
+$$
 x^TAx
 =
 4u^2+v^2
 >
 0.
-\]
+$$
 
 :::
 
@@ -131,11 +131,11 @@ The matrix $B$ is positive definite.
 
 The matrix is symmetric.
 Its leading principal minors are
-\[
+$$
 1>0
-\]
+$$
 and
-\[
+$$
 \det B
 =
 1-\frac{16}{25}
@@ -143,7 +143,7 @@ and
 \frac9{25}
 >
 0.
-\]
+$$
 By Sylvester's criterion, $B$ is positive definite.
 
 :::
@@ -153,7 +153,7 @@ By Sylvester's criterion, $B$ is positive definite.
 ::: {.pf-step #s1-5}
 
 One has
-\[
+$$
 \boxed{
 AB+BA
 =
@@ -162,29 +162,29 @@ AB+BA
 4&2
 \end{pmatrix}.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 Direct multiplication gives
-\[
+$$
 AB
 =
 \begin{pmatrix}
 4&\frac{16}{5}\\
 \frac45&1
 \end{pmatrix}
-\]
+$$
 and
-\[
+$$
 BA
 =
 \begin{pmatrix}
 4&\frac45\\
 \frac{16}{5}&1
 \end{pmatrix}.
-\]
+$$
 Adding yields the displayed matrix.
 
 :::
@@ -194,23 +194,23 @@ Adding yields the displayed matrix.
 ::: {.pf-step #s1-6}
 
 The nonzero vector
-\[
+$$
 v=
 \begin{pmatrix}
 1\\
 -2
 \end{pmatrix}
-\]
+$$
 satisfies
-\[
+$$
 (AB+BA)v=0.
-\]
+$$
 
 
 ::: pf-proof
 
 Using step [](#s1-5){.pf-ref},
-\[
+$$
 \begin{pmatrix}
 8&4\\
 4&2
@@ -229,7 +229,7 @@ Using step [](#s1-5){.pf-ref},
 0\\
 0
 \end{pmatrix}.
-\]
+$$
 
 :::
 
@@ -243,19 +243,19 @@ Therefore $AB+BA$ is not positive definite.
 ::: pf-proof
 
 Positive definiteness would require
-\[
+$$
 v^T(AB+BA)v>0
-\]
+$$
 for every nonzero $v$.
 But step [](#s1-6){.pf-ref} gives
-\[
+$$
 v^T(AB+BA)v=0
-\]
+$$
 for a nonzero vector.
 Thus
-\[
+$$
 \boxed{AB+BA\text{ need not be positive definite}.}
-\]
+$$
 
 :::
 

@@ -30,33 +30,33 @@ Note that u is not bounded in D.
 
 ::: {.solution}
 Let
-\[
+$$
 F(z)=\frac{i+z}{i-z}.
-\]
+$$
 Its only pole is at $z=i$, which lies on $\partial\DD$, so $F$ is holomorphic in $\DD$. Hence
-\[
+$$
 u(z)=\Re F(z)
-\]
+$$
 is harmonic in $\DD$.
 
 If $|z|=1$ and $z\ne i$, then $\bar z=1/z$. A direct computation gives
-\[
+$$
 \overline{F(z)}
 =\frac{-i+\bar z}{-i-\bar z}
 =\frac{-iz+1}{-iz-1}
 =-\frac{i+z}{i-z}
 =-F(z).
-\]
+$$
 Thus $F(z)$ is purely imaginary and
-\[
+$$
 u(z)=\Re F(z)=0
-\]
+$$
 on $\partial\DD\setminus\{i\}$. With the stipulated boundary value $u(i)=u(0,1)=0$, the boundary values vanish everywhere.
 
 The function is not bounded in the disc. Along the radius $z=ri$, $0<r<1$,
-\[
+$$
 u(ri)=\Re\frac{i+ri}{i-ri}=\frac{1+r}{1-r}\longrightarrow+\infty
 \qquad(r\uparrow1).
-\]
+$$
 So $u$ is harmonic in $\DD$, has zero boundary values, but is unbounded.
 :::

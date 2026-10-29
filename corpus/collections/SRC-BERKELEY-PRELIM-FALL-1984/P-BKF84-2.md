@@ -26,14 +26,14 @@ audit:
 Let $A,B$ be real $n\times n$ matrices and let $k$ be a positive integer. Find
 
 1.
-\[
+$$
 \lim_{t\to0}\frac{(A+tB)^k-A^k}{t};
-\]
+$$
 
 2.
-\[
+$$
 \left.\frac d{dt}\operatorname{tr}(A+tB)^k\right|_{t=0}.
-\]
+$$
 :::
 
 ::: {.solution}

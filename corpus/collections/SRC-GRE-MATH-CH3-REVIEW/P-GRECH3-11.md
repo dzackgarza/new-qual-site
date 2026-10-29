@@ -18,15 +18,15 @@ audit:
 
 ::: {.problem}
 Consider the following three functions, each of which is defined for all $(x,y)$ in the plane:
-\[
+$$
 f_1(x,y)=\begin{cases}\dfrac{x-y}{x+y} & \text{if } x+y\ne0\\ 1 & \text{if } x+y=0\end{cases}
-\]
-\[
+$$
+$$
 f_2(x,y)=\begin{cases}\dfrac{xy}{x^2+y^2} & \text{if } (x,y)\ne(0,0)\\ 0 & \text{if } (x,y)=(0,0)\end{cases}
-\]
-\[
+$$
+$$
 f_3(x,y)=\begin{cases}\dfrac{x^3-y^3}{x^2+y^2} & \text{if } (x,y)\ne(0,0)\\ 0 & \text{if } (x,y)=(0,0)\end{cases}
-\]
+$$
 Which of these functions is/are continuous at the origin?
 
 (A) None

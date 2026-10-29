@@ -67,9 +67,9 @@ Label the roots by $\ZZ/5\ZZ$ so that the $5$-cycle is $\sigma:i\mapsto i+1$. Le
 ::: {.pf-step #s1-4}
 
 The Galois group is
-\[
+$$
 \boxed{\operatorname{Gal}(K/\QQ)\cong S_5}.
-\]
+$$
 
 
 ::: pf-proof

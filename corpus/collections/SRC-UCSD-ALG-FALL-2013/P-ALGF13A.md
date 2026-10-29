@@ -200,9 +200,9 @@ Apply the fixed point congruence for $p$-group actions:
 
 ::: pf-step
 The fixed point set of the action is:
-\[
+$$
 \Omega^P = \{g \in \Omega : xgx^{-1} = g \text{ for all } x \in P\} = \{g \in \Omega : g \in C_G(P)\} = C_G(P) \cap \Omega.
-\]
+$$
 
 ::: pf-proof
 definition of centralizer.

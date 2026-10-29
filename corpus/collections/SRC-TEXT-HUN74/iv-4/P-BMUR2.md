@@ -22,9 +22,9 @@ audit:
 Show the following:
 
 1.  For any abelian group $A$ and any positive integer $m$,
-  \[
+  $$
   \mathrm{Hom}(\ZZ_m, A) \cong A[m] \coloneqq \{ a\in A \mid ma = 0\}
-  .\]
+  .$$
 
 2.  $\mathrm{Hom}(\ZZ_m, \ZZ_n) \cong \ZZ_{\mathrm{gcd}(m,n)}$.
 

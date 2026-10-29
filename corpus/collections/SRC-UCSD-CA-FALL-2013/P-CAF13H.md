@@ -19,39 +19,39 @@ For $M > 0$, define $\mathcal{F}_M$ to be the family of functions in $\operatorn
 
 ::: {.solution}
 For $f\in\mathcal F_M$, define
-\[
+$$
 h_f(z)=\frac1{f(z)+1}.
-\]
+$$
 Since $\operatorname{Re}f(z)>0$, we have
-\[
+$$
 |f(z)+1|\ge \operatorname{Re}(f(z)+1)>1,
-\]
+$$
 so
-\[
+$$
 |h_f(z)|<1
-\]
+$$
 throughout $U$. Thus the family $\{h_f:f\in\mathcal F_M\}$ is locally uniformly
 bounded, and Montel's theorem makes it a normal family.
 
 Take any sequence $f_n\in\mathcal F_M$. Passing to a subsequence, we may assume
-\[
+$$
 h_{f_n}\longrightarrow h
-\]
+$$
 uniformly on compact subsets of $U$, where $h$ is holomorphic. At the base point,
-\[
+$$
 |h_{f_n}(z_0)|
 =\frac1{|f_n(z_0)+1|}
 \ge\frac1{M+1}.
-\]
+$$
 Hence $h(z_0)\ne0$, so $h$ is not identically zero. Every $h_{f_n}$ is
 zero-free; by Hurwitz's theorem, $h$ is therefore zero-free on all of $U$.
 
 Consequently, on every compact subset of $U$,
-\[
+$$
 f_n=\frac1{h_{f_n}}-1
 \longrightarrow
 \frac1h-1
-\]
+$$
 uniformly. The limit is holomorphic. Thus every sequence in $\mathcal F_M$ has a
 subsequence converging uniformly on compact subsets to a holomorphic function,
 which is exactly relative compactness in the compact-open topology.

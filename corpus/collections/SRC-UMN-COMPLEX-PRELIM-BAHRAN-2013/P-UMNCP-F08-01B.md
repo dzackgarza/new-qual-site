@@ -18,10 +18,10 @@ audit:
 
 ::: {.problem}
 Determine the number of zeros of
-\[
+$$
 P(z)=z^7+z^3+\frac1{16}
-\]
-in the closed disk \(|z|\le\frac12\).
+$$
+in the closed disk $|z|\le\frac12$.
 :::
 
 ::: {.solution}

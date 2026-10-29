@@ -45,17 +45,17 @@ Over $\CC$, the polynomial $t^p-1$ has $p$ distinct roots.
 ::: pf-proof
 
 Let
-\[
+$$
 \zeta_p=e^{2\pi i/p}.
-\]
+$$
 Then
-\[
+$$
 t^p-1=\prod_{k=0}^{p-1}(t-\zeta_p^k).
-\]
+$$
 The roots are distinct because the derivative
-\[
+$$
 pt^{p-1}
-\]
+$$
 does not vanish at any $p$-th root of unity in characteristic zero.
 
 :::
@@ -65,9 +65,9 @@ does not vanish at any $p$-th root of unity in characteristic zero.
 ::: {.pf-step #s2}
 
 If $F=\CC$, the characteristic polynomial of $a$ equals its minimal polynomial:
-\[
+$$
 \chi_a(t)=t^p-1.
-\]
+$$
 
 ::: pf-proof
 
@@ -83,17 +83,17 @@ Therefore they are equal.
 ::: pf-step
 
 If $F=\CC$, the Jordan form of $a$ is
-\[
+$$
 \operatorname{diag}(1,\zeta_p,\zeta_p^2,\ldots,\zeta_p^{p-1}),
-\]
+$$
 up to permutation of the diagonal entries.
 
 ::: pf-proof
 
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the characteristic polynomial has the $p$ distinct eigenvalues
-\[
+$$
 1,\zeta_p,\ldots,\zeta_p^{p-1},
-\]
+$$
 each with algebraic multiplicity one.
 Hence every Jordan block has size one, and each eigenvalue occurs exactly once.
 This proves part (a).
@@ -105,22 +105,22 @@ This proves part (a).
 ::: {.pf-step #s4}
 
 Over $\FF_p$ one has
-\[
+$$
 t^p-1=(t-1)^p.
-\]
+$$
 
 ::: pf-proof
 
 In characteristic $p$, all intermediate binomial coefficients
-\[
+$$
 \binom pk
 \qquad(0<k<p)
-\]
+$$
 vanish.
 Thus the binomial theorem gives
-\[
+$$
 (t-1)^p=t^p-1.
-\]
+$$
 
 :::
 
@@ -133,9 +133,9 @@ If $F=\FF_p$, the largest Jordan block of $a$ for the eigenvalue $1$ has size $p
 ::: pf-proof
 
 By step [](#s4){.pf-ref}, the minimal polynomial is
-\[
+$$
 m_a(t)=(t-1)^p.
-\]
+$$
 For a matrix whose only eigenvalue is $1$, the exponent of $(t-1)$ in the minimal polynomial is the size of the largest Jordan block for that eigenvalue.
 Hence a Jordan block of size $p$ occurs.
 
@@ -146,16 +146,16 @@ Hence a Jordan block of size $p$ occurs.
 ::: pf-step
 
 If $F=\FF_p$, the Jordan form of $a$ is the single block
-\[
+$$
 J_p(1).
-\]
+$$
 
 ::: pf-proof
 
 The matrix $a$ acts on a vector space of dimension $p$.
 By step [](#s5){.pf-ref}, one Jordan block already has size $p$, so it exhausts the entire dimension and no other block can occur.
 Thus the Jordan form is
-\[
+$$
 J_p(1)=
 \begin{pmatrix}
 1&1&0&\cdots&0\\
@@ -164,7 +164,7 @@ J_p(1)=
 0&\cdots&0&1&1\\
 0&\cdots&\cdots&0&1
 \end{pmatrix}.
-\]
+$$
 This proves part (b).
 
 :::

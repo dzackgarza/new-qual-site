@@ -49,21 +49,21 @@ Decompose the convolution into dyadic annuli.
 ::: pf-proof
 
 Fix $x\in\RR^n$ and $t>0$. From the assumed decay,
-\[
+$$
 |\phi_t(y)|
 \le C t^{-n}\left(1+\frac{|y|}{t}\right)^{-n-\varepsilon}.
-\]
+$$
 Therefore
-\[
+$$
 |f*\phi_t(x)|
 \le \int_{\RR^n}|f(x-y)|\,|\phi_t(y)|\,dy.
-\]
+$$
 Split $\RR^n$ into
-\[
+$$
 A_0:=\{|y|<t\},
 \qquad
 A_k:=\{2^{k-1}t\le |y|<2^kt\},\quad k\ge1.
-\]
+$$
 
 :::
 
@@ -76,18 +76,18 @@ Estimate the inner ball.
 ::: pf-proof
 
 On $A_0$,
-\[
+$$
 |\phi_t(y)|\le Ct^{-n}.
-\]
+$$
 Hence, writing $v_n=m(B(0,1))$,
-\[
+$$
 \begin{aligned}
 \int_{A_0}|f(x-y)|\,|\phi_t(y)|\,dy
 &\le Ct^{-n}\int_{|y|<t}|f(x-y)|\,dy\\
 &=Ct^{-n}\int_{B(x,t)}|f(z)|\,dz\\
 &\le Cv_n H(f)(x).
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -100,16 +100,16 @@ Estimate each outer annulus.
 ::: pf-proof
 
 If $y\in A_k$ with $k\ge1$, then
-\[
+$$
 1+\frac{|y|}{t}\ge 2^{k-1},
-\]
+$$
 so
-\[
+$$
 |\phi_t(y)|
 \le Ct^{-n}2^{-(k-1)(n+\varepsilon)}.
-\]
+$$
 Also $A_k\subset B(0,2^kt)$. Therefore
-\[
+$$
 \begin{aligned}
 \int_{A_k}|f(x-y)|\,|\phi_t(y)|\,dy
 &\le Ct^{-n}2^{-(k-1)(n+\varepsilon)}
@@ -118,7 +118,7 @@ Also $A_k\subset B(0,2^kt)$. Therefore
 v_n(2^kt)^n H(f)(x)\\
 &=Cv_n2^{n+\varepsilon}2^{-k\varepsilon}H(f)(x).
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -131,26 +131,26 @@ Sum the geometric series and take the supremum in $t$.
 ::: pf-proof
 
 Combining the preceding estimates gives
-\[
+$$
 |f*\phi_t(x)|
 \le Cv_n\left(
 1+2^{n+\varepsilon}\sum_{k=1}^\infty2^{-k\varepsilon}
 \right)H(f)(x).
-\]
+$$
 The series converges because $\varepsilon>0$. Thus there is a finite constant
-\[
+$$
 C'=Cv_n\left(
 1+2^{n+\varepsilon}\frac{2^{-\varepsilon}}{1-2^{-\varepsilon}}
 \right),
-\]
+$$
 depending only on $C,n,\varepsilon$, such that
-\[
+$$
 |f*\phi_t(x)|\le C'H(f)(x)
-\]
+$$
 for every $t>0$. Taking the supremum over $t$ yields
-\[
+$$
 \boxed{M_\phi(f)(x)\le C'H(f)(x).}
-\]
+$$
 The constant is independent of $f$.
 
 :::

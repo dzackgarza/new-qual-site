@@ -43,18 +43,18 @@ $$\begin{array}{rcl}
 
 Let $[\gamma]\in\pi_1(X,x_1)$.
 Then
-\[
+$$
 (f_*\beta_h)([\gamma])
 =
 [f\circ(h\cdot\gamma\cdot\bar h)].
-\]
+$$
 
 ::: pf-proof
 
 By definition,
-\[
+$$
 \beta_h([\gamma])=[h\cdot\gamma\cdot\bar h]
-\]
+$$
 as a loop based at $x_0$, and $f_*$ is induced by postcomposition with $f$.
 
 :::
@@ -64,19 +64,19 @@ as a loop based at $x_0$, and $f_*$ is induced by postcomposition with $f$.
 ::: {.pf-step #s2}
 
 One has
-\[
+$$
 f\circ(h\cdot\gamma\cdot\bar h)
 =
 (f\circ h)\cdot(f\circ\gamma)\cdot\overline{f\circ h}
-\]
+$$
 up to the standard concatenation parametrization.
 
 ::: pf-proof
 
 Postcomposition with $f$ preserves each of the three pieces of the concatenation, and
-\[
+$$
 f\circ\bar h=\overline{f\circ h}.
-\]
+$$
 
 :::
 
@@ -85,23 +85,23 @@ f\circ\bar h=\overline{f\circ h}.
 ::: pf-step
 
 Therefore
-\[
+$$
 (f_*\beta_h)([\gamma])
 =
 (\beta_{fh}f_*)([\gamma]).
-\]
+$$
 
 ::: pf-proof
 
 Using steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
-\[
+$$
 \begin{aligned}
 (f_*\beta_h)([\gamma])
 &=[(fh)\cdot(f\gamma)\cdot\overline{fh}]\\
 &=\beta_{fh}([f\gamma])\\
 &=(\beta_{fh}f_*)([\gamma]).
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -110,9 +110,9 @@ Using steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
 ::: pf-step
 
 Hence
-\[
+$$
 f_*\beta_h=\beta_{fh}f_*.
-\]
+$$
 
 ::: pf-proof
 

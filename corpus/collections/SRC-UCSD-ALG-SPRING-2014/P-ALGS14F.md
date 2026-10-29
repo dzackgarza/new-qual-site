@@ -26,17 +26,17 @@ audit:
 ::: {.problem}
 (a) Let $F \subseteq E$ be a field extension, and $f(x) \in F[x]$.
 Prove that
-\[
+$$
 E \otimes_F F[x]/\langle f(x) \rangle \simeq E[x]/\langle f(x) \rangle
-\]
+$$
 as $E$-algebras.
 (Notice that $\langle f(x) \rangle$ at the left hand side is $F[x]f(x)$ and in the right hand side is $E[x]f(x)$). (Hint: $\{x^i \mid 0 \leq i \leq \deg f - 1\}$ is an $F$-basis of $F[x]/\langle f(x) \rangle$.)
 
 (b) Let $E/F$ be a finite Galois extension.
 Prove that
-\[
+$$
 E \otimes_F E \simeq E \oplus \cdots \oplus E
-\]
+$$
 ($[E:F]$ times) as $E$-algebras.
 :::
 
@@ -47,13 +47,13 @@ E \otimes_F E \simeq E \oplus \cdots \oplus E
 ::: {.pf-step #s1}
 
 Part (a): define
-\[
+$$
 \Phi:E\otimes_F F[x]/(f)\longrightarrow E[x]/(f)
-\]
+$$
 by
-\[
+$$
 \Phi\bigl(e\otimes \overline{g(x)}\bigr)=\overline{e\,g(x)}.
-\]
+$$
 This is a well-defined homomorphism of $E$-algebras.
 
 ::: pf-proof
@@ -67,18 +67,18 @@ The map $(e,\bar g)\mapsto\overline{eg}$ is $F$-balanced and multiplicative, so 
 ::: pf-step
 
 If $f\ne0$ has degree $d$, then
-\[
+$$
 1,\bar x,\ldots,\bar x^{d-1}
-\]
+$$
 is an $F$-basis of $F[x]/(f)$.
 Hence
-\[
+$$
 1\otimes1,\ 1\otimes\bar x,\ldots,1\otimes\bar x^{d-1}
-\]
+$$
 is an $E$-basis of $E\otimes_F F[x]/(f)$, while
-\[
+$$
 1,\bar x,\ldots,\bar x^{d-1}
-\]
+$$
 is an $E$-basis of $E[x]/(f)$.
 The map $\Phi$ sends the first basis to the second, so it is an isomorphism.
 
@@ -94,9 +94,9 @@ Division by the same nonzero polynomial $f$ over $E$ gives the displayed basis o
 ::: pf-step
 
 If $f=0$, the same conclusion is the standard scalar-extension isomorphism
-\[
+$$
 E\otimes_F F[x]\cong E[x].
-\]
+$$
 Thus part (a) holds in all cases.
 
 ::: pf-proof
@@ -111,9 +111,9 @@ Both sides are free $E$-algebras on one generator, and the map of step [](#s1){.
 
 Part (b): because $E/F$ is finite Galois, it is finite separable.
 By the primitive element theorem there exists $\alpha\in E$ such that
-\[
+$$
 E=F(\alpha)\cong F[x]/(m_\alpha(x)),
-\]
+$$
 where $m_\alpha$ is the minimal polynomial of $\alpha$ over $F$.
 
 ::: pf-proof
@@ -127,13 +127,13 @@ Finite separable extensions are simple.
 ::: pf-step
 
 Applying part (a),
-\[
+$$
 E\otimes_F E
 \cong
 E\otimes_F F[x]/(m_\alpha)
 \cong
 E[x]/(m_\alpha).
-\]
+$$
 
 ::: pf-proof
 
@@ -146,9 +146,9 @@ Substitute the presentation of $E$ from step [](#s4){.pf-ref} into the second te
 ::: pf-step
 
 Since $E/F$ is Galois,
-\[
+$$
 m_\alpha(x)=\prod_{\sigma\in\operatorname{Gal}(E/F)}(x-\sigma(\alpha))
-\]
+$$
 in $E[x]$, and the roots $\sigma(\alpha)$ are pairwise distinct.
 
 ::: pf-proof
@@ -164,13 +164,13 @@ Because $E=F(\alpha)$, the $F$-embeddings of $E$ into an algebraic closure are e
 
 The ideals $(x-\sigma(\alpha))$ are pairwise comaximal.
 Therefore the Chinese remainder theorem gives
-\[
+$$
 E[x]/(m_\alpha)
 \cong
 \prod_{\sigma\in\operatorname{Gal}(E/F)}E[x]/(x-\sigma(\alpha))
 \cong
 \prod_{\sigma\in\operatorname{Gal}(E/F)}E.
-\]
+$$
 There are $|\operatorname{Gal}(E/F)|=[E:F]$ factors, proving the claim.
 
 ::: pf-proof

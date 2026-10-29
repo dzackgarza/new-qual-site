@@ -26,14 +26,14 @@ audit:
 
 ::: {.problem}
 Suppose $H_i\trianglelefteq G$ for $1\le i\le k$ and
-\[
+$$
 H_i\cap H_j=\{1\}
 \qquad(i\ne j).
-\]
+$$
 Prove that when $k=2$, the group $G$ contains a subgroup isomorphic to
-\[
+$$
 H_1\times H_2,
-\]
+$$
 but that this conclusion need not hold for $k\ge3$.
 :::
 

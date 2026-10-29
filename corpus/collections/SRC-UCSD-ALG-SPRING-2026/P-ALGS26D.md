@@ -49,12 +49,12 @@ Consider $\operatorname{supp}(M/N)$.
 
 ::: {.pf-step #s1}
 
-If \(\operatorname{ann}(M)\nsubseteq\mathfrak p\), then \(M_{\mathfrak p}=0\).
+If $\operatorname{ann}(M)\nsubseteq\mathfrak p$, then $M_{\mathfrak p}=0$.
 
 ::: pf-proof
 
-Choose \(a\in\operatorname{ann}(M)\setminus\mathfrak p\). In \(A_{\mathfrak p}\), the element \(a/1\) is a unit.
-It annihilates every element of \(M_{\mathfrak p}\), because \(aM=0\). A module annihilated by a unit is zero, so \(M_{\mathfrak p}=0\).
+Choose $a\in\operatorname{ann}(M)\setminus\mathfrak p$. In $A_{\mathfrak p}$, the element $a/1$ is a unit.
+It annihilates every element of $M_{\mathfrak p}$, because $aM=0$. A module annihilated by a unit is zero, so $M_{\mathfrak p}=0$.
 
 :::
 
@@ -62,19 +62,19 @@ It annihilates every element of \(M_{\mathfrak p}\), because \(aM=0\). A module 
 
 ::: {.pf-step #s2}
 
-If \(M\) is finitely generated and \(M_{\mathfrak p}=0\), then \(\operatorname{ann}(M)\nsubseteq\mathfrak p\).
+If $M$ is finitely generated and $M_{\mathfrak p}=0$, then $\operatorname{ann}(M)\nsubseteq\mathfrak p$.
 
 ::: pf-proof
 
-Let \(m_1,\dots,m_r\) generate \(M\). Since \(m_i/1=0\) in \(M_{\mathfrak p}\), for each \(i\) there exists \(s_i\in A\setminus\mathfrak p\) such that
-\[
+Let $m_1,\dots,m_r$ generate $M$. Since $m_i/1=0$ in $M_{\mathfrak p}$, for each $i$ there exists $s_i\in A\setminus\mathfrak p$ such that
+$$
 s_i m_i=0.
-\]
-Set \(s=s_1\cdots s_r\). Because \(\mathfrak p\) is prime and every \(s_i\notin\mathfrak p\), one has \(s\notin\mathfrak p\). Also \(sm_i=0\) for every generator \(m_i\), so \(sM=0\). Hence
-\[
+$$
+Set $s=s_1\cdots s_r$. Because $\mathfrak p$ is prime and every $s_i\notin\mathfrak p$, one has $s\notin\mathfrak p$. Also $sm_i=0$ for every generator $m_i$, so $sM=0$. Hence
+$$
 s\in\operatorname{ann}(M)\setminus\mathfrak p.
-\]
-Thus \(\operatorname{ann}(M)\nsubseteq\mathfrak p\).
+$$
+Thus $\operatorname{ann}(M)\nsubseteq\mathfrak p$.
 
 :::
 
@@ -82,20 +82,20 @@ Thus \(\operatorname{ann}(M)\nsubseteq\mathfrak p\).
 
 ::: pf-step
 
-Therefore, for finitely generated \(M\),
-\[
+Therefore, for finitely generated $M$,
+$$
 \operatorname{supp}M
  =\{\mathfrak p\in\operatorname{Spec}(A):\operatorname{ann}(M)\subseteq\mathfrak p\}.
-\]
+$$
 
 ::: pf-proof
 
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
-\[
+$$
 M_{\mathfrak p}=0
 \quad\Longleftrightarrow\quad
 \operatorname{ann}(M)\nsubseteq\mathfrak p.
-\]
+$$
 Negating both conditions gives the displayed equality.
 This proves part (a).
 
@@ -105,15 +105,15 @@ This proves part (a).
 
 ::: {.pf-step #s4}
 
-Suppose \(\mathfrak p_0\in U_d(M)\). There exist \(x_1,\dots,x_d\in M\) such that, for \(N=\langle x_1,\dots,x_d\rangle\),
-\[
+Suppose $\mathfrak p_0\in U_d(M)$. There exist $x_1,\dots,x_d\in M$ such that, for $N=\langle x_1,\dots,x_d\rangle$,
+$$
 N_{\mathfrak p_0}=M_{\mathfrak p_0}.
-\]
+$$
 
 ::: pf-proof
 
-Choose \(d\) generators of the localized module \(M_{\mathfrak p_0}\). Each is of the form \(y_i/s_i\) with \(y_i\in M\) and \(s_i\notin\mathfrak p_0\). Since \(s_i/1\) is a unit in \(A_{\mathfrak p_0}\), replacing \(y_i/s_i\) by \(y_i/1\) does not change the submodule generated.
-Take \(x_i=y_i\).
+Choose $d$ generators of the localized module $M_{\mathfrak p_0}$. Each is of the form $y_i/s_i$ with $y_i\in M$ and $s_i\notin\mathfrak p_0$. Since $s_i/1$ is a unit in $A_{\mathfrak p_0}$, replacing $y_i/s_i$ by $y_i/1$ does not change the submodule generated.
+Take $x_i=y_i$.
 
 :::
 
@@ -121,18 +121,18 @@ Take \(x_i=y_i\).
 
 ::: {.pf-step #s5}
 
-The finitely generated module \(M/N\) satisfies
-\[
+The finitely generated module $M/N$ satisfies
+$$
 (M/N)_{\mathfrak p_0}=0.
-\]
+$$
 
 ::: pf-proof
 
-Localization is exact, and step [](#s4){.pf-ref} gives \(N_{\mathfrak p_0}=M_{\mathfrak p_0}\). Hence
-\[
+Localization is exact, and step [](#s4){.pf-ref} gives $N_{\mathfrak p_0}=M_{\mathfrak p_0}$. Hence
+$$
 (M/N)_{\mathfrak p_0}\cong M_{\mathfrak p_0}/N_{\mathfrak p_0}=0.
-\]
-Because \(M\) is finitely generated, so is its quotient \(M/N\).
+$$
+Because $M$ is finitely generated, so is its quotient $M/N$.
 
 :::
 
@@ -141,13 +141,13 @@ Because \(M\) is finitely generated, so is its quotient \(M/N\).
 ::: pf-step
 
 There exists
-\[
+$$
 a_0\in\operatorname{ann}(M/N)\setminus\mathfrak p_0.
-\]
+$$
 
 ::: pf-proof
 
-Apply step [](#s2){.pf-ref} to the finitely generated module \(M/N\) and the prime \(\mathfrak p_0\), using step [](#s5){.pf-ref}.
+Apply step [](#s2){.pf-ref} to the finitely generated module $M/N$ and the prime $\mathfrak p_0$, using step [](#s5){.pf-ref}.
 
 :::
 
@@ -155,15 +155,15 @@ Apply step [](#s2){.pf-ref} to the finitely generated module \(M/N\) and the pri
 
 ::: {.pf-step #s7}
 
-If \(\mathfrak q\in\operatorname{Spec}(A)\) and \(a_0\notin\mathfrak q\), then \(M_{\mathfrak q}=N_{\mathfrak q}\).
+If $\mathfrak q\in\operatorname{Spec}(A)$ and $a_0\notin\mathfrak q$, then $M_{\mathfrak q}=N_{\mathfrak q}$.
 
 ::: pf-proof
 
-Since \(a_0\in\operatorname{ann}(M/N)\) and \(a_0\notin\mathfrak q\), part (a), applied to \(M/N\), gives
-\[
+Since $a_0\in\operatorname{ann}(M/N)$ and $a_0\notin\mathfrak q$, part (a), applied to $M/N$, gives
+$$
 (M/N)_{\mathfrak q}=0.
-\]
-Localizing the exact sequence \(N\to M\to M/N\to0\) therefore yields \(N_{\mathfrak q}=M_{\mathfrak q}\).
+$$
+Localizing the exact sequence $N\to M\to M/N\to0$ therefore yields $N_{\mathfrak q}=M_{\mathfrak q}$.
 
 :::
 
@@ -172,13 +172,13 @@ Localizing the exact sequence \(N\to M\to M/N\to0\) therefore yields \(N_{\mathf
 ::: pf-step
 
 Hence
-\[
+$$
 \{\mathfrak q\in\operatorname{Spec}(A):a_0\notin\mathfrak q\}\subseteq U_d(M).
-\]
+$$
 
 ::: pf-proof
 
-For every such \(\mathfrak q\), step [](#s7){.pf-ref} gives \(M_{\mathfrak q}=N_{\mathfrak q}\). The latter is generated by the images of \(x_1,\dots,x_d\), so \(M_{\mathfrak q}\) can be generated by \(d\) elements.
+For every such $\mathfrak q$, step [](#s7){.pf-ref} gives $M_{\mathfrak q}=N_{\mathfrak q}$. The latter is generated by the images of $x_1,\dots,x_d$, so $M_{\mathfrak q}$ can be generated by $d$ elements.
 This proves part (b).
 
 :::

@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Let $f_0,f_1,\dots:\RR^d\to\RR$ be Lebesgue measurable.
 Prove that
-\[
+$$
 \{x:(f_0(x),f_1(x),\dots)\text{ converges}\}
-\]
+$$
 is measurable.
 :::
 

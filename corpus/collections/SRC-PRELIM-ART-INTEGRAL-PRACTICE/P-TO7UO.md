@@ -23,20 +23,20 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int \frac{1+e^x}{1-e^x}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}
 Put $u=e^x$, so $dx=du/u$. Then
-\[
+$$
 \frac{1+u}{u(1-u)}=\frac1u+\frac2{1-u}.
-\]
+$$
 Hence
-\[
+$$
 \int \frac{1+e^x}{1-e^x}\,dx
 =\ln u-2\ln|1-u|+C
 =\boxed{x-2\ln|1-e^x|+C}.
-\]
+$$
 :::

@@ -27,10 +27,10 @@ audit:
 
 ::: {.problem}
 Let $f:[0,1]\to\CC$ be continuous and define
-\[
+$$
 g(z)=\int_0^1 f(t)e^{tz}\,dt,
 \qquad z\in\CC.
-\]
+$$
 Prove that $g$ is entire.
 :::
 

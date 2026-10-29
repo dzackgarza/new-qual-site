@@ -40,19 +40,19 @@ The symmetric partial sums converge to $f$ in $L^2$.
 ::: pf-proof
 
 Let
-\[
+$$
 V_N=\operatorname{span}\{e^{inx}:-N\le n\le N\}.
-\]
+$$
 The function $S_Nf$ is the orthogonal projection of $f$ onto $V_N$ in $L^2([0,2\pi])$.
 
 The union of the spaces $V_N$ is the set of trigonometric polynomials. Trigonometric polynomials are uniformly dense in the continuous $2\pi$-periodic functions by Stone--Weierstrass, and continuous functions are dense in $L^2([0,2\pi])$. Hence
-\[
+$$
 \overline{\bigcup_{N\ge0}V_N}^{\,L^2}=L^2([0,2\pi]).
-\]
+$$
 Therefore the orthogonal projections satisfy
-\[
+$$
 \|S_Nf-f\|_2\longrightarrow0.
-\]
+$$
 
 :::
 
@@ -65,35 +65,35 @@ Extract a subsequence converging almost everywhere.
 ::: pf-proof
 
 Choose integers
-\[
+$$
 N_1<N_2<\cdots
-\]
+$$
 so that
-\[
+$$
 \|S_{N_k}f-f\|_2^2<2^{-3k}
-\]
+$$
 for every $k$. Set
-\[
+$$
 E_k=\{x:|S_{N_k}f(x)-f(x)|>2^{-k}\}.
-\]
+$$
 By Chebyshev's inequality,
-\[
+$$
 m(E_k)
 \le 2^{2k}\|S_{N_k}f-f\|_2^2
 <2^{-k}.
-\]
+$$
 Thus
-\[
+$$
 \sum_{k=1}^\infty m(E_k)<\infty.
-\]
+$$
 By the first Borel--Cantelli lemma, almost every $x$ belongs to only finitely many $E_k$. For such $x$,
-\[
+$$
 |S_{N_k}f(x)-f(x)|\le2^{-k}
-\]
+$$
 for all sufficiently large $k$, and therefore
-\[
+$$
 \boxed{S_{N_k}f(x)\to f(x)\quad\text{for a.e. }x.}
-\]
+$$
 
 :::
 

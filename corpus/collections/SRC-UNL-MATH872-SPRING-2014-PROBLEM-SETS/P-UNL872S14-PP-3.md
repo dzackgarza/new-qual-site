@@ -31,9 +31,9 @@ Draw/describe the quotient Y/H of Y by the action of H.
 ::: {.solution}
 
 Let
-\[
+$$
 G=\langle a,b\mid a^2=1,\ b^3=1\rangle.
-\]
+$$
 
 ## Part (a)
 
@@ -42,28 +42,28 @@ G=\langle a,b\mid a^2=1,\ b^3=1\rangle.
 ::: {.pf-step #s1-1}
 
 One has
-\[
+$$
 \boxed{
 G\cong
 \ZZ/2 * \ZZ/3}.
-\]
+$$
 
 
 ::: pf-proof
 
 The presentation splits into the two factor presentations
-\[
+$$
 \langle a\mid a^2=1\rangle
 \cong
 \ZZ/2
-\]
+$$
 and
-\[
+$$
 \langle b\mid b^3=1\rangle
 \cong
 \ZZ/3,
-\]
-with no relation involving both \(a\) and \(b\). This is exactly the free
+$$
+with no relation involving both $a$ and $b$. This is exactly the free
 product presentation.
 
 :::
@@ -73,27 +73,27 @@ product presentation.
 ::: {.pf-step #s1-2}
 
 The nonidentity elements of the two factors are
-\[
+$$
 \boxed{
 a}
-\]
+$$
 and
-\[
+$$
 \boxed{
 b,\ b^2}.
-\]
+$$
 
 
 ::: pf-proof
 
 The first factor has two elements
-\[
+$$
 1,a,
-\]
+$$
 and the second has three elements
-\[
+$$
 1,b,b^2.
-\]
+$$
 
 :::
 
@@ -101,23 +101,23 @@ and the second has three elements
 
 ::: {.pf-step #s1-3}
 
-Every nonidentity element of \(G\) has a unique reduced form
-\[
+Every nonidentity element of $G$ has a unique reduced form
+$$
 \boxed{
 x_1x_2\cdots x_r}
-\]
-where each \(x_i\) belongs to
-\[
+$$
+where each $x_i$ belongs to
+$$
 \{a,b,b^2\},
-\]
+$$
 and consecutive letters never both lie in the same factor.
 
 
 ::: pf-proof
 
 This is the normal form theorem for free products. Since the only
-nonidentity letters available in the \(\ZZ/2\) factor and
-\(\ZZ/3\) factor are those listed in step [](#s1-2){.pf-ref}, the stated description
+nonidentity letters available in the $\ZZ/2$ factor and
+$\ZZ/3$ factor are those listed in step [](#s1-2){.pf-ref}, the stated description
 is exactly the reduced-sequence normal form.
 
 :::
@@ -126,8 +126,8 @@ is exactly the reduced-sequence normal form.
 
 ::: {.pf-step #s1-4}
 
-Concretely, every reduced word alternates between \(a\) and one of
-\(b,b^2\).
+Concretely, every reduced word alternates between $a$ and one of
+$b,b^2$.
 
 
 ::: pf-proof
@@ -141,18 +141,18 @@ letter or cancel, contradicting reducedness.
 
 ::: {.pf-step #s1-5}
 
-The presentation complex \(X\) has one vertex, two \(1\)-cells
-\(a,b\), and two \(2\)-cells attached along
-\[
+The presentation complex $X$ has one vertex, two $1$-cells
+$a,b$, and two $2$-cells attached along
+$$
 \boxed{a^2}
 \qquad\text{and}\qquad
 \boxed{b^3}.
-\]
+$$
 
 
 ::: pf-proof
 
-This is the standard CW complex associated to the presentation of \(G\).
+This is the standard CW complex associated to the presentation of $G$.
 
 :::
 
@@ -161,22 +161,22 @@ This is the standard CW complex associated to the presentation of \(G\).
 ::: {.pf-step #s1-6}
 
 Hence
-\[
+$$
 \boxed{
 X\cong
 \RP^2
 \vee
 M(\ZZ/3,1)},
-\]
-where \(M(\ZZ/3,1)\) is the \(2\)-complex obtained from \(S^1\) by
-attaching a \(2\)-cell by a degree-\(3\) map.
+$$
+where $M(\ZZ/3,1)$ is the $2$-complex obtained from $S^1$ by
+attaching a $2$-cell by a degree-$3$ map.
 
 
 ::: pf-proof
 
-The \(a\)-circle together with the \(a^2\)-cell is the standard CW structure
-on \(\RP^2\). The \(b\)-circle together with the \(b^3\)-cell is the
-standard Moore-space presentation complex for \(\ZZ/3\). The two
+The $a$-circle together with the $a^2$-cell is the standard CW structure
+on $\RP^2$. The $b$-circle together with the $b^3$-cell is the
+standard Moore-space presentation complex for $\ZZ/3$. The two
 subcomplexes meet only at the unique vertex.
 
 :::
@@ -185,14 +185,14 @@ subcomplexes meet only at the unique vertex.
 
 ::: {.pf-step #s1-7}
 
-The Cayley complex \(Y\) has vertex set \(G\).
+The Cayley complex $Y$ has vertex set $G$.
 
 
 ::: pf-proof
 
 The Cayley complex is the universal cover of the presentation complex, and
 the fiber over the unique vertex is naturally identified with the group
-\(G\).
+$G$.
 
 :::
 
@@ -200,19 +200,19 @@ the fiber over the unique vertex is naturally identified with the group
 
 ::: {.pf-step #s1-8}
 
-From each vertex \(g\in G\), there is an \(a\)-edge
-\[
+From each vertex $g\in G$, there is an $a$-edge
+$$
 g\longrightarrow ga
-\]
-and a \(b\)-edge
-\[
+$$
+and a $b$-edge
+$$
 g\longrightarrow gb.
-\]
+$$
 
 
 ::: pf-proof
 
-These are the lifts of the two oriented \(1\)-cells of \(X\).
+These are the lifts of the two oriented $1$-cells of $X$.
 
 :::
 
@@ -220,28 +220,28 @@ These are the lifts of the two oriented \(1\)-cells of \(X\).
 
 ::: {.pf-step #s1-9}
 
-The \(a\)-edges occur in \(2\)-cycles and the \(b\)-edges occur in
-\(3\)-cycles.
+The $a$-edges occur in $2$-cycles and the $b$-edges occur in
+$3$-cycles.
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 a^2=1,
-\]
-right multiplication by \(a\) has orbit
-\[
+$$
+right multiplication by $a$ has orbit
+$$
 g\leftrightarrow ga.
-\]
+$$
 Since
-\[
+$$
 b^3=1,
-\]
-right multiplication by \(b\) has orbit
-\[
+$$
+right multiplication by $b$ has orbit
+$$
 g\to gb\to gb^2\to g.
-\]
+$$
 
 :::
 
@@ -249,14 +249,14 @@ g\to gb\to gb^2\to g.
 
 ::: {.pf-step #s1-10}
 
-At every vertex \(g\), attach one \(a^2\)-cell along the lifted
-\(2\)-edge \(a\)-cycle and one \(b^3\)-cell along the lifted \(3\)-edge
-\(b\)-cycle.
+At every vertex $g$, attach one $a^2$-cell along the lifted
+$2$-edge $a$-cycle and one $b^3$-cell along the lifted $3$-edge
+$b$-cycle.
 
 
 ::: pf-proof
 
-Every \(2\)-cell of the base presentation complex has one lift beginning at
+Every $2$-cell of the base presentation complex has one lift beginning at
 each vertex of the universal cover. Its attaching path is obtained by
 reading the corresponding relator from that vertex.
 
@@ -266,12 +266,12 @@ reading the corresponding relator from that vertex.
 
 ::: {.pf-step #s1-11}
 
-This Cayley complex \(Y\) is simply connected.
+This Cayley complex $Y$ is simply connected.
 
 
 ::: pf-proof
 
-It is the universal covering complex of \(X\).
+It is the universal covering complex of $X$.
 
 :::
 
@@ -280,24 +280,24 @@ It is the universal covering complex of \(X\).
 ::: {.pf-step #s1-12}
 
 One has
-\[
+$$
 \boxed{
 H=\{1,a\}\cong\ZZ/2}.
-\]
+$$
 
 
 ::: pf-proof
 
 The relation
-\[
+$$
 a^2=1
-\]
-shows that every power of \(a\) is \(1\) or \(a\). The generator \(a\) is
+$$
+shows that every power of $a$ is $1$ or $a$. The generator $a$ is
 nontrivial in the free product
-\[
+$$
 \ZZ/2 * \ZZ/3,
-\]
-so \(H\) has exactly two elements.
+$$
+so $H$ has exactly two elements.
 
 :::
 
@@ -305,17 +305,17 @@ so \(H\) has exactly two elements.
 
 ::: {.pf-step #s1-13}
 
-The quotient \(Y/H\) is the Schreier complex with vertex set
-\[
+The quotient $Y/H$ is the Schreier complex with vertex set
+$$
 \boxed{H\backslash G}.
-\]
+$$
 
 
 ::: pf-proof
 
-The subgroup \(H\) acts on the universal cover \(Y\) by deck
-transformations. Orbits of vertices are left \(H\)-cosets, so the quotient
-vertices are the cosets \(Hg\).
+The subgroup $H$ acts on the universal cover $Y$ by deck
+transformations. Orbits of vertices are left $H$-cosets, so the quotient
+vertices are the cosets $Hg$.
 
 :::
 
@@ -323,21 +323,21 @@ vertices are the cosets \(Hg\).
 
 ::: {.pf-step #s1-14}
 
-From a vertex \(Hg\), the quotient has an \(a\)-edge
-\[
+From a vertex $Hg$, the quotient has an $a$-edge
+$$
 \boxed{
 Hg\longrightarrow Hga}
-\]
-and a \(b\)-edge
-\[
+$$
+and a $b$-edge
+$$
 \boxed{
 Hg\longrightarrow Hgb}.
-\]
+$$
 
 
 ::: pf-proof
 
-These are the images of the corresponding Cayley edges in \(Y\).
+These are the images of the corresponding Cayley edges in $Y$.
 
 :::
 
@@ -345,15 +345,15 @@ These are the images of the corresponding Cayley edges in \(Y\).
 
 ::: {.pf-step #s1-15}
 
-Attach to \(Y/H\), at every vertex \(Hg\), one \(2\)-cell along the
-closed path labeled \(a^2\) and one along the closed path labeled \(b^3\).
+Attach to $Y/H$, at every vertex $Hg$, one $2$-cell along the
+closed path labeled $a^2$ and one along the closed path labeled $b^3$.
 
 
 ::: pf-proof
 
-The \(2\)-cells of the quotient are \(H\)-orbits of the lifted relator
+The $2$-cells of the quotient are $H$-orbits of the lifted relator
 cells. Equivalently, this is the standard Schreier complex for the subgroup
-\(H\).
+$H$.
 
 :::
 
@@ -361,16 +361,16 @@ cells. Equivalently, this is the standard Schreier complex for the subgroup
 
 ::: {.pf-step #s1-16}
 
-The distinguished vertex \(H\) has an \(a\)-loop.
+The distinguished vertex $H$ has an $a$-loop.
 
 
 ::: pf-proof
 
-Since \(a\in H\),
-\[
+Since $a\in H$,
+$$
 Ha=H.
-\]
-Thus the \(a\)-edge based at \(H\) begins and ends at the same quotient
+$$
+Thus the $a$-edge based at $H$ begins and ends at the same quotient
 vertex.
 
 :::
@@ -379,15 +379,15 @@ vertex.
 
 ::: {.pf-step #s1-17}
 
-All \(b\)-orbits in the quotient graph are \(3\)-cycles.
+All $b$-orbits in the quotient graph are $3$-cycles.
 
 
 ::: pf-proof
 
-Right multiplication by \(b\) has order \(3\). A shorter orbit would mean
-that some conjugate of a nontrivial power of \(b\) lies in \(H\). But every
-nonidentity element of \(H\) has order \(2\), while \(b,b^2\) have order
-\(3\). Hence no orbit has size \(1\), so every orbit has size \(3\).
+Right multiplication by $b$ has order $3$. A shorter orbit would mean
+that some conjugate of a nontrivial power of $b$ lies in $H$. But every
+nonidentity element of $H$ has order $2$, while $b,b^2$ have order
+$3$. Hence no orbit has size $1$, so every orbit has size $3$.
 
 :::
 
@@ -395,24 +395,24 @@ nonidentity element of \(H\) has order \(2\), while \(b,b^2\) have order
 
 ::: {.pf-step #s1-18}
 
-Except at the vertex \(H\), the \(a\)-orbits occur in pairs joined
-by the two oriented lifts of the \(a\)-edge.
+Except at the vertex $H$, the $a$-orbits occur in pairs joined
+by the two oriented lifts of the $a$-edge.
 
 
 ::: pf-proof
 
-Right multiplication by \(a\) is an involution on the coset set. A fixed
-coset \(Hg\) would satisfy
-\[
+Right multiplication by $a$ is an involution on the coset set. A fixed
+coset $Hg$ would satisfy
+$$
 Hga=Hg,
-\]
+$$
 equivalently
-\[
+$$
 gag^{-1}\in H.
-\]
-In the free product \(\ZZ/2*\ZZ/3\), a conjugate of the factor
-generator \(a\) lies in \(H=\langle a\rangle\) only when the coset is the
-distinguished one. Thus all remaining \(a\)-orbits have size \(2\).
+$$
+In the free product $\ZZ/2*\ZZ/3$, a conjugate of the factor
+generator $a$ lies in $H=\langle a\rangle$ only when the coset is the
+distinguished one. Thus all remaining $a$-orbits have size $2$.
 
 :::
 
@@ -420,15 +420,15 @@ distinguished one. Thus all remaining \(a\)-orbits have size \(2\).
 
 ::: {.pf-step #s1-19}
 
-Steps [](#s1-13){.pf-ref} through [](#s1-18){.pf-ref} completely describe the quotient \(Y/H\):
-an infinite Schreier graph of \(b\)-triangles joined by \(a\)-edges, with
-one \(a\)-loop at the distinguished coset, together with the lifted
-\(a^2\)- and \(b^3\)-cells.
+Steps [](#s1-13){.pf-ref} through [](#s1-18){.pf-ref} completely describe the quotient $Y/H$:
+an infinite Schreier graph of $b$-triangles joined by $a$-edges, with
+one $a$-loop at the distinguished coset, together with the lifted
+$a^2$- and $b^3$-cells.
 
 
 ::: pf-proof
 
-The vertex set, all \(1\)-cells, and all \(2\)-cell attaching maps have been
+The vertex set, all $1$-cells, and all $2$-cell attaching maps have been
 specified in steps [](#s1-13){.pf-ref} through [](#s1-18){.pf-ref}.
 
 :::
@@ -438,24 +438,24 @@ specified in steps [](#s1-13){.pf-ref} through [](#s1-18){.pf-ref}.
 ::: {.pf-step #s1-20}
 
 For a reduced word
-\[
+$$
 w=x_1\cdots x_r,
-\]
-the value \(h(w)\) depends only on the parity of the number of occurrences of
-the letter \(a\).
+$$
+the value $h(w)$ depends only on the parity of the number of occurrences of
+the letter $a$.
 
 
 ::: pf-proof
 
-Every \(b\) or \(b^2\) letter maps to the identity because
-\[
+Every $b$ or $b^2$ letter maps to the identity because
+$$
 h(b)=1.
-\]
-Every \(a\)-letter maps to \(c\). Hence
-\[
+$$
+Every $a$-letter maps to $c$. Hence
+$$
 h(w)=c^{N_a(w)},
-\]
-where \(N_a(w)\) is the number of \(a\)-letters.
+$$
+where $N_a(w)$ is the number of $a$-letters.
 
 :::
 
@@ -464,22 +464,22 @@ where \(N_a(w)\) is the number of \(a\)-letters.
 ::: {.pf-step #s1-21}
 
 Therefore
-\[
+$$
 \boxed{
 w\in K
 \iff
 N_a(w)\text{ is even}}.
-\]
+$$
 
 
 ::: pf-proof
 
-The group \(\ZZ/2\) has
-\[
+The group $\ZZ/2$ has
+$$
 c^m=1
 \iff
 m\text{ is even}.
-\]
+$$
 Apply step [](#s1-20){.pf-ref}.
 
 :::
@@ -488,15 +488,15 @@ Apply step [](#s1-20){.pf-ref}.
 
 ::: {.pf-step #s1-22}
 
-The subgroup \(K\) has index \(2\) and is normal.
+The subgroup $K$ has index $2$ and is normal.
 
 
 ::: pf-proof
 
-It is the kernel of the surjective homomorphism \(h\). Hence
-\[
+It is the kernel of the surjective homomorphism $h$. Hence
+$$
 G/K\cong\ZZ/2.
-\]
+$$
 
 :::
 
@@ -504,18 +504,18 @@ G/K\cong\ZZ/2.
 
 ::: {.pf-step #s1-23}
 
-The quotient \(Y/K\) has exactly two vertices:
-\[
+The quotient $Y/K$ has exactly two vertices:
+$$
 \boxed{
 v_0=K,
 \qquad
 v_1=Ka}.
-\]
+$$
 
 
 ::: pf-proof
 
-Vertices are the \(K\)-cosets. Step [](#s1-22){.pf-ref} gives exactly two cosets.
+Vertices are the $K$-cosets. Step [](#s1-22){.pf-ref} gives exactly two cosets.
 
 :::
 
@@ -523,22 +523,22 @@ Vertices are the \(K\)-cosets. Step [](#s1-22){.pf-ref} gives exactly two cosets
 
 ::: {.pf-step #s1-24}
 
-Each \(b\)-edge is a loop at its vertex.
+Each $b$-edge is a loop at its vertex.
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 b\in K,
-\]
-right multiplication by \(b\) does not change the \(K\)-coset:
-\[
+$$
+right multiplication by $b$ does not change the $K$-coset:
+$$
 Kb=K,
 \qquad
 Kab=Ka
-\]
-because \(K\) is normal.
+$$
+because $K$ is normal.
 
 :::
 
@@ -546,23 +546,23 @@ because \(K\) is normal.
 
 ::: {.pf-step #s1-25}
 
-The two lifted \(a\)-edges run between \(v_0\) and \(v_1\), one in
+The two lifted $a$-edges run between $v_0$ and $v_1$, one in
 each orientation.
 
 
 ::: pf-proof
 
-Right multiplication by \(a\) swaps the two quotient cosets because
-\[
+Right multiplication by $a$ swaps the two quotient cosets because
+$$
 h(a)=c\ne1.
-\]
+$$
 Thus
-\[
+$$
 Ka=v_1,
 \qquad
 Kaa=K=v_0.
-\]
-There is one lifted oriented \(a\)-edge beginning at each vertex.
+$$
+There is one lifted oriented $a$-edge beginning at each vertex.
 
 :::
 
@@ -570,15 +570,15 @@ There is one lifted oriented \(a\)-edge beginning at each vertex.
 
 ::: {.pf-step #s1-26}
 
-The quotient \(Y/K\) has two \(a^2\)-cells, one based at each vertex,
-and two \(b^3\)-cells, one attached to each \(b\)-loop by degree \(3\).
+The quotient $Y/K$ has two $a^2$-cells, one based at each vertex,
+and two $b^3$-cells, one attached to each $b$-loop by degree $3$.
 
 
 ::: pf-proof
 
-The cover has two sheets, so each base \(2\)-cell has exactly two lifts.
-Reading \(a^2\) traverses the two \(a\)-edges and closes; reading \(b^3\)
-goes three times around the \(b\)-loop at the chosen vertex.
+The cover has two sheets, so each base $2$-cell has exactly two lifts.
+Reading $a^2$ traverses the two $a$-edges and closes; reading $b^3$
+goes three times around the $b$-loop at the chosen vertex.
 
 :::
 
@@ -586,12 +586,12 @@ goes three times around the \(b\)-loop at the chosen vertex.
 
 ::: {.pf-step #s1-27}
 
-Choose one of the two \(a\)-edges as a maximal tree and collapse it.
+Choose one of the two $a$-edges as a maximal tree and collapse it.
 
 
 ::: pf-proof
 
-The \(1\)-skeleton has two vertices, so any one edge joining them is a
+The $1$-skeleton has two vertices, so any one edge joining them is a
 maximal tree.
 
 :::
@@ -601,20 +601,20 @@ maximal tree.
 ::: {.pf-step #s1-28}
 
 After this collapse, let
-\[
+$$
 x
-\]
-denote the remaining \(a\)-edge loop and let
-\[
+$$
+denote the remaining $a$-edge loop and let
+$$
 u,v
-\]
-denote the two \(b\)-loops.
+$$
+denote the two $b$-loops.
 
 
 ::: pf-proof
 
-Collapsing the tree identifies the two vertices. The other \(a\)-edge and
-the two \(b\)-edges become three loop generators.
+Collapsing the tree identifies the two vertices. The other $a$-edge and
+the two $b$-edges become three loop generators.
 
 :::
 
@@ -622,17 +622,17 @@ the two \(b\)-edges become three loop generators.
 
 ::: {.pf-step #s1-29}
 
-The lifted \(a^2\)-cells impose the relation
-\[
+The lifted $a^2$-cells impose the relation
+$$
 \boxed{x=1}.
-\]
+$$
 
 
 ::: pf-proof
 
-Each lifted \(a^2\)-boundary consists of the tree \(a\)-edge followed by the
-remaining \(a\)-edge, or the reverse cyclic order. After the tree edge is
-collapsed, each attaching loop is just \(x\) or \(x^{-1}\). Thus \(x\) is
+Each lifted $a^2$-boundary consists of the tree $a$-edge followed by the
+remaining $a$-edge, or the reverse cyclic order. After the tree edge is
+collapsed, each attaching loop is just $x$ or $x^{-1}$. Thus $x$ is
 killed.
 
 :::
@@ -641,18 +641,18 @@ killed.
 
 ::: {.pf-step #s1-30}
 
-The two \(b^3\)-cells impose
-\[
+The two $b^3$-cells impose
+$$
 \boxed{u^3=1}
 \qquad\text{and}\qquad
 \boxed{v^3=1}.
-\]
+$$
 
 
 ::: pf-proof
 
-Each \(b^3\)-cell wraps three times around the \(b\)-loop at its vertex.
-After collapsing the tree, these are the loops \(u^3\) and \(v^3\).
+Each $b^3$-cell wraps three times around the $b$-loop at its vertex.
+After collapsing the tree, these are the loops $u^3$ and $v^3$.
 
 :::
 
@@ -661,18 +661,18 @@ After collapsing the tree, these are the loops \(u^3\) and \(v^3\).
 ::: {.pf-step #s1-31}
 
 Hence
-\[
+$$
 \boxed{
 \pi_1(Y/K)
 \cong
 \langle u,v\mid u^3=1,\ v^3=1\rangle}.
-\]
+$$
 
 
 ::: pf-proof
 
-The collapsed \(1\)-skeleton has generators \(x,u,v\). Step [](#s1-29){.pf-ref} kills
-\(x\), and step [](#s1-30){.pf-ref} gives the only remaining relators.
+The collapsed $1$-skeleton has generators $x,u,v$. Step [](#s1-29){.pf-ref} kills
+$x$, and step [](#s1-30){.pf-ref} gives the only remaining relators.
 
 :::
 
@@ -681,18 +681,18 @@ The collapsed \(1\)-skeleton has generators \(x,u,v\). Step [](#s1-29){.pf-ref} 
 ::: {.pf-step #s1-32}
 
 Therefore
-\[
+$$
 \boxed{
 \pi_1(Y/K)
 \cong
 \ZZ/3 * \ZZ/3}.
-\]
+$$
 
 
 ::: pf-proof
 
 The presentation in step [](#s1-31){.pf-ref} has two independent cyclic factors of order
-\(3\) and no relation mixing them, which is exactly their free product.
+$3$ and no relation mixing them, which is exactly their free product.
 
 :::
 
@@ -700,27 +700,27 @@ The presentation in step [](#s1-31){.pf-ref} has two independent cyclic factors 
 
 ::: {.pf-step #s1-33}
 
-Since \(Y\) is simply connected, this fundamental group is also
-isomorphic to \(K\):
-\[
+Since $Y$ is simply connected, this fundamental group is also
+isomorphic to $K$:
+$$
 \boxed{
 K
 \cong
 \ZZ/3 * \ZZ/3}.
-\]
+$$
 
 
 ::: pf-proof
 
 The quotient
-\[
+$$
 Y\to Y/K
-\]
-is the covering corresponding to the subgroup \(K\le G=\pi_1(X)\).
-Because \(Y\) is the universal cover,
-\[
+$$
+is the covering corresponding to the subgroup $K\le G=\pi_1(X)$.
+Because $Y$ is the universal cover,
+$$
 \pi_1(Y/K)\cong K.
-\]
+$$
 Apply step [](#s1-32){.pf-ref}.
 
 :::

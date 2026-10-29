@@ -47,9 +47,9 @@ Every proper submodule of a Noetherian module is a finite intersection of inters
 ::: pf-proof
 
 Suppose otherwise, and let $\mathcal S$ be the family of proper submodules not admitting such a finite intersection. The ascending chain condition implies that every nonempty family of submodules has a maximal member, so choose an inclusion-maximal $N\in\mathcal S$. It cannot itself be intersection-indecomposable, since then a single factor would suffice. Hence
-\[
+$$
 N=N_1\cap N_2,\qquad N\subsetneq N_1,\quad N\subsetneq N_2.
-\]
+$$
 Both $N_i$ are proper, since $N_1=M$ would imply $N=N_2$, and similarly for $N_2=M$. By maximality of $N$, each $N_i$ is a finite intersection of intersection-indecomposable submodules. Combining these two finite intersections gives such a decomposition of $N$, contradicting $N\in\mathcal S$.
 
 :::

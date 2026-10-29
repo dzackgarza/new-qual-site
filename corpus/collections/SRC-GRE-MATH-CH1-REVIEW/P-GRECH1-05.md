@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let $f$ be a real-valued function whose inverse is given by the equation:
 
-\[
+$$
 f^{-1}(x) = x(1 + x^2) + (1 - x^2)
-\]
+$$
 
 What's the value of $f(f^{-1}(f(2)))$?
 

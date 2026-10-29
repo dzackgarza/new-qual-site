@@ -29,9 +29,9 @@ audit:
 ::: {.problem}
 Let $M_{n\times n}$ be the vector space of real $n\times n$ matrices.
 Prove that there are neighborhoods $U$ and $V$ of the identity matrix in $M_{n\times n}$ such that for every $A\in U$, there is a unique $X\in V$ satisfying
-\[
+$$
 X^4=A.
-\]
+$$
 :::
 
 ::: {.solution}

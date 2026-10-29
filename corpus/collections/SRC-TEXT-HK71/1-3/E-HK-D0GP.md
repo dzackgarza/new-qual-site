@@ -38,9 +38,9 @@ Replace $R_i$ by $R_i+R_j$.
 ::: pf-proof
 This is an elementary operation of the type “add a scalar multiple of one row
 to another.” The pair becomes
-\[
+$$
 (R_i+R_j,\ R_j).
-\]
+$$
 :::
 
 :::
@@ -50,9 +50,9 @@ Replace $R_j$ by $R_j-R_i$, where $R_i$ now denotes the new first row.
 
 ::: pf-proof
 The pair becomes
-\[
+$$
 (R_i+R_j,\ -R_i).
-\]
+$$
 :::
 
 :::
@@ -62,9 +62,9 @@ Replace $R_i$ by $R_i+R_j$.
 
 ::: pf-proof
 The pair becomes
-\[
+$$
 (R_j,\ -R_i).
-\]
+$$
 :::
 
 :::
@@ -74,9 +74,9 @@ Multiply $R_j$ by $-1$.
 
 ::: pf-proof
 This is an elementary row scaling, and the pair becomes
-\[
+$$
 (R_j,R_i).
-\]
+$$
 Thus the original rows have been interchanged using only the other two kinds of
 elementary row operations.
 :::

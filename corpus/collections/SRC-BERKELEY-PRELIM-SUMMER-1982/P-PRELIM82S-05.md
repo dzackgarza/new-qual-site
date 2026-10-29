@@ -29,13 +29,13 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 0<a_0\le a_1\le\cdots\le a_n.
-\]
+$$
 Prove that
-\[
+$$
 a_0z^n+a_1z^{n-1}+\cdots+a_n=0
-\]
+$$
 has no roots in the disk $|z|<1$.
 :::
 

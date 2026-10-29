@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 \alpha=\sqrt5+\sqrt7.
-\]
+$$
 
 1. Find explicitly a degree-four polynomial $f(x)\in\QQ[x]$ having $\alpha$ as a root.
 2. Prove that $f(x)$ is irreducible over $\QQ$.

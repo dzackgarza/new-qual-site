@@ -36,9 +36,9 @@ Part b:
   - $L$ is separable: it is a finite extension of a perfect field, which is automatically separable.
   - $L$ is normal: $L$ is the splitting field of a separable polynomial, and thus normal.
 - Since $f$ is degree 3, we have $G\definedas \Gal(L/k) \leq S_3$, and since $G$ is a transitive subgroup the only possibilities are
-\[
+$$
 G = S_3 \cong D_3, A_3 \cong C_3
-.\]
+.$$
 
 - Factor $x^3 - 7 = (x-\omega)(x-\zeta_3\omega)(x-\zeta_3^2\omega)$ where $\omega \definedas 7^{1\over 3}$ and $\zeta_3$ is a primitive 3rd root of unity.
   Then $L = \QQ(\zeta_3, \omega)$.
@@ -49,13 +49,13 @@ G = S_3 \cong D_3, A_3 \cong C_3
   So $[L:L_0] = 2$.
 
 - Counting in towers,
-\[
+$$
 [L:\QQ] = [L:L_0][L_0: \QQ] = (2)(3) = 6
-.\]
+.$$
 - But $\size S_3 = 6$ and $\size A_3 = 3$, so $G = S_3$.
 
 - Explicitly, since we can write $\SF(f) = \QQ(\omega, \zeta_3)$, we can find explicit generators:
-\[
+$$
 \sigma:
 &\begin{cases}
 \omega &\mapsto \omega
@@ -72,7 +72,7 @@ G = S_3 \cong D_3, A_3 \cong C_3
 \end{cases}
 &&
 \implies \tau \sim (2, 3)
-.\]
+.$$
   So $G = \generators{\sigma, \tau \st \sigma^3, \tau^2}$.
 
 Part c:
@@ -89,13 +89,13 @@ Part c:
   - $\sigma = (1,2,3)$, for which we need to calculate the fixed field.
   Using that $\sigma(\omega) =\zeta\omega$ and $\sigma(\zeta)=\zeta$,
   supposing $\sigma(\alpha) = \alpha$ we have
-  \[
+  $$
   \sigma(\alpha) &\definedas \sigma(a + b\zeta_3 + c\zeta_3^2 + d\omega + e\zeta_3\omega + f\zeta_3^2\omega) \\
   &= a + b\zeta_3 + c\zeta_3^2 + d\zeta_3\omega + e\zeta_3^2\omega + f\omega \\
   \implies \alpha &= a + b\zeta_3 + c\zeta_3^2 + t_1(\omega + \zeta_3\omega + \zeta_3^2\omega) \\
   \implies \alpha &= a + b\zeta_3 + c\zeta_3^2 + t_1\omega (1 + \zeta_3+ \zeta_3^2) \\
   \implies \alpha &= a + b\zeta_3 + c\zeta_3^2 
-  ,\]
+  ,$$
   using the general fact that $\sum_{k=0}^{n-1}\zeta_n^k = 0$.
   So the fixed field is $\QQ(1, \zeta, \zeta^2) = \QQ(\zeta)$.
 

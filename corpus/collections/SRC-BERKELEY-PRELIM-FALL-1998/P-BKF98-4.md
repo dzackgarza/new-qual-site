@@ -24,17 +24,17 @@ audit:
 
 ::: {.problem}
 Let $f$ be analytic on a neighborhood of the closed unit disk, suppose
-\[
+$$
 f(-\log2)=0,
-\]
+$$
 and assume
-\[
+$$
 |f(z)|\le |e^z|
-\]
+$$
 for every $|z|=1$. How large can
-\[
+$$
 |f(\log2)|
-\]
+$$
 be?
 :::
 

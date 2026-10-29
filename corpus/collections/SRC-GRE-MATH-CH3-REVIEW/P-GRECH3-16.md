@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Let $P$ be the tangent plane to the surface
-\[
+$$
 y^2z-2xz^2+3x^2y=2
-\]
+$$
 at the point $Q=(1,1,1)$. Which of the following points also lies in $P$?
 
 (A) $(4,5,-3)$

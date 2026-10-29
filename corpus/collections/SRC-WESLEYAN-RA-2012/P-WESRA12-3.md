@@ -38,33 +38,33 @@ Let $V$ be a real vector space.
 ::: {.pf-step #s1-1}
 
 A **norm** on $V$ is a function
-\[
+$$
 \|\cdot\|:V\to[0,\infty)
-\]
+$$
 such that for all
-\[
+$$
 x,y\in V
-\]
+$$
 and
-\[
+$$
 a\in\RR,
-\]
+$$
 
-1. \[
+1. $$
    \|x\|=0
    \quad\Longleftrightarrow\quad
    x=0;
-   \]
-2. \[
+   $$
+2. $$
    \|ax\|
    =
    |a|\,\|x\|;
-   \]
-3. \[
+   $$
+3. $$
    \|x+y\|
    \le
    \|x\|+\|y\|.
-   \]
+   $$
 
 
 ::: pf-proof
@@ -79,13 +79,13 @@ triangle inequality.
 ::: {.pf-step #s1-2}
 
 The metric induced by a norm is
-\[
+$$
 \boxed{
 d(x,y)
 \coloneqq
 \|x-y\|.
 }
-\]
+$$
 
 
 ::: pf-proof
@@ -99,17 +99,17 @@ We verify the metric axioms in the next four steps.
 ::: {.pf-step #s1-3}
 
 One has
-\[
+$$
 d(x,y)\ge0.
-\]
+$$
 
 
 ::: pf-proof
 
 Norms take values in
-\[
+$$
 [0,\infty).
-\]
+$$
 
 :::
 
@@ -118,17 +118,17 @@ Norms take values in
 ::: {.pf-step #s1-4}
 
 One has
-\[
+$$
 d(x,y)=0
 \quad\Longleftrightarrow\quad
 x=y.
-\]
+$$
 
 
 ::: pf-proof
 
 By positive definiteness,
-\[
+$$
 d(x,y)=0
 \Longleftrightarrow
 \|x-y\|=0
@@ -136,7 +136,7 @@ d(x,y)=0
 x-y=0
 \Longleftrightarrow
 x=y.
-\]
+$$
 
 :::
 
@@ -145,15 +145,15 @@ x=y.
 ::: {.pf-step #s1-5}
 
 The metric is symmetric:
-\[
+$$
 d(x,y)=d(y,x).
-\]
+$$
 
 
 ::: pf-proof
 
 Using absolute homogeneity,
-\[
+$$
 \begin{aligned}
 d(y,x)
 &=
@@ -165,7 +165,7 @@ d(y,x)
 &=
 d(x,y).
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -174,23 +174,23 @@ d(x,y).
 ::: {.pf-step #s1-6}
 
 The triangle inequality holds:
-\[
+$$
 d(x,z)
 \le
 d(x,y)+d(y,z).
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 x-z
 =
 (x-y)+(y-z),
-\]
+$$
 the norm triangle inequality gives
-\[
+$$
 \begin{aligned}
 d(x,z)
 &=
@@ -202,7 +202,7 @@ d(x,z)
 &=
 d(x,y)+d(y,z).
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -211,9 +211,9 @@ d(x,y)+d(y,z).
 ::: {.pf-step #s1-7}
 
 Therefore
-\[
+$$
 d(x,y)=\|x-y\|
-\]
+$$
 is a metric.
 
 
@@ -243,36 +243,36 @@ of the space.
 ::: {.pf-step #s1-9}
 
 Let
-\[
+$$
 c_{00}
-\]
+$$
 be the vector space of real sequences with finite support, equipped with the
 norm
-\[
+$$
 \|x\|_2
 =
 \left(
 \sum_{n=1}^{\infty}
 |x_n|^2
 \right)^{1/2}.
-\]
+$$
 Then
-\[
+$$
 c_{00}
-\]
+$$
 is a normed vector space that is not Banach.
 
 
 ::: pf-proof
 
 The displayed formula is the usual
-\[
+$$
 \ell^2
-\]
+$$
 norm restricted to $c_{00}$.
 
 Define
-\[
+$$
 x^{(m)}
 =
 \left(
@@ -283,43 +283,43 @@ x^{(m)}
 \frac1m,
 0,0,\dots
 \right).
-\]
+$$
 Each
-\[
+$$
 x^{(m)}
 \in
 c_{00}.
-\]
+$$
 
 For
-\[
+$$
 n>m,
-\]
-\[
+$$
+$$
 \|x^{(n)}-x^{(m)}\|_2^2
 =
 \sum_{k=m+1}^{n}
 \frac1{k^2}.
-\]
+$$
 Since
-\[
+$$
 \sum_{k=1}^{\infty}\frac1{k^2}
-\]
+$$
 converges, the sequence
-\[
+$$
 (x^{(m)})
-\]
+$$
 is Cauchy in
-\[
+$$
 c_{00}.
-\]
+$$
 
 In
-\[
+$$
 \ell^2
-\]
+$$
 it converges to
-\[
+$$
 x
 =
 \left(
@@ -328,22 +328,22 @@ x
 \frac13,
 \dots
 \right),
-\]
+$$
 which belongs to
-\[
+$$
 \ell^2
-\]
+$$
 but not to
-\[
+$$
 c_{00}
-\]
+$$
 because it has infinite support.
 
 If the sequence converged in $c_{00}$, uniqueness of limits in the ambient
 metric space
-\[
+$$
 \ell^2
-\]
+$$
 would force its limit to be $x$, impossible.
 Thus $c_{00}$ is incomplete.
 
@@ -356,38 +356,38 @@ Thus $c_{00}$ is incomplete.
 **Uniform Boundedness Theorem.**
 
 Let
-\[
+$$
 X
-\]
+$$
 be a Banach space,
-\[
+$$
 Y
-\]
+$$
 a normed vector space, and let
-\[
+$$
 \mathcal F
 \subseteq
 \mathcal L(X,Y)
-\]
+$$
 be a family of continuous linear maps.
 Assume the family is pointwise bounded:
-\[
+$$
 \sup_{T\in\mathcal F}
 \|Tx\|
 <
 \infty
 \qquad
 \text{for every }x\in X.
-\]
+$$
 Then
-\[
+$$
 \boxed{
 \sup_{T\in\mathcal F}
 \|T\|
 <
 \infty.
 }
-\]
+$$
 
 
 ::: pf-proof
@@ -403,53 +403,53 @@ The codomain need only be normed.
 ::: {.pf-step #s1-11}
 
 Now let
-\[
+$$
 T:X\to Y
-\]
+$$
 be a bijective linear map.
 Then
-\[
+$$
 T^{-1}:Y\to X
-\]
+$$
 is linear.
 
 
 ::: pf-proof
 
 Let
-\[
+$$
 y_1,y_2\in Y
-\]
+$$
 and
-\[
+$$
 a,b\in\RR.
-\]
+$$
 Set
-\[
+$$
 x_1=T^{-1}(y_1),
 \qquad
 x_2=T^{-1}(y_2).
-\]
+$$
 Then
-\[
+$$
 T(x_1)=y_1,
 \qquad
 T(x_2)=y_2.
-\]
+$$
 By linearity of $T$,
-\[
+$$
 T(ax_1+bx_2)
 =
 ay_1+by_2.
-\]
+$$
 Applying the inverse map gives
-\[
+$$
 T^{-1}(ay_1+by_2)
 =
 ax_1+bx_2
 =
 aT^{-1}(y_1)+bT^{-1}(y_2).
-\]
+$$
 Hence $T^{-1}$ is linear.
 
 :::
@@ -459,15 +459,15 @@ Hence $T^{-1}$ is linear.
 ::: {.pf-step #s1-12}
 
 If, in addition,
-\[
+$$
 X
 \quad\text{and}\quad
 Y
-\]
+$$
 are Banach spaces and $T$ is continuous, then
-\[
+$$
 T^{-1}
-\]
+$$
 is continuous.
 
 
@@ -476,29 +476,29 @@ is continuous.
 By the Open Mapping Theorem, every surjective continuous linear map between
 Banach spaces is open.
 Since $T$ is bijective, it is surjective, so
-\[
+$$
 T:X\to Y
-\]
+$$
 is an open map.
 
 For an open set
-\[
+$$
 U\subseteq X,
-\]
-\[
+$$
+$$
 (T^{-1})^{-1}(U)
 =
 T(U).
-\]
+$$
 Because $T$ is open,
-\[
+$$
 T(U)
-\]
+$$
 is open in $Y$.
 Therefore
-\[
+$$
 T^{-1}:Y\to X
-\]
+$$
 is continuous.
 
 :::
@@ -508,12 +508,12 @@ is continuous.
 ::: {.pf-step #s1-13}
 
 Thus
-\[
+$$
 \boxed{
 T^{-1}
 \text{ is a continuous linear map}.
 }
-\]
+$$
 
 
 ::: pf-proof

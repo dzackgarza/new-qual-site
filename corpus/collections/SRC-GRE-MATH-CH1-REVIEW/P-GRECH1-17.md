@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 If $a$ and $x$ are positive numbers and $A = a^2$, express the following in its simplest form in terms of $x$:
 
-\[
+$$
 a^{(\log_a x) + (\log_A x)}
-\]
+$$
 
 (A) $2x$
 (B) $x^2$

@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Let $(f_n)$ be a decreasing sequence of continuous functions $f_n:[0,1]\to\RR$ satisfying the uniform bound $|f_n|\leq M$ for some $M\in(0,1)$.
 Suppose the pointwise limit
-\[
+$$
 f(x)=\lim_{n\to\infty}f_n(x)
-\]
+$$
 is continuous on $[0,1]$.
 Prove that $f_n\to f$ uniformly on $[0,1]$.
 

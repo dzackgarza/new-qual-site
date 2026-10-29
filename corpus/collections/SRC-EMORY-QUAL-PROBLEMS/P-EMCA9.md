@@ -30,17 +30,17 @@ If $f$ is a non-constant entire function, then $f(\CC)$ is dense in the plane.
 ::: {.solution}
 Suppose that $f(\CC)$ were not dense in $\CC$. Then there would be
 a point $a\in\CC$ and an $r>0$ such that
-\[
+$$
 B(a,r)\cap f(\CC)=\varnothing.
-\]
+$$
 Thus
-\[
+$$
 |f(z)-a|\ge r\qquad\text{for every }z\in\CC.
-\]
+$$
 The function
-\[
+$$
 g(z)=\frac1{f(z)-a}
-\]
+$$
 is therefore entire and bounded by $1/r$. By Liouville's theorem, $g$ is
 constant. Hence $f$ is constant, contradicting the hypothesis.
 

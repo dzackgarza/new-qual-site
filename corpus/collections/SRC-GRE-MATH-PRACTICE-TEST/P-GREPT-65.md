@@ -40,14 +40,14 @@ $\phi\colon\ZZ_m\to\ZZ_n$ with $\phi([1]_m)=[1]_n$, then $n\mid m$.
 ::: pf-proof
 
 In $\ZZ_m$ one has $m[1]_m=[0]_m$. Therefore
-\[
+$$
 [0]_n
 =\phi([0]_m)
 =\phi(m[1]_m)
 =m\phi([1]_m)
 =m[1]_n
 =[m]_n.
-\]
+$$
 Thus $m\equiv0\pmod n$, which is exactly $n\mid m$.
 
 :::
@@ -62,9 +62,9 @@ If $n\mid m$, then such a homomorphism exists.
 ::: pf-proof
 
 Define
-\[
+$$
 \phi([k]_m)=[k]_n.
-\]
+$$
 If $[k]_m=[\ell]_m$, then $m\mid(k-\ell)$. Since $n\mid m$, it follows
 that $n\mid(k-\ell)$, so $[k]_n=[\ell]_n$. Hence $\phi$ is
 well-defined. Reduction modulo $n$ preserves addition and multiplication,

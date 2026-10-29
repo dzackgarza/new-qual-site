@@ -36,9 +36,9 @@ Hatcher's Theorem 2C.5 says that every finite CW complex is homotopy equivalent 
 ::: {.pf-step #s1}
 
 For each positive integer $N$, there are only finitely many simplicial complexes with vertex set exactly
-\[
+$$
 \{1,\ldots,N\}.
-\]
+$$
 
 ::: pf-proof
 
@@ -75,7 +75,7 @@ Every finite CW complex has, by Theorem 2C.5, the homotopy type of one of the co
 :::
 
 Thus
-\[
+$$
 \boxed{\text{the set of homotopy types of finite CW complexes is countable}.}
-\]
+$$
 :::

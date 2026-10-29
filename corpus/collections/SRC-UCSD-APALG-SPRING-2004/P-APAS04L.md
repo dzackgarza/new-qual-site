@@ -46,20 +46,20 @@ Conversely, if $f\in\sqrt{\sqrt I}$, then $f^m\in\sqrt I$ for some $m\ge1$. Henc
 
 ::: pf-step
 One has
-\[
+$$
 \sqrt{I\cap J}=\sqrt{IJ}=\sqrt I\cap\sqrt J.
-\]
+$$
 
 ::: pf-proof
 Since $IJ\subseteq I\cap J$, we have
-\[
+$$
 \sqrt{IJ}\subseteq\sqrt{I\cap J}.
-\]
+$$
 If $f\in\sqrt{I\cap J}$, then $f^m\in I\cap J$ for some $m$, hence $f\in\sqrt I\cap\sqrt J$.
 Finally, if $f\in\sqrt I\cap\sqrt J$, choose $a,b\ge1$ with $f^a\in I$ and $f^b\in J$. Then
-\[
+$$
 f^{a+b}=f^af^b\in IJ,
-\]
+$$
 so $f\in\sqrt{IJ}$. The three containments give equality.
 :::
 
@@ -67,20 +67,20 @@ so $f\in\sqrt{IJ}$. The three containments give equality.
 
 ::: pf-step
 For
-\[
+$$
 I_1=\langle x^2+x,\ x^2-y\rangle,
-\]
+$$
 one has $x^2-y^2\in I_1$, hence certainly $x^2-y^2\in\sqrt{I_1}$.
 
 ::: pf-proof
 In $R/I_1$ we have
-\[
+$$
 y=x^2=-x.
-\]
+$$
 Therefore
-\[
+$$
 y^2=x^2,
-\]
+$$
 so the class of $x^2-y^2$ in $R/I_1$ is zero. Equivalently, $x^2-y^2\in I_1$.
 :::
 
@@ -88,35 +88,35 @@ so the class of $x^2-y^2$ in $R/I_1$ is zero. Equivalently, $x^2-y^2\in I_1$.
 
 ::: pf-step
 For
-\[
+$$
 I_2=\langle x+y,\ x^2-y\rangle,
-\]
+$$
 the answer depends on $\operatorname{char}k$:
-\[
+$$
 x^2+y^2\in\sqrt{I_2}
 \quad\Longleftrightarrow\quad
 \operatorname{char}k=2.
-\]
+$$
 
 ::: pf-proof
 Modulo $I_2$ we have $y=-x$ and $x^2=-x$, hence
-\[
+$$
 x^2+y^2=2x^2=-2x.
-\]
+$$
 If $\operatorname{char}k=2$, this class is zero, so $x^2+y^2\in I_2$.
 
 Assume now $\operatorname{char}k\ne2$. The quotient is
-\[
+$$
 R/I_2\cong k[x]/(x^2+x)=k[x]/(x(x+1)),
-\]
+$$
 under $y\mapsto -x$. Since $x$ and $x+1$ are coprime,
-\[
+$$
 (x(x+1))=(x)\cap(x+1)
-\]
+$$
 is radical. Thus $I_2$ is radical. The class of $x^2+y^2$ is $-2x$, which is nonzero in this quotient (for example its image modulo $(x+1)$ is $2\ne0$). Therefore
-\[
+$$
 x^2+y^2\notin I_2=\sqrt{I_2}.
-\]
+$$
 :::
 
 :::

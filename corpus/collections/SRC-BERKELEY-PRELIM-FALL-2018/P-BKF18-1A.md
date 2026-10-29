@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Show that
-\[
+$$
 \int_0^1 x^{-x}\,dx=\sum_{n=1}^{\infty}n^{-n}.
-\]
+$$
 :::
 
 ::: {.solution}

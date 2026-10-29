@@ -29,21 +29,21 @@ Find a point-finite open covering $\mathcal{A}$ of $\RR$ that is not locally fin
 :::
 
 ::: {.solution}
-For \(n\ge2\), put
-\[
+For $n\ge2$, put
+$$
 U_n=\left(\frac1{n+1},\frac1{n-1}\right),
-\]
+$$
 and let
-\[
+$$
 \mathcal A=\{(-\infty,1),(0,\infty)\}\cup\{U_n:n\ge2\}.
-\]
-This is an open covering of \(\RR\): the first two sets already cover \(\RR\).
+$$
+This is an open covering of $\RR$: the first two sets already cover $\RR$.
 
-It is point-finite. If \(x\le0\), then \(x\) lies in none of the \(U_n\). If \(x>0\), choose \(N\) with \(1/(N-1)<x\). Then for every \(n\ge N\),
-\[
+It is point-finite. If $x\le0$, then $x$ lies in none of the $U_n$. If $x>0$, choose $N$ with $1/(N-1)<x$. Then for every $n\ge N$,
+$$
 U_n\subset\left(0,\frac1{N-1}\right),
-\]
-so \(x\notin U_n\). Hence each point belongs to only finitely many of the \(U_n\), and therefore to only finitely many members of \(\mathcal A\).
+$$
+so $x\notin U_n$. Hence each point belongs to only finitely many of the $U_n$, and therefore to only finitely many members of $\mathcal A$.
 
-However, \(\mathcal A\) is not locally finite at \(0\). Every neighborhood \((-\varepsilon,\varepsilon)\) of \(0\) meets \(U_n\) for all sufficiently large \(n\), since \(1/n\to0\). Thus every neighborhood of \(0\) meets infinitely many members of \(\mathcal A\).
+However, $\mathcal A$ is not locally finite at $0$. Every neighborhood $(-\varepsilon,\varepsilon)$ of $0$ meets $U_n$ for all sufficiently large $n$, since $1/n\to0$. Thus every neighborhood of $0$ meets infinitely many members of $\mathcal A$.
 :::

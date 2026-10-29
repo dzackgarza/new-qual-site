@@ -14,13 +14,13 @@ audit:
 
 ::: {.problem}
 Let $f$ be analytic in $|z|<1$ and suppose
-\[
+$$
 |f(z)|\le\frac1{1-|z|}.
-\]
+$$
 Show that
-\[
+$$
 |f'(0)|\le4.
-\]
+$$
 :::
 
 ::: {.solution}

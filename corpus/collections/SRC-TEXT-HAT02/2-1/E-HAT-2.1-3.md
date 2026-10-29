@@ -32,13 +32,13 @@ Construct a $\Delta$-complex structure on $\RP^n$ as a quotient of a $\Delta$-co
 
 ::: {.solution}
 Let
-\[
+$$
 e_0,\dots,e_n
-\]
+$$
 be the standard basis of $\RR^{n+1}$ and let
-\[
+$$
 C=\operatorname{conv}\{\pm e_0,\dots,\pm e_n\}
-\]
+$$
 be the $(n+1)$-dimensional cross-polytope.
 
 ::: pf
@@ -50,11 +50,11 @@ The boundary $\partial C$ is a simplicial complex with precisely the desired $2(
 ::: pf-proof
 
 A facet of $C$ is obtained by choosing one vertex from each antipodal pair:
-\[
+$$
 [\varepsilon_0e_0,\dots,\varepsilon_ne_n],
 \qquad
 \varepsilon_i\in\{\pm1\}.
-\]
+$$
 All lower-dimensional faces are their faces.
 Hence $\partial C$ is a simplicial $n$-sphere whose vertices are exactly the unit vectors in the positive and negative coordinate directions.
 
@@ -65,18 +65,18 @@ Hence $\partial C$ is a simplicial $n$-sphere whose vertices are exactly the uni
 ::: pf-step
 
 Radial projection gives a homeomorphism
-\[
+$$
 \partial C\cong S^n.
-\]
+$$
 
 ::: pf-proof
 
 The origin lies in the interior of the convex polytope $C$.
 Every ray from the origin meets $\partial C$ in exactly one point.
 Thus
-\[
+$$
 x\longmapsto \frac{x}{\|x\|}
-\]
+$$
 is a continuous bijection from compact $\partial C$ to Hausdorff $S^n$, hence a homeomorphism.
 
 :::
@@ -90,13 +90,13 @@ The antipodal map acts simplicially on this triangulation and has no fixed simpl
 ::: pf-proof
 
 It sends every vertex $e_i$ to $-e_i$ and every facet
-\[
+$$
 [\varepsilon_0e_0,\dots,\varepsilon_ne_n]
-\]
+$$
 to the opposite facet
-\[
+$$
 [-\varepsilon_0e_0,\dots,-\varepsilon_ne_n].
-\]
+$$
 No simplex contains both $e_i$ and $-e_i$, so no simplex is carried to itself pointwise or setwise by the antipodal map.
 
 :::
@@ -106,9 +106,9 @@ No simplex contains both $e_i$ and $-e_i$, so no simplex is carried to itself po
 ::: {.pf-step #s4}
 
 The quotient simplices give a $\Delta$-complex structure on
-\[
+$$
 S^n/(x\sim-x)=\RP^n.
-\]
+$$
 
 ::: pf-proof
 
@@ -123,10 +123,10 @@ These are precisely the axioms of a $\Delta$-complex.
 ::: pf-step
 
 The vertices of the quotient are the $n+1$ antipodal pairs
-\[
+$$
 \{e_i,-e_i\},
 \qquad 0\le i\le n.
-\]
+$$
 
 ::: pf-proof
 

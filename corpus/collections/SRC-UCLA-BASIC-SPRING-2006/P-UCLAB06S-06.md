@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let $W$ be the subset of the space $C[0,1]$ of real-valued, continuous functions on $[0,1]$ satisfying the conditions:
-\[
+$$
 |f(x) - f(y)| \le |x - y| \quad (x, y \in [0,1]) \qquad \int_0^1 f(x)^2\,dx = 1
-\]
+$$
 
 (A) Prove that $W$ is uniformly bounded, i.e., there exists $M > 0$ such that $|f(x)| \leq M$ for all $x \in [0,1]$. Hint: Show first that $|f(0)| \leq 2$ for all $f \in W$.
 
@@ -41,38 +41,38 @@ Let $W$ be the subset of the space $C[0,1]$ of real-valued, continuous functions
 ::: {.pf-step #s1-1}
 
 For every $f\in W$ and every $x\in[0,1]$,
-\[
+$$
 |f(x)-f(0)|\le x,
-\]
+$$
 and hence
-\[
+$$
 |f(x)|
 \le
 |f(0)|+1.
-\]
+$$
 
 
 ::: pf-proof
 
 The defining inequality gives
-\[
+$$
 |f(x)-f(0)|
 \le
 |x-0|
 =x.
-\]
+$$
 Since
-\[
+$$
 x\le1,
-\]
+$$
 the triangle inequality gives
-\[
+$$
 |f(x)|
 \le
 |f(0)|+|f(x)-f(0)|
 \le
 |f(0)|+1.
-\]
+$$
 
 :::
 
@@ -81,23 +81,23 @@ the triangle inequality gives
 ::: {.pf-step #s1-2}
 
 For every $f\in W$,
-\[
+$$
 \boxed{|f(0)|\le2}.
-\]
+$$
 
 
 ::: pf-proof
 
 Suppose instead that
-\[
+$$
 |f(0)|>2.
-\]
+$$
 Then for every
-\[
+$$
 x\in[0,1],
-\]
+$$
 step [](#s1-1){.pf-ref} gives
-\[
+$$
 |f(x)|
 \ge
 |f(0)|-|f(x)-f(0)|
@@ -105,24 +105,24 @@ step [](#s1-1){.pf-ref} gives
 |f(0)|-1
 >
 1.
-\]
+$$
 Therefore
-\[
+$$
 f(x)^2>1
-\]
+$$
 for every $x\in[0,1]$.
 Integrating gives
-\[
+$$
 \int_0^1f(x)^2\,dx>1,
-\]
+$$
 contradicting the defining condition
-\[
+$$
 \int_0^1f(x)^2\,dx=1.
-\]
+$$
 Hence
-\[
+$$
 |f(0)|\le2.
-\]
+$$
 
 :::
 
@@ -131,26 +131,26 @@ Hence
 ::: {.pf-step #s1-3}
 
 The family $W$ is uniformly bounded; for example,
-\[
+$$
 \boxed{|f(x)|\le3}
-\]
+$$
 for every $f\in W$ and every $x\in[0,1]$.
 
 
 ::: pf-proof
 
 By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
-\[
+$$
 |f(x)|
 \le
 |f(0)|+1
 \le
 3.
-\]
+$$
 Thus the single constant
-\[
+$$
 M=3
-\]
+$$
 works for all $f\in W$ and all $x\in[0,1]$.
 This proves part (A).
 
@@ -172,9 +172,9 @@ The set $W$ is closed.
 Let $f_n\in W$ with $f_n\to f$ uniformly.
 For fixed $x,y$, letting $n\to\infty$ in $|f_n(x)-f_n(y)|\le|x-y|$ gives $|f(x)-f(y)|\le|x-y|$.
 Also $|f_n^2-f^2|=|f_n-f|\,|f_n+f|\le 6\|f_n-f\|_\infty$ on $[0,1]$, because $|f_n|\le3$ and hence $|f|\le3$; so $f_n^2\to f^2$ uniformly and
-\[
+$$
 \int_0^1f^2=\lim_{n\to\infty}\int_0^1f_n^2=1.
-\]
+$$
 Hence $f\in W$.
 
 By the Arzelà--Ascoli theorem, a closed, uniformly bounded, equicontinuous subset of $C[0,1]$ is compact.

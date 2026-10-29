@@ -41,20 +41,20 @@ Prove or give a counterexample.
 
 ::: {.pf-step #s1}
 
-Suppose \(R\) is Noetherian and \(\phi:R\to R\) is surjective.
+Suppose $R$ is Noetherian and $\phi:R\to R$ is surjective.
 Then the ascending chain
-\[
+$$
 \ker\phi\subseteq\ker\phi^2\subseteq\ker\phi^3\subseteq\cdots
-\]
+$$
 stabilizes.
 
 ::: pf-proof
 
-Each \(\ker\phi^n\) is an ideal of \(R\). Since \(R\) is Noetherian, every ascending chain of ideals stabilizes.
-Thus there exists \(N\ge1\) such that
-\[
+Each $\ker\phi^n$ is an ideal of $R$. Since $R$ is Noetherian, every ascending chain of ideals stabilizes.
+Thus there exists $N\ge1$ such that
+$$
 \ker\phi^N=\ker\phi^{N+1}.
-\]
+$$
 
 :::
 
@@ -62,27 +62,27 @@ Thus there exists \(N\ge1\) such that
 
 ::: {.pf-step #s2}
 
-Under the hypotheses of step [](#s1){.pf-ref}, \(\ker\phi=0\).
+Under the hypotheses of step [](#s1){.pf-ref}, $\ker\phi=0$.
 
 ::: pf-proof
 
-Let \(a\in\ker\phi\). Since \(\phi\) is surjective, so is \(\phi^N\). Hence there exists \(b\in R\) with
-\[
+Let $a\in\ker\phi$. Since $\phi$ is surjective, so is $\phi^N$. Hence there exists $b\in R$ with
+$$
 \phi^N(b)=a.
-\]
+$$
 Then
-\[
+$$
 \phi^{N+1}(b)=\phi(a)=0,
-\]
-so \(b\in\ker\phi^{N+1}\). By stabilization,
-\[
+$$
+so $b\in\ker\phi^{N+1}$. By stabilization,
+$$
 b\in\ker\phi^N.
-\]
+$$
 Therefore
-\[
+$$
 a=\phi^N(b)=0.
-\]
-Thus \(\ker\phi=0\).
+$$
+Thus $\ker\phi=0$.
 
 :::
 
@@ -94,7 +94,7 @@ Therefore every surjective endomorphism of a Noetherian commutative ring is inje
 
 ::: pf-proof
 
-A ring homomorphism is injective exactly when its kernel is zero, and step [](#s2){.pf-ref} gives \(\ker\phi=0\).
+A ring homomorphism is injective exactly when its kernel is zero, and step [](#s2){.pf-ref} gives $\ker\phi=0$.
 
 :::
 
@@ -106,31 +106,31 @@ The conclusion fails without the Noetherian hypothesis.
 
 ::: pf-proof
 
-Let \(k\) be any field and set
-\[
+Let $k$ be any field and set
+$$
 R=k[x_1,x_2,x_3,\ldots].
-\]
+$$
 This ring is not Noetherian, because the ideals
-\[
+$$
 (x_1)\subsetneq(x_1,x_2)\subsetneq(x_1,x_2,x_3)\subsetneq\cdots
-\]
+$$
 form a strictly increasing chain.
 
-Define a \(k\)-algebra endomorphism \(\phi:R\to R\) by
-\[
+Define a $k$-algebra endomorphism $\phi:R\to R$ by
+$$
 \phi(x_1)=0,
 \qquad
 \phi(x_{i+1})=x_i\quad(i\ge1).
-\]
-The map is surjective because every generator \(x_i\) lies in its image:
-\[
+$$
+The map is surjective because every generator $x_i$ lies in its image:
+$$
 x_i=\phi(x_{i+1}).
-\]
-But \(x_1\neq0\) and
-\[
+$$
+But $x_1\neq0$ and
+$$
 \phi(x_1)=0,
-\]
-so \(\phi\) is not injective.
+$$
+so $\phi$ is not injective.
 Hence a surjective endomorphism of a non-Noetherian ring need not be injective.
 
 :::

@@ -27,14 +27,14 @@ audit:
 ---
 
 ::: {.problem}
-Given a positive integer \(n\), determine all possible triples
-\[
+Given a positive integer $n$, determine all possible triples
+$$
 (\operatorname{rank}A,\operatorname{rank}B,\operatorname{rank}C)
-\]
-as \(A,B,C\) range over real \(n\times n\) matrices satisfying
-\[
+$$
+as $A,B,C$ range over real $n\times n$ matrices satisfying
+$$
 A+B+C=0.
-\]
+$$
 :::
 
 ::: {.solution}

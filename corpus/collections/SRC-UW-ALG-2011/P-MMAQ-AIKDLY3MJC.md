@@ -23,9 +23,9 @@ Let $R$ be a commutative ring.
 Recall that an element $r$ of $R$ is *nilpotent* if $r^n=0$ for some positive integer $n$ and that the *nilradical* of $R$ is the set $N(R)$ of nilpotent elements.
 
 - Prove that
-  \[
+  $$
   N(R)=\bigcap_{P\text{ prime}}P.
-  \]
+  $$
 
   > Hint: given a non-nilpotent element $r$ of $R$, you may wish to construct a prime ideal that does not contain $r$ or its powers.
 
@@ -44,31 +44,31 @@ Recall that an element $r$ of $R$ is *nilpotent* if $r^n=0$ for some positive in
 ::: pf-step
 
 For every commutative ring $R$,
-\[
+$$
 N(R)=\bigcap_{P\text{ prime}}P.
-\]
+$$
 
 ::: pf-proof
 
 If $r\in N(R)$, then $r^n=0$ for some $n$. Every prime ideal contains $0$, and if $r^n\in P$ with $P$ prime, repeated use of primality gives $r\in P$. Hence
-\[
+$$
 N(R)\subseteq\bigcap_P P.
-\]
+$$
 
 Conversely, suppose $r$ is not nilpotent. Let
-\[
+$$
 S=\{1,r,r^2,r^3,\ldots\}.
-\]
+$$
 Then $0\notin S$. Consider the set of ideals of $R$ disjoint from $S$, ordered by inclusion. Every chain has an upper bound given by its union, still disjoint from $S$, so Zorn's lemma gives a maximal such ideal $P$.
 
 We claim $P$ is prime. Suppose $ab\in P$ but $a,b\notin P$. By maximality, both $P+(a)$ and $P+(b)$ meet $S$. Thus for some $m,n\ge0$,
-\[
+$$
 r^m=p_1+xa,\qquad r^n=p_2+yb
-\]
+$$
 with $p_1,p_2\in P$ and $x,y\in R$. Multiplying,
-\[
+$$
 r^{m+n}=p_1p_2+p_1yb+p_2xa+xyab\in P,
-\]
+$$
 contradicting $P\cap S=\varnothing$. Thus $P$ is prime and $r\notin P$. Hence any element lying in every prime ideal must be nilpotent.
 
 :::
@@ -78,27 +78,27 @@ contradicting $P\cap S=\varnothing$. Thus $P$ is prime and $r\notin P$. Hence an
 ::: pf-step
 
 If
-\[
+$$
 m=\prod_{i=1}^s p_i^{e_i}
-\]
+$$
 is the prime factorization of $m$, then
-\[
+$$
 N(\ZZ/(m))
 =\bigl(\overline{p_1p_2\cdots p_s}\bigr).
-\]
+$$
 
 ::: pf-proof
 
 Write
-\[
+$$
 \operatorname{rad}(m)=p_1\cdots p_s.
-\]
+$$
 If $\bar a\in\ZZ/(m)$ is nilpotent, then $m\mid a^N$ for some $N$. Hence every prime divisor $p_i$ of $m$ divides $a^N$, and therefore divides $a$. Thus $\operatorname{rad}(m)\mid a$.
 
 Conversely, if every $p_i$ divides $a$, choose $N\ge\max_i e_i$. Then
-\[
+$$
 p_i^{e_i}\mid a^N
-\]
+$$
 for every $i$, so $m\mid a^N$. Hence $\bar a$ is nilpotent. Therefore the nilpotent classes are exactly the multiples of $\operatorname{rad}(m)$ modulo $m$.
 
 :::
@@ -108,9 +108,9 @@ for every $i$, so $m\mid a^N$. Hence $\bar a$ is nilpotent. Therefore the nilpot
 ::: pf-step
 
 One has
-\[
+$$
 N\bigl(\CC[x,y]/(y^2-x^3)\bigr)=0.
-\]
+$$
 
 ::: pf-proof
 
@@ -123,26 +123,26 @@ The polynomial $y^2-x^3$ is irreducible in $\CC[x,y]$. Indeed, regarding it as a
 ::: {.pf-step #s4}
 
 Let
-\[
+$$
 \phi:\CC[x,y]\longrightarrow\CC[t],
 \qquad
 \phi(x)=t^2,\quad \phi(y)=t^3.
-\]
+$$
 Then
-\[
+$$
 \ker\phi=(y^2-x^3).
-\]
+$$
 
 ::: pf-proof
 
 Certainly $y^2-x^3\in\ker\phi$. Conversely, divide any $p(x,y)\in\CC[x,y]$ by the monic polynomial $y^2-x^3$ as a polynomial in $y$ over $\CC[x]$. There are unique $q\in\CC[x,y]$ and $a,b\in\CC[x]$ such that
-\[
+$$
 p=q(y^2-x^3)+a(x)+y b(x).
-\]
+$$
 If $p\in\ker\phi$, then
-\[
+$$
 0=a(t^2)+t^3 b(t^2).
-\]
+$$
 The first summand contains only even powers of $t$, while the second contains only odd powers $t^{2j+3}$. Hence both summands vanish separately. Thus $a=0$ and $b=0$, so $p\in(y^2-x^3)$.
 
 :::
@@ -156,13 +156,13 @@ If $p(a,a^{3/2})=0$ for every complex $a$ in the sense of the cusp parametrizati
 ::: pf-proof
 
 Take an arbitrary $t\in\CC$ and set $a=t^2$, choosing the square root $t$, so that $a^{3/2}=t^3$. The hypothesis gives
-\[
+$$
 p(t^2,t^3)=0
-\]
+$$
 for every $t\in\CC$. Hence the polynomial $\phi(p)\in\CC[t]$ has infinitely many roots, so $\phi(p)=0$. By step [](#s4){.pf-ref},
-\[
+$$
 p\in\ker\phi=(y^2-x^3).
-\]
+$$
 Therefore $y^2-x^3$ divides $p$.
 
 :::

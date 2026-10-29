@@ -26,9 +26,9 @@ audit:
 ::: {.problem}
 True or false?
 Justify your answer with a proof or counterexample:
-\[
+$$
 \QQ\!\left(\sqrt{2+\sqrt2}\right)/\QQ
-\]
+$$
 is a normal extension.
 :::
 

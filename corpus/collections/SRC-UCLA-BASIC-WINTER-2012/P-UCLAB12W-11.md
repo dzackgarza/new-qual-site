@@ -15,9 +15,9 @@ audit:
 
 ::: {.problem}
 (a) Find a polynomial $P(x)$ of degree $2$ such that $P(A)=0$ for
-\[
+$$
 A=\begin{pmatrix}1&3\\4&2\end{pmatrix}.
-\]
+$$
 
 (b) Prove that such a polynomial $P(x)$ is unique up to multiplication by a constant.
 :::

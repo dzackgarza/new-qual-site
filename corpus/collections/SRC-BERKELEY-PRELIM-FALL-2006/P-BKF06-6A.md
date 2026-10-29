@@ -29,9 +29,9 @@ audit:
 ::: {.problem}
 Let $p$ be prime.
 Prove that
-\[
+$$
 f(x)=x^p-x+1
-\]
+$$
 is irreducible over the field $\FF_p$.
 :::
 

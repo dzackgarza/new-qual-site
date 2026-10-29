@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 If $a$ is a positive number, what's the value of the following double integral?
-\[
+$$
 \int_0^{2a}\int_{-\sqrt{2ay-y^2}}^{0}\sqrt{x^2+y^2}\,dx\,dy
-\]
+$$
 
 (A) $\frac{16}{9}a^3$
 (B) $\frac{32}{9}a^3$

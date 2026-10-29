@@ -37,9 +37,9 @@ An additive map $R:V_T\to W_S$ is $F[x]$-linear if and only if it is $F$-linear 
 ::: pf-proof
 
 An $F[x]$-linear map is $F$-linear by restriction along $F\hookrightarrow F[x]$, and compatibility with multiplication by $x$ gives $RT=SR$. Conversely, if $R$ is $F$-linear and $RT=SR$, induction on $j$ gives $RT^j=S^jR$. Hence for every polynomial $h=\sum a_jx^j$ and $v\in V$, one has
-\[
+$$
 R(h\cdot v)=\sum_j a_jRT^jv=\sum_j a_jS^jRv=h\cdot R(v).
-\]
+$$
 Thus $R$ is an $F[x]$-module homomorphism.
 
 :::
@@ -61,9 +61,9 @@ By step [](#s1){.pf-ref}, an $F[x]$-linear isomorphism $P$ is an invertible $F$-
 ::: {.pf-step #s3}
 
 A simple two-dimensional example is
-\[
+$$
 \boxed{F=\RR,\quad V=\RR^2,\quad T=\begin{pmatrix}0&-1\\1&0\end{pmatrix}}.
-\]
+$$
 
 ::: pf-proof
 

@@ -26,10 +26,10 @@ audit:
 
 ::: {.problem}
 Let $f,g$ be entire and suppose
-\[
+$$
 f(g(z))\longrightarrow\infty
 \qquad(z\to\infty).
-\]
+$$
 Prove that both $f$ and $g$ are polynomials.
 :::
 

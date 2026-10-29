@@ -28,9 +28,9 @@ audit:
 ::: {.problem}
 Let $f, g \in L^2(\RR)$.
 Prove that the formula
-\[
+$$
 h(x) \definedas \int _{-\infty}^{\infty} f(t) g(x-t) \, dt
-\]
+$$
 defines a uniformly continuous function $h$ on $\RR$.
 :::
 ::: {.solution}

@@ -30,9 +30,9 @@ audit:
 ::: {.problem}
 Let $E \subset \RR$ be measurable with $m(E) < \infty$.
 Define
-\[
+$$
 f(x)=m(E \cap(E+x)).
-\]
+$$
 
 Show that
 
@@ -43,9 +43,9 @@ Show that
 3. $\lim _{|x| \to \infty} f(x) = 0$.
 
 > Hint:
-\[
+$$
 \chi_{E \cap(E+x)}(y)=\chi_{E}(y) \chi_{E}(y-x)
-\]
+$$
 :::
 ::: {.solution}
 
@@ -58,19 +58,19 @@ Express the overlap as a convolution and prove integrability.
 ::: pf-proof
 
 Let $\widetilde\chi_E(u):=\chi_E(-u)$. The hint gives
-\[
+$$
 f(x)=\int_{\RR}\chi_E(y)\chi_E(y-x)\,dy
 =(\chi_E*\widetilde\chi_E)(x).
-\]
+$$
 Since $m(E)<\infty$, both factors lie in $L^1(\RR)$. Tonelli gives
-\[
+$$
 \begin{aligned}
 \int_{\RR}f(x)\,dx
 &=\int_{\RR}\int_{\RR}
 \chi_E(y)\chi_E(y-x)\,dy\,dx\\
 &=m(E)^2<\infty.
 \end{aligned}
-\]
+$$
 Thus $f\in L^1(\RR)$.
 
 :::
@@ -84,14 +84,14 @@ Prove uniform continuity.
 ::: pf-proof
 
 For $h\in\RR$,
-\[
+$$
 \begin{aligned}
 |f(x+h)-f(x)|
 &\le \int_{\RR}\chi_E(y)
 |\widetilde\chi_E(x+h-y)-\widetilde\chi_E(x-y)|\,dy\\
 &\le \|\tau_h\widetilde\chi_E-\widetilde\chi_E\|_1.
 \end{aligned}
-\]
+$$
 Translations are continuous in $L^1$, so the right-hand side tends to $0$ as $h\to0$, independently of $x$. Hence $f$ is uniformly continuous.
 
 :::
@@ -105,30 +105,30 @@ Prove that $f(x)\to0$ as $|x|\to\infty$.
 ::: pf-proof
 
 Let $\varepsilon>0$. Choose $R>0$ such that
-\[
+$$
 m(E\setminus[-R,R])<\varepsilon.
-\]
+$$
 If $|x|>2R$ and $y\in E\cap(E+x)$, then $y\in E$ and $y-x\in E$. The two numbers $y$ and $y-x$ cannot both lie in $[-R,R]$, because then
-\[
+$$
 |x|=|y-(y-x)|\le2R.
-\]
+$$
 Therefore
-\[
+$$
 E\cap(E+x)
 \subseteq
 \bigl(E\setminus[-R,R]\bigr)
 \cup
 \bigl((E\setminus[-R,R])+x\bigr).
-\]
+$$
 By translation invariance,
-\[
+$$
 f(x)=m(E\cap(E+x))
 \le 2m(E\setminus[-R,R])<2\varepsilon.
-\]
+$$
 Hence
-\[
+$$
 \boxed{\lim_{|x|\to\infty}f(x)=0.}
-\]
+$$
 
 :::
 

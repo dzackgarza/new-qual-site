@@ -26,9 +26,9 @@ What can be said about the degree of a field in its algebraic closure?
 
 ::: {.solution}
 The degree of an algebraic closure can only be
-\[
+$$
 [\overline F:F]\in\{1,2,\infty\}.
-\]
+$$
 More precisely:
 
 ::: pf
@@ -48,11 +48,11 @@ This is immediate from the definition of an algebraic closure.
 ::: {.pf-step #s2}
 
 If $1<[\overline F:F]<\infty$, then $F$ is real closed and
-\[
+$$
 [\overline F:F]=2,
 \qquad
 \overline F=F(i),\quad i^2=-1.
-\]
+$$
 
 ::: pf-proof
 
@@ -65,9 +65,9 @@ This is the Artin--Schreier characterization of real closed fields: a field whos
 ::: pf-step
 
 Conversely, if $F$ is real closed, then
-\[
+$$
 [\overline F:F]=2.
-\]
+$$
 
 ::: pf-proof
 
@@ -80,9 +80,9 @@ Again by the Artin--Schreier theorem, $F(i)$ is algebraically closed and $i\noti
 ::: pf-step
 
 Therefore, for every field which is neither algebraically closed nor real closed,
-\[
+$$
 [\overline F:F]=\infty.
-\]
+$$
 
 ::: pf-proof
 

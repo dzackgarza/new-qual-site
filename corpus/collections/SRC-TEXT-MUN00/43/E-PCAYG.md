@@ -36,35 +36,35 @@ Compare [[E-70TGS]].
 :::
 
 ::: {.solution}
-Choose \(x_0\in X\) and define
-\[
+Choose $x_0\in X$ and define
+$$
 x_{n+1}=f(x_n).
-\]
-If \(c=d(x_1,x_0)\), repeated use of the contraction inequality gives
-\[
+$$
+If $c=d(x_1,x_0)$, repeated use of the contraction inequality gives
+$$
 d(x_{n+1},x_n)\le \alpha^n c.
-\]
-Hence for \(m>n\),
-\[
+$$
+Hence for $m>n$,
+$$
 d(x_m,x_n)
 \le\sum_{k=n}^{m-1}d(x_{k+1},x_k)
 \le c\sum_{k=n}^{m-1}\alpha^k
 \le \frac{c\alpha^n}{1-\alpha}.
-\]
-The right side tends to \(0\), so \((x_n)\) is Cauchy. Completeness gives \(x_n\to x\in X\).
+$$
+The right side tends to $0$, so $(x_n)$ is Cauchy. Completeness gives $x_n\to x\in X$.
 
-The contraction inequality implies that \(f\) is Lipschitz, hence continuous. Therefore
-\[
+The contraction inequality implies that $f$ is Lipschitz, hence continuous. Therefore
+$$
 f(x)=f\left(\lim_nx_n\right)
  =\lim_nf(x_n)
  =\lim_nx_{n+1}
  =x.
-\]
+$$
 Thus a fixed point exists.
 
-If \(x\) and \(y\) are fixed points, then
-\[
+If $x$ and $y$ are fixed points, then
+$$
 d(x,y)=d(f(x),f(y))\le\alpha d(x,y).
-\]
-Since \(\alpha<1\), this forces \(d(x,y)=0\), hence \(x=y\). The fixed point is unique.
+$$
+Since $\alpha<1$, this forces $d(x,y)=0$, hence $x=y$. The fixed point is unique.
 :::

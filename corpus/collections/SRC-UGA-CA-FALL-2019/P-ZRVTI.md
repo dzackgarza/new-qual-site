@@ -47,27 +47,27 @@ Writing $D^c \definedas \theset{\abs{z} > \eps}$, this means that $f(D^c)$ is de
 But $U\definedas \theset{\abs{z} < \eps}$ is open and by the open mapping theorem $f(U)$ is open, so by density there is a point $w\in f(D^c) \intersect f(U)$ while $U \intersect D^c = \emptyset$, again contradicting injectivity.
 
 So $z=0$ is a pole of $g$, and $g$ admits a Laurent expansion
-\[
+$$
 g(z) = \sum_{k\geq -N} c_k z^k
-.\]
+.$$
 Since $f$ is entire, it equals its Laurent expansion at $z=0$, so equating the two series yields
-\[
+$$
 f(z) = \sum_{k\geq 0} d_k z^k 
 &\implies g(z) = \sum_{k\geq 0} {d_k \over z^k} = \sum_{1\leq k\leq N} {c_k\over z^k} + \sum_{k\geq 0} c_k z^k \\
 &\implies \sum_{k\geq 0} c_k z^k = 0 \\
 &\implies f(z) = \sum_{0\leq k \leq N} c_k z^k
-,\]
+,$$
 making $f$ a polynomial of degree at most $N$.
 
 Now $f$ can not be degree zero, since constant maps are not injective.
 Moreover $f$ can not be degree $N\geq 2$, since any polynomial of degree $N$ has $N$ roots in $\CC$ by the fundamental theorem of algebra, and any two distinct roots will be points where injectivity fails.
 Finally, ruling out the case of roots with multiplicity, if $f(z) = c(z-a)^N$, then $f$ has exactly $N$ preimages in a neighborhood of $a$.
 Letting $p$ be any such point, we can find $N$ complex points mapping to it:
-\[
+$$
 p = c(z-a)^N &\implies {p\over c} = (z-a)^N \\
 &\implies \qty{p\over c}^{1\over N}\zeta_N^k = z-a \quad k=0,1,\cdots, n-1 \\
 &\implies z_k\definedas \qty{p\over c}^{1\over N}\zeta_N^k + a \mapsvia{f} p
-.\]
+.$$
 
 So $f$ must be degree exactly 1, i.e. $f(z) = az+b$.
 :::

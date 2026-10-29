@@ -19,9 +19,9 @@ audit:
 (a) Give an example of a compact set $K\subset[0,1]$ with positive Lebesgue measure but containing no nonempty open interval.
 
 (b) Prove that there exists $A\subset[0,1]$ such that every interval $I\subset[0,1]$ of positive measure satisfies
-\[
+$$
 0<m(A\cap I)<m(I).
-\]
+$$
 :::
 
 ::: {.solution}

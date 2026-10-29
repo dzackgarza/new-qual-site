@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 For which values of $\alpha,\beta$ does
-\[
+$$
 \sum_{n=3}^\infty\frac{1}{n^\alpha(\log n)^\beta}
-\]
+$$
 converge?
 :::
 

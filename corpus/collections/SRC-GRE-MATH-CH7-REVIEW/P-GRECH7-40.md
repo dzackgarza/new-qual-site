@@ -17,9 +17,9 @@ audit:
 
 ::: {.problem}
 What is the order of the permutation
-\[
+$$
 \sigma=\begin{pmatrix}1&2&3&4&5&6\\5&6&2&3&1&4\end{pmatrix}
-\]
+$$
 on the set $S=\{1,2,3,4,5,6\}$?
 
 (A) $1$

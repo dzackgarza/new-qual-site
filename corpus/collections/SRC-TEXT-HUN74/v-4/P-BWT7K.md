@@ -31,63 +31,63 @@ Determine all subgroups of the Galois group and all intermediate fields of the s
 
 ::: {.solution}
 Put
-\[
+$$
 a=\sqrt[3]{2},\qquad \zeta=e^{2\pi i/3},\qquad b=\sqrt3.
-\]
+$$
 The splitting field is
-\[
+$$
 L=\QQ(a,\zeta,b).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 One has
-\[
+$$
 \operatorname{Gal}(L/\QQ)\cong S_3\times C_2.
-\]
+$$
 
 ::: pf-proof
 
 Let
-\[
+$$
 M=\QQ(a,\zeta),
 \qquad
 N=\QQ(b).
-\]
+$$
 The field $M$ is the splitting field of $x^3-2$ and
-\[
+$$
 \operatorname{Gal}(M/\QQ)\cong S_3.
-\]
+$$
 Its unique quadratic subfield is the fixed field of $A_3$, namely
-\[
+$$
 \QQ(\sqrt{-3})=\QQ(\zeta).
-\]
+$$
 Since $N=\QQ(\sqrt3)$ is a different quadratic field,
-\[
+$$
 M\cap N=\QQ.
-\]
+$$
 Both extensions are Galois, so their compositum satisfies
-\[
+$$
 \operatorname{Gal}(L/\QQ)
 \cong\operatorname{Gal}(M/\QQ)\times\operatorname{Gal}(N/\QQ)
 \cong S_3\times C_2.
-\]
+$$
 
 Choose generators $\rho,\tau,\epsilon$ by
-\[
+$$
 \rho(a)=\zeta a,\quad \rho(\zeta)=\zeta,\quad \rho(b)=b,
-\]
-\[
+$$
+$$
 \tau(a)=a,\quad \tau(\zeta)=\zeta^2,\quad \tau(b)=b,
-\]
+$$
 and
-\[
+$$
 \epsilon(a)=a,\quad \epsilon(\zeta)=\zeta,\quad \epsilon(b)=-b.
-\]
+$$
 Then
-\[
+$$
 \rho^3=\tau^2=\epsilon^2=1,
 \qquad
 \tau\rho\tau=\rho^{-1},
@@ -95,19 +95,19 @@ Then
 \epsilon\rho=\rho\epsilon,
 \qquad
 \epsilon\tau=\tau\epsilon.
-\]
+$$
 For $j=0,1,2$, set
-\[
+$$
 a_j=\zeta^j a,
 \qquad
 \tau_j=\rho^j\tau\rho^{-j}.
-\]
+$$
 Thus $\tau_j$ is the transposition fixing $a_j$.
 
 Also put
-\[
+$$
 i=\frac{\sqrt{-3}}{\sqrt3}\in L.
-\]
+$$
 
 :::
 
@@ -116,7 +116,7 @@ i=\frac{\sqrt{-3}}{\sqrt3}\in L.
 ::: {.pf-step #s2}
 
 The complete subgroup list of $G=S_3\times C_2$ is
-\[
+$$
 \begin{array}{c|c|c}
 |H|&H&L^H\\
 \hline
@@ -131,17 +131,17 @@ The complete subgroup list of $G=S_3\times C_2$ is
 6&\langle\rho,\tau\epsilon\rangle&\QQ(i)\\[1mm]
 12&G&\QQ.
 \end{array}
-\]
+$$
 
 ::: pf-proof
 
 We first verify that no subgroups are missing.
 
 The involutions of $G$ are
-\[
+$$
 \epsilon,\quad \tau_0,\tau_1,\tau_2,
 \quad \tau_0\epsilon,\tau_1\epsilon,\tau_2\epsilon,
-\]
+$$
 so there are exactly seven subgroups of order $2$.
 
 The only elements of order $3$ are $\rho$ and $\rho^2$, giving the unique
@@ -150,24 +150,24 @@ subgroup $\langle\rho\rangle$ of order $3$.
 If $H$ has order $4$, its projection to $S_3$ has order $2$, so the kernel of
 that projection on $H$ has order $2$ and equals $\langle\epsilon\rangle$.
 Therefore
-\[
+$$
 H=\langle\tau_j,\epsilon\rangle
-\]
+$$
 for exactly one $j$, giving the three subgroups of order $4$.
 
 Every subgroup of order $6$ has index $2$, hence is the kernel of a nontrivial
 homomorphism $G\to C_2$. Since
-\[
+$$
 G_{\mathrm{ab}}\cong C_2\times C_2,
-\]
+$$
 there are exactly three such kernels, namely
-\[
+$$
 \langle\rho,\tau\rangle,
 \qquad
 \langle\rho,\epsilon\rangle,
 \qquad
 \langle\rho,\tau\epsilon\rangle.
-\]
+$$
 Together with the trivial subgroup and $G$, this is the full subgroup list by
 Lagrange's theorem.
 
@@ -180,9 +180,9 @@ full fixed field.
 Every transposition $\tau_j$ changes $\sqrt{-3}$ to its negative, while
 $\epsilon$ changes $b=\sqrt3$ to its negative. Consequently
 $\tau_j\epsilon$ fixes both $a_j$ and
-\[
+$$
 i=\frac{\sqrt{-3}}{\sqrt3}.
-\]
+$$
 The field $\QQ(a_j,i)$ has degree $6$, so it is exactly
 $L^{\langle\tau_j\epsilon\rangle}$.
 
@@ -193,13 +193,13 @@ index, so $\QQ(a_j)$ is its fixed field.
 
 Finally, the three index-$2$ subgroups correspond to the three quadratic
 characters of $S_3\times C_2$. Their fixed fields are respectively
-\[
+$$
 \QQ(b)=\QQ(\sqrt3),
 \qquad
 \QQ(\zeta)=\QQ(\sqrt{-3}),
 \qquad
 \QQ(i),
-\]
+$$
 the last because $\tau\epsilon$ fixes the quotient
 $\sqrt{-3}/\sqrt3=i$. The degree of each field equals the subgroup index, so
 each displayed inclusion is the full fixed field.

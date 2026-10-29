@@ -31,21 +31,21 @@ State the elimination theorem and explain why it is called an elimination theore
 
 ::: {.solution}
 Let
-\[
+$$
 I\subseteq k[x_1,\ldots,x_n]
-\]
+$$
 and fix $1\le \ell<n$. Use lexicographic order
-\[
+$$
 x_1>\cdots>x_n.
-\]
+$$
 If $G$ is a Gröbner basis of $I$, the elimination theorem states that
-\[
+$$
 G_\ell=G\cap k[x_{\ell+1},\ldots,x_n]
-\]
+$$
 is a Gröbner basis of the elimination ideal
-\[
+$$
 I_\ell=I\cap k[x_{\ell+1},\ldots,x_n].
-\]
+$$
 
 ::: pf
 

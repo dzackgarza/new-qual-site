@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose \(f\) is entire and
-\[
+Suppose $f$ is entire and
+$$
 \frac{f(z)}{1+|z|^{1/2}}
-\]
-is bounded as \(|z|\to\infty\). Prove that \(f\) is constant.
+$$
+is bounded as $|z|\to\infty$. Prove that $f$ is constant.
 :::
 
 ::: {.solution}

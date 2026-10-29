@@ -30,29 +30,29 @@ Show that a map between connected $n$-dimensional CW complexes is a homotopy equ
 
 ::: {.solution}
 Let
-\[
+$$
 f:X\to Y
-\]
-be a map of connected \(n\)-dimensional CW complexes inducing isomorphisms on \(\pi_i\) for \(i\le n\). In particular it is an isomorphism on \(\pi_1\), so it lifts to a map of universal covers
-\[
+$$
+be a map of connected $n$-dimensional CW complexes inducing isomorphisms on $\pi_i$ for $i\le n$. In particular it is an isomorphism on $\pi_1$, so it lifts to a map of universal covers
+$$
 \widetilde f:\widetilde X\to\widetilde Y.
-\]
-The universal covers are simply connected \(n\)-dimensional CW complexes, and \(\widetilde f\) is an isomorphism on \(\pi_i\) for \(2\le i\le n\).
+$$
+The universal covers are simply connected $n$-dimensional CW complexes, and $\widetilde f$ is an isomorphism on $\pi_i$ for $2\le i\le n$.
 
-Consider its mapping-cylinder pair \((M_{\widetilde f},\widetilde X)\). The long exact sequence of homotopy groups shows that this pair is \(n\)-connected. Relative Hurewicz therefore gives
-\[
+Consider its mapping-cylinder pair $(M_{\widetilde f},\widetilde X)$. The long exact sequence of homotopy groups shows that this pair is $n$-connected. Relative Hurewicz therefore gives
+$$
 H_i(M_{\widetilde f},\widetilde X)=0
 \qquad(i\le n).
-\]
+$$
 Equivalently,
-\[
+$$
 \widetilde f_*:H_i(\widetilde X)\xrightarrow{\cong}H_i(\widetilde Y)
 \qquad(i\le n).
-\]
-For \(i>n\), both homology groups vanish because the two universal covers are \(n\)-dimensional CW complexes. Hence \(\widetilde f\) is a homology isomorphism in all degrees.
+$$
+For $i>n$, both homology groups vanish because the two universal covers are $n$-dimensional CW complexes. Hence $\widetilde f$ is a homology isomorphism in all degrees.
 
-Exercise 12 now applies: since \(f\) is an isomorphism on \(\pi_1\) and its lift is a homology equivalence,
-\[
+Exercise 12 now applies: since $f$ is an isomorphism on $\pi_1$ and its lift is a homology equivalence,
+$$
 \boxed{f\text{ is a homotopy equivalence}.}
-\]
+$$
 :::

@@ -41,11 +41,11 @@ If $A=\emptyset$ or $B=\emptyset$, the required open neighborhoods exist.
 ::: pf-proof
 
 If $A=\emptyset$, take
-\[
+$$
 U=\emptyset,
 \qquad
 V=X.
-\]
+$$
 If $B=\emptyset$, interchange the two choices.
 Hence assume below that both $A$ and $B$ are nonempty.
 
@@ -56,13 +56,13 @@ Hence assume below that both $A$ and $B$ are nonempty.
 ::: {.pf-step #s2}
 
 For every $a\in A$, choose $\varepsilon_a>0$ such that
-\[
+$$
 B_d(a,\varepsilon_a)\cap B=\emptyset,
-\]
+$$
 and for every $b\in B$, choose $\delta_b>0$ such that
-\[
+$$
 B_d(b,\delta_b)\cap A=\emptyset.
-\]
+$$
 
 ::: pf-proof
 
@@ -77,17 +77,17 @@ The same argument with $A$ and $B$ interchanged gives the radii $\delta_b$.
 ::: {.pf-step #s3}
 
 Define
-\[
+$$
 U=\bigcup_{a\in A}B_d\left(a,\frac{\varepsilon_a}{2}\right),
 \qquad
 V=\bigcup_{b\in B}B_d\left(b,\frac{\delta_b}{2}\right).
-\]
+$$
 Then $U$ and $V$ are open, with
-\[
+$$
 A\subseteq U,
 \qquad
 B\subseteq V.
-\]
+$$
 
 ::: pf-proof
 
@@ -106,27 +106,27 @@ The open sets $U$ and $V$ are disjoint.
 
 Suppose instead that $z\in U\cap V$.
 Then for some $a\in A$ and $b\in B$,
-\[
+$$
 d(a,z)<\frac{\varepsilon_a}{2},
 \qquad
 d(z,b)<\frac{\delta_b}{2}.
-\]
+$$
 The triangle inequality gives
-\[
+$$
 d(a,b)
 \le d(a,z)+d(z,b)
 <\frac{\varepsilon_a+\delta_b}{2}.
-\]
+$$
 
 If $\varepsilon_a\le\delta_b$, then
-\[
+$$
 d(a,b)<\delta_b,
-\]
+$$
 so $a\in B_d(b,\delta_b)$, contradicting the choice of $\delta_b$ in step [](#s2){.pf-ref}.
 If $\delta_b\le\varepsilon_a$, then
-\[
+$$
 d(a,b)<\varepsilon_a,
-\]
+$$
 so $b\in B_d(a,\varepsilon_a)$, contradicting the choice of $\varepsilon_a$.
 Thus $U\cap V=\emptyset$.
 

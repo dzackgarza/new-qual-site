@@ -31,21 +31,21 @@ The collection of all sets of the form $\prod_{\alpha \in J} B_\alpha$, where $B
 
 ::: {.solution}
 For the box topology, let
-\[
+$$
 \mathcal B=\left\{\prod_{\alpha\in J}B_\alpha:B_\alpha\in\mathcal B_\alpha\right\}.
-\]
+$$
 It covers the product because each $\mathcal B_\alpha$ covers $X_\alpha$. If
-\[
+$$
 x\in\prod B_\alpha\cap\prod C_\alpha,
-\]
+$$
 then for every $\alpha$, because $\mathcal B_\alpha$ is a basis, there is $D_\alpha\in\mathcal B_\alpha$ such that
-\[
+$$
 x_\alpha\in D_\alpha\subseteq B_\alpha\cap C_\alpha.
-\]
+$$
 Hence
-\[
+$$
 x\in\prod D_\alpha\subseteq\left(\prod B_\alpha\right)\cap\left(\prod C_\alpha\right),
-\]
+$$
 so $\mathcal B$ is a basis.
 Each member of $\mathcal B$ is a product of open sets, hence box-open. Conversely, if $x\in\prod U_\alpha$ with each $U_\alpha$ open, choose $B_\alpha\in\mathcal B_\alpha$ with $x_\alpha\in B_\alpha\subseteq U_\alpha$; then $x\in\prod B_\alpha\subseteq\prod U_\alpha$. So every box-open set is a union of members of $\mathcal B$, and $\mathcal B$ generates the box topology.
 

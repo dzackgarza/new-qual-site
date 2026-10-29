@@ -46,9 +46,9 @@ setup.
 ::: pf-step
 
 A homotopy $H: W \times I \to X$ between $f_0$ and $f_1$ rel $A$ lifting $G(w, t) = g(w)$ is equivalent to extending a partially defined lift $H$ from the subspace:
-\[
+$$
 Y = (W \times \{0\}) \cup (A \times I) \cup (W \times \{1\}) \subset W \times I
-\]
+$$
 to the entire cylinder $W \times I$, where $H(w, 0) = f_0(w)$, $H(w, 1) = f_1(w)$, and $H(a, t) = f_0(a) = f_1(a)$ for $a \in A$.
 
 ::: pf-proof
@@ -86,9 +86,9 @@ product cellular decomposition with $I = [0, 1]$.
 ::: pf-step
 
 The boundary of the cell $e^n \times I$ is:
-\[
+$$
 \partial(e^n \times I) = (e^n \times \{0\}) \cup (\partial e^n \times I) \cup (e^n \times \{1\}) \cong S^n.
-\]
+$$
 
 ::: pf-proof
 
@@ -125,9 +125,9 @@ standard obstruction theory for extending sections of fibrations.
 ::: pf-step
 
 This defines an obstruction cocycle:
-\[
+$$
 c^{n+1} \in C^{n+1}(W \times I, Y; \pi_n F).
-\]
+$$
 
 ::: pf-proof
 
@@ -140,13 +140,13 @@ assignment of boundary homotopy classes to $(n+1)$-cells.
 ::: pf-step
 
 By the suspension isomorphism for relative CW pairs:
-\[
+$$
 C^{n+1}(W \times I, (W \times \partial I) \cup (A \times I); \pi_n F) \cong C^n(W, A; \pi_n F),
-\]
+$$
 which passes to cohomology to yield:
-\[
+$$
 H^{n+1}(W \times I, Y; \pi_n F) \cong H^n(W, A; \pi_n F).
-\]
+$$
 
 ::: pf-proof
 

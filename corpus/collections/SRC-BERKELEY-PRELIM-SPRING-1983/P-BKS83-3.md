@@ -27,16 +27,16 @@ audit:
 
 ::: {.problem}
 A fractional linear transformation maps the annulus
-\[
+$$
 r<|z|<1,
 \qquad r>0,
-\]
+$$
 onto the domain bounded by the circles
-\[
+$$
 \left|z-\frac14\right|=\frac14
 \qquad\text{and}\qquad
 |z|=1.
-\]
+$$
 Find $r$.
 :::
 

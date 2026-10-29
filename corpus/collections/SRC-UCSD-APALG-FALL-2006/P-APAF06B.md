@@ -48,9 +48,9 @@ setup.
 ::: pf-step
 
 Compute the Gram matrix $A^* A$:
-\[
+$$
 A^* A = (UH)^* (UH) = H^* (U^* U) H = H I_n H = H^2.
-\]
+$$
 
 ::: pf-proof
 
@@ -76,9 +76,9 @@ definition of positive semidefiniteness.
 
 By the Spectral Theorem, every Hermitian positive semidefinite matrix has a **unique** Hermitian positive semidefinite square root.
 Thus $H$ must be uniquely given by:
-\[
+$$
 H = \sqrt{A^* A}.
-\]
+$$
 
 ::: pf-proof
 
@@ -113,9 +113,9 @@ Singular Value Decomposition Theorem.
 ::: pf-step
 
 Compute $A^* A = (W \Sigma V^*)(V \Sigma W^*) = W \Sigma^2 W^*$, which gives:
-\[
+$$
 H = \sqrt{A^* A} = W \Sigma W^*.
-\]
+$$
 $H$ is Hermitian ($H^* = W \Sigma W^* = H$) and positive semidefinite (eigenvalues $\sigma_i \ge 0$).
 
 ::: pf-proof
@@ -142,9 +142,9 @@ unitary invariance of inner products.
 ::: pf-step
 
 Check the product:
-\[
+$$
 UH = (V W^*) (W \Sigma W^*) = V \Sigma W^* = A.
-\]
+$$
 
 ::: pf-proof
 
@@ -179,9 +179,9 @@ eigenvalues of $H$ are the singular values of $A$.
 ::: pf-step
 
 Multiplying $A = UH$ on the right by $H^{-1}$ yields:
-\[
+$$
 U = A H^{-1},
-\]
+$$
 which proves $U$ is uniquely determined.
 
 ::: pf-proof

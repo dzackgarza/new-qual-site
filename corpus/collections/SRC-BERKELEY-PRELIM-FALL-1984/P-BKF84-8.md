@@ -25,14 +25,14 @@ audit:
 ::: {.problem}
 Let $a,b,c,d\in\RR$, not all zero.
 Find the eigenvalues of
-\[
+$$
 \begin{pmatrix}
 a^2&ab&ac&ad\\
 ab&b^2&bc&bd\\
 ac&bc&c^2&cd\\
 ad&bd&cd&d^2
 \end{pmatrix}
-\]
+$$
 and describe the eigenspace decomposition of $\RR^4$.
 :::
 

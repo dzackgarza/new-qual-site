@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Let $A$ be an $m\times n$ matrix with rational entries and let $b\in\QQ^m$. Prove or disprove: if
-\[
+$$
 Ax=b
-\]
+$$
 has a solution $x\in\CC^n$, then it has a solution $x\in\QQ^n$.
 :::
 

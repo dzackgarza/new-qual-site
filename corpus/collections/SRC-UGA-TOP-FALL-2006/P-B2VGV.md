@@ -45,9 +45,9 @@ Let $C$ be a path component and let $x\in C$.
 Local path connectedness gives an open path-connected neighborhood $U_x$ of $x$.
 Every point of $U_x$ can be joined to $x$ by a path in $U_x$, so every point of $U_x$ lies in the same path component as $x$.
 Hence
-\[
+$$
 U_x\subseteq C.
-\]
+$$
 Since this holds at every $x\in C$, the component $C$ is open.
 :::
 
@@ -66,12 +66,12 @@ Thus $X$ has one path component.
 
 ::: {.pf-step #comb-space-path-connected}
 The comb space
-\[
+$$
 X=([0,1]\times\{0\})
 \cup(\{0\}\times[0,1])
 \cup\bigcup_{n\ge1}(\{1/n\}\times[0,1])
 \subseteq\RR^2.
-\]
+$$
 is path connected.
 
 ::: pf-proof
@@ -84,32 +84,32 @@ Concatenating these paths joins any two points of $X$.
 
 ::: {.pf-step #comb-space-not-lpc}
 The comb space in step [](#comb-space-path-connected){.pf-ref} is not locally path connected at
-\[
+$$
 p=(0,1/2).
-\]
+$$
 
 ::: pf-proof
 Let
-\[
+$$
 U=X\cap B_{1/4}(p).
-\]
+$$
 This neighborhood does not meet the base $[0,1]\times\{0\}$.
 Any neighborhood $V$ of $p$ in $X$ with $V\subseteq U$ contains points
-\[
+$$
 q_n=(1/n,1/2)
-\]
+$$
 for all sufficiently large $n$.
 
 There is no path in $U$ from $p$ to such a $q_n$.
 Indeed, a path in $X$ that avoids the base has positive second coordinate, so its first coordinate is a continuous map from an interval into
-\[
+$$
 \{0\}\cup\{1,1/2,1/3,\ldots\}.
-\]
+$$
 The image must be connected, but every connected subset of this subset of $\RR$ is a singleton.
 Indeed, if a subset contained two distinct numbers $a<b$, choose
-\[
+$$
 c\in(a,b)\setminus\bigl(\{0\}\cup\{1,1/2,1/3,\ldots\}\bigr).
-\]
+$$
 Intersection with $(-\infty,c)$ and $(c,\infty)$ would then separate that subset.
 Thus the first coordinate must be constant.
 A path from $p$ to $q_n$ would therefore have to meet the base, contrary to the choice of $U$.

@@ -14,9 +14,9 @@ audit:
 
 ::: {.problem}
 Let $\Omega\subseteq\CC$ be open and define
-\[
+$$
 |\Omega|=\{|z|:z\in\Omega\}\subseteq\RR_{\ge0}.
-\]
+$$
 Show that $|\Omega|$ is relatively open in $\RR_{\ge0}$.
 :::
 

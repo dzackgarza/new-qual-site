@@ -43,9 +43,9 @@ Put $H=(A^*A)^{1/2}$ and $K=\ker H$. Then $K=\ker A$ and $\operatorname{im}H=K^\
 ::: pf-proof
 
 For every $x$,
-\[
+$$
 \|Ax\|^2=\langle A^*Ax,x\rangle=\langle H^2x,x\rangle=\|Hx\|^2,
-\]
+$$
 so $Ax=0$ iff $Hx=0$. Since $H$ is Hermitian, $\operatorname{im}H=(\ker H)^\perp$.
 
 :::
@@ -83,9 +83,9 @@ The factor $H$ is unique.
 ::: pf-proof
 
 If $A=U_1H_1$ with $U_1^*U_1=I$ and $H_1\ge0$, then
-\[
+$$
 A^*A=H_1U_1^*U_1H_1=H_1^2.
-\]
+$$
 Hence $H_1$ is the positive semidefinite square root of $A^*A$, so $H_1=H$.
 
 :::

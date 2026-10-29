@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let $\alpha\in[0,1]\setminus\QQ$ and let $(a_n)\in\ell^1(\NN)$ with $a_n\ne0$ for all $n$.
 Show that
-\[
+$$
 f(z)=\sum_{n\ge1}\frac{a_n}{z-e^{i\alpha n}}
-\]
+$$
 converges and defines a function analytic in the unit disk $\DD$, and that $f$ admits no analytic continuation to any domain properly containing $\DD$.
 :::
 
@@ -32,48 +32,48 @@ converges and defines a function analytic in the unit disk $\DD$, and that $f$ a
 ::: {.pf-step #s1-1}
 
 The natural-boundary assertion is false under the literal hypothesis
-\[
+$$
 \alpha\in[0,1]\setminus\QQ.
-\]
+$$
 
 
 ::: pf-proof
 
 Take
-\[
+$$
 \alpha=\frac\pi5,
 \qquad
 a_n=2^{-n}.
-\]
+$$
 Then $\alpha\in[0,1]\setminus\QQ$, but
-\[
+$$
 e^{i\alpha n}
 =
 e^{2\pi i n/10}
-\]
+$$
 takes only ten distinct values.
 
 For $1\le j\le10$, set
-\[
+$$
 \zeta_j=e^{2\pi i j/10},
 \qquad
 b_j
 \coloneqq
 \sum_{m=0}^{\infty}2^{-(j+10m)}.
-\]
+$$
 Each $b_j$ is positive. Since the original series is absolutely convergent on compact subsets of $\DD$, terms may be grouped by residue class modulo $10$, giving
-\[
+$$
 f(z)
 =
 \sum_{j=1}^{10}
 \frac{b_j}{z-\zeta_j}
 \qquad
 (z\in\DD).
-\]
+$$
 The right-hand side is a rational function, holomorphic on
-\[
+$$
 \CC\setminus\{\zeta_1,\dots,\zeta_{10}\}.
-\]
+$$
 Choose any point of the unit circle not among these ten poles and a sufficiently small disk around it avoiding all poles. The union of that disk with $\DD$ is a domain properly containing $\DD$ on which the rational expression gives an analytic continuation of $f$. Thus the literal claim is false.
 
 :::
@@ -83,24 +83,24 @@ Choose any point of the unit circle not among these ten poles and a sufficiently
 ::: {.pf-step #s1-2}
 
 The intended statement is correct under the corrected hypothesis
-\[
+$$
 \frac{\alpha}{2\pi}\notin\QQ.
-\]
+$$
 Assume this hypothesis for the remainder of the proof.
 
 
 ::: pf-proof
 
 The correction is exactly the condition that the rotation
-\[
+$$
 z\longmapsto e^{i\alpha}z
-\]
+$$
 have infinite order. Under it, the points
-\[
+$$
 \zeta_n
 \coloneqq
 e^{i\alpha n}
-\]
+$$
 are pairwise distinct and dense in the unit circle.
 
 :::
@@ -110,33 +110,33 @@ are pairwise distinct and dense in the unit circle.
 ::: {.pf-step #s1-3}
 
 Under the corrected hypothesis, the series
-\[
+$$
 f(z)
 =
 \sum_{n=1}^{\infty}
 \frac{a_n}{z-\zeta_n}
-\]
+$$
 converges uniformly on compact subsets of $\DD$.
 
 
 ::: pf-proof
 
 Fix $0<r<1$. For $|z|\le r$ and every $n$,
-\[
+$$
 |z-\zeta_n|
 \ge
 1-|z|
 \ge
 1-r.
-\]
+$$
 Hence
-\[
+$$
 \left|
 \frac{a_n}{z-\zeta_n}
 \right|
 \le
 \frac{|a_n|}{1-r}.
-\]
+$$
 Since $(a_n)\in\ell^1$, the Weierstrass M-test gives uniform absolute convergence on $|z|\le r$. Every compact subset of $\DD$ is contained in such a disk, so the convergence is locally uniform.
 
 :::
@@ -151,10 +151,10 @@ Under the corrected hypothesis, $f$ is holomorphic on $\DD$.
 ::: pf-proof
 
 Each summand
-\[
+$$
 z\longmapsto
 \frac{a_n}{z-\zeta_n}
-\]
+$$
 is holomorphic on $\DD$, because $|\zeta_n|=1$. By step [](#s1-3){.pf-ref}, the series converges uniformly on compact subsets. A locally uniform limit of holomorphic functions is holomorphic.
 
 :::
@@ -181,15 +181,15 @@ Since $\Omega$ is open, it contains a nonempty open arc of the unit circle aroun
 ::: {.pf-step #s1-6}
 
 Suppose, toward a contradiction, that $f$ has a holomorphic continuation $F$ to such a domain $\Omega$. For the index $k$ from step [](#s1-5){.pf-ref}$, define
-\[
+$$
 G(z)
 \coloneqq
 (z-\zeta_k)F(z).
-\]
+$$
 Then
-\[
+$$
 G(\zeta_k)=0.
-\]
+$$
 
 
 ::: pf-proof
@@ -203,7 +203,7 @@ The function $F$ is holomorphic at $\zeta_k\in\Omega$, so $G$ is holomorphic the
 ::: {.pf-step #s1-7}
 
 For $0<r<1$,
-\[
+$$
 G(r\zeta_k)
 =
 a_k
@@ -212,13 +212,13 @@ a_k
 a_n
 \frac{(r-1)\zeta_k}
 {r\zeta_k-\zeta_n}.
-\]
+$$
 
 
 ::: pf-proof
 
 Inside $\DD$, the continuation $F$ agrees with the original function $f$. Thus
-\[
+$$
 \begin{aligned}
 G(r\zeta_k)
 &=
@@ -233,7 +233,7 @@ a_n
 \frac{(r-1)\zeta_k}
 {r\zeta_k-\zeta_n}.
 \end{aligned}
-\]
+$$
 The series is absolutely convergent for each fixed $r<1$ by step [](#s1-3){.pf-ref}, so the algebraic separation of the $k$-th term is justified.
 
 :::
@@ -243,32 +243,32 @@ The series is absolutely convergent for each fixed $r<1$ by step [](#s1-3){.pf-r
 ::: {.pf-step #s1-8}
 
 For every $n\ne k$ and every $0<r<1$,
-\[
+$$
 \left|
 \frac{(r-1)\zeta_k}
 {r\zeta_k-\zeta_n}
 \right|
 \le1,
-\]
+$$
 and for each fixed $n\ne k$ this quantity tends to $0$ as $r\uparrow1$.
 
 
 ::: pf-proof
 
 Since $|\zeta_k|=|\zeta_n|=1$,
-\[
+$$
 |r\zeta_k-\zeta_n|
 \ge
 \bigl||\zeta_n|-|r\zeta_k|\bigr|
 =
 1-r.
-\]
+$$
 The numerator has modulus $1-r$, proving the bound.
 
 For fixed $n\ne k$, pairwise distinctness from step [](#s1-2){.pf-ref} gives
-\[
+$$
 \zeta_k-\zeta_n\ne0.
-\]
+$$
 Hence the denominator tends to this nonzero number while the numerator tends to $0$, so the quotient tends to $0$.
 
 :::
@@ -278,17 +278,17 @@ Hence the denominator tends to this nonzero number while the numerator tends to 
 ::: {.pf-step #s1-9}
 
 One has
-\[
+$$
 \lim_{r\uparrow1}G(r\zeta_k)
 =
 a_k.
-\]
+$$
 
 
 ::: pf-proof
 
 By steps [](#s1-7){.pf-ref} and [](#s1-8){.pf-ref},
-\[
+$$
 \left|
 a_n
 \frac{(r-1)\zeta_k}
@@ -298,15 +298,15 @@ a_n
 |a_n|
 \qquad
 (n\ne k).
-\]
+$$
 The sequence $(|a_n|)$ is summable, and each summand tends to $0$ for fixed $n\ne k$. Dominated convergence for series therefore gives
-\[
+$$
 \sum_{n\ne k}
 a_n
 \frac{(r-1)\zeta_k}
 {r\zeta_k-\zeta_n}
 \longrightarrow0.
-\]
+$$
 Substitute into step [](#s1-7){.pf-ref}.
 
 :::
@@ -321,16 +321,16 @@ The assumed continuation leads to a contradiction.
 ::: pf-proof
 
 Since $G$ is holomorphic on $\Omega$, it is continuous at $\zeta_k$. Therefore
-\[
+$$
 \lim_{r\uparrow1}G(r\zeta_k)
 =
 G(\zeta_k)
 =0
-\]
+$$
 by step [](#s1-6){.pf-ref}. But step [](#s1-9){.pf-ref} gives the same limit as
-\[
+$$
 a_k\ne0.
-\]
+$$
 This is a contradiction.
 
 :::

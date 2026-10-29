@@ -45,9 +45,9 @@ $z\in Z(G)$.
 ::: pf-proof
 
 Let $g\in G$. Since $xZ(G)$ generates $G/Z(G)$, there is $m\in\ZZ$ such that
-\[
+$$
 gZ(G)=x^mZ(G).
-\]
+$$
 Hence $x^{-m}g\in Z(G)$. Setting $z=x^{-m}g$ gives $g=x^m z$.
 
 :::
@@ -61,14 +61,14 @@ Any two elements of $G$ commute.
 ::: pf-proof
 
 Let
-\[
+$$
 g=x^m z,\qquad h=x^n w
-\]
+$$
 with $z,w\in Z(G)$, as in step [](#s1){.pf-ref}. Since $z$ and $w$ commute with every element
 of $G$,
-\[
+$$
 gh=x^mzx^nw=x^{m+n}zw=x^{n+m}wz=x^nwx^mz=hg.
-\]
+$$
 
 :::
 

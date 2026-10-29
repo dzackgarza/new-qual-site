@@ -29,25 +29,25 @@ Show that if $g: S^2 \to S^2$ is continuous and $g(x) \neq g(-x)$ for all $x$, t
 :::
 
 ::: {.solution}
-Suppose, toward a contradiction, that \(g\) is not surjective. Choose
-\[
+Suppose, toward a contradiction, that $g$ is not surjective. Choose
+$$
 p\in S^2-g(S^2).
-\]
-Since \(S^2-\{p\}\) is homeomorphic to \(\RR^2\), choose a homeomorphism
-\[
+$$
+Since $S^2-\{p\}$ is homeomorphic to $\RR^2$, choose a homeomorphism
+$$
 \phi:S^2-\{p\}\longrightarrow\RR^2.
-\]
+$$
 Then
-\[
+$$
 F=\phi\circ g:S^2\to\RR^2
-\]
-is continuous. By the Borsuk--Ulam theorem there exists \(x\in S^2\) with
-\[
+$$
+is continuous. By the Borsuk--Ulam theorem there exists $x\in S^2$ with
+$$
 F(x)=F(-x).
-\]
-Since \(\phi\) is injective, this implies
-\[
+$$
+Since $\phi$ is injective, this implies
+$$
 g(x)=g(-x),
-\]
-contrary to the hypothesis. Therefore \(g\) must be surjective.
+$$
+contrary to the hypothesis. Therefore $g$ must be surjective.
 :::

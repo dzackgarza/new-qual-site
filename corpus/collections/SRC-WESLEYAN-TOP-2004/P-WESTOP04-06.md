@@ -13,9 +13,9 @@ audit:
 ::: {.problem}
 1. Carefully define any three standard cardinal invariants associated with every topological space, excluding the cardinality $|X|$ itself.
 2. For each invariant $c$ you chose, prove or disprove:
-   \[
+   $$
    F\subseteq X\text{ closed}\quad\Longrightarrow\quad c(F)\le c(X).
-   \]
+   $$
 3. For each chosen invariant, prove or disprove the same assertion under the additional hypothesis that $X$ is metrizable.
 :::
 

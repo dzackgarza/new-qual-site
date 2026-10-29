@@ -25,17 +25,17 @@ audit:
 :::
 
 ::: {.solution}
-Every point \(x\in U\) has an open Euclidean ball
-\[
+Every point $x\in U$ has an open Euclidean ball
+$$
 B(x,r)\subseteq U.
-\]
-Balls in \(\RR^n\) are convex, hence path connected: for \(p,q\in B(x,r)\), the straight-line path
-\[
+$$
+Balls in $\RR^n$ are convex, hence path connected: for $p,q\in B(x,r)$, the straight-line path
+$$
 \gamma(t)=(1-t)p+tq
-\]
-stays inside the ball. Therefore \(U\) is locally path connected.
+$$
+stays inside the ball. Therefore $U$ is locally path connected.
 
-In any locally path-connected space, path components are open: if \(C\) is a path component and \(x\in C\), choose a path-connected open neighborhood \(V\ni x\); then every point of \(V\) is joined to \(x\), so \(V\subseteq C\). Hence each path component of \(U\) is open in \(U\).
+In any locally path-connected space, path components are open: if $C$ is a path component and $x\in C$, choose a path-connected open neighborhood $V\ni x$; then every point of $V$ is joined to $x$, so $V\subseteq C$. Hence each path component of $U$ is open in $U$.
 
-The path components partition \(U\). If there were at least two of them, one component and the union of all the others would be disjoint nonempty open subsets whose union is \(U\), contradicting connectedness. Thus \(U\) has exactly one path component and is path connected.
+The path components partition $U$. If there were at least two of them, one component and the union of all the others would be disjoint nonempty open subsets whose union is $U$, contradicting connectedness. Thus $U$ has exactly one path component and is path connected.
 :::

@@ -14,13 +14,13 @@ review: draft
 
 ::: {.problem}
 For any topological space $X$ whose total homology is a finitely-generated abelian group, let $\chi(X)$ denote the usual Euler characteristic
-\[
+$$
 \chi(X) = \sum_i (-1)^i \dim_{\QQ} H_i(X; \QQ)
-\]
+$$
 and let $\chi_2(X)$ be the "mod-2 homology Euler characteristic"
-\[
+$$
 \chi_2(X) = \sum_i (-1)^i \dim_{\FF_2} H_i(X; \FF_2).
-\]
+$$
 Use the universal coefficient theorem to show that $\chi(X) = \chi_2(X)$.
 :::
 

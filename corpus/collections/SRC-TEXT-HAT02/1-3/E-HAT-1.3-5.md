@@ -33,9 +33,9 @@ Deduce that $X$ has no simply-connected covering space.
 
 ::: {.solution}
 Let
-\[
+$$
 L=\{0\}\times[0,1]
-\]
+$$
 be the left edge.
 
 ::: pf
@@ -50,56 +50,56 @@ Then there is an open neighborhood $N$ of $K$ on which $f$ is injective.
 ::: pf-proof
 
 Let $d$ be a metric on $M$ and define
-\[
+$$
 g:E\times E\to\RR,
 \qquad
 g(e,e')=d(f(e),f(e')).
-\]
+$$
 Put
-\[
+$$
 Z=g^{-1}(0)=\{(e,e'):f(e)=f(e')\}.
-\]
+$$
 
 For each $k\in K$, choose an open neighborhood $V_k$ on which $f$ is injective.
 Then
-\[
+$$
 (V_k\times V_k)\cap Z
 \subseteq
 \Delta_E.
-\]
+$$
 Let
-\[
+$$
 V=\bigcup_{k\in K}(V_k\times V_k),
 \qquad
 O=(E\times E\setminus Z)\cup V.
-\]
+$$
 The set $O$ is open.
 
 We claim
-\[
+$$
 K\times K\subseteq O.
-\]
+$$
 Indeed, if $k\ne k'$ lie in $K$, injectivity of $f|_K$ gives
-\[
+$$
 f(k)\ne f(k'),
-\]
+$$
 so $(k,k')\notin Z$.
 If $k=k'$, then $(k,k)\in V_k\times V_k\subseteq V$.
 
 Since $K\times K$ is compact and lies in the open set $O$, the product-neighborhood lemma for compact sets gives open neighborhoods $W,W'$ of $K$ such that
-\[
+$$
 W\times W'\subseteq O.
-\]
+$$
 For completeness, this product-neighborhood lemma follows by covering each slice $\{k\}\times K$ by finitely many product neighborhoods inside $O$, intersecting their first factors to obtain a product neighborhood of $\{k\}\times K$, then using compactness of the first copy of $K$ and intersecting finitely many corresponding second factors.
 
 Set
-\[
+$$
 N=W\cap W'.
-\]
+$$
 If $e,e'\in N$ and $f(e)=f(e')$, then
-\[
+$$
 (e,e')\in (N\times N)\cap Z\subseteq O\cap Z\subseteq V.
-\]
+$$
 Hence $e,e'$ lie together in some $V_k$, where $f$ is injective, so $e=e'$.
 Thus $f|_N$ is injective.
 
@@ -110,16 +110,16 @@ Thus $f|_N$ is injective.
 ::: {.pf-step #s2}
 
 Let
-\[
+$$
 p:\widetilde X\to X
-\]
+$$
 be any covering space.
 Choose a point $\widetilde \ell_0$ above the lower-left corner of $L$.
 The inclusion path of $L$ has a unique lift beginning at $\widetilde \ell_0$; denote its image by $\widetilde L$.
 Then
-\[
+$$
 p|_{\widetilde L}:\widetilde L\to L
-\]
+$$
 is a homeomorphism.
 
 ::: pf-proof
@@ -137,9 +137,9 @@ Equivalently, its inverse is simply the restriction of $p$ followed by the inver
 ::: {.pf-step #s3}
 
 There is an open neighborhood $N$ of $\widetilde L$ such that
-\[
+$$
 p|_N:N\longrightarrow p(N)
-\]
+$$
 is a homeomorphism, and $p(N)$ is an open neighborhood of $L$ in $X$.
 
 ::: pf-proof
@@ -149,21 +149,21 @@ A covering map is locally a homeomorphism, hence locally injective near every po
 Also $p$ is injective on $\widetilde L$ by step [](#s2){.pf-ref}.
 
 Apply step [](#s1){.pf-ref} with
-\[
+$$
 E=\widetilde X,
 \qquad
 M=X\subseteq\RR^2,
 \qquad
 K=\widetilde L.
-\]
+$$
 We obtain an open neighborhood $N$ of $\widetilde L$ on which $p$ is injective.
 
 Every covering map is open: on each covering sheet it is a homeomorphism onto an open subset of the base, and an arbitrary open set is the union of its intersections with such sheets.
 Therefore $p(N)$ is open.
 The continuous bijection
-\[
+$$
 p|_N:N\to p(N)
-\]
+$$
 is open, hence is a homeomorphism.
 Since $p(\widetilde L)=L$, the set $p(N)$ contains $L$.
 
@@ -174,33 +174,33 @@ Since $p(\widetilde L)=L$, the set $p(N)$ contains $L$.
 ::: {.pf-step #s4}
 
 Every open neighborhood $U$ of $L$ in $X$ contains, for all sufficiently large $n$, the entire rectangular loop
-\[
+$$
 R_n
 =
 \partial\bigl([0,1/n]\times[0,1]\bigr).
-\]
+$$
 
 ::: pf-proof
 
 The complement
-\[
+$$
 F=X\setminus U
-\]
+$$
 is closed in the compact metric space $X$, hence compact.
 It is disjoint from the compact set $L$.
 Therefore their Euclidean distance is positive:
-\[
+$$
 \delta=d(L,F)>0.
-\]
+$$
 Choose $n$ with
-\[
+$$
 1/n<\delta.
-\]
+$$
 Every point of $R_n$ has Euclidean distance at most $1/n$ from $L$, so no point of $R_n$ lies in $F$.
 Thus
-\[
+$$
 R_n\subseteq U.
-\]
+$$
 
 :::
 
@@ -213,26 +213,26 @@ The loop $R_n$ is nontrivial in $\pi_1(X)$.
 ::: pf-proof
 
 Define
-\[
+$$
 \varphi_n:X\to S^1
-\]
+$$
 to be constant equal to $1$ on all of $X$ except the vertical segment
-\[
+$$
 V_n=\{1/n\}\times[0,1],
-\]
+$$
 and on that segment set
-\[
+$$
 \varphi_n(1/n,t)=e^{2\pi i t}.
-\]
+$$
 This is continuous.
 The segment $V_n$ is isolated from all the other interior vertical segments in the horizontal direction, and at its two endpoints the displayed formula equals $1$, agreeing with the constant definition on the top and bottom edges.
 
 Orient $R_n$ so that it traverses $V_n$ from bottom to top.
 All other portions of $R_n$ map constantly to $1$, while $V_n$ maps once around $S^1$.
 Hence
-\[
+$$
 (\varphi_n)_*([R_n])=1\in\pi_1(S^1)\cong\ZZ.
-\]
+$$
 Therefore $[R_n]\ne1$ in $\pi_1(X)$.
 
 :::
@@ -248,14 +248,14 @@ The space $X$ has no simply connected covering space.
 Suppose $p:\widetilde X\to X$ were a simply connected covering.
 By step [](#s3){.pf-ref}, choose an open neighborhood $U=p(N)$ of $L$ that lifts homeomorphically to $N$.
 By step [](#s4){.pf-ref}, choose $n$ with
-\[
+$$
 R_n\subseteq U.
-\]
+$$
 
 The loop $R_n$ therefore has the closed lift
-\[
+$$
 \widetilde R_n=(p|_N)^{-1}\circ R_n
-\]
+$$
 in $\widetilde X$.
 Since $\widetilde X$ is simply connected, $\widetilde R_n$ is nullhomotopic.
 Composing a nullhomotopy with $p$ shows that $R_n$ is nullhomotopic in $X$.

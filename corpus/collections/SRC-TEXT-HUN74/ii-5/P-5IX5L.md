@@ -41,11 +41,11 @@ The number $n_p$ of Sylow $p$-subgroups is $1$.
 ::: pf-proof
 
 By Sylow's theorems,
-\[
+$$
 n_p\mid q
 \qquad\text{and}\qquad
 n_p\equiv1\pmod p.
-\]
+$$
 Since $q$ is prime, $n_p$ is either $1$ or $q$. If $n_p=q$, then
 $q\equiv1\pmod p$, so $p$ divides $q-1$. But $0<q-1<p$ because $p>q$, which
 is impossible. Hence $n_p=1$.
@@ -61,9 +61,9 @@ The subgroup $P$ is normal and has index $q$.
 ::: pf-proof
 
 A unique Sylow subgroup is normal, so step [](#s1){.pf-ref} gives $P\trianglelefteq G$. Also
-\[
+$$
 [G:P]=\frac{p^nq}{p^n}=q.
-\]
+$$
 
 :::
 
@@ -76,9 +76,9 @@ Any subgroup $H\le G$ of index $q$ equals $P$.
 ::: pf-proof
 
 If $[G:H]=q$, then
-\[
+$$
 |H|=\frac{|G|}{q}=p^n.
-\]
+$$
 Thus $H$ is a Sylow $p$-subgroup. By step [](#s1){.pf-ref} the Sylow $p$-subgroup is unique, so
 $H=P$.
 

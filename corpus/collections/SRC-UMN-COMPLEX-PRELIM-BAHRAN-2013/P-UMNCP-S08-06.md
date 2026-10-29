@@ -18,13 +18,13 @@ audit:
 
 ::: {.problem}
 Find an explicit conformal equivalence from
-\[
+$$
 R_1=\{z\in\CC:\operatorname{Re}z>0,\ \operatorname{Im}z>0,\ |z|<1\}
-\]
+$$
 to
-\[
+$$
 R_2=\{z\in\CC:\operatorname{Re}z>0,\ \operatorname{Im}z>0\}.
-\]
+$$
 :::
 
 ::: {.solution}

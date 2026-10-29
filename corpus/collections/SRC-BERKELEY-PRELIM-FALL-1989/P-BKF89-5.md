@@ -14,9 +14,9 @@ audit:
 
 ::: {.problem}
 Let $G$ be a group, let $G'$ be its commutator subgroup, and let $N\triangleleft G$ be cyclic. Prove that
-\[
+$$
 gn=ng
-\]
+$$
 for every $g\in G'$ and $n\in N$.
 :::
 

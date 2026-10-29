@@ -27,13 +27,13 @@ Prove that $a+I$ is a unit (i.e., invertible) in the quotient ring $R/I$.
 
 ::: {.solution}
 Because $(a)+I=R$, we have $1\in(a)+I$. Hence there exist $r\in R$ and $i\in I$ such that
-\[
+$$
 ra+i=1.
-\]
+$$
 Passing to the quotient gives
-\[
+$$
 (r+I)(a+I)=ra+I=1+I.
-\]
+$$
 Thus $r+I$ is an inverse of $a+I$, so $a+I$ is a unit in $R/I$.
 
 For $R=\ZZ$ and $I=n\ZZ$, the hypothesis $(a)+n\ZZ=\ZZ$ is exactly $\gcd(a,n)=1$, recovering the familiar statement for $\ZZ/n\ZZ$.

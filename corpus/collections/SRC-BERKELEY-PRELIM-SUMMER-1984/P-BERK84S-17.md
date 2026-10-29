@@ -51,22 +51,22 @@ Fix $r$ with $0<r<R$.
 ::: {.pf-step #s1}
 
 There is a constant $C<\infty$ such that
-\[
+$$
 |a_n|\le C r^{-n}
 \qquad(n\ge0).
-\]
+$$
 
 ::: pf-proof
 
 Because $r<R$, the power series for $f$ converges absolutely at $z=r$.
 Therefore
-\[
+$$
 C:=\sum_{n=0}^{\infty}|a_n|r^n<\infty.
-\]
+$$
 Each summand is nonnegative, so for every $n$,
-\[
+$$
 |a_n|r^n\le C.
-\]
+$$
 Since $r>0$, this gives $|a_n|\le Cr^{-n}$.
 
 :::
@@ -80,11 +80,11 @@ The series defining $h$ converges absolutely for every $z\in\CC$.
 ::: pf-proof
 
 By step [](#s1){.pf-ref}, for every $z\in\CC$,
-\[
+$$
 \sum_{n=0}^{\infty}\left|\frac{a_nz^n}{n!}\right|
 \le C\sum_{n=0}^{\infty}\frac{(|z|/r)^n}{n!}
 =C e^{|z|/r}<\infty.
-\]
+$$
 Thus the power series for $h$ has infinite radius of convergence.
 Hence $h$ is entire.
 
@@ -99,11 +99,11 @@ The required growth estimate holds.
 ::: pf-proof
 
 The same estimate from step [](#s2){.pf-ref} gives directly
-\[
+$$
 |h(z)|
 \le\sum_{n=0}^{\infty}\left|\frac{a_nz^n}{n!}\right|
 \le C e^{|z|/r}.
-\]
+$$
 Thus the statement holds with $M=C$.
 
 :::

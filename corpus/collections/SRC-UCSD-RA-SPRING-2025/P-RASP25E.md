@@ -33,9 +33,9 @@ Let $f \in C^1(\RR)$ such that $f(0) = f(1)$ and $\int_0^1 f(x)\,dx = 0$.
 
 ::: {.solution}
 For $n\in\ZZ$, write
-\[
+$$
 \widehat f(n):=\int_0^1 f(x)e^{-2\pi i n x}\,dx.
-\]
+$$
 
 ::: pf
 
@@ -46,22 +46,22 @@ Relate the Fourier coefficients of $f'$ and $f$.
 ::: pf-proof
 
 Since $f\in C^1([0,1])$, integration by parts gives
-\[
+$$
 \begin{aligned}
 \widehat{f'}(n)
 &=\int_0^1 f'(x)e^{-2\pi i n x}\,dx\\
 &=\left[f(x)e^{-2\pi i n x}\right]_0^1
 +2\pi i n\int_0^1 f(x)e^{-2\pi i n x}\,dx.
 \end{aligned}
-\]
+$$
 Because $e^{-2\pi i n}=1$ and $f(1)=f(0)$, the boundary term vanishes. Hence
-\[
+$$
 \boxed{\widehat{f'}(n)=2\pi i n\widehat f(n).}
-\]
+$$
 Also the zero-mean assumption says
-\[
+$$
 \widehat f(0)=0.
-\]
+$$
 
 :::
 
@@ -74,26 +74,26 @@ Prove the Poincare inequality.
 ::: pf-proof
 
 By Parseval's identity,
-\[
+$$
 \int_0^1|f(x)|^2\,dx
 =\sum_{n\in\ZZ}|\widehat f(n)|^2
 =\sum_{n\ne0}|\widehat f(n)|^2.
-\]
+$$
 Using Step 1 and Parseval again,
-\[
+$$
 \int_0^1|f'(x)|^2\,dx
 =4\pi^2\sum_{n\in\ZZ}n^2|\widehat f(n)|^2.
-\]
+$$
 Since $n^2\ge1$ for $n\ne0$,
-\[
+$$
 \int_0^1|f'(x)|^2\,dx
 \ge4\pi^2\sum_{n\ne0}|\widehat f(n)|^2
 =4\pi^2\int_0^1|f(x)|^2\,dx.
-\]
+$$
 Thus
-\[
+$$
 \boxed{4\pi^2\int_0^1|f|^2\le\int_0^1|f'|^2.}
-\]
+$$
 
 :::
 
@@ -106,30 +106,30 @@ Characterize the equality case.
 ::: pf-proof
 
 Equality in Step 2 is equivalent to
-\[
+$$
 \sum_{n\ne0}(n^2-1)|\widehat f(n)|^2=0.
-\]
+$$
 Every summand is nonnegative, so
-\[
+$$
 \widehat f(n)=0
 \qquad\text{for every }|n|\ge2.
-\]
+$$
 Together with $\widehat f(0)=0$, this yields
-\[
+$$
 f(x)=c_1e^{2\pi i x}+c_{-1}e^{-2\pi i x}
-\]
+$$
 in $L^2([0,1])$. Both sides are continuous, so the equality holds everywhere on $[0,1]$.
 
 Using
-\[
+$$
 e^{2\pi i x}=\cos(2\pi x)+i\sin(2\pi x),
 \qquad
 e^{-2\pi i x}=\cos(2\pi x)-i\sin(2\pi x),
-\]
+$$
 we may write
-\[
+$$
 f(x)=a\cos(2\pi x)+b\sin(2\pi x)
-\]
+$$
 for suitable $a,b\in\CC$. Therefore every equality case has exactly the stated form.
 
 :::

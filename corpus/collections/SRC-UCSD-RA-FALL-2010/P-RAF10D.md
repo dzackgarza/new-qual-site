@@ -55,31 +55,31 @@ Define the representative map and prove its graph is closed.
 ::: pf-proof
 
 Because $Y$ is a closed subspace of the Banach space $L^2([0,1])$, $Y$ is itself Banach. Define
-\[
+$$
 T:Y\to C([0,1]),
-\]
+$$
 where $T(f)$ is the unique continuous representative of the $L^2$ class $f$.
 
 Suppose
-\[
+$$
 f_n\to f\quad\text{in }L^2
-\]
+$$
 and
-\[
+$$
 T(f_n)\to g\quad\text{uniformly on }[0,1].
-\]
+$$
 Uniform convergence implies convergence in $L^2$, so
-\[
+$$
 T(f_n)\to g\quad\text{in }L^2.
-\]
+$$
 But $T(f_n)$ represents the same $L^2$ class as $f_n$, and $f_n\to f$ in $L^2$. Uniqueness of limits in $L^2$ gives
-\[
+$$
 g=f\quad\text{a.e.}
-\]
+$$
 Since $g$ is continuous, it is exactly the continuous representative of $f$. Thus
-\[
+$$
 g=T(f).
-\]
+$$
 Therefore the graph of $T$ is closed.
 
 :::
@@ -93,20 +93,20 @@ Apply the Closed Graph Theorem.
 ::: pf-proof
 
 Both $Y$ and $C([0,1])$ are Banach spaces. By Step 2, the linear map
-\[
+$$
 T:Y\to C([0,1])
-\]
+$$
 has closed graph. Hence the Closed Graph Theorem gives a constant $C>0$ such that
-\[
+$$
 \|T(f)\|_\infty\le C\|f\|_2
 \qquad(f\in Y).
-\]
+$$
 Since $T(f)$ is the continuous representative of $f$,
-\[
+$$
 \boxed{
 \|f\|_{L^\infty([0,1])}
 \le C\|f\|_{L^2([0,1])}.}
-\]
+$$
 
 :::
 

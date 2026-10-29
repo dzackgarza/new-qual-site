@@ -27,13 +27,13 @@ audit:
 ::: {.problem}
 Let $f\in L^\infty([0,1])$ and assume $f$ is not zero almost everywhere.
 Define
-\[
+$$
 a_n=\int_0^1|f(x)|^n\,dx.
-\]
+$$
 Prove that
-\[
+$$
 \lim_{n\to\infty}\frac{a_{n+1}}{a_n}=\|f\|_\infty.
-\]
+$$
 :::
 
 ::: {.solution}

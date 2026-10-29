@@ -27,19 +27,19 @@ Let $f: X \to Y$ be a continuous map of topological spaces.
 Show that for any sheaf $\mcf$ on $X$ there is a natural map $\inverseof{f} f_* \mcf \to \mcf$, and for any sheaf $\mcg$ on $Y$ there is a natural map $\mcg \to f_* \inverseof{f} \mcg$.
 
 Use these maps to show that there is a natural bijection of sets, for any sheaves $\mcf$ on $X$ and $\mcg$ on $Y$,
-\[
+$$
 \Hom_X(\inverseof{f} \mcg, \mcf) = \Hom_Y(\mcg, f_* \mcf).
-\]
+$$
 Hence $\inverseof{f}$ is a **left adjoint** of $f_*$, and $f_*$ is a **right adjoint** of $\inverseof{f}$.
 :::
 
 ::: {.solution}
 Recall that for a sheaf $\mathcal G$ on $Y$, the inverse-image sheaf $f^{-1}\mathcal G$ is the sheaf associated to the presheaf
-\[
+$$
 \mathcal P_{\mathcal G}(U)
 =
 \varinjlim_{f(U)\subseteq V}\mathcal G(V),
-\]
+$$
 where $V$ runs over open neighborhoods of $f(U)$ in $Y$.
 
 ::: pf
@@ -47,17 +47,17 @@ where $V$ runs over open neighborhoods of $f(U)$ in $Y$.
 ::: {.pf-step #s1}
 
 For every sheaf $\mathcal F$ on $X$ there is a natural morphism
-\[
+$$
 \boxed{
 \varepsilon_{\mathcal F}:
 f^{-1}f_*\mathcal F\longrightarrow\mathcal F.
 }
-\]
+$$
 
 ::: pf-proof
 
 Before sheafification, for an open $U\subseteq X$ one has
-\[
+$$
 \mathcal P_{f_*\mathcal F}(U)
 =
 \varinjlim_{f(U)\subseteq V}
@@ -65,31 +65,31 @@ Before sheafification, for an open $U\subseteq X$ one has
 =
 \varinjlim_{f(U)\subseteq V}
 \mathcal F(f^{-1}V).
-\]
+$$
 For every such $V$,
-\[
+$$
 U\subseteq f^{-1}V,
-\]
+$$
 so restriction gives
-\[
+$$
 \mathcal F(f^{-1}V)\longrightarrow\mathcal F(U).
-\]
+$$
 These restriction maps are compatible as $V$ shrinks, hence induce
-\[
+$$
 \mathcal P_{f_*\mathcal F}(U)
 \longrightarrow
 \mathcal F(U).
-\]
+$$
 They commute with restriction in $U$, so define a presheaf morphism
-\[
+$$
 \mathcal P_{f_*\mathcal F}\longrightarrow\mathcal F.
-\]
+$$
 Since $\mathcal F$ is already a sheaf, the universal property of sheafification gives a unique sheaf morphism
-\[
+$$
 \varepsilon_{\mathcal F}:
 f^{-1}f_*\mathcal F
 \longrightarrow\mathcal F.
-\]
+$$
 
 :::
 
@@ -98,37 +98,37 @@ f^{-1}f_*\mathcal F
 ::: {.pf-step #s2}
 
 For every sheaf $\mathcal G$ on $Y$ there is a natural morphism
-\[
+$$
 \boxed{
 \eta_{\mathcal G}:
 \mathcal G\longrightarrow f_*f^{-1}\mathcal G.
 }
-\]
+$$
 
 ::: pf-proof
 
 Let $V\subseteq Y$ be open and take
-\[
+$$
 s\in\mathcal G(V).
-\]
+$$
 The open $V$ contains
-\[
+$$
 f(f^{-1}V),
-\]
+$$
 so $s$ represents an element of
-\[
+$$
 \mathcal P_{\mathcal G}(f^{-1}V)
 =
 \varinjlim_{f(f^{-1}V)\subseteq W}\mathcal G(W).
-\]
+$$
 Passing to the associated sheaf gives a section
-\[
+$$
 \eta_{\mathcal G}(V)(s)
 \in
 (f^{-1}\mathcal G)(f^{-1}V)
 =
 (f_*f^{-1}\mathcal G)(V).
-\]
+$$
 These maps commute with restriction in $V$, hence define the desired sheaf morphism.
 
 :::
@@ -142,32 +142,32 @@ The maps $\varepsilon$ are natural in $\mathcal F$, and the maps $\eta$ are natu
 ::: pf-proof
 
 Let
-\[
+$$
 \alpha:\mathcal F\to\mathcal F'
-\]
+$$
 be a sheaf morphism on $X$.
 In the construction of step [](#s1){.pf-ref}, applying $\alpha$ before or after restricting
-\[
+$$
 \mathcal F(f^{-1}V)\to\mathcal F(U)
-\]
+$$
 gives the same result because $\alpha$ commutes with restrictions.
 Hence
-\[
+$$
 \varepsilon_{\mathcal F'}\circ f^{-1}f_*\alpha
 =
 \alpha\circ\varepsilon_{\mathcal F}.
-\]
+$$
 
 Similarly, for
-\[
+$$
 \beta:\mathcal G\to\mathcal G'
-\]
+$$
 on $Y$, applying $\beta$ to a representative section before or after the construction in step [](#s2){.pf-ref} gives
-\[
+$$
 f_*f^{-1}\beta\circ\eta_{\mathcal G}
 =
 \eta_{\mathcal G'}\circ\beta.
-\]
+$$
 
 :::
 
@@ -176,7 +176,7 @@ f_*f^{-1}\beta\circ\eta_{\mathcal G}
 ::: {.pf-step #s4}
 
 The first triangle identity holds:
-\[
+$$
 \boxed{
 \varepsilon_{f^{-1}\mathcal G}
 \circ
@@ -184,27 +184,27 @@ f^{-1}\eta_{\mathcal G}
 =
 \operatorname{id}_{f^{-1}\mathcal G}.
 }
-\]
+$$
 
 ::: pf-proof
 
 A section of $f^{-1}\mathcal G$ is locally represented by a section
-\[
+$$
 s\in\mathcal G(V)
-\]
+$$
 on an open $V\subseteq Y$.
 Under
-\[
+$$
 f^{-1}\eta_{\mathcal G},
-\]
+$$
 that local representative is sent to the section of
-\[
+$$
 f^{-1}f_*f^{-1}\mathcal G
-\]
+$$
 represented by the image of $s$ in
-\[
+$$
 (f^{-1}\mathcal G)(f^{-1}V).
-\]
+$$
 The counit $\varepsilon_{f^{-1}\mathcal G}$ then restricts that section back to the open on which the original germ section was represented.
 By construction this returns exactly the original local section.
 
@@ -217,7 +217,7 @@ Since the equality holds locally on a cover, the two sheaf morphisms are equal g
 ::: {.pf-step #s5}
 
 The second triangle identity holds:
-\[
+$$
 \boxed{
 f_*\varepsilon_{\mathcal F}
 \circ
@@ -225,29 +225,29 @@ f_*\varepsilon_{\mathcal F}
 =
 \operatorname{id}_{f_*\mathcal F}.
 }
-\]
+$$
 
 ::: pf-proof
 
 Let $V\subseteq Y$ and
-\[
+$$
 s\in(f_*\mathcal F)(V)
 =\mathcal F(f^{-1}V).
-\]
+$$
 The unit
-\[
+$$
 \eta_{f_*\mathcal F}
-\]
+$$
 sends $s$ to the section of
-\[
+$$
 f^{-1}f_*\mathcal F
-\]
+$$
 over $f^{-1}V$ represented by $s$ itself on the neighborhood $V$.
 
 The counit $\varepsilon_{\mathcal F}$ is defined by restricting such a representative from
-\[
+$$
 f^{-1}V
-\]
+$$
 to the open under consideration.  Here that open is already $f^{-1}V$, so it returns $s$.  Thus the composite is the identity on every open $V$.
 
 :::
@@ -257,11 +257,11 @@ to the open under consideration.  Here that open is already $f^{-1}V$, so it ret
 ::: {.pf-step #s6}
 
 Given
-\[
+$$
 \alpha:f^{-1}\mathcal G\longrightarrow\mathcal F,
-\]
+$$
 define
-\[
+$$
 \Phi(\alpha)
 :=
 \mathcal G
@@ -269,14 +269,14 @@ define
 f_*f^{-1}\mathcal G
 \xrightarrow{f_*\alpha}
 f_*\mathcal F.
-\]
+$$
 Thus
-\[
+$$
 \Phi:
 \operatorname{Hom}_X(f^{-1}\mathcal G,\mathcal F)
 \longrightarrow
 \operatorname{Hom}_Y(\mathcal G,f_*\mathcal F).
-\]
+$$
 
 ::: pf-proof
 
@@ -289,11 +289,11 @@ Both arrows in the displayed composite are sheaf morphisms on $Y$, so their comp
 ::: {.pf-step #s7}
 
 Given
-\[
+$$
 \beta:\mathcal G\longrightarrow f_*\mathcal F,
-\]
+$$
 define
-\[
+$$
 \Psi(\beta)
 :=
 f^{-1}\mathcal G
@@ -301,14 +301,14 @@ f^{-1}\mathcal G
 f^{-1}f_*\mathcal F
 \xrightarrow{\varepsilon_{\mathcal F}}
 \mathcal F.
-\]
+$$
 Thus
-\[
+$$
 \Psi:
 \operatorname{Hom}_Y(\mathcal G,f_*\mathcal F)
 \longrightarrow
 \operatorname{Hom}_X(f^{-1}\mathcal G,\mathcal F).
-\]
+$$
 
 ::: pf-proof
 
@@ -321,14 +321,14 @@ Again this is a composite of sheaf morphisms, now on $X$.
 ::: {.pf-step #s8}
 
 For every $\alpha:f^{-1}\mathcal G\to\mathcal F$,
-\[
+$$
 \Psi(\Phi(\alpha))=\alpha.
-\]
+$$
 
 ::: pf-proof
 
 Expand the definitions:
-\[
+$$
 \Psi(\Phi(\alpha))
 =
 \varepsilon_{\mathcal F}
@@ -336,9 +336,9 @@ Expand the definitions:
 f^{-1}(f_*\alpha)
 \circ
 f^{-1}\eta_{\mathcal G}.
-\]
+$$
 By naturality of the counit from step [](#s3){.pf-ref},
-\[
+$$
 \varepsilon_{\mathcal F}
 \circ
 f^{-1}f_*\alpha
@@ -346,9 +346,9 @@ f^{-1}f_*\alpha
 \alpha
 \circ
 \varepsilon_{f^{-1}\mathcal G}.
-\]
+$$
 Hence
-\[
+$$
 \Psi(\Phi(\alpha))
 =
 \alpha
@@ -356,7 +356,7 @@ Hence
 \varepsilon_{f^{-1}\mathcal G}
 \circ
 f^{-1}\eta_{\mathcal G}.
-\]
+$$
 The last two factors compose to the identity by step [](#s4){.pf-ref}, so the result is $\alpha$.
 
 :::
@@ -366,14 +366,14 @@ The last two factors compose to the identity by step [](#s4){.pf-ref}, so the re
 ::: {.pf-step #s9}
 
 For every $\beta:\mathcal G\to f_*\mathcal F$,
-\[
+$$
 \Phi(\Psi(\beta))=\beta.
-\]
+$$
 
 ::: pf-proof
 
 Expanding gives
-\[
+$$
 \Phi(\Psi(\beta))
 =
 f_*\varepsilon_{\mathcal F}
@@ -381,9 +381,9 @@ f_*\varepsilon_{\mathcal F}
 f_*f^{-1}\beta
 \circ
 \eta_{\mathcal G}.
-\]
+$$
 By naturality of the unit from step [](#s3){.pf-ref},
-\[
+$$
 f_*f^{-1}\beta
 \circ
 \eta_{\mathcal G}
@@ -391,9 +391,9 @@ f_*f^{-1}\beta
 \eta_{f_*\mathcal F}
 \circ
 \beta.
-\]
+$$
 Therefore
-\[
+$$
 \Phi(\Psi(\beta))
 =
 f_*\varepsilon_{\mathcal F}
@@ -401,7 +401,7 @@ f_*\varepsilon_{\mathcal F}
 \eta_{f_*\mathcal F}
 \circ
 \beta.
-\]
+$$
 The first two factors compose to the identity by step [](#s5){.pf-ref}, leaving $\beta$.
 
 :::
@@ -411,17 +411,17 @@ The first two factors compose to the identity by step [](#s5){.pf-ref}, leaving 
 ::: {.pf-step #s10}
 
 Thus there is a natural bijection
-\[
+$$
 \boxed{
 \operatorname{Hom}_X(f^{-1}\mathcal G,\mathcal F)
 \cong
 \operatorname{Hom}_Y(\mathcal G,f_*\mathcal F).
 }
-\]
+$$
 Hence
-\[
+$$
 \boxed{f^{-1}\dashv f_*.}
-\]
+$$
 
 ::: pf-proof
 

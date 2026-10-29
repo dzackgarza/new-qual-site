@@ -39,13 +39,13 @@ Show:
 
 ::: {.solution}
 Choose a basepoint $x_0$ in the $0$-skeleton and write
-\[
+$$
 j:X^1\hookrightarrow X.
-\]
+$$
 Since $X$ is obtained from $X^1$ by attaching cells of dimension at least $2$,
-\[
+$$
 j_*:\pi_1(X^1,x_0)\twoheadrightarrow\pi_1(X,x_0)
-\]
+$$
 is surjective.
 
 ::: pf
@@ -53,13 +53,13 @@ is surjective.
 ::: pf-step
 
 If a connected cover $p:\widetilde X\to X$ corresponds to the subgroup
-\[
+$$
 H\le\pi_1(X,x_0),
-\]
+$$
 then its restricted $1$-skeleton cover corresponds to
-\[
+$$
 j_*^{-1}(H)\le\pi_1(X^1,x_0).
-\]
+$$
 
 ::: pf-proof
 
@@ -73,30 +73,30 @@ By the lifting criterion for connected covers, this is exactly the condition tha
 ::: pf-step
 
 If the restricted covers
-\[
+$$
 \widetilde X_1^1\to X^1,
 \qquad
 \widetilde X_2^1\to X^1
-\]
+$$
 are isomorphic, then the full covers
-\[
+$$
 \widetilde X_1\to X,
 \qquad
 \widetilde X_2\to X
-\]
+$$
 are isomorphic.
 
 ::: pf-proof
 
 Let $H_1,H_2\le\pi_1(X)$ be the subgroups corresponding to the two connected covers.
 Isomorphism of the unpointed restricted covers means that
-\[
+$$
 j_*^{-1}(H_1)
-\]
+$$
 and
-\[
+$$
 j_*^{-1}(H_2)
-\]
+$$
 are conjugate in $\pi_1(X^1)$.
 Applying the surjection $j_*$ shows that $H_1$ and $H_2$ are conjugate in $\pi_1(X)$.
 The connected-covering classification therefore gives an isomorphism of the full covers.
@@ -113,29 +113,29 @@ If the restricted cover $\widetilde X^1\to X^1$ is normal, then $\widetilde X\to
 ::: pf-proof
 
 Normality of the restricted cover means
-\[
+$$
 j_*^{-1}(H)\triangleleft\pi_1(X^1).
-\]
+$$
 Let $g\in\pi_1(X)$ and $h\in H$.
 Choose lifts
-\[
+$$
 \hat g,\hat h\in\pi_1(X^1)
-\]
+$$
 with
-\[
+$$
 j_*(\hat g)=g,
 \qquad
 j_*(\hat h)=h,
-\]
+$$
 possible because $j_*$ is surjective.
 Since $\hat h\in j_*^{-1}(H)$ and this subgroup is normal,
-\[
+$$
 \hat g\hat h\hat g^{-1}\in j_*^{-1}(H).
-\]
+$$
 Applying $j_*$ gives
-\[
+$$
 ghg^{-1}\in H.
-\]
+$$
 Thus $H\triangleleft\pi_1(X)$, so the full cover is normal.
 This proves (b).
 
@@ -146,11 +146,11 @@ This proves (b).
 ::: {.pf-step #s4}
 
 Restriction gives an injective homomorphism
-\[
+$$
 \operatorname{Deck}(\widetilde X/X)
 \longrightarrow
 \operatorname{Deck}(\widetilde X^1/X^1).
-\]
+$$
 
 ::: pf-proof
 
@@ -169,31 +169,31 @@ The restriction homomorphism in step [](#s4){.pf-ref} is surjective.
 ::: pf-proof
 
 For the full cover corresponding to $H\le G=\pi_1(X)$,
-\[
+$$
 \operatorname{Deck}(\widetilde X/X)\cong N_G(H)/H.
-\]
+$$
 For the restricted cover, put
-\[
+$$
 G_1=\pi_1(X^1),
 \qquad
 H_1=j_*^{-1}(H).
-\]
+$$
 Then
-\[
+$$
 \operatorname{Deck}(\widetilde X^1/X^1)
 \cong N_{G_1}(H_1)/H_1.
-\]
+$$
 Because $j_*:G_1\twoheadrightarrow G$ is surjective,
-\[
+$$
 j_*^{-1}(N_G(H))=N_{G_1}(H_1).
-\]
+$$
 Indeed, conjugating $H_1$ into itself is equivalent after applying $j_*$ to conjugating $H$ into itself, and the reverse implication follows from taking preimages under $j_*$.
 Therefore $j_*$ induces an isomorphism
-\[
+$$
 N_{G_1}(H_1)/H_1
 \xrightarrow{\sim}
 N_G(H)/H,
-\]
+$$
 which is exactly the deck transformation obtained by extending a deck transformation from the $1$-skeleton.
 Thus restriction is surjective.
 

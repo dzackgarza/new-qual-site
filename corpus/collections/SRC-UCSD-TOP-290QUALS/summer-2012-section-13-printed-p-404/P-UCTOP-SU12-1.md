@@ -32,9 +32,9 @@ Topological realization of $F_n$ and the covering space for $H$:
 
 ::: pf-step
 Realize the free group $F_n$ as the fundamental group of a bouquet of $n$ circles:
-\[
+$$
 X = \bigvee_{i=1}^n S^1.
-\]
+$$
 $X$ is a connected 1-dimensional CW complex (graph) with $V = 1$ vertex and $E = n$ edges.
 Its Euler characteristic is $\chi(X) = V - E = 1 - n$, and $\pi_1(X, x_0) \cong F_n$.
 :::
@@ -73,23 +73,23 @@ Computation of the rank of $H$:
 
 ::: pf-step
 The Euler characteristic of the $d$-sheeted cover satisfies:
-\[
+$$
 \chi(\widetilde{X}) = d \cdot \chi(X) = d(1 - n).
-\]
+$$
 :::
 
 ::: pf-step
 On the other hand, since $\widetilde{X} \simeq \bigvee_{j=1}^k S^1$:
-\[
+$$
 \chi(\widetilde{X}) = \chi\left(\bigvee_{j=1}^k S^1\right) = 1 - k.
-\]
+$$
 :::
 
 ::: pf-step
 Equating the two expressions for $\chi(\widetilde{X})$:
-\[
+$$
 1 - k = d(1 - n) \implies k = d(n - 1) + 1.
-\]
+$$
 Thus the rank of $H$ is $d(n - 1) + 1$.
 :::
 

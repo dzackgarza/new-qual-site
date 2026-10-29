@@ -81,9 +81,9 @@ If $S\cap p^kM=p^kS$ for all $k\geq0$, then $S$ is pure in $M$.
 ::: pf-proof
 
 Fix $r\in R$. If $r=0$, the required equality $S\cap rM=rS$ is immediate. Otherwise, unique factorization in the PID gives $r=up^kt$ for a unit $u\in R^\times$, an integer $k\geq0$, and $t\notin(p)$. The submodule $S$ of the $(p)$-primary module $M$ is itself $(p)$-primary. By step [](#s1-2){.pf-ref} applied to $M$ and to $S$, the equalities $tM=M$ and $tS=S$ hold. Multiplication by a unit also preserves both modules, so $rM=p^kM$ and $rS=p^kS$. The hypothesis therefore gives
-\[
+$$
 S\cap rM=S\cap p^kM=p^kS=rS.
-\]
+$$
 Since $r$ was arbitrary, $S$ is pure.
 
 :::

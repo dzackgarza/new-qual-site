@@ -25,13 +25,13 @@ audit:
 
 ::: {.problem}
 Let $\varphi_n\ge0$ be continuous on $[0,1]$ and suppose
-\[
+$$
 \lim_{n\to\infty}\int_0^1x^k\varphi_n(x)\,dx
-\]
+$$
 exists for every $k\ge0$. Show that
-\[
+$$
 \lim_{n\to\infty}\int_0^1f(x)\varphi_n(x)\,dx
-\]
+$$
 exists for every continuous $f$ on $[0,1]$.
 :::
 

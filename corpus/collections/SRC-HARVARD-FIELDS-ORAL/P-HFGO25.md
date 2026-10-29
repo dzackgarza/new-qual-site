@@ -27,9 +27,9 @@ Determine the Galois group of $x^8+1$ over $\QQ$.
 
 ::: {.solution}
 The polynomial is the cyclotomic polynomial
-\[
+$$
 x^8+1=\Phi_{16}(x).
-\]
+$$
 Hence its splitting field is $\QQ(\zeta_{16})$, where $\zeta_{16}$ is a
 primitive sixteenth root of unity.
 
@@ -38,9 +38,9 @@ primitive sixteenth root of unity.
 ::: pf-step
 
 Every automorphism of $\QQ(\zeta_{16})/\QQ$ is determined by
-\[
+$$
 \zeta_{16}\longmapsto \zeta_{16}^a
-\]
+$$
 for a unique $a\in(\ZZ/16\ZZ)^\times$.
 
 ::: pf-proof
@@ -56,10 +56,10 @@ extends to a $\QQ$-automorphism of the cyclotomic field.
 ::: pf-step
 
 Therefore
-\[
+$$
 \operatorname{Gal}(x^8+1/\QQ)
 \cong (\ZZ/16\ZZ)^\times.
-\]
+$$
 
 ::: pf-proof
 
@@ -78,17 +78,17 @@ The unit group modulo $16$ is isomorphic to $C_2\times C_4$.
 
 It has order $\varphi(16)=8$. The element $-1$ has order $2$, while $3$ has
 order $4$ modulo $16$ because
-\[
+$$
 3^2\equiv9\not\equiv1\pmod{16},
 \qquad
 3^4\equiv1\pmod{16}.
-\]
+$$
 Moreover $-1\notin\langle3\rangle=\{1,3,9,11\}$, so
-\[
+$$
 (\ZZ/16\ZZ)^\times
 =\langle-1\rangle\times\langle3\rangle
 \cong C_2\times C_4.
-\]
+$$
 
 :::
 

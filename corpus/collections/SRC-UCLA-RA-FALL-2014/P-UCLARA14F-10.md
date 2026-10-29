@@ -22,21 +22,21 @@ audit:
 
 ::: {.problem}
 Let us introduce a vector space $\mathcal{B}$ defined as follows,
-\[
+$$
 \mathcal{B} = \left\{ u : \CC \to \CC, \ u \text{ is holomorphic and } \iint_{\CC} |u(x+iy)|^2 e^{-(x^2+y^2)}\,dx\,dy < \infty \right\}.
-\]
+$$
 Show that $\mathcal{B}$ becomes a *complete* space when equipped with the norm
-\[
+$$
 \|u\|^2 = \iint_{\CC} |u(x+iy)|^2 e^{-(x^2+y^2)}\,dx\,dy.
-\]
+$$
 :::
 
 ::: {.solution}
 
 Let
-\[
+$$
 d\mu(z)=e^{-|z|^2}\,dA(z),
-\]
+$$
 where $dA=dx\,dy$ is planar Lebesgue measure.
 
 ::: pf
@@ -44,25 +44,25 @@ where $dA=dx\,dy$ is planar Lebesgue measure.
 ::: {.pf-step #s1-1}
 
 The ambient space
-\[
+$$
 L^2(\CC,\mu)
-\]
+$$
 is a Hilbert space, and
-\[
+$$
 \mathcal B\subseteq L^2(\CC,\mu)
-\]
+$$
 is a linear subspace.
 
 
 ::: pf-proof
 
 The measure $\mu$ is positive and $\sigma$-finite; in fact
-\[
+$$
 \mu(\CC)
 =
 \int_{\CC}e^{-|z|^2}\,dA(z)
 =\pi<\infty.
-\]
+$$
 Thus the usual $L^2$ completeness theorem applies. Sums and scalar
 multiples of entire functions are entire, so $\mathcal B$ is linear.
 
@@ -73,24 +73,24 @@ multiples of entire functions are entire, so $\mathcal B$ is linear.
 ::: pf-step
 
 Fix a compact set $K\subset\CC$ and define
-\[
+$$
 K_1
 =
 \{w\in\CC:\operatorname{dist}(w,K)\le1\}.
-\]
+$$
 Then there exists a constant $c_K>0$ such that
-\[
+$$
 e^{-|w|^2}\ge c_K
 \qquad(w\in K_1).
-\]
+$$
 
 
 ::: pf-proof
 
 The set $K_1$ is compact. The positive continuous function
-\[
+$$
 w\longmapsto e^{-|w|^2}
-\]
+$$
 therefore attains a positive minimum on $K_1$.
 
 :::
@@ -100,27 +100,27 @@ therefore attains a positive minimum on $K_1$.
 ::: {.pf-step #s1-3}
 
 If $h$ is entire, then
-\[
+$$
 \boxed{
 \sup_{z\in K}|h(z)|
 \le
 \frac1{\sqrt{\pi c_K}}
 \|h\|_{L^2(\mu)}}.
-\]
+$$
 
 
 ::: pf-proof
 
 Fix $z\in K$. The closed unit disk centered at $z$ lies in $K_1$. By the
 area mean-value formula for holomorphic functions,
-\[
+$$
 h(z)
 =
 \frac1\pi
 \int_{D(z,1)}h(w)\,dA(w).
-\]
+$$
 Hence
-\[
+$$
 \begin{aligned}
 |h(z)|
 &\le
@@ -143,7 +143,7 @@ Hence
 \frac1{\sqrt{\pi c_K}}
 \|h\|_{L^2(\mu)}.
 \end{aligned}
-\]
+$$
 The bound is independent of $z\in K$, so taking the supremum gives the
 claim.
 
@@ -160,15 +160,15 @@ uniformly Cauchy on $\CC$.
 ::: pf-proof
 
 For any compact $K$ and any $n,m$, step [](#s1-3){.pf-ref} applied to the entire function
-\[
+$$
 h=f_n-f_m
-\]
+$$
 gives
-\[
+$$
 \sup_K|f_n-f_m|
 \le
 C_K\|f_n-f_m\|_{L^2(\mu)}.
-\]
+$$
 Since $(f_n)$ is Cauchy in the given norm, the right-hand side tends to zero
 as $n,m\to\infty$. Thus $(f_n)$ is uniformly Cauchy on every compact set.
 
@@ -179,9 +179,9 @@ as $n,m\to\infty$. Thus $(f_n)$ is uniformly Cauchy on every compact set.
 ::: {.pf-step #s1-5}
 
 There exists an entire function $g$ such that
-\[
+$$
 f_n\to g
-\]
+$$
 locally uniformly on $\CC$.
 
 
@@ -200,13 +200,13 @@ entire.
 ::: pf-step
 
 Since $L^2(\mu)$ is complete, there exists
-\[
+$$
 f\in L^2(\mu)
-\]
+$$
 such that
-\[
+$$
 f_n\to f
-\]
+$$
 in $L^2(\mu)$.
 
 
@@ -227,18 +227,18 @@ The functions $f$ and $g$ agree $\mu$-almost everywhere.
 ::: pf-proof
 
 From convergence in $L^2(\mu)$, choose a subsequence
-\[
+$$
 f_{n_j}
-\]
+$$
 that converges pointwise $\mu$-almost everywhere to $f$. On the other hand,
 step [](#s1-5){.pf-ref} gives
-\[
+$$
 f_{n_j}(z)\to g(z)
-\]
+$$
 for every $z\in\CC$. Hence
-\[
+$$
 f=g
-\]
+$$
 almost everywhere.
 
 :::
@@ -254,19 +254,19 @@ The $L^2(\mu)$ limit belongs to $\mathcal B$.
 
 By step [](#s1-7){.pf-ref}, the equivalence class $f$ has the entire representative $g$.
 Also
-\[
+$$
 \|g\|_{L^2(\mu)}
 =
 \|f\|_{L^2(\mu)}
 <\infty.
-\]
+$$
 Thus $g\in\mathcal B$, and
-\[
+$$
 \|f_n-g\|_{L^2(\mu)}
 =
 \|f_n-f\|_{L^2(\mu)}
 \longrightarrow0.
-\]
+$$
 
 :::
 
@@ -275,9 +275,9 @@ Thus $g\in\mathcal B$, and
 ::: {.pf-step #s1-9}
 
 Therefore
-\[
+$$
 \boxed{\mathcal B\text{ is complete in the stated norm}}.
-\]
+$$
 
 
 ::: pf-proof

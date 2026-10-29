@@ -51,11 +51,11 @@ For (a), if $z_1\ne z_2$, the locus is the perpendicular bisector of the line se
 ::: pf-proof
 
 Squaring both sides gives
-\[
+$$
 |z-z_1|^2=|z-z_2|^2
 \iff
 2\operatorname{Re}\!\bigl(z(\overline{z_2}-\overline{z_1})\bigr)=|z_2|^2-|z_1|^2.
-\]
+$$
 If $z_1\ne z_2$, this is the equation of a real affine line. It consists exactly of the points equidistant from $z_1$ and $z_2$, hence is their perpendicular bisector. If $z_1=z_2$, the original equality is tautological for every $z$.
 
 :::
@@ -69,9 +69,9 @@ For (b), the locus is the unit circle $\{z\in\CC:|z|=1\}$.
 ::: pf-proof
 
 The equation is defined only for $z\ne0$. Multiplying by $z$ gives
-\[
+$$
 1=z\overline z=|z|^2,
-\]
+$$
 which is equivalent to $|z|=1$. Conversely every point of the unit circle satisfies $1/z=\overline z$.
 
 :::
@@ -109,13 +109,13 @@ For (e), if $a\ne0$ the locus is an open half-plane; if $a=0$, it is all of $\CC
 ::: pf-proof
 
 Write $a=\alpha+i\beta$, $b=u+iv$, and $z=x+iy$. Then
-\[
+$$
 \operatorname{Re}(az+b)=\alpha x-\beta y+u.
-\]
+$$
 If $a\ne0$, then $(\alpha,-\beta)\ne(0,0)$, so
-\[
+$$
 \alpha x-\beta y+u>0
-\]
+$$
 defines one of the two open half-planes bounded by the line $\alpha x-\beta y+u=0$. If $a=0$, the inequality is the constant condition $u>0$, giving the two stated possibilities.
 
 :::
@@ -125,21 +125,21 @@ defines one of the two open half-planes bounded by the line $\alpha x-\beta y+u=
 ::: pf-step
 
 For (f), the locus is the parabola
-\[
+$$
 y^2=2x+1,
-\]
+$$
 which opens to the right and has vertex $(-1/2,0)$.
 
 ::: pf-proof
 
 Write $z=x+iy$. The equation $|z|=x+1$ implies
-\[
+$$
 x^2+y^2=(x+1)^2,
-\]
+$$
 hence $y^2=2x+1$. Conversely, on this parabola,
-\[
+$$
 x+1=\frac{y^2+1}{2}>0,
-\]
+$$
 so squaring introduced no extraneous points and $|z|=x+1$ indeed holds.
 
 :::

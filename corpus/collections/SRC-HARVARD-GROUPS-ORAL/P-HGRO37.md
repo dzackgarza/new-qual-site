@@ -29,15 +29,15 @@ State the Jordan-Dickson theorem and outline its proof.
 Let $q$ be a prime power and $n\ge2$.
 
 **Jordan--Dickson theorem.** The projective special linear group
-\[
+$$
 PSL_n(q)=SL_n(q)/Z(SL_n(q))
-\]
+$$
 is simple, except for
-\[
+$$
 PSL_2(2)\cong S_3
 \qquad\text{and}\qquad
 PSL_2(3)\cong A_4.
-\]
+$$
 
 Equivalently, if $N\trianglelefteq SL_n(q)$ is not contained in the center, then
 $N=SL_n(q)$, apart from the two exceptional pairs $(n,q)=(2,2),(2,3)$.
@@ -53,9 +53,9 @@ transvection.
 
 Let $N\trianglelefteq SL_n(q)$ contain a noncentral element $A$. One studies
 commutators of $A$ with elementary transvections
-\[
+$$
 t_{ij}(a)=I+aE_{ij}.
-\]
+$$
 Because $N$ is normal, every such commutator lies in $N$. By choosing indices
 for which $A$ does not act as a scalar and performing elementary row/column
 reductions, these commutators can be arranged to produce a nontrivial
@@ -79,13 +79,13 @@ elementary transvections.
 Conjugating by permutation and diagonal matrices in $SL_n(q)$ moves a
 transvection between coordinate pairs and changes its parameter. Commutator
 relations among elementary matrices then give
-\[
+$$
 [t_{ij}(a),t_{jk}(b)]=t_{ik}(ab)
-\]
+$$
 for distinct $i,j,k$, and
-\[
+$$
 t_{ij}(a)t_{ij}(b)=t_{ij}(a+b).
-\]
+$$
 Normality therefore propagates one nontrivial transvection to the full family
 of elementary transvections required to generate $SL_n(q)$.
 
@@ -120,11 +120,11 @@ Quotienting by the center therefore leaves no nontrivial proper normal subgroup
 in $PSL_n(q)$.
 
 Finally,
-\[
+$$
 PSL_2(2)\cong S_3
 \quad\text{and}\quad
 PSL_2(3)\cong A_4,
-\]
+$$
 and neither group is simple.
 
 :::

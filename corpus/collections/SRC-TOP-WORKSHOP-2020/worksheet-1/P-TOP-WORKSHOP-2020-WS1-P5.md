@@ -26,33 +26,33 @@ Show that $A$ is a retract of $X$, but not a deformation retract of $X$.
 :::
 
 ::: {.solution}
-Write points of the torus as \((z,w)\in S^1\times S^1\). Define
-\[
+Write points of the torus as $(z,w)\in S^1\times S^1$. Define
+$$
 r:S^1\times S^1\longrightarrow A,
 \qquad
 r(z,w)=(z,z).
-\]
-This map is continuous and, for every \((z,z)\in A\),
-\[
+$$
+This map is continuous and, for every $(z,z)\in A$,
+$$
 r(z,z)=(z,z).
-\]
-Hence \(r\) is a retraction of \(X\) onto \(A\).
+$$
+Hence $r$ is a retraction of $X$ onto $A$.
 
-Suppose \(A\) were a deformation retract of \(X\). Then the inclusion
-\[
+Suppose $A$ were a deformation retract of $X$. Then the inclusion
+$$
 i:A\hookrightarrow X
-\]
+$$
 would be a homotopy equivalence and therefore induce an isomorphism on fundamental groups. But
-\[
+$$
 \pi_1(A)\cong\ZZ,
 \qquad
 \pi_1(X)\cong\ZZ^2,
-\]
+$$
 and, under these identifications, the diagonal inclusion induces
-\[
+$$
 i_*:\ZZ\to\ZZ^2,
 \qquad
 n\longmapsto(n,n),
-\]
-which is not surjective. This contradiction shows that \(A\) is not a deformation retract of \(X\).
+$$
+which is not surjective. This contradiction shows that $A$ is not a deformation retract of $X$.
 :::

@@ -36,9 +36,9 @@ Forward direction ($f: M_g \to M_h$ of degree $1 \implies g \ge h$):
 
 Let $f: M_g \to M_h$ be a continuous map of degree 1.
 Then the induced map on top cohomology sends the fundamental class to the fundamental class:
-\[
+$$
 f^*(\mu_h) = \mu_g, \quad \text{where } \mu_g \in H^2(M_g; \RR) \cong \RR \text{ and } \mu_h \in H^2(M_h; \RR) \cong \RR.
-\]
+$$
 
 ::: pf-proof
 
@@ -66,9 +66,9 @@ Poincaré duality pairing on closed orientable surfaces.
 ::: pf-step
 
 Applying $f^*$ and the ring homomorphism property of cup product:
-\[
+$$
 f^*(\alpha) \smile f^*(\beta) = f^*(\alpha \smile \beta) = f^*(\mu_h) = \mu_g \neq 0.
-\]
+$$
 Because the cup product is non-zero, $f^*(\alpha) \neq 0$.
 Thus $\ker(f^*) = \{0\}$, so $f^*: H^1(M_h; \RR) \hookrightarrow H^1(M_g; \RR)$ is an injective linear map.
 
@@ -83,9 +83,9 @@ injectivity from non-vanishing cup product.
 ::: pf-step
 
 Comparing dimensions:
-\[
+$$
 \dim_\RR H^1(M_h; \RR) \le \dim_\RR H^1(M_g; \RR) \implies 2h \le 2g \implies h \le g.
-\]
+$$
 
 ::: pf-proof
 

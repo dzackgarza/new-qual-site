@@ -17,7 +17,7 @@ review: draft
 
 ::: {.problem}
 Let m
-\[
+$$
 A \definedas
 \begin{bmatrix}
 4 & 1 & -1 \\
@@ -25,7 +25,7 @@ A \definedas
 2 & 1 & 1
 \end{bmatrix}
 \in \Mat(3\times 3, \CC)
-.\]
+.$$
 
 a. 
 Find the Jordan canonical form $J$ of $A$.
@@ -82,7 +82,7 @@ Write down the minimal polynomial of $A$.
 - $\lambda = 2$:
 
   - Set $U\definedas A-\lambda I$, then find $\RREF(U)$ to compute its kernel:
-  \[
+  $$
   U \definedas
   \begin{bmatrix}
   2 & 1 & -1
@@ -99,13 +99,13 @@ Write down the minimal polynomial of $A$.
   \\
   0 & 0 & 0
   \end{bmatrix}
-  ,\]
+  ,$$
   which yields $v_1 = [1,-2,0]$.
 
 - $\lambda = 2$:
 
   - Similarly,
-  \[
+  $$
   U \definedas 
   \begin{bmatrix}
   3 & 1 & -1 \\
@@ -120,11 +120,11 @@ Write down the minimal polynomial of $A$.
   \\
   0 & 0 & 0
   \end{bmatrix}
-  ,\]
+  ,$$
   which yields $v_2 = [1,-2,1]$.
 
   - Solve $Uw = v_3$:
-  \[
+  $$
   \begin{bmatrix}
   3 & 1 & -1 & 1 \\
   -6 & -2 & 2 & -2 \\
@@ -136,11 +136,11 @@ Write down the minimal polynomial of $A$.
   0 & 1 & 2 & 1 \\
   0 & 0 & 0 & 0
   \end{bmatrix}
-  ,\]
+  ,$$
   so take $v_3 = [0,1,0]$.
 
 - Putting things together:
-\[
+$$
 A &= \inverseof{P} J P \text{ where } \\
 J = J_1(\lambda = 2) \oplus J_2(\lambda = 1) 
 &=
@@ -160,7 +160,7 @@ P = [v_1, v_2, v_3]
 \\
 0 & 1 & 0
 \end{bmatrix}
-.\]
+.$$
 
 :::
 
@@ -172,9 +172,9 @@ P = [v_1, v_2, v_3]
 - $\ell_1$ is the size of the **largest** block corresponding to $\lambda = 1$, which is size 2, so $\lambda_1=2$.
 
 - Thus 
-\[
+$$
 \min_A(t) = (t-2)(t-1)^2
-.\]
+.$$
 
 :::
 

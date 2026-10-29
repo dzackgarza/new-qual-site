@@ -28,20 +28,20 @@ The coefficient ring matters. The standard clean presentations are over $\FF_2$ 
 ::: {.pf-step #s1-1}
 
 For finite real projective space,
-\[
+$$
 \boxed{
 H^*(\RP^{m};\FF_2)
 \cong\FF_2[x]/(x^{m+1}),
 \qquad |x|=1.}
-\]
+$$
 
 
 ::: pf-proof
 
 Let $\gamma^1$ be the tautological real line bundle and put
-\[
+$$
 x=w_1(\gamma^1)\in H^1(\RP^m;\FF_2).
-\]
+$$
 The standard CW decomposition has one cell in each dimension $0,\ldots,m$, and all mod-$2$ cellular differentials vanish, so every $H^k$ is one-dimensional over $\FF_2$. The restriction from $\RP^{\infty}$ identifies the generator in degree $k$ with $x^k$ for $0\leq k\leq m$, while dimensional reasons give $x^{m+1}=0$. Hence the displayed truncated polynomial ring.
 
 :::
@@ -51,11 +51,11 @@ The standard CW decomposition has one cell in each dimension $0,\ldots,m$, and a
 ::: {.pf-step #s1-2}
 
 In particular,
-\[
+$$
 H^*(\RP^{\infty};\FF_2)
 \cong\FF_2[x],
 \qquad |x|=1.
-\]
+$$
 
 
 ::: pf-proof
@@ -69,12 +69,12 @@ Take the direct limit of the presentations in step [](#s1-1){.pf-ref} under the 
 ::: {.pf-step #s1-3}
 
 For finite complex projective space,
-\[
+$$
 \boxed{
 H^*(\CP^{m};\ZZ)
 \cong\ZZ[u]/(u^{m+1}),
 \qquad |u|=2.}
-\]
+$$
 
 
 ::: pf-proof
@@ -88,11 +88,11 @@ Let $u=c_1((\gamma^1_{\CC})^*)$ be the positive generator of $H^2$. The standard
 ::: {.pf-step #s1-4}
 
 Thus
-\[
+$$
 H^*(\CP^{\infty};\ZZ)
 \cong\ZZ[u],
 \qquad |u|=2.
-\]
+$$
 
 
 ::: pf-proof
@@ -106,37 +106,37 @@ As in step [](#s1-2){.pf-ref}, pass to the direct limit under $\CP^m\subset\CP^{
 ::: {.pf-step #s1-5}
 
 Let
-\[
+$$
 L^{2n-1}(p;q_1,\ldots,q_n)=S^{2n-1}/C_p,
-\]
+$$
 with $p$ an odd prime. Then
-\[
+$$
 \boxed{
 H^*(L^{2n-1};\FF_p)
 \cong
 \Lambda_{\FF_p}(a)\otimes
 \FF_p[b]/(b^n),
 \qquad |a|=1,\ |b|=2,}
-\]
+$$
 where
-\[
+$$
 b=\beta(a)
-\]
+$$
 is the Bockstein of $a$.
 
 
 ::: pf-proof
 
 The lens space is the $(2n-1)$-skeleton of the infinite lens space
-\[
+$$
 L^{\infty}(p)=S^{\infty}/C_p=BC_p.
-\]
+$$
 For odd $p$, group cohomology gives
-\[
+$$
 H^*(BC_p;\FF_p)
 \cong\Lambda(a)\otimes\FF_p[b],
 \qquad b=\beta(a),
-\]
+$$
 with $|a|=1$ and $|b|=2$. Restriction to the $(2n-1)$-skeleton preserves all classes through degree $2n-1$, while $b^n$ has degree $2n$ and therefore vanishes. This gives exactly the displayed truncation. In particular $a^2=0$ because $a$ has odd degree and $p$ is odd.
 
 :::
@@ -146,7 +146,7 @@ with $|a|=1$ and $|b|=2$. Restriction to the $(2n-1)$-skeleton preserves all cla
 ::: {.pf-step #s1-6}
 
 With integral coefficients, the additive cohomology groups of the same lens space are
-\[
+$$
 H^k(L^{2n-1};\ZZ)
 \cong
 \begin{cases}
@@ -154,7 +154,7 @@ H^k(L^{2n-1};\ZZ)
 \ZZ/p,&k=2,4,\ldots,2n-2,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 
 ::: pf-proof
@@ -168,17 +168,17 @@ From the one-cell-per-dimension cellular structure, the integral cellular bounda
 ::: {.pf-step #s1-7}
 
 Therefore the standard ring presentations are
-\[
+$$
 \boxed{H^*(\RP^{m};\FF_2)=\FF_2[x]/(x^{m+1}),}
-\]
-\[
+$$
+$$
 \boxed{H^*(\CP^{m};\ZZ)=\ZZ[u]/(u^{m+1}),}
-\]
+$$
 and, for odd prime $p$,
-\[
+$$
 \boxed{H^*(L^{2n-1}(p);\FF_p)
 =\Lambda(a)\otimes\FF_p[b]/(b^n),\quad b=\beta(a).}
-\]
+$$
 
 
 ::: pf-proof

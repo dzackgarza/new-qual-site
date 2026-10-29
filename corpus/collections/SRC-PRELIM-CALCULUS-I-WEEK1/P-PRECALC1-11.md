@@ -18,30 +18,30 @@ Let $f ( x ) = x ^ { 2 + \sin ( x ) }$ for $x > 0$ . Find $f ^ { \prime } ( x )$
 ::: {.solution}
 
 Let
-\[
+$$
 f(x)=x^{2+\sin x},
 \qquad
 x>0.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-Since \(x>0\),
-\[
+Since $x>0$,
+$$
 \boxed{
 f(x)=e^{(2+\sin x)\log x}}.
-\]
+$$
 
 
 ::: pf-proof
 
 Use
-\[
+$$
 x^a=e^{a\log x}
-\]
-for positive \(x\).
+$$
+for positive $x$.
 
 :::
 
@@ -50,7 +50,7 @@ for positive \(x\).
 ::: {.pf-step #s1-2}
 
 Differentiate the exponent:
-\[
+$$
 \frac{d}{dx}
 \left(
 (2+\sin x)\log x
@@ -59,25 +59,25 @@ Differentiate the exponent:
 \cos x\,\log x
 +
 \frac{2+\sin x}{x}.
-\]
+$$
 
 
 ::: pf-proof
 
 Apply the product rule:
-\[
+$$
 (2+\sin x)'\log x
 +
 (2+\sin x)(\log x)'.
-\]
+$$
 Now
-\[
+$$
 (2+\sin x)'=\cos x
-\]
+$$
 and
-\[
+$$
 (\log x)'=\frac1x.
-\]
+$$
 
 :::
 
@@ -86,7 +86,7 @@ and
 ::: {.pf-step #s1-3}
 
 By the chain rule,
-\[
+$$
 f'(x)
 =
 e^{(2+\sin x)\log x}
@@ -95,7 +95,7 @@ e^{(2+\sin x)\log x}
 +
 \frac{2+\sin x}{x}
 \right).
-\]
+$$
 
 
 ::: pf-proof
@@ -109,7 +109,7 @@ Differentiate the exponential expression from step [](#s1-1){.pf-ref} using step
 ::: {.pf-step #s1-4}
 
 Therefore
-\[
+$$
 \boxed{
 f'(x)
 =
@@ -119,12 +119,12 @@ x^{2+\sin x}
 +
 \frac{2+\sin x}{x}
 \right)}.
-\]
+$$
 
 
 ::: pf-proof
 
-Replace the exponential factor in step [](#s1-3){.pf-ref} by \(x^{2+\sin x}\) using
+Replace the exponential factor in step [](#s1-3){.pf-ref} by $x^{2+\sin x}$ using
 step [](#s1-1){.pf-ref}.
 
 :::

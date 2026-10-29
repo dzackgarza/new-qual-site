@@ -48,24 +48,24 @@ If $\mu\{f>1\}>0$, the integrals diverge to infinity.
 ::: pf-proof
 
 Let
-\[
+$$
 B:=\{x\in X:f(x)>1\}.
-\]
+$$
 Since
-\[
+$$
 B=\bigcup_{k=1}^\infty\{f\ge1+1/k\},
-\]
+$$
 positive measure of $B$ implies that for some $k$,
-\[
+$$
 C:=\{f\ge1+1/k\}
-\]
+$$
 has positive measure.
 Then
-\[
+$$
 \int_X f^n\,d\mu
 \ge \int_C f^n\,d\mu
 \ge (1+1/k)^n\mu(C)\longrightarrow\infty.
-\]
+$$
 
 :::
 
@@ -78,23 +78,23 @@ If $f\le1$ almost everywhere, identify the finite limit.
 ::: pf-proof
 
 Assume
-\[
+$$
 \mu\{f>1\}=0.
-\]
+$$
 Then $0\le f\le1$ almost everywhere. Pointwise,
-\[
+$$
 f^n(x)\longrightarrow \mathbf1_{\{f=1\}}(x).
-\]
+$$
 Moreover,
-\[
+$$
 0\le f^n\le1,
-\]
+$$
 and the constant function $1$ is integrable because $\mu(X)<\infty$. By the Dominated Convergence Theorem,
-\[
+$$
 \lim_{n\to\infty}\int_X f^n\,d\mu
 =\int_X\mathbf1_{\{f=1\}}\,d\mu
 =\mu(f^{-1}(1)).
-\]
+$$
 
 :::
 
@@ -107,14 +107,14 @@ State the exact dichotomy.
 ::: pf-proof
 
 Combining the two cases,
-\[
+$$
 \boxed{
 \lim_{n\to\infty}\int_Xf^n\,d\mu
 =\begin{cases}
 \infty,&\mu\{f>1\}>0,\\[1ex]
 \mu\{f=1\},&f\le1\text{ a.e.}
 \end{cases}}
-\]
+$$
 Thus the first type consists exactly of the nonnegative measurable functions exceeding $1$ on a set of positive measure; the second type consists exactly of those satisfying $f\le1$ almost everywhere.
 
 :::

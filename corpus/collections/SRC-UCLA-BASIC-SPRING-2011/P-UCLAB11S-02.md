@@ -24,13 +24,13 @@ Show that if an invertible complex matrix is diagonalizable, then every positive
 ::: pf-step
 
 Since $A$ is diagonalizable, there exists an invertible matrix $P$ and a diagonal matrix
-\[
+$$
 D=\operatorname{diag}(\lambda_1,\ldots,\lambda_n)
-\]
+$$
 such that
-\[
+$$
 \boxed{A=PDP^{-1}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -45,21 +45,21 @@ Because $A$ is invertible, none of the diagonal entries $\lambda_i$ is zero, alt
 ::: {.pf-step #s1-2}
 
 For every positive integer $m$,
-\[
+$$
 A^m
 =
 PD^mP^{-1}.
-\]
+$$
 
 
 ::: pf-proof
 
 Using
-\[
+$$
 A=PDP^{-1},
-\]
+$$
 one has
-\[
+$$
 \begin{aligned}
 A^m
 &=
@@ -69,11 +69,11 @@ PD(P^{-1}P)D\cdots(P^{-1}P)DP^{-1}\\
 &=
 PD^mP^{-1}.
 \end{aligned}
-\]
+$$
 All intermediate factors
-\[
+$$
 P^{-1}P
-\]
+$$
 cancel.
 
 :::
@@ -88,18 +88,18 @@ The matrix $D^m$ is diagonal.
 ::: pf-proof
 
 Since
-\[
+$$
 D=\operatorname{diag}(\lambda_1,\ldots,\lambda_n),
-\]
+$$
 raising $D$ to the $m$th power gives
-\[
+$$
 \boxed{
 D^m
 =
 \operatorname{diag}
 (\lambda_1^m,\ldots,\lambda_n^m).
 }
-\]
+$$
 
 :::
 
@@ -113,18 +113,18 @@ Therefore $A^m$ is diagonalizable for every positive integer $m$.
 ::: pf-proof
 
 By step [](#s1-2){.pf-ref},
-\[
+$$
 A^m
-\]
+$$
 is similar to the diagonal matrix
-\[
+$$
 D^m,
-\]
+$$
 which is diagonal by step [](#s1-3){.pf-ref}.
 Hence
-\[
+$$
 \boxed{A^m\text{ is diagonalizable}.}
-\]
+$$
 
 :::
 

@@ -34,13 +34,13 @@ $$
 
 ::: {.solution}
 The matrix is invertible, so its reduced row echelon form is $R=I_3$. One may take $P=A^{-1}$, namely
-\[
+$$
 P=
 \begin{bmatrix}
 \frac13&\frac1{30}-\frac{i}{10}&\frac1{10}-\frac{3i}{10}\\
 0&-\frac3{10}-\frac{i}{10}&\frac1{10}-\frac{3i}{10}\\
 -\frac{i}{3}&\frac15+\frac{i}{15}&\frac35+\frac{i}{5}
 \end{bmatrix}.
-\]
+$$
 Direct multiplication gives $PA=I_3$, hence $R=PA$. Since $P$ has inverse $A$, it is invertible as required.
 :::

@@ -43,9 +43,9 @@ After barycentrically subdividing $X$, we may assume that $F$ is a subcomplex an
 ::: pf-proof
 
 A vertex of the barycentric subdivision is the barycenter of a simplex $\sigma$ of the original complex. A simplex in the subdivision is a strictly nested chain
-\[
+$$
 \sigma_0\subsetneq\sigma_1\subsetneq\cdots\subsetneq\sigma_r.
-\]
+$$
 If $f$ carries this subdivided simplex to itself, it must preserve each vertex because the dimensions of the $\sigma_i$ are distinct. Hence it fixes the simplex pointwise. The union of such simplices is exactly the fixed-point set, so $F$ is a subcomplex.
 
 :::
@@ -67,22 +67,22 @@ The simplicial homeomorphism $f$ permutes the oriented $n$-simplices. A simplex 
 ::: {.pf-step #s3}
 
 The alternating trace on simplicial chains equals the alternating trace on homology:
-\[
+$$
 \sum_n(-1)^n\operatorname{tr}(f_*|C_n)
 =
 \sum_n(-1)^n\operatorname{tr}(f_*|H_n).
-\]
+$$
 
 ::: pf-proof
 
 For a finite chain complex of finite-dimensional vector spaces, apply additivity of trace to
-\[
+$$
 0\to Z_n\to C_n\to B_{n-1}\to0
-\]
+$$
 and
-\[
+$$
 0\to B_n\to Z_n\to H_n\to0.
-\]
+$$
 The boundary-space trace terms cancel in the alternating sum.
 
 :::
@@ -92,9 +92,9 @@ The boundary-space trace terms cancel in the alternating sum.
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{\tau(f)=\sum_n(-1)^n c_n(F)=\chi(F).}
-\]
+$$
 
 ::: pf-proof
 
@@ -107,7 +107,7 @@ Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}. The alternating number of s
 :::
 
 If the fixed points are isolated, the fixed subcomplex has only $0$-simplices, so
-\[
+$$
 \tau(f)=\#F.
-\]
+$$
 :::

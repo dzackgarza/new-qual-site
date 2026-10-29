@@ -32,9 +32,9 @@ Show that $G$ contains a subgroup isomorphic to $\ZZ_p \oplus \ZZ_p$ for some pr
 
 ::: {.solution}
 Write $G$ as the direct sum of its Sylow subgroups,
-\[
+$$
 G=\bigoplus_{p\mid |G|}G_p.
-\]
+$$
 
 ::: pf
 
@@ -60,21 +60,21 @@ $\ZZ_p\oplus\ZZ_p$.
 ::: pf-proof
 
 By the structure theorem for finite abelian $p$-groups,
-\[
+$$
 G_p\cong \ZZ_{p^{a_1}}\oplus\cdots\oplus\ZZ_{p^{a_r}}
-\]
+$$
 with $a_i\ge1$. Since $G_p$ is not cyclic, one has $r\ge2$.
 
 In the first two summands, the elements
-\[
+$$
 x=(p^{a_1-1},0,\ldots,0),\qquad
 y=(0,p^{a_2-1},0,\ldots,0)
-\]
+$$
 both have order $p$. They lie in distinct direct summands, so
-\[
+$$
 \langle x,y\rangle=\langle x\rangle\oplus\langle y\rangle
 \cong\ZZ_p\oplus\ZZ_p.
-\]
+$$
 
 :::
 

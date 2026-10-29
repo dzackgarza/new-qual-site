@@ -26,11 +26,11 @@ audit:
 ::: {.problem}
 Let $f$ be a real-valued function differentiable on an open interval containing $[a,b]$.
 Prove that if
-\[
+$$
 f'(a)<0
 \qquad\text{and}\qquad
 f'(b)>0,
-\]
+$$
 then there is a point $c\in(a,b)$ such that $f'(c)=0$.
 :::
 

@@ -26,22 +26,22 @@ Consider the monomial ideal $I = \langle x_2^2, \dots, x_n^2 \rangle$ in $\CC[x_
 ::: {.solution}
 
 Let
-\[
+$$
 R=\CC[x_1,\ldots,x_n],
 \qquad
 I=(x_2^2,\ldots,x_n^2).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #quotient-basis}
 A $\CC$-basis of $R/I$ is
-\[
+$$
 \boxed{\left\{
  x_1^a x_2^{\varepsilon_2}\cdots x_n^{\varepsilon_n}
  :a\ge0,\ \varepsilon_i\in\{0,1\}
 \right\}.}
-\]
+$$
 
 ::: pf-proof
 Because $I$ is a monomial ideal, the residue classes of monomials not contained in $I$ form a basis of the quotient.
@@ -52,16 +52,16 @@ A monomial lies in $I$ exactly when it is divisible by $x_i^2$ for some $i\ge2$.
 
 ::: pf-step
 The Hilbert series of the quotient is
-\[
+$$
 \operatorname{Hilb}_{R/I}(t)
 =\frac{(1+t)^{n-1}}{1-t}.
-\]
+$$
 
 ::: pf-proof
 For the basis in step [](#quotient-basis){.pf-ref}, the powers of $x_1$ contribute
-\[
+$$
 1+t+t^2+\cdots=\frac1{1-t},
-\]
+$$
 while each variable $x_i$ for $i\ge2$ may occur with exponent $0$ or $1$, contributing a factor $1+t$. Multiplying these independent contributions gives the formula.
 :::
 
@@ -69,11 +69,11 @@ while each variable $x_i$ for $i\ge2$ may occur with exponent $0$ or $1$, contri
 
 ::: {.pf-step #hilbert-function-of-quotient}
 Hence the degree-$d$ Hilbert function of the quotient is
-\[
+$$
 \boxed{
 H_{R/I}(d)
 =\sum_{j=0}^{\min(d,n-1)}\binom{n-1}{j}.}
-\]
+$$
 
 ::: pf-proof
 A basis monomial of total degree $d$ is determined by choosing a subset of $\{x_2,\ldots,x_n\}$ of size $j\le d$ to occur to exponent $1$, after which the exponent of $x_1$ is forced to be $d-j$. There are $\binom{n-1}{j}$ such choices. Summing over all possible $j$ gives the formula.
@@ -83,30 +83,30 @@ A basis monomial of total degree $d$ is determined by choosing a subset of $\{x_
 
 ::: pf-step
 If “the Hilbert function of the ideal $I$” is interpreted literally as
-\[
+$$
 H_I(d)=\dim_{\CC} I_d,
-\]
+$$
 then
-\[
+$$
 \boxed{
 H_I(d)
 =\binom{n+d-1}{n-1}
 -\sum_{j=0}^{\min(d,n-1)}\binom{n-1}{j}.}
-\]
+$$
 
 ::: pf-proof
 The degree-$d$ component of
-\[
+$$
 0\longrightarrow I\longrightarrow R\longrightarrow R/I\longrightarrow0
-\]
+$$
 is exact, so
-\[
+$$
 \dim I_d=\dim R_d-\dim(R/I)_d.
-\]
+$$
 The number of degree-$d$ monomials in $n$ variables is
-\[
+$$
 \dim R_d=\binom{n+d-1}{n-1}.
-\]
+$$
 Subtract the quotient Hilbert function from step [](#hilbert-function-of-quotient){.pf-ref}.
 This also records the answer if the source intended the more common convention of asking for the Hilbert function of the quotient.
 :::
@@ -115,15 +115,15 @@ This also records the answer if the source intended the more common convention o
 
 ::: pf-step
 The affine variety is
-\[
+$$
 \boxed{V(I)=\{(a,0,\ldots,0):a\in\CC\}.}
-\]
+$$
 
 ::: pf-proof
 A point $(a_1,\ldots,a_n)$ belongs to $V(I)$ exactly when
-\[
+$$
 a_i^2=0\qquad(2\le i\le n).
-\]
+$$
 Over the field $\CC$, this is equivalent to $a_i=0$ for every $i\ge2$, while $a_1$ is unrestricted.
 :::
 
@@ -134,19 +134,19 @@ The variety $V(I)$ is irreducible.
 
 ::: pf-proof
 The map
-\[
+$$
 \AA^1_{\CC}\longrightarrow V(I),
 \qquad
 a\longmapsto(a,0,\ldots,0)
-\]
+$$
 is an isomorphism of affine varieties. Equivalently,
-\[
+$$
 \sqrt I=(x_2,\ldots,x_n),
-\]
+$$
 and
-\[
+$$
 R/\sqrt I\cong\CC[x_1]
-\]
+$$
 is an integral domain. Hence $V(I)$ is irreducible.
 :::
 

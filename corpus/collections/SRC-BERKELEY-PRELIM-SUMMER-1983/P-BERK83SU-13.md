@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let $A$ be an $n\times n$ complex matrix all of whose eigenvalues are equal to $1$. Suppose the set
-\[
+$$
 \{A^n:n=1,2,\ldots\}
-\]
+$$
 is bounded.
 Prove that $A=I$.
 :::

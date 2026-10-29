@@ -30,35 +30,35 @@ Apply the Leray–Hirsch theorem to the bundle $S^1 \to S^\infty/\ZZ_p \to \CP^\
 
 ::: {.solution}
 Consider
-\[
+$$
 S^1\longrightarrow S^\infty/\ZZ_p\xrightarrow{q}\CP^\infty.
-\]
+$$
 The inclusion of a fiber induces on fundamental groups the reduction map
-\[
+$$
 \ZZ=\pi_1(S^1)\longrightarrow\pi_1(S^\infty/\ZZ_p)=\ZZ_p.
-\]
+$$
 Therefore the generator
-\[
+$$
 a\in H^1(S^\infty/\ZZ_p;\ZZ_p)
-\]
-restricts to the generator of \(H^1(S^1;\ZZ_p)\). Leray--Hirsch gives
-\[
+$$
+restricts to the generator of $H^1(S^1;\ZZ_p)$. Leray--Hirsch gives
+$$
 H^*(K(\ZZ_p,1);\ZZ_p)
 \cong H^*(\CP^\infty;\ZZ_p)\{1,a\}
-\]
-as a module. If \(b=q^*c\), where \(c\) generates \(H^2(\CP^\infty;\ZZ_p)\), then
-\[
+$$
+as a module. If $b=q^*c$, where $c$ generates $H^2(\CP^\infty;\ZZ_p)$, then
+$$
 H^*(K(\ZZ_p,1);\ZZ_p)
 \cong \ZZ_p[b]\{1,a\},
 \qquad |a|=1,\ |b|=2.
-\]
-For odd \(p\), graded commutativity gives \(a^2=-a^2\), hence \(a^2=0\), so
-\[
+$$
+For odd $p$, graded commutativity gives $a^2=-a^2$, hence $a^2=0$, so
+$$
 \boxed{H^*(K(\ZZ_p,1);\ZZ_p)
 \cong \Lambda(a)\otimes\ZZ_p[b]\qquad(p\text{ odd}).}
-\]
-The Bockstein associated to \(0\to\ZZ_p\to\ZZ_{p^2}\to\ZZ_p\to0\) satisfies \(\beta(a)=b\). For \(p=2\), this Bockstein is \(Sq^1\) on degree-one classes, so \(b=a^2\). Hence
-\[
+$$
+The Bockstein associated to $0\to\ZZ_p\to\ZZ_{p^2}\to\ZZ_p\to0$ satisfies $\beta(a)=b$. For $p=2$, this Bockstein is $Sq^1$ on degree-one classes, so $b=a^2$. Hence
+$$
 \boxed{H^*(K(\ZZ_2,1);\ZZ_2)\cong\ZZ_2[a],\quad |a|=1.}
-\]
+$$
 :::

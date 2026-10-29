@@ -20,14 +20,14 @@ audit:
 
 ::: {.problem}
 Let $m\ge0$ be an integer, let $a_1,\dots,a_m\in\ZZ$, and set
-\[
+$$
 f(x)=\sum_{i=1}^m\frac{a_ix^i}{i!}.
-\]
+$$
 Show that for every integer $d\ge0$ there are integers $b_0,\dots,b_{md}$ such that
-\[
+$$
 \frac{f(x)^d}{d!}
 =\sum_{i=0}^{md}\frac{b_ix^i}{i!}.
-\]
+$$
 :::
 
 ::: {.solution}

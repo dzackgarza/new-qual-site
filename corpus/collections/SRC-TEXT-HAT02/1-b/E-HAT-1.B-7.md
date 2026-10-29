@@ -31,11 +31,11 @@ Show that every graph product of groups can be realized by a graph whose vertice
 ::: {.solution}
 Let $\Gamma$ be an arbitrary graph of groups.
 For each unoriented edge $e$ with edge group $G_e$ and endpoint homomorphisms
-\[
+$$
 \alpha_e:G_e\to G_{o(e)},
 \qquad
 \omega_e:G_e\to G_{t(e)},
-\]
+$$
 subdivide $e$ once by inserting a new midpoint vertex $m_e$.
 
 ::: pf
@@ -43,17 +43,17 @@ subdivide $e$ once by inserting a new midpoint vertex $m_e$.
 ::: {.pf-step #s1}
 
 Give the new vertex $m_e$ the group
-\[
+$$
 G_{m_e}=G_e.
-\]
+$$
 Replace the original edge by two new edges, each also carrying the group $G_e$.
 
 ::: pf-proof
 
 For the half-edge from $m_e$ to $o(e)$, use the identity map
-\[
+$$
 G_e\to G_{m_e}=G_e
-\]
+$$
 at the midpoint and the original map $\alpha_e$ at the old endpoint.
 For the half-edge from $m_e$ to $t(e)$, use the identity at the midpoint and $\omega_e$ at the old endpoint.
 Thus the new graph-of-groups data are well defined.
@@ -69,13 +69,13 @@ The new underlying graph is bipartite.
 ::: pf-proof
 
 Let
-\[
+$$
 V_0=\{m_e:e\in E(\Gamma)\}
-\]
+$$
 be the set of new midpoint vertices and let
-\[
+$$
 V_1=V(\Gamma)
-\]
+$$
 be the set of original vertices.
 Every new edge joins a midpoint vertex to an original vertex.
 Orient every edge from $V_0$ to $V_1$.

@@ -53,9 +53,9 @@ Arbitrary unions of such sets again have this form.
 ::: pf-step
 
 Every open subset of the subspace $A$ is therefore of the form
-\[
+$$
 A\cap(X\times V)
-\]
+$$
 for some open $V\subseteq\RR$.
 
 ::: pf-proof
@@ -88,18 +88,18 @@ The interval $[0,1]$ admits a finite subcover from $\{V_i\}_{i\in I}$.
 
 We prove this directly.
 Let
-\[
+$$
 S=\{x\in[0,1]:[0,x]\text{ is covered by finitely many }V_i\}.
-\]
+$$
 Some $V_i$ contains $0$, so $S$ is nonempty.
 Let $s=\sup S$.
 Choose $V_j$ containing $s$ and an open interval $(s-\varepsilon,s+\varepsilon)\subseteq V_j$.
 
 If $s<1$, choose $x\in S$ with $x>s-\varepsilon/2$.
 A finite family covers $[0,x]$, and adjoining $V_j$ covers
-\[
+$$
 [0,s+\varepsilon/2],
-\]
+$$
 contradicting the definition of $s$ as an upper bound for $S$.
 Thus $s=1$.
 Now choose $x\in S$ with $x>1-\varepsilon/2$; a finite cover of $[0,x]$ together with $V_j$ covers all of $[0,1]$.
@@ -115,13 +115,13 @@ The corresponding finitely many members of the original cover cover $A$.
 ::: pf-proof
 
 Choose indices $i_1,\dots,i_n$ such that
-\[
+$$
 [0,1]\subseteq V_{i_1}\cup\cdots\cup V_{i_n}.
-\]
+$$
 Every point of $A$ has second coordinate in $[0,1]$, so it lies in
-\[
+$$
 A\cap(X\times V_{i_1}),\ldots,A\cap(X\times V_{i_n})
-\]
+$$
 for at least one index.
 
 :::

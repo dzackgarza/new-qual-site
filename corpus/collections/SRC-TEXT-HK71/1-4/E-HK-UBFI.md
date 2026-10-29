@@ -36,17 +36,17 @@ If so, describe explicitly all solutions.
 
 ::: {.solution}
 The system is consistent and has the one-parameter family of solutions
-\[
+$$
 (x_1,x_2,x_3)
 =\left(\frac12-t,-\frac12+t,t\right),
 \qquad t\in F.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 Row reduction of the augmented matrix gives
-\[
+$$
 \left[
 \begin{array}{ccc|c}
 1&-1&2&1\\
@@ -62,7 +62,7 @@ Row reduction of the augmented matrix gives
 0&0&0&0
 \end{array}
 \right].
-\]
+$$
 
 ::: pf-proof
 This is ordinary Gaussian elimination; in particular no row of the form
@@ -76,11 +76,11 @@ The displayed family is exactly the solution set.
 
 ::: pf-proof
 The reduced equations are
-\[
+$$
 x_1+x_3=\frac12,
 \qquad
 x_2-x_3=-\frac12.
-\]
+$$
 Set the free variable $x_3=t$ and solve for $x_1,x_2$.
 :::
 

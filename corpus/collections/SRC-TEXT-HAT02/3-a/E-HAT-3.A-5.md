@@ -29,19 +29,19 @@ From the fact that $\operatorname{Tor}(A, B) = 0$ if $A$ is free, deduce that $\
 
 ::: {.solution}
 Write a torsionfree abelian group $A$ as the directed union of its finitely generated subgroups:
-\[
+$$
 A=\varinjlim_\alpha A_\alpha.
-\]
+$$
 Each $A_\alpha$ is finitely generated and torsionfree, hence is a free abelian group. Therefore
-\[
+$$
 \operatorname{Tor}(A_\alpha,B)=0
-\]
+$$
 for every $\alpha$.
 
 By Exercise 4, $\operatorname{Tor}$ commutes with direct limits in the first variable, so
-\[
+$$
 \operatorname{Tor}(A,B)
 \cong \varinjlim_\alpha\operatorname{Tor}(A_\alpha,B)
 =0.
-\]
+$$
 :::

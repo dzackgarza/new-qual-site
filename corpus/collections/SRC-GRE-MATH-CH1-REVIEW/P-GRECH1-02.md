@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Determine the set of positive values of $x$ that satisfy the following inequality:
 
-\[
+$$
 \frac{1}{x} - \frac{1}{x-1} > \frac{1}{x-2}
-\]
+$$
 
 (A) $(0, 1) \cup (\sqrt{2}, 2)$
 (B) $(0, \frac{1}{2}) \cup (1, 2)$

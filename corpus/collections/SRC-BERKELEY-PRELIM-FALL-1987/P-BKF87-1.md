@@ -14,9 +14,9 @@ audit:
 
 ::: {.problem}
 Prove that
-\[
+$$
 (\cos\theta)^p\le \cos(p\theta)
-\]
+$$
 for $0\le\theta\le\pi/2$ and $0<p<1$.
 :::
 

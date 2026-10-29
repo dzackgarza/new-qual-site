@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be holomorphic on the right half-plane \(\{z:\operatorname{Re}z>0\}\). Suppose \(|f(z)|<1\) throughout the domain and \(f(1)=0\). Find the largest possible value of \(|f(2)|\).
+Let $f$ be holomorphic on the right half-plane $\{z:\operatorname{Re}z>0\}$. Suppose $|f(z)|<1$ throughout the domain and $f(1)=0$. Find the largest possible value of $|f(2)|$.
 :::
 
 ::: {.solution}

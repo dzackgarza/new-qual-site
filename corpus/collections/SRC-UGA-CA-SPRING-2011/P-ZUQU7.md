@@ -18,9 +18,9 @@ review: draft
 
 ::: {.problem}
 Define
-\[  
+$$  
 G \definedas \theset{z\in \CC\suchthat \Re(z) > 0, \, \abs{z-1} > 1}
-.\]
+.$$
 
 Find all injective conformal maps of $G$ onto $\DD$.
 These may be expressed as compositions of maps, but explain why this list is complete.

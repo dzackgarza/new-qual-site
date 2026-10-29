@@ -43,32 +43,32 @@ Show that $h$ is continuous.
 
 ::: {.solution}
 (a) Let
-\[
+$$
 C=\{x\in X:f(x)\le g(x)\}.
-\]
+$$
 We show its complement is open. Suppose $f(x)>g(x)$. If there is $y\in Y$ with
-\[
+$$
 g(x)<y<f(x),
-\]
+$$
 then continuity gives the open neighborhood
-\[
+$$
 f^{-1}((y,\infty))\cap g^{-1}(( -\infty,y))
-\]
+$$
 of $x$, and every point in it satisfies $f>g$.
 
 If there is no point strictly between $g(x)$ and $f(x)$, then $g(x)$ and $f(x)$ are consecutive in the order. The rays
-\[
+$$
 (g(x),\infty),\qquad (-\infty,f(x))
-\]
+$$
 are disjoint open neighborhoods of $f(x)$ and $g(x)$ respectively. On the open neighborhood
-\[
+$$
 f^{-1}((g(x),\infty))\cap g^{-1}((-\infty,f(x)))
-\]
+$$
 of $x$, a point $z$ has $f(z)>g(x)$, hence $f(z)\ge f(x)$, and $g(z)<f(x)$, hence $g(z)\le g(x)$; so $f(z)>g(z)$. Thus $\{f>g\}$ is open and $C$ is closed.
 
 (b) Put
-\[
+$$
 C=\{f\le g\},\qquad D=\{g\le f\}.
-\]
+$$
 By part (a), $C$ and $D$ are closed and $C\cup D=X$. On $C$, $h=f$; on $D$, $h=g$. These two definitions agree on $C\cap D=\{f=g\}$. Since the restrictions are continuous, the pasting lemma for two closed sets ([[E-2CPNC]]) gives that $h$ is continuous.
 :::

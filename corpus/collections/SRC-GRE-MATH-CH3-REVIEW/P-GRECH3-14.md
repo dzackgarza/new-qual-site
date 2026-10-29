@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Let $f$ be the function defined for all $(x,y)$ as follows:
-\[
+$$
 f(x,y)=\begin{cases}xy\,\dfrac{x^2-y^2}{x^2+y^2} & \text{if } (x,y)\ne(0,0)\\ 0 & \text{if } (x,y)=(0,0)\end{cases}
-\]
+$$
 What is the value of $f_{xy}$ at the point $(0,0)$?
 
 (A) $-1$

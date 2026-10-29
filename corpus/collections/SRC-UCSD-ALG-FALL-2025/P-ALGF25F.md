@@ -30,9 +30,9 @@ audit:
 ::: {.problem}
 Let $E/F$ be a finite Galois extension with Galois group $G = \operatorname{Gal}(E/F)$, and let $[G,G]$ denote the derived subgroup of $G$.
 Define the subfield
-\[
+$$
 F^{\mathrm{ab}} := \{e \in E \mid \theta(e) = e \text{ for all } \theta \in [G,G]\}.
-\]
+$$
 That is, $F^{\mathrm{ab}}$ is the fixed field of $[G,G]$.
 Prove that an element $e \in E$ lies in $F^{\mathrm{ab}}$ if and only if the field extension $F[e]/F$ is Galois and its Galois group $\operatorname{Gal}(F[e]/F)$ is abelian.
 :::
@@ -49,13 +49,13 @@ The extension $F^{\mathrm{ab}}/F$ is Galois and abelian.
 
 The commutator subgroup $[G,G]$ is characteristic in $G$, hence normal.
 By the fundamental theorem of Galois theory, its fixed field
-\[
+$$
 F^{\mathrm{ab}}=E^{[G,G]}
-\]
+$$
 is Galois over $F$, with
-\[
+$$
 \operatorname{Gal}(F^{\mathrm{ab}}/F)\cong G/[G,G].
-\]
+$$
 The quotient $G/[G,G]$ is abelian, so $F^{\mathrm{ab}}/F$ is an abelian Galois extension.
 
 :::
@@ -69,21 +69,21 @@ If $F[e]/F$ is Galois with abelian Galois group, then $e\in F^{\mathrm{ab}}$.
 ::: pf-proof
 
 Let
-\[
+$$
 H=\operatorname{Gal}(E/F[e]).
-\]
+$$
 Since $F[e]/F$ is Galois, the Galois correspondence gives $H\trianglelefteq G$ and
-\[
+$$
 G/H\cong\operatorname{Gal}(F[e]/F).
-\]
+$$
 The quotient is abelian, so every commutator of elements of $G$ lies in $H$; hence
-\[
+$$
 [G,G]\subseteq H.
-\]
+$$
 Taking fixed fields reverses inclusion and gives
-\[
+$$
 F[e]=E^H\subseteq E^{[G,G]}=F^{\mathrm{ab}}.
-\]
+$$
 In particular, $e\in F^{\mathrm{ab}}$.
 
 :::
@@ -97,22 +97,22 @@ If $e\in F^{\mathrm{ab}}$, then $F[e]/F$ is Galois and abelian.
 ::: pf-proof
 
 By step [](#s1){.pf-ref}, the extension $F^{\mathrm{ab}}/F$ is finite Galois with abelian Galois group
-\[
+$$
 A=\operatorname{Gal}(F^{\mathrm{ab}}/F).
-\]
+$$
 The inclusions
-\[
+$$
 F\subseteq F[e]\subseteq F^{\mathrm{ab}}
-\]
+$$
 correspond to the subgroup
-\[
+$$
 K=\operatorname{Gal}(F^{\mathrm{ab}}/F[e])\le A.
-\]
+$$
 Since $A$ is abelian, $K$ is normal in $A$.
 The Galois correspondence therefore shows that $F[e]/F$ is Galois and that
-\[
+$$
 \operatorname{Gal}(F[e]/F)\cong A/K.
-\]
+$$
 This quotient is abelian, proving the converse and hence the equivalence.
 
 :::

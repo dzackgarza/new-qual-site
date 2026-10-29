@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Let $n$ be a number for which the improper integral
 
-\[
+$$
 \int_{e}^{\infty} \frac{dx}{x(\log x)^n}
-\]
+$$
 
 converges. Determine the value of the integral.
 

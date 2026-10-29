@@ -52,17 +52,17 @@ Translation preserves distributions.
 ::: pf-proof
 
 Fix $h\in\RR$. The map
-\[
+$$
 \phi\longmapsto \tau_{-h}\phi,
 \qquad
 (\tau_{-h}\phi)(x)=\phi(x-h),
-\]
+$$
 is a continuous linear automorphism of $C_c^\infty(\RR)$: derivatives commute with translation, and the support is merely translated by $h$.
 
 Therefore the composition
-\[
+$$
 \tau_hT(\phi):=T(\tau_{-h}\phi)
-\]
+$$
 is linear and continuous on $C_c^\infty(\RR)$. Hence $\tau_hT\in\mathcal D'(\RR)$.
 
 :::
@@ -76,31 +76,31 @@ Recover the distributional derivative from difference quotients.
 ::: pf-proof
 
 For every test function $\phi$,
-\[
+$$
 \left(\frac{\tau_hT-T}{h}\right)(\phi)
 =T\left(\frac{\tau_{-h}\phi-\phi}{h}\right).
-\]
+$$
 In $C_c^\infty(\RR)$,
-\[
+$$
 \frac{\tau_{-h}\phi-\phi}{h}
 =\frac{\phi(\cdot-h)-\phi}{h}
 \longrightarrow -\phi'
 \qquad(h\to0).
-\]
+$$
 Indeed, the convergence holds uniformly for every derivative on one fixed compact set containing the supports for all sufficiently small $h$.
 
 By continuity of $T$,
-\[
+$$
 \left(\frac{\tau_hT-T}{h}\right)(\phi)
 \longrightarrow T(-\phi')
 =T'(\phi).
-\]
+$$
 Thus
-\[
+$$
 \boxed{
 \frac{\tau_hT-T}{h}\longrightarrow T'
 \quad\text{in }\mathcal D'(\RR).}
-\]
+$$
 
 :::
 
@@ -113,14 +113,14 @@ Translation preserves tempered distributions.
 ::: pf-proof
 
 If $T\in\mathcal S'(\RR)$, then translation is a continuous linear automorphism of the Schwartz space. Indeed, for every pair of nonnegative integers $m,k$,
-\[
+$$
 \sup_x |x^m(\tau_{-h}\phi)^{(k)}(x)|
 =\sup_x |x^m\phi^{(k)}(x-h)|
-\]
+$$
 is bounded by a finite linear combination of Schwartz seminorms of $\phi$, because $x=(x-h)+h$. Hence
-\[
+$$
 \phi\mapsto T(\tau_{-h}\phi)
-\]
+$$
 is continuous on $\mathcal S$, so $\tau_hT\in\mathcal S'$.
 
 :::
@@ -134,22 +134,22 @@ Compute the Fourier transform.
 ::: pf-proof
 
 With the convention
-\[
+$$
 \widehat\phi(\xi)=\int_{\RR}\phi(x)e^{-2\pi i x\xi}\,dx,
-\]
+$$
 one has for ordinary Schwartz functions
-\[
+$$
 \widehat{\tau_h\phi}(\xi)
 =e^{2\pi i h\xi}\widehat\phi(\xi),
-\]
+$$
 because $\tau_h\phi(x)=\phi(x+h)$.
 
 The same identity extends by duality to tempered distributions. Therefore
-\[
+$$
 \boxed{
 \widehat{\tau_hT}
 =e^{2\pi i h\xi}\widehat T.}
-\]
+$$
 
 :::
 

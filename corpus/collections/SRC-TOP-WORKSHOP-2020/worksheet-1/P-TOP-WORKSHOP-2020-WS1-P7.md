@@ -26,37 +26,37 @@ Show that if $X$ and $Y$ are homeomorphic, then $\widetilde X$ and $\widetilde Y
 :::
 
 ::: {.solution}
-Let \(h:X\to Y\) be a homeomorphism. Choose \(\widetilde x_0\in\widetilde X\), put \(x_0=p(\widetilde x_0)\), choose \(\widetilde y_0\in q^{-1}(h(x_0))\), and consider
-\[
+Let $h:X\to Y$ be a homeomorphism. Choose $\widetilde x_0\in\widetilde X$, put $x_0=p(\widetilde x_0)$, choose $\widetilde y_0\in q^{-1}(h(x_0))$, and consider
+$$
 h\circ p:\widetilde X\to Y.
-\]
-Since \(\widetilde X\) is simply connected, the lifting criterion gives a lift
-\[
+$$
+Since $\widetilde X$ is simply connected, the lifting criterion gives a lift
+$$
 F:\widetilde X\to\widetilde Y
-\]
-of \(h\circ p\) with \(F(\widetilde x_0)=\widetilde y_0\):
-\[
+$$
+of $h\circ p$ with $F(\widetilde x_0)=\widetilde y_0$:
+$$
 q\circ F=h\circ p.
-\]
+$$
 
-Similarly, since \(\widetilde Y\) is simply connected, \(h^{-1}\circ q\) has a lift
-\[
+Similarly, since $\widetilde Y$ is simply connected, $h^{-1}\circ q$ has a lift
+$$
 G:\widetilde Y\to\widetilde X
-\]
-chosen so that \(G(\widetilde y_0)=\widetilde x_0\):
-\[
+$$
+chosen so that $G(\widetilde y_0)=\widetilde x_0$:
+$$
 p\circ G=h^{-1}\circ q.
-\]
+$$
 Then
-\[
+$$
 p\circ(GF)=h^{-1}qF=h^{-1}hp=p.
-\]
-Thus \(GF\) and the identity map of \(\widetilde X\) are two lifts of \(p:\widetilde X\to X\) that agree at \(\widetilde x_0\). Since \(\widetilde X\) is connected, uniqueness of lifts gives
-\[
+$$
+Thus $GF$ and the identity map of $\widetilde X$ are two lifts of $p:\widetilde X\to X$ that agree at $\widetilde x_0$. Since $\widetilde X$ is connected, uniqueness of lifts gives
+$$
 GF=\operatorname{id}_{\widetilde X}.
-\]
-Likewise \(FG=\operatorname{id}_{\widetilde Y}\). Hence \(F\) and \(G\) are inverse homeomorphisms, so
-\[
+$$
+Likewise $FG=\operatorname{id}_{\widetilde Y}$. Hence $F$ and $G$ are inverse homeomorphisms, so
+$$
 \widetilde X\cong\widetilde Y.
-\]
+$$
 :::

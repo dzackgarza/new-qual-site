@@ -34,34 +34,34 @@ Is it possible to homotope $r$ to have no fixed points?
 Yes. In fact one can remove the fixed circles by an arbitrarily small perturbation through maps homotopic to the reflection.
 
 Let
-\[
+$$
 F=M\cap P=C_1\amalg\cdots\amalg C_r.
-\]
+$$
 Since $r$ is reflection across $P$, each $C_j$ has an $r$-invariant annular neighborhood with coordinates
-\[
+$$
 (\theta,t)\in S^1\times(-\varepsilon,\varepsilon)
-\]
+$$
 in which
-\[
+$$
 r(\theta,t)=(\theta,-t).
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 There is a homeomorphism $h:M\to M$, isotopic to the identity and supported in these annuli, such that on a smaller annulus about each $C_j$,
-\[
+$$
 h(\theta,t)=(\theta+\delta,t)
-\]
+$$
 for a fixed small $\delta\ne0$.
 
 ::: pf-proof
 
 Choose a bump function $\rho(t)$ equal to $1$ near $0$ and $0$ near the boundary of the annulus, and set
-\[
+$$
 h_s(\theta,t)=(\theta+s\delta\rho(t),t),\qquad 0\le s\le1.
-\]
+$$
 These maps give an isotopy, extended by the identity outside the disjoint annuli.
 
 :::
@@ -71,17 +71,17 @@ These maps give an isotopy, extended by the identity outside the disjoint annuli
 ::: pf-step
 
 The map
-\[
+$$
 g=h\circ r
-\]
+$$
 has no fixed points.
 
 ::: pf-proof
 
 Outside the chosen annuli, $h$ is the identity and $r$ has no fixed points. In an annulus,
-\[
+$$
 g(\theta,t)=(\theta+\delta\rho(-t),-t).
-\]
+$$
 A fixed point would require $t=-t$, hence $t=0$, and then would require $\theta+\delta=\theta$ in $S^1$, impossible for the chosen nonzero sufficiently small $\delta$.
 
 :::
@@ -103,8 +103,8 @@ Since $h$ is isotopic to the identity, the maps $h_s\circ r$ give a homotopy fro
 :::
 
 Thus
-\[
+$$
 \boxed{r\text{ can be homotoped to a fixed-point-free map}.}
-\]
+$$
 This is consistent with Exercise 4: $\tau(r)=\chi(F)=0$ because $F$ is a disjoint union of circles.
 :::

@@ -24,9 +24,9 @@ audit:
 
 ::: {.problem}
 Let $V$ be finite-dimensional, let $f:V\to V$ be linear, and let
-\[
+$$
 W=\operatorname{im}f.
-\]
+$$
 Prove that the restriction $f|_W:W\to W$ has the same trace as $f:V\to V$.
 :::
 

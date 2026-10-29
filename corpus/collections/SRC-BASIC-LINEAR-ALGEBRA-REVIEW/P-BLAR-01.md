@@ -17,12 +17,12 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 u=(4,1,3),
 \qquad
 v=(-2,0,1).
-\]
-Compute the dot product \(u\cdot v\) and the length of each vector.
+$$
+Compute the dot product $u\cdot v$ and the length of each vector.
 :::
 
 ::: {.solution}
@@ -31,54 +31,54 @@ Compute the dot product \(u\cdot v\) and the length of each vector.
 
 ::: pf-step
 The dot product is
-\[
+$$
 \boxed{u\cdot v=-5}.
-\]
+$$
 
 ::: pf-proof
 By the definition of the Euclidean dot product,
-\[
+$$
 u\cdot v
 =4(-2)+1(0)+3(1)
 =-8+3
 =-5.
-\]
+$$
 :::
 
 :::
 
 ::: pf-step
-The length of \(u\) is
-\[
+The length of $u$ is
+$$
 \boxed{\|u\|=\sqrt{26}}.
-\]
+$$
 
 ::: pf-proof
-Using \(\|u\|=\sqrt{u\cdot u}\),
-\[
+Using $\|u\|=\sqrt{u\cdot u}$,
+$$
 \|u\|
 =\sqrt{4^2+1^2+3^2}
 =\sqrt{16+1+9}
 =\sqrt{26}.
-\]
+$$
 :::
 
 :::
 
 ::: pf-step
-The length of \(v\) is
-\[
+The length of $v$ is
+$$
 \boxed{\|v\|=\sqrt5}.
-\]
+$$
 
 ::: pf-proof
 Similarly,
-\[
+$$
 \|v\|
 =\sqrt{(-2)^2+0^2+1^2}
 =\sqrt{4+1}
 =\sqrt5.
-\]
+$$
 :::
 
 :::

@@ -37,13 +37,13 @@ Rewrite the hypothesis modulo $11$.
 ::: pf-proof
 
 From
-\[
+$$
 3x+7y\equiv0\pmod{11}
-\]
+$$
 and $3^{-1}\equiv4\pmod{11}$, we obtain
-\[
+$$
 x\equiv-7\cdot4\,y\equiv5y\pmod{11}.
-\]
+$$
 
 :::
 
@@ -56,9 +56,9 @@ Test the listed linear expressions.
 ::: pf-proof
 
 Substituting $x\equiv5y$ gives
-\[
+$$
 4x-9y\equiv20y-9y=11y\equiv0\pmod{11}.
-\]
+$$
 The other options reduce respectively to $4y$, $6y+5$, $5y$, and $6y-1$ modulo $11$, none of which is forced to vanish for all admissible $y$.
 
 :::

@@ -28,19 +28,19 @@ Prove the following "theorem of meteorology": at any given moment in time, there
 :::
 
 ::: {.solution}
-Model the surface of the earth by the sphere \(S^2\). Assume temperature and barometric pressure vary continuously over the surface at the fixed time in question. Define
-\[
+Model the surface of the earth by the sphere $S^2$. Assume temperature and barometric pressure vary continuously over the surface at the fixed time in question. Define
+$$
 F:S^2\to\RR^2,
 \qquad
 F(x)=(T(x),P(x)),
-\]
-where \(T\) is temperature and \(P\) is pressure. By the Borsuk--Ulam theorem, there exists \(x\in S^2\) such that
-\[
+$$
+where $T$ is temperature and $P$ is pressure. By the Borsuk--Ulam theorem, there exists $x\in S^2$ such that
+$$
 F(x)=F(-x).
-\]
+$$
 Equality of the two coordinates gives
-\[
+$$
 T(x)=T(-x),\qquad P(x)=P(-x).
-\]
-Thus the antipodal points \(x\) and \(-x\) have both the same temperature and the same barometric pressure.
+$$
+Thus the antipodal points $x$ and $-x$ have both the same temperature and the same barometric pressure.
 :::

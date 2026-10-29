@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Let $C([0,1])$ denote the Banach space of continuous functions on $[0,1]$ endowed with the sup-norm. Let $\mathcal F$ be a $\sigma$-algebra on $C([0,1])$ such that for all $x\in[0,1]$ the map
-\[
+$$
 L_x(f)=f(x)
-\]
+$$
 is $\mathcal F$-measurable. Show that $\mathcal F$ contains all open sets.
 :::
 

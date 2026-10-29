@@ -49,18 +49,18 @@ Reversing the orientation of the corresponding identified boundary circle gives 
 ::: {.pf-step #s1}
 
 The punctured bottle $Y$ has a CW structure with one $0$-cell, three $1$-cells $a,b,c$, and one $2$-cell attached along
-\[
+$$
 r=aba^{-1}b^{-1}cb^{-1}c^{-1}.
-\]
+$$
 
 ::: pf-proof
 
 Cut the surface in the source figure along arcs from the boundary of the deleted disk to the self-identification curves, so that the remaining $2$-cell is a disk.
 After the cuts, all vertices are identified to one vertex and the three surviving edge classes are $a,b,c$.
 Traversing the boundary of the cut-open disk once gives, in order,
-\[
+$$
 a,\ b,\ a^{-1},\ b^{-1},\ c,\ b^{-1},\ c^{-1}.
-\]
+$$
 Thus the attaching word is exactly $r$.
 This is the standard one-disk fundamental polygon obtained by opening the bottle picture along the deleted self-intersection disk.
 
@@ -71,7 +71,7 @@ This is the standard one-disk fundamental polygon obtained by opening the bottle
 ::: {.pf-step #s2}
 
 Therefore
-\[
+$$
 \boxed{
 \pi_1(Y)
 \cong
@@ -79,14 +79,14 @@ Therefore
 aba^{-1}b^{-1}cb^{-1}c^{-1}=1
 \right\rangle .
 }
-\]
+$$
 
 ::: pf-proof
 
 The $1$-skeleton in step [](#s1){.pf-ref} is
-\[
+$$
 S^1\vee S^1\vee S^1,
-\]
+$$
 so its fundamental group is the free group $F(a,b,c)$.
 Attaching the single $2$-cell quotients by the normal closure of its attaching word $r$.
 This is precisely the displayed presentation by van Kampen.
@@ -98,25 +98,25 @@ This is precisely the displayed presentation by van Kampen.
 ::: {.pf-step #s3}
 
 With the opposite orientation convention on the indicated boundary identification, the same computation gives
-\[
+$$
 \pi_1(Y)
 \cong
 \left\langle a,b,c\ \middle|\
 aba^{-1}b^{-1}cb c^{-1}=1
 \right\rangle .
-\]
+$$
 
 ::: pf-proof
 
 Only the orientation in which that copy of the $b$-edge is traversed changes.
 Since this is merely a change of orientation in the same CW decomposition of the same space $Y$, the two presentations present isomorphic groups.
 Thus the answer can be written uniformly as
-\[
+$$
 \left\langle a,b,c\ \middle|\
 aba^{-1}b^{-1}cb^{\varepsilon}c^{-1}=1
 \right\rangle,
 \qquad \varepsilon=\pm1.
-\]
+$$
 
 :::
 
@@ -130,9 +130,9 @@ Reattaching the deleted disk to $Y$ to recover the immersed Klein-bottle model $
 
 In the cut-open model of step [](#s1){.pf-ref}, the boundary of the disk deleted at the circle of self-intersection is represented by the $b$-loop.
 Passing from $Y$ back to $X$ attaches a $2$-cell along this boundary loop, so van Kampen adds the relation
-\[
+$$
 b=1.
-\]
+$$
 
 :::
 
@@ -141,26 +141,26 @@ b=1.
 ::: {.pf-step #s5}
 
 Hence
-\[
+$$
 \boxed{\pi_1(X)\cong\ZZ*\ZZ.}
-\]
+$$
 
 ::: pf-proof
 
 Adding $b=1$ to the presentation in step [](#s2){.pf-ref} makes the original relator trivial:
-\[
+$$
 aba^{-1}b^{-1}cb^{-1}c^{-1}
 \longmapsto
 aa^{-1}cc^{-1}=1.
-\]
+$$
 Therefore
-\[
+$$
 \pi_1(X)
 \cong
 \langle a,c\mid\ \rangle
 \cong F(a,c)
 \cong\ZZ*\ZZ.
-\]
+$$
 
 :::
 
@@ -179,17 +179,17 @@ These radial retractions agree along the edge and vertex cross-sections, so over
 
 Outside that ball, radial projection retracts the unbounded complement onto the same outer sphere.
 Consequently
-\[
+$$
 \RR^3\setminus Z\simeq Y\vee S^2.
-\]
+$$
 Since $S^2$ is simply connected, van Kampen gives
-\[
+$$
 \pi_1(\RR^3\setminus Z)
 \cong
 \pi_1(Y)*\pi_1(S^2)
 \cong
 \pi_1(Y).
-\]
+$$
 
 :::
 
@@ -198,7 +198,7 @@ Since $S^2$ is simply connected, van Kampen gives
 ::: pf-step
 
 Thus all requested groups are
-\[
+$$
 \pi_1(X)\cong\ZZ*\ZZ,
 \qquad
 \pi_1(Y)
@@ -206,7 +206,7 @@ Thus all requested groups are
 \pi_1(\RR^3\setminus Z)
 \cong
 \left\langle a,b,c\mid aba^{-1}b^{-1}cb^{\varepsilon}c^{-1}\right\rangle .
-\]
+$$
 
 ::: pf-proof
 

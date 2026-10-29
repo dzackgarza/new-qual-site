@@ -27,9 +27,9 @@ Give an example of a polynomial that is not solvable by radicals.
 
 ::: {.solution}
 Take
-\[
+$$
 f(x)=x^5-x-1\in\QQ[x].
-\]
+$$
 Its Galois group over $\QQ$ is $S_5$, so $f$ is not solvable by radicals.
 
 ::: pf
@@ -41,18 +41,18 @@ The polynomial $f$ is irreducible over $\QQ$.
 ::: pf-proof
 
 Modulo $3$,
-\[
+$$
 \bar f(x)=x^5-x-1.
-\]
+$$
 It has no root in $\FF_3$. The monic irreducible quadratics over
 $\FF_3$ are
-\[
+$$
 x^2+1,\qquad x^2+x+2,\qquad x^2+2x+2,
-\]
+$$
 and division of $\bar f$ by these gives remainders respectively
-\[
+$$
 -1,\qquad x-1,\qquad x-1.
-\]
+$$
 Thus $\bar f$ has no factor of degree $1$ or $2$. A reducible polynomial of
 degree $5$ over a field must have a factor of degree at most $2$, so $\bar f$ is
 irreducible. Hence $f$ is irreducible over $\QQ$ by Gauss's lemma.
@@ -68,14 +68,14 @@ The Galois group $G$ contains a transposition.
 ::: pf-proof
 
 Modulo $2$,
-\[
+$$
 \bar f(x)=x^5+x+1
 =(x^2+x+1)(x^3+x^2+1).
-\]
+$$
 The discriminant of $f$ is
-\[
+$$
 \operatorname{disc}(f)=2869,
-\]
+$$
 which is odd, so $2$ is unramified in the splitting field. Dedekind's
 factorization theorem therefore gives an element of $G\le S_5$ with cycle type
 $(2)(3)$. The cube of such an element is a transposition.

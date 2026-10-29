@@ -41,25 +41,25 @@ Apply the uniform-limit theorem to the partial sums.
 ::: pf-proof
 
 Let
-\[
+$$
 F_N(x):=\sum_{n=1}^N f_n(x),
 \qquad
 F(x):=\sum_{n=1}^\infty f_n(x).
-\]
+$$
 Each $F_N$ is continuous because it is a finite sum of continuous functions, and the hypothesis says that $F_N\to F$ uniformly.
 
 Fix $x_0$ and $\varepsilon>0$. Choose $N$ so large that
-\[
+$$
 \sup_x|F(x)-F_N(x)|<\frac{\varepsilon}{3}.
-\]
+$$
 By continuity of $F_N$ at $x_0$, there is $\delta>0$ such that
-\[
+$$
 |x-x_0|<\delta
 \quad\Longrightarrow\quad
 |F_N(x)-F_N(x_0)|<\frac{\varepsilon}{3}.
-\]
+$$
 Hence, whenever $|x-x_0|<\delta$,
-\[
+$$
 \begin{aligned}
 |F(x)-F(x_0)|
 &\le |F(x)-F_N(x)|
@@ -67,11 +67,11 @@ Hence, whenever $|x-x_0|<\delta$,
  +|F_N(x_0)-F(x_0)|\\
 &<\varepsilon.
 \end{aligned}
-\]
+$$
 Thus $F$ is continuous at $x_0$. Since $x_0$ was arbitrary,
-\[
+$$
 \boxed{\sum_{n=1}^\infty f_n\text{ is continuous}.}
-\]
+$$
 
 :::
 

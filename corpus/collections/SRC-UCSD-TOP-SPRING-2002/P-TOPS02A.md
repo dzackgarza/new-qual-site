@@ -33,9 +33,9 @@ Homology of $S^{2n}$ and the degree map:
 
 ::: pf-step
 The rational homology groups of the even-dimensional sphere $S^{2n}$ ($n \ge 1$) are:
-\[
+$$
 H_k(S^{2n}; \QQ) \cong \begin{cases} \QQ & k = 0, 2n \\ 0 & \text{otherwise}. \end{cases}
-\]
+$$
 
 ::: pf-proof
 homology of spheres.
@@ -72,9 +72,9 @@ Compute the Lefschetz number for fixed-point-free homeomorphisms:
 
 ::: {.pf-step #s2-1}
 The Lefschetz number of $g$ is defined as:
-\[
+$$
 \Lambda(g) = \sum_{k=0}^{2n} (-1)^k \operatorname{tr}\left(g_*|_{H_k(S^{2n}; \QQ)}\right) = \operatorname{tr}\left(g_*|_{H_0}\right) + (-1)^{2n} \operatorname{tr}\left(g_*|_{H_{2n}}\right) = 1 + \deg(g),
-\]
+$$
 since $(-1)^{2n} = 1$ for even dimension $2n$.
 
 ::: pf-proof
@@ -139,9 +139,9 @@ a homomorphism is injective if and only if its kernel is trivial.
 
 ::: pf-step
 Since the target group $\{\pm 1\}$ has order $2$, the subgroup $G \cong d(G) \le \{\pm 1\}$ must have order dividing $2$:
-\[
+$$
 |G| \le 2.
-\]
+$$
 
 ::: pf-proof
 Lagrange's Theorem on subgroups of order 2 groups.

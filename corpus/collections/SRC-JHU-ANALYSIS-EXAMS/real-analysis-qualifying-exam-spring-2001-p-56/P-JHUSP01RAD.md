@@ -25,17 +25,17 @@ audit:
 
 ::: {.problem}
 For which real numbers $\alpha,\beta$ does
-\[
+$$
 \|f\|_2\le\|f\|_{4/3}^{\alpha}\|f\|_4^{\beta}
-\]
+$$
 hold for all measurable $f$ for which the right-hand side is finite?
 :::
 
 ::: {.solution}
 The inequality holds exactly for
-\[
+$$
 \boxed{\alpha=\beta=\frac12}.
-\]
+$$
 
 ::: pf
 
@@ -46,30 +46,30 @@ Necessity.
 ::: pf-proof
 
 Apply the inequality to $cf$ with $c>0$. Homogeneity forces
-\[
+$$
 1=\alpha+\beta.
-\]
+$$
 Next take $f=\mathbf1_E$ for measurable sets $E$ of arbitrary finite positive measure $m(E)=m$. Then
-\[
+$$
 \|f\|_2=m^{1/2},
 \qquad
 \|f\|_{4/3}=m^{3/4},
 \qquad
 \|f\|_4=m^{1/4}.
-\]
+$$
 Thus
-\[
+$$
 m^{1/2}\le m^{3\alpha/4+\beta/4}
 \qquad\text{for every }m>0.
-\]
+$$
 For this to hold both as $m\downarrow0$ and $m\to\infty$, the exponents must agree:
-\[
+$$
 \frac12=\frac{3\alpha+\beta}{4}.
-\]
+$$
 Together with $\alpha+\beta=1$, this gives
-\[
+$$
 \alpha=\beta=\frac12.
-\]
+$$
 
 :::
 
@@ -82,15 +82,15 @@ Sufficiency.
 ::: pf-proof
 
 By Hölder's inequality with exponents $4/3$ and $4$,
-\[
+$$
 \int |f|^2
 =\int |f|\,|f|
 \le\left(\int|f|^{4/3}\right)^{3/4}\left(\int|f|^4\right)^{1/4}.
-\]
+$$
 Taking square roots gives
-\[
+$$
 \|f\|_2\le\|f\|_{4/3}^{1/2}\|f\|_4^{1/2}.
-\]
+$$
 Thus the claimed pair is both necessary and sufficient.
 
 :::

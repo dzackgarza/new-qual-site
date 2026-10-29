@@ -31,14 +31,14 @@ Draw the Cayley graph of the group $\ZZ * \ZZ_2 = \langle a, b \mid b^2 \rangle$
 
 ::: {.solution}
 Let
-\[
+$$
 G=\ZZ*\ZZ_2
 =\langle a,b\mid b^2=1\rangle.
-\]
+$$
 Use the generating set
-\[
+$$
 \{a,a^{-1},b\}.
-\]
+$$
 
 ::: pf
 
@@ -49,9 +49,9 @@ Every vertex of the Cayley graph has three incident edge ends: an $a$-edge leavi
 ::: pf-proof
 
 From a vertex $g$ there are edges to
-\[
+$$
 ga,\qquad ga^{-1},\qquad gb.
-\]
+$$
 Since $b=b^{-1}$, the $b$-edge from $g$ to $gb$ is the same undirected edge when viewed from $gb$.
 
 :::
@@ -65,9 +65,9 @@ The $a$-edges form disjoint bi-infinite lines, one for each right coset of $\lan
 ::: pf-proof
 
 Starting from $g$ and traversing only $a$-edges gives precisely
-\[
+$$
 \{ga^n:n\in\ZZ\},
-\]
+$$
 with consecutive vertices joined by $a$-edges.
 No nonzero power of $a$ is trivial, so this is a bi-infinite line.
 
@@ -83,9 +83,9 @@ The $b$-edges join these $a$-lines in a perfect matching, and the resulting grap
 
 Every vertex lies on exactly one $b$-edge because $b^2=1$.
 If there were a cycle, reading its labels and cancelling immediate reversals would give a nonempty reduced word in the free product
-\[
+$$
 \ZZ*\ZZ_2
-\]
+$$
 representing the identity, contradicting the free-product normal-form theorem.
 
 :::

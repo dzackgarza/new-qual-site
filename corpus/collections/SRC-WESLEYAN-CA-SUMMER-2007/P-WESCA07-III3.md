@@ -17,9 +17,9 @@ audit:
 
 ::: {.problem}
 Let $f=u+iv$ be analytic on an open set $U\subseteq\CC$ and suppose
-\[
+$$
 v=u^2.
-\]
+$$
 Can one conclude that $f$ is constant on $U$?
 
 If yes, prove it.

@@ -21,9 +21,9 @@ audit:
 1. List the compact connected surfaces up to homeomorphism.
 
 2. Form a surface from a hexagon by identifying its boundary edges in pairs according to the cyclic word
-   \[
+   $$
    abac b^{-1}c^{-1},
-   \]
+   $$
    and identify the resulting compact connected surface.
 :::
 

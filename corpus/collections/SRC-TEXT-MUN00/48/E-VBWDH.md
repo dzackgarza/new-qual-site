@@ -30,12 +30,12 @@ Then there is a nonempty open set $U$ of $X$ on which the functions in $\mathcal
 
 ::: {.solution}
 For $N\in\ZZ_+$ set
-\[
+$$
 A_N=\{x\in X:|f(x)|\le N\text{ for every }f\in\mathcal F\}.
-\]
+$$
 Each $A_N$ is closed, since
-\[
+$$
 A_N=\bigcap_{f\in\mathcal F}f^{-1}([-N,N]).
-\]
+$$
 Pointwise boundedness says every $x$ belongs to some $A_N$, so $X=\bigcup_NA_N$. A complete metric space is Baire; therefore some $A_N$ has nonempty interior. Choose a nonempty open $U\subset A_N$. Then for every $x\in U$ and every $f\in\mathcal F$, $|f(x)|\le N$. Taking $M=N$ proves the assertion.
 :::

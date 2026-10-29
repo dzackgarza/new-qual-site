@@ -27,17 +27,17 @@ Write down a composition series for $S_4$.
 
 ::: {.solution}
 Let
-\[
+$$
 V_4=\{e,(12)(34),(13)(24),(14)(23)\}
-\]
+$$
 and let
-\[
+$$
 C_2=\langle(12)(34)\rangle.
-\]
+$$
 Then
-\[
+$$
 1\triangleleft C_2\triangleleft V_4\triangleleft A_4\triangleleft S_4
-\]
+$$
 is a composition series.
 
 ::: pf
@@ -64,7 +64,7 @@ Each factor is simple.
 ::: pf-proof
 
 The factor orders are
-\[
+$$
 |C_2|=2,
 \qquad
 |V_4/C_2|=2,
@@ -72,7 +72,7 @@ The factor orders are
 |A_4/V_4|=3,
 \qquad
 |S_4/A_4|=2.
-\]
+$$
 Every group of prime order is simple.
 
 :::

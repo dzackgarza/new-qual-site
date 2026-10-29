@@ -31,15 +31,15 @@ audit:
 :::
 
 ::: {.solution}
-(a) Let \(a\) be an element of the well-ordered set \(A\) that is not largest. Then
-\[
+(a) Let $a$ be an element of the well-ordered set $A$ that is not largest. Then
+$$
 B=\{x\in A:a<x\}
-\]
-is nonempty. Let \(s\) be its smallest element. Then \(a<s\), and there is no \(x\) with
-\[
+$$
+is nonempty. Let $s$ be its smallest element. Then $a<s$, and there is no $x$ with
+$$
 a<x<s,
-\]
-for such an \(x\) would belong to \(B\) and be smaller than \(s\). Hence \(s\) is the immediate successor of \(a\).
+$$
+for such an $x$ would belong to $B$ and be smaller than $s$. Hence $s$ is the immediate successor of $a$.
 
-(b) The integers \(\ZZ\) with their usual order are not well-ordered, since \(\ZZ\) itself has no smallest element. Nevertheless every \(n\in\ZZ\) has the immediate successor \(n+1\).
+(b) The integers $\ZZ$ with their usual order are not well-ordered, since $\ZZ$ itself has no smallest element. Nevertheless every $n\in\ZZ$ has the immediate successor $n+1$.
 :::

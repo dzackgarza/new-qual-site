@@ -33,44 +33,44 @@ audit:
 
 ::: {.solution}
 By the two-squares and four-squares theorems,
-\[
+$$
 r_2(n)=4\bigl(d_1(n)-d_3(n)\bigr),
 \qquad
 r_4(n)=8\sum_{\substack{d\mid n\\4\nmid d}}d,
 \tag{1}
-\]
-where \(d_j(n)\) counts divisors congruent to \(j\pmod4\).
+$$
+where $d_j(n)$ counts divisors congruent to $j\pmod4$.
 
-For part (a), if \(n=3^{2k+1}\), the divisors are \(1,3,3^2,\ldots,3^{2k+1}\); exactly \(k+1\) are \(1\pmod4\) and \(k+1\) are \(3\pmod4\). Hence \(r_2(3^{2k+1})=0\), giving infinitely many zeros.
+For part (a), if $n=3^{2k+1}$, the divisors are $1,3,3^2,\ldots,3^{2k+1}$; exactly $k+1$ are $1\pmod4$ and $k+1$ are $3\pmod4$. Hence $r_2(3^{2k+1})=0$, giving infinitely many zeros.
 
-On the other hand, for \(n=5^k\), every divisor is \(1\pmod4\), so
-\[
+On the other hand, for $n=5^k$, every divisor is $1\pmod4$, so
+$$
 r_2(5^k)=4(k+1)\longrightarrow\infty.
-\]
-Thus \(\limsup r_2(n)=\infty\).
+$$
+Thus $\limsup r_2(n)=\infty$.
 
-For part (b), if \(n=2^k\) with \(k\ge1\), the only divisors not divisible by \(4\) are \(1\) and \(2\). Therefore
-\[
+For part (b), if $n=2^k$ with $k\ge1$, the only divisors not divisible by $4$ are $1$ and $2$. Therefore
+$$
 r_4(2^k)=8(1+2)=24,
-\]
-so the value \(24\) occurs infinitely often.
+$$
+so the value $24$ occurs infinitely often.
 
-To make \(r_4(n)/n\) arbitrarily large, let
-\[
+To make $r_4(n)/n$ arbitrarily large, let
+$$
 n_k=p_1p_2\cdots p_k
-\]
-be the product of the first \(k\) odd primes. Since \(n_k\) is odd and squarefree, (1) gives
-\[
+$$
+be the product of the first $k$ odd primes. Since $n_k$ is odd and squarefree, (1) gives
+$$
 \frac{r_4(n_k)}{n_k}
 =8\frac{\prod_{j=1}^k(1+p_j)}{\prod_{j=1}^kp_j}
 =8\prod_{j=1}^k\left(1+\frac1{p_j}\right).
-\]
-The product diverges: indeed \(\log(1+1/p)\ge 1/(2p)\) for \(p\ge2\), and Euler's theorem \(\sum_p1/p=\infty\) implies
-\[
+$$
+The product diverges: indeed $\log(1+1/p)\ge 1/(2p)$ for $p\ge2$, and Euler's theorem $\sum_p1/p=\infty$ implies
+$$
 \sum_j\log\left(1+\frac1{p_j}\right)=\infty.
-\]
+$$
 Hence
-\[
+$$
 \limsup_{n\to\infty}\frac{r_4(n)}n=\infty.
-\]
+$$
 :::

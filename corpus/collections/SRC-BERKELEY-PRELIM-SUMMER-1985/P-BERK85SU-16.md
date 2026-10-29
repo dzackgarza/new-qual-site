@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 A function $f:[0,1]\to\RR$ is called upper semicontinuous if for every $x\in[0,1]$ and every $\varepsilon>0$ there exists $\delta>0$ such that
-\[
+$$
 |y-x|<\delta\quad\Longrightarrow\quad f(y)<f(x)+\varepsilon.
-\]
+$$
 Prove that an upper-semicontinuous function on $[0,1]$ is bounded above and attains its maximum at some point of $[0,1]$.
 :::
 

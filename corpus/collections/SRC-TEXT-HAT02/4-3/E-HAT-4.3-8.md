@@ -29,68 +29,68 @@ Show that a map $p: E \to B$ is a fibration if and only if the map $\pi: E^I \to
 
 ::: {.solution}
 Write
-\[
+$$
 E_p=\{(e,\alpha)\in E\times B^I:p(e)=\alpha(0)\},
 \qquad
 \pi:E^I\to E_p,
 \quad
 \pi(\gamma)=(\gamma(0),p\gamma).
-\]
+$$
 
-Suppose first that \(\pi\) has a section \(s\). Given a lifting problem
-\[
+Suppose first that $\pi$ has a section $s$. Given a lifting problem
+$$
 f:X\to E,
 \qquad
 H:X\times I\to B,
 \qquad
 H(x,0)=pf(x),
-\]
-let \(H_x(t)=H(x,t)\). Then
-\[
+$$
+let $H_x(t)=H(x,t)$. Then
+$$
 x\longmapsto(f(x),H_x)
-\]
-is a map \(X\to E_p\), and
-\[
+$$
+is a map $X\to E_p$, and
+$$
 \widetilde H(x,t)=s(f(x),H_x)(t)
-\]
+$$
 satisfies
-\[
+$$
 \widetilde H(x,0)=f(x),
 \qquad
 p\widetilde H(x,t)=H(x,t).
-\]
-Thus \(p\) has the homotopy lifting property and is a fibration.
+$$
+Thus $p$ has the homotopy lifting property and is a fibration.
 
-Conversely, suppose \(p\) is a fibration. Over \(E_p\), consider the map
-\[
+Conversely, suppose $p$ is a fibration. Over $E_p$, consider the map
+$$
 q:E_p\to E,
 \qquad q(e,\alpha)=e,
-\]
+$$
 and the homotopy
-\[
+$$
 K:E_p\times I\to B,
 \qquad K((e,\alpha),t)=\alpha(t).
-\]
-At time \(0\),
-\[
+$$
+At time $0$,
+$$
 K(-,0)=pq.
-\]
+$$
 By the homotopy lifting property there is
-\[
+$$
 \widetilde K:E_p\times I\to E
-\]
-with \(\widetilde K(-,0)=q\) and \(p\widetilde K=K\). Define
-\[
+$$
+with $\widetilde K(-,0)=q$ and $p\widetilde K=K$. Define
+$$
 s(e,\alpha)(t)=\widetilde K((e,\alpha),t).
-\]
+$$
 Then
-\[
+$$
 s(e,\alpha)(0)=e,
 \qquad
 p\,s(e,\alpha)=\alpha,
-\]
-so \(\pi s=\operatorname{id}_{E_p}\). Hence
-\[
+$$
+so $\pi s=\operatorname{id}_{E_p}$. Hence
+$$
 \boxed{p\text{ is a fibration iff }\pi\text{ has a section}.}
-\]
+$$
 :::

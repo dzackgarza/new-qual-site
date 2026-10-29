@@ -50,9 +50,9 @@ hypothesis.
 
 ::: pf-step
 By the Fundamental Theorem of Finitely Generated Abelian Groups:
-\[
+$$
 H_i(X; \ZZ) \cong \ZZ^{b_i} \oplus T_i,
-\]
+$$
 where $b_i = \operatorname{rank} H_i(X; \ZZ)$ is the $i$-th Betti number and $T_i$ is the finite torsion subgroup.
 
 ::: pf-proof
@@ -81,9 +81,9 @@ Compute $\chi(X)$ via the Universal Coefficient Theorem over $\QQ$:
 
 ::: {.pf-step #s2-1}
 By the Universal Coefficient Theorem for homology:
-\[
+$$
 H_i(X; \QQ) \cong (H_i(X; \ZZ) \otimes \QQ) \oplus \operatorname{Tor}_1(H_{i-1}(X; \ZZ), \QQ).
-\]
+$$
 
 ::: pf-proof
 Universal Coefficient Theorem with coefficients in a field.
@@ -111,9 +111,9 @@ tensoring torsion modules with $\QQ$ gives 0.
 
 ::: pf-step
 Thus $\dim_{\QQ} H_i(X; \QQ) = b_i$, and:
-\[
+$$
 \chi(X) = \sum_i (-1)^i b_i.
-\]
+$$
 
 ::: pf-proof
 Steps [](#s2-1){.pf-ref}, [](#s2-2){.pf-ref}, [](#s2-3){.pf-ref}, and definition of $\chi(X)$.
@@ -132,9 +132,9 @@ Compute $\chi_2(X)$ via the Universal Coefficient Theorem over $\ZZ_2$:
 
 ::: pf-step
 By the Universal Coefficient Theorem with coefficients in $\ZZ_2$:
-\[
+$$
 0 \to H_i(X; \ZZ) \otimes \ZZ_2 \to H_i(X; \ZZ_2) \to \operatorname{Tor}_1(H_{i-1}(X; \ZZ), \ZZ_2) \to 0.
-\]
+$$
 
 ::: pf-proof
 Universal Coefficient Theorem for homology.
@@ -144,9 +144,9 @@ Universal Coefficient Theorem for homology.
 
 ::: {.pf-step #s3-2}
 Since $\ZZ_2$ is a field, every short exact sequence of $\ZZ_2$-vector spaces splits, so:
-\[
+$$
 \dim_{\ZZ_2} H_i(X; \ZZ_2) = \dim_{\ZZ_2}(H_i(X; \ZZ) \otimes \ZZ_2) + \dim_{\ZZ_2}\operatorname{Tor}_1(H_{i-1}(X; \ZZ), \ZZ_2).
-\]
+$$
 
 ::: pf-proof
 rank-nullity / dimension additivity for split exact sequences.
@@ -201,9 +201,9 @@ Show $\chi(X) = \chi_2(X)$:
 
 ::: {.pf-step #s4-1}
 Substitute the dimension formula into the definition of $\chi_2(X)$:
-\[
+$$
 \chi_2(X) = \sum_i (-1)^i \dim_{\ZZ_2} H_i(X; \ZZ_2) = \sum_i (-1)^i (b_i + t_i + t_{i-1}) = \sum_i (-1)^i b_i + \sum_i (-1)^i t_i + \sum_i (-1)^i t_{i-1}.
-\]
+$$
 
 ::: pf-proof
 linearity of finite summation.
@@ -213,9 +213,9 @@ linearity of finite summation.
 
 ::: {.pf-step #s4-2}
 Re-indexing the third sum with $j = i - 1$:
-\[
+$$
 \sum_i (-1)^i t_{i-1} = \sum_j (-1)^{j+1} t_j = -\sum_j (-1)^j t_j.
-\]
+$$
 
 ::: pf-proof
 $(-1)^{j+1} = -(-1)^j$.
@@ -225,9 +225,9 @@ $(-1)^{j+1} = -(-1)^j$.
 
 ::: {.pf-step #s4-3}
 Thus the torsion terms cancel completely:
-\[
+$$
 \sum_i (-1)^i t_i + \sum_i (-1)^i t_{i-1} = \sum_i (-1)^i t_i - \sum_j (-1)^j t_j = 0.
-\]
+$$
 
 ::: pf-proof
 Step [](#s4-2){.pf-ref}.

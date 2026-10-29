@@ -34,11 +34,11 @@ Show that, if $H$ is a proper subgroup of $G$, then $H$ is a proper subgroup of 
 
 ::: pf-step
 
-We argue by induction on \,\(|G|\). The result is trivial for \(|G|=p\).
+We argue by induction on \,$|G|$. The result is trivial for $|G|=p$.
 
 ::: pf-proof
 
-The only proper subgroup is the trivial subgroup, whose normalizer is all of \(G\).
+The only proper subgroup is the trivial subgroup, whose normalizer is all of $G$.
 
 :::
 
@@ -46,11 +46,11 @@ The only proper subgroup is the trivial subgroup, whose normalizer is all of \(G
 
 ::: pf-step
 
-Let \(Z=Z(G)\). Since \(G\) is a nontrivial finite \(p\)-group, \(Z\neq 1\).
+Let $Z=Z(G)$. Since $G$ is a nontrivial finite $p$-group, $Z\neq 1$.
 
 ::: pf-proof
 
-The center of every nontrivial finite \(p\)-group is nontrivial.
+The center of every nontrivial finite $p$-group is nontrivial.
 
 :::
 
@@ -58,11 +58,11 @@ The center of every nontrivial finite \(p\)-group is nontrivial.
 
 ::: pf-step
 
-If \(Z\nsubseteq H\), then \(H<N_G(H)\).
+If $Z\nsubseteq H$, then $H<N_G(H)$.
 
 ::: pf-proof
 
-Choose \(z\in Z\setminus H\). Because \(z\) is central, \(zHz^{-1}=H\), so \(z\in N_G(H)\setminus H\). Hence the inclusion \(H\le N_G(H)\) is proper.
+Choose $z\in Z\setminus H$. Because $z$ is central, $zHz^{-1}=H$, so $z\in N_G(H)\setminus H$. Hence the inclusion $H\le N_G(H)$ is proper.
 
 :::
 
@@ -70,12 +70,12 @@ Choose \(z\in Z\setminus H\). Because \(z\) is central, \(zHz^{-1}=H\), so \(z\i
 
 ::: pf-step
 
-Suppose \(Z\le H\). Then \(H/Z\) is a proper subgroup of the finite \(p\)-group \(G/Z\).
+Suppose $Z\le H$. Then $H/Z$ is a proper subgroup of the finite $p$-group $G/Z$.
 
 ::: pf-proof
 
-Since \(H<G\) and \(Z\le H\), equality \(H/Z=G/Z\) would imply \(H=G\), impossible.
-Also \(G/Z\) is again a finite \(p\)-group and has smaller order than \(G\).
+Since $H<G$ and $Z\le H$, equality $H/Z=G/Z$ would imply $H=G$, impossible.
+Also $G/Z$ is again a finite $p$-group and has smaller order than $G$.
 
 :::
 
@@ -84,13 +84,13 @@ Also \(G/Z\) is again a finite \(p\)-group and has smaller order than \(G\).
 ::: {.pf-step #s5}
 
 By induction,
-\[
+$$
 H/Z<N_{G/Z}(H/Z).
-\]
+$$
 
 ::: pf-proof
 
-Apply the induction hypothesis to the proper subgroup \(H/Z<G/Z\).
+Apply the induction hypothesis to the proper subgroup $H/Z<G/Z$.
 
 :::
 
@@ -99,17 +99,17 @@ Apply the induction hypothesis to the proper subgroup \(H/Z<G/Z\).
 ::: {.pf-step #s6}
 
 We have
-\[
+$$
 N_{G/Z}(H/Z)=N_G(H)/Z.
-\]
+$$
 
 ::: pf-proof
 
-For \(g\in G\), the coset \(gZ\) normalizes \(H/Z\) iff
-\[
+For $g\in G$, the coset $gZ$ normalizes $H/Z$ iff
+$$
 (gZ)(H/Z)(gZ)^{-1}=H/Z,
-\]
-which is equivalent to \(gHg^{-1}Z=H\). Because \(Z\le H\), this is equivalent to \(gHg^{-1}=H\), i.e. \(g\in N_G(H)\).
+$$
+which is equivalent to $gHg^{-1}Z=H$. Because $Z\le H$, this is equivalent to $gHg^{-1}=H$, i.e. $g\in N_G(H)$.
 
 :::
 
@@ -117,11 +117,11 @@ which is equivalent to \(gHg^{-1}Z=H\). Because \(Z\le H\), this is equivalent t
 
 ::: pf-step
 
-Therefore \(H<N_G(H)\).
+Therefore $H<N_G(H)$.
 
 ::: pf-proof
 
-By steps [](#s5){.pf-ref} and [](#s6){.pf-ref}, \(H/Z\) is properly contained in \(N_G(H)/Z\). Hence \(H\) is properly contained in \(N_G(H)\).
+By steps [](#s5){.pf-ref} and [](#s6){.pf-ref}, $H/Z$ is properly contained in $N_G(H)/Z$. Hence $H$ is properly contained in $N_G(H)$.
 
 :::
 

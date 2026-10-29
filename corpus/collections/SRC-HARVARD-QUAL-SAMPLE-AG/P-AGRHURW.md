@@ -31,20 +31,20 @@ Prove the weak form of Riemann--Hurwitz.
 
 ::: {.solution}
 Let
-\[
+$$
 f:X\longrightarrow Y
-\]
+$$
 be a nonconstant morphism of smooth projective integral curves over $k$.
 Since $f$ is nonconstant and the curves are projective, $f$ is finite.  Write
-\[
+$$
 n=\deg f=[k(X):k(Y)].
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #cotangent-sequence}
 There is a canonical right-exact cotangent sequence
-\[
+$$
 \boxed{
 f^*\Omega_{Y/k}^1
 \xrightarrow{df}
@@ -53,67 +53,67 @@ f^*\Omega_{Y/k}^1
 \Omega_{X/Y}^1
 \longrightarrow0.
 }
-\]
+$$
 
 ::: pf-proof
 For every composable pair
-\[
+$$
 X\xrightarrow{f}Y\longrightarrow\operatorname{Spec}k,
-\]
+$$
 the transitivity sequence for Kähler differentials is
-\[
+$$
 f^*\Omega_{Y/k}^1
 \longrightarrow
 \Omega_{X/k}^1
 \longrightarrow
 \Omega_{X/Y}^1
 \longrightarrow0.
-\]
+$$
 The first arrow is the pullback map on differentials, characterized locally by
-\[
+$$
 df(f^*a)=d(f^\sharp a).
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #separable-short-exact}
 If $f$ is separable, the map
-\[
+$$
 df:f^*\Omega_{Y/k}^1\longrightarrow\Omega_{X/k}^1
-\]
+$$
 is injective.  Hence in the separable case the sequence in step [](#cotangent-sequence){.pf-ref} is short exact:
-\[
+$$
 \boxed{
 0\longrightarrow f^*\Omega_{Y/k}^1
 \longrightarrow\Omega_{X/k}^1
 \longrightarrow\Omega_{X/Y}^1
 \longrightarrow0.
 }
-\]
+$$
 
 ::: pf-proof
 Both $f^*\Omega_{Y/k}^1$ and $\Omega_{X/k}^1$ are line bundles because $X$ and $Y$ are smooth curves.
 
 At the generic point, the first map becomes
-\[
+$$
 \Omega_{k(Y)/k}^1\otimes_{k(Y)}k(X)
 \longrightarrow
 \Omega_{k(X)/k}^1.
-\]
+$$
 For the finite field extension $k(X)/k(Y)$, the transitivity sequence gives
-\[
+$$
 \Omega_{k(Y)/k}^1\otimes k(X)
 \longrightarrow
 \Omega_{k(X)/k}^1
 \longrightarrow
 \Omega_{k(X)/k(Y)}^1
 \longrightarrow0.
-\]
+$$
 Separability implies
-\[
+$$
 \Omega_{k(X)/k(Y)}^1=0,
-\]
+$$
 and both preceding vector spaces have dimension one over $k(X)$, so the generic map is an isomorphism.  Thus $df$ is a nonzero map of line bundles on the integral curve $X$.
 
 Locally, after trivializing the two line bundles, a nonzero map between them is multiplication by a nonzero element of the local domain $\mathcal O_{X,p}$, hence is injective.  Therefore $df$ is injective everywhere.
@@ -126,21 +126,21 @@ Separability is necessary for the short exact sequence.
 
 ::: pf-proof
 In characteristic $p>0$, consider the purely inseparable degree-$p$ map
-\[
+$$
 F:\PP^1_k\longrightarrow\PP^1_k,
 \qquad
 [X:Y]\longmapsto[X^p:Y^p].
-\]
+$$
 On an affine coordinate $t$,
-\[
+$$
 F^*(dt)=d(t^p)=pt^{p-1}dt=0.
-\]
+$$
 Thus the map
-\[
+$$
 F^*\Omega_{\PP^1/k}^1
 \longrightarrow
 \Omega_{\PP^1/k}^1
-\]
+$$
 is zero, not injective.  Hence a nonconstant inseparable map need not give a short exact cotangent sequence.
 :::
 
@@ -157,27 +157,27 @@ By step [](#separable-short-exact){.pf-ref}, $\Omega_{X/Y}^1$ is the cokernel of
 
 ::: {.pf-step #degree-additivity}
 Taking degrees in the short exact sequence gives
-\[
+$$
 \deg\Omega_{X/k}^1
 =\deg f^*\Omega_{Y/k}^1
 +\deg(\Omega_{X/Y}^1),
-\]
+$$
 where for a finite-length sheaf $T$ on the curve
-\[
+$$
 \deg T
 =\sum_{p\in X}
 \length_{\mathcal O_{X,p}}(T_p)[\kappa(p):k].
-\]
+$$
 
 ::: pf-proof
 For a short exact sequence on a smooth projective curve
-\[
+$$
 0\to L\to M\to T\to0
-\]
+$$
 with $L,M$ line bundles and $T$ a finite-length torsion sheaf, degree is additive:
-\[
+$$
 \deg M=\deg L+\deg T.
-\]
+$$
 Apply this to the sequence in step [](#separable-short-exact){.pf-ref}.
 :::
 
@@ -185,31 +185,31 @@ Apply this to the sequence in step [](#separable-short-exact){.pf-ref}.
 
 ::: {.pf-step #weak-riemann-hurwitz}
 Therefore the weak Riemann--Hurwitz formula is
-\[
+$$
 \boxed{
 2g_X-2
 =n(2g_Y-2)
 +\deg(\Omega_{X/Y}^1).
 }
-\]
+$$
 In particular,
-\[
+$$
 \boxed{
 2g_X-2\ge n(2g_Y-2).
 }
-\]
+$$
 
 ::: pf-proof
 For a smooth projective curve $C$,
-\[
+$$
 \deg\Omega_{C/k}^1=2g_C-2.
-\]
+$$
 Also, pullback multiplies the degree of a line bundle by the degree of the finite morphism:
-\[
+$$
 \deg f^*\Omega_{Y/k}^1
 =n\deg\Omega_{Y/k}^1
 =n(2g_Y-2).
-\]
+$$
 Substitute these identities into step [](#degree-additivity){.pf-ref}.  The inequality follows because the degree of a finite-length torsion sheaf is nonnegative.
 :::
 
@@ -217,25 +217,25 @@ Substitute these identities into step [](#degree-additivity){.pf-ref}.  The ineq
 
 ::: {.pf-step #local-riemann-hurwitz}
 The usual local Riemann--Hurwitz formula is obtained by writing
-\[
+$$
 R=\sum_{p\in X}\length_{\mathcal O_{X,p}}(\Omega_{X/Y,p}^1)\,p.
-\]
+$$
 Then
-\[
+$$
 2g_X-2=n(2g_Y-2)+\deg R.
-\]
+$$
 If all ramification is tame, then
-\[
+$$
 \length(\Omega_{X/Y,p}^1)=e_p-1,
-\]
+$$
 so, after base change to an algebraic closure (or directly when $k$ is algebraically closed),
-\[
+$$
 \boxed{
 2g_X-2
 =n(2g_Y-2)
 +\sum_{p\in X}(e_p-1).
 }
-\]
+$$
 
 ::: pf-proof
 The first equality merely rewrites the finite length in step [](#weak-riemann-hurwitz){.pf-ref} as the degree of its associated effective divisor.  The tame local calculation with uniformizers gives the coefficient $e_p-1$ at each ramification point.

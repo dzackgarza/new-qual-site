@@ -38,9 +38,9 @@ Let $\rho:G\to\operatorname{Sym}(A)$ denote the action homomorphism and fix $a\i
 ::: {.pf-step #s1}
 
 The kernel of $\rho$ is the normal core of $G_a$:
-\[
+$$
 \ker\rho=\bigcap_{\sigma\in G}\sigma G_a\sigma^{-1}.
-\]
+$$
 
 ::: pf-proof
 
@@ -65,9 +65,9 @@ Faithfulness means $\ker\rho=\{1\}$. Apply step [](#s1){.pf-ref}.
 ::: {.pf-step #s3}
 
 If $G$ is abelian, then the orbit map
-\[
+$$
 \theta:G\longrightarrow A,\qquad g\longmapsto ga
-\]
+$$
 is a bijection.
 
 ::: pf-proof
@@ -81,9 +81,9 @@ Every subgroup of an abelian group is normal, so every conjugate of $G_a$ equals
 ::: {.pf-step #s4}
 
 The conclusions of part (b) are
-\[
+$$
 \boxed{|G|=|A|,\qquad\text{and every abelian transitive subgroup of }S_n\text{ has order }n.}
-\]
+$$
 
 ::: pf-proof
 

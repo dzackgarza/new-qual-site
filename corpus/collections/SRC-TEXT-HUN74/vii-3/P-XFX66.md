@@ -31,28 +31,28 @@ Show that if $r+r\neq 0$ for all $r\neq 0 \in R$, then an $n$-linear form $B^n\t
 :::
 
 ::: {.solution}
-Let \(f:B^n\to R\) be \(n\)-linear. Here “skew-symmetric” means that
-interchanging two arguments multiplies the value by \(-1\), and “alternating”
-means that \(f\) vanishes whenever two arguments are equal.
+Let $f:B^n\to R$ be $n$-linear. Here “skew-symmetric” means that
+interchanging two arguments multiplies the value by $-1$, and “alternating”
+means that $f$ vanishes whenever two arguments are equal.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-Every alternating \(n\)-linear form is skew-symmetric.
+Every alternating $n$-linear form is skew-symmetric.
 
 ::: pf-proof
 
-Fix all arguments except positions \(i<j\), and write \(x,y\in B\) in those
+Fix all arguments except positions $i<j$, and write $x,y\in B$ in those
 positions. Alternation gives
-\[
+$$
 0=f(\ldots,x+y,\ldots,x+y,\ldots).
-\]
+$$
 Expanding by multilinearity, the two terms with equal arguments vanish, leaving
-\[
+$$
 f(\ldots,x,\ldots,y,\ldots)
 +f(\ldots,y,\ldots,x,\ldots)=0.
-\]
+$$
 Thus interchanging the two arguments changes the sign.
 
 :::
@@ -61,23 +61,23 @@ Thus interchanging the two arguments changes the sign.
 
 ::: {.pf-step #s2}
 
-Under the hypothesis \(r+r\ne0\) for every \(0\ne r\in R\), every
-skew-symmetric \(n\)-linear form is alternating.
+Under the hypothesis $r+r\ne0$ for every $0\ne r\in R$, every
+skew-symmetric $n$-linear form is alternating.
 
 ::: pf-proof
 
-Suppose two arguments, say positions \(i<j\), are equal to \(x\). Skew-symmetry
+Suppose two arguments, say positions $i<j$, are equal to $x$. Skew-symmetry
 under their transposition gives
-\[
+$$
 f(\ldots,x,\ldots,x,\ldots)
 =-f(\ldots,x,\ldots,x,\ldots).
-\]
-Hence, with \(r=f(\ldots,x,\ldots,x,\ldots)\),
-\[
+$$
+Hence, with $r=f(\ldots,x,\ldots,x,\ldots)$,
+$$
 r+r=0.
-\]
-By the stated hypothesis this forces \(r=0\). Therefore \(f\) vanishes whenever
-two arguments coincide, so \(f\) is alternating.
+$$
+By the stated hypothesis this forces $r=0$. Therefore $f$ vanishes whenever
+two arguments coincide, so $f$ is alternating.
 
 :::
 

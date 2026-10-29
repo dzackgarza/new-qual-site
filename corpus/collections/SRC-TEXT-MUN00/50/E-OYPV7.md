@@ -42,16 +42,16 @@ Show that (i) $\Rightarrow$ (ii) $\Rightarrow$ (iii) $\Rightarrow$ (iv) $\Righta
 ::: {.solution}
 We prove the implications successively.
 
-\((i)\Rightarrow(ii)\). A compact Hausdorff locally \(m\)-euclidean space has a finite atlas. Each coordinate neighborhood has a countable basis, and the union of finitely many such bases is a countable basis for \(X\). Thus \(X\) is Hausdorff, second-countable, and locally \(m\)-euclidean, hence an \(m\)-manifold.
+$(i)\Rightarrow(ii)$. A compact Hausdorff locally $m$-euclidean space has a finite atlas. Each coordinate neighborhood has a countable basis, and the union of finitely many such bases is a countable basis for $X$. Thus $X$ is Hausdorff, second-countable, and locally $m$-euclidean, hence an $m$-manifold.
 
-\((ii)\Rightarrow(iii)\). An \(m\)-manifold is Hausdorff and second-countable, hence regular (indeed locally compact Hausdorff spaces are regular). By the Urysohn metrization theorem, a regular second-countable space is metrizable.
+$(ii)\Rightarrow(iii)$. An $m$-manifold is Hausdorff and second-countable, hence regular (indeed locally compact Hausdorff spaces are regular). By the Urysohn metrization theorem, a regular second-countable space is metrizable.
 
-\((iii)\Rightarrow(iv)\). Every metrizable space is normal.
+$(iii)\Rightarrow(iv)$. Every metrizable space is normal.
 
-\((iv)\Rightarrow(v)\). A normal space is \(T_1\) by definition, so two distinct points are disjoint closed sets, and normality separates them by disjoint open sets.
+$(iv)\Rightarrow(v)$. A normal space is $T_1$ by definition, so two distinct points are disjoint closed sets, and normality separates them by disjoint open sets.
 
 Hence
-\[
+$$
 (i)\Longrightarrow(ii)\Longrightarrow(iii)\Longrightarrow(iv)\Longrightarrow(v).
-\]
+$$
 :::

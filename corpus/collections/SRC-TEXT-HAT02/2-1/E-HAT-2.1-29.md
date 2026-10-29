@@ -32,18 +32,18 @@ Show that $S^1 \times S^1$ and $S^1 \lor S^1 \lor S^2$ have isomorphic homology 
 
 ::: {.solution}
 Set
-\[
+$$
 T=S^1\times S^1,
 \qquad
 Y=S^1\vee S^1\vee S^2.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 The spaces $T$ and $Y$ have isomorphic homology groups in every degree:
-\[
+$$
 H_n(T)\cong H_n(Y)\cong
 \begin{cases}
 \ZZ,&n=0,\\
@@ -51,16 +51,16 @@ H_n(T)\cong H_n(Y)\cong
 \ZZ,&n=2,\\
 0,&n>2.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 For the torus this is the standard cellular chain computation with one $0$-cell, two $1$-cells, and one $2$-cell, all cellular boundary maps zero. For the wedge, reduced homology splits over a finite wedge:
-\[
+$$
 \widetilde H_n(Y)
 \cong
 \widetilde H_n(S^1)\oplus\widetilde H_n(S^1)\oplus\widetilde H_n(S^2),
-\]
+$$
 which gives the same groups.
 
 :::
@@ -74,9 +74,9 @@ The universal cover of $T$ is $\RR^2$, hence is contractible.
 ::: pf-proof
 
 The quotient map
-\[
+$$
 \RR^2\longrightarrow\RR^2/\ZZ^2\cong S^1\times S^1
-\]
+$$
 is the universal covering map. Therefore its universal cover has trivial reduced homology.
 
 :::
@@ -92,11 +92,11 @@ The universal cover of $Y$ has nonzero $H_2$.
 The fundamental group of $Y$ is the free group $F_2$ coming from the two circle summands. The universal cover of the $1$-skeleton $S^1\vee S^1$ is the Cayley tree of $F_2$. At every lift of the wedge point, a copy of the simply connected summand $S^2$ lifts and is attached at that vertex. Hence the universal cover of $Y$ is a tree with one $2$-sphere attached at each vertex.
 
 Collapsing the tree to a point gives a homotopy equivalence to a wedge of one $S^2$ for each vertex, so
-\[
+$$
 H_2(\widetilde Y)
 \cong
 \bigoplus_{F_2}\ZZ,
-\]
+$$
 which is nonzero.
 
 :::

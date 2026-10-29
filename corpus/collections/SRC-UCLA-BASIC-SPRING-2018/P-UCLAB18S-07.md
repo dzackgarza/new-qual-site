@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Prove that for every $p\in\NN$, the series
-\[
+$$
 \sum_{n=1}^{\infty}\frac{\sin(\pi n/p)}{n}
-\]
+$$
 converges.
 :::
 

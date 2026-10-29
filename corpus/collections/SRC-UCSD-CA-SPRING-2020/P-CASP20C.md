@@ -31,9 +31,9 @@ perpendicular to the horizontal line exactly when it is vertical, equivalently
 when $a=0$. Thus no such Möbius map exists unless $a=0$.
 
 For $a=0$, the upper half-disk is mapped to the first quadrant by
-\[
+$$
 \boxed{T(z)=\frac{1+z}{1-z}}.
-\]
+$$
 Indeed, $T$ maps the diameter $(-1,1)$ to the positive real axis and the upper
 semicircle to the positive imaginary axis, so it maps the region between them
 biholomorphically onto $Q$.

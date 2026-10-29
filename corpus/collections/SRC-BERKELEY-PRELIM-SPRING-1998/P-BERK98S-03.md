@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Let $M$ be a nonempty complete metric space and let $T:M\to M$. Suppose
-\[
+$$
 T\circ T=T^2
-\]
+$$
 is a strict contraction. Prove that $T$ has a unique fixed point in $M$.
 :::
 

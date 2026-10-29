@@ -31,26 +31,26 @@ Find all the connected covering spaces of $\RP^2 \vee \RP^2$.
 
 ::: {.solution}
 Write
-\[
+$$
 X=\RP^2\vee\RP^2
-\]
+$$
 and let $a,b$ be the two order-two generators coming from the two summands.
 Then
-\[
+$$
 \pi_1(X)=\langle a,b\mid a^2=b^2=1\rangle
 \cong C_2*C_2=:D_\infty.
-\]
+$$
 Put
-\[
+$$
 r=ab.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 Every subgroup of $D_\infty$ is one of the following types:
-\[
+$$
 1,
 \qquad
 \langle r^n\rangle\ (n\ge1),
@@ -58,28 +58,28 @@ Every subgroup of $D_\infty$ is one of the following types:
 \langle r^k a\rangle,
 \qquad
 \langle r^n,r^k a\rangle\ (n\ge1).
-\]
+$$
 
 ::: pf-proof
 
 The infinite cyclic subgroup
-\[
+$$
 \langle r\rangle\cong\ZZ
-\]
+$$
 has index two in $D_\infty$, and every element outside it is a reflection $r^k a$ of order two.
 
 Let $H\le D_\infty$.
 If $H\subseteq\langle r\rangle$, then $H=1$ or $H=\langle r^n\rangle$ for a unique $n\ge1$.
 Otherwise choose a reflection $r^k a\in H$.
 The intersection
-\[
+$$
 H\cap\langle r\rangle
-\]
+$$
 is either trivial or $\langle r^n\rangle$.
 In the first case $H=\langle r^k a\rangle$; in the second every element of $H$ is in either $\langle r^n\rangle$ or its coset by $r^k a$, so
-\[
+$$
 H=\langle r^n,r^k a\rangle.
-\]
+$$
 
 :::
 
@@ -88,18 +88,18 @@ H=\langle r^n,r^k a\rangle.
 ::: {.pf-step #s2}
 
 Up to conjugacy, the reflection subgroups give exactly two infinite-sheeted covers:
-\[
+$$
 \langle a\rangle
 \qquad\text{and}\qquad
 \langle b\rangle.
-\]
+$$
 
 ::: pf-proof
 
 Conjugation by $r^m$ changes
-\[
+$$
 r^k a\longmapsto r^{k+2m}a,
-\]
+$$
 while conjugation by a reflection changes $k$ to its negative modulo an even shift.
 Thus parity of $k$ is the only conjugacy invariant.
 Even $k$ gives the class of $a$, and odd $k$ the class of $b$.
@@ -111,23 +111,23 @@ Even $k$ gives the class of $a$, and odd $k$ the class of $b$.
 ::: {.pf-step #s3}
 
 For the finite-index dihedral subgroups
-\[
+$$
 H_{n,k}=\langle r^n,r^k a\rangle,
-\]
+$$
 the index is $n$.
 For odd $n$ there is one conjugacy class; for even $n$ there are two, represented by
-\[
+$$
 H_{n,0}
 \qquad\text{and}\qquad
 H_{n,1}.
-\]
+$$
 
 ::: pf-proof
 
 The cosets are represented by
-\[
+$$
 1,r,\dots,r^{n-1},
-\]
+$$
 so the index is $n$.
 Conjugation changes $k$ by an even integer and by sign, modulo $n$.
 If $n$ is odd, adding even integers modulo $n$ reaches every residue class, so all $k$ are conjugate.
@@ -144,13 +144,13 @@ The cyclic subgroup $\langle r^n\rangle$ has index $2n$ and gives one normal $2n
 ::: pf-proof
 
 The quotient
-\[
+$$
 D_\infty/\langle r^n\rangle
-\]
+$$
 has representatives
-\[
+$$
 1,r,\dots,r^{n-1},a,ra,\dots,r^{n-1}a,
-\]
+$$
 so it has $2n$ elements.
 The subgroup is normal because conjugation sends $r^n$ to $r^{\pm n}$.
 
@@ -166,14 +166,14 @@ For each lift of the wedge point, an $a$-orbit of two vertices is joined by a li
 ::: pf-proof
 
 Use the standard CW structure
-\[
+$$
 \RP^2=e^0\cup e^1\cup e^2,
-\]
+$$
 where the $2$-cell is attached by the degree-two word $a^2$ (or $b^2$).
 In a covering, if the monodromy involution $a$ exchanges two sheets, the two lifted $a$-edges and their lifted $2$-cells form the standard double cover
-\[
+$$
 S^2\to\RP^2
-\]
+$$
 between those two lifted wedge points.
 If $a$ fixes a sheet, the corresponding summand lifts homeomorphically as $\RP^2$ attached at that vertex.
 The same statement holds for $b$.

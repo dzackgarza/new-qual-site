@@ -38,18 +38,18 @@ Show that such a covering space in $\RR^3$ exists if there is an embedding of $M
 ::: pf-step
 
 The abelianization of the genus-$g$ surface group is
-\[
+$$
 H_1(M_g;\ZZ)
 \cong
 \pi_1(M_g)_{\mathrm{ab}}
 \cong
 \ZZ^{2g}.
-\]
+$$
 
 ::: pf-proof
 
 Using the standard presentation
-\[
+$$
 \pi_1(M_g)
 =
 \left\langle
@@ -57,7 +57,7 @@ a_1,b_1,\dots,a_g,b_g
 \ \middle|\
 [a_1,b_1]\cdots[a_g,b_g]=1
 \right\rangle,
-\]
+$$
 abelianization kills every commutator, so the single defining relation becomes trivial.
 The $2g$ generators therefore freely generate the abelianization.
 
@@ -68,16 +68,16 @@ The $2g$ generators therefore freely generate the abelianization.
 ::: pf-step
 
 For every $n\le2g$ there is a surjective homomorphism
-\[
+$$
 \phi:\pi_1(M_g)\twoheadrightarrow\ZZ^n.
-\]
+$$
 
 ::: pf-proof
 
 Compose the abelianization map
-\[
+$$
 \pi_1(M_g)\twoheadrightarrow\ZZ^{2g}
-\]
+$$
 with projection onto any $n$ coordinate factors.
 
 :::
@@ -87,28 +87,28 @@ with projection onto any $n$ coordinate factors.
 ::: pf-step
 
 Let
-\[
+$$
 H=\ker\phi.
-\]
+$$
 The connected covering corresponding to $H$ is normal and has deck group
-\[
+$$
 \ZZ^n.
-\]
+$$
 
 ::: pf-proof
 
 The kernel $H$ is normal.
 For the associated connected normal cover
-\[
+$$
 p:\widetilde M_g\to M_g,
-\]
+$$
 the deck group is
-\[
+$$
 \pi_1(M_g)/H
 \cong
 \operatorname{im}\phi
 \cong\ZZ^n.
-\]
+$$
 This proves the first assertion for every $n\le2g$.
 
 :::
@@ -118,39 +118,39 @@ This proves the first assertion for every $n\le2g$.
 ::: {.pf-step #s4}
 
 Suppose now that
-\[
+$$
 i:M_g\hookrightarrow T^3
-\]
+$$
 is an embedding such that
-\[
+$$
 i_*:\pi_1(M_g)\twoheadrightarrow\pi_1(T^3)\cong\ZZ^3
-\]
+$$
 is surjective.
 Then the inverse image
-\[
+$$
 \widetilde M_g:=\pi^{-1}(i(M_g))\subset\RR^3,
-\]
+$$
 where
-\[
+$$
 \pi:\RR^3\to T^3=\RR^3/\ZZ^3,
-\]
+$$
 is connected.
 
 ::: pf-proof
 
 The restriction
-\[
+$$
 \pi|_{\widetilde M_g}:\widetilde M_g\to M_g
-\]
+$$
 is the pullback of the universal cover of $T^3$.
 The components of this pullback correspond to cosets of the subgroup
-\[
+$$
 i_*\pi_1(M_g)
-\]
+$$
 in
-\[
+$$
 \pi_1(T^3)=\ZZ^3.
-\]
+$$
 Since $i_*$ is surjective, there is one coset, hence one component.
 
 :::
@@ -160,28 +160,28 @@ Since $i_*$ is surjective, there is one coset, hence one component.
 ::: {.pf-step #s5}
 
 The restriction
-\[
+$$
 \widetilde M_g\to M_g
-\]
+$$
 is a connected normal covering with deck group $\ZZ^3$, acting by integer translations of $\RR^3$.
 
 ::: pf-proof
 
 The universal cover
-\[
+$$
 \RR^3\to T^3
-\]
+$$
 has deck group $\ZZ^3$, acting by
-\[
+$$
 x\longmapsto x+v,
 \qquad v\in\ZZ^3.
-\]
+$$
 Since $\widetilde M_g$ is the full inverse image of $M_g$, it is invariant under every integer translation.
 By step [](#s4){.pf-ref} it is connected, so these translations are precisely the deck transformations of the restricted cover.
 Equivalently, the corresponding subgroup is
-\[
+$$
 \ker i_*.
-\]
+$$
 
 :::
 
@@ -194,7 +194,7 @@ For $g=3$, such an embedding $M_3\hookrightarrow T^3$ is obtained as the boundar
 ::: pf-proof
 
 Let
-\[
+$$
 \Gamma
 =
 (S^1\times\{1\}\times\{1\})
@@ -202,30 +202,30 @@ Let
 (\{1\}\times S^1\times\{1\})
 \cup
 (\{1\}\times\{1\}\times S^1).
-\]
+$$
 This is a wedge of three circles.
 A sufficiently small regular neighborhood $N(\Gamma)$ is a genus-three handlebody, so
-\[
+$$
 \partial N(\Gamma)\cong M_3.
-\]
+$$
 
 The inclusion
-\[
+$$
 \partial N(\Gamma)\hookrightarrow N(\Gamma)
-\]
+$$
 induces a surjection on fundamental groups: the three standard handlebody generators can be represented by loops on the boundary.
 The deformation retraction
-\[
+$$
 N(\Gamma)\simeq\Gamma
-\]
+$$
 followed by inclusion into $T^3$ sends these three generators to the three coordinate generators of
-\[
+$$
 \pi_1(T^3)=\ZZ^3.
-\]
+$$
 Hence the composite
-\[
+$$
 \pi_1(M_3)\to\pi_1(T^3)
-\]
+$$
 is surjective.
 
 :::
@@ -239,18 +239,18 @@ The resulting cover in $\RR^3$ is the boundary of a regular neighborhood of the 
 ::: pf-proof
 
 The full inverse image of $\Gamma$ under
-\[
+$$
 \RR^3\to T^3
-\]
+$$
 is the graph with vertex set $\ZZ^3$ and edges joining nearest-neighbor lattice points in the three coordinate directions.
 Pulling back the regular neighborhood $N(\Gamma)$ gives a $\ZZ^3$-periodic regular neighborhood of this cubic lattice graph.
 Therefore
-\[
+$$
 \widetilde M_3
 =
 \partial\widetilde{N(\Gamma)}
 \subset\RR^3
-\]
+$$
 is an explicit connected periodic surface, and integer translations are its deck transformations.
 
 :::
@@ -277,9 +277,9 @@ In the lifted picture in $\RR^3$, the same operation adds $g-3$ handles in every
 ::: pf-step
 
 Hence for $n=3$ and every $g\ge3$ there is an explicit connected normal cover
-\[
+$$
 \widetilde M_g\subset\RR^3
-\]
+$$
 with deck group $\ZZ^3$ acting by translations.
 
 ::: pf-proof

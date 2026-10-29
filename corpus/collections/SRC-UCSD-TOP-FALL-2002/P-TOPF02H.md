@@ -52,24 +52,24 @@ Application of the Transversality Theorem:
 
 ::: pf-step
 By the Thom Transversality Theorem (relative to $\partial D^2$), since $F(\partial D^2) = \widetilde{\gamma}(S^1) \subset S^4 \setminus K$, $F$ is homotopic relative to $\partial D^2$ to a smooth map $G: D^2 \to S^4$ that is transverse to the smoothly embedded 1-manifold $K \subset S^4$:
-\[
+$$
 G \pitchfork K.
-\]
+$$
 :::
 
 ::: pf-step
 For a transverse map $G: D^2 \to S^4$ to the submanifold $K \subset S^4$, the dimension of the intersection preimage $G^{-1}(K) \subset D^2$ is:
-\[
+$$
 \dim\left(G^{-1}(K)\right) = \dim(D^2) + \dim(K) - \dim(S^4) = 2 + 1 - 4 = -1.
-\]
+$$
 :::
 
 ::: pf-step
 A submanifold of negative dimension is empty, so $G^{-1}(K) = \emptyset$.
 Thus the image $G(D^2)$ is completely disjoint from $K$:
-\[
+$$
 G(D^2) \subseteq S^4 \setminus K.
-\]
+$$
 :::
 
 :::

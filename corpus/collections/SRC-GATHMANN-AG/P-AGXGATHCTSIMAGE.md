@@ -48,9 +48,9 @@ If $X$ is irreducible, then $f(X)$ is irreducible.
 The space $X$ is nonempty because it is irreducible, so $f(X)$ is nonempty.
 Suppose $f(X)=Y_1\cup Y_2$ with $Y_1,Y_2$ closed in $f(X)$.
 Then
-\[
+$$
 X=f^{-1}(Y_1)\cup f^{-1}(Y_2)
-\]
+$$
 with both preimages closed in $X$.
 Since $X$ is irreducible, $X=f^{-1}(Y_i)$ for some $i$.
 Then $f(X)\subseteq Y_i$, so $Y_i=f(X)$.

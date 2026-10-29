@@ -38,21 +38,21 @@ Since $A$ is not scalar, there is a vector $v\in\CC^2$ such that $v$ and $Av$ ar
 ::: pf-proof
 
 Suppose instead that $Av\in\CC v$ for every nonzero $v$. Choose a basis $e_1,e_2$. Then
-\[
+$$
 Ae_1=\lambda e_1,
 \qquad
 Ae_2=\mu e_2
-\]
+$$
 for some $\lambda,\mu\in\CC$. Since $e_1+e_2$ is also an eigenvector under the supposition,
-\[
+$$
 A(e_1+e_2)=\lambda e_1+\mu e_2
-\]
+$$
 must be a scalar multiple of $e_1+e_2$. Hence $\lambda=\mu$, so $A=\lambda I$, contradicting the hypothesis.
 
 Therefore some $v$ has $v,Av$ linearly independent. Since the space has dimension $2$, the pair
-\[
+$$
 (v,Av)
-\]
+$$
 is a basis of $\CC^2$.
 
 :::
@@ -66,25 +66,25 @@ Any matrix $X$ commuting with $A$ is of the form $\alpha I+\beta A$.
 ::: pf-proof
 
 Let $X$ satisfy $XA=AX$. Using the basis from step [](#s1){.pf-ref}, write
-\[
+$$
 Xv=\alpha v+\beta Av
-\]
+$$
 for unique $\alpha,\beta\in\CC$. Set
-\[
+$$
 Y=\alpha I+\beta A.
-\]
+$$
 Then
-\[
+$$
 Yv=\alpha v+\beta Av=Xv.
-\]
+$$
 Because both $X$ and $Y$ commute with $A$,
-\[
+$$
 Y(Av)=A(Yv)=A(Xv)=X(Av).
-\]
+$$
 Thus $X$ and $Y$ agree on the basis $v,Av$, so $X=Y$. Consequently
-\[
+$$
 \boxed{X=\alpha I+\beta A}.
-\]
+$$
 
 :::
 

@@ -34,15 +34,15 @@ Prove or disprove.
 
 ::: {.solution}
 Let
-\[
+$$
 q:D\longrightarrow D/\!\sim
-\]
+$$
 be the quotient map and let
-\[
+$$
 r:D\longrightarrow[0,1),
 \qquad
 r(z)=|z|.
-\]
+$$
 
 ::: pf
 
@@ -51,13 +51,13 @@ The modulus map $r$ is constant exactly on the equivalence classes of $\sim$.
 
 ::: pf-proof
 By definition,
-\[
+$$
 z_1\sim z_2
 \quad\Longleftrightarrow\quad
 |z_1|=|z_2|
 \quad\Longleftrightarrow\quad
 r(z_1)=r(z_2).
-\]
+$$
 Thus the fibers of $r$ are precisely the equivalence classes.
 :::
 
@@ -65,19 +65,19 @@ Thus the fibers of $r$ are precisely the equivalence classes.
 
 ::: {.pf-step #bar-r-continuous}
 There is a unique continuous map
-\[
+$$
 \bar r:D/\!\sim\longrightarrow[0,1)
-\]
+$$
 satisfying
-\[
+$$
 \bar r(q(z))=|z|.
-\]
+$$
 
 ::: pf-proof
 The modulus map $r$ is continuous and is constant on equivalence classes by step [](#r-constant-on-classes){.pf-ref}. By the universal property of the quotient topology, $r$ therefore factors uniquely as
-\[
+$$
 r=\bar r\circ q
-\]
+$$
 with $\bar r$ continuous.
 :::
 
@@ -89,13 +89,13 @@ The map $\bar r$ is bijective.
 ::: pf-proof
 For surjectivity, if $t\in[0,1)$, regard $t$ as the point $t+0i\in D$.
 Then
-\[
+$$
 \bar r(q(t))=|t|=t.
-\]
+$$
 For injectivity, if
-\[
+$$
 \bar r(q(z_1))=\bar r(q(z_2)),
-\]
+$$
 then $|z_1|=|z_2|$, so $z_1\sim z_2$ by definition and hence $q(z_1)=q(z_2)$.
 :::
 
@@ -103,35 +103,35 @@ then $|z_1|=|z_2|$, so $z_1\sim z_2$ by definition and hence $q(z_1)=q(z_2)$.
 
 ::: {.pf-step #bar-r-inverse}
 The inverse of $\bar r$ is the continuous map
-\[
+$$
 s:[0,1)\longrightarrow D/\!\sim,
 \qquad
 s(t)=q(t).
-\]
+$$
 
 ::: pf-proof
 The inclusion
-\[
+$$
 j:[0,1)\longrightarrow D,
 \qquad
 j(t)=t+0i,
-\]
+$$
 is continuous, and $q$ is continuous by definition of a quotient map.
 Thus
-\[
+$$
 s=q\circ j
-\]
+$$
 is continuous.
 Moreover,
-\[
+$$
 (\bar r\circ s)(t)=\bar r(q(t))=t.
-\]
+$$
 Conversely, for $q(z)\in D/\!\sim$,
-\[
+$$
 (s\circ\bar r)(q(z))
 =s(|z|)
 =q(|z|).
-\]
+$$
 Since $z\sim |z|$, their quotient classes agree, so $q(|z|)=q(z)$.
 Hence $s$ and $\bar r$ are mutual inverses.
 :::
@@ -140,9 +140,9 @@ Hence $s$ and $\bar r$ are mutual inverses.
 
 ::: pf-step
 Therefore
-\[
+$$
 D/\!\sim\ \cong [0,1),
-\]
+$$
 and in particular $D/\!\sim$ is Hausdorff.
 
 ::: pf-proof

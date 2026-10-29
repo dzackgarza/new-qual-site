@@ -48,20 +48,20 @@ Differentiate the Fourier transform under the integral sign.
 ::: pf-proof
 
 With the source normalization,
-\[
+$$
 \widehat f(k)=\frac1{\sqrt{2\pi}}\int_{\RR}f(x)e^{-ikx}\,dx.
-\]
-Since \(f\) vanishes outside \([-1,1]\), Cauchy--Schwarz gives \(f\in L^1\). More generally, for every integer \(\ell\ge0\),
-\[
+$$
+Since $f$ vanishes outside $[-1,1]$, Cauchy--Schwarz gives $f\in L^1$. More generally, for every integer $\ell\ge0$,
+$$
 x^\ell f(x)\in L^1(\RR).
-\]
+$$
 Therefore differentiation under the integral sign is justified for every order and yields
-\[
+$$
 \widehat f^{(\ell)}(k)
 =\frac1{\sqrt{2\pi}}
 \int_{-1}^1(-ix)^\ell f(x)e^{-ikx}\,dx.
-\]
-Hence \(\widehat f\in C^\infty(\RR)\).
+$$
+Hence $\widehat f\in C^\infty(\RR)$.
 
 :::
 
@@ -74,7 +74,7 @@ Prove the stated uniform derivative bound.
 ::: pf-proof
 
 By Cauchy--Schwarz,
-\[
+$$
 \begin{aligned}
 |\widehat f^{(\ell)}(k)|
 &\le \frac1{\sqrt{2\pi}}
@@ -82,15 +82,15 @@ By Cauchy--Schwarz,
 &=\frac1{\sqrt{2\pi}}
 \sqrt{\frac{2}{2\ell+1}}\,\|f\|_2.
 \end{aligned}
-\]
-The bound is independent of \(k\), so
-\[
+$$
+The bound is independent of $k$, so
+$$
 \boxed{
 \sup_{k\in\RR}|\widehat f^{(\ell)}(k)|
 \le
 \frac1{\sqrt{2\pi}}
 \sqrt{\frac{2}{2\ell+1}}\,\|f\|_2.}
-\]
+$$
 
 :::
 
@@ -98,29 +98,29 @@ The bound is independent of \(k\), so
 
 ::: pf-step
 
-Apply Arzelà--Ascoli to the sequence \((\widehat f_n)\).
+Apply Arzelà--Ascoli to the sequence $(\widehat f_n)$.
 
 ::: pf-proof
 
-Assume \(\|f_n\|_2\le1\). Step 2 with \(\ell=0\) gives
-\[
+Assume $\|f_n\|_2\le1$. Step 2 with $\ell=0$ gives
+$$
 \sup_n\sup_{k\in\RR}|\widehat f_n(k)|
 \le \frac1{\sqrt\pi}.
-\]
-With \(\ell=1\),
-\[
+$$
+With $\ell=1$,
+$$
 \sup_n\sup_{k\in\RR}|\widehat f_n'(k)|
 \le \frac1{\sqrt{3\pi}}.
-\]
-Thus for \(s,t\in[-M,M]\), the Mean Value Theorem gives
-\[
+$$
+Thus for $s,t\in[-M,M]$, the Mean Value Theorem gives
+$$
 |\widehat f_n(t)-\widehat f_n(s)|
 \le \frac1{\sqrt{3\pi}}|t-s|.
-\]
-So \((\widehat f_n)\) is uniformly bounded and equicontinuous on the compact interval \([-M,M]\). By the Arzelà--Ascoli theorem there is a subsequence \((\widehat f_{n_k})\) converging uniformly on \([-M,M]\) to some continuous function
-\[
+$$
+So $(\widehat f_n)$ is uniformly bounded and equicontinuous on the compact interval $[-M,M]$. By the Arzelà--Ascoli theorem there is a subsequence $(\widehat f_{n_k})$ converging uniformly on $[-M,M]$ to some continuous function
+$$
 g\in C([-M,M],\CC).
-\]
+$$
 This is exactly the required conclusion.
 
 :::

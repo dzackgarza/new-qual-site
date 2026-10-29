@@ -31,37 +31,37 @@ Let $\DD:=\{z:|z|<1\}$ denote the open unit disk. Suppose that $f(z): \DD \right
 
 ::: {.solution}
 For $c\in\DD$, write
-\[
+$$
 \phi_c(z)=\frac{z-c}{1-\overline c z}.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 If $F:\DD\to\DD$ is holomorphic and $F(c)=0$, then
-\[
+$$
 \left|\frac{F(z)}{\phi_c(z)}\right|\le1
 \qquad(z\in\DD),
-\]
+$$
 where the quotient is extended holomorphically at $z=c$.
 
 ::: pf-proof
 
 The disk automorphism $\phi_c$ sends $c$ to $0$.
 Thus
-\[
+$$
 h(w)=F(\phi_c^{-1}(w))
-\]
+$$
 is a holomorphic self-map of $\DD$ with $h(0)=0$.
 Schwarz's lemma gives
-\[
+$$
 |h(w)|\le|w|.
-\]
+$$
 Putting $w=\phi_c(z)$ yields
-\[
+$$
 |F(z)|\le|\phi_c(z)|.
-\]
+$$
 Since $F(c)=\phi_c(c)=0$ and $\phi_c$ has a simple zero at $c$, the quotient extends holomorphically there, and the displayed bound persists by continuity.
 
 :::
@@ -71,18 +71,18 @@ Since $F(c)=\phi_c(c)=0$ and $\phi_c$ has a simple zero at $c$, the quotient ext
 ::: {.pf-step #s2}
 
 The function
-\[
+$$
 g(z)=\frac{f(z)}{\phi_a(z)\phi_{-a}(z)}
-\]
+$$
 extends holomorphically to $\DD$ and satisfies $|g(z)|\le1$.
 
 ::: pf-proof
 
 Apply step [](#s1){.pf-ref} to $f$ at the zero $a$.
 Then
-\[
+$$
 f_1(z)=\frac{f(z)}{\phi_a(z)}
-\]
+$$
 is holomorphic with $|f_1|\le1$.
 Because $a\ne0$, $\phi_a(-a)\ne0$, so $f_1(-a)=0$.
 Apply step [](#s1){.pf-ref} again, now to $f_1$ at $-a$.
@@ -99,14 +99,14 @@ $|f(0)|\le|a|^2$.
 ::: pf-proof
 
 By step [](#s2){.pf-ref},
-\[
+$$
 1\ge|g(0)|
 =\frac{|f(0)|}{|\phi_a(0)|\,|\phi_{-a}(0)|}.
-\]
+$$
 Since
-\[
+$$
 |\phi_a(0)|=|a|=|\phi_{-a}(0)|,
-\]
+$$
 we obtain the claimed inequality.
 
 :::
@@ -116,21 +116,21 @@ we obtain the claimed inequality.
 ::: {.pf-step #s4}
 
 If $|f(0)|=|a|^2$, then there exists $\lambda\in\CC$ with $|\lambda|=1$ such that
-\[
+$$
 \boxed{f(z)=\lambda\phi_a(z)\phi_{-a}(z)}.
-\]
+$$
 
 ::: pf-proof
 
 Equality in step [](#s3){.pf-ref} is equivalent to
-\[
+$$
 |g(0)|=1.
-\]
+$$
 By step [](#s2){.pf-ref}, $g$ is holomorphic on $\DD$ and $|g|\le1$.
 Thus $g$ attains its maximum modulus at an interior point, so the maximum modulus principle forces
-\[
+$$
 g\equiv\lambda
-\]
+$$
 for some $|\lambda|=1$.
 Substituting the definition of $g$ gives the formula.
 
@@ -145,13 +145,13 @@ Conversely, every function in step [](#s4){.pf-ref} satisfies the hypotheses and
 ::: pf-proof
 
 Each $\phi_{\pm a}$ is an automorphism of $\DD$, so for $z\in\DD$,
-\[
+$$
 |\lambda\phi_a(z)\phi_{-a}(z)|<1.
-\]
+$$
 The product vanishes at $a$ and $-a$, and at $0$ its modulus is
-\[
+$$
 |\phi_a(0)\phi_{-a}(0)|=|a|^2.
-\]
+$$
 
 :::
 

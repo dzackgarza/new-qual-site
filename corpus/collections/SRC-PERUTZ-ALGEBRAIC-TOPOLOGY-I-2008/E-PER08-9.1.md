@@ -25,16 +25,16 @@ audit:
 ::: {.problem}
 We consider chain complexes $(C_*,\delta)$ over a field $k$ such that $\dim_kH_*(C)<\infty$.
 The Euler characteristic of $C_*$ is then defined as the alternating sum
-\[
+$$
 \chi(C_*)=\sum_p(-1)^p\dim_kH_p(C).
-\]
+$$
 
 (i) Show that when $\sum_p\dim_kC_p<\infty$, one has $\chi(C_*)=\sum_p(-1)^p\dim_kC_p$.
 
 (ii) Show that if
-\[
+$$
 \cdots\to C_p\to C_{p-1}\to C_{p-2}\to\cdots
-\]
+$$
 is an exact sequence, and $\sum_p\dim C_p<\infty$, then $\sum_p(-1)^p\dim C_p=0$.
 :::
 
@@ -50,20 +50,20 @@ Euler characteristic of a finite-dimensional chain complex equals the alternatin
 ::: pf-proof
 
 There are short exact sequences
-\[
+$$
 0\to Z_p\to C_p\to B_{p-1}\to0,
 \qquad
 0\to B_p\to Z_p\to H_p\to0.
-\]
+$$
 Hence
-\[
+$$
 \dim C_p=\dim H_p+\dim B_p+\dim B_{p-1}.
-\]
+$$
 Multiply by $(-1)^p$ and sum.
 The two boundary sums cancel after shifting the index, giving
-\[
+$$
 \sum_p(-1)^p\dim C_p=\sum_p(-1)^p\dim H_p=\chi(C_*).
-\]
+$$
 
 :::
 
@@ -77,9 +77,9 @@ The alternating sum of dimensions in a finite exact sequence is zero.
 
 Regard the exact sequence as a chain complex.
 Its homology vanishes in every degree, so step [](#s1){.pf-ref} gives
-\[
+$$
 \sum_p(-1)^p\dim C_p=0.
-\]
+$$
 
 :::
 

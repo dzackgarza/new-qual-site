@@ -22,9 +22,9 @@ Find $H ^ { * } ( K ( \ZZ , n ) ; \QQ )$
 ::: {.solution}
 
 Let
-\[
+$$
 X=K(\ZZ,n).
-\]
+$$
 Its rationalization is $K(\QQ,n)$, so the rational cohomology depends only on the parity of $n$.
 
 ::: pf
@@ -32,9 +32,9 @@ Its rationalization is $K(\QQ,n)$, so the rational cohomology depends only on th
 ::: {.pf-step #s1-1}
 
 The rationalization map
-\[
+$$
 K(\ZZ,n)\longrightarrow K(\QQ,n)
-\]
+$$
 induces an isomorphism on rational cohomology.
 
 
@@ -49,9 +49,9 @@ It induces the localization map $\ZZ\to\QQ$ on the only nonzero homotopy group a
 ::: {.pf-step #s1-2}
 
 A Sullivan minimal model for $K(\QQ,n)$ has one generator $x$ in degree $n$ and zero differential:
-\[
+$$
 (\Lambda(x_n),d=0).
-\]
+$$
 
 
 ::: pf-proof
@@ -65,22 +65,22 @@ An Eilenberg--MacLane space $K(\QQ,n)$ has exactly one nonzero rational homotopy
 ::: {.pf-step #s1-3}
 
 If $n$ is odd, graded commutativity gives
-\[
+$$
 x^2=0,
-\]
+$$
 so
-\[
+$$
 \Lambda(x_n)
-\]
+$$
 is the exterior algebra on $x_n$.
 
 
 ::: pf-proof
 
 For odd $n$,
-\[
+$$
 x^2=(-1)^{n^2}x^2=-x^2.
-\]
+$$
 Over $\QQ$, $2$ is invertible, hence $x^2=0$. Thus the free graded-commutative algebra on one odd generator is exterior.
 
 :::
@@ -90,9 +90,9 @@ Over $\QQ$, $2$ is invertible, hence $x^2=0$. Thus the free graded-commutative a
 ::: {.pf-step #s1-4}
 
 If $n$ is even, the free graded-commutative algebra on $x_n$ is the polynomial algebra
-\[
+$$
 \QQ[x_n].
-\]
+$$
 
 
 ::: pf-proof
@@ -106,7 +106,7 @@ For even $n$, graded commutativity imposes no sign change on $x^2$, so no power 
 ::: {.pf-step #s1-5}
 
 Since the differential in step [](#s1-2){.pf-ref} is zero, its cohomology is the algebra itself. Therefore
-\[
+$$
 \boxed{
 H^*(K(\ZZ,n);\QQ)
 \cong
@@ -115,7 +115,7 @@ H^*(K(\ZZ,n);\QQ)
 \QQ[x_n],&n\text{ even},
 \end{cases}
 \qquad |x_n|=n.}
-\]
+$$
 
 
 ::: pf-proof
@@ -129,10 +129,10 @@ Step [](#s1-1){.pf-ref} reduces the calculation to $K(\QQ,n)$. Step [](#s1-2){.p
 ::: pf-step
 
 In particular,
-\[
+$$
 H^*(K(\ZZ,3);\QQ)
 \cong\Lambda_{\QQ}(x_3).
-\]
+$$
 
 
 ::: pf-proof

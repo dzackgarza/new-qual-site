@@ -38,9 +38,9 @@ Give an example of a finite extension $L/K$ that is not separable.
 - Claim: since $f$ is inseparable and irreducible, $f(x) = g(x^p)$ for some $g\in k[x]$.
   - Note: write $g(x) \definedas \sum a_k x^k$, so that $f(x) = \sum a_k (x^p)^k = \sum a_k x^{pk}$.
 - This is a contradiction, since it makes $f$ reducible by using the "Freshman's dream":
-\[
+$$
 f(x) = \sum a_k x^{pk} = \qty{ \sum a_k^{1\over p} x^k}^p \definedas (h(x))^p 
-.\]
+.$$
 
 - Proof of claim: in $\ch k = p, f$ inseparable $\implies f(x) = g(x^p)$. 
   - Use that $f$ is inseparable iff $\gcd(f, f') \neq 1$, and since $f$ is irreducible this forces $f' \equiv 0$, so $ka_k = 0$ for all $k$.

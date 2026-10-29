@@ -43,33 +43,33 @@ A homotopy through loops implies conjugacy in $\pi_1(X,x)$.
 ::: pf-proof
 
 Let
-\[
+$$
 H:I\times I\to X,
 \qquad
 H(t,s)=f_t(s),
-\]
+$$
 be a homotopy through loops from $f_0$ to $f_1$. Since each $f_t$ is a loop, the two vertical boundary values agree:
-\[
+$$
 H(t,0)=H(t,1).
-\]
+$$
 Define the basepoint track
-\[
+$$
 \alpha(t)=H(t,0)=H(t,1).
-\]
+$$
 Because $f_0$ and $f_1$ are both based at $x$, $\alpha$ is itself a loop at $x$.
 
 The image under $H$ of the oriented boundary of the square is null-homotopic. Starting at $(0,0)$, that boundary is sent to
-\[
+$$
 \alpha*f_1*\alpha^{-1}*f_0^{-1}.
-\]
+$$
 Hence in $\pi_1(X,x)$,
-\[
+$$
 [\alpha][f_1][\alpha]^{-1}[f_0]^{-1}=1,
-\]
+$$
 so
-\[
+$$
 [f_1]=[\alpha]^{-1}[f_0][\alpha].
-\]
+$$
 Thus $[f_0]$ and $[f_1]$ are conjugate.
 
 :::
@@ -83,23 +83,23 @@ Conjugacy implies a homotopy through loops.
 ::: pf-proof
 
 Suppose
-\[
+$$
 [f_1]=[\alpha]^{-1}[f_0][\alpha]
-\]
+$$
 for some loop $\alpha$ at $x$. Then $f_1$ is based-homotopic to the concatenated loop
-\[
+$$
 \alpha^{-1}*f_0*\alpha.
-\]
+$$
 It therefore suffices to freely homotope $f_0$ to this conjugate.
 
 For $t\in I$, let $\alpha_t$ be the initial segment of $\alpha$ from $x$ to $\alpha(t)$,
-\[
+$$
 \alpha_t(u)=\alpha(tu).
-\]
+$$
 The loops
-\[
+$$
 \alpha_t^{-1}*f_0*\alpha_t
-\]
+$$
 are based at the moving point $\alpha(t)$ and vary continuously with $t$ after the usual linear reparametrization of the three concatenated pieces. At $t=0$ the two whiskers are constant, so the loop is a reparametrization of $f_0$; at $t=1$ it is $\alpha^{-1}*f_0*\alpha$. Reparametrizing a path through orientation-preserving linear changes of parameter gives a homotopy rel endpoints, so this family gives a homotopy through loops from $f_0$ to $\alpha^{-1}*f_0*\alpha$.
 
 Composing with the based homotopy from that loop to $f_1$ gives a homotopy through loops from $f_0$ to $f_1$.
@@ -117,19 +117,19 @@ A homotopy of maps gives a natural change-of-basepoint isomorphism on fundamenta
 ::: pf-proof
 
 Let $F_0,F_1:X\to Y$ be homotopic by
-\[
+$$
 K:I\times X\to Y.
-\]
+$$
 For each $z\in X$, the track
-\[
+$$
 \eta_z(t)=K(t,z)
-\]
+$$
 is a path from $F_0(z)$ to $F_1(z)$.
 
 If $\gamma$ is a path from $z$ to $z'$, apply the same boundary-square argument as in step [](#s1){.pf-ref} to the restriction of $K$ to $I\times\gamma$. It gives, in the fundamental groupoid of $Y$,
-\[
+$$
 [F_1\gamma]=[\eta_z]^{-1}[F_0\gamma][\eta_{z'}],
-\]
+$$
 with the evident interpretation according to the chosen concatenation convention. Equivalently, the family $[\eta_z]$ is a natural isomorphism between the functors on fundamental groupoids induced by $F_0$ and $F_1$.
 
 :::
@@ -143,47 +143,47 @@ A homotopy equivalence induces an isomorphism on fundamental groups at correspon
 ::: pf-proof
 
 Let
-\[
+$$
 F:X\to Y
-\]
+$$
 be a homotopy equivalence with homotopy inverse
-\[
+$$
 G:Y\to X.
-\]
+$$
 Choose homotopies
-\[
+$$
 GF\simeq\operatorname{id}_X,
 \qquad
 FG\simeq\operatorname{id}_Y.
-\]
+$$
 By step [](#s3){.pf-ref}, these homotopies give natural isomorphisms
-\[
+$$
 \Pi_1(G)\Pi_1(F)\cong\operatorname{id}_{\Pi_1(X)},
 \qquad
 \Pi_1(F)\Pi_1(G)\cong\operatorname{id}_{\Pi_1(Y)}.
-\]
+$$
 Hence the induced functor
-\[
+$$
 \Pi_1(F):\Pi_1(X)\to\Pi_1(Y)
-\]
+$$
 is an equivalence of groupoids, with quasi-inverse $\Pi_1(G)$.
 
 An equivalence of groupoids is fully faithful: applying the quasi-inverse and then the two natural isomorphisms gives inverse bijections on every morphism set. In particular, for each $x\in X$ it gives an isomorphism of automorphism groups
-\[
+$$
 \operatorname{Aut}_{\Pi_1(X)}(x)
 \cong
 \operatorname{Aut}_{\Pi_1(Y)}(F(x)).
-\]
+$$
 These automorphism groups are precisely
-\[
+$$
 \pi_1(X,x)
 \quad\text{and}\quad
 \pi_1(Y,F(x)).
-\]
+$$
 Therefore
-\[
+$$
 F_*:\pi_1(X,x)\xrightarrow{\cong}\pi_1(Y,F(x)).
-\]
+$$
 
 :::
 
@@ -196,17 +196,17 @@ The isomorphism is independent of the chosen basepoints up to the standard basep
 ::: pf-proof
 
 Let $x_0\in X$ and $y_0\in Y$ be arbitrary. Since $Y$ is path-connected, choose a path $\beta$ from $F(x_0)$ to $y_0$. Conjugating loops by $\beta$ gives the standard basepoint-change isomorphism
-\[
+$$
 \beta_\#:\pi_1(Y,F(x_0))\xrightarrow{\cong}\pi_1(Y,y_0).
-\]
+$$
 By step [](#s4){.pf-ref},
-\[
+$$
 F_*:\pi_1(X,x_0)\xrightarrow{\cong}\pi_1(Y,F(x_0)).
-\]
+$$
 Therefore
-\[
+$$
 \beta_\#\circ F_*:\pi_1(X,x_0)\xrightarrow{\cong}\pi_1(Y,y_0)
-\]
+$$
 is an isomorphism.
 
 If a different basepoint in $X$ is chosen, path-connectedness of $X$ gives the analogous basepoint-change isomorphism there as well. Thus a homotopy equivalence between path-connected spaces gives isomorphic fundamental groups for arbitrary choices of basepoints.

@@ -32,9 +32,9 @@ Show that any two reflections of $S^n$ across different $n$ dimensional hyperpla
 
 ::: {.solution}
 A reflection of $S^n\subset\RR^{n+1}$ across the hyperplane perpendicular to a unit vector $u$ is
-\[
+$$
 R_u(x)=x-2\langle x,u\rangle u.
-\]
+$$
 Note that $R_u=R_{-u}$.
 
 ::: pf
@@ -42,10 +42,10 @@ Note that $R_u=R_{-u}$.
 ::: pf-step
 
 Given two reflections $R_u$ and $R_v$, choose a continuous path of unit vectors
-\[
+$$
 u_t\in S^n,
 \qquad u_0=u,\quad u_1=v,
-\]
+$$
 when $n\ge1$.
 
 ::: pf-proof
@@ -59,9 +59,9 @@ The sphere $S^n$ is path connected for $n\ge1$. If necessary one may replace $v$
 ::: pf-step
 
 The formula
-\[
+$$
 H_t(x)=R_{u_t}(x)=x-2\langle x,u_t\rangle u_t
-\]
+$$
 defines a homotopy through reflections from $R_u$ to $R_v$.
 
 ::: pf-proof

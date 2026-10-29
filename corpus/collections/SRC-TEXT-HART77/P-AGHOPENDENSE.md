@@ -23,9 +23,9 @@ If $Y$ is a subset of a topological space $X$ which is irreducible in its induce
 ::: {.solution}
 **Density.** Let $U \subseteq X$ be open and nonempty with $X$ irreducible, and suppose $\cl_X(U) \neq X$.
 Then
-\[
+$$
 X = (X \sm U) \union \cl_X(U)
-\]
+$$
 writes $X$ as a union of two proper closed subsets, contradicting irreducibility.
 
 **Closures.** Suppose $Y$ is irreducible and write $\cl_X(Y) = A \union B$ with $A, B$ closed in $X$.

@@ -20,18 +20,18 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 A=\begin{pmatrix}
 0&0&0&1\\
 0&0&0&0\\
 0&0&0&0\\
 0&0&0&0
 \end{pmatrix}.
-\]
+$$
 For which positive integers $n$ does there exist a complex $4\times4$ matrix $X$ such that
-\[
+$$
 X^n=A?
-\]
+$$
 :::
 
 ::: {.solution}

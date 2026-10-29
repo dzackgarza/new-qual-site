@@ -22,9 +22,9 @@ Show that ${ \frac { d } { d x } } \log x = { \frac { 1 } { x } } - i \pi \delta
 ::: {.solution}
 
 Interpret $\log x$ as the boundary value $\log(x+i0)$ of the principal complex logarithm. Then
-\[
+$$
 \log(x+i0)=\log|x|+i\pi H(-x),
-\]
+$$
 where $H$ is the Heaviside function.
 
 ::: pf
@@ -32,23 +32,23 @@ where $H$ is the Heaviside function.
 ::: {.pf-step #s1-1}
 
 Distributionally,
-\[
+$$
 \frac d{dx}\log|x|=\operatorname{pv}\frac1x.
-\]
+$$
 
 
 ::: pf-proof
 
 For a test function $\phi$,
-\[
+$$
 \left\langle\frac d{dx}\log|x|,\phi\right\rangle
 =-\int_{-\infty}^{\infty}\log|x|\,\phi'(x)\,dx.
-\]
+$$
 Integrating by parts separately on $(-\infty,-\epsilon)$ and $(\epsilon,\infty)$ gives
-\[
+$$
 \int_{|x|>\epsilon}\frac{\phi(x)}x\,dx
 +\log\epsilon\bigl(\phi(-\epsilon)-\phi(\epsilon)\bigr).
-\]
+$$
 The last term tends to zero because $\phi(-\epsilon)-\phi(\epsilon)=O(\epsilon)$, while the first tends by definition to $\langle\operatorname{pv}(1/x),\phi\rangle$.
 
 :::
@@ -58,20 +58,20 @@ The last term tends to zero because $\phi(-\epsilon)-\phi(\epsilon)=O(\epsilon)$
 ::: {.pf-step #s1-2}
 
 Distributionally,
-\[
+$$
 \frac d{dx}H(-x)=-\delta(x).
-\]
+$$
 
 
 ::: pf-proof
 
 For every test function $\phi$,
-\[
+$$
 \left\langle\frac d{dx}H(-x),\phi\right\rangle
 =-\int_{-\infty}^{0}\phi'(x)\,dx
 =-\phi(0)
 =\langle-\delta,\phi\rangle.
-\]
+$$
 
 :::
 
@@ -80,20 +80,20 @@ For every test function $\phi$,
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{
 \frac d{dx}\log(x+i0)
 =\operatorname{pv}\frac1x-i\pi\delta(x)}.
-\]
+$$
 
 
 ::: pf-proof
 
 Differentiate the boundary-value decomposition preceding step [](#s1-1){.pf-ref} and apply steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}:
-\[
+$$
 \frac d{dx}\bigl(\log|x|+i\pi H(-x)\bigr)
 =\operatorname{pv}\frac1x-i\pi\delta(x).
-\]
+$$
 
 :::
 

@@ -45,9 +45,9 @@ Choose generators $m_1,\ldots,m_t$ for the nonzero module $M$. Since $M$ is tors
 ::: {.pf-step #s2}
 
 The $\ZZ$-module
-\[
+$$
 \boxed{N=\bigoplus_{p\text{ prime}}\ZZ/p\ZZ}
-\]
+$$
 is torsion, is not finitely generated, and has $\operatorname{Ann}_{\ZZ}(N)=(0)$.
 
 ::: pf-proof

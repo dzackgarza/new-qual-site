@@ -50,20 +50,20 @@ The same argument applies to $R/J$.
 
 ::: {.pf-step #direct-sum-noetherian}
 The direct sum
-\[
+$$
 R/I\oplus R/J
-\]
+$$
 is a Noetherian $R$-module.
 
 ::: pf-proof
 A finite direct sum of Noetherian modules is Noetherian.
 For completeness, consider the exact sequence
-\[
+$$
 0\longrightarrow R/I
 \longrightarrow R/I\oplus R/J
 \longrightarrow R/J
 \longrightarrow0,
-\]
+$$
 where the first map includes the first summand and the second projects onto the second summand.
 If the submodule and quotient in a short exact sequence are Noetherian, then the middle module is Noetherian: for any ascending chain in the middle module, the intersections with the submodule and the images in the quotient both stabilize, forcing the original chain to stabilize.
 By step [](#ri-rj-noetherian){.pf-ref}, both outer modules are Noetherian, so the direct sum is Noetherian.
@@ -73,26 +73,26 @@ By step [](#ri-rj-noetherian){.pf-ref}, both outer modules are Noetherian, so th
 
 ::: {.pf-step #injective-diagonal-map}
 There is an injective $R$-linear map
-\[
+$$
 R/(I\cap J)\longrightarrow R/I\oplus R/J.
-\]
+$$
 
 ::: pf-proof
 Define
-\[
+$$
 \phi:R\longrightarrow R/I\oplus R/J,
 \qquad
 r\longmapsto(r+I,r+J).
-\]
+$$
 Its kernel is
-\[
+$$
 \ker\phi
 =I\cap J.
-\]
+$$
 Therefore the first isomorphism theorem gives an injective $R$-linear map
-\[
+$$
 \bar\phi:R/(I\cap J)\hookrightarrow R/I\oplus R/J.
-\]
+$$
 :::
 
 :::
@@ -102,9 +102,9 @@ The $R$-module $R/(I\cap J)$ is Noetherian.
 
 ::: pf-proof
 By step [](#direct-sum-noetherian){.pf-ref}, the module
-\[
+$$
 R/I\oplus R/J
-\]
+$$
 is Noetherian.
 Every submodule of a Noetherian module is Noetherian.
 By step [](#injective-diagonal-map){.pf-ref}, $R/(I\cap J)$ is isomorphic to an $R$-submodule of this direct sum.
@@ -118,16 +118,16 @@ The quotient ring $R/(I\cap J)$ is Noetherian.
 
 ::: pf-proof
 The ideals of
-\[
+$$
 R/(I\cap J)
-\]
+$$
 are exactly its $R$-submodules, because the $R$-action factors through the quotient ring.
 By step [](#quotient-module-noetherian){.pf-ref}, every ascending chain of such $R$-submodules stabilizes.
 Therefore every ascending chain of ideals of $R/(I\cap J)$ stabilizes.
 Thus
-\[
+$$
 R/(I\cap J)
-\]
+$$
 is a Noetherian ring.
 :::
 

@@ -23,9 +23,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \frac{1}{2\pi i}\int_{|z|=1}\frac{dz}{\sin(4z)},
-\]
+$$
 where the unit circle is oriented counterclockwise.
 :::
 

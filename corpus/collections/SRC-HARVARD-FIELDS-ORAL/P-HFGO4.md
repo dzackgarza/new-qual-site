@@ -29,13 +29,13 @@ Bound $[K:F]$.
 
 ::: {.solution}
 One has
-\[
+$$
 [K:F]\le 24.
-\]
+$$
 More precisely, because $E/F$ is not normal,
-\[
+$$
 [K:F]\in\{8,12,24\}.
-\]
+$$
 
 ::: pf
 
@@ -52,9 +52,9 @@ distinct roots. The normal closure $K$ is the splitting field of this polynomial
 
 Every element of $G$ permutes the four roots, and the action is faithful because
 the roots generate $K$. Thus
-\[
+$$
 G\hookrightarrow S_4.
-\]
+$$
 The action is transitive because the minimal polynomial of $\alpha$ is
 irreducible over $F$.
 
@@ -69,9 +69,9 @@ Hence $[K:F]=|G|$ divides $24$ and is divisible by $4$.
 ::: pf-proof
 
 Since $K/F$ is Galois,
-\[
+$$
 [K:F]=|G|.
-\]
+$$
 By step [](#s1){.pf-ref}, $|G|$ divides $|S_4|=24$. Transitivity on four points implies by the
 orbit-stabilizer theorem that $4$ divides $|G|$.
 
@@ -95,9 +95,9 @@ normal by construction, contradicting the hypothesis that $E/F$ is nonnormal.
 ::: pf-step
 
 Therefore
-\[
+$$
 [K:F]\in\{8,12,24\},
-\]
+$$
 and in particular $[K:F]\le24$.
 
 ::: pf-proof

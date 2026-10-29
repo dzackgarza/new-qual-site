@@ -34,9 +34,9 @@ Construct the required proper subgroup.
 ::: pf-proof
 
 Take
-\[
+$$
 J=p\ZZ.
-\]
+$$
 This is proper because $p$ is prime.
 It contains $p$, $pq$, and $p^q$.
 
@@ -52,14 +52,14 @@ The other two listed elements are not in $J$.
 
 Because $p$ and $q$ are distinct primes, $p\nmid q$, hence $p\nmid q^p$.
 Also
-\[
+$$
 p\mid(p+q)\iff p\mid q,
-\]
+$$
 which is false.
 Therefore among
-\[
+$$
 \{p,p+q,pq,p^q,q^p\}
-\]
+$$
 exactly $p,pq,p^q$ lie in $J$.
 
 :::

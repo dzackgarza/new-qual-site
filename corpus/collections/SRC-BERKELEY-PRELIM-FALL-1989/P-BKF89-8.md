@@ -14,9 +14,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_0^\infty\frac{\log x}{1+x^2}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -29,10 +29,10 @@ Interpret the stated infinitesimal law as a constant conditional collision rate:
 ::: {.pf-step #s1-1}
 
 The survival probability satisfies
-\[
+$$
 P(t+\Delta t)
 =P(t)\bigl(1-\lambda\Delta t+o(\Delta t)\bigr).
-\]
+$$
 
 
 ::: pf-proof
@@ -46,18 +46,18 @@ For the waiting time to exceed $t+\Delta t$, it must first exceed $t$ and then n
 ::: {.pf-step #s1-2}
 
 Hence
-\[
+$$
 P'(t)=-\lambda P(t).
-\]
+$$
 
 
 ::: pf-proof
 
 Subtract $P(t)$ from step [](#s1-1){.pf-ref}, divide by $\Delta t$, and let $\Delta t\to0$:
-\[
+$$
 \frac{P(t+\Delta t)-P(t)}{\Delta t}
 =-\lambda P(t)+P(t)o(1).
-\]
+$$
 
 :::
 
@@ -66,9 +66,9 @@ Subtract $P(t)$ from step [](#s1-1){.pf-ref}, divide by $\Delta t$, and let $\De
 ::: {.pf-step #s1-3}
 
 The initial condition is
-\[
+$$
 P(0)=1.
-\]
+$$
 
 
 ::: pf-proof
@@ -82,10 +82,10 @@ Immediately after the collision at time $0$, the waiting time to the next collis
 ::: {.pf-step #s1-4}
 
 Therefore
-\[
+$$
 \boxed{P(t)=e^{-\lambda t}},
 \qquad t\geq0.
-\]
+$$
 
 
 ::: pf-proof

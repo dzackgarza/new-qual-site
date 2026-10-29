@@ -40,21 +40,21 @@ Condition (a) implies condition (b).
 ::: pf-proof
 
 Assume
-\[
+$$
 (Tx,Ty)=(x,y)
-\]
+$$
 for all $x,y\in V$.
 Taking $y=x$ gives
-\[
+$$
 \|Tx\|^2
 =(Tx,Tx)
 =(x,x)
 =\|x\|^2.
-\]
+$$
 Both norms are nonnegative, so
-\[
+$$
 \|Tx\|=\|x\|.
-\]
+$$
 
 :::
 
@@ -68,21 +68,21 @@ Condition (b) implies condition (a).
 ::: pf-proof
 
 Assume
-\[
+$$
 \|Tx\|=\|x\|
-\]
+$$
 for every $x\in V$.
 Using the real polarization identity,
-\[
+$$
 (u,v)
 =
 \frac12
 \left(
 \|u+v\|^2-\|u\|^2-\|v\|^2
 \right).
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 (Tx,Ty)
 &=
@@ -98,7 +98,7 @@ Therefore
 &=
 (x,y).
 \end{aligned}
-\]
+$$
 Thus (a) holds.
 
 :::
@@ -114,32 +114,32 @@ Condition (a) implies condition (c).
 
 Assume (a).
 For all $x,y\in V$,
-\[
+$$
 (T^*Tx,y)
 =(Tx,Ty)
 =(x,y).
-\]
+$$
 Hence
-\[
+$$
 ((T^*T-I)x,y)=0
-\]
+$$
 for every $y\in V$.
 Taking
-\[
+$$
 y=(T^*T-I)x
-\]
+$$
 gives
-\[
+$$
 \|(T^*T-I)x\|^2=0.
-\]
+$$
 Thus
-\[
+$$
 T^*Tx=x
-\]
+$$
 for every $x$, so
-\[
+$$
 \boxed{T^*T=I}.
-\]
+$$
 
 :::
 
@@ -153,11 +153,11 @@ Condition (c) implies condition (b).
 ::: pf-proof
 
 Assume
-\[
+$$
 T^*T=I.
-\]
+$$
 Then for every $x$,
-\[
+$$
 \begin{aligned}
 \|Tx\|^2
 &=
@@ -169,11 +169,11 @@ Then for every $x$,
 &=
 \|x\|^2.
 \end{aligned}
-\]
+$$
 Taking square roots gives
-\[
+$$
 \|Tx\|=\|x\|.
-\]
+$$
 
 :::
 
@@ -187,20 +187,20 @@ Condition (c) implies that $T$ is injective.
 ::: pf-proof
 
 If
-\[
+$$
 Tx=0,
-\]
+$$
 then
-\[
+$$
 x
 =
 T^*Tx
 =0.
-\]
+$$
 Thus
-\[
+$$
 \ker T=\{0\}.
-\]
+$$
 
 :::
 
@@ -209,9 +209,9 @@ Thus
 ::: {.pf-step #s1-6}
 
 Because $V$ is finite-dimensional, condition (c) implies that $T$ is invertible and
-\[
+$$
 T^{-1}=T^*.
-\]
+$$
 
 
 ::: pf-proof
@@ -219,13 +219,13 @@ T^{-1}=T^*.
 By step [](#s1-5){.pf-ref}, $T$ is injective.
 For an endomorphism of a finite-dimensional vector space, injectivity implies surjectivity, hence invertibility.
 From
-\[
+$$
 T^*T=I,
-\]
+$$
 multiply on the right by $T^{-1}$ to obtain
-\[
+$$
 T^*=T^{-1}.
-\]
+$$
 
 :::
 
@@ -239,16 +239,16 @@ Condition (c) implies condition (d).
 ::: pf-proof
 
 By step [](#s1-6){.pf-ref},
-\[
+$$
 T^*=T^{-1}.
-\]
+$$
 Therefore
-\[
+$$
 TT^*
 =
 TT^{-1}
 =I.
-\]
+$$
 
 :::
 
@@ -262,26 +262,26 @@ Condition (d) implies condition (c).
 ::: pf-proof
 
 Assume
-\[
+$$
 TT^*=I.
-\]
+$$
 Then $T^*$ is injective, hence surjective because $V$ is finite-dimensional.
 Thus $T^*$ is invertible.
 From
-\[
+$$
 TT^*=I,
-\]
+$$
 one gets
-\[
+$$
 T=(T^*)^{-1}.
-\]
+$$
 Therefore
-\[
+$$
 T^*T
 =
 T^*(T^*)^{-1}
 =I.
-\]
+$$
 
 :::
 
@@ -295,13 +295,13 @@ Hence conditions (a), (b), (c), and (d) are equivalent.
 ::: pf-proof
 
 Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove
-\[
+$$
 (a)\iff(b)\iff(c),
-\]
+$$
 and steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} prove
-\[
+$$
 (c)\iff(d).
-\]
+$$
 Therefore all four conditions are equivalent.
 
 :::

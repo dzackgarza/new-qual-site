@@ -40,9 +40,9 @@ Every complex polynomial is entire.
 ::: {.pf-step #s1-2}
 
 Therefore
-\[
+$$
 \boxed{\oint_{|z|=r}P(z)\,dz=0}.
-\]
+$$
 
 
 ::: pf-proof

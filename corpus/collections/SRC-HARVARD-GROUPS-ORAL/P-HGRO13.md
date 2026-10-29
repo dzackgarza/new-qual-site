@@ -38,19 +38,19 @@ The normalizer of $H$ is $H$ itself.
 ::: pf-proof
 
 For $g\in S_3$,
-\[
+$$
 gHg^{-1}=H
-\]
+$$
 if and only if $g(12)g^{-1}=(12)$. Conjugation relabels a transposition, so
 this is equivalent to
-\[
+$$
 (g(1)\ g(2))=(12),
-\]
+$$
 which holds exactly when $g$ preserves the set $\{1,2\}$. The only such
 permutations in $S_3$ are $e$ and $(12)$. Thus
-\[
+$$
 N_{S_3}(H)=H.
-\]
+$$
 
 :::
 
@@ -63,9 +63,9 @@ The subgroup $N_{S_3}(H)=H$ is not normal in $S_3$.
 ::: pf-proof
 
 For example,
-\[
+$$
 (123)(12)(123)^{-1}=(23)\notin H.
-\]
+$$
 Hence $(123)H(123)^{-1}\ne H$.
 
 :::

@@ -25,9 +25,9 @@ Prove that $T$ is a scalar multiple of the identity.
 ::: {.solution}
 
 Let
-\[
+$$
 n=\dim V.
-\]
+$$
 
 ::: pf
 
@@ -49,36 +49,36 @@ If $n=1$, every endomorphism is multiplication by a scalar.
 
 Assume $n\ge2$.
 For every nonzero $v\in V$,
-\[
+$$
 \bigcap_{\substack{W\subset V\\ \dim W=n-1\\ v\in W}}W
 =
 \operatorname{span}\{v\}.
-\]
+$$
 
 
 ::: pf-proof
 
 The line
-\[
+$$
 \operatorname{span}\{v\}
-\]
+$$
 is contained in every hyperplane $W$ containing $v$, so it is contained in the intersection.
 
 Conversely, let
-\[
+$$
 u\notin\operatorname{span}\{v\}.
-\]
+$$
 Since $u,v$ are linearly independent, extend them to a basis
-\[
+$$
 v,u,e_3,\ldots,e_n
-\]
+$$
 of $V$.
 Define a linear functional
-\[
+$$
 \varphi:V\to\FF
-\]
+$$
 by
-\[
+$$
 \varphi(v)=0,
 \qquad
 \varphi(u)=1,
@@ -86,11 +86,11 @@ by
 \varphi(e_j)=0
 \quad
 (j\ge3).
-\]
+$$
 Then
-\[
+$$
 W=\ker\varphi
-\]
+$$
 is a hyperplane containing $v$ but not $u$.
 Thus $u$ is not in the intersection of all such hyperplanes.
 Hence the intersection is exactly $\operatorname{span}\{v\}$.
@@ -107,32 +107,32 @@ Every one-dimensional subspace of $V$ is invariant under $T$.
 ::: pf-proof
 
 Fix nonzero
-\[
+$$
 v\in V.
-\]
+$$
 If $W$ is any hyperplane containing $v$, the hypothesis gives
-\[
+$$
 T(W)\subseteq W.
-\]
+$$
 Since
-\[
+$$
 v\in W,
-\]
+$$
 it follows that
-\[
+$$
 Tv\in W.
-\]
+$$
 This holds for every hyperplane containing $v$.
 Therefore
-\[
+$$
 Tv
 \in
 \bigcap_{\substack{W\subset V\\ \dim W=n-1\\ v\in W}}W.
-\]
+$$
 By step [](#s1-2){.pf-ref},
-\[
+$$
 Tv\in\operatorname{span}\{v\}.
-\]
+$$
 Thus the line spanned by $v$ is invariant.
 
 :::
@@ -147,9 +147,9 @@ Every nonzero vector is an eigenvector of $T$.
 ::: pf-proof
 
 By step [](#s1-3){.pf-ref}, for each nonzero $v$ there exists a scalar $\lambda_v$ such that
-\[
+$$
 Tv=\lambda_vv.
-\]
+$$
 
 :::
 
@@ -158,37 +158,37 @@ Tv=\lambda_vv.
 ::: {.pf-step #s1-5}
 
 If $u,v$ are linearly independent, then
-\[
+$$
 \lambda_u=\lambda_v.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-4){.pf-ref},
-\[
+$$
 Tu=\lambda_uu,
 \qquad
 Tv=\lambda_vv.
-\]
+$$
 The vector
-\[
+$$
 u+v
-\]
+$$
 is nonzero, so step [](#s1-4){.pf-ref} also gives
-\[
+$$
 T(u+v)=\lambda_{u+v}(u+v).
-\]
+$$
 By linearity,
-\[
+$$
 \lambda_uu+\lambda_vv
 =
 \lambda_{u+v}u+\lambda_{u+v}v.
-\]
+$$
 Since $u$ and $v$ are linearly independent,
-\[
+$$
 \lambda_u=\lambda_{u+v}=\lambda_v.
-\]
+$$
 
 :::
 
@@ -197,39 +197,39 @@ Since $u$ and $v$ are linearly independent,
 ::: {.pf-step #s1-6}
 
 There is a single scalar $\lambda$ such that
-\[
+$$
 Tv=\lambda v
-\]
+$$
 for every $v\in V$.
 
 
 ::: pf-proof
 
 Choose any nonzero
-\[
+$$
 u\in V
-\]
+$$
 and set
-\[
+$$
 \lambda=\lambda_u.
-\]
+$$
 Let $v\ne0$.
 If $v$ is linearly independent of $u$, step [](#s1-5){.pf-ref} gives
-\[
+$$
 \lambda_v=\lambda.
-\]
+$$
 If $v$ is linearly dependent on $u$, then
-\[
+$$
 v=cu
-\]
+$$
 for some nonzero scalar $c$, and
-\[
+$$
 Tv=cTu=c\lambda u=\lambda v.
-\]
+$$
 The zero vector also satisfies
-\[
+$$
 T0=\lambda0.
-\]
+$$
 
 :::
 
@@ -238,9 +238,9 @@ T0=\lambda0.
 ::: {.pf-step #s1-7}
 
 Therefore
-\[
+$$
 \boxed{T=\lambda I}.
-\]
+$$
 
 
 ::: pf-proof

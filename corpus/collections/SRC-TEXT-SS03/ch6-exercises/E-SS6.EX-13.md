@@ -29,23 +29,23 @@ Show that if the left-hand side is interpreted as $( \Gamma ^ { \prime } / \Gamm
 
 ::: {.solution}
 Start from the Weierstrass product
-\[
+$$
 \frac1{\Gamma(s)}=s e^{\gamma s}\prod_{n=1}^{\infty}\left(1+\frac{s}{n}\right)e^{-s/n}.
-\]
+$$
 On compact subsets avoiding $0,-1,-2,\ldots$, logarithmic differentiation is justified by locally uniform convergence and gives
-\[
+$$
 -\frac{\Gamma'(s)}{\Gamma(s)}
 =\frac1s+\gamma+\sum_{n=1}^{\infty}\left(\frac1{s+n}-\frac1n\right).
-\]
+$$
 Differentiating once more, again locally uniformly,
-\[
+$$
 -\left(\frac{\Gamma'}{\Gamma}\right)'(s)
 =-\frac1{s^2}-\sum_{n=1}^{\infty}\frac1{(s+n)^2}.
-\]
+$$
 Hence
-\[
+$$
 \left(\frac{\Gamma'}{\Gamma}\right)'(s)
 =\sum_{n=0}^{\infty}\frac1{(s+n)^2}.
-\]
+$$
 For positive real $s$, $(\Gamma'/\Gamma)'=d^2(\log\Gamma)/ds^2$, proving the stated formula. The same derivation holds for every complex $s\notin\{0,-1,-2,\ldots\}$, and the series is locally uniformly convergent there.
 :::

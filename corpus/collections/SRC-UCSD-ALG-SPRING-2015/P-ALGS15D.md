@@ -68,9 +68,9 @@ Then $\ker(\pi|_M)$ is free.
 ::: pf-proof
 
 We have
-\[
+$$
 \ker(\pi|_M)=M\cap(R^{n-1}\times\{0\}),
-\]
+$$
 which identifies with a submodule of $R^{n-1}$.
 It is free by the induction hypothesis.
 
@@ -94,9 +94,9 @@ Therefore $\pi(M)$ is either $0$ or isomorphic to $R$ as an $R$-module, so it is
 ::: {.pf-step #s2-3}
 
 The short exact sequence
-\[
+$$
 0\longrightarrow \ker(\pi|_M)\longrightarrow M\xrightarrow{\pi}\pi(M)\longrightarrow0
-\]
+$$
 splits.
 
 ::: pf-proof
@@ -115,9 +115,9 @@ Hence $M$ is free.
 ::: pf-proof
 
 By step [](#s2-3){.pf-ref},
-\[
+$$
 M\cong \ker(\pi|_M)\oplus \pi(M).
-\]
+$$
 Both summands are free by steps [](#s2-1){.pf-ref} and [](#s2-2){.pf-ref}, and their direct sum is free.
 This completes the induction.
 

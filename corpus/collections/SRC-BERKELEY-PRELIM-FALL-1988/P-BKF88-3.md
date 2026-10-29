@@ -17,18 +17,18 @@ audit:
 
 ::: {.problem}
 Let real-valued functions $f_1,\ldots,f_{n+1}$ on $\RR$ satisfy
-\[
+$$
 f_{k+1}'+f_k'=(k+1)f_{k+1}-kf_k,
 \qquad k=1,\ldots,n,
-\]
+$$
 and
-\[
+$$
 f_{n+1}'=-(n+1)f_{n+1}.
-\]
+$$
 Prove that for every $k$,
-\[
+$$
 \lim_{t\to\infty}f_k(t)=0.
-\]
+$$
 :::
 
 ::: {.solution}

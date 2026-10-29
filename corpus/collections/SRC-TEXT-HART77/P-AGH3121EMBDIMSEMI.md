@@ -28,9 +28,9 @@ audit:
 ::: {.problem}
 Let $Y$ be a scheme of finite type over an algebraically closed field $k$.
 Show that the function
-\[
+$$
 \varphi(y) = \dim_k (\mfm_y / \mfm_y^2)
-\]
+$$
 is upper semicontinuous on the set of closed points of $Y$.
 :::
 

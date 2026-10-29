@@ -82,9 +82,9 @@ compact subsets of the open unit disk are bounded away from the boundary.
 
 ::: pf-step
 For each $k \ge 2$, write the Blaschke factor as $1 - u_k(z)$ where:
-\[
+$$
 u_k(z) = 1 - \frac{a_k - z}{1 - a_k z} = \frac{(1 - a_k z) - (a_k - z)}{1 - a_k z} = \frac{(1 - a_k)(1 + z)}{1 - a_k z}.
-\]
+$$
 
 ::: pf-proof
 algebraic identity.
@@ -94,9 +94,9 @@ algebraic identity.
 
 ::: {.pf-step #s2-3}
 Bound $|u_k(z)|$ on $K$: for $z \in K$,
-\[
+$$
 |u_k(z)| \le \frac{(1 - a_k)(1 + |z|)}{1 - a_k |z|} \le \frac{1 - a_k}{1 - r} (1 + r) = \left(\frac{1+r}{1-r}\right) \frac{1}{k^2}.
-\]
+$$
 
 ::: pf-proof
 $|1 - a_k z| \ge 1 - a_k |z| \ge 1 - r$ and $|1+z| \le 1+|z| \le 1+r$.

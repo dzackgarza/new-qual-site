@@ -65,13 +65,13 @@ Conjugation by $d$ cyclically permutes $a,b,c$: $dad^{-1}=b$, $dbd^{-1}=c$, and 
 ::: {.pf-step #s1-3}
 
 The group $G$ has a presentation, with all generators of order three,
-\[
+$$
 \boxed{\begin{aligned}
 \langle a,b,c,d\mid\;&a^3=b^3=c^3=d^3=1,\\
 &[a,b]=[a,c]=[b,c]=1,\\
 &dad^{-1}=b,\ dbd^{-1}=c,\ dcd^{-1}=a\rangle.
 \end{aligned}}
-\]
+$$
 
 
 ::: pf-proof

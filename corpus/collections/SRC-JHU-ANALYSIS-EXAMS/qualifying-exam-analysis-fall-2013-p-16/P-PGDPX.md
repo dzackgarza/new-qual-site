@@ -32,15 +32,15 @@ $$\int_{\RR} |f(x)| \, dx = \int_0^\infty m(E_\alpha) \, d\alpha.$$
 
 ::: {.solution}
 For every $x\in\RR$,
-\[
+$$
 |f(x)|=\int_0^\infty \mathbf1_{\{\alpha<|f(x)|\}}\,d\alpha.
-\]
+$$
 The integrand
-\[
+$$
 (x,\alpha)\longmapsto \mathbf1_{\{\alpha<|f(x)|\}}
-\]
+$$
 is nonnegative and measurable on $\RR\times(0,\infty)$. Tonelli's theorem therefore gives
-\[
+$$
 \begin{aligned}
 \int_{\RR}|f(x)|\,dx
 &=\int_{\RR}\int_0^\infty
@@ -49,9 +49,9 @@ is nonnegative and measurable on $\RR\times(0,\infty)$. Tonelli's theorem theref
 \mathbf1_{\{|f(x)|>\alpha\}}\,dx\,d\alpha\\
 &=\int_0^\infty m(E_\alpha)\,d\alpha.
 \end{aligned}
-\]
+$$
 Thus
-\[
+$$
 \boxed{\int_{\RR}|f|=\int_0^\infty m(E_\alpha)\,d\alpha.}
-\]
+$$
 :::

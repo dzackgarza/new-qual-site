@@ -37,9 +37,9 @@ Prove that the characteristic of $F$ is positive.
 ::: {.pf-step #s1}
 
 Assume for contradiction that
-\[
+$$
 \operatorname{char}F=0.
-\]
+$$
 Then $E/F$ is a finite Galois extension.
 
 ::: pf-proof
@@ -55,25 +55,25 @@ Since $E$ is the splitting field of $f$, the extension $E/F$ is finite, normal, 
 ::: pf-step
 
 There exists
-\[
+$$
 \sigma\in\operatorname{Gal}(E/F)
-\]
+$$
 such that
-\[
+$$
 \sigma(\alpha)=\alpha+1.
-\]
+$$
 
 ::: pf-proof
 
 The elements $\alpha$ and $\alpha+1$ are both roots of the irreducible polynomial $f$.
 Hence they have the same minimal polynomial over $F$, and the assignment
-\[
+$$
 \alpha\longmapsto\alpha+1
-\]
+$$
 defines an $F$-isomorphism
-\[
+$$
 F(\alpha)\longrightarrow F(\alpha+1)\subseteq E.
-\]
+$$
 Because $E/F$ is normal by step [](#s1){.pf-ref}, this $F$-embedding extends to an $F$-automorphism of $E$.
 Call that automorphism $\sigma$.
 
@@ -84,22 +84,22 @@ Call that automorphism $\sigma$.
 ::: {.pf-step #s3}
 
 For every integer $k\ge0$,
-\[
+$$
 \sigma^k(\alpha)=\alpha+k.
-\]
+$$
 
 ::: pf-proof
 
 The assertion is clear for $k=0$.
 If it holds for $k$, then $\sigma$ fixes $F$, and in particular fixes the prime-field element $k\cdot1_F$.
 Therefore
-\[
+$$
 \sigma^{k+1}(\alpha)
 =\sigma(\alpha+k)
 =\sigma(\alpha)+k
 =\alpha+1+k
 =\alpha+(k+1).
-\]
+$$
 Induction proves the formula.
 
 :::
@@ -115,17 +115,17 @@ The assumption $\operatorname{char}F=0$ is impossible.
 By step [](#s1){.pf-ref}, the finite group $\operatorname{Gal}(E/F)$ contains $\sigma$.
 Let $r\ge1$ be the order of $\sigma$.
 Then
-\[
+$$
 \alpha=\sigma^r(\alpha).
-\]
+$$
 Using step [](#s3){.pf-ref},
-\[
+$$
 \alpha=\alpha+r,
-\]
+$$
 so
-\[
+$$
 r\cdot1_F=0.
-\]
+$$
 This contradicts characteristic zero.
 
 :::

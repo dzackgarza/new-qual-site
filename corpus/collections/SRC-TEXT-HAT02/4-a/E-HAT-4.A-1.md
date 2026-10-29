@@ -34,13 +34,13 @@ Let $H: Z \times I \to X$ be an unbased homotopy between $f$ and $g$, so $H(z, 0
 
 ::: pf-step
 Define the path $\gamma: I \to X$ traced by the basepoint $z_0$:
-\[
+$$
 \gamma(t) = H(z_0, t).
-\]
+$$
 Because $f, g: (Z, z_0) \to (X, x_0)$ are pointed maps, the endpoints of $\gamma$ satisfy:
-\[
+$$
 \gamma(0) = H(z_0, 0) = f(z_0) = x_0, \qquad \gamma(1) = H(z_0, 1) = g(z_0) = x_0.
-\]
+$$
 Thus $\gamma$ is a loop in $X$ based at the identity element $x_0$.
 :::
 
@@ -56,27 +56,27 @@ Construction of the basepoint-preserving homotopy:
 ::: pf-step
 Since $X$ is a topological group, multiplication $m: X \times X \to X$ and inversion $i: X \to X$ are continuous.
 Define $F: Z \times I \to X$ by:
-\[
+$$
 F(z, t) = H(z, t) \cdot (\gamma(t))^{-1}.
-\]
+$$
 As a composition of continuous functions, $F$ is continuous.
 :::
 
 ::: pf-step
 Check the initial and final time slices:
-\[
+$$
 F(z, 0) = H(z, 0) \cdot (\gamma(0))^{-1} = f(z) \cdot x_0^{-1} = f(z),
-\]
-\[
+$$
+$$
 F(z, 1) = H(z, 1) \cdot (\gamma(1))^{-1} = g(z) \cdot x_0^{-1} = g(z).
-\]
+$$
 :::
 
 ::: pf-step
 Check basepoint preservation for all $t \in [0, 1]$:
-\[
+$$
 F(z_0, t) = H(z_0, t) \cdot (\gamma(t))^{-1} = \gamma(t) \cdot (\gamma(t))^{-1} = x_0.
-\]
+$$
 Thus $F(z_0, t) = x_0$ for every $t \in I$.
 :::
 

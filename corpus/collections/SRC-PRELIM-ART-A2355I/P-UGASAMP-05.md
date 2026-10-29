@@ -16,9 +16,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_0^{10\pi}|\sin x|\,dx.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -27,19 +27,19 @@ Evaluate
 
 ::: {.pf-step #s1-1}
 
-The function \(|\sin x|\) is \(\pi\)-periodic.
+The function $|\sin x|$ is $\pi$-periodic.
 
 
 ::: pf-proof
 
-For every \(x\in\RR\),
-\[
+For every $x\in\RR$,
+$$
 |\sin(x+\pi)|
 =
 |-\sin x|
 =
 |\sin x|.
-\]
+$$
 
 :::
 
@@ -48,15 +48,15 @@ For every \(x\in\RR\),
 ::: {.pf-step #s1-2}
 
 One period has integral
-\[
+$$
 \int_0^\pi|\sin x|\,dx=2.
-\]
+$$
 
 
 ::: pf-proof
 
-On \([0,\pi]\), one has \(\sin x\ge0\), so
-\[
+On $[0,\pi]$, one has $\sin x\ge0$, so
+$$
 \int_0^\pi|\sin x|\,dx
 =
 \int_0^\pi\sin x\,dx
@@ -64,7 +64,7 @@ On \([0,\pi]\), one has \(\sin x\ge0\), so
 [-\cos x]_0^\pi
 =
 2.
-\]
+$$
 
 :::
 
@@ -72,18 +72,18 @@ On \([0,\pi]\), one has \(\sin x\ge0\), so
 
 ::: {.pf-step #s1-3}
 
-The interval \([0,10\pi]\) consists of ten consecutive periods of \(|\sin x|\).
+The interval $[0,10\pi]$ consists of ten consecutive periods of $|\sin x|$.
 
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref}, for each integer \(k=0,\ldots,9\),
-\[
+By step [](#s1-1){.pf-ref}, for each integer $k=0,\ldots,9$,
+$$
 \int_{k\pi}^{(k+1)\pi}|\sin x|\,dx
 =
 \int_0^\pi|\sin x|\,dx
 =2
-\]
+$$
 by step [](#s1-2){.pf-ref}.
 
 :::
@@ -93,22 +93,22 @@ by step [](#s1-2){.pf-ref}.
 ::: {.pf-step #s1-4}
 
 Therefore
-\[
+$$
 \boxed{\displaystyle \int_0^{10\pi}|\sin x|\,dx=20.}
-\]
+$$
 
 
 ::: pf-proof
 
 Add the ten integrals from step [](#s1-3){.pf-ref}:
-\[
+$$
 \int_0^{10\pi}|\sin x|\,dx
 =
 \sum_{k=0}^{9}\int_{k\pi}^{(k+1)\pi}|\sin x|\,dx
 =
 \sum_{k=0}^{9}2
 =20.
-\]
+$$
 
 :::
 

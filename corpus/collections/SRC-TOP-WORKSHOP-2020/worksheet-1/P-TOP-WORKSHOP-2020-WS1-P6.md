@@ -29,35 +29,35 @@ Show that for any loop $\gamma\colon I\to X$ at $x_0$ with $1\neq[\gamma]\in\pi_
 
 ::: {.solution}
 Identify
-\[
+$$
 \pi_1(X,x_0)\cong G.
-\]
-Let \(g=[\gamma]\ne1\). Since \(G\) is residually finite, there is a finite group \(H\) and a surjective homomorphism
-\[
+$$
+Let $g=[\gamma]\ne1$. Since $G$ is residually finite, there is a finite group $H$ and a surjective homomorphism
+$$
 \varphi:G\twoheadrightarrow H
-\]
-with \(\varphi(g)\ne1\). Put
-\[
+$$
+with $\varphi(g)\ne1$. Put
+$$
 K=\ker\varphi.
-\]
-Then \(K\) has finite index
-\[
+$$
+Then $K$ has finite index
+$$
 [G:K]=|H|.
-\]
+$$
 
 Because a presentation complex is a connected CW complex, the covering-space classification gives a connected based covering
-\[
+$$
 p:(\widetilde X,\widetilde x_0)\to(X,x_0)
-\]
+$$
 whose associated subgroup is
-\[
+$$
 p_*\pi_1(\widetilde X,\widetilde x_0)=K.
-\]
+$$
 The number of sheets is the subgroup index, so this cover is finite-sheeted.
 
-A based loop at \(x_0\) lifts to a loop at \(\widetilde x_0\) exactly when its homotopy class lies in \(K\). But
-\[
+A based loop at $x_0$ lifts to a loop at $\widetilde x_0$ exactly when its homotopy class lies in $K$. But
+$$
 g=[\gamma]\notin K,
-\]
-since \(\varphi(g)\ne1\). Hence the lift of \(\gamma\) beginning at \(\widetilde x_0\) does not end at \(\widetilde x_0\). Thus \(\gamma\) does not lift to a loop at the chosen basepoint.
+$$
+since $\varphi(g)\ne1$. Hence the lift of $\gamma$ beginning at $\widetilde x_0$ does not end at $\widetilde x_0$. Thus $\gamma$ does not lift to a loop at the chosen basepoint.
 :::

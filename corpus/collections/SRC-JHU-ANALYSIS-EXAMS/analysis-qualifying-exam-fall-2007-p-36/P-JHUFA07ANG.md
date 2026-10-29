@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Let $f_n$ be a sequence of measurable real-valued functions on $[0,1]$ such that
-\[
+$$
 \sum_{n=1}^\infty \int_0^1 |f_n(x)|\,dx\le1.
-\]
+$$
 Prove that $f_n\to0$ almost everywhere.
 :::
 
@@ -41,16 +41,16 @@ The series $\sum_n |f_n|$ is finite almost everywhere.
 
 ::: pf-proof
 For $N\ge1$, set
-\[
+$$
 S_N(x)=\sum_{n=1}^N |f_n(x)|.
-\]
+$$
 Then $S_N$ is measurable and $S_N\uparrow S:=\sum_{n=1}^\infty |f_n|$. By the monotone convergence theorem,
-\[
+$$
 \int_0^1 S(x)\,dx
 =\lim_{N\to\infty}\int_0^1 S_N(x)\,dx
 =\sum_{n=1}^\infty\int_0^1 |f_n(x)|\,dx
 \le1.
-\]
+$$
 Hence $S(x)<\infty$ for almost every $x\in[0,1]$; otherwise its integral would be infinite.
 :::
 
@@ -61,13 +61,13 @@ Absolute summability implies pointwise convergence to zero.
 
 ::: pf-proof
 For every $x$ for which $S(x)<\infty$, the numerical series
-\[
+$$
 \sum_{n=1}^\infty |f_n(x)|
-\]
+$$
 converges. Therefore its terms tend to zero:
-\[
+$$
 |f_n(x)|\longrightarrow0.
-\]
+$$
 Thus $f_n(x)\to0$ for almost every $x\in[0,1]$.
 :::
 

@@ -23,26 +23,26 @@ Here $B_r(a) = \{z \in \CC : |z - a| < r\}$.
 
 ::: {.solution}
 For (a), the circle mean-value property gives, for every $0<s<r$,
-\[
+$$
 u(a)=\frac1{2\pi}\int_0^{2\pi}u(a+se^{i\theta})\,d\theta.
-\]
+$$
 Multiply by $2s$ and integrate from $s=0$ to $s=r$:
-\[
+$$
 r^2u(a)
 =\frac1\pi\int_0^r\int_0^{2\pi}u(a+se^{i\theta})\,s\,d\theta\,ds.
-\]
+$$
 The double integral is the integral over $B_r(a)$, so
-\[
+$$
 u(a)=\frac1{\pi r^2}\iint_{B_r(a)}u(x+iy)\,dx\,dy.
-\]
+$$
 
 For (b), Cauchy--Schwarz gives
-\[
+$$
 |u(a)|
 \le \frac1{\pi r^2}
 \left(\pi r^2\right)^{1/2}
 \left(\iint_{B_r(a)}|u|^2\right)^{1/2}
 \le \frac{\|u\|_{L^2(\CC)}}{\sqrt\pi\,r}.
-\]
+$$
 Letting $r\to\infty$ yields $u(a)=0$. Since $a$ was arbitrary, $u\equiv0$.
 :::

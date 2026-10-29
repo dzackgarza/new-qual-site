@@ -29,41 +29,41 @@ Prove that $g(E)$ has Lebesgue measure zero.
 ::: {.solution}
 Fix $\varepsilon>0$.
 By absolute continuity of $g$, there exists $\delta>0$ such that for every finite family of pairwise disjoint intervals $(a_j,b_j)\subset[0,1]$ satisfying
-\[
+$$
 \sum_j(b_j-a_j)<\delta,
-\]
+$$
 one has
-\[
+$$
 \sum_j|g(b_j)-g(a_j)|<\varepsilon.
-\]
+$$
 
 Since $m(E)=0$, choose an open set $U\subset\RR$ with
-\[
+$$
 E\subset U
 \qquad\text{and}\qquad
 m(U\cap[0,1])<\delta.
-\]
+$$
 Write the relatively open set $U\cap[0,1]$ as a countable disjoint union of intervals $I_k$.
 For each $k$, the oscillation of $g$ on $I_k$ is at most the total variation of $g$ on $I_k$.
 For any finite set of indices and any finite partitions of the corresponding $I_k$, the total length of all partition intervals is less than $\delta$; absolute continuity therefore gives
-\[
+$$
 \sum_k V(g;I_k)\le\varepsilon,
-\]
+$$
 where the sum is understood as the supremum of its finite partial sums.
 
 Because $g(I_k)$ is an interval (possibly with endpoints omitted) and
-\[
+$$
 m^*(g(I_k))\le \operatorname{diam} g(I_k)\le V(g;I_k),
-\]
+$$
 we obtain
-\[
+$$
 m^*(g(E))
 \le \sum_k m^*(g(I_k))
 \le \sum_k V(g;I_k)
 \le\varepsilon.
-\]
+$$
 Since $\varepsilon>0$ was arbitrary,
-\[
+$$
 \boxed{m(g(E))=0.}
-\]
+$$
 :::

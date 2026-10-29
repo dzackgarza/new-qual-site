@@ -12,9 +12,9 @@ audit:
 
 ::: {.problem}
 Let $\omega$ be the cardinality of the natural numbers and let
-\[
+$$
 U=[-2,0)\cup[1,2]\subset\RR
-\]
+$$
 with the subspace topology. For the product space $U^\omega$, determine which of the following properties hold, giving a reason for each:
 
 1. connected;

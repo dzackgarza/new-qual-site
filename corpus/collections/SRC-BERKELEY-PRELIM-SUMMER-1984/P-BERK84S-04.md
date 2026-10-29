@@ -41,18 +41,18 @@ with x, $y > 0$
 
 ::: {.solution}
 Write
-\[
+$$
 A=\begin{pmatrix}a&b\\c&d\end{pmatrix},
 \qquad a,b,c,d>0.
-\]
+$$
 Its characteristic polynomial is
-\[
+$$
 p(\lambda)=\lambda^2-(a+d)\lambda+(ad-bc),
-\]
+$$
 so the larger eigenvalue is
-\[
+$$
 \lambda_+=\frac{a+d+\sqrt{(a-d)^2+4bc}}2.
-\]
+$$
 
 ::: pf
 
@@ -63,14 +63,14 @@ One has $\lambda_+>a$.
 ::: pf-proof
 
 Since $bc>0$,
-\[
+$$
 \sqrt{(a-d)^2+4bc}>|a-d|\ge a-d.
-\]
+$$
 Therefore
-\[
+$$
 \lambda_+-a
 =\frac{d-a+\sqrt{(a-d)^2+4bc}}2>0.
-\]
+$$
 
 :::
 
@@ -85,15 +85,15 @@ The vector $v=(b,\lambda_+-a)^T$ is a strictly positive eigenvector.
 By hypothesis $b>0$, and by step [](#s1){.pf-ref} also $\lambda_+-a>0$. Hence both coordinates of $v$ are strictly positive.
 
 Moreover, since $\lambda_+$ is an eigenvalue,
-\[
+$$
 (a-\lambda_+)(d-\lambda_+)-bc=0,
-\]
+$$
 which is equivalent to
-\[
+$$
 c b+(d-\lambda_+)(\lambda_+-a)=0.
-\]
+$$
 Thus
-\[
+$$
 (A-\lambda_+I)
 \begin{pmatrix}b\\ \lambda_+-a\end{pmatrix}
 =
@@ -103,11 +103,11 @@ cb+(d-\lambda_+)(\lambda_+-a)
 \end{pmatrix}
 =
 \begin{pmatrix}0\\0\end{pmatrix}.
-\]
+$$
 Therefore
-\[
+$$
 A v=\lambda_+ v,
-\]
+$$
 with both coordinates of $v$ positive, as required.
 
 :::

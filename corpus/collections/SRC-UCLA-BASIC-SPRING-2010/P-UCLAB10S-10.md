@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Problem 10. Define
-\[
+$$
 f(x,y)=\frac{xy}{\sqrt{x^2+y^2}}
-\]
+$$
 for $(x,y)\ne(0,0)$ and set $f(0,0)=0$.
 
 (a) Compute the directional derivatives of $f$ at $(0,0)$ in all directions where they exist.
@@ -32,9 +32,9 @@ Prove your answer.
 ::: {.solution}
 
 Let
-\[
+$$
 v=(a,b)\in\RR^2
-\]
+$$
 be a nonzero direction vector.
 
 ::: pf
@@ -42,7 +42,7 @@ be a nonzero direction vector.
 ::: {.pf-step #s1-1}
 
 For $t\ne0$,
-\[
+$$
 f(tv)
 =
 \frac{t^2ab}
@@ -50,17 +50,17 @@ f(tv)
 =
 |t|
 \frac{ab}{\sqrt{a^2+b^2}}.
-\]
+$$
 
 
 ::: pf-proof
 
 Substitute
-\[
+$$
 (x,y)=(ta,tb)
-\]
+$$
 into the formula for $f$:
-\[
+$$
 \begin{aligned}
 f(ta,tb)
 &=
@@ -73,7 +73,7 @@ f(ta,tb)
 |t|
 \frac{ab}{\sqrt{a^2+b^2}}.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -82,20 +82,20 @@ f(ta,tb)
 ::: {.pf-step #s1-2}
 
 The two-sided directional difference quotient at the origin is
-\[
+$$
 \frac{f(tv)-f(0,0)}{t}
 =
 \frac{|t|}{t}
 \frac{ab}{\sqrt{a^2+b^2}}.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 f(0,0)=0,
-\]
+$$
 divide the formula in step [](#s1-1){.pf-ref} by $t$.
 
 :::
@@ -105,39 +105,39 @@ divide the formula in step [](#s1-1){.pf-ref} by $t$.
 ::: {.pf-step #s1-3}
 
 If
-\[
+$$
 ab\ne0,
-\]
+$$
 the directional derivative in direction $v$ does not exist.
 
 
 ::: pf-proof
 
 For
-\[
+$$
 t>0,
-\]
+$$
 step [](#s1-2){.pf-ref} gives
-\[
+$$
 \frac{f(tv)}t
 =
 \frac{ab}{\sqrt{a^2+b^2}}.
-\]
+$$
 For
-\[
+$$
 t<0,
-\]
+$$
 it gives
-\[
+$$
 \frac{f(tv)}t
 =
 -
 \frac{ab}{\sqrt{a^2+b^2}}.
-\]
+$$
 If
-\[
+$$
 ab\ne0,
-\]
+$$
 these one-sided limits are different.
 Hence the two-sided limit does not exist.
 
@@ -148,25 +148,25 @@ Hence the two-sided limit does not exist.
 ::: {.pf-step #s1-4}
 
 If
-\[
+$$
 ab=0,
-\]
+$$
 then the directional derivative exists and equals
-\[
+$$
 \boxed{0}.
-\]
+$$
 
 
 ::: pf-proof
 
 When
-\[
+$$
 ab=0,
-\]
+$$
 the quotient in step [](#s1-2){.pf-ref} is identically zero for every
-\[
+$$
 t\ne0.
-\]
+$$
 Thus its limit is zero.
 
 :::
@@ -181,19 +181,19 @@ Therefore the directional derivatives at the origin exist exactly in the nonzero
 ::: pf-proof
 
 For a nonzero vector
-\[
+$$
 v=(a,b),
-\]
+$$
 the condition
-\[
+$$
 ab=0
-\]
+$$
 means exactly that
-\[
+$$
 a=0
 \quad\text{or}\quad
 b=0.
-\]
+$$
 Apply steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref}.
 This answers part (a).
 
@@ -210,15 +210,15 @@ If $f$ were differentiable at $(0,0)$, then its derivative would be the zero lin
 
 Differentiability implies existence of the partial derivatives, and they are the directional derivatives in the coordinate directions.
 By step [](#s1-4){.pf-ref},
-\[
+$$
 \frac{\partial f}{\partial x}(0,0)=0
 \qquad\text{and}\qquad
 \frac{\partial f}{\partial y}(0,0)=0.
-\]
+$$
 Thus the Jacobian matrix, and hence the derivative, would have to be
-\[
+$$
 Df(0,0)=0.
-\]
+$$
 
 :::
 
@@ -227,49 +227,49 @@ Df(0,0)=0.
 ::: {.pf-step #s1-7}
 
 Along the line
-\[
+$$
 y=x,
-\]
+$$
 one has
-\[
+$$
 \frac{|f(t,t)|}
 {\|(t,t)\|_2}
 =
 \frac12
-\]
+$$
 for every
-\[
+$$
 t\ne0.
-\]
+$$
 
 
 ::: pf-proof
 
 For
-\[
+$$
 t\ne0,
-\]
-\[
+$$
+$$
 f(t,t)
 =
 \frac{t^2}{\sqrt{2t^2}}
 =
 \frac{|t|}{\sqrt2}.
-\]
+$$
 Also
-\[
+$$
 \|(t,t)\|_2
 =
 \sqrt2\,|t|.
-\]
+$$
 Therefore
-\[
+$$
 \frac{|f(t,t)|}{\|(t,t)\|_2}
 =
 \frac{|t|/\sqrt2}{\sqrt2|t|}
 =
 \frac12.
-\]
+$$
 
 :::
 
@@ -284,31 +284,31 @@ The function $f$ is not differentiable at $(0,0)$.
 
 If $f$ were differentiable there, step [](#s1-6){.pf-ref} says the derivative would be zero.
 The differentiability condition would then require
-\[
+$$
 \frac{
 |f(h)-f(0,0)|
 }{
 \|h\|_2
 }
 \to0
-\]
+$$
 as
-\[
+$$
 h\to0.
-\]
+$$
 But step [](#s1-7){.pf-ref} shows that along
-\[
+$$
 h=(t,t)\to(0,0),
-\]
+$$
 this quotient is constantly
-\[
+$$
 \frac12.
-\]
+$$
 Therefore the required limit is not zero.
 Hence
-\[
+$$
 \boxed{f\text{ is not differentiable at }(0,0).}
-\]
+$$
 
 :::
 

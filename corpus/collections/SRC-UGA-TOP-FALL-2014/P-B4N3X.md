@@ -41,13 +41,13 @@ For every closed $C\subseteq Y$, the sets $A\cap f^{-1}(C)$ and $B\cap f^{-1}(C)
 ::: pf-proof
 
 Since the restrictions are continuous,
-\[
+$$
 (f|_A)^{-1}(C)=A\cap f^{-1}(C)
-\]
+$$
 is closed in the subspace $A$, and
-\[
+$$
 (f|_B)^{-1}(C)=B\cap f^{-1}(C)
-\]
+$$
 is closed in the subspace $B$.
 
 :::
@@ -75,11 +75,11 @@ For every closed $C\subseteq Y$, the set $f^{-1}(C)$ is closed in $X$.
 ::: pf-proof
 
 Using $X=A\cup B$,
-\[
+$$
 f^{-1}(C)
 =\bigl(A\cap f^{-1}(C)\bigr)
  \cup\bigl(B\cap f^{-1}(C)\bigr).
-\]
+$$
 By step [](#s2){.pf-ref}, both sets on the right are closed in $X$, so their finite union is closed.
 
 :::

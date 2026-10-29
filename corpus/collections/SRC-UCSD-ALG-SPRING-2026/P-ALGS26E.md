@@ -40,14 +40,14 @@ $$
 
 ::: {.pf-step #s1}
 
-Since \(\mathfrak aM=D\), there exist \(c_1,\dots,c_r\in\mathfrak a\) and \(x_1,\dots,x_r\in M\) such that
-\[
+Since $\mathfrak aM=D$, there exist $c_1,\dots,c_r\in\mathfrak a$ and $x_1,\dots,x_r\in M$ such that
+$$
 \sum_{i=1}^r c_i x_i=1.
-\]
+$$
 
 ::: pf-proof
 
-This is exactly the assertion \(1\in\mathfrak aM\), using the definition of the product \(\mathfrak aM\) in the problem.
+This is exactly the assertion $1\in\mathfrak aM$, using the definition of the product $\mathfrak aM$ in the problem.
 
 :::
 
@@ -55,17 +55,17 @@ This is exactly the assertion \(1\in\mathfrak aM\), using the definition of the 
 
 ::: pf-step
 
-For each \(i\), define a \(D\)-linear map
-\[
+For each $i$, define a $D$-linear map
+$$
 \varphi_i:M\longrightarrow D,
 \qquad
 \varphi_i(m)=c_i m.
-\]
+$$
 
 ::: pf-proof
 
-Because \(c_i\in\mathfrak a\) and \(m\in M\), the product \(c_i m\) belongs to \(\mathfrak aM=D\). Thus \(\varphi_i\) is well-defined.
-It is \(D\)-linear because multiplication takes place in the fraction field \(F\), which is commutative.
+Because $c_i\in\mathfrak a$ and $m\in M$, the product $c_i m$ belongs to $\mathfrak aM=D$. Thus $\varphi_i$ is well-defined.
+It is $D$-linear because multiplication takes place in the fraction field $F$, which is commutative.
 
 :::
 
@@ -73,20 +73,20 @@ It is \(D\)-linear because multiplication takes place in the fraction field \(F\
 
 ::: {.pf-step #s3}
 
-For every \(m\in M\),
-\[
+For every $m\in M$,
+$$
 m=\sum_{i=1}^r x_i\varphi_i(m).
-\]
+$$
 
 ::: pf-proof
 
 Using step [](#s1){.pf-ref},
-\[
+$$
 \sum_{i=1}^r x_i\varphi_i(m)
  =\sum_{i=1}^r x_i(c_i m)
  =m\sum_{i=1}^r c_i x_i
  =m.
-\]
+$$
 
 :::
 
@@ -94,11 +94,11 @@ Using step [](#s1){.pf-ref},
 
 ::: pf-step
 
-The module \(M\) is projective.
+The module $M$ is projective.
 
 ::: pf-proof
 
-The finite families \(x_1,\dots,x_r\in M\) and \(\varphi_1,\dots,\varphi_r\in\operatorname{Hom}_D(M,D)\) satisfy the dual-basis identity of step [](#s3){.pf-ref}. By the dual-basis criterion for projectivity, \(M\) is projective.
+The finite families $x_1,\dots,x_r\in M$ and $\varphi_1,\dots,\varphi_r\in\operatorname{Hom}_D(M,D)$ satisfy the dual-basis identity of step [](#s3){.pf-ref}. By the dual-basis criterion for projectivity, $M$ is projective.
 This proves part (a).
 
 :::
@@ -108,16 +108,16 @@ This proves part (a).
 ::: pf-step
 
 Let
-\[
+$$
 \mu:\mathfrak a\otimes_D M\longrightarrow D,
 \qquad
 \mu(c\otimes m)=cm.
-\]
-Then \(\mu\) is a well-defined surjective \(D\)-linear map.
+$$
+Then $\mu$ is a well-defined surjective $D$-linear map.
 
 ::: pf-proof
 
-The multiplication map \(\mathfrak a\times M\to D\), \((c,m)\mapsto cm\), is \(D\)-balanced, so it induces \(\mu\). Its image is precisely \(\mathfrak aM=D\), hence it is surjective.
+The multiplication map $\mathfrak a\times M\to D$, $(c,m)\mapsto cm$, is $D$-balanced, so it induces $\mu$. Its image is precisely $\mathfrak aM=D$, hence it is surjective.
 
 :::
 
@@ -125,22 +125,22 @@ The multiplication map \(\mathfrak a\times M\to D\), \((c,m)\mapsto cm\), is \(D
 
 ::: {.pf-step #s6}
 
-Define a \(D\)-linear map
-\[
+Define a $D$-linear map
+$$
 \nu:D\longrightarrow\mathfrak a\otimes_D M,
 \qquad
 \nu(d)=d\sum_{i=1}^r c_i\otimes x_i.
-\]
-Then \(\mu\circ\nu=\operatorname{id}_D\).
+$$
+Then $\mu\circ\nu=\operatorname{id}_D$.
 
 ::: pf-proof
 
 By step [](#s1){.pf-ref},
-\[
+$$
 \mu(\nu(d))
  =d\sum_{i=1}^r c_i x_i
  =d.
-\]
+$$
 
 :::
 
@@ -148,15 +148,15 @@ By step [](#s1){.pf-ref},
 
 ::: {.pf-step #s7}
 
-For every pure tensor \(c\otimes m\in\mathfrak a\otimes_D M\), one has
-\[
+For every pure tensor $c\otimes m\in\mathfrak a\otimes_D M$, one has
+$$
 \nu(\mu(c\otimes m))=c\otimes m.
-\]
+$$
 
 ::: pf-proof
 
-Since \(c_i m\in D\) for every \(i\), the tensor relations give
-\[
+Since $c_i m\in D$ for every $i$, the tensor relations give
+$$
 \begin{aligned}
 \nu(cm)
  &=cm\sum_{i=1}^r c_i\otimes x_i\\
@@ -164,8 +164,8 @@ Since \(c_i m\in D\) for every \(i\), the tensor relations give
  &=c\otimes\left(\sum_{i=1}^r (c_i m)x_i\right)\\
  &=c\otimes m,
 \end{aligned}
-\]
-where the last equality is step [](#s3){.pf-ref} applied to \(m\).
+$$
+where the last equality is step [](#s3){.pf-ref} applied to $m$.
 
 :::
 
@@ -173,14 +173,14 @@ where the last equality is step [](#s3){.pf-ref} applied to \(m\).
 
 ::: pf-step
 
-Therefore \(\mu\) and \(\nu\) are inverse isomorphisms, so
-\[
+Therefore $\mu$ and $\nu$ are inverse isomorphisms, so
+$$
 \mathfrak a\otimes_D M\cong D.
-\]
+$$
 
 ::: pf-proof
 
-By step [](#s6){.pf-ref}, \(\mu\nu=\operatorname{id}_D\). By step [](#s7){.pf-ref} and linearity, \(\nu\mu\) is the identity on every tensor, since pure tensors generate \(\mathfrak a\otimes_D M\). This proves part (b).
+By step [](#s6){.pf-ref}, $\mu\nu=\operatorname{id}_D$. By step [](#s7){.pf-ref} and linearity, $\nu\mu$ is the identity on every tensor, since pure tensors generate $\mathfrak a\otimes_D M$. This proves part (b).
 
 :::
 

@@ -38,9 +38,9 @@ For each of these three groups, calculate what a Sylow-$2$ subgroup is up to iso
 ::: {.solution}
 Let $\alpha=\sqrt[3]{2}$ and let $\omega$ be a primitive cube root of unity.
 The splitting field of $x^3-2$ is
-\[
+$$
 E=\QQ(\alpha,\omega).
-\]
+$$
 
 ::: pf
 
@@ -52,28 +52,28 @@ We have $[K:\QQ]=12$.
 
 The polynomial $x^3-2$ is Eisenstein at $2$, hence irreducible over $\QQ$.
 Its discriminant is
-\[
+$$
 -27\cdot 2^2=-108,
-\]
+$$
 which is not a square in $\QQ$.
 Therefore its splitting field $E$ has degree $6$ and
-\[
+$$
 \operatorname{Gal}(E/\QQ)\cong S_3.
-\]
+$$
 The unique subgroup of index $2$ in $S_3$ is $A_3$, so $E$ has a unique quadratic subfield.
 It is
-\[
+$$
 \QQ(\omega)=\QQ(\sqrt{-3}).
-\]
+$$
 In particular $\sqrt3\notin E$.
 Hence
-\[
+$$
 [E(\sqrt3):E]=2.
-\]
+$$
 Since $K$ is the compositum of $E$ with the splitting field $\QQ(\sqrt3)$ of $x^2-3$, we obtain
-\[
+$$
 [K:\QQ]=[K:E][E:\QQ]=2\cdot6=12.
-\]
+$$
 
 :::
 
@@ -86,15 +86,15 @@ The Sylow-$2$ subgroups of the three listed nonabelian groups of order $12$ are 
 ::: pf-proof
 
 For $A_4$, the Klein four subgroup
-\[
+$$
 V_4=\{e,(12)(34),(13)(24),(14)(23)\}
-\]
+$$
 has order $4$, so it is a Sylow-$2$ subgroup; it is normal.
 
 For the dihedral group $D_{12}=\langle r,s\mid r^6=s^2=1,\ srs=r^{-1}\rangle$, a Sylow-$2$ subgroup is
-\[
+$$
 \langle r^3,s\rangle\cong V_4.
-\]
+$$
 There are three such subgroups, so it is not normal.
 
 For $C_3\rtimes C_4$ with the generator of $C_4$ acting on $C_3$ by inversion, the displayed $C_4$ is a Sylow-$2$ subgroup.
@@ -107,20 +107,20 @@ It is not normal: if $a$ generates $C_3$ and $b$ generates $C_4$, with $bab^{-1}
 ::: pf-step
 
 We have
-\[
+$$
 \operatorname{Gal}(K/\QQ)\cong D_{12}.
-\]
+$$
 
 ::: pf-proof
 
 Both $E/\QQ$ and $\QQ(\sqrt3)/\QQ$ are Galois, and their intersection is $\QQ$ because $\sqrt3\notin E$.
 Hence restriction gives
-\[
+$$
 \operatorname{Gal}(K/\QQ)
  \cong \operatorname{Gal}(E/\QQ)\times
        \operatorname{Gal}(\QQ(\sqrt3)/\QQ)
  \cong S_3\times C_2.
-\]
+$$
 This group has a Sylow-$2$ subgroup isomorphic to $C_2\times C_2$, and it is not normal.
 By step [](#s2){.pf-ref} it is therefore neither $A_4$ nor $C_3\rtimes C_4$, so among the three listed nonabelian groups it is $D_{12}$.
 Equivalently, $S_3\times C_2\cong D_{12}$.

@@ -35,9 +35,9 @@ Structure of the total space $\Delta X$:
 
 A complex of spaces $X$ over a graph $\Gamma$ consists of a vertex space $X_v$ for each $v \in \Gamma$, an edge space $X_e$ for each edge $e \in \Gamma$, and attaching maps $f_{e, 0}: X_e \to X_{d_0(e)}$ and $f_{e, 1}: X_e \to X_{d_1(e)}$.
 The realization $\Delta X$ is the quotient space:
-\[
+$$
 \Delta X = \left( \bigsqcup_{v \in \Gamma^{(0)}} X_v \sqcup \bigsqcup_{e \in \Gamma^{(1)}} (X_e \times [0, 1]) \right) \Big/ \sim,
-\]
+$$
 where $(x, 0) \sim f_{e, 0}(x)$ and $(x, 1) \sim f_{e, 1}(x)$ for all $x \in X_e$.
 
 ::: pf-proof
@@ -87,9 +87,9 @@ interior of edge has no quotient identifications.
 ::: pf-step
 
 Using the homeomorphism $\phi_e: X_e \xrightarrow{\sim} F$, we have a trivializing homeomorphism:
-\[
+$$
 p^{-1}(U_e) = X_e \times U_e \xrightarrow{\phi_e \times \operatorname{id}} F \times U_e,
-\]
+$$
 which satisfies $\operatorname{pr}_1 \circ (\phi_e \times \operatorname{id}) = p$.
 
 ::: pf-proof
@@ -139,9 +139,9 @@ product of homeomorphisms.
 
 Under these maps, the gluing along $t = 0$ corresponds to the identity map on $X_v$.
 Thus we obtain a canonical homeomorphism:
-\[
+$$
 \psi_v: p^{-1}(U_v) \xrightarrow{\sim} X_v \times U_v \cong F \times U_v,
-\]
+$$
 which commutes with the projection $p$.
 
 ::: pf-proof

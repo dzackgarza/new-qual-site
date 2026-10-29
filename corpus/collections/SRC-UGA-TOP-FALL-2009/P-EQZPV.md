@@ -32,32 +32,32 @@ Calculate $H_*(X;\ZZ)$.
 
 ::: {.solution}
 Let
-\[
+$$
 A=\{p_1,p_2,p_3\}\subset S^2
-\]
+$$
 be the three points that are identified.
 Then
-\[
+$$
 X=S^2/A.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #quotient-iso}
 For every $k\ge1$,
-\[
+$$
 \widetilde H_k(X;\ZZ)\cong H_k(S^2,A;\ZZ).
-\]
+$$
 
 ::: pf-proof
 Choose a CW structure on $S^2$ in which the three points $p_1,p_2,p_3$ are $0$-cells.
 Then $A$ is a subcomplex.
 For a CW pair, collapsing the subcomplex gives the quotient isomorphism
-\[
+$$
 \widetilde H_k(S^2/A;\ZZ)
 \cong
 H_k(S^2,A;\ZZ)
-\]
+$$
 for every $k$.
 Since $S^2/A=X$, this gives the claim.
 :::
@@ -66,13 +66,13 @@ Since $S^2/A=X$, this gives the claim.
 
 ::: {.pf-step #h2-relative}
 One has
-\[
+$$
 H_2(S^2,A;\ZZ)\cong\ZZ.
-\]
+$$
 
 ::: pf-proof
 The degree-$2$ portion of the long exact sequence of the pair $(S^2,A)$ is
-\[
+$$
 H_2(A)
 \longrightarrow
 H_2(S^2)
@@ -80,32 +80,32 @@ H_2(S^2)
 H_2(S^2,A)
 \longrightarrow
 H_1(A).
-\]
+$$
 Because $A$ is a discrete set of three points,
-\[
+$$
 H_2(A)=H_1(A)=0,
-\]
+$$
 while
-\[
+$$
 H_2(S^2)\cong\ZZ.
-\]
+$$
 Exactness therefore gives
-\[
+$$
 H_2(S^2,A)\cong\ZZ.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #h1-relative}
 One has
-\[
+$$
 H_1(S^2,A;\ZZ)\cong\ZZ^2.
-\]
+$$
 
 ::: pf-proof
 The next portion of the long exact sequence is
-\[
+$$
 0=H_1(S^2)
 \longrightarrow
 H_1(S^2,A)
@@ -116,31 +116,31 @@ H_0(S^2)
 \longrightarrow
 H_0(S^2,A)
 \longrightarrow0.
-\]
+$$
 Here
-\[
+$$
 H_0(A)\cong\ZZ^3,
 \qquad
 H_0(S^2)\cong\ZZ.
-\]
+$$
 Since all three points of $A$ lie in the same path component of $S^2$, the inclusion induces
-\[
+$$
 i_*:\ZZ^3\longrightarrow\ZZ,
 \qquad
 (a,b,c)\longmapsto a+b+c.
-\]
+$$
 This map is surjective and its kernel is
-\[
+$$
 \{(a,b,c)\in\ZZ^3:a+b+c=0\}
 \cong\ZZ^2.
-\]
+$$
 Exactness therefore gives
-\[
+$$
 H_1(S^2,A)
 \cong
 \ker i_*
 \cong\ZZ^2.
-\]
+$$
 It also gives $H_0(S^2,A)=0$.
 :::
 
@@ -148,13 +148,13 @@ It also gives $H_0(S^2,A)=0$.
 
 ::: {.pf-step #high-degree-vanishing}
 For every $k\ge3$,
-\[
+$$
 H_k(S^2,A;\ZZ)=0.
-\]
+$$
 
 ::: pf-proof
 For $k\ge3$, the relevant part of the long exact sequence is
-\[
+$$
 H_k(A)
 \longrightarrow
 H_k(S^2)
@@ -162,7 +162,7 @@ H_k(S^2)
 H_k(S^2,A)
 \longrightarrow
 H_{k-1}(A).
-\]
+$$
 All three outside groups vanish: a finite discrete space has no positive-degree homology, and $S^2$ has no homology above degree $2$.
 Thus the middle relative group vanishes.
 :::
@@ -171,15 +171,15 @@ Thus the middle relative group vanishes.
 
 ::: {.pf-step #h0-computation}
 The quotient $X$ is path connected, so
-\[
+$$
 H_0(X;\ZZ)\cong\ZZ.
-\]
+$$
 
 ::: pf-proof
 The sphere $S^2$ is path connected, and the quotient map
-\[
+$$
 S^2\longrightarrow X
-\]
+$$
 is continuous and surjective.
 The continuous image of a path-connected space is path connected.
 Therefore $X$ is path connected, and its zeroth homology is $\ZZ$.
@@ -189,7 +189,7 @@ Therefore $X$ is path connected, and its zeroth homology is $\ZZ$.
 
 ::: pf-step
 Hence
-\[
+$$
 \boxed{
 H_k(X;\ZZ)
 \cong
@@ -198,7 +198,7 @@ H_k(X;\ZZ)
 \ZZ^2,&k=1,\\
 0,&\text{otherwise}.
 \end{cases}}
-\]
+$$
 
 ::: pf-proof
 For $k\ge1$, combine the quotient isomorphism in step [](#quotient-iso){.pf-ref} with the relative-homology computations in step [](#h2-relative){.pf-ref}, step [](#h1-relative){.pf-ref} and step [](#high-degree-vanishing){.pf-ref}.

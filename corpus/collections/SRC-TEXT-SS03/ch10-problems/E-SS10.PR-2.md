@@ -54,119 +54,119 @@ Strictly speaking, the matrices associated to $S$ and $T _ { 1 }$ generate the p
 :::
 
 ::: {.solution}
-Let \(\Gamma=\langle S,T_1\rangle\), where
-\[
+Let $\Gamma=\langle S,T_1\rangle$, where
+$$
 S(\tau)=-\frac1\tau,
 \qquad
 T_1(\tau)=\tau+1.
-\]
+$$
 For
-\[
+$$
 g=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\operatorname{SL}_2(\ZZ),
-\]
+$$
 a direct calculation gives
-\[
+$$
 \Im(g\tau)=\frac{\Im\tau}{|c\tau+d|^2}.
 \tag{1}
-\]
+$$
 
-For part (a), start with \(z=\tau\in\halfplane\). Translate by an integral power of \(T_1\) so that
-\[
+For part (a), start with $z=\tau\in\halfplane$. Translate by an integral power of $T_1$ so that
+$$
 |\Re z|\le\frac12.
-\]
-If \(|z|\ge1\), then \(z\in\mathcal F_1\). If \(|z|<1\), apply \(S\). Since
-\[
+$$
+If $|z|\ge1$, then $z\in\mathcal F_1$. If $|z|<1$, apply $S$. Since
+$$
 \Im(Sz)=\frac{\Im z}{|z|^2}>\Im z,
-\]
-this strictly increases the imaginary part; then translate again into the strip \(|\Re z|\le1/2\), and repeat.
+$$
+this strictly increases the imaginary part; then translate again into the strip $|\Re z|\le1/2$, and repeat.
 
 The process must terminate. Indeed every intermediate point has the form
-\[
+$$
 z=\gamma\tau,
 \qquad \gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\Gamma,
-\]
+$$
 and its imaginary part never decreases. Thus by (1), for every stage after the first,
-\[
+$$
 |c\tau+d|^2\le1.
-\]
-There are only finitely many integer pairs \((c,d)\) satisfying this inequality: if \(\tau=x+iy\), then \(|c|y\le1\), so only finitely many \(c\) occur, and then \(|cx+d|\le1\) leaves only finitely many \(d\). Since every application of \(S\) strictly increases the imaginary part, infinitely many such steps are impossible. Hence the algorithm stops at a point of \(\mathcal F_1\).
+$$
+There are only finitely many integer pairs $(c,d)$ satisfying this inequality: if $\tau=x+iy$, then $|c|y\le1$, so only finitely many $c$ occur, and then $|cx+d|\le1$ leaves only finitely many $d$. Since every application of $S$ strictly increases the imaginary part, infinitely many such steps are impossible. Hence the algorithm stops at a point of $\mathcal F_1$.
 
-For part (b), suppose \(\tau,\tau'\in\mathcal F_1\) and \(\tau'=g\tau\). Since congruence is symmetric, interchange \(\tau\) and \(\tau'\) if necessary so that
-\[
+For part (b), suppose $\tau,\tau'\in\mathcal F_1$ and $\tau'=g\tau$. Since congruence is symmetric, interchange $\tau$ and $\tau'$ if necessary so that
+$$
 \Im\tau'\ge\Im\tau.
-\]
+$$
 Equation (1) then gives
-\[
+$$
 |c\tau+d|\le1.
 \tag{2}
-\]
-Write \(\tau=x+iy\). From \(|x|\le1/2\) and \(|\tau|\ge1\),
-\[
+$$
+Write $\tau=x+iy$. From $|x|\le1/2$ and $|\tau|\ge1$,
+$$
 y\ge\frac{\sqrt3}{2}.
-\]
-Thus (2) implies \(|c|\le1\).
+$$
+Thus (2) implies $|c|\le1$.
 
-If \(c=0\), the determinant condition gives \(a=d=\pm1\), so
-\[
+If $c=0$, the determinant condition gives $a=d=\pm1$, so
+$$
 \tau'=\tau+n
-\]
-for some \(n\in\ZZ\). Since both real parts lie in \([-1/2,1/2]\), either \(n=0\), giving \(\tau'=\tau\), or the points lie on the vertical boundary and
-\[
+$$
+for some $n\in\ZZ$. Since both real parts lie in $[-1/2,1/2]$, either $n=0$, giving $\tau'=\tau$, or the points lie on the vertical boundary and
+$$
 \Re\tau=\frac12,\quad \tau'=\tau-1,
-\]
+$$
 or
-\[
+$$
 \Re\tau=-\frac12,\quad \tau'=\tau+1.
-\]
+$$
 
-Now suppose \(|c|=1\). Since \(g\) and \(-g\) act identically, take \(c=1\); then \(ad-b=1\), and
-\[
+Now suppose $|c|=1$. Since $g$ and $-g$ act identically, take $c=1$; then $ad-b=1$, and
+$$
 \tau'=\frac{a\tau+b}{\tau+d}=a-\frac{1}{\tau+d},
-\]
-while (2) says \(|\tau+d|\le1\). If \(|d|\ge2\), then \(|\tau+d|\ge|d|-|x|\ge\frac32\), which is impossible. If \(d=\pm1\), then
-\[
+$$
+while (2) says $|\tau+d|\le1$. If $|d|\ge2$, then $|\tau+d|\ge|d|-|x|\ge\frac32$, which is impossible. If $d=\pm1$, then
+$$
 |\tau\pm1|^2=|\tau|^2\pm2x+1\ge2\pm2x\ge1,
-\]
-with equality only for \(|\tau|=1\) and \(x=\mp\frac12\). If \(d=0\), then \(|\tau|\le1\), so \(|\tau|=1\). In every case \(|\tau|=1\), so \(1/\tau=\bar\tau\).
+$$
+with equality only for $|\tau|=1$ and $x=\mp\frac12$. If $d=0$, then $|\tau|\le1$, so $|\tau|=1$. In every case $|\tau|=1$, so $1/\tau=\bar\tau$.
 
-If \(d=0\), then \(\tau'=a-\bar\tau=a-x+iy\). This lies in \(\mathcal F_1\) only if \(|a-x|\le\frac12\): either \(a=0\) and \(\tau'=-1/\tau\), or \(x=\pm\frac12\), \(a=\pm1\), and \(\tau'=\tau\).
+If $d=0$, then $\tau'=a-\bar\tau=a-x+iy$. This lies in $\mathcal F_1$ only if $|a-x|\le\frac12$: either $a=0$ and $\tau'=-1/\tau$, or $x=\pm\frac12$, $a=\pm1$, and $\tau'=\tau$.
 
-If \(d=1\), then \(\tau=e^{2\pi i/3}\), \(\tau+1=e^{i\pi/3}\), and \(\tau'=a-e^{-i\pi/3}=a-\frac12+\frac{\sqrt3}2i\). This lies in \(\mathcal F_1\) only for \(a=0\), where \(\tau'=\tau\), or \(a=1\), where \(\tau'=\tau+1=-1/\tau\). The case \(d=-1\) is the reflection \(\tau\mapsto-\bar\tau\) of this one: \(\tau=e^{i\pi/3}\) and \(\tau'\in\{\tau,\tau-1\}\), with \(\tau-1=-1/\tau\).
+If $d=1$, then $\tau=e^{2\pi i/3}$, $\tau+1=e^{i\pi/3}$, and $\tau'=a-e^{-i\pi/3}=a-\frac12+\frac{\sqrt3}2i$. This lies in $\mathcal F_1$ only for $a=0$, where $\tau'=\tau$, or $a=1$, where $\tau'=\tau+1=-1/\tau$. The case $d=-1$ is the reflection $\tau\mapsto-\bar\tau$ of this one: $\tau=e^{i\pi/3}$ and $\tau'\in\{\tau,\tau-1\}$, with $\tau-1=-1/\tau$.
 
-Thus a point \(\tau'\ne\tau\) with \(|c|=1\) has \(|\tau|=1\) and \(\tau'=-1/\tau\), and distinct congruent points of \(\mathcal F_1\) occur exactly as stated.
+Thus a point $\tau'\ne\tau$ with $|c|=1$ has $|\tau|=1$ and $\tau'=-1/\tau$, and distinct congruent points of $\mathcal F_1$ occur exactly as stated.
 
-For part (c), let \(G\in\operatorname{SL}_2(\ZZ)\). By part (a), there is \(h\in\Gamma\) such that
-\[
+For part (c), let $G\in\operatorname{SL}_2(\ZZ)$. By part (a), there is $h\in\Gamma$ such that
+$$
 hG(2i)\in\mathcal F_1.
-\]
-But \(2i\) is an interior point of \(\mathcal F_1\), and \(hG(2i)\) is congruent to \(2i\). Part (b) therefore forces
-\[
+$$
+But $2i$ is an interior point of $\mathcal F_1$, and $hG(2i)$ is congruent to $2i$. Part (b) therefore forces
+$$
 hG(2i)=2i.
-\]
+$$
 If
-\[
+$$
 A=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\operatorname{SL}_2(\ZZ)
-\]
-fixes \(2i\), then
-\[
+$$
+fixes $2i$, then
+$$
 \frac{2ia+b}{2ic+d}=2i.
-\]
+$$
 Comparing real and imaginary parts gives
-\[
+$$
 b=-4c,
 \qquad a=d.
-\]
+$$
 The determinant condition becomes
-\[
+$$
 a^2+4c^2=1,
-\]
-so \(c=0\), \(a=d=\pm1\), and \(b=0\). Hence \(A=\pm I\). Therefore
-\[
+$$
+so $c=0$, $a=d=\pm1$, and $b=0$. Hence $A=\pm I$. Therefore
+$$
 hG=\pm I,
-\]
-so in \(\operatorname{PSL}_2(\ZZ)\),
-\[
+$$
+so in $\operatorname{PSL}_2(\ZZ)$,
+$$
 G=h^{-1}\in\Gamma.
-\]
-Thus \(S\) and \(T_1\) generate \(\operatorname{PSL}_2(\ZZ)=\operatorname{SL}_2(\ZZ)/\{\pm I\}\), equivalently every associated fractional linear transformation is a finite composition of \(S,T_1\), and their inverses.
+$$
+Thus $S$ and $T_1$ generate $\operatorname{PSL}_2(\ZZ)=\operatorname{SL}_2(\ZZ)/\{\pm I\}$, equivalently every associated fractional linear transformation is a finite composition of $S,T_1$, and their inverses.
 :::

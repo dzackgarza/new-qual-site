@@ -42,22 +42,22 @@ Show that $f_a$ defines a tempered distribution.
 ::: pf-proof
 
 For $\varphi\in\mathcal S(\RR)$ define
-\[
+$$
 \langle T_a,\varphi\rangle
 :=\int_{\RR}e^{iax}\varphi(x)\,dx.
-\]
+$$
 Since $|e^{iax}|=1$,
-\[
+$$
 |\langle T_a,\varphi\rangle|
 \le \int_{\RR}|\varphi(x)|\,dx.
-\]
+$$
 For example,
-\[
+$$
 \int_{\RR}|\varphi(x)|\,dx
 \le
 \left(\int_{\RR}(1+x^2)^{-1}\,dx\right)
 \sup_{x\in\RR}(1+x^2)|\varphi(x)|.
-\]
+$$
 Thus $T_a$ is a continuous linear functional on the Schwartz space. Therefore $f_a=e^{iax}$ defines a tempered distribution.
 
 :::
@@ -71,43 +71,43 @@ Compute its Fourier transform.
 ::: pf-proof
 
 Use Folland's convention, as authorized by the exam instructions:
-\[
+$$
 \widehat\varphi(\xi)
 =\int_{\RR}e^{-2\pi i x\xi}\varphi(x)\,dx.
-\]
+$$
 with Fourier transform of tempered distributions defined by
-\[
+$$
 \langle\widehat T,\varphi\rangle
 =\langle T,\widehat\varphi\rangle.
-\]
+$$
 Then for $\varphi\in\mathcal S(\RR)$,
-\[
+$$
 \begin{aligned}
 \langle\widehat{T_a},\varphi\rangle
 &=\langle T_a,\widehat\varphi\rangle\\
 &=\int_{\RR}e^{iax}\widehat\varphi(x)\,dx.
 \end{aligned}
-\]
+$$
 Since
-\[
+$$
 e^{iax}=e^{2\pi i(a/(2\pi))x},
-\]
+$$
 Fourier inversion gives
-\[
+$$
 \varphi\!\left(\frac{a}{2\pi}\right)
 =\int_{\RR}e^{iax}\widehat\varphi(x)\,dx.
-\]
+$$
 Hence
-\[
+$$
 \langle\widehat{T_a},\varphi\rangle
 =\varphi\!\left(\frac{a}{2\pi}\right)
 =\left\langle\delta_{a/(2\pi)},\varphi\right\rangle.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{
 \widehat{e^{iax}}=\delta_{a/(2\pi)}.}
-\]
+$$
 
 :::
 

@@ -60,9 +60,9 @@ Statement I is true.
 ::: pf-proof
 
 Multiplying $A\mathbf v=\lambda\mathbf v$ by the scalar $2$ gives
-\[
+$$
 (2A)\mathbf v=(2\lambda)\mathbf v.
-\]
+$$
 Since $\mathbf v\neq 0$, it is an eigenvector of $2A$.
 
 :::
@@ -77,10 +77,10 @@ Statement II is true.
 ::: pf-proof
 
 Applying $A$ to the equation $A\mathbf v=\lambda\mathbf v$ gives
-\[
+$$
 A^2\mathbf v=A(\lambda\mathbf v)=\lambda A\mathbf v
 =\lambda^2\mathbf v.
-\]
+$$
 Thus $\mathbf v$ is an eigenvector of $A^2$.
 
 :::
@@ -95,9 +95,9 @@ Statement III is true.
 ::: pf-proof
 
 Multiplying $A\mathbf v=\lambda\mathbf v$ by $A^{-1}$ gives
-\[
+$$
 \mathbf v=\lambda A^{-1}\mathbf v.
-\]
+$$
 By step [](#s1-1){.pf-ref}, $\lambda$ is nonzero, so
 $A^{-1}\mathbf v=\lambda^{-1}\mathbf v$. Hence $\mathbf v$ is an
 eigenvector of $A^{-1}$.

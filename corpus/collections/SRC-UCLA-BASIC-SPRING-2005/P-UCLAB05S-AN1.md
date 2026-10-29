@@ -17,11 +17,11 @@ audit:
 
 ::: {.problem}
 For a subset $X\subset\RR$, say that $X$ is *algebraic* if there exists a family $\mathcal F$ of polynomials with rational coefficients such that
-\[
+$$
 x\in X
 \quad\Longleftrightarrow\quad
 p(x)=0\text{ for some }p\in\mathcal F.
-\]
+$$
 
 (a) Show that the set $\QQ$ of rational numbers is algebraic.
 

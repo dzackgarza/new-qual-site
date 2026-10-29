@@ -31,14 +31,14 @@ Show that if $N$ is a simple normal subgroup of a group $G$ and $G/N$ has a comp
 
 ::: {.solution}
 Let
-\[
+$$
 G/N=\overline G_0\trianglerighteq\overline G_1
 \trianglerighteq\cdots\trianglerighteq\overline G_r=\{N\}
-\]
+$$
 be a composition series for $G/N$, and let
-\[
+$$
 \pi:G\longrightarrow G/N
-\]
+$$
 be the quotient map. Put $G_i=\pi^{-1}(\overline G_i)$.
 
 ::: pf
@@ -46,20 +46,20 @@ be the quotient map. Put $G_i=\pi^{-1}(\overline G_i)$.
 ::: pf-step
 
 The preimages form a normal series
-\[
+$$
 G=G_0\trianglerighteq G_1\trianglerighteq\cdots
 \trianglerighteq G_r=N.
-\]
+$$
 
 ::: pf-proof
 
 Since $\overline G_{i+1}\trianglelefteq\overline G_i$, the preimage
 $G_{i+1}$ is normal in $G_i$. Also
-\[
+$$
 G_0=\pi^{-1}(G/N)=G,
 \qquad
 G_r=\pi^{-1}(\{N\})=N.
-\]
+$$
 
 :::
 
@@ -72,10 +72,10 @@ Every factor $G_i/G_{i+1}$ is simple.
 ::: pf-proof
 
 The restriction of $\pi$ induces an isomorphism
-\[
+$$
 G_i/G_{i+1}\cong
 \overline G_i/\overline G_{i+1}
-\]
+$$
 by the third isomorphism theorem, since $\overline G_i=G_i/N$ and
 $\overline G_{i+1}=G_{i+1}/N$. The quotient on the right is simple
 because the given series of $G/N$ is a composition series.
@@ -87,17 +87,17 @@ because the given series of $G/N$ is a composition series.
 ::: pf-step
 
 Appending the term $\{e\}$ gives a composition series
-\[
+$$
 G=G_0\trianglerighteq\cdots\trianglerighteq G_r=N
 \trianglerighteq\{e\}.
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s2){.pf-ref} all factors above $N$ are simple. The final factor
-\[
+$$
 N/\{e\}\cong N
-\]
+$$
 is simple by hypothesis. Hence every factor in the displayed normal series is
 simple, which is precisely a composition series for $G$.
 

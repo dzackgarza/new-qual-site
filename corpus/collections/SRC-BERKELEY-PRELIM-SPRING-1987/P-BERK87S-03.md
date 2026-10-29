@@ -27,11 +27,11 @@ audit:
 
 ::: {.problem}
 Let $f$ be complex-valued on the open unit disk $D$. Suppose
-\[
+$$
 f^2
 \quad\text{and}\quad
 f^3
-\]
+$$
 are both analytic on $D$. Prove that $f$ is analytic on $D$.
 :::
 

@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Let $R$ be a ring with at least two elements. Suppose that for every nonzero $a\in R$ there is a unique $b\in R$ such that
-\[
+$$
 aba=a.
-\]
+$$
 Show that $R$ is a division ring.
 :::
 

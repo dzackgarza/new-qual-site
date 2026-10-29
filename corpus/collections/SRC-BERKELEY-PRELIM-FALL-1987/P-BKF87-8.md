@@ -14,14 +14,14 @@ audit:
 
 ::: {.problem}
 Let $F$ be a field and let $R$ be the set of matrices
-\[
+$$
 \begin{pmatrix}a&-b\\ b&a\end{pmatrix},
 \qquad a,b\in F.
-\]
+$$
 Show that $R$ is a commutative ring with identity under the usual matrix operations. Determine for which of
-\[
+$$
 F=\QQ,\qquad \CC,\qquad \ZZ_5,\qquad \ZZ_7
-\]
+$$
 the ring $R$ is a field.
 :::
 

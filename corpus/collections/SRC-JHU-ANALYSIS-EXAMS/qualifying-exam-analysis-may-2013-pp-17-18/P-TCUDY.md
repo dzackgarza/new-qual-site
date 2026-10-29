@@ -52,14 +52,14 @@ Prove part (a).
 The space $L^2(\RR^d)$ is a Hilbert space, hence reflexive. Therefore its closed unit ball is weakly compact. By the Eberlein--Smulian theorem, weak compactness in a Banach space is equivalent to weak sequential compactness.
 
 Since every $f_n$ lies in the unit sphere, in particular in the closed unit ball, there is a subsequence $(f_{n_j})$ and some $f\in L^2(\RR^d)$ such that
-\[
+$$
 f_{n_j}\rightharpoonup f.
-\]
+$$
 Equivalently,
-\[
+$$
 (f_{n_j},g)\longrightarrow(f,g)
 \qquad\text{for every }g\in L^2(\RR^d).
-\]
+$$
 
 :::
 
@@ -72,29 +72,29 @@ Prove part (b).
 ::: pf-proof
 
 Weak convergence gives
-\[
+$$
 (f_n,f)\longrightarrow(f,f)=\|f\|_2^2.
-\]
+$$
 Using the Hilbert-space norm identity,
-\[
+$$
 \begin{aligned}
 \|f_n-f\|_2^2
 &=\|f_n\|_2^2+\|f\|_2^2-2\operatorname{Re}(f_n,f).
 \end{aligned}
-\]
+$$
 By hypothesis,
-\[
+$$
 \|f_n\|_2^2\longrightarrow\|f\|_2^2,
-\]
+$$
 and the weak-convergence term tends to $\|f\|_2^2$. Hence
-\[
+$$
 \|f_n-f\|_2^2\longrightarrow
 \|f\|_2^2+\|f\|_2^2-2\|f\|_2^2=0.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{\|f_n-f\|_2\to0.}
-\]
+$$
 
 :::
 

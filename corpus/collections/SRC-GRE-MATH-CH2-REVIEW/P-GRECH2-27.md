@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 If
 
-\[
+$$
 f(x) = \begin{cases} -2(x+1) & \text{if } x \le 0 \\ k(1-x^2) & \text{if } x > 0 \end{cases}
-\]
+$$
 
 then the value of $k$ for which $\int_{-1}^{1} f(x) dx = 1$ is
 

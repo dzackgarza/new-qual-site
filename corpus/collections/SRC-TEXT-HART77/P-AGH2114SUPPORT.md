@@ -38,33 +38,33 @@ Show that this need not be a closed subset.
 ::: {.pf-step #s1}
 
 The complement of the support of a section is open:
-\[
+$$
 U\setminus\operatorname{supp}s
 =\{P\in U:s_P=0\}.
-\]
+$$
 
 ::: pf-proof
 
 Let $P\in U$ satisfy
-\[
+$$
 s_P=0
-\]
+$$
 in the stalk $\mcf_P$.  By the definition of a stalk, equality of the germ $s_P$ with the zero germ means that there exists an open neighborhood
-\[
+$$
 P\in V\subseteq U
-\]
+$$
 such that
-\[
+$$
 s|_V=0.
-\]
+$$
 For every $Q\in V$, therefore,
-\[
+$$
 s_Q=0.
-\]
+$$
 Thus
-\[
+$$
 V\subseteq U\setminus\operatorname{supp}s.
-\]
+$$
 Every point of the complement has an open neighborhood contained in the complement, so the complement is open.
 
 :::
@@ -74,9 +74,9 @@ Every point of the complement has an open neighborhood contained in the compleme
 ::: {.pf-step #s2}
 
 Hence
-\[
+$$
 \boxed{\operatorname{supp}s\text{ is closed in }U.}
-\]
+$$
 
 ::: pf-proof
 
@@ -93,50 +93,50 @@ The support of a sheaf need not be closed.
 ::: pf-proof
 
 Take
-\[
+$$
 X=\AA^1_{\CC}
 =\operatorname{Spec}\CC[x].
-\]
+$$
 For each positive integer $n$, let
-\[
+$$
 i_n:\{n\}\hookrightarrow X
-\]
+$$
 be the closed-point inclusion and let
-\[
+$$
 \mathcal K_n=i_{n*}\CC
-\]
+$$
 be the corresponding skyscraper sheaf.  Define
-\[
+$$
 \mcf=\bigoplus_{n\ge1}\mathcal K_n
-\]
+$$
 in the category of sheaves of abelian groups.
 
 The stalk functor commutes with direct sums, so for every $P\in X$,
-\[
+$$
 \mcf_P
 \cong
 \bigoplus_{n\ge1}(\mathcal K_n)_P.
-\]
+$$
 For a skyscraper sheaf,
-\[
+$$
 (\mathcal K_n)_P
 \cong
 \begin{cases}
 \CC,&P=n,\\
 0,&P\ne n.
 \end{cases}
-\]
+$$
 Therefore
-\[
+$$
 \operatorname{supp}\mcf
 =\{1,2,3,\ldots\}
 \subseteq\AA^1_{\CC}.
-\]
+$$
 
 This subset is infinite.  Every proper Zariski-closed subset of $\AA^1_{\CC}$ is finite, because it is the zero set of a nonzero polynomial in one variable.  Hence
-\[
+$$
 \{1,2,3,\ldots\}
-\]
+$$
 is Zariski dense but is not all of $X$.  It is therefore not closed.
 
 :::
@@ -146,12 +146,12 @@ is Zariski dense but is not all of $X$.  It is therefore not closed.
 ::: {.pf-step #s4}
 
 Thus there is a genuine distinction:
-\[
+$$
 \boxed{
 \operatorname{supp}s\text{ is always closed, whereas }
 \operatorname{supp}\mcf\text{ need not be closed}.
 }
-\]
+$$
 
 ::: pf-proof
 

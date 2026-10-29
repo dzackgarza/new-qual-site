@@ -28,21 +28,21 @@ audit:
 Show that no finite field is algebraically closed.
 
 *Hint: if $K = \{a_i\}_{i=0}^n$, consider*
-\[
+$$
 f(x) = a_1 + \prod_{i=0}^n (x - a_i) \in K[x]
-\]
+$$
 *where $a_1 \neq 0$.*
 :::
 
 ::: {.solution}
 Let
-\[
+$$
 K=\{a_0,a_1,\ldots,a_n\}
-\]
+$$
 be finite, with $a_1\ne0$, and define
-\[
+$$
 f(x)=a_1+\prod_{i=0}^n(x-a_i)\in K[x].
-\]
+$$
 
 ::: pf
 
@@ -66,9 +66,9 @@ The polynomial $f$ has no root in $K$.
 ::: pf-proof
 
 Every $a\in K$ equals $a_j$ for some $j$. Substituting $a_j$ gives
-\[
+$$
 f(a_j)=a_1+\prod_{i=0}^n(a_j-a_i)=a_1,
-\]
+$$
 because the factor with $i=j$ is zero. Since $a_1\ne0$, one has
 $f(a_j)\ne0$. Thus no element of $K$ is a root.
 

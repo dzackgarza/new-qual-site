@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_{-\infty}^{\infty}\frac{\cos(\pi x)}{4x^2-1}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}

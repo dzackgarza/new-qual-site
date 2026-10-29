@@ -38,9 +38,9 @@ Regarding the entries of $A ( m , n )$ as representing congruence classes (mod p
 ::: {.solution}
 
 Let
-\[
+$$
 k:=\min\{m,n,p\}.
-\]
+$$
 We prove that the rank is exactly $k$.
 
 ::: pf
@@ -50,32 +50,32 @@ The upper-left $k\times k$ minor of $A(m,n)$ is a Vandermonde matrix with nonzer
 
 ::: pf-proof
 Its rows are indexed by $i=0,\dots,k-1$ and columns by $j=0,\dots,k-1$, so it is
-\[
+$$
 V=(j^i)_{0\le i,j\le k-1}.
-\]
+$$
 Its determinant is the Vandermonde product
-\[
+$$
 \det V=\prod_{0\le r<s\le k-1}(s-r).
-\]
+$$
 Because $k\le p$, every difference $s-r$ satisfies
-\[
+$$
 1\le s-r\le k-1<p.
-\]
+$$
 Hence no factor is $0$ in $\FF_p$, so $\det V\ne0$ in $\FF_p$. Therefore
-\[
+$$
 \operatorname{rank}_{\FF_p}A(m,n)\ge k.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #rank-leq-m-n}
 One has
-\[
+$$
 \operatorname{rank}_{\FF_p}A(m,n)\le m
 \qquad\text{and}\qquad
 \operatorname{rank}_{\FF_p}A(m,n)\le n.
-\]
+$$
 
 ::: pf-proof
 These are the standard row and column bounds for the rank of an $m\times n$ matrix.
@@ -85,15 +85,15 @@ These are the standard row and column bounds for the rank of an $m\times n$ matr
 
 ::: {.pf-step #rank-leq-p}
 One also has
-\[
+$$
 \operatorname{rank}_{\FF_p}A(m,n)\le p.
-\]
+$$
 
 ::: pf-proof
 After reducing modulo $p$, the column indexed by $j$ depends only on the residue class of $j$ modulo $p$, because its entries are
-\[
+$$
 1,j,j^2,\dots,j^{m-1}
-\]
+$$
 in $\FF_p$. Thus there are at most $p$ distinct columns. The column space is therefore spanned by at most $p$ columns, so its dimension is at most $p$.
 :::
 
@@ -101,19 +101,19 @@ in $\FF_p$. Thus there are at most $p$ distinct columns. The column space is the
 
 ::: {.pf-step #rank-equals-min}
 One has
-\[
+$$
 \operatorname{rank}_{\FF_p}A(m,n)=\min\{m,n,p\}.
-\]
+$$
 
 ::: pf-proof
 By steps [](#rank-leq-m-n){.pf-ref} and [](#rank-leq-p){.pf-ref},
-\[
+$$
 \operatorname{rank}_{\FF_p}A(m,n)\le\min\{m,n,p\}=k.
-\]
+$$
 By step [](#vandermonde-minor-nonzero){.pf-ref}, the reverse inequality holds. Hence
-\[
+$$
 \boxed{\operatorname{rank}_{\FF_p}A(m,n)=\min\{m,n,p\}}.
-\]
+$$
 :::
 
 :::

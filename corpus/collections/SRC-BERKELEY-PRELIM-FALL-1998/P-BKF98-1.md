@@ -24,9 +24,9 @@ audit:
 
 ::: {.problem}
 Let $(M,d)$ be a metric space, let $C\subseteq M$ be compact, and let $(U_\alpha)_{\alpha\in I}$ be an open cover of $C$. Show that there exists $\varepsilon>0$ such that for every $p\in C$, the open ball
-\[
+$$
 B(p,\varepsilon)
-\]
+$$
 is contained in at least one $U_\alpha$.
 :::
 

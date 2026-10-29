@@ -16,9 +16,9 @@ audit:
 
 ::: {.problem}
 A function $f:\RR\to\RR$ is uniformly continuous if for every $\varepsilon>0$ there exists $\delta>0$ such that
-\[
+$$
 |x-y|<\delta\implies |f(x)-f(y)|<\varepsilon.
-\]
+$$
 
 (a) Give a definition of what it means for $f$ not to be uniformly continuous.
 
@@ -32,7 +32,7 @@ A function $f:\RR\to\RR$ is uniformly continuous if for every $\varepsilon>0$ th
 ::: {.pf-step #s1-1}
 
 The negation of uniform continuity is:
-\[
+$$
 \boxed{
 \exists\varepsilon_0>0
 \text{ such that }
@@ -43,39 +43,39 @@ The negation of uniform continuity is:
 \text{ and }
 |f(x)-f(y)|\ge\varepsilon_0.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 Uniform continuity is the statement
-\[
+$$
 \forall\varepsilon>0+\exists\delta>0+\forall x,y\in\RR,
 \quad
 |x-y|<\delta
 \Longrightarrow
 |f(x)-f(y)|<\varepsilon.
-\]
+$$
 
 Negating the quantifiers gives
-\[
+$$
 \exists\varepsilon_0>0+\forall\delta>0+\exists x,y\in\RR
-\]
+$$
 such that the implication fails.
 Failure of
-\[
+$$
 |x-y|<\delta
 \Longrightarrow
 |f(x)-f(y)|<\varepsilon_0
-\]
+$$
 means precisely
-\[
+$$
 |x-y|<\delta
-\]
+$$
 and
-\[
+$$
 |f(x)-f(y)|\ge\varepsilon_0.
-\]
+$$
 
 :::
 
@@ -84,11 +84,11 @@ and
 ::: {.pf-step #s1-2}
 
 Take
-\[
+$$
 \boxed{
 f(x)=x^2.
 }
-\]
+$$
 Then $f$ is continuous on $\RR$.
 
 
@@ -103,39 +103,39 @@ It is a polynomial.
 ::: {.pf-step #s1-3}
 
 The function
-\[
+$$
 f(x)=x^2
-\]
+$$
 is not uniformly continuous.
 
 
 ::: pf-proof
 
 Take
-\[
+$$
 \varepsilon_0=1.
-\]
+$$
 Let
-\[
+$$
 \delta>0
-\]
+$$
 be arbitrary, and set
-\[
+$$
 h
 \coloneqq
 \frac\delta2.
-\]
+$$
 Choose
-\[
+$$
 x>
 \frac1{2h}.
-\]
+$$
 Set
-\[
+$$
 y=x+h.
-\]
+$$
 Then
-\[
+$$
 |x-y|
 =
 h
@@ -143,10 +143,10 @@ h
 \frac\delta2
 <
 \delta.
-\]
+$$
 
 But
-\[
+$$
 \begin{aligned}
 |f(y)-f(x)|
 &=
@@ -156,11 +156,11 @@ But
 &>
 1.
 \end{aligned}
-\]
+$$
 Thus the fixed number
-\[
+$$
 \varepsilon_0=1
-\]
+$$
 defeats every choice of $\delta$.
 By step [](#s1-1){.pf-ref}, $f$ is not uniformly continuous.
 

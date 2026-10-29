@@ -27,10 +27,10 @@ audit:
 
 ::: {.problem}
 Show that
-\[
+$$
 F(k)=\int_0^{\pi/2}\frac{dx}{\sqrt{1-k\cos^2x}},
 \qquad 0\le k<1,
-\]
+$$
 is an increasing function of $k$.
 :::
 

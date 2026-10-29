@@ -20,31 +20,31 @@ audit:
 ::: {.problem}
 Let $(X,\mathcal A,\mu)$ be a measure space.
 Suppose $f_n,f\in L^1(X,\mu)$ and
-\[
+$$
 \int_X|f_n-f|\,d\mu\longrightarrow0.
-\]
+$$
 Prove that for every $a>0$,
-\[
+$$
 \mu\{x:|f_n(x)-f(x)|>a\}\longrightarrow0.
-\]
+$$
 :::
 
 ::: {.solution}
 Fix $a>0$ and set
-\[
+$$
 E_n=\{x:|f_n(x)-f(x)|>a\}.
-\]
+$$
 On $E_n$ one has $|f_n-f|>a$, hence
-\[
+$$
 a\,\mu(E_n)
 \le \int_{E_n}|f_n-f|\,d\mu
 \le \int_X|f_n-f|\,d\mu.
-\]
+$$
 Therefore
-\[
+$$
 \mu(E_n)
 \le \frac1a\|f_n-f\|_{L^1}
 \longrightarrow0.
-\]
+$$
 Thus $f_n\to f$ in measure.
 :::

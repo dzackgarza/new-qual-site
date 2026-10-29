@@ -55,28 +55,28 @@ For each element $a$ of $S_\Omega$ different from $a_0$, show that the interval 
 Let $a_0$ be the least element of $S_\Omega$.
 
 (a) Suppose first that $[a,c)$ has order type $[0,1)$, and let $t\in(0,1)$ be the image of $b$. Then $[a,b)$ and $[b,c)$ correspond to $[0,t)$ and $[t,1)$, each order-isomorphic to $[0,1)$ by affine rescaling. Conversely, if both pieces have order type $[0,1)$, map them respectively onto
-\[
+$$
 [0,1/2)\qquad\text{and}\qquad[1/2,1)
-\]
+$$
 by order isomorphisms. Their union gives an order isomorphism $[a,c)\cong[0,1)$.
 
 (b) If $[x_0,b)\cong[0,1)$, the images $t_i$ of $x_i$ increase to $1$ because $b=\sup x_i$. Hence each $[x_i,x_{i+1})$ corresponds to $[t_i,t_{i+1})$, which has order type $[0,1)$. Conversely, if every $[x_i,x_{i+1})$ has order type $[0,1)$, map the $i$th piece order-isomorphically onto
-\[
+$$
 [1-2^{-i},\,1-2^{-(i+1)})\qquad(i\ge0).
-\]
+$$
 These maps concatenate to an order isomorphism $[x_0,b)\cong[0,1)$.
 
 (c) Proceed by transfinite induction on $a\in S_\Omega-\{a_0\}$. If $a$ has immediate predecessor $b$, then
-\[
+$$
 [a_0\times0,a\times0)
 =[a_0\times0,b\times0)\cup[b\times0,a\times0),
-\]
+$$
 and the second piece is exactly the fiber $\{b\}\times[0,1)$, so part (a) and the induction hypothesis apply.
 
 If $a$ has no immediate predecessor, its section $S_a$ is countable by minimality of $S_\Omega$ and has no largest element. Enumerate $S_a=\{e_0,e_1,\ldots\}$, put $c_0=a_0$, and choose $c_{i+1}\in S_a$ with $c_{i+1}>\max\{c_i,e_i\}$. Then $c_0<c_1<\cdots$ and $\sup_i(c_i\times0)=a\times0$. By the induction hypothesis $[a_0\times0,c_{i+1}\times0)$ has order type $[0,1)$, so by part (a) each interval
-\[
+$$
 [c_i\times0,c_{i+1}\times0)
-\]
+$$
 has order type $[0,1)$, and part (b) yields the result for $a$.
 
 (d) The argument in (c), together with (a), shows more generally that every bounded interval in $L$ is order-isomorphic to a real interval. Thus if $p<q$ in $L$, the closed interval $[p,q]$ is homeomorphic to $[0,1]$. Composing such a homeomorphism with the standard path $[0,1]\to[0,1]$ gives a path from $p$ to $q$. Hence $L$ is path connected.
@@ -84,9 +84,9 @@ has order type $[0,1)$, and part (b) yields the result for $a$.
 (e) For any $x\in L$, choose $p<x<q$. The same bounded-interval argument shows $(p,q)$ is order-isomorphic, hence homeomorphic, to an open interval of $\RR$. Thus every point has a neighborhood homeomorphic to an open real interval.
 
 (f) The long line is not second countable. For each $a\in S_\Omega$, the vertical interval
-\[
+$$
 \{a\}\times(1/3,2/3)
-\]
+$$
 is a nonempty open subset of $L$, and these sets are pairwise disjoint. A second-countable space can have only countably many pairwise disjoint nonempty open sets, since each contains a distinct element of a fixed countable basis. Therefore $L$ is not second countable.
 
 Every subspace of $\RR^n$ is second countable, because $\RR^n$ has a countable basis and intersections with the subspace form a countable basis. Hence $L$ cannot be embedded in $\RR^n$ for any finite $n$, in particular not in $\RR$.

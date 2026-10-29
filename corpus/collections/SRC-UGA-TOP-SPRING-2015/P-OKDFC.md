@@ -56,9 +56,9 @@ Part (a): Second countable implies separable.
 Let $\mathcal{B} = \{B_n:n\in J\}$ be a countable basis for the topology of $X$, where $J\subseteq\NN$.
 For each non-empty basis element $B_n \in \mathcal{B}$, choose an element $x_n \in B_n$.
 Define the set:
-\[
+$$
 D = \{x_n \mid n\in J,\ B_n \neq \emptyset\}.
-\]
+$$
 The set $D$ is the image of a subset of $J\subseteq\NN$ under the map $n\mapsto x_n$, so $D$ is at most countable.
 
 :::
@@ -88,9 +88,9 @@ Part (b): Separable metric space implies second countable.
 ::: pf-step
 Let $(X, d)$ be a metric space containing a countable dense subset $D = \{d_n:n\in J\}$, where $J\subseteq\NN$.
 Consider the collection of open balls with centers in $D$ and rational radii:
-\[
+$$
 \mathcal{B} = \{ B(d_n, r) \mid n\in J, \, r \in \QQ_{>0} \}.
-\]
+$$
 As the image of the countable set $J \times \QQ_{>0}$, $\mathcal{B}$ is a countable collection of open subsets of $X$.
 
 :::
@@ -110,9 +110,9 @@ Then $x \in B(d_n, r)$.
 
 ::: pf-step
 For any $y \in B(d_n, r)$, by the triangle inequality:
-\[
+$$
 d(y, x) \le d(y, d_n) + d(d_n, x) < r + r = 2r < \epsilon.
-\]
+$$
 Thus $y \in B(x, \epsilon) \subseteq U$, which proves $B(d_n, r) \subseteq U$.
 Therefore $x \in B(d_n, r) \subseteq U$ with $B(d_n, r) \in \mathcal{B}$.
 

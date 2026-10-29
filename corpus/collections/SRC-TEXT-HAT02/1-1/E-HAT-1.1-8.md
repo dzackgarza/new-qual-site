@@ -38,19 +38,19 @@ No.
 ::: {.pf-step #s1}
 
 Regard $S^1$ as the unit circle in $\RR^2$ and define
-\[
+$$
 f:S^1\times S^1\to\RR^2,
 \qquad
 f(x,y)=x.
-\]
+$$
 
 ::: pf-proof
 
 This is the composition of the projection
-\[
+$$
 S^1\times S^1\to S^1,
 \qquad (x,y)\mapsto x,
-\]
+$$
 with the inclusion $S^1\hookrightarrow\RR^2$, so it is continuous.
 
 :::
@@ -60,9 +60,9 @@ with the inclusion $S^1\hookrightarrow\RR^2$, so it is continuous.
 ::: {.pf-step #s2}
 
 For every $(x,y)\in S^1\times S^1$,
-\[
+$$
 f(-x,-y)=-x\ne x=f(x,y).
-\]
+$$
 
 ::: pf-proof
 

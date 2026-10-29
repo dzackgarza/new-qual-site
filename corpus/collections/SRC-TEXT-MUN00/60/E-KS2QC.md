@@ -29,25 +29,25 @@ What are they?
 :::
 
 ::: {.solution}
-The real projective line \(P^1\) is the set of one-dimensional linear subspaces of \(\RR^2\). A line through the origin is determined by either of the two antipodal unit vectors lying on it. Hence
-\[
+The real projective line $P^1$ is the set of one-dimensional linear subspaces of $\RR^2$. A line through the origin is determined by either of the two antipodal unit vectors lying on it. Hence
+$$
 P^1=S^1/(x\sim -x).
-\]
+$$
 
-This quotient is itself homeomorphic to a circle. In complex notation, identify \(S^1\subset\CC\). The map
-\[
+This quotient is itself homeomorphic to a circle. In complex notation, identify $S^1\subset\CC$. The map
+$$
 q:S^1\to S^1,\qquad q(z)=z^2,
-\]
-has exactly the antipodal pairs \(\{z,-z\}\) as its fibers, so it factors through a continuous bijection
-\[
+$$
+has exactly the antipodal pairs $\{z,-z\}$ as its fibers, so it factors through a continuous bijection
+$$
 P^1\longrightarrow S^1.
-\]
-Since \(P^1\) is compact and \(S^1\) Hausdorff, this bijection is a homeomorphism.
+$$
+Since $P^1$ is compact and $S^1$ Hausdorff, this bijection is a homeomorphism.
 
 Under this identification, the standard covering
-\[
+$$
 p:S^1\to P^1,
 \qquad p(x)=\RR x,
-\]
-is exactly the familiar two-sheeted circle covering \(z\mapsto z^2\).
+$$
+is exactly the familiar two-sheeted circle covering $z\mapsto z^2$.
 :::

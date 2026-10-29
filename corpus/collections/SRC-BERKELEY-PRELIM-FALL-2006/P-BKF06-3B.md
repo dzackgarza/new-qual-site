@@ -27,9 +27,9 @@ audit:
 ::: {.problem}
 Let $f:\RR\times[0,1]\to\RR$ be continuous.
 For $x\in\RR$, define
-\[
+$$
 g(x)=\max\{f(x,y):y\in[0,1]\}.
-\]
+$$
 Show that $g$ is continuous.
 :::
 

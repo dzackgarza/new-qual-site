@@ -29,26 +29,26 @@ Show that if $A$ is a nonsingular 3 by 3 matrix having nonnegative entries, then
 
 ::: {.solution}
 Let
-\[
+$$
 \Delta^2=\{x=(x_1,x_2,x_3)\in\RR^3:x_i\ge0,\ x_1+x_2+x_3=1\}
-\]
-be the standard \(2\)-simplex. Since \(A\) has nonnegative entries, \(Ax\) has nonnegative coordinates for every \(x\in\Delta^2\). Since \(A\) is nonsingular and \(x\ne0\), we also have \(Ax\ne0\). Hence
-\[
+$$
+be the standard $2$-simplex. Since $A$ has nonnegative entries, $Ax$ has nonnegative coordinates for every $x\in\Delta^2$. Since $A$ is nonsingular and $x\ne0$, we also have $Ax\ne0$. Hence
+$$
 s(x)=\sum_{i=1}^3(Ax)_i>0.
-\]
+$$
 Define
-\[
+$$
 F:\Delta^2\to\Delta^2,
 \qquad
 F(x)=\frac{Ax}{s(x)}.
-\]
-This map is continuous. By the Brouwer fixed-point theorem, there exists \(x\in\Delta^2\) with \(F(x)=x\). Therefore
-\[
+$$
+This map is continuous. By the Brouwer fixed-point theorem, there exists $x\in\Delta^2$ with $F(x)=x$. Therefore
+$$
 Ax=s(x)x.
-\]
-Thus \(x\ne0\) is an eigenvector of \(A\) with real eigenvalue
-\[
+$$
+Thus $x\ne0$ is an eigenvector of $A$ with real eigenvalue
+$$
 \lambda=s(x)>0.
-\]
-Hence every nonsingular \(3\times3\) matrix with nonnegative entries has a positive real eigenvalue.
+$$
+Hence every nonsingular $3\times3$ matrix with nonnegative entries has a positive real eigenvalue.
 :::

@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Prove that
-\[
+$$
 x^4+x^3+x^2+6x+1
-\]
+$$
 is irreducible over $\QQ$.
 :::
 

@@ -15,9 +15,9 @@ review: draft
 
 ::: {.problem}
 Let $X$ be the set of triples $(i, j, k)$ of integers such that $i, j, k \in \{1, \ldots, 10\}$ with the diagonal action of the symmetric group $S_{10}$:
-\[
+$$
 \sigma \cdot (i, j, k) = (\sigma(i), \sigma(j), \sigma(k)).
-\]
+$$
 Let $V$ be the corresponding permutation representation over the complex numbers.
 When decomposed into a sum of irreducible representations, which Specht modules appear in $V$ and what are their multiplicities?
 :::
@@ -43,20 +43,20 @@ For the all-distinct orbit, the stabilizer of $(1,2,3)$ fixes $1,2,3$ individual
 
 ::: {.pf-step #v-as-induced-trivial-modules}
 Hence, as a permutation module,
-\[
+$$
 V\cong
 \operatorname{Ind}_{S_9}^{S_{10}}\mathbf 1
 \oplus 3\operatorname{Ind}_{S_8}^{S_{10}}\mathbf 1
 \oplus \operatorname{Ind}_{S_7}^{S_{10}}\mathbf 1,
-\]
+$$
 where $S_9,S_8,S_7$ are understood as the Young subgroups
-\[
+$$
 S_9\times S_1,
 \qquad
 S_8\times S_1\times S_1,
 \qquad
 S_7\times S_1\times S_1\times S_1.
-\]
+$$
 
 ::: pf-proof
 A transitive permutation representation on $G/H$ is the induced trivial representation $\operatorname{Ind}_H^G\mathbf 1$. Apply this to the five orbits in step [](#orbit-decomposition-of-x){.pf-ref} and take their direct sum.
@@ -66,16 +66,16 @@ A transitive permutation representation on $G/H$ is the induced trivial represen
 
 ::: {.pf-step #frobenius-characteristic-of-v}
 Under the Frobenius characteristic map,
-\[
+$$
 \operatorname{ch}(V)
 =h_9h_1+3h_8h_1^2+h_7h_1^3.
-\]
+$$
 
 ::: pf-proof
 For a Young subgroup $S_{\mu_1}\times\cdots\times S_{\mu_r}$, the Frobenius characteristic of the induced trivial representation is
-\[
+$$
 h_{\mu_1}\cdots h_{\mu_r}.
-\]
+$$
 Apply this to the three summands in step [](#v-as-induced-trivial-modules){.pf-ref}.
 :::
 
@@ -83,7 +83,7 @@ Apply this to the three summands in step [](#v-as-induced-trivial-modules){.pf-r
 
 ::: {.pf-step #pieri-expansions}
 Repeated application of Pieri's rule gives
-\[
+$$
 \begin{aligned}
 h_9h_1&=s_{(10)}+s_{(9,1)},\\
 h_8h_1^2
@@ -92,7 +92,7 @@ h_7h_1^3
 &=s_{(10)}+3s_{(9,1)}+3s_{(8,2)}+3s_{(8,1,1)}\\
 &\qquad+s_{(7,3)}+2s_{(7,2,1)}+s_{(7,1,1,1)}.
 \end{aligned}
-\]
+$$
 
 ::: pf-proof
 Since $h_r=s_{(r)}$, multiplying by $h_1=s_{(1)}$ adds one box to a Young diagram in every possible way, with multiplicity equal to the number of paths through successive one-box additions. Applying this once, twice, and three times to the one-row diagrams $(9)$, $(8)$, and $(7)$ gives the displayed expansions.
@@ -102,7 +102,7 @@ Since $h_r=s_{(r)}$, multiplying by $h_1=s_{(1)}$ adds one box to a Young diagra
 
 ::: pf-step
 Therefore
-\[
+$$
 \boxed{
 \begin{aligned}
 V\cong{}&5S^{(10)}
@@ -113,19 +113,19 @@ V\cong{}&5S^{(10)}
 \oplus2S^{(7,2,1)}
 \oplus S^{(7,1,1,1)}.
 \end{aligned}}
-\]
+$$
 
 ::: pf-proof
 Substitute the three Pieri expansions from step [](#pieri-expansions){.pf-ref} into
-\[
+$$
 h_9h_1+3h_8h_1^2+h_7h_1^3
-\]
+$$
 and collect coefficients.
 
 As a consistency check, the dimensions of the three orbit modules are
-\[
+$$
 10+3(10\cdot9)+10\cdot9\cdot8=10+270+720=1000=|X|,
-\]
+$$
 which is the dimension of the original permutation representation.
 :::
 

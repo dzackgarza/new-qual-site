@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 The plane $y=1$ slices the surface
-\[
+$$
 z=\arctan\frac{x+y}{1-xy}
-\]
+$$
 in a curve, $C$. Find the slope of the tangent line to $C$ at the point where $x=2$.
 
 (A) $-3$

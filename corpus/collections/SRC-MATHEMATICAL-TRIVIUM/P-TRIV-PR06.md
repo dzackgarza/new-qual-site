@@ -36,9 +36,9 @@ Assume the tetrahedron is fair, so each face has probability $1/4$. The four fac
 ::: {.pf-step #s1-1}
 
 Each color event has probability
-\[
+$$
 P(R)=P(G)=P(B)=\frac12.
-\]
+$$
 
 
 ::: pf-proof
@@ -52,9 +52,9 @@ The event $R$ occurs on the red-only face and on the $RGB$ face, two of the four
 ::: {.pf-step #s1-2}
 
 For any two distinct colors $A,B\in\{R,G,B\}$,
-\[
+$$
 P(A\cap B)=\frac14.
-\]
+$$
 
 
 ::: pf-proof
@@ -68,9 +68,9 @@ The only face containing any prescribed pair of distinct colors is the $RGB$ fac
 ::: {.pf-step #s1-3}
 
 Hence every pair of distinct color events is independent:
-\[
+$$
 P(A\cap B)=P(A)P(B)=\frac14.
-\]
+$$
 
 
 ::: pf-proof
@@ -84,13 +84,13 @@ By step [](#s1-1){.pf-ref}, $P(A)P(B)=(1/2)(1/2)=1/4$, which equals the intersec
 ::: {.pf-step #s1-4}
 
 The triple intersection has probability
-\[
+$$
 P(R\cap G\cap B)=\frac14,
-\]
+$$
 whereas
-\[
+$$
 P(R)P(G)P(B)=\frac18.
-\]
+$$
 
 
 ::: pf-proof

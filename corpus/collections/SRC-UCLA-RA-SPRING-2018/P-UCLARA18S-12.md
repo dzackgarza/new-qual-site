@@ -18,45 +18,45 @@ audit:
 
 ::: {.problem}
 Problem 12. Let $f(z)$ be bounded and holomorphic on the unit disc
-\[
+$$
 \DD=\{z:|z|<1\}.
-\]
+$$
 Prove that for every $w\in\DD$,
-\[
+$$
 f(w)=\frac1\pi\int_{\DD}\frac{f(z)}{(1-\overline z w)^2}\,dA(z),
-\]
+$$
 where $dA(z)$ means integration with respect to Lebesgue measure.
 :::
 
 ::: {.solution}
 
-Write the Taylor series of \(f\) at the origin as
-\[
+Write the Taylor series of $f$ at the origin as
+$$
 f(z)=\sum_{n=0}^{\infty}a_nz^n.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-For every \(n\ge0\),
-\[
+For every $n\ge0$,
+$$
 \boxed{
 \int_{\DD}
 f(z)\overline z^{\,n}\,dA(z)
 =
 \frac{\pi}{n+1}a_n}.
-\]
+$$
 
 
 ::: pf-proof
 
-Because \(f\) is bounded and \(\DD\) has finite area, the function
-\[
+Because $f$ is bounded and $\DD$ has finite area, the function
+$$
 f(z)\overline z^{\,n}
-\]
+$$
 is integrable. In polar coordinates,
-\[
+$$
 \begin{aligned}
 \int_{\DD}
 f(z)\overline z^{\,n}\,dA(z)
@@ -67,10 +67,10 @@ f(re^{i\theta})
 r^n e^{-in\theta}
 r\,d\theta\,dr.
 \end{aligned}
-\]
-For fixed \(0<r<1\), the Taylor series of \(f\) converges uniformly on the
-circle \(|z|=r\), so
-\[
+$$
+For fixed $0<r<1$, the Taylor series of $f$ converges uniformly on the
+circle $|z|=r$, so
+$$
 \begin{aligned}
 \int_0^{2\pi}
 f(re^{i\theta})e^{-in\theta}\,d\theta
@@ -82,9 +82,9 @@ e^{i(m-n)\theta}\,d\theta\\
 &=
 2\pi a_nr^n.
 \end{aligned}
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 \int_{\DD}
 f(z)\overline z^{\,n}\,dA(z)
@@ -97,7 +97,7 @@ f(z)\overline z^{\,n}\,dA(z)
 &=
 \frac{\pi}{n+1}a_n.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -105,49 +105,49 @@ f(z)\overline z^{\,n}\,dA(z)
 
 ::: {.pf-step #s1-2}
 
-For fixed \(w\in\DD\),
-\[
+For fixed $w\in\DD$,
+$$
 \boxed{
 \frac1{(1-\overline zw)^2}
 =
 \sum_{n=0}^{\infty}
 (n+1)\overline z^{\,n}w^n}
-\]
-uniformly for \(z\in\DD\).
+$$
+uniformly for $z\in\DD$.
 
 
 ::: pf-proof
 
 The differentiated geometric series gives
-\[
+$$
 \frac1{(1-\xi)^2}
 =
 \sum_{n=0}^{\infty}(n+1)\xi^n
 \qquad(|\xi|<1).
-\]
+$$
 Take
-\[
+$$
 \xi=\overline zw.
-\]
-Since \(|z|<1\),
-\[
+$$
+Since $|z|<1$,
+$$
 |\xi|
 \le
 |w|
 <1.
-\]
+$$
 Moreover,
-\[
+$$
 |(n+1)\overline z^{\,n}w^n|
 \le
 (n+1)|w|^n,
-\]
+$$
 and
-\[
+$$
 \sum_{n=0}^{\infty}(n+1)|w|^n
 <\infty.
-\]
-The Weierstrass \(M\)-test therefore gives uniform convergence in \(z\).
+$$
+The Weierstrass $M$-test therefore gives uniform convergence in $z$.
 
 :::
 
@@ -156,28 +156,28 @@ The Weierstrass \(M\)-test therefore gives uniform convergence in \(z\).
 ::: {.pf-step #s1-3}
 
 One may integrate the series in step [](#s1-2){.pf-ref} term by term against
-\(f(z)\,dA(z)\).
+$f(z)\,dA(z)$.
 
 
 ::: pf-proof
 
 Let
-\[
+$$
 \|f\|_\infty
 =
 \sup_{z\in\DD}|f(z)|
 <\infty.
-\]
+$$
 The terms satisfy
-\[
+$$
 |f(z)(n+1)\overline z^{\,n}w^n|
 \le
 \|f\|_\infty
 (n+1)|w|^n.
-\]
-The right-hand side is summable in \(n\) and independent of \(z\), while
-\(\DD\) has finite area. Equivalently, the kernel series converges
-uniformly by step [](#s1-2){.pf-ref} and \(f\in L^1(\DD)\). Hence integration and
+$$
+The right-hand side is summable in $n$ and independent of $z$, while
+$\DD$ has finite area. Equivalently, the kernel series converges
+uniformly by step [](#s1-2){.pf-ref} and $f\in L^1(\DD)$. Hence integration and
 summation may be interchanged.
 
 :::
@@ -186,8 +186,8 @@ summation may be interchanged.
 
 ::: {.pf-step #s1-4}
 
-For every \(w\in\DD\),
-\[
+For every $w\in\DD$,
+$$
 \begin{aligned}
 \frac1\pi
 \int_{\DD}
@@ -197,13 +197,13 @@ For every \(w\in\DD\),
 &=
 \sum_{n=0}^{\infty}a_nw^n.
 \end{aligned}
-\]
+$$
 
 
 ::: pf-proof
 
 By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref},
-\[
+$$
 \begin{aligned}
 \frac1\pi
 \int_{\DD}
@@ -217,9 +217,9 @@ By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref},
 \int_{\DD}
 f(z)\overline z^{\,n}\,dA(z).
 \end{aligned}
-\]
+$$
 Apply step [](#s1-1){.pf-ref}:
-\[
+$$
 \begin{aligned}
 &=
 \frac1\pi
@@ -229,7 +229,7 @@ Apply step [](#s1-1){.pf-ref}:
 &=
 \sum_{n=0}^{\infty}a_nw^n.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -238,7 +238,7 @@ Apply step [](#s1-1){.pf-ref}:
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 \boxed{
 f(w)
 =
@@ -248,14 +248,14 @@ f(w)
 {(1-\overline zw)^2}
 \,dA(z)}
 \qquad(w\in\DD).
-\]
+$$
 
 
 ::: pf-proof
 
-The Taylor series of the holomorphic function \(f\) converges to \(f(w)\)
-for every \(w\in\DD\). Thus the series on the right-hand side of
-step [](#s1-4){.pf-ref} equals \(f(w)\).
+The Taylor series of the holomorphic function $f$ converges to $f(w)$
+for every $w\in\DD$. Thus the series on the right-hand side of
+step [](#s1-4){.pf-ref} equals $f(w)$.
 
 :::
 

@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 If $a$ is a positive constant, let $y = f(x)$ be the solution of the equation
 
-\[
+$$
 y''' - ay'' + a^2y' - a^3y = 0
-\]
+$$
 
 such that $f(0) = 1$, $f'(0) = 0$, and $f''(0) = a^2$. How many positive values of $x$ satisfy the equation $f(x) = 0$?
 

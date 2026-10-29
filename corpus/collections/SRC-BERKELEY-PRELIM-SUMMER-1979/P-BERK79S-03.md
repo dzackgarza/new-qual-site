@@ -29,9 +29,9 @@ audit:
 ::: {.problem}
 Let $X=O(n)$ be the space of real orthogonal $n\times n$ matrices and fix $v_0\in\RR^n$.
 Determine and describe the matrices $A\in X$ at which
-\[
+$$
 f(A)=\langle v_0,Av_0\rangle
-\]
+$$
 attains its maximum and minimum values.
 :::
 

@@ -25,14 +25,14 @@ audit:
 
 ::: {.problem}
 For $x>0$, let
-\[
+$$
 f(x)=e^{x^2/2}\int_x^\infty e^{-t^2/2}\,dt.
-\]
+$$
 
 1. Prove that
-\[
+$$
 0<f(x)<\frac1x.
-\]
+$$
 2. Prove that $f$ is strictly decreasing on $(0,\infty)$.
 :::
 

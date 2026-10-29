@@ -32,9 +32,9 @@ Identify which of the following properties of $\ZZ$-modules $M$ define Serre cla
 
 ::: {.solution}
 For $\ZZ$-modules, the answers are
-\[
+$$
 \boxed{(a)\ \text{yes},\quad (b)\ \text{no},\quad (c)\ \text{yes},\quad (d)\ \text{yes},\quad (e)\ \text{no},\quad (f)\ \text{yes}.}
-\]
+$$
 
 ::: pf
 
@@ -65,9 +65,9 @@ Closure under submodules, quotients, and extensions gives the two-out-of-three p
 ::: pf-proof
 
 The exact sequence
-\[
+$$
 0\to\ZZ\xrightarrow{\times n}\ZZ\to\ZZ/n\to0
-\]
+$$
 has its first two terms torsion-free and its quotient torsion.
 
 :::
@@ -81,9 +81,9 @@ has its first two terms torsion-free and its quotient torsion.
 ::: pf-proof
 
 In
-\[
+$$
 0\to\ZZ\to\ZZ[1/p]\to\ZZ[1/p]/\ZZ\to0,
-\]
+$$
 the middle and right terms are divisible by $p$, while $\ZZ$ is not.
 
 :::

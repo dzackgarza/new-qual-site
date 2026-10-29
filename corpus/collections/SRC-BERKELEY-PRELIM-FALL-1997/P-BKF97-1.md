@@ -25,11 +25,11 @@ audit:
 
 ::: {.problem}
 Define a sequence of real numbers by
-\[
+$$
 x_0=1,
 \qquad
 x_{n+1}=\frac1{2+x_n}\quad(n\ge0).
-\]
+$$
 Show that $(x_n)$ converges, and evaluate its limit.
 :::
 

@@ -26,25 +26,25 @@ Prove that $A$ is diagonalizable and find a closed-form expression for $A^k \beg
 
 ::: {.solution}
 The characteristic polynomial is
-\[
+$$
 \det(\lambda I-A)=\lambda^2+\lambda-6=(\lambda-2)(\lambda+3).
-\]
+$$
 Thus $A$ has two distinct eigenvalues and is diagonalizable. Corresponding eigenvectors are
-\[
+$$
 v_2=\binom12,\qquad v_{-3}=\binom1{-3}.
-\]
+$$
 Since
-\[
+$$
 \binom17=2v_2-v_{-3},
-\]
+$$
 we obtain for every $k\in\NN$
-\[
+$$
 A^k\binom17
 =2\,2^k v_2-(-3)^k v_{-3}.
-\]
+$$
 Equivalently,
-\[
+$$
 \boxed{A^k\binom17=
 \binom{2^{k+1}-(-3)^k}{2^{k+2}+3(-3)^k}}.
-\]
+$$
 :::

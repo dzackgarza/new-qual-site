@@ -17,31 +17,31 @@ Find the first derivative of $\begin{array} { r } { f ( x ) = \frac { x ^ { 3 } 
 
 ::: {.solution}
 
-For \(x>0\), one also has
-\[
+For $x>0$, one also has
+$$
 x+3>0,
-\]
+$$
 so
-\[
+$$
 \sqrt[3]{(x+3)^4}
 =
 (x+3)^{4/3}.
-\]
+$$
 
 Thus
-\[
+$$
 f(x)
 =
 \frac{x^3}
 {(6x^2+1)(x+3)^{4/3}}.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
-Since \(f(x)>0\) for \(x>0\), take logarithms:
-\[
+Since $f(x)>0$ for $x>0$, take logarithms:
+$$
 \boxed{
 \log f(x)
 =
@@ -50,7 +50,7 @@ Since \(f(x)>0\) for \(x>0\), take logarithms:
 \log(6x^2+1)
 -
 \frac43\log(x+3)}.
-\]
+$$
 
 
 ::: pf-proof
@@ -64,7 +64,7 @@ Apply logarithm rules to the product and powers in the denominator.
 ::: {.pf-step #s1-2}
 
 Differentiate both sides:
-\[
+$$
 \frac{f'(x)}{f(x)}
 =
 \frac3x
@@ -72,23 +72,23 @@ Differentiate both sides:
 \frac{12x}{6x^2+1}
 -
 \frac{4}{3(x+3)}.
-\]
+$$
 
 
 ::: pf-proof
 
 Use
-\[
+$$
 \frac{d}{dx}\log f(x)
 =
 \frac{f'(x)}{f(x)},
-\]
+$$
 together with the chain rule:
-\[
+$$
 \frac{d}{dx}\log(6x^2+1)
 =
 \frac{12x}{6x^2+1}.
-\]
+$$
 
 :::
 
@@ -97,7 +97,7 @@ together with the chain rule:
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{
 f'(x)
 =
@@ -109,12 +109,12 @@ f(x)
 -
 \frac{4}{3(x+3)}
 \right)}.
-\]
+$$
 
 
 ::: pf-proof
 
-Multiply the identity in step [](#s1-2){.pf-ref} by \(f(x)\).
+Multiply the identity in step [](#s1-2){.pf-ref} by $f(x)$.
 
 :::
 
@@ -122,8 +122,8 @@ Multiply the identity in step [](#s1-2){.pf-ref} by \(f(x)\).
 
 ::: {.pf-step #s1-4}
 
-Substituting the original formula for \(f\),
-\[
+Substituting the original formula for $f$,
+$$
 \boxed{
 f'(x)
 =
@@ -136,12 +136,12 @@ f'(x)
 -
 \frac{4}{3(x+3)}
 \right)}.
-\]
+$$
 
 
 ::: pf-proof
 
-Replace \(f(x)\) in step [](#s1-3){.pf-ref} by its explicit expression.
+Replace $f(x)$ in step [](#s1-3){.pf-ref} by its explicit expression.
 
 :::
 

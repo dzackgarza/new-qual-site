@@ -35,30 +35,30 @@ Describe the 3-fold connected covering spaces of $S^1 \lor S^1$.
 
 ::: {.solution}
 Let
-\[
+$$
 B=S^1_a\vee S^1_b
-\]
+$$
 with wedge point $v$ and oriented loop-edges $a$ and $b$.
 
 ::: pf
 
 ::: {.pf-step #monodromy-pair-determines-covering}
 A three-sheeted covering of $B$ is determined, up to relabeling its fiber over $v$, by a pair of permutations
-\[
+$$
 (\sigma,\tau)\in S_3\times S_3.
-\]
+$$
 
 ::: pf-proof
 Label the fiber over $v$ by
-\[
+$$
 p^{-1}(v)=\{1,2,3\}.
-\]
+$$
 For each $i$, lift the loop $a$ beginning at the point labeled $i$.
 Its endpoint is another point of the fiber, say $\sigma(i)$.
 Unique path lifting makes
-\[
+$$
 \sigma:\{1,2,3\}\longrightarrow\{1,2,3\}
-\]
+$$
 a permutation.
 Likewise, lifting $b$ gives a permutation $\tau$.
 
@@ -71,9 +71,9 @@ At each vertex there is exactly one incoming and one outgoing lift of each orien
 
 ::: {.pf-step #connected-iff-transitive}
 The covering determined by $(\sigma,\tau)$ is connected exactly when the subgroup
-\[
+$$
 \langle\sigma,\tau\rangle\le S_3
-\]
+$$
 acts transitively on $\{1,2,3\}$.
 
 ::: pf-proof
@@ -87,11 +87,11 @@ Thus the graph is connected exactly when there is one orbit.
 
 ::: pf-step
 Two pairs $(\sigma,\tau)$ and $(\sigma',\tau')$ determine isomorphic covering spaces over $B$ exactly when they are simultaneously conjugate:
-\[
+$$
 (\sigma',\tau')
 =
 (h\sigma h^{-1},h\tau h^{-1})
-\]
+$$
 for some $h\in S_3$.
 
 ::: pf-proof
@@ -104,15 +104,15 @@ Thus simultaneous conjugacy is precisely the equivalence relation corresponding 
 
 ::: {.pf-step #seven-connected-pairs}
 Put
-\[
+$$
 r=(123),
 \qquad
 s=(12),
 \qquad
 t=(23).
-\]
+$$
 The following seven monodromy pairs give connected three-sheeted coverings:
-\[
+$$
 \boxed{
 \begin{array}{c|c}
 \sigma_a&\sigma_b\\
@@ -125,7 +125,7 @@ r&s\\
 r&r\\
 r&r^{-1}
 \end{array}}
-\]
+$$
 
 ::: pf-proof
 Any pair containing the $3$-cycle $r$ generates a transitive subgroup, since $\langle r\rangle$ is already transitive.
@@ -143,52 +143,52 @@ Let $(\sigma,\tau)$ be a transitive pair.
 We classify it by the cycle type of $\sigma$.
 
 If
-\[
+$$
 \sigma=e,
-\]
+$$
 then transitivity forces $\tau$ to be a $3$-cycle.
 All $3$-cycles are conjugate, so this gives the representative
-\[
+$$
 (e,r).
-\]
+$$
 
 Suppose next that $\sigma$ is a transposition.
 After simultaneous conjugation, take
-\[
+$$
 \sigma=s=(12).
-\]
+$$
 If $\tau=e$ or $\tau=s$, the generated subgroup fixes $3$ and is not transitive.
 Thus $\tau$ must be either a $3$-cycle or a transposition distinct from $s$.
 The centralizer
-\[
+$$
 C_{S_3}(s)=\{e,s\}
-\]
+$$
 interchanges the two $3$-cycles by conjugation, and it also interchanges the two transpositions different from $s$.
 Hence these possibilities give exactly
-\[
+$$
 (s,r)
 \qquad\text{and}\qquad
 (s,t).
-\]
+$$
 
 Finally suppose that $\sigma$ is a $3$-cycle.
 After simultaneous conjugation, take
-\[
+$$
 \sigma=r=(123).
-\]
+$$
 Its centralizer is
-\[
+$$
 C_{S_3}(r)=\langle r\rangle.
-\]
+$$
 The second permutation $\tau$ can have three possible cycle types.
 If $\tau=e$, this gives $(r,e)$.
 If $\tau$ is a transposition, conjugation by powers of $r$ acts transitively on the three transpositions, so there is one class represented by $(r,s)$.
 If $\tau$ is a $3$-cycle, then
-\[
+$$
 \tau=r
 \qquad\text{or}\qquad
 \tau=r^{-1},
-\]
+$$
 giving $(r,r)$ and $(r,r^{-1})$.
 These exhaust all possibilities.
 :::
@@ -201,15 +201,15 @@ The seven covers in step [](#seven-connected-pairs){.pf-ref} are pairwise noniso
 ::: pf-proof
 Simultaneous conjugation preserves the cycle type of each coordinate, so pairs having different cycle-type pairs cannot be equivalent.
 This already separates all displayed pairs except potentially
-\[
+$$
 (r,r)
 \qquad\text{and}\qquad
 (r,r^{-1}).
-\]
+$$
 If these two were simultaneously conjugate while their first coordinates were both $r$, the conjugating permutation would lie in
-\[
+$$
 C_{S_3}(r)=\langle r\rangle.
-\]
+$$
 But this centralizer is abelian, so conjugation by any of its elements fixes both $r$ and $r^{-1}$; it cannot send the second coordinate $r$ to $r^{-1}$.
 Thus these two covers are also nonisomorphic.
 Hence there are exactly seven isomorphism classes.
@@ -223,9 +223,9 @@ Equivalently, each row of step [](#seven-connected-pairs){.pf-ref} can be drawn 
 ::: pf-proof
 For a row $(\sigma_a,\sigma_b)$, take vertices $1,2,3$.
 For each label $x\in\{a,b\}$ and each vertex $i$, draw one oriented $x$-edge
-\[
+$$
 i\longrightarrow\sigma_x(i).
-\]
+$$
 Thus an identity permutation gives three loops of that label, a transposition gives two oppositely directed edges between the transposed vertices together with a loop at the fixed vertex, and a $3$-cycle gives a directed triangle.
 By step [](#monodromy-pair-determines-covering){.pf-ref} these seven labeled graphs are exactly the desired connected three-sheeted covering spaces.
 :::

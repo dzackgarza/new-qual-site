@@ -37,9 +37,9 @@ Prove that $\RR^2$ is not homeomorphic to $\RR^n$ for $n > 2$.
 ::: pf-step
 
 Suppose, for contradiction, that there is a homeomorphism
-\[
+$$
 h:\RR^2\to\RR^n
-\]
+$$
 with $n>2$.
 
 ::: pf-proof
@@ -53,20 +53,20 @@ We will derive a contradiction from the homology of the complements of correspon
 ::: {.pf-step #s2}
 
 Restricting $h$ gives a homeomorphism
-\[
+$$
 \RR^2\setminus\{0\}
 \cong
 \RR^n\setminus\{h(0)\}.
-\]
+$$
 
 ::: pf-proof
 
 Since $h$ is bijective,
-\[
+$$
 h\bigl(\RR^2\setminus\{0\}\bigr)
 =
 \RR^n\setminus\{h(0)\}.
-\]
+$$
 The restriction of a homeomorphism to a subspace is a homeomorphism onto its image.
 
 :::
@@ -76,27 +76,27 @@ The restriction of a homeomorphism to a subspace is a homeomorphism onto its ima
 ::: {.pf-step #s3}
 
 The punctured plane deformation retracts onto $S^1$, so
-\[
+$$
 H_1(\RR^2\setminus\{0\};\ZZ)
 \cong
 \ZZ.
-\]
+$$
 
 ::: pf-proof
 
 The radial map
-\[
+$$
 r(x)=\frac{x}{\|x\|}
-\]
+$$
 is a deformation retraction of $\RR^2\setminus\{0\}$ onto the unit circle $S^1$.
 Homotopy invariance of singular homology therefore gives
-\[
+$$
 H_1(\RR^2\setminus\{0\})
 \cong
 H_1(S^1)
 \cong
 \ZZ.
-\]
+$$
 
 :::
 
@@ -105,26 +105,26 @@ H_1(S^1)
 ::: {.pf-step #s4}
 
 The punctured $n$-space deformation retracts onto $S^{n-1}$, and for $n>2$,
-\[
+$$
 H_1(\RR^n\setminus\{h(0)\};\ZZ)=0.
-\]
+$$
 
 ::: pf-proof
 
 Translation by $-h(0)$ is a homeomorphism
-\[
+$$
 \RR^n\setminus\{h(0)\}
 \cong
 \RR^n\setminus\{0\}.
-\]
+$$
 Radial deformation retraction gives
-\[
+$$
 \RR^n\setminus\{0\}\simeq S^{n-1}.
-\]
+$$
 Since $n>2$, one has $n-1\ge2$, and the homology of a sphere gives
-\[
+$$
 H_1(S^{n-1};\ZZ)=0.
-\]
+$$
 Hence the displayed punctured-space group vanishes.
 
 :::
@@ -134,19 +134,19 @@ Hence the displayed punctured-space group vanishes.
 ::: pf-step
 
 This contradicts step [](#s2){.pf-ref}, so
-\[
+$$
 \boxed{\RR^2\not\cong\RR^n\quad(n>2)}.
-\]
+$$
 
 ::: pf-proof
 
 Homeomorphic spaces have isomorphic homology groups.
 But steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give respectively
-\[
+$$
 H_1(\RR^2\setminus\{0\})\cong\ZZ
 \qquad\text{and}\qquad
 H_1(\RR^n\setminus\{h(0)\})=0,
-\]
+$$
 contradicting the homeomorphism in step [](#s2){.pf-ref}. Therefore no homeomorphism $\RR^2\to\RR^n$ exists for $n>2$.
 
 :::

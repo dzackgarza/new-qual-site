@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Let $f:[0,\infty)\to[0,\infty)$ be continuous and strictly increasing onto $[0,\infty)$, and let $g=f^{-1}$.
 Prove that for all positive $a,b$,
-\[
+$$
 \int_0^a f(x)\,dx+\int_0^b g(y)\,dy\ge ab,
-\]
+$$
 and determine the condition for equality.
 :::
 

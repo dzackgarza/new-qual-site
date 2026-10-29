@@ -28,18 +28,18 @@ audit:
 ::: {.problem}
 Let $M$ be an $A$-module, and let $\mathfrak m$ be a maximal ideal of $A$.
 Prove that
-\[
+$$
 M/\mathfrak mM \cong M_{\mathfrak m}/\mathfrak mM_{\mathfrak m}.
-\]
+$$
 :::
 
 ::: {.solution}
 Define
-\[
+$$
 \phi:M/\mathfrak mM\longrightarrow M_{\mathfrak m}/\mathfrak mM_{\mathfrak m},
 \qquad
 m+\mathfrak mM\longmapsto m/1+\mathfrak mM_{\mathfrak m}.
-\]
+$$
 
 ::: pf
 
@@ -59,9 +59,9 @@ The map $\phi$ is surjective.
 Every class on the right is represented by $m/s$ with $s\notin\mathfrak m$.
 Since $\mathfrak m$ is maximal, the image of $s$ in $A/\mathfrak m$ is a unit;
 choose $a\in A$ with $as\equiv1\pmod{\mathfrak m}$. Then
-\[
+$$
 \frac ms-\frac{am}{1}=\frac{(1-as)m}{s}\in\mathfrak mM_{\mathfrak m}.
-\]
+$$
 Thus the class of $m/s$ is $\phi(am+\mathfrak mM)$.
 :::
 
@@ -73,9 +73,9 @@ The map $\phi$ is injective.
 ::: pf-proof
 Suppose $m/1\in\mathfrak mM_{\mathfrak m}$. Then for some $s\notin\mathfrak m$,
 $s m\in\mathfrak mM$. Choose $a$ with $as\equiv1\pmod{\mathfrak m}$. Then
-\[
+$$
 m=asm+(1-as)m\in\mathfrak mM.
-\]
+$$
 Hence $m+\mathfrak mM=0$.
 
 Therefore $\phi$ is an isomorphism.

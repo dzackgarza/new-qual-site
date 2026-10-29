@@ -39,21 +39,21 @@ f. A ring whose center is not an ideal.
 ::: {.pf-step #s1}
 
 For part (a), take
-\[
+$$
 A=\ZZ/2\ZZ,
 \qquad
 B=\ZZ/3\ZZ.
-\]
-Then \(A\otimes_{\ZZ}B=0\).
+$$
+Then $A\otimes_{\ZZ}B=0$.
 
 ::: pf-proof
 
-Using \((\ZZ/m)\otimes_{\ZZ}B\cong B/mB\),
-\[
+Using $(\ZZ/m)\otimes_{\ZZ}B\cong B/mB$,
+$$
 (\ZZ/2)\otimes_{\ZZ}(\ZZ/3)
 \cong (\ZZ/3)/2(\ZZ/3)=0,
-\]
-because multiplication by \(2\) is an automorphism of \(\ZZ/3\).
+$$
+because multiplication by $2$ is an automorphism of $\ZZ/3$.
 
 :::
 
@@ -61,15 +61,15 @@ because multiplication by \(2\) is an automorphism of \(\ZZ/3\).
 
 ::: {.pf-step #s2}
 
-For part (b), no such nonzero \(\QQ\)-modules exist.
+For part (b), no such nonzero $\QQ$-modules exist.
 
 ::: pf-proof
 
-A \(\QQ\)-module is a vector space. If \(0\ne v\in V\) and \(0\ne w\in W\), choose linear functionals \(\lambda:V\to\QQ\) and \(\mu:W\to\QQ\) with \(\lambda(v)=\mu(w)=1\). The induced map
-\[
+A $\QQ$-module is a vector space. If $0\ne v\in V$ and $0\ne w\in W$, choose linear functionals $\lambda:V\to\QQ$ and $\mu:W\to\QQ$ with $\lambda(v)=\mu(w)=1$. The induced map
+$$
 \lambda\otimes\mu:V\otimes_{\QQ}W\to\QQ
-\]
-sends \(v\otimes w\) to \(1\), so \(V\otimes_{\QQ}W\ne0\).
+$$
+sends $v\otimes w$ to $1$, so $V\otimes_{\QQ}W\ne0$.
 
 :::
 
@@ -77,11 +77,11 @@ sends \(v\otimes w\) to \(1\), so \(V\otimes_{\QQ}W\ne0\).
 
 ::: {.pf-step #s3}
 
-For part (c), take \(R=\ZZ\) and \(M=\QQ\).
+For part (c), take $R=\ZZ$ and $M=\QQ$.
 
 ::: pf-proof
 
-The \(\ZZ\)-module \(\QQ\) is torsion-free. It is not free: \(\QQ\) is divisible, whereas a nonzero free abelian group is not divisible.
+The $\ZZ$-module $\QQ$ is torsion-free. It is not free: $\QQ$ is divisible, whereas a nonzero free abelian group is not divisible.
 
 :::
 
@@ -90,20 +90,20 @@ The \(\ZZ\)-module \(\QQ\) is torsion-free. It is not free: \(\QQ\) is divisible
 ::: {.pf-step #s4}
 
 For part (d), take
-\[
+$$
 R=M_2(\QQ),
 \qquad
 I=0.
-\]
-Then \(I\) is maximal but not prime under the criterion that \(R/I\) be an integral domain.
+$$
+Then $I$ is maximal but not prime under the criterion that $R/I$ be an integral domain.
 
 ::: pf-proof
 
-The ring \(M_2(\QQ)\) is simple, so its only two-sided ideals are \(0\) and \(R\); hence \(0\) is maximal. But \(R\) has nonzero zero divisors, for example
-\[
+The ring $M_2(\QQ)$ is simple, so its only two-sided ideals are $0$ and $R$; hence $0$ is maximal. But $R$ has nonzero zero divisors, for example
+$$
 E_{11}E_{22}=0,
-\]
-so \(R/I\cong R\) is not an integral domain.
+$$
+so $R/I\cong R$ is not an integral domain.
 
 :::
 
@@ -112,18 +112,18 @@ so \(R/I\cong R\) is not an integral domain.
 ::: {.pf-step #s5}
 
 For part (e), take
-\[
+$$
 R=k[x_1,x_2,x_3,\dots]
-\]
-for any field \(k\).
+$$
+for any field $k$.
 
 ::: pf-proof
 
 The ascending chain
-\[
+$$
 (x_1)\subsetneq(x_1,x_2)\subsetneq(x_1,x_2,x_3)\subsetneq\cdots
-\]
-does not stabilize, so \(R\) is not Noetherian.
+$$
+does not stabilize, so $R$ is not Noetherian.
 
 :::
 
@@ -131,15 +131,15 @@ does not stabilize, so \(R\) is not Noetherian.
 
 ::: {.pf-step #s6}
 
-For part (f), again take \(R=M_2(\QQ)\).
+For part (f), again take $R=M_2(\QQ)$.
 
 ::: pf-proof
 
 Its center is
-\[
+$$
 Z(R)=\{aI_2:a\in\QQ\}.
-\]
-This is a proper subset of \(R\) but contains the identity matrix. Any two-sided ideal containing \(1\) is all of \(R\), so \(Z(R)\) is not an ideal.
+$$
+This is a proper subset of $R$ but contains the identity matrix. Any two-sided ideal containing $1$ is all of $R$, so $Z(R)$ is not an ideal.
 
 :::
 

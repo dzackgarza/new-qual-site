@@ -42,9 +42,9 @@ The torus.
 
 Write $T^2=\RR^2/\ZZ^2$.
 The universal covering map is the quotient, and its deck transformations are exactly
-\[
+$$
 (x,y)\longmapsto(x+m,y+n),\qquad (m,n)\in\ZZ^2.
-\]
+$$
 Hence $\pi_1(T^2)\cong\ZZ^2$.
 
 Connected covering surfaces correspond to subgroups $H\le\ZZ^2$.
@@ -63,20 +63,20 @@ The Klein bottle.
 ::: pf-proof
 
 Let
-\[
+$$
 a(x,y)=(x+1,y),\qquad b(x,y)=(-x,y+1).
-\]
+$$
 The group $\Gamma=\langle a,b\rangle$ acts freely and properly discontinuously on $\RR^2$, and a fundamental domain is a unit square with one pair of opposite edges identified in the same direction and the other pair in opposite directions.
 Hence $\RR^2/\Gamma$ is the Klein bottle and $\RR^2$ is its universal cover.
 
 A direct calculation gives
-\[
+$$
 bab^{-1}=a^{-1}.
-\]
+$$
 Therefore
-\[
+$$
 \pi_1(K)\cong\Gamma\cong\langle a,b\mid bab^{-1}=a^{-1}\rangle.
-\]
+$$
 
 :::
 

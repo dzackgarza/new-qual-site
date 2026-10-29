@@ -30,29 +30,29 @@ Show that a map $f: X \to Y$ of connected CW complexes is a homotopy equivalence
 
 ::: {.solution}
 Let
-\[
+$$
 f:X\to Y
-\]
+$$
 be as in the problem, and let
-\[
+$$
 \widetilde f:\widetilde X\to\widetilde Y
-\]
-be the chosen lift. The universal covers are simply connected CW complexes. By hypothesis \(\widetilde f\) induces an isomorphism on integral homology in every degree. The homology version of Whitehead's theorem for simply connected CW complexes therefore implies
-\[
+$$
+be the chosen lift. The universal covers are simply connected CW complexes. By hypothesis $\widetilde f$ induces an isomorphism on integral homology in every degree. The homology version of Whitehead's theorem for simply connected CW complexes therefore implies
+$$
 \widetilde f\text{ is a homotopy equivalence}.
-\]
+$$
 Hence
-\[
+$$
 \widetilde f_*:\pi_i(\widetilde X)\xrightarrow{\cong}\pi_i(\widetilde Y)
 \qquad(i\ge2).
-\]
+$$
 Covering maps induce isomorphisms on higher homotopy groups, so the commutative lifting square gives
-\[
+$$
 f_*:\pi_i(X)\xrightarrow{\cong}\pi_i(Y)
 \qquad(i\ge2).
-\]
-By assumption \(f_*\) is also an isomorphism on \(\pi_1\), and connectedness gives the \(\pi_0\) condition. Thus \(f\) is a weak homotopy equivalence between CW complexes. Whitehead's theorem yields
-\[
+$$
+By assumption $f_*$ is also an isomorphism on $\pi_1$, and connectedness gives the $\pi_0$ condition. Thus $f$ is a weak homotopy equivalence between CW complexes. Whitehead's theorem yields
+$$
 \boxed{f\text{ is a homotopy equivalence}.}
-\]
+$$
 :::

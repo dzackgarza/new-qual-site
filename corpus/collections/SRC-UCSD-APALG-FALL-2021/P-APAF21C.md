@@ -38,14 +38,14 @@ If $A\in M_n(\CC)$ is positive semidefinite, define its positive semidefinite sq
 
 ::: pf-proof
 By the Hermitian spectral theorem,
-\[
+$$
 A=U\operatorname{diag}(\lambda_1,\ldots,\lambda_n)U^H,
 \qquad \lambda_i\ge0,
-\]
+$$
 for a unitary $U$. Define
-\[
+$$
 A^{1/2}=U\operatorname{diag}(\sqrt{\lambda_1},\ldots,\sqrt{\lambda_n})U^H.
-\]
+$$
 Then $A^{1/2}$ is positive semidefinite and $(A^{1/2})^2=A$. Uniqueness follows because any positive semidefinite square root is diagonalized in the same eigenspaces and must have eigenvalues $\sqrt{\lambda_i}$.
 :::
 
@@ -53,15 +53,15 @@ Then $A^{1/2}$ is positive semidefinite and $(A^{1/2})^2=A$. Uniqueness follows 
 
 ::: pf-step
 For $A\in M_{m,n}(\CC)$, define
-\[
+$$
 |A|=(A^HA)^{1/2}\in M_n(\CC).
-\]
+$$
 
 ::: pf-proof
 The matrix $A^HA$ is Hermitian positive semidefinite because
-\[
+$$
 x^HA^HAx=\|Ax\|^2\ge0.
-\]
+$$
 Hence step [](#psd-square-root-definition){.pf-ref} applies.
 :::
 
@@ -78,15 +78,15 @@ If the eigenvalues of $A^HA$ are $\mu_1,\ldots,\mu_n\ge0$, then by definition th
 
 ::: pf-step
 For square $A$, one has
-\[
+$$
 A\ge0\iff |A|=A.
-\]
+$$
 
 ::: pf-proof
 If $A\ge0$, then $A=A^H$ and $A^HA=A^2$. Since $A$ itself is the positive semidefinite square root of $A^2$, uniqueness gives
-\[
+$$
 |A|=(A^2)^{1/2}=A.
-\]
+$$
 Conversely, $|A|$ is positive semidefinite by definition, so if $A=|A|$, then $A\ge0$.
 :::
 
@@ -94,25 +94,25 @@ Conversely, $|A|$ is positive semidefinite by definition, so if $A=|A|$, then $A
 
 ::: {.pf-step #modulus-formulas-from-svd}
 Let $r=\operatorname{rank}A$ and let
-\[
+$$
 A=U\Sigma V^H
-\]
+$$
 be an SVD, with positive singular values $\sigma_1,\ldots,\sigma_r$. Then
-\[
+$$
 |A|=V\operatorname{diag}(\sigma_1,\ldots,\sigma_r,0_{n-r})V^H
-\]
+$$
 and
-\[
+$$
 |A^H|=U\operatorname{diag}(\sigma_1,\ldots,\sigma_r,0_{m-r})U^H.
-\]
+$$
 
 ::: pf-proof
 The SVD gives
-\[
+$$
 A^HA=V\Sigma^H\Sigma V^H,
 \qquad
 AA^H=U\Sigma\Sigma^H U^H.
-\]
+$$
 The matrices $\Sigma^H\Sigma$ and $\Sigma\Sigma^H$ are diagonal, with diagonal entries $\sigma_1^2,\ldots,\sigma_r^2$ followed by the appropriate number of zeros. Taking their positive square roots yields the displayed formulas.
 :::
 
@@ -123,21 +123,21 @@ Therefore $|A|$ and $|A^H|$ have the same nonzero eigenvalues with the same mult
 
 ::: pf-proof
 The formulas in step [](#modulus-formulas-from-svd){.pf-ref} show that both nonzero spectra are exactly
-\[
+$$
 \sigma_1,\ldots,\sigma_r.
-\]
+$$
 If $m\ge n$, then
-\[
+$$
 |A^H|\sim_u |A|\oplus 0_{m-n},
-\]
+$$
 because both are unitarily similar to
-\[
+$$
 \operatorname{diag}(\sigma_1,\ldots,\sigma_r,0_{m-r}).
-\]
+$$
 If $n\ge m$, similarly
-\[
+$$
 |A|\sim_u |A^H|\oplus0_{n-m}.
-\]
+$$
 In particular, when $m=n$, the two matrices are unitarily similar without adding any zero block.
 :::
 

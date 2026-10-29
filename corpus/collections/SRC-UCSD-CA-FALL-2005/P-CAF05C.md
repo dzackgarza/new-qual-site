@@ -25,9 +25,9 @@ statement above makes the intended region hypothesis explicit.
 
 ::: {.solution}
 Assume that $f$ has no zeros in $G$. Then
-\[
+$$
 g=\frac1f
-\]
+$$
 is holomorphic on $G$ and continuous on $\overline G$.
 
 Because $G$ is bounded, $\overline G$ is compact, so $|f|$ attains a minimum

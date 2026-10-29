@@ -20,27 +20,27 @@ Show that the infinite product $\prod_{n=1}^{\infty} q_n(z)$ converges in $\math
 
 ::: {.solution}
 Let $0<\rho<r=1/\lambda$. Choose $q$ with
-\[
+$$
 \lambda\rho<q<1.
-\]
+$$
 Since $\alpha_n^{1/n}\to\lambda$, for all sufficiently large $n$,
-\[
+$$
 \alpha_n^{1/n}\rho\le q.
-\]
+$$
 Hence for $|z|\le\rho$,
-\[
+$$
 |\alpha_n z^n|
 \le (\alpha_n^{1/n}\rho)^n
 \le q^n.
-\]
+$$
 Therefore
-\[
+$$
 \sum_{n=1}^\infty \sup_{|z|\le\rho}|\alpha_n z^n|<\infty.
-\]
+$$
 The standard theorem on normally convergent infinite products now shows that
-\[
+$$
 \prod_{n=1}^\infty(1-\alpha_nz^n)
-\]
+$$
 converges uniformly on $|z|\le\rho$. Since every compact subset of $B(0,r)$
 lies in such a disk, the product converges in $\mathcal O(B(0,r))$ to a
 holomorphic function $Q$.

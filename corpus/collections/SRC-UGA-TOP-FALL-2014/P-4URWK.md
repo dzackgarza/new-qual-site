@@ -39,9 +39,9 @@ If no, give a counterexample.
 
 Yes.
 Let
-\[
+$$
 X=\prod_{i\in I}X_i
-\]
+$$
 with the product topology, where every $X_i$ is Hausdorff.
 
 ::: pf-proof
@@ -56,16 +56,16 @@ The argument does not require the index set $I$ to be finite.
 ::: {.pf-step #s2}
 
 Let
-\[
+$$
 x=(x_i)_{i\in I},
 \qquad
 y=(y_i)_{i\in I}
-\]
+$$
 be distinct points of $X$.
 Then there is an index $j\in I$ such that
-\[
+$$
 x_j\ne y_j.
-\]
+$$
 
 ::: pf-proof
 
@@ -79,11 +79,11 @@ Since $x\ne y$, at least one coordinate differs.
 ::: pf-step
 
 There are disjoint open sets $U_j,V_j\subseteq X_j$ with
-\[
+$$
 x_j\in U_j,
 \qquad
 y_j\in V_j.
-\]
+$$
 
 ::: pf-proof
 
@@ -96,29 +96,29 @@ The factor $X_j$ is Hausdorff and $x_j\ne y_j$ by step [](#s2){.pf-ref}. Hence t
 ::: {.pf-step #s4}
 
 The sets
-\[
+$$
 U=\pi_j^{-1}(U_j),
 \qquad
 V=\pi_j^{-1}(V_j)
-\]
+$$
 are disjoint open neighborhoods of $x$ and $y$ in $X$.
 
 ::: pf-proof
 
 The coordinate projection
-\[
+$$
 \pi_j:X\to X_j
-\]
+$$
 is continuous by the definition of the product topology.
 Thus $U$ and $V$ are open.
 Moreover,
-\[
+$$
 x\in U,
 \qquad
 y\in V.
-\]
+$$
 Finally,
-\[
+$$
 U\cap V
 =
 \pi_j^{-1}(U_j\cap V_j)
@@ -126,7 +126,7 @@ U\cap V
 \pi_j^{-1}(\varnothing)
 =
 \varnothing.
-\]
+$$
 
 :::
 

@@ -39,12 +39,12 @@ audit:
 
 ::: {.problem}
 There is a bijection
-\[
+$$
 \theset{ \text{morphisms } X \to Y }
 &\stackrel{1: 1}{\leftrightarrow}
 \theset{ k\dash\text{algebra morphisms } \OO_{Y}(Y) \to \OO_{X}(X) } \\
 f &\mapsto f^{*}
-.\]
+.$$
 
 Does this bijection hold if
 

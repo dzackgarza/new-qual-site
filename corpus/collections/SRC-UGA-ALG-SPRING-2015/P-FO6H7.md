@@ -27,15 +27,15 @@ Prove that there is a basis $\mcb_3$ with respect to which $A$ and $B$ are both 
 
 ::: {.solution}
 Because $A$ is diagonalizable,
-\[
+$$
 V=\bigoplus_{\lambda}E_\lambda(A),
 \qquad
 E_\lambda(A)=\ker(A-\lambda I).
-\]
+$$
 Since $AB=BA$, every eigenspace $E_\lambda(A)$ is $B$-invariant: if $v\in E_\lambda(A)$, then
-\[
+$$
 A(Bv)=B(Av)=B(\lambda v)=\lambda Bv.
-\]
+$$
 
 Because $B$ is diagonalizable, its minimal polynomial is a product of distinct linear factors. The minimal polynomial of the restriction $B|_{E_\lambda(A)}$ divides the minimal polynomial of $B$, so it too is a product of distinct linear factors. Hence each restriction $B|_{E_\lambda(A)}$ is diagonalizable.
 

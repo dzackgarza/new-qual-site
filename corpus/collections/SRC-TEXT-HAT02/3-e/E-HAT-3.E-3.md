@@ -30,70 +30,70 @@ Compute the Bockstein homomorphisms in $H^*(X; \ZZ_p)$ and use this to describe 
 
 ::: {.solution}
 Let
-\[
+$$
 M=M(\ZZ_p,n).
-\]
+$$
 With $\ZZ_p$ coefficients, its reduced cohomology has one generator
-\[
+$$
 a\in\widetilde H^n(M;\ZZ_p)
-\]
+$$
 and one generator
-\[
+$$
 b\in\widetilde H^{n+1}(M;\ZZ_p),
-\]
+$$
 with Bockstein
-\[
+$$
 \beta(a)=b,
 \qquad \beta(b)=0.
-\]
+$$
 
 For the smash product of $k$ copies,
-\[
+$$
 X=M^{\wedge k},
-\]
+$$
 the reduced Künneth theorem over the field $\ZZ_p$ gives
-\[
+$$
 \widetilde H^*(X;\ZZ_p)
 \cong
 \widetilde H^*(M;\ZZ_p)^{\otimes k}.
-\]
+$$
 A basis consists of tensors
-\[
+$$
 u_1\otimes\cdots\otimes u_k,
 \qquad u_i\in\{a,b\}.
-\]
+$$
 The Bockstein is a graded derivation, hence
-\[
+$$
 \beta(u_1\otimes\cdots\otimes u_k)
 =
 \sum_{j=1}^k
 (-1)^{|u_1|+\cdots+|u_{j-1}|}
  u_1\otimes\cdots\otimes\beta(u_j)\otimes\cdots\otimes u_k.
-\]
+$$
 Thus the Bockstein complex is the $k$-fold tensor product of the two-term acyclic complex
-\[
+$$
 \ZZ_p\{a\}\xrightarrow{\cong}\ZZ_p\{b\}.
-\]
+$$
 In particular its Bockstein cohomology is zero.
 
 To recover the integral groups explicitly, use cellular chains. The reduced cellular chain complex of $M$ is the two-term complex
-\[
+$$
 0\to\ZZ\xrightarrow{p}\ZZ\to0
-\]
+$$
 in degrees $n+1,n$. The reduced chain complex of $X$ is its $k$-fold tensor product, the Koszul complex for the sequence $(p,\dots,p)$. Its homology is
-\[
+$$
 \widetilde H_{kn+j}(X;\ZZ)
 \cong(\ZZ_p)^{\binom{k-1}{j}},
 \qquad 0\le j\le k-1,
-\]
+$$
 and zero in all other degrees. This follows inductively from the Künneth short exact sequence: tensoring with one more Moore complex replaces the multiplicities by adjacent sums, giving Pascal's identity.
 
 All these homology groups are torsion, so the cohomology universal coefficient theorem shifts them up by one degree through Ext. Hence
-\[
+$$
 \boxed{
 \widetilde H^{kn+r}(X;\ZZ)
 \cong(\ZZ_p)^{\binom{k-1}{r-1}}
 \quad(1\le r\le k),}
-\]
+$$
 and the reduced integral cohomology vanishes in all other degrees.
 :::

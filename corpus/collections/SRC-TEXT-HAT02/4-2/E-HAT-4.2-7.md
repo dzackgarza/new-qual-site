@@ -28,39 +28,39 @@ Construct a CW complex $X$ with prescribed homotopy groups $\pi_i(X)$ and prescr
 :::
 
 ::: {.solution}
-Let the prescribed fundamental group be \(G_1\). For \(i>1\), the prescribed group \(G_i\) is necessarily abelian, and suppose we are given a homomorphism
-\[
+Let the prescribed fundamental group be $G_1$. For $i>1$, the prescribed group $G_i$ is necessarily abelian, and suppose we are given a homomorphism
+$$
 \rho_i:G_1\to\operatorname{Aut}(G_i)
-\]
-for each \(i>1\).
+$$
+for each $i>1$.
 
-Choose functorial CW or simplicial models \(K(G_i,i)\). Functoriality lets each automorphism of \(G_i\) act on \(K(G_i,i)\), so \(\rho_i\) gives a \(G_1\)-action on this Eilenberg--MacLane space. Form
-\[
+Choose functorial CW or simplicial models $K(G_i,i)$. Functoriality lets each automorphism of $G_i$ act on $K(G_i,i)$, so $\rho_i$ gives a $G_1$-action on this Eilenberg--MacLane space. Form
+$$
 F=\prod_{i>1}K(G_i,i)
-\]
-with the diagonal \(G_1\)-action. Replace the product by the standard weak product CW model if desired; it has
-\[
+$$
+with the diagonal $G_1$-action. Replace the product by the standard weak product CW model if desired; it has
+$$
 \pi_i(F)\cong G_i\qquad(i>1),
 \quad
 \pi_1(F)=0.
-\]
+$$
 
-Let \(EG_1\) be a contractible free \(G_1\)-CW complex and define the Borel construction
-\[
+Let $EG_1$ be a contractible free $G_1$-CW complex and define the Borel construction
+$$
 X=EG_1\times_{G_1}F.
-\]
+$$
 There is a fiber bundle
-\[
+$$
 F\longrightarrow X\longrightarrow BG_1=K(G_1,1).
-\]
-Since \(F\) is simply connected, the long exact homotopy sequence gives
-\[
+$$
+Since $F$ is simply connected, the long exact homotopy sequence gives
+$$
 \pi_1(X)\cong G_1,
 \qquad
 \pi_i(X)\cong\pi_i(F)\cong G_i\quad(i>1).
-\]
-The universal cover is \(EG_1\times F\simeq F\), and a deck transformation \(g\in G_1\) acts on the \(i\)-th homotopy group exactly through the chosen action \(\rho_i(g)\). Hence
-\[
+$$
+The universal cover is $EG_1\times F\simeq F$, and a deck transformation $g\in G_1$ acts on the $i$-th homotopy group exactly through the chosen action $\rho_i(g)$. Hence
+$$
 \boxed{X\text{ realizes all the prescribed homotopy groups and prescribed }\pi_1\text{-actions}.}
-\]
+$$
 :::

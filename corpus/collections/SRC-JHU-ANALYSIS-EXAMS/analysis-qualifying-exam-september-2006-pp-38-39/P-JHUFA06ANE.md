@@ -30,26 +30,26 @@ Let $X$ be the Banach space of continuous real-valued functions on $[0,\pi]$ tha
 
 ::: {.solution}
 For each $N\ge0$, let
-\[
+$$
 V_N=\operatorname{span}\{1,\sin x,\cos x,\ldots,\sin Nx,\cos Nx\},
-\]
+$$
 and set
-\[
+$$
 Y_N=Y\cap V_N.
-\]
+$$
 Each $V_N$ is finite dimensional, hence closed in $X$, so $Y_N$ is closed in $Y$. By hypothesis, every $y\in Y$ is a trigonometric polynomial of some finite degree, therefore
-\[
+$$
 Y=\bigcup_{N=0}^\infty Y_N.
-\]
+$$
 Since $Y$ is closed in the Banach space $X$, it is itself Banach. By the Baire category theorem, some $Y_N$ has nonempty interior relative to $Y$. Because $Y_N$ is a linear subspace of $Y$, nonempty interior forces
-\[
+$$
 Y_N=Y.
-\]
+$$
 Indeed, if a ball $B_Y(y_0,r)\subset Y_N$, then $y_0\in Y_N$ and hence $B_Y(0,r)\subset Y_N$; by scalar multiplication every vector of $Y$ then lies in $Y_N$.
 
 Thus
-\[
+$$
 Y\subset V_N,
-\]
+$$
 and $V_N$ is finite dimensional. Hence $Y$ is finite dimensional.
 :::

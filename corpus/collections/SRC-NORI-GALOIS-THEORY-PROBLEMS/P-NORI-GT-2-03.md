@@ -51,10 +51,10 @@ If $2^{e_1}3^{e_2}5^{e_3}$ with $e_i\in\{0,1\}$ were a rational square, unique f
 ::: {.pf-step #s1-2}
 
 The eight monomials
-\[
+$$
 (\sqrt2)^{e_1}(\sqrt3)^{e_2}(\sqrt5)^{e_3},
 \qquad e_i\in\{0,1\},
-\]
+$$
 form a $\QQ$-basis of $E$.
 
 
@@ -69,23 +69,23 @@ They span because powers of each square root reduce using $\sqrt2^2=2$, $\sqrt3^
 ::: {.pf-step #s1-3}
 
 For every $(b_1,b_2,b_3)\in\{\pm1\}^3$, there is a $\QQ$-automorphism $\sigma_b$ of $E$ with
-\[
+$$
 \sigma_b(\sqrt2)=b_1\sqrt2,
 \quad
 \sigma_b(\sqrt3)=b_2\sqrt3,
 \quad
 \sigma_b(\sqrt5)=b_3\sqrt5.
-\]
+$$
 
 
 ::: pf-proof
 
 On the basis in step [](#s1-2){.pf-ref} define
-\[
+$$
 \sigma_b\!\left((\sqrt2)^{e_1}(\sqrt3)^{e_2}(\sqrt5)^{e_3}\right)
 =b_1^{e_1}b_2^{e_2}b_3^{e_3}
 (\sqrt2)^{e_1}(\sqrt3)^{e_2}(\sqrt5)^{e_3},
-\]
+$$
 and extend $\QQ$-linearly. This respects multiplication because it preserves the three defining square relations. Moreover $\sigma_b^2=\mathrm{id}$, so it is an automorphism.
 
 :::
@@ -95,10 +95,10 @@ and extend $\QQ$-linearly. This respects multiplication because it preserves the
 ::: {.pf-step #s1-4}
 
 The eight images of $\alpha$ under these automorphisms are
-\[
+$$
 b_1\sqrt2+b_2\sqrt3+b_3\sqrt5,
 \qquad (b_1,b_2,b_3)\in\{\pm1\}^3,
-\]
+$$
 and they are pairwise distinct.
 
 
@@ -118,10 +118,10 @@ Let $m_\alpha(T)\in\QQ[T]$ be the minimal polynomial of $\alpha$. Every number i
 ::: pf-proof
 
 Since $m_\alpha(\alpha)=0$, applying any $\QQ$-automorphism $\sigma_b$ gives
-\[
+$$
 0=\sigma_b(m_\alpha(\alpha))
 =m_\alpha(\sigma_b(\alpha)).
-\]
+$$
 
 :::
 
@@ -130,9 +130,9 @@ Since $m_\alpha(\alpha)=0$, applying any $\QQ$-automorphism $\sigma_b$ gives
 ::: {.pf-step #s1-6}
 
 Hence
-\[
+$$
 [\QQ(\alpha):\QQ]=\deg m_\alpha\ge8.
-\]
+$$
 
 
 ::: pf-proof
@@ -146,17 +146,17 @@ By steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}, the polynomial $m_\alpha
 ::: {.pf-step #s1-7}
 
 Since $\QQ(\alpha)\subseteq E$ and $[E:\QQ]=8$, one also has
-\[
+$$
 [\QQ(\alpha):\QQ]\le8.
-\]
+$$
 
 
 ::: pf-proof
 
 This follows from the tower law applied to
-\[
+$$
 \QQ\subseteq\QQ(\alpha)\subseteq E.
-\]
+$$
 
 :::
 
@@ -165,21 +165,21 @@ This follows from the tower law applied to
 ::: {.pf-step #s1-8}
 
 Therefore
-\[
+$$
 [\QQ(\alpha):\QQ]=8=[E:\QQ],
-\]
+$$
 so
-\[
+$$
 \boxed{\QQ(\sqrt2+\sqrt3+\sqrt5)=E.}
-\]
+$$
 
 
 ::: pf-proof
 
 Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} force equality of the degrees. The tower law then gives
-\[
+$$
 [E:\QQ(\alpha)]=1,
-\]
+$$
 hence the two fields are equal.
 
 :::

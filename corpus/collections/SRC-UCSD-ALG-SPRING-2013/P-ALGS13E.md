@@ -124,9 +124,9 @@ There are only finitely many possible orders of eigenvalues of torsion elements 
 ::: pf-proof
 The Euler totient function satisfies $\varphi(d) \to \infty$ as $d \to \infty$.
 Thus
-\[
+$$
 D_n=\{d\ge 1:\varphi(d)\le n\}
-\]
+$$
 is finite.
 By step [](#p2-s3){.pf-ref}, the order of every eigenvalue belongs to $D_n$.
 :::
@@ -140,9 +140,9 @@ The order $m$ of $g$ is the least common multiple of the orders of its eigenvalu
 By Part (a), $g$ is diagonalizable over $\CC$.
 If its eigenvalues are $\lambda_1,\ldots,\lambda_n$, then $g^r=1$ exactly when $\lambda_i^r=1$ for every $i$.
 Hence
-\[
+$$
 m=\operatorname{lcm}(\operatorname{ord}(\lambda_1),\ldots,\operatorname{ord}(\lambda_n)).
-\]
+$$
 :::
 
 :::
@@ -152,9 +152,9 @@ Hence $m$ is bounded by a constant depending only on $n$.
 
 ::: pf-proof
 Let
-\[
+$$
 M_n=\operatorname{lcm}\{d:d\in D_n\}.
-\]
+$$
 The integer $M_n$ is finite by step [](#p2-s4){.pf-ref}. By step [](#p2-s5){.pf-ref}, the order of every torsion element of $\mathrm{GL}_n(\QQ)$ divides $M_n$, so it is at most $M_n$.
 :::
 

@@ -18,10 +18,10 @@ audit:
 
 ::: {.problem}
 How many zeros does
-\[
+$$
 f(z)=z^6+4z^2e^{z+1}-3
-\]
-have in the unit disk \(|z|<1\)?
+$$
+have in the unit disk $|z|<1$?
 :::
 
 ::: {.solution}

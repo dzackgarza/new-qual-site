@@ -41,22 +41,22 @@ Prove that f (z) is entire.
 
 ::: {.pf-step #arbitrary-polynomial-weight}
 The hypothesis implies
-\[
+$$
 \int_\Gamma q(z)f(z)\,dz=0
-\]
+$$
 for every polynomial $q\in\CC[z]$ and every closed contour $\Gamma$ avoiding the poles of $f$.
 
 ::: pf-proof
 Fix a polynomial $p$.
 Applying the hypothesis first to $p+1$ and then to $p$, and subtracting, gives
-\[
+$$
 0=\int_\Gamma\bigl((p+1)^2-p^2\bigr)f(z)\,dz
 =\int_\Gamma(2p+1)f(z)\,dz.
-\]
+$$
 Now let $q$ be arbitrary and choose
-\[
+$$
 p=\frac{q-1}{2},
-\]
+$$
 which is again a polynomial over $\CC$.
 Then $2p+1=q$, giving the desired identity.
 :::
@@ -69,20 +69,20 @@ The function $f$ has no poles.
 ::: pf-proof
 Suppose, for contradiction, that $f$ has a pole of order $m\ge1$ at $a$.
 Its Laurent expansion near $a$ has the form
-\[
+$$
 f(z)=\frac{c_{-m}}{(z-a)^m}+\frac{c_{-(m-1)}}{(z-a)^{m-1}}+\cdots,
 \qquad c_{-m}\ne0.
-\]
+$$
 Take the polynomial
-\[
+$$
 q(z)=(z-a)^{m-1}.
-\]
+$$
 Then $q(z)f(z)$ has a simple pole at $a$ with residue $c_{-m}\ne0$.
 Choose a sufficiently small positively oriented circle $\Gamma$ about $a$ containing no other pole of $f$.
 By the residue theorem,
-\[
+$$
 \int_\Gamma q(z)f(z)\,dz=2\pi i\,c_{-m}\ne0,
-\]
+$$
 contradicting step [](#arbitrary-polynomial-weight){.pf-ref}. Thus $f$ has no poles.
 :::
 

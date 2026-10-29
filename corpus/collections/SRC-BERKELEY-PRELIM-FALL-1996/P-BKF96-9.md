@@ -23,11 +23,11 @@ audit:
 
 ::: {.problem}
 For positive integers $a,b,c$, prove that
-\[
+$$
 \gcd\bigl(a,\operatorname{lcm}(b,c)\bigr)
 =
 \operatorname{lcm}\bigl(\gcd(a,b),\gcd(a,c)\bigr).
-\]
+$$
 :::
 
 ::: {.solution}

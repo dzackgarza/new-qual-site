@@ -27,11 +27,11 @@ Prove that every group of order $12$ has a nontrivial proper normal subgroup.
 
 ::: {.solution}
 Let $n_3$ be the number of Sylow $3$-subgroups. Sylow's theorem gives
-\[
+$$
 n_3\equiv1\pmod3,
 \qquad
 n_3\mid4,
-\]
+$$
 so $n_3=1$ or $4$.
 
 ::: pf
@@ -57,9 +57,9 @@ If $n_3=4$, then the Sylow $2$-subgroup is unique and hence normal.
 
 Four distinct subgroups of order $3$ intersect pairwise only in the identity,
 so their nonidentity elements account for
-\[
+$$
 4(3-1)=8
-\]
+$$
 elements of $G$. Thus exactly three nonidentity elements remain outside all
 Sylow $3$-subgroups.
 

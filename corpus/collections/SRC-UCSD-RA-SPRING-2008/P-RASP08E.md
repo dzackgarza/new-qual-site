@@ -43,19 +43,19 @@ Show inductively that every $f_n$ is well defined and continuous.
 ::: pf-proof
 
 Let
-\[
+$$
 M:=\sup_{z\in\CC}|F(z)|<\infty.
-\]
+$$
 The function $f_0\equiv y_0$ is continuous. Suppose $f_n$ is continuous. Then $f_n$ is Borel measurable, hence $F\circ f_n$ is Borel measurable. It is bounded by $M$, so it is Lebesgue integrable on $[0,1]$.
 
 Therefore
-\[
+$$
 f_{n+1}(x)=y_0+\int_0^xF(f_n(t))\,dt
-\]
+$$
 is well defined for every $x\in[0,1]$. In fact $f_{n+1}$ is absolutely continuous, hence continuous. By induction,
-\[
+$$
 \boxed{f_n\in C([0,1])\text{ for every }n.}
-\]
+$$
 
 :::
 
@@ -68,21 +68,21 @@ Establish uniform boundedness and equicontinuity.
 ::: pf-proof
 
 For $n\ge0$ and $x\in[0,1]$,
-\[
+$$
 |f_{n+1}(x)|
 \le |y_0|+\int_0^x|F(f_n(t))|\,dt
 \le |y_0|+M.
-\]
+$$
 Thus $(f_n)_{n\ge1}$ is uniformly bounded.
 
 Also, for $x,y\in[0,1]$,
-\[
+$$
 \begin{aligned}
 |f_{n+1}(x)-f_{n+1}(y)|
 &=\left|\int_y^xF(f_n(t))\,dt\right|\\
 &\le M|x-y|.
 \end{aligned}
-\]
+$$
 Hence the family is equi-Lipschitz, and therefore equicontinuous.
 
 :::
@@ -96,13 +96,13 @@ Apply Arzelà--Ascoli.
 ::: pf-proof
 
 The interval $[0,1]$ is compact. By Step 2, the sequence $(f_n)_{n\ge1}$ is uniformly bounded and equicontinuous. The Arzelà--Ascoli theorem therefore gives a subsequence $(f_{n_k})$ and a continuous function $f\in C([0,1])$ such that
-\[
+$$
 \|f_{n_k}-f\|_\infty\longrightarrow0.
-\]
+$$
 Equivalently,
-\[
+$$
 \boxed{f_{n_k}\to f\text{ in }C([0,1]).}
-\]
+$$
 
 :::
 

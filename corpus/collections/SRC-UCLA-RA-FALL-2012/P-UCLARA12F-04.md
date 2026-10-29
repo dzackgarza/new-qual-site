@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Fix $f\in C(\circlegroup)$, where $\circlegroup=\RR/(2\pi\ZZ)$, and let $s_n$ denote the $n$th partial sum of the Fourier series of $f$.
 Prove that
-\[
+$$
 \lim_{n\to\infty}\frac{\|s_n\|_{L^\infty(\circlegroup)}}{\log n}=0.
-\]
+$$
 :::
 
 ::: {.solution}

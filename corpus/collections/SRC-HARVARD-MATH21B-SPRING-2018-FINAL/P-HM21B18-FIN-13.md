@@ -15,33 +15,33 @@ audit:
 ::: {.problem}
 Assume $2\pi$-periodic spatial boundary conditions, and use the course
 Fourier norm
-\[
+$$
 \|g\|^2=\frac1\pi\int_{-\pi}^{\pi}|g(x)|^2\,dx.
-\]
+$$
 In part (c), the initial velocity $x$ is understood as the corresponding
 $2\pi$-periodic $L^2$ function on $(-\pi,\pi)$.
 
 (a) Solve
-\[
+$$
 u_t=9u_{xx}
-\]
+$$
 with initial condition
-\[
+$$
 u(x,0)=4\sin x+5\sin(2x).
-\]
+$$
 
 (b) Use Parseval's equality to compute $\|u(x,1)\|^2$.
 
 (c) Solve
-\[
+$$
 u_{tt}=9u_{xx}-2u+1
-\]
+$$
 with
-\[
+$$
 u(x,0)=7\sin(5x),
 \qquad
 u_t(x,0)=x.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -51,19 +51,19 @@ u_t(x,0)=x.
 ::: {.pf-step #s1-1}
 
 For the heat equation, each sine mode evolves by
-\[
+$$
 \sin(nx)\longmapsto e^{-9n^2t}\sin(nx).
-\]
+$$
 
 
 ::: pf-proof
 
 If $u(x,t)=a(t)\sin(nx)$, then
-\[
+$$
 u_t=a'(t)\sin(nx),
 \qquad
 9u_{xx}=-9n^2a(t)\sin(nx).
-\]
+$$
 Thus $a'=-9n^2a$, so $a(t)=a(0)e^{-9n^2t}$.
 
 :::
@@ -73,9 +73,9 @@ Thus $a'=-9n^2a$, so $a(t)=a(0)e^{-9n^2t}$.
 ::: {.pf-step #s1-2}
 
 The solution of part (a) is
-\[
+$$
 u(x,t)=4e^{-9t}\sin x+5e^{-36t}\sin(2x).
-\]
+$$
 
 
 ::: pf-proof
@@ -91,24 +91,24 @@ $4\sin x+5\sin(2x)$, as required.
 ::: {.pf-step #s1-3}
 
 The answer to part (b) is
-\[
+$$
 \|u(x,1)\|^2=16e^{-18}+25e^{-72}.
-\]
+$$
 
 
 ::: pf-proof
 
 With the stated norm, the functions $\sin(nx)$ are orthonormal. By
 step [](#s1-2){.pf-ref},
-\[
+$$
 u(x,1)=4e^{-9}\sin x+5e^{-36}\sin(2x).
-\]
+$$
 Parseval's identity therefore gives
-\[
+$$
 \|u(x,1)\|^2
 =(4e^{-9})^2+(5e^{-36})^2
 =16e^{-18}+25e^{-72}.
-\]
+$$
 
 :::
 
@@ -117,16 +117,16 @@ Parseval's identity therefore gives
 ::: {.pf-step #s1-4}
 
 On $(-\pi,\pi)$,
-\[
+$$
 x=2\sum_{n=1}^\infty\frac{(-1)^{n+1}}n\sin(nx)
-\]
+$$
 in the Fourier sense.
 
 
 ::: pf-proof
 
 The function $x$ is odd, so only sine coefficients occur. For $n\geq1$,
-\[
+$$
 \begin{aligned}
 b_n
 &=\frac1\pi\int_{-\pi}^{\pi}x\sin(nx)\,dx\\
@@ -136,7 +136,7 @@ b_n
 \right]_{0}^{\pi}\\
 &=\frac{2(-1)^{n+1}}n.
 \end{aligned}
-\]
+$$
 This gives the displayed sine series. It represents $x$ for
 $-\pi<x<\pi$ and its periodic $L^2$ class globally.
 
@@ -147,28 +147,28 @@ $-\pi<x<\pi$ and its periodic $L^2$ class globally.
 ::: {.pf-step #s1-5}
 
 For part (c), let
-\[
+$$
 \omega_n=\sqrt{9n^2+2}.
-\]
+$$
 The nonconstant sine-mode amplitudes satisfy
-\[
+$$
 q_n''+\omega_n^2q_n=0.
-\]
+$$
 
 
 ::: pf-proof
 
 For $q_n(t)\sin(nx)$,
-\[
+$$
 9u_{xx}-2u
 =-(9n^2+2)q_n(t)\sin(nx).
-\]
+$$
 The constant forcing $1$ has no sine component, so comparison of the
 $n$th sine coefficients in
 $u_{tt}=9u_{xx}-2u+1$ yields
-\[
+$$
 q_n''+(9n^2+2)q_n=0.
-\]
+$$
 
 :::
 
@@ -178,18 +178,18 @@ q_n''+(9n^2+2)q_n=0.
 
 The component determined by the initial position
 $7\sin(5x)$ is
-\[
+$$
 u_{\mathrm{pos}}(x,t)
 =7\cos(\sqrt{227}\,t)\sin(5x).
-\]
+$$
 
 
 ::: pf-proof
 
 For $n=5$, step [](#s1-5){.pf-ref} gives
-\[
+$$
 \omega_5=\sqrt{9\cdot25+2}=\sqrt{227}.
-\]
+$$
 The amplitude with initial data $q_5(0)=7$ and $q_5'(0)=0$ is
 $q_5(t)=7\cos(\sqrt{227}\,t)$.
 
@@ -200,26 +200,26 @@ $q_5(t)=7\cos(\sqrt{227}\,t)$.
 ::: {.pf-step #s1-7}
 
 The component determined by the initial velocity $x$ is
-\[
+$$
 u_{\mathrm{vel}}(x,t)
 =
 \sum_{n=1}^\infty
 \frac{2(-1)^{n+1}}{n\sqrt{9n^2+2}}
 \sin\!\bigl(\sqrt{9n^2+2}\,t\bigr)\sin(nx).
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-4){.pf-ref}, the initial velocity coefficient of $\sin(nx)$ is
-\[
+$$
 v_n=\frac{2(-1)^{n+1}}n.
-\]
+$$
 For the oscillator in step [](#s1-5){.pf-ref} with zero initial position and initial
 velocity $v_n$, the amplitude is
-\[
+$$
 q_n(t)=\frac{v_n}{\omega_n}\sin(\omega_nt).
-\]
+$$
 Substituting $v_n$ and $\omega_n$ gives the displayed series.
 
 :::
@@ -229,25 +229,25 @@ Substituting $v_n$ and $\omega_n$ gives the displayed series.
 ::: {.pf-step #s1-8}
 
 The spatially constant component forced by $1$ is
-\[
+$$
 u_{\mathrm{const}}(t)
 =\frac{1-\cos(\sqrt2\,t)}2.
-\]
+$$
 
 
 ::: pf-proof
 
 For a spatially constant function $c(t)$, the PDE becomes
-\[
+$$
 c''=-2c+1,
 \qquad\text{equivalently}\qquad
 c''+2c=1.
-\]
+$$
 To preserve the given initial position and velocity, this component must
 satisfy $c(0)=c'(0)=0$. The function
-\[
+$$
 c(t)=\frac{1-\cos(\sqrt2\,t)}2
-\]
+$$
 satisfies both initial conditions and
 $c''+2c=1$.
 
@@ -258,7 +258,7 @@ $c''+2c=1$.
 ::: {.pf-step #s1-9}
 
 The solution of part (c) is
-\[
+$$
 \begin{aligned}
 u(x,t)
 ={}&7\cos(\sqrt{227}\,t)\sin(5x)\\
@@ -267,15 +267,15 @@ u(x,t)
 \sin\!\bigl(\sqrt{9n^2+2}\,t\bigr)\sin(nx)\\
 &+\frac{1-\cos(\sqrt2\,t)}2.
 \end{aligned}
-\]
+$$
 
 
 ::: pf-proof
 
 The operator
-\[
+$$
 L[u]=u_{tt}-9u_{xx}+2u
-\]
+$$
 is linear. Steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} give solutions of $L[u]=0$, while
 step [](#s1-8){.pf-ref} gives a solution of $L[u]=1$. Their sum therefore solves the
 inhomogeneous PDE. At $t=0$, the second and third components vanish and
@@ -291,7 +291,7 @@ $L^2$ sense.
 ::: {.pf-step #s1-10}
 
 Collecting the requested outputs,
-\[
+$$
 \boxed{
 \begin{aligned}
 \text{(a)}\quad&
@@ -306,7 +306,7 @@ u(x,t)=7\cos(\sqrt{227}\,t)\sin(5x)\\
 {n\sqrt{9n^2+2}}\sin(nx)
 +\frac{1-\cos(\sqrt2\,t)}2.
 \end{aligned}}
-\]
+$$
 
 
 ::: pf-proof

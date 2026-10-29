@@ -19,15 +19,15 @@ audit:
 ::: {.problem}
 The hyperbolic cosine function, denoted $\cosh$, is defined by the equation:
 
-\[
+$$
 \cosh x = \frac{e^x + e^{-x}}{2}
-\]
+$$
 
 If the hyperbolic tangent function, $\tanh$, is defined by
 
-\[
+$$
 \tanh x = \frac{\sinh x}{\cosh x}
-\]
+$$
 
 find a formula for $\tanh^{-1} x$.
 

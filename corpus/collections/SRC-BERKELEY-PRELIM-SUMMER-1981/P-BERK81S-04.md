@@ -28,15 +28,15 @@ audit:
 
 ::: {.problem}
 Let $f:\RR\to\RR$ be continuous and suppose
-\[
+$$
 \int_{-\infty}^{\infty}|f(x)|\,dx<\infty.
-\]
+$$
 Show that there is a sequence $x_n\to\infty$ such that
-\[
+$$
 x_nf(x_n)\to0
 \qquad\text{and}\qquad
 x_nf(-x_n)\to0.
-\]
+$$
 :::
 
 ::: {.solution}

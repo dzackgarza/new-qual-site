@@ -20,13 +20,13 @@ audit:
 
 ::: {.problem}
 Prove that
-\[
+$$
 z^4+z^3+1
-\]
+$$
 has exactly one root in the quadrant
-\[
+$$
 \{z=x+iy:x>0,\ y>0\}.
-\]
+$$
 :::
 
 ::: {.solution}

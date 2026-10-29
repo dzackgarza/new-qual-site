@@ -62,10 +62,10 @@ Choose $u\in R$ outside $\CC1_R$. The two elements $1_R,u$ form a vector-space b
 ::: {.pf-step #s3}
 
 Up to isomorphism, the two-dimensional unital complex algebras are
-\[
+$$
 \boxed{\CC\times\CC\quad\text{and}\quad
 \CC[\varepsilon]/(\varepsilon^2)}.
-\]
+$$
 The first has maximal ideals $\CC\times0$ and $0\times\CC$; the second has the unique maximal ideal $(\varepsilon)$.
 
 ::: pf-proof

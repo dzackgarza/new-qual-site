@@ -45,18 +45,18 @@ To triangulate $S^n$, use the boundary of an $(n+1)$-simplex.
 ::: pf-step
 
 The boundary complex
-\[
+$$
 \partial\Delta^{n+1}
-\]
+$$
 is a triangulation of $S^n$.
 
 ::: pf-proof
 
 The simplex $\Delta^{n+1}$ is homeomorphic to the closed ball $D^{n+1}$.
 Its topological boundary is therefore homeomorphic to
-\[
+$$
 \partial D^{n+1}=S^n.
-\]
+$$
 The proper faces of $\Delta^{n+1}$ form the simplicial complex $\partial\Delta^{n+1}$, giving the standard triangulation of that boundary.
 
 :::
@@ -66,9 +66,9 @@ The proper faces of $\Delta^{n+1}$ form the simplicial complex $\partial\Delta^{
 ::: {.pf-step #s2}
 
 For each $0\le k\le n$, the triangulation $\partial\Delta^{n+1}$ has
-\[
+$$
 f_k=\binom{n+2}{k+1}
-\]
+$$
 $k$-simplices.
 
 ::: pf-proof
@@ -76,9 +76,9 @@ $k$-simplices.
 The simplex $\Delta^{n+1}$ has $n+2$ vertices.
 A $k$-dimensional face is determined uniquely by choosing its $k+1$ vertices.
 Hence there are
-\[
+$$
 \binom{n+2}{k+1}
-\]
+$$
 such faces.
 Since $k\le n$, every $k$-face is a proper face and therefore belongs to the boundary complex.
 
@@ -89,10 +89,10 @@ Since $k\le n$, every $k$-face is a proper face and therefore belongs to the bou
 ::: {.pf-step #s3}
 
 Thus
-\[
+$$
 \chi(S^n)
 =\sum_{k=0}^{n}(-1)^k\binom{n+2}{k+1}.
-\]
+$$
 
 ::: pf-proof
 
@@ -106,33 +106,33 @@ Apply this to the simplex counts from step [](#s2){.pf-ref}.
 ::: {.pf-step #s4}
 
 The alternating sum in step [](#s3){.pf-ref} equals
-\[
+$$
 1+(-1)^n.
-\]
+$$
 
 ::: pf-proof
 
 Set $j=k+1$.
 Then
-\[
+$$
 \chi(S^n)
 =-\sum_{j=1}^{n+1}(-1)^j\binom{n+2}{j}.
-\]
+$$
 The binomial theorem gives
-\[
+$$
 0=(1-1)^{n+2}
 =\sum_{j=0}^{n+2}(-1)^j\binom{n+2}{j}.
-\]
+$$
 Therefore
-\[
+$$
 \sum_{j=1}^{n+1}(-1)^j\binom{n+2}{j}
 =-1-(-1)^{n+2}
 =-1-(-1)^n.
-\]
+$$
 Negating this identity yields
-\[
+$$
 \chi(S^n)=1+(-1)^n.
-\]
+$$
 
 :::
 
@@ -141,14 +141,14 @@ Negating this identity yields
 ::: pf-step
 
 Hence
-\[
+$$
 \boxed{
 \chi(S^n)=
 \begin{cases}
 2,&n\text{ even},\\
 0,&n\text{ odd}.
 \end{cases}}
-\]
+$$
 
 ::: pf-proof
 

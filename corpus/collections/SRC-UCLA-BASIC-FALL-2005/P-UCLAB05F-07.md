@@ -23,9 +23,9 @@ Prove that the maximum number of linearly independent rows of $A$ equals the max
 ::: {.solution}
 
 Let
-\[
+$$
 T:\RR^m\to\RR^n
-\]
+$$
 be the linear map whose standard matrix is $A$.
 
 ::: pf
@@ -33,21 +33,21 @@ be the linear map whose standard matrix is $A$.
 ::: {.pf-step #s1-1}
 
 The column rank of $A$ is
-\[
+$$
 \operatorname{rank}(T).
-\]
+$$
 
 
 ::: pf-proof
 
 The columns of $A$ are
-\[
+$$
 T(e_1),\ldots,T(e_m),
-\]
+$$
 where $e_1,\ldots,e_m$ is the standard basis of $\RR^m$. Hence their span is exactly $\operatorname{im}T$, so the maximum number of linearly independent columns is
-\[
+$$
 \dim\operatorname{im}T=\operatorname{rank}(T).
-\]
+$$
 
 :::
 
@@ -56,21 +56,21 @@ where $e_1,\ldots,e_m$ is the standard basis of $\RR^m$. Hence their span is exa
 ::: {.pf-step #s1-2}
 
 The row rank of $A$ is
-\[
+$$
 \operatorname{rank}(T^t).
-\]
+$$
 
 
 ::: pf-proof
 
 The standard matrix of the transpose map
-\[
+$$
 T^t:(\RR^n)^*\to(\RR^m)^*
-\]
+$$
 is $A^t$. The columns of $A^t$ are the rows of $A$. By step [](#s1-1){.pf-ref} applied to $T^t$, the maximum number of linearly independent rows of $A$ is therefore
-\[
+$$
 \operatorname{rank}(T^t).
-\]
+$$
 
 :::
 
@@ -79,22 +79,22 @@ is $A^t$. The columns of $A^t$ are the rows of $A$. By step [](#s1-1){.pf-ref} a
 ::: {.pf-step #s1-3}
 
 One has
-\[
+$$
 \ker(T^t)=(\operatorname{im}T)^0,
-\]
+$$
 the annihilator of $\operatorname{im}T$ in $(\RR^n)^*$.
 
 
 ::: pf-proof
 
 Let $\varphi\in(\RR^n)^*$. Then
-\[
+$$
 T^t\varphi=0
-\]
+$$
 if and only if
-\[
+$$
 (T^t\varphi)(v)=\varphi(Tv)=0
-\]
+$$
 for every $v\in\RR^m$. This holds exactly when $\varphi$ vanishes on every vector in $\operatorname{im}T$.
 
 :::
@@ -104,29 +104,29 @@ for every $v\in\RR^m$. This holds exactly when $\varphi$ vanishes on every vecto
 ::: {.pf-step #s1-4}
 
 If $Y$ is a subspace of a finite-dimensional vector space $W$, then
-\[
+$$
 \dim Y^0=\dim W-\dim Y.
-\]
+$$
 
 
 ::: pf-proof
 
 Choose a basis
-\[
+$$
 y_1,\ldots,y_r
-\]
+$$
 of $Y$ and extend it to a basis
-\[
+$$
 y_1,\ldots,y_r,w_{r+1},\ldots,w_s
-\]
+$$
 of $W$. In the dual basis of $W^*$, the annihilator $Y^0$ is spanned by
-\[
+$$
 w_{r+1}^*,\ldots,w_s^*.
-\]
+$$
 Thus
-\[
+$$
 \dim Y^0=s-r=\dim W-\dim Y.
-\]
+$$
 
 :::
 
@@ -140,11 +140,11 @@ The ranks of $T$ and $T^t$ are equal.
 ::: pf-proof
 
 By rank-nullity for
-\[
+$$
 T^t:(\RR^n)^*\to(\RR^m)^*,
-\]
+$$
 steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give
-\[
+$$
 \begin{aligned}
 \operatorname{rank}(T^t)
 &=
@@ -156,7 +156,7 @@ n-(n-\dim\operatorname{im}T)\\
 &=
 \operatorname{rank}(T).
 \end{aligned}
-\]
+$$
 
 :::
 

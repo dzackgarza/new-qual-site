@@ -32,13 +32,13 @@ Suppose, for contradiction, that $A$ is disconnected.
 ::: pf-proof
 
 Then there exist nonempty disjoint subsets
-\[
+$$
 U,V\subseteq A
-\]
+$$
 such that
-\[
+$$
 A=U\cup V
-\]
+$$
 and both $U$ and $V$ are open and closed in the subspace topology on $A$.
 
 :::
@@ -48,20 +48,20 @@ and both $U$ and $V$ are open and closed in the subspace topology on $A$.
 ::: pf-step
 
 Since $A\cap B$ is connected,
-\[
+$$
 A\cap B
-\]
+$$
 is contained entirely in one of $U$ or $V$.
 
 
 ::: pf-proof
 
 The sets
-\[
+$$
 (A\cap B)\cap U
 \qquad\text{and}\qquad
 (A\cap B)\cap V
-\]
+$$
 are disjoint, relatively open and relatively closed subsets of $A\cap B$, and their union is $A\cap B$.
 Connectedness therefore forces one of them to be empty.
 Thus $A\cap B$ lies entirely in the other.
@@ -73,13 +73,13 @@ Thus $A\cap B$ lies entirely in the other.
 ::: {.pf-step #s1-3}
 
 After exchanging $U$ and $V$ if necessary, assume
-\[
+$$
 A\cap B\subseteq U.
-\]
+$$
 Then
-\[
+$$
 V\cap B=\varnothing.
-\]
+$$
 
 
 ::: pf-proof
@@ -111,24 +111,24 @@ Hence $V$ is closed in $A\cup B$.
 ::: {.pf-step #s1-5}
 
 The complement of $V$ in $A\cup B$ is
-\[
+$$
 (A\cup B)\setminus V
 =
 U\cup B,
-\]
+$$
 and this set is closed in $A\cup B$.
 
 
 ::: pf-proof
 
 Because
-\[
+$$
 A=U\cup V
-\]
+$$
 and $V\cap B=\varnothing$ by step [](#s1-3){.pf-ref},
-\[
+$$
 (A\cup B)\setminus V=U\cup B.
-\]
+$$
 
 The set $U$ is closed in $A$, hence closed in $A\cup B$ because $A$ is closed there.
 The set $B$ is closed in $\RR^n$, hence closed in $A\cup B$.
@@ -161,9 +161,9 @@ The set $V$ is a nonempty proper subset of $A\cup B$.
 
 It is nonempty by the assumed disconnection of $A$.
 It is proper because $U$ is nonempty and
-\[
+$$
 U\subseteq(A\cup B)\setminus V.
-\]
+$$
 
 :::
 
@@ -186,9 +186,9 @@ But $V$ has exactly these properties.
 ::: {.pf-step #s1-9}
 
 Therefore
-\[
+$$
 \boxed{A\text{ is connected}.}
-\]
+$$
 
 
 ::: pf-proof

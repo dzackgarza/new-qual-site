@@ -35,11 +35,11 @@ Let $R$ be a (commutative) principal ideal domain, let $M$ and $N$ be finitely g
 
 ::: {.pf-step #s1}
 
-The image \(C=\operatorname{im}\varphi\) is a finitely generated free \(R\)-module.
+The image $C=\operatorname{im}\varphi$ is a finitely generated free $R$-module.
 
 ::: pf-proof
 
-Since \(N\) is a finitely generated free module over the PID \(R\), every submodule of \(N\) is free. Thus \(C\le N\) is free. It is finitely generated because it is the image of the finitely generated module \(M\).
+Since $N$ is a finitely generated free module over the PID $R$, every submodule of $N$ is free. Thus $C\le N$ is free. It is finitely generated because it is the image of the finitely generated module $M$.
 
 :::
 
@@ -48,18 +48,18 @@ Since \(N\) is a finitely generated free module over the PID \(R\), every submod
 ::: pf-step
 
 The exact sequence
-\[
+$$
 0\longrightarrow K\longrightarrow M\overset{\varphi}{\longrightarrow} C\longrightarrow0
-\]
+$$
 splits.
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, \(C\) is free, hence projective. Therefore the surjection \(M\twoheadrightarrow C\) admits an \(R\)-linear section \(s:C\to M\). Consequently
-\[
+By step [](#s1){.pf-ref}, $C$ is free, hence projective. Therefore the surjection $M\twoheadrightarrow C$ admits an $R$-linear section $s:C\to M$. Consequently
+$$
 M=K\oplus s(C),
-\]
-so \(K\) is a direct summand of \(M\).
+$$
+so $K$ is a direct summand of $M$.
 
 :::
 
@@ -67,29 +67,29 @@ so \(K\) is a direct summand of \(M\).
 
 ::: pf-step
 
-The image need not be a direct summand of \(N\).
+The image need not be a direct summand of $N$.
 
 ::: pf-proof
 
 Take
-\[
+$$
 R=\ZZ,\qquad M=N=\ZZ,
 \qquad
 \varphi:\ZZ\to\ZZ,\quad \varphi(m)=2m.
-\]
+$$
 Then
-\[
+$$
 C=\operatorname{im}\varphi=2\ZZ.
-\]
-If \(2\ZZ\) were a direct summand of \(\ZZ\), then
-\[
+$$
+If $2\ZZ$ were a direct summand of $\ZZ$, then
+$$
 \ZZ\cong 2\ZZ\oplus L
-\]
-for some subgroup \(L\). Taking the quotient by \(2\ZZ\) would give
-\[
+$$
+for some subgroup $L$. Taking the quotient by $2\ZZ$ would give
+$$
 L\cong \ZZ/2\ZZ.
-\]
-But every subgroup of the torsion-free group \(\ZZ\) is torsion-free, so no such \(L\) exists. Hence \(2\ZZ\) is not a direct summand of \(\ZZ\).
+$$
+But every subgroup of the torsion-free group $\ZZ$ is torsion-free, so no such $L$ exists. Hence $2\ZZ$ is not a direct summand of $\ZZ$.
 
 :::
 

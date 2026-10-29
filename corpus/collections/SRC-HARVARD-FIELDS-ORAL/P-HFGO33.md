@@ -29,9 +29,9 @@ Define a cyclotomic extension.
 A cyclotomic extension of a field $F$ is an extension obtained by adjoining a
 root of unity. Concretely, for a positive integer $n$ and a primitive $n$th
 root of unity $\zeta_n$, one considers
-\[
+$$
 F(\zeta_n)/F.
-\]
+$$
 When $F=\QQ$, the field $\QQ(\zeta_n)$ is called the $n$th
 cyclotomic field.
 

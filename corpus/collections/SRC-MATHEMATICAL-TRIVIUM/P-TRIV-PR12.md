@@ -40,9 +40,9 @@ The arrival process is Poisson with rate $a$. The counter records every particle
 ::: {.pf-step #s1-1}
 
 Conditional on exactly $n$ arrivals during $[0,t]$, their ordered arrival times
-\[
+$$
 0<T_1<\cdots<T_n<t
-\]
+$$
 are uniformly distributed on the simplex of volume $t^n/n!$.
 
 
@@ -57,10 +57,10 @@ For a homogeneous Poisson process, conditional on $N(t)=n$, the unordered arriva
 ::: {.pf-step #s1-2}
 
 For fixed $n\geq1$, all particles are counted exactly when
-\[
+$$
 T_{i+1}-T_i\geq\tau
 \qquad(1\leq i<n).
-\]
+$$
 
 
 ::: pf-proof
@@ -74,21 +74,21 @@ After each recorded arrival the counter is dead for time $\tau$. Thus the next a
 ::: {.pf-step #s1-3}
 
 Set
-\[
+$$
 S_i=T_i-(i-1)\tau.
-\]
+$$
 Then the inequalities in step [](#s1-2){.pf-ref} are equivalent to
-\[
+$$
 0<S_1<\cdots<S_n<t-(n-1)\tau.
-\]
+$$
 
 
 ::: pf-proof
 
 One has
-\[
+$$
 S_{i+1}-S_i=T_{i+1}-T_i-\tau.
-\]
+$$
 Thus the separation inequalities are equivalent to $S_{i+1}\geq S_i$; equality occurs on a measure-zero boundary and does not affect probability. The upper bound follows from $T_n<t$.
 
 :::
@@ -98,19 +98,19 @@ Thus the separation inequalities are equivalent to $S_{i+1}\geq S_i$; equality o
 ::: {.pf-step #s1-4}
 
 Hence, provided $(n-1)\tau<t$,
-\[
+$$
 P(\text{all counted}\mid N(t)=n)
 =\left(1-\frac{(n-1)\tau}{t}\right)^n,
-\]
+$$
 and this conditional probability is zero when $(n-1)\tau\geq t$, except for the measure-zero endpoint case.
 
 
 ::: pf-proof
 
 The translation in step [](#s1-3){.pf-ref} has Jacobian $1$. The admissible simplex therefore has volume
-\[
+$$
 \frac{(t-(n-1)\tau)^n}{n!}.
-\]
+$$
 Divide by the full conditional simplex volume $t^n/n!$ from step [](#s1-1){.pf-ref}.
 
 :::
@@ -120,28 +120,28 @@ Divide by the full conditional simplex volume $t^n/n!$ from step [](#s1-1){.pf-r
 ::: {.pf-step #s1-5}
 
 Since
-\[
+$$
 P(N(t)=n)=e^{-at}\frac{(at)^n}{n!},
-\]
+$$
 the required probability is
-\[
+$$
 \boxed{
 P(\text{all counted})
 =e^{-at}\sum_{n\geq0}
 \frac{a^n}{n!}
 \bigl(t-(n-1)\tau\bigr)_+^n,}
-\]
+$$
 where the $n=0$ term is $1$ and $x_+=\max(x,0)$.
 
 
 ::: pf-proof
 
 Condition on $N(t)=n$ and multiply the Poisson probability by the conditional probability in step [](#s1-4){.pf-ref}:
-\[
+$$
 e^{-at}\frac{(at)^n}{n!}
 \frac{(t-(n-1)\tau)^n}{t^n}
 =e^{-at}\frac{a^n(t-(n-1)\tau)^n}{n!}.
-\]
+$$
 Summing over all feasible $n$ gives the formula; the positive-part notation makes the sum finite automatically.
 
 :::

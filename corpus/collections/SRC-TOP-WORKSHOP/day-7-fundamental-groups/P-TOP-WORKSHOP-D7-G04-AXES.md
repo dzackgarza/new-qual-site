@@ -26,16 +26,16 @@ audit:
 :::
 
 ::: {.solution}
-Let \(L\) be the union of the three coordinate axes. Since \(0\in L\), every point of \(X=\RR^3\setminus L\) is nonzero. Radial projection gives a deformation retraction
-\[
+Let $L$ be the union of the three coordinate axes. Since $0\in L$, every point of $X=\RR^3\setminus L$ is nonzero. Radial projection gives a deformation retraction
+$$
 X\longrightarrow S^2\setminus(L\cap S^2).
-\]
-The six points of \(L\cap S^2\) are
-\[
+$$
+The six points of $L\cap S^2$ are
+$$
 \pm e_1,\ \pm e_2,\ \pm e_3.
-\]
-Hence \(X\simeq S^2\setminus\{6\text{ points}\}\). Removing one of these points identifies the punctured sphere with \(\RR^2\); removing the remaining five points gives \(\RR^2\) minus five points, which deformation retracts onto a wedge of five circles. Therefore
-\[
+$$
+Hence $X\simeq S^2\setminus\{6\text{ points}\}$. Removing one of these points identifies the punctured sphere with $\RR^2$; removing the remaining five points gives $\RR^2$ minus five points, which deformation retracts onto a wedge of five circles. Therefore
+$$
 \boxed{\pi_1(X)\cong F_5}.
-\]
+$$
 :::

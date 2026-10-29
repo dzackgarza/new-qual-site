@@ -15,9 +15,9 @@ review: draft
 
 ::: {.problem}
 A sequence $\{f_n:\RR\to\RR\}_{n=1}^{\infty}$ converges uniformly to $f:\RR\to\RR$ if, for every $\varepsilon>0$, there is a positive integer $N$ such that
-\[
+$$
 n>N\quad\Longrightarrow\quad |f_n(x)-f(x)|<\varepsilon
-\]
+$$
 for all $x\in\RR$.
 
 1. What must one check to show that a sequence does not converge uniformly?
@@ -27,10 +27,10 @@ for all $x\in\RR$.
 
 ::: {.solution}
 The negation of uniform convergence is
-\[
+$$
 \exists\varepsilon_0>0\ \forall N\in\NN\ \exists n>N\ \exists x\in\RR:
 |f_n(x)-f(x)|\geq\varepsilon_0.
-\]
+$$
 
 For example, let $f_n(x)=x/n$ and $f(x)=0$.
 For each fixed $x$, one has $x/n\to0$.
@@ -38,7 +38,7 @@ The convergence is not uniform.
 Take $\varepsilon_0=1$.
 For every $N$, choose $n=N+1$ and $x=n$.
 Then
-\[
+$$
 |f_n(x)-f(x)|=1.
-\]
+$$
 :::

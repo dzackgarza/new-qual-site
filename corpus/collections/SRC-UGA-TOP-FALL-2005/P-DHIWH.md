@@ -49,9 +49,9 @@ We also use the defining property of the usual topology on $\RR$: if $U\subseteq
 
 ::: {.pf-step #s-nonempty-bounded}
 Let $\mathcal U$ be an arbitrary open cover of $[0,1]$, and define
-\[
+$$
 S=\{x\in[0,1]:[0,x]\text{ is covered by finitely many members of }\mathcal U\}.
-\]
+$$
 Then $S$ is nonempty and bounded above.
 
 ::: pf-proof
@@ -64,23 +64,23 @@ Also $S\subseteq[0,1]$, so $1$ is an upper bound for $S$.
 
 ::: {.pf-step #sup-in-s}
 Let
-\[
+$$
 s=\sup S.
-\]
+$$
 Then $s\in S$.
 
 ::: pf-proof
 Choose $U\in\mathcal U$ with $s\in U$.
 Since $U$ is open in the subspace $[0,1]$, there exists $\varepsilon>0$ such that
-\[
+$$
 (s-\varepsilon,s+\varepsilon)\cap[0,1]\subseteq U.
-\]
+$$
 
 If $s=0$, then $s\in S$ by step [](#s-nonempty-bounded){.pf-ref}. Suppose $s>0$.
 By the defining property of the supremum, there exists $x\in S$ satisfying
-\[
+$$
 s-\varepsilon<x\le s.
-\]
+$$
 Choose finitely many members of $\mathcal U$ covering $[0,x]$.
 Together with $U$, they cover $[0,s]$: points at most $x$ are covered by the finite family, while points of $[x,s]$ lie in $(s-\varepsilon,s+\varepsilon)\cap[0,1]\subseteq U$.
 Thus $[0,s]$ has a finite subcover, so $s\in S$.
@@ -94,16 +94,16 @@ One must have $s=1$.
 ::: pf-proof
 Suppose instead that $s<1$.
 Using the same $U$ and $\varepsilon$ from step [](#sup-in-s){.pf-ref}, choose
-\[
+$$
 y\in(s,\min\{1,s+\varepsilon\}).
-\]
+$$
 Such a $y$ exists because both $1$ and $s+\varepsilon$ are strictly larger than $s$.
 
 By step [](#sup-in-s){.pf-ref}, finitely many members of $\mathcal U$ cover $[0,s]$.
 Adding $U$ gives a finite cover of $[0,y]$, because
-\[
+$$
 [s,y]\subseteq(s-\varepsilon,s+\varepsilon)\cap[0,1]\subseteq U.
-\]
+$$
 Hence $y\in S$, contradicting $y>s=\sup S$.
 Therefore $s=1$.
 :::

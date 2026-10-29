@@ -47,28 +47,28 @@ Show an element $x$ is central by showing $\size C_x = 1$.
 
 - Let $p \definedas \size H$.
 
-- Let \( \theset{ C_i }_{i\leq n} \) be the conjugacy classes in $G$, then $G = \disjoint_{i\leq n} C_i$
+- Let $\theset{ C_i }_{i\leq n}$ be the conjugacy classes in $G$, then $G = \disjoint_{i\leq n} C_i$
 
-- By the first fact, there is a sub-collection \( \theset{ C_{i_j}}_{j\leq k } \)  such that 
-\[
+- By the first fact, there is a sub-collection $\theset{ C_{i_j}}_{j\leq k }$  such that 
+$$
 H = \disjoint_{j\leq k} C_{i_j}
-.\]
+.$$
 
 - The identity is always in a single conjugacy class, so $C_e = \theset{ e }$.
 
 - Since $e\in H$, without loss of generality, label $C_{i_1} = \theset{ e }$.
 
 - So
-\[
+$$
 H 
 = \Disjoint_{j\leq k} C_{i_j} 
 = C_{i_1}{\textstyle  \coprod} \displaystyle\Disjoint_{\substack{ j\leq k \\ j\neq 1} } C_{i_j} 
-.\]
+.$$
 
 - Take cardinality in the above equation 
-\[
+$$
 p = 1 + \sum_{\substack{ j\leq k \\ j\neq 1 }} \size C_{i_j}
-.\]
+.$$
 
 - So $\size C_{i_j} \leq p-1$ for all $j\neq 1$.
 
@@ -85,9 +85,9 @@ p = 1 + \sum_{\substack{ j\leq k \\ j\neq 1 }} \size C_{i_j}
 ::: {.solution}
 Because $|H|=p$ is prime, $H\cong C_p$.
 Conjugation by $G$ on $H$ gives a homomorphism
-\[
+$$
 \varphi:G\longrightarrow \operatorname{Aut}(H)\cong C_{p-1}.
-\]
+$$
 Hence $|\operatorname{im}\varphi|$ divides both $|G|$ and $p-1$.
 Every prime divisor of $|\operatorname{im}\varphi|$ therefore divides $|G|$, so by minimality of $p$ it is at least $p$; but it also divides $p-1$.
 Thus $|\operatorname{im}\varphi|=1$.

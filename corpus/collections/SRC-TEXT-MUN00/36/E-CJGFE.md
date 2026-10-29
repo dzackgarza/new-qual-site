@@ -49,8 +49,8 @@ Here are the key reasons.
 - Hausdorffness, regularity, complete regularity, first/second countability, local metrizability, and metrizability are hereditary to arbitrary subspaces.
 - Local connectedness and local path connectedness pass to open subspaces because an open neighborhood in the subspace is open in the ambient space locally; they need not pass to closed or arbitrary subspaces (standard sine-curve examples suffice).
 - Compactness, limit point compactness, and Lindelöfness pass to closed subspaces. They do not pass to arbitrary or open subspaces in general.
-- Local compact Hausdorffness passes to both open and closed subspaces, but not arbitrary subspaces: \(\QQ\subset\RR\) is the standard counterexample.
+- Local compact Hausdorffness passes to both open and closed subspaces, but not arbitrary subspaces: $\QQ\subset\RR$ is the standard counterexample.
 - Normality passes to closed subspaces but not arbitrary or open subspaces.
-- Separability passes to open subspaces: if \(D\) is countable dense in \(X\) and \(U\subset X\) is open, then \(D\cap U\) is dense in \(U\). It does not pass to arbitrary or closed subspaces; the separable Sorgenfrey plane contains an uncountable closed discrete anti-diagonal.
+- Separability passes to open subspaces: if $D$ is countable dense in $X$ and $U\subset X$ is open, then $D\cap U$ is dense in $U$. It does not pass to arbitrary or closed subspaces; the separable Sorgenfrey plane contains an uncountable closed discrete anti-diagonal.
 - Connectedness and path connectedness are not hereditary even to closed or open subspaces.
 :::

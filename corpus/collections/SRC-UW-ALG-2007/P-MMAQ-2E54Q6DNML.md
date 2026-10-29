@@ -29,23 +29,23 @@ Show there are exactly two groups of order 21 up to isomorphism.
 ::: {.pf-step #s1}
 
 Let $G$ be a group of order
-\[
+$$
 21=3\cdot7.
-\]
+$$
 Then $G$ has a unique Sylow $7$-subgroup $N$.
 
 ::: pf-proof
 
 If $n_7$ denotes the number of Sylow $7$-subgroups, the Sylow theorems give
-\[
+$$
 n_7\equiv1\pmod7,
 \qquad
 n_7\mid3.
-\]
+$$
 The only possibility is $n_7=1$. Hence $N\trianglelefteq G$, and since $|N|=7$, we have
-\[
+$$
 N\cong C_7.
-\]
+$$
 
 :::
 
@@ -54,20 +54,20 @@ N\cong C_7.
 ::: {.pf-step #s2}
 
 Let $H$ be a Sylow $3$-subgroup. Then
-\[
+$$
 H\cong C_3,
 \qquad
 N\cap H=1,
 \qquad
 G=NH.
-\]
+$$
 
 ::: pf-proof
 
 Since $|H|=3$, the group $H$ is cyclic. The intersection $N\cap H$ has order dividing both $7$ and $3$, hence is trivial. Therefore
-\[
+$$
 |NH|=\frac{|N||H|}{|N\cap H|}=21=|G|,
-\]
+$$
 so $NH=G$.
 
 :::
@@ -77,13 +77,13 @@ so $NH=G$.
 ::: pf-step
 
 Thus every group of order $21$ is a semidirect product
-\[
+$$
 G\cong C_7\rtimes_\varphi C_3
-\]
+$$
 for some homomorphism
-\[
+$$
 \varphi:C_3\longrightarrow\operatorname{Aut}(C_7).
-\]
+$$
 
 ::: pf-proof
 
@@ -96,9 +96,9 @@ By step [](#s1){.pf-ref}, $N$ is normal, and by step [](#s2){.pf-ref}, $G=NH$ wi
 ::: {.pf-step #s4}
 
 If $\varphi$ is trivial, then
-\[
+$$
 G\cong C_7\times C_3\cong C_{21}.
-\]
+$$
 
 ::: pf-proof
 
@@ -115,29 +115,29 @@ Up to isomorphism, there is exactly one nontrivial semidirect product $C_7\rtime
 ::: pf-proof
 
 We have
-\[
+$$
 \operatorname{Aut}(C_7)\cong(\ZZ/7\ZZ)^\times\cong C_6.
-\]
+$$
 A nontrivial homomorphism $C_3\to C_6$ must be injective, and its image must be a subgroup of order $3$. A cyclic group has a unique subgroup of each order dividing its order, so $C_6$ has exactly one subgroup of order $3$.
 
 There are two injections $C_3\to C_6$ with that image, according to which of the two generators of the image is assigned to a chosen generator of $C_3$. They differ by the automorphism of $C_3$ sending a generator to its inverse, and precomposing a semidirect-product action by an automorphism of the acting group yields an isomorphic semidirect product. Hence there is exactly one isomorphism class arising from a nontrivial action.
 
 Explicitly, if
-\[
+$$
 C_7=\langle a\rangle,
 \qquad
 C_3=\langle b\rangle,
-\]
+$$
 then multiplication by $2$ modulo $7$ has order $3$, because
-\[
+$$
 2^3\equiv1\pmod7,
 \qquad
 2\not\equiv1\pmod7.
-\]
+$$
 Thus the unique nonabelian group may be presented as
-\[
+$$
 \langle a,b\mid a^7=b^3=1,\;bab^{-1}=a^2\rangle.
-\]
+$$
 
 :::
 
@@ -150,9 +150,9 @@ The two groups in steps [](#s4){.pf-ref} and [](#s5){.pf-ref} are not isomorphic
 ::: pf-proof
 
 The group in step [](#s4){.pf-ref} is abelian. In the group from step [](#s5){.pf-ref},
-\[
+$$
 bab^{-1}=a^2\ne a,
-\]
+$$
 so $a$ and $b$ do not commute; hence it is nonabelian.
 
 :::
@@ -167,9 +167,9 @@ Therefore there are exactly two groups of order $21$ up to isomorphism:
 
 :::
 
-\[
+$$
 \boxed{C_{21}}
 \qquad\text{and}\qquad
 \boxed{C_7\rtimes C_3\text{ with nontrivial action}}.
-\]
+$$
 :::

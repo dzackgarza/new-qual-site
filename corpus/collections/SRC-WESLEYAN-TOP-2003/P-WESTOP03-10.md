@@ -12,21 +12,21 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 f:X\to Y
-\]
+$$
 be continuous and onto, where $X$ is compact Hausdorff and $Y$ is Hausdorff. Prove that there is a subspace $F\subseteq X$ minimal, under inclusion, among compact subspaces $Z\subseteq X$ satisfying
-\[
+$$
 f(Z)=Y.
-\]
+$$
 :::
 
 ::: {.solution}
 
 Let
-\[
+$$
 \mathcal C=\{Z\subseteq X: Z\text{ is compact and }f(Z)=Y\},
-\]
+$$
 ordered by inclusion.
 
 ::: pf
@@ -47,9 +47,9 @@ The space $X$ itself is compact and $f(X)=Y$ because $f$ is onto. Hence $X\in\ma
 ::: {.pf-step #s1-2}
 
 Let $\mathcal T\subseteq\mathcal C$ be a chain and set
-\[
+$$
 F_{\mathcal T}=\bigcap_{Z\in\mathcal T}Z.
-\]
+$$
 Then $F_{\mathcal T}$ is compact.
 
 
@@ -64,19 +64,19 @@ Because $X$ is Hausdorff, every compact subset $Z\subseteq X$ is closed. Thus $F
 ::: {.pf-step #s1-3}
 
 For every $y\in Y$, the family
-\[
+$$
 \{Z\cap f^{-1}(y):Z\in\mathcal T\}
-\]
+$$
 consists of nonempty compact subsets of $X$ and has the finite intersection property.
 
 
 ::: pf-proof
 
 For each $Z\in\mathcal T$, surjectivity $f(Z)=Y$ gives a point of $Z\cap f^{-1}(y)$, so this set is nonempty. Since $Y$ is Hausdorff, $\{y\}$ is closed, hence $f^{-1}(y)$ is closed in $X$; intersecting it with compact $Z$ gives a compact set. Finally, because $\mathcal T$ is totally ordered by inclusion, any finite collection $Z_1,\ldots,Z_m$ has a smallest member, say $Z_j$, and
-\[
+$$
 \bigcap_{i=1}^m(Z_i\cap f^{-1}(y))
 =Z_j\cap f^{-1}(y)\ne\varnothing.
-\]
+$$
 
 :::
 
@@ -85,19 +85,19 @@ For each $Z\in\mathcal T$, surjectivity $f(Z)=Y$ gives a point of $Z\cap f^{-1}(
 ::: {.pf-step #s1-4}
 
 Hence for every $y\in Y$,
-\[
+$$
 F_{\mathcal T}\cap f^{-1}(y)\ne\varnothing.
-\]
+$$
 
 
 ::: pf-proof
 
 The compact space $X$ has the property that every family of closed subsets with the finite intersection property has nonempty total intersection. Apply this to the family in step [](#s1-3){.pf-ref}:
-\[
+$$
 \bigcap_{Z\in\mathcal T}(Z\cap f^{-1}(y))
 =\left(\bigcap_{Z\in\mathcal T}Z\right)\cap f^{-1}(y)
 =F_{\mathcal T}\cap f^{-1}(y).
-\]
+$$
 
 :::
 
@@ -106,9 +106,9 @@ The compact space $X$ has the property that every family of closed subsets with 
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 f(F_{\mathcal T})=Y,
-\]
+$$
 so $F_{\mathcal T}\in\mathcal C$ and is a lower bound for the chain $\mathcal T$.
 
 
@@ -123,9 +123,9 @@ Step [](#s1-4){.pf-ref} says that every $y\in Y$ has a preimage lying in $F_{\ma
 ::: {.pf-step #s1-6}
 
 Apply Zorn's lemma to $\mathcal C$ with the reverse inclusion order
-\[
+$$
 Z\preceq W\quad\Longleftrightarrow\quad W\subseteq Z.
-\]
+$$
 There exists a maximal element $F$ for $\preceq$.
 
 
@@ -153,9 +153,9 @@ Suppose $Z\in\mathcal C$ and $Z\subseteq F$. Then, in the reverse order, $F\prec
 ::: {.pf-step #s1-8}
 
 Therefore there exists a compact subspace
-\[
+$$
 \boxed{F\subseteq X}
-\]
+$$
 minimal among compact subspaces mapping onto $Y$.
 
 

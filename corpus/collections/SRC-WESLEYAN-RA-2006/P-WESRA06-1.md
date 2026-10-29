@@ -44,9 +44,9 @@ Cauchy sequences.
 ::: pf-proof
 
 A sequence $(x_n)$ in $X$ is Cauchy if for every $\varepsilon>0$ there exists $N$ such that
-\[
+$$
 m,n\ge N\quad\Longrightarrow\quad d(x_m,x_n)<\varepsilon.
-\]
+$$
 
 :::
 
@@ -60,13 +60,13 @@ Every convergent sequence is Cauchy.
 
 Suppose $x_n\to x\in X$.
 Given $\varepsilon>0$, choose $N$ such that
-\[
+$$
 n\ge N\quad\Longrightarrow\quad d(x_n,x)<\frac\varepsilon2.
-\]
+$$
 Then for $m,n\ge N$, the triangle inequality gives
-\[
+$$
 d(x_m,x_n)\le d(x_m,x)+d(x,x_n)<\varepsilon.
-\]
+$$
 Hence $(x_n)$ is Cauchy.
 
 :::
@@ -92,9 +92,9 @@ Baire category theorem.
 ::: pf-proof
 
 One standard form is: if $(X,d)$ is a nonempty complete metric space and $U_1,U_2,\ldots$ are open dense subsets of $X$, then
-\[
+$$
 \bigcap_{n=1}^\infty U_n
-\]
+$$
 is dense in $X$.
 
 Equivalently, a nonempty complete metric space cannot be written as a countable union of closed sets with empty interior.

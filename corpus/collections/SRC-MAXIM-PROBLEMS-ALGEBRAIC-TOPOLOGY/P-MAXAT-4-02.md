@@ -22,9 +22,9 @@ Prove the Suspension Theorem for homotopy groups.
 ::: {.solution}
 
 The suspension theorem is the Freudenthal suspension theorem: if $X$ is $(r-1)$-connected, $r\geq1$, then the suspension homomorphism
-\[
+$$
 E:\pi_i(X)\longrightarrow\pi_{i+1}(\Sigma X)
-\]
+$$
 is an isomorphism for $i<2r-1$ and a surjection for $i=2r-1$.
 
 ::: pf
@@ -32,18 +32,18 @@ is an isomorphism for $i<2r-1$ and a surjection for $i=2r-1$.
 ::: pf-step
 
 Let
-\[
+$$
 \eta:X\longrightarrow\Omega\Sigma X
-\]
+$$
 be the adjoint of the identity map of $\Sigma X$.
 
 
 ::: pf-proof
 
 The suspension-loop adjunction gives a natural bijection
-\[
+$$
 [\Sigma X,Y]_*\cong[X,\Omega Y]_*.
-\]
+$$
 Taking $Y=\Sigma X$ and the identity of $\Sigma X$ yields the unit map $\eta$.
 
 :::
@@ -53,22 +53,22 @@ Taking $Y=\Sigma X$ and the identity of $\Sigma X$ yields the unit map $\eta$.
 ::: {.pf-step #s1-2}
 
 Under the natural identification
-\[
+$$
 \pi_i(\Omega\Sigma X)\cong\pi_{i+1}(\Sigma X),
-\]
+$$
 the map
-\[
+$$
 \eta_*:\pi_i(X)\to\pi_i(\Omega\Sigma X)
-\]
+$$
 is exactly the suspension homomorphism $E$.
 
 
 ::: pf-proof
 
 An element of $\pi_i(X)$ is represented by a based map $S^i\to X$. Composing with $\eta$ and then applying the loop-suspension adjunction produces the suspended map
-\[
+$$
 S^{i+1}=\Sigma S^i\to\Sigma X.
-\]
+$$
 This is the definition of the suspension homomorphism.
 
 :::
@@ -78,19 +78,19 @@ This is the definition of the suspension homomorphism.
 ::: pf-step
 
 The reduced diagonal
-\[
+$$
 \widetilde\Delta:X\longrightarrow X\wedge X
-\]
+$$
 is $(2r-1)$-connected when $X$ is $(r-1)$-connected, in the sense relevant to the first nontrivial cross-effect of the suspension-loop unit.
 
 
 ::: pf-proof
 
 If $X$ is $(r-1)$-connected, then $X\wedge X$ is $(2r-1)$-connected: cellularly, the first possible non-basepoint cell in each factor has dimension at least $r$, so the first cell in the smash has dimension at least $2r$. Equivalently, the connectivity formula
-\[
+$$
 \operatorname{conn}(X\wedge Y)
 \geq\operatorname{conn}(X)+\operatorname{conn}(Y)+1
-\]
+$$
 gives $2r-1$.
 
 :::
@@ -100,9 +100,9 @@ gives $2r-1$.
 ::: {.pf-step #s1-4}
 
 The Freudenthal connectivity lemma says that the unit
-\[
+$$
 \eta:X\to\Omega\Sigma X
-\]
+$$
 is $(2r-1)$-connected.
 
 
@@ -117,17 +117,17 @@ Cover $\Sigma X$ by its two open cones $C_+X$ and $C_-X$. Each cone is contracti
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 \eta_*:\pi_i(X)\to\pi_i(\Omega\Sigma X)
-\]
+$$
 is an isomorphism for
-\[
+$$
 i<2r-1
-\]
+$$
 and a surjection for
-\[
+$$
 i=2r-1.
-\]
+$$
 
 
 ::: pf-proof
@@ -141,17 +141,17 @@ By definition, a $k$-connected map induces isomorphisms on homotopy groups in de
 ::: {.pf-step #s1-6}
 
 Translating step [](#s1-5){.pf-ref} through step [](#s1-2){.pf-ref} gives
-\[
+$$
 \boxed{
 E:\pi_i(X)\xrightarrow{\cong}\pi_{i+1}(\Sigma X)
 \quad(i<2r-1),}
-\]
+$$
 and
-\[
+$$
 \boxed{
 E:\pi_{2r-1}(X)\twoheadrightarrow
 \pi_{2r}(\Sigma X).}
-\]
+$$
 
 
 ::: pf-proof
@@ -165,10 +165,10 @@ Step [](#s1-2){.pf-ref} identifies $\eta_*$ with the suspension homomorphism aft
 ::: {.pf-step #s1-7}
 
 In particular, for $X=S^n$ one obtains
-\[
+$$
 \pi_i(S^n)\xrightarrow{\cong}\pi_{i+1}(S^{n+1})
 \quad(i<2n-1)
-\]
+$$
 and a surjection at $i=2n-1$.
 
 

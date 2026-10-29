@@ -49,19 +49,19 @@ $|\operatorname{Syl}_p(N_G(\bar{P}))| < |\operatorname{Syl}_p(G)|$.
 
 ::: {.pf-step #s1}
 
-The subgroup \(O_p(G)\) is a normal \(p\)-subgroup of \(G\).
+The subgroup $O_p(G)$ is a normal $p$-subgroup of $G$.
 
 ::: pf-proof
 
-Each Sylow \(p\)-subgroup is a \(p\)-group, so their intersection is again a
-\(p\)-group. Conjugation permutes the Sylow \(p\)-subgroups of \(G\), hence
-\[
+Each Sylow $p$-subgroup is a $p$-group, so their intersection is again a
+$p$-group. Conjugation permutes the Sylow $p$-subgroups of $G$, hence
+$$
 gO_p(G)g^{-1}
  = \bigcap_{P\in\operatorname{Syl}_p(G)} gPg^{-1}
  = \bigcap_{P\in\operatorname{Syl}_p(G)} P
  = O_p(G)
-\]
-for every \(g\in G\). Thus \(O_p(G)\trianglelefteq G\).
+$$
+for every $g\in G$. Thus $O_p(G)\trianglelefteq G$.
 
 :::
 
@@ -69,20 +69,20 @@ for every \(g\in G\). Thus \(O_p(G)\trianglelefteq G\).
 
 ::: pf-step
 
-Every normal \(p\)-subgroup \(N\trianglelefteq G\) is contained in \(O_p(G)\).
+Every normal $p$-subgroup $N\trianglelefteq G$ is contained in $O_p(G)$.
 
 ::: pf-proof
 
-Fix \(P\in\operatorname{Syl}_p(G)\). Since \(N\trianglelefteq G\), the product \(NP\) is
-a subgroup of \(G\). Both \(N\) and \(P\) are \(p\)-groups, so
-\[
+Fix $P\in\operatorname{Syl}_p(G)$. Since $N\trianglelefteq G$, the product $NP$ is
+a subgroup of $G$. Both $N$ and $P$ are $p$-groups, so
+$$
 |NP|=\frac{|N||P|}{|N\cap P|}
-\]
-is a power of \(p\). By maximality of the Sylow subgroup \(P\), one has \(NP=P\), hence
-\(N\le P\). Since this holds for every Sylow \(p\)-subgroup \(P\),
-\[
+$$
+is a power of $p$. By maximality of the Sylow subgroup $P$, one has $NP=P$, hence
+$N\le P$. Since this holds for every Sylow $p$-subgroup $P$,
+$$
 N\le \bigcap_{P\in\operatorname{Syl}_p(G)}P=O_p(G).
-\]
+$$
 Together with step [](#s1){.pf-ref}, this proves part (a).
 
 :::
@@ -91,18 +91,18 @@ Together with step [](#s1){.pf-ref}, this proves part (a).
 
 ::: {.pf-step #s3}
 
-For every \(P\in\operatorname{Syl}_p(H)\), there exists
-\(Q\in\operatorname{Syl}_p(G)\) such that \(Q\cap H=P\).
+For every $P\in\operatorname{Syl}_p(H)$, there exists
+$Q\in\operatorname{Syl}_p(G)$ such that $Q\cap H=P$.
 
 ::: pf-proof
 
-Since \(P\) is a \(p\)-subgroup of \(G\), it is contained in some Sylow \(p\)-subgroup
-\(Q\) of \(G\). Then
-\[
+Since $P$ is a $p$-subgroup of $G$, it is contained in some Sylow $p$-subgroup
+$Q$ of $G$. Then
+$$
 P\le Q\cap H.
-\]
-The subgroup \(Q\cap H\) is a \(p\)-subgroup of \(H\). Since \(P\) is Sylow in \(H\),
-maximality gives \(Q\cap H=P\).
+$$
+The subgroup $Q\cap H$ is a $p$-subgroup of $H$. Since $P$ is Sylow in $H$,
+maximality gives $Q\cap H=P$.
 
 :::
 
@@ -110,12 +110,12 @@ maximality gives \(Q\cap H=P\).
 
 ::: pf-step
 
-Choosing one such \(Q\) for each \(P\in\operatorname{Syl}_p(H)\) defines a
+Choosing one such $Q$ for each $P\in\operatorname{Syl}_p(H)$ defines a
 function
-\[
+$$
 f:\operatorname{Syl}_p(H)\longrightarrow\operatorname{Syl}_p(G)
-\]
-with \(f(P)\cap H=P\).
+$$
+with $f(P)\cap H=P$.
 
 ::: pf-proof
 
@@ -127,15 +127,15 @@ This is exactly the construction in step [](#s3){.pf-ref}, and proves part (b).
 
 ::: {.pf-step #s5}
 
-The function \(f\) from part (b) is injective.
+The function $f$ from part (b) is injective.
 
 ::: pf-proof
 
-If \(f(P_1)=f(P_2)=Q\), then
-\[
+If $f(P_1)=f(P_2)=Q$, then
+$$
 P_1=Q\cap H=P_2.
-\]
-Hence \(P_1=P_2\).
+$$
+Hence $P_1=P_2$.
 
 :::
 
@@ -143,18 +143,18 @@ Hence \(P_1=P_2\).
 
 ::: pf-step
 
-If \(|\operatorname{Syl}_p(H)|=|\operatorname{Syl}_p(G)|\), then \(f\) is
+If $|\operatorname{Syl}_p(H)|=|\operatorname{Syl}_p(G)|$, then $f$ is
 bijective and
-\[
+$$
 O_p(H)=O_p(G)\cap H.
-\]
+$$
 
 ::: pf-proof
 
-By step [](#s5){.pf-ref}, \(f\) is an injection between finite sets of the same cardinality, hence a
-bijection. Therefore every \(Q\in\operatorname{Syl}_p(G)\) is \(f(P)\) for a unique
-\(P\in\operatorname{Syl}_p(H)\), and for that \(P\) one has \(P=Q\cap H\). Thus
-\[
+By step [](#s5){.pf-ref}, $f$ is an injection between finite sets of the same cardinality, hence a
+bijection. Therefore every $Q\in\operatorname{Syl}_p(G)$ is $f(P)$ for a unique
+$P\in\operatorname{Syl}_p(H)$, and for that $P$ one has $P=Q\cap H$. Thus
+$$
 \begin{aligned}
 O_p(H)
  &= \bigcap_{P\in\operatorname{Syl}_p(H)}P \\
@@ -162,7 +162,7 @@ O_p(H)
  &= \left(\bigcap_{Q\in\operatorname{Syl}_p(G)}Q\right)\cap H \\
  &= O_p(G)\cap H.
 \end{aligned}
-\]
+$$
 This proves part (c).
 
 :::
@@ -171,16 +171,16 @@ This proves part (c).
 
 ::: {.pf-step #s7}
 
-Let \(\bar P\neq1\) be a \(p\)-subgroup of \(G\), and put \(H=N_G(\bar P)\). Then
-\(O_p(H)\neq1\).
+Let $\bar P\neq1$ be a $p$-subgroup of $G$, and put $H=N_G(\bar P)$. Then
+$O_p(H)\neq1$.
 
 ::: pf-proof
 
-By definition of the normalizer, \(\bar P\trianglelefteq H\). Since \(\bar P\) is a
-nontrivial normal \(p\)-subgroup of \(H\), part (a), applied to \(H\), gives
-\[
+By definition of the normalizer, $\bar P\trianglelefteq H$. Since $\bar P$ is a
+nontrivial normal $p$-subgroup of $H$, part (a), applied to $H$, gives
+$$
 1\neq\bar P\le O_p(H).
-\]
+$$
 
 :::
 
@@ -188,23 +188,23 @@ nontrivial normal \(p\)-subgroup of \(H\), part (a), applied to \(H\), gives
 
 ::: pf-step
 
-If \(O_p(G)=1\), then
-\[
+If $O_p(G)=1$, then
+$$
 |\operatorname{Syl}_p(N_G(\bar P))|<|\operatorname{Syl}_p(G)|.
-\]
+$$
 
 ::: pf-proof
 
 Part (b) gives an injection
-\[
+$$
 \operatorname{Syl}_p(H)\hookrightarrow\operatorname{Syl}_p(G),
-\]
-so \(|\operatorname{Syl}_p(H)|\le |\operatorname{Syl}_p(G)|\). If equality held, part
+$$
+so $|\operatorname{Syl}_p(H)|\le |\operatorname{Syl}_p(G)|$. If equality held, part
 (c) would imply
-\[
+$$
 O_p(H)=O_p(G)\cap H=1,
-\]
-contradicting step [](#s7){.pf-ref}. Hence the inequality is strict. Since \(H=N_G(\bar P)\), this is
+$$
+contradicting step [](#s7){.pf-ref}. Hence the inequality is strict. Since $H=N_G(\bar P)$, this is
 exactly part (d).
 
 :::

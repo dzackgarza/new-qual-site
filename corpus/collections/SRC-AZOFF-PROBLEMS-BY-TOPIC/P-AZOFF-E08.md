@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Suppose $f$ is entire and, for some integer $n\ge1$,
-\[
+$$
 \lim_{z\to\infty}\frac{f(z)}{z^n}=0.
-\]
+$$
 Prove that $f$ is a polynomial of degree at most $n-1$.
 :::
 

@@ -29,27 +29,27 @@ Show that for a CW complex $K(\pi, 1)$, $\operatorname{Aut}(K(\pi, 1))$ is isomo
 :::
 
 ::: {.solution}
-Let \(K=K(\pi,1)\). A self-homotopy equivalence \(f:K\to K\) induces an automorphism
-\[
+Let $K=K(\pi,1)$. A self-homotopy equivalence $f:K\to K$ induces an automorphism
+$$
 f_*:\pi_1(K,x_0)\longrightarrow \pi_1(K,f(x_0)).
-\]
-After choosing a path from \(f(x_0)\) back to \(x_0\), this becomes an automorphism of \(\pi\). Changing the path changes the resulting automorphism by an inner automorphism. Hence there is a well-defined homomorphism
-\[
+$$
+After choosing a path from $f(x_0)$ back to $x_0$, this becomes an automorphism of $\pi$. Changing the path changes the resulting automorphism by an inner automorphism. Hence there is a well-defined homomorphism
+$$
 \Phi:\operatorname{Aut}(K)\longrightarrow\operatorname{Out}(\pi).
-\]
+$$
 
-Conversely, Hatcher's Proposition 4A.2 identifies free homotopy classes of maps into a \(K(\pi,1)\) with homomorphisms on fundamental groups modulo inner automorphisms:
-\[
+Conversely, Hatcher's Proposition 4A.2 identifies free homotopy classes of maps into a $K(\pi,1)$ with homomorphisms on fundamental groups modulo inner automorphisms:
+$$
 [K,K]\cong \operatorname{Hom}(\pi,\pi)/\operatorname{Inn}(\pi).
-\]
-Under this bijection, a map is a homotopy equivalence exactly when its induced endomorphism of \(\pi\) is an automorphism. Indeed, if \(f_*\) is an automorphism, choose a map \(g:K\to K\) inducing \(f_*^{-1}\); then \(gf\) and \(fg\) induce the identity outer automorphism, hence are freely homotopic to the identity. Thus \(f\) is a homotopy equivalence.
+$$
+Under this bijection, a map is a homotopy equivalence exactly when its induced endomorphism of $\pi$ is an automorphism. Indeed, if $f_*$ is an automorphism, choose a map $g:K\to K$ inducing $f_*^{-1}$; then $gf$ and $fg$ induce the identity outer automorphism, hence are freely homotopic to the identity. Thus $f$ is a homotopy equivalence.
 
 Therefore the preceding bijection restricts to a bijection
-\[
+$$
 \operatorname{Aut}(K)\xrightarrow{\cong}\operatorname{Aut}(\pi)/\operatorname{Inn}(\pi),
-\]
+$$
 and composition corresponds to composition of outer automorphisms. Hence
-\[
+$$
 \boxed{\operatorname{Aut}(K(\pi,1))\cong\operatorname{Out}(\pi).}
-\]
+$$
 :::

@@ -23,9 +23,9 @@ audit:
 
 ::: {.problem}
 Let $G$ be a group and let $H,K\le G$. Suppose $H$ has finite index in $G$. Prove that
-\[
+$$
 K\cap H
-\]
+$$
 has finite index in $K$.
 :::
 

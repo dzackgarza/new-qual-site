@@ -59,9 +59,9 @@ The Krull dimension of $R$ is at least $2$, hence is not $1$.
 
 ::: pf-proof
 There is a strict chain of prime ideals
-\[
+$$
 (0)\subsetneq(x)\subsetneq(x,y).
-\]
+$$
 Indeed, $R/(x)\cong k[y]$ is a domain, so $(x)$ is prime, and
 $R/(x,y)\cong k$ is a field, so $(x,y)$ is maximal and therefore prime.
 Thus $\dim R\ge2$.

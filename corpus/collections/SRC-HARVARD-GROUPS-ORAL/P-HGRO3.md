@@ -28,9 +28,9 @@ Determine the subgroups of the abelian groups of orders $35$ and $27$.
 ::: {.solution}
 By the classification theorem, the abelian group of order $35$ is
 $C_{35}$, while the abelian groups of order $27$ are
-\[
+$$
 C_{27},\qquad C_9\times C_3,\qquad C_3^3.
-\]
+$$
 
 ::: pf
 
@@ -70,9 +70,9 @@ whole group.
 ::: pf-proof
 
 Write $G=C_9\times C_3$. Its $3$-torsion subgroup
-\[
+$$
 G[3]=\{x\in G:3x=0\}\cong C_3^2
-\]
+$$
 has four one-dimensional $\mathbf F_3$-subspaces, hence exactly four subgroups
 of order $3$.
 
@@ -100,9 +100,9 @@ View $V=C_3^3$ as a three-dimensional vector space over $\mathbf F_3$.
 Its subgroups are exactly its linear subspaces, since a subgroup is closed
 under multiplication by every scalar $n\in\mathbf F_3=\ZZ/3\ZZ$. The number of
 one-dimensional subspaces is
-\[
+$$
 \frac{3^3-1}{3-1}=13.
-\]
+$$
 By duality, or by the Gaussian binomial coefficient
 $\binom31_3=\binom32_3$, there are also thirteen two-dimensional subspaces.
 The zero subspace and $V$ itself are unique.

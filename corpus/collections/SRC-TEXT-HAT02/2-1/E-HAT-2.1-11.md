@@ -31,13 +31,13 @@ Show that if $A$ is a retract of $X$ then the map $H_n(A) \to H_n(X)$ induced by
 
 ::: {.solution}
 Let
-\[
+$$
 i:A\hookrightarrow X
-\]
+$$
 be the inclusion and let
-\[
+$$
 r:X\to A
-\]
+$$
 be a retraction, so $r\circ i=\operatorname{id}_A$.
 
 ::: pf
@@ -45,16 +45,16 @@ be a retraction, so $r\circ i=\operatorname{id}_A$.
 ::: pf-step
 
 On homology,
-\[
+$$
 r_*\circ i_*=\operatorname{id}_{H_n(A)}.
-\]
+$$
 
 ::: pf-proof
 
 Homology is functorial, hence
-\[
+$$
 r_*i_*=(r\circ i)_*=(\operatorname{id}_A)_*=\operatorname{id}_{H_n(A)}.
-\]
+$$
 
 :::
 
@@ -63,16 +63,16 @@ r_*i_*=(r\circ i)_*=(\operatorname{id}_A)_*=\operatorname{id}_{H_n(A)}.
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{i_*:H_n(A)\to H_n(X)\text{ is injective}.}
-\]
+$$
 
 ::: pf-proof
 
 If $i_*(x)=0$, then applying $r_*$ gives
-\[
+$$
 x=r_*i_*(x)=0.
-\]
+$$
 
 :::
 

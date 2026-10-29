@@ -44,42 +44,42 @@ The requested conclusion is false.
 
 ::: {.pf-step #n-sheeted-covering}
 For every integer $n\ge1$, the map
-\[
+$$
 p_n:S^1\to S^1,
 \qquad
 p_n(z)=z^n,
-\]
+$$
 is an $n$-sheeted covering map.
 
 ::: pf-proof
 Fix
-\[
+$$
 w=e^{i\theta_0}\in S^1.
-\]
+$$
 Choose $0<\varepsilon<\pi$ and let
-\[
+$$
 U=\{e^{i\theta}:|\theta-\theta_0|<\varepsilon\},
-\]
+$$
 where the interval is understood through the chosen local argument around $w$.
 For $k=0,\ldots,n-1$, define
-\[
+$$
 U_k
 =
 \left\{
 e^{i\phi}:
 \left|\phi-\frac{\theta_0+2\pi k}{n}\right|<\frac{\varepsilon}{n}
 \right\}.
-\]
+$$
 These are pairwise disjoint open arcs, and
-\[
+$$
 p_n^{-1}(U)=U_0\sqcup\cdots\sqcup U_{n-1}.
-\]
+$$
 On each $U_k$, the map $p_n$ is a homeomorphism onto $U$, with inverse
-\[
+$$
 e^{i\theta}
 \longmapsto
 e^{i(\theta+2\pi k)/n}
-\]
+$$
 using the same local argument on $U$.
 Thus $U$ is evenly covered and has exactly $n$ sheets.
 Since $w$ was arbitrary, $p_n$ is an $n$-sheeted covering.
@@ -89,26 +89,26 @@ Since $w$ was arbitrary, $p_n$ is an $n$-sheeted covering.
 
 ::: {.pf-step #induced-homomorphism}
 Under the standard identification
-\[
+$$
 \pi_1(S^1,1)\cong\ZZ,
-\]
+$$
 the induced homomorphism is
-\[
+$$
 (p_n)_*:\ZZ\to\ZZ,
 \qquad
 m\longmapsto nm.
-\]
+$$
 
 ::: pf-proof
 A generator of $\pi_1(S^1,1)$ is represented by
-\[
+$$
 \alpha(t)=e^{2\pi i t}.
-\]
+$$
 Its image under $p_n$ is
-\[
+$$
 (p_n\circ\alpha)(t)
 =e^{2\pi i n t},
-\]
+$$
 which winds $n$ times around the circle and therefore represents $n\in\ZZ$.
 Since $(p_n)_*$ is a group homomorphism, it sends $m$ to $nm$.
 :::
@@ -117,19 +117,19 @@ Since $(p_n)_*$ is a group homomorphism, it sends $m$ to $nm$.
 
 ::: {.pf-step #index-n}
 Hence
-\[
+$$
 (p_n)_*\pi_1(S^1,1)=n\ZZ
-\]
+$$
 and
-\[
+$$
 [\ZZ:n\ZZ]=n.
-\]
+$$
 
 ::: pf-proof
 The image statement follows immediately from step [](#induced-homomorphism){.pf-ref}. The quotient
-\[
+$$
 \ZZ/n\ZZ
-\]
+$$
 has exactly $n$ elements, so the subgroup $n\ZZ$ has index $n$ in $\ZZ$.
 :::
 
@@ -142,11 +142,11 @@ The quoted covering-space fact is therefore consistent with these covers and con
 By step [](#n-sheeted-covering){.pf-ref}, every fiber of $p_n$ has cardinality $n$.
 By step [](#index-n){.pf-ref}, the induced subgroup has index $n$.
 Thus the equality quoted in the problem reads
-\[
+$$
 |p_n^{-1}(1)|
 =n
 =[\pi_1(S^1):(p_n)_*\pi_1(S^1)].
-\]
+$$
 So the theorem does not rule out finite-sheeted coverings of $S^1$; the maps $p_n(z)=z^n$ provide one for every finite $n\ge1$.
 :::
 

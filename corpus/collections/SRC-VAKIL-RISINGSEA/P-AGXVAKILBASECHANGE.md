@@ -60,9 +60,9 @@ There is a biadditive multiplication on $B\tensor_A C$ with $(b\tensor c)(b'\ten
 ::: pf-proof
 Fix $(b',c')\in B\times C$.
 The map $(b,c)\mapsto bb'\tensor cc'$ is biadditive, and
-\[
+$$
 \phi(a)bb'\tensor cc'=bb'\tensor\psi(a)cc',
-\]
+$$
 so it induces an additive endomorphism $R_{b',c'}$ of $B\tensor_A C$.
 The map $(b',c')\mapsto R_{b',c'}$ into $\operatorname{End}_{\ZZ}(B\tensor_A C)$ is biadditive, and $R_{\phi(a)b',c'}=R_{b',\psi(a)c'}$ because both send $b\tensor c$ to $\phi(a)bb'\tensor cc'=bb'\tensor\psi(a)cc'$.
 So it induces an additive map $y\mapsto R_y$ on $B\tensor_A C$.

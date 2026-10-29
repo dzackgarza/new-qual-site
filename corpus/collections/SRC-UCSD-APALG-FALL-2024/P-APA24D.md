@@ -16,37 +16,37 @@ review: draft
 ::: {.problem}
 Let $A \in M_{m,n}(\CC) = \CC^{m \times n}$.
 Prove
-\[
+$$
 \|A\|_1 = \max_{1 \leq j \leq n} \sum_{i=1}^{m} |a_{ij}|
-\]
+$$
 from the definition of the induced matrix $1$-norm in terms of vector $1$-norms:
-\[
+$$
 \|A\|_1 = \max_{\substack{x \in \CC^n \\ \|x\|_1 = 1}} \|A x\|_1.
-\]
+$$
 :::
 
 ::: {.solution}
 
 Let
-\[
+$$
 M:=\max_{1\le j\le n}\sum_{i=1}^m|a_{ij}|.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #ax-bound-by-m}
 For every $x\in\CC^n$,
-\[
+$$
 \|Ax\|_1\le M\|x\|_1.
-\]
+$$
 
 ::: pf-proof
 Write $x=(x_1,\ldots,x_n)^T$. Then
-\[
+$$
 (Ax)_i=\sum_{j=1}^n a_{ij}x_j,
-\]
+$$
 so by the triangle inequality,
-\[
+$$
 \begin{aligned}
 \|Ax\|_1
 &=\sum_{i=1}^m\left|\sum_{j=1}^n a_{ij}x_j\right|\\
@@ -54,22 +54,22 @@ so by the triangle inequality,
 &=\sum_{j=1}^n\left(\sum_{i=1}^m|a_{ij}|\right)|x_j|\\
 &\le M\sum_{j=1}^n|x_j|=M\|x\|_1.
 \end{aligned}
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #norm-upper-bound}
 Hence
-\[
+$$
 \|A\|_1\le M.
-\]
+$$
 
 ::: pf-proof
 If $\|x\|_1=1$, then step [](#ax-bound-by-m){.pf-ref} gives
-\[
+$$
 \|Ax\|_1\le M.
-\]
+$$
 Taking the maximum over all such $x$ gives the inequality.
 :::
 
@@ -80,19 +80,19 @@ There is a unit vector in the vector $1$-norm for which equality holds.
 
 ::: pf-proof
 Choose $j_0$ with
-\[
+$$
 \sum_{i=1}^m|a_{ij_0}|=M
-\]
+$$
 and let $e_{j_0}$ be the corresponding standard basis vector. Then
-\[
+$$
 \|e_{j_0}\|_1=1
-\]
+$$
 and
-\[
+$$
 \|Ae_{j_0}\|_1
 =\sum_{i=1}^m|a_{ij_0}|
 =M.
-\]
+$$
 Therefore $\|A\|_1\ge M$.
 :::
 
@@ -100,9 +100,9 @@ Therefore $\|A\|_1\ge M$.
 
 ::: pf-step
 Consequently
-\[
+$$
 \boxed{\|A\|_1=\max_{1\le j\le n}\sum_{i=1}^m|a_{ij}|.}
-\]
+$$
 
 ::: pf-proof
 Combine steps [](#norm-upper-bound){.pf-ref} and [](#equality-achieved){.pf-ref}.

@@ -39,15 +39,15 @@ The quotient $T^2/\langle\iota\rangle$ is a sphere and the quotient map has four
 ::: pf-proof
 
 The fixed points of $\iota$ are exactly the four $2$-torsion points
-\[
+$$
 T^2[2]=\tfrac12\Lambda/\Lambda.
-\]
+$$
 The quotient is a compact connected orientable surface.
 Away from the fixed points the quotient is a genuine two-sheeted covering.
 The Riemann--Hurwitz formula for the degree-$2$ quotient gives
-\[
+$$
 \chi(T^2)=2\chi(T^2/\iota)-4,
-\]
+$$
 so $0=2\chi(T^2/\iota)-4$ and therefore $\chi(T^2/\iota)=2$.
 Hence the quotient surface is $S^2$.
 
@@ -63,9 +63,9 @@ Removing the ramification points gives the claimed covering.
 
 Let $F=T^2[2]$ and let $B$ be its four images in $S^2=T^2/\iota$.
 The involution acts freely on $T^2\setminus F$, so the quotient map restricts to
-\[
+$$
 T^2\setminus F\longrightarrow S^2\setminus B.
-\]
+$$
 A free action of the finite group $\ZZ/2$ is a covering action; every fibre has two points.
 Thus this restriction is a two-sheeted covering.
 

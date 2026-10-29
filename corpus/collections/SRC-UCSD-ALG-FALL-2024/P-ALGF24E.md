@@ -29,23 +29,23 @@ audit:
 Suppose $A$ is a unital commutative ring and $\operatorname{Spec}(A)$ is the set of all the prime ideals of $A$.
 For an $A$-module $M$ and $\mathfrak{p} \in \operatorname{Spec}(A)$, let $M_{\mathfrak{p}}$ be the localization of $M$ at $\mathfrak{p}$.
 Let
-\[
+$$
 \operatorname{supp} M := \{\mathfrak{p} \in \operatorname{Spec}(A) \mid M_{\mathfrak{p}} \neq 0\}.
-\]
+$$
 Prove that for a finitely generated $A$-module $M$,
-\[
+$$
 \operatorname{supp} M = \{\mathfrak{p} \in \operatorname{Spec}(A) \mid \operatorname{ann}(M) \subseteq \mathfrak{p}\},
-\]
+$$
 where $\operatorname{ann}(M)$ is the annihilator of $M$.
 :::
 
 ::: {.solution}
 Fix $\mathfrak p\in\operatorname{Spec}(A)$ and put $S=A\setminus\mathfrak p$, a submonoid of $(A,\cdot)$.
 The defining equality relation in $M_{\mathfrak p}=S^{-1}M$ gives
-\[
+$$
 \frac{x}{1}=0\quad\Longleftrightarrow\quad
 sx=0\text{ for some }s\in S.
-\]
+$$
 
 ::: pf
 
@@ -73,15 +73,15 @@ If $M$ is finitely generated and $M_{\mathfrak p}=0$, then $\operatorname{ann}(M
 Choose generators $x_1,\ldots,x_r$ of $M$.
 For each $i$, the equality $x_i/1=0$ gives $s_i\in S$ with $s_ix_i=0$.
 Set
-\[
+$$
 s=\prod_{i=1}^r s_i.
-\]
+$$
 For an empty generating set, take $s=1$.
 The submonoid $S$ is closed under finite products, so $s\notin\mathfrak p$.
 For every $i$, commutativity of $A$ gives
-\[
+$$
 sx_i=\left(\prod_{j\ne i}s_j\right)s_ix_i=0.
-\]
+$$
 Hence $s$ annihilates every $A$-linear combination of the generators and belongs to $\operatorname{ann}(M)$.
 This produces an element of $\operatorname{ann}(M)$ outside $\mathfrak p$.
 
@@ -96,17 +96,17 @@ The support is $V(\operatorname{ann}(M))$.
 ::: pf-proof
 
 Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove, for each prime $\mathfrak p$,
-\[
+$$
 M_{\mathfrak p}=0
 \quad\Longleftrightarrow\quad
 \operatorname{ann}(M)\nsubseteq\mathfrak p.
-\]
+$$
 Negating both conditions and using the definition of support gives
-\[
+$$
 \operatorname{supp}M
 =\{\mathfrak p\in\operatorname{Spec}(A):\operatorname{ann}(M)\subseteq\mathfrak p\}
 =V(\operatorname{ann}(M)).
-\]
+$$
 
 :::
 

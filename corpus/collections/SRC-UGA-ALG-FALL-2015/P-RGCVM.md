@@ -47,13 +47,13 @@ Every complex matrix is similar to a Jordan matrix, and the multiset of Jordan b
 ::: pf-step
 
 Let $A\in M_3(\CC)$. For each eigenvalue $\lambda$, write
-\[
+$$
 \chi_A(t)=\prod_\lambda (t-\lambda)^{m_\lambda}
-\]
+$$
 and
-\[
+$$
 \mu_A(t)=\prod_\lambda (t-\lambda)^{e_\lambda}.
-\]
+$$
 Then $m_\lambda$ is the total size of the Jordan blocks for $\lambda$, while $e_\lambda$ is the size of the largest Jordan block for $\lambda$.
 
 ::: pf-proof
@@ -71,16 +71,16 @@ If $m_\lambda\le3$, then the pair $(m_\lambda,e_\lambda)$ uniquely determines th
 ::: pf-proof
 
 The possible partitions are
-\[
+$$
 1=(1),
-\]
-\[
+$$
+$$
 2=(2)\quad\text{or}\quad(1,1),
-\]
+$$
 and
-\[
+$$
 3=(3),\quad(2,1),\quad(1,1,1).
-\]
+$$
 For $m=1$ there is only one partition. For $m=2$, the largest part is respectively $2$ or $1$. For $m=3$, the largest part is respectively $3$, $2$, or $1$. Hence the largest block size determines the entire partition whenever $m\le3$.
 
 :::
@@ -108,21 +108,21 @@ The corresponding statement is false for $4\times4$ matrices.
 ::: pf-proof
 
 Take
-\[
+$$
 A=J_2(0)\oplus J_2(0)
-\]
+$$
 and
-\[
+$$
 B=J_2(0)\oplus J_1(0)\oplus J_1(0).
-\]
+$$
 Both are $4\times4$ nilpotent matrices. Their characteristic polynomials are both
-\[
+$$
 \chi_A(t)=\chi_B(t)=t^4,
-\]
+$$
 and because the largest Jordan block in each case has size $2$, their minimal polynomials are both
-\[
+$$
 \mu_A(t)=\mu_B(t)=t^2.
-\]
+$$
 However, their Jordan block multisets are different: $A$ has type $(2,2)$ while $B$ has type $(2,1,1)$. Hence they are not similar.
 
 Thus the conclusion of part (a) fails in dimension $4$.

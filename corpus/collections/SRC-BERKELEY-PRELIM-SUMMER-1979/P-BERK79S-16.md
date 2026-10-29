@@ -30,9 +30,9 @@ audit:
 ::: {.problem}
 For each $n\ge1$, let $g_n$ be an entire function whose zeros are all real.
 Suppose
-\[
+$$
 g_n\to g
-\]
+$$
 uniformly on compact subsets of $\CC$, where $g$ is not identically zero.
 Prove that every zero of $g$ is real.
 :::

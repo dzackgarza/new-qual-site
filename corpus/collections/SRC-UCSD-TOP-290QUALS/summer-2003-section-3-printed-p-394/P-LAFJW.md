@@ -93,22 +93,22 @@ We can plug in known information and deduce some maps:
 We then deduce:
 
 - $H_0(X) = \ZZ$ by the splitting of the line 0 SES
-  \[
+  $$
   0 \to \ZZ \to \ZZ \cross H_0(X) \to \ZZ \to 0
-  \]
+  $$
   yielding $\ZZ \cross H_0(X) \cong \ZZ \times \ZZ$.
 
 - $H_1(X) = \ZZ$ using the SES appearing on the first row:
-  \[
+  $$
   0 \to \ZZ^{ \oplus 2} \to \ZZ \oplus H_1(X) \to 0
-  \]
+  $$
   which is thus an isomorphism.
 
 - $H_2(X) = H_3(X) = 0$ by examining the SES spanning lines 3 and 2:
-  \[
+  $$
   0 \injects H_3(X) \injects \ZZ \mapsvia{\cong_{\del_3}} \ZZ \surjects H_2(X) \surjects 0
-  \]
-  Claim: \( \bd_3 \) must be an isomorphism.
+  $$
+  Claim: $\bd_3$ must be an isomorphism.
   If this is true, $H_3(X) \cong \ker \bd_3 = 0$ and $H_2(X) \cong \coker(\bd_3) \definedas \ZZ/\im(\bd_3) \cong \ZZ/\ZZ = 0$.
 
 ::: {.remark}

@@ -31,48 +31,48 @@ Thus $\pi_3(S^2)$, $\pi_7(S^4)$, and $\pi_{15}(S^8)$ contain $\ZZ$ summands.
 
 ::: {.solution}
 Let
-\[
+$$
 F\xrightarrow{i}E\xrightarrow{p}B
-\]
-be the bundle, and suppose \(i\) is nullhomotopic. Then \(i_*\) is zero on every homotopy group. The long exact sequence therefore breaks into short exact sequences
-\[
+$$
+be the bundle, and suppose $i$ is nullhomotopic. Then $i_*$ is zero on every homotopy group. The long exact sequence therefore breaks into short exact sequences
+$$
 0\longrightarrow\pi_n(E)
 \xrightarrow{p_*}\pi_n(B)
 \xrightarrow{\partial}\pi_{n-1}(F)
 \longrightarrow0.
-\]
+$$
 
-To split this sequence, represent \(\alpha\in\pi_{n-1}(F)\) by
-\[
+To split this sequence, represent $\alpha\in\pi_{n-1}(F)$ by
+$$
 a:S^{n-1}\to F.
-\]
-Since \(i\) is nullhomotopic, \(ia\) extends to a map
-\[
+$$
+Since $i$ is nullhomotopic, $ia$ extends to a map
+$$
 A:D^n\to E.
-\]
-Then \(pA\) sends \(\partial D^n\) to the basepoint of \(B\), so it defines a class
-\[
+$$
+Then $pA$ sends $\partial D^n$ to the basepoint of $B$, so it defines a class
+$$
 s(\alpha)=[pA]\in\pi_n(B).
-\]
-Different choices of representative and extension change \(pA\) by a based homotopy, so \(s\) is well-defined; juxtaposing extensions shows that \(s\) is a homomorphism. By the definition of the connecting homomorphism, lifting \(pA\) by \(A\) gives
-\[
+$$
+Different choices of representative and extension change $pA$ by a based homotopy, so $s$ is well-defined; juxtaposing extensions shows that $s$ is a homomorphism. By the definition of the connecting homomorphism, lifting $pA$ by $A$ gives
+$$
 \partial s(\alpha)=\alpha.
-\]
-Thus \(s\) is a section of \(\partial\), and
-\[
+$$
+Thus $s$ is a section of $\partial$, and
+$$
 \boxed{\pi_n(B)\cong\pi_n(E)\oplus\pi_{n-1}(F).}
-\]
+$$
 
 For the Hopf bundles the fiber inclusions are nullhomotopic because the total space sphere has no homotopy in the fiber dimension. Hence
-\[
+$$
 \pi_n(S^2)\cong\pi_n(S^3)\oplus\pi_{n-1}(S^1),
-\]
-\[
+$$
+$$
 \pi_n(S^4)\cong\pi_n(S^7)\oplus\pi_{n-1}(S^3),
-\]
+$$
 and
-\[
+$$
 \pi_n(S^8)\cong\pi_n(S^{15})\oplus\pi_{n-1}(S^7).
-\]
-In particular the second summands give copies of \(\ZZ\) in \(\pi_3(S^2)\), \(\pi_7(S^4)\), and \(\pi_{15}(S^8)\).
+$$
+In particular the second summands give copies of $\ZZ$ in $\pi_3(S^2)$, $\pi_7(S^4)$, and $\pi_{15}(S^8)$.
 :::

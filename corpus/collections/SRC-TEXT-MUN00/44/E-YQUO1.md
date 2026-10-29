@@ -35,24 +35,24 @@ A Hausdorff space that is the continuous image of the closed unit interval is of
 :::
 
 ::: {.solution}
-(a) Let \(f:I\to X\) be continuous and surjective, with \(X\) Hausdorff. Since \(I\) is compact, \(X=f(I)\) is compact. Since \(I\) is connected, \(X\) is connected.
+(a) Let $f:I\to X$ be continuous and surjective, with $X$ Hausdorff. Since $I$ is compact, $X=f(I)$ is compact. Since $I$ is connected, $X$ is connected.
 
-The map \(f\) is closed: a closed subset of \(I\) is compact, and its image is compact, hence closed in the Hausdorff space \(X\). Its fibers are closed subsets of \(I\), hence compact. Thus \(f\) is a perfect quotient map.
+The map $f$ is closed: a closed subset of $I$ is compact, and its image is compact, hence closed in the Hausdorff space $X$. Its fibers are closed subsets of $I$, hence compact. Thus $f$ is a perfect quotient map.
 
-The interval \(I\) is locally connected, and a quotient space of a locally connected space is locally connected. Hence \(X\) is locally connected, and therefore weakly locally connected.
+The interval $I$ is locally connected, and a quotient space of a locally connected space is locally connected. Hence $X$ is locally connected, and therefore weakly locally connected.
 
-Finally, \(I\) is second countable, and perfect maps preserve second countability by [[E-Y4MFU]](d). Thus \(X\) is second countable. A compact Hausdorff space is regular, so the Urysohn metrization theorem implies that \(X\) is metrizable.
+Finally, $I$ is second countable, and perfect maps preserve second countability by [[E-Y4MFU]](d). Thus $X$ is second countable. A compact Hausdorff space is regular, so the Urysohn metrization theorem implies that $X$ is metrizable.
 
-Therefore every Hausdorff continuous image of \(I\) is compact, connected, weakly locally connected, and metrizable.
+Therefore every Hausdorff continuous image of $I$ is compact, connected, weakly locally connected, and metrizable.
 
 (b) The Hilbert cube
-\[
+$$
 I^\omega=\prod_{n\ge1}I
-\]
+$$
 is compact by the Tychonoff theorem, connected because a product of connected spaces is connected, and metrizable because it is a countable product of metrizable spaces. It is also locally connected: a basic product neighborhood restricts only finitely many coordinates, and in those coordinates we can choose connected open intervals; the resulting product is connected and gives a connected neighborhood basis.
 
-Hence \(I^\omega\) satisfies the hypotheses of the Hahn--Mazurkiewicz theorem. Therefore there exists a continuous surjection
-\[
+Hence $I^\omega$ satisfies the hypotheses of the Hahn--Mazurkiewicz theorem. Therefore there exists a continuous surjection
+$$
 I\twoheadrightarrow I^\omega.
-\]
+$$
 :::

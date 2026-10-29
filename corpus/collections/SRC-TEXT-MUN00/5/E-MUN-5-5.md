@@ -38,30 +38,30 @@ Which of the following subsets of $\RR^{\omega}$ can be expressed as the cartesi
 
 ::: {.solution}
 (a) Yes. The set is
-\[
+$$
 \prod_{i=1}^{\infty}\ZZ.
-\]
+$$
 
 (b) Yes. It is
-\[
+$$
 \prod_{i=1}^{\infty}[i,\infty).
-\]
+$$
 
 (c) Yes. It is
-\[
+$$
 \left(\prod_{i=1}^{99}\RR\right)
 \times
 \left(\prod_{i=100}^{\infty}\ZZ\right).
-\]
-Equivalently, take the \(i\)-th factor to be \(\RR\) for \(i<100\) and \(\ZZ\) for \(i\ge100\).
+$$
+Equivalently, take the $i$-th factor to be $\RR$ for $i<100$ and $\ZZ$ for $i\ge100$.
 
 (d) No. Suppose
-\[
+$$
 \{x:x_2=x_3\}=\prod_i A_i.
-\]
-For every \(r\in\RR\) there is a sequence in the set having \(x_2=x_3=r\), so necessarily
-\[
+$$
+For every $r\in\RR$ there is a sequence in the set having $x_2=x_3=r$, so necessarily
+$$
 A_2=A_3=\RR.
-\]
-But then the product contains a sequence with \(x_2=0\) and \(x_3=1\), contradicting the defining relation \(x_2=x_3\). Thus this subset is not a cartesian product of coordinate subsets.
+$$
+But then the product contains a sequence with $x_2=0$ and $x_3=1$, contradicting the defining relation $x_2=x_3$. Thus this subset is not a cartesian product of coordinate subsets.
 :::

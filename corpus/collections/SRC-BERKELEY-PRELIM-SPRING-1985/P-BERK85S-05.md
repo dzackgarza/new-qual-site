@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Factor
-\[
+$$
 x^4+x^3+x+3
-\]
+$$
 completely in $\FF_5[x]$.
 :::
 

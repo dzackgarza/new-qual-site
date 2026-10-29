@@ -48,27 +48,27 @@ c. For a fixed vector $v$ in the Hilbert space and all $|\lambda|<1$, define $$h
 ::: pf-step
 
 A bounded linear operator $S:H\to H$ on a complex Hilbert space is unitary if it is surjective and
-\[
+$$
 \langle Sx,Sy\rangle=\langle x,y\rangle
-\]
+$$
 for all $x,y\in H$.
 Equivalently,
-\[
+$$
 S^*S=SS^*=I.
-\]
+$$
 
 ::: pf-proof
 
 The first condition is a standard definition.
 It implies
-\[
+$$
 \|Sx\|=\|x\|,
-\]
+$$
 so $S$ is an isometry.
 Surjectivity then makes it bijective, and its inverse is its adjoint:
-\[
+$$
 S^{-1}=S^*.
-\]
+$$
 Thus $S^*S=SS^*=I$.
 Conversely, those two identities imply both inner-product preservation and invertibility.
 
@@ -79,32 +79,32 @@ Conversely, those two identities imply both inner-product preservation and inver
 ::: {.pf-step #s2}
 
 If $|\lambda|<1$, then
-\[
+$$
 I-\lambda S^{-1}
-\]
+$$
 is invertible, with
-\[
+$$
 (I-\lambda S^{-1})^{-1}
 =\sum_{n=0}^\infty\lambda^nS^{-n}
-\]
+$$
 where the series converges in operator norm.
 
 ::: pf-proof
 
 Since $S$ is unitary,
-\[
+$$
 \|S^{-1}\|=1.
-\]
+$$
 Hence
-\[
+$$
 \|\lambda S^{-1}\|=|\lambda|<1.
-\]
+$$
 The Neumann series theorem therefore gives
-\[
+$$
 (I-\lambda S^{-1})^{-1}
 =\sum_{n=0}^\infty(\lambda S^{-1})^n
 =\sum_{n=0}^\infty\lambda^nS^{-n}.
-\]
+$$
 
 :::
 
@@ -117,15 +117,15 @@ For every $|\lambda|<1$, the operator $S-\lambda I$ is invertible.
 ::: pf-proof
 
 Factor
-\[
+$$
 S-\lambda I
 =S(I-\lambda S^{-1}).
-\]
+$$
 Both factors are invertible: $S$ by unitarity and the second factor by step [](#s2){.pf-ref}. Thus
-\[
+$$
 (S-\lambda I)^{-1}
 =(I-\lambda S^{-1})^{-1}S^{-1}.
-\]
+$$
 This proves part (b).
 
 :::
@@ -135,28 +135,28 @@ This proves part (b).
 ::: {.pf-step #s4}
 
 The scalar-valued function
-\[
+$$
 h(\lambda)
 =\langle(S+\lambda I)(S-\lambda I)^{-1}v,v\rangle
-\]
+$$
 is holomorphic on the unit disk.
 
 ::: pf-proof
 
 By steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
-\[
+$$
 (S-\lambda I)^{-1}
 =\left(\sum_{n=0}^\infty\lambda^nS^{-n}\right)S^{-1}
 =\sum_{n=0}^\infty\lambda^nS^{-(n+1)},
-\]
+$$
 with convergence in operator norm uniformly on every closed disk
-\[
+$$
 |\lambda|\le r<1.
-\]
+$$
 Thus
-\[
+$$
 \lambda\longmapsto(S-\lambda I)^{-1}
-\]
+$$
 is an operator-valued holomorphic function on $|\lambda|<1$.
 Multiplication by $S+\lambda I$, application to the fixed vector $v$, and pairing with $v$ preserve holomorphy.
 Hence $h$ is holomorphic.
@@ -168,55 +168,55 @@ Hence $h$ is holomorphic.
 ::: {.pf-step #s5}
 
 For $|\lambda|<1$, let
-\[
+$$
 w=(S-\lambda I)^{-1}v.
-\]
+$$
 Then
-\[
+$$
 \operatorname{Re}h(\lambda)
 =(1-|\lambda|^2)\|w\|^2.
-\]
+$$
 
 ::: pf-proof
 
 Since
-\[
+$$
 v=(S-\lambda I)w,
-\]
+$$
 we have
-\[
+$$
 h(\lambda)
 =\langle(S+\lambda I)w,(S-\lambda I)w\rangle.
-\]
+$$
 Using the convention that the inner product is linear in its first variable, expand:
-\[
+$$
 \begin{aligned}
 h(\lambda)
 &=\|Sw\|^2-|\lambda|^2\|w\|^2
 -\overline\lambda\langle Sw,w\rangle
 +\lambda\langle w,Sw\rangle.
 \end{aligned}
-\]
+$$
 Because
-\[
+$$
 \langle w,Sw\rangle
 =\overline{\langle Sw,w\rangle},
-\]
+$$
 the last two terms have purely imaginary sum.
 Therefore
-\[
+$$
 \operatorname{Re}h(\lambda)
 =\|Sw\|^2-|\lambda|^2\|w\|^2.
-\]
+$$
 Unitarity gives
-\[
+$$
 \|Sw\|=\|w\|,
-\]
+$$
 so
-\[
+$$
 \operatorname{Re}h(\lambda)
 =(1-|\lambda|^2)\|w\|^2.
-\]
+$$
 
 :::
 
@@ -230,21 +230,21 @@ The function $\operatorname{Re}h$ is harmonic and nonnegative on the unit disk; 
 
 By step [](#s4){.pf-ref}, $h$ is holomorphic.
 The real part of a holomorphic function is harmonic, so
-\[
+$$
 \operatorname{Re}h
-\]
+$$
 is harmonic.
 
 By step [](#s5){.pf-ref} and $|\lambda|<1$,
-\[
+$$
 \operatorname{Re}h(\lambda)
 =(1-|\lambda|^2)\|(S-\lambda I)^{-1}v\|^2
 \ge0.
-\]
+$$
 If $v\ne0$, invertibility of $S-\lambda I$ implies
-\[
+$$
 (S-\lambda I)^{-1}v\ne0,
-\]
+$$
 so the right side is strictly positive.
 If $v=0$, then $h\equiv0$, giving the nonnegative degenerate case.
 This proves part (c) without the spectral theorem.

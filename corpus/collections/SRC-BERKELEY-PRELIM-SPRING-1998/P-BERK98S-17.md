@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Let $A$ be an $n\times n$ complex matrix with
-\[
+$$
 \operatorname{tr}A=0.
-\]
+$$
 Show that $A$ is similar to a matrix whose main diagonal consists entirely of zeros.
 :::
 

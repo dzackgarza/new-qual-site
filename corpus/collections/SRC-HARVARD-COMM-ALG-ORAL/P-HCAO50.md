@@ -33,13 +33,13 @@ Suppose, for contradiction, that $R$ has infinitely many distinct maximal
 ideals $\mathfrak m_1,\mathfrak m_2,\ldots$.
 
 For $n\ge1$, set
-\[
+$$
 I_n=\mathfrak m_1\mathfrak m_2\cdots\mathfrak m_n.
-\]
+$$
 Then
-\[
+$$
 I_1\supseteq I_2\supseteq I_3\supseteq\cdots.
-\]
+$$
 
 ::: pf
 
@@ -50,13 +50,13 @@ Every containment $I_n\supsetneq I_{n+1}$ is strict.
 ::: pf-proof
 
 Distinct maximal ideals are comaximal. By the Chinese remainder theorem,
-\[
+$$
 R/I_{n+1}\cong\prod_{i=1}^{n+1}R/\mathfrak m_i.
-\]
+$$
 Under this isomorphism, $I_n/I_{n+1}$ corresponds to
-\[
+$$
 0\times\cdots\times0\times R/\mathfrak m_{n+1},
-\]
+$$
 which is nonzero. Hence $I_n\ne I_{n+1}$.
 
 :::

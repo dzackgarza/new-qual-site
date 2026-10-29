@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 (February 2013) Let $G$ be a group, let $H\subseteq G$ be a subgroup, and let $N\trianglelefteq G$ be a normal subgroup.
 Define
-\[
+$$
 NH=\{xh:x\in N\text{ and }h\in H\}.
-\]
+$$
 Prove that $NH$ is a subgroup of $G$.
 :::
 

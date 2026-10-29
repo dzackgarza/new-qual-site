@@ -38,14 +38,14 @@ For any divisor $D$ on the surface $X$, we define its cohomology class $c(D) \in
 4.5) and the sheaf homomorphism $d \log : \mathcal{O}^* \rightarrow \Omega_X$ (III, Ex.
 7.4c). Thus we obtain a group homomorphism $c: \Pic X \rightarrow H^1\left(X, \Omega_X\right)$.
 On the other hand, $H^1(X, \Omega)$ is dual to itself by Serre duality (III, 7.13), so we have a nondegenerate bilinear map
-\[
+$$
 \langle\quad, \quad\rangle: H^1(X, \Omega) \times H^1(X, \Omega) \rightarrow k .
-\]
+$$
 
 a. Prove that this is compatible with the intersection pairing, in the following sense: for any two divisors $D, E$ on $X$, we have
-\[
+$$
 \langle c(D), c(E)\rangle=(D . E) \cdot 1
-\]
+$$
 in $k$.
 
 Hint: Reduce to the case where $D$ and $E$ are nonsingular curves meeting transversally.

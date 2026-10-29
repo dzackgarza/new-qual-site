@@ -18,20 +18,20 @@ audit:
 
 ::: {.problem}
 Problem 12. Assume
-\[
+$$
 [0,1]=\bigcup_{n=1}^\infty I_n,
 \qquad I_n=[a_n,b_n]\neq\varnothing,
-\]
+$$
 and
-\[
+$$
 I_n\cap I_m=\varnothing
-\]
+$$
 whenever $n\neq m$.
 
 (a) Let
-\[
+$$
 E=\{a_n:n\geq1\}\cup\{b_n:n\geq1\}
-\]
+$$
 be the set of endpoints of the intervals above.
 Prove that $E$ is closed.
 
@@ -52,9 +52,9 @@ If $x\in[0,1]\setminus E$, then $x$ lies in the interior of the unique interval 
 ::: pf-proof
 
 The intervals cover $[0,1]$, so $x\in I_k=[a_k,b_k]$ for some $k$. Pairwise disjointness makes $k$ unique. Since $x\notin E$, it is neither $a_k$ nor $b_k$, hence
-\[
+$$
 a_k<x<b_k.
-\]
+$$
 
 :::
 
@@ -63,17 +63,17 @@ a_k<x<b_k.
 ::: {.pf-step #s1-2}
 
 There exists $\varepsilon>0$ such that
-\[
+$$
 (x-\varepsilon,x+\varepsilon)\cap[0,1]\subset I_k.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref}, both $x-a_k$ and $b_k-x$ are positive. Take
-\[
+$$
 \varepsilon<\min\{x-a_k,b_k-x\}.
-\]
+$$
 Then every point of the indicated neighborhood lies strictly between $a_k$ and $b_k$.
 
 :::
@@ -96,9 +96,9 @@ Suppose an endpoint $a_m$ or $b_m$ lay strictly inside $I_k$. It belongs to $I_m
 ::: {.pf-step #s1-4}
 
 Therefore $[0,1]\setminus E$ is open in $[0,1]$, so
-\[
+$$
 \boxed{E\text{ is closed in }[0,1].}
-\]
+$$
 
 
 ::: pf-proof
@@ -130,9 +130,9 @@ An isolated endpoint $e\in(0,1)$ is impossible.
 ::: pf-proof
 
 Choose $\delta>0$ with
-\[
+$$
 E\cap(e-\delta,e+\delta)=\{e\}.
-\]
+$$
 Take $x\in(e-\delta,e)$ and let $I_j$ contain $x$. Since $x\notin E$, step [](#s1-1){.pf-ref} says $x$ lies in the interior of $I_j$. No endpoint lies between $x$ and $e$, so the interval property and the covering force $I_j$ to extend to $e$; because $I_j$ is closed, $e\in I_j$. The same argument with $y\in(e,e+\delta)$ produces an interval $I_k$ containing $e$. These intervals are distinct because one contains points below $e$ and the other points above $e$ while neither can cross $e$ without containing both sides. Thus $I_j\cap I_k$ contains $e$, contradicting pairwise disjointness.
 
 :::

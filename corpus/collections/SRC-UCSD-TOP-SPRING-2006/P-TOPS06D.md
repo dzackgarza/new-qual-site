@@ -96,9 +96,9 @@ Part (a): Calculate the Euler characteristic $\chi(X)$:
 ::: pf-step
 
 Using the cell counts:
-\[
+$$
 \chi(X) = c_0 - c_1 + c_2 - c_3 + c_4 = 1 - 1 + 2 - 0 + 1 = 3.
-\]
+$$
 
 ::: pf-proof
 
@@ -133,9 +133,9 @@ standard homology of real projective plane.
 ::: pf-step
 
 Apply the Künneth Theorem for integral homology:
-\[
+$$
 0 \to \bigoplus_{i+j=k} H_i(X) \otimes H_j(\RP^2) \to H_k(X \times \RP^2) \to \bigoplus_{i+j=k-1} \operatorname{Tor}_1(H_i(X), H_j(\RP^2)) \to 0.
-\]
+$$
 
 ::: pf-proof
 

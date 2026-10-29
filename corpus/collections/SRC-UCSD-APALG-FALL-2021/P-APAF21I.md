@@ -33,34 +33,34 @@ Explicitly describe the dual group of $C(d)$.
 ::: {.solution}
 
 Let
-\[
+$$
 \zeta=e^{2\pi i/d}.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 The dual group $\widehat{C(d)}$ consists of the $d$ characters
-\[
+$$
 \chi_j:C(d)\to\CC^\times,
 \qquad
 \chi_j(\gamma^m)=\zeta^{jm},
 \qquad 0\le j<d.
-\]
+$$
 Moreover
-\[
+$$
 \widehat{C(d)}\cong C(d)\cong C_d.
-\]
+$$
 
 ::: pf-proof
 A character of the cyclic group $C(d)=\langle\gamma\rangle$ is determined by the value of $\gamma$. Since $\gamma^d=1$, that value must satisfy
-\[
+$$
 \chi(\gamma)^d=1,
-\]
+$$
 so it is one of $1,\zeta,\ldots,\zeta^{d-1}$. Conversely, each choice $\chi_j(\gamma)=\zeta^j$ defines a character by the displayed formula. Pointwise multiplication satisfies
-\[
+$$
 \chi_j\chi_k=\chi_{j+k\bmod d},
-\]
+$$
 so $\chi_1$ generates the dual group and has order $d$.
 :::
 
@@ -68,15 +68,15 @@ so $\chi_1$ generates the dual group and has order $d$.
 
 ::: pf-step
 A Cayley graph of $C(d)$ requires a connection set $S\subseteq C(d)$. For a simple undirected Cayley graph one assumes
-\[
+$$
 1\notin S,
 \qquad
 S=S^{-1},
-\]
+$$
 and defines
-\[
+$$
 \operatorname{Cay}(C(d),S)
-\]
+$$
 to have vertex set $C(d)$, with $h$ adjacent to $hs$ for every $h\in C(d)$ and $s\in S$.
 
 ::: pf-proof
@@ -87,22 +87,22 @@ The condition $1\notin S$ excludes loops. The condition $S=S^{-1}$ makes adjacen
 
 ::: {.pf-step #character-eigenvector-formula}
 Let $A_S$ be the adjacency operator of $\operatorname{Cay}(C(d),S)$, acting on functions $f:C(d)\to\CC$ by
-\[
+$$
 (A_Sf)(h)=\sum_{s\in S}f(hs).
-\]
+$$
 Then every character $\chi_j$ is an eigenvector, with eigenvalue
-\[
+$$
 \boxed{\lambda_j=\sum_{s\in S}\chi_j(s)}.
-\]
+$$
 
 ::: pf-proof
 For $h\in C(d)$,
-\[
+$$
 (A_S\chi_j)(h)
 =\sum_{s\in S}\chi_j(hs)
 =\sum_{s\in S}\chi_j(h)\chi_j(s)
 =\left(\sum_{s\in S}\chi_j(s)\right)\chi_j(h).
-\]
+$$
 Thus $\chi_j$ is an eigenvector with the displayed eigenvalue.
 :::
 
@@ -113,14 +113,14 @@ The $d$ character vectors form a basis of the function space $\CC^{C(d)}$, so st
 
 ::: pf-proof
 For $0\le j,k<d$, character orthogonality gives
-\[
+$$
 \sum_{m=0}^{d-1}\chi_j(\gamma^m)\overline{\chi_k(\gamma^m)}
 =\sum_{m=0}^{d-1}\zeta^{(j-k)m}
 =\begin{cases}
 d,&j=k,\\
 0,&j\ne k.
 \end{cases}
-\]
+$$
 Hence the $d$ character vectors are pairwise orthogonal and nonzero. Since the function space has dimension $d$, they form a basis.
 :::
 
@@ -128,41 +128,41 @@ Hence the $d$ character vectors are pairwise orthogonal and nonzero. Since the f
 
 ::: pf-step
 For the standard cycle graph, take
-\[
+$$
 S=\{\gamma,\gamma^{-1}\}.
-\]
+$$
 Then the eigenvectors are the Fourier vectors
-\[
+$$
 v_j=(1,\zeta^j,\zeta^{2j},\ldots,\zeta^{(d-1)j})^T,
 \qquad 0\le j<d,
-\]
+$$
 and the corresponding eigenvalues are
-\[
+$$
 \boxed{\lambda_j=\zeta^j+\zeta^{-j}
 =2\cos\frac{2\pi j}{d}}.
-\]
+$$
 
 ::: pf-proof
 Order the vertices as
-\[
+$$
 1,\gamma,\gamma^2,\ldots,\gamma^{d-1}.
-\]
+$$
 Then the coordinate vector of $\chi_j$ is exactly $v_j$. By step [](#character-eigenvector-formula){.pf-ref},
-\[
+$$
 \lambda_j
 =\chi_j(\gamma)+\chi_j(\gamma^{-1})
 =\zeta^j+\zeta^{-j}
 =2\cos(2\pi j/d).
-\]
+$$
 :::
 
 :::
 
 ::: pf-step
 If instead the intended convention is the directed Cayley graph with the single generator $S=\{\gamma\}$, the same eigenvectors $v_j$ have eigenvalues
-\[
+$$
 \lambda_j=\zeta^j.
-\]
+$$
 
 ::: pf-proof
 This is the formula of step [](#character-eigenvector-formula){.pf-ref} with $S=\{\gamma\}$.

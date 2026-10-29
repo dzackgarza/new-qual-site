@@ -32,21 +32,21 @@ Show that a simply ordered set $A$ fails to be well-ordered if and only if it co
 :::
 
 ::: {.solution}
-(a) If \(A\) contains a subset order-isomorphic to \(\ZZ_-\), then \(A\) is not well-ordered, since that subset has no smallest element.
+(a) If $A$ contains a subset order-isomorphic to $\ZZ_-$, then $A$ is not well-ordered, since that subset has no smallest element.
 
-Conversely, suppose \(A\) is not well-ordered. Then some nonempty subset \(B\subset A\) has no smallest element. Choose \(b_1\in B\). Since \(b_1\) is not smallest in \(B\), choose \(b_2\in B\) with \(b_2<b_1\). Continuing recursively, choose
-\[
+Conversely, suppose $A$ is not well-ordered. Then some nonempty subset $B\subset A$ has no smallest element. Choose $b_1\in B$. Since $b_1$ is not smallest in $B$, choose $b_2\in B$ with $b_2<b_1$. Continuing recursively, choose
+$$
 b_{n+1}<b_n.
-\]
-By the axiom of choice, these successive choices define a sequence \((b_n)_{n\ge1}\) in \(B\). Then
-\[
+$$
+By the axiom of choice, these successive choices define a sequence $(b_n)_{n\ge1}$ in $B$. Then
+$$
 \cdots<b_3<b_2<b_1,
-\]
+$$
 and the map
-\[
+$$
 -n\longmapsto b_n
-\]
-is an order isomorphism from \(\ZZ_-\) onto the subset \(\{b_n:n\ge1\}\subset A\).
+$$
+is an order isomorphism from $\ZZ_-$ onto the subset $\{b_n:n\ge1\}\subset A$.
 
-(b) Suppose every countable subset of the simply ordered set \(A\) is well-ordered. If \(A\) were not well-ordered, part (a) would give a countable subset of \(A\) order-isomorphic to \(\ZZ_-\), which is not well-ordered. Contradiction. Hence \(A\) is well-ordered.
+(b) Suppose every countable subset of the simply ordered set $A$ is well-ordered. If $A$ were not well-ordered, part (a) would give a countable subset of $A$ order-isomorphic to $\ZZ_-$, which is not well-ordered. Contradiction. Hence $A$ is well-ordered.
 :::

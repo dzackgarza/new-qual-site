@@ -27,9 +27,9 @@ What is the set of points $z \in \CC$ such that $z^2 = \abs{z}^2$?
 ::: {.pf-step #s1-1}
 
 If $z=0$, then
-\[
+$$
 z^2=|z|^2.
-\]
+$$
 
 
 ::: pf-proof
@@ -43,26 +43,26 @@ Both sides are equal to $0$.
 ::: {.pf-step #s1-2}
 
 If $z\ne0$ and
-\[
+$$
 z^2=|z|^2,
-\]
+$$
 then $z$ is real.
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 |z|^2=z\overline z,
-\]
+$$
 the equation becomes
-\[
+$$
 z^2=z\overline z.
-\]
+$$
 Because $z\ne0$, division by $z$ gives
-\[
+$$
 z=\overline z.
-\]
+$$
 A complex number equals its conjugate exactly when its imaginary part is
 zero, so $z\in\RR$.
 
@@ -78,9 +78,9 @@ Every real number satisfies the equation.
 ::: pf-proof
 
 If $z=x\in\RR$, then
-\[
+$$
 z^2=x^2=|x|^2=|z|^2.
-\]
+$$
 
 :::
 
@@ -89,9 +89,9 @@ z^2=x^2=|x|^2=|z|^2.
 ::: {.pf-step #s1-4}
 
 Therefore the solution set is
-\[
+$$
 \boxed{\RR}.
-\]
+$$
 
 
 ::: pf-proof

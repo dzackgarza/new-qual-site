@@ -28,16 +28,16 @@ State the Radon-Nikodym theorem.
 ::: {.solution}
 Let $(X,\mathcal M)$ be a measurable space, and let $\mu$ and $\nu$ be sigma-finite positive measures on $\mathcal M$.
 If
-\[
+$$
 \nu\ll\mu,
-\]
+$$
 then there exists a measurable function $f:X\to[0,\infty)$ such that
-\[
+$$
 \boxed{\nu(E)=\int_E f\,d\mu}
 \qquad(E\in\mathcal M).
-\]
+$$
 The function $f$ is unique up to $\mu$-almost-everywhere equality and is denoted
-\[
+$$
 f=\frac{d\nu}{d\mu}.
-\]
+$$
 :::

@@ -38,124 +38,124 @@ Prove that $M/K$ is Galois.
 ::: pf
 
 ::: {.pf-step #at-least-mk-automorphisms}
-Under the hypotheses of part (a), \(M/K\) has at least \([M:K]\) distinct \(K\)-automorphisms.
+Under the hypotheses of part (a), $M/K$ has at least $[M:K]$ distinct $K$-automorphisms.
 
 ::: pf-proof
 Let
-\[
+$$
 A:=\{\sigma\in\operatorname{Aut}_K(M):\sigma(L)=L\}.
-\]
-Restriction to \(L\) gives a homomorphism
-\[
+$$
+Restriction to $L$ gives a homomorphism
+$$
 \operatorname{res}:A\longrightarrow\operatorname{Gal}(L/K).
-\]
-By hypothesis, every automorphism of \(L/K\) extends to an automorphism of \(M\), so \(\operatorname{res}\) is surjective.
-Its kernel consists exactly of the automorphisms of \(M\) fixing \(L\):
-\[
+$$
+By hypothesis, every automorphism of $L/K$ extends to an automorphism of $M$, so $\operatorname{res}$ is surjective.
+Its kernel consists exactly of the automorphisms of $M$ fixing $L$:
+$$
 \ker(\operatorname{res})=\operatorname{Gal}(M/L).
-\]
-Since \(L/K\) and \(M/L\) are Galois,
-\[
+$$
+Since $L/K$ and $M/L$ are Galois,
+$$
 |\operatorname{Gal}(L/K)|=[L:K]
-\]
+$$
 and
-\[
+$$
 |\operatorname{Gal}(M/L)|=[M:L].
-\]
+$$
 Therefore the finite-group exact sequence gives
-\[
+$$
 |A|
 =|\operatorname{Gal}(M/L)|\,|\operatorname{Gal}(L/K)|
 =[M:L][L:K]
 =[M:K].
-\]
-Thus \(M\) has at least \([M:K]\) distinct \(K\)-automorphisms.
+$$
+Thus $M$ has at least $[M:K]$ distinct $K$-automorphisms.
 :::
 
 :::
 
 ::: pf-step
-The extension \(M/K\) is Galois.
+The extension $M/K$ is Galois.
 
 ::: pf-proof
-The tower is finite because both \(L/K\) and \(M/L\) are finite Galois extensions.
+The tower is finite because both $L/K$ and $M/L$ are finite Galois extensions.
 For every finite extension,
-\[
+$$
 |\operatorname{Aut}_K(M)|\le[M:K].
-\]
-By step [](#at-least-mk-automorphisms){.pf-ref}, the subgroup \(A\subseteq\operatorname{Aut}_K(M)\) already has exactly \([M:K]\) elements.
+$$
+By step [](#at-least-mk-automorphisms){.pf-ref}, the subgroup $A\subseteq\operatorname{Aut}_K(M)$ already has exactly $[M:K]$ elements.
 Hence
-\[
+$$
 |\operatorname{Aut}_K(M)|=[M:K].
-\]
+$$
 A finite extension has as many base-field automorphisms as its degree if and only if it is Galois.
-Therefore \(M/K\) is Galois.
+Therefore $M/K$ is Galois.
 :::
 
 :::
 
 ::: {.pf-step #part-b-tower-galois}
 For part (b), take
-\[
+$$
 K=\QQ,
 \qquad
 L=\QQ(\sqrt2),
 \qquad
 M=\QQ(\sqrt[4]{2}).
-\]
-Then \(L/K\) and \(M/L\) are Galois.
+$$
+Then $L/K$ and $M/L$ are Galois.
 
 ::: pf-proof
 The extension
-\[
+$$
 \QQ(\sqrt2)/\QQ
-\]
+$$
 is quadratic in characteristic zero, hence Galois.
 
 Put
-\[
+$$
 \alpha=\sqrt[4]{2}.
-\]
+$$
 Then
-\[
+$$
 M=L(\alpha),
 \qquad
 \alpha^2=\sqrt2.
-\]
-Thus \(\alpha\) has minimal polynomial
-\[
+$$
+Thus $\alpha$ has minimal polynomial
+$$
 x^2-\sqrt2
-\]
-over \(L\), and this polynomial splits in \(M\) as
-\[
+$$
+over $L$, and this polynomial splits in $M$ as
+$$
 (x-\alpha)(x+\alpha).
-\]
+$$
 It is separable because the characteristic is zero.
-Therefore \(M/L\) is Galois.
+Therefore $M/L$ is Galois.
 :::
 
 :::
 
 ::: pf-step
-The extension \(M/K\) in step [](#part-b-tower-galois){.pf-ref} is not Galois.
+The extension $M/K$ in step [](#part-b-tower-galois){.pf-ref} is not Galois.
 
 ::: pf-proof
 The polynomial
-\[
+$$
 x^4-2
-\]
-is Eisenstein at \(2\), so it is the minimal polynomial of \(\alpha\) over \(\QQ\).
+$$
+is Eisenstein at $2$, so it is the minimal polynomial of $\alpha$ over $\QQ$.
 Its roots are
-\[
+$$
 \alpha,-\alpha,i\alpha,-i\alpha.
-\]
+$$
 The field
-\[
+$$
 M=\QQ(\alpha)
-\]
-is contained in \(\RR\), so it does not contain \(i\alpha\).
-Hence the minimal polynomial \(x^4-2\) does not split over \(M\).
-Thus \(M/\QQ\) is not normal, and therefore is not Galois.
+$$
+is contained in $\RR$, so it does not contain $i\alpha$.
+Hence the minimal polynomial $x^4-2$ does not split over $M$.
+Thus $M/\QQ$ is not normal, and therefore is not Galois.
 :::
 
 :::

@@ -18,13 +18,13 @@ audit:
 
 ::: {.problem}
 Use Rouché's theorem to find the number of zeros of
-\[
+$$
 z^4+5z+3
-\]
+$$
 in the annulus
-\[
+$$
 1<|z|<2.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -14,11 +14,11 @@ audit:
 
 ::: {.problem}
 Let $G,H$ be finite groups of relatively prime orders. Prove that
-\[
+$$
 \operatorname{Aut}(G\times H)
 \cong
 \operatorname{Aut}(G)\times\operatorname{Aut}(H).
-\]
+$$
 :::
 
 ::: {.solution}

@@ -28,9 +28,9 @@ audit:
 
 ::: {.problem}
 Determine all rational numbers $t$ such that
-\[
+$$
 3t^3+10t^2-3t
-\]
+$$
 is an integer.
 :::
 

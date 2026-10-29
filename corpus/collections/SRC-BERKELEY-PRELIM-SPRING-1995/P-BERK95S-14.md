@@ -21,17 +21,17 @@ audit:
 
 ::: {.problem}
 Let $y:\RR\to\RR$ be three times differentiable and satisfy
-\[
+$$
 y'''-y=0.
-\]
+$$
 Suppose
-\[
+$$
 \lim_{x\to\infty}y(x)=0.
-\]
+$$
 Find real numbers $a,b,c,d$, not all zero, such that
-\[
+$$
 ay(0)+by'(0)+cy''(0)=d.
-\]
+$$
 :::
 
 ::: {.solution}

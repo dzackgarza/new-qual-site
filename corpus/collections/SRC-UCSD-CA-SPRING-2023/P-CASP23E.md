@@ -95,9 +95,9 @@ poles $0, 5 \notin K$.
 
 By **Runge’s Theorem** (with prescribed poles), every function holomorphic in a neighborhood of a compact set $K$ can be uniformly approximated on $K$ by rational functions whose poles lie in $S$.
 Thus there exists a sequence of rational functions $R_n(z)$ with poles only in $\{2, 6\}$ such that:
-\[
+$$
 \lim_{n \to \infty} \sup_{z \in K} |f(z) - R_n(z)| = 0.
-\]
+$$
 
 ::: pf-proof
 
@@ -159,9 +159,9 @@ $3 \le 3.5 \le 4$.
 For each $n$, the only pole of $R_n(z)$ is at $z = 6$.
 Since $|6| = 6 > 3.5$, the closed disk $\overline{D}(0, 3.5)$ contains no poles of $R_n(z)$.
 Thus $R_n$ is holomorphic on a simply connected neighborhood of $\overline{D}(0, 3.5)$, so by Cauchy’s Integral Theorem:
-\[
+$$
 \int_\gamma R_n(z) \, dz = 0 \quad \text{for all } n \ge 1.
-\]
+$$
 
 ::: pf-proof
 
@@ -174,9 +174,9 @@ Cauchy's Integral Theorem.
 ::: {.pf-step #s2-5}
 
 Since $R_n \to f$ uniformly on $K$ and $\gamma \subset K$, we can pass the limit under the integral sign:
-\[
+$$
 \int_\gamma f(z) \, dz = \lim_{n \to \infty} \int_\gamma R_n(z) \, dz = \lim_{n \to \infty} 0 = 0.
-\]
+$$
 
 ::: pf-proof
 
@@ -191,9 +191,9 @@ uniform convergence on compact contours preserves integrals.
 On the other hand, compute $\int_\gamma f(z) \, dz$ directly using the Residue Theorem:
 Inside $\gamma$, the function $f(z) = \frac{\cos z}{z(z-5)}$ has a single singularity at $z = 0$ (a simple pole), since $|0| < 3.5 < 5 = |5|$.
 Compute the residue:
-\[
+$$
 \operatorname{Res}(f, 0) = \lim_{z \to 0} z f(z) = \lim_{z \to 0} \frac{\cos z}{z - 5} = \frac{\cos 0}{-5} = -\frac{1}{5}.
-\]
+$$
 
 ::: pf-proof
 
@@ -206,9 +206,9 @@ residue at a simple pole.
 ::: pf-step
 
 By Cauchy’s Residue Theorem:
-\[
+$$
 \int_\gamma f(z) \, dz = 2\pi i \operatorname{Res}(f, 0) = 2\pi i \left(-\frac{1}{5}\right) = -\frac{2\pi i}{5} \neq 0.
-\]
+$$
 This contradicts step [](#s2-5){.pf-ref} ($\int_\gamma f(z) \, dz = 0$).
 
 ::: pf-proof

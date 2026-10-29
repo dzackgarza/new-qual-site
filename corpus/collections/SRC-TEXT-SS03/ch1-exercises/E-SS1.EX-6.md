@@ -40,8 +40,8 @@ The relation $w\sim z$ defined by $w\in\mathcal C_z$ is reflexive (use the const
 For countability, every component is a nonempty open subset of $\CC\cong\RR^2$, hence contains a point of $\QQ^2$. Distinct components are disjoint, so choosing one rational point from each component gives an injection from the set of components into the countable set $\QQ^2$. Therefore there are at most countably many components.
 
 Finally suppose $\Omega=\CC\setminus K$ with $K$ compact. Choose $R>0$ such that $K\subset D(0,R)$. The exterior
-\[
+$$
 E=\{z:|z|>R\}
-\]
+$$
 is connected and lies in $\Omega$, so it is contained in a single component $U$ of $\Omega$. If $V$ is any unbounded component, then $V$ contains some point with modulus $>R$, hence meets $E\subset U$. Components that meet are equal, so $V=U$. Thus $\Omega$ has exactly one unbounded component.
 :::

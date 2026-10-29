@@ -32,27 +32,27 @@ Let $k$ be a field.
 
 ::: {.solution}
 Write
-\[
+$$
 m_0=\bigl\{\{1,2\},\{3,4\},\ldots,\{2n-1,2n\}\bigr\}
-\]
+$$
 for the standard matching.
 
 ::: pf
 
 ::: {.pf-step}
 The subgroup
-\[
+$$
 \boxed{H=\operatorname{Stab}_{S_{2n}}(m_0)\cong (S_2)^n\rtimes S_n=S_2\wr S_n}
-\]
+$$
 satisfies $k[M_n]\cong\operatorname{Ind}_H^{S_{2n}}\mathbf 1$.
 
 ::: pf-proof
 A permutation fixes $m_0$ exactly when it permutes its $n$ pairs, possibly swapping the two entries inside each pair; these permutations form the wreath product $S_2\wr S_n$.
 Any perfect matching is carried to $m_0$ by a permutation that sends its pairs to the pairs of $m_0$, so $S_{2n}$ acts transitively on $M_n$.
 Hence
-\[
+$$
 S_{2n}/H\longrightarrow M_n,\qquad gH\longmapsto g m_0,
-\]
+$$
 is an $S_{2n}$-equivariant bijection, and the permutation module of $S_{2n}/H$ is $\operatorname{Ind}_H^{S_{2n}}\mathbf 1$.
 :::
 

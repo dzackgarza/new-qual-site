@@ -32,13 +32,13 @@ audit:
 ::: {.problem}
 Let $U$ be a connected open subset of $\CC$ containing $-2$ and $0$.
 Suppose $f:U\to\CC$ is holomorphic and its Taylor expansion at $0$ is
-\[
+$$
 \sum_{n\ge0}\binom{2n}{n}z^n.
-\]
+$$
 Prove that
-\[
+$$
 f(-2)\in\left\{\frac13,-\frac13\right\}.
-\]
+$$
 :::
 
 ::: {.solution}

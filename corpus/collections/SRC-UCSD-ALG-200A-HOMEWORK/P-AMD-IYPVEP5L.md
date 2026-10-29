@@ -38,9 +38,9 @@ review: draft
 ::: {.problem}
 Let $G$ be finite.
 Recall that a subgroup $H\le G$ is a **Hall subgroup** if
-\[
+$$
 \gcd(|H|,[G:H])=1.
-\]
+$$
 Let $H$ be a Hall subgroup of $G$, and let $N\normal G$.
 
 Show that $H\cap N$ is a Hall subgroup of $N$ and that $HN/N$ is a Hall subgroup of $G/N$.
@@ -48,13 +48,13 @@ Show that $H\cap N$ is a Hall subgroup of $N$ and that $HN/N$ is a Hall subgroup
 
 ::: {.solution}
 Set
-\[
+$$
 d=[G:H].
-\]
+$$
 Since $H$ is Hall in $G$,
-\[
+$$
 \gcd(|H|,d)=1.
-\]
+$$
 
 ::: pf
 
@@ -66,24 +66,24 @@ The index $[N:H\cap N]$ divides $d$.
 
 Because $N\normal G$, the product $HN$ is a subgroup of $G$.
 For finite subgroups,
-\[
+$$
 |HN|=\frac{|H||N|}{|H\cap N|}.
-\]
+$$
 Therefore
-\[
+$$
 [HN:H]
 =\frac{|HN|}{|H|}
 =\frac{|N|}{|H\cap N|}
 =[N:H\cap N].
-\]
+$$
 The index tower $H\le HN\le G$ gives
-\[
+$$
 d=[G:H]=[G:HN][HN:H].
-\]
+$$
 Hence
-\[
+$$
 [N:H\cap N]=[HN:H]\mid d.
-\]
+$$
 
 :::
 
@@ -96,18 +96,18 @@ The subgroup $H\cap N$ is a Hall subgroup of $N$.
 ::: pf-proof
 
 Since $H\cap N\le H$, Lagrange's theorem gives
-\[
+$$
 |H\cap N|\mid |H|.
-\]
+$$
 By step [](#s1){.pf-ref},
-\[
+$$
 [N:H\cap N]\mid d.
-\]
+$$
 Any common divisor of $|H\cap N|$ and $[N:H\cap N]$ therefore divides both $|H|$ and $d$.
 Since $\gcd(|H|,d)=1$,
-\[
+$$
 \gcd(|H\cap N|,[N:H\cap N])=1.
-\]
+$$
 Thus $H\cap N$ is Hall in $N$.
 
 :::
@@ -121,13 +121,13 @@ The order of $HN/N$ divides $|H|$.
 ::: pf-proof
 
 The second isomorphism theorem gives the valid quotient isomorphism
-\[
+$$
 HN/N\cong H/(H\cap N).
-\]
+$$
 Hence
-\[
+$$
 |HN/N|=[H:H\cap N]=\frac{|H|}{|H\cap N|},
-\]
+$$
 which divides $|H|$.
 
 :::
@@ -141,18 +141,18 @@ The index $[G/N:HN/N]$ divides $d$.
 ::: pf-proof
 
 The correspondence of cosets under the quotient by $N$ gives
-\[
+$$
 [G/N:HN/N]=[G:HN].
-\]
+$$
 From the index tower used in step [](#s1){.pf-ref},
-\[
+$$
 d=[G:HN][HN:H],
-\]
+$$
 so $[G:HN]\mid d$.
 Therefore
-\[
+$$
 [G/N:HN/N]\mid d.
-\]
+$$
 
 :::
 
@@ -166,9 +166,9 @@ The subgroup $HN/N$ is a Hall subgroup of $G/N$.
 
 By step [](#s3){.pf-ref}, $|HN/N|$ divides $|H|$, and by step [](#s4){.pf-ref} its index in $G/N$ divides $d$.
 Since $\gcd(|H|,d)=1$, these two divisors are coprime:
-\[
+$$
 \gcd\bigl(|HN/N|,[G/N:HN/N]\bigr)=1.
-\]
+$$
 Thus $HN/N$ is Hall in $G/N$.
 
 :::

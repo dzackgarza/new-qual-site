@@ -32,7 +32,7 @@ the Mathieu groups $M_{11}$ and $M_{12}$.
 
 More precisely, if $G\le S_n$ acts sharply $k$-transitively and $k\ge4$, then
 one of the following holds:
-\[
+$$
 \begin{array}{c|c}
 G & k \\
 \hline
@@ -41,7 +41,7 @@ A_n & n-2 \\
 M_{11} & 4\quad(n=11) \\
 M_{12} & 5\quad(n=12).
 \end{array}
-\]
+$$
 
 ::: pf
 
@@ -71,16 +71,16 @@ The exceptional Mathieu actions are sharply $4$- and $5$-transitive.
 ::: pf-proof
 
 The natural action of $M_{11}$ has degree $11$ and
-\[
+$$
 |M_{11}|=11\cdot10\cdot9\cdot8,
-\]
+$$
 the number of ordered $4$-tuples of distinct points. Since the action is
 $4$-transitive, it is therefore sharp.
 
 Likewise the natural action of $M_{12}$ has degree $12$ and
-\[
+$$
 |M_{12}|=12\cdot11\cdot10\cdot9\cdot8,
-\]
+$$
 the number of ordered $5$-tuples of distinct points. Its $5$-transitivity is
 therefore sharp.
 

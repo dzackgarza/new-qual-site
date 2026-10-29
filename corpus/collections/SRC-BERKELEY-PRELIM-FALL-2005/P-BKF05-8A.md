@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the smallest positive integer \(n\) for which \(S_n\) contains a cyclic subgroup of order \(111\).
+Find the smallest positive integer $n$ for which $S_n$ contains a cyclic subgroup of order $111$.
 :::
 
 ::: {.solution}

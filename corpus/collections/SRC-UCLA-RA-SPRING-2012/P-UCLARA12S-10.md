@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Define
-\[
+$$
 \Gamma(z)=\int_0^\infty t^{z-1}e^{-t}\,dt
-\]
+$$
 wherever the integral is absolutely convergent.
 Show that this function extends meromorphically to the whole complex plane.
 :::

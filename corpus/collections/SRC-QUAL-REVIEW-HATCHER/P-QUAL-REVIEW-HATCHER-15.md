@@ -17,41 +17,41 @@ audit:
 
 ::: {.problem}
 Suppose $X$ and $Y$ are spaces such that
-\[
+$$
 X\times Y\simeq\CP^n,
 \qquad n\ge1.
-\]
+$$
 Prove that either
-\[
+$$
 H^i(X)=0\quad\text{for all }i>0,
-\]
+$$
 or
-\[
+$$
 H^i(Y)=0\quad\text{for all }i>0.
-\]
+$$
 :::
 
 ::: {.solution}
 
-All cohomology groups below have coefficients in \(\ZZ\).
+All cohomology groups below have coefficients in $\ZZ$.
 
 Assume
-\[
+$$
 X\times Y\simeq\CP^n,
 \qquad
 n\ge1.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
-The spaces \(X\) and \(Y\) are connected.
+The spaces $X$ and $Y$ are connected.
 
 
 ::: pf-proof
 
-The product \(X\times Y\) is homotopy equivalent to the connected space \(\CP^n\), hence is connected. A product is connected only if each factor is connected.
+The product $X\times Y$ is homotopy equivalent to the connected space $\CP^n$, hence is connected. A product is connected only if each factor is connected.
 
 :::
 
@@ -60,23 +60,23 @@ The product \(X\times Y\) is homotopy equivalent to the connected space \(\CP^n\
 ::: {.pf-step #s1-2}
 
 One has
-\[
+$$
 i_X^*\circ p_X^*=\operatorname{id}_{H^*(X)}
-\]
+$$
 and
-\[
+$$
 i_Y^*\circ p_Y^*=\operatorname{id}_{H^*(Y)}.
-\]
+$$
 
 
 ::: pf-proof
 
 The composites
-\[
+$$
 p_X\circ i_X=\operatorname{id}_X,
 \qquad
 p_Y\circ i_Y=\operatorname{id}_Y.
-\]
+$$
 Apply contravariant functoriality of cohomology.
 
 :::
@@ -86,15 +86,15 @@ Apply contravariant functoriality of cohomology.
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{
 p_X^*:H^*(X)\hookrightarrow H^*(X\times Y)}
-\]
+$$
 and
-\[
+$$
 \boxed{
 p_Y^*:H^*(Y)\hookrightarrow H^*(X\times Y)}
-\]
+$$
 are injective.
 
 
@@ -108,15 +108,15 @@ Each map has a left inverse by step [](#s1-2){.pf-ref}.
 
 ::: {.pf-step #s1-4}
 
-The integral cohomology of \(\CP^n\) is
-\[
+The integral cohomology of $\CP^n$ is
+$$
 \boxed{
 H^*(\CP^n)
 \cong
 \ZZ[u]/(u^{n+1})},
 \qquad
 |u|=2.
-\]
+$$
 
 
 ::: pf-proof
@@ -129,18 +129,18 @@ This is the standard cohomology-ring computation for complex projective space.
 
 ::: {.pf-step #s1-5}
 
-Hence every cohomology group of \(X\) and \(Y\) is torsion-free and vanishes in odd degree.
+Hence every cohomology group of $X$ and $Y$ is torsion-free and vanishes in odd degree.
 
 
 ::: pf-proof
 
-By step [](#s1-3){.pf-ref}, each \(H^m(X)\) and \(H^m(Y)\) injects into
-\[
+By step [](#s1-3){.pf-ref}, each $H^m(X)$ and $H^m(Y)$ injects into
+$$
 H^m(X\times Y)
 \cong
 H^m(\CP^n).
-\]
-By step [](#s1-4){.pf-ref}, this target is either \(0\) or \(\ZZ\). Thus the factor group is either \(0\) or a subgroup of \(\ZZ\), hence torsion-free; and it vanishes whenever \(m\) is odd.
+$$
+By step [](#s1-4){.pf-ref}, this target is either $0$ or $\ZZ$. Thus the factor group is either $0$ or a subgroup of $\ZZ$, hence torsion-free; and it vanishes whenever $m$ is odd.
 
 :::
 
@@ -149,19 +149,19 @@ By step [](#s1-4){.pf-ref}, this target is either \(0\) or \(\ZZ\). Thus the fac
 ::: pf-step
 
 The cohomological Künneth theorem therefore gives
-\[
+$$
 \boxed{
 H^m(X\times Y)
 \cong
 \bigoplus_{p+q=m}
 H^p(X)\otimes H^q(Y)}
-\]
-for every \(m\).
+$$
+for every $m$.
 
 
 ::: pf-proof
 
-By step [](#s1-5){.pf-ref}, all cohomology groups of the factors are free abelian, so the \(\operatorname{Tor}\) terms vanish.
+By step [](#s1-5){.pf-ref}, all cohomology groups of the factors are free abelian, so the $\operatorname{Tor}$ terms vanish.
 
 :::
 
@@ -169,33 +169,33 @@ By step [](#s1-5){.pf-ref}, all cohomology groups of the factors are free abelia
 
 ::: {.pf-step #s1-7}
 
-In degree \(2\),
-\[
+In degree $2$,
+$$
 \boxed{
 H^2(X\times Y)
 \cong
 H^2(X)\oplus H^2(Y)}.
-\]
+$$
 
 
 ::: pf-proof
 
 By connectedness,
-\[
+$$
 H^0(X)\cong H^0(Y)\cong\ZZ.
-\]
+$$
 By step [](#s1-5){.pf-ref},
-\[
+$$
 H^1(X)=H^1(Y)=0.
-\]
-Thus the only Künneth summands in degree \(2\) are
-\[
+$$
+Thus the only Künneth summands in degree $2$ are
+$$
 H^2(X)\otimes H^0(Y)
-\]
+$$
 and
-\[
+$$
 H^0(X)\otimes H^2(Y).
-\]
+$$
 
 :::
 
@@ -204,25 +204,25 @@ H^0(X)\otimes H^2(Y).
 ::: {.pf-step #s1-8}
 
 Since
-\[
+$$
 H^2(X\times Y)
 \cong
 H^2(\CP^n)
 \cong
 \ZZ,
-\]
+$$
 exactly one of
-\[
+$$
 H^2(X),
 \qquad
 H^2(Y)
-\]
-is isomorphic to \(\ZZ\), and the other is zero.
+$$
+is isomorphic to $\ZZ$, and the other is zero.
 
 
 ::: pf-proof
 
-By step [](#s1-5){.pf-ref}, each summand in step [](#s1-7){.pf-ref} is either \(0\) or a nonzero free subgroup of \(\ZZ\), hence rank \(1\). Their direct sum has rank \(1\), so exactly one summand has rank \(1\).
+By step [](#s1-5){.pf-ref}, each summand in step [](#s1-7){.pf-ref} is either $0$ or a nonzero free subgroup of $\ZZ$, hence rank $1$. Their direct sum has rank $1$, so exactly one summand has rank $1$.
 
 :::
 
@@ -231,27 +231,27 @@ By step [](#s1-5){.pf-ref}, each summand in step [](#s1-7){.pf-ref} is either \(
 ::: {.pf-step #s1-9}
 
 Choose
-\[
+$$
 a\in H^2(X)
-\]
+$$
 so that
-\[
+$$
 \boxed{
 p_X^*a=\pm u}
-\]
+$$
 under a fixed cohomology-ring isomorphism
-\[
+$$
 H^*(X\times Y)\cong H^*(\CP^n).
-\]
+$$
 
 
 ::: pf-proof
 
-In degree \(2\), step [](#s1-7){.pf-ref} identifies
-\[
+In degree $2$, step [](#s1-7){.pf-ref} identifies
+$$
 H^2(X\times Y)
-\]
-entirely with the \(H^2(X)\)-summand. Both are infinite cyclic, so a generator \(a\) pulls back to \(\pm u\).
+$$
+entirely with the $H^2(X)$-summand. Both are infinite cyclic, so a generator $a$ pulls back to $\pm u$.
 
 :::
 
@@ -259,18 +259,18 @@ entirely with the \(H^2(X)\)-summand. Both are infinite cyclic, so a generator \
 
 ::: pf-step
 
-Let \(m>0\) be the least degree with
-\[
+Let $m>0$ be the least degree with
+$$
 H^m(Y)\ne0.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-5){.pf-ref}, the only possible nonzero degrees are among the finite set
-\[
+$$
 2,4,\dots,2n,
-\]
+$$
 so a least positive one exists.
 
 :::
@@ -279,16 +279,16 @@ so a least positive one exists.
 
 ::: pf-step
 
-The degree \(m\) is even:
-\[
+The degree $m$ is even:
+$$
 \boxed{m=2r}
-\]
-for some \(1\le r\le n\).
+$$
+for some $1\le r\le n$.
 
 
 ::: pf-proof
 
-Odd-degree cohomology of \(Y\) vanishes by step [](#s1-5){.pf-ref}, and no positive cohomology can occur above degree \(2n\) because it injects into that of \(\CP^n\).
+Odd-degree cohomology of $Y$ vanishes by step [](#s1-5){.pf-ref}, and no positive cohomology can occur above degree $2n$ because it injects into that of $\CP^n$.
 
 :::
 
@@ -297,19 +297,19 @@ Odd-degree cohomology of \(Y\) vanishes by step [](#s1-5){.pf-ref}, and no posit
 ::: {.pf-step #s1-12}
 
 Choose
-\[
+$$
 0\ne y\in H^{2r}(Y).
-\]
+$$
 Then
-\[
+$$
 \boxed{
 p_Y^*y\ne0}.
-\]
+$$
 
 
 ::: pf-proof
 
-The map \(p_Y^*\) is injective by step [](#s1-3){.pf-ref}.
+The map $p_Y^*$ is injective by step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -318,23 +318,23 @@ The map \(p_Y^*\) is injective by step [](#s1-3){.pf-ref}.
 ::: {.pf-step #s1-13}
 
 Since
-\[
+$$
 H^{2r}(X\times Y)
 \cong
 H^{2r}(\CP^n)
 \cong
 \ZZ\,u^r,
-\]
-there is a nonzero integer \(c\) such that
-\[
+$$
+there is a nonzero integer $c$ such that
+$$
 \boxed{
 p_Y^*y=c\,u^r}.
-\]
+$$
 
 
 ::: pf-proof
 
-The target is infinite cyclic generated by \(u^r\), and the class is nonzero by step [](#s1-12){.pf-ref}.
+The target is infinite cyclic generated by $u^r$, and the class is nonzero by step [](#s1-12){.pf-ref}.
 
 :::
 
@@ -343,19 +343,19 @@ The target is infinite cyclic generated by \(u^r\), and the class is nonzero by 
 ::: {.pf-step #s1-14}
 
 By step [](#s1-9){.pf-ref},
-\[
+$$
 \boxed{
 u^r=\pm p_X^*(a^r)}.
-\]
+$$
 
 
 ::: pf-proof
 
 Cup powers commute with pullback:
-\[
+$$
 (p_X^*a)^r=p_X^*(a^r).
-\]
-Since \(p_X^*a=\pm u\), its \(r\)th power is \((\pm1)^r u^r\).
+$$
+Since $p_X^*a=\pm u$, its $r$th power is $(\pm1)^r u^r$.
 
 :::
 
@@ -364,12 +364,12 @@ Since \(p_X^*a=\pm u\), its \(r\)th power is \((\pm1)^r u^r\).
 ::: {.pf-step #s1-15}
 
 Therefore
-\[
+$$
 \boxed{
 p_Y^*y
 =
 \pm c\,p_X^*(a^r)}.
-\]
+$$
 
 
 ::: pf-proof
@@ -382,23 +382,23 @@ Combine steps [](#s1-13){.pf-ref} through [](#s1-14){.pf-ref}.
 
 ::: {.pf-step #s1-16}
 
-Pulling step [](#s1-15){.pf-ref} back along \(i_X\), the left-hand side becomes zero.
+Pulling step [](#s1-15){.pf-ref} back along $i_X$, the left-hand side becomes zero.
 
 
 ::: pf-proof
 
 The composite
-\[
+$$
 p_Y\circ i_X:X\to Y
-\]
-is the constant map at \(y_0\). Since \(y\) has positive degree,
-\[
+$$
+is the constant map at $y_0$. Since $y$ has positive degree,
+$$
 i_X^*p_Y^*y
 =
 (p_Y\circ i_X)^*y
 =
 0.
-\]
+$$
 
 :::
 
@@ -406,18 +406,18 @@ i_X^*p_Y^*y
 
 ::: {.pf-step #s1-17}
 
-Pulling the right-hand side of step [](#s1-15){.pf-ref} back along \(i_X\) gives
-\[
+Pulling the right-hand side of step [](#s1-15){.pf-ref} back along $i_X$ gives
+$$
 \boxed{\pm c\,a^r}.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-2){.pf-ref},
-\[
+$$
 i_X^*p_X^*=\operatorname{id}.
-\]
+$$
 
 :::
 
@@ -426,19 +426,19 @@ i_X^*p_X^*=\operatorname{id}.
 ::: {.pf-step #s1-18}
 
 The class
-\[
+$$
 a^r
-\]
+$$
 is nonzero.
 
 
 ::: pf-proof
 
 By step [](#s1-14){.pf-ref},
-\[
+$$
 p_X^*(a^r)=\pm u^r.
-\]
-The class \(u^r\) is nonzero for \(1\le r\le n\) by step [](#s1-4){.pf-ref}. Since \(p_X^*\) is injective, \(a^r\ne0\).
+$$
+The class $u^r$ is nonzero for $1\le r\le n$ by step [](#s1-4){.pf-ref}. Since $p_X^*$ is injective, $a^r\ne0$.
 
 :::
 
@@ -447,23 +447,23 @@ The class \(u^r\) is nonzero for \(1\le r\le n\) by step [](#s1-4){.pf-ref}. Sin
 ::: {.pf-step #s1-19}
 
 Thus step [](#s1-15){.pf-ref} yields
-\[
+$$
 0=\pm c\,a^r
-\]
+$$
 with
-\[
+$$
 c\ne0
-\]
+$$
 and
-\[
+$$
 a^r\ne0,
-\]
+$$
 a contradiction.
 
 
 ::: pf-proof
 
-Use steps [](#s1-16){.pf-ref} through [](#s1-18){.pf-ref}. The group \(H^{2r}(X)\) is torsion-free by step [](#s1-5){.pf-ref}, so a nonzero integer cannot kill the nonzero class \(a^r\).
+Use steps [](#s1-16){.pf-ref} through [](#s1-18){.pf-ref}. The group $H^{2r}(X)$ is torsion-free by step [](#s1-5){.pf-ref}, so a nonzero integer cannot kill the nonzero class $a^r$.
 
 :::
 
@@ -472,11 +472,11 @@ Use steps [](#s1-16){.pf-ref} through [](#s1-18){.pf-ref}. The group \(H^{2r}(X)
 ::: {.pf-step #s1-20}
 
 Therefore
-\[
+$$
 \boxed{
 H^i(Y)=0
 \qquad\text{for all }i>0}.
-\]
+$$
 
 
 ::: pf-proof
@@ -489,12 +489,12 @@ The assumption of a nonzero positive-degree class led to the contradiction in st
 
 ::: {.pf-step #s1-21}
 
-If instead the nonzero degree-\(2\) summand in step [](#s1-8){.pf-ref} belongs to \(Y\), the same argument with \(X\) and \(Y\) interchanged gives
-\[
+If instead the nonzero degree-$2$ summand in step [](#s1-8){.pf-ref} belongs to $Y$, the same argument with $X$ and $Y$ interchanged gives
+$$
 \boxed{
 H^i(X)=0
 \qquad\text{for all }i>0}.
-\]
+$$
 
 
 ::: pf-proof
@@ -508,13 +508,13 @@ The proof is symmetric in the two factors.
 ::: {.pf-step #s1-22}
 
 Hence
-\[
+$$
 \boxed{
 \text{either }
 H^i(X)=0\text{ for all }i>0,
 \quad\text{or}\quad
 H^i(Y)=0\text{ for all }i>0.}
-\]
+$$
 
 
 ::: pf-proof

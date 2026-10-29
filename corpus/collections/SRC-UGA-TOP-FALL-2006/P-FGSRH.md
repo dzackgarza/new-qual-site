@@ -43,9 +43,9 @@ We may reduce to the case in which the set of values of $(x_n)$ is infinite.
 ::: pf-proof
 If some value occurs infinitely often, the corresponding constant subsequence converges.
 Otherwise every value occurs only finitely often, so
-\[
+$$
 A=\{x_n:n\ge1\}
-\]
+$$
 is infinite, as required.
 :::
 
@@ -57,14 +57,14 @@ The infinite set $A$ has a limit point $p\in X$.
 ::: pf-proof
 Suppose not.
 By the definition of limit point, for each $x\in X$ there is then an open neighborhood $U_x$ such that
-\[
+$$
 U_x\cap A\subseteq\{x\}.
-\]
+$$
 The family $\{U_x:x\in X\}$ covers $X$, so compactness gives a finite subcover $U_{x_1},\ldots,U_{x_m}$.
 Consequently
-\[
+$$
 A\subseteq\{x_1,\ldots,x_m\},
-\]
+$$
 contrary to step [](#reduce-to-infinite-set){.pf-ref}.
 :::
 
@@ -78,13 +78,13 @@ It is enough to prove this for metric balls about $p$.
 Suppose some ball $B(p,r)$ met $A\setminus\{p\}$ in only the finitely many points $a_1,\ldots,a_m$.
 If $m=0$, then $B(p,r)$ itself contradicts that $p$ is a limit point of $A$.
 If $m>0$, set
-\[
+$$
 \delta=\min\left\{r,\frac12 d(p,a_1),\ldots,\frac12 d(p,a_m)\right\}>0.
-\]
+$$
 Then
-\[
+$$
 B(p,\delta)\cap(A\setminus\{p\})=\varnothing,
-\]
+$$
 again contradicting that $p$ is a limit point of $A$.
 Hence every ball about $p$, and therefore every neighborhood of $p$, contains infinitely many points of $A$.
 :::
@@ -93,9 +93,9 @@ Hence every ball about $p$, and therefore every neighborhood of $p$, contains in
 
 ::: {.pf-step #indices-chosen}
 There are indices $n_1<n_2<\cdots$ such that
-\[
+$$
 x_{n_k}\in B(p,1/k).
-\]
+$$
 
 ::: pf-proof
 Choose the indices recursively.
@@ -110,9 +110,9 @@ The subsequence $(x_{n_k})$ converges to $p$.
 
 ::: pf-proof
 By step [](#indices-chosen){.pf-ref},
-\[
+$$
 d(x_{n_k},p)<{1\over k}\to0,
-\]
+$$
 which is precisely $x_{n_k}\to p$.
 :::
 

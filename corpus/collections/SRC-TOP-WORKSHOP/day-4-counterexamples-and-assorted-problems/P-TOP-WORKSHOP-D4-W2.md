@@ -27,17 +27,17 @@ Show that $f$ is a homeomorphism.
 :::
 
 ::: {.solution}
-Since \(f\) is bijective, it has an inverse \(f^{-1}:Y\to X\). To prove that \(f\) is a homeomorphism it remains only to show that \(f^{-1}\) is continuous.
+Since $f$ is bijective, it has an inverse $f^{-1}:Y\to X$. To prove that $f$ is a homeomorphism it remains only to show that $f^{-1}$ is continuous.
 
-If \(U\subseteq X\) is open, then
-\[
+If $U\subseteq X$ is open, then
+$$
 (f^{-1})^{-1}(U)=f(U),
-\]
-which is open in \(Y\) because \(f\) is an open map. Hence \(f^{-1}\) is continuous.
+$$
+which is open in $Y$ because $f$ is an open map. Hence $f^{-1}$ is continuous.
 
-If instead \(f\) is assumed closed, then for every closed \(F\subseteq X\),
-\[
+If instead $f$ is assumed closed, then for every closed $F\subseteq X$,
+$$
 (f^{-1})^{-1}(F)=f(F)
-\]
-is closed in \(Y\). Thus \(f^{-1}\) is continuous by the closed-set criterion. In either case \(f\) is a homeomorphism.
+$$
+is closed in $Y$. Thus $f^{-1}$ is continuous by the closed-set criterion. In either case $f$ is a homeomorphism.
 :::

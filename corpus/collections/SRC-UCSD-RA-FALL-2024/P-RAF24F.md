@@ -26,10 +26,10 @@ audit:
 
 ::: {.problem}
 Show that for any $p > 1$, there is a constant $C_p < \infty$ such that
-\[
+$$
 \sum_{k=-\infty}^{\infty} |\hat{f}(k)| \le \|f\|_{L^1} + C_p \|f'\|_{L^p}
 \quad\text{for each } f \in C^1(\circlegroup).
-\]
+$$
 :::
 
 ::: {.solution}
@@ -43,11 +43,11 @@ Separate the zero Fourier mode.
 ::: pf-proof
 
 For $k=0$,
-\[
+$$
 |\widehat f(0)|
 =\left|\int_{\circlegroup}f(x)\,dx\right|
 \le \|f\|_{L^1}.
-\]
+$$
 Thus it remains to control the sum over $k\ne0$.
 
 :::
@@ -61,21 +61,21 @@ Integrate by parts for the nonzero modes.
 ::: pf-proof
 
 Because $f\in C^1(\circlegroup)$ is periodic, integration by parts gives, for every $k\ne0$,
-\[
+$$
 \widehat{f'}(k)
 =2\pi i k\,\widehat f(k).
-\]
+$$
 Hence
-\[
+$$
 |\widehat f(k)|
 \le \frac1{2\pi|k|}\,|\widehat{f'}(k)|.
-\]
+$$
 Therefore
-\[
+$$
 \sum_{k\ne0}|\widehat f(k)|
 \le \frac1{2\pi}
 \sum_{k\ne0}\frac{|\widehat{f'}(k)|}{|k|}.
-\]
+$$
 
 :::
 
@@ -88,22 +88,22 @@ Treat the range $1<p\le2$.
 ::: pf-proof
 
 Let $p'=p/(p-1)$. By Hölder's inequality for sequences,
-\[
+$$
 \sum_{k\ne0}\frac{|\widehat{f'}(k)|}{|k|}
 \le
 \left(\sum_{k\ne0}|k|^{-p}\right)^{1/p}
 \left(\sum_{k\ne0}|\widehat{f'}(k)|^{p'}\right)^{1/p'}.
-\]
+$$
 Since $p>1$, the first series converges. By the Hausdorff--Young inequality,
-\[
+$$
 \|\widehat{f'}\|_{\ell^{p'}}
 \le \|f'\|_{L^p}.
-\]
+$$
 Thus
-\[
+$$
 \sum_{k\ne0}|\widehat f(k)|
 \le C_p\|f'\|_{L^p}.
-\]
+$$
 
 :::
 
@@ -116,11 +116,11 @@ Treat the range $p\ge2$.
 ::: pf-proof
 
 Since $\circlegroup$ has finite measure,
-\[
+$$
 \|f'\|_{L^2}\le \|f'\|_{L^p}.
-\]
+$$
 By Cauchy--Schwarz and Plancherel,
-\[
+$$
 \begin{aligned}
 \sum_{k\ne0}\frac{|\widehat{f'}(k)|}{|k|}
 &\le
@@ -129,7 +129,7 @@ By Cauchy--Schwarz and Plancherel,
 &\le C\|f'\|_{L^2}
 \le C\|f'\|_{L^p}.
 \end{aligned}
-\]
+$$
 Hence the same estimate holds for every $p\ge2$.
 
 :::
@@ -143,11 +143,11 @@ Combine the estimates.
 ::: pf-proof
 
 Steps 1--4 give, for every $p>1$,
-\[
+$$
 \boxed{
 \sum_{k\in\ZZ}|\widehat f(k)|
 \le \|f\|_{L^1}+C_p\|f'\|_{L^p}.}
-\]
+$$
 The constant $C_p$ depends only on $p$ and the Fourier normalization.
 
 :::

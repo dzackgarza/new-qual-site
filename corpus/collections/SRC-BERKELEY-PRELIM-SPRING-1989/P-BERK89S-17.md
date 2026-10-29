@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 1. Let $R$ be a commutative ring with identity containing an element $a$ such that
-   \[
+   $$
    a^3=a+1.
-   \]
+   $$
    Let $I$ be an ideal of $R$ of index less than $5$. Prove that
-   \[
+   $$
    I=R.
-   \]
+   $$
 2. Show that there exists a commutative ring with identity containing an element $a$ satisfying $a^3=a+1$ and containing an ideal of index $5$.
 
 Here the index of $I$ means the order of the additive quotient $R/I$.

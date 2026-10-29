@@ -27,21 +27,21 @@ Let $f(x) = |x| + 3x^2$ for $x \in \RR$. What is $f'(-1)$?
 ::: {.pf-step #s1-1}
 
 In a neighborhood of
-\[
+$$
 x=-1,
-\]
+$$
 one has
-\[
+$$
 \boxed{|x|=-x}.
-\]
+$$
 
 
 ::: pf-proof
 
-Every \(x\) sufficiently close to \(-1\) is negative, and for \(x<0\),
-\[
+Every $x$ sufficiently close to $-1$ is negative, and for $x<0$,
+$$
 |x|=-x.
-\]
+$$
 
 :::
 
@@ -49,20 +49,20 @@ Every \(x\) sufficiently close to \(-1\) is negative, and for \(x<0\),
 
 ::: {.pf-step #s1-2}
 
-Therefore, near \(x=-1\),
-\[
+Therefore, near $x=-1$,
+$$
 f(x)
 =
 -x+3x^2.
-\]
+$$
 
 
 ::: pf-proof
 
 Substitute step [](#s1-1){.pf-ref} into
-\[
+$$
 f(x)=|x|+3x^2.
-\]
+$$
 
 :::
 
@@ -71,11 +71,11 @@ f(x)=|x|+3x^2.
 ::: {.pf-step #s1-3}
 
 Hence
-\[
+$$
 \boxed{
 f'(x)=-1+6x}
-\]
-for \(x\) near \(-1\).
+$$
+for $x$ near $-1$.
 
 
 ::: pf-proof
@@ -88,16 +88,16 @@ Differentiate the polynomial expression from step [](#s1-2){.pf-ref}.
 
 ::: {.pf-step #s1-4}
 
-Evaluating at \(-1\),
-\[
+Evaluating at $-1$,
+$$
 \boxed{
 f'(-1)=-1+6(-1)=-7}.
-\]
+$$
 
 
 ::: pf-proof
 
-Substitute \(x=-1\) into step [](#s1-3){.pf-ref}.
+Substitute $x=-1$ into step [](#s1-3){.pf-ref}.
 
 :::
 

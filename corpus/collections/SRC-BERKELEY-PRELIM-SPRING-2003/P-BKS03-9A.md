@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 R=\{a+3bi:a,b\in\ZZ\}.
-\]
+$$
 Prove that $R$ is a subring of $\CC$, an integral domain, and not a unique factorization domain.
 :::
 

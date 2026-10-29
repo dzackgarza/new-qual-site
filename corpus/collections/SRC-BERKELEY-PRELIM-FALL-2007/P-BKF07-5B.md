@@ -26,14 +26,14 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be entire and let \(a_1,\ldots,a_n\) be all of its zeros in \(\CC\). Suppose there exist \(R>0\) and \(\alpha>1\) such that
-\[
+Let $f$ be entire and let $a_1,\ldots,a_n$ be all of its zeros in $\CC$. Suppose there exist $R>0$ and $\alpha>1$ such that
+$$
 |f(z)|\ge |z|^\alpha
-\]
-for every \(|z|\ge R\). Prove that
-\[
+$$
+for every $|z|\ge R$. Prove that
+$$
 \sum_{j=1}^n \operatorname{Res}_{z=a_j}\frac1{f(z)}=0.
-\]
+$$
 :::
 
 ::: {.solution}

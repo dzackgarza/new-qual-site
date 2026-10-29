@@ -17,9 +17,9 @@ audit:
 
 ::: {.problem}
 How many roots does
-\[
+$$
 z^4+3z^2+z+1
-\]
+$$
 have in the right half-plane?
 :::
 

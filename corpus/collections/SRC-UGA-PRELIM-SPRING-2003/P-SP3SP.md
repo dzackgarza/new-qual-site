@@ -28,19 +28,19 @@ audit:
 
 ::: pf-step
 The span of $v_1,\dots,v_k$ is
-\[
+$$
 \operatorname{span}(v_1,\dots,v_k)
 =\left\{\sum_{i=1}^k a_i v_i : a_1,\dots,a_k\in\RR\right\}.
-\]
+$$
 :::
 
 ::: {.pf-step #s2}
 Suppose $w\in\operatorname{span}(v_1,\dots,v_k)$. Then
-\[
+$$
 \operatorname{span}(v_1,\dots,v_k)
 \subseteq
 \operatorname{span}(v_1,\dots,v_k,w).
-\]
+$$
 
 ::: pf-proof
 Every linear combination of $v_1,\dots,v_k$ is also a linear combination of $v_1,\dots,v_k,w$, by taking the coefficient of $w$ to be $0$.
@@ -50,22 +50,22 @@ Every linear combination of $v_1,\dots,v_k$ is also a linear combination of $v_1
 
 ::: {.pf-step #s3}
 Conversely,
-\[
+$$
 \operatorname{span}(v_1,\dots,v_k,w)
 \subseteq
 \operatorname{span}(v_1,\dots,v_k).
-\]
+$$
 
 ::: pf-proof
 Because $w$ lies in the first span, there are $b_1,\dots,b_k\in\RR$ such that
-\[
+$$
 w=\sum_{i=1}^k b_i v_i.
-\]
+$$
 Hence every element of the enlarged span has the form
-\[
+$$
 \sum_{i=1}^k a_i v_i+c w
 =\sum_{i=1}^k (a_i+c b_i)v_i,
-\]
+$$
 which belongs to $\operatorname{span}(v_1,\dots,v_k)$.
 :::
 
@@ -73,11 +73,11 @@ which belongs to $\operatorname{span}(v_1,\dots,v_k)$.
 
 ::: pf-step
 Therefore
-\[
+$$
 \operatorname{span}(v_1,\dots,v_k,w)
 =
 \operatorname{span}(v_1,\dots,v_k).
-\]
+$$
 
 ::: pf-proof
 This follows from the two inclusions in steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.

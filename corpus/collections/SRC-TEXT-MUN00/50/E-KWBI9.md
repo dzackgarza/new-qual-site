@@ -29,11 +29,11 @@ Show that any connected $T_1$ space having more than one point has dimension at 
 :::
 
 ::: {.solution}
-Suppose, toward a contradiction, that \(\dim X=0\). Choose distinct points \(a,b\in X\). Since \(X\) is \(T_1\),
-\[
+Suppose, toward a contradiction, that $\dim X=0$. Choose distinct points $a,b\in X$. Since $X$ is $T_1$,
+$$
 U=X-\{a\},\qquad V=X-\{b\}
-\]
-are open and cover \(X\). Dimension zero gives an open cover \(\mathcal W\) refining \(\{U,V\}\) and having order at most \(1\). Hence distinct members of \(\mathcal W\) are disjoint.
+$$
+are open and cover $X$. Dimension zero gives an open cover $\mathcal W$ refining $\{U,V\}$ and having order at most $1$. Hence distinct members of $\mathcal W$ are disjoint.
 
-No single member of \(\mathcal W\) can equal \(X\), since each is contained in either \(U\) or \(V\), both proper. Therefore \(\mathcal W\) has at least two nonempty members. Taking one member \(W_0\) and the union of all the others gives two disjoint nonempty open sets whose union is \(X\), contradicting connectedness. Thus \(\dim X\ge1\).
+No single member of $\mathcal W$ can equal $X$, since each is contained in either $U$ or $V$, both proper. Therefore $\mathcal W$ has at least two nonempty members. Taking one member $W_0$ and the union of all the others gives two disjoint nonempty open sets whose union is $X$, contradicting connectedness. Thus $\dim X\ge1$.
 :::

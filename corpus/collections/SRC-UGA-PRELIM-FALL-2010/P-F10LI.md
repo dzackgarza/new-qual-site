@@ -23,22 +23,22 @@ Prove that $\int_C (x^3 - y^3)\,dx + (x^3 + y^3)\,dy \ge 0$ for every smooth, si
 
 ::: {.solution}
 Set
-\[
+$$
 P(x,y)=x^3-y^3,\qquad Q(x,y)=x^3+y^3.
-\]
+$$
 If $D$ is the bounded region enclosed by the positively oriented smooth simple closed curve $C$, Green's theorem gives
-\[
+$$
 \int_C P\,dx+Q\,dy
 =\iint_D\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)dA.
-\]
+$$
 Now
-\[
+$$
 \frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}
 =3x^2-(-3y^2)=3(x^2+y^2)\ge0.
-\]
+$$
 Therefore
-\[
+$$
 \int_C (x^3-y^3)\,dx+(x^3+y^3)\,dy
 =3\iint_D(x^2+y^2)\,dA\ge0.
-\]
+$$
 :::

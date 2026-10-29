@@ -28,9 +28,9 @@ Prove the claim or give a counterexample.
 
 ::: {.solution}
 No. The quaternion group
-\[
+$$
 Q_8=\{\pm1,\pm i,\pm j,\pm k\}
-\]
+$$
 is nonabelian, but every subgroup of $Q_8$ is normal.
 
 ::: pf
@@ -42,11 +42,11 @@ The group $Q_8$ is nonabelian.
 ::: pf-proof
 
 Its defining multiplication gives
-\[
+$$
 ij=k,
 \qquad
 ji=-k,
-\]
+$$
 so $ij\ne ji$.
 
 :::
@@ -60,10 +60,10 @@ Every subgroup of $Q_8$ is normal.
 ::: pf-proof
 
 The subgroups are
-\[
+$$
 \{1\},\quad \{\pm1\},\quad
 \langle i\rangle,\quad \langle j\rangle,\quad \langle k\rangle,\quad Q_8.
-\]
+$$
 The three subgroups of order $4$ have index $2$, hence are normal. The subgroup
 $\{\pm1\}$ lies in the center, and the trivial subgroup and whole group are
 normal.

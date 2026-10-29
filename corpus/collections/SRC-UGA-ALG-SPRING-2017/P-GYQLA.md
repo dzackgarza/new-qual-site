@@ -40,9 +40,9 @@ The left regular action is faithful: if $\pi(y)$ is the identity, then evaluatin
 ::: {.pf-step #s2}
 
 The sign of the permutation is
-\[
+$$
 \operatorname{sgn}(\pi(x))=(-1)^{m(k-1)}.
-\]
+$$
 
 ::: pf-proof
 

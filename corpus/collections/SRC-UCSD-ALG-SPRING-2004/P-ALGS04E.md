@@ -32,11 +32,11 @@ In a commutative ring with 1, prove that every ideal is contained in a maximal (
 
 ::: pf-step
 
-Interpreted literally with the convention that the unit ideal is an ideal, the statement has the exception \(I=A\). The intended assertion is that every **proper** ideal \(I\subsetneq A\) is contained in a maximal ideal.
+Interpreted literally with the convention that the unit ideal is an ideal, the statement has the exception $I=A$. The intended assertion is that every **proper** ideal $I\subsetneq A$ is contained in a maximal ideal.
 
 ::: pf-proof
 
-A maximal ideal is proper by definition, so no maximal ideal can contain the unit ideal \(A\). The standard existence theorem therefore concerns proper ideals.
+A maximal ideal is proper by definition, so no maximal ideal can contain the unit ideal $A$. The standard existence theorem therefore concerns proper ideals.
 
 :::
 
@@ -44,16 +44,16 @@ A maximal ideal is proper by definition, so no maximal ideal can contain the uni
 
 ::: pf-step
 
-Fix a proper ideal \(I\subsetneq A\), and let
-\[
+Fix a proper ideal $I\subsetneq A$, and let
+$$
 \mathcal P=\{J\triangleleft A: I\subseteq J\subsetneq A\},
-\]
+$$
 ordered by inclusion.
-Then \(\mathcal P\) is nonempty.
+Then $\mathcal P$ is nonempty.
 
 ::: pf-proof
 
-The ideal \(I\) itself belongs to \(\mathcal P\).
+The ideal $I$ itself belongs to $\mathcal P$.
 
 :::
 
@@ -61,16 +61,16 @@ The ideal \(I\) itself belongs to \(\mathcal P\).
 
 ::: {.pf-step #s3}
 
-Every chain \(\mathcal C\subseteq\mathcal P\) has an upper bound in \(\mathcal P\), namely
-\[
+Every chain $\mathcal C\subseteq\mathcal P$ has an upper bound in $\mathcal P$, namely
+$$
 U=\bigcup_{J\in\mathcal C}J.
-\]
+$$
 
 ::: pf-proof
 
-Because \(\mathcal C\) is totally ordered by inclusion, the union \(U\) is an ideal: if \(x,y\in U\), then \(x\in J_1\) and \(y\in J_2\) for some \(J_1,J_2\in\mathcal C\); one of these ideals contains the other, hence contains both \(x\) and \(y\), so \(x-y\in U\). Also \(ax\in U\) for every \(a\in A\).
+Because $\mathcal C$ is totally ordered by inclusion, the union $U$ is an ideal: if $x,y\in U$, then $x\in J_1$ and $y\in J_2$ for some $J_1,J_2\in\mathcal C$; one of these ideals contains the other, hence contains both $x$ and $y$, so $x-y\in U$. Also $ax\in U$ for every $a\in A$.
 
-Moreover \(I\subseteq U\). Finally, \(U\ne A\): if \(1\in U\), then \(1\in J\) for some \(J\in\mathcal C\), contradicting \(J\subsetneq A\). Thus \(U\in\mathcal P\).
+Moreover $I\subseteq U$. Finally, $U\ne A$: if $1\in U$, then $1\in J$ for some $J\in\mathcal C$, contradicting $J\subsetneq A$. Thus $U\in\mathcal P$.
 
 :::
 
@@ -78,11 +78,11 @@ Moreover \(I\subseteq U\). Finally, \(U\ne A\): if \(1\in U\), then \(1\in J\) f
 
 ::: pf-step
 
-By Zorn's lemma, \(\mathcal P\) has a maximal element \(M\).
+By Zorn's lemma, $\mathcal P$ has a maximal element $M$.
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref}, every chain in \(\mathcal P\) has an upper bound in \(\mathcal P\). Zorn's lemma therefore applies.
+By step [](#s3){.pf-ref}, every chain in $\mathcal P$ has an upper bound in $\mathcal P$. Zorn's lemma therefore applies.
 
 :::
 
@@ -90,15 +90,15 @@ By step [](#s3){.pf-ref}, every chain in \(\mathcal P\) has an upper bound in \(
 
 ::: pf-step
 
-The ideal \(M\) is a maximal ideal of \(A\), and \(I\subseteq M\).
+The ideal $M$ is a maximal ideal of $A$, and $I\subseteq M$.
 
 ::: pf-proof
 
-By definition of \(\mathcal P\), \(I\subseteq M\subsetneq A\). Suppose
-\[
+By definition of $\mathcal P$, $I\subseteq M\subsetneq A$. Suppose
+$$
 M\subsetneq J\subsetneq A
-\]
-for an ideal \(J\). Then \(J\in\mathcal P\), contradicting maximality of \(M\) in \(\mathcal P\). Hence no proper ideal strictly contains \(M\), so \(M\) is maximal.
+$$
+for an ideal $J$. Then $J\in\mathcal P$, contradicting maximality of $M$ in $\mathcal P$. Hence no proper ideal strictly contains $M$, so $M$ is maximal.
 
 :::
 

@@ -30,20 +30,20 @@ Show that $f$ is irreducible in $L[x]$.
 ::: {.pf-step #s1}
 
 Let $\alpha$ be a root of $f$ in an algebraic closure of $L$, and set
-\[
+$$
 E=K(\alpha).
-\]
+$$
 Then
-\[
+$$
 [E:K]=7.
-\]
+$$
 
 ::: pf-proof
 
 Since $f$ is irreducible over $K$ and has degree $7$, it is the minimal polynomial of $\alpha$ over $K$. Therefore
-\[
+$$
 [E:K]=\deg f=7.
-\]
+$$
 
 :::
 
@@ -52,9 +52,9 @@ Since $f$ is irreducible over $K$ and has degree $7$, it is the minimal polynomi
 ::: {.pf-step #s2}
 
 If $f$ were reducible over $L$, then it would be reducible over some finite Galois intermediate extension
-\[
+$$
 K\subseteq M\subseteq L.
-\]
+$$
 
 ::: pf-proof
 
@@ -67,16 +67,16 @@ A nontrivial factorization of $f$ in $L[x]$ uses only finitely many coefficients
 ::: {.pf-step #s3}
 
 For every finite Galois intermediate extension $M/K$ inside $L$,
-\[
+$$
 [M(\alpha):M]=[E:E\cap M].
-\]
+$$
 
 ::: pf-proof
 
 This is the standard degree formula for a compositum when one of the two finite extensions is Galois over the base: since $M/K$ is Galois and $E/K$ is finite,
-\[
+$$
 [EM:M]=[E:E\cap M].
-\]
+$$
 Here $EM=M(\alpha)$ because $E=K(\alpha)$.
 
 :::
@@ -86,24 +86,24 @@ Here $EM=M(\alpha)$ because $E=K(\alpha)$.
 ::: {.pf-step #s4}
 
 For every such $M$,
-\[
+$$
 E\cap M=K.
-\]
+$$
 
 ::: pf-proof
 
 By the tower law,
-\[
+$$
 [E:K]=[E:E\cap M][E\cap M:K].
-\]
+$$
 The left side is the prime number $7$ by step [](#s1){.pf-ref}. Hence
-\[
+$$
 [E\cap M:K]\in\{1,7\}.
-\]
+$$
 If this degree were $7$, then $E\cap M=E$, so $E\subseteq M\subseteq L$. In particular $\alpha\in L$, contradicting the hypothesis that $f$ has no zero in $L$. Therefore
-\[
+$$
 [E\cap M:K]=1,
-\]
+$$
 so $E\cap M=K$.
 
 :::
@@ -113,19 +113,19 @@ so $E\cap M=K$.
 ::: {.pf-step #s5}
 
 Hence for every finite Galois $M/K$ contained in $L$,
-\[
+$$
 [M(\alpha):M]=7.
-\]
+$$
 
 ::: pf-proof
 
 Combine steps [](#s3){.pf-ref} and [](#s4){.pf-ref}:
-\[
+$$
 [M(\alpha):M]
 =[E:E\cap M]
 =[E:K]
 =7.
-\]
+$$
 Thus the minimal polynomial of $\alpha$ over $M$ has degree $7$. Since it divides the degree-$7$ polynomial $f$, it must equal $f$. Therefore $f$ is irreducible over $M$.
 
 :::

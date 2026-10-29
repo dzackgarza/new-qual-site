@@ -41,39 +41,39 @@ Let $A$ first denote a finite set of $m\ge1$ points in a connected space $X$ equ
 ::: pf-step
 
 For $X=S^2$,
-\[
+$$
 H_k(S^2,A)\cong
 \begin{cases}
 \ZZ,&k=2,\\
 \ZZ^{m-1},&k=1,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 Since $A$ is finite,
-\[
+$$
 H_0(A)\cong\ZZ^m,
 \qquad
 H_k(A)=0\quad(k>0).
-\]
+$$
 For $k\ge2$, the long exact sequence gives
-\[
+$$
 H_k(S^2,A)\cong H_k(S^2),
-\]
+$$
 so only degree $2$ contributes $\ZZ$.
 In low degrees the exact segment is
-\[
+$$
 0\to H_1(S^2,A)\to\ZZ^m
 \xrightarrow{\epsilon}\ZZ\to H_0(S^2,A)\to0,
-\]
+$$
 where $\epsilon$ sums coordinates. Hence
-\[
+$$
 H_1(S^2,A)\cong\ker\epsilon\cong\ZZ^{m-1},
 \qquad
 H_0(S^2,A)=0.
-\]
+$$
 
 :::
 
@@ -82,30 +82,30 @@ H_0(S^2,A)=0.
 ::: pf-step
 
 For $X=T^2$,
-\[
+$$
 H_k(T^2,A)\cong
 \begin{cases}
 \ZZ,&k=2,\\
 \ZZ^{m+1},&k=1,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 Again $H_k(T^2,A)\cong H_k(T^2)$ for $k\ge2$, so degree $2$ is $\ZZ$. The low-degree exact sequence is
-\[
+$$
 0\to\ZZ^2\to H_1(T^2,A)
 \to\ZZ^m\xrightarrow{\epsilon}\ZZ\to0.
-\]
+$$
 Thus there is a short exact sequence
-\[
+$$
 0\to\ZZ^2\to H_1(T^2,A)\to\ZZ^{m-1}\to0.
-\]
+$$
 Since the quotient is free abelian, the sequence splits, giving
-\[
+$$
 H_1(T^2,A)\cong\ZZ^{m+1}.
-\]
+$$
 Also $H_0(T^2,A)=0$.
 
 Now let $X$ be the genus-two closed orientable surface and let $A,B$ be the circles in Hatcher's figure.
@@ -117,25 +117,25 @@ Now let $X$ be the genus-two closed orientable surface and let $A,B$ be the circ
 ::: pf-step
 
 Collapsing the separating circle $A$ gives
-\[
+$$
 X/A\cong T^2\vee T^2.
-\]
+$$
 Therefore
-\[
+$$
 H_k(X,A)\cong
 \begin{cases}
 \ZZ^4,&k=1,\\
 \ZZ^2,&k=2,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 The circle $A$ in the figure separates the two handles. Collapsing it to a point turns each side into a torus, with the two resulting tori meeting only at the collapsed point. Since $(X,A)$ is a good pair,
-\[
+$$
 H_k(X,A)\cong\widetilde H_k(X/A).
-\]
+$$
 The reduced homology of $T^2\vee T^2$ is the direct sum of the reduced homologies of the two tori, giving the displayed groups.
 
 :::
@@ -145,31 +145,31 @@ The reduced homology of $T^2\vee T^2$ is the direct sum of the reduced homologie
 ::: pf-step
 
 Collapsing the nonseparating circle $B$ gives a torus with two distinct points identified. This space is homotopy equivalent to
-\[
+$$
 T^2\vee S^1.
-\]
+$$
 Hence
-\[
+$$
 H_k(X,B)\cong
 \begin{cases}
 \ZZ^3,&k=1,\\
 \ZZ,&k=2,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 Cutting the genus-two surface along the nonseparating circle $B$ produces a genus-one surface with two boundary circles. Collapsing $B$ in the original surface amounts to capping each of these boundary circles to a point and then identifying the two resulting points. Capping gives a torus, so $X/B$ is a torus with two points identified.
 
 For any path-connected space, identifying two distinct points is homotopy equivalent to adjoining a circle between them and then choosing a path already in the space, hence to wedging on an $S^1$. Thus
-\[
+$$
 X/B\simeq T^2\vee S^1.
-\]
+$$
 Again
-\[
+$$
 H_k(X,B)\cong\widetilde H_k(X/B),
-\]
+$$
 which gives the displayed result.
 
 :::

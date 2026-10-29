@@ -23,11 +23,11 @@ audit:
 
 ::: {.problem}
 Let $A$ and $B$ be linear transformations on a finite-dimensional vector space $V$. Prove that
-\[
+$$
 \dim\ker(AB)
 \le
 \dim\ker A+\dim\ker B.
-\]
+$$
 :::
 
 ::: {.solution}

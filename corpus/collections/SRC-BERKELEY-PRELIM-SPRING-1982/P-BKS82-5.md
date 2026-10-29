@@ -24,13 +24,13 @@ audit:
 
 ::: {.problem}
 Let $(g_n)$ be twice differentiable functions on $[0,1]$ such that
-\[
+$$
 g_n(0)=g_n'(0)=0
-\]
+$$
 for every $n$, and suppose
-\[
+$$
 |g_n''(x)|\le1
-\]
+$$
 for every $n$ and every $x\in[0,1]$. Prove that $(g_n)$ has a subsequence converging uniformly on $[0,1]$.
 :::
 

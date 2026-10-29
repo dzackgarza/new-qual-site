@@ -47,42 +47,42 @@ Let $G$ act transitively on a finite set $X$ with $|X|\ge2$.
 
 ::: {.solution}
 For $g\in G$, write
-\[
+$$
 \operatorname{Fix}(g)=\{x\in X:gx=x\}.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 If both $G$ and $X$ are finite, some $g\in G$ has
-\[
+$$
 \operatorname{Fix}(g)=\varnothing.
-\]
+$$
 
 ::: pf-proof
 
 Since the action is transitive, it has exactly one orbit.
 Burnside's counting lemma therefore gives
-\[
+$$
 1
 =\frac1{|G|}\sum_{g\in G}|\operatorname{Fix}(g)|,
-\]
+$$
 so
-\[
+$$
 \sum_{g\in G}|\operatorname{Fix}(g)|=|G|.
-\]
+$$
 
 The identity element fixes every point of $X$, hence
-\[
+$$
 |\operatorname{Fix}(e)|=|X|\ge2.
-\]
+$$
 If every $g\in G$ fixed at least one point, then
-\[
+$$
 \sum_{g\in G}|\operatorname{Fix}(g)|
 \ge |X|+(|G|-1)
 \ge |G|+1,
-\]
+$$
 contradicting the Burnside count.
 Thus some $g\in G$ fixes no point.
 
@@ -97,21 +97,21 @@ The same conclusion holds if $G$ is infinite and $X$ is finite.
 ::: pf-proof
 
 Let
-\[
+$$
 \rho:G\longrightarrow \operatorname{Sym}(X)
-\]
+$$
 be the permutation representation of the action, and let
-\[
+$$
 Q=\rho(G).
-\]
+$$
 Because $X$ is finite, $\operatorname{Sym}(X)$ is finite, so $Q$ is finite.
 The $Q$-action on $X$ is transitive because it has exactly the same point orbits as the original $G$-action.
 
 By step [](#s1){.pf-ref}, there exists $q\in Q$ with no fixed point on $X$.
 Choose $g\in G$ with
-\[
+$$
 \rho(g)=q.
-\]
+$$
 Then $g$ acts on $X$ exactly as $q$ does, so $g$ also has no fixed point.
 
 :::
@@ -125,9 +125,9 @@ The conclusion can fail when both the group and the set are infinite.
 ::: pf-proof
 
 Let $X$ be any infinite set and let
-\[
+$$
 G=\operatorname{FSym}(X)
-\]
+$$
 be the group of permutations of $X$ having finite support.
 
 The natural action of $G$ on $X$ is transitive: given $x,y\in X$ with $x\ne y$, the transposition $(x\ y)$ lies in $G$ and sends $x$ to $y$.
@@ -135,9 +135,9 @@ The natural action of $G$ on $X$ is transitive: given $x,y\in X$ with $x\ne y$, 
 The group $G$ is infinite.
 However, every $g\in G$ moves only finitely many points, so it fixes every point outside its finite support.
 Since $X$ is infinite,
-\[
+$$
 X\setminus\operatorname{supp}(g)\ne\varnothing.
-\]
+$$
 Thus every $g\in G$ has a fixed point.
 Hence this transitive action has no fixed-point-free element.
 

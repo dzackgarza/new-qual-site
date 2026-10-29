@@ -32,9 +32,9 @@ Show that $G/A$ acts on $A$ by conjugation and construct a homomorphism $\varphi
 
 ::: {.solution}
 For $gA\in G/A$ and $a\in A$, define
-\[
+$$
 (gA)\cdot a=gag^{-1}.
-\]
+$$
 
 ::: pf
 
@@ -47,9 +47,9 @@ The formula is well-defined and takes values in $A$.
 Normality of $A$ gives $gag^{-1}\in A$. Suppose $gA=hA$. Then
 $h^{-1}g\in A$, so write $g=hb$ with $b\in A$. Since $A$ is abelian,
 $bab^{-1}=a$, and therefore
-\[
+$$
 gag^{-1}=h(bab^{-1})h^{-1}=hah^{-1}.
-\]
+$$
 Thus the value depends only on the coset $gA$.
 
 :::
@@ -63,15 +63,15 @@ This formula defines a left action of $G/A$ on $A$.
 ::: pf-proof
 
 The identity coset satisfies
-\[
+$$
 A\cdot a=a.
-\]
+$$
 For $g,h\in G$,
-\[
+$$
 ((gA)(hA))\cdot a=(gh)a(gh)^{-1}
 =g(hah^{-1})g^{-1}
 =(gA)\cdot((hA)\cdot a).
-\]
+$$
 Hence the action axioms hold.
 
 :::
@@ -95,21 +95,21 @@ is conjugation by $g^{-1}$, so the restriction is an automorphism.
 ::: pf-step
 
 The map
-\[
+$$
 \varphi:G/A\longrightarrow\operatorname{Aut}(A),\qquad
 \varphi(gA)(a)=gag^{-1},
-\]
+$$
 is a group homomorphism.
 
 ::: pf-proof
 
 Well-definedness follows from step [](#s1){.pf-ref} and the codomain assertion from step [](#s3){.pf-ref}. For
 $g,h\in G$ and $a\in A$,
-\[
+$$
 \varphi((gA)(hA))(a)
 =(gh)a(gh)^{-1}
 =\varphi(gA)(\varphi(hA)(a)).
-\]
+$$
 Thus $\varphi((gA)(hA))=\varphi(gA)\varphi(hA)$.
 
 :::

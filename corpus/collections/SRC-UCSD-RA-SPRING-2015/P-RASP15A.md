@@ -53,19 +53,19 @@ Part (a) is false.
 ::: pf-proof
 
 Let $H$ be an infinite-dimensional Hilbert space and choose an orthonormal sequence $(e_n)$. Then
-\[
+$$
 e_n\rightharpoonup0
-\]
+$$
 weakly: for every $x\in H$, Bessel's inequality implies
-\[
+$$
 \sum_n|\langle x,e_n\rangle|^2<\infty,
-\]
+$$
 so $\langle x,e_n\rangle\to0$.
 
 However, for $m\ne n$,
-\[
+$$
 \|e_n-e_m\|^2=2.
-\]
+$$
 Thus no subsequence is even norm-Cauchy, hence no subsequence converges in norm.
 
 :::
@@ -79,37 +79,37 @@ Part (b) is false.
 ::: pf-proof
 
 Let
-\[
+$$
 F(x,y)=\frac{x^2-y^2}{(x^2+y^2)^2}.
-\]
+$$
 For fixed $y>0$,
-\[
+$$
 F(x,y)=-\frac{d}{dx}\left(\frac{x}{x^2+y^2}\right),
-\]
+$$
 so
-\[
+$$
 \int_0^1F(x,y)\,dx=-\frac1{1+y^2}.
-\]
+$$
 Hence
-\[
+$$
 \int_0^1\int_0^1F(x,y)\,dx\,dy
 =-\int_0^1\frac{dy}{1+y^2}
 =-\frac\pi4.
-\]
+$$
 
 For fixed $x>0$,
-\[
+$$
 F(x,y)=\frac{d}{dy}\left(\frac{y}{x^2+y^2}\right),
-\]
+$$
 so
-\[
+$$
 \int_0^1F(x,y)\,dy=\frac1{1+x^2}
-\]
+$$
 and therefore
-\[
+$$
 \int_0^1\int_0^1F(x,y)\,dy\,dx
 =\frac\pi4.
-\]
+$$
 Thus the two iterated integrals are not equal. In particular the asserted Tonelli--Fubini conclusion is false; indeed $F$ is not absolutely integrable near $(0,0)$.
 
 :::
@@ -123,32 +123,32 @@ Part (c) is true.
 ::: pf-proof
 
 Define
-\[
+$$
 f(x)=
 \begin{cases}
 \dfrac1{x(\log(1/x))^2},&0<x<e^{-1},\\[6pt]
 \dfrac1{x(\log x)^2},&x>e,\\[6pt]
 0,&e^{-1}\le x\le e.
 \end{cases}
-\]
+$$
 Then $f\ge0$. With the substitutions $u=\log(1/x)$ near $0$ and $u=\log x$ near infinity,
-\[
+$$
 \int_0^{e^{-1}}f(x)\,dx
 =\int_1^\infty\frac{du}{u^2}<\infty,
 \qquad
 \int_e^\infty f(x)\,dx
 =\int_1^\infty\frac{du}{u^2}<\infty.
-\]
+$$
 Thus $f\in L^1(0,\infty)$.
 
 If $p>1$, then near $0$ the factor $x^{-p}$ makes
-\[
+$$
 \int_0^{e^{-1}}f(x)^p\,dx=\infty.
-\]
+$$
 If $0<p<1$, then at infinity
-\[
+$$
 \int_e^\infty f(x)^p\,dx=\infty
-\]
+$$
 because the power $x^{-p}$ is not integrable there. Also $f$ is unbounded, so $f\notin L^\infty$. Hence among all $0<p\le\infty$, the function belongs to $L^p$ exactly when $p=1$.
 
 :::
@@ -162,23 +162,23 @@ Part (d) is true.
 ::: pf-proof
 
 Using $|\sin t|\le t$ for $t\ge0$, for $n>2$ we obtain
-\[
+$$
 \begin{aligned}
 \left|\int_0^\infty\frac{\sin(x/n)}{(1+x/n)^n}\,dx\right|
 &\le \frac1n\int_0^\infty\frac{x}{(1+x/n)^n}\,dx\\
 &=n\int_0^\infty\frac{t}{(1+t)^n}\,dt.
 \end{aligned}
-\]
+$$
 The last integral equals
-\[
+$$
 \int_0^\infty\frac{t}{(1+t)^n}\,dt
 =\frac1{(n-1)(n-2)}.
-\]
+$$
 Therefore
-\[
+$$
 \left|\int_0^\infty\frac{\sin(x/n)}{(1+x/n)^n}\,dx\right|
 \le\frac{n}{(n-1)(n-2)}\longrightarrow0.
-\]
+$$
 Hence the stated limit is $0$.
 
 :::

@@ -41,9 +41,9 @@ To prove continuity of $f$ on $E$, it is enough to prove continuity at an arbitr
 ::: {.pf-step #s1-2}
 
 There exists $N$ such that
-\[
+$$
 |f_N(x)-f(x)|<\frac{\varepsilon}{3}
-\]
+$$
 for every $x\in E$.
 
 
@@ -58,9 +58,9 @@ The convergence $f_n\to f$ is uniform on $E$. Apply the definition of uniform co
 ::: {.pf-step #s1-3}
 
 There exists $\delta>0$ such that, whenever $x\in E$ and $|x-x_0|<\delta$,
-\[
+$$
 |f_N(x)-f_N(x_0)|<\frac{\varepsilon}{3}.
-\]
+$$
 
 
 ::: pf-proof
@@ -74,15 +74,15 @@ The function $f_N$ is continuous at $x_0$, because every $f_n$ is continuous on 
 ::: {.pf-step #s1-4}
 
 Whenever $x\in E$ and $|x-x_0|<\delta$,
-\[
+$$
 |f(x)-f(x_0)|<\varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
 For such $x$, the triangle inequality and steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give
-\[
+$$
 \begin{aligned}
 |f(x)-f(x_0)|
 &\le |f(x)-f_N(x)|
@@ -93,7 +93,7 @@ For such $x$, the triangle inequality and steps [](#s1-2){.pf-ref} through [](#s
   +\frac{\varepsilon}{3}
 =\varepsilon.
 \end{aligned}
-\]
+$$
 
 :::
 

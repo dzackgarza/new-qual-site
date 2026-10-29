@@ -26,13 +26,13 @@ Show that $A$ also has the fixed point property.
 :::
 
 ::: {.solution}
-Let \(f:A\to A\) be continuous, and let \(i:A\hookrightarrow X\) be inclusion. Define
-\[
+Let $f:A\to A$ be continuous, and let $i:A\hookrightarrow X$ be inclusion. Define
+$$
 F=i\circ f\circ r:X\longrightarrow X.
-\]
-Since \(X\) has the fixed point property, there is \(x\in X\) with \(F(x)=x\). But \(F(x)\) lies in \(i(A)=A\), so \(x\in A\). Since \(r\) is a retraction, \(r(x)=x\). Therefore
-\[
+$$
+Since $X$ has the fixed point property, there is $x\in X$ with $F(x)=x$. But $F(x)$ lies in $i(A)=A$, so $x\in A$. Since $r$ is a retraction, $r(x)=x$. Therefore
+$$
 x=F(x)=i(f(r(x)))=f(x),
-\]
-where we identify \(i(A)\) with \(A\). Thus \(f\) has a fixed point. Since \(f\) was arbitrary, \(A\) has the fixed point property.
+$$
+where we identify $i(A)$ with $A$. Thus $f$ has a fixed point. Since $f$ was arbitrary, $A$ has the fixed point property.
 :::

@@ -33,29 +33,29 @@ Describe this covering space explicitly for $X = S^1 \vee S^1$ and $X = S^1 \vee
 
 ::: {.solution}
 Let
-\[
+$$
 G=\pi_1(X,x_0).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 A connected normal covering corresponding to a normal subgroup $H\triangleleft G$ is abelian exactly when
-\[
+$$
 [G,G]\subseteq H.
-\]
+$$
 
 ::: pf-proof
 
 For a connected normal covering with subgroup $H$, the deck transformation group is
-\[
+$$
 G/H.
-\]
+$$
 This quotient is abelian exactly when every commutator maps to the identity, equivalently when the commutator subgroup satisfies
-\[
+$$
 [G,G]\subseteq H.
-\]
+$$
 
 :::
 
@@ -64,17 +64,17 @@ This quotient is abelian exactly when every commutator maps to the identity, equ
 ::: {.pf-step #s2}
 
 Let
-\[
+$$
 p_{\mathrm{ab}}:X_{\mathrm{ab}}\to X
-\]
+$$
 be the connected covering corresponding to the subgroup
-\[
+$$
 [G,G]\le G.
-\]
+$$
 Then $p_{\mathrm{ab}}$ is an abelian covering with deck group
-\[
+$$
 G/[G,G]=G_{\mathrm{ab}}.
-\]
+$$
 
 ::: pf-proof
 
@@ -92,22 +92,22 @@ The cover $X_{\mathrm{ab}}$ covers every other connected abelian covering of $X$
 ::: pf-proof
 
 Let
-\[
+$$
 q:Y\to X
-\]
+$$
 be any connected abelian covering, corresponding to a subgroup $H\triangleleft G$.
 By step [](#s1){.pf-ref},
-\[
+$$
 [G,G]\subseteq H.
-\]
+$$
 The covering-space factorization criterion says that a connected cover for subgroup $K$ covers the connected cover for subgroup $H$ exactly when, after compatible basepoint choices,
-\[
+$$
 K\subseteq H.
-\]
+$$
 Taking $K=[G,G]$ gives a covering map
-\[
+$$
 X_{\mathrm{ab}}\to Y
-\]
+$$
 over $X$.
 
 :::
@@ -121,22 +121,22 @@ Any universal abelian covering is isomorphic to $X_{\mathrm{ab}}$.
 ::: pf-proof
 
 Suppose
-\[
+$$
 q:U\to X
-\]
+$$
 is an abelian cover that covers every other abelian cover, and let its subgroup be $K$.
 Since $U$ is abelian, step [](#s1){.pf-ref} gives
-\[
+$$
 [G,G]\subseteq K.
-\]
+$$
 Since $U$ covers $X_{\mathrm{ab}}$, the factorization criterion gives
-\[
+$$
 K\subseteq [G,G].
-\]
+$$
 Thus
-\[
+$$
 K=[G,G].
-\]
+$$
 Connected coverings with the same subgroup are isomorphic over $X$ after basepoint choice, hence unbased as well.
 
 :::
@@ -146,43 +146,43 @@ Connected coverings with the same subgroup are isomorphic over $X$ after basepoi
 ::: {.pf-step #s5}
 
 For
-\[
+$$
 X=S^1\vee S^1,
 \qquad
 G=F(a,b),
-\]
+$$
 the universal abelian cover is the square lattice graph in $\RR^2$.
 
 ::: pf-proof
 
 The abelianization is
-\[
+$$
 F(a,b)_{\mathrm{ab}}\cong\ZZ^2.
-\]
+$$
 Use one vertex
-\[
+$$
 v_{(m,n)}
-\]
+$$
 for each $(m,n)\in\ZZ^2$.
 Attach an oriented $a$-edge
-\[
+$$
 v_{(m,n)}\to v_{(m+1,n)}
-\]
+$$
 and an oriented $b$-edge
-\[
+$$
 v_{(m,n)}\to v_{(m,n+1)}.
-\]
+$$
 Map all $a$-edges to the first circle and all $b$-edges to the second.
 This is the labelled Cayley covering graph of $\ZZ^2$.
 Its deck transformations are the translations
-\[
+$$
 (m,n)\mapsto(m+p,n+q),
 \qquad(p,q)\in\ZZ^2,
-\]
+$$
 so the deck group is $\ZZ^2$, and its subgroup is the kernel of
-\[
+$$
 F(a,b)\to\ZZ^2,
-\]
+$$
 namely $[F,F]$.
 
 :::
@@ -192,23 +192,23 @@ namely $[F,F]$.
 ::: {.pf-step #s6}
 
 For
-\[
+$$
 X=S^1\vee S^1\vee S^1,
 \qquad
 G=F(a,b,c),
-\]
+$$
 the universal abelian cover is the cubic lattice graph in $\RR^3$.
 
 ::: pf-proof
 
 Now
-\[
+$$
 G_{\mathrm{ab}}\cong\ZZ^3.
-\]
+$$
 Put a vertex at every lattice point
-\[
+$$
 (m,n,p)\in\ZZ^3
-\]
+$$
 and join it by oriented $a$-, $b$-, and $c$-edges to the points obtained by adding the three standard basis vectors.
 Map these edge families to the three wedge circles.
 The deck group is the translation group $\ZZ^3$, and the corresponding subgroup is the commutator subgroup of $F(a,b,c)$.

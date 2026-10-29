@@ -27,9 +27,9 @@ Define what it means for $\sigma$ to be homologous to zero in $U$.
 ::: {.pf-step #s1-1}
 
 The cycle $\sigma$ is homologous to zero in $U$ if
-\[
+$$
 \boxed{n(\sigma,a)=0\qquad\text{for every }a\in\CC\setminus U},
-\]
+$$
 where $n(\sigma,a)$ denotes the winding number, or index, of the cycle
 $\sigma$ about $a$.
 

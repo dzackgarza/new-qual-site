@@ -24,11 +24,11 @@ audit:
 
 ::: {.problem}
 Let $F$ be a field. Fix positive integers $m,n$ and matrices $A,B\in M_{m\times n}(F)$. Define
-\[
+$$
 T:M_{n\times m}(F)\to M_{m\times n}(F),
 \qquad
 T(X)=AXB.
-\]
+$$
 Prove that if $m\ne n$, then $T$ is not invertible.
 :::
 

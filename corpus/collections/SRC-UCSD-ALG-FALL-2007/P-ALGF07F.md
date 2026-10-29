@@ -44,31 +44,31 @@ If $\operatorname{char}K\neq2$, every degree-$2$ extension $F/K$ is Galois.
 
 ::: pf-proof
 Choose
-\[
+$$
 \alpha\in F\setminus K.
-\]
+$$
 Since $[F:K]=2$, one has
-\[
+$$
 F=K(\alpha),
-\]
+$$
 and the minimal polynomial of $\alpha$ over $K$ has degree $2$.
 Write it as
-\[
+$$
 m(T)=T^2+bT+c\in K[T].
-\]
+$$
 Because $m$ is irreducible, $\alpha\notin K$.
 
 The other root of $m$ is
-\[
+$$
 \beta=-b-\alpha,
-\]
+$$
 which also belongs to $F$.
 Thus $m$ splits completely over $F$.
 Moreover $m$ has distinct roots.
 Indeed, if it had a repeated root, that root would be
-\[
+$$
 -\frac b2\in K
-\]
+$$
 because $2$ is invertible in $K$, contradicting irreducibility of $m$.
 Hence $m$ is separable.
 
@@ -83,42 +83,42 @@ There are quadratic Galois extensions in characteristic $2$.
 
 ::: pf-proof
 Take
-\[
+$$
 K=\FF_2
-\]
+$$
 and
-\[
+$$
 F=\FF_4
 =\FF_2[\alpha],
-\]
+$$
 where $\alpha$ satisfies
-\[
+$$
 \alpha^2+\alpha+1=0.
-\]
+$$
 The polynomial
-\[
+$$
 T^2+T+1
-\]
+$$
 has no root in $\FF_2$, so it is irreducible and
-\[
+$$
 [F:K]=2.
-\]
+$$
 Its derivative is $1$, so it is separable, and its two roots are
-\[
+$$
 \alpha
 \qquad\text{and}\qquad
 \alpha+1,
-\]
+$$
 both of which lie in $F$.
 Thus $F$ is its splitting field over $K$, so
-\[
+$$
 \FF_4/\FF_2
-\]
+$$
 is Galois.
 Its nontrivial automorphism is the Frobenius map
-\[
+$$
 x\longmapsto x^2.
-\]
+$$
 :::
 
 :::
@@ -128,42 +128,42 @@ There are quadratic extensions in characteristic $2$ which are not Galois.
 
 ::: pf-proof
 Let $t$ be transcendental over $\FF_2$, set
-\[
+$$
 K=\FF_2(t),
-\]
+$$
 and let
-\[
+$$
 F=K(u),
 \qquad
 u^2=t.
-\]
+$$
 First, $t$ is not a square in $K$.
 Indeed, if
-\[
+$$
 t=\left(\frac{a(t)}{b(t)}\right)^2
-\]
+$$
 for nonzero coprime polynomials $a,b\in\FF_2[t]$, then
-\[
+$$
 a(t)^2=t\,b(t)^2.
-\]
+$$
 The exponent of the irreducible factor $t$ on the left is even, whereas on the right it is odd, a contradiction.
 Thus
-\[
+$$
 T^2-t
-\]
+$$
 has no root in $K$ and is irreducible, so
-\[
+$$
 [F:K]=2.
-\]
+$$
 
 In characteristic $2$,
-\[
+$$
 \frac{d}{dT}(T^2-t)=0.
-\]
+$$
 In an algebraic closure, if $u^2=t$, then
-\[
+$$
 T^2-t=(T-u)^2.
-\]
+$$
 Hence the minimal polynomial of $u$ is inseparable.
 Therefore $F/K$ is not separable and consequently is not Galois.
 :::

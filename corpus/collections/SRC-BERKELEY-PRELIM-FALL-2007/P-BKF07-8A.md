@@ -28,20 +28,20 @@ audit:
 ---
 
 ::: {.problem}
-Suppose \((b_n)_{n\ge1}\) is a sequence of positive real numbers with
-\[
+Suppose $(b_n)_{n\ge1}$ is a sequence of positive real numbers with
+$$
 b_n\to\infty,
 \qquad
 \frac{b_n}{n}\to0.
-\]
-Must there exist a sequence \((a_n)_{n\ge1}\) such that
-\[
+$$
+Must there exist a sequence $(a_n)_{n\ge1}$ such that
+$$
 \frac{a_1+\cdots+a_n}{n}\to0
-\]
+$$
 and
-\[
+$$
 \limsup_{n\to\infty}\frac{a_n}{b_n}=\infty?
-\]
+$$
 Give a proof or counterexample.
 :::
 

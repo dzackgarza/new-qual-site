@@ -37,13 +37,13 @@ The diagram in the exercise is the standard situation obtained by lining up two 
 ::: pf-step
 
 After using each indicated vertical isomorphism to identify the corresponding top and bottom groups, one period of the diagram has the form
-\[
+$$
 B_n\xrightarrow{u_n}C_n\oplus D_n\xrightarrow{v_n}E_n\xrightarrow{w_n}B_{n-1}.
-\]
+$$
 The maps are the horizontal maps in the two rows, with
-\[
+$$
 u_n(b)=(u_n^C(b),-u_n^D(b)).
-\]
+$$
 
 ::: pf-proof
 
@@ -104,11 +104,11 @@ For $b\in\ker u_{n-1}$, its two horizontal images vanish after the sign conventi
 ::: pf-step
 
 Repeating the argument in every degree gives the required long exact sequence
-\[
+$$
 \boxed{\cdots\longrightarrow E_{n+1}\longrightarrow B_n
 \longrightarrow C_n\oplus D_n\longrightarrow E_n
 \longrightarrow B_{n-1}\longrightarrow\cdots.}
-\]
+$$
 
 ::: pf-proof
 

@@ -47,94 +47,94 @@ are equal.
 
 ::: {.solution}
 Let
-\[
+$$
 H=p_*\pi_1(\overline G,\tilde e)\le\pi_1(G,e).
-\]
-For a topological group, \(\pi_1(G,e)\) is abelian, and the multiplication map induces addition:
-\[
+$$
+For a topological group, $\pi_1(G,e)$ is abelian, and the multiplication map induces addition:
+$$
 m_*(u,v)=u+v,
-\]
-while inversion induces \(I_*(u)=-u\).
+$$
+while inversion induces $I_*(u)=-u$.
 
 (a) On fundamental groups,
-\[
+$$
 (m\circ(p\times p))_*\pi_1(\overline G\times\overline G)
 =H+H=H,
-\]
+$$
 and
-\[
+$$
 (I\circ p)_*\pi_1(\overline G)=-H=H.
-\]
+$$
 Thus the lifting criterion gives lifts
-\[
+$$
 \overline m:\overline G\times\overline G\to\overline G,
 \qquad
 \overline I:\overline G\to\overline G
-\]
+$$
 with
-\[
+$$
 p\overline m=m(p\times p),\qquad p\overline I=Ip,
-\]
-and with \(\overline m(\tilde e,\tilde e)=\tilde e\), \(\overline I(\tilde e)=\tilde e\). Uniqueness of based lifts makes these maps unique.
+$$
+and with $\overline m(\tilde e,\tilde e)=\tilde e$, $\overline I(\tilde e)=\tilde e$. Uniqueness of based lifts makes these maps unique.
 
 (b) Define
-\[
+$$
 L(\tilde g)=\overline m(\tilde e,\tilde g),\qquad
 R(\tilde g)=\overline m(\tilde g,\tilde e).
-\]
+$$
 Both satisfy
-\[
+$$
 pL=p=pR
-\]
-and both send \(\tilde e\) to \(\tilde e\). The identity map of \(\overline G\) is another based lift of \(p\). By uniqueness of lifts,
-\[
+$$
+and both send $\tilde e$ to $\tilde e$. The identity map of $\overline G$ is another based lift of $p$. By uniqueness of lifts,
+$$
 L=R=1_{\overline G}.
-\]
-So \(\tilde e\) is a two-sided identity.
+$$
+So $\tilde e$ is a two-sided identity.
 
 (c) The maps
-\[
+$$
 A(\tilde g)=\overline m(\tilde g,\overline I(\tilde g)),\qquad
 B(\tilde g)=\overline m(\overline I(\tilde g),\tilde g)
-\]
-both project to the constant map \(e\), since
-\[
+$$
+both project to the constant map $e$, since
+$$
 pA(\tilde g)=p(\tilde g)p(\tilde g)^{-1}=e,
 \qquad
 pB(\tilde g)=e.
-\]
-They both take \(\tilde e\) to \(\tilde e\). The constant map \(\tilde g\mapsto\tilde e\) is the unique based lift of the constant map to \(e\). Hence
-\[
+$$
+They both take $\tilde e$ to $\tilde e$. The constant map $\tilde g\mapsto\tilde e$ is the unique based lift of the constant map to $e$. Hence
+$$
 A=B\equiv\tilde e.
-\]
-Thus \(\overline I\) supplies two-sided inverses.
+$$
+Thus $\overline I$ supplies two-sided inverses.
 
 (d) Let
-\[
+$$
 F(\tilde g,\tilde g',\tilde g'')
 =\overline m(\tilde g,\overline m(\tilde g',\tilde g'')),
-\]
-\[
+$$
+$$
 F'(\tilde g,\tilde g',\tilde g'')
 =\overline m(\overline m(\tilde g,\tilde g'),\tilde g'').
-\]
-Their projections are equal by associativity in \(G\):
-\[
+$$
+Their projections are equal by associativity in $G$:
+$$
 pF=p(\tilde g)\bigl(p(\tilde g')p(\tilde g'')\bigr)
 =\bigl(p(\tilde g)p(\tilde g')\bigr)p(\tilde g'')=pF'.
-\]
-Both send \((\tilde e,\tilde e,\tilde e)\) to \(\tilde e\). By uniqueness of based lifts,
-\[
+$$
+Both send $(\tilde e,\tilde e,\tilde e)$ to $\tilde e$. By uniqueness of based lifts,
+$$
 F=F'.
-\]
-Hence \(\overline m\) is associative.
+$$
+Hence $\overline m$ is associative.
 
-(e) Parts (b)--(d) show that \((\overline G,\overline m,\overline I,\tilde e)\) is a group. The operations are continuous because they were obtained as continuous lifts. By construction,
-\[
+(e) Parts (b)--(d) show that $(\overline G,\overline m,\overline I,\tilde e)$ is a group. The operations are continuous because they were obtained as continuous lifts. By construction,
+$$
 p(\overline m(x,y))=p(x)p(y),\qquad
 p(\overline I(x))=p(x)^{-1},
-\]
-so \(p\) is a continuous group homomorphism.
+$$
+so $p$ is a continuous group homomorphism.
 
-Finally, any other multiplication making \(\tilde e\) the identity and \(p\) a homomorphism would be a based lift of \(m(p\times p)\), hence would equal \(\overline m\) by uniqueness. The inverse map is then forced as well. Thus the topological-group structure is unique.
+Finally, any other multiplication making $\tilde e$ the identity and $p$ a homomorphism would be a based lift of $m(p\times p)$, hence would equal $\overline m$ by uniqueness. The inverse map is then forced as well. Thus the topological-group structure is unique.
 :::

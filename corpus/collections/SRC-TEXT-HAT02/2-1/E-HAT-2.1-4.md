@@ -32,17 +32,17 @@ Compute the simplicial homology groups of the triangular parachute obtained from
 ::: {.solution}
 Let $v$ be the common image of the three vertices.
 Let
-\[
+$$
 a=[v_0,v_1],
 \qquad
 b=[v_0,v_2],
 \qquad
 c=[v_1,v_2]
-\]
+$$
 denote the three distinct $1$-simplices, and let
-\[
+$$
 \sigma=[v_0,v_1,v_2]
-\]
+$$
 be the unique $2$-simplex.
 
 ::: pf
@@ -50,13 +50,13 @@ be the unique $2$-simplex.
 ::: pf-step
 
 The simplicial chain groups are
-\[
+$$
 C_2\cong\ZZ,
 \qquad
 C_1\cong\ZZ^3,
 \qquad
 C_0\cong\ZZ.
-\]
+$$
 
 ::: pf-proof
 
@@ -69,16 +69,16 @@ There is one $2$-simplex, three $1$-simplices, and one vertex in the quotient $\
 ::: pf-step
 
 The first boundary map is zero:
-\[
+$$
 \partial_1=0.
-\]
+$$
 
 ::: pf-proof
 
 Every edge begins and ends at the same quotient vertex $v$, so
-\[
+$$
 \partial_1(a)=\partial_1(b)=\partial_1(c)=v-v=0.
-\]
+$$
 
 :::
 
@@ -87,18 +87,18 @@ Every edge begins and ends at the same quotient vertex $v$, so
 ::: pf-step
 
 The second boundary map is
-\[
+$$
 \partial_2(\sigma)=a-b+c.
-\]
+$$
 
 ::: pf-proof
 
 The simplicial boundary formula gives
-\[
+$$
 \partial[v_0,v_1,v_2]
 =[v_1,v_2]-[v_0,v_2]+[v_0,v_1]
 =c-b+a.
-\]
+$$
 
 :::
 
@@ -111,9 +111,9 @@ The map $\partial_2:\ZZ\to\ZZ^3$ is injective and its image is a primitive rank-
 ::: pf-proof
 
 The vector of coefficients is
-\[
+$$
 (1,-1,1),
-\]
+$$
 which is nonzero and whose coordinates have greatest common divisor $1$.
 Thus the map is injective and the quotient by its image is torsion-free of rank two.
 
@@ -124,23 +124,23 @@ Thus the map is injective and the quotient by its image is torsion-free of rank 
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{H_0\cong\ZZ,\qquad H_1\cong\ZZ^2,\qquad H_k=0\ (k\ge2).}
-\]
+$$
 
 ::: pf-proof
 
 Since $\partial_1=0$,
-\[
+$$
 H_0=C_0\cong\ZZ.
-\]
+$$
 Also
-\[
+$$
 H_1=\ker\partial_1/\operatorname{im}\partial_2
 \cong
 \ZZ^3/\langle(1,-1,1)\rangle
 \cong\ZZ^2.
-\]
+$$
 Injectivity of $\partial_2$ gives $H_2=0$, and there are no higher simplices.
 
 :::

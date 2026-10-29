@@ -28,27 +28,27 @@ What is the degree of a divisor?
 
 ::: {.solution}
 Let $C$ be a proper integral curve over a field $k$ and let
-\[
+$$
 D=\sum_{p\in C^{(1)}}n_p[p]
-\]
+$$
 be a Weil divisor.
 
 ::: pf
 
 ::: {.pf-step #degree-definition}
 The degree of $D$ is
-\[
+$$
 \boxed{
 \deg D
 =\sum_p n_p[\kappa(p):k].
 }
-\]
+$$
 
 ::: pf-proof
 Each closed point $p$ has degree
-\[
+$$
 \deg[p]=[\kappa(p):k].
-\]
+$$
 Degree is extended additively from prime divisors to all Weil divisors, giving the displayed formula.
 :::
 
@@ -56,15 +56,15 @@ Degree is extended additively from prime divisors to all Weil divisors, giving t
 
 ::: {.pf-step #degree-alg-closed}
 If $k$ is algebraically closed, then
-\[
+$$
 \boxed{\deg D=\sum_p n_p.}
-\]
+$$
 
 ::: pf-proof
 Every closed point of a finite-type $k$-curve has residue field $k$ when $k$ is algebraically closed, so
-\[
+$$
 [\kappa(p):k]=1
-\]
+$$
 for all $p$.  Apply step [](#degree-definition){.pf-ref}.
 :::
 
@@ -72,17 +72,17 @@ for all $p$.  Apply step [](#degree-definition){.pf-ref}.
 
 ::: {.pf-step #cartier-degree}
 For a Cartier divisor $D$ on a smooth curve,
-\[
+$$
 \boxed{\deg D=\deg\mathcal O_C(D).}
-\]
+$$
 
 ::: pf-proof
 On a smooth curve, Cartier and Weil divisors are canonically identified.  The associated invertible sheaf $\mathcal O_C(D)$ has degree equal to the degree of the corresponding Weil divisor; equivalently,
-\[
+$$
 \deg\mathcal O_C(D)
 =\chi(\mathcal O_C(D))-\chi(\mathcal O_C)
 =\deg D
-\]
+$$
 by Riemann--Roch.
 :::
 
@@ -90,20 +90,20 @@ by Riemann--Roch.
 
 ::: {.pf-step #principal-degree-zero}
 Every principal divisor has degree zero:
-\[
+$$
 \boxed{\deg\operatorname{div}(f)=0
 \qquad(f\in K(C)^*).}
-\]
+$$
 
 ::: pf-proof
 The principal divisor $\operatorname{div}(f)$ corresponds to the trivial line bundle, because multiplication by $f$ gives
-\[
+$$
 \mathcal O_C(\operatorname{div}(f))\cong\mathcal O_C.
-\]
+$$
 Applying step [](#cartier-degree){.pf-ref} gives
-\[
+$$
 \deg\operatorname{div}(f)=\deg\mathcal O_C=0.
-\]
+$$
 
 Equivalently, the total order of the zeros of a rational function, counted with residue-field degrees, equals the total order of its poles.
 :::
@@ -112,9 +112,9 @@ Equivalently, the total order of the zeros of a rational function, counted with 
 
 ::: {.pf-step #degree-descends}
 Consequently degree descends to divisor classes and to the Picard group:
-\[
+$$
 \deg:\operatorname{Pic}(C)\longrightarrow\ZZ.
-\]
+$$
 
 ::: pf-proof
 Linearly equivalent divisors differ by a principal divisor, whose degree is zero by step [](#principal-degree-zero){.pf-ref}.  Thus degree is constant on linear-equivalence classes.  On a smooth curve these classes identify with line bundles.

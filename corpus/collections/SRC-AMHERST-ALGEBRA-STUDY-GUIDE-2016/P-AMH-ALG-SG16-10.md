@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 (March 2015) Let $G_1,G_2$ be groups, let $H_2\subseteq G_2$ be a subgroup, and let $\varphi:G_1\to G_2$ be a homomorphism.
 Define
-\[
+$$
 H_1=\{x\in G_1\mid \varphi(x)\in H_2\}.
-\]
+$$
 It is a fact, which you may assume, that $H_1$ is a subgroup of $G_1$.
 Prove that for any $x,y\in G_1$, $H_1x=H_1y$ if and only if $H_2\varphi(x)=H_2\varphi(y)$.
 :::

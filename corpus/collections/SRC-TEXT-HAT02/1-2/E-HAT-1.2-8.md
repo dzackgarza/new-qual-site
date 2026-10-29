@@ -50,11 +50,11 @@ collar neighborhood of subcomplexes.
 
 ::: pf-step
 The fundamental groups are:
-\[
+$$
 \pi_1(T_1) \cong \ZZ^2 = \langle a_1, b_1 \mid [a_1, b_1] = 1 \rangle, \quad
 \pi_1(T_2) \cong \ZZ^2 = \langle a_2, b_2 \mid [a_2, b_2] = 1 \rangle, \quad
 \pi_1(C) \cong \ZZ = \langle c \rangle.
-\]
+$$
 
 ::: pf-proof
 fundamental group of a torus is $\ZZ \times \ZZ$.
@@ -82,9 +82,9 @@ Application of the Seifert–van Kampen Theorem:
 
 ::: pf-step
 By the Seifert–van Kampen Theorem, $\pi_1(X)$ is the amalgamated free product:
-\[
+$$
 \pi_1(X) \cong \pi_1(T_1) *_{\pi_1(C)} \pi_1(T_2) \cong \langle a_1, b_1, a_2, b_2 \mid [a_1, b_1] = 1, \, [a_2, b_2] = 1, \, a_1 = a_2 \rangle.
-\]
+$$
 
 ::: pf-proof
 Seifert–van Kampen Theorem.
@@ -94,9 +94,9 @@ Seifert–van Kampen Theorem.
 
 ::: pf-step
 Setting $a = a_1 = a_2$, this presentation simplifies to:
-\[
+$$
 \pi_1(X) \cong \langle a, b_1, b_2 \mid [a, b_1] = 1, \, [a, b_2] = 1 \rangle.
-\]
+$$
 
 ::: pf-proof
 Tietze transformation eliminating $a_2$.

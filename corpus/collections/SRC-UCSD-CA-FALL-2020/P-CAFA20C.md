@@ -34,9 +34,9 @@ Pointwise convergence to $f(z + 1)$:
 ::: pf-step
 
 For any $z \in \CC$, the Taylor series of the entire function $f$ centered at $z$ is:
-\[
+$$
 f(z + w) = \sum_{n=0}^\infty \frac{f^{(n)}(z)}{n!} w^n.
-\]
+$$
 Because $f$ is entire, the radius of convergence of this series is $R = \infty$.
 
 ::: pf-proof
@@ -50,9 +50,9 @@ Taylor theorem for entire functions.
 ::: pf-step
 
 Setting $w = 1$, the series converges pointwise to $f(z + 1)$ for every $z \in \CC$:
-\[
+$$
 \sum_{n=0}^\infty \frac{f^{(n)}(z)}{n!} = f(z + 1).
-\]
+$$
 
 ::: pf-proof
 
@@ -101,9 +101,9 @@ triangle inequality $|\zeta| \le |z| + |\zeta - z| \le R + r$.
 ::: pf-step
 
 Since $f$ is continuous and $\overline{B(0, R + r)}$ is compact, the supremum:
-\[
+$$
 M = \sup_{|\zeta| \le R + r} |f(\zeta)| < \infty.
-\]
+$$
 
 ::: pf-proof
 
@@ -116,13 +116,13 @@ Extreme Value Theorem for continuous functions on compact sets.
 ::: pf-step
 
 By Cauchy's Integral Formula for derivatives applied to the contour $C_z$:
-\[
+$$
 \frac{f^{(n)}(z)}{n!} = \frac{1}{2\pi i} \int_{C_z} \frac{f(\zeta)}{(\zeta - z)^{n+1}} \, d\zeta.
-\]
+$$
 Thus for all $z \in K$:
-\[
+$$
 \left| \frac{f^{(n)}(z)}{n!} \right| \le \frac{1}{2\pi} \frac{M}{r^{n+1}} (2\pi r) = \frac{M}{r^n}.
-\]
+$$
 
 ::: pf-proof
 

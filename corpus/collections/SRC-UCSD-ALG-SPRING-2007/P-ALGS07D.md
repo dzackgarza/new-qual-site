@@ -41,45 +41,45 @@ Hint: Figure out the action of $x$ on the obvious $\CC$-basis.
 ::: {.pf-step #s1}
 
 For every commutative ring $R$ and ideals $I,J\subseteq R$, there is a canonical isomorphism
-\[
+$$
 (R/I)\otimes_R(R/J)\cong R/(I+J).
-\]
+$$
 
 ::: pf-proof
 
 Define
-\[
+$$
 \Phi:(R/I)\otimes_R(R/J)\longrightarrow R/(I+J),
 \qquad
 (r+I)\otimes(s+J)\longmapsto rs+(I+J).
-\]
+$$
 The map is well-defined and $R$-balanced: changing $r$ by an element of $I$ or $s$ by an element of $J$ changes $rs$ by an element of $I+J$.
 
 Define
-\[
+$$
 \Psi:R/(I+J)\longrightarrow (R/I)\otimes_R(R/J),
 \qquad
 r+(I+J)\longmapsto (r+I)\otimes(1+J).
-\]
+$$
 If $r\in I+J$, write $r=i+j$ with $i\in I$ and $j\in J$.
 Then
-\[
+$$
 (i+I)\otimes(1+J)=0,
 \qquad
 (j+I)\otimes(1+J)=(1+I)\otimes(j+J)=0,
-\]
+$$
 so $\Psi$ is well-defined.
 
 Now
-\[
+$$
 \Phi\Psi(r+(I+J))=r+(I+J),
-\]
+$$
 and, using the balancing relation,
-\[
+$$
 \Psi\Phi\big((r+I)\otimes(s+J)\big)
 =(rs+I)\otimes(1+J)
 =(r+I)\otimes(s+J).
-\]
+$$
 Hence $\Phi$ and $\Psi$ are inverse isomorphisms.
 
 :::
@@ -89,18 +89,18 @@ Hence $\Phi$ and $\Psi$ are inverse isomorphisms.
 ::: {.pf-step #s2}
 
 Applying step [](#s1){.pf-ref} with $R=\CC[x]$, $I=(x^n)$, and $J=(x^m)$ gives
-\[
+$$
 \CC[x]/(x^n)\otimes_{\CC[x]}\CC[x]/(x^m)
 \cong
 \CC[x]/(x^{\min(m,n)}).
-\]
+$$
 
 ::: pf-proof
 
 In $\CC[x]$,
-\[
+$$
 (x^n)+(x^m)=(x^{\min(m,n)}).
-\]
+$$
 Substitute this into step [](#s1){.pf-ref}.
 
 :::
@@ -110,11 +110,11 @@ Substitute this into step [](#s1){.pf-ref}.
 ::: pf-step
 
 Thus the decomposition in part (a) exists with
-\[
+$$
 k=1,
 \qquad
 a_1=\min(m,n),
-\]
+$$
 and these values answer part (b).
 
 ::: pf-proof

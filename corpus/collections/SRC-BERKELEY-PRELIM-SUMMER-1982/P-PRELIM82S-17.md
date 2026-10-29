@@ -31,9 +31,9 @@ audit:
 ::: {.problem}
 Let $f:\RR^3\to\RR^2$, and suppose $0$ is a regular value of $f$; that is, $Df$ has rank $2$ at every point of $f^{-1}(0)$.
 Prove that
-\[
+$$
 \RR^3\setminus f^{-1}(0)
-\]
+$$
 is arcwise connected.
 :::
 

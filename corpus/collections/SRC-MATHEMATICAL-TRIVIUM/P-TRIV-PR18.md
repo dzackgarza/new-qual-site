@@ -57,9 +57,9 @@ Hence the number of the typical series is exponentially large, while the probabi
 ::: {.solution}
 
 Assume $0<p<1$, put $q=1-p$, and write
-\[
+$$
 r=\frac{S_n(\omega)}n.
-\]
+$$
 For a typical sequence, $|r-p|\leq\epsilon$.
 
 ::: pf
@@ -67,9 +67,9 @@ For a typical sequence, $|r-p|\leq\epsilon$.
 ::: {.pf-step #s1-1}
 
 A sequence with $nr$ successes has probability
-\[
+$$
 p(\omega)=p^{nr}q^{n(1-r)}.
-\]
+$$
 
 
 ::: pf-proof
@@ -83,24 +83,24 @@ Independence gives one factor $p$ for each success and one factor $q$ for each f
 ::: {.pf-step #s1-2}
 
 Its logarithmic probability satisfies
-\[
+$$
 -\frac1n\log p(\omega)
 =-r\log p-(1-r)\log q
 =H+(r-p)\log\frac qp.
-\]
+$$
 
 
 ::: pf-proof
 
 Take logarithms in step [](#s1-1){.pf-ref} and divide by $-n$. Subtract
-\[
+$$
 H=-p\log p-q\log q
-\]
+$$
 and use $q=1-p$ to obtain
-\[
+$$
 -(r-p)\log p+(r-p)\log q
 =(r-p)\log(q/p).
-\]
+$$
 
 :::
 
@@ -109,27 +109,27 @@ and use $q=1-p$ to obtain
 ::: {.pf-step #s1-3}
 
 If $\omega\in C(n,\epsilon)$, then
-\[
+$$
 \left|-\frac1n\log p(\omega)-H\right|
 \leq\epsilon\left|\log\frac qp\right|
 \leq\widetilde\epsilon,
-\]
+$$
 for the source's
-\[
+$$
 \widetilde\epsilon
 =\max\{\epsilon,\epsilon(-2\log(pq))\}.
-\]
+$$
 
 
 ::: pf-proof
 
 The first inequality follows from step [](#s1-2){.pf-ref} and $|r-p|\leq\epsilon$. Since $0<p,q<1$,
-\[
+$$
 \left|\log\frac qp\right|
 \leq|\log q|+|\log p|
 =-\log(pq)
 \leq-2\log(pq),
-\]
+$$
 and the definition of $\widetilde\epsilon$ gives the second inequality.
 
 :::
@@ -139,22 +139,22 @@ and the definition of $\widetilde\epsilon$ gives the second inequality.
 ::: {.pf-step #s1-4}
 
 Therefore every typical sequence satisfies
-\[
+$$
 \boxed{
 e^{-n(H+\widetilde\epsilon)}
 \leq p(\omega)
 \leq e^{-n(H-\widetilde\epsilon)}}.
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-3){.pf-ref} is equivalent to
-\[
+$$
 H-\widetilde\epsilon
 \leq-\frac1n\log p(\omega)
 \leq H+\widetilde\epsilon.
-\]
+$$
 Multiply by $-n$, reverse the inequalities, and exponentiate.
 
 :::
@@ -164,19 +164,19 @@ Multiply by $-n$, reverse the inequalities, and exponentiate.
 ::: {.pf-step #s1-5}
 
 The upper bound on the number $N(C(n,\epsilon))$ of typical sequences is
-\[
+$$
 \boxed{N(C(n,\epsilon))\leq e^{n(H+\widetilde\epsilon)}}.
-\]
+$$
 
 
 ::: pf-proof
 
 By the lower probability bound in step [](#s1-4){.pf-ref},
-\[
+$$
 1\geq P(C(n,\epsilon))
 =\sum_{\omega\in C(n,\epsilon)}p(\omega)
 \geq N(C(n,\epsilon))e^{-n(H+\widetilde\epsilon)}.
-\]
+$$
 Rearrange.
 
 :::
@@ -186,24 +186,24 @@ Rearrange.
 ::: {.pf-step #s1-6}
 
 The source's unconditional lower bound
-\[
+$$
 e^{n(H-\widetilde\epsilon)}\leq N(C(n,\epsilon))
-\]
+$$
 does not follow from the definition of $C(n,\epsilon)$ and is false for finite $n$ in general.
 
 
 ::: pf-proof
 
 From the upper probability bound in step [](#s1-4){.pf-ref} one only obtains
-\[
+$$
 P(C(n,\epsilon))
 \leq N(C(n,\epsilon))e^{-n(H-\widetilde\epsilon)},
-\]
+$$
 hence
-\[
+$$
 N(C(n,\epsilon))
 \geq P(C(n,\epsilon))e^{n(H-\widetilde\epsilon)}.
-\]
+$$
 The missing factor $P(C(n,\epsilon))$ cannot be replaced by $1$. For example, if $n=1$, $p=1/2$, and $0<\epsilon<1/2$, then $C(1,\epsilon)$ is empty, so its cardinality is $0$ while the claimed lower bound is positive.
 
 :::
@@ -213,23 +213,23 @@ The missing factor $P(C(n,\epsilon))$ cannot be replaced by $1$. For example, if
 ::: {.pf-step #s1-7}
 
 Nevertheless, for every fixed $\epsilon>0$, the weak law of large numbers gives
-\[
+$$
 P(C(n,\epsilon))\longrightarrow1,
-\]
+$$
 and therefore
-\[
+$$
 N(C(n,\epsilon))
 \geq P(C(n,\epsilon))e^{n(H-\widetilde\epsilon)}.
-\]
+$$
 
 
 ::: pf-proof
 
 Since $S_n/n$ is the sample mean of independent Bernoulli variables of mean $p$ and variance $pq$, Chebyshev's inequality gives
-\[
+$$
 P\left(\left|\frac{S_n}n-p\right|>\epsilon\right)
 \leq\frac{pq}{n\epsilon^2}\to0.
-\]
+$$
 The cardinality inequality is the rearrangement obtained in step [](#s1-6){.pf-ref}.
 
 :::
@@ -239,12 +239,12 @@ The cardinality inequality is the rearrangement obtained in step [](#s1-6){.pf-r
 ::: {.pf-step #s1-8}
 
 Thus the rigorous finite-$n$ bounds are
-\[
+$$
 \boxed{
 P(C(n,\epsilon))e^{n(H-\widetilde\epsilon)}
 \leq N(C(n,\epsilon))
 \leq e^{n(H+\widetilde\epsilon)}},
-\]
+$$
 with $P(C(n,\epsilon))\to1$ as $n\to\infty$.
 
 

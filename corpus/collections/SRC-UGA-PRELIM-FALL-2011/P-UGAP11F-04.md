@@ -16,9 +16,9 @@ audit:
 
 ::: {.problem}
 Give an $\varepsilon$-$\delta$ proof that
-\[
+$$
 \lim_{x\to2}\frac1{3-x}=1.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -44,25 +44,25 @@ Hatcher's three diagrams are respectively a commutative triangle and two commuta
 ::: pf-step
 
 For the triangle
-\[
+$$
 A\xrightarrow{f}B,
 \qquad
 A\xrightarrow{g}C\xrightarrow{h}B,
 \qquad
 f=h g,
-\]
+$$
 if any two of $f,g,h$ are isomorphisms, then so is the third.
 
 ::: pf-proof
 
 If $g$ and $h$ are isomorphisms, then $f=hg$ is an isomorphism. If $f$ and $g$ are isomorphisms, then
-\[
+$$
 h=f g^{-1}.
-\]
+$$
 If $f$ and $h$ are isomorphisms, then
-\[
+$$
 g=h^{-1}f.
-\]
+$$
 In every case the remaining map is a composite of isomorphisms.
 
 :::
@@ -72,26 +72,26 @@ In every case the remaining map is a composite of isomorphisms.
 ::: pf-step
 
 For the square
-\[
+$$
 \begin{array}{ccc}
 A&\xrightarrow{f}&B\\
 \downarrow g&&\downarrow h\\
 C&\xrightarrow{k}&D,
 \end{array}
 \qquad hf=kg,
-\]
+$$
 if any three of $f,g,h,k$ are isomorphisms, then so is the fourth.
 
 ::: pf-proof
 
 Solve the commutativity equation for the unknown map. Explicitly,
-\[
+$$
 f=h^{-1}kg,
 \qquad
 g=k^{-1}hf,
 \qquad h=kgf^{-1},
 \qquad k=hfg^{-1},
-\]
+$$
 according to which map is missing. Each expression is a composite of isomorphisms.
 
 :::
@@ -101,25 +101,25 @@ according to which map is missing. Each expression is a composite of isomorphism
 ::: pf-step
 
 For the square with the right vertical arrow reversed,
-\[
+$$
 \begin{array}{ccc}
 A&\xrightarrow{f}&B\\
 \downarrow g&&\uparrow h\\
 C&\xrightarrow{k}&D,
 \end{array}
 \qquad f=hkg,
-\]
+$$
 the same conclusion holds.
 
 ::: pf-proof
 
 Again solve for the missing map:
-\[
+$$
 f=hkg,
 \qquad g=k^{-1}h^{-1}f,
 \qquad h=fg^{-1}k^{-1},
 \qquad k=h^{-1}fg^{-1}.
-\]
+$$
 Thus the fourth map is an isomorphism whenever the other three are.
 
 :::

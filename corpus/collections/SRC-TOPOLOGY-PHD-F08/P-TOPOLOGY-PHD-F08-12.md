@@ -41,19 +41,19 @@ The statement is true.
 ::: {.pf-step #no-limit-point-neighborhoods}
 Let $A$ be an infinite subset of a compact space $X$ and suppose, for contradiction, that $A$ has no limit point.
 Then for every $x\in X$ there is an open neighborhood $U_x$ of $x$ such that
-\[
+$$
 U_x\cap(A\setminus\{x\})=\varnothing.
-\]
+$$
 
 ::: pf-proof
 A point $x\in X$ is a limit point of $A$ if every open neighborhood of $x$ meets
-\[
+$$
 A\setminus\{x\}.
-\]
+$$
 If $x$ is not a limit point, the negation of this condition gives an open neighborhood $U_x$ with
-\[
+$$
 U_x\cap(A\setminus\{x\})=\varnothing.
-\]
+$$
 By the assumption that $A$ has no limit point, this holds for every $x\in X$.
 :::
 
@@ -61,13 +61,13 @@ By the assumption that $A$ has no limit point, this holds for every $x\in X$.
 
 ::: pf-step
 The family
-\[
+$$
 \{U_x:x\in X\}
-\]
+$$
 is an open cover of $X$, so finitely many members
-\[
+$$
 U_{x_1},\ldots,U_{x_n}
-\]
+$$
 cover $X$.
 
 ::: pf-proof
@@ -79,24 +79,24 @@ Compactness gives a finite subcover.
 
 ::: {.pf-step #a-in-finite-set}
 The finite subcover forces
-\[
+$$
 A\subseteq\{x_1,\ldots,x_n\}.
-\]
+$$
 
 ::: pf-proof
 Take $a\in A$.
 Since the chosen neighborhoods cover $X$, there is an $i$ with
-\[
+$$
 a\in U_{x_i}.
-\]
+$$
 By step [](#no-limit-point-neighborhoods){.pf-ref},
-\[
+$$
 U_{x_i}\cap(A\setminus\{x_i\})=\varnothing.
-\]
+$$
 Because $a\in A\cap U_{x_i}$, it follows that
-\[
+$$
 a=x_i.
-\]
+$$
 Thus every point of $A$ lies among $x_1,\ldots,x_n$.
 :::
 

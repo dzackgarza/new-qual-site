@@ -33,9 +33,9 @@ $$
 
 ::: {.solution}
 Set
-\[
+$$
 I_\lambda=\int_1^2 e^{i\lambda x}\varphi(x)\,dx.
-\]
+$$
 
 ::: pf
 
@@ -46,20 +46,20 @@ Integrating by parts once removes one power of $\lambda$ without a boundary term
 ::: pf-proof
 
 Since
-\[
+$$
 \frac{d}{dx}e^{i\lambda x}=i\lambda e^{i\lambda x},
-\]
+$$
 we have
-\[
+$$
 I_\lambda
 =\left[\frac{e^{i\lambda x}}{i\lambda}\varphi(x)\right]_1^2
 -\frac1{i\lambda}\int_1^2 e^{i\lambda x}\varphi'(x)\,dx.
-\]
+$$
 Because $\varphi(1)=\varphi(2)=0$, the boundary term vanishes, so
-\[
+$$
 I_\lambda
 =-\frac1{i\lambda}\int_1^2 e^{i\lambda x}\varphi'(x)\,dx.
-\]
+$$
 
 :::
 
@@ -72,16 +72,16 @@ A second integration by parts gives a factor $\lambda^{-2}$.
 ::: pf-proof
 
 Using also $\varphi'(1)=\varphi'(2)=0$,
-\[
+$$
 \int_1^2 e^{i\lambda x}\varphi'(x)\,dx
 =-\frac1{i\lambda}\int_1^2 e^{i\lambda x}\varphi''(x)\,dx.
-\]
+$$
 Therefore
-\[
+$$
 I_\lambda
 =\frac1{(i\lambda)^2}\int_1^2 e^{i\lambda x}\varphi''(x)\,dx
 =-\frac1{\lambda^2}\int_1^2 e^{i\lambda x}\varphi''(x)\,dx.
-\]
+$$
 
 :::
 
@@ -94,21 +94,21 @@ The desired estimate follows with a constant independent of $\lambda$.
 ::: pf-proof
 
 Taking absolute values and using $|e^{i\lambda x}|=1$ gives
-\[
+$$
 |I_\lambda|
 \le \frac1{\lambda^2}\int_1^2|\varphi''(x)|\,dx.
-\]
+$$
 Thus, with
-\[
+$$
 C=\int_1^2|\varphi''(x)|\,dx,
-\]
+$$
 we obtain for every $\lambda>1$
-\[
+$$
 \boxed{
 \left|\int_1^2 e^{i\lambda x}\varphi(x)\,dx\right|
 \le \frac{C}{\lambda^2}.
 }
-\]
+$$
 
 :::
 

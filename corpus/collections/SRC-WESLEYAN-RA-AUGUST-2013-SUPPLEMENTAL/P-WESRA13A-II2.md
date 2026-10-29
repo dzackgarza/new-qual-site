@@ -17,13 +17,13 @@ audit:
 
 ::: {.problem}
 Let $(X,\mathcal B,\mu)$ be a measure space with $\mu(X)=1$, and let $B_1,\dots,B_N\in\mathcal B$ satisfy
-\[
+$$
 \mu(B_i)>\frac12\qquad(1\le i\le N).
-\]
+$$
 Show that there is $C\in\mathcal B$ of positive measure such that for every $x\in C$,
-\[
+$$
 \frac1N\sum_{i=1}^N\chi_{B_i}(x)>\frac12.
-\]
+$$
 :::
 
 ::: {.solution}

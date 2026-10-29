@@ -17,22 +17,22 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 A=\frac16
 \begin{pmatrix}
 13&-5&-2\\
 -5&13&-2\\
 -2&-2&10
 \end{pmatrix}
-\]
+$$
 and let
-\[
+$$
 v=\begin{pmatrix}x\\y\\z\end{pmatrix}\in\RR^3.
-\]
+$$
 As $v$ ranges over the set satisfying
-\[
+$$
 v^TAv=1,
-\]
+$$
 show that $\|v\|$ is bounded and determine its least upper bound.
 :::
 

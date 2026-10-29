@@ -33,11 +33,11 @@ Show that they generate $M$.
 
 ::: {.solution}
 Let
-\[
+$$
 N=Ax_1+\cdots+Ax_n\subseteq M,
 \qquad
 Q=M/N.
-\]
+$$
 The quotient $Q$ is finitely generated.
 
 ::: pf
@@ -47,9 +47,9 @@ For every maximal ideal $\mathfrak m$ of $A$, one has $Q_{\mathfrak m}=0$.
 
 ::: pf-proof
 Localization is exact, so
-\[
+$$
 Q_{\mathfrak m}\cong M_{\mathfrak m}/N_{\mathfrak m}.
-\]
+$$
 By hypothesis the images of $x_1,\ldots,x_n$ generate $M_{\mathfrak m}$, hence
 $N_{\mathfrak m}=M_{\mathfrak m}$.
 :::

@@ -45,85 +45,85 @@ The statement is meaningful as a real-valued function when $A\ne\varnothing$, wh
 
 ::: {.pf-step #triangle-inequality-distance}
 For all $x,y\in X$,
-\[
+$$
 d(x,A)\le d(x,y)+d(y,A).
-\]
+$$
 
 ::: pf-proof
 Fix $x,y\in X$.
 For every $a\in A$, the triangle inequality gives
-\[
+$$
 d(x,a)\le d(x,y)+d(y,a).
-\]
+$$
 Since
-\[
+$$
 d(x,A)=\inf_{b\in A}d(x,b)\le d(x,a),
-\]
+$$
 we have
-\[
+$$
 d(x,A)\le d(x,y)+d(y,a)
-\]
+$$
 for every $a\in A$.
 Thus $d(x,A)$ is a lower bound for the nonempty set
-\[
+$$
 \{d(x,y)+d(y,a):a\in A\}.
-\]
+$$
 It is therefore at most its infimum, namely
-\[
+$$
 d(x,y)+\inf_{a\in A}d(y,a)
 =d(x,y)+d(y,A).
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #lipschitz}
 The distance-to-$A$ function is $1$-Lipschitz:
-\[
+$$
 |d(x,A)-d(y,A)|\le d(x,y)
-\]
+$$
 for all $x,y\in X$.
 
 ::: pf-proof
 From step [](#triangle-inequality-distance){.pf-ref},
-\[
+$$
 d(x,A)-d(y,A)\le d(x,y).
-\]
+$$
 Interchanging $x$ and $y$ and using symmetry of the metric gives
-\[
+$$
 d(y,A)-d(x,A)\le d(y,x)=d(x,y).
-\]
+$$
 Together these inequalities are equivalent to
-\[
+$$
 |d(x,A)-d(y,A)|\le d(x,y).
-\]
+$$
 :::
 
 :::
 
 ::: pf-step
 The function
-\[
+$$
 f:X\to\RR,
 \qquad
 f(x)=d(x,A),
-\]
+$$
 is continuous.
 
 ::: pf-proof
 Let $x\in X$ and let $\varepsilon>0$.
 Take
-\[
+$$
 \delta=\varepsilon.
-\]
+$$
 If $d(x,y)<\delta$, then by step [](#lipschitz){.pf-ref},
-\[
+$$
 |f(x)-f(y)|
 =|d(x,A)-d(y,A)|
 \le d(x,y)
 <\delta
 =\varepsilon.
-\]
+$$
 Thus $f$ is continuous at every $x\in X$; indeed, the same estimate shows that it is uniformly continuous.
 :::
 

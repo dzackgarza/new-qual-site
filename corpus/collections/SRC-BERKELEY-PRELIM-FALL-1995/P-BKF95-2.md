@@ -26,9 +26,9 @@ audit:
 ::: {.problem}
 Let $A$ be a finite subset of the unit disk in the plane, and let $N(A,r)$ be the set of points at distance at most $r$ from $A$, where $0<r<1$.
 Show that the length of the boundary of $N(A,r)$ is at most
-\[
+$$
 \frac Cr
-\]
+$$
 for some constant $C$ independent of $A$.
 :::
 

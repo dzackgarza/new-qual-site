@@ -47,9 +47,9 @@ Complex conjugation is an endomorphism of $G$.
 ::: pf-proof
 
 For $z,w\in G$,
-\[
+$$
 \overline{zw}=\bar z\,\bar w,
-\]
+$$
 and conjugation preserves $G$.
 Thus $z\mapsto\bar z$ is a homomorphism; on this group it is also $z\mapsto z^{-1}=z^3$.
 
@@ -64,9 +64,9 @@ Squaring is an endomorphism.
 ::: pf-proof
 
 The group $G$ is abelian, so
-\[
+$$
 (zw)^2=z^2w^2.
-\]
+$$
 Hence $z\mapsto z^2$ is a homomorphism $G\to G$.
 
 :::
@@ -82,9 +82,9 @@ Every endomorphism has the form $z\mapsto z^k$.
 $G=\langle i\rangle\cong C_4$.
 An endomorphism is determined by the image of $i$, and that image may be any element $i^k$ of $G$.
 The resulting homomorphism satisfies
-\[
+$$
 \varphi(i^m)=i^{km}=(i^m)^k,
-\]
+$$
 so $\varphi(z)=z^k$ for all $z\in G$.
 
 :::

@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Let $V$ be a complex inner product space and let $v,w\in V$.
 Prove the Cauchy--Schwarz inequality
-\[
+$$
 |(v,w)|\leq |v|\,|w|.
-\]
+$$
 :::
 
 ::: {.solution}

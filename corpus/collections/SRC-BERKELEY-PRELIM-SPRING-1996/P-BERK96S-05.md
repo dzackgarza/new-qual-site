@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Prove or disprove: for every $2\times2$ complex matrix $A$, there is a $2\times2$ complex matrix $B$ such that
-\[
+$$
 A=B^2.
-\]
+$$
 :::
 
 ::: {.solution}

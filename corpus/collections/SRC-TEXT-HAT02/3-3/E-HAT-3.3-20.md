@@ -31,13 +31,13 @@ Show that $H_c^0(X; G) = 0$ if $X$ is path-connected and noncompact.
 
 ::: {.solution}
 A degree-zero cocycle with coefficients in $G$ is a locally constant function
-\[
+$$
 f:X\to G.
-\]
+$$
 If $X$ is path-connected, every locally constant function is constant. A compactly supported degree-zero class must therefore be represented by a constant function whose support is compact.
 
 If the constant is nonzero, its support is all of $X$, which is noncompact. Hence the only compactly supported degree-zero cocycle is the zero function. Therefore
-\[
+$$
 \boxed{H_c^0(X;G)=0.}
-\]
+$$
 :::

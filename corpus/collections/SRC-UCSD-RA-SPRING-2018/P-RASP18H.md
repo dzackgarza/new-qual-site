@@ -49,29 +49,29 @@ Extend the Cesaro-limit functional by Hahn--Banach.
 ::: pf-proof
 
 Define
-\[
+$$
 L:V\to\CC,
 \qquad
 L(x)=\lim_{n\to\infty}\frac1n\sum_{j=1}^n x_j.
-\]
+$$
 This is linear. Moreover,
-\[
+$$
 |L(x)|
 \le \limsup_{n\to\infty}\frac1n\sum_{j=1}^n|x_j|
 \le \|x\|_\infty.
-\]
-Thus \(L\) is bounded and \(\|L\|\le1\). Since the constant sequence \(\mathbf1=(1,1,\ldots)\) lies in \(V\) and \(L(\mathbf1)=1=\|\mathbf1\|_\infty\), in fact \(\|L\|=1\).
+$$
+Thus $L$ is bounded and $\|L\|\le1$. Since the constant sequence $\mathbf1=(1,1,\ldots)$ lies in $V$ and $L(\mathbf1)=1=\|\mathbf1\|_\infty$, in fact $\|L\|=1$.
 
-By the Hahn--Banach theorem, \(L\) extends to a bounded linear functional
-\[
+By the Hahn--Banach theorem, $L$ extends to a bounded linear functional
+$$
 \varphi\in(\ell^\infty)^*
-\]
+$$
 with the same norm. Hence
-\[
+$$
 \boxed{
 \varphi(x)=\lim_{n\to\infty}\frac1n\sum_{j=1}^n x_j
 \quad\text{for every }x\in V.}
-\]
+$$
 
 :::
 
@@ -84,26 +84,26 @@ Prove shift invariance of every such extension.
 ::: pf-proof
 
 Let
-\[
+$$
 x=(x_1,x_2,\ldots),
 \qquad
 \widetilde x=(x_2,x_3,\ldots).
-\]
-Set \(z=\widetilde x-x\). Then
-\[
+$$
+Set $z=\widetilde x-x$. Then
+$$
 \frac1n\sum_{j=1}^n z_j
 =\frac1n\sum_{j=1}^n(x_{j+1}-x_j)
 =\frac{x_{n+1}-x_1}{n}.
-\]
-Because \(x\in\ell^\infty\), the last quantity tends to \(0\). Hence \(z\in V\) and every extension \(\psi\) agreeing with \(L\) on \(V\) satisfies
-\[
+$$
+Because $x\in\ell^\infty$, the last quantity tends to $0$. Hence $z\in V$ and every extension $\psi$ agreeing with $L$ on $V$ satisfies
+$$
 \psi(z)=0.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{\psi(\widetilde x)=\psi(x)}
-\]
-for every \(x\in\ell^\infty\).
+$$
+for every $x\in\ell^\infty$.
 
 :::
 
@@ -111,39 +111,39 @@ for every \(x\in\ell^\infty\).
 
 ::: pf-step
 
-Rule out representation by an \(\ell^1\) sequence.
+Rule out representation by an $\ell^1$ sequence.
 
 ::: pf-proof
 
-Suppose there were \(y=(y_n)\in\ell^1\) such that
-\[
+Suppose there were $y=(y_n)\in\ell^1$ such that
+$$
 \psi(x)=\sum_{n=1}^\infty x_ny_n
-\]
-for every \(x\in\ell^\infty\). Shift invariance gives
-\[
+$$
+for every $x\in\ell^\infty$. Shift invariance gives
+$$
 \sum_{n=1}^\infty x_{n+1}y_n
 =\sum_{n=1}^\infty x_ny_n
-\]
-for every bounded sequence \(x\).
+$$
+for every bounded sequence $x$.
 
-Taking \(x=e_1=(1,0,0,\ldots)\) gives
-\[
+Taking $x=e_1=(1,0,0,\ldots)$ gives
+$$
 y_1=0.
-\]
-Taking \(x=e_m\) for \(m\ge2\) gives
-\[
+$$
+Taking $x=e_m$ for $m\ge2$ gives
+$$
 y_{m-1}=y_m.
-\]
+$$
 Thus inductively
-\[
+$$
 y_n=0
 \qquad\text{for every }n.
-\]
-Hence the alleged representation would make \(\psi=0\). But the constant sequence \(\mathbf1\) belongs to \(V\), so
-\[
+$$
+Hence the alleged representation would make $\psi=0$. But the constant sequence $\mathbf1$ belongs to $V$, so
+$$
 \psi(\mathbf1)=1.
-\]
-This contradiction proves that no such \(y\in\ell^1\) exists.
+$$
+This contradiction proves that no such $y\in\ell^1$ exists.
 
 :::
 

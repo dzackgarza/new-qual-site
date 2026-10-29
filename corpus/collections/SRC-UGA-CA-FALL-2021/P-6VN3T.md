@@ -43,11 +43,11 @@ Otherwise, if $z_0\in \bd \DD$, using continuity of $f$ we have $f(z_k) = 0$ for
 :::
 
 So write $Z(f) = \theset{z_1,\cdots, z_m}$ and define
-\[
+$$
 g(z) \definedas \prod_{1\leq k \leq m} {z-z_k \over 1 - \bar{z_k} z},
 \quad
 h(z) \definedas {f(z) \over g(z)}
-.\]
+.$$
 
 ::: {.claim}
 $h(z) \equiv 1$ is constant on $\bar{\DD}$, so that $f = \lambda g$ for some $\lambda \in S^1$, i.e. $\lambda = e^{i\theta}$ for some $\theta$.
@@ -58,22 +58,22 @@ Note that $h$ cancels all zeros of $f$, so $h$ is nonzero and holomorphic on $\b
 Moreover $\abs{g(z)} \leq 1$ on $\bar{\DD}$ since these are well-known to be in $\Aut(\DD)$.
 It's also well-known that $\abs{g(z)} = 1$ on $\bd \DD$.
 Thus $\abs{h(z)} = 1$ and $\abs{1\over h(z)} =1$ on $\bd \DD$, and by the maximum modulus principle,
-\[
+$$
 \abs{h(z)} \leq 1 \quad\text{ and }\quad \abs{1\over h(z)}\leq 1 \quad \text{ on } \DD
-,\]
+,$$
 forcing $\abs{h(z)}\equiv 1$ and thus $h(z) = e^{i\theta}$ for some $\theta$.
 
 :::
 
 So we now have
-\[
+$$
 f(z) = e^{i\theta} \prod_{1\leq k\leq m} {z-z_k \over 1 -\bar{z_k} z}
-,\]
+,$$
 which has poles at points $z$ for which $\bar{z_k}z=1$ for some $z_k\in Z(f)$.
 However, since we assumed $f$ was entire, it can have no such poles, which forces $z_k = 0$ for all $k$.
 But then
-\[
+$$
 f(z) = e^{i\theta}\prod_{1\leq k \leq m}{z- 0 \over 1 - 0\cdot z} = e^{i\theta}z^m
-.\]
+.$$
 
 :::

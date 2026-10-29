@@ -27,9 +27,9 @@ Prove that any two finite fields of the same order are isomorphic.
 
 ::: {.solution}
 Let $K$ and $L$ be finite fields with
-\[
+$$
 |K|=|L|=q.
-\]
+$$
 Then $q=p^n$ for the same prime $p$, and both fields contain the same prime
 field $\FF_p$ up to the unique isomorphism fixing $1$.
 
@@ -38,9 +38,9 @@ field $\FF_p$ up to the unique isomorphism fixing $1$.
 ::: {.pf-step #s1}
 
 Every element of a field with $q$ elements is a root of
-\[
+$$
 f(T)=T^q-T\in\FF_p[T].
-\]
+$$
 
 ::: pf-proof
 
@@ -61,9 +61,9 @@ its roots.
 By step [](#s1){.pf-ref} all $q$ elements are roots. Since $f$ has degree $q$, it has no further
 roots in any extension once these $q$ distinct roots are present. Distinctness
 also follows from
-\[
+$$
 f'(T)=qT^{q-1}-1=-1
-\]
+$$
 in characteristic $p$, so $f$ is separable.
 
 :::

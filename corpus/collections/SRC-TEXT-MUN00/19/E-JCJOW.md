@@ -35,14 +35,14 @@ is not empty.
 
 ::: {.solution}
 Assume the axiom of choice. Given a family $\{A_\alpha\}_{\alpha\in J}$ of nonempty sets, choice supplies a function $c:J\to\bigcup_\alpha A_\alpha$ with
-\[
+$$
 c(\alpha)\in A_\alpha
-\]
+$$
 for every $\alpha$. This is exactly an element $(c(\alpha))_{\alpha\in J}$ of the Cartesian product, so the product is nonempty.
 
 Conversely, assume every product of a family of nonempty sets is nonempty. Given any family $\{A_\alpha\}_{\alpha\in J}$ of nonempty sets, choose an element
-\[
+$$
 (a_\alpha)_{\alpha\in J}\in\prod_{\alpha\in J}A_\alpha.
-\]
+$$
 Then $c(\alpha)=a_\alpha$ is a choice function. Hence the product-nonemptiness statement is equivalent to the axiom of choice.
 :::

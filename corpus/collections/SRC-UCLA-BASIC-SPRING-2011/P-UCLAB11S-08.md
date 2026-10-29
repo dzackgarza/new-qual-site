@@ -31,13 +31,13 @@ Continuous functions $f_n,f:[0,1]\to\RR$ such that $f_n(t)\to f(t)$ for every $t
 
 :::
 
-\[
+$$
 \int_0^1 f_n(t)\,dt
-\]
+$$
 does not converge to
-\[
+$$
 \int_0^1 f(t)\,dt.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -47,22 +47,22 @@ does not converge to
 ::: {.pf-step #p2-s1}
 
 For part step [](#p2-s1){.pf-ref}, define
-\[
+$$
 f(x)
 =
 \begin{cases}
 1,&x\in\QQ,\\
 -1,&x\notin\QQ.
 \end{cases}
-\]
+$$
 Then
-\[
+$$
 \boxed{|f(x)|=1}
-\]
+$$
 for every
-\[
+$$
 x\in[0,1].
-\]
+$$
 
 ::: pf-proof
 
@@ -79,13 +79,13 @@ The function $|f|$ is Riemann integrable.
 ::: pf-proof
 
 By step [](#p2-s1){.pf-ref},
-\[
+$$
 |f|\equiv1.
-\]
+$$
 Constant functions are Riemann integrable, with
-\[
+$$
 \int_0^1|f(x)|\,dx=1.
-\]
+$$
 
 :::
 
@@ -98,16 +98,16 @@ The function $f$ is discontinuous at every point of $[0,1]$.
 ::: pf-proof
 
 Fix
-\[
+$$
 x_0\in[0,1].
-\]
+$$
 Every neighborhood of $x_0$ contains rational and irrational numbers because both sets are dense in $\RR$.
 Along rational points approaching $x_0$, the function value is $1$.
 Along irrational points approaching $x_0$, the function value is $-1$.
 Hence
-\[
+$$
 \lim_{x\to x_0}f(x)
-\]
+$$
 does not exist.
 Thus $f$ is discontinuous at $x_0$.
 Since $x_0$ was arbitrary, $f$ is discontinuous everywhere.
@@ -124,19 +124,19 @@ The function $f$ is not Riemann integrable.
 
 On every nondegenerate subinterval of $[0,1]$, both rational and irrational points occur.
 Hence on every such interval,
-\[
+$$
 \sup f=1
 \qquad\text{and}\qquad
 \inf f=-1.
-\]
+$$
 Therefore for every partition $P$ of $[0,1]$,
-\[
+$$
 U(f,P)=1
-\]
+$$
 and
-\[
+$$
 L(f,P)=-1.
-\]
+$$
 The upper and lower Darboux integrals are different.
 Thus $f$ is not Riemann integrable.
 This completes part step [](#p2-s1){.pf-ref}.
@@ -148,11 +148,11 @@ This completes part step [](#p2-s1){.pf-ref}.
 ::: {.pf-step #p2-s5}
 
 For part step [](#p2-s2){.pf-ref}, define for
-\[
+$$
 n\ge2
-\]
+$$
 the continuous function
-\[
+$$
 f_n(x)
 =
 \begin{cases}
@@ -163,26 +163,26 @@ n^2\left(\frac2n-x\right),
 0,
 &\frac2n\le x\le1.
 \end{cases}
-\]
+$$
 Also define
-\[
+$$
 \boxed{f(x)=0}.
-\]
+$$
 
 ::: pf-proof
 
 At
-\[
+$$
 x=\frac1n,
-\]
+$$
 the first two formulas both equal
-\[
+$$
 n.
-\]
+$$
 At
-\[
+$$
 x=\frac2n,
-\]
+$$
 the second formula equals $0$.
 Thus $f_n$ is continuous on $[0,1]$.
 The limiting function $f\equiv0$ is also continuous.
@@ -194,46 +194,46 @@ The limiting function $f\equiv0$ is also continuous.
 ::: {.pf-step #p2-s6}
 
 For every fixed
-\[
+$$
 x\in[0,1],
-\]
+$$
 one has
-\[
+$$
 f_n(x)\to0=f(x).
-\]
+$$
 
 ::: pf-proof
 
 If
-\[
+$$
 x=0,
-\]
+$$
 then
-\[
+$$
 f_n(0)=0
-\]
+$$
 for every $n$.
 
 Fix
-\[
+$$
 x>0.
-\]
+$$
 Since
-\[
+$$
 \frac2n\to0,
-\]
+$$
 for all sufficiently large $n$ one has
-\[
+$$
 \frac2n<x.
-\]
+$$
 Then
-\[
+$$
 f_n(x)=0.
-\]
+$$
 Hence
-\[
+$$
 f_n(x)\to0.
-\]
+$$
 Thus the convergence is pointwise on all of $[0,1]$.
 
 :::
@@ -243,27 +243,27 @@ Thus the convergence is pointwise on all of $[0,1]$.
 ::: {.pf-step #p2-s7}
 
 For every $n\ge2$,
-\[
+$$
 \boxed{
 \int_0^1f_n(x)\,dx=1.
 }
-\]
+$$
 
 ::: pf-proof
 
 The graph of $f_n$ is a triangle with base
-\[
+$$
 \frac2n
-\]
+$$
 and height
-\[
+$$
 n.
-\]
+$$
 Therefore its area is
-\[
+$$
 \frac12\cdot\frac2n\cdot n
 =1.
-\]
+$$
 
 :::
 
@@ -276,33 +276,33 @@ The integrals do not converge to the integral of the pointwise limit.
 ::: pf-proof
 
 By step [](#p2-s7){.pf-ref},
-\[
+$$
 \int_0^1f_n(x)\,dx
 =1
-\]
+$$
 for every $n$.
 Thus
-\[
+$$
 \lim_{n\to\infty}
 \int_0^1f_n(x)\,dx
 =1.
-\]
+$$
 But
-\[
+$$
 f\equiv0,
-\]
+$$
 so
-\[
+$$
 \int_0^1f(x)\,dx=0.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{
 \lim_{n\to\infty}\int_0^1f_n
 \ne
 \int_0^1f.
 }
-\]
+$$
 
 :::
 

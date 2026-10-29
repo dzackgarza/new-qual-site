@@ -29,39 +29,39 @@ Use the universal coefficient theorem to show that if $H_*(X; \ZZ)$ is finitely 
 
 ::: {.solution}
 Write each finitely generated integral homology group as
-\[
+$$
 H_n(X;\ZZ)\cong \ZZ^{r_n}\oplus T_n,
-\]
+$$
 with $T_n$ finite. We compare the alternating sum of the dimensions of homology over a field $F$ with $\sum(-1)^nr_n$.
 
 If $\operatorname{char}F=0$, then $F$ is torsionfree as a $\ZZ$-module, so the homology universal coefficient theorem gives
-\[
+$$
 H_n(X;F)\cong H_n(X;\ZZ)\otimes F\cong F^{r_n}.
-\]
+$$
 Thus $\dim_FH_n(X;F)=r_n$ in every degree.
 
 Now suppose $\operatorname{char}F=p$. Since $F$ is a vector space over $\FF_p$, it is enough to compute with $\FF_p$ and then extend scalars. Let
-\[
+$$
 t_n=\dim_{\FF_p}(T_n/pT_n).
-\]
+$$
 For a finite abelian group the $p$-torsion subgroup $T_n[p]$ has the same $\FF_p$-dimension $t_n$. The universal coefficient short exact sequence gives
-\[
+$$
 0\to H_n(X;\ZZ)\otimes\FF_p
 \to H_n(X;\FF_p)
 \to \operatorname{Tor}(H_{n-1}(X;\ZZ),\FF_p)\to0.
-\]
+$$
 Hence
-\[
+$$
 \dim_{\FF_p}H_n(X;\FF_p)=r_n+t_n+t_{n-1}.
-\]
+$$
 Taking the alternating sum, the two torsion contributions cancel:
-\[
+$$
 \sum_n(-1)^n(t_n+t_{n-1})=0.
-\]
+$$
 Therefore
-\[
+$$
 \sum_n(-1)^n\dim_FH_n(X;F)
 =\sum_n(-1)^nr_n
 =\chi(X).
-\]
+$$
 :::

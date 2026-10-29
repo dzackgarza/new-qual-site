@@ -22,9 +22,9 @@ Show that $\RP ^ { 2 n }$ cannot be embedded in $S ^ { 2 n + 1 }$
 ::: {.solution}
 
 Assume $n\geq1$ and suppose, for contradiction, that there is an embedding
-\[
+$$
 \RP^{2n}\hookrightarrow S^{2n+1}.
-\]
+$$
 Its image is a closed codimension-one submanifold.
 
 ::: pf
@@ -50,11 +50,11 @@ The embedded copy of $\RP^{2n}$ in $S^{2n+1}$ is two-sided.
 ::: pf-proof
 
 Alexander duality with $\ZZ/2$ coefficients gives
-\[
+$$
 \widetilde H_0(S^{2n+1}\setminus\RP^{2n};\ZZ/2)
 \cong
 \widetilde H^{2n}(\RP^{2n};\ZZ/2).
-\]
+$$
 The top mod-$2$ cohomology of the closed connected $2n$-manifold $\RP^{2n}$ is $\ZZ/2$, so the complement has exactly two connected components. A closed embedded hypersurface whose complement has two sides has trivial normal line bundle: choose the normal direction pointing into one fixed complementary component. Hence the embedding is two-sided.
 
 :::
@@ -82,14 +82,14 @@ But $\RP^{2n}$ is nonorientable.
 ::: pf-proof
 
 The antipodal map
-\[
+$$
 a:S^{2n}\to S^{2n},
 \qquad a(x)=-x,
-\]
+$$
 is the deck transformation of the double covering $S^{2n}\to\RP^{2n}$. Its degree is
-\[
+$$
 \deg(a)=(-1)^{2n+1}=-1,
-\]
+$$
 so it reverses orientation. If the quotient were orientable, its orientation would pull back to an orientation of $S^{2n}$ preserved by every deck transformation, contradicting the fact that $a$ reverses orientation.
 
 :::
@@ -99,9 +99,9 @@ so it reverses orientation. If the quotient were orientable, its orientation wou
 ::: {.pf-step #s1-5}
 
 This contradiction proves that
-\[
+$$
 \boxed{\RP^{2n}\text{ does not embed in }S^{2n+1}.}
-\]
+$$
 
 
 ::: pf-proof

@@ -17,11 +17,11 @@ audit:
 Recall that quadratic forms $Q_1(x,y)$ and $Q_2(x',y')$ are equivalent if they are related by a nonsingular change of coordinates $(x,y)\mapsto(x',y')$.
 
 Decide whether
-\[
+$$
 Q_1=xy,
 \qquad
 Q_2=x^2+y^2
-\]
+$$
 are equivalent over $\CC$ and whether they are equivalent over $\RR$.
 If not, prove that they are not.
 If yes, find the matrix of a change of coordinates.

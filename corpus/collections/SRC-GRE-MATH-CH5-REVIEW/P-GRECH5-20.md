@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 The complex matrix
 
-\[
+$$
 A = \begin{pmatrix} 2 & 2 + i \\ 2 - i & 6 \end{pmatrix}
-\]
+$$
 
 has which one of the following as an eigenvalue?
 

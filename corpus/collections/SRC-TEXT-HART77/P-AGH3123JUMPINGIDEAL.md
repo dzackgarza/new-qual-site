@@ -35,7 +35,7 @@ Let $X_1 \subseteq \PP_k^4$ be the **rational normal quartic curve**, the $4\das
 Use (9.8.3) to construct a flat family $\theset{X_t}$ of curves in $\PP^4$, parametrized by $T = \AA^1$, with the given fibres $X_1$ and $X_0$ for $t = 1$ and $t = 0$.
 
 Let $\mci \subseteq \mco_{\PP^4 \times T}$ be the ideal sheaf of the total family $X \subseteq \PP^4 \times T$. Show that $\mci$ is flat over $T$. Then show that
-\[
+$$
 h^0(t, \mci(1)) =
 \begin{cases}
 0 & t \neq 0 \\
@@ -47,7 +47,7 @@ h^1(t, \mci(1)) =
 0 & t \neq 0 \\
 1 & t = 0
 \end{cases}
-.\]
+.$$
 
 This gives another example of cohomology groups jumping at a special point.
 :::

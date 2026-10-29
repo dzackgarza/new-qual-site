@@ -32,10 +32,10 @@ Show that the axioms for a homology theory are satisfied except that the wedge a
 
 ::: {.solution}
 Put
-\[
+$$
 Q(X)=\prod_{i\in\ZZ}\widetilde H_i(X)\big/\bigoplus_{i\in\ZZ}\widetilde H_i(X),
 \qquad \widetilde h_n(X)=Q(X).
-\]
+$$
 
 ::: pf
 
@@ -58,9 +58,9 @@ Exactness holds, with all connecting maps induced coordinatewise from ordinary h
 ::: pf-proof
 
 For a cofibration sequence $A\to X\to X/A$, ordinary reduced homology gives a long exact sequence. Reindexing turns the connecting map into a degree-preserving map between the products defining $Q$. Products of exact sequences of abelian groups are exact. Direct sums are exact as well. Applying the snake lemma to
-\[
+$$
 0\to\bigoplus_i\widetilde H_i(-)\to\prod_i\widetilde H_i(-)\to Q(-)\to0
-\]
+$$
 for the three terms of the cofibration sequence gives exactness for $Q$.
 
 :::
@@ -86,17 +86,17 @@ The wedge axiom fails.
 ::: pf-proof
 
 Let
-\[
+$$
 X=\bigvee_{j\ge1}S^j.
-\]
+$$
 Then $\widetilde H_i(X)\cong\ZZ$ for every $i\ge1$, so
-\[
+$$
 Q(X)\cong\prod_{i\ge1}\ZZ\big/\bigoplus_{i\ge1}\ZZ\ne0.
-\]
+$$
 But each individual sphere $S^j$ is finite-dimensional, hence $Q(S^j)=0$. Therefore
-\[
+$$
 \bigoplus_j\widetilde h_n(S^j)=0
-\]
+$$
 while $\widetilde h_n(\bigvee_jS^j)\ne0$.
 
 :::

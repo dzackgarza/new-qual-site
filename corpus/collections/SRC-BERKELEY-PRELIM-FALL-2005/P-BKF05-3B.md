@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-For which pairs of monic polynomials \((p(x),m(x))\) over \(\CC\) does there exist a matrix \(A\in M_n(\CC)\) whose characteristic polynomial is \(p\) and whose minimal polynomial is \(m\)?
+For which pairs of monic polynomials $(p(x),m(x))$ over $\CC$ does there exist a matrix $A\in M_n(\CC)$ whose characteristic polynomial is $p$ and whose minimal polynomial is $m$?
 :::
 
 ::: {.solution}

@@ -40,23 +40,23 @@ Write points of $S^1$ by angles modulo $2\pi$.
 ::: {.pf-step #s1}
 
 The maps
-\[
+$$
 f_t(\theta,s)=(\theta+2\pi ts,s),
 \qquad 0\le t\le1,
-\]
+$$
 give a homotopy from the identity to $f$ that is stationary on the boundary circle $S^1\times\{0\}$.
 
 ::: pf-proof
 
 At $t=0$,
-\[
+$$
 f_0(\theta,s)=(\theta,s),
-\]
+$$
 while at $t=1$ one obtains the given map $f$.
 For every $t$ and every $\theta$,
-\[
+$$
 f_t(\theta,0)=(\theta,0),
-\]
+$$
 so the lower boundary circle is fixed pointwise throughout the homotopy.
 
 :::
@@ -66,14 +66,14 @@ so the lower boundary circle is fixed pointwise throughout the homotopy.
 ::: pf-step
 
 Fix $\theta_0\in S^1$ and let
-\[
+$$
 \alpha(s)=(\theta_0,s),
 \qquad 0\le s\le1.
-\]
+$$
 Then
-\[
+$$
 (f\circ\alpha)(s)=(\theta_0+2\pi s,s).
-\]
+$$
 
 ::: pf-proof
 
@@ -91,22 +91,22 @@ The paths $\alpha$ and $f\circ\alpha$ are not homotopic relative to their endpoi
 ::: pf-proof
 
 Let
-\[
+$$
 r:S^1\times I\to S^1,
 \qquad r(\theta,s)=\theta,
-\]
+$$
 be projection to the circle.
 Then $r\circ\alpha$ is the constant loop at $\theta_0$, whereas
-\[
+$$
 r\circ f\circ\alpha(s)=\theta_0+2\pi s
-\]
+$$
 traverses $S^1$ once.
 
 If $\alpha$ and $f\circ\alpha$ were homotopic relative to endpoints, composing such a homotopy with $r$ would give a based homotopy between these two loops in $S^1$.
 But the first loop represents $0$ and the second represents $1$ in
-\[
+$$
 \pi_1(S^1,\theta_0)\cong\ZZ.
-\]
+$$
 They therefore cannot be based-homotopic.
 
 :::
@@ -120,26 +120,26 @@ There is no homotopy from the identity to $f$ that is stationary on both boundar
 ::: pf-proof
 
 Suppose
-\[
+$$
 F_t:S^1\times I\to S^1\times I
-\]
+$$
 were such a homotopy, with $F_0=\operatorname{id}$ and $F_1=f$, and with both boundary circles fixed pointwise for every $t$.
 Define
-\[
+$$
 H(s,t)=F_t(\alpha(s)).
-\]
+$$
 Then
-\[
+$$
 H(s,0)=\alpha(s),
 \qquad
 H(s,1)=f\circ\alpha(s).
-\]
+$$
 Because $\alpha(0)$ and $\alpha(1)$ lie on the two boundary circles and those circles are stationary,
-\[
+$$
 H(0,t)=\alpha(0),
 \qquad
 H(1,t)=\alpha(1)
-\]
+$$
 for all $t$.
 Thus $H$ would be a homotopy relative to endpoints between $\alpha$ and $f\circ\alpha$, contradicting step [](#s3){.pf-ref}.
 
@@ -155,9 +155,9 @@ Hence $f$ is homotopic to the identity relative to either chosen single boundary
 
 The lower-boundary statement is step [](#s1){.pf-ref}.
 For the upper boundary circle one can instead use
-\[
+$$
 g_t(\theta,s)=(\theta+2\pi t(s-1),s).
-\]
+$$
 At $t=0$ this is the identity, at $t=1$ it agrees with $f$ because angles differing by $2\pi$ define the same point of $S^1$, and at $s=1$ it fixes $(\theta,1)$ for every $t$.
 The impossibility of fixing both is step [](#s4){.pf-ref}.
 

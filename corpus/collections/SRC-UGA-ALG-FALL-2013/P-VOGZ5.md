@@ -47,9 +47,9 @@ Put $a=\sqrt[4]{2}$, with $a>0$.
 ::: {.pf-step #s1}
 
 The splitting field is $K=\QQ(a,i)$ and
-\[
+$$
 \boxed{[K:\QQ]=8}.
-\]
+$$
 
 ::: pf-proof
 
@@ -66,9 +66,9 @@ The subgroup $N=\operatorname{Gal}(K/\QQ(i))$ is normal in $G$, and $NH=G$ for $
 ::: pf-proof
 
 The extension $\QQ(i)/\QQ$ is Galois, so its corresponding subgroup $N$ is normal by the Galois correspondence. Because $\QQ(a)\subseteq\RR$ and $\QQ(i)\cap\RR=\QQ$, their intersection is $\QQ$. As $N$ is normal, $NH$ is a subgroup with fixed field
-\[
+$$
 K^{NH}=K^N\cap K^H=\QQ(i)\cap\QQ(a)=\QQ.
-\]
+$$
 By the Galois correspondence, $NH=G$.
 
 :::
@@ -78,9 +78,9 @@ By the Galois correspondence, $NH=G$.
 ::: {.pf-step #s3}
 
 The Galois group is the dihedral group
-\[
+$$
 \boxed{G=\langle\sigma,\tau\mid\sigma^4=\tau^2=1,\ \tau\sigma\tau^{-1}=\sigma^{-1}\rangle\cong D_8}.
-\]
+$$
 
 ::: pf-proof
 
@@ -93,9 +93,9 @@ Define $\sigma$ by $\sigma(a)=ia$ and $\sigma(i)=i$, and let $\tau$ be complex c
 ::: {.pf-step #s4}
 
 The number of distinct quartic intermediate fields of $K/\QQ$ is
-\[
+$$
 \boxed{5}.
-\]
+$$
 
 ::: pf-proof
 

@@ -143,9 +143,9 @@ Compute the mod 2 degree of $\bar{f}$ and $f$:
 
 ::: pf-step
 The cohomology ring of $\RP^k$ with $\ZZ_2$ coefficients is:
-\[
+$$
 H^*(\RP^k; \ZZ_2) \cong \ZZ_2[\alpha] / (\alpha^{k+1}).
-\]
+$$
 
 ::: pf-proof
 standard cell structure and cup product structure of $\RP^k$.
@@ -164,9 +164,9 @@ $k = 2n+1$.
 
 ::: pf-step
 By the ring homomorphism property of induced maps in cohomology:
-\[
+$$
 \bar{f}^*(\alpha^k) = (\bar{f}^*(\alpha))^k = \alpha^k \neq 0.
-\]
+$$
 
 ::: pf-proof
 Step [](#s2-7){.pf-ref} and cup product preservation.
@@ -185,9 +185,9 @@ $\bar{f}^*(\alpha^k) = \deg_2(\bar{f}) \alpha^k$.
 
 ::: pf-step
 Since $p: S^k \to \RP^k$ is a 2-fold cover and $p \circ f = \bar{f} \circ p$, the degree of $f$ modulo 2 equals $\deg_2(\bar{f})$:
-\[
+$$
 \deg(f) \equiv \deg_2(\bar{f}) \equiv 1 \pmod 2.
-\]
+$$
 
 ::: pf-proof
 covering transfer and mod 2 degree reduction.

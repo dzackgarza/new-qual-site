@@ -32,28 +32,28 @@ audit:
 ::: pf-step
 
 The polynomial
-\[
+$$
 f(x)=x^5+x^2+1\in\FF_2[x]
-\]
+$$
 is irreducible.
 
 ::: pf-proof
 
-A reducible polynomial of degree \(5\) must have an irreducible factor of degree \(1\) or \(2\). We have
-\[
+A reducible polynomial of degree $5$ must have an irreducible factor of degree $1$ or $2$. We have
+$$
 f(0)=1,
 \qquad
 f(1)=1+1+1=1,
-\]
-so \(f\) has no linear factor. The only monic irreducible quadratic over \(\FF_2\) is
-\[
+$$
+so $f$ has no linear factor. The only monic irreducible quadratic over $\FF_2$ is
+$$
 q(x)=x^2+x+1.
-\]
-Modulo \(q\), we have \(x^3=1\), hence \(x^5=x^2\), so
-\[
+$$
+Modulo $q$, we have $x^3=1$, hence $x^5=x^2$, so
+$$
 f(x)\equiv x^2+x^2+1=1\pmod q.
-\]
-Thus \(q\nmid f\). Therefore \(f\) is irreducible.
+$$
+Thus $q\nmid f$. Therefore $f$ is irreducible.
 
 :::
 
@@ -62,14 +62,14 @@ Thus \(q\nmid f\). Therefore \(f\) is irreducible.
 ::: pf-step
 
 Consequently
-\[
+$$
 F=\FF_2[x]/(f(x))
-\]
-is a field with \(2^5=32\) elements.
+$$
+is a field with $2^5=32$ elements.
 
 ::: pf-proof
 
-Since \(f\) is irreducible of degree \(5\), the quotient is a field and has \(2^5\) elements as a \(5\)-dimensional vector space over \(\FF_2\).
+Since $f$ is irreducible of degree $5$, the quotient is a field and has $2^5$ elements as a $5$-dimensional vector space over $\FF_2$.
 
 :::
 
@@ -77,15 +77,15 @@ Since \(f\) is irreducible of degree \(5\), the quotient is a field and has \(2^
 
 ::: {.pf-step #s3}
 
-Let \(\alpha\) denote the image of \(x\) in \(F\). Then \(\alpha\) has multiplicative order \(31\).
+Let $\alpha$ denote the image of $x$ in $F$. Then $\alpha$ has multiplicative order $31$.
 
 ::: pf-proof
 
-The multiplicative group \(F^\times\) has
-\[
+The multiplicative group $F^\times$ has
+$$
 |F^\times|=32-1=31
-\]
-elements. Since \(31\) is prime, every nonidentity element of \(F^\times\) has order \(31\). The element \(\alpha\) is nonzero because \(f(0)\ne0\), and \(\alpha\ne1\) because \(f(1)\ne0\). Hence \(\alpha\) has order \(31\).
+$$
+elements. Since $31$ is prime, every nonidentity element of $F^\times$ has order $31$. The element $\alpha$ is nonzero because $f(0)\ne0$, and $\alpha\ne1$ because $f(1)\ne0$. Hence $\alpha$ has order $31$.
 
 :::
 
@@ -94,11 +94,11 @@ elements. Since \(31\) is prime, every nonidentity element of \(F^\times\) has o
 ::: pf-step
 
 With respect to the basis
-\[
+$$
 1,\alpha,\alpha^2,\alpha^3,\alpha^4
-\]
-of \(F\) over \(\FF_2\), multiplication by \(\alpha\) is represented by
-\[
+$$
+of $F$ over $\FF_2$, multiplication by $\alpha$ is represented by
+$$
 M=
 \begin{pmatrix}
 0&0&0&0&1\\
@@ -107,12 +107,12 @@ M=
 0&0&1&0&0\\
 0&0&0&1&0
 \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 
 The first four columns record
-\[
+$$
 \alpha\cdot1=\alpha,
 \quad
 \alpha\cdot\alpha=\alpha^2,
@@ -120,15 +120,15 @@ The first four columns record
 \alpha\cdot\alpha^2=\alpha^3,
 \quad
 \alpha\cdot\alpha^3=\alpha^4.
-\]
-Since \(f(\alpha)=0\),
-\[
+$$
+Since $f(\alpha)=0$,
+$$
 \alpha^5+\alpha^2+1=0,
-\]
-so in characteristic \(2\),
-\[
+$$
+so in characteristic $2$,
+$$
 \alpha^5=\alpha^2+1,
-\]
+$$
 which gives the last column.
 
 :::
@@ -137,23 +137,23 @@ which gives the last column.
 
 ::: pf-step
 
-The matrix \(M\) has order \(31\).
+The matrix $M$ has order $31$.
 
 ::: pf-proof
 
-The linear transformation represented by \(M\) is multiplication by \(\alpha\). Therefore \(M^k\) represents multiplication by \(\alpha^k\). By step [](#s3){.pf-ref},
-\[
+The linear transformation represented by $M$ is multiplication by $\alpha$. Therefore $M^k$ represents multiplication by $\alpha^k$. By step [](#s3){.pf-ref},
+$$
 \alpha^{31}=1
 \quad\text{and}\quad
 \alpha\ne1,
-\]
+$$
 so
-\[
+$$
 M^{31}=I
 \quad\text{and}\quad
 M\ne I.
-\]
-As \(31\) is prime, the order of \(M\) is exactly \(31\).
+$$
+As $31$ is prime, the order of $M$ is exactly $31$.
 
 :::
 

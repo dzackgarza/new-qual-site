@@ -33,9 +33,9 @@ Definition and continuity of the commutator map:
 
 ::: pf-step
 Define the commutator mapping $\phi: \overline{G} \times \overline{G} \to \overline{G}$ by:
-\[
+$$
 \phi(x, y) = [x, y] = x y x^{-1} y^{-1}.
-\]
+$$
 Because $\overline{G}$ is a topological group, the multiplication and inversion operations are continuous, so $\phi$ is continuous.
 :::
 
@@ -54,17 +54,17 @@ Fiber containment and discreteness:
 
 ::: pf-step
 For any $(x, y) \in \overline{G} \times \overline{G}$, apply the covering homomorphism $p$:
-\[
+$$
 p(\phi(x, y)) = p\left(x y x^{-1} y^{-1}\right) = p(x) p(y) p(x)^{-1} p(y)^{-1} = [p(x), p(y)].
-\]
+$$
 :::
 
 ::: pf-step
 Because $G$ is abelian, $[p(x), p(y)] = e_G$ for all $x, y \in \overline{G}$.
 Therefore:
-\[
+$$
 \phi(\overline{G} \times \overline{G}) \subseteq p^{-1}(e_G) = \ker(p).
-\]
+$$
 :::
 
 ::: pf-step
@@ -86,9 +86,9 @@ The connected set $\phi(\overline{G} \times \overline{G})$ is contained in the d
 
 ::: pf-step
 Evaluating at the identity $(e_{\overline{G}}, e_{\overline{G}})$:
-\[
+$$
 \phi\left(e_{\overline{G}}, e_{\overline{G}}\right) = e_{\overline{G}}.
-\]
+$$
 Hence $\phi(x, y) = e_{\overline{G}}$ for all $x, y \in \overline{G}$.
 :::
 

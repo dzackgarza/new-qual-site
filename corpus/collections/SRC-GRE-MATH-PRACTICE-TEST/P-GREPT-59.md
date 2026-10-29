@@ -37,9 +37,9 @@ $1+\omega+\omega^2+\omega^3+\omega^4=0$.
 ::: pf-proof
 
 Since $\omega=e^{2\pi i/5}$, one has $\omega^5=1$ and $\omega\neq 1$. Thus
-\[
+$$
 0=\omega^5-1=(\omega-1)(\omega^4+\omega^3+\omega^2+\omega+1).
-\]
+$$
 Because $\omega-1\neq 0$, the second factor must vanish.
 
 :::
@@ -67,7 +67,7 @@ $f(\omega+\omega^{-1})=\boxed{1}$.
 ::: pf-proof
 
 Expanding and then applying step [](#s1-2){.pf-ref} gives
-\[
+$$
 \begin{aligned}
 f(\omega+\omega^{-1})
 &=(\omega+\omega^{-1})^2+(\omega+\omega^{-1})\\
@@ -75,7 +75,7 @@ f(\omega+\omega^{-1})
 &=(\omega^2+\omega+1+\omega^{-1}+\omega^{-2})+1\\
 &=1.
 \end{aligned}
-\]
+$$
 Hence the correct choice is (D).
 
 :::

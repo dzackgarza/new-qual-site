@@ -27,33 +27,33 @@ No. There are indecomposable $G$-modules over $\FF_3$ that are reducible.
 
 ::: {.pf-step #example-module-v}
 Let $V=\FF_3^2$ with basis $e_1,e_2$. Let the $C_4$ and $C_2$ factors act trivially, and let a generator $g$ of the $C_3$ factor act by
-\[
+$$
 J=
 \begin{pmatrix}
 1&1\\
 0&1
 \end{pmatrix}.
-\]
+$$
 This defines a $G$-module.
 
 ::: pf-proof
 Write $J=I+N$ with
-\[
+$$
 N=
 \begin{pmatrix}
 0&1\\
 0&0
 \end{pmatrix},
 \qquad N^2=0.
-\]
+$$
 In characteristic $3$,
-\[
+$$
 J^3=(I+N)^3=I+3N+3N^2+N^3=I.
-\]
+$$
 Hence the assignment of the generator of $C_3$ to $J$ respects the relation $g^3=1$. The other two factors act trivially, so the three factor actions commute and define a representation of
-\[
+$$
 C_4\times C_3\times C_2.
-\]
+$$
 :::
 
 :::
@@ -63,9 +63,9 @@ The module $V$ is reducible.
 
 ::: pf-proof
 The line
-\[
+$$
 L=\FF_3 e_1
-\]
+$$
 is fixed by $J$, since $Je_1=e_1$. The other two group factors act trivially, so $L$ is a nonzero proper $G$-submodule of $V$.
 :::
 
@@ -76,9 +76,9 @@ The only one-dimensional $J$-invariant subspace of $V$ is $L=\FF_3e_1$.
 
 ::: pf-proof
 If a one-dimensional subspace $M=\FF_3v$ is $J$-invariant, then $v$ is an eigenvector of $J$. Since
-\[
+$$
 J-I=N
-\]
+$$
 has kernel exactly $\FF_3e_1$, the eigenspace for the only eigenvalue $1$ is precisely $L$. Thus $M=L$.
 :::
 

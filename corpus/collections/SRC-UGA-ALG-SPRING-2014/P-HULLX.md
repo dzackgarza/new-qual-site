@@ -32,9 +32,9 @@ Assume $n$ is a positive integer, as required for $p^m n$ to be a group order.
 ::: {.pf-step #s1-1}
 
 An admissible bound is
-\[
+$$
 \boxed{k(p,n)=\lfloor\log_p((n-1)!)\rfloor+1}.
-\]
+$$
 
 
 ::: pf-proof

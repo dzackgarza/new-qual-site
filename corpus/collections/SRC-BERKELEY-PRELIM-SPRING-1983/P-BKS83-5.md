@@ -23,11 +23,11 @@ audit:
 
 ::: {.problem}
 Find all real-valued solutions $y:\RR\to\RR$ of
-\[
+$$
 \frac{dy}{dx}=\sqrt{y(y-2)},
 \qquad
 y(0)=0.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -47,20 +47,20 @@ The matrix $x$ has $p$-power order if and only if $N$ is nilpotent.
 ::: pf-proof
 
 In characteristic $p$, commuting matrices $A,B$ satisfy
-\[
+$$
 (A+B)^{p^r}=A^{p^r}+B^{p^r}\qquad(r\ge0).
-\]
+$$
 For $r=1$ this follows from the binomial theorem and the divisibility of $\binom pj$ by $p$ for $0<j<p$; iteration proves the formula for all $r$.
 In particular,
-\[
+$$
 (x-I)^{p^r}=x^{p^r}-I.
-\]
+$$
 If $x$ has order $p^r$, this shows $N^{p^r}=0$.
 Conversely, if $N^s=0$, choose $r\ge0$ with $p^r\ge s$.
 Then
-\[
+$$
 x^{p^r}=(I+N)^{p^r}=I+N^{p^r}=I,
-\]
+$$
 so the order of $x$ divides $p^r$ and is a power of $p$.
 This includes the identity, whose order is $1=p^0$, and proves part (a).
 
@@ -75,15 +75,15 @@ The correspondence $N\mapsto I+N$ induces a bijection from similarity classes of
 ::: pf-proof
 
 For nilpotent $N$ with $N^s=0$, the finite sum
-\[
+$$
 I-N+N^2-\cdots+(-1)^{s-1}N^{s-1}
-\]
+$$
 is an inverse of $I+N$.
 Thus step [](#s1){.pf-ref} applies and identifies exactly the $p$-elements.
 For every invertible matrix $S$,
-\[
+$$
 S(I+N)S^{-1}=I+SNS^{-1}.
-\]
+$$
 Consequently $I+N$ and $I+N'$ are conjugate if and only if $N$ and $N'$ are similar.
 
 :::
@@ -98,19 +98,19 @@ Similarity classes of nilpotent $n\times n$ matrices over $\FF_p$ are indexed by
 
 The minimal polynomial of a nilpotent matrix is a power of $t$, which splits over $\FF_p$.
 Its Jordan form therefore exists over $\FF_p$, not merely over an extension field, and consists of blocks
-\[
+$$
 J_{\lambda_1}(0),\ldots,J_{\lambda_k}(0),
 \qquad \lambda_1\ge\cdots\ge\lambda_k\ge1,
 \qquad \sum_i\lambda_i=n.
-\]
+$$
 Conversely, every such partition defines a nilpotent matrix by taking this block diagonal sum.
 
 To see explicitly that distinct partitions cannot become similar over $\FF_p$, put $d_j=\dim\ker N^j$, with $d_0=0$.
 For these blocks,
-\[
+$$
 d_j=\sum_i\min(j,\lambda_i),\qquad
 d_j-d_{j-1}=\#\{i:\lambda_i\ge j\}.
-\]
+$$
 The similarity-invariant numbers $d_j$ recover the number of blocks of each size, hence the partition.
 Matrices with the same partition have the same Jordan form and are similar.
 

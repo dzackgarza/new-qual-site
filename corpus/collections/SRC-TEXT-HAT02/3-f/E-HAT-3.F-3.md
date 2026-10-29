@@ -70,9 +70,9 @@ Vanishing of $\operatorname{Ext}(A, \QQ)$ via free resolutions:
 ::: pf-step
 
 Let $A$ be any abelian group, and choose a free presentation (resolution):
-\[
+$$
 0 \longrightarrow F_1 \xrightarrow{\;d\;} F_0 \longrightarrow A \longrightarrow 0,
-\]
+$$
 where $F_0, F_1$ are free abelian groups.
 
 ::: pf-proof
@@ -86,9 +86,9 @@ every abelian group is a quotient of a free abelian group with free kernel.
 ::: pf-step
 
 Applying the contravariant functor $\operatorname{Hom}_\ZZ(-, \QQ)$ yields the long exact sequence:
-\[
+$$
 0 \longrightarrow \operatorname{Hom}(A, \QQ) \longrightarrow \operatorname{Hom}(F_0, \QQ) \xrightarrow{\;d^* \;} \operatorname{Hom}(F_1, \QQ) \longrightarrow \operatorname{Ext}^1(A, \QQ) \longrightarrow 0.
-\]
+$$
 
 ::: pf-proof
 
@@ -114,9 +114,9 @@ definition of injective module.
 ::: pf-step
 
 By exactness:
-\[
+$$
 \operatorname{Ext}^1(A, \QQ) \cong \operatorname{coker}(d^*) = \operatorname{Hom}(F_1, \QQ) / \operatorname{Im}(d^*) = 0.
-\]
+$$
 
 ::: pf-proof
 
@@ -140,9 +140,9 @@ Alternative topological perspective via Moore spaces:
 
 Let $X = M(A, n)$ be a Moore space with $\widetilde{H}_n(X) \cong A$ and $\widetilde{H}_i(X) = 0$ for all $i \neq n$.
 By the Universal Coefficient Theorem for cohomology with $\QQ$ coefficients:
-\[
+$$
 0 \longrightarrow \operatorname{Ext}(H_n(X), \QQ) \longrightarrow H^{n+1}(X; \QQ) \longrightarrow \operatorname{Hom}(H_{n+1}(X), \QQ) \longrightarrow 0.
-\]
+$$
 
 ::: pf-proof
 

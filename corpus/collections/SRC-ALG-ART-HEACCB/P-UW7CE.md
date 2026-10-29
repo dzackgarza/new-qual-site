@@ -35,24 +35,24 @@ Show that $A$ is similar to a diagonal matrix, and exhibit an explicit diagonal 
 ::: {.pf-step #s1}
 
 The vector space decomposes as
-\[
+$$
 \CC^n=\operatorname{im}A\oplus\ker A.
-\]
+$$
 
 ::: pf-proof
 
 For every vector $v$,
-\[
+$$
 v=Av+(v-Av).
-\]
+$$
 The first term lies in $\operatorname{im}A$, while
-\[
+$$
 A(v-Av)=Av-A^2v=0,
-\]
+$$
 so the second lies in $\ker A$. If $w\in\operatorname{im}A\cap\ker A$, write $w=Au$; then
-\[
+$$
 w=Au=A^2u=Aw=0,
-\]
+$$
 so the sum is direct.
 
 :::
@@ -66,9 +66,9 @@ The map $A$ acts as the identity on $\operatorname{im}A$ and as zero on $\ker A$
 ::: pf-proof
 
 If $w=Av\in\operatorname{im}A$, then
-\[
+$$
 Aw=A^2v=Av=w.
-\]
+$$
 If $w\in\ker A$, then $Aw=0$ by definition.
 
 :::
@@ -90,13 +90,13 @@ This follows from the direct-sum decomposition in step [](#s1){.pf-ref}. The dim
 ::: {.pf-step #s4}
 
 In the basis from step [](#s3){.pf-ref}, the matrix of $A$ is
-\[
+$$
 \operatorname{diag}(I_r,0_{n-r}).
-\]
+$$
 Hence
-\[
+$$
 \boxed{A\sim\operatorname{diag}(\underbrace{1,\dots,1}_{r},\underbrace{0,\dots,0}_{n-r})}.
-\]
+$$
 
 ::: pf-proof
 

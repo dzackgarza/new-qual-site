@@ -25,15 +25,15 @@ Give an infinite space satisfying each requested combination of properties:
 ::: {.solution}
 
 Write
-\[
+$$
 S_\Omega
-\]
+$$
 for the long ray without its final endpoint and
-\[
+$$
 \overline{S_\Omega}
 =
 S_\Omega\cup\{\Omega\}
-\]
+$$
 for the closed long ray.
 
 ::: pf
@@ -41,11 +41,11 @@ for the closed long ray.
 ::: {.pf-step #s1-1}
 
 For item (1), take
-\[
+$$
 \boxed{
 X_1=\overline{S_\Omega}.
 }
-\]
+$$
 
 
 ::: pf-proof
@@ -53,26 +53,26 @@ X_1=\overline{S_\Omega}.
 The preceding problem establishes that the closed long ray is connected.
 
 It is not path-connected because the final point
-\[
+$$
 \Omega
-\]
+$$
 cannot be joined by a path to any point below it: a path image is separable, while any connected subset containing both a point
-\[
+$$
 x<\Omega
-\]
+$$
 and
-\[
+$$
 \Omega
-\]
+$$
 must contain the nonseparable interval
-\[
+$$
 [x,\Omega].
-\]
+$$
 
 It is not metrizable because it is not first countable at
-\[
+$$
 \Omega,
-\]
+$$
 whereas every metric space is first countable.
 
 Thus $X_1$ is infinite, connected, neither path-connected nor metrizable.
@@ -84,9 +84,9 @@ Thus $X_1$ is infinite, connected, neither path-connected nor metrizable.
 ::: {.pf-step #s1-2}
 
 The open long ray
-\[
+$$
 S_\Omega
-\]
+$$
 is Hausdorff, normal, and first countable.
 
 
@@ -95,20 +95,20 @@ is Hausdorff, normal, and first countable.
 It is a linearly ordered topological space, hence Hausdorff and hereditarily normal.
 
 Every point of
-\[
+$$
 S_\Omega
-\]
+$$
 lies below a countable ordinal stage.
 Locally the long ray is homeomorphic to an interval in
-\[
+$$
 \RR
-\]
+$$
 (with a half-interval at its initial endpoint).
 Therefore every point has a countable neighborhood base.
 Hence
-\[
+$$
 S_\Omega
-\]
+$$
 is first countable.
 
 :::
@@ -123,21 +123,21 @@ The open long ray is not compact.
 ::: pf-proof
 
 For each
-\[
+$$
 \alpha<\omega_1,
-\]
+$$
 let
-\[
+$$
 U_\alpha
-\]
+$$
 be the initial open segment consisting of points whose ordinal coordinate is less than
-\[
+$$
 \alpha+1.
-\]
+$$
 These sets form an open cover of
-\[
+$$
 S_\Omega.
-\]
+$$
 Any finite subfamily has a largest ordinal index and therefore covers only a bounded initial segment of the long ray.
 Thus there is no finite subcover.
 
@@ -148,35 +148,35 @@ Thus there is no finite subcover.
 ::: {.pf-step #s1-4}
 
 Every sequence in
-\[
+$$
 S_\Omega
-\]
+$$
 has a convergent subsequence.
 
 
 ::: pf-proof
 
 Let
-\[
+$$
 (x_n)
-\]
+$$
 be a sequence in the long ray.
 The set of ordinal coordinates appearing among the $x_n$ is countable, so its supremum is some countable ordinal
-\[
+$$
 \beta<\omega_1.
-\]
+$$
 Hence the whole sequence lies in a closed bounded interval
-\[
+$$
 [0,b]
 \subset S_\Omega
-\]
+$$
 for a point $b$ above the $\beta$th stage.
 
 Such a closed order interval is compact and metrizable because it involves only countably many ordinal stages.
 Therefore
-\[
+$$
 (x_n)
-\]
+$$
 has a convergent subsequence.
 
 :::
@@ -191,9 +191,9 @@ The open long ray is not metrizable.
 ::: pf-proof
 
 Suppose
-\[
+$$
 S_\Omega
-\]
+$$
 were metrizable.
 By step [](#s1-4){.pf-ref} it would be sequentially compact.
 For metric spaces, sequential compactness implies compactness.
@@ -206,7 +206,7 @@ This contradicts step [](#s1-3){.pf-ref}. Thus the long ray is not metrizable.
 ::: {.pf-step #s1-6}
 
 For item (2), take the topological disjoint union
-\[
+$$
 \boxed{
 X_2
 =
@@ -214,7 +214,7 @@ S_\Omega
 \sqcup
 S_\Omega.
 }
-\]
+$$
 
 
 ::: pf-proof
@@ -224,9 +224,9 @@ Each summand is Hausdorff, normal, and first countable by step [](#s1-2){.pf-ref
 The space $X_2$ is disconnected because it is the union of two nonempty disjoint clopen summands.
 
 If $X_2$ were metrizable, each clopen subspace
-\[
+$$
 S_\Omega
-\]
+$$
 would be metrizable.
 This contradicts step [](#s1-5){.pf-ref}.
 
@@ -239,35 +239,35 @@ Hence $X_2$ is normal, Hausdorff, first countable, neither metrizable nor connec
 ::: {.pf-step #s1-7}
 
 For item (3), take
-\[
+$$
 \boxed{
 X_3=\RR
 }
-\]
+$$
 with its usual topology.
 
 
 ::: pf-proof
 
 The Euclidean metric makes
-\[
+$$
 \RR
-\]
+$$
 metrizable.
 Every metric space is first countable.
 
 A countable basis is given by intervals
-\[
+$$
 (p,q),
 \qquad
 p,q\in\QQ,
 \quad
 p<q.
-\]
+$$
 Thus
-\[
+$$
 \RR
-\]
+$$
 is also second countable.
 
 :::
@@ -277,7 +277,7 @@ is also second countable.
 ::: {.pf-step #s1-8}
 
 For item (4), take
-\[
+$$
 \boxed{
 X_4
 =
@@ -285,11 +285,11 @@ X_4
 \sqcup
 \NN,
 }
-\]
+$$
 where
-\[
+$$
 \NN
-\]
+$$
 has the discrete topology.
 
 
@@ -302,15 +302,15 @@ Hence $X_4$ is completely regular.
 It is disconnected because the two summands are nonempty clopen subsets.
 
 It is not first countable because the point
-\[
+$$
 \Omega
-\]
+$$
 in the closed-long-ray summand has no countable local base.
 A local base in the topological sum would restrict to one in that clopen summand.
 
 Finally, $X_4$ is not compact.
 The family
-\[
+$$
 \left\{
 \overline{S_\Omega}
 \right\}
@@ -318,7 +318,7 @@ The family
 \left\{
 \{n\}:n\in\NN
 \right\}
-\]
+$$
 is an open cover of $X_4$ with no finite subcover.
 
 :::
@@ -328,7 +328,7 @@ is an open cover of $X_4$ with no finite subcover.
 ::: {.pf-step #s1-9}
 
 Thus the four requested examples are
-\[
+$$
 \boxed{
 \begin{array}{c|l}
 1&\overline{S_\Omega},\\
@@ -337,7 +337,7 @@ Thus the four requested examples are
 4&\overline{S_\Omega}\sqcup\NN.
 \end{array}
 }
-\]
+$$
 
 
 ::: pf-proof

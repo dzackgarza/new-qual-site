@@ -38,9 +38,9 @@ Part (a): The discontinuity set is $F_\sigma$:
 ::: pf-step
 
 For a function $f: [0, 1] \to \RR$, define the oscillation of $f$ at $x \in [0, 1]$ by:
-\[
+$$
 \omega_f(x) = \inf_{r > 0} \operatorname{diam} f(B_r(x) \cap [0, 1]) = \inf_{r > 0} \sup \big\{|f(y) - f(z)| : y, z \in B_r(x) \cap [0, 1]\big\}.
-\]
+$$
 
 ::: pf-proof
 
@@ -54,9 +54,9 @@ definition of oscillation.
 
 $f$ is continuous at $x$ if and only if $\omega_f(x) = 0$.
 Thus the set of discontinuity points $D$ is:
-\[
+$$
 D = \{x \in [0, 1] \mid \omega_f(x) > 0\} = \bigcup_{n=1}^\infty F_n, \quad \text{where } F_n = \left\{x \in [0, 1] \;\middle|\; \omega_f(x) \ge \frac{1}{n}\right\}.
-\]
+$$
 
 ::: pf-proof
 
@@ -71,9 +71,9 @@ $\omega_f(x) > 0 \iff \exists n \ge 1 \text{ with } \omega_f(x) \ge 1/n$.
 We show each $F_n$ is closed by showing its complement $U_n = [0, 1] \setminus F_n = \{x \in [0, 1] \mid \omega_f(x) < 1/n\}$ is open in $[0, 1]$:
 If $x \in U_n$, there exists $r > 0$ such that $\operatorname{diam} f(B_r(x) \cap [0, 1]) < 1/n$.
 For any $y \in B_{r/2}(x) \cap [0, 1]$, $B_{r/2}(y) \subseteq B_r(x)$, so:
-\[
+$$
 \omega_f(y) \le \operatorname{diam} f(B_{r/2}(y) \cap [0, 1]) \le \operatorname{diam} f(B_r(x) \cap [0, 1]) < \frac{1}{n}.
-\]
+$$
 Thus $B_{r/2}(x) \cap [0, 1] \subseteq U_n$, so $U_n$ is open in $[0, 1]$.
 
 ::: pf-proof
@@ -159,9 +159,9 @@ singletons have empty interior in $[0, 1]$.
 ::: pf-step
 
 Since $[0, 1]$ is a complete metric space, the Baire Category Theorem implies that the countable intersection of dense open subsets:
-\[
+$$
 \left( \bigcap_{n=1}^\infty V_n \right) \cap \left( \bigcap_{k=1}^\infty W_k \right) = (\QQ \cap [0, 1]) \cap \big([0, 1] \setminus (\QQ \cap [0, 1])\big) = \emptyset
-\]
+$$
 must be dense in $[0, 1]$, and in particular non-empty.
 This contradicts the fact that the intersection is empty.
 

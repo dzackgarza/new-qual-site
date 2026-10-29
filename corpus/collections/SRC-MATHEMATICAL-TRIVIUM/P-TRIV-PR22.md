@@ -26,19 +26,19 @@ Assume the flock was not mixed with other groups of birds.
 ::: {.solution}
 
 Let $N$ be the unknown total population size. Necessarily
-\[
+$$
 N\geq M+n-X.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 Conditional on $N$, the number $X$ of marked birds in the sample has the hypergeometric likelihood
-\[
+$$
 L(N)=P_N(X)
 =\frac{\binom MX\binom{N-M}{n-X}}{\binom Nn}.
-\]
+$$
 
 
 ::: pf-proof
@@ -52,22 +52,22 @@ Among the $N$ birds, $M$ are marked and $N-M$ are unmarked. A sample of $n$ bird
 ::: {.pf-step #s1-2}
 
 For admissible consecutive population sizes,
-\[
+$$
 \frac{L(N+1)}{L(N)}
 =\frac{(N+1-M)(N+1-n)}{(N+1)(N+1-M-n+X)}.
-\]
+$$
 
 
 ::: pf-proof
 
 The factor $\binom MX$ cancels. Using
-\[
+$$
 \frac{\binom{r+1}{k}}{\binom rk}=\frac{r+1}{r+1-k}
-\]
+$$
 for the numerator and
-\[
+$$
 \frac{\binom Nn}{\binom{N+1}n}=\frac{N+1-n}{N+1}
-\]
+$$
 for the denominator gives the displayed ratio.
 
 :::
@@ -77,22 +77,22 @@ for the denominator gives the displayed ratio.
 ::: {.pf-step #s1-3}
 
 The likelihood is nondecreasing from $N$ to $N+1$ exactly when
-\[
+$$
 NX\leq Mn-X.
-\]
+$$
 
 
 ::: pf-proof
 
 Comparing the ratio in step [](#s1-2){.pf-ref} with $1$ gives
-\[
+$$
 (N+1-M)(N+1-n)
 \geq(N+1)(N+1-M-n+X).
-\]
+$$
 Expanding and cancelling common terms leaves
-\[
+$$
 Mn-X(N+1)\geq0,
-\]
+$$
 which is $NX\leq Mn-X$.
 
 :::
@@ -102,13 +102,13 @@ which is $NX\leq Mn-X$.
 ::: {.pf-step #s1-4}
 
 If $X>0$, the maximum-likelihood population size is therefore the integer nearest the transition point $Mn/X$, with the exact rule
-\[
+$$
 \boxed{\widehat N=\left\lfloor\frac{Mn}{X}\right\rfloor}
-\]
+$$
 unless $Mn/X$ is an integer, in which case both
-\[
+$$
 \boxed{\widehat N=\frac{Mn}{X}-1\quad\text{and}\quad\widehat N=\frac{Mn}{X}}
-\]
+$$
 maximize the likelihood.
 
 
@@ -123,9 +123,9 @@ Step [](#s1-3){.pf-ref} says $L(N+1)\geq L(N)$ precisely for $N+1\leq Mn/X$. Thu
 ::: {.pf-step #s1-5}
 
 In the usual large-population interpretation, this is the capture--recapture estimate
-\[
+$$
 \boxed{N\approx\frac{Mn}{X}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -144,10 +144,10 @@ If $X=0$, there is no finite maximum-likelihood estimate of $N$.
 ::: pf-proof
 
 With no recaptured marked birds, step [](#s1-2){.pf-ref} becomes
-\[
+$$
 \frac{L(N+1)}{L(N)}
 =\frac{(N+1-M)(N+1-n)}{(N+1)(N+1-M-n)}>1
-\]
+$$
 for admissible finite $N$, so the likelihood increases toward its supremum as $N\to\infty$.
 
 :::

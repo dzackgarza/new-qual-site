@@ -27,12 +27,12 @@ audit:
 
 ::: {.problem}
 Let $\varphi\in C^1(\RR)$ and suppose
-\[
+$$
 \varphi(x)\to a,
 \qquad
 \varphi'(x)\to b
 \qquad(x\to\infty).
-\]
+$$
 Prove or give a counterexample: must $b=0$?
 :::
 

@@ -48,22 +48,22 @@ A nonzero solution would have $|\lambda|=1$.
 
 ::: pf-proof
 Suppose
-\[
+$$
 Uf=\lambda f,
 \qquad\text{that is,}\qquad
 f(x-1)=\lambda f(x)
 \quad\text{a.e.}
-\]
+$$
 The change of variable $y=x-1$ gives
 $\|Uf\|_2^2=\int_{\RR}|f(x-1)|^2\,dx=\|f\|_2^2$.
 Thus $U$ is an isometry on $L^2(\RR)$, so
-\[
+$$
 \|f\|_2=\|Uf\|_2=|\lambda|\,\|f\|_2.
-\]
+$$
 Thus either $f=0$ in $L^2$, in which case there is nothing to prove, or else
-\[
+$$
 |\lambda|=1.
-\]
+$$
 Since $\lambda\in\RR$, a nonzero eigenvector could therefore occur only for $\lambda=1$ or $\lambda=-1$.
 :::
 
@@ -74,31 +74,31 @@ Either remaining value forces the squared modulus to have infinite integral unle
 
 ::: pf-proof
 In either case,
-\[
+$$
 |f(x-1)|=|f(x)|
 \quad\text{a.e.},
-\]
+$$
 so $|f|^2$ is $1$-periodic almost everywhere. Let
-\[
+$$
 a:=\int_0^1 |f(x)|^2\,dx.
-\]
+$$
 For each integer $k$, iteration of the almost-everywhere
 periodicity gives $|f(x+k)|^2=|f(x)|^2$ almost everywhere;
 only finitely many translates of the exceptional null
 set are needed for that $k$. Translation invariance therefore gives
-\[
+$$
 \int_k^{k+1}|f(x)|^2\,dx=a.
-\]
+$$
 Hence
-\[
+$$
 \|f\|_2^2
 =\sum_{k\in\ZZ}\int_k^{k+1}|f(x)|^2\,dx
 =\sum_{k\in\ZZ}a.
-\]
+$$
 Because $f\in L^2(\RR)$, this sum is finite. Therefore $a=0$, and consequently $f=0$ almost everywhere on every interval $[k,k+1]$. Thus
-\[
+$$
 f=0\qquad\text{a.e. on }\RR.
-\]
+$$
 :::
 
 :::

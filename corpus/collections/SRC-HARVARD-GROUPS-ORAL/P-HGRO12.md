@@ -39,9 +39,9 @@ $6$.
 ::: pf-proof
 
 By the first isomorphism theorem,
-\[
+$$
 |A_4:\ker f|=|\operatorname{im}f|=2,
-\]
+$$
 so $|\ker f|=12/2=6$. Every kernel is normal.
 
 :::

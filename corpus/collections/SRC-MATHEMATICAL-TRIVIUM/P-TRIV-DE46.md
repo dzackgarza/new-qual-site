@@ -22,9 +22,9 @@ Consider an semi-infinite $( x \ge 0 )$ metal rod with conductivity κ. Find the
 ::: {.solution}
 
 Take the heat equation to be
-\[
+$$
 u_t=\kappa u_{xx},\qquad x>0, t>0.
-\]
+$$
 The source does not state a boundary condition at $x=0$, so the half-line problem is not uniquely determined. For an insulated endpoint, $u_x(0,t)=0$, the solution is as follows.
 
 ::: pf
@@ -32,10 +32,10 @@ The source does not state a boundary condition at $x=0$, so the half-line proble
 ::: pf-step
 
 The whole-line heat kernel is
-\[
+$$
 K(x,t)=\frac1{\sqrt{4\pi\kappa t}}
 \exp\left(-\frac{x^2}{4\kappa t}\right).
-\]
+$$
 
 
 ::: pf-proof
@@ -49,9 +49,9 @@ Direct differentiation verifies $K_t=\kappa K_{xx}$. Also $\int_{\RR}K(x,t)\,dx=
 ::: {.pf-step #s1-2}
 
 The Neumann heat kernel on the half-line for a source at $\xi\geq0$ is
-\[
+$$
 K_N(x,\xi,t)=K(x-\xi,t)+K(x+\xi,t).
-\]
+$$
 
 
 ::: pf-proof
@@ -65,9 +65,9 @@ This is the even-image construction. Each summand solves the heat equation for $
 ::: {.pf-step #s1-3}
 
 For a source at the endpoint $\xi=0$,
-\[
+$$
 K_N(x,0,t)=2K(x,t).
-\]
+$$
 
 
 ::: pf-proof
@@ -81,20 +81,20 @@ Set $\xi=0$ in step [](#s1-2){.pf-ref}. The factor $2$ is also required by mass 
 ::: {.pf-step #s1-4}
 
 Thus for the insulated half-line,
-\[
+$$
 \boxed{
 u(x,t)=\frac{u_0}{\sqrt{\pi\kappa t}}
 \exp\left(-\frac{x^2}{4\kappa t}\right),
 \qquad x\geq0, t>0.}
-\]
+$$
 
 
 ::: pf-proof
 
 Multiply step [](#s1-3){.pf-ref} by the source strength $u_0$. The resulting function satisfies $u_t=\kappa u_{xx}$, has $u_x(0,t)=0$, and has total heat
-\[
+$$
 \int_0^\infty u(x,t)\,dx=u_0.
-\]
+$$
 For every smooth compactly supported test function on $[0,\infty)$, the same change of variables as for the heat-kernel approximate identity gives convergence to $u_0\phi(0)$ as $t\to0^+$, i.e. to $u_0\delta_0$.
 
 :::

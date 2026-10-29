@@ -32,41 +32,41 @@ Show that $X$ and $Y$ have isomorphic cohomology rings with $\ZZ$ coefficients b
 
 ::: {.solution}
 Give $X$ the CW structure with one cell in dimensions $0,2,3,4$. The cellular boundary
-\[
+$$
 C_3(X;\ZZ)\longrightarrow C_2(X;\ZZ)
-\]
+$$
 is multiplication by $p$, while the other positive-dimensional cellular boundaries are zero. Hence
-\[
+$$
 H_2(X;\ZZ)\cong\ZZ_p,\qquad H_4(X;\ZZ)\cong\ZZ,
-\]
+$$
 and all other reduced integral homology groups vanish. The same is true for
-\[
+$$
 Y=M(\ZZ_p,2)\vee S^4.
-\]
+$$
 By the universal coefficient theorem,
-\[
+$$
 \widetilde H^3(X;\ZZ)\cong\ZZ_p,\qquad
 H^4(X;\ZZ)\cong\ZZ,
-\]
+$$
 with all other positive-degree integral cohomology zero, and identically for $Y$. Degree reasons force every product of positive-degree integral classes to vanish, so the integral cohomology rings are isomorphic.
 
 Now use $\ZZ_p$ coefficients. Since multiplication by $p$ becomes zero, both spaces have one-dimensional cohomology in degrees $2,3,4$. Let
-\[
+$$
 x\in H^2(X;\ZZ_p)
-\]
+$$
 be the class restricting to the standard generator of $H^2(\CP^2;\ZZ_p)$. The attached $3$-cell does not alter the $4$-cell cup-product calculation, and by naturality with respect to the inclusion of the $\CP^2$ subcomplex one has
-\[
+$$
 x^2\ne0\in H^4(X;\ZZ_p);
-\]
+$$
 in fact it is the generator.
 
 For $Y$, the unique nonzero degree-two class $y$ is supported on the Moore-space wedge summand. Products of positive-dimensional classes from different wedge summands vanish, and the Moore space has no $4$-dimensional cohomology. Therefore
-\[
+$$
 y^2=0.
-\]
+$$
 Thus
-\[
+$$
 H^*(X;\ZZ_p)\not\cong H^*(Y;\ZZ_p)
-\]
+$$
 as graded rings, although the integral cohomology rings are isomorphic.
 :::

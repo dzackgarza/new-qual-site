@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 What is the general solution of the differential equation
 
-\[
+$$
 2\frac{d^3x}{dt^3} + 7\frac{d^2x}{dt^2} + 3\frac{dx}{dt} = 6?
-\]
+$$
 
 (A) $x = 2t + c_1e^t + c_2e^{-t/2} + c_3e^{-3t}$
 (B) $x = 2 + c_1e^t + c_2e^{-t/2} + c_3e^{-3t}$

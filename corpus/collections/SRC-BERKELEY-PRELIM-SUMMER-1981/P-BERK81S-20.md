@@ -29,13 +29,13 @@ audit:
 
 ::: {.problem}
 Let $y:\RR\to\RR$ solve
-\[
+$$
 y''=-|y|,
 \qquad
 y(0)=1,
 \qquad
 y'(0)=0.
-\]
+$$
 
 1. Show that $y$ is even.
 

@@ -38,9 +38,9 @@ Let $P$ act by left multiplication on the coset space $G/S$.
 ::: pf-proof
 
 For $x\in P$ and $gS\in G/S$, define
-\[
+$$
 x\cdot gS=(xg)S.
-\]
+$$
 This is a well-defined group action.
 
 :::
@@ -55,9 +55,9 @@ This action has a fixed point.
 
 Write $|G|=p^a m$ with $p\nmid m$. Since $S$ is Sylow,
 $|S|=p^a$, so
-\[
+$$
 |G/S|=m
-\]
+$$
 is not divisible by $p$.
 
 Every $P$-orbit has cardinality a power of $p$. If there were no fixed point,
@@ -76,13 +76,13 @@ Therefore $P$ is contained in a Sylow $p$-subgroup.
 ::: pf-proof
 
 If $gS$ is fixed by $P$, then for every $x\in P$,
-\[
+$$
 xgS=gS,
-\]
+$$
 so $g^{-1}xg\in S$. Thus
-\[
+$$
 P\le gSg^{-1}.
-\]
+$$
 Since $gSg^{-1}$ is again a Sylow $p$-subgroup of $G$, this proves the claim.
 
 :::

@@ -36,26 +36,26 @@ audit:
 
 ::: {.problem}
 Let $G$ be a group, let
-\[
+$$
 A=\operatorname{Aut}(G),
 \qquad
 I=\operatorname{Inn}(G),
-\]
+$$
 and let $\sigma\in A$.
 
 Prove that $\sigma$ commutes with every element of $I$ if and only if
-\[
+$$
 g^{-1}\sigma(g)\in Z(G)
 \qquad\text{for every }g\in G.
-\]
+$$
 Deduce that if $G$ is centerless, then the only automorphism commuting with every inner automorphism is the identity.
 :::
 
 ::: {.solution}
 For $g\in G$, write
-\[
+$$
 c_g(x)=gxg^{-1}
-\]
+$$
 for the corresponding inner automorphism.
 
 ::: pf
@@ -63,21 +63,21 @@ for the corresponding inner automorphism.
 ::: {.pf-step #s1}
 
 For every $g\in G$,
-\[
+$$
 \sigma c_g\sigma^{-1}=c_{\sigma(g)}.
-\]
+$$
 
 ::: pf-proof
 
 For $x\in G$,
-\[
+$$
 \begin{aligned}
 (\sigma c_g\sigma^{-1})(x)
 &=\sigma\bigl(g\sigma^{-1}(x)g^{-1}\bigr)\\
 &=\sigma(g)x\sigma(g)^{-1}\\
 &=c_{\sigma(g)}(x).
 \end{aligned}
-\]
+$$
 Thus the two automorphisms are equal.
 
 :::
@@ -87,23 +87,23 @@ Thus the two automorphisms are equal.
 ::: {.pf-step #s2}
 
 For $a,b\in G$,
-\[
+$$
 c_a=c_b
 \quad\Longleftrightarrow\quad
 b^{-1}a\in Z(G).
-\]
+$$
 
 ::: pf-proof
 
 We have
-\[
+$$
 c_b^{-1}c_a=c_{b^{-1}a}.
-\]
+$$
 Hence $c_a=c_b$ exactly when $c_{b^{-1}a}$ is the identity automorphism.
 An inner automorphism $c_z$ is the identity exactly when
-\[
+$$
 zxz^{-1}=x
-\]
+$$
 for every $x\in G$, which is equivalent to $z\in Z(G)$.
 
 :::
@@ -113,28 +113,28 @@ for every $x\in G$, which is equivalent to $z\in Z(G)$.
 ::: {.pf-step #s3}
 
 The automorphism $\sigma$ commutes with $c_g$ if and only if
-\[
+$$
 g^{-1}\sigma(g)\in Z(G).
-\]
+$$
 
 ::: pf-proof
 
 The equality
-\[
+$$
 \sigma c_g=c_g\sigma
-\]
+$$
 is equivalent to
-\[
+$$
 \sigma c_g\sigma^{-1}=c_g.
-\]
+$$
 By step [](#s1){.pf-ref} this becomes
-\[
+$$
 c_{\sigma(g)}=c_g.
-\]
+$$
 Applying step [](#s2){.pf-ref} with $a=\sigma(g)$ and $b=g$ gives precisely
-\[
+$$
 g^{-1}\sigma(g)\in Z(G).
-\]
+$$
 
 :::
 
@@ -143,17 +143,17 @@ g^{-1}\sigma(g)\in Z(G).
 ::: {.pf-step #s4}
 
 Therefore $\sigma$ commutes with every element of $I$ if and only if
-\[
+$$
 g^{-1}\sigma(g)\in Z(G)
-\]
+$$
 for every $g\in G$.
 
 ::: pf-proof
 
 The inner automorphism group is
-\[
+$$
 I=\{c_g:g\in G\}.
-\]
+$$
 Apply step [](#s3){.pf-ref} for every $g\in G$.
 
 :::
@@ -163,21 +163,21 @@ Apply step [](#s3){.pf-ref} for every $g\in G$.
 ::: pf-step
 
 If $Z(G)=\{e\}$ and $\sigma$ commutes with every element of $I$, then
-\[
+$$
 \sigma=\operatorname{id}_G.
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s4){.pf-ref},
-\[
+$$
 g^{-1}\sigma(g)\in Z(G)=\{e\}
-\]
+$$
 for every $g\in G$.
 Hence
-\[
+$$
 g^{-1}\sigma(g)=e,
-\]
+$$
 so $\sigma(g)=g$ for every $g\in G$.
 Therefore $\sigma$ is the identity automorphism.
 

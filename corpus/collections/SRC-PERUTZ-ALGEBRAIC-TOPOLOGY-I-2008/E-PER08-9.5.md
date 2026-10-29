@@ -29,9 +29,9 @@ If $a\colon A_*\to B_*$ is a chain map, its mapping cone $\operatorname{cone}(a)
 Show how to arrange the six groups $H_*(A)$, $H_*(B)$, $H_*(C)$, $H_*(\operatorname{cone}(a))$, $H_*(\operatorname{cone}(b))$ and $H_*(\operatorname{cone}(ba))$ as the vertices of an octahedral diagram of maps.
 Four of the faces should be commuting triangles, the other four exact triangles (i.e., long exact sequences visualised as triangles).
 The last of these triangles is a long exact sequence
-\[
+$$
 \cdots\to H_p(\operatorname{cone}(a))\to H_p(\operatorname{cone}(ba))\to H_{p-1}(\operatorname{cone}(b))\to\cdots.
-\]
+$$
 The hard part of the exercise is constructing this triangle and proving its exactness.
 
 [Hint: define $f\colon\operatorname{cone}(a)\to\operatorname{cone}(ba)$ by $f(x,y)=(x,by)$.
@@ -44,32 +44,32 @@ This exercise shows that the derived category of the abelian category of chain c
 ::: {.solution}
 Let $a:A\to B$ and $b:B\to C$ be chain maps.
 There are the three standard exact triangles
-\[
+$$
 A\xrightarrow a B\to\operatorname{cone}(a)\to A[-1],
-\]
-\[
+$$
+$$
 B\xrightarrow b C\to\operatorname{cone}(b)\to B[-1],
-\]
+$$
 and
-\[
+$$
 A\xrightarrow{ba}C\to\operatorname{cone}(ba)\to A[-1].
-\]
+$$
 The fourth exact triangle is the octahedral one
-\[
+$$
 \operatorname{cone}(a)\xrightarrow f\operatorname{cone}(ba)
 \longrightarrow\operatorname{cone}(b)
 \longrightarrow\operatorname{cone}(a)[-1].
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 Define the first map by
-\[
+$$
 f_n(x,y)=(x,b(y)),
 \qquad (x,y)\in A_{n-1}\oplus B_n.
-\]
+$$
 
 ::: pf-proof
 
@@ -86,15 +86,15 @@ $\operatorname{cone}(f)$ is chain-homotopy equivalent to $\operatorname{cone}(b)
 ::: pf-proof
 
 One has
-\[
+$$
 \operatorname{cone}(f)_n
 =A_{n-2}\oplus B_{n-1}\oplus A_{n-1}\oplus C_n.
-\]
+$$
 The natural inclusion
-\[
+$$
 i:\operatorname{cone}(b)_n=B_{n-1}\oplus C_n\hookrightarrow\operatorname{cone}(f)_n,
 \qquad i(u,v)=(0,u,0,v),
-\]
+$$
 is a chain map.
 The two $A$-summands form a contractible mapping-cone pair for the identity of $A$; projecting away that contractible pair gives a chain map $r:\operatorname{cone}(f)\to\operatorname{cone}(b)$ with $ri=\mathrm{id}$, and the standard contraction of the identity cone gives $ir\simeq\mathrm{id}$.
 Hence $i$ is a chain-homotopy equivalence.
@@ -110,14 +110,14 @@ The fourth triangle is exact on homology.
 ::: pf-proof
 
 Apply the mapping-cone long exact sequence to $f$ and identify $H_*(\operatorname{cone}(f))$ with $H_*(\operatorname{cone}(b))$ using step [](#s2){.pf-ref}. We obtain
-\[
+$$
 \cdots\to H_n(\operatorname{cone}(a))\to H_n(\operatorname{cone}(ba))
 \to H_n(\operatorname{cone}(b))\to H_{n-1}(\operatorname{cone}(a))\to\cdots.
-\]
+$$
 Together with the three standard cone triangles, these four exact triangles and the evident four commuting triangles arrange the six objects
-\[
+$$
 A,B,C,\operatorname{cone}(a),\operatorname{cone}(b),\operatorname{cone}(ba)
-\]
+$$
 as the vertices of the usual octahedron.
 This is the octahedral diagram for the composable maps $a,b$.
 

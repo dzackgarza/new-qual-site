@@ -36,9 +36,9 @@ Show that if $A\cap B\ne\varnothing$ then $A\cup B$ is a connected subset of $X$
 
 Suppose for contradiction that $A\cup B$ is disconnected.
 Then there are disjoint nonempty sets $U,V$, open in the subspace $A\cup B$, such that
-\[
+$$
 A\cup B=U\cup V.
-\]
+$$
 
 ::: pf-proof
 
@@ -55,9 +55,9 @@ Since $A$ is connected, it is contained entirely in $U$ or entirely in $V$.
 ::: pf-proof
 
 The sets $A\cap U$ and $A\cap V$ are disjoint and open in the subspace $A$, and
-\[
+$$
 A=(A\cap U)\cup(A\cap V).
-\]
+$$
 If both were nonempty they would separate $A$, contradicting connectedness.
 Thus one is empty, so $A$ lies in the other member of the separation.
 

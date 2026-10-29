@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be analytic on the upper half-plane \(\{z:\operatorname{Im}z>0\}\). Suppose \(|f(z)|<1\) throughout the domain and \(f(i)=0\). Find the largest possible value of \(|f(2i)|\).
+Let $f$ be analytic on the upper half-plane $\{z:\operatorname{Im}z>0\}$. Suppose $|f(z)|<1$ throughout the domain and $f(i)=0$. Find the largest possible value of $|f(2i)|$.
 :::
 
 ::: {.solution}

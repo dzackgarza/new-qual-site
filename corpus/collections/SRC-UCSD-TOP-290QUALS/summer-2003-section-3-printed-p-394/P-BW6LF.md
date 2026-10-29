@@ -29,10 +29,10 @@ Construct a space having $H_*(X) = [\ZZ, 0, 0, 0, 0, \ZZ_4, 0, \cdots]$.
 :::
 
 Take $X = e^0 \union_{\Phi_1} e^5 \union_{\Phi_2} e^6$, where
-\[
+$$
 \Phi_1: \del B^5 = S^4 \mapsvia{z~\mapsto z^0} e^0 \\
 \Phi_2: \del B^6 = S^5 \mapsvia{z~\mapsto z^4} e^5
-.\]
+.$$
 
 where $\deg \Phi_2 = 4$.
 :::

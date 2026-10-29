@@ -35,20 +35,20 @@ $$
 
 ::: {.solution}
 Let
-\[
+$$
 \phi(z)=\frac{z-i}{z+i}.
-\]
+$$
 This maps the upper half-plane biholomorphically onto the unit disc and satisfies $\phi(i)=0$. Define
-\[
+$$
 g(w)=F(\phi^{-1}(w)),\qquad w\in\DD.
-\]
+$$
 Then $g$ is holomorphic on $\DD$, $|g(w)|\le1$, and $g(0)=F(i)=0$. By Schwarz's lemma,
-\[
+$$
 |g(w)|\le|w|.
-\]
+$$
 Taking $w=\phi(z)$ gives
-\[
+$$
 |F(z)|\le\left|\frac{z-i}{z+i}\right|,
 \qquad z\in\halfplane.
-\]
+$$
 :::

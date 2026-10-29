@@ -43,15 +43,15 @@ The collection $\mcs\cap\mct$ contains $\emptyset$ and $X$.
 ::: pf-proof
 
 Since $\mcs$ and $\mct$ are topologies on $X$,
-\[
+$$
 \emptyset,X\in\mcs
 \qquad\text{and}\qquad
 \emptyset,X\in\mct.
-\]
+$$
 Hence
-\[
+$$
 \emptyset,X\in\mcs\cap\mct.
-\]
+$$
 
 :::
 
@@ -66,15 +66,15 @@ The collection $\mcs\cap\mct$ is closed under arbitrary unions.
 Let $\{U_i\}_{i\in I}$ be any family of sets in $\mcs\cap\mct$.
 Then every $U_i$ belongs to both $\mcs$ and $\mct$.
 Because each is a topology,
-\[
+$$
 \bigcup_{i\in I}U_i\in\mcs
 \qquad\text{and}\qquad
 \bigcup_{i\in I}U_i\in\mct.
-\]
+$$
 Therefore
-\[
+$$
 \bigcup_{i\in I}U_i\in\mcs\cap\mct.
-\]
+$$
 
 :::
 
@@ -88,15 +88,15 @@ The collection $\mcs\cap\mct$ is closed under finite intersections.
 
 If $U_1,\dots,U_r\in\mcs\cap\mct$, then all of them belong to each of $\mcs$ and $\mct$.
 Thus
-\[
+$$
 U_1\cap\cdots\cap U_r\in\mcs
 \qquad\text{and}\qquad
 U_1\cap\cdots\cap U_r\in\mct,
-\]
+$$
 so
-\[
+$$
 U_1\cap\cdots\cap U_r\in\mcs\cap\mct.
-\]
+$$
 
 :::
 
@@ -121,25 +121,25 @@ The union of two topologies need not be a topology.
 ::: pf-proof
 
 Let
-\[
+$$
 X=\{a,b,c\},
-\]
+$$
 and define
-\[
+$$
 \mcs=\{\emptyset,X,\{a\}\},
 \qquad
 \mct=\{\emptyset,X,\{b\}\}.
-\]
+$$
 Each collection is a topology: apart from $\emptyset$ and $X$, it has only one nontrivial open set, so it is plainly closed under arbitrary unions and finite intersections.
 
 However,
-\[
+$$
 \{a\},\{b\}\in\mcs\cup\mct,
-\]
+$$
 while
-\[
+$$
 \{a\}\cup\{b\}=\{a,b\}\notin\mcs\cup\mct.
-\]
+$$
 Thus $\mcs\cup\mct$ is not closed under unions and is not a topology.
 
 :::

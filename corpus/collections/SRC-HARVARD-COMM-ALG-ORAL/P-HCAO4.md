@@ -30,11 +30,11 @@ Give two examples of unique factorization domains which are not principal ideal 
 
 ::: {.solution}
 Two examples are
-\[
+$$
 \ZZ[x]
 \qquad\text{and}\qquad
 k[x,y]
-\]
+$$
 for any field $k$.
 
 ::: pf
@@ -54,15 +54,15 @@ The ring $\ZZ[x]$ is not a PID.
 
 ::: pf-proof
 Consider the ideal
-\[
+$$
 I=(2,x).
-\]
+$$
 It is proper, since the quotient map
-\[
+$$
 \ZZ[x]\to\FF_2,
 \qquad
 f(x)\mapsto f(0)\bmod2
-\]
+$$
 has kernel $I$.
 
 If $I=(f)$ were principal, then $f$ would divide both $2$ and $x$ in the UFD
@@ -87,9 +87,9 @@ The ring $k[x,y]$ is not a PID.
 
 ::: pf-proof
 The ideal
-\[
+$$
 J=(x,y)
-\]
+$$
 is proper because $k[x,y]/J\cong k$. If $J=(f)$ were principal, then $f$ would
 divide both $x$ and $y$. Since $x$ and $y$ are relatively prime irreducibles,
 $f$ would be a unit, contradicting the properness of $J$.

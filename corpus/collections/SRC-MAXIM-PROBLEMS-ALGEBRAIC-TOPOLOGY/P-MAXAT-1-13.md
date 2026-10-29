@@ -28,16 +28,16 @@ The source phrase is interpreted as saying that these spaces admit no fixed-poin
 ::: {.pf-step #s1-1}
 
 Let
-\[
+$$
 f:\RP^{2n}\to\RP^{2n}
-\]
+$$
 be any continuous map. With rational coefficients,
-\[
+$$
 H_k(\RP^{2n};\QQ)=0
 \quad(k>0),
 \qquad
 H_0(\RP^{2n};\QQ)=\QQ.
-\]
+$$
 
 
 ::: pf-proof
@@ -51,19 +51,19 @@ The integral homology of $\RP^{2n}$ has only $2$-torsion in positive degrees bel
 ::: {.pf-step #s1-2}
 
 Hence
-\[
+$$
 L(f)=1.
-\]
+$$
 
 
 ::: pf-proof
 
 The Lefschetz number is
-\[
+$$
 L(f)=\sum_k(-1)^k\operatorname{tr}
 \bigl(f_*:H_k(\RP^{2n};\QQ)\to
 H_k(\RP^{2n};\QQ)\bigr).
-\]
+$$
 By step [](#s1-1){.pf-ref} only degree $0$ contributes, and every self-map of a connected space induces the identity on $H_0$.
 
 :::
@@ -86,13 +86,13 @@ By step [](#s1-2){.pf-ref}, $L(f)=1\ne0$. The Lefschetz fixed-point theorem ther
 ::: pf-step
 
 Let
-\[
+$$
 g:\CP^{2n}\to\CP^{2n}
-\]
+$$
 be any continuous map, and let $u\in H^2(\CP^{2n};\ZZ)$ be the standard generator. There is an integer $d$ such that
-\[
+$$
 g^*u=du.
-\]
+$$
 
 
 ::: pf-proof
@@ -111,15 +111,15 @@ On $H^{2k}(\CP^{2n};\QQ)$, the map $g^*$ is multiplication by $d^k$.
 ::: pf-proof
 
 The cohomology ring is
-\[
+$$
 H^*(\CP^{2n};\ZZ)
 \cong\ZZ[u]/(u^{2n+1}),
 \qquad |u|=2.
-\]
+$$
 Thus $u^k$ generates $H^{2k}$ and
-\[
+$$
 g^*(u^k)=(g^*u)^k=(du)^k=d^ku^k.
-\]
+$$
 
 :::
 
@@ -128,9 +128,9 @@ g^*(u^k)=(g^*u)^k=(du)^k=d^ku^k.
 ::: {.pf-step #s1-6}
 
 Consequently
-\[
+$$
 L(g)=1+d+d^2+\cdots+d^{2n}.
-\]
+$$
 
 
 ::: pf-proof
@@ -144,18 +144,18 @@ Complex projective space has one-dimensional rational cohomology in even degrees
 ::: {.pf-step #s1-7}
 
 For every integer $d$,
-\[
+$$
 1+d+d^2+\cdots+d^{2n}>0.
-\]
+$$
 
 
 ::: pf-proof
 
 If $d\geq0$, this is immediate. If $d<0$, write $d=-a$ with $a\geq1$. Then
-\[
+$$
 1-a+a^2-a^3+\cdots-a^{2n-1}+a^{2n}
 =1+(a^2-a)+(a^4-a^3)+\cdots+(a^{2n}-a^{2n-1}),
-\]
+$$
 and every parenthesized term is $a^{2j-1}(a-1)\geq0$. Thus the sum is at least $1$.
 
 :::
@@ -178,11 +178,11 @@ Steps [](#s1-6){.pf-ref} through [](#s1-7){.pf-ref} give $L(g)\ne0$, so the Lefs
 ::: {.pf-step #s1-9}
 
 Hence
-\[
+$$
 \boxed{
 \RP^{2n}\text{ and }\CP^{2n}
 \text{ admit no fixed-point-free self-map}.}
-\]
+$$
 
 
 ::: pf-proof

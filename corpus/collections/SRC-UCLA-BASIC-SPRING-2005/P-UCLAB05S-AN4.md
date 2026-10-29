@@ -18,12 +18,12 @@ audit:
 ::: {.problem}
 Suppose $f:\RR\to\RR$ is $C^1$.
 Show that
-\[
+$$
 \lim_{n\to\infty}
 \sum_{j=1}^n
 \left|f\!\left(\frac{j-1}{n}\right)-f\!\left(\frac jn\right)\right|
 =\int_0^1|f'(t)|\,dt.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Suppose $A=(a_{ij})$ is a real symmetric $n\times n$ matrix with nonnegative eigenvalues.
 Show that
-\[
+$$
 |a_{ij}|\le \sqrt{a_{ii}a_{jj}}
-\]
+$$
 for all distinct $i,j\le n$.
 :::
 

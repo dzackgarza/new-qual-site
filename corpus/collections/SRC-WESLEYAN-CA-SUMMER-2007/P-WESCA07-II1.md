@@ -17,13 +17,13 @@ audit:
 
 ::: {.problem}
 Let $f=u+iv$ be entire and suppose
-\[
+$$
 u_xv_y-u_yv_x=1.
-\]
+$$
 Show that
-\[
+$$
 f(z)=az+b
-\]
+$$
 for constants $a,b\in\CC$ with $|a|=1$.
 :::
 

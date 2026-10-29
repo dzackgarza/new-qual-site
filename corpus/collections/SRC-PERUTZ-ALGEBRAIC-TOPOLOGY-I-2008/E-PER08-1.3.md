@@ -34,24 +34,24 @@ Let $C\subseteq\RR^n$ be convex. If $C=\varnothing$, there is nothing to prove u
 ::: pf-step
 
 Define the straight-line homotopy
-\[
+$$
 H:[0,1]\times C\to C,
 \qquad
 H(t,x)=(1-t)x_0+tx.
-\]
+$$
 
 ::: pf-proof
 
 For every $t\in[0,1]$ and $x\in C$, the point $(1-t)x_0+tx$ is a convex combination of $x_0$ and $x$. Since $C$ is convex,
-\[
+$$
 (1-t)x_0+tx\in C.
-\]
+$$
 Thus $H$ is well defined. It is continuous because it is the restriction of the continuous affine map
-\[
+$$
 [0,1]\times\RR^n\to\RR^n,
 \qquad
 (t,x)\mapsto(1-t)x_0+tx.
-\]
+$$
 
 :::
 
@@ -64,17 +64,17 @@ The homotopy $H$ joins the constant map at $x_0$ to the identity.
 ::: pf-proof
 
 For every $x\in C$,
-\[
+$$
 H(0,x)=x_0=c_{x_0}(x)
-\]
+$$
 and
-\[
+$$
 H(1,x)=x=\operatorname{id}_C(x).
-\]
+$$
 Hence
-\[
+$$
 c_{x_0}\simeq\operatorname{id}_C.
-\]
+$$
 
 :::
 

@@ -14,21 +14,21 @@ review: draft
 For each space below, identify a familiar space homeomorphic to the quotient and prove your answer.
 
 1. Let $X=[0,1]\times[0,1]$, and let $\sim$ be the smallest equivalence relation such that
-   \[
+   $$
    (x,0)\sim(x,1),\qquad (0,y)\sim(1,y)
-   \]
+   $$
    for all $x,y\in[0,1]$.
 
 2. Let $X=D_1\sqcup D_2$ be the disjoint union of two closed disks.
    Identify boundary points with the same Euclidean coordinates: for $(x,y)\in D_1$ and $(r,s)\in D_2$ with $x^2+y^2=1$, impose
-   \[
+   $$
    (x,y)\sim(r,s)\quad\Longleftrightarrow\quad(x,y)=(r,s).
-   \]
+   $$
 
 3. Let $X=D^2$ and collapse the entire boundary circle to one point; equivalently, let $\sim$ be the smallest equivalence relation satisfying
-   \[
+   $$
    (x,y)\sim(1,0)
-   \]
+   $$
    whenever $x^2+y^2=1$.
 :::
 
@@ -39,35 +39,35 @@ For each space below, identify a familiar space homeomorphic to the quotient and
 ::: pf-step
 
 For the square, define
-\[
+$$
 q_1:[0,1]^2\to S^1\times S^1
-\]
+$$
 by
-\[
+$$
 q_1(x,y)
 =
 \bigl(
 e^{2\pi i x},
 e^{2\pi i y}
 \bigr).
-\]
+$$
 
 
 ::: pf-proof
 
 The map is continuous.
 It satisfies
-\[
+$$
 q_1(x,0)
 =
 q_1(x,1)
-\]
+$$
 and
-\[
+$$
 q_1(0,y)
 =
 q_1(1,y),
-\]
+$$
 so it is constant on the prescribed equivalence classes.
 
 :::
@@ -84,13 +84,13 @@ identifications.
 ::: pf-proof
 
 Suppose
-\[
+$$
 q_1(x_0,y_0)
 =
 q_1(x_1,y_1).
-\]
+$$
 Then
-\[
+$$
 e^{2\pi i x_0}
 =
 e^{2\pi i x_1},
@@ -98,12 +98,12 @@ e^{2\pi i x_1},
 e^{2\pi i y_0}
 =
 e^{2\pi i y_1}.
-\]
+$$
 Since all coordinates lie in $[0,1]$, each equality means either the two
 coordinates are equal or they are the pair
-\[
+$$
 0,1.
-\]
+$$
 Thus the points differ only by the stated opposite-edge identifications.
 
 Conversely, each generating identification preserves $q_1$, so equivalent
@@ -116,24 +116,24 @@ points have equal images.
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{
 [0,1]^2/{\sim}
 \cong
 S^1\times S^1=T^2.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 The map $q_1$ is surjective, so it induces a continuous bijection
-\[
+$$
 \bar q_1:
 [0,1]^2/{\sim}
 \to
 S^1\times S^1.
-\]
+$$
 The quotient is compact because it is the continuous image of the compact
 square under the quotient map.
 The torus is Hausdorff.
@@ -146,18 +146,18 @@ Hence the continuous bijection $\bar q_1$ is a homeomorphism.
 ::: pf-step
 
 For part (2), write
-\[
+$$
 D^2
 =
 \{(x,y):x^2+y^2\le1\}.
-\]
+$$
 Define
-\[
+$$
 \phi_+:
 D_1\to S^2
-\]
+$$
 by
-\[
+$$
 \phi_+(x,y)
 =
 \left(
@@ -165,14 +165,14 @@ x,
 y,
 \sqrt{1-x^2-y^2}
 \right),
-\]
+$$
 and define
-\[
+$$
 \phi_-:
 D_2\to S^2
-\]
+$$
 by
-\[
+$$
 \phi_-(x,y)
 =
 \left(
@@ -180,7 +180,7 @@ x,
 y,
 -\sqrt{1-x^2-y^2}
 \right).
-\]
+$$
 
 
 ::: pf-proof
@@ -196,7 +196,7 @@ Both maps are continuous.
 ::: {.pf-step #s1-5}
 
 On the boundary circle, the two maps agree:
-\[
+$$
 \phi_+(x,y)
 =
 \phi_-(x,y)
@@ -204,15 +204,15 @@ On the boundary circle, the two maps agree:
 (x,y,0)
 \qquad
 (x^2+y^2=1).
-\]
+$$
 
 
 ::: pf-proof
 
 On the boundary,
-\[
+$$
 1-x^2-y^2=0.
-\]
+$$
 Hence the third coordinate in both formulas is zero.
 
 :::
@@ -222,9 +222,9 @@ Hence the third coordinate in both formulas is zero.
 ::: pf-step
 
 The map
-\[
+$$
 q_2:D_1\sqcup D_2\to S^2
-\]
+$$
 defined by $\phi_+$ on $D_1$ and $\phi_-$ on $D_2$ has fibers exactly
 the stated equivalence classes.
 
@@ -248,13 +248,13 @@ Thus the fibers are exactly the prescribed classes.
 ::: {.pf-step #s1-7}
 
 Consequently
-\[
+$$
 \boxed{
 (D_1\sqcup D_2)/{\sim}
 \cong
 S^2.
 }
-\]
+$$
 
 
 ::: pf-proof
@@ -263,9 +263,9 @@ The map $q_2$ is continuous and surjective and factors through a continuous
 bijection from the quotient onto $S^2$.
 
 The disjoint union
-\[
+$$
 D_1\sqcup D_2
-\]
+$$
 is compact, so its quotient is compact.
 The sphere is Hausdorff.
 Hence the induced continuous bijection is a homeomorphism.
@@ -277,11 +277,11 @@ Hence the induced continuous bijection is a homeomorphism.
 ::: {.pf-step #s1-8}
 
 For part (3), define
-\[
+$$
 q_3:D^2\to S^2
-\]
+$$
 in polar coordinates by
-\[
+$$
 \boxed{
 q_3(r,\theta)
 =
@@ -291,29 +291,29 @@ q_3(r,\theta)
 \cos(\pi r)
 \bigr).
 }
-\]
+$$
 
 
 ::: pf-proof
 
 At
-\[
+$$
 r=0,
-\]
+$$
 the formula gives the north pole
-\[
+$$
 (0,0,1),
-\]
+$$
 independent of $\theta$, so it is well defined at the origin.
 
 At
-\[
+$$
 r=1,
-\]
+$$
 the formula gives the south pole
-\[
+$$
 (0,0,-1),
-\]
+$$
 again independent of $\theta$.
 Thus the entire boundary circle is collapsed to one point.
 The formula is continuous.
@@ -325,44 +325,44 @@ The formula is continuous.
 ::: {.pf-step #s1-9}
 
 On the open disk
-\[
+$$
 0\le r<1,
-\]
+$$
 the map $q_3$ is one-to-one onto
-\[
+$$
 S^2\setminus\{(0,0,-1)\}.
-\]
+$$
 
 
 ::: pf-proof
 
 For
-\[
+$$
 0<r<1,
-\]
+$$
 the polar angle $\theta$ is recovered from the first two coordinates, and
 the third coordinate
-\[
+$$
 \cos(\pi r)
-\]
+$$
 determines $r$ uniquely because cosine is strictly decreasing on
-\[
+$$
 [0,\pi].
-\]
+$$
 At
-\[
+$$
 r=0,
-\]
+$$
 there is only the single center point of the disk.
 
 Every sphere point except the south pole has polar angle
-\[
+$$
 \pi r
-\]
+$$
 for a unique
-\[
+$$
 0\le r<1,
-\]
+$$
 so the image is exactly the punctured sphere.
 
 :::
@@ -373,9 +373,9 @@ so the image is exactly the punctured sphere.
 
 Therefore the fibers of $q_3$ are exactly the equivalence classes
 obtained by collapsing
-\[
+$$
 \partial D^2
-\]
+$$
 to one point.
 
 
@@ -392,24 +392,24 @@ Thus the only nontrivial fiber is the whole boundary circle.
 ::: {.pf-step #s1-11}
 
 Consequently
-\[
+$$
 \boxed{
 D^2/\partial D^2
 \cong
 S^2.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 The map $q_3$ factors through a continuous bijection
-\[
+$$
 \bar q_3:
 D^2/\partial D^2
 \to
 S^2.
-\]
+$$
 The quotient is compact and $S^2$ is Hausdorff.
 Therefore $\bar q_3$ is a homeomorphism.
 
@@ -420,7 +420,7 @@ Therefore $\bar q_3$ is a homeomorphism.
 ::: {.pf-step #s1-12}
 
 The three quotient spaces are
-\[
+$$
 \boxed{
 \begin{array}{c|c}
 1&T^2\\
@@ -428,7 +428,7 @@ The three quotient spaces are
 3&S^2.
 \end{array}
 }
-\]
+$$
 
 
 ::: pf-proof

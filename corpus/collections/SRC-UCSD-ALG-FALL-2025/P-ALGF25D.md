@@ -41,21 +41,21 @@ A projective module is a direct summand of a free module.
 
 Choose a surjection $\pi:F\twoheadrightarrow M$ from a free $A$-module $F$.
 Since $M$ is projective, the identity map on $M$ lifts through $\pi$: there is an $A$-linear map
-\[
+$$
 s:M\longrightarrow F
 \qquad\text{such that}\qquad
 \pi s=\operatorname{id}_M.
-\]
+$$
 Thus $s$ identifies $M$ with a direct summand of $F$.
 Writing $Q=\ker\pi$, every $f\in F$ has the unique decomposition
-\[
+$$
 f=s(\pi(f))+(f-s(\pi(f)))
-\]
+$$
 with the second summand in $Q$.
 Hence
-\[
+$$
 F\cong M\oplus Q.
-\]
+$$
 
 :::
 
@@ -68,20 +68,20 @@ Tensoring with a free module preserves injections.
 ::: pf-proof
 
 Write
-\[
+$$
 F\cong\bigoplus_{i\in I}A
-\]
+$$
 for some index set $I$.
 For every $A$-module $X$,
-\[
+$$
 X\otimes_A F
 \cong X\otimes_A\left(\bigoplus_{i\in I}A\right)
 \cong\bigoplus_{i\in I}X.
-\]
+$$
 If $u:X'\hookrightarrow X$ is injective, then under these identifications
-\[
+$$
 u\otimes_A\operatorname{id}_F
-\]
+$$
 is the direct sum of copies of $u$.
 It is therefore injective.
 Thus every free $A$-module is flat.
@@ -98,23 +98,23 @@ A direct summand of a flat module is flat; hence $M$ is flat.
 
 Let $u:X'\hookrightarrow X$ be any injective $A$-linear map.
 Using $F\cong M\oplus Q$ from step [](#s1){.pf-ref} and distributivity of tensor product over direct sums, the injective map from step [](#s2){.pf-ref} becomes
-\[
+$$
 u\otimes_A\operatorname{id}_F
 \cong
 (u\otimes_A\operatorname{id}_M)
 \oplus
 (u\otimes_A\operatorname{id}_Q).
-\]
+$$
 If $z\in X'\otimes_A M$ satisfies
-\[
+$$
 (u\otimes_A\operatorname{id}_M)(z)=0,
-\]
+$$
 then $(z,0)$ lies in the kernel of the displayed direct-sum map.
 That map is injective, so $(z,0)=0$ and hence $z=0$.
 Therefore
-\[
+$$
 u\otimes_A\operatorname{id}_M:X'\otimes_A M\longrightarrow X\otimes_A M
-\]
+$$
 is injective for every injection $u$.
 
 The tensor functor $-\otimes_A M$ is always right exact, and the preceding argument shows that it also preserves monomorphisms.

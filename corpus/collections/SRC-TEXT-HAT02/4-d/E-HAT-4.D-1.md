@@ -31,31 +31,31 @@ Use the Leray-Hirsch theorem to show that $H^*(E_k; \ZZ)$ is additively isomorph
 :::
 
 ::: {.solution}
-Let \(p:\CP^3\to S^4\) denote the bundle and let \(f:S^4\to S^4\) have degree \(k\). Form the pullback square
-\[
+Let $p:\CP^3\to S^4$ denote the bundle and let $f:S^4\to S^4$ have degree $k$. Form the pullback square
+$$
 \begin{array}{ccc}
 E_k&\xrightarrow{F}&\CP^3\\
 \downarrow p_k&&\downarrow p\\
 S^4&\xrightarrow{f}&S^4.
 \end{array}
-\]
-Choose \(x\in H^2(\CP^3;\ZZ)\) restricting to a generator on each fiber \(S^2\). Then \(F^*x\), which we again call \(x\), restricts to a generator on each fiber of \(E_k\). Leray--Hirsch gives
-\[
+$$
+Choose $x\in H^2(\CP^3;\ZZ)$ restricting to a generator on each fiber $S^2$. Then $F^*x$, which we again call $x$, restricts to a generator on each fiber of $E_k$. Leray--Hirsch gives
+$$
 H^*(E_k;\ZZ)\cong H^*(S^4;\ZZ)\{1,x\}
-\]
-as an \(H^*(S^4)\)-module. Thus additively there is one copy of \(\ZZ\) in degrees \(0,2,4,6\), exactly as for \(\CP^3\).
+$$
+as an $H^*(S^4)$-module. Thus additively there is one copy of $\ZZ$ in degrees $0,2,4,6$, exactly as for $\CP^3$.
 
-Let \(u\in H^4(S^4;\ZZ)\) be a generator and normalize signs so that in \(\CP^3\)
-\[
+Let $u\in H^4(S^4;\ZZ)$ be a generator and normalize signs so that in $\CP^3$
+$$
 x^2=p^*u.
-\]
-Put \(v=p_k^*u\in H^4(E_k)\). Naturality in the pullback square gives
-\[
+$$
+Put $v=p_k^*u\in H^4(E_k)$. Naturality in the pullback square gives
+$$
 x^2=F^*(x^2)=F^*p^*u=p_k^*f^*u=k\,p_k^*u=kv.
-\]
+$$
 Hence
-\[
+$$
 \boxed{x^2=kv,}
-\]
-where \(x\) and \(v\) generate \(H^2(E_k)\) and \(H^4(E_k)\). Since \(k>1\), this ring cannot be isomorphic to \(H^*(\CP^3;\ZZ)\), although the additive groups are the same.
+$$
+where $x$ and $v$ generate $H^2(E_k)$ and $H^4(E_k)$. Since $k>1$, this ring cannot be isomorphic to $H^*(\CP^3;\ZZ)$, although the additive groups are the same.
 :::

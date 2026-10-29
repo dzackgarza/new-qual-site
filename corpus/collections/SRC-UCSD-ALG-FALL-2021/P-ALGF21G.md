@@ -44,25 +44,25 @@ Justify your answer.
 ::: {.pf-step #s1}
 
 If $M$ is finitely generated, then there is a nonzero $r\in R$ such that
-\[
+$$
 rM=0.
-\]
+$$
 
 ::: pf-proof
 
 Choose generators
-\[
+$$
 m_1,\ldots,m_t
-\]
+$$
 of $M$.
 Since $M$ is torsion, for each $i$ there is a nonzero $r_i\in R$ such that
-\[
+$$
 r_i m_i=0.
-\]
+$$
 Because $R$ is an integral domain, the product
-\[
+$$
 r=r_1\cdots r_t
-\]
+$$
 is nonzero.
 It annihilates every generator $m_i$, hence annihilates all of $M$.
 
@@ -78,13 +78,13 @@ If $M$ is finitely generated, then $\operatorname{Hom}_R(M,N)$ is torsion.
 
 Let $r\ne0$ be as in step [](#s1){.pf-ref}.
 For every $f\in\operatorname{Hom}_R(M,N)$ and every $m\in M$,
-\[
+$$
 ((rf)(m))=r f(m)=f(rm)=0.
-\]
+$$
 Thus
-\[
+$$
 rf=0.
-\]
+$$
 In fact the same nonzero element $r$ annihilates the entire module $\operatorname{Hom}_R(M,N)$.
 
 :::
@@ -94,21 +94,21 @@ In fact the same nonzero element $r$ annihilates the entire module $\operatornam
 ::: {.pf-step #s3}
 
 If $N$ is finitely generated, then there is a nonzero $s\in R$ such that
-\[
+$$
 sN=0.
-\]
+$$
 
 ::: pf-proof
 
 Choose generators $n_1,\ldots,n_u$ of $N$.
 For each $j$, torsion gives a nonzero $s_j\in R$ with
-\[
+$$
 s_jn_j=0.
-\]
+$$
 Since $R$ is a domain,
-\[
+$$
 s=s_1\cdots s_u\ne0,
-\]
+$$
 and $s$ annihilates every generator, hence all of $N$.
 
 :::
@@ -123,9 +123,9 @@ If $N$ is finitely generated, then $\operatorname{Hom}_R(M,N)$ is torsion.
 
 Let $s\ne0$ be as in step [](#s3){.pf-ref}.
 For any $f\in\operatorname{Hom}_R(M,N)$ and $m\in M$,
-\[
+$$
 ((sf)(m))=s f(m)=0
-\]
+$$
 because $f(m)\in N$ and $sN=0$.
 Hence $sf=0$ for every $f$.
 Together with step [](#s2){.pf-ref}, this proves part (a).
@@ -137,20 +137,20 @@ Together with step [](#s2){.pf-ref}, this proves part (a).
 ::: pf-step
 
 For part (b), take
-\[
+$$
 R=\ZZ,
 \qquad
 M=N=\bigoplus_{p\text{ prime}}\ZZ/p\ZZ.
-\]
+$$
 Then $M$ and $N$ are torsion $\ZZ$-modules and neither is finitely generated.
 
 ::: pf-proof
 
 Every element of the direct sum has only finitely many nonzero components.
 If its support is contained in the primes $p_1,\ldots,p_k$, then
-\[
+$$
 p_1\cdots p_k
-\]
+$$
 annihilates it.
 Thus every element is torsion.
 
@@ -165,9 +165,9 @@ Hence $M$, and likewise $N$, is not finitely generated.
 ::: pf-step
 
 The identity endomorphism
-\[
+$$
 \operatorname{id}_M\in\operatorname{Hom}_{\ZZ}(M,M)
-\]
+$$
 is not a torsion element.
 
 ::: pf-proof
@@ -176,14 +176,14 @@ Let $0\ne n\in\ZZ$.
 Choose a prime $p$ not dividing $n$.
 On the summand $\ZZ/p\ZZ$, multiplication by $n$ is a nonzero automorphism.
 Therefore
-\[
+$$
 n\operatorname{id}_M\ne0.
-\]
+$$
 Since no nonzero integer annihilates $\operatorname{id}_M$, this endomorphism is not torsion.
 Consequently
-\[
+$$
 \operatorname{Hom}_{\ZZ}(M,M)
-\]
+$$
 is not a torsion module, proving part (b).
 
 :::

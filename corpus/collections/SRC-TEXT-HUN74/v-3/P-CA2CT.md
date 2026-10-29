@@ -30,9 +30,9 @@ If $F$ is algebraically closed and $E$ is the set of all elements in $F$ that ar
 
 ::: {.solution}
 Assume $K\subseteq F$, with $F$ algebraically closed, and set
-\[
+$$
 E=\{a\in F:a\text{ is algebraic over }K\}.
-\]
+$$
 
 ::: pf
 
@@ -45,9 +45,9 @@ The set $E$ is a subfield of $F$ containing $K$.
 Every element of $K$ is algebraic over $K$, so $K\subseteq E$. If
 $a,b\in E$, then $K(a,b)/K$ is finite. Hence every element of $K(a,b)$ is
 algebraic over $K$. In particular,
-\[
+$$
 a-b,\quad ab\in E,
-\]
+$$
 and, if $a\ne0$, also $a^{-1}\in E$. Thus $E$ is a subfield of $F$.
 
 :::
@@ -74,14 +74,14 @@ Every nonconstant polynomial in $E[x]$ has a root in $E$.
 ::: pf-proof
 
 Let
-\[
+$$
 f(x)=a_0+a_1x+\cdots+a_nx^n\in E[x],
 \qquad n>0.
-\]
+$$
 The field
-\[
+$$
 K'=K(a_0,\ldots,a_n)
-\]
+$$
 is a finite extension of $K$, since each coefficient is algebraic over $K$.
 
 Because $F$ is algebraically closed, $f$ has a root $\alpha\in F$. The element

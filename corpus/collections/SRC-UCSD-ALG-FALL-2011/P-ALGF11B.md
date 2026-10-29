@@ -33,87 +33,87 @@ Your answer should be a simple formula involving known functions of $n$.
 
 ::: {.solution}
 Let
-\[
+$$
 N_n:=\#\{(\sigma,\tau)\in S_n\times S_n:\sigma\tau=\tau\sigma\}.
-\]
+$$
 We will prove
-\[
+$$
 N_n=n!\,p(n),
-\]
-where \(p(n)\) is the partition function, i.e. the number of partitions of \(n\).
+$$
+where $p(n)$ is the partition function, i.e. the number of partitions of $n$.
 
 ::: pf
 
 ::: {.pf-step #centralizer-sum}
-For a fixed \(\sigma\in S_n\), the number of \(\tau\in S_n\) commuting with \(\sigma\) is \(|C_{S_n}(\sigma)|\).
+For a fixed $\sigma\in S_n$, the number of $\tau\in S_n$ commuting with $\sigma$ is $|C_{S_n}(\sigma)|$.
 
 ::: pf-proof
 By definition,
-\[
+$$
 C_{S_n}(\sigma)
 =\{\tau\in S_n:\tau\sigma=\sigma\tau\}.
-\]
-Hence the number of possible second coordinates \(\tau\) for a fixed first coordinate \(\sigma\) is exactly the size of this centralizer.
+$$
+Hence the number of possible second coordinates $\tau$ for a fixed first coordinate $\sigma$ is exactly the size of this centralizer.
 Therefore
-\[
+$$
 N_n=\sum_{\sigma\in S_n}|C_{S_n}(\sigma)|.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #class-contributes-n-factorial}
-Each conjugacy class of \(S_n\) contributes exactly \(n!\) to the sum in step [](#centralizer-sum){.pf-ref}.
+Each conjugacy class of $S_n$ contributes exactly $n!$ to the sum in step [](#centralizer-sum){.pf-ref}.
 
 ::: pf-proof
-Let \(\mathcal C\) be the conjugacy class of \(\sigma\).
+Let $\mathcal C$ be the conjugacy class of $\sigma$.
 The orbit-stabilizer theorem for the conjugation action gives
-\[
+$$
 |\mathcal C|=[S_n:C_{S_n}(\sigma)]
 =\frac{n!}{|C_{S_n}(\sigma)|}.
-\]
+$$
 Centralizer size is constant on a conjugacy class.
-Hence the contribution of all elements of \(\mathcal C\) to the sum is
-\[
+Hence the contribution of all elements of $\mathcal C$ to the sum is
+$$
 |\mathcal C|\,|C_{S_n}(\sigma)|
 =\frac{n!}{|C_{S_n}(\sigma)|}|C_{S_n}(\sigma)|
 =n!.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #num-conjugacy-classes}
-The number of conjugacy classes in \(S_n\) is \(p(n)\).
+The number of conjugacy classes in $S_n$ is $p(n)$.
 
 ::: pf-proof
-Two permutations in \(S_n\) are conjugate if and only if they have the same cycle type.
+Two permutations in $S_n$ are conjugate if and only if they have the same cycle type.
 A cycle type is specified by positive integers
-\[
+$$
 1^{m_1}2^{m_2}\cdots n^{m_n}
-\]
+$$
 with
-\[
+$$
 \sum_{j=1}^n j m_j=n.
-\]
-Such data are exactly partitions of \(n\): the part \(j\) occurs \(m_j\) times.
-Thus the conjugacy classes of \(S_n\) are in bijection with the partitions of \(n\), and their number is \(p(n)\).
+$$
+Such data are exactly partitions of $n$: the part $j$ occurs $m_j$ times.
+Thus the conjugacy classes of $S_n$ are in bijection with the partitions of $n$, and their number is $p(n)$.
 :::
 
 :::
 
 ::: pf-step
 Therefore
-\[
+$$
 N_n=n!\,p(n).
-\]
+$$
 
 ::: pf-proof
-By step [](#class-contributes-n-factorial){.pf-ref}, every conjugacy class contributes \(n!\) commuting ordered pairs to the centralizer sum, and by step [](#num-conjugacy-classes){.pf-ref} there are \(p(n)\) conjugacy classes.
+By step [](#class-contributes-n-factorial){.pf-ref}, every conjugacy class contributes $n!$ commuting ordered pairs to the centralizer sum, and by step [](#num-conjugacy-classes){.pf-ref} there are $p(n)$ conjugacy classes.
 Hence
-\[
+$$
 N_n=n!\,p(n).
-\]
+$$
 :::
 
 :::

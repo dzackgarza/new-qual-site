@@ -36,15 +36,15 @@ Give an example of a quotient map in which the domain is Hausdorff, but the quot
 
 ::: {.solution}
 Define an equivalence relation on $\RR$ by
-\[
+$$
 x\sim y
 \quad\Longleftrightarrow\quad
 x-y\in\QQ,
-\]
+$$
 and let
-\[
+$$
 q:\RR\longrightarrow\RR/{\sim}
-\]
+$$
 be the quotient map.
 
 ::: pf
@@ -56,9 +56,9 @@ The domain $\RR$ is Hausdorff.
 ::: pf-proof
 
 The usual topology on $\RR$ is induced by the metric
-\[
+$$
 d(x,y)=|x-y|,
-\]
+$$
 and every metric space is Hausdorff.
 
 :::
@@ -72,44 +72,44 @@ Every nonempty open subset of $\RR/{\sim}$ is the whole quotient.
 ::: pf-proof
 
 Let
-\[
+$$
 V\subseteq\RR/{\sim}
-\]
+$$
 be nonempty and open.
 By definition of the quotient topology,
-\[
+$$
 U=q^{-1}(V)
-\]
+$$
 is a nonempty open subset of $\RR$.
 Choose $x\in U$ and $\varepsilon>0$ such that
-\[
+$$
 (x-\varepsilon,x+\varepsilon)\subseteq U.
-\]
+$$
 
 Fix arbitrary $y\in\RR$.
 The interval
-\[
+$$
 (x-y-\varepsilon,x-y+\varepsilon)
-\]
+$$
 contains some rational number $r$, since $\QQ$ is dense in $\RR$.
 Therefore
-\[
+$$
 y+r\in(x-\varepsilon,x+\varepsilon)\subseteq U.
-\]
+$$
 But
-\[
+$$
 (y+r)-y=r\in\QQ,
-\]
+$$
 so
-\[
+$$
 q(y+r)=q(y).
-\]
+$$
 Since $y+r\in U=q^{-1}(V)$, one has $q(y+r)\in V$, hence $q(y)\in V$.
 
 As $y$ was arbitrary and $q$ is surjective,
-\[
+$$
 V=\RR/{\sim}.
-\]
+$$
 Thus the quotient topology is indiscrete.
 
 :::
@@ -123,9 +123,9 @@ The quotient $\RR/{\sim}$ has at least two points.
 ::: pf-proof
 
 The classes of $0$ and $\sqrt2$ are distinct because
-\[
+$$
 \sqrt2-0\notin\QQ.
-\]
+$$
 
 :::
 
@@ -148,8 +148,8 @@ Any neighborhoods of two such points are therefore both the whole quotient and c
 :::
 
 Hence
-\[
+$$
 \boxed{q:\RR\to\RR/{\sim}}
-\]
+$$
 is a quotient map from a Hausdorff space onto a non-Hausdorff space.
 :::

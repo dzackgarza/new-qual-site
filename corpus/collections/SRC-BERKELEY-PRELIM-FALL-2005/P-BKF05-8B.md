@@ -27,15 +27,15 @@ audit:
 ---
 
 ::: {.problem}
-For \(R>0\), let
-\[
+For $R>0$, let
+$$
 \Gamma_R=\{z\in\CC:|z|=R,\ \operatorname{Im}z\ge0\}
-\]
+$$
 be the upper semicircle, oriented counterclockwise.
 Prove that
-\[
+$$
 \lim_{R\to\infty}\int_{\Gamma_R}\frac{e^{iz}}{z}\,dz=0.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -28,12 +28,12 @@ audit:
 
 ::: {.problem}
 Suppose $f$ is defined on $[-1,1]$ and $f'''$ is continuous. Show that
-\[
+$$
 \sum_{n=1}^\infty
 \left(
 n\left(f\left(\frac1n\right)-f\left(-\frac1n\right)\right)-2f'(0)
 \right)
-\]
+$$
 converges.
 :::
 

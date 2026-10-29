@@ -19,15 +19,15 @@ audit:
 ::: {.problem}
 If
 
-\[
+$$
 \det \begin{pmatrix} a & b & c \\ k & l & m \\ p & q & r \end{pmatrix} = d
-\]
+$$
 
 then
 
-\[
+$$
 \det \begin{pmatrix} k & 2(a - k) & p + k \\ l & 2(b - l) & q + l \\ m & 2(c - m) & r + m \end{pmatrix} =
-\]
+$$
 
 (A) $-8d$
 (B) $-6d$

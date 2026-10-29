@@ -24,14 +24,14 @@ audit:
 
 ::: {.problem}
 Let $f$ be entire and suppose
-\[
+$$
 |f(z)|=|\sin z|
-\]
+$$
 for every $z\in\CC$.
 Prove that there is a constant $C$ with $|C|=1$ such that
-\[
+$$
 f(z)=C\sin z.
-\]
+$$
 :::
 
 ::: {.solution}

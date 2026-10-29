@@ -30,28 +30,28 @@ Find the largest number $a$ that makes the following statement true:
 ::: {.solution}
 
 For fixed $x$, write
-\[
+$$
 u_n=\frac{(n!)^3}{(3n)!}x^{2n}.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 If $x\neq 0$, the ratio of successive absolute values satisfies
-\[
+$$
 \lim_{n\to\infty}\left|\frac{u_{n+1}}{u_n}\right|
 =\frac{x^2}{27}.
-\]
+$$
 
 
 ::: pf-proof
 
 For $x\neq 0$,
-\[
+$$
 \left|\frac{u_{n+1}}{u_n}\right|
 =\frac{(n+1)^3x^2}{(3n+3)(3n+2)(3n+1)}.
-\]
+$$
 Dividing numerator and denominator by $n^3$ and taking the limit gives
 $x^2/(3\cdot3\cdot3)=x^2/27$.
 

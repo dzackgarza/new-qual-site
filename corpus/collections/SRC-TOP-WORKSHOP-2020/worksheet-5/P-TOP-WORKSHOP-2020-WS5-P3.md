@@ -31,29 +31,29 @@ Justify your answer.
 
 ::: {.solution}
 (a) Define
-\[
+$$
 r:\RR^2\to[0,\infty),
 \qquad
 r(x,y)=\sqrt{x^2+y^2}.
-\]
-The fibers of \(r\) are exactly the equivalence classes. Therefore \(r\) factors uniquely through a bijection
-\[
+$$
+The fibers of $r$ are exactly the equivalence classes. Therefore $r$ factors uniquely through a bijection
+$$
 \bar r:X=\RR^2/{\sim}\ \longrightarrow[0,\infty)
-\]
-with \(r=\bar r\circ p\). Since \(p\) is a quotient map and \(r\) is continuous, \(\bar r\) is continuous. Its inverse is
-\[
+$$
+with $r=\bar r\circ p$. Since $p$ is a quotient map and $r$ is continuous, $\bar r$ is continuous. Its inverse is
+$$
 [0,\infty)\to X,
 \qquad
 t\mapsto p(t,0),
-\]
-which is continuous as the composite of the continuous inclusion \(t\mapsto(t,0)\) with \(p\). Thus
-\[
+$$
+which is continuous as the composite of the continuous inclusion $t\mapsto(t,0)$ with $p$. Thus
+$$
 X\cong[0,\infty).
-\]
+$$
 
-(b) The quotient map \(p\) is not a covering map. For every \(r>0\), the fiber over the class of radius \(r\) is the circle
-\[
+(b) The quotient map $p$ is not a covering map. For every $r>0$, the fiber over the class of radius $r$ is the circle
+$$
 p^{-1}([r])=\{(x,y):x^2+y^2=r^2\}.
-\]
-Fibers of a covering map are discrete subspaces of the total space, but this circle is not discrete. Hence \(p\) cannot be a covering map.
+$$
+Fibers of a covering map are discrete subspaces of the total space, but this circle is not discrete. Hence $p$ cannot be a covering map.
 :::

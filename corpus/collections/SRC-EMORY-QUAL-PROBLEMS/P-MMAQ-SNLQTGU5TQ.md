@@ -50,9 +50,9 @@ Definition of the poset of linearly independent subsets:
 
 ::: pf-step
 Let $V$ be a vector space over a field $F$. Define:
-\[
+$$
 \mathcal{P} = \{S \subseteq V \mid S \text{ is linearly independent over } F\},
-\]
+$$
 partially ordered by set inclusion $\subseteq$.
 
 ::: pf-proof

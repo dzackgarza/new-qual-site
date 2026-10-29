@@ -32,9 +32,9 @@ audit:
 1. Give an example of a differentiable function $f:\RR\to\RR$ whose derivative $f'$ is not continuous.
 
 2. Let $f$ be differentiable and suppose
-   \[
+   $$
    f'(0)<2<f'(1).
-   \]
+   $$
    Prove that $f'(x)=2$ for some $x\in[0,1]$.
 :::
 

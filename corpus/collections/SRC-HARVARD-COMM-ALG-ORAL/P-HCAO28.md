@@ -37,9 +37,9 @@ Let $S=k[x_1,\ldots,x_n]$.
 ::: pf-step
 A term order is a total order $\prec$ on the monomials of $S$ such that
 $1\preceq m$ for every monomial $m$ and
-\[
+$$
 m\prec n\implies mp\prec np
-\]
+$$
 for every monomial $p$.
 
 ::: pf-proof
@@ -65,10 +65,10 @@ coefficients.
 
 ::: pf-step
 For an ideal $I\subseteq S$, its initial ideal is
-\[
+$$
 \operatorname{in}_\prec(I)
 =\langle \operatorname{in}_\prec(f):0\ne f\in I\rangle.
-\]
+$$
 
 ::: pf-proof
 This is a monomial ideal by construction.
@@ -79,11 +79,11 @@ This is a monomial ideal by construction.
 ::: pf-step
 A finite subset $G=\{g_1,\ldots,g_r\}\subseteq I$ is a Gröbner basis
 of $I$ with respect to $\prec$ if
-\[
+$$
 \operatorname{in}_\prec(I)
 =\langle \operatorname{in}_\prec(g_1),\ldots,
 \operatorname{in}_\prec(g_r)\rangle.
-\]
+$$
 
 ::: pf-proof
 This is the defining property. Equivalently, every nonzero $f\in I$ has initial

@@ -26,13 +26,13 @@ Make sure to prove that your chosen set $B$ is in fact a basis.
 ::: {.solution}
 
 Let
-\[
+$$
 \lambda_1,\ldots,\lambda_n
-\]
+$$
 be the distinct roots of the characteristic polynomial of $T$. For each $i$, choose a nonzero vector $v_i\in V$ satisfying
-\[
+$$
 Tv_i=\lambda_i v_i.
-\]
+$$
 
 ::: pf
 
@@ -44,21 +44,21 @@ The vectors $v_1,\ldots,v_n$ are linearly independent.
 ::: pf-proof
 
 Suppose
-\[
+$$
 \sum_{i=1}^n c_i v_i=0.
-\]
+$$
 Fix $j\in\{1,\ldots,n\}$ and apply the linear operator
-\[
+$$
 p_j(T)=\prod_{\substack{1\le i\le n\\ i\ne j}}(T-\lambda_i I)
-\]
+$$
 to this relation. If $i\ne j$, then the factor $T-\lambda_i I$ annihilates $v_i$, so all terms except the $j$th vanish. Since $v_j$ is an eigenvector with eigenvalue $\lambda_j$,
-\[
+$$
 0
 =
 p_j(T)\left(\sum_{i=1}^n c_i v_i\right)
 =
 c_j\prod_{i\ne j}(\lambda_j-\lambda_i)v_j.
-\]
+$$
 The eigenvalues are distinct, so every factor $\lambda_j-\lambda_i$ is nonzero, and $v_j\ne0$. Hence $c_j=0$. Since $j$ was arbitrary, all coefficients vanish. Thus $v_1,\ldots,v_n$ are linearly independent.
 
 :::
@@ -68,9 +68,9 @@ The eigenvalues are distinct, so every factor $\lambda_j-\lambda_i$ is nonzero, 
 ::: {.pf-step #s1-2}
 
 The ordered set
-\[
+$$
 B=(v_1,\ldots,v_n)
-\]
+$$
 is a basis of $V$.
 
 
@@ -85,17 +85,17 @@ By step [](#s1-1){.pf-ref}, $B$ consists of $n$ linearly independent vectors. Si
 ::: {.pf-step #s1-3}
 
 The matrix of $T$ in the basis $B$ is
-\[
+$$
 \boxed{[T]_B=\operatorname{diag}(\lambda_1,\ldots,\lambda_n)}.
-\]
+$$
 
 
 ::: pf-proof
 
 For each basis vector $v_i$, one has
-\[
+$$
 Tv_i=\lambda_i v_i.
-\]
+$$
 Therefore the $i$th column of $[T]_B$ has the single nonzero entry $\lambda_i$ in position $i$, which is precisely the displayed diagonal matrix.
 
 :::

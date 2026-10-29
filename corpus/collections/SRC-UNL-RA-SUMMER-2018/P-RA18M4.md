@@ -93,19 +93,19 @@ $S$ is not closed in $C_b[0,1]$.
 
 ::: pf-proof
 define
-\[
+$$
 f_n(x)=M\left(\sqrt{(x-\tfrac12)^2+n^{-2}}-\sqrt{\tfrac14+n^{-2}}\right).
-\]
+$$
 Then $f_n(0)=0$, and on $(0,1)$
-\[
+$$
 f_n'(x)=M\frac{x-\tfrac12}{\sqrt{(x-\tfrac12)^2+n^{-2}}},
-\]
+$$
 so $|f_n'(x)|\le M$. Hence $f_n\in S$.
 
 Since $|\sqrt{t^2+n^{-2}}-|t||\le n^{-1}$ uniformly in $t$, we have uniform convergence
-\[
+$$
 f_n(x)\longrightarrow f(x):=M\left(|x-\tfrac12|-\tfrac12\right)
-\]
+$$
 on $[0,1]$. The limit satisfies $f(0)=0$ but is not differentiable at the interior point $x=1/2$. Thus $f\notin S$, so $S$ is not closed.
 :::
 

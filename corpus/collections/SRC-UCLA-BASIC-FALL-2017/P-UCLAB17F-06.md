@@ -27,9 +27,9 @@ For each field $F=\RR$, $\CC$, and $\FF_3$, determine whether every symmetric ma
 ::: {.pf-step #s1-1}
 
 Over
-\[
+$$
 F=\RR,
-\]
+$$
 every symmetric $2\times2$ matrix is diagonalizable.
 
 
@@ -37,9 +37,9 @@ every symmetric $2\times2$ matrix is diagonalizable.
 
 The real spectral theorem states that every real symmetric matrix is orthogonally diagonalizable.
 Hence every symmetric matrix in
-\[
+$$
 M_2(\RR)
-\]
+$$
 is diagonalizable over $\RR$.
 
 :::
@@ -49,28 +49,28 @@ is diagonalizable over $\RR$.
 ::: {.pf-step #s1-2}
 
 Over
-\[
+$$
 F=\CC,
-\]
+$$
 the assertion is false.
 
 
 ::: pf-proof
 
 Consider
-\[
+$$
 A=
 \begin{pmatrix}
 i&1\\
 1&-i
 \end{pmatrix}.
-\]
+$$
 This matrix is symmetric:
-\[
+$$
 A^T=A.
-\]
+$$
 Direct multiplication gives
-\[
+$$
 A^2
 =
 \begin{pmatrix}
@@ -82,20 +82,20 @@ i-i&1+(-i)^2
 0&0\\
 0&0
 \end{pmatrix}.
-\]
+$$
 Thus $A$ is nilpotent and nonzero.
 
 If $A$ were diagonalizable, it would be similar to a diagonal matrix whose diagonal entries are its eigenvalues.
 Since $A^2=0$, every eigenvalue satisfies
-\[
+$$
 \lambda^2=0,
-\]
+$$
 so every eigenvalue is $0$.
 The only diagonal matrix with both diagonal entries zero is the zero matrix.
 Thus a diagonalizable nilpotent matrix must be zero, contradicting
-\[
+$$
 A\ne0.
-\]
+$$
 Hence $A$ is not diagonalizable.
 
 :::
@@ -105,26 +105,26 @@ Hence $A$ is not diagonalizable.
 ::: {.pf-step #s1-3}
 
 Over
-\[
+$$
 F=\FF_3,
-\]
+$$
 the assertion is also false.
 
 
 ::: pf-proof
 
 Consider
-\[
+$$
 A=
 \begin{pmatrix}
 0&1\\
 1&1
 \end{pmatrix}
 \in M_2(\FF_3).
-\]
+$$
 It is symmetric.
 Its characteristic polynomial is
-\[
+$$
 \begin{aligned}
 \chi_A(\lambda)
 &=
@@ -138,17 +138,17 @@ Its characteristic polynomial is
 &=
 \lambda^2-\lambda-1.
 \end{aligned}
-\]
+$$
 In $\FF_3$, this polynomial takes the values
-\[
+$$
 \chi_A(0)=-1=2,
-\]
-\[
+$$
+$$
 \chi_A(1)=1-1-1=-1=2,
-\]
-\[
+$$
+$$
 \chi_A(2)=4-2-1=1.
-\]
+$$
 Thus it has no root in $\FF_3$.
 Therefore $A$ has no eigenvalue in $\FF_3$, so it cannot be diagonalizable over $\FF_3$.
 
@@ -159,7 +159,7 @@ Therefore $A$ has no eigenvalue in $\FF_3$, so it cannot be diagonalizable over 
 ::: {.pf-step #s1-4}
 
 Therefore the complete answer is
-\[
+$$
 \boxed{
 \begin{array}{c|c}
 F&\text{every symmetric }2\times2\text{ matrix diagonalizable?}\\
@@ -169,7 +169,7 @@ F&\text{every symmetric }2\times2\text{ matrix diagonalizable?}\\
 \FF_3&\text{no}
 \end{array}
 }
-\]
+$$
 
 
 ::: pf-proof

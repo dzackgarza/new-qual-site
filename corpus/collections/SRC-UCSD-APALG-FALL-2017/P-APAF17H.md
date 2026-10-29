@@ -33,11 +33,11 @@ The statement is false.
 ::: {.pf-step #s1}
 
 Let
-\[
+$$
 G=\left\langle\begin{pmatrix}-1&0\\0&1\end{pmatrix}\right\rangle,
 \qquad
 H=\langle -I_2\rangle.
-\]
+$$
 Then $G,H\le \mathrm{GL}_2(\CC)$ and $G\cong H\cong C_2$.
 
 ::: pf-proof
@@ -51,30 +51,30 @@ Each displayed generator has order $2$ and is not the identity, so each subgroup
 ::: {.pf-step #s2}
 
 The invariant ring of $G$ is
-\[
+$$
 \CC[x,y]^G=\CC[x^2,y],
-\]
+$$
 and its Hilbert series is
-\[
+$$
 \operatorname{Hilb}_{\CC[x,y]^G}(t)
 =\frac{1}{(1-t^2)(1-t)}.
-\]
+$$
 
 ::: pf-proof
 
 The nonidentity element of $G$ acts by
-\[
+$$
 (x,y)\longmapsto(-x,y).
-\]
+$$
 Thus a monomial $x^ay^b$ is invariant exactly when $a$ is even. Therefore the invariant monomials are precisely
-\[
+$$
 (x^2)^cy^b,
 \qquad b,c\ge0,
-\]
+$$
 which form the polynomial ring $\CC[x^2,y]$. Since $x^2$ has degree $2$ and $y$ has degree $1$, its Hilbert series is
-\[
+$$
 \frac1{(1-t^2)(1-t)}.
-\]
+$$
 
 :::
 
@@ -83,31 +83,31 @@ which form the polynomial ring $\CC[x^2,y]$. Since $x^2$ has degree $2$ and $y$ 
 ::: {.pf-step #s3}
 
 The invariant ring of $H$ consists of the polynomials all of whose monomials have even total degree. Its Hilbert series is
-\[
+$$
 \operatorname{Hilb}_{\CC[x,y]^H}(t)
 =\frac12\left(\frac1{(1-t)^2}+\frac1{(1+t)^2}\right)
 =\frac{1+t^2}{(1-t^2)^2}.
-\]
+$$
 
 ::: pf-proof
 
 The nonidentity element $-I_2$ acts by
-\[
+$$
 (x,y)\longmapsto(-x,-y).
-\]
+$$
 Hence
-\[
+$$
 x^ay^b\longmapsto(-1)^{a+b}x^ay^b,
-\]
+$$
 so a monomial is invariant exactly when $a+b$ is even. The dimension of the degree-$d$ invariant subspace is therefore $d+1$ for even $d$ and $0$ for odd $d$. Equivalently, averaging the ordinary Hilbert series over the two parity actions gives
-\[
+$$
 \frac12\left(\sum_{d\ge0}(d+1)t^d+\sum_{d\ge0}(d+1)(-t)^d\right)
 =\frac12\left(\frac1{(1-t)^2}+\frac1{(1+t)^2}\right).
-\]
+$$
 A direct simplification gives
-\[
+$$
 \frac{1+t^2}{(1-t^2)^2}.
-\]
+$$
 
 :::
 
@@ -120,11 +120,11 @@ The two Hilbert series are different.
 ::: pf-proof
 
 Already in degree $1$ one has
-\[
+$$
 \dim_\CC(\CC[x,y]^G)_1=1,
 \qquad
 \dim_\CC(\CC[x,y]^H)_1=0,
-\]
+$$
 because $y$ is $G$-invariant while $H$ has no nonzero linear invariants. Therefore the Hilbert series cannot agree.
 
 :::

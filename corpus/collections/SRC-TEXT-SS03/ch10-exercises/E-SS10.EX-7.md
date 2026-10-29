@@ -39,44 +39,44 @@ which holds for $| x | < 1$
 
 ::: {.solution}
 We use the Jacobi triple product in the form
-\[
+$$
 \sum_{n\in\ZZ}z^n q^{n(n+1)/2}
 =\prod_{m=1}^\infty(1-q^m)(1+zq^m)(1+z^{-1}q^{m-1}),
 \qquad |q|<1.
 \tag{1}
-\]
+$$
 
-For part (a), set \(z=1\) and \(q=x\). Then
-\[
+For part (a), set $z=1$ and $q=x$. Then
+$$
 \sum_{n\in\ZZ}x^{n(n+1)/2}
 =\prod_{m=1}^\infty(1-x^m)(1+x^m)(1+x^{m-1}).
-\]
-Since \((1-x^m)(1+x^m)=1-x^{2m}\), this is
-\[
+$$
+Since $(1-x^m)(1+x^m)=1-x^{2m}$, this is
+$$
 \prod_{n=0}^\infty(1+x^n)(1-x^{2n+2}),
-\]
+$$
 which proves the triangular-number identity.
 
 For part (b), in (1) take
-\[
+$$
 q=x^5,
 \qquad z=-x^{-1}.
-\]
+$$
 The series side becomes
-\[
+$$
 \sum_{n\in\ZZ}(-1)^n
 x^{-n}x^{5n(n+1)/2}
 =\sum_{n\in\ZZ}(-1)^n x^{n(5n+3)/2}.
-\]
+$$
 The product side is
-\[
+$$
 \prod_{m=1}^\infty
 (1-x^{5m})(1-x^{5m-1})(1-x^{5m-4}).
-\]
-Putting \(n=m-1\) in the last two factors rewrites this as
-\[
+$$
+Putting $n=m-1$ in the last two factors rewrites this as
+$$
 \prod_{n=0}^\infty
 (1-x^{5n+1})(1-x^{5n+4})(1-x^{5n+5}),
-\]
+$$
 which is the septagonal-number identity.
 :::

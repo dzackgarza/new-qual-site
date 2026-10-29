@@ -35,18 +35,18 @@ Neither the interior nor the boundary of a connected set need be connected.
 For the interior, let $A$ be the union of two closed disks in $\RR^2$ tangent at one point. The set $A$ is connected, but its interior is the disjoint union of the two open disks, hence is disconnected.
 
 For the boundary, take the closed annulus
-\[
+$$
 A=\{(x,y):1\le x^2+y^2\le4\}.
-\]
+$$
 It is connected, while its boundary is the disjoint union of the two circles $x^2+y^2=1$ and $x^2+y^2=4$.
 
 The converse also fails. Take $A=\QQ\subset\RR$. Then $A$ is disconnected, but
-\[
+$$
 \operatorname{Int}A=\varnothing
-\]
+$$
 is connected, and since $\QQ$ is dense,
-\[
+$$
 \operatorname{Bd}A=\RR,
-\]
+$$
 which is connected.
 :::

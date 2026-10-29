@@ -24,9 +24,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_{-\infty}^{\infty}\frac{e^{-ix}}{x^2-2x+4}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}

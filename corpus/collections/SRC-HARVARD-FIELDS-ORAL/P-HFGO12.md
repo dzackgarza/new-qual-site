@@ -27,17 +27,17 @@ Give an example of an inseparable field extension.
 
 ::: {.solution}
 Let $p$ be prime, let
-\[
+$$
 F=\FF_p(t),
-\]
+$$
 and let $u$ satisfy
-\[
+$$
 u^p=t.
-\]
+$$
 Then
-\[
+$$
 E=F(u)/F
-\]
+$$
 is an inseparable extension of degree $p$.
 
 ::: pf
@@ -45,9 +45,9 @@ is an inseparable extension of degree $p$.
 ::: {.pf-step #s1}
 
 The polynomial
-\[
+$$
 f(x)=x^p-t\in F[x]
-\]
+$$
 is irreducible.
 
 ::: pf-proof
@@ -69,13 +69,13 @@ The polynomial $f$ is inseparable.
 ::: pf-proof
 
 In characteristic $p$,
-\[
+$$
 f'(x)=p x^{p-1}=0.
-\]
+$$
 In an algebraic closure, if $u^p=t$, then
-\[
+$$
 x^p-t=x^p-u^p=(x-u)^p,
-\]
+$$
 so the unique root $u$ has multiplicity $p$.
 
 :::

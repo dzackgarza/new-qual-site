@@ -52,9 +52,9 @@ If "the finite complement topology" means the cofinite topology directly on the 
 ::: pf-proof
 In the cofinite topology on an infinite set, the proper closed subsets are precisely the finite subsets.
 Since $X$ is uncountable, the diagonal
-\[
+$$
 \Delta=\{(x,x):x\in X\}
-\]
+$$
 is in bijection with $X$ and is therefore uncountable, hence infinite.
 It is also a proper subset of $X\times X$ because $X$ has at least two distinct points, so an off-diagonal pair belongs to its complement.
 Thus $\Delta$ is neither finite nor all of $X\times X$, and hence is not closed in the cofinite topology on $X\times X$.
@@ -68,26 +68,26 @@ If $X$ carries the cofinite topology and $X\times X$ carries the product topolog
 ::: pf-proof
 Choose distinct points $a,b\in X$.
 Suppose there were a basic product neighborhood
-\[
+$$
 (a,b)\in U\times V
-\]
+$$
 with
-\[
+$$
 (U\times V)\cap\Delta=\varnothing,
-\]
+$$
 where $U,V$ are nonempty cofinite open subsets of $X$.
 The intersection $U\cap V$ is cofinite, hence nonempty because $X$ is infinite.
 Choose $z\in U\cap V$.
 Then
-\[
+$$
 (z,z)\in U\times V
-\]
+$$
 and also $(z,z)\in\Delta$, a contradiction.
 Therefore every basic neighborhood of the off-diagonal point $(a,b)$ meets $\Delta$.
 Hence
-\[
+$$
 (a,b)\in\overline\Delta\setminus\Delta,
-\]
+$$
 so $\Delta$ is not closed.
 :::
 
@@ -99,10 +99,10 @@ If the intended topology was instead the countable-closed topology defined in th
 ::: pf-proof
 The open nonempty subsets of the countable-closed topology are the complements of countable subsets of $X$.
 If $U,V$ are two such nonempty open sets, then
-\[
+$$
 X\setminus(U\cap V)
 =(X\setminus U)\cup(X\setminus V)
-\]
+$$
 is countable.
 Since $X$ is uncountable, $U\cap V$ is nonempty.
 

@@ -17,13 +17,13 @@ audit:
 
 ::: {.problem}
 Let $f$ be analytic on the disk $\Delta(z_0,r)$ and suppose there is $m>0$ such that
-\[
+$$
 |f(z)-f(z_0)|\le m\qquad(z\in\Delta(z_0,r)).
-\]
+$$
 Prove
-\[
+$$
 |f'(z_0)|\le \frac mr.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -33,33 +33,33 @@ Prove
 ::: {.pf-step #s1-1}
 
 For every $\rho$ with $0<\rho<r$,
-\[
+$$
 |f'(z_0)|\le \frac m\rho.
-\]
+$$
 
 
 ::: pf-proof
 
 Set
-\[
+$$
 g(z)=f(z)-f(z_0).
-\]
+$$
 Then $g$ is analytic on $\Delta(z_0,r)$, $g'(z_0)=f'(z_0)$, and
 $|g(z)|\le m$ throughout the disk. For $0<\rho<r$, Cauchy's derivative
 formula on the circle $|\zeta-z_0|=\rho$ gives
-\[
+$$
 g'(z_0)
 =\frac1{2\pi i}
 \int_{|\zeta-z_0|=\rho}
 \frac{g(\zeta)}{(\zeta-z_0)^2}\,d\zeta.
-\]
+$$
 Therefore
-\[
+$$
 |f'(z_0)|
 =|g'(z_0)|
 \le \frac1{2\pi}(2\pi\rho)\frac m{\rho^2}
 =\frac m\rho.
-\]
+$$
 
 :::
 
@@ -68,17 +68,17 @@ Therefore
 ::: {.pf-step #s1-2}
 
 One has
-\[
+$$
 \boxed{|f'(z_0)|\le\frac mr}.
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-1){.pf-ref} holds for every $0<\rho<r$. Letting $\rho\uparrow r$ yields
-\[
+$$
 |f'(z_0)|\le\frac mr.
-\]
+$$
 
 :::
 

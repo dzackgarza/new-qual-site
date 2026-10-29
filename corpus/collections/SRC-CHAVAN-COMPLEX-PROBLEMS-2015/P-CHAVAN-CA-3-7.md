@@ -14,9 +14,9 @@ audit:
 
 ::: {.problem}
 Find the number of zeros of
-\[
+$$
 3e^z-z
-\]
+$$
 in the closed unit disk centered at the origin.
 :::
 

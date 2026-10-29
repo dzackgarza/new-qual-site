@@ -25,10 +25,10 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 G=\left\{\begin{pmatrix}a&b\\0&a^{-1}\end{pmatrix}:a,b\in\RR,\ a>0\right\},\qquad
 N=\left\{\begin{pmatrix}1&b\\0&1\end{pmatrix}:b\in\RR\right\}.
-\]
+$$
 
 (a) Show that $N\triangleleft G$ and prove $G/N\cong\RR$.
 

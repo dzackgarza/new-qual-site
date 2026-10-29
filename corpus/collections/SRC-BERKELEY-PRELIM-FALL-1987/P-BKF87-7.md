@@ -14,9 +14,9 @@ audit:
 
 ::: {.problem}
 Let $A,B$ be real symmetric $n\times n$ matrices, with $B$ positive definite. For $x\ne0$, define
-\[
+$$
 G(x)=\frac{\langle Ax,x\rangle}{\langle Bx,x\rangle}.
-\]
+$$
 
 1. Show that $G$ attains its maximum value.
 2. Show that any maximum point is an eigenvector of a matrix naturally associated to $A$ and $B$, and identify that matrix.

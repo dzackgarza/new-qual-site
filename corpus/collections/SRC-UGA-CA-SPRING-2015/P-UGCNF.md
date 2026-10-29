@@ -21,36 +21,36 @@ half plane ${\halfplane}=\{z=x+iy:\ y>0\}$.
 
 ::: {.solution}
 Let
-\[
+$$
 G=\{z:|z|<1,\ \operatorname{Im}z>0\}.
-\]
+$$
 For $z=x+iy$,
-\[
+$$
 \operatorname{Im}\left(z+\frac1z\right)
 =y-\frac{y}{|z|^2}
 =y\left(1-\frac1{|z|^2}\right)<0
-\]
+$$
 on $G$. Hence
-\[
+$$
 \operatorname{Im}f(z)>0,
-\]
+$$
 so $f(G)\subset\halfplane$.
 
 Also
-\[
+$$
 f'(z)=-\frac12\left(1-\frac1{z^2}\right).
-\]
+$$
 Its zeros are $z=\pm1$, which lie on the boundary, so $f'$ never vanishes in
 $G$.
 
 To prove injectivity, suppose $f(z_1)=f(z_2)$. Then
-\[
+$$
 z_1+\frac1{z_1}=z_2+\frac1{z_2},
-\]
+$$
 so
-\[
+$$
 (z_1-z_2)\left(1-\frac1{z_1z_2}\right)=0.
-\]
+$$
 If $z_1\ne z_2$, then $z_1z_2=1$, impossible because
 $|z_1z_2|<1$. Thus $z_1=z_2$.
 

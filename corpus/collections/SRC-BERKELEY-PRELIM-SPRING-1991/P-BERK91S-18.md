@@ -19,11 +19,11 @@ audit:
 
 ::: {.problem}
 Let $f$ be real-valued on an open interval containing $a$, and suppose $f$ is differentiable at $a$. If $(x_n)$ is increasing, $(y_n)$ is decreasing, and both sequences converge to $a$, prove that
-\[
+$$
 \lim_{n\to\infty}
 \frac{f(y_n)-f(x_n)}{y_n-x_n}
 =f'(a).
-\]
+$$
 :::
 
 ::: {.solution}

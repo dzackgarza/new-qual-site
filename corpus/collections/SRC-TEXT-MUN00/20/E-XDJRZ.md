@@ -45,46 +45,46 @@ is a well-defined metric on $X$.
 
 ::: {.solution}
 Let
-\[
+$$
 X=\left\{\mathbf x=(x_i):\sum_i x_i^2<\infty\right\}.
-\]
+$$
 
 (a) For each $n$, the finite-dimensional Cauchy--Schwarz inequality of [[E-UDRRC]](b) gives
-\[
+$$
 \sum_{i=1}^n|x_iy_i|
 \le\left(\sum_{i=1}^n x_i^2\right)^{1/2}
    \left(\sum_{i=1}^n y_i^2\right)^{1/2}
 \le \|\mathbf x\|_2\|\mathbf y\|_2.
-\]
+$$
 The partial sums on the left are increasing and bounded, hence converge. Thus $\sum|x_iy_i|$ converges.
 
 (b) For scalars $c$,
-\[
+$$
 \sum_i(cx_i)^2=c^2\sum_i x_i^2<\infty.
-\]
+$$
 Also
-\[
+$$
 (x_i+y_i)^2\le2x_i^2+2y_i^2,
-\]
+$$
 so
-\[
+$$
 \sum_i(x_i+y_i)^2\le2\sum_i x_i^2+2\sum_i y_i^2<\infty.
-\]
+$$
 Hence $X$ is closed under scalar multiplication and addition.
 
 (c) Part (b) shows $\mathbf x-\mathbf y\in X$, so
-\[
+$$
 d(\mathbf x,\mathbf y)=\left(\sum_i(x_i-y_i)^2\right)^{1/2}
-\]
+$$
 is finite. Nonnegativity, symmetry, and definiteness are immediate. For the triangle inequality, part (a) gives the infinite Cauchy--Schwarz inequality, so for $u,v\in X$,
-\[
+$$
 \|u+v\|_2^2
 =\|u\|_2^2+2\sum_i u_iv_i+\|v\|_2^2
 \le(\|u\|_2+\|v\|_2)^2.
-\]
+$$
 Thus $\|u+v\|_2\le\|u\|_2+\|v\|_2$. Applying this to
-\[
+$$
 u=\mathbf x-\mathbf y,\qquad v=\mathbf y-\mathbf z
-\]
+$$
 gives the triangle inequality for $d$. Hence $d$ is a metric on $X$.
 :::

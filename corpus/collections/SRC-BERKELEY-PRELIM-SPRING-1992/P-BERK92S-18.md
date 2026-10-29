@@ -20,13 +20,13 @@ audit:
 
 ::: {.problem}
 Let $f$ be entire, real-valued on the real axis, and suppose
-\[
+$$
 \operatorname{Im}f(z)>0
-\]
+$$
 whenever $\operatorname{Im}z>0$. Prove that
-\[
+$$
 f'(x)>0
-\]
+$$
 for every real $x$.
 :::
 

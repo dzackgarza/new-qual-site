@@ -27,9 +27,9 @@ audit:
 ::: {.problem}
 Let $C^0[0,1]$ be the real vector space of continuous functions $[0,1]\to\RR$.
 Show that the linear operator $T:C^0[0,1]\to C^0[0,1]$ defined by
-\[
+$$
 (Tf)(x)=\int_0^x f(y)\,dy
-\]
+$$
 has no nonzero eigenvectors.
 :::
 

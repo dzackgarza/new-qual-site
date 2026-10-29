@@ -25,14 +25,14 @@ audit:
 
 ::: {.problem}
 Over $\FF_3=\ZZ/3\ZZ$, find the eigenvalues, eigenvectors, and Jordan canonical form of
-\[
+$$
 A=
 \begin{pmatrix}
 2&1&1\\
 1&2&1\\
 1&1&2
 \end{pmatrix}.
-\]
+$$
 :::
 
 ::: {.solution}

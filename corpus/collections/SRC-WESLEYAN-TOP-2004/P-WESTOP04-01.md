@@ -15,9 +15,9 @@ audit:
 
 ::: {.problem}
 For $a<b$ and a continuous function
-\[
+$$
 f:[a,b]\to\RR,
-\]
+$$
 prove that the image of $f$ is a closed bounded interval.
 :::
 

@@ -57,19 +57,19 @@ Choose $x$ uniformly from $[0,1)$. The ambiguity of terminating decimal expansio
 ::: {.pf-step #s1-1}
 
 For each fixed digit $i\in\{0,\ldots,9\}$, define
-\[
+$$
 X_k^{(i)}=\mathbf1_{\{a_k=i\}}.
-\]
+$$
 Then the variables $X_k^{(i)}$ are independent Bernoulli variables with parameter $1/10$.
 
 
 ::: pf-proof
 
 For any prescribed digits $d_1,\ldots,d_m$, the set of $x\in[0,1)$ whose first $m$ decimal digits equal this string is a half-open interval of length $10^{-m}$. Therefore
-\[
+$$
 P(a_1=d_1,\ldots,a_m=d_m)=10^{-m}
 =\prod_{k=1}^mP(a_k=d_k),
-\]
+$$
 with each marginal probability $1/10$. Thus the decimal digits are independent and uniform, and the indicators have the claimed Bernoulli law.
 
 :::
@@ -79,13 +79,13 @@ with each marginal probability $1/10$. Thus the decimal digits are independent a
 ::: {.pf-step #s1-2}
 
 Since
-\[
+$$
 I_n(i)=\sum_{k=1}^nX_k^{(i)},
-\]
+$$
 the strong law of large numbers gives
-\[
+$$
 P\left(\lim_{n\to\infty}\frac{I_n(i)}n=\frac1{10}\right)=1.
-\]
+$$
 
 
 ::: pf-proof
@@ -104,11 +104,11 @@ In fact, with probability one the limit in step [](#s1-2){.pf-ref} holds simulta
 ::: pf-proof
 
 For each digit $i$, let $E_i$ be the probability-one event from step [](#s1-2){.pf-ref}. Since there are only ten digits,
-\[
+$$
 P\left(\bigcap_{i=0}^9E_i\right)
 =1-P\left(\bigcup_{i=0}^9E_i^c\right)
 \geq1-\sum_{i=0}^9P(E_i^c)=1.
-\]
+$$
 
 :::
 
@@ -130,9 +130,9 @@ In the long-division algorithm for a rational $a/b$, each successive digit is de
 ::: {.pf-step #s1-5}
 
 Rational numbers are not necessarily normal in the digit-frequency sense used in the problem; for example,
-\[
+$$
 \boxed{1/3=0.333\ldots}
-\]
+$$
 is not normal.
 
 
@@ -147,9 +147,9 @@ For $1/3$, the limiting frequency of digit $3$ is $1$, while the limiting freque
 ::: {.pf-step #s1-6}
 
 The number in part (c),
-\[
+$$
 0.1234567891011121314\ldots,
-\]
+$$
 obtained by concatenating the positive integers, is normal in base $10$.
 
 

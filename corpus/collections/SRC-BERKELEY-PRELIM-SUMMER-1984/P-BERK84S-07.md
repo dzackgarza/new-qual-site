@@ -39,13 +39,13 @@ $$
 
 ::: {.solution}
 Define
-\[
+$$
 F(x,y)=\bigl(f(x),-y+xf(x)\bigr).
-\]
+$$
 Let
-\[
+$$
 (u_0,v_0)=F(x_0,y_0).
-\]
+$$
 
 ::: pf
 
@@ -56,17 +56,17 @@ The map $F$ is locally invertible at $(x_0,y_0)$.
 ::: pf-proof
 
 Its derivative is
-\[
+$$
 DF(x,y)=
 \begin{pmatrix}
 f'(x)&0\\
 f(x)+xf'(x)&-1
 \end{pmatrix}.
-\]
+$$
 Hence
-\[
+$$
 \det DF(x_0,y_0)=-f'(x_0)\ne0.
-\]
+$$
 By the inverse function theorem, $F$ is a $C^1$ diffeomorphism between neighborhoods of $(x_0,y_0)$ and $(u_0,v_0)$.
 
 :::
@@ -80,27 +80,27 @@ The local inverse has the required form.
 ::: pf-proof
 
 Since $f'(x_0)\ne0$, the one-variable inverse function theorem gives neighborhoods of $x_0$ and $u_0=f(x_0)$ on which $f$ has a $C^1$ inverse $g$. Thus from
-\[
+$$
 u=f(x)
-\]
+$$
 we obtain
-\[
+$$
 x=g(u).
-\]
+$$
 The second coordinate equation is
-\[
+$$
 v=-y+xf(x)=-y+xu.
-\]
+$$
 Therefore
-\[
+$$
 y=-v+xu=-v+u\,g(u).
-\]
+$$
 Hence the local inverse is
-\[
+$$
 \boxed{
 F^{-1}(u,v)=\bigl(g(u),-v+u\,g(u)\bigr).
 }
-\]
+$$
 
 :::
 

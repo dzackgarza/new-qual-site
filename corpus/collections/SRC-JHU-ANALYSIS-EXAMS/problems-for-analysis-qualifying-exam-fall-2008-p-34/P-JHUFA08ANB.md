@@ -26,23 +26,23 @@ audit:
 
 ::: {.problem}
 Let $(X,\mathcal M,\mu)$ and $(Y,\mathcal N,\nu)$ be sigma-finite measure spaces. Let $K:X\times Y\to\CC$ be measurable and suppose
-\[
+$$
 \int_Y |K(x,y)|\,d\nu(y)\le A
 \quad\text{for all }x,
-\]
+$$
 and
-\[
+$$
 \int_X |K(x,y)|\,d\mu(x)\le A
 \quad\text{for all }y.
-\]
+$$
 Define
-\[
+$$
 Tf(y)=\int_X f(x)K(x,y)\,d\mu(x).
-\]
+$$
 Prove that for every $1\le p\le\infty$,
-\[
+$$
 \|Tf\|_{L^p(\nu)}\le A\|f\|_{L^p(\mu)}.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -56,9 +56,9 @@ The case $p=\infty$.
 ::: pf-proof
 
 For almost every $y$,
-\[
+$$
 |Tf(y)|\le \|f\|_\infty\int_X|K(x,y)|\,d\mu(x)\le A\|f\|_\infty.
-\]
+$$
 Thus $\|Tf\|_\infty\le A\|f\|_\infty$.
 
 :::
@@ -72,28 +72,28 @@ The case $1\le p<\infty$.
 ::: pf-proof
 
 Fix $y$. Hölder's inequality with respect to the finite measure $|K(x,y)|\,d\mu(x)$ gives
-\[
+$$
 |Tf(y)|^p
 \le\left(\int_X |f(x)|^p|K(x,y)|\,d\mu(x)\right)
 \left(\int_X |K(x,y)|\,d\mu(x)\right)^{p-1}.
-\]
+$$
 By the kernel bound,
-\[
+$$
 |Tf(y)|^p\le A^{p-1}\int_X |f(x)|^p|K(x,y)|\,d\mu(x).
-\]
+$$
 Integrating in $y$ and using Tonelli,
-\[
+$$
 \begin{aligned}
 \|Tf\|_p^p
 &\le A^{p-1}\int_Y\int_X |f(x)|^p|K(x,y)|\,d\mu(x)\,d\nu(y)\\
 &=A^{p-1}\int_X |f(x)|^p\left(\int_Y|K(x,y)|\,d\nu(y)\right)d\mu(x)\\
 &\le A^p\|f\|_p^p.
 \end{aligned}
-\]
+$$
 Taking $p$th roots gives
-\[
+$$
 \|Tf\|_p\le A\|f\|_p.
-\]
+$$
 
 :::
 

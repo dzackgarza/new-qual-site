@@ -20,13 +20,13 @@ audit:
 
 ::: {.problem}
 Let $P(x)$ be a monic polynomial with real coefficients. Suppose
-\[
+$$
 P(0)=-1
-\]
+$$
 and $P$ has no complex zeros in the open unit disk. Prove that
-\[
+$$
 P(1)=0.
-\]
+$$
 :::
 
 ::: {.solution}

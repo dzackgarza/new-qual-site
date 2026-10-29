@@ -25,8 +25,8 @@ State Cauchy's theorem for triangles.
 
 ::: pf-step
 
-Let \(T\subset\CC\) be a closed triangle, including its
-interior, and let \(U\subset\CC\) be an open set containing \(T\).
+Let $T\subset\CC$ be a closed triangle, including its
+interior, and let $U\subset\CC$ be an open set containing $T$.
 
 
 ::: pf-proof
@@ -41,9 +41,9 @@ theorem.
 ::: pf-step
 
 Suppose
-\[
+$$
 f:U\to\CC
-\]
+$$
 is holomorphic.
 
 
@@ -58,9 +58,9 @@ This is the analytic hypothesis.
 ::: pf-step
 
 Orient the boundary
-\[
+$$
 \partial T
-\]
+$$
 positively, that is, counterclockwise.
 
 
@@ -76,10 +76,10 @@ a planar region.
 ::: {.pf-step #s1-4}
 
 Cauchy's theorem for triangles states that
-\[
+$$
 \boxed{
 \int_{\partial T}f(z)\,dz=0}.
-\]
+$$
 
 
 ::: pf-proof
@@ -93,11 +93,11 @@ This is the theorem requested in the problem.
 ::: pf-step
 
 Equivalently, if the three oriented sides of the triangle are
-\[
+$$
 \gamma_1,\gamma_2,\gamma_3,
-\]
+$$
 then
-\[
+$$
 \boxed{
 \int_{\gamma_1}f(z)\,dz
 +
@@ -105,7 +105,7 @@ then
 +
 \int_{\gamma_3}f(z)\,dz
 =0}.
-\]
+$$
 
 
 ::: pf-proof

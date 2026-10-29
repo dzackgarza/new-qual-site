@@ -36,11 +36,11 @@ Show that
 ::: {.solution}
 
 Put
-\[
+$$
 \mu=\mathbf E\xi_1,
 \qquad
 \sigma^2=\mathbf D\xi_1.
-\]
+$$
 Assume these moments are finite.
 
 ::: pf
@@ -48,9 +48,9 @@ Assume these moments are finite.
 ::: {.pf-step #s1-1}
 
 Conditional on $\tau=k$,
-\[
+$$
 S_\tau=\xi_1+\cdots+\xi_k.
-\]
+$$
 
 
 ::: pf-proof
@@ -64,18 +64,18 @@ This is the definition of the random sum $S_\tau$. Independence of $\tau$ from t
 ::: {.pf-step #s1-2}
 
 Therefore
-\[
+$$
 \boxed{\mathbf E(S_\tau\mid\tau)=\tau\mu}.
-\]
+$$
 
 
 ::: pf-proof
 
 On the event $\{\tau=k\}$, step [](#s1-1){.pf-ref} and linearity of expectation give
-\[
+$$
 \mathbf E(S_\tau\mid\tau=k)
 =\sum_{i=1}^k\mathbf E\xi_i=k\mu.
-\]
+$$
 Thus the conditional expectation as a function of $\tau$ is $\tau\mu$.
 
 :::
@@ -85,20 +85,20 @@ Thus the conditional expectation as a function of $\tau$ is $\tau\mu$.
 ::: {.pf-step #s1-3}
 
 Taking expectations in step [](#s1-2){.pf-ref} gives
-\[
+$$
 \boxed{\mathbf ES_\tau=\mathbf E\tau\cdot\mathbf E\xi_1}.
-\]
+$$
 
 
 ::: pf-proof
 
 By the tower property,
-\[
+$$
 \mathbf ES_\tau
 =\mathbf E\bigl[\mathbf E(S_\tau\mid\tau)\bigr]
 =\mathbf E(\tau\mu)
 =\mu\mathbf E\tau.
-\]
+$$
 
 :::
 
@@ -107,18 +107,18 @@ By the tower property,
 ::: {.pf-step #s1-4}
 
 Conditional on $\tau=k$,
-\[
+$$
 \mathbf D(S_\tau\mid\tau=k)=k\sigma^2.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref}, $S_\tau$ is then a sum of $k$ independent identically distributed variables. Variances of independent sums add, so
-\[
+$$
 \mathbf D(\xi_1+\cdots+\xi_k)
 =\sum_{i=1}^k\mathbf D\xi_i=k\sigma^2.
-\]
+$$
 
 :::
 
@@ -127,9 +127,9 @@ By step [](#s1-1){.pf-ref}, $S_\tau$ is then a sum of $k$ independent identicall
 ::: {.pf-step #s1-5}
 
 Hence
-\[
+$$
 \boxed{\mathbf D(S_\tau\mid\tau)=\tau\mathbf D\xi_1}.
-\]
+$$
 
 
 ::: pf-proof
@@ -143,21 +143,21 @@ Step [](#s1-4){.pf-ref} identifies the conditional variance on each event $\{\ta
 ::: {.pf-step #s1-6}
 
 The law of total variance gives
-\[
+$$
 \mathbf D S_\tau
 =\mathbf E\bigl[\mathbf D(S_\tau\mid\tau)\bigr]
 +\mathbf D\bigl(\mathbf E(S_\tau\mid\tau)\bigr).
-\]
+$$
 
 
 ::: pf-proof
 
 Write
-\[
+$$
 S_\tau-\mathbf ES_\tau
 =\bigl(S_\tau-\mathbf E(S_\tau\mid\tau)\bigr)
 +\bigl(\mathbf E(S_\tau\mid\tau)-\mathbf ES_\tau\bigr).
-\]
+$$
 After squaring and taking expectations, the cross term vanishes because its conditional expectation given $\tau$ is zero. The two remaining terms are exactly the two terms displayed.
 
 :::
@@ -167,21 +167,21 @@ After squaring and taking expectations, the cross term vanishes because its cond
 ::: {.pf-step #s1-7}
 
 Consequently
-\[
+$$
 \boxed{
 \mathbf D S_\tau
 =\mathbf E\tau\cdot\mathbf D\xi_1
 +\mathbf D\tau\cdot(\mathbf E\xi_1)^2}.
-\]
+$$
 
 
 ::: pf-proof
 
 Substitute steps [](#s1-2){.pf-ref} and [](#s1-5){.pf-ref} into step [](#s1-6){.pf-ref}:
-\[
+$$
 \mathbf E(\tau\sigma^2)+\mathbf D(\tau\mu)
 =\sigma^2\mathbf E\tau+\mu^2\mathbf D\tau.
-\]
+$$
 
 :::
 

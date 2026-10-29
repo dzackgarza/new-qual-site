@@ -31,24 +31,24 @@ then $f$ is constant.
 
 ::: {.solution}
 Because $f$ is continuous on $\overline{\DD}$, holomorphic on $\DD$, and satisfies $|f|=1$ on $\partial\DD$, the maximum-modulus principle gives
-\[
+$$
 |f(z)|\le1\qquad(z\in\DD).
 \tag{1}
-\]
+$$
 
 Since $f$ is non-vanishing on $\overline{\DD}$, the function $1/f$ is continuous on $\overline{\DD}$ and holomorphic on $\DD$. On the boundary,
-\[
+$$
 \left|\frac1{f(z)}\right|=1.
-\]
+$$
 Applying the maximum-modulus principle to $1/f$ yields
-\[
+$$
 \frac1{|f(z)|}\le1,
-\]
+$$
 so
-\[
+$$
 |f(z)|\ge1\qquad(z\in\DD).
 \tag{2}
-\]
+$$
 Combining (1) and (2) gives $|f(z)|=1$ throughout $\DD$.
 
 If $f$ were nonconstant, the open mapping theorem would imply that $f(\DD)$ is open in $\CC$, but it is contained in the unit circle, which has empty interior. This is impossible. Hence $f$ is constant.

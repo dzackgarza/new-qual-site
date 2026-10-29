@@ -20,9 +20,9 @@ audit:
 Let $M\in\RR$, let $\Omega\subset\CC$ be a bounded open set, and let $u:\Omega\to\RR$ be harmonic.
 
 (a) Show that if
-\[
+$$
 \limsup_{z\to z_0}u(z)\le M
-\]
+$$
 for every $z_0\in\partial\Omega$, then $u(z)\le M$ for every $z\in\Omega$.
 
 (b) Show that if $u$ is bounded above and the condition in part (a) holds for all but finitely many $z_0\in\partial\Omega$, then still $u(z)\le M$ for every $z\in\Omega$.

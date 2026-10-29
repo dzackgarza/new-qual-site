@@ -36,11 +36,11 @@ $\varphi ( 1 ) = 1$ . If $p$ is a prime, then $\varphi ( p ^ { k } ) = p ^ { k -
 ::: {.solution}
 
 Write
-\[
+$$
 n=mp^k,
 \qquad m=n',
 \qquad p\nmid m.
-\]
+$$
 
 ::: pf
 
@@ -52,13 +52,13 @@ If $k=0$, then $n=m$ and $\Phi_n=\Phi_m$ has as its roots exactly the primitive 
 ::: pf-proof
 
 Because $p\nmid m$, the derivative of $X^m-1$ is
-\[
+$$
 mX^{m-1}\ne0,
-\]
+$$
 so all $m$-th roots of unity are simple. The defining factorization
-\[
+$$
 X^m-1=\prod_{d\mid m}\Phi_d(X)
-\]
+$$
 then partitions them by exact order; hence the roots of $\Phi_m$ are precisely those of order $m$.
 
 :::
@@ -68,17 +68,17 @@ then partitions them by exact order; hence the roots of $\Phi_m$ are precisely t
 ::: {.pf-step #s1-2}
 
 Assume $k>0$. In $\FF_p[X]$ one has
-\[
+$$
 X^{mp^k}-1=(X^m-1)^{p^k}.
-\]
+$$
 
 
 ::: pf-proof
 
 In characteristic $p$, Frobenius gives
-\[
+$$
 (A-B)^{p^k}=A^{p^k}-B^{p^k}.
-\]
+$$
 Take $A=X^m$ and $B=1$.
 
 :::
@@ -88,9 +88,9 @@ Take $A=X^m$ and $B=1$.
 ::: {.pf-step #s1-3}
 
 Likewise,
-\[
+$$
 X^{mp^{k-1}}-1=(X^m-1)^{p^{k-1}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -104,18 +104,18 @@ Apply the same Frobenius identity with exponent $p^{k-1}$.
 ::: {.pf-step #s1-4}
 
 Over $\ZZ[X]$, one has
-\[
+$$
 \frac{X^{mp^k}-1}{X^{mp^{k-1}}-1}
 =\prod_{d\mid m}\Phi_{dp^k}(X).
-\]
+$$
 
 
 ::: pf-proof
 
 The cyclotomic factorization of the numerator contains $\Phi_e$ for every divisor $e$ of $mp^k$, while the denominator contains those for divisors of $mp^{k-1}$. The divisors occurring only in the numerator are exactly
-\[
+$$
 e=dp^k
-\]
+$$
 with $d\mid m$. Cancelling the common factors gives the identity.
 
 :::
@@ -125,23 +125,23 @@ with $d\mid m$. Cancelling the common factors gives the identity.
 ::: {.pf-step #s1-5}
 
 Reducing step [](#s1-4){.pf-ref} modulo $p$ and using steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} gives
-\[
+$$
 \prod_{d\mid m}\Phi_{dp^k}(X)
 =(X^m-1)^{p^k-p^{k-1}}
 =(X^m-1)^{\varphi(p^k)}.
-\]
+$$
 
 
 ::: pf-proof
 
 The quotient of the two powers from steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} is
-\[
+$$
 (X^m-1)^{p^k-p^{k-1}},
-\]
+$$
 and for $k>0$,
-\[
+$$
 p^k-p^{k-1}=p^{k-1}(p-1)=\varphi(p^k).
-\]
+$$
 
 :::
 
@@ -150,14 +150,14 @@ p^k-p^{k-1}=p^{k-1}(p-1)=\varphi(p^k).
 ::: {.pf-step #s1-6}
 
 Since
-\[
+$$
 X^m-1=\prod_{d\mid m}\Phi_d(X),
-\]
+$$
 step [](#s1-5){.pf-ref} becomes
-\[
+$$
 \prod_{d\mid m}\Phi_{dp^k}(X)
 =\prod_{d\mid m}\Phi_d(X)^{\varphi(p^k)}
-\]
+$$
 in characteristic $p$.
 
 
@@ -198,9 +198,9 @@ In step [](#s1-6){.pf-ref}, the factor indexed by $d=m$ on the right has exactly
 ::: {.pf-step #s1-9}
 
 Each primitive $m$-th root occurs in $\Phi_{mp^k}$ with multiplicity
-\[
+$$
 \varphi(p^k).
-\]
+$$
 
 
 ::: pf-proof
@@ -214,13 +214,13 @@ Fix a primitive $m$-th root $\zeta$. On the right side of step [](#s1-6){.pf-ref
 ::: {.pf-step #s1-10}
 
 Thus for every $k\ge0$, the roots in $F$ of
-\[
+$$
 \Phi_{n}(X)=\Phi_{mp^k}(X)
-\]
+$$
 are precisely the primitive $m=n'$-th roots of unity, each occurring with multiplicity
-\[
+$$
 \boxed{\varphi(p^k)}.
-\]
+$$
 
 
 ::: pf-proof

@@ -12,15 +12,15 @@ audit:
 
 ::: {.problem}
 Solve
-\[
+$$
 y''-2y'+y=0
-\]
+$$
 subject to
-\[
+$$
 y(0)=1,
 \qquad
 y'(0)=1.
-\]
+$$
 :::
 
 ::: {.solution}

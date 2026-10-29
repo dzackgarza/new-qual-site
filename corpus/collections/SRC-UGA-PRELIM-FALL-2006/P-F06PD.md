@@ -35,9 +35,9 @@ Coordinate representation in standard basis:
 ::: pf-step
 
 Represent polynomials in the standard basis $\{x^2, x, 1\}$ of the polynomial subspace $\QQ_{\le 2}[x]$:
-\[
+$$
 p_1(x) = (1, 1, 1), \quad p_2(x) = (1, 2, 0), \quad p_3(x) = (1, 0, 2), \quad p_4(x) = (0, 1, -1).
-\]
+$$
 
 ::: pf-proof
 
@@ -50,14 +50,14 @@ coordinate isomorphism $\QQ_{\le 2}[x] \cong \QQ^3$.
 ::: pf-step
 
 Form the $4 \times 3$ matrix $A$ whose rows are the coordinate vectors of $p_1, p_2, p_3, p_4$:
-\[
+$$
 A = \begin{pmatrix}
 1 & 1 & 1 \\
 1 & 2 & 0 \\
 1 & 0 & 2 \\
 0 & 1 & -1
 \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 
@@ -98,14 +98,14 @@ Further reduce:
 - $R_3 \leftarrow R_3 + R_2$: row becomes $(0, 0, 0)$.
 - $R_4 \leftarrow R_4 - R_2$: row becomes $(0, 0, 0)$.
 The row echelon form of $A$ is:
-\[
+$$
 \begin{pmatrix}
 1 & 1 & 1 \\
 0 & 1 & -1 \\
 0 & 0 & 0 \\
 0 & 0 & 0
 \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 
@@ -119,9 +119,9 @@ Gaussian elimination.
 
 There are exactly 2 non-zero pivot rows in the row echelon form, so $\operatorname{rank}(A) = 2$.
 Explicitly:
-\[
+$$
 p_2(x) = p_1(x) + p_4(x), \qquad p_3(x) = p_1(x) - p_4(x).
-\]
+$$
 
 ::: pf-proof
 

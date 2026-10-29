@@ -23,11 +23,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $u_n:\RR\to\RR$ is differentiable and satisfies \[u_n'(x)=F(u_n(x),x),\] where $F$ is continuous and bounded.
+Suppose $u_n:\RR\to\RR$ is differentiable and satisfies $$u_n'(x)=F(u_n(x),x),$$ where $F$ is continuous and bounded.
 
 (a) If $u_n\to u$ uniformly, show that $u$ is differentiable and satisfies $u'(x)=F(u(x),x)$.
 
-(b) Suppose the initial-value problem \[u'(x)=F(u(x),x),\qquad u(x_0)=y_0\] has a unique solution $u:\RR\to\RR$, and $u_n(x_0)\to y_0$.
+(b) Suppose the initial-value problem $$u'(x)=F(u(x),x),\qquad u(x_0)=y_0$$ has a unique solution $u:\RR\to\RR$, and $u_n(x_0)\to y_0$.
 Show that $u_n$ converges to $u$ uniformly on every compact interval.
 :::
 
@@ -42,14 +42,14 @@ If $u_n\to v$ uniformly on every compact interval, then $v$ is differentiable an
 ::: pf-proof
 Fix $x\in\RR$ and let $J$ be the compact interval between $x_0$ and $x$.
 For each $n$,
-\[
+$$
 u_n(x)-u_n(x_0)=\int_{x_0}^x F(u_n(t),t)\,dt.
-\]
+$$
 The values $u_n(t)$, $t\in J$, lie in a fixed compact set for large $n$, on which $F$ is uniformly continuous, so $F(u_n(t),t)\to F(v(t),t)$ uniformly on $J$.
 Passing to the limit,
-\[
+$$
 v(x)-v(x_0)=\int_{x_0}^x F(v(t),t)\,dt.
-\]
+$$
 The integrand is continuous, so by the fundamental theorem of calculus $v$ is differentiable with $v'(x)=F(v(x),x)$.
 :::
 

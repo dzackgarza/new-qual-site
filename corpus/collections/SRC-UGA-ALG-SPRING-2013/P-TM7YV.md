@@ -64,9 +64,9 @@ If $B\cap C=\QQ$, then $HJ=G$.
 ::: pf-proof
 
 By step [](#s1){.pf-ref}, $HJ$ is a subgroup of $G$. Its fixed field is
-\[
+$$
 E^{HJ}=E^H\cap E^J=B\cap C=\QQ.
-\]
+$$
 The Galois correspondence then implies $HJ=G$.
 
 :::
@@ -76,10 +76,10 @@ The Galois correspondence then implies $HJ=G$.
 ::: {.pf-step #s4}
 
 Under this hypothesis,
-\[
+$$
 \boxed{G\cong H\times J\cong
 \operatorname{Gal}(C/\QQ)\times\operatorname{Gal}(B/\QQ)}.
-\]
+$$
 
 ::: pf-proof
 
@@ -92,18 +92,18 @@ Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} show that $H,J$ ar
 ::: {.pf-step #s5}
 
 For $\alpha=\sqrt2+\sqrt3$, the extension $\QQ(\alpha)/\QQ$ is Galois with
-\[
+$$
 \boxed{\operatorname{Gal}(\QQ(\alpha)/\QQ)\cong C_2\times C_2}.
-\]
+$$
 
 ::: pf-proof
 
 Take $B=\QQ(\sqrt2)$ and $C=\QQ(\sqrt3)$. The quadratic fields are distinct, hence their intersection is $\QQ$. Since
-\[
+$$
 \alpha^{-1}=\sqrt3-\sqrt2,\qquad
 \sqrt3=\frac{\alpha+\alpha^{-1}}2,\quad
 \sqrt2=\frac{\alpha-\alpha^{-1}}2,
-\]
+$$
 one has $\QQ(\alpha)=BC$. Step [](#s4){.pf-ref} identifies its Galois group with the direct product of the two order-two Galois groups. Its four automorphisms are the independent sign changes of $\sqrt2$ and $\sqrt3$.
 
 :::

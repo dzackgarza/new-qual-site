@@ -28,16 +28,16 @@ Compute $H_*(X,\ZZ)$.
 :::
 
 ::: {.solution}
-The quotient collapses \(T\times\{-1\}\) to one point and \(T\times\{1\}\) to another, so it is precisely the unreduced suspension \(\Sigma T\). Suspension shifts reduced homology by one:
-\[
+The quotient collapses $T\times\{-1\}$ to one point and $T\times\{1\}$ to another, so it is precisely the unreduced suspension $\Sigma T$. Suspension shifts reduced homology by one:
+$$
 \widetilde H_n(\Sigma T;\ZZ)\cong \widetilde H_{n-1}(T;\ZZ).
-\]
+$$
 For the torus,
-\[
+$$
 H_0(T)=\ZZ,\qquad H_1(T)=\ZZ^2,\qquad H_2(T)=\ZZ,
-\]
-and all other homology groups vanish. Since \(\Sigma T\) is connected, we obtain
-\[
+$$
+and all other homology groups vanish. Since $\Sigma T$ is connected, we obtain
+$$
 H_n(X;\ZZ)\cong
 \begin{cases}
 \ZZ,&n=0,\\
@@ -46,5 +46,5 @@ H_n(X;\ZZ)\cong
 \ZZ,&n=3,\\
 0,&n\ge4.
 \end{cases}
-\]
+$$
 :::

@@ -40,9 +40,9 @@ $a_n \in \{1, -1\}$ is a unit in $\ZZ$, so $(f) = (f_0)$ as ideals in $\ZZ[x]$.
 
 ::: pf-step
 By the polynomial division algorithm over $\ZZ$ for monic polynomials, for every $g(x) \in \ZZ[x]$, there exist $q(x), r(x) \in \ZZ[x]$ such that:
-\[
+$$
 g(x) = q(x)f_0(x) + r(x), \quad \text{with } \deg(r) < n \text{ (or } r = 0\text{)}.
-\]
+$$
 
 ::: pf-proof
 division algorithm in $\ZZ[x]$ with monic divisor.
@@ -52,9 +52,9 @@ division algorithm in $\ZZ[x]$ with monic divisor.
 
 ::: {.pf-step #s3}
 Passing to the quotient $R = \ZZ[x]/(f)$:
-\[
+$$
 g(x) + (f) = r(x) + (f) = c_0 \cdot 1 + c_1 \bar{x} + \dots + c_{n-1} \bar{x}^{n-1}, \quad c_i \in \ZZ.
-\]
+$$
 
 ::: pf-proof
 $q(x)f_0(x) \in (f)$ and $r(x) = \sum_{i=0}^{n-1} c_i x^i$.
@@ -183,9 +183,9 @@ multiplication of polynomials over the integral domain $\ZZ$.
 
 ::: pf-step
 Equating degrees gives $\deg(q) + n = k$, and equating leading coefficients gives:
-\[
+$$
 1 = \operatorname{LC}(q) \cdot a_n.
-\]
+$$
 
 ::: pf-proof
 coefficients of polynomials in $\ZZ[x]$.

@@ -33,18 +33,18 @@ audit:
 
 ::: {.problem}
 Let $G$ be finite and suppose
-\[
+$$
 P\le H\le K\le G,
 \qquad
 P\in\operatorname{Syl}_p(G).
-\]
+$$
 
 Assume
-\[
+$$
 P\normal H
 \qquad\text{and}\qquad
 H\normal K.
-\]
+$$
 Prove that $P\normal K$.
 :::
 
@@ -63,13 +63,13 @@ The subgroup $P$ is a $p$-subgroup of $H$ because $P\le H$.
 Let $Q\le H$ be any $p$-subgroup.
 Then $Q$ is also a $p$-subgroup of $G$.
 Since $P$ is Sylow in $G$,
-\[
+$$
 |Q|\le|P|.
-\]
+$$
 Thus no $p$-subgroup of $H$ has order larger than $P$, so
-\[
+$$
 P\in\operatorname{Syl}_p(H).
-\]
+$$
 
 :::
 
@@ -83,9 +83,9 @@ The subgroup $P$ is the unique Sylow $p$-subgroup of $H$.
 
 By step [](#s1){.pf-ref}, $P$ is Sylow in $H$.
 By hypothesis,
-\[
+$$
 P\normal H.
-\]
+$$
 All Sylow $p$-subgroups of $H$ are conjugate in $H$, while normality makes every $H$-conjugate of $P$ equal to $P$.
 Hence every Sylow $p$-subgroup of $H$ is $P$.
 
@@ -101,9 +101,9 @@ The subgroup $P$ is characteristic in $H$.
 
 Every automorphism of $H$ preserves subgroup order and therefore sends a Sylow $p$-subgroup to a Sylow $p$-subgroup.
 By uniqueness from step [](#s2){.pf-ref}, any $\varphi\in\operatorname{Aut}(H)$ satisfies
-\[
+$$
 \varphi(P)=P.
-\]
+$$
 Thus $P\operatorname{char}H$.
 
 :::
@@ -117,18 +117,18 @@ Therefore $P\normal K$.
 ::: pf-proof
 
 By step [](#s3){.pf-ref},
-\[
+$$
 P\operatorname{char}H,
-\]
+$$
 and by hypothesis
-\[
+$$
 H\normal K.
-\]
+$$
 A characteristic subgroup of a normal subgroup is normal in the ambient group.
 Therefore
-\[
+$$
 P\normal K.
-\]
+$$
 
 :::
 

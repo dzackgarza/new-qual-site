@@ -37,9 +37,9 @@ For $l=1,2$, the set $G_l\definedas\theset{x\in X\st \theset{x}\cross Y\subseteq
 
 ::: pf-proof
 A point $x$ lies in $G_l$ exactly when $(x,y)\in Z_l$ for every $y\in Y$, so
-\[
+$$
 G_l=\Intersect_{y\in Y} j_y^{-1}(Z_l)
-.\]
+.$$
 Each $j_y^{-1}(Z_l)$ is closed in $X$ because $j_y$ is continuous, and an intersection of closed sets is closed.
 :::
 

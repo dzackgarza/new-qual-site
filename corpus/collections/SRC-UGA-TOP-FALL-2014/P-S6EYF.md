@@ -47,39 +47,39 @@ The two surfaces are both homeomorphic to $S^2$, and their intersection is the c
 ::: pf-proof
 
 The unit sphere
-\[
+$$
 Y=\{x^2+y^2+z^2=1\}
-\]
+$$
 is $S^2$.
 The linear map
-\[
+$$
 (x,y,z)\longmapsto(x,y,2z)
-\]
+$$
 maps the unit sphere homeomorphically onto
-\[
+$$
 Z=\left\{x^2+y^2+\frac{z^2}{4}=1\right\},
-\]
+$$
 so $Z\cong S^2$ as well.
 
 If a point lies in $Y\cap Z$, subtracting the two defining equations gives
-\[
+$$
 z^2-\frac{z^2}{4}=0,
-\]
+$$
 hence
-\[
+$$
 z=0.
-\]
+$$
 Substitution then gives
-\[
+$$
 x^2+y^2=1.
-\]
+$$
 Therefore
-\[
+$$
 A:=Y\cap Z
 =
 \{(x,y,0):x^2+y^2=1\}
 \cong S^1.
-\]
+$$
 
 :::
 
@@ -88,9 +88,9 @@ A:=Y\cap Z
 ::: {.pf-step #s2}
 
 Mayer--Vietoris applies to the decomposition
-\[
+$$
 X=Y\cup Z
-\]
+$$
 with intersection $A\cong S^1$.
 
 ::: pf-proof
@@ -99,7 +99,7 @@ Give the common equator $A$ its standard CW structure with one $0$-cell and one 
 Each of the upper and lower hemispheres of $Y$ is then a $2$-cell attached along $A$, and the same is true for the upper and lower halves of $Z$.
 Thus $X$ is a CW complex for which $Y$, $Z$, and $A=Y\cap Z$ are subcomplexes.
 The Mayer--Vietoris sequence for a union of CW subcomplexes therefore gives
-\[
+$$
 \cdots
 \longrightarrow
 \widetilde H_k(A)
@@ -110,25 +110,25 @@ The Mayer--Vietoris sequence for a union of CW subcomplexes therefore gives
 \longrightarrow
 \widetilde H_{k-1}(A)
 \longrightarrow\cdots.
-\]
+$$
 By step [](#s1){.pf-ref},
-\[
+$$
 \widetilde H_k(A)
 \cong
 \begin{cases}
 \ZZ,&k=1,\\
 0,&k\ne1,
 \end{cases}
-\]
+$$
 and
-\[
+$$
 \widetilde H_k(Y)\oplus\widetilde H_k(Z)
 \cong
 \begin{cases}
 \ZZ^2,&k=2,\\
 0,&k\ne2.
 \end{cases}
-\]
+$$
 
 :::
 
@@ -137,25 +137,25 @@ and
 ::: {.pf-step #s3}
 
 One has
-\[
+$$
 H_k(X;\ZZ)=0
 \qquad(k\ge3).
-\]
+$$
 
 ::: pf-proof
 
 For $k\ge3$, the relevant Mayer--Vietoris terms from step [](#s2){.pf-ref} are
-\[
+$$
 0
 \longrightarrow
 \widetilde H_k(X)
 \longrightarrow
 0.
-\]
+$$
 Hence
-\[
+$$
 \widetilde H_k(X)=0
-\]
+$$
 for every $k\ge3$.
 
 :::
@@ -165,14 +165,14 @@ for every $k\ge3$.
 ::: {.pf-step #s4}
 
 The second homology group is
-\[
+$$
 H_2(X;\ZZ)\cong\ZZ^3.
-\]
+$$
 
 ::: pf-proof
 
 The relevant part of the reduced Mayer--Vietoris sequence is
-\[
+$$
 0
 \longrightarrow
 \ZZ^2
@@ -182,9 +182,9 @@ The relevant part of the reduced Mayer--Vietoris sequence is
 \ZZ
 \longrightarrow
 0.
-\]
+$$
 Exactness gives a short exact sequence
-\[
+$$
 0
 \longrightarrow
 \ZZ^2
@@ -194,16 +194,16 @@ Exactness gives a short exact sequence
 \ZZ
 \longrightarrow
 0.
-\]
+$$
 Because the quotient $\ZZ$ is free abelian, this sequence splits.
 Therefore
-\[
+$$
 \widetilde H_2(X)
 \cong
 \ZZ^2\oplus\ZZ
 \cong
 \ZZ^3.
-\]
+$$
 Since degree $2$ is positive, reduced and unreduced homology agree there.
 
 :::
@@ -213,14 +213,14 @@ Since degree $2$ is positive, reduced and unreduced homology agree there.
 ::: {.pf-step #s5}
 
 The first homology group is
-\[
+$$
 H_1(X;\ZZ)=0.
-\]
+$$
 
 ::: pf-proof
 
 Continuing the same exact sequence from step [](#s4){.pf-ref} gives
-\[
+$$
 \ZZ
 \longrightarrow
 0
@@ -228,18 +228,18 @@ Continuing the same exact sequence from step [](#s4){.pf-ref} gives
 \widetilde H_1(X)
 \longrightarrow
 0.
-\]
+$$
 Exactness at $\widetilde H_1(X)$ says
-\[
+$$
 \operatorname{im}\bigl(0\to\widetilde H_1(X)\bigr)
 =
 \ker\bigl(\widetilde H_1(X)\to0\bigr).
-\]
+$$
 The left-hand side is $0$, while the right-hand side is all of $\widetilde H_1(X)$.
 Hence
-\[
+$$
 \widetilde H_1(X)=0.
-\]
+$$
 
 :::
 
@@ -248,17 +248,17 @@ Hence
 ::: {.pf-step #s6}
 
 Finally,
-\[
+$$
 H_0(X;\ZZ)\cong\ZZ.
-\]
+$$
 
 ::: pf-proof
 
 Both $Y$ and $Z$ are path connected, and their intersection $A\cong S^1$ is nonempty.
 Therefore their union $X$ is path connected, so
-\[
+$$
 H_0(X;\ZZ)\cong\ZZ.
-\]
+$$
 
 :::
 
@@ -267,7 +267,7 @@ H_0(X;\ZZ)\cong\ZZ.
 ::: pf-step
 
 Thus the integral homology groups are
-\[
+$$
 \boxed{
 H_k(X;\ZZ)
 \cong
@@ -277,7 +277,7 @@ H_k(X;\ZZ)
 \ZZ^3,&k=2,\\
 0,&k\ge3.
 \end{cases}}
-\]
+$$
 
 ::: pf-proof
 

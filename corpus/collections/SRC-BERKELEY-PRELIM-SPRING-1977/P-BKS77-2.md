@@ -12,9 +12,9 @@ audit:
 
 ::: {.problem}
 Let $f$ be a real-valued function such that
-\[
+$$
 \lim_{x\to c}f(x)
-\]
+$$
 exists for every $c\in[a,b]$.
 Show that $f$ is Riemann integrable on $[a,b]$.
 :::

@@ -21,13 +21,13 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 f:\RR^n\setminus\{0\}\to\RR
-\]
+$$
 be $C^1$, and suppose all partial derivatives are uniformly bounded:
-\[
+$$
 \left|\frac{\partial f}{\partial x_i}(x)\right|\le M
-\]
+$$
 for every $x\ne0$ and every $i$.
 
 1. If $n\ge2$, prove that $f$ extends continuously to all of $\RR^n$.

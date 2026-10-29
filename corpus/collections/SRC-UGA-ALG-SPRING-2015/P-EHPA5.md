@@ -38,9 +38,9 @@ Prove that $N$ is contained in the center of $G$.
 - Use that $N\normal G \iff N = \disjoint' [n_i]$ is a *disjoint* union of (full) conjugacy classes.
 
 - Take cardinalities:
-\[
+$$
 p = \size N = \sum_{i=1}^m \size [n_i] = 1 + \sum_{i=2}^m \size [n_i]
-.\]
+.$$
 
 - The size of each conjugacy class divides the size of the ambient group $G$ by orbit-stabilizer, and $\size G = p^k$, so each $\size [n_i]$ is a power of $p$.
   Note this is a statement about $\size G$, not about $\size N$: the classes $[n_i]$ are $G\dash$conjugacy classes that happen to lie inside $N$.

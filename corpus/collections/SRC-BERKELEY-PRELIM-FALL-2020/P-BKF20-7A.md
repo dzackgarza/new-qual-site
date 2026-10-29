@@ -36,9 +36,9 @@ audit:
 
 ::: {.problem}
 Let $V$ be $n$-dimensional over the finite field with $q$ elements. Prove that the number of $k$-dimensional subspaces $W\subseteq V$ equals
-\[
+$$
 \frac{\prod_{j=1}^n(q^j-1)}{\left(\prod_{j=1}^k(q^j-1)\right)\left(\prod_{j=1}^{n-k}(q^j-1)\right)}.
-\]
+$$
 :::
 
 ::: {.solution}

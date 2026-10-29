@@ -27,9 +27,9 @@ Let $C$ be the circle $\abs{z} = \pi$, oriented positively. Evaluate $\oint_C \l
 ::: {.pf-step #s1-1}
 
 The entire term contributes
-\[
+$$
 \oint_C \sin z\,dz=0.
-\]
+$$
 
 
 ::: pf-proof
@@ -44,28 +44,28 @@ theorem gives the stated value.
 ::: {.pf-step #s1-2}
 
 The point
-\[
+$$
 a=\frac{\pi}{4}
-\]
+$$
 lies inside $C$, and
-\[
+$$
 \oint_C\frac{\cos z}{z-a}\,dz
 =2\pi i\cos a.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 \left|\frac{\pi}{4}\right|<\pi,
-\]
+$$
 the point $a$ is inside the positively oriented circle. Cauchy's integral
 formula applied to the entire function $\cos z$ gives
-\[
+$$
 \oint_C\frac{\cos z}{z-a}\,dz
 =2\pi i\cos a.
-\]
+$$
 
 :::
 
@@ -74,17 +74,17 @@ formula applied to the entire function $\cos z$ gives
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{
 \oint_C\left(\sin z-\frac{\cos z}{z-\pi/4}\right)\,dz
 =-\sqrt2\,\pi i }.
-\]
+$$
 
 
 ::: pf-proof
 
 By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref},
-\[
+$$
 \begin{aligned}
 \oint_C\left(\sin z-\frac{\cos z}{z-\pi/4}\right)\,dz
 &=
@@ -94,7 +94,7 @@ By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref},
 &=
 -\sqrt2\,\pi i.
 \end{aligned}
-\]
+$$
 The minus sign comes from the minus sign in the original integrand.
 
 :::

@@ -17,41 +17,41 @@ audit:
 
 ::: {.problem}
 Let $a_1,a_2,a_3,\ldots$ be real numbers satisfying
-\[
+$$
 \sum_{j=1}^{\infty}|a_j|<\infty.
-\]
+$$
 Prove that
-\[
+$$
 \lim_{N\to\infty}\sum_{j=1}^N a_j
-\]
+$$
 exists.
 :::
 
 ::: {.solution}
 
 Let
-\[
+$$
 s_N=\sum_{j=1}^N a_j.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 The sequence of partial sums
-\[
+$$
 t_N=\sum_{j=1}^N|a_j|
-\]
+$$
 is Cauchy.
 
 
 ::: pf-proof
 
 The hypothesis
-\[
+$$
 \sum_{j=1}^{\infty}|a_j|<\infty
-\]
-means precisely that the sequence \((t_N)\) converges in \(\RR\). Every convergent real sequence is Cauchy.
+$$
+means precisely that the sequence $(t_N)$ converges in $\RR$. Every convergent real sequence is Cauchy.
 
 :::
 
@@ -59,28 +59,28 @@ means precisely that the sequence \((t_N)\) converges in \(\RR\). Every converge
 
 ::: {.pf-step #s1-2}
 
-The sequence \((s_N)\) is Cauchy.
+The sequence $(s_N)$ is Cauchy.
 
 
 ::: pf-proof
 
-Let \(\varepsilon>0\). By step [](#s1-1){.pf-ref}, there is \(N_0\) such that whenever \(m>n\ge N_0\),
-\[
+Let $\varepsilon>0$. By step [](#s1-1){.pf-ref}, there is $N_0$ such that whenever $m>n\ge N_0$,
+$$
 \sum_{j=n+1}^{m}|a_j|
 =
 |t_m-t_n|
 <\varepsilon.
-\]
-For such \(m,n\), the triangle inequality gives
-\[
+$$
+For such $m,n$, the triangle inequality gives
+$$
 |s_m-s_n|
 =
 \left|\sum_{j=n+1}^{m}a_j\right|
 \le
 \sum_{j=n+1}^{m}|a_j|
 <\varepsilon.
-\]
-Hence \((s_N)\) is Cauchy.
+$$
+Hence $(s_N)$ is Cauchy.
 
 :::
 
@@ -88,12 +88,12 @@ Hence \((s_N)\) is Cauchy.
 
 ::: {.pf-step #s1-3}
 
-The sequence \((s_N)\) converges to a real number.
+The sequence $(s_N)$ converges to a real number.
 
 
 ::: pf-proof
 
-The real numbers are complete, so every Cauchy sequence in \(\RR\) converges. Apply completeness to step [](#s1-2){.pf-ref}.
+The real numbers are complete, so every Cauchy sequence in $\RR$ converges. Apply completeness to step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -102,11 +102,11 @@ The real numbers are complete, so every Cauchy sequence in \(\RR\) converges. Ap
 ::: {.pf-step #s1-4}
 
 Therefore
-\[
+$$
 \boxed{\displaystyle
 \lim_{N\to\infty}\sum_{j=1}^{N}a_j
 \text{ exists in }\RR.}
-\]
+$$
 
 
 ::: pf-proof

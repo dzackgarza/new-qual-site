@@ -17,9 +17,9 @@ audit:
 
 ::: {.problem}
 Is
-\[
+$$
 f(x)=\sqrt{x}
-\]
+$$
 uniformly continuous on $[0,\infty)$?
 Prove your assertion.
 :::
@@ -33,41 +33,41 @@ Yes.
 ::: {.pf-step #s1-1}
 
 For all $x,y\ge0$,
-\[
+$$
 \boxed{
 |\sqrt{x}-\sqrt{y}|
 \le
 \sqrt{|x-y|}
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 Assume without loss of generality that
-\[
+$$
 x\ge y.
-\]
+$$
 Then
-\[
+$$
 \sqrt{x}-\sqrt{y}\ge0.
-\]
+$$
 Squaring gives
-\[
+$$
 (\sqrt{x}-\sqrt{y})^2
 =
 x+y-2\sqrt{xy}.
-\]
+$$
 Since
-\[
+$$
 x\ge y,
-\]
+$$
 one has
-\[
+$$
 \sqrt{xy}\ge y.
-\]
+$$
 Therefore
-\[
+$$
 (\sqrt{x}-\sqrt{y})^2
 \le
 x+y-2y
@@ -75,7 +75,7 @@ x+y-2y
 x-y
 =
 |x-y|.
-\]
+$$
 Both sides are nonnegative, so taking square roots gives the desired inequality.
 
 :::
@@ -85,23 +85,23 @@ Both sides are nonnegative, so taking square roots gives the desired inequality.
 ::: {.pf-step #s1-2}
 
 Let $\varepsilon>0$ and choose
-\[
+$$
 \delta=\varepsilon^2.
-\]
+$$
 If
-\[
+$$
 |x-y|<\delta,
-\]
+$$
 then
-\[
+$$
 |\sqrt{x}-\sqrt{y}|<\varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref},
-\[
+$$
 |\sqrt{x}-\sqrt{y}|
 \le
 \sqrt{|x-y|}
@@ -109,7 +109,7 @@ By step [](#s1-1){.pf-ref},
 \sqrt{\delta}
 =
 \varepsilon.
-\]
+$$
 
 :::
 
@@ -118,17 +118,17 @@ By step [](#s1-1){.pf-ref},
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{f(x)=\sqrt{x}\text{ is uniformly continuous on }[0,\infty).}
-\]
+$$
 
 
 ::: pf-proof
 
 The number
-\[
+$$
 \delta=\varepsilon^2
-\]
+$$
 in step [](#s1-2){.pf-ref} depends only on $\varepsilon$, not on the points $x,y$.
 Thus step [](#s1-2){.pf-ref} is exactly the definition of uniform continuity.
 

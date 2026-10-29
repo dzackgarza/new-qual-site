@@ -19,13 +19,13 @@ audit:
 ::: {.problem}
 The solution of the system
 
-\[
+$$
 \begin{aligned}
 ax + ay - z &= 1 \\
 x - ay - az &= -1 \\
 ax - y + az &= 1
 \end{aligned}
-\]
+$$
 
 is $(x, y, z) = (a, b, a)$. If $a$ is NOT an integer, what is the numerical value of $a + b$?
 

@@ -49,13 +49,13 @@ Statement 1 is false.
 ::: pf-proof
 
 Take $\Omega=[0,1]$ with Lebesgue measure and enumerate the dyadic intervals level by level:
-\[
+$$
 f_n=\mathbf1_{[j2^{-k},(j+1)2^{-k})}
-\]
+$$
 for $0\le j<2^k$, with $k\to\infty$ along the enumeration. Then
-\[
+$$
 \|f_n\|_2=2^{-k/2}\longrightarrow0,
-\]
+$$
 so $f_n\to0$ in $L^2$.
 
 For every non-dyadic $x\in[0,1]$, at each level $k$ exactly one dyadic interval contains $x$, while the other intervals at that level do not. Hence $f_n(x)$ takes both values $1$ and $0$ infinitely often. Thus the full sequence does not converge pointwise at almost every $x$.
@@ -71,19 +71,19 @@ Statement 2 is true.
 ::: pf-proof
 
 Since the singleton $\{\omega_0\}$ has positive finite measure,
-\[
+$$
 \|f_n-f\|_2^2
 \ge
 \int_{\{\omega_0\}}|f_n-f|^2\,d\mu
 =|f_n(\omega_0)-f(\omega_0)|^2\mu(\{\omega_0\}).
-\]
+$$
 Therefore
-\[
+$$
 |f_n(\omega_0)-f(\omega_0)|
 \le
 \frac{\|f_n-f\|_2}{\mu(\{\omega_0\})^{1/2}}
 \longrightarrow0.
-\]
+$$
 
 :::
 
@@ -96,16 +96,16 @@ Statement 3 is false in general.
 ::: pf-proof
 
 Take $\Omega=\RR$ with Lebesgue measure,
-\[
+$$
 f_n=\mathbf1_{[n,n+1]},
 \qquad
 f=0.
-\]
+$$
 Then $f_n(x)\to0$ for every $x\in\RR$. But for $\varepsilon=1/2$,
-\[
+$$
 m\bigl(\{|f_n-f|\ge1/2\}\bigr)
 =m([n,n+1])=1
-\]
+$$
 for every $n$. Hence $f_n$ does not converge to $f$ in measure.
 
 :::
@@ -119,17 +119,17 @@ Statement 4 is true.
 ::: pf-proof
 
 Let $h_n=f_n-f$. Hölder's inequality with exponents $3$ and $3/2$ gives
-\[
+$$
 \|h_n\|_1
 =\int_\Omega |h_n|\cdot1\,d\mu
 \le
 \|h_n\|_3\,\|1\|_{3/2}
 =\mu(\Omega)^{2/3}\|h_n\|_3.
-\]
+$$
 Since $\|h_n\|_3\to0$,
-\[
+$$
 \boxed{\|f_n-f\|_1\to0.}
-\]
+$$
 
 :::
 

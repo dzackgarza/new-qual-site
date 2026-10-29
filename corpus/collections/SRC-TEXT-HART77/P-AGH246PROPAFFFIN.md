@@ -30,48 +30,48 @@ Then $f$ is a finite morphism.
 
 ::: {.solution}
 Write
-\[
+$$
 X=\Spec A,
 \qquad
 Y=\Spec B,
-\]
+$$
 where $A$ and $B$ are finitely generated integral $k$-algebras, and let
-\[
+$$
 \phi:B\longrightarrow A
-\]
+$$
 be the ring homomorphism corresponding to $f$.
 Put
-\[
+$$
 K=\operatorname{Frac}(A).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 Let $R\subseteq K$ be any valuation ring containing the subring $\phi(B)$.  Then there is a commutative diagram
-\[
+$$
 \begin{array}{ccc}
 \Spec K&\longrightarrow&X\\
 \downarrow&&\downarrow{\scriptstyle f}\\
 \Spec R&\longrightarrow&Y.
 \end{array}
-\]
+$$
 
 ::: pf-proof
 
 The top morphism is induced by the inclusion
-\[
+$$
 A\hookrightarrow K.
-\]
+$$
 The bottom morphism is induced by the ring homomorphism
-\[
+$$
 B\xrightarrow{\phi}\phi(B)\hookrightarrow R.
-\]
+$$
 After composing with the inclusion $R\hookrightarrow K$, both routes on coordinate rings are the same map
-\[
+$$
 B\xrightarrow{\phi}A\hookrightarrow K.
-\]
+$$
 Hence the square commutes.
 
 :::
@@ -81,9 +81,9 @@ Hence the square commutes.
 ::: {.pf-step #s2}
 
 Properness of $f$ gives a lift
-\[
+$$
 \Spec R\longrightarrow X
-\]
+$$
 in the diagram of step [](#s1){.pf-ref}.
 
 ::: pf-proof
@@ -97,24 +97,24 @@ The valuative criterion for properness applies to every valuation ring and every
 ::: {.pf-step #s3}
 
 The lift in step [](#s2){.pf-ref} forces
-\[
+$$
 \boxed{A\subseteq R.}
-\]
+$$
 
 ::: pf-proof
 
 The lift corresponds to a ring homomorphism
-\[
+$$
 A\longrightarrow R
-\]
+$$
 whose composite with the inclusion
-\[
+$$
 R\hookrightarrow K
-\]
+$$
 equals the original inclusion
-\[
+$$
 A\hookrightarrow K,
-\]
+$$
 because the lift restricts on the generic point to the top arrow in step [](#s1){.pf-ref}.
 
 Therefore every $a\in A$ maps to the same element $a\in K$, now lying in $R$.  Hence $A\subseteq R$.
@@ -132,17 +132,17 @@ Every element of $A$ is integral over $\phi(B)$.
 Hartshorne II.4.11A states that if $C$ is a subring of a field $K$, then the integral closure of $C$ in $K$ is the intersection of all valuation rings of $K$ which contain $C$.
 
 Take
-\[
+$$
 C=\phi(B)\subseteq K.
-\]
+$$
 By step [](#s3){.pf-ref}, every valuation ring $R$ of $K$ containing $C$ also contains $A$.  Therefore
-\[
+$$
 A
 \subseteq
 \bigcap_{R\supseteq C}R
 =
 \overline C^{\,K},
-\]
+$$
 the integral closure of $C$ in $K$.  Thus every $a\in A$ is integral over $C=\phi(B)$.
 
 :::
@@ -156,9 +156,9 @@ The $B$-algebra $A$ is finitely generated.
 ::: pf-proof
 
 The morphism $f$ is proper, hence of finite type by definition.  Since both source and target are affine, the affine criterion for finite type gives
-\[
+$$
 A=B[a_1,\ldots,a_n]
-\]
+$$
 for finitely many elements $a_i\in A$.
 
 :::
@@ -172,17 +172,17 @@ A finitely generated integral algebra is finite as a module.  Hence $A$ is a fin
 ::: pf-proof
 
 By step [](#s4){.pf-ref}, each generator $a_i$ from step [](#s5){.pf-ref} is integral over the image of $B$.  Thus for each $i$ there is a monic equation
-\[
+$$
 a_i^{d_i}+b_{i,d_i-1}a_i^{d_i-1}+\cdots+b_{i,0}=0
-\]
+$$
 with coefficients from the image of $B$.
 
 Consequently every sufficiently high power of $a_i$ is a $B$-linear combination of lower powers.  Therefore $A$ is generated as a $B$-module by the finitely many monomials
-\[
+$$
 a_1^{e_1}\cdots a_n^{e_n},
 \qquad
 0\le e_i<d_i.
-\]
+$$
 Hence $A$ is finite as a $B$-module.
 
 :::
@@ -192,16 +192,16 @@ Hence $A$ is finite as a $B$-module.
 ::: {.pf-step #s7}
 
 Therefore
-\[
+$$
 \boxed{f:X\longrightarrow Y\text{ is finite}.}
-\]
+$$
 
 ::: pf-proof
 
 For an affine morphism
-\[
+$$
 \Spec A\longrightarrow\Spec B,
-\]
+$$
 finiteness is exactly the condition that $A$ be finite as a $B$-module.  This is step [](#s6){.pf-ref}.
 
 :::

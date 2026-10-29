@@ -47,11 +47,11 @@ Alexander duality implies that $H^2(M;\ZZ)$ is free abelian.
 
 ::: pf-proof
 The embedded manifold $M$ is compact and locally contractible, so Alexander duality gives
-\[
+$$
 \widetilde H^2(M;\ZZ)
 \cong
 \widetilde H_0(S^3\setminus M;\ZZ).
-\]
+$$
 The group $\widetilde H_0$ of any space is free abelian, since it is free on the path components modulo one diagonal copy of $\ZZ$.
 Hence $\widetilde H^2(M;\ZZ)$ is free abelian.
 In degree $2>0$, reduced and unreduced cohomology agree, so $H^2(M;\ZZ)$ is free abelian.
@@ -64,7 +64,7 @@ If $H_1(M;\ZZ)$ has nonzero torsion, then $H^2(M;\ZZ)$ has nonzero torsion.
 
 ::: pf-proof
 The universal coefficient theorem for cohomology gives a natural short exact sequence
-\[
+$$
 0
 \longrightarrow
 \operatorname{Ext}(H_1(M;\ZZ),\ZZ)
@@ -74,19 +74,19 @@ H^2(M;\ZZ)
 \operatorname{Hom}(H_2(M;\ZZ),\ZZ)
 \longrightarrow
 0.
-\]
+$$
 By step [](#assume-embedding){.pf-ref}, the finitely generated abelian group $H_1(M;\ZZ)$ decomposes as
-\[
+$$
 H_1(M;\ZZ)\cong \ZZ^r\oplus T
-\]
+$$
 with $T$ finite.
 If $T\ne0$, then
-\[
+$$
 \operatorname{Ext}(H_1(M;\ZZ),\ZZ)
 \cong
 \operatorname{Ext}(T,\ZZ)
 \cong T
-\]
+$$
 is nonzero torsion.
 The left arrow in the UCT sequence is injective, so this torsion subgroup embeds in $H^2(M;\ZZ)$.
 :::

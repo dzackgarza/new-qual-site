@@ -69,12 +69,12 @@ Statement 2 is false.
 ::: pf-proof
 
 The real matrix
-\[
+$$
 \begin{pmatrix}
 0&-1\\
 1&0
 \end{pmatrix}
-\]
+$$
 has characteristic polynomial $\lambda^2+1$, so it has no real
 eigenvalue.
 
@@ -91,9 +91,9 @@ Statement 3 is true.
 
 Suppose
 $c_1Av_1+c_2Av_2=0$. Since $A$ is invertible,
-\[
+$$
 A(c_1v_1+c_2v_2)=0
-\]
+$$
 implies $c_1v_1+c_2v_2=0$, and because $\{v_1,v_2\}$ is a basis,
 $c_1=c_2=0$. Thus $Av_1,Av_2$ are linearly independent. Two linearly
 independent vectors in $\RR^2$ form a basis.
@@ -111,17 +111,17 @@ Statement 4 is true.
 
 If $(D-1)^2f=0$, set $g=(D-1)f$. Then $(D-1)g=0$, so
 $g=ce^t$ for some constant $c$. Hence
-\[
+$$
 f'-f=ce^t.
-\]
+$$
 Multiplying by $e^{-t}$ gives
-\[
+$$
 (e^{-t}f)'=c,
-\]
+$$
 so $f=(ct+d)e^t$. Therefore
-\[
+$$
 \ker(D-1)^2=\operatorname{span}\{e^t,te^t\},
-\]
+$$
 and the two displayed functions are linearly independent.
 
 :::
@@ -136,12 +136,12 @@ Statement 5 is false.
 ::: pf-proof
 
 The matrix
-\[
+$$
 \begin{pmatrix}
 1&2\\
 2&1
 \end{pmatrix}
-\]
+$$
 is symmetric and every entry is positive, but its eigenvalues are $3$ and
 $-1$.
 
@@ -185,12 +185,12 @@ Statement 8 is true.
 ::: pf-proof
 
 For $f,g\in C^\infty$ and scalars $a,b$,
-\[
+$$
 T(af+bg)
 =(af+bg)''+(af+bg)
 =a(f''+f)+b(g''+g)
 =aTf+bTg.
-\]
+$$
 Also $f''+f$ is smooth whenever $f$ is smooth. Thus
 $T\colon C^\infty\to C^\infty$ is linear.
 
@@ -206,11 +206,11 @@ Statement 9 is true.
 ::: pf-proof
 
 Since $A^T=A$ and $B^T=B$,
-\[
+$$
 (A^2-B^2)^T
 =(A^T)^2-(B^T)^2
 =A^2-B^2.
-\]
+$$
 Therefore $A^2-B^2$ is symmetric.
 
 :::
@@ -226,9 +226,9 @@ Statement 10 is true.
 
 For every $n\geq0$, the function $\cos(nx)$ is even, whereas $x^5$ is
 odd. Hence $x^5\cos(nx)$ is odd, and therefore
-\[
+$$
 \int_{-\pi}^{\pi}x^5\cos(nx)\,dx=0.
-\]
+$$
 Thus every cosine coefficient is zero.
 
 :::
@@ -243,7 +243,7 @@ Statement 11 is false.
 ::: pf-proof
 
 Let
-\[
+$$
 A=
 \begin{pmatrix}
 1&0\\
@@ -255,17 +255,17 @@ B=
 0&1\\
 0&2
 \end{pmatrix}.
-\]
+$$
 The matrix $A$ is diagonal. The matrix $B$ has the distinct real
 eigenvalues $0$ and $2$, so it is diagonalizable over $\RR$.
 However,
-\[
+$$
 A+B=
 \begin{pmatrix}
 1&1\\
 0&1
 \end{pmatrix}
-\]
+$$
 has only the eigenvalue $1$ and a one-dimensional eigenspace, so it is
 not diagonalizable.
 
@@ -281,7 +281,7 @@ Statement 12 is false.
 ::: pf-proof
 
 The $5\times4$ matrix
-\[
+$$
 \begin{pmatrix}
 1&0&0&0\\
 0&1&0&0\\
@@ -289,7 +289,7 @@ The $5\times4$ matrix
 0&0&0&1\\
 0&0&0&0
 \end{pmatrix}
-\]
+$$
 has rank $4$, so by rank-nullity its kernel has dimension $0$. Hence its
 kernel contains no nonzero vector.
 
@@ -319,9 +319,9 @@ Statement 14 is false.
 ::: pf-proof
 
 The zeroth cosine coefficient is a positive constant multiple of
-\[
+$$
 \int_{-\pi}^{\pi}e^{-x^2}\,dx.
-\]
+$$
 The integrand is strictly positive, so this integral, and therefore
 $a_0$, is strictly positive rather than zero.
 
@@ -338,9 +338,9 @@ Statement 15 is true.
 
 From
 $Q_1R_1=Q_2R_2$ one obtains
-\[
+$$
 U:=Q_2^TQ_1=R_2R_1^{-1}.
-\]
+$$
 The left-hand expression shows that $U$ is orthogonal, while the
 right-hand expression shows that $U$ is upper triangular. An upper
 triangular orthogonal matrix is diagonal with diagonal entries in
@@ -379,9 +379,9 @@ Statement 17 is false.
 ::: pf-proof
 
 Take $A=-2I_2$. Then every solution of $x'=Ax$ is
-\[
+$$
 x(t)=e^{-2t}x(0),
-\]
+$$
 so the origin is asymptotically stable. But every eigenvalue of $A$ is
 $-2$, whose absolute value is $2>1$.
 
@@ -397,13 +397,13 @@ Statement 18 is true.
 ::: pf-proof
 
 The initial datum $\sin(14x)$ is a Laplacian eigenfunction:
-\[
+$$
 \frac{d^2}{dx^2}\sin(14x)=-196\sin(14x).
-\]
+$$
 Hence its heat evolution is
-\[
+$$
 u(x,t)=e^{-196t}\sin(14x).
-\]
+$$
 This satisfies $u_t=u_{xx}$ and $u(x,0)=\sin(14x)$, and
 $|u(x,t)|\leq e^{-196t}\to0$. Thus the solution converges uniformly to
 $0$ as $t\to\infty$.
@@ -420,9 +420,9 @@ Statement 19 is true.
 ::: pf-proof
 
 By linearity of $A$,
-\[
+$$
 A(3v+2u)=3Av+2Au=3(5v)+2(-u)=15v-2u.
-\]
+$$
 
 :::
 
@@ -431,9 +431,9 @@ A(3v+2u)=3Av+2Au=3(5v)+2(-u)=15v-2u.
 ::: {.pf-step #s1-20}
 
 The recovered truth values, in order, are
-\[
+$$
 \boxed{\mathrm{F,F,T,T,F,T,F,T,T,T,F,F,F,F,T,T,F,T,T}}.
-\]
+$$
 
 
 ::: pf-proof

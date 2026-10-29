@@ -27,10 +27,10 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_{-\pi}^{\pi}\frac{\sin(n\theta)}{\sin\theta}\,d\theta,
 \qquad n=1,2,\dots.
-\]
+$$
 :::
 
 ::: {.solution}

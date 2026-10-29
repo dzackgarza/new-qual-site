@@ -33,18 +33,18 @@ Boundary behavior on the coordinate axes:
 ::: pf-step
 
 On the real axis ($y = 0$), $z = x \in \RR$:
-\[
+$$
 |f(x)| \le e^{|x \cdot 0|} = e^0 = 1 \quad \text{for all } x \in \RR.
-\]
+$$
 
 :::
 
 ::: pf-step
 
 On the imaginary axis ($x = 0$), $z = iy$ with $y \in \RR$:
-\[
+$$
 |f(iy)| \le e^{|0 \cdot y|} = e^0 = 1 \quad \text{for all } y \in \RR.
-\]
+$$
 
 :::
 
@@ -75,13 +75,13 @@ The growth of $f$ satisfies $|f(z)| \le e^{|xy|} \le e^{|z|^2 / 2}$ for all $z \
 
 Consider the first quadrant $Q_1 = \{ z = r e^{i\theta} \mid 0 < \theta < \pi/2 \}$.
 For $\alpha \in (0, 2)$, say $\alpha = 3/2$, and any $\varepsilon > 0$, define the auxiliary function:
-\[
+$$
 g_\varepsilon(z) = f(z) e^{-\varepsilon z^{7/4} e^{-i 7\pi / 16}} \quad \text{or} \quad F(z) = f(z) e^{\frac{i}{2} z^2}.
-\]
+$$
 For $F(z) = f(z) e^{\frac{i}{2} z^2}$, compute the modulus in $Q_1$:
-\[
+$$
 |F(z)| = |f(z)| \left| e^{\frac{i}{2}(x^2 - y^2 + 2ixy)} \right| = |f(z)| e^{-xy} \le e^{xy} e^{-xy} = 1.
-\]
+$$
 Thus $F$ is bounded by $1$ on all of $\overline{Q_1}$, which implies $|f(z)| \le e^{xy}$ with $|f(z)| \le 1$ on $\partial Q_1$.
 
 :::
@@ -89,9 +89,9 @@ Thus $F$ is bounded by $1$ on all of $\overline{Q_1}$, which implies $|f(z)| \le
 ::: pf-step
 
 Applying the Phragmén–Lindelöf Theorem to the sector of opening angle $\pi/2$, since $|f| \le 1$ on $\partial Q_1$ and $f$ has order of growth $\le 2$, we obtain:
-\[
+$$
 |f(z)| \le 1 \quad \text{for all } z \in Q_1.
-\]
+$$
 
 :::
 
@@ -115,9 +115,9 @@ Application of Liouville’s Theorem:
 
 $f$ is an entire function satisfying $|f(z)| \le 1$ for all $z \in \CC$.
 By Liouville’s Theorem, $f$ must be a constant function:
-\[
+$$
 f(z) = c \quad \text{for some constant } c \in \CC \text{ with } |c| \le 1.
-\]
+$$
 
 :::
 

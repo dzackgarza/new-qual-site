@@ -24,11 +24,11 @@ audit:
 
 ::: {.problem}
 Let $A,B$ be complex $n\times n$ matrices. Prove that
-\[
+$$
 |\operatorname{tr}(AB^*)|^2
 \le
 \operatorname{tr}(AA^*)\operatorname{tr}(BB^*).
-\]
+$$
 :::
 
 ::: {.solution}

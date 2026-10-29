@@ -35,16 +35,16 @@ In connection with this result, see the relationship between the diameter of a c
 
 ::: {.solution}
 Fix $0<r<1$. By the Cauchy integral formula for first derivatives, $\frac1{2\pi i}\int_{|\zeta|=r}\frac{f(\zeta)}{\zeta^2}\,d\zeta=f'(0)$, and applied to $\zeta\mapsto f(-\zeta)$, whose derivative at $0$ is $-f'(0)$, it gives $\frac1{2\pi i}\int_{|\zeta|=r}\frac{f(-\zeta)}{\zeta^2}\,d\zeta=-f'(0)$. Subtracting,
-\[
+$$
 2f'(0)=\frac1{2\pi i}\int_{|\zeta|=r}
 \frac{f(\zeta)-f(-\zeta)}{\zeta^2}\,d\zeta.
-\]
+$$
 Since both $\zeta$ and $-\zeta$ lie in $\DD$,
-\[
+$$
 |f(\zeta)-f(-\zeta)|\le d.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 2|f'(0)|
 &\le \frac1{2\pi}\int_{|\zeta|=r}
@@ -52,9 +52,9 @@ Therefore
 &=\frac1{2\pi}\frac d{r^2}(2\pi r)
 =\frac dr.
 \end{aligned}
-\]
+$$
 Letting $r\uparrow1$ yields
-\[
+$$
 \boxed{2|f'(0)|\le d}.
-\]
+$$
 :::

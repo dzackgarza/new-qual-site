@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 For what values of $m$ and $b$ will the following function have a derivative for every $x$?
 
-\[
+$$
 f(x) = \begin{cases} x^2 + x - 3 & \text{if } x \le 1 \\ mx + b & \text{if } x > 1 \end{cases}
-\]
+$$
 
 (A) $m = 3, b = -2$
 (B) $m = -2, b = -3$

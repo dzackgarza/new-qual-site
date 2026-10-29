@@ -46,10 +46,10 @@ $M$ to show that the calculation is ambiguous.
 ::: pf-step
 
 By the structure theorem for finitely generated modules over a PID, write
-\[
+$$
 M\cong R^r\oplus\bigoplus_{q}\bigoplus_{j=1}^{s_q}R/(q^{e_{q,j}}),
-\]
-where \(q\) runs over primes of \(R\), up to associates, and every \(e_{q,j}\ge1\).
+$$
+where $q$ runs over primes of $R$, up to associates, and every $e_{q,j}\ge1$.
 
 ::: pf-proof
 
@@ -62,15 +62,15 @@ modules over a PID.
 
 ::: {.pf-step #s2}
 
-The supplied number \(\dim_K(M\otimes_RK)\) is exactly
-\(r=\operatorname{rank}_R M\). Thus part (a) is determined precisely.
+The supplied number $\dim_K(M\otimes_RK)$ is exactly
+$r=\operatorname{rank}_R M$. Thus part (a) is determined precisely.
 
 ::: pf-proof
 
-Tensoring with \(K\) kills every torsion summand and sends \(R^r\) to \(K^r\). Hence
-\[
+Tensoring with $K$ kills every torsion summand and sends $R^r$ to $K^r$. Hence
+$$
 M\otimes_RK\cong K^r.
-\]
+$$
 
 :::
 
@@ -78,21 +78,21 @@ M\otimes_RK\cong K^r.
 
 ::: {.pf-step #s3}
 
-Fix a prime \(p\), and let \(\mathfrak m=(p)\). Then
-\[
+Fix a prime $p$, and let $\mathfrak m=(p)$. Then
+$$
 \dim_{R/(p)}(M\otimes_RR/(p))=r+s_p.
-\]
+$$
 
 ::: pf-proof
 
-The free summand contributes \((R/(p))^r\). For a torsion summand \(R/(q^e)\),
-\[
+The free summand contributes $(R/(p))^r$. For a torsion summand $R/(q^e)$,
+$$
 R/(q^e)\otimes_RR/(p)\cong R/(q^e,p).
-\]
-If \(q\) is not associate to \(p\), then \((q^e,p)=R\), so this tensor product is zero.
-If \(q\) is associate to \(p\), then \((p^e,p)=(p)\), so the tensor product is
-\(R/(p)\), independently of \(e\). Thus exactly the \(s_p\) elementary divisors that are
-powers of \(p\) contribute one dimension each.
+$$
+If $q$ is not associate to $p$, then $(q^e,p)=R$, so this tensor product is zero.
+If $q$ is associate to $p$, then $(p^e,p)=(p)$, so the tensor product is
+$R/(p)$, independently of $e$. Thus exactly the $s_p$ elementary divisors that are
+powers of $p$ contribute one dimension each.
 
 :::
 
@@ -101,13 +101,13 @@ powers of \(p\) contribute one dimension each.
 ::: {.pf-step #s4}
 
 Therefore part (b) is determined precisely by
-\[
+$$
 s_p=\dim_{R/(p)}(M\otimes_RR/(p))-\dim_K(M\otimes_RK).
-\]
+$$
 
 ::: pf-proof
 
-Subtract the value \(r\) found in step [](#s2){.pf-ref} from the identity in step [](#s3){.pf-ref}.
+Subtract the value $r$ found in step [](#s2){.pf-ref} from the identity in step [](#s3){.pf-ref}.
 
 :::
 
@@ -120,13 +120,13 @@ Part (c) is not determined by the supplied data.
 ::: pf-proof
 
 Take
-\[
+$$
 M_1=R/(p),\qquad M_2=R/(p^2).
-\]
-Both have rank zero. For the maximal ideal \((p)\), both fibers are one-dimensional over
-\(R/(p)\); for every maximal ideal \((q)\neq(p)\), both fibers vanish. Hence all
-supplied dimensions are identical for \(M_1\) and \(M_2\). Nevertheless their
-elementary-divisor lists are respectively \(\{p\}\) and \(\{p^2\}\), so the exact
+$$
+Both have rank zero. For the maximal ideal $(p)$, both fibers are one-dimensional over
+$R/(p)$; for every maximal ideal $(q)\neq(p)$, both fibers vanish. Hence all
+supplied dimensions are identical for $M_1$ and $M_2$. Nevertheless their
+elementary-divisor lists are respectively $\{p\}$ and $\{p^2\}$, so the exact
 exponents cannot be recovered.
 
 :::

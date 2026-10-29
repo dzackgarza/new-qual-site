@@ -26,20 +26,20 @@ audit:
 Let $f:\RR^n\to\RR$ satisfy:
 
 1. The function
-\[
+$$
 g(x,y)=f(x+y)-f(x)-f(y)
-\]
+$$
 is bilinear.
 
 2. For every $x\in\RR^n$ and $t\in\RR$,
-\[
+$$
 f(tx)=t^2f(x).
-\]
+$$
 
 Show that there is a linear transformation $A:\RR^n\to\RR^n$ such that
-\[
+$$
 f(x)=\langle x,Ax\rangle
-\]
+$$
 for the usual inner product.
 :::
 

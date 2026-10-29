@@ -33,13 +33,13 @@ Show there is a subgroup $K$ of finite index in $F$ such that $K \supset H$ and 
 
 ::: {.solution}
 Realize
-\[
+$$
 F=\pi_1(R,r_0)
-\]
+$$
 where $R$ is a finite rose, and let
-\[
+$$
 p:\widetilde R_H\to R
-\]
+$$
 be the connected covering corresponding to $H$.
 Choose a base vertex $\tilde r_0$ above $r_0$.
 
@@ -48,17 +48,17 @@ Choose a base vertex $\tilde r_0$ above $r_0$.
 ::: pf-step
 
 Since $H$ is finitely generated, there is a finite connected subgraph
-\[
+$$
 Y_0\subseteq\widetilde R_H
-\]
+$$
 containing $\tilde r_0$ and closed lifts of loops representing a finite generating set of $H$.
 
 ::: pf-proof
 
 Choose generators
-\[
+$$
 h_1,\dots,h_k
-\]
+$$
 of $H$ and reduced edge loops in $R$ representing them.
 Their lifts beginning at $\tilde r_0$ are closed because each $h_i\in H$.
 The union of these finitely many finite lifted edge loops is a finite connected subgraph $Y_0$.
@@ -84,9 +84,9 @@ Since $x\notin H$, the lift of $\gamma_x$ is not closed.
 ::: pf-step
 
 Let
-\[
+$$
 Y=Y_0\cup\operatorname{im}(\widetilde\gamma_x).
-\]
+$$
 Then $Y$ is a finite connected subgraph containing both distinct vertices $\tilde r_0,\tilde r_1$.
 
 ::: pf-proof
@@ -101,14 +101,14 @@ The endpoint $\tilde r_1$ belongs to the lifted path and is distinct from $\tild
 ::: {.pf-step #s4}
 
 By Exercise 10, $Y$ is contained in a finite covering graph
-\[
+$$
 q:Z\to R
-\]
+$$
 with exactly the same vertex set as $Y$.
 Let
-\[
+$$
 K=q_*\pi_1(Z,\tilde r_0)\le F.
-\]
+$$
 Then $K$ has finite index in $F$.
 
 ::: pf-proof
@@ -124,9 +124,9 @@ Hence the subgroup corresponding to the pointed cover $Z\to R$ has index equal t
 ::: {.pf-step #s5}
 
 One has
-\[
+$$
 H\subseteq K.
-\]
+$$
 
 ::: pf-proof
 
@@ -140,9 +140,9 @@ Hence $h_i\in K$ for every $i$, so the subgroup they generate, namely $H$, is co
 ::: {.pf-step #s6}
 
 One has
-\[
+$$
 x\notin K.
-\]
+$$
 
 ::: pf-proof
 
@@ -158,9 +158,9 @@ Therefore $x\notin q_*\pi_1(Z,\tilde r_0)=K$.
 ::: pf-step
 
 Thus
-\[
+$$
 \boxed{H\subseteq K\le F,\qquad [F:K]<\infty,\qquad x\notin K.}
-\]
+$$
 
 ::: pf-proof
 

@@ -12,18 +12,18 @@ audit:
 
 ::: {.problem}
 1. Let $X=D^2\times S^1$ be a solid torus and $A=S^1\times S^1=\partial X$. Compute
-   \[
+   $$
    H_n(X,A)
-   \]
+   $$
    for every $n$.
 2. A knot $K$ is an embedding $S^1\hookrightarrow S^3$. Suppose it is tame, so there is an embedding
-   \[
+   $$
    f:S^1\times D^2\to S^3
-   \]
+   $$
    restricting on $S^1\times\{0\}$ to the knot. Write
-   \[
+   $$
    N(K)=f(S^1\times D^2).
-   \]
+   $$
    Compute $H_n(S^3\setminus N(K))$ for every $n$.
 :::
 
@@ -36,7 +36,7 @@ All homology groups are taken with integer coefficients.
 ::: {.pf-step #s1-1}
 
 The absolute homology groups needed for the pair $(X,A)$ are
-\[
+$$
 H_n(X)\cong
 \begin{cases}
 \ZZ,&n=0,1,\\
@@ -49,20 +49,20 @@ H_n(A)\cong
 \ZZ^2,&n=1,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 
 ::: pf-proof
 
 The solid torus
-\[
+$$
 X=D^2\times S^1
-\]
+$$
 deformation retracts onto its core circle, so it has the homology of $S^1$.
 Its boundary
-\[
+$$
 A=\partial D^2\times S^1\cong S^1\times S^1
-\]
+$$
 is the torus, whose homology groups are the displayed ones.
 
 :::
@@ -72,20 +72,20 @@ is the torus, whose homology groups are the displayed ones.
 ::: {.pf-step #s1-2}
 
 The map induced by inclusion
-\[
+$$
 H_1(A)\longrightarrow H_1(X)
-\]
+$$
 is surjective with kernel isomorphic to $\ZZ$.
 
 
 ::: pf-proof
 
 Use the standard basis
-\[
+$$
 \mu=[\partial D^2\times\{*\}],
 \qquad
 \lambda=[\{*\}\times S^1]
-\]
+$$
 of $H_1(A)\cong\ZZ^2$. In $X$, the meridian $\mu$ bounds the disk
 $D^2\times\{*\}$, so it maps to $0$. The longitude $\lambda$ maps to the
 generator represented by the core circle of the solid torus. Hence the map is
@@ -99,49 +99,49 @@ $\mu$.
 ::: {.pf-step #s1-3}
 
 The relative homology of the solid torus and its boundary is
-\[
+$$
 \boxed{
 H_n(X,A)\cong
 \begin{cases}
 \ZZ,&n=2,3,\\
 0,&\text{otherwise}.
 \end{cases}}
-\]
+$$
 
 
 ::: pf-proof
 
 The long exact sequence of the pair contains
-\[
+$$
 0=H_3(X)\longrightarrow H_3(X,A)
 \longrightarrow H_2(A)\cong\ZZ
 \longrightarrow H_2(X)=0,
-\]
+$$
 so
-\[
+$$
 H_3(X,A)\cong\ZZ.
-\]
+$$
 The next part is
-\[
+$$
 0=H_2(X)\longrightarrow H_2(X,A)
 \longrightarrow H_1(A)\longrightarrow H_1(X)
 \longrightarrow H_1(X,A)
 \longrightarrow H_0(A)\longrightarrow H_0(X).
-\]
+$$
 By step [](#s1-2){.pf-ref}, the map $H_1(A)\to H_1(X)$ is surjective with kernel
 $\ZZ$. Exactness therefore gives
-\[
+$$
 H_2(X,A)\cong\ZZ.
-\]
+$$
 Both $A$ and $X$ are connected, so
-\[
+$$
 H_0(A)\longrightarrow H_0(X)
-\]
+$$
 is an isomorphism. Together with the surjectivity in step [](#s1-2){.pf-ref}, exactness
 then gives
-\[
+$$
 H_1(X,A)=H_0(X,A)=0.
-\]
+$$
 All groups in degrees above $3$ vanish by step [](#s1-1){.pf-ref} and the same long exact
 sequence.
 
@@ -157,14 +157,14 @@ The tubular neighborhood $N(K)$ has the homotopy type of $S^1$.
 ::: pf-proof
 
 By definition of tameness,
-\[
+$$
 N(K)=f(S^1\times D^2)
-\]
+$$
 is homeomorphic to $S^1\times D^2$. Contracting the disk factor gives a
 deformation retraction onto $S^1\times\{0\}$. Hence
-\[
+$$
 N(K)\simeq S^1.
-\]
+$$
 
 :::
 
@@ -173,27 +173,27 @@ N(K)\simeq S^1.
 ::: {.pf-step #s1-5}
 
 The homology of the complement is
-\[
+$$
 \boxed{
 H_n(S^3\setminus N(K))\cong
 \begin{cases}
 \ZZ,&n=0,1,\\
 0,&n\ge2.
 \end{cases}}
-\]
+$$
 
 
 ::: pf-proof
 
 The set $N(K)$ is compact and locally contractible, so Alexander duality
 applies:
-\[
+$$
 \widetilde H_n(S^3\setminus N(K))
 \cong
 \widetilde H^{\,2-n}(N(K)).
-\]
+$$
 By step [](#s1-4){.pf-ref},
-\[
+$$
 \widetilde H^j(N(K))
 \cong
 \widetilde H^j(S^1)
@@ -202,11 +202,11 @@ By step [](#s1-4){.pf-ref},
 \ZZ,&j=1,\\
 0,&j\ne1.
 \end{cases}
-\]
+$$
 Thus
-\[
+$$
 \widetilde H_1(S^3\setminus N(K))\cong\ZZ
-\]
+$$
 and all other reduced homology groups vanish. In particular the complement
 is connected, so its unreduced $H_0$ is $\ZZ$. This gives the displayed
 answer in every degree.

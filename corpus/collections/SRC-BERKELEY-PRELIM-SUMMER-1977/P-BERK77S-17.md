@@ -28,9 +28,9 @@ audit:
 
 ::: {.problem}
 In $\ZZ[x]$, show that the ideal
-\[
+$$
 I=(5,x^2+2)
-\]
+$$
 is maximal.
 :::
 

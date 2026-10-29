@@ -22,13 +22,13 @@ audit:
 
 ::: {.problem}
 Let $d\mu$ be a finite complex Borel measure on $[0,1)$ such that
-\[
+$$
 \widehat\mu(n)=\int_0^1 e^{2\pi i n x}\,d\mu(x)\to0\qquad(n\to\infty).
-\]
+$$
 Let $d\nu$ be a finite complex Borel measure on $[0,1)$ absolutely continuous with respect to $d\mu$. Show that
-\[
+$$
 \widehat\nu(n)\to0\qquad(n\to\infty).
-\]
+$$
 :::
 
 ::: {.solution}

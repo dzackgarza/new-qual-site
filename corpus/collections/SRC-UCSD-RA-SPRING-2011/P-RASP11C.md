@@ -46,15 +46,15 @@ Apply the hypothesis to the nonnegative function $|f|$.
 ::: pf-proof
 
 Define the extended-valued measurable function
-\[
+$$
 h(x):=\int_{\RR^n}K(x,y)|f(y)|\,dy.
-\]
+$$
 By Tonelli, $h$ is measurable and takes values in $[0,\infty]$. For every nonnegative $g\in L^{p'}$,
-\[
+$$
 \int_{\RR^n}g(x)h(x)\,dx
 =\iint g(x)K(x,y)|f(y)|\,dx\,dy
 \le K_0\|g\|_{p'}\|f\|_p.
-\]
+$$
 
 :::
 
@@ -67,22 +67,22 @@ Deduce that $h\in L^p$ and estimate its norm.
 ::: pf-proof
 
 For a nonnegative measurable function $h$, the dual norm formula gives
-\[
+$$
 \|h\|_p
 =\sup\left\{\int gh:\ g\ge0,\ g\in L^{p'},\ \|g\|_{p'}\le1\right\},
-\]
+$$
 with the usual endpoint interpretations for $p=1$ and $p=\infty$.
 
 Applying Step 1 to every such $g$ yields
-\[
+$$
 \|h\|_p\le K_0\|f\|_p.
-\]
+$$
 In particular $h(x)<\infty$ for almost every $x$.
 
 For completeness, the endpoint cases are contained in the same argument: if $p=1$, test with bounded nonnegative $g$ approaching $1$ to obtain $\int h\le K_0\|f\|_1$; if $p=\infty$, the estimate against every nonnegative $g\in L^1$ implies
-\[
+$$
 \operatorname*{ess\,sup}h\le K_0\|f\|_\infty.
-\]
+$$
 
 :::
 
@@ -95,21 +95,21 @@ Define $Kf$ almost everywhere and conclude the operator bound.
 ::: pf-proof
 
 At every $x$ for which $h(x)<\infty$,
-\[
+$$
 \int_{\RR^n}K(x,y)|f(y)|\,dy<\infty.
-\]
+$$
 Hence the integral
-\[
+$$
 Kf(x)=\int_{\RR^n}K(x,y)f(y)\,dy
-\]
+$$
 is absolutely convergent and therefore well defined. Moreover,
-\[
+$$
 |Kf(x)|\le h(x)
-\]
+$$
 almost everywhere. Thus
-\[
+$$
 \boxed{\|Kf\|_p\le\|h\|_p\le K_0\|f\|_p.}
-\]
+$$
 
 :::
 

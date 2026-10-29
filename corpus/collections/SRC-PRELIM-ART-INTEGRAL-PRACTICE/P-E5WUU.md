@@ -22,23 +22,23 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_0^1\int_y^1\sin(x^2)\,dx\,dy.
-\]
+$$
 :::
 
 ::: {.solution}
 The region is $0\le y\le x\le1$. Reversing the order of integration,
-\[
+$$
 \int_0^1\int_y^1\sin(x^2)\,dx\,dy
 =\int_0^1\int_0^x\sin(x^2)\,dy\,dx
 =\int_0^1x\sin(x^2)\,dx.
-\]
+$$
 With $u=x^2$,
-\[
+$$
 \int_0^1x\sin(x^2)\,dx
 =\frac12\int_0^1\sin u\,du
 =\frac{1-\cos1}{2}
 =\boxed{\sin^2\!\left(\frac12\right)}.
-\]
+$$
 :::

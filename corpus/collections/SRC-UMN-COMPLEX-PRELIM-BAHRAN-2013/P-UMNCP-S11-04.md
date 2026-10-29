@@ -17,13 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f:\DD\to\DD\) be holomorphic and suppose
-\[
+Let $f:\DD\to\DD$ be holomorphic and suppose
+$$
 f(0)=f'(0)=0.
-\]
-Prove that \(|f''(0)|\le2\), and describe all such \(f\) for which \(|f''(0)|=2\).
+$$
+Prove that $|f''(0)|\le2$, and describe all such $f$ for which $|f''(0)|=2$.
 
-The retained solution notes explicitly record that the printed exam omitted the necessary hypothesis \(f(\DD)\subseteq\DD\); it is included here because without it the assertion is false.
+The retained solution notes explicitly record that the printed exam omitted the necessary hypothesis $f(\DD)\subseteq\DD$; it is included here because without it the assertion is false.
 :::
 
 ::: {.solution}

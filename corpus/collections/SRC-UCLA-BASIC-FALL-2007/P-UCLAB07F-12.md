@@ -21,43 +21,43 @@ Define $l_j:\polys^n\to\RR$ by $l_j(p)=p(x_j)$.
 
 (a) Show that $\{l_j\}_{j=0}^n$ is linearly independent.
 
-(b) Show that there are unique coefficients $c_j$ such that \[\int_a^b p(x)\,dx=\sum_{j=0}^n c_jl_j(p)\] for every $p\in\polys^n$.
+(b) Show that there are unique coefficients $c_j$ such that $$\int_a^b p(x)\,dx=\sum_{j=0}^n c_jl_j(p)$$ for every $p\in\polys^n$.
 :::
 
 ::: {.solution}
 
 For each $j=0,\ldots,n$, define the Lagrange polynomial
-\[
+$$
 L_j(x)
 =
 \prod_{\substack{0\le m\le n\\m\ne j}}
 \frac{x-x_m}{x_j-x_m}.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 For all $j,k\in\{0,\ldots,n\}$,
-\[
+$$
 L_j(x_k)=\delta_{jk}.
-\]
+$$
 
 
 ::: pf-proof
 
 If $k=j$, every factor in the product equals $1$, so
-\[
+$$
 L_j(x_j)=1.
-\]
+$$
 If $k\ne j$, the factor corresponding to $m=k$ has numerator
-\[
+$$
 x_k-x_k=0,
-\]
+$$
 so
-\[
+$$
 L_j(x_k)=0.
-\]
+$$
 
 :::
 
@@ -66,20 +66,20 @@ L_j(x_k)=0.
 ::: {.pf-step #s1-2}
 
 The functionals
-\[
+$$
 l_0,\ldots,l_n
-\]
+$$
 are linearly independent in $(\polys^n)^*$.
 
 
 ::: pf-proof
 
 Suppose
-\[
+$$
 \sum_{j=0}^n a_jl_j=0
-\]
+$$
 as a linear functional on $\polys^n$. Fix $k$. Evaluating this functional at $L_k$ gives
-\[
+$$
 0
 =
 \sum_{j=0}^n a_jl_j(L_k)
@@ -87,7 +87,7 @@ as a linear functional on $\polys^n$. Fix $k$. Evaluating this functional at $L_
 \sum_{j=0}^n a_jL_k(x_j)
 =
 a_k
-\]
+$$
 by step [](#s1-1){.pf-ref}. Since $k$ was arbitrary, every $a_k=0$. Thus the functionals are linearly independent.
 
 :::
@@ -97,9 +97,9 @@ by step [](#s1-1){.pf-ref}. Since $k$ was arbitrary, every $a_k=0$. Thus the fun
 ::: {.pf-step #s1-3}
 
 The set
-\[
+$$
 \{l_0,\ldots,l_n\}
-\]
+$$
 is a basis of $(\polys^n)^*$.
 
 
@@ -114,18 +114,18 @@ The vector space $\polys^n$ has dimension $n+1$, so its dual also has dimension 
 ::: {.pf-step #s1-4}
 
 The map
-\[
+$$
 I:\polys^n\to\RR,
 \qquad
 I(p)=\int_a^b p(x)\,dx,
-\]
+$$
 is a linear functional.
 
 
 ::: pf-proof
 
 For polynomials $p,q$ and scalars $\alpha,\beta$,
-\[
+$$
 \begin{aligned}
 I(\alpha p+\beta q)
 &=
@@ -137,7 +137,7 @@ I(\alpha p+\beta q)
 &=
 \alpha I(p)+\beta I(q).
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -146,13 +146,13 @@ I(\alpha p+\beta q)
 ::: {.pf-step #s1-5}
 
 There exist unique scalars
-\[
+$$
 c_0,\ldots,c_n
-\]
+$$
 such that
-\[
+$$
 I=\sum_{j=0}^n c_jl_j.
-\]
+$$
 
 
 ::: pf-proof
@@ -166,25 +166,25 @@ By step [](#s1-3){.pf-ref}, the functionals $l_0,\ldots,l_n$ form a basis of $(\
 ::: {.pf-step #s1-6}
 
 The unique coefficients are
-\[
+$$
 \boxed{
 c_j=\int_a^b L_j(x)\,dx
 },
 \qquad
 j=0,\ldots,n.
-\]
+$$
 
 
 ::: pf-proof
 
 Evaluate the identity from step [](#s1-5){.pf-ref} at $L_k$:
-\[
+$$
 \int_a^bL_k(x)\,dx
 =
 \sum_{j=0}^n c_jL_k(x_j)
 =
 c_k
-\]
+$$
 by step [](#s1-1){.pf-ref}.
 
 :::
@@ -194,21 +194,21 @@ by step [](#s1-1){.pf-ref}.
 ::: {.pf-step #s1-7}
 
 For every $p\in\polys^n$,
-\[
+$$
 \boxed{
 \int_a^b p(x)\,dx
 =
 \sum_{j=0}^n c_jp(x_j)
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 l_j(p)=p(x_j),
-\]
+$$
 the basis expansion in step [](#s1-5){.pf-ref} is exactly the displayed identity.
 
 :::

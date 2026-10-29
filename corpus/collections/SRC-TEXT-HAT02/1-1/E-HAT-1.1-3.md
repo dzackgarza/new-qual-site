@@ -32,9 +32,9 @@ For a path-connected space $X$, show that $\pi_1(X)$ is abelian iff all basepoin
 ::: {.solution}
 Fix points $x_0,x_1\in X$ and paths $h,k$ from $x_0$ to $x_1$.
 Recall that
-\[
+$$
 \beta_h([f])=[h\cdot f\cdot\bar h]
-\]
+$$
 for $[f]\in\pi_1(X,x_1)$.
 
 ::: pf
@@ -49,32 +49,32 @@ Then $\beta_h=\beta_k$ whenever $h$ and $k$ have the same endpoints.
 Since $X$ is path connected, all fundamental groups at different basepoints are isomorphic, so it is enough that $\pi_1(X,x_0)$ is abelian.
 
 For $[f]\in\pi_1(X,x_1)$, set
-\[
+$$
 a=[h\cdot\bar k]\in\pi_1(X,x_0),
 \qquad
 b=\beta_k([f])=[k\cdot f\cdot\bar k].
-\]
+$$
 Then
-\[
+$$
 a^{-1}=[k\cdot\bar h].
-\]
+$$
 Using associativity of path classes and cancellation of $\bar k\cdot k$ and $\bar h\cdot h$ up to homotopy,
-\[
+$$
 \begin{aligned}
 a b a^{-1}
 &=[h\cdot\bar k]\,[k\cdot f\cdot\bar k]\,[k\cdot\bar h]\\
 &=[h\cdot f\cdot\bar h]\\
 &=\beta_h([f]).
 \end{aligned}
-\]
+$$
 Since $\pi_1(X,x_0)$ is abelian,
-\[
+$$
 a b a^{-1}=b.
-\]
+$$
 Therefore
-\[
+$$
 \beta_h([f])=\beta_k([f])
-\]
+$$
 for every $[f]$, so $\beta_h=\beta_k$.
 
 :::
@@ -91,26 +91,26 @@ Then $\pi_1(X,x_0)$ is abelian for every $x_0\in X$.
 Fix $x_0\in X$ and let $h$ be any loop based at $x_0$.
 Let $c$ be the constant path at $x_0$.
 The paths $h$ and $c$ have the same endpoints, so by hypothesis
-\[
+$$
 \beta_h=\beta_c.
-\]
+$$
 
 For any $[f]\in\pi_1(X,x_0)$,
-\[
+$$
 \beta_h([f])=[h]\,[f]\,[h]^{-1},
-\]
+$$
 while
-\[
+$$
 \beta_c([f])=[f].
-\]
+$$
 Hence
-\[
+$$
 [h]\,[f]\,[h]^{-1}=[f].
-\]
+$$
 Multiplying on the right by $[h]$ gives
-\[
+$$
 [h]\,[f]=[f]\,[h].
-\]
+$$
 Both $[h]$ and $[f]$ were arbitrary, so $\pi_1(X,x_0)$ is abelian.
 
 :::

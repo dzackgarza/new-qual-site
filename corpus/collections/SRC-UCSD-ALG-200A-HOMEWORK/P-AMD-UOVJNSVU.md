@@ -41,18 +41,18 @@ Restrict the conjugation action of $S_n$ on itself to the subgroup $A_n$.
 1. Show that either $\mathcal K$ is a single $A_n$-orbit, or $\mathcal K$ is the union of two $A_n$-orbits of equal size.
 
 2. Suppose the disjoint-cycle type of $\mathcal K$ has cycle lengths
-   \[
+   $$
    k_1,\ldots,k_d,
-   \]
+   $$
    including $1$-cycles.
    Show that the second case occurs if and only if the integers $k_1,\ldots,k_d$ are odd and pairwise distinct.
 :::
 
 ::: {.solution}
 Fix $\sigma\in\mathcal K$, and write
-\[
+$$
 C=C_{S_n}(\sigma)
-\]
+$$
 for its centralizer in $S_n$.
 
 ::: pf
@@ -65,12 +65,12 @@ The set of $A_n$-orbits contained in $\mathcal K$ is a transitive $S_n$-set.
 
 The group $S_n$ acts transitively on $\mathcal K$ by conjugation, and $A_n\normal S_n$.
 If $\mathcal O$ is an $A_n$-orbit in $\mathcal K$ and $g\in S_n$, then normality gives
-\[
+$$
 g\mathcal O
 =g(A_n\cdot\tau)
 =(gA_ng^{-1})\cdot(g\tau g^{-1})
 =A_n\cdot(g\tau g^{-1}),
-\]
+$$
 which is again an $A_n$-orbit.
 Because the original $S_n$-action on $\mathcal K$ is transitive, this induced action on the set of $A_n$-orbits is also transitive.
 
@@ -85,18 +85,18 @@ The stabilizer in $S_n$ of the $A_n$-orbit $A_n\cdot\sigma$ is $A_nC$.
 ::: pf-proof
 
 For $g\in S_n$,
-\[
+$$
 g(A_n\cdot\sigma)=A_n\cdot\sigma
-\]
+$$
 if and only if
-\[
+$$
 g\sigma g^{-1}=a\sigma a^{-1}
-\]
+$$
 for some $a\in A_n$.
 This is equivalent to
-\[
+$$
 a^{-1}g\in C,
-\]
+$$
 or equivalently $g\in A_nC$.
 Since $A_n\normal S_n$, the product $A_nC$ is a subgroup.
 
@@ -111,13 +111,13 @@ The class $\mathcal K$ is either one $A_n$-orbit or two $A_n$-orbits of equal si
 ::: pf-proof
 
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the number of $A_n$-orbits in $\mathcal K$ is
-\[
+$$
 [S_n:A_nC].
-\]
+$$
 Because $[S_n:A_n]=2$ and
-\[
+$$
 A_n\le A_nC\le S_n,
-\]
+$$
 this index is either $1$ or $2$.
 
 If there are two orbits, step [](#s1){.pf-ref} says an element of $S_n$ carries either orbit bijectively onto the other by conjugation.
@@ -130,20 +130,20 @@ Hence the two orbits have equal cardinality.
 ::: {.pf-step #s4}
 
 The class $\mathcal K$ splits into two $A_n$-orbits if and only if
-\[
+$$
 C\le A_n.
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s3){.pf-ref}, splitting occurs exactly when
-\[
+$$
 [S_n:A_nC]=2,
-\]
+$$
 that is, exactly when
-\[
+$$
 A_nC=A_n.
-\]
+$$
 This is equivalent to $C\le A_n$.
 
 :::
@@ -158,9 +158,9 @@ If the cycle type of $\sigma$ contains an even cycle length, then $C$ contains a
 
 Let $c$ be an even-length cycle occurring in the disjoint-cycle decomposition of $\sigma$.
 Since the cycles in that decomposition are disjoint, $c$ commutes with $\sigma$, so
-\[
+$$
 c\in C.
-\]
+$$
 A cycle of length $k$ has sign $(-1)^{k-1}$.
 For even $k$, this sign is $-1$, so $c$ is odd.
 
@@ -175,20 +175,20 @@ If an odd cycle length occurs at least twice, then $C$ contains an odd permutati
 ::: pf-proof
 
 Suppose two cycles of the same odd length $k$ occur:
-\[
+$$
 c=(a_1\ a_2\ \cdots\ a_k),
 \qquad
 d=(b_1\ b_2\ \cdots\ b_k).
-\]
+$$
 Define
-\[
+$$
 \tau=(a_1\ b_1)(a_2\ b_2)\cdots(a_k\ b_k).
-\]
+$$
 Then conjugation by $\tau$ interchanges $c$ and $d$ and fixes every other disjoint cycle of $\sigma$.
 Hence
-\[
+$$
 \tau\sigma\tau^{-1}=\sigma,
-\]
+$$
 so $\tau\in C$.
 
 The permutation $\tau$ is a product of $k$ disjoint transpositions.
@@ -223,9 +223,9 @@ Then every element of $C$ preserves the support of each cycle of $\sigma$.
 
 Let $\tau\in C$, and let $x$ lie in a cycle of $\sigma$ of length $k$.
 Because $\tau\sigma=\sigma\tau$,
-\[
+$$
 \tau(\sigma^m x)=\sigma^m\tau(x)
-\]
+$$
 for every integer $m$.
 Thus $\tau$ carries the $\sigma$-orbit of $x$ bijectively onto the $\sigma$-orbit of $\tau(x)$, preserving its cardinality $k$.
 
@@ -244,30 +244,30 @@ Under the hypotheses of step [](#s8){.pf-ref}, every element of $C$ is even.
 ::: pf-proof
 
 Let
-\[
+$$
 \sigma=c_1c_2\cdots c_d
-\]
+$$
 be its disjoint-cycle decomposition, where $c_i$ has odd length $k_i$.
 By step [](#s8){.pf-ref}, any $\tau\in C$ preserves the support of every $c_i$.
 
 On the support of a single cycle $c_i$, any permutation commuting with $c_i$ is a power of $c_i$.
 Indeed, if $x$ is one point of that support and
-\[
+$$
 \tau(x)=c_i^r(x),
-\]
+$$
 then for every $m$,
-\[
+$$
 \tau(c_i^m x)=c_i^m\tau(x)=c_i^{m+r}x,
-\]
+$$
 so $\tau=c_i^r$ on that support.
 
 Therefore $\tau$ is a product of powers of the disjoint cycles $c_i$.
 Each $c_i$ is even because $k_i$ is odd, and hence every power of $c_i$ is even.
 Thus $\tau$ is even.
 Consequently
-\[
+$$
 C\le A_n.
-\]
+$$
 
 :::
 

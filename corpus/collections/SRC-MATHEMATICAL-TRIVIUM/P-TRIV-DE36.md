@@ -28,19 +28,19 @@ Interpret the equation distributionally on the real line and require $y$ to be c
 ::: pf-step
 
 On each side of $x=1$, the solution has the form
-\[
+$$
 y_-(x)=Ae^x+Be^{2x}\quad(x<1),
 \qquad
 y_+(x)=Ce^x+De^{2x}\quad(x>1).
-\]
+$$
 
 
 ::: pf-proof
 
 Away from $x=1$ the delta distribution vanishes, so the homogeneous equation is
-\[
+$$
 y''-3y'+2y=0.
-\]
+$$
 Its characteristic polynomial $(r-1)(r-2)$ has roots $1$ and $2$.
 
 :::
@@ -50,17 +50,17 @@ Its characteristic polynomial $(r-1)(r-2)$ has roots $1$ and $2$.
 ::: {.pf-step #s1-2}
 
 The conditions $y(0)=0$ and $y(1)=1$ determine the left branch uniquely as
-\[
+$$
 \boxed{y_-(x)=\frac{e^{2x}-e^x}{e^2-e}}.
-\]
+$$
 
 
 ::: pf-proof
 
 From $y_-(0)=0$ one gets $A+B=0$. Continuity together with the prescribed value $y(1)=1$ gives
-\[
+$$
 Ae+Be^2=1.
-\]
+$$
 Solving yields $B=(e^2-e)^{-1}$ and $A=-B$.
 
 :::
@@ -70,9 +70,9 @@ Solving yields $B=(e^2-e)^{-1}$ and $A=-B$.
 ::: {.pf-step #s1-3}
 
 The delta forcing imposes the jump condition
-\[
+$$
 y_+'(1)-y_-'(1)=1.
-\]
+$$
 
 
 ::: pf-proof
@@ -86,29 +86,29 @@ Integrate the differential equation from $1-\epsilon$ to $1+\epsilon$. The $y''$
 ::: {.pf-step #s1-4}
 
 The conditions at $x=1$ determine the right branch as
-\[
+$$
 \boxed{
 y_+(x)=-\frac{e}{e-1}e^{x-1}
 +\frac{2e-1}{e-1}e^{2(x-1)}}.
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-2){.pf-ref} gives
-\[
+$$
 y_-'(1)=\frac{2e^2-e}{e^2-e}=\frac{2e-1}{e-1}.
-\]
+$$
 Hence step [](#s1-3){.pf-ref} gives
-\[
+$$
 y_+'(1)=\frac{3e-2}{e-1}.
-\]
+$$
 Write $y_+(x)=Pe^{x-1}+Qe^{2(x-1)}$. Then continuity and the derivative condition are
-\[
+$$
 P+Q=1,
 \qquad
 P+2Q=\frac{3e-2}{e-1}.
-\]
+$$
 Thus $Q=(2e-1)/(e-1)$ and $P=-e/(e-1)$, which is the displayed expression after simplification.
 
 :::
@@ -118,14 +118,14 @@ Thus $Q=(2e-1)/(e-1)$ and $P=-e/(e-1)$, which is the displayed expression after 
 ::: {.pf-step #s1-5}
 
 Therefore the distributional solution is
-\[
+$$
 \boxed{
 y(x)=
 \begin{cases}
 \dfrac{e^{2x}-e^x}{e^2-e},&x\leq1,\\[6pt]
 -\dfrac{e}{e-1}e^{x-1}+\dfrac{2e-1}{e-1}e^{2(x-1)},&x\geq1.
 \end{cases}}
-\]
+$$
 
 
 ::: pf-proof

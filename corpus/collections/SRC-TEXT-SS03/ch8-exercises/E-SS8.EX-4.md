@@ -25,22 +25,22 @@ audit:
 
 ::: {.solution}
 Yes. Let
-\[
+$$
 h(z)=i\frac{1+z}{1-z},
-\]
+$$
 which maps $\DD$ conformally onto the upper half-plane $\halfplane$. Then
-\[
+$$
 g(z)=h(z)-i
-\]
+$$
 maps $\DD$ onto the half-plane $\{w:\Im w>-1\}$.
 
 Define
-\[
+$$
 F(z)=g(z)^2.
-\]
+$$
 This is holomorphic on $\DD$. To prove surjectivity, let $\zeta\in\CC$. Choose one square root $w$ of $\zeta$ with $\Im w\ge0$; one of the two square roots always has nonnegative imaginary part. Then $\Im w>-1$, so $w=g(z)$ for some $z\in\DD$. Consequently
-\[
+$$
 F(z)=g(z)^2=w^2=\zeta.
-\]
+$$
 Thus $F:\DD\to\CC$ is a holomorphic surjection.
 :::

@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Give $\CC^n$ coordinatewise addition and multiplication. Determine all surjective ring homomorphisms
-\[
+$$
 \CC^n\longrightarrow\CC.
-\]
+$$
 :::
 
 ::: {.solution}

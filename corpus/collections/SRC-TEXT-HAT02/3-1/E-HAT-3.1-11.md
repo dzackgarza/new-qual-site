@@ -35,34 +35,34 @@ Deduce that the splitting in the universal coefficient theorem for cohomology ca
 
 ::: {.solution}
 The cellular chain complex of
-\[
+$$
 X=M(\ZZ_m,n)=S^n\cup_m e^{n+1}
-\]
+$$
 in the two relevant degrees is
-\[
+$$
 0\to\ZZ\xrightarrow{\,m\,}\ZZ\to0.
-\]
+$$
 Hence
-\[
+$$
 \widetilde H_n(X;\ZZ)=\ZZ_m,
 \qquad
 \widetilde H_i(X;\ZZ)=0\quad(i\ne n),
-\]
+$$
 while the cellular cochain complex gives
-\[
+$$
 \widetilde H^{n+1}(X;\ZZ)=\ZZ_m,
 \qquad
 \widetilde H^i(X;\ZZ)=0\quad(i\ne n+1).
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 Let
-\[
+$$
 q:X\to X/S^n\cong S^{n+1}
-\]
+$$
 be the quotient map. Then $q_*$ is zero on all reduced integral homology groups.
 
 ::: pf-proof
@@ -76,10 +76,10 @@ The sphere has reduced homology only in degree $n+1$, but $\widetilde H_{n+1}(X)
 ::: {.pf-step #s2}
 
 Nevertheless
-\[
+$$
 q^*:H^{n+1}(S^{n+1};\ZZ)=\ZZ
 \longrightarrow H^{n+1}(X;\ZZ)=\ZZ_m
-\]
+$$
 is reduction modulo $m$, hence is nonzero.
 
 ::: pf-proof
@@ -105,9 +105,9 @@ A natural splitting would express $H^{n+1}$ functorially as the direct sum of th
 ::: pf-step
 
 For the inclusion
-\[
+$$
 i:S^n\hookrightarrow X,
-\]
+$$
 the induced map on reduced integral cohomology is zero in every degree.
 
 ::: pf-proof
@@ -121,9 +121,9 @@ The only nonzero reduced cohomology of $X$ is in degree $n+1$, while the sphere 
 ::: pf-step
 
 But
-\[
+$$
 i_*:H_n(S^n;\ZZ)=\ZZ\to H_n(X;\ZZ)=\ZZ_m
-\]
+$$
 is reduction modulo $m$, hence nonzero.
 
 ::: pf-proof

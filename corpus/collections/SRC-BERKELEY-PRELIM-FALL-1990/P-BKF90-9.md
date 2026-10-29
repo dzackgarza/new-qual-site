@@ -24,9 +24,9 @@ audit:
 
 ::: {.problem}
 Let $(a,b,c)\in\RR^3$ have length $1$, and let
-\[
+$$
 W=\{(x,y,z):ax+by+cz=0\}.
-\]
+$$
 Find, in the standard basis, the matrix of the orthogonal projection of $\RR^3$ onto $W$.
 :::
 

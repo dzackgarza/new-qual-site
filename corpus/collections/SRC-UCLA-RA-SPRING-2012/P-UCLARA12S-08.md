@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 \Omega=\{x+iy:x>0,\ y>0,\ xy<1\}.
-\]
+$$
 Give an example of an unbounded harmonic function on $\Omega$ that extends continuously to $\partial\Omega$ and vanishes there.
 :::
 

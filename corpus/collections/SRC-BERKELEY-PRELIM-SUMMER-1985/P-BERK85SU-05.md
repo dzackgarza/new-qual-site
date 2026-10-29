@@ -24,13 +24,13 @@ audit:
 
 ::: {.problem}
 By the Fundamental Theorem of Algebra, the polynomial
-\[
+$$
 x^3+2x^2+7x+1
-\]
+$$
 has three complex roots $\alpha_1,\alpha_2,\alpha_3$, counted with multiplicity. Compute
-\[
+$$
 \alpha_1^3+\alpha_2^3+\alpha_3^3.
-\]
+$$
 :::
 
 ::: {.solution}

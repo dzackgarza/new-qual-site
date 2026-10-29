@@ -29,38 +29,38 @@ Let $X$ denote the two-element set $\{0,1\}$ ; let $\mathcal{B}$ be the set of c
 :::
 
 ::: {.solution}
-Let \(\mathcal B\) be the set of countable subsets of \(X^\omega\), where \(X=\{0,1\}\).
+Let $\mathcal B$ be the set of countable subsets of $X^\omega$, where $X=\{0,1\}$.
 
 There is an immediate injection
-\[
+$$
 X^\omega\hookrightarrow\mathcal B,
 \qquad
 x\mapsto\{x\}.
-\]
+$$
 
-For the opposite direction, use the axiom of choice to choose, for every nonempty \(S\in\mathcal B\), a surjection
-\[
+For the opposite direction, use the axiom of choice to choose, for every nonempty $S\in\mathcal B$, a surjection
+$$
 e_S:\ZZ_+\to S.
-\]
-(For \(S=\varnothing\), choose a fixed dummy sequence.) Since the range of \(e_S\) is exactly \(S\), distinct subsets give distinct chosen sequences of elements. Thus
-\[
+$$
+(For $S=\varnothing$, choose a fixed dummy sequence.) Since the range of $e_S$ is exactly $S$, distinct subsets give distinct chosen sequences of elements. Thus
+$$
 S\mapsto e_S
-\]
+$$
 defines an injection
-\[
+$$
 \mathcal B\hookrightarrow (X^\omega)^\omega.
-\]
+$$
 
 Now
-\[
+$$
 (X^\omega)^\omega
 \cong X^{\ZZ_+\times\ZZ_+}
 \cong X^\omega,
-\]
-because \(\ZZ_+\times\ZZ_+\) is countably infinite. Hence there is an injection \(\mathcal B\to X^\omega\). Schroeder--Bernstein gives
-\[
+$$
+because $\ZZ_+\times\ZZ_+$ is countably infinite. Hence there is an injection $\mathcal B\to X^\omega$. Schroeder--Bernstein gives
+$$
 \boxed{|\mathcal B|=|X^\omega|}.
-\]
+$$
 
-The simultaneous choice of an enumeration \(e_S\) for every countable \(S\) is a genuine choice step; without an appropriate choice principle this cardinality statement is not provable in this form in ZF alone.
+The simultaneous choice of an enumeration $e_S$ for every countable $S$ is a genuine choice step; without an appropriate choice principle this cardinality statement is not provable in this form in ZF alone.
 :::

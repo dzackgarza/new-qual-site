@@ -26,13 +26,13 @@ Find the most general solution of ${ \frac { \partial f } { \partial x } } + a {
 ::: pf-step
 
 The characteristic curves satisfy
-\[
+$$
 \frac{dy}{dx}=a,
-\]
+$$
 so
-\[
+$$
 \eta=y-ax
-\]
+$$
 is constant along each characteristic.
 
 
@@ -47,21 +47,21 @@ The transport part of the PDE is $f_x+af_y$, whose characteristic equations are 
 ::: {.pf-step #s1-2}
 
 Along a characteristic $y=ax+\eta$, the function $F(x)=f(x,ax+\eta)$ satisfies
-\[
+$$
 F'(x)+\bigl((1-2a)x-2\eta\bigr)F(x)=0.
-\]
+$$
 
 
 ::: pf-proof
 
 By the chain rule,
-\[
+$$
 F'(x)=f_x(x,ax+\eta)+a f_y(x,ax+\eta).
-\]
+$$
 Substitute $y=ax+\eta$ into $x-2y$ in the PDE to obtain
-\[
+$$
 x-2(ax+\eta)=(1-2a)x-2\eta.
-\]
+$$
 
 :::
 
@@ -70,22 +70,22 @@ x-2(ax+\eta)=(1-2a)x-2\eta.
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 F(x)=C(\eta)\exp\left(-\frac{1-2a}{2}x^2+2\eta x\right),
-\]
+$$
 where $C$ is an arbitrary function.
 
 
 ::: pf-proof
 
 Step [](#s1-2){.pf-ref} is separable:
-\[
+$$
 \frac{F'}F=-((1-2a)x-2\eta).
-\]
+$$
 Integrating in $x$ gives
-\[
+$$
 \log F=-\frac{1-2a}{2}x^2+2\eta x+\log C(\eta).
-\]
+$$
 
 :::
 
@@ -94,19 +94,19 @@ Integrating in $x$ gives
 ::: {.pf-step #s1-4}
 
 Substituting $\eta=y-ax$ into step [](#s1-3){.pf-ref} gives
-\[
+$$
 F(x)=C(y-ax)\exp\left(2xy-\left(a+\frac12\right)x^2\right).
-\]
+$$
 
 
 ::: pf-proof
 
 The exponent in step [](#s1-3){.pf-ref} becomes
-\[
+$$
 -\frac{1-2a}{2}x^2+2x(y-ax)
 \;=
 -\frac{x^2}{2}-ax^2+2xy.
-\]
+$$
 
 :::
 
@@ -115,11 +115,11 @@ The exponent in step [](#s1-3){.pf-ref} becomes
 ::: {.pf-step #s1-5}
 
 Hence, after simplification,
-\[
+$$
 \boxed{
 f(x,y)=\Phi(y-ax)
 \exp\left(2xy-\left(a+\frac12\right)x^2\right)}.
-\]
+$$
 
 
 ::: pf-proof

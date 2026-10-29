@@ -47,11 +47,11 @@ Statement 1 is false.
 ::: pf-proof
 
 Take $g=0$ and
-\[
+$$
 f=-\mathbf1_{(0,1)}+\mathbf1_{(1,2)}.
-\]
+$$
 Then $f,g\in L^1(\RR)$. Its cumulative integral is
-\[
+$$
 \int_{-\infty}^x f(t)\,dt
 =
 \begin{cases}
@@ -60,7 +60,7 @@ Then $f,g\in L^1(\RR)$. Its cumulative integral is
 x-2,&1<x\le2,\\
 0,&x>2,
 \end{cases}
-\]
+$$
 which is always $\le0=\int_{-\infty}^xg$. But $f=1>0=g$ on $(1,2)$. Thus the asserted pointwise a.e. order does not follow.
 
 :::
@@ -74,28 +74,28 @@ Statement 2 is true.
 ::: pf-proof
 
 Let
-\[
+$$
 M:=\sup_n\|f_n\|_2<\infty.
-\]
+$$
 By Fatou,
-\[
+$$
 \|f\|_2^2\le\liminf_n\|f_n\|_2^2\le M^2,
-\]
+$$
 so $f\in L^2(X)$. Since $\mu(X)<\infty$, for every measurable $E$,
-\[
+$$
 \int_E|f_n|\,d\mu
 \le \|f_n\|_2\mu(E)^{1/2}
 \le M\mu(E)^{1/2}.
-\]
+$$
 Thus $(f_n)$ is uniformly integrable in $L^1$. Since $f_n\to f$ almost everywhere, it also converges to $f$ in measure. Vitali's theorem therefore gives
-\[
+$$
 \|f_n-f\|_1\to0.
-\]
+$$
 Hence
-\[
+$$
 \left|\int_Xf_n\,d\mu-\int_Xf\,d\mu\right|
 \le\|f_n-f\|_1\to0.
-\]
+$$
 
 :::
 
@@ -108,21 +108,21 @@ Statement 3 is true.
 ::: pf-proof
 
 Because $A$ is open, it is Borel, so $\mu_A(E)=\mu(A\cap E)$ defines a Borel measure. If $K\subseteq X$ is compact, then
-\[
+$$
 \mu_A(K)=\mu(A\cap K)\le\mu(K)<\infty,
-\]
+$$
 so $\mu_A$ is finite on compact sets.
 
 Let $E$ be Borel. Since $\mu$ is Radon,
-\[
+$$
 \mu_A(E)=\mu(A\cap E)
 =\sup\{\mu(K):K\subseteq A\cap E,\ K\text{ compact}\}.
-\]
+$$
 For every such $K$, $\mu_A(K)=\mu(K)$. Therefore
-\[
+$$
 \mu_A(E)
 =\sup\{\mu_A(K):K\subseteq E,\ K\text{ compact}\}.
-\]
+$$
 Thus $\mu_A$ is inner regular and finite on compact sets, hence Radon.
 
 :::

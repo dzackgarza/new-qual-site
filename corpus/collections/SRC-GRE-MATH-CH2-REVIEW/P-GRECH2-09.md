@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Evaluate the derivative of the following function at $x = e$:
 
-\[
+$$
 f(x) = \arcsin(\log \sqrt{x})
-\]
+$$
 
 (A) $\frac{1}{e\sqrt{3}}$
 (B) $\frac{e}{\sqrt{2}}$

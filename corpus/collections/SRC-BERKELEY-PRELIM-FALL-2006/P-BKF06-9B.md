@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Let $z_0,z_1,\ldots$ be a sequence of complex numbers satisfying
-\[
+$$
 z_{n+1}=1+\frac1{z_n}
-\]
+$$
 for every $n\ge0$.
 Prove that the sequence converges.
 :::

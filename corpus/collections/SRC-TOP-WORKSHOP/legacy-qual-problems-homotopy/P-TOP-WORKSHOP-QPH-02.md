@@ -18,22 +18,22 @@ audit:
 ::: {.problem}
 Let $D^2$ be the closed $2$-disk and $S^1=\partial D^2$.
 Is
-\[
+$$
 X=S^1\times S^1
-\]
+$$
 a retract of
-\[
+$$
 Y=D^2\times S^1?
-\]
+$$
 That is, does there exist a continuous map $r:Y\to X$ whose restriction to $X\subset Y$ is the identity?
 :::
 
 ::: {.solution}
 
 Let
-\[
+$$
 i:X=S^1\times S^1\hookrightarrow Y=D^2\times S^1
-\]
+$$
 be the inclusion.
 
 ::: pf
@@ -41,22 +41,22 @@ be the inclusion.
 ::: pf-step
 
 One has
-\[
+$$
 \boxed{
 \pi_1(X)\cong\ZZ\oplus\ZZ}.
-\]
+$$
 
 
 ::: pf-proof
 
 The fundamental group of a product is the product of the fundamental groups:
-\[
+$$
 \pi_1(S^1\times S^1)
 \cong
 \pi_1(S^1)\times\pi_1(S^1)
 \cong
 \ZZ\oplus\ZZ.
-\]
+$$
 
 :::
 
@@ -65,21 +65,21 @@ The fundamental group of a product is the product of the fundamental groups:
 ::: pf-step
 
 One has
-\[
+$$
 \boxed{
 \pi_1(Y)\cong\ZZ}.
-\]
+$$
 
 
 ::: pf-proof
 
-The disk \(D^2\) is contractible, so
-\[
+The disk $D^2$ is contractible, so
+$$
 D^2\times S^1
 \simeq
 S^1.
-\]
-Hence its fundamental group is \(\ZZ\).
+$$
+Hence its fundamental group is $\ZZ$.
 
 :::
 
@@ -88,15 +88,15 @@ Hence its fundamental group is \(\ZZ\).
 ::: pf-step
 
 Let
-\[
+$$
 m(t)=(e^{2\pi it},1)
-\]
-be the meridian loop in \(X\).
+$$
+be the meridian loop in $X$.
 
 
 ::: pf-proof
 
-This loop travels once around the boundary circle of the disk factor while remaining fixed in the second \(S^1\)-factor.
+This loop travels once around the boundary circle of the disk factor while remaining fixed in the second $S^1$-factor.
 
 :::
 
@@ -105,22 +105,22 @@ This loop travels once around the boundary circle of the disk factor while remai
 ::: {.pf-step #s1-4}
 
 The class
-\[
+$$
 [m]
-\]
-is nontrivial in \(\pi_1(X)\).
+$$
+is nontrivial in $\pi_1(X)$.
 
 
 ::: pf-proof
 
 Under the identification
-\[
+$$
 \pi_1(X)\cong\ZZ\oplus\ZZ,
-\]
-the loop \(m\) represents
-\[
+$$
+the loop $m$ represents
+$$
 (1,0)\ne(0,0).
-\]
+$$
 
 :::
 
@@ -128,23 +128,23 @@ the loop \(m\) represents
 
 ::: {.pf-step #s1-5}
 
-The same loop becomes nullhomotopic in \(Y\).
+The same loop becomes nullhomotopic in $Y$.
 
 
 ::: pf-proof
 
 Inside
-\[
+$$
 D^2\times S^1,
-\]
+$$
 the loop
-\[
+$$
 t\longmapsto(e^{2\pi it},1)
-\]
+$$
 bounds the disk
-\[
+$$
 D^2\times\{1\}.
-\]
+$$
 Thus its image under the inclusion is nullhomotopic.
 
 :::
@@ -154,15 +154,15 @@ Thus its image under the inclusion is nullhomotopic.
 ::: pf-step
 
 Hence the induced map
-\[
+$$
 i_*:\pi_1(X)\to\pi_1(Y)
-\]
+$$
 has nontrivial kernel.
 
 
 ::: pf-proof
 
-The nontrivial class \([m]\) from step [](#s1-4){.pf-ref} is sent to the identity by step [](#s1-5){.pf-ref}.
+The nontrivial class $[m]$ from step [](#s1-4){.pf-ref} is sent to the identity by step [](#s1-5){.pf-ref}.
 
 :::
 
@@ -171,9 +171,9 @@ The nontrivial class \([m]\) from step [](#s1-4){.pf-ref} is sent to the identit
 ::: {.pf-step #s1-7}
 
 Therefore
-\[
+$$
 \boxed{i_*\text{ is not injective}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -186,11 +186,11 @@ A homomorphism with nontrivial kernel cannot be injective.
 
 ::: pf-step
 
-Since \(r\) is a retraction,
-\[
+Since $r$ is a retraction,
+$$
 \boxed{
 r\circ i=\operatorname{id}_X}.
-\]
+$$
 
 
 ::: pf-proof
@@ -204,10 +204,10 @@ A retraction restricts to the identity on the subspace onto which it retracts.
 ::: pf-step
 
 Passing to fundamental groups,
-\[
+$$
 \boxed{
 r_*\circ i_*=\operatorname{id}_{\pi_1(X)}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -220,17 +220,17 @@ Fundamental groups are functorial under composition.
 
 ::: {.pf-step #s1-10}
 
-The existence of a left inverse \(r_*\) forces \(i_*\) to be injective.
+The existence of a left inverse $r_*$ forces $i_*$ to be injective.
 
 
 ::: pf-proof
 
 If
-\[
+$$
 i_*(\gamma)=1,
-\]
+$$
 then
-\[
+$$
 \gamma
 =
 (r_*\circ i_*)(\gamma)
@@ -238,8 +238,8 @@ then
 r_*(1)
 =
 1.
-\]
-Hence the kernel of \(i_*\) is trivial.
+$$
+Hence the kernel of $i_*$ is trivial.
 
 :::
 
@@ -252,7 +252,7 @@ This contradicts step [](#s1-7){.pf-ref}.
 
 ::: pf-proof
 
-Step [](#s1-7){.pf-ref} says \(i_*\) is not injective, while step [](#s1-10){.pf-ref} says a retraction would make it injective.
+Step [](#s1-7){.pf-ref} says $i_*$ is not injective, while step [](#s1-10){.pf-ref} says a retraction would make it injective.
 
 :::
 
@@ -261,12 +261,12 @@ Step [](#s1-7){.pf-ref} says \(i_*\) is not injective, while step [](#s1-10){.pf
 ::: {.pf-step #s1-12}
 
 Therefore
-\[
+$$
 \boxed{
 S^1\times S^1
 \text{ is not a retract of }
 D^2\times S^1}.
-\]
+$$
 
 
 ::: pf-proof

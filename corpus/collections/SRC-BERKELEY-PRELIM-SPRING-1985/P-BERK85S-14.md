@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Show that the improper Riemann integral
-\[
+$$
 I=\int_0^\pi\log(\sin x)\,dx
-\]
+$$
 converges, and evaluate $I$.
 :::
 

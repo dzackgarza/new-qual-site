@@ -17,9 +17,9 @@ audit:
 
 ::: {.problem}
 Let $(X,\mathcal M,\mu)$ be a measure space, let $f_n:X\to\RR$ be measurable, and define
-\[
+$$
 M_n=\{x:|f_n(x)|\ge2^{-n}\}.
-\]
+$$
 
 (a) Define what it means that $f_n\to0$ almost uniformly.
 

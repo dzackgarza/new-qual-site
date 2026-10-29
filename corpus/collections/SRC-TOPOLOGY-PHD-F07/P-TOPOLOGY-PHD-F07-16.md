@@ -38,13 +38,13 @@ Show that $S^1$ is a retract of the Möbius band.
 
 ::: {.solution}
 Let
-\[
+$$
 q:X=[0,1]\times[0,1]\longrightarrow M=X/\sim
-\]
+$$
 be the quotient map, where $M$ is the Möbius band, and set
-\[
+$$
 C=q\bigl([0,1]\times\{1/2\}\bigr)\subseteq M.
-\]
+$$
 
 ::: pf
 
@@ -53,27 +53,27 @@ The subspace $C$ is homeomorphic to $S^1$.
 
 ::: pf-proof
 On the horizontal midline, the only nontrivial identification is
-\[
+$$
 (0,1/2)\sim(1,1/2),
-\]
+$$
 because the boundary rule gives
-\[
+$$
 (0,p)\sim(1,1-p)
-\]
+$$
 and $1-p=1/2$ precisely when $p=1/2$.
 Thus $C$ is the quotient of the interval $[0,1]$ obtained by identifying its two endpoints.
 
 Define
-\[
+$$
 \phi:[0,1]\longrightarrow S^1,
 \qquad
 \phi(s)=e^{2\pi i s}.
-\]
+$$
 This map is continuous and identifies exactly $0$ and $1$.
 Hence it factors through a continuous bijection
-\[
+$$
 \bar\phi:C\longrightarrow S^1.
-\]
+$$
 The space $C$ is compact as the continuous image under $q$ of the compact interval $[0,1]\times\{1/2\}$, and $S^1$ is Hausdorff.
 Therefore the continuous bijection $\bar\phi$ is a homeomorphism.
 :::
@@ -82,31 +82,31 @@ Therefore the continuous bijection $\bar\phi$ is a homeomorphism.
 
 ::: {.pf-step #r-well-defined}
 The map
-\[
+$$
 R:X\longrightarrow C,
 \qquad
 R(s,t)=q(s,1/2),
-\]
+$$
 is constant on every equivalence class of $\sim$.
 
 ::: pf-proof
 Away from the two vertical boundary edges, equivalence classes are singletons, so there is nothing to check.
 For a generating boundary identification
-\[
+$$
 (0,p)\sim(1,1-p),
-\]
+$$
 we have
-\[
+$$
 R(0,p)=q(0,1/2)
-\]
+$$
 and
-\[
+$$
 R(1,1-p)=q(1,1/2).
-\]
+$$
 But
-\[
+$$
 (0,1/2)\sim(1,1/2),
-\]
+$$
 so these two values are equal in $C$.
 Thus $R$ is constant on equivalence classes.
 :::
@@ -115,26 +115,26 @@ Thus $R$ is constant on equivalence classes.
 
 ::: {.pf-step #r-descends}
 The map $R$ descends to a continuous map
-\[
+$$
 r:M\longrightarrow C
-\]
+$$
 satisfying
-\[
+$$
 r\circ q=R.
-\]
+$$
 
 ::: pf-proof
 The map
-\[
+$$
 (s,t)\longmapsto(s,1/2)
-\]
+$$
 from $X$ to $X$ is continuous, so its composite with $q$ is continuous and has image in $C$.
 Hence $R:X\to C$ is continuous.
 By step [](#r-well-defined){.pf-ref} it is constant on the fibers of the quotient map $q$.
 The universal property of the quotient topology therefore gives a unique continuous map
-\[
+$$
 r:M\to C
-\]
+$$
 with $r\circ q=R$.
 :::
 
@@ -145,22 +145,22 @@ The map $r$ restricts to the identity on $C$.
 
 ::: pf-proof
 Every point of $C$ has the form
-\[
+$$
 c=q(s,1/2)
-\]
+$$
 for some $s\in[0,1]$.
 Then
-\[
+$$
 r(c)
 =r(q(s,1/2))
 =R(s,1/2)
 =q(s,1/2)
 =c.
-\]
+$$
 Thus
-\[
+$$
 r|_C=\operatorname{id}_C.
-\]
+$$
 :::
 
 :::
@@ -171,9 +171,9 @@ Therefore $S^1$ is a retract of the Möbius band.
 ::: pf-proof
 By step [](#c-homeomorphic-s1){.pf-ref}, $C\cong S^1$.
 By steps [](#r-descends){.pf-ref} and [](#r-restricts-to-identity){.pf-ref}, the inclusion
-\[
+$$
 C\hookrightarrow M
-\]
+$$
 has the left inverse $r:M\to C$.
 Hence $C$ is a retract of $M$, so the Möbius band contains a retract homeomorphic to $S^1$.
 :::

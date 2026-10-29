@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Given that the following differential equation has an integrating factor of the form $\mu(x, y) = x^my^n$, determine its general solution.
 
-\[
+$$
 (3xy^2 - 5y)\,dx + (2x^2y - 3x)\,dy = 0
-\]
+$$
 
 (A) $x^4y^2(\frac{1}{2}xy - 1) = c$
 (B) $x^4y^2(xy - 1) = c$

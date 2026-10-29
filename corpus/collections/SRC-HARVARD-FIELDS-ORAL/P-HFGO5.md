@@ -28,13 +28,13 @@ Improve the bound on the normal-closure degree and describe the corresponding Ga
 
 ::: {.solution}
 In this situation
-\[
+$$
 [K:F]=8,
-\]
+$$
 and
-\[
+$$
 \operatorname{Gal}(K/F)\cong D_8,
-\]
+$$
 the transitive dihedral subgroup of $S_4$ of order $8$.
 
 ::: pf
@@ -47,9 +47,9 @@ The quadratic extension $L/F$ is Galois.
 
 The extension $L/F$ is separable because $L$ lies in the separable extension
 $E/F$. A separable quadratic extension is normal: if
-\[
+$$
 m(x)=x^2+ax+b
-\]
+$$
 is the minimal polynomial of a generator and one root $\lambda$ lies in $L$,
 then its other root $-a-\lambda$ also lies in $L$. Hence $L/F$ is Galois.
 
@@ -60,19 +60,19 @@ then its other root $-a-\lambda$ also lies in $L$. Hence $L/F$ is Galois.
 ::: pf-step
 
 Let
-\[
+$$
 G=\operatorname{Gal}(K/F),
 \quad
 H=\operatorname{Gal}(K/E),
 \quad
 J=\operatorname{Gal}(K/L).
-\]
+$$
 Then $H\le J\trianglelefteq G$, with
-\[
+$$
 [G:H]=4,
 \qquad
 [G:J]=2.
-\]
+$$
 
 ::: pf-proof
 
@@ -93,9 +93,9 @@ $J$ produces a $G$-invariant partition into two blocks of size $2$.
 
 The two cosets of $J$ in $G$ partition the four cosets of $H$ into two sets,
 each containing
-\[
+$$
 [J:H]=\frac{[G:H]}{[G:J]}=2
-\]
+$$
 points. Since $J\trianglelefteq G$, left multiplication by $G$ permutes these
 two sets. Thus the degree-$4$ permutation action is imprimitive with a block
 system of type $2+2$.
@@ -107,18 +107,18 @@ system of type $2+2$.
 ::: {.pf-step #s4}
 
 Hence $G$ embeds in
-\[
+$$
 S_2\wr S_2\cong D_8,
-\]
+$$
 so $|G|\le8$.
 
 ::: pf-proof
 
 The full subgroup of $S_4$ preserving a fixed partition into two unordered
 pairs is the wreath product $S_2\wr S_2$, of order
-\[
+$$
 2^2\cdot2=8.
-\]
+$$
 By step [](#s3){.pf-ref}, the image of $G$ preserves such a partition.
 
 :::
@@ -133,9 +133,9 @@ Since $E/F$ is nonnormal, $|G|\ne4$; therefore $|G|=8$.
 
 The action on four points is transitive, so $4\mid |G|$. By step [](#s4){.pf-ref},
 $|G|\le8$, hence $|G|$ is $4$ or $8$. If $|G|=4$, then
-\[
+$$
 [K:F]=[E:F]=4
-\]
+$$
 and $E=K$, contradicting that $E/F$ is nonnormal. Therefore $|G|=8$.
 
 :::

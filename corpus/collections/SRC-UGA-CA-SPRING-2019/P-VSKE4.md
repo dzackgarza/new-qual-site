@@ -20,9 +20,9 @@ review: draft
 Let $\Omega \subset \CC$ be a connected open subset.
 Let $\left\{f_{n}: \Omega \rightarrow \CC\right\}_{n=1}^{\infty}$ be a sequence of holomorphic functions uniformly bounded on compact subsets of $\Omega$.
 Let $f: \Omega \rightarrow \CC$ be a holomorphic function such that the set
-\[
+$$
 \left\{z \in \Omega \mid \lim _{n \rightarrow \infty} f_{n}(z)=f(z)\right\}
-\]
+$$
 has a limit point in $\Omega$.
 Show that $f_{n}$ converges to $f$ uniformly on compact subsets of $\Omega$.
 :::

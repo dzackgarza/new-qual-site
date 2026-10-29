@@ -24,13 +24,13 @@ Show that the Borel $\sigma$-algebra associated to the norm topology agrees with
 ::: {.solution}
 
 Let
-\[
+$$
 \mathcal B_{\mathrm w}
-\]
+$$
 denote the Borel $\sigma$-algebra for the weak topology and
-\[
+$$
 \mathcal B_{\|\cdot\|}
-\]
+$$
 the Borel $\sigma$-algebra for the norm topology.
 
 ::: pf
@@ -38,11 +38,11 @@ the Borel $\sigma$-algebra for the norm topology.
 ::: {.pf-step #s1-1}
 
 One has
-\[
+$$
 \mathcal B_{\mathrm w}
 \subset
 \mathcal B_{\|\cdot\|}.
-\]
+$$
 
 
 ::: pf-proof
@@ -56,43 +56,43 @@ The weak topology is coarser than the norm topology because every continuous lin
 ::: {.pf-step #s1-2}
 
 For every fixed $x\in\ell^2(\ZZ)$, the map
-\[
+$$
 y\longmapsto\|y-x\|_2^2
-\]
+$$
 is $\mathcal B_{\mathrm w}$-measurable.
 
 
 ::: pf-proof
 
 Let $(e_k)_{k\in\ZZ}$ be the standard orthonormal basis. For each $k$, the coordinate map
-\[
+$$
 y\longmapsto
 \langle y-x,e_k\rangle
-\]
+$$
 is weakly continuous, hence weak-Borel measurable.
 
 Choose an increasing sequence of finite sets
-\[
+$$
 F_1\subset F_2\subset\cdots\subset\ZZ,
 \qquad
 \bigcup_{n=1}^\infty F_n=\ZZ.
-\]
+$$
 Define
-\[
+$$
 S_n(y)
 \coloneqq
 \sum_{k\in F_n}
 |\langle y-x,e_k\rangle|^2.
-\]
+$$
 Each $S_n$ is $\mathcal B_{\mathrm w}$-measurable as a finite sum of measurable functions. By Parseval's identity,
-\[
+$$
 S_n(y)
 \longrightarrow
 \sum_{k\in\ZZ}
 |\langle y-x,e_k\rangle|^2
 =
 \|y-x\|_2^2.
-\]
+$$
 A pointwise limit of measurable functions is measurable.
 
 :::
@@ -107,17 +107,17 @@ Every norm-open ball in $\ell^2(\ZZ)$ belongs to $\mathcal B_{\mathrm w}$.
 ::: pf-proof
 
 For $x\in\ell^2(\ZZ)$ and $r>0$,
-\[
+$$
 B(x,r)
 =
 \{y:\|y-x\|_2^2<r^2\}.
-\]
+$$
 By step [](#s1-2){.pf-ref}, the squared-distance function is weak-Borel measurable, so
-\[
+$$
 B(x,r)
 =
 \bigl(\|\cdot-x\|_2^2\bigr)^{-1}(( -\infty,r^2))
-\]
+$$
 belongs to $\mathcal B_{\mathrm w}$.
 
 :::
@@ -142,23 +142,23 @@ Every open subset of a separable metric space is a countable union of open balls
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 \boxed{
 \mathcal B_{\mathrm w}
 =
 \mathcal B_{\|\cdot\|}
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-1){.pf-ref} gives
-\[
+$$
 \mathcal B_{\mathrm w}
 \subset
 \mathcal B_{\|\cdot\|},
-\]
+$$
 while step [](#s1-4){.pf-ref} gives the reverse inclusion.
 
 :::

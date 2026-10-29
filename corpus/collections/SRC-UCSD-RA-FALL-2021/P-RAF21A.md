@@ -48,9 +48,9 @@ Prove or find a counterexample.
 Let $I$ be any connected component of $\RR\setminus A$. Since $A$ is closed, $I$ is an open interval. On $I$, the function $f$ is differentiable and $f'=0$, so the mean value theorem shows that $f$ is constant on $I$.
 
 Fix $u<v$. The complement $[u,v]\setminus A$ is a countable union of pairwise disjoint open intervals, and $f$ is constant on each such interval. Since $A\cap[u,v]$ is countable, the set
-\[
+$$
 f([u,v])
-\]
+$$
 is therefore countable: it is contained in the union of the countable set $f(A\cap[u,v])$ and one value for each component of $[u,v]\setminus A$.
 
 But $f([u,v])$ is connected because $f$ is continuous and $[u,v]$ is connected. A connected countable subset of $\RR$ is a singleton. Hence $f(u)=f(v)$. Since $u<v$ were arbitrary, $f$ is constant on $\RR$.

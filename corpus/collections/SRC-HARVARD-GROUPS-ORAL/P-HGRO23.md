@@ -38,9 +38,9 @@ Every noncentral conjugacy class has cardinality divisible by $p$.
 ::: pf-proof
 
 If $x\notin Z(G)$, then its conjugacy class has size
-\[
+$$
 [G:C_G(x)].
-\]
+$$
 Since $C_G(x)$ is a proper subgroup of the $p$-group $G$, this index is a power
 of $p$ greater than $1$, hence is divisible by $p$.
 
@@ -55,14 +55,14 @@ The order of the center is divisible by $p$.
 ::: pf-proof
 
 The class equation is
-\[
+$$
 |G|=|Z(G)|+\sum_i [G:C_G(x_i)],
-\]
+$$
 where the $x_i$ represent the noncentral conjugacy classes. By step [](#s1){.pf-ref} every term
 in the sum is divisible by $p$, and $|G|=p^r$ is divisible by $p$. Hence
-\[
+$$
 |Z(G)|\equiv0\pmod p.
-\]
+$$
 
 :::
 

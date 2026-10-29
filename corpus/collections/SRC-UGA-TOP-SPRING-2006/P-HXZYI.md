@@ -48,13 +48,13 @@ c. The homology groups of $X$.
 
 ::: {.solution}
 Let
-\[
+$$
 A=\{p_1,\ldots,p_k\}\subset S^2.
-\]
+$$
 Then the given space is the quotient
-\[
+$$
 X=S^2/A,
-\]
+$$
 where all of $A$ is collapsed to one point.
 
 ::: pf
@@ -62,9 +62,9 @@ where all of $A$ is collapsed to one point.
 ::: {.pf-step #s1}
 
 There is a homotopy equivalence
-\[
+$$
 X\simeq S^2\vee SA,
-\]
+$$
 where $SA$ denotes the suspension of the $k$-point space $A$.
 
 ::: pf-proof
@@ -72,17 +72,17 @@ where $SA$ denotes the suspension of the $k$-point space $A$.
 Choose a CW structure on $S^2$ in which the finitely many points $p_1,\ldots,p_k$ are $0$-cells, so $(S^2,A)$ is a CW pair.
 
 The inclusion
-\[
+$$
 A\hookrightarrow S^2
-\]
+$$
 is nullhomotopic.
 Indeed, for each $i$ choose a path in $S^2$ from $p_i$ to $p_1$.
 Since $A$ is a finite discrete space, these paths together define a homotopy of the inclusion $A\hookrightarrow S^2$ to the constant map with value $p_1$.
 
 For a CW pair $(Y,B)$ whose inclusion $B\hookrightarrow Y$ is nullhomotopic, the quotient $Y/B$ is homotopy equivalent to
-\[
+$$
 Y\vee SB.
-\]
+$$
 Applying this with $(Y,B)=(S^2,A)$ gives the claim.
 
 :::
@@ -101,9 +101,9 @@ Thus it has two vertices and $k$ parallel edges.
 Choose one of these edges as a maximal tree and collapse it.
 Collapsing a maximal tree in a connected graph is a homotopy equivalence, and the remaining $k-1$ edges become loops at the single vertex.
 Hence
-\[
+$$
 SA\simeq\bigvee^{k-1}S^1.
-\]
+$$
 
 :::
 
@@ -112,9 +112,9 @@ SA\simeq\bigvee^{k-1}S^1.
 ::: {.pf-step #s3}
 
 Consequently
-\[
+$$
 X\simeq S^2\vee\bigvee^{k-1}S^1.
-\]
+$$
 
 ::: pf-proof
 
@@ -127,27 +127,27 @@ Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
 ::: pf-step
 
 The fundamental group is
-\[
+$$
 \boxed{\pi_1(X)\cong F_{k-1}},
-\]
+$$
 the free group on $k-1$ generators.
 
 ::: pf-proof
 
 By step [](#s3){.pf-ref} and homotopy invariance of the fundamental group,
-\[
+$$
 \pi_1(X)
 \cong
 \pi_1\left(S^2\vee\bigvee^{k-1}S^1\right).
-\]
+$$
 The sphere is simply connected, and van Kampen's theorem identifies the fundamental group of the wedge with the free product of the fundamental groups of its summands.
 Therefore
-\[
+$$
 \pi_1(X)
 \cong
 \underbrace{\ZZ*\cdots*\ZZ}_{k-1\text{ factors}}
 \cong F_{k-1}.
-\]
+$$
 
 :::
 
@@ -156,19 +156,19 @@ Therefore
 ::: {.pf-step #s5}
 
 The Euler characteristic is
-\[
+$$
 \boxed{\chi(X)=3-k}.
-\]
+$$
 
 ::: pf-proof
 
 The wedge in step [](#s3){.pf-ref} has a CW structure with one $0$-cell, $k-1$ $1$-cells, and one $2$-cell.
 Hence
-\[
+$$
 \chi(X)
 =1-(k-1)+1
 =3-k.
-\]
+$$
 Euler characteristic is invariant under homotopy equivalence for finite CW complexes.
 
 :::
@@ -178,7 +178,7 @@ Euler characteristic is invariant under homotopy equivalence for finite CW compl
 ::: pf-step
 
 The integral homology groups are
-\[
+$$
 \boxed{
 H_n(X;\ZZ)\cong
 \begin{cases}
@@ -187,19 +187,19 @@ H_n(X;\ZZ)\cong
 \ZZ,&n=2,\\
 0,&n\ge3.
 \end{cases}}
-\]
+$$
 
 ::: pf-proof
 
 Use the CW structure from step [](#s5){.pf-ref}. Its cellular chain complex is
-\[
+$$
 0\longrightarrow\ZZ
 \xrightarrow{0}
 \ZZ^{k-1}
 \xrightarrow{0}
 \ZZ
 \longrightarrow0.
-\]
+$$
 The $1$-cells are loops at the unique $0$-cell, so the degree-$1$ cellular boundary is zero.
 The $2$-cell is the $2$-cell of the $S^2$ summand and is attached at the wedge point, so its cellular boundary is also zero.
 Taking homology gives the displayed groups.

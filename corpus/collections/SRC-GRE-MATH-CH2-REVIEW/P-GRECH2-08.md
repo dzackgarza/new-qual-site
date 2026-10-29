@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Determine the domain of the following function:
 
-\[
+$$
 f(x) = \arcsin(\log \sqrt{x})
-\]
+$$
 
 (A) $[0, \frac{1}{e^2}]$
 (B) $[\frac{1}{e^2}, 1]$

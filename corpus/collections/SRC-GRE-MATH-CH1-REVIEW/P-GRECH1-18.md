@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 What are the roots of the following equation?
 
-\[
+$$
 (\log x)^2 = 2 \log x
-\]
+$$
 
 (A) $1, e^{-2}$
 (B) $1, \sqrt{e}$

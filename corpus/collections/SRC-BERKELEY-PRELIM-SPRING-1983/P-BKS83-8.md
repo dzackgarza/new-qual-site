@@ -23,9 +23,9 @@ audit:
 
 ::: {.problem}
 Let $n>1$ be an integer. Prove that
-\[
+$$
 1+\frac12+\cdots+\frac1n
-\]
+$$
 is not an integer.
 :::
 

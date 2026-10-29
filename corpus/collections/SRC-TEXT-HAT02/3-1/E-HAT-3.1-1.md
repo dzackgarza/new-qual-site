@@ -39,9 +39,9 @@ every abelian group is a quotient of a free abelian group, and subgroups of free
 
 ::: pf-step
 Applying $\operatorname{Hom}(-, G)$ yields the cochain complex:
-\[
+$$
 0 \to \operatorname{Hom}(F_0, G) \xrightarrow{d^*} \operatorname{Hom}(F_1, G) \to 0,
-\]
+$$
 where $d^*(\varphi) = \varphi \circ d$.
 
 ::: pf-proof
@@ -79,9 +79,9 @@ setup.
 
 ::: pf-step
 By projectivity of $F_0$ and $F_1$, there exists a chain map $(\alpha_0, \alpha_1)$ lifting $\alpha$:
-\[
+$$
 \varepsilon' \circ \alpha_0 = \alpha \circ \varepsilon \quad \text{and} \quad d' \circ \alpha_1 = \alpha_0 \circ d.
-\]
+$$
 
 ::: pf-proof
 comparison theorem for projective resolutions.
@@ -100,9 +100,9 @@ functoriality of $\operatorname{Hom}(-, G)$.
 
 ::: {.pf-step #s2-4}
 The commutativity implies $\alpha_1^*(\operatorname{im}((d')^*)) \subseteq \operatorname{im}(d^*)$, so $\alpha_1^*$ descends to a well-defined homomorphism on quotients:
-\[
+$$
 \alpha^*: \operatorname{Ext}(H', G) \longrightarrow \operatorname{Ext}(H, G), \quad [\psi] \mapsto [\psi \circ \alpha_1].
-\]
+$$
 
 ::: pf-proof
 quotient map between cokernels.
@@ -176,9 +176,9 @@ associativity of map composition.
 
 ::: {.pf-step #s3-4}
 This implies $\beta_*(\operatorname{im}(d^*_G)) \subseteq \operatorname{im}(d^*_{G'})$, so $\beta_*$ descends to a well-defined homomorphism:
-\[
+$$
 \beta_*: \operatorname{Ext}(H, G) \longrightarrow \operatorname{Ext}(H, G'), \quad [\varphi] \mapsto [\beta \circ \varphi].
-\]
+$$
 
 ::: pf-proof
 quotient map between cokernels.

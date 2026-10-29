@@ -20,28 +20,28 @@ review: draft
 :::
 
 ::: {.solution}
-Write the torus as \(T=\RR^2/\ZZ^2\), with coordinates \([x,y]\).
+Write the torus as $T=\RR^2/\ZZ^2$, with coordinates $[x,y]$.
 
 (a) Let
-\[
+$$
 \tau[x,y]=[x+1/2,y].
-\]
-Then \(\tau^2=1\) and \(\tau\) has no fixed points. The quotient identifies the first coordinate modulo \(1/2\), so
-\[
+$$
+Then $\tau^2=1$ and $\tau$ has no fixed points. The quotient identifies the first coordinate modulo $1/2$, so
+$$
 T/\langle\tau\rangle\cong (\RR/(\tfrac12\ZZ))\times(\RR/\ZZ)\cong T.
-\]
-Thus \(G=\{1,\tau\}\) has order \(2\) and torus quotient.
+$$
+Thus $G=\{1,\tau\}$ has order $2$ and torus quotient.
 
 (b) Let
-\[
+$$
 \sigma[x,y]=[x+1/2,-y].
-\]
-Again \(\sigma^2=1\), and it is fixed-point-free because a fixed point would require \(x+1/2\equiv x\pmod1\). A fundamental domain is the strip \(0\le x\le1/2\). Its vertical sides are identified by
-\[
+$$
+Again $\sigma^2=1$, and it is fixed-point-free because a fixed point would require $x+1/2\equiv x\pmod1$. A fundamental domain is the strip $0\le x\le1/2$. Its vertical sides are identified by
+$$
 (0,y)\sim(1/2,-y),
-\]
-while \(y\) is periodic modulo \(1\). This is precisely the standard square model of the Klein bottle. Hence
-\[
+$$
+while $y$ is periodic modulo $1$. This is precisely the standard square model of the Klein bottle. Hence
+$$
 T/\langle\sigma\rangle\cong K.
-\]
+$$
 :::

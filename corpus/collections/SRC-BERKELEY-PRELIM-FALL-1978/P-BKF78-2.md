@@ -28,14 +28,14 @@ audit:
 
 ::: {.problem}
 Let $\{g_n\}$ be a sequence of Riemann-integrable functions from $[0,1]$ to $\RR$ such that
-\[
+$$
 |g_n(x)|\le 1
-\]
+$$
 for every $n$ and $x$.
 Define
-\[
+$$
 G_n(x)=\int_0^x g_n(t)\,dt.
-\]
+$$
 Prove that a subsequence of $\{G_n\}$ converges uniformly.
 :::
 

@@ -33,17 +33,17 @@ Let $m_\alpha(x)\in\QQ[x]$ be the minimal polynomial of $\alpha$.
 ::: {.pf-step #s1}
 
 Evaluation at $\alpha$ induces an isomorphism
-\[
+$$
 \QQ[x]/(m_\alpha)\cong \QQ[\alpha].
-\]
+$$
 
 ::: pf-proof
 
 The evaluation homomorphism
-\[
+$$
 \operatorname{ev}_\alpha:\QQ[x]\to\QQ[\alpha],
 \qquad f\mapsto f(\alpha),
-\]
+$$
 is surjective by definition of $\QQ[\alpha]$. Its kernel consists exactly
 of the polynomials vanishing at $\alpha$, which is the principal ideal
 $(m_\alpha)$. The first isomorphism theorem gives the displayed isomorphism.

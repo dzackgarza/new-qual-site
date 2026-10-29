@@ -16,9 +16,9 @@ audit:
 ::: {.problem}
 Let $A$ be an $n\times n$ real matrix and let $b\in\RR^n$.
 Prove that $Ax=b$ has a solution if and only if
-\[
+$$
 b\in(\ker A^T)^\perp.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -28,46 +28,46 @@ b\in(\ker A^T)^\perp.
 ::: {.pf-step #s1-1}
 
 One always has
-\[
+$$
 \operatorname{im}A
 \subseteq
 (\ker A^T)^\perp.
-\]
+$$
 
 
 ::: pf-proof
 
 Let
-\[
+$$
 y\in\operatorname{im}A.
-\]
+$$
 Then
-\[
+$$
 y=Ax
-\]
+$$
 for some $x\in\RR^n$.
 If
-\[
+$$
 z\in\ker A^T,
-\]
+$$
 then
-\[
+$$
 A^Tz=0.
-\]
+$$
 Therefore
-\[
+$$
 \langle y,z\rangle
 =
 \langle Ax,z\rangle
 =
 \langle x,A^Tz\rangle
 =0.
-\]
+$$
 Thus $y$ is orthogonal to every vector in $\ker A^T$.
 Hence
-\[
+$$
 y\in(\ker A^T)^\perp.
-\]
+$$
 
 :::
 
@@ -81,25 +81,25 @@ The two spaces in step [](#s1-1){.pf-ref} have the same dimension.
 ::: pf-proof
 
 By rank-nullity applied to
-\[
+$$
 A^T:\RR^n\to\RR^n,
-\]
+$$
 one has
-\[
+$$
 \dim\ker A^T
 +
 \operatorname{rank}A^T
 =
 n.
-\]
+$$
 Since
-\[
+$$
 \operatorname{rank}A^T
 =
 \operatorname{rank}A,
-\]
+$$
 it follows that
-\[
+$$
 \dim(\ker A^T)^\perp
 =
 n-\dim\ker A^T
@@ -107,7 +107,7 @@ n-\dim\ker A^T
 \operatorname{rank}A
 =
 \dim\operatorname{im}A.
-\]
+$$
 
 :::
 
@@ -116,13 +116,13 @@ n-\dim\ker A^T
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{
 \operatorname{im}A
 =
 (\ker A^T)^\perp.
 }
-\]
+$$
 
 
 ::: pf-proof
@@ -137,21 +137,21 @@ Hence they are equal.
 ::: {.pf-step #s1-4}
 
 The equation
-\[
+$$
 Ax=b
-\]
+$$
 has a solution if and only if
-\[
+$$
 b\in\operatorname{im}A.
-\]
+$$
 
 
 ::: pf-proof
 
 By definition, $b$ lies in the image of $A$ exactly when there exists an $x$ such that
-\[
+$$
 Ax=b.
-\]
+$$
 
 :::
 
@@ -160,13 +160,13 @@ Ax=b.
 ::: {.pf-step #s1-5}
 
 Consequently,
-\[
+$$
 \boxed{
 Ax=b\text{ is solvable}
 \iff
 b\in(\ker A^T)^\perp.
 }
-\]
+$$
 
 
 ::: pf-proof

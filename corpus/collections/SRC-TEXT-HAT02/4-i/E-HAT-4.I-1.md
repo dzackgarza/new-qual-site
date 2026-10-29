@@ -29,46 +29,46 @@ If a connected CW complex $X$ retracts onto a subcomplex $A$, show that $\Sigma 
 
 ::: {.solution}
 Let
-\[
+$$
 r:X\to A
-\]
+$$
 be a retraction and
-\[
+$$
 q:X\to X/A
-\]
+$$
 the quotient map. Suspending and using the addition on maps out of a suspension gives
-\[
+$$
 F=\Sigma r+\Sigma q:\Sigma X\longrightarrow
 \Sigma A\vee\Sigma(X/A).
-\]
-We show that \(F\) is a homology isomorphism.
+$$
+We show that $F$ is a homology isomorphism.
 
-Since \(r\circ i=\operatorname{id}_A\), the inclusion
-\[
+Since $r\circ i=\operatorname{id}_A$, the inclusion
+$$
 i_*:\widetilde H_*(A)\to\widetilde H_*(X)
-\]
-is split injective, with splitting \(r_*\). The long exact sequence of the pair \((X,A)\) therefore breaks into split short exact sequences
-\[
+$$
+is split injective, with splitting $r_*$. The long exact sequence of the pair $(X,A)$ therefore breaks into split short exact sequences
+$$
 0\longrightarrow\widetilde H_j(A)
 \stackrel{i_*}{\longrightarrow}
 \widetilde H_j(X)
 \stackrel{q_*}{\longrightarrow}
 \widetilde H_j(X/A)\longrightarrow0.
-\]
+$$
 Hence
-\[
+$$
 (r_*,q_*):\widetilde H_j(X)\xrightarrow{\cong}
 \widetilde H_j(A)\oplus\widetilde H_j(X/A).
 \tag{1}
-\]
-Under the suspension isomorphisms, \(F_*\) is exactly the map (1). Thus \(F\) induces an isomorphism on all reduced homology groups.
+$$
+Under the suspension isomorphisms, $F_*$ is exactly the map (1). Thus $F$ induces an isomorphism on all reduced homology groups.
 
-Both \(\Sigma X\) and
-\[
+Both $\Sigma X$ and
+$$
 \Sigma A\vee\Sigma(X/A)
-\]
-are simply connected CW complexes because \(X\) is connected. The homology version of Whitehead's theorem therefore gives
-\[
+$$
+are simply connected CW complexes because $X$ is connected. The homology version of Whitehead's theorem therefore gives
+$$
 \boxed{\Sigma X\simeq\Sigma A\vee\Sigma(X/A).}
-\]
+$$
 :::

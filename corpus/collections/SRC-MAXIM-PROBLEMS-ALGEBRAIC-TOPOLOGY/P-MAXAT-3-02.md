@@ -28,21 +28,21 @@ Use the standard CW decomposition of $\RP^m$ with one cell in every dimension $0
 ::: {.pf-step #s1-1}
 
 The integral cellular boundary map
-\[
+$$
 d_k:C_k\to C_{k-1}
-\]
+$$
 is multiplication by
-\[
+$$
 1+(-1)^k,
-\]
+$$
 so
-\[
+$$
 d_k=
 \begin{cases}
 0,&k\text{ odd},\\
 2,&k\text{ even}.
 \end{cases}
-\]
+$$
 
 
 ::: pf-proof
@@ -56,17 +56,17 @@ The attaching map of the $k$-cell is the quotient map $S^{k-1}\to\RP^{k-1}$. Its
 ::: {.pf-step #s1-2}
 
 The cellular cochain differential
-\[
+$$
 \delta^k:C^k\to C^{k+1}
-\]
+$$
 is therefore
-\[
+$$
 \delta^k=
 \begin{cases}
 2,&k\text{ odd},\\
 0,&k\text{ even}.
 \end{cases}
-\]
+$$
 
 
 ::: pf-proof
@@ -80,7 +80,7 @@ Cellular cochains are $C^k=\operatorname{Hom}(C_k,\ZZ)\cong\ZZ$, and $\delta^k$ 
 ::: {.pf-step #s1-3}
 
 For $\RP^{\infty}$,
-\[
+$$
 \boxed{
 H^k(\RP^{\infty};\ZZ)
 \cong
@@ -89,17 +89,17 @@ H^k(\RP^{\infty};\ZZ)
 \ZZ/2,&k>0\text{ even},\\
 0,&k\text{ odd}.
 \end{cases}}
-\]
+$$
 
 
 ::: pf-proof
 
 The cochain complex is
-\[
+$$
 0\to\ZZ\xrightarrow{0}\ZZ
 \xrightarrow{2}\ZZ\xrightarrow{0}\ZZ
 \xrightarrow{2}\ZZ\xrightarrow{0}\cdots.
-\]
+$$
 At positive even degree, the outgoing map is zero and the incoming image is $2\ZZ$, giving $\ZZ/2$. At odd degree, multiplication by $2$ is injective, giving zero. Degree $0$ gives $\ZZ$.
 
 :::
@@ -109,7 +109,7 @@ At positive even degree, the outgoing map is zero and the incoming image is $2\Z
 ::: {.pf-step #s1-4}
 
 For $\RP^{2n}$,
-\[
+$$
 \boxed{
 H^k(\RP^{2n};\ZZ)
 \cong
@@ -118,15 +118,15 @@ H^k(\RP^{2n};\ZZ)
 \ZZ/2,&k=2,4,\ldots,2n,\\
 0,&\text{otherwise}.
 \end{cases}}
-\]
+$$
 
 
 ::: pf-proof
 
 The cochain complex of step [](#s1-2){.pf-ref} truncates in degree $2n$. The calculation below the top is identical to step [](#s1-3){.pf-ref}. In top degree $2n$, there is no outgoing differential and the incoming differential is multiplication by $2$, so
-\[
+$$
 H^{2n}\cong\ZZ/2.
-\]
+$$
 This agrees with the fact that $\RP^{2n}$ is nonorientable but has top integral cohomology $\ZZ/2$.
 
 :::
@@ -136,7 +136,7 @@ This agrees with the fact that $\RP^{2n}$ is nonorientable but has top integral 
 ::: {.pf-step #s1-5}
 
 For $\RP^{2n+1}$,
-\[
+$$
 \boxed{
 H^k(\RP^{2n+1};\ZZ)
 \cong
@@ -145,7 +145,7 @@ H^k(\RP^{2n+1};\ZZ)
 \ZZ/2,&k=2,4,\ldots,2n,\\
 0,&\text{otherwise}.
 \end{cases}}
-\]
+$$
 
 
 ::: pf-proof
@@ -159,14 +159,14 @@ Again the calculation below the top is step [](#s1-3){.pf-ref}. In degree $2n+1$
 ::: {.pf-step #s1-6}
 
 If the ring structure is also desired, let
-\[
+$$
 u\in H^2(\RP^{\infty};\ZZ)
-\]
+$$
 be the unique nonzero class. Then
-\[
+$$
 \boxed{H^*(\RP^{\infty};\ZZ)
 \cong\ZZ[u]/(2u),\qquad |u|=2.}
-\]
+$$
 
 
 ::: pf-proof
@@ -180,10 +180,10 @@ The class $u$ is the Bockstein of the mod-$2$ generator $x\in H^1(\RP^{\infty};\
 ::: {.pf-step #s1-7}
 
 For finite even-dimensional projective space,
-\[
+$$
 \boxed{H^*(\RP^{2n};\ZZ)
 \cong\ZZ[u]/(2u,u^{n+1}),\qquad |u|=2.}
-\]
+$$
 
 
 ::: pf-proof

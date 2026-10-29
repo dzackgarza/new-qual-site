@@ -28,11 +28,11 @@ You do not have to multiply matrices out, but you must compute any inverses.
 ::: {.solution}
 
 Let
-\[
+$$
 u_1=\frac1{\sqrt2}(1,-1,0),\qquad
 u_2=\frac1{\sqrt3}(1,1,-1),\qquad
 u_3=\frac1{\sqrt6}(1,1,2).
-\]
+$$
 
 ::: pf
 
@@ -44,13 +44,13 @@ The ordered triple $(u_1,u_2,u_3)$ is a positively oriented orthonormal basis of
 ::: pf-proof
 
 Direct computation gives
-\[
+$$
 u_i\cdot u_j=\delta_{ij}.
-\]
+$$
 Moreover,
-\[
+$$
 (1,-1,0)\times(1,1,-1)=(1,1,2),
-\]
+$$
 so $u_1\times u_2=u_3$. Thus the basis is positively oriented.
 
 :::
@@ -60,14 +60,14 @@ so $u_1\times u_2=u_3$. Thus the basis is positively oriented.
 ::: {.pf-step #s1-2}
 
 In the basis $(u_1,u_2,u_3)$, the matrix of $T$ is
-\[
+$$
 R=
 \begin{pmatrix}
 \frac12&-\frac{\sqrt3}{2}&0\\
 \frac{\sqrt3}{2}&\frac12&0\\
 0&0&1
 \end{pmatrix}.
-\]
+$$
 
 
 ::: pf-proof
@@ -81,16 +81,16 @@ The vector $u_3$ spans the rotation axis, so $T(u_3)=u_3$. The vectors $u_1,u_2$
 ::: {.pf-step #s1-3}
 
 If
-\[
+$$
 Q=
 \begin{pmatrix}
 \frac1{\sqrt2}&\frac1{\sqrt3}&\frac1{\sqrt6}\\
 -\frac1{\sqrt2}&\frac1{\sqrt3}&\frac1{\sqrt6}\\
 0&-\frac1{\sqrt3}&\frac2{\sqrt6}
 \end{pmatrix},
-\]
+$$
 then
-\[
+$$
 Q^{-1}=Q^t
 =
 \begin{pmatrix}
@@ -98,11 +98,11 @@ Q^{-1}=Q^t
 \frac1{\sqrt3}&\frac1{\sqrt3}&-\frac1{\sqrt3}\\
 \frac1{\sqrt6}&\frac1{\sqrt6}&\frac2{\sqrt6}
 \end{pmatrix}
-\]
+$$
 and
-\[
+$$
 \boxed{[T]_{\mathrm{std}}=QRQ^t}.
-\]
+$$
 
 
 ::: pf-proof
@@ -116,30 +116,30 @@ The columns of $Q$ are the orthonormal vectors $u_1,u_2,u_3$. Hence $Q$ is ortho
 ::: {.pf-step #s1-4}
 
 Over $\RR$, the only eigenvalue of $T$ is
-\[
+$$
 \boxed{1},
-\]
+$$
 with eigenspace
-\[
+$$
 \boxed{E_1=\operatorname{span}_{\RR}\{(1,1,2)\}}.
-\]
+$$
 
 
 ::: pf-proof
 
 In the basis $(u_1,u_2,u_3)$, the characteristic polynomial is
-\[
+$$
 (\lambda-1)
 \left[
 \left(\lambda-\frac12\right)^2+\frac34
 \right].
-\]
+$$
 The quadratic factor has no real roots. Thus the only real eigenvalue is $1$. The $1$-eigenspace is the rotation axis, namely
-\[
+$$
 \operatorname{span}_{\RR}\{u_3\}
 =
 \operatorname{span}_{\RR}\{(1,1,2)\}.
-\]
+$$
 
 :::
 
@@ -148,13 +148,13 @@ The quadratic factor has no real roots. Thus the only real eigenvalue is $1$. Th
 ::: {.pf-step #s1-5}
 
 Over $\CC$, the eigenvalues are
-\[
+$$
 \boxed{
 1,\qquad
 \lambda_+=\frac12+\frac{\sqrt3}{2}i,qquad
 \lambda_-=\frac12-\frac{\sqrt3}{2}i
 }.
-\]
+$$
 
 
 ::: pf-proof
@@ -168,7 +168,7 @@ These are the three roots of the characteristic polynomial computed in step [](#
 ::: {.pf-step #s1-6}
 
 Over $\CC$, the corresponding eigenspaces are
-\[
+$$
 \boxed{
 E_1=\operatorname{span}_{\CC}\{u_3\},
 \qquad
@@ -176,23 +176,23 @@ E_{\lambda_+}=\operatorname{span}_{\CC}\{u_1-i u_2\},
 \qquad
 E_{\lambda_-}=\operatorname{span}_{\CC}\{u_1+i u_2\}
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 The vector $u_3$ is fixed by $T$. On the complexification of $\operatorname{span}(u_1,u_2)$, step [](#s1-2){.pf-ref} gives
-\[
+$$
 T(u_1-i u_2)
 =
 \left(\frac12+\frac{\sqrt3}{2}i\right)(u_1-i u_2)
-\]
+$$
 and
-\[
+$$
 T(u_1+i u_2)
 =
 \left(\frac12-\frac{\sqrt3}{2}i\right)(u_1+i u_2).
-\]
+$$
 The three eigenvalues in step [](#s1-5){.pf-ref} are distinct, so each eigenspace is one-dimensional and the displayed spans are the complete eigenspaces.
 
 :::

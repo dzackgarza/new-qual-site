@@ -45,24 +45,24 @@ The algebra $A$ is a quotient of a polynomial ring over $\QQ$ in finitely many v
 ::: pf-proof
 
 Because $A$ is finitely generated as a $\QQ$-algebra, there exist
-\[
+$$
 a_1,\ldots,a_r\in A
-\]
+$$
 such that
-\[
+$$
 A=\QQ[a_1,\ldots,a_r].
-\]
+$$
 Hence the evaluation map
-\[
+$$
 \QQ[x_1,\ldots,x_r]\longrightarrow A,
 \qquad
 x_i\longmapsto a_i,
-\]
+$$
 is surjective.
 Thus
-\[
+$$
 A\cong\QQ[x_1,\ldots,x_r]/I
-\]
+$$
 for its kernel ideal $I$.
 
 :::
@@ -77,9 +77,9 @@ The ring $A$ is Noetherian.
 
 The field $\QQ$ is Noetherian.
 By Hilbert's basis theorem,
-\[
+$$
 \QQ[x_1,\ldots,x_r]
-\]
+$$
 is Noetherian.
 Every quotient of a Noetherian ring is Noetherian, so step [](#s1){.pf-ref} gives that $A$ is Noetherian.
 This proves part (a).
@@ -91,27 +91,27 @@ This proves part (a).
 ::: {.pf-step #s3}
 
 The ideals
-\[
+$$
 K_n:=\ker(\phi^n)
 \qquad(n\ge1)
-\]
+$$
 form an ascending chain.
 
 ::: pf-proof
 
 If $x\in K_n$, then
-\[
+$$
 \phi^n(x)=0.
-\]
+$$
 Applying $\phi$ gives
-\[
+$$
 \phi^{n+1}(x)=0,
-\]
+$$
 so $x\in K_{n+1}$.
 Hence
-\[
+$$
 K_1\subseteq K_2\subseteq K_3\subseteq\cdots.
-\]
+$$
 
 :::
 
@@ -120,9 +120,9 @@ K_1\subseteq K_2\subseteq K_3\subseteq\cdots.
 ::: {.pf-step #s4}
 
 There exists $N\ge1$ such that
-\[
+$$
 K_N=K_{N+1}.
-\]
+$$
 
 ::: pf-proof
 
@@ -140,30 +140,30 @@ The homomorphism $\phi$ is injective.
 ::: pf-proof
 
 Let
-\[
+$$
 x\in\ker\phi=K_1.
-\]
+$$
 Since $\phi$ is surjective, so is every iterate $\phi^N$.
 Choose $y\in A$ with
-\[
+$$
 \phi^N(y)=x.
-\]
+$$
 Then
-\[
+$$
 \phi^{N+1}(y)=\phi(x)=0,
-\]
+$$
 so
-\[
+$$
 y\in K_{N+1}.
-\]
+$$
 By step [](#s4){.pf-ref},
-\[
+$$
 K_{N+1}=K_N,
-\]
+$$
 hence $y\in K_N$ and therefore
-\[
+$$
 x=\phi^N(y)=0.
-\]
+$$
 Thus $\ker\phi=0$.
 
 :::

@@ -39,9 +39,9 @@ By the elementary-divisor decomposition, $M$ has a direct summand isomorphic to 
 ::: pf-proof
 
 Since $p^k$ is an elementary divisor of the finitely generated torsion $A$-module $M$, the structure theorem over a PID gives a decomposition
-\[
+$$
 M\cong A/(p^k)\oplus M'
-\]
+$$
 for some $A$-module $M'$.
 
 :::
@@ -68,15 +68,15 @@ The annihilator of $x$ is exactly the ideal $(p)$.
 ::: pf-proof
 
 For $a\in A$,
-\[
+$$
 ax=0\text{ in }A/(p^k)
 \iff p^k\mid ap^{k-1}.
-\]
+$$
 Because $A$ is a domain and $p$ is prime, this is equivalent to $p\mid a$.
 Hence
-\[
+$$
 \operatorname{Ann}_A(x)=(p).
-\]
+$$
 
 :::
 
@@ -89,13 +89,13 @@ Therefore the cyclic submodule $Ax$ is isomorphic to $A/(p)$.
 ::: pf-proof
 
 The map
-\[
+$$
 A\longrightarrow Ax,\qquad a\longmapsto ax
-\]
+$$
 is surjective and has kernel $\operatorname{Ann}_A(x)=(p)$ by step [](#s3){.pf-ref}. The first isomorphism theorem gives
-\[
+$$
 Ax\cong A/(p).
-\]
+$$
 
 :::
 

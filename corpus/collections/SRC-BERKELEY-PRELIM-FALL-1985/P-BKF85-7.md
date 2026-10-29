@@ -17,18 +17,18 @@ audit:
 
 ::: {.problem}
 Let $y(t)$ be a real-valued solution, defined for
-\[
+$$
 0<t<\infty,
-\]
+$$
 of
-\[
+$$
 \frac{dy}{dt}=e^{-y}-e^{-3y}+e^{-5y}.
-\]
+$$
 Show that
-\[
+$$
 y(t)\longrightarrow+\infty
 \qquad\text{as }t\to+\infty.
-\]
+$$
 :::
 
 ::: {.solution}

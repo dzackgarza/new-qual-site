@@ -23,11 +23,11 @@ audit:
 
 ::: {.problem}
 Which number is larger,
-\[
+$$
 \pi^3
 \qquad\text{or}\qquad
 3^\pi?
-\]
+$$
 Justify your answer.
 :::
 

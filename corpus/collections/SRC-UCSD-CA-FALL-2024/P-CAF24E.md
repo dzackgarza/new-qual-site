@@ -15,24 +15,24 @@ review: draft
 
 ::: {.problem}
 Let $f_n : \DD \to \CC$ be holomorphic functions such that
-\[
+$$
 \int_{\DD} |f_n|\, dx\, dy \le 1, \qquad \forall n \ge 1.
-\]
+$$
 Show that there exists a subsequence of $\{f_n\}$ that converges locally uniformly on $\DD$.
 :::
 
 ::: {.solution}
 Fix a compact set $K\Subset\DD$. Choose $r>0$ such that
-\[
+$$
 B(z,r)\subset\DD
-\]
+$$
 for every $z\in K$. Since $|f_n|$ is subharmonic, the submean inequality gives
-\[
+$$
 |f_n(z)|
 \le \frac1{\pi r^2}
 \int_{B(z,r)}|f_n(w)|\,dA(w)
 \le \frac1{\pi r^2}.
-\]
+$$
 Thus the family $(f_n)$ is uniformly bounded on every compact subset of
 $\DD$. By Montel's theorem it is a normal family. Therefore every
 sequence has a subsequence converging uniformly on compact subsets of

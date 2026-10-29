@@ -57,29 +57,29 @@ If $f$ is irreducible over $K$, then $[F:K]$ divides $n!$.
 ::: pf-proof
 
 Choose a root $\alpha\in F$. Irreducibility gives
-\[
+$$
 [K(\alpha):K]=n.
-\]
+$$
 Over $K(\alpha)$ one may write
-\[
+$$
 f(x)=(x-\alpha)g(x),
 \qquad
 \deg g=n-1.
-\]
+$$
 The field $F$ is a splitting field of $g$ over $K(\alpha)$: adjoining the roots
 of $g$ to $K(\alpha)$ adjoins all roots of $f$.
 
 By the induction hypothesis,
-\[
+$$
 [F:K(\alpha)]\mid(n-1)!.
-\]
+$$
 The tower law therefore gives
-\[
+$$
 [F:K]
 =[F:K(\alpha)]\,[K(\alpha):K]
 =n[F:K(\alpha)]
 \mid n(n-1)!=n!.
-\]
+$$
 
 :::
 
@@ -92,36 +92,36 @@ If $f$ is reducible over $K$, then $[F:K]$ divides $n!$.
 ::: pf-proof
 
 Write
-\[
+$$
 f(x)=g(x)h(x)
-\]
+$$
 with
-\[
+$$
 r=\deg g>0,
 \qquad
 s=\deg h>0,
 \qquad
 r+s=n.
-\]
+$$
 Let $E\subseteq F$ be the subfield generated over $K$ by all roots of $g$.
 Then $E$ is a splitting field of $g$ over $K$, so by induction
-\[
+$$
 [E:K]\mid r!.
-\]
+$$
 
 Over $E$, the field $F$ is obtained by adjoining the roots of $h$, hence is a
 splitting field of $h$ over $E$. Again by induction,
-\[
+$$
 [F:E]\mid s!.
-\]
+$$
 Thus
-\[
+$$
 [F:K]=[F:E][E:K]\mid r!s!.
-\]
+$$
 Finally,
-\[
+$$
 \frac{n!}{r!s!}=\binom{n}{r}\in\ZZ,
-\]
+$$
 so $r!s!\mid n!$. Hence $[F:K]\mid n!$.
 
 :::

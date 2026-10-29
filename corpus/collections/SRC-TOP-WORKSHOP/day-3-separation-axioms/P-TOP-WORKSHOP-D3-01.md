@@ -28,23 +28,23 @@ Show that $Y$ is Hausdorff but does not have a countable basis for its topology.
 :::
 
 ::: {.solution}
-Let \(q:\RR^2\to Y\) be the quotient map and let \(p=q(\{0\}\times\RR)\).
+Let $q:\RR^2\to Y$ be the quotient map and let $p=q(\{0\}\times\RR)$.
 
-First \(Y\) is Hausdorff. If two quotient points are represented by points \(x,y\notin\{0\}\times\RR\), choose disjoint Euclidean balls about \(x\) and \(y\) small enough to avoid the \(y\)-axis; these balls are saturated, so their images under \(q\) are disjoint open neighborhoods. If one point is \(p\) and the other is represented by \(x=(x_1,x_2)\) with \(x_1\ne0\), choose \(0<\delta<|x_1|/3\). The saturated strip
-\[
+First $Y$ is Hausdorff. If two quotient points are represented by points $x,y\notin\{0\}\times\RR$, choose disjoint Euclidean balls about $x$ and $y$ small enough to avoid the $y$-axis; these balls are saturated, so their images under $q$ are disjoint open neighborhoods. If one point is $p$ and the other is represented by $x=(x_1,x_2)$ with $x_1\ne0$, choose $0<\delta<|x_1|/3$. The saturated strip
+$$
 S=\{(u,v):|u|<\delta\}
-\]
-contains the collapsed axis, while a sufficiently small ball about \(x\) is disjoint from \(S\) and from the axis. Their quotient images separate the two points. Thus \(Y\) is Hausdorff.
+$$
+contains the collapsed axis, while a sufficiently small ball about $x$ is disjoint from $S$ and from the axis. Their quotient images separate the two points. Thus $Y$ is Hausdorff.
 
-Now suppose \(p\) had a countable neighborhood basis \(U_1,U_2,\dots\). Put \(V_n=q^{-1}(U_n)\). Each \(V_n\) is an open set containing the entire \(y\)-axis. Hence for the point \((0,n)\) there exists \(r_n>0\) with
-\[
+Now suppose $p$ had a countable neighborhood basis $U_1,U_2,\dots$. Put $V_n=q^{-1}(U_n)$. Each $V_n$ is an open set containing the entire $y$-axis. Hence for the point $(0,n)$ there exists $r_n>0$ with
+$$
 B((0,n),r_n)\subset V_n.
-\]
-Choose \(0<t_n<\min(r_n,1/2)\) and set \(z_n=(t_n,n)\). Then \(z_n\in V_n\). The set \(F=\{z_n:n\ge1\}\) is closed in \(\RR^2\): its second coordinates are distinct integers and it has no finite accumulation point. Therefore
-\[
+$$
+Choose $0<t_n<\min(r_n,1/2)$ and set $z_n=(t_n,n)$. Then $z_n\in V_n$. The set $F=\{z_n:n\ge1\}$ is closed in $\RR^2$: its second coordinates are distinct integers and it has no finite accumulation point. Therefore
+$$
 W=\RR^2\setminus F
-\]
-is open, saturated, and contains the whole \(y\)-axis. Thus \(q(W)\) is an open neighborhood of \(p\). But \(U_n\nsubseteq q(W)\), since \(q(z_n)\in U_n\setminus q(W)\). This contradicts that \((U_n)\) is a neighborhood basis at \(p\).
+$$
+is open, saturated, and contains the whole $y$-axis. Thus $q(W)$ is an open neighborhood of $p$. But $U_n\nsubseteq q(W)$, since $q(z_n)\in U_n\setminus q(W)$. This contradicts that $(U_n)$ is a neighborhood basis at $p$.
 
-Hence \(Y\) is not first countable at \(p\), and therefore cannot have a countable basis.
+Hence $Y$ is not first countable at $p$, and therefore cannot have a countable basis.
 :::

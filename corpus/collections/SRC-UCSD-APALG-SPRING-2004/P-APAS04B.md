@@ -50,9 +50,9 @@ zero.
 ::: pf-proof
 Write $A=(a_{ij})$ and let $e_i$ be the $i$th standard basis vector. Taking $z=e_i$
 gives
-\[
+$$
 0=e_i^HAe_i=a_{ii}.
-\]
+$$
 Thus $a_{ii}=0$ for every $i$.
 :::
 
@@ -63,13 +63,13 @@ Every off-diagonal entry of $A$ is also zero; hence $A=0$.
 
 ::: pf-proof
 Fix $i\neq j$. Taking $z=e_i+e_j$ and using step [](#diagonal-entries-zero){.pf-ref} gives
-\[
+$$
 0=(e_i+e_j)^HA(e_i+e_j)=a_{ij}+a_{ji}.
-\]
+$$
 Taking $z=e_i+i e_j$ gives
-\[
+$$
 0=(e_i+i e_j)^HA(e_i+i e_j)=i a_{ij}-i a_{ji}.
-\]
+$$
 Hence $a_{ij}+a_{ji}=0$ and $a_{ij}-a_{ji}=0$, so $a_{ij}=a_{ji}=0$. Since this holds
 for every $i\neq j$, all entries of $A$ vanish.
 :::
@@ -78,16 +78,16 @@ for every $i\neq j$, all entries of $A$ vanish.
 
 ::: pf-step
 For part (b), the matrix
-\[
+$$
 A=\begin{pmatrix}0&1\\-1&0\end{pmatrix}
-\]
+$$
 is nonzero and satisfies $x^TAx=0$ for every $x\in\RR^2$.
 
 ::: pf-proof
 For $x=(u,v)^T$,
-\[
+$$
 x^TAx=(u,v)\begin{pmatrix}v\\-u\end{pmatrix}=uv-vu=0.
-\]
+$$
 The matrix is visibly nonzero.
 :::
 
@@ -98,9 +98,9 @@ If $A$ is normal, then $\|Ax\|_2=\|A^Hx\|_2$ for every $x\in\CC^n$.
 
 ::: pf-proof
 Normality means $A^HA=AA^H$. Therefore
-\[
+$$
 \|Ax\|_2^2=x^HA^HAx=x^HAA^Hx=\|A^Hx\|_2^2.
-\]
+$$
 Both norms are nonnegative, so they are equal.
 :::
 
@@ -111,14 +111,14 @@ Conversely, if $\|Ax\|_2=\|A^Hx\|_2$ for every $x$, then $A$ is normal.
 
 ::: pf-proof
 For every $x$,
-\[
+$$
 0=\|Ax\|_2^2-\|A^Hx\|_2^2
  =x^H(A^HA-AA^H)x.
-\]
+$$
 Applying part (a) (steps [](#diagonal-entries-zero){.pf-ref} and [](#a-is-zero){.pf-ref}) to the matrix $A^HA-AA^H$ gives
-\[
+$$
 A^HA-AA^H=0.
-\]
+$$
 Thus $A$ is normal.
 :::
 
@@ -129,9 +129,9 @@ If $A$ is normal, then $(Ax,Ay)=(A^Hx,A^Hy)$ for every $x,y\in\CC^n$.
 
 ::: pf-proof
 Using the standard Hermitian inner product $(u,v)=u^Hv$ and $A^HA=AA^H$,
-\[
+$$
 (Ax,Ay)=x^HA^HAy=x^HAA^Hy=(A^Hx,A^Hy).
-\]
+$$
 :::
 
 :::
@@ -141,9 +141,9 @@ Conversely, if $(Ax,Ay)=(A^Hx,A^Hy)$ for all $x,y$, then $A$ is normal.
 
 ::: pf-proof
 Setting $y=x$ gives
-\[
+$$
 \|Ax\|_2^2=\|A^Hx\|_2^2
-\]
+$$
 for every $x$. By step [](#norm-equal-implies-normal){.pf-ref}, $A$ is normal.
 :::
 

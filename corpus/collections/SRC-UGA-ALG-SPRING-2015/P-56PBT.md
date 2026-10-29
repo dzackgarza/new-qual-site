@@ -60,9 +60,9 @@ finite field extension.
 
 ::: pf-step
 Choosing an $\FF_p$-basis $\{v_1, \dots, v_n\}$ for $\FF$ gives an $\FF_p$-linear isomorphism:
-\[
+$$
 (\FF, +) \cong \FF_p^n \cong \bigoplus_{i=1}^n \ZZ_p.
-\]
+$$
 Thus $(\FF, +)$ is isomorphic to the direct sum of $n$ copies of the cyclic group $\ZZ_p$.
 
 ::: pf-proof
@@ -150,9 +150,9 @@ $x^e = 1$ for all $x \in \FF^\times$.
 ::: {.pf-step #n-leq-e}
 Since $\FF$ is a field, the non-zero polynomial $P(T)$ of degree $e$ has at most $e$ roots in $\FF$.
 Therefore:
-\[
+$$
 N = |\FF^\times| \le e.
-\]
+$$
 
 ::: pf-proof
 a degree $e$ polynomial over a field has at most $e$ roots.

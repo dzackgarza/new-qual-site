@@ -28,13 +28,13 @@ Prove that $F$ is algebraically closed.
 
 ::: {.solution}
 Let
-\[
+$$
 f(x)\in F[x]
-\]
+$$
 be nonconstant. By hypothesis, $f$ has a root $\alpha_1\in F$. Therefore
-\[
+$$
 f(x)=(x-\alpha_1)f_1(x)
-\]
+$$
 for some $f_1(x)\in F[x]$ of degree one less than $f$.
 
 ::: pf
@@ -48,11 +48,11 @@ $F$.
 
 Proceed by induction on $\deg f$. The assertion is trivial in degree $1$.
 For degree $n>1$, choose a root $\alpha_1\in F$ by hypothesis and write
-\[
+$$
 f=(x-\alpha_1)f_1,
 \qquad
 \deg f_1=n-1.
-\]
+$$
 If $f_1$ is nonconstant, the hypothesis applies to it as well, and the induction
 hypothesis gives a factorization of $f_1$ into linear factors over $F$.
 Thus $f$ splits completely over $F$.

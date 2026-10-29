@@ -27,9 +27,9 @@ If $\alpha$ and $\beta$ are algebraic over $\QQ$, prove that $\alpha+\beta$ is a
 
 ::: {.solution}
 Set
-\[
+$$
 K=\QQ(\alpha,\beta).
-\]
+$$
 
 ::: pf
 
@@ -40,21 +40,21 @@ The extension $K/\QQ$ is finite.
 ::: pf-proof
 
 Since $\alpha$ is algebraic over $\QQ$,
-\[
+$$
 [\QQ(\alpha):\QQ]<\infty.
-\]
+$$
 The element $\beta$ is algebraic over $\QQ$, hence also algebraic over
 the larger field $\QQ(\alpha)$. Therefore
-\[
+$$
 [K:\QQ(\alpha)]<\infty.
-\]
+$$
 By the tower law,
-\[
+$$
 [K:\QQ]
 =[K:\QQ(\alpha)]
 [\QQ(\alpha):\QQ]
 <\infty.
-\]
+$$
 
 :::
 
@@ -68,14 +68,14 @@ $\QQ$.
 ::: pf-proof
 
 Let $\gamma\in K$. If $d=[K:\QQ]$, then the $d+1$ elements
-\[
+$$
 1,\gamma,\gamma^2,\ldots,\gamma^d
-\]
+$$
 are linearly dependent over $\QQ$. Thus there are rational numbers
 $c_0,\ldots,c_d$, not all zero, such that
-\[
+$$
 c_0+c_1\gamma+\cdots+c_d\gamma^d=0.
-\]
+$$
 Hence $\gamma$ satisfies a nonzero polynomial in $\QQ[x]$.
 
 :::

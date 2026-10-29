@@ -29,11 +29,11 @@ audit:
 ::: {.problem}
 Let $S$ be the vector space of real $n\times n$ skew-symmetric matrices.
 For $A\in GL_n(\RR)$, compute the determinant of the linear map
-\[
+$$
 T_A:S\to S,
 \qquad
 T_A(X)=AXA^T.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -26,15 +26,15 @@ Either using the definition or by applying theorems of Calculus, compute the lin
 
 ::: {.solution}
 The differential form is exact:
-\[
+$$
 x\,dy+y\,dx=d(xy).
-\]
+$$
 Therefore its integral around any closed piecewise smooth curve is zero. Since $\partial R$ is closed,
-\[
+$$
 \int_{\partial R}x\,dy+y\,dx=0.
-\]
+$$
 Equivalently, Green's theorem gives the same result because
-\[
+$$
 \frac{\partial x}{\partial x}-\frac{\partial y}{\partial y}=1-1=0.
-\]
+$$
 :::

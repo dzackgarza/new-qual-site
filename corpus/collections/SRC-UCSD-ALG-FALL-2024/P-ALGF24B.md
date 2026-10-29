@@ -79,9 +79,9 @@ By step [](#s1){.pf-ref}, $|Q|=p^a$ for a prime $p$ and $a\ge1$.
 Subgroups and quotients of solvable groups are solvable, as follows by taking the images or restrictions of their derived series.
 
 If $p\mid m$, coprimality gives $p^a\mid m$ and
-\[
+$$
 |G/Q|=(m/p^a)n,\qquad \gcd(m/p^a,n)=1.
-\]
+$$
 Induction gives a subgroup of $G/Q$ of order $m/p^a$.
 Its inverse image in $G$ has order $m$, as required.
 
@@ -97,9 +97,9 @@ The only remaining case is $H=G$, in which $n=p^a=|Q|$.
 ::: {.pf-step #s3}
 
 In the remaining case, there is a nontrivial $r$-subgroup $R$ for a prime $r\ne p$ such that
-\[
+$$
 G=Q N_G(R).
-\]
+$$
 
 ::: pf-proof
 
@@ -133,9 +133,9 @@ By $G=QN$ from step [](#s3){.pf-ref}, $K$ is normal in $G$.
 Minimal normality of $Q$ therefore gives $K=1$ or $K=Q$.
 
 If $K=1$, the product formula gives
-\[
+$$
 |N|=\frac{|G|}{|Q|}=m,
-\]
+$$
 so $N$ is the desired subgroup.
 If $K=Q$, then $Q\le N$, whence $G=QN=N$.
 Thus every element of $G$ normalizes $R$, and $R\trianglelefteq G$.
@@ -151,9 +151,9 @@ The case $R\trianglelefteq G$ also yields a subgroup of order $m$.
 ::: pf-proof
 
 Here $|R|=r^b>1$ divides $m$ and
-\[
+$$
 |G/R|=(m/r^b)n,\qquad \gcd(m/r^b,n)=1.
-\]
+$$
 Induction applies to the smaller solvable group $G/R$ and gives a subgroup of order $m/r^b$.
 Its inverse image in $G$ has order $m$.
 This completes the remaining case of step [](#s2){.pf-ref}, the induction, and part (b).

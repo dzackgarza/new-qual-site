@@ -35,9 +35,9 @@ is irreducible in $\ZZ [ x ]$
 
 ::: {.solution}
 Let
-\[
+$$
 f(x)=x^6+539x^5-511x+847.
-\]
+$$
 Apply the change of variable $x\mapsto x-7$.
 
 ::: pf
@@ -49,25 +49,25 @@ The translated polynomial $f(x-7)$ is Eisenstein at $7$.
 ::: pf-proof
 
 Expanding gives
-\[
+$$
 \begin{aligned}
 f(x-7)={}&x^6+497x^5-18130x^4+257250x^3\\
 &-1812755x^2+6369342x-8936900.
 \end{aligned}
-\]
+$$
 Every non-leading coefficient is divisible by $7$:
-\[
+$$
 7\mid497,\quad
 7\mid18130,\quad
 7\mid257250,\quad
 7\mid1812755,\quad
 7\mid6369342,\quad
 7\mid8936900.
-\]
+$$
 The leading coefficient is $1$, so it is not divisible by $7$. Moreover,
-\[
+$$
 -8936900\equiv14\pmod{49},
-\]
+$$
 so $49\nmid8936900$.
 Therefore Eisenstein's criterion at the prime $7$ shows that $f(x-7)$ is irreducible in $\QQ[x]$.
 
@@ -82,17 +82,17 @@ Hence $f(x)$ is irreducible in $\ZZ[x]$.
 ::: pf-proof
 
 The substitution
-\[
+$$
 \tau:\QQ[x]\longrightarrow\QQ[x],
 \qquad
 \tau(g)(x)=g(x-7),
-\]
+$$
 is a ring automorphism, with inverse $g(x)\mapsto g(x+7)$. Thus $f$ is reducible in $\QQ[x]$ if and only if $f(x-7)$ is reducible in $\QQ[x]$. By step [](#s1){.pf-ref}, $f$ is therefore irreducible in $\QQ[x]$.
 
 Finally, $f$ is monic, hence primitive. Gauss's lemma then implies that irreducibility in $\QQ[x]$ is equivalent to irreducibility in $\ZZ[x]$. Therefore
-\[
+$$
 \boxed{x^6+539x^5-511x+847\text{ is irreducible in }\ZZ[x].}
-\]
+$$
 
 :::
 

@@ -22,11 +22,11 @@ Prove $f \equiv 0$.
 
 ::: {.solution}
 Choose a closed subarc
-\[
+$$
 S_0=\{e^{i\theta}:\alpha\le\theta\le\beta\}
 \subset
 \{e^{i\theta}:\pi/4<\theta<\pi/3\}.
-\]
+$$
 Because $f$ is continuous up to the unit circle and vanishes on this arc,
 extend $f$ by $0$ across $S_0$ to a small annular neighborhood outside the
 unit disk. More precisely, define the extension to equal $f$ on the inside and
@@ -43,7 +43,7 @@ The extended holomorphic function vanishes on an open set outside the disk, so
 the identity theorem makes it vanish in a neighborhood of $S_0$. Thus the
 original $f$ vanishes on a nonempty open subset of the punctured disk. Since
 $0<|z|<1$ is connected, the identity theorem gives
-\[
+$$
 \boxed{f\equiv0}.
-\]
+$$
 :::

@@ -16,9 +16,9 @@ audit:
 
 ::: {.problem}
 Use induction to show that
-\[
+$$
 1^3+2^3+\cdots+n^3=(1+2+\cdots+n)^2.
-\]
+$$
 :::
 
 ::: {.solution}

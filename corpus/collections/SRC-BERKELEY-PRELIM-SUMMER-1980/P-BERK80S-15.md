@@ -27,12 +27,12 @@ audit:
 Let $E$ be a finite-dimensional vector space over a field $F$.
 Suppose $B:E\times E\to F$ is a bilinear map, not necessarily symmetric.
 Define
-\[
+$$
 E_1=\{x\in E:B(x,y)=0\text{ for all }y\in E\},
-\]
-\[
+$$
+$$
 E_2=\{y\in E:B(x,y)=0\text{ for all }x\in E\}.
-\]
+$$
 Prove that $\dim E_1=\dim E_2$.
 :::
 

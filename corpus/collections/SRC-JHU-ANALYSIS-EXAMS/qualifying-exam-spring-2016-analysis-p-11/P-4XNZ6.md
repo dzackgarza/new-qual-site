@@ -70,13 +70,13 @@ concentric open ball, whose average of $|f|$ is arbitrarily
 close, so this does not change $f^*$.
 
 Fix $\alpha>0$ and set
-\[
+$$
 E_\alpha:=\{x\in\RR^d:f^*(x)>\alpha\}.
-\]
+$$
 For each $x\in E_\alpha$, choose an open ball $B_x\ni x$ such that
-\[
+$$
 \frac1{m(B_x)}\int_{B_x}|f(y)|\,dy>\alpha.
-\]
+$$
 Every point of $B_x$ then lies in $E_\alpha$, so
 $E_\alpha=\bigcup_{x\in E_\alpha}B_x$ is open, hence measurable.
 
@@ -93,18 +93,18 @@ Every compact subset of $E_\alpha$ satisfies the bound.
 Let $K\subset E_\alpha$ be compact. Finitely many of the
 balls $B_x$ cover $K$. Step [](#s1){.pf-ref} gives pairwise disjoint
 balls $B_1,\dots,B_N$ among them with
-\[
+$$
 K\subseteq\bigcup_{j=1}^N3B_j.
-\]
+$$
 Each $B_j$ satisfies $\alpha m(B_j)<\int_{B_j}|f|$, and the
 $B_j$ are pairwise disjoint. Therefore
-\[
+$$
 m(K)
 \le\sum_{j=1}^N m(3B_j)
 =3^d\sum_{j=1}^N m(B_j)
 <\frac{3^d}{\alpha}\sum_{j=1}^N\int_{B_j}|f|
 \le\frac{3^d}{\alpha}\|f\|_1.
-\]
+$$
 
 :::
 
@@ -119,11 +119,11 @@ Inner regularity gives the bound for $E_\alpha$.
 Lebesgue measure is inner regular on measurable sets, so
 $m(E_\alpha)=\sup\{m(K):K\subset E_\alpha\text{ compact}\}$
 [@Fol13]. Step [](#s3){.pf-ref} then gives
-\[
+$$
 \boxed{
 m(\{x:f^*(x)>\alpha\})
 \le\frac{3^d}{\alpha}\|f\|_{L^1(\RR^d)}.}
-\]
+$$
 
 :::
 

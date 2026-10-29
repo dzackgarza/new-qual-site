@@ -18,33 +18,33 @@ audit:
 
 ::: {.problem}
 Let $u\in L^2(\RR)$ and set
-\[
+$$
 U(x,\xi)=\int_{\RR}e^{-(x+i\xi-y)^2/2}u(y)\,dy,
 \qquad x,\xi\in\RR.
-\]
+$$
 Show that $U(x,\xi)$ is well defined on $\RR^2$ and that there exists a constant $C>0$ such that for all $u\in L^2(\RR)$,
-\[
+$$
 \iint_{\RR^2}|U(x,\xi)|^2e^{-\xi^2}\,dx\,d\xi
 =C\int_{\RR}|u(y)|^2\,dy.
-\]
+$$
 Determine $C$ explicitly.
 :::
 
 ::: {.solution}
 
 Use the Fourier transform convention
-\[
+$$
 \mathcal Fh(\eta)
 \coloneqq
 \int_{\RR}h(y)e^{-i\eta y}\,dy,
-\]
+$$
 for which Plancherel's theorem reads
-\[
+$$
 \int_{\RR}|\mathcal Fh(\eta)|^2\,d\eta
 =
 2\pi
 \int_{\RR}|h(y)|^2\,dy.
-\]
+$$
 
 ::: pf
 
@@ -56,16 +56,16 @@ For every $(x,\xi)\in\RR^2$, the integral defining $U(x,\xi)$ converges absolute
 ::: pf-proof
 
 Since
-\[
+$$
 \left|
 e^{-(x+i\xi-y)^2/2}
 \right|
 =
 e^{\xi^2/2}
 e^{-(x-y)^2/2},
-\]
+$$
 Cauchy--Schwarz gives
-\[
+$$
 \begin{aligned}
 \int_{\RR}
 \left|
@@ -85,7 +85,7 @@ e^{\xi^2/2}
 <
 \infty.
 \end{aligned}
-\]
+$$
 Thus $U(x,\xi)$ is well defined.
 
 :::
@@ -95,41 +95,41 @@ Thus $U(x,\xi)$ is well defined.
 ::: {.pf-step #s1-2}
 
 For fixed $x\in\RR$, define
-\[
+$$
 h_x(y)
 \coloneqq
 e^{xy-y^2/2}u(y).
-\]
+$$
 Then $h_x\in L^2(\RR)$ and
-\[
+$$
 U(x,\xi)
 =
 e^{-x^2/2}
 e^{\xi^2/2}
 e^{-ix\xi}
 \mathcal Fh_x(-\xi).
-\]
+$$
 
 
 ::: pf-proof
 
 Complete the square:
-\[
+$$
 xy-\frac{y^2}{2}
 =
 \frac{x^2}{2}
 -\frac{(y-x)^2}{2}.
-\]
+$$
 Hence
-\[
+$$
 |e^{xy-y^2/2}|
 \le
 e^{x^2/2},
-\]
+$$
 so $h_x\in L^2$ because $u\in L^2$.
 
 Also,
-\[
+$$
 \begin{aligned}
 -\frac{(x+i\xi-y)^2}{2}
 &=
@@ -140,9 +140,9 @@ Also,
 -\frac{y^2}{2}
 +i\xi y.
 \end{aligned}
-\]
+$$
 Substituting this expansion into the definition of $U$ gives
-\[
+$$
 U(x,\xi)
 =
 e^{-x^2/2}
@@ -150,7 +150,7 @@ e^{\xi^2/2}
 e^{-ix\xi}
 \int_{\RR}
 h_x(y)e^{i\xi y}\,dy.
-\]
+$$
 The last integral is $\mathcal Fh_x(-\xi)$.
 
 :::
@@ -160,7 +160,7 @@ The last integral is $\mathcal Fh_x(-\xi)$.
 ::: {.pf-step #s1-3}
 
 For every fixed $x\in\RR$,
-\[
+$$
 \int_{\RR}
 |U(x,\xi)|^2e^{-\xi^2}\,d\xi
 =
@@ -168,20 +168,20 @@ For every fixed $x\in\RR$,
 \int_{\RR}
 e^{-(x-y)^2}
 |u(y)|^2\,dy.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-2){.pf-ref},
-\[
+$$
 |U(x,\xi)|^2e^{-\xi^2}
 =
 e^{-x^2}
 |\mathcal Fh_x(-\xi)|^2.
-\]
+$$
 Therefore Plancherel gives
-\[
+$$
 \begin{aligned}
 \int_{\RR}
 |U(x,\xi)|^2e^{-\xi^2}\,d\xi
@@ -204,7 +204,7 @@ e^{-x^2+2xy-y^2}
 e^{-(x-y)^2}
 |u(y)|^2\,dy.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -213,7 +213,7 @@ e^{-(x-y)^2}
 ::: {.pf-step #s1-4}
 
 One has
-\[
+$$
 \boxed{
 \iint_{\RR^2}
 |U(x,\xi)|^2e^{-\xi^2}\,dx\,d\xi
@@ -221,13 +221,13 @@ One has
 2\pi^{3/2}
 \int_{\RR}|u(y)|^2\,dy
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 The integrand in step [](#s1-3){.pf-ref} is nonnegative, so Tonelli's theorem permits integration in $x$ and $y$ in either order:
-\[
+$$
 \begin{aligned}
 \iint_{\RR^2}
 |U(x,\xi)|^2e^{-\xi^2}\,dx\,d\xi
@@ -249,13 +249,13 @@ e^{-(x-y)^2}\,dx
 2\pi\sqrt\pi
 \int_{\RR}|u(y)|^2\,dy.
 \end{aligned}
-\]
+$$
 Since
-\[
+$$
 2\pi\sqrt\pi
 =
 2\pi^{3/2},
-\]
+$$
 the boxed identity follows.
 
 :::
@@ -265,9 +265,9 @@ the boxed identity follows.
 ::: {.pf-step #s1-5}
 
 Thus the required constant is
-\[
+$$
 \boxed{C=2\pi^{3/2}}.
-\]
+$$
 
 
 ::: pf-proof

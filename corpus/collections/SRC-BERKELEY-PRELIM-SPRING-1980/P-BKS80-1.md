@@ -25,9 +25,9 @@ audit:
 Let $f:\RR\to\RR$ be the $2\pi$-periodic function satisfying $f(x)=x$ for $-\pi\le x<\pi$.
 
 1. Prove that its Fourier series is
-   \[
+   $$
    \sum_{n=1}^{\infty}\frac{2(-1)^{n+1}\sin(nx)}{n}.
-   \]
+   $$
 2. Prove that this series does not converge uniformly.
 3. For each $x\in\RR$, find the sum of the series.
 :::

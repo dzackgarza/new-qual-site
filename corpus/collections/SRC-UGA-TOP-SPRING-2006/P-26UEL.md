@@ -49,42 +49,42 @@ For each $i,j\ge0$, let $c_i(M)$ and $c_j(N)$ denote the numbers of $i$-cells of
 ::: {.pf-step #s1}
 
 For every $i$-cell $e^i_\alpha\subset M$ and every $j$-cell $e^j_\beta\subset N$, the product
-\[
+$$
 e^i_\alpha\times e^j_\beta
-\]
+$$
 is an $(i+j)$-cell of $M\times N$.
 
 ::: pf-proof
 
 Choose characteristic maps
-\[
+$$
 \varphi_\alpha:D^i\longrightarrow M,
 \qquad
 \psi_\beta:D^j\longrightarrow N
-\]
+$$
 for the two cells.
 Their product
-\[
+$$
 \varphi_\alpha\times\psi_\beta:
 D^i\times D^j\longrightarrow M\times N
-\]
+$$
 restricts to a homeomorphism from
-\[
+$$
 \operatorname{int}(D^i)\times\operatorname{int}(D^j)
-\]
+$$
 onto $e^i_\alpha\times e^j_\beta$.
 Since
-\[
+$$
 D^i\times D^j\cong D^{i+j},
-\]
+$$
 this product is an open cell of dimension $i+j$.
 
 Moreover,
-\[
+$$
 \partial(D^i\times D^j)
 =
 (\partial D^i\times D^j)\cup(D^i\times\partial D^j),
-\]
+$$
 and the product characteristic map sends this boundary into products in which at least one factor lies in a lower skeleton.
 Thus these product cells attach along lower-dimensional product cells.
 
@@ -95,19 +95,19 @@ Thus these product cells attach along lower-dimensional product cells.
 ::: {.pf-step #s2}
 
 The product cells in step [](#s1){.pf-ref} form a CW structure on $M\times N$, with
-\[
+$$
 (M\times N)^n
 =
 \bigcup_{i+j\le n} M^i\times N^j.
-\]
+$$
 
 ::: pf-proof
 
 The open cells of $M$ partition $M$, and the open cells of $N$ partition $N$.
 Hence the products
-\[
+$$
 e^i_\alpha\times e^j_\beta
-\]
+$$
 partition $M\times N$.
 By step [](#s1){.pf-ref} each is an open cell of dimension $i+j$, attached to the union of cells of smaller total dimension.
 
@@ -121,11 +121,11 @@ Hence the weak topology determined by these cells agrees with the ordinary produ
 ::: {.pf-step #s3}
 
 The number of $n$-cells in this product CW structure is
-\[
+$$
 c_n(M\times N)
 =
 \sum_{i+j=n}c_i(M)c_j(N).
-\]
+$$
 
 ::: pf-proof
 
@@ -139,14 +139,14 @@ There are $c_i(M)c_j(N)$ such pairs for fixed $(i,j)$, and summing over $i+j=n$ 
 ::: pf-step
 
 The Euler characteristic satisfies
-\[
+$$
 \boxed{\chi(M\times N)=\chi(M)\chi(N)}.
-\]
+$$
 
 ::: pf-proof
 
 Using step [](#s3){.pf-ref} and the definition of Euler characteristic for a finite CW complex,
-\[
+$$
 \begin{aligned}
 \chi(M\times N)
 &=\sum_n(-1)^n c_n(M\times N)\\
@@ -156,7 +156,7 @@ Using step [](#s3){.pf-ref} and the definition of Euler characteristic for a fin
   \left(\sum_j(-1)^j c_j(N)\right)\\
 &=\chi(M)\chi(N).
 \end{aligned}
-\]
+$$
 All sums are finite because $M$ and $N$ are finite CW complexes.
 
 :::

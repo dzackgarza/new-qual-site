@@ -29,26 +29,26 @@ Given abelian groups $G$ and $H$ and CW complexes $K(G, n)$ and $K(H, n)$, show 
 
 ::: {.solution}
 Representability gives
-\[
+$$
 \langle K(G,n),K(H,n)\rangle
 \cong H^n(K(G,n);H).
-\]
-Since \(K(G,n)\) is \((n-1)\)-connected, Hurewicz gives
-\[
+$$
+Since $K(G,n)$ is $(n-1)$-connected, Hurewicz gives
+$$
 H_n(K(G,n);\ZZ)\cong\pi_n(K(G,n))\cong G,
-\]
-and \(H_{n-1}=0\). The universal coefficient theorem therefore gives
-\[
+$$
+and $H_{n-1}=0$. The universal coefficient theorem therefore gives
+$$
 H^n(K(G,n);H)
 \cong\operatorname{Hom}(H_n(K(G,n)),H)
 \cong\operatorname{Hom}(G,H).
-\]
+$$
 Under these identifications, the class represented by
-\[
+$$
 f:K(G,n)\to K(H,n)
-\]
-is exactly the homomorphism induced on \(\pi_n\), by naturality of Hurewicz and of the representing cohomology class. Thus
-\[
+$$
+is exactly the homomorphism induced on $\pi_n$, by naturality of Hurewicz and of the representing cohomology class. Thus
+$$
 \boxed{\langle K(G,n),K(H,n)\rangle\xrightarrow{\cong}\operatorname{Hom}(G,H),\quad[f]\mapsto f_*.}
-\]
+$$
 :::

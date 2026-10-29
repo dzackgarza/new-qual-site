@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let $f:\CC\to\CC$ be a nonconstant holomorphic function such that every zero of $f$ has even multiplicity.
 Show that $f$ has a holomorphic square root: there exists an entire function $g$ such that
-\[
+$$
 f(z)=g(z)^2
-\]
+$$
 for every $z\in\CC$.
 :::
 

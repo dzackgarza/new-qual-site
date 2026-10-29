@@ -33,9 +33,9 @@ audit:
 Let $T:\CC^n\to\CC^n$ be linear.
 
 1. Prove that $T$ is diagonalizable if, for every $\lambda\in\CC$,
-   \[
+   $$
    \ker(T-\lambda I)^n=\ker(T-\lambda I).
-   \]
+   $$
 2. Show that $T$ is diagonalizable if $T$ commutes with its conjugate transpose $T^*$.
 :::
 

@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Prove that for every $a\in\CC$ and every integer $n\ge2$, the equation
-\[
+$$
 1+z+az^n=0
-\]
+$$
 has at least one root in the disk $|z|\le2$.
 :::
 

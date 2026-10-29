@@ -33,9 +33,9 @@ audit:
 ::: {.problem}
 Let $Y$ be a hypersurface in $X = \PP_k^N$ with $N \geq 4$.
 Let $\hat{X}$ be the formal completion of $X$ along $Y$ (II, §9). Prove that the natural map
-\[
+$$
 \Pic \hat{X} \to \Pic Y
-\]
+$$
 is an isomorphism.
 
 Hint: use (II, Ex.

@@ -46,19 +46,19 @@ Use Fourier inversion to obtain a uniform bound.
 ::: pf-proof
 
 For $f\in\mathcal F$,
-\[
+$$
 \int_{\RR}|\widehat f(k)|\,dk\le1,
-\]
+$$
 so $\widehat f\in L^1(\RR)$. Since also $f\in L^1(\RR)\cap C(\RR)$, the Fourier inversion theorem applies. Thus, with the fixed constant $C_{\mathcal F}>0$ determined by the Fourier-transform normalization,
-\[
+$$
 f(x)=C_{\mathcal F}\int_{\RR}\widehat f(k)e^{ikx}\,dk.
-\]
+$$
 Consequently
-\[
+$$
 |f(x)|
 \le C_{\mathcal F}\int_{\RR}|\widehat f(k)|\,dk
 \le C_{\mathcal F}
-\]
+$$
 for every $x\in\RR$. Hence the restrictions in $\mathcal F_{[a,b]}$ are uniformly bounded.
 
 :::
@@ -72,14 +72,14 @@ Obtain a common modulus of continuity.
 ::: pf-proof
 
 For $x,y\in\RR$,
-\[
+$$
 \begin{aligned}
 |f(x)-f(y)|
 &\le C_{\mathcal F}\int_{\RR}|\widehat f(k)|\,|e^{ikx}-e^{iky}|\,dk\\
 &\le C_{\mathcal F}|x-y|\int_{\RR}|k|\,|\widehat f(k)|\,dk\\
 &\le C_{\mathcal F}|x-y|,
 \end{aligned}
-\]
+$$
 because $|e^{iu}-e^{iv}|\le|u-v|$. Thus every $f\in\mathcal F$ is Lipschitz with the same Lipschitz constant. In particular, $\mathcal F_{[a,b]}$ is equicontinuous.
 
 :::
@@ -93,9 +93,9 @@ Apply Arzelà--Ascoli.
 ::: pf-proof
 
 The interval $[a,b]$ is compact. By Steps 1 and 2, the family $\mathcal F_{[a,b]}\subset C([a,b])$ is uniformly bounded and equicontinuous. The Arzelà--Ascoli theorem therefore implies that its closure in the supremum norm is compact. Equivalently,
-\[
+$$
 \boxed{\mathcal F_{[a,b]}\text{ is precompact in }C([a,b]).}
-\]
+$$
 
 :::
 

@@ -30,41 +30,41 @@ Show that if $\phi$ is an endomorphism of a free $k$-module $E$ of finite rank, 
 $p_\phi(\phi) = 0$.
 
 *Hint: If $A$ is the matrix of $\phi$ and $B = x I_n - A$ then*
-\[
+$$
 B^a B = |B| I_n = p_\phi I_n \in M_n(k[x])
-.\]
+.$$
 *If $E$ is a $k[x]$-module with structure induced by $\phi$, and $\psi$ is the $k[x]$-module endomorphism $E\to E$ with matrix given by $B$, then*
-\[ 
+$$ 
 \psi(u) = x u -\phi(u) = \phi(u) - \phi(u) = 0 && \forall u\in E
-.\]
+.$$
 
 :::
 
 ::: {.solution}
-Let \(E\) be free of rank \(n\), choose a basis, and let \(A\in M_n(k)\) be the
-matrix of \(\phi\). Write
-\[
+Let $E$ be free of rank $n$, choose a basis, and let $A\in M_n(k)$ be the
+matrix of $\phi$. Write
+$$
 p_\phi(x)=\det(xI_n-A).
-\]
-We prove that \(p_\phi(A)=0\), which is equivalent to
-\(p_\phi(\phi)=0\).
+$$
+We prove that $p_\phi(A)=0$, which is equivalent to
+$p_\phi(\phi)=0$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-In \(M_n(k[x])\), the adjugate identity gives
-\[
+In $M_n(k[x])$, the adjugate identity gives
+$$
 \operatorname{adj}(xI_n-A)(xI_n-A)=p_\phi(x)I_n.
-\]
+$$
 
 ::: pf-proof
 
-For every square matrix \(M\) over a commutative ring,
-\[
+For every square matrix $M$ over a commutative ring,
+$$
 \operatorname{adj}(M)M=\det(M)I_n.
-\]
-Apply this to \(M=xI_n-A\) over the polynomial ring \(k[x]\).
+$$
+Apply this to $M=xI_n-A$ over the polynomial ring $k[x]$.
 
 :::
 
@@ -72,19 +72,19 @@ Apply this to \(M=xI_n-A\) over the polynomial ring \(k[x]\).
 
 ::: {.pf-step #s2}
 
-Give \(E\) the structure of a \(k[x]\)-module by letting \(x\) act as
-\(\phi\), let \(e_1,\ldots,e_n\) be the chosen basis with
-\(\phi(e_j)=\sum_i a_{ij}e_i\), and let \(M_n(k[x])\) act on \(E^n\) by
-matrix multiplication on columns. With \(B=xI_n-A\) and
-\(\mathbf e=(e_1,\ldots,e_n)^t\in E^n\), one has \(B^t\mathbf e=0\).
+Give $E$ the structure of a $k[x]$-module by letting $x$ act as
+$\phi$, let $e_1,\ldots,e_n$ be the chosen basis with
+$\phi(e_j)=\sum_i a_{ij}e_i$, and let $M_n(k[x])$ act on $E^n$ by
+matrix multiplication on columns. With $B=xI_n-A$ and
+$\mathbf e=(e_1,\ldots,e_n)^t\in E^n$, one has $B^t\mathbf e=0$.
 
 ::: pf-proof
 
-The \(j\)th entry of \(B^t\mathbf e\) is
-\[
+The $j$th entry of $B^t\mathbf e$ is
+$$
 \sum_{i=1}^n(\delta_{ij}x-a_{ij})e_i=xe_j-\sum_{i=1}^na_{ij}e_i
 =\phi(e_j)-\phi(e_j)=0.
-\]
+$$
 
 :::
 
@@ -92,19 +92,19 @@ The \(j\)th entry of \(B^t\mathbf e\) is
 
 ::: {.pf-step #s3}
 
-Multiplication by \(p_\phi(x)\) on this \(k[x]\)-module is the zero map.
+Multiplication by $p_\phi(x)$ on this $k[x]$-module is the zero map.
 
 ::: pf-proof
 
-Since \(E\) is a module over the commutative ring \(k[x]\), the action of
-\(M_n(k[x])\) on \(E^n\) satisfies \((MN)\mathbf v=M(N\mathbf v)\). Applying
-step [](#s1){.pf-ref} to \(B^t\), whose determinant is also \(p_\phi(x)\), and using step [](#s2){.pf-ref},
-\[
+Since $E$ is a module over the commutative ring $k[x]$, the action of
+$M_n(k[x])$ on $E^n$ satisfies $(MN)\mathbf v=M(N\mathbf v)$. Applying
+step [](#s1){.pf-ref} to $B^t$, whose determinant is also $p_\phi(x)$, and using step [](#s2){.pf-ref},
+$$
 p_\phi(x)\mathbf e=\operatorname{adj}(B^t)B^t\mathbf e
 =\operatorname{adj}(B^t)\,0=0.
-\]
-Thus \(p_\phi(x)e_i=0\) for every basis vector \(e_i\), and since the
-\(e_i\) generate \(E\), \(p_\phi(x)u=0\) for every \(u\in E\).
+$$
+Thus $p_\phi(x)e_i=0$ for every basis vector $e_i$, and since the
+$e_i$ generate $E$, $p_\phi(x)u=0$ for every $u\in E$.
 
 :::
 
@@ -112,22 +112,22 @@ Thus \(p_\phi(x)e_i=0\) for every basis vector \(e_i\), and since the
 
 ::: pf-step
 
-Therefore \(p_\phi(\phi)=0\).
+Therefore $p_\phi(\phi)=0$.
 
 ::: pf-proof
 
-By definition of the \(k[x]\)-module structure, multiplication by a polynomial
-\[
+By definition of the $k[x]$-module structure, multiplication by a polynomial
+$$
 a_0+a_1x+\cdots+a_mx^m
-\]
+$$
 acts as
-\[
+$$
 a_0I+a_1\phi+\cdots+a_m\phi^m.
-\]
-Hence the zero action of \(p_\phi(x)\) from step [](#s3){.pf-ref} is exactly the identity
-\[
+$$
+Hence the zero action of $p_\phi(x)$ from step [](#s3){.pf-ref} is exactly the identity
+$$
 p_\phi(\phi)=0.
-\]
+$$
 
 :::
 

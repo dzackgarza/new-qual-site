@@ -23,14 +23,14 @@ audit:
 
 ::: {.problem}
 Let $f$ be analytic in the unit disk $|z|<1$. Assume that there is a constant $M>0$ such that
-\[
+$$
 \int_0^{2\pi}|f'(re^{i\theta})|\,d\theta\le M
 \qquad(0\le r<1).
-\]
+$$
 Prove that
-\[
+$$
 \int_0^1|f(x)|\,dx<\infty.
-\]
+$$
 :::
 
 ::: {.solution}

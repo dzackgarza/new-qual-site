@@ -23,11 +23,11 @@ Find a metric $\rho$ on $X$ such that:
 1. $(X,\rho)$ is complete;
 
 2. for every sequence $\{x_n\}\subset X$ and every $x\in X$,
-\[
+$$
 \lim_{n\to\infty}|x_n-x|=0
 \quad\Longleftrightarrow\quad
 x_n\to x\text{ in }(X,\rho).
-\]
+$$
 
 Prove both properties, together with all other assertions used in your construction.
 :::
@@ -35,7 +35,7 @@ Prove both properties, together with all other assertions used in your construct
 ::: {.solution}
 
 Define
-\[
+$$
 \boxed{
 \rho(x,y)
 =
@@ -45,7 +45,7 @@ Define
 },
 \qquad
 x,y\in X.
-\]
+$$
 
 ::: pf
 
@@ -59,39 +59,39 @@ The function $\rho$ is a metric on $X$.
 Nonnegativity and symmetry are immediate.
 
 If
-\[
+$$
 \rho(x,y)=0,
-\]
+$$
 then in particular
-\[
+$$
 |x-y|=0,
-\]
+$$
 so $x=y$.
 Conversely,
-\[
+$$
 \rho(x,x)=0.
-\]
+$$
 
 For the triangle inequality, if $x,y,z\in X$, then
-\[
+$$
 |x-z|
 \le
 |x-y|+|y-z|
-\]
+$$
 and
-\[
+$$
 \left|\frac1x-\frac1z\right|
 \le
 \left|\frac1x-\frac1y\right|
 +
 \left|\frac1y-\frac1z\right|.
-\]
+$$
 Adding the two inequalities gives
-\[
+$$
 \rho(x,z)
 \le
 \rho(x,y)+\rho(y,z).
-\]
+$$
 Thus $\rho$ is a metric.
 
 :::
@@ -101,23 +101,23 @@ Thus $\rho$ is a metric.
 ::: {.pf-step #s1-2}
 
 If
-\[
+$$
 x_n\to x
-\]
+$$
 in the metric $\rho$, then
-\[
+$$
 |x_n-x|\to0.
-\]
+$$
 
 
 ::: pf-proof
 
 By definition,
-\[
+$$
 |x_n-x|
 \le
 \rho(x_n,x).
-\]
+$$
 Hence convergence in $\rho$ implies ordinary convergence.
 
 :::
@@ -127,31 +127,31 @@ Hence convergence in $\rho$ implies ordinary convergence.
 ::: {.pf-step #s1-3}
 
 If
-\[
+$$
 |x_n-x|\to0
-\]
+$$
 for some $x\in X$, then
-\[
+$$
 \left|\frac1{x_n}-\frac1x\right|\to0.
-\]
+$$
 
 
 ::: pf-proof
 
 Since $x\ne0$, choose $N$ such that for $n\ge N$,
-\[
+$$
 |x_n-x|<\frac{|x|}{2}.
-\]
+$$
 Then
-\[
+$$
 |x_n|
 \ge
 |x|-|x_n-x|
 >
 \frac{|x|}{2}.
-\]
+$$
 Therefore, for $n\ge N$,
-\[
+$$
 \left|
 \frac1{x_n}-\frac1x
 \right|
@@ -159,7 +159,7 @@ Therefore, for $n\ge N$,
 \frac{|x_n-x|}{|x_nx|}
 \le
 \frac{2}{|x|^2}|x_n-x|.
-\]
+$$
 The right side tends to $0$.
 
 :::
@@ -169,19 +169,19 @@ The right side tends to $0$.
 ::: {.pf-step #s1-4}
 
 Ordinary convergence to a point of $X$ is equivalent to convergence in $\rho$:
-\[
+$$
 \boxed{
 |x_n-x|\to0
 \iff
 \rho(x_n,x)\to0
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 The forward implication follows from step [](#s1-3){.pf-ref}:
-\[
+$$
 \rho(x_n,x)
 =
 |x_n-x|
@@ -190,7 +190,7 @@ The forward implication follows from step [](#s1-3){.pf-ref}:
 \frac1{x_n}-\frac1x
 \right|
 \longrightarrow0.
-\]
+$$
 The reverse implication is step [](#s1-2){.pf-ref}.
 
 :::
@@ -201,30 +201,30 @@ The reverse implication is step [](#s1-2){.pf-ref}.
 
 Let $(x_n)$ be a $\rho$-Cauchy sequence.
 Then both real sequences
-\[
+$$
 (x_n)
 \qquad\text{and}\qquad
 \left(\frac1{x_n}\right)
-\]
+$$
 are Cauchy in $\RR$.
 
 
 ::: pf-proof
 
 For all $m,n$,
-\[
+$$
 |x_n-x_m|
 \le
 \rho(x_n,x_m)
-\]
+$$
 and
-\[
+$$
 \left|
 \frac1{x_n}-\frac1{x_m}
 \right|
 \le
 \rho(x_n,x_m).
-\]
+$$
 Thus the Cauchy property for $\rho$ implies the ordinary Cauchy property for each coordinate sequence.
 
 :::
@@ -234,11 +234,11 @@ Thus the Cauchy property for $\rho$ implies the ordinary Cauchy property for eac
 ::: {.pf-step #s1-6}
 
 There exist real numbers $a,b$ such that
-\[
+$$
 x_n\to a
 \qquad\text{and}\qquad
 \frac1{x_n}\to b.
-\]
+$$
 
 
 ::: pf-proof
@@ -252,25 +252,25 @@ The real line is complete, and both sequences are Cauchy by step [](#s1-5){.pf-r
 ::: {.pf-step #s1-7}
 
 One has
-\[
+$$
 ab=1.
-\]
+$$
 
 
 ::: pf-proof
 
 For every $n$,
-\[
+$$
 x_n\cdot\frac1{x_n}=1.
-\]
+$$
 Multiplication is continuous, so using the limits from step [](#s1-6){.pf-ref} gives
-\[
+$$
 ab
 =
 \lim_{n\to\infty}
 x_n\frac1{x_n}
 =1.
-\]
+$$
 
 :::
 
@@ -279,26 +279,26 @@ x_n\frac1{x_n}
 ::: {.pf-step #s1-8}
 
 In particular,
-\[
+$$
 a\ne0,
-\]
+$$
 so $a\in X$, and
-\[
+$$
 b=\frac1a.
-\]
+$$
 
 
 ::: pf-proof
 
 The identity
-\[
+$$
 ab=1
-\]
+$$
 from step [](#s1-7){.pf-ref} rules out $a=0$.
 Solving for $b$ gives
-\[
+$$
 b=1/a.
-\]
+$$
 
 :::
 
@@ -312,18 +312,18 @@ The sequence $(x_n)$ converges to $a$ in the metric $\rho$.
 ::: pf-proof
 
 By steps [](#s1-6){.pf-ref} and [](#s1-8){.pf-ref},
-\[
+$$
 |x_n-a|\to0
-\]
+$$
 and
-\[
+$$
 \left|
 \frac1{x_n}-\frac1a
 \right|
 \to0.
-\]
+$$
 Therefore
-\[
+$$
 \rho(x_n,a)
 =
 |x_n-a|
@@ -332,7 +332,7 @@ Therefore
 \frac1{x_n}-\frac1a
 \right|
 \longrightarrow0.
-\]
+$$
 
 :::
 
@@ -341,9 +341,9 @@ Therefore
 ::: {.pf-step #s1-10}
 
 Hence
-\[
+$$
 \boxed{(X,\rho)\text{ is complete}}.
-\]
+$$
 
 
 ::: pf-proof

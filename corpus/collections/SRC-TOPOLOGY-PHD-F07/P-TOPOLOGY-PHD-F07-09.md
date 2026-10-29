@@ -46,11 +46,11 @@ The subspace $A$ is Hausdorff.
 ::: pf-proof
 Take distinct points $a,b\in A$.
 Since $X$ is Hausdorff, there are disjoint open sets $U,V\subseteq X$ with
-\[
+$$
 a\in U,
 \qquad
 b\in V.
-\]
+$$
 Then $U\cap A$ and $V\cap A$ are disjoint open neighborhoods of $a$ and $b$ in the subspace topology on $A$.
 Thus $A$ is Hausdorff.
 :::
@@ -60,9 +60,9 @@ Thus $A$ is Hausdorff.
 ::: {.pf-step #compact-nbhd-exists}
 Fix $a\in A$.
 There is a compact neighborhood $K$ of $a$ in $X$ and an open set $U\subseteq X$ such that
-\[
+$$
 a\in U\subseteq K.
-\]
+$$
 
 ::: pf-proof
 Since $X$ is locally compact, $a$ has a compact neighborhood $K$.
@@ -76,9 +76,9 @@ The set $K\cap A$ is compact.
 
 ::: pf-proof
 Because $A$ is closed in $X$, the intersection
-\[
+$$
 K\cap A
-\]
+$$
 is closed in the subspace $K$.
 A closed subspace of a compact space is compact, and $K$ is compact by step [](#compact-nbhd-exists){.pf-ref}. Therefore $K\cap A$ is compact.
 :::
@@ -90,13 +90,13 @@ The set $K\cap A$ is a neighborhood of $a$ in the subspace $A$.
 
 ::: pf-proof
 By step [](#compact-nbhd-exists){.pf-ref},
-\[
+$$
 a\in U\subseteq K.
-\]
+$$
 Hence
-\[
+$$
 a\in U\cap A\subseteq K\cap A.
-\]
+$$
 The set $U\cap A$ is open in $A$ by the definition of the subspace topology.
 Thus $K\cap A$ contains an open neighborhood of $a$ in $A$, so it is a neighborhood of $a$ in $A$.
 :::

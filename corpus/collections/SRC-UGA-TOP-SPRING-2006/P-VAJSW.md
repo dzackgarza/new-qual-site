@@ -56,39 +56,39 @@ Since $F$ and $G$ are closed subsets of the compact space $X$, each is compact.
 ::: {.pf-step #s2}
 
 For every $x\in F$ there are disjoint open sets $U_x,V_x\subseteq X$ such that
-\[
+$$
 x\in U_x
 \qquad\text{and}\qquad
 G\subseteq V_x.
-\]
+$$
 
 ::: pf-proof
 
 Fix $x\in F$.
 For each $y\in G$, Hausdorffness gives disjoint open neighborhoods
-\[
+$$
 x\in U_{x,y},
 \qquad
 y\in V_{x,y}.
-\]
+$$
 The family $\{V_{x,y}:y\in G\}$ is an open cover of the compact set $G$.
 Choose $y_1,\ldots,y_r\in G$ such that
-\[
+$$
 G\subseteq\bigcup_{i=1}^r V_{x,y_i}.
-\]
+$$
 Set
-\[
+$$
 U_x=\bigcap_{i=1}^r U_{x,y_i},
 \qquad
 V_x=\bigcup_{i=1}^r V_{x,y_i}.
-\]
+$$
 These sets are open, $x\in U_x$, and $G\subseteq V_x$.
 
 If $z\in U_x\cap V_x$, then $z\in V_{x,y_i}$ for some $i$, while $z\in U_x\subseteq U_{x,y_i}$.
 This contradicts
-\[
+$$
 U_{x,y_i}\cap V_{x,y_i}=\varnothing.
-\]
+$$
 Thus $U_x\cap V_x=\varnothing$.
 
 :::
@@ -98,25 +98,25 @@ Thus $U_x\cap V_x=\varnothing$.
 ::: {.pf-step #s3}
 
 There are disjoint open sets $U,V\subseteq X$ with
-\[
+$$
 F\subseteq U,
 \qquad
 G\subseteq V.
-\]
+$$
 
 ::: pf-proof
 
 The sets $\{U_x:x\in F\}$ from step [](#s2){.pf-ref} form an open cover of the compact set $F$.
 Choose $x_1,\ldots,x_m\in F$ such that
-\[
+$$
 F\subseteq\bigcup_{j=1}^m U_{x_j}.
-\]
+$$
 Define
-\[
+$$
 U=\bigcup_{j=1}^m U_{x_j},
 \qquad
 V=\bigcap_{j=1}^m V_{x_j}.
-\]
+$$
 Both are open; $F\subseteq U$; and, since $G\subseteq V_{x_j}$ for every $j$, one has $G\subseteq V$.
 
 If $z\in U\cap V$, then $z\in U_{x_j}$ for some $j$, while $z\in V\subseteq V_{x_j}$.

@@ -67,29 +67,29 @@ The fundamental group $G = \pi_1(M)$ acts freely on $\widehat{M}$ as the group o
 Let $g \in G$ with $g \neq e$.
 Because the action of $G$ is free, $g$ has no fixed points on $\widehat{M}$.
 By the Lefschetz Fixed Point Theorem, the Lefschetz number of $g$ must vanish:
-\[
+$$
 \Lambda(g) = 0.
-\]
+$$
 :::
 
 ::: pf-step
 Compute the Lefschetz number of $g$:
-\[
+$$
 \Lambda(g) = \operatorname{tr}\left(g_* \big|_{H_0(\widehat{M})}\right) - \operatorname{tr}\left(g_* \big|_{H_1(\widehat{M})}\right) + \operatorname{tr}\left(g_* \big|_{H_2(\widehat{M})}\right) - \operatorname{tr}\left(g_* \big|_{H_3(\widehat{M})}\right).
-\]
+$$
 Since $H_0(\widehat{M}) \cong \ZZ$ and $g$ preserves the single connected component, $g_*|_{H_0} = 1$.
 On top homology $H_3(\widehat{M}) \cong \ZZ$, $g_*|_{H_3} = \deg(g) \in \{\pm 1\}$.
 Thus:
-\[
+$$
 \Lambda(g) = 1 - 0 + 0 - \deg(g) = 1 - \deg(g).
-\]
+$$
 :::
 
 ::: pf-step
 Setting $\Lambda(g) = 0$ gives $1 - \deg(g) = 0$, so:
-\[
+$$
 \deg(g) = +1 \quad \text{for every } g \in G.
-\]
+$$
 :::
 
 :::

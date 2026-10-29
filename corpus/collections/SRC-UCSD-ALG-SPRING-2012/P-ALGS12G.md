@@ -41,14 +41,14 @@ The field $K(\alpha)$ has $q^d$ elements.
 ::: pf-proof
 
 Because $f$ is irreducible of degree $d$, it is the minimal polynomial of $\alpha$ over $K$, so
-\[
+$$
 [K(\alpha):K]=d.
-\]
+$$
 Since $|K|=q$, the finite extension $K(\alpha)$ therefore has $q^d$ elements.
 Thus
-\[
+$$
 K(\alpha)\cong \mathbf F_{q^d}.
-\]
+$$
 
 :::
 
@@ -57,9 +57,9 @@ K(\alpha)\cong \mathbf F_{q^d}.
 ::: {.pf-step #s2}
 
 We have
-\[
+$$
 f\mid x^{q^n}-x
-\]
+$$
 if and only if $\alpha\in \mathbf F_{q^n}$.
 
 ::: pf-proof
@@ -80,11 +80,11 @@ Hence $f\mid x^{q^n}-x$.
 ::: {.pf-step #s3}
 
 We have
-\[
+$$
 \mathbf F_{q^d}\subseteq \mathbf F_{q^n}
 \quad\Longleftrightarrow\quad
  d\mid n.
-\]
+$$
 
 ::: pf-proof
 
@@ -93,10 +93,10 @@ Every $a\in\mathbf F_{q^d}$ satisfies $a^{q^d}=a$, hence iterating Frobenius giv
 
 Conversely, suppose $\mathbf F_{q^d}\subseteq\mathbf F_{q^n}$.
 Then by the tower law,
-\[
+$$
 n=[\mathbf F_{q^n}:\mathbf F_q]
   =[\mathbf F_{q^n}:\mathbf F_{q^d}]\,[\mathbf F_{q^d}:\mathbf F_q],
-\]
+$$
 so $d$ divides $n$.
 
 :::
@@ -106,18 +106,18 @@ so $d$ divides $n$.
 ::: pf-step
 
 Therefore
-\[
+$$
 f\mid x^{q^n}-x
 \quad\Longleftrightarrow\quad
 \deg f\mid n.
-\]
+$$
 
 ::: pf-proof
 
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, divisibility is equivalent to
-\[
+$$
 K(\alpha)=\mathbf F_{q^d}\subseteq\mathbf F_{q^n}.
-\]
+$$
 Apply step [](#s3){.pf-ref}.
 
 :::

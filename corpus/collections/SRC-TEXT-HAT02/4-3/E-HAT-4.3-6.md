@@ -30,31 +30,31 @@ Show also that the H-space multiplication $\mu$ is unique up to homotopy.
 
 ::: {.solution}
 By Exercise 4, homotopy classes of maps
-\[
+$$
 K(G,n)\times K(G,n)\to K(G,n)
-\]
+$$
 are classified by homomorphisms
-\[
+$$
 \pi_n(K(G,n)\times K(G,n))=G\oplus G\to G.
-\]
-Choose \(\mu\) corresponding to addition
-\[
+$$
+Choose $\mu$ corresponding to addition
+$$
 (a,b)\mapsto a+b.
-\]
-Its restrictions to the two factors induce the identity on \(G\), hence are homotopic to the identity map. Thus \(\mu\) is an H-space multiplication.
+$$
+Its restrictions to the two factors induce the identity on $G$, hence are homotopic to the identity map. Thus $\mu$ is an H-space multiplication.
 
 The maps
-\[
+$$
 \mu(\mu\times1),\qquad \mu(1\times\mu):K^3\to K
-\]
-both induce \((a,b,c)\mapsto a+b+c\) on \(\pi_n\), so Exercise 4 makes them homotopic. Likewise \(\mu\) and \(\mu\tau\) both induce \(a+b\), so multiplication is homotopy-commutative. The map corresponding to
-\[
+$$
+both induce $(a,b,c)\mapsto a+b+c$ on $\pi_n$, so Exercise 4 makes them homotopic. Likewise $\mu$ and $\mu\tau$ both induce $a+b$, so multiplication is homotopy-commutative. The map corresponding to
+$$
 a\mapsto-a
-\]
+$$
 is a homotopy inverse.
 
-Finally any H-space multiplication on \(K(G,n)\) restricts to the identity on both factors, hence induces addition \(G\oplus G\to G\). Exercise 4 therefore implies that it is homotopic to \(\mu\). Thus
-\[
+Finally any H-space multiplication on $K(G,n)$ restricts to the identity on both factors, hence induces addition $G\oplus G\to G$. Exercise 4 therefore implies that it is homotopic to $\mu$. Thus
+$$
 \boxed{K(G,n)\text{ has a unique H-space multiplication up to homotopy, with the stated properties}.}
-\]
+$$
 :::

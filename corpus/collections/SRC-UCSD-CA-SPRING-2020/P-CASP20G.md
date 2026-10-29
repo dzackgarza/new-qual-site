@@ -21,11 +21,11 @@ Show that every sequence in $\mathcal{H}$ admits a subsequence that converges un
 
 ::: {.solution}
 Harnack's inequality gives, for $h\in\mathcal H$ and $|z|\le r<1$,
-\[
+$$
 \frac{1-r}{1+r}
 \le h(z)\le
 \frac{1+r}{1-r},
-\]
+$$
 because $h(0)=1$. Thus the family is uniformly bounded above and below on
 every compact subset of $\DD$.
 

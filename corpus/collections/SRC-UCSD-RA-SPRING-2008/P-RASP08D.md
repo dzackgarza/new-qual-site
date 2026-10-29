@@ -50,21 +50,21 @@ Prove shift invariance of the Cesaro-limit subspace.
 ::: pf-proof
 
 For $x\in\ell^\infty$,
-\[
+$$
 \begin{aligned}
 f_n(\tau x)-f_n(x)
 &=\frac{x(2)+\cdots+x(n+1)}n-\frac{x(1)+\cdots+x(n)}n\\
 &=\frac{x(n+1)-x(1)}n.
 \end{aligned}
-\]
+$$
 Since $x$ is bounded, the right-hand side tends to $0$. Therefore, whenever $f_n(x)$ converges, $f_n(\tau x)$ converges to the same limit. Thus
-\[
+$$
 \tau(M)\subseteq M
-\]
+$$
 and
-\[
+$$
 \boxed{f(\tau x)=f(x)\qquad(x\in M).}
-\]
+$$
 
 :::
 
@@ -77,34 +77,34 @@ Define the sublinear dominating functional.
 ::: pf-proof
 
 For $x\in\ell^\infty$, set
-\[
+$$
 p(x):=\limsup_{n\to\infty}x(n).
-\]
+$$
 Then for $x,y\in\ell^\infty$ and $\lambda\ge0$,
-\[
+$$
 p(x+y)\le p(x)+p(y),
 \qquad
 p(\lambda x)=\lambda p(x),
-\]
+$$
 so $p$ is sublinear.
 
 If $x\in M$ and
-\[
+$$
 f(x)=\lim_{n\to\infty}\frac1n\sum_{k=1}^n x(k)=L,
-\]
+$$
 then
-\[
+$$
 \liminf_{n\to\infty}x(n)\le L\le\limsup_{n\to\infty}x(n).
-\]
+$$
 Indeed, for every $\varepsilon>0$, all sufficiently late terms satisfy
-\[
+$$
 x(n)\le p(x)+\varepsilon,
-\]
+$$
 and the finitely many earlier terms contribute $o(1)$ to the Cesaro averages; hence $L\le p(x)$. Applying this to $-x$ gives the lower bound. In particular,
-\[
+$$
 f(x)\le p(x)
 \qquad(x\in M).
-\]
+$$
 
 :::
 
@@ -117,35 +117,35 @@ Apply the Hahn--Banach theorem.
 ::: pf-proof
 
 By the real Hahn--Banach theorem in dominated form, there exists a linear functional
-\[
+$$
 F:\ell^\infty\to\RR
-\]
+$$
 such that
-\[
+$$
 F|_M=f
 \qquad\text{and}\qquad
 F(x)\le p(x)=\limsup_{n\to\infty}x(n)
-\]
+$$
 for every $x\in\ell^\infty$.
 
 Applying this upper bound to $-x$ gives
-\[
+$$
 -F(x)=F(-x)
 \le \limsup_{n\to\infty}(-x(n))
 =-\liminf_{n\to\infty}x(n).
-\]
+$$
 Therefore
-\[
+$$
 \liminf_{n\to\infty}x(n)\le F(x)\le\limsup_{n\to\infty}x(n).
-\]
+$$
 Hence
-\[
+$$
 \boxed{
 F|_M=f,
 \qquad
 \liminf x(n)\le F(x)\le\limsup x(n)
 }
-\]
+$$
 for every bounded real sequence $x$.
 
 :::

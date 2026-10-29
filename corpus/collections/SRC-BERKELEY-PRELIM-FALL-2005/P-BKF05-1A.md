@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let \(M\) be a compact metric space and let \((U_i)_{i\in I}\) be an open cover of \(M\). Show that there exists \(\varepsilon>0\) such that whenever \(x,y\in M\) satisfy \(d(x,y)<\varepsilon\), there is some \(j\in I\) with \(x,y\in U_j\).
+Let $M$ be a compact metric space and let $(U_i)_{i\in I}$ be an open cover of $M$. Show that there exists $\varepsilon>0$ such that whenever $x,y\in M$ satisfy $d(x,y)<\varepsilon$, there is some $j\in I$ with $x,y\in U_j$.
 :::
 
 ::: {.solution}

@@ -39,21 +39,21 @@ Let $G$ and $H$ be a finite groups, $A:G\to GL(n,\CC)$ be a representation of $G
 ::: pf-step
 Let $V=\CC^n$ and $W=\CC^m$ be the representation spaces of $A$ and $B$.
 Define
-\[
+$$
 (A\times B)(g,h)=A(g)\otimes B(h)
-\]
+$$
 on $V\otimes_{\CC}W$.
 
 ::: pf-proof
 For $(g_1,h_1),(g_2,h_2)\in G\times H$,
-\[
+$$
 \begin{aligned}
 (A\times B)(g_1g_2,h_1h_2)
  &=A(g_1g_2)\otimes B(h_1h_2)\\
  &=(A(g_1)A(g_2))\otimes(B(h_1)B(h_2))\\
  &=(A(g_1)\otimes B(h_1))(A(g_2)\otimes B(h_2)).
 \end{aligned}
-\]
+$$
 Also $(A\times B)(1,1)=I_V\otimes I_W$, so this is a representation of dimension $nm$.
 :::
 
@@ -61,15 +61,15 @@ Also $(A\times B)(1,1)=I_V\otimes I_W$, so this is a representation of dimension
 
 ::: {.pf-step #character-of-a-times-b}
 Its character is
-\[
+$$
 \chi_{A\times B}(g,h)=\chi_A(g)\chi_B(h).
-\]
+$$
 
 ::: pf-proof
 For square matrices $X,Y$ one has
-\[
+$$
 \operatorname{tr}(X\otimes Y)=\operatorname{tr}(X)\operatorname{tr}(Y).
-\]
+$$
 Apply this with $X=A(g)$ and $Y=B(h)$.
 :::
 
@@ -81,7 +81,7 @@ If $A$ and $B$ are irreducible, then $A\times B$ is irreducible.
 ::: pf-proof
 Over $\CC$, a finite-group representation is irreducible iff the inner product of its character with itself is $1$.
 Using step [](#character-of-a-times-b){.pf-ref},
-\[
+$$
 \begin{aligned}
 \langle\chi_{A\times B},\chi_{A\times B}\rangle_{G\times H}
 &=\frac1{|G||H|}\sum_{g\in G}\sum_{h\in H}
@@ -90,7 +90,7 @@ Using step [](#character-of-a-times-b){.pf-ref},
   \langle\chi_B,\chi_B\rangle_H\\
 &=1.
 \end{aligned}
-\]
+$$
 Thus $A\times B$ is irreducible.
 :::
 
@@ -98,12 +98,12 @@ Thus $A\times B$ is irreducible.
 
 ::: {.pf-step #inner-product-of-external-products}
 If $A_1,A_2$ are irreducible representations of $G$ and $B_1,B_2$ are irreducible representations of $H$, then
-\[
+$$
 \langle\chi_{A_1\times B_1},\chi_{A_2\times B_2}\rangle_{G\times H}
 =
 \langle\chi_{A_1},\chi_{A_2}\rangle_G
 \langle\chi_{B_1},\chi_{B_2}\rangle_H.
-\]
+$$
 
 ::: pf-proof
 The same separation of the double sum used in step [](#a-times-b-irreducible){.pf-ref} gives the displayed equality.
@@ -128,17 +128,17 @@ These external products exhaust all irreducible representations of $G\times H$.
 Let $k(K)$ denote the number of conjugacy classes of a finite group $K$.
 Two pairs $(g,h)$ and $(g',h')$ are conjugate in $G\times H$ iff $g$ is conjugate to $g'$ in $G$ and $h$ is conjugate to $h'$ in $H$.
 Hence
-\[
+$$
 k(G\times H)=k(G)k(H).
-\]
+$$
 For every finite group over $\CC$, the number of irreducible representations equals the number of conjugacy classes.
 Therefore
-\[
+$$
 |\operatorname{Irr}(G\times H)|
 =k(G\times H)
 =k(G)k(H)
 =|\operatorname{Irr}(G)|\,|\operatorname{Irr}(H)|.
-\]
+$$
 By step [](#external-products-pairwise-noniso){.pf-ref} we already have exactly this many pairwise nonisomorphic irreducible external products.
 Thus every irreducible representation of $G\times H$ is of the form $A\times B$.
 :::

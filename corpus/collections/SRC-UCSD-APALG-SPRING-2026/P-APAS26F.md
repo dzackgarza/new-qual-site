@@ -52,9 +52,9 @@ Hence $\mathcal{B}$ is maximal commutative.
 Suppose for contradiction that there exists $x \in C_\mathcal{A}(\mathcal{B}) \setminus \mathcal{B}$.
 Consider the subalgebra $\mathcal{B}[x] = \{ \sum_{k=0}^m b_k x^k \mid b_k \in \mathcal{B}, \, m \in \NN \}$.
 Because $x$ commutes with all elements of $\mathcal{B}$ and powers of $x$ commute with each other, any two elements of $\mathcal{B}[x]$ commute:
-\[
+$$
 \left(\sum_{k} b_k x^k\right) \left(\sum_{j} c_j x^j\right) = \sum_{k, j} b_k c_j x^{k+j} = \left(\sum_{j} c_j x^j\right) \left(\sum_{k} b_k x^k\right).
-\]
+$$
 Thus $\mathcal{B}[x]$ is a commutative subalgebra of $\mathcal{A}$ strictly containing $\mathcal{B}$, contradicting the maximality of $\mathcal{B}$.
 Therefore $\mathcal{B} = C_\mathcal{A}(\mathcal{B})$.
 :::
@@ -71,17 +71,17 @@ Classification of maximal commutative $*$-subalgebras of $\operatorname{End}(V)$
 ::: pf-step
 Let $V$ be an $n$-dimensional Hilbert space ($n = \dim V$).
 By the Spectral Theorem, any commutative $*$-subalgebra $\mathcal{B} \subset \operatorname{End}(V)$ is simultaneously diagonalizable: there exists an orthogonal decomposition:
-\[
+$$
 V = V_1 \oplus V_2 \oplus \cdots \oplus V_k
-\]
+$$
 such that every $T \in \mathcal{B}$ acts as a scalar multiple $\lambda_i(T) \operatorname{id}_{V_i}$ on each eigenspace $V_i$.
 :::
 
 ::: pf-step
 The centralizer of $\mathcal{B}$ in $\operatorname{End}(V)$ consists of all operators preserving this decomposition:
-\[
+$$
 C_{\operatorname{End}(V)}(\mathcal{B}) \cong \bigoplus_{i=1}^k \operatorname{End}(V_i).
-\]
+$$
 :::
 
 ::: pf-step
@@ -92,9 +92,9 @@ Thus $k = n$, and $V = \CC e_1 \oplus \cdots \oplus \CC e_n$ for an orthonormal 
 
 ::: pf-step
 Therefore the maximal commutative $*$-subalgebras of $\operatorname{End}(V)$ are precisely the algebras of operators diagonalized by an orthonormal basis of $V$:
-\[
+$$
 \mathcal{D}_\mathcal{E} = \{ T \in \operatorname{End}(V) \mid [T]_\mathcal{E} \text{ is diagonal} \} \cong \CC^n.
-\]
+$$
 :::
 
 :::

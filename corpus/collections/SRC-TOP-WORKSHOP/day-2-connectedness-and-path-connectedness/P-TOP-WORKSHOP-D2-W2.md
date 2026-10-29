@@ -38,15 +38,15 @@ The interval $[0,1]$ is connected.
 ::: pf-proof
 
 Suppose instead that
-\[
+$$
 [0,1]=U\cup V
-\]
+$$
 with $U$ and $V$ disjoint nonempty sets open in the subspace topology.
 Choose $u\in U$ and $v\in V$ with $u<v$ after exchanging the names if necessary.
 Let
-\[
+$$
 s=\sup\bigl(U\cap[u,v]\bigr).
-\]
+$$
 Then $u\le s\le v$.
 
 If $s\in U$, openness of $U$ gives an interval around $s$ contained in $U$ relative to $[0,1]$; since $s<v$, this produces a point of $U\cap[u,v]$ larger than $s$, contradicting the definition of $s$.
@@ -63,9 +63,9 @@ Therefore no such separation exists.
 
 Suppose for contradiction that the path-connected space $X$ is disconnected.
 Then there are disjoint nonempty open sets $U,V\subseteq X$ with
-\[
+$$
 X=U\cup V.
-\]
+$$
 
 ::: pf-proof
 
@@ -78,9 +78,9 @@ This is the definition of disconnectedness.
 ::: pf-step
 
 Choose $x\in U$ and $y\in V$, and let
-\[
+$$
 \gamma:[0,1]\to X
-\]
+$$
 be a path from $x$ to $y$.
 
 ::: pf-proof
@@ -100,11 +100,11 @@ The sets $\gamma^{-1}(U)$ and $\gamma^{-1}(V)$ form a separation of $[0,1]$.
 They are open because $\gamma$ is continuous.
 They are disjoint because $U$ and $V$ are disjoint, and together they cover $[0,1]$ because $U\cup V=X$.
 They are both nonempty since
-\[
+$$
 0\in\gamma^{-1}(U),
 \qquad
 1\in\gamma^{-1}(V).
-\]
+$$
 
 :::
 

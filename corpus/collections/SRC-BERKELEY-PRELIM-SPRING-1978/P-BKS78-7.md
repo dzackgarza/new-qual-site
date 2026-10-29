@@ -12,9 +12,9 @@ audit:
 
 ::: {.problem}
 Find the volume enclosed by
-\[
+$$
 \frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1.
-\]
+$$
 :::
 
 ::: {.solution}

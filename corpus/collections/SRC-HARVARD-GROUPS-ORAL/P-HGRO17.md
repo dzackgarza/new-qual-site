@@ -34,9 +34,9 @@ $K=\QQ(\alpha)$ for some algebraic $\alpha$, and because $K/\QQ$ is
 normal, $K$ is the splitting field of the minimal polynomial of $\alpha$.
 Thus the formulation in terms of splitting fields is equivalent to asking
 whether every finite group is realizable as
-\[
+$$
 \operatorname{Gal}(K/\QQ)
-\]
+$$
 for some finite Galois extension $K/\QQ$.
 
 Many classes of finite groups are known to occur, but no proof or counterexample

@@ -37,9 +37,9 @@ Prove that $G$ has two normal subgroups $N_1 \subseteq N_2$ such that $|N_2| = p
 ::: {.pf-step #s1}
 
 The sign of the left regular action defines a surjective homomorphism
-\[
+$$
 \varepsilon:G\longrightarrow\{1,-1\}.
-\]
+$$
 
 ::: pf-proof
 
@@ -50,9 +50,9 @@ There is an element $t\ne1$ with $t^2=1$: otherwise the $2pq-1$ nonidentity elem
 The permutation $L_t$ has no fixed points, since $th=h$ would imply $t=1$, and $L_t^2$ is the identity.
 It is therefore a product of $pq$ disjoint transpositions.
 As $pq$ is odd,
-\[
+$$
 \varepsilon(t)=(-1)^{pq}=-1,
-\]
+$$
 so $\varepsilon$ is surjective.
 
 :::
@@ -79,9 +79,9 @@ The unique Sylow $q$-subgroup $N_1$ of $N_2$ is normal in $G$ and has order $q$.
 ::: pf-proof
 
 By the Sylow theorems, the number $n_q$ of Sylow $q$-subgroups of $N_2$ satisfies
-\[
+$$
 n_q\mid p,\qquad n_q\equiv1\pmod q.
-\]
+$$
 Its only possible values are $1$ and $p$.
 Since $1<p<q$, the second value is not congruent to $1$ modulo $q$.
 Thus $n_q=1$; write $N_1$ for this unique subgroup, which has order $q$.

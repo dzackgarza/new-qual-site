@@ -25,9 +25,9 @@ audit:
 ::: {.problem}
 1. Prove that an entire function with positive real part is constant.
 2. Prove the analogous result for $2\times2$ matrix functions: if
-   \[
+   $$
    F(z)=(f_{jk}(z))
-   \]
+   $$
    has entire entries and $F(z)+F(z)^*$ is positive definite for every $z\in\CC$, prove that $F$ is constant.
 :::
 

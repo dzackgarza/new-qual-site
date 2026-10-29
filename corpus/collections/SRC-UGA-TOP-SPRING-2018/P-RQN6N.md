@@ -39,20 +39,20 @@ The statement is false.
 ::: {.pf-step #s1}
 
 Define the antipodal map
-\[
+$$
 a:S^2\longrightarrow S^2,
 \qquad
 a(x)=-x.
-\]
+$$
 Then $a$ is continuous.
 
 ::: pf-proof
 
 The map
-\[
+$$
 \RR^3\longrightarrow\RR^3,
 \qquad x\longmapsto -x
-\]
+$$
 is linear and hence continuous, and it preserves the unit sphere $S^2$.
 Its restriction to $S^2$ is therefore continuous.
 
@@ -67,9 +67,9 @@ The map $a$ has no fixed point.
 ::: pf-proof
 
 If $x\in S^2$ were fixed, then
-\[
+$$
 x=a(x)=-x,
-\]
+$$
 so $2x=0$ and hence $x=0$.
 But $0\notin S^2$.
 Thus no point of $S^2$ is fixed by $a$.

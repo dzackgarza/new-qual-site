@@ -125,23 +125,23 @@ Hence $(x)\cap S=\emptyset$.
 
 It is enough to prove that $\frac{x}{1}$ is prime, because associates of prime elements are prime.
 Suppose
-\[
+$$
 \frac{x}{1} \mid \frac{a}{s_1}\frac{b}{s_2}.
-\]
+$$
 Then there exists $\frac{c}{s_3}\in S^{-1}R$ such that
-\[
+$$
 \frac{ab}{s_1s_2}=\frac{xc}{s_3}.
-\]
+$$
 Since $R$ is a domain and every element of $S$ is nonzero, equality in the localization gives
-\[
+$$
 s_3ab=s_1s_2cx
-\]
+$$
 in $R$.
 Since $x$ is irreducible in the UFD $R$, it is prime.
 Thus
-\[
+$$
 x\mid s_3ab.
-\]
+$$
 Because $(x)\cap S=\emptyset$, we have $x\nmid s_3$.
 Therefore $x\mid a$ or $x\mid b$.
 In the first case $\frac{x}{1}\mid\frac{a}{s_1}$, and in the second $\frac{x}{1}\mid\frac{b}{s_2}$.

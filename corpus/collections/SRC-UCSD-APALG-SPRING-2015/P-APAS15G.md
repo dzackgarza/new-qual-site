@@ -41,9 +41,9 @@ Part (1): Reduced Gröbner basis for $I$ with lex order $y > x$:
 
 Let $f_1 = y^2 + xy$ and $f_2 = xy^2 + x^2 y + x^2$.
 With respect to the lexicographic order where $y > x$, the leading monomials are:
-\[
+$$
 \operatorname{LM}(f_1) = y^2, \qquad \operatorname{LM}(f_2) = xy^2.
-\]
+$$
 
 ::: pf-proof
 
@@ -56,9 +56,9 @@ lex term ordering with $y > x$.
 ::: pf-step
 
 Compute the $S$-polynomial of $f_1$ and $f_2$:
-\[
+$$
 S(f_1, f_2) = \frac{xy^2}{y^2} f_1 - \frac{xy^2}{xy^2} f_2 = x(y^2 + xy) - (xy^2 + x^2 y + x^2) = (xy^2 + x^2 y) - (xy^2 + x^2 y + x^2) = -x^2.
-\]
+$$
 Let $f_3 = x^2 \in I$, with leading monomial $\operatorname{LM}(f_3) = x^2$.
 
 ::: pf-proof
@@ -88,9 +88,9 @@ Buchberger's Coprime Criterion.
 Thus $\{f_1, f_3\} = \{y^2 + xy, x^2\}$ is a Gröbner basis for $I$.
 Both polynomials are monic, and no monomial of $f_1$ ($y^2$ and $xy$) or $f_3$ ($x^2$) is divisible by the leading monomial of the other ($\operatorname{LM}(f_3) = x^2 \nmid xy$ and $\operatorname{LM}(f_1) = y^2 \nmid 0$).
 Therefore the reduced Gröbner basis for $I$ is:
-\[
+$$
 G = \{y^2 + xy, \, x^2\}.
-\]
+$$
 
 ::: pf-proof
 
@@ -113,9 +113,9 @@ Part (2): Reduced Gröbner basis for $I \cap \CC[x]$:
 ::: pf-step
 
 By the Elimination Theorem, for the elimination order $y > x$, a Gröbner basis for the elimination ideal $I_1 = I \cap \CC[x]$ is obtained by taking the elements of $G$ containing only the variable $x$:
-\[
+$$
 G \cap \CC[x] = \{x^2\}.
-\]
+$$
 Thus the reduced Gröbner basis for $I \cap \CC[x]$ is $\{x^2\}$.
 
 ::: pf-proof
@@ -151,13 +151,13 @@ leading terms of $G$.
 ::: pf-step
 
 By Macaulay's Theorem / the Division Algorithm, a $\CC$-vector space basis for $\CC[x, y]/I$ is given by the set of all monomials not in $\operatorname{LT}(I)$:
-\[
+$$
 \mathcal{B} = \{x^a y^b \mid x^a y^b \notin \langle x^2, y^2 \rangle\} = \{x^a y^b \mid 0 \le a < 2, \, 0 \le b < 2\}.
-\]
+$$
 Evaluating the four combinations of exponents $(a, b) \in \{0, 1\} \times \{0, 1\}$ gives:
-\[
+$$
 \mathcal{B} = \{1, \, x, \, y, \, xy\}.
-\]
+$$
 
 ::: pf-proof
 

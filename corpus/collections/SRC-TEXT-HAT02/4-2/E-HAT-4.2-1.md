@@ -30,37 +30,37 @@ Use homotopy groups to show there is no retraction $\RP^n \to \RP^k$ if $n > k >
 
 ::: {.solution}
 Suppose there were a retraction
-\[
+$$
 r:\RP^n\to\RP^k,
 \qquad n>k>0,
-\]
-of the standard inclusion \(i:\RP^k\hookrightarrow\RP^n\). Then
-\[
+$$
+of the standard inclusion $i:\RP^k\hookrightarrow\RP^n$. Then
+$$
 r_*i_*=\operatorname{id}
-\]
-on every homotopy group, so \(i_*\) would be injective.
+$$
+on every homotopy group, so $i_*$ would be injective.
 
-If \(k\ge2\), covering-space invariance of higher homotopy groups gives
-\[
+If $k\ge2$, covering-space invariance of higher homotopy groups gives
+$$
 \pi_k(\RP^k)\cong\pi_k(S^k)\cong\ZZ,
-\]
-whereas, since \(k<n\),
-\[
+$$
+whereas, since $k<n$,
+$$
 \pi_k(\RP^n)\cong\pi_k(S^n)=0.
-\]
-Thus \(i_*:\ZZ\to0\) cannot be injective.
+$$
+Thus $i_*:\ZZ\to0$ cannot be injective.
 
-If \(k=1\), then \(\RP^1\cong S^1\), so
-\[
+If $k=1$, then $\RP^1\cong S^1$, so
+$$
 \pi_1(\RP^1)\cong\ZZ,
 \qquad
 \pi_1(\RP^n)\cong\ZZ_2
 \quad(n>1).
-\]
-Again no injection \(\ZZ\hookrightarrow\ZZ_2\) exists.
+$$
+Again no injection $\ZZ\hookrightarrow\ZZ_2$ exists.
 
 Therefore
-\[
+$$
 \boxed{\RP^n\text{ does not retract onto }\RP^k\text{ for }n>k>0.}
-\]
+$$
 :::

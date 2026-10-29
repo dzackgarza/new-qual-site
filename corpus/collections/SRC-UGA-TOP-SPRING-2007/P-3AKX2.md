@@ -58,11 +58,11 @@ The set $p^{-1}(U)$ is open in the surface $\widetilde S$, hence is locally path
 
 ::: {.pf-step #s2}
 Lifting loops from $x_0$ gives a bijection
-\[
+$$
 \Phi:\pi_1(S,x_0)\longrightarrow p^{-1}(x_0),
 \qquad
 [\gamma]\longmapsto \widetilde\gamma(1),
-\]
+$$
 where $\widetilde\gamma$ is the lift of $\gamma$ beginning at $\widetilde x_0$.
 
 ::: pf-proof
@@ -72,17 +72,17 @@ For surjectivity, let $\widetilde y\in p^{-1}(x_0)$.
 Since the universal cover $\widetilde S$ is path-connected, choose a path $\widetilde\alpha$ from $\widetilde x_0$ to $\widetilde y$.
 Its projection $\alpha=p\circ\widetilde\alpha$ is a loop at $x_0$, and $\widetilde\alpha$ is its lift from $\widetilde x_0$.
 Hence
-\[
+$$
 \Phi([\alpha])=\widetilde y.
-\]
+$$
 
 For injectivity, suppose the lifts of loops $\gamma$ and $\delta$ from $\widetilde x_0$ have the same endpoint.
 Concatenating the lift of $\gamma$ with the reverse of the lift of $\delta$ gives a loop in the simply-connected space $\widetilde S$.
 It is nullhomotopic, so its projection $\gamma\delta^{-1}$ is nullhomotopic in $S$.
 Thus
-\[
+$$
 [\gamma]=[\delta]
-\]
+$$
 in $\pi_1(S,x_0)$.
 :::
 
@@ -90,9 +90,9 @@ in $\pi_1(S,x_0)$.
 
 ::: {.pf-step #s3}
 For $g\in\pi_1(S,x_0)$, the fiber point $\Phi(g)$ lies in the same path component of $p^{-1}(U)$ as $\widetilde x_0$ if and only if
-\[
+$$
 g\in\operatorname{im} i_*.
-\]
+$$
 
 ::: pf-proof
 Suppose first that $g=i_*([\alpha])$ for a loop $\alpha$ in $U$ based at $x_0$.
@@ -102,13 +102,13 @@ Hence $\Phi(g)$ and $\widetilde x_0$ lie in the same path component.
 Conversely, suppose there is a path $\widetilde\alpha$ in $p^{-1}(U)$ from $\widetilde x_0$ to $\Phi(g)$.
 Its projection $\alpha=p\circ\widetilde\alpha$ is a loop in $U$ based at $x_0$.
 By construction,
-\[
+$$
 \Phi(i_*[\alpha])=\Phi(g).
-\]
+$$
 The injectivity in step [](#s2){.pf-ref} gives
-\[
+$$
 i_*[\alpha]=g.
-\]
+$$
 Thus $g\in\operatorname{im}i_*$.
 :::
 
@@ -123,9 +123,9 @@ Hence every point of the fiber $p^{-1}(x_0)$ lies in the same path component as 
 
 Let $g\in\pi_1(S,x_0)$.
 By step [](#s2){.pf-ref}, $\Phi(g)$ is a point of this fiber, so step [](#s3){.pf-ref} gives
-\[
+$$
 g\in\operatorname{im}i_*.
-\]
+$$
 Thus every element of $\pi_1(S,x_0)$ lies in the image of $i_*$.
 :::
 
@@ -137,20 +137,20 @@ If $i_*$ is surjective, then $p^{-1}(U)$ is path-connected, hence connected.
 ::: pf-proof
 Let $\widetilde y\in p^{-1}(U)$ and set $y=p(\widetilde y)$.
 By step [](#s1){.pf-ref}, choose a path
-\[
+$$
 \alpha:[0,1]\to U
-\]
+$$
 from $y$ to $x_0$.
 Lift $\alpha$ starting at $\widetilde y$.
 Its endpoint is some
-\[
+$$
 \widetilde z\in p^{-1}(x_0).
-\]
+$$
 By step [](#s2){.pf-ref} there is a unique $g\in\pi_1(S,x_0)$ with $\Phi(g)=\widetilde z$.
 Surjectivity of $i_*$ gives a loop $\beta$ in $U$ based at $x_0$ such that
-\[
+$$
 i_*[\beta]=g.
-\]
+$$
 By step [](#s3){.pf-ref}, the lift of $\beta$ from $\widetilde x_0$ is a path in $p^{-1}(U)$ from $\widetilde x_0$ to $\widetilde z$.
 
 The reverse of the lifted path $\alpha$ joins $\widetilde z$ to $\widetilde y$ inside $p^{-1}(U)$.
@@ -162,9 +162,9 @@ Since $\widetilde y$ was arbitrary, $p^{-1}(U)$ is path-connected.
 
 ::: pf-step
 Combining step [](#s4){.pf-ref} and step [](#s5){.pf-ref} proves
-\[
+$$
 \boxed{p^{-1}(U)\text{ is connected}\iff i_*:\pi_1(U,x_0)\to\pi_1(S,x_0)\text{ is surjective}.}
-\]
+$$
 
 :::
 

@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Show that
-\[
+$$
 \int_{0}^{\infty} \sin \left(x^{2}\right) d x=\int_{0}^{\infty} \cos \left(x^{2}\right) d x=\frac{\sqrt{2 \pi}}{4}
-.\]
+.$$
 
 > Hint: integrate $e^{-x^2}$ over the following contour, using the fact that $\int_{-\infty}^{\infty} e^{-x^{2}} d x=\sqrt{\pi}$:
 

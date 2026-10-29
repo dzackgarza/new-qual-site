@@ -26,9 +26,9 @@ Let $f$ be entire.
 ::: {.solution}
 
 For $w\ne0$, set
-\[
+$$
 g(w)=f(1/w).
-\]
+$$
 
 ::: pf
 
@@ -93,27 +93,27 @@ degree $m$.
 ::: {.pf-step #s2-1}
 
 There are constants $C>0$ and $R>0$ such that
-\[
+$$
 |f(z)|\le C|z|^m
 \qquad(|z|\ge R).
-\]
+$$
 
 
 ::: pf-proof
 
 Since $g$ has a pole of order $m$ at $0$, the function
-\[
+$$
 h(w)=w^m g(w)
-\]
+$$
 extends holomorphically across $0$ with $h(0)\ne0$. In particular, $h$ is
 bounded on some disk $|w|<\delta$: say $|h(w)|\le C$. For
 $|z|>1/\delta$, put $w=1/z$. Then
-\[
+$$
 |f(z)|
 =|g(1/z)|
 =|z|^m|h(1/z)|
 \le C|z|^m.
-\]
+$$
 Taking $R=1/\delta$ gives the claim.
 
 :::
@@ -123,20 +123,20 @@ Taking $R=1/\delta$ gives the claim.
 ::: {.pf-step #s2-2}
 
 For every integer $n>m$,
-\[
+$$
 f^{(n)}(0)=0.
-\]
+$$
 
 
 ::: pf-proof
 
 Fix $n>m$. For every $r\ge R$, Cauchy's estimate on the circle $|z|=r$
 and step [](#s2-1){.pf-ref} give
-\[
+$$
 |f^{(n)}(0)|
 \le \frac{n!}{r^n}\max_{|z|=r}|f(z)|
 \le n!C r^{m-n}.
-\]
+$$
 Because $m-n<0$, letting $r\to\infty$ yields $f^{(n)}(0)=0$.
 
 :::
@@ -153,9 +153,9 @@ The Taylor series of $f$ is a polynomial of degree exactly $m$.
 Step [](#s2-2){.pf-ref} shows that all Taylor coefficients of degrees greater than $m$
 vanish, so $f$ is a polynomial of degree at most $m$. If its degree were
 $d<m$, then
-\[
+$$
 g(w)=f(1/w)
-\]
+$$
 would have a pole of order $d$ at $0$, contradicting the assumption that the
 pole order is $m$. Hence $\deg f=m$.
 
@@ -182,15 +182,15 @@ of order $m$.
 ::: pf-proof
 
 Write
-\[
+$$
 f(z)=a_m z^m+a_{m-1}z^{m-1}+\cdots+a_0,
 \qquad a_m\ne0.
-\]
+$$
 Then
-\[
+$$
 g(w)=f(1/w)
 =w^{-m}\bigl(a_m+a_{m-1}w+\cdots+a_0w^m\bigr).
-\]
+$$
 The factor in parentheses is holomorphic and nonzero at $w=0$. Therefore
 $g$ has a pole of order exactly $m$ at $0$, so $f$ has a pole of order $m$ at
 infinity.

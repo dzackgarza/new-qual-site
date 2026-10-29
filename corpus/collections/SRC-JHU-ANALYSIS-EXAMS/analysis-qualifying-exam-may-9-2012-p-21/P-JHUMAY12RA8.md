@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let $f\in L^1(\RR)$ and define
-\[
+$$
 \widehat f(\xi)=\int_{\RR}f(x)e^{-2\pi i x\xi}\,dx.
-\]
+$$
 Prove that $\widehat f\in C_0(\RR)$; that is, $\widehat f$ is continuous and tends to $0$ at infinity. Do not quote the Riemann--Lebesgue lemma without a proof sketch.
 :::
 
@@ -42,17 +42,17 @@ Continuity.
 ::: pf-proof
 
 Let $\xi_n\to\xi$. For every $x$,
-\[
+$$
 f(x)e^{-2\pi i x\xi_n}\longrightarrow f(x)e^{-2\pi i x\xi},
-\]
+$$
 and
-\[
+$$
 |f(x)e^{-2\pi i x\xi_n}|=|f(x)|\in L^1(\RR).
-\]
+$$
 Dominated convergence gives
-\[
+$$
 \widehat f(\xi_n)\longrightarrow\widehat f(\xi).
-\]
+$$
 Thus $\widehat f$ is continuous.
 
 :::
@@ -66,15 +66,15 @@ Vanishing at infinity for smooth compactly supported functions.
 ::: pf-proof
 
 Let $g\in C_c^1(\RR)$. Integration by parts gives, for $\xi\ne0$,
-\[
+$$
 \widehat g(\xi)
 =\frac1{2\pi i\xi}\int_{\RR}g'(x)e^{-2\pi i x\xi}\,dx,
-\]
+$$
 because the boundary term vanishes. Hence
-\[
+$$
 |\widehat g(\xi)|\le\frac{\|g'\|_1}{2\pi|\xi|}\longrightarrow0
 \qquad(|\xi|\to\infty).
-\]
+$$
 
 :::
 
@@ -87,24 +87,24 @@ Approximate an arbitrary $L^1$ function.
 ::: pf-proof
 
 Fix $\varepsilon>0$. Choose $g\in C_c^1(\RR)$ such that
-\[
+$$
 \|f-g\|_1<\frac{\varepsilon}{2},
-\]
+$$
 using density of $C_c^1(\RR)$ in $L^1(\RR)$. For every $\xi$,
-\[
+$$
 |\widehat f(\xi)-\widehat g(\xi)|
 \le\|f-g\|_1<\frac{\varepsilon}{2}.
-\]
+$$
 By step [](#s2){.pf-ref}, there exists $R$ such that $|\widehat g(\xi)|<\varepsilon/2$ whenever $|\xi|>R$. Therefore, for $|\xi|>R$,
-\[
+$$
 |\widehat f(\xi)|
 \le|\widehat f(\xi)-\widehat g(\xi)|+|\widehat g(\xi)|
 <\varepsilon.
-\]
+$$
 Thus $\widehat f(\xi)\to0$ as $|\xi|\to\infty$. Together with continuity, this proves
-\[
+$$
 \widehat f\in C_0(\RR).
-\]
+$$
 
 :::
 

@@ -32,11 +32,11 @@ Compute the homology groups of the subspace of $I \times I$ consisting of the fo
 Let $X$ be the specified subspace of $I\times I$. Thus $X$ contains the whole boundary square and, for each rational $q\in(0,1)$, the vertical segment $\{q\}\times I$.
 
 Define open subsets of $X$
-\[
+$$
 U=X\cap\{y<3/4\},
 \qquad
 V=X\cap\{y>1/4\}.
-\]
+$$
 
 ::: pf
 
@@ -47,9 +47,9 @@ Both $U$ and $V$ are contractible.
 ::: pf-proof
 
 The vertical homotopy
-\[
+$$
 (x,y)\longmapsto(x,(1-t)y)
-\]
+$$
 deformation retracts $U$ onto the bottom edge. It stays in $X$ because an interior point of $X$ either has rational first coordinate or lies on a vertical boundary edge, and the homotopy preserves the first coordinate. Similarly $V$ deformation retracts onto the top edge.
 
 :::
@@ -59,19 +59,19 @@ deformation retracts $U$ onto the bottom edge. It stays in $X$ because an interi
 ::: {.pf-step #s2}
 
 The intersection $U\cap V$ deformation retracts onto
-\[
+$$
 Q=(\QQ\cap I)\times\{1/2\},
-\]
+$$
 so
-\[
+$$
 \widetilde H_0(U\cap V)
 \cong
 \bigoplus_{q\in(\QQ\cap I)\setminus\{0\}}\ZZ
-\]
+$$
 and
-\[
+$$
 H_k(U\cap V)=0\quad(k>0).
-\]
+$$
 
 ::: pf-proof
 
@@ -86,21 +86,21 @@ Every path-component of $\QQ\cap I$ is a single point, so its $H_0$ is free on t
 ::: {.pf-step #s3}
 
 The space $X$ is path connected, and
-\[
+$$
 H_1(X)\cong\widetilde H_0(U\cap V).
-\]
+$$
 
 ::: pf-proof
 
 Every point can be joined vertically to the top or bottom boundary and then along the boundary to any other point, so $X$ is path connected.
 
 The reduced Mayer--Vietoris sequence for $X=U\cup V$ contains
-\[
+$$
 0=\widetilde H_1(U)\oplus\widetilde H_1(V)
 \to\widetilde H_1(X)
 \to\widetilde H_0(U\cap V)
 \to\widetilde H_0(U)\oplus\widetilde H_0(V)=0.
-\]
+$$
 Thus the middle arrow is an isomorphism.
 
 :::
@@ -114,9 +114,9 @@ All homology in dimensions at least two vanishes.
 ::: pf-proof
 
 For $k\ge2$, Mayer--Vietoris gives
-\[
+$$
 \widetilde H_k(X)\cong\widetilde H_{k-1}(U\cap V)=0
-\]
+$$
 by step [](#s2){.pf-ref}.
 
 :::
@@ -126,7 +126,7 @@ by step [](#s2){.pf-ref}.
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{
 H_0(X)\cong\ZZ,
 \qquad
@@ -135,7 +135,7 @@ H_1(X)\cong
 \qquad
 H_k(X)=0\ (k\ge2).
 }
-\]
+$$
 
 ::: pf-proof
 

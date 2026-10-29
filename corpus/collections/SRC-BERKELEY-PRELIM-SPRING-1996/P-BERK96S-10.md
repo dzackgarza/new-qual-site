@@ -26,14 +26,14 @@ audit:
 
 ::: {.problem}
 Show that a positive constant $t$ satisfies
-\[
+$$
 e^x>x^t
 \qquad\text{for every }x>0
-\]
+$$
 if and only if
-\[
+$$
 t<e.
-\]
+$$
 :::
 
 ::: {.solution}

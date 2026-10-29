@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Let $A\subset\RR$ be Lebesgue measurable and let $f:A\to\RR$ be measurable.
 Suppose
-\[
+$$
 \int_K f\,dm=0
-\]
+$$
 for every compact $K\subset A$.
 Must $f=0$ almost everywhere?
 Prove the conclusion or give a counterexample.

@@ -24,9 +24,9 @@ audit:
 
 ::: {.problem}
 Describe and sketch the region in the complex plane where
-\[
+$$
 \sum_{n=1}^{\infty}\frac1{n^2}\exp\left(\frac{nz}{z-2}\right)
-\]
+$$
 converges.
 :::
 

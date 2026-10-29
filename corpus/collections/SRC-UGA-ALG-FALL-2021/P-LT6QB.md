@@ -37,9 +37,9 @@ Recall that for a positive integer $n$, the cyclotomic field $\QQ(\zeta_n)$ is g
 ::: {.pf-step #s1}
 
 The degree of the $n$-th cyclotomic field is
-\[
+$$
 \boxed{[\QQ(\zeta_n):\QQ]=\varphi(n)}.
-\]
+$$
 
 ::: pf-proof
 
@@ -64,9 +64,9 @@ A finite extension is Galois if and only if it is normal and separable. The cycl
 ::: {.pf-step #s3}
 
 Its Galois group is
-\[
+$$
 \boxed{\operatorname{Gal}(\QQ(\zeta_n)/\QQ)\cong(\ZZ/n\ZZ)^\times}.
-\]
+$$
 
 ::: pf-proof
 
@@ -79,18 +79,18 @@ An automorphism of $\QQ(\zeta_n)$ is determined by the image of $\zeta_n$, neces
 ::: {.pf-step #s4}
 
 The field $\QQ(\zeta_{2021})$ has exactly
-\[
+$$
 \boxed{3}
-\]
+$$
 quadratic subfields.
 
 ::: pf-proof
 
 Since $2021=43\cdot47$, the Chinese remainder theorem and step [](#s3){.pf-ref} give
-\[
+$$
 G\cong(\ZZ/43\ZZ)^\times\times(\ZZ/47\ZZ)^\times
 \cong C_{42}\times C_{46}.
-\]
+$$
 Each factor is cyclic of even order, with exactly one nontrivial homomorphism to $C_2$. Hence $\operatorname{Hom}(G,C_2)\cong C_2^2$ has exactly three nontrivial homomorphisms. Each is surjective and has an index-two kernel; conversely every index-two subgroup arises uniquely in this way. By the Galois correspondence, these three subgroups correspond to the quadratic intermediate fields.
 
 :::

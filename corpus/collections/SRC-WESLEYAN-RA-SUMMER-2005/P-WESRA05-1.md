@@ -46,13 +46,13 @@ Definition.
 ::: pf-proof
 
 A sigma-algebra $\mathcal A$ on $X$ is a collection of subsets of $X$ such that
-\[
+$$
 X\in\mathcal A,
-\]
+$$
 $A\in\mathcal A$ implies $X\setminus A\in\mathcal A$, and whenever $A_1,A_2,\ldots\in\mathcal A$,
-\[
+$$
 \bigcup_{n=1}^\infty A_n\in\mathcal A.
-\]
+$$
 
 :::
 
@@ -65,11 +65,11 @@ The infinitely-often set is measurable.
 ::: pf-proof
 
 The set of points belonging to infinitely many $A_n$ is
-\[
+$$
 \limsup_{n\to\infty}A_n
 =
 \bigcap_{N=1}^\infty\bigcup_{n\ge N}A_n.
-\]
+$$
 Since sigma-algebras are closed under countable unions and intersections, this set belongs to $\mathcal A$.
 
 :::
@@ -83,11 +83,11 @@ The eventually-always set is measurable.
 ::: pf-proof
 
 The set of points belonging to all but finitely many $A_n$ is
-\[
+$$
 \liminf_{n\to\infty}A_n
 =
 \bigcup_{N=1}^\infty\bigcap_{n\ge N}A_n.
-\]
+$$
 Again this belongs to $\mathcal A$.
 
 :::
@@ -102,9 +102,9 @@ Compare the two sets.
 
 If a point belongs to all but finitely many $A_n$, then it certainly belongs to infinitely many of them.
 Therefore
-\[
+$$
 \boxed{\liminf A_n\subseteq\limsup A_n.}
-\]
+$$
 Equality holds exactly when membership in the sequence $(A_n)$ eventually stabilizes for every point outside no exceptional oscillatory set; equivalently, no point belongs to infinitely many $A_n$ and also to infinitely many complements $A_n^c$.
 
 :::
@@ -119,17 +119,17 @@ Determine the possible sizes on a five-point set.
 
 Every sigma-algebra on a finite set is determined by its atoms, which form a partition of $X$.
 If there are $k$ atoms, then every measurable set is a union of atoms, so the sigma-algebra has exactly
-\[
+$$
 2^k
-\]
+$$
 elements.
 
 Since $X$ has five points, the number $k$ of nonempty atoms may be any integer from $1$ through $5$.
 Each value occurs, by choosing a partition of $X$ into $k$ nonempty blocks.
 Hence the possible cardinalities are
-\[
+$$
 \boxed{2,4,8,16,32.}
-\]
+$$
 
 :::
 

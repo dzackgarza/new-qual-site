@@ -44,9 +44,9 @@ The identity map of a point equals the constant map. By the reduced dimension ax
 
 ::: {.pf-step #s2}
 Let $CX$ be the cone on $X$. Then
-\[
+$$
 \widetilde h_n(CX)=0
-\]
+$$
 for all $n$.
 
 ::: pf-proof
@@ -57,9 +57,9 @@ The cone is contractible, so homotopy invariance and step [](#s1){.pf-ref} give 
 
 ::: {.pf-step #s3}
 The pair $(CX,X)$ gives natural isomorphisms
-\[
+$$
 \widetilde h_{n+1}(CX,X)\cong\widetilde h_n(X).
-\]
+$$
 
 ::: pf-proof
 In the long exact sequence of the pair, the two adjacent groups of $CX$ vanish by step [](#s2){.pf-ref}, so the connecting map is an isomorphism.
@@ -69,13 +69,13 @@ In the long exact sequence of the pair, the two adjacent groups of $CX$ vanish b
 
 ::: pf-step
 Since $CX/X\cong SX$, excision identifies
-\[
+$$
 \widetilde h_{n+1}(CX,X)\cong\widetilde h_{n+1}(SX).
-\]
+$$
 Combining with step [](#s3){.pf-ref} yields
-\[
+$$
 \boxed{\widetilde h_n(X)\cong\widetilde h_{n+1}(SX)}.
-\]
+$$
 :::
 
 :::

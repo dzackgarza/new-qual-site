@@ -23,11 +23,11 @@ Show that $u_n$ converges in the space of harmonic functions in $\DD$ to a harmo
 ::: {.solution}
 Because $u_n-u_m$ is harmonic in $\DD$ and continuous on
 $\overline{\DD}$, the maximum principle gives
-\[
+$$
 \sup_{\overline{\DD}}|u_n-u_m|
 \le
 \sup_{\partial\DD}|u_n-u_m|.
-\]
+$$
 The boundary sequence converges uniformly, so the right-hand side tends to
 $0$ as $n,m\to\infty$. Hence $(u_n)$ is uniformly Cauchy on
 $\overline{\DD}$ and converges uniformly there to a continuous function
@@ -36,9 +36,9 @@ $u$.
 On every compact subset of $\DD$ the convergence is therefore uniform.
 Locally uniform limits of harmonic functions are harmonic, so $u$ is harmonic
 in $\DD$. On the boundary, uniform convergence gives
-\[
+$$
 u|_{\partial\DD}=f.
-\]
+$$
 Thus $u_n\to u$ in the harmonic-function topology on $\DD$, and $u$ has
 the required continuous extension to the closed disk.
 :::

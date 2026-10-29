@@ -17,9 +17,9 @@ audit:
 
 ::: {.problem}
 Let $f$ be analytic on a domain $D$, and suppose there is $z_0\in D$ such that
-\[
+$$
 |f(z)|\ge |f(z_0)|>0\qquad(z\in D).
-\]
+$$
 Show that $f$ is constant on $D$.
 :::
 
@@ -29,23 +29,23 @@ Show that $f$ is constant on $D$.
 
 ::: {.pf-step #s1-1}
 
-The function \(f\) has no zeros in \(D\).
+The function $f$ has no zeros in $D$.
 
 
 ::: pf-proof
 
-For every \(z\in D\),
-\[
+For every $z\in D$,
+$$
 |f(z)|
 \ge
 |f(z_0)|
 >
 0.
-\]
+$$
 Hence
-\[
+$$
 f(z)\ne0.
-\]
+$$
 
 :::
 
@@ -54,21 +54,21 @@ f(z)\ne0.
 ::: {.pf-step #s1-2}
 
 Therefore
-\[
+$$
 g(z)=\frac1{f(z)}
-\]
-is analytic on \(D\).
+$$
+is analytic on $D$.
 
 
 ::: pf-proof
 
 The reciprocal of a nonvanishing analytic function is analytic.
 Explicitly,
-\[
+$$
 g'(z)
 =
 -\frac{f'(z)}{f(z)^2}.
-\]
+$$
 Step [](#s1-1){.pf-ref} guarantees that the denominator never vanishes.
 
 :::
@@ -77,32 +77,32 @@ Step [](#s1-1){.pf-ref} guarantees that the denominator never vanishes.
 
 ::: {.pf-step #s1-3}
 
-For every \(z\in D\),
-\[
+For every $z\in D$,
+$$
 \boxed{
 |g(z)|
 \le
 |g(z_0)|}.
-\]
+$$
 
 
 ::: pf-proof
 
 The hypothesis gives
-\[
+$$
 |f(z)|
 \ge
 |f(z_0)|
 >
 0.
-\]
+$$
 Taking reciprocals reverses the inequality:
-\[
+$$
 \frac1{|f(z)|}
 \le
 \frac1{|f(z_0)|}.
-\]
-These are exactly \(|g(z)|\) and \(|g(z_0)|\).
+$$
+These are exactly $|g(z)|$ and $|g(z_0)|$.
 
 :::
 
@@ -110,14 +110,14 @@ These are exactly \(|g(z)|\) and \(|g(z_0)|\).
 
 ::: {.pf-step #s1-4}
 
-Thus \(|g|\) attains its maximum on \(D\) at the interior point
-\(z_0\).
+Thus $|g|$ attains its maximum on $D$ at the interior point
+$z_0$.
 
 
 ::: pf-proof
 
-Step [](#s1-3){.pf-ref} shows that no value of \(|g|\) exceeds \(|g(z_0)|\), and
-\(z_0\in D\).
+Step [](#s1-3){.pf-ref} shows that no value of $|g|$ exceeds $|g(z_0)|$, and
+$z_0\in D$.
 
 :::
 
@@ -126,16 +126,16 @@ Step [](#s1-3){.pf-ref} shows that no value of \(|g|\) exceeds \(|g(z_0)|\), and
 ::: pf-step
 
 The maximum modulus principle implies that
-\[
+$$
 \boxed{g\text{ is constant on }D}.
-\]
+$$
 
 
 ::: pf-proof
 
-The domain \(D\) is connected, \(g\) is analytic by step [](#s1-2){.pf-ref}, and
-\(|g|\) attains a maximum at an interior point by step [](#s1-4){.pf-ref}. The strong
-maximum modulus principle therefore forces \(g\) to be constant.
+The domain $D$ is connected, $g$ is analytic by step [](#s1-2){.pf-ref}, and
+$|g|$ attains a maximum at an interior point by step [](#s1-4){.pf-ref}. The strong
+maximum modulus principle therefore forces $g$ to be constant.
 
 :::
 
@@ -143,24 +143,24 @@ maximum modulus principle therefore forces \(g\) to be constant.
 
 ::: {.pf-step #s1-6}
 
-Hence \(f\) is constant on \(D\).
+Hence $f$ is constant on $D$.
 
 
 ::: pf-proof
 
 If
-\[
+$$
 g(z)=c
-\]
-for all \(z\in D\), then \(c\ne0\) because
-\[
+$$
+for all $z\in D$, then $c\ne0$ because
+$$
 g=\frac1f.
-\]
+$$
 Therefore
-\[
+$$
 f(z)=\frac1c
-\]
-for all \(z\in D\).
+$$
+for all $z\in D$.
 
 :::
 

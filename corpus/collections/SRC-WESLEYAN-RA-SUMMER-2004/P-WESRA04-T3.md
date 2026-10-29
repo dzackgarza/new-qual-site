@@ -28,17 +28,17 @@ State a theorem describing how Lebesgue measurable functions on $[0,1]$ can be a
 ::: {.solution}
 One standard answer is Lusin's theorem.
 If $f:[0,1]\to\RR$ is Lebesgue measurable and finite almost everywhere, then for every $\varepsilon>0$ there exists a compact set $K\subset[0,1]$ such that
-\[
+$$
 m([0,1]\setminus K)<\varepsilon
-\]
+$$
 and the restriction
-\[
+$$
 f|_K
-\]
+$$
 is continuous.
 
 Equivalently, using the Tietze extension theorem, for every $\varepsilon>0$ there exists $g\in C([0,1])$ such that
-\[
+$$
 \boxed{m\{x\in[0,1]:f(x)\ne g(x)\}<\varepsilon.}
-\]
+$$
 :::

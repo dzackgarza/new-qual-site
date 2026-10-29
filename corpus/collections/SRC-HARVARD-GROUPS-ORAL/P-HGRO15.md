@@ -28,9 +28,9 @@ Prove that $\RR/\ZZ$ is isomorphic to the group of rotations about the origin in
 ::: {.solution}
 Let $\operatorname{Rot}(\CC)$ denote the group of rotations about the
 origin. Define
-\[
+$$
 \Phi:\RR/\ZZ\longrightarrow \operatorname{Rot}(\CC)
-\]
+$$
 by letting $\Phi(t+\ZZ)$ be rotation through angle $2\pi t$.
 
 ::: pf
@@ -55,11 +55,11 @@ The map $\Phi$ is a homomorphism.
 ::: pf-proof
 
 Composition of rotations adds angles. Hence
-\[
+$$
 \Phi((s+\ZZ)+(t+\ZZ))
 =\Phi(s+t+\ZZ)
 =\Phi(s+\ZZ)\Phi(t+\ZZ).
-\]
+$$
 
 :::
 

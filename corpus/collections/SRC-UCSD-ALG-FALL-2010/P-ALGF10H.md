@@ -33,111 +33,111 @@ Hint: $1 + n$, with $n$ a nilpotent element, is invertible.
 
 
 ::: {.solution}
-Let \(N\) denote the set of nilpotent elements of \(R\).
+Let $N$ denote the set of nilpotent elements of $R$.
 
 ::: pf
 
 ::: {.pf-step #units-central}
-Every unit of \(R\) is central.
+Every unit of $R$ is central.
 
 ::: pf-proof
-Let \(u\in R^\times\).
-Conjugation by \(u\),
-\[
+Let $u\in R^\times$.
+Conjugation by $u$,
+$$
 \iota_u:R\longrightarrow R,
 \qquad
 r\longmapsto uru^{-1},
-\]
+$$
 is a ring automorphism.
-By hypothesis the identity map is the only ring automorphism of \(R\).
+By hypothesis the identity map is the only ring automorphism of $R$.
 Hence
-\[
+$$
 uru^{-1}=r
-\]
-for every \(r\in R\), and therefore \(ur=ru\).
-Thus \(u\in Z(R)\).
+$$
+for every $r\in R$, and therefore $ur=ru$.
+Thus $u\in Z(R)$.
 :::
 
 :::
 
 ::: {.pf-step #nilpotents-central}
-Every nilpotent element of \(R\) is central.
+Every nilpotent element of $R$ is central.
 
 ::: pf-proof
-Let \(n\in N\), say \(n^m=0\).
+Let $n\in N$, say $n^m=0$.
 Then
-\[
+$$
 (1+n)^{-1}=1-n+n^2-\cdots+(-1)^{m-1}n^{m-1},
-\]
-so \(1+n\) is a unit.
-By step [](#units-central){.pf-ref}, \(1+n\) is central.
-Since \(1\) is central,
-\[
+$$
+so $1+n$ is a unit.
+By step [](#units-central){.pf-ref}, $1+n$ is central.
+Since $1$ is central,
+$$
 n=(1+n)-1
-\]
+$$
 is central as well.
 Thus
-\[
+$$
 N\subseteq Z(R).
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #n-additive-subgroup}
-The set \(N\) is an additive subgroup of \(R\).
+The set $N$ is an additive subgroup of $R$.
 
 ::: pf-proof
-Clearly \(0\in N\), and if \(n^r=0\), then
-\[
+Clearly $0\in N$, and if $n^r=0$, then
+$$
 (-n)^r=(-1)^r n^r=0,
-\]
-so \(-n\in N\).
+$$
+so $-n\in N$.
 
-Let \(n,m\in N\), with
-\[
+Let $n,m\in N$, with
+$$
 n^r=0,
 \qquad
 m^s=0.
-\]
-By step [](#nilpotents-central){.pf-ref}, \(n\) and \(m\) are central and hence commute.
+$$
+By step [](#nilpotents-central){.pf-ref}, $n$ and $m$ are central and hence commute.
 Therefore the binomial theorem applies:
-\[
+$$
 (n+m)^{r+s-1}
 =\sum_{j=0}^{r+s-1}\binom{r+s-1}{j}n^j m^{r+s-1-j}.
-\]
-For each term, either \(j\ge r\) or \(r+s-1-j\ge s\), so that term is zero.
+$$
+For each term, either $j\ge r$ or $r+s-1-j\ge s$, so that term is zero.
 Hence
-\[
+$$
 (n+m)^{r+s-1}=0,
-\]
-and \(n+m\in N\).
-Thus \(N\) is an additive subgroup.
+$$
+and $n+m\in N$.
+Thus $N$ is an additive subgroup.
 :::
 
 :::
 
 ::: {.pf-step #n-absorbs-multiplication}
-The set \(N\) absorbs multiplication from both sides by arbitrary elements of \(R\).
+The set $N$ absorbs multiplication from both sides by arbitrary elements of $R$.
 
 ::: pf-proof
-Let \(n\in N\), say \(n^k=0\), and let \(r\in R\).
-By step [](#nilpotents-central){.pf-ref}, \(n\) is central, so
-\[
+Let $n\in N$, say $n^k=0$, and let $r\in R$.
+By step [](#nilpotents-central){.pf-ref}, $n$ is central, so
+$$
 (rn)^k=r^k n^k=0.
-\]
-Thus \(rn\in N\).
-Also \(nr=rn\), so \(nr\in N\).
+$$
+Thus $rn\in N$.
+Also $nr=rn$, so $nr\in N$.
 :::
 
 :::
 
 ::: pf-step
-Therefore \(N\) is a two-sided ideal of \(R\).
+Therefore $N$ is a two-sided ideal of $R$.
 
 ::: pf-proof
-By step [](#n-additive-subgroup){.pf-ref}, \(N\) is an additive subgroup, and by step [](#n-absorbs-multiplication){.pf-ref} it absorbs multiplication from either side by elements of \(R\).
-Hence \(N\triangleleft R\).
+By step [](#n-additive-subgroup){.pf-ref}, $N$ is an additive subgroup, and by step [](#n-absorbs-multiplication){.pf-ref} it absorbs multiplication from either side by elements of $R$.
+Hence $N\triangleleft R$.
 :::
 
 :::

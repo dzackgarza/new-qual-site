@@ -21,13 +21,13 @@ audit:
 
 ::: {.problem}
 Let $f$ be holomorphic on a domain containing $0$, not identically zero, with
-\[
+$$
 f(0)=f'(0)=f''(0)=0.
-\]
+$$
 Prove that there is $\varepsilon>0$ such that for every $w\in B_\varepsilon(0)$, the equation
-\[
+$$
 f(z)=w
-\]
+$$
 has at least three zeros counted with multiplicity.
 :::
 
@@ -45,15 +45,15 @@ The point $0$ is a zero of finite order $m\ge3$.
 Since $f$ is holomorphic and not identically zero, its Taylor series at $0$
 has a first nonzero coefficient. Thus there is an integer $m\ge1$ and a
 holomorphic function $g$ near $0$ such that
-\[
+$$
 f(z)=z^m g(z),
 \qquad
 g(0)\ne0.
-\]
+$$
 The hypotheses
-\[
+$$
 f(0)=f'(0)=f''(0)=0
-\]
+$$
 force the coefficients of $z^0,z^1,z^2$ in the Taylor series to vanish, so
 the first possible nonzero coefficient occurs in degree at least $3$.
 Therefore $m\ge3$.
@@ -65,17 +65,17 @@ Therefore $m\ge3$.
 ::: {.pf-step #s1-2}
 
 There is $r>0$ such that $f$ has no zeros on
-\[
+$$
 0<|z|\le r.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref},
-\[
+$$
 f(z)=z^m g(z)
-\]
+$$
 with $g(0)\ne0$. By continuity of $g$, after shrinking to a sufficiently
 small disk one has $g(z)\ne0$. Hence the only zero of $f$ in that disk is
 the zero at $0$, of multiplicity $m$. Choose $r>0$ so that the closed disk
@@ -88,9 +88,9 @@ $\overline{B_r(0)}$ lies in this neighborhood.
 ::: {.pf-step #s1-3}
 
 Define
-\[
+$$
 \varepsilon=\min_{|z|=r}|f(z)|.
-\]
+$$
 Then $\varepsilon>0$.
 
 
@@ -112,13 +112,13 @@ $B_r(0)$, counted with multiplicity.
 ::: pf-proof
 
 On $|z|=r$, step [](#s1-3){.pf-ref} gives
-\[
+$$
 |w|<\varepsilon\le |f(z)|.
-\]
+$$
 Thus
-\[
+$$
 |(f(z)-w)-f(z)|=|w|<|f(z)|
-\]
+$$
 on the boundary circle. Rouché's theorem implies that $f-w$ and $f$ have
 the same number of zeros in $B_r(0)$, counted with multiplicity. By step
 [](#s1-2){.pf-ref}, $f$ has exactly the single zero $0$ there, with multiplicity $m$.
@@ -138,9 +138,9 @@ preimages under $f$, counted with multiplicity.
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref}, $m\ge3$. Step [](#s1-4){.pf-ref} gives exactly $m$ zeros of
-\[
+$$
 f(z)-w
-\]
+$$
 in $B_r(0)$ for every $|w|<\varepsilon$. Therefore there are at least three
 zeros counted with multiplicity.
 

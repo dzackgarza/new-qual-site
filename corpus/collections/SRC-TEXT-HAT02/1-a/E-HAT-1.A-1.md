@@ -33,14 +33,14 @@ Show that the weak topology on $X$ is a metric topology.
 ::: {.solution}
 Give every edge of $X$ length $1$.
 For points $x,y$ in the same connected component, let
-\[
+$$
 \rho(x,y)
-\]
+$$
 be the infimum of the lengths of edgewise paths joining them, and put $\rho(x,y)=\infty$ when they lie in different components.
 Define
-\[
+$$
 d(x,y)=\min\{\rho(x,y),1\}.
-\]
+$$
 
 ::: pf
 
@@ -52,13 +52,13 @@ The function $d$ is a metric on $X$.
 
 Symmetry and positive definiteness are immediate from the edge-length construction.
 For the triangle inequality, the extended path metric $\rho$ satisfies
-\[
+$$
 \rho(x,z)\le \rho(x,y)+\rho(y,z).
-\]
+$$
 For nonnegative extended real numbers,
-\[
+$$
 \min\{a+b,1\}\le \min\{a,1\}+\min\{b,1\},
-\]
+$$
 so truncating at $1$ preserves the triangle inequality.
 Distinct points on the same finite edge have positive path distance, and points in different components have distance $1$.
 
@@ -90,9 +90,9 @@ If $U$ is weakly open and $x$ lies in the interior of an edge, then some $d$-bal
 The intersection of $U$ with that closed edge is open in the interval topology.
 Choose $\epsilon>0$ smaller than both the distance from $x$ to the two endpoints and the interval radius contained in $U$.
 Then
-\[
+$$
 B_d(x,\epsilon)
-\]
+$$
 stays inside that edge and lies in $U$.
 
 :::
@@ -106,20 +106,20 @@ If $U$ is weakly open and $v$ is a vertex of $X$ lying in $U$, then some $d$-bal
 ::: pf-proof
 
 Only finitely many edges
-\[
+$$
 e_1,\dots,e_r
-\]
+$$
 are incident to $v$.
 For each $e_i$, weak openness gives a number $\epsilon_i>0$ such that the initial segment of $e_i$ of length $\epsilon_i$ from $v$ lies in $U$.
 If $r>0$, set
-\[
+$$
 \epsilon=\min\{1/2,\epsilon_1,\dots,\epsilon_r\}>0.
-\]
+$$
 Any point at $d$-distance less than $\epsilon$ from $v$ must lie on one of these incident edge segments, hence lies in $U$.
 If $v$ is isolated, then
-\[
+$$
 B_d(v,1/2)=\{v\}\subseteq U.
-\]
+$$
 Thus $B_d(v,\epsilon)\subseteq U$ in all cases.
 
 :::

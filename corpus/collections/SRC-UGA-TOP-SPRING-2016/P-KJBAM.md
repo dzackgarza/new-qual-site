@@ -32,13 +32,13 @@ Prove that the free group on two generators contains a subgroup isomorphic to th
 
 ::: {.solution}
 Let
-\[
+$$
 R=S^1_a\vee S^1_b,
-\]
+$$
 so that
-\[
+$$
 \pi_1(R,*)\cong F(a,b),
-\]
+$$
 the free group on two generators.
 
 ::: pf
@@ -46,26 +46,26 @@ the free group on two generators.
 ::: pf-step
 
 Define a graph $\widetilde R$ with vertices
-\[
+$$
 v_0,v_1,v_2,v_3.
-\]
+$$
 For each $i\in\ZZ/4\ZZ$, give it an oriented edge
-\[
+$$
 A_i:v_i\longrightarrow v_{i+1}
-\]
+$$
 and a loop
-\[
+$$
 B_i:v_i\longrightarrow v_i.
-\]
+$$
 Map every vertex to the wedge point $*$.
 On each oriented edge $A_i$ use the standard characteristic map to $S^1_a$, sending the interior of $A_i$ homeomorphically and orientation-preservingly onto $S^1_a\setminus\{*\}$; do the analogous thing from each $B_i$ to $S^1_b$.
 
 ::: pf-proof
 
 This specifies a continuous cellular map
-\[
+$$
 p:\widetilde R\longrightarrow R.
-\]
+$$
 The $A_i$ form a $4$-cycle, so $\widetilde R$ is connected.
 
 :::
@@ -79,13 +79,13 @@ The map $p$ is a four-sheeted covering map.
 ::: pf-proof
 
 The inverse image of the wedge point is
-\[
+$$
 p^{-1}(*)=\{v_0,v_1,v_2,v_3\}.
-\]
+$$
 At each $v_i$ there is exactly one half-edge mapping to each of the four oriented germs
-\[
+$$
 a,\ a^{-1},\ b,\ b^{-1}
-\]
+$$
 at $*$: the outgoing edge $A_i$, the incoming edge $A_{i-1}$, and the two ends of the loop $B_i$.
 Thus the star of every $v_i$ maps homeomorphically onto a sufficiently small star neighborhood of $*$ in $R$.
 Away from the vertices, every edge maps homeomorphically onto the corresponding open edge of $R$.
@@ -102,19 +102,19 @@ The group $\pi_1(\widetilde R,v_0)$ is free of rank $5$.
 ::: pf-proof
 
 Take the maximal tree
-\[
+$$
 T=A_0\cup A_1\cup A_2.
-\]
+$$
 Collapsing $T$ to a point is a homotopy equivalence of graphs.
 The edges not in $T$ are
-\[
+$$
 A_3,\ B_0,\ B_1,\ B_2,\ B_3,
-\]
+$$
 so the quotient graph $\widetilde R/T$ is a wedge of five circles.
 Therefore
-\[
+$$
 \pi_1(\widetilde R,v_0)\cong F_5.
-\]
+$$
 
 :::
 
@@ -123,9 +123,9 @@ Therefore
 ::: {.pf-step #s4}
 
 The induced homomorphism
-\[
+$$
 p_*:\pi_1(\widetilde R,v_0)\longrightarrow\pi_1(R,*)
-\]
+$$
 is injective.
 
 ::: pf-proof
@@ -143,7 +143,7 @@ Thus $[\gamma]=1$.
 
 Consequently $F(a,b)$ contains a subgroup isomorphic to $F_5$.
 More explicitly, the image subgroup has free basis
-\[
+$$
 \boxed{
 b,
 \quad
@@ -155,26 +155,26 @@ a^3ba^{-3},
 \quad
 a^4.
 }
-\]
+$$
 
 ::: pf-proof
 
 By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, the subgroup
-\[
+$$
 p_*\pi_1(\widetilde R,v_0)\le F(a,b)
-\]
+$$
 is isomorphic to $F_5$.
 
 For the displayed basis, use the maximal tree $T$ from step [](#s3){.pf-ref}. The non-tree loop $B_i$ is based at $v_0$ by first following
-\[
+$$
 A_0A_1\cdots A_{i-1}
-\]
+$$
 from $v_0$ to $v_i$ and then returning along the same tree path.
 Its image in $R$ represents
-\[
+$$
 a^i b a^{-i}
 \qquad(0\le i\le3).
-\]
+$$
 The remaining non-tree edge $A_3$ closes the $A$-cycle and maps to $a^4$.
 These five loops are the standard free basis associated to the maximal tree, proving the claim.
 

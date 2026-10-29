@@ -36,31 +36,31 @@ $$
 
 ::: {.solution}
 (a) Define
-\[
+$$
 \Phi:A_1\times\cdots\times A_n
 \longrightarrow
 (A_1\times\cdots\times A_{n-1})\times A_n
-\]
+$$
 by
-\[
+$$
 \Phi(a_1,\dots,a_n)=((a_1,\dots,a_{n-1}),a_n).
-\]
+$$
 Its inverse is
-\[
+$$
 ((a_1,\dots,a_{n-1}),a_n)\longmapsto(a_1,\dots,a_n),
-\]
-so \(\Phi\) is bijective.
+$$
+so $\Phi$ is bijective.
 
-(b) For \(B_i=A_{2i-1}\times A_{2i}\), define
-\[
+(b) For $B_i=A_{2i-1}\times A_{2i}$, define
+$$
 \Psi(a_1,a_2,a_3,a_4,\dots)
 =((a_1,a_2),(a_3,a_4),\dots).
-\]
-This maps \(\prod_{j\ge1}A_j\) into \(\prod_{i\ge1}B_i\). Its inverse simply flattens the sequence of ordered pairs:
-\[
+$$
+This maps $\prod_{j\ge1}A_j$ into $\prod_{i\ge1}B_i$. Its inverse simply flattens the sequence of ordered pairs:
+$$
 ((b_1,b_2),(b_3,b_4),\dots)
 \longmapsto
 (b_1,b_2,b_3,b_4,\dots).
-\]
+$$
 Thus the two infinite products are in bijective correspondence.
 :::

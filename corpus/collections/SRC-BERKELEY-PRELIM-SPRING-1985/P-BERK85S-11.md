@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 F=\{a+b\sqrt[3]{2}+c\sqrt[3]{4}:a,b,c\in\QQ\}.
-\]
+$$
 Prove that $F$ is a field, that every element of $F$ has a unique representation of this form, and find
-\[
+$$
 (1-\sqrt[3]{2})^{-1}
-\]
+$$
 in $F$.
 :::
 

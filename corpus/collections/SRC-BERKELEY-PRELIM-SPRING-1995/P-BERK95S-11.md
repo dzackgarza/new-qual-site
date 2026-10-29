@@ -20,17 +20,17 @@ audit:
 
 ::: {.problem}
 Let $S\subset\RR^n$ be finite with $0\in S$. Suppose $\varphi:S\to S$ satisfies
-\[
+$$
 \varphi(0)=0
-\]
+$$
 and
-\[
+$$
 d(\varphi(s),\varphi(t))=d(s,t)
-\]
+$$
 for all $s,t\in S$, where $d$ is the Euclidean metric. Prove that there is a linear map
-\[
+$$
 F:\RR^n\to\RR^n
-\]
+$$
 whose restriction to $S$ is $\varphi$.
 :::
 

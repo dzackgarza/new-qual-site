@@ -31,26 +31,26 @@ Thus $\pi_i(X_m^n) \approx \pi_i(X)$ for $m \leq i \leq n$ and all other homotop
 :::
 
 ::: {.solution}
-Let \(X^n\) be the \(n\)-th Postnikov stage of \(X\), and \(X_m\) an \((m-1)\)-connected covering of \(X\). The two constructions affect disjoint ranges of homotopy groups:
+Let $X^n$ be the $n$-th Postnikov stage of $X$, and $X_m$ an $(m-1)$-connected covering of $X$. The two constructions affect disjoint ranges of homotopy groups:
 
-- passing to \(X^n\) preserves \(\pi_i\) for \(i\le n\) and kills \(\pi_i\) for \(i>n\);
-- passing to \(X_m\) kills \(\pi_i\) for \(i<m\) and preserves \(\pi_i\) for \(i\ge m\).
+- passing to $X^n$ preserves $\pi_i$ for $i\le n$ and kills $\pi_i$ for $i>n$;
+- passing to $X_m$ kills $\pi_i$ for $i<m$ and preserves $\pi_i$ for $i\ge m$.
 
-Therefore both iterated constructions \((X^n)_m\) and \((X_m)^n\) have homotopy groups
-\[
+Therefore both iterated constructions $(X^n)_m$ and $(X_m)^n$ have homotopy groups
+$$
 \pi_i\cong
 \begin{cases}
 \pi_i(X),&m\le i\le n,\\
 0,&i<m\text{ or }i>n.
 \end{cases}
-\]
+$$
 The natural maps in the two constructions give a comparison map
-\[
+$$
 (X^n)_m\longrightarrow (X_m)^n
-\]
-compatible with the maps to the corresponding Postnikov stages of \(X\). On every homotopy group this comparison is an isomorphism by the displayed calculation. Both spaces have CW type, so Whitehead's theorem gives
-\[
+$$
+compatible with the maps to the corresponding Postnikov stages of $X$. On every homotopy group this comparison is an isomorphism by the displayed calculation. Both spaces have CW type, so Whitehead's theorem gives
+$$
 \boxed{(X^n)_m\simeq (X_m)^n.}
-\]
-Thus the notation \(X_m^n\) is unambiguous up to homotopy, and it has exactly the stated nonzero homotopy groups.
+$$
+Thus the notation $X_m^n$ is unambiguous up to homotopy, and it has exactly the stated nonzero homotopy groups.
 :::

@@ -28,22 +28,22 @@ audit:
 
 ::: {.solution}
 For part (a), let $a,b\in\DD$ be distinct fixed points of $f$. Choose a disc automorphism $\phi$ with $\phi(a)=0$ and define
-\[
+$$
 g=\phi\circ f\circ\phi^{-1}.
-\]
+$$
 Then $g:\DD\to\DD$ is holomorphic, $g(0)=0$, and $c=\phi(b)\ne0$ is another fixed point. Schwarz's lemma gives $|g(z)|\le|z|$. Since $|g(c)|=|c|$ for $c\ne0$, the equality case of Schwarz's lemma implies
-\[
+$$
 g(z)=e^{i\theta}z
-\]
+$$
 for some real $\theta$. But $g(c)=c$ and $c\ne0$, so $e^{i\theta}=1$. Hence $g$ is the identity, and therefore so is $f$.
 
 For part (b), no. Let
-\[
+$$
 \phi(z)=\frac{z-i}{z+i}
-\]
+$$
 map the upper half-plane biholomorphically onto $\DD$, and let $T(z)=z+1$, an automorphism of the upper half-plane with no fixed point there. Then
-\[
+$$
 F=\phi\circ T\circ\phi^{-1}:\DD\to\DD
-\]
+$$
 is a holomorphic self-map. If $F(w)=w$, then applying $\phi^{-1}$ would give a fixed point of $T$, impossible. Thus a holomorphic self-map of the disc need not have a fixed point.
 :::

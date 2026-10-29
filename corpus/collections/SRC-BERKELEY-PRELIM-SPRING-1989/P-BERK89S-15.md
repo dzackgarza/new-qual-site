@@ -25,13 +25,13 @@ audit:
 
 ::: {.problem}
 Let $B=(b_{ij})_{i,j=1}^{20}$ be a real $20\times20$ matrix satisfying
-\[
+$$
 b_{ii}=0
-\]
+$$
 for every $i$, and
-\[
+$$
 b_{ij}\in\{1,-1\}
-\]
+$$
 for $i\ne j$. Prove that $B$ is nonsingular.
 :::
 

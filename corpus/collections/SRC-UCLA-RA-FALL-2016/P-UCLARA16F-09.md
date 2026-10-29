@@ -20,15 +20,15 @@ audit:
 Let $\mu$ be a positive Borel measure on $[0,1]$ with $\mu([0,1])=1$.
 
 (a) Show that the function
-\[
+$$
 f(z)=\int_{[0,1]}e^{izt}\,d\mu(t)
-\]
+$$
 is holomorphic on $\CC$.
 
 (b) Suppose that there exists $n\in\NN$ such that
-\[
+$$
 \limsup_{|z|\to\infty}\frac{|f(z)|}{|z|^n}<\infty.
-\]
+$$
 Show that then $\mu$ is equal to the Dirac measure $\delta_0$ at $0$.
 :::
 
@@ -36,33 +36,33 @@ Show that then $\mu$ is equal to the Dirac measure $\delta_0$ at $0$.
 
 ## Part (a)
 
-For every \(k\ge0\), define the moment
-\[
+For every $k\ge0$, define the moment
+$$
 m_k
 =
 \int_{[0,1]}t^k\,d\mu(t).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 One has
-\[
+$$
 \boxed{0\le m_k\le1}.
-\]
+$$
 
 
 ::: pf-proof
 
-Since \(0\le t\le1\),
-\[
+Since $0\le t\le1$,
+$$
 0\le t^k\le1.
-\]
-Integrating against the probability measure \(\mu\) gives
-\[
+$$
+Integrating against the probability measure $\mu$ gives
+$$
 0\le m_k\le\mu([0,1])=1.
-\]
+$$
 
 :::
 
@@ -70,34 +70,34 @@ Integrating against the probability measure \(\mu\) gives
 
 ::: {.pf-step #s1-2}
 
-For fixed \(z\in\CC\),
-\[
+For fixed $z\in\CC$,
+$$
 e^{izt}
 =
 \sum_{k=0}^{\infty}
 \frac{(izt)^k}{k!}
-\]
-uniformly for \(t\in[0,1]\).
+$$
+uniformly for $t\in[0,1]$.
 
 
 ::: pf-proof
 
-For \(t\in[0,1]\),
-\[
+For $t\in[0,1]$,
+$$
 \left|
 \frac{(izt)^k}{k!}
 \right|
 \le
 \frac{|z|^k}{k!},
-\]
+$$
 and
-\[
+$$
 \sum_{k=0}^{\infty}
 \frac{|z|^k}{k!}
 =
 e^{|z|}<\infty.
-\]
-Apply the Weierstrass \(M\)-test.
+$$
+Apply the Weierstrass $M$-test.
 
 :::
 
@@ -106,19 +106,19 @@ Apply the Weierstrass \(M\)-test.
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{
 f(z)
 =
 \sum_{k=0}^{\infty}
 \frac{i^k m_k}{k!}z^k}.
-\]
+$$
 
 
 ::: pf-proof
 
 Integrate the uniformly convergent series from step [](#s1-2){.pf-ref} term by term:
-\[
+$$
 \begin{aligned}
 f(z)
 &=
@@ -130,7 +130,7 @@ f(z)
 \frac{(iz)^k}{k!}
 \int t^k\,d\mu(t).
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -144,14 +144,14 @@ The series in step [](#s1-3){.pf-ref} has infinite radius of convergence.
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref},
-\[
+$$
 \left|
 \frac{i^k m_k}{k!}z^k
 \right|
 \le
 \frac{|z|^k}{k!},
-\]
-and the exponential series converges for every \(z\in\CC\).
+$$
+and the exponential series converges for every $z\in\CC$.
 
 :::
 
@@ -160,15 +160,15 @@ and the exponential series converges for every \(z\in\CC\).
 ::: {.pf-step #s1-5}
 
 Hence
-\[
+$$
 \boxed{
 f\text{ is entire}.}
-\]
+$$
 
 
 ::: pf-proof
 
-Step [](#s1-3){.pf-ref} represents \(f\) by a power series with infinite radius of convergence.
+Step [](#s1-3){.pf-ref} represents $f$ by a power series with infinite radius of convergence.
 
 :::
 
@@ -176,14 +176,14 @@ Step [](#s1-3){.pf-ref} represents \(f\) by a power series with infinite radius 
 
 ::: {.pf-step #s1-6}
 
-There exist constants \(C>0\) and \(R_0>0\) such that
-\[
+There exist constants $C>0$ and $R_0>0$ such that
+$$
 \boxed{
 |f(z)|
 \le
 C|z|^n}
-\]
-whenever \(|z|\ge R_0\).
+$$
+whenever $|z|\ge R_0$.
 
 
 ::: pf-proof
@@ -196,18 +196,18 @@ This is the definition of finiteness of the stated limsup.
 
 ::: {.pf-step #s1-7}
 
-There is a constant \(C_1>0\) such that for every \(R\ge1\),
-\[
+There is a constant $C_1>0$ such that for every $R\ge1$,
+$$
 \boxed{
 \max_{|z|=R}|f(z)|
 \le
 C_1R^n}.
-\]
+$$
 
 
 ::: pf-proof
 
-For \(R\ge R_0\), use step [](#s1-6){.pf-ref}. For \(1\le R\le R_0\), continuity of \(f\) on the compact disk \(|z|\le R_0\) gives a finite maximum; enlarge \(C_1\) to absorb this bounded range.
+For $R\ge R_0$, use step [](#s1-6){.pf-ref}. For $1\le R\le R_0$, continuity of $f$ on the compact disk $|z|\le R_0$ gives a finite maximum; enlarge $C_1$ to absorb this bounded range.
 
 :::
 
@@ -215,18 +215,18 @@ For \(R\ge R_0\), use step [](#s1-6){.pf-ref}. For \(1\le R\le R_0\), continuity
 
 ::: {.pf-step #s1-8}
 
-For every integer \(m>n\), Cauchy's estimate gives
-\[
+For every integer $m>n$, Cauchy's estimate gives
+$$
 |f^{(m)}(0)|
 \le
 \frac{m!}{R^m}
 \max_{|z|=R}|f(z)|.
-\]
+$$
 
 
 ::: pf-proof
 
-Apply Cauchy's estimate to the entire function \(f\) on the circle \(|z|=R\).
+Apply Cauchy's estimate to the entire function $f$ on the circle $|z|=R$.
 
 :::
 
@@ -235,12 +235,12 @@ Apply Cauchy's estimate to the entire function \(f\) on the circle \(|z|=R\).
 ::: {.pf-step #s1-9}
 
 Therefore
-\[
+$$
 |f^{(m)}(0)|
 \le
 m!C_1R^{n-m}
-\]
-for every \(R\ge1\).
+$$
+for every $R\ge1$.
 
 
 ::: pf-proof
@@ -253,21 +253,21 @@ Substitute step [](#s1-7){.pf-ref} into step [](#s1-8){.pf-ref}.
 
 ::: {.pf-step #s1-10}
 
-Letting \(R\to\infty\),
-\[
+Letting $R\to\infty$,
+$$
 \boxed{
 f^{(m)}(0)=0}
-\]
-for every \(m>n\).
+$$
+for every $m>n$.
 
 
 ::: pf-proof
 
-Since \(m>n\),
-\[
+Since $m>n$,
+$$
 R^{n-m}\to0.
-\]
-The left-hand side of step [](#s1-9){.pf-ref} is independent of \(R\), so it must vanish.
+$$
+The left-hand side of step [](#s1-9){.pf-ref} is independent of $R$, so it must vanish.
 
 :::
 
@@ -275,12 +275,12 @@ The left-hand side of step [](#s1-9){.pf-ref} is independent of \(R\), so it mus
 
 ::: pf-step
 
-Hence \(f\) is a polynomial of degree at most \(n\).
+Hence $f$ is a polynomial of degree at most $n$.
 
 
 ::: pf-proof
 
-All Taylor coefficients of degree \(>n\) vanish by step [](#s1-10){.pf-ref}, and \(f\) is entire.
+All Taylor coefficients of degree $>n$ vanish by step [](#s1-10){.pf-ref}, and $f$ is entire.
 
 :::
 
@@ -288,16 +288,16 @@ All Taylor coefficients of degree \(>n\) vanish by step [](#s1-10){.pf-ref}, and
 
 ::: {.pf-step #s1-12}
 
-For every real \(x\),
-\[
+For every real $x$,
+$$
 \boxed{|f(x)|\le1}.
-\]
+$$
 
 
 ::: pf-proof
 
-Since \(|e^{ixt}|=1\),
-\[
+Since $|e^{ixt}|=1$,
+$$
 \begin{aligned}
 |f(x)|
 &=
@@ -311,7 +311,7 @@ Since \(|e^{ixt}|=1\),
 &=
 1.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -319,12 +319,12 @@ Since \(|e^{ixt}|=1\),
 
 ::: {.pf-step #s1-13}
 
-Therefore \(f\) is constant.
+Therefore $f$ is constant.
 
 
 ::: pf-proof
 
-A nonconstant polynomial is unbounded on the real axis as \(|x|\to\infty\). Step [](#s1-12){.pf-ref} says \(f\) is bounded on \(\RR\).
+A nonconstant polynomial is unbounded on the real axis as $|x|\to\infty$. Step [](#s1-12){.pf-ref} says $f$ is bounded on $\RR$.
 
 :::
 
@@ -333,18 +333,18 @@ A nonconstant polynomial is unbounded on the real axis as \(|x|\to\infty\). Step
 ::: {.pf-step #s1-14}
 
 Since
-\[
+$$
 f(0)=1,
-\]
+$$
 one has
-\[
+$$
 \boxed{f\equiv1}.
-\]
+$$
 
 
 ::: pf-proof
 
-\[
+$$
 f(0)
 =
 \int 1\,d\mu
@@ -352,7 +352,7 @@ f(0)
 \mu([0,1])
 =
 1.
-\]
+$$
 Combine with step [](#s1-13){.pf-ref}.
 
 :::
@@ -361,23 +361,23 @@ Combine with step [](#s1-13){.pf-ref}.
 
 ::: {.pf-step #s1-15}
 
-Differentiating the power series at \(0\),
-\[
+Differentiating the power series at $0$,
+$$
 \boxed{
 f'(0)
 =
 i\int_{[0,1]}t\,d\mu(t)}.
-\]
+$$
 
 
 ::: pf-proof
 
-From step [](#s1-3){.pf-ref}, the coefficient of \(z\) is
-\[
+From step [](#s1-3){.pf-ref}, the coefficient of $z$ is
+$$
 im_1
 =
 i\int t\,d\mu.
-\]
+$$
 
 :::
 
@@ -385,20 +385,20 @@ i\int t\,d\mu.
 
 ::: pf-step
 
-Since \(f\equiv1\),
-\[
+Since $f\equiv1$,
+$$
 \boxed{
 \int_{[0,1]}t\,d\mu(t)=0}.
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-14){.pf-ref} gives
-\[
+$$
 f'(0)=0.
-\]
-Use step [](#s1-15){.pf-ref} and divide by \(i\).
+$$
+Use step [](#s1-15){.pf-ref} and divide by $i$.
 
 :::
 
@@ -406,17 +406,17 @@ Use step [](#s1-15){.pf-ref} and divide by \(i\).
 
 ::: {.pf-step #s1-17}
 
-For every \(\varepsilon>0\),
-\[
+For every $\varepsilon>0$,
+$$
 \boxed{
 \mu([\varepsilon,1])=0}.
-\]
+$$
 
 
 ::: pf-proof
 
-Since \(t\ge\varepsilon\) on \([\varepsilon,1]\),
-\[
+Since $t\ge\varepsilon$ on $[\varepsilon,1]$,
+$$
 0
 =
 \int_0^1 t\,d\mu(t)
@@ -424,7 +424,7 @@ Since \(t\ge\varepsilon\) on \([\varepsilon,1]\),
 \int_{[\varepsilon,1]}t\,d\mu(t)
 \ge
 \varepsilon\,\mu([\varepsilon,1]).
-\]
+$$
 Thus the measure must vanish there.
 
 :::
@@ -434,21 +434,21 @@ Thus the measure must vanish there.
 ::: {.pf-step #s1-18}
 
 Therefore
-\[
+$$
 \boxed{
 \mu((0,1])=0}.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 (0,1]
 =
 \bigcup_{m=1}^{\infty}
 [1/m,1],
-\]
+$$
 and each set in the union has measure zero by step [](#s1-17){.pf-ref}, countable subadditivity gives zero measure to the union.
 
 :::
@@ -457,16 +457,16 @@ and each set in the union has measure zero by step [](#s1-17){.pf-ref}, countabl
 
 ::: pf-step
 
-Since \(\mu([0,1])=1\),
-\[
+Since $\mu([0,1])=1$,
+$$
 \boxed{
 \mu(\{0\})=1}.
-\]
+$$
 
 
 ::: pf-proof
 
-The complement of \(\{0\}\) in \([0,1]\) is \((0,1]\), which has measure zero by step [](#s1-18){.pf-ref}.
+The complement of $\{0\}$ in $[0,1]$ is $(0,1]$, which has measure zero by step [](#s1-18){.pf-ref}.
 
 :::
 
@@ -475,15 +475,15 @@ The complement of \(\{0\}\) in \([0,1]\) is \((0,1]\), which has measure zero by
 ::: {.pf-step #s1-20}
 
 Hence
-\[
+$$
 \boxed{
 \mu=\delta_0}.
-\]
+$$
 
 
 ::: pf-proof
 
-A probability measure concentrated entirely at \(0\) is the Dirac measure at \(0\).
+A probability measure concentrated entirely at $0$ is the Dirac measure at $0$.
 
 :::
 

@@ -17,9 +17,9 @@ audit:
 
 ::: {.problem}
 Let $f:\RR^d\to[0,1]$ be Lebesgue measurable and set
-\[
+$$
 W_n=\{x:2^{-n}\le f(x)\le1-2^{-n}\}.
-\]
+$$
 Prove that either
 
 1. there is a measurable $X\subset\RR^d$ such that $f=\mathbf1_X$ almost everywhere, or

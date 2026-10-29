@@ -28,10 +28,10 @@ audit:
 
 ::: {.problem}
 Show that every rotation of $\RR^3$ has an axis. More precisely, let $A$ be a real $3\times3$ matrix such that
-\[
+$$
 A^T=A^{-1},
 \qquad \det A>0.
-\]
+$$
 Prove that there is a nonzero vector $v$ such that $Av=v$.
 :::
 

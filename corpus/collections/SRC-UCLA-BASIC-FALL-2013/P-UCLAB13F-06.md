@@ -24,9 +24,9 @@ Let $X$ be a compact metric space, let $(x_n)$ be a sequence in $X$, and let $x\
 ::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that
-\[
+$$
 x_n\not\to x.
-\]
+$$
 
 
 ::: pf-proof
@@ -40,9 +40,9 @@ This is the negation of the desired conclusion.
 ::: {.pf-step #s1-2}
 
 There exists $\varepsilon>0$ such that for every $N$ there is some $n\ge N$ with
-\[
+$$
 d(x_n,x)\ge\varepsilon.
-\]
+$$
 
 
 ::: pf-proof
@@ -56,13 +56,13 @@ This is exactly the negation of convergence in a metric space.
 ::: {.pf-step #s1-3}
 
 One can choose a subsequence
-\[
+$$
 y_k=x_{n_k}
-\]
+$$
 such that
-\[
+$$
 d(y_k,x)\ge\varepsilon
-\]
+$$
 for every $k$.
 
 
@@ -70,17 +70,17 @@ for every $k$.
 
 Choose $n_1$ using step [](#s1-2){.pf-ref} with $N=1$.
 After choosing $n_k$, use step [](#s1-2){.pf-ref} with
-\[
+$$
 N=n_k+1
-\]
+$$
 to choose
-\[
+$$
 n_{k+1}>n_k
-\]
+$$
 with
-\[
+$$
 d(x_{n_{k+1}},x)\ge\varepsilon.
-\]
+$$
 This inductively defines the required subsequence.
 
 :::
@@ -96,9 +96,9 @@ No subsequence of $(y_k)$ can converge to $x$.
 
 Every term of every subsequence of $(y_k)$ remains at distance at least $\varepsilon$ from $x$.
 But any sequence converging to $x$ must eventually lie in the open ball
-\[
+$$
 B(x,\varepsilon).
-\]
+$$
 Thus no subsequence of $(y_k)$ can converge to $x$.
 
 :::
@@ -123,9 +123,9 @@ Step [](#s1-4){.pf-ref} says this particular subsequence has no such further sub
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{x_n\to x}.
-\]
+$$
 
 
 ::: pf-proof

@@ -24,11 +24,11 @@ Prove that $v_1,\ldots,v_n$ are linearly independent.
 ::: {.solution}
 
 Let
-\[
+$$
 Tv_i=\lambda_i v_i,
 \qquad
 i=1,\ldots,n,
-\]
+$$
 where the scalars $\lambda_1,\ldots,\lambda_n$ are pairwise distinct.
 
 ::: pf
@@ -36,9 +36,9 @@ where the scalars $\lambda_1,\ldots,\lambda_n$ are pairwise distinct.
 ::: {.pf-step #s1-1}
 
 Suppose
-\[
+$$
 \sum_{i=1}^n c_i v_i=0.
-\]
+$$
 
 
 ::: pf-proof
@@ -52,26 +52,26 @@ To prove linear independence, it is enough to show that every linear relation am
 ::: {.pf-step #s1-2}
 
 Fix $j\in\{1,\ldots,n\}$ and define
-\[
+$$
 p_j(t)=\prod_{\substack{1\le i\le n\\ i\ne j}}(t-\lambda_i).
-\]
+$$
 Then
-\[
+$$
 p_j(T)v_i=0
-\]
+$$
 for every $i\ne j$.
 
 
 ::: pf-proof
 
 If $i\ne j$, the product defining $p_j(T)$ contains the factor
-\[
+$$
 T-\lambda_i I.
-\]
+$$
 Since
-\[
+$$
 (T-\lambda_i I)v_i=0,
-\]
+$$
 the entire product annihilates $v_i$.
 
 :::
@@ -81,19 +81,19 @@ the entire product annihilates $v_i$.
 ::: {.pf-step #s1-3}
 
 One has
-\[
+$$
 p_j(T)v_j
 =
 \left(\prod_{i\ne j}(\lambda_j-\lambda_i)\right)v_j.
-\]
+$$
 
 
 ::: pf-proof
 
 For every scalar polynomial $p$ and every eigenvector $v_j$ of $T$ with eigenvalue $\lambda_j$,
-\[
+$$
 p(T)v_j=p(\lambda_j)v_j.
-\]
+$$
 Apply this to $p_j$.
 
 :::
@@ -108,17 +108,17 @@ The coefficient $c_j$ in step [](#s1-1){.pf-ref} is zero.
 ::: pf-proof
 
 Apply $p_j(T)$ to the relation in step [](#s1-1){.pf-ref}. By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
-\[
+$$
 0
 =
 p_j(T)\left(\sum_{i=1}^n c_i v_i\right)
 =
 c_j\left(\prod_{i\ne j}(\lambda_j-\lambda_i)\right)v_j.
-\]
+$$
 The eigenvalues are pairwise distinct, so
-\[
+$$
 \prod_{i\ne j}(\lambda_j-\lambda_i)\ne0,
-\]
+$$
 and $v_j\ne0$ by hypothesis. Therefore $c_j=0$.
 
 :::

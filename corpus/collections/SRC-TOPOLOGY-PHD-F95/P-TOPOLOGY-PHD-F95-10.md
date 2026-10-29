@@ -34,9 +34,9 @@ Prove that $\RR^2$ cannot be retracted to $S^1$.
 
 ::: {.solution}
 Fix a basepoint $x_0\in S^1\subset\RR^2$, and let
-\[
+$$
 i:S^1\hookrightarrow\RR^2
-\]
+$$
 denote inclusion.
 
 ::: pf
@@ -44,21 +44,21 @@ denote inclusion.
 ::: {.pf-step #s1}
 
 If a retraction
-\[
+$$
 r:\RR^2\longrightarrow S^1
-\]
+$$
 existed, then
-\[
+$$
 r\circ i=\id_{S^1}.
-\]
+$$
 
 ::: pf-proof
 
 By definition, a retraction onto the subspace $S^1$ restricts to the identity on $S^1$.
 Thus for every $z\in S^1$,
-\[
+$$
 (r\circ i)(z)=r(z)=z.
-\]
+$$
 Since $r(x_0)=x_0$, both $i$ and $r$ are based maps at $x_0$.
 
 :::
@@ -68,19 +68,19 @@ Since $r(x_0)=x_0$, both $i$ and $r$ are based maps at $x_0$.
 ::: {.pf-step #s2}
 
 Functoriality would therefore give
-\[
+$$
 r_*\circ i_*=\id_{\pi_1(S^1,x_0)}.
-\]
+$$
 
 ::: pf-proof
 
 Applying the fundamental-group functor to the identity in step [](#s1){.pf-ref} gives
-\[
+$$
 r_*\circ i_*
 =(r\circ i)_*
 =(\id_{S^1})_*
 =\id_{\pi_1(S^1,x_0)}.
-\]
+$$
 
 :::
 
@@ -89,17 +89,17 @@ r_*\circ i_*
 ::: {.pf-step #s3}
 
 On the other hand, the homomorphism
-\[
+$$
 i_*:\pi_1(S^1,x_0)\longrightarrow\pi_1(\RR^2,x_0)
-\]
+$$
 is the zero homomorphism.
 
 ::: pf-proof
 
 The plane is contractible, hence simply connected, so
-\[
+$$
 \pi_1(\RR^2,x_0)=0.
-\]
+$$
 Therefore every homomorphism into this group, in particular $i_*$, is zero.
 
 :::
@@ -113,13 +113,13 @@ This contradicts step [](#s2){.pf-ref}, so no retraction $\RR^2\to S^1$ exists.
 ::: pf-proof
 
 By step [](#s3){.pf-ref},
-\[
+$$
 r_*\circ i_*=0.
-\]
+$$
 But step [](#s2){.pf-ref} says the same composite is the identity on
-\[
+$$
 \pi_1(S^1,x_0)\cong\ZZ,
-\]
+$$
 which is nontrivial.
 Hence the assumed retraction cannot exist.
 

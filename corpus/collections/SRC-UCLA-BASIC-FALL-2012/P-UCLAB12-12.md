@@ -19,9 +19,9 @@ Prove that the row rank of $M$ equals the column rank of $M$. Also, however you 
 ::: {.solution}
 
 Let
-\[
+$$
 T:\FF^m\to\FF^n
-\]
+$$
 be the linear map whose matrix in the standard bases is $M$, where $\FF$ is the underlying field.
 
 ::: pf
@@ -29,21 +29,21 @@ be the linear map whose matrix in the standard bases is $M$, where $\FF$ is the 
 ::: {.pf-step #s1-1}
 
 The column rank of $M$ equals
-\[
+$$
 \dim\operatorname{image}T.
-\]
+$$
 
 
 ::: pf-proof
 
 If
-\[
+$$
 e_1,\ldots,e_m
-\]
+$$
 is the standard basis of $\FF^m$, then
-\[
+$$
 T(e_j)
-\]
+$$
 is the $j$th column of $M$.
 Hence the span of the columns is exactly $\operatorname{image}T$.
 
@@ -54,25 +54,25 @@ Hence the span of the columns is exactly $\operatorname{image}T$.
 ::: {.pf-step #s1-2}
 
 Let
-\[
+$$
 T^*:(\FF^n)^*\to(\FF^m)^*
-\]
+$$
 be the dual map
-\[
+$$
 T^*(\varphi)=\varphi\circ T.
-\]
+$$
 Then the row rank of $M$ equals
-\[
+$$
 \dim\operatorname{image}T^*.
-\]
+$$
 
 
 ::: pf-proof
 
 In the standard dual bases, the matrix of $T^*$ is the transpose
-\[
+$$
 M^t.
-\]
+$$
 Its columns are exactly the rows of $M$, regarded as coordinate vectors in $(\FF^m)^*$.
 Thus the row space of $M$ is naturally identified with $\operatorname{image}T^*$.
 
@@ -83,37 +83,37 @@ Thus the row space of $M$ is naturally identified with $\operatorname{image}T^*$
 ::: {.pf-step #s1-3}
 
 One has
-\[
+$$
 \ker T^*
 =
 (\operatorname{image}T)^0,
-\]
+$$
 the annihilator of $\operatorname{image}T$ in $(\FF^n)^*$.
 
 
 ::: pf-proof
 
 Let
-\[
+$$
 \varphi\in(\FF^n)^*.
-\]
+$$
 Then
-\[
+$$
 \varphi\in\ker T^*
-\]
+$$
 if and only if
-\[
+$$
 T^*(\varphi)=\varphi\circ T=0.
-\]
+$$
 This means
-\[
+$$
 \varphi(Tv)=0
-\]
+$$
 for every $v\in\FF^m$, equivalently $\varphi$ vanishes on every vector in $\operatorname{image}T$.
 That is precisely the condition
-\[
+$$
 \varphi\in(\operatorname{image}T)^0.
-\]
+$$
 
 :::
 
@@ -122,34 +122,34 @@ That is precisely the condition
 ::: {.pf-step #s1-4}
 
 For every subspace
-\[
+$$
 U\subseteq\FF^n,
-\]
+$$
 one has
-\[
+$$
 \dim U^0=n-\dim U.
-\]
+$$
 
 
 ::: pf-proof
 
 Let
-\[
+$$
 u_1,\ldots,u_r
-\]
+$$
 be a basis of $U$, and extend it to a basis
-\[
+$$
 u_1,\ldots,u_r,v_{r+1},\ldots,v_n
-\]
+$$
 of $\FF^n$.
 In the corresponding dual basis, the annihilator $U^0$ is spanned by
-\[
+$$
 v_{r+1}^*,\ldots,v_n^*.
-\]
+$$
 Hence
-\[
+$$
 \dim U^0=n-r=n-\dim U.
-\]
+$$
 
 :::
 
@@ -158,21 +158,21 @@ Hence
 ::: {.pf-step #s1-5}
 
 The dual map has the same rank as the original map:
-\[
+$$
 \dim\operatorname{image}T^*
 =
 \dim\operatorname{image}T.
-\]
+$$
 
 
 ::: pf-proof
 
 By rank-nullity for
-\[
+$$
 T^*:(\FF^n)^*\to(\FF^m)^*,
-\]
+$$
 steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give
-\[
+$$
 \begin{aligned}
 \dim\operatorname{image}T^*
 &=
@@ -184,7 +184,7 @@ n-\bigl(n-\dim\operatorname{image}T\bigr)\\
 &=
 \dim\operatorname{image}T.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -198,13 +198,13 @@ Therefore the row rank of $M$ equals the column rank of $M$.
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref}, the column rank is
-\[
+$$
 \dim\operatorname{image}T.
-\]
+$$
 By step [](#s1-2){.pf-ref}, the row rank is
-\[
+$$
 \dim\operatorname{image}T^*.
-\]
+$$
 These dimensions are equal by step [](#s1-5){.pf-ref}.
 
 :::
@@ -214,13 +214,13 @@ These dimensions are equal by step [](#s1-5){.pf-ref}.
 ::: {.pf-step #s1-7}
 
 The equality has the natural vector-space interpretation
-\[
+$$
 \boxed{
 \dim\operatorname{image}T
 =
 \dim\operatorname{image}T^*
 }.
-\]
+$$
 
 
 ::: pf-proof

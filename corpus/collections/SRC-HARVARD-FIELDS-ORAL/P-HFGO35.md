@@ -34,9 +34,9 @@ The polynomial must have degree $3$.
 ::: {.pf-step #s1}
 
 If $f(T)\in\FF_3[T]$ is irreducible of degree $d$, then
-\[
+$$
 \FF_3[T]/(f)
-\]
+$$
 has $3^d$ elements.
 
 ::: pf-proof
@@ -64,21 +64,21 @@ By step [](#s1){.pf-ref} the field has $3^d$ elements, and $3^d=27$ if and only 
 ::: {.pf-step #s3}
 
 For example,
-\[
+$$
 f(T)=T^3-T-1
-\]
+$$
 is irreducible over $\FF_3$.
 
 ::: pf-proof
 
 It has no root in $\FF_3$:
-\[
+$$
 f(0)=2,
 \qquad
 f(1)=2,
 \qquad
 f(2)=2.
-\]
+$$
 A cubic over a field is reducible exactly when it has a linear factor, hence a
 root. Therefore $f$ is irreducible.
 
@@ -89,9 +89,9 @@ root. Therefore $f$ is irreducible.
 ::: pf-step
 
 Thus
-\[
+$$
 \FF_3[T]/(T^3-T-1)
-\]
+$$
 is a field of order $27$.
 
 ::: pf-proof

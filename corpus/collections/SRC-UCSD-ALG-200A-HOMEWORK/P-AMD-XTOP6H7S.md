@@ -35,24 +35,24 @@ audit:
 
 ::: {.problem}
 Let $H_1,H_2,H_3$ be subgroups of a finite group $G$ and suppose
-\[
+$$
 G=H_1\cup H_2\cup H_3.
-\]
+$$
 
 Show that either $G=H_i$ for some $i$, or
-\[
+$$
 [G:H_i]=2
 \qquad\text{for }i=1,2,3.
-\]
+$$
 Find the smallest group for which the second possibility occurs.
 :::
 
 ::: {.solution}
 If one of the $H_i$ equals $G$, the first alternative holds.
 Assume henceforth that all three subgroups are proper, and set
-\[
+$$
 K=H_1\cap H_2\cap H_3.
-\]
+$$
 
 ::: pf
 
@@ -64,9 +64,9 @@ It suffices by symmetry to prove $H_1\cap H_2=K$.
 
 Because $H_1$ and $H_2$ are both proper, they cannot cover $G$: a group that is the union of two subgroups must equal one of them.
 Hence choose
-\[
+$$
 z\in G\setminus(H_1\cup H_2).
-\]
+$$
 Since $G=H_1\cup H_2\cup H_3$, we have $z\in H_3$.
 
 Let $x\in H_1\cap H_2$.
@@ -74,14 +74,14 @@ If $x\notin H_3$, then $xz\notin H_1$; otherwise $z=x^{-1}(xz)\in H_1$.
 Similarly $xz\notin H_2$.
 Therefore the three-subgroup cover forces $xz\in H_3$.
 Since also $z\in H_3$,
-\[
+$$
 x=(xz)z^{-1}\in H_3,
-\]
+$$
 a contradiction.
 Thus every $x\in H_1\cap H_2$ lies in $H_3$, so
-\[
+$$
 H_1\cap H_2=K.
-\]
+$$
 The same argument applies to the other two pairs.
 :::
 
@@ -90,9 +90,9 @@ The same argument applies to the other two pairs.
 ::: {.pf-step #index-sum-formula}
 Put $a_i=[H_i:K]$.
 Then each $a_i\ge 2$ and
-\[
+$$
 [G:K]=a_1+a_2+a_3-2.
-\]
+$$
 
 ::: pf-proof
 If $a_i=1$, then $H_i=K$ is contained in each of the other two subgroups.
@@ -100,7 +100,7 @@ The three-subgroup cover would then reduce to a cover of $G$ by two proper subgr
 Hence $a_i\ge2$.
 
 By step [](#pairwise-intersections-equal-k){.pf-ref} and inclusion-exclusion,
-\[
+$$
 \begin{aligned}
 |G|
  &=|H_1|+|H_2|+|H_3|
@@ -108,7 +108,7 @@ By step [](#pairwise-intersections-equal-k){.pf-ref} and inclusion-exclusion,
    +|K|\\
  &=|K|(a_1+a_2+a_3-2).
 \end{aligned}
-\]
+$$
 Dividing by $|K|$ gives the asserted formula.
 :::
 
@@ -116,30 +116,30 @@ Dividing by $|K|$ gives the asserted formula.
 
 ::: {.pf-step #product-bound}
 For distinct $i,j$,
-\[
+$$
 a_i a_j\le [G:K].
-\]
+$$
 
 ::: pf-proof
 For finite subgroups $A,B\le G$, the multiplication map
-\[
+$$
 A\times B\longrightarrow AB,
 \qquad
 (a,b)\longmapsto ab,
-\]
+$$
 has every fiber of cardinality $|A\cap B|$: if $ab=a'b'$, then $a'^{-1}a=b'b^{-1}\in A\cap B$, and every element of $A\cap B$ gives one such representation.
 Consequently
-\[
+$$
 |AB|=\frac{|A||B|}{|A\cap B|}.
-\]
+$$
 Applying this with $A=H_i$ and $B=H_j$ and using step [](#pairwise-intersections-equal-k){.pf-ref} gives
-\[
+$$
 |H_iH_j|=|K|a_i a_j.
-\]
+$$
 Since $H_iH_j\subseteq G$,
-\[
+$$
 |K|a_i a_j\le |G|,
-\]
+$$
 and division by $|K|$ proves the claim.
 :::
 
@@ -150,22 +150,22 @@ We have $a_1=a_2=a_3=2$.
 
 ::: pf-proof
 Relabel the subgroups so that
-\[
+$$
 2\le a_1\le a_2\le a_3.
-\]
+$$
 By steps [](#index-sum-formula){.pf-ref} and [](#product-bound){.pf-ref},
-\[
+$$
 a_2a_3\le a_1+a_2+a_3-2.
-\]
+$$
 Rearranging,
-\[
+$$
 (a_2-1)(a_3-1)\le a_1-1\le a_2-1.
-\]
+$$
 Since $a_2-1>0$, division gives $a_3-1\le1$, so $a_3\le2$.
 Together with $2\le a_1\le a_2\le a_3$, this yields
-\[
+$$
 a_1=a_2=a_3=2.
-\]
+$$
 :::
 
 :::
@@ -175,13 +175,13 @@ Each $H_i$ has index $2$ in $G$.
 
 ::: pf-proof
 By steps [](#index-sum-formula){.pf-ref} and [](#indices-equal-two){.pf-ref},
-\[
+$$
 [G:K]=2+2+2-2=4.
-\]
+$$
 Therefore, for each $i$,
-\[
+$$
 [G:H_i]=\frac{[G:K]}{[H_i:K]}=\frac42=2.
-\]
+$$
 This proves the second alternative.
 :::
 
@@ -192,9 +192,9 @@ The smallest group realizing the second alternative is the Klein four group $C_2
 
 ::: pf-proof
 In
-\[
+$$
 C_2\times C_2=\{(0,0),(1,0),(0,1),(1,1)\},
-\]
+$$
 the three subgroups generated respectively by $(1,0)$, $(0,1)$, and $(1,1)$ all have order $2$, hence index $2$, and their union is the whole group.
 
 No smaller group can realize the second alternative.

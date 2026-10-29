@@ -37,14 +37,14 @@ Let $k$ be a field.
 ::: pf-step
 
 **Hilbert's Nullstellensatz.** If $k$ is algebraically closed and $I\subseteq k[x_1,\ldots,x_n]$ is an ideal, then
-\[
+$$
 I(V(I))=\sqrt I.
-\]
+$$
 Equivalently, a polynomial $f$ vanishes on every common zero of $I$ in $k^n$ if and only if $f^N\in I$ for some $N\ge1$.
 The weak form says that every maximal ideal of $k[x_1,\ldots,x_n]$ is
-\[
+$$
 (x_1-a_1,\ldots,x_n-a_n)
-\]
+$$
 for a unique $(a_1,\ldots,a_n)\in k^n$.
 
 ::: pf-proof
@@ -52,11 +52,11 @@ for a unique $(a_1,\ldots,a_n)\in k^n$.
 This is the standard strong, respectively weak, form of Hilbert's Nullstellensatz. The algebraic-closedness hypothesis is essential for these formulations over $k^n$.
 
 Put
-\[
+$$
 R=k[x_1,\ldots,x_n],
 \qquad
 K=\langle f_1,\ldots,f_s,1-yf\rangle\subseteq R[y].
-\]
+$$
 
 :::
 
@@ -69,13 +69,13 @@ If $f\in\sqrt I$, then $1\in K$.
 ::: pf-proof
 
 Choose $N\ge1$ such that $f^N\in I=(f_1,\ldots,f_s)$. Then
-\[
+$$
 1-(yf)^N=(1-yf)\left(1+yf+\cdots+(yf)^{N-1}\right).
-\]
+$$
 Hence
-\[
+$$
 1=(1-yf)\left(1+yf+\cdots+(yf)^{N-1}\right)+y^Nf^N.
-\]
+$$
 The first term lies in $(1-yf)$ and the second lies in $IR[y]$, because $f^N\in I$. Thus $1\in K$.
 
 :::
@@ -90,27 +90,27 @@ If $1\in K$, then $f\in\sqrt I$.
 
 If $f=0$, then $f\in\sqrt I$ trivially. Assume $f\ne0$.
 Localize $R$ at the powers of $f$. There is an $R$-algebra homomorphism
-\[
+$$
 \varphi:R[y]\longrightarrow R_f,
 \qquad
 \varphi(y)=f^{-1}.
-\]
+$$
 It sends
-\[
+$$
 1-yf\longmapsto 0.
-\]
+$$
 If $1\in K$, applying $\varphi$ therefore gives
-\[
+$$
 1\in IR_f.
-\]
+$$
 Thus there are elements $a_i/f^{m_i}\in R_f$ such that
-\[
+$$
 1=\sum_i \frac{a_i}{f^{m_i}}f_i.
-\]
+$$
 Multiplying by a sufficiently large power $f^N$ clears denominators and yields
-\[
+$$
 f^N=\sum_i b_i f_i\in I.
-\]
+$$
 Hence $f\in\sqrt I$.
 
 :::
@@ -120,25 +120,25 @@ Hence $f\in\sqrt I$.
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{
 f\in\sqrt I
 \iff
 1\in\langle f_1,\ldots,f_s,1-yf\rangle\subseteq R[y].}
-\]
+$$
 
 ::: pf-proof
 
 Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}. This proves part (b).
 
 For part (c), write
-\[
+$$
 f=u f_1^{a_1}\cdots f_r^{a_r}
-\]
+$$
 with $u\in k^\times$, the $f_i$ pairwise nonassociate irreducibles, and $a_i\ge1$. The unit $u$ does not affect the principal ideal. Put
-\[
+$$
 g=f_1\cdots f_r.
-\]
+$$
 
 :::
 
@@ -147,20 +147,20 @@ g=f_1\cdots f_r.
 ::: {.pf-step #s5}
 
 One has
-\[
+$$
 (g)\subseteq\sqrt{(f)}.
-\]
+$$
 
 ::: pf-proof
 
 Let
-\[
+$$
 N=\max\{a_1,\ldots,a_r\}.
-\]
+$$
 Then
-\[
+$$
 g^N=f_1^N\cdots f_r^N
-\]
+$$
 is divisible by $f_1^{a_1}\cdots f_r^{a_r}$, hence $g^N\in(f)$. Therefore $g\in\sqrt{(f)}$. Since the radical is an ideal, $(g)\subseteq\sqrt{(f)}$.
 
 :::
@@ -170,21 +170,21 @@ is divisible by $f_1^{a_1}\cdots f_r^{a_r}$, hence $g^N\in(f)$. Therefore $g\in\
 ::: {.pf-step #s6}
 
 Conversely,
-\[
+$$
 \sqrt{(f)}\subseteq(g).
-\]
+$$
 
 ::: pf-proof
 
 Let $h\in\sqrt{(f)}$. Then $h^N\in(f)$ for some $N$, so
-\[
+$$
 f_1^{a_1}\cdots f_r^{a_r}\mid h^N.
-\]
+$$
 The polynomial ring $k[x_1,\ldots,x_n]$ is a UFD, so every irreducible $f_i$ is prime. Thus $f_i\mid h^N$ implies $f_i\mid h$.
 Because the $f_i$ are pairwise nonassociate primes, their product divides $h$:
-\[
+$$
 f_1\cdots f_r\mid h.
-\]
+$$
 Hence $h\in(g)$.
 
 :::
@@ -194,9 +194,9 @@ Hence $h\in(g)$.
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{\sqrt{(f)}=(f_1f_2\cdots f_r)}.
-\]
+$$
 
 ::: pf-proof
 

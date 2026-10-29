@@ -36,15 +36,15 @@ audit:
 
 ::: {.problem}
 (a) For positive integer $n$, find all poles of
-\[
+$$
 \frac{\pi}{z^n\tan(\pi z)}
-\]
+$$
 and the residues of all simple poles.
 
 (b) Prove that for positive even $n$,
-\[
+$$
 \frac{\sum_{m=1}^{\infty}m^{-n}}{\pi^n}
-\]
+$$
 is rational.
 :::
 

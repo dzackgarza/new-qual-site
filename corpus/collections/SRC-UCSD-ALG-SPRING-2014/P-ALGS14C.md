@@ -38,9 +38,9 @@ Show that $A$ is NOT a unique factorization domain (UFD).
 ::: pf-step
 
 Part (a): define the Gaussian norm by
-\[
+$$
 N(a+bi)=a^2+b^2.
-\]
+$$
 It is multiplicative and takes positive integer values on nonzero Gaussian integers.
 
 ::: pf-proof
@@ -55,19 +55,19 @@ For $z,w\in\ZZ[i]$, $N(zw)=zw\overline{zw}=z\bar z\,w\bar w=N(z)N(w)$.
 
 Given $\alpha,\beta\in\ZZ[i]$ with $\beta\ne0$, choose $q\in\ZZ[i]$ whose real and imaginary parts are nearest integers to those of $\alpha/\beta$, and set $r=\alpha-q\beta$.
 Then
-\[
+$$
 N(r)<N(\beta).
-\]
+$$
 
 ::: pf-proof
 
 Write $\alpha/\beta=x+iy$.
 Choose $m,n\in\ZZ$ with $|x-m|\le \frac12$ and $|y-n|\le \frac12$, and set $q=m+ni$.
 Then
-\[
+$$
 N\!\left(\frac r\beta\right)=N\!\left(\frac\alpha\beta-q\right)
 =(x-m)^2+(y-n)^2\le\frac12<1.
-\]
+$$
 Hence $N(r)=N(\beta)N(r/\beta)<N(\beta)$.
 
 :::
@@ -101,9 +101,9 @@ Every UFD is integrally closed.
 ::: {.pf-step #s5}
 
 The element $i\in\QQ(i)=\operatorname{Frac}(A)$ is integral over $A$ because it satisfies the monic polynomial
-\[
+$$
 x^2+1\in A[x],
-\]
+$$
 since $\ZZ\subseteq A$.
 
 ::: pf-proof

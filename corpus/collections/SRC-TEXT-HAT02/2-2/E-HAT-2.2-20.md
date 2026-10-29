@@ -31,16 +31,16 @@ For finite CW complexes $X$ and $Y$, show that $\chi(X \times Y) = \chi(X)\chi(Y
 
 ::: {.solution}
 Give $X$ and $Y$ finite CW structures. If $c_p(X)$ and $c_q(Y)$ denote the numbers of cells in dimensions $p$ and $q$, then the product CW structure on $X\times Y$ has one cell
-\[
+$$
 e^p\times e^q
-\]
+$$
 of dimension $p+q$ for every ordered pair of cells $(e^p,e^q)$.
 Hence the number of $r$-cells of $X\times Y$ is
-\[
+$$
 c_r(X\times Y)=\sum_{p+q=r}c_p(X)c_q(Y).
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 \chi(X\times Y)
 &=\sum_r(-1)^r c_r(X\times Y)\\
@@ -49,5 +49,5 @@ Therefore
   \left(\sum_q(-1)^q c_q(Y)\right)\\
 &=\boxed{\chi(X)\chi(Y)}.
 \end{aligned}
-\]
+$$
 :::

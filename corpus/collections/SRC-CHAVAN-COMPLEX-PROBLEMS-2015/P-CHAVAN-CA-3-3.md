@@ -14,16 +14,16 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 \Omega=\CC\setminus[-1,1],
 \qquad
 f(z)=z^2-1,
-\]
+$$
 and define
-\[
+$$
 g(z)=|f(z)|^{1/2}
 \exp\!\left(\frac{i}{2}\bigl(\arg(z-1)+\arg(z+1)\bigr)\right),
-\]
+$$
 where $\arg$ is the principal argument.
 
 1. Show that $g$ is well-defined and continuous on $\Omega$ and satisfies $g^2=f$.

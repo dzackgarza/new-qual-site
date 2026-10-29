@@ -46,11 +46,11 @@ If the Sylow $7$-subgroup is not normal, then $n_7=15$.
 ::: pf-proof
 
 Sylow's theorem gives
-\[
+$$
 n_7\mid 15,
 \qquad
 n_7\equiv1\pmod7.
-\]
+$$
 Hence $n_7\in\{1,15\}$, and the hypothesis excludes $1$.
 
 :::
@@ -68,9 +68,9 @@ If $n_3=7$, then the seven Sylow $3$-subgroups contribute $7(3-1)=14$ nonidentit
 By step [](#s1){.pf-ref}, the fifteen Sylow $7$-subgroups contribute $15(7-1)=90$ nonidentity elements.
 Distinct subgroups of prime order meet only in the identity, so these sets are disjoint.
 Together with the identity this would give
-\[
+$$
 14+90+1=105
-\]
+$$
 elements, leaving no element of order $5$, contradicting Cauchy's theorem.
 Thus $n_3=1$.
 
@@ -95,9 +95,9 @@ Hence $n_5=1$.
 ::: {.pf-step #s4}
 
 If $P_3$ and $P_5$ denote the unique Sylow $3$- and $5$-subgroups, then
-\[
+$$
 N=P_3P_5\cong C_{15}
-\]
+$$
 is a normal subgroup of $G$.
 
 ::: pf-proof
@@ -105,9 +105,9 @@ is a normal subgroup of $G$.
 Both subgroups are normal, and their coprime orders imply $P_3\cap P_5=1$.
 For $x\in P_3$ and $y\in P_5$, the commutator $[x,y]$ belongs to both normal subgroups, hence to their trivial intersection.
 Thus they commute elementwise and
-\[
+$$
 N=P_3\times P_5\cong C_3\times C_5\cong C_{15}.
-\]
+$$
 The product of normal subgroups is normal.
 
 :::
@@ -121,17 +121,17 @@ The conjugation action of $G$ on $N$ is trivial.
 ::: pf-proof
 
 Because $N\trianglelefteq G$, conjugation gives a homomorphism
-\[
+$$
 G\longrightarrow \operatorname{Aut}(N).
-\]
+$$
 Since $N$ is abelian, $N$ lies in the kernel, so the action factors through
-\[
+$$
 G/N\cong C_7.
-\]
+$$
 But
-\[
+$$
 |\operatorname{Aut}(C_{15})|=\varphi(15)=8.
-\]
+$$
 The image of a group of order $7$ in a group of order $8$ must be trivial.
 Therefore every element of $G$ centralizes $N$.
 
@@ -160,16 +160,16 @@ An abelian group has every subgroup normal, contradicting the assumption that it
 ::: pf-step
 
 There is a nonabelian group of order $21$ of the form
-\[
+$$
 H=C_7\rtimes C_3.
-\]
+$$
 
 ::: pf-proof
 
 Since
-\[
+$$
 \operatorname{Aut}(C_7)\cong C_6,
-\]
+$$
 there is an automorphism of order $3$.
 Using the corresponding nontrivial homomorphism $C_3\to\operatorname{Aut}(C_7)$ gives a semidirect product $H=C_7\rtimes C_3$.
 The action is nontrivial, so $H$ is nonabelian.
@@ -181,9 +181,9 @@ The action is nontrivial, so $H$ is nonabelian.
 ::: pf-step
 
 The group
-\[
+$$
 G=H\times C_5
-\]
+$$
 is a nonabelian group of order $105$.
 
 ::: pf-proof
@@ -203,9 +203,9 @@ The group $G$ is solvable.
 The subgroup $C_7\trianglelefteq H$ has cyclic quotient $C_3$, so $H$ is solvable.
 Taking the direct product with the abelian group $C_5$ preserves solvability.
 Equivalently,
-\[
+$$
 1\trianglelefteq C_7\trianglelefteq H\trianglelefteq H\times C_5
-\]
+$$
 has abelian successive quotients $C_7$, $C_3$, and $C_5$.
 
 :::

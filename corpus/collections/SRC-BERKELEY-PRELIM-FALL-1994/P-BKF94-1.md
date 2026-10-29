@@ -28,9 +28,9 @@ audit:
 
 ::: {.problem}
 For which real values of $a$ does
-\[
+$$
 \sum_{n=1}^{\infty}\left(\frac1n-\sin\frac1n\right)^a
-\]
+$$
 converge?
 :::
 

@@ -23,9 +23,9 @@ audit:
 
 ::: {.problem}
 Let $f:(-1,1)\to\RR$ be differentiable and suppose
-\[
+$$
 \lim_{x\to0}\frac{f(x)}{x^2}
-\]
+$$
 exists and is finite. Must $f''(0)$ exist? Give a proof or a counterexample.
 :::
 

@@ -27,14 +27,14 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f:[0,\infty)\to\RR\) be continuous, nonnegative, nonincreasing, and satisfy
-\[
+Let $f:[0,\infty)\to\RR$ be continuous, nonnegative, nonincreasing, and satisfy
+$$
 \lim_{x\to\infty}f(x)=0.
-\]
+$$
 Show that the improper integral
-\[
+$$
 \int_0^\infty f(x)\sin x\,dx
-\]
+$$
 converges.
 :::
 

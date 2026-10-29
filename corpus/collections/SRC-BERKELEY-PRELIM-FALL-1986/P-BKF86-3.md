@@ -14,13 +14,13 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \iint_{\mathcal R}(x^3-3xy^2)\,dx\,dy,
-\]
+$$
 where
-\[
+$$
 \mathcal R=\{(x,y)\in\RR^2 : (x+1)^2+y^2\le 9,\ (x-1)^2+y^2\ge 1\}.
-\]
+$$
 :::
 
 ::: {.solution}

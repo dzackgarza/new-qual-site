@@ -16,12 +16,12 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 A=\begin{pmatrix}
 2&1+i\\
 1-i&3
 \end{pmatrix}.
-\]
+$$
 Find an invertible complex matrix $P$ for which $P^{-1}AP$ is diagonal.
 :::
 

@@ -24,9 +24,9 @@ audit:
 ::: {.problem}
 Compute the following indefinite integrals:
 
-1. \(\displaystyle \int \cos\!\left(x+\frac\pi4\right)\cos\!\left(x-\frac\pi4\right)\,dx\).
-2. \(\displaystyle \int \sin(4x)\cos(3x)\,dx\).
-3. \(\displaystyle \int 4\cos x\cos(2x)\sin(3x)\,dx\).
+1. $\displaystyle \int \cos\!\left(x+\frac\pi4\right)\cos\!\left(x-\frac\pi4\right)\,dx$.
+2. $\displaystyle \int \sin(4x)\cos(3x)\,dx$.
+3. $\displaystyle \int 4\cos x\cos(2x)\sin(3x)\,dx$.
 :::
 
 ::: {.solution}
@@ -39,16 +39,16 @@ Use product-to-sum.
 
 ::: pf-proof
 
-\[
+$$
 \cos\!\left(x+\frac\pi4\right)\cos\!\left(x-\frac\pi4\right)
 =\frac12\left(\cos(2x)+\cos\frac\pi2\right)
 =\frac12\cos(2x).
-\]
+$$
 Hence
-\[
+$$
 \boxed{\int \cos\!\left(x+\frac\pi4\right)\cos\!\left(x-\frac\pi4\right)\,dx
 =\frac14\sin(2x)+C.}
-\]
+$$
 
 :::
 
@@ -60,14 +60,14 @@ Use product-to-sum again.
 
 ::: pf-proof
 
-\[
+$$
 \sin(4x)\cos(3x)=\frac12\bigl(\sin(7x)+\sin x\bigr).
-\]
+$$
 Therefore
-\[
+$$
 \boxed{\int \sin(4x)\cos(3x)\,dx
 =-\frac1{14}\cos(7x)-\frac12\cos x+C.}
-\]
+$$
 
 :::
 
@@ -80,22 +80,22 @@ Reduce the triple product.
 ::: pf-proof
 
 Since
-\[
+$$
 2\cos x\cos(2x)=\cos(3x)+\cos x,
-\]
+$$
 we have
-\[
+$$
 \begin{aligned}
 4\cos x\cos(2x)\sin(3x)
 &=2\sin(3x)\bigl(\cos(3x)+\cos x\bigr)\\
 &=\sin(6x)+\sin(4x)+\sin(2x).
 \end{aligned}
-\]
+$$
 Thus
-\[
+$$
 \boxed{\int4\cos x\cos(2x)\sin(3x)\,dx
 =-\frac16\cos(6x)-\frac14\cos(4x)-\frac12\cos(2x)+C.}
-\]
+$$
 
 :::
 

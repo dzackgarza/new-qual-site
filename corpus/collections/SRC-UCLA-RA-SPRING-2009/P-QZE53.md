@@ -56,9 +56,9 @@ compact sets are bounded.
 
 For each fixed $w \in \CC$, the shift $z \mapsto z - w$ maps $K$ into the closed disk $\overline{B}(0, R)$.
 Using polar coordinates centered at $w$:
-\[
+$$
 \int_K \frac{1}{|z - w|}\,dx\,dy \le \int_{\overline{B}(w, R)} \frac{1}{|z - w|}\,dx\,dy = \int_0^R \int_0^{2\pi} \frac{1}{r} r\,dr\,d\theta = 2\pi R.
-\]
+$$
 
 ::: pf-proof
 
@@ -71,9 +71,9 @@ polar integration of $1/r$.
 ::: pf-step
 
 By Tonelli’s Theorem, integrating over $K$ and $\CC$ gives:
-\[
+$$
 \int_K |F(z)|\,dx\,dy \le \int_K \left(\int_\CC \frac{1}{|z - w|}\,d\mu(w)\right) dx\,dy = \int_\CC \left(\int_K \frac{1}{|z - w|}\,dx\,dy\right) d\mu(w) \le 2\pi R \mu(\CC) < \infty.
-\]
+$$
 
 ::: pf-proof
 
@@ -121,9 +121,9 @@ Step [](#s1){.pf-ref} applied to the compact set $Q_n$.
 ::: pf-step
 
 By Fubini–Tonelli Theorem:
-\[
+$$
 \int_{-n}^n \left(\int_{-n}^n |F(x+iy)|\,dx\right) dy = \int_{Q_n} |F(x+iy)|\,dx\,dy < \infty.
-\]
+$$
 Thus the function $y \mapsto \int_{-n}^n |F(x+iy)|\,dx$ is finite for almost every $y \in [-n, n]$.
 
 ::: pf-proof
@@ -185,9 +185,9 @@ Step [](#s2){.pf-ref} applied to the four boundary segments of $\partial S$.
 ::: pf-step
 
 By Fubini’s Theorem, we can interchange the contour integral and the measure integral:
-\[
+$$
 \frac{1}{2\pi i} \int_{\partial S} F(z)\,dz = \frac{1}{2\pi i} \int_{\partial S} \left(\int_\CC \frac{1}{z - w}\,d\mu(w)\right) dz = \int_\CC \left(\frac{1}{2\pi i} \int_{\partial S} \frac{1}{z - w}\,dz\right) d\mu(w).
-\]
+$$
 
 ::: pf-proof
 
@@ -200,9 +200,9 @@ Fubini's Theorem on product space $\partial S \times \CC$.
 ::: pf-step
 
 By Cauchy’s Integral Formula / Residue Theorem for the winding number:
-\[
+$$
 \frac{1}{2\pi i} \int_{\partial S} \frac{1}{z - w}\,dz = \operatorname{Ind}_{\partial S}(w) = \begin{cases} 1 & w \in S \\ 0 & w \in \CC \setminus \overline{S}. \end{cases}
-\]
+$$
 
 ::: pf-proof
 
@@ -216,9 +216,9 @@ Cauchy's Integral Formula.
 
 Since $\mu(\partial S) = 0$, the integrand equals $\mathbf{1}_S(w)$ $\mu$-almost everywhere.
 Thus:
-\[
+$$
 \int_\CC \left(\frac{1}{2\pi i} \int_{\partial S} \frac{1}{z - w}\,dz\right) d\mu(w) = \int_\CC \mathbf{1}_S(w)\,d\mu(w) = \mu(S).
-\]
+$$
 
 ::: pf-proof
 

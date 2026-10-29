@@ -23,12 +23,12 @@ audit:
 
 ::: {.problem}
 Let $G$ be the group of order $21$ defined by the relations
-\[
+$$
 a^7=b^3=1\quad\text{and}\quad b^{-1}ab=a^2.
-\]
+$$
 
 (a) Verify that the conjugacy classes of $G$ are
-\[
+$$
 \begin{align*}
 C_1&=\{1\},\\
 C_2&=\{a,a^2,a^4\},\\
@@ -36,15 +36,15 @@ C_3&=\{a^3,a^5,a^6\},\\
 C_4&=\{a^kb:k=0,\ldots,6\},\\
 C_5&=\{a^kb^2:k=0,\ldots,6\}.
 \end{align*}
-\]
+$$
 
 (b) Show that $H=\{a^k:k=0,\ldots,6\}$ is a normal subgroup of $G$ for which $G/H$ is isomorphic to $\ZZ_3$.
 Give the character table for the lifting of the $3$ linear characters of $G/H$ to $G$.
 
 (c) Let $\chi$ be the linear character of $H$ given by
-\[
+$$
 \chi(a^k)=\eta^k\quad\text{for }k=0,\ldots,6
-\]
+$$
 where $\eta=e^{2\pi i/7}$.
 Show that $\chi\uparrow_H^G$ is an irreducible character of $G$.
 
@@ -53,18 +53,18 @@ Show that $\chi\uparrow_H^G$ is an irreducible character of $G$.
 
 ::: {.solution}
 Let $H=\langle a\rangle\cong C_7$. From $b^{-1}ab=a^2$ one obtains
-\[
+$$
 b^{-1}a^k b=a^{2k},\qquad ba^kb^{-1}=a^{4k}.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 The conjugacy classes contained in $H$ are
-\[
+$$
 C_1=\{1\},\qquad C_2=\{a,a^2,a^4\},\qquad C_3=\{a^3,a^5,a^6\}.
-\]
+$$
 
 ::: pf-proof
 
@@ -77,21 +77,21 @@ Conjugation by powers of $a$ fixes $H$, while conjugation by $b^{-1}$ multiplies
 ::: pf-step
 
 The remaining conjugacy classes are
-\[
+$$
 C_4=\{a^kb:0\le k<7\},\qquad C_5=\{a^kb^2:0\le k<7\}.
-\]
+$$
 
 ::: pf-proof
 
 Since $ba^j=a^{4j}b$,
-\[
+$$
 a^{-j}ba^j=a^{3j}b.
-\]
+$$
 Multiplication by $3$ permutes $\ZZ/7\ZZ$, so the conjugates of $b$ by $H$ are exactly the seven elements of $Hb$.
 Likewise $b^2a^j=a^{2j}b^2$, hence
-\[
+$$
 a^{-j}b^2a^j=a^jb^2,
-\]
+$$
 so the conjugates of $b^2$ by $H$ are exactly $Hb^2$.
 The displayed classes have total size $1+3+3+7+7=21$, so they exhaust $G$.
 
@@ -114,14 +114,14 @@ The relation $b^{-1}ab=a^2$ shows that $b$ normalizes $H$, and $a$ does as well.
 ::: pf-step
 
 If $\omega=e^{2\pi i/3}$, the three linear characters inflated from $G/H$ are
-\[
+$$
 \begin{array}{c|rrrrr}
 &C_1&C_2&C_3&C_4&C_5\\ \hline
 \rho_0&1&1&1&1&1\\
 \rho_1&1&1&1&\omega&\omega^2\\
 \rho_2&1&1&1&\omega^2&\omega
 \end{array}.
-\]
+$$
 
 ::: pf-proof
 
@@ -136,20 +136,20 @@ Let $\eta=e^{2\pi i/7}$, let $\chi(a^k)=\eta^k$, and put $\theta=\operatorname{I
 ::: {.pf-step #s5}
 
 The values of $\theta$ are
-\[
+$$
 \theta(C_1)=3,\qquad \theta(C_2)=\alpha,\qquad \theta(C_3)=\beta,\qquad \theta(C_4)=\theta(C_5)=0,
-\]
+$$
 where
-\[
+$$
 \alpha=\eta+\eta^2+\eta^4,\qquad \beta=\eta^3+\eta^5+\eta^6.
-\]
+$$
 
 ::: pf-proof
 
 Because $H$ is normal, the induced character vanishes on $G\setminus H$. For $a^k\in H$, using coset representatives $1,b,b^2$ gives
-\[
+$$
 \theta(a^k)=\eta^k+\eta^{2k}+\eta^{4k}.
-\]
+$$
 This is $\alpha$ on $C_2$, $\beta$ on $C_3$, and $3$ at the identity.
 
 :::
@@ -163,11 +163,11 @@ One has $\alpha+\beta=-1$ and $\alpha\beta=2$, hence $|\alpha|^2=|\beta|^2=2$.
 ::: pf-proof
 
 The first identity follows from $1+\eta+\cdots+\eta^6=0$. Also
-\[
+$$
 \alpha\beta
 =(\eta+\eta^2+\eta^4)(\eta^3+\eta^5+\eta^6)
 =3+(\eta+\eta^2+\eta^3+\eta^4+\eta^5+\eta^6)=2.
-\]
+$$
 Complex conjugation interchanges the two exponent sets, so $\beta=\overline\alpha$.
 
 :::
@@ -181,11 +181,11 @@ The character $\theta$ is irreducible.
 ::: pf-proof
 
 Using the class sizes,
-\[
+$$
 \langle\theta,\theta\rangle_G
 =\frac1{21}\left(9+3|\alpha|^2+3|\beta|^2\right)
 =\frac{9+6+6}{21}=1.
-\]
+$$
 Thus $\theta$ is irreducible.
 
 :::
@@ -195,9 +195,9 @@ Thus $\theta$ is irreducible.
 ::: {.pf-step #s8}
 
 If $\chi_3(a^k)=\eta^{3k}$ and $\theta'=\operatorname{Ind}_H^G\chi_3$, then $\theta'$ is irreducible with values
-\[
+$$
 3,\beta,\alpha,0,0
-\]
+$$
 on $C_1,\ldots,C_5$.
 
 ::: pf-proof
@@ -211,7 +211,7 @@ The nontrivial characters of $H$ split into the two conjugation orbits with expo
 ::: pf-step
 
 Therefore the complete irreducible character table is
-\[
+$$
 \begin{array}{c|rrrrr}
 &C_1&C_2&C_3&C_4&C_5\\
 \text{class size}&1&3&3&7&7\\ \hline
@@ -221,14 +221,14 @@ Therefore the complete irreducible character table is
 \theta&3&\alpha&\beta&0&0\\
 \theta'&3&\beta&\alpha&0&0
 \end{array}.
-\]
+$$
 
 ::: pf-proof
 
 The first three rows are irreducible because they are one-dimensional, and the last two are irreducible by steps [](#s7){.pf-ref} and [](#s8){.pf-ref}. Their degree squares sum to
-\[
+$$
 1+1+1+9+9=21=|G|,
-\]
+$$
 so there are no further irreducible characters.
 
 :::

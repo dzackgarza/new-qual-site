@@ -47,35 +47,35 @@ Write $\bar X$ for the image of $X$ in $R$.
 
 ::: {.pf-step #r-iso-localization}
 There is an isomorphism
-\[
+$$
 R\cong \ZZ[1/2]=S^{-1}\ZZ.
-\]
+$$
 
 ::: pf-proof
 In $R$ the relation $2\bar X+1=0$ gives
-\[
+$$
 2(-\bar X)=1,
-\]
+$$
 so $2$ is a unit with inverse $-\bar X$.
 By the universal property of localization, the inclusion $\ZZ\to R$ therefore extends uniquely to a homomorphism
-\[
+$$
 \psi:\ZZ[1/2]\longrightarrow R,
 \qquad
 \psi(1/2)=-\bar X.
-\]
+$$
 
 Conversely, evaluation at $-1/2$ defines a homomorphism
-\[
+$$
 \ZZ[X]\longrightarrow \ZZ[1/2],
 \qquad
 X\longmapsto -1/2.
-\]
+$$
 Since $2(-1/2)+1=0$, it factors through a homomorphism
-\[
+$$
 \phi:R\longrightarrow\ZZ[1/2],
 \qquad
 \phi(\bar X)=-1/2.
-\]
+$$
 The composite $\phi\psi$ fixes $\ZZ$ and $1/2$, hence is the identity on $\ZZ[1/2]$.
 The composite $\psi\phi$ fixes $\ZZ$ and $\bar X$, hence is the identity on $R$.
 Thus $\phi$ and $\psi$ are inverse isomorphisms.
@@ -89,22 +89,22 @@ The $\ZZ$-module $R$ is flat.
 ::: pf-proof
 By step [](#r-iso-localization){.pf-ref} it suffices to consider $S^{-1}\ZZ$.
 For every exact sequence of $\ZZ$-modules
-\[
+$$
 0\longrightarrow M'\longrightarrow M\longrightarrow M''\longrightarrow0,
-\]
+$$
 localization is exact:
-\[
+$$
 0\longrightarrow S^{-1}M'\longrightarrow S^{-1}M\longrightarrow S^{-1}M''\longrightarrow0.
-\]
+$$
 Indeed, surjectivity is immediate by lifting numerators, while if $m/s$ maps to zero in $S^{-1}M''$, then some $t\in S$ annihilates the image of $m$ in $M''$, so $tm$ lies in $M'$ and
-\[
+$$
 \frac{m}{s}=\frac{tm}{ts}
-\]
+$$
 lies in the image of $S^{-1}M'$.
 Since
-\[
+$$
 S^{-1}M\cong M\otimes_{\ZZ}S^{-1}\ZZ,
-\]
+$$
 tensoring with $R\cong S^{-1}\ZZ$ is exact.
 Therefore $R$ is flat over $\ZZ$.
 :::
@@ -120,9 +120,9 @@ Every projective module over the principal ideal domain $\ZZ$ is free: a project
 Suppose $R$ were projective.
 Then, by step [](#r-iso-localization){.pf-ref}, $\ZZ[1/2]$ would be a nonzero free $\ZZ$-module.
 But multiplication by $2$ is surjective on $\ZZ[1/2]$, since
-\[
+$$
 \frac{a}{2^k}=2\frac{a}{2^{k+1}}.
-\]
+$$
 Multiplication by $2$ is not surjective on any nonzero free $\ZZ$-module: if $e$ is a basis element, there is no vector $v$ with $2v=e$, because all coordinates of $2v$ are even.
 This contradiction shows that $R$ is not projective over $\ZZ$.
 :::
@@ -134,23 +134,23 @@ The $\ZZ$-module $R$ is not injective.
 
 ::: pf-proof
 Let
-\[
+$$
 i:3\ZZ\hookrightarrow\ZZ
-\]
+$$
 be the inclusion and define
-\[
+$$
 f:3\ZZ\longrightarrow\ZZ[1/2],
 \qquad
 f(3k)=k.
-\]
+$$
 If $\ZZ[1/2]$ were injective, $f$ would extend along $i$ to a homomorphism
-\[
+$$
 F:\ZZ\longrightarrow\ZZ[1/2].
-\]
+$$
 Writing $u=F(1)$, we would obtain
-\[
+$$
 3u=F(3)=f(3)=1.
-\]
+$$
 But no element of $\ZZ[1/2]$ satisfies $3u=1$: if $u=a/2^k$, then $3a=2^k$, impossible because the left side is divisible by $3$ and the right side is not.
 Therefore the required extension does not exist, so $R$ is not injective.
 :::

@@ -24,13 +24,13 @@ audit:
 
 ::: {.problem}
 Let $T:V\to V$ be a linear operator on an $n$-dimensional vector space over a field $F$. Prove that $T$ has an invariant subspace $W$ with
-\[
+$$
 \{0\}\ne W\ne V
-\]
+$$
 if and only if the characteristic polynomial of $T$ has a factor $f\in F[t]$ satisfying
-\[
+$$
 0<\deg f<n.
-\]
+$$
 :::
 
 ::: {.solution}

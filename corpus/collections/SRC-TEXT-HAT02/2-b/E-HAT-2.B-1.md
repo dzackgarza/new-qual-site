@@ -30,9 +30,9 @@ Compute $H_i(S^n - X)$ when $X$ is a subspace of $S^n$ homeomorphic to $S^k \vee
 
 ::: {.solution}
 We use Alexander duality in the form
-\[
+$$
 \widetilde H_i(S^n-X;\ZZ)\cong \widetilde H^{\,n-i-1}(X;\ZZ)
-\]
+$$
 for these compact locally contractible subspaces of $S^n$.
 
 ::: pf
@@ -40,7 +40,7 @@ for these compact locally contractible subspaces of $S^n$.
 ::: {.pf-step #s1}
 
 If $X=S^k\vee S^\ell$, then
-\[
+$$
 \widetilde H^j(X)\cong
 \begin{cases}
 \ZZ,&j=k\ne\ell,\\
@@ -48,7 +48,7 @@ If $X=S^k\vee S^\ell$, then
 \ZZ^2,&j=k=\ell,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
@@ -61,7 +61,7 @@ Reduced cohomology takes a finite wedge to the direct sum of the reduced cohomol
 ::: pf-step
 
 Consequently, for $X=S^k\vee S^\ell$,
-\[
+$$
 \widetilde H_i(S^n-X)\cong
 \begin{cases}
 \ZZ,&i=n-k-1\ne n-\ell-1,\\
@@ -69,7 +69,7 @@ Consequently, for $X=S^k\vee S^\ell$,
 \ZZ^2,&i=n-k-1=n-\ell-1,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
@@ -82,15 +82,15 @@ Apply Alexander duality to step [](#s1){.pf-ref}, replacing the cohomological de
 ::: pf-step
 
 If $X=S^k\amalg S^\ell$, then in addition to the two positive-dimensional sphere classes there is
-\[
+$$
 \widetilde H^0(X)\cong\ZZ.
-\]
+$$
 Thus
-\[
+$$
 \widetilde H_i(S^n-X)
 \cong
 \widetilde H^{\,n-i-1}(S^k\amalg S^\ell).
-\]
+$$
 Explicitly this contributes one copy of $\ZZ$ in degree $i=n-1$, and copies of $\ZZ$ in degrees $n-k-1$ and $n-\ell-1$ (combined to $\ZZ^2$ when $k=\ell$).
 
 ::: pf-proof

@@ -17,7 +17,7 @@ audit:
 
 ::: {.problem}
 Let $T:V\to W$ be a linear transformation between finite-dimensional vector spaces.
-Compute, with proof, \[\dim(\operatorname{Null}T)+\dim(\operatorname{Range}T)\] and \[\dim(\operatorname{Null}T^*)+\dim(\operatorname{Range}T)\] in terms of $\dim V$ and $\dim W$, where $T^*$ is the adjoint of $T$.
+Compute, with proof, $$\dim(\operatorname{Null}T)+\dim(\operatorname{Range}T)$$ and $$\dim(\operatorname{Null}T^*)+\dim(\operatorname{Range}T)$$ in terms of $\dim V$ and $\dim W$, where $T^*$ is the adjoint of $T$.
 :::
 
 ::: {.solution}
@@ -29,7 +29,7 @@ The use of the adjoint implicitly equips $V$ and $W$ with inner products.
 ::: {.pf-step #s1-1}
 
 One has
-\[
+$$
 \boxed{
 \dim(\operatorname{Null}T)
 +
@@ -37,15 +37,15 @@ One has
 =
 \dim V
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 This is the rank-nullity theorem for the linear map
-\[
+$$
 T:V\to W.
-\]
+$$
 
 :::
 
@@ -54,33 +54,33 @@ T:V\to W.
 ::: {.pf-step #s1-2}
 
 The orthogonal complement of $\operatorname{Range}T$ is
-\[
+$$
 (\operatorname{Range}T)^\perp
 =
 \operatorname{Null}T^*.
-\]
+$$
 
 
 ::: pf-proof
 
 Let $w\in W$. Then
-\[
+$$
 w\in(\operatorname{Range}T)^\perp
-\]
+$$
 if and only if
-\[
+$$
 \langle Tv,w\rangle_W=0
-\]
+$$
 for every $v\in V$. By the defining property of the adjoint,
-\[
+$$
 \langle Tv,w\rangle_W
 =
 \langle v,T^*w\rangle_V.
-\]
+$$
 Thus the displayed vanishing holds for all $v\in V$ if and only if
-\[
+$$
 T^*w=0.
-\]
+$$
 Hence the two subspaces are equal.
 
 :::
@@ -90,29 +90,29 @@ Hence the two subspaces are equal.
 ::: {.pf-step #s1-3}
 
 One has
-\[
+$$
 \dim(\operatorname{Null}T^*)
 =
 \dim W-\dim(\operatorname{Range}T).
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-2){.pf-ref},
-\[
+$$
 \operatorname{Null}T^*
 =
 (\operatorname{Range}T)^\perp.
-\]
+$$
 For every subspace $Y$ of a finite-dimensional inner-product space,
-\[
+$$
 \dim Y+\dim Y^\perp=\dim W.
-\]
+$$
 Apply this to
-\[
+$$
 Y=\operatorname{Range}T.
-\]
+$$
 
 :::
 
@@ -121,7 +121,7 @@ Y=\operatorname{Range}T.
 ::: {.pf-step #s1-4}
 
 Therefore
-\[
+$$
 \boxed{
 \dim(\operatorname{Null}T^*)
 +
@@ -129,7 +129,7 @@ Therefore
 =
 \dim W
 }.
-\]
+$$
 
 
 ::: pf-proof

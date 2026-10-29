@@ -30,30 +30,30 @@ Show that if a disk bundle $D^n \to E \to B$ has a Thom class with $\ZZ$ coeffic
 
 ::: {.solution}
 Let
-\[
+$$
 (D^n,S^{n-1})\longrightarrow(E,E')\longrightarrow B
-\]
+$$
 be the disk-bundle pair and let
-\[
+$$
 c\in H^n(E,E';\ZZ)
-\]
-be a Thom class. For each \(b\in B\), its restriction
-\[
+$$
+be a Thom class. For each $b\in B$, its restriction
+$$
 c_b\in H^n(D_b^n,S_b^{n-1};\ZZ)\cong\ZZ
-\]
+$$
 is a generator, hence determines an orientation of the fiber.
 
-Let \(\gamma\) be a path in \(B\). Fiber transport along \(\gamma\) gives a homotopy equivalence of pairs
-\[
+Let $\gamma$ be a path in $B$. Fiber transport along $\gamma$ gives a homotopy equivalence of pairs
+$$
 L_\gamma:(D^n_{\gamma(0)},S^{n-1}_{\gamma(0)})
 \longrightarrow(D^n_{\gamma(1)},S^{n-1}_{\gamma(1)}).
-\]
-Since \(c\) is one global relative cohomology class, naturality of restriction gives
-\[
+$$
+Since $c$ is one global relative cohomology class, naturality of restriction gives
+$$
 L_\gamma^*(c_{\gamma(1)})=c_{\gamma(0)}.
-\]
-Thus every transport map preserves the chosen generator of the top relative cohomology, so it has degree \(+1\). In particular transport around every loop preserves orientation. Therefore the bundle is orientable:
-\[
+$$
+Thus every transport map preserves the chosen generator of the top relative cohomology, so it has degree $+1$. In particular transport around every loop preserves orientation. Therefore the bundle is orientable:
+$$
 \boxed{\text{an integral Thom class forces orientability}.}
-\]
+$$
 :::

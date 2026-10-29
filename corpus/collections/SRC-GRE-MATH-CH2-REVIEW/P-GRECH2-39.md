@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Find the positive value of $a$ that satisfies the equation:
 
-\[
+$$
 \int_{0}^{a} \frac{dx}{\sqrt{a^2 - x^2}} = \int_{0}^{a} \frac{x \, dx}{\sqrt{a^2 - x^2}}
-\]
+$$
 
 (A) $\frac{2\sqrt{2}}{\pi}$
 (B) $1$

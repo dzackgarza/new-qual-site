@@ -49,51 +49,51 @@ $$
 
 ::: {.solution}
 (a) Rewrite the recurrence as
-\[
+$$
 [h(n+1)]^2=h(n)+[h(n-1)]^2.
-\]
+$$
 Require all values to be positive, and define recursively
-\[
+$$
 h(1)=1,\qquad h(2)=2,
-\]
-\[
+$$
+$$
 h(n+1)=\sqrt{h(n)+[h(n-1)]^2}\qquad(n\ge2),
-\]
+$$
 where the positive square root is chosen. The radicand is positive, so the recursive definition is valid. Squaring the defining equation gives
-\[
+$$
 h(n)=[h(n+1)]^2-[h(n-1)]^2
-\]
-for every \(n\ge2\). Hence a solution exists.
+$$
+for every $n\ge2$. Hence a solution exists.
 
-(b) The printed hint suggesting that one merely negate \(h(3)\) and leave all later values unchanged is not correct: the equation for \(n=3\) would then fail. Instead define a second solution \(f\) by
-\[
+(b) The printed hint suggesting that one merely negate $h(3)$ and leave all later values unchanged is not correct: the equation for $n=3$ would then fail. Instead define a second solution $f$ by
+$$
 f(1)=1,\qquad f(2)=2,\qquad f(3)=-\sqrt3,
-\]
-and then, for \(n\ge3\), recursively set
-\[
+$$
+and then, for $n\ge3$, recursively set
+$$
 f(n+1)=\sqrt{f(n)+[f(n-1)]^2}.
-\]
-For \(n=3\), the radicand is \(4-\sqrt3>0\); thereafter the newly defined terms are positive, so every later radicand is positive as well. At \(n=2\),
-\[
+$$
+For $n=3$, the radicand is $4-\sqrt3>0$; thereafter the newly defined terms are positive, so every later radicand is positive as well. At $n=2$,
+$$
 [f(3)]^2-[f(1)]^2=3-1=2=f(2).
-\]
-For every \(n\ge3\), squaring the recursive definition gives exactly
-\[
+$$
+For every $n\ge3$, squaring the recursive definition gives exactly
+$$
 f(n)=[f(n+1)]^2-[f(n-1)]^2.
-\]
-Thus \(f\) is a solution distinct from the positive solution of part (a), so the original formula does not determine \(h\) uniquely.
+$$
+Thus $f$ is a solution distinct from the positive solution of part (a), so the original formula does not determine $h$ uniquely.
 
 (c) Suppose instead that
-\[
+$$
 h(n)=[h(n+1)]^2+[h(n-1)]^2.
-\]
-At \(n=2\),
-\[
+$$
+At $n=2$,
+$$
 2=[h(3)]^2+1,
-\]
-so \([h(3)]^2=1\), hence \(h(3)=\pm1\). But at \(n=3\),
-\[
+$$
+so $[h(3)]^2=1$, hence $h(3)=\pm1$. But at $n=3$,
+$$
 h(3)=[h(4)]^2+[h(2)]^2=[h(4)]^2+4\ge4,
-\]
-contradicting \(h(3)=\pm1\). Therefore no such function exists.
+$$
+contradicting $h(3)=\pm1$. Therefore no such function exists.
 :::

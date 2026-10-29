@@ -29,15 +29,15 @@ State Cauchy's Integral Formula.
 
 Let $f$ be holomorphic on a domain containing a positively oriented simple
 closed contour
-\[
+$$
 \gamma
-\]
+$$
 and its interior. Let
-\[
+$$
 z_0
-\]
+$$
 lie inside $\gamma$. Then
-\[
+$$
 \boxed{
 f(z_0)
 =
@@ -47,17 +47,17 @@ f(z_0)
 {\zeta-z_0}
 \,d\zeta.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 Equivalently, if
-\[
+$$
 \overline{B(z_0,r)}
-\]
+$$
 lies in the domain of holomorphy of $f$, then
-\[
+$$
 f(z_0)
 =
 \frac1{2\pi i}
@@ -65,7 +65,7 @@ f(z_0)
 \frac{f(\zeta)}
 {\zeta-z_0}
 \,d\zeta.
-\]
+$$
 This is the standard circle form of Cauchy's formula.
 
 :::
@@ -75,10 +75,10 @@ This is the standard circle form of Cauchy's formula.
 ::: {.pf-step #s1-2}
 
 More generally, for every integer
-\[
+$$
 m\ge0,
-\]
-\[
+$$
+$$
 f^{(m)}(z_0)
 =
 \frac{m!}{2\pi i}
@@ -86,7 +86,7 @@ f^{(m)}(z_0)
 \frac{f(\zeta)}
 {(\zeta-z_0)^{m+1}}
 \,d\zeta.
-\]
+$$
 
 
 ::: pf-proof

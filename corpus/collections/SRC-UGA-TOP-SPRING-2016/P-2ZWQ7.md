@@ -41,9 +41,9 @@ If $A$ has a zero column, then $0$ is a real eigenvalue of $A$.
 ::: pf-proof
 
 If the $j$th column is zero, then
-\[
+$$
 Ae_j=0,
-\]
+$$
 where $e_j\ne0$ is the $j$th standard basis vector.
 Thus $e_j$ is an eigenvector with eigenvalue $0$.
 
@@ -54,10 +54,10 @@ Thus $e_j$ is an eigenvector with eigenvalue $0$.
 ::: {.pf-step #s2}
 
 Assume from now on that no column of $A$ is zero, and let
-\[
+$$
 \Delta^{n-1}
 =\left\{x=(x_1,\dots,x_n)\in\RR^n:\ x_i\ge0,\ \sum_{i=1}^n x_i=1\right\}.
-\]
+$$
 For every $x\in\Delta^{n-1}$, the vector $Ax$ is nonzero and has nonnegative coordinates.
 
 ::: pf-proof
@@ -65,9 +65,9 @@ For every $x\in\Delta^{n-1}$, the vector $Ax$ is nonzero and has nonnegative coo
 Choose $j$ with $x_j>0$, which exists because the coordinates of $x$ sum to $1$.
 The $j$th column $Ae_j$ is nonzero and has nonnegative coordinates by hypothesis.
 Since
-\[
+$$
 Ax=\sum_{k=1}^n x_kAe_k
-\]
+$$
 is a nonnegative linear combination of the columns and contains the nonzero summand $x_jAe_j$, at least one coordinate of $Ax$ is strictly positive.
 Hence $Ax\ne0$.
 
@@ -78,19 +78,19 @@ Hence $Ax\ne0$.
 ::: {.pf-step #s3}
 
 Define
-\[
+$$
 F:\Delta^{n-1}\longrightarrow\Delta^{n-1},
 \qquad
 F(x)=\frac{Ax}{\sum_{i=1}^n(Ax)_i}.
-\]
+$$
 Then $F$ is a continuous self-map of the simplex.
 
 ::: pf-proof
 
 By step [](#s2){.pf-ref}, $Ax$ has nonnegative coordinates and is nonzero, so
-\[
+$$
 s(x):=\sum_{i=1}^n(Ax)_i>0.
-\]
+$$
 Therefore $F(x)$ has nonnegative coordinates and coordinate sum $1$, hence belongs to $\Delta^{n-1}$.
 Both $x\mapsto Ax$ and $s$ are continuous, and $s$ never vanishes on the simplex, so $F$ is continuous.
 
@@ -105,18 +105,18 @@ The matrix $A$ has a positive real eigenvalue.
 ::: pf-proof
 
 The simplex $\Delta^{n-1}$ is compact and convex, so Brouwer's fixed point theorem applied to step [](#s3){.pf-ref} gives some $x\in\Delta^{n-1}$ with
-\[
+$$
 F(x)=x.
-\]
+$$
 Thus
-\[
+$$
 Ax=s(x)x.
-\]
+$$
 By step [](#s2){.pf-ref}, $s(x)>0$, and $x\ne0$ because its coordinates sum to $1$.
 Therefore $x$ is an eigenvector of $A$ with real eigenvalue
-\[
+$$
 \lambda=s(x)>0.
-\]
+$$
 Together with step [](#s1){.pf-ref}, this proves that every nonnegative real matrix has a real eigenvalue.
 
 :::

@@ -48,40 +48,40 @@ Find a necessary and sufficient condition on $A$ for $\mca$ to be homotopic to a
 
 ::: {.solution}
 Write
-\[
+$$
 A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 The linear map $A:\RR^2\to\RR^2$ induces a well-defined continuous map
-\[
+$$
 \mca:T=\RR^2/\ZZ^2\longrightarrow T,
 \qquad
 \mca([x])=[Ax].
-\]
+$$
 
 ::: pf-proof
 
 If $x,x'\in\RR^2$ represent the same point of $T$, then $x'=x+z$ for some $z\in\ZZ^2$.
 Since $A$ has integer entries,
-\[
+$$
 Az\in\ZZ^2,
-\]
+$$
 so
-\[
+$$
 A x'=A x+A z
-\]
+$$
 represents the same point of $T$ as $Ax$.
 Thus $[x]\mapsto[Ax]$ is well defined.
 
 Let $q:\RR^2\to T$ be the quotient map.
 Then
-\[
+$$
 \mca\circ q=q\circ A.
-\]
+$$
 The right-hand side is continuous, and $q$ is a quotient map, so $\mca$ is continuous.
 
 :::
@@ -95,38 +95,38 @@ With respect to the basis of $H_1(T;\ZZ)$ given by the two coordinate circles, t
 ::: pf-proof
 
 Let
-\[
+$$
 \alpha(t)=[(t,0)],
 \qquad
 \beta(t)=[(0,t)]
 \qquad (0\le t\le1).
-\]
+$$
 Their homology classes $[\alpha],[\beta]$ form the standard basis of
-\[
+$$
 H_1(T;\ZZ)\cong\ZZ^2.
-\]
+$$
 Since
-\[
+$$
 \mca\circ\alpha(t)=[(at,ct)],
-\]
+$$
 the first basis vector is sent to
-\[
+$$
 a[\alpha]+c[\beta].
-\]
+$$
 Similarly,
-\[
+$$
 \mca\circ\beta(t)=[(bt,dt)]
-\]
+$$
 represents
-\[
+$$
 b[\alpha]+d[\beta].
-\]
+$$
 Hence the two columns of the matrix of $\mca_*$ in the ordered basis $([\alpha],[\beta])$ are
-\[
+$$
 \binom ac,
 \qquad
 \binom bd,
-\]
+$$
 so that matrix is $A$.
 
 :::
@@ -136,9 +136,9 @@ so that matrix is $A$.
 ::: pf-step
 
 The map $\mca$ is homotopic to the identity if and only if
-\[
+$$
 \boxed{A=I_2}.
-\]
+$$
 
 ::: pf-proof
 
@@ -146,9 +146,9 @@ If $A=I_2$, then $\mca$ is the identity map itself.
 
 Conversely, suppose $\mca\simeq\id_T$.
 Homotopic maps induce the same map on singular homology, hence
-\[
+$$
 \mca_*=(\id_T)_*=I_2
-\]
+$$
 on $H_1(T;\ZZ)$.
 By step [](#s2){.pf-ref}, the matrix of $\mca_*$ is $A$.
 Therefore $A=I_2$.
@@ -160,9 +160,9 @@ Therefore $A=I_2$.
 ::: {.pf-step #s4}
 
 Under the additional assumptions in the last part, if $\mca$ is homotopic to a fixed-point-free map, then
-\[
+$$
 \operatorname{tr}(A)=2.
-\]
+$$
 
 ::: pf-proof
 
@@ -172,23 +172,23 @@ Its contrapositive says that a fixed-point-free self-map has Lefschetz number ze
 
 Homotopic maps induce the same maps on homology, so $L(f)=L(\mca)$.
 For the torus,
-\[
+$$
 H_0(T;\ZZ)\cong\ZZ,
 \qquad
 H_1(T;\ZZ)\cong\ZZ^2,
 \qquad
 H_2(T;\ZZ)\cong\ZZ.
-\]
+$$
 The induced map on $H_0$ is the identity, the trace on $H_1$ is $\operatorname{tr}(A)$ by step [](#s2){.pf-ref}, and the induced map on $H_2$ is multiplication by the degree $\det A$.
 Therefore
-\[
+$$
 L(\mca)
  =1-\operatorname{tr}(A)+\det A.
-\]
+$$
 Since $\det A=1$, this becomes
-\[
+$$
 L(\mca)=2-\operatorname{tr}(A).
-\]
+$$
 The equality $L(f)=0$ now forces $\operatorname{tr}(A)=2$.
 
 :::
@@ -198,34 +198,34 @@ The equality $L(f)=0$ now forces $\operatorname{tr}(A)=2$.
 ::: {.pf-step #s5}
 
 With integer nonnegative entries and $\det A=1$, the condition $\operatorname{tr}(A)=2$ is equivalent to
-\[
+$$
 A=\begin{pmatrix}1&m\\0&1\end{pmatrix}
 \quad\text{or}\quad
 A=\begin{pmatrix}1&0\\m&1\end{pmatrix}
 \qquad
 \text{for some }m\in\ZZ_{\ge0}.
-\]
+$$
 
 ::: pf-proof
 
 The trace condition gives
-\[
+$$
 a+d=2.
-\]
+$$
 Because $a,d$ are nonnegative integers, the only possibilities are
-\[
+$$
 (a,d)=(0,2),(1,1),(2,0).
-\]
+$$
 The determinant equation
-\[
+$$
 ad-bc=1
-\]
+$$
 with $b,c\ge0$ rules out $(a,d)=(0,2)$ and $(2,0)$, since either would give $-bc=1$.
 Thus $a=d=1$.
 Then
-\[
+$$
 1-bc=1,
-\]
+$$
 so $bc=0$.
 Hence either $c=0$ or $b=0$, giving exactly the two displayed forms.
 Conversely, every displayed matrix has trace $2$, determinant $1$, and nonnegative integer entries.
@@ -241,50 +241,50 @@ Every matrix in step [](#s5){.pf-ref} yields a map $\mca$ homotopic to a fixed-p
 ::: pf-proof
 
 First suppose
-\[
+$$
 A=\begin{pmatrix}1&m\\0&1\end{pmatrix}.
-\]
+$$
 In quotient coordinates on $T=\RR^2/\ZZ^2$,
-\[
+$$
 \mca([x,y])=[x+my,y].
-\]
+$$
 Define
-\[
+$$
 g([x,y])=[x+my,y+\tfrac12].
-\]
+$$
 This is well defined, and the homotopy
-\[
+$$
 H_s([x,y])=[x+my,y+\tfrac{s}{2}]
 \qquad(0\le s\le1)
-\]
+$$
 runs from $\mca$ to $g$.
 If $g([x,y])=[x,y]$, then the second coordinate would give
-\[
+$$
 y+\tfrac12\equiv y\pmod{\ZZ},
-\]
+$$
 which is impossible.
 Thus $g$ has no fixed points.
 
 Now suppose
-\[
+$$
 A=\begin{pmatrix}1&0\\m&1\end{pmatrix}.
-\]
+$$
 Then
-\[
+$$
 \mca([x,y])=[x,mx+y].
-\]
+$$
 Define
-\[
+$$
 h([x,y])=[x+\tfrac12,mx+y].
-\]
+$$
 The homotopy
-\[
+$$
 K_s([x,y])=[x+\tfrac{s}{2},mx+y]
-\]
+$$
 runs from $\mca$ to $h$, and a fixed point of $h$ would force
-\[
+$$
 x+\tfrac12\equiv x\pmod{\ZZ},
-\]
+$$
 again impossible.
 Therefore $h$ is fixed-point-free.
 
@@ -295,9 +295,9 @@ Therefore $h$ is fixed-point-free.
 ::: pf-step
 
 Hence, under the hypotheses of the final part, the necessary and sufficient condition is
-\[
+$$
 \boxed{\operatorname{tr}(A)=2}.
-\]
+$$
 Equivalently, $A$ has one of the two unipotent forms listed in step [](#s5){.pf-ref}.
 
 ::: pf-proof

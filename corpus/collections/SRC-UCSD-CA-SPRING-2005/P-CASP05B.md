@@ -28,32 +28,32 @@ the supplied Blaschke-product hint.
 
 ::: {.solution}
 For $c\in\DD$, put
-\[
+$$
 \phi_c(z)=\frac{z-c}{1-\overline c z}.
-\]
+$$
 This is an automorphism of $\DD$, vanishes at $c$, and satisfies
 $|\phi_c|=1$ on the unit circle. By the multiplicity hypothesis,
-\[
+$$
 g(z)=\frac{f(z)}{\prod_{j=1}^n\phi_{c_j}(z)}
-\]
+$$
 extends holomorphically across every $c_j$.
 
 Fix $0<r<1$ larger than all $|c_j|$. On $|z|=r$, one can instead use the
 finite Blaschke factors after a standard maximum-principle argument on
 $\DD$; equivalently, apply the maximum principle to $g$ on disks and
 let $r\uparrow1$. Since $|f|\le M$ and $|\phi_{c_j}(e^{it})|=1$, one obtains
-\[
+$$
 |g(z)|\le M\qquad(z\in\DD).
-\]
+$$
 Evaluating at $0$ gives
-\[
+$$
 |g(0)|
 =\frac{|f(0)|}{\prod_j|\phi_{c_j}(0)|}
 =\frac{|f(0)|}{\prod_j|c_j|}
 \le M.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{|f(0)|\le M\prod_{j=1}^n|c_j|}.
-\]
+$$
 :::

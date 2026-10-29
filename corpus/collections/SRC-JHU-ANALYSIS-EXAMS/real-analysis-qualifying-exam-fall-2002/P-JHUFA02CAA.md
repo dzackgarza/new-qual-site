@@ -57,21 +57,21 @@ The series converges uniformly, hence defines a continuous function.
 ::: pf-proof
 
 The periodic triangle wave satisfies
-\[
+$$
 0\le \psi(x)\le \frac12
-\]
+$$
 for every $x$. Hence
-\[
+$$
 \left|2^{-n}\psi(8^n x)\right|\le 2^{-n-1}
-\]
+$$
 uniformly in $x$. Since
-\[
+$$
 \sum_{n=0}^\infty 2^{-n-1}<\infty,
-\]
+$$
 the Weierstrass $M$-test gives uniform convergence of
-\[
+$$
 f(x)=\sum_{n=0}^\infty 2^{-n}\psi(8^n x).
-\]
+$$
 Each summand is continuous, so $f$ is continuous on $\RR$.
 
 :::
@@ -85,37 +85,37 @@ Construct small increments with a large difference quotient.
 ::: pf-proof
 
 Fix $x\in\RR$ and $k\ge1$. Choose
-\[
+$$
 h_k\in\{8^{-k},-8^{-k}\}
-\]
+$$
 so that $8^{k-1}x$ and $8^{k-1}(x+h_k)$ lie in one linear piece of the periodic triangle wave $\psi$. This is always possible because the displacement in the argument is only $1/8$, whereas every linear piece has length $1/2$.
 
 For $n\ge k$,
-\[
+$$
 8^n h_k=\pm 8^{n-k}\in\ZZ,
-\]
+$$
 so periodicity gives
-\[
+$$
 \psi(8^n(x+h_k))=\psi(8^n x).
-\]
+$$
 Thus
-\[
+$$
 \Delta_{h_k}f(x)
 =\sum_{n=0}^{k-1}2^{-n}\Delta_{h_k}\bigl(\psi(8^n x)\bigr).
-\]
+$$
 
 Because $\psi$ is $1$-Lipschitz,
-\[
+$$
 \left|\Delta_{h_k}\bigl(\psi(8^n x)\bigr)\right|
 \le 8^n
-\]
+$$
 for $n<k-1$. On the other hand, by the choice of sign, the $n=k-1$ term lies entirely in one linear piece of slope $\pm1$, so
-\[
+$$
 \left|2^{-(k-1)}\Delta_{h_k}\bigl(\psi(8^{k-1}x)\bigr)\right|
 =2^{-(k-1)}8^{k-1}=4^{k-1}.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 |\Delta_{h_k}f(x)|
 &\ge 4^{k-1}-\sum_{n=0}^{k-2}2^{-n}8^n\\
@@ -123,7 +123,7 @@ Therefore
 &=4^{k-1}-\frac{4^{k-1}-1}{3}\\
 &=\frac{2\cdot4^{k-1}+1}{3}.
 \end{aligned}
-\]
+$$
 The right-hand side tends to $\infty$ as $k\to\infty$.
 
 :::
@@ -137,9 +137,9 @@ Conclude nowhere differentiability.
 ::: pf-proof
 
 Since $|h_k|=8^{-k}\to0$ while
-\[
+$$
 |\Delta_{h_k}f(x)|\to\infty,
-\]
+$$
 the difference quotients at $x$ cannot converge to a finite limit. Thus $f$ is not differentiable at $x$.
 
 The point $x$ was arbitrary, so $f$ is nowhere differentiable.

@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose \(f\) is analytic on the punctured unit disk \(\DD\setminus\{0\}\) and
-\[
+Suppose $f$ is analytic on the punctured unit disk $\DD\setminus\{0\}$ and
+$$
 \operatorname{Re} f(z)>0.
-\]
-Prove that \(f\) has a removable singularity at \(0\).
+$$
+Prove that $f$ has a removable singularity at $0$.
 :::
 
 ::: {.solution}

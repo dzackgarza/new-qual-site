@@ -48,27 +48,27 @@ Prove the Riemann--Lebesgue lemma for $C_c^1$ functions.
 ::: pf-proof
 
 Let $\varphi\in C_c^1(\RR^d)$. For $\xi\ne0$, choose an index $j$ such that
-\[
+$$
 |\xi_j|\ge \frac{|\xi|}{\sqrt d}.
-\]
+$$
 Integration by parts in the $x_j$ variable gives
-\[
+$$
 \widehat\varphi(\xi)
 =\frac{1}{2\pi i\xi_j}
 \int_{\RR^d}\partial_j\varphi(x)e^{-2\pi i x\cdot\xi}\,dx.
-\]
+$$
 Therefore
-\[
+$$
 |\widehat\varphi(\xi)|
 \le \frac{\sqrt d}{2\pi|\xi|}\,\|\partial_j\varphi\|_1
 \le \frac{\sqrt d}{2\pi|\xi|}
 \sum_{k=1}^d\|\partial_k\varphi\|_1.
-\]
+$$
 Hence
-\[
+$$
 \widehat\varphi(\xi)\to0
 \qquad(|\xi|\to\infty).
-\]
+$$
 
 :::
 
@@ -81,22 +81,22 @@ Extend the result to every $f\in L^1(\RR^d)$.
 ::: pf-proof
 
 Fix $\varepsilon>0$. Since $C_c^1(\RR^d)$ is dense in $L^1(\RR^d)$, choose $\varphi\in C_c^1$ such that
-\[
+$$
 \|f-\varphi\|_1<\varepsilon.
-\]
+$$
 For every $\xi$,
-\[
+$$
 |\widehat f(\xi)-\widehat\varphi(\xi)|
 \le \|f-\varphi\|_1<\varepsilon.
-\]
+$$
 By Step 1, $|\widehat\varphi(\xi)|<\varepsilon$ for all sufficiently large $|\xi|$. Thus
-\[
+$$
 |\widehat f(\xi)|<2\varepsilon
-\]
+$$
 for all sufficiently large $|\xi|$. Since $\varepsilon$ is arbitrary,
-\[
+$$
 \boxed{\widehat f(\xi)\to0\quad\text{as }|\xi|\to\infty.}
-\]
+$$
 
 :::
 
@@ -109,30 +109,30 @@ Show that no $L^1$ convolution identity exists.
 ::: pf-proof
 
 Suppose $h\in L^1(\RR^d)$ satisfied
-\[
+$$
 f*h=f
 \qquad\text{for every }f\in L^1(\RR^d).
-\]
+$$
 Taking Fourier transforms gives
-\[
+$$
 \widehat f(\xi)\widehat h(\xi)=\widehat f(\xi)
-\]
+$$
 for every $f$ and every $\xi$.
 
 Take the Gaussian
-\[
+$$
 f(x)=e^{-\pi|x|^2},
-\]
+$$
 whose Fourier transform is itself and is strictly positive everywhere. Hence
-\[
+$$
 \widehat h(\xi)=1
 \qquad\text{for every }\xi\in\RR^d.
-\]
+$$
 But Step 2 applied to $h\in L^1$ gives
-\[
+$$
 \widehat h(\xi)\to0
 \qquad(|\xi|\to\infty),
-\]
+$$
 a contradiction. Therefore no such $h\in L^1(\RR^d)$ exists.
 
 :::

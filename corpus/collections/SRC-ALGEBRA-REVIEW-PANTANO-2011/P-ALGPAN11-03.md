@@ -37,19 +37,19 @@ Apply the criterion to the five choices.
 ::: pf-proof
 
 The orders in (A), (B), (C), and (E) are pairwise coprime:
-\[
+$$
 \gcd(17,11)=1,
 \quad \gcd(17,11)=\gcd(17,5)=\gcd(11,5)=1,
-\]
-\[
+$$
+$$
 \gcd(17,33)=1,
 \qquad \gcd(49,121)=1.
-\]
+$$
 Thus those products are cyclic.
 In (D),
-\[
+$$
 \gcd(22,33)=11>1,
-\]
+$$
 so $G_{22}\times G_{33}$ is not cyclic.
 
 :::

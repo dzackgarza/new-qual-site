@@ -73,9 +73,9 @@ Otherwise there would be a sequence $x_j\to x$ and points $z_j\notin\bigcup_iV_i
 Properness makes $p^{-1}(K)$ compact for a compact neighbourhood $K$ containing all sufficiently large $x_j$; a convergent subsequence $z_{j_k}\to z$ would satisfy $p(z)=x$, hence $z=y_i$ for some $i$, contradicting $z_{j_k}\notin V_i$ eventually.
 
 Thus
-\[
+$$
 p^{-1}(U)=\coprod_{i=1}^r(V_i\cap p^{-1}(U)),
-\]
+$$
 and each summand maps diffeomorphically onto $U$.
 Hence $p$ is a covering with $r<\infty$ sheets.
 

@@ -21,13 +21,13 @@ audit:
 
 ::: {.problem}
 Let $\lambda\in\RR$. Evaluate
-\[
+$$
 \int_0^\infty (\operatorname{sech}x)^2\cos(\lambda x)\,dx,
-\]
+$$
 where
-\[
+$$
 \operatorname{sech}x=\frac{2}{e^x+e^{-x}}.
-\]
+$$
 :::
 
 ::: {.solution}

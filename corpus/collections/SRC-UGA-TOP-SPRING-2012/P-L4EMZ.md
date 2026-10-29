@@ -53,9 +53,9 @@ This is the definition of compactness [@Mun00, p. 164].
 ::: pf-step
 
 The space
-\[
+$$
 X_0=\{0\}\cup\left\{{1\over n}:n\in\ZZ^+\right\}
-\]
+$$
 is compact.
 
 ::: pf-proof
@@ -63,19 +63,19 @@ is compact.
 Let $\mathcal U$ be an open cover of $X_0$.
 Choose $U_0\in\mathcal U$ with $0\in U_0$.
 Because $U_0$ is open in the subspace topology, there is $\varepsilon>0$ such that
-\[
+$$
 (-\varepsilon,\varepsilon)\cap X_0\subseteq U_0.
-\]
+$$
 Choose $N$ with $1/N<\varepsilon$.
 Then
-\[
+$$
 {1\over n}\in U_0
 \qquad\text{for every }n\ge N.
-\]
+$$
 Thus only the finitely many points
-\[
+$$
 1,{1\over2},\ldots,{1\over N-1}
-\]
+$$
 remain to be covered.
 Choose one member of $\mathcal U$ containing each of these remaining points.
 Together with $U_0$, these finitely many sets cover $X_0$.
@@ -87,17 +87,17 @@ Together with $U_0$, these finitely many sets cover $X_0$.
 ::: {.pf-step #s3}
 
 The family
-\[
+$$
 \mathcal V=\left\{(1/n,1]:n\in\ZZ^+\right\}
-\]
+$$
 is an open cover of $(0,1]$ in the subspace topology.
 
 ::: pf-proof
 
 Each $(1/n,1]$ equals
-\[
+$$
 (1/n,2)\cap(0,1],
-\]
+$$
 so it is open in $(0,1]$.
 If $x\in(0,1]$, choose $n$ with $1/n<x$; then $x\in(1/n,1]$.
 
@@ -112,17 +112,17 @@ No finite subfamily of $\mathcal V$ covers $(0,1]$.
 ::: pf-proof
 
 Take finitely many members
-\[
+$$
 (1/n_1,1],\ldots,(1/n_k,1]
-\]
+$$
 and let
-\[
+$$
 N=\max\{n_1,\ldots,n_k\}.
-\]
+$$
 Then $1/N\in(0,1]$, but for every $i$,
-\[
+$$
 {1\over N}\le {1\over n_i},
-\]
+$$
 so $1/N\notin(1/n_i,1]$.
 
 :::

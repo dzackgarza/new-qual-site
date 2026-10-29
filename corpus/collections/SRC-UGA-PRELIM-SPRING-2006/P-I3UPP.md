@@ -34,9 +34,9 @@ Exact differential formulation:
 ::: pf-step
 Consider the differential 1-form $\omega = y\,dx + x\,dy$.
 By the product rule for differentials:
-\[
+$$
 \omega = d(xy).
-\]
+$$
 
 :::
 
@@ -57,9 +57,9 @@ Application of the Fundamental Theorem of Line Integrals:
 ::: pf-step
 Let $\tau$ be any piecewise smooth path starting at $A = (1, 0)$ and ending at $B = (3/5, 4/5)$.
 By the Fundamental Theorem for Line Integrals:
-\[
+$$
 \int_\tau (x\,dy + y\,dx) = \int_\tau d(xy) = f(B) - f(A).
-\]
+$$
 
 :::
 
@@ -72,9 +72,9 @@ Evaluate the potential function at the endpoints:
 
 ::: pf-step
 Therefore:
-\[
+$$
 \int_\tau (x\,dy + y\,dx) = \frac{12}{25} - 0 = \frac{12}{25}.
-\]
+$$
 
 :::
 
@@ -95,17 +95,17 @@ Then $dx = -\sin t\,dt$ and $dy = \cos t\,dt$.
 
 ::: pf-step
 The integrand becomes:
-\[
+$$
 x\,dy + y\,dx = (\cos^2 t - \sin^2 t)\,dt = \cos(2t)\,dt.
-\]
+$$
 
 :::
 
 ::: pf-step
 Integrating:
-\[
+$$
 \int_0^{t_0} \cos(2t)\,dt = \left[ \frac{\sin(2t)}{2} \right]_0^{t_0} = \sin(t_0)\cos(t_0) = \frac{4}{5} \cdot \frac{3}{5} = \frac{12}{25}.
-\]
+$$
 
 :::
 

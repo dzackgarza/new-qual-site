@@ -41,13 +41,13 @@ Then the set $S = \{x_n \mid n \in \NN\}$ has no accumulation point in $X$: an a
 
 ::: pf-step
 Partition $S$ into two disjoint closed subsets of $X$:
-\[
+$$
 A = \{x_{2k} \mid k \in \NN\}, \qquad B = \{x_{2k-1} \mid k \in \NN\}.
-\]
+$$
 Because $X$ is normal, by Urysohn's Lemma there exists a continuous function $f: X \to [0, 1]$ such that:
-\[
+$$
 f(a) = 0 \quad \forall a \in A, \qquad f(b) = 1 \quad \forall b \in B.
-\]
+$$
 :::
 
 ::: pf-step
@@ -56,9 +56,9 @@ By the universal property of the Stone–Čech compactification, $f$ extends to 
 
 ::: pf-step
 Since $x_n \to y$ in $\beta(X)$, continuity of $\beta f$ implies:
-\[
+$$
 \lim_{n \to \infty} f(x_n) = \beta f(y).
-\]
+$$
 However, along the even subsequence, $\lim_{k\to\infty} f(x_{2k}) = \lim_{k\to\infty} 0 = 0$, while along the odd subsequence, $\lim_{k\to\infty} f(x_{2k-1}) = \lim_{k\to\infty} 1 = 1$.
 Thus $0 = \beta f(y) = 1$, a contradiction.
 :::

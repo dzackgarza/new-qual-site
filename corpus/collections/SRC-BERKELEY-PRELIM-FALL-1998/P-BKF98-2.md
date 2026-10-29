@@ -24,18 +24,18 @@ audit:
 
 ::: {.problem}
 Find a function $y(x)$ for $x\ge0$ such that
-\[
+$$
 y^{(4)}+y=0,
 \qquad
 y(0)=0,
 \qquad
 y'(0)=1,
-\]
+$$
 and
-\[
+$$
 \lim_{x\to\infty}y(x)=
 \lim_{x\to\infty}y'(x)=0.
-\]
+$$
 :::
 
 ::: {.solution}

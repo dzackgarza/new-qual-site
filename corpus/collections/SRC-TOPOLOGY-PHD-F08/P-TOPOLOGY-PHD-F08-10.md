@@ -36,9 +36,9 @@ Show that the resulting quotient or identification space $X$ has the indiscrete 
 
 ::: {.solution}
 Let
-\[
+$$
 q:\RR\longrightarrow X=\RR/\!\sim
-\]
+$$
 be the quotient map.
 
 ::: pf
@@ -49,21 +49,21 @@ Every nonempty open interval in $\RR$ contains a rational number.
 ::: pf-proof
 Let $a<b$.
 Choose $n\in\NN$ such that
-\[
+$$
 n(b-a)>1.
-\]
+$$
 Let
-\[
+$$
 m=\lfloor na\rfloor+1.
-\]
+$$
 Then
-\[
+$$
 na<m\le na+1<nb.
-\]
+$$
 Dividing by $n>0$ gives
-\[
+$$
 a<\frac mn<b.
-\]
+$$
 Since $m/n\in\QQ$, the interval $(a,b)$ contains a rational number.
 :::
 
@@ -71,17 +71,17 @@ Since $m/n\in\QQ$, the interval $(a,b)$ contains a rational number.
 
 ::: {.pf-step #preimage-open-saturated}
 If $W\subseteq X$ is open, then
-\[
+$$
 U=q^{-1}(W)
-\]
+$$
 is an open saturated subset of $\RR$.
 
 ::: pf-proof
 By the definition of the quotient topology, $q^{-1}(W)$ is open in $\RR$.
 It is saturated because if $x\in U$ and $y\sim x$, then
-\[
+$$
 q(y)=q(x)\in W,
-\]
+$$
 so $y\in q^{-1}(W)=U$.
 :::
 
@@ -94,40 +94,40 @@ Every nonempty open saturated subset $U\subseteq\RR$ is all of $\RR$.
 Let $U$ be nonempty, open, and saturated.
 Choose $x\in U$.
 Since $U$ is open, there are real numbers $a<b$ such that
-\[
+$$
 x\in(a,b)\subseteq U.
-\]
+$$
 
 Take an arbitrary $y\in\RR$.
 The interval
-\[
+$$
 (y-b,y-a)
-\]
+$$
 is nonempty because $a<b$.
 By step [](#rational-in-interval){.pf-ref}, choose
-\[
+$$
 r\in\QQ\cap(y-b,y-a).
-\]
+$$
 The inequalities
-\[
+$$
 y-b<r<y-a
-\]
+$$
 are equivalent to
-\[
+$$
 a<y-r<b.
-\]
+$$
 Hence
-\[
+$$
 y-r\in(a,b)\subseteq U.
-\]
+$$
 Moreover,
-\[
+$$
 y-(y-r)=r\in\QQ,
-\]
+$$
 so
-\[
+$$
 y\sim y-r.
-\]
+$$
 Since $U$ is saturated and $y-r\in U$, it follows that $y\in U$.
 The point $y$ was arbitrary, so $U=\RR$.
 :::
@@ -142,18 +142,18 @@ Both $\varnothing$ and $X$ are open in every topology.
 
 Conversely, let $W\subseteq X$ be a nonempty open set.
 By surjectivity of $q$, its inverse image
-\[
+$$
 U=q^{-1}(W)
-\]
+$$
 is nonempty.
 By step [](#preimage-open-saturated){.pf-ref} it is open and saturated, so step [](#saturated-is-all){.pf-ref} gives
-\[
+$$
 q^{-1}(W)=\RR.
-\]
+$$
 Applying $q$ and using surjectivity,
-\[
+$$
 W=q(q^{-1}(W))=q(\RR)=X.
-\]
+$$
 Thus every nonempty open subset is all of $X$, so the quotient topology is indiscrete.
 :::
 

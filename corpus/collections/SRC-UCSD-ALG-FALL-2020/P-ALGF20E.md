@@ -43,27 +43,27 @@ If $M$ is flat, then multiplication by every nonzero $d\in D$ is injective on $M
 ::: pf-proof
 
 Fix $0\ne d\in D$. Since $D$ is an integral domain, multiplication by $d$ gives an injective $D$-linear map
-\[
+$$
 0\longrightarrow D\xrightarrow{\,\cdot d\,}D.
-\]
+$$
 Because $M$ is flat, tensoring with $M$ preserves this injection:
-\[
+$$
 0\longrightarrow D\otimes_D M
 \xrightarrow{\,(\cdot d)\otimes 1_M\,}
 D\otimes_D M.
-\]
+$$
 Under the canonical identification
-\[
+$$
 D\otimes_D M\cong M,
 \qquad
 a\otimes m\longmapsto am,
-\]
+$$
 this map is exactly
-\[
+$$
 M\longrightarrow M,
 \qquad
 m\longmapsto dm.
-\]
+$$
 Hence $dm=0$ implies $m=0$.
 
 :::
@@ -89,17 +89,17 @@ If $D$ is a PID and $M$ is finitely generated and torsion-free, then $M$ is a fi
 ::: pf-proof
 
 By the structure theorem for finitely generated modules over a PID,
-\[
+$$
 M\cong D^r\oplus T
-\]
+$$
 for some $r\ge0$, where $T$ is the torsion submodule of $M$. Since $M$ is torsion-free,
-\[
+$$
 T=0.
-\]
+$$
 Thus
-\[
+$$
 M\cong D^r.
-\]
+$$
 
 :::
 
@@ -112,13 +112,13 @@ Every free $D$-module is flat.
 ::: pf-proof
 
 For a free module $D^r$ and any $D$-module $X$,
-\[
+$$
 X\otimes_D D^r\cong X^r.
-\]
+$$
 Finite direct sums preserve injections and exact sequences. Hence the functor
-\[
+$$
 -\otimes_D D^r
-\]
+$$
 is exact, so $D^r$ is flat.
 
 :::

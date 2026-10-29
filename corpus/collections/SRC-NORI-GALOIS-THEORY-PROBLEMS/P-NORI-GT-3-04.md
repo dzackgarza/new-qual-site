@@ -35,9 +35,9 @@ Explain how you would construct a sequence of quadratic extensions when $k = 1$ 
 ::: {.solution}
 
 Here $k=1$ means
-\[
+$$
 p\equiv3\pmod4.
-\]
+$$
 The direct iteration from Problem 3.3 cannot start with an arbitrary nonsquare $u_0\in\FF_p$ and retain the same valuation argument. Instead, first pass to the quadratic extension by adjoining a square root of $-1$.
 
 ::: pf
@@ -50,9 +50,9 @@ Since $p\equiv3\pmod4$, the element $-1$ is not a square in $\FF_p$.
 ::: pf-proof
 
 Euler's criterion gives
-\[
+$$
 (-1)^{(p-1)/2}=-1
-\]
+$$
 because $(p-1)/2$ is odd. Hence $-1$ is a nonsquare.
 
 :::
@@ -62,21 +62,21 @@ because $(p-1)/2$ is odd. Hence $-1$ is a nonsquare.
 ::: {.pf-step #s1-2}
 
 Choose $i$ with
-\[
+$$
 i^2=-1
-\]
+$$
 and set
-\[
+$$
 E_1=\FF_p(i).
-\]
+$$
 Then
-\[
+$$
 [E_1:\FF_p]=2
-\]
+$$
 and
-\[
+$$
 E_1\cong\FF_{p^2}.
-\]
+$$
 
 
 ::: pf-proof
@@ -95,13 +95,13 @@ The exact power of $2$ dividing $p^2-1$ is at least $2^3$.
 ::: pf-proof
 
 Factor
-\[
+$$
 p^2-1=(p-1)(p+1).
-\]
+$$
 Since $p\equiv3\pmod4$, one has $v_2(p-1)=1$ and $4\mid p+1$, so
-\[
+$$
 v_2(p^2-1)=v_2(p-1)+v_2(p+1)\ge3.
-\]
+$$
 Thus $|E_1^\times|=p^2-1$ has exact $2$-adic valuation $k'\ge3$.
 
 :::
@@ -111,9 +111,9 @@ Thus $|E_1^\times|=p^2-1$ has exact $2$-adic valuation $k'\ge3$.
 ::: {.pf-step #s1-4}
 
 Choose any nonsquare
-\[
+$$
 u_1\in E_1^\times.
-\]
+$$
 
 
 ::: pf-proof
@@ -127,11 +127,11 @@ The cyclic group $E_1^\times$ has even order, so its subgroup of squares has ind
 ::: pf-step
 
 Starting from the pair $(E_1,u_1)$, define recursively
-\[
+$$
 E_{n+1}=E_n(u_{n+1}),
 \qquad
 u_{n+1}^2=u_n
-\]
+$$
 for $n\ge1$.
 
 
@@ -146,10 +146,10 @@ This is the same recursive construction as in Problem 3.3, now with base field $
 ::: {.pf-step #s1-6}
 
 Every extension in this recursive tail is quadratic:
-\[
+$$
 [E_{n+1}:E_n]=2
 \qquad(n\ge1).
-\]
+$$
 
 
 ::: pf-proof
@@ -163,16 +163,16 @@ Problem 3.3 applies verbatim to the finite field $E_1=\FF_{p^2}$ because the exa
 ::: {.pf-step #s1-7}
 
 Together with the first extension, this gives an infinite tower
-\[
+$$
 \FF_p=E_0
 \subset E_1
 \subset E_2
 \subset\cdots
-\]
+$$
 with
-\[
+$$
 \boxed{[E_{n+1}:E_n]=2\quad\text{for every }n\ge0.}
-\]
+$$
 
 
 ::: pf-proof

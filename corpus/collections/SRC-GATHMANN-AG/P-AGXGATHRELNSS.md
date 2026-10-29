@@ -35,9 +35,9 @@ audit:
 
 ::: {.problem}
 Let $Y\subset \AA^n/k$ be an affine variety and define $A(Y)$ by the quotient
-\[
+$$
 \pi: k[x_1,\cdots, x_n] \to A(Y) \definedas k[x_1, \cdots, x_n]/I(Y)
-.\]
+.$$
 
 a. Show that $V_Y(J) = V(\pi^{-1}(J))$ for every $J\normal A(Y)$.
 
@@ -46,9 +46,9 @@ b. Show that $\pi^{-1} (I_Y(X)) = I(X)$ for every affine subvariety $X\subseteq 
 c. Using the fact that $I(V(J)) \subset \sqrt{J}$ for every $J\normal k[x_1, \cdots, x_n]$, deduce that $I_Y(V_Y(J)) \subset \sqrt{J}$ for every $J\normal A(Y)$.
 
 Conclude that there is an inclusion-reversing bijection
-\[
+$$
 \correspond{\text{Affine subvarieties}\\ \text{of } Y} \iff \correspond{\text{Radical ideals} \\ \text{in } A(Y)}
-.\]
+.$$
 :::
 
 ::: {.solution}

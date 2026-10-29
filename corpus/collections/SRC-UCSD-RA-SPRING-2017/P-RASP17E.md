@@ -97,14 +97,14 @@ Hence $T_t f(x) = f(A_t x) \to f(x)$ uniformly, with all differences supported i
 
 ::: pf-proof
 Let $K=\operatorname{supp}f$. For $t\in[1/2,2]$, the support of $T_tf$ is $A_t^{-1}K$, and the union of these sets is contained in a fixed compact set $K'$. On $K'$, $A_tx\to x$ uniformly as $t\to1$, so uniform continuity of $f$ gives
-\[
+$$
 \sup_{x\in\RR^2}|f(A_tx)-f(x)|\to0.
-\]
+$$
 Since $T_tf-f$ vanishes outside $K'\cup K$ for $t$ near $1$,
-\[
+$$
 \|T_tf-f\|_2
 \le m(K'\cup K)^{1/2}\|T_tf-f\|_\infty\to0.
-\]
+$$
 :::
 
 :::

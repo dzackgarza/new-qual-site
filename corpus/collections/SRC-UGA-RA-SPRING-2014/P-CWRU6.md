@@ -42,21 +42,21 @@ Show that every strict sublevel set is open.
 ::: pf-proof
 
 Fix $a\in\RR$ and suppose $f(x)<a$. By hypothesis,
-\[
+$$
 \limsup_{y\to x}f(y)\le f(x)<a.
-\]
+$$
 Hence there exists $\delta>0$ such that
-\[
+$$
 |y-x|<\delta\quad\Longrightarrow\quad f(y)<a.
-\]
+$$
 Otherwise one could find a sequence $y_n\to x$ with $f(y_n)\ge a$, forcing
-\[
+$$
 \limsup_{y\to x}f(y)\ge a.
-\]
+$$
 Thus
-\[
+$$
 \{f<a\}
-\]
+$$
 is open for every $a$.
 
 :::
@@ -70,20 +70,20 @@ Deduce Borel measurability.
 ::: pf-proof
 
 Since each set $\{f<a\}$ is open, each set
-\[
+$$
 \{f\ge a\}=\RR\setminus\{f<a\}
-\]
+$$
 is closed. Therefore
-\[
+$$
 \{f>a\}
 =\bigcup_{n=1}^\infty\{f\ge a+1/n\}
-\]
+$$
 is an $F_\sigma$ set, hence Borel, for every $a\in\RR$.
 
 The rays $(a,\infty)$ generate the Borel sigma-algebra of $\RR$, so the measurability of every preimage
-\[
+$$
 f^{-1}((a,\infty))=\{f>a\}
-\]
+$$
 proves that $f$ is Borel measurable.
 
 :::

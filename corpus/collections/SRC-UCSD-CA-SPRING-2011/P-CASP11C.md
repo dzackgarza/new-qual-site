@@ -24,9 +24,9 @@ Define the analytic continuations explicitly and explain briefly why these satis
 ::: {.solution}
 Take the germ at $1$ of a logarithm, with $h(1)=0$. Continue it along the two
 paths
-\[
+$$
 \gamma(t)=e^{i\pi t},\qquad \sigma(t)=e^{-i\pi t},\qquad 0\le t\le1,
-\]
+$$
 from $1$ to $-1$ (after translating the endpoint notation of the problem, use
 the same construction around the puncture and terminate at the prescribed
 point $b$). On small disks along either path choose the logarithm whose values

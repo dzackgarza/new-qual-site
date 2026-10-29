@@ -19,26 +19,26 @@ review: draft
 Let $0\leq \alpha \leq 2\pi$ be a fixed angle.
 Suppose $f$ is continuous on the region $\Omega = \theset{\abs{z} \geq R, \Arg(z) \in [0, \alpha]}$ and $\lim_{z\to \infty} zf(z) = A$.
 Show that
-\[
+$$
 \lim_{z\to \infty} \int_{\gamma_R} f(z) \dz = iA\alpha
-,\]
+,$$
 where $\gamma_R \definedas \theset{ \abs{z} = R, \Arg(z) \in [0, \alpha]}$ is an arc.
 :::
 
 ::: {.solution}
 Key observation:
-\[
+$$
 iA\alpha = \int_\gamma {A\over z}\dz
-.\]
+.$$
 Why this is true:
-\[
+$$
 \int_\gamma {A\over z}\dz = \int_0^\alpha {1\over Re^{it}} iRe^{it}dt
 = \int_0^\alpha iA \dt = iA\alpha
-.\]
+.$$
 
 Now estimate the difference:
 
-\[
+$$
 \abs{ \int_\gamma f(z) \dz - iA\alpha }
 &= \abs{ \int_\gamma f(z) \dz - \int_\gamma {A\over z} \dz}\\
 &= \abs{\int_\gamma f(z) - {A\over z} \dz} \\
@@ -50,7 +50,7 @@ Now estimate the difference:
 &= {\eps \over R} \cdot R\alpha \\
 &= \eps \alpha \\
 &\convergesto{R\to\infty}0
-.\]
+.$$
 
 
 

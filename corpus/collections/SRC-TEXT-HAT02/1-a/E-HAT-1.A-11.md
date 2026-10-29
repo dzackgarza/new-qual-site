@@ -144,9 +144,9 @@ Construction of a finite-index normal subgroup:
 ::: pf-step
 
 Define the normal core of $K$ in $F$:
-\[
+$$
 H = \operatorname{Core}_F(K) = \bigcap_{g \in F} g K g^{-1}.
-\]
+$$
 
 ::: pf-proof
 
@@ -159,9 +159,9 @@ definition of normal core.
 ::: pf-step
 
 $H$ is a normal subgroup of $F$, and by Poincaré’s Theorem on finite index subgroups:
-\[
+$$
 [F : H] \le [F : K]! = d! < \infty.
-\]
+$$
 
 ::: pf-proof
 

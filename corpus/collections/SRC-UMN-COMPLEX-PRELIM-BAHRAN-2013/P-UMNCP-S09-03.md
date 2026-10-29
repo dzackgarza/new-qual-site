@@ -18,13 +18,13 @@ audit:
 
 ::: {.problem}
 Find an explicit conformal equivalence from the region bounded by the circles
-\[
+$$
 \left|z-\frac{i}{2}\right|=\frac12
 \qquad\text{and}\qquad
 |z-i|=1
-\]
+$$
 onto the upper half-plane.
-The intended region is the part inside \(|z-i|<1\) and outside \(|z-i/2|\le 1/2\).
+The intended region is the part inside $|z-i|<1$ and outside $|z-i/2|\le 1/2$.
 :::
 
 ::: {.solution}

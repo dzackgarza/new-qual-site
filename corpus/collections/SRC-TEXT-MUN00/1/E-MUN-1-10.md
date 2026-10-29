@@ -41,33 +41,33 @@ For each of the following subsets of $\RR \times \RR$, determine whether it is e
 
 ::: {.solution}
 (a) Yes. The set is
-\[
+$$
 \ZZ\times\RR.
-\]
+$$
 
 (b) Yes. It is
-\[
+$$
 \RR\times(0,1].
-\]
+$$
 
-(c) No. If the set were \(A\times B\), then since \((0,1)\) and \((1,2)\) both satisfy \(y>x\), we would have
-\[
+(c) No. If the set were $A\times B$, then since $(0,1)$ and $(1,2)$ both satisfy $y>x$, we would have
+$$
 0,1\in A,\qquad 1,2\in B.
-\]
-Hence \((1,1)\in A\times B\), contradicting \(1\not>1\).
+$$
+Hence $(1,1)\in A\times B$, contradicting $1\not>1$.
 
 (d) Yes. It is
-\[
+$$
 (\RR-\ZZ)\times\ZZ.
-\]
+$$
 
-(e) No. If the open unit disk were \(A\times B\), then from
-\[
+(e) No. If the open unit disk were $A\times B$, then from
+$$
 (0.9,0),\ (0,0.9)
-\]
-being in the disk we would obtain \(0.9,0\in A\) and \(0,0.9\in B\). Thus \((0.9,0.9)\in A\times B\), but
-\[
+$$
+being in the disk we would obtain $0.9,0\in A$ and $0,0.9\in B$. Thus $(0.9,0.9)\in A\times B$, but
+$$
 0.9^2+0.9^2=1.62>1,
-\]
+$$
 so this point is not in the disk, a contradiction.
 :::

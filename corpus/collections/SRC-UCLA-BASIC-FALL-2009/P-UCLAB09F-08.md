@@ -18,18 +18,18 @@ audit:
 
 ::: {.problem}
 For $A\in M_n(\RR)$ define
-\[
+$$
 e^A:=\sum_{k=0}^\infty \frac{A^k}{k!}.
-\]
+$$
 Let $v_0\in\RR^n$.
 Prove that
-\[
+$$
 v(t)=e^{At}v_0
-\]
+$$
 solves
-\[
+$$
 v'(t)=Av(t),\qquad v(0)=v_0.
-\]
+$$
 Explain precisely which theorems from calculus you use and why they apply.
 :::
 
@@ -42,30 +42,30 @@ Fix any submultiplicative matrix norm $\|\cdot\|$ on $M_n(\RR)$, for example the
 ::: {.pf-step #s1-1}
 
 For every $R>0$, the matrix series
-\[
+$$
 E(t)
 =
 \sum_{k=0}^{\infty}\frac{A^kt^k}{k!}
-\]
+$$
 converges uniformly for $|t|\le R$.
 
 
 ::: pf-proof
 
 For $|t|\le R$,
-\[
+$$
 \left\|
 \frac{A^kt^k}{k!}
 \right\|
 \le
 \frac{\|A\|^kR^k}{k!}.
-\]
+$$
 The scalar series
-\[
+$$
 \sum_{k=0}^{\infty}\frac{\|A\|^kR^k}{k!}
 =
 e^{\|A\|R}
-\]
+$$
 converges. The Weierstrass $M$-test therefore gives uniform convergence of the matrix series on $[-R,R]$, equivalently uniform convergence of each entry series.
 
 :::
@@ -75,30 +75,30 @@ converges. The Weierstrass $M$-test therefore gives uniform convergence of the m
 ::: {.pf-step #s1-2}
 
 For every $R>0$, the series obtained by differentiating each term,
-\[
+$$
 \sum_{k=1}^{\infty}
 \frac{kA^kt^{k-1}}{k!},
-\]
+$$
 also converges uniformly for $|t|\le R$.
 
 
 ::: pf-proof
 
 For $|t|\le R$,
-\[
+$$
 \left\|
 \frac{kA^kt^{k-1}}{k!}
 \right\|
 \le
 \frac{\|A\|^kR^{k-1}}{(k-1)!}.
-\]
+$$
 The scalar majorant satisfies
-\[
+$$
 \sum_{k=1}^{\infty}
 \frac{\|A\|^kR^{k-1}}{(k-1)!}
 =
 \|A\|e^{\|A\|R},
-\]
+$$
 so the Weierstrass $M$-test again gives uniform convergence.
 
 :::
@@ -108,12 +108,12 @@ so the Weierstrass $M$-test again gives uniform convergence.
 ::: {.pf-step #s1-3}
 
 The function $E:\RR\to M_n(\RR)$ is differentiable and may be differentiated term by term:
-\[
+$$
 E'(t)
 =
 \sum_{k=1}^{\infty}
 \frac{A^kt^{k-1}}{(k-1)!}.
-\]
+$$
 
 
 ::: pf-proof
@@ -129,15 +129,15 @@ For each fixed $R$, step [](#s1-2){.pf-ref} gives uniform convergence of the der
 ::: {.pf-step #s1-4}
 
 One has
-\[
+$$
 \boxed{E'(t)=AE(t)}.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-3){.pf-ref},
-\[
+$$
 \begin{aligned}
 E'(t)
 &=
@@ -150,7 +150,7 @@ A
 &=
 AE(t),
 \end{aligned}
-\]
+$$
 where $j=k-1$. Multiplication by the fixed matrix $A$ may be pulled through the convergent series because matrix multiplication is continuous and linear in the second factor.
 
 :::
@@ -160,33 +160,33 @@ where $j=k-1$. Multiplication by the fixed matrix $A$ may be pulled through the 
 ::: {.pf-step #s1-5}
 
 The function
-\[
+$$
 v(t)=E(t)v_0
-\]
+$$
 is differentiable and satisfies
-\[
+$$
 v'(t)=Av(t).
-\]
+$$
 
 
 ::: pf-proof
 
 Multiplication by the fixed vector $v_0$ is a linear continuous map
-\[
+$$
 M_n(\RR)\to\RR^n.
-\]
+$$
 Hence
-\[
+$$
 v'(t)=E'(t)v_0.
-\]
+$$
 Using step [](#s1-4){.pf-ref},
-\[
+$$
 v'(t)
 =
 AE(t)v_0
 =
 Av(t).
-\]
+$$
 
 :::
 
@@ -195,25 +195,25 @@ Av(t).
 ::: {.pf-step #s1-6}
 
 One has
-\[
+$$
 v(0)=v_0.
-\]
+$$
 
 
 ::: pf-proof
 
 At $t=0$,
-\[
+$$
 E(0)
 =
 \sum_{k=0}^{\infty}\frac{A^k0^k}{k!}
 =
 I.
-\]
+$$
 Therefore
-\[
+$$
 v(0)=Iv_0=v_0.
-\]
+$$
 
 :::
 
@@ -222,15 +222,15 @@ v(0)=Iv_0=v_0.
 ::: pf-step
 
 Hence
-\[
+$$
 \boxed{v(t)=e^{At}v_0}
-\]
+$$
 solves
-\[
+$$
 v'(t)=Av(t),
 \qquad
 v(0)=v_0.
-\]
+$$
 
 
 ::: pf-proof

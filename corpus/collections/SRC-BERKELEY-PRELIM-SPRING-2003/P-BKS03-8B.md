@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let $N=30030$, the product of the first six primes.
 How many integers $0\le x<N$ satisfy
-\[
+$$
 N\mid x^3-1?
-\]
+$$
 :::
 
 ::: {.solution}

@@ -33,38 +33,38 @@ Find $\operatorname{rad} I$, the radical of $I$, expressing it as an intersectio
 
 ::: {.solution}
 Let
-\[
+$$
 I=(x^2-y^3,\ x-y^2)\subseteq\CC[x,y].
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 There is an isomorphism
-\[
+$$
 \CC[x,y]/I\cong \CC[y]/(y^3(y-1)).
-\]
+$$
 
 ::: pf-proof
 
 First quotient by the relation $x-y^2$.
 The substitution homomorphism
-\[
+$$
 \CC[x,y]\longrightarrow\CC[y],
 \qquad
 x\longmapsto y^2,
 \qquad
 y\longmapsto y
-\]
+$$
 has kernel $(x-y^2)$, so
-\[
+$$
 \CC[x,y]/(x-y^2)\cong\CC[y].
-\]
+$$
 Under this isomorphism the other generator becomes
-\[
+$$
 x^2-y^3\longmapsto y^4-y^3=y^3(y-1).
-\]
+$$
 The claimed quotient follows.
 
 :::
@@ -74,20 +74,20 @@ The claimed quotient follows.
 ::: {.pf-step #s2}
 
 The affine variety of $I$ is
-\[
+$$
 V(I)=\{(0,0),(1,1)\}.
-\]
+$$
 
 ::: pf-proof
 
 Every point of $V(I)$ satisfies
-\[
+$$
 x=y^2.
-\]
+$$
 Substituting into $x^2-y^3=0$ gives
-\[
+$$
 y^4-y^3=y^3(y-1)=0.
-\]
+$$
 Hence $y=0$ or $y=1$, and then $x=y^2$ gives respectively $x=0$ or $x=1$.
 Both points satisfy the two generators of $I$.
 
@@ -98,22 +98,22 @@ Both points satisfy the two generators of $I$.
 ::: pf-step
 
 The radical of $I$ is
-\[
+$$
 \sqrt I=(x,y)\cap(x-1,y-1).
-\]
+$$
 
 ::: pf-proof
 
 By Hilbert's Nullstellensatz over the algebraically closed field $\CC$,
-\[
+$$
 \sqrt I=I(V(I)).
-\]
+$$
 By step [](#s2){.pf-ref},
-\[
+$$
 I(V(I))
 =I(\{(0,0)\})\cap I(\{(1,1)\})
 =(x,y)\cap(x-1,y-1).
-\]
+$$
 Each factor is maximal, hence prime, as requested.
 
 :::
@@ -127,24 +127,24 @@ The ideal $I$ is not radical.
 ::: pf-proof
 
 Set
-\[
+$$
 h=y(y-1).
-\]
+$$
 Under the quotient description of step [](#s1){.pf-ref}, membership in $I$ is equivalent to divisibility by $y^3(y-1)$ in $\CC[y]$.
 The polynomial
-\[
+$$
 y(y-1)
-\]
+$$
 is not divisible by $y^3(y-1)$, so $h\notin I$.
 However
-\[
+$$
 h^3=y^3(y-1)^3
-\]
+$$
 is divisible by $y^3(y-1)$, hence $h^3\in I$.
 Therefore
-\[
+$$
 h\in\sqrt I\setminus I,
-\]
+$$
 so $I\ne\sqrt I$ and $I$ is not radical.
 
 :::

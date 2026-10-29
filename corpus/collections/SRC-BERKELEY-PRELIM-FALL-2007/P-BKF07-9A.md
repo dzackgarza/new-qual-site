@@ -27,11 +27,11 @@ audit:
 ---
 
 ::: {.problem}
-Let \(G\) be a nonabelian group of order \(16\) containing a subgroup
-\[
+Let $G$ be a nonabelian group of order $16$ containing a subgroup
+$$
 H\cong C_2\times C_2\times C_2.
-\]
-Prove that the number of elements of \(G\) of exact order \(2\) is either \(7\) or \(11\).
+$$
+Prove that the number of elements of $G$ of exact order $2$ is either $7$ or $11$.
 :::
 
 ::: {.solution}

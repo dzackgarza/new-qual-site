@@ -25,22 +25,22 @@ Give a $\Delta$-complex structure for $S^1$, and use that to compute the homolog
 :::
 
 ::: {.solution}
-Give \(S^1\) the \(\Delta\)-complex structure with one vertex \(v\) and one \(1\)-simplex \(e\) whose two endpoints are both identified with \(v\). Then
-\[
+Give $S^1$ the $\Delta$-complex structure with one vertex $v$ and one $1$-simplex $e$ whose two endpoints are both identified with $v$. Then
+$$
 0\longrightarrow C_1\cong\ZZ
 \xrightarrow{\partial_1}
 C_0\cong\ZZ
 \longrightarrow0.
-\]
-Since both endpoints of \(e\) are \(v\),
-\[
+$$
+Since both endpoints of $e$ are $v$,
+$$
 \partial_1e=v-v=0.
-\]
+$$
 Therefore
-\[
+$$
 H_1(S^1)\cong\ker\partial_1\cong\ZZ,
 \qquad
 H_0(S^1)\cong C_0/\operatorname{im}\partial_1\cong\ZZ,
-\]
-and \(H_n(S^1)=0\) for \(n\ge2\).
+$$
+and $H_n(S^1)=0$ for $n\ge2$.
 :::

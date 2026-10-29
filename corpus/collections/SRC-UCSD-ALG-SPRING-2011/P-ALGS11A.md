@@ -42,9 +42,9 @@ The Sylow $13$-subgroup $N$ is unique and normal, and $N\cong C_{13}$.
 ::: pf-proof
 
 If $n_{13}$ is the number of Sylow $13$-subgroups, then
-\[
+$$
 n_{13}\mid9,\qquad n_{13}\equiv1\pmod{13}.
-\]
+$$
 Among the divisors $1,3,9$ of $9$, only $1$ is congruent to $1$ modulo $13$.
 Hence $n_{13}=1$.
 A group of prime order $13$ is cyclic.
@@ -68,21 +68,21 @@ Since $x$ has order $9=3^2$, $P$ has the full $3$-part of $|G|$, so it is a Sylo
 ::: {.pf-step #s3}
 
 We have
-\[
+$$
 G=N\rtimes P\cong C_{13}\rtimes_\theta C_9
-\]
+$$
 for a homomorphism
-\[
+$$
 \theta:C_9\to\operatorname{Aut}(C_{13})\cong C_{12}.
-\]
+$$
 
 ::: pf-proof
 
 The intersection $N\cap P$ is trivial because its order divides both $13$ and $9$.
 Since $N$ is normal,
-\[
+$$
 |NP|=\frac{|N||P|}{|N\cap P|}=13\cdot9=117=|G|,
-\]
+$$
 so $G=NP$.
 Conjugation by $P$ on $N$ gives the displayed semidirect product.
 
@@ -105,9 +105,9 @@ The image order divides both $|C_9|=9$ and $|C_{12}|=12$, hence divides $\gcd(9,
 ::: {.pf-step #s5}
 
 If $\theta$ is trivial, then
-\[
+$$
 G\cong C_{13}\times C_9\cong C_{117}.
-\]
+$$
 
 ::: pf-proof
 
@@ -121,10 +121,10 @@ Since $13$ and $9$ are coprime, $C_{13}\times C_9$ is cyclic of order $117$.
 ::: {.pf-step #s6}
 
 If $\theta$ is nontrivial, then there is exactly one isomorphism type, represented by
-\[
+$$
 G_{\mathrm{nt}}
 =\langle x,y\mid x^9=y^{13}=1,\;xyx^{-1}=y^3\rangle.
-\]
+$$
 
 ::: pf-proof
 
@@ -144,10 +144,10 @@ Hence there is only one nonabelian isomorphism type.
 
 Both groups contain an element of order $9$, and these are the only possibilities.
 Therefore
-\[
+$$
 \boxed{G\cong C_{117}\quad\text{or}\quad
 G\cong C_{13}\rtimes C_9\text{ with nontrivial image of order }3.}
-\]
+$$
 
 ::: pf-proof
 

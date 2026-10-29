@@ -32,16 +32,16 @@ Show that if the sequence $(f_n)$ converges uniformly to $f$, then $(f_n(x_n))$ 
 
 ::: {.solution}
 Uniform convergence of continuous maps into a metric space implies that the limit map $f$ is continuous. Let $d$ be the metric on $Y$. Then
-\[
+$$
 d(f_n(x_n),f(x))
 \le d(f_n(x_n),f(x_n))+d(f(x_n),f(x)).
-\]
+$$
 The first term tends to $0$ because
-\[
+$$
 \sup_{z\in X}d(f_n(z),f(z))\to0.
-\]
+$$
 The second tends to $0$ because $x_n\to x$ and $f$ is continuous. Hence
-\[
+$$
 f_n(x_n)\longrightarrow f(x).
-\]
+$$
 :::

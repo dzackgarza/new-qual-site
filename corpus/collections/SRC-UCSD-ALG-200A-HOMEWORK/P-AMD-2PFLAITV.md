@@ -36,13 +36,13 @@ audit:
 
 ::: {.problem}
 Prove that a group of each of the following orders is not simple:
-\[
+$$
 24,
 \qquad
 36,
 \qquad
 48.
-\]
+$$
 
 Hint: consider the kernel of the conjugation action on the set of Sylow $p$-subgroups.
 :::
@@ -55,29 +55,29 @@ Hint: consider the kernel of the conjugation action on the set of Sylow $p$-subg
 
 Let a finite group $G$ act by conjugation on its set of Sylow $p$-subgroups.
 If there is more than one Sylow $p$-subgroup and $G$ is simple, then the associated homomorphism
-\[
+$$
 \varphi:G\longrightarrow S_{n_p}
-\]
+$$
 is injective.
 
 ::: pf-proof
 
 The conjugation action gives a homomorphism
-\[
+$$
 \varphi:G\longrightarrow S_{n_p},
-\]
+$$
 where $n_p$ is the number of Sylow $p$-subgroups.
 Its kernel is a normal subgroup of $G$.
 
 If $n_p>1$, the action is nontrivial: Sylow's conjugacy theorem says that $G$ acts transitively on the Sylow $p$-subgroups, and a trivial action on a set with more than one element cannot be transitive.
 Thus
-\[
+$$
 \ker\varphi\ne G.
-\]
+$$
 If $G$ is simple, its only normal subgroups are $\{1\}$ and $G$, so
-\[
+$$
 \ker\varphi=\{1\}.
-\]
+$$
 Hence $\varphi$ is injective.
 
 :::
@@ -92,26 +92,26 @@ Every group of order $24$ is not simple.
 
 Let $|G|=24=2^3\cdot3$ and let $n_2$ be the number of Sylow $2$-subgroups.
 Sylow's theorem gives
-\[
+$$
 n_2\equiv1\pmod2
 \qquad\text{and}\qquad
 n_2\mid3.
-\]
+$$
 Hence
-\[
+$$
 n_2\in\{1,3\}.
-\]
+$$
 If $n_2=1$, the unique Sylow $2$-subgroup is a nontrivial proper normal subgroup, so $G$ is not simple.
 
 Suppose instead that $n_2=3$ and that $G$ were simple.
 By step [](#s1){.pf-ref}, conjugation on the three Sylow $2$-subgroups would give an injection
-\[
+$$
 G\hookrightarrow S_3.
-\]
+$$
 But
-\[
+$$
 |G|=24>6=|S_3|,
-\]
+$$
 which is impossible.
 Therefore $G$ is not simple.
 
@@ -127,25 +127,25 @@ Every group of order $36$ is not simple.
 
 Let $|G|=36=2^2\cdot3^2$ and let $n_3$ be the number of Sylow $3$-subgroups.
 Sylow's theorem gives
-\[
+$$
 n_3\equiv1\pmod3
 \qquad\text{and}\qquad
 n_3\mid4.
-\]
+$$
 Thus
-\[
+$$
 n_3\in\{1,4\}.
-\]
+$$
 If $n_3=1$, the unique Sylow $3$-subgroup is normal and $G$ is not simple.
 
 If $n_3=4$ and $G$ were simple, step [](#s1){.pf-ref} would give an injection
-\[
+$$
 G\hookrightarrow S_4.
-\]
+$$
 This is impossible because
-\[
+$$
 |G|=36>24=|S_4|.
-\]
+$$
 Hence every group of order $36$ is not simple.
 
 :::
@@ -160,25 +160,25 @@ Every group of order $48$ is not simple.
 
 Let $|G|=48=2^4\cdot3$ and let $n_2$ be the number of Sylow $2$-subgroups.
 Sylow's theorem gives
-\[
+$$
 n_2\equiv1\pmod2
 \qquad\text{and}\qquad
 n_2\mid3.
-\]
+$$
 Hence
-\[
+$$
 n_2\in\{1,3\}.
-\]
+$$
 If $n_2=1$, the Sylow $2$-subgroup is normal and $G$ is not simple.
 
 If $n_2=3$ and $G$ were simple, step [](#s1){.pf-ref} would give an injection
-\[
+$$
 G\hookrightarrow S_3.
-\]
+$$
 But
-\[
+$$
 |G|=48>6=|S_3|,
-\]
+$$
 again impossible.
 Therefore every group of order $48$ is not simple.
 

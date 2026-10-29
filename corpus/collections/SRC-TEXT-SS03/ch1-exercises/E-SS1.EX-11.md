@@ -46,9 +46,9 @@ Every complex-valued function has uniquely determined real and imaginary parts.
 ::: pf-step
 
 Since $f$ is holomorphic,
-\[
+$$
 \frac{\partial f}{\partial\overline z}=0.
-\]
+$$
 
 ::: pf-proof
 
@@ -65,12 +65,12 @@ Hence $\Delta f=0$.
 ::: pf-proof
 
 Holomorphic functions are smooth, so the identity $4\partial_z\partial_{\overline z}=\Delta$ of [[E-SS1.EX-10]] applies. Thus
-\[
+$$
 \Delta f
 =4\frac{\partial}{\partial z}\frac{\partial f}{\partial\overline z}
 =4\frac{\partial}{\partial z}(0)
 =0.
-\]
+$$
 
 :::
 
@@ -79,9 +79,9 @@ Holomorphic functions are smooth, so the identity $4\partial_z\partial_{\overlin
 ::: {.pf-step #s4}
 
 One has
-\[
+$$
 \Delta f=\Delta u+i\Delta v.
-\]
+$$
 
 ::: pf-proof
 
@@ -98,9 +98,9 @@ Therefore $\Delta u=0$ and $\Delta v=0$ on $\Omega$.
 ::: pf-proof
 
 By steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
-\[
+$$
 \Delta u+i\Delta v=0.
-\]
+$$
 Both $\Delta u$ and $\Delta v$ are real-valued, so the real and imaginary parts vanish separately. Thus $u$ and $v$ are harmonic.
 
 :::

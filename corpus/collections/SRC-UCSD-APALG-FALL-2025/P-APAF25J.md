@@ -24,7 +24,7 @@ Find two finite matrix groups $G,H\subseteq\mathrm{GL}_2(\CC)$ such that
 ::: {.solution}
 
 Let
-\[
+$$
 G=\left\langle
 \begin{pmatrix}-1&0\\0&1\end{pmatrix}
 \right\rangle,
@@ -32,75 +32,75 @@ G=\left\langle
 H=\left\langle
 \begin{pmatrix}-1&0\\0&-1\end{pmatrix}
 \right\rangle.
-\]
-Both groups have order \(2\), so
-\[
+$$
+Both groups have order $2$, so
+$$
 G\cong C_2\cong H.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #g-invariant-ring}
-The invariant ring for \(G\) is
-\[
+The invariant ring for $G$ is
+$$
 \CC[x,y]^G=\CC[x^2,y].
-\]
+$$
 
 ::: pf-proof
-The nontrivial element of \(G\) sends
-\[
+The nontrivial element of $G$ sends
+$$
 (x,y)\longmapsto(-x,y).
-\]
-A monomial \(x^a y^b\) is fixed exactly when \(a\) is even. Hence an invariant polynomial is precisely a polynomial in \(x^2\) and \(y\), giving the stated invariant ring.
+$$
+A monomial $x^a y^b$ is fixed exactly when $a$ is even. Hence an invariant polynomial is precisely a polynomial in $x^2$ and $y$, giving the stated invariant ring.
 :::
 
 :::
 
 ::: {.pf-step #g-hilbert-series}
-The Hilbert series of \(\CC[x,y]^G\) is
-\[
+The Hilbert series of $\CC[x,y]^G$ is
+$$
 \operatorname{Hilb}(\CC[x,y]^G;t)
 =\frac1{(1-t^2)(1-t)}.
-\]
+$$
 
 ::: pf-proof
-The ring \(\CC[x^2,y]\) is a polynomial ring on homogeneous generators of degrees \(2\) and \(1\). Therefore its Hilbert series is the product of the geometric-series factors
-\[
+The ring $\CC[x^2,y]$ is a polynomial ring on homogeneous generators of degrees $2$ and $1$. Therefore its Hilbert series is the product of the geometric-series factors
+$$
 \frac1{1-t^2}\cdot\frac1{1-t}.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #h-invariant-polynomials-parity}
-The \(H\)-invariant polynomials are exactly those of even total degree in each homogeneous component.
+The $H$-invariant polynomials are exactly those of even total degree in each homogeneous component.
 
 ::: pf-proof
-The nontrivial element \(-I\in H\) sends
-\[
+The nontrivial element $-I\in H$ sends
+$$
 (x,y)\longmapsto(-x,-y).
-\]
-Thus a monomial \(x^a y^b\) is multiplied by \((-1)^{a+b}\). It is fixed exactly when \(a+b\) is even. Hence the degree-\(d\) invariant subspace is all of \(\CC[x,y]_d\) when \(d\) is even and is \(0\) when \(d\) is odd.
+$$
+Thus a monomial $x^a y^b$ is multiplied by $(-1)^{a+b}$. It is fixed exactly when $a+b$ is even. Hence the degree-$d$ invariant subspace is all of $\CC[x,y]_d$ when $d$ is even and is $0$ when $d$ is odd.
 :::
 
 :::
 
 ::: {.pf-step #h-hilbert-series}
-The Hilbert series of \(\CC[x,y]^H\) is
-\[
+The Hilbert series of $\CC[x,y]^H$ is
+$$
 \operatorname{Hilb}(\CC[x,y]^H;t)
 =\sum_{m\ge0}(2m+1)t^{2m}
 =\frac{1+t^2}{(1-t^2)^2}.
-\]
+$$
 
 ::: pf-proof
-The degree \(2m\) homogeneous polynomials in two variables have dimension \(2m+1\), while odd-degree invariants vanish by step [](#h-invariant-polynomials-parity){.pf-ref}. Writing \(u=t^2\),
-\[
+The degree $2m$ homogeneous polynomials in two variables have dimension $2m+1$, while odd-degree invariants vanish by step [](#h-invariant-polynomials-parity){.pf-ref}. Writing $u=t^2$,
+$$
 \sum_{m\ge0}(2m+1)u^m
 =2\frac{u}{(1-u)^2}+\frac1{1-u}
 =\frac{1+u}{(1-u)^2}.
-\]
-Substituting \(u=t^2\) gives the formula.
+$$
+Substituting $u=t^2$ gives the formula.
 :::
 
 :::
@@ -109,15 +109,15 @@ Substituting \(u=t^2\) gives the formula.
 The two Hilbert series are different.
 
 ::: pf-proof
-For example, the coefficient of \(t\) in
-\[
+For example, the coefficient of $t$ in
+$$
 \frac1{(1-t^2)(1-t)}
-\]
-is \(1\), corresponding to the invariant \(y\), while the coefficient of \(t\) in
-\[
+$$
+is $1$, corresponding to the invariant $y$, while the coefficient of $t$ in
+$$
 \frac{1+t^2}{(1-t^2)^2}
-\]
-is \(0\). Thus the Hilbert series differ even though \(G\cong H\).
+$$
+is $0$. Thus the Hilbert series differ even though $G\cong H$.
 :::
 
 :::

@@ -35,27 +35,27 @@ Then $X$ is complete.
 
 Let $(x_n)$ be a Cauchy sequence in $X$.
 Sequential compactness gives a convergent subsequence
-\[
+$$
 x_{n_k}\to x
-\]
+$$
 for some $x\in X$.
 
 Fix $\varepsilon>0$.
 Choose $N$ such that
-\[
+$$
 d(x_m,x_n)<\frac{\varepsilon}{2}
-\]
+$$
 for all $m,n\ge N$.
 Also choose $k$ so large that
-\[
+$$
 n_k\ge N
-\]
+$$
 and
-\[
+$$
 d(x_{n_k},x)<\frac{\varepsilon}{2}.
-\]
+$$
 Then for every $n\ge N$,
-\[
+$$
 \begin{aligned}
 d(x_n,x)
 &\le
@@ -65,11 +65,11 @@ d(x_{n_k},x)\\
 &<
 \varepsilon.
 \end{aligned}
-\]
+$$
 Thus
-\[
+$$
 x_n\to x.
-\]
+$$
 Hence every Cauchy sequence converges, so $X$ is complete.
 
 :::
@@ -85,45 +85,45 @@ If $X$ is sequentially compact, then $X$ is totally bounded.
 
 Suppose not.
 Then there exists
-\[
+$$
 \varepsilon>0
-\]
+$$
 such that no finite union of $\varepsilon$-balls covers $X$.
 
 Choose
-\[
+$$
 x_1\in X.
-\]
+$$
 Since
-\[
+$$
 B(x_1,\varepsilon)
-\]
+$$
 does not cover $X$, choose
-\[
+$$
 x_2\notin B(x_1,\varepsilon).
-\]
+$$
 Inductively, after choosing
-\[
+$$
 x_1,\ldots,x_n,
-\]
+$$
 the finite union
-\[
+$$
 \bigcup_{j=1}^nB(x_j,\varepsilon)
-\]
+$$
 does not cover $X$, so choose
-\[
+$$
 x_{n+1}
-\]
+$$
 outside it.
 
 Then
-\[
+$$
 d(x_i,x_j)\ge\varepsilon
-\]
+$$
 whenever
-\[
+$$
 i\ne j.
-\]
+$$
 Hence no subsequence can be Cauchy, and therefore no subsequence can converge.
 This contradicts sequential compactness.
 Thus $X$ is totally bounded.
@@ -136,9 +136,9 @@ Thus $X$ is totally bounded.
 
 Now suppose conversely that $X$ is complete and totally bounded.
 Let
-\[
+$$
 (x_n)
-\]
+$$
 be any sequence in $X$.
 Then $(x_n)$ has a Cauchy subsequence.
 
@@ -146,48 +146,48 @@ Then $(x_n)$ has a Cauchy subsequence.
 ::: pf-proof
 
 Cover $X$ by finitely many balls of radius
-\[
+$$
 \frac12.
-\]
+$$
 At least one such ball contains infinitely many terms of the sequence.
 Pass to an infinite subsequence contained in that ball.
 
 Next cover $X$ by finitely many balls of radius
-\[
+$$
 \frac1{2^2}.
-\]
+$$
 One of these contains infinitely many terms of the preceding subsequence.
 Pass again to an infinite subsequence.
 
 Continue inductively.
 At stage $k$, obtain an infinite subsequence all of whose terms lie in a ball of radius
-\[
+$$
 2^{-k}.
-\]
+$$
 
 Choose a diagonal subsequence
-\[
+$$
 (y_k)
-\]
+$$
 with strictly increasing original indices, where $y_k$ is chosen from the stage-$k$ subsequence.
 If
-\[
+$$
 m,n\ge k,
-\]
+$$
 then both $y_m$ and $y_n$ belong to the same stage-$k$ ball, so
-\[
+$$
 d(y_m,y_n)
 <
 2^{1-k}.
-\]
+$$
 Given $\varepsilon>0$, choose $k$ so large that
-\[
+$$
 2^{1-k}<\varepsilon.
-\]
+$$
 Then
-\[
+$$
 d(y_m,y_n)<\varepsilon
-\]
+$$
 for all $m,n\ge k$.
 Thus $(y_k)$ is Cauchy.
 
@@ -227,13 +227,13 @@ This is the definition of sequential compactness.
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{
 X\text{ is sequentially compact}
 \iff
 X\text{ is complete and totally bounded}.
 }
-\]
+$$
 
 
 ::: pf-proof

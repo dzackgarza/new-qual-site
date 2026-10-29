@@ -50,15 +50,15 @@ Prove that the recursion is well defined and produces continuous functions.
 ::: pf-proof
 
 Let
-\[
+$$
 M:=\sup_{x\in\RR}|G(x)|<\infty.
-\]
+$$
 The function $f_0\equiv1$ is continuous. Suppose inductively that $f_n$ is continuous. Then $f_n$ is Borel measurable, so the composition $G\circ f_n$ is Borel measurable. It is also bounded by $M$, hence integrable on $[-1,1]$.
 
 Therefore
-\[
+$$
 f_{n+1}(t)=1+\int_0^t G(f_n(\tau))\,d\tau
-\]
+$$
 is well defined for every $t\in[-1,1]$. In fact it is absolutely continuous, hence continuous. By induction, every $f_n$ is well defined and belongs to $C([-1,1])$.
 
 :::
@@ -72,19 +72,19 @@ Establish uniform boundedness and equicontinuity.
 ::: pf-proof
 
 For $n\ge0$ and $t\in[-1,1]$,
-\[
+$$
 |f_{n+1}(t)|
 \le 1+\int_0^t|G(f_n(\tau))|\,|d\tau|
 \le 1+M.
-\]
+$$
 Also, for $s,t\in[-1,1]$,
-\[
+$$
 \begin{aligned}
 |f_{n+1}(t)-f_{n+1}(s)|
 &=\left|\int_s^t G(f_n(\tau))\,d\tau\right|\\
 &\le M|t-s|.
 \end{aligned}
-\]
+$$
 Thus $(f_n)_{n\ge1}$ is uniformly bounded and equi-Lipschitz, hence equicontinuous.
 
 :::
@@ -98,9 +98,9 @@ Apply Arzelà--Ascoli.
 ::: pf-proof
 
 The domain $[-1,1]$ is compact. By Step 2, the family $\{f_n:n\ge1\}$ is uniformly bounded and equicontinuous. The Arzelà--Ascoli theorem therefore implies that every sequence in this family has a uniformly convergent subsequence. In particular,
-\[
+$$
 \boxed{\{f_n\}_{n=1}^\infty\text{ has a uniformly convergent subsequence}.}
-\]
+$$
 
 :::
 

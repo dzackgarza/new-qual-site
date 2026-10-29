@@ -38,9 +38,9 @@ Symmetry and contour setup:
 
 The integrand $\frac{1 - \cos x}{x^2}$ is an even, non-negative continuous function on $\RR$ (with removable singularity at $x=0$, $\lim_{x\to 0} \frac{1-\cos x}{x^2} = \frac{1}{2}$).
 Thus:
-\[
+$$
 \int_0^\infty \frac{1 - \cos x}{x^2} \, dx = \frac{1}{2} \int_{-\infty}^\infty \frac{1 - \cos x}{x^2} \, dx = \frac{1}{2} \operatorname{Re} \left( \int_{-\infty}^\infty \frac{1 - e^{ix}}{x^2} \, dx \right).
-\]
+$$
 
 ::: pf-proof
 
@@ -71,9 +71,9 @@ standard indented contour.
 
 Since $f(z)$ is holomorphic on $\CC \setminus \{0\}$, it has no poles inside the region bounded by $\Gamma_{R, \epsilon}$.
 By Cauchy’s Integral Theorem:
-\[
+$$
 \oint_{\Gamma_{R, \epsilon}} f(z) \, dz = \int_{-R}^{-\epsilon} f(x) \, dx + \int_{C_\epsilon} f(z) \, dz + \int_\epsilon^R f(x) \, dx + \int_{C_R} f(z) \, dz = 0.
-\]
+$$
 
 ::: pf-proof
 
@@ -99,9 +99,9 @@ Contour estimates:
 For $z = R e^{i\theta}$ with $\theta \in [0, \pi]$, we have $\operatorname{Im}(z) = R \sin \theta \ge 0$, so $|e^{iz}| = e^{-R \sin \theta} \le 1$.
 Thus $|1 - e^{iz}| \le 1 + |e^{iz}| \le 2$.
 The integral along $C_R$ is bounded by:
-\[
+$$
 \left| \int_{C_R} f(z) \, dz \right| \le \frac{2}{R^2} \cdot \pi R = \frac{2\pi}{R} \xrightarrow{R \to \infty} 0.
-\]
+$$
 
 ::: pf-proof
 
@@ -115,14 +115,14 @@ ML-inequality.
 
 **Small indented semicircle limit on $C_\epsilon$:**
 Expanding $e^{iz} = 1 + iz - \frac{z^2}{2} + O(z^3)$ near $z = 0$:
-\[
+$$
 f(z) = \frac{1 - (1 + iz + O(z^2))}{z^2} = -\frac{i}{z} + O(1).
-\]
+$$
 Thus $f(z)$ has a simple pole at $z = 0$ with residue $\operatorname{Res}(f, 0) = -i$.
 Integrating along the clockwise semicircle $C_\epsilon$:
-\[
+$$
 \lim_{\epsilon \to 0} \int_{C_\epsilon} f(z) \, dz = -\pi i \operatorname{Res}(f, 0) = -\pi i (-i) = -\pi.
-\]
+$$
 
 ::: pf-proof
 
@@ -145,9 +145,9 @@ Evaluation of the integral:
 ::: {.pf-step #s3-1}
 
 Taking $R \to \infty$ and $\epsilon \to 0^+$ in Cauchy’s Theorem:
-\[
+$$
 \int_{-\infty}^\infty \frac{1 - e^{ix}}{x^2} \, dx + (-\pi) + 0 = 0 \implies \int_{-\infty}^\infty \frac{1 - e^{ix}}{x^2} \, dx = \pi.
-\]
+$$
 
 ::: pf-proof
 
@@ -160,9 +160,9 @@ taking limits of the contour components.
 ::: pf-step
 
 Taking the real part yields:
-\[
+$$
 \int_0^\infty \frac{1 - \cos x}{x^2} \, dx = \frac{1}{2} \operatorname{Re}(\pi) = \frac{\pi}{2}.
-\]
+$$
 
 ::: pf-proof
 

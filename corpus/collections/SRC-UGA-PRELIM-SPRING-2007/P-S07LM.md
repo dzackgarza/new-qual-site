@@ -29,64 +29,64 @@ b) Using the definition and basic properties of $\ln(x)$, show that $\lim_{x \to
 
 ::: {.pf-step #s1}
 The statement
-\[
+$$
 \lim_{x\to a^+}f(x)=L
-\]
+$$
 means: for every $\varepsilon>0$ there exists $\delta>0$ such that
-\[
+$$
 0<x-a<\delta\implies |f(x)-L|<\varepsilon.
-\]
+$$
 
 :::
 
 ::: pf-step
 Let $\varepsilon>0$ and set
-\[
+$$
 \delta=e^{-1/\varepsilon}.
-\]
+$$
 Then $0<\delta<1$.
 
 :::
 
 ::: {.pf-step #s3}
 If $0<x<\delta$, then
-\[
+$$
 \ln x<-\frac1\varepsilon<0.
-\]
+$$
 
 ::: pf-proof
 The logarithm is strictly increasing on $(0,\infty)$. Hence
-\[
+$$
 0<x<e^{-1/\varepsilon}
 \implies
 \ln x<\ln(e^{-1/\varepsilon})=-\frac1\varepsilon.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #s4}
 Therefore, if $0<x<\delta$,
-\[
+$$
 \left|\frac1{\ln x}-0\right|<\varepsilon.
-\]
+$$
 
 ::: pf-proof
 By step [](#s3){.pf-ref}, $\ln x<0$ and $|\ln x|>1/\varepsilon$. Thus
-\[
+$$
 \left|\frac1{\ln x}\right|
 =\frac1{|\ln x|}
 <\varepsilon.
-\]
+$$
 :::
 
 :::
 
 ::: pf-step
 Hence
-\[
+$$
 \boxed{\lim_{x\to0^+}\frac1{\ln x}=0.}
-\]
+$$
 
 ::: pf-proof
 The estimate in step [](#s4){.pf-ref} holds for every $x$ satisfying $0<x-0<\delta$, so it is exactly the right-hand $\varepsilon$-$\delta$ condition from step [](#s1){.pf-ref}.

@@ -45,19 +45,19 @@ The primitive $F_n(x)\coloneqq\int_0^xS_n(t)\,dt$ satisfies $\|F_n\|_\infty\le10
 ::: pf-proof
 
 The function $P$ has period $2$ and has mean zero on each period. Hence $S_n(x)=P(10^n x)$ has period
-\[
+$$
 2\cdot 10^{-n}
-\]
+$$
 and mean zero on each period.
 
 Define
-\[
+$$
 F_n(x):=\int_0^x S_n(t)\,dt.
-\]
+$$
 Because the integral over every full period is zero, $F_n$ is periodic with the same period. On each half-period, $S_n$ is constant equal to $1$ or $-1$, so the oscillation of $F_n$ is at most $10^{-n}$. Therefore
-\[
+$$
 \|F_n\|_\infty\le 10^{-n}.
-\]
+$$
 
 :::
 
@@ -70,17 +70,17 @@ $\int_{\RR}S_n\varphi\to0$ for every $\varphi\in C_c^1(\RR)$.
 ::: pf-proof
 
 Let $\varphi\in C_c^1(\RR)$. Since $F_n'=S_n$ almost everywhere and $\varphi$ has compact support, integration by parts gives
-\[
+$$
 \int_{\RR}S_n(x)\varphi(x)\,dx
 =-\int_{\RR}F_n(x)\varphi'(x)\,dx.
-\]
+$$
 Hence
-\[
+$$
 \left|\int S_n\varphi\right|
 \le \|F_n\|_\infty\,\|\varphi'\|_1
 \le 10^{-n}\|\varphi'\|_1
 \longrightarrow0.
-\]
+$$
 
 :::
 
@@ -93,26 +93,26 @@ $\int_{\RR}S_nf\to0$ for every $f\in L^1(\RR)$.
 ::: pf-proof
 
 Fix $f\in L^1(\RR)$ and $\varepsilon>0$. Choose $\varphi\in C_c^1(\RR)$ such that
-\[
+$$
 \|f-\varphi\|_1<\varepsilon.
-\]
+$$
 Since $|S_n|=1$ almost everywhere,
-\[
+$$
 \left|\int S_n(f-\varphi)\right|
 \le \|f-\varphi\|_1<\varepsilon.
-\]
+$$
 By step [](#s2){.pf-ref}, for all sufficiently large $n$,
-\[
+$$
 \left|\int S_n\varphi\right|<\varepsilon.
-\]
+$$
 Therefore
-\[
+$$
 \left|\int S_nf\right|<2\varepsilon
-\]
+$$
 for all sufficiently large $n$. Since $\varepsilon$ is arbitrary,
-\[
+$$
 \boxed{\int_{\RR}S_n(x)f(x)\,dx\longrightarrow0.}
-\]
+$$
 
 :::
 

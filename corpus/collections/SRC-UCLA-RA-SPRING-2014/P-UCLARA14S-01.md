@@ -20,9 +20,9 @@ audit:
 Let $(X,\mathcal A,\mu)$ be a $\sigma$-finite measure space.
 For $t\in\RR$, let $e_t$ be the characteristic function of $(t,\infty)$.
 Prove that for measurable $f,g:X\to\RR$,
-\[
+$$
 \|f-g\|_{L^1(X)}=\int_{\RR}\|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -32,12 +32,12 @@ Prove that for measurable $f,g:X\to\RR$,
 ::: {.pf-step #s1-1}
 
 For every $x\in X$,
-\[
+$$
 \int_{\RR}
 |e_t(f(x))-e_t(g(x))|\,dt
 =
 |f(x)-g(x)|.
-\]
+$$
 
 
 ::: pf-proof
@@ -45,7 +45,7 @@ For every $x\in X$,
 Fix $x\in X$. If $f(x)=g(x)$, then the integrand is identically zero and the equality is immediate.
 
 Suppose first that $f(x)<g(x)$. Then
-\[
+$$
 e_t(f(x))
 =
 \mathbf 1_{\{t<f(x)\}},
@@ -53,20 +53,20 @@ e_t(f(x))
 e_t(g(x))
 =
 \mathbf 1_{\{t<g(x)\}}.
-\]
+$$
 Hence
-\[
+$$
 |e_t(f(x))-e_t(g(x))|
 =
 \mathbf 1_{[f(x),g(x))}(t)
-\]
+$$
 up to endpoints, which do not affect the Lebesgue integral. Therefore
-\[
+$$
 \int_{\RR}
 |e_t(f(x))-e_t(g(x))|\,dt
 =
 g(x)-f(x).
-\]
+$$
 The case $g(x)<f(x)$ is identical with the roles reversed, giving $f(x)-g(x)$. Thus the value is always $|f(x)-g(x)|$.
 
 :::
@@ -76,24 +76,24 @@ The case $g(x)<f(x)$ is identical with the roles reversed, giving $f(x)-g(x)$. T
 ::: {.pf-step #s1-2}
 
 The function
-\[
+$$
 (x,t)
 \longmapsto
 |e_t(f(x))-e_t(g(x))|
-\]
+$$
 is measurable and nonnegative on $X\times\RR$.
 
 
 ::: pf-proof
 
 The set
-\[
+$$
 \{(x,t):t<f(x)\}
-\]
+$$
 is measurable because the map
-\[
+$$
 (x,t)\longmapsto f(x)-t
-\]
+$$
 is measurable. Hence $(x,t)\mapsto e_t(f(x))$ is measurable. The same holds for $g$, and therefore their absolute difference is measurable. Nonnegativity is immediate.
 
 :::
@@ -103,20 +103,20 @@ is measurable. Hence $(x,t)\mapsto e_t(f(x))$ is measurable. The same holds for 
 ::: {.pf-step #s1-3}
 
 One has
-\[
+$$
 \int_{\RR}
 \|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt
 =
 \int_X
 \int_{\RR}
 |e_t(f(x))-e_t(g(x))|\,dt\,d\mu(x).
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-2){.pf-ref}, the integrand is nonnegative and measurable. Since $(X,\mathcal A,\mu)$ is $\sigma$-finite and Lebesgue measure on $\RR$ is $\sigma$-finite, Tonelli's theorem applies:
-\[
+$$
 \begin{aligned}
 \int_{\RR}
 \|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt
@@ -129,7 +129,7 @@ By step [](#s1-2){.pf-ref}, the integrand is nonnegative and measurable. Since $
 \int_{\RR}
 |e_t(f(x))-e_t(g(x))|\,dt\,d\mu(x).
 \end{aligned}
-\]
+$$
 The equality is valid in $[0,\infty]$.
 
 :::
@@ -139,20 +139,20 @@ The equality is valid in $[0,\infty]$.
 ::: {.pf-step #s1-4}
 
 Therefore
-\[
+$$
 \boxed{
 \|f-g\|_{L^1(X)}
 =
 \int_{\RR}
 \|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 Apply step [](#s1-1){.pf-ref} inside the iterated integral from step [](#s1-3){.pf-ref}:
-\[
+$$
 \begin{aligned}
 \int_{\RR}
 \|e_t\circ f-e_t\circ g\|_{L^1(X)}\,dt
@@ -161,7 +161,7 @@ Apply step [](#s1-1){.pf-ref} inside the iterated integral from step [](#s1-3){.
 &=
 \|f-g\|_{L^1(X)}.
 \end{aligned}
-\]
+$$
 
 :::
 

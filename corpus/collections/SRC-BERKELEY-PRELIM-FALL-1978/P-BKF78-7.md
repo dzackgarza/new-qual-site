@@ -32,9 +32,9 @@ Let $H$ be a subgroup of a finite group $G$.
 
 2. Let $G$ be the group of symmetries of the square.
    Find a subgroup $H$ and an element $x\in G$ such that
-\[
+$$
 xH\ne Hx.
-\]
+$$
 :::
 
 ::: {.solution}

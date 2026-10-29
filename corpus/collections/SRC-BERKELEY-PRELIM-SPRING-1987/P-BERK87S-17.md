@@ -27,17 +27,17 @@ audit:
 
 ::: {.problem}
 Let $V$ be a finite-dimensional complex linear subspace of $C^\infty(\RR)$ and suppose $V$ is invariant under differentiation:
-\[
+$$
 f\in V\implies Df\in V.
-\]
+$$
 Prove that there is a nonzero constant-coefficient differential operator
-\[
+$$
 L=\sum_{k=0}^{n}a_kD^k
-\]
+$$
 such that $V$ is exactly the space of solutions of
-\[
+$$
 Lf=0.
-\]
+$$
 :::
 
 ::: {.solution}

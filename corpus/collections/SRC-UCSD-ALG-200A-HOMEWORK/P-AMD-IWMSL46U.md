@@ -35,9 +35,9 @@ Show: $\exists g\in G \ni o(g)  = 2$
 
 ::: {.solution}
 Let
-\[
+$$
 S=\{g\in G:g\ne g^{-1}\}.
-\]
+$$
 
 ::: pf
 
@@ -48,22 +48,22 @@ The set $S$ has even cardinality.
 ::: pf-proof
 
 If $g\in S$, then
-\[
+$$
 g^{-1}\ne(g^{-1})^{-1}=g,
-\]
+$$
 so $g^{-1}\in S$.
 Moreover, by the definition of $S$,
-\[
+$$
 g\ne g^{-1}.
-\]
+$$
 Thus the involution
-\[
+$$
 g\longmapsto g^{-1}
-\]
+$$
 partitions $S$ into disjoint two-element sets
-\[
+$$
 \{g,g^{-1}\}.
-\]
+$$
 Hence $|S|$ is even.
 
 :::
@@ -77,22 +77,22 @@ There is an element $h\in G\setminus S$ with $h\ne e$.
 ::: pf-proof
 
 The identity satisfies
-\[
+$$
 e=e^{-1},
-\]
+$$
 so $e\notin S$.
 By step [](#s1){.pf-ref}, $|S|$ is even, while $|G|$ is even by hypothesis.
 Therefore
-\[
+$$
 |G\setminus S|=|G|-|S|
-\]
+$$
 is even.
 Since $G\setminus S$ already contains $e$, it cannot consist of the single element $e$.
 Hence there exists
-\[
+$$
 h\in G\setminus S,
 \qquad h\ne e.
-\]
+$$
 
 :::
 
@@ -105,18 +105,18 @@ The element $h$ from step [](#s2){.pf-ref} has order $2$.
 ::: pf-proof
 
 Because $h\notin S$,
-\[
+$$
 h=h^{-1}.
-\]
+$$
 Multiplying by $h$ gives
-\[
+$$
 h^2=e.
-\]
+$$
 Since $h\ne e$, its order is not $1$.
 Its order divides $2$, so
-\[
+$$
 o(h)=2.
-\]
+$$
 Thus $G$ contains an element of order $2$.
 
 :::

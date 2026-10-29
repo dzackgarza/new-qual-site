@@ -33,9 +33,9 @@ audit:
 
 ::: {.problem}
 Show that the denominator of
-\[
+$$
 \binom{1/2}{n}
-\]
+$$
 is a power of $2$ for every integer $n$.
 :::
 

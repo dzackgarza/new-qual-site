@@ -64,14 +64,14 @@ The structure theorem applies to finitely generated modules, not arbitrary modul
 For example, with $R=\ZZ$, the $\ZZ$-module $\QQ$ is indecomposable but is neither $\ZZ$ nor $\ZZ/(p^n)$.
 
 Indeed, every $\ZZ$-linear endomorphism $f:\QQ\to\QQ$ is multiplication by $f(1)\in\QQ$: for $a/b\in\QQ$,
-\[
+$$
 bf(a/b)=f(a)=a f(1),
-\]
+$$
 so $f(a/b)=(a/b)f(1)$.
 Thus
-\[
+$$
 \operatorname{End}_{\ZZ}(\QQ)\cong\QQ.
-\]
+$$
 If $\QQ=M_1\oplus M_2$ were a nontrivial direct sum, projection onto $M_1$ would be a nontrivial idempotent endomorphism.
 But a field has only the idempotents $0$ and $1$.
 Hence $\QQ$ is indecomposable.
@@ -83,19 +83,19 @@ Hence $\QQ$ is indecomposable.
 ::: {.pf-step #s3}
 
 With the additional hypothesis that $M$ is finitely generated, the indecomposable $R$-modules are exactly
-\[
+$$
 \boxed{R
 \qquad\text{and}\qquad
 R/(p^n)},
-\]
+$$
 where $p$ is irreducible and $n\ge 1$ (with the torsion family absent when $R$ is a field).
 
 ::: pf-proof
 
 By the structure theorem for finitely generated modules over a PID,
-\[
+$$
 M\cong R^r\oplus\bigoplus_{i=1}^t R/(p_i^{n_i}).
-\]
+$$
 If $M$ is indecomposable, this direct sum can have only one nonzero summand.
 Hence either $M\cong R$ or $M\cong R/(p^n)$.
 

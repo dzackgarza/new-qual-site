@@ -27,9 +27,9 @@ Define a free group and state its universal property.
 
 ::: {.solution}
 Let $X$ be a set. A \dfn{free group on $X$} is a group $F(X)$ together with a map
-\[
+$$
 i:X\to F(X)
-\]
+$$
 such that the following universal property holds:
 
 ::: pf
@@ -38,13 +38,13 @@ such that the following universal property holds:
 
 For every group $G$ and every function $f:X\to G$, there exists a unique
 group homomorphism
-\[
+$$
 \widetilde f:F(X)\to G
-\]
+$$
 such that
-\[
+$$
 \widetilde f\circ i=f.
-\]
+$$
 
 ::: pf-proof
 

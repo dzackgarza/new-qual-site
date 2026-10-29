@@ -31,37 +31,37 @@ audit:
 
 ::: {.solution}
 For (a), take
-\[
+$$
 f(x)=(1+|x|)^{-3/4}.
-\]
+$$
 Then
-\[
+$$
 |f(x)|^2=(1+|x|)^{-3/2},
-\]
+$$
 which is integrable on $\RR$, while $(1+|x|)^{-3/4}$ is not integrable at infinity. Hence
-\[
+$$
 f\in L^2(\RR)\setminus L^1(\RR).
-\]
+$$
 
 For (b), take
-\[
+$$
 g(x)=x^{-3/4},
 \qquad 0<x<1.
-\]
+$$
 Since $3/4<1$,
-\[
+$$
 \int_0^1x^{-3/4}\,dx<\infty,
-\]
+$$
 so $g\in L^1((0,1))$. But
-\[
+$$
 |g(x)|^2=x^{-3/2},
-\]
+$$
 and
-\[
+$$
 \int_0^1x^{-3/2}\,dx=\infty.
-\]
+$$
 Thus
-\[
+$$
 g\in L^1((0,1))\setminus L^2((0,1)).
-\]
+$$
 :::

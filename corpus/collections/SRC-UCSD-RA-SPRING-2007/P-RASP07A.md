@@ -41,27 +41,27 @@ Integrate the pointwise lower bound on the superlevel set.
 ::: pf-proof
 
 Let
-\[
+$$
 E_r:=\{x\in X:|f(x)|>r\}.
-\]
+$$
 On $E_r$,
-\[
+$$
 |f(x)|^p\ge r^p.
-\]
+$$
 Therefore
-\[
+$$
 \|f\|_p^p
 =\int_X|f|^p\,d\mu
 \ge\int_{E_r}|f|^p\,d\mu
 \ge r^p\mu(E_r).
-\]
+$$
 Dividing by $r^p$ gives
-\[
+$$
 \boxed{
 \mu(\{|f|>r\})
 \le \frac{\|f\|_p^p}{r^p}
 =\left(\frac{\|f\|_p}{r}\right)^p.}
-\]
+$$
 
 :::
 

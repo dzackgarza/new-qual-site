@@ -23,11 +23,11 @@ audit:
 
 ::: {.problem}
 Prove that for every real $\alpha>1$,
-\[
+$$
 \int_0^\infty\frac{dx}{1+x^\alpha}
 =
 \frac{\pi/\alpha}{\sin(\pi/\alpha)}.
-\]
+$$
 :::
 
 ::: {.solution}

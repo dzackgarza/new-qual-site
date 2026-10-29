@@ -44,13 +44,13 @@ A positive semidefinite matrix has a unique positive semidefinite square root.
 ::: pf-proof
 Let $B$ be Hermitian positive semidefinite.
 By the spectral theorem there are a unitary matrix $Q$ and numbers $\mu_1,\ldots,\mu_n\ge0$ such that
-\[
+$$
 B=Q\operatorname{diag}(\mu_1,\ldots,\mu_n)Q^*.
-\]
+$$
 Hence
-\[
+$$
 B^{1/2}:=Q\operatorname{diag}(\sqrt{\mu_1},\ldots,\sqrt{\mu_n})Q^*
-\]
+$$
 is Hermitian positive semidefinite and satisfies $(B^{1/2})^2=B$.
 
 For uniqueness, suppose $C$ is Hermitian positive semidefinite and $C^2=B$.
@@ -64,15 +64,15 @@ Thus $C=\sqrt\mu I$ on each eigenspace of $B$, so $C=B^{1/2}$.
 
 ::: pf-step
 In every factorization $A=UH$ with $U^*U=I_n$ and $H\ge0$, one has
-\[
+$$
 H=(A^*A)^{1/2}.
-\]
+$$
 
 ::: pf-proof
 Indeed,
-\[
+$$
 A^*A=H U^*UH=H^2.
-\]
+$$
 By step [](#psd-square-root-unique){.pf-ref}, $H$ is the unique positive semidefinite square root of $A^*A$.
 Thus the factor $H$ is unique whenever such a factorization exists.
 :::
@@ -84,54 +84,54 @@ Such a factorization exists for every $A\in M_{m,n}$ with $m\ge n$.
 
 ::: pf-proof
 Set
-\[
+$$
 H:=(A^*A)^{1/2},
 \qquad
 K:=\ker H.
-\]
+$$
 Since $H^2=A^*A$,
-\[
+$$
 \|Hv\|^2
 =\langle H^2v,v\rangle
 =\langle A^*Av,v\rangle
 =\|Av\|^2,
-\]
+$$
 so
-\[
+$$
 K=\ker A.
-\]
+$$
 
 On $K^\perp$, define a map first on vectors of the form $Hv$ by
-\[
+$$
 U_0(Hv):=Av.
-\]
+$$
 The restriction $H\vert_{K^\perp}$ is injective and maps $K^\perp$ onto $K^\perp$, so this defines a linear map
-\[
+$$
 U_0:K^\perp\longrightarrow \operatorname{Ran}A.
-\]
+$$
 Moreover, for $v\in K^\perp$,
-\[
+$$
 \|U_0(Hv)\|=\|Av\|=\|Hv\|,
-\]
+$$
 so $U_0$ is an isometry.
 
 Write $r=\operatorname{rank}A$.
 Then
-\[
+$$
 \dim K=n-r,
 \qquad
 \dim(\operatorname{Ran}A)^\perp=m-r\ge n-r.
-\]
+$$
 Choose an isometric embedding
-\[
+$$
 V:K\longrightarrow(\operatorname{Ran}A)^\perp
-\]
+$$
 and define $U$ to equal $U_0$ on $K^\perp$ and $V$ on $K$.
 The two image subspaces are orthogonal, so $U$ is an isometry $\CC^n\to\CC^m$, equivalently $U^*U=I_n$.
 Finally, $Hv\in K^\perp$ for every $v$, and therefore
-\[
+$$
 UHv=U_0Hv=Av.
-\]
+$$
 Thus $A=UH$.
 :::
 
@@ -142,9 +142,9 @@ The factor $U$ is unique exactly when $A$ has full column rank.
 
 ::: pf-proof
 If $\operatorname{rank}A=n$, then $H$ is invertible, so every factorization satisfies
-\[
+$$
 U=AH^{-1}.
-\]
+$$
 Hence $U$ is unique.
 
 Conversely, if $\operatorname{rank}A<n$, then $K=\ker A\neq0$.

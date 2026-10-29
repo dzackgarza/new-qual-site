@@ -50,16 +50,16 @@ Thus $S$ has empty boundary and is closed.
 
 Fix $s\in S$.
 The fiber
-\[
+$$
 p^{-1}(s)
-\]
+$$
 is closed in the compact Hausdorff space $\Sigma_2$, hence compact.
 It is also discrete: an evenly covered neighborhood of $s$ meets each sheet in exactly one point of the fiber.
 A compact discrete space is finite, so the fiber is finite.
 Because $S$ is connected, the cardinality of the fiber is locally constant and therefore constant; denote it by
-\[
+$$
 d\ge1.
-\]
+$$
 Thus $p$ is a finite $d$-sheeted covering.
 
 :::
@@ -69,18 +69,18 @@ Thus $p$ is a finite $d$-sheeted covering.
 ::: {.pf-step #s2}
 
 The Euler characteristics satisfy
-\[
+$$
 \chi(\Sigma_2)=d\,\chi(S).
-\]
+$$
 
 ::: pf-proof
 
 For a finite $d$-sheeted covering of compact surfaces, lift a finite triangulation of $S$.
 Every vertex, edge, and face has exactly $d$ lifts, so if the triangulation of $S$ has $v,e,f$ cells in dimensions $0,1,2$, the lifted triangulation has $dv,de,df$.
 Hence
-\[
+$$
 \chi(\Sigma_2)=dv-de+df=d(v-e+f)=d\chi(S).
-\]
+$$
 
 :::
 
@@ -89,30 +89,30 @@ Hence
 ::: {.pf-step #s3}
 
 Consequently
-\[
+$$
 d\chi(S)=-2,
-\]
+$$
 so either
-\[
+$$
 (d,\chi(S))=(1,-2)
 \qquad\text{or}\qquad
 (d,\chi(S))=(2,-1).
-\]
+$$
 
 ::: pf-proof
 
 For a closed orientable surface of genus $g$,
-\[
+$$
 \chi(\Sigma_g)=2-2g.
-\]
+$$
 Thus
-\[
+$$
 \chi(\Sigma_2)=2-4=-2.
-\]
+$$
 Combining this with step [](#s2){.pf-ref} gives
-\[
+$$
 -2=d\chi(S).
-\]
+$$
 Since $d$ is a positive integer and $\chi(S)$ is an integer, $d$ is a positive divisor of $2$, yielding exactly the two displayed possibilities.
 
 :::
@@ -122,40 +122,40 @@ Since $d$ is a positive integer and $\chi(S)$ is an integer, $d$ is a positive d
 ::: {.pf-step #s4}
 
 The classification theorem for closed connected surfaces reduces the possible targets to
-\[
+$$
 \Sigma_2,
 \qquad
 N_4,
 \qquad
 N_3,
-\]
+$$
 where $N_k$ denotes the closed nonorientable surface of nonorientable genus $k$.
 
 ::: pf-proof
 
 If $S$ is orientable, then
-\[
+$$
 \chi(S)=2-2g.
-\]
+$$
 The value $-1$ cannot occur, while $2-2g=-2$ gives $g=2$.
 Thus the only orientable candidate is $\Sigma_2$.
 
 If $S$ is nonorientable, then
-\[
+$$
 \chi(S)=2-k.
-\]
+$$
 The equations
-\[
+$$
 2-k=-2
 \qquad\text{and}\qquad
 2-k=-1
-\]
+$$
 give respectively
-\[
+$$
 k=4
 \qquad\text{and}\qquad
 k=3.
-\]
+$$
 Hence the only nonorientable candidates are $N_4$ and $N_3$.
 
 :::
@@ -169,13 +169,13 @@ The candidate $N_4$ cannot be covered by $\Sigma_2$.
 ::: pf-proof
 
 Since
-\[
+$$
 \chi(N_4)=-2,
-\]
+$$
 step [](#s3){.pf-ref} forces any covering
-\[
+$$
 \Sigma_2\to N_4
-\]
+$$
 to have degree $1$.
 A one-sheeted covering is a homeomorphism.
 But $\Sigma_2$ is orientable and $N_4$ is nonorientable, contradicting invariance of orientability under homeomorphism.
@@ -193,18 +193,18 @@ Both $\Sigma_2$ and $N_3$ do occur as targets.
 The identity map shows that $\Sigma_2$ covers itself.
 
 For $N_3$, take its orientation double cover
-\[
+$$
 q:\widetilde N_3\to N_3.
-\]
+$$
 Because $N_3$ is connected and nonorientable, this double cover is connected and orientable.
 By multiplicativity of Euler characteristic,
-\[
+$$
 \chi(\widetilde N_3)=2\chi(N_3)=2(-1)=-2.
-\]
+$$
 The classification of closed connected orientable surfaces therefore gives
-\[
+$$
 \widetilde N_3\cong\Sigma_2.
-\]
+$$
 Hence $\Sigma_2$ is a two-sheeted cover of $N_3$.
 
 :::
@@ -214,9 +214,9 @@ Hence $\Sigma_2$ is a two-sheeted cover of $N_3$.
 ::: pf-step
 
 Therefore the complete list is
-\[
+$$
 \boxed{\Sigma_2\text{ and }N_3}.
-\]
+$$
 
 ::: pf-proof
 

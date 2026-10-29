@@ -70,9 +70,9 @@ For a CW pair $(X,A)$, the quotient $X/A$ inherits the cells of $X\setminus A$ t
 
 Here the only cells outside $A$ are the two $2$-cells.
 Their attaching maps originally have image in $A$; after $A$ is collapsed, both attaching maps
-\[
+$$
 S^1\longrightarrow A\longrightarrow A/A
-\]
+$$
 are constant.
 
 :::
@@ -82,16 +82,16 @@ are constant.
 ::: pf-step
 
 A CW complex with one $0$-cell and two $2$-cells attached constantly is homeomorphic to
-\[
+$$
 \boxed{S^2\vee S^2}.
-\]
+$$
 
 ::: pf-proof
 
 Attaching a $2$-disk to a point by collapsing its entire boundary produces
-\[
+$$
 D^2/\partial D^2\cong S^2.
-\]
+$$
 Doing this for two disks with the same attaching point gives two copies of $S^2$ meeting exactly in that point, which is the wedge $S^2\vee S^2$.
 By step [](#s2){.pf-ref} this is precisely the quotient topology on $Q$.
 

@@ -29,37 +29,37 @@ Show the natural map $\mathcal{F}(B) \to \mathcal{M}(B)$ is a bijection.
 :::
 
 ::: {.solution}
-Send a fibration \(p:E\to B\) to its class as a map in \(\mathcal M(B)\). A fiber homotopy equivalence is in particular a homotopy equivalence of total spaces commuting with the projections up to homotopy, so this gives a well-defined map
-\[
+Send a fibration $p:E\to B$ to its class as a map in $\mathcal M(B)$. A fiber homotopy equivalence is in particular a homotopy equivalence of total spaces commuting with the projections up to homotopy, so this gives a well-defined map
+$$
 \mathcal F(B)\to\mathcal M(B).
-\]
+$$
 
-It is surjective. Given any map \(f:A\to B\), its mapping-path replacement
-\[
+It is surjective. Given any map $f:A\to B$, its mapping-path replacement
+$$
 p_f:E_f\to B
-\]
+$$
 is a fibration, and the inclusion
-\[
+$$
 A\to E_f,
 \qquad
 a\mapsto(a,\text{constant path at }f(a))
-\]
-is a homotopy equivalence with \(f\simeq p_fi\). Hence \(f\) and \(p_f\) define the same element of \(\mathcal M(B)\).
+$$
+is a homotopy equivalence with $f\simeq p_fi$. Hence $f$ and $p_f$ define the same element of $\mathcal M(B)$.
 
-For injectivity, suppose fibrations \(p_1:E_1\to B\) and \(p_2:E_2\to B\) represent the same element of \(\mathcal M(B)\). Then there is a homotopy equivalence
-\[
+For injectivity, suppose fibrations $p_1:E_1\to B$ and $p_2:E_2\to B$ represent the same element of $\mathcal M(B)$. Then there is a homotopy equivalence
+$$
 g:E_1\to E_2
-\]
+$$
 with
-\[
+$$
 p_1\simeq p_2g.
-\]
+$$
 Exercises 12 and 13 imply
-\[
+$$
 E_{p_1}\simeq_f E_{p_2g}\simeq_f E_{p_2}.
-\]
-Each fibration \(p_i\) is fiber homotopy equivalent to its mapping-path replacement \(E_{p_i}\to B\). Hence \(p_1\) and \(p_2\) are fiber homotopy equivalent. Therefore
-\[
+$$
+Each fibration $p_i$ is fiber homotopy equivalent to its mapping-path replacement $E_{p_i}\to B$. Hence $p_1$ and $p_2$ are fiber homotopy equivalent. Therefore
+$$
 \boxed{\mathcal F(B)\xrightarrow{\cong}\mathcal M(B).}
-\]
+$$
 :::

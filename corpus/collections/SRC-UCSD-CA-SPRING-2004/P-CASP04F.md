@@ -26,14 +26,14 @@ $g\in H(G)$ whose zero at each $z_n$ has exact order $m_n+1$ and which has no
 other zeros forced by the construction.
 
 Fix $n$. Write locally
-\[
+$$
 g(z)=(z-z_n)^{m_n+1}u_n(z),
 \qquad u_n(z_n)\ne0.
-\]
+$$
 We claim that there are coefficients $b_{n,1},\dots,b_{n,m_n+1}$ such that
-\[
+$$
 S_n(z)=\sum_{j=1}^{m_n+1}\frac{b_{n,j}}{(z-z_n)^j}
-\]
+$$
 has the property that $S_ng$ extends holomorphically across $z_n$ with the
 prescribed jet $w_{n,0},\dots,w_{n,m_n}$ there. Indeed, multiplication by the
 unit $u_n$ is an invertible triangular linear operation on $m_n$-jets, while
@@ -44,15 +44,15 @@ uniquely.
 Now apply the Mittag--Leffler theorem on $G$ to obtain a meromorphic function
 $S$ whose principal part at each $z_n$ is $S_n$ and which has no other poles.
 Set
-\[
+$$
 f=gS.
-\]
+$$
 At each $z_n$, the zero of $g$ cancels the pole of $S$, so $f$ has a
 removable singularity there; away from the $z_n$ it is holomorphic. By the
 choice of the principal part $S_n$, its removable extension satisfies
-\[
+$$
 f^{(k)}(z_n)=w_{n,k},
 \qquad 0\le k\le m_n.
-\]
+$$
 Thus the extended function belongs to $H(G)$ and has all the required jets.
 :::

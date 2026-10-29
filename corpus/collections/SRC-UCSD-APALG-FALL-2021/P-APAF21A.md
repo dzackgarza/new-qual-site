@@ -41,9 +41,9 @@ Give an example for which $x^TAx=x^TBx$ for all $x\in\CC^n$ but $A\neq B$.
 
 ::: pf-step
 **Schur decomposition theorem.** For every $A\in M_n(\CC)$ there is a unitary matrix $U$ such that
-\[
+$$
 U^HAU=T
-\]
+$$
 is upper triangular. The diagonal entries of $T$ are the eigenvalues of $A$, counted with algebraic multiplicity.
 
 ::: pf-proof
@@ -54,30 +54,30 @@ This is the requested statement; no proof is required in part (a).
 
 ::: {.pf-step #hermitian-form-zero-implies-zero-matrix}
 If $C\in M_n(\CC)$ satisfies
-\[
+$$
 x^HCx=0
 \qquad\text{for every }x\in\CC^n,
-\]
+$$
 then $C=0$.
 
 ::: pf-proof
 Let $e_1,\ldots,e_n$ be the standard basis. Taking $x=e_i$ gives
-\[
+$$
 C_{ii}=e_i^HC e_i=0
-\]
+$$
 for every $i$.
 For $i\ne j$, take $x=e_i+e_j$. Then
-\[
+$$
 0=x^HCx=C_{ij}+C_{ji}.
-\]
+$$
 Now take $x=e_i+i e_j$. Since the diagonal entries vanish,
-\[
+$$
 0=x^HCx=iC_{ij}-iC_{ji}.
-\]
+$$
 Together with $C_{ij}+C_{ji}=0$, this gives
-\[
+$$
 C_{ij}=C_{ji}=0.
-\]
+$$
 Thus every entry of $C$ vanishes.
 :::
 
@@ -85,17 +85,17 @@ Thus every entry of $C$ vanishes.
 
 ::: pf-step
 Hence, if
-\[
+$$
 x^HAx=x^HBx
 \qquad\text{for every }x\in\CC^n,
-\]
+$$
 then $A=B$.
 
 ::: pf-proof
 Apply step [](#hermitian-form-zero-implies-zero-matrix){.pf-ref} to $C=A-B$. The hypothesis becomes
-\[
+$$
 x^H(A-B)x=0
-\]
+$$
 for every $x$, so $A-B=0$.
 :::
 
@@ -106,19 +106,19 @@ The analogous assertion with transpose in place of Hermitian transpose is false.
 
 ::: pf-proof
 Take
-\[
+$$
 A=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
 \qquad
 B=0.
-\]
+$$
 Then $A\ne B$. For every $x=(x_1,x_2)^T\in\CC^2$,
-\[
+$$
 x^TAx
 =(x_1,x_2)
 \begin{pmatrix}x_2\\-x_1\end{pmatrix}
 =x_1x_2-x_2x_1=0
 =x^TBx.
-\]
+$$
 Thus ordinary transpose quadratic forms do not determine an arbitrary complex matrix.
 :::
 
@@ -126,24 +126,24 @@ Thus ordinary transpose quadratic forms do not determine an arbitrary complex ma
 
 ::: {.pf-step #idempotent-decomposition}
 Suppose $A^2=A$. Then
-\[
+$$
 V=\operatorname{im}A\oplus\ker A,
-\]
+$$
 and $A$ is the projection onto $\operatorname{im}A$ along $\ker A$.
 
 ::: pf-proof
 For every $x\in V$,
-\[
+$$
 x=Ax+(x-Ax).
-\]
+$$
 The first summand lies in $\operatorname{im}A$, while
-\[
+$$
 A(x-Ax)=Ax-A^2x=0,
-\]
+$$
 so the second lies in $\ker A$. If $u$ lies in both subspaces, then $u=Av$ for some $v$ and also $Au=0$; but idempotence gives
-\[
+$$
 u=Av=A^2v=A(Av)=Au=0.
-\]
+$$
 Thus the sum is direct, and $A$ acts as the identity on its image and as zero on its kernel.
 :::
 
@@ -154,29 +154,29 @@ If $A$ is an orthogonal projection, then $A=A^H$.
 
 ::: pf-proof
 For an orthogonal projection,
-\[
+$$
 \operatorname{im}A\perp\ker A.
-\]
+$$
 By step [](#idempotent-decomposition){.pf-ref}, write
-\[
+$$
 x=u+v,
 \qquad
 y=u'+v',
-\]
+$$
 with $u,u'\in\operatorname{im}A$ and $v,v'\in\ker A$. Then
-\[
+$$
 Ax=u,
 \qquad
 Ay=u'.
-\]
+$$
 Orthogonality gives
-\[
+$$
 \langle Ax,y\rangle
 =\langle u,u'+v'\rangle
 =\langle u,u'\rangle
 =\langle u+v,u'\rangle
 =\langle x,Ay\rangle.
-\]
+$$
 Therefore $A$ is self-adjoint, i.e. $A=A^H$.
 :::
 
@@ -188,17 +188,17 @@ Conversely, if $A^2=A$ and $A=A^H$, then $A$ is an orthogonal projection.
 ::: pf-proof
 By step [](#idempotent-decomposition){.pf-ref}, $A$ is a projection onto $\operatorname{im}A$ along $\ker A$. It remains to show these two subspaces are orthogonal.
 Let $u\in\operatorname{im}A$ and $v\in\ker A$. Write $u=Ax$. Then
-\[
+$$
 \langle u,v\rangle
 =\langle Ax,v\rangle
 =\langle x,A^Hv\rangle
 =\langle x,Av\rangle
 =0.
-\]
+$$
 Hence
-\[
+$$
 \operatorname{im}A\perp\ker A,
-\]
+$$
 so the projection is orthogonal.
 :::
 
@@ -206,9 +206,9 @@ so the projection is orthogonal.
 
 ::: pf-step
 Thus, among projections $A^2=A$,
-\[
+$$
 \boxed{A\text{ is orthogonal}\iff A=A^H}.
-\]
+$$
 
 ::: pf-proof
 Combine steps [](#orthogonal-implies-hermitian){.pf-ref} and [](#hermitian-implies-orthogonal){.pf-ref}.

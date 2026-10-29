@@ -30,9 +30,9 @@ audit:
 ::: {.problem}
 Let $H$ be a Hilbert space and let $E$ be a closed convex subset of $H$.
 Prove that there exists a unique element $x\in E$ such that
-\[
+$$
 \|x\|=\inf_{y\in E}\|y\|.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -40,9 +40,9 @@ If the empty set is admitted as a convex set, the printed statement requires the
 We therefore prove the intended assertion for nonempty $E$.
 
 Set
-\[
+$$
 d=\inf_{y\in E}\|y\|.
-\]
+$$
 Because $E$ is nonempty, $d<\infty$.
 
 ::: pf
@@ -50,20 +50,20 @@ Because $E$ is nonempty, $d<\infty$.
 ::: {.pf-step #s1}
 
 There is a sequence $\{x_n\}\subseteq E$ such that
-\[
+$$
 \|x_n\|^2\longrightarrow d^2.
-\]
+$$
 
 ::: pf-proof
 
 For every $n\ge1$, by the definition of the infimum choose $x_n\in E$ with
-\[
+$$
 d\le \|x_n\|<d+\frac1n.
-\]
+$$
 Then $\|x_n\|\to d$, hence
-\[
+$$
 \|x_n\|^2\to d^2.
-\]
+$$
 
 :::
 
@@ -76,30 +76,30 @@ The sequence $\{x_n\}$ is Cauchy in $H$.
 ::: pf-proof
 
 For every $m,n$, convexity of $E$ gives
-\[
+$$
 \frac{x_n+x_m}{2}\in E.
-\]
+$$
 Therefore, by the definition of $d$,
-\[
+$$
 \left\|\frac{x_n+x_m}{2}\right\|\ge d.
-\]
+$$
 The parallelogram identity gives
-\[
+$$
 \|x_n-x_m\|^2
 =2\|x_n\|^2+2\|x_m\|^2-\|x_n+x_m\|^2.
-\]
+$$
 Using
-\[
+$$
 \|x_n+x_m\|^2
 =4\left\|\frac{x_n+x_m}{2}\right\|^2
 \ge4d^2,
-\]
+$$
 we obtain
-\[
+$$
 0\le\|x_n-x_m\|^2
 \le
 2\|x_n\|^2+2\|x_m\|^2-4d^2.
-\]
+$$
 By step [](#s1){.pf-ref}, the right-hand side tends to $0$ as $m,n\to\infty$.
 Hence $\{x_n\}$ is Cauchy.
 
@@ -114,15 +114,15 @@ There exists $x\in E$ with $\|x\|=d$.
 ::: pf-proof
 
 Since $H$ is complete, step [](#s2){.pf-ref} gives an element $x\in H$ such that
-\[
+$$
 x_n\longrightarrow x
-\]
+$$
 in norm.
 The set $E$ is closed and every $x_n$ lies in $E$, so $x\in E$.
 Norm is continuous, hence by step [](#s1){.pf-ref},
-\[
+$$
 \|x\|=\lim_{n\to\infty}\|x_n\|=d.
-\]
+$$
 Thus the minimum norm is attained.
 
 :::
@@ -136,30 +136,30 @@ The minimum-norm element is unique.
 ::: pf-proof
 
 Suppose $x,y\in E$ both satisfy
-\[
+$$
 \|x\|=\|y\|=d.
-\]
+$$
 By convexity,
-\[
+$$
 \frac{x+y}{2}\in E,
-\]
+$$
 so
-\[
+$$
 \left\|\frac{x+y}{2}\right\|\ge d.
-\]
+$$
 The parallelogram identity gives
-\[
+$$
 \begin{aligned}
 \|x-y\|^2
 &=2\|x\|^2+2\|y\|^2-\|x+y\|^2\\
 &=4d^2-4\left\|\frac{x+y}{2}\right\|^2\\
 &\le0.
 \end{aligned}
-\]
+$$
 Since a squared norm is nonnegative,
-\[
+$$
 \|x-y\|^2=0,
-\]
+$$
 so $x=y$.
 
 :::

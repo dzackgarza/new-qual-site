@@ -36,9 +36,9 @@ Show: $G$ is abelian
 
 ::: {.solution}
 Assume
-\[
+$$
 G/Z(G)=\langle xZ(G)\rangle
-\]
+$$
 for some $x\in G$.
 
 ::: pf
@@ -46,29 +46,29 @@ for some $x\in G$.
 ::: {.pf-step #s1}
 
 Every element $g\in G$ can be written
-\[
+$$
 g=x^a z
-\]
+$$
 for some $a\in\ZZ$ and $z\in Z(G)$.
 
 ::: pf-proof
 
 Since $gZ(G)$ belongs to the cyclic quotient, there is $a\in\ZZ$ such that
-\[
+$$
 gZ(G)=(xZ(G))^a=x^aZ(G).
-\]
+$$
 Equality of the cosets implies
-\[
+$$
 x^{-a}g\in Z(G).
-\]
+$$
 Put
-\[
+$$
 z=x^{-a}g.
-\]
+$$
 Then $z\in Z(G)$ and
-\[
+$$
 g=x^az.
-\]
+$$
 
 :::
 
@@ -82,14 +82,14 @@ Any two elements of $G$ commute.
 
 Let $g,h\in G$.
 By step [](#s1){.pf-ref}, write
-\[
+$$
 g=x^az,
 \qquad
 h=x^bw,
-\]
+$$
 with $a,b\in\ZZ$ and $z,w\in Z(G)$.
 Since $z$ and $w$ commute with every element of $G$,
-\[
+$$
 \begin{aligned}
 gh
 &=(x^az)(x^bw)\\
@@ -98,7 +98,7 @@ gh
 &=(x^bw)(x^az)\\
 &=hg.
 \end{aligned}
-\]
+$$
 Thus every pair of elements commutes.
 
 :::

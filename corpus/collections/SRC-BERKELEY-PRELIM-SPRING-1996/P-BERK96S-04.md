@@ -33,13 +33,13 @@ audit:
 
 ::: {.problem}
 Let $0<r<1<R$. Show that for all sufficiently small $\varepsilon>0$, the polynomial
-\[
+$$
 p(z)=\varepsilon z^7+z^2+1
-\]
+$$
 has exactly five roots, counted with multiplicity, in the annulus
-\[
+$$
 r\varepsilon^{-1/5}<|z|<R\varepsilon^{-1/5}.
-\]
+$$
 :::
 
 ::: {.solution}

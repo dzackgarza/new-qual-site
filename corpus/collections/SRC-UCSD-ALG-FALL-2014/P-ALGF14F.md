@@ -39,99 +39,99 @@ Let $A$ be a PID.
 ::: pf
 
 ::: {.pf-step #projective-is-summand}
-Every finitely generated projective \(A\)-module is a direct summand of a finite-rank free module.
+Every finitely generated projective $A$-module is a direct summand of a finite-rank free module.
 
 ::: pf-proof
-Let \(P\) be finitely generated and projective.
-Choose generators \(p_1,\ldots,p_m\).
+Let $P$ be finitely generated and projective.
+Choose generators $p_1,\ldots,p_m$.
 They define a surjection
-\[
+$$
 \pi:A^m\twoheadrightarrow P.
-\]
-Because \(P\) is projective, this surjection splits: there is an \(A\)-linear map
-\[
+$$
+Because $P$ is projective, this surjection splits: there is an $A$-linear map
+$$
 s:P\to A^m
-\]
+$$
 with
-\[
+$$
 \pi s=\operatorname{id}_P.
-\]
+$$
 Therefore
-\[
+$$
 A^m=s(P)\oplus\ker\pi,
-\]
-so \(P\cong s(P)\) is a submodule, indeed a direct summand, of the finite free module \(A^m\).
+$$
+so $P\cong s(P)$ is a submodule, indeed a direct summand, of the finite free module $A^m$.
 :::
 
 :::
 
 ::: pf-step
-Every finitely generated projective \(A\)-module is free.
+Every finitely generated projective $A$-module is free.
 
 ::: pf-proof
 A submodule of a free module over a PID is free.
-By step [](#projective-is-summand){.pf-ref}, a finitely generated projective module \(P\) is isomorphic to a submodule of the free module \(A^m\).
-Hence \(P\) is free.
+By step [](#projective-is-summand){.pf-ref}, a finitely generated projective module $P$ is isomorphic to a submodule of the free module $A^m$.
+Hence $P$ is free.
 :::
 
 :::
 
 ::: {.pf-step #flat-torsion-free}
-Every flat \(A\)-module is torsion-free.
+Every flat $A$-module is torsion-free.
 
 ::: pf-proof
-Let \(M\) be flat and let \(0\neq a\in A\).
-Because \(A\) is an integral domain, multiplication by \(a\) gives an injective map
-\[
+Let $M$ be flat and let $0\neq a\in A$.
+Because $A$ is an integral domain, multiplication by $a$ gives an injective map
+$$
 0\longrightarrow A
 \overset{\cdot a}{\longrightarrow}A.
-\]
-Tensoring with the flat module \(M\) preserves injectivity, so
-\[
+$$
+Tensoring with the flat module $M$ preserves injectivity, so
+$$
 0\longrightarrow A\otimes_A M
 \overset{\cdot a\otimes1}{\longrightarrow}
 A\otimes_A M
-\]
+$$
 is exact.
 Under the canonical identification
-\[
+$$
 A\otimes_A M\cong M,
-\]
-this map is multiplication by \(a\):
-\[
+$$
+this map is multiplication by $a$:
+$$
 m\longmapsto am.
-\]
+$$
 Thus
-\[
+$$
 am=0
 \quad\Longrightarrow\quad
 m=0.
-\]
-Since this holds for every nonzero \(a\in A\), the module \(M\) is torsion-free.
+$$
+Since this holds for every nonzero $a\in A$, the module $M$ is torsion-free.
 :::
 
 :::
 
 ::: pf-step
-Every finitely generated flat \(A\)-module is free.
+Every finitely generated flat $A$-module is free.
 
 ::: pf-proof
-Let \(M\) be finitely generated and flat.
-By step [](#flat-torsion-free){.pf-ref}, \(M\) is torsion-free.
+Let $M$ be finitely generated and flat.
+By step [](#flat-torsion-free){.pf-ref}, $M$ is torsion-free.
 The structure theorem for finitely generated modules over a PID gives
-\[
+$$
 M\cong A^r\oplus T,
-\]
-where \(T\) is the torsion submodule.
-Since \(M\) is torsion-free,
-\[
+$$
+where $T$ is the torsion submodule.
+Since $M$ is torsion-free,
+$$
 T=0.
-\]
+$$
 Hence
-\[
+$$
 M\cong A^r,
-\]
-so \(M\) is free.
+$$
+so $M$ is free.
 :::
 
 :::

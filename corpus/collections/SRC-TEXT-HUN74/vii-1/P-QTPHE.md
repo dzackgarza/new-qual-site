@@ -31,14 +31,14 @@ Show that similarity is an equivalence relation on $M_n(R)$, and \*equivalence\*
 
 ::: {.solution}
 Recall that $A,B\in M_n(R)$ are similar if
-\[
+$$
 B=P^{-1}AP
-\]
+$$
 for some $P\in\operatorname{GL}_n(R)$, and that
 $A,B\in M_{m\times n}(R)$ are equivalent if
-\[
+$$
 B=PAQ
-\]
+$$
 for some $P\in\operatorname{GL}_m(R)$ and
 $Q\in\operatorname{GL}_n(R)$.
 
@@ -51,9 +51,9 @@ Similarity is reflexive.
 ::: pf-proof
 
 For every $A\in M_n(R)$,
-\[
+$$
 A=I_n^{-1}AI_n,
-\]
+$$
 so $A$ is similar to itself.
 
 :::
@@ -68,9 +68,9 @@ Similarity is symmetric.
 
 If $B=P^{-1}AP$, then multiplying by $P$ on the left and $P^{-1}$ on the right
 gives
-\[
+$$
 A=PBP^{-1}=(P^{-1})^{-1}B(P^{-1}).
-\]
+$$
 Since $P^{-1}$ is invertible, $A$ is similar to $B$.
 
 :::
@@ -84,15 +84,15 @@ Similarity is transitive.
 ::: pf-proof
 
 If
-\[
+$$
 B=P^{-1}AP
 \qquad\text{and}\qquad
 C=Q^{-1}BQ,
-\]
+$$
 then
-\[
+$$
 C=Q^{-1}P^{-1}APQ=(PQ)^{-1}A(PQ).
-\]
+$$
 Thus $C$ is similar to $A$.
 
 :::
@@ -106,9 +106,9 @@ Matrix equivalence is reflexive.
 ::: pf-proof
 
 For every $A\in M_{m\times n}(R)$,
-\[
+$$
 A=I_mAI_n.
-\]
+$$
 
 :::
 
@@ -121,9 +121,9 @@ Matrix equivalence is symmetric.
 ::: pf-proof
 
 If $B=PAQ$ with $P,Q$ invertible, then
-\[
+$$
 A=P^{-1}BQ^{-1}.
-\]
+$$
 Hence $A$ is equivalent to $B$.
 
 :::
@@ -137,15 +137,15 @@ Matrix equivalence is transitive.
 ::: pf-proof
 
 If
-\[
+$$
 B=PAQ
 \qquad\text{and}\qquad
 C=UBV,
-\]
+$$
 with $P,U\in\operatorname{GL}_m(R)$ and $Q,V\in\operatorname{GL}_n(R)$, then
-\[
+$$
 C=(UP)A(QV).
-\]
+$$
 Both $UP\in\operatorname{GL}_m(R)$ and $QV\in\operatorname{GL}_n(R)$, so
 $C$ is equivalent to $A$.
 

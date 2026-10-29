@@ -71,142 +71,142 @@ Prove the following "laws of algebra" for $\RR$, using only axioms (1)-(5):
 ::: {.solution}
 We use only the field axioms, together with earlier parts as they are proved.
 
-(a) From \(x+y=x=x+0\), add \(-x\) to both sides to obtain \(y=0\).
+(a) From $x+y=x=x+0$, add $-x$ to both sides to obtain $y=0$.
 
-(b) Since \(x+0=x\),
-\[
+(b) Since $x+0=x$,
+$$
 (x+0)x=x^2.
-\]
-By distributivity the left side is \(x^2+0x\). Hence \(x^2+0x=x^2\), so part (a) gives
-\[
+$$
+By distributivity the left side is $x^2+0x$. Hence $x^2+0x=x^2$, so part (a) gives
+$$
 0x=0.
-\]
+$$
 
-(c) Both \(-0\) and \(0\) satisfy \(0+u=0\). By part (a), \(-0=0\).
+(c) Both $-0$ and $0$ satisfy $0+u=0$. By part (a), $-0=0$.
 
 (d) Since
-\[
+$$
 (-x)+x=x+(-x)=0,
-\]
-\(x\) is an additive inverse of \(-x\). Additive inverses are unique, so
-\[
+$$
+$x$ is an additive inverse of $-x$. Additive inverses are unique, so
+$$
 -(-x)=x.
-\]
+$$
 
 (e) We have
-\[
+$$
 x(-y)+xy=x((-y)+y)=x0=0,
-\]
-so \(x(-y)\) is the additive inverse of \(xy\), hence
-\[
+$$
+so $x(-y)$ is the additive inverse of $xy$, hence
+$$
 x(-y)=-(xy).
-\]
+$$
 By commutativity,
-\[
+$$
 (-x)y=y(-x)=-(yx)=-(xy).
-\]
+$$
 
-(f) Taking \(x=1\) in part (e) gives
-\[
+(f) Taking $x=1$ in part (e) gives
+$$
 (-1)x=-(1x)=-x.
-\]
+$$
 
-(g) Since \(y-z=y+(-z)\), distributivity and part (e) give
-\[
+(g) Since $y-z=y+(-z)$, distributivity and part (e) give
+$$
 x(y-z)=xy+x(-z)=xy-xz.
-\]
+$$
 
-(h) The element \(-x-y\) is the additive inverse of \(x+y\), since
-\[
+(h) The element $-x-y$ is the additive inverse of $x+y$, since
+$$
 (x+y)+(-x-y)=0.
-\]
+$$
 Thus
-\[
+$$
 -(x+y)=-x-y.
-\]
+$$
 Then, using parts (d) and the first identity,
-\[
+$$
 -(x-y)=-(x+(-y))=-x-(-y)=-x+y.
-\]
+$$
 
-(i) Suppose \(x\ne0\) and \(xy=x\). Multiply by \(1/x\):
-\[
+(i) Suppose $x\ne0$ and $xy=x$. Multiply by $1/x$:
+$$
 (1/x)(xy)=(1/x)x,
-\]
-so \(y=1\).
+$$
+so $y=1$.
 
-(j) By definition \(1/x\) is the multiplicative inverse of \(x\), hence
-\[
+(j) By definition $1/x$ is the multiplicative inverse of $x$, hence
+$$
 x/x=x(1/x)=1.
-\]
+$$
 
-(k) Since \(1\cdot1=1\), the multiplicative inverse of \(1\) is \(1\). Therefore
-\[
+(k) Since $1\cdot1=1$, the multiplicative inverse of $1$ is $1$. Therefore
+$$
 x/1=x(1/1)=x.
-\]
+$$
 
-(l) Suppose \(x,y\ne0\). If \(xy=0\), multiplying by \((1/x)(1/y)\) gives
-\[
+(l) Suppose $x,y\ne0$. If $xy=0$, multiplying by $(1/x)(1/y)$ gives
+$$
 1=0,
-\]
-contrary to the field axiom \(1\ne0\). Hence \(xy\ne0\).
+$$
+contrary to the field axiom $1\ne0$. Hence $xy\ne0$.
 
-(m) By part (l), \(yz\ne0\). Moreover
-\[
+(m) By part (l), $yz\ne0$. Moreover
+$$
 (yz)(1/y)(1/z)=(y(1/y))(z(1/z))=1.
-\]
-Thus \((1/y)(1/z)\) is the inverse of \(yz\), so
-\[
+$$
+Thus $(1/y)(1/z)$ is the inverse of $yz$, so
+$$
 (1/y)(1/z)=1/(yz).
-\]
+$$
 
 (n) Using the definition of quotient and part (m),
-\[
+$$
 (x/y)(w/z)=xw(1/y)(1/z)=\frac{xw}{yz}.
-\]
+$$
 
-(o) Since \(z/z=y/y=1\),
-\[
+(o) Since $z/z=y/y=1$,
+$$
 \frac{x}{y}+\frac{w}{z}
 =\frac{xz}{yz}+\frac{wy}{yz}
 =\frac{xz+wy}{yz}.
-\]
+$$
 
-(p) If \(1/x=0\), then
-\[
+(p) If $1/x=0$, then
+$$
 1=x(1/x)=x0=0,
-\]
-a contradiction. Hence \(1/x\ne0\).
+$$
+a contradiction. Hence $1/x\ne0$.
 
-(q) Since \(w,z\ne0\), part (l) implies \(w/z\ne0\). Also
-\[
+(q) Since $w,z\ne0$, part (l) implies $w/z\ne0$. Also
+$$
 (w/z)(z/w)=\frac{wz}{zw}=1,
-\]
-so \(z/w\) is the inverse of \(w/z\). Therefore
-\[
+$$
+so $z/w$ is the inverse of $w/z$. Therefore
+$$
 \frac1{w/z}=\frac zw.
-\]
+$$
 
 (r) Using part (q),
-\[
+$$
 \frac{x/y}{w/z}=\frac{x}{y}\frac{z}{w}=\frac{xz}{yw}.
-\]
+$$
 
 (s) Associativity gives
-\[
+$$
 \frac{ax}{y}=(ax)(1/y)=a(x(1/y))=a(x/y).
-\]
+$$
 
 (t) By part (e),
-\[
+$$
 \frac{-x}{y}=(-x)(1/y)=-\bigl(x(1/y)\bigr)=-(x/y).
-\]
-Also \((-y)(-1/y)=1\), so \(1/(-y)=-(1/y)\). Hence
-\[
+$$
+Also $(-y)(-1/y)=1$, so $1/(-y)=-(1/y)$. Hence
+$$
 \frac{x}{-y}=x\bigl(-(1/y)\bigr)=-(x/y).
-\]
+$$
 Thus
-\[
+$$
 \boxed{\frac{-x}{y}=\frac{x}{-y}=-\frac{x}{y}}.
-\]
+$$
 :::

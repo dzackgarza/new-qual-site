@@ -36,15 +36,15 @@ Prove that $\operatorname{Gal}(K/\QQ)$ is isomorphic to $\ZZ_n^\times$, the grou
 
 ::: pf-step
 
-Every \(\sigma\in\operatorname{Gal}(K/\QQ)\) sends \(\zeta\) to another primitive \(n\)th root of unity, hence
-\[
+Every $\sigma\in\operatorname{Gal}(K/\QQ)$ sends $\zeta$ to another primitive $n$th root of unity, hence
+$$
 \sigma(\zeta)=\zeta^a
-\]
-for a unique residue class \(a\in(\ZZ/n\ZZ)^\times\).
+$$
+for a unique residue class $a\in(\ZZ/n\ZZ)^\times$.
 
 ::: pf-proof
 
-Since \(\sigma\) fixes \(\QQ\), it preserves the relation \(\zeta^n=1\), so \(\sigma(\zeta)^n=1\). It also preserves multiplicative order, so \(\sigma(\zeta)\) still has order \(n\). The primitive \(n\)th roots are exactly the \(\zeta^a\) with \(\gcd(a,n)=1\).
+Since $\sigma$ fixes $\QQ$, it preserves the relation $\zeta^n=1$, so $\sigma(\zeta)^n=1$. It also preserves multiplicative order, so $\sigma(\zeta)$ still has order $n$. The primitive $n$th roots are exactly the $\zeta^a$ with $\gcd(a,n)=1$.
 
 :::
 
@@ -53,20 +53,20 @@ Since \(\sigma\) fixes \(\QQ\), it preserves the relation \(\zeta^n=1\), so \(\s
 ::: {.pf-step #s2}
 
 Define
-\[
+$$
 \Theta:\operatorname{Gal}(K/\QQ)\longrightarrow(\ZZ/n\ZZ)^\times,
 \qquad
 \Theta(\sigma)=a\pmod n
-\]
-when \(\sigma(\zeta)=\zeta^a\). Then \(\Theta\) is an injective group homomorphism.
+$$
+when $\sigma(\zeta)=\zeta^a$. Then $\Theta$ is an injective group homomorphism.
 
 ::: pf-proof
 
-If \(\sigma(\zeta)=\zeta^a\) and \(\tau(\zeta)=\zeta^b\), then
-\[
+If $\sigma(\zeta)=\zeta^a$ and $\tau(\zeta)=\zeta^b$, then
+$$
 (\sigma\tau)(\zeta)=\sigma(\zeta^b)=\sigma(\zeta)^b=\zeta^{ab},
-\]
-so \(\Theta(\sigma\tau)=\Theta(\sigma)\Theta(\tau)\). If \(\Theta(\sigma)=1\), then \(\sigma(\zeta)=\zeta\); since \(K=\QQ(\zeta)\), this forces \(\sigma=\operatorname{id}\).
+$$
+so $\Theta(\sigma\tau)=\Theta(\sigma)\Theta(\tau)$. If $\Theta(\sigma)=1$, then $\sigma(\zeta)=\zeta$; since $K=\QQ(\zeta)$, this forces $\sigma=\operatorname{id}$.
 
 :::
 
@@ -74,17 +74,17 @@ so \(\Theta(\sigma\tau)=\Theta(\sigma)\Theta(\tau)\). If \(\Theta(\sigma)=1\), t
 
 ::: {.pf-step #s3}
 
-The map \(\Theta\) is surjective.
+The map $\Theta$ is surjective.
 
 ::: pf-proof
 
-Fix \(a\) with \(\gcd(a,n)=1\). Then \(\zeta^a\) is a primitive \(n\)th root, hence a root of the cyclotomic polynomial \(\Phi_n(x)\). By hypothesis \(\Phi_n\) is irreducible over \(\QQ\), so it is the minimal polynomial of \(\zeta\). Therefore there is a \(\QQ\)-embedding
-\[
+Fix $a$ with $\gcd(a,n)=1$. Then $\zeta^a$ is a primitive $n$th root, hence a root of the cyclotomic polynomial $\Phi_n(x)$. By hypothesis $\Phi_n$ is irreducible over $\QQ$, so it is the minimal polynomial of $\zeta$. Therefore there is a $\QQ$-embedding
+$$
 \sigma_a:\QQ(\zeta)\hookrightarrow\CC,
 \qquad
 \sigma_a(\zeta)=\zeta^a.
-\]
-Its image is \(\QQ(\zeta^a)\). Since \(a\) is invertible mod \(n\), choose \(b\) with \(ab\equiv1\pmod n\); then \(\zeta=(\zeta^a)^b\), so \(\QQ(\zeta^a)=\QQ(\zeta)=K\). Thus \(\sigma_a\) is an automorphism of \(K\), and \(\Theta(\sigma_a)=a\).
+$$
+Its image is $\QQ(\zeta^a)$. Since $a$ is invertible mod $n$, choose $b$ with $ab\equiv1\pmod n$; then $\zeta=(\zeta^a)^b$, so $\QQ(\zeta^a)=\QQ(\zeta)=K$. Thus $\sigma_a$ is an automorphism of $K$, and $\Theta(\sigma_a)=a$.
 
 :::
 
@@ -93,13 +93,13 @@ Its image is \(\QQ(\zeta^a)\). Since \(a\) is invertible mod \(n\), choose \(b\)
 ::: pf-step
 
 Hence
-\[
+$$
 \operatorname{Gal}(K/\QQ)\cong(\ZZ/n\ZZ)^\times.
-\]
+$$
 
 ::: pf-proof
 
-By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, \(\Theta\) is a bijective homomorphism.
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, $\Theta$ is a bijective homomorphism.
 
 :::
 

@@ -42,30 +42,30 @@ Verify that the answers agree with those given by the universal coefficient theo
 
 ::: {.solution}
 Let
-\[
+$$
 L=L_m(\ell_1,\ldots,\ell_n)
-\]
+$$
 be the $(2n-1)$-dimensional lens space. Its standard CW structure has one cell in every dimension $0,1,\ldots,2n-1$, with cellular boundary
-\[
+$$
 d_k=\begin{cases}
 0,&k\text{ odd},\\
 m,&k\text{ even}.
 \end{cases}
-\]
+$$
 Hence with coefficients in an abelian group $G$, the cellular cochain complex has one copy of $G$ in every degree and
-\[
+$$
 \delta^k=\begin{cases}
 0,&k\text{ even},\\
 \times m,&k\text{ odd}.
 \end{cases}
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 For arbitrary $G$,
-\[
+$$
 H^k(L;G)\cong
 \begin{cases}
 G,&k=0,2n-1,\\
@@ -73,7 +73,7 @@ G/mG,&0<k<2n-1\text{ and }k\text{ even},\\
 G[m],&0<k<2n-1\text{ and }k\text{ odd},\\
 0,&\text{otherwise},
 \end{cases}
-\]
+$$
 where $G[m]=\ker(m:G\to G)$.
 
 ::: pf-proof
@@ -87,14 +87,14 @@ This is immediate from the displayed alternating cochain differential.
 ::: pf-step
 
 With $G=\ZZ$,
-\[
+$$
 H^k(L;\ZZ)\cong
 \begin{cases}
 \ZZ,&k=0,2n-1,\\
 \ZZ_m,&0<k<2n-1\text{ even},\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
@@ -107,13 +107,13 @@ Multiplication by $m$ on $\ZZ$ has zero kernel and cokernel $\ZZ_m$.
 ::: pf-step
 
 With $G=\QQ$,
-\[
+$$
 H^k(L;\QQ)\cong
 \begin{cases}
 \QQ,&k=0,2n-1,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
@@ -126,9 +126,9 @@ Multiplication by nonzero $m$ is an isomorphism of $\QQ$.
 ::: pf-step
 
 With $G=\ZZ_m$,
-\[
+$$
 \boxed{H^k(L;\ZZ_m)\cong\ZZ_m\quad(0\le k\le2n-1).}
-\]
+$$
 
 ::: pf-proof
 
@@ -141,14 +141,14 @@ Multiplication by $m$ is zero on $\ZZ_m$, so every cellular coboundary vanishes.
 ::: pf-step
 
 For a prime $p$,
-\[
+$$
 H^k(L;\ZZ_p)\cong
 \begin{cases}
 \ZZ_p,&0\le k\le2n-1,&p\mid m,\\
 \ZZ_p,&k=0,2n-1,&p\nmid m,\\
 0,&0<k<2n-1,&p\nmid m.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
@@ -165,26 +165,26 @@ These answers agree with the universal coefficient theorem.
 ::: pf-proof
 
 The integral homology of the lens space is
-\[
+$$
 H_k(L;\ZZ)\cong
 \begin{cases}
 \ZZ,&k=0,2n-1,\\
 \ZZ_m,&0<k<2n-1\text{ odd},\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 The cohomological universal coefficient sequence
-\[
+$$
 0\to\operatorname{Ext}(H_{k-1}(L),G)
 \to H^k(L;G)
 \to\operatorname{Hom}(H_k(L),G)\to0
-\]
+$$
 has
-\[
+$$
 \operatorname{Hom}(\ZZ_m,G)=G[m],
 \qquad
 \operatorname{Ext}(\ZZ_m,G)=G/mG,
-\]
+$$
 which reproduces exactly the formula in step [](#s1){.pf-ref}.
 
 :::

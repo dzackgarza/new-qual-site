@@ -41,11 +41,11 @@ b. Let $G$ be a group of order $pq$, and prove that $G$ is not simple.
 ::: pf-step
 Let $G$ have order $pq^k$, and let $n_p$ be the number of Sylow $p$-subgroups of $G$.
 Then
-\[
+$$
 n_p\mid q^k
 \qquad\text{and}\qquad
 n_p\equiv 1\pmod p.
-\]
+$$
 
 ::: pf-proof
 This is Sylow's theorem.
@@ -77,9 +77,9 @@ The unique Sylow $p$-subgroup is normal and is a proper nontrivial subgroup of $
 ::: {.pf-step #nonidentity-elements-count}
 Suppose $n_p=q^k$.
 Then the union of the nonidentity elements of the Sylow $p$-subgroups has exactly
-\[
+$$
 q^k(p-1)
-\]
+$$
 elements.
 
 ::: pf-proof
@@ -94,9 +94,9 @@ Exactly $q^k$ elements of $G$ remain after removing those nonidentity elements.
 
 ::: pf-proof
 By step [](#nonidentity-elements-count){.pf-ref}, the number remaining is
-\[
+$$
 |G|-q^k(p-1)=pq^k-q^k(p-1)=q^k.
-\]
+$$
 The identity is among these remaining elements.
 :::
 
@@ -129,11 +129,11 @@ Then $G$ is not simple.
 ::: pf-proof
 Assume without loss of generality that $p<q$.
 If $n_q$ denotes the number of Sylow $q$-subgroups, then Sylow's theorem gives
-\[
+$$
 n_q\mid p
 \qquad\text{and}\qquad
 n_q\equiv1\pmod q.
-\]
+$$
 Hence $n_q$ is either $1$ or $p$.
 Since $1<p<q$, the possibility $n_q=p$ cannot satisfy $n_q\equiv1\pmod q$.
 Thus $n_q=1$, so the Sylow $q$-subgroup is normal and $G$ is not simple.

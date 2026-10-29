@@ -28,11 +28,11 @@ audit:
 ---
 
 ::: {.problem}
-Determine all \(a\in\CC\) for which there exists a holomorphic function \(f\) on the open unit disk such that
-\[
+Determine all $a\in\CC$ for which there exists a holomorphic function $f$ on the open unit disk such that
+$$
 f(1/n)=\frac1{n+a}
-\]
-for every integer \(n\ge2\).
+$$
+for every integer $n\ge2$.
 :::
 
 ::: {.solution}

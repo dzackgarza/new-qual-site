@@ -28,17 +28,17 @@ Interpret the statement as asking for principal $S^1$-bundles over $S^2$. Their 
 ::: {.pf-step #s1-1}
 
 Principal $S^1$-bundles over a paracompact space $X$ are classified by homotopy classes of maps
-\[
+$$
 [X,BS^1].
-\]
+$$
 
 
 ::: pf-proof
 
 The universal principal circle bundle
-\[
+$$
 S^1\longrightarrow ES^1\longrightarrow BS^1
-\]
+$$
 has contractible total space. Pullback along a map $X\to BS^1$ produces a principal $S^1$-bundle over $X$, and the classifying-space theorem identifies homotopic maps exactly with isomorphic bundles.
 
 :::
@@ -48,15 +48,15 @@ has contractible total space. Pullback along a map $X\to BS^1$ produces a princi
 ::: {.pf-step #s1-2}
 
 Since
-\[
+$$
 BS^1\simeq\CP^{\infty}=K(\ZZ,2),
-\]
+$$
 one has
-\[
+$$
 [S^2,BS^1]
 \cong H^2(S^2;\ZZ)
 \cong\ZZ.
-\]
+$$
 
 
 ::: pf-proof
@@ -70,13 +70,13 @@ The infinite complex projective space is the classifying space of $S^1=U(1)$ and
 ::: {.pf-step #s1-3}
 
 The integer classifying a bundle
-\[
+$$
 S^1\to E\xrightarrow{p}S^2
-\]
+$$
 is
-\[
+$$
 k=\langle c_1(E),[S^2]\rangle\in\ZZ.
-\]
+$$
 
 
 ::: pf-proof
@@ -90,22 +90,22 @@ Under the identification in step [](#s1-2){.pf-ref}, the universal generator of 
 ::: {.pf-step #s1-4}
 
 Equivalently, the classification can be obtained by clutching along the equator:
-\[
+$$
 S^2=D^2_+\cup_{S^1}D^2_-.
-\]
+$$
 The clutching function is a map
-\[
+$$
 g:S^1\to S^1,
-\]
+$$
 and its degree $k$ is the complete invariant.
 
 
 ::: pf-proof
 
 Every bundle is trivial over each hemisphere because each disk is contractible. The two trivializations differ on the equator by a transition function $g:S^1\to S^1$. Changing trivializations changes $g$ by homotopy, and homotopy classes
-\[
+$$
 [S^1,S^1]\cong\pi_1(S^1)\cong\ZZ
-\]
+$$
 are classified by degree. This integer agrees with the Chern number in step [](#s1-3){.pf-ref}.
 
 :::
@@ -115,15 +115,15 @@ are classified by degree. This integer agrees with the Chern number in step [](#
 ::: {.pf-step #s1-5}
 
 A representative of class $k$ is obtained by gluing
-\[
+$$
 D^2_+\times S^1
 \quad\text{and}\quad
 D^2_-\times S^1
-\]
+$$
 along their boundary by
-\[
+$$
 (z,u)_+\sim(z,z^ku)_-.
-\]
+$$
 
 
 ::: pf-proof
@@ -137,13 +137,13 @@ The map $z\mapsto z^k$ has degree $k$, so this is exactly the clutching construc
 ::: pf-step
 
 For $k=0$ the total space is
-\[
+$$
 S^2\times S^1.
-\]
+$$
 For $k=\pm1$ the total space is $S^3$ with the Hopf fibration, up to orientation of the circle action. For $|k|>1$ the total space is the lens space
-\[
+$$
 L(|k|,1)
-\]
+$$
 up to orientation convention.
 
 
@@ -158,11 +158,11 @@ Degree zero gives the constant clutching map and hence the product bundle. The H
 ::: {.pf-step #s1-7}
 
 Therefore
-\[
+$$
 \boxed{
 \{\text{principal }S^1\text{-bundles over }S^2\}/\cong
 \;\cong\;\ZZ,}
-\]
+$$
 classified by $c_1$ or, equivalently, the degree of the clutching map.
 
 

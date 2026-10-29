@@ -17,13 +17,13 @@ audit:
 
 ::: {.problem}
 (a) Suppose
-\[
+$$
 \lim_{n\to\infty}a_n=A.
-\]
+$$
 Show that
-\[
+$$
 \lim_{N\to\infty}\frac1N\sum_{n=1}^N a_n=A.
-\]
+$$
 
 (b) Show by example that the converse is false.
 :::

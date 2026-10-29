@@ -39,67 +39,67 @@ Prove that $x^n = 0$.
 ::: pf
 
 ::: {.pf-step #eigenvalues-zero}
-If \(x\in M_n(\CC)\) is nilpotent, then every eigenvalue of \(x\) is zero.
+If $x\in M_n(\CC)$ is nilpotent, then every eigenvalue of $x$ is zero.
 
 ::: pf-proof
-Choose \(m\ge1\) such that
-\[
+Choose $m\ge1$ such that
+$$
 x^m=0.
-\]
-If \(v\neq0\) is an eigenvector with eigenvalue \(\lambda\), then
-\[
+$$
+If $v\neq0$ is an eigenvector with eigenvalue $\lambda$, then
+$$
 0=x^mv=\lambda^m v.
-\]
-Hence \(\lambda^m=0\), so
-\[
+$$
+Hence $\lambda^m=0$, so
+$$
 \lambda=0.
-\]
-Thus zero is the only eigenvalue of \(x\).
+$$
+Thus zero is the only eigenvalue of $x$.
 :::
 
 :::
 
 ::: pf-step
-The characteristic polynomial of \(x\) is \(t^n\), and therefore \(x^n=0\).
+The characteristic polynomial of $x$ is $t^n$, and therefore $x^n=0$.
 
 ::: pf-proof
-Over \(\CC\), the characteristic polynomial splits into linear factors and its roots are exactly the eigenvalues, counted with algebraic multiplicity.
+Over $\CC$, the characteristic polynomial splits into linear factors and its roots are exactly the eigenvalues, counted with algebraic multiplicity.
 By step [](#eigenvalues-zero){.pf-ref} every eigenvalue is zero, so
-\[
+$$
 \chi_x(t)=t^n.
-\]
+$$
 The Cayley-Hamilton theorem gives
-\[
+$$
 \chi_x(x)=0.
-\]
+$$
 Hence
-\[
+$$
 x^n=0.
-\]
+$$
 :::
 
 :::
 
 ::: pf-step
-Nilpotent similarity classes in \(M_4(\CC)\) are in bijection with partitions of \(4\).
+Nilpotent similarity classes in $M_4(\CC)$ are in bijection with partitions of $4$.
 
 ::: pf-proof
 Every nilpotent complex matrix has Jordan canonical form consisting entirely of Jordan blocks
-\[
+$$
 J_r(0).
-\]
+$$
 Two nilpotent matrices are similar if and only if their multisets of Jordan block sizes agree.
-Thus a similarity class is determined exactly by a partition of the dimension \(4\).
+Thus a similarity class is determined exactly by a partition of the dimension $4$.
 :::
 
 :::
 
 ::: pf-step
-There are exactly five nilpotent similarity classes in \(M_4(\CC)\).
+There are exactly five nilpotent similarity classes in $M_4(\CC)$.
 
 ::: pf-proof
-The partitions of \(4\) are
-\[
+The partitions of $4$ are
+$$
 4,
 \qquad
 3+1,
@@ -109,29 +109,29 @@ The partitions of \(4\) are
 2+1+1,
 \qquad
 1+1+1+1.
-\]
+$$
 They correspond respectively to the Jordan forms
-\[
+$$
 J_4(0),
-\]
-\[
+$$
+$$
 J_3(0)\oplus J_1(0),
-\]
-\[
+$$
+$$
 J_2(0)\oplus J_2(0),
-\]
-\[
+$$
+$$
 J_2(0)\oplus J_1(0)\oplus J_1(0),
-\]
+$$
 and
-\[
+$$
 0_4.
-\]
+$$
 Therefore there are
-\[
+$$
 5
-\]
-similarity classes of nilpotent matrices in \(M_4(\CC)\).
+$$
+similarity classes of nilpotent matrices in $M_4(\CC)$.
 :::
 
 :::

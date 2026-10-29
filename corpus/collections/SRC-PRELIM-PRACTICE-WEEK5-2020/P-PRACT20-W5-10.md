@@ -29,25 +29,25 @@ Suppose that subgroups $H$ and $K$ of some group have order $12$ and $30$ repect
 ::: {.pf-step #s1-1}
 
 If $\langle H,K\rangle$ is finite, then its order is divisible by
-\[
+$$
 \operatorname{lcm}(12,30)=60.
-\]
+$$
 
 
 ::: pf-proof
 
 Both
-\[
+$$
 H\le\langle H,K\rangle
 \qquad\text{and}\qquad
 K\le\langle H,K\rangle.
-\]
+$$
 If $\langle H,K\rangle$ is finite, Lagrange's theorem gives
-\[
+$$
 12\mid|\langle H,K\rangle|
 \qquad\text{and}\qquad
 30\mid|\langle H,K\rangle|.
-\]
+$$
 Hence their least common multiple $60$ divides the order.
 
 :::
@@ -57,9 +57,9 @@ Hence their least common multiple $60$ divides the order.
 ::: {.pf-step #s1-2}
 
 Therefore
-\[
+$$
 \boxed{30}
-\]
+$$
 cannot be the order of $\langle H,K\rangle$.
 
 
@@ -79,14 +79,14 @@ The choice $60$ can occur.
 ::: pf-proof
 
 Take the cyclic group
-\[
+$$
 G=\ZZ_{60}.
-\]
+$$
 Its unique subgroups of orders $12$ and $30$ generate the subgroup whose
 order is
-\[
+$$
 \operatorname{lcm}(12,30)=60,
-\]
+$$
 namely all of $G$.
 
 :::
@@ -101,34 +101,34 @@ The choices $120$ and $360$ can occur.
 ::: pf-proof
 
 For $120$, take
-\[
+$$
 G=\ZZ_4\times\ZZ_2\times\ZZ_3\times\ZZ_5.
-\]
+$$
 Let
-\[
+$$
 H=\ZZ_4\times\{0\}\times\ZZ_3\times\{0\},
-\]
+$$
 so $|H|=12$, and let
-\[
+$$
 K=\{0\}\times\ZZ_2\times\ZZ_3\times\ZZ_5,
-\]
+$$
 so $|K|=30$. These subgroups together generate every direct factor, hence
-\[
+$$
 \langle H,K\rangle=G
-\]
+$$
 has order $120$.
 
 For $360$, take
-\[
+$$
 G=\ZZ_4\times\ZZ_2\times
 \ZZ_3\times\ZZ_3\times\ZZ_5.
-\]
+$$
 Let $H$ use the $\ZZ_4$ factor and the first $\ZZ_3$ factor, and
 let $K$ use the $\ZZ_2$ factor, the second $\ZZ_3$ factor, and
 the $\ZZ_5$ factor. Then
-\[
+$$
 |H|=12,\qquad |K|=30,
-\]
+$$
 and together they generate $G$, which has order $360$.
 
 :::
@@ -143,15 +143,15 @@ Countable infinity can occur.
 ::: pf-proof
 
 Take the free product
-\[
+$$
 G=C_{12}*C_{30}.
-\]
+$$
 The two canonical free factors are subgroups of orders $12$ and $30$, and by
 definition they generate all of $G$. The free product of two nontrivial
 finite groups is countably infinite here, so
-\[
+$$
 |\langle C_{12},C_{30}\rangle|=\aleph_0.
-\]
+$$
 
 :::
 
@@ -160,9 +160,9 @@ finite groups is countably infinite here, so
 ::: {.pf-step #s1-6}
 
 Hence the unique impossible choice is
-\[
+$$
 \boxed{\text{(a) }30}.
-\]
+$$
 
 
 ::: pf-proof

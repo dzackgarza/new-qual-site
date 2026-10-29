@@ -68,9 +68,9 @@ Injectivity:
 ::: {.pf-step #s2}
 
 For $a$ of order $d$, one has
-\[
+$$
 \boxed{\varepsilon(a)=(-1)^{(N/d)(d-1)}}.
-\]
+$$
 In particular, $\varepsilon(a)=-1$ if and only if $d$ is even and $N/d$ is odd.
 
 ::: pf-proof

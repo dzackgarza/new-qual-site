@@ -12,20 +12,20 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 X=\{(p,q)\in\RR^2:q\ge0\}.
-\]
+$$
 Define a basis consisting of ordinary open disks $B((p,q);\varepsilon)$ with $0<\varepsilon<q$, together with sets
-\[
+$$
 B((p,q);q)\cup\{(p,0)\}
-\]
+$$
 whose disk is tangent to the $x$-axis at $(p,0)$.
 
 1. Prove that these sets form a basis for a topology on $X$.
 2. Prove that
-   \[
+   $$
    C=\{(p,q):q>0,\ p,q\in\QQ\}
-   \]
+   $$
    is dense, hence $X$ is separable.
 3. Prove that the $x$-axis is a closed subspace whose subspace topology is discrete.
 4. State the Tietze Extension Theorem and use it to prove that $X$ is not normal.

@@ -23,13 +23,13 @@ audit:
 
 ::: {.problem}
 Let $y:[0,\infty)\to\RR$ solve
-\[
+$$
 y''=-|y|,
 \qquad
 y(0)=1,
 \qquad
 y'(0)=0.
-\]
+$$
 Prove that there is exactly one $t>0$ such that $y(t)=0$.
 :::
 

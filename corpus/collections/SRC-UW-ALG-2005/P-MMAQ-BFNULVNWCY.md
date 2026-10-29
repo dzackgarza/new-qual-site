@@ -36,26 +36,26 @@ The polynomial $f$ is reducible over $\QQ$.
 ::: pf-proof
 
 We have
-\[
+$$
 x^{15}-1=(x^5-1)(x^{10}+x^5+1),
-\]
+$$
 so
-\[
+$$
 f(x)=\frac{x^{15}-1}{x^5-1}.
-\]
+$$
 Using the cyclotomic factorization
-\[
+$$
 x^{15}-1=\prod_{d\mid15}\Phi_d(x)
 =\Phi_1(x)\Phi_3(x)\Phi_5(x)\Phi_{15}(x)
-\]
+$$
 and
-\[
+$$
 x^5-1=\Phi_1(x)\Phi_5(x),
-\]
+$$
 we obtain
-\[
+$$
 f(x)=\Phi_3(x)\Phi_{15}(x).
-\]
+$$
 Both factors have positive degree, namely $2$ and $8$, so $f$ is reducible over $\QQ$.
 
 :::
@@ -69,9 +69,9 @@ The roots of $f$ are exactly the $15$th roots of unity whose orders are $3$ or $
 ::: pf-proof
 
 From
-\[
+$$
 f(x)=\frac{x^{15}-1}{x^5-1},
-\]
+$$
 a complex number $\alpha$ is a root of $f$ precisely when $\alpha^{15}=1$ but $\alpha^5\ne1$. The possible orders of a $15$th root of unity are $1,3,5,15$; excluding those whose order divides $5$ leaves orders $3$ and $15$. Equivalently, this is the union of the roots of $\Phi_3$ and $\Phi_{15}$ from step [](#s1){.pf-ref}.
 
 :::
@@ -81,9 +81,9 @@ a complex number $\alpha$ is a root of $f$ precisely when $\alpha^{15}=1$ but $\
 ::: {.pf-step #s3}
 
 If $\zeta_{15}$ is a primitive $15$th root of unity, then
-\[
+$$
 K=\QQ(\zeta_{15}).
-\]
+$$
 
 ::: pf-proof
 
@@ -96,16 +96,16 @@ The polynomial $f$ has primitive $15$th roots among its roots, so its splitting 
 ::: pf-step
 
 The degree of the splitting field is
-\[
+$$
 [K:\QQ]=\varphi(15)=8.
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s3){.pf-ref}, $K=\QQ(\zeta_{15})$. The degree of the $15$th cyclotomic extension is the degree of $\Phi_{15}$, namely Euler's totient
-\[
+$$
 \varphi(15)=15\left(1-\frac13\right)\left(1-\frac15\right)=8.
-\]
+$$
 
 :::
 
@@ -114,28 +114,28 @@ By step [](#s3){.pf-ref}, $K=\QQ(\zeta_{15})$. The degree of the $15$th cyclotom
 ::: pf-step
 
 The Galois group is
-\[
+$$
 \operatorname{Gal}(K/\QQ)
 \cong (\ZZ/15\ZZ)^\times
 \cong C_2\times C_4.
-\]
+$$
 
 ::: pf-proof
 
 Every automorphism of the cyclotomic field $\QQ(\zeta_{15})$ is determined by
-\[
+$$
 \zeta_{15}\longmapsto \zeta_{15}^a
-\]
+$$
 for a unique $a\in(\ZZ/15\ZZ)^\times$, and every such $a$ defines an automorphism. Hence
-\[
+$$
 \operatorname{Gal}(K/\QQ)\cong(\ZZ/15\ZZ)^\times.
-\]
+$$
 By the Chinese remainder theorem,
-\[
+$$
 (\ZZ/15\ZZ)^\times
 \cong
 (\ZZ/3\ZZ)^\times\times(\ZZ/5\ZZ)^\times.
-\]
+$$
 The first factor is cyclic of order $2$, and the second is cyclic of order $4$. Thus the group is $C_2\times C_4$.
 
 :::

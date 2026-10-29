@@ -28,33 +28,33 @@ audit:
 
 ::: {.problem}
 For topological spaces $X,Y$, the mapping cone $C(f)$ of a map
-\[
+$$
 f:X\longrightarrow Y
-\]
+$$
 is defined as
-\[
+$$
 C(f)
 =
 \bigl((X\times[0,1])\amalg Y\bigr)/\sim,
-\]
+$$
 where
-\[
+$$
 (x,0)\sim(x',0)
 \qquad\text{for all }x,x'\in X,
-\]
+$$
 and
-\[
+$$
 (x,1)\sim f(x).
-\]
+$$
 Let
-\[
+$$
 \phi_k:S^1\longrightarrow S^1
-\]
+$$
 be a $k$-fold covering.
 Find
-\[
+$$
 \pi_1(C(\phi_k)).
-\]
+$$
 :::
 
 ::: {.solution}
@@ -65,25 +65,25 @@ Assume $k\ge1$, as in the usual meaning of a $k$-fold covering.
 ::: pf-step
 
 The mapping cone $C(\phi_k)$ is obtained from the target circle by attaching one $2$-cell by the degree-$k$ map $\phi_k$:
-\[
+$$
 C(\phi_k)\cong S^1\cup_{\phi_k}D^2.
-\]
+$$
 
 ::: pf-proof
 
 The quotient
-\[
+$$
 (S^1\times[0,1])/(S^1\times\{0\})
-\]
+$$
 is the cone on $S^1$, hence is homeomorphic to $D^2$.
 Its boundary is the copy
-\[
+$$
 S^1\times\{1\},
-\]
+$$
 and the remaining mapping-cone identification glues that boundary to the target circle by
-\[
+$$
 (x,1)\longmapsto\phi_k(x).
-\]
+$$
 Thus the mapping cone is exactly the displayed adjunction space.
 
 :::
@@ -93,28 +93,28 @@ Thus the mapping cone is exactly the displayed adjunction space.
 ::: pf-step
 
 If $a$ denotes the standard generator of the target circle, attaching the $2$-cell imposes the relation
-\[
+$$
 a^k=1
-\]
+$$
 on the fundamental group.
 
 ::: pf-proof
 
 Before attaching the $2$-cell, the $1$-skeleton is $S^1$, so
-\[
+$$
 \pi_1(S^1)\cong\langle a\rangle\cong\ZZ.
-\]
+$$
 A $k$-fold covering
-\[
+$$
 \phi_k:S^1\to S^1
-\]
+$$
 induces multiplication by $k$ on fundamental groups; equivalently, its attaching loop represents $a^k$.
 By the Seifert--van Kampen theorem for attaching a $2$-cell, the fundamental group of the resulting space is the quotient by the normal closure of that attaching element:
-\[
+$$
 \pi_1(C(\phi_k))
 \cong
 \langle a\mid a^k=1\rangle.
-\]
+$$
 
 :::
 
@@ -123,11 +123,11 @@ By the Seifert--van Kampen theorem for attaching a $2$-cell, the fundamental gro
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{
 \pi_1(C(\phi_k))\cong\ZZ/k\ZZ.
 }
-\]
+$$
 
 ::: pf-proof
 

@@ -31,13 +31,13 @@ Given maps $X \to Y \to Z$ such that both $Y \to Z$ and the composition $X \to Z
 
 ::: {.solution}
 Write
-\[
+$$
 p:X\to Y,
 \qquad
 q:Y\to Z,
 \qquad
 r=q\circ p:X\to Z.
-\]
+$$
 
 ::: pf
 
@@ -50,9 +50,9 @@ For every $z\in Z$ there is a path-connected open neighborhood $U$ of $z$ that i
 Choose evenly covered neighborhoods $U_q$ and $U_r$ of $z$ for the two covering maps.
 Their intersection is an open neighborhood of $z$.
 Since $Z$ is locally path connected, choose a path-connected open neighborhood
-\[
+$$
 z\in U\subseteq U_q\cap U_r.
-\]
+$$
 Restricting an evenly covered neighborhood to a connected open subset preserves the sheet decomposition, so $U$ is evenly covered by both maps.
 
 :::
@@ -67,20 +67,20 @@ Then $p(W)$ lies in a single sheet $V$ of $q^{-1}(U)$.
 ::: pf-proof
 
 The restriction
-\[
+$$
 r|_W:W\to U
-\]
+$$
 is a homeomorphism, and $U$ is path connected, so $W$ is path connected.
 The image $p(W)$ is therefore connected.
 
 Since
-\[
+$$
 q(p(W))=r(W)=U,
-\]
+$$
 one has
-\[
+$$
 p(W)\subseteq q^{-1}(U),
-\]
+$$
 which is a disjoint union of open sheets.
 A connected subset of this disjoint union lies in one sheet, say $V$.
 
@@ -91,28 +91,28 @@ A connected subset of this disjoint union lies in one sheet, say $V$.
 ::: {.pf-step #s3}
 
 The restriction
-\[
+$$
 p|_W:W\to V
-\]
+$$
 is a homeomorphism.
 
 ::: pf-proof
 
 On $W$ one has
-\[
+$$
 q|_V\circ p|_W=r|_W.
-\]
+$$
 Both
-\[
+$$
 q|_V:V\to U
 \quad\text{and}\quad
 r|_W:W\to U
-\]
+$$
 are homeomorphisms.
 Hence
-\[
+$$
 p|_W=(q|_V)^{-1}\circ r|_W,
-\]
+$$
 which is a homeomorphism from $W$ onto $V$.
 
 :::
@@ -122,9 +122,9 @@ which is a homeomorphism from $W$ onto $V$.
 ::: {.pf-step #s4}
 
 For each sheet $V$ of $q^{-1}(U)$,
-\[
+$$
 p^{-1}(V)
-\]
+$$
 is a disjoint union of sheets $W$ of $r^{-1}(U)$, each mapped homeomorphically onto $V$.
 
 ::: pf-proof
@@ -155,20 +155,20 @@ By step [](#s4){.pf-ref}, every such $V$ is evenly covered by $p$.
 
 Now assume $r:X\to Z$ is a normal covering.
 Let $x_1,x_2\in X$ satisfy
-\[
+$$
 p(x_1)=p(x_2)=y.
-\]
+$$
 Then there is a deck transformation $h$ of $r$ with
-\[
+$$
 h(x_1)=x_2.
-\]
+$$
 
 ::: pf-proof
 
 The two points lie in the same fiber of $r$ because
-\[
+$$
 r(x_i)=q(p(x_i))=q(y).
-\]
+$$
 For a connected normal covering, the deck transformation group acts transitively on each fiber.
 
 :::
@@ -182,23 +182,23 @@ Every such deck transformation $h$ is a deck transformation of $p$ whenever it s
 ::: pf-proof
 
 The maps
-\[
+$$
 p\circ h,
 \qquad
 p:X\to Y
-\]
+$$
 are both lifts through $q$ of the same map $r:X\to Z$, since
-\[
+$$
 qph=rh=r=qp.
-\]
+$$
 At $x_1$ they agree:
-\[
+$$
 (ph)(x_1)=p(x_2)=y=p(x_1).
-\]
+$$
 Since $X$ is path connected for a normal covering, uniqueness of lifts gives
-\[
+$$
 p\circ h=p.
-\]
+$$
 Thus $h$ is a deck transformation of $p$.
 
 :::

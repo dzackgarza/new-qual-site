@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_{-\infty}^{\infty}\frac{\sin^3x}{x^3}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}

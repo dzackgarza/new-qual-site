@@ -39,9 +39,9 @@ Calculate $[F : K]$.
 
 ::: {.solution}
 Write
-\[
+$$
 n=p^i m,\qquad (m,p)=1,
-\]
+$$
 and let $\alpha$ be a root of $x^n-t$.
 Thus $\alpha^n=t$.
 
@@ -65,26 +65,26 @@ Hence it is irreducible in $k[t][x]$, and therefore in $k(t)[x]$ by Gauss's lemm
 
 Every root of $x^n-t$ is of the form $\zeta\alpha$ with $\zeta^m=1$.
 Hence the splitting field is
-\[
+$$
 L=K(\alpha).
-\]
+$$
 
 ::: pf-proof
 
 Because $k$ is algebraically closed, all $m$th roots of unity lie in $k\subset K$.
 If $\zeta^m=1$, then
-\[
+$$
 (\zeta\alpha)^n=\zeta^{p^im}\alpha^n=(\zeta^m)^{p^i}t=t,
-\]
+$$
 so every $\zeta\alpha$ is a root.
 Conversely, if $\beta^n=t=\alpha^n$, then
-\[
+$$
 (\beta/\alpha)^n=1.
-\]
+$$
 In characteristic $p$, the group of $n$th roots of unity is the same as the group of $m$th roots of unity, since
-\[
+$$
 x^n-1=(x^m-1)^{p^i}.
-\]
+$$
 Thus $\beta/\alpha=\zeta$ for some $\zeta^m=1$.
 All roots therefore already lie in $K(\alpha)$.
 
@@ -95,9 +95,9 @@ All roots therefore already lie in $K(\alpha)$.
 ::: pf-step
 
 The automorphism group is
-\[
+$$
 G=\operatorname{Aut}(L/K)\cong \mu_m,
-\]
+$$
 acting by $\alpha\mapsto\zeta\alpha$ for $\zeta^m=1$.
 In particular $|G|=m$.
 
@@ -114,24 +114,24 @@ These automorphisms are distinct.
 ::: {.pf-step #s4}
 
 The element
-\[
+$$
 \beta:=\alpha^m
-\]
+$$
 is fixed by $G$, and
-\[
+$$
 [K(\beta):K]=p^i.
-\]
+$$
 
 ::: pf-proof
 
 For $\sigma_\zeta\in G$,
-\[
+$$
 \sigma_\zeta(\beta)=(\zeta\alpha)^m=\alpha^m=\beta.
-\]
+$$
 Also
-\[
+$$
 \beta^{p^i}=\alpha^{mp^i}=\alpha^n=t.
-\]
+$$
 The polynomial $x^{p^i}-t$ is Eisenstein at $t$ in $k[t][x]$, so it is irreducible over $K$.
 Hence $[K(\beta):K]=p^i$.
 
@@ -142,27 +142,27 @@ Hence $[K(\beta):K]=p^i$.
 ::: pf-step
 
 The fixed field is
-\[
+$$
 F=K(\beta)=K(\alpha^m),
-\]
+$$
 and therefore
-\[
+$$
 \boxed{[F:K]=p^i}.
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s4){.pf-ref}, $K(\beta)\subseteq F$.
 Moreover
-\[
+$$
 [L:K(\beta)]
 =\frac{[L:K]}{[K(\beta):K]}
 =\frac{p^im}{p^i}=m.
-\]
+$$
 Since $G$ has $m$ elements and fixes $K(\beta)$, Artin's theorem on fixed fields gives
-\[
+$$
 [L:F]=|G|=m.
-\]
+$$
 Thus $F$ and $K(\beta)$ are intermediate fields of the same degree over $K$, with $K(\beta)\subseteq F$, so they are equal.
 
 :::

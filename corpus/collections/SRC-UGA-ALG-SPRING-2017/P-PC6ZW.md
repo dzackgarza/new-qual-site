@@ -38,31 +38,31 @@ Then $M = Rg_1 \oplus Rg_2 \oplus \cdots Rg_n$, using the notation of Atiyah-Mac
 In particular, $M\cong R\sumpower{n}$, and this is true iff $M$ is a free $R\dash$module of rank $n$.
 So it suffices to show that $M/IM \cong (R/I)\sumpower{\ell}$ for some $\ell$ and that $\ell = n$.
 Since free modules are flat, the functor $(\wait)\tensor_R M$ is left and right exact, so take the short exact sequence
-\[
+$$
 0 \to I \injects R \surjects R/I \to 0
-\]
+$$
 and tensor with $M$ to get
-\[
+$$
 0 \to I \tensor_R M \injectsvia{\iota} R\tensor_R M \surjectsvia{\pi} (R/I)\tensor_R M \to 0
-.\]
+.$$
 Noting that $R\tensor_R M \cong M$ by the canonical map $r\tensor m \mapsto rm$ (extended linearly), we have
-\[
+$$
 0 \to I \tensor_R M \injectsvia{\iota} M \surjectsvia{\pi} (R/I)\tensor_R M \to 0
-.\]
+.$$
 Now $\iota(i\tensor m) = im$, so the image of $\iota$ is precisely $IM$, and $\coker(\iota) = M/IM$ by definition.
 By exactness, we must have $\coker(\iota) \cong (R/I)\tensor_R M$, so
-\[
+$$
 M/IM \cong (R/I)\tensor_R M
-.\]
+.$$
 But now if $M\cong R\sumpower{n}$, we can conclude by a direct calculation:
-\[
+$$
 M/IM &\cong (R/I)\tensor_R M \\
 &\cong (R/I)\tensor_R (R\sumpower n) \\
 &\definedas (R/I)\tensor_R \qty{R\oplus R \oplus\cdots\oplus R} \\
 &\cong \qty{(R/I)\tensor_R R} \oplus \qty{(R/I)\tensor_R R}\oplus \cdots \oplus \qty{(R/I) \tensor_R R} \\
 &\cong (R/I) \oplus (R/I) \oplus \cdots \oplus (R/I) \\
 &= (R/I)\sumpower{n}
-,\]
+,$$
 where we've used that $A\tensor (B\oplus C)\cong (A\tensor B ) \oplus (A\tensor C)$ and $A\tensor_R R \cong A$ for any $R\dash$modules $A,B,C$.
 
 *A more direct proof*:

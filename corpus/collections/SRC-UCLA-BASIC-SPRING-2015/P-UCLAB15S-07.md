@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 f(x,y,z)=9x^2+6y^2+6z^2+12xy-10xz-2yz.
-\]
+$$
 Does there exist a point $(x,y,z)$ such that $f(x,y,z)<0$?
 :::
 
@@ -33,7 +33,7 @@ No.
 ::: {.pf-step #s1-1}
 
 Complete the square in the variable $x$:
-\[
+$$
 \begin{aligned}
 f(x,y,z)
 &=
@@ -48,13 +48,13 @@ x+\frac23y-\frac59z
 +
 \frac{29}{9}z^2.
 \end{aligned}
-\]
+$$
 
 
 ::: pf-proof
 
 Expand the square:
-\[
+$$
 \begin{aligned}
 9
 \left(
@@ -69,11 +69,11 @@ x+\frac23y-\frac59z
 +
 \frac{25}{9}z^2.
 \end{aligned}
-\]
+$$
 Subtracting this from the original quadratic form leaves
-\[
+$$
 2y^2+\frac{14}{3}yz+\frac{29}{9}z^2.
-\]
+$$
 
 :::
 
@@ -82,7 +82,7 @@ Subtracting this from the original quadratic form leaves
 ::: {.pf-step #s1-2}
 
 Complete the square in the remaining variables:
-\[
+$$
 2y^2
 +
 \frac{14}{3}yz
@@ -95,13 +95,13 @@ y+\frac76z
 \right)^2
 +
 \frac12z^2.
-\]
+$$
 
 
 ::: pf-proof
 
 Expand:
-\[
+$$
 2
 \left(
 y+\frac76z
@@ -112,15 +112,15 @@ y+\frac76z
 \frac{14}{3}yz
 +
 \frac{49}{18}z^2.
-\]
+$$
 Adding
-\[
+$$
 \frac12z^2
 =
 \frac9{18}z^2
-\]
+$$
 gives
-\[
+$$
 2y^2
 +
 \frac{14}{3}yz
@@ -132,7 +132,7 @@ gives
 \frac{14}{3}yz
 +
 \frac{29}{9}z^2.
-\]
+$$
 
 :::
 
@@ -141,7 +141,7 @@ gives
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{
 f(x,y,z)
 =
@@ -157,7 +157,7 @@ y+\frac76z
 +
 \frac12z^2.
 }
-\]
+$$
 
 
 ::: pf-proof
@@ -171,13 +171,13 @@ Combine steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 ::: {.pf-step #s1-4}
 
 One has
-\[
+$$
 f(x,y,z)\ge0
-\]
+$$
 for every
-\[
+$$
 (x,y,z)\in\RR^3.
-\]
+$$
 
 
 ::: pf-proof
@@ -192,18 +192,18 @@ Thus their sum is nonnegative.
 ::: {.pf-step #s1-5}
 
 Hence there is no point with
-\[
+$$
 f(x,y,z)<0.
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-4){.pf-ref} rules out strict negativity everywhere.
 Thus the answer is
-\[
+$$
 \boxed{\text{No}.}
-\]
+$$
 
 :::
 

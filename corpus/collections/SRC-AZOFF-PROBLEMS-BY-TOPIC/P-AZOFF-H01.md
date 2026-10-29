@@ -28,9 +28,9 @@ audit:
 
 ::: {.problem}
 For each nonnegative integer $n$, define
-\[
+$$
 f_n(z)=\sum_{k=0}^n\frac{z^k}{k!}.
-\]
+$$
 Prove that $f_n$ has no roots in the open unit disk.
 (Hint: check $n=1$ and $n=2$ directly.)
 :::

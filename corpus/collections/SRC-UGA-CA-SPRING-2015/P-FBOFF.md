@@ -24,9 +24,9 @@ Show that for any $w \in \CC$, there exists a sequence $z_n \in \Omega$ such tha
 
 ::: {.solution}
 (1) Fix $w\in\CC$. For each pole $a_n$, the function
-\[
+$$
 h_n(z)=\frac{1}{f(z)-w}
-\]
+$$
 is holomorphic in a punctured neighborhood of $a_n$ and has a removable
 singularity there with value $0$. Since $h_n$ is nonconstant, the open mapping
 theorem implies that every sufficiently small neighborhood of $a_n$ contains
@@ -35,10 +35,10 @@ every sufficiently small neighborhood of $a_n$, the values of $f$ come
 arbitrarily close to $w$.
 
 Choose $z_n$ so close to $a_n$ that
-\[
+$$
 |z_n-a_n|<\frac1n,
 \qquad |f(z_n)-w|<\frac1n.
-\]
+$$
 Since $a_n\to a$, we also have $z_n\to a$, and by construction
 $f(z_n)\to w$.
 

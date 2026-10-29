@@ -38,9 +38,9 @@ Its Galois group is solvable.
 ::: pf-proof
 
 By hypothesis,
-\[
+$$
 G\cong \ZZ/4\ZZ\times\ZZ/4\ZZ.
-\]
+$$
 This group is abelian. Every abelian group is solvable: its commutator subgroup
 is trivial, so its derived series terminates after one step.
 

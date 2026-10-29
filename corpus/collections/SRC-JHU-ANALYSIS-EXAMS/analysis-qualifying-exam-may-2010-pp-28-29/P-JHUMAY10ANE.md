@@ -26,14 +26,14 @@ audit:
 
 ::: {.problem}
 Let $f_j\in L^2(\RR^n)$ with $f_j\to f$ in $L^2$. Suppose there exists $M<\infty$ such that
-\[
+$$
 \|f_j\|_{H^\sigma}\le M
 \qquad(j\ge1),
-\]
+$$
 where
-\[
+$$
 \|g\|_{H^\sigma}^2=\int_{\RR^n}(1+|\xi|^2)^\sigma|\widehat g(\xi)|^2\,d\xi.
-\]
+$$
 Must $f\in H^\sigma$? Prove your answer.
 :::
 

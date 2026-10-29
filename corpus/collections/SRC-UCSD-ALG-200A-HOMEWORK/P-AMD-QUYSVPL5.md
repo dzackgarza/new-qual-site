@@ -47,11 +47,11 @@ Hint: use the lower central series.
 ::: pf-step
 
 Write the lower central series of a group $K$ as
-\[
+$$
 \gamma_1(K)=K,
 \qquad
 \gamma_{i+1}(K)=[K,\gamma_i(K)].
-\]
+$$
 A group $K$ is nilpotent precisely when $\gamma_{c+1}(K)=1$ for some $c\ge0$.
 
 ::: pf-proof
@@ -65,24 +65,24 @@ This is the lower-central-series characterization of nilpotence used in the prob
 ::: {.pf-step #s2}
 
 If $H\le G$, then for every $i\ge1$,
-\[
+$$
 \gamma_i(H)\le\gamma_i(G).
-\]
+$$
 
 ::: pf-proof
 
 We induct on $i$.
 For $i=1$,
-\[
+$$
 \gamma_1(H)=H\le G=\gamma_1(G).
-\]
+$$
 If $\gamma_i(H)\le\gamma_i(G)$, then
-\[
+$$
 \gamma_{i+1}(H)
   =[H,\gamma_i(H)]
   \le [G,\gamma_i(G)]
   =\gamma_{i+1}(G).
-\]
+$$
 Thus the containment holds for every $i$.
 
 :::
@@ -96,14 +96,14 @@ Every subgroup of a nilpotent group is nilpotent.
 ::: pf-proof
 
 Suppose $G$ is nilpotent, so
-\[
+$$
 \gamma_{c+1}(G)=1
-\]
+$$
 for some $c$.
 If $H\le G$, then step [](#s2){.pf-ref} gives
-\[
+$$
 \gamma_{c+1}(H)\le\gamma_{c+1}(G)=1.
-\]
+$$
 Hence $H$ is nilpotent.
 
 :::
@@ -113,20 +113,20 @@ Hence $H$ is nilpotent.
 ::: {.pf-step #s4}
 
 If $N\trianglelefteq G$ and $\pi:G\to G/N$ is the quotient map, then for every $i\ge1$,
-\[
+$$
 \gamma_i(G/N)=\pi(\gamma_i(G))
                  =\gamma_i(G)N/N.
-\]
+$$
 
 ::: pf-proof
 
 Again use induction on $i$.
 For $i=1$ the equality is
-\[
+$$
 G/N=\pi(G).
-\]
+$$
 If it holds for $i$, then surjectivity of $\pi$ and preservation of commutators give
-\[
+$$
 \begin{aligned}
 \gamma_{i+1}(G/N)
   &=[G/N,\gamma_i(G/N)]\\
@@ -134,7 +134,7 @@ If it holds for $i$, then surjectivity of $\pi$ and preservation of commutators 
   &=\pi([G,\gamma_i(G)])\\
   &=\pi(\gamma_{i+1}(G)).
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -147,15 +147,15 @@ Every quotient of a nilpotent group is nilpotent.
 ::: pf-proof
 
 Let $N\trianglelefteq G$, and suppose
-\[
+$$
 \gamma_{c+1}(G)=1.
-\]
+$$
 By step [](#s4){.pf-ref},
-\[
+$$
 \gamma_{c+1}(G/N)
   =\pi(\gamma_{c+1}(G))
   =1.
-\]
+$$
 Therefore $G/N$ is nilpotent.
 Together with step [](#s3){.pf-ref}, this proves the claim.
 

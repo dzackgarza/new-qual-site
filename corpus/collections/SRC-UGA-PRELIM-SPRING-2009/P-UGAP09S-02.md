@@ -16,9 +16,9 @@ audit:
 
 ::: {.problem}
 Prove directly from the $\varepsilon$-$\delta$ definition that
-\[
+$$
 f(x)=x+\frac1x
-\]
+$$
 is continuous at $x=3$.
 :::
 
@@ -29,29 +29,29 @@ is continuous at $x=3$.
 ::: {.pf-step #s1-1}
 
 If
-\[
+$$
 |x-3|<1,
-\]
+$$
 then
-\[
+$$
 \left|f(x)-f(3)\right|
 \le
 \frac76|x-3|.
-\]
+$$
 
 
 ::: pf-proof
 
 The inequality $|x-3|<1$ implies
-\[
+$$
 2<x<4,
-\]
+$$
 so in particular $|x|>2$. Since
-\[
+$$
 f(3)=3+\frac13=\frac{10}{3},
-\]
+$$
 one has
-\[
+$$
 \begin{aligned}
 \left|f(x)-f(3)\right|
 &=
@@ -68,7 +68,7 @@ one has
 =
 \frac76|x-3|.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -77,15 +77,15 @@ one has
 ::: {.pf-step #s1-2}
 
 Given $\varepsilon>0$, choose
-\[
+$$
 \boxed{\delta=\min\left\{1,\frac{6\varepsilon}{7}\right\}}.
-\]
+$$
 
 
 ::: pf-proof
 
 If $|x-3|<\delta$, then $|x-3|<1$, so step [](#s1-1){.pf-ref} applies, and
-\[
+$$
 \left|f(x)-f(3)\right|
 \le
 \frac76|x-3|
@@ -93,7 +93,7 @@ If $|x-3|<\delta$, then $|x-3|<1$, so step [](#s1-1){.pf-ref} applies, and
 \frac76\delta
 \le
 \varepsilon.
-\]
+$$
 Thus the $\varepsilon$-$\delta$ condition for continuity at $3$ is satisfied.
 
 :::

@@ -62,9 +62,9 @@ homology of spheres.
 ::: pf-step
 
 The Lefschetz number of $\tau$ is:
-\[
+$$
 \Lambda(\tau) = \sum_{k=0}^{2n} (-1)^k \operatorname{Tr}\big(\tau_* |_{H_k(S^{2n})}\big) = \operatorname{Tr}\big(\tau_* |_{H_0}\big) + (-1)^{2n} \operatorname{Tr}\big(\tau_* |_{H_{2n}}\big) = 1 + \deg(\tau).
-\]
+$$
 
 ::: pf-proof
 
@@ -78,9 +78,9 @@ Lefschetz trace formula.
 
 By the Lefschetz Fixed Point Theorem, since $\tau$ has no fixed points on $S^{2n}$, $\Lambda(\tau) = 0$.
 Therefore:
-\[
+$$
 1 + \deg(\tau) = 0 \implies \deg(\tau) = -1.
-\]
+$$
 This matches the degree of the standard antipodal map $a(x) = -x$, which has degree $(-1)^{2n+1} = -1$.
 
 ::: pf-proof
@@ -144,9 +144,9 @@ The degree map $\deg: G \to \{\pm 1\}$ is a group homomorphism.
 If $|G| \ge 3$, there exist two distinct non-identity elements $g_1 \neq g_2 \in G \setminus \{1\}$.
 Then $g_1 g_2^{-1} \neq 1$, so $\deg(g_1 g_2^{-1}) = -1$.
 However, by the homomorphism property:
-\[
+$$
 \deg(g_1 g_2^{-1}) = \deg(g_1) \deg(g_2)^{-1} = (-1)(-1) = 1,
-\]
+$$
 which is a contradiction.
 Thus $|G| \le 2$.
 

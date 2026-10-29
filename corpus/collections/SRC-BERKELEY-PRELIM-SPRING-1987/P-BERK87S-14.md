@@ -28,9 +28,9 @@ audit:
 ::: {.problem}
 1. Show that, up to isomorphism, there is exactly one noncyclic group $G$ of order $4$.
 2. Show that
-   \[
+   $$
    \operatorname{Aut}(G)\cong S_3.
-   \]
+   $$
 :::
 
 ::: {.solution}

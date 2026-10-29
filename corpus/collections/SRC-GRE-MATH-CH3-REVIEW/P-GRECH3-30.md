@@ -22,9 +22,9 @@ Let $C$ be the boundary of the triangular region, as shown below:
 ![Scanned source page preserving the figure for Question 30.](../../../assets/attachments/gre-math-ch3-review/page-6.png)
 
 Determine the value of the integral:
-\[
+$$
 \int_C(e^{2x}-y)\,dx+(2x+y\sqrt{y})\,dy
-\]
+$$
 
 (A) $2$
 (B) $4$

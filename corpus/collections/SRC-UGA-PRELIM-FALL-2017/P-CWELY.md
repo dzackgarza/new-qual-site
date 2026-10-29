@@ -23,9 +23,9 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 V=\{(x,y,z)\in\RR^3:3x+4y+5z=0\}.
-\]
+$$
 
 1. Show that $V$ is a linear subspace of $\RR^3$.
 2. Prove or disprove that some linear map $S:\RR^3\to\RR^3$ has kernel $V$.
@@ -59,11 +59,11 @@ Some linear map $S\colon\RR^3\to\RR^3$ has kernel $V$.
 ::: pf-proof
 
 Let
-\[
+$$
 S=\begin{pmatrix}3&4&5\\0&0&0\\0&0&0\end{pmatrix},
 \qquad
 S(x,y,z)^T=(3x+4y+5z,0,0)^T.
-\]
+$$
 Then $S\mathbf x=0$ exactly when $3x+4y+5z=0$, so $\ker S=V$.
 
 :::
@@ -77,9 +77,9 @@ Some linear map $T\colon\RR^3\to\RR^3$ has image $V$.
 ::: pf-proof
 
 Let $T$ be the matrix with columns $v_1$, $v_2$, $0$:
-\[
+$$
 T=\begin{pmatrix}4&5&0\\-3&0&0\\0&-3&0\end{pmatrix}.
-\]
+$$
 The image of $T$ is its column space, $\operatorname{span}\{v_1,v_2\}=V$ by step [](#s1){.pf-ref}.
 
 :::

@@ -15,13 +15,13 @@ audit:
 
 ::: {.problem}
 Show that if $X$ is connected, normal, and $T_1$, then either
-\[
+$$
 |X|\le1
-\]
+$$
 or
-\[
+$$
 |X|\ge2^{\aleph_0}.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -31,9 +31,9 @@ or
 ::: {.pf-step #s1-1}
 
 Assume $|X|>1$, and choose distinct points
-\[
+$$
 a,b\in X.
-\]
+$$
 
 
 ::: pf-proof
@@ -60,15 +60,15 @@ In a $T_1$ space every singleton is closed, and $a\ne b$ makes the two singleton
 ::: {.pf-step #s1-3}
 
 By Urysohn's lemma, there exists a continuous function
-\[
+$$
 f:X\to[0,1]
-\]
+$$
 such that
-\[
+$$
 f(a)=0,
 \qquad
 f(b)=1.
-\]
+$$
 
 
 ::: pf-proof
@@ -95,13 +95,13 @@ Continuous images of connected spaces are connected, and $X$ is connected by hyp
 ::: {.pf-step #s1-5}
 
 Since
-\[
+$$
 0,1\in f(X)\subseteq[0,1]
-\]
+$$
 and $f(X)$ is connected, one has
-\[
+$$
 f(X)=[0,1].
-\]
+$$
 
 
 ::: pf-proof
@@ -115,9 +115,9 @@ Connected subsets of $\RR$ are intervals. Any interval contained in $[0,1]$ and 
 ::: {.pf-step #s1-6}
 
 Thus $f$ is a surjection from $X$ onto $[0,1]$, so
-\[
+$$
 |X|\geq|[0,1]|.
-\]
+$$
 
 
 ::: pf-proof
@@ -131,13 +131,13 @@ Step [](#s1-5){.pf-ref} gives surjectivity. A surjection $X\to Y$ implies $|Y|\l
 ::: {.pf-step #s1-7}
 
 Since
-\[
+$$
 |[0,1]|=2^{\aleph_0},
-\]
+$$
 it follows that
-\[
+$$
 \boxed{|X|\geq2^{\aleph_0}.}
-\]
+$$
 
 
 ::: pf-proof
@@ -151,9 +151,9 @@ The interval $[0,1]$ has the cardinality of the continuum, namely $2^{\aleph_0}$
 ::: {.pf-step #s1-8}
 
 Therefore every connected normal $T_1$ space satisfies
-\[
+$$
 \boxed{|X|\leq1\quad\text{or}\quad |X|\geq2^{\aleph_0}.}
-\]
+$$
 
 
 ::: pf-proof

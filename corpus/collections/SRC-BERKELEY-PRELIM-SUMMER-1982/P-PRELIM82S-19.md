@@ -31,14 +31,14 @@ audit:
 ::: {.problem}
 Let $V$ be a finite-dimensional vector space over $\QQ$, and let $M\in\operatorname{Aut}(V)$ fix no nonzero vector.
 Suppose
-\[
+$$
 M^p=I
-\]
+$$
 for a prime $p$.
 Show that
-\[
+$$
 p-1\mid\dim_{\QQ}V.
-\]
+$$
 :::
 
 ::: {.solution}

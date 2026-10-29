@@ -72,9 +72,9 @@ Induced maps on cohomology:
 ::: pf-step
 
 The cohomology of the sphere $S^{k+\ell}$ vanishes in all intermediate dimensions:
-\[
+$$
 H^i(S^{k+\ell}) = 0 \quad \text{for all } 0 < i < k + \ell.
-\]
+$$
 Because $k > 0$ and $\ell > 0$, we have $0 < k < k + \ell$ and $0 < \ell < k + \ell$, so $H^k(S^{k+\ell}) = 0$ and $H^\ell(S^{k+\ell}) = 0$.
 
 ::: pf-proof
@@ -88,9 +88,9 @@ cellular cohomology of spheres.
 ::: pf-step
 
 Therefore the induced homomorphisms in dimensions $k$ and $\ell$ must be zero:
-\[
+$$
 f^*(\alpha) = 0 \in H^k(S^{k+\ell}), \qquad f^*(\beta) = 0 \in H^\ell(S^{k+\ell}).
-\]
+$$
 
 ::: pf-proof
 
@@ -103,9 +103,9 @@ unique homomorphism into the zero group.
 ::: pf-step
 
 Because $f^*: H^*(S^k \times S^\ell) \to H^*(S^{k+\ell})$ is a ring homomorphism respecting cup products:
-\[
+$$
 f^*(\alpha \smile \beta) = f^*(\alpha) \smile f^*(\beta) = 0 \smile 0 = 0 \in H^{k+\ell}(S^{k+\ell}).
-\]
+$$
 Thus $f^*: H^{k+\ell}(S^k \times S^\ell) \to H^{k+\ell}(S^{k+\ell})$ is the trivial (zero) homomorphism.
 
 ::: pf-proof
@@ -130,9 +130,9 @@ Dualization to homology:
 
 By the Universal Coefficient Theorem for Cohomology, for any space $X$ with free finitely generated homology, $H^n(X) \cong \operatorname{Hom}(H_n(X), \ZZ)$.
 Under this canonical duality, the induced cohomology map $f^*$ is the transpose/dual of the induced homology map $f_*$:
-\[
+$$
 f^* = (f_*)^t: \operatorname{Hom}(H_{k+\ell}(S^k \times S^\ell), \ZZ) \to \operatorname{Hom}(H_{k+\ell}(S^{k+\ell}), \ZZ).
-\]
+$$
 
 ::: pf-proof
 

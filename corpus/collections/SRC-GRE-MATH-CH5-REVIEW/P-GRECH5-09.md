@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 For what value of $x$ will the following matrix be noninvertible?
 
-\[
+$$
 \begin{pmatrix} 7 & 6 & 0 & 1 \\ 5 & 4 & x & 0 \\ 8 & 7 & 0 & 1 \\ 0 & 0 & 1 & 1 \end{pmatrix}
-\]
+$$
 
 (A) $-1$
 (B) $0$

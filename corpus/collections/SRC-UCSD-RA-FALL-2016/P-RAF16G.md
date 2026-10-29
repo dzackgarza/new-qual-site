@@ -40,20 +40,20 @@ Define the partial-sum functionals.
 ::: pf-proof
 
 For each $n\ge1$, define
-\[
+$$
 T_n:c_0\to\RR,
 \qquad
 T_n(a)=\sum_{k=1}^n a_k\xi_k.
-\]
+$$
 Then $T_n$ is a bounded linear functional and
-\[
+$$
 |T_n(a)|
 \le \|a\|_\infty\sum_{k=1}^n|\xi_k|.
-\]
+$$
 Hence
-\[
+$$
 \|T_n\|\le\sum_{k=1}^n|\xi_k|.
-\]
+$$
 
 :::
 
@@ -66,25 +66,25 @@ Compute the norm exactly.
 ::: pf-proof
 
 For fixed $n$, define $a^{(n)}\in c_0$ by
-\[
+$$
 a_k^{(n)}=
 \begin{cases}
 \operatorname{sgn}(\xi_k),&1\le k\le n,\\
 0,&k>n,
 \end{cases}
-\]
+$$
 with $\operatorname{sgn}(0)=0$. Then
-\[
+$$
 \|a^{(n)}\|_\infty\le1
-\]
+$$
 and
-\[
+$$
 T_n(a^{(n)})=\sum_{k=1}^n|\xi_k|.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{\|T_n\|=\sum_{k=1}^n|\xi_k|.}
-\]
+$$
 
 :::
 
@@ -97,27 +97,27 @@ Apply the Principle of Uniform Boundedness.
 ::: pf-proof
 
 By hypothesis, for every fixed $a\in c_0$, the scalar sequence
-\[
+$$
 T_n(a)=\sum_{k=1}^n a_k\xi_k
-\]
+$$
 converges. Hence
-\[
+$$
 \sup_n|T_n(a)|<\infty
-\]
+$$
 for every $a\in c_0$.
 
 Since $c_0$ is Banach, the Principle of Uniform Boundedness gives
-\[
+$$
 \sup_n\|T_n\|<\infty.
-\]
+$$
 Using Step 2,
-\[
+$$
 \sup_n\sum_{k=1}^n|\xi_k|<\infty.
-\]
+$$
 The partial sums are increasing, so they converge to a finite limit. Thus
-\[
+$$
 \boxed{\sum_{k=1}^\infty|\xi_k|<\infty.}
-\]
+$$
 
 :::
 

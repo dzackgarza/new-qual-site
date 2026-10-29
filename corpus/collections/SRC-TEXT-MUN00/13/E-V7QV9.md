@@ -29,7 +29,7 @@ Consider the nine topologies on the set $X = \theset{a, b, c}$ indicated in Exam
 
 ::: {.solution}
 Write the nine topologies from §12 Example 1 as
-\[
+$$
 \begin{aligned}
 \mathcal T_1&=\{\varnothing,X\},\\
 \mathcal T_2&=\{\varnothing,\{a\},\{a,b\},X\},\\
@@ -41,21 +41,21 @@ Write the nine topologies from §12 Example 1 as
 \mathcal T_8&=\{\varnothing,\{a\},\{b\},\{a,b\},X\},\\
 \mathcal T_9&=\mathcal P(X).
 \end{aligned}
-\]
+$$
 Write $\mathcal T<\mathcal T'$ when $\mathcal T\subsetneq\mathcal T'$, that is, when $\mathcal T'$ is strictly finer than $\mathcal T$. The strict inclusions are generated transitively by
-\[
+$$
 \mathcal T_1<\mathcal T_4<\mathcal T_3<\mathcal T_6<\mathcal T_9,
-\]
-\[
+$$
+$$
 \mathcal T_1<\mathcal T_4<\mathcal T_8<\mathcal T_9,
-\]
-\[
+$$
+$$
 \mathcal T_1<\mathcal T_7<\mathcal T_2<\mathcal T_8<\mathcal T_9,
-\]
+$$
 and
-\[
+$$
 \mathcal T_1<\mathcal T_5<\mathcal T_9.
-\]
+$$
 In addition, $\mathcal T_7<\mathcal T_3$ and hence $\mathcal T_7<\mathcal T_6$. These inclusions and their transitive consequences are all the comparable pairs.
 
 Every other pair is incomparable. For each such pair $(\mathcal T,\mathcal T')$, the table gives a set in $\mathcal T$ but not in $\mathcal T'$, and a set in $\mathcal T'$ but not in $\mathcal T$:

@@ -40,18 +40,18 @@ The number of distinct conjugates of $H$ is at most $[G:H]$.
 ::: pf-proof
 
 The conjugation action of $G$ on its subgroups has stabilizer
-\[
+$$
 N_G(H)=\{g\in G:gHg^{-1}=H\}
-\]
+$$
 at $H$.
 Hence the number $r$ of distinct conjugates of $H$ is
-\[
+$$
 r=[G:N_G(H)].
-\]
+$$
 Since $H\le N_G(H)$,
-\[
+$$
 r=[G:N_G(H)]\le [G:H].
-\]
+$$
 
 :::
 
@@ -66,20 +66,20 @@ The union of those conjugates has strictly fewer than $|G|$ elements.
 List the distinct conjugates as $H_1,\ldots,H_r$.
 Each has $|H|$ elements, and every one contains the identity.
 Therefore
-\[
+$$
 \left|\bigcup_{i=1}^r H_i\right|
 \le 1+r(|H|-1).
-\]
+$$
 Put $m=[G:H]$.
 Because $H$ is proper, $m>1$, and step [](#s1){.pf-ref} gives $r\le m$.
 Thus
-\[
+$$
 \left|\bigcup_{i=1}^r H_i\right|
 \le 1+m(|H|-1)
 =m|H|-(m-1)
 =|G|-(m-1)
 <|G|.
-\]
+$$
 Consequently the conjugates of $H$ cannot cover $G$.
 
 :::

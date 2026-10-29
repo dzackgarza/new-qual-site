@@ -36,11 +36,11 @@ For which $(y_{1}, y_{2}, y_{3}, y_{4})$ does the system of equations AX = Y hav
 ::: {.solution}
 The system $AX=Y$ is solvable exactly for those
 $Y=(y_1,y_2,y_3,y_4)^t$ satisfying
-\[
+$$
 2y_1+3y_2-7y_3=0,
 \qquad
 3y_1+y_2-7y_4=0.
-\]
+$$
 
 ::: pf
 
@@ -50,23 +50,23 @@ relations.
 
 ::: pf-proof
 The vectors
-\[
+$$
 u=(-2,-3,7,0)^t,
 \qquad
 v=(-3,-1,0,7)^t
-\]
+$$
 satisfy
-\[
+$$
 u^tA=0,
 \qquad
 v^tA=0.
-\]
+$$
 Hence if $Y=AX$, then
-\[
+$$
 u^tY=u^tAX=0,
 \qquad
 v^tY=v^tAX=0,
-\]
+$$
 which are exactly the stated equations.
 :::
 
@@ -77,9 +77,9 @@ The two relations are also sufficient.
 
 ::: pf-proof
 Row reduction shows $\operatorname{rank}A=2$. Therefore the left nullspace
-\[
+$$
 \ker(A^t)
-\]
+$$
 has dimension $4-2=2$. The two vectors $u,v$ in step [](#column-space-satisfies-relations){.pf-ref} are linearly independent,
 so they form a basis of this left nullspace.
 

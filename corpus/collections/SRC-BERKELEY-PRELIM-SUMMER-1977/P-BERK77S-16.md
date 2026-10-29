@@ -30,9 +30,9 @@ audit:
 
 ::: {.problem}
 Use the residue theorem to evaluate
-\[
+$$
 I(a)=\int_0^{2\pi}\frac{d\theta}{a+\cos\theta},
-\]
+$$
 where $a$ is real and $a>1$.
 
 Why is the resulting formula for $I(a)$ also valid for certain nonreal complex values of $a$?

@@ -18,10 +18,10 @@ audit:
 
 ::: {.problem}
 For nonzero integers $a,b,c$, show that
-\[
+$$
 \gcd(a,\operatorname{lcm}(b,c))
 =\operatorname{lcm}(\gcd(a,b),\gcd(a,c)).
-\]
+$$
 :::
 
 ::: {.solution}

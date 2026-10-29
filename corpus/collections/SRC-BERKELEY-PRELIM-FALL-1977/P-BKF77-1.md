@@ -24,9 +24,9 @@ audit:
 ---
 ::: {.problem}
 Let
-\[
+$$
 A=\begin{pmatrix}7&15\\-2&-4\end{pmatrix}.
-\]
+$$
 Find a real matrix $B$ such that $B^{-1}AB$ is diagonal.
 :::
 

@@ -45,10 +45,10 @@ The product of two primitive polynomials in $R[x]$ is primitive.
 ::: pf-proof
 Let $f,g\in R[x]$ be primitive. Suppose a prime element $p\in R$ divided every
 coefficient of $fg$. Reducing modulo $(p)$ gives
-\[
+$$
 \overline f\,\overline g=0
 \qquad\text{in }(R/(p))[x].
-\]
+$$
 In a UFD every prime element is prime, so $R/(p)$ is an integral domain.
 Because $f$ and $g$ are primitive, neither has all coefficients divisible by
 $p$, hence $\overline f\ne0$ and $\overline g\ne0$. Their product cannot be
@@ -66,20 +66,20 @@ if it is reducible in $K[x]$.
 A factorization of the primitive polynomial $f$ into two nonunits of $R[x]$
 has no constant nonunit factor, so both factors have positive degree and
 give a factorization in $K[x]$. For the reverse implication, suppose
-\[
+$$
 f=gh
-\]
+$$
 in $K[x]$ with $\deg g,\deg h>0$. Clearing denominators and dividing out the
 contents, write
-\[
+$$
 g=a g_0,
 \qquad
 h=b h_0,
-\]
+$$
 where $a,b\in K^\times$ and $g_0,h_0\in R[x]$ are primitive. Then
-\[
+$$
 f=(ab)g_0h_0.
-\]
+$$
 By step [](#primitive-product-primitive){.pf-ref}, $g_0h_0$ is primitive.
 
 We claim that if two primitive polynomials $u,v\in R[x]$ satisfy
@@ -92,9 +92,9 @@ $v=\lambda^{-1}u$ shows that $r$ is a unit. Thus $\lambda\in R^\times$.
 
 Applying this claim to $f=(ab)g_0h_0$ shows $ab\in R^\times$. Hence, after
 multiplying one factor by this unit,
-\[
+$$
 f=g_0\,(ab\,h_0)
-\]
+$$
 is a nontrivial factorization in $R[x]$.
 :::
 
@@ -105,22 +105,22 @@ Every nonzero nonunit of $R[x]$ factors into irreducibles.
 
 ::: pf-proof
 Let $0\ne f\in R[x]$. Write
-\[
+$$
 f=c(f)f_0
-\]
+$$
 with $f_0$ primitive. Factor the constant $c(f)$ into irreducibles of the UFD
 $R$.
 
 Since $K[x]$ is a PID, hence a UFD, factor
-\[
+$$
 f_0=q_1\cdots q_m
-\]
+$$
 into irreducibles in $K[x]$. For each $q_i$, clear denominators and divide by
 the content to obtain a primitive polynomial $p_i\in R[x]$ differing from
 $q_i$ by a scalar in $K^\times$. Thus
-\[
+$$
 f_0=\lambda p_1\cdots p_m
-\]
+$$
 for some $\lambda\in K^\times$. Both sides apart from the scalar are primitive
 by step [](#primitive-product-primitive){.pf-ref}, so the scalar claim from step [](#primitive-reducible-iff){.pf-ref} gives $\lambda\in R^\times$.
 

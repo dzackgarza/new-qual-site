@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 For arbitrary $a,b,c$ in a field $F$, compute the minimal polynomial of
-\[
+$$
 \begin{pmatrix}
 0&0&a\\
 1&0&b\\
 0&1&c
 \end{pmatrix}.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -30,11 +30,11 @@ If either statement is false, give a counterexample.
 
 ::: {.solution}
 Write
-\[
+$$
 P:\ f\text{ has a local minimum at }a,
 \qquad
 Q:\ f'(a)=0\text{ or }f\text{ is not differentiable at }a.
-\]
+$$
 The contrapositive is $\neg Q\Rightarrow\neg P$, namely:
 
 > If $f$ is differentiable at $a$ and $f'(a)\ne0$, then $f$ does not have a local minimum at $a$.

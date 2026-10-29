@@ -23,22 +23,22 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int e^x\cos x\,dx
 \qquad\text{and}\qquad
 \int\sin(\ln x)\,dx,
 \quad x>0.
-\]
+$$
 :::
 
 ::: {.solution}
 Integrating the first integral by parts twice yields
-\[
+$$
 \boxed{\int e^x\cos x\,dx=\frac12e^x(\cos x+\sin x)+C.}
-\]
+$$
 For the second, let $u=\ln x$, so $dx=e^u du$. Then
-\[
+$$
 \int\sin(\ln x)\,dx=\int e^u\sin u\,du
 =\boxed{\frac x2\left(\sin(\ln x)-\cos(\ln x)\right)+C.}
-\]
+$$
 :::

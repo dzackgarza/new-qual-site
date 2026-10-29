@@ -12,9 +12,9 @@ audit:
 
 ::: {.problem}
 1. Prove the following special case of van Kampen's theorem: if
-   \[
+   $$
    X=U\cup V,
-   \]
+   $$
    where $U,V$ are open and simply connected and $U\cap V$ is nonempty and path-connected, then $X$ is simply connected.
 2. State precisely the full Seifert--van Kampen theorem.
 :::
@@ -22,9 +22,9 @@ audit:
 ::: {.solution}
 
 Choose a basepoint
-\[
+$$
 x_0\in U\cap V.
-\]
+$$
 
 ::: pf
 
@@ -37,13 +37,13 @@ The space $X$ is path-connected.
 
 Because $U$ and $V$ are simply connected, they are path-connected.
 Since
-\[
+$$
 U\cap V\ne\varnothing,
-\]
+$$
 the union
-\[
+$$
 X=U\cup V
-\]
+$$
 is path-connected.
 
 :::
@@ -53,37 +53,37 @@ is path-connected.
 ::: {.pf-step #s1-2}
 
 Let
-\[
+$$
 \gamma:[0,1]\to X
-\]
+$$
 be a loop based at $x_0$.
 There is a subdivision
-\[
+$$
 0=t_0<t_1<\cdots<t_m=1
-\]
+$$
 such that each subpath
-\[
+$$
 \gamma_i
 \coloneqq
 \gamma|_{[t_{i-1},t_i]}
-\]
+$$
 lies entirely in $U$ or entirely in $V$.
 
 
 ::: pf-proof
 
 The sets
-\[
+$$
 \gamma^{-1}(U),
 \qquad
 \gamma^{-1}(V)
-\]
+$$
 form an open cover of the compact interval $[0,1]$.
 By the Lebesgue number lemma, there is a subdivision fine enough that each
 closed subinterval
-\[
+$$
 [t_{i-1},t_i]
-\]
+$$
 maps into one member of the cover.
 
 :::
@@ -96,13 +96,13 @@ The subdivision in step [](#s1-2){.pf-ref} may be chosen so that consecutive
 subpaths alternate between $U$ and $V$, except where one of them can simply
 be merged with the next.
 For every genuine transition point
-\[
+$$
 p_i=\gamma(t_i),
-\]
+$$
 one has
-\[
+$$
 p_i\in U\cap V.
-\]
+$$
 
 
 ::: pf-proof
@@ -119,23 +119,23 @@ $V$, their common endpoint belongs to both sets.
 ::: {.pf-step #s1-4}
 
 For every transition point $p_i$, choose a path
-\[
+$$
 \eta_i
-\]
+$$
 in $U\cap V$ from $x_0$ to $p_i$.
 Take
-\[
+$$
 \eta_0=\eta_m
-\]
+$$
 to be the constant path at $x_0$.
 
 
 ::: pf-proof
 
 The intersection
-\[
+$$
 U\cap V
-\]
+$$
 is path-connected by hypothesis.
 
 :::
@@ -145,7 +145,7 @@ is path-connected by hypothesis.
 ::: {.pf-step #s1-5}
 
 For each $i$, the concatenation
-\[
+$$
 \lambda_i
 \coloneqq
 \eta_{i-1}
@@ -153,27 +153,27 @@ For each $i$, the concatenation
 \gamma_i
 *
 \eta_i^{-1}
-\]
+$$
 is a loop at $x_0$ contained entirely in either $U$ or $V$.
 
 
 ::: pf-proof
 
 The path
-\[
+$$
 \gamma_i
-\]
+$$
 lies in one of $U,V$ by step [](#s1-2){.pf-ref}.
 Both
-\[
+$$
 \eta_{i-1}
 \quad\text{and}\quad
 \eta_i
-\]
+$$
 lie in
-\[
+$$
 U\cap V,
-\]
+$$
 hence in whichever of $U,V$ contains $\gamma_i$.
 Thus the whole loop lies in that set.
 
@@ -184,23 +184,23 @@ Thus the whole loop lies in that set.
 ::: {.pf-step #s1-6}
 
 Every loop
-\[
+$$
 \lambda_i
-\]
+$$
 is null-homotopic in $X$.
 
 
 ::: pf-proof
 
 If
-\[
+$$
 \lambda_i\subseteq U,
-\]
+$$
 then it is null-homotopic because $U$ is simply connected.
 If
-\[
+$$
 \lambda_i\subseteq V,
-\]
+$$
 the same conclusion follows from simple connectedness of $V$.
 In either case the null-homotopy is also a null-homotopy in $X$.
 
@@ -211,23 +211,23 @@ In either case the null-homotopy is also a null-homotopy in $X$.
 ::: {.pf-step #s1-7}
 
 In
-\[
+$$
 \pi_1(X,x_0),
-\]
+$$
 one has
-\[
+$$
 [\gamma]
 =
 [\lambda_1]
 \cdots
 [\lambda_m].
-\]
+$$
 
 
 ::: pf-proof
 
 Expanding the product gives
-\[
+$$
 \eta_0*\gamma_1*\eta_1^{-1}
 *
 \eta_1*\gamma_2*\eta_2^{-1}
@@ -235,22 +235,22 @@ Expanding the product gives
 \cdots
 *
 \eta_{m-1}*\gamma_m*\eta_m^{-1}.
-\]
+$$
 Each adjacent pair
-\[
+$$
 \eta_i^{-1}*\eta_i
-\]
+$$
 is homotopic rel endpoints to a constant path.
 Since
-\[
+$$
 \eta_0
 \quad\text{and}\quad
 \eta_m
-\]
+$$
 are constant at $x_0$, the product reduces to
-\[
+$$
 \gamma_1*\cdots*\gamma_m,
-\]
+$$
 which is exactly $\gamma$ up to reparametrization.
 
 :::
@@ -260,22 +260,22 @@ which is exactly $\gamma$ up to reparametrization.
 ::: {.pf-step #s1-8}
 
 Therefore
-\[
+$$
 \pi_1(X,x_0)=0.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-6){.pf-ref},
-\[
+$$
 [\lambda_i]=1
-\]
+$$
 for every $i$.
 Step [](#s1-7){.pf-ref} gives
-\[
+$$
 [\gamma]=1.
-\]
+$$
 Since $\gamma$ was arbitrary, every based loop is null-homotopic.
 Together with path-connectedness from step [](#s1-1){.pf-ref}, this says $X$ is simply
 connected.
@@ -289,20 +289,20 @@ connected.
 **Seifert--van Kampen Theorem.**
 
 Let
-\[
+$$
 X=U\cup V,
-\]
+$$
 where $U,V$ are open and path-connected, and suppose
-\[
+$$
 U\cap V
-\]
+$$
 is nonempty and path-connected.
 Choose
-\[
+$$
 x_0\in U\cap V.
-\]
+$$
 Then the diagram
-\[
+$$
 \pi_1(U\cap V,x_0)
 \xrightarrow{i_{U*}}
 \pi_1(U,x_0),
@@ -310,13 +310,13 @@ Then the diagram
 \pi_1(U\cap V,x_0)
 \xrightarrow{i_{V*}}
 \pi_1(V,x_0)
-\]
+$$
 is a pushout diagram after mapping to
-\[
+$$
 \pi_1(X,x_0).
-\]
+$$
 Equivalently,
-\[
+$$
 \boxed{
 \pi_1(X,x_0)
 \cong
@@ -324,13 +324,13 @@ Equivalently,
 *_{\pi_1(U\cap V,x_0)}
 \pi_1(V,x_0).
 }
-\]
+$$
 
 
 ::: pf-proof
 
 In concrete group-presentation form,
-\[
+$$
 \pi_1(X,x_0)
 \cong
 \frac{
@@ -338,30 +338,30 @@ In concrete group-presentation form,
 }{
 N
 },
-\]
+$$
 where $N$ is the normal subgroup generated by
-\[
+$$
 i_{U*}(\omega)i_{V*}(\omega)^{-1}
-\]
+$$
 for all
-\[
+$$
 \omega\in\pi_1(U\cap V,x_0).
-\]
+$$
 
 The universal property says that whenever a group $G$ receives homomorphisms
-\[
+$$
 \varphi_U:\pi_1(U,x_0)\to G,
 \qquad
 \varphi_V:\pi_1(V,x_0)\to G
-\]
+$$
 whose restrictions to
-\[
+$$
 \pi_1(U\cap V,x_0)
-\]
+$$
 agree, there is a unique homomorphism
-\[
+$$
 \Phi:\pi_1(X,x_0)\to G
-\]
+$$
 extending both.
 
 :::

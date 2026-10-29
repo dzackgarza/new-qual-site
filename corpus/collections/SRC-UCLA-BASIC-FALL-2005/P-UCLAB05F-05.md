@@ -22,9 +22,9 @@ Prove carefully that $\RR^2$ is not a countable union of sets $S_i$, $i=1,2,\ldo
 ::: {.solution}
 
 Let
-\[
+$$
 C=\{(t,t^2):t\in\RR\}
-\]
+$$
 be the standard parabola.
 
 ::: pf
@@ -37,26 +37,26 @@ Every straight line in $\RR^2$ meets $C$ in at most two points.
 ::: pf-proof
 
 If the line is vertical, it has equation
-\[
+$$
 x=c
-\]
+$$
 and therefore meets $C$ only at
-\[
+$$
 (c,c^2).
-\]
+$$
 
 If the line is not vertical, it has equation
-\[
+$$
 y=mx+b.
-\]
+$$
 A point $(t,t^2)$ lies on this line exactly when
-\[
+$$
 t^2=mt+b,
-\]
+$$
 or
-\[
+$$
 t^2-mt-b=0.
-\]
+$$
 This quadratic equation has at most two real roots. Hence the line meets $C$ in at most two points.
 
 :::
@@ -66,15 +66,15 @@ This quadratic equation has at most two real roots. Hence the line meets $C$ in 
 ::: {.pf-step #s1-2}
 
 If
-\[
+$$
 \RR^2=\bigcup_{i=1}^{\infty}S_i
 \qquad\text{with}\qquad
 S_i\subseteq L_i,
-\]
+$$
 then
-\[
+$$
 C=\bigcup_{i=1}^{\infty}(C\cap S_i).
-\]
+$$
 
 
 ::: pf-proof
@@ -93,9 +93,9 @@ Each set $C\cap S_i$ is finite.
 ::: pf-proof
 
 Since
-\[
+$$
 C\cap S_i\subseteq C\cap L_i,
-\]
+$$
 step [](#s1-1){.pf-ref} shows that $C\cap S_i$ has at most two elements.
 
 :::
@@ -123,11 +123,11 @@ The parabola $C$ is uncountable.
 ::: pf-proof
 
 The map
-\[
+$$
 \RR\to C,
 \qquad
 t\mapsto(t,t^2),
-\]
+$$
 is a bijection. Since $\RR$ is uncountable, so is $C$.
 
 :::

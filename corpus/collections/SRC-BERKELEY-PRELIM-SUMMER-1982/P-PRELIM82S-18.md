@@ -29,15 +29,15 @@ audit:
 
 ::: {.problem}
 Let $E$ be the set of continuous functions $u:[0,1]\to\RR$ such that
-\[
+$$
 |u(x)-u(y)|\le |x-y|
 \qquad(0\le x,y\le1),
-\]
+$$
 and $u(0)=0$.
 Define
-\[
+$$
 \varphi(u)=\int_0^1\bigl(u(x)^2-u(x)\bigr)\,dx.
-\]
+$$
 Show that $\varphi$ attains its maximum value at some $u\in E$.
 :::
 

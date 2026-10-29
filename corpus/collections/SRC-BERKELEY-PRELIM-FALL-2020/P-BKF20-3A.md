@@ -35,9 +35,9 @@ audit:
 
 ::: {.problem}
 Let $X$ be a metric space and let $T_1\supseteq T_2\supseteq\cdots$ be nonempty closed subsets of $X$. If $T_1$ is compact, show that
-\[
+$$
 \bigcap_{n=1}^{\infty}T_n\ne\varnothing.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -28,13 +28,13 @@ audit:
 
 ::: {.problem}
 Determine the Jordan canonical form of
-\[
+$$
 A=\begin{pmatrix}
 1&2&3\\
 0&4&5\\
 0&0&4
 \end{pmatrix}.
-\]
+$$
 :::
 
 ::: {.solution}

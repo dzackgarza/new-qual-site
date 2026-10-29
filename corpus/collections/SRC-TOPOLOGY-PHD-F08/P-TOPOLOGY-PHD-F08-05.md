@@ -44,18 +44,18 @@ A closed subset of a compact topological space is compact.
 ::: pf-proof
 Let $X$ be compact and let $F\subseteq X$ be closed.
 Suppose
-\[
+$$
 F\subseteq\bigcup_{i\in I}U_i,
-\]
+$$
 where every $U_i$ is open in the subspace $F$.
 For each $i$, choose an open set $V_i\subseteq X$ such that
-\[
+$$
 U_i=F\cap V_i.
-\]
+$$
 Then
-\[
+$$
 \{V_i:i\in I\}\cup\{X\setminus F\}
-\]
+$$
 is an open cover of $X$.
 By compactness of $X$, finitely many members cover $X$.
 Discarding $X\setminus F$ if it occurs, the corresponding finitely many $V_i$ still cover $F$.
@@ -71,15 +71,15 @@ Thus every open cover of $F$ has a finite subcover, so $F$ is compact.
 
 ::: pf-step
 Let $X$ be Hausdorff, let $K\subseteq X$ be compact, and let
-\[
+$$
 x\in X\setminus K.
-\]
+$$
 For each $y\in K$, choose disjoint open sets $U_y,V_y\subseteq X$ with
-\[
+$$
 y\in U_y,
 \qquad
 x\in V_y.
-\]
+$$
 
 ::: pf-proof
 For every $y\in K$, we have $x\ne y$.
@@ -94,32 +94,32 @@ The point $x$ has an open neighborhood disjoint from $K$.
 
 ::: pf-proof
 The family
-\[
+$$
 \{U_y:y\in K\}
-\]
+$$
 is an open cover of $K$.
 Compactness gives points
-\[
+$$
 y_1,\ldots,y_n\in K
-\]
+$$
 such that
-\[
+$$
 K\subseteq U_{y_1}\cup\cdots\cup U_{y_n}.
-\]
+$$
 Set
-\[
+$$
 V=V_{y_1}\cap\cdots\cap V_{y_n}.
-\]
+$$
 Then $V$ is an open neighborhood of $x$.
 If $z\in V\cap K$, then some $i$ satisfies $z\in U_{y_i}$, while $z\in V$ implies $z\in V_{y_i}$.
 This contradicts
-\[
+$$
 U_{y_i}\cap V_{y_i}=\varnothing.
-\]
+$$
 Hence
-\[
+$$
 V\cap K=\varnothing.
-\]
+$$
 :::
 
 :::

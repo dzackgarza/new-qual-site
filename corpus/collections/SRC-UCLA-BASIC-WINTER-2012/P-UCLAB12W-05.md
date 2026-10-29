@@ -15,10 +15,10 @@ audit:
 
 ::: {.problem}
 Prove that there is a unique continuous function $y:[0,1]\to\RR$ satisfying
-\[
+$$
 y(x)=e^x+\frac{y(x^2)}2,
 \qquad x\in[0,1].
-\]
+$$
 :::
 
 ::: {.solution}

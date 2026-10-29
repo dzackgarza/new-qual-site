@@ -28,9 +28,9 @@ audit:
 Let $E\subset\RR$ be measurable.
 
 (a) If $|E|<\infty$, prove that
-\[
+$$
 F(x)=\int_{\RR}\chi_E(y)\chi_E(y-x)\,dy
-\]
+$$
 is continuous.
 
 (b) If $|E|>0$, possibly infinite, prove that $E-E$ contains an interval $(-\varepsilon,\varepsilon)$ for some $\varepsilon>0$.

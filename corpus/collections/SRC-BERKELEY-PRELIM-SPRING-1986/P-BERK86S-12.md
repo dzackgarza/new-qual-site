@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Let $f:\RR\to\RR$ be continuous and suppose
-\[
+$$
 f(x)\le\frac1{2h}\int_{x-h}^{x+h}f(y)\,dy
-\]
+$$
 for every $x\in\RR$ and $h>0$.
 
 1. Prove that the maximum of $f$ on any closed interval is attained at one of the endpoints.

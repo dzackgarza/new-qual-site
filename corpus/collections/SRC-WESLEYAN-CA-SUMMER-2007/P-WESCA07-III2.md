@@ -17,16 +17,16 @@ audit:
 
 ::: {.problem}
 Let $f$ be analytic on the unit disk $D$, with
-\[
+$$
 f(0)=f'(0)=0,
 \qquad
 |f'(z)|<1\quad(z\in D).
-\]
+$$
 Show that
-\[
+$$
 |f(z)|\le\frac{|z|^2}{2}
 \qquad(z\in D).
-\]
+$$
 
 Hint: represent $f(z)$ as a path integral along a convenient path.
 :::

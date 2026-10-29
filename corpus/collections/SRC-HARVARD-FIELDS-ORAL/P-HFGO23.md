@@ -28,9 +28,9 @@ Justify your answer.
 
 ::: {.solution}
 No. If $F$ is infinite and $\overline F$ is an algebraic closure, then
-\[
+$$
 |\overline F|=|F|.
-\]
+$$
 
 ::: pf
 
@@ -43,9 +43,9 @@ The polynomial ring $F[x]$ has cardinality $|F|$.
 For each fixed degree $n$, the set of polynomials of degree at most $n$ is in
 bijection with a subset of $F^{n+1}$, which has cardinality $|F|$ because $F$
 is infinite. Since
-\[
+$$
 F[x]=\bigcup_{n\ge0}\{f:\deg f\le n\}
-\]
+$$
 is a countable union of sets of cardinality $|F|$, it also has cardinality
 $|F|$.
 
@@ -63,9 +63,9 @@ Every algebraic element is a root of some nonzero polynomial in $F[x]$.
 Each polynomial has finitely many roots in a field extension, and by step [](#s1){.pf-ref} there
 are only $|F|$ polynomials. Hence the union of all root sets has cardinality at
 most
-\[
+$$
 |F|\cdot\aleph_0=|F|.
-\]
+$$
 
 :::
 
@@ -78,13 +78,13 @@ Therefore $|\overline F|=|F|$.
 ::: pf-proof
 
 By step [](#s2){.pf-ref},
-\[
+$$
 |\overline F|\le|F|.
-\]
+$$
 Since $F\subseteq\overline F$,
-\[
+$$
 |F|\le|\overline F|.
-\]
+$$
 The two inequalities give equality.
 
 :::

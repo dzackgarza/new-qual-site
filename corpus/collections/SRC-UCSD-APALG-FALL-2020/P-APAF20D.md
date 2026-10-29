@@ -19,7 +19,7 @@ audit:
 
 ::: {.problem}
 Here is the character table for a group $G$ of size $168$ with $1$ of its rows missing (rows are characters, the columns are conjugacy classes):
-\[
+$$
 \begin{array}{c|cccccc}
  & \gamma_1 & \gamma_2 & \gamma_3 & \gamma_4 & \gamma_5 & \gamma_6 \\
 \hline
@@ -30,7 +30,7 @@ Here is the character table for a group $G$ of size $168$ with $1$ of its rows m
 \chi_5 & 8 & -1 & 1 & 1 & 0 & 0 \\
 \chi_6 & ? & ? & -1 & ? & ? & 0
 \end{array}
-\]
+$$
 The sizes of the conjugacy classes are $|\gamma_1|=1$, $|\gamma_2|=56$, $|\gamma_3|=|\gamma_4|=24$, $|\gamma_5|=21$, $|\gamma_6|=42$.
 
 (a) Fill in the correct values for $\chi_6$.
@@ -137,22 +137,22 @@ The value is $3$.
 ::: pf-proof
 Compute the product characters: $\chi_2\chi_5 = (24, 0, \frac{-1-\sqrt{-7}}{2}, \frac{-1+\sqrt{-7}}{2}, 0, 0)$ and $\chi_3\chi_5 = (24, 0, \frac{-1+\sqrt{-7}}{2}, \frac{-1-\sqrt{-7}}{2}, 0, 0)$.
 Only the classes $\gamma_1, \gamma_3, \gamma_4$ contribute (the others have a zero factor), so
-\[
+$$
 \langle \chi_2\chi_5, \chi_3\chi_5\rangle
 = \frac{1}{168}\left[1\cdot 24\cdot 24 + 24\cdot \frac{-1-\sqrt{-7}}{2}\cdot \frac{-1-\sqrt{-7}}{2} + 24\cdot \frac{-1+\sqrt{-7}}{2}\cdot \frac{-1+\sqrt{-7}}{2}\right].
-\]
+$$
 Here $\overline{\frac{-1+\sqrt{-7}}{2}} = \frac{-1-\sqrt{-7}}{2}$, and
-\[
+$$
 \left(\frac{-1-\sqrt{-7}}{2}\right)^2 = \frac{-3+\sqrt{-7}}{2}, \qquad
 \left(\frac{-1+\sqrt{-7}}{2}\right)^2 = \frac{-3-\sqrt{-7}}{2}.
-\]
+$$
 Therefore
-\[
+$$
 \langle \chi_2\chi_5, \chi_3\chi_5\rangle
 = \frac{1}{168}\left[576 + 24\cdot\frac{-3+\sqrt{-7}}{2} + 24\cdot\frac{-3-\sqrt{-7}}{2}\right]
 = \frac{1}{168}\left[576 - 36 - 36\right]
 = \frac{504}{168} = 3.
-\]
+$$
 :::
 
 :::

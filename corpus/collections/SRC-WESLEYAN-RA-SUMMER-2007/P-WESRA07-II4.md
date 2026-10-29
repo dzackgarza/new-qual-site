@@ -24,54 +24,54 @@ audit:
 ::: {.problem}
 Let $\mu$ be a finite Borel measure on $\RR$.
 Suppose there is $t>0$ such that
-\[
+$$
 \mu(A+t)=\mu(A)
-\]
+$$
 for every Borel set $A\subset\RR$.
 Prove that $\mu$ is the zero measure.
 :::
 
 ::: {.solution}
 Let
-\[
+$$
 I=[0,t).
-\]
+$$
 For distinct integers $k$, the translates
-\[
+$$
 I+kt=[kt,(k+1)t)
-\]
+$$
 are pairwise disjoint.
 By the assumed translation invariance,
-\[
+$$
 \mu(I+kt)=\mu(I)
-\]
+$$
 for every $k\in\ZZ$.
 
 If $\mu(I)>0$, then for every $N\ge1$,
-\[
+$$
 \mu(\RR)
 \ge
 \mu\!\left(\bigcup_{k=0}^{N-1}(I+kt)\right)
 =N\mu(I),
-\]
+$$
 which contradicts finiteness of $\mu(\RR)$ as $N\to\infty$.
 Hence
-\[
+$$
 \mu(I)=0.
-\]
+$$
 
 Now
-\[
+$$
 \RR=\bigcup_{k\in\ZZ}(I+kt),
-\]
+$$
 so countable subadditivity gives
-\[
+$$
 \mu(\RR)
 \le\sum_{k\in\ZZ}\mu(I+kt)=0.
-\]
+$$
 Thus $\mu(\RR)=0$, and consequently every Borel set has measure zero.
 Therefore
-\[
+$$
 \boxed{\mu=0}.
-\]
+$$
 :::

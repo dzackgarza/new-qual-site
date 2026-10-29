@@ -20,11 +20,11 @@ audit:
 
 ::: {.problem}
 Let $f$ be analytic on an open set containing the closed unit disk. Suppose
-\[
+$$
 |f(z)|>m\quad\text{for }|z|=1,
 \qquad
 |f(0)|<m.
-\]
+$$
 Prove that $f$ has at least one zero in the open unit disk.
 :::
 

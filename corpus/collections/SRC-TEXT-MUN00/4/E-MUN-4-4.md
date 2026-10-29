@@ -31,15 +31,15 @@ audit:
 :::
 
 ::: {.solution}
-(a) Let \(P(n)\) be the assertion that every nonempty subset of \(\{1,\dots,n\}\) has a largest element.
+(a) Let $P(n)$ be the assertion that every nonempty subset of $\{1,\dots,n\}$ has a largest element.
 
-For \(n=1\), the only nonempty subset is \(\{1\}\), whose largest element is \(1\).
+For $n=1$, the only nonempty subset is $\{1\}$, whose largest element is $1$.
 
-Assume \(P(n)\), and let \(A\subset\{1,\dots,n+1\}\) be nonempty. If \(n+1\in A\), then \(n+1\) is the largest element of \(A\). If \(n+1\notin A\), then
-\[
+Assume $P(n)$, and let $A\subset\{1,\dots,n+1\}$ be nonempty. If $n+1\in A$, then $n+1$ is the largest element of $A$. If $n+1\notin A$, then
+$$
 A\subset\{1,\dots,n\},
-\]
-so \(A\) has a largest element by the inductive hypothesis. Thus \(P(n+1)\) holds. By induction, \(P(n)\) holds for every \(n\in\ZZ_+\).
+$$
+so $A$ has a largest element by the inductive hypothesis. Thus $P(n+1)$ holds. By induction, $P(n)$ holds for every $n\in\ZZ_+$.
 
-(b) Part (a) concerns subsets contained in one fixed finite initial segment \(\{1,\dots,n\}\). A general nonempty subset of \(\ZZ_+\) need not be bounded above and hence need not lie in any such segment. For example, \(\ZZ_+\) itself has no largest element, since \(m+1\in\ZZ_+\) and \(m+1>m\) for every \(m\in\ZZ_+\).
+(b) Part (a) concerns subsets contained in one fixed finite initial segment $\{1,\dots,n\}$. A general nonempty subset of $\ZZ_+$ need not be bounded above and hence need not lie in any such segment. For example, $\ZZ_+$ itself has no largest element, since $m+1\in\ZZ_+$ and $m+1>m$ for every $m\in\ZZ_+$.
 :::

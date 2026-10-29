@@ -48,10 +48,10 @@ For $v\in X^\perp$, the functional $(v,-)$ vanishes on $X$ and therefore vanishe
 ::: {.pf-step #s2}
 
 The rule
-\[
+$$
 \boxed{\psi:Y^\perp/X^\perp\longrightarrow (X/Y)^*,\qquad
 \psi(v+X^\perp)(x+Y)=(v,x)}
-\]
+$$
 defines an injective $F$-linear map.
 
 ::: pf-proof
@@ -69,10 +69,10 @@ If $\dim_FV<\infty$, then $\psi$ is an isomorphism.
 ::: pf-proof
 
 In finite dimension, nondegeneracy makes the linear map $V\to V^*$, $v\mapsto(v,-)$, an isomorphism. For any subspace $W$, the annihilator of $W$ in $V^*$ has dimension $\dim V-\dim W$, hence $\dim W^\perp=\dim V-\dim W$. It follows that
-\[
+$$
 \dim(Y^\perp/X^\perp)=\dim X-\dim Y
 =\dim(X/Y)^*.
-\]
+$$
 The injective linear map from step [](#s2){.pf-ref} between these finite-dimensional spaces of equal dimension is surjective as well.
 
 :::

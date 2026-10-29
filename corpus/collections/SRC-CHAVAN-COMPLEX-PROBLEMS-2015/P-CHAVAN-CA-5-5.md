@@ -14,13 +14,13 @@ audit:
 
 ::: {.problem}
 Let $D\subseteq\CC$ be a domain and let $B\subseteq D$ be open and bounded with
-\[
+$$
 \overline B\subseteq D.
-\]
+$$
 If $f$ is holomorphic on $D$, prove that
-\[
+$$
 \partial(f(B))\subseteq f(\partial B).
-\]
+$$
 Show also that the conclusion can fail when $B$ is unbounded.
 :::
 

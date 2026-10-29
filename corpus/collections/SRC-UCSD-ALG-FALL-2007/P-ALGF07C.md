@@ -41,19 +41,19 @@ There is a non-surjective example.
 
 ::: pf-proof
 Take
-\[
+$$
 F=\CC(x),
-\]
+$$
 the rational-function field, and let
-\[
+$$
 \phi:\CC[x]\hookrightarrow\CC(x)
-\]
+$$
 be the natural inclusion.
 Then $\phi(1)=1\neq0$.
 The map is not surjective, since
-\[
+$$
 \frac1x\in\CC(x)
-\]
+$$
 is not a polynomial and hence does not lie in the image.
 :::
 
@@ -64,19 +64,19 @@ For any such homomorphism, $\phi(1)=1_F$ and the restriction of $\phi$ to $\CC$ 
 
 ::: pf-proof
 Since
-\[
+$$
 \phi(1)^2=\phi(1),
-\]
+$$
 the element $\phi(1)$ is an idempotent in the field $F$.
 The only idempotents in a field are $0$ and $1$, and the hypothesis excludes $0$.
 Thus
-\[
+$$
 \phi(1)=1_F.
-\]
+$$
 Consequently the restriction
-\[
+$$
 \phi|_{\CC}:\CC\longrightarrow F
-\]
+$$
 is a nonzero ring homomorphism from a field.
 Its kernel is therefore the zero ideal, so it is injective.
 :::
@@ -88,20 +88,20 @@ If $\phi$ is surjective, then $F\cong\CC$.
 
 ::: pf-proof
 If $\phi$ is onto, the first isomorphism theorem gives
-\[
+$$
 F\cong \CC[x]/\ker\phi.
-\]
+$$
 Since $F$ is a field, $\ker\phi$ is a maximal ideal of $\CC[x]$.
 Every ideal of the PID $\CC[x]$ is principal, and every irreducible polynomial over the algebraically closed field $\CC$ is linear.
 Hence every maximal ideal has the form
-\[
+$$
 (x-a)
 \qquad(a\in\CC).
-\]
+$$
 Therefore, for some $a\in\CC$,
-\[
+$$
 F\cong\CC[x]/(x-a)\cong\CC,
-\]
+$$
 where the last isomorphism is evaluation at $a$.
 :::
 

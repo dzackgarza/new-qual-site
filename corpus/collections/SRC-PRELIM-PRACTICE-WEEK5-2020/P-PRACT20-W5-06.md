@@ -27,26 +27,26 @@ Up to isomorphism, how many abelian groups $G$ have order $16$ and satisfy $x + 
 ::: {.pf-step #s1-1}
 
 Up to isomorphism, the abelian groups of order $16=2^4$ are
-\[
+$$
 \ZZ_{16},\qquad
 \ZZ_8\times\ZZ_2,\qquad
 \ZZ_4\times\ZZ_4,\qquad
 \ZZ_4\times\ZZ_2\times\ZZ_2,\qquad
 \ZZ_2^4.
-\]
+$$
 
 
 ::: pf-proof
 
 By the fundamental theorem of finite abelian groups, abelian groups of order
 $2^4$ correspond to partitions of $4$:
-\[
+$$
 4,\qquad
 3+1,\qquad
 2+2,\qquad
 2+1+1,\qquad
 1+1+1+1.
-\]
+$$
 These give exactly the five displayed groups.
 
 :::
@@ -56,10 +56,10 @@ These give exactly the five displayed groups.
 ::: {.pf-step #s1-2}
 
 The condition
-\[
+$$
 4x=0
 \qquad(x\in G)
-\]
+$$
 holds exactly when the exponent of $G$ divides $4$.
 
 
@@ -77,11 +77,11 @@ $4$.
 ::: {.pf-step #s1-3}
 
 Of the five groups in step [](#s1-1){.pf-ref}, exactly
-\[
+$$
 \ZZ_4\times\ZZ_4,\qquad
 \ZZ_4\times\ZZ_2\times\ZZ_2,\qquad
 \ZZ_2^4
-\]
+$$
 satisfy the required condition.
 
 
@@ -102,9 +102,9 @@ satisfy the condition.
 ::: {.pf-step #s1-4}
 
 Therefore the number of isomorphism classes is
-\[
+$$
 \boxed{3}.
-\]
+$$
 
 
 ::: pf-proof

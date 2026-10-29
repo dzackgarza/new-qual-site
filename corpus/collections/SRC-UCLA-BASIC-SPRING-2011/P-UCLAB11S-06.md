@@ -16,50 +16,50 @@ audit:
 ::: {.problem}
 Let $V,W$ be finite-dimensional real inner-product spaces, let $A:V\to W$ be linear, and let $w\in W$.
 Show that the vectors $v\in V$ minimizing
-\[
+$$
 \|Av-w\|
-\]
+$$
 are exactly the solutions of the normal equation
-\[
+$$
 A^*Av=A^*w.
-\]
+$$
 :::
 
 ::: {.solution}
 
 For
-\[
+$$
 v\in V,
-\]
+$$
 define the residual
-\[
+$$
 r_v=Av-w.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 The normal equation
-\[
+$$
 A^*Av=A^*w
-\]
+$$
 is equivalent to
-\[
+$$
 \boxed{A^*r_v=0}.
-\]
+$$
 
 
 ::: pf-proof
 
 By linearity,
-\[
+$$
 A^*r_v
 =
 A^*(Av-w)
 =
 A^*Av-A^*w.
-\]
+$$
 Thus the displayed vector vanishes exactly when the normal equation holds.
 
 :::
@@ -69,35 +69,35 @@ Thus the displayed vector vanishes exactly when the normal equation holds.
 ::: {.pf-step #s1-2}
 
 The condition
-\[
+$$
 A^*r_v=0
-\]
+$$
 is equivalent to
-\[
+$$
 r_v\perp\operatorname{im}A.
-\]
+$$
 
 
 ::: pf-proof
 
 For every
-\[
+$$
 h\in V,
-\]
+$$
 the defining property of the adjoint gives
-\[
+$$
 \langle r_v,Ah\rangle_W
 =
 \langle A^*r_v,h\rangle_V.
-\]
+$$
 Thus
-\[
+$$
 A^*r_v=0
-\]
+$$
 if and only if
-\[
+$$
 \langle r_v,Ah\rangle_W=0
-\]
+$$
 for every $h$, which is exactly orthogonality to $\operatorname{im}A$.
 
 :::
@@ -108,32 +108,32 @@ for every $h$, which is exactly orthogonality to $\operatorname{im}A$.
 
 Suppose $v$ satisfies the normal equation.
 Then for every $u\in V$,
-\[
+$$
 Au-w
 =
 r_v+A(u-v),
-\]
+$$
 and the two terms on the right are orthogonal.
 
 
 ::: pf-proof
 
 The algebraic identity is
-\[
+$$
 Au-w
 =
 (Av-w)+A(u-v)
 =
 r_v+A(u-v).
-\]
+$$
 By steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}, the normal equation implies
-\[
+$$
 r_v\perp\operatorname{im}A.
-\]
+$$
 Since
-\[
+$$
 A(u-v)\in\operatorname{im}A,
-\]
+$$
 the two summands are orthogonal.
 
 :::
@@ -143,13 +143,13 @@ the two summands are orthogonal.
 ::: {.pf-step #s1-4}
 
 If $v$ satisfies the normal equation, then
-\[
+$$
 \|Au-w\|^2
 =
 \|Av-w\|^2
 +
 \|A(u-v)\|^2
-\]
+$$
 for every $u\in V$.
 
 
@@ -164,26 +164,26 @@ Apply the Pythagorean theorem to the orthogonal decomposition in step [](#s1-3){
 ::: {.pf-step #s1-5}
 
 Every solution of the normal equation minimizes
-\[
+$$
 \|Av-w\|.
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-4){.pf-ref} gives
-\[
+$$
 \|Au-w\|^2
 \ge
 \|Av-w\|^2
-\]
+$$
 for every $u\in V$.
 Taking square roots gives
-\[
+$$
 \|Au-w\|
 \ge
 \|Av-w\|.
-\]
+$$
 Thus $v$ is a minimizer.
 
 :::
@@ -193,42 +193,42 @@ Thus $v$ is a minimizer.
 ::: {.pf-step #s1-6}
 
 Conversely, suppose $v$ minimizes
-\[
+$$
 \|Av-w\|.
-\]
+$$
 Fix
-\[
+$$
 h\in V
-\]
+$$
 and define
-\[
+$$
 \phi(t)
 =
 \|A(v+th)-w\|^2.
-\]
+$$
 Then $\phi$ has a minimum at
-\[
+$$
 t=0.
-\]
+$$
 
 
 ::: pf-proof
 
 For every real $t$,
-\[
+$$
 v+th\in V.
-\]
+$$
 Since $v$ is a global minimizer,
-\[
+$$
 \|Av-w\|
 \le
 \|A(v+th)-w\|.
-\]
+$$
 Squaring preserves the inequality because both sides are nonnegative.
 Thus
-\[
+$$
 \phi(0)\le\phi(t)
-\]
+$$
 for every $t$.
 
 :::
@@ -238,23 +238,23 @@ for every $t$.
 ::: {.pf-step #s1-7}
 
 One has
-\[
+$$
 \phi'(0)
 =
 2\langle r_v,Ah\rangle_W.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 A(v+th)-w
 =
 r_v+tAh,
-\]
+$$
 one has
-\[
+$$
 \begin{aligned}
 \phi(t)
 &=
@@ -266,7 +266,7 @@ one has
 +
 t^2\|Ah\|^2.
 \end{aligned}
-\]
+$$
 Differentiate at $t=0$.
 
 :::
@@ -276,26 +276,26 @@ Differentiate at $t=0$.
 ::: {.pf-step #s1-8}
 
 For every
-\[
+$$
 h\in V,
-\]
+$$
 one has
-\[
+$$
 \langle r_v,Ah\rangle_W=0.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-6){.pf-ref}, $\phi$ has a minimum at $0$.
 Therefore
-\[
+$$
 \phi'(0)=0.
-\]
+$$
 Using step [](#s1-7){.pf-ref},
-\[
+$$
 2\langle r_v,Ah\rangle_W=0.
-\]
+$$
 
 :::
 
@@ -309,17 +309,17 @@ Every minimizer satisfies the normal equation.
 ::: pf-proof
 
 Step [](#s1-8){.pf-ref} says
-\[
+$$
 r_v\perp\operatorname{im}A.
-\]
+$$
 By step [](#s1-2){.pf-ref},
-\[
+$$
 A^*r_v=0.
-\]
+$$
 By step [](#s1-1){.pf-ref}, this is equivalent to
-\[
+$$
 A^*Av=A^*w.
-\]
+$$
 
 :::
 
@@ -328,13 +328,13 @@ A^*Av=A^*w.
 ::: {.pf-step #s1-10}
 
 Therefore
-\[
+$$
 \boxed{
 v\text{ minimizes }\|Av-w\|
 \iff
 A^*Av=A^*w.
 }
-\]
+$$
 
 
 ::: pf-proof

@@ -27,15 +27,15 @@ Evaluate $\int_0^{2\pi} e^{e^{it}}\,dt$.
 ::: {.pf-step #s1-1}
 
 Under the substitution
-\[
+$$
 z=e^{it},
-\]
+$$
 one has
-\[
+$$
 dz=iz\,dt
 \qquad\text{and}\qquad
 dt=\frac{dz}{iz}.
-\]
+$$
 
 
 ::: pf-proof
@@ -50,12 +50,12 @@ $2\pi$, the point $z$ traverses the unit circle once counterclockwise.
 ::: {.pf-step #s1-2}
 
 Therefore
-\[
+$$
 \int_0^{2\pi} e^{e^{it}}\,dt
 =
 \frac1i
 \oint_{|z|=1}\frac{e^z}{z}\,dz.
-\]
+$$
 
 
 ::: pf-proof
@@ -69,23 +69,23 @@ Substitute $z=e^{it}$ and the differential relation from step [](#s1-1){.pf-ref}
 ::: {.pf-step #s1-3}
 
 The contour integral satisfies
-\[
+$$
 \oint_{|z|=1}\frac{e^z}{z}\,dz=2\pi i.
-\]
+$$
 
 
 ::: pf-proof
 
 The integrand has a single simple pole at $0$ inside the unit circle, with
 residue
-\[
+$$
 \operatorname{Res}_{z=0}\frac{e^z}{z}=e^0=1.
-\]
+$$
 The residue theorem gives
-\[
+$$
 \oint_{|z|=1}\frac{e^z}{z}\,dz
 =2\pi i.
-\]
+$$
 
 :::
 
@@ -94,17 +94,17 @@ The residue theorem gives
 ::: {.pf-step #s1-4}
 
 Hence
-\[
+$$
 \boxed{\int_0^{2\pi} e^{e^{it}}\,dt=2\pi}.
-\]
+$$
 
 
 ::: pf-proof
 
 Combine steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}:
-\[
+$$
 \frac1i(2\pi i)=2\pi.
-\]
+$$
 
 :::
 

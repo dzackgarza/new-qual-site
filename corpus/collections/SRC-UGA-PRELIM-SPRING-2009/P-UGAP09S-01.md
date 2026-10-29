@@ -25,11 +25,11 @@ Write the precise definition of what it means for a function $f:\RR\to\RR$ to be
 ::: {.pf-step #s1-1}
 
 The function $f:\RR\to\RR$ is uniformly continuous if
-\[
+$$
 \boxed{
 \forall\varepsilon>0\ \exists\delta>0\ \forall x,y\in\RR,\quad
 |x-y|<\delta\Longrightarrow |f(x)-f(y)|<\varepsilon }.
-\]
+$$
 
 
 ::: pf-proof
@@ -44,14 +44,14 @@ simultaneously for every pair $x,y$ in the domain.
 ::: {.pf-step #s1-2}
 
 The function $f$ fails to be uniformly continuous precisely when
-\[
+$$
 \boxed{
 \exists\varepsilon_0>0\ \forall\delta>0\ \exists x,y\in\RR
 \text{ such that }
 |x-y|<\delta
 \text{ and }
 |f(x)-f(y)|\ge\varepsilon_0 }.
-\]
+$$
 
 
 ::: pf-proof
@@ -59,13 +59,13 @@ The function $f$ fails to be uniformly continuous precisely when
 This is the logical negation of the quantifier statement in step [](#s1-1){.pf-ref}:
 the existential and universal quantifiers reverse, the implication fails by
 having its hypothesis true and conclusion false, and
-\[
+$$
 |f(x)-f(y)|<\varepsilon_0
-\]
+$$
 becomes
-\[
+$$
 |f(x)-f(y)|\ge\varepsilon_0.
-\]
+$$
 The displayed statement itself uses no occurrence of the word prohibited by
 the problem.
 

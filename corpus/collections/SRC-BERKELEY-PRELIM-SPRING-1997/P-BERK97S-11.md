@@ -20,20 +20,20 @@ audit:
 
 ::: {.problem}
 Suppose $f:\RR\to\RR$ satisfies
-\[
+$$
 f''(x)=(x^2-1)f(x)
-\]
+$$
 for every $x\in\RR$, with
-\[
+$$
 f(0)=1,
 \qquad
 f'(0)=0.
-\]
+$$
 Show that
-\[
+$$
 f(x)\longrightarrow0
 \qquad(x\to\infty).
-\]
+$$
 :::
 
 ::: {.solution}

@@ -21,11 +21,11 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 M_1=\begin{pmatrix}3&2\\1&4\end{pmatrix},\qquad
 M_2=\begin{pmatrix}5&7\\-3&-4\end{pmatrix},\qquad
 M_3=\begin{pmatrix}5&6.9\\-3&-4\end{pmatrix}.
-\]
+$$
 For which, if any, $i\in\{1,2,3\}$ is the sequence $(M_i^n)$ bounded away from $\infty$? For which $i$ is the sequence bounded away from $0$?
 :::
 

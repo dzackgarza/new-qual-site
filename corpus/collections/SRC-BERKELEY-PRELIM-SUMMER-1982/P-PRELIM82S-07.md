@@ -29,17 +29,17 @@ audit:
 
 ::: {.problem}
 Let $V=M_3(\RR)$ and let
-\[
+$$
 A=\begin{pmatrix}
 1&0&0\\
 0&2&0\\
 0&0&1
 \end{pmatrix}.
-\]
+$$
 Define the linear transformation $T:V\to V$ by
-\[
+$$
 T(X)=\frac12(AX+XA).
-\]
+$$
 Compute $\det T$.
 :::
 

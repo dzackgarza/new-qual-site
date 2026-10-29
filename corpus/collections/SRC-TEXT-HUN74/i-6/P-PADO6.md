@@ -30,9 +30,9 @@ If $\sigma = (i_1 i_2 \cdots i_r) \in S_n$ and $\tau \in S_n$, then show that $\
 
 ::: {.solution}
 Set
-\[
+$$
 \rho=(\tau(i_1)\ \tau(i_2)\ \cdots\ \tau(i_r)).
-\]
+$$
 We prove that $\tau\sigma\tau^{-1}$ and $\rho$ agree on every element of
 $\{1,\ldots,n\}$.
 
@@ -41,28 +41,28 @@ $\{1,\ldots,n\}$.
 ::: {.pf-step #s1}
 
 For $1\le j<r$,
-\[
+$$
 (\tau\sigma\tau^{-1})(\tau(i_j))=\tau(i_{j+1}),
-\]
+$$
 and
-\[
+$$
 (\tau\sigma\tau^{-1})(\tau(i_r))=\tau(i_1).
-\]
+$$
 
 ::: pf-proof
 
 For $j<r$,
-\[
+$$
 (\tau\sigma\tau^{-1})(\tau(i_j))
 =\tau(\sigma(i_j))
 =\tau(i_{j+1}),
-\]
+$$
 while
-\[
+$$
 (\tau\sigma\tau^{-1})(\tau(i_r))
 =\tau(\sigma(i_r))
 =\tau(i_1).
-\]
+$$
 These are exactly the values of $\rho$ on its support.
 
 :::
@@ -79,11 +79,11 @@ $\tau\sigma\tau^{-1}$.
 Let $x\notin\{\tau(i_1),\ldots,\tau(i_r)\}$. Since $\tau$ is bijective,
 $\tau^{-1}(x)\notin\{i_1,\ldots,i_r\}$, so $\sigma$ fixes
 $\tau^{-1}(x)$. Therefore
-\[
+$$
 (\tau\sigma\tau^{-1})(x)
 =\tau(\tau^{-1}(x))
 =x.
-\]
+$$
 The cycle $\rho$ fixes the same points.
 
 :::
@@ -93,10 +93,10 @@ The cycle $\rho$ fixes the same points.
 ::: pf-step
 
 Hence
-\[
+$$
 \tau\sigma\tau^{-1}
 =(\tau(i_1)\ \tau(i_2)\ \cdots\ \tau(i_r)).
-\]
+$$
 
 ::: pf-proof
 

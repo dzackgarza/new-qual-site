@@ -20,9 +20,9 @@ a. For any morphism of sheaves $\varphi: \mcf \to \mcg$, show that for each poin
 b. Show that $\varphi$ is injective (respectively surjective) if and only if the induced map on stalks $\varphi_P$ is injective (respectively surjective) for all $P$.
 
 c. Show that a sequence
-\[
+$$
 \cdots \to \mcf^{i-1} \mapsvia{\phi^{i-1}} \mcf^{i} \mapsvia{\phi^{i}} \mcf^{i+1} \to \cdots
-\]
+$$
 of sheaves and morphisms is exact if and only if for each $P \in X$ the corresponding sequence of stalks is exact as a sequence of abelian groups.
 :::
 
@@ -58,18 +58,18 @@ Hence $K = 0$ and $\phi$ is injective.
 **Part c.** Exactness of the sequence of sheaves means $\ker \phi^i = \im \phi^{i-1}$ as subsheaves of $\mcf^i$.
 
 ($\Rightarrow$) If $\ker \phi^i = \im \phi^{i-1}$ then these sheaves have the same stalks, so by part (a)
-\[
+$$
 \ker(\phi^i_P) = (\ker \phi^i)_P = (\im \phi^{i-1})_P = \im(\phi^{i-1}_P),
-\]
+$$
 which is exactness at $P$.
 
 ($\Leftarrow$) Conversely, if the stalk sequences are exact then the same chain of identities read in the other order gives $(\ker \phi^i)_P = (\im \phi^{i-1})_P$ for every $P$.
 Two subsheaves of $\mcf^i$ with the same stalks coincide, so $\ker \phi^i = \im \phi^{i-1}$.
 
 Compactly, using part (a) throughout,
-\[
+$$
 \ker \phi^i = \im \phi^{i-1}
 \iff (\ker \phi^i)_P = (\im \phi^{i-1})_P \ \forall P
 \iff \ker(\phi^i_P) = \im(\phi^{i-1}_P) \ \forall P.
-\]
+$$
 :::

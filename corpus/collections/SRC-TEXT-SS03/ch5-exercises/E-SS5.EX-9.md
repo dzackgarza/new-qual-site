@@ -27,27 +27,27 @@ $$
 
 ::: {.solution}
 For every $N\ge0$, repeated use of
-\[
+$$
 1-w^2=(1-w)(1+w)
-\]
+$$
 gives the finite identity
-\[
+$$
 (1-z)\prod_{k=0}^{N}(1+z^{2^k})
 =1-z^{2^{N+1}}.
 \tag{1}
-\]
+$$
 Indeed, each factorization successively replaces $1-z^{2^j}$ by
-\[
+$$
 (1-z^{2^{j-1}})(1+z^{2^{j-1}}).
-\]
+$$
 If $|z|<1$, then
-\[
+$$
 z^{2^{N+1}}\longrightarrow0.
-\]
+$$
 Since $1-z\ne0$, taking $N\to\infty$ in (1) gives
-\[
+$$
 \boxed{
 \prod_{k=0}^{\infty}(1+z^{2^k})=\frac1{1-z}}.
-\]
+$$
 Thus the product converges and has the stated value throughout the open unit disc.
 :::

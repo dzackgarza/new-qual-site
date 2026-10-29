@@ -18,13 +18,13 @@ audit:
 
 ::: {.problem}
 Consider
-\[
+$$
 f(x,y)=\sin^3(xy)+y^2|x|
-\]
+$$
 on
-\[
+$$
 S=\{(x,y)\in\RR^2:x^{2010}+y^{2010}\le1\}.
-\]
+$$
 Define what it means for $f$ to be uniformly continuous on $S$, and prove that $f$ is uniformly continuous there.
 You may use any applicable general theorem, provided you state it and justify its hypotheses.
 :::
@@ -36,17 +36,17 @@ You may use any applicable general theorem, provided you state it and justify it
 ::: {.pf-step #s1-1}
 
 Uniform continuity of $f$ on $S$ means that for every $\varepsilon>0$ there exists $\delta>0$ such that for all
-\[
+$$
 p,q\in S,
-\]
+$$
 if
-\[
+$$
 \|p-q\|_2<\delta,
-\]
+$$
 then
-\[
+$$
 |f(p)-f(q)|<\varepsilon.
-\]
+$$
 
 
 ::: pf-proof
@@ -60,23 +60,23 @@ This is the definition of uniform continuity for a real-valued function on the m
 ::: {.pf-step #s1-2}
 
 The set
-\[
+$$
 S=
 \{(x,y)\in\RR^2:x^{2010}+y^{2010}\le1\}
-\]
+$$
 is closed.
 
 
 ::: pf-proof
 
 The map
-\[
+$$
 h(x,y)=x^{2010}+y^{2010}
-\]
+$$
 is continuous, and
-\[
+$$
 S=h^{-1}((-\infty,1]).
-\]
+$$
 Since $(-\infty,1]$ is closed in $\RR$, the inverse image $S$ is closed.
 
 :::
@@ -91,21 +91,21 @@ The set $S$ is bounded.
 ::: pf-proof
 
 If $(x,y)\in S$, then
-\[
+$$
 x^{2010}\le1
 \qquad\text{and}\qquad
 y^{2010}\le1,
-\]
+$$
 because both terms are nonnegative. Hence
-\[
+$$
 |x|\le1
 \qquad\text{and}\qquad
 |y|\le1.
-\]
+$$
 Thus
-\[
+$$
 S\subseteq[-1,1]^2.
-\]
+$$
 
 :::
 
@@ -127,16 +127,16 @@ By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}, $S$ is closed and bounde
 ::: {.pf-step #s1-5}
 
 The function
-\[
+$$
 f(x,y)=\sin^3(xy)+y^2|x|
-\]
+$$
 is continuous on $\RR^2$, hence on $S$.
 
 
 ::: pf-proof
 
 The maps
-\[
+$$
 (x,y)\mapsto xy,
 \qquad
 t\mapsto\sin t,
@@ -146,7 +146,7 @@ t\mapsto t^3,
 x\mapsto|x|,
 \qquad
 y\mapsto y^2
-\]
+$$
 are continuous. Products, compositions, and sums of continuous functions are continuous. Therefore both terms in $f$ are continuous, so $f$ is continuous.
 
 :::
@@ -161,9 +161,9 @@ The function $f$ is uniformly continuous on $S$.
 ::: pf-proof
 
 The Heine--Cantor theorem states that every continuous real-valued function on a compact metric space is uniformly continuous. Step [](#s1-4){.pf-ref} shows that $S$ is compact, and step [](#s1-5){.pf-ref} shows that $f$ is continuous on $S$. Therefore
-\[
+$$
 \boxed{f\text{ is uniformly continuous on }S}.
-\]
+$$
 
 :::
 

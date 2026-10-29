@@ -18,18 +18,18 @@ audit:
 
 ::: {.problem}
 Solve
-\[
+$$
 \begin{cases}
 x_1'=6x_1-x_2,\\
 x_2'=2x_1+3x_2.
 \end{cases}
-\]
+$$
 :::
 
 ::: {.solution}
 
 Write
-\[
+$$
 x(t)=
 \begin{pmatrix}
 x_1(t)\\
@@ -41,27 +41,27 @@ M=
 6&-1\\
 2&3
 \end{pmatrix}.
-\]
+$$
 Then the system is
-\[
+$$
 x'(t)=Mx(t).
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 The characteristic polynomial of $M$ is
-\[
+$$
 \chi_M(\lambda)
 =
 (\lambda-4)(\lambda-5).
-\]
+$$
 
 
 ::: pf-proof
 
-\[
+$$
 \begin{aligned}
 \det(\lambda I-M)
 &=
@@ -77,7 +77,7 @@ The characteristic polynomial of $M$ is
 &=
 (\lambda-4)(\lambda-5).
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -86,18 +86,18 @@ The characteristic polynomial of $M$ is
 ::: pf-step
 
 An eigenvector for eigenvalue $4$ is
-\[
+$$
 v_4=
 \begin{pmatrix}
 1\\
 2
 \end{pmatrix}.
-\]
+$$
 
 
 ::: pf-proof
 
-\[
+$$
 (M-4I)
 \begin{pmatrix}
 1\\
@@ -117,7 +117,7 @@ v_4=
 0\\
 0
 \end{pmatrix}.
-\]
+$$
 
 :::
 
@@ -126,18 +126,18 @@ v_4=
 ::: pf-step
 
 An eigenvector for eigenvalue $5$ is
-\[
+$$
 v_5=
 \begin{pmatrix}
 1\\
 1
 \end{pmatrix}.
-\]
+$$
 
 
 ::: pf-proof
 
-\[
+$$
 (M-5I)
 \begin{pmatrix}
 1\\
@@ -157,7 +157,7 @@ v_5=
 0\\
 0
 \end{pmatrix}.
-\]
+$$
 
 :::
 
@@ -180,38 +180,38 @@ Since $\RR^2$ has dimension $2$, they form a basis.
 ::: {.pf-step #s1-5}
 
 For arbitrary constants
-\[
+$$
 c_4,c_5\in\RR,
-\]
+$$
 the function
-\[
+$$
 x(t)
 =
 c_4e^{4t}v_4
 +
 c_5e^{5t}v_5
-\]
+$$
 solves the system.
 
 
 ::: pf-proof
 
 Differentiate:
-\[
+$$
 x'(t)
 =
 4c_4e^{4t}v_4
 +
 5c_5e^{5t}v_5.
-\]
+$$
 Using
-\[
+$$
 Mv_4=4v_4,
 \qquad
 Mv_5=5v_5,
-\]
+$$
 one gets
-\[
+$$
 Mx(t)
 =
 4c_4e^{4t}v_4
@@ -219,7 +219,7 @@ Mx(t)
 5c_5e^{5t}v_5
 =
 x'(t).
-\]
+$$
 
 :::
 
@@ -233,15 +233,15 @@ Every solution has the form in step [](#s1-5){.pf-ref}.
 ::: pf-proof
 
 For any initial value
-\[
+$$
 x(0)\in\RR^2,
-\]
+$$
 step [](#s1-4){.pf-ref} gives unique constants $c_4,c_5$ such that
-\[
+$$
 x(0)
 =
 c_4v_4+c_5v_5.
-\]
+$$
 The function in step [](#s1-5){.pf-ref} has exactly this initial value.
 Uniqueness for linear systems with constant coefficients implies that it is the unique solution with that initial value.
 Thus every solution is obtained in this way.
@@ -253,7 +253,7 @@ Thus every solution is obtained in this way.
 ::: {.pf-step #s1-7}
 
 Hence the general solution is
-\[
+$$
 \boxed{
 \begin{aligned}
 x_1(t)
@@ -270,7 +270,7 @@ c_5e^{5t},
 \qquad
 c_4,c_5\in\RR.
 }
-\]
+$$
 
 
 ::: pf-proof

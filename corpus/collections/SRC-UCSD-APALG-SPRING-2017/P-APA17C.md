@@ -29,9 +29,9 @@ Denote by $\sigma_i(A)$ (resp., $\sigma_i(B)$) the $i$-th largest singular value
 ::: {.pf-step #s1}
 
 By the Courant–Fischer (min-max) characterization, the $i$-th singular value of an $n \times n$ matrix $M$ is given by:
-\[
+$$
 \sigma_i(M) = \max_{\substack{V \subseteq \RR^n \\ \dim V = n - i + 1}} \min_{\substack{x \in V \\ \|x\|_2 = 1}} \|Mx\|_2.
-\]
+$$
 
 ::: pf-proof
 
@@ -44,9 +44,9 @@ min-max theorem for singular values (eigenvalues of $M^T M$).
 ::: {.pf-step #s2}
 
 Choose a subspace $V_i \subseteq \RR^n$ of dimension $n - i + 1$ that achieves the maximum for $B$:
-\[
+$$
 \sigma_i(B) = \min_{\substack{x \in V_i \\ \|x\|_2 = 1}} \|Bx\|_2.
-\]
+$$
 
 ::: pf-proof
 
@@ -83,9 +83,9 @@ hypothesis applied to nonzero vectors $x \in S(V_i)$.
 ::: {.pf-step #s5}
 
 The function $f(x) = \|Ax\|_2 - \|Bx\|_2$ is continuous and strictly positive on the compact set $S(V_i)$, so it attains a strictly positive minimum:
-\[
+$$
 \min_{x \in S(V_i)} \bigl(\|Ax\|_2 - \|Bx\|_2\bigr) = \varepsilon > 0.
-\]
+$$
 
 ::: pf-proof
 
@@ -110,9 +110,9 @@ Step [](#s5){.pf-ref}.
 ::: {.pf-step #s7}
 
 Taking the minimum over $x \in S(V_i)$ gives:
-\[
+$$
 \min_{x \in S(V_i)} \|Ax\|_2 \ge \min_{x \in S(V_i)} \|Bx\|_2 + \varepsilon = \sigma_i(B) + \varepsilon > \sigma_i(B).
-\]
+$$
 
 ::: pf-proof
 
@@ -125,9 +125,9 @@ Steps [](#s2){.pf-ref} and [](#s6){.pf-ref}.
 ::: {.pf-step #s8}
 
 By the min-max characterization step [](#s1){.pf-ref} for $A$, since $\dim V_i = n - i + 1$:
-\[
+$$
 \sigma_i(A) \ge \min_{x \in S(V_i)} \|Ax\|_2 > \sigma_i(B).
-\]
+$$
 
 ::: pf-proof
 

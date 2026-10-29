@@ -30,43 +30,43 @@ Show that $S^1$ is a retract of $X$.
 
 ::: {.solution}
 Let
-\[
+$$
 i:S^1\hookrightarrow X
-\]
-be the inclusion. By hypothesis its image in \(H_1(X;\ZZ)\) is a direct summand isomorphic to \(\ZZ\). Hence there is a homomorphism
-\[
+$$
+be the inclusion. By hypothesis its image in $H_1(X;\ZZ)$ is a direct summand isomorphic to $\ZZ$. Hence there is a homomorphism
+$$
 \lambda:H_1(X;\ZZ)\to\ZZ
-\]
+$$
 whose composite with
-\[
+$$
 i_*:H_1(S^1)\to H_1(X)
-\]
+$$
 is the identity.
 
 The universal coefficient theorem gives
-\[
+$$
 H^1(X;\ZZ)\cong\operatorname{Hom}(H_1(X),\ZZ).
-\]
-Let \(u\in H^1(X;\ZZ)\) correspond to \(\lambda\). By Theorem 4.57 choose
-\[
+$$
+Let $u\in H^1(X;\ZZ)$ correspond to $\lambda$. By Theorem 4.57 choose
+$$
 r:X\to S^1
-\]
-with \(r^*(\iota)=u\), where \(\iota\) generates \(H^1(S^1)\). Then
-\[
+$$
+with $r^*(\iota)=u$, where $\iota$ generates $H^1(S^1)$. Then
+$$
 (ri)^*\iota=i^*u=\iota,
-\]
-so \(ri:S^1\to S^1\) has degree \(1\) and is homotopic to the identity.
+$$
+so $ri:S^1\to S^1$ has degree $1$ and is homotopic to the identity.
 
-Since \(S^1\subset X\) is a subcomplex, the homotopy extension property extends a homotopy
-\[
+Since $S^1\subset X$ is a subcomplex, the homotopy extension property extends a homotopy
+$$
 ri\simeq\operatorname{id}_{S^1}
-\]
-to a homotopy of \(r\). At the endpoint we obtain \(r':X\to S^1\) satisfying
-\[
+$$
+to a homotopy of $r$. At the endpoint we obtain $r':X\to S^1$ satisfying
+$$
 r'i=\operatorname{id}_{S^1}.
-\]
+$$
 Hence
-\[
+$$
 \boxed{S^1\text{ is a retract of }X.}
-\]
+$$
 :::

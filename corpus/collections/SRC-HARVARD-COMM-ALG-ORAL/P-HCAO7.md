@@ -39,18 +39,18 @@ Assume $R\ne0$.
 ::: {.pf-step #s1}
 
 For every nonzero $a\in R$, multiplication by $a$ is a bijection
-\[
+$$
 m_a:R\to R,
 \qquad
 x\mapsto ax.
-\]
+$$
 
 ::: pf-proof
 
 If $m_a(x)=m_a(y)$, then
-\[
+$$
 a(x-y)=0.
-\]
+$$
 Since $a\ne0$ and $R$ has no zero divisors, $x-y=0$, so $x=y$. Thus $m_a$ is
 injective. Because $R$ is finite, every injective self-map of $R$ is surjective.
 
@@ -65,13 +65,13 @@ The ring $R$ has a multiplicative identity.
 ::: pf-proof
 
 Choose $0\ne a\in R$. By surjectivity of $m_a$, there is $e\in R$ such that
-\[
+$$
 ae=a.
-\]
+$$
 For any $x\in R$,
-\[
+$$
 a(ex-x)=aex-ax=(ae)x-ax=0.
-\]
+$$
 Since $a\ne0$ and there are no zero divisors, $ex=x$. Commutativity gives
 $xe=x$ as well, so $e$ is an identity element.
 
@@ -87,9 +87,9 @@ Every nonzero element of $R$ is invertible.
 
 Let $0\ne x\in R$. By step [](#s1){.pf-ref}, multiplication by $x$ is surjective, so there is
 $y\in R$ with
-\[
+$$
 xy=e.
-\]
+$$
 Thus $y=x^{-1}$.
 
 :::

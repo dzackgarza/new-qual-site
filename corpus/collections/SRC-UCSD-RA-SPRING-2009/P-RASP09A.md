@@ -75,19 +75,19 @@ $f \in L^1(\RR)$.
 
 ::: pf-proof
 By Tonelli's theorem,
-\[
+$$
 \int_{\RR}f(x)\,dx
 =\sum_{n=1}^\infty2^{-n}
 \int_{|x-q_n|<1}|x-q_n|^{-1/2}\,dx.
-\]
+$$
 The inner integral equals
-\[
+$$
 2\int_0^1 t^{-1/2}\,dt=4.
-\]
+$$
 Hence
-\[
+$$
 \int_{\RR}f\le4\sum_{n=1}^\infty2^{-n}=4<\infty.
-\]
+$$
 :::
 
 :::
@@ -106,17 +106,17 @@ Near $q_n$, the $n$th summand forces $f(x)>A$ on a set of positive measure insid
 
 ::: pf-proof
 Choose $\delta>0$ so small that
-\[
+$$
 (q_n-\delta,q_n+\delta)\subset(a,b),
 \qquad
 \delta<1,
 \qquad
 2^{-n}\delta^{-1/2}>A.
-\]
+$$
 Then for every $x$ with $0<|x-q_n|<\delta$,
-\[
+$$
 f(x)\ge2^{-n}|x-q_n|^{-1/2}>A.
-\]
+$$
 This punctured interval has positive measure.
 :::
 

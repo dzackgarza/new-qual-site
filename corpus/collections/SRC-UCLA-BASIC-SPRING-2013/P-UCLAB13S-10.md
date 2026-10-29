@@ -17,14 +17,14 @@ audit:
 
 ::: {.problem}
 Let $G$ be the set of real $4\times4$ upper-triangular matrices with $1$'s on the diagonal, and fix
-\[
+$$
 M=\begin{pmatrix}
 1&1&1&1\\
 0&1&1&1\\
 0&0&1&1\\
 0&0&0&1
 \end{pmatrix}.
-\]
+$$
 Let $C$ be the set of matrices in $G$ commuting with $M$.
 
 (a) Prove that $C$ is an affine subspace of $\RR^{16}$.
@@ -35,7 +35,7 @@ Let $C$ be the set of matrices in $G$ commuting with $M$.
 ::: {.solution}
 
 Write
-\[
+$$
 M=I+N,
 \qquad
 N=
@@ -45,9 +45,9 @@ N=
 0&0&0&1\\
 0&0&0&0
 \end{pmatrix}.
-\]
+$$
 Every element of $G$ has the form
-\[
+$$
 X=
 \begin{pmatrix}
 1&a&b&c\\
@@ -57,9 +57,9 @@ X=
 \end{pmatrix}
 =
 I+Y,
-\]
+$$
 where
-\[
+$$
 Y=
 \begin{pmatrix}
 0&a&b&c\\
@@ -67,32 +67,32 @@ Y=
 0&0&0&f\\
 0&0&0&0
 \end{pmatrix}.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 The commutation relation
-\[
+$$
 XM=MX
-\]
+$$
 is equivalent to
-\[
+$$
 \boxed{YN=NY}.
-\]
+$$
 
 
 ::: pf-proof
 
 Using
-\[
+$$
 X=I+Y
 \qquad\text{and}\qquad
 M=I+N,
-\]
+$$
 one has
-\[
+$$
 \begin{aligned}
 XM
 &=
@@ -100,9 +100,9 @@ XM
 &=
 I+Y+N+YN,
 \end{aligned}
-\]
+$$
 while
-\[
+$$
 \begin{aligned}
 MX
 &=
@@ -110,11 +110,11 @@ MX
 &=
 I+N+Y+NY.
 \end{aligned}
-\]
+$$
 The common terms cancel, leaving
-\[
+$$
 YN=NY.
-\]
+$$
 
 :::
 
@@ -123,7 +123,7 @@ YN=NY.
 ::: {.pf-step #s1-2}
 
 One has
-\[
+$$
 YN
 =
 \begin{pmatrix}
@@ -132,7 +132,7 @@ YN
 0&0&0&0\\
 0&0&0&0
 \end{pmatrix}.
-\]
+$$
 
 
 ::: pf-proof
@@ -140,7 +140,7 @@ YN
 Multiply the displayed matrices $Y$ and $N$.
 The only potentially nonzero entries are above the diagonal.
 For example,
-\[
+$$
 (YN)_{13}
 =
 a,
@@ -152,7 +152,7 @@ a+b,
 (YN)_{24}
 =
 d.
-\]
+$$
 All other strictly upper-triangular entries vanish.
 
 :::
@@ -162,7 +162,7 @@ All other strictly upper-triangular entries vanish.
 ::: {.pf-step #s1-3}
 
 One has
-\[
+$$
 NY
 =
 \begin{pmatrix}
@@ -171,20 +171,20 @@ NY
 0&0&0&0\\
 0&0&0&0
 \end{pmatrix}.
-\]
+$$
 
 
 ::: pf-proof
 
 Again multiply directly.
 The relevant entries are
-\[
+$$
 (NY)_{13}=d,
 \qquad
 (NY)_{14}=e+f,
 \qquad
 (NY)_{24}=f.
-\]
+$$
 
 :::
 
@@ -193,32 +193,32 @@ The relevant entries are
 ::: {.pf-step #s1-4}
 
 The equation
-\[
+$$
 YN=NY
-\]
+$$
 is equivalent to
-\[
+$$
 \boxed{
 a=d,\qquad d=f,\qquad a+b=e+f.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 Compare the corresponding entries of the matrices in steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 Equality of the $(1,3)$ entries gives
-\[
+$$
 a=d.
-\]
+$$
 Equality of the $(2,4)$ entries gives
-\[
+$$
 d=f.
-\]
+$$
 Equality of the $(1,4)$ entries gives
-\[
+$$
 a+b=e+f.
-\]
+$$
 No other entries impose additional conditions.
 
 :::
@@ -228,29 +228,29 @@ No other entries impose additional conditions.
 ::: {.pf-step #s1-5}
 
 These equations reduce to
-\[
+$$
 \boxed{
 d=f=a,
 \qquad
 e=b.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 The first two equations in step [](#s1-4){.pf-ref} give
-\[
+$$
 d=f=a.
-\]
+$$
 Substitute this into the third equation:
-\[
+$$
 a+b=e+a.
-\]
+$$
 Thus
-\[
+$$
 e=b.
-\]
+$$
 
 :::
 
@@ -259,7 +259,7 @@ e=b.
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{
 C=
 \left\{
@@ -272,18 +272,18 @@ C=
 :a,b,c\in\RR
 \right\}.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-5){.pf-ref}, every commuting matrix in $G$ must have exactly the displayed form.
 Conversely, any matrix of this form has
-\[
+$$
 d=f=a
 \qquad\text{and}\qquad
 e=b,
-\]
+$$
 so it satisfies the equations in step [](#s1-4){.pf-ref} and therefore commutes with $M$.
 
 :::
@@ -298,7 +298,7 @@ The set $C$ is an affine subspace of $\RR^{16}$.
 ::: pf-proof
 
 Let
-\[
+$$
 E_1=
 \begin{pmatrix}
 0&1&0&0\\
@@ -322,13 +322,13 @@ E_3=
 0&0&0&0\\
 0&0&0&0
 \end{pmatrix}.
-\]
+$$
 Then step [](#s1-6){.pf-ref} says
-\[
+$$
 C
 =
 I+\operatorname{span}\{E_1,E_2,E_3\}.
-\]
+$$
 The translate of a linear subspace is an affine subspace.
 This proves part (a).
 
@@ -339,30 +339,30 @@ This proves part (a).
 ::: {.pf-step #s1-8}
 
 The matrices
-\[
+$$
 E_1,E_2,E_3
-\]
+$$
 are linearly independent.
 
 
 ::: pf-proof
 
 Suppose
-\[
+$$
 \alpha E_1+\beta E_2+\gamma E_3=0.
-\]
+$$
 The $(1,2)$ entry gives
-\[
+$$
 \alpha=0.
-\]
+$$
 The $(1,3)$ entry then gives
-\[
+$$
 \beta=0,
-\]
+$$
 and the $(1,4)$ entry gives
-\[
+$$
 \gamma=0.
-\]
+$$
 Thus the three matrices are linearly independent.
 
 :::
@@ -372,17 +372,17 @@ Thus the three matrices are linearly independent.
 ::: {.pf-step #s1-9}
 
 Hence
-\[
+$$
 \boxed{\dim C=3}.
-\]
+$$
 
 
 ::: pf-proof
 
 The translation space of the affine subspace $C$ is
-\[
+$$
 \operatorname{span}\{E_1,E_2,E_3\}.
-\]
+$$
 By step [](#s1-8){.pf-ref}, this space has dimension $3$.
 Therefore the affine dimension of $C$ is $3$.
 This proves part (b).

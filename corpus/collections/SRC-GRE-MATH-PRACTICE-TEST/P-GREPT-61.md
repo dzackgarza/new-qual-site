@@ -41,11 +41,11 @@ The terms depending only on $x$ or only on $y$ contribute zero around $C$.
 On the ranges occurring on $C$, the functions $\sqrt{2x+1}$ and
 $\sqrt{y^2-y}$ are continuous, so they have antiderivatives $F(x)$ and
 $G(y)$, respectively. Hence
-\[
+$$
 \oint_C \sqrt{2x+1}\,dx=\oint_C dF=0
 \quad\text{and}\quad
 \oint_C \sqrt{y^2-y}\,dy=\oint_C dG=0.
-\]
+$$
 Therefore the given integral equals $\oint_C 2xy\,dy$.
 
 :::
@@ -73,9 +73,9 @@ The contribution of the vertical edge from $(1,1)$ to $(1,3)$ is $8$.
 ::: pf-proof
 
 Here $x=1$ and $y$ increases from $1$ to $3$, so
-\[
+$$
 \int_1^3 2y\,dy=[y^2]_1^3=8.
-\]
+$$
 
 :::
 
@@ -90,11 +90,11 @@ The contribution of the diagonal edge from $(1,3)$ to $(0,1)$ is $-\frac{14}{3}$
 
 The diagonal has equation $y=2x+1$, hence $x=(y-1)/2$. With the
 counterclockwise orientation, $y$ decreases from $3$ to $1$. Therefore
-\[
+$$
 \int_3^1 2\left(\frac{y-1}{2}\right)y\,dy
 =\int_3^1 (y^2-y)\,dy
 =-\frac{14}{3}.
-\]
+$$
 
 :::
 
@@ -108,9 +108,9 @@ The value of the integral is $\boxed{\frac{10}{3}}$.
 ::: pf-proof
 
 By steps [](#s1-1){.pf-ref}, [](#s1-2){.pf-ref}, and [](#s1-3){.pf-ref}, and [](#s1-4){.pf-ref}, the integral is
-\[
+$$
 0+8-\frac{14}{3}=\frac{10}{3}.
-\]
+$$
 Thus the correct choice is (D).
 
 :::

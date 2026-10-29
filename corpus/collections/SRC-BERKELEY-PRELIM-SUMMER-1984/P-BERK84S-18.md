@@ -33,11 +33,11 @@ $$
 
 ::: {.solution}
 Set
-\[
+$$
 A:=\int_0^1 e^{-y}\sin y\,dy,
 \qquad
 k:=e^{-1}\int_0^1 e^{-2y}\,dy=\frac{e^{-1}-e^{-3}}2.
-\]
+$$
 Then $0<k<1$.
 
 ::: pf
@@ -45,25 +45,25 @@ Then $0<k<1$.
 ::: {.pf-step #s1}
 
 Every continuous solution must have the form
-\[
+$$
 f(x)=\sin x+I e^{-(x+1)}
-\]
+$$
 for a scalar $I\in\RR$.
 
 ::: pf-proof
 
 If $f$ solves the integral equation, define
-\[
+$$
 I:=\int_0^1 e^{-y}f(y)\,dy.
-\]
+$$
 Since
-\[
+$$
 \frac1{e^{x+y+1}}=e^{-(x+1)}e^{-y},
-\]
+$$
 the integral term is
-\[
+$$
 e^{-(x+1)}\int_0^1 e^{-y}f(y)\,dy=I e^{-(x+1)}.
-\]
+$$
 Hence the displayed form is necessary.
 
 :::
@@ -73,25 +73,25 @@ Hence the displayed form is necessary.
 ::: {.pf-step #s2}
 
 The scalar $I$ is uniquely determined by
-\[
+$$
 I=A+kI.
-\]
+$$
 
 ::: pf-proof
 
 Substitute the expression from step [](#s1){.pf-ref} into the definition of $I$:
-\[
+$$
 \begin{aligned}
 I
 &=\int_0^1 e^{-y}\bigl(\sin y+I e^{-(y+1)}\bigr)\,dy\\
 &=A+I e^{-1}\int_0^1 e^{-2y}\,dy\\
 &=A+kI.
 \end{aligned}
-\]
+$$
 Since $k<1$, one has $1-k\neq0$, so necessarily
-\[
+$$
 I=\frac{A}{1-k}.
-\]
+$$
 Thus at most one continuous solution can exist.
 
 :::
@@ -105,22 +105,22 @@ This value of $I$ produces a continuous solution.
 ::: pf-proof
 
 Let
-\[
+$$
 I_0:=\frac{A}{1-k}
 \qquad\text{and}\qquad
 f_0(x):=\sin x+I_0e^{-(x+1)}.
-\]
+$$
 The function $f_0$ is continuous on $[0,1]$.
 Moreover, the calculation in step [](#s2){.pf-ref}, read in reverse, gives
-\[
+$$
 \int_0^1 e^{-y}f_0(y)\,dy=A+kI_0=I_0.
-\]
+$$
 Therefore
-\[
+$$
 \sin x+\int_0^1\frac{f_0(y)}{e^{x+y+1}}\,dy
 =\sin x+e^{-(x+1)}I_0
 =f_0(x).
-\]
+$$
 So $f_0$ is a solution.
 Together with uniqueness from step [](#s2){.pf-ref}, it is the unique continuous real-valued solution.
 

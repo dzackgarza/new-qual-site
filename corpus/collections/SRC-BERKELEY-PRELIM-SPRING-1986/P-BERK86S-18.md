@@ -27,13 +27,13 @@ audit:
 
 ::: {.problem}
 Let $f,g_1,g_2,\dots$ be entire. Suppose
-\[
+$$
 |g_n^{(k)}(0)|\le|f^{(k)}(0)|
-\]
+$$
 for all $n,k$, and suppose
-\[
+$$
 \lim_{n\to\infty}g_n^{(k)}(0)
-\]
+$$
 exists for every $k$. Prove that $(g_n)$ converges uniformly on compact subsets of $\CC$, and that its limit is entire.
 :::
 

@@ -34,20 +34,20 @@ b) Prove that $x_{n+1} \geq x_n$ for each $n \in \NN$.
 ::: pf-step
 
 For every $n\ge1$,
-\[
+$$
 1\le x_n\le2.
-\]
+$$
 
 ::: pf-proof
 
 We prove this by induction. For $n=1$, $x_1=1$, so the claim holds. Assume $1\le x_n\le2$. Then
-\[
+$$
 x_{n+1}=1+\frac{x_n^2}{4}\ge1,
-\]
+$$
 and, since $0\le x_n\le2$,
-\[
+$$
 x_{n+1}=1+\frac{x_n^2}{4}\le1+\frac{4}{4}=2.
-\]
+$$
 Thus $1\le x_{n+1}\le2$, completing the induction. In particular, $x_n\le2$ for all $n$.
 
 :::
@@ -57,19 +57,19 @@ Thus $1\le x_{n+1}\le2$, completing the induction. In particular, $x_n\le2$ for 
 ::: {.pf-step #s2}
 
 For every $n\ge1$,
-\[
+$$
 x_{n+1}-x_n=\frac{(x_n-2)^2}{4}.
-\]
+$$
 
 ::: pf-proof
 
 Using the recurrence,
-\[
+$$
 x_{n+1}-x_n
 =1+\frac{x_n^2}{4}-x_n
 =\frac{x_n^2-4x_n+4}{4}
 =\frac{(x_n-2)^2}{4}.
-\]
+$$
 
 :::
 

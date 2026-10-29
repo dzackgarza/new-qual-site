@@ -25,12 +25,12 @@ must hold. If equality can fail, determine which inclusion, if either, always ho
 
 ::: {.pf-step #s1-1}
 
-For every index \(\alpha\),
-\[
+For every index $\alpha$,
+$$
 A_\alpha
 \subseteq
 \bigcup_\beta A_\beta.
-\]
+$$
 
 
 ::: pf-proof
@@ -44,18 +44,18 @@ This is the defining property of a union.
 ::: {.pf-step #s1-2}
 
 Taking closures,
-\[
+$$
 \boxed{
 \overline{A_\alpha}
 \subseteq
 \overline{\bigcup_\beta A_\beta}}
-\]
-for every \(\alpha\).
+$$
+for every $\alpha$.
 
 
 ::: pf-proof
 
-Closure is monotone: if \(A\subseteq B\), then \(\overline A\subseteq\overline B\).
+Closure is monotone: if $A\subseteq B$, then $\overline A\subseteq\overline B$.
 Apply this to step [](#s1-1){.pf-ref}.
 
 :::
@@ -65,17 +65,17 @@ Apply this to step [](#s1-1){.pf-ref}.
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{
 \bigcup_\alpha\overline{A_\alpha}
 \subseteq
 \overline{\bigcup_\alpha A_\alpha}}.
-\]
+$$
 
 
 ::: pf-proof
 
-Every set \(\overline{A_\alpha}\) is contained in the right-hand side by step [](#s1-2){.pf-ref}, so their union is also contained there.
+Every set $\overline{A_\alpha}$ is contained in the right-hand side by step [](#s1-2){.pf-ref}, so their union is also contained there.
 
 :::
 
@@ -83,12 +83,12 @@ Every set \(\overline{A_\alpha}\) is contained in the right-hand side by step []
 
 ::: pf-step
 
-Each \(A_n\) is closed.
+Each $A_n$ is closed.
 
 
 ::: pf-proof
 
-Singletons are closed in the Hausdorff space \(\RR\).
+Singletons are closed in the Hausdorff space $\RR$.
 
 :::
 
@@ -97,10 +97,10 @@ Singletons are closed in the Hausdorff space \(\RR\).
 ::: {.pf-step #s1-5}
 
 Hence
-\[
+$$
 \boxed{
 \overline{A_n}=A_n}.
-\]
+$$
 
 
 ::: pf-proof
@@ -114,12 +114,12 @@ The closure of a closed set is itself.
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{
 \bigcup_{n=1}^{\infty}\overline{A_n}
 =
 \left\{\frac1n:n\ge1\right\}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -132,15 +132,15 @@ Use step [](#s1-5){.pf-ref}.
 
 ::: {.pf-step #s1-7}
 
-The point \(0\) belongs to
-\[
+The point $0$ belongs to
+$$
 \overline{\bigcup_{n=1}^{\infty}A_n}.
-\]
+$$
 
 
 ::: pf-proof
 
-Every open interval around \(0\) contains \(1/n\) for all sufficiently large \(n\), since \(1/n\to0\).
+Every open interval around $0$ contains $1/n$ for all sufficiently large $n$, since $1/n\to0$.
 
 :::
 
@@ -149,15 +149,15 @@ Every open interval around \(0\) contains \(1/n\) for all sufficiently large \(n
 ::: {.pf-step #s1-8}
 
 But
-\[
+$$
 0\notin
 \bigcup_{n=1}^{\infty}\overline{A_n}.
-\]
+$$
 
 
 ::: pf-proof
 
-The right-hand side is exactly the set of positive numbers \(1/n\) by step [](#s1-6){.pf-ref}.
+The right-hand side is exactly the set of positive numbers $1/n$ by step [](#s1-6){.pf-ref}.
 
 :::
 
@@ -170,7 +170,7 @@ Thus the inclusion in step [](#s1-3){.pf-ref} can be strict.
 
 ::: pf-proof
 
-Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} show that \(0\) belongs to the right-hand side but not the left-hand side.
+Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} show that $0$ belongs to the right-hand side but not the left-hand side.
 
 :::
 
@@ -179,13 +179,13 @@ Steps [](#s1-7){.pf-ref} through [](#s1-8){.pf-ref} show that \(0\) belongs to t
 ::: {.pf-step #s1-10}
 
 Hence the correct general statement is
-\[
+$$
 \boxed{
 \bigcup_\alpha\overline{A_\alpha}
 \subseteq
 \overline{\bigcup_\alpha A_\alpha},
 }
-\]
+$$
 and equality need not hold.
 
 

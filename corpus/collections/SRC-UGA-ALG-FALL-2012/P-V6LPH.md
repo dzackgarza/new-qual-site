@@ -45,9 +45,9 @@ By Sylow's theorems, $n_3$ is $1$ or $10$, and $n_5$ is $1$ or $6$. If both were
 ::: {.pf-step #s1-2}
 
 Every group of order $30$ has a presentation
-\[
+$$
 \boxed{G_a=\langle r,s\mid r^{15}=s^2=1,\ srs^{-1}=r^a\rangle,\quad a\in\{1,4,11,14\}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -61,9 +61,9 @@ By step [](#s1-1){.pf-ref}, choose $H=\langle r\rangle\trianglelefteq G$ of orde
 ::: {.pf-step #s1-3}
 
 The number of isomorphism classes of groups of order $30$ is
-\[
+$$
 \boxed{4}.
-\]
+$$
 
 
 ::: pf-proof

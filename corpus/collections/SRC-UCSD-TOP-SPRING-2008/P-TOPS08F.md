@@ -42,9 +42,9 @@ setup.
 
 ::: {.pf-step #s1-2}
 By the projection formula relating cap products and pushforward/pullback:
-\[
+$$
 f_*\big(f^*(\alpha) \frown [S^n]\big) = \alpha \frown f_*([S^n]) = \alpha \frown [N] \quad \text{for all } \alpha \in H^k(N; \ZZ).
-\]
+$$
 
 ::: pf-proof
 naturality of cap products under continuous maps.
@@ -63,13 +63,13 @@ Poincaré Duality Theorem for closed oriented manifolds.
 
 ::: pf-step
 The identity in step [](#s1-2){.pf-ref} reads:
-\[
+$$
 f_* \circ D_{S^n} \circ f^* = D_N.
-\]
+$$
 Because $D_N$ is an isomorphism, the pullback map on cohomology:
-\[
+$$
 f^*: H^k(N; \ZZ) \hookrightarrow H^k(S^n; \ZZ)
-\]
+$$
 must be injective for every $k$.
 
 ::: pf-proof
@@ -89,12 +89,12 @@ Vanishing of intermediate homology groups:
 
 ::: pf-step
 The cohomology of the $n$-sphere is:
-\[
+$$
 H^k(S^n; \ZZ) \cong \begin{cases}
 \ZZ & k = 0, n, \\
 0 & 1 \le k \le n-1.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 cellular cohomology of $S^n$.
@@ -162,12 +162,12 @@ dimension of manifold.
 
 ::: pf-step
 Conclusion: The integral homology of $N$ is that of an $n$-sphere:
-\[
+$$
 H_k(N; \ZZ) \cong \begin{cases}
 \ZZ & k = 0, n, \\
 0 & \text{otherwise.}
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.

@@ -30,21 +30,21 @@ Use the transfer sequence for the covering $X \times S^\infty \to X \times \RP^\
 
 ::: {.solution}
 Put
-\[
+$$
 E=X\times S^\infty,
 \qquad
 B=X\times\RP^\infty,
-\]
+$$
 and use $\ZZ_2$ coefficients. The projection $p:E\to B$ is a double cover, so its transfer sequence is
-\[
+$$
 \cdots\to H_n(B)\overset{\tau_*}{\longrightarrow}H_n(E)
 \overset{p_*}{\longrightarrow}H_n(B)
 \overset{\delta}{\longrightarrow}H_{n-1}(B)\to\cdots .
-\]
+$$
 Since $S^\infty$ is contractible, projection to the first factor gives
-\[
+$$
 H_n(E)\cong H_n(X).
-\]
+$$
 
 ::: pf
 
@@ -55,14 +55,14 @@ Under this identification, $p_*:H_n(X)\to H_n(B)$ is split injective.
 ::: pf-proof
 
 Choose $e_0\in S^\infty$ and write $b_0=[e_0]\in\RP^\infty$. After deforming $E$ to $X\times\{e_0\}$, the covering map becomes the inclusion
-\[
+$$
 j:X\to X\times\RP^\infty,
 \qquad j(x)=(x,b_0).
-\]
+$$
 The projection
-\[
+$$
 q:B\to X
-\]
+$$
 satisfies $qj=\operatorname{id}_X$, so $j_*=p_*$ is split injective.
 
 :::
@@ -72,17 +72,17 @@ satisfies $qj=\operatorname{id}_X$, so $j_*=p_*$ is split injective.
 ::: {.pf-step #s2}
 
 The transfer map
-\[
+$$
 \tau_*:H_n(B)\to H_n(E)\cong H_n(X)
-\]
+$$
 is zero for every $n$.
 
 ::: pf-proof
 
 Let $r:E\to X$ be projection to the first factor. On singular chains, $\tau$ sends a simplex in $B$ to the sum of its two lifts. The two lifts have the same projection to $X$, hence
-\[
+$$
 r_\#\tau(\sigma)=2\,q_\#(\sigma)=0
-\]
+$$
 over $\ZZ_2$. Thus $r_*\tau_*=0$. Since $r_*:H_n(E)\to H_n(X)$ is an isomorphism, $\tau_*=0$.
 
 :::
@@ -92,12 +92,12 @@ over $\ZZ_2$. Thus $r_*\tau_*=0$. Since $r_*:H_n(E)\to H_n(X)$ is an isomorphism
 ::: {.pf-step #s3}
 
 Hence for every $n$ the transfer sequence breaks into a split short exact sequence
-\[
+$$
 0\longrightarrow H_n(X)
 \overset{p_*}{\longrightarrow}H_n(B)
 \overset{\delta}{\longrightarrow}H_{n-1}(B)
 \longrightarrow0.
-\]
+$$
 
 ::: pf-proof
 
@@ -110,20 +110,20 @@ By step [](#s2){.pf-ref}, exactness makes $\delta$ surjective. By step [](#s1){.
 ::: pf-step
 
 Inductively,
-\[
+$$
 \boxed{
 H_n(X\times\RP^\infty;\ZZ_2)
 \cong
 \bigoplus_{i=0}^{n}H_i(X;\ZZ_2).
 }
-\]
+$$
 
 ::: pf-proof
 
 From step [](#s3){.pf-ref},
-\[
+$$
 H_n(B)\cong H_n(X)\oplus H_{n-1}(B).
-\]
+$$
 For $n=0$, $H_0(B)\cong H_0(X)$ because $\RP^\infty$ is connected. Iterating the displayed recurrence yields the stated direct sum.
 
 :::

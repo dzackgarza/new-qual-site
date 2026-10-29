@@ -25,11 +25,11 @@ Find a path connected, locally path connected space which is not semilocally sim
 ::: {.solution}
 The Hawaiian earring is such an example.
 Let
-\[
+$$
 X=\bigcup_{n\ge1} C_n\subset\RR^2,
 \qquad
 C_n=\{(x,y):(x-1/n)^2+y^2=1/n^2\}.
-\]
+$$
 All circles meet at the origin.
 
 ::: pf

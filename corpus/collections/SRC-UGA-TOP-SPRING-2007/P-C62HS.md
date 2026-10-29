@@ -32,9 +32,9 @@ audit:
 
 ::: {.problem}
 Prove that if $(X,d)$ is a compact metric space, $f:X\to X$ is a continuous map, and $C$ is a constant with $0<C<1$ such that
-\[
+$$
 d(f(x),f(y))\leq C d(x,y)
-\]
+$$
 for all $x,y\in X$, then $f$ has a fixed point.
 :::
 
@@ -59,30 +59,30 @@ Assume this from now on.
 ::: {.pf-step #s2}
 
 Define
-\[
+$$
 g:X\to\RR,
 \qquad
 g(x)=d(x,f(x)).
-\]
+$$
 Then $g$ is continuous.
 
 ::: pf-proof
 
 For $x,y\in X$, the triangle inequality gives
-\[
+$$
 d(x,f(x))
 \le d(x,y)+d(y,f(y))+d(f(y),f(x)).
-\]
+$$
 Hence
-\[
+$$
 g(x)-g(y)
 \le d(x,y)+d(f(x),f(y))
 \le (1+C)d(x,y).
-\]
+$$
 Interchanging $x$ and $y$ yields
-\[
+$$
 |g(x)-g(y)|\le(1+C)d(x,y).
-\]
+$$
 Thus $g$ is Lipschitz, hence continuous.
 
 :::
@@ -98,10 +98,10 @@ The function $g$ attains a minimum at some point $x_0\in X$.
 By step [](#s1){.pf-ref}, $X$ is nonempty, and by hypothesis it is compact.
 The continuous real-valued function $g$ from step [](#s2){.pf-ref} therefore attains its minimum.
 Choose $x_0\in X$ such that
-\[
+$$
 g(x_0)\le g(x)
 \qquad\text{for all }x\in X.
-\]
+$$
 
 :::
 
@@ -115,7 +115,7 @@ The point $x_0$ from step [](#s3){.pf-ref} is a fixed point of $f$.
 
 Suppose $f(x_0)\ne x_0$.
 Then $g(x_0)=d(x_0,f(x_0))>0$, while the contraction inequality gives
-\[
+$$
 \begin{aligned}
 g(f(x_0))
 &=d(f(x_0),f(f(x_0)))\\
@@ -123,7 +123,7 @@ g(f(x_0))
 &=C g(x_0)\\
 &<g(x_0),
 \end{aligned}
-\]
+$$
 because $0<C<1$.
 This contradicts the minimality of $g(x_0)$.
 Hence $g(x_0)=0$, so $f(x_0)=x_0$.
@@ -139,9 +139,9 @@ In fact, the fixed point is unique.
 ::: pf-proof
 
 If $x$ and $y$ are fixed points, then
-\[
+$$
 d(x,y)=d(f(x),f(y))\le C d(x,y).
-\]
+$$
 Since $C<1$, this forces $d(x,y)=0$, hence $x=y$.
 
 :::

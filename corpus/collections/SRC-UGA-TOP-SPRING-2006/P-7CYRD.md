@@ -59,20 +59,20 @@ For a map $f:X\to X$ between metric spaces:
 
 ::: pf-step
 **$\varepsilon$-$\delta$ criterion:** for every $x\in X$ and every $\varepsilon>0$, there is $\delta>0$ such that
-\[
+$$
 d(x,y)<\delta
 \implies
 d(f(x),f(y))<\varepsilon
-\]
+$$
 for every $y\in X$.
 
 :::
 
 ::: {.pf-step #s1-3}
 **Sequential criterion:** whenever $x_n\to x$ in $X$, one has
-\[
+$$
 f(x_n)\to f(x).
-\]
+$$
 
 :::
 
@@ -96,20 +96,20 @@ The point $x$ from step [](#s2){.pf-ref} is an interior point of $f^{-1}(U)$.
 Suppose not.
 Then every ball $B_{1/n}(x)$ contains a point outside $f^{-1}(U)$.
 Choose
-\[
+$$
 x_n\in B_{1/n}(x)\setminus f^{-1}(U).
-\]
+$$
 Then $d(x_n,x)<1/n$, hence $x_n\to x$.
 
 By the sequential criterion,
-\[
+$$
 f(x_n)\to f(x).
-\]
+$$
 Since $x\in f^{-1}(U)$, we have $f(x)\in U$.
 Because $U$ is open and $f(x_n)\to f(x)$, there is $N$ such that
-\[
+$$
 n\ge N\implies f(x_n)\in U.
-\]
+$$
 But $x_n\notin f^{-1}(U)$ for every $n$, so $f(x_n)\notin U$ for every $n$, a contradiction.
 :::
 

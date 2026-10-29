@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let $V$ be the vector space of all real polynomials $p(x)$.
 Define $T,S:V\to V$ by
-\[
+$$
 T(p)(x)=xp(x),\qquad S(p)(x)=p'(x),
-\]
+$$
 and interpret $(ST)(p)$ as $S(T(p))$.
 Which statement is true?
 

@@ -15,9 +15,9 @@ audit:
 
 ::: {.problem}
 Show that the set
-\[
+$$
 \{A\in M_n(\CC):\det A\ne0\}
-\]
+$$
 is dense in $M_n(\CC)$.
 :::
 

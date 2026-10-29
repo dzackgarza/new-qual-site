@@ -29,7 +29,7 @@ Find $\dim_{\RR}(\ker(A))$, and use this to determine $\dim_{\RR}(\operatorname{
 ::: pf-step
 
 Row reduction gives
-\[
+$$
 \begin{pmatrix}
 1&-1&2\\
 -1&2&-5\\
@@ -47,7 +47,7 @@ Row reduction gives
 0&1&-3\\
 0&0&0
 \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 
@@ -60,22 +60,22 @@ Use $R_2\leftarrow R_2+R_1$, $R_3\leftarrow R_3-2R_1$, and then $R_3\leftarrow R
 ::: {.pf-step #s2}
 
 The kernel is one-dimensional:
-\[
+$$
 \ker A=\operatorname{span}\left\{\begin{pmatrix}1\\3\\1\end{pmatrix}\right\}.
-\]
+$$
 
 ::: pf-proof
 
 The reduced equations are
-\[
+$$
 y-3z=0,
 \qquad
 x-y+2z=0.
-\]
+$$
 Thus $y=3z$ and $x=z$, so every kernel vector is
-\[
+$$
 z(1,3,1)^t.
-\]
+$$
 Hence $\dim\ker A=1$.
 
 :::
@@ -85,18 +85,18 @@ Hence $\dim\ker A=1$.
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{\dim\ker A=1,
 \qquad
 \dim\operatorname{im}A=2.}
-\]
+$$
 
 ::: pf-proof
 
 The rank--nullity theorem for $T_A:\RR^3\to\RR^3$ gives
-\[
+$$
 \dim\ker A+\dim\operatorname{im}A=3.
-\]
+$$
 Using step [](#s2){.pf-ref} yields $1+\dim\operatorname{im}A=3$.
 
 :::

@@ -20,9 +20,9 @@ audit:
 ::: {.problem}
 Let $G$ be a group.
 An automorphism $\phi: G \rightarrow G$ is called *inner* if the automorphism is given by conjugation by a fixed group element $g$, i.e.,
-\[
+$$
 \phi=\phi_{g}: h \mapsto g h g^{-1} .
-\]
+$$
 
 a. Prove that the set of inner automorphisms forms a normal subgroup of the group of all automorphisms of $G$.
 
@@ -70,9 +70,9 @@ Inversion is an automorphism of the cyclic group $C_3$ and is nontrivial. Becaus
 ::: {.pf-step #s3}
 
 For $g\in S_n$,
-\[
+$$
 \boxed{\phi_g(s_i)=(g(i),g(i+1))}.
-\]
+$$
 
 ::: pf-proof
 

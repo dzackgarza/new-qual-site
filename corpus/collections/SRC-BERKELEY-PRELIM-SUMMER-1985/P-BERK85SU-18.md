@@ -26,11 +26,11 @@ audit:
 
 ::: {.problem}
 Solve the system
-\[
+$$
 \frac{dy_1}{dx}=-3y_1+10y_2,
 \qquad
 \frac{dy_2}{dx}=-3y_1+8y_2.
-\]
+$$
 :::
 
 ::: {.solution}

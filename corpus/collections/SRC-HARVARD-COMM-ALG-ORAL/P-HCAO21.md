@@ -33,9 +33,9 @@ For the second question, assume that a $k$-algebra homomorphism
 $\varepsilon:R\to k$ is specified, and let $R$ act on $k$ by
 $r\cdot a=\varepsilon(r)a$.
 What is
-\[
+$$
 \operatorname{Hom}_R\!\left(k,\operatorname{Hom}_k(R,k)\right)?
-\]
+$$
 :::
 
 ::: {.solution}

@@ -51,9 +51,9 @@ Applying Sylow 3 yields
 Let $H_{13}, H_{31}$ be the two normal subgroups of $G$.
 Taking the quotient $\tilde G \definedas G/H_{31}$ yields a group of order $5\cdot 13$, and a similar argument as above using the Sylow theorems shows that $\tilde G$ has a normal subgroup of order 13. By the subgroup correspondence theorem, this yields a normal subgroup $N_1\normal G$ containing $H_{31}$ which has order $13\cdot 31$.
 So define $N_2 \definedas H_{31}$ to obtain
-\[
+$$
 G \trianglerighteq N_1 \trianglerighteq N_2 \definedas H_{31} \trianglerighteq 0
-.\]
+.$$
 Since the quotients $N_i/N_{i+1}$ have prime power order, they are cyclic and thus simple.
 We know $N_1$ is normal in $G$ since it came from extending a normal group in a quotient, and we know $N_2$ is normal in $N_1$ since it was normal in all of $G$.
 So $G$ is solvable.

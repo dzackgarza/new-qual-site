@@ -32,9 +32,9 @@ Show the isomorphism between cellular and singular homology is natural in the fo
 
 ::: {.solution}
 The cellular chain group of a CW complex $X$ is
-\[
+$$
 C_n^{CW}(X)=H_n(X^n,X^{n-1}).
-\]
+$$
 Let $f:X\to Y$ be cellular, so $f(X^n)\subseteq Y^n$ for every $n$.
 
 ::: pf
@@ -42,16 +42,16 @@ Let $f:X\to Y$ be cellular, so $f(X^n)\subseteq Y^n$ for every $n$.
 ::: pf-step
 
 For each $n$, $f$ induces a homomorphism
-\[
+$$
 f_n:H_n(X^n,X^{n-1})\longrightarrow H_n(Y^n,Y^{n-1}).
-\]
+$$
 
 ::: pf-proof
 
 Cellularity says precisely that
-\[
+$$
 f:(X^n,X^{n-1})\longrightarrow(Y^n,Y^{n-1})
-\]
+$$
 is a map of pairs. Relative homology is functorial, so the displayed map is defined.
 
 :::
@@ -61,28 +61,28 @@ is a map of pairs. Relative homology is functorial, so the displayed map is defi
 ::: pf-step
 
 The maps $f_n$ commute with the cellular boundary operators, hence form a chain map
-\[
+$$
 f_\#:C_*^{CW}(X)\to C_*^{CW}(Y).
-\]
+$$
 
 ::: pf-proof
 
 The cellular boundary is the composite
-\[
+$$
 H_n(X^n,X^{n-1})
 \xrightarrow{\partial}
 H_{n-1}(X^{n-1})
 \longrightarrow
 H_{n-1}(X^{n-1},X^{n-2}).
-\]
+$$
 Both arrows are natural with respect to maps of pairs: the first by naturality of the long exact sequence and the second by functoriality of relative homology. Therefore the square
-\[
+$$
 \begin{array}{ccc}
 C_n^{CW}(X)&\xrightarrow{d_n}&C_{n-1}^{CW}(X)\\
 \downarrow f_n&&\downarrow f_{n-1}\\
 C_n^{CW}(Y)&\xrightarrow{d_n}&C_{n-1}^{CW}(Y)
 \end{array}
-\]
+$$
 commutes.
 
 :::
@@ -92,31 +92,31 @@ commutes.
 ::: pf-step
 
 Under the canonical isomorphisms
-\[
+$$
 H_n^{CW}(X)\cong H_n(X),
 \qquad
 H_n^{CW}(Y)\cong H_n(Y),
-\]
+$$
 the homomorphism induced by the cellular chain map is the ordinary singular-homology map $f_*$.
 
 ::: pf-proof
 
 The cellular-homology isomorphism is constructed from the long exact sequences of the skeletal pairs and triples
-\[
+$$
 (X^n,X^{n-1},X^{n-2}).
-\]
+$$
 Every map appearing in that construction is a connecting homomorphism, inclusion-induced map, or quotient arising from exactness. All of these are natural. Applying $f$ gives a morphism between the entire systems of exact sequences for $X$ and $Y$, and the comparison maps defining
-\[
+$$
 H_n^{CW}(-)\xrightarrow{\cong}H_n(-)
-\]
+$$
 commute with this morphism. Consequently the diagram
-\[
+$$
 \begin{array}{ccc}
 H_n^{CW}(X)&\xrightarrow{(f_\#)_*}&H_n^{CW}(Y)\\
 \downarrow\cong&&\downarrow\cong\\
 H_n(X)&\xrightarrow{f_*}&H_n(Y)
 \end{array}
-\]
+$$
 commutes.
 
 :::

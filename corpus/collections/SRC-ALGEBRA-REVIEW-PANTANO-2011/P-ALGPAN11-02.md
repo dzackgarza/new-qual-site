@@ -57,10 +57,10 @@ $F_2$ is not a field.
 ::: pf-proof
 
 The integer $2$ belongs to $F_2$, whereas $1/2$ does not, since an equality
-\[
+$$
 \frac12=a+b\sqrt2,
 \qquad a,b\in\ZZ,
-\]
+$$
 would force $b=0$ and then $a=1/2\notin\ZZ$.
 
 :::
@@ -76,9 +76,9 @@ $F_3$ is a field.
 It is $\QQ(\sqrt2)$.
 Addition and multiplication preserve the form $a+b\sqrt2$.
 If $a+b\sqrt2\ne0$, then
-\[
+$$
 (a+b\sqrt2)^{-1}=\frac{a-b\sqrt2}{a^2-2b^2}.
-\]
+$$
 The denominator is nonzero (otherwise $a/b=\pm\sqrt2$ when $b\ne0$), and the coefficients of the displayed inverse are rational.
 
 :::
@@ -92,9 +92,9 @@ $F_4$ is not a field.
 ::: pf-proof
 
 It contains $\alpha=\sqrt[4]{2}$, but closure under multiplication would require
-\[
+$$
 \alpha^2=\sqrt2=a+b\alpha
-\]
+$$
 for some $a,b\in\QQ$.
 This would give the nontrivial $\QQ$-linear relation $\alpha^2-a-b\alpha=0$ among $1,\alpha,\alpha^2$.
 But $T^4-2$ is irreducible over $\QQ$ by Eisenstein at $2$, so $1,\alpha,\alpha^2,\alpha^3$ are linearly independent over $\QQ$.

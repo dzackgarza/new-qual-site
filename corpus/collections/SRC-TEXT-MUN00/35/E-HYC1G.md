@@ -97,9 +97,9 @@ definition of preimage.
 
 ::: pf-step
 By the definition of the coherent topology:
-\[
+$$
 f^{-1}(V) \text{ is open in } X \iff \forall i \ge 1, \, (f|_{X_i})^{-1}(V) \text{ is open in } X_i.
-\]
+$$
 Thus $f$ is continuous on $X$ if and only if $f|_{X_i}: X_i \to Y$ is continuous for all $i \ge 1$.
 
 ::: pf-proof

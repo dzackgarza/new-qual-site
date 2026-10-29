@@ -38,11 +38,11 @@ Let $L=\operatorname{Frac}(B)$, and fix an algebraic closure $\overline L$.
 ::: {.pf-step #s1}
 
 Over $\overline L$, write
-\[
+$$
 f(x)=\prod_{i=1}^m(x-\alpha_i),
 \qquad
 g(x)=\prod_{j=1}^n(x-\beta_j).
-\]
+$$
 
 ::: pf-proof
 
@@ -60,9 +60,9 @@ Every root of $fg$ in $\overline L$ is integral over $A$.
 ::: pf-proof
 
 By hypothesis,
-\[
+$$
 fg\in C[x],
-\]
+$$
 and $fg$ is monic because $f$ and $g$ are monic.
 Thus any root $\gamma$ of $fg$ satisfies a monic polynomial with coefficients in $C$, namely $fg$ itself.
 Hence $\gamma$ is integral over $C$.
@@ -83,9 +83,9 @@ Every $\alpha_i$ and every $\beta_j$ is integral over $A$.
 ::: pf-proof
 
 By step [](#s1){.pf-ref}, each $\alpha_i$ and each $\beta_j$ is a root of
-\[
+$$
 fg=f\,g.
-\]
+$$
 The assertion therefore follows from step [](#s2){.pf-ref}.
 
 :::
@@ -101,9 +101,9 @@ Every coefficient of $f$ and every coefficient of $g$ is integral over $A$.
 The elements of $\overline L$ integral over $A$ form a subring.
 By step [](#s3){.pf-ref}, all the roots $\alpha_i$ are integral over $A$.
 The coefficients of the monic polynomial
-\[
+$$
 f(x)=\prod_{i=1}^m(x-\alpha_i)
-\]
+$$
 are, up to sign, elementary symmetric polynomials in the $\alpha_i$.
 They are therefore sums of products of elements integral over $A$, hence are themselves integral over $A$.
 
@@ -122,9 +122,9 @@ All coefficients of $f$ and $g$ belong to $C$.
 By hypothesis, the coefficients of $f$ and $g$ lie in $B$.
 By step [](#s4){.pf-ref}, they are integral over $A$.
 But
-\[
+$$
 C=\{b\in B:b\text{ is integral over }A\}.
-\]
+$$
 Hence every coefficient of $f$ and $g$ lies in $C$, as required.
 
 :::

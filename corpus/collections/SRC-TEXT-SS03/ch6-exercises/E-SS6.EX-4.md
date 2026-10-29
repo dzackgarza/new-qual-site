@@ -48,31 +48,31 @@ $$
 
 ::: {.solution}
 The generalized binomial theorem gives
-\[
+$$
 (1-z)^{-\alpha}=\sum_{n=0}^\infty \frac{(\alpha)_n}{n!}z^n,
 \qquad |z|<1,
-\]
+$$
 where
-\[
+$$
 (\alpha)_n=\alpha(\alpha+1)\cdots(\alpha+n-1)
 =\frac{\Gamma(n+\alpha)}{\Gamma(\alpha)}.
-\]
+$$
 Hence
-\[
+$$
 a_n(\alpha)=\frac{\Gamma(n+\alpha)}{\Gamma(\alpha)\Gamma(n+1)}.
-\]
+$$
 For fixed $\alpha\notin\{0,-1,-2,\ldots\}$, the gamma-ratio asymptotic
-\[
+$$
 \frac{\Gamma(n+\alpha)}{\Gamma(n+1)}\sim n^{\alpha-1}
-\]
+$$
 gives
-\[
+$$
 \boxed{a_n(\alpha)\sim \frac{n^{\alpha-1}}{\Gamma(\alpha)}}.
-\]
+$$
 
 If $\alpha=-m$ with $m\in\ZZ_{\ge0}$, then
-\[
+$$
 (1-z)^{-\alpha}=(1-z)^m
-\]
+$$
 is a polynomial of degree $m$, so $a_n(-m)=0$ for every $n>m$. This is why the asymptotic statement requires excluding the nonpositive integers.
 :::

@@ -20,14 +20,14 @@ audit:
 
 ::: {.problem}
 Given
-\[
+$$
 \int_{-\infty}^{\infty}e^{-x^2}\,dx=\sqrt\pi,
-\]
+$$
 evaluate
-\[
+$$
 I=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}
 e^{-(x^2+(y-x)^2+y^2)}\,dx\,dy.
-\]
+$$
 :::
 
 ::: {.solution}

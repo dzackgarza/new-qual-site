@@ -24,17 +24,17 @@ Prove that $f(1) = 0$ and that $f(u^n) = n u^{n-1} f(u)$ for all $n \in \NN$ and
 
 ::: {.solution}
 Putting $x=y=1$ gives
-\[
+$$
 f(1)=f(1)+f(1),
-\]
+$$
 so $f(1)=0$.
 
 We prove by induction on $n\ge1$ that
-\[
+$$
 f(u^n)=nu^{n-1}f(u).
-\]
+$$
 For $n=1$ this is immediate. If it holds for $n$, then
-\[
+$$
 \begin{aligned}
 f(u^{n+1})
 &=f(u^n u)\\
@@ -42,6 +42,6 @@ f(u^{n+1})
 &=u^n f(u)+u\bigl(nu^{n-1}f(u)\bigr)\\
 &=(n+1)u^n f(u).
 \end{aligned}
-\]
+$$
 Thus the formula holds for every positive integer $n$.
 :::

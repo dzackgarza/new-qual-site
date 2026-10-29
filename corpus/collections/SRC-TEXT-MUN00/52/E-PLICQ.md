@@ -29,26 +29,26 @@ Show that $\pi_1(X, x_0)$ is abelian if and only if for every pair $\alpha$ and 
 :::
 
 ::: {.solution}
-For two paths \(\alpha,\beta:x_0\to x_1\), set
-\[
+For two paths $\alpha,\beta:x_0\to x_1$, set
+$$
 \lambda=\alpha*\bar\beta,
-\]
-a loop at \(x_0\). For any loop \(f\) at \(x_0\), a direct path calculation gives
-\[
+$$
+a loop at $x_0$. For any loop $f$ at $x_0$, a direct path calculation gives
+$$
 \widehat\beta^{-1}\widehat\alpha([f])
 =[\lambda^{-1}*f*\lambda],
-\]
-so \(\widehat\beta^{-1}\widehat\alpha\) is the inner automorphism determined by \([\lambda]\in\pi_1(X,x_0)\).
+$$
+so $\widehat\beta^{-1}\widehat\alpha$ is the inner automorphism determined by $[\lambda]\in\pi_1(X,x_0)$.
 
-If \(\pi_1(X,x_0)\) is abelian, every inner automorphism is the identity. Hence
-\[
+If $\pi_1(X,x_0)$ is abelian, every inner automorphism is the identity. Hence
+$$
 \widehat\beta^{-1}\widehat\alpha=\operatorname{id},
-\]
-so \(\widehat\alpha=\widehat\beta\) for every \(\alpha,\beta\).
+$$
+so $\widehat\alpha=\widehat\beta$ for every $\alpha,\beta$.
 
-Conversely, suppose \(\widehat\alpha=\widehat\beta\) for every pair of paths from \(x_0\) to \(x_1\). Fix one path \(\beta:x_0\to x_1\). For an arbitrary loop \(\lambda\) at \(x_0\), put
-\[
+Conversely, suppose $\widehat\alpha=\widehat\beta$ for every pair of paths from $x_0$ to $x_1$. Fix one path $\beta:x_0\to x_1$. For an arbitrary loop $\lambda$ at $x_0$, put
+$$
 \alpha=\lambda*\beta.
-\]
-Then the displayed calculation shows that the inner automorphism induced by \([\lambda]\) is the identity. Since \([\lambda]\) was arbitrary, every element of \(\pi_1(X,x_0)\) is central. Thus \(\pi_1(X,x_0)\) is abelian.
+$$
+Then the displayed calculation shows that the inner automorphism induced by $[\lambda]$ is the identity. Since $[\lambda]$ was arbitrary, every element of $\pi_1(X,x_0)$ is central. Thus $\pi_1(X,x_0)$ is abelian.
 :::

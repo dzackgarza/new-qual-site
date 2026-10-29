@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 For the matrix
 
-\[
+$$
 A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}
-\]
+$$
 
 let $r$ denote its rank and $d$ denote its determinant. What is the value of $r - d$?
 

@@ -34,9 +34,9 @@ Integer pairs $(a,b)$ with $a^2+b^2=n$ are in bijection with Gaussian integers $
 ::: pf-proof
 
 By definition,
-\[
+$$
 N(a+bi)=(a+bi)(a-bi)=a^2+b^2.
-\]
+$$
 Thus counting ordered integer pairs is exactly the same as counting Gaussian integers of the prescribed norm.
 
 :::
@@ -50,21 +50,21 @@ There are exactly four Gaussian integers of norm $3^4$.
 ::: pf-proof
 
 The rational prime $3$ satisfies $3\equiv3\pmod4$, so it remains prime in $\ZZ[i]$. If $N(z)=3^4$, then in the unique factorization domain $\ZZ[i]$ the prime factorization of $z\bar z$ is $3^4$. Since conjugation fixes the Gaussian prime $3$, every Gaussian prime divisor of $z$ is associate to $3$. Hence
-\[
+$$
 z=u3^k
-\]
+$$
 for a unit $u\in\{\pm1,\pm i\}$. Taking norms gives
-\[
+$$
 3^4=N(z)=N(3)^k=3^{2k},
-\]
+$$
 so $k=2$. Therefore
-\[
+$$
 z\in\{9,-9,9i,-9i\},
-\]
+$$
 corresponding to
-\[
+$$
 (9,0),\ (-9,0),\ (0,9),\ (0,-9).
-\]
+$$
 Thus $3^4$ has exactly $4$ ordered representations as a sum of two integer squares.
 
 :::
@@ -78,22 +78,22 @@ There are exactly twenty Gaussian integers of norm $5^4$.
 ::: pf-proof
 
 The prime $5$ splits in $\ZZ[i]$ as
-\[
+$$
 5=(2+i)(2-i)=\pi\bar\pi,
-\]
+$$
 where $\pi$ and $\bar\pi$ are nonassociate Gaussian primes. Hence
-\[
+$$
 5^4=\pi^4\bar\pi^4.
-\]
+$$
 If $N(z)=5^4$, unique factorization gives
-\[
+$$
 z=u\pi^r\bar\pi^{\,4-r}
 \qquad(0\le r\le4),
-\]
+$$
 with $u\in\{\pm1,\pm i\}$. Conversely every such element has norm $5^4$. The five possible exponents $r$ give pairwise nonassociate elements because $\pi$ and $\bar\pi$ are nonassociate, and multiplying by the four units gives four distinct associates in each case. Hence there are
-\[
+$$
 5\cdot4=20
-\]
+$$
 Gaussian integers of norm $5^4$, so $5^4$ has exactly $20$ ordered representations as a sum of two integer squares.
 
 :::
@@ -103,9 +103,9 @@ Gaussian integers of norm $5^4$, so $5^4$ has exactly $20$ ordered representatio
 ::: pf-step
 
 Therefore the requested numbers of representations are
-\[
+$$
 \boxed{4\text{ for }3^4},\qquad \boxed{20\text{ for }5^4}.
-\]
+$$
 
 ::: pf-proof
 

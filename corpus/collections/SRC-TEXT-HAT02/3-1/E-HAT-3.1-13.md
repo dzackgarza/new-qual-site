@@ -44,13 +44,13 @@ Let $Y=K(G,1)$ and fix basepoints throughout.
 ::: {.pf-step #s1}
 
 Proposition 1B.9 gives a bijection
-\[
+$$
 \langle X,K(G,1)\rangle
 \xrightarrow{\cong}
 \operatorname{Hom}(\pi_1(X),G),
 \qquad
 [f]\longmapsto f_*.
-\]
+$$
 
 ::: pf-proof
 
@@ -63,19 +63,19 @@ For a connected CW complex $X$, Proposition 1B.9 classifies based homotopy class
 ::: {.pf-step #s2}
 
 Since $G$ is abelian, every homomorphism
-\[
+$$
 \pi_1(X)\to G
-\]
+$$
 factors uniquely through the abelianization
-\[
+$$
 \pi_1(X)^{\mathrm{ab}}\cong H_1(X;\ZZ).
-\]
+$$
 Hence
-\[
+$$
 \operatorname{Hom}(\pi_1(X),G)
 \cong
 \operatorname{Hom}(H_1(X),G).
-\]
+$$
 
 ::: pf-proof
 
@@ -88,18 +88,18 @@ The commutator subgroup lies in the kernel of every homomorphism to an abelian g
 ::: {.pf-step #s3}
 
 The universal coefficient theorem gives
-\[
+$$
 H^1(X;G)\cong\operatorname{Hom}(H_1(X),G).
-\]
+$$
 
 ::: pf-proof
 
 The cohomological universal coefficient sequence is
-\[
+$$
 0\to\operatorname{Ext}(H_0(X),G)
 \to H^1(X;G)
 \to\operatorname{Hom}(H_1(X),G)\to0.
-\]
+$$
 Since $X$ is connected, $H_0(X)\cong\ZZ$ is free, so the Ext term vanishes.
 
 :::
@@ -109,9 +109,9 @@ Since $X$ is connected, $H_0(X)\cong\ZZ$ is free, so the Ext term vanishes.
 ::: pf-step
 
 Under the identifications in steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, the bijection is exactly
-\[
+$$
 [f]\longmapsto f_*:H_1(X)\to H_1(K(G,1))\cong G.
-\]
+$$
 
 ::: pf-proof
 

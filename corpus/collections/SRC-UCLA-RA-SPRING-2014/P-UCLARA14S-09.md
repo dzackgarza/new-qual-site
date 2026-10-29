@@ -29,9 +29,9 @@ Prove that if $f_n(z)\ne0$ for every $z\in\Omega$ and every $n$, then either $f\
 ::: {.pf-step #s1-1}
 
 Suppose that
-\[
+$$
 f\not\equiv0.
-\]
+$$
 Then every zero of $f$ in $\Omega$ is isolated.
 
 
@@ -46,17 +46,17 @@ This is the identity theorem for holomorphic functions on the connected domain $
 ::: {.pf-step #s1-2}
 
 If $f(z_0)=0$ for some $z_0\in\Omega$, then there exists $r>0$ such that
-\[
+$$
 \overline{B(z_0,r)}\subset\Omega,
-\]
+$$
 $z_0$ is the only zero of $f$ in that closed disk, and
-\[
+$$
 \delta
 \coloneqq
 \min_{|z-z_0|=r}|f(z)|
 >
 0.
-\]
+$$
 
 
 ::: pf-proof
@@ -70,30 +70,30 @@ By step [](#s1-1){.pf-ref}, the zero $z_0$ is isolated. Choose $r>0$ small enoug
 ::: {.pf-step #s1-3}
 
 For all sufficiently large $n$,
-\[
+$$
 |f_n(z)-f(z)|
 <
 |f(z)|
 \qquad
 (|z-z_0|=r).
-\]
+$$
 
 
 ::: pf-proof
 
 The boundary circle
-\[
+$$
 \{z:|z-z_0|=r\}
-\]
+$$
 is compact. By local uniform convergence,
-\[
+$$
 \sup_{|z-z_0|=r}|f_n(z)-f(z)|
 \longrightarrow0.
-\]
+$$
 Choose $n$ large enough that this supremum is less than the number $\delta$ from step [](#s1-2){.pf-ref}. Since
-\[
+$$
 |f(z)|\ge\delta
-\]
+$$
 on the circle, the required strict inequality follows.
 
 :::
@@ -116,11 +116,11 @@ By step [](#s1-3){.pf-ref}, Rouché's theorem applied on the circle $|z-z_0|=r$ 
 ::: {.pf-step #s1-5}
 
 If $f\not\equiv0$, then
-\[
+$$
 f(z)\ne0
 \qquad
 (z\in\Omega).
-\]
+$$
 
 
 ::: pf-proof
@@ -134,13 +134,13 @@ If $f$ had a zero $z_0$, step [](#s1-4){.pf-ref} would force sufficiently large 
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{
 f\equiv0
 \quad\text{or}\quad
 f(z)\ne0\text{ for every }z\in\Omega.
 }
-\]
+$$
 
 
 ::: pf-proof

@@ -27,14 +27,14 @@ Negate the following statements without using the word “not.”
 
 ::: {.solution}
 The first negation is:
-\[
+$$
 \text{There is an }x\in\RR\text{ such that }|x-y|<2017
 \text{ for every }y\in\RR.
-\]
+$$
 
 Using the pointwise definition of continuity on $\RR$, the second negation is:
-\[
+$$
 \exists x\in\RR\ \exists\varepsilon>0\ \forall\delta>0\ \exists y\in\RR:
 |x-y|<\delta\ \text{ and }\ |f(x)-f(y)|\geq\varepsilon.
-\]
+$$
 :::

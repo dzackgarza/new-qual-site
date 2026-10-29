@@ -33,14 +33,14 @@ Show that a retraction is a quotient map.
 
 ::: {.solution}
 (a) Since $p\circ f=\operatorname{id}_Y$, the map $p$ is surjective. Let $U\subseteq Y$ and suppose $p^{-1}(U)$ is open in $X$. Then
-\[
+$$
 U=(p\circ f)^{-1}(U)=f^{-1}(p^{-1}(U)).
-\]
+$$
 Because $f$ is continuous, $U$ is open. Thus $U$ is open iff $p^{-1}(U)$ is open, so $p$ is a quotient map.
 
 (b) If $r:X\to A$ is a retraction, the inclusion $j:A\hookrightarrow X$ is continuous and
-\[
+$$
 r\circ j=\operatorname{id}_A.
-\]
+$$
 Part (a), with $p=r$ and $f=j$, shows that every retraction is a quotient map.
 :::

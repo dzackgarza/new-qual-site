@@ -37,17 +37,17 @@ $\det A=-1$.
 ::: pf-proof
 
 By the definition of the entries,
-\[
+$$
 A=
 \begin{pmatrix}
 2&3\\
 3&4
 \end{pmatrix},
-\]
+$$
 so
-\[
+$$
 \det A=2\cdot4-3\cdot3=-1.
-\]
+$$
 
 :::
 
@@ -61,24 +61,24 @@ $\det B=0$.
 ::: pf-proof
 
 The matrix is
-\[
+$$
 B=
 \begin{pmatrix}
 2&3&4\\
 3&4&5\\
 4&5&6
 \end{pmatrix}.
-\]
+$$
 First replace the third row by the third row minus the second, and then
 replace the second row by the second row minus the first. Neither operation
 changes the determinant, and the result is
-\[
+$$
 \begin{pmatrix}
 2&3&4\\
 1&1&1\\
 1&1&1
 \end{pmatrix}.
-\]
+$$
 This matrix has two equal rows, so its determinant is $0$.
 
 :::
@@ -93,9 +93,9 @@ $\det A+\det B=\boxed{-1}$.
 ::: pf-proof
 
 By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref},
-\[
+$$
 \det A+\det B=-1+0=-1.
-\]
+$$
 Thus the correct choice is (B).
 
 :::

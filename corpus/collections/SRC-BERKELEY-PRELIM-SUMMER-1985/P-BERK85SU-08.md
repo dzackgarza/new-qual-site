@@ -25,13 +25,13 @@ audit:
 
 ::: {.problem}
 Let $f:[a,b]\to\RR$ be continuous. Given $\varepsilon>0$, prove that there is a polynomial $p$ such that
-\[
+$$
 p(a)=f(a),\qquad p'(a)=0,
-\]
+$$
 and
-\[
+$$
 |p(x)-f(x)|<\varepsilon\qquad (x\in[a,b]).
-\]
+$$
 :::
 
 ::: {.solution}

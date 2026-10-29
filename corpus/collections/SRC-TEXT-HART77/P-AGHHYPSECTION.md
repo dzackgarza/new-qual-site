@@ -29,7 +29,7 @@ Since $Y \not\subseteq H$, the image of $f$ in $A(Y)$ is nonzero, and $A(Y)$ is 
 Krull's principal ideal theorem then gives $\height \mfp_i = 1$ for each such minimal prime.
 
 For a finitely generated domain over a field, $\dim A(Y)/\mfp + \height \mfp = \dim A(Y)$, so each component $C_i = V(\mfp_i)$ has
-\[
+$$
 \dim C_i = \dim A(Y) - 1 = r - 1 .
-\]
+$$
 :::

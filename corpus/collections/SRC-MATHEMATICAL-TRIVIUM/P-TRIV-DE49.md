@@ -26,10 +26,10 @@ Compute the stationary temperature distribution $u ( \rho , \theta , z )$ of a s
 ::: {.solution}
 
 The stationary temperature is harmonic in the semi-infinite cylinder
-\[
+$$
 0\leq\rho<1,
 \qquad z>0,
-\]
+$$
 vanishes at $\rho=1$, and is required to remain bounded and decay as $z\to\infty$.
 
 ::: pf
@@ -37,23 +37,23 @@ vanishes at $\rho=1$, and is required to remain bounded and decay as $z\to\infty
 ::: {.pf-step #s1-1}
 
 Separated harmonic modes with angular frequency $m$ have the form
-\[
+$$
 J_m(\alpha\rho)
 \bigl(A\cos(m\theta)+B\sin(m\theta)\bigr)e^{-\alpha z},
-\]
+$$
 where the lateral boundary condition requires
-\[
+$$
 J_m(\alpha)=0.
-\]
+$$
 
 
 ::: pf-proof
 
 In cylindrical coordinates,
-\[
+$$
 \nabla^2u=u_{\rho\rho}+\frac1\rho u_\rho
 +\frac1{\rho^2}u_{\theta\theta}+u_{zz}.
-\]
+$$
 Separating $u=R(\rho)\Theta(\theta)Z(z)$ gives periodic angular modes of integer order $m$, a Bessel equation for $R$, and $Z''=\alpha^2Z$. Regularity at $\rho=0$ selects $J_m$ over $Y_m$, decay in $z$ selects $e^{-\alpha z}$, and $u(1,\theta,z)=0$ gives $J_m(\alpha)=0$.
 
 :::
@@ -63,10 +63,10 @@ Separating $u=R(\rho)\Theta(\theta)Z(z)$ gives periodic angular modes of integer
 ::: {.pf-step #s1-2}
 
 Let $j_{m,n}$ be the $n$th positive zero of $J_m$. For part (a), the solution has the form
-\[
+$$
 u(\rho,z)=\sum_{n=1}^{\infty}A_n
 J_0(j_{0,n}\rho)e^{-j_{0,n}z}.
-\]
+$$
 
 
 ::: pf-proof
@@ -80,22 +80,22 @@ The boundary value $u_0$ at $z=0$ is independent of $\theta$, so only the $m=0$ 
 ::: {.pf-step #s1-3}
 
 The coefficients in part (a) are
-\[
+$$
 A_n=\frac{2u_0}{j_{0,n}J_1(j_{0,n})}.
-\]
+$$
 
 
 ::: pf-proof
 
 The Fourier--Bessel coefficients for the expansion of the constant function $u_0$ on $0<\rho<1$ are
-\[
+$$
 A_n=\frac{2}{J_1(j_{0,n})^2}
 \int_0^1\rho u_0J_0(j_{0,n}\rho)\,d\rho.
-\]
+$$
 Using
-\[
+$$
 \int_0^1\rho J_0(j\rho)\,d\rho=\frac{J_1(j)}j
-\]
+$$
 gives the formula.
 
 :::
@@ -105,12 +105,12 @@ gives the formula.
 ::: {.pf-step #s1-4}
 
 Hence part (a) is
-\[
+$$
 \boxed{
 u(\rho,z)=2u_0\sum_{n=1}^{\infty}
 \frac{J_0(j_{0,n}\rho)}{j_{0,n}J_1(j_{0,n})}
 e^{-j_{0,n}z}.}
-\]
+$$
 
 
 ::: pf-proof
@@ -124,10 +124,10 @@ Insert step [](#s1-3){.pf-ref} into step [](#s1-2){.pf-ref}. The Fourier--Bessel
 ::: {.pf-step #s1-5}
 
 For part (b), only the $m=1$ sine mode occurs, so
-\[
+$$
 u(\rho,\theta,z)=\sin\theta
 \sum_{n=1}^{\infty}B_nJ_1(j_{1,n}\rho)e^{-j_{1,n}z}.
-\]
+$$
 
 
 ::: pf-proof
@@ -141,27 +141,27 @@ The flat-face datum $u_0\rho\sin\theta$ has angular dependence $\sin\theta$, cor
 ::: {.pf-step #s1-6}
 
 The coefficients in part (b) are
-\[
+$$
 B_n=\frac{2u_0}{j_{1,n}J_2(j_{1,n})}.
-\]
+$$
 
 
 ::: pf-proof
 
 Fourier--Bessel orthogonality gives
-\[
+$$
 B_n=\frac{2u_0}{J_2(j_{1,n})^2}
 \int_0^1\rho^2J_1(j_{1,n}\rho)\,d\rho.
-\]
+$$
 The identity
-\[
+$$
 \frac d{d\rho}\left(\rho^2J_2(j\rho)\right)
 =j\rho^2J_1(j\rho)
-\]
+$$
 gives
-\[
+$$
 \int_0^1\rho^2J_1(j\rho)\,d\rho=\frac{J_2(j)}j,
-\]
+$$
 and the result follows.
 
 :::
@@ -171,13 +171,13 @@ and the result follows.
 ::: {.pf-step #s1-7}
 
 Hence part (b) is
-\[
+$$
 \boxed{
 u(\rho,\theta,z)=2u_0\sin\theta
 \sum_{n=1}^{\infty}
 \frac{J_1(j_{1,n}\rho)}{j_{1,n}J_2(j_{1,n})}
 e^{-j_{1,n}z}.}
-\]
+$$
 
 
 ::: pf-proof

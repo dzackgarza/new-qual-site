@@ -21,7 +21,7 @@ Give an example, with proof, of a linear map from $\RR^3$ to some vector space w
 ::: {.solution}
 
 Define
-\[
+$$
 \boxed{
 T:\RR^3\to\RR^2,
 \qquad
@@ -29,7 +29,7 @@ T(x,y,z)
 =
 (2x-y,\,3x-z).
 }
-\]
+$$
 
 ::: pf
 
@@ -41,25 +41,25 @@ The map $T$ is linear.
 ::: pf-proof
 
 It is given by the matrix
-\[
+$$
 \begin{pmatrix}
 2&-1&0\\
 3&0&-1
 \end{pmatrix}.
-\]
+$$
 Hence for
-\[
+$$
 u,v\in\RR^3
-\]
+$$
 and
-\[
+$$
 a,b\in\RR,
-\]
-\[
+$$
+$$
 T(au+bv)
 =
 aT(u)+bT(v).
-\]
+$$
 
 :::
 
@@ -68,28 +68,28 @@ aT(u)+bT(v).
 ::: {.pf-step #s1-2}
 
 The vector
-\[
+$$
 (1,2,3)
-\]
+$$
 lies in the kernel of $T$.
 
 
 ::: pf-proof
 
 Compute
-\[
+$$
 T(1,2,3)
 =
 (2-2,,3-3)
 =
 (0,0).
-\]
+$$
 Therefore
-\[
+$$
 \operatorname{span}\{(1,2,3)\}
 \subseteq
 \ker T.
-\]
+$$
 
 :::
 
@@ -98,29 +98,29 @@ Therefore
 ::: {.pf-step #s1-3}
 
 If
-\[
+$$
 (x,y,z)\in\ker T,
-\]
+$$
 then
-\[
+$$
 y=2x
 \qquad\text{and}\qquad
 z=3x.
-\]
+$$
 
 
 ::: pf-proof
 
 The condition
-\[
+$$
 T(x,y,z)=(0,0)
-\]
+$$
 is exactly the system
-\[
+$$
 2x-y=0,
 \qquad
 3x-z=0.
-\]
+$$
 Solving gives the two displayed equations.
 
 :::
@@ -130,29 +130,29 @@ Solving gives the two displayed equations.
 ::: {.pf-step #s1-4}
 
 Hence every vector in the kernel has the form
-\[
+$$
 (x,y,z)
 =
 x(1,2,3).
-\]
+$$
 
 
 ::: pf-proof
 
 Substitute the equations from step [](#s1-3){.pf-ref}:
-\[
+$$
 (x,y,z)
 =
 (x,2x,3x)
 =
 x(1,2,3).
-\]
+$$
 Therefore
-\[
+$$
 \ker T
 \subseteq
 \operatorname{span}\{(1,2,3)\}.
-\]
+$$
 
 :::
 
@@ -161,13 +161,13 @@ Therefore
 ::: {.pf-step #s1-5}
 
 Thus
-\[
+$$
 \boxed{
 \ker T
 =
 \operatorname{span}\{(1,2,3)\}.
 }
-\]
+$$
 
 
 ::: pf-proof

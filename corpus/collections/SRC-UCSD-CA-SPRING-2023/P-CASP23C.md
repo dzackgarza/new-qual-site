@@ -24,13 +24,13 @@ Prove that $f(z)$ has a zero in $\DD$.
 Suppose that $f$ had no zero in $\DD$. Since $f$ is also nonzero on
 $|z|=1$ by the boundary hypothesis, the function $1/f$ would be holomorphic
 on a neighborhood of $\overline{\DD}$. On the boundary,
-\[
+$$
 \left|\frac1{f(z)}\right|<\frac1m.
-\]
+$$
 The maximum modulus principle would then give
-\[
+$$
 \left|\frac1{f(0)}\right|\le\frac1m,
-\]
+$$
 or $|f(0)|\ge m$, contradicting the hypothesis. Hence $f$ has a zero in
 $\DD$.
 :::

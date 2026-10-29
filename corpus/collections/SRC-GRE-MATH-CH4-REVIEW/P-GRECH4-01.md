@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let $y = f(x)$ be the solution of the equation
 
-\[
+$$
 \frac{dy}{dx} = \frac{x^2}{x^2 + 1}
-\]
+$$
 
 such that $y = 0$ when $x = 0$. What is the value of $f(1)$?
 

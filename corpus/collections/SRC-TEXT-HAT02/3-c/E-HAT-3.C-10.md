@@ -40,11 +40,11 @@ In particular the quaternionic $k$-th power map $S^3 \to S^3$ has degree $k$.
 
 ::: {.solution}
 Let $\mu:X\times X\to X$ be the H-space multiplication and let
-\[
+$$
 \delta_{f,g}:X\to X\times X,
 \qquad
 \delta_{f,g}(x)=(f(x),g(x)).
-\]
+$$
 Then $fg=\mu\circ\delta_{f,g}$.
 
 ::: pf
@@ -52,22 +52,22 @@ Then $fg=\mu\circ\delta_{f,g}$.
 ::: pf-step
 
 If $\alpha$ is primitive, then
-\[
+$$
 (fg)^*(\alpha)=f^*(\alpha)+g^*(\alpha).
-\]
+$$
 
 ::: pf-proof
 
 Primitivity means
-\[
+$$
 \mu^*(\alpha)=\alpha\times1+1\times\alpha.
-\]
+$$
 Therefore
-\[
+$$
 (fg)^*(\alpha)
 =\delta_{f,g}^*\mu^*(\alpha)
 =f^*(\alpha)+g^*(\alpha).
-\]
+$$
 
 :::
 
@@ -80,9 +80,9 @@ The $k$th-power map sends every primitive class $\alpha$ to $k\alpha$.
 ::: pf-proof
 
 Induct on $k$ using part 1. For the identity map $P_1$, $P_1^*(\alpha)=\alpha$. Since $P_{k+1}=P_k\cdot\operatorname{id}$,
-\[
+$$
 P_{k+1}^*(\alpha)=P_k^*(\alpha)+\alpha=(k+1)\alpha.
-\]
+$$
 On $S^3$, a generator of $H^3(S^3;\ZZ)$ is primitive for dimensional reasons. Hence the quaternionic power map $q\mapsto q^k$ has degree $k$.
 
 :::
@@ -92,29 +92,29 @@ On $S^3$, a generator of $H^3(S^3;\ZZ)$ is primitive for dimensional reasons. He
 ::: pf-step
 
 Every quaternionic polynomial
-\[
+$$
 P(x)=a_nx^nb_n+\cdots+a_1xb_1+a_0,
 \qquad a_n,b_n\ne0,
-\]
+$$
 has a root.
 
 ::: pf-proof
 
 View $\quaternions$ as $\RR^4$. Since the leading term dominates as $|x|\to\infty$, $P$ is proper and extends to a map of one-point compactifications
-\[
+$$
 \widehat P:S^4\to S^4.
-\]
+$$
 The proper homotopy
-\[
+$$
 P_t(x)=a_nx^nb_n+t(a_{n-1}x^{n-1}b_{n-1}+\cdots+a_0),
 \qquad 0\le t\le1,
-\]
+$$
 shows that $\widehat P$ has the same degree as the leading map $x\mapsto a_nx^nb_n$.
 
 Left and right multiplication by a nonzero quaternion are orientation-preserving linear automorphisms of $\RR^4$, so they have degree $+1$. Radially, the map $x\mapsto x^n$ has boundary map $S^3\to S^3$, $q\mapsto q^n$, whose degree is $n$ by part 2. Hence
-\[
+$$
 \deg\widehat P=n\ne0.
-\]
+$$
 If $P$ had no root, then $0\notin P(\quaternions)$; a proper map missing a point has degree $0$, contradiction. Thus $P(x)=0$ for some $x\in\quaternions$.
 
 :::

@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Let $y = f(x)$ be the solution of the equation
 
-\[
+$$
 \frac{dy}{dx} + \frac{y}{x} = \sin x
-\]
+$$
 
 such that $f(\pi) = 1$. What is the value of $f(\frac{1}{2}\pi)$?
 

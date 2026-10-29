@@ -48,17 +48,17 @@ The number of subgroups of order $7$ is $8$.
 
 Such subgroups are exactly the Sylow $7$-subgroups of $G$.
 If $n_7$ denotes their number, Sylow's theorem gives
-\[
+$$
 n_7\equiv1\pmod7,
 \qquad
 n_7\mid24.
-\]
+$$
 Among the divisors of $24$, the only possibilities congruent to $1$ modulo $7$ are $1$ and $8$.
 If $n_7=1$, the unique Sylow $7$-subgroup would be normal in $G$, contradicting simplicity.
 Hence
-\[
+$$
 n_7=8.
-\]
+$$
 This proves part (a).
 
 :::
@@ -73,13 +73,13 @@ For every Sylow $7$-subgroup $P\le G$, its normalizer has order $21$.
 
 Conjugation by $G$ acts transitively on the eight Sylow $7$-subgroups from step [](#s1){.pf-ref}.
 The stabilizer of $P$ is $N_G(P)$, so orbit-stabilizer gives
-\[
+$$
 [G:N_G(P)]=8.
-\]
+$$
 Therefore
-\[
+$$
 |N_G(P)|=\frac{168}{8}=21.
-\]
+$$
 
 :::
 
@@ -93,20 +93,20 @@ Every subgroup $H\le G$ of order $21$ is the normalizer of its unique Sylow $7$-
 
 Let $P$ be a Sylow $7$-subgroup of $H$.
 Inside $H$, Sylow's theorem gives
-\[
+$$
 n_7(H)\equiv1\pmod7,
 \qquad
 n_7(H)\mid3.
-\]
+$$
 Thus $n_7(H)=1$, so $P\trianglelefteq H$.
 Hence
-\[
+$$
 H\le N_G(P).
-\]
+$$
 By step [](#s2){.pf-ref}, both groups have order $21$, so
-\[
+$$
 H=N_G(P).
-\]
+$$
 
 :::
 
@@ -136,29 +136,29 @@ There is no subgroup of order $42$.
 
 Suppose $H\le G$ has order $42$.
 Then
-\[
+$$
 [G:H]=4.
-\]
+$$
 The action of $G$ on the four left cosets of $H$ gives a homomorphism
-\[
+$$
 \varphi:G\longrightarrow S_4.
-\]
+$$
 Its kernel is normal in the simple group $G$, so
-\[
+$$
 \ker\varphi=1
 \quad\text{or}\quad
 \ker\varphi=G.
-\]
+$$
 The action is not trivial: if every element fixed the coset $H$, then every element of $G$ would lie in $H$, contrary to $H\ne G$.
 Hence $\ker\varphi\ne G$, so $\varphi$ is injective.
 But an injection
-\[
+$$
 G\hookrightarrow S_4
-\]
+$$
 would imply
-\[
+$$
 168=|G|\le|S_4|=24,
-\]
+$$
 a contradiction.
 Therefore no subgroup of order $42$ exists.
 This proves part (c).

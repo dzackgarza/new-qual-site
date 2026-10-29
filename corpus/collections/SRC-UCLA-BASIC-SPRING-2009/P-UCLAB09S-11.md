@@ -31,9 +31,9 @@ How can it be determined from a matrix in Jordan normal form?
 ::: {.pf-step #s1-1}
 
 The Jordan normal form theorem applies to matrices
-\[
+$$
 A\in M_n(\CC),
-\]
+$$
 or more generally to matrices over an algebraically closed field.
 
 
@@ -50,7 +50,7 @@ Thus the standard Jordan normal form theorem applies.
 ::: {.pf-step #s1-2}
 
 A Jordan block of size $r$ with eigenvalue $\lambda$ is the matrix
-\[
+$$
 \boxed{
 J_r(\lambda)
 =
@@ -62,16 +62,16 @@ J_r(\lambda)
 0&\cdots&\cdots&0&\lambda
 \end{pmatrix}.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 This is the definition of a Jordan block.
 Equivalently,
-\[
+$$
 J_r(\lambda)=\lambda I_r+N_r,
-\]
+$$
 where $N_r$ has ones on the superdiagonal and zeros elsewhere.
 
 :::
@@ -86,17 +86,17 @@ A matrix is in *Jordan normal form* if it is block diagonal and every diagonal b
 ::: pf-proof
 
 Thus a Jordan normal form has the shape
-\[
+$$
 J
 =
 J_{r_1}(\lambda_1)
 \oplus\cdots\oplus
 J_{r_s}(\lambda_s),
-\]
+$$
 where the block sizes satisfy
-\[
+$$
 r_1+\cdots+r_s=n.
-\]
+$$
 
 :::
 
@@ -105,13 +105,13 @@ r_1+\cdots+r_s=n.
 ::: {.pf-step #s1-4}
 
 To say that $A$ can be *brought to Jordan normal form* means that there exists an invertible matrix
-\[
+$$
 S\in GL_n(\CC)
-\]
+$$
 such that
-\[
+$$
 \boxed{S^{-1}AS=J}
-\]
+$$
 for some Jordan normal form $J$.
 
 
@@ -144,13 +144,13 @@ This is the uniqueness assertion in the Jordan normal form theorem.
 
 The complete statement of the Jordan normal form theorem is therefore:
 for every
-\[
+$$
 A\in M_n(\CC),
-\]
+$$
 there exists an invertible $S$ such that
-\[
+$$
 S^{-1}AS
-\]
+$$
 is block diagonal with Jordan blocks, and the resulting collection of Jordan blocks is unique up to permutation.
 
 
@@ -166,21 +166,21 @@ No proof of the theorem is required by the problem.
 ::: {.pf-step #s1-7}
 
 The *minimal polynomial* of $A$ is the unique monic polynomial
-\[
+$$
 \boxed{\mu_A(t)\in\CC[t]}
-\]
+$$
 of least positive degree such that
-\[
+$$
 \boxed{\mu_A(A)=0}.
-\]
+$$
 
 
 ::: pf-proof
 
 The set
-\[
+$$
 \{p(t)\in\CC[t]:p(A)=0\}
-\]
+$$
 is a nonzero ideal because the characteristic polynomial annihilates $A$ by Cayley--Hamilton.
 Since $\CC[t]$ is a principal ideal domain, this ideal has a unique monic generator.
 That generator is the minimal polynomial.
@@ -193,33 +193,33 @@ Equivalently, it is the monic annihilating polynomial of least degree.
 ::: {.pf-step #s1-8}
 
 For a Jordan block
-\[
+$$
 J_r(\lambda),
-\]
+$$
 the minimal polynomial is
-\[
+$$
 \boxed{(t-\lambda)^r}.
-\]
+$$
 
 
 ::: pf-proof
 
 One has
-\[
+$$
 J_r(\lambda)-\lambda I=N_r,
-\]
+$$
 where
-\[
+$$
 N_r^r=0
-\]
+$$
 but
-\[
+$$
 N_r^{r-1}\ne0.
-\]
+$$
 Therefore
-\[
+$$
 (J_r(\lambda)-\lambda I)^r=0
-\]
+$$
 and no lower positive power vanishes.
 
 :::
@@ -229,27 +229,27 @@ and no lower positive power vanishes.
 ::: {.pf-step #s1-9}
 
 Suppose the Jordan form of $A$ has, for each eigenvalue $\lambda$, largest block size
-\[
+$$
 m_\lambda.
-\]
+$$
 Then
-\[
+$$
 \boxed{
 \mu_A(t)
 =
 \prod_{\lambda}
 (t-\lambda)^{m_\lambda}.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 A polynomial annihilates a block diagonal matrix exactly when it annihilates every Jordan block.
 By step [](#s1-8){.pf-ref}, to annihilate every block with eigenvalue $\lambda$, the polynomial must contain
-\[
+$$
 (t-\lambda)^{m_\lambda},
-\]
+$$
 where $m_\lambda$ is the size of the largest such block.
 For distinct eigenvalues, these powers are relatively prime.
 Thus their product is the monic polynomial of least degree annihilating all blocks simultaneously.

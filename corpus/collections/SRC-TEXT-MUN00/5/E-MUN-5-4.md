@@ -41,57 +41,57 @@ Let $m, n \in \ZZ_{+}$ . Let $X \neq \varnothing$ .
 :::
 
 ::: {.solution}
-Choose once and for all a point \(x_0\in X\).
+Choose once and for all a point $x_0\in X$.
 
-(a) If \(m\le n\), define
-\[
+(a) If $m\le n$, define
+$$
 f(x_1,\dots,x_m)
 =(x_1,\dots,x_m,\underbrace{x_0,\dots,x_0}_{n-m}).
-\]
-The first \(m\) coordinates recover the input, so \(f\) is injective.
+$$
+The first $m$ coordinates recover the input, so $f$ is injective.
 
 (b) Concatenation gives a bijection
-\[
+$$
 g:X^m\times X^n\longrightarrow X^{m+n},
-\]
-\[
+$$
+$$
 g((x_1,\dots,x_m),(y_1,\dots,y_n))
 =(x_1,\dots,x_m,y_1,\dots,y_n).
-\]
-Its inverse splits an \((m+n)\)-tuple after the \(m\)-th coordinate.
+$$
+Its inverse splits an $(m+n)$-tuple after the $m$-th coordinate.
 
 (c) Define
-\[
+$$
 h(x_1,\dots,x_n)
 =(x_1,\dots,x_n,x_0,x_0,\dots).
-\]
-Again the first \(n\) coordinates recover the input, so \(h\) is injective.
+$$
+Again the first $n$ coordinates recover the input, so $h$ is injective.
 
 (d) Define
-\[
+$$
 k((x_1,\dots,x_n),(y_1,y_2,\dots))
 =(x_1,\dots,x_n,y_1,y_2,\dots).
-\]
-The inverse separates the first \(n\) coordinates from the infinite tail, so \(k\) is bijective.
+$$
+The inverse separates the first $n$ coordinates from the infinite tail, so $k$ is bijective.
 
 (e) Interleave coordinates:
-\[
+$$
 l((x_1,x_2,\dots),(y_1,y_2,\dots))
 =(x_1,y_1,x_2,y_2,\dots).
-\]
-Taking odd and even coordinates gives the inverse, hence \(l\) is bijective.
+$$
+Taking odd and even coordinates gives the inverse, hence $l$ is bijective.
 
-(f) Let \(A\subset B\). For \(u\in X^A\), define \(m(u)\in X^B\) by
-\[
+(f) Let $A\subset B$. For $u\in X^A$, define $m(u)\in X^B$ by
+$$
 m(u)(b)=
 \begin{cases}
 u(b),&b\in A,\\
 x_0,&b\in B-A.
 \end{cases}
-\]
-If \(u\ne v\), they differ at some \(a\in A\), and then \(m(u)(a)\ne m(v)(a)\). Thus
-\[
+$$
+If $u\ne v$, they differ at some $a\in A$, and then $m(u)(a)\ne m(v)(a)$. Thus
+$$
 m:X^A\hookrightarrow X^B
-\]
+$$
 is injective.
 :::

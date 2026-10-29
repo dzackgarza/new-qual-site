@@ -40,20 +40,20 @@ $U=\CC$. They agree on the imaginary axis, which has accumulation
 points in $U$, but $u\ne v$.
 
 **(ii) True.** The slit plane
-\[
+$$
 U=\CC\setminus(-\infty,0]
-\]
+$$
 is simply connected and proper, so by the Riemann mapping theorem there is a
 nonconstant biholomorphism $F:U\to\DD$. In particular $|F|<1$.
 
 **(iii) False.** If polynomials $p_n$ converged uniformly on
 $1<|z|<2$ to $1/[z(z-3)]$, then they would converge uniformly on the circle
 $|z|=3/2$. Hence
-\[
+$$
 0=\int_{|z|=3/2}p_n(z)\,dz
 \longrightarrow
 \int_{|z|=3/2}\frac{dz}{z(z-3)}.
-\]
+$$
 The latter integral equals
 $2\pi i\operatorname{Res}_{z=0}(1/[z(z-3)])=-2\pi i/3\ne0$, a
 contradiction.
@@ -66,14 +66,14 @@ Either way its image is dense in $\CC$.
 
 **(v) True.** The sheaf space $\mathcal O$ is equipped with the étalé-space
 topology. A basic neighborhood of the germ $\zeta=(f)_a$ is
-\[
+$$
 \{(f)_z:z\in D\},
-\]
+$$
 where $(f,D)$ is a function element representing $\zeta$. Convergence
 $\zeta_n\to\zeta$ therefore implies that all sufficiently large $\zeta_n$
 belong to such a basic neighborhood. Thus
-\[
+$$
 \zeta_n=(f)_{\pi(\zeta_n)}
-\]
+$$
 for all sufficiently large $n$.
 :::

@@ -50,9 +50,9 @@ $s\in\operatorname{Ann}(x)\subseteq\mathfrak m$, a contradiction.
 
 ::: {.pf-step #localized-equality}
 Localizing the assumed equality $M=\mathfrak mM$ gives
-\[
+$$
 M_{\mathfrak m}=\mathfrak mA_{\mathfrak m}M_{\mathfrak m}.
-\]
+$$
 
 ::: pf-proof
 Localization is exact and commutes with multiplication of a module by an ideal.

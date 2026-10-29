@@ -27,13 +27,13 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 W=\{(u,v)\in\RR^2:u>v\}
-\]
+$$
 and define
-\[
+$$
 T(u,v)=(u+v,u^2+v^2).
-\]
+$$
 
 1. Prove that $T$ is locally one-to-one.
 2. Determine the range of $T$ and prove that $T$ is globally one-to-one.

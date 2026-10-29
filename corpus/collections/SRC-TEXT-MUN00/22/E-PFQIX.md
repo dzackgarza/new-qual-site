@@ -45,61 +45,61 @@ Show that $G/H$ satisfies the regularity axiom.
 
 ::: {.solution}
 (a) Continuity of multiplication at $(e,e)$ gives a neighborhood $W$ of $e$ such that
-\[
+$$
 W\cdot W\subseteq U.
-\]
+$$
 Set
-\[
+$$
 V=W\cap W^{-1}.
-\]
+$$
 Since inversion is a homeomorphism, $V$ is an open neighborhood of $e$; it is symmetric and
-\[
+$$
 V\cdot V\subseteq W\cdot W\subseteq U.
-\]
+$$
 
 (b) Let $x\ne y$. One-point sets are closed, since a topological group is assumed to satisfy the $T_1$ axiom, so
-\[
+$$
 U=G-\{xy^{-1}\}
-\]
+$$
 is a neighborhood of $e$. Choose symmetric $V$ with $VV\subseteq U$. If
-\[
+$$
 v_1x=v_2y
-\]
+$$
 with $v_1,v_2\in V$, then
-\[
+$$
 xy^{-1}=v_1^{-1}v_2\in VV\subseteq U,
-\]
+$$
 a contradiction. Hence $Vx$ and $Vy$ are disjoint open neighborhoods, so $G$ is Hausdorff.
 
 (c) Let $A$ be closed and $x\notin A$. The right translate $Ax^{-1}$ is closed and does not contain $e$. Choose a symmetric neighborhood $V$ of $e$ with
-\[
+$$
 VV\subseteq G-Ax^{-1}.
-\]
+$$
 The sets
-\[
+$$
 Vx,\qquad VA=\bigcup_{a\in A}Va
-\]
+$$
 are open and contain $x$ and $A$. If $v_1x=v_2a$, then
-\[
+$$
 ax^{-1}=v_2^{-1}v_1\in VV,
-\]
+$$
 contradicting the choice of $V$. Thus they are disjoint, proving regularity.
 
 (d) Let $C\subseteq G/H$ be closed and let $xH\notin C$. Put
-\[
+$$
 A=p^{-1}(C).
-\]
+$$
 Then $A$ is closed, saturated, and $x\notin A$; saturation means $AH=A$. Apply (c) to choose symmetric $V$ with
-\[
+$$
 VA\cap Vx=\varnothing.
-\]
+$$
 The quotient map $p:G\to G/H$ is open, since for open $U\subseteq G$ the saturation $p^{-1}(p(U))=UH=\bigcup_{h\in H}Uh$ is a union of translates of $U$. So $p(VA)$ and $p(Vx)$ are open neighborhoods of $C$ and $xH$. They are disjoint: if a coset lay in both, there would be $v_1,v_2\in V$, $a\in A$, and $h\in H$ with
-\[
+$$
 v_1a=v_2xh.
-\]
+$$
 Then
-\[
+$$
 v_1ah^{-1}=v_2x,
-\]
+$$
 and $ah^{-1}\in AH=A$, contradicting $VA\cap Vx=\varnothing$. Hence $G/H$ satisfies the regularity axiom.
 :::

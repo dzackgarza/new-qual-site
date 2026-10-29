@@ -28,9 +28,9 @@ The ideal $I=(x,y)$ is proper in $\CC[x,y]$.
 ::: pf-proof
 
 Evaluation at the origin is a surjective ring homomorphism
-\[
+$$
 \operatorname{ev}_{(0,0)}:\CC[x,y]\to\CC,\qquad f\mapsto f(0,0).
-\]
+$$
 Its kernel consists of polynomials with zero constant coefficient, which is precisely $(x,y)$. The quotient by $I$ is therefore the nonzero field $\CC$, so $I$ is proper.
 
 :::

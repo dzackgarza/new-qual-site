@@ -23,21 +23,21 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int\frac{\sin x}{\cos^2x}\,dx
 \qquad\text{and}\qquad
 \int\csc(ax)\cot(ax)\,dx,
-\]
+$$
 where $a\ne0$.
 :::
 
 ::: {.solution}
 Using $\sin x/\cos^2x=\tan x\sec x$ and $(\sec x)'=\sec x\tan x$,
-\[
+$$
 \boxed{\int\frac{\sin x}{\cos^2x}\,dx=\sec x+C.}
-\]
+$$
 Also $(\csc(ax))'=-a\csc(ax)\cot(ax)$, so
-\[
+$$
 \boxed{\int\csc(ax)\cot(ax)\,dx=-\frac1a\csc(ax)+C.}
-\]
+$$
 :::

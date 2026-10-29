@@ -44,9 +44,9 @@ audit:
 
 ::: {.problem}
 If $D$ is any divisor of degree $d$ on the cubic surface (4.7.3), show that
-\[
+$$
 p_a(D) \leqslant \begin{cases}\frac{1}{6}(d-1)(d-2) & \text { if } d \equiv 1,2\, (\bmod 3) \\ \frac{1}{6}(d-1)(d-2)+\frac{2}{3} & \text { if } d \equiv 0\, (\bmod 3)\end{cases}
-\]
+$$
 Show furthermore that for every $d>0$, this maximum is achieved by some irreducible nonsingular curve.
 :::
 
@@ -494,7 +494,7 @@ it has no zero on $L$.
 
 Off $L$, the subsystem obtained by multiplying hyperplane sections by the
 section of $L$ has no base point because $H$ is very ample. Hence
-\(\OO_S(H+L)\) is globally generated everywhere.
+$\OO_S(H+L)$ is globally generated everywhere.
 :::
 
 :::

@@ -29,29 +29,29 @@ Show that by applying the loop space functor to a Postnikov tower for $X$ one ob
 
 ::: {.solution}
 Let
-\[
+$$
 \cdots\to X_n\to X_{n-1}\to\cdots
-\]
-be a Postnikov tower for \(X\). Looping preserves fibrations, so
-\[
+$$
+be a Postnikov tower for $X$. Looping preserves fibrations, so
+$$
 \cdots\to\Omega X_n\to\Omega X_{n-1}\to\cdots
-\]
+$$
 is a tower of fibrations. Since
-\[
+$$
 \pi_i(\Omega X_n)=\pi_{i+1}(X_n),
-\]
-the space \(\Omega X_n\) has the correct truncated homotopy groups to be the corresponding Postnikov stage of \(\Omega X\).
+$$
+the space $\Omega X_n$ has the correct truncated homotopy groups to be the corresponding Postnikov stage of $\Omega X$.
 
-The successive Postnikov fibration is classified by a \(k\)-invariant. Looping its classifying map expresses
-\[
+The successive Postnikov fibration is classified by a $k$-invariant. Looping its classifying map expresses
+$$
 \Omega X_{n+1}\to\Omega X_n
-\]
+$$
 as a pullback of a path-space fibration. Equivalently, the three-term sequence
-\[
+$$
 \Omega X_{n+1}\longrightarrow\Omega X_n\longrightarrow\Omega X_{n-1}
-\]
+$$
 is a principal fibration, with fiber an Eilenberg--MacLane loop space. Thus
-\[
+$$
 \boxed{\text{looping a Postnikov tower for }X\text{ gives a Postnikov tower of principal fibrations for }\Omega X.}
-\]
+$$
 :::

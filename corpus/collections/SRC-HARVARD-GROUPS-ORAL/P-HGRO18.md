@@ -31,15 +31,15 @@ Justify your answer.
 Yes.
 
 Let $n_{11}$ be the number of Sylow $11$-subgroups of $G$. Since
-\[
+$$
 |G|=99=3^2\cdot11,
-\]
+$$
 Sylow's theorem gives
-\[
+$$
 n_{11}\equiv1\pmod{11}
 \qquad\text{and}\qquad
 n_{11}\mid9.
-\]
+$$
 The only positive divisor of $9$ congruent to $1$ modulo $11$ is $1$.
 Therefore the Sylow $11$-subgroup is unique, hence normal, and has order $11$.
 :::

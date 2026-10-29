@@ -42,17 +42,17 @@ The element $t$ is algebraic over $k(x)$.
 ::: pf-proof
 
 From
-\[
+$$
 x=\frac{t^3+2}{t^2+3}
-\]
+$$
 we obtain
-\[
+$$
 t^3-xt^2+(2-3x)=0.
-\]
+$$
 Thus $t$ satisfies the monic polynomial
-\[
+$$
 T^3-xT^2+(2-3x)\in k(x)[T],
-\]
+$$
 so $t$ is algebraic over $k(x)$.
 
 :::

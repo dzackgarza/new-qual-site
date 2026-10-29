@@ -26,7 +26,7 @@ audit:
 
 ::: {.problem}
 Are the matrices
-\[
+$$
 A=\begin{pmatrix}
 1&0&0&0\\
 0&-1&0&0\\
@@ -40,7 +40,7 @@ B=\begin{pmatrix}
 -1&0&0&0\\
 -1&0&1&0
 \end{pmatrix}
-\]
+$$
 similar over $\RR$?
 :::
 

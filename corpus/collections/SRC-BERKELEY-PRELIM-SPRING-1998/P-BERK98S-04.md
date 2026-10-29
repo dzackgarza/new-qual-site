@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Using properties of the Riemann integral, prove that if $f:[0,1]\to\RR$ is continuous and nonnegative and
-\[
+$$
 \int_0^1f(x)\,dx=0,
-\]
+$$
 then $f(x)=0$ for every $x\in[0,1]$.
 :::
 

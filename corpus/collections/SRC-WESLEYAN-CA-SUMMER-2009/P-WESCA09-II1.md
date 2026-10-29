@@ -17,14 +17,14 @@ audit:
 
 ::: {.problem}
 Let $f$ be entire and suppose
-\[
+$$
 |f(z)|\le m e^{\alpha x},\qquad z=x+iy,
-\]
+$$
 where $m,\alpha>0$.
 Show that
-\[
+$$
 f(z)=Ae^{\alpha z}
-\]
+$$
 for some $A\in\CC$.
 :::
 
@@ -35,9 +35,9 @@ for some $A\in\CC$.
 ::: {.pf-step #s1-1}
 
 The function
-\[
+$$
 g(z)=f(z)e^{-\alpha z}
-\]
+$$
 is entire and bounded by $m$ on $\CC$.
 
 
@@ -45,16 +45,16 @@ is entire and bounded by $m$ on $\CC$.
 
 Both $f$ and $z\mapsto e^{-\alpha z}$ are entire, so $g$ is entire. If
 $z=x+iy$, then
-\[
+$$
 |e^{-\alpha z}|=e^{-\alpha x}.
-\]
+$$
 Therefore the assumed estimate gives
-\[
+$$
 |g(z)|
 =|f(z)|e^{-\alpha x}
 \le m e^{\alpha x}e^{-\alpha x}
 =m.
-\]
+$$
 
 :::
 
@@ -63,18 +63,18 @@ Therefore the assumed estimate gives
 ::: {.pf-step #s1-2}
 
 There is a constant $A\in\CC$ such that
-\[
+$$
 \boxed{f(z)=Ae^{\alpha z}\qquad(z\in\CC)}.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref}, $g$ is a bounded entire function. Liouville's theorem therefore
 implies that $g$ is constant, say $g(z)=A$. Thus
-\[
+$$
 f(z)e^{-\alpha z}=A,
-\]
+$$
 and multiplication by $e^{\alpha z}$ gives the stated formula.
 
 :::

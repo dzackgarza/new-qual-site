@@ -18,34 +18,34 @@ Determine all conformal automorphisms of the unit disk.
 
 ::: {.solution}
 For $a\in\DD$, define
-\[
+$$
 \phi_a(z)=\frac{z-a}{1-\overline a z}.
-\]
+$$
 This is a Möbius transformation carrying $\DD$ biholomorphically onto itself and sending $a$ to $0$.
 
 Let $F\in\operatorname{Aut}(\DD)$ and set
-\[
+$$
 a=F^{-1}(0).
-\]
+$$
 Then
-\[
+$$
 H=F\circ\phi_a^{-1}
-\]
+$$
 is an automorphism of $\DD$ fixing $0$. Schwarz's lemma applied to $H$ and $H^{-1}$ gives
-\[
+$$
 |H(z)|=|z|,
-\]
+$$
 so the rigidity case gives
-\[
+$$
 H(z)=e^{i\theta}z
-\]
+$$
 for some $\theta\in\RR$. Hence
-\[
+$$
 \boxed{
 F(z)=e^{i\theta}\frac{z-a}{1-\overline a z},
 \qquad a\in\DD,
 \ \theta\in\RR.}
-\]
+$$
 
 Conversely, every map of this form is a composition of the disk automorphism $\phi_a$ with a rotation, hence is a conformal automorphism of $\DD$.
 :::

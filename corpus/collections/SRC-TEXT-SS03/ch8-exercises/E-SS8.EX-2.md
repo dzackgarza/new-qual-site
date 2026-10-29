@@ -25,29 +25,29 @@ audit:
 
 ::: {.solution}
 Since $F$ has a zero of order exactly two at $z_0$, there is a holomorphic function $h$ near $z_0$ such that
-\[
+$$
 F(z)=(z-z_0)^2h(z),\qquad h(z_0)=\frac{F''(z_0)}2\ne0.
-\]
+$$
 After shrinking the neighborhood, $h$ has no zeros and therefore admits a holomorphic square root $q$. Set
-\[
+$$
 g(z)=(z-z_0)q(z).
-\]
+$$
 Then $F=g^2$, $g(z_0)=0$, and $g'(z_0)=q(z_0)\ne0$. By the holomorphic inverse-function theorem, after shrinking once more, $g$ is biholomorphic from a neighborhood $U$ of $z_0$ onto a disc $V$ centered at $0$.
 
 Let
-\[
+$$
 \Gamma_1=g^{-1}(V\cap\RR),
 \qquad
 \Gamma_2=g^{-1}(V\cap i\RR).
-\]
+$$
 These are smooth curves through $z_0$. On $\Gamma_1$, write $g(z)=t\in\RR$; then
-\[
+$$
 F(z)=t^2\ge0=F(z_0),
-\]
+$$
 so $F$ is real there and has a strict local minimum at $z_0$. On $\Gamma_2$, write $g(z)=it$ with $t\in\RR$; then
-\[
+$$
 F(z)=-t^2\le0=F(z_0),
-\]
+$$
 so $F$ is real there and has a strict local maximum at $z_0$.
 
 Finally, a conformal map preserves angles. The real and imaginary axes in the $g$-plane meet orthogonally at $0$, and $g^{-1}$ is conformal at $0$ because $(g^{-1})'(0)\ne0$. Hence $\Gamma_1$ and $\Gamma_2$ meet orthogonally at $z_0$.

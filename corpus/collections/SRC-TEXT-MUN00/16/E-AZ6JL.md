@@ -34,26 +34,26 @@ Compare the product topology on $I \times I$, the dictionary order topology on $
 Let $\mathcal P$ be the product topology on $I^2$, $\mathcal D$ the dictionary order topology on $I^2$, and $\mathcal S$ the topology inherited from the dictionary order topology on $\RR^2$.
 
 The product and dictionary-order topologies are incomparable. The set
-\[
+$$
 I\times(1/2,1]
-\]
+$$
 is product-open (since $(1/2,1]$ is open in the subspace $I$), but it is not dictionary-order open at $(0,1)$: every dictionary-order neighborhood of $(0,1)$ contains points whose first coordinate is positive. Conversely,
-\[
+$$
 \{0\}\times(0,1)
-\]
+$$
 is dictionary-order open, but is not product-open.
 
 The subspace topology $\mathcal S$ is finer than the product topology because, by [[E-QMZO5]], the ambient dictionary topology on $\RR^2$ is $\RR_d\times\RR$; restricting to $I^2$ gives the product of discrete $I$ in the first coordinate with the usual subspace topology in the second, which contains the ordinary product topology.
 
 It is also finer than the dictionary order topology $\mathcal D$: for $a\in I^2$, the open rays $\{y\in I^2:y<a\}$ and $\{y\in I^2:y>a\}$ of the ordered square are the intersections of $I^2$ with the corresponding open rays of $\RR^2$, so every $\mathcal D$-open set is $\mathcal S$-open. Both inclusions are strict. Strictness over $\mathcal P$ follows from the open set $\{0\}\times(0,1)$. Strictness over $\mathcal D$ follows, for example, from
-\[
+$$
 \{1/2\}\times(1/2,1],
-\]
+$$
 which is open in $\mathcal S$ but not in the dictionary order topology on the ordered square. Hence
-\[
+$$
 \mathcal P\not\subseteq\mathcal D,\qquad
 \mathcal D\not\subseteq\mathcal P,
 \qquad
 \mathcal P,\mathcal D\subsetneq\mathcal S.
-\]
+$$
 :::

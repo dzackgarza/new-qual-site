@@ -54,20 +54,20 @@ Prove that $C$ is a closed subspace.
 ::: pf-proof
 
 Define
-\[
+$$
 L:L^2(\Omega)\to\CC,
 \qquad
 L(f):=\int_\Omega f(x)\,dx.
-\]
+$$
 Since $\Omega$ is bounded, $L^n(\Omega)<\infty$, and Cauchy--Schwarz gives
-\[
+$$
 |L(f)|
 \le L^n(\Omega)^{1/2}\|f\|_2.
-\]
+$$
 Thus $L$ is continuous. Moreover
-\[
+$$
 C=\ker L,
-\]
+$$
 so $C$ is a closed linear subspace of $L^2(\Omega)$.
 
 :::
@@ -81,33 +81,33 @@ Compute the orthogonal projection.
 ::: pf-proof
 
 For $g\in L^2(\Omega)$, set
-\[
+$$
 m_g:=\frac1{L^n(\Omega)}\int_\Omega g(x)\,dx
-\]
+$$
 and
-\[
+$$
 h:=g-m_g.
-\]
+$$
 Then
-\[
+$$
 \int_\Omega h
 =\int_\Omega g-m_gL^n(\Omega)
 =0,
-\]
+$$
 so $h\in C$.
 
 Also $g-h=m_g$ is a constant function. For every $v\in C$,
-\[
+$$
 \langle g-h,v\rangle
 =m_g\int_\Omega\overline{v(x)}\,dx
 =0.
-\]
+$$
 Thus $g-h\in C^\perp$. By the characterization of orthogonal projection,
-\[
+$$
 \boxed{
 P_C(g)
 =g-\frac1{L^n(\Omega)}\int_\Omega g(x)\,dx.}
-\]
+$$
 
 :::
 
@@ -120,27 +120,27 @@ Identify $C^\perp$.
 ::: pf-proof
 
 Every constant function belongs to $C^\perp$ by the calculation in Step 2. Conversely, let $g\in C^\perp$. By Step 2,
-\[
+$$
 g=P_C(g)+(g-P_C(g)),
-\]
+$$
 with
-\[
+$$
 P_C(g)\in C,
 \qquad
 g-P_C(g)\text{ constant}.
-\]
+$$
 Since $g\in C^\perp$ and $g-P_C(g)\in C^\perp$, their difference
-\[
+$$
 P_C(g)
-\]
+$$
 lies in $C\cap C^\perp=\{0\}$. Hence $g=g-P_C(g)$ is constant almost everywhere.
 
 Therefore
-\[
+$$
 \boxed{
 C^\perp
 =\{g\in L^2(\Omega):g=c\text{ a.e. for some }c\in\CC\}.}
-\]
+$$
 
 :::
 

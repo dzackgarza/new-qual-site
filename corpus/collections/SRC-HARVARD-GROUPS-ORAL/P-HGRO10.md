@@ -39,9 +39,9 @@ The group $A_5$ is nonabelian and simple.
 It is nonabelian, for example because $(123)$ and $(345)$ do not commute.
 
 To prove simplicity, note that the conjugacy classes in $A_5$ have sizes
-\[
+$$
 1,\qquad 20,\qquad 15,\qquad 12,\qquad 12,
-\]
+$$
 corresponding respectively to the identity, the $3$-cycles, the products of two
 disjoint transpositions, and the two conjugacy classes of $5$-cycles.
 Any normal subgroup is a union of conjugacy classes containing the identity, and
@@ -73,9 +73,9 @@ Therefore $A_5$ has no nontrivial homomorphic image of smaller order.
 ::: pf-proof
 
 If the image of $f$ is nontrivial, step [](#s2){.pf-ref} gives
-\[
+$$
 |f(A_5)|=|A_5|=60.
-\]
+$$
 Thus no nontrivial image has smaller order.
 
 :::

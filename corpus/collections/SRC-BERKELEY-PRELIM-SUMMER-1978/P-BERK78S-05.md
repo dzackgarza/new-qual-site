@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_0^{2\pi} e^{e^{i\theta}-i\theta}\,d\theta.
-\]
+$$
 :::
 
 ::: {.solution}

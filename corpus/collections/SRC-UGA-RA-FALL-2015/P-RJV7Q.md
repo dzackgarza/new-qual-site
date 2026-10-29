@@ -48,7 +48,7 @@ write $f = f^+ - f^-$; if $s_n^+ \to f^+$ and $s_n^- \to f^-$ pointwise with sim
 Construct simple approximations of a non-negative measurable $g$.
 
 ::: pf-proof
-the standard dyadic truncations \[ s_n(x) = \sum_{k=0}^{n2^n - 1} \frac{k}{2^n}\chi_{\{k/2^n \le g < (k+1)/2^n\}}(x) + n \chi_{\{g \ge n\}}(x) \] are simple, $0 \le s_n \le g$, and $s_n(x) \nearrow g(x)$ for every $x$: indeed $g(x) - s_n(x) \le 2^{-n}$ when $g(x) \le n$, and $s_n(x) = n$ when $g(x) > n$.
+the standard dyadic truncations $$ s_n(x) = \sum_{k=0}^{n2^n - 1} \frac{k}{2^n}\chi_{\{k/2^n \le g < (k+1)/2^n\}}(x) + n \chi_{\{g \ge n\}}(x) $$ are simple, $0 \le s_n \le g$, and $s_n(x) \nearrow g(x)$ for every $x$: indeed $g(x) - s_n(x) \le 2^{-n}$ when $g(x) \le n$, and $s_n(x) = n$ when $g(x) > n$.
 Applying this to $g=f^+$ and $g=f^-$ and using step [](#s1){.pf-ref} proves part (1).
 :::
 

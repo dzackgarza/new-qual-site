@@ -30,9 +30,9 @@ Show that if $A$ is closed in $X$ and $B$ is closed in $Y$, then $A \times B$ is
 
 ::: {.solution}
 Since $A$ and $B$ are closed, $X-A$ and $Y-B$ are open. The complement of $A\times B$ is
-\[
+$$
 (X\times Y)-(A\times B)
 =((X-A)\times Y)\cup(X\times(Y-B)),
-\]
+$$
 a union of product-open sets. Therefore $A\times B$ is closed in $X\times Y$.
 :::

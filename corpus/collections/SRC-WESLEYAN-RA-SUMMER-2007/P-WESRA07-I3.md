@@ -28,12 +28,12 @@ Give the definition of almost uniform convergence for a sequence of functions.
 ::: {.solution}
 Let $(X,\mathcal A,\mu)$ be a measure space and let $f_n,f$ be measurable functions on $X$.
 We say that $f_n$ converges to $f$ almost uniformly if for every $\varepsilon>0$ there exists a measurable set $E\in\mathcal A$ such that
-\[
+$$
 \mu(E)<\varepsilon
-\]
+$$
 and $f_n\to f$ uniformly on $X\setminus E$.
 Equivalently, for every $\varepsilon>0$ there is $E\in\mathcal A$ with $\mu(E)<\varepsilon$ such that
-\[
+$$
 \boxed{\sup_{x\in X\setminus E}|f_n(x)-f(x)|\longrightarrow0.}
-\]
+$$
 :::

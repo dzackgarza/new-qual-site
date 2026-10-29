@@ -29,17 +29,17 @@ audit:
 ---
 
 ::: {.problem}
-Let \( f_n \in L^2([0, 1]) \) for \( n\in \NN \), and assume that 
+Let $f_n \in L^2([0, 1])$ for $n\in \NN$, and assume that 
 
-- \( \norm{f_n}_2 \leq n^{-51 \over 100} \)  for all \( n\in \NN \),
+- $\norm{f_n}_2 \leq n^{-51 \over 100}$  for all $n\in \NN$,
 
 - the Fourier coefficients $\hat f_n(k)$ are supported in the integer frequencies in $[2^n,2^{n+1}]$, where
-\[
+$$
 \hat f_n(k)\definedas\int_0^1 f_n(x)e^{-2\pi ikx}\,dx=0
 \qquad\text{for }k\in\ZZ\setminus[2^n,2^{n+1}].
-\]
+$$
 
-Prove that \( \sum_{n\in \NN} f_n \) converges in the Hilbert space \( L^2([0, 1]) \).
+Prove that $\sum_{n\in \NN} f_n$ converges in the Hilbert space $L^2([0, 1])$.
 
 > Hint: Plancherel's identity may be helpful.
 
@@ -47,9 +47,9 @@ Prove that \( \sum_{n\in \NN} f_n \) converges in the Hilbert space \( L^2([0, 1
 
 ::: {.warnings}
 For Fourier series on $L^2([0,1])$, the identity in question is Parseval's identity:
-\[
+$$
 \sum_{k\in \ZZ} \abs{\hat{f}(k)}^2 = \int_0^1 \abs{f(x)}^2\dx
-.\]
+.$$
 
 :::
 ::: {.solution}
@@ -58,12 +58,12 @@ For Fourier series on $L^2([0,1])$, the identity in question is Parseval's ident
 
 ::: {.pf-step #parseval-identity}
 Use Parseval for the Fourier series coefficients:
-\[
+$$
 \langle f,g\rangle_{L^2([0,1])}
 =\sum_{k\in\ZZ}\hat f(k)\overline{\hat g(k)},
 \qquad
 \|f\|_2^2=\sum_{k\in\ZZ}|\hat f(k)|^2.
-\]
+$$
 
 ::: pf-proof
 Parseval's identity for the orthonormal Fourier basis of $L^2([0,1])$.
@@ -82,9 +82,9 @@ The dyadic intervals $[2^n,2^{n+1}]$ and $[2^m,2^{m+1}]$ have exactly this inter
 
 ::: {.pf-step #inner-products-and-adjacent-bound}
 Thus $\langle f_n,f_m\rangle=0$ for $|n-m|\ge2$, while
-\[
+$$
 |\langle f_n,f_{n+1}\rangle|\le\|f_n\|_2\|f_{n+1}\|_2.
-\]
+$$
 
 ::: pf-proof
 Apply Parseval from step [](#parseval-identity){.pf-ref} and the support information from step [](#disjoint-supports){.pf-ref}; the adjacent estimate is Cauchy--Schwarz.
@@ -94,11 +94,11 @@ Apply Parseval from step [](#parseval-identity){.pf-ref} and the support informa
 
 ::: {.pf-step #partial-sum-norm-bound}
 For $N<M$,
-\[
+$$
 \left\|\sum_{n=N}^{M}f_n\right\|_2^2
 \le\sum_{n=N}^{M}\|f_n\|_2^2
 +2\sum_{n=N}^{M-1}\|f_n\|_2\|f_{n+1}\|_2.
-\]
+$$
 
 ::: pf-proof
 Expand the squared norm; cross terms between non-adjacent indices vanish by step [](#inner-products-and-adjacent-bound){.pf-ref}, and the adjacent terms are bounded by step [](#inner-products-and-adjacent-bound){.pf-ref}.

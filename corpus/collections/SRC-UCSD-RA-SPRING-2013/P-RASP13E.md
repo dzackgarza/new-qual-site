@@ -44,19 +44,19 @@ Each $f_n$ belongs to $L^p$, and $f$ is dominated by $g$ almost everywhere.
 ::: pf-proof
 
 Since $|f_n|\le g$ and $g\in L^p$,
-\[
+$$
 \|f_n\|_p^p\le\|g\|_p^p<\infty,
-\]
+$$
 so every $f_n\in L^p$.
 
 Because $f_n\to f$ in measure, there exists a subsequence $(f_{n_k})$ converging to $f$ almost everywhere. Passing to the pointwise limit in
-\[
+$$
 |f_{n_k}|\le g
-\]
+$$
 gives
-\[
+$$
 |f|\le g
-\]
+$$
 almost everywhere. Hence $f\in L^p$ as well.
 
 :::
@@ -70,23 +70,23 @@ Every subsequence has a further subsequence converging to $f$ in $L^p$.
 ::: pf-proof
 
 Let $(f_{n_k})$ be any subsequence. It still converges to $f$ in measure, so there is a further subsequence $(f_{n_{k_j}})$ with
-\[
+$$
 f_{n_{k_j}}(x)\to f(x)
-\]
+$$
 for almost every $x$.
 
 Moreover,
-\[
+$$
 |f_{n_{k_j}}-f|^p
 \le (|f_{n_{k_j}}|+|f|)^p
 \le (2g)^p,
-\]
+$$
 and $(2g)^p\in L^1$. Dominated convergence therefore gives
-\[
+$$
 \|f_{n_{k_j}}-f\|_p^p
 =\int_X|f_{n_{k_j}}-f|^p\,d\mu
 \longrightarrow0.
-\]
+$$
 Thus every subsequence has a further subsequence converging to $f$ in $L^p$.
 
 :::
@@ -100,19 +100,19 @@ Conclude convergence of the full sequence.
 ::: pf-proof
 
 Suppose, toward a contradiction, that
-\[
+$$
 \|f_n-f\|_p\not\to0.
-\]
+$$
 Then there are $\varepsilon>0$ and a subsequence $(f_{n_k})$ such that
-\[
+$$
 \|f_{n_k}-f\|_p\ge\varepsilon
-\]
+$$
 for every $k$. By Step 2, this subsequence has a further subsequence converging to $f$ in $L^p$, contradicting the uniform lower bound $\varepsilon$.
 
 Hence
-\[
+$$
 \boxed{\|f_n-f\|_p\to0.}
-\]
+$$
 
 :::
 

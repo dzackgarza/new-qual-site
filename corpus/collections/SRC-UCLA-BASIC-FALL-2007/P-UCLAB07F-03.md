@@ -34,13 +34,13 @@ Every nonzero vector of $V$ is an eigenvector of $T$.
 ::: pf-proof
 
 Let $v\ne0$. By hypothesis, $Tv$ and $v$ are linearly dependent. Hence there are scalars $a,b$, not both zero, such that
-\[
+$$
 aTv+bv=0.
-\]
+$$
 If $a=0$, then $bv=0$ forces $b=0$, a contradiction. Thus $a\ne0$, and
-\[
+$$
 Tv=-\frac ba\,v.
-\]
+$$
 So $v$ is an eigenvector.
 
 :::
@@ -50,9 +50,9 @@ So $v$ is an eigenvector.
 ::: pf-step
 
 Fix a nonzero vector $u\in V$ and write
-\[
+$$
 Tu=\lambda u
-\]
+$$
 for some scalar $\lambda$.
 
 
@@ -67,23 +67,23 @@ This is possible by step [](#s1-1){.pf-ref}.
 ::: {.pf-step #s1-3}
 
 If $v\in V$ is linearly independent of $u$, then
-\[
+$$
 Tv=\lambda v.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref}, there are scalars $\mu,\nu$ such that
-\[
+$$
 Tv=\mu v
-\]
+$$
 and
-\[
+$$
 T(u+v)=\nu(u+v).
-\]
+$$
 Linearity gives
-\[
+$$
 \lambda u+\mu v
 =
 Tu+Tv
@@ -91,15 +91,15 @@ Tu+Tv
 T(u+v)
 =
 \nu u+\nu v.
-\]
+$$
 Therefore
-\[
+$$
 (\lambda-\nu)u+(\mu-\nu)v=0.
-\]
+$$
 Since $u$ and $v$ are linearly independent,
-\[
+$$
 \lambda=\nu=\mu.
-\]
+$$
 Hence $Tv=\lambda v$.
 
 :::
@@ -109,21 +109,21 @@ Hence $Tv=\lambda v$.
 ::: {.pf-step #s1-4}
 
 For every $v\in V$,
-\[
+$$
 Tv=\lambda v.
-\]
+$$
 
 
 ::: pf-proof
 
 If $v$ is linearly independent of $u$, apply step [](#s1-3){.pf-ref}. If $v$ is linearly dependent on $u$, write
-\[
+$$
 v=cu
-\]
+$$
 for some scalar $c$. Then
-\[
+$$
 Tv=cTu=c\lambda u=\lambda v.
-\]
+$$
 The zero vector also satisfies the equality.
 
 :::
@@ -133,9 +133,9 @@ The zero vector also satisfies the equality.
 ::: {.pf-step #s1-5}
 
 One has
-\[
+$$
 \boxed{T=\lambda I}.
-\]
+$$
 
 
 ::: pf-proof

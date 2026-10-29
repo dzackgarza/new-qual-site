@@ -22,18 +22,18 @@ Show that there is a subset of the real numbers that is not the intersection of 
 ::: {.solution}
 
 Take
-\[
+$$
 S=\QQ.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 Suppose, for contradiction, that
-\[
+$$
 \QQ=\bigcap_{n=1}^{\infty}U_n
-\]
+$$
 for open sets $U_n\subseteq\RR$.
 
 
@@ -53,13 +53,13 @@ Every $U_n$ is dense in $\RR$.
 ::: pf-proof
 
 Since
-\[
+$$
 \QQ\subseteq U_n
-\]
+$$
 for every $n$ and $\QQ$ is dense in $\RR$, the closure of $U_n$ contains
-\[
+$$
 \overline{\QQ}=\RR.
-\]
+$$
 Hence $U_n$ is dense.
 
 :::
@@ -69,13 +69,13 @@ Hence $U_n$ is dense.
 ::: {.pf-step #s1-3}
 
 If
-\[
+$$
 \QQ=\{q_1,q_2,\ldots\},
-\]
+$$
 then every set
-\[
+$$
 V_m=\RR\setminus\{q_m\}
-\]
+$$
 is open and dense in $\RR$.
 
 
@@ -90,11 +90,11 @@ Each singleton $\{q_m\}$ is closed and has empty interior. Therefore its complem
 ::: {.pf-step #s1-4}
 
 The intersection
-\[
+$$
 \bigcap_{n=1}^{\infty}U_n
 \cap
 \bigcap_{m=1}^{\infty}V_m
-\]
+$$
 is nonempty.
 
 
@@ -114,15 +114,15 @@ The intersection in step [](#s1-4){.pf-ref} is empty.
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref},
-\[
+$$
 \bigcap_{n=1}^{\infty}U_n=\QQ.
-\]
+$$
 By the definition of the sets $V_m$,
-\[
+$$
 \bigcap_{m=1}^{\infty}V_m
 =
 \RR\setminus\QQ.
-\]
+$$
 Their intersection is therefore empty.
 
 :::

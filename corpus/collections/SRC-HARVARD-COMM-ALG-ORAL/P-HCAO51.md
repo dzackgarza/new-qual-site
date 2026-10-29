@@ -47,13 +47,13 @@ If $D$ is a field, then $E$ is a field.
 
 Let $0\ne y\in E$. Since $y$ is integral over $D$, choose a monic equation of
 least degree
-\[
+$$
 y^n+a_{n-1}y^{n-1}+\cdots+a_0=0.
-\]
+$$
 Minimality forces $a_0\ne0$. Rearranging gives
-\[
+$$
 y^{-1}=-a_0^{-1}(y^{n-1}+a_{n-1}y^{n-2}+\cdots+a_1)\in E.
-\]
+$$
 Thus every nonzero element of $E$ is invertible.
 
 :::

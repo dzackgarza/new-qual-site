@@ -23,7 +23,7 @@ Prove the formula $\bigl(\bigcap_i X_i\bigr)^c = \bigcup_i X_i^c$, where $(\cdot
 
 ::: {.solution}
 For any $z\in Z$,
-\[
+$$
 \begin{aligned}
 z\in\left(\bigcap_iX_i\right)^c
 &\Longleftrightarrow z\notin\bigcap_iX_i\\
@@ -31,9 +31,9 @@ z\in\left(\bigcap_iX_i\right)^c
 &\Longleftrightarrow \text{there exists }i\text{ such that }z\in X_i^c\\
 &\Longleftrightarrow z\in\bigcup_iX_i^c.
 \end{aligned}
-\]
+$$
 Since the two sets have exactly the same elements,
-\[
+$$
 \left(\bigcap_iX_i\right)^c=\bigcup_iX_i^c.
-\]
+$$
 :::

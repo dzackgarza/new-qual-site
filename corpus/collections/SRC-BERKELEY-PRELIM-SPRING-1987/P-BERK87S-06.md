@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 Let $f$ be analytic in the open unit disk and suppose
-\[
+$$
 |f(z)|\le\frac{C}{1-|z|}
-\]
+$$
 for all $z$ in the disk, where $C>0$. Prove that
-\[
+$$
 |f'(z)|\le\frac{4C}{(1-|z|)^2}.
-\]
+$$
 :::
 
 ::: {.solution}

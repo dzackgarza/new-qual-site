@@ -14,9 +14,9 @@ audit:
 1. Let $X$ be a set with two topologies $T_1$ and $T_2$, and suppose $T_1$ is finer than $T_2$. If $(X,T_1)$ is compact and $(X,T_2)$ is Hausdorff, prove that $T_1=T_2$.
 
 2. Let $I=[0,1]$. Let $(I,K)$ be $I$ with the subspace topology inherited from the $K$-topology on $\RR$, and let $(I,L)$ be $I$ with the subspace topology inherited from the lower-limit topology. Let
-   \[
+   $$
    X=\prod_{\alpha\in J}Y_\alpha,
-   \]
+   $$
    where each $Y_\alpha$ is either $(I,K)$ or $(I,L)$. Use part 1 to prove that $X$ is not compact.
 :::
 

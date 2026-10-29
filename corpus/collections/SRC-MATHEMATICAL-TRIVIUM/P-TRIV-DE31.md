@@ -28,11 +28,11 @@ such that $u ( 1 ) = 0$ and $u ^ { \prime } ( e ) = 0$ . What values of λ are a
 ::: {.solution}
 
 Set
-\[
+$$
 t=\log x,
 \qquad
 U(t)=u(e^t),
-\]
+$$
 so that $x\in[1,e]$ corresponds to $t\in[0,1]$.
 
 ::: pf
@@ -40,21 +40,21 @@ so that $x\in[1,e]$ corresponds to $t\in[0,1]$.
 ::: pf-step
 
 The eigenvalue problem becomes
-\[
+$$
 U''+\lambda U=0,
 \qquad
 U(0)=0,
 \qquad
 U'(1)=0.
-\]
+$$
 
 
 ::: pf-proof
 
 Since $u'(x)=U'(t)/x$, one has $xu'(x)=U'(t)$ and therefore
-\[
+$$
 (xu')'=\frac1xU''(t).
-\]
+$$
 Multiplying the given equation by $x$ gives $U''=-\lambda U$.
 Also, $u(1)=U(0)$, while $u'(e)=U'(1)/e$, so the second boundary condition is $U'(1)=0$.
 
@@ -72,9 +72,9 @@ There is no nonzero solution for $\lambda\leq0$.
 If $\lambda=0$, then $U=A+Bt$.
 The condition $U(0)=0$ gives $A=0$, and $U'(1)=0$ gives $B=0$.
 If $\lambda=-\mu^2<0$, then
-\[
+$$
 U=A\cosh(\mu t)+B\sinh(\mu t).
-\]
+$$
 The first condition gives $A=0$, and the second gives $B\mu\cosh\mu=0$, hence $B=0$.
 
 :::
@@ -85,27 +85,27 @@ The first condition gives $A=0$, and the second gives $B\mu\cosh\mu=0$, hence $B
 
 For $\lambda>0$, write $\lambda=\mu^2$.
 A nonzero solution exists exactly when
-\[
+$$
 \cos\mu=0,
-\]
+$$
 that is,
-\[
+$$
 \mu=\left(n+\frac12\right)\pi,
 \qquad n=0,1,2,\ldots.
-\]
+$$
 
 
 ::: pf-proof
 
 The general solution is
-\[
+$$
 U=A\cos(\mu t)+B\sin(\mu t).
-\]
+$$
 The condition $U(0)=0$ gives $A=0$.
 Then
-\[
+$$
 U'(1)=B\mu\cos\mu,
-\]
+$$
 which vanishes for a nonzero solution exactly when $\cos\mu=0$.
 
 :::
@@ -115,13 +115,13 @@ which vanishes for a nonzero solution exactly when $\cos\mu=0$.
 ::: {.pf-step #s1-4}
 
 Hence the allowed values and corresponding nonzero solutions are
-\[
+$$
 \boxed{
 \lambda_n=\left(n+\frac12\right)^2\pi^2,
 \qquad
 u_n(x)=C\sin\left(\left(n+\frac12\right)\pi\log x\right),
 \quad n=0,1,2,\ldots,\ C\ne0.}
-\]
+$$
 
 
 ::: pf-proof

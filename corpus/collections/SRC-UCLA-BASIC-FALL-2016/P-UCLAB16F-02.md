@@ -34,7 +34,7 @@ for all $x \in \RR^2$. Here $\norm{z}$ denotes the usual (Pythagorean/Euclidean)
 ::: {.solution}
 
 Write
-\[
+$$
 A=2I+N,
 \qquad
 N=
@@ -42,14 +42,14 @@ N=
 0&1\\
 0&0
 \end{pmatrix}.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 One has
-\[
+$$
 \boxed{
 e^A
 =
@@ -59,32 +59,32 @@ e^2
 0&1
 \end{pmatrix}
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 Since $2I$ commutes with $N$,
-\[
+$$
 e^A=e^{2I}e^N.
-\]
+$$
 Also
-\[
+$$
 N^2=0,
-\]
+$$
 so
-\[
+$$
 e^N=I+N
 =
 \begin{pmatrix}
 1&1\\
 0&1
 \end{pmatrix}.
-\]
+$$
 Finally,
-\[
+$$
 e^{2I}=e^2I.
-\]
+$$
 
 :::
 
@@ -93,31 +93,31 @@ e^{2I}=e^2I.
 ::: {.pf-step #s1-2}
 
 Let
-\[
+$$
 M=
 \begin{pmatrix}
 1&1\\
 0&1
 \end{pmatrix}.
-\]
+$$
 Then the optimal constant is
-\[
+$$
 C=e^2\|M\|_{\mathrm{op}}.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref},
-\[
+$$
 \|e^Ax\|
 =
 e^2\|Mx\|.
-\]
+$$
 The least constant $C$ satisfying
-\[
+$$
 \|e^Ax\|\le C\|x\|
-\]
+$$
 for every $x$ is therefore $e^2$ times the Euclidean operator norm of $M$.
 
 :::
@@ -127,20 +127,20 @@ for every $x$ is therefore $e^2$ times the Euclidean operator norm of $M$.
 ::: pf-step
 
 One has
-\[
+$$
 M^TM
 =
 \begin{pmatrix}
 1&1\\
 1&2
 \end{pmatrix}.
-\]
+$$
 
 
 ::: pf-proof
 
 Direct multiplication gives
-\[
+$$
 \begin{pmatrix}
 1&0\\
 1&1
@@ -154,7 +154,7 @@ Direct multiplication gives
 1&1\\
 1&2
 \end{pmatrix}.
-\]
+$$
 
 :::
 
@@ -163,17 +163,17 @@ Direct multiplication gives
 ::: {.pf-step #s1-4}
 
 The eigenvalues of $M^TM$ are
-\[
+$$
 \lambda_\pm
 =
 \frac{3\pm\sqrt5}{2}.
-\]
+$$
 
 
 ::: pf-proof
 
 The characteristic polynomial is
-\[
+$$
 \det
 \begin{pmatrix}
 1-\lambda&1\\
@@ -183,11 +183,11 @@ The characteristic polynomial is
 (1-\lambda)(2-\lambda)-1
 =
 \lambda^2-3\lambda+1.
-\]
+$$
 Its roots are
-\[
+$$
 \frac{3\pm\sqrt5}{2}.
-\]
+$$
 
 :::
 
@@ -196,7 +196,7 @@ Its roots are
 ::: {.pf-step #s1-5}
 
 The Euclidean operator norm of $M$ is
-\[
+$$
 \boxed{
 \|M\|_{\mathrm{op}}
 =
@@ -204,35 +204,35 @@ The Euclidean operator norm of $M$ is
 =
 \frac{1+\sqrt5}{2}
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 For any real matrix $M$,
-\[
+$$
 \|M\|_{\mathrm{op}}^2
-\]
+$$
 is the largest eigenvalue of the symmetric positive-semidefinite matrix
-\[
+$$
 M^TM.
-\]
+$$
 By step [](#s1-4){.pf-ref}, that largest eigenvalue is
-\[
+$$
 \frac{3+\sqrt5}{2}.
-\]
+$$
 Thus
-\[
+$$
 \|M\|_{\mathrm{op}}
 =
 \sqrt{\frac{3+\sqrt5}{2}}.
-\]
+$$
 Since
-\[
+$$
 \left(\frac{1+\sqrt5}{2}\right)^2
 =
 \frac{3+\sqrt5}{2},
-\]
+$$
 the second expression follows.
 
 :::
@@ -242,13 +242,13 @@ the second expression follows.
 ::: {.pf-step #s1-6}
 
 Therefore the smallest possible constant is
-\[
+$$
 \boxed{
 C
 =
 e^2\frac{1+\sqrt5}{2}
 }.
-\]
+$$
 
 
 ::: pf-proof

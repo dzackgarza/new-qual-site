@@ -25,15 +25,15 @@ audit:
 
 ::: {.problem}
 Let $N$ be an operator on an $n$-dimensional vector space, $n>1$, such that
-\[
+$$
 N^n=0,
 \qquad
 N^{n-1}\ne0.
-\]
+$$
 Prove that there is no operator $X$ with
-\[
+$$
 X^2=N.
-\]
+$$
 :::
 
 ::: {.solution}

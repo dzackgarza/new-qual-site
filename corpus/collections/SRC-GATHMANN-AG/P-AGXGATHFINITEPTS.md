@@ -59,15 +59,15 @@ Apply the distinct case to $\phi(X)$ with $\phi$ from step [](#distinct-first){.
 
 ::: {.pf-step}
 If $p_1^1,\dots,p_d^1$ are pairwise distinct, then $X=V(f_1,\dots,f_n)$, where
-\[
+$$
 f_1\definedas\prod_{j=1}^d(x_1-p_j^1),
 \qquad
 f_k\definedas \tilde f_k(x_1)-x_k\quad(2\leq k\leq n),
-\]
+$$
 and $\tilde f_k\in k[t]$ is the Lagrange interpolating polynomial
-\[
+$$
 \tilde f_k(t)\definedas\sum_{j=1}^d p_j^k\prod_{\substack{1\leq m\leq d\\ m\neq j}}\frac{t-p_m^1}{p_j^1-p_m^1}
-.\]
+.$$
 
 ::: pf-proof
 

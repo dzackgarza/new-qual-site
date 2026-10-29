@@ -38,25 +38,25 @@ Write the negation of each of the following statements:
 :::
 
 ::: {.solution}
-Negating a universal quantifier produces an existential quantifier and vice versa, while negating membership changes \(\in\) to \(\notin\).
+Negating a universal quantifier produces an existential quantifier and vice versa, while negating membership changes $\in$ to $\notin$.
 
 (a) The negation is:
-\[
+$$
 \text{There exists }a\in A\text{ such that }a^2\notin B.
-\]
+$$
 
 (b) The negation is:
-\[
+$$
 \text{For every }a\in A,\quad a^2\notin B.
-\]
+$$
 
 (c) The negation is:
-\[
+$$
 \text{There exists }a\in A\text{ such that }a^2\in B.
-\]
+$$
 
 (d) The negation is:
-\[
+$$
 \text{For every real number }a\notin A,\quad a^2\notin B.
-\]
+$$
 :::

@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 \cot(\pi z)=\sum_{n=-\infty}^{\infty}a_nz^n
-\]
+$$
 be the Laurent expansion on $1<|z|<2$. Compute $a_n$ for $n<0$.
 :::
 

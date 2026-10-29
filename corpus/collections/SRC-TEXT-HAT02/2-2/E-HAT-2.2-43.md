@@ -44,9 +44,9 @@ audit:
 
 ::: {.solution}
 Let
-\[
+$$
 \cdots\xrightarrow{\partial_{n+1}}C_n\xrightarrow{\partial_n}C_{n-1}\xrightarrow{}\cdots
-\]
+$$
 be a chain complex of free abelian groups.
 
 ::: pf
@@ -54,25 +54,25 @@ be a chain complex of free abelian groups.
 ::: pf-step
 
 Put
-\[
+$$
 K_n=\ker\partial_n.
-\]
+$$
 Then the short exact sequence
-\[
+$$
 0\to K_n\to C_n\xrightarrow{\partial_n}\operatorname{im}\partial_n\to0
-\]
+$$
 splits.
 
 ::: pf-proof
 
 The subgroup $\operatorname{im}\partial_n$ of the free abelian group $C_{n-1}$ is free abelian. A short exact sequence with free quotient splits, so choose a complement $L_n\subset C_n$ such that
-\[
+$$
 C_n=K_n\oplus L_n.
-\]
+$$
 The restriction
-\[
+$$
 \partial_n|_{L_n}:L_n\xrightarrow{\cong}\operatorname{im}\partial_n
-\]
+$$
 is an isomorphism.
 
 :::
@@ -82,16 +82,16 @@ is an isomorphism.
 ::: pf-step
 
 The original chain complex is the direct sum, over $n$, of two-term subcomplexes
-\[
+$$
 0\to L_{n+1}\xrightarrow{\partial_{n+1}}K_n\to0.
-\]
+$$
 
 ::: pf-proof
 
 At degree $n$ the decomposition is
-\[
+$$
 C_n=K_n\oplus L_n.
-\]
+$$
 The differential vanishes on $K_n$ and maps $L_n$ into $K_{n-1}$. Thus each $L_{n+1}$ interacts only with $K_n$, and the direct sum of these two-term pieces recovers every chain group and every differential.
 
 Assume now that all $C_n$ are finitely generated.
@@ -103,25 +103,25 @@ Assume now that all $C_n$ are finitely generated.
 ::: pf-step
 
 Each map
-\[
+$$
 L_{n+1}\to K_n
-\]
+$$
 can be diagonalized by Smith normal form, so the chain complex further decomposes into summands
-\[
+$$
 0\to\ZZ\to0
-\]
+$$
 and
-\[
+$$
 0\to\ZZ\xrightarrow{m}\ZZ\to0
 \qquad(m>0).
-\]
+$$
 
 ::: pf-proof
 
 The groups $L_{n+1}$ and $K_n$ are finitely generated free abelian. Smith normal form gives bases in which the injective map $L_{n+1}\to K_n$ is diagonal with nonzero diagonal entries $m_1,\dots,m_r$. Each diagonal entry yields a two-term summand
-\[
+$$
 \ZZ\xrightarrow{m_j}\ZZ,
-\]
+$$
 while any unused basis vectors of $K_n$ yield one-term summands $\ZZ$.
 
 Now let $X$ be a CW complex with finitely many cells in each dimension and tensor its cellular chain complex with an abelian group $G$.
@@ -145,25 +145,25 @@ After tensoring with $G$, the summand becomes a one-term complex with $G$ in deg
 ::: {.pf-step #s5}
 
 A two-term summand
-\[
+$$
 0\to\ZZ\xrightarrow{m}\ZZ\to0
-\]
+$$
 in degrees $n+1,n$ contributes
-\[
+$$
 G/mG
-\]
+$$
 to $H_n(X;G)$ and
-\[
+$$
 \ker(m:G\to G)
-\]
+$$
 to $H_{n+1}(X;G)$.
 
 ::: pf-proof
 
 Tensoring gives
-\[
+$$
 0\to G\xrightarrow{m}G\to0.
-\]
+$$
 Its homology in the lower degree is the cokernel $G/mG$, while its homology in the upper degree is the kernel of multiplication by $m$.
 
 :::
@@ -173,9 +173,9 @@ Its homology in the lower degree is the cokernel $G/mG$, while its homology in t
 ::: pf-step
 
 Therefore
-\[
+$$
 H_n(X;G)
-\]
+$$
 is the direct sum of:
 
 - one copy of $G$ for each $\ZZ$ summand of $H_n(X)$;

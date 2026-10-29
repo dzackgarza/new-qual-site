@@ -16,13 +16,13 @@ audit:
 
 ::: {.problem}
 Give the $\varepsilon$-$\delta$ definition for the existence of
-\[
+$$
 \lim_{x\to x_0}f(x).
-\]
+$$
 Then use the definition to show that
-\[
+$$
 \lim_{x\to1/4}\sqrt{x}=\frac12.
-\]
+$$
 :::
 
 ::: {.solution}

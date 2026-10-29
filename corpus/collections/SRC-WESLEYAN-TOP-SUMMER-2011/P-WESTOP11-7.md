@@ -17,9 +17,9 @@ Suppose $X$ is Hausdorff and has a basis consisting of sets that are both open a
 ::: {.solution}
 
 Let
-\[
+$$
 C\subseteq X
-\]
+$$
 be connected.
 
 ::: pf
@@ -28,9 +28,9 @@ be connected.
 
 Suppose, toward a contradiction, that $C$ contains two distinct
 points
-\[
+$$
 x\ne y.
-\]
+$$
 
 
 ::: pf-proof
@@ -45,33 +45,33 @@ can contain two distinct points.
 ::: pf-step
 
 There exists an open set
-\[
+$$
 U\subseteq X
-\]
+$$
 such that
-\[
+$$
 x\in U
 \qquad\text{and}\qquad
 y\notin U.
-\]
+$$
 
 
 ::: pf-proof
 
 Since $X$ is Hausdorff, the singleton
-\[
+$$
 \{y\}
-\]
+$$
 is closed.
 Hence
-\[
+$$
 X\setminus\{y\}
-\]
+$$
 is an open neighborhood of $x$ not containing $y$.
 Take
-\[
+$$
 U=X\setminus\{y\}.
-\]
+$$
 
 :::
 
@@ -80,38 +80,38 @@ U=X\setminus\{y\}.
 ::: pf-step
 
 Because the topology has a clopen basis, there exists a basis element
-\[
+$$
 B
-\]
+$$
 such that
-\[
+$$
 x\in B\subseteq U.
-\]
+$$
 In particular,
-\[
+$$
 y\notin B.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 x\in U
-\]
+$$
 and $U$ is open, the basis property gives a basis element $B$ with
-\[
+$$
 x\in B\subseteq U.
-\]
+$$
 By hypothesis every basis element is both open and closed.
 Since
-\[
+$$
 y\notin U,
-\]
+$$
 one also has
-\[
+$$
 y\notin B.
-\]
+$$
 
 :::
 
@@ -120,45 +120,45 @@ y\notin B.
 ::: {.pf-step #s1-4}
 
 The two subsets
-\[
+$$
 C\cap B
 \qquad\text{and}\qquad
 C\cap(X\setminus B)
-\]
+$$
 are disjoint nonempty open subsets of $C$ whose union is $C$.
 
 
 ::: pf-proof
 
 They are disjoint and their union is
-\[
+$$
 C\cap
 \bigl(
 B\cup(X\setminus B)
 \bigr)
 =
 C.
-\]
+$$
 
 Because $B$ is open, $C\cap B$ is open in the subspace topology on $C$.
 Because $B$ is closed,
-\[
+$$
 X\setminus B
-\]
+$$
 is open, so
-\[
+$$
 C\cap(X\setminus B)
-\]
+$$
 is also open in $C$.
 
 Finally,
-\[
+$$
 x\in C\cap B
-\]
+$$
 and
-\[
+$$
 y\in C\cap(X\setminus B),
-\]
+$$
 so both sets are nonempty.
 
 :::
@@ -196,11 +196,11 @@ the contradiction in step [](#s1-5){.pf-ref}.
 ::: {.pf-step #s1-7}
 
 Hence
-\[
+$$
 \boxed{
 X\text{ is totally disconnected}.
 }
-\]
+$$
 
 
 ::: pf-proof

@@ -26,7 +26,7 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 A=\begin{pmatrix}
 0&0&0&0\\
 1&0&0&0\\
@@ -40,11 +40,11 @@ B=\begin{pmatrix}
 0&0&0&1\\
 0&0&0&0
 \end{pmatrix}.
-\]
+$$
 Find the general solution of
-\[
+$$
 \frac{dX}{dt}=AXB
-\]
+$$
 for an unknown $4\times4$ matrix-valued function $X(t)$.
 :::
 

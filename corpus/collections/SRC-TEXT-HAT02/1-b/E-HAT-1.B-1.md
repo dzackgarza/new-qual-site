@@ -31,17 +31,17 @@ If the action is free, show it is a covering space action.
 
 ::: {.solution}
 Realize $X$ in barycentric coordinates. Thus every point has the form
-\[
+$$
 x=\sum_{v\in S}\lambda_v v,
 \qquad
 \lambda_v>0,
 \qquad
 \sum_{v\in S}\lambda_v=1,
-\]
+$$
 with finite support $S$, and use the standard $\ell^1$ metric
-\[
+$$
 d(x,y)=\sum_v|x_v-y_v|.
-\]
+$$
 A simplicial automorphism permutes vertices, hence preserves this metric.
 
 ::: pf
@@ -49,31 +49,31 @@ A simplicial automorphism permutes vertices, hence preserves this metric.
 ::: {.pf-step #s1}
 
 For every $x\in X$ there is a number $\delta_x>0$ such that
-\[
+$$
 d(x,gx)\ge\delta_x
 \qquad
 \text{for all }g\ne1.
-\]
+$$
 
 ::: pf-proof
 
 Let $S$ be the finite support of $x$ and put
-\[
+$$
 m=\min_{v\in S}\lambda_v>0.
-\]
+$$
 If $gS\ne S$, choose $v\in S$ such that either $gv\notin S$ or, equivalently after replacing $g$ by $g^{-1}$ if needed, some positive coordinate of $x$ is moved outside $S$.
 Then
-\[
+$$
 d(x,gx)\ge m.
-\]
+$$
 
 It remains to consider elements with $gS=S$.
 Their restrictions to $S$ are permutations of the finite set $S$, so only finitely many points $gx$ can arise.
 The action is free, hence none of these points equals $x$ when $g\ne1$.
 The finite set of positive distances
-\[
+$$
 \{d(x,gx):gS=S,\ g\ne1\}
-\]
+$$
 therefore has a positive minimum when nonempty.
 Taking the minimum of this number and $m$ gives the required $\delta_x$.
 
@@ -84,30 +84,30 @@ Taking the minimum of this number and $m$ gives the required $\delta_x$.
 ::: {.pf-step #s2}
 
 If
-\[
+$$
 U=B(x,\delta_x/3),
-\]
+$$
 then
-\[
+$$
 gU\cap U=\varnothing
 \qquad
 (g\ne1).
-\]
+$$
 
 ::: pf-proof
 
 Suppose $y\in U\cap gU$.
 Then $y=gz$ for some $z\in U$.
 Since $g$ is an isometry,
-\[
+$$
 d(gx,y)=d(x,z)<\delta_x/3.
-\]
+$$
 Also $d(x,y)<\delta_x/3$, so
-\[
+$$
 d(x,gx)
 \le d(x,y)+d(y,gx)
 <2\delta_x/3,
-\]
+$$
 contradicting step [](#s1){.pf-ref}.
 
 :::
@@ -117,22 +117,22 @@ contradicting step [](#s1){.pf-ref}.
 ::: {.pf-step #s3}
 
 The quotient map
-\[
+$$
 q:X\to X/G
-\]
+$$
 is evenly covered over $q(U)$.
 
 ::: pf-proof
 
 The saturation of $U$ is the disjoint union
-\[
+$$
 q^{-1}(q(U))=\coprod_{g\in G}gU
-\]
+$$
 by step [](#s2){.pf-ref}.
 For each $g$, the restriction
-\[
+$$
 q:gU\to q(U)
-\]
+$$
 is bijective, since two points of one translate cannot lie in the same orbit unless some nontrivial translate of $U$ meets $U$.
 The quotient map is open, so each restriction is a homeomorphism.
 Hence $q(U)$ is evenly covered.

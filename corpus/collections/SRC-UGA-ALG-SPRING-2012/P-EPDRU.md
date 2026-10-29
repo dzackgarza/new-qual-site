@@ -59,9 +59,9 @@ Suppose $0\neq r\in R$ and $r(m+M_t)=0$. Then $rm\in M_t$, so some $0\neq s\in R
 ::: {.pf-step #s3}
 
 There is an isomorphism
-\[
+$$
 \boxed{M\cong M_t\oplus F}
-\]
+$$
 for a finite-rank free $R$-module $F$.
 
 ::: pf-proof

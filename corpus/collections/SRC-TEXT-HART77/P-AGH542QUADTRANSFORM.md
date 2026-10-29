@@ -42,9 +42,9 @@ audit:
 ::: {.problem}
 Let $\varphi$ be the quadratic transformation of $(4.2.3)$, centered at $P_1, P_2, P_3$.
 If $C$ is an irreducible curve of degree $d$ in $\PP^2$, distinct from the three lines joining pairs of $P_1,P_2,P_3$, and with points of multiplicity $r_1, r_2, r_3$ at $P_1, P_2, P_3$, then the strict transform $C^{\prime}$ of $C$ by $\varphi$ has degree
-\[
+$$
 d^{\prime}=2 d-r_1-r_2-r_3
-\]
+$$
 and has points of multiplicity
 
 - $d-r_2-r_3$ at $Q_1$,

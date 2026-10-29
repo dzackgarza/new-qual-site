@@ -56,9 +56,9 @@ One has $H\le P$.
 ::: pf-proof
 
 Conjugating the inclusion in step [](#s1){.pf-ref} by $g^{-1}$ gives
-\[
+$$
 g^{-1}Hg\le P.
-\]
+$$
 Since $H\trianglelefteq G$, normality gives $g^{-1}Hg=H$. Therefore $H\le P$.
 
 :::

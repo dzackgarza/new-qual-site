@@ -30,18 +30,18 @@ Find the standard matrix for the linear transformation $T : \RR^2 \to \RR^2$ suc
 
 ::: pf-step
 The vectors
-\[
+$$
 \ell=\begin{pmatrix}1\\2\end{pmatrix},
 \qquad
 p=\begin{pmatrix}2\\-1\end{pmatrix}
-\]
+$$
 form a basis of $\RR^2$, with $\ell\in L$ and $p\in P$.
 
 ::: pf-proof
 The vector $p$ satisfies $2+2(-1)=0$, so $p\in P$. Also
-\[
+$$
 \det\begin{pmatrix}1&2\\2&-1\end{pmatrix}=-5\ne0,
-\]
+$$
 so $\ell,p$ are linearly independent.
 :::
 
@@ -49,22 +49,22 @@ so $\ell,p$ are linearly independent.
 
 ::: pf-step
 Every vector $(x,y)^t$ has a unique decomposition
-\[
+$$
 \begin{pmatrix}x\\y\end{pmatrix}
 =a\ell+bp,
 \qquad
 b=\frac{2x-y}{5}.
-\]
+$$
 
 ::: pf-proof
 The equations are
-\[
+$$
 x=a+2b,\qquad y=2a-b.
-\]
+$$
 Substituting $a=x-2b$ into the second equation gives
-\[
+$$
 y=2x-5b,
-\]
+$$
 so $b=(2x-y)/5$.
 :::
 
@@ -72,30 +72,30 @@ so $b=(2x-y)/5$.
 
 ::: {.pf-step #s3}
 Since $T$ vanishes on $L$ and is the identity on $P$,
-\[
+$$
 T\begin{pmatrix}x\\y\end{pmatrix}
 =b p
 =\frac{2x-y}{5}\begin{pmatrix}2\\-1\end{pmatrix}.
-\]
+$$
 
 :::
 
 ::: pf-step
 Therefore the standard matrix of $T$ is
-\[
+$$
 \boxed{
 [T]=\frac15
 \begin{pmatrix}
 4&-2\\
 -2&1
 \end{pmatrix}.}
-\]
+$$
 
 ::: pf-proof
 Expanding step [](#s3){.pf-ref} gives
-\[
+$$
 T(x,y)=\left(\frac{4x-2y}{5},\frac{-2x+y}{5}\right),
-\]
+$$
 whose coefficient matrix is the displayed matrix.
 :::
 

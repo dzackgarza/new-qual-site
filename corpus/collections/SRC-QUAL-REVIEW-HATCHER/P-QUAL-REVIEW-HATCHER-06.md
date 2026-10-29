@@ -31,16 +31,16 @@ The source gives $X$ only by the picture; the description in the statement is a 
 
 ::: {.solution}
 
-The surface \(X\) is orientable because it is embedded as the boundary of a thickened compact region in \(\RR^3\). Thus \(X\) must be one of the orientable closed surfaces
-\[
+The surface $X$ is orientable because it is embedded as the boundary of a thickened compact region in $\RR^3$. Thus $X$ must be one of the orientable closed surfaces
+$$
 S^2,\ T_1,\ T_2,\dots.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
-Cut \(X\) along five disjoint circles, one in each neck joining adjacent torus-links in the circular chain.
+Cut $X$ along five disjoint circles, one in each neck joining adjacent torus-links in the circular chain.
 
 
 ::: pf-proof
@@ -58,7 +58,7 @@ Each resulting piece is a torus with two open disks removed.
 
 ::: pf-proof
 
-Each link is topologically a torus. The two cuts occur where that link was attached to its two neighbors, so each cut removes one disk from the torus-shaped piece. Hence each piece is an orientable genus-\(1\) surface with two boundary components.
+Each link is topologically a torus. The two cuts occur where that link was attached to its two neighbors, so each cut removes one disk from the torus-shaped piece. Hence each piece is an orientable genus-$1$ surface with two boundary components.
 
 :::
 
@@ -67,19 +67,19 @@ Each link is topologically a torus. The two cuts occur where that link was attac
 ::: pf-step
 
 The Euler characteristic of one such piece is
-\[
+$$
 \boxed{
 2-2(1)-2=-2}.
-\]
+$$
 
 
 ::: pf-proof
 
-For a compact connected orientable surface of genus \(g\) with \(b\) boundary components,
-\[
+For a compact connected orientable surface of genus $g$ with $b$ boundary components,
+$$
 \chi=2-2g-b.
-\]
-Here \(g=1\) and \(b=2\).
+$$
+Here $g=1$ and $b=2$.
 
 :::
 
@@ -92,16 +92,16 @@ Gluing two surfaces along a boundary circle does not change the sum of their Eul
 
 ::: pf-proof
 
-If \(A\) and \(B\) are glued along a circle \(S^1\), then
-\[
+If $A$ and $B$ are glued along a circle $S^1$, then
+$$
 \chi(A\cup_{S^1}B)
 =
 \chi(A)+\chi(B)-\chi(S^1).
-\]
+$$
 Since
-\[
+$$
 \chi(S^1)=0,
-\]
+$$
 the Euler characteristics simply add.
 
 :::
@@ -111,15 +111,15 @@ the Euler characteristics simply add.
 ::: {.pf-step #s1-5}
 
 Therefore the cyclic gluing of the five pieces has
-\[
+$$
 \boxed{
 \chi(X)=5(-2)=-10}.
-\]
+$$
 
 
 ::: pf-proof
 
-Start with the disjoint union of the five pieces, whose total Euler characteristic is \(-10\). Perform the five boundary-circle gluings. By step [](#s1-4){.pf-ref}, each gluing leaves the total Euler characteristic unchanged.
+Start with the disjoint union of the five pieces, whose total Euler characteristic is $-10$. Perform the five boundary-circle gluings. By step [](#s1-4){.pf-ref}, each gluing leaves the total Euler characteristic unchanged.
 
 :::
 
@@ -127,15 +127,15 @@ Start with the disjoint union of the five pieces, whose total Euler characterist
 
 ::: {.pf-step #s1-6}
 
-If \(X\cong T_g\), then
-\[
+If $X\cong T_g$, then
+$$
 \chi(X)=2-2g.
-\]
+$$
 
 
 ::: pf-proof
 
-This is the Euler characteristic of a closed connected orientable surface of genus \(g\).
+This is the Euler characteristic of a closed connected orientable surface of genus $g$.
 
 :::
 
@@ -144,9 +144,9 @@ This is the Euler characteristic of a closed connected orientable surface of gen
 ::: pf-step
 
 Hence
-\[
+$$
 2-2g=-10.
-\]
+$$
 
 
 ::: pf-proof
@@ -160,20 +160,20 @@ Combine steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref}.
 ::: {.pf-step #s1-8}
 
 Solving,
-\[
+$$
 \boxed{g=6}.
-\]
+$$
 
 
 ::: pf-proof
 
-\[
+$$
 2-2g=-10
 \iff
 -2g=-12
 \iff
 g=6.
-\]
+$$
 
 :::
 
@@ -182,15 +182,15 @@ g=6.
 ::: {.pf-step #s1-9}
 
 Therefore
-\[
+$$
 \boxed{
 X\cong T_6}.
-\]
+$$
 
 
 ::: pf-proof
 
-By the classification theorem for closed connected orientable surfaces, the genus is determined by the Euler characteristic. Step [](#s1-8){.pf-ref} gives genus \(6\).
+By the classification theorem for closed connected orientable surfaces, the genus is determined by the Euler characteristic. Step [](#s1-8){.pf-ref} gives genus $6$.
 
 :::
 

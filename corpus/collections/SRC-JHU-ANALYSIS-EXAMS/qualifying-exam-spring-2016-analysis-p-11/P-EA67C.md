@@ -40,14 +40,14 @@ Truncate the integrable function.
 ::: pf-proof
 
 Fix $\varepsilon>0$. Since $f\in L^1(\RR^d)$,
-\[
+$$
 \int_{\{|f|>M\}}|f|\,dx\longrightarrow0
 \qquad(M\to\infty).
-\]
+$$
 Choose $M>0$ so large that
-\[
+$$
 \int_{\{|f|>M\}}|f|<\frac\varepsilon2.
-\]
+$$
 
 :::
 
@@ -60,15 +60,15 @@ Control the integral on a small measurable set.
 ::: pf-proof
 
 Let
-\[
+$$
 \delta:=\frac{\varepsilon}{2M}.
-\]
+$$
 If $m(E)<\delta$, split
-\[
+$$
 E=E\cap\{|f|\le M\}\;\cup\;E\cap\{|f|>M\}.
-\]
+$$
 Then
-\[
+$$
 \begin{aligned}
 \int_E|f|
 &\le \int_{E\cap\{|f|\le M\}}|f|
@@ -77,12 +77,12 @@ Then
 &<M\delta+\frac\varepsilon2
 =\varepsilon.
 \end{aligned}
-\]
+$$
 Thus
-\[
+$$
 \boxed{
 m(E)<\delta\Longrightarrow\int_E|f|<\varepsilon.}
-\]
+$$
 
 :::
 

@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 The curve whose equation is
 
-\[
+$$
 2x^2 + 3x - 2xy - y = 6
-\]
+$$
 
 has two asymptotes. Identify these lines.
 

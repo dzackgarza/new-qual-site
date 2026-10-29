@@ -25,10 +25,10 @@ All surfaces below are understood to be compact, connected, and without boundary
 ::: {.pf-step #s1-1}
 
 Up to homeomorphism, the orientable surfaces are
-\[
+$$
 \Sigma_g=\#^g(S^1\times S^1),
 \qquad g=0,1,2,\ldots,
-\]
+$$
 where $\Sigma_0=S^2$.
 
 
@@ -43,10 +43,10 @@ The classification theorem for compact connected surfaces says that every orient
 ::: {.pf-step #s1-2}
 
 Up to homeomorphism, the nonorientable surfaces are
-\[
+$$
 N_k=\#^k\RP^2,
 \qquad k=1,2,3,\ldots.
-\]
+$$
 
 
 ::: pf-proof
@@ -73,19 +73,19 @@ Orientability is a topological invariant: a homeomorphism transports local orien
 ::: {.pf-step #s1-4}
 
 The Euler characteristics are
-\[
+$$
 \chi(\Sigma_g)=2-2g,
 \qquad
 \chi(N_k)=2-k.
-\]
+$$
 
 
 ::: pf-proof
 
 The sphere has Euler characteristic $2$, the torus has Euler characteristic $0$, and $\RP^2$ has Euler characteristic $1$. For closed connected surfaces,
-\[
+$$
 \chi(M\#N)=\chi(M)+\chi(N)-2,
-\]
+$$
 because one removes an open disk from each surface, decreasing each Euler characteristic by $1$, and glues along a circle of Euler characteristic $0$. Induction gives the displayed formulas.
 
 :::
@@ -100,13 +100,13 @@ Distinct orientable genera give nonhomeomorphic surfaces, and distinct nonorient
 ::: pf-proof
 
 Euler characteristic is invariant under homeomorphism. If $\Sigma_g\cong\Sigma_h$, step [](#s1-4){.pf-ref} gives
-\[
+$$
 2-2g=2-2h,
-\]
+$$
 so $g=h$. If $N_k\cong N_\ell$, then
-\[
+$$
 2-k=2-\ell,
-\]
+$$
 so $k=\ell$. Together with step [](#s1-3){.pf-ref}, this proves that no two distinct entries on the classification list are homeomorphic.
 
 :::
@@ -116,23 +116,23 @@ so $k=\ell$. Together with step [](#s1-3){.pf-ref}, this proves that no two dist
 ::: {.pf-step #s1-6}
 
 The connected sum
-\[
+$$
 T^2\#\RP^2
-\]
+$$
 is nonorientable and has Euler characteristic
-\[
+$$
 -1.
-\]
+$$
 
 
 ::: pf-proof
 
 The connected sum with the nonorientable surface $\RP^2$ is nonorientable. Using the connected-sum formula,
-\[
+$$
 \chi(T^2\#\RP^2)
 =\chi(T^2)+\chi(\RP^2)-2
 =0+1-2=-1.
-\]
+$$
 
 :::
 
@@ -141,17 +141,17 @@ The connected sum with the nonorientable surface $\RP^2$ is nonorientable. Using
 ::: {.pf-step #s1-7}
 
 The unique nonorientable surface with Euler characteristic $-1$ is
-\[
+$$
 N_3=\RP^2\#\RP^2\#\RP^2.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-4){.pf-ref}, $\chi(N_k)=2-k$. Solving
-\[
+$$
 2-k=-1
-\]
+$$
 gives $k=3$. The uniqueness assertion follows from the classification theorem and step [](#s1-5){.pf-ref}.
 
 :::
@@ -161,12 +161,12 @@ gives $k=3$. The uniqueness assertion follows from the classification theorem an
 ::: {.pf-step #s1-8}
 
 Therefore
-\[
+$$
 \boxed{
 T^2\#\RP^2
 \cong
 \RP^2\#\RP^2\#\RP^2.}
-\]
+$$
 
 
 ::: pf-proof

@@ -16,15 +16,15 @@ audit:
 
 ::: {.problem}
 Define an equivalence relation on $\RR^3$ by
-\[
+$$
 (x,y,z)\sim(x',y',z')
 \quad\Longleftrightarrow\quad
 x+y+z=x'+y'+z'.
-\]
+$$
 Find a basis for the vector space
-\[
+$$
 V=\RR^3/\!\sim
-\]
+$$
 and prove that it is a basis.
 :::
 

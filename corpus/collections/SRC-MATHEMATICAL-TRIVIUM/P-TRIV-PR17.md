@@ -38,9 +38,9 @@ $$
 ::: {.pf-step #s1-1}
 
 For $\lambda>0$, the event $\{\xi\geq x\}$ equals
-\[
+$$
 \{e^{\lambda\xi}\geq e^{\lambda x}\}.
-\]
+$$
 
 
 ::: pf-proof
@@ -54,20 +54,20 @@ The exponential function $u\mapsto e^{\lambda u}$ is strictly increasing when $\
 ::: {.pf-step #s1-2}
 
 Markov's inequality applied to the nonnegative random variable $e^{\lambda\xi}$ gives
-\[
+$$
 \boxed{
 P(\xi\geq x)
 \leq e^{-\lambda x}\mathbf E e^{\lambda\xi}}.
-\]
+$$
 
 
 ::: pf-proof
 
 For any nonnegative random variable $Y$ and $a>0$,
-\[
+$$
 \mathbf EY\geq\mathbf E[Y\mathbf1_{Y\geq a}]
 \geq aP(Y\geq a),
-\]
+$$
 so $P(Y\geq a)\leq\mathbf EY/a$. Take $Y=e^{\lambda\xi}$ and $a=e^{\lambda x}$, using step [](#s1-1){.pf-ref}. Finiteness of the stated exponential moment makes the bound finite.
 
 :::
@@ -77,9 +77,9 @@ so $P(Y\geq a)\leq\mathbf EY/a$. Take $Y=e^{\lambda\xi}$ and $a=e^{\lambda x}$, 
 ::: {.pf-step #s1-3}
 
 For $m>0$ and $x>0$, the event $\{|\xi|\geq x\}$ equals
-\[
+$$
 \{|\xi|^m\geq x^m\}.
-\]
+$$
 
 
 ::: pf-proof
@@ -93,11 +93,11 @@ The function $u\mapsto u^m$ is increasing on $[0,\infty)$ for every $m>0$.
 ::: {.pf-step #s1-4}
 
 Markov's inequality applied to $|\xi|^m$ gives
-\[
+$$
 \boxed{
 P(|\xi|\geq x)
 \leq x^{-m}\mathbf E|\xi|^m}.
-\]
+$$
 
 
 ::: pf-proof

@@ -42,11 +42,11 @@ audit:
 
 Let $y_0,y_1\in f(X)$.
 Choose $x_0,x_1\in X$ with
-\[
+$$
 f(x_0)=y_0,
 \qquad
 f(x_1)=y_1.
-\]
+$$
 
 ::: pf-proof
 
@@ -59,9 +59,9 @@ This is the definition of membership in the image $f(X)$.
 ::: pf-step
 
 There exists a path
-\[
+$$
 \gamma:[0,1]\to X
-\]
+$$
 with $\gamma(0)=x_0$ and $\gamma(1)=x_1$.
 
 ::: pf-proof
@@ -75,20 +75,20 @@ The space $X$ is path connected.
 ::: {.pf-step #s3}
 
 The composite
-\[
+$$
 f\circ\gamma:[0,1]\to f(X)
-\]
+$$
 is a path from $y_0$ to $y_1$.
 
 ::: pf-proof
 
 The composite is continuous because both $\gamma$ and $f$ are continuous, and its image lies in $f(X)$.
 Moreover,
-\[
+$$
 (f\circ\gamma)(0)=f(x_0)=y_0,
 \qquad
 (f\circ\gamma)(1)=f(x_1)=y_1.
-\]
+$$
 
 :::
 

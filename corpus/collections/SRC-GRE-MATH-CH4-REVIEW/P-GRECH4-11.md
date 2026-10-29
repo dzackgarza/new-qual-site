@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 At every point $(x, y)$ on a curve in the $xy$-plane, the slope is equal to:
 
-\[
+$$
 \frac{1 - 2xy}{x^2 + 3y^2 + 1}
-\]
+$$
 
 What is the equation of this curve, given that it passes through the point $(1, 1)$?
 

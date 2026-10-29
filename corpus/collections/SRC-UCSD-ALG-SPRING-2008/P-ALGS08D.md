@@ -40,15 +40,15 @@ The subgroup corresponding to $L$ has index $2$ in $\operatorname{Gal}(F/E)$.
 ::: pf-proof
 
 Set
-\[
+$$
 G=\operatorname{Gal}(F/E)
 \qquad\text{and}\qquad
 H=\operatorname{Gal}(F/L).
-\]
+$$
 By the fundamental theorem of Galois theory,
-\[
+$$
 [G:H]=[L:E]=2.
-\]
+$$
 Thus $G$ contains a subgroup of index $2$.
 
 :::
@@ -63,17 +63,17 @@ Consequently $H$ is normal and $G$ has a quotient isomorphic to $C_2$.
 
 Every subgroup of index $2$ is normal: the two left cosets and the two right cosets both consist of $H$ and its complement, so they coincide.
 Hence
-\[
+$$
 H\trianglelefteq G.
-\]
+$$
 The quotient has order
-\[
+$$
 |G/H|=[G:H]=2,
-\]
+$$
 and therefore
-\[
+$$
 G/H\cong C_2.
-\]
+$$
 Equivalently, $G$ admits a surjective homomorphism onto $C_2$.
 In particular $|G|$ is even.
 

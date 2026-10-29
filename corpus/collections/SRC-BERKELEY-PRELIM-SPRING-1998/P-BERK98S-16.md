@@ -20,13 +20,13 @@ audit:
 
 ::: {.problem}
 Let $a>0$. Show that
-\[
+$$
 f(z)=\frac{1+z+az^2}{1-z+az^2}
-\]
+$$
 satisfies
-\[
+$$
 |f(z)|<1
-\]
+$$
 for every $z$ in the open left half-plane $\operatorname{Re}z<0$.
 :::
 

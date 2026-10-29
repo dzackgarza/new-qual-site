@@ -24,14 +24,14 @@ audit:
 
 ::: {.problem}
 A real symmetric $n\times n$ matrix $A$ is positive semidefinite if
-\[
+$$
 x^TAx\ge0
 \qquad\text{for all }x\in\RR^n.
-\]
+$$
 Prove that $A$ is positive semidefinite if and only if
-\[
+$$
 \operatorname{tr}(AB)\ge0
-\]
+$$
 for every real symmetric positive semidefinite $n\times n$ matrix $B$.
 :::
 

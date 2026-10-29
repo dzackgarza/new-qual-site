@@ -36,51 +36,51 @@ Note that on the one hand, when $p \longrightarrow \infty$ then $q \to 1$ , and 
 
 ::: {.solution}
 Let $q$ be determined by
-\[
+$$
 \frac1p+\frac1q=1.
-\]
+$$
 From the hypothesis there are constants $C_0,a_0>0$ such that, after increasing $C_0$ if necessary,
-\[
+$$
 |\widehat f(\xi)|\le C_0e^{-a_0|\xi|^p}
 \qquad(\xi\in\RR).
 \tag{1}
-\]
+$$
 By Fourier inversion,
-\[
+$$
 f(z)=\int_{\RR}\widehat f(\xi)e^{2\pi i\xi z}\,d\xi
 \tag{2}
-\]
+$$
 for real $z$, and the right-hand side will provide the desired entire extension.
 
 Fix $z=x+iy$. By Young's inequality, for every $u,v\ge0$,
-\[
+$$
 uv\le \frac{u^p}{p}+\frac{v^q}{q}.
-\]
+$$
 Apply this after scaling to obtain a constant $C_1>0$, depending only on $a_0,p$, such that
-\[
+$$
 2\pi |y||\xi|
 \le \frac{a_0}{2}|\xi|^p+C_1|y|^q.
 \tag{3}
-\]
+$$
 Combining (1) and (3),
-\[
+$$
 |\widehat f(\xi)e^{2\pi i\xi z}|
 \le C_0e^{-a_0|\xi|^p+2\pi|y||\xi|}
 \le C_0e^{-a_0|\xi|^p/2}e^{C_1|y|^q}.
 \tag{4}
-\]
+$$
 The first factor on the right is integrable in $\xi$. On every compact set of $z$ the second factor is uniformly bounded, so (2) converges locally uniformly and may be differentiated under the integral sign to every order. Hence it defines an entire function agreeing with the original $f$ on $\RR$.
 
 Integrating (4) gives
-\[
+$$
 |f(z)|\le
 C_0\left(\int_{\RR}e^{-a_0|\xi|^p/2}\,d\xi\right)
 e^{C_1|y|^q}
 \le A e^{C_1|z|^q}.
-\]
+$$
 Thus
-\[
+$$
 |f(z)|\le A e^{C|z|^q}
-\]
+$$
 for suitable constants $A,C>0$.
 :::

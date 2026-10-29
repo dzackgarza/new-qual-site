@@ -39,114 +39,114 @@ Explicitly determine the splitting fields over the rationals of the following tw
 ::: pf
 
 ::: {.pf-step #splitting-field-x6-minus-1}
-The splitting field of \(x^6-1\) is
-\[
+The splitting field of $x^6-1$ is
+$$
 \QQ(\zeta_6)=\QQ(\sqrt{-3}),
-\]
-and it has degree \(2\) over \(\QQ\).
+$$
+and it has degree $2$ over $\QQ$.
 
 ::: pf-proof
-The roots of \(x^6-1\) are exactly the sixth roots of unity
-\[
+The roots of $x^6-1$ are exactly the sixth roots of unity
+$$
 1,\zeta_6,\zeta_6^2,\ldots,\zeta_6^5,
-\]
-where \(\zeta_6=e^{2\pi i/6}\).
-Thus the splitting field is \(\QQ(\zeta_6)\).
+$$
+where $\zeta_6=e^{2\pi i/6}$.
+Thus the splitting field is $\QQ(\zeta_6)$.
 Since
-\[
+$$
 \zeta_6=\frac{1+\sqrt{-3}}2,
-\]
+$$
 we have
-\[
+$$
 \QQ(\zeta_6)=\QQ(\sqrt{-3}).
-\]
-The element \(\sqrt{-3}\notin\QQ\), so
-\[
+$$
+The element $\sqrt{-3}\notin\QQ$, so
+$$
 [\QQ(\zeta_6):\QQ]=2.
-\]
-Equivalently, this degree is \(\varphi(6)=2\).
+$$
+Equivalently, this degree is $\varphi(6)=2$.
 :::
 
 :::
 
 ::: pf-step
-The roots of \(x^6+1\) are twelfth roots of unity, and a primitive twelfth root occurs among them.
+The roots of $x^6+1$ are twelfth roots of unity, and a primitive twelfth root occurs among them.
 
 ::: pf-proof
-If \(z^6=-1\), then
-\[
+If $z^6=-1$, then
+$$
 z^{12}=1.
-\]
+$$
 Thus every root is a twelfth root of unity.
-Conversely, if \(\zeta_{12}=e^{2\pi i/12}\), then
-\[
+Conversely, if $\zeta_{12}=e^{2\pi i/12}$, then
+$$
 \zeta_{12}^6=-1,
-\]
-so \(\zeta_{12}\) itself is a root of \(x^6+1\).
+$$
+so $\zeta_{12}$ itself is a root of $x^6+1$.
 The six roots are
-\[
+$$
 \zeta_{12}^{1},\zeta_{12}^{3},\zeta_{12}^{5},
 \zeta_{12}^{7},\zeta_{12}^{9},\zeta_{12}^{11}.
-\]
+$$
 Therefore the splitting field is
-\[
+$$
 \QQ(\zeta_{12}).
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #splitting-field-x6-plus-1}
 One has
-\[
+$$
 \QQ(\zeta_{12})=\QQ(i,\sqrt3)
-\]
+$$
 and
-\[
+$$
 [\QQ(\zeta_{12}):\QQ]=4.
-\]
+$$
 
 ::: pf-proof
 Using
-\[
+$$
 \zeta_{12}=e^{\pi i/6}=\frac{\sqrt3+i}{2},
-\]
+$$
 we get
-\[
+$$
 \zeta_{12}\in\QQ(i,\sqrt3).
-\]
+$$
 Conversely,
-\[
+$$
 i=\zeta_{12}^3
-\]
+$$
 and
-\[
+$$
 \sqrt3=2\zeta_{12}-i,
-\]
-so \(i,\sqrt3\in\QQ(\zeta_{12})\).
+$$
+so $i,\sqrt3\in\QQ(\zeta_{12})$.
 Hence the two fields are equal.
 
-Now \([\QQ(i):\QQ]=2\), while \(\sqrt3\notin\QQ(i)\): if \(\sqrt3=a+bi\) with \(a,b\in\QQ\), comparison with its complex conjugate gives \(b=0\), contradicting \(\sqrt3\notin\QQ\).
+Now $[\QQ(i):\QQ]=2$, while $\sqrt3\notin\QQ(i)$: if $\sqrt3=a+bi$ with $a,b\in\QQ$, comparison with its complex conjugate gives $b=0$, contradicting $\sqrt3\notin\QQ$.
 Thus
-\[
+$$
 [\QQ(i,\sqrt3):\QQ]=4.
-\]
-Equivalently, this is \(\varphi(12)=4\).
+$$
+Equivalently, this is $\varphi(12)=4$.
 :::
 
 :::
 
 ::: pf-step
 Therefore the requested splitting fields and degrees are
-\[
+$$
 \operatorname{Spl}_{\QQ}(x^6-1)=\QQ(\sqrt{-3}),
 \qquad [\operatorname{Spl}:\QQ]=2,
-\]
+$$
 and
-\[
+$$
 \operatorname{Spl}_{\QQ}(x^6+1)=\QQ(i,\sqrt3),
 \qquad [\operatorname{Spl}:\QQ]=4.
-\]
+$$
 
 ::: pf-proof
 This is the combination of step [](#splitting-field-x6-minus-1){.pf-ref} and step [](#splitting-field-x6-plus-1){.pf-ref}.

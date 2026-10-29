@@ -24,9 +24,9 @@ audit:
 ::: {.problem}
 Let $D$ be an ordered integral domain and $a\in D$.
 Prove that
-\[
+$$
 a^2-a+1>0.
-\]
+$$
 :::
 
 ::: {.solution}

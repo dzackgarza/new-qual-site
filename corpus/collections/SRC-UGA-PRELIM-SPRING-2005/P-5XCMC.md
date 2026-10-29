@@ -47,9 +47,9 @@ Hence $A\Rightarrow B$.
 
 ::: pf-proof
 Under the assumption $A$, steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove the implication
-\[
+$$
 (\forall x\,P(x))\Rightarrow(\forall x\,Q(x)),
-\]
+$$
 which is exactly $B$.
 :::
 
@@ -57,11 +57,11 @@ which is exactly $B$.
 
 ::: pf-step
 The converse can fail. Take the universe to be $\ZZ$, and define
-\[
+$$
 P(x): x=0,
 \qquad
 Q(x): x=1.
-\]
+$$
 :::
 
 ::: pf-step

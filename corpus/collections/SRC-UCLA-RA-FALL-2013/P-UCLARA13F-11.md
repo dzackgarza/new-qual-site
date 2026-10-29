@@ -19,15 +19,15 @@ audit:
 ::: {.problem}
 Let $S$ be a subspace of $C([0,1])$.
 Write
-\[
+$$
 \|f\|_\infty=\sup_{x\in[0,1]}|f(x)|,
 \qquad
 \|f\|_2=\left(\int_0^1|f(x)|^2\,dx\right)^{1/2}.
-\]
+$$
 Suppose there is $K\ge0$ such that
-\[
+$$
 \|f\|_\infty\le K\|f\|_2
-\]
+$$
 for every $f\in S$.
 Show that $S$ is finite-dimensional.
 :::
@@ -54,17 +54,17 @@ This is the negation of the desired conclusion.
 ::: {.pf-step #s1-2}
 
 There exists an infinite sequence $(f_n)$ in $S$ that is orthonormal for the $L^2$ inner product:
-\[
+$$
 \int_0^1 f_n(x)f_m(x)\,dx=\delta_{nm}.
-\]
+$$
 
 
 ::: pf-proof
 
 Inductively choose linearly independent vectors from the infinite-dimensional space $S$ and apply the Gram--Schmidt process using
-\[
+$$
 \langle f,g\rangle_2=\int_0^1f(x)g(x)\,dx.
-\]
+$$
 No nonzero continuous function has $L^2$ norm zero, so this is an inner product on $S$. Gram--Schmidt uses finite linear combinations, hence keeps every $f_n$ in $S$.
 
 :::
@@ -74,23 +74,23 @@ No nonzero continuous function has $L^2$ norm zero, so this is an inner product 
 ::: {.pf-step #s1-3}
 
 For each $N\geq1$, define
-\[
+$$
 F_N(x)=\sum_{n=1}^N f_n(x)^2.
-\]
+$$
 Then
-\[
+$$
 \int_0^1F_N(x)\,dx=N.
-\]
+$$
 
 
 ::: pf-proof
 
 Each $f_n$ has $L^2$ norm $1$, so
-\[
+$$
 \int_0^1F_N
 =\sum_{n=1}^N\int_0^1|f_n|^2
 =N.
-\]
+$$
 
 :::
 
@@ -99,9 +99,9 @@ Each $f_n$ has $L^2$ norm $1$, so
 ::: {.pf-step #s1-4}
 
 Hence there exists $x_N\in[0,1]$ such that
-\[
+$$
 F_N(x_N)\geq N.
-\]
+$$
 
 
 ::: pf-proof
@@ -115,14 +115,14 @@ If $F_N(x)<N$ for every $x$, continuity on the compact interval would give $\int
 ::: pf-step
 
 Define coefficients
-\[
+$$
 c_n=f_n(x_N)
 \qquad(1\leq n\leq N)
-\]
+$$
 and the function
-\[
+$$
 g_N=\sum_{n=1}^Nc_nf_n\in S.
-\]
+$$
 
 
 ::: pf-proof
@@ -136,27 +136,27 @@ This is a finite linear combination of elements of the subspace $S$, so $g_N\in 
 ::: {.pf-step #s1-6}
 
 One has
-\[
+$$
 g_N(x_N)=F_N(x_N)
-\]
+$$
 and
-\[
+$$
 \|g_N\|_2^2=F_N(x_N).
-\]
+$$
 
 
 ::: pf-proof
 
 By the definition of the coefficients,
-\[
+$$
 g_N(x_N)=\sum_{n=1}^Nf_n(x_N)^2=F_N(x_N).
-\]
+$$
 By orthonormality from step [](#s1-2){.pf-ref},
-\[
+$$
 \|g_N\|_2^2
 =\sum_{n=1}^N|c_n|^2
 =F_N(x_N).
-\]
+$$
 
 :::
 
@@ -165,20 +165,20 @@ By orthonormality from step [](#s1-2){.pf-ref},
 ::: {.pf-step #s1-7}
 
 The assumed norm inequality applied to $g_N$ gives
-\[
+$$
 F_N(x_N)
 \leq K\sqrt{F_N(x_N)}.
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-6){.pf-ref} gives
-\[
+$$
 F_N(x_N)=|g_N(x_N)|\leq\|g_N\|_\infty
 \leq K\|g_N\|_2
 =K\sqrt{F_N(x_N)}.
-\]
+$$
 
 :::
 
@@ -187,9 +187,9 @@ F_N(x_N)=|g_N(x_N)|\leq\|g_N\|_\infty
 ::: {.pf-step #s1-8}
 
 Therefore
-\[
+$$
 F_N(x_N)\leq K^2.
-\]
+$$
 
 
 ::: pf-proof
@@ -203,9 +203,9 @@ By step [](#s1-4){.pf-ref}, $F_N(x_N)\geq N>0$, so divide the inequality in step
 ::: {.pf-step #s1-9}
 
 Steps [](#s1-4){.pf-ref} and [](#s1-8){.pf-ref} imply
-\[
+$$
 N\leq K^2
-\]
+$$
 for every positive integer $N$, a contradiction.
 
 
@@ -220,9 +220,9 @@ Step [](#s1-4){.pf-ref} gives $N\leq F_N(x_N)$, and step [](#s1-8){.pf-ref} give
 ::: {.pf-step #s1-10}
 
 Hence
-\[
+$$
 \boxed{S\text{ is finite-dimensional}.}
-\]
+$$
 
 
 ::: pf-proof

@@ -35,13 +35,13 @@ Conditional convergence of $\sum a_n$ can occur while $\sum a_n^2$ converges.
 ::: pf-proof
 
 Take
-\[
+$$
 a_n=\frac{(-1)^{n+1}}{n}.
-\]
+$$
 Then $\sum a_n$ converges by the alternating-series test, but not absolutely because $\sum 1/n$ diverges. Thus $\sum a_n$ converges conditionally. On the other hand,
-\[
+$$
 \sum_{n=1}^\infty a_n^2=\sum_{n=1}^\infty \frac1{n^2}
-\]
+$$
 converges.
 
 :::
@@ -55,13 +55,13 @@ Conditional convergence of $\sum a_n$ can also occur while $\sum a_n^2$ diverges
 ::: pf-proof
 
 Take
-\[
+$$
 a_n=\frac{(-1)^{n+1}}{\sqrt n}.
-\]
+$$
 The series $\sum a_n$ converges by the alternating-series test because $1/\sqrt n$ decreases to $0$, but it is not absolutely convergent because $\sum 1/\sqrt n$ diverges. Hence $\sum a_n$ converges conditionally. However,
-\[
+$$
 \sum_{n=1}^\infty a_n^2=\sum_{n=1}^\infty \frac1n
-\]
+$$
 diverges.
 
 :::
@@ -75,13 +75,13 @@ If $\sum a_n$ converges absolutely, then $\sum a_n^2$ converges.
 ::: pf-proof
 
 Absolute convergence means
-\[
+$$
 \sum_{n=1}^\infty |a_n|<\infty.
-\]
+$$
 Therefore $a_n\to0$, so there exists $N$ such that $|a_n|\le1$ for all $n\ge N$. For such $n$,
-\[
+$$
 0\le a_n^2=|a_n|^2\le |a_n|.
-\]
+$$
 Thus $\sum_{n=N}^\infty a_n^2$ converges by comparison with $\sum_{n=N}^\infty |a_n|$. Adding the finitely many initial terms gives convergence of $\sum_{n=1}^\infty a_n^2$.
 
 :::

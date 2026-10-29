@@ -23,29 +23,29 @@ Let $n\geq 3$ and $\zeta_n$ be a primitive $n$th root of unity. Show that $[\QQ(
 
 ::: {.solution}
 Let
-\[
+$$
 K=\QQ(\zeta_n),
 \qquad
 \alpha=\zeta_n+\zeta_n^{-1}.
-\]
+$$
 Then
-\[
+$$
 \operatorname{Gal}(K/\QQ)\cong (\ZZ/n\ZZ)^\times,
-\]
-where \(a\in(\ZZ/n\ZZ)^\times\) acts by \(\sigma_a(\zeta_n)=\zeta_n^a\).
+$$
+where $a\in(\ZZ/n\ZZ)^\times$ acts by $\sigma_a(\zeta_n)=\zeta_n^a$.
 
 ::: pf
 
 ::: pf-step
 
-For \(a\in(\ZZ/n\ZZ)^\times\),
-\[
+For $a\in(\ZZ/n\ZZ)^\times$,
+$$
 \sigma_a(\alpha)=\zeta_n^a+\zeta_n^{-a}.
-\]
+$$
 
 ::: pf-proof
 
-This follows directly from the definition of \(\sigma_a\).
+This follows directly from the definition of $\sigma_a$.
 
 :::
 
@@ -53,30 +53,30 @@ This follows directly from the definition of \(\sigma_a\).
 
 ::: {.pf-step #s2}
 
-The stabilizer of \(\alpha\) in \(\operatorname{Gal}(K/\QQ)\) is exactly
-\[
+The stabilizer of $\alpha$ in $\operatorname{Gal}(K/\QQ)$ is exactly
+$$
 \{\sigma_1,\sigma_{-1}\}.
-\]
+$$
 
 ::: pf-proof
 
-Certainly \(\sigma_1(\alpha)=\alpha\) and \(\sigma_{-1}(\alpha)=\alpha\). Conversely, suppose
-\[
+Certainly $\sigma_1(\alpha)=\alpha$ and $\sigma_{-1}(\alpha)=\alpha$. Conversely, suppose
+$$
 \zeta_n^a+\zeta_n^{-a}=\zeta_n+\zeta_n^{-1}.
-\]
-The two numbers \(\zeta_n^a\) and \(\zeta_n^{-a}\) are the roots of
-\[
+$$
+The two numbers $\zeta_n^a$ and $\zeta_n^{-a}$ are the roots of
+$$
 t^2-(\zeta_n^a+\zeta_n^{-a})t+1,
-\]
-while \(\zeta_n\) and \(\zeta_n^{-1}\) are the roots of
-\[
+$$
+while $\zeta_n$ and $\zeta_n^{-1}$ are the roots of
+$$
 t^2-(\zeta_n+\zeta_n^{-1})t+1.
-\]
+$$
 The polynomials are equal, so their root sets are equal. Hence
-\[
+$$
 \zeta_n^a\in\{\zeta_n,\zeta_n^{-1}\},
-\]
-which means \(a\equiv\pm1\pmod n\). Since \(n\ge3\), the residues \(1\) and \(-1\) are distinct, so the stabilizer has order \(2\).
+$$
+which means $a\equiv\pm1\pmod n$. Since $n\ge3$, the residues $1$ and $-1$ are distinct, so the stabilizer has order $2$.
 
 :::
 
@@ -84,19 +84,19 @@ which means \(a\equiv\pm1\pmod n\). Since \(n\ge3\), the residues \(1\) and \(-1
 
 ::: {.pf-step #s3}
 
-The Galois orbit of \(\alpha\) has size
-\[
+The Galois orbit of $\alpha$ has size
+$$
 \frac{\varphi(n)}2.
-\]
+$$
 
 ::: pf-proof
 
-The Galois group has order \(\varphi(n)\). By orbit-stabilizer and step [](#s2){.pf-ref},
-\[
+The Galois group has order $\varphi(n)$. By orbit-stabilizer and step [](#s2){.pf-ref},
+$$
 |\operatorname{Orb}(\alpha)|
 =\frac{|\operatorname{Gal}(K/\QQ)|}{|\operatorname{Stab}(\alpha)|}
 =\frac{\varphi(n)}2.
-\]
+$$
 
 :::
 
@@ -105,17 +105,17 @@ The Galois group has order \(\varphi(n)\). By orbit-stabilizer and step [](#s2){
 ::: {.pf-step #s4}
 
 Therefore
-\[
+$$
 \boxed{[\QQ(\zeta_n+\zeta_n^{-1}):\QQ]
 =\frac{\varphi(n)}2}.
-\]
+$$
 
 ::: pf-proof
 
-Because \(K/\QQ\) is Galois, the distinct \(\QQ\)-conjugates of \(\alpha\) inside \(K\) are exactly its Galois orbit. The degree of the minimal polynomial of \(\alpha\) over \(\QQ\) is therefore the orbit size from step [](#s3){.pf-ref}. Since
-\[
+Because $K/\QQ$ is Galois, the distinct $\QQ$-conjugates of $\alpha$ inside $K$ are exactly its Galois orbit. The degree of the minimal polynomial of $\alpha$ over $\QQ$ is therefore the orbit size from step [](#s3){.pf-ref}. Since
+$$
 [\QQ(\alpha):\QQ]=\deg m_\alpha,
-\]
+$$
 the claimed formula follows.
 
 :::

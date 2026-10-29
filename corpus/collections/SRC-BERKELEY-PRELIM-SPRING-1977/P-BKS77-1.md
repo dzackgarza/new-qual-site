@@ -21,13 +21,13 @@ audit:
 
 ::: {.problem}
 Let $f:\RR\to\RR$ be differentiable and suppose
-\[
+$$
 f'(x)>f(x)
-\]
+$$
 for every $x\in\RR$. If $f(x_0)=0$, prove that
-\[
+$$
 f(x)>0
-\]
+$$
 for every $x>x_0$.
 :::
 

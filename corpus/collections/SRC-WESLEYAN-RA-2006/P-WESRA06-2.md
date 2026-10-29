@@ -27,9 +27,9 @@ Let $N$ be a real vector space.
 1. Define a norm on $N$.
 
 2. When $N=\RR$ and $0<p<\infty$, determine for which $p$ the formula
-   \[
+   $$
    \|x\|_p:=|x|^p
-   \]
+   $$
    defines a norm.
 
 3. Define a Banach space.
@@ -51,13 +51,13 @@ Definition of a norm.
 ::: pf-proof
 
 A norm on $N$ is a function $\|\cdot\|:N\to[0,\infty)$ such that for all $x,y\in N$ and all real scalars $a$,
-\[
+$$
 \|x\|=0\iff x=0,
 \qquad
 \|ax\|=|a|\,\|x\|,
 \qquad
 \|x+y\|\le\|x\|+\|y\|.
-\]
+$$
 
 :::
 
@@ -70,21 +70,21 @@ Determine the admissible exponent.
 ::: pf-proof
 
 If $\|x\|_p=|x|^p$ is a norm, absolute homogeneity requires
-\[
+$$
 |ax|^p=|a|\,|x|^p
-\]
+$$
 for every $a,x\in\RR$.
 Taking $x=1$ and $a=2$ gives
-\[
+$$
 2^p=2,
-\]
+$$
 so $p=1$.
 
 Conversely, when $p=1$, the formula is the usual absolute-value norm on $\RR$.
 Hence
-\[
+$$
 \boxed{\|x\|_p=|x|^p\text{ is a norm exactly when }p=1.}
-\]
+$$
 
 :::
 
@@ -111,11 +111,11 @@ Hahn--Banach theorem.
 One standard real form is the following.
 Let $X$ be a real normed vector space, let $M\subseteq X$ be a linear subspace, and let $f\in M^*$ be bounded.
 Then there exists $F\in X^*$ such that
-\[
+$$
 F|_M=f
 \qquad\text{and}\qquad
 \|F\|=\|f\|.
-\]
+$$
 
 :::
 
@@ -129,16 +129,16 @@ Pull the Cauchy sequence back through the inverse map.
 
 The map $T:B\to B'$ is a bounded linear bijection between Banach spaces.
 By the Open Mapping Theorem, its inverse
-\[
+$$
 T^{-1}:B'\to B
-\]
+$$
 is bounded.
 Therefore there is $C>0$ such that
-\[
+$$
 \|x_n-x_m\|_B
 =\|T^{-1}(y_n-y_m)\|_B
 \le C\|y_n-y_m\|_{B'}.
-\]
+$$
 Since $(y_n)$ is Cauchy in $B'$, it follows that $(x_n)$ is Cauchy in $B$.
 Because $B$ is complete, $(x_n)$ converges in $B$.
 

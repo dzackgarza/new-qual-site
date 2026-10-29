@@ -18,13 +18,13 @@ audit:
 ::: {.problem}
 Let $T:V\to W$ and $S:W\to X$ be linear maps between finite-dimensional real vector spaces.
 Prove that
-\[
+$$
 \operatorname{rank}(T)+\operatorname{rank}(S)-\dim W
 \leq
 \operatorname{rank}(S\circ T)
 \leq
 \max\{\operatorname{rank}(T),\operatorname{rank}(S)\}.
-\]
+$$
 
 Here the rank of a linear transformation is the dimension of its image.
 :::

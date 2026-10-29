@@ -19,10 +19,10 @@ audit:
 ::: {.problem}
 Let $a\in\RR$ with $|a|<1$.
 Prove that
-\[
+$$
 \sum_{k=1}^{\infty}a^k\cos(k\theta)
 =\frac{-a^2+a\cos\theta}{1+a^2-2a\cos\theta}.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -46,16 +46,16 @@ For each $g\in G$, conjugation by $g$ is an automorphism of $G$.
 ::: pf-proof
 
 Define
-\[
+$$
 c_g:G\longrightarrow G,
 \qquad
 c_g(x)=gxg^{-1}.
-\]
+$$
 Then $c_g$ is a homomorphism, and its inverse is $c_{g^{-1}}$.
 Hence
-\[
+$$
 c_g\in\operatorname{Aut}(G).
-\]
+$$
 
 :::
 
@@ -69,9 +69,9 @@ Every conjugation automorphism preserves $H$.
 
 Since $H$ is characteristic in $G$, every automorphism of $G$ carries $H$ to itself.
 Applying this to the automorphism $c_g$ from step [](#s1){.pf-ref} gives
-\[
+$$
 c_g(H)=H
-\]
+$$
 for every $g\in G$.
 
 :::
@@ -85,9 +85,9 @@ Therefore $H\normal G$.
 ::: pf-proof
 
 By step [](#s2){.pf-ref},
-\[
+$$
 gHg^{-1}=H
-\]
+$$
 for every $g\in G$.
 This is exactly the definition of normality.
 

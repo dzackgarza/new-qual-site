@@ -32,12 +32,12 @@ For a CW pair $(X, A)$ show there is a relative cellular chain complex formed by
 
 ::: {.solution}
 Let $(X,A)$ be a CW pair, so $A$ is a subcomplex of $X$. Define
-\[
+$$
 C_n^{CW}(X,A)
 =
 H_n(X^n,X^{n-1}\cup A^n),
 \qquad A^n=A\cap X^n.
-\]
+$$
 
 ::: pf
 
@@ -48,18 +48,18 @@ These groups are naturally the cellular chain groups of the quotient CW complex 
 ::: pf-proof
 
 The quotient $X/A$ inherits a CW structure whose non-basepoint cells are exactly the cells of $X$ not contained in $A$. Its $n$-skeleton is
-\[
+$$
 (X/A)^n=X^n/A^n.
-\]
+$$
 Therefore
-\[
+$$
 C_n^{CW}(X/A)
 =H_n(X^n/A^n,\,X^{n-1}/A^{n-1}).
-\]
+$$
 By the quotient theorem for relative homology, this is naturally isomorphic to
-\[
+$$
 H_n(X^n,X^{n-1}\cup A^n)=C_n^{CW}(X,A).
-\]
+$$
 
 :::
 
@@ -68,16 +68,16 @@ H_n(X^n,X^{n-1}\cup A^n)=C_n^{CW}(X,A).
 ::: {.pf-step #s2}
 
 Under these identifications, the cellular boundary on $X/A$ gives boundary maps
-\[
+$$
 d_n:C_n^{CW}(X,A)\to C_{n-1}^{CW}(X,A).
-\]
+$$
 
 ::: pf-proof
 
 The cellular boundary of $X/A$ is defined using the connecting homomorphisms for its skeletal pairs. Transport these maps through the natural isomorphisms of step [](#s1){.pf-ref}. Equivalently, they are the connecting maps obtained from the triples
-\[
+$$
 (X^n,\,X^{n-1}\cup A^n,\,X^{n-2}\cup A^{n-1}).
-\]
+$$
 Since they come from an ordinary cellular chain complex, they satisfy $d_{n-1}d_n=0$.
 
 :::
@@ -91,17 +91,17 @@ The homology of this relative cellular chain complex is $H_n(X,A)$.
 ::: pf-proof
 
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the relative cellular complex is canonically the cellular chain complex of $X/A$. Hence its homology is
-\[
+$$
 H_n^{CW}(X/A)\cong\widetilde H_n(X/A).
-\]
+$$
 For a CW pair, collapsing $A$ gives the standard relative-homology isomorphism
-\[
+$$
 \widetilde H_n(X/A)\cong H_n(X,A)
-\]
+$$
 (with the usual unreduced interpretation in degree $0$). Therefore
-\[
+$$
 \boxed{H_n(C_*^{CW}(X,A))\cong H_n(X,A).}
-\]
+$$
 
 :::
 

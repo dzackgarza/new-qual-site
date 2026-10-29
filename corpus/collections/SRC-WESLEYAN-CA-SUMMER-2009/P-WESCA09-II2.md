@@ -28,25 +28,25 @@ If every function analytic in $D$ has a primitive in $D$, prove that $D$ is simp
 
 Let $\sigma$ be any cycle in $D$ and let $a\in\CC\setminus D$.
 Then
-\[
+$$
 \int_\sigma \frac{dz}{z-a}=0.
-\]
+$$
 
 
 ::: pf-proof
 
 Because $a\notin D$, the function
-\[
+$$
 z\longmapsto \frac1{z-a}
-\]
+$$
 is analytic on $D$. By hypothesis it has a primitive $F$ on $D$. The integral
 of a derivative over every closed path is zero, and by linearity the same is
 true over every cycle. Therefore
-\[
+$$
 \int_\sigma \frac{dz}{z-a}
 =\int_\sigma F'(z)\,dz
 =0.
-\]
+$$
 
 :::
 
@@ -61,11 +61,11 @@ Every cycle $\sigma$ in $D$ is homologous to zero in $D$.
 
 Let $a\in\CC\setminus D$. By the definition of the winding number and
 step [](#s1-1){.pf-ref},
-\[
+$$
 n(\sigma,a)
 =\frac1{2\pi i}\int_\sigma\frac{dz}{z-a}
 =0.
-\]
+$$
 Since this holds for every $a\notin D$, the defining criterion for $\sigma$ to
 be homologous to zero in $D$ is satisfied.
 

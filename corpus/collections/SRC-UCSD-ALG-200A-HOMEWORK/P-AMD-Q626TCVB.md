@@ -45,17 +45,17 @@ Every element of $G$ is its own inverse.
 
 Let $x\in G$.
 By hypothesis,
-\[
+$$
 x^2=e.
-\]
+$$
 Thus
-\[
+$$
 xx=e,
-\]
+$$
 so uniqueness of inverses gives
-\[
+$$
 x^{-1}=x.
-\]
+$$
 
 :::
 
@@ -69,17 +69,17 @@ Any two elements of $G$ commute.
 
 Let $x,y\in G$.
 By step [](#s1){.pf-ref}, applied to the element $xy$, one has
-\[
+$$
 (xy)^{-1}=xy.
-\]
+$$
 On the other hand, the inverse-of-a-product formula and step [](#s1){.pf-ref} give
-\[
+$$
 (xy)^{-1}=y^{-1}x^{-1}=yx.
-\]
+$$
 Therefore
-\[
+$$
 xy=yx.
-\]
+$$
 Since $x$ and $y$ were arbitrary, $G$ is abelian.
 
 :::

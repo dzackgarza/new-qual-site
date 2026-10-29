@@ -37,9 +37,9 @@ Prove there is a finite set $\alpha_1,\ldots,\alpha_n$ in $A$ with $C_{\alpha_1}
 ::: {.pf-step #s1}
 
 The family
-\[
+$$
 \{U\}\cup\{X\setminus C_\alpha:\alpha\in A\}
-\]
+$$
 is an open cover of $X$.
 
 ::: pf-proof
@@ -49,9 +49,9 @@ Let $x\in X$.
 If $x\in U$, then $x$ is covered by $U$.
 If $x\notin U$, then $x\notin C$ because $C\subseteq U$.
 Since
-\[
+$$
 C=\bigcap_{\alpha\in A}C_\alpha,
-\]
+$$
 there is some $\alpha$ with $x\notin C_\alpha$, so $x\in X\setminus C_\alpha$.
 Thus the displayed family covers $X$.
 
@@ -62,9 +62,9 @@ Thus the displayed family covers $X$.
 ::: {.pf-step #s2}
 
 Compactness of $X$ gives indices $\alpha_1,\dots,\alpha_n\in A$ such that
-\[
+$$
 X=U\cup(X\setminus C_{\alpha_1})\cup\cdots\cup(X\setminus C_{\alpha_n}).
-\]
+$$
 
 ::: pf-proof
 
@@ -78,9 +78,9 @@ If a finite subcover omits $U$, adjoin $U$ without affecting finiteness.
 ::: {.pf-step #s3}
 
 One has
-\[
+$$
 C_{\alpha_1}\cap\cdots\cap C_{\alpha_n}\subseteq U.
-\]
+$$
 
 ::: pf-proof
 

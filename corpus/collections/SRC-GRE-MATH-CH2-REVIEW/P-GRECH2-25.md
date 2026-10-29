@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Evaluate the following integral:
 
-\[
+$$
 \int_{-1}^{0} x^2 (x+1)^3 dx
-\]
+$$
 
 (A) $-\frac{7}{20}$
 (B) $-\frac{1}{60}$

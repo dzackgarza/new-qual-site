@@ -12,9 +12,9 @@ audit:
 
 ::: {.problem}
 Consider
-\[
+$$
 x'=x^2+t^2,\qquad x(0)=1.
-\]
+$$
 
 1. Prove that there is a solution on $[0,b]$ for some $b>0$.
 2. Give an explicit such $b$.

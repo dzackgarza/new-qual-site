@@ -28,11 +28,11 @@ audit:
 ::: {.problem}
 Let $G$ be an additive group and let $u,v:G\to G$ be homomorphisms.
 Define
-\[
+$$
 f(x)=x-v(u(x)),
 \qquad
 h(x)=x-u(v(x)).
-\]
+$$
 Show that if $h$ is surjective, then $f$ is surjective.
 :::
 

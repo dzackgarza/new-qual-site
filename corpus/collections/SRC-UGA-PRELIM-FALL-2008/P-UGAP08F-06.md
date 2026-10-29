@@ -16,13 +16,13 @@ audit:
 
 ::: {.problem}
 Suppose $f:[0,1]\to\RR$ is continuous, $f(x)\ge0$ for all $x\in[0,1]$, and
-\[
+$$
 f(1/2)>0.
-\]
+$$
 Prove that
-\[
+$$
 \int_0^1 f(x)\,dx>0.
-\]
+$$
 Give an example showing that the conclusion need not hold when $f$ is not continuous.
 :::
 

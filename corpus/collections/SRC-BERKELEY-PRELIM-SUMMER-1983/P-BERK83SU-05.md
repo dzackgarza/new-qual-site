@@ -26,15 +26,15 @@ audit:
 
 ::: {.problem}
 Let $0<b_1<b_2<\cdots$ be real numbers such that
-\[
+$$
 b_n\to\infty,
 \qquad
 \frac{b_n}{b_{n+1}}\to1.
-\]
+$$
 Prove that
-\[
+$$
 \left\{\frac{b_m}{b_n}:1\le n<m\right\}
-\]
+$$
 is dense in $(1,\infty)$.
 :::
 

@@ -32,40 +32,40 @@ Write $\mathcal B(X)$, $\mathcal B(Y)$, and $\mathcal B(X\times Y)$ for the corr
 ::: {.pf-step #s1-1}
 
 Let
-\[
+$$
 \mathcal F
 \coloneqq
 \{E\subset Y:f^{-1}(E)\in\mathcal B(X)\}.
-\]
+$$
 Then $\mathcal F$ is a $\sigma$-algebra on $Y$.
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 f^{-1}(Y)=X,
-\]
+$$
 one has $Y\in\mathcal F$.
 
 If $E\in\mathcal F$, then
-\[
+$$
 f^{-1}(Y\setminus E)
 =
 X\setminus f^{-1}(E)
 \in
 \mathcal B(X),
-\]
+$$
 so $Y\setminus E\in\mathcal F$.
 
 If $E_n\in\mathcal F$, then
-\[
+$$
 f^{-1}\left(\bigcup_{n=1}^\infty E_n\right)
 =
 \bigcup_{n=1}^\infty f^{-1}(E_n)
 \in
 \mathcal B(X).
-\]
+$$
 Thus $\mathcal F$ is closed under countable unions.
 
 :::
@@ -80,13 +80,13 @@ Every open subset of $Y$ belongs to $\mathcal F$.
 ::: pf-proof
 
 If $U\subset Y$ is open, continuity of $f$ gives
-\[
+$$
 f^{-1}(U)
-\]
+$$
 open in $X$. Hence
-\[
+$$
 f^{-1}(U)\in\mathcal B(X),
-\]
+$$
 so $U\in\mathcal F$.
 
 :::
@@ -96,17 +96,17 @@ so $U\in\mathcal F$.
 ::: {.pf-step #s1-3}
 
 If $E\in\mathcal B(Y)$, then
-\[
+$$
 \boxed{f^{-1}(E)\in\mathcal B(X)}.
-\]
+$$
 
 
 ::: pf-proof
 
 By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, $\mathcal F$ is a $\sigma$-algebra containing every open subset of $Y$. Therefore
-\[
+$$
 \mathcal B(Y)\subset\mathcal F.
-\]
+$$
 The definition of $\mathcal F$ gives the claim.
 
 :::
@@ -116,11 +116,11 @@ The definition of $\mathcal F$ gives the claim.
 ::: {.pf-step #s1-4}
 
 The coordinate projections
-\[
+$$
 \pi_X:X\times Y\to X,
 \qquad
 \pi_Y:X\times Y\to Y
-\]
+$$
 are continuous.
 
 
@@ -135,18 +135,18 @@ This is part of the definition of the product topology: the product topology is 
 ::: {.pf-step #s1-5}
 
 If
-\[
+$$
 A\in\mathcal B(X),
 \qquad
 E\in\mathcal B(Y),
-\]
+$$
 then
-\[
+$$
 \pi_X^{-1}(A),
 \pi_Y^{-1}(E)
 \in
 \mathcal B(X\times Y).
-\]
+$$
 
 
 ::: pf-proof
@@ -160,25 +160,25 @@ Apply part (a), proved in step [](#s1-3){.pf-ref}, to the continuous maps $\pi_X
 ::: {.pf-step #s1-6}
 
 One has
-\[
+$$
 \boxed{
 A\times E
 \in
 \mathcal B(X\times Y)
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 By elementary set theory,
-\[
+$$
 A\times E
 =
 \pi_X^{-1}(A)
 \cap
 \pi_Y^{-1}(E).
-\]
+$$
 Both inverse images are Borel by step [](#s1-5){.pf-ref}, and Borel sets are closed under finite intersections.
 
 :::

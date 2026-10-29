@@ -24,13 +24,13 @@ audit:
 
 ::: {.problem}
 Given
-\[
+$$
 \int_{-\infty}^{\infty}e^{-x^2}\,dx=\sqrt\pi,
-\]
+$$
 define for $t>0$
-\[
+$$
 f(t)=\int_{-\infty}^{\infty}e^{-t x^2}\,dx.
-\]
+$$
 Find $f'(t)$ explicitly.
 :::
 

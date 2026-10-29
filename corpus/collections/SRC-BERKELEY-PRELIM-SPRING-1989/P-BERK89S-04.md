@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 Let $1<\lambda<\infty$. Prove that
-\[
+$$
 f_\lambda(z)=z+\lambda-e^z
-\]
+$$
 has exactly one zero in the half-plane
-\[
+$$
 \operatorname{Re}z<0,
-\]
+$$
 and that this zero is real.
 :::
 

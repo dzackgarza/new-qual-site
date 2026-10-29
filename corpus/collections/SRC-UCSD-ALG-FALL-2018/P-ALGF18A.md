@@ -41,55 +41,55 @@ Let $n_q$ denote the number of Sylow $q$-subgroups of $G$.
 
 ::: {.pf-step #nq-cases}
 Either the Sylow $q$-subgroup of $G$ is normal, or
-\[
+$$
 n_q=2p.
-\]
+$$
 
 ::: pf-proof
 Sylow's theorem gives
-\[
+$$
 n_q\equiv1\pmod q,
 \qquad
 n_q\mid2p.
-\]
+$$
 The positive divisors of $2p$ are
-\[
+$$
 1,2,p,2p.
-\]
+$$
 Since $p<q$ and $q$ is odd, neither $2$ nor $p$ is congruent to $1$ modulo $q$.
 Thus, if $n_q\neq1$, the only remaining possibility is
-\[
+$$
 n_q=2p.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #case-nq-1}
 If $n_q=1$, there are normal subgroups
-\[
+$$
 N_2\triangleleft N_1\triangleleft G
-\]
+$$
 with $|N_2|=q$ and $|N_1|=pq$.
 
 ::: pf-proof
 Let $N_2$ be the unique Sylow $q$-subgroup. Then
-\[
+$$
 N_2\triangleleft G.
-\]
+$$
 The quotient $G/N_2$ has order $2p$.
 Its number of Sylow $p$-subgroups divides $2$ and is congruent to $1$ modulo $p$.
 Because $p$ is odd, that number is $1$.
 Hence $G/N_2$ has a normal subgroup of order $p$.
 Let $N_1$ be its inverse image under the quotient map.
 Then
-\[
+$$
 N_1\triangleleft G,
 \qquad
 N_2\subseteq N_1,
 \qquad
 |N_1|=pq.
-\]
+$$
 :::
 
 :::
@@ -100,38 +100,38 @@ Suppose $n_q=2p$. Then the Sylow $p$-subgroup of $G$ is normal.
 ::: pf-proof
 Distinct Sylow $q$-subgroups intersect trivially, because each has prime order $q$.
 Thus the $2p$ Sylow $q$-subgroups contribute
-\[
+$$
 2p(q-1)
-\]
+$$
 distinct nonidentity elements of order $q$.
 Therefore the number of elements of $G$ not among these nonidentity $q$-elements is
-\[
+$$
 2pq-2p(q-1)=2p.
-\]
+$$
 
 Let $n_p$ be the number of Sylow $p$-subgroups.
 Distinct Sylow $p$-subgroups likewise intersect trivially, so their nonidentity elements contribute
-\[
+$$
 n_p(p-1)
-\]
+$$
 distinct elements, all of which lie outside the nonidentity $q$-elements.
 Hence
-\[
+$$
 n_p(p-1)\le 2p-1,
-\]
+$$
 because the identity is one of the $2p$ remaining elements.
 Consequently
-\[
+$$
 n_p<3.
-\]
+$$
 But Sylow's theorem also gives
-\[
+$$
 n_p\equiv1\pmod p.
-\]
+$$
 Since $p\ge3$, the only positive integer less than $3$ satisfying this congruence is
-\[
+$$
 n_p=1.
-\]
+$$
 Thus the Sylow $p$-subgroup $P$ is normal in $G$.
 :::
 
@@ -139,40 +139,40 @@ Thus the Sylow $p$-subgroup $P$ is normal in $G$.
 
 ::: {.pf-step #case-nq-2p-subgroups}
 In the case $n_q=2p$, there are again normal subgroups
-\[
+$$
 N_2\triangleleft N_1\triangleleft G
-\]
+$$
 with $|N_2|=q$ and $|N_1|=pq$.
 
 ::: pf-proof
 By step [](#case-nq-2p-p-normal){.pf-ref}, let $P\triangleleft G$ be the Sylow $p$-subgroup.
 Then
-\[
+$$
 |G/P|=2q.
-\]
+$$
 The number of Sylow $q$-subgroups of $G/P$ divides $2$ and is congruent to $1$ modulo $q$, hence equals $1$.
 Let $\overline N_1$ be this unique subgroup of order $q$, and let $N_1$ be its inverse image in $G$.
 Then
-\[
+$$
 N_1\triangleleft G,
 \qquad
 |N_1|=pq.
-\]
+$$
 
 Inside the group $N_1$ of order $pq$, the number of Sylow $q$-subgroups divides $p$ and is congruent to $1$ modulo $q$.
 Since $p<q$, that number is $1$.
 Let $N_2$ be this unique Sylow $q$-subgroup of $N_1$.
 It is characteristic in $N_1$, because every automorphism of $N_1$ permutes its Sylow $q$-subgroups.
 Since $N_1\triangleleft G$, it follows that
-\[
+$$
 N_2\triangleleft G.
-\]
+$$
 Finally,
-\[
+$$
 |N_2|=q,
 \qquad
 N_2\subseteq N_1.
-\]
+$$
 :::
 
 :::

@@ -31,17 +31,17 @@ Compute the homology of the subset $X\subset\RR^3$ formed as the union of the un
 
 ::: {.solution}
 Let
-\[
+$$
 P=\{(x,y,0):x,y\in\RR\},
 \qquad
 L=\{(0,0,z):z\in\RR\},
-\]
+$$
 and set
-\[
+$$
 A=P\cup L,
 \qquad
 B=S^2.
-\]
+$$
 Then $X=A\cup B$.
 Choose a CW structure on $X$ in which $A$ and $B$ are subcomplexes, subdividing along the equator and the two poles; equivalently, use small open regular neighborhoods of these subspaces.
 Thus the Mayer--Vietoris sequence applies to this decomposition.
@@ -55,21 +55,21 @@ The space $A$ is contractible.
 ::: pf-proof
 
 Scalar contraction gives a homotopy
-\[
+$$
 H:A\times[0,1]\longrightarrow A,
 \qquad
 H(v,t)=(1-t)v.
-\]
+$$
 Both $P$ and $L$ are invariant under scalar multiplication, so $H$ stays inside $A$.
 At $t=1$ every point is sent to the origin.
 Hence
-\[
+$$
 H_i(A;\ZZ)\cong
 \begin{cases}
 \ZZ,&i=0,\\
 0,&i>0.
 \end{cases}
-\]
+$$
 
 :::
 
@@ -78,34 +78,34 @@ H_i(A;\ZZ)\cong
 ::: {.pf-step #s2}
 
 The intersection $A\cap B$ is the disjoint union of the equator and the north and south poles:
-\[
+$$
 A\cap B
 =E\amalg\{N\}\amalg\{S\},
 \qquad
 E\cong S^1.
-\]
+$$
 Consequently,
-\[
+$$
 H_i(A\cap B;\ZZ)\cong
 \begin{cases}
 \ZZ^3,&i=0,\\
 \ZZ,&i=1,\\
 0,&i\ge2.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 The plane $P$ meets the unit sphere in
-\[
+$$
 E=\{(x,y,0):x^2+y^2=1\}\cong S^1,
-\]
+$$
 while the $z$-axis meets it in
-\[
+$$
 N=(0,0,1),
 \qquad
 S=(0,0,-1).
-\]
+$$
 These three pieces are pairwise disjoint and are exactly the intersection.
 The displayed homology follows from the homology of a circle and of a three-component space.
 
@@ -116,22 +116,22 @@ The displayed homology follows from the homology of a circle and of a three-comp
 ::: {.pf-step #s3}
 
 One has
-\[
+$$
 H_2(X;\ZZ)\cong\ZZ^2.
-\]
+$$
 
 ::: pf-proof
 
 Since
-\[
+$$
 H_2(A)=0,
 \qquad
 H_2(B)=H_2(S^2)\cong\ZZ,
 \qquad
 H_2(A\cap B)=0,
-\]
+$$
 the Mayer--Vietoris sequence contains
-\[
+$$
 0
 \longrightarrow
 \ZZ
@@ -141,17 +141,17 @@ H_2(X)
 \ZZ
 \longrightarrow
 0,
-\]
+$$
 where the final $\ZZ$ is $H_1(A\cap B)$ and the next group
-\[
+$$
 H_1(A)\oplus H_1(B)
-\]
+$$
 is zero.
 Thus $H_2(X)$ is an extension of $\ZZ$ by $\ZZ$.
 Because the quotient group $\ZZ$ is free, the short exact sequence splits, so
-\[
+$$
 H_2(X;\ZZ)\cong\ZZ^2.
-\]
+$$
 
 :::
 
@@ -160,14 +160,14 @@ H_2(X;\ZZ)\cong\ZZ^2.
 ::: {.pf-step #s4}
 
 One has
-\[
+$$
 H_1(X;\ZZ)\cong\ZZ^2.
-\]
+$$
 
 ::: pf-proof
 
 The degree-$1$ and degree-$0$ part of the Mayer--Vietoris sequence is
-\[
+$$
 0
 \longrightarrow
 H_1(X)
@@ -178,30 +178,30 @@ H_0(A)\oplus H_0(B)
 \longrightarrow
 H_0(X)
 \longrightarrow0.
-\]
+$$
 By step [](#s1){.pf-ref} and connectedness of $B=S^2$,
-\[
+$$
 H_0(A)\oplus H_0(B)\cong\ZZ^2,
-\]
+$$
 whereas step [](#s2){.pf-ref} gives
-\[
+$$
 H_0(A\cap B)\cong\ZZ^3.
-\]
+$$
 Each of the three components $E,N,S$ lies in the unique component of $A$ and in the unique component of $B$.
 Hence, up to the conventional sign in the Mayer--Vietoris map,
-\[
+$$
 \psi(a,b,c)=(a+b+c,-a-b-c).
-\]
+$$
 Therefore
-\[
+$$
 \ker\psi
 =\{(a,b,c)\in\ZZ^3:a+b+c=0\}
 \cong\ZZ^2.
-\]
+$$
 Exactness gives
-\[
+$$
 H_1(X;\ZZ)\cong\ker\psi\cong\ZZ^2.
-\]
+$$
 
 :::
 
@@ -210,30 +210,30 @@ H_1(X;\ZZ)\cong\ker\psi\cong\ZZ^2.
 ::: {.pf-step #s5}
 
 The remaining homology groups are
-\[
+$$
 H_0(X;\ZZ)\cong\ZZ
-\]
+$$
 and
-\[
+$$
 H_i(X;\ZZ)=0
 \qquad(i\ge3).
-\]
+$$
 
 ::: pf-proof
 
 The space $X$ is path connected because both $A$ and $B$ are path connected and
-\[
+$$
 A\cap B\neq\varnothing.
-\]
+$$
 Thus $H_0(X)\cong\ZZ$.
 For $i\ge3$, the groups
-\[
+$$
 H_i(A),
 \qquad
 H_i(B),
 \qquad
 H_{i-1}(A\cap B)
-\]
+$$
 all vanish, so Mayer--Vietoris gives $H_i(X)=0$.
 
 :::
@@ -243,7 +243,7 @@ all vanish, so Mayer--Vietoris gives $H_i(X)=0$.
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{
 H_i(X;\ZZ)\cong
 \begin{cases}
@@ -251,7 +251,7 @@ H_i(X;\ZZ)\cong
 \ZZ^2,&i=1,2,\\
 0,&i\ge3.
 \end{cases}}
-\]
+$$
 
 ::: pf-proof
 

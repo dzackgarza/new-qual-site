@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Let $(u_n)$ be a sequence of real-valued harmonic functions on the unit disc $\DD$ satisfying
-\[
+$$
 u_1(z)\ge u_2(z)\ge\cdots\ge0
-\]
+$$
 for every $z\in\DD$.
 Prove that $z\mapsto\inf_n u_n(z)$ is harmonic on $\DD$.
 :::

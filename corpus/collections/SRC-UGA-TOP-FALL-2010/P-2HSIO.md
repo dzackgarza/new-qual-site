@@ -31,9 +31,9 @@ audit:
 ::: {.problem}
 Suppose that X has universal cover $p : \tilde X \to X$ and let $A \subset X$ be a subspace with $p(\tilde a) = a \in A$.
 Show that there is a group isomorphism
-\[
+$$
 \ker(\pi_1 (A, a) \to \pi_1 (X, a)) \cong \pi_1 (\inverseof{p} A, \tilde a).
-\]
+$$
 :::
 
 ::: {.solution}
@@ -42,28 +42,28 @@ Show that there is a group isomorphism
 
 ::: {.pf-step #restriction-is-covering}
 The restriction
-\[
+$$
 q=p|_{p^{-1}(A)}:p^{-1}(A)\longrightarrow A
-\]
+$$
 is a covering map, with $q(\tilde a)=a$.
 
 ::: pf-proof
 Let $a_0\in A$.
 Choose an open neighborhood $U\subseteq X$ of $a_0$ that is evenly covered by $p$, so
-\[
+$$
 p^{-1}(U)=\bigsqcup_{\lambda}V_\lambda
-\]
+$$
 and each restriction
-\[
+$$
 p|_{V_\lambda}:V_\lambda\longrightarrow U
-\]
+$$
 is a homeomorphism.
 Then $U\cap A$ is open in the subspace $A$, and
-\[
+$$
 q^{-1}(U\cap A)
 =
 \bigsqcup_\lambda\bigl(V_\lambda\cap p^{-1}(A)\bigr).
-\]
+$$
 Each $V_\lambda\cap p^{-1}(A)$ maps homeomorphically onto $U\cap A$ by $q$.
 Thus $q$ is a covering map.
 :::
@@ -72,16 +72,16 @@ Thus $q$ is a covering map.
 
 ::: {.pf-step #qstar-injective}
 The homomorphism
-\[
+$$
 q_*:\pi_1(p^{-1}(A),\tilde a)\longrightarrow\pi_1(A,a)
-\]
+$$
 is injective.
 
 ::: pf-proof
 Let $[\widetilde\alpha]\in\pi_1(p^{-1}(A),\tilde a)$ and suppose
-\[
+$$
 q_*[\widetilde\alpha]=1.
-\]
+$$
 Then $q\circ\widetilde\alpha$ is nullhomotopic in $A$ relative to its basepoint.
 Lift such a nullhomotopy through the covering $q$, starting with the loop $\widetilde\alpha$.
 Its terminal edge is the lift, starting at $\tilde a$, of the constant loop at $a$, hence is the constant loop at $\tilde a$.
@@ -93,23 +93,23 @@ Thus $q_*$ is injective.
 
 ::: {.pf-step #im-subset-ker}
 Let
-\[
+$$
 i:A\hookrightarrow X
-\]
+$$
 be the inclusion.
 Then
-\[
+$$
 \operatorname{im}(q_*)\subseteq\ker(i_*).
-\]
+$$
 
 ::: pf-proof
 The composite $i\circ q$ is the restriction of $p$ to $p^{-1}(A)$.
 If $[\widetilde\alpha]\in\pi_1(p^{-1}(A),\tilde a)$, then $\widetilde\alpha$ is also a loop in the simply connected universal cover $\widetilde X$.
 Hence it is nullhomotopic in $\widetilde X$.
 Applying $p$ to a nullhomotopy shows that
-\[
+$$
 i_*q_*[\widetilde\alpha]=1
-\]
+$$
 in $\pi_1(X,a)$.
 Therefore every element of $\operatorname{im}(q_*)$ lies in $\ker(i_*)$.
 :::
@@ -118,36 +118,36 @@ Therefore every element of $\operatorname{im}(q_*)$ lies in $\ker(i_*)$.
 
 ::: {.pf-step #ker-subset-im}
 Conversely,
-\[
+$$
 \ker(i_*)\subseteq\operatorname{im}(q_*).
-\]
+$$
 
 ::: pf-proof
 Let $[\alpha]\in\pi_1(A,a)$ satisfy
-\[
+$$
 i_*[\alpha]=1\in\pi_1(X,a).
-\]
+$$
 Let $\widetilde\alpha:[0,1]\to\widetilde X$ be the unique lift of the loop $i\circ\alpha$ with
-\[
+$$
 \widetilde\alpha(0)=\tilde a.
-\]
+$$
 Because $i\circ\alpha$ is nullhomotopic in $X$ relative to the basepoint, it is homotopic relative to endpoints to the constant loop at $a$.
 Lift this homotopy through $p$ starting at $\tilde a$.
 The lift of the constant loop is constant, so homotopy lifting gives
-\[
+$$
 \widetilde\alpha(1)=\tilde a.
-\]
+$$
 Thus $\widetilde\alpha$ is a loop.
 
 Moreover,
-\[
+$$
 p(\widetilde\alpha(t))=\alpha(t)\in A
-\]
+$$
 for every $t$, so the image of $\widetilde\alpha$ lies in $p^{-1}(A)$.
 It is therefore a loop in $p^{-1}(A)$ based at $\tilde a$, and
-\[
+$$
 q_*[\widetilde\alpha]=[\alpha].
-\]
+$$
 Hence $[\alpha]\in\operatorname{im}(q_*)$.
 :::
 
@@ -155,18 +155,18 @@ Hence $[\alpha]\in\operatorname{im}(q_*)$.
 
 ::: pf-step
 Therefore
-\[
+$$
 \pi_1(p^{-1}(A),\tilde a)
 \cong
 \ker\bigl(\pi_1(A,a)\xrightarrow{i_*}\pi_1(X,a)\bigr).
-\]
+$$
 
 ::: pf-proof
 By step [](#qstar-injective){.pf-ref}, $q_*$ is injective.
 By step [](#im-subset-ker){.pf-ref} and step [](#ker-subset-im){.pf-ref},
-\[
+$$
 \operatorname{im}(q_*)=\ker(i_*).
-\]
+$$
 Thus $q_*$ is an isomorphism from $\pi_1(p^{-1}(A),\tilde a)$ onto the stated kernel.
 :::
 

@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Calculate
-\[
+$$
 \int_0^\infty {\sin(x) \over x(x^2+1)}\, dx
-.\]
+.$$
 :::
 
 ::: {.solution}

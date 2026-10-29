@@ -45,33 +45,33 @@ Write each $f_n$ as a primitive of its derivative.
 ::: pf-proof
 
 Since $f_n$ is absolutely continuous, for every $x\in\RR$,
-\[
+$$
 f_n(x)=f_n(0)+\int_0^x f_n'(t)\,dt.
-\]
+$$
 Define
-\[
+$$
 F(x)=c+\int_0^x g(t)\,dt.
-\]
+$$
 Then
-\[
+$$
 |f_n(x)-F(x)|
 \le |f_n(0)-c|+
 \left|\int_0^x(f_n'(t)-g(t))\,dt\right|.
-\]
+$$
 For every $x$,
-\[
+$$
 \left|\int_0^x(f_n'-g)\right|
 \le \int_{\RR}|f_n'(t)-g(t)|\,dt.
-\]
+$$
 Hence
-\[
+$$
 \sup_{x\in\RR}|f_n(x)-F(x)|
 \le |f_n(0)-c|+\|f_n'-g\|_1\longrightarrow0.
-\]
+$$
 Therefore $f_n(x)\to F(x)$ for every $x$, so the pointwise limit exists and
-\[
+$$
 \boxed{f(x)=c+\int_0^x g(t)\,dt.}
-\]
+$$
 
 :::
 
@@ -84,22 +84,22 @@ Prove absolute continuity of the limit.
 ::: pf-proof
 
 Let $\varepsilon>0$. Since $g\in L^1(\RR)$, the Lebesgue integral is absolutely continuous: there exists $\delta>0$ such that
-\[
+$$
 m(E)<\delta\quad\Longrightarrow\quad\int_E|g|<\varepsilon.
-\]
+$$
 For finitely many pairwise disjoint intervals $(a_j,b_j)$ with
-\[
+$$
 \sum_j(b_j-a_j)<\delta,
-\]
+$$
 we have
-\[
+$$
 \begin{aligned}
 \sum_j|f(b_j)-f(a_j)|
 &=\sum_j\left|\int_{a_j}^{b_j}g(t)\,dt\right|\\
 &\le \int_{\bigcup_j(a_j,b_j)}|g(t)|\,dt
 <\varepsilon.
 \end{aligned}
-\]
+$$
 Thus $f$ is absolutely continuous.
 
 :::
@@ -113,13 +113,13 @@ Identify the derivative.
 ::: pf-proof
 
 The Lebesgue Fundamental Theorem of Calculus applied to
-\[
+$$
 f(x)=c+\int_0^x g(t)\,dt
-\]
+$$
 gives
-\[
+$$
 \boxed{f'(x)=g(x)}
-\]
+$$
 for almost every $x\in\RR$.
 
 :::

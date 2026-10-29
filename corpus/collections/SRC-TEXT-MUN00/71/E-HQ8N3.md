@@ -35,9 +35,9 @@ The circle $S^1$ and the 2-sphere $S^2$ are CW complexes, so any choice of basep
 
 ::: pf-step
 The fundamental groups of the individual spaces are:
-\[
+$$
 \pi_1(S^1, x_0) \cong \ZZ, \qquad \pi_1(S^2, y_0) \cong \{0\}.
-\]
+$$
 :::
 
 :::
@@ -51,16 +51,16 @@ Application of the Seifert–van Kampen Theorem:
 
 ::: pf-step
 By the Seifert–van Kampen Theorem for wedge sums of well-pointed spaces:
-\[
+$$
 \pi_1(S^1 \vee S^2, p) \cong \pi_1(S^1, x_0) * \pi_1(S^2, y_0).
-\]
+$$
 :::
 
 ::: pf-step
 Substituting the fundamental groups of $S^1$ and $S^2$:
-\[
+$$
 \pi_1(S^1 \vee S^2, p) \cong \ZZ * \{0\} \cong \ZZ.
-\]
+$$
 :::
 
 :::

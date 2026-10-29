@@ -152,9 +152,9 @@ definition of $W$.
 
 ::: {.pf-step #s3-3}
 Express the dot product as matrix multiplication:
-\[
+$$
 x \cdot w = x^t w = x^t (M^t y) = (Mx)^t y.
-\]
+$$
 
 ::: pf-proof
 transpose identity $(AB)^t = B^t A^t$ and associativity of matrix multiplication.

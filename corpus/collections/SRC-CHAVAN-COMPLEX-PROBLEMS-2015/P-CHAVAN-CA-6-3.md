@@ -15,9 +15,9 @@ audit:
 ::: {.problem}
 Let $\DD$ be the open unit disk.
 Show that $\operatorname{Aut}(\DD)$ acts transitively on $\DD$: for every $a,b\in\DD$, there exists a biholomorphism
-\[
+$$
 f:\DD\to\DD
-\]
+$$
 such that $f(a)=b$.
 :::
 

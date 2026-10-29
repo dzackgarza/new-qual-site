@@ -23,13 +23,13 @@ audit:
 
 ::: {.problem}
 Let $p$ be prime and $n$ a positive integer. Prove that there exists
-\[
+$$
 A\in GL_n(\FF_p)
-\]
+$$
 which, as a permutation of the nonzero vectors of $\FF_p^n$, is a single cycle of length
-\[
+$$
 p^n-1.
-\]
+$$
 :::
 
 ::: {.solution}

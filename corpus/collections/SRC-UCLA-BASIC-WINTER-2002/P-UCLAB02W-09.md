@@ -19,9 +19,9 @@ audit:
 Let $V$ be a real vector space and $T:V\to V$ linear.
 Let $\lambda_1,\ldots,\lambda_m$ be distinct eigenvalues of $T$, and for each $i$ let $0\ne v_i$ be an eigenvector with eigenvalue $\lambda_i$.
 Show that
-\[
+$$
 \{v_1,\ldots,v_m\}
-\]
+$$
 is linearly independent.
 :::
 

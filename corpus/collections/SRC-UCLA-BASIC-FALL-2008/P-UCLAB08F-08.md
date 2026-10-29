@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Must the eigenvectors of a linear transformation
-\[
+$$
 T\colon\CC^n\to\CC^n
-\]
+$$
 span $\CC^n$?
 Prove your assertion.
 :::
@@ -45,24 +45,24 @@ It suffices to give one complex linear transformation whose eigenvectors do not 
 ::: pf-step
 
 Consider
-\[
+$$
 T:\CC^2\to\CC^2
-\]
+$$
 with matrix
-\[
+$$
 A=
 \begin{pmatrix}
 1&1\\
 0&1
 \end{pmatrix}.
-\]
+$$
 Its only eigenvalue is $1$.
 
 
 ::: pf-proof
 
 The characteristic polynomial is
-\[
+$$
 \det(\lambda I-A)
 =
 \det
@@ -72,7 +72,7 @@ The characteristic polynomial is
 \end{pmatrix}
 =
 (\lambda-1)^2.
-\]
+$$
 Thus the only eigenvalue is $1$.
 
 :::
@@ -82,33 +82,33 @@ Thus the only eigenvalue is $1$.
 ::: {.pf-step #s1-3}
 
 The eigenspace for the eigenvalue $1$ is
-\[
+$$
 E_1
 =
 \operatorname{span}_{\CC}\{(1,0)\}.
-\]
+$$
 
 
 ::: pf-proof
 
 One has
-\[
+$$
 A-I
 =
 \begin{pmatrix}
 0&1\\
 0&0
 \end{pmatrix}.
-\]
+$$
 Hence
-\[
+$$
 (A-I)
 \binom{x}{y}
 =
 \binom{y}{0},
-\]
+$$
 which vanishes exactly when $y=0$. Therefore
-\[
+$$
 \ker(A-I)
 =
 \left\{
@@ -116,7 +116,7 @@ which vanishes exactly when $y=0$. Therefore
 \right\}
 =
 \operatorname{span}_{\CC}\{(1,0)\}.
-\]
+$$
 
 :::
 
@@ -138,9 +138,9 @@ Every eigenvector belongs to the one-dimensional eigenspace $E_1$ from step [](#
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 \boxed{\text{eigenvectors of a complex linear transformation need not span the space}.}
-\]
+$$
 
 
 ::: pf-proof

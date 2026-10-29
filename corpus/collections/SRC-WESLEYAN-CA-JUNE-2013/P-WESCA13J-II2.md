@@ -19,19 +19,19 @@ audit:
 Evaluate or prove the following.
 
 (a)
-\[
+$$
 \int_{|z|=2}\frac{e^z}{(1+z)^2}\,dz.
-\]
+$$
 
 (b) For $\gamma(t)=2\cos t+i\sin t$, $0\le t\le2\pi$, evaluate
-\[
+$$
 \int_\gamma\frac{dz}{z^2+2iz}.
-\]
+$$
 
 (c) If $\gamma$ is a piecewise smooth closed path, verify
-\[
+$$
 n(\overline\gamma,\overline z)=-n(\gamma,z).
-\]
+$$
 :::
 
 ::: {.solution}

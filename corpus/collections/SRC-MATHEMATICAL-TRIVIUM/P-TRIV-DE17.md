@@ -40,26 +40,26 @@ Find G(t) when
 ::: {.solution}
 
 Take $G$ to be the retarded Green function, so $G(t)=0$ for $t<0$. Write
-\[
+$$
 L=\frac{d^2}{dt^2}+2k\frac d{dt}+\Omega^2.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 The retarded Green function is characterized by
-\[
+$$
 LG=\delta_0,\qquad G(0^+)=0,\qquad G'(0^+)=1.
-\]
+$$
 
 
 ::: pf-proof
 
 Applying $L$ to the convolution in the problem gives $Ly=(LG)*f$, so $LG=\delta_0$ is sufficient to obtain $Ly=f$. Away from $t=0$ this requires $LG=0$. Integrating $LG=\delta_0$ across $0$ gives
-\[
+$$
 G'(0^+)-G'(0^-)+2k\bigl(G(0^+)-G(0^-)\bigr)=1.
-\]
+$$
 The absence of a $\delta_0'$ term forces $G$ to be continuous at $0$. Retardedness gives $G(0^-)=G'(0^-)=0$, hence $G(0^+)=0$ and $G'(0^+)=1$.
 
 :::
@@ -69,17 +69,17 @@ The absence of a $\delta_0'$ term forces $G$ to be continuous at $0$. Retardedne
 ::: {.pf-step #s1-2}
 
 If $\Omega>k>0$ and $\omega=\sqrt{\Omega^2-k^2}$, then
-\[
+$$
 \boxed{G(t)=\theta(t)e^{-kt}\frac{\sin(\omega t)}{\omega}}.
-\]
+$$
 
 
 ::: pf-proof
 
 For $t>0$, the characteristic roots of $LG=0$ are $-k\pm i\omega$. Thus
-\[
+$$
 G(t)=e^{-kt}\bigl(A\cos(\omega t)+B\sin(\omega t)\bigr).
-\]
+$$
 The conditions in step [](#s1-1){.pf-ref} give $A=0$ and $B\omega=1$, so $B=1/\omega$. Multiplication by $\theta(t)$ imposes retardedness.
 
 :::
@@ -89,17 +89,17 @@ The conditions in step [](#s1-1){.pf-ref} give $A=0$ and $B\omega=1$, so $B=1/\o
 ::: {.pf-step #s1-3}
 
 If $\Omega=k$, then
-\[
+$$
 \boxed{G(t)=\theta(t)\,t e^{-kt}}.
-\]
+$$
 
 
 ::: pf-proof
 
 The characteristic polynomial has the repeated root $-k$, so for $t>0$,
-\[
+$$
 G(t)=(A+Bt)e^{-kt}.
-\]
+$$
 Step [](#s1-1){.pf-ref} gives $A=0$ and $B=1$.
 
 :::
@@ -109,17 +109,17 @@ Step [](#s1-1){.pf-ref} gives $A=0$ and $B=1$.
 ::: {.pf-step #s1-4}
 
 If $k>\Omega>0$ and $\lambda=\sqrt{k^2-\Omega^2}$, then
-\[
+$$
 \boxed{G(t)=\theta(t)e^{-kt}\frac{\sinh(\lambda t)}{\lambda}}.
-\]
+$$
 
 
 ::: pf-proof
 
 The characteristic roots are $-k\pm\lambda$. Hence for $t>0$ one may write
-\[
+$$
 G(t)=e^{-kt}\bigl(A\cosh(\lambda t)+B\sinh(\lambda t)\bigr).
-\]
+$$
 Step [](#s1-1){.pf-ref} gives $A=0$ and $B\lambda=1$, so $B=1/\lambda$.
 
 :::

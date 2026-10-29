@@ -41,33 +41,33 @@ Compute the fundamental group of $\RR^3-C$ where $C$ denotes the circle $x^2+y^2
 
 ::: pf-step
 A subspace $A\subseteq X$ is a deformation retract of $X$ if there is a retraction
-\[
+$$
 r:X\to A,
 \qquad
 r|_A=\operatorname{id}_A,
-\]
+$$
 such that
-\[
+$$
 i\circ r\simeq\operatorname{id}_X,
-\]
+$$
 where $i:A\hookrightarrow X$ is the inclusion.
 It is a strong deformation retract if the homotopy can be chosen to fix $A$ pointwise at every time.
 
 ::: pf-proof
 Equivalently, a deformation retract is given by a homotopy
-\[
+$$
 H:X\times I\to X
-\]
+$$
 with
-\[
+$$
 H(x,0)=x,
 \qquad
 H(x,1)=r(x)\in A.
-\]
+$$
 For a strong deformation retract one additionally requires
-\[
+$$
 H(a,t)=a
-\]
+$$
 for every $a\in A$ and $t\in I$.
 :::
 
@@ -76,103 +76,103 @@ for every $a\in A$ and $t\in I$.
 :::
 
 Let
-\[
+$$
 C=\{(x,y,z)\in\RR^3:x^2+y^2=1,\ z=0\}.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #circle-becomes-great-circle}
 Under inverse stereographic projection
-\[
+$$
 \Phi:\RR^3\longrightarrow S^3\setminus\{N\}\subseteq\RR^4,
-\]
+$$
 the circle $C$ becomes the great circle
-\[
+$$
 C_0=\{(x_1,x_2,0,0):x_1^2+x_2^2=1\}.
-\]
+$$
 
 ::: pf-proof
 Take
-\[
+$$
 S^3=\{(x_1,x_2,x_3,x_4)\in\RR^4:x_1^2+x_2^2+x_3^2+x_4^2=1\}
-\]
+$$
 and
-\[
+$$
 N=(0,0,0,1).
-\]
+$$
 The inverse stereographic projection is
-\[
+$$
 \Phi(x,y,z)
 =\frac{1}{x^2+y^2+z^2+1}
 \bigl(2x,2y,2z,x^2+y^2+z^2-1\bigr).
-\]
+$$
 If $(x,y,z)\in C$, then
-\[
+$$
 x^2+y^2+z^2=1
-\]
+$$
 and $z=0$, so
-\[
+$$
 \Phi(x,y,0)=(x,y,0,0).
-\]
+$$
 Thus $\Phi(C)=C_0$.
 Consequently
-\[
+$$
 \RR^3\setminus C
 \cong
 S^3\setminus(C_0\cup\{N\}).
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #m-retracts-to-d}
 The complement
-\[
+$$
 M=S^3\setminus C_0
-\]
+$$
 strongly deformation retracts onto the complementary great circle
-\[
+$$
 D=\{(0,0,x_3,x_4):x_3^2+x_4^2=1\}\cong S^1.
-\]
+$$
 
 ::: pf-proof
 Write a point of $S^3$ as
-\[
+$$
 (u,v)\in\RR^2\times\RR^2,
 \qquad
 \|u\|^2+\|v\|^2=1.
-\]
+$$
 Then
-\[
+$$
 C_0=\{(u,0):\|u\|=1\},
-\]
+$$
 so on $M$ one has $v\ne0$.
 
 Define
-\[
+$$
 H:M\times I\to M
-\]
+$$
 by
-\[
+$$
 H((u,v),t)
 =
 \frac{((1-t)u,v)}{\sqrt{(1-t)^2\|u\|^2+\|v\|^2}}.
-\]
+$$
 The denominator is nonzero because $v\ne0$.
 The second coordinate remains a nonzero scalar multiple of $v$, so the image stays in $M$.
 At $t=0$,
-\[
+$$
 H((u,v),0)=(u,v).
-\]
+$$
 At $t=1$,
-\[
+$$
 H((u,v),1)=\left(0,\frac{v}{\|v\|}\right)\in D.
-\]
+$$
 If $(u,v)\in D$, then $u=0$ and $\|v\|=1$, so
-\[
+$$
 H((0,v),t)=(0,v)
-\]
+$$
 for all $t$.
 Thus $H$ is a strong deformation retraction of $M$ onto $D$.
 :::
@@ -181,60 +181,60 @@ Thus $H$ is a strong deformation retraction of $M$ onto $D$.
 
 ::: {.pf-step #pi1-m}
 Therefore
-\[
+$$
 \pi_1(M)\cong\ZZ.
-\]
+$$
 
 ::: pf-proof
 By step [](#m-retracts-to-d){.pf-ref}, the inclusion $D\hookrightarrow M$ is a homotopy equivalence.
 Hence
-\[
+$$
 \pi_1(M)\cong\pi_1(D)\cong\pi_1(S^1)\cong\ZZ.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #v-iso-to-m}
 The inclusion
-\[
+$$
 M\setminus\{N\}\hookrightarrow M
-\]
+$$
 induces an isomorphism on fundamental groups.
 
 ::: pf-proof
 The point $N$ lies in $D$ and is disjoint from $C_0$.
 Choose a sufficiently small open $3$-ball
-\[
+$$
 U\subseteq M
-\]
+$$
 around $N$.
 Set
-\[
+$$
 V=M\setminus\{N\}.
-\]
+$$
 Then
-\[
+$$
 M=U\cup V,
 \qquad
 U\cap V=U\setminus\{N\}.
-\]
+$$
 The set $U$ is contractible, while
-\[
+$$
 U\setminus\{N\}\cong B^3\setminus\{0\}
-\]
+$$
 deformation retracts onto $S^2$ and is therefore path-connected and simply connected.
 
 The space $V$ is path-connected.
 Indeed, by step [](#circle-becomes-great-circle){.pf-ref} it is homeomorphic to $\RR^3\setminus C$.
 Write a point there as $(x,y,z)$ and put
-\[
+$$
 \rho=\sqrt{x^2+y^2}.
-\]
+$$
 If $z\ne0$, the radial path
-\[
+$$
 t\longmapsto((1-t)x,(1-t)y,z)
-\]
+$$
 joins the point to the $z$-axis and never meets $C$, because its third coordinate is nonzero.
 If $z=0$ and $\rho<1$, the same radial path stays strictly inside the unit circle and joins the point to the origin.
 If $z=0$ and $\rho>1$, first move vertically to $(x,y,1)$, then radially at height $1$ to $(0,0,1)$, and finally down the $z$-axis to the origin.
@@ -243,21 +243,21 @@ Thus every point can be joined to the origin in $\RR^3\setminus C$, so $V$ is pa
 
 Choose a basepoint in $U\cap V$.
 The Seifert--van Kampen theorem gives
-\[
+$$
 \pi_1(M)
 \cong
 \pi_1(U)*_{\pi_1(U\cap V)}\pi_1(V).
-\]
+$$
 Since
-\[
+$$
 \pi_1(U)=0
 \qquad\text{and}\qquad
 \pi_1(U\cap V)=0,
-\]
+$$
 the canonical homomorphism
-\[
+$$
 \pi_1(V)\to\pi_1(M)
-\]
+$$
 is an isomorphism.
 :::
 
@@ -265,21 +265,21 @@ is an isomorphism.
 
 ::: pf-step
 Hence
-\[
+$$
 \boxed{\pi_1(\RR^3\setminus C)\cong\ZZ.}
-\]
+$$
 
 ::: pf-proof
 By step [](#circle-becomes-great-circle){.pf-ref},
-\[
+$$
 \RR^3\setminus C
 \cong
 M\setminus\{N\}.
-\]
+$$
 By step [](#v-iso-to-m){.pf-ref},
-\[
+$$
 \pi_1(M\setminus\{N\})\cong\pi_1(M),
-\]
+$$
 and step [](#pi1-m){.pf-ref} computes the latter group as $\ZZ$.
 :::
 

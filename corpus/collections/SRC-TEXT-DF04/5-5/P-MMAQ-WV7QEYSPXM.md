@@ -46,24 +46,24 @@ $H\rtimes_{\varphi_1}K\cong H\rtimes_{\varphi_2} K$.
 
 ::: {.solution}
 Write $K=\langle k\rangle$. Choose $\sigma\in\Aut(H)$ such that
-\[
+$$
 \sigma\varphi_1(K)\sigma^{-1}=\varphi_2(K).
-\]
+$$
 Then $\sigma\varphi_1(k)\sigma^{-1}$ is a generator of the cyclic group
 $\varphi_2(K)$, so for some $a\in\ZZ$,
-\[
+$$
 \sigma\varphi_1(k)\sigma^{-1}=\varphi_2(k)^a.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 There is an automorphism $\alpha:K\to K$, $\alpha(k)=k^b$, such that
-\[
+$$
 \sigma\varphi_1(x)\sigma^{-1}=\varphi_2(\alpha(x))
 \qquad(x\in K).
-\]
+$$
 
 ::: pf-proof
 
@@ -96,34 +96,34 @@ of $K$.
 ::: pf-step
 
 The map
-\[
+$$
 \Psi:H\rtimes_{\varphi_1}K\longrightarrow H\rtimes_{\varphi_2}K,
 \qquad
 \Psi(h,x)=(\sigma(h),\alpha(x)),
-\]
+$$
 is an isomorphism.
 
 ::: pf-proof
 
 For $(h,x),(h',x')\in H\rtimes_{\varphi_1}K$,
-\[
+$$
 (h,x)(h',x')=(h\varphi_1(x)(h'),xx').
-\]
+$$
 Using the intertwining identity from step [](#s1){.pf-ref},
-\[
+$$
 \begin{aligned}
 \Psi((h,x)(h',x'))
 &=(\sigma(h\varphi_1(x)(h')),\alpha(xx'))\\
 &=(\sigma(h)\,\varphi_2(\alpha(x))(\sigma(h')),\alpha(x)\alpha(x'))\\
 &=\Psi(h,x)\Psi(h',x').
 \end{aligned}
-\]
+$$
 Thus $\Psi$ is a homomorphism. Since both $\sigma$ and $\alpha$ are
 automorphisms, $\Psi$ is bijective. Explicitly, if
 $\alpha^{-1}(k)=k^c$, then
-\[
+$$
 \Psi^{-1}(h,x)=(\sigma^{-1}(h),\alpha^{-1}(x))
-\]
+$$
 is its two-sided inverse.
 
 :::

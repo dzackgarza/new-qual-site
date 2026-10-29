@@ -46,21 +46,21 @@ First assume that $g$ has compact support.
 ::: pf-proof
 
 Choose $M>0$ so that $g=0$ almost everywhere outside $[-M,M]$. Then
-\[
+$$
 \int_{\RR}f(x)g(x-n)\,dx
 =\int_{n-M}^{n+M}f(x)g(x-n)\,dx.
-\]
+$$
 By Cauchy--Schwarz and translation invariance of Lebesgue measure,
-\[
+$$
 \left|\int_{\RR}f(x)g(x-n)\,dx\right|
 \le
 \left(\int_{n-M}^{n+M}|f(x)|^2\,dx\right)^{1/2}\|g\|_2.
-\]
+$$
 Since $f\in L^2(\RR)$,
-\[
+$$
 \int_{n-M}^{n+M}|f(x)|^2\,dx
 \le \int_{n-M}^{\infty}|f(x)|^2\,dx\longrightarrow0.
-\]
+$$
 Hence the desired limit is $0$ whenever $g$ has compact support.
 
 :::
@@ -74,11 +74,11 @@ Approximate an arbitrary $g\in L^2$ by compactly supported functions.
 ::: pf-proof
 
 Let
-\[
+$$
 g_R=g\,\mathbf1_{[-R,R]}.
-\]
+$$
 Then $g_R\to g$ in $L^2(\RR)$. For every $n$,
-\[
+$$
 \begin{aligned}
 \left|\int f(x)g(x-n)\,dx\right|
 &\le
@@ -86,20 +86,20 @@ Then $g_R\to g$ in $L^2(\RR)$. For every $n$,
 &\qquad+
 \left|\int f(x)(g-g_R)(x-n)\,dx\right|.
 \end{aligned}
-\]
+$$
 The second term is bounded, uniformly in $n$, by
-\[
+$$
 \|f\|_2\,\|g-g_R\|_2.
-\]
+$$
 Given $\varepsilon>0$, choose $R$ so large that this bound is below $\varepsilon$. For that fixed $R$, Step 1 gives
-\[
+$$
 \int f(x)g_R(x-n)\,dx\longrightarrow0.
-\]
+$$
 Thus the limsup of the original correlations is at most $\varepsilon$. Since $\varepsilon$ is arbitrary,
-\[
+$$
 \boxed{
 \lim_{n\to\infty}\int_{\RR}f(x)g(x-n)\,dx=0.}
-\]
+$$
 
 :::
 

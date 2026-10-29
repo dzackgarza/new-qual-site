@@ -38,23 +38,23 @@ Identify $S^1$ with $I/(0\sim1)$ and use the same symbols $\gamma_0,\gamma_1$ fo
 
 Suppose first that $\gamma_0$ and $\gamma_1$ are freely homotopic.
 If
-\[
+$$
 H:S^1\times I\to X
-\]
+$$
 is a free homotopy from $\gamma_0$ to $\gamma_1$, then the track of the basepoint,
-\[
+$$
 \alpha(t)=H(1,t),
-\]
+$$
 is a loop at $x_0$.
 
 ::: pf-proof
 
 Because $H(-,0)=\gamma_0$ and $H(-,1)=\gamma_1$,
-\[
+$$
 \alpha(0)=\gamma_0(1)=x_0
 \qquad\text{and}\qquad
 \alpha(1)=\gamma_1(1)=x_0.
-\]
+$$
 Thus $\alpha$ is indeed a loop based at $x_0$.
 
 :::
@@ -64,41 +64,41 @@ Thus $\alpha$ is indeed a loop based at $x_0$.
 ::: {.pf-step #s2}
 
 The based homotopy classes satisfy
-\[
+$$
 [\gamma_0]=[\alpha][\gamma_1][\alpha]^{-1}
 \qquad\text{in }\pi_1(X,x_0).
-\]
+$$
 
 ::: pf-proof
 
 Let
-\[
+$$
 q:I\to S^1=I/(0\sim1)
-\]
+$$
 be the quotient map and set
-\[
+$$
 \widetilde H(s,t)=H(q(s),t).
-\]
+$$
 Then
-\[
+$$
 \widetilde H(0,t)=\widetilde H(1,t)=\alpha(t),
-\]
+$$
 while the bottom and top edges of the square are $\gamma_0$ and $\gamma_1$.
 
 Traverse $\partial(I\times I)$ starting at $(0,0)$ along the bottom edge, then the right edge, then the top edge backwards, and finally the left edge backwards.
 Its image under $\widetilde H$ represents
-\[
+$$
 [\gamma_0][\alpha][\gamma_1]^{-1}[\alpha]^{-1}.
-\]
+$$
 This boundary loop is null-homotopic because $\widetilde H$ extends it over the whole square.
 Hence
-\[
+$$
 [\gamma_0][\alpha][\gamma_1]^{-1}[\alpha]^{-1}=1,
-\]
+$$
 and therefore
-\[
+$$
 [\gamma_0]=[\alpha][\gamma_1][\alpha]^{-1}.
-\]
+$$
 Thus freely homotopic based loops represent conjugate elements.
 
 :::
@@ -109,13 +109,13 @@ Thus freely homotopic based loops represent conjugate elements.
 
 Conversely, suppose that $[\gamma_0]$ and $[\gamma_1]$ are conjugate.
 Choose a loop $\alpha$ at $x_0$ such that
-\[
+$$
 [\gamma_0]=[\alpha][\gamma_1][\alpha]^{-1}.
-\]
+$$
 Then $\gamma_0$ is homotopic relative to the basepoint to the loop
-\[
+$$
 \alpha*\gamma_1*\alpha^{-1}.
-\]
+$$
 
 ::: pf-proof
 
@@ -133,15 +133,15 @@ For any two loops $a,b$ based at the same point, the loops $a*b$ and $b*a$ are f
 ::: pf-proof
 
 Let
-\[
+$$
 L=a*b:S^1\to X
-\]
+$$
 using the standard parameterization in which $a$ occupies the first half of the circle and $b$ the second half.
 For $0\le t\le1$, let $R_t:S^1\to S^1$ be rotation through angle $\pi t$.
 Then
-\[
+$$
 K(z,t)=L(R_t(z))
-\]
+$$
 is a free homotopy.
 At $t=0$ it is $a*b$, while at $t=1$ the half-turn interchanges the two half-circle parameter intervals, so it is $b*a$.
 
@@ -156,27 +156,27 @@ The conjugate loop $\alpha*\gamma_1*\alpha^{-1}$ is freely homotopic to $\gamma_
 ::: pf-proof
 
 Up to the standard based reparameterization associating concatenations,
-\[
+$$
 \alpha*\gamma_1*\alpha^{-1}
 \simeq
 \alpha*(\gamma_1*\alpha^{-1}).
-\]
+$$
 Apply step [](#s4){.pf-ref} with
-\[
+$$
 a=\alpha,
 \qquad
 b=\gamma_1*\alpha^{-1}.
-\]
+$$
 This gives a free homotopy
-\[
+$$
 \alpha*(\gamma_1*\alpha^{-1})
 \simeq_{\mathrm{free}}
 (\gamma_1*\alpha^{-1})*\alpha.
-\]
+$$
 The loop on the right is based-homotopic, by associativity of concatenation, to
-\[
+$$
 \gamma_1*(\alpha^{-1}*\alpha).
-\]
+$$
 The loop $\alpha^{-1}*\alpha$ is null-homotopic relative to the basepoint, so this is based-homotopic to $\gamma_1$.
 Every based homotopy is in particular a free homotopy, proving the claim.
 

@@ -31,9 +31,9 @@ audit:
 Let $U\subseteq\RR^n$ be open.
 Suppose $h:U\to\RR^n$ is a uniformly continuous homeomorphism from $U$ onto $\RR^n$.
 Prove that
-\[
+$$
 U=\RR^n.
-\]
+$$
 :::
 
 ::: {.solution}

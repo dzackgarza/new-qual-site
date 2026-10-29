@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Let $f$ be a positive $C^2$ function on $(0,\infty)$ such that $f'\le0$ and $f''$ is bounded. Prove that
-\[
+$$
 \lim_{t\to\infty}f'(t)=0.
-\]
+$$
 :::
 
 ::: {.solution}

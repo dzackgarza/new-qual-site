@@ -36,7 +36,7 @@ This is not a polynomial ring: it contains the unit $\inverseof{x} \notin k$, wh
 
 **(c)** An affine change of coordinates reduces $F$ to one of the two cases above.
 Write the conic as
-\[
+$$
 F(x,y) = \thevector{x, y, 1}^t
 \begin{pmatrix}
 A & B/2 & D/2 \\
@@ -44,7 +44,7 @@ B/2 & C & E/2 \\
 D/2 & E/2 & F
 \end{pmatrix}
 \thevector{x, y, 1} .
-\]
+$$
 The matrix is symmetric, so it diagonalises, and the corresponding affine change of coordinates puts $F$ in the form $\lambda_1 x^2 + \lambda_2 y^2 + \lambda_3$.
 
 Which case appears is decided by whether the conic is degenerate at infinity: the parabola $y = x^2$ meets the line at infinity in one point, the hyperbola $xy = 1$ in two.

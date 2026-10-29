@@ -72,9 +72,9 @@ Algebraic derivation of the cancellation:
 ::: {.pf-step #s2-1}
 
 By hypothesis:
-\[
+$$
 [f_0 \cdot g_0] = [f_1 \cdot g_1] \implies [f_0] \cdot [g_0] = [f_1] \cdot [g_1].
-\]
+$$
 
 ::: pf-proof
 
@@ -99,9 +99,9 @@ reversing homotopies between paths preserves path homotopy classes.
 ::: pf-step
 
 Multiply both sides of step [](#s2-1){.pf-ref} on the right by $[\bar{g}_0]$:
-\[
+$$
 ([f_0] \cdot [g_0]) \cdot [\bar{g}_0] = ([f_1] \cdot [g_1]) \cdot [\bar{g}_0].
-\]
+$$
 
 ::: pf-proof
 
@@ -114,9 +114,9 @@ well-definedness of multiplication in the path groupoid.
 ::: pf-step
 
 Applying associativity and substituting $[\bar{g}_0] = [\bar{g}_1]$ on the right-hand side:
-\[
+$$
 [f_0] \cdot ([g_0] \cdot [\bar{g}_0]) = [f_1] \cdot ([g_1] \cdot [\bar{g}_1]).
-\]
+$$
 
 ::: pf-proof
 
@@ -130,9 +130,9 @@ associativity and step [](#s2-2){.pf-ref}.
 
 Simplifying the inverse pairs:
 Since $[g_0] \cdot [\bar{g}_0] = [c_{g_0(0)}] = [c_{f_0(1)}]$ and $[g_1] \cdot [\bar{g}_1] = [c_{g_1(0)}] = [c_{f_1(1)}]$:
-\[
+$$
 [f_0] \cdot [c_{f_0(1)}] = [f_1] \cdot [c_{f_1(1)}] \implies [f_0] = [f_1].
-\]
+$$
 Thus $f_0 \simeq f_1$.
 
 ::: pf-proof

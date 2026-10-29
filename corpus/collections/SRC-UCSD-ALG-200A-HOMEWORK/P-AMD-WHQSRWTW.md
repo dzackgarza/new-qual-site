@@ -61,23 +61,23 @@ Then $G$ is abelian.
 ::: pf-proof
 
 Let $x,y\in G$ be arbitrary and consider the triplet
-\[
+$$
 x,\qquad y,\qquad xy.
-\]
+$$
 By hypothesis, some pair among these three elements commutes.
 
 If $x$ and $y$ commute, then $xy=yx$ immediately.
 
 If $x$ and $xy$ commute, then
-\[
+$$
 x(xy)=(xy)x.
-\]
+$$
 Thus $x^2y=xyx$, and left cancellation by $x$ gives $xy=yx$.
 
 If $y$ and $xy$ commute, then
-\[
+$$
 y(xy)=(xy)y.
-\]
+$$
 Thus $yxy=xy^2$, and right cancellation by $y$ gives $yx=xy$.
 
 In every case, $x$ and $y$ commute.

@@ -24,12 +24,12 @@ Prove that for every $\varepsilon>0$ there exists a measurable set $E\subseteq[0
 ::: {.solution}
 
 Fix
-\[
+$$
 \varepsilon>0.
-\]
+$$
 
-For each integer \(m\ge1\) and \(N\ge1\), define
-\[
+For each integer $m\ge1$ and $N\ge1$, define
+$$
 \boxed{
 A_{m,N}
 =
@@ -38,25 +38,25 @@ A_{m,N}
 x\in[0,1]:
 |f_n(x)-f(x)|\ge\frac1m
 \right\}.}
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
-Each set \(A_{m,N}\) is measurable.
+Each set $A_{m,N}$ is measurable.
 
 
 ::: pf-proof
 
-The functions \(f_n\) and \(f\) are measurable, so
-\[
+The functions $f_n$ and $f$ are measurable, so
+$$
 |f_n-f|
-\]
+$$
 is measurable. Hence each set
-\[
+$$
 \left\{|f_n-f|\ge\frac1m\right\}
-\]
+$$
 is measurable, and a countable union of measurable sets is measurable.
 
 :::
@@ -65,19 +65,19 @@ is measurable, and a countable union of measurable sets is measurable.
 
 ::: {.pf-step #s1-2}
 
-For fixed \(m\), the sets \(A_{m,N}\) decrease with \(N\):
-\[
+For fixed $m$, the sets $A_{m,N}$ decrease with $N$:
+$$
 \boxed{
 A_{m,N+1}\subseteq A_{m,N}}.
-\]
+$$
 
 
 ::: pf-proof
 
-The union defining \(A_{m,N+1}\) runs over the smaller index set
-\[
+The union defining $A_{m,N+1}$ runs over the smaller index set
+$$
 \{n\ge N+1\}\subseteq\{n\ge N\}.
-\]
+$$
 
 :::
 
@@ -85,24 +85,24 @@ The union defining \(A_{m,N+1}\) runs over the smaller index set
 
 ::: {.pf-step #s1-3}
 
-For fixed \(m\),
-\[
+For fixed $m$,
+$$
 \bigcap_{N=1}^{\infty}A_{m,N}
-\]
-is contained in the set where \(f_n\) fails to converge to \(f\).
+$$
+is contained in the set where $f_n$ fails to converge to $f$.
 
 
 ::: pf-proof
 
 If
-\[
+$$
 x\in\bigcap_N A_{m,N},
-\]
-then for every \(N\) there exists \(n\ge N\) such that
-\[
+$$
+then for every $N$ there exists $n\ge N$ such that
+$$
 |f_n(x)-f(x)|\ge\frac1m.
-\]
-Thus the difference does not eventually stay below \(1/m\), so \(f_n(x)\not\to f(x)\).
+$$
+Thus the difference does not eventually stay below $1/m$, so $f_n(x)\not\to f(x)$.
 
 :::
 
@@ -111,17 +111,17 @@ Thus the difference does not eventually stay below \(1/m\), so \(f_n(x)\not\to f
 ::: {.pf-step #s1-4}
 
 Hence
-\[
+$$
 \boxed{
 \lambda\left(
 \bigcap_{N=1}^{\infty}A_{m,N}
 \right)=0}.
-\]
+$$
 
 
 ::: pf-proof
 
-The sequence converges to \(f\) almost everywhere, so the failure set has Lebesgue measure zero. Apply step [](#s1-3){.pf-ref}.
+The sequence converges to $f$ almost everywhere, so the failure set has Lebesgue measure zero. Apply step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -130,18 +130,18 @@ The sequence converges to \(f\) almost everywhere, so the failure set has Lebesg
 ::: {.pf-step #s1-5}
 
 Because
-\[
+$$
 A_{m,1}\subseteq[0,1],
-\]
+$$
 one has
-\[
+$$
 \lambda(A_{m,1})\le1<\infty.
-\]
+$$
 
 
 ::: pf-proof
 
-Lebesgue measure of \([0,1]\) is \(1\).
+Lebesgue measure of $[0,1]$ is $1$.
 
 :::
 
@@ -150,12 +150,12 @@ Lebesgue measure of \([0,1]\) is \(1\).
 ::: {.pf-step #s1-6}
 
 By continuity from above of measure,
-\[
+$$
 \boxed{
 \lambda(A_{m,N})\longrightarrow0
 \qquad(N\to\infty)}
-\]
-for every fixed \(m\).
+$$
+for every fixed $m$.
 
 
 ::: pf-proof
@@ -168,13 +168,13 @@ The sets decrease by step [](#s1-2){.pf-ref}, the first has finite measure by st
 
 ::: {.pf-step #s1-7}
 
-For each \(m\ge1\), choose \(N_m\) such that
-\[
+For each $m\ge1$, choose $N_m$ such that
+$$
 \boxed{
 \lambda(A_{m,N_m})
 <
 \frac{\varepsilon}{2^m}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -188,13 +188,13 @@ This is possible by step [](#s1-6){.pf-ref}.
 ::: pf-step
 
 Define
-\[
+$$
 \boxed{
 E
 =
 \bigcup_{m=1}^{\infty}
 A_{m,N_m}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -208,16 +208,16 @@ This is a countable union of measurable sets, hence measurable.
 ::: {.pf-step #s1-9}
 
 The exceptional set satisfies
-\[
+$$
 \boxed{
 \lambda(E)<\varepsilon}.
-\]
+$$
 
 
 ::: pf-proof
 
 By countable subadditivity and step [](#s1-7){.pf-ref},
-\[
+$$
 \lambda(E)
 \le
 \sum_{m=1}^{\infty}
@@ -227,7 +227,7 @@ By countable subadditivity and step [](#s1-7){.pf-ref},
 \frac{\varepsilon}{2^m}
 =
 \varepsilon.
-\]
+$$
 
 :::
 
@@ -235,27 +235,27 @@ By countable subadditivity and step [](#s1-7){.pf-ref},
 
 ::: {.pf-step #s1-10}
 
-For every \(m\ge1\), every \(x\in F\), and every \(n\ge N_m\),
-\[
+For every $m\ge1$, every $x\in F$, and every $n\ge N_m$,
+$$
 \boxed{
 |f_n(x)-f(x)|<\frac1m}.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 x\notin E,
-\]
+$$
 one has
-\[
+$$
 x\notin A_{m,N_m}.
-\]
-By definition of \(A_{m,N_m}\), this means there is no \(n\ge N_m\) for which
-\[
+$$
+By definition of $A_{m,N_m}$, this means there is no $n\ge N_m$ for which
+$$
 |f_n(x)-f(x)|\ge\frac1m.
-\]
+$$
 
 :::
 
@@ -264,18 +264,18 @@ By definition of \(A_{m,N_m}\), this means there is no \(n\ge N_m\) for which
 ::: pf-step
 
 Let
-\[
+$$
 \delta>0.
-\]
-Choose \(m\) so large that
-\[
+$$
+Choose $m$ so large that
+$$
 \frac1m<\delta.
-\]
+$$
 
 
 ::: pf-proof
 
-The sequence \(1/m\) tends to \(0\).
+The sequence $1/m$ tends to $0$.
 
 :::
 
@@ -284,25 +284,25 @@ The sequence \(1/m\) tends to \(0\).
 ::: {.pf-step #s1-12}
 
 Then for every
-\[
+$$
 n\ge N_m
-\]
+$$
 and every
-\[
+$$
 x\in F,
-\]
-\[
+$$
+$$
 \boxed{
 |f_n(x)-f(x)|<\delta}.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-10){.pf-ref},
-\[
+$$
 |f_n(x)-f(x)|<\frac1m<\delta.
-\]
+$$
 
 :::
 
@@ -311,17 +311,17 @@ By step [](#s1-10){.pf-ref},
 ::: {.pf-step #s1-13}
 
 Therefore
-\[
+$$
 \boxed{
 f_n\to f
 \text{ uniformly on }
 [0,1]\setminus E}.
-\]
+$$
 
 
 ::: pf-proof
 
-Step [](#s1-12){.pf-ref} is exactly the definition of uniform convergence on \(F\): for the given \(\delta>0\), the single index \(N_m\) works simultaneously for every \(x\in F\).
+Step [](#s1-12){.pf-ref} is exactly the definition of uniform convergence on $F$: for the given $\delta>0$, the single index $N_m$ works simultaneously for every $x\in F$.
 
 :::
 
@@ -329,14 +329,14 @@ Step [](#s1-12){.pf-ref} is exactly the definition of uniform convergence on \(F
 
 ::: {.pf-step #s1-14}
 
-Thus for every \(\varepsilon>0\), there exists a measurable set \(E\subseteq[0,1]\) with
-\[
+Thus for every $\varepsilon>0$, there exists a measurable set $E\subseteq[0,1]$ with
+$$
 \boxed{\lambda(E)<\varepsilon}
-\]
-such that \(f_n\to f\) uniformly on
-\[
+$$
+such that $f_n\to f$ uniformly on
+$$
 \boxed{[0,1]\setminus E}.
-\]
+$$
 
 
 ::: pf-proof

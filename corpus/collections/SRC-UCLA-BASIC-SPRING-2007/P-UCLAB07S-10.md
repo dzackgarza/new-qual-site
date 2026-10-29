@@ -42,18 +42,18 @@ The limit function $f$ is increasing.
 ::: pf-proof
 
 If
-\[
+$$
 x<y,
-\]
+$$
 then for every $n$,
-\[
+$$
 f_n(x)\le f_n(y)
-\]
+$$
 because $f_n$ is increasing.
 Passing to the pointwise limit gives
-\[
+$$
 f(x)\le f(y).
-\]
+$$
 
 :::
 
@@ -63,33 +63,33 @@ f(x)\le f(y).
 
 Fix $\varepsilon>0$.
 There exists $M>0$ such that
-\[
+$$
 f(-M)<\frac{\varepsilon}{4}
-\]
+$$
 and
-\[
+$$
 f(M)>1-\frac{\varepsilon}{4}.
-\]
+$$
 
 
 ::: pf-proof
 
 By hypothesis,
-\[
+$$
 f(x)\to0
-\]
+$$
 as
-\[
+$$
 x\to-\infty
-\]
+$$
 and
-\[
+$$
 f(x)\to1
-\]
+$$
 as
-\[
+$$
 x\to+\infty.
-\]
+$$
 Choose $M$ large enough that both inequalities hold.
 
 :::
@@ -99,23 +99,23 @@ Choose $M$ large enough that both inequalities hold.
 ::: {.pf-step #s1-3}
 
 There exists $N_0$ such that for every $n\ge N_0$,
-\[
+$$
 |f_n(-M)-f(-M)|<\frac{\varepsilon}{4}
-\]
+$$
 and
-\[
+$$
 |f_n(M)-f(M)|<\frac{\varepsilon}{4}.
-\]
+$$
 
 
 ::: pf-proof
 
 This follows from pointwise convergence at the two fixed points
-\[
+$$
 -M
 \quad\text{and}\quad
 M.
-\]
+$$
 
 :::
 
@@ -124,35 +124,35 @@ M.
 ::: {.pf-step #s1-4}
 
 For every $n\ge N_0$ and every $x\le -M$,
-\[
+$$
 |f_n(x)-f(x)|<\varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
 Since both $f_n$ and $f$ are increasing and nonnegative,
-\[
+$$
 0\le f_n(x)\le f_n(-M)
-\]
+$$
 and
-\[
+$$
 0\le f(x)\le f(-M).
-\]
+$$
 By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
-\[
+$$
 f_n(-M)
 \le
 |f_n(-M)-f(-M)|+f(-M)
 <
 \frac{\varepsilon}{2}.
-\]
+$$
 Also
-\[
+$$
 f(-M)<\frac{\varepsilon}{4}.
-\]
+$$
 Therefore
-\[
+$$
 |f_n(x)-f(x)|
 \le
 f_n(x)+f(x)
@@ -160,7 +160,7 @@ f_n(x)+f(x)
 \frac{3\varepsilon}{4}
 <
 \varepsilon.
-\]
+$$
 
 :::
 
@@ -169,39 +169,39 @@ f_n(x)+f(x)
 ::: {.pf-step #s1-5}
 
 For every $n\ge N_0$ and every $x\ge M$,
-\[
+$$
 |f_n(x)-f(x)|<\varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
 Because
-\[
+$$
 0\le f_n,f\le1
-\]
+$$
 and both are increasing,
-\[
+$$
 f_n(x)\ge f_n(M)
-\]
+$$
 and
-\[
+$$
 f(x)\ge f(M).
-\]
+$$
 Hence
-\[
+$$
 1-f_n(x)
 \le
 1-f_n(M)
-\]
+$$
 and
-\[
+$$
 1-f(x)
 \le
 1-f(M).
-\]
+$$
 By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
-\[
+$$
 1-f_n(M)
 \le
 |f_n(M)-f(M)|
@@ -209,15 +209,15 @@ By steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref},
 (1-f(M))
 <
 \frac{\varepsilon}{2},
-\]
+$$
 while
-\[
+$$
 1-f(M)
 <
 \frac{\varepsilon}{4}.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 |f_n(x)-f(x)|
 &=
@@ -229,7 +229,7 @@ Therefore
 <
 \varepsilon.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -251,36 +251,36 @@ Apply the Heine--Cantor theorem.
 ::: pf-step
 
 Choose a partition
-\[
+$$
 -M=x_0<x_1<\cdots<x_r=M
-\]
+$$
 such that
-\[
+$$
 f(x_j)-f(x_{j-1})
 <
 \frac{\varepsilon}{3}
-\]
+$$
 for every $j$.
 
 
 ::: pf-proof
 
 By step [](#s1-6){.pf-ref}, choose $\delta>0$ such that
-\[
+$$
 |x-y|<\delta
-\]
+$$
 implies
-\[
+$$
 |f(x)-f(y)|<\frac{\varepsilon}{3}.
-\]
+$$
 Take a partition with mesh less than $\delta$.
 Since $f$ is increasing by step [](#s1-1){.pf-ref},
-\[
+$$
 0\le
 f(x_j)-f(x_{j-1})
 <
 \frac{\varepsilon}{3}.
-\]
+$$
 
 :::
 
@@ -289,11 +289,11 @@ f(x_j)-f(x_{j-1})
 ::: pf-step
 
 There exists $N_1$ such that for every $n\ge N_1$ and every partition point $x_j$,
-\[
+$$
 |f_n(x_j)-f(x_j)|
 <
 \frac{\varepsilon}{3}.
-\]
+$$
 
 
 ::: pf-proof
@@ -308,35 +308,35 @@ There are finitely many partition points, so take the maximum of those indices.
 ::: {.pf-step #s1-9}
 
 For every $n\ge N_1$ and every $x\in[-M,M]$,
-\[
+$$
 |f_n(x)-f(x)|<\varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
 Choose $j$ such that
-\[
+$$
 x_{j-1}\le x\le x_j.
-\]
+$$
 Monotonicity gives
-\[
+$$
 f_n(x_{j-1})
 \le
 f_n(x)
 \le
 f_n(x_j)
-\]
+$$
 and
-\[
+$$
 f(x_{j-1})
 \le
 f(x)
 \le
 f(x_j).
-\]
+$$
 Hence
-\[
+$$
 \begin{aligned}
 f_n(x)-f(x)
 &\le
@@ -348,9 +348,9 @@ f_n(x_j)-f(x_{j-1})\\
 &<
 \frac{2\varepsilon}{3},
 \end{aligned}
-\]
+$$
 and similarly
-\[
+$$
 \begin{aligned}
 f(x)-f_n(x)
 &\le
@@ -362,13 +362,13 @@ f(x_j)-f_n(x_{j-1})\\
 &<
 \frac{2\varepsilon}{3}.
 \end{aligned}
-\]
+$$
 Therefore
-\[
+$$
 |f_n(x)-f(x)|
 <
 \varepsilon.
-\]
+$$
 
 :::
 
@@ -377,35 +377,35 @@ Therefore
 ::: {.pf-step #s1-10}
 
 For every
-\[
+$$
 n\ge\max\{N_0,N_1\}
-\]
+$$
 and every
-\[
+$$
 x\in\RR,
-\]
+$$
 one has
-\[
+$$
 |f_n(x)-f(x)|<\varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
 If
-\[
+$$
 x\le-M,
-\]
+$$
 apply step [](#s1-4){.pf-ref}.
 If
-\[
+$$
 -M\le x\le M,
-\]
+$$
 apply step [](#s1-9){.pf-ref}.
 If
-\[
+$$
 x\ge M,
-\]
+$$
 apply step [](#s1-5){.pf-ref}.
 These three regions cover $\RR$.
 
@@ -416,9 +416,9 @@ These three regions cover $\RR$.
 ::: {.pf-step #s1-11}
 
 Therefore
-\[
+$$
 \boxed{f_n\to f\text{ uniformly on }\RR}.
-\]
+$$
 
 
 ::: pf-proof

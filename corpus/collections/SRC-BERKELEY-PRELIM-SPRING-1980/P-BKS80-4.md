@@ -22,9 +22,9 @@ audit:
 ::: {.problem}
 Let $a>0$, $a\ne2$, and let $C_a$ be the positively oriented circle $|z|=a$.
 Evaluate
-\[
+$$
 \int_{C_a}\frac{z^2+e^z}{z^2(z-2)}\,dz.
-\]
+$$
 :::
 
 ::: {.solution}

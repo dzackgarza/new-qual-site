@@ -31,9 +31,9 @@ audit:
 ::: {.problem}
 Let $K$ be a nonempty compact subset of a metric space with distance $d$.
 Suppose $\varphi:K\to K$ satisfies
-\[
+$$
 d(\varphi(x),\varphi(y))<d(x,y)
-\]
+$$
 for all distinct $x,y\in K$.
 Show that $\varphi$ has exactly one fixed point in $K$.
 :::

@@ -51,29 +51,29 @@ $$
 
 ::: {.solution}
 Write the sets explicitly:
-\[
+$$
 A=(-1,-\tfrac12)\cup(\tfrac12,1),
-\]
-\[
+$$
+$$
 B=[-1,-\tfrac12)\cup(\tfrac12,1],
-\]
-\[
+$$
+$$
 C=(-1,-\tfrac12]\cup[\tfrac12,1),
-\]
+$$
 and
-\[
+$$
 D=[-1,-\tfrac12]\cup[\tfrac12,1].
-\]
+$$
 Thus $A$ is open both in $\RR$ and in $Y=[-1,1]$. The set $B$ is open in $Y$, since
-\[
+$$
 [-1,-\tfrac12)=Y\cap(-2,-\tfrac12),\qquad
 (\tfrac12,1]=Y\cap(\tfrac12,2),
-\]
+$$
 but it is not open in $\RR$: it contains $1$, and every open interval about $1$ contains points greater than $1$. The sets $C$ and $D$ are not open even in $Y$, since the included points $\pm\tfrac12$ have no sufficiently small relative neighborhood contained in the set; consequently they are not open in $\RR$ either.
 
 Finally
-\[
+$$
 E=(-1,0)\cup\left((0,1)-\{1/n:n\ge2\}\right).
-\]
+$$
 The only accumulation point of $\{1/n:n\ge2\}$ in $\RR$ is $0$, which is not in $E$. Hence every point of $E$ has an ordinary open interval contained in $E$, so $E$ is open in $\RR$ and therefore also in $Y$.
 :::

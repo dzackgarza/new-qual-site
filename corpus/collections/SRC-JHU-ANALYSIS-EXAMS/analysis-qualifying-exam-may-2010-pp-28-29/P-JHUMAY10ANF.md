@@ -28,10 +28,10 @@ audit:
 Let $\varphi:\RR\to\RR$ be continuous with compact support.
 
 (a) If $1\le p\le q\le\infty$, prove that there is a constant $A$ such that
-\[
+$$
 \|f*\varphi\|_q\le A\|f\|_p
 \qquad(f\in L^p).
-\]
+$$
 
 (b) Show by example that no such general estimate can hold when $p>q$.
 :::

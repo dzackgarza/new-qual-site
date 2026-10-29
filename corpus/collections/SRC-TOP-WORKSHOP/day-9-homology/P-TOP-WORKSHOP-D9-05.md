@@ -36,19 +36,19 @@ Regard $X=\RR^3\setminus A$ as a complement in $S^3$.
 ::: pf-proof
 
 Let $\infty$ denote the point at infinity in the one-point compactification $S^3=\RR^3\cup\{\infty\}$ and put
-\[
+$$
 K=A\sqcup\{\infty\}.
-\]
+$$
 Then
-\[
+$$
 X=S^3\setminus K.
-\]
+$$
 The set $K$ is compact and locally contractible, so Alexander duality gives
-\[
+$$
 \widetilde H_k(X;\ZZ)
 \cong
 \widetilde H^{\,2-k}(K;\ZZ)
-\]
+$$
 for every $k$.
 
 :::
@@ -58,7 +58,7 @@ for every $k$.
 ::: {.pf-step #s2}
 
 The reduced cohomology of $K=S^1\sqcup S^1\sqcup\{\infty\}$ is
-\[
+$$
 \widetilde H^j(K;\ZZ)
 \cong
 \begin{cases}
@@ -66,7 +66,7 @@ The reduced cohomology of $K=S^1\sqcup S^1\sqcup\{\infty\}$ is
 \ZZ^2,&j=1,\\
 0,&j\ge2.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
@@ -81,13 +81,13 @@ There is no cohomology in higher degrees.
 ::: {.pf-step #s3}
 
 Alexander duality therefore gives
-\[
+$$
 \widetilde H_0(X;\ZZ)=0,
 \qquad
 H_1(X;\ZZ)\cong\ZZ^2,
 \qquad
 H_2(X;\ZZ)\cong\ZZ^2,
-\]
+$$
 
 ::: pf-proof
 
@@ -101,7 +101,7 @@ For $k\ge3$, the corresponding cohomological degree is negative, so the homology
 ::: pf-step
 
 Thus the singular homology groups of $X=\RR^3\setminus(S^1\sqcup S^1)$ are
-\[
+$$
 H_k(X;\ZZ)
 \cong
 \begin{cases}
@@ -110,7 +110,7 @@ H_k(X;\ZZ)
 \ZZ^2,&k=2,\\
 0,&k\ge3.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 

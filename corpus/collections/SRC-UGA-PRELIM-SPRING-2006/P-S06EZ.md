@@ -27,9 +27,9 @@ Find all complex numbers $z = x + iy$, $(x, y \in \RR)$, such that $e^z = 2i$.
 
 ::: pf-step
 Write $z=x+iy$ with $x,y\in\RR$. Then
-\[
+$$
 e^z=e^x(\cos y+i\sin y).
-\]
+$$
 
 :::
 
@@ -38,9 +38,9 @@ If $e^z=2i$, then $e^x=2$.
 
 ::: pf-proof
 Taking absolute values gives
-\[
+$$
 e^x=|e^z|=|2i|=2.
-\]
+$$
 Hence $x=\ln2$.
 :::
 
@@ -48,16 +48,16 @@ Hence $x=\ln2$.
 
 ::: {.pf-step #s3}
 The argument condition is
-\[
+$$
 y=\frac\pi2+2\pi k,
 \qquad k\in\ZZ.
-\]
+$$
 
 ::: pf-proof
 After step [](#s2){.pf-ref}, the equation becomes
-\[
+$$
 \cos y+i\sin y=i.
-\]
+$$
 Thus $\cos y=0$ and $\sin y=1$, which occurs exactly when $y=\pi/2+2\pi k$.
 :::
 
@@ -65,15 +65,15 @@ Thus $\cos y=0$ and $\sin y=1$, which occurs exactly when $y=\pi/2+2\pi k$.
 
 ::: pf-step
 Therefore all solutions are
-\[
+$$
 \boxed{z=\ln2+i\left(\frac\pi2+2\pi k\right),\qquad k\in\ZZ.}
-\]
+$$
 
 ::: pf-proof
 Every such $z$ satisfies
-\[
+$$
 e^z=2e^{i(\pi/2+2\pi k)}=2i,
-\]
+$$
 and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} show that no other solutions are possible.
 :::
 

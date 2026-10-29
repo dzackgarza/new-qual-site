@@ -43,9 +43,9 @@ Then $C=\varnothing$ or $C=X$.
 
 Because $C$ is closed, its complement $X\setminus C$ is open.
 If both $C$ and $X\setminus C$ were nonempty, then
-\[
+$$
 X=C\cup(X\setminus C)
-\]
+$$
 would be a union of two disjoint nonempty open sets, which would disconnect $X$.
 Thus one of them is empty, giving $C=\varnothing$ or $C=X$.
 
@@ -62,9 +62,9 @@ Then $X$ is connected.
 
 Assume for contradiction that $X$ is disconnected.
 Then there are disjoint nonempty open sets $U,V\subseteq X$ with
-\[
+$$
 X=U\cup V.
-\]
+$$
 Since $X\setminus U=V$ is open, $U$ is closed as well as open.
 Thus $U$ is a nontrivial clopen subset of $X$, contradicting the hypothesis.
 

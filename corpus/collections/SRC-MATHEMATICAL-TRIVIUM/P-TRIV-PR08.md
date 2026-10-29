@@ -39,9 +39,9 @@ Let $S$ be the event that a signal passes from input to output.
 ::: {.pf-step #s1-1}
 
 Conditional on $E$ being open, the circuit consists of the two parallel series paths $AB$ and $CD$, so
-\[
+$$
 P(S\mid E\text{ open})=1-(1-p^2)^2=2p^2-p^4.
-\]
+$$
 
 
 ::: pf-proof
@@ -55,19 +55,19 @@ With $E$ open, passage occurs exactly when $A$ and $B$ are both closed or $C$ an
 ::: {.pf-step #s1-2}
 
 Conditional on $E$ being closed, passage occurs exactly when at least one of $A,C$ is closed and at least one of $B,D$ is closed, so
-\[
+$$
 P(S\mid E\text{ closed})=(2p-p^2)^2.
-\]
+$$
 
 
 ::: pf-proof
 
 When $E$ is closed, the two intermediate nodes are connected and behave as one node. The probability that at least one of $A,C$ is closed is $1-(1-p)^2=2p-p^2$, and the same holds independently for $B,D$. Thus
-\[
+$$
 P(S\mid E\text{ closed})
 =\bigl(1-(1-p)^2\bigr)^2
 =(2p-p^2)^2.
-\]
+$$
 This direct characterization subsumes the failure cases described in the claim.
 
 :::
@@ -77,9 +77,9 @@ This direct characterization subsumes the failure cases described in the claim.
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 P(S)=(1-p)(2p^2-p^4)+p(2p-p^2)^2.
-\]
+$$
 
 
 ::: pf-proof
@@ -93,18 +93,18 @@ Use the law of total probability, with $P(E\text{ open})=1-p$ and $P(E\text{ clo
 ::: {.pf-step #s1-4}
 
 Simplifying gives
-\[
+$$
 \boxed{P(S)=2p^2+2p^3-5p^4+2p^5}.
-\]
+$$
 
 
 ::: pf-proof
 
 Expand step [](#s1-3){.pf-ref}:
-\[
+$$
 (1-p)(2p^2-p^4)+p(4p^2-4p^3+p^4)
 =2p^2+2p^3-5p^4+2p^5.
-\]
+$$
 
 :::
 
@@ -113,9 +113,9 @@ Expand step [](#s1-3){.pf-ref}:
 ::: {.pf-step #s1-5}
 
 The joint probability that $E$ is open and the signal passes is
-\[
+$$
 P(E\text{ open}\cap S)=(1-p)(2p^2-p^4).
-\]
+$$
 
 
 ::: pf-proof
@@ -129,20 +129,20 @@ Multiply $P(E\text{ open})=1-p$ by the conditional probability in step [](#s1-1)
 ::: {.pf-step #s1-6}
 
 Hence
-\[
+$$
 \boxed{
 P(E\text{ open}\mid S)
 =\frac{(1-p)(2p^2-p^4)}{2p^2+2p^3-5p^4+2p^5}}
-\]
+$$
 for $p>0$.
 
 
 ::: pf-proof
 
 By the definition of conditional probability,
-\[
+$$
 P(E\text{ open}\mid S)=\frac{P(E\text{ open}\cap S)}{P(S)}.
-\]
+$$
 Substitute steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref}.
 
 :::

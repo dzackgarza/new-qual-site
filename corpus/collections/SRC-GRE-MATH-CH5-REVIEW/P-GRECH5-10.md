@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 For what value of $d$ is the vector $\mathbf{b} = (12, 11, d)^T$ in the column space of this matrix?
 
-\[
+$$
 A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}
-\]
+$$
 
 (A) $-26$
 (B) $10$

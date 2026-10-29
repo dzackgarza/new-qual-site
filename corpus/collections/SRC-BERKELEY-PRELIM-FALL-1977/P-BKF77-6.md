@@ -24,13 +24,13 @@ audit:
 ---
 ::: {.problem}
 Let $u:\RR^2\to\RR$ be defined by
-\[
+$$
 u(x,y)=x^3-3xy^2.
-\]
+$$
 Show that $u$ is harmonic and find $v:\RR^2\to\RR$ such that
-\[
+$$
 f(x+iy)=u(x,y)+iv(x,y)
-\]
+$$
 is analytic.
 :::
 

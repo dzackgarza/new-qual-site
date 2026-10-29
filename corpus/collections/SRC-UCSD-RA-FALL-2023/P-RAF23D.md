@@ -45,20 +45,20 @@ Then $\mathcal{H}_a$ is a Hilbert space and $\{\sqrt{2a}\operatorname{sinc}(2ax 
 ::: pf-proof
 
 For $x\ne0$,
-\[
+$$
 \widehat{\chi_{[-a,a]}}(x)
 =\int_{-a}^a e^{-2\pi ixt}\,dt
 =\frac{e^{-2\pi iax}-e^{2\pi iax}}{-2\pi ix}
 =\frac{\sin(2\pi ax)}{\pi x}
 =2a\operatorname{sinc}(2ax).
-\]
+$$
 At $x=0$ both sides equal $2a$, so the identity holds everywhere. Since $\chi_{[-a,a]}$ is even, the inverse transform gives the same function:
-\[
+$$
 \boxed{
 \widehat{\chi_{[-a,a]}}
 =\check{\chi}_{[-a,a]}
 =2a\operatorname{sinc}(2ax).}
-\]
+$$
 
 :::
 
@@ -71,32 +71,32 @@ At $x=0$ both sides equal $2a$, so the identity holds everywhere. Since $\chi_{[
 ::: pf-proof
 
 By Plancherel, the Fourier transform is unitary on $L^2(\RR)$. Therefore
-\[
+$$
 \mathcal H_a
 =\{f\in L^2:\operatorname{supp}\widehat f\subset[-a,a]\}
-\]
+$$
 is the inverse image of the closed subspace $L^2([-a,a])$, hence is itself a closed subspace of $L^2$. Thus $\mathcal H_a$ is a Hilbert space.
 
 For $k\in\ZZ$, put
-\[
+$$
 \phi_k(x):=\sqrt{2a}\operatorname{sinc}(2ax-k)
 =\sqrt{2a}\operatorname{sinc}\!\left(2a\left(x-\frac{k}{2a}\right)\right).
-\]
+$$
 From step [](#s1){.pf-ref} and the translation rule,
-\[
+$$
 \widehat{\phi_k}(\xi)
 =\frac1{\sqrt{2a}}
 e^{-2\pi i k\xi/(2a)}\chi_{[-a,a]}(\xi).
-\]
+$$
 The functions
-\[
+$$
 \frac1{\sqrt{2a}}e^{-2\pi i k\xi/(2a)},
 \qquad k\in\ZZ,
-\]
+$$
 form the standard orthonormal basis of $L^2([-a,a])$. Since the Fourier transform is unitary,
-\[
+$$
 \boxed{\{\phi_k:k\in\ZZ\}\text{ is an orthonormal basis of }\mathcal H_a.}
-\]
+$$
 
 :::
 
@@ -109,18 +109,18 @@ form the standard orthonormal basis of $L^2([-a,a])$. Since the Fourier transfor
 ::: pf-proof
 
 If $f\in\mathcal H_a$, then $\widehat f\in L^2([-a,a])$. Since the interval has finite measure, Cauchy--Schwarz gives
-\[
+$$
 \|\widehat f\|_1
 \le (2a)^{1/2}\|\widehat f\|_2<\infty.
-\]
+$$
 Therefore Fourier inversion gives
-\[
+$$
 f(x)=\int_{-a}^a\widehat f(\xi)e^{2\pi ix\xi}\,d\xi
-\]
+$$
 for a continuous representative of $f$. By the Riemann--Lebesgue lemma this representative tends to $0$ as $|x|\to\infty$. Hence
-\[
+$$
 f\in C_0(\RR).
-\]
+$$
 
 :::
 
@@ -133,7 +133,7 @@ f\in C_0(\RR).
 ::: pf-proof
 
 By Plancherel,
-\[
+$$
 \begin{aligned}
 \langle f,\phi_k\rangle
 &=\langle\widehat f,\widehat{\phi_k}\rangle\\
@@ -141,9 +141,9 @@ By Plancherel,
 \int_{-a}^a\widehat f(\xi)e^{2\pi i k\xi/(2a)}\,d\xi\\
 &=\frac1{\sqrt{2a}}f\!\left(\frac{k}{2a}\right).
 \end{aligned}
-\]
+$$
 Expanding $f$ in the orthonormal basis $(\phi_k)$ therefore gives, in $L^2$,
-\[
+$$
 \begin{aligned}
 f(x)
 &=\sum_{k\in\ZZ}
@@ -152,15 +152,15 @@ f(x)
 f\!\left(\frac{k}{2a}\right)
 \operatorname{sinc}(2ax-k).
 \end{aligned}
-\]
+$$
 Thus
-\[
+$$
 \boxed{
 f=\sum_{k\in\ZZ}
 f\!\left(\frac{k}{2a}\right)
 \operatorname{sinc}(2ax-k)
 \quad\text{in }L^2.}
-\]
+$$
 
 :::
 

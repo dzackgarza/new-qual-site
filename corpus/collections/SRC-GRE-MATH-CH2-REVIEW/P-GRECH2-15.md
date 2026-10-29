@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 If
 
-\[
+$$
 f(x) = \frac{e^x \arccos x}{\cos x}
-\]
+$$
 
 then the slope of the line tangent to the graph of $f$ at its $y$-intercept is
 

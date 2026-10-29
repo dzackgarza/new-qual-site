@@ -26,9 +26,9 @@ audit:
 ::: {.problem}
 Let $N\trianglelefteq G$ with $N\ne G$.
 Suppose there is no subgroup $H$ satisfying
-\[
+$$
 N\subsetneq H\subsetneq G.
-\]
+$$
 Prove that $[G:N]$ is finite and prime.
 :::
 

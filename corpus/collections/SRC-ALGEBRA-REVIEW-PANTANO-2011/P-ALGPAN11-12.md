@@ -42,9 +42,9 @@ I is a subring.
 ::: pf-proof
 
 The set
-\[
+$$
 \QQ(\sqrt2)=\{a+b\sqrt2:a,b\in\QQ\}
-\]
+$$
 is closed under addition, additive inverses, and multiplication, and contains $1$; in fact it is a field.
 
 :::
@@ -58,14 +58,14 @@ II is a subring.
 ::: pf-proof
 
 The set
-\[
+$$
 \left\{\frac n{3^m}:n\in\ZZ,\ m\ge0\right\}=\ZZ[1/3]
-\]
+$$
 is closed under subtraction.
 Also
-\[
+$$
 \frac n{3^m}\frac r{3^s}=\frac{nr}{3^{m+s}},
-\]
+$$
 so it is closed under multiplication and contains $1$.
 
 :::
@@ -79,9 +79,9 @@ III is not a subring.
 ::: pf-proof
 
 The element $1=1+0\sqrt5$ lies in III, but
-\[
+$$
 1+1=2
-\]
+$$
 does not, since its coefficients satisfy $2^2+0^2=4>1$.
 Thus III is not closed under addition.
 

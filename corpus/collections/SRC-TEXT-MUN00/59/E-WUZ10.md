@@ -50,9 +50,9 @@ each $S_i \setminus \{p\}$ contains points distinct from $p$.
 ::: pf-step
 
 Define the open sets in $X$:
-\[
+$$
 U = X \setminus \{q_1\} = (S_1 \setminus \{q_1\}) \cup S_2, \qquad V = X \setminus \{q_2\} = S_1 \cup (S_2 \setminus \{q_2\}).
-\]
+$$
 Since $\{q_1\}$ and $\{q_2\}$ are closed singletons in Hausdorff spaces, $U$ and $V$ are open in $X$, and $U \cup V = X \setminus \emptyset = X$.
 
 ::: pf-proof
@@ -79,9 +79,9 @@ Fundamental groups of $U, V$, and $U \cap V$:
 $S_1 \setminus \{q_1\}$ is homeomorphic to $\RR^2$, which deformation retracts onto the point $p$.
 This radial deformation retraction extends to $U$ by fixing $S_2$ pointwise.
 Thus $S_2$ is a deformation retract of $U$, so:
-\[
+$$
 \pi_1(U, p) \cong \pi_1(S_2, p) \cong \pi_1(S^2) = 0.
-\]
+$$
 
 ::: pf-proof
 
@@ -95,9 +95,9 @@ $\pi_1(S^2) = 0$ and homotopy invariance.
 
 **Fundamental group of $V$:**
 Symmetrically, $V$ deformation retracts onto $S_1$, so:
-\[
+$$
 \pi_1(V, p) \cong \pi_1(S_1, p) \cong \pi_1(S^2) = 0.
-\]
+$$
 
 ::: pf-proof
 
@@ -136,9 +136,9 @@ Seifert–van Kampen Theorem:
 ::: pf-step
 
 Since $U$ and $V$ are open, $U \cup V = X$, and $U \cap V$ is path-connected, the Seifert–van Kampen Theorem gives:
-\[
+$$
 \pi_1(X, p) \cong \pi_1(U, p) *_{\pi_1(U \cap V, p)} \pi_1(V, p) \cong 0 *_0 0 = 0.
-\]
+$$
 
 ::: pf-proof
 

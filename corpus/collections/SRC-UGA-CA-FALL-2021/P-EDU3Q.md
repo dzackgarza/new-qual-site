@@ -49,11 +49,11 @@ If $f_n(z)\to z$ uniformly, both are uniformly bounded, and $e^z$ is uniformly c
 
 ::: {.proof title="Of first claim"}
 We'll first show that for $w$ in a neighborhood of zero avoiding 1, there exists a constant $C$ such that
-\[
+$$
 \abs{ 1 - {\log(1+w) \over w} } \leq C\abs{w}
-.\]
+.$$
 This follows from estimating the series expansion about $w=0$:
-\[
+$$
 \abs{ 1 - {\log(1+w) \over w} }
 &= \abs{\inverseof{w}\sum_{k\geq 1} { (-w)^k \over k} } \\
 &= \abs{\sum_{k\geq 2} {(-w)^{k-1} \over k} } \\
@@ -63,11 +63,11 @@ This follows from estimating the series expansion about $w=0$:
 &= {1\over 2}\qty{{1\over 1 - \abs w} - 1 } \\
 &= {1\over 2}\abs{2} \qty{1\over 1 - \abs w} \\
 &\leq C \abs{w}
-,\]
+,$$
 using that ${1\over 1-x}$ is bounded in compact sets avoiding $x=1$.
 
 We can now apply the $M\dash$test:
-\[
+$$
 \abs{n\log\qty{ 1 + {z\over n} } - z }
 &= \abs{z}\cdot \abs{
 {{ \log\qty{1 + {z\over n}} \over {z\over n}} - 1}
@@ -76,7 +76,7 @@ We can now apply the $M\dash$test:
 &\leq M\cdot C\qty{M\over n} \\
 &= {CM^2 \over n}\\
 &\convergesto{n\to\infty}0
-.\]
+.$$
 
 :::
 

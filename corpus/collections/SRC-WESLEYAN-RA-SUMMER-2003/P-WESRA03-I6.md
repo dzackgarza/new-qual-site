@@ -27,13 +27,13 @@ Is every bounded real-valued function on $[0,1]$ that is Lebesgue integrable als
 
 ::: {.solution}
 No. Take the Dirichlet function
-\[
+$$
 f=\mathbf1_{\QQ\cap[0,1]}.
-\]
+$$
 It is bounded and Lebesgue measurable, and since $\QQ\cap[0,1]$ is countable,
-\[
+$$
 \int_0^1 f\,dm=0.
-\]
+$$
 But every nonempty interval contains both rational and irrational points, so on every subinterval the infimum of $f$ is $0$ and the supremum is $1$.
 Thus every lower Darboux sum is $0$ and every upper Darboux sum is $1$.
 Hence $f$ is not Riemann integrable.

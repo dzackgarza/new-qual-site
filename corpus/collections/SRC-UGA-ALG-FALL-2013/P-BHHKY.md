@@ -73,9 +73,9 @@ The subgroup $H$ in step [](#s1-1){.pf-ref} has index two and is therefore norma
 ::: {.pf-step #s1-4}
 
 Three pairwise nonisomorphic groups of order $30$ are
-\[
+$$
 \boxed{C_{30},\quad C_3\times D_{10},\quad D_{30}},
-\]
+$$
 where $D_{2n}$ denotes the dihedral group of order $2n$.
 
 

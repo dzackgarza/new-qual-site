@@ -44,45 +44,45 @@ $$
 
 ::: {.solution}
 The uniform metric is
-\[
+$$
 \bar\rho(\mathbf x,\mathbf y)=\sup_i\min\{|x_i-y_i|,1\},
-\]
+$$
 and throughout $0<\varepsilon<1$.
 
 (a) Define
-\[
+$$
 y_i=x_i+\varepsilon\left(1-\frac1{i+1}\right).
-\]
+$$
 Then $|y_i-x_i|<\varepsilon$ for every $i$, so $\mathbf y\in U(\mathbf x,\varepsilon)$. But
-\[
+$$
 \bar\rho(\mathbf x,\mathbf y)=\sup_i|x_i-y_i|=\varepsilon,
-\]
+$$
 so $\mathbf y\notin B_{\bar\rho}(\mathbf x,\varepsilon)$. Thus the two sets are not equal.
 
 (b) Use the same $\mathbf y\in U(\mathbf x,\varepsilon)$. Given any $r>0$, choose $i$ so large that
-\[
+$$
 \varepsilon-|y_i-x_i|<r/2.
-\]
+$$
 Alter only the $i$th coordinate, increasing it by some $s<r$ large enough that the new coordinate lies outside $(x_i-\varepsilon,x_i+\varepsilon)$. The resulting point $\mathbf z$ satisfies
-\[
+$$
 \bar\rho(\mathbf y,\mathbf z)<r
-\]
+$$
 but $\mathbf z\notin U(\mathbf x,\varepsilon)$. Hence no uniform ball about $\mathbf y$ lies inside $U(\mathbf x,\varepsilon)$, so this set is not uniform-open.
 
 (c) If $\mathbf y\in U(\mathbf x,\delta)$ for some $\delta<\varepsilon$, then
-\[
+$$
 \bar\rho(\mathbf x,\mathbf y)\le\delta<\varepsilon,
-\]
+$$
 so $\mathbf y$ lies in the $\varepsilon$-ball. Conversely, if
-\[
+$$
 s=\bar\rho(\mathbf x,\mathbf y)<\varepsilon,
-\]
+$$
 choose $\delta$ with $s<\delta<\varepsilon$. Since $\delta<1$, the inequality defining $s$ implies
-\[
+$$
 |x_i-y_i|<\delta
-\]
+$$
 for every $i$. Thus $\mathbf y\in U(\mathbf x,\delta)$. Therefore
-\[
+$$
 B_{\bar\rho}(\mathbf x,\varepsilon)=\bigcup_{\delta<\varepsilon}U(\mathbf x,\delta).
-\]
+$$
 :::

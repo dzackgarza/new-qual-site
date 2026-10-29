@@ -28,13 +28,13 @@ audit:
 
 ::: {.problem}
 Show that
-\[
+$$
 \sum_{n=0}^{\infty}\frac{z}{(1+z^2)^n}
-\]
+$$
 converges for every complex number $z$ exterior to the lemniscate
-\[
+$$
 |1+z^2|=1.
-\]
+$$
 :::
 
 ::: {.solution}

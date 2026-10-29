@@ -23,9 +23,9 @@ Let $V_1$ be a finite-dimensional subspace of the Banach space $V$. Show that th
 ::: {.solution}
 
 Choose a basis
-\[
+$$
 e_1,\dots,e_n
-\]
+$$
 of $V_1$.
 
 ::: pf
@@ -33,11 +33,11 @@ of $V_1$.
 ::: pf-step
 
 For each $j=1,\dots,n$, the coordinate functional
-\[
+$$
 \lambda_j:V_1\to\FF,
 \qquad
 \lambda_j\!\left(\sum_{k=1}^n a_ke_k\right)=a_j,
-\]
+$$
 is continuous.
 
 
@@ -52,9 +52,9 @@ Every linear map from a finite-dimensional normed space to a normed space is con
 ::: {.pf-step #s1-2}
 
 For each $j$, there exists a continuous linear functional
-\[
+$$
 \widetilde\lambda_j:V\to\FF
-\]
+$$
 whose restriction to $V_1$ is $\lambda_j$.
 
 
@@ -69,21 +69,21 @@ Apply the Hahn--Banach theorem to the bounded linear functional $\lambda_j$ on t
 ::: {.pf-step #s1-3}
 
 Define
-\[
+$$
 P:V\to V_1,
 \qquad
 P(x)
 \coloneqq
 \sum_{j=1}^n
 \widetilde\lambda_j(x)e_j.
-\]
+$$
 Then $P$ is linear and continuous.
 
 
 ::: pf-proof
 
 Linearity follows from linearity of the functionals $\widetilde\lambda_j$. Moreover,
-\[
+$$
 \begin{aligned}
 \|P(x)\|
 &\le
@@ -96,7 +96,7 @@ Linearity follows from linearity of the functionals $\widetilde\lambda_j$. Moreo
 \right)
 \|x\|.
 \end{aligned}
-\]
+$$
 Thus $P$ is bounded, hence continuous.
 
 :::
@@ -111,24 +111,24 @@ The restriction of $P$ to $V_1$ is the identity map.
 ::: pf-proof
 
 If
-\[
+$$
 v=\sum_{k=1}^n a_ke_k\in V_1,
-\]
+$$
 then step [](#s1-2){.pf-ref} gives
-\[
+$$
 \widetilde\lambda_j(v)
 =
 \lambda_j(v)
 =
 a_j.
-\]
+$$
 Therefore
-\[
+$$
 P(v)
 =
 \sum_{j=1}^n a_je_j
 =v.
-\]
+$$
 
 :::
 
@@ -137,35 +137,35 @@ P(v)
 ::: {.pf-step #s1-5}
 
 The map $P$ satisfies
-\[
+$$
 \boxed{
 P^2=P,
 \qquad
 \operatorname{range}(P)=V_1
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 By definition, $P(x)\in V_1$ for every $x\in V$. Applying step [](#s1-4){.pf-ref} to $P(x)$ gives
-\[
+$$
 P^2(x)
 =
 P(P(x))
 =
 P(x),
-\]
+$$
 so $P^2=P$.
 
 Also,
-\[
+$$
 \operatorname{range}(P)\subseteq V_1.
-\]
+$$
 Conversely, step [](#s1-4){.pf-ref} says that every $v\in V_1$ satisfies $P(v)=v$, so every element of $V_1$ lies in the range of $P$. Hence
-\[
+$$
 \operatorname{range}(P)=V_1.
-\]
+$$
 
 :::
 

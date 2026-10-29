@@ -31,22 +31,22 @@ Use the preceding exercise to give an example where this fails in the nonsimply-
 
 ::: {.solution}
 Let $f:X\to Y$ be a map of simply-connected CW complexes and suppose its mapping cone $C_f$ is contractible. The cofibration sequence
-\[
+$$
 X\xrightarrow f Y\longrightarrow C_f
-\]
+$$
 gives the long exact sequence in reduced homology. Since $\widetilde H_*(C_f)=0$, the map
-\[
+$$
 f_*:H_i(X;\ZZ)\xrightarrow{\cong}H_i(Y;\ZZ)
-\]
+$$
 is an isomorphism for every $i$. The homology Whitehead theorem for simply-connected CW complexes then implies that $f$ is a homotopy equivalence.
 
 The simply-connected hypothesis is essential. Let $A$ be any acyclic, noncontractible CW complex (for example an acyclic $K(G,1)$ for a nontrivial acyclic group $G$), and take the constant map
-\[
+$$
 f:A\longrightarrow *.
-\]
+$$
 Its mapping cone is
-\[
+$$
 C_f=CA/A\cong\Sigma A.
-\]
+$$
 By the preceding exercise the suspension of an acyclic CW complex is contractible. Thus $C_f$ is contractible, while $f$ is not a homotopy equivalence because $A$ is not contractible. This gives the required nonsimply-connected counterexample.
 :::

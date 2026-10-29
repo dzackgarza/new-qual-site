@@ -40,15 +40,15 @@ No proof is required.
 By the classification theorem for compact connected surfaces without boundary, every such surface is homeomorphic to exactly one of the following types:
 
 - an orientable surface $M_g$, the connected sum of $g$ tori, with
-  \[
+  $$
   \chi(M_g)=2-2g,
-  \]
+  $$
   where $g\ge0$;
 
 - a nonorientable surface $N_k$, the connected sum of $k$ projective planes, with
-  \[
+  $$
   \chi(N_k)=2-k,
-  \]
+  $$
   where $k\ge1$.
 
 ::: pf
@@ -56,20 +56,20 @@ By the classification theorem for compact connected surfaces without boundary, e
 ::: {.pf-step #s1}
 
 The orientable possibilities are
-\[
+$$
 M_0=S^2,
 \qquad
 M_1=T^2,
 \qquad
 M_2=T^2\#T^2.
-\]
+$$
 
 ::: pf-proof
 
 The inequality
-\[
+$$
 2-2g\ge-2
-\]
+$$
 is equivalent to $g\le2$.
 Since $g\ge0$, one has $g=0,1,2$.
 
@@ -80,7 +80,7 @@ Since $g\ge0$, one has $g=0,1,2$.
 ::: {.pf-step #s2}
 
 The nonorientable possibilities are
-\[
+$$
 N_1=\RP^2,
 \qquad
 N_2=K,
@@ -88,15 +88,15 @@ N_2=K,
 N_3=\#^3\RP^2,
 \qquad
 N_4=\#^4\RP^2,
-\]
+$$
 where $K$ is the Klein bottle.
 
 ::: pf-proof
 
 The inequality
-\[
+$$
 2-k\ge-2
-\]
+$$
 is equivalent to $k\le4$.
 Since $k\ge1$, one has $k=1,2,3,4$.
 

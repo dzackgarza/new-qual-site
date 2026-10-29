@@ -48,26 +48,26 @@ Let $dA=dx\,dy$ denote planar Lebesgue measure.
 ::: {.pf-step #s1}
 
 For every compact $K\subseteq\CC$,
-\[
+$$
 \int_K U_\mu(z)\,dA(z)<\infty.
-\]
+$$
 
 ::: pf-proof
 
 Because both $K$ and $\operatorname{supp}\mu$ are compact, choose $R>0$ such that
-\[
+$$
 K\cup\operatorname{supp}\mu\subseteq B(0,R).
-\]
+$$
 For every $w\in\operatorname{supp}\mu$ and every $z\in K$,
-\[
+$$
 |z-w|\le |z|+|w|<2R,
-\]
+$$
 so
-\[
+$$
 K\subseteq B(w,2R).
-\]
+$$
 Consequently, using polar coordinates centered at $w$,
-\[
+$$
 \begin{aligned}
 \int_K\frac{dA(z)}{|z-w|}
 &\le
@@ -75,9 +75,9 @@ Consequently, using polar coordinates centered at $w$,
 &=\int_0^{2R}\int_0^{2\pi}\frac1r\,r\,d\theta\,dr\\
 &=4\pi R.
 \end{aligned}
-\]
+$$
 The integrand $(z,w)\mapsto |z-w|^{-1}$ is nonnegative and measurable, so Tonelli's theorem gives
-\[
+$$
 \begin{aligned}
 \int_K U_\mu(z)\,dA(z)
 &=
@@ -87,7 +87,7 @@ The integrand $(z,w)\mapsto |z-w|^{-1}$ is nonnegative and measurable, so Tonell
 \left(\int_K\frac{dA(z)}{|z-w|}\right)d\mu(w)\\
 &\le 4\pi R\,\mu(\CC)<\infty.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -100,29 +100,29 @@ The potential $U_\mu(z)$ is finite for Lebesgue-almost every $z\in\CC$.
 ::: pf-proof
 
 For every $N\ge1$, apply step [](#s1){.pf-ref} to the compact square
-\[
+$$
 Q_N=[-N,N]+i[-N,N].
-\]
+$$
 Since $U_\mu\ge0$ and
-\[
+$$
 \int_{Q_N}U_\mu\,dA<\infty,
-\]
+$$
 the function $U_\mu$ is finite almost everywhere on $Q_N$.
 Because
-\[
+$$
 \CC=\bigcup_{N=1}^{\infty}Q_N,
-\]
+$$
 the union of the corresponding exceptional null sets is still null.
 This proves part (a).
 
 For $y\in\RR$, write
-\[
+$$
 L_y^h=\{x+iy:x\in\RR\},
-\]
+$$
 and for $x\in\RR$ write
-\[
+$$
 L_x^v=\{x+iy:y\in\RR\}.
-\]
+$$
 
 :::
 
@@ -135,16 +135,16 @@ Only countably many horizontal lines have positive $\mu$-measure, and only count
 ::: pf-proof
 
 For $m\ge1$, let
-\[
+$$
 H_m=\left\{y\in\RR:\mu(L_y^h)\ge\frac1m\right\}.
-\]
+$$
 Distinct horizontal lines are disjoint.
 If $H_m$ contained more than $m\mu(\CC)$ elements, a sufficiently large finite subfamily would have total measure greater than $\mu(\CC)$, which is impossible.
 Thus each $H_m$ is finite.
 If $\mu(L_y^h)>0$, then $y\in H_m$ for some $m$, so
-\[
+$$
 \{y:\mu(L_y^h)>0\}=\bigcup_{m=1}^{\infty}H_m
-\]
+$$
 is countable.
 The same argument applies to vertical lines.
 
@@ -155,56 +155,56 @@ The same argument applies to vertical lines.
 ::: {.pf-step #s4}
 
 For almost every horizontal line $L$, one has $\mu(L)=0$ and
-\[
+$$
 \int_K U_\mu\,ds<\infty
-\]
+$$
 for every compact $K\subseteq L$.
 
 ::: pf-proof
 
 Fix $N\ge1$.
 By step [](#s1){.pf-ref},
-\[
+$$
 \int_{Q_N}U_\mu(x+iy)\,dx\,dy<\infty.
-\]
+$$
 Tonelli's theorem therefore gives
-\[
+$$
 \int_{-N}^{N}
 \left(
 \int_{-N}^{N}U_\mu(x+iy)\,dx
 \right)dy<\infty.
-\]
+$$
 Hence there is a null set $E_N^h\subseteq[-N,N]$ such that
-\[
+$$
 \int_{-N}^{N}U_\mu(x+iy)\,dx<\infty
 \qquad
 (y\in[-N,N]\setminus E_N^h).
-\]
+$$
 Let
-\[
+$$
 E^h=
 \left(\bigcup_{N=1}^{\infty}E_N^h\right)
 \cup
 \{y:\mu(L_y^h)>0\}.
-\]
+$$
 By step [](#s3){.pf-ref}, $E^h$ has Lebesgue measure zero.
 
 Take $y\notin E^h$ and a compact set $K\subseteq L_y^h$.
 For sufficiently large $N$, one has $|y|\le N$ and
-\[
+$$
 K\subseteq [-N,N]+iy.
-\]
+$$
 Therefore
-\[
+$$
 \int_KU_\mu\,ds
 \le
 \int_{-N}^{N}U_\mu(x+iy)\,dx
 <\infty,
-\]
+$$
 and, by the definition of $E^h$,
-\[
+$$
 \mu(L_y^h)=0.
-\]
+$$
 Thus every horizontal line outside a null family has both required properties.
 
 :::
@@ -219,9 +219,9 @@ The analogous conclusion holds for almost every vertical line.
 
 Repeat step [](#s4){.pf-ref} with the order of the $x$- and $y$-integrations reversed.
 For each $N$, Tonelli gives a null set $E_N^v$ outside which
-\[
+$$
 \int_{-N}^{N}U_\mu(x+iy)\,dy<\infty.
-\]
+$$
 Intersecting the resulting countably many full-measure parameter sets and removing the countable family of vertical lines with positive $\mu$-measure from step [](#s3){.pf-ref} proves the claim.
 This completes part (b).
 
@@ -234,11 +234,11 @@ Now let $R$ be a rectangle whose four sides lie on lines having the conclusions 
 ::: {.pf-step #s6}
 
 One has
-\[
+$$
 \mu(\partial R)=0
 \qquad\text{and}\qquad
 \int_{\partial R}U_\mu(z)\,ds<\infty.
-\]
+$$
 
 ::: pf-proof
 
@@ -254,19 +254,19 @@ Summing over the four sides gives the second assertion.
 ::: {.pf-step #s7}
 
 The boundary integral of $S_\mu$ is absolutely convergent, and one may interchange the boundary integral with the $\mu$-integral:
-\[
+$$
 \int_{\partial R}S_\mu(z)\,dz
 =
 \int_{\CC}
 \left(
 \int_{\partial R}\frac{dz}{z-w}
 \right)d\mu(w).
-\]
+$$
 
 ::: pf-proof
 
 By Tonelli's theorem and step [](#s6){.pf-ref},
-\[
+$$
 \begin{aligned}
 \int_{\CC}
 \left(
@@ -281,13 +281,13 @@ By Tonelli's theorem and step [](#s6){.pf-ref},
 \int_{\partial R}U_\mu(z)\,ds(z)\\
 &<\infty.
 \end{aligned}
-\]
+$$
 Thus the kernel $(z,w)\mapsto(z-w)^{-1}$ is absolutely integrable on the product of $\partial R$ with $(\CC,\mu)$, where the boundary is parametrized side by side by arclength.
 Fubini's theorem therefore permits exchanging the two integrals.
 It also shows that $S_\mu(z)$ exists for arclength-almost every $z\in\partial R$ and
-\[
+$$
 |S_\mu(z)|\le U_\mu(z),
-\]
+$$
 so its contour integral is absolutely convergent.
 
 :::
@@ -297,7 +297,7 @@ so its contour integral is absolutely convergent.
 ::: {.pf-step #s8}
 
 For every $w\notin\partial R$,
-\[
+$$
 \frac1{2\pi i}
 \int_{\partial R}\frac{dz}{z-w}
 =
@@ -305,7 +305,7 @@ For every $w\notin\partial R$,
 1,&w\in R^\circ,\\
 0,&w\notin R.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
@@ -318,14 +318,14 @@ This is the winding-number form of Cauchy's integral theorem: the positively ori
 ::: pf-step
 
 Therefore
-\[
+$$
 \frac1{2\pi i}\int_{\partial R}S_\mu(z)\,dz=\mu(R).
-\]
+$$
 
 ::: pf-proof
 
 By steps [](#s7){.pf-ref} and [](#s8){.pf-ref}, and because step [](#s6){.pf-ref} gives $\mu(\partial R)=0$,
-\[
+$$
 \begin{aligned}
 \frac1{2\pi i}\int_{\partial R}S_\mu(z)\,dz
 &=
@@ -337,7 +337,7 @@ By steps [](#s7){.pf-ref} and [](#s8){.pf-ref}, and because step [](#s6){.pf-ref
 &=\mu(R^\circ)\\
 &=\mu(R).
 \end{aligned}
-\]
+$$
 The last equality again uses $\mu(\partial R)=0$.
 This proves part (c).
 

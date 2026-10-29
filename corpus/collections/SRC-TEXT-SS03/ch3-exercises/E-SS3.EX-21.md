@@ -28,22 +28,22 @@ Conclude that the slit plane $\CC - \{ ( - \infty , 0 ] \}$ (and more generally 
 
 ::: {.solution}
 (a) Let $\Omega$ be convex and fix $z_0\in\Omega$. For any closed curve $\gamma:[0,1]\to\Omega$, define
-\[
+$$
 H(s,t)=(1-s)\gamma(t)+sz_0,
 \qquad 0\le s,t\le1.
-\]
+$$
 By convexity, $H(s,t)\in\Omega$ for every $(s,t)$. Thus $H$ is a homotopy in $\Omega$ from $\gamma$ to the constant loop at $z_0$. Hence every closed curve is null-homotopic, so $\Omega$ is simply connected.
 
 (b) The same argument works for a star-shaped open set: by definition there is $z_0\in\Omega$ such that every segment from $z_0$ to $z\in\Omega$ lies in $\Omega$. Therefore the same formula
-\[
+$$
 H(s,t)=(1-s)\gamma(t)+sz_0
-\]
+$$
 contracts every loop to $z_0$.
 
 The slit plane
-\[
+$$
 \CC\setminus(-\infty,0]
-\]
+$$
 is star-shaped with respect to any positive real point, for example $1$: if $z$ is not on the nonpositive real axis, then the segment from $1$ to $z$ cannot cross that ray except possibly at its endpoint, which is excluded. Hence it is simply connected. Likewise a sector $\{z\ne0:\alpha<\arg z<\beta\}$ with $0<\beta-\alpha\le2\pi$ is star-shaped with respect to any point $c$ of its bisecting ray: every $z$ in the sector has argument within $(\beta-\alpha)/2\le\pi$ of $\arg c$, strictly less than $\pi$, so along the segment from $c$ to $z$ the argument moves monotonically between $\arg c$ and $\arg z$ and the segment avoids $0$. Hence every such sector is simply connected.
 
 (c) Other examples include discs, half-planes, strips, convex polygons with interior, and the whole plane. Each is convex (hence star-shaped), so part (a) applies.

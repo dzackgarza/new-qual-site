@@ -14,9 +14,9 @@ review: draft
 
 ::: {.problem}
 Compute
-\[
+$$
 \operatorname{Ext}^1_{\ZZ}(\QQ \oplus \ZZ \oplus \ZZ_3 \oplus \ZZ_7,\ \ZZ \oplus \ZZ_6 \oplus \ZZ_{21}).
-\]
+$$
 :::
 
 ::: {.solution}

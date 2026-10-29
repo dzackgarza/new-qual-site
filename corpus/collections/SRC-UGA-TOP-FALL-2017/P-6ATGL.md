@@ -32,9 +32,9 @@ Prove that the relative homology group $H_0(X,A)$ is trivial if and only if $A$ 
 
 ::: {.solution}
 Let
-\[
+$$
 i:A\hookrightarrow X
-\]
+$$
 be the inclusion.
 
 ::: pf
@@ -42,33 +42,33 @@ be the inclusion.
 ::: {.pf-step #s1}
 
 The relative long exact sequence identifies $H_0(X,A)$ with the cokernel of
-\[
+$$
 i_*:H_0(A;\ZZ)\longrightarrow H_0(X;\ZZ).
-\]
+$$
 
 ::: pf-proof
 
 The degree-zero part of the long exact sequence of the pair $(X,A)$ is
-\[
+$$
 H_0(A;\ZZ)
 \xrightarrow{i_*}
 H_0(X;\ZZ)
 \longrightarrow
 H_0(X,A;\ZZ)
 \longrightarrow 0.
-\]
+$$
 Exactness therefore gives
-\[
+$$
 H_0(X,A;\ZZ)
 \cong
 H_0(X;\ZZ)/\operatorname{im}i_*.
-\]
+$$
 Thus
-\[
+$$
 H_0(X,A;\ZZ)=0
 \quad\Longleftrightarrow\quad
 i_*\text{ is surjective}.
-\]
+$$
 
 :::
 
@@ -81,20 +81,20 @@ The map $i_*$ is surjective if and only if $A$ meets every path component of $X$
 ::: pf-proof
 
 For any space $Y$, its zeroth singular homology is canonically the free abelian group on its path components:
-\[
+$$
 H_0(Y;\ZZ)
 \cong
 \bigoplus_{C\in\pi_0^{\mathrm{path}}(Y)}\ZZ[C].
-\]
+$$
 If $D$ is a path component of $A$, then $D$ lies in a unique path component $C$ of $X$, and the inclusion induces
-\[
+$$
 i_*([D])=[C].
-\]
+$$
 Hence the image of $i_*$ is generated precisely by those basis elements $[C]$ for which $C\cap A\neq\varnothing$.
 Therefore $i_*$ is surjective exactly when
-\[
+$$
 C\cap A\neq\varnothing
-\]
+$$
 for every path component $C$ of $X$.
 
 :::
@@ -104,9 +104,9 @@ for every path component $C$ of $X$.
 ::: pf-step
 
 Consequently,
-\[
+$$
 H_0(X,A;\ZZ)=0
-\]
+$$
 if and only if $A$ intersects every path component of $X$.
 
 ::: pf-proof

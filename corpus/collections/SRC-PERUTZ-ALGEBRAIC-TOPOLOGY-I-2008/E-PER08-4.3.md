@@ -37,31 +37,31 @@ This exercise compares the following groups:
 - $\pi_1(\CC^2\setminus C)$, where $C=\{(X,Y):X^2=Y^3\}$ is the cuspidal cubic.
 
 1. Show that $a\mapsto sts$ and $b\mapsto ts$ define an isomorphism
-   \[
+   $$
    \langle a,b\mid a^2=b^3\rangle\xrightarrow{\sim}\langle s,t\mid sts=tst\rangle.
-   \]
+   $$
 
 2. With basepoint $\{-2,0,2\}\in C_3$, define loops
-   \[
+   $$
    \sigma(t)=\{-1-e^{\pi it},-1+e^{\pi it},2\},\qquad
    \tau(t)=\{-2,1-e^{\pi it},1+e^{\pi it}\}.
-   \]
+   $$
    If $s=[\sigma]$ and $t=[\tau]$, check that $sts=tst$, obtaining a homomorphism $\langle s,t\mid sts=tst\rangle\to B_3$.
 
 3. Let $\operatorname{Sym}^3_0(\CC)$ be the unordered triples $\{a,b,c\}$ with $a+b+c=0$.
    Show that
-   \[
+   $$
    \operatorname{Sym}^3(\CC)\cong \CC\times\operatorname{Sym}^3_0(\CC),
-   \]
+   $$
    and define a homeomorphism $\operatorname{Sym}^3_0(\CC)\to\CC^2$ by sending $\{a,b,c\}$ to $(x,y)$ such that
-   \[
+   $$
    (t-a)(t-b)(t-c)=t^3+xt+y.
-   \]
+   $$
    Verify that $a,b,c$ are distinct if and only if $4x^3+27y^2\ne0$.
    Deduce that
-   \[
+   $$
    C_3\cong\CC\times(\CC^2\setminus C)
-   \]
+   $$
    and hence $B_3\cong\pi_1(\CC^2\setminus C)$.
 
 4. Show that $\CC^2\setminus C$ is homotopy equivalent to $S^3\setminus K$.
@@ -71,11 +71,11 @@ This exercise compares the following groups:
 
 ::: {.solution}
 Set
-\[
+$$
 G=\langle a,b\mid a^2=b^3\rangle,
 \qquad
 H=\langle s,t\mid sts=tst\rangle.
-\]
+$$
 
 ::: pf
 
@@ -86,68 +86,68 @@ The assignments $a\mapsto sts$ and $b\mapsto ts$ define an isomorphism $G\cong H
 ::: pf-proof
 
 In $H$, use the braid relation once to compute
-\[
+$$
 (sts)^2=(tst)(sts)=tststs=(ts)^3.
-\]
+$$
 Hence the assignment
-\[
+$$
 \phi(a)=sts,
 \qquad
 \phi(b)=ts
-\]
+$$
 respects the relation $a^2=b^3$ and defines a homomorphism
-\[
+$$
 \phi:G\to H.
-\]
+$$
 
 Define elements of $G$ by
-\[
+$$
 s_0=ab^{-1},
 \qquad
 t_0=b^2a^{-1}.
-\]
+$$
 Then
-\[
+$$
 s_0t_0s_0
 =ab^{-1}b^2a^{-1}ab^{-1}
 =a,
-\]
+$$
 while
-\[
+$$
 t_0s_0t_0
 =b^2a^{-1}ab^{-1}b^2a^{-1}
 =b^3a^{-1}
 =a^2a^{-1}
 =a.
-\]
+$$
 Thus $s_0t_0s_0=t_0s_0t_0$, so there is a homomorphism
-\[
+$$
 \psi:H\to G,
 \qquad
 \psi(s)=ab^{-1},
 \quad
 \psi(t)=b^2a^{-1}.
-\]
+$$
 The preceding calculation gives
-\[
+$$
 \psi(\phi(a))=a,
 \qquad
 \psi(\phi(b))=\psi(ts)=b.
-\]
+$$
 Thus $\psi\phi=\operatorname{id}_G$.
 
 Conversely, inside $H$ put $A=sts$ and $B=ts$. Then
-\[
+$$
 AB^{-1}=sts(ts)^{-1}=s
-\]
+$$
 and
-\[
+$$
 B^2A^{-1}=(ts)^2(sts)^{-1}=t.
-\]
+$$
 Hence $s,t$ lie in the image of $\phi$, so $\phi$ is surjective. Since it also has the left inverse $\psi$, it is injective. Therefore
-\[
+$$
 \boxed{G\cong H}.
-\]
+$$
 
 :::
 
@@ -162,30 +162,30 @@ The loops $\sigma$ and $\tau$ satisfy the braid relation.
 The loop $\sigma$ performs a positive half-twist exchanging the two leftmost points $-2$ and $0$ while leaving $2$ fixed. The loop $\tau$ performs the corresponding positive half-twist exchanging the two rightmost points $0$ and $2$ while leaving $-2$ fixed.
 
 Draw the three trajectories in $[0,1]\times\CC$. The concatenation
-\[
+$$
 \sigma*\tau*\sigma
-\]
+$$
 has three successive adjacent positive crossings, left--right--left; the concatenation
-\[
+$$
 \tau*\sigma*\tau
-\]
+$$
 has right--left--right. These two embedded three-strand braids differ by the standard Reidemeister-III braid isotopy: slide the middle crossing past the crossing of the other two strands. During this isotopy no two points in a time slice collide, so it is a homotopy through loops in $C_3$.
 
 Consequently
-\[
+$$
 [\sigma][\tau][\sigma]
 =[\tau][\sigma][\tau]
-\]
+$$
 in $B_3$. Thus
-\[
+$$
 s\longmapsto[\sigma],
 \qquad
 t\longmapsto[\tau]
-\]
+$$
 defines a homomorphism
-\[
+$$
 \eta:H\to B_3.
-\]
+$$
 
 :::
 
@@ -207,30 +207,30 @@ A generic homotopy between two generic braids can itself be perturbed so that on
 - a triple-crossing event, which replaces $sts$ by $tst$ or the inverse relation.
 
 For three strands there are no distant crossings, so no commuting relation is needed. Therefore the class of the crossing word in
-\[
+$$
 H=\langle s,t\mid sts=tst\rangle
-\]
+$$
 depends only on the homotopy class of the loop in $C_3$. This defines a homomorphism
-\[
+$$
 \omega:B_3\to H.
-\]
+$$
 
 For the explicit elementary half-twists $\sigma,\tau$, the crossing words are respectively $s,t$. Thus
-\[
+$$
 \omega\eta(s)=s,
 \qquad
 \omega\eta(t)=t,
-\]
+$$
 so $\omega\eta=\operatorname{id}_H$.
 
 Conversely, straightening a generic braid between successive crossing times gives a homotopy to the concatenation of the corresponding elementary half-twists. Hence applying $\eta$ to its crossing word recovers its class in $B_3$, so
-\[
+$$
 \eta\omega=\operatorname{id}_{B_3}.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{H\cong B_3}.
-\]
+$$
 
 :::
 
@@ -239,29 +239,29 @@ Therefore
 ::: {.pf-step #s4}
 
 Splitting off the center of mass gives
-\[
+$$
 \operatorname{Sym}^3(\CC)\cong
 \CC\times\operatorname{Sym}^3_0(\CC).
-\]
+$$
 
 ::: pf-proof
 
 For an unordered triple $Q=\{a,b,c\}$ define its mean
-\[
+$$
 m(Q)=\frac{a+b+c}{3}
-\]
+$$
 and its centered triple
-\[
+$$
 Q_0=\{a-m(Q),b-m(Q),c-m(Q)\}.
-\]
+$$
 Then the elements of $Q_0$ sum to zero. The map
-\[
+$$
 Q\longmapsto(m(Q),Q_0)
-\]
+$$
 is continuous and has continuous inverse
-\[
+$$
 (m,\{u,v,w\})\longmapsto\{m+u,m+v,m+w\}.
-\]
+$$
 Hence it is a homeomorphism.
 
 :::
@@ -275,28 +275,28 @@ Centered unordered triples are homeomorphic to $\CC^2$ by polynomial coefficient
 ::: pf-proof
 
 If $a+b+c=0$, then
-\[
+$$
 (t-a)(t-b)(t-c)
 =t^3+(ab+ac+bc)t-abc.
-\]
+$$
 Thus define
-\[
+$$
 h:\operatorname{Sym}^3_0(\CC)\to\CC^2,
 \qquad
 \{a,b,c\}\longmapsto(x,y)
-\]
+$$
 with
-\[
+$$
 x=ab+ac+bc,
 \qquad
 y=-abc.
-\]
+$$
 This map is continuous.
 
 It is bijective by the fundamental theorem of algebra: every monic cubic
-\[
+$$
 t^3+xt+y
-\]
+$$
 has an unordered multiset of three complex roots, whose sum is zero because the $t^2$ coefficient vanishes. The inverse is continuous because the unordered multiset of roots of a monic polynomial depends continuously on its coefficients. Equivalently, the elementary-symmetric-polynomial map realizes the symmetric product $\operatorname{Sym}^3(\CC)$ homeomorphically as the coefficient space of monic cubics. Hence $h$ is a homeomorphism.
 
 :::
@@ -310,46 +310,46 @@ The collision locus is the cusp discriminant.
 ::: pf-proof
 
 A monic cubic
-\[
+$$
 t^3+xt+y
-\]
+$$
 has a repeated root exactly when it has a common root with its derivative
-\[
+$$
 3t^2+x.
-\]
+$$
 Its discriminant is
-\[
+$$
 \Delta=-4x^3-27y^2.
-\]
+$$
 Therefore its three roots are distinct exactly when
-\[
+$$
 4x^3+27y^2\neq0.
-\]
+$$
 
 Let
-\[
+$$
 D_{\mathrm{cusp}}=\{(x,y):4x^3+27y^2=0\}.
-\]
+$$
 Choose complex constants $\lambda,\mu\neq0$ with
-\[
+$$
 \lambda^2=27,
 \qquad
 \mu^3=-4.
-\]
+$$
 The invertible linear map
-\[
+$$
 (x,y)\longmapsto(X,Y)=(\lambda y,\mu x)
-\]
+$$
 sends $D_{\mathrm{cusp}}$ onto
-\[
+$$
 C=\{(X,Y):X^2=Y^3\},
-\]
+$$
 because
-\[
+$$
 X^2=27y^2,
 \qquad
 Y^3=-4x^3.
-\]
+$$
 Thus the two cusp complements are homeomorphic.
 
 :::
@@ -359,26 +359,26 @@ Thus the two cusp complements are homeomorphic.
 ::: {.pf-step #s7}
 
 Therefore
-\[
+$$
 C_3\cong\CC\times(\CC^2\setminus C)
-\]
+$$
 and
-\[
+$$
 B_3\cong\pi_1(\CC^2\setminus C).
-\]
+$$
 
 ::: pf-proof
 
 The configuration space $C_3$ is the open subset of $\operatorname{Sym}^3(\CC)$ consisting of triples with distinct entries. By step [](#s4){.pf-ref}, translation by the mean does not affect whether entries are distinct. By steps [](#s5){.pf-ref} and [](#s6){.pf-ref}, the centered distinct triples correspond exactly to the complement of the discriminant cusp, which is linearly homeomorphic to $\CC^2\setminus C$. Hence
-\[
+$$
 C_3\cong\CC\times(\CC^2\setminus C).
-\]
+$$
 Since $\CC$ is contractible, projection onto the second factor is a homotopy equivalence, so
-\[
+$$
 B_3=\pi_1(C_3)
 \cong
 \pi_1(\CC^2\setminus C).
-\]
+$$
 
 :::
 
@@ -391,47 +391,47 @@ The cusp complement strongly deformation retracts onto the complement of its lin
 ::: pf-proof
 
 The cusp equation
-\[
+$$
 X^2=Y^3
-\]
+$$
 is invariant under the positive weighted scaling
-\[
+$$
 \rho\cdot(X,Y)=(\rho^3X,\rho^2Y),
 \qquad \rho>0.
-\]
+$$
 Indeed,
-\[
+$$
 (\rho^3X)^2=(\rho^2Y)^3
 \iff
 X^2=Y^3.
-\]
+$$
 
 For each nonzero $(X,Y)$ there is a unique $r=r(X,Y)>0$ satisfying
-\[
+$$
 r^6|X|^2+r^4|Y|^2=1,
-\]
+$$
 because the left side is a strictly increasing continuous function of $r$ from $0$ to $\infty$. The implicit inverse is continuous in $(X,Y)$.
 
 For $u\in[0,1]$, set
-\[
+$$
 r_u=(1-u)+u\,r(X,Y)>0
-\]
+$$
 and
-\[
+$$
 H_u(X,Y)=(r_u^3X,r_u^2Y).
-\]
+$$
 Weighted scaling preserves both $C$ and its complement, so $H_u$ stays in $\CC^2\setminus C$ whenever it starts there. At $u=1$,
-\[
+$$
 |r^3X|^2+|r^2Y|^2=1,
-\]
+$$
 so the endpoint lies on $S^3$. If $(X,Y)\in S^3$, uniqueness gives $r=1$, hence $H_u(X,Y)=(X,Y)$ for all $u$.
 
 Thus $H$ is a strong deformation retraction
-\[
+$$
 \CC^2\setminus C
 \searrow
 S^3\setminus(C\cap S^3).
-\]
+$$
 
 :::
 
@@ -444,50 +444,50 @@ The link $C\cap S^3$ is a trefoil isotopic to $K$.
 ::: pf-proof
 
 Parametrize the cusp by
-\[
+$$
 (X,Y)=(u^3,u^2).
-\]
+$$
 On $S^3$ one has
-\[
+$$
 |u|^6+|u|^4=1,
-\]
+$$
 so $|u|=r_0$ is a fixed positive number. Writing $u=r_0e^{i\theta}$ gives
-\[
+$$
 C\cap S^3
 =
 \left\{
 (r_0^3e^{3i\theta},r_0^2e^{2i\theta})
 :\theta\in\RR/2\pi\ZZ
 \right\}.
-\]
+$$
 After swapping the two complex coordinates, this becomes a $(2,3)$-torus knot
-\[
+$$
 (r_0^2e^{2i\theta},r_0^3e^{3i\theta}).
-\]
+$$
 Vary the two positive radii continuously along the family of Clifford tori
-\[
+$$
 |z|=R_1,
 \qquad
 |w|=R_2,
 \qquad
 R_1^2+R_2^2=1,
-\]
+$$
 from $(R_1,R_2)=(r_0^2,r_0^3)$ to $(1/\sqrt2,1/\sqrt2)$. This gives an isotopy through embedded $(2,3)$-torus knots. By the isotopy extension theorem it extends to an ambient isotopy of $S^3$.
 
 The terminal knot is
-\[
+$$
 \theta\longmapsto
 \left(\frac1{\sqrt2}e^{2i\theta},
       \frac1{\sqrt2}e^{3i\theta}\right),
-\]
+$$
 which is the $(2,3)$ torus knot. It is $K$ or the mirror image of $K$, and a reflection of $S^3$ identifies the complements of a knot and its mirror image. Therefore
-\[
+$$
 S^3\setminus(C\cap S^3)\cong S^3\setminus K.
-\]
+$$
 Combining with step [](#s8){.pf-ref} gives
-\[
+$$
 \boxed{\CC^2\setminus C\simeq S^3\setminus K}.
-\]
+$$
 
 :::
 
@@ -500,7 +500,7 @@ Going around the full circle gives an automorphism of $\pi_1(S^3\setminus K)$.
 ::: pf-proof
 
 The successive arrows are:
-\[
+$$
 \pi_1(S^3\setminus K)
 \xrightarrow{\cong}
 G
@@ -512,13 +512,13 @@ B_3
 \pi_1(\CC^2\setminus C)
 \xrightarrow{\cong}
 \pi_1(S^3\setminus K).
-\]
+$$
 The first arrow is the van Kampen presentation of the trefoil group used in [[E-PER08-4.2]]. The second is an isomorphism by step [](#s1){.pf-ref}. The third is an isomorphism by step [](#s3){.pf-ref}. The fourth is an isomorphism by step [](#s7){.pf-ref}. The fifth is an isomorphism by steps [](#s8){.pf-ref} and [](#s9){.pf-ref}.
 
 A composition of isomorphisms is an isomorphism. Since the source and target of the full composite are the same group, the resulting endomorphism of
-\[
+$$
 \pi_1(S^3\setminus K)
-\]
+$$
 is an automorphism.
 
 Consequently all five groups listed in the problem are mutually isomorphic.

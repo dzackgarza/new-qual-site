@@ -28,16 +28,16 @@ Show that $\Omega X$ is an H-space with multiplication the composition of loops.
 :::
 
 ::: {.solution}
-The based loop space \(\Omega X\) has multiplication by concatenation:
-\[
+The based loop space $\Omega X$ has multiplication by concatenation:
+$$
 (\alpha*\beta)(t)=
 \begin{cases}
 \alpha(2t),&0\le t\le\tfrac12,\\
 \beta(2t-1),&\tfrac12\le t\le1.
 \end{cases}
-\]
-The constant loop is a two-sided unit up to the standard reparametrization homotopies. Concatenating three loops in the two possible parenthesizations differs only by a piecewise-linear reparametrization of \(I\), hence is homotopic through based loops. Thus multiplication is associative up to homotopy. Reversal of loops gives a homotopy inverse. Therefore
-\[
+$$
+The constant loop is a two-sided unit up to the standard reparametrization homotopies. Concatenating three loops in the two possible parenthesizations differs only by a piecewise-linear reparametrization of $I$, hence is homotopic through based loops. Thus multiplication is associative up to homotopy. Reversal of loops gives a homotopy inverse. Therefore
+$$
 \boxed{\Omega X\text{ is an H-space}.}
-\]
+$$
 :::

@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Evaluate the following limit:
 
-\[
+$$
 \lim_{n \to \infty} \sum_{k=1}^{n} \left[ \frac{k}{n^2} - \frac{k^2}{n^3} \right]
-\]
+$$
 
 (A) $\frac{2}{3}$
 (B) $\frac{1}{2}$

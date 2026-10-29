@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let $A=(a_{ij})$ be an $n\times n$ complex matrix satisfying
-\[
+$$
 |a_{ii}|>\sum_{j\ne i}|a_{ij}|
-\]
+$$
 for every $1\le i\le n$.
 Prove that $A$ is invertible.
 :::

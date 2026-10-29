@@ -34,13 +34,13 @@ The function $f$ must be constant.
 ::: pf-proof
 
 Suppose $f$ were nonconstant. By the open mapping theorem, the image
-\[
+$$
 f(\CC)
-\]
+$$
 would be an open subset of $\CC$. By hypothesis,
-\[
+$$
 f(\CC)\subseteq\RR.
-\]
+$$
 But the real axis contains no nonempty open subset of $\CC$. This is a
 contradiction. Hence $f$ is constant.
 
@@ -51,22 +51,22 @@ contradiction. Hence $f$ is constant.
 ::: {.pf-step #s1-2}
 
 Therefore the image of the imaginary axis is a singleton
-\[
+$$
 \boxed{\{c\}\qquad\text{for some arbitrary }c\in\RR}.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref} there is $c\in\RR$ such that
-\[
+$$
 f(z)=c
 \qquad(z\in\CC).
-\]
+$$
 Hence
-\[
+$$
 f(i\RR)=\{c\}.
-\]
+$$
 Conversely, every real constant function is entire and has this image.
 
 :::

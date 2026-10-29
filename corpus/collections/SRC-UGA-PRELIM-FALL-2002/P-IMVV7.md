@@ -25,21 +25,21 @@ Derive a formula for the number of one-to-one functions from a $k$-element set t
 
 ::: {.solution}
 A permutation of $k$ elements chosen from an $n$-element set is an ordered list of $k$ distinct elements. Its number is
-\[
+$$
 P(n,k)=n(n-1)\cdots(n-k+1)=\frac{n!}{(n-k)!}.
-\]
+$$
 
 A combination of $k$ elements from an $n$-element set is an unordered $k$-element subset. Its number is
-\[
+$$
 \binom nk=\frac{n!}{k!(n-k)!}.
-\]
+$$
 
 Let $X$ be a $k$-element set and $Y$ an $n$-element set. Fix an ordering $x_1,\ldots,x_k$ of $X$. An injective function $f:X\to Y$ is determined uniquely by the ordered list
-\[
+$$
 (f(x_1),\ldots,f(x_k)),
-\]
+$$
 whose entries must be distinct. Conversely every ordered list of $k$ distinct elements of $Y$ defines an injection. Therefore the number of injections is
-\[
+$$
 P(n,k)=\frac{n!}{(n-k)!}.
-\]
+$$
 :::

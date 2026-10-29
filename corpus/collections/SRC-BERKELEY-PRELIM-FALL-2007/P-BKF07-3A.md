@@ -25,10 +25,10 @@ audit:
 ---
 
 ::: {.problem}
-Let \(A\) be an \(n\times n\) Hermitian matrix and let \(x\in\CC^n\). Prove that
-\[
+Let $A$ be an $n\times n$ Hermitian matrix and let $x\in\CC^n$. Prove that
+$$
 A^2x=0\quad\Longrightarrow\quad Ax=0.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -37,9 +37,9 @@ The exactness axiom fails for both constructions.
 ::: {.pf-step #s1}
 
 For the pair $(D^2,S^1)$ the integral long exact sequence contains
-\[
+$$
 0=H_2(D^2)\longrightarrow H_2(D^2,S^1)\xrightarrow{\partial}H_1(S^1)\longrightarrow H_1(D^2)=0,
-\]
+$$
 so $\partial:\ZZ\to\ZZ$ is an isomorphism.
 
 ::: pf-proof
@@ -57,18 +57,18 @@ The torsion functors are not exact on this pair.
 ::: pf-proof
 
 All four groups in step [](#s1){.pf-ref} are torsion-free, hence
-\[
+$$
 T_2(D^2,S^1)=T_1(S^1)=0.
-\]
+$$
 This example alone does not detect failure, so instead use the Moore-space pair $(X,A)$ obtained from $A=S^1$ by attaching a $2$-cell by a degree-$m$ map, $m>1$. Then
-\[
+$$
 H_2(X,A)\cong\ZZ\xrightarrow{\partial=m}\ZZ\cong H_1(A)
 \longrightarrow H_1(X)\cong\ZZ_m\longrightarrow0.
-\]
+$$
 Passing to torsion gives
-\[
+$$
 0\longrightarrow0\longrightarrow\ZZ_m\longrightarrow0,
-\]
+$$
 which is not exact at $T_1(X)=\ZZ_m$: the incoming image is $0$ while the outgoing kernel is all of $\ZZ_m$.
 
 :::
@@ -82,9 +82,9 @@ The mod-torsion functors are not exact on the same pair.
 ::: pf-proof
 
 Passing the displayed integral sequence to quotients by torsion gives
-\[
+$$
 \ZZ\xrightarrow{m}\ZZ\longrightarrow0.
-\]
+$$
 Exactness at the second $\ZZ$ would require $m\ZZ=\ZZ$, false for $m>1$.
 
 :::

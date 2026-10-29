@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Which of the following depicts integral curves of the differential equation
 
-\[
+$$
 \left(\frac{dy}{dx}\right)^2 = \frac{x}{y}\left(2\frac{dy}{dx} - \frac{x}{y}\right)?
-\]
+$$
 
 The five graphical choices (A)–(E) appear on the source page:
 

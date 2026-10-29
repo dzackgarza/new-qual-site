@@ -28,9 +28,9 @@ audit:
 
 ::: {.problem}
 Compute
-\[
+$$
 \lim_{x\to0}\frac{d^4}{dx^4}\left(\frac{x}{\sin x}\right).
-\]
+$$
 :::
 
 ::: {.solution}

@@ -30,34 +30,34 @@ $\cos(\pi z)/\sin^2(\pi z)$, as written here.
 
 ::: {.solution}
 The series
-\[
+$$
 S(z)=\sum_{n\in\ZZ}\frac{(-1)^n}{(z-n)^2}
-\]
+$$
 converges normally on compact subsets of $\CC\setminus\ZZ$.
 At $z=n$,
-\[
+$$
 \pi^2\frac{\cos\pi z}{\sin^2\pi z}
 =\frac{(-1)^n}{(z-n)^2}+O(1),
-\]
+$$
 so
-\[
+$$
 H(z)=\pi^2\frac{\cos\pi z}{\sin^2\pi z}-S(z)
-\]
+$$
 has removable singularities at all integers and hence extends to an entire
 function.
 
 Both terms are anti-periodic with period $1$:
-\[
+$$
 H(z+1)=-H(z).
-\]
+$$
 It therefore suffices to bound $H$ on a vertical strip of width $1$. Away
 from small disks around the integers, normal convergence bounds $S$ uniformly,
 and the trigonometric term is bounded there; near the integers the singular
 parts cancel. Thus $H$ is bounded on a fundamental strip and hence, by
 anti-periodicity, on all of $\CC$. Liouville's theorem gives that $H$ is
 constant, and $H(z+1)=-H(z)$ forces that constant to be $0$. Therefore
-\[
+$$
 \boxed{\pi^2\frac{\cos\pi z}{\sin^2\pi z}
 =\sum_{n\in\ZZ}\frac{(-1)^n}{(z-n)^2}.}
-\]
+$$
 :::

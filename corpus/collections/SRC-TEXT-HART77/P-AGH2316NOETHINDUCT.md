@@ -40,19 +40,19 @@ In a noetherian topological space, every nonempty collection of closed subsets h
 A topological space is noetherian exactly when every descending chain of closed subsets stabilizes.
 
 Let $\mathcal C$ be a nonempty collection of closed subsets.  If it had no minimal element, choose
-\[
+$$
 Y_0\in\mathcal C.
-\]
+$$
 Since $Y_0$ is not minimal, choose
-\[
+$$
 Y_1\in\mathcal C,
 \qquad
 Y_1\subsetneq Y_0.
-\]
+$$
 Inductively one obtains a strictly descending chain
-\[
+$$
 Y_0\supsetneq Y_1\supsetneq Y_2\supsetneq\cdots,
-\]
+$$
 contradicting noetherianity.  Hence a minimal member exists.
 :::
 
@@ -61,15 +61,15 @@ contradicting noetherianity.  Hence a minimal member exists.
 ::: pf-step
 Suppose, for contradiction, that $\mcp$ does not hold for every closed subset of $X$.
 Let
-\[
+$$
 \mathcal B
 =
 \{Y\subseteq X:Y\text{ closed and }\mcp(Y)\text{ fails}\}.
-\]
+$$
 Choose a minimal member
-\[
+$$
 Y\in\mathcal B.
-\]
+$$
 
 ::: pf-proof
 Under the contradictory assumption, $\mathcal B$ is nonempty.  Step [](#noetherian-has-minimal-closed){.pf-ref} therefore supplies a minimal member.
@@ -79,9 +79,9 @@ Under the contradictory assumption, $\mathcal B$ is nonempty.  Step [](#noetheri
 
 ::: {.pf-step #proper-subsets-of-y-satisfy-p}
 Every proper closed subset
-\[
+$$
 Z\subsetneq Y
-\]
+$$
 satisfies $\mcp$.
 
 ::: pf-proof

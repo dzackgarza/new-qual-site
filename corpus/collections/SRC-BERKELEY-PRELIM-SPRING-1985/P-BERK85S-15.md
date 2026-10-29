@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 \zeta=e^{2\pi i/7}
-\]
+$$
 and set
-\[
+$$
 \alpha=\zeta+\zeta^{-1}.
-\]
+$$
 Find a cubic polynomial with integer coefficients having $\alpha$ as a root.
 :::
 

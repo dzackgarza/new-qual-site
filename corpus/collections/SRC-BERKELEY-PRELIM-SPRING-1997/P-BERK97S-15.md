@@ -20,15 +20,15 @@ audit:
 
 ::: {.problem}
 Let $P,Q$ be $n\times n$ matrices satisfying
-\[
+$$
 P^2=P,
 \qquad
 Q^2=Q,
-\]
+$$
 and suppose
-\[
+$$
 I-(P+Q)
-\]
+$$
 is invertible. Prove that $P$ and $Q$ have the same rank.
 :::
 

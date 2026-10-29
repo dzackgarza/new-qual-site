@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 If $w = f(x, y)$ is a solution of the partial differential equation
 
-\[
+$$
 2\frac{\partial w}{\partial x} - 3\frac{\partial w}{\partial y} = 0
-\]
+$$
 
 then $w$ could equal
 

@@ -50,9 +50,9 @@ Since $R$ is a PID, step [](#s1){.pf-ref} gives $I=(b)$ for some $b\in R$. Membe
 ::: {.pf-step #s3}
 
 The chain stabilizes at $n$:
-\[
+$$
 \boxed{(a_j)=(a_n)\quad\text{for all }j\geq n}.
-\]
+$$
 
 ::: pf-proof
 

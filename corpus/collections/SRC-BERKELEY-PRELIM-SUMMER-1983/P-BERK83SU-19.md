@@ -24,13 +24,13 @@ audit:
 
 ::: {.problem}
 Compute the area of the image of the unit disk
-\[
+$$
 \{z\in\CC:|z|<1\}
-\]
+$$
 under
-\[
+$$
 f(z)=z+\frac{z^2}{2}.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -31,38 +31,38 @@ where in the case $\alpha = 0$ the expression on the right is understood as the 
 
 ::: {.solution}
 Let $r=|\alpha|$. Since
-\[
+$$
 \psi_\alpha'(z)
 =-\frac{1-r^2}{(1-\overline\alpha z)^2},
-\]
+$$
 and $\psi_\alpha$ is an automorphism of $\DD$, the change-of-variables formula for area gives
-\[
+$$
 \iint_{\DD}|\psi_\alpha'(z)|^2\,dx\,dy
 =\operatorname{Area}(\psi_\alpha(\DD))
 =\pi.
-\]
+$$
 Therefore
-\[
+$$
 \frac1\pi\iint_{\DD}|\psi_\alpha'|^2\,dx\,dy=1.
-\]
+$$
 
 For the second integral, rotate coordinates so that $\alpha=r\ge0$. In polar coordinates $z=\rho e^{i\theta}$,
-\[
+$$
 \frac1\pi\iint_{\DD}|\psi_\alpha'(z)|\,dx\,dy
 =\frac{1-r^2}{\pi}
 \int_0^1\int_0^{2\pi}
 \frac{\rho\,d\theta\,d\rho}{|1-r\rho e^{i\theta}|^2}.
-\]
+$$
 The Poisson-kernel identity gives, for $0\le r\rho<1$,
-\[
+$$
 \int_0^{2\pi}\frac{d\theta}{1-2r\rho\cos\theta+r^2\rho^2}
 =\frac{2\pi}{1-r^2\rho^2}.
-\]
+$$
 Hence
-\[
+$$
 \frac1\pi\iint_{\DD}|\psi_\alpha'|
 =2(1-r^2)\int_0^1\frac{\rho}{1-r^2\rho^2}\,d\rho
 =\frac{1-r^2}{r^2}\log\frac1{1-r^2}.
-\]
+$$
 As $r\to0$, the right-hand side tends to $1$, which agrees with $\psi_0(z)=-z$ and $|\psi_0'|=1$.
 :::

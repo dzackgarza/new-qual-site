@@ -30,8 +30,8 @@ Show that if $A$ is closed in $Y$ and $Y$ is closed in $X$, then $A$ is closed i
 
 ::: {.solution}
 Since $A$ is closed in the subspace $Y$, there is a closed set $C$ of $X$ with
-\[
+$$
 A=Y\cap C.
-\]
+$$
 Because $Y$ is closed in $X$, both $Y$ and $C$ are closed in $X$, hence so is their intersection $A$.
 :::

@@ -30,27 +30,27 @@ Use the transfer sequence for the covering $S^\infty \to \RP^\infty$ to compute 
 
 ::: {.solution}
 Let
-\[
+$$
 p:S^\infty\longrightarrow\RP^\infty
-\]
+$$
 be the antipodal double cover, and use $\ZZ_2$ coefficients throughout. Hatcher's transfer sequence is
-\[
+$$
 \cdots\to H_n(\RP^\infty)
 \overset{\tau_*}{\longrightarrow}H_n(S^\infty)
 \overset{p_*}{\longrightarrow}H_n(\RP^\infty)
 \overset{\delta}{\longrightarrow}H_{n-1}(\RP^\infty)\to\cdots .
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 Since $S^\infty$ is contractible,
-\[
+$$
 H_n(S^\infty;\ZZ_2)=0\quad(n>0),
 \qquad
 H_0(S^\infty;\ZZ_2)=\ZZ_2.
-\]
+$$
 
 ::: pf-proof
 
@@ -63,20 +63,20 @@ The infinite sphere $S^\infty$ is contractible, so it has the homology of a poin
 ::: {.pf-step #s2}
 
 For every $n\ge2$, the connecting map is an isomorphism
-\[
+$$
 \delta:H_n(\RP^\infty;\ZZ_2)
 \xrightarrow{\cong}
 H_{n-1}(\RP^\infty;\ZZ_2).
-\]
+$$
 
 ::: pf-proof
 
 The portion of the transfer sequence around these groups is
-\[
+$$
 0\longrightarrow H_n(\RP^\infty)
 \overset{\delta}{\longrightarrow}H_{n-1}(\RP^\infty)
 \longrightarrow0,
-\]
+$$
 since the adjacent positive-dimensional homology groups of $S^\infty$ vanish.
 
 :::
@@ -86,19 +86,19 @@ since the adjacent positive-dimensional homology groups of $S^\infty$ vanish.
 ::: {.pf-step #s3}
 
 The same conclusion holds for $n=1$:
-\[
+$$
 H_1(\RP^\infty;\ZZ_2)\cong H_0(\RP^\infty;\ZZ_2)\cong\ZZ_2.
-\]
+$$
 
 ::: pf-proof
 
 At the bottom of the transfer sequence we have
-\[
+$$
 0\to H_1(\RP^\infty)
 \overset{\delta}{\longrightarrow}H_0(\RP^\infty)
 \overset{\tau_*}{\longrightarrow}H_0(S^\infty)
 \overset{p_*}{\longrightarrow}H_0(\RP^\infty)\to0.
-\]
+$$
 Both spaces are connected, so $p_*$ is the identity isomorphism on $H_0\cong\ZZ_2$. Exactness therefore forces $\tau_*=0$ and $\delta$ to be an isomorphism.
 
 :::
@@ -108,9 +108,9 @@ Both spaces are connected, so $p_*$ is the identity isomorphism on $H_0\cong\ZZ_
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{H_n(\RP^\infty;\ZZ_2)\cong\ZZ_2\quad\text{for every }n\ge0.}
-\]
+$$
 
 ::: pf-proof
 

@@ -35,16 +35,16 @@ Describe the map $g$ by an explicit formula.
 
 ::: {.solution}
 **Part a**: That $f: \CC\smz\to \DD\smz$ is injective: compute the derivative as
-\[
+$$
 f'(z) = {1\over 2}\qty{1 - {1\over z^2}}
-,\]
+,$$
 which only vanishes at $z=\pm 1$.
 Away from 0 in $\DD$, $f'$ is nonzero and continuous, so by the inverse function theorem $f$ is a local homeomorphism onto its image, and in particular is injective.
 
 The images of circles: parameterize one as $\gamma(t) = Re^{it}$ for $t\in [-\pi, \pi]$.
 Note that if $R=1$, $f(\gamma(t)) = {1\over 2}\qty{e^{it} + e^{-it}} = \cos(t)$, so as $t$ increases from $-\pi\to \pi$, the interval $[-1, 1]$ is covered twice.
 For $0<R<1$,
-\[
+$$
 f(\gamma(t))
 &= {1\over 2}\qty{ Re^{it} + {1\over Re^{it}}} \\
 &= {1\over 2}\qty{Re^{it} + \inverseof{R} e^{-it} } \\
@@ -52,11 +52,11 @@ f(\gamma(t))
 &= {1\over 2}\qty{R\cos(t) + iR\sin(t) + \inverseof{R}\cos(t) - i\inverseof{R}\sin(-t) } \\
 &= {1\over 2}\qty{R+\inverseof{R}}\cos(t) + i{1\over 2}\qty{R-\inverseof{R}}\sin(t) \\
 &\definedas H_R \cos(t) + iV_R\sin(t)
-,\]
+,$$
 which is generally the equation of an ellipse of horizontal radius $H_R$ and vertical radius $V_R$. As $R$ varies, these sweep out ellipses of vertical radii from 0 to $\infty$. One can compute the foci: their distance from $z=0$ is given by $c$, where
-\[
+$$
 c^2 = H_R^2 - V_R^2 = {1\over 4}(R+\inverseof{R})^2 - {1\over 4}(R-\inverseof{R})^2 = 1
-,\]
+,$$
 so the foci are all at $\pm 1\in \RR$. One can check that these are clockwise when $0<R<1$ and counterclockwise when $R>1$.
 
 > In general, you take the coefficient for the major axis squared minus that of the minor axis squared.
@@ -73,13 +73,13 @@ By part 1, the images of circles of radius $R$ are ellipses, and these sweep out
 
 To be explicit, one can just solve for the two preimages.
 Setting $w=f(z)$ and solving for $z$ yields
-\[
+$$
 w &= {1\over 2}\qty{z + {1\over z}} \\
 \implies 2wz &= z^2 + 1 \\
 \implies z^2 - 2wz + 1 &= 0 \\
 \implies z &= {2w \pm \sqrt{4w^2 -4} \over 2} \\
 \implies z &= w\pm \sqrt{w^2-1}
-,\]
+,$$
 where in order to define $\sqrt{w^2-1}$, one needs a branch cut for $\Log$ along $[-1, 1]$, which is precisely what we're deleting from the image.
 
 **Part c**: as in a usual conformal map problem, find a map to $\CC\sm[-1,1]\to \DD$.
@@ -92,17 +92,17 @@ where in order to define $\sqrt{w^2-1}$, one needs a branch cut for $\Log$ along
 - Apply the rotated Cayley map $z\mapsto {z-1\over z+1}$ to map this to $\DD$.
 
 This composes to
-\[
+$$
 g(z) &= {\sqrt{z+1\over z-1}  -1 \over \sqrt{z+1\over z-1} +1} \\
 &= { \qty{ \sqrt{z+1} - \sqrt{z-1}}^2 \over (z+1)-(z-1) } \\
 &= z - \sqrt{z^2-1}
-,\]
+,$$
 and checking that it has the right inverse:
-\[
+$$
 w &= z-\sqrt{z^2-1} \\
 \implies (z-w)^2 &= z^2-1 \\
 \implies w^2+1 &= 2wz \\
 \implies z = {1\over 2}\qty{w + {1\over w}}
-.\]
+.$$
 
 :::

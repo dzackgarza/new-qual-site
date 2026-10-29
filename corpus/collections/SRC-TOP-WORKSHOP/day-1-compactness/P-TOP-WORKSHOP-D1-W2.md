@@ -65,9 +65,9 @@ The family $\mathcal U$ covers $A$, while $X\setminus A$ covers every point of $
 ::: {.pf-step #s3}
 
 There are finitely many sets $U_1,\dots,U_n\in\mathcal U$ such that
-\[
+$$
 X\subseteq U_1\cup\cdots\cup U_n\cup(X\setminus A).
-\]
+$$
 
 ::: pf-proof
 
@@ -86,9 +86,9 @@ The sets $U_1,\dots,U_n$ cover $A$.
 
 Intersect the inclusion in step [](#s3){.pf-ref} with $A$.
 Since $A\cap(X\setminus A)=\varnothing$, one obtains
-\[
+$$
 A\subseteq U_1\cup\cdots\cup U_n.
-\]
+$$
 
 :::
 

@@ -25,13 +25,13 @@ audit:
 
 ::: {.problem}
 For each $k>0$, let $X_k$ be the set of analytic functions $f$ on the open unit disk $\DD$ such that
-\[
+$$
 \sup_{z\in\DD}(1-|z|)^k|f(z)|<\infty.
-\]
+$$
 Prove that
-\[
+$$
 f\in X_k\quad\Longleftrightarrow\quad f'\in X_{k+1}.
-\]
+$$
 :::
 
 ::: {.solution}

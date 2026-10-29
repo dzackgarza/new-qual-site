@@ -26,27 +26,27 @@ Describe the deck transformations from one of the universal covers above.
 :::
 
 ::: {.solution}
-A \dfn{deck transformation} of a covering \(p:E\to B\) is a homeomorphism
-\[
+A \dfn{deck transformation} of a covering $p:E\to B$ is a homeomorphism
+$$
 \phi:E\to E
-\]
+$$
 satisfying
-\[
+$$
 p\circ\phi=p.
-\]
+$$
 Thus it permutes each fiber while preserving the covering projection.
 
 For the universal cover
-\[
+$$
 p:\RR\to S^1,
 \qquad p(t)=e^{2\pi i t},
-\]
+$$
 every integer translation
-\[
+$$
 T_n(t)=t+n,\qquad n\in\ZZ,
-\]
-is a deck transformation because \(e^{2\pi i(t+n)}=e^{2\pi it}\). Conversely, if \(T\) is a deck transformation, then \(T(0)\in p^{-1}(1)=\ZZ\). Uniqueness of lifts of \(p\) implies \(T=T_{T(0)}\). Hence
-\[
+$$
+is a deck transformation because $e^{2\pi i(t+n)}=e^{2\pi it}$. Conversely, if $T$ is a deck transformation, then $T(0)\in p^{-1}(1)=\ZZ$. Uniqueness of lifts of $p$ implies $T=T_{T(0)}$. Hence
+$$
 \operatorname{Deck}(\RR/S^1)\cong\ZZ.
-\]
+$$
 :::

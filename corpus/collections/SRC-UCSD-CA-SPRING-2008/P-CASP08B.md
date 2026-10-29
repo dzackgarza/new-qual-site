@@ -33,14 +33,14 @@ Then for any $c \in \CC$ and any $\epsilon > 0$ there exists $z \in \DD \setminu
 
 ::: {.solution}
 (a) **True.** Cauchy's estimate on the circle $|z|=1/2$ gives
-\[
+$$
 |f''(0)|\le \frac{2!\,3}{(1/2)^2}=24.
-\]
+$$
 
 (b) **False.** The function
-\[
+$$
 f(z)=\frac1{1-z}
-\]
+$$
 is holomorphic on $\DD$ and satisfies $f^{(n)}(0)=n!$, but it has a pole at
 $z=1$ and therefore does not extend to an entire function.
 
@@ -57,9 +57,9 @@ every $c\in\CC$.
 
 (e) **True.** Since $\CC$ is simply connected, $u$ has a global harmonic
 conjugate $v$, and $F=u+iv$ is entire. Then
-\[
+$$
 |e^{-F(z)}|=e^{-u(z)}\le e.
-\]
+$$
 Liouville's theorem makes $e^{-F}$ constant. Differentiating shows $F'=0$, so
 $u$ is constant.
 :::

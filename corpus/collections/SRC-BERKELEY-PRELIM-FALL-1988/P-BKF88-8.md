@@ -15,15 +15,15 @@ audit:
 
 ::: {.problem}
 Do
-\[
+$$
 f(z)=e^z+z
 \qquad\text{and}\qquad
 g(z)=ze^z+1
-\]
+$$
 have the same number of zeros in the strip
-\[
+$$
 -\frac\pi2<\operatorname{Im}z<\frac\pi2?
-\]
+$$
 :::
 
 ::: {.solution}

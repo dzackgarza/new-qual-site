@@ -38,19 +38,19 @@ We compute directly from the cellular/simplicial cochain complexes obtained by d
 ::: pf-step
 
 For the torus, with one vertex, edges $a,b,c$, and two $2$-simplices $U,L$, choose orientations so that
-\[
+$$
 \partial U=a+b-c,\qquad \partial L=a+b-c.
-\]
+$$
 Thus for coefficients in an abelian group $G$,
-\[
+$$
 C^0=G,\qquad C^1=G^3,\qquad C^2=G^2,
-\]
+$$
 with
-\[
+$$
 \delta^0=0,
 \qquad
 \delta^1(x,y,z)=(x+y-z,x+y-z).
-\]
+$$
 
 ::: pf-proof
 
@@ -63,13 +63,13 @@ This is the dual of the simplicial boundary maps in the standard two-triangle $\
 ::: pf-step
 
 Hence for $G=\ZZ$ or $\ZZ_2$,
-\[
+$$
 H^0(T^2;G)\cong G,
 \qquad
 H^1(T^2;G)\cong G^2,
 \qquad
 H^2(T^2;G)\cong G.
-\]
+$$
 
 ::: pf-proof
 
@@ -82,21 +82,21 @@ The kernel of $\delta^1$ is given by one equation $x+y-z=0$, hence is isomorphic
 ::: pf-step
 
 For $\RP^2$, choose the standard $\Delta$-complex with vertices $v,w$, edges $a,b,c$, and faces $U,L$, with
-\[
+$$
 \partial a=\partial b=w-v,\qquad \partial c=0,
-\]
+$$
 and
-\[
+$$
 \partial U=-a+b+c,\qquad \partial L=a-b+c.
-\]
+$$
 Thus
-\[
+$$
 \delta^0(s,t)=(t-s,t-s,0)
-\]
+$$
 and
-\[
+$$
 \delta^1(p,q,r)=(-p+q+r,p-q+r).
-\]
+$$
 
 ::: pf-proof
 
@@ -109,18 +109,18 @@ These are obtained by evaluating cochains on the displayed simplicial boundaries
 ::: pf-step
 
 With integral coefficients,
-\[
+$$
 \boxed{H^0(\RP^2;\ZZ)=\ZZ,\quad
 H^1(\RP^2;\ZZ)=0,\quad
 H^2(\RP^2;\ZZ)=\ZZ_2.}
-\]
+$$
 
 ::: pf-proof
 
 The kernel of $\delta^0$ is the diagonal copy of $\ZZ$, so $H^0\cong\ZZ$. If $\delta^1(p,q,r)=0$, subtracting and adding the two equations gives $2r=0$, hence $r=0$ and $p=q$. Thus
-\[
+$$
 \ker\delta^1=\ZZ(1,1,0)=\operatorname{im}\delta^0,
-\]
+$$
 so $H^1=0$. The matrix of $\delta^1$ has rank two and its $2\times2$ minors have greatest common divisor $2$, so its image has index $2$ in $\ZZ^2$. Hence $H^2\cong\ZZ_2$.
 
 :::
@@ -130,16 +130,16 @@ so $H^1=0$. The matrix of $\delta^1$ has rank two and its $2\times2$ minors have
 ::: pf-step
 
 With $\ZZ_2$ coefficients,
-\[
+$$
 \boxed{H^i(\RP^2;\ZZ_2)\cong\ZZ_2\quad(i=0,1,2).}
-\]
+$$
 
 ::: pf-proof
 
 Modulo $2$, $\delta^0$ has rank one and $\delta^1$ has rank one, with
-\[
+$$
 \delta^1(p,q,r)=(p+q+r,p+q+r).
-\]
+$$
 Thus $\dim\ker\delta^1=2$ and $\dim\operatorname{im}\delta^0=1$, giving one-dimensional $H^1$. The cokernel of $\delta^1$ is also one-dimensional, giving $H^2\cong\ZZ_2$.
 
 :::
@@ -149,17 +149,17 @@ Thus $\dim\ker\delta^1=2$ and $\dim\operatorname{im}\delta^0=1$, giving one-dime
 ::: pf-step
 
 For the Klein bottle, choose orientations in the standard two-triangle $\Delta$-complex so that all three edges are loops and
-\[
+$$
 \partial U=a+b-c,
 \qquad
 \partial L=a-b+c.
-\]
+$$
 Then
-\[
+$$
 \delta^0=0,
 \qquad
 \delta^1(p,q,r)=(p+q-r,p-q+r).
-\]
+$$
 
 ::: pf-proof
 
@@ -172,9 +172,9 @@ All vertices are identified, so the boundary of every edge is zero. Dualizing th
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{H^0(K;\ZZ)=\ZZ,\quad H^1(K;\ZZ)=\ZZ,\quad H^2(K;\ZZ)=\ZZ_2.}
-\]
+$$
 
 ::: pf-proof
 
@@ -187,9 +187,9 @@ The equations $p+q-r=0$ and $p-q+r=0$ imply $2p=0$, hence $p=0$ and $q=r$. Thus 
 ::: pf-step
 
 With $\ZZ_2$ coefficients,
-\[
+$$
 \boxed{H^0(K;\ZZ_2)=\ZZ_2,\quad H^1(K;\ZZ_2)=(\ZZ_2)^2,\quad H^2(K;\ZZ_2)=\ZZ_2.}
-\]
+$$
 
 ::: pf-proof
 

@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 Consider the following matrix as a linear transformation from $V\definedas \CC^5$ to itself:
-\[
+$$
 A=\left(\begin{array}{ccccc}
 -1 & 1 & 0 & 0 & 0 \\
 -4 & 3 & 1 & 0 & 0 \\
@@ -33,7 +33,7 @@ A=\left(\begin{array}{ccccc}
 0 & 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 0 & 2
 \end{array}\right)
-.\]
+.$$
 
 a. 
 Find the invariant factors of $A$.
@@ -59,11 +59,11 @@ The elementary divisors of $T$ are $(x-1)^3$, $(x-1)$, and $(x-2)$.
 ::: pf-proof
 
 The block upper-triangular matrix has characteristic polynomial
-\[
+$$
 \chi_T(x)=((x+1)(x-3)+4)(x-1)^2(x-2)=(x-1)^4(x-2).
-\]
+$$
 For $N=T-I$, the first two coordinates form the nilpotent block
-\(\begin{psmallmatrix}-2&1\\-4&2\end{psmallmatrix}\), whose square is zero, while the entry $A_{23}=1$ couples the two diagonal blocks. Direct calculation gives $\dim\ker N=2$, $\dim\ker N^2=3$, and $\dim\ker N^3=4$. The successive kernel increments $2,1,1$ show that the two Jordan blocks for eigenvalue one have sizes three and one. Eigenvalue two has algebraic multiplicity one, giving one further block.
+$\begin{psmallmatrix}-2&1\\-4&2\end{psmallmatrix}$, whose square is zero, while the entry $A_{23}=1$ couples the two diagonal blocks. Direct calculation gives $\dim\ker N=2$, $\dim\ker N^2=3$, and $\dim\ker N^3=4$. The successive kernel increments $2,1,1$ show that the two Jordan blocks for eigenvalue one have sizes three and one. Eigenvalue two has algebraic multiplicity one, giving one further block.
 
 :::
 
@@ -72,9 +72,9 @@ For $N=T-I$, the first two coordinates form the nilpotent block
 ::: {.pf-step #s1-2}
 
 The invariant factors are
-\[
+$$
 \boxed{d_1=x-1,\quad d_2=(x-1)^3(x-2)}.
-\]
+$$
 
 
 ::: pf-proof
@@ -88,9 +88,9 @@ The elementary divisors from step [](#s1-1){.pf-ref} comprise $(x-1)^3$, $(x-1)$
 ::: {.pf-step #s1-3}
 
 The decomposition into indecomposable $\CC[x]$-modules is
-\[\boxed{V\cong\CC[x]/((x-1)^3)\oplus
+$$\boxed{V\cong\CC[x]/((x-1)^3)\oplus
 \CC[x]/(x-1)\oplus \CC[x]/(x-2)}.
-\]
+$$
 
 
 ::: pf-proof
@@ -104,9 +104,9 @@ The structure theorem over the PID $\CC[x]$ gives the elementary-divisor decompo
 ::: {.pf-step #s1-4}
 
 The Jordan canonical form is
-\[
+$$
 \boxed{J_3(1)\oplus[1]\oplus[2]}.
-\]
+$$
 
 
 ::: pf-proof

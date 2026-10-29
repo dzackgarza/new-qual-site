@@ -31,9 +31,9 @@ For $X$ a finite CW complex and $p: \tilde{X} \to X$ an $n$ sheeted covering spa
 
 ::: {.solution}
 Give $X$ a finite CW structure. Pull this structure back along the $n$-sheeted covering
-\[
+$$
 p:\widetilde X\to X.
-\]
+$$
 
 ::: pf
 
@@ -52,16 +52,16 @@ An open cell is contractible and hence simply connected. The restriction of the 
 :::
 
 If $c_k(X)$ denotes the number of $k$-cells, then
-\[
+$$
 c_k(\widetilde X)=n\,c_k(X).
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 \chi(\widetilde X)
 &=\sum_k(-1)^k c_k(\widetilde X)\\
 &=n\sum_k(-1)^k c_k(X)\\
 &=\boxed{n\chi(X)}.
 \end{aligned}
-\]
+$$
 :::

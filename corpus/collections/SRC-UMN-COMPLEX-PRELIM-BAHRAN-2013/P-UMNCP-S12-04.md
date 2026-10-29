@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that there is no function \(f\) analytic on the punctured disk \(\DD\setminus\{0\}\) such that \(f'\) has a simple pole at \(0\).
+Prove that there is no function $f$ analytic on the punctured disk $\DD\setminus\{0\}$ such that $f'$ has a simple pole at $0$.
 :::
 
 ::: {.solution}

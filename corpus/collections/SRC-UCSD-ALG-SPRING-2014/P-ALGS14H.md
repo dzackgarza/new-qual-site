@@ -29,9 +29,9 @@ In the factorization of $X^{64} - X$ into irreducible terms, how many terms of e
 
 ::: {.solution}
 Over $\FF_2$, the polynomial
-\[
+$$
 X^{64}-X=X^{2^6}-X
-\]
+$$
 is the product of all monic irreducible polynomials whose degrees divide $6$, each occurring once.
 Thus only degrees $1,2,3,$ and $6$ can occur.
 
@@ -41,9 +41,9 @@ Thus only degrees $1,2,3,$ and $6$ can occur.
 
 Let $N_d$ be the number of monic irreducible polynomials of degree $d$ over $\FF_2$.
 Then
-\[
+$$
 2^n=\sum_{d\mid n} dN_d,
-\]
+$$
 because $X^{2^n}-X$ is the product of all monic irreducibles whose degrees divide $n$.
 
 ::: pf-proof
@@ -58,9 +58,9 @@ An irreducible polynomial of degree $d$ over $\FF_2$ splits in $\FF_{2^n}$ exact
 ::: {.pf-step #s2}
 
 For $d=1$,
-\[
+$$
 2=1\cdot N_1,
-\]
+$$
 so $N_1=2$.
 
 ::: pf-proof
@@ -74,9 +74,9 @@ The two linear factors are $X$ and $X+1$.
 ::: {.pf-step #s3}
 
 For $d=2$,
-\[
+$$
 4=N_1+2N_2=2+2N_2,
-\]
+$$
 so $N_2=1$.
 
 ::: pf-proof
@@ -90,9 +90,9 @@ Apply the formula of step [](#s1){.pf-ref} with $n=2$.
 ::: {.pf-step #s4}
 
 For $d=3$,
-\[
+$$
 8=N_1+3N_3=2+3N_3,
-\]
+$$
 so $N_3=2$.
 
 ::: pf-proof
@@ -106,10 +106,10 @@ Apply the formula of step [](#s1){.pf-ref} with $n=3$.
 ::: {.pf-step #s5}
 
 For $d=6$,
-\[
+$$
 64=N_1+2N_2+3N_3+6N_6
    =2+2+6+6N_6,
-\]
+$$
 so $N_6=9$.
 
 ::: pf-proof
@@ -124,12 +124,12 @@ Substituting the preceding values gives $64=10+6N_6$.
 ::: pf-step
 
 Therefore the factorization of $X^{64}-X$ over $\FF_2$ contains exactly
-\[
+$$
 \boxed{2\text{ factors of degree }1,\quad
 1\text{ of degree }2,\quad
 2\text{ of degree }3,\quad
 9\text{ of degree }6,}
-\]
+$$
 and no irreducible factors of any other degree.
 
 ::: pf-proof

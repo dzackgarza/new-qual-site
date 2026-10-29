@@ -31,9 +31,9 @@ Give an example of a ring which is not Cohen--Macaulay.
 
 ::: {.solution}
 Let
-\[
+$$
 A=\left(k[x,y]/(x^2,xy)\right)_{(x,y)}.
-\]
+$$
 Then $A$ is a one-dimensional Noetherian local ring of depth $0$, hence is not
 Cohen--Macaulay.
 
@@ -44,20 +44,20 @@ The ring $A$ has Krull dimension $1$.
 
 ::: pf-proof
 In $k[x,y]$,
-\[
+$$
 \sqrt{(x^2,xy)}=(x),
-\]
+$$
 because $(x^2,xy)=x(x,y)$ has radical $(x)$. Therefore
-\[
+$$
 \dim k[x,y]/(x^2,xy)
 =\dim k[x,y]/(x)
 =\dim k[y]
 =1.
-\]
+$$
 Localizing at the maximal ideal $(x,y)$ preserves the chain
-\[
+$$
 (x)/(x^2,xy)\subsetneq(x,y)/(x^2,xy),
-\]
+$$
 so the local ring still has dimension $1$.
 :::
 
@@ -70,11 +70,11 @@ ideal $\mathfrak m=(x,y)A$.
 ::: pf-proof
 The element $x$ is not in the ideal $(x^2,xy)$, so its image is nonzero before
 localization and remains nonzero after localization at $(x,y)$. Moreover,
-\[
+$$
 x\cdot x=x^2=0,
 \qquad
 y\cdot x=xy=0
-\]
+$$
 in $A$. Hence every element of $\mathfrak m$ annihilates $x$.
 :::
 
@@ -82,9 +82,9 @@ in $A$. Hence every element of $\mathfrak m$ annihilates $x$.
 
 ::: {.pf-step #depth-is-zero}
 Every element of $\mathfrak m$ is a zerodivisor, so
-\[
+$$
 \operatorname{depth}A=0.
-\]
+$$
 
 ::: pf-proof
 By step [](#x-annihilated-by-m){.pf-ref} every element of $\mathfrak m$ kills the same nonzero element $x$.

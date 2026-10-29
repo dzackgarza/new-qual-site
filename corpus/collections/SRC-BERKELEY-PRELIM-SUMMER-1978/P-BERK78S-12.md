@@ -30,9 +30,9 @@ audit:
 ::: {.problem}
 1. Suppose $f$ is analytic on a connected open set $U\subset\CC$ and takes only real values. Prove that $f$ is constant.
 2. Suppose $W\subset\CC$ is open, $g$ is analytic on $W$, and $g'(z)\ne0$ for every $z\in W$. Show that
-   \[
+   $$
    \{\operatorname{Re}g(z)+\operatorname{Im}g(z):z\in W\}\subset\RR
-   \]
+   $$
    is open in $\RR$.
 :::
 

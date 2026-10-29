@@ -33,43 +33,43 @@ Find a set of free generators for $F'$ by considering the covering space of the 
 
 ::: {.solution}
 Let
-\[
+$$
 F=\langle a,b\rangle
-\]
+$$
 be the free group on two generators.
 Its commutator subgroup is the kernel of the abelianization map
-\[
+$$
 F\longrightarrow\ZZ^2,
 \qquad
 a\longmapsto(1,0),
 \quad
 b\longmapsto(0,1).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 The covering graph corresponding to $F'$ is the square lattice with vertex set
-\[
+$$
 \ZZ^2,
-\]
+$$
 horizontal $a$-edges
-\[
+$$
 (m,n)\longrightarrow(m+1,n),
-\]
+$$
 and vertical $b$-edges
-\[
+$$
 (m,n)\longrightarrow(m,n+1).
-\]
+$$
 
 ::: pf-proof
 
 The cover corresponding to a normal subgroup $H\triangleleft F$ is the Cayley graph of the quotient $F/H$ with respect to the images of the free generators.
 Here
-\[
+$$
 F/F'\cong\ZZ^2,
-\]
+$$
 so the Cayley graph is exactly the square lattice.
 
 :::
@@ -94,14 +94,14 @@ Hence $T$ is acyclic.
 ::: {.pf-step #s3}
 
 The edges outside $T$ are precisely the vertical $b$-edges
-\[
+$$
 e_{m,n}:(m,n)\to(m,n+1)
-\]
+$$
 with
-\[
+$$
 m\ne0,
 \qquad n\in\ZZ.
-\]
+$$
 
 ::: pf-proof
 
@@ -114,10 +114,10 @@ All horizontal edges belong to $T$, and among vertical edges exactly those on th
 ::: {.pf-step #s4}
 
 The basis loop associated to $e_{m,n}$ reads the word
-\[
+$$
 \gamma_{m,n}
 =b^n a^m b a^{-m}b^{-n-1}.
-\]
+$$
 
 ::: pf-proof
 
@@ -133,15 +133,15 @@ Concatenating gives the displayed word.
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{
 F'=F\bigl(\gamma_{m,n}:m\in\ZZ\setminus\{0\},\ n\in\ZZ\bigr)
 }
-\]
+$$
 freely, where
-\[
+$$
 \gamma_{m,n}=b^n a^m b a^{-m}b^{-n-1}.
-\]
+$$
 
 ::: pf-proof
 

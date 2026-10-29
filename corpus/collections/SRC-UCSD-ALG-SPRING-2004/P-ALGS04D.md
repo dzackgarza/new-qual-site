@@ -33,18 +33,18 @@ Use the Chinese Remainder Theorem to prove there exists a unique polynomial $f(X
 
 ::: {.pf-step #s1}
 
-For distinct \(i,j\in\{0,\dots,m\}\), the ideals \((X-i)\) and \((X-j)\) of \(\QQ[X]\) are comaximal.
+For distinct $i,j\in\{0,\dots,m\}$, the ideals $(X-i)$ and $(X-j)$ of $\QQ[X]$ are comaximal.
 
 ::: pf-proof
 
-Because \(i-j\in\QQ^\times\),
-\[
+Because $i-j\in\QQ^\times$,
+$$
 1=\frac{1}{j-i}(X-i)-\frac{1}{j-i}(X-j).
-\]
+$$
 Thus
-\[
+$$
 (X-i)+(X-j)=\QQ[X].
-\]
+$$
 
 :::
 
@@ -53,21 +53,21 @@ Thus
 ::: {.pf-step #s2}
 
 By the Chinese Remainder Theorem,
-\[
+$$
 \QQ[X]\Big/\Big(\prod_{i=0}^m(X-i)\Big)
 \cong
 \prod_{i=0}^m \QQ[X]/(X-i)
 \cong
 \QQ^{m+1}.
-\]
+$$
 
 ::: pf-proof
 
-The ideals \((X-i)\) are pairwise comaximal by step [](#s1){.pf-ref}, so their intersection equals their product and the CRT applies.
-Evaluation at \(i\) identifies
-\[
+The ideals $(X-i)$ are pairwise comaximal by step [](#s1){.pf-ref}, so their intersection equals their product and the CRT applies.
+Evaluation at $i$ identifies
+$$
 \QQ[X]/(X-i)\cong\QQ.
-\]
+$$
 
 :::
 
@@ -75,21 +75,21 @@ Evaluation at \(i\) identifies
 
 ::: pf-step
 
-There exists a polynomial \(F(X)\in\QQ[X]\) such that
-\[
+There exists a polynomial $F(X)\in\QQ[X]$ such that
+$$
 F(i)=n_i
 \qquad(0\le i\le m).
-\]
+$$
 
 ::: pf-proof
 
 Under the isomorphism in step [](#s2){.pf-ref}, the tuple
-\[
+$$
 (n_0,\dots,n_m)\in\QQ^{m+1}
-\]
+$$
 has a preimage in the quotient.
-Choose any polynomial representative \(F\) of that residue class.
-Its image in the \(i\)-th factor is \(n_i\), which means \(F(i)=n_i\).
+Choose any polynomial representative $F$ of that residue class.
+Its image in the $i$-th factor is $n_i$, which means $F(i)=n_i$.
 
 :::
 
@@ -97,24 +97,24 @@ Its image in the \(i\)-th factor is \(n_i\), which means \(F(i)=n_i\).
 
 ::: pf-step
 
-There is a representative \(f(X)\) of the same residue class with \(\deg f\le m\).
+There is a representative $f(X)$ of the same residue class with $\deg f\le m$.
 
 ::: pf-proof
 
 Let
-\[
+$$
 P(X)=\prod_{i=0}^m(X-i).
-\]
-Then \(\deg P=m+1\). Divide \(F\) by \(P\):
-\[
+$$
+Then $\deg P=m+1$. Divide $F$ by $P$:
+$$
 F=QP+f,
 \qquad
 \deg f<m+1.
-\]
-Thus \(\deg f\le m\). Since \(P(i)=0\) for every \(i\), one has
-\[
+$$
+Thus $\deg f\le m$. Since $P(i)=0$ for every $i$, one has
+$$
 f(i)=F(i)=n_i.
-\]
+$$
 
 :::
 
@@ -122,24 +122,24 @@ f(i)=F(i)=n_i.
 
 ::: pf-step
 
-Such a polynomial \(f\) is unique among polynomials of degree at most \(m\).
+Such a polynomial $f$ is unique among polynomials of degree at most $m$.
 
 ::: pf-proof
 
-Suppose \(f,g\in\QQ[X]\) both have degree at most \(m\) and satisfy
-\[
+Suppose $f,g\in\QQ[X]$ both have degree at most $m$ and satisfy
+$$
 f(i)=g(i)=n_i
 \qquad(0\le i\le m).
-\]
-Then \(f-g\) vanishes at the \(m+1\) distinct points \(0,1,\dots,m\), so
-\[
+$$
+Then $f-g$ vanishes at the $m+1$ distinct points $0,1,\dots,m$, so
+$$
 P(X)=\prod_{i=0}^m(X-i)
-\]
-divides \(f-g\). But
-\[
+$$
+divides $f-g$. But
+$$
 \deg(f-g)\le m<\deg P=m+1.
-\]
-Hence \(f-g=0\), so \(f=g\).
+$$
+Hence $f-g=0$, so $f=g$.
 
 :::
 

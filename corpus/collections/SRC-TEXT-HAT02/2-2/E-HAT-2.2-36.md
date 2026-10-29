@@ -34,52 +34,52 @@ Namely, show $H_i(X \times S^n) \approx H_i(X) \oplus H_i(X \times S^n, X \times
 
 ::: {.solution}
 Fix $x_0\in S^n$ and write
-\[
+$$
 P_n=X\times S^n,
 \qquad
 A_n=X\times\{x_0\}.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 The long exact sequence of $(P_n,A_n)$ splits and gives
-\[
+$$
 H_i(P_n)\cong H_i(X)\oplus H_i(P_n,A_n).
-\]
+$$
 
 ::: pf-proof
 The inclusion
-\[
+$$
 A_n\cong X\hookrightarrow X\times S^n
-\]
+$$
 has the projection $X\times S^n\to X$ as a retraction. Hence its induced map on homology is injective and split. The long exact sequence of the pair therefore breaks into split short exact sequences
-\[
+$$
 0\to H_i(X)\to H_i(P_n)\to H_i(P_n,A_n)\to0.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #s2}
 For $n\ge1$ there are natural isomorphisms
-\[
+$$
 H_i(P_n,A_n)\cong H_{i-1}(P_{n-1},A_{n-1}).
-\]
+$$
 
 ::: pf-proof
 Decompose $S^n$ into upper and lower hemispheres $D_+^n$ and $D_-^n$, meeting in $S^{n-1}$, and choose $x_0$ on the equator. Apply relative Mayer--Vietoris to the pair
-\[
+$$
 (X\times S^n,\,X\times\{x_0\}).
-\]
+$$
 The two hemisphere pairs
-\[
+$$
 (X\times D_\pm^n,\,X\times\{x_0\})
-\]
+$$
 deformation retract to $(X,X)$ and hence have zero relative homology. Their intersection pair is
-\[
+$$
 (X\times S^{n-1},\,X\times\{x_0\}).
-\]
+$$
 Thus the connecting homomorphism in the relative Mayer--Vietoris sequence is an isomorphism shifting degree by one.
 :::
 
@@ -87,19 +87,19 @@ Thus the connecting homomorphism in the relative Mayer--Vietoris sequence is an 
 
 ::: {.pf-step #s3}
 One has
-\[
+$$
 H_i(P_n,A_n)\cong H_{i-n}(X).
-\]
+$$
 
 ::: pf-proof
 Iterate step [](#s2){.pf-ref} until $n=0$. Since $S^0$ consists of two points and $A_0$ is one copy of $X$,
-\[
+$$
 H_j(X\times S^0,\,X\times\{x_0\})\cong H_j(X).
-\]
+$$
 Therefore after $n$ shifts,
-\[
+$$
 H_i(P_n,A_n)\cong H_{i-n}(X),
-\]
+$$
 where the latter is zero for negative indices.
 :::
 
@@ -107,9 +107,9 @@ where the latter is zero for negative indices.
 
 ::: pf-step
 Combining steps [](#s1){.pf-ref} and [](#s3){.pf-ref} gives
-\[
+$$
 \boxed{H_i(X\times S^n)\cong H_i(X)\oplus H_{i-n}(X).}
-\]
+$$
 :::
 
 :::

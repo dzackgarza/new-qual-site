@@ -28,17 +28,17 @@ Show that $f$ is constant.
 ::: {.pf-step #s1-1}
 
 If $f$ is nonconstant, then there exists $z_0\in\CC$ such that
-\[
+$$
 \log|f(z_0)|>1.
-\]
+$$
 
 
 ::: pf-proof
 
 If a nonconstant entire function were bounded, Liouville's theorem would make it constant. Thus $f$ is unbounded. In particular there exists $z_0$ with
-\[
+$$
 |f(z_0)|>e,
-\]
+$$
 which is equivalent to the displayed inequality.
 
 :::
@@ -48,28 +48,28 @@ which is equivalent to the displayed inequality.
 ::: {.pf-step #s1-2}
 
 If $f\not\equiv0$, then
-\[
+$$
 u(z)
 \coloneqq
 \log|f(z)|
-\]
+$$
 is subharmonic on $\CC$.
 
 
 ::: pf-proof
 
 For a nonzero holomorphic function, $\log|f|$ is a standard subharmonic function, taking the value $-\infty$ at zeros. Equivalently, locally one may factor
-\[
+$$
 f(z)=(z-a)^m g(z),
 \qquad
 g(a)\ne0,
-\]
+$$
 so
-\[
+$$
 \log|f(z)|
 =
 m\log|z-a|+\log|g(z)|,
-\]
+$$
 the sum of a subharmonic function and a harmonic function.
 
 :::
@@ -79,7 +79,7 @@ the sum of a subharmonic function and a harmonic function.
 ::: {.pf-step #s1-3}
 
 Under the nonconstancy assumption, for every $r>0$,
-\[
+$$
 \frac1{2\pi}
 \int_0^{2\pi}
 \log|f(z_0+re^{i\theta})|\,d\theta
@@ -87,7 +87,7 @@ Under the nonconstancy assumption, for every $r>0$,
 \log|f(z_0)|
 >
 1.
-\]
+$$
 
 
 ::: pf-proof
@@ -101,18 +101,18 @@ Apply the sub-mean-value inequality for the subharmonic function from step [](#s
 ::: {.pf-step #s1-4}
 
 For every $R>0$,
-\[
+$$
 \int_{B(z_0,R)}
 \log|f(z)|\,dA(z)
 >
 \pi R^2.
-\]
+$$
 
 
 ::: pf-proof
 
 Using polar coordinates about $z_0$ and step [](#s1-3){.pf-ref},
-\[
+$$
 \begin{aligned}
 \int_{B(z_0,R)}
 \log|f(z)|\,dA(z)
@@ -128,7 +128,7 @@ r
 &=
 \pi R^2.
 \end{aligned}
-\]
+$$
 The local logarithmic singularities at zeros are integrable, so these disk integrals are well defined.
 
 :::
@@ -143,16 +143,16 @@ The nonconstancy assumption contradicts absolute integrability of $\log|f|$.
 ::: pf-proof
 
 Absolute integrability gives
-\[
+$$
 C
 \coloneqq
 \int_{\CC}
 |\log|f(z)||\,dA(z)
 <
 \infty.
-\]
+$$
 For every $R>0$,
-\[
+$$
 \int_{B(z_0,R)}
 \log|f(z)|\,dA(z)
 \le
@@ -160,11 +160,11 @@ For every $R>0$,
 |\log|f(z)||\,dA(z)
 \le
 C.
-\]
+$$
 Step [](#s1-4){.pf-ref} gives the incompatible lower bound
-\[
+$$
 \pi R^2<C
-\]
+$$
 for every $R$. Letting $R\to\infty$ gives a contradiction.
 
 :::
@@ -174,9 +174,9 @@ for every $R$. Letting $R\to\infty$ gives a contradiction.
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{f\text{ is constant}.}
-\]
+$$
 
 
 ::: pf-proof

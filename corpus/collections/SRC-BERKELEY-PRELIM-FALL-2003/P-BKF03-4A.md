@@ -31,9 +31,9 @@ Give an example, with proof, of a nonconstant irreducible polynomial $f ( x )$ o
 ::: {.solution}
 
 Take
-\[
+$$
 f(x)=x^3-2.
-\]
+$$
 
 ::: pf
 
@@ -50,22 +50,22 @@ Hence $x^3-2$ is irreducible in $\QQ[x]$.
 
 ::: {.pf-step #K-embeds-in-R}
 The quotient field
-\[
+$$
 K=\QQ[x]/(x^3-2)
-\]
+$$
 is isomorphic to $\QQ(\sqrt[3]{2})$, and therefore embeds in $\RR$.
 
 ::: pf-proof
 Let $\alpha=\sqrt[3]{2}\in\RR$.
 Since $f$ is irreducible and $f(\alpha)=0$, evaluation at $\alpha$ gives a surjective homomorphism
-\[
+$$
 \QQ[x]\longrightarrow\QQ(\alpha)
-\]
+$$
 whose kernel is $(x^3-2)$.
 Thus
-\[
+$$
 K\cong\QQ(\alpha)\subset\RR.
-\]
+$$
 :::
 
 :::
@@ -75,9 +75,9 @@ The polynomial $f$ does not split into linear factors over $K$.
 
 ::: pf-proof
 Over $\CC$, the three roots are
-\[
+$$
 \alpha,\qquad \omega\alpha,\qquad \omega^2\alpha,
-\]
+$$
 where $\omega=e^{2\pi i/3}$.
 The latter two roots are nonreal.
 By step [](#K-embeds-in-R){.pf-ref}, every element of $K$ is real under the displayed embedding, so neither $\omega\alpha$ nor $\omega^2\alpha$ belongs to $K$.

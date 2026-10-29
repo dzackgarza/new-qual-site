@@ -27,7 +27,7 @@ audit:
 
 ::: {.problem}
 Is there a covering map from
-\[
+$$
 X_3
 =
 \{x^2+y^2=1\}
@@ -36,7 +36,7 @@ X_3
 \cup
 \{(x+2)^2+y^2=1\}
 \subset\RR^2
-\]
+$$
 to $S^1\vee S^1$?
 If there is, give an example; if not, give a proof.
 :::
@@ -46,16 +46,16 @@ Yes.
 In fact, $X_3$ is a connected two-sheeted covering of $S^1\vee S^1$.
 
 Let
-\[
+$$
 v_0=(-1,0),
 \qquad
 v_1=(1,0)
-\]
+$$
 be the two tangency points.
 Regard the target rose
-\[
+$$
 R=S^1\vee S^1
-\]
+$$
 as a graph with one vertex $*$ and two oriented loop-edges $a$ and $b$.
 
 ::: pf
@@ -84,9 +84,9 @@ Removing $v_0$ and $v_1$ therefore leaves exactly the four open edge pieces list
 ::: pf-step
 
 Define
-\[
+$$
 p:X_3\longrightarrow R
-\]
+$$
 by sending both $v_0$ and $v_1$ to $*$, mapping each of the loops $L$ and $R'$ homeomorphically onto the $a$-petal, and mapping each of $U$ and $D$ homeomorphically and orientation-preservingly onto the $b$-petal.
 
 ::: pf-proof
@@ -128,13 +128,13 @@ Under $p$, these four half-edges map bijectively to the four arms of $W$:
 - one incident middle-circle half-edge maps to the initial arm of the $b$-petal and the other to its terminal arm.
 
 Hence there are disjoint neighborhoods $W_0$ of $v_0$ and $W_1$ of $v_1$ such that
-\[
+$$
 p^{-1}(W)=W_0\amalg W_1
-\]
+$$
 and
-\[
+$$
 p|_{W_i}:W_i\longrightarrow W
-\]
+$$
 is a homeomorphism for $i=0,1$.
 
 :::

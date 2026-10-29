@@ -20,17 +20,17 @@ audit:
 
 ::: {.problem}
 Let $A$ be a finite-dimensional commutative algebra with identity over $\CC$, with
-\[
+$$
 \dim_{\CC}A\ge2.
-\]
+$$
 Suppose
-\[
+$$
 a^2\ne0
-\]
+$$
 for every nonzero $a\in A$. Show that the equation
-\[
+$$
 a^2=a
-\]
+$$
 has at least three distinct solutions in $A$.
 :::
 

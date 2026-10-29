@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f:\DD\to\DD\) be holomorphic.
-Suppose \(c\in\DD\) is a fixed point and \(|f'(c)|<1\). For any \(z_0\in\DD\), define \(z_n=f(z_{n-1})\). Prove that \(z_n\to c\).
+Let $f:\DD\to\DD$ be holomorphic.
+Suppose $c\in\DD$ is a fixed point and $|f'(c)|<1$. For any $z_0\in\DD$, define $z_n=f(z_{n-1})$. Prove that $z_n\to c$.
 :::
 
 ::: {.solution}

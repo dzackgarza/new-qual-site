@@ -33,22 +33,22 @@ Note that a composition of two covering spaces does have the unique path lifting
 
 ::: {.solution}
 Let
-\[
+$$
 X=\bigcup_{m\ge1}C_m
-\]
+$$
 be the shrinking wedge, with common point $x_0$ and with the circles numbered so that their diameters tend to zero.
 In the covering $q:\widetilde X\to X$ shown in the source figure, the horizontal line maps to $C_1$ as the usual universal cover
-\[
+$$
 \RR\to S^1,
-\]
+$$
 and at every integer point $n\in\ZZ$ there is an attached shrinking wedge
-\[
+$$
 E_{n,2}\cup E_{n,3}\cup\cdots
-\]
+$$
 with
-\[
+$$
 q|_{E_{n,m}}:E_{n,m}\longrightarrow C_m
-\]
+$$
 a homeomorphism for $m\ge2$.
 
 ::: pf
@@ -56,19 +56,19 @@ a homeomorphism for $m\ge2$.
 ::: {.pf-step #s1}
 
 Choose integers
-\[
+$$
 r_n\ge2,
 \qquad n\in\ZZ,
-\]
+$$
 such that
-\[
+$$
 r_n\longrightarrow\infty
 \quad\text{as }|n|\to\infty.
-\]
+$$
 For example, take
-\[
+$$
 r_n=|n|+2.
-\]
+$$
 
 ::: pf-proof
 
@@ -81,18 +81,18 @@ The only required property is that the selected circle in the attached wedge at 
 ::: {.pf-step #s2}
 
 Construct a two-sheeted space
-\[
+$$
 p:Y\to\widetilde X
-\]
+$$
 as follows.
 Start with two disjoint copies
-\[
+$$
 \widetilde X^{(0)},\qquad \widetilde X^{(1)}.
-\]
+$$
 For each integer $n$, choose a point
-\[
+$$
 z_n\in E_{n,r_n}
-\]
+$$
 different from the attachment point, cut both copies of the circle $E_{n,r_n}$ at the corresponding point, and cross-glue the two pairs of cut endpoints.
 Leave all other points in the two copies unglued.
 
@@ -113,9 +113,9 @@ Hence $p$ is a two-sheeted covering map.
 ::: pf-step
 
 Suppose the composite
-\[
+$$
 q\circ p:Y\to X
-\]
+$$
 were a covering map.
 Then the wedge point $x_0$ would have an evenly covered neighborhood $U$.
 
@@ -135,13 +135,13 @@ Every neighborhood $U$ of $x_0$ in the shrinking wedge $X$ contains all circles 
 
 The shrinking wedge is the planar union of circles whose diameters tend to zero at the common point $x_0$.
 Choose an ambient Euclidean ball
-\[
+$$
 B_\varepsilon(x_0)
-\]
+$$
 such that
-\[
+$$
 X\cap B_\varepsilon(x_0)\subseteq U.
-\]
+$$
 For all sufficiently large $m$, the entire circle $C_m$ lies inside this ball.
 
 :::
@@ -151,13 +151,13 @@ For all sufficiently large $m$, the entire circle $C_m$ lies inside this ball.
 ::: {.pf-step #s5}
 
 Choose $n$ so large that
-\[
+$$
 C_{r_n}\subseteq U.
-\]
+$$
 Then the inverse image
-\[
+$$
 (q\circ p)^{-1}(C_{r_n})
-\]
+$$
 contains a connected circle mapping two-to-one onto $C_{r_n}$.
 
 ::: pf-proof
@@ -178,9 +178,9 @@ This contradicts the assumption that $U$ is evenly covered by $q\circ p$.
 ::: pf-proof
 
 If $U$ were evenly covered, every connected sheet of
-\[
+$$
 (q\circ p)^{-1}(U)
-\]
+$$
 would map homeomorphically onto $U$.
 The connected double-covering circle from step [](#s5){.pf-ref} lies in one such sheet because its image $C_{r_n}$ is contained in $U$.
 Restricting a homeomorphism of that sheet to the inverse image of $C_{r_n}$ would be injective.
@@ -194,9 +194,9 @@ This is impossible.
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{q\circ p:Y\to X\text{ is not a covering map}.}
-\]
+$$
 
 ::: pf-proof
 

@@ -12,14 +12,14 @@ audit:
 
 ::: {.problem}
 Let $X$ be the quotient of six disjoint polygonal regions whose boundary-label words are
-\[
+$$
 bc^{-1}a,
 \quad abc,
 \quad ded^{-1}ef,
 \quad fgh,
 \quad g^{-1}hik,
 \quad ji^{-1}jk^{-1}.
-\]
+$$
 
 1. List the compact connected surfaces up to homeomorphism.
 2. Identify $X$, with justification, in terms of that classification.

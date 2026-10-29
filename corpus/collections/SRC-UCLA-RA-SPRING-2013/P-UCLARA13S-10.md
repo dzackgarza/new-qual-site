@@ -28,11 +28,11 @@ Without using either Picard theorem, show that there exist complex numbers $z$ o
 ::: {.pf-step #s1-1}
 
 Suppose, toward a contradiction, that there is $R_0>0$ such that
-\[
+$$
 |z|>R_0
 \quad\Longrightarrow\quad
 f(z)\notin(0,\infty).
-\]
+$$
 
 
 ::: pf-proof
@@ -46,38 +46,38 @@ This is exactly the negation of the assertion that points of arbitrarily large m
 ::: {.pf-step #s1-2}
 
 Choose a positive real number $M$ such that
-\[
+$$
 M>
 \max_{|z|\le R_0}|f(z)|
-\]
+$$
 and define
-\[
+$$
 g(z)=f(z)-M.
-\]
+$$
 Then
-\[
+$$
 g(\CC)
 \subset
 \CC\setminus[0,\infty).
-\]
+$$
 
 
 ::: pf-proof
 
 First suppose $|z|\le R_0$. If
-\[
+$$
 g(z)\in[0,\infty),
-\]
+$$
 then
-\[
+$$
 f(z)=M+g(z)
-\]
+$$
 is a positive real number of modulus at least $M$, contradicting the choice of $M$.
 
 Now suppose $|z|>R_0$. If $g(z)\in[0,\infty)$, then
-\[
+$$
 f(z)=M+g(z)>0
-\]
+$$
 is a positive real number, contradicting step [](#s1-1){.pf-ref}. Thus $g$ avoids the entire nonnegative real axis.
 
 :::
@@ -87,42 +87,42 @@ is a positive real number, contradicting step [](#s1-1){.pf-ref}. Thus $g$ avoid
 ::: {.pf-step #s1-3}
 
 There is an injective holomorphic map
-\[
+$$
 \Phi:
 \CC\setminus[0,\infty)
 \longrightarrow
 \DD.
-\]
+$$
 
 
 ::: pf-proof
 
 On the slit plane
-\[
+$$
 \CC\setminus[0,\infty),
-\]
+$$
 choose the branch of the argument in $(0,2\pi)$ and define
-\[
+$$
 S(w)=\sqrt w
 =
 \exp\left(\frac12(\log|w|+i\operatorname{Arg}w)\right).
-\]
+$$
 Then
-\[
+$$
 0<\operatorname{Arg}S(w)<\pi,
-\]
+$$
 so $S$ maps the slit plane biholomorphically onto the upper half-plane.
 
 The Cayley transform
-\[
+$$
 C(\zeta)
 =
 \frac{\zeta-i}{\zeta+i}
-\]
+$$
 maps the upper half-plane biholomorphically onto the unit disk. Thus
-\[
+$$
 \Phi=C\circ S
-\]
+$$
 is an injective holomorphic map into $\DD$.
 
 :::
@@ -132,9 +132,9 @@ is an injective holomorphic map into $\DD$.
 ::: pf-step
 
 The entire function
-\[
+$$
 \Phi\circ g:\CC\to\DD
-\]
+$$
 is constant.
 
 
@@ -154,13 +154,13 @@ The function $f$ is constant.
 ::: pf-proof
 
 The map $\Phi$ is injective by step [](#s1-3){.pf-ref}. Thus constancy of
-\[
+$$
 \Phi\circ g
-\]
+$$
 implies constancy of $g$. Since
-\[
+$$
 f=g+M,
-\]
+$$
 the function $f$ is constant as well.
 
 :::
@@ -183,13 +183,13 @@ Step [](#s1-5){.pf-ref} contradicts the hypothesis that $f$ is nonconstant.
 ::: {.pf-step #s1-7}
 
 Therefore, for every $R>0$, there exists $z\in\CC$ with
-\[
+$$
 |z|>R
-\]
+$$
 such that
-\[
+$$
 \boxed{f(z)\in(0,\infty)}.
-\]
+$$
 
 
 ::: pf-proof

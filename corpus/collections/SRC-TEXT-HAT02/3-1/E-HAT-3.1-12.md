@@ -61,9 +61,9 @@ The claim holds when $Y$ is finite-dimensional.
 
 $H^k(Y^m,Y^{m-1})\cong\widetilde H^k(Y^m/Y^{m-1})$ vanishes for $k\ne m$, since $Y^m/Y^{m-1}$ is a wedge of $m$-spheres and the reduced cohomology of a wedge is the product of the reduced cohomologies of the summands [@Hat02, §3.1].
 For $m>n$ and $k\le n$, the exact sequence
-\[
+$$
 H^k(Y^m,Y^{m-1})\to\widetilde H^k(Y^m)\to\widetilde H^k(Y^{m-1})
-\]
+$$
 has first term $0$, so restriction $\widetilde H^k(Y^m)\to\widetilde H^k(Y^{m-1})$ is injective.
 Since $\widetilde H^k(Y^n)=0$ for all $k$, induction on $m$ gives $\widetilde H^k(Y^m)=0$ for all $m$ and $k\le n$, and $Y=Y^m$ for $m$ large.
 
@@ -92,9 +92,9 @@ $\widetilde H^k(T)=0$ for $k\le n$.
 
 The quotient $T/Z$ is a wedge of finite-dimensional complexes with $(n+1)$-skeleton a point, so $H^k(T,Z)\cong\widetilde H^k(T/Z)=0$ for $k\le n+1$ by step [](#s2){.pf-ref} applied with $n+1$.
 In the exact sequence
-\[
+$$
 H^k(T,Z)\to\widetilde H^k(T)\to\widetilde H^k(Z)
-\]
+$$
 both outer terms vanish for $k\le n$, by this and step [](#s3){.pf-ref}.
 
 :::

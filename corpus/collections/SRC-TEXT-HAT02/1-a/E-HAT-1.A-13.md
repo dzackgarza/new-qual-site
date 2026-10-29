@@ -33,29 +33,29 @@ Show there is a finite-index subgroup $H \subset F$ in which $x$ is one element 
 
 ::: {.solution}
 Let
-\[
+$$
 F=\pi_1(R,r_0)
-\]
+$$
 for a finite rose $R$, and let $x\in F$ be nontrivial.
 Write
-\[
+$$
 x=uyu^{-1}
-\]
+$$
 with $y$ cyclically reduced and nontrivial.
 It is enough to find a finite-index subgroup $H'\le F$ in which $y$ is primitive, since then
-\[
+$$
 H=uH'u^{-1}
-\]
+$$
 has the same finite index and has $x=uyu^{-1}$ as a basis element.
 
 Consider the connected covering
-\[
+$$
 p:R_y\to R
-\]
+$$
 corresponding to the cyclic subgroup
-\[
+$$
 \langle y\rangle\le F.
-\]
+$$
 Choose the base vertex $\widetilde r_0$ corresponding to this subgroup.
 
 ::: pf
@@ -69,13 +69,13 @@ The loop representing $y$ lifts to a closed reduced edge path in $R_y$ whose ima
 Let $T\to R$ be the universal covering tree.
 Because $y$ is cyclically reduced, the geodesic from the identity vertex to $y$ lies on the invariant axis $A$ of the deck transformation $y$.
 The cover $R_y$ is the quotient
-\[
+$$
 T/\langle y\rangle.
-\]
+$$
 The quotient
-\[
+$$
 C=A/\langle y\rangle
-\]
+$$
 is a circle embedded in $R_y$: if two points of the axis have the same image in the quotient, they differ by a power of $y$, so the only identifications on $A$ are precisely those defining the circle quotient.
 Since the identity vertex lies on $A$, its image $\widetilde r_0$ lies on $C$, and traversing $C$ once represents $y$.
 
@@ -86,9 +86,9 @@ Since the identity vertex lies on $A$, its image $\widetilde r_0$ lies on $C$, a
 ::: pf-step
 
 Choose a finite connected subgraph
-\[
+$$
 Y\subseteq R_y
-\]
+$$
 containing $C$.
 
 ::: pf-proof
@@ -103,14 +103,14 @@ Thus we may take $Y=C$, or enlarge it by finitely many edges if desired.
 ::: pf-step
 
 By Exercise 10, $Y$ is contained in a finite-sheeted covering
-\[
+$$
 q:Z\to R
-\]
+$$
 with no new vertices.
 Let
-\[
+$$
 H'=q_*\pi_1(Z,\widetilde r_0).
-\]
+$$
 Then $H'$ has finite index in $F$ and $y\in H'$.
 
 ::: pf-proof
@@ -130,9 +130,9 @@ The element $y$ is primitive in $H'$.
 ::: pf-proof
 
 The finite covering graph $Z$ contains the subgraph
-\[
+$$
 C\cong S^1
-\]
+$$
 through the basepoint, and the loop $C$ represents $y$.
 By Exercise 4, the fundamental group $\pi_1(Z,\widetilde r_0)=H'$ has a free basis containing the element represented by $C$.
 Thus $y$ is one member of a basis of $H'$.
@@ -144,9 +144,9 @@ Thus $y$ is one member of a basis of $H'$.
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{H=uH'u^{-1}\le F}
-\]
+$$
 has finite index and has $x=uyu^{-1}$ as a basis element.
 
 ::: pf-proof

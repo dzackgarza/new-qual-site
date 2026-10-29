@@ -30,26 +30,26 @@ audit:
 :::
 
 ::: {.solution}
-(a) Give \(S^2\) a CW decomposition in which the north and south poles are \(0\)-cells. After identifying these two vertices, choose a maximal tree in the resulting \(1\)-skeleton and collapse it. The quotient CW complex reduces to one \(1\)-cell accounting for the identified pair of vertices and one \(2\)-sphere summand. Equivalently, the standard cofibration fact for a path-connected CW complex says that identifying two distinct \(0\)-cells adds a circle up to homotopy. Hence
-\[
+(a) Give $S^2$ a CW decomposition in which the north and south poles are $0$-cells. After identifying these two vertices, choose a maximal tree in the resulting $1$-skeleton and collapse it. The quotient CW complex reduces to one $1$-cell accounting for the identified pair of vertices and one $2$-sphere summand. Equivalently, the standard cofibration fact for a path-connected CW complex says that identifying two distinct $0$-cells adds a circle up to homotopy. Hence
+$$
 X\simeq S^2\vee S^1.
-\]
+$$
 In particular,
-\[
+$$
 \pi_1(X)\cong\ZZ.
-\]
+$$
 
-(b) Connected coverings are classified by subgroups of \(\pi_1(X)\cong\ZZ\). These are
-\[
+(b) Connected coverings are classified by subgroups of $\pi_1(X)\cong\ZZ$. These are
+$$
 n\ZZ\quad(n=1,2,3,\dots)
 \qquad\text{and}\qquad
 \{0\}.
-\]
+$$
 They admit a concrete geometric description. The universal cover is a bi-infinite chain
-\[
+$$
 \cdots\cup S^2_{-1}\cup S^2_0\cup S^2_1\cup\cdots,
-\]
-where the north pole of \(S^2_i\) is identified with the south pole of \(S^2_{i+1}\). The deck generator shifts \(S^2_i\) to \(S^2_{i+1}\).
+$$
+where the north pole of $S^2_i$ is identified with the south pole of $S^2_{i+1}$. The deck generator shifts $S^2_i$ to $S^2_{i+1}$.
 
-For \(n\ge1\), quotienting this universal cover by the subgroup \(n\ZZ\) gives an \(n\)-sheeted connected cover: a cyclic necklace of \(n\) spheres, with the north pole of each sphere identified with the south pole of the next, cyclically. For \(n=1\) this is \(X\) itself. The subgroup \(\{0\}\) gives the universal infinite chain. These exhaust all connected covering spaces up to equivalence.
+For $n\ge1$, quotienting this universal cover by the subgroup $n\ZZ$ gives an $n$-sheeted connected cover: a cyclic necklace of $n$ spheres, with the north pole of each sphere identified with the south pole of the next, cyclically. For $n=1$ this is $X$ itself. The subgroup $\{0\}$ gives the universal infinite chain. These exhaust all connected covering spaces up to equivalence.
 :::

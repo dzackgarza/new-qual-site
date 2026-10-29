@@ -34,9 +34,9 @@ audit:
 
 ::: {.problem}
 Find the indefinite integral
-\[
+$$
 \int e^{2x}\sin x\,dx.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -78,9 +78,9 @@ If $x$ is not nilpotent and $I$ is maximal among ideals disjoint from $S=\{x^n:n
 ::: pf-proof
 
 The ideal $I$ is proper, because $1\in S$ would belong to $R$. Suppose $ab\in I$ but $a,b\notin I$. Then the larger ideals $I+(a)$ and $I+(b)$ cannot be disjoint from $S$ by maximality. Hence $x^m=i+ra$ and $x^n=j+sb$ for suitable $i,j\in I$, $r,s\in R$, and positive integers $m,n$. Multiplying gives
-\[
+$$
 x^{m+n}=ij+is b+jr a+rsab\in I,
-\]
+$$
 contradicting $I\cap S=\varnothing$. Therefore $a\in I$ or $b\in I$, proving primality.
 
 :::
@@ -90,9 +90,9 @@ contradicting $I\cap S=\varnothing$. Therefore $a\in I$ or $b\in I$, proving pri
 ::: {.pf-step #s1-4}
 
 The nilradical equals the intersection of all prime ideals:
-\[
+$$
 \boxed{\mathcal N=\bigcap_{\mathfrak p\in\operatorname{Spec}R}\mathfrak p}.
-\]
+$$
 
 
 ::: pf-proof

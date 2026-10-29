@@ -51,9 +51,9 @@ setup.
 
 ::: pf-step
 Define standard loop concatenation $*$ and pointwise H-space product $\odot$:
-\[
+$$
 (f * g)(t) = \begin{cases} f(2t) & 0 \le t \le 1/2 \\ g(2t - 1) & 1/2 \le t \le 1, \end{cases} \qquad (f \odot g)(t) = \mu(f(t), g(t)).
-\]
+$$
 
 ::: pf-proof
 definitions of concatenation and induced pointwise multiplication.
@@ -91,9 +91,9 @@ homotopy invariance of the induced map $\mu_*$.
 
 ::: {.pf-step #s2-2}
 For $t \in [0, 1/2]$:
-\[
+$$
 ((f * c_e) \odot (c_e * g))(t) = \mu((f * c_e)(t), (c_e * g)(t)) = \mu(f(2t), e) \simeq f(2t) = (f * g)(t).
-\]
+$$
 
 ::: pf-proof
 definition of $*$ and unit axiom $\mu(x, e) \simeq x$.
@@ -103,9 +103,9 @@ definition of $*$ and unit axiom $\mu(x, e) \simeq x$.
 
 ::: {.pf-step #s2-3}
 For $t \in [1/2, 1]$:
-\[
+$$
 ((f * c_e) \odot (c_e * g))(t) = \mu((f * c_e)(t), (c_e * g)(t)) = \mu(e, g(2t - 1)) \simeq g(2t - 1) = (f * g)(t).
-\]
+$$
 
 ::: pf-proof
 definition of $*$ and unit axiom $\mu(e, y) \simeq y$.
@@ -142,9 +142,9 @@ homotopy invariance.
 
 ::: {.pf-step #s3-2}
 For $t \in [0, 1/2]$:
-\[
+$$
 ((c_e * f) \odot (g * c_e))(t) = \mu(e, g(2t)) \simeq g(2t) = (g * f)(t).
-\]
+$$
 
 ::: pf-proof
 unit axiom $\mu(e, y) \simeq y$.
@@ -154,9 +154,9 @@ unit axiom $\mu(e, y) \simeq y$.
 
 ::: {.pf-step #s3-3}
 For $t \in [1/2, 1]$:
-\[
+$$
 ((c_e * f) \odot (g * c_e))(t) = \mu(f(2t - 1), e) \simeq f(2t - 1) = (g * f)(t).
-\]
+$$
 
 ::: pf-proof
 unit axiom $\mu(x, e) \simeq x$.
@@ -179,9 +179,9 @@ Steps [](#s3-2){.pf-ref} and [](#s3-3){.pf-ref}.
 
 ::: pf-step
 Conclusion: Combining steps [](#s2){.pf-ref} and [](#s3){.pf-ref} yields:
-\[
+$$
 [f][g] = [f * g] = [f \odot g] = [g * f] = [g][f].
-\]
+$$
 Thus $\pi_1(X, e)$ is an abelian group.
 
 ::: pf-proof

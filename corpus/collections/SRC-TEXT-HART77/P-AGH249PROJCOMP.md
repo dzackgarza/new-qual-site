@@ -35,17 +35,17 @@ Conclude that projective morphisms have the stability properties (a)--(f) of (Ex
 ::: pf-step
 
 Let
-\[
+$$
 X\xrightarrow{f}Y\xrightarrow{g}Z
-\]
+$$
 be projective morphisms.  Choose factorizations
-\[
+$$
 X\xhookrightarrow{i}\PP^r_Y\longrightarrow Y
-\]
+$$
 and
-\[
+$$
 Y\xhookrightarrow{j}\PP^s_Z\longrightarrow Z
-\]
+$$
 with $i$ and $j$ closed immersions.
 
 ::: pf-proof
@@ -59,38 +59,38 @@ This is exactly the definition of a projective morphism.
 ::: pf-step
 
 There is a canonical identification
-\[
+$$
 \PP^r_Y
 \cong
 \PP^r_Z\times_ZY.
-\]
+$$
 Under this identification, the morphism
-\[
+$$
 \PP^r_Y
 \longrightarrow
 \PP^r_Z\times_Z\PP^s_Z
-\]
+$$
 induced by $j$ is a closed immersion.
 
 ::: pf-proof
 
 Relative projective space commutes with base change:
-\[
+$$
 \PP^r_Y
 =
 \PP^r_Z\times_ZY.
-\]
+$$
 
 The displayed morphism is the base change of the closed immersion
-\[
+$$
 j:Y\hookrightarrow\PP^s_Z
-\]
+$$
 along the projection
-\[
+$$
 \PP^r_Z\times_Z\PP^s_Z
 \longrightarrow
 \PP^s_Z.
-\]
+$$
 Closed immersions are stable under base change, so it is a closed immersion.
 
 :::
@@ -100,13 +100,13 @@ Closed immersions are stable under base change, so it is a closed immersion.
 ::: {.pf-step #s3}
 
 The composite
-\[
+$$
 X
 \xhookrightarrow{i}
 \PP^r_Y
 \hookrightarrow
 \PP^r_Z\times_Z\PP^s_Z
-\]
+$$
 is a closed immersion.
 
 ::: pf-proof
@@ -120,28 +120,28 @@ Both arrows are closed immersions, and closed immersions are stable under compos
 ::: {.pf-step #s4}
 
 The relative Segre morphism
-\[
+$$
 \operatorname{Seg}:
 \PP^r_Z\times_Z\PP^s_Z
 \longrightarrow
 \PP^{r+s+rs}_Z
-\]
+$$
 is a closed immersion.
 
 ::: pf-proof
 
 Over $\Spec\ZZ$, the ordinary Segre embedding
-\[
+$$
 \PP^r_\ZZ\times\PP^s_\ZZ
 \hookrightarrow
 \PP^{(r+1)(s+1)-1}_\ZZ
-\]
+$$
 is cut out by the $2\times2$ minors of the matrix of homogeneous coordinates, hence is a closed immersion.
 
 Since
-\[
+$$
 (r+1)(s+1)-1=r+s+rs,
-\]
+$$
 base changing this closed immersion along $Z\to\Spec\ZZ$ gives the displayed relative Segre closed immersion.
 
 :::
@@ -151,9 +151,9 @@ base changing this closed immersion along $Z\to\Spec\ZZ$ gives the displayed rel
 ::: {.pf-step #s5}
 
 The composite
-\[
+$$
 X\longrightarrow\PP^{r+s+rs}_Z
-\]
+$$
 is a closed immersion.
 
 ::: pf-proof
@@ -167,16 +167,16 @@ Compose the closed immersion of step [](#s3){.pf-ref} with the Segre closed imme
 ::: {.pf-step #s6}
 
 Therefore
-\[
+$$
 \boxed{g\circ f:X\longrightarrow Z\text{ is projective}.}
-\]
+$$
 
 ::: pf-proof
 
 Step [](#s5){.pf-ref} gives a factorization
-\[
+$$
 X\hookrightarrow\PP^{r+s+rs}_Z\longrightarrow Z
-\]
+$$
 with first arrow a closed immersion.  This is precisely the definition of projectivity.
 
 :::
@@ -190,17 +190,17 @@ Every closed immersion is projective.
 ::: pf-proof
 
 If
-\[
+$$
 i:X\hookrightarrow Y
-\]
+$$
 is a closed immersion, use
-\[
+$$
 \PP^0_Y\cong Y.
-\]
+$$
 Then
-\[
+$$
 X\xhookrightarrow{i}\PP^0_Y\longrightarrow Y
-\]
+$$
 is a projective factorization.
 Thus projective morphisms satisfy property (a) of Hartshorne II.4.8.
 
@@ -215,17 +215,17 @@ Projective morphisms are stable under arbitrary base extension.
 ::: pf-proof
 
 Let
-\[
+$$
 f:X\to Y
-\]
+$$
 be projective, with factorization
-\[
+$$
 X\hookrightarrow\PP^n_Y\to Y,
-\]
+$$
 and let $Y'\to Y$ be any morphism.
 
 After base change,
-\[
+$$
 X\times_YY'
 \hookrightarrow
 \PP^n_Y\times_YY'
@@ -233,7 +233,7 @@ X\times_YY'
 \PP^n_{Y'}
 \longrightarrow
 Y'.
-\]
+$$
 The first arrow remains a closed immersion.  Hence the base-changed morphism is projective.
 Thus property (c) of II.4.8 holds.
 

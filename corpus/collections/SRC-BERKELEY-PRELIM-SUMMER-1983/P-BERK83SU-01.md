@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 The number
-\[
+$$
 21982145917308330487013369
-\]
+$$
 is the thirteenth power of a positive integer. Determine that integer.
 :::
 

@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Suppose that $f,g\in L^1(\RR)$ have compact support, and define
-\[
+$$
 h(x)=(f*g)(x)=\int_{\RR} f(x-y)g(y)\,dy.
-\]
+$$
 Is $h$ necessarily uniformly continuous? Prove it or give a counterexample.
 :::
 
@@ -41,13 +41,13 @@ Choose compactly supported $L^1$ functions with an integrable singularity.
 
 ::: pf-proof
 Let
-\[
+$$
 f(x)=g(x)=x^{-2/3}\mathbf 1_{(0,1)}(x).
-\]
+$$
 Then $f,g\in L^1(\RR)$ because
-\[
+$$
 \int_0^1 x^{-2/3}\,dx=3<\infty,
-\]
+$$
 and both supports are contained in the compact interval $[0,1]$.
 :::
 
@@ -58,20 +58,20 @@ Compute the convolution near the origin.
 
 ::: pf-proof
 For $0<x<1$, the integrand is nonzero exactly when $0<y<x$, so
-\[
+$$
 (f*g)(x)
 =\int_0^x (x-y)^{-2/3}y^{-2/3}\,dy.
-\]
+$$
 With the substitution $y=xu$,
-\[
+$$
 (f*g)(x)
 =x^{-1/3}\int_0^1 (1-u)^{-2/3}u^{-2/3}\,du.
-\]
+$$
 The integral is the finite positive beta value $B(1/3,1/3)$. Hence
-\[
+$$
 (f*g)(x)=B(1/3,1/3)x^{-1/3}
 \qquad(0<x<1).
-\]
+$$
 Thus $(f*g)(x)\to\infty$ as $x\downarrow0$. In particular $f*g$ is not continuous, and therefore cannot be uniformly continuous.
 :::
 

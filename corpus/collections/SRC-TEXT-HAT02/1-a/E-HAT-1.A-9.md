@@ -35,9 +35,9 @@ Apply this to show that there exists a normal subgroup $K \subset G$ of finite i
 ::: {.solution}
 Let $H\le G$ have index $n$.
 Regard $G$ as the fundamental group of a connected CW complex and let
-\[
+$$
 p:\widetilde X_H\to X
-\]
+$$
 be the connected covering corresponding to $H$.
 Its fiber over the basepoint has $n$ points and can be identified with the coset set $G/H$.
 
@@ -50,11 +50,11 @@ The conjugates of $H$ are precisely the stabilizers of points of the transitive 
 ::: pf-proof
 
 For the left action of $G$ on $G/H$, the stabilizer of the coset $gH$ is
-\[
+$$
 \operatorname{Stab}(gH)
 =\{k\in G:kgH=gH\}
 =gHg^{-1}.
-\]
+$$
 In covering-space language, changing the chosen lift of the basepoint from the point corresponding to $H$ to the point corresponding to $gH$ changes the associated subgroup by conjugation to $gHg^{-1}$.
 
 :::
@@ -76,21 +76,21 @@ There are exactly $n$ points in $G/H$ and therefore at most $n$ distinct point s
 ::: {.pf-step #s3}
 
 Let
-\[
+$$
 K=\bigcap_{g\in G}gHg^{-1}.
-\]
+$$
 Then $K$ is normal in $G$ and $K\subseteq H$.
 
 ::: pf-proof
 
 Containment in $H$ follows from the term $g=1$.
 For $a\in G$,
-\[
+$$
 aKa^{-1}
 =\bigcap_{g\in G}agHg^{-1}a^{-1}
 =\bigcap_{u\in G}uHu^{-1}
 =K,
-\]
+$$
 where $u=ag$ ranges over all of $G$.
 Thus $K\trianglelefteq G$.
 
@@ -105,28 +105,28 @@ The subgroup $K$ has finite index in $G$.
 ::: pf-proof
 
 By step [](#s2){.pf-ref} only finitely many distinct conjugates of $H$ occur, say
-\[
+$$
 H_1,\dots,H_r,
 \qquad r\le n.
-\]
+$$
 Each has index $n$.
 The diagonal map
-\[
+$$
 G/(H_1\cap\cdots\cap H_r)
 \longrightarrow
 \prod_{i=1}^r G/H_i,
 \qquad
 gK\longmapsto(gH_1,\dots,gH_r)
-\]
+$$
 is injective.
 Therefore
-\[
+$$
 [G:K]\le\prod_{i=1}^r[G:H_i]=n^r<\infty.
-\]
+$$
 Equivalently, $K$ is the kernel of the monodromy homomorphism
-\[
+$$
 G\longrightarrow\operatorname{Sym}(G/H)\cong S_n,
-\]
+$$
 so in fact $[G:K]\le n!$.
 
 :::
@@ -136,9 +136,9 @@ so in fact $[G:K]\le n!$.
 ::: pf-step
 
 Thus there is a finite-index normal subgroup
-\[
+$$
 \boxed{K\trianglelefteq G,\qquad K\subseteq H.}
-\]
+$$
 
 ::: pf-proof
 

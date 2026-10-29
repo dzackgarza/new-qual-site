@@ -30,9 +30,9 @@ audit:
 
 ::: {.problem}
 Determine all $z\in\CC$ for which the power series
-\[
+$$
 \sum_{n=1}^{\infty}\frac{z^n}{n^{\log n}}
-\]
+$$
 and every term-by-term derivative of this series converge absolutely.
 :::
 

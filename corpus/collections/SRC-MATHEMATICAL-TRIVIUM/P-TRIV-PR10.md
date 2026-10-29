@@ -22,11 +22,11 @@ audit:
 ::: {.solution}
 
 Let $X$ be the distance from the needle's center to the nearest parallel line, and let $\Theta$ be the acute angle between the needle and the lines. Under the usual uniform random-throw model,
-\[
+$$
 X\sim\operatorname{Unif}[0,d/2],
 \qquad
 \Theta\sim\operatorname{Unif}[0,\pi/2],
-\]
+$$
 independently.
 
 ::: pf
@@ -34,9 +34,9 @@ independently.
 ::: {.pf-step #s1-1}
 
 The needle crosses a line exactly when
-\[
+$$
 X\leq\frac l2\sin\Theta.
-\]
+$$
 
 
 ::: pf-proof
@@ -50,11 +50,11 @@ The component of half the needle length perpendicular to the parallel lines is $
 ::: {.pf-step #s1-2}
 
 For a fixed angle $\theta$, the conditional crossing probability is
-\[
+$$
 P(\text{cross}\mid\Theta=\theta)
 =\frac{(l/2)\sin\theta}{d/2}
 =\frac ld\sin\theta.
-\]
+$$
 
 
 ::: pf-proof
@@ -68,10 +68,10 @@ Because $l<d$, one has $(l/2)\sin\theta<d/2$, so step [](#s1-1){.pf-ref} selects
 ::: {.pf-step #s1-3}
 
 Averaging over the uniformly distributed angle gives
-\[
+$$
 P(\text{cross})
 =\frac2\pi\int_0^{\pi/2}\frac ld\sin\theta\,d\theta.
-\]
+$$
 
 
 ::: pf-proof
@@ -85,9 +85,9 @@ The density of $\Theta$ on $[0,\pi/2]$ is $2/\pi$. Apply the law of total probab
 ::: {.pf-step #s1-4}
 
 Therefore
-\[
+$$
 \boxed{P(\text{cross})=\frac{2l}{\pi d}}.
-\]
+$$
 
 
 ::: pf-proof

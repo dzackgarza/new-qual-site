@@ -35,9 +35,9 @@ audit:
 
 ::: {.problem}
 By definition, an infinite product converges if its sequence of finite partial products converges to a nonzero number. Find all $z\in\CC$ for which
-\[
+$$
 \prod_{k=1}^{\infty}(1-z^k)
-\]
+$$
 converges.
 :::
 

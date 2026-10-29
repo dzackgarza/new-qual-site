@@ -30,12 +30,12 @@ Show that if $A$ is open in $X$, then the map $q: A \to p(A)$ obtained by restri
 
 ::: {.solution}
 Let $U\subseteq A$ be open in the subspace $A$. Since $A$ itself is open in $X$, every subspace-open set $U$ is actually open in $X$. Because $p$ is an open map, $p(U)$ is open in $Y$. Therefore
-\[
+$$
 p(U)\cap p(A)=p(U)
-\]
+$$
 is open in the subspace $p(A)$. Hence the restriction
-\[
+$$
 q=p|_A:A\to p(A)
-\]
+$$
 is open.
 :::

@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 The set of all points $(x, y)$ in $\RR^2$ that satisfy the equation
 
-\[
+$$
 \begin{vmatrix} x & y & 1 \\ 0 & y_1 & 1 \\ 1 & y_2 & 1 \end{vmatrix} = 0
-\]
+$$
 
 forms
 

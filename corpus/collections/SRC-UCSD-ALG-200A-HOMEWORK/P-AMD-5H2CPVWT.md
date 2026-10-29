@@ -36,9 +36,9 @@ Show: $\forall h\in H, \forall k\in K, hk = kh$
 
 ::: {.solution}
 Let $h\in H$ and $k\in K$ be arbitrary, and set
-\[
+$$
 c=hkh^{-1}k^{-1}.
-\]
+$$
 
 ::: pf
 
@@ -49,14 +49,14 @@ The element $c$ belongs to $K$.
 ::: pf-proof
 
 Since $K\trianglelefteq G$ and $k\in K$,
-\[
+$$
 hkh^{-1}\in K.
-\]
+$$
 Also $k^{-1}\in K$ because $K$ is a subgroup.
 Therefore
-\[
+$$
 c=(hkh^{-1})k^{-1}\in K.
-\]
+$$
 
 :::
 
@@ -69,14 +69,14 @@ The element $c$ belongs to $H$.
 ::: pf-proof
 
 Since $H\trianglelefteq G$ and $h^{-1}\in H$,
-\[
+$$
 kh^{-1}k^{-1}\in H.
-\]
+$$
 Also $h\in H$.
 Therefore
-\[
+$$
 c=h(kh^{-1}k^{-1})\in H.
-\]
+$$
 
 :::
 
@@ -89,17 +89,17 @@ One has $c=e$.
 ::: pf-proof
 
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
-\[
+$$
 c\in H\cap K.
-\]
+$$
 The hypothesis says
-\[
+$$
 H\cap K=\{e\}.
-\]
+$$
 Hence
-\[
+$$
 c=e.
-\]
+$$
 
 :::
 
@@ -112,13 +112,13 @@ The elements $h$ and $k$ commute.
 ::: pf-proof
 
 From step [](#s3){.pf-ref},
-\[
+$$
 hkh^{-1}k^{-1}=e.
-\]
+$$
 Multiplying on the right by $k$ and then by $h$ gives
-\[
+$$
 hk=kh.
-\]
+$$
 Since $h\in H$ and $k\in K$ were arbitrary, the two normal subgroups commute elementwise.
 
 :::

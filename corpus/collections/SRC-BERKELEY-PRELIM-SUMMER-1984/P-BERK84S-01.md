@@ -51,18 +51,18 @@ If $g\notin H$, then $gH=G\setminus H$ and $Hg=G\setminus H$.
 ::: pf-proof
 
 The left cosets of $H$ partition $G$. Since there are only two of them, namely $H$ and one other coset, every $g\notin H$ lies in that unique other left coset. Thus
-\[
+$$
 gH=G\setminus H.
-\]
+$$
 
 The right cosets of $H$ also partition $G$, and right cosets are in bijection with left cosets by inversion:
-\[
+$$
 (Hx)^{-1}=x^{-1}H.
-\]
+$$
 Hence there are also exactly two right cosets. Since $g\notin H$, the right coset $Hg$ is the unique right coset different from $H$, so
-\[
+$$
 Hg=G\setminus H.
-\]
+$$
 Therefore $gH=Hg$.
 
 :::
@@ -76,13 +76,13 @@ Therefore $H$ is normal in $G$.
 ::: pf-proof
 
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, for every $g\in G$ we have $gH=Hg$. This is equivalent to
-\[
+$$
 gHg^{-1}=H
-\]
+$$
 for every $g\in G$. Hence
-\[
+$$
 \boxed{H\trianglelefteq G}.
-\]
+$$
 
 :::
 

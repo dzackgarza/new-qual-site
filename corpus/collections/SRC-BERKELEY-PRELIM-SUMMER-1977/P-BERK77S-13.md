@@ -27,18 +27,18 @@ audit:
 
 ::: {.problem}
 Let $f$ be analytic and suppose
-\[
+$$
 f(z)=1+2z+3z^2+\cdots
 \qquad(|z|<1).
-\]
+$$
 Define real numbers $a_0,a_1,a_2,\dots$ by
-\[
+$$
 f(z)=\sum_{n=0}^\infty a_n(z+2)^n.
-\]
+$$
 What is the radius of convergence of
-\[
+$$
 \sum_{n=0}^\infty a_nz^n?
-\]
+$$
 :::
 
 ::: {.solution}

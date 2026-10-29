@@ -23,7 +23,7 @@ audit:
 
 ::: {.problem}
 Show that the system
-\[
+$$
 \frac d{dt}\begin{pmatrix}x\\y\\z\end{pmatrix}
 =
 \begin{pmatrix}
@@ -32,7 +32,7 @@ Show that the system
 0&0&3
 \end{pmatrix}
 \begin{pmatrix}x\\y\\z\end{pmatrix}
-\]
+$$
 has a solution whose norm tends to $\infty$ as $t\to-\infty$ and tends to $0$ as $t\to+\infty$.
 :::
 

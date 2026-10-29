@@ -22,20 +22,20 @@ Verify that $\int _ { 1 } ^ { \infty } \mathrm { d } t \frac { e ^ { - x t } } {
 ::: {.solution}
 
 For $x>0$, set
-\[
+$$
 y(x)=\int_1^\infty\frac{e^{-xt}}{\sqrt{t^2-1}}\,dt.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 Differentiation under the integral sign gives
-\[
+$$
 y'(x)=-\int_1^\infty\frac{t e^{-xt}}{\sqrt{t^2-1}}\,dt,
 \qquad
 y''(x)=\int_1^\infty\frac{t^2 e^{-xt}}{\sqrt{t^2-1}}\,dt.
-\]
+$$
 
 
 ::: pf-proof
@@ -49,20 +49,20 @@ For $x$ in any compact subinterval of $(0,\infty)$, the integrands obtained afte
 ::: {.pf-step #s1-2}
 
 One has
-\[
+$$
 y''(x)-y(x)
 =\int_1^\infty e^{-xt}\sqrt{t^2-1}\,dt.
-\]
+$$
 
 
 ::: pf-proof
 
 Subtract the defining integral for $y$ from the expression for $y''$ in step [](#s1-1){.pf-ref}:
-\[
+$$
 y''-y
 =\int_1^\infty
 \frac{(t^2-1)e^{-xt}}{\sqrt{t^2-1}}\,dt,
-\]
+$$
 which simplifies to the displayed integral.
 
 :::
@@ -72,24 +72,24 @@ which simplifies to the displayed integral.
 ::: {.pf-step #s1-3}
 
 Integration by parts gives
-\[
+$$
 \int_1^\infty e^{-xt}\sqrt{t^2-1}\,dt
 =-\frac1x y'(x).
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 \frac d{dt}\sqrt{t^2-1}=\frac{t}{\sqrt{t^2-1}},
-\]
+$$
 integration by parts with $u=\sqrt{t^2-1}$ and $dv=e^{-xt}dt$ yields
-\[
+$$
 \int_1^\infty e^{-xt}\sqrt{t^2-1}\,dt
 =\left[-\frac1x e^{-xt}\sqrt{t^2-1}\right]_1^\infty
 +\frac1x\int_1^\infty\frac{t e^{-xt}}{\sqrt{t^2-1}}\,dt.
-\]
+$$
 The boundary term vanishes at both endpoints, and step [](#s1-1){.pf-ref} identifies the remaining integral as $-y'(x)$.
 
 :::
@@ -99,9 +99,9 @@ The boundary term vanishes at both endpoints, and step [](#s1-1){.pf-ref} identi
 ::: {.pf-step #s1-4}
 
 Therefore
-\[
+$$
 \boxed{y''+\frac1x y'-y=0}.
-\]
+$$
 
 
 ::: pf-proof

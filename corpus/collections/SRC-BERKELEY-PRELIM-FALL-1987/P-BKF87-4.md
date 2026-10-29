@@ -22,9 +22,9 @@ audit:
 
 ::: {.problem}
 Let $u,v:\RR^2\to\RR$ be $C^1$. Assume $\nabla u$ is nowhere zero and that $\nabla v$ and $\nabla u$ are linearly dependent at every point. Given $p_0\in\RR^2$, show that there is a $C^1$ function $F$ of one variable such that
-\[
+$$
 v(x,y)=F(u(x,y))
-\]
+$$
 in some neighborhood of $p_0$.
 :::
 

@@ -36,9 +36,9 @@ The relation is reflexive.
 
 ::: pf-proof
 For every space $X$, the identity map $\operatorname{id}_X:X\to X$ is a homotopy equivalence: it is its own inverse, and
-\[
+$$
 \operatorname{id}_X\circ \operatorname{id}_X=\operatorname{id}_X.
-\]
+$$
 Hence $X\simeq X$.
 :::
 
@@ -49,17 +49,17 @@ The relation is symmetric.
 
 ::: pf-proof
 Suppose $X\simeq Y$. Then there are maps
-\[
+$$
 f:X\to Y,
 \qquad
 g:Y\to X
-\]
+$$
 with
-\[
+$$
 g\circ f\simeq \operatorname{id}_X,
 \qquad
 f\circ g\simeq \operatorname{id}_Y.
-\]
+$$
 The same two homotopies say precisely that $g$ is a homotopy equivalence with homotopy inverse $f$. Therefore $Y\simeq X$.
 :::
 
@@ -70,19 +70,19 @@ The relation is transitive.
 
 ::: pf-proof
 Suppose $X\simeq Y$ and $Y\simeq Z$. Choose homotopy equivalences
-\[
+$$
 f:X\to Y,
 \qquad
 h:Y\to Z
-\]
+$$
 with homotopy inverses
-\[
+$$
 g:Y\to X,
 \qquad
 k:Z\to Y.
-\]
+$$
 Thus
-\[
+$$
 gf\simeq \operatorname{id}_X,
 \quad
 fg\simeq \operatorname{id}_Y,
@@ -90,22 +90,22 @@ fg\simeq \operatorname{id}_Y,
 kh\simeq \operatorname{id}_Y,
 \quad
 hk\simeq \operatorname{id}_Z.
-\]
+$$
 We claim that $h\circ f:X\to Z$ has homotopy inverse $g\circ k:Z\to X$.
 Indeed, composition on either side preserves homotopies, so
-\[
+$$
 (gk)(hf)=g(kh)f
 \simeq g\operatorname{id}_Y f
 =gf
 \simeq \operatorname{id}_X.
-\]
+$$
 Similarly,
-\[
+$$
 (hf)(gk)=h(fg)k
 \simeq h\operatorname{id}_Y k
 =hk
 \simeq \operatorname{id}_Z.
-\]
+$$
 Therefore $h\circ f$ is a homotopy equivalence, so $X\simeq Z$.
 :::
 

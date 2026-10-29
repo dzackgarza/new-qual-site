@@ -32,9 +32,9 @@ Prove that $k[x,y]$ is not a Dedekind domain.
 
 ::: {.solution}
 Consider the ideal
-\[
+$$
 (x)\subset k[x,y].
-\]
+$$
 
 ::: pf
 
@@ -43,9 +43,9 @@ The ideal $(x)$ is a nonzero prime ideal.
 
 ::: pf-proof
 There is an isomorphism
-\[
+$$
 k[x,y]/(x)\cong k[y].
-\]
+$$
 Since $k[y]$ is an integral domain, $(x)$ is prime. It is nonzero because
 $x\ne0$ in $k[x,y]$.
 :::
@@ -60,9 +60,9 @@ The quotient $k[y]$ is not a field: for example, $y$ is a nonzero nonunit.
 Hence $k[x,y]/(x)$ is not a field, so $(x)$ is not maximal.
 
 Equivalently, one has the strict chain
-\[
+$$
 (x)\subsetneq(x,y)\subsetneq k[x,y].
-\]
+$$
 :::
 
 :::

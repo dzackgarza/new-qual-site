@@ -18,20 +18,20 @@ audit:
 ::: {.problem}
 Let $f:\RR\to[0,\infty)$ be measurable with $\operatorname{supp}f\subset[0,1]$.
 Put
-\[
+$$
 X=\{x\in[0,1]:f(x)>1\},\qquad
 Y=\{x\in[0,1]:f(x)=1\},\qquad
 Z=\{x\in[0,1]:f(x)<1\}.
-\]
+$$
 Assuming
-\[
+$$
 \lim_{n\to\infty}\int_{\RR}f^n
-\]
+$$
 exists in $[0,\infty]$, prove that there are $\alpha,\beta,\gamma\in[0,\infty]$ such that
-\[
+$$
 \lim_{n\to\infty}\int_{\RR}f^n
 =\alpha\lambda(X)+\beta\lambda(Y)+\gamma\lambda(Z).
-\]
+$$
 Determine the relevant contributions using monotone and dominated convergence.
 :::
 

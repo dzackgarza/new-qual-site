@@ -18,10 +18,10 @@ audit:
 ::: {.problem}
 Let $f$ be entire.
 Suppose there are a constant $M$ and a fixed positive integer $n$ such that
-\[
+$$
 |f(z)|\le M|z|^n
 \qquad(z\in\CC).
-\]
+$$
 Prove that $f$ is a polynomial of degree at most $n$.
 :::
 
@@ -31,15 +31,15 @@ Prove that $f$ is a polynomial of degree at most $n$.
 
 ::: {.pf-step #s1-1}
 
-For every \(R>0\),
-\[
+For every $R>0$,
+$$
 \max_{|z|=R}|f(z)|\le MR^n.
-\]
+$$
 
 
 ::: pf-proof
 
-This is the given growth estimate restricted to the circle \(|z|=R\).
+This is the given growth estimate restricted to the circle $|z|=R$.
 
 :::
 
@@ -47,25 +47,25 @@ This is the given growth estimate restricted to the circle \(|z|=R\).
 
 ::: {.pf-step #s1-2}
 
-For every integer \(k\ge0\) and every \(R>0\),
-\[
+For every integer $k\ge0$ and every $R>0$,
+$$
 |f^{(k)}(0)|
 \le
 k!MR^{n-k}.
-\]
+$$
 
 
 ::: pf-proof
 
-By Cauchy's formula for derivatives on the circle \(|z|=R\),
-\[
+By Cauchy's formula for derivatives on the circle $|z|=R$,
+$$
 f^{(k)}(0)
 =
 \frac{k!}{2\pi i}
 \int_{|z|=R}\frac{f(z)}{z^{k+1}}\,dz.
-\]
+$$
 Taking absolute values and using the ML estimate together with step [](#s1-1){.pf-ref} gives
-\[
+$$
 \begin{aligned}
 |f^{(k)}(0)|
 &\le
@@ -75,7 +75,7 @@ Taking absolute values and using the ML estimate together with step [](#s1-1){.p
 &=
 k!MR^{n-k}.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -83,21 +83,21 @@ k!MR^{n-k}.
 
 ::: {.pf-step #s1-3}
 
-If \(k>n\), then
-\[
+If $k>n$, then
+$$
 f^{(k)}(0)=0.
-\]
+$$
 
 
 ::: pf-proof
 
-For \(k>n\), step [](#s1-2){.pf-ref} gives
-\[
+For $k>n$, step [](#s1-2){.pf-ref} gives
+$$
 |f^{(k)}(0)|
 \le
 k!M R^{n-k}
-\]
-for every \(R>0\). Since \(n-k<0\), the right-hand side tends to \(0\) as \(R\to\infty\). Hence \(|f^{(k)}(0)|=0\).
+$$
+for every $R>0$. Since $n-k<0$, the right-hand side tends to $0$ as $R\to\infty$. Hence $|f^{(k)}(0)|=0$.
 
 :::
 
@@ -105,23 +105,23 @@ for every \(R>0\). Since \(n-k<0\), the right-hand side tends to \(0\) as \(R\to
 
 ::: {.pf-step #s1-4}
 
-The Taylor series of \(f\) about \(0\) terminates after degree \(n\):
-\[
+The Taylor series of $f$ about $0$ terminates after degree $n$:
+$$
 f(z)
 =
 \sum_{k=0}^{n}\frac{f^{(k)}(0)}{k!}z^k.
-\]
+$$
 
 
 ::: pf-proof
 
-Because \(f\) is entire, its Taylor series about \(0\) converges to \(f\) for every \(z\in\CC\):
-\[
+Because $f$ is entire, its Taylor series about $0$ converges to $f$ for every $z\in\CC$:
+$$
 f(z)
 =
 \sum_{k=0}^{\infty}\frac{f^{(k)}(0)}{k!}z^k.
-\]
-Step [](#s1-3){.pf-ref} shows that every coefficient with \(k>n\) is zero, so only the terms through degree \(n\) remain.
+$$
+Step [](#s1-3){.pf-ref} shows that every coefficient with $k>n$ is zero, so only the terms through degree $n$ remain.
 
 :::
 
@@ -130,14 +130,14 @@ Step [](#s1-3){.pf-ref} shows that every coefficient with \(k>n\) is zero, so on
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 \boxed{f\text{ is a polynomial of degree at most }n.}
-\]
+$$
 
 
 ::: pf-proof
 
-The expression in step [](#s1-4){.pf-ref} is a polynomial with no term of degree greater than \(n\), and it equals \(f\) everywhere.
+The expression in step [](#s1-4){.pf-ref} is a polynomial with no term of degree greater than $n$, and it equals $f$ everywhere.
 
 :::
 

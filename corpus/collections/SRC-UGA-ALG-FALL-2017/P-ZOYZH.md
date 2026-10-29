@@ -56,9 +56,9 @@ The matrix algebra $M_n(k)$ is simple.
 ::: pf-proof
 
 Let $I$ be a nonzero two-sided ideal of $M_n(k)$ and choose a nonzero matrix $A=(a_{ij})\in I$. Choose indices $r,c$ with $a_{rc}\neq0$. Let $E_{ij}$ be the standard matrix units. For arbitrary $i,j$ one has
-\[
+$$
 E_{ir}AE_{cj}=a_{rc}E_{ij}\in I.
-\]
+$$
 The scalar matrix $a_{rc}^{-1}I_n$ belongs to $M_n(k)$, so two-sided ideal closure gives $E_{ij}\in I$ for every $i,j$. In particular, $I_n=\sum_{i=1}^nE_{ii}\in I$. Every matrix $B$ satisfies $B=BI_n\in I$, proving $I=M_n(k)$.
 
 :::

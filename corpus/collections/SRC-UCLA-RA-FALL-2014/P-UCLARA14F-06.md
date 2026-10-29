@@ -34,31 +34,31 @@ $X\ne\{0\}$.
 ::: pf-step
 
 Choose a countable dense set
-\[
+$$
 \{\varphi_1,\varphi_2,\ldots\}\subseteq X^*.
-\]
+$$
 For each $n$, choose $x_n\in X$ with
-\[
+$$
 \|x_n\|=1
-\]
+$$
 and
-\[
+$$
 \boxed{
 |\varphi_n(x_n)|
 \ge
 \frac12\|\varphi_n\|}.
-\]
+$$
 
 
 ::: pf-proof
 
 Separability of $X^*$ gives the countable dense family. By the definition of
 the operator norm,
-\[
+$$
 \|\varphi_n\|
 =
 \sup_{\|x\|\le1}|\varphi_n(x)|.
-\]
+$$
 If $\varphi_n\ne0$, there exists a unit vector $x_n$ satisfying the displayed
 inequality. If $\varphi_n=0$, choose any unit vector. The Axiom of Choice
 allows these choices to be made simultaneously.
@@ -70,48 +70,48 @@ allows these choices to be made simultaneously.
 ::: {.pf-step #s1-2}
 
 Let
-\[
+$$
 M
 =
 \overline{\operatorname{span}}\{x_1,x_2,\ldots\}.
-\]
+$$
 Then
-\[
+$$
 \boxed{M=X}.
-\]
+$$
 
 
 ::: pf-proof
 
 Suppose instead that $M\ne X$. Choose
-\[
+$$
 y\in X\setminus M.
-\]
+$$
 By the Hahn--Banach separation theorem, there exists
-\[
+$$
 \varphi\in X^*
-\]
+$$
 such that
-\[
+$$
 \varphi|_M=0
 \qquad\text{and}\qquad
 \varphi(y)\ne0.
-\]
+$$
 In particular,
-\[
+$$
 \varphi\ne0.
-\]
+$$
 
 Since $\{\varphi_n\}$ is dense in $X^*$, choose a subsequence
-\[
+$$
 \varphi_{n_k}\to\varphi
-\]
+$$
 in operator norm. Because $x_{n_k}\in M$,
-\[
+$$
 \varphi(x_{n_k})=0.
-\]
+$$
 Hence
-\[
+$$
 \begin{aligned}
 \frac12\|\varphi_{n_k}\|
 &\le
@@ -124,19 +124,19 @@ Hence
 &=
 \|\varphi_{n_k}-\varphi\|.
 \end{aligned}
-\]
+$$
 Therefore
-\[
+$$
 \|\varphi_{n_k}\|\to0.
-\]
+$$
 But also
-\[
+$$
 \varphi_{n_k}\to\varphi
-\]
+$$
 in norm, so continuity of the norm gives
-\[
+$$
 \|\varphi\|=0,
-\]
+$$
 contradicting $\varphi\ne0$. Thus $M=X$.
 
 :::
@@ -152,7 +152,7 @@ subset.
 ::: pf-proof
 
 If $X$ is a real Banach space, let
-\[
+$$
 D
 =
 \left\{
@@ -162,21 +162,21 @@ m\in\NN,\quad
 q_j\in\QQ,\quad
 n_j\in\NN
 \right\}.
-\]
+$$
 This set is countable because it is a countable union of finite products of
 countable sets.
 
 Every finite real linear combination of the $x_n$ can be approximated
 arbitrarily well by replacing its real coefficients by rational numbers, so
 $D$ is dense in
-\[
+$$
 \operatorname{span}\{x_n\}.
-\]
+$$
 
 If $X$ is complex, use coefficients in
-\[
+$$
 \QQ+i\QQ
-\]
+$$
 instead; the same argument applies.
 
 :::
@@ -191,13 +191,13 @@ The Banach space $X$ is separable.
 ::: pf-proof
 
 By step [](#s1-2){.pf-ref},
-\[
+$$
 \overline{\operatorname{span}}\{x_n\}=X.
-\]
+$$
 By step [](#s1-3){.pf-ref}, the span contains a countable dense subset $D$. Therefore
-\[
+$$
 \overline D=X,
-\]
+$$
 so $X$ is separable.
 
 :::

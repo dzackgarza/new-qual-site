@@ -27,9 +27,9 @@ audit:
 ::: {.problem}
 Let $R$ be a commutative ring with $1$.
 An $R$-module $M$ is called flat if whenever $f \colon N \to P$ is an injective $R$-linear map of $R$-modules then the induced map
-\[
+$$
 M \otimes_R N \longrightarrow M \otimes_R P
-\]
+$$
 is also injective.
 If $R$ is a PID and $M$ is a finitely generated $R$-module then show that $M$ is flat if and only if it is torsion free.
 :::
@@ -44,33 +44,33 @@ If $M$ is flat, then $M$ is torsion-free.
 ::: pf-proof
 Assume $R$ is a PID and $M$ is flat.
 Since a PID is an integral domain, multiplication by any nonzero element $r\in R$ defines an injective $R$-linear map
-\[
+$$
 \mu_r:R\longrightarrow R,
 \qquad
 x\longmapsto rx.
-\]
+$$
 Flatness of $M$ implies that the induced map
-\[
+$$
 1_M\otimes\mu_r:
 M\otimes_RR\longrightarrow M\otimes_RR
-\]
+$$
 is injective.
 Under the canonical identification
-\[
+$$
 M\otimes_RR\cong M,
 \qquad
 m\otimes a\longmapsto am,
-\]
+$$
 this map is exactly multiplication by $r$ on $M$:
-\[
+$$
 m\longmapsto rm.
-\]
+$$
 Hence
-\[
+$$
 rm=0,
 \qquad
 r\neq0
-\]
+$$
 forces $m=0$.
 Thus $M$ is torsion-free.
 :::
@@ -82,22 +82,22 @@ If $M$ is finitely generated and torsion-free, then $M$ is free.
 
 ::: pf-proof
 By the structure theorem for finitely generated modules over a PID,
-\[
+$$
 M\cong R^s\oplus T,
-\]
+$$
 where $T$ is the torsion submodule, equivalently a finite direct sum of cyclic modules of the form
-\[
+$$
 R/(d_i)
-\]
+$$
 with nonzero nonunits $d_i\in R$.
 If $M$ is torsion-free, then
-\[
+$$
 T=0.
-\]
+$$
 Therefore
-\[
+$$
 M\cong R^s
-\]
+$$
 for some $s\ge0$, so $M$ is free.
 :::
 
@@ -108,25 +108,25 @@ Every free module is flat.
 
 ::: pf-proof
 Let $F$ be a free $R$-module, say
-\[
+$$
 F\cong\bigoplus_{j\in J}R.
-\]
+$$
 For any $R$-module $N$,
-\[
+$$
 F\otimes_RN
 \cong
 \bigoplus_{j\in J}N.
-\]
+$$
 If $f:N\to P$ is injective, then the induced map
-\[
+$$
 F\otimes_RN\longrightarrow F\otimes_RP
-\]
+$$
 identifies with the direct sum of copies of $f$:
-\[
+$$
 \bigoplus_{j\in J}N
 \longrightarrow
 \bigoplus_{j\in J}P.
-\]
+$$
 A direct sum of injective maps is injective.
 Hence $F$ is flat.
 :::

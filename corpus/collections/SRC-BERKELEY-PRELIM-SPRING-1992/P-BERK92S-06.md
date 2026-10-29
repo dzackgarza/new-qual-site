@@ -20,13 +20,13 @@ audit:
 
 ::: {.problem}
 Let $p$ be prime with
-\[
+$$
 p\equiv3\pmod4.
-\]
+$$
 Suppose
-\[
+$$
 x^4+1=g(x)h(x)
-\]
+$$
 in $\FF_p[x]$, where $g,h$ are quadratic. Prove that both $g$ and $h$ are irreducible over $\FF_p$.
 :::
 

@@ -29,19 +29,19 @@ If $A$ and $B$ are finite, show that the set of all functions $f: A \to B$ is fi
 :::
 
 ::: {.solution}
-Let \(|A|=n\) and \(|B|=m\). After choosing a bijection
-\[
+Let $|A|=n$ and $|B|=m$. After choosing a bijection
+$$
 A\cong\{1,\dots,n\},
-\]
-a function \(f:A\to B\) is uniquely determined by the \(n\)-tuple
-\[
+$$
+a function $f:A\to B$ is uniquely determined by the $n$-tuple
+$$
 (f(1),\dots,f(n))\in B^n.
-\]
-Thus the set \(B^A\) of all functions \(A\to B\) is in bijection with \(B^n\). A finite cartesian product of finite sets is finite, so \(B^n\), and hence \(B^A\), is finite.
+$$
+Thus the set $B^A$ of all functions $A\to B$ is in bijection with $B^n$. A finite cartesian product of finite sets is finite, so $B^n$, and hence $B^A$, is finite.
 
-More precisely, when \(n,m>0\),
-\[
+More precisely, when $n,m>0$,
+$$
 |B^A|=m^n.
-\]
-If \(A=\varnothing\), there is exactly one function \(A\to B\); if \(B=\varnothing\) and \(A\ne\varnothing\), there are none. These cases are finite as well.
+$$
+If $A=\varnothing$, there is exactly one function $A\to B$; if $B=\varnothing$ and $A\ne\varnothing$, there are none. These cases are finite as well.
 :::

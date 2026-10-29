@@ -36,27 +36,27 @@ If $X$ is compact, then $\operatorname{gr}: \mathcal{C}(X, Y) \to \mathcal{H}$ i
 Write $d_\square((x,y),(x',y'))=\max\{d_X(x,x'),d_Y(y,y')\}$ and $d_H$ for the Hausdorff metric.
 
 (a) Distinct functions have distinct graphs, so $\operatorname{gr}$ is injective. If $\|f-h\|_\infty<\varepsilon$, then for every $x$, $(x,f(x))$ lies within $\varepsilon$ of $(x,h(x))$, and conversely. Thus
-\[
+$$
 d_H(G_f,G_h)\le \|f-h\|_\infty,
-\]
+$$
 so the graph map is $1$-Lipschitz.
 
 (b) Fix uniformly continuous $f$ and $\varepsilon>0$. Choose $\delta<\varepsilon/2$ so that $d_X(x,x')<\delta$ implies $d_Y(f(x),f(x'))<\varepsilon/2$. If $d_H(G_f,G_h)<\delta$, then for each $x$ there is $x'$ with
-\[
+$$
 d_X(x,x')<\delta,\qquad d_Y(h(x),f(x'))<\delta.
-\]
+$$
 Hence
-\[
+$$
 d_Y(h(x),f(x))<\delta+\varepsilon/2<\varepsilon.
-\]
+$$
 Taking the supremum gives $\|h-f\|_\infty<\varepsilon$. Thus $g^{-1}$ is continuous at $G_f$.
 
 (c) Take $X=\{1/k: k\in\ZZ_+\}\subset\RR$ and $Y=\RR$, with the usual metrics. Every function on the discrete space $X$ is continuous. Let $f(1/k)=(-1)^k$, and for $n\ge1$ let $h_n(1/k)=(-1)^k$ for $k\le n$ and $h_n(1/k)=(-1)^{k+1}$ for $k>n$. The graphs lie in $(0,1]\times[-1,1]$, so they are bounded, and they are closed because the functions are continuous.
 
 For $k>n$, the point $(1/k,h_n(1/k))=(1/k,f(1/(k+1)))$ of $G_{h_n}$ lies within $1/k-1/(k+1)<1/n^2$ of the point $(1/(k+1),f(1/(k+1)))$ of $G_f$. Likewise $(1/k,f(1/k))=(1/k,h_n(1/(k+1)))$ lies within $1/n^2$ of $G_{h_n}$. The points with $k\le n$ are common to both graphs. Hence
-\[
+$$
 d_H(G_f,G_{h_n})\le 1/n^2\longrightarrow0.
-\]
+$$
 But $|h_n(1/(n+1))-f(1/(n+1))|=2$, so $\|h_n-f\|_\infty=2$ for every $n$. Thus $g^{-1}$ is not continuous at $G_f$. Here $f$ is not uniformly continuous, since $|f(1/k)-f(1/(k+1))|=2$ while $1/k-1/(k+1)\to0$.
 
 (d) If $X$ is compact, every continuous $f:X\to Y$ is uniformly continuous. By (b), the inverse from the image $\mathcal H_0$ to $C(X,Y)$ is continuous at every graph. Together with (a), $\operatorname{gr}$ is a homeomorphism onto its image, hence an embedding.

@@ -26,9 +26,9 @@ Let $X$ be completely regular Hausdorff and consider its Čech--Stone compactifi
 ::: {.solution}
 
 Let
-\[
+$$
 i:X\hookrightarrow\beta X
-\]
+$$
 denote the canonical embedding.
 
 ::: pf
@@ -36,9 +36,9 @@ denote the canonical embedding.
 ::: {.pf-step #s1-1}
 
 The space $\beta X$ is compact Hausdorff, and
-\[
+$$
 i(X)
-\]
+$$
 is dense in $\beta X$.
 
 
@@ -58,17 +58,17 @@ The Čech--Stone compactification is characterized by the following
 universal extension property:
 
 for every compact Hausdorff space $K$ and every continuous map
-\[
+$$
 f:X\to K,
-\]
+$$
 there exists a unique continuous map
-\[
+$$
 \bar f:\beta X\to K
-\]
+$$
 such that
-\[
+$$
 \bar f\circ i=f.
-\]
+$$
 
 
 ::: pf-proof
@@ -78,19 +78,19 @@ Existence says that every map from $X$ to a compact Hausdorff target extends
 across the compactification.
 
 For uniqueness, suppose
-\[
+$$
 F,G:\beta X\to K
-\]
+$$
 are two such extensions. They agree on the dense subset $i(X)$. Since $K$ is
 Hausdorff, the equalizer
-\[
+$$
 \{y\in\beta X:F(y)=G(y)\}
-\]
+$$
 is closed. It contains the dense set $i(X)$, hence equals all of $\beta X$.
 Thus
-\[
+$$
 F=G.
-\]
+$$
 
 :::
 
@@ -99,29 +99,29 @@ F=G.
 ::: {.pf-step #s1-3}
 
 Equivalently, every bounded continuous real-valued function
-\[
+$$
 f\in C_b(X)
-\]
+$$
 extends uniquely to a continuous function
-\[
+$$
 \bar f\in C(\beta X).
-\]
+$$
 
 
 ::: pf-proof
 
 If
-\[
+$$
 f:X\to\RR
-\]
+$$
 is bounded, its image lies in some compact interval
-\[
+$$
 [-M,M].
-\]
+$$
 Apply step [](#s1-2){.pf-ref} with
-\[
+$$
 K=[-M,M].
-\]
+$$
 
 Conversely, the extension property for all compact Hausdorff targets follows
 from the real-valued extension property together with the standard embedding
@@ -137,61 +137,61 @@ $K$.
 ::: {.pf-step #s1-4}
 
 The pair
-\[
+$$
 (\beta X,i)
-\]
+$$
 is unique up to a unique homeomorphism fixing $X$.
 
 
 ::: pf-proof
 
 Suppose
-\[
+$$
 (Y,j)
-\]
+$$
 is another compactification satisfying the same universal property.
 Apply the universal property of $\beta X$ to
-\[
+$$
 j:X\to Y
-\]
+$$
 to obtain
-\[
+$$
 F:\beta X\to Y
-\]
+$$
 with
-\[
+$$
 F\circ i=j.
-\]
+$$
 
 Similarly, apply the universal property of $Y$ to
-\[
+$$
 i:X\to\beta X
-\]
+$$
 to obtain
-\[
+$$
 G:Y\to\beta X
-\]
+$$
 with
-\[
+$$
 G\circ j=i.
-\]
+$$
 
 Then
-\[
+$$
 G\circ F:\beta X\to\beta X
-\]
+$$
 and
-\[
+$$
 \operatorname{id}_{\beta X}
-\]
+$$
 agree on the dense set $i(X)$. By uniqueness in step [](#s1-2){.pf-ref},
-\[
+$$
 G\circ F=\operatorname{id}_{\beta X}.
-\]
+$$
 Similarly,
-\[
+$$
 F\circ G=\operatorname{id}_Y.
-\]
+$$
 Thus $F$ is the unique homeomorphism carrying $i(x)$ to $j(x)$ for every
 $x\in X$.
 
@@ -202,7 +202,7 @@ $x\in X$.
 ::: {.pf-step #s1-5}
 
 Therefore the characteristic description requested in part (1) is:
-\[
+$$
 \boxed{
 \begin{gathered}
 \beta X\text{ is compact Hausdorff},\\
@@ -211,7 +211,7 @@ X\text{ embeds densely in }\beta X,\\
 \text{ with }K\text{ compact Hausdorff}\
 \text{extends uniquely over }\beta X.
 \end{gathered}}
-\]
+$$
 
 
 ::: pf-proof
@@ -232,9 +232,9 @@ Part (2) cannot be answered from the retained source.
 The retained extraction does not preserve the spaces or sets whose
 cardinalities are requested. Cardinalities of Čech--Stone compactifications
 depend essentially on the underlying spaces; for example,
-\[
+$$
 |\beta X|
-\]
+$$
 cannot be determined from the symbol $\beta$ alone.
 
 Thus supplying numerical or cardinal answers would require reconstructing

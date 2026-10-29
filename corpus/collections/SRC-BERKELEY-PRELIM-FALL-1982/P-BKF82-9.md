@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let $f\ge0$ be continuous on $[0,1]$ and suppose
-\[
+$$
 f(t)^2\le1+2\int_0^t f(s)\,ds.
-\]
+$$
 Show that $f(t)\le1+t$ for $t\in[0,1]$.
 :::
 

@@ -21,9 +21,9 @@ audit:
 
 ::: {.problem}
 For which real values of $p$ does the differential equation
-\[
+$$
 y''+2py'+y=3
-\]
+$$
 admit a solution with infinitely many critical points?
 :::
 

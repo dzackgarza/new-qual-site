@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 For a real parameter $\lambda$, find all solutions on $0\le x\le1$ of
-\[
+$$
 \varphi(x)=e^x+\lambda\int_0^x e^{x-y}\varphi(y)\,dy
-\]
+$$
 and
-\[
+$$
 \psi(x)=e^x+\lambda\int_0^1 e^{x-y}\psi(y)\,dy.
-\]
+$$
 :::
 
 ::: {.solution}

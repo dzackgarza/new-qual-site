@@ -37,64 +37,64 @@ Give definitions of each of the following:
 
 ::: {.pf-step #s1-1}
 
-A Dynkin system on \(\Omega\) is a collection \(\mathcal D\subseteq\mathcal P(\Omega)\) such that \(\Omega\in\mathcal D\), whenever \(A,B\in\mathcal D\) with \(A\subseteq B\) one has \(B\setminus A\in\mathcal D\), and whenever \((A_n)_{n\ge1}\subseteq\mathcal D\) are pairwise disjoint one has \(\bigcup_{n=1}^\infty A_n\in\mathcal D\).
+A Dynkin system on $\Omega$ is a collection $\mathcal D\subseteq\mathcal P(\Omega)$ such that $\Omega\in\mathcal D$, whenever $A,B\in\mathcal D$ with $A\subseteq B$ one has $B\setminus A\in\mathcal D$, and whenever $(A_n)_{n\ge1}\subseteq\mathcal D$ are pairwise disjoint one has $\bigcup_{n=1}^\infty A_n\in\mathcal D$.
 
 :::
 
 ::: pf-step
 
-An outer measure on \(\Omega\) is a function
-\[
+An outer measure on $\Omega$ is a function
+$$
 \mu^*:\mathcal P(\Omega)\longrightarrow[0,\infty]
-\]
-such that \(\mu^*(\varnothing)=0\), \(A\subseteq B\) implies \(\mu^*(A)\le\mu^*(B)\), and
-\[
+$$
+such that $\mu^*(\varnothing)=0$, $A\subseteq B$ implies $\mu^*(A)\le\mu^*(B)$, and
+$$
 \mu^*\!\left(\bigcup_{n=1}^\infty A_n\right)
 \le \sum_{n=1}^\infty \mu^*(A_n)
-\]
-for every sequence \((A_n)_{n\ge1}\subseteq\mathcal P(\Omega)\).
+$$
+for every sequence $(A_n)_{n\ge1}\subseteq\mathcal P(\Omega)$.
 
 :::
 
 ::: pf-step
 
-If \(\mu^*\) is an outer measure on \(\Omega\), a set \(E\subseteq\Omega\) is \(\mu^*\)-measurable when
-\[
+If $\mu^*$ is an outer measure on $\Omega$, a set $E\subseteq\Omega$ is $\mu^*$-measurable when
+$$
 \mu^*(A)=\mu^*(A\cap E)+\mu^*(A\setminus E)
-\]
-for every \(A\subseteq\Omega\).
+$$
+for every $A\subseteq\Omega$.
 
 :::
 
 ::: pf-step
 
-A real- or complex-valued function \(f\) on \((\Omega,\mathcal A,\mu)\) is integrable when it is \(\mathcal A\)-measurable and
-\[
+A real- or complex-valued function $f$ on $(\Omega,\mathcal A,\mu)$ is integrable when it is $\mathcal A$-measurable and
+$$
 \int_\Omega |f|\,d\mu<\infty.
-\]
+$$
 
 :::
 
 ::: pf-step
 
-For measures \(\mu\) and \(\nu\) on the same measurable space, \(\mu\) is absolutely continuous with respect to \(\nu\), written \(\mu\ll\nu\), when
-\[
+For measures $\mu$ and $\nu$ on the same measurable space, $\mu$ is absolutely continuous with respect to $\nu$, written $\mu\ll\nu$, when
+$$
 \nu(E)=0\quad\Longrightarrow\quad\mu(E)=0
-\]
-for every measurable set \(E\).
+$$
+for every measurable set $E$.
 
 :::
 
 ::: {.pf-step #s1-6}
 
-A normed vector space is a vector space \(V\) over \(\RR\) or \(\CC\) together with a function \(\|\cdot\|:V\to[0,\infty)\) such that, for all \(x,y\in V\) and scalars \(\lambda\),
-\[
+A normed vector space is a vector space $V$ over $\RR$ or $\CC$ together with a function $\|\cdot\|:V\to[0,\infty)$ such that, for all $x,y\in V$ and scalars $\lambda$,
+$$
 \|x\|=0\Longleftrightarrow x=0,
 \qquad
 \|\lambda x\|=|\lambda|\,\|x\|,
 \qquad
 \|x+y\|\le\|x\|+\|y\|.
-\]
+$$
 
 :::
 

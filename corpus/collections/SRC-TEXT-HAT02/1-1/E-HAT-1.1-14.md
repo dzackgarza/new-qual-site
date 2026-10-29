@@ -31,15 +31,15 @@ Show that the isomorphism $\pi_1(X \times Y) \approx \pi_1(X) \times \pi_1(Y)$ i
 
 ::: {.solution}
 Fix the basepoint $(x_0,y_0)\in X\times Y$ and define
-\[
+$$
 \Psi:\pi_1(X\times Y,(x_0,y_0))
 \longrightarrow
 \pi_1(X,x_0)\times\pi_1(Y,y_0)
-\]
+$$
 by
-\[
+$$
 \Psi([f])=([p_1\circ f],[p_2\circ f]).
-\]
+$$
 
 ::: pf
 
@@ -50,18 +50,18 @@ The map $\Psi$ is a homomorphism.
 ::: pf-proof
 
 For based loops $f,g$ in $X\times Y$,
-\[
+$$
 p_i\circ(f\cdot g)=(p_i\circ f)\cdot(p_i\circ g)
-\]
+$$
 up to the standard concatenation parametrization.
 Hence
-\[
+$$
 \Psi([f][g])
 =
 \bigl([p_1f][p_1g],[p_2f][p_2g]\bigr)
 =
 \Psi([f])\Psi([g]).
-\]
+$$
 The definition depends only on the based homotopy class because composing a based homotopy with either projection gives a based homotopy in the corresponding factor.
 
 :::
@@ -71,30 +71,30 @@ The definition depends only on the based homotopy class because composing a base
 ::: pf-step
 
 Define
-\[
+$$
 \Theta:\pi_1(X,x_0)\times\pi_1(Y,y_0)
 \longrightarrow
 \pi_1(X\times Y,(x_0,y_0))
-\]
+$$
 by
-\[
+$$
 \Theta([a],[b])=[t\mapsto(a(t),b(t))].
-\]
+$$
 Then $\Theta$ is well defined.
 
 ::: pf-proof
 
 If $a\simeq a'$ and $b\simeq b'$ relative to endpoints, let
-\[
+$$
 A:I\times I\to X,
 \qquad
 B:I\times I\to Y
-\]
+$$
 be the two based homotopies.
 Then
-\[
+$$
 H(s,t)=(A(s,t),B(s,t))
-\]
+$$
 is a based homotopy in $X\times Y$ from $(a,b)$ to $(a',b')$.
 Thus the class defining $\Theta$ depends only on $[a]$ and $[b]$.
 
@@ -105,20 +105,20 @@ Thus the class defining $\Theta$ depends only on $[a]$ and $[b]$.
 ::: {.pf-step #s3}
 
 One has
-\[
+$$
 \Psi\circ\Theta=\operatorname{id}.
-\]
+$$
 
 ::: pf-proof
 
 For $([a],[b])$,
-\[
+$$
 \Psi\Theta([a],[b])
 =
 \Psi([t\mapsto(a(t),b(t))])
 =
 ([a],[b]),
-\]
+$$
 since the two projections recover $a$ and $b$ exactly.
 
 :::
@@ -128,24 +128,24 @@ since the two projections recover $a$ and $b$ exactly.
 ::: {.pf-step #s4}
 
 One also has
-\[
+$$
 \Theta\circ\Psi=\operatorname{id}.
-\]
+$$
 
 ::: pf-proof
 
 If $f:I\to X\times Y$ is a based loop, then for every $t$
-\[
+$$
 f(t)=\bigl(p_1(f(t)),p_2(f(t))\bigr).
-\]
+$$
 Therefore the loop used to define
-\[
+$$
 \Theta\Psi([f])
-\]
+$$
 is literally $f$, so
-\[
+$$
 \Theta\Psi([f])=[f].
-\]
+$$
 
 :::
 
@@ -154,9 +154,9 @@ is literally $f$, so
 ::: pf-step
 
 Thus $\Psi$ is the product isomorphism, and it is exactly
-\[
+$$
 [f]\longmapsto\bigl(p_{1*}([f]),p_{2*}([f])\bigr).
-\]
+$$
 
 ::: pf-proof
 

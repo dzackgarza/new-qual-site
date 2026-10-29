@@ -40,26 +40,26 @@ There are nonempty open intervals $E_n$ with $m(E_n)\le2^{-n}$ such that every o
 ::: pf-proof
 
 Let $(B_j)_{j\ge1}$ enumerate the open intervals with rational endpoints. Choose a sequence $j(n)$ such that every positive integer occurs infinitely often; for example
-\[
+$$
 1,1,2,1,2,3,1,2,3,4,\ldots.
-\]
+$$
 
 For each $n$, choose a nonempty open interval
-\[
+$$
 E_n\subset B_{j(n)}
-\]
+$$
 with
-\[
+$$
 m(E_n)\le 2^{-n}.
-\]
+$$
 Set
-\[
+$$
 a_n:=\frac1{m(E_n)}.
-\]
+$$
 Then
-\[
+$$
 \int_{\RR} a_n\mathbf1_{E_n}(x)\,dx=1.
-\]
+$$
 
 :::
 
@@ -72,31 +72,31 @@ With $a_n\coloneqq m(E_n)^{-1}$, the series $F\coloneqq\sum_n a_n\mathbf1_{E_n}$
 ::: pf-proof
 
 Define
-\[
+$$
 F(x):=\sum_{n=1}^\infty a_n\mathbf1_{E_n}(x).
-\]
+$$
 This is a Borel measurable $[0,\infty]$-valued function. Since
-\[
+$$
 \sum_{n=1}^\infty m(E_n)<\infty,
-\]
+$$
 the Borel--Cantelli lemma gives
-\[
+$$
 m\!\left(\limsup_{n\to\infty}E_n\right)=0.
-\]
+$$
 Thus almost every $x$ belongs to only finitely many of the sets $E_n$, so $F(x)<\infty$ almost everywhere.
 
 Let
-\[
+$$
 N:=\{x:F(x)=\infty\}.
-\]
+$$
 Then $N$ is Borel and $m(N)=0$. Define
-\[
+$$
 f(x):=
 \begin{cases}
 F(x),&x\notin N,\\
 0,&x\in N.
 \end{cases}
-\]
+$$
 Then $f:\RR\to[0,\infty)$ is Borel measurable and finite everywhere.
 
 :::
@@ -110,15 +110,15 @@ Every nonempty interval has infinite integral.
 ::: pf-proof
 
 Fix $a<b$. Choose a rational interval $B_j$ with
-\[
+$$
 B_j\subset(a,b).
-\]
+$$
 There are infinitely many $n$ with $j(n)=j$, and for all such $n$,
-\[
+$$
 E_n\subset B_j\subset(a,b).
-\]
+$$
 By Tonelli's theorem,
-\[
+$$
 \begin{aligned}
 \int_a^b F(x)\,dx
 &=\sum_{n=1}^\infty a_n m(E_n\cap(a,b))\\
@@ -126,11 +126,11 @@ By Tonelli's theorem,
 &=\sum_{\{n:j(n)=j\}}1
 =\infty.
 \end{aligned}
-\]
+$$
 Since $f=F$ almost everywhere, the same is true for $f$:
-\[
+$$
 \boxed{\int_a^b f(x)\,dx=\infty\quad\text{for every }a<b.}
-\]
+$$
 Thus such a function exists.
 
 :::

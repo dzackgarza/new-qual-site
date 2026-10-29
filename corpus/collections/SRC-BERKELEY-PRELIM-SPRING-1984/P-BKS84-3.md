@@ -23,17 +23,17 @@ audit:
 
 ::: {.problem}
 Let $f:[0,1]\to\RR$ be continuous with
-\[
+$$
 f(0)=f(1)=0.
-\]
+$$
 Suppose $f''$ exists on $(0,1)$ and
-\[
+$$
 f''+2f'+f\ge0.
-\]
+$$
 Prove that
-\[
+$$
 f(x)\le0
-\]
+$$
 for every $0\le x\le1$.
 :::
 

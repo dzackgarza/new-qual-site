@@ -48,18 +48,18 @@ Statement (i) is false.
 ::: pf-proof
 
 Take $R=\ZZ$ and
-\[
+$$
 M=\bigoplus_{n\ge2}\ZZ/n\ZZ.
-\]
+$$
 Every element of $M$ has only finitely many nonzero coordinates, so it is killed by the least common multiple of the corresponding finitely many integers $n$.
 Thus $M$ is a torsion $\ZZ$-module.
 
 However, if $0\ne a\in\ZZ$, choose $n>|a|$ with $n\nmid a$.
 The element whose only nonzero coordinate is $1\in\ZZ/n\ZZ$ is not killed by $a$.
 Hence no nonzero integer annihilates all of $M$, so
-\[
+$$
 \operatorname{Ann}_{\ZZ}(M)=0.
-\]
+$$
 
 :::
 
@@ -74,14 +74,14 @@ Statement (ii) is true.
 Let $M$ be a free $R$-module with basis $(e_i)_{i\in I}$.
 Suppose $0\ne r\in R$ and $rm=0$.
 Write
-\[
+$$
 m=\sum_{i\in I}a_i e_i
-\]
+$$
 with only finitely many nonzero $a_i$.
 Then
-\[
+$$
 0=rm=\sum_i (ra_i)e_i.
-\]
+$$
 Linear independence of the basis gives $ra_i=0$ for every $i$.
 Since $R$ is an integral domain and $r\ne0$, each $a_i=0$.
 Thus $m=0$, so $M$ is torsionfree.
@@ -116,7 +116,7 @@ Hence the answers are
 
 :::
 
-\[
+$$
 \boxed{\text{(i) false,}\qquad\text{(ii) true,}\qquad\text{(iii) false.}}
-\]
+$$
 :::

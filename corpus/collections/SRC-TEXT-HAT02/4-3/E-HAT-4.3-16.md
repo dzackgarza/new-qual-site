@@ -28,39 +28,39 @@ Show that a map $f: X \to Y$ of connected CW complexes is a homotopy equivalence
 :::
 
 ::: {.solution}
-Replace \(f:X\to Y\) by its mapping-path fibration
-\[
+Replace $f:X\to Y$ by its mapping-path fibration
+$$
 F_f\longrightarrow E_f\xrightarrow{p}Y,
-\]
-where \(E_f\simeq X\). The hypothesis on \(\pi_1\) says
-\[
+$$
+where $E_f\simeq X$. The hypothesis on $\pi_1$ says
+$$
 \pi_1(E_f)\xrightarrow{\cong}\pi_1(Y).
-\]
+$$
 The long exact sequence therefore shows that
-\[
+$$
 \pi_1(F_f)\to\pi_1(E_f)
-\]
+$$
 is the zero homomorphism.
 
-By Exercise 10, the usual action of \(\pi_1(F_f)\) on every \(\pi_n(F_f)\), including conjugation on \(\pi_1(F_f)\), factors through \(\pi_1(E_f)\). Hence this action is trivial. In particular \(\pi_1(F_f)\) is abelian. Since
-\[
+By Exercise 10, the usual action of $\pi_1(F_f)$ on every $\pi_n(F_f)$, including conjugation on $\pi_1(F_f)$, factors through $\pi_1(E_f)$. Hence this action is trivial. In particular $\pi_1(F_f)$ is abelian. Since
+$$
 \widetilde H_1(F_f;\ZZ)=0,
-\]
+$$
 its abelianization is zero, so
-\[
+$$
 \pi_1(F_f)=0.
-\]
+$$
 
-Now \(F_f\) is simply connected and acyclic. If \(\pi_n(F_f)\ne0\) for a least \(n\ge2\), Hurewicz would give
-\[
+Now $F_f$ is simply connected and acyclic. If $\pi_n(F_f)\ne0$ for a least $n\ge2$, Hurewicz would give
+$$
 \pi_n(F_f)\cong H_n(F_f)=0,
-\]
-a contradiction. Thus all homotopy groups of \(F_f\) vanish. The homotopy fiber has CW type, so Whitehead gives
-\[
+$$
+a contradiction. Thus all homotopy groups of $F_f$ vanish. The homotopy fiber has CW type, so Whitehead gives
+$$
 F_f\simeq *.
-\]
-The fibration long exact sequence now shows that \(f\) induces isomorphisms on every homotopy group. Since \(X,Y\) are connected CW complexes,
-\[
+$$
+The fibration long exact sequence now shows that $f$ induces isomorphisms on every homotopy group. Since $X,Y$ are connected CW complexes,
+$$
 \boxed{f\text{ is a homotopy equivalence}.}
-\]
+$$
 :::

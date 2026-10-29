@@ -28,9 +28,9 @@ Given the eigenvalue problem ${ \mathcal { L } } ( x ) \psi ( x ) = \lambda \psi
 ::: {.solution}
 
 For an equation
-\[
+$$
 p_0y''+p_1y'+p_2y=0,
-\]
+$$
 seek a nonzero multiplier $f$ for which the multiplied equation satisfies $(fp_0)'=fp_1$.
 
 ::: pf
@@ -38,17 +38,17 @@ seek a nonzero multiplier $f$ for which the multiplied equation satisfies $(fp_0
 ::: {.pf-step #s1-1}
 
 The multiplier must satisfy
-\[
+$$
 \frac{f'}f=\frac{p_1-p_0'}{p_0}.
-\]
+$$
 
 
 ::: pf-proof
 
 The self-adjointness condition for the multiplied equation is
-\[
+$$
 (fp_0)'=fp_1.
-\]
+$$
 Expanding the derivative gives $f'p_0+fp_0'=fp_1$. Dividing by $fp_0$ gives the displayed first-order equation for $f$.
 
 :::
@@ -58,21 +58,21 @@ Expanding the derivative gives $f'p_0+fp_0'=fp_1$. Dividing by $fp_0$ gives the 
 ::: {.pf-step #s1-2}
 
 For Laguerre's equation, one may take
-\[
+$$
 \boxed{f(x)=e^{-x}}.
-\]
+$$
 
 
 ::: pf-proof
 
 Here $p_0=x$ and $p_1=1-x$, so step [](#s1-1){.pf-ref} gives
-\[
+$$
 \frac{f'}f=\frac{(1-x)-1}{x}=-1.
-\]
+$$
 Thus $f=Ce^{-x}$, and the irrelevant nonzero constant may be chosen as $1$. Indeed, the multiplied differential terms are
-\[
+$$
 xe^{-x}y''+(1-x)e^{-x}y'=(xe^{-x}y')'.
-\]
+$$
 
 :::
 
@@ -81,17 +81,17 @@ xe^{-x}y''+(1-x)e^{-x}y'=(xe^{-x}y')'.
 ::: {.pf-step #s1-3}
 
 For Hermite's equation, one may take
-\[
+$$
 \boxed{f(x)=e^{-x^2}}.
-\]
+$$
 
 
 ::: pf-proof
 
 Here $p_0=1$ and $p_1=-2x$, so step [](#s1-1){.pf-ref} gives $f'/f=-2x$. Hence $f=Ce^{-x^2}$, and
-\[
+$$
 e^{-x^2}y''-2xe^{-x^2}y'=(e^{-x^2}y')'.
-\]
+$$
 
 :::
 
@@ -100,28 +100,28 @@ e^{-x^2}y''-2xe^{-x^2}y'=(e^{-x^2}y')'.
 ::: {.pf-step #s1-4}
 
 For Chebyshev's equation, one may take
-\[
+$$
 \boxed{f(x)=\frac1{\sqrt{1-x^2}}}
-\]
+$$
 on $|x|<1$.
 
 
 ::: pf-proof
 
 Here $p_0=1-x^2$ and $p_1=-x$, so
-\[
+$$
 \frac{f'}f=\frac{-x-(-2x)}{1-x^2}=\frac{x}{1-x^2}.
-\]
+$$
 Integration gives
-\[
+$$
 \log f=-\frac12\log(1-x^2)+C,
-\]
+$$
 hence the displayed multiplier. Then
-\[
+$$
 fp_0=\sqrt{1-x^2},
 \qquad
 (fp_0)'=-\frac{x}{\sqrt{1-x^2}}=fp_1.
-\]
+$$
 
 :::
 

@@ -32,13 +32,13 @@ Prove the Brouwer fixed point theorem for maps $f: D^n \to D^n$ by applying degr
 
 ::: {.solution}
 Regard $S^n$ as the double of $D^n$, with northern and southern hemispheres each identified with $D^n$ and glued along their common boundary. Given
-\[
+$$
 f:D^n\to D^n,
-\]
+$$
 define
-\[
+$$
 F:S^n\to S^n
-\]
+$$
 by applying $f$ on either hemisphere and regarding the image as lying in the southern hemisphere.
 
 ::: pf
@@ -50,9 +50,9 @@ The map $F$ has degree zero.
 ::: pf-proof
 
 Its image is contained in the closed southern hemisphere, hence misses every point in the interior of the northern hemisphere. Therefore $F$ factors through a contractible subspace of $S^n$, so $F$ is nullhomotopic. Thus
-\[
+$$
 \deg F=0.
-\]
+$$
 
 :::
 
@@ -77,9 +77,9 @@ Any fixed-point-free map $G:S^n\to S^n$ is homotopic to the antipodal map.
 ::: pf-proof
 
 For $x\in S^n$, the vectors $G(x)$ and $x$ are never equal. Hence
-\[
+$$
 H_t(x)=\frac{(1-t)G(x)-t x}{\|(1-t)G(x)-t x\|}
-\]
+$$
 is defined for all $t\in[0,1]$: the numerator could vanish only if $G(x)$ were a positive scalar multiple of $x$, which for unit vectors would force $G(x)=x$. At $t=0$ this is $G$, and at $t=1$ it is the antipodal map $x\mapsto -x$.
 
 :::
@@ -93,13 +93,13 @@ Therefore $f$ must have a fixed point.
 ::: pf-proof
 
 If $f$ had no fixed point, then by steps [](#s2){.pf-ref} and [](#s3){.pf-ref}
-\[
+$$
 \deg F=\deg(-\operatorname{id}_{S^n})=(-1)^{n+1},
-\]
+$$
 which is $\pm1$. This contradicts step [](#s1){.pf-ref}, where $\deg F=0$. Hence every continuous map
-\[
+$$
 f:D^n\to D^n
-\]
+$$
 has a fixed point.
 
 :::

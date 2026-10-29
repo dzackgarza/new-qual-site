@@ -36,9 +36,9 @@ audit:
 
 ::: {.problem}
 For which integers $n$ is
-\[
+$$
 x^4+n
-\]
+$$
 reducible in $\ZZ[x]$?
 :::
 

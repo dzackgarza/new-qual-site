@@ -26,18 +26,18 @@ $U$.
 Since $\CC\setminus K$ is connected, Runge's theorem in its polynomial
 form approximates functions holomorphic near $K$ uniformly on $K$ by
 polynomials. Let
-\[
+$$
 A=\max_{z\in K}|f(z)|.
-\]
+$$
 Choose a polynomial $P$ such that
-\[
+$$
 \sup_K\left|P-\frac1f\right|<\frac{\epsilon}{A}
-\]
+$$
 (the case $A=0$ cannot occur because $f$ is nonvanishing on $K$). Then for
 every $z\in K$,
-\[
+$$
 |f(z)P(z)-1|
 \le |f(z)|\left|P(z)-\frac1{f(z)}\right|
 <\epsilon.
-\]
+$$
 :::

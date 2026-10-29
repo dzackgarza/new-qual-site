@@ -37,41 +37,41 @@ Use this to show that $\tilde{H}_i(X; \ZZ_p) = 0$ for all $i$ and all primes $p$
 
 ::: {.solution}
 The short exact sequence of chain complexes
-\[
+$$
 0\longrightarrow C_*(X)
 \xrightarrow{\,n\,}C_*(X)
 \longrightarrow C_*(X;\ZZ_n)
 \longrightarrow0
-\]
+$$
 gives the long exact sequence
-\[
+$$
 \cdots\to H_i(X)\xrightarrow{n}H_i(X)
 \to H_i(X;\ZZ_n)
 \to H_{i-1}(X)\xrightarrow{n}H_{i-1}(X)\to\cdots.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 Exactness yields a short exact sequence
-\[
+$$
 0\to H_i(X)/nH_i(X)
 \to H_i(X;\ZZ_n)
 \to {}_nH_{i-1}(X)
 \to0,
-\]
+$$
 where
-\[
+$$
 {}_nG=\ker(n:G\to G).
-\]
+$$
 
 ::: pf-proof
 
 The kernel of the map into $H_i(X;\ZZ_n)$ is the image $nH_i(X)$, so the first map factors injectively through the cokernel
-\[
+$$
 H_i(X)/nH_i(X).
-\]
+$$
 The image of the connecting map is exactly the kernel of multiplication by $n$ on $H_{i-1}(X)$. These two observations give the displayed short exact sequence.
 
 :::
@@ -81,25 +81,25 @@ The image of the connecting map is exactly the kernel of multiplication by $n$ o
 ::: pf-step
 
 If
-\[
+$$
 \widetilde H_i(X;\ZZ_p)=0
-\]
+$$
 for every $i$ and every prime $p$, then every integral reduced homology group
-\[
+$$
 G=\widetilde H_i(X)
-\]
+$$
 is a $\QQ$-vector space.
 
 ::: pf-proof
 
 Applying step [](#s1){.pf-ref} with $n=p$ gives simultaneously
-\[
+$$
 G/pG=0
-\]
+$$
 and
-\[
+$$
 {}_pG=0
-\]
+$$
 for every prime $p$. Thus multiplication by $p$ is both surjective and injective on $G$. Hence multiplication by every nonzero integer is bijective. There is therefore a unique division operation by each nonzero integer, defining a unique $\QQ$-vector-space structure on the abelian group $G$.
 
 :::
@@ -109,17 +109,17 @@ for every prime $p$. Thus multiplication by $p$ is both surjective and injective
 ::: pf-step
 
 Conversely, if every $\widetilde H_i(X)$ is a $\QQ$-vector space, then
-\[
+$$
 \widetilde H_i(X;\ZZ_p)=0
-\]
+$$
 for all $i$ and all primes $p$.
 
 ::: pf-proof
 
 On a $\QQ$-vector space, multiplication by $p$ is an automorphism. Hence both
-\[
+$$
 G/pG
-\]
+$$
 and ${}_pG$ vanish. The short exact sequence in step [](#s1){.pf-ref} then forces the homology with $\ZZ_p$ coefficients to vanish.
 
 :::
@@ -129,10 +129,10 @@ and ${}_pG$ vanish. The short exact sequence in step [](#s1){.pf-ref} then force
 :::
 
 Thus
-\[
+$$
 \boxed{
 \widetilde H_i(X;\ZZ_p)=0\text{ for all }i,p
 \iff
 \widetilde H_i(X)\text{ is a }\QQ\text{-vector space for all }i.}
-\]
+$$
 :::

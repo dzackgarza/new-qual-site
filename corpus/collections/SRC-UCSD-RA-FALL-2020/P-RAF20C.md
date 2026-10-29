@@ -39,16 +39,16 @@ $|\widehat f(\xi)|\le\widehat f(0)$ for every $\xi\in\RR^n$.
 ::: pf-proof
 
 Since $f>0$ and $f\in L^1(\RR^n)$,
-\[
+$$
 \widehat f(0)=\int_{\RR^n}f(x)\,dx>0.
-\]
+$$
 For any $\xi$,
-\[
+$$
 |\widehat f(\xi)|
 =\left|\int f(x)e^{-i x\cdot\xi}\,dx\right|
 \le \int f(x)\,dx
 =\widehat f(0).
-\]
+$$
 The normalization $e^{-2\pi i x\cdot\xi}$ changes only the phase factor, and the same estimate holds.
 
 :::
@@ -62,34 +62,34 @@ If $\xi\ne0$ and $|\widehat f(\xi)|=\widehat f(0)$, then there is $c\in\CC$ with
 ::: pf-proof
 
 Suppose for contradiction that $\xi\ne0$ and
-\[
+$$
 |\widehat f(\xi)|=\widehat f(0).
-\]
+$$
 Let
-\[
+$$
 c:=\frac{\widehat f(\xi)}{|\widehat f(\xi)|},
 \qquad |c|=1.
-\]
+$$
 Then
-\[
+$$
 \begin{aligned}
 \widehat f(0)
 &=\operatorname{Re}\left(\overline c\,\widehat f(\xi)\right)\\
 &=\int_{\RR^n} f(x)\operatorname{Re}\left(\overline c\,e^{-ix\cdot\xi}\right)\,dx.
 \end{aligned}
-\]
+$$
 Since
-\[
+$$
 \operatorname{Re}\left(\overline c\,e^{-ix\cdot\xi}\right)\le1
-\]
+$$
 everywhere and $f>0$, equality of the integrals forces
-\[
+$$
 \operatorname{Re}\left(\overline c\,e^{-ix\cdot\xi}\right)=1
-\]
+$$
 for almost every $x$. Hence
-\[
+$$
 e^{-ix\cdot\xi}=c
-\]
+$$
 for almost every $x$.
 
 :::
@@ -103,15 +103,15 @@ For $\xi\ne0$ and $|c|=1$, the function $x\mapsto e^{-ix\cdot\xi}$ is not equal 
 ::: pf-proof
 
 For fixed $\xi\ne0$ and fixed $c\in\CC$ with $|c|=1$, the set
-\[
+$$
 \{x\in\RR^n:e^{-ix\cdot\xi}=c\}
-\]
+$$
 is a countable union of affine hyperplanes perpendicular to $\xi$. It therefore has Lebesgue measure zero.
 
 Thus the phase cannot equal the constant $c$ almost everywhere. By step [](#s2){.pf-ref}, equality $|\widehat f(\xi)|=\widehat f(0)$ is therefore impossible for $\xi\ne0$, and step [](#s1){.pf-ref} gives
-\[
+$$
 \boxed{|\widehat f(\xi)|<\widehat f(0)\quad\text{for every }\xi\ne0.}
-\]
+$$
 
 :::
 

@@ -39,16 +39,16 @@ $T(X) = \frac{1}{2}(X - X^T)$.
 
 ::: pf-step
 
-The map \(T\) is linear.
+The map $T$ is linear.
 
 ::: pf-proof
 
-For \(X,Y\in M_n(\RR)\) and \(a,b\in\RR\),
-\[
+For $X,Y\in M_n(\RR)$ and $a,b\in\RR$,
+$$
 T(aX+bY)
 =\frac12\bigl(aX+bY-(aX+bY)^T\bigr)
 =aT(X)+bT(Y).
-\]
+$$
 
 :::
 
@@ -56,14 +56,14 @@ T(aX+bY)
 
 ::: pf-step
 
-The null space of \(T\) is the space of symmetric matrices:
-\[
+The null space of $T$ is the space of symmetric matrices:
+$$
 \ker T=\{X\in M_n(\RR):X^T=X\}.
-\]
+$$
 
 ::: pf-proof
 
-One has \(T(X)=0\) iff \(X-X^T=0\), equivalently \(X=X^T\).
+One has $T(X)=0$ iff $X-X^T=0$, equivalently $X=X^T$.
 
 :::
 
@@ -72,17 +72,17 @@ One has \(T(X)=0\) iff \(X-X^T=0\), equivalently \(X=X^T\).
 ::: pf-step
 
 Therefore
-\[
+$$
 \dim\ker T=\frac{n(n+1)}2.
-\]
+$$
 
 ::: pf-proof
 
-A symmetric \(n\times n\) matrix is determined by its \(n\) diagonal entries and its
-\(\binom n2\) entries above the diagonal. Thus
-\[
+A symmetric $n\times n$ matrix is determined by its $n$ diagonal entries and its
+$\binom n2$ entries above the diagonal. Thus
+$$
 \dim\ker T=n+\binom n2=\frac{n(n+1)}2.
-\]
+$$
 
 :::
 
@@ -90,20 +90,20 @@ A symmetric \(n\times n\) matrix is determined by its \(n\) diagonal entries and
 
 ::: {.pf-step #s4}
 
-For \(M_3(\RR)\), order the standard basis as
-\[
+For $M_3(\RR)$, order the standard basis as
+$$
 \mathcal B=(E_{11},E_{12},E_{13},E_{21},E_{22},E_{23},E_{31},E_{32},E_{33}).
-\]
+$$
 Then
-\[
+$$
 T(E_{ii})=0,
 \qquad
 T(E_{ij})=\frac12(E_{ij}-E_{ji})\quad(i\ne j).
-\]
+$$
 
 ::: pf-proof
 
-Since \(E_{ij}^T=E_{ji}\), the formula follows directly from the definition of \(T\).
+Since $E_{ij}^T=E_{ji}$, the formula follows directly from the definition of $T$.
 
 :::
 
@@ -111,8 +111,8 @@ Since \(E_{ij}^T=E_{ji}\), the formula follows directly from the definition of \
 
 ::: pf-step
 
-Hence the matrix of \(T\) with respect to \(\mathcal B\) is
-\[
+Hence the matrix of $T$ with respect to $\mathcal B$ is
+$$
 [T]_{\mathcal B}=
 \frac12
 \begin{pmatrix}
@@ -126,11 +126,11 @@ Hence the matrix of \(T\) with respect to \(\mathcal B\) is
 0&0&0&0&0&-1&0&1&0\\
 0&0&0&0&0&0&0&0&0
 \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 
-The \(j\)-th column is the coordinate vector of \(T\) applied to the \(j\)-th basis
+The $j$-th column is the coordinate vector of $T$ applied to the $j$-th basis
 element. Using step [](#s4){.pf-ref} gives the displayed columns immediately.
 
 :::

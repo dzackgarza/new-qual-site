@@ -23,21 +23,21 @@ Prove by induction that the sum of the cubes of 3 consecutive positive integers 
 
 ::: {.solution}
 For $n\ge1$, let
-\[
+$$
 S_n=n^3+(n+1)^3+(n+2)^3.
-\]
+$$
 We prove by induction that $9\mid S_n$.
 
 For $n=1$,
-\[
+$$
 S_1=1+8+27=36,
-\]
+$$
 which is divisible by $9$.
 
 Assume $9\mid S_n$. Then
-\[
+$$
 S_{n+1}-S_n=(n+3)^3-n^3
 =9(n^2+3n+3),
-\]
+$$
 which is divisible by $9$. Hence $S_{n+1}$ is divisible by $9$. By induction, the sum of the cubes of any three consecutive positive integers is divisible by $9$.
 :::

@@ -19,12 +19,12 @@ audit:
 Suppose $A$ is a real $n\times n$ orthogonal matrix.
 
 (a) Show that $A$ is similar to a block-diagonal matrix whose blocks are $2\times2$ rotation matrices
-\[
+$$
 \begin{pmatrix}
 \cos\theta&\sin\theta\\
 -\sin\theta&\cos\theta
 \end{pmatrix}
-\]
+$$
 together with some diagonal entries equal to $1$ or $-1$.
 
 (b) Use part (a) to show that if $n$ is odd, then there is a nonzero vector $v$ such that $A^2v=v$.
@@ -39,45 +39,45 @@ Regard the real matrix $A$ as a complex matrix acting on $\CC^n$.
 ::: {.pf-step #s1-1}
 
 Every complex eigenvalue $\lambda$ of $A$ satisfies
-\[
+$$
 |\lambda|=1.
-\]
+$$
 
 
 ::: pf-proof
 
 Let
-\[
+$$
 Az=\lambda z
-\]
+$$
 with
-\[
+$$
 z\ne0.
-\]
+$$
 Since $A$ is real orthogonal,
-\[
+$$
 A^*A=A^TA=I.
-\]
+$$
 Thus $A$ preserves the Hermitian norm on $\CC^n$:
-\[
+$$
 \|Az\|=\|z\|.
-\]
+$$
 But
-\[
+$$
 \|Az\|
 =
 \|\lambda z\|
 =
 |\lambda|\,\|z\|.
-\]
+$$
 Since
-\[
+$$
 \|z\|>0,
-\]
+$$
 one gets
-\[
+$$
 |\lambda|=1.
-\]
+$$
 
 :::
 
@@ -91,17 +91,17 @@ The complex operator $A$ is normal and therefore has an orthonormal basis of com
 ::: pf-proof
 
 From
-\[
+$$
 A^*A=I
-\]
+$$
 one also has
-\[
+$$
 AA^*=I.
-\]
+$$
 Hence
-\[
+$$
 A^*A=AA^*,
-\]
+$$
 so $A$ is normal.
 The complex spectral theorem then gives an orthonormal eigenbasis.
 
@@ -112,11 +112,11 @@ The complex spectral theorem then gives an orthonormal eigenbasis.
 ::: pf-step
 
 Every real eigenvalue of $A$ is either
-\[
+$$
 \boxed{1}
 \qquad\text{or}\qquad
 \boxed{-1}.
-\]
+$$
 
 
 ::: pf-proof
@@ -131,13 +131,13 @@ The only real numbers of absolute value $1$ are $\pm1$.
 ::: pf-step
 
 If
-\[
+$$
 \lambda=e^{i\theta}
-\]
+$$
 is a nonreal eigenvalue, then
-\[
+$$
 \overline{\lambda}=e^{-i\theta}
-\]
+$$
 is also an eigenvalue.
 
 
@@ -145,17 +145,17 @@ is also an eigenvalue.
 
 Because $A$ has real entries, complex conjugation commutes with $A$.
 If
-\[
+$$
 Az=\lambda z,
-\]
+$$
 then
-\[
+$$
 A\overline z
 =
 \overline{Az}
 =
 \overline{\lambda}\,\overline z.
-\]
+$$
 Thus conjugate eigenvalues occur in pairs.
 
 :::
@@ -165,51 +165,51 @@ Thus conjugate eigenvalues occur in pairs.
 ::: {.pf-step #s1-5}
 
 Let
-\[
+$$
 z=u+iv
-\]
+$$
 be an eigenvector for a nonreal eigenvalue
-\[
+$$
 \lambda=e^{i\theta}
 =
 \cos\theta+i\sin\theta.
-\]
+$$
 Then the real plane
-\[
+$$
 P=\operatorname{span}_{\RR}\{u,v\}
-\]
+$$
 is $A$-invariant.
 
 
 ::: pf-proof
 
 The eigenvalue equation
-\[
+$$
 A(u+iv)
 =
 (\cos\theta+i\sin\theta)(u+iv)
-\]
+$$
 gives, by comparing real and imaginary parts,
-\[
+$$
 Au
 =
 \cos\theta\,u
 -
 \sin\theta\,v,
-\]
+$$
 and
-\[
+$$
 Av
 =
 \sin\theta\,u
 +
 \cos\theta\,v.
-\]
+$$
 Thus both $Au$ and $Av$ lie in the real span of $u,v$.
 Since $\lambda$ is nonreal,
-\[
+$$
 \sin\theta\ne0,
-\]
+$$
 and $u,v$ are linearly independent; otherwise $z$ would be a complex scalar multiple of a real vector and would yield a real eigenvector with nonreal eigenvalue.
 Hence $P$ is a two-dimensional invariant plane.
 
@@ -220,9 +220,9 @@ Hence $P$ is a two-dimensional invariant plane.
 ::: {.pf-step #s1-6}
 
 The restriction
-\[
+$$
 A|_P
-\]
+$$
 is an orthogonal transformation of the real inner-product plane $P$ with determinant $1$.
 
 
@@ -230,21 +230,21 @@ is an orthogonal transformation of the real inner-product plane $P$ with determi
 
 Since $A$ is orthogonal on $\RR^n$, its restriction to any invariant real subspace preserves the inner product.
 Thus
-\[
+$$
 A|_P
-\]
+$$
 is orthogonal.
 
 Its complex eigenvalues are
-\[
+$$
 e^{i\theta}
 \quad\text{and}\quad
 e^{-i\theta},
-\]
+$$
 so its determinant is their product:
-\[
+$$
 e^{i\theta}e^{-i\theta}=1.
-\]
+$$
 
 :::
 
@@ -253,40 +253,40 @@ e^{i\theta}e^{-i\theta}=1.
 ::: {.pf-step #s1-7}
 
 There is an orthonormal basis of $P$ in which the matrix of $A|_P$ is
-\[
+$$
 \boxed{
 \begin{pmatrix}
 \cos\theta&\sin\theta\\
 -\sin\theta&\cos\theta
 \end{pmatrix}.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 Choose any unit vector
-\[
+$$
 e_1\in P.
-\]
+$$
 Because $A|_P$ is orientation-preserving and orthogonal by step [](#s1-6){.pf-ref}, it is a rotation of the Euclidean plane.
 Choose the unit vector $e_2$ so that $(e_1,e_2)$ is positively oriented.
 Then for some angle $\theta$,
-\[
+$$
 Ae_1
 =
 \cos\theta\,e_1
 -
 \sin\theta\,e_2,
-\]
+$$
 and orientation preservation forces
-\[
+$$
 Ae_2
 =
 \sin\theta\,e_1
 +
 \cos\theta\,e_2.
-\]
+$$
 The corresponding matrix has the displayed form.
 The eigenvalues determine the same angle modulo sign and $2\pi$.
 
@@ -316,20 +316,20 @@ Collecting these real pieces gives an orthogonal direct-sum decomposition of $\R
 ::: {.pf-step #s1-9}
 
 Therefore $A$ is orthogonally similar to a block-diagonal matrix whose blocks are
-\[
+$$
 \boxed{
 \begin{pmatrix}
 \cos\theta&\sin\theta\\
 -\sin\theta&\cos\theta
 \end{pmatrix}
 }
-\]
+$$
 together with $1\times1$ blocks
-\[
+$$
 \boxed{[1]}
 \qquad\text{and}\qquad
 \boxed{[-1]}.
-\]
+$$
 
 
 ::: pf-proof
@@ -347,9 +347,9 @@ This proves part (a).
 ::: {.pf-step #s1-10}
 
 Suppose now that
-\[
+$$
 n
-\]
+$$
 is odd.
 Then the block decomposition in step [](#s1-9){.pf-ref} contains at least one $1\times1$ block.
 
@@ -359,9 +359,9 @@ Then the block decomposition in step [](#s1-9){.pf-ref} contains at least one $1
 Every rotation block has dimension $2$.
 If all blocks had size $2$, their total dimension would be even.
 Since
-\[
+$$
 n
-\]
+$$
 is odd, at least one block must have size $1$.
 Such a block is either $[1]$ or $[-1]$.
 
@@ -372,26 +372,26 @@ Such a block is either $[1]$ or $[-1]$.
 ::: {.pf-step #s1-11}
 
 There exists a nonzero real vector
-\[
+$$
 v
-\]
+$$
 such that
-\[
+$$
 Av=\pm v.
-\]
+$$
 
 
 ::: pf-proof
 
 Take a basis vector belonging to one of the $1\times1$ blocks from step [](#s1-10){.pf-ref}.
 If that block is $[1]$, then
-\[
+$$
 Av=v.
-\]
+$$
 If it is $[-1]$, then
-\[
+$$
 Av=-v.
-\]
+$$
 
 :::
 
@@ -400,19 +400,19 @@ Av=-v.
 ::: {.pf-step #s1-12}
 
 Hence
-\[
+$$
 \boxed{A^2v=v}.
-\]
+$$
 
 
 ::: pf-proof
 
 From step [](#s1-11){.pf-ref},
-\[
+$$
 Av=\pm v.
-\]
+$$
 Applying $A$ once more gives
-\[
+$$
 A^2v
 =
 A(\pm v)
@@ -422,7 +422,7 @@ A(\pm v)
 \pm(\pm v)
 =
 v.
-\]
+$$
 Since $v$ is a basis vector, it is nonzero.
 This proves part (b).
 

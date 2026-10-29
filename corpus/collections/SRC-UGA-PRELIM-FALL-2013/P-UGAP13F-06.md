@@ -16,13 +16,13 @@ audit:
 
 ::: {.problem}
 For $k\in\NN$, let
-\[
+$$
 s_k=1+\frac1{2^2}+\cdots+\frac1{k^2}.
-\]
+$$
 Show that
-\[
+$$
 s_k\le 2-\frac1k.
-\]
+$$
 Prove or disprove: $(s_k)$ is a Cauchy sequence.
 :::
 

@@ -32,43 +32,43 @@ $$0 \to \operatorname{Hom}(C,G) \to \operatorname{Hom}(B,G) \to \operatorname{Ho
 
 ::: {.solution}
 Choose Moore spaces functorially enough for the given short exact sequence
-\[
+$$
 0\to A\xrightarrow{i}B\xrightarrow{q}C\to0.
-\]
+$$
 For $n\ge1$, realize $i$ by a cellular map
-\[
+$$
 M(A,n)\longrightarrow M(B,n)
-\]
+$$
 inducing $i$ on the only nonzero reduced homology group. Replace it by a mapping-cylinder inclusion, so we may regard $M(A,n)$ as a subcomplex of $M(B,n)$. Let
-\[
+$$
 Q=M(B,n)/M(A,n).
-\]
+$$
 The reduced homology long exact sequence of the pair gives
-\[
+$$
 \widetilde H_j(Q)=0\quad(j\ne n),
 \qquad
 \widetilde H_n(Q)\cong B/A\cong C.
-\]
+$$
 Thus $Q$ is a Moore space $M(C,n)$ (up to the standard Moore-space homotopy uniqueness in this range), so
-\[
+$$
 M(C,n)\simeq M(B,n)/M(A,n).
-\]
+$$
 
 Apply cohomology with coefficients $G$ to the pair $(M(B,n),M(A,n))$. By the universal coefficient theorem for Moore spaces,
-\[
+$$
 \widetilde H^n(M(D,n);G)\cong\operatorname{Hom}(D,G),
-\]
-\[
+$$
+$$
 \widetilde H^{n+1}(M(D,n);G)\cong\operatorname{Ext}(D,G),
-\]
+$$
 and all other reduced cohomology groups vanish. The long exact sequence of the pair, together with
-\[
+$$
 H^*(M(B,n),M(A,n);G)\cong\widetilde H^*(M(C,n);G),
-\]
+$$
 therefore becomes exactly
-\[
+$$
 0\to\operatorname{Hom}(C,G)\to\operatorname{Hom}(B,G)\to
 \operatorname{Hom}(A,G)\to\operatorname{Ext}(C,G)\to
 \operatorname{Ext}(B,G)\to\operatorname{Ext}(A,G)\to0.
-\]
+$$
 :::

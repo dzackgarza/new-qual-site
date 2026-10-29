@@ -49,20 +49,20 @@ This is the statement of Zorn's Lemma used in the remaining parts.
 
 ::: {.pf-step #p-nonempty}
 Let
-\[
+$$
 \mathcal P:=\{J\triangleleft R:J\cap X=\varnothing\},
-\]
+$$
 ordered by inclusion. Then $\mathcal P$ is nonempty.
 
 ::: pf-proof
 Since $0\notin X$, the zero ideal satisfies
-\[
+$$
 (0)\cap X=\varnothing.
-\]
+$$
 Hence
-\[
+$$
 (0)\in\mathcal P.
-\]
+$$
 :::
 
 :::
@@ -72,23 +72,23 @@ Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
 
 ::: pf-proof
 Let $\mathcal C\subseteq\mathcal P$ be a chain and set
-\[
+$$
 J:=\bigcup_{I\in\mathcal C}I.
-\]
+$$
 Because $\mathcal C$ is totally ordered by inclusion, $J$ is an ideal: if $a,b\in J$, then $a\in I_1$ and $b\in I_2$ for some $I_1,I_2\in\mathcal C$; one of these ideals contains the other, so both $a$ and $b$ lie in a common member of the chain and hence $a-b\in J$. Closure under multiplication by elements of $R$ is immediate.
 
 If $J\cap X$ were nonempty, choose
-\[
+$$
 x\in J\cap X.
-\]
+$$
 Then $x\in I$ for some $I\in\mathcal C$, contradicting
-\[
+$$
 I\cap X=\varnothing.
-\]
+$$
 Thus
-\[
+$$
 J\cap X=\varnothing,
-\]
+$$
 so $J\in\mathcal P$. It contains every member of $\mathcal C$, hence is an upper bound.
 :::
 
@@ -100,13 +100,13 @@ There is an ideal $I$ maximal among the ideals disjoint from $X$.
 ::: pf-proof
 By step [](#p-nonempty){.pf-ref}, $\mathcal P$ is nonempty, and by step [](#chains-have-upper-bounds){.pf-ref} every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
 Zorn's Lemma therefore gives a maximal element
-\[
+$$
 I\in\mathcal P.
-\]
+$$
 Equivalently,
-\[
+$$
 I\cap X=\varnothing
-\]
+$$
 and no strictly larger ideal has empty intersection with $X$.
 This proves part (b).
 :::
@@ -118,14 +118,14 @@ If $X\neq\varnothing$, then $I$ is a proper ideal.
 
 ::: pf-proof
 If $I=R$, then every element of the nonempty set $X$ would lie in $I$, so
-\[
+$$
 I\cap X=X\neq\varnothing,
-\]
+$$
 contrary to the defining property of $I$.
 Thus
-\[
+$$
 I\neq R.
-\]
+$$
 :::
 
 :::
@@ -135,41 +135,41 @@ If $ab\in I$ and $a,b\notin I$, then one obtains an element of $I\cap X$.
 
 ::: pf-proof
 Assume
-\[
+$$
 ab\in I,
 \qquad
 a\notin I,
 \qquad
 b\notin I.
-\]
+$$
 Then the ideals $I+(a)$ and $I+(b)$ strictly contain $I$.
 By maximality of $I$ among ideals disjoint from $X$, both larger ideals meet $X$.
 Choose
-\[
+$$
 x\in(I+(a))\cap X,
 \qquad
 y\in(I+(b))\cap X.
-\]
+$$
 Write
-\[
+$$
 x=i+ra,
 \qquad
 y=j+sb
-\]
+$$
 with $i,j\in I$ and $r,s\in R$.
 Since $X$ is multiplicatively closed,
-\[
+$$
 xy\in X.
-\]
+$$
 But
-\[
+$$
 xy=ij+isb+jra+rsab.
-\]
+$$
 Every term on the right lies in $I$: the first three because $i,j\in I$, and the last because $ab\in I$.
 Therefore
-\[
+$$
 xy\in I\cap X,
-\]
+$$
 a contradiction.
 :::
 
@@ -182,9 +182,9 @@ The ideal $I$ is prime.
 By step [](#i-proper){.pf-ref}, $I$ is proper.
 If $ab\in I$, then step [](#contradiction-if-neither-in-i){.pf-ref} shows that it is impossible for both $a$ and $b$ to lie outside $I$.
 Hence
-\[
+$$
 a\in I\quad\text{or}\quad b\in I.
-\]
+$$
 Thus $I$ is prime, proving part (c).
 :::
 

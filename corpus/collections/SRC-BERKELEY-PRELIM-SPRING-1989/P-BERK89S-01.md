@@ -25,17 +25,17 @@ audit:
 
 ::: {.problem}
 Let $(a_n)$ be positive and suppose
-\[
+$$
 \sum_{n=1}^\infty a_n<\infty.
-\]
+$$
 Prove that there are positive numbers $c_n$ such that
-\[
+$$
 c_n\to\infty
-\]
+$$
 and
-\[
+$$
 \sum_{n=1}^\infty c_na_n<\infty.
-\]
+$$
 :::
 
 ::: {.solution}

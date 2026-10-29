@@ -25,9 +25,9 @@ If $(X,d)$ is a metric space, then it is Hausdorff [see number 8].
 :::
 
 ::: {.solution}
-Let \(x\ne y\) in the metric space \((X,d)\), and put \(r=d(x,y)/3>0\). If a point \(z\) belonged to both \(B(x,r)\) and \(B(y,r)\), then the triangle inequality would give
-\[
+Let $x\ne y$ in the metric space $(X,d)$, and put $r=d(x,y)/3>0$. If a point $z$ belonged to both $B(x,r)$ and $B(y,r)$, then the triangle inequality would give
+$$
 d(x,y)\le d(x,z)+d(z,y)<2r=\frac23d(x,y),
-\]
-a contradiction. Thus \(B(x,r)\) and \(B(y,r)\) are disjoint open neighborhoods of \(x\) and \(y\). Hence every metric space is Hausdorff.
+$$
+a contradiction. Thus $B(x,r)$ and $B(y,r)$ are disjoint open neighborhoods of $x$ and $y$. Hence every metric space is Hausdorff.
 :::

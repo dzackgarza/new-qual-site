@@ -34,16 +34,16 @@ Control the oscillation of $f^2$ by that of $f$.
 
 ::: pf-proof
 Choose $M\ge1$ with $|f(x)|\le M$ on $[0,1]$. For all $x,y$,
-\[
+$$
 |f(x)^2-f(y)^2|
 =|f(x)-f(y)|\,|f(x)+f(y)|
 \le2M|f(x)-f(y)|.
-\]
+$$
 Hence on every subinterval $I$,
-\[
+$$
 \operatorname{osc}_I(f^2)
 \le2M\operatorname{osc}_I(f).
-\]
+$$
 :::
 
 :::
@@ -53,17 +53,17 @@ Apply the Darboux criterion.
 
 ::: pf-proof
 Given $\varepsilon>0$, Riemann integrability of $f$ gives a partition $P$ such that
-\[
+$$
 U(f,P)-L(f,P)
 =\sum_{I\in P}\operatorname{osc}_I(f)|I|
 <\frac{\varepsilon}{2M}.
-\]
+$$
 Therefore
-\[
+$$
 U(f^2,P)-L(f^2,P)
 \le2M\sum_{I\in P}\operatorname{osc}_I(f)|I|
 <\varepsilon.
-\]
+$$
 By the Darboux criterion, $f^2$ is Riemann integrable.
 :::
 

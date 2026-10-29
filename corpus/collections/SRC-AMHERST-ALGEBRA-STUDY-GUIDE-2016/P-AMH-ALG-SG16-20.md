@@ -20,9 +20,9 @@ audit:
 (March 2015) Let $R=\ZZ[x]$ be the ring of polynomials (in one variable) with integer coefficients.
 Note that the constant polynomial $6$ and the degree one polynomial $x+1$ are both elements of $R$.
 Define
-\[
+$$
 I=\{6f+(x+1)g\mid f,g\in R\}.
-\]
+$$
 Prove that $I$ is an ideal of $R$.
 :::
 

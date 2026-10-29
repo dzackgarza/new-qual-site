@@ -85,9 +85,9 @@ On the central sphere $f$ restricts to the antipodal map of $S^2$, which has deg
 ::: pf-step
 
 Consequently
-\[
+$$
 \tau(f)=1-0+(-1)=0,
-\]
+$$
 as required by the Lefschetz theorem for a fixed-point-free map.
 
 ::: pf-proof

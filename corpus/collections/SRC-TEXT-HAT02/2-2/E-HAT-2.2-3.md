@@ -44,9 +44,9 @@ if $(1-t)f(x) - tx = 0$, taking norms gives $1-t = t \implies t = 1/2$, so $f(x)
 
 ::: pf-step
 Define the straight-line homotopy $H: S^n \times [0, 1] \to S^n$ by:
-\[
+$$
 H(x, t) = \frac{(1 - t)f(x) - tx}{\|(1 - t)f(x) - tx\|}.
-\]
+$$
 $H$ is a homotopy from $f$ to the antipodal map $a(x) = -x$.
 
 ::: pf-proof
@@ -57,9 +57,9 @@ $H(x, 0) = f(x)$ and $H(x, 1) = -x$.
 
 ::: pf-step
 Because homotopic maps have the same degree:
-\[
+$$
 \deg(f) = \deg(a) = (-1)^{n+1} \neq 0.
-\]
+$$
 This contradicts $\deg(f) = 0$.
 Thus there exists $x \in S^n$ such that $f(x) = x$.
 
@@ -90,9 +90,9 @@ identical norm argument.
 
 ::: pf-step
 Define the straight-line homotopy $G: S^n \times [0, 1] \to S^n$ by:
-\[
+$$
 G(y, t) = \frac{(1 - t)f(y) + ty}{\|(1 - t)f(y) + ty\|}.
-\]
+$$
 $G$ is a homotopy from $f$ to the identity map $\operatorname{id}_{S^n}$.
 
 ::: pf-proof

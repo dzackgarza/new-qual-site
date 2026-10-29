@@ -38,10 +38,10 @@ Apply this to show:
 
 ::: {.solution}
 Let
-\[
+$$
 X=A\cup_\varphi D^n,
 \qquad n\ge2,
-\]
+$$
 where the boundary sphere $S^{n-1}=\partial D^n$ is attached to the path-connected space $A$ by $\varphi$.
 
 ::: pf
@@ -54,9 +54,9 @@ There is an open cover $X=U\cup V$ such that $U$ deformation retracts onto $A$, 
 
 Choose a smaller closed ball $B\subset\operatorname{int}D^n$ about the center.
 The image in $X$ of
-\[
+$$
 D^n\setminus B
-\]
+$$
 deformation retracts radially onto the attaching sphere, hence together with $A$ gives a neighborhood that deformation retracts onto $A$.
 After slightly enlarging this neighborhood in the quotient, call it $U$.
 
@@ -64,9 +64,9 @@ Take $V$ to be the image of a slightly larger open ball about the center, joined
 This $V$ is contractible.
 Its overlap with $U$ deformation retracts onto a sphere with a tube attached to the basepoint.
 Since
-\[
+$$
 n-1\ge1,
-\]
+$$
 the sphere $S^{n-1}$ is path connected, so $U\cap V$ is path connected.
 Both $U$ and $V$ may be chosen path connected and to contain the basepoint.
 
@@ -95,9 +95,9 @@ Every factor lying in $V$ is null-homotopic in $X$, while every factor lying in 
 
 The first assertion follows from contractibility of $V$.
 For the second, use the deformation retraction
-\[
+$$
 U\simeq A
-\]
+$$
 from step [](#s1){.pf-ref}, chosen to fix the basepoint.
 
 :::
@@ -107,9 +107,9 @@ from step [](#s1){.pf-ref}, chosen to fix the basepoint.
 ::: {.pf-step #s4}
 
 The inclusion-induced homomorphism
-\[
+$$
 i_*:\pi_1(A,x_0)\longrightarrow\pi_1(X,x_0)
-\]
+$$
 is surjective.
 
 ::: pf-proof
@@ -126,9 +126,9 @@ Thus $[\gamma]$ is represented by a product of loops in $A$, hence lies in the i
 ::: {.pf-step #s5}
 
 For $S^1\vee S^2$, the inclusion
-\[
+$$
 S^1\hookrightarrow S^1\vee S^2
-\]
+$$
 induces a surjection on fundamental groups.
 
 ::: pf-proof
@@ -143,30 +143,30 @@ Apply step [](#s4){.pf-ref}.
 ::: pf-step
 
 The same inclusion also induces an injection, hence
-\[
+$$
 \pi_1(S^1\vee S^2)\cong\ZZ.
-\]
+$$
 
 ::: pf-proof
 
 Collapse the $S^2$ summand to the wedge point.
 This gives a retraction
-\[
+$$
 r:S^1\vee S^2\to S^1.
-\]
+$$
 If $i:S^1\hookrightarrow S^1\vee S^2$ is the inclusion, then
-\[
+$$
 r\circ i=\operatorname{id}_{S^1},
-\]
+$$
 so
-\[
+$$
 r_*\circ i_*=\operatorname{id}_{\pi_1(S^1)}.
-\]
+$$
 Thus $i_*$ is injective.
 Together with step [](#s5){.pf-ref} it is an isomorphism, and
-\[
+$$
 \pi_1(S^1)\cong\ZZ.
-\]
+$$
 
 :::
 
@@ -175,25 +175,25 @@ Together with step [](#s5){.pf-ref} it is an isomorphism, and
 ::: {.pf-step #s7}
 
 If $X$ is a finite path-connected CW complex, then
-\[
+$$
 \pi_1(X^1)\longrightarrow\pi_1(X)
-\]
+$$
 is surjective.
 
 ::: pf-proof
 
 Starting with $X^1$, form $X^2$ by attaching the $2$-cells one at a time.
 Each attachment induces a surjection on $\pi_1$ by step [](#s4){.pf-ref}, so the composite
-\[
+$$
 \pi_1(X^1)\twoheadrightarrow\pi_1(X^2)
-\]
+$$
 is surjective.
 Then attach the $3$-cells one at a time, and continue through all higher dimensions.
 At every step the cell dimension is at least $2$, so step [](#s4){.pf-ref} applies.
 The composite map
-\[
+$$
 \pi_1(X^1)\longrightarrow\pi_1(X)
-\]
+$$
 is therefore surjective.
 
 :::
@@ -210,9 +210,9 @@ Every loop has compact image.
 By Proposition A.1, a compact subset of a CW complex is contained in a finite subcomplex.
 Hence any loop in $X$ lies in a finite subcomplex $K\subseteq X$.
 Applying step [](#s7){.pf-ref} to $K$ shows that the loop class comes from $\pi_1(K^1)$, and
-\[
+$$
 K^1\subseteq X^1.
-\]
+$$
 Thus every element of $\pi_1(X)$ lies in the image of $\pi_1(X^1)$.
 
 :::

@@ -22,13 +22,13 @@ audit:
 
 (b) Let $A:G\to GL_n(\CC)$ and $B:G\to GL_n(\CC)$ be two representations of a finite group $G$.
 Show that if for all $\sigma\in G$, there exists a matrix $P(\sigma)$ such that
-\[
+$$
 \bigl(P(\sigma)\bigr)^{-1}A(\sigma)P(\sigma)=B(\sigma),
-\]
+$$
 then there exist a nonsingular matrix $T$ such that for all $\sigma$,
-\[
+$$
 T^{-1}A(\sigma)T=B(\sigma).
-\]
+$$
 :::
 
 ::: {.solution}
@@ -124,9 +124,9 @@ roots of unity have absolute value $1$.
 
 ::: {.pf-step #p1-s2-4}
 Compute the inner product:
-\[
+$$
 \langle \chi^*, \chi^* \rangle = \frac{1}{|G|} \sum_{\sigma \in G} \chi^*(\sigma)\overline{\chi^*(\sigma)} = \frac{1}{|G|} \sum_{\sigma \in G} \lambda(\sigma)\chi(\sigma)\overline{\lambda(\sigma)\chi(\sigma)} = \frac{1}{|G|} \sum_{\sigma \in G} |\lambda(\sigma)|^2 |\chi(\sigma)|^2.
-\]
+$$
 
 ::: pf-proof
 definition of the inner product of class functions.
@@ -136,9 +136,9 @@ definition of the inner product of class functions.
 
 ::: {.pf-step #p1-s2-5}
 Substituting $|\lambda(\sigma)|^2 = 1$ gives:
-\[
+$$
 \langle \chi^*, \chi^* \rangle = \frac{1}{|G|} \sum_{\sigma \in G} |\chi(\sigma)|^2 = \langle \chi, \chi \rangle.
-\]
+$$
 
 ::: pf-proof
 step [](#p1-s2-3){.pf-ref} and step [](#p1-s2-4){.pf-ref}.
@@ -199,9 +199,9 @@ hypothesis.
 
 ::: {.pf-step #p2-s1-3}
 Since the trace is invariant under cyclic permutations and similarity transformations:
-\[
+$$
 \operatorname{Tr}(B(\sigma)) = \operatorname{Tr}\bigl(P(\sigma)^{-1}A(\sigma)P(\sigma)\bigr) = \operatorname{Tr}(A(\sigma)).
-\]
+$$
 
 ::: pf-proof
 cyclic property of trace: $\operatorname{Tr}(XY) = \operatorname{Tr}(YX)$ with $X = P(\sigma)^{-1}A(\sigma)$, $Y = P(\sigma)$.

@@ -48,13 +48,13 @@ singular foliation.
 ::: pf-step
 
 Choose a smooth vector field
-\[
+$$
 v
-\]
+$$
 on $F$ whose oriented trajectories are the leaves of
-\[
+$$
 \mathcal F
-\]
+$$
 and whose zero set is the singular set of $\mathcal F$.
 
 
@@ -63,9 +63,9 @@ and whose zero set is the singular set of $\mathcal F$.
 An oriented singular foliation on a surface is locally the kernel of a
 nonzero $1$-form away from its singular points. After fixing a positive area
 form $\omega$, write
-\[
+$$
 \iota_v\omega=\alpha,
-\]
+$$
 where $\ker\alpha=T\mathcal F$.
 Then $v$ is tangent to the oriented leaves and vanishes exactly at the
 singular points.
@@ -78,29 +78,29 @@ singular points.
 
 After an arbitrarily small $C^\infty$ perturbation, every singular
 point of $v$ is nondegenerate and satisfies
-\[
+$$
 \operatorname{div}_\omega v\ne0.
-\]
+$$
 
 
 ::: pf-proof
 
 Nondegeneracy of a zero means
-\[
+$$
 \det Dv(p)\ne0.
-\]
+$$
 By the standard transversality theorem, this is generic for zeros of vector
 fields.
 
 At such a zero,
-\[
+$$
 \operatorname{div}_\omega v(p)
-\]
+$$
 is the trace of the linearization in oriented local coordinates. The
 additional condition
-\[
+$$
 \operatorname{tr}Dv(p)=0
-\]
+$$
 is one further scalar equation on the $1$-jet of $v$, hence is avoided by a
 generic perturbation as well.
 
@@ -113,9 +113,9 @@ Thus a generic singularity is isolated and has nonzero divergence.
 ::: {.pf-step #s1-3}
 
 A generic closed leaf is hyperbolic:
-\[
+$$
 \phi'(0)\ne1.
-\]
+$$
 Hence every closed leaf is either attractive or repellant.
 
 
@@ -123,38 +123,38 @@ Hence every closed leaf is either attractive or repellant.
 
 For a closed orbit, choose a small transverse interval and its Poincaré return
 map
-\[
+$$
 \phi:I\to I.
-\]
+$$
 The equation
-\[
+$$
 \phi'(0)=1
-\]
+$$
 is the degeneracy condition for the periodic orbit. The Kupka--Smale theorem
 states that, for a residual set of vector fields, all periodic orbits are
 hyperbolic, hence
-\[
+$$
 \phi'(0)\ne1.
-\]
+$$
 If
-\[
+$$
 |\phi'(0)|<1
-\]
+$$
 the orbit is attractive; if
-\[
+$$
 |\phi'(0)|>1
-\]
+$$
 it is repellant. In the oriented surface convention of the source, the
 monodromy preserves transverse orientation, so
-\[
+$$
 \phi'(0)>0,
-\]
+$$
 and these conditions reduce to the source's inequalities
-\[
+$$
 \phi'(0)<1
 \quad\text{or}\quad
 \phi'(0)>1.
-\]
+$$
 
 :::
 
@@ -183,11 +183,11 @@ steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 ::: {.pf-step #s1-5}
 
 Every nonsingular nonclosed leaf has
-\[
+$$
 \alpha\text{-limit}
 \quad\text{and}\quad
 \omega\text{-limit}
-\]
+$$
 equal to a singular point or a closed leaf.
 
 
@@ -202,13 +202,13 @@ points and periodic orbits. A connected limit set contained in such a finite
 union must be one of those individual basic pieces.
 
 Therefore
-\[
+$$
 \lim_{t\to+\infty}\gamma(t)
-\]
+$$
 and
-\[
+$$
 \lim_{t\to-\infty}\gamma(t)
-\]
+$$
 are each a singular point or a closed leaf, in the sense of convergence to
 that invariant set.
 
@@ -239,9 +239,9 @@ Hypothesis (2) of Theorem 3.13 holds generically.
 
 Step [](#s1-2){.pf-ref} gives nonzero divergence at every singular point, and step [](#s1-3){.pf-ref}
 gives
-\[
+$$
 \phi'(0)\ne1
-\]
+$$
 for every closed leaf.
 
 :::
@@ -251,11 +251,11 @@ for every closed leaf.
 ::: {.pf-step #s1-8}
 
 A generic characteristic foliation has no leaf running from
-\[
+$$
 K_-
 \quad\text{to}\quad
 K_+.
-\]
+$$
 
 
 ::: pf-proof
@@ -270,14 +270,14 @@ $K_-$ to a repellant closed leaf in $K_+$.
 For singular endpoints, recall the contact-sign convention from the previous
 section of the source:
 for a positive contact structure,
-\[
+$$
 \operatorname{sign}
 \bigl(
 \operatorname{div}_\omega v(p)
 \bigr)
 =
 \operatorname{sign}(p).
-\]
+$$
 Thus positive elliptic singularities are sources and negative elliptic
 singularities are sinks, so the forbidden direction is dynamically
 impossible in the elliptic cases.
@@ -385,9 +385,9 @@ If $F$ has boundary and the perturbation is required to preserve a boundary
 model, perform the Kupka--Smale/Peixoto perturbation in the interior, relative
 to a collar of $\partial F$. The source assumes that collar has already been
 chosen so that
-\[
+$$
 \partial F
-\]
+$$
 is a union of leaves and singular points. A relative transversality
 perturbation leaves this boundary condition unchanged.
 

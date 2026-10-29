@@ -27,9 +27,9 @@ Construct a field with $27$ elements.
 
 ::: {.solution}
 Consider
-\[
+$$
 f(T)=T^3-T-1\in\FF_3[T].
-\]
+$$
 
 ::: pf
 
@@ -41,13 +41,13 @@ The polynomial $f$ is irreducible over $\FF_3$.
 
 A cubic polynomial over a field is reducible if and only if it has a root in
 that field. Direct evaluation gives
-\[
+$$
 f(0)=-1\ne0,
 \qquad
 f(1)=-1\ne0,
 \qquad
 f(2)=8-2-1=5\equiv2\ne0\pmod3.
-\]
+$$
 Thus $f$ has no root in $\FF_3$ and is irreducible.
 
 :::
@@ -57,9 +57,9 @@ Thus $f$ has no root in $\FF_3$ and is irreducible.
 ::: pf-step
 
 The quotient
-\[
+$$
 K=\FF_3[T]/(T^3-T-1)
-\]
+$$
 is a field.
 
 ::: pf-proof
@@ -78,11 +78,11 @@ The field $K$ has $27$ elements.
 ::: pf-proof
 
 Every class has a unique representative
-\[
+$$
 a+bT+cT^2,
 \qquad
 a,b,c\in\FF_3.
-\]
+$$
 There are therefore $3^3=27$ residue classes.
 
 :::

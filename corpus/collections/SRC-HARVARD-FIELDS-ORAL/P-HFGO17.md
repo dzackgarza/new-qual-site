@@ -27,43 +27,43 @@ Give a field $F$ and a polynomial $p(x)\in F[x]$ whose splitting field $E$ has n
 
 ::: {.solution}
 We construct an example with
-\[
+$$
 \operatorname{Gal}(E/F)\cong A_5.
-\]
+$$
 
 Let $k=\QQ$, introduce algebraically independent variables
-\[
+$$
 \{x_g:g\in A_5\},
-\]
+$$
 and set
-\[
+$$
 E=k(x_g:g\in A_5).
-\]
+$$
 Let $A_5$ act on $E$ by
-\[
+$$
 h(x_g)=x_{hg},
-\]
+$$
 and define the fixed field
-\[
+$$
 F=E^{A_5}.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 The extension $E/F$ is finite Galois with
-\[
+$$
 \operatorname{Gal}(E/F)\cong A_5.
-\]
+$$
 
 ::: pf-proof
 
 The action is faithful because a nonidentity $h$ sends $x_1$ to the distinct
 variable $x_h$. Artin's fixed-field theorem therefore gives
-\[
+$$
 [E:F]=|A_5|=60
-\]
+$$
 and identifies the full Galois group with the acting group $A_5$.
 
 :::
@@ -78,9 +78,9 @@ There is a polynomial $p(x)\in F[x]$ whose splitting field is $E$.
 
 The extension $E/F$ is finite separable, so by the primitive element theorem
 there exists $\alpha\in E$ such that
-\[
+$$
 E=F(\alpha).
-\]
+$$
 Let $p(x)$ be the minimal polynomial of $\alpha$ over $F$. Since $E/F$ is
 normal, every $F$-conjugate of $\alpha$ lies in $E$, so $p$ splits in $E$.
 Conversely, its roots generate the normal closure of $F(\alpha)=E$, hence its
@@ -93,17 +93,17 @@ splitting field is exactly $E$.
 ::: pf-step
 
 No proper nontrivial intermediate field $L$ with
-\[
+$$
 F\subsetneq L\subsetneq E
-\]
+$$
 is normal over $F$.
 
 ::: pf-proof
 
 By the Galois correspondence, $L$ corresponds to
-\[
+$$
 H=\operatorname{Gal}(E/L)<A_5.
-\]
+$$
 Because $E/F$ is Galois, the extension $L/F$ is normal if and only if $H$ is
 normal in $A_5$. The group $A_5$ is simple, so its only normal subgroups are
 $1$ and $A_5$, corresponding respectively to $E$ and $F$.

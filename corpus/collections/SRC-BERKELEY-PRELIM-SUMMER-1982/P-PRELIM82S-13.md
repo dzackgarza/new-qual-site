@@ -29,9 +29,9 @@ audit:
 
 ::: {.problem}
 Let $f:[0,\pi]\to\RR$ be continuous and suppose
-\[
+$$
 \int_0^\pi f(x)\sin(nx)\,dx=0
-\]
+$$
 for every integer $n\ge1$.
 Must $f$ be identically zero?
 :::

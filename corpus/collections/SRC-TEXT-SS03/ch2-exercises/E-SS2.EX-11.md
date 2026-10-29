@@ -36,44 +36,44 @@ $$
 
 ::: {.solution}
 For part (b), let $z=re^{i\theta}$ and put $\gamma=\varphi-\theta$. Rotating by $e^{-i\theta}$ reduces the computation to real $r$. Then
-\[
+$$
 \frac{Re^{i\gamma}+r}{Re^{i\gamma}-r}
 =
 \frac{(Re^{i\gamma}+r)(Re^{-i\gamma}-r)}{|Re^{i\gamma}-r|^2}.
-\]
+$$
 The numerator has real part $R^2-r^2$, while
-\[
+$$
 |Re^{i\gamma}-r|^2=R^2-2Rr\cos\gamma+r^2.
-\]
+$$
 Hence
-\[
+$$
 \operatorname{Re}\frac{Re^{i\gamma}+r}{Re^{i\gamma}-r}
 =
 \frac{R^2-r^2}{R^2-2Rr\cos\gamma+r^2}.
-\]
+$$
 
 For part (a), first suppose $0<|z|<R$ and set
-\[
+$$
 w=\frac{R^2}{\overline z}.
-\]
+$$
 Then $|w|>R$. By Cauchy's formula and Cauchy's theorem,
-\[
+$$
 f(z)=\frac1{2\pi i}\int_{|\zeta|=R}f(\zeta)
 \left(\frac1{\zeta-z}-\frac1{\zeta-w}\right)d\zeta.
-\]
+$$
 On $|\zeta|=R$,
-\[
+$$
 \zeta\left(\frac1{\zeta-z}-\frac1{\zeta-w}\right)
 =
 \frac{\zeta}{\zeta-z}+\frac{\overline z}{\overline\zeta-\overline z}
 =
 \operatorname{Re}\frac{\zeta+z}{\zeta-z}.
-\]
+$$
 With $\zeta=Re^{i\varphi}$ and $d\zeta=i\zeta\,d\varphi$, this gives
-\[
+$$
 f(z)=\frac1{2\pi}\int_0^{2\pi}
  f(Re^{i\varphi})
  \operatorname{Re}\left(\frac{Re^{i\varphi}+z}{Re^{i\varphi}-z}\right)d\varphi.
-\]
+$$
 If $z=0$, the formula is exactly the usual mean-value formula, so it holds for every $|z|<R$.
 :::

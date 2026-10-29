@@ -29,31 +29,31 @@ where $\gamma$ is Euler’s constant.
 
 ::: {.solution}
 Let
-\[
+$$
 H_n=1+\frac12+\cdots+\frac1n.
-\]
+$$
 The odd terms up to $2n-1$ satisfy
-\[
+$$
 1+\frac13+\cdots+\frac1{2n-1}
 =H_{2n}-\frac12H_n.
-\]
+$$
 Hence
-\[
+$$
 1+\frac13+\cdots+\frac1{2n-1}-\frac12\log n
 =H_{2n}-\frac12H_n-\frac12\log n.
-\]
+$$
 Using
-\[
+$$
 H_m=\log m+\gamma+o(1),
-\]
+$$
 we obtain
-\[
+$$
 \log(2n)+\gamma-\frac12(\log n+\gamma)-\frac12\log n+o(1)
 =\log2+\frac\gamma2+o(1).
-\]
+$$
 Therefore
-\[
+$$
 \boxed{1+\frac13+\cdots+\frac1{2n-1}-\frac12\log n
 \longrightarrow \frac\gamma2+\log2}.
-\]
+$$
 :::

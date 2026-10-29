@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Let $f$ be entire and suppose
-\[
+$$
 \operatorname{Re}f(z)\ge-2
-\]
+$$
 for all $z\in\CC$.
 Show that $f$ is constant.
 :::

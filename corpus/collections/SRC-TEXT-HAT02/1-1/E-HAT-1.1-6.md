@@ -45,27 +45,27 @@ Sliding the basepoint of a loop along a path changes its based class by conjugat
 
 Let $p:I\to X$ be a path from $x$ to $y$, and let $f$ be a loop based at $y$.
 The loop
-\[
+$$
 p\cdot f\cdot\bar p
-\]
+$$
 is based at $x$.
 There is a free homotopy from this loop to $f$ obtained by moving the basepoint from $x$ to $y$ along $p$ while shortening the initial and terminal copies of $p$ by the same amount.
 
 More explicitly, for $t\in I$ let
-\[
+$$
 p_t(s)=p\bigl(t+(1-t)s\bigr),
 \qquad 0\le s\le1,
-\]
+$$
 the terminal segment of $p$ from $p(t)$ to $y$.
 Then the loop
-\[
+$$
 L_t=p_t\cdot f\cdot\bar p_t
-\]
+$$
 is based at $p(t)$.
 Using the standard three-piece parametrization of this concatenation gives a continuous map
-\[
+$$
 S^1\times I\to X.
-\]
+$$
 At $t=0$ it is $p\cdot f\cdot\bar p$, while at $t=1$ the two path pieces are constant and the loop is homotopic to $f$ by reparametrization.
 Thus the two loops are freely homotopic.
 
@@ -80,20 +80,20 @@ If $X$ is path connected, then $\Phi$ is surjective.
 ::: pf-proof
 
 Let $f:S^1\to X$ be arbitrary and put
-\[
+$$
 y=f(s_0).
-\]
+$$
 Choose a path $p$ from $x_0$ to $y$.
 Regard $f$ as a loop based at $y$ and define
-\[
+$$
 g=p\cdot f\cdot\bar p,
-\]
+$$
 a loop based at $x_0$.
 By step [](#s1){.pf-ref}, $g$ and $f$ are freely homotopic.
 Hence
-\[
+$$
 \Phi([g])=[f]\in[S^1,X].
-\]
+$$
 Since $[f]$ was arbitrary, $\Phi$ is onto.
 
 :::
@@ -103,26 +103,26 @@ Since $[f]$ was arbitrary, $\Phi$ is onto.
 ::: {.pf-step #s3}
 
 If $[f]$ and $[g]$ are conjugate in $\pi_1(X,x_0)$, then
-\[
+$$
 \Phi([f])=\Phi([g]).
-\]
+$$
 
 ::: pf-proof
 
 Suppose
-\[
+$$
 [g]=[h]\,[f]\,[h]^{-1}
-\]
+$$
 for a loop $h$ based at $x_0$.
 Then $g$ is based-homotopic to
-\[
+$$
 h\cdot f\cdot\bar h.
-\]
+$$
 By step [](#s1){.pf-ref}, the latter loop is freely homotopic to $f$.
 Therefore $g$ and $f$ define the same unbased homotopy class, so
-\[
+$$
 \Phi([g])=\Phi([f]).
-\]
+$$
 
 :::
 
@@ -131,33 +131,33 @@ Therefore $g$ and $f$ define the same unbased homotopy class, so
 ::: {.pf-step #s4}
 
 If
-\[
+$$
 \Phi([f])=\Phi([g]),
-\]
+$$
 then $[f]$ and $[g]$ are conjugate in $\pi_1(X,x_0)$.
 
 ::: pf-proof
 
 The equality of their images means that there is a free homotopy
-\[
+$$
 H:S^1\times I\to X
-\]
+$$
 from $f$ to $g$.
 Track the chosen point $s_0\in S^1$ through the homotopy:
-\[
+$$
 h(t)=H(s_0,t).
-\]
+$$
 Since both $f$ and $g$ are based at $x_0$, the path $h$ is a loop at $x_0$.
 
 Cutting the homotopy cylinder along $\{s_0\}\times I$ produces a square whose boundary maps to
-\[
+$$
 f\cdot h\cdot\bar g\cdot\bar h.
-\]
+$$
 This boundary loop is null-homotopic because it bounds the mapped square.
 Consequently
-\[
+$$
 [f]=[h]\,[g]\,[h]^{-1}.
-\]
+$$
 Thus $[f]$ and $[g]$ are conjugate.
 
 :::
@@ -179,11 +179,11 @@ The forward and reverse implications are steps [](#s3){.pf-ref} and [](#s4){.pf-
 ::: pf-step
 
 If $X$ is path connected, $\Phi$ induces a bijection
-\[
+$$
 \{\text{conjugacy classes in }\pi_1(X,x_0)\}
 \longrightarrow
 [S^1,X].
-\]
+$$
 
 ::: pf-proof
 

@@ -34,9 +34,9 @@ $K/F$ such that
 
 Equivalently, if $\alpha_1,\ldots,\alpha_r$ are the distinct roots of $f$ in an
 algebraic closure of $F$, then a splitting field is
-\[
+$$
 K=F(\alpha_1,\ldots,\alpha_r).
-\]
+$$
 The second condition is the minimality condition: no proper intermediate field
 between $F$ and $K$ contains all roots of $f$.
 

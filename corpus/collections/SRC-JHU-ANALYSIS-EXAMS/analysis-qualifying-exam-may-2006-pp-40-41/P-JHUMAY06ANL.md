@@ -34,19 +34,19 @@ audit:
 
 ::: {.problem}
 Let $(f_j)$ be an orthonormal sequence in $L^2([0,1])$. Prove that the Cesaro means
-\[
+$$
 S_n=\frac1n\sum_{j=1}^n f_j
-\]
+$$
 converge to $0$ almost everywhere.
 :::
 
 ::: {.solution}
 Because the $f_j$ are orthonormal,
-\[
+$$
 \|S_n\|_2^2
 =\frac1{n^2}\sum_{j=1}^n\|f_j\|_2^2
 =\frac1n.
-\]
+$$
 
 ::: pf
 
@@ -55,15 +55,15 @@ The square subsequence converges to $0$ almost everywhere.
 
 ::: pf-proof
 For $n=k^2$,
-\[
+$$
 \sum_{k=1}^\infty \|S_{k^2}\|_2^2
 =\sum_{k=1}^\infty\frac1{k^2}<\infty.
-\]
+$$
 Hence, for every $\varepsilon>0$, Chebyshev gives
-\[
+$$
 \sum_{k=1}^\infty m\{|S_{k^2}|>\varepsilon\}
 \le \frac1{\varepsilon^2}\sum_{k=1}^\infty\|S_{k^2}\|_2^2<\infty.
-\]
+$$
 Apply Borel–Cantelli for each of the countably many
 thresholds $\varepsilon=1/j$, $j\geq1$ [@Fol13]. Outside
 the union of their null exceptional sets, each threshold
@@ -78,39 +78,39 @@ The oscillation between consecutive squares tends to $0$ almost everywhere.
 
 ::: pf-proof
 Fix $k$ and put $m=k^2$. For $m<n\le(k+1)^2$, orthogonality gives
-\[
+$$
 S_n-S_m
 =\left(\frac1n-\frac1m\right)\sum_{j=1}^m f_j
 +\frac1n\sum_{j=m+1}^n f_j,
-\]
+$$
 with the two sums orthogonal. Therefore
-\[
+$$
 \|S_n-S_m\|_2^2
 =m\left(\frac1n-\frac1m\right)^2+\frac{n-m}{n^2}
 =\frac{n-m}{nm}.
-\]
+$$
 Since $n-m\leq2k+1\leq3k$, $m=k^2$, and $n\geq k^2$, it follows that
-\[
+$$
 \|S_n-S_{k^2}\|_2^2\leq\frac{3}{k^3}
-\]
+$$
 for every $k\geq1$ and $k^2<n\leq(k+1)^2$.
 
 For $\varepsilon>0$, a union bound and Chebyshev give
-\[
+$$
 \begin{aligned}
 m\left\{\max_{k^2<n\le(k+1)^2}|S_n-S_{k^2}|>\varepsilon\right\}
 &\le\sum_{n=k^2+1}^{(k+1)^2}m\{|S_n-S_{k^2}|>\varepsilon\}\\
 &\le\frac1{\varepsilon^2}\sum_{n=k^2+1}^{(k+1)^2}\|S_n-S_{k^2}\|_2^2\\
 &\le\frac{9}{\varepsilon^2k^2},
 \end{aligned}
-\]
+$$
 because the block contains $2k+1\leq3k$ indices. The
 right-hand side is summable in $k$. Applying Borel–Cantelli
 for each $\varepsilon=1/j$, $j\geq1$, and taking the
 countable union of the resulting null exceptional sets gives
-\[
+$$
 \max_{k^2<n\le(k+1)^2}|S_n(x)-S_{k^2}(x)|\longrightarrow0
-\]
+$$
 for almost every $x$.
 :::
 
@@ -121,14 +121,14 @@ Conclude for the full sequence.
 
 ::: pf-proof
 Outside the union of the two null exceptional sets from steps [](#square-subsequence-converges){.pf-ref} and [](#oscillation-tends-to-zero){.pf-ref}, if $k^2<n\le(k+1)^2$, then
-\[
+$$
 |S_n(x)|
 \le |S_{k^2}(x)|+|S_n(x)-S_{k^2}(x)|.
-\]
+$$
 Both terms tend to $0$ as $k\to\infty$. Hence
-\[
+$$
 S_n(x)\longrightarrow0
-\]
+$$
 for almost every $x\in[0,1]$.
 :::
 

@@ -31,28 +31,28 @@ Verify that the formula $f(z_1, \cdots, z_{2k}) = (\bar{z}_2, -\bar{z}_1, \bar{z
 
 ::: {.solution}
 Define
-\[
+$$
 F(z_1,\ldots,z_{2k})=(\bar z_2,-\bar z_1,\ldots,\bar z_{2k},-\bar z_{2k-1}).
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 The map $F$ is conjugate-linear and satisfies
-\[
+$$
 F(\lambda z)=\bar\lambda F(z),
 \qquad
 F^2=-\operatorname{id}.
-\]
+$$
 
 ::: pf-proof
 
 Both identities follow by direct calculation on each coordinate pair $(z_{2j-1},z_{2j})$:
-\[
+$$
 (z_{2j-1},z_{2j})\mapsto(\bar z_{2j},-\bar z_{2j-1})
 \mapsto(-z_{2j-1},-z_{2j}).
-\]
+$$
 
 :::
 
@@ -61,18 +61,18 @@ Both identities follow by direct calculation on each coordinate pair $(z_{2j-1},
 ::: pf-step
 
 Hence $F$ induces a well-defined map
-\[
+$$
 f:\CP^{2k-1}\to\CP^{2k-1},
 \qquad
 f([z])=[F(z)].
-\]
+$$
 
 ::: pf-proof
 
 If $[z]=[\lambda z]$ with $\lambda\ne0$, then
-\[
+$$
 F(\lambda z)=\bar\lambda F(z),
-\]
+$$
 so $F(\lambda z)$ and $F(z)$ determine the same complex line. Also $F(z)\ne0$ for $z\ne0$ because $F^2=-\operatorname{id}$.
 
 :::
@@ -86,13 +86,13 @@ The map $f$ has no fixed point.
 ::: pf-proof
 
 If $[z]$ were fixed, then for some $\lambda\in\CC^*$ we would have
-\[
+$$
 F(z)=\lambda z.
-\]
+$$
 Applying $F$ and using conjugate-linearity gives
-\[
+$$
 -z=F^2(z)=F(\lambda z)=\bar\lambda F(z)=|\lambda|^2z.
-\]
+$$
 Since $z\ne0$, this would imply $|\lambda|^2=-1$, impossible.
 
 :::

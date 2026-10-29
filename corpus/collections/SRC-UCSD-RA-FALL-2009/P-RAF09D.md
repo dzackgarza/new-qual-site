@@ -48,34 +48,34 @@ Compute the first distributional derivative.
 ::: pf-proof
 
 By definition of the derivative of a distribution,
-\[
+$$
 \Lambda'(\phi)=-\Lambda(\phi')
 =-\int_{\RR}\phi'(x)\log|x|\,dx.
-\]
+$$
 Choose $R>0$ so that $\operatorname{supp}\phi\subset(-R,R)$. For $0<\delta<R$, integrate by parts on $[-R,-\delta]$ and $[\delta,R]$:
-\[
+$$
 \begin{aligned}
 -\int_{|x|>\delta}\phi'(x)\log|x|\,dx
 &=\int_{|x|>\delta}\frac{\phi(x)}x\,dx\\
 &\quad+\log\delta\,[\phi(\delta)-\phi(-\delta)].
 \end{aligned}
-\]
+$$
 Since $\phi$ is $C^1$,
-\[
+$$
 |\phi(\delta)-\phi(-\delta)|\le C\delta,
-\]
+$$
 and therefore
-\[
+$$
 \log\delta\,[\phi(\delta)-\phi(-\delta)]\to0
-\]
+$$
 as $\delta\downarrow0$.
 
 Hence
-\[
+$$
 \boxed{
 \Lambda'(\phi)
 =\operatorname{PV}\int_{\RR}\frac{\phi(x)}x\,dx.}
-\]
+$$
 
 :::
 
@@ -88,51 +88,51 @@ Differentiate once more.
 ::: pf-proof
 
 Using part (a),
-\[
+$$
 \Lambda''(\phi)
 =-\Lambda'(\phi')
 =-\operatorname{PV}\int_{\RR}\frac{\phi'(x)}x\,dx.
-\]
+$$
 We now rewrite the principal value. Put
-\[
+$$
 h(x):=\phi(x)-\phi(0).
-\]
+$$
 Then $h'(x)=\phi'(x)$ and $h(0)=0$. For $\delta>0$,
-\[
+$$
 \begin{aligned}
 \int_{|x|>\delta}\frac{\phi'(x)}x\,dx
 &=\int_{|x|>\delta}\frac{h'(x)}x\,dx\\
 &=\int_{|x|>\delta}\frac{h(x)}{x^2}\,dx
 \; +\; B_\delta,
 \end{aligned}
-\]
+$$
 where the boundary terms at $\pm\infty$ vanish because $h$ is bounded and $h(x)/x\to0$, and the inner boundary contribution is
-\[
+$$
 B_\delta
 =-\frac{h(-\delta)+h(\delta)}\delta.
-\]
+$$
 Taylor expansion at $0$ gives
-\[
+$$
 h(\delta)=\phi'(0)\delta+O(\delta^2),
 \qquad
 h(-\delta)=-\phi'(0)\delta+O(\delta^2),
-\]
+$$
 so
-\[
+$$
 B_\delta\to0.
-\]
+$$
 Therefore
-\[
+$$
 \operatorname{PV}\int_{\RR}\frac{\phi'(x)}x\,dx
 =\operatorname{PV}\int_{\RR}\frac{\phi(x)-\phi(0)}{x^2}\,dx.
-\]
+$$
 Substituting into the distributional derivative formula yields
-\[
+$$
 \boxed{
 \Lambda''(\phi)
 =-\operatorname{PV}\int_{\RR}
 \frac{\phi(x)-\phi(0)}{x^2}\,dx.}
-\]
+$$
 
 :::
 

@@ -32,9 +32,9 @@ Deduce that if there is a chain of fields $F = E _ { 0 } \subset E _ { 1 } \subs
 ::: pf-step
 
 Write the quadratic extension as
-\[
+$$
 E=F(\sqrt d)
-\]
+$$
 for some $d\in F^\times\setminus(F^\times)^2$.
 
 
@@ -49,17 +49,17 @@ Because $\operatorname{char}F\ne2$, every quadratic extension is separable. If $
 ::: {.pf-step #s1-2}
 
 The square class $[d]\in F^\times/(F^\times)^2$ is a nontrivial element of the kernel of
-\[
+$$
 \iota:F^\times/(F^\times)^2\longrightarrow E^\times/(E^\times)^2.
-\]
+$$
 
 
 ::: pf-proof
 
 The class is nontrivial because $d$ is not a square in $F$. In $E$ one has
-\[
+$$
 d=(\sqrt d)^2,
-\]
+$$
 so its image in $E^\times/(E^\times)^2$ is trivial.
 
 :::
@@ -69,9 +69,9 @@ so its image in $E^\times/(E^\times)^2$ is trivial.
 ::: {.pf-step #s1-3}
 
 Let $a\in F^\times$ represent an arbitrary element of $\ker\iota$. Then there exist $x,y\in F$ such that
-\[
+$$
 a=(x+y\sqrt d)^2.
-\]
+$$
 
 
 ::: pf-proof
@@ -85,13 +85,13 @@ Being in the kernel means exactly that $a$ becomes a square in $E$. Every elemen
 ::: pf-step
 
 Expanding the equality in step [](#s1-3){.pf-ref} gives
-\[
+$$
 a=x^2+dy^2+2xy\sqrt d,
-\]
+$$
 and hence
-\[
+$$
 xy=0.
-\]
+$$
 
 
 ::: pf-proof
@@ -118,13 +118,13 @@ These are the two alternatives forced by $xy=0$. Since $a\ne0$, in the first cas
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \ker\iota=\{1,[d]\},
-\]
+$$
 so
-\[
+$$
 \boxed{|\ker\iota|=2.}
-\]
+$$
 
 
 ::: pf-proof
@@ -138,21 +138,21 @@ Step [](#s1-2){.pf-ref} shows both displayed classes lie in the kernel and are d
 ::: {.pf-step #s1-7}
 
 For the tower
-\[
+$$
 F=E_0\subset E_1\subset\cdots\subset E_n=E,
-\]
+$$
 write
-\[
+$$
 V_i=E_i^\times/(E_i^\times)^2
-\]
+$$
 and let
-\[
+$$
 \phi_i:V_{i-1}\to V_i
-\]
+$$
 be the natural map. Then
-\[
+$$
 |\ker\phi_i|=2
-\]
+$$
 for every $i$.
 
 
@@ -167,23 +167,23 @@ Each extension $E_i/E_{i-1}$ is quadratic. Since the original field has characte
 ::: {.pf-step #s1-8}
 
 If
-\[
+$$
 \Phi_j=\phi_j\circ\cdots\circ\phi_1:V_0\to V_j,
-\]
+$$
 then
-\[
+$$
 |\ker\Phi_j|
 \mid
 |\ker\Phi_{j-1}|\,|\ker\phi_j|.
-\]
+$$
 
 
 ::: pf-proof
 
 Restrict $\Phi_{j-1}$ to $\ker\Phi_j$. Its image lies in $\ker\phi_j$, and its kernel is exactly $\ker\Phi_{j-1}$. Hence the first isomorphism theorem gives an injection
-\[
+$$
 \ker\Phi_j/\ker\Phi_{j-1}\hookrightarrow\ker\phi_j.
-\]
+$$
 Thus the quotient order divides $|\ker\phi_j|$, proving the displayed divisibility.
 
 :::
@@ -193,9 +193,9 @@ Thus the quotient order divides $|\ker\phi_j|$, proving the displayed divisibili
 ::: {.pf-step #s1-9}
 
 Induction gives
-\[
+$$
 |\ker\Phi_n|\mid2^n.
-\]
+$$
 
 
 ::: pf-proof
@@ -209,13 +209,13 @@ For $j=1$, step [](#s1-7){.pf-ref} gives $|\ker\Phi_1|=2$. If $|\ker\Phi_{j-1}|$
 ::: {.pf-step #s1-10}
 
 Since $\Phi_n$ is the natural map
-\[
+$$
 F^\times/(F^\times)^2\longrightarrow E^\times/(E^\times)^2,
-\]
+$$
 its kernel has order dividing
-\[
+$$
 \boxed{2^n}.
-\]
+$$
 
 
 ::: pf-proof

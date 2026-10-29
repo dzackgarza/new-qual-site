@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 X=\begin{pmatrix}A&B\\C&D\end{pmatrix}
-\]
+$$
 be a real $2n\times2n$ matrix, where $A,B,C,D$ are $n\times n$ matrices that commute pairwise. Prove that $X$ is invertible if and only if
-\[
+$$
 AD-BC
-\]
+$$
 is invertible.
 :::
 

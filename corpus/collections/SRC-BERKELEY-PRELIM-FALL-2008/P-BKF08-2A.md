@@ -27,9 +27,9 @@ audit:
 ::: {.problem}
 Suppose $f$ is analytic on the entire complex plane and $f(z)/z$ is bounded in the region $|z|>1$.
 Prove that
-\[
+$$
 f(z)=az+b
-\]
+$$
 for some constants $a,b$.
 :::
 

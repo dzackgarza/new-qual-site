@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Determine the rightmost decimal digit of
-\[
+$$
 17^{17^{17}}.
-\]
+$$
 :::
 
 ::: {.solution}

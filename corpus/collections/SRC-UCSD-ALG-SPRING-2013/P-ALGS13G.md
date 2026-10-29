@@ -66,9 +66,9 @@ Then $P=G$.
 
 Suppose $P<G$.
 By the Galois correspondence, the fixed field $N^P$ is a proper finite extension of $F$ and
-\[
+$$
 [N^P:F]=[G:P].
-\]
+$$
 The hypothesis therefore gives $p\mid [G:P]$.
 But $P$ is a Sylow $p$-subgroup, so $[G:P]$ is relatively prime to $p$.
 This contradiction shows $P=G$.
@@ -93,9 +93,9 @@ By step [](#s3){.pf-ref}, $G=P$, and $P$ has order a power of $p$.
 
 Let $H=\operatorname{Gal}(N/E)$.
 Then
-\[
+$$
 [E:F]=[G:H],
-\]
+$$
 so $[E:F]$ is a power of $p$.
 
 ::: pf-proof

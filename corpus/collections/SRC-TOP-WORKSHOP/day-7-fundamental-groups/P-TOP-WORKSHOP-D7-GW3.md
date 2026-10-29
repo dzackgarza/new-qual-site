@@ -27,26 +27,26 @@ Find $\pi_1(T^2)$, where $T^2=S^1\times S^1$ is the standard two torus, in TWO d
 
 ::: {.solution}
 First, use the product theorem for fundamental groups:
-\[
+$$
 \pi_1(S^1\times S^1,(1,1))
 \cong \pi_1(S^1,1)\times\pi_1(S^1,1)
 \cong \ZZ\times\ZZ.
-\]
+$$
 
-Second, use the standard square CW structure on the torus. After identifying opposite edges, there is one \(0\)-cell, two \(1\)-cells \(a,b\), and one \(2\)-cell whose attaching map follows the boundary word
-\[
+Second, use the standard square CW structure on the torus. After identifying opposite edges, there is one $0$-cell, two $1$-cells $a,b$, and one $2$-cell whose attaching map follows the boundary word
+$$
 aba^{-1}b^{-1}.
-\]
+$$
 Van Kampen therefore gives
-\[
+$$
 \pi_1(T^2)\cong\langle a,b\mid aba^{-1}b^{-1}=1\rangle.
-\]
-The single relation says exactly that \(a\) and \(b\) commute, so this group is
-\[
+$$
+The single relation says exactly that $a$ and $b$ commute, so this group is
+$$
 \ZZ^2.
-\]
+$$
 Thus both methods give
-\[
+$$
 \boxed{\pi_1(T^2)\cong\ZZ\oplus\ZZ}.
-\]
+$$
 :::

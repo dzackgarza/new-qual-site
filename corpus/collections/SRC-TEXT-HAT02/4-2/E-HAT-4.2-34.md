@@ -30,58 +30,58 @@ Show that $pq: T^3 \to S^2$ induces the trivial map on $\pi_*$ and $\tilde{H}_*$
 
 ::: {.solution}
 Let
-\[
+$$
 f=pq:T^3\xrightarrow{q}S^3\xrightarrow{p}S^2,
-\]
-where \(p\) is the Hopf map and \(q\) collapses the complement of an embedded \(3\)-ball.
+$$
+where $p$ is the Hopf map and $q$ collapses the complement of an embedded $3$-ball.
 
-For homotopy groups, \(\pi_1(S^2)=0\), while
-\[
+For homotopy groups, $\pi_1(S^2)=0$, while
+$$
 \pi_i(T^3)=0\qquad(i>1)
-\]
-because the universal cover of \(T^3\) is \(\RR^3\). Hence \(f_*\) is zero on every homotopy group.
+$$
+because the universal cover of $T^3$ is $\RR^3$. Hence $f_*$ is zero on every homotopy group.
 
-For reduced homology, \(q_*\) is zero in degrees \(1\) and \(2\) because \(S^3\) has no homology there, and
-\[
+For reduced homology, $q_*$ is zero in degrees $1$ and $2$ because $S^3$ has no homology there, and
+$$
 p_*:H_3(S^3)\to H_3(S^2)
-\]
-is zero. Thus \(f_*\) is zero on all reduced homology groups.
+$$
+is zero. Thus $f_*$ is zero on all reduced homology groups.
 
-To see that \(f\) is nevertheless essential, compare mapping cones. The commutative square
-\[
+To see that $f$ is nevertheless essential, compare mapping cones. The commutative square
+$$
 \begin{array}{ccc}
 T^3&\xrightarrow{q}&S^3\\
 f\downarrow&&\downarrow p\\
 S^2&=&S^2
 \end{array}
-\]
+$$
 induces a map
-\[
+$$
 C_f\longrightarrow C_p.
-\]
+$$
 Contravariantly, this gives
-\[
+$$
 H^*(C_p)\longrightarrow H^*(C_f).
-\]
-The Hopf mapping cone is \(C_p\simeq\CP^2\). If \(x\in H^2(C_p;\ZZ)\) is its standard generator, then
-\[
+$$
+The Hopf mapping cone is $C_p\simeq\CP^2$. If $x\in H^2(C_p;\ZZ)$ is its standard generator, then
+$$
 x^2\ne0\in H^4(C_p;\ZZ).
-\]
-The induced map is an isomorphism in degree \(2\), since it is the identity on the \(S^2\) subspace. In degree \(4\), the quotient description of mapping cones identifies the induced map with the suspension of
-\[
+$$
+The induced map is an isomorphism in degree $2$, since it is the identity on the $S^2$ subspace. In degree $4$, the quotient description of mapping cones identifies the induced map with the suspension of
+$$
 q:T^3\to S^3.
-\]
-The map \(q\) has degree \(1\), so this map is also an isomorphism on \(H^4\). Therefore the image \(\bar x\in H^2(C_f)\) satisfies
-\[
+$$
+The map $q$ has degree $1$, so this map is also an isomorphism on $H^4$. Therefore the image $\bar x\in H^2(C_f)$ satisfies
+$$
 \bar x^2\ne0.
-\]
+$$
 
-If \(f\) were nullhomotopic, then
-\[
+If $f$ were nullhomotopic, then
+$$
 C_f\simeq S^2\vee\Sigma T^3.
-\]
-The degree-\(2\) class coming from the \(S^2\)-summand would have square zero, a contradiction. Hence
-\[
+$$
+The degree-$2$ class coming from the $S^2$-summand would have square zero, a contradiction. Hence
+$$
 \boxed{pq\text{ is not nullhomotopic}.}
-\]
+$$
 :::

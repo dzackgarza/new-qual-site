@@ -39,208 +39,208 @@ Prove that $g(\alpha_i+\alpha_j) = 0$ for any $1 \leq i < j \leq n$.
 
 
 ::: {.solution}
-Because the roots are algebraic, we write \(F(\alpha_1,\alpha_2)\) for the field denoted \(F[\alpha_1,\alpha_2]\) in the statement.
+Because the roots are algebraic, we write $F(\alpha_1,\alpha_2)$ for the field denoted $F[\alpha_1,\alpha_2]$ in the statement.
 
 ::: pf
 
 ::: {.pf-step #tower-degrees}
 One has
-\[
+$$
 [F(\alpha_1):F]=n
-\]
+$$
 and
-\[
+$$
 [F(\alpha_1,\alpha_2):F(\alpha_1)]=n-1.
-\]
+$$
 
 ::: pf-proof
-Since \(\alpha_1\) is a root of the degree-\(n\) polynomial \(f\),
-\[
+Since $\alpha_1$ is a root of the degree-$n$ polynomial $f$,
+$$
 [F(\alpha_1):F]\le n.
-\]
-Over \(F(\alpha_1)\), the element \(\alpha_2\) is a root of
-\[
+$$
+Over $F(\alpha_1)$, the element $\alpha_2$ is a root of
+$$
 \frac{f(x)}{x-\alpha_1},
-\]
-which has degree \(n-1\).
+$$
+which has degree $n-1$.
 Hence
-\[
+$$
 [F(\alpha_1,\alpha_2):F(\alpha_1)]\le n-1.
-\]
+$$
 The tower law gives
-\[
+$$
 n(n-1)
 =[F(\alpha_1,\alpha_2):F]
 =[F(\alpha_1,\alpha_2):F(\alpha_1)]
  [F(\alpha_1):F].
-\]
-The two factors on the right are at most \(n-1\) and \(n\), respectively, while their product attains the product of those upper bounds.
+$$
+The two factors on the right are at most $n-1$ and $n$, respectively, while their product attains the product of those upper bounds.
 Therefore both bounds are equalities.
 :::
 
 :::
 
 ::: {.pf-step #part-i-irreducibility}
-The polynomial \(f\) is irreducible over \(F\), and
-\[
+The polynomial $f$ is irreducible over $F$, and
+$$
 \frac{f(x)}{x-\alpha_1}
-\]
-is irreducible over \(F(\alpha_1)\).
+$$
+is irreducible over $F(\alpha_1)$.
 
 ::: pf-proof
-Let \(m_1(x)\) be the minimal polynomial of \(\alpha_1\) over \(F\).
-It divides \(f\), and by step [](#tower-degrees){.pf-ref},
-\[
+Let $m_1(x)$ be the minimal polynomial of $\alpha_1$ over $F$.
+It divides $f$, and by step [](#tower-degrees){.pf-ref},
+$$
 \deg m_1=[F(\alpha_1):F]=n=\deg f.
-\]
-Thus \(f\) is a nonzero scalar multiple of \(m_1\), so \(f\) is irreducible.
+$$
+Thus $f$ is a nonzero scalar multiple of $m_1$, so $f$ is irreducible.
 
-Now let \(m_2(x)\) be the minimal polynomial of \(\alpha_2\) over \(F(\alpha_1)\).
+Now let $m_2(x)$ be the minimal polynomial of $\alpha_2$ over $F(\alpha_1)$.
 It divides
-\[
+$$
 \frac{f(x)}{x-\alpha_1},
-\]
+$$
 and by step [](#tower-degrees){.pf-ref},
-\[
+$$
 \deg m_2
 =[F(\alpha_1,\alpha_2):F(\alpha_1)]
 =n-1.
-\]
-The quotient \(f(x)/(x-\alpha_1)\) also has degree \(n-1\), so it is a nonzero scalar multiple of \(m_2\), hence irreducible over \(F(\alpha_1)\).
+$$
+The quotient $f(x)/(x-\alpha_1)$ also has degree $n-1$, so it is a nonzero scalar multiple of $m_2$, hence irreducible over $F(\alpha_1)$.
 :::
 
 :::
 
 ::: pf-step
-For every \(j\) with \(2\le j\le n\),
-\[
+For every $j$ with $2\le j\le n$,
+$$
 g(\alpha_1+\alpha_j)=0.
-\]
+$$
 
 ::: pf-proof
-By step [](#part-i-irreducibility){.pf-ref}, the minimal polynomial of \(\alpha_2\) over \(F(\alpha_1)\) is, up to a nonzero scalar,
-\[
+By step [](#part-i-irreducibility){.pf-ref}, the minimal polynomial of $\alpha_2$ over $F(\alpha_1)$ is, up to a nonzero scalar,
+$$
 \frac{f(x)}{x-\alpha_1}.
-\]
+$$
 Its roots are precisely
-\[
+$$
 \alpha_2,\ldots,\alpha_n,
-\]
+$$
 and they are distinct by hypothesis.
-Therefore for each \(j\ge2\), the assignment
-\[
+Therefore for each $j\ge2$, the assignment
+$$
 \alpha_2\longmapsto\alpha_j
-\]
-extends to an \(F(\alpha_1)\)-embedding
-\[
+$$
+extends to an $F(\alpha_1)$-embedding
+$$
 \sigma_j:F(\alpha_1,\alpha_2)\longrightarrow E.
-\]
+$$
 Since
-\[
+$$
 g(\alpha_1+\alpha_2)=0
-\]
-and the coefficients of \(g\) lie in \(F\), applying \(\sigma_j\) gives
-\[
+$$
+and the coefficients of $g$ lie in $F$, applying $\sigma_j$ gives
+$$
 0
 =\sigma_j(g(\alpha_1+\alpha_2))
 =g(\alpha_1+\alpha_j).
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #separable-tower}
-The finite extension \(F(\alpha_1,\alpha_2)/F\) is separable and has exactly \(n(n-1)\) \(F\)-embeddings into an algebraic closure of \(F\).
+The finite extension $F(\alpha_1,\alpha_2)/F$ is separable and has exactly $n(n-1)$ $F$-embeddings into an algebraic closure of $F$.
 
 ::: pf-proof
-By step [](#part-i-irreducibility){.pf-ref}, \(f\) is the minimal polynomial of \(\alpha_1\) up to a scalar.
-The polynomial \(f\) has \(n\) distinct roots by hypothesis, so \(\alpha_1\) is separable over \(F\).
-Likewise, the minimal polynomial of \(\alpha_2\) over \(F(\alpha_1)\) is proportional to
-\[
+By step [](#part-i-irreducibility){.pf-ref}, $f$ is the minimal polynomial of $\alpha_1$ up to a scalar.
+The polynomial $f$ has $n$ distinct roots by hypothesis, so $\alpha_1$ is separable over $F$.
+Likewise, the minimal polynomial of $\alpha_2$ over $F(\alpha_1)$ is proportional to
+$$
 \frac{f(x)}{x-\alpha_1},
-\]
-whose roots \(\alpha_2,\ldots,\alpha_n\) are distinct.
-Thus \(\alpha_2\) is separable over \(F(\alpha_1)\).
+$$
+whose roots $\alpha_2,\ldots,\alpha_n$ are distinct.
+Thus $\alpha_2$ is separable over $F(\alpha_1)$.
 Therefore the tower
-\[
+$$
 F\subseteq F(\alpha_1)\subseteq F(\alpha_1,\alpha_2)
-\]
+$$
 is separable.
-Its degree is \(n(n-1)\) by hypothesis, so it has exactly \(n(n-1)\) \(F\)-embeddings into an algebraic closure.
+Its degree is $n(n-1)$ by hypothesis, so it has exactly $n(n-1)$ $F$-embeddings into an algebraic closure.
 :::
 
 :::
 
 ::: {.pf-step #every-pair-realized}
-For every ordered pair \((i,j)\) with \(i\neq j\), there is an \(F\)-embedding
-\[
+For every ordered pair $(i,j)$ with $i\neq j$, there is an $F$-embedding
+$$
 \sigma_{ij}:F(\alpha_1,\alpha_2)\longrightarrow E
-\]
+$$
 such that
-\[
+$$
 \sigma_{ij}(\alpha_1)=\alpha_i,
 \qquad
 \sigma_{ij}(\alpha_2)=\alpha_j.
-\]
+$$
 
 ::: pf-proof
-Let \(\sigma\) be any \(F\)-embedding of \(F(\alpha_1,\alpha_2)\) into an algebraic closure.
-Because \(f(\alpha_1)=0\) and \(\sigma\) fixes \(F\),
-\[
+Let $\sigma$ be any $F$-embedding of $F(\alpha_1,\alpha_2)$ into an algebraic closure.
+Because $f(\alpha_1)=0$ and $\sigma$ fixes $F$,
+$$
 f(\sigma(\alpha_1))=0.
-\]
+$$
 Thus
-\[
+$$
 \sigma(\alpha_1)=\alpha_i
-\]
-for some \(i\).
+$$
+for some $i$.
 
 The relation
-\[
+$$
 \frac{f(\alpha_2)}{\alpha_2-\alpha_1}=0
-\]
-is more cleanly expressed by saying that \(\alpha_2\) is a root of the polynomial
-\[
+$$
+is more cleanly expressed by saying that $\alpha_2$ is a root of the polynomial
+$$
 q_{\alpha_1}(x):=\frac{f(x)}{x-\alpha_1}
 \in F(\alpha_1)[x].
-\]
-Applying \(\sigma\) to its coefficients sends it to
-\[
+$$
+Applying $\sigma$ to its coefficients sends it to
+$$
 q_{\alpha_i}(x)=\frac{f(x)}{x-\alpha_i}.
-\]
-Therefore \(\sigma(\alpha_2)\) is a root of \(q_{\alpha_i}\), so
-\[
+$$
+Therefore $\sigma(\alpha_2)$ is a root of $q_{\alpha_i}$, so
+$$
 \sigma(\alpha_2)=\alpha_j
-\]
-for some \(j\neq i\).
-Hence every embedding determines an ordered pair of distinct roots, and its image lies in \(E\).
+$$
+for some $j\neq i$.
+Hence every embedding determines an ordered pair of distinct roots, and its image lies in $E$.
 
-An embedding is completely determined by the images of the generators \(\alpha_1\) and \(\alpha_2\), so two embeddings giving the same ordered pair are equal.
-Thus the \(n(n-1)\) embeddings from step [](#separable-tower){.pf-ref} inject into the set of \(n(n-1)\) ordered pairs \((i,j)\) with \(i\neq j\).
+An embedding is completely determined by the images of the generators $\alpha_1$ and $\alpha_2$, so two embeddings giving the same ordered pair are equal.
+Thus the $n(n-1)$ embeddings from step [](#separable-tower){.pf-ref} inject into the set of $n(n-1)$ ordered pairs $(i,j)$ with $i\neq j$.
 The two finite sets have the same cardinality, so every ordered pair occurs.
 :::
 
 :::
 
 ::: pf-step
-For all \(i\neq j\),
-\[
+For all $i\neq j$,
+$$
 g(\alpha_i+\alpha_j)=0.
-\]
+$$
 
 ::: pf-proof
-Choose the embedding \(\sigma_{ij}\) from step [](#every-pair-realized){.pf-ref}.
+Choose the embedding $\sigma_{ij}$ from step [](#every-pair-realized){.pf-ref}.
 Since
-\[
+$$
 g(\alpha_1+\alpha_2)=0
-\]
-and \(g\in F[x]\), applying \(\sigma_{ij}\) gives
-\[
+$$
+and $g\in F[x]$, applying $\sigma_{ij}$ gives
+$$
 0
 =\sigma_{ij}(g(\alpha_1+\alpha_2))
 =g(\alpha_i+\alpha_j).
-\]
-In particular this holds for every \(1\le i<j\le n\), as required.
+$$
+In particular this holds for every $1\le i<j\le n$, as required.
 :::
 
 :::

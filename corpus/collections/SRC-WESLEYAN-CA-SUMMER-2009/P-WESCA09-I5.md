@@ -28,9 +28,9 @@ Define what it means for a function $F$ to be a primitive of $f$.
 
 A function $F:U\to\CC$ is a primitive of $f$ on $U$ if $F$ is
 holomorphic on $U$ and
-\[
+$$
 \boxed{F'(z)=f(z)\qquad\text{for every }z\in U}.
-\]
+$$
 
 
 ::: pf-proof

@@ -35,22 +35,22 @@ find all solutions of AX = 2X and all solutions of AX = 3X. (The symbol cX denot
 
 ::: {.solution}
 The equation $AX=cX$ is equivalent to
-\[
+$$
 (A-cI)X=0.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 The solutions of $AX=2X$ are
-\[
+$$
 X=t\begin{bmatrix}1\\1\\1\end{bmatrix},
 \qquad t\in F.
-\]
+$$
 
 ::: pf-proof
 For $c=2$,
-\[
+$$
 A-2I=
 \begin{bmatrix}
 4&-4&0\\
@@ -63,7 +63,7 @@ A-2I=
 0&1&-1\\
 0&0&0
 \end{bmatrix}.
-\]
+$$
 Hence $x_1=x_3$ and $x_2=x_3$, giving the stated one-dimensional solution
 space.
 :::
@@ -72,14 +72,14 @@ space.
 
 ::: pf-step
 The solutions of $AX=3X$ are
-\[
+$$
 X=t\begin{bmatrix}0\\0\\1\end{bmatrix},
 \qquad t\in F.
-\]
+$$
 
 ::: pf-proof
 For $c=3$,
-\[
+$$
 A-3I=
 \begin{bmatrix}
 3&-4&0\\
@@ -92,7 +92,7 @@ A-3I=
 0&1&0\\
 0&0&0
 \end{bmatrix}.
-\]
+$$
 Thus $x_1=x_2=0$ and $x_3$ is arbitrary.
 :::
 

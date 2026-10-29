@@ -23,9 +23,9 @@ audit:
 
 ::: {.problem}
 Let $A,B$ be complex $n\times n$ matrices satisfying
-\[
+$$
 AB=BA^2,
-\]
+$$
 and suppose $A$ has no eigenvalue of absolute value $1$. Prove that $A$ and $B$ have a common nonzero eigenvector.
 :::
 

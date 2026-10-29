@@ -28,9 +28,9 @@ Define what it means for a function to be a branch of the logarithm on $D$.
 
 A branch of the logarithm on $D$ is a holomorphic function
 $L:D\to\CC$ such that
-\[
+$$
 \boxed{e^{L(z)}=z\qquad\text{for every }z\in D.}
-\]
+$$
 
 
 ::: pf-proof

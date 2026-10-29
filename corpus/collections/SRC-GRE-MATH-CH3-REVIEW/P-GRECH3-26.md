@@ -18,13 +18,13 @@ audit:
 
 ::: {.problem}
 Let $C$ be the portion of the astroid $x^{2/3}+y^{2/3}=1$ from $(1,0)$ to $(0,1)$, which can be parameterized by the equations
-\[
+$$
 x=\cos^3 t,\quad y=\sin^3 t
-\]
+$$
 as $t$ increases from $0$ to $\frac{\pi}{2}$. Evaluate the integral:
-\[
+$$
 \int_C(y\cos xy-1)\,dx+(1+x\cos xy)\,dy
-\]
+$$
 
 (A) $-2$
 (B) $-1$

@@ -27,9 +27,9 @@ State the principle of analytic continuation for holomorphic functions and give 
 
 If $D$ is connected and open and $f,g:D\to\CC$ are holomorphic,
 then agreement on a subset of $D$ having an accumulation point in $D$ implies
-\[
+$$
 \boxed{f=g\text{ on }D}.
-\]
+$$
 
 
 ::: pf-proof
@@ -44,9 +44,9 @@ overlapping connected domains is unique wherever two continuations overlap.
 ::: {.pf-step #s1-2}
 
 A concrete example is
-\[
+$$
 \sum_{n=0}^{\infty}z^n=\frac1{1-z}\qquad(|z|<1).
-\]
+$$
 Thus the power-series function continues uniquely as $(1-z)^{-1}$ on
 $\CC\setminus\{1\}$.
 
@@ -54,9 +54,9 @@ $\CC\setminus\{1\}$.
 ::: pf-proof
 
 For $|z|<1$, the finite geometric-sum identity gives
-\[
+$$
 \sum_{n=0}^{N}z^n=\frac{1-z^{N+1}}{1-z}.
-\]
+$$
 Letting $N\to\infty$ gives the displayed identity. The function
 $(1-z)^{-1}$ is holomorphic on $\CC\setminus\{1\}$ and agrees with the
 series on the unit disk. Step [](#s1-1){.pf-ref} gives uniqueness of any analytic

@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Let $(X,\mathcal A)$ be a measurable space and let $\mathcal C\subset\mathcal A$ be an algebra with $\mathcal A=\sigma(\mathcal C)$.
 Let $\mu,\nu$ be finite measures such that
-\[
+$$
 \mu(C)=\nu(C)\qquad(C\in\mathcal C).
-\]
+$$
 Prove that $\mu(A)=\nu(A)$ for every $A\in\mathcal A$.
 :::
 

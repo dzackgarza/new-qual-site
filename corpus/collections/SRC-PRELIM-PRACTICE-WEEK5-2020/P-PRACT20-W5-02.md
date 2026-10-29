@@ -27,9 +27,9 @@ What is the units digit of $2019^{2019}$?
 ::: {.pf-step #s1-1}
 
 Modulo $10$,
-\[
+$$
 2019\equiv9.
-\]
+$$
 
 
 ::: pf-proof
@@ -43,17 +43,17 @@ The difference $2019-9=2010$ is divisible by $10$.
 ::: {.pf-step #s1-2}
 
 One has
-\[
+$$
 9^2\equiv1\pmod{10}.
-\]
+$$
 
 
 ::: pf-proof
 
 Indeed,
-\[
+$$
 9^2=81\equiv1\pmod{10}.
-\]
+$$
 
 :::
 
@@ -62,19 +62,19 @@ Indeed,
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 2019^{2019}\equiv9\pmod{10}.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 2019=2\cdot1009+1,
-\]
+$$
 steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give
-\[
+$$
 2019^{2019}
 \equiv
 9^{2019}
@@ -83,7 +83,7 @@ steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give
 1^{1009}9
 \equiv9
 \pmod{10}.
-\]
+$$
 
 :::
 
@@ -92,9 +92,9 @@ steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give
 ::: {.pf-step #s1-4}
 
 The units digit is
-\[
+$$
 \boxed{9}.
-\]
+$$
 
 
 ::: pf-proof

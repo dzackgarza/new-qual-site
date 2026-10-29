@@ -27,9 +27,9 @@ Give examples of the following. No proofs are required.
 (d) A sequence $(a_n)$ converging to $0$ such that the partial sums of $\sum a_n$ are bounded but the series diverges.
 
 (e) A continuously differentiable vector field $F=(M,N)$ on $\RR^2$ such that
-\[
+$$
 \int_C M(x,y)\,dx+N(x,y)\,dy=4,
-\]
+$$
 where $C$ is the unit circle oriented counterclockwise.
 :::
 

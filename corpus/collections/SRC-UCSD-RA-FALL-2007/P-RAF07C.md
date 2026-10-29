@@ -47,17 +47,17 @@ Prove continuity of $g$.
 ::: pf-proof
 
 Fix $\xi\in\RR$ and let $\xi_k\to\xi$. For every $x$,
-\[
+$$
 e^{i\xi_k\cos x}f(x)\longrightarrow e^{i\xi\cos x}f(x),
-\]
+$$
 and
-\[
+$$
 |e^{i\xi_k\cos x}f(x)|=|f(x)|.
-\]
+$$
 Since $f\in L^1(\RR)$, dominated convergence gives
-\[
+$$
 g(\xi_k)\to g(\xi).
-\]
+$$
 Hence $g$ is continuous.
 
 :::
@@ -71,26 +71,26 @@ Differentiate under the integral sign to all orders.
 ::: pf-proof
 
 For each integer $n\ge0$, define
-\[
+$$
 G_n(\xi,x):=(i\cos x)^n e^{i\xi\cos x}f(x).
-\]
+$$
 Then
-\[
+$$
 |G_n(\xi,x)|\le |f(x)|
-\]
+$$
 for every $\xi,x$. Also
-\[
+$$
 \frac{\partial}{\partial\xi}G_n(\xi,x)=G_{n+1}(\xi,x).
-\]
+$$
 Because $|G_{n+1}(\xi,x)|\le|f(x)|\in L^1$, dominated convergence applied to difference quotients justifies differentiation under the integral. Inductively,
-\[
+$$
 \boxed{
 g^{(n)}(\xi)=\int_{\RR}(i\cos x)^n e^{i\xi\cos x}f(x)\,dx.}
-\]
+$$
 The same dominated-convergence argument shows each $g^{(n)}$ is continuous. Thus
-\[
+$$
 g\in C^\infty(\RR).
-\]
+$$
 
 :::
 
@@ -103,31 +103,31 @@ Prove that $g^{(n)}\to0$ uniformly in $\xi$.
 ::: pf-proof
 
 For every $\xi\in\RR$,
-\[
+$$
 |g^{(n)}(\xi)|
 \le \int_{\RR}|\cos x|^n|f(x)|\,dx.
-\]
+$$
 For almost every $x\in\RR$,
-\[
+$$
 |\cos x|<1,
-\]
+$$
 because $|\cos x|=1$ only on the countable set $\pi\ZZ$. Hence
-\[
+$$
 |\cos x|^n|f(x)|\longrightarrow0
-\]
+$$
 for almost every $x$, while
-\[
+$$
 |\cos x|^n|f(x)|\le|f(x)|\in L^1.
-\]
+$$
 Dominated convergence therefore yields
-\[
+$$
 \int_{\RR}|\cos x|^n|f(x)|\,dx\longrightarrow0.
-\]
+$$
 Since the bound is independent of $\xi$,
-\[
+$$
 \boxed{
 \sup_{\xi\in\RR}|g^{(n)}(\xi)|\longrightarrow0.}
-\]
+$$
 Thus $g^{(n)}\to0$ uniformly on $\RR$.
 
 :::

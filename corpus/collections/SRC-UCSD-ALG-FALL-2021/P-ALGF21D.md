@@ -49,13 +49,13 @@ Every field of characteristic zero is perfect, so there is nothing to prove in t
 
 Assume $\operatorname{char}F=p>0$.
 Then
-\[
+$$
 F^p\subseteq F\subseteq K,
-\]
+$$
 where
-\[
+$$
 F^p=\{x^p:x\in F\}.
-\]
+$$
 
 ::: pf-proof
 
@@ -68,24 +68,24 @@ The Frobenius map is a field homomorphism in characteristic $p$, so its image $F
 ::: {.pf-step #s3}
 
 The Frobenius isomorphisms induce
-\[
+$$
 [K^p:F^p]=[K:F].
-\]
+$$
 
 ::: pf-proof
 
 The Frobenius maps
-\[
+$$
 F\longrightarrow F^p,
 \qquad
 x\longmapsto x^p,
-\]
+$$
 and
-\[
+$$
 K\longrightarrow K^p,
 \qquad
 x\longmapsto x^p,
-\]
+$$
 are field isomorphisms onto their images, and the second carries the subfield $F$ onto $F^p$.
 Thus the extensions $K/F$ and $K^p/F^p$ are isomorphic as field extensions, so their degrees are equal.
 
@@ -96,24 +96,24 @@ Thus the extensions $K/F$ and $K^p/F^p$ are isomorphic as field extensions, so t
 ::: {.pf-step #s4}
 
 Since $K$ is perfect,
-\[
+$$
 K^p=K.
-\]
+$$
 Consequently
-\[
+$$
 [K:F^p]=[K:F].
-\]
+$$
 
 ::: pf-proof
 
 For a field of characteristic $p>0$, perfectness is equivalent to surjectivity of Frobenius.
 Hence $K=K^p$.
 Using step [](#s3){.pf-ref},
-\[
+$$
 [K:F^p]
 =[K^p:F^p]
 =[K:F].
-\]
+$$
 
 :::
 
@@ -122,25 +122,25 @@ Using step [](#s3){.pf-ref},
 ::: {.pf-step #s5}
 
 One has
-\[
+$$
 F=F^p.
-\]
+$$
 
 ::: pf-proof
 
 By the tower law applied to
-\[
+$$
 F^p\subseteq F\subseteq K,
-\]
+$$
 we have
-\[
+$$
 [K:F^p]=[K:F][F:F^p].
-\]
+$$
 By step [](#s4){.pf-ref}, the left side equals $[K:F]$.
 Since $[K:F]$ is a positive finite integer, cancellation gives
-\[
+$$
 [F:F^p]=1.
-\]
+$$
 Therefore $F=F^p$.
 
 :::

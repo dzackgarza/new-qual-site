@@ -28,16 +28,16 @@ Show that the sequence of functions $\{f_n\}$ converges pointwise on $[0, \infty
 ::: {.pf-step #s1}
 
 For every fixed $x\in[0,\infty)$,
-\[
+$$
 \lim_{n\to\infty} f_n(x)=0.
-\]
+$$
 
 ::: pf-proof
 
 Fix $x\ge0$. Then
-\[
+$$
 f_n(x)=\frac{x}{x+n}.
-\]
+$$
 The numerator is fixed while the denominator tends to $\infty$, so the quotient tends to $0$.
 
 :::
@@ -63,9 +63,9 @@ The convergence is not uniform.
 ::: pf-proof
 
 Take $\varepsilon=1/4$. For every $n\ge1$, choose $x=n$. Then
-\[
+$$
 |f_n(n)-0|=\frac{n}{n+n}=\frac12>\frac14.
-\]
+$$
 Thus there is no $N$ such that for every $n\ge N$ and every $x\ge0$ one has $|f_n(x)|<1/4$. This is the negation of uniform convergence to $0$.
 
 :::

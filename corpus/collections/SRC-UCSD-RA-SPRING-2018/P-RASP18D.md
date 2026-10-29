@@ -50,23 +50,23 @@ Part 1: Bound for $f \in C_c^1(\RR)$ via integration by parts:
 ::: pf-step
 Since $f \in C_c^1(\RR)$, $f$ and $f'$ have compact support contained in some interval $[-R, R]$.
 Using integration by parts with $u = f(x)$ and $dv = \varphi'(\lambda x)\,dx$ (so $v = \frac{1}{\lambda} \varphi(\lambda x)$):
-\[
+$$
 \int_{-\infty}^\infty f(x) \varphi'(\lambda x) \, dx = \left[ \frac{1}{\lambda} f(x) \varphi(\lambda x) \right]_{-\infty}^\infty - \frac{1}{\lambda} \int_{-\infty}^\infty f'(x) \varphi(\lambda x) \, dx.
-\]
+$$
 :::
 
 ::: pf-step
 The boundary term vanishes because $f(x) = 0$ outside $[-R, R]$ and $\varphi$ is bounded:
-\[
+$$
 \left[ \frac{1}{\lambda} f(x) \varphi(\lambda x) \right]_{-\infty}^\infty = 0.
-\]
+$$
 :::
 
 ::: pf-step
 Taking absolute values and using $|\varphi(y)| \le M$:
-\[
+$$
 \left| \int_{-\infty}^\infty f(x) \varphi'(\lambda x) \, dx \right| \le \frac{1}{\lambda} \int_{-\infty}^\infty |f'(x)| |\varphi(\lambda x)| \, dx \le \frac{M}{\lambda} \int_{-\infty}^\infty |f'(x)| \, dx = M \|f'\|_{L^1(\RR)} \lambda^{-1}.
-\]
+$$
 :::
 
 :::
@@ -81,41 +81,41 @@ Part 2: Limit for $f \in L^1(\RR)$ via density of $C_c^1(\RR)$:
 ::: pf-step
 Let $\varepsilon > 0$ be given.
 By the density of $C_c^1(\RR)$ in $L^1(\RR)$, there exists a function $g \in C_c^1(\RR)$ such that:
-\[
+$$
 \|f - g\|_{L^1(\RR)} < \frac{\varepsilon}{2M}.
-\]
+$$
 :::
 
 ::: pf-step
 For any $\lambda > 0$, decompose the integral:
-\[
+$$
 \int_\RR f(x) \varphi'(\lambda x) \, dx = \int_\RR (f(x) - g(x)) \varphi'(\lambda x) \, dx + \int_\RR g(x) \varphi'(\lambda x) \, dx.
-\]
+$$
 :::
 
 ::: pf-step
 Bound the approximation error:
-\[
+$$
 \left| \int_\RR (f(x) - g(x)) \varphi'(\lambda x) \, dx \right| \le \sup_{y \in \RR} |\varphi'(y)| \|f - g\|_{L^1} \le M \cdot \frac{\varepsilon}{2M} = \frac{\varepsilon}{2}.
-\]
+$$
 :::
 
 ::: pf-step
 By Part 1, for the $C_c^1$ function $g$:
-\[
+$$
 \left| \int_\RR g(x) \varphi'(\lambda x) \, dx \right| \le \frac{M \|g'\|_{L^1}}{\lambda}.
-\]
+$$
 Choosing $\Lambda = \frac{2 M \|g'\|_{L^1}}{\varepsilon}$, for all $\lambda > \Lambda$ we have:
-\[
+$$
 \left| \int_\RR g(x) \varphi'(\lambda x) \, dx \right| < \frac{\varepsilon}{2}.
-\]
+$$
 :::
 
 ::: pf-step
 Combining bounds for all $\lambda > \Lambda$:
-\[
+$$
 \left| \int_\RR f(x) \varphi'(\lambda x) \, dx \right| \le \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.
-\]
+$$
 Since $\varepsilon > 0$ was arbitrary, $\lim_{\lambda \to \infty} \int_\RR f(x) \varphi'(\lambda x) \, dx = 0$.
 :::
 

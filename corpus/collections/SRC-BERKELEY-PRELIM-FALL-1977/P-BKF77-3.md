@@ -24,9 +24,9 @@ audit:
 ---
 ::: {.problem}
 Let $T$ be an $n\times n$ complex matrix. Show that
-\[
+$$
 \lim_{k\to\infty}T^k=0
-\]
+$$
 if and only if every eigenvalue of $T$ has absolute value less than $1$.
 :::
 

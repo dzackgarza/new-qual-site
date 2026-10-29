@@ -39,59 +39,59 @@ Let $A$ be a commutative noetherian ring.
 ::: pf
 
 ::: {.pf-step #part-a-every-ideal}
-Every ideal of \(A\) contains a finite product of prime ideals.
+Every ideal of $A$ contains a finite product of prime ideals.
 
 ::: pf-proof
-Call an ideal \(I\subseteq A\) good if there exist prime ideals \(P_1,\ldots,P_k\) such that
-\[
+Call an ideal $I\subseteq A$ good if there exist prime ideals $P_1,\ldots,P_k$ such that
+$$
 P_1P_2\cdots P_k\subseteq I.
-\]
+$$
 Suppose, toward a contradiction, that some ideal is not good.
-Because \(A\) is Noetherian, the set of non-good ideals has a maximal element \(I\) under inclusion.
+Because $A$ is Noetherian, the set of non-good ideals has a maximal element $I$ under inclusion.
 
-The ideal \(I\) is not prime.
-Indeed, if it were prime, then the one-factor product \(I\) itself would be contained in \(I\), making \(I\) good.
-Hence there exist \(a,b\notin I\) such that
-\[
+The ideal $I$ is not prime.
+Indeed, if it were prime, then the one-factor product $I$ itself would be contained in $I$, making $I$ good.
+Hence there exist $a,b\notin I$ such that
+$$
 ab\in I.
-\]
+$$
 
 Both ideals
-\[
+$$
 I+(a)
 \qquad\text{and}\qquad
 (I:a):=\{r\in A:ra\in I\}
-\]
-strictly contain \(I\): the first contains \(a\notin I\), while the second contains \(b\notin I\) because \(ba\in I\).
-By maximality of \(I\), both larger ideals are good.
-Thus there are prime ideals \(P_1,\ldots,P_r\) and \(Q_1,\ldots,Q_s\) such that
-\[
+$$
+strictly contain $I$: the first contains $a\notin I$, while the second contains $b\notin I$ because $ba\in I$.
+By maximality of $I$, both larger ideals are good.
+Thus there are prime ideals $P_1,\ldots,P_r$ and $Q_1,\ldots,Q_s$ such that
+$$
 P_1\cdots P_r\subseteq I+(a)
-\]
+$$
 and
-\[
+$$
 Q_1\cdots Q_s\subseteq (I:a).
-\]
+$$
 Set
-\[
+$$
 P:=P_1\cdots P_r,
 \qquad
 Q:=Q_1\cdots Q_s.
-\]
-For any \(p\in P\) and \(q\in Q\), write
-\[
+$$
+For any $p\in P$ and $q\in Q$, write
+$$
 p=i+ac
 \qquad(i\in I,\ c\in A).
-\]
-Since \(q\in(I:a)\), one has \(aq\in I\), and therefore
-\[
+$$
+Since $q\in(I:a)$, one has $aq\in I$, and therefore
+$$
 pq=iq+c(aq)\in I.
-\]
+$$
 Hence
-\[
+$$
 PQ=P_1\cdots P_rQ_1\cdots Q_s\subseteq I,
-\]
-so \(I\) is good, a contradiction.
+$$
+so $I$ is good, a contradiction.
 Therefore every ideal is good.
 :::
 
@@ -101,46 +101,46 @@ Therefore every ideal is good.
 The zero ideal contains a finite product of prime ideals.
 
 ::: pf-proof
-Apply step [](#part-a-every-ideal){.pf-ref} to \(I=(0)\).
-There exist prime ideals \(P_1,\ldots,P_k\) such that
-\[
+Apply step [](#part-a-every-ideal){.pf-ref} to $I=(0)$.
+There exist prime ideals $P_1,\ldots,P_k$ such that
+$$
 P_1P_2\cdots P_k=(0).
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #minimal-prime-is-pi}
-Every minimal prime of \(A\) is equal to one of the primes \(P_i\) from step [](#zero-ideal-product){.pf-ref}.
+Every minimal prime of $A$ is equal to one of the primes $P_i$ from step [](#zero-ideal-product){.pf-ref}.
 
 ::: pf-proof
-Let \(\mathfrak p\) be a minimal prime ideal of \(A\).
+Let $\mathfrak p$ be a minimal prime ideal of $A$.
 By step [](#zero-ideal-product){.pf-ref},
-\[
+$$
 P_1P_2\cdots P_k\subseteq\mathfrak p.
-\]
-Since \(\mathfrak p\) is prime, repeated application of primality shows that
-\[
+$$
+Since $\mathfrak p$ is prime, repeated application of primality shows that
+$$
 P_i\subseteq\mathfrak p
-\]
-for some \(i\).
-But \(P_i\) is itself a prime ideal containing \((0)\).
-Minimality of \(\mathfrak p\) among prime ideals containing \((0)\) therefore forces
-\[
+$$
+for some $i$.
+But $P_i$ is itself a prime ideal containing $(0)$.
+Minimality of $\mathfrak p$ among prime ideals containing $(0)$ therefore forces
+$$
 P_i=\mathfrak p.
-\]
+$$
 :::
 
 :::
 
 ::: pf-step
-Hence \(A\) has only finitely many minimal prime ideals.
+Hence $A$ has only finitely many minimal prime ideals.
 
 ::: pf-proof
 By step [](#minimal-prime-is-pi){.pf-ref}, every minimal prime belongs to the finite set
-\[
+$$
 \{P_1,\ldots,P_k\}.
-\]
+$$
 Thus there are only finitely many minimal primes.
 :::
 

@@ -27,16 +27,16 @@ justify the statement that $\int_0^1\int_0^1 \frac{(x-y)\sin(xy)}{x^2+y^2}dxdy=\
 
 ::: {.solution}
 Fubini's theorem applies once the integrand is shown to be absolutely integrable. Since $|\sin(xy)|\le1$,
-\[
+$$
 \left|\frac{(x-y)\sin(xy)}{x^2+y^2}\right|
 \le \frac{|x-y|}{x^2+y^2}.
-\]
+$$
 The square $[0,1]^2$ is contained in the quarter disk
-\[
+$$
 D=\{(r\cos\theta,r\sin\theta):0\le r\le\sqrt2,\ 0\le\theta\le\pi/2\}.
-\]
+$$
 Hence, using polar coordinates,
-\[
+$$
 \begin{aligned}
 \int_{[0,1]^2}\left|\frac{(x-y)\sin(xy)}{x^2+y^2}\right|\,dx\,dy
 &\le \int_0^{\pi/2}\int_0^{\sqrt2}
@@ -44,11 +44,11 @@ Hence, using polar coordinates,
 &=\sqrt2\int_0^{\pi/2}|\cos\theta-\sin\theta|\,d\theta\\
 &<\infty.
 \end{aligned}
-\]
+$$
 (The value at $(0,0)$ is irrelevant.) Therefore the integrand belongs to $L^1([0,1]^2)$, and Fubini's theorem gives
-\[
+$$
 \int_0^1\int_0^1 \frac{(x-y)\sin(xy)}{x^2+y^2}\,dx\,dy
 =
 \int_0^1\int_0^1 \frac{(x-y)\sin(xy)}{x^2+y^2}\,dy\,dx.
-\]
+$$
 :::

@@ -36,21 +36,21 @@ Write $G=\langle g\rangle$ with $|G|=n$, and suppose $r\mid n$.
 ::: {.pf-step #s1}
 
 The subgroup
-\[
+$$
 H=\left\langle g^{n/r}\right\rangle
-\]
+$$
 has order $r$.
 
 ::: pf-proof
 
 In a cyclic group of order $n$,
-\[
+$$
 |g^d|=\frac{n}{\gcd(n,d)}.
-\]
+$$
 For $d=n/r$, this gives
-\[
+$$
 \left|g^{n/r}\right|=\frac{n}{n/r}=r.
-\]
+$$
 
 :::
 
@@ -64,13 +64,13 @@ Every subgroup of order $r$ equals $H$.
 
 Every subgroup of a cyclic group is cyclic. Let $K\le G$ have order $r$.
 Then $K=\langle g^d\rangle$ for some divisor $d$ of $n$, and
-\[
+$$
 |K|=\frac nd=r.
-\]
+$$
 Hence $d=n/r$, so
-\[
+$$
 K=\left\langle g^{n/r}\right\rangle=H.
-\]
+$$
 
 :::
 

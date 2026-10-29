@@ -50,22 +50,22 @@ A simplicial complex cannot have a loop edge or two distinct edges with the same
 ::: pf-step
 
 If a simplicial map $f:K\to L$ has degree $n\ne0$, then
-\[
+$$
 e(K)\ge |n|e(L).
-\]
+$$
 
 ::: pf-proof
 
 Orient $K$ and $L$. Let
-\[
+$$
 z_K=\sum_{e\subset K}\epsilon_e e,
 \qquad
 z_L=\sum_{a\subset L}\epsilon_a a
-\]
+$$
 be their fundamental simplicial $1$-cycles. Each edge of $K$ is sent either to a vertex or linearly onto one edge of $L$, with coefficient $0$ or $\pm1$ on chains. Since
-\[
+$$
 f_*(z_K)=n z_L,
-\]
+$$
 each target edge must receive total signed coefficient $n$. Thus at least $|n|$ domain edges must map nondegenerately to each of the $e(L)$ target edges, giving the inequality.
 
 :::
@@ -99,7 +99,7 @@ A constant map sends all $1$-chains to zero, hence has degree zero.
 :::
 
 Therefore the minimum numbers are
-\[
+$$
 \boxed{e(L)=3,\qquad e(K)=3\max\{1,|n|\}.}
-\]
+$$
 :::

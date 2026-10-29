@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Let $f$ be a meromorphic function in the plane such that
-\[
+$$
 \lim_{|z|\to\infty}|f(z)|=\infty.
-\]
+$$
 
 1. Show that $f$ has only finitely many poles.
 

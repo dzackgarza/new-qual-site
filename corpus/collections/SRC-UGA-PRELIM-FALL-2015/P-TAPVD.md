@@ -35,16 +35,16 @@ Fix a direction $\mathbf u=(u_1,u_2)\in\RR^2$.
 ::: {.pf-step #s1}
 
 For every sufficiently small $h\neq0$ there are points $\xi_h$ between $0$ and $hu_1$ and $\eta_h$ between $0$ and $hu_2$ such that
-\[
+$$
 f(hu_1,hu_2)-f(0,0)=f_x(\xi_h,hu_2)\,hu_1+f_y(0,\eta_h)\,hu_2.
-\]
+$$
 
 ::: pf-proof
 
 Choose $h$ so small that the segments from $(0,hu_2)$ to $(hu_1,hu_2)$ and from $(0,0)$ to $(0,hu_2)$ lie in $B$, and split
-\[
+$$
 f(hu_1,hu_2)-f(0,0)=\bigl[f(hu_1,hu_2)-f(0,hu_2)\bigr]+\bigl[f(0,hu_2)-f(0,0)\bigr].
-\]
+$$
 The function $s\mapsto f(s,hu_2)$ is differentiable on the first segment with derivative $f_x(s,hu_2)$, so the mean value theorem gives $\xi_h$ with the first bracket equal to $f_x(\xi_h,hu_2)\,hu_1$; if $u_1=0$ the bracket is $0$ and any $\xi_h$ works.
 The same argument applied to $t\mapsto f(0,t)$ gives $\eta_h$ for the second bracket.
 
@@ -59,9 +59,9 @@ $D_{\mathbf u}f(0,0)$ exists and equals $f_x(0,0)u_1+f_y(0,0)u_2$.
 ::: pf-proof
 
 Dividing step [](#s1){.pf-ref} by $h$,
-\[
+$$
 \frac{f(hu_1,hu_2)-f(0,0)}{h}=f_x(\xi_h,hu_2)\,u_1+f_y(0,\eta_h)\,u_2.
-\]
+$$
 As $h\to0$, the points $(\xi_h,hu_2)$ and $(0,\eta_h)$ tend to $(0,0)$ because $|\xi_h|\le|hu_1|$ and $|\eta_h|\le|hu_2|$.
 Continuity of $f_x$ and $f_y$ at $(0,0)$ makes the right side tend to $f_x(0,0)u_1+f_y(0,0)u_2$, so the difference quotient has this limit.
 

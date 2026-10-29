@@ -45,17 +45,17 @@ Suppose $M$ satisfies the descending chain condition and $f:M\to M$ is injective
 ::: pf-proof
 
 The images form a descending chain
-\[
+$$
 M\supseteq f(M)\supseteq f^2(M)\supseteq\cdots.
-\]
+$$
 By the descending chain condition, there is some $n$ such that
-\[
+$$
 f^n(M)=f^{n+1}(M).
-\]
+$$
 Let $x\in M$. Then $f^n(x)\in f^n(M)=f^{n+1}(M)$, so there exists $y\in M$ with
-\[
+$$
 f^n(x)=f^{n+1}(y)=f^n(f(y)).
-\]
+$$
 Since $f$ is injective, so is $f^n$, hence $x=f(y)$. Thus every $x\in M$ lies in $f(M)$ and $f$ is surjective.
 
 :::
@@ -69,9 +69,9 @@ The descending chain condition is necessary: there are injective non-surjective 
 ::: pf-proof
 
 Take $R=\ZZ$, $M=\ZZ$, and
-\[
+$$
 f(n)=2n.
-\]
+$$
 This is a $\ZZ$-module homomorphism and is injective, but it is not surjective because $1\notin f(\ZZ)$.
 
 :::
@@ -85,21 +85,21 @@ Suppose $M$ satisfies the ascending chain condition and $f:M\to M$ is surjective
 ::: pf-proof
 
 The kernels form an ascending chain
-\[
+$$
 \ker f\subseteq\ker f^2\subseteq\ker f^3\subseteq\cdots.
-\]
+$$
 By the ascending chain condition, there exists $n$ such that
-\[
+$$
 \ker f^n=\ker f^{n+1}.
-\]
+$$
 Let $x\in\ker f$. Since $f$ is surjective, so is $f^n$, so choose $y\in M$ with $f^n(y)=x$. Then
-\[
+$$
 f^{n+1}(y)=f(x)=0,
-\]
+$$
 so $y\in\ker f^{n+1}=\ker f^n$. Therefore
-\[
+$$
 x=f^n(y)=0.
-\]
+$$
 Thus $\ker f=0$ and $f$ is injective.
 
 :::
@@ -113,15 +113,15 @@ The ascending chain condition is necessary: there are surjective non-injective e
 ::: pf-proof
 
 Let $k$ be any field and let
-\[
+$$
 M=\bigoplus_{j\ge1}ke_j.
-\]
+$$
 Define the $k$-linear map
-\[
+$$
 f(e_1)=0,
 \qquad
 f(e_{j+1})=e_j\quad(j\ge1).
-\]
+$$
 Every basis vector $e_j$ is $f(e_{j+1})$, so $f$ is surjective. But $e_1\ne0$ and $f(e_1)=0$, so $f$ is not injective.
 
 :::

@@ -39,9 +39,9 @@ Part (a): Finiteness and metric verification for $\rho$:
 ::: {.pf-step #s1-1}
 
 For all $n \ge 1$ and $x, y \in X$, since $\rho_n(x, y) \ge 0$:
-\[
+$$
 0 \le \frac{\rho_n(x, y)}{1 + \rho_n(x, y)} < 1 \implies 0 \le \rho(x, y) \le \sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6} < \infty.
-\]
+$$
 Thus $\rho(x, y)$ is finite and well-defined on $X \times X$.
 
 ::: pf-proof
@@ -85,14 +85,14 @@ symmetry of each $\rho_n$.
 **Triangle inequality:**
 The function $f(t) = \frac{t}{1+t} = 1 - \frac{1}{1+t}$ is non-decreasing and subadditive on $[0, \infty)$.
 Using the triangle inequality for $\rho_n$:
-\[
+$$
 \frac{\rho_n(x, z)}{1 + \rho_n(x, z)} \le \frac{\rho_n(x, y) + \rho_n(y, z)}{1 + \rho_n(x, y) + \rho_n(y, z)}
 \le \frac{\rho_n(x, y)}{1 + \rho_n(x, y)} + \frac{\rho_n(y, z)}{1 + \rho_n(y, z)}.
-\]
+$$
 Multiplying by $\frac{1}{n^2}$ and summing over $n \ge 1$ yields:
-\[
+$$
 \rho(x, z) \le \rho(x, y) + \rho(y, z).
-\]
+$$
 
 ::: pf-proof
 
@@ -128,9 +128,9 @@ Part (b): Equivalence of sequence convergence:
 
 **Forward direction ($\implies$):** Assume $\lim_{j \to \infty} \rho(x_j, x) = 0$.
 For any fixed $n \ge 1$:
-\[
+$$
 \frac{1}{n^2} \cdot \frac{\rho_n(x_j, x)}{1 + \rho_n(x_j, x)} \le \rho(x_j, x) \to 0 \quad \text{as } j \to \infty.
-\]
+$$
 Multiplying by $n^2$ gives $\frac{\rho_n(x_j, x)}{1 + \rho_n(x_j, x)} \to 0$, which implies $\lim_{j \to \infty} \rho_n(x_j, x) = 0$.
 
 ::: pf-proof
@@ -159,9 +159,9 @@ convergence of $\sum \frac{1}{n^2}$.
 
 For the finite sum $\sum_{n=1}^N \frac{1}{n^2} \frac{\rho_n(x_j, x)}{1 + \rho_n(x_j, x)}$:
 Since each of the finitely many terms tends to $0$ as $j \to \infty$, there exists $J \in \NN$ such that for all $j \ge J$:
-\[
+$$
 \sum_{n=1}^N \frac{1}{n^2} \frac{\rho_n(x_j, x)}{1 + \rho_n(x_j, x)} < \frac{\varepsilon}{2}.
-\]
+$$
 
 ::: pf-proof
 
@@ -174,10 +174,10 @@ finite sum of vanishing sequences.
 ::: pf-step
 
 For all $j \ge J$, split the series at $N$:
-\[
+$$
 \rho(x_j, x) = \sum_{n=1}^N \frac{1}{n^2} \frac{\rho_n(x_j, x)}{1 + \rho_n(x_j, x)} + \sum_{n=N+1}^\infty \frac{1}{n^2} \frac{\rho_n(x_j, x)}{1 + \rho_n(x_j, x)}
 < \frac{\varepsilon}{2} + \sum_{n=N+1}^\infty \frac{1}{n^2} < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.
-\]
+$$
 Thus $\lim_{j \to \infty} \rho(x_j, x) = 0$.
 
 ::: pf-proof

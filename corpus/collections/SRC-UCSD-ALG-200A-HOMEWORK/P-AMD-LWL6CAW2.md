@@ -41,9 +41,9 @@ Show: $N$ is the unique subgroup of order $|N|$
 
 ::: {.solution}
 Let $H\le G$ be any subgroup with $|H|=|N|$, and let
-\[
+$$
 \pi:G\longrightarrow G/N
-\]
+$$
 be the quotient homomorphism.
 
 ::: pf
@@ -55,18 +55,18 @@ The integer $|\pi(H)|$ divides $|N|$.
 ::: pf-proof
 
 The restriction
-\[
+$$
 \pi|_H:H\longrightarrow G/N
-\]
+$$
 has kernel $H\cap N$.
 Hence the first isomorphism theorem gives
-\[
+$$
 \pi(H)\cong H/(H\cap N).
-\]
+$$
 Therefore
-\[
+$$
 |\pi(H)|=[H:H\cap N]\mid |H|=|N|.
-\]
+$$
 
 :::
 
@@ -80,9 +80,9 @@ The integer $|\pi(H)|$ divides $[G:N]$.
 
 The image $\pi(H)$ is a subgroup of the finite group $G/N$.
 By Lagrange's theorem,
-\[
+$$
 |\pi(H)|\mid |G/N|=[G:N].
-\]
+$$
 
 :::
 
@@ -96,14 +96,14 @@ The subgroup $H$ is contained in $N$.
 
 By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $|\pi(H)|$ divides both $|N|$ and $[G:N]$.
 Since
-\[
+$$
 \gcd(|N|,[G:N])=1,
-\]
+$$
 we have $|\pi(H)|=1$.
 Thus $\pi(H)=\{N\}$, so every $h\in H$ lies in
-\[
+$$
 \ker\pi=N.
-\]
+$$
 Hence $H\le N$.
 
 :::
@@ -117,9 +117,9 @@ Therefore $H=N$.
 ::: pf-proof
 
 By step [](#s3){.pf-ref}, $H\le N$, while by assumption
-\[
+$$
 |H|=|N|<\infty.
-\]
+$$
 A subgroup of a finite group having the same order as the whole group is the whole group.
 Hence $H=N$.
 Since $H$ was arbitrary among subgroups of order $|N|$, $N$ is the unique subgroup of $G$ of that order.

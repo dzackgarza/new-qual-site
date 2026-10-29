@@ -31,9 +31,9 @@ Prove that $\operatorname{Gal}(K/\QQ)$ is isomorphic to the symmetric group $S_3
 
 ::: {.solution}
 Let
-\[
+$$
 G=\operatorname{Gal}(K/\QQ).
-\]
+$$
 
 ::: pf
 
@@ -45,9 +45,9 @@ The group $G$ acts transitively on the three roots of $f$.
 
 Because $f$ is irreducible over $\QQ$ and $K$ is its splitting field, any two roots of $f$ are conjugate over $\QQ$.
 Equivalently, for any two roots $\alpha$ and $\beta$, there is a $\QQ$-embedding
-\[
+$$
 \QQ(\alpha)\hookrightarrow K
-\]
+$$
 sending $\alpha$ to $\beta$.
 Since $K/\QQ$ is normal, this embedding extends to an automorphism of $K$.
 Thus $G$ acts transitively on the roots.
@@ -64,9 +64,9 @@ Via its action on the roots, $G$ embeds as a transitive subgroup of $S_3$.
 
 An automorphism of the splitting field is determined by its action on the roots of $f$, since those roots generate $K$.
 Hence the permutation representation
-\[
+$$
 G\longrightarrow S_3
-\]
+$$
 is injective.
 By step [](#s1){.pf-ref}, its image is transitive.
 
@@ -96,9 +96,9 @@ Its permutation on the three roots is therefore a transposition.
 ::: pf-step
 
 One has
-\[
+$$
 G\cong S_3.
-\]
+$$
 
 ::: pf-proof
 

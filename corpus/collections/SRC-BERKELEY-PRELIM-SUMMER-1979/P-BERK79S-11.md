@@ -28,11 +28,11 @@ audit:
 
 ::: {.problem}
 Let $A,B\in M_n(F)$ satisfy
-\[
+$$
 A^2=A,
 \qquad
 B^2=B.
-\]
+$$
 Suppose $A$ and $B$ have the same rank.
 Prove that $A$ and $B$ are similar.
 :::

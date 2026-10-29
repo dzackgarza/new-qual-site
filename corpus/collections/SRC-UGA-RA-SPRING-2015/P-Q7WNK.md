@@ -50,33 +50,33 @@ Prove (1) implies (2).
 ::: pf-proof
 
 For each $k\ge1$, apply (1) with $\varepsilon=2^{-k}$ to obtain a closed set $F_k$ and an open set $G_k$ such that
-\[
+$$
 F_k\subseteq E\subseteq G_k,
 \qquad
 \mu(G_k\setminus F_k)<2^{-k}.
-\]
+$$
 Set
-\[
+$$
 H:=\bigcup_{k=1}^\infty F_k,
 \qquad
 V:=\bigcap_{k=1}^\infty G_k.
-\]
+$$
 Then $H$ is $F_\sigma$, $V$ is $G_\delta$, and
-\[
+$$
 H\subseteq E\subseteq V.
-\]
+$$
 Moreover, for every $k$,
-\[
+$$
 V\setminus H\subseteq G_k\setminus F_k,
-\]
+$$
 so
-\[
+$$
 0\le \mu(V\setminus H)\le 2^{-k}.
-\]
+$$
 Letting $k\to\infty$ gives
-\[
+$$
 \mu(V\setminus H)=0.
-\]
+$$
 
 :::
 
@@ -89,53 +89,53 @@ Prove (2) implies (1).
 ::: pf-proof
 
 Write
-\[
+$$
 V=\bigcap_{k=1}^\infty V_k,
 \qquad
 H=\bigcup_{k=1}^\infty H_k,
-\]
+$$
 with each $V_k$ open and each $H_k$ closed. Replacing $V_k$ by $\bigcap_{j\le k}V_j$ and $H_k$ by $\bigcup_{j\le k}H_j$, we may assume
-\[
+$$
 V_k\downarrow V,
 \qquad
 H_k\uparrow H.
-\]
+$$
 Because $\mu$ is finite, continuity from above gives
-\[
+$$
 \mu(V_k\setminus V)\to0,
-\]
+$$
 and continuity from below gives
-\[
+$$
 \mu(H\setminus H_k)\to0.
-\]
+$$
 Given $\varepsilon>0$, choose $m,n$ such that
-\[
+$$
 \mu(V_m\setminus V)<\frac\varepsilon2,
 \qquad
 \mu(H\setminus H_n)<\frac\varepsilon2.
-\]
+$$
 Put
-\[
+$$
 G:=V_m,
 \qquad
 F:=H_n.
-\]
+$$
 Then $G$ is open, $F$ is closed, and
-\[
+$$
 F\subseteq H\subseteq E\subseteq V\subseteq G.
-\]
+$$
 Since $\mu(V\setminus H)=0$,
-\[
+$$
 G\setminus F
 \subseteq
 (G\setminus V)\cup(V\setminus H)\cup(H\setminus F),
-\]
+$$
 so
-\[
+$$
 \mu(G\setminus F)
 \le \mu(G\setminus V)+\mu(V\setminus H)+\mu(H\setminus F)
 <\varepsilon.
-\]
+$$
 This is (1).
 
 :::

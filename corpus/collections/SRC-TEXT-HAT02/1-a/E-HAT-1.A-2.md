@@ -32,21 +32,21 @@ Show that a connected graph retracts onto any connected subgraph.
 ::: {.solution}
 Let $A\subseteq X$ be a connected subgraph.
 Choose a vertex
-\[
+$$
 a_0\in A.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 Define a map on the vertices of $X$ by
-\[
+$$
 r(v)=
 \begin{cases}
 v,&v\in A,\\a_0,&v\notin A.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
@@ -64,9 +64,9 @@ For every edge $e$ of $X$ not contained in $A$, extend $r$ continuously across $
 
 Let the endpoints of $e$ be $v,w$.
 Since $A$ is connected, hence path connected as a graph, there is an edge path
-\[
+$$
 \alpha_e:I\to A
-\]
+$$
 from $r(v)$ to $r(w)$.
 Choose a characteristic parametrization of $e$ by $I$ and define $r$ on $e$ to be $\alpha_e$.
 For an edge lying in $A$, define $r$ to be the identity.
@@ -79,9 +79,9 @@ The definitions agree at all common endpoints by construction.
 ::: pf-step
 
 The resulting map
-\[
+$$
 r:X\to A
-\]
+$$
 is continuous.
 
 ::: pf-proof
@@ -102,9 +102,9 @@ The map $r$ is a retraction of $X$ onto $A$.
 
 On every vertex and every edge of $A$, the construction used the identity map.
 Thus
-\[
+$$
 r|_A=\operatorname{id}_A.
-\]
+$$
 
 :::
 

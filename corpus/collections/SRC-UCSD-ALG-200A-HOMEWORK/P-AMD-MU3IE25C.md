@@ -33,9 +33,9 @@ audit:
 
 ::: {.problem}
 Let $H_1,H_2\leq G$ and suppose
-\[
+$$
 G=H_1\cup H_2.
-\]
+$$
 
 Show that $G=H_1$ or $G=H_2$.
 :::
@@ -53,14 +53,14 @@ If both $H_1$ and $H_2$ were proper, there would exist $x\in H_1\setminus H_2$ a
 Assume for contradiction that $H_1\ne G$ and $H_2\ne G$.
 Choose $y\in G\setminus H_1$.
 Since $G=H_1\cup H_2$, necessarily $y\in H_2$, so
-\[
+$$
 y\in H_2\setminus H_1.
-\]
+$$
 Similarly, choose $x\in G\setminus H_2$.
 Then $x\in H_1$, hence
-\[
+$$
 x\in H_1\setminus H_2.
-\]
+$$
 
 :::
 
@@ -73,15 +73,15 @@ The element $xy$ lies in neither $H_1$ nor $H_2$.
 ::: pf-proof
 
 If $xy\in H_1$, then $x\in H_1$ and closure under inverses and products gives
-\[
+$$
 y=x^{-1}(xy)\in H_1,
-\]
+$$
 contrary to step [](#s1){.pf-ref}.
 
 If $xy\in H_2$, then $y\in H_2$ and
-\[
+$$
 x=(xy)y^{-1}\in H_2,
-\]
+$$
 again contrary to step [](#s1){.pf-ref}. Thus $xy\notin H_1\cup H_2$.
 
 :::
@@ -97,9 +97,9 @@ Therefore one of the two subgroups is all of $G$.
 By hypothesis every element of $G$, including $xy$, belongs to $H_1\cup H_2$.
 This contradicts step [](#s2){.pf-ref}, so the assumption in step [](#s1){.pf-ref} that both subgroups are proper is impossible.
 Hence
-\[
+$$
 G=H_1\qquad\text{or}\qquad G=H_2.
-\]
+$$
 
 :::
 

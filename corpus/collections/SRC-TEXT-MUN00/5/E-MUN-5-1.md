@@ -30,14 +30,14 @@ Show there is a bijective correspondence of $A \times B$ with $B \times A$ .
 
 ::: {.solution}
 Define
-\[
+$$
 \tau:A\times B\longrightarrow B\times A,
 \qquad
 \tau(a,b)=(b,a).
-\]
-Then \(\tau\) is its own inverse:
-\[
+$$
+Then $\tau$ is its own inverse:
+$$
 \tau(\tau(a,b))=(a,b).
-\]
-Hence \(\tau\) is bijective.
+$$
+Hence $\tau$ is bijective.
 :::

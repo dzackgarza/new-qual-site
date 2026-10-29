@@ -35,9 +35,9 @@ For which triples $(y_{1}, y_{2}, y_{3})$ does the system $AX = Y$ have a soluti
 
 ::: {.solution}
 The system $AX=Y$ has a solution for every triple
-\[
+$$
 (y_1,y_2,y_3)\in F^3.
-\]
+$$
 
 ::: pf
 
@@ -46,13 +46,13 @@ The coefficient matrix $A$ is invertible.
 
 ::: pf-proof
 Its determinant is
-\[
+$$
 \det\begin{bmatrix}
 3&-1&2\\
 2&1&1\\
 1&-3&0
 \end{bmatrix}=-6\ne0.
-\]
+$$
 :::
 
 :::
@@ -63,9 +63,9 @@ Hence $AX=Y$ is solvable for every $Y\in F^3$.
 ::: pf-proof
 By step [](#a-is-invertible){.pf-ref}, $A^{-1}$ exists. For arbitrary
 $Y=(y_1,y_2,y_3)^t$, take
-\[
+$$
 X=A^{-1}Y.
-\]
+$$
 Then $AX=Y$. In fact the solution is unique.
 :::
 

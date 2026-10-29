@@ -18,11 +18,11 @@ audit:
 Let $f:[0,1]\to\RR$ and $f_n:[0,1]\to\RR$ be continuous functions, and suppose $f_n\to f$ uniformly.
 
 Give the definition of uniform convergence and, using basic properties of integrals and absolute values, show that
-\[
+$$
 \lim_{n\to\infty}\int_0^1 f_n(x)\,dx
 =
 \int_0^1 f(x)\,dx.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -57,15 +57,15 @@ characteristic $p$, then $p$ divides $\deg m$.
 
 An irreducible polynomial is inseparable exactly when its formal derivative is
 zero. Write
-\[
+$$
 m(x)=\sum_j a_jx^j.
-\]
+$$
 The equation $m'(x)=0$ means that $j a_j=0$ for every $j$. In characteristic
 $p$, whenever $a_j\ne0$ this forces $p\mid j$. Hence all exponents occurring in
 $m$ are multiples of $p$, so
-\[
+$$
 m(x)=g(x^p)
-\]
+$$
 for some $g\in K[x]$. In particular $p\mid\deg m$.
 
 :::
@@ -80,9 +80,9 @@ The degree $[K(u):K]$ is divisible by $p$.
 
 Let $m_u$ be the minimal polynomial of $u$ over $K$. By step [](#s1){.pf-ref} it is inseparable,
 so step [](#s2){.pf-ref} gives
-\[
+$$
 p\mid\deg m_u=[K(u):K].
-\]
+$$
 
 :::
 
@@ -95,13 +95,13 @@ This contradicts the hypothesis that $p\nmid[F:K]$.
 ::: pf-proof
 
 The tower law for
-\[
+$$
 K\subseteq K(u)\subseteq F
-\]
+$$
 gives
-\[
+$$
 [F:K]=[F:K(u)][K(u):K].
-\]
+$$
 By step [](#s3){.pf-ref} the second factor is divisible by $p$, so $p\mid[F:K]$, contrary to
 hypothesis.
 

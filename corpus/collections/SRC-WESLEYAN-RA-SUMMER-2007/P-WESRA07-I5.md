@@ -28,11 +28,11 @@ Give the definition of absolute continuity for one measure with respect to anoth
 ::: {.solution}
 Let $\mu$ and $\nu$ be measures on the same measurable space $(X,\mathcal A)$.
 We say that $\mu$ is absolutely continuous with respect to $\nu$, and write
-\[
+$$
 \mu\ll\nu,
-\]
+$$
 if for every $E\in\mathcal A$,
-\[
+$$
 \boxed{\nu(E)=0\quad\Longrightarrow\quad\mu(E)=0.}
-\]
+$$
 :::

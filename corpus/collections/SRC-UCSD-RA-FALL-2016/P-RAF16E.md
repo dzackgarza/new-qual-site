@@ -40,13 +40,13 @@ Assume a countable open cover has no finite subcover.
 ::: pf-proof
 
 Let
-\[
+$$
 X=\bigcup_{n=1}^\infty U_n
-\]
+$$
 be a countable open cover. Suppose, for contradiction, that no finite subfamily covers $X$. Then for each $n$ choose
-\[
+$$
 x_n\in X\setminus\bigcup_{j=1}^n U_j.
-\]
+$$
 
 :::
 
@@ -59,25 +59,25 @@ Use sequential compactness.
 ::: pf-proof
 
 By sequential compactness, some subsequence $(x_{n_k})$ converges to a point $x\in X$. Since the $U_j$ cover $X$, choose $m$ with
-\[
+$$
 x\in U_m.
-\]
+$$
 Because $U_m$ is open and $x_{n_k}\to x$, there exists $K$ such that
-\[
+$$
 x_{n_k}\in U_m
-\]
+$$
 for every $k\ge K$.
 
 On the other hand, for all sufficiently large $k$ we have $n_k\ge m$, and by construction
-\[
+$$
 x_{n_k}\notin\bigcup_{j=1}^{n_k}U_j,
-\]
+$$
 so in particular $x_{n_k}\notin U_m$. This is a contradiction.
 
 Therefore every countable open cover has a finite subcover, and
-\[
+$$
 \boxed{X\text{ is countably compact}.}
-\]
+$$
 
 :::
 

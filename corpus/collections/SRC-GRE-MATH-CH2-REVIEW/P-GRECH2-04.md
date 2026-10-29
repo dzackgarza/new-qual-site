@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Evaluate the following limit:
 
-\[
+$$
 \lim_{x \to 0} \frac{\arcsin x - x}{x^3}
-\]
+$$
 
 (A) $0$
 (B) $\frac{1}{6}$

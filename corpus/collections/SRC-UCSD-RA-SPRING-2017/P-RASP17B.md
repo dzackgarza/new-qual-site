@@ -41,18 +41,18 @@ What is the closure of each of $\Gamma \subset L^1(\RR, m)$ in the Banach space 
 
 ::: pf-step
 
-For \(\Gamma=C_c(\RR)\), the closure is all of \(L^1(\RR)\).
+For $\Gamma=C_c(\RR)$, the closure is all of $L^1(\RR)$.
 
 ::: pf-proof
 
 The standard density theorem for Lebesgue spaces states that
-\[
+$$
 C_c(\RR)\text{ is dense in }L^1(\RR).
-\]
+$$
 Hence
-\[
+$$
 \boxed{\overline\Gamma^{\,L^1}=L^1(\RR).}
-\]
+$$
 
 :::
 
@@ -60,35 +60,35 @@ Hence
 
 ::: pf-step
 
-Imposing the point condition \(f(0)=0\) does not change the closure.
+Imposing the point condition $f(0)=0$ does not change the closure.
 
 ::: pf-proof
 
-Let \(u\in C_c(\RR)\). Choose continuous cutoffs \(\chi_n:\RR\to[0,1]\) such that
-\[
+Let $u\in C_c(\RR)$. Choose continuous cutoffs $\chi_n:\RR\to[0,1]$ such that
+$$
 \chi_n(0)=0,
 \qquad
 \chi_n(x)=1\quad\text{for }|x|\ge1/n.
-\]
+$$
 Then
-\[
+$$
 u_n:=\chi_nu\in C_c(\RR),
 \qquad
 u_n(0)=0.
-\]
+$$
 Moreover,
-\[
+$$
 |u_n-u|\le |u|\mathbf1_{[-1/n,1/n]},
-\]
+$$
 so by absolute continuity of the Lebesgue integral,
-\[
+$$
 \|u_n-u\|_1\to0.
-\]
-Thus every compactly supported continuous function lies in the \(L^1\)-closure of the subclass vanishing at \(0\). By Step 1,
-\[
+$$
+Thus every compactly supported continuous function lies in the $L^1$-closure of the subclass vanishing at $0$. By Step 1,
+$$
 \boxed{
 \overline{\{u\in C_c:u(0)=0\}}^{\,L^1}=L^1(\RR).}
-\]
+$$
 
 :::
 
@@ -101,50 +101,50 @@ Identify the closure of the zero-integral class.
 ::: pf-proof
 
 Define
-\[
+$$
 L:L^1(\RR)\to\RR,
 \qquad
 L(f)=\int_{[-1,1]}f\,dm.
-\]
+$$
 Then
-\[
+$$
 |L(f)|\le\|f\|_1,
-\]
-so \(L\) is continuous. Therefore
-\[
+$$
+so $L$ is continuous. Therefore
+$$
 \ker L
 =\left\{f\in L^1:\int_{[-1,1]}f=0\right\}
-\]
-is closed, and the third class is contained in \(\ker L\). Hence its closure is contained in \(\ker L\).
+$$
+is closed, and the third class is contained in $\ker L$. Hence its closure is contained in $\ker L$.
 
-Conversely, take \(f\in\ker L\). Choose \(u_n\in C_c(\RR)\) with \(u_n\to f\) in \(L^1\). Then
-\[
+Conversely, take $f\in\ker L$. Choose $u_n\in C_c(\RR)$ with $u_n\to f$ in $L^1$. Then
+$$
 L(u_n)\to L(f)=0.
-\]
-Fix \(\psi\in C_c(\RR)\) with support in \((-1,1)\) and
-\[
+$$
+Fix $\psi\in C_c(\RR)$ with support in $(-1,1)$ and
+$$
 \int_{[-1,1]}\psi\,dm=1.
-\]
+$$
 Set
-\[
+$$
 v_n:=u_n-L(u_n)\psi.
-\]
-Then \(v_n\in C_c(\RR)\) and
-\[
+$$
+Then $v_n\in C_c(\RR)$ and
+$$
 \int_{[-1,1]}v_n\,dm=0.
-\]
+$$
 Also
-\[
+$$
 \|v_n-f\|_1
 \le \|u_n-f\|_1+|L(u_n)|\,\|\psi\|_1
 \to0.
-\]
+$$
 Thus
-\[
+$$
 \boxed{
 \overline\Gamma^{\,L^1}
 =\left\{f\in L^1(\RR):\int_{[-1,1]}f\,dm=0\right\}.}
-\]
+$$
 
 :::
 

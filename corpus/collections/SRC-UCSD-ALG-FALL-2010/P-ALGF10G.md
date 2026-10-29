@@ -31,123 +31,123 @@ Prove $U$ is a prime ideal.
 
 
 ::: {.solution}
-Let \(U\) be maximal, under inclusion, among the non-finitely generated ideals of \(R\).
+Let $U$ be maximal, under inclusion, among the non-finitely generated ideals of $R$.
 
 ::: pf
 
 ::: {.pf-step #u-proper}
-The ideal \(U\) is proper.
+The ideal $U$ is proper.
 
 ::: pf-proof
-The unit ideal \(R=(1)\) is finitely generated.
-Since \(U\) is not finitely generated, \(U\neq R\).
+The unit ideal $R=(1)$ is finitely generated.
+Since $U$ is not finitely generated, $U\neq R$.
 :::
 
 :::
 
 ::: {.pf-step #u-plus-a-fg}
-If \(a\notin U\), then the ideal \(U+(a)\) is finitely generated.
+If $a\notin U$, then the ideal $U+(a)$ is finitely generated.
 
 ::: pf-proof
 The inclusion
-\[
+$$
 U\subsetneq U+(a)
-\]
-is strict because \(a\notin U\).
-By maximality of \(U\) among non-finitely generated ideals, every ideal strictly containing \(U\) is finitely generated.
-Hence \(U+(a)\) is finitely generated.
+$$
+is strict because $a\notin U$.
+By maximality of $U$ among non-finitely generated ideals, every ideal strictly containing $U$ is finitely generated.
+Hence $U+(a)$ is finitely generated.
 :::
 
 :::
 
 ::: {.pf-step #colon-ideal-fg}
-If \(a,b\notin U\) and \(ab\in U\), then the colon ideal
-\[
+If $a,b\notin U$ and $ab\in U$, then the colon ideal
+$$
 (U:a):=\{r\in R:ra\in U\}
-\]
+$$
 is finitely generated.
 
 ::: pf-proof
 Clearly
-\[
+$$
 U\subseteq (U:a).
-\]
-Because \(ab\in U\), one has
-\[
+$$
+Because $ab\in U$, one has
+$$
 b\in(U:a).
-\]
-But \(b\notin U\), so the inclusion is strict:
-\[
+$$
+But $b\notin U$, so the inclusion is strict:
+$$
 U\subsetneq(U:a).
-\]
-By maximality of \(U\), the ideal \((U:a)\) is finitely generated.
+$$
+By maximality of $U$, the ideal $(U:a)$ is finitely generated.
 :::
 
 :::
 
 ::: {.pf-step #u-would-be-fg}
-The situation in step [](#colon-ideal-fg){.pf-ref} would force \(U\) to be finitely generated.
+The situation in step [](#colon-ideal-fg){.pf-ref} would force $U$ to be finitely generated.
 
 ::: pf-proof
-By step [](#u-plus-a-fg){.pf-ref}, \(U+(a)\) is finitely generated.
-Choose generators \(c_1,\ldots,c_m\).
+By step [](#u-plus-a-fg){.pf-ref}, $U+(a)$ is finitely generated.
+Choose generators $c_1,\ldots,c_m$.
 Write
-\[
+$$
 c_i=u_i+r_i a
 \qquad
 (u_i\in U,\ r_i\in R).
-\]
+$$
 Then
-\[
+$$
 U+(a)=(u_1,\ldots,u_m,a).
-\]
-Indeed, each \(c_i\) lies in the ideal on the right, while each \(u_i=c_i-r_i a\) lies in \(U+(a)\).
+$$
+Indeed, each $c_i$ lies in the ideal on the right, while each $u_i=c_i-r_i a$ lies in $U+(a)$.
 
 By step [](#colon-ideal-fg){.pf-ref}, write
-\[
+$$
 (U:a)=(t_1,\ldots,t_s).
-\]
-For each \(j\),
-\[
+$$
+For each $j$,
+$$
 t_j a\in U.
-\]
+$$
 We claim that
-\[
+$$
 U=(u_1,\ldots,u_m,t_1a,\ldots,t_sa).
-\]
-The right-hand side is contained in \(U\).
-Conversely, let \(x\in U\).
-Since \(x\in U+(a)\), we can write
-\[
+$$
+The right-hand side is contained in $U$.
+Conversely, let $x\in U$.
+Since $x\in U+(a)$, we can write
+$$
 x=\sum_i q_i u_i+ra.
-\]
+$$
 Then
-\[
+$$
 ra=x-\sum_i q_i u_i\in U,
-\]
-so \(r\in(U:a)\).
-Write \(r=\sum_j v_jt_j\).
+$$
+so $r\in(U:a)$.
+Write $r=\sum_j v_jt_j$.
 Therefore
-\[
+$$
 x=\sum_i q_i u_i+\sum_j v_j(t_ja),
-\]
+$$
 which proves the claim.
-Thus \(U\) would be finitely generated, contradicting its definition.
+Thus $U$ would be finitely generated, contradicting its definition.
 :::
 
 :::
 
 ::: pf-step
-Therefore \(U\) is prime.
+Therefore $U$ is prime.
 
 ::: pf-proof
-Suppose \(ab\in U\).
-If both \(a\notin U\) and \(b\notin U\), then steps [](#colon-ideal-fg){.pf-ref} and [](#u-would-be-fg){.pf-ref} give a contradiction.
+Suppose $ab\in U$.
+If both $a\notin U$ and $b\notin U$, then steps [](#colon-ideal-fg){.pf-ref} and [](#u-would-be-fg){.pf-ref} give a contradiction.
 Hence
-\[
+$$
 a\in U\quad\text{or}\quad b\in U.
-\]
-Together with step [](#u-proper){.pf-ref}, this is exactly the definition that \(U\) is prime.
+$$
+Together with step [](#u-proper){.pf-ref}, this is exactly the definition that $U$ is prime.
 :::
 
 :::

@@ -25,12 +25,12 @@ audit:
 :::
 
 ::: {.solution}
-Let \(I\) be the added diameter joining the south and north poles of \(S^2\). Attaching a \(1\)-cell between two distinct points of a connected CW complex adds one free circle up to homotopy. Concretely, choose an arc \(J\subset S^2\) from one pole to the other; the union \(I\cup J\) is a circle, and collapsing a complementary maximal tree in a compatible CW structure yields
-\[
+Let $I$ be the added diameter joining the south and north poles of $S^2$. Attaching a $1$-cell between two distinct points of a connected CW complex adds one free circle up to homotopy. Concretely, choose an arc $J\subset S^2$ from one pole to the other; the union $I\cup J$ is a circle, and collapsing a complementary maximal tree in a compatible CW structure yields
+$$
 S^2\cup I\simeq S^2\vee S^1.
-\]
+$$
 Consequently
-\[
+$$
 H_n(S^2\cup I;\ZZ)\cong
 \begin{cases}
 \ZZ,&n=0,\\
@@ -38,6 +38,6 @@ H_n(S^2\cup I;\ZZ)\cong
 \ZZ,&n=2,\\
 0,&n\ge3.
 \end{cases}
-\]
-The same computation follows from Mayer--Vietoris after thickening \(S^2\) and the interval to open neighborhoods whose intersection has two contractible components.
+$$
+The same computation follows from Mayer--Vietoris after thickening $S^2$ and the interval to open neighborhoods whose intersection has two contractible components.
 :::

@@ -48,23 +48,23 @@ Statement (1) is true.
 
 ::: pf-proof
 
-For every fixed \(x\in X\), the hypothesis says
-\[
+For every fixed $x\in X$, the hypothesis says
+$$
 \sup_n|\varphi_n(x)|<\infty.
-\]
-Since \(X\) is Banach, the Uniform Boundedness Principle yields
-\[
+$$
+Since $X$ is Banach, the Uniform Boundedness Principle yields
+$$
 \sup_n\|\varphi_n\|<\infty.
-\]
+$$
 But
-\[
+$$
 \|\varphi_n\|=\sup_{\|x\|=1}|\varphi_n(x)|,
-\]
+$$
 so
-\[
+$$
 \boxed{
 \sup_n\sup_{\|x\|=1}|\varphi_n(x)|<\infty.}
-\]
+$$
 
 :::
 
@@ -77,25 +77,25 @@ Statement (2) is false.
 ::: pf-proof
 
 Take
-\[
+$$
 X=\ell^1,
 \qquad
 D=c_{00},
-\]
-where \(c_{00}\) is the dense subspace of finitely supported sequences. Define
-\[
+$$
+where $c_{00}$ is the dense subspace of finitely supported sequences. Define
+$$
 \varphi_n(x)=n x_n.
-\]
-Then \(\varphi_n\in(\ell^1)^*=\ell^\infty\) and
-\[
+$$
+Then $\varphi_n\in(\ell^1)^*=\ell^\infty$ and
+$$
 \|\varphi_n\|=n.
-\]
+$$
 Hence the operator norms are unbounded.
 
-However, for every \(x\in c_{00}\), only finitely many coordinates of \(x\) are nonzero, so
-\[
+However, for every $x\in c_{00}$, only finitely many coordinates of $x$ are nonzero, so
+$$
 \sup_n|\varphi_n(x)|<\infty.
-\]
+$$
 Thus pointwise boundedness merely on a dense subspace does not imply uniform boundedness.
 
 :::
@@ -109,44 +109,44 @@ Statement (3), with the corrected absolute-value hypothesis, is true.
 ::: pf-proof
 
 Set
-\[
+$$
 f_n:=\mathbf1_{\Omega_n}f\,\mathbf1_{\{|f|\le n\}}.
-\]
-Since \(|f_n|\le n\) and \(\mu(\Omega_n)<\infty\), we have \(f_n\in L^2(\mu)\). Define
-\[
+$$
+Since $|f_n|\le n$ and $\mu(\Omega_n)<\infty$, we have $f_n\in L^2(\mu)$. Define
+$$
 T_n:L^2(\mu)\to\CC,
 \qquad
 T_n(g)=\int_\Omega f_n g\,d\mu.
-\]
-By the \(L^2\) Riesz representation theorem,
-\[
+$$
+By the $L^2$ Riesz representation theorem,
+$$
 \|T_n\|=\|f_n\|_2.
-\]
+$$
 The corrected hypothesis is exactly
-\[
+$$
 \sup_n|T_n(g)|<\infty
 \qquad\text{for every }g\in L^2(\mu).
-\]
-Therefore the Uniform Boundedness Principle gives a constant \(C\) such that
-\[
+$$
+Therefore the Uniform Boundedness Principle gives a constant $C$ such that
+$$
 \|f_n\|_2\le C
 \qquad\text{for every }n.
-\]
+$$
 
-Because \(\Omega_n\uparrow\Omega\) and \(\mathbf1_{\{|f|\le n\}}\uparrow1\),
-\[
+Because $\Omega_n\uparrow\Omega$ and $\mathbf1_{\{|f|\le n\}}\uparrow1$,
+$$
 |f_n|^2\uparrow |f|^2
-\]
+$$
 pointwise. By the Monotone Convergence Theorem,
-\[
+$$
 \int_\Omega|f|^2\,d\mu
 =\lim_{n\to\infty}\int_\Omega|f_n|^2\,d\mu
 \le C^2.
-\]
+$$
 Hence
-\[
+$$
 \boxed{f\in L^2(\mu).}
-\]
+$$
 
 :::
 

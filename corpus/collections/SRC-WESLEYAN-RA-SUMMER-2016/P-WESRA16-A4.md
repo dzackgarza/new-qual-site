@@ -19,15 +19,15 @@ audit:
 Let $f:\RR^d\to[0,\infty)$ be Lebesgue measurable.
 
 (a) Using
-\[
+$$
 W_{n,k}=\{x:k2^{-n}\le f(x)<(k+1)2^{-n}\},
-\]
+$$
 construct simple functions $\varphi_n$ with $\varphi_0=0$, $\varphi_n\uparrow f$ pointwise, and $\varphi_n\le\varphi_{n+1}\le f$.
 
 (b) Prove that there are nonnegative numbers $c_p$ and measurable sets $M_p$ such that
-\[
+$$
 f=\sum_{p=0}^\infty c_p\mathbf1_{M_p}.
-\]
+$$
 :::
 
 ::: {.solution}

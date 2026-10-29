@@ -39,21 +39,21 @@ Assume both sets have positive measure and localize them.
 ::: pf-proof
 
 Suppose, toward a contradiction, that
-\[
+$$
 m(E)>0
 \qquad\text{and}\qquad
 m(E^c)>0.
-\]
+$$
 Since Lebesgue measure is $\sigma$-finite, there exist bounded measurable sets
-\[
+$$
 A\subset E,
 \qquad
 B\subset E^c
-\]
+$$
 with
-\[
+$$
 0<m(A),m(B)<\infty.
-\]
+$$
 
 :::
 
@@ -66,30 +66,30 @@ Use continuity of translation to find a rational translate with positive overlap
 ::: pf-proof
 
 Define
-\[
+$$
 h(t):=m((A+t)\cap B)
 =\int_{\RR}\mathbf1_A(x-t)\mathbf1_B(x)\,dx.
-\]
+$$
 Since translations are continuous in $L^1(\RR)$,
-\[
+$$
 |h(t)-h(s)|
 \le \|\mathbf1_A(\cdot-t)-\mathbf1_A(\cdot-s)\|_1,
-\]
+$$
 so $h$ is continuous.
 
 Tonelli's theorem gives
-\[
+$$
 \begin{aligned}
 \int_{\RR}h(t)\,dt
 &=\int_{\RR}\int_{\RR}
 \mathbf1_A(x-t)\mathbf1_B(x)\,dx\,dt\\
 &=m(A)m(B)>0.
 \end{aligned}
-\]
+$$
 Thus $h(t_0)>0$ for some $t_0$. By continuity, $h>0$ on a nonempty open interval around $t_0$. Since $\QQ$ is dense, choose rational $r$ in that interval. Then
-\[
+$$
 m((A+r)\cap B)=h(r)>0.
-\]
+$$
 
 :::
 
@@ -102,17 +102,17 @@ Contradict rational invariance.
 ::: pf-proof
 
 Because $A\subset E$ and $r\in\QQ$,
-\[
+$$
 A+r\subset E+r=E.
-\]
+$$
 But $B\subset E^c$, so
-\[
+$$
 (A+r)\cap B=\varnothing,
-\]
+$$
 contradicting Step 2. Hence it is impossible for both $E$ and $E^c$ to have positive measure. Therefore
-\[
+$$
 \boxed{m(E)=0\quad\text{or}\quad m(E^c)=0.}
-\]
+$$
 
 :::
 

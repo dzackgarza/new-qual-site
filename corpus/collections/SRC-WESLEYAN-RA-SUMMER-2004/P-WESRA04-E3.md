@@ -31,40 +31,40 @@ Give examples of
 
 ::: {.solution}
 For the first example, take
-\[
+$$
 f(x)=x^{-2/5}\mathbf1_{(0,1)}(x).
-\]
+$$
 Then
-\[
+$$
 \int_0^1|f(x)|^2\,dx
 =\int_0^1x^{-4/5}\,dx<\infty,
-\]
+$$
 while
-\[
+$$
 \int_0^1|f(x)|^3\,dx
 =\int_0^1x^{-6/5}\,dx=\infty.
-\]
+$$
 Hence
-\[
+$$
 f\in L^2(\RR)\setminus L^3(\RR).
-\]
+$$
 
 For the second example, take
-\[
+$$
 g(x)=x^{-2/5}\mathbf1_{[1,\infty)}(x).
-\]
+$$
 Then
-\[
+$$
 \int_1^\infty|g(x)|^3\,dx
 =\int_1^\infty x^{-6/5}\,dx<\infty,
-\]
+$$
 whereas
-\[
+$$
 \int_1^\infty|g(x)|^2\,dx
 =\int_1^\infty x^{-4/5}\,dx=\infty.
-\]
+$$
 Thus
-\[
+$$
 \boxed{g\in L^3(\RR)\setminus L^2(\RR).}
-\]
+$$
 :::

@@ -39,14 +39,14 @@ map can carry one triangle onto the other.
 (b) **True.** Let $x_{n_j}\to x$. Given $\varepsilon>0$, choose $N$ so that
 $d(x_m,x_n)<\varepsilon/2$ for $m,n\ge N$, and choose $j$ with
 $n_j\ge N$ and $d(x_{n_j},x)<\varepsilon/2$. Then for every $n\ge N$,
-\[
+$$
 d(x_n,x)\le d(x_n,x_{n_j})+d(x_{n_j},x)<\varepsilon.
-\]
+$$
 
 (c) **True.** The integrand has the primitive
-\[
+$$
 -\frac1{2z-1},
-\]
+$$
 on $\CC\setminus\{1/2\}$. Both curves run from $1$ to $-1$ and avoid
 $1/2$, so the two integrals are equal.
 
@@ -57,15 +57,15 @@ excludes an interior value of modulus $1$. Hence
 $f(G)\subset\DD\setminus\{0\}$.
 
 (e) **False.** By Cauchy--Hadamard,
-\[
+$$
 1=\limsup_{n\to\infty}|a_n|^{1/n}.
-\]
+$$
 For the lacunary series, the relevant limsup is
 $\limsup |a_n|^{1/p_n}$. Since $p_n\ge n$, values with $|a_n|\ge1$ can only
 decrease after taking the $p_n$th root, while values with $|a_n|<1$ remain
 below $1$. Thus
-\[
+$$
 \limsup |a_n|^{1/p_n}\le1,
-\]
+$$
 so its radius of convergence is at least $1$, never less than $1$.
 :::

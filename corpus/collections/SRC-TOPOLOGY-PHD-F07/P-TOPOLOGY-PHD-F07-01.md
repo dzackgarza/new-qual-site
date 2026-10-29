@@ -32,10 +32,10 @@ Prove that an open ball is an open set.
 
 ::: {.solution}
 Let
-\[
+$$
 B(x_0,\epsilon)=\{x\in X:d(x,x_0)<\epsilon\},
 \qquad \epsilon>0.
-\]
+$$
 
 ::: pf
 
@@ -44,33 +44,33 @@ Every point $y\in B(x_0,\epsilon)$ is contained in an open ball centered at $y$ 
 
 ::: pf-proof
 Fix
-\[
+$$
 y\in B(x_0,\epsilon).
-\]
+$$
 Then
-\[
+$$
 d(y,x_0)<\epsilon,
-\]
+$$
 so
-\[
+$$
 r=\epsilon-d(y,x_0)>0.
-\]
+$$
 Let $z\in B(y,r)$.
 By the triangle inequality,
-\[
+$$
 d(z,x_0)
 \le d(z,y)+d(y,x_0)
 <r+d(y,x_0)
 =\epsilon.
-\]
+$$
 Hence
-\[
+$$
 z\in B(x_0,\epsilon).
-\]
+$$
 Thus
-\[
+$$
 B(y,r)\subseteq B(x_0,\epsilon).
-\]
+$$
 :::
 
 :::
@@ -80,9 +80,9 @@ The ball $B(x_0,\epsilon)$ is open.
 
 ::: pf-proof
 By step [](#ball-around-point){.pf-ref}, for every point $y\in B(x_0,\epsilon)$ there is a radius $r>0$ such that
-\[
+$$
 y\in B(y,r)\subseteq B(x_0,\epsilon).
-\]
+$$
 This is exactly the metric-topology criterion for $B(x_0,\epsilon)$ to be open.
 :::
 

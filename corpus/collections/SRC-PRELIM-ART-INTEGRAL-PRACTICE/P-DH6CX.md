@@ -32,7 +32,7 @@ audit:
 
 ::: {.solution}
 For a continuous function $\Phi$, the substitution $u=1/x$, $du=-x^{-2}\,dx$ gives
-\[
+$$
 \int \frac{\Phi(1/x)}{x^2}\,dx=-\int \Phi(u)\,du.
-\]
+$$
 :::

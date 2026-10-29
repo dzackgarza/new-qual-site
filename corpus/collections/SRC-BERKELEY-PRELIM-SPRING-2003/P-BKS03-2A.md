@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Define $f:\RR^2\to\RR$ by $f(x,0)=0$ and, for $y\ne0$,
-\[
+$$
 f(x,y)=\left(1-\cos\frac{x^2}{y}\right)\sqrt{x^2+y^2}.
-\]
+$$
 
 (a) Show that $f$ is continuous at $(0,0)$.
 

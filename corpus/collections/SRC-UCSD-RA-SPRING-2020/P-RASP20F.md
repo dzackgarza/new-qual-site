@@ -47,29 +47,29 @@ Prove that (1) implies (2).
 
 ::: pf-proof
 
-Assume there is a signed Radon measure \(\mu\) on \([0,1]\) with
-\[
+Assume there is a signed Radon measure $\mu$ on $[0,1]$ with
+$$
 \int_0^1 t^n\,d\mu(t)=c_n.
-\]
+$$
 Let
-\[
+$$
 p(t)=\sum_{n=0}^N a_nt^n.
-\]
+$$
 Then
-\[
+$$
 \sum_{n=0}^N a_nc_n
 =\int_0^1 p(t)\,d\mu(t).
-\]
+$$
 Therefore
-\[
+$$
 \left|\sum_{n=0}^N a_nc_n\right|
 \le \int_0^1|p|\,d|\mu|
 \le |\mu|([0,1])\,\|p\|_\infty.
-\]
+$$
 Thus (2) holds with
-\[
+$$
 M=|\mu|([0,1]).
-\]
+$$
 
 :::
 
@@ -82,18 +82,18 @@ Define a bounded linear functional on polynomials from (2).
 ::: pf-proof
 
 Assume (2). For a polynomial
-\[
+$$
 p(t)=\sum_{n=0}^N a_nt^n,
-\]
+$$
 define
-\[
+$$
 L(p):=\sum_{n=0}^N a_nc_n.
-\]
-The monomial representation of a polynomial is unique, so \(L\) is well defined and linear. Condition (2) gives
-\[
+$$
+The monomial representation of a polynomial is unique, so $L$ is well defined and linear. Condition (2) gives
+$$
 |L(p)|\le M\|p\|_\infty.
-\]
-Hence \(L\) is bounded on the polynomial subspace of \(C([0,1])\).
+$$
+Hence $L$ is bounded on the polynomial subspace of $C([0,1])$.
 
 :::
 
@@ -105,23 +105,23 @@ Extend the functional and represent it by a signed Radon measure.
 
 ::: pf-proof
 
-By the Weierstrass approximation theorem, polynomials are uniformly dense in \(C([0,1])\). Since \(L\) is bounded in the uniform norm, it extends uniquely by continuity to a bounded linear functional
-\[
+By the Weierstrass approximation theorem, polynomials are uniformly dense in $C([0,1])$. Since $L$ is bounded in the uniform norm, it extends uniquely by continuity to a bounded linear functional
+$$
 \widetilde L:C([0,1])\to\RR.
-\]
-By the Riesz--Markov representation theorem, there is a unique finite signed Radon measure \(\mu\) on \([0,1]\) such that
-\[
+$$
+By the Riesz--Markov representation theorem, there is a unique finite signed Radon measure $\mu$ on $[0,1]$ such that
+$$
 \widetilde L(f)=\int_0^1 f(t)\,d\mu(t)
 \qquad(f\in C([0,1])).
-\]
-Applying this to \(f(t)=t^n\) gives
-\[
+$$
+Applying this to $f(t)=t^n$ gives
+$$
 \int_0^1 t^n\,d\mu(t)
 =\widetilde L(t^n)
 =L(t^n)
 =c_n
-\]
-for every \(n\ge0\). Thus (1) holds.
+$$
+for every $n\ge0$. Thus (1) holds.
 
 Therefore conditions (1) and (2) are equivalent.
 

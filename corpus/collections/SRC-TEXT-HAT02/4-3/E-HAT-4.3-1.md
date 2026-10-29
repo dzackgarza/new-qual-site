@@ -30,47 +30,47 @@ How is this consistent with the universal coefficient theorem?
 
 ::: {.solution}
 Let
-\[
+$$
 u\in H^2(\RP^\infty;\ZZ)\cong\ZZ/2
-\]
+$$
 be the nonzero class. Since
-\[
+$$
 \CP^\infty=K(\ZZ,2),
-\]
+$$
 representability gives a map
-\[
+$$
 f:\RP^\infty\to\CP^\infty
-\]
-such that, for the canonical generator \(c\in H^2(\CP^\infty;\ZZ)\),
-\[
+$$
+such that, for the canonical generator $c\in H^2(\CP^\infty;\ZZ)$,
+$$
 f^*(c)=u\ne0.
-\]
-Thus \(f^*\) is nontrivial on reduced integral cohomology.
+$$
+Thus $f^*$ is nontrivial on reduced integral cohomology.
 
 On the other hand
-\[
+$$
 \widetilde H_i(\RP^\infty;\ZZ)
 \cong
 \begin{cases}
 \ZZ/2,&i\text{ odd},\\
 0,&i\text{ even},
 \end{cases}
-\]
-while \(H_*(\CP^\infty;\ZZ)\) is free abelian and concentrated in even degrees. Hence every reduced homology homomorphism induced by \(f\) is zero.
+$$
+while $H_*(\CP^\infty;\ZZ)$ is free abelian and concentrated in even degrees. Hence every reduced homology homomorphism induced by $f$ is zero.
 
-There is no contradiction with the universal coefficient theorem. In degree \(2\),
-\[
+There is no contradiction with the universal coefficient theorem. In degree $2$,
+$$
 H^2(\RP^\infty;\ZZ)
 \cong
 \operatorname{Ext}(H_1(\RP^\infty),\ZZ)
 \cong\ZZ/2,
-\]
-whereas the generator of \(H^2(\CP^\infty)\) comes from
-\[
+$$
+whereas the generator of $H^2(\CP^\infty)$ comes from
+$$
 \operatorname{Hom}(H_2(\CP^\infty),\ZZ).
-\]
+$$
 Naturality of the UCT exact sequence allows its pullback to land in the Ext term; the UCT splitting is not natural. Thus
-\[
+$$
 \boxed{f_*|_{\widetilde H_*}=0\text{ while }f^*|_{\widetilde H^*}\ne0.}
-\]
+$$
 :::

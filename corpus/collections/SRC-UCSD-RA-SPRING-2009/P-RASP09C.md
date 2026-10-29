@@ -41,13 +41,13 @@ Show that the limit is also dominated by $g$.
 ::: pf-proof
 
 Since $f_n\to f$ in measure, there is a subsequence $(f_{n_k})$ such that
-\[
+$$
 f_{n_k}(x)\to f(x)
-\]
+$$
 for almost every $x$. Since $|f_{n_k}|\le g$ for every $k$, passage to the pointwise limit gives
-\[
+$$
 |f(x)|\le g(x)
-\]
+$$
 for almost every $x$. Therefore $f\in L^p(X,\mu)$.
 
 :::
@@ -63,19 +63,19 @@ Every subsequence has an $L^p$-convergent further subsequence.
 Let $(f_{n_k})$ be any subsequence. It still converges to $f$ in measure, so it has a further subsequence $(f_{n_{k_j}})$ converging to $f$ almost everywhere.
 
 For this further subsequence,
-\[
+$$
 |f_{n_{k_j}}-f|^p
 \le (|f_{n_{k_j}}|+|f|)^p
 \le (2g)^p.
-\]
+$$
 Because $g\in L^p$, the function $(2g)^p$ is integrable. Hence the Dominated Convergence Theorem yields
-\[
+$$
 \int_X|f_{n_{k_j}}-f|^p\,d\mu\longrightarrow0,
-\]
+$$
 that is,
-\[
+$$
 \|f_{n_{k_j}}-f\|_p\longrightarrow0.
-\]
+$$
 
 :::
 
@@ -88,15 +88,15 @@ Deduce convergence of the full sequence.
 ::: pf-proof
 
 Suppose, toward a contradiction, that $f_n$ does not converge to $f$ in $L^p$. Then there are $\varepsilon>0$ and a subsequence $(f_{n_k})$ such that
-\[
+$$
 \|f_{n_k}-f\|_p\ge\varepsilon
-\]
+$$
 for every $k$.
 
 By Step 2, this subsequence has a further subsequence converging to $f$ in $L^p$, contradicting the displayed lower bound. Therefore
-\[
+$$
 \boxed{\|f_n-f\|_p\longrightarrow0.}
-\]
+$$
 
 :::
 

@@ -28,10 +28,10 @@ Let $A$ be an $n$-dimensional real division algebra. Only bilinearity of multipl
 ::: {.pf-step #s1-1}
 
 For every nonzero $a\in A$, left multiplication
-\[
+$$
 L_a:A\to A,
 \qquad x\longmapsto ax
-\]
+$$
 is a linear isomorphism.
 
 
@@ -46,9 +46,9 @@ Bilinearity makes $L_a$ linear. If $L_a(x)=0$, then $ax=0$. Since $A$ is a divis
 ::: {.pf-step #s1-2}
 
 Choose a basis $e_1,\ldots,e_n$ of $A$. For every $x\in A\setminus\{0\}$, the vectors
-\[
+$$
 e_1x,\ldots,e_nx
-\]
+$$
 form a basis of $A$.
 
 
@@ -63,13 +63,13 @@ Use right multiplication $R_x(a)=ax$. The same argument as in step [](#s1-1){.pf
 ::: {.pf-step #s1-3}
 
 For $x\in S^{n-1}\subset A$, let $v_i(x)$ be the orthogonal projection of $e_ix$ to the tangent space
-\[
+$$
 T_xS^{n-1}=x^{\perp}.
-\]
+$$
 After choosing the basis with $e_1=1$ when the algebra is unital, the fields
-\[
+$$
 v_2,\ldots,v_n
-\]
+$$
 form a tangent frame of $S^{n-1}$.
 
 
@@ -84,9 +84,9 @@ With $e_1=1$, the first vector is $e_1x=x$, the radial direction. By step [](#s1
 ::: {.pf-step #s1-4}
 
 Under the antipodal map $x\mapsto-x$, each vector field satisfies
-\[
+$$
 v_i(-x)=-v_i(x).
-\]
+$$
 
 
 ::: pf-proof
@@ -100,18 +100,18 @@ Bilinearity gives $e_i(-x)=-(e_ix)$. Also $(-x)^\perp=x^\perp$, and orthogonal p
 ::: {.pf-step #s1-5}
 
 The frame from step [](#s1-3){.pf-ref} descends through
-\[
+$$
 S^{n-1}\to\RP^{n-1}
-\]
+$$
 to a frame of $T\RP^{n-1}$. In particular, $\RP^{n-1}$ is orientable.
 
 
 ::: pf-proof
 
 The differential of the antipodal deck transformation is $-I$ on tangent spaces. Step [](#s1-4){.pf-ref} says exactly that
-\[
+$$
 d(-I)_x(v_i(x))=v_i(-x),
-\]
+$$
 so each $v_i$ is equivariant and descends to the quotient. The descended $n-1$ vector fields remain pointwise linearly independent, hence trivialize the tangent bundle. A parallelizable manifold is orientable.
 
 :::
@@ -121,11 +121,11 @@ so each $v_i$ is equivariant and descends to the quotient. The descended $n-1$ v
 ::: {.pf-step #s1-6}
 
 The existence of the division-algebra multiplication also gives a nonsingular bilinear map
-\[
+$$
 \mu:\RR^n\times\RR^n\to\RR^n,
 \qquad
 \mu(x,y)=xy,
-\]
+$$
 meaning $\mu(x,y)=0$ implies $x=0$ or $y=0$.
 
 
@@ -140,18 +140,18 @@ Bilinearity is part of the real algebra structure. The defining division propert
 ::: {.pf-step #s1-7}
 
 By the classical Hopf--Stiefel theorem on nonsingular bilinear maps, such a map
-\[
+$$
 \RR^n\times\RR^n\to\RR^n
-\]
+$$
 can exist only if $n$ is a power of $2$.
 
 
 ::: pf-proof
 
 The Hopf--Stiefel obstruction says that a nonsingular bilinear map $\RR^r\times\RR^s\to\RR^m$ forces the binomial coefficients in the formal inverse of $(1+x)^m$ to satisfy the corresponding mod-$2$ truncation obstruction. In the square case $r=s=m=n$, this is equivalent to the absence of a $1$ in the binary expansion of $n$ below its highest nonzero bit; hence
-\[
+$$
 n=2^r
-\]
+$$
 for some $r\ge0$. Applying it to the multiplication map of step [](#s1-6){.pf-ref} gives the claim.
 
 :::
@@ -161,11 +161,11 @@ for some $r\ge0$. Applying it to the multiplication map of step [](#s1-6){.pf-re
 ::: {.pf-step #s1-8}
 
 Therefore
-\[
+$$
 \boxed{
 \RP^{n-1}\text{ is orientable and }n=2^r
 \text{ for some }r.}
-\]
+$$
 
 
 ::: pf-proof

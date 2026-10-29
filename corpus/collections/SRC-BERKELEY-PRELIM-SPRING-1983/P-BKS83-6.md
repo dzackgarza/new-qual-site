@@ -27,9 +27,9 @@ Let $f:\RR\to\RR$ be continuous and $1$-periodic.
 1. Prove that $f$ is bounded above and below and attains its maximum and minimum.
 2. Prove that $f$ is uniformly continuous on $\RR$.
 3. Prove that there is $x_0\in\RR$ such that
-   \[
+   $$
    f(x_0+\pi)=f(x_0).
-   \]
+   $$
 :::
 
 ::: {.solution}

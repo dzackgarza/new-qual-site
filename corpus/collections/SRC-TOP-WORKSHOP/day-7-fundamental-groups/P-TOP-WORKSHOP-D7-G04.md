@@ -30,17 +30,17 @@ audit:
 :::
 
 ::: {.solution}
-Use the standard CW structure on the torus: one \(0\)-cell, two \(1\)-cells \(a,b\), and one \(2\)-cell attached by
-\[
+Use the standard CW structure on the torus: one $0$-cell, two $1$-cells $a,b$, and one $2$-cell attached by
+$$
 aba^{-1}b^{-1}.
-\]
-The new disk is a second \(2\)-cell whose boundary is attached along the \(a\)-circle. Thus a CW structure for \(X\) has one \(0\)-cell, \(1\)-cells \(a,b\), and two \(2\)-cells with attaching words
-\[
+$$
+The new disk is a second $2$-cell whose boundary is attached along the $a$-circle. Thus a CW structure for $X$ has one $0$-cell, $1$-cells $a,b$, and two $2$-cells with attaching words
+$$
 [a,b]\quad\text{and}\quad a.
-\]
+$$
 Van Kampen gives
-\[
+$$
 \pi_1(X)\cong\langle a,b\mid [a,b],a\rangle\cong\langle b\rangle\cong\ZZ.
-\]
+$$
 This answers both parts: the displayed cells give the requested CW complex, and its fundamental group is infinite cyclic.
 :::

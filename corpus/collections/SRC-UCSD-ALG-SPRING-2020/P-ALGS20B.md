@@ -33,14 +33,14 @@ Prove that $$|\{Q \in \operatorname{Syl}_p(G) \mid P \subseteq Q\}| \equiv 1 \pm
 
 ::: pf-step
 
-Let \(X=\operatorname{Syl}_p(G)\). The \(p\)-group \(P\) acts on \(X\) by conjugation:
-\[
+Let $X=\operatorname{Syl}_p(G)$. The $p$-group $P$ acts on $X$ by conjugation:
+$$
 p\cdot Q=pQp^{-1}.
-\]
+$$
 
 ::: pf-proof
 
-Conjugation preserves order, so it sends Sylow \(p\)-subgroups to Sylow \(p\)-subgroups. Hence this is a well-defined action of \(P\) on the finite set \(X\).
+Conjugation preserves order, so it sends Sylow $p$-subgroups to Sylow $p$-subgroups. Hence this is a well-defined action of $P$ on the finite set $X$.
 
 :::
 
@@ -48,17 +48,17 @@ Conjugation preserves order, so it sends Sylow \(p\)-subgroups to Sylow \(p\)-su
 
 ::: {.pf-step #s2}
 
-The fixed points of this action are exactly the Sylow \(p\)-subgroups containing \(P\).
+The fixed points of this action are exactly the Sylow $p$-subgroups containing $P$.
 
 ::: pf-proof
 
-If \(P\le Q\), then every element of \(P\) lies in \(Q\), so it normalizes \(Q\); thus \(Q\) is fixed.
+If $P\le Q$, then every element of $P$ lies in $Q$, so it normalizes $Q$; thus $Q$ is fixed.
 
-Conversely, suppose \(Q\in X\) is fixed by \(P\). Then \(P\le N_G(Q)\), so \(Q\trianglelefteq PQ\). Therefore \(PQ\) is a subgroup of \(G\). Since both \(P\) and \(Q\) are \(p\)-groups and \(Q\trianglelefteq PQ\), the order formula
-\[
+Conversely, suppose $Q\in X$ is fixed by $P$. Then $P\le N_G(Q)$, so $Q\trianglelefteq PQ$. Therefore $PQ$ is a subgroup of $G$. Since both $P$ and $Q$ are $p$-groups and $Q\trianglelefteq PQ$, the order formula
+$$
 |PQ|=\frac{|P||Q|}{|P\cap Q|}
-\]
-shows that \(PQ\) is a \(p\)-group. But \(Q\) is Sylow in \(G\), so no larger \(p\)-subgroup can contain it. Hence \(PQ=Q\), and therefore \(P\le Q\).
+$$
+shows that $PQ$ is a $p$-group. But $Q$ is Sylow in $G$, so no larger $p$-subgroup can contain it. Hence $PQ=Q$, and therefore $P\le Q$.
 
 :::
 
@@ -66,14 +66,14 @@ shows that \(PQ\) is a \(p\)-group. But \(Q\) is Sylow in \(G\), so no larger \(
 
 ::: {.pf-step #s3}
 
-For any action of a finite \(p\)-group on a finite set,
-\[
+For any action of a finite $p$-group on a finite set,
+$$
 |X|\equiv |X^P|\pmod p.
-\]
+$$
 
 ::: pf-proof
 
-Every orbit has cardinality a power of \(p\). The orbits of size \(1\) are exactly the fixed points, and every other orbit has cardinality divisible by \(p\). Summing the orbit sizes gives the congruence.
+Every orbit has cardinality a power of $p$. The orbits of size $1$ are exactly the fixed points, and every other orbit has cardinality divisible by $p$. Summing the orbit sizes gives the congruence.
 
 :::
 
@@ -82,13 +82,13 @@ Every orbit has cardinality a power of \(p\). The orbits of size \(1\) are exact
 ::: {.pf-step #s4}
 
 By Sylow's theorem,
-\[
+$$
 |X|=|\operatorname{Syl}_p(G)|\equiv1\pmod p.
-\]
+$$
 
 ::: pf-proof
 
-The number of Sylow \(p\)-subgroups of a finite group is congruent to \(1\) modulo \(p\).
+The number of Sylow $p$-subgroups of a finite group is congruent to $1$ modulo $p$.
 
 :::
 
@@ -97,14 +97,14 @@ The number of Sylow \(p\)-subgroups of a finite group is congruent to \(1\) modu
 ::: pf-step
 
 Therefore
-\[
+$$
 \left|\{Q\in\operatorname{Syl}_p(G)\mid P\subseteq Q\}\right|
 =|X^P|\equiv1\pmod p.
-\]
+$$
 
 ::: pf-proof
 
-By step [](#s2){.pf-ref} the set in the statement is \(X^P\). Combine steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+By step [](#s2){.pf-ref} the set in the statement is $X^P$. Combine steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
 
 :::
 

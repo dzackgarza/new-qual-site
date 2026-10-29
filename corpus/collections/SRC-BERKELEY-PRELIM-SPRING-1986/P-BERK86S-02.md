@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Let $f:\RR\to\RR$ be continuous and suppose
-\[
+$$
 f(x)=f(x+1)=f(x+\sqrt2)
-\]
+$$
 for every $x\in\RR$. Prove that $f$ is constant.
 :::
 

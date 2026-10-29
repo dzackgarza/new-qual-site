@@ -27,26 +27,26 @@ Let $f, g : \CC \to \CC$ be entire. Show that if $e^{f(z)} + e^{g(z)} = 1$ for a
 ::: {.pf-step #s1-1}
 
 The entire function
-\[
+$$
 h=e^f
-\]
+$$
 omits both values $0$ and $1$.
 
 
 ::: pf-proof
 
 The complex exponential never vanishes, so
-\[
+$$
 h(z)=e^{f(z)}\ne0
-\]
+$$
 for every $z$. Also the hypothesis gives
-\[
+$$
 1-h(z)=e^{g(z)}.
-\]
+$$
 The right-hand side never vanishes, so
-\[
+$$
 h(z)\ne1
-\]
+$$
 for every $z$.
 
 :::
@@ -76,17 +76,17 @@ The function $f$ is constant.
 ::: pf-proof
 
 By step [](#s1-2){.pf-ref},
-\[
+$$
 e^{f(z)}=c
-\]
+$$
 for some nonzero constant $c$. Differentiating gives
-\[
+$$
 e^{f(z)}f'(z)=0.
-\]
+$$
 Since $e^{f(z)}\ne0$, one has
-\[
+$$
 f'(z)=0
-\]
+$$
 for every $z$. Thus $f$ is constant.
 
 :::
@@ -101,13 +101,13 @@ The function $g$ is constant.
 ::: pf-proof
 
 By the original identity and step [](#s1-2){.pf-ref},
-\[
+$$
 e^{g(z)}=1-c,
-\]
+$$
 which is constant and nonzero. Differentiating as in step [](#s1-3){.pf-ref} gives
-\[
+$$
 g'(z)=0
-\]
+$$
 for every $z$, so $g$ is constant.
 
 :::
@@ -117,9 +117,9 @@ for every $z$, so $g$ is constant.
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 \boxed{f\text{ and }g\text{ are constant}}.
-\]
+$$
 
 
 ::: pf-proof

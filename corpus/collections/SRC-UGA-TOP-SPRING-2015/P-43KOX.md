@@ -55,13 +55,13 @@ Thus only the nonempty case remains.
 ::: {.pf-step #s2}
 
 The horizontal slice
-\[
+$$
 X_b=X\times\{b\}
-\]
+$$
 and every vertical slice
-\[
+$$
 Y_x=\{x\}\times Y
-\]
+$$
 are connected.
 
 ::: pf-proof
@@ -76,9 +76,9 @@ The spaces $X$ and $Y$ are connected by hypothesis.
 ::: {.pf-step #s3}
 
 For every $x\in X$, the subspace
-\[
+$$
 T_x=X_b\cup Y_x
-\]
+$$
 is connected.
 
 ::: pf-proof
@@ -110,9 +110,9 @@ The union of the $T_x$ is all of $X\times Y$.
 
 If $(x,y)\in X\times Y$, then $(x,y)\in Y_x\subseteq T_x$.
 Hence
-\[
+$$
 X\times Y=\bigcup_{x\in X}T_x.
-\]
+$$
 
 :::
 

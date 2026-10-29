@@ -12,9 +12,9 @@ audit:
 
 ::: {.problem}
 Let $k\ge0$ be an integer and define
-\[
+$$
 f_n(x)=\frac{x^k}{x^2+n},\qquad x\in\RR,\quad n=1,2,\ldots.
-\]
+$$
 For which values of $k$ does $(f_n)$ converge uniformly on $\RR$? For which values does it converge uniformly on every bounded subset of $\RR$?
 :::
 

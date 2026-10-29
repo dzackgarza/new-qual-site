@@ -45,16 +45,16 @@ normal subgroup.
 ::: pf-step
 
 Let
-\[
+$$
 U=\left\{\begin{pmatrix}1&b\\0&1\end{pmatrix}:b\in\FF_{17}\right\}.
-\]
-Then \(U\cong (\FF_{17},+)\), so \(|U|=17\) and \(U\) is a Sylow \(17\)-subgroup
-of \(G=\operatorname{GL}(2,\FF_{17})\).
+$$
+Then $U\cong (\FF_{17},+)$, so $|U|=17$ and $U$ is a Sylow $17$-subgroup
+of $G=\operatorname{GL}(2,\FF_{17})$.
 
 ::: pf-proof
 
-The displayed matrices multiply by adding their upper-right entries. Since \(17\) occurs
-to the first power in \(|G|=16^2\cdot17\cdot18\), every subgroup of order \(17\) is
+The displayed matrices multiply by adding their upper-right entries. Since $17$ occurs
+to the first power in $|G|=16^2\cdot17\cdot18$, every subgroup of order $17$ is
 Sylow.
 
 :::
@@ -63,19 +63,19 @@ Sylow.
 
 ::: pf-step
 
-If \(x\in G\) has order \(17\), then \(x\) is conjugate to
-\(\begin{pmatrix}1&1\\0&1\end{pmatrix}\), hence to a matrix of the required form.
+If $x\in G$ has order $17$, then $x$ is conjugate to
+$\begin{pmatrix}1&1\\0&1\end{pmatrix}$, hence to a matrix of the required form.
 
 ::: pf-proof
 
-In characteristic \(17\),
-\[
+In characteristic $17$,
+$$
 t^{17}-1=(t-1)^{17}.
-\]
-Since \(x^{17}=I\), the minimal polynomial \(m_x(t)\) divides \((t-1)^{17}\). Because
-\(x\) is a \(2\times2\) matrix, \(\deg m_x\le2\). Also \(x\ne I\), since \(x\) has order
-\(17\). Therefore \(m_x(t)=(t-1)^2\). The Jordan form of \(x\) is consequently the
-single block \(J_2(1)=\begin{pmatrix}1&1\\0&1\end{pmatrix}\).
+$$
+Since $x^{17}=I$, the minimal polynomial $m_x(t)$ divides $(t-1)^{17}$. Because
+$x$ is a $2\times2$ matrix, $\deg m_x\le2$. Also $x\ne I$, since $x$ has order
+$17$. Therefore $m_x(t)=(t-1)^2$. The Jordan form of $x$ is consequently the
+single block $J_2(1)=\begin{pmatrix}1&1\\0&1\end{pmatrix}$.
 
 :::
 
@@ -83,17 +83,17 @@ single block \(J_2(1)=\begin{pmatrix}1&1\\0&1\end{pmatrix}\).
 
 ::: pf-step
 
-Let \(B\) be the subgroup of invertible upper-triangular matrices. Then
-\(U\trianglelefteq B\), so \(B\le N_G(U)\).
+Let $B$ be the subgroup of invertible upper-triangular matrices. Then
+$U\trianglelefteq B$, so $B\le N_G(U)$.
 
 ::: pf-proof
 
-For \(g=\begin{pmatrix}a&c\\0&d\end{pmatrix}\in B\), direct multiplication gives
-\[
+For $g=\begin{pmatrix}a&c\\0&d\end{pmatrix}\in B$, direct multiplication gives
+$$
 g\begin{pmatrix}1&b\\0&1\end{pmatrix}g^{-1}
  =\begin{pmatrix}1&(a/d)b\\0&1\end{pmatrix}\in U.
-\]
-Thus \(gUg^{-1}=U\).
+$$
+Thus $gUg^{-1}=U$.
 
 :::
 
@@ -101,18 +101,18 @@ Thus \(gUg^{-1}=U\).
 
 ::: pf-step
 
-Conversely, \(N_G(U)\le B\). Hence \(N_G(U)=B\).
+Conversely, $N_G(U)\le B$. Hence $N_G(U)=B$.
 
 ::: pf-proof
 
-The common fixed subspace of \(U\) on \(\FF_{17}^2\) is exactly the line
-\(L=\FF_{17}e_1\): a vector \((r,s)^T\) is fixed by every
-\(\begin{pmatrix}1&b\\0&1\end{pmatrix}\) iff \(bs=0\) for every \(b\), hence iff
-\(s=0\).
+The common fixed subspace of $U$ on $\FF_{17}^2$ is exactly the line
+$L=\FF_{17}e_1$: a vector $(r,s)^T$ is fixed by every
+$\begin{pmatrix}1&b\\0&1\end{pmatrix}$ iff $bs=0$ for every $b$, hence iff
+$s=0$.
 
-If \(g\in N_G(U)\), then \(gUg^{-1}=U\), so \(g\) carries the common fixed subspace of
-\(U\) to itself. Thus \(gL=L\). The stabilizer of \(L\) in \(G\) is precisely the
-upper-triangular subgroup \(B\). Therefore \(g\in B\).
+If $g\in N_G(U)$, then $gUg^{-1}=U$, so $g$ carries the common fixed subspace of
+$U$ to itself. Thus $gL=L$. The stabilizer of $L$ in $G$ is precisely the
+upper-triangular subgroup $B$. Therefore $g\in B$.
 
 :::
 
@@ -120,21 +120,21 @@ upper-triangular subgroup \(B\). Therefore \(g\in B\).
 
 ::: pf-step
 
-The group \(G\) has exactly \(18\) Sylow \(17\)-subgroups.
+The group $G$ has exactly $18$ Sylow $17$-subgroups.
 
 ::: pf-proof
 
-There are \(16\) choices for each nonzero diagonal entry and \(17\) choices for the
+There are $16$ choices for each nonzero diagonal entry and $17$ choices for the
 upper-right entry, so
-\[
+$$
 |B|=16^2\cdot17.
-\]
-Sylow subgroups conjugate transitively, and the stabilizer of \(U\) under conjugation is
-\(N_G(U)=B\). Hence
-\[
+$$
+Sylow subgroups conjugate transitively, and the stabilizer of $U$ under conjugation is
+$N_G(U)=B$. Hence
+$$
 n_{17}=[G:N_G(U)]
  =\frac{16^2\cdot17\cdot18}{16^2\cdot17}=18.
-\]
+$$
 
 :::
 
@@ -142,17 +142,17 @@ n_{17}=[G:N_G(U)]
 
 ::: pf-step
 
-Exactly \(288\) elements of \(G\) have order \(17\).
+Exactly $288$ elements of $G$ have order $17$.
 
 ::: pf-proof
 
-Every Sylow \(17\)-subgroup is cyclic of order \(17\), so each contains \(16\)
-nonidentity elements, all of order \(17\). Two distinct subgroups of order \(17\)
-intersect trivially. Therefore the nonidentity elements from the \(18\) Sylow
-\(17\)-subgroups are disjoint, giving
-\[
+Every Sylow $17$-subgroup is cyclic of order $17$, so each contains $16$
+nonidentity elements, all of order $17$. Two distinct subgroups of order $17$
+intersect trivially. Therefore the nonidentity elements from the $18$ Sylow
+$17$-subgroups are disjoint, giving
+$$
 18(17-1)=18\cdot16=288.
-\]
+$$
 
 :::
 

@@ -30,9 +30,9 @@ Show that if $u\in F$ is algebraic of odd degree over $K$, then so is $u^2$, and
 
 ::: {.solution}
 Let
-\[
+$$
 n=[K(u):K],
-\]
+$$
 which is odd by hypothesis.
 
 ::: pf
@@ -53,16 +53,16 @@ $u^2$ belongs to the finite extension $K(u)$, so it is algebraic over $K$.
 ::: {.pf-step #s2}
 
 One has
-\[
+$$
 [K(u):K(u^2)]\le2.
-\]
+$$
 
 ::: pf-proof
 
 The element $u$ is a root of
-\[
+$$
 X^2-u^2\in K(u^2)[X].
-\]
+$$
 Therefore the minimal polynomial of $u$ over $K(u^2)$ has degree at most $2$,
 which is exactly the asserted inequality.
 
@@ -77,14 +77,14 @@ The degree $[K(u):K(u^2)]$ divides the odd integer $n$.
 ::: pf-proof
 
 By step [](#s1){.pf-ref}, the tower
-\[
+$$
 K\subseteq K(u^2)\subseteq K(u)
-\]
+$$
 consists of finite extensions. The tower law gives
-\[
+$$
 n=[K(u):K]
 =[K(u):K(u^2)]\,[K(u^2):K].
-\]
+$$
 Thus $[K(u):K(u^2)]$ divides $n$.
 
 :::
@@ -94,9 +94,9 @@ Thus $[K(u):K(u^2)]$ divides $n$.
 ::: {.pf-step #s4}
 
 Consequently
-\[
+$$
 [K(u):K(u^2)]=1.
-\]
+$$
 
 ::: pf-proof
 
@@ -110,9 +110,9 @@ $n$, so it cannot equal $2$.
 ::: pf-step
 
 Therefore
-\[
+$$
 K(u)=K(u^2).
-\]
+$$
 
 ::: pf-proof
 

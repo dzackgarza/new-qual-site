@@ -54,9 +54,9 @@ $p\mid |G/\langle g\rangle|$.
 ::: pf-proof
 
 By assumption $p\nmid |g|$. Since
-\[
+$$
 |G|=|\langle g\rangle|\,|G/\langle g\rangle|
-\]
+$$
 and $p\mid |G|$, it follows that $p$ divides the quotient order.
 Because $G$ is abelian, $\langle g\rangle$ is normal and the quotient is an
 abelian group of strictly smaller order.

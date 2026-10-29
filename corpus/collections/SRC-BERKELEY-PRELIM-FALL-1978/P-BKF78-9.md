@@ -28,20 +28,20 @@ audit:
 
 ::: {.problem}
 For $x,y\in\CC^n$, let
-\[
+$$
 \langle x,y\rangle=\sum_j x_j\overline{y_j}
-\]
+$$
 be the Hermitian inner product.
 Let $T$ be a linear operator on $\CC^n$ such that
-\[
+$$
 \langle x,y\rangle=0
 \quad\Longrightarrow\quad
 \langle Tx,Ty\rangle=0.
-\]
+$$
 Prove that $T=kS$ for some scalar $k$ and some unitary operator $S$, i.e.
-\[
+$$
 \langle Sx,Sy\rangle=\langle x,y\rangle
-\]
+$$
 for all $x,y$.
 :::
 

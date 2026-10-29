@@ -16,13 +16,13 @@ review: draft
 
 ::: {.problem}
 Let $F$ be a field and $n$ a positive integer, and consider
-\[
+$$
 A=\left[\begin{array}{ccc}
 1 & \dots & 1 \\
 & \ddots & \\
 1 & \dots & 1
 \end{array}\right] \in M_{n}(F)
-.\]
+.$$
 
 Show that $A$ has a Jordan normal form over $F$ and find it.
 
@@ -50,7 +50,7 @@ Assuming $n\cdot 1\neq 0$, we get a characteristic polynomial of $(x-n)x^{n-1}$.
 The $x-n$ factor corresponds to a single $1\times 1$ Jordan block with diagonal $n$.
 For the $x^{n-1}$ factor, we've produced $n-1$ distinct eigenvectors, so we get $n-1$ Jordan blocks of size $1\times 1$ with diagonal zero.
 Thus
-\[
+$$
 \JCF(A) =
 \left[
 \begin{array}{c|c|c|c|c}
@@ -61,7 +61,7 @@ n & \cdot & \cdot & \cdot & \cdot \\ \hline
 \cdot & \cdot & \cdot & \cdot & 0 
 \end{array}
 \right]
-.\]
+.$$
 One can verify this by checking directly that the minimal polynomial of $A$ is $p(x) = (x-n)x$, so the size of the largest Jordan block for $\lambda = n$ is 1 and for $\lambda = 0$ is $n-1$, while the characteristic polynomial is $(x-n)x^{n-1}$, so the sum of the sizes of Jordan blocks for $\lambda = n$ is 1 and for $\lambda = 0$ is $n-1$, forcing the $1\times 1$ blocks everywhere.
 
 Now consider the case when $n\cdot 1 = 0$; then $\vector v_n$ becomes an eigenvector for $\lambda = 0$ instead of $\lambda = n$.
@@ -72,7 +72,7 @@ The minimal polynomial becomes $(x-0)x = x^2$ and the characteristic polynomial 
 
 and so this forces one block of size $2\times 2$ and $n-2$ blocks of size $1\times 1$.
 So we now have:
-\[
+$$
 \JCF(A) = 
 \left[
 \begin{array}{cc|c|c|c}
@@ -83,7 +83,7 @@ So we now have:
 \cdot & \cdot & \cdot & \cdot & 0 
 \end{array}
 \right]
-.\]
+.$$
 
 
 

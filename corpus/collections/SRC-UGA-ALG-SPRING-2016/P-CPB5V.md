@@ -56,45 +56,45 @@ Note: solutions borrowed from folks on Math twitter!
   Provided $y\neq 0$, we have $2y\neq 0$, and so if $R\neq 0$ then there exists some nonzero $a\in R$, in which case $2a\neq 0$ and $2a\in 2R$.
   - That $2R$ is a right ideal: clear, since $(2y)\cdot r = 2(yr)\in 2R$.
   - That $2R$ is a left ideal: use that multiplication is distributive:
-  \[
+  $$
   r\cdot 2y \definedas r(y+y) = ry + ry \definedas 2(ry) \in 2R
-  .\]
+  .$$
 - So $2R = R$ by simpleness.
 - Uniqueness: 
   - Use the contrapositive of condition (1), so that $2x = 0 \implies x=0$.
   - Suppose toward a contradiction that $x=2y_1 = 2y_2$, then
-  \[
+  $$
   0 = x-x = 2y_1 - 2y_2 = 2(y_1 - y_2) \implies y_1 - y_2 = 0 \implies y_1 = y_2
-  .\]
+  .$$
 :::
 
 ::: {.proof title="part 2"}
 \envlist
 
 - First we'll show $z=2(yz)$:
-\[
+$$
 xy + xy &= x \\
 \implies xy + xy - x &= 0 \\
 \implies xyz + xyz - xz &= 0 \\
 \implies x(yz + yz - z) &= 0 \\
 \implies yz + yz - z &= 0 && \text{since } x\neq 0 \text{ and no zero divisors }\\
 \implies 2(yz) &= z 
-.\]
+.$$
 
 - Now we'll show $z=2(zy)$:
-\[
+$$
 yz + yz &= z \\
 \implies zyz + zyz &= zz \\
 \implies zyz + zyz - zz &= 0 \\
 \implies (zy + zy - z)z &= 0\\
 \implies z=0 \text{ or } zy+zy-z &= 0 && \text{ no zero divisors } 
-.\]
+.$$
 
 - Then if $z=0$, we have $yz = 0 = zy$ and we're done.
 - Otherwise, $2(zy) = z$, and thus
-\[
+$$
 2(zy) = z = 2(yz) \implies 2(zy - yz) = 0 \implies zy-yz = 0
-,\]
+,$$
 so $zy=yz$.
 :::
 
@@ -102,15 +102,15 @@ so $zy=yz$.
 \envlist
 
 - If $1\in R$, 
-\[
+$$
 2xy &= x \\
 \implies 2xy-x &= 0 \\
 \implies x(2y-1) &= 0 \\
 \implies 2y-1 &= 0 && x\neq 0 \text{ and no zero divisors}\\
 \implies 2y &= 1
-.\]
+.$$
 - Now use
-\[
+$$
 1\cdot z &= z\cdot 1 \\
 \implies (2y)z &= z(2y) \\
 \implies (y+y)z &= z(y+y) \\
@@ -118,7 +118,7 @@ so $zy=yz$.
 \implies 2(yz) &= 2(zy) \\
 \implies 2(yz-zy) &= 0 \\
 \implies yz-zy &= 0 \\
-,\]
+,$$
 using condition (2).
 :::
 

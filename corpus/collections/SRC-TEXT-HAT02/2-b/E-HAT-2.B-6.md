@@ -36,13 +36,13 @@ The standard Alexander construction can be localized in a small $3$-ball meeting
 ::: pf-step
 
 Start with a round sphere $S_0\subset\RR^3$ and choose two disjoint closed disks
-\[
+$$
 D_+,D_-\subset S_0.
-\]
+$$
 Choose disjoint small $3$-balls $N_+,N_-$ with
-\[
+$$
 N_\pm\cap S_0=D_\pm,
-\]
+$$
 where $N_+$ lies mainly on the exterior side of $S_0$ and $N_-$ mainly on the interior side.
 
 ::: pf-proof
@@ -106,7 +106,7 @@ Apply the same argument to the reflected horned disk in $N_-$. A meridian $\alph
 :::
 
 Therefore
-\[
+$$
 \boxed{\text{neither component of }\RR^3-S\text{ is simply-connected}.}
-\]
+$$
 :::

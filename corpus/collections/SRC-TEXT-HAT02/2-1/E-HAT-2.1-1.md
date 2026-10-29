@@ -31,13 +31,13 @@ What familiar space is the quotient $\Delta$-complex of a 2 simplex $[\nu_0, \nu
 
 ::: {.solution}
 Let
-\[
+$$
 a=[\nu_0,\nu_1]\sim[\nu_1,\nu_2]
-\]
+$$
 with the identification preserving the displayed vertex order, and let
-\[
+$$
 b=[\nu_0,\nu_2]
-\]
+$$
 be the remaining boundary edge.
 
 ::: pf
@@ -49,15 +49,15 @@ All three vertices become a single vertex in the quotient.
 ::: pf-proof
 
 The edge identification sends
-\[
+$$
 \nu_0\mapsto\nu_1,
 \qquad
 \nu_1\mapsto\nu_2.
-\]
+$$
 Hence
-\[
+$$
 \nu_0\sim\nu_1\sim\nu_2.
-\]
+$$
 
 :::
 
@@ -67,18 +67,18 @@ Hence
 
 The quotient has one $2$-cell, one interior edge class $a$, and one boundary edge $b$.
 The attaching word of the $2$-cell is
-\[
+$$
 a^2b^{-1}
-\]
+$$
 up to reversing all orientations.
 
 ::: pf-proof
 
 Orient the triangle by $[\nu_0,\nu_1,\nu_2]$.
 Its oriented boundary is
-\[
+$$
 [\nu_0,\nu_1]+[\nu_1,\nu_2]-[\nu_0,\nu_2].
-\]
+$$
 The first two edges both map to $a$ with the same orientation, while the third maps to $b$.
 Thus the quotient polygon has boundary word $aab^{-1}$.
 
@@ -95,9 +95,9 @@ This is the standard polygon model of the Möbius band.
 A Möbius band may be obtained from a rectangle by identifying one pair of opposite sides with reversed transverse orientation.
 Cutting that rectangle along a diagonal gives a triangle whose two successive sides are identified in the same directed order; the third side remains the boundary circle.
 Equivalently, the core circle is represented by $a$ and the boundary circle represents $a^2$, exactly the relation
-\[
+$$
 b=a^2
-\]
+$$
 encoded by step [](#s2){.pf-ref}.
 
 :::
@@ -107,9 +107,9 @@ encoded by step [](#s2){.pf-ref}.
 ::: pf-step
 
 Therefore the familiar quotient space is
-\[
+$$
 \boxed{\text{the Möbius band}.}
-\]
+$$
 
 ::: pf-proof
 

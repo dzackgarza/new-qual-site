@@ -31,17 +31,17 @@ No. The quaternion division ring gives a degree-$2$ polynomial with infinitely
 many roots.
 
 Let
-\[
+$$
 \quaternions=\{a+bi+cj+dk:a,b,c,d\in\RR\}
-\]
+$$
 be the Hamilton quaternions, with
-\[
+$$
 i^2=j^2=k^2=ijk=-1.
-\]
+$$
 Consider
-\[
+$$
 f(x)=x^2+1\in\RR[x]\subseteq\quaternions[x].
-\]
+$$
 
 ::: pf
 
@@ -52,24 +52,24 @@ Every unit purely imaginary quaternion is a root of $f$.
 ::: pf-proof
 
 Let
-\[
+$$
 q=bi+cj+dk
-\]
+$$
 with
-\[
+$$
 b^2+c^2+d^2=1.
-\]
+$$
 Using $ij=-ji$, $jk=-kj$, and $ki=-ik$, the mixed terms cancel in $q^2$:
-\[
+$$
 q^2
 =b^2i^2+c^2j^2+d^2k^2
 =-(b^2+c^2+d^2)
 =-1.
-\]
+$$
 Hence
-\[
+$$
 f(q)=q^2+1=0.
-\]
+$$
 
 :::
 

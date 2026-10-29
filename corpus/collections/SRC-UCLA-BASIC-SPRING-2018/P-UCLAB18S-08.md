@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Define $x_1=1$ and $x_{n+1}=\sin x_n$.
 Prove that
-\[
+$$
 \lim_{n\to\infty}\sqrt n\,x_n
-\]
+$$
 exists and compute its value.
 
 Hint: show that $x_{n+1}^{-2}-x_n^{-2}$ converges to a constant.

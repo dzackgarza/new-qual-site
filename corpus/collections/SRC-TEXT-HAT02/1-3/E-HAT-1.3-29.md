@@ -32,17 +32,17 @@ Show that the orbit spaces $Y/G_1$ and $Y/G_2$ are homeomorphic if $G_1$ and $G_
 
 ::: {.solution}
 Suppose
-\[
+$$
 G_2=hG_1h^{-1}
-\]
+$$
 for some homeomorphism
-\[
+$$
 h:Y\to Y.
-\]
+$$
 Let
-\[
+$$
 q_i:Y\to Y/G_i
-\]
+$$
 be the quotient maps.
 
 ::: pf
@@ -54,11 +54,11 @@ The map $h$ sends $G_1$-orbits bijectively to $G_2$-orbits.
 ::: pf-proof
 
 For $y\in Y$,
-\[
+$$
 h(G_1y)=\{hg(y):g\in G_1\}
 =\{(hgh^{-1})h(y):g\in G_1\}
 =G_2h(y).
-\]
+$$
 Thus points in the same $G_1$-orbit have images in the same $G_2$-orbit, and applying $h^{-1}$ gives the converse.
 
 :::
@@ -68,13 +68,13 @@ Thus points in the same $G_1$-orbit have images in the same $G_2$-orbit, and app
 ::: pf-step
 
 Hence the formula
-\[
+$$
 \bar h([y]_{G_1})=[h(y)]_{G_2}
-\]
+$$
 defines a bijection
-\[
+$$
 \bar h:Y/G_1\to Y/G_2.
-\]
+$$
 
 ::: pf-proof
 
@@ -91,9 +91,9 @@ The map $\bar h$ is a homeomorphism.
 ::: pf-proof
 
 The relation
-\[
+$$
 \bar h\circ q_1=q_2\circ h
-\]
+$$
 shows that $\bar h$ is continuous because $q_1$ is a quotient map.
 Applying the same argument to $h^{-1}$ gives continuity of the inverse map induced on orbit spaces.
 Therefore $\bar h$ is a homeomorphism.

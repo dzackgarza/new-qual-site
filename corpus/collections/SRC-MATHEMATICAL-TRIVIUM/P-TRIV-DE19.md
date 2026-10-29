@@ -28,28 +28,28 @@ as a power series about $x = 1$
 ::: {.solution}
 
 Set $s=x-1$ and write
-\[
+$$
 y(s)=\sum_{n=0}^{\infty}a_ns^n.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 In the variable $s$, the differential equation is
-\[
+$$
 (1-s^2)y''-3sy'-y=0.
-\]
+$$
 
 
 ::: pf-proof
 
 Since $x=1+s$, one has
-\[
+$$
 x(2-x)=(1+s)(1-s)=1-s^2,
 \qquad
 1-x=-s,
-\]
+$$
 and differentiation with respect to $x$ is the same as differentiation with respect to $s$.
 
 :::
@@ -59,29 +59,29 @@ and differentiation with respect to $x$ is the same as differentiation with resp
 ::: {.pf-step #s1-2}
 
 The power-series coefficients satisfy
-\[
+$$
 (n+2)(n+1)a_{n+2}-(n+1)^2a_n=0,
-\]
+$$
 or equivalently
-\[
+$$
 a_{n+2}=\frac{n+1}{n+2}a_n
 \qquad(n\geq0).
-\]
+$$
 
 
 ::: pf-proof
 
 From the declared series,
-\[
+$$
 y'=\sum_{n=0}^{\infty}(n+1)a_{n+1}s^n,
 \qquad
 y''=\sum_{n=0}^{\infty}(n+2)(n+1)a_{n+2}s^n.
-\]
+$$
 Substitution into step [](#s1-1){.pf-ref} shows that the coefficient of $s^n$ is
-\[
+$$
 (n+2)(n+1)a_{n+2}
 -\bigl(n(n-1)+3n+1\bigr)a_n.
-\]
+$$
 The expression in parentheses is $(n+1)^2$, which gives the recurrence.
 
 :::
@@ -91,21 +91,21 @@ The expression in parentheses is $(n+1)^2$, which gives the recurrence.
 ::: {.pf-step #s1-3}
 
 The even coefficients are
-\[
+$$
 a_{2m}=a_0\prod_{j=1}^{m}\frac{2j-1}{2j}
 =a_0\frac{(2m)!}{4^m(m!)^2}
 \qquad(m\geq0).
-\]
+$$
 
 
 ::: pf-proof
 
 Apply the recurrence in step [](#s1-2){.pf-ref} successively with $n=0,2,\ldots,2m-2$. This gives the product. Using
-\[
+$$
 (2m)!!=2^m m!,
 \qquad
 (2m-1)!!=\frac{(2m)!}{2^m m!}
-\]
+$$
 gives the factorial form.
 
 :::
@@ -115,11 +115,11 @@ gives the factorial form.
 ::: {.pf-step #s1-4}
 
 The odd coefficients are
-\[
+$$
 a_{2m+1}=a_1\prod_{j=1}^{m}\frac{2j}{2j+1}
 =a_1\frac{(2m)!!}{(2m+1)!!}
 \qquad(m\geq0).
-\]
+$$
 
 
 ::: pf-proof
@@ -133,13 +133,13 @@ Apply the recurrence in step [](#s1-2){.pf-ref} successively with $n=1,3,\ldots,
 ::: {.pf-step #s1-5}
 
 Hence the general power-series solution about $x=1$ is
-\[
+$$
 \boxed{
 y(x)=C_0\sum_{m=0}^{\infty}
 \frac{(2m)!}{4^m(m!)^2}(x-1)^{2m}
 +C_1\sum_{m=0}^{\infty}
 \frac{(2m)!!}{(2m+1)!!}(x-1)^{2m+1}}
-\]
+$$
 for $|x-1|<1$.
 
 

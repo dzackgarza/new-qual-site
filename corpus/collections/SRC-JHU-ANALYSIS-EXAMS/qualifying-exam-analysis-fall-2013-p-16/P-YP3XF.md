@@ -40,21 +40,21 @@ Prove boundedness and self-adjointness.
 ::: pf-proof
 
 For $f\in L^2([0,1])$,
-\[
+$$
 \|Tf\|_2^2
 =\int_0^1 x^2|f(x)|^2\,dx
 \le \int_0^1|f(x)|^2\,dx
 =\|f\|_2^2.
-\]
+$$
 Thus $T$ is bounded and $\|T\|\le1$. In fact $\|T\|=1$ by testing on functions supported near $1$.
 
 For $f,g\in L^2([0,1])$,
-\[
+$$
 \langle Tf,g\rangle
 =\int_0^1 xf(x)\overline{g(x)}\,dx
 =\int_0^1 f(x)\overline{xg(x)}\,dx
 =\langle f,Tg\rangle.
-\]
+$$
 Hence $T=T^*$.
 
 :::
@@ -68,23 +68,23 @@ Construct a bounded sequence whose image has no convergent subsequence.
 ::: pf-proof
 
 For $n\in\ZZ$, set
-\[
+$$
 e_n(x):=\sqrt2\,e^{4\pi i n x}\mathbf1_{[1/2,1]}(x).
-\]
+$$
 Then $(e_n)$ is an orthonormal sequence in $L^2([0,1])$. Hence for $n\ne m$,
-\[
+$$
 \|e_n-e_m\|_2^2=2.
-\]
+$$
 
 Since $x\ge1/2$ on $[1/2,1]$,
-\[
+$$
 \begin{aligned}
 \|Te_n-Te_m\|_2^2
 &=\int_{1/2}^1x^2|e_n(x)-e_m(x)|^2\,dx\\
 &\ge \frac14\|e_n-e_m\|_2^2\\
 &=\frac12.
 \end{aligned}
-\]
+$$
 Thus the sequence $(Te_n)$ is pairwise separated by at least $1/\sqrt2$, so it has no Cauchy subsequence and therefore no convergent subsequence.
 
 The bounded sequence $(e_n)$ lies in the unit ball, but its image under $T$ is not relatively compact. Hence $T$ is not compact.

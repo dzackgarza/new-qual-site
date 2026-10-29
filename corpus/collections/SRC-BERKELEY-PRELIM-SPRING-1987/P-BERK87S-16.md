@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Let $\mathcal F$ be a uniformly bounded, equicontinuous family of real-valued functions on a metric space $(X,d)$. Prove that
-\[
+$$
 g(x)=\sup\{f(x):f\in\mathcal F\}
-\]
+$$
 is continuous.
 :::
 

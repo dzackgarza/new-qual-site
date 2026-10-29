@@ -19,40 +19,40 @@ audit:
 ::: {.problem}
 Let $f:\CC\to\CC$ be holomorphic with $f(z)\ne0$ for every $z\in\CC$.
 Define
-\[
+$$
 U=\{z\in\CC:|f(z)|<1\}.
-\]
+$$
 Show that every connected component of $U$ is unbounded.
 :::
 
 ::: {.solution}
 
 Suppose, toward a contradiction, that
-\[
+$$
 \Omega
-\]
+$$
 is a bounded connected component of
-\[
+$$
 U=\{z\in\CC:|f(z)|<1\}.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
-The set \(U\) is open.
+The set $U$ is open.
 
 
 ::: pf-proof
 
 The function
-\[
+$$
 z\mapsto |f(z)|
-\]
+$$
 is continuous, and
-\[
+$$
 U=|f|^{-1}((-\infty,1)).
-\]
+$$
 
 :::
 
@@ -60,12 +60,12 @@ U=|f|^{-1}((-\infty,1)).
 
 ::: pf-step
 
-The component \(\Omega\) is open.
+The component $\Omega$ is open.
 
 
 ::: pf-proof
 
-Connected components of open subsets of \(\CC\) are open, because \(\CC\) is locally connected.
+Connected components of open subsets of $\CC$ are open, because $\CC$ is locally connected.
 
 :::
 
@@ -74,33 +74,33 @@ Connected components of open subsets of \(\CC\) are open, because \(\CC\) is loc
 ::: {.pf-step #s1-3}
 
 For every
-\[
+$$
 z\in\overline\Omega,
-\]
+$$
 one has
-\[
+$$
 \boxed{|f(z)|\le1}.
-\]
+$$
 
 
 ::: pf-proof
 
 Choose a sequence
-\[
+$$
 z_n\in\Omega
-\]
+$$
 with
-\[
+$$
 z_n\to z.
-\]
+$$
 Since
-\[
+$$
 |f(z_n)|<1,
-\]
+$$
 continuity gives
-\[
+$$
 |f(z)|\le1.
-\]
+$$
 
 :::
 
@@ -109,35 +109,35 @@ continuity gives
 ::: {.pf-step #s1-4}
 
 For every
-\[
+$$
 z\in\partial\Omega,
-\]
+$$
 one has
-\[
+$$
 \boxed{|f(z)|=1}.
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-3){.pf-ref} gives
-\[
+$$
 |f(z)|\le1.
-\]
+$$
 Suppose instead that
-\[
+$$
 |f(z)|<1.
-\]
-Then \(z\in U\). Since \(U\) is open, there is a connected open disk
-\[
+$$
+Then $z\in U$. Since $U$ is open, there is a connected open disk
+$$
 B(z,r)\subseteq U.
-\]
-Because \(z\in\partial\Omega\), the disk meets \(\Omega\). Thus
-\[
+$$
+Because $z\in\partial\Omega$, the disk meets $\Omega$. Thus
+$$
 \Omega\cup B(z,r)
-\]
-is a connected subset of \(U\) strictly larger than the connected component \(\Omega\), contradiction.
-Hence \(|f(z)|\not<1\), so equality holds.
+$$
+is a connected subset of $U$ strictly larger than the connected component $\Omega$, contradiction.
+Hence $|f(z)|\not<1$, so equality holds.
 
 :::
 
@@ -145,10 +145,10 @@ Hence \(|f(z)|\not<1\), so equality holds.
 
 ::: pf-step
 
-Since \(f\) has no zeros,
-\[
+Since $f$ has no zeros,
+$$
 g(z)=\frac1{f(z)}
-\]
+$$
 is entire.
 
 
@@ -162,22 +162,22 @@ The reciprocal of a nowhere-zero holomorphic function is holomorphic.
 
 ::: {.pf-step #s1-6}
 
-On \(\Omega\),
-\[
+On $\Omega$,
+$$
 \boxed{|g(z)|>1}.
-\]
+$$
 
 
 ::: pf-proof
 
-By definition of \(U\),
-\[
+By definition of $U$,
+$$
 |f(z)|<1
-\]
-for \(z\in\Omega\), and \(f(z)\ne0\). Taking reciprocals gives
-\[
+$$
+for $z\in\Omega$, and $f(z)\ne0$. Taking reciprocals gives
+$$
 |g(z)|=\frac1{|f(z)|}>1.
-\]
+$$
 
 :::
 
@@ -185,18 +185,18 @@ for \(z\in\Omega\), and \(f(z)\ne0\). Taking reciprocals gives
 
 ::: {.pf-step #s1-7}
 
-On \(\partial\Omega\),
-\[
+On $\partial\Omega$,
+$$
 \boxed{|g(z)|=1}.
-\]
+$$
 
 
 ::: pf-proof
 
 Use step [](#s1-4){.pf-ref}:
-\[
+$$
 |g(z)|=\frac1{|f(z)|}=1.
-\]
+$$
 
 :::
 
@@ -204,12 +204,12 @@ Use step [](#s1-4){.pf-ref}:
 
 ::: {.pf-step #s1-8}
 
-Since \(\Omega\) is bounded, \(\overline\Omega\) is compact.
+Since $\Omega$ is bounded, $\overline\Omega$ is compact.
 
 
 ::: pf-proof
 
-The closure is closed and bounded in \(\CC\cong\RR^2\). By Heine--Borel, it is compact.
+The closure is closed and bounded in $\CC\cong\RR^2$. By Heine--Borel, it is compact.
 
 :::
 
@@ -217,7 +217,7 @@ The closure is closed and bounded in \(\CC\cong\RR^2\). By Heine--Borel, it is c
 
 ::: {.pf-step #s1-9}
 
-The continuous function \(|g|\) attains a maximum on \(\overline\Omega\).
+The continuous function $|g|$ attains a maximum on $\overline\Omega$.
 
 
 ::: pf-proof
@@ -230,15 +230,15 @@ Apply the extreme-value theorem to the compact set from step [](#s1-8){.pf-ref}.
 
 ::: {.pf-step #s1-10}
 
-This maximum is strictly greater than \(1\).
+This maximum is strictly greater than $1$.
 
 
 ::: pf-proof
 
-Every point of \(\Omega\) satisfies
-\[
+Every point of $\Omega$ satisfies
+$$
 |g|>1
-\]
+$$
 by step [](#s1-6){.pf-ref}.
 
 :::
@@ -252,7 +252,7 @@ No boundary point can attain that maximum.
 
 ::: pf-proof
 
-By step [](#s1-7){.pf-ref}, every boundary point has modulus exactly \(1\), while the maximum is \(>1\) by step [](#s1-10){.pf-ref}.
+By step [](#s1-7){.pf-ref}, every boundary point has modulus exactly $1$, while the maximum is $>1$ by step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -260,12 +260,12 @@ By step [](#s1-7){.pf-ref}, every boundary point has modulus exactly \(1\), whil
 
 ::: pf-step
 
-Hence \(|g|\) attains its maximum at an interior point of \(\Omega\).
+Hence $|g|$ attains its maximum at an interior point of $\Omega$.
 
 
 ::: pf-proof
 
-The maximum is attained somewhere in \(\overline\Omega\) by step [](#s1-9){.pf-ref}, and step [](#s1-11){.pf-ref} excludes the boundary.
+The maximum is attained somewhere in $\overline\Omega$ by step [](#s1-9){.pf-ref}, and step [](#s1-11){.pf-ref} excludes the boundary.
 
 :::
 
@@ -274,10 +274,10 @@ The maximum is attained somewhere in \(\overline\Omega\) by step [](#s1-9){.pf-r
 ::: pf-step
 
 By the maximum modulus principle,
-\[
+$$
 \boxed{
 g\text{ is constant on }\Omega}.
-\]
+$$
 
 
 ::: pf-proof
@@ -290,12 +290,12 @@ A holomorphic function on a connected open set that attains a modulus maximum at
 
 ::: pf-step
 
-By the identity theorem, \(g\) is constant on all of \(\CC\).
+By the identity theorem, $g$ is constant on all of $\CC$.
 
 
 ::: pf-proof
 
-The entire function \(g\) agrees with a constant function on the nonempty open set \(\Omega\), so the identity theorem extends that equality to the connected domain \(\CC\).
+The entire function $g$ agrees with a constant function on the nonempty open set $\Omega$, so the identity theorem extends that equality to the connected domain $\CC$.
 
 :::
 
@@ -303,12 +303,12 @@ The entire function \(g\) agrees with a constant function on the nonempty open s
 
 ::: pf-step
 
-Hence \(f=1/g\) is also constant on \(\CC\).
+Hence $f=1/g$ is also constant on $\CC$.
 
 
 ::: pf-proof
 
-The constant value of \(g\) is nonzero because \(g=1/f\).
+The constant value of $g$ is nonzero because $g=1/f$.
 
 :::
 
@@ -316,20 +316,20 @@ The constant value of \(g\) is nonzero because \(g=1/f\).
 
 ::: {.pf-step #s1-16}
 
-This contradicts the existence of the boundary \(\partial\Omega\) with
-\[
+This contradicts the existence of the boundary $\partial\Omega$ with
+$$
 |f|=1
-\]
+$$
 while
-\[
+$$
 |f|<1
-\]
-throughout \(\Omega\).
+$$
+throughout $\Omega$.
 
 
 ::: pf-proof
 
-If \(f\) were constant, its modulus could not be both \(<1\) on \(\Omega\) and equal to \(1\) on \(\partial\Omega\).
+If $f$ were constant, its modulus could not be both $<1$ on $\Omega$ and equal to $1$ on $\partial\Omega$.
 
 :::
 
@@ -337,7 +337,7 @@ If \(f\) were constant, its modulus could not be both \(<1\) on \(\Omega\) and e
 
 ::: {.pf-step #s1-17}
 
-Therefore no connected component of \(U\) can be bounded.
+Therefore no connected component of $U$ can be bounded.
 
 
 ::: pf-proof
@@ -351,12 +351,12 @@ The assumption of a bounded component led to the contradiction in step [](#s1-16
 ::: {.pf-step #s1-18}
 
 Thus
-\[
+$$
 \boxed{
 \text{every connected component of }
 \{z:|f(z)|<1\}
 \text{ is unbounded}.}
-\]
+$$
 
 
 ::: pf-proof

@@ -35,9 +35,9 @@ audit:
 
 ::: {.problem}
 Show that three distinct complex numbers $a,b,c$ are the vertices of an equilateral triangle if and only if
-\[
+$$
 a^2+b^2+c^2=ab+bc+ca.
-\]
+$$
 :::
 
 ::: {.solution}

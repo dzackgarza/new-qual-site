@@ -44,24 +44,24 @@ $\|Tf\|_p\le\|f\|_p$ for every $f\in L^p(\RR)$.
 ::: pf-proof
 
 For almost every $x$, Jensen's inequality for the probability measure on $[0,1]$ gives
-\[
+$$
 |Tf(x)|^p
 =\left|\int_0^1 f(x+y)\,dy\right|^p
 \le \int_0^1 |f(x+y)|^p\,dy.
-\]
+$$
 Integrating in $x$ and using Tonelli together with translation invariance of Lebesgue measure,
-\[
+$$
 \begin{aligned}
 \|Tf\|_p^p
 &\le \int_{\RR}\int_0^1|f(x+y)|^p\,dy\,dx\\
 &=\int_0^1\int_{\RR}|f(x+y)|^p\,dx\,dy\\
 &=\|f\|_p^p.
 \end{aligned}
-\]
+$$
 Hence
-\[
+$$
 \boxed{\|Tf\|_p\le\|f\|_p.}
-\]
+$$
 
 :::
 
@@ -74,15 +74,15 @@ If $\|Tf\|_p=\|f\|_p$, then $f=0$ almost everywhere.
 ::: pf-proof
 
 Suppose $\|Tf\|_p=\|f\|_p$. Then equality holds in the pointwise Jensen inequality for almost every $x$. Since $1<p<\infty$, the function $z\mapsto |z|^p$ is strictly convex. Therefore, for almost every $x$, the function
-\[
+$$
 y\longmapsto f(x+y)
-\]
+$$
 is constant for almost every $y\in[0,1]$.
 
 Thus for almost every $x$ there exists $c_x$ such that
-\[
+$$
 f(t)=c_x
-\]
+$$
 for almost every $t\in(x,x+1)$. If two such intervals overlap in a set of positive measure, their constants must agree. Chaining overlapping unit intervals shows that $f$ is almost everywhere equal to one constant on $\RR$. Since $f\in L^p(\RR)$, that constant must be $0$. Hence equality occurs only for $f=0$ almost everywhere.
 
 :::
@@ -96,9 +96,9 @@ $I-T$ is injective.
 ::: pf-proof
 
 If $(I-T)f=0$, then $Tf=f$. Hence
-\[
+$$
 \|Tf\|_p=\|f\|_p,
-\]
+$$
 and step [](#s2){.pf-ref} implies $f=0$ almost everywhere. Therefore $I-T$ is injective.
 
 :::
@@ -112,26 +112,26 @@ For $f_N\coloneqq\mathbf1_{[0,N]}$, $\|(I-T)f_N\|_p/\|f_N\|_p\to0$ as $N\to\inft
 ::: pf-proof
 
 Let
-\[
+$$
 f_N=\mathbf1_{[0,N]}.
-\]
+$$
 Then
-\[
+$$
 \|f_N\|_p=N^{1/p}.
-\]
+$$
 For $x\in[0,N-1]$ we have $Tf_N(x)=1=f_N(x)$, and for $x\notin[-1,N]$ both sides are zero. Thus $(I-T)f_N$ is supported in
-\[
+$$
 [-1,0]\cup[N-1,N],
-\]
+$$
 and $|(I-T)f_N|\le1$. Hence
-\[
+$$
 \|(I-T)f_N\|_p\le 2^{1/p}.
-\]
+$$
 Therefore
-\[
+$$
 \frac{\|(I-T)f_N\|_p}{\|f_N\|_p}
 \le \left(\frac2N\right)^{1/p}\longrightarrow0.
-\]
+$$
 
 :::
 
@@ -144,15 +144,15 @@ $(I-T)(L^p(\RR))\ne L^p(\RR)$.
 ::: pf-proof
 
 Suppose $(I-T)(L^p)=L^p$. By step [](#s3){.pf-ref}, $I-T$ would then be a bounded bijective operator from the Banach space $L^p(\RR)$ onto itself. The bounded inverse theorem would give a constant $C>0$ such that
-\[
+$$
 \|(I-T)f\|_p\ge C\|f\|_p
-\]
+$$
 for every $f\in L^p$.
 
 Step [](#s4){.pf-ref} contradicts such a lower bound. Therefore
-\[
+$$
 \boxed{(I-T)(L^p(\RR))\ne L^p(\RR).}
-\]
+$$
 
 :::
 

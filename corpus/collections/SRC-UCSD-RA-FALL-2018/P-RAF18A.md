@@ -43,28 +43,28 @@ Build a single integrable dominating function.
 ::: pf-proof
 
 Define
-\[
+$$
 g_n:=\max(|f_1|,\ldots,|f_n|).
-\]
+$$
 Then
-\[
+$$
 0\le g_1\le g_2\le\cdots
-\]
+$$
 and by hypothesis
-\[
+$$
 \int_{\RR}g_n\,dm\le M
 \qquad\text{for every }n.
-\]
+$$
 Let
-\[
+$$
 g:=\lim_{n\to\infty}g_n=\sup_n|f_n|.
-\]
+$$
 By the Monotone Convergence Theorem,
-\[
+$$
 \int_{\RR}g\,dm
 =\lim_{n\to\infty}\int_{\RR}g_n\,dm
 \le M.
-\]
+$$
 Thus $g\in L^1(\RR)$.
 
 :::
@@ -78,17 +78,17 @@ Apply dominated convergence.
 ::: pf-proof
 
 For every $n$,
-\[
+$$
 |f_n|\le g,
-\]
+$$
 and by assumption $f_n\to0$ almost everywhere. Since $g\in L^1$, the Dominated Convergence Theorem gives
-\[
+$$
 \int_{\RR}|f_n|\,dm\longrightarrow0.
-\]
+$$
 Hence
-\[
+$$
 \boxed{\|f_n\|_1\to0.}
-\]
+$$
 
 :::
 

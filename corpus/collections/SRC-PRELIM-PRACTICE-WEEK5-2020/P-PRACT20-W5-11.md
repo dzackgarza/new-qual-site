@@ -27,29 +27,29 @@ Let $G$ be a group and $H \subset G$ be a subgroup. $H$ is said to be a normal s
 ::: {.pf-step #s1-1}
 
 The set
-\[
+$$
 \ker\phi=\{x\in G:\phi(x)=e_{G'}\}
-\]
+$$
 is a subgroup of $G$.
 
 
 ::: pf-proof
 
 The identity belongs to the kernel because
-\[
+$$
 \phi(e_G)=e_{G'}.
-\]
+$$
 If $x,y\in\ker\phi$, then
-\[
+$$
 \phi(xy^{-1})
 =\phi(x)\phi(y)^{-1}
 =e_{G'}e_{G'}^{-1}
 =e_{G'}.
-\]
+$$
 Thus $xy^{-1}\in\ker\phi$. By the subgroup test,
-\[
+$$
 \ker\phi\le G.
-\]
+$$
 
 :::
 
@@ -58,26 +58,26 @@ Thus $xy^{-1}\in\ker\phi$. By the subgroup test,
 ::: {.pf-step #s1-2}
 
 For every $h\in\ker\phi$ and every $g\in G$,
-\[
+$$
 ghg^{-1}\in\ker\phi.
-\]
+$$
 
 
 ::: pf-proof
 
 Since $h\in\ker\phi$,
-\[
+$$
 \phi(h)=e_{G'}.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 \phi(ghg^{-1})
 &=\phi(g)\phi(h)\phi(g)^{-1}\\
 &=\phi(g)e_{G'}\phi(g)^{-1}\\
 &=e_{G'}.
 \end{aligned}
-\]
+$$
 Hence $ghg^{-1}$ belongs to the kernel.
 
 :::
@@ -87,9 +87,9 @@ Hence $ghg^{-1}$ belongs to the kernel.
 ::: {.pf-step #s1-3}
 
 Therefore
-\[
+$$
 \boxed{\ker\phi\trianglelefteq G}.
-\]
+$$
 
 
 ::: pf-proof

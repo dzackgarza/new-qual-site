@@ -19,9 +19,9 @@ audit:
 
 ::: {.problem}
 Let $A$ be a linear transformation on an $n$-dimensional complex vector space with characteristic polynomial
-\[
+$$
 (x-1)^n.
-\]
+$$
 Prove that $A$ is similar to $A^{-1}$.
 :::
 

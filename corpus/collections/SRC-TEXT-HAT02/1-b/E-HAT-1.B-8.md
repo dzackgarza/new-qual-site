@@ -41,9 +41,9 @@ If all vertex groups are finitely generated, then the graph product $\pi_1(K\Gam
 
 For each vertex $v$, choose a finite generating set $S_v$ for the vertex group $G_v$.
 The standard graph-of-groups presentation has generators
-\[
+$$
 \bigcup_v S_v
-\]
+$$
 together with one stable letter $t_e$ for each unoriented edge $e$ not in the maximal tree $T$.
 There are finitely many vertices and finitely many such edges because $\Gamma$ is finite.
 Thus this is a finite generating set for $\pi_1(K\Gamma)$.
@@ -60,9 +60,9 @@ Then the graph product is finitely presented.
 ::: pf-proof
 
 Choose for each vertex group a finite presentation
-\[
+$$
 G_v=\langle S_v\mid R_v\rangle
-\]
+$$
 and for each edge group $G_e$ a finite generating set $C_e$.
 Start with the finitely many vertex generators and stable letters from step [](#s1){.pf-ref}.
 Impose:
@@ -70,9 +70,9 @@ Impose:
 1. the finitely many vertex relators $R_v$;
 2. for each tree edge $e$ and each $c\in C_e$, the relation identifying the two images of $c$ in the endpoint vertex groups;
 3. for each non-tree edge $e$ and each $c\in C_e$, the HNN relation
-   \[
+   $$
    t_e\,\iota_{e,0}(c)\,t_e^{-1}=\iota_{e,1}(c).
-   \]
+   $$
 
 These relations suffice for every element of an edge group because they hold on a generating set and both endpoint maps are homomorphisms.
 Since the graph is finite, only finitely many relations occur.

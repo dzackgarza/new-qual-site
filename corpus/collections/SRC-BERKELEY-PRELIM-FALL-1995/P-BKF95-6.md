@@ -25,14 +25,14 @@ audit:
 
 ::: {.problem}
 Determine all real numbers $L>1$ for which
-\[
+$$
 x^2y''(x)+y(x)=0,
 \qquad 1\le x\le L,
-\]
+$$
 with boundary conditions
-\[
+$$
 y(1)=y(L)=0
-\]
+$$
 has a nonzero solution.
 :::
 

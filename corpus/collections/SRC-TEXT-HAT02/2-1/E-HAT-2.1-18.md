@@ -31,34 +31,34 @@ Show that for the subspace $\QQ \subset \RR$, the relative homology group $H_1(\
 
 ::: {.solution}
 Since $\RR$ is contractible,
-\[
+$$
 H_1(\RR)=0,
 \qquad
 H_0(\RR)\cong\ZZ.
-\]
+$$
 The subspace $\QQ$ is totally disconnected, so each rational number is a path-component and
-\[
+$$
 H_0(\QQ)\cong\bigoplus_{q\in\QQ}\ZZ[q].
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 The long exact sequence gives
-\[
+$$
 H_1(\RR,\QQ)
 \cong
 \ker\left(H_0(\QQ)\to H_0(\RR)\right).
-\]
+$$
 
 ::: pf-proof
 
 The relevant segment is
-\[
+$$
 0=H_1(\RR)\to H_1(\RR,\QQ)
 \to H_0(\QQ)\to H_0(\RR).
-\]
+$$
 Exactness gives the claimed identification.
 
 :::
@@ -68,13 +68,13 @@ Exactness gives the claimed identification.
 ::: {.pf-step #s2}
 
 Under the component bases, the map
-\[
+$$
 H_0(\QQ)\to H_0(\RR)\cong\ZZ
-\]
+$$
 is the augmentation
-\[
+$$
 \sum_q n_q[q]\longmapsto\sum_q n_q.
-\]
+$$
 
 ::: pf-proof
 
@@ -87,21 +87,21 @@ All points of $\QQ$ lie in the single path-component of $\RR$, so every generato
 ::: {.pf-step #s3}
 
 Fix $0\in\QQ$. Then
-\[
+$$
 \mathcal B=\{[q]-[0]:q\in\QQ,\ q\ne0\}
-\]
+$$
 is a basis of the augmentation kernel.
 
 ::: pf-proof
 
 Each element lies in the kernel. Any finite sum
-\[
+$$
 \sum_q n_q[q]
-\]
+$$
 with total coefficient zero equals
-\[
+$$
 \sum_{q\ne0}n_q([q]-[0]),
-\]
+$$
 so $\mathcal B$ spans. If a finite linear combination of elements of $\mathcal B$ vanishes, comparison of the coefficient of each $[q]$ with $q\ne0$ shows every coefficient is zero, so the set is independent.
 
 :::
@@ -111,10 +111,10 @@ so $\mathcal B$ spans. If a finite linear combination of elements of $\mathcal B
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{H_1(\RR,\QQ)
 \cong\bigoplus_{q\in\QQ\setminus\{0\}}\ZZ,}
-\]
+$$
 with basis represented by the classes $[q]-[0]$.
 
 ::: pf-proof

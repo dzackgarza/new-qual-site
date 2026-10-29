@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_0^{2\pi}\frac{d\theta}{2+\cos\theta}.
-\]
+$$
 :::
 
 ::: {.solution}

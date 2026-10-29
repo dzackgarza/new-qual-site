@@ -28,9 +28,9 @@ audit:
 
 ::: {.problem}
 In the triangular network in $\RR^2$ referred to by the source, the points $P_0,P_1,P_2,P_3$ are respectively
-\[
+$$
 (0,0),\qquad(1,0),\qquad(0,1),\qquad(1,1).
-\]
+$$
 Describe the structure of the group of all Euclidean transformations of $\RR^2$ that leave this network invariant.
 :::
 

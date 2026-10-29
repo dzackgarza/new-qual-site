@@ -34,9 +34,9 @@ $$
 ::: {.solution}
 
 Let
-\[
+$$
 r=\operatorname{rank}(B).
-\]
+$$
 
 ::: pf
 
@@ -48,11 +48,11 @@ If $r=0$, then the desired inequality is immediate.
 ::: pf-proof
 
 Every matrix rank is nonnegative, so
-\[
+$$
 0
 \le
 \liminf_{n\to\infty}\operatorname{rank}(A_n).
-\]
+$$
 Since $r=0$, this is exactly the desired inequality.
 
 :::
@@ -77,18 +77,18 @@ Hence some $r\times r$ minor of $B$ has nonzero determinant.
 ::: pf-step
 
 Fix the row and column indices of such a minor, and let
-\[
+$$
 D_n
-\]
+$$
 be the determinant of the corresponding $r\times r$ minor of $A_n$.
 Then
-\[
+$$
 D_n\to D,
-\]
+$$
 where
-\[
+$$
 D\ne0
-\]
+$$
 is the determinant of the chosen minor of $B$.
 
 
@@ -97,9 +97,9 @@ is the determinant of the chosen minor of $B$.
 The determinant is a polynomial in the entries.
 Since the entries of $A_n$ converge to those of $B$, the selected minor converges entrywise to the chosen minor of $B$.
 Continuity of the determinant therefore gives
-\[
+$$
 D_n\to D.
-\]
+$$
 By construction, $D\ne0$.
 
 :::
@@ -109,25 +109,25 @@ By construction, $D\ne0$.
 ::: {.pf-step #s1-4}
 
 There exists $N$ such that
-\[
+$$
 D_n\ne0
-\]
+$$
 for every $n\ge N$.
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 D_n\to D\ne0,
-\]
+$$
 choose $N$ so that
-\[
+$$
 |D_n-D|<\frac{|D|}{2}
-\]
+$$
 for $n\ge N$.
 Then
-\[
+$$
 |D_n|
 \ge
 |D|-|D_n-D|
@@ -135,7 +135,7 @@ Then
 \frac{|D|}{2}
 >
 0.
-\]
+$$
 
 :::
 
@@ -144,9 +144,9 @@ Then
 ::: {.pf-step #s1-5}
 
 For every $n\ge N$,
-\[
+$$
 \operatorname{rank}(A_n)\ge r.
-\]
+$$
 
 
 ::: pf-proof
@@ -161,22 +161,22 @@ Hence its rank is at least $r$.
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{
 \operatorname{rank}(B)
 \le
 \liminf_{n\to\infty}\operatorname{rank}(A_n)
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 If $r=0$, use step [](#s1-1){.pf-ref}.
 If $r>0$, step [](#s1-5){.pf-ref} shows that the ranks are eventually bounded below by
-\[
+$$
 r=\operatorname{rank}(B).
-\]
+$$
 Hence their lower limit is at least $r$.
 
 :::

@@ -39,7 +39,7 @@ Recall that every $D$-module homomorphism $\phi: \mathfrak{a} \to D$ is of the f
 
 ::: pf-step
 
-Since \(D\) is Noetherian, the ideal \(\mathfrak a\) is finitely generated; choose generators \(a_1,\dots,a_n\).
+Since $D$ is Noetherian, the ideal $\mathfrak a$ is finitely generated; choose generators $a_1,\dots,a_n$.
 
 ::: pf-proof
 
@@ -52,20 +52,20 @@ Every ideal in a Noetherian ring is finitely generated.
 ::: pf-step
 
 Define
-\[
+$$
 \pi:D^n\longrightarrow\mathfrak a,
 \qquad
 \pi(e_i)=a_i.
-\]
-Then, with \(K=\ker\pi\),
-\[
+$$
+Then, with $K=\ker\pi$,
+$$
 0\longrightarrow K\longrightarrow D^n\xrightarrow{\pi}\mathfrak a\longrightarrow0
-\]
+$$
 is exact.
 
 ::: pf-proof
 
-The chosen elements \(a_1,\dots,a_n\) generate \(\mathfrak a\), so \(\pi\) is surjective. Exactness at the other terms follows from the definition of \(K\).
+The chosen elements $a_1,\dots,a_n$ generate $\mathfrak a$, so $\pi$ is surjective. Exactness at the other terms follows from the definition of $K$.
 
 **(b).**
 
@@ -75,11 +75,11 @@ The chosen elements \(a_1,\dots,a_n\) generate \(\mathfrak a\), so \(\pi\) is su
 
 ::: pf-step
 
-As written, part (b) is false when \(\mathfrak a=0\). The intended statement therefore requires \(\mathfrak a\ne0\), which we assume from now on.
+As written, part (b) is false when $\mathfrak a=0$. The intended statement therefore requires $\mathfrak a\ne0$, which we assume from now on.
 
 ::: pf-proof
 
-The zero ideal is a projective \(D\)-module, but for every \(D\)-submodule \(\mathfrak c\subseteq F\) one has \(\mathfrak c\,0=0\ne D\).
+The zero ideal is a projective $D$-module, but for every $D$-submodule $\mathfrak c\subseteq F$ one has $\mathfrak c\,0=0\ne D$.
 
 :::
 
@@ -87,11 +87,11 @@ The zero ideal is a projective \(D\)-module, but for every \(D\)-submodule \(\ma
 
 ::: pf-step
 
-Because \(\mathfrak a\) is projective, the surjection \(\pi:D^n\to\mathfrak a\) splits. Choose a section \(s:\mathfrak a\to D^n\), and let \(\lambda_i:\mathfrak a\to D\) be the \(i\)-th coordinate of \(s\).
+Because $\mathfrak a$ is projective, the surjection $\pi:D^n\to\mathfrak a$ splits. Choose a section $s:\mathfrak a\to D^n$, and let $\lambda_i:\mathfrak a\to D$ be the $i$-th coordinate of $s$.
 
 ::: pf-proof
 
-Projectivity gives a homomorphism \(s\) satisfying \(\pi\circ s=\operatorname{id}_{\mathfrak a}\). Composing \(s\) with the coordinate projections of \(D^n\) gives the maps \(\lambda_i\).
+Projectivity gives a homomorphism $s$ satisfying $\pi\circ s=\operatorname{id}_{\mathfrak a}$. Composing $s$ with the coordinate projections of $D^n$ gives the maps $\lambda_i$.
 
 :::
 
@@ -99,14 +99,14 @@ Projectivity gives a homomorphism \(s\) satisfying \(\pi\circ s=\operatorname{id
 
 ::: {.pf-step #s5}
 
-For every \(x\in\mathfrak a\),
-\[
+For every $x\in\mathfrak a$,
+$$
 x=\sum_{i=1}^n \lambda_i(x)a_i.
-\]
+$$
 
 ::: pf-proof
 
-Write \(s(x)=(\lambda_1(x),\dots,\lambda_n(x))\). Applying \(\pi\) and using \(\pi s=\operatorname{id}_{\mathfrak a}\) gives the identity.
+Write $s(x)=(\lambda_1(x),\dots,\lambda_n(x))$. Applying $\pi$ and using $\pi s=\operatorname{id}_{\mathfrak a}$ gives the identity.
 
 :::
 
@@ -114,15 +114,15 @@ Write \(s(x)=(\lambda_1(x),\dots,\lambda_n(x))\). Applying \(\pi\) and using \(\
 
 ::: {.pf-step #s6}
 
-For each \(i\), there exists \(c_i\in F\) such that
-\[
+For each $i$, there exists $c_i\in F$ such that
+$$
 \lambda_i(x)=c_i x
 \qquad(x\in\mathfrak a).
-\]
+$$
 
 ::: pf-proof
 
-This is exactly the recalled description of \(D\)-module homomorphisms \(\mathfrak a\to D\).
+This is exactly the recalled description of $D$-module homomorphisms $\mathfrak a\to D$.
 
 :::
 
@@ -131,17 +131,17 @@ This is exactly the recalled description of \(D\)-module homomorphisms \(\mathfr
 ::: {.pf-step #s7}
 
 One has
-\[
+$$
 \sum_{i=1}^n c_i a_i=1.
-\]
+$$
 
 ::: pf-proof
 
 By steps [](#s5){.pf-ref} and [](#s6){.pf-ref},
-\[
+$$
 x=\left(\sum_{i=1}^n c_i a_i\right)x
-\]
-for every \(x\in\mathfrak a\). Since \(\mathfrak a\ne0\), choose \(0\ne x\in\mathfrak a\). The equality holds in the field of fractions \(F\), and cancellation by the nonzero element \(x\) gives the claimed identity.
+$$
+for every $x\in\mathfrak a$. Since $\mathfrak a\ne0$, choose $0\ne x\in\mathfrak a$. The equality holds in the field of fractions $F$, and cancellation by the nonzero element $x$ gives the claimed identity.
 
 :::
 
@@ -150,14 +150,14 @@ for every \(x\in\mathfrak a\). Since \(\mathfrak a\ne0\), choose \(0\ne x\in\mat
 ::: {.pf-step #s8}
 
 Let
-\[
+$$
 \mathfrak c=Dc_1+\cdots+Dc_n\subseteq F.
-\]
-Then \(\mathfrak c\) is finitely generated and \(\mathfrak c\mathfrak a\subseteq D\).
+$$
+Then $\mathfrak c$ is finitely generated and $\mathfrak c\mathfrak a\subseteq D$.
 
 ::: pf-proof
 
-Finite generation is immediate from the definition. For \(x\in\mathfrak a\), step [](#s6){.pf-ref} gives \(c_i x=\lambda_i(x)\in D\). Hence every finite \(D\)-linear combination of products of an element of \(\mathfrak c\) with an element of \(\mathfrak a\) lies in \(D\).
+Finite generation is immediate from the definition. For $x\in\mathfrak a$, step [](#s6){.pf-ref} gives $c_i x=\lambda_i(x)\in D$. Hence every finite $D$-linear combination of products of an element of $\mathfrak c$ with an element of $\mathfrak a$ lies in $D$.
 
 :::
 
@@ -165,15 +165,15 @@ Finite generation is immediate from the definition. For \(x\in\mathfrak a\), ste
 
 ::: pf-step
 
-In fact \(\mathfrak c\mathfrak a=D\).
+In fact $\mathfrak c\mathfrak a=D$.
 
 ::: pf-proof
 
 By step [](#s7){.pf-ref},
-\[
+$$
 1=\sum_{i=1}^n c_i a_i\in\mathfrak c\mathfrak a.
-\]
-By step [](#s8){.pf-ref}, \(\mathfrak c\mathfrak a\) is a \(D\)-submodule of \(D\). Since it contains \(1\), it contains every element of \(D\), so equality holds.
+$$
+By step [](#s8){.pf-ref}, $\mathfrak c\mathfrak a$ is a $D$-submodule of $D$. Since it contains $1$, it contains every element of $D$, so equality holds.
 
 :::
 

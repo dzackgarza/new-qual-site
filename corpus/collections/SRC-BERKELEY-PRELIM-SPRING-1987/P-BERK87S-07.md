@@ -27,13 +27,13 @@ audit:
 
 ::: {.problem}
 Let $p,q,r$ be continuous real-valued functions on $\RR$ with $p>0$. Prove that
-\[
+$$
 p(t)x''(t)+q(t)x'(t)+r(t)x(t)=0
-\]
+$$
 has exactly the same solutions as an equation of the form
-\[
+$$
 (a(t)x'(t))'+b(t)x(t)=0,
-\]
+$$
 where $a$ is continuously differentiable and $b$ is continuous.
 :::
 

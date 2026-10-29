@@ -28,19 +28,19 @@ Give an example of a continuous function of bounded variation that is not absolu
 ::: {.solution}
 The Cantor--Lebesgue function $F:[0,1]\to[0,1]$ is such an example.
 It is continuous and nondecreasing, hence has bounded variation, with
-\[
+$$
 V_0^1(F)=F(1)-F(0)=1.
-\]
+$$
 
 Let $C$ be the middle-thirds Cantor set.
 Then $m(C)=0$, while
-\[
+$$
 F(C)=[0,1].
-\]
+$$
 An absolutely continuous function maps Lebesgue-null sets to Lebesgue-null sets.
 Since
-\[
+$$
 m(F(C))=1,
-\]
+$$
 $F$ cannot be absolutely continuous.
 :::

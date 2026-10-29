@@ -28,13 +28,13 @@ audit:
 
 ::: {.problem}
 Let $(X_1,d_1)$ and $(X_2,d_2)$ be metric spaces, and let
-\[
+$$
 f:X_1\to X_2
-\]
+$$
 be a continuous surjection such that
-\[
+$$
 d_1(p,q)\le d_2(f(p),f(q))
-\]
+$$
 for every $p,q\in X_1$.
 
 1. If $X_1$ is complete, must $X_2$ be complete? Give a proof or counterexample.

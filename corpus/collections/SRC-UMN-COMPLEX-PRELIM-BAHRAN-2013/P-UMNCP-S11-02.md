@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Let \(h\) be holomorphic on a connected open set \(V\). Prove that if
-\[
+Let $h$ be holomorphic on a connected open set $V$. Prove that if
+$$
 h(z)^2=\overline{h(z)}
-\]
-for every \(z\in V\), then \(h\) is constant on \(V\). Find all possible values of such a function.
+$$
+for every $z\in V$, then $h$ is constant on $V$. Find all possible values of such a function.
 :::
 
 ::: {.solution}

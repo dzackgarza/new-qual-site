@@ -28,9 +28,9 @@ audit:
 
 ::: {.problem}
 Find the Jordan canonical form for the matrix
-\[
+$$
 \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{pmatrix}.
-\]
+$$
 
 (a) Over the complex numbers.
 
@@ -40,26 +40,26 @@ Find the Jordan canonical form for the matrix
 
 ::: {.solution}
 Let
-\[
+$$
 A=
 \begin{pmatrix}
 0&1&0\\
 0&0&1\\
 1&0&0
 \end{pmatrix}.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #char-and-min-poly}
-The characteristic and minimal polynomials of \(A\) are both
-\[
+The characteristic and minimal polynomials of $A$ are both
+$$
 t^3-1.
-\]
+$$
 
 ::: pf-proof
 A direct determinant computation gives
-\[
+$$
 \det(tI-A)
 =
 \det
@@ -69,104 +69,104 @@ t&-1&0\\
 -1&0&t
 \end{pmatrix}
 =t^3-1.
-\]
+$$
 Also
-\[
+$$
 A^3=I,
-\]
-so the minimal polynomial divides \(t^3-1\).
+$$
+so the minimal polynomial divides $t^3-1$.
 
-On the other hand, if \(e_1,e_2,e_3\) are the standard basis vectors, then
-\[
+On the other hand, if $e_1,e_2,e_3$ are the standard basis vectors, then
+$$
 Ae_1=e_3,
 \qquad
 A^2e_1=e_2.
-\]
+$$
 Thus
-\[
+$$
 e_1,Ae_1,A^2e_1
-\]
+$$
 is a basis.
-Hence \(e_1\) is a cyclic vector for \(A\), so the minimal polynomial has degree \(3\).
-Since it divides the degree-3 polynomial \(t^3-1\), it must equal
-\[
+Hence $e_1$ is a cyclic vector for $A$, so the minimal polynomial has degree $3$.
+Since it divides the degree-3 polynomial $t^3-1$, it must equal
+$$
 m_A(t)=t^3-1.
-\]
+$$
 :::
 
 :::
 
 ::: pf-step
-Over \(\CC\), the Jordan canonical form is
-\[
+Over $\CC$, the Jordan canonical form is
+$$
 \operatorname{diag}(1,\omega,\omega^2),
-\]
-where \(\omega=e^{2\pi i/3}\).
+$$
+where $\omega=e^{2\pi i/3}$.
 
 ::: pf-proof
-Over \(\CC\),
-\[
+Over $\CC$,
+$$
 t^3-1=(t-1)(t-\omega)(t-\omega^2),
-\]
+$$
 and the three roots are distinct.
-By step [](#char-and-min-poly){.pf-ref}, the minimal polynomial of \(A\) has no repeated factor over \(\CC\).
-Therefore \(A\) is diagonalizable.
+By step [](#char-and-min-poly){.pf-ref}, the minimal polynomial of $A$ has no repeated factor over $\CC$.
+Therefore $A$ is diagonalizable.
 Its eigenvalues are exactly the roots of its characteristic polynomial, namely
-\[
+$$
 1,\omega,\omega^2.
-\]
+$$
 Thus its Jordan form is
-\[
+$$
 \begin{pmatrix}
 1&0&0\\
 0&\omega&0\\
 0&0&\omega^2
 \end{pmatrix},
-\]
+$$
 up to reordering of the diagonal entries.
 :::
 
 :::
 
 ::: {.pf-step #char-and-min-poly-f3}
-Over \(\overline{\FF}_3\), the characteristic and minimal polynomials are
-\[
+Over $\overline{\FF}_3$, the characteristic and minimal polynomials are
+$$
 (t-1)^3.
-\]
+$$
 
 ::: pf-proof
-In characteristic \(3\),
-\[
+In characteristic $3$,
+$$
 t^3-1=(t-1)^3,
-\]
+$$
 because
-\[
+$$
 (t-1)^3=t^3-3t^2+3t-1=t^3-1.
-\]
-The cyclic-vector argument in step [](#char-and-min-poly){.pf-ref} works over every field, so the minimal polynomial still has degree \(3\).
-Hence over \(\overline{\FF}_3\),
-\[
+$$
+The cyclic-vector argument in step [](#char-and-min-poly){.pf-ref} works over every field, so the minimal polynomial still has degree $3$.
+Hence over $\overline{\FF}_3$,
+$$
 m_A(t)=(t-1)^3.
-\]
+$$
 :::
 
 :::
 
 ::: pf-step
-Over \(\overline{\FF}_3\), the Jordan canonical form is one size-3 block
-\[
+Over $\overline{\FF}_3$, the Jordan canonical form is one size-3 block
+$$
 J_3(1)=
 \begin{pmatrix}
 1&1&0\\
 0&1&1\\
 0&0&1
 \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
-By step [](#char-and-min-poly-f3){.pf-ref}, the only eigenvalue is \(1\), and the largest Jordan block has size equal to the exponent of \(t-1\) in the minimal polynomial, namely \(3\).
-Since the whole vector space has dimension \(3\), there must be exactly one Jordan block, of size \(3\).
-Thus the Jordan form is \(J_3(1)\).
+By step [](#char-and-min-poly-f3){.pf-ref}, the only eigenvalue is $1$, and the largest Jordan block has size equal to the exponent of $t-1$ in the minimal polynomial, namely $3$.
+Since the whole vector space has dimension $3$, there must be exactly one Jordan block, of size $3$.
+Thus the Jordan form is $J_3(1)$.
 :::
 
 :::

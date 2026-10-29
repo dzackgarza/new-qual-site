@@ -32,20 +32,20 @@ conformally equivalent.
 ::: pf-proof
 
 Suppose there were a conformal equivalence
-\[
+$$
 F:\CC\longrightarrow\DD.
-\]
+$$
 Then $F$ would be a bounded entire function, so Liouville's theorem would
 force $F$ to be constant, contradicting bijectivity.
 
 If instead a conformal equivalence were given in the other direction,
-\[
+$$
 G:\DD\longrightarrow\CC,
-\]
+$$
 then its holomorphic inverse
-\[
+$$
 G^{-1}:\CC\longrightarrow\DD
-\]
+$$
 would contradict the preceding argument. Hence no conformal equivalence
 exists.
 
@@ -63,13 +63,13 @@ $\CC$ or $\DD$.
 
 The Riemann sphere is compact. The complex plane is not compact, since the
 open cover
-\[
+$$
 \{B(0,n):n\ge1\}
-\]
+$$
 has no finite subcover. The unit disk is not compact either: the open cover
-\[
+$$
 \left\{B\!\left(0,1-\frac1n\right):n\ge2\right\}
-\]
+$$
 has no finite subcover.
 
 A conformal equivalence is, in particular, a homeomorphism. Compactness is

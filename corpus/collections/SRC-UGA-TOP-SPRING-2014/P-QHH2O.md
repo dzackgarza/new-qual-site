@@ -42,13 +42,13 @@ Give each sphere its standard CW structure with one $0$-cell and one top-dimensi
 ::: pf-proof
 
 Write
-\[
+$$
 S^n=e^0\cup e^n,
 \qquad
 S^m=e^0\cup e^m.
-\]
+$$
 The cellular chain complexes are
-\[
+$$
 C_k(S^n)
 \cong
 \begin{cases}
@@ -62,7 +62,7 @@ C_k(S^m)
 \ZZ,&k=0,m,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 All cellular boundary maps are zero.
 For dimensions greater than $1$ this follows because there are no cells in the preceding dimension; for $S^1$, the unique $1$-cell has both endpoints attached to the same $0$-cell, so its cellular boundary is also zero.
 
@@ -73,7 +73,7 @@ For dimensions greater than $1$ this follows because there are no cells in the p
 ::: {.pf-step #s2}
 
 The product CW structure on $S^n\times S^m$ has exactly the four product cells
-\[
+$$
 e^0\times e^0,
 \qquad
 e^n\times e^0,
@@ -81,9 +81,9 @@ e^n\times e^0,
 e^0\times e^m,
 \qquad
 e^n\times e^m,
-\]
+$$
 of dimensions
-\[
+$$
 0,
 \qquad
 n,
@@ -91,14 +91,14 @@ n,
 m,
 \qquad
 n+m.
-\]
+$$
 
 ::: pf-proof
 
 The product of CW complexes carries the product CW structure whose cells are products of cells, with
-\[
+$$
 \dim(e^p\times e^q)=p+q.
-\]
+$$
 Applying this to the two-cell structures in step [](#s1){.pf-ref} yields precisely the displayed cells.
 
 :::
@@ -112,24 +112,24 @@ Every cellular differential of $S^n\times S^m$ is zero.
 ::: pf-proof
 
 For product CW structures, cellular chains identify with the graded tensor product
-\[
+$$
 C_*(S^n\times S^m)
 \cong
 C_*(S^n)\otimes C_*(S^m),
-\]
+$$
 and the differential on a homogeneous tensor satisfies
-\[
+$$
 \partial(a\otimes b)
 =
 (\partial a)\otimes b
 +
 (-1)^{\deg a}a\otimes(\partial b).
-\]
+$$
 By step [](#s1){.pf-ref} both factor differentials vanish.
 Hence the right-hand side is zero for every product cell, so
-\[
+$$
 \partial=0
-\]
+$$
 on the entire cellular chain complex of $S^n\times S^m$.
 
 :::
@@ -139,21 +139,21 @@ on the entire cellular chain complex of $S^n\times S^m$.
 ::: {.pf-step #s4}
 
 If $n\ne m$, then
-\[
+$$
 H_k(S^n\times S^m;\ZZ)
 \cong
 \begin{cases}
 \ZZ,&k=0,n,m,n+m,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s2){.pf-ref} there is one cell in each of the four distinct dimensions
-\[
+$$
 0,n,m,n+m.
-\]
+$$
 By step [](#s3){.pf-ref} every differential is zero.
 Therefore cellular homology equals the cellular chain group in each degree, giving the displayed formula.
 
@@ -164,7 +164,7 @@ Therefore cellular homology equals the cellular chain group in each degree, givi
 ::: {.pf-step #s5}
 
 If $n=m\ge1$, then
-\[
+$$
 H_k(S^n\times S^n;\ZZ)
 \cong
 \begin{cases}
@@ -172,21 +172,21 @@ H_k(S^n\times S^n;\ZZ)
 \ZZ^2,&k=n,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 When $n=m$, the two middle product cells
-\[
+$$
 e^n\times e^0
 \qquad\text{and}\qquad
 e^0\times e^n
-\]
+$$
 have the same dimension $n$.
 Thus
-\[
+$$
 C_n(S^n\times S^n)\cong\ZZ^2,
-\]
+$$
 while $C_0$ and $C_{2n}$ are each $\ZZ$.
 Again step [](#s3){.pf-ref} makes all differentials zero.
 
@@ -197,11 +197,11 @@ Again step [](#s3){.pf-ref} makes all differentials zero.
 ::: pf-step
 
 Equivalently, for $n,m\ge1$ the answer can be written uniformly as
-\[
+$$
 H_k(S^n\times S^m;\ZZ)
 \cong
 \bigoplus_{j\in\{0,n,m,n+m\}\,:\,j=k}\ZZ,
-\]
+$$
 where repeated dimensions contribute separate summands.
 
 ::: pf-proof
@@ -219,27 +219,27 @@ If the notation is allowed to include $S^0$, the corresponding edge cases are ob
 ::: pf-proof
 
 For $m\ge1$,
-\[
+$$
 S^0\times S^m\cong S^m\amalg S^m,
-\]
+$$
 so
-\[
+$$
 H_k(S^0\times S^m;\ZZ)
 \cong
 \begin{cases}
 \ZZ^2,&k=0,m,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 The same holds with $n$ and $m$ interchanged.
 Finally,
-\[
+$$
 S^0\times S^0
-\]
+$$
 is a four-point discrete space, so its only nonzero homology group is
-\[
+$$
 H_0(S^0\times S^0;\ZZ)\cong\ZZ^4.
-\]
+$$
 
 :::
 

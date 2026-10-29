@@ -41,9 +41,9 @@ Convergence of $\sum \sqrt{a_i}$ implies $\sqrt{a_i}\to0$, hence $a_i\to0$. Ther
 
 ::: {.pf-step #s3}
 For every $i\ge N$,
-\[
+$$
 a_i\le \sqrt{a_i}.
-\]
+$$
 
 ::: pf-proof
 If $0<a_i<1$, then squaring decreases the number: $(\sqrt{a_i})^2=a_i\le\sqrt{a_i}$.
@@ -56,9 +56,9 @@ The series $\sum_{i=0}^\infty a_i$ converges.
 
 ::: pf-proof
 By step [](#s3){.pf-ref},
-\[
+$$
 0\le \sum_{i=N}^m a_i\le \sum_{i=N}^m \sqrt{a_i}
-\]
+$$
 for every $m\ge N$. The right-hand partial sums are bounded because $\sum \sqrt{a_i}$ converges. Hence the positive-term series $\sum_{i=N}^\infty a_i$ converges by comparison. Adding the finite initial sum $\sum_{i=0}^{N-1}a_i$ preserves convergence.
 :::
 

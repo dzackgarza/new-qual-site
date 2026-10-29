@@ -28,9 +28,9 @@ audit:
 ::: {.problem}
 Let $I\triangleleft\CC[x_1,\ldots,x_n]$ be an ideal such that $\sqrt I$ is maximal.
 Prove that
-\[
+$$
 \CC[x_1,\ldots,x_n]/I
-\]
+$$
 is finite-dimensional over $\CC$.
 :::
 

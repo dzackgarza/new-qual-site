@@ -47,22 +47,22 @@ Differentiate the mollified indicator.
 
 ::: pf-proof
 
-For every \(x\in\RR\),
-\[
+For every $x\in\RR$,
+$$
 h_\varepsilon(x)
 =\int_a^b\delta_\varepsilon(x-y)\,dy.
-\]
-With \(t=x-y\),
-\[
+$$
+With $t=x-y$,
+$$
 h_\varepsilon(x)
 =\int_{x-b}^{x-a}\delta_\varepsilon(t)\,dt.
-\]
-Since \(\delta_\varepsilon\) is smooth, the Fundamental Theorem of Calculus gives
-\[
+$$
+Since $\delta_\varepsilon$ is smooth, the Fundamental Theorem of Calculus gives
+$$
 \boxed{
 h_\varepsilon'(x)
 =\delta_\varepsilon(x-a)-\delta_\varepsilon(x-b).}
-\]
+$$
 
 :::
 
@@ -70,33 +70,33 @@ h_\varepsilon'(x)
 
 ::: pf-step
 
-Construct an absolutely continuous primitive of \(g\).
+Construct an absolutely continuous primitive of $g$.
 
 ::: pf-proof
 
 Define
-\[
+$$
 G(x):=\int_0^x g(t)\,dt.
-\]
-Because \(g\in L^1(\RR)\), \(G\) is absolutely continuous on every bounded interval and
-\[
+$$
+Because $g\in L^1(\RR)$, $G$ is absolutely continuous on every bounded interval and
+$$
 G'=g
-\]
-almost everywhere. Therefore for every \(h\in C_c^\infty(\RR)\), integration by parts for absolutely continuous functions gives
-\[
+$$
+almost everywhere. Therefore for every $h\in C_c^\infty(\RR)$, integration by parts for absolutely continuous functions gives
+$$
 \int_\RR G h'\,dm
 =-\int_\RR g h\,dm.
-\]
-Subtracting this from the assumed identity for \(f\), the continuous function
-\[
+$$
+Subtracting this from the assumed identity for $f$, the continuous function
+$$
 u:=f-G
-\]
+$$
 satisfies
-\[
+$$
 \int_\RR u h'\,dm=0
 \qquad\text{for every }h\in C_c^\infty(\RR).
-\]
-Thus the distributional derivative of \(u\) is zero.
+$$
+Thus the distributional derivative of $u$ is zero.
 
 :::
 
@@ -108,29 +108,29 @@ A continuous function with zero distributional derivative is constant.
 
 ::: pf-proof
 
-Let \(\delta_\varepsilon\) be the mollifier above. Since \(u'\) is the zero distribution,
-\[
+Let $\delta_\varepsilon$ be the mollifier above. Since $u'$ is the zero distribution,
+$$
 (u*\delta_\varepsilon)'=u'*\delta_\varepsilon=0.
-\]
-Hence \(u*\delta_\varepsilon\) is constant on \(\RR\) for every \(\varepsilon>0\).
+$$
+Hence $u*\delta_\varepsilon$ is constant on $\RR$ for every $\varepsilon>0$.
 
-Because \(u\) is continuous, mollification converges locally uniformly:
-\[
+Because $u$ is continuous, mollification converges locally uniformly:
+$$
 u*\delta_\varepsilon\longrightarrow u.
-\]
-A locally uniform limit of constant functions is constant, so there is \(C\in\RR\) such that
-\[
+$$
+A locally uniform limit of constant functions is constant, so there is $C\in\RR$ such that
+$$
 u(x)=C
 \qquad\text{for all }x.
-\]
+$$
 Therefore
-\[
+$$
 f(x)=C+G(x)=C+\int_0^x g(t)\,dt.
-\]
-Thus \(f\) is absolutely continuous and, by the Lebesgue Fundamental Theorem of Calculus,
-\[
+$$
+Thus $f$ is absolutely continuous and, by the Lebesgue Fundamental Theorem of Calculus,
+$$
 \boxed{f'(x)=g(x)\text{ for a.e. }x.}
-\]
+$$
 
 :::
 

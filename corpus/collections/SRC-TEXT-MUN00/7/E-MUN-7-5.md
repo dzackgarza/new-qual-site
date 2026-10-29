@@ -51,61 +51,61 @@ Justify your answers.
 :::
 
 ::: {.solution}
-(a) \(A\) is countable: a function \(\{0,1\}\to\ZZ_+\) is determined by the pair \((f(0),f(1))\in\ZZ_+^2\), and \(\ZZ_+^2\) is countable.
+(a) $A$ is countable: a function $\{0,1\}\to\ZZ_+$ is determined by the pair $(f(0),f(1))\in\ZZ_+^2$, and $\ZZ_+^2$ is countable.
 
-(b) Each \(B_n\) is countable because
-\[
+(b) Each $B_n$ is countable because
+$$
 B_n\cong(\ZZ_+)^n,
-\]
+$$
 a finite product of countable sets.
 
-(c) \(C=\bigcup_{n\ge1}B_n\) is countable as a countable union of countable sets.
+(c) $C=\bigcup_{n\ge1}B_n$ is countable as a countable union of countable sets.
 
-(d) \(D=(\ZZ_+)^\omega\) is uncountable. Indeed, the map
-\[
+(d) $D=(\ZZ_+)^\omega$ is uncountable. Indeed, the map
+$$
 E=\{0,1\}^\omega\hookrightarrow D,
 \qquad
 (x_n)\mapsto(x_n+1)
-\]
-is injective, and \(E\) is uncountable by the diagonal theorem.
+$$
+is injective, and $E$ is uncountable by the diagonal theorem.
 
-(e) \(E=\{0,1\}^\omega\) is uncountable by Theorem 7.7.
+(e) $E=\{0,1\}^\omega$ is uncountable by Theorem 7.7.
 
-(f) \(F\) is countable. Let \(F_N\) consist of functions that vanish for all \(n\ge N\). Such a function is determined by its first \(N-1\) binary values, so \(F_N\) is finite. Since
-\[
+(f) $F$ is countable. Let $F_N$ consist of functions that vanish for all $n\ge N$. Such a function is determined by its first $N-1$ binary values, so $F_N$ is finite. Since
+$$
 F=\bigcup_{N\ge1}F_N,
-\]
-\(F\) is countable.
+$$
+$F$ is countable.
 
-(g) \(G\) is countable. Let \(G_N\) consist of functions with \(f(n)=1\) for all \(n\ge N\). The first \(N-1\) values are arbitrary positive integers, so
-\[
+(g) $G$ is countable. Let $G_N$ consist of functions with $f(n)=1$ for all $n\ge N$. The first $N-1$ values are arbitrary positive integers, so
+$$
 G_N\cong(\ZZ_+)^{N-1}
-\]
-is countable. Hence \(G=\bigcup_NG_N\) is countable.
+$$
+is countable. Hence $G=\bigcup_NG_N$ is countable.
 
-(h) \(H\) is countable. For \(N,c\in\ZZ_+\), let \(H_{N,c}\) consist of functions with \(f(n)=c\) for all \(n\ge N\). Each \(H_{N,c}\cong(\ZZ_+)^{N-1}\) is countable, and
-\[
+(h) $H$ is countable. For $N,c\in\ZZ_+$, let $H_{N,c}$ consist of functions with $f(n)=c$ for all $n\ge N$. Each $H_{N,c}\cong(\ZZ_+)^{N-1}$ is countable, and
+$$
 H=\bigcup_{N,c\in\ZZ_+}H_{N,c}
-\]
+$$
 is a countable union of countable sets.
 
-(i) \(I\) is countable. The map
-\[
+(i) $I$ is countable. The map
+$$
 \{(m,n)\in\ZZ_+^2:m<n\}\to I,
 \qquad
 (m,n)\mapsto\{m,n\}
-\]
-is bijective, and the domain is a subset of the countable set \(\ZZ_+^2\).
+$$
+is bijective, and the domain is a subset of the countable set $\ZZ_+^2$.
 
-(j) \(J\) is countable. Let \(J_n\) denote the family of subsets having at most \(n\) elements. The map
-\[
+(j) $J$ is countable. Let $J_n$ denote the family of subsets having at most $n$ elements. The map
+$$
 (\ZZ_+)^n\to J_n,
 \qquad
 (a_1,\ldots,a_n)\mapsto\{a_1,\ldots,a_n\}
-\]
-is surjective after allowing repetitions (with the empty set handled separately), so \(J_n\) is countable. Since
-\[
+$$
+is surjective after allowing repetitions (with the empty set handled separately), so $J_n$ is countable. Since
+$$
 J=\{\varnothing\}\cup\bigcup_{n\ge1}J_n,
-\]
-\(J\) is countable.
+$$
+$J$ is countable.
 :::

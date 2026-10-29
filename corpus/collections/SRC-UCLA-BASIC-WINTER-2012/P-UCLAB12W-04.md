@@ -15,13 +15,13 @@ audit:
 
 ::: {.problem}
 Let $(a_n)$ be a sequence of nonnegative numbers and put
-\[
+$$
 s_n=\sum_{k=1}^n a_k.
-\]
+$$
 Suppose $s_n$ tends to $s\in\RR$ in the Cesàro sense:
-\[
+$$
 \lim_{n\to\infty}\frac{s_1+\cdots+s_n}{n}=s.
-\]
+$$
 Show that $\sum_{k=1}^\infty a_k$ converges and equals $s$.
 :::
 

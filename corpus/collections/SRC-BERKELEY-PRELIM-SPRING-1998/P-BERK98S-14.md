@@ -20,13 +20,13 @@ audit:
 
 ::: {.problem}
 Let $K\in\RR$ and let $y(t)>0$ be differentiable for $t\ge0$. Suppose
-\[
+$$
 y'(t)\le Ky(t)
-\]
+$$
 for $t\ge0$. Prove that
-\[
+$$
 y(t)\le e^{Kt}y(0)
-\]
+$$
 for every $t\ge0$.
 :::
 

@@ -22,9 +22,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_0^\infty\frac{dx}{1+x^5}.
-\]
+$$
 :::
 
 ::: {.solution}

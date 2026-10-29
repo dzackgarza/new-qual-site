@@ -29,16 +29,16 @@ audit:
 
 ::: {.problem}
 Let $R$ be the set of $2\times2$ matrices
-\[
+$$
 \begin{pmatrix}a&-b\\ b&a\end{pmatrix},
 \qquad a,b\in F,
-\]
+$$
 where $F$ is a field. Show that, with the usual matrix operations, $R$ is a commutative ring with identity.
 
 For which of
-\[
+$$
 F=\QQ,\qquad \CC,\qquad \ZZ_5,\qquad \ZZ_7
-\]
+$$
 is $R$ a field?
 :::
 

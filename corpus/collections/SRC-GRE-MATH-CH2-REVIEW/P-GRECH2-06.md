@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 If the function
 
-\[
+$$
 f(x) = \begin{cases} \frac{x^2 - 6x + 8}{x^3 - 2x^2 + 2x - 4} & \text{if } x \neq 2 \\ k & \text{if } x = 2 \end{cases}
-\]
+$$
 
 is continuous everywhere, what is the value of $k$?
 

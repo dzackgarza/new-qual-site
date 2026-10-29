@@ -15,13 +15,13 @@ audit:
 
 ::: {.problem}
 Consider the Taylor series
-\[
+$$
 \cos z=\sum_{k=0}^{\infty}\frac{(-1)^kz^{2k}}{(2k)!}.
-\]
+$$
 Show that at least one partial sum has a zero in the disk
-\[
+$$
 |z|<\frac{\pi}{2}.
-\]
+$$
 :::
 
 ::: {.solution}

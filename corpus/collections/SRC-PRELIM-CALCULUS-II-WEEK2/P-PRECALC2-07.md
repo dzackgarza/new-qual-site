@@ -17,32 +17,32 @@ What volume is created if the area between $f ( x ) = x$ and $g ( x ) = x ^ { 2 
 
 ::: {.solution}
 
-On \(0\le x\le1\),
-\[
+On $0\le x\le1$,
+$$
 x^2\le x,
-\]
-so the region lies between the upper curve \(y=x\) and the lower curve
-\(y=x^2\).
+$$
+so the region lies between the upper curve $y=x$ and the lower curve
+$y=x^2$.
 
-## Rotation about the \(x\)-axis
+## Rotation about the $x$-axis
 
 ::: pf
 
 ::: pf-step
 
-A vertical slice at \(x\) produces a washer with outer radius
-\[
+A vertical slice at $x$ produces a washer with outer radius
+$$
 \boxed{R(x)=x}
-\]
+$$
 and inner radius
-\[
+$$
 \boxed{r(x)=x^2}.
-\]
+$$
 
 
 ::: pf-proof
 
-Both curves lie above the \(x\)-axis. The upper curve is farther from the
+Both curves lie above the $x$-axis. The upper curve is farther from the
 axis and gives the outer radius; the lower curve gives the inner radius.
 
 :::
@@ -52,22 +52,22 @@ axis and gives the outer radius; the lower curve gives the inner radius.
 ::: pf-step
 
 The washer area is
-\[
+$$
 \boxed{
 A(x)
 =
 \pi(R(x)^2-r(x)^2)
 =
 \pi(x^2-x^4)}.
-\]
+$$
 
 
 ::: pf-proof
 
 Use the area formula
-\[
+$$
 \pi R^2-\pi r^2.
-\]
+$$
 
 :::
 
@@ -76,16 +76,16 @@ Use the area formula
 ::: pf-step
 
 Hence the volume is
-\[
+$$
 V_x
 =
 \pi\int_0^1(x^2-x^4)\,dx.
-\]
+$$
 
 
 ::: pf-proof
 
-Integrate the cross-sectional washer area from \(x=0\) to \(x=1\).
+Integrate the cross-sectional washer area from $x=0$ to $x=1$.
 
 :::
 
@@ -94,7 +94,7 @@ Integrate the cross-sectional washer area from \(x=0\) to \(x=1\).
 ::: pf-step
 
 Evaluating,
-\[
+$$
 \begin{aligned}
 V_x
 &=
@@ -110,7 +110,7 @@ V_x
 \frac13-\frac15
 \right).
 \end{aligned}
-\]
+$$
 
 
 ::: pf-proof
@@ -124,21 +124,21 @@ Integrate powers term by term.
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 \boxed{
 V_x=\frac{2\pi}{15}}.
-\]
+$$
 
 
 ::: pf-proof
 
-\[
+$$
 \frac13-\frac15
 =
 \frac{5-3}{15}
 =
 \frac2{15}.
-\]
+$$
 
 :::
 
@@ -146,23 +146,23 @@ V_x=\frac{2\pi}{15}}.
 
 ::: {.pf-step #s1-6}
 
-A vertical slice at \(x\) produces a cylindrical shell of radius
-\[
+A vertical slice at $x$ produces a cylindrical shell of radius
+$$
 \boxed{x}
-\]
+$$
 and height
-\[
+$$
 \boxed{x-x^2}.
-\]
+$$
 
 
 ::: pf-proof
 
-The distance from the slice to the \(y\)-axis is \(x\). The vertical height
+The distance from the slice to the $y$-axis is $x$. The vertical height
 of the region is upper minus lower:
-\[
+$$
 x-x^2.
-\]
+$$
 
 :::
 
@@ -171,21 +171,21 @@ x-x^2.
 ::: {.pf-step #s1-7}
 
 The shell volume element is
-\[
+$$
 \boxed{
 dV
 =
 2\pi x(x-x^2)\,dx}.
-\]
+$$
 
 
 ::: pf-proof
 
-A cylindrical shell of radius \(r\), height \(h\), and thickness \(dx\) has
+A cylindrical shell of radius $r$, height $h$, and thickness $dx$ has
 volume
-\[
+$$
 2\pi r h\,dx.
-\]
+$$
 Use step [](#s1-6){.pf-ref}.
 
 :::
@@ -195,11 +195,11 @@ Use step [](#s1-6){.pf-ref}.
 ::: pf-step
 
 Hence
-\[
+$$
 V_y
 =
 2\pi\int_0^1(x^2-x^3)\,dx.
-\]
+$$
 
 
 ::: pf-proof
@@ -213,7 +213,7 @@ Expand the integrand from step [](#s1-7){.pf-ref} and integrate across the regio
 ::: pf-step
 
 Evaluating,
-\[
+$$
 \begin{aligned}
 V_y
 &=
@@ -229,7 +229,7 @@ V_y
 \frac13-\frac14
 \right).
 \end{aligned}
-\]
+$$
 
 
 ::: pf-proof
@@ -243,15 +243,15 @@ Integrate powers term by term.
 ::: {.pf-step #s1-10}
 
 Therefore
-\[
+$$
 \boxed{
 V_y=\frac{\pi}{6}}.
-\]
+$$
 
 
 ::: pf-proof
 
-\[
+$$
 2\pi
 \left(
 \frac13-\frac14
@@ -260,7 +260,7 @@ V_y=\frac{\pi}{6}}.
 2\pi\cdot\frac1{12}
 =
 \frac{\pi}{6}.
-\]
+$$
 
 :::
 

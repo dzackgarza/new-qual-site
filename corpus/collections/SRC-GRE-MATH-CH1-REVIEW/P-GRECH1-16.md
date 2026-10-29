@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 Find the largest value of $b$ such that $1 + bi$ satisfies the equation
 
-\[
+$$
 x^3 - 3x^2 + 6x - 4 = 0
-\]
+$$
 
 given that every root of this equation has the form $1 + bi$ (where $b$ is real).
 

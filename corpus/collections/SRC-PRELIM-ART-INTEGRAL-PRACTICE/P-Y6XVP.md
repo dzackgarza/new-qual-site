@@ -22,14 +22,14 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int e^{x+e^x}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}
 Since $e^{x+e^x}=e^x e^{e^x}$, let $u=e^x$. Then $du=e^x\,dx$, so
-\[
+$$
 \boxed{\int e^{x+e^x}\,dx=e^{e^x}+C.}
-\]
+$$
 :::

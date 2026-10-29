@@ -31,7 +31,7 @@ List eight groups of order 36 and prove that they are not isomorphic.
 
 Write $C_m$ for the cyclic group of order $m$ and $D_{18}$ for the dihedral group of order $18$.
 Consider
-\[
+$$
 \begin{aligned}
 G_1&=C_2\times C_2\times C_3\times C_3,\\
 G_2&=C_2\times C_2\times C_9,\\
@@ -42,7 +42,7 @@ G_6&=S_3\times S_3,\\
 G_7&=C_2\times D_{18},\\
 G_8&=C_3\times A_4.
 \end{aligned}
-\]
+$$
 Each has order $36$.
 
 ::: pf
@@ -53,7 +53,7 @@ The four abelian groups $G_1,G_2,G_3,G_4$ are pairwise nonisomorphic.
 ::: pf-proof
 For a finite abelian group, the Sylow subgroups are characteristic and therefore are isomorphism invariants.
 Their Sylow $2$- and $3$-subgroups are
-\[
+$$
 \begin{array}{c|c|c}
  & \text{Sylow }2 & \text{Sylow }3\\ \hline
 G_1 & C_2\times C_2 & C_3\times C_3\\
@@ -61,7 +61,7 @@ G_2 & C_2\times C_2 & C_9\\
 G_3 & C_4 & C_3\times C_3\\
 G_4 & C_4 & C_9.
 \end{array}
-\]
+$$
 The four ordered pairs of Sylow-subgroup isomorphism types are distinct, so the four groups are pairwise nonisomorphic.
 :::
 
@@ -84,9 +84,9 @@ Among $G_5,G_6,G_7,G_8$, only $G_7$ has a cyclic Sylow $3$-subgroup.
 ::: pf-proof
 A Sylow $3$-subgroup of $D_{18}$ is its rotation subgroup $C_9$.
 Hence a Sylow $3$-subgroup of
-\[
+$$
 G_7=C_2\times D_{18}
-\]
+$$
 is $C_9$, which is cyclic.
 
 For $G_5=C_6\times S_3$, a Sylow $3$-subgroup is $C_3\times C_3$.
@@ -115,13 +115,13 @@ The remaining groups $G_5$ and $G_6$ are not isomorphic because their centers ar
 
 ::: pf-proof
 Since $Z(S_3)=1$,
-\[
+$$
 Z(G_6)=Z(S_3)\times Z(S_3)=1.
-\]
+$$
 On the other hand,
-\[
+$$
 Z(G_5)=Z(C_6)\times Z(S_3)=C_6\times1\cong C_6,
-\]
+$$
 which is nontrivial.
 Thus $G_5\not\cong G_6$.
 :::

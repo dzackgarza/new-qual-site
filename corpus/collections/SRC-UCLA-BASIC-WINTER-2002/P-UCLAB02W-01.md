@@ -17,11 +17,11 @@ audit:
 
 ::: {.problem}
 (a) State reasonably general conditions under which
-\[
+$$
 \frac{d}{dx}\int_a^b f(x,y)\,dy
 =
 \int_a^b \frac{\partial f}{\partial x}(x,y)\,dy
-\]
+$$
 is valid.
 
 (b) Prove the formula under the conditions you stated in part (a).

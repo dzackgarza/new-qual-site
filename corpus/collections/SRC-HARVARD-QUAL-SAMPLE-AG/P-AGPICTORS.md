@@ -30,68 +30,68 @@ Does there exist a *projective* variety with $\Pic(V) = \ZZ/3$?
 
 ::: {.solution}
 Let
-\[
+$$
 B=\PP^1_k,
 \qquad
 L=\mathcal O_{\PP^1}(3),
-\]
+$$
 let
-\[
+$$
 p:E=\operatorname{Tot}(L)\longrightarrow B
-\]
+$$
 be the total space of the line bundle, and let
-\[
+$$
 D\subseteq E
-\]
+$$
 be the zero section.  Put
-\[
+$$
 V=E\setminus D=L^\times.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #pic-b-pic-e-iso}
 Pullback along $p$ gives an isomorphism
-\[
+$$
 \operatorname{Pic}(B)
 \xrightarrow{\sim}
 \operatorname{Pic}(E).
-\]
+$$
 
 ::: pf-proof
 The total space of a vector bundle over the regular scheme $B=\PP^1$ is an affine-space bundle over $B$.  Homotopy invariance of the Picard group for regular schemes gives
-\[
+$$
 \operatorname{Pic}(B)
 \cong
 \operatorname{Pic}(E).
-\]
+$$
 
 The inverse is restriction to the zero section
-\[
+$$
 s:B\hookrightarrow E,
-\]
+$$
 because
-\[
+$$
 p\circ s=\operatorname{id}_B.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #zero-section-class}
 Under the identification in step [](#pic-b-pic-e-iso){.pf-ref}, the divisor class of the zero section $D$ corresponds to
-\[
+$$
 [L]=[\mathcal O_{\PP^1}(3)]
 \in\operatorname{Pic}(\PP^1)\cong\ZZ.
-\]
+$$
 
 ::: pf-proof
 The zero section is an effective Cartier divisor in the smooth surface $E$.  Its divisor line bundle satisfies
-\[
+$$
 \mathcal O_E(D)|_D
 \cong
 N_{D/E}.
-\]
+$$
 The normal bundle of the zero section in the total space of $L$ is canonically $L$ itself.  Since restriction $s^*$ is the inverse of the pullback isomorphism in step [](#pic-b-pic-e-iso){.pf-ref}, the class $[D]$ corresponds to $[L]$.
 :::
 
@@ -99,26 +99,26 @@ The normal bundle of the zero section in the total space of $L$ is canonically $
 
 ::: {.pf-step #localization-sequence}
 The localization sequence for the complement of $D$ gives
-\[
+$$
 \operatorname{Pic}(V)
 \cong
 \operatorname{Pic}(E)/\ZZ[D].
-\]
+$$
 
 ::: pf-proof
 Both $E$ and $V$ are regular integral schemes, so
-\[
+$$
 \operatorname{Pic}=\operatorname{Cl}
-\]
+$$
 on each.  Removing the prime divisor $D$ gives the divisor-class localization sequence
-\[
+$$
 \ZZ[D]
 \longrightarrow
 \operatorname{Cl}(E)
 \longrightarrow
 \operatorname{Cl}(V)
 \longrightarrow0.
-\]
+$$
 Replacing class groups by Picard groups gives the displayed quotient.
 :::
 
@@ -126,32 +126,32 @@ Replacing class groups by Picard groups gives the displayed quotient.
 
 ::: {.pf-step #pic-v-z3}
 Therefore
-\[
+$$
 \boxed{\operatorname{Pic}(V)\cong\ZZ/3\ZZ.}
-\]
+$$
 
 ::: pf-proof
 One has
-\[
+$$
 \operatorname{Pic}(\PP^1)
 \cong\ZZ,
 \qquad
 [\mathcal O(1)]\longmapsto1.
-\]
+$$
 By steps [](#pic-b-pic-e-iso){.pf-ref} and [](#zero-section-class){.pf-ref},
-\[
+$$
 \operatorname{Pic}(E)\cong\ZZ
-\]
+$$
 and the class $[D]$ corresponds to
-\[
+$$
 [\mathcal O(3)]=3.
-\]
+$$
 Hence step [](#localization-sequence){.pf-ref} gives
-\[
+$$
 \operatorname{Pic}(V)
 \cong
 \ZZ/3\ZZ.
-\]
+$$
 Thus such a variety does exist; $V=L^\times$ is a smooth quasi-projective surface.
 :::
 
@@ -162,13 +162,13 @@ No positive-dimensional projective variety can have Picard group $\ZZ/3\ZZ$.
 
 ::: pf-proof
 Suppose $X$ were a positive-dimensional projective variety with
-\[
+$$
 \operatorname{Pic}(X)\cong\ZZ/3\ZZ.
-\]
+$$
 Choose a very ample line bundle $A$ on $X$.  Every element of the Picard group is $3$-torsion, so
-\[
+$$
 A^{\otimes3}\cong\mathcal O_X.
-\]
+$$
 
 But a positive tensor power of a very ample line bundle is again very ample.  Thus $\mathcal O_X$ would be very ample.  The morphism defined by global sections of the trivial line bundle is constant on every geometrically connected component, so it cannot embed a positive-dimensional variety into projective space.  This is a contradiction.
 :::
@@ -186,12 +186,12 @@ A zero-dimensional variety is affine; if it is integral it is the spectrum of a 
 
 ::: {.pf-step #final-answer}
 Hence
-\[
+$$
 \boxed{
 \text{there are nonprojective varieties with }\operatorname{Pic}=\ZZ/3,
 \text{ but no projective varieties with that Picard group.}
 }
-\]
+$$
 
 ::: pf-proof
 Step [](#pic-v-z3){.pf-ref} supplies the example, and steps [](#no-positive-dim-projective){.pf-ref} and [](#no-zero-dim-projective){.pf-ref} rule out the projective case.

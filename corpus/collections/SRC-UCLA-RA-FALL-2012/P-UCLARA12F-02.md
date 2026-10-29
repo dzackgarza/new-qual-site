@@ -18,13 +18,13 @@ audit:
 
 ::: {.problem}
 Suppose $\mu$ is a Borel probability measure on the unit circle such that
-\[
+$$
 \lim_{n\to\infty}\int_{|z|=1} z^n\,d\mu(z)=0.
-\]
+$$
 For $f\in L^1(\mu)$, show that
-\[
+$$
 \lim_{n\to\infty}\int_{|z|=1} z^n f(z)\,d\mu(z)=0.
-\]
+$$
 :::
 
 ::: {.solution}

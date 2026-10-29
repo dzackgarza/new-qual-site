@@ -30,12 +30,12 @@ Justify your answer.
 
 ::: {.solution}
 No. In the lower-limit topology,
-\[
+$$
 (-\infty,0)=\bigcup_{n\ge1}[-n,0)
-\]
+$$
 and
-\[
+$$
 [0,\infty)=\bigcup_{n\ge1}[0,n)
-\]
+$$
 are both open. They are nonempty, disjoint, and their union is $\RR$. Hence they form a separation of $\RR_\ell$, so $\RR_\ell$ is disconnected.
 :::

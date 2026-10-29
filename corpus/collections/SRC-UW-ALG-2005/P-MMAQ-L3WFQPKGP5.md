@@ -30,24 +30,24 @@ If $G_0$ is of order $p^e$ for a prime $p$ and integer $e\geq 2$, prove that $G_
 ::: {.pf-step #s1}
 
 For every group $G$,
-\[
+$$
 \Omega(G)\cong G/Z(G).
-\]
+$$
 
 ::: pf-proof
 
 The homomorphism
-\[
+$$
 \rho:G\longrightarrow \operatorname{Aut}(G),
 \qquad
 \rho(g)(x)=gxg^{-1},
-\]
+$$
 has image $\Omega(G)$ by definition.
 Its kernel consists exactly of the elements commuting with every element of $G$, hence is $Z(G)$.
 The first isomorphism theorem gives
-\[
+$$
 \Omega(G)\cong G/Z(G).
-\]
+$$
 
 :::
 
@@ -56,9 +56,9 @@ The first isomorphism theorem gives
 ::: {.pf-step #s2}
 
 If $H$ is a finite $p$-group of order $p^m$, then either $\Omega(H)=1$ or
-\[
+$$
 |\Omega(H)|\le p^{m-2}.
-\]
+$$
 
 ::: pf-proof
 
@@ -74,18 +74,18 @@ It remains to exclude the case $|H/Z(H)|=p$. If $H/Z(H)$ were cyclic, say genera
 ::: {.pf-step #s3}
 
 For every $i\ge0$, either $G_i=1$ or
-\[
+$$
 |G_i|\le p^{e-2i}.
-\]
+$$
 
 ::: pf-proof
 
 We use induction on $i$. For $i=0$, $|G_0|=p^e$. Suppose the claim holds for $i$. If $G_i=1$, then $G_{i+1}=\Omega(G_i)=1$. Otherwise $G_i$ is a finite $p$-group of order at most $p^{e-2i}$. Applying step [](#s2){.pf-ref},
-\[
+$$
 G_{i+1}=1
 \quad\text{or}\quad
 |G_{i+1}|\le p^{e-2i-2}=p^{e-2(i+1)}.
-\]
+$$
 This proves the induction step.
 
 :::
@@ -99,9 +99,9 @@ The group $G_{e-1}$ is trivial.
 ::: pf-proof
 
 If $G_{e-1}$ were nontrivial, then step [](#s3){.pf-ref} would give
-\[
+$$
 1<|G_{e-1}|\le p^{e-2(e-1)}=p^{2-e}\le1,
-\]
+$$
 because $e\ge2$. This is impossible. Hence $G_{e-1}=1$.
 
 :::

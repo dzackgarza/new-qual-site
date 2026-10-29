@@ -32,36 +32,36 @@ Determine the Galois groups of the following polynomials over $\QQ$.
 ::: {.pf-step #s1}
 
 For
-\[
+$$
 f_1(x)=x^4+4x^2+1,
-\]
-let \(\alpha\) satisfy
-\[
+$$
+let $\alpha$ satisfy
+$$
 \alpha^2=-2+\sqrt3.
-\]
-Then the four roots of \(f_1\) are
-\[
+$$
+Then the four roots of $f_1$ are
+$$
 \pm\alpha,\qquad \pm\alpha^{-1}.
-\]
+$$
 
 ::: pf-proof
 
-Solving the quadratic equation in \(y=x^2\) gives
-\[
+Solving the quadratic equation in $y=x^2$ gives
+$$
 y^2+4y+1=0,
 \qquad
 y=-2\pm\sqrt3.
-\]
+$$
 Since
-\[
+$$
 (-2+\sqrt3)(-2-\sqrt3)=1,
-\]
+$$
 we have
-\[
+$$
 \alpha^{-2}=-2-\sqrt3.
-\]
-Thus the square roots of the two values of \(y\) are exactly
-\(\pm\alpha\) and \(\pm\alpha^{-1}\).
+$$
+Thus the square roots of the two values of $y$ are exactly
+$\pm\alpha$ and $\pm\alpha^{-1}$.
 
 :::
 
@@ -69,27 +69,27 @@ Thus the square roots of the two values of \(y\) are exactly
 
 ::: pf-step
 
-The splitting field of \(f_1\) is
-\[
+The splitting field of $f_1$ is
+$$
 K_1=\QQ(\alpha),
 \qquad [K_1:\QQ]=4.
-\]
+$$
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, \(\QQ(\alpha)\) already contains every root, so it is the splitting field. Moreover
-\[
+By step [](#s1){.pf-ref}, $\QQ(\alpha)$ already contains every root, so it is the splitting field. Moreover
+$$
 \sqrt3=\alpha^2+2\in\QQ(\alpha),
-\]
+$$
 so
-\[
+$$
 \QQ\subset \QQ(\sqrt3)\subset \QQ(\alpha).
-\]
-The first extension has degree \(2\). The element \(-2+\sqrt3\) is not a square in the real quadratic field \(\QQ(\sqrt3)\): under the identity real embedding it is negative, whereas a square is nonnegative. Hence
-\[
+$$
+The first extension has degree $2$. The element $-2+\sqrt3$ is not a square in the real quadratic field $\QQ(\sqrt3)$: under the identity real embedding it is negative, whereas a square is nonnegative. Hence
+$$
 [\QQ(\alpha):\QQ(\sqrt3)]=2.
-\]
-Therefore \([K_1:\QQ]=4\).
+$$
+Therefore $[K_1:\QQ]=4$.
 
 :::
 
@@ -98,24 +98,24 @@ Therefore \([K_1:\QQ]=4\).
 ::: pf-step
 
 We have
-\[
+$$
 \operatorname{Gal}(K_1/\QQ)\cong C_2\times C_2.
-\]
+$$
 
 ::: pf-proof
 
-Since \(K_1\) is the splitting field of a separable polynomial over \(\QQ\), it is Galois of degree \(4\). Two nontrivial automorphisms are determined by
-\[
+Since $K_1$ is the splitting field of a separable polynomial over $\QQ$, it is Galois of degree $4$. Two nontrivial automorphisms are determined by
+$$
 \tau(\alpha)=-\alpha,
 \qquad
 \sigma(\alpha)=\alpha^{-1}.
-\]
-Both have order \(2\), and they commute because
-\[
+$$
+Both have order $2$, and they commute because
+$$
 \sigma\tau(\alpha)=(-\alpha)^{-1}=-\alpha^{-1}
 =\tau\sigma(\alpha).
-\]
-Thus the Galois group contains three nontrivial involutions and is therefore the Klein four group, not the cyclic group of order \(4\).
+$$
+Thus the Galois group contains three nontrivial involutions and is therefore the Klein four group, not the cyclic group of order $4$.
 
 :::
 
@@ -124,25 +124,25 @@ Thus the Galois group contains three nontrivial involutions and is therefore the
 ::: pf-step
 
 For
-\[
+$$
 f_2(x)=x^4+4x^2-5,
-\]
+$$
 we have
-\[
+$$
 f_2(x)=(x^2-1)(x^2+5).
-\]
+$$
 Hence its splitting field is
-\[
+$$
 K_2=\QQ(\sqrt{-5}).
-\]
+$$
 
 ::: pf-proof
 
 The factorization is immediate:
-\[
+$$
 (x^2-1)(x^2+5)=x^4+4x^2-5.
-\]
-The roots are \(\pm1\) and \(\pm\sqrt{-5}\), so adjoining \(\sqrt{-5}\) gives all roots.
+$$
+The roots are $\pm1$ and $\pm\sqrt{-5}$, so adjoining $\sqrt{-5}$ gives all roots.
 
 :::
 
@@ -151,16 +151,16 @@ The roots are \(\pm1\) and \(\pm\sqrt{-5}\), so adjoining \(\sqrt{-5}\) gives al
 ::: pf-step
 
 Therefore
-\[
+$$
 \operatorname{Gal}(K_2/\QQ)\cong C_2.
-\]
+$$
 
 ::: pf-proof
 
-Since \(-5\) is not a square in \(\QQ\), \([K_2:\QQ]=2\). Every quadratic extension in characteristic \(0\) is Galois, with nontrivial automorphism
-\[
+Since $-5$ is not a square in $\QQ$, $[K_2:\QQ]=2$. Every quadratic extension in characteristic $0$ is Galois, with nontrivial automorphism
+$$
 \sqrt{-5}\longmapsto-\sqrt{-5}.
-\]
+$$
 
 :::
 

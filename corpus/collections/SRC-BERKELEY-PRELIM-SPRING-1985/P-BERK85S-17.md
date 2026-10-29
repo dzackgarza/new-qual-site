@@ -27,23 +27,23 @@ audit:
 
 ::: {.problem}
 Let $v_1,v_2:\RR\to\RR$ be continuous and satisfy
-\[
+$$
 v_1(x)<v_2(x)
-\]
+$$
 for every $x$. Let $\varphi_1,\varphi_2$ solve
-\[
+$$
 x'=v_1(x)
 \qquad\text{and}\qquad
 x'=v_2(x),
-\]
+$$
 respectively, on an interval $(a,b)$. If
-\[
+$$
 \varphi_1(t_0)=\varphi_2(t_0)
-\]
+$$
 for some $t_0\in(a,b)$, prove that
-\[
+$$
 \varphi_1(t)\le\varphi_2(t)
-\]
+$$
 for every $t\in(t_0,b)$.
 :::
 

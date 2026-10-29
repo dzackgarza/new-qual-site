@@ -20,18 +20,18 @@ audit:
 Prove or disprove each statement for arbitrary subsets $S,S'$ of a vector space $V$:
 
 (a)
-\[
+$$
 \operatorname{span}(S)\cap\operatorname{span}(S')
 =
 \operatorname{span}(S\cap S').
-\]
+$$
 
 (b)
-\[
+$$
 \operatorname{span}(S)+\operatorname{span}(S')
 =
 \operatorname{span}(S\cup S').
-\]
+$$
 :::
 
 ::: {.solution}
@@ -46,41 +46,41 @@ Statement (a) is false in general.
 ::: pf-proof
 
 Take
-\[
+$$
 V=\RR^2,
 \qquad
 S=\{(1,0)\},
 \qquad
 S'=\{(2,0)\}.
-\]
+$$
 Then
-\[
+$$
 S\cap S'=\varnothing,
-\]
+$$
 so
-\[
+$$
 \operatorname{span}(S\cap S')
 =
 \operatorname{span}(\varnothing)
 =
 \{0\}.
-\]
+$$
 On the other hand,
-\[
+$$
 \operatorname{span}(S)
 =
 \operatorname{span}(S')
 =
 \RR(1,0),
-\]
+$$
 so
-\[
+$$
 \operatorname{span}(S)\cap\operatorname{span}(S')
 =
 \RR(1,0)
 \ne
 \{0\}.
-\]
+$$
 Thus the claimed equality fails.
 
 :::
@@ -90,23 +90,23 @@ Thus the claimed equality fails.
 ::: {.pf-step #s1-2}
 
 One has
-\[
+$$
 \operatorname{span}(S)+\operatorname{span}(S')
 \subseteq
 \operatorname{span}(S\cup S').
-\]
+$$
 
 
 ::: pf-proof
 
 Every vector in $\operatorname{span}(S)$ is a finite linear combination of elements of $S$, hence of elements of $S\cup S'$. Thus
-\[
+$$
 \operatorname{span}(S)\subseteq\operatorname{span}(S\cup S').
-\]
+$$
 Similarly,
-\[
+$$
 \operatorname{span}(S')\subseteq\operatorname{span}(S\cup S').
-\]
+$$
 Since the right-hand side is a subspace, it contains every sum of one vector from each of these two subspaces.
 
 :::
@@ -116,31 +116,31 @@ Since the right-hand side is a subspace, it contains every sum of one vector fro
 ::: {.pf-step #s1-3}
 
 One has
-\[
+$$
 \operatorname{span}(S\cup S')
 \subseteq
 \operatorname{span}(S)+\operatorname{span}(S').
-\]
+$$
 
 
 ::: pf-proof
 
 The sum
-\[
+$$
 \operatorname{span}(S)+\operatorname{span}(S')
-\]
+$$
 is a subspace of $V$. It contains $S$, because
-\[
+$$
 S\subseteq\operatorname{span}(S),
-\]
+$$
 and it contains $S'$. Hence it contains
-\[
+$$
 S\cup S'.
-\]
+$$
 By minimality of the span, every subspace containing $S\cup S'$ must contain
-\[
+$$
 \operatorname{span}(S\cup S').
-\]
+$$
 
 :::
 
@@ -149,13 +149,13 @@ By minimality of the span, every subspace containing $S\cup S'$ must contain
 ::: {.pf-step #s1-4}
 
 Statement (b) is true:
-\[
+$$
 \boxed{
 \operatorname{span}(S)+\operatorname{span}(S')
 =
 \operatorname{span}(S\cup S')
 }.
-\]
+$$
 
 
 ::: pf-proof

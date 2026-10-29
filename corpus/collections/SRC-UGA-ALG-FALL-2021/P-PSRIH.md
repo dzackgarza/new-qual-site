@@ -49,9 +49,9 @@ As a set, the semidirect product consists of pairs from $C_7\times C_9$, so it h
 ::: {.pf-step #s3}
 
 A presentation for the required group is
-\[
+$$
 \boxed{G=\langle x,y\mid x^7=1,\ y^9=1,\ yxy^{-1}=x^2\rangle}.
-\]
+$$
 
 ::: pf-proof
 

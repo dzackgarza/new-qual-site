@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Suppose $(x_n)$ is a real sequence such that
-\[
+$$
 2x_{n+1}-x_n\longrightarrow x.
-\]
+$$
 Show that $x_n\to x$.
 :::
 

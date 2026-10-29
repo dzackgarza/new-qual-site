@@ -27,14 +27,14 @@ audit:
 
 ::: {.problem}
 Let $f: [1, \infty) \to \RR$ such that $f(1) = 1$ and
-\[
+$$
 f^{\prime}(x)= \frac{1} {x^{2}+f(x)^{2}}
-\]
+$$
 
 Show that the following limit exists and satisfies the equality
-\[
+$$
 \lim _{x \rightarrow \infty} f(x) \leq 1 + \frac \pi 4
-\]
+$$
 :::
 
 ::: {.solution}
@@ -83,7 +83,7 @@ $f(x) \le 1 + \pi/4$ for all $x \ge 1$.
 
 ::: pf-proof
 
-integrate step [](#s3){.pf-ref} from $1$ to $x$: \[ f(x) - f(1) = \int_1^x f'(t)\,dt \le \int_1^x \frac{dt}{1+t^2} = \arctan x - \frac{\pi}{4} < \frac{\pi}{2} - \frac{\pi}{4} = \frac{\pi}{4}. \] Adding $f(1) = 1$ gives the claim.
+integrate step [](#s3){.pf-ref} from $1$ to $x$: $$ f(x) - f(1) = \int_1^x f'(t)\,dt \le \int_1^x \frac{dt}{1+t^2} = \arctan x - \frac{\pi}{4} < \frac{\pi}{2} - \frac{\pi}{4} = \frac{\pi}{4}. $$ Adding $f(1) = 1$ gives the claim.
 
 :::
 

@@ -41,11 +41,11 @@ The element $n\cdot1_K$ is nonzero in $K$.
 ::: pf-proof
 
 Since $\operatorname{char}K=p$, one has
-\[
+$$
 n\cdot1_K=0
 \quad\Longleftrightarrow\quad
 p\mid n.
-\]
+$$
 The hypothesis $(p,n)=1$ excludes this, so $n\cdot1_K\ne0$.
 
 :::
@@ -72,14 +72,14 @@ If $nv\in K$, then $v\in K$.
 
 Interpreting multiplication by the integer $n$ as scalar multiplication by
 $n\cdot1_K$, we have
-\[
+$$
 nv=(n\cdot1_K)v.
-\]
+$$
 By hypothesis the left side belongs to $K$, and by step [](#s2){.pf-ref} the inverse
 $(n\cdot1_K)^{-1}$ belongs to $K$. Therefore
-\[
+$$
 v=(n\cdot1_K)^{-1}(nv)\in K.
-\]
+$$
 
 :::
 

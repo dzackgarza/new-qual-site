@@ -24,7 +24,7 @@ Choose a point $e^{i\theta_0}$ in the interior of the boundary arc, so $0<\theta
 On that interval the boundary values of $f$ are identically $0$, hence real. By the Schwarz reflection principle, $f$ extends holomorphically across a smaller subarc. The extended function vanishes on that subarc, which is now a set of interior points having accumulation points. By the identity theorem, the extension is identically zero in a neighborhood of the arc.
 
 Thus $f$ vanishes on a nonempty open subset of $\DD$. Applying the identity theorem once more on the connected disk yields
-\[
+$$
 f\equiv0\quad\text{on }\DD.
-\]
+$$
 :::

@@ -26,19 +26,19 @@ Compute $\Ext(\ZZ \oplus \ZZ/2 \oplus  \ZZ/3, \ZZ \oplus  \ZZ/4 \oplus  \ZZ/5)$.
 Facts Used:[^fix_facts_on_ext_oskar]
 
 - Since $\ZZ$ is a free $\ZZ\dash$module,
-\[
+$$
 \Ext(\ZZ, \ZZ/m) = 0
-\]
+$$
 
 - Using the usual projective resolution $0 \to \ZZ \to \ZZ \to \ZZ/n \to 0$, 
-\[
+$$
 \Ext(\ZZ/n, \ZZ) = \ZZ/n
-.\]
+.$$
 
-\[
+$$
 \Ext(\ZZ/n, \ZZ/m) = (\ZZ/m) / (n \cdot \ZZ/m) \cong (\ZZ/m) / (d \cdot \ZZ/m) && 
 \\ \text{where } d \definedas \gcd(m, n)
-.\]
+.$$
   General principle: $\Ext(\ZZ/n, G) = G/nG$ 
 
   By applying $\Hom_\ZZ(\wait, G)$ to the above resolution: 
@@ -74,22 +74,22 @@ Facts Used:[^fix_facts_on_ext_oskar]
   > [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMiwwLCIwIl0sWzAsMiwiRyJdLFsyLDIsIkciXSxbNCwyLCJcXEhvbV9cXFpaKFxcWlovbiwgRykiXSxbNCwwLCJHL25HIl0sWzYsMiwiMCJdLFs0LDNdLFszLDIsIiIsMix7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoiYm90dG9tIn19fV0sWzIsMSwiXFxjZG90IG4iLDJdLFsxLDQsIiIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6ImVwaSJ9fX1dLFs0LDBdLFs1LDNdXQ==)
 
 3. Contravariant Hom takes coproducts to products:
-\[
+$$
 \Ext(\bigoplus_{i\in I} A_i, \prod_{k\in K} B_k) = \prod_{i\in I} \prod_{k\in K} \Ext(A_i, B_k)
-.\]
+.$$
 
 :::
 
 
 Write 
-\[
+$$
 A_\wait &\definedas A_1 \oplus A_2 \oplus A_3 \definedas \ZZ \oplus  \ZZ/2 \oplus  \ZZ/3 \\
 B_\wait &\definedas B_1 \oplus B_2 \oplus B_3 \definedas \ZZ \oplus \ZZ/4 \oplus  \ZZ/5
-.\]
+.$$
 
-We can then define the bicomplex \[
+We can then define the bicomplex $$
 C_{\wait, \wait} \definedas \Ext(A_\wait, B_\wait) = \bigoplus_{0 \leq i, k \leq 3} \Ext(A_i, B_k)
-,\]
+,$$
 i.e. $C_{i, k} \definedas \Ext(A_i, B_k)$, which can be organized into the following diagram where we take the Ext at each position and sum them all together:
 
 \begin{tikzcd}

@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 I=\int_0^{1/2}\frac{\sin x}{x}\,dx
-\]
+$$
 to an accuracy of two decimal places: find $I^*$ such that
-\[
+$$
 |I-I^*|<0.005.
-\]
+$$
 :::
 
 ::: {.solution}

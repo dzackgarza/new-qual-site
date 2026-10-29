@@ -23,10 +23,10 @@ audit:
 
 ::: {.problem}
 Prove that
-\[
+$$
 \int_{-\infty}^{\infty}
 \frac{e^{-(t-i\gamma)^2/2}}{\sqrt{2\pi}}\,dt
-\]
+$$
 is independent of the real parameter $\gamma$.
 :::
 

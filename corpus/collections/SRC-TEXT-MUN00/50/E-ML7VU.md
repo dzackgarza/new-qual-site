@@ -29,35 +29,35 @@ Show that the topologist's sine curve has dimension 1.
 
 ::: {.solution}
 Let
-\[
+$$
 T=\{(x,\sin(1/x)):0<x\le1\}\cup(\{0\}\times[-1,1])
-\]
+$$
 be the topologist's sine curve.
 
-For \(n\ge1\), put
-\[
+For $n\ge1$, put
+$$
 A_n=\{(x,\sin(1/x)):1/(n+1)\le x\le1/n\},
-\]
+$$
 and let
-\[
+$$
 V=\{0\}\times[-1,1].
-\]
-Each \(A_n\) is the continuous image of a compact interval under the embedding
-\[
+$$
+Each $A_n$ is the continuous image of a compact interval under the embedding
+$$
 x\longmapsto (x,\sin(1/x)),
-\]
-so it is an arc, hence homeomorphic to a closed interval and therefore has covering dimension \(1\). The set \(V\) is also an arc, so \(\dim V=1\). Each \(A_n\) and \(V\) is compact, hence closed in the metric space \(T\), and
-\[
+$$
+so it is an arc, hence homeomorphic to a closed interval and therefore has covering dimension $1$. The set $V$ is also an arc, so $\dim V=1$. Each $A_n$ and $V$ is compact, hence closed in the metric space $T$, and
+$$
 T=V\cup\bigcup_{n\ge1}A_n.
-\]
+$$
 
-By the countable closed-sum theorem for covering dimension, if a metrizable space is a countable union of closed subspaces of covering dimension at most \(m\), then its covering dimension is at most \(m\). Hence
-\[
+By the countable closed-sum theorem for covering dimension, if a metrizable space is a countable union of closed subspaces of covering dimension at most $m$, then its covering dimension is at most $m$. Hence
+$$
 \dim T\le1.
-\]
+$$
 
-On the other hand, \(T\) is connected, is \(T_1\) (indeed metric), and contains more than one point. By [[E-KWBI9]], every such space has dimension at least \(1\). Thus
-\[
+On the other hand, $T$ is connected, is $T_1$ (indeed metric), and contains more than one point. By [[E-KWBI9]], every such space has dimension at least $1$. Thus
+$$
 \boxed{\dim T=1}.
-\]
+$$
 :::

@@ -44,80 +44,80 @@ Find the boundary and the interior of each of the following subsets of $\RR^2$.
 All interiors and boundaries are taken in $\RR^2$.
 
 (a) For the $x$-axis
-\[
+$$
 A=\{(x,y):y=0\},
-\]
+$$
 we have
-\[
+$$
 \operatorname{Int}A=\varnothing,\qquad \operatorname{Bd}A=A.
-\]
+$$
 
 (b) For
-\[
+$$
 B=\{(x,y):x>0,\ y\ne0\},
-\]
+$$
 the set itself is open, so $\operatorname{Int}B=B$. Its closure is the closed right half-plane $\{x\ge0\}$, since every point $(x,y)$ with $x\ge0$ is the limit of the points $(x+\frac1n,\,y+\frac1n)$ of $B$ for all large $n$ with $y+\frac1n\ne0$. Therefore
-\[
+$$
 \operatorname{Bd}B=\{x=0\}\cup\{(x,0):x>0\}.
-\]
+$$
 
 (c) Since
-\[
+$$
 C=A\cup B=\{x>0\}\cup\{y=0\},
-\]
+$$
 we have
-\[
+$$
 \operatorname{Int}C=\{x>0\},
-\]
+$$
 and
-\[
+$$
 \overline C=\{x\ge0\}\cup\{y=0\}.
-\]
+$$
 Hence
-\[
+$$
 \operatorname{Bd}C=\{x=0\}\cup\{(x,0):x\le0\}.
-\]
+$$
 
 (d) The set
-\[
+$$
 D=\QQ\times\RR
-\]
+$$
 is dense in $\RR^2$ because every open rectangle contains a rational first coordinate. Its interior is empty because every open rectangle also contains irrational first coordinates. Thus
-\[
+$$
 \operatorname{Int}D=\varnothing,\qquad \operatorname{Bd}D=\RR^2.
-\]
+$$
 
 (e) For
-\[
+$$
 E=\{(x,y):0<x^2+y^2\le1\},
-\]
+$$
 we have
-\[
+$$
 \operatorname{Int}E=\{0<x^2+y^2<1\},
-\]
+$$
 while
-\[
+$$
 \overline E=\{x^2+y^2\le1\}.
-\]
+$$
 Therefore
-\[
+$$
 \operatorname{Bd}E=\{(0,0)\}\cup\{x^2+y^2=1\}.
-\]
+$$
 
 (f) Let
-\[
+$$
 F=\{(x,y):x\ne0,\ y\le1/x\}.
-\]
+$$
 The function $g(x,y)=y-1/x$ is continuous on the open set $\{x\ne0\}$. Hence $\{x\ne0,\ y<1/x\}$ is open, and each point $(x,1/x)$ is the limit of the points $(x,1/x+\frac1n)\notin F$, so
-\[
+$$
 \operatorname{Int}F=\{x\ne0,\ y<1/x\}.
-\]
+$$
 Every point $(0,y_0)$ is the limit of the points $(\frac1n,y_0)$, which lie in $F$ for every $n\ge y_0$. A point with $x\ne0$ and $y>1/x$ lies in the open set $\{x\ne0,\ g>0\}$, which misses $F$. Thus
-\[
+$$
 \overline F=F\cup(\{0\}\times\RR),
-\]
+$$
 and
-\[
+$$
 \operatorname{Bd}F=\{(x,1/x):x\ne0\}\cup(\{0\}\times\RR).
-\]
+$$
 :::

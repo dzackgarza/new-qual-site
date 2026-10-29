@@ -38,19 +38,19 @@ Find the Jordan canonical form of $A$.
 ::: {.pf-step #s1}
 
 The matrix $A$ is annihilated by
-\[
+$$
 p(x)=x^3(x^2-2x-1)
 =x^3(x-(1+\sqrt2))(x-(1-\sqrt2)).
-\]
+$$
 
 ::: pf-proof
 
 Rearranging the given identity gives
-\[
+$$
 A^5-2A^4-A^3
 =A^3(A^2-2A-I)
 =0.
-\]
+$$
 
 :::
 
@@ -59,20 +59,20 @@ A^5-2A^4-A^3
 ::: {.pf-step #s2}
 
 Every eigenvalue of $A$ belongs to
-\[
+$$
 \{0,1+\sqrt2,1-\sqrt2\}.
-\]
+$$
 Moreover, every Jordan block for either nonzero eigenvalue has size $1$.
 
 ::: pf-proof
 
 The minimal polynomial of $A$ divides the polynomial $p$ from step [](#s1){.pf-ref}, so every eigenvalue is a root of $p$.
 The factors
-\[
+$$
 x-(1+\sqrt2)
 \quad\text{and}\quad
 x-(1-\sqrt2)
-\]
+$$
 occur only to the first power in $p$.
 Hence they occur to exponent at most $1$ in the minimal polynomial, which means that the Jordan blocks for those eigenvalues all have size $1$.
 
@@ -87,13 +87,13 @@ The eigenvalue $0$ has exactly two Jordan blocks.
 ::: pf-proof
 
 Since
-\[
+$$
 \operatorname{rank}A=5,
-\]
+$$
 rank-nullity gives
-\[
+$$
 \dim\ker A=7-5=2.
-\]
+$$
 The dimension of $\ker A$ equals the geometric multiplicity of the eigenvalue $0$, which is exactly the number of Jordan blocks for $0$.
 
 :::
@@ -108,21 +108,21 @@ The eigenvalues $1+\sqrt2$ and $1-\sqrt2$ each have algebraic multiplicity $2$.
 
 Let $r$ and $s$ be the algebraic multiplicities of $1+\sqrt2$ and $1-\sqrt2$, respectively.
 The trace is the sum of the eigenvalues with algebraic multiplicity, so
-\[
+$$
 4=r(1+\sqrt2)+s(1-\sqrt2).
-\]
+$$
 Equating rational and irrational parts gives
-\[
+$$
 r-s=0
-\]
+$$
 and
-\[
+$$
 r+s=4.
-\]
+$$
 Therefore
-\[
+$$
 r=s=2.
-\]
+$$
 
 :::
 
@@ -136,13 +136,13 @@ The eigenvalue $0$ has algebraic multiplicity $3$.
 
 The total algebraic multiplicity is $7$.
 By step [](#s4){.pf-ref}, the two nonzero eigenvalues contribute
-\[
+$$
 2+2=4.
-\]
+$$
 Hence the remaining algebraic multiplicity is
-\[
+$$
 7-4=3.
-\]
+$$
 
 :::
 
@@ -165,12 +165,12 @@ The only two positive integers summing to $3$ are $2$ and $1$.
 ::: pf-step
 
 The Jordan canonical form of $A$ is
-\[
+$$
 J_2(0)
 \oplus J_1(0)
 \oplus J_1(1+\sqrt2)^{\oplus2}
 \oplus J_1(1-\sqrt2)^{\oplus2}.
-\]
+$$
 
 ::: pf-proof
 

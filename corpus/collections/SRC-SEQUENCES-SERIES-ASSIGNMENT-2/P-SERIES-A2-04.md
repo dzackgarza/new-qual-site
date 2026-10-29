@@ -21,17 +21,17 @@ review: draft
 
 ## Part (a)
 
-Assume \((a_n)\) is bounded and every convergent subsequence converges to
-the same limit \(a\).
+Assume $(a_n)$ is bounded and every convergent subsequence converges to
+the same limit $a$.
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 Suppose, toward a contradiction, that
-\[
+$$
 a_n\not\to a.
-\]
+$$
 
 
 ::: pf-proof
@@ -45,19 +45,19 @@ This is the negation of the desired conclusion.
 ::: {.pf-step #s1-2}
 
 Then there exists
-\[
+$$
 \varepsilon>0
-\]
-such that for every \(N\), there is some \(n\ge N\) with
-\[
+$$
+such that for every $N$, there is some $n\ge N$ with
+$$
 \boxed{|a_n-a|\ge\varepsilon}.
-\]
+$$
 
 
 ::: pf-proof
 
-This is the negation of the \(\varepsilon\)-\(N\) definition of convergence
-to \(a\).
+This is the negation of the $\varepsilon$-$N$ definition of convergence
+to $a$.
 
 :::
 
@@ -66,21 +66,21 @@ to \(a\).
 ::: {.pf-step #s1-3}
 
 Therefore one can choose a subsequence
-\[
+$$
 (a_{n_k})
-\]
+$$
 such that
-\[
+$$
 \boxed{
 |a_{n_k}-a|\ge\varepsilon}
-\]
-for every \(k\).
+$$
+for every $k$.
 
 
 ::: pf-proof
 
-Choose \(n_1\) using step [](#s1-2){.pf-ref} with \(N=1\). After choosing \(n_k\), apply
-step [](#s1-2){.pf-ref} with \(N=n_k+1\) to choose \(n_{k+1}>n_k\) satisfying the same
+Choose $n_1$ using step [](#s1-2){.pf-ref} with $N=1$. After choosing $n_k$, apply
+step [](#s1-2){.pf-ref} with $N=n_k+1$ to choose $n_{k+1}>n_k$ satisfying the same
 inequality.
 
 :::
@@ -89,7 +89,7 @@ inequality.
 
 ::: pf-step
 
-The subsequence \((a_{n_k})\) is bounded.
+The subsequence $(a_{n_k})$ is bounded.
 
 
 ::: pf-proof
@@ -102,12 +102,12 @@ Every subsequence of a bounded sequence is bounded.
 
 ::: pf-step
 
-By Bolzano--Weierstrass, \((a_{n_k})\) has a convergent
+By Bolzano--Weierstrass, $(a_{n_k})$ has a convergent
 subsubsequence
-\[
+$$
 a_{n_{k_j}}\to b
-\]
-for some \(b\in\RR\).
+$$
+for some $b\in\RR$.
 
 
 ::: pf-proof
@@ -122,15 +122,15 @@ subsequence.
 ::: {.pf-step #s1-6}
 
 By the hypothesis of part (a),
-\[
+$$
 \boxed{b=a}.
-\]
+$$
 
 
 ::: pf-proof
 
-The sequence \((a_{n_{k_j}})\) is a convergent subsequence of the original
-sequence, and every such subsequence is assumed to converge to \(a\).
+The sequence $(a_{n_{k_j}})$ is a convergent subsequence of the original
+sequence, and every such subsequence is assumed to converge to $a$.
 
 :::
 
@@ -139,22 +139,22 @@ sequence, and every such subsequence is assumed to converge to \(a\).
 ::: {.pf-step #s1-7}
 
 On the other hand,
-\[
+$$
 \boxed{|b-a|\ge\varepsilon}.
-\]
+$$
 
 
 ::: pf-proof
 
 Every term of the convergent subsubsequence satisfies
-\[
+$$
 |a_{n_{k_j}}-a|\ge\varepsilon
-\]
+$$
 by step [](#s1-3){.pf-ref}. Passing to the limit and using continuity of
-\(x\mapsto|x-a|\) gives
-\[
+$x\mapsto|x-a|$ gives
+$$
 |b-a|\ge\varepsilon.
-\]
+$$
 
 :::
 
@@ -167,14 +167,14 @@ Steps [](#s1-6){.pf-ref} and [](#s1-7){.pf-ref} contradict one another.
 
 ::: pf-proof
 
-If \(b=a\), then
-\[
+If $b=a$, then
+$$
 |b-a|=0,
-\]
+$$
 but step [](#s1-7){.pf-ref} gives
-\[
+$$
 |b-a|\ge\varepsilon>0.
-\]
+$$
 
 :::
 
@@ -183,9 +183,9 @@ but step [](#s1-7){.pf-ref} gives
 ::: {.pf-step #s1-9}
 
 Therefore
-\[
+$$
 \boxed{a_n\to a}.
-\]
+$$
 
 
 ::: pf-proof
@@ -199,9 +199,9 @@ The assumption of nonconvergence in step [](#s1-1){.pf-ref} led to a contradicti
 ::: {.pf-step #s1-10}
 
 Suppose, toward a contradiction, that
-\[
+$$
 a_n\not\to a.
-\]
+$$
 
 
 ::: pf-proof
@@ -215,15 +215,15 @@ Again this is the negation of the desired conclusion.
 ::: {.pf-step #s1-11}
 
 Then there are
-\[
+$$
 \varepsilon>0
-\]
-and a subsequence \((a_{n_k})\) such that
-\[
+$$
+and a subsequence $(a_{n_k})$ such that
+$$
 \boxed{
 |a_{n_k}-a|\ge\varepsilon}
-\]
-for every \(k\).
+$$
+for every $k$.
 
 
 ::: pf-proof
@@ -236,11 +236,11 @@ Repeat the construction in steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref}.
 
 ::: pf-step
 
-By the hypothesis of part (b), the subsequence \((a_{n_k})\) has a
+By the hypothesis of part (b), the subsequence $(a_{n_k})$ has a
 further subsequence
-\[
+$$
 a_{n_{k_j}}\to a.
-\]
+$$
 
 
 ::: pf-proof
@@ -255,19 +255,19 @@ step [](#s1-11){.pf-ref}.
 ::: pf-step
 
 Since
-\[
+$$
 a_{n_{k_j}}\to a,
-\]
-there exists \(J\) such that for all \(j\ge J\),
-\[
+$$
+there exists $J$ such that for all $j\ge J$,
+$$
 |a_{n_{k_j}}-a|<\varepsilon.
-\]
+$$
 
 
 ::: pf-proof
 
 Apply the definition of convergence with the same positive
-\(\varepsilon\) from step [](#s1-11){.pf-ref}.
+$\varepsilon$ from step [](#s1-11){.pf-ref}.
 
 :::
 
@@ -276,15 +276,15 @@ Apply the definition of convergence with the same positive
 ::: {.pf-step #s1-14}
 
 This contradicts
-\[
+$$
 |a_{n_{k_j}}-a|\ge\varepsilon
-\]
+$$
 from step [](#s1-11){.pf-ref}.
 
 
 ::: pf-proof
 
-The further subsequence is still a subsequence of \((a_{n_k})\), so every
+The further subsequence is still a subsequence of $(a_{n_k})$, so every
 one of its terms satisfies the lower bound from step [](#s1-11){.pf-ref}.
 
 :::
@@ -294,9 +294,9 @@ one of its terms satisfies the lower bound from step [](#s1-11){.pf-ref}.
 ::: {.pf-step #s1-15}
 
 Therefore
-\[
+$$
 \boxed{a_n\to a}.
-\]
+$$
 
 
 ::: pf-proof

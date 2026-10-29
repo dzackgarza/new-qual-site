@@ -32,45 +32,45 @@ Prove carefully that $$G \cong \langle a, b \mid a^2 = e,\; ab = b^{-1}a \rangle
 
 ::: {.solution}
 Let
-\[
+$$
 H=\langle a,b\mid a^2=e,\ ab=b^{-1}a\rangle.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 The assignments
-\[
+$$
 a\longmapsto f,
 \qquad
 b\longmapsto g
-\]
-define a surjective homomorphism \(\Phi:H\to G\).
+$$
+define a surjective homomorphism $\Phi:H\to G$.
 
 ::: pf-proof
 
-The generators \(f,g\) satisfy the defining relations of \(H\). First,
-\[
+The generators $f,g$ satisfy the defining relations of $H$. First,
+$$
 f^2(x)=x,
-\]
-so \(f^2=e\). Also
-\[
+$$
+so $f^2=e$. Also
+$$
 (fg)(x)=f(x+1)=-x-1
-\]
+$$
 and
-\[
+$$
 (g^{-1}f)(x)=g^{-1}(-x)=-x-1.
-\]
+$$
 Hence
-\[
+$$
 fg=g^{-1}f.
-\]
-Therefore the presentation of \(H\) gives a homomorphism
-\[
+$$
+Therefore the presentation of $H$ gives a homomorphism
+$$
 \Phi:H\to G
-\]
-with \(\Phi(a)=f\) and \(\Phi(b)=g\). Since \(G=\langle f,g\rangle\), this homomorphism is surjective.
+$$
+with $\Phi(a)=f$ and $\Phi(b)=g$. Since $G=\langle f,g\rangle$, this homomorphism is surjective.
 
 :::
 
@@ -78,27 +78,27 @@ with \(\Phi(a)=f\) and \(\Phi(b)=g\). Since \(G=\langle f,g\rangle\), this homom
 
 ::: {.pf-step #s2}
 
-Every element of \(H\) has the form
-\[
+Every element of $H$ has the form
+$$
 b^n
 \qquad\text{or}\qquad
 b^n a
-\]
-for some \(n\in\ZZ\).
+$$
+for some $n\in\ZZ$.
 
 ::: pf-proof
 
 From
-\[
+$$
 ab=b^{-1}a
-\]
+$$
 we obtain, by induction,
-\[
+$$
 ab^n=b^{-n}a
 \qquad(n\in\ZZ).
-\]
-Thus any occurrence of \(a\) can be moved to the far right of a word, at the cost of inverting the exponent of the adjacent power of \(b\). After doing this throughout the word, all copies of \(a\) occur at the far right.
-The relation \(a^2=e\) then reduces their number modulo \(2\). Hence every element has one of the stated forms.
+$$
+Thus any occurrence of $a$ can be moved to the far right of a word, at the cost of inverting the exponent of the adjacent power of $b$. After doing this throughout the word, all copies of $a$ occur at the far right.
+The relation $a^2=e$ then reduces their number modulo $2$. Hence every element has one of the stated forms.
 
 :::
 
@@ -106,29 +106,29 @@ The relation \(a^2=e\) then reduces their number modulo \(2\). Hence every eleme
 
 ::: {.pf-step #s3}
 
-The homomorphism \(\Phi\) is injective.
+The homomorphism $\Phi$ is injective.
 
 ::: pf-proof
 
-For \(n\in\ZZ\),
-\[
+For $n\in\ZZ$,
+$$
 \Phi(b^n)=g^n,
 \qquad
 \Phi(b^n a)=g^n f.
-\]
+$$
 These transformations are
-\[
+$$
 g^n(x)=x+n,
 \qquad
 (g^n f)(x)=-x+n.
-\]
-If \(g^n\) is the identity permutation of \(\RR\), then evaluating at \(0\) gives \(n=0\). On the other hand, \(g^n f\) is never the identity, since it has slope \(-1\); explicitly, equality \(-x+n=x\) for every \(x\) is impossible.
+$$
+If $g^n$ is the identity permutation of $\RR$, then evaluating at $0$ gives $n=0$. On the other hand, $g^n f$ is never the identity, since it has slope $-1$; explicitly, equality $-x+n=x$ for every $x$ is impossible.
 
-By step [](#s2){.pf-ref}, every element of \(\ker\Phi\) is either \(b^n\) or \(b^n a\). The preceding calculation shows that only \(b^0=e\) lies in the kernel.
+By step [](#s2){.pf-ref}, every element of $\ker\Phi$ is either $b^n$ or $b^n a$. The preceding calculation shows that only $b^0=e$ lies in the kernel.
 Therefore
-\[
+$$
 \ker\Phi=\{e\}.
-\]
+$$
 
 :::
 
@@ -137,14 +137,14 @@ Therefore
 ::: pf-step
 
 Hence
-\[
+$$
 G\cong \langle a,b\mid a^2=e,\ ab=b^{-1}a\rangle.
-\]
+$$
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, \(\Phi\) is surjective, and by step [](#s3){.pf-ref} it is injective.
-Thus \(\Phi\) is an isomorphism.
+By step [](#s1){.pf-ref}, $\Phi$ is surjective, and by step [](#s3){.pf-ref} it is injective.
+Thus $\Phi$ is an isomorphism.
 
 :::
 

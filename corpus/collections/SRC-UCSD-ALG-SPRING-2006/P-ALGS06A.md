@@ -42,17 +42,17 @@ If $\lambda_i\ne\lambda_j$, then $y_i^*x_j=0$.
 ::: pf-proof
 
 Because $x_j$ is a right eigenvector and $y_i$ is a left eigenvector,
-\[
+$$
 Ax_j=\lambda_jx_j,
 \qquad
 y_i^*A=\lambda_i y_i^*.
-\]
+$$
 Hence
-\[
+$$
 \lambda_i y_i^*x_j
 =y_i^*Ax_j
 =\lambda_j y_i^*x_j.
-\]
+$$
 Since $\lambda_i\ne\lambda_j$, it follows that $y_i^*x_j=0$.
 
 :::
@@ -78,18 +78,18 @@ Under the assumption $\operatorname{am}(\lambda)=1$, both the right and left eig
 ::: pf-proof
 
 The geometric multiplicity is at least $1$ and at most the algebraic multiplicity, so
-\[
+$$
 \dim\ker(A-\lambda I)=1.
-\]
+$$
 Also
-\[
+$$
 \operatorname{rank}(A-\lambda I)
 =\operatorname{rank}(A^*-\overline\lambda I),
-\]
+$$
 so the two kernels have the same dimension. Thus
-\[
+$$
 \dim\ker(A^*-\overline\lambda I)=1.
-\]
+$$
 This latter kernel is the left eigenspace, so the given nonzero left eigenvector $y$ spans it.
 
 :::
@@ -99,20 +99,20 @@ This latter kernel is the left eigenspace, so the given nonzero left eigenvector
 ::: {.pf-step #s4}
 
 The condition $y^*x=0$ implies
-\[
+$$
 x\in\operatorname{im}(A-\lambda I).
-\]
+$$
 
 ::: pf-proof
 
 For every linear map $B$ on a finite-dimensional inner-product space,
-\[
+$$
 \operatorname{im}B=(\ker B^*)^\perp.
-\]
+$$
 Take $B=A-\lambda I$. By step [](#s3){.pf-ref},
-\[
+$$
 \ker B^*=\operatorname{span}\{y\}.
-\]
+$$
 The hypothesis $y^*x=0$ says exactly that $x\perp\ker B^*$, hence $x\in\operatorname{im}B$.
 
 :::
@@ -122,11 +122,11 @@ The hypothesis $y^*x=0$ says exactly that $x\perp\ker B^*$, hence $x\in\operator
 ::: {.pf-step #s5}
 
 There exists $z$ such that
-\[
+$$
 (A-\lambda I)z=x\ne0,
 \qquad
 (A-\lambda I)x=0.
-\]
+$$
 
 ::: pf-proof
 
@@ -143,12 +143,12 @@ The relations in step [](#s5){.pf-ref} imply that the algebraic multiplicity of 
 ::: pf-proof
 
 The vectors $x$ and $z$ are linearly independent: if $z=cx$, then $(A-\lambda I)z=0$, contradicting $(A-\lambda I)z=x\ne0$. Their span is invariant under $A$, and in the ordered basis $(x,z)$ the restriction of $A$ has matrix
-\[
+$$
 \begin{pmatrix}
 \lambda&1\\
 0&\lambda
 \end{pmatrix}.
-\]
+$$
 Hence $(t-\lambda)^2$ divides the characteristic polynomial of $A$, so $\operatorname{am}(\lambda)\ge2$.
 
 :::

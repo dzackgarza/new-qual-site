@@ -41,9 +41,9 @@ definition of $X$.
 
 ::: pf-step
 By the Seifert–van Kampen theorem / cellular presentation of fundamental groups:
-\[
+$$
 \pi_1(X) \cong \langle a \mid a^{n_1} = 1, \dots, a^{n_k} = 1 \rangle \cong \ZZ/d\ZZ,
-\]
+$$
 where $d = \gcd(n_1, \dots, n_k)$ (with the convention $\gcd(0, \dots, 0) = 0$).
 
 ::: pf-proof
@@ -81,9 +81,9 @@ definition of universal cover.
 
 ::: pf-step
 By the Hurewicz Theorem applied to $\widetilde{X}$:
-\[
+$$
 \pi_2(X) \cong \pi_2(\widetilde{X}) \cong H_2(\widetilde{X}; \ZZ).
-\]
+$$
 
 ::: pf-proof
 covering projection induces isomorphism on higher homotopy groups $\pi_n(X) \cong \pi_n(\widetilde{X})$ for $n \ge 2$, and Hurewicz isomorphism theorem for simply connected spaces.
@@ -205,12 +205,12 @@ step [](#s2){.pf-ref} and step [](#s4-6){.pf-ref}.
 
 ::: pf-step
 Conclusion:
-\[
+$$
 \pi_2(X) \cong \begin{cases}
 \bigoplus_{m \in \ZZ} \ZZ^k & \text{if } \gcd(n_1, \dots, n_k) = 0, \\
 \ZZ^{k \gcd(n_1, \dots, n_k) - 1} & \text{if } \gcd(n_1, \dots, n_k) > 0.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 step [](#s3){.pf-ref} and step [](#s4){.pf-ref}.

@@ -33,81 +33,81 @@ Hint: Nullstellensatz.
 
 ::: {.solution}
 Write
-\[
+$$
 R=k[x_1,\ldots,x_n]
-\]
+$$
 and let
-\[
+$$
 \mathfrak m\subset R
-\]
+$$
 be maximal.
-For each \(i\), we will prove
-\[
+For each $i$, we will prove
+$$
 \mathfrak m\cap k[x_i]\neq(0).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #residue-field-finite-algebraic}
-The residue field \(L:=R/\mathfrak m\) is a finite algebraic extension of \(k\).
+The residue field $L:=R/\mathfrak m$ is a finite algebraic extension of $k$.
 
 ::: pf-proof
-Because \(\mathfrak m\) is maximal,
-\[
+Because $\mathfrak m$ is maximal,
+$$
 L=R/\mathfrak m
-\]
+$$
 is a field.
-If \(\alpha_i\) denotes the image of \(x_i\) in \(L\), then
-\[
+If $\alpha_i$ denotes the image of $x_i$ in $L$, then
+$$
 L=k[\alpha_1,\ldots,\alpha_n].
-\]
-Thus \(L\) is a field finitely generated as a \(k\)-algebra.
+$$
+Thus $L$ is a field finitely generated as a $k$-algebra.
 
-By Zariski's lemma, equivalently the algebraic form of the weak Nullstellensatz, every field that is finitely generated as an algebra over a field \(k\) is a finite algebraic extension of \(k\).
+By Zariski's lemma, equivalently the algebraic form of the weak Nullstellensatz, every field that is finitely generated as an algebra over a field $k$ is a finite algebraic extension of $k$.
 Therefore
-\[
+$$
 [L:k]<\infty,
-\]
-and in particular every \(\alpha_i\) is algebraic over \(k\).
+$$
+and in particular every $\alpha_i$ is algebraic over $k$.
 :::
 
 :::
 
 ::: {.pf-step #nonzero-poly-in-single-variable}
-For every \(i\), the maximal ideal \(\mathfrak m\) contains a nonzero polynomial involving only \(x_i\).
+For every $i$, the maximal ideal $\mathfrak m$ contains a nonzero polynomial involving only $x_i$.
 
 ::: pf-proof
-Fix \(i\).
-By step [](#residue-field-finite-algebraic){.pf-ref}, \(\alpha_i\) is algebraic over \(k\).
+Fix $i$.
+By step [](#residue-field-finite-algebraic){.pf-ref}, $\alpha_i$ is algebraic over $k$.
 Let
-\[
+$$
 f_i(T)\in k[T]
-\]
+$$
 be its monic minimal polynomial.
-Then \(f_i\neq0\) and
-\[
+Then $f_i\neq0$ and
+$$
 f_i(\alpha_i)=0
-\]
-in \(L=R/\mathfrak m\).
+$$
+in $L=R/\mathfrak m$.
 Equivalently,
-\[
+$$
 f_i(x_i)\in\mathfrak m.
-\]
+$$
 Since the substitution map
-\[
+$$
 k[T]\longrightarrow k[x_i],
 \qquad
 T\longmapsto x_i
-\]
-is an isomorphism of polynomial rings, \(f_i(x_i)\neq0\).
+$$
+is an isomorphism of polynomial rings, $f_i(x_i)\neq0$.
 Hence
-\[
+$$
 0\neq f_i(x_i)\in\mathfrak m\cap k[x_i].
-\]
+$$
 Therefore
-\[
+$$
 \mathfrak m\cap k[x_i]\neq(0).
-\]
+$$
 :::
 
 :::
@@ -117,10 +117,10 @@ The conclusion holds for every variable.
 
 ::: pf-proof
 The argument in step [](#nonzero-poly-in-single-variable){.pf-ref} applies independently to each
-\[
+$$
 i=1,\ldots,n.
-\]
-Thus a maximal ideal of \(k[x_1,\ldots,x_n]\) has nonzero intersection with each one-variable subring \(k[x_i]\).
+$$
+Thus a maximal ideal of $k[x_1,\ldots,x_n]$ has nonzero intersection with each one-variable subring $k[x_i]$.
 :::
 
 :::

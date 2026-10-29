@@ -112,9 +112,9 @@ By the Splitting Lemma, the exact sequence splits, and $M \cong \iota(N) \oplus 
 ::: {.pf-step #s4}
 
 If $R$ is a PID and $M$ is finitely generated, then
-\[
+$$
 \boxed{M\cong\operatorname{tor}(M)\oplus F}
-\]
+$$
 for a free $R$-module $F$.
 
 ::: pf-proof

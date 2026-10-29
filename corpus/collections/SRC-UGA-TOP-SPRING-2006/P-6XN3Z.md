@@ -44,20 +44,20 @@ Give a proof of your answer.
 ::: {.pf-step #s1}
 
 Suppose, for contradiction, that the universal covering map
-\[
+$$
 p:S^2\longrightarrow\RP^2
-\]
+$$
 is nullhomotopic.
 Then there is a homotopy
-\[
+$$
 H:S^2\times I\longrightarrow\RP^2
-\]
+$$
 with
-\[
+$$
 H(x,0)=p(x)
 \qquad\text{and}\qquad
 H(x,1)=y_0
-\]
+$$
 for some $y_0\in\RP^2$.
 
 ::: pf-proof
@@ -71,22 +71,22 @@ This is the definition of nullhomotopy.
 ::: {.pf-step #s2}
 
 The homotopy $H$ lifts through $p$ to
-\[
+$$
 \widetilde H:S^2\times I\longrightarrow S^2
-\]
+$$
 with
-\[
+$$
 \widetilde H(x,0)=x
 \qquad\text{and}\qquad
 p\circ\widetilde H=H.
-\]
+$$
 
 ::: pf-proof
 
 At time $0$, the identity map $\id_{S^2}$ is a lift of $H(-,0)=p$, since
-\[
+$$
 p\circ\id_{S^2}=p.
-\]
+$$
 The homotopy lifting property for covering maps therefore gives the stated lift beginning at $\id_{S^2}$.
 
 :::
@@ -96,22 +96,22 @@ The homotopy lifting property for covering maps therefore gives the stated lift 
 ::: {.pf-step #s3}
 
 The terminal map
-\[
+$$
 \widetilde H_1:S^2\longrightarrow S^2
-\]
+$$
 is constant.
 
 ::: pf-proof
 
 From steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
-\[
+$$
 p(\widetilde H(x,1))=H(x,1)=y_0
-\]
+$$
 for every $x\in S^2$.
 Thus
-\[
+$$
 \widetilde H_1(S^2)\subseteq p^{-1}(y_0).
-\]
+$$
 The fiber of the double covering $p$ consists of two antipodal points and is therefore discrete.
 Since $S^2$ is connected, its continuous image in a discrete space is a singleton.
 Hence $\widetilde H_1$ is constant.
@@ -129,9 +129,9 @@ This contradicts the homology of $S^2$.
 By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, the identity map of $S^2$ is homotopic to a constant map.
 Homotopic maps induce the same map on integral homology.
 But on
-\[
+$$
 H_2(S^2;\ZZ)\cong\ZZ,
-\]
+$$
 the identity induces the identity homomorphism, whereas a constant map factors through a point and therefore induces the zero homomorphism in degree $2$.
 This is impossible.
 
@@ -142,9 +142,9 @@ This is impossible.
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{p:S^2\longrightarrow\RP^2\text{ is not nullhomotopic}.}
-\]
+$$
 
 ::: pf-proof
 

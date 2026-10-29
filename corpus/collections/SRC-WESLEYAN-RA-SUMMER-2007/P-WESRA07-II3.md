@@ -24,53 +24,53 @@ audit:
 ::: {.problem}
 Let $A\subset\RR^2$ be Lebesgue measurable with $m(A)>0$.
 Prove that for every
-\[
+$$
 0<t<m(A)
-\]
+$$
 there is a measurable subset $B\subset A$ with $m(B)=t$.
 :::
 
 ::: {.solution}
 Fix $0<t<m(A)$.
 Since
-\[
+$$
 A=\bigcup_{N=1}^\infty \bigl(A\cap[-N,N]^2\bigr)
-\]
+$$
 and these sets increase with $N$, continuity from below gives
-\[
+$$
 m(A)=\lim_{N\to\infty}m\bigl(A\cap[-N,N]^2\bigr).
-\]
+$$
 Hence for some $N$ the bounded measurable set
-\[
+$$
 E:=A\cap[-N,N]^2
-\]
+$$
 satisfies $m(E)>t$.
 
 For $s\in\RR$, define
-\[
+$$
 F(s)=m\bigl(E\cap(( -\infty,s]\times\RR)\bigr).
-\]
+$$
 Then $F(s)=0$ for $s<-N$ and $F(s)=m(E)>t$ for $s\ge N$.
 Moreover $F$ is continuous.
 Indeed, if $s_j\to s$, then
-\[
+$$
 \mathbf1_{E\cap(( -\infty,s_j]\times\RR)}
 \longrightarrow
 \mathbf1_{E\cap(( -\infty,s]\times\RR)}
-\]
+$$
 for every point outside the vertical line $\{s\}\times\RR$, which has two-dimensional Lebesgue measure zero.
 Since the indicators are bounded by the integrable function $\mathbf1_E$, dominated convergence gives $F(s_j)\to F(s)$.
 
 By the intermediate value theorem, there is $s_0\in[-N,N]$ such that
-\[
+$$
 F(s_0)=t.
-\]
+$$
 Therefore
-\[
+$$
 B:=E\cap(( -\infty,s_0]\times\RR)
-\]
+$$
 is measurable, satisfies $B\subset A$, and has
-\[
+$$
 \boxed{m(B)=t}.
-\]
+$$
 :::

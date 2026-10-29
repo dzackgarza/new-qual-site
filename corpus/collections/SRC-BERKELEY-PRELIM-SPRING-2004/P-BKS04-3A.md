@@ -32,9 +32,9 @@ audit:
 ::: {.problem}
 Let $a_1,\ldots,a_n,b_1,\ldots,b_m$ be distinct complex numbers, let $r_1,\ldots,r_n$ be nonnegative integers, and let $c_1,\ldots,c_m$ be complex numbers.
 Prove that if
-\[
+$$
 m\le r_1+\cdots+r_n+1,
-\]
+$$
 then there exists a rational function $F(z)\in\CC(z)$ satisfying all of the following:
 
 1. $F(z)$ is holomorphic at $\infty$ and everywhere in $\CC$ except possibly at $a_1,\ldots,a_n$.

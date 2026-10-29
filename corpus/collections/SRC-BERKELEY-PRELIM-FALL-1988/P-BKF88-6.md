@@ -17,9 +17,9 @@ audit:
 
 ::: {.problem}
 Let $f:[0,1]\to[0,1]$ and suppose its graph
-\[
+$$
 G_f=\{(x,f(x)):x\in[0,1]\}
-\]
+$$
 is a closed subset of the unit square.
 Prove that $f$ is continuous.
 :::

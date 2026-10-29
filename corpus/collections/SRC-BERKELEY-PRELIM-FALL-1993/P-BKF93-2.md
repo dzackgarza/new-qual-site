@@ -14,9 +14,9 @@ audit:
 
 ::: {.problem}
 Let $A=(\QQ,+)$ and let $M=(\QQ_{>0},\cdot)$. Determine all group homomorphisms
-\[
+$$
 A\to M.
-\]
+$$
 :::
 
 ::: {.solution}

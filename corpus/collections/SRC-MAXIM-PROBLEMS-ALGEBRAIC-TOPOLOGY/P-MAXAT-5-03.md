@@ -22,9 +22,9 @@ Show that if an oriented vector bundle has a non-zero section, then it’s Euler
 ::: {.solution}
 
 Let
-\[
+$$
 \xi:E\to X
-\]
+$$
 be an oriented real vector bundle of rank $r$, and suppose it has a nowhere-zero section $s$.
 
 ::: pf
@@ -32,9 +32,9 @@ be an oriented real vector bundle of rank $r$, and suppose it has a nowhere-zero
 ::: pf-step
 
 Choose a bundle metric on $\xi$ and normalize $s$ to a unit section
-\[
+$$
 \widehat s(x)=\frac{s(x)}{\|s(x)\|}.
-\]
+$$
 
 
 ::: pf-proof
@@ -48,19 +48,19 @@ A vector bundle over the usual paracompact base admits a fiberwise inner product
 ::: pf-step
 
 The unit section spans a trivial oriented line subbundle
-\[
+$$
 \varepsilon^1\subset\xi.
-\]
+$$
 
 
 ::: pf-proof
 
 Define
-\[
+$$
 X\times\RR\to E,
 \qquad
 (x,t)\mapsto t\widehat s(x).
-\]
+$$
 This is a fiberwise injective bundle map whose image is the line spanned by $\widehat s(x)$ in each fiber. The chosen vector $\widehat s(x)$ gives the line its standard orientation, so the subbundle is the trivial oriented line bundle.
 
 :::
@@ -70,9 +70,9 @@ This is a fiberwise injective bundle map whose image is the line spanned by $\wi
 ::: {.pf-step #s1-3}
 
 The metric gives an orthogonal splitting
-\[
+$$
 \xi\cong\varepsilon^1\oplus\eta
-\]
+$$
 for a rank-$(r-1)$ bundle $\eta$.
 
 
@@ -87,17 +87,17 @@ Let $\eta_x$ be the orthogonal complement of the line $\RR\widehat s(x)$ in $E_x
 ::: {.pf-step #s1-4}
 
 The Euler class satisfies the Whitney product formula
-\[
+$$
 e(\xi)=e(\varepsilon^1)\smile e(\eta).
-\]
+$$
 
 
 ::: pf-proof
 
 For oriented real vector bundles $\alpha$ and $\beta$, the Thom class of $\alpha\oplus\beta$ is the exterior product of their Thom classes. Pulling back along the zero section gives
-\[
+$$
 e(\alpha\oplus\beta)=e(\alpha)\smile e(\beta).
-\]
+$$
 Apply this to the splitting in step [](#s1-3){.pf-ref}, with the induced orientation on $\eta$ chosen so that the direct-sum orientation agrees with that of $\xi$.
 
 :::
@@ -107,9 +107,9 @@ Apply this to the splitting in step [](#s1-3){.pf-ref}, with the induced orienta
 ::: {.pf-step #s1-5}
 
 The Euler class of the trivial line bundle vanishes:
-\[
+$$
 e(\varepsilon^1)=0.
-\]
+$$
 
 
 ::: pf-proof
@@ -123,17 +123,17 @@ The Euler class of an oriented rank-one bundle lies in $H^1(X;\ZZ)$ and is the o
 ::: {.pf-step #s1-6}
 
 Hence
-\[
+$$
 \boxed{e(\xi)=0.}
-\]
+$$
 
 
 ::: pf-proof
 
 Substitute step [](#s1-5){.pf-ref} into the Whitney formula of step [](#s1-4){.pf-ref}:
-\[
+$$
 e(\xi)=0\smile e(\eta)=0.
-\]
+$$
 
 :::
 

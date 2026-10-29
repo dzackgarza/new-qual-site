@@ -35,13 +35,13 @@ The particle moves left with probability $p$ and right with probability $q=1-p$.
 ::: {.pf-step #s1-1}
 
 The probability $\beta(x)$ of eventual absorption at $B$ satisfies
-\[
+$$
 \beta(x)=p\beta(x-1)+q\beta(x+1),
 \qquad
 \beta(A)=0,
 \qquad
 \beta(B)=1.
-\]
+$$
 
 
 ::: pf-proof
@@ -55,25 +55,25 @@ Condition on the first step from an interior point. The walk moves to $x-1$ with
 ::: {.pf-step #s1-2}
 
 If $p\ne q$, then
-\[
+$$
 \boxed{
 \beta(x)=
 \frac{(p/q)^{x-A}-1}{(p/q)^{B-A}-1}},
 \qquad
 \boxed{\alpha(x)=1-\beta(x)}.
-\]
+$$
 
 
 ::: pf-proof
 
 The characteristic equation of the recurrence in step [](#s1-1){.pf-ref} is
-\[
+$$
 qr^2-r+p=0,
-\]
+$$
 whose roots are $1$ and $p/q$. Hence
-\[
+$$
 \beta(x)=C+D(p/q)^{x-A}.
-\]
+$$
 The boundary conditions give $C+D=0$ and $C+D(p/q)^N=1$, yielding the formula. Since absorption occurs at one of the two endpoints with probability $1$ on this finite interval, $\alpha=1-\beta$.
 
 :::
@@ -83,11 +83,11 @@ The boundary conditions give $C+D=0$ and $C+D(p/q)^N=1$, yielding the formula. S
 ::: {.pf-step #s1-3}
 
 If $p=q=1/2$, then
-\[
+$$
 \boxed{\beta(x)=\frac{x-A}{B-A}},
 \qquad
 \boxed{\alpha(x)=\frac{B-x}{B-A}}.
-\]
+$$
 
 
 ::: pf-proof
@@ -101,11 +101,11 @@ The recurrence becomes $2\beta(x)=\beta(x-1)+\beta(x+1)$, so the second finite d
 ::: {.pf-step #s1-4}
 
 The mean absorption time satisfies
-\[
+$$
 m(x)=1+pm(x-1)+qm(x+1),
 \qquad
 m(A)=m(B)=0.
-\]
+$$
 
 
 ::: pf-proof
@@ -119,25 +119,25 @@ From an interior point, one step is spent immediately and the expected remaining
 ::: {.pf-step #s1-5}
 
 If $p\ne q$, then
-\[
+$$
 \boxed{
 m(x)=
 \frac{x-A}{p-q}
 -\frac{B-A}{p-q}
 \frac{(p/q)^{x-A}-1}{(p/q)^{B-A}-1}.}
-\]
+$$
 
 
 ::: pf-proof
 
 A particular solution of step [](#s1-4){.pf-ref} is $(x-A)/(p-q)$, because substituting a linear function $cx$ into
-\[
+$$
 m-pm(x-1)-qm(x+1)=1
-\]
+$$
 gives $c(p-q)=1$. The homogeneous solutions are $1$ and $(p/q)^{x-A}$ as in step [](#s1-2){.pf-ref}. Thus
-\[
+$$
 m(x)=\frac{x-A}{p-q}+C+D(p/q)^{x-A}.
-\]
+$$
 Imposing $m(A)=m(B)=0$ and solving for $C,D$ gives the displayed formula.
 
 :::
@@ -147,17 +147,17 @@ Imposing $m(A)=m(B)=0$ and solving for $C,D$ gives the displayed formula.
 ::: {.pf-step #s1-6}
 
 If $p=q=1/2$, then
-\[
+$$
 \boxed{m(x)=(x-A)(B-x)}.
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-4){.pf-ref} becomes
-\[
+$$
 m(x+1)-2m(x)+m(x-1)=-2.
-\]
+$$
 Hence $m$ is a quadratic polynomial with leading coefficient $-1$. The zeros at $A$ and $B$ therefore force $m(x)=(x-A)(B-x)$.
 
 :::
@@ -167,17 +167,17 @@ Hence $m$ is a quadratic polynomial with leading coefficient $-1$. The zeros at 
 ::: {.pf-step #s1-7}
 
 In particular, if $A=-B$, $x=0$, and $p=q=1/2$, then
-\[
+$$
 \boxed{m(0)=B^2}.
-\]
+$$
 
 
 ::: pf-proof
 
 Substitute $A=-B$ and $x=0$ into step [](#s1-6){.pf-ref}:
-\[
+$$
 m(0)=(0+B)(B-0)=B^2.
-\]
+$$
 
 :::
 

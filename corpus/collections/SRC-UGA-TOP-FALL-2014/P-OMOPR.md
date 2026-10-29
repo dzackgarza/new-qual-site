@@ -39,27 +39,27 @@ Prove that every continuous map $f : \RP^2 \to S^1$ is homotopic to a constant.
 ::: {.pf-step #s1}
 
 The induced homomorphism
-\[
+$$
 f_*:\pi_1(\RP^2,x_0)\to\pi_1(S^1,f(x_0))
-\]
+$$
 is trivial.
 
 ::: pf-proof
 
 The fundamental groups are
-\[
+$$
 \pi_1(\RP^2,x_0)\cong\ZZ/2
 \qquad\text{and}\qquad
 \pi_1(S^1,f(x_0))\cong\ZZ.
-\]
+$$
 Every group homomorphism
-\[
+$$
 \ZZ/2\to\ZZ
-\]
+$$
 is trivial: if the nonzero element of $\ZZ/2$ maps to $k\in\ZZ$, then
-\[
+$$
 2k=0,
-\]
+$$
 and torsion-freeness of $\ZZ$ gives $k=0$.
 Hence $f_*=0$.
 
@@ -70,38 +70,38 @@ Hence $f_*=0$.
 ::: pf-step
 
 The map $f$ lifts to the universal covering
-\[
+$$
 p:\RR\to S^1,
 \qquad
 p(t)=e^{2\pi i t}.
-\]
+$$
 
 ::: pf-proof
 
 Choose $\widetilde y_0\in\RR$ with
-\[
+$$
 p(\widetilde y_0)=f(x_0).
-\]
+$$
 The covering-space lifting criterion says that a based map
-\[
+$$
 f:(\RP^2,x_0)\to(S^1,f(x_0))
-\]
+$$
 lifts to $(\RR,\widetilde y_0)$ if and only if
-\[
+$$
 f_*\bigl(\pi_1(\RP^2,x_0)\bigr)
 \subseteq
 p_*\bigl(\pi_1(\RR,\widetilde y_0)\bigr).
-\]
+$$
 By step [](#s1){.pf-ref} the left-hand side is $0$.
 Since $\RR$ is simply connected, the right-hand side is also $0$.
 Thus the criterion applies and gives a continuous lift
-\[
+$$
 \widetilde f:\RP^2\to\RR
-\]
+$$
 such that
-\[
+$$
 p\circ\widetilde f=f.
-\]
+$$
 
 :::
 
@@ -115,9 +115,9 @@ The lift $\widetilde f$ is homotopic to a constant map.
 
 The real line is contractible.
 For example, fixing $c=\widetilde f(x_0)$, define
-\[
+$$
 \widetilde H(x,t)=(1-t)\widetilde f(x)+tc.
-\]
+$$
 Then $\widetilde H$ is a homotopy from $\widetilde f$ to the constant map $x\mapsto c$.
 
 :::
@@ -131,22 +131,22 @@ Therefore $f$ is homotopic to a constant map.
 ::: pf-proof
 
 Compose the homotopy in step [](#s3){.pf-ref} with $p$:
-\[
+$$
 H=p\circ\widetilde H:\RP^2\times[0,1]\to S^1.
-\]
+$$
 At $t=0$,
-\[
+$$
 H(x,0)=p(\widetilde f(x))=f(x),
-\]
+$$
 while at $t=1$,
-\[
+$$
 H(x,1)=p(c),
-\]
+$$
 independent of $x$.
 Thus
-\[
+$$
 \boxed{f\simeq\text{constant}}.
-\]
+$$
 
 :::
 

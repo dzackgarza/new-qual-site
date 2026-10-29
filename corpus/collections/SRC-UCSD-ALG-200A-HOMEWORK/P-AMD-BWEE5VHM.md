@@ -35,9 +35,9 @@ audit:
 
 ::: {.problem}
 Let $G$ be a finite group with
-\[
+$$
 |G|=pqr,
-\]
+$$
 where $p<q<r$ are distinct primes.
 Prove that $G$ has at least one normal Sylow subgroup.
 :::
@@ -54,26 +54,26 @@ Either $n_r=1$ or $n_r=pq$.
 ::: pf-proof
 
 Sylow's theorem gives
-\[
+$$
 n_r\equiv 1\pmod r
 \qquad\text{and}\qquad
 n_r\mid pq.
-\]
+$$
 Thus
-\[
+$$
 n_r\in\{1,p,q,pq\}.
-\]
+$$
 Because
-\[
+$$
 1<p<r
 \qquad\text{and}\qquad
 1<q<r,
-\]
+$$
 neither $p$ nor $q$ is congruent to $1$ modulo $r$.
 Hence
-\[
+$$
 n_r\in\{1,pq\}.
-\]
+$$
 
 :::
 
@@ -89,9 +89,9 @@ A Sylow subgroup is normal if and only if it is the unique Sylow subgroup for th
 Thus $n_r=1$ makes the Sylow $r$-subgroup normal.
 
 Assume from now on that
-\[
+$$
 n_r=pq.
-\]
+$$
 
 :::
 
@@ -107,9 +107,9 @@ Since $r$ occurs to the first power in $|G|=pqr$, every Sylow $r$-subgroup has o
 Two distinct subgroups of order $r$ intersect trivially: their intersection has order dividing the prime $r$, and a nontrivial intersection would force the two subgroups to be equal.
 Therefore the $pq$ Sylow $r$-subgroups have pairwise disjoint sets of nonidentity elements.
 Each contributes $r-1$ such elements, giving
-\[
+$$
 pq(r-1)
-\]
+$$
 in total.
 
 :::
@@ -123,11 +123,11 @@ There are exactly $pq$ elements of $G$ outside those nonidentity Sylow $r$-eleme
 ::: pf-proof
 
 By step [](#s3){.pf-ref}, their number is
-\[
+$$
 |G|-pq(r-1)
 =pqr-pq(r-1)
 =pq.
-\]
+$$
 
 :::
 
@@ -140,24 +140,24 @@ If $n_q\ne 1$, then $n_q\ge r$.
 ::: pf-proof
 
 Sylow's theorem gives
-\[
+$$
 n_q\equiv 1\pmod q
 \qquad\text{and}\qquad
 n_q\mid pr.
-\]
+$$
 Hence
-\[
+$$
 n_q\in\{1,p,r,pr\}.
-\]
+$$
 Since $1<p<q$, the value $p$ is not congruent to $1$ modulo $q$.
 Therefore
-\[
+$$
 n_q\in\{1,r,pr\}.
-\]
+$$
 If $n_q\ne1$, this implies
-\[
+$$
 n_q\ge r.
-\]
+$$
 
 :::
 
@@ -171,26 +171,26 @@ If $n_q\ne1$, then $G$ has more than $pq$ elements of order $q$.
 
 Every Sylow $q$-subgroup has order $q$, and two distinct subgroups of order $q$ intersect trivially.
 Thus the number of elements of order $q$ is
-\[
+$$
 n_q(q-1).
-\]
+$$
 By step [](#s5){.pf-ref},
-\[
+$$
 n_q(q-1)\ge r(q-1).
-\]
+$$
 Since $r>q$,
-\[
+$$
 r(q-1)\ge(q+1)(q-1)=q^2-1.
-\]
+$$
 Moreover,
-\[
+$$
 q^2-1-pq=q(q-p)-1\ge q-1>0,
-\]
+$$
 because $p<q$ and $q\ge3$.
 Hence
-\[
+$$
 n_q(q-1)>pq.
-\]
+$$
 
 :::
 
@@ -206,9 +206,9 @@ Every element of order $q$ lies outside the nonidentity elements of the Sylow $r
 By step [](#s4){.pf-ref} there are only $pq$ elements outside those Sylow $r$-elements.
 But if $n_q\ne1$, step [](#s6){.pf-ref} produces more than $pq$ elements of order $q$, a contradiction.
 Therefore
-\[
+$$
 n_q=1.
-\]
+$$
 
 :::
 

@@ -39,17 +39,17 @@ audit:
 
 ::: {.problem}
 Consider the group
-\[
+$$
 G=\langle x,y\mid xy^2=y^3x,\ yx^2=x^3y\rangle.
-\]
+$$
 Show that $G$ is trivial.
 
 **Hint.** First establish
-\[
+$$
 x^2y^8x^{-2}=y^{18}
 \qquad\text{and}\qquad
 x^3y^8x^{-3}=y^{27}
-\]
+$$
 using the first relation.
 Then use the second relation to deduce $y^9=e$.
 :::
@@ -61,16 +61,16 @@ Then use the second relation to deduce $y^9=e$.
 ::: {.pf-step #s1}
 
 The first defining relation is equivalent to
-\[
+$$
 xy^2x^{-1}=y^3.
-\]
+$$
 
 ::: pf-proof
 
 Starting from
-\[
+$$
 xy^2=y^3x,
-\]
+$$
 multiply on the right by $x^{-1}$.
 
 :::
@@ -80,21 +80,21 @@ multiply on the right by $x^{-1}$.
 ::: {.pf-step #s2}
 
 We have
-\[
+$$
 x^2y^8x^{-2}=y^{18}.
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s1){.pf-ref},
-\[
+$$
 xy^8x^{-1}
 =x(y^2)^4x^{-1}
 =(xy^2x^{-1})^4
 =y^{12}.
-\]
+$$
 Conjugating once more by $x$ gives
-\[
+$$
 \begin{aligned}
 x^2y^8x^{-2}
 &=x y^{12}x^{-1}\\
@@ -102,7 +102,7 @@ x^2y^8x^{-2}
 &=(xy^2x^{-1})^6\\
 &=y^{18}.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -111,22 +111,22 @@ x^2y^8x^{-2}
 ::: {.pf-step #s3}
 
 We have
-\[
+$$
 x^3y^8x^{-3}=y^{27}.
-\]
+$$
 
 ::: pf-proof
 
 Conjugate the identity in step [](#s2){.pf-ref} by $x$:
-\[
+$$
 x^3y^8x^{-3}=xy^{18}x^{-1}.
-\]
+$$
 Since $y^{18}=(y^2)^9$, step [](#s1){.pf-ref} gives
-\[
+$$
 xy^{18}x^{-1}
 =(xy^2x^{-1})^9
 =y^{27}.
-\]
+$$
 
 :::
 
@@ -135,16 +135,16 @@ xy^{18}x^{-1}
 ::: {.pf-step #s4}
 
 The second defining relation gives
-\[
+$$
 x^3=yx^2y^{-1}.
-\]
+$$
 
 ::: pf-proof
 
 From
-\[
+$$
 yx^2=x^3y,
-\]
+$$
 multiply on the right by $y^{-1}$.
 
 :::
@@ -158,30 +158,30 @@ We have $y^9=e$.
 ::: pf-proof
 
 By step [](#s4){.pf-ref},
-\[
+$$
 x^{-3}=yx^{-2}y^{-1}.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 x^3y^8x^{-3}
 &=(yx^2y^{-1})y^8(yx^{-2}y^{-1})\\
 &=y(x^2y^8x^{-2})y^{-1}.
 \end{aligned}
-\]
+$$
 Using step [](#s2){.pf-ref}, the right-hand side is
-\[
+$$
 y y^{18} y^{-1}=y^{18}.
-\]
+$$
 But step [](#s3){.pf-ref} says that the same left-hand side is $y^{27}$.
 Hence
-\[
+$$
 y^{27}=y^{18},
-\]
+$$
 and multiplying by $y^{-18}$ gives
-\[
+$$
 y^9=e.
-\]
+$$
 
 :::
 
@@ -194,24 +194,24 @@ We have $y=e$.
 ::: pf-proof
 
 Raise the conjugation identity in step [](#s1){.pf-ref} to the third power:
-\[
+$$
 xy^6x^{-1}=y^9=e.
-\]
+$$
 Conjugation is injective, so $y^6=e$.
 Together with step [](#s5){.pf-ref},
-\[
+$$
 y^3=y^9(y^6)^{-1}=e.
-\]
+$$
 
 The first defining relation now becomes
-\[
+$$
 xy^2=y^3x=x.
-\]
+$$
 Left cancellation by $x$ gives $y^2=e$.
 Since also $y^3=e$,
-\[
+$$
 y=y^3(y^2)^{-1}=e.
-\]
+$$
 
 :::
 
@@ -224,14 +224,14 @@ We have $x=e$, and therefore $G$ is trivial.
 ::: pf-proof
 
 Substitute $y=e$ from step [](#s6){.pf-ref} into the second defining relation:
-\[
+$$
 x^2=x^3.
-\]
+$$
 Multiplying by $x^{-2}$ gives $x=e$.
 Thus both generators are the identity, so
-\[
+$$
 G=\{e\}.
-\]
+$$
 
 :::
 

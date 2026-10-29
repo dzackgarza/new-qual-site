@@ -38,9 +38,9 @@ The center $Z(G)$ is nontrivial.
 ::: pf-proof
 
 Apply the class equation:
-\[
+$$
 |G|=|Z(G)|+\sum_i [G:C_G(x_i)],
-\]
+$$
 where the $x_i$ represent the noncentral conjugacy classes. Each noncentral
 class size $[G:C_G(x_i)]$ is a power of $p$ greater than $1$, hence divisible by
 $p$. Since $|G|=p^3$ is divisible by $p$, the class equation implies

@@ -41,11 +41,11 @@ Let $G$ be a group of order $p^2 q^2$, where $p$ and $q$ are primes with $p > q$
 
 Let $n_p$ be the number of Sylow $p$-subgroups of $G$.
 By Sylow's theorems,
-\[
+$$
 n_p\equiv 1\pmod p,
 \qquad
 n_p\mid q^2.
-\]
+$$
 Thus $n_p\in\{1,q,q^2\}$.
 
 ::: pf-proof
@@ -60,9 +60,9 @@ The number of Sylow $p$-subgroups divides the $p$-free part $q^2$ of $|G|$ and i
 
 The case $n_p=q$ is impossible because $q<p$ and $q\equiv1\pmod p$ cannot hold.
 If $n_p=q^2>1$, then
-\[
+$$
 p\mid q^2-1=(q-1)(q+1).
-\]
+$$
 Since $p>q$, we cannot have $p\mid q-1$, so $p\mid q+1$.
 Hence $p\le q+1$, and therefore $p=q+1$.
 The only consecutive primes are then $q=2$ and $p=3$.
@@ -79,9 +79,9 @@ Two consecutive integers larger than $2$ cannot both be prime, so $q=2$ and $p=3
 ::: pf-step
 
 Therefore either $n_p=1$, in which case the Sylow $p$-subgroup is normal, or $(p,q)=(3,2)$ and
-\[
+$$
 |G|=3^2 2^2=36.
-\]
+$$
 
 ::: pf-proof
 
@@ -111,9 +111,9 @@ Since $1\triangleleft P\triangleleft G$ has abelian factors $P$ and $G/P$, it is
 It remains to treat $|G|=36$.
 Let $P$ be a Sylow $3$-subgroup.
 Since $[G:P]=4$, the left action of $G$ on $G/P$ gives a homomorphism
-\[
+$$
 \rho:G\longrightarrow S_4.
-\]
+$$
 Let $K=\ker\rho$.
 
 ::: pf-proof

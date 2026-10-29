@@ -24,10 +24,10 @@ audit:
 
 ::: {.exercise}
 Consider the function
-\[
+$$
 f(x+iy)=\sqrt{|x||y|},
 \qquad x,y\in\RR.
-\]
+$$
 Show that $f$ satisfies the Cauchy-Riemann equations at the origin, yet $f$ is not holomorphic at $0$.
 :::
 
@@ -38,11 +38,11 @@ Show that $f$ satisfies the Cauchy-Riemann equations at the origin, yet $f$ is n
 ::: pf-step
 
 Write $f=u+iv$, where
-\[
+$$
 u(x,y)=\sqrt{|x||y|},
 \qquad
 v(x,y)=0.
-\]
+$$
 
 ::: pf-proof
 
@@ -59,9 +59,9 @@ All four first partial derivatives $u_x(0,0)$, $u_y(0,0)$, $v_x(0,0)$, and $v_y(
 ::: pf-proof
 
 Because $u(h,0)=u(0,h)=0$ for every real $h$, one has
-\[
+$$
 u_x(0,0)=\lim_{h\to0}\frac{u(h,0)-u(0,0)}h=0,
-\]
+$$
 and similarly $u_y(0,0)=0$. Since $v\equiv0$, also $v_x(0,0)=v_y(0,0)=0$.
 
 :::
@@ -75,11 +75,11 @@ Hence the Cauchy-Riemann equations hold at the origin.
 ::: pf-proof
 
 At $(0,0)$,
-\[
+$$
 u_x=v_y=0,
 \qquad
 u_y=-v_x=0,
-\]
+$$
 by step [](#s2){.pf-ref}.
 
 :::
@@ -93,9 +93,9 @@ Along the real axis, the difference quotient of $f$ at $0$ is zero.
 ::: pf-proof
 
 For real $t\ne0$,
-\[
+$$
 \frac{f(t)-f(0)}t=\frac{0}{t}=0,
-\]
+$$
 because $f(t)=u(t,0)=0$.
 
 :::
@@ -109,13 +109,13 @@ Along the line $z=t(1+i)$ with $t>0$, the difference quotient is $1/(1+i)$.
 ::: pf-proof
 
 For $t>0$,
-\[
+$$
 f(t+it)=\sqrt{|t||t|}=t,
-\]
+$$
 so
-\[
+$$
 \frac{f(t(1+i))-f(0)}{t(1+i)}=\frac1{1+i}.
-\]
+$$
 
 :::
 

@@ -43,15 +43,15 @@ Decompose $x_0$ orthogonally relative to $M$.
 ::: pf-proof
 
 Since $M$ is a closed subspace of the Hilbert space $H$, the projection theorem gives unique vectors
-\[
+$$
 m_0\in M,
 \qquad
 z\in M^\perp
-\]
+$$
 such that
-\[
+$$
 x_0=m_0+z.
-\]
+$$
 Because $x_0\notin M$, we have $z\ne0$.
 
 :::
@@ -65,19 +65,19 @@ Compute the minimum distance to $M$.
 ::: pf-proof
 
 For any $x\in M$,
-\[
+$$
 x_0-x=(m_0-x)+z,
-\]
+$$
 where $m_0-x\in M$ and $z\in M^\perp$. Hence, by Pythagoras,
-\[
+$$
 \|x_0-x\|^2
 =\|m_0-x\|^2+\|z\|^2
 \ge\|z\|^2.
-\]
+$$
 Equality holds at $x=m_0$. Therefore
-\[
+$$
 \min_{x\in M}\|x-x_0\|=\|z\|.
-\]
+$$
 
 :::
 
@@ -90,26 +90,26 @@ Compute the maximum over the unit sphere of $M^\perp$.
 ::: pf-proof
 
 If $y\in M^\perp$ and $\|y\|=1$, then
-\[
+$$
 \langle x_0,y\rangle
 =\langle m_0+z,y\rangle
 =\langle z,y\rangle
 \le\|z\|
-\]
+$$
 by Cauchy--Schwarz. Taking
-\[
+$$
 y_0=\frac{z}{\|z\|}\in M^\perp
-\]
+$$
 gives $\|y_0\|=1$ and
-\[
+$$
 \langle x_0,y_0\rangle=\|z\|.
-\]
+$$
 Thus
-\[
+$$
 \max_{\substack{y\in M^\perp\\\|y\|=1}}\langle x_0,y\rangle
 =\|z\|
 =\min_{x\in M}\|x-x_0\|.
-\]
+$$
 
 :::
 

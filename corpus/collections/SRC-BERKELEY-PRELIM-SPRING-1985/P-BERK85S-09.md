@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 Define
-\[
+$$
 \zeta(x)=\sum_{n=1}^\infty\frac1{n^x}.
-\]
+$$
 Prove that $\zeta(x)$ is defined and has continuous derivatives of all orders for
-\[
+$$
 1<x<\infty.
-\]
+$$
 :::
 
 ::: {.solution}

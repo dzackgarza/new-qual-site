@@ -35,9 +35,9 @@ Let $\mathcal{L} = \mathcal{M}_\ZZ$ be the orientation local coefficient system 
 
 ::: pf-step
 By Poincaré Duality for manifolds with local coefficients, for any closed $n$-manifold:
-\[
+$$
 H_k(M; \mathcal{L}) \cong H^{n-k}(M; \ZZ).
-\]
+$$
 For $n = 2$, this gives $H_k(M; \mathcal{L}) \cong H^{2-k}(M; \ZZ)$.
 :::
 
@@ -77,14 +77,14 @@ Computation of $H_n(M; \mathcal{L})$:
 
 ::: pf-step
 Applying the Poincaré Duality isomorphisms $H_k(M; \mathcal{L}) \cong H^{2-k}(M; \ZZ)$:
-\[
+$$
 H_n(M; \mathcal{M}_\ZZ) \cong \begin{cases}
 \ZZ & n = 2, \\
 \ZZ^{g-1} & n = 1, \\
 \ZZ_2 & n = 0, \\
 0 & n \ge 3 \text{ or } n < 0.
 \end{cases}
-\]
+$$
 :::
 
 :::

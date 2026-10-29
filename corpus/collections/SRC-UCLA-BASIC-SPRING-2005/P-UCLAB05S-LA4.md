@@ -39,9 +39,9 @@ If $\mathcal I$ contains only $0$, then $\mathcal I=\{0\}$.
 Otherwise choose $A=(a_{ij})\in\mathcal I$ with some $a_{ij}\ne0$.
 Let $E_{rs}$ denote the standard matrix units.
 By two-sided closure,
-\[
+$$
 E_{pi}AE_{jq}=a_{ij}E_{pq}\in\mathcal I
-\]
+$$
 for every $p,q$.
 Multiplying on either side by the scalar matrix $a_{ij}^{-1}I_n$ shows $E_{pq}\in\mathcal I$ for every $p,q$.
 Closure under addition then gives every matrix in $M_n(\CC)$, so $\mathcal I=\mathcal A$.

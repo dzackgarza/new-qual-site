@@ -34,9 +34,9 @@ Thus local path-connectedness of $Y$ is a necessary hypothesis in the lifting cr
 
 ::: {.solution}
 Let
-\[
+$$
 L=\{0\}\times[-1,1]
-\]
+$$
 be the vertical segment and let $G$ be the oscillating graph portion of $y=\sin(1/x)$ used in the quasi-circle.
 Before the extra connecting arc is added, $L$ and $G$ are the two path components of the topologist sine curve.
 
@@ -49,9 +49,9 @@ The image of every path in $Y$ meets only a finite truncation of the oscillating
 ::: pf-proof
 
 Let
-\[
+$$
 \alpha:I\to Y
-\]
+$$
 be a path.
 The only way for a path to pass between $L$ and $G$ is through the added connecting arc, since $L$ and $G$ are distinct path components of the topologist sine curve itself.
 
@@ -63,11 +63,11 @@ Except possibly for the two components meeting the endpoints of $I$, each such c
 
 The path $\alpha$ is uniformly continuous.
 Choose $\delta>0$ such that
-\[
+$$
 |s-t|<\delta
 \quad\Longrightarrow\quad
 \|\alpha(s)-\alpha(t)\|<x_b/2.
-\]
+$$
 Any graph excursion that reaches a point with $x<x_b/2$ has Euclidean distance at least $x_b/2$ from $b$ in the horizontal coordinate alone.
 Hence its parameter interval has length at least $\delta$.
 There can be only finitely many pairwise disjoint excursion intervals of length at least $\delta$.
@@ -76,9 +76,9 @@ On each of these finitely many intervals, the continuous positive $x$-coordinate
 The same is true for the at most two components meeting $0$ or $1$.
 All remaining excursions stay in $x\ge x_b/2$.
 Taking the minimum of these finitely many positive lower bounds and $x_b/2$ gives some $\varepsilon>0$ such that every point of $\alpha(I)\cap G$ has
-\[
+$$
 x\ge\varepsilon.
-\]
+$$
 
 :::
 
@@ -92,9 +92,9 @@ Every loop in $Y$ is contained in a contractible subspace of $Y$.
 
 Let $\gamma:S^1\to Y$ be a loop.
 By step [](#s1){.pf-ref}, choose $\varepsilon>0$ so that the part of its image in $G$ lies in the compact graph segment
-\[
+$$
 G_\varepsilon=G\cap\{x\ge\varepsilon\}.
-\]
+$$
 
 The union of
 
@@ -113,9 +113,9 @@ Therefore $\gamma$ is nullhomotopic in $Y$.
 ::: {.pf-step #s3}
 
 Consequently
-\[
+$$
 \boxed{\pi_1(Y)=0.}
-\]
+$$
 
 ::: pf-proof
 
@@ -128,24 +128,24 @@ Every loop is nullhomotopic by step [](#s2){.pf-ref}.
 ::: {.pf-step #s4}
 
 Let
-\[
+$$
 p:\RR\to S^1,
 \qquad
 p(t)=e^{2\pi i t},
-\]
+$$
 be the standard covering.
 Suppose for contradiction that the quotient map
-\[
+$$
 f:Y\to S^1
-\]
+$$
 has a lift
-\[
+$$
 \widetilde f:Y\to\RR
-\]
+$$
 with
-\[
+$$
 p\widetilde f=f.
-\]
+$$
 
 ::: pf-proof
 
@@ -163,9 +163,9 @@ The map $\widetilde f$ is constant on the collapsed segment $L$.
 
 The quotient map $f$ sends all of $L$ to one point $z_0\in S^1$.
 Therefore
-\[
+$$
 \widetilde f(L)\subseteq p^{-1}(z_0).
-\]
+$$
 The fiber $p^{-1}(z_0)$ is a discrete subset of $\RR$, while $L$ is connected.
 The continuous image of a connected space in a discrete space is a single point.
 Hence $\widetilde f|_L$ is constant.
@@ -178,22 +178,22 @@ Hence $\widetilde f|_L$ is constant.
 
 The lift $\widetilde f$ factors through the quotient $f:Y\to S^1$:
 there is a continuous map
-\[
+$$
 s:S^1\to\RR
-\]
+$$
 such that
-\[
+$$
 \widetilde f=s\circ f.
-\]
+$$
 
 ::: pf-proof
 
 The map $f$ is precisely the quotient obtained by collapsing $L$ to one point, and it is one-to-one on the remaining quotient classes.
 By step [](#s5){.pf-ref}, $\widetilde f$ is constant on every fiber of this quotient map.
 The universal property of quotient maps therefore gives a unique continuous factor $s$ with
-\[
+$$
 \widetilde f=s f.
-\]
+$$
 
 :::
 
@@ -202,20 +202,20 @@ The universal property of quotient maps therefore gives a unique continuous fact
 ::: {.pf-step #s7}
 
 The map $s$ would be a section of $p$:
-\[
+$$
 p\circ s=\operatorname{id}_{S^1}.
-\]
+$$
 
 ::: pf-proof
 
 Using steps [](#s4){.pf-ref} and [](#s6){.pf-ref},
-\[
+$$
 f=p\widetilde f=p s f.
-\]
+$$
 Since $f:Y\to S^1$ is surjective, equality after composition with $f$ implies
-\[
+$$
 p s=\operatorname{id}_{S^1}.
-\]
+$$
 
 :::
 
@@ -228,25 +228,25 @@ No such section $s$ exists.
 ::: pf-proof
 
 On fundamental groups, the identity
-\[
+$$
 p s=\operatorname{id}_{S^1}
-\]
+$$
 would give
-\[
+$$
 p_*s_*=\operatorname{id}_{\pi_1(S^1)}.
-\]
+$$
 But
-\[
+$$
 \pi_1(\RR)=0,
-\]
+$$
 so
-\[
+$$
 s_*:\pi_1(S^1)\to\pi_1(\RR)
-\]
+$$
 is the zero map, making $p_*s_*$ zero rather than the identity on
-\[
+$$
 \pi_1(S^1)\cong\ZZ.
-\]
+$$
 Contradiction.
 
 :::
@@ -256,9 +256,9 @@ Contradiction.
 ::: pf-step
 
 Therefore $f$ has no lift to $\RR\to S^1$, despite satisfying
-\[
+$$
 f_*(\pi_1(Y))=0.
-\]
+$$
 
 ::: pf-proof
 

@@ -49,13 +49,13 @@ Fix a vertex $v_0$ of $X$ and consider the partially ordered set of tree subgrap
 It is nonempty since $\{v_0\}$ is a tree.
 
 If
-\[
+$$
 T_1\subseteq T_2\subseteq\cdots
-\]
+$$
 is more generally any chain of such trees, its union
-\[
+$$
 T=\bigcup_\alpha T_\alpha
-\]
+$$
 is connected: two vertices of $T$ lie in two members of the chain, one of which contains the other, so both lie in a single connected tree.
 It is acyclic: a cycle uses only finitely many edges, hence all its edges lie in one member of the chain, contradicting that member being a tree.
 Thus every chain has an upper bound.
@@ -73,18 +73,18 @@ Adjoining that edge and its new endpoint preserves connectedness and creates no 
 
 Conversely, assume every connected graph has a maximal tree.
 Let
-\[
+$$
 \{A_i\}_{i\in I}
-\]
+$$
 be an arbitrary family of nonempty sets.
 Construct a graph $X$ with vertices
-\[
+$$
 \{v_0\}\cup\{v_i:i\in I\}
-\]
+$$
 and, for each $i\in I$ and each $a\in A_i$, one edge
-\[
+$$
 e_{i,a}
-\]
+$$
 joining $v_0$ to $v_i$.
 Then $X$ is connected.
 
@@ -119,9 +119,9 @@ Hence exactly one is present.
 ::: {.pf-step #s4}
 
 Define
-\[
+$$
 f:I\longrightarrow\bigcup_{i\in I}A_i
-\]
+$$
 by letting $f(i)$ be the unique element $a\in A_i$ for which $e_{i,a}\subseteq T$.
 Then $f(i)\in A_i$ for every $i$.
 

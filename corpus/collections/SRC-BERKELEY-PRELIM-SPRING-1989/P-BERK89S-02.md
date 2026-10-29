@@ -27,13 +27,13 @@ audit:
 
 ::: {.problem}
 Let $F$ be a field and let $A\in M_n(F)$. If
-\[
+$$
 A^m=0
-\]
+$$
 for some positive integer $m$, prove that
-\[
+$$
 A^n=0.
-\]
+$$
 :::
 
 ::: {.solution}

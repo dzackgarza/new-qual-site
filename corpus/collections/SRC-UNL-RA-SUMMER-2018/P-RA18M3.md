@@ -65,9 +65,9 @@ $f \in \mathcal R(\alpha)$ on $[-1,1]$ and the integral equals $9$.
 
 Use a partition that contains the jump point.
 Proof: take the partition $P=\{-1,0,1\}$. If $Q$ is any refinement of $P$, then $\alpha$ is constant on every subinterval of $Q$ except the first subinterval $[0,q]$ immediately to the right of $0$. On that interval
-\[
+$$
 \alpha(q)-\alpha(0)=1-(-2)=3.
-\]
+$$
 
 :::
 
@@ -75,9 +75,9 @@ Proof: take the partition $P=\{-1,0,1\}$. If $Q$ is any refinement of $P$, then 
 
 Every tagged Riemann--Stieltjes sum for every refinement of $P$ equals $9$.
 Proof: on the exceptional interval $[0,q]$ one has $f\equiv3$, including at $0$. Hence its contribution is
-\[
+$$
 3\,[\alpha(q)-\alpha(0)]=3\cdot3=9,
-\]
+$$
 while every other interval contributes $0$ because its $\alpha$-increment is $0$. Thus the sum is independent of both the refinement and the tags.
 
 :::
@@ -95,7 +95,7 @@ Apply the Riemann--Stieltjes refinement criterion.
 :::
 
 Proof: given any $\varepsilon>0$, the partition $P$ above has the property that every tagged sum over every refinement of $P$ equals $9$, hence differs from $9$ by less than $\varepsilon$. Therefore
-\[
+$$
 \boxed{f\in\mathcal R(\alpha),\qquad \int_{-1}^1 f\,d\alpha=9.}
-\]
+$$
 :::

@@ -23,9 +23,9 @@ audit:
 ::: {.problem}
 Let $G$ be a finite group and let $V$ be an irreducible complex representation of $G$.
 If $g\in G$ lies in the center of $G$, show that there exists $c\in\CC$ with
-\[
+$$
 g\cdot v=cv
-\]
+$$
 for all $v\in V$.
 :::
 
@@ -40,13 +40,13 @@ The operator $\rho(g)$ commutes with $\rho(h)$ for every $h\in G$.
 
 ::: pf-proof
 Since $g\in Z(G)$,
-\[
+$$
 gh=hg
-\]
+$$
 for every $h\in G$. Therefore
-\[
+$$
 \rho(g)\rho(h)=\rho(gh)=\rho(hg)=\rho(h)\rho(g).
-\]
+$$
 Thus $\rho(g)$ is an endomorphism of the $G$-module $V$.
 :::
 
@@ -54,15 +54,15 @@ Thus $\rho(g)$ is an endomorphism of the $G$-module $V$.
 
 ::: {.pf-step #rho-g-is-scalar}
 There exists $c\in\CC$ such that
-\[
+$$
 \rho(g)=cI_V.
-\]
+$$
 
 ::: pf-proof
 The representation $V$ is irreducible over the algebraically closed field $\CC$. By Schur's lemma,
-\[
+$$
 \operatorname{End}_G(V)=\CC\,I_V.
-\]
+$$
 By step [](#rho-g-commutes-with-rho-h){.pf-ref}, $\rho(g)\in\operatorname{End}_G(V)$, so $\rho(g)=cI_V$ for some $c\in\CC$.
 :::
 
@@ -70,10 +70,10 @@ By step [](#rho-g-commutes-with-rho-h){.pf-ref}, $\rho(g)\in\operatorname{End}_G
 
 ::: pf-step
 Hence
-\[
+$$
 g\cdot v=cv
 \qquad\text{for every }v\in V.
-\]
+$$
 
 ::: pf-proof
 This is exactly the statement $\rho(g)=cI_V$ from step [](#rho-g-is-scalar){.pf-ref} evaluated on $v$.

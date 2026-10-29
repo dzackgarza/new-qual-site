@@ -45,25 +45,25 @@ Define the truncated functions and their functionals.
 ::: pf-proof
 
 Set
-\[
+$$
 f_n:=\mathbf1_{\Omega_n}f\,\mathbf1_{\{|f|\le n\}}.
-\]
+$$
 Since $|f_n|\le n$ and $\mu(\Omega_n)<\infty$, we have $f_n\in L^3(\mu)$.
 
 Define
-\[
+$$
 T_n:L^{3/2}(\mu)\to\CC,
 \qquad
 T_n(g)=\int_\Omega f_n g\,d\mu.
-\]
+$$
 By Hölder's inequality, $T_n$ is bounded. Under the standard duality
-\[
+$$
 (L^{3/2})^*\cong L^3,
-\]
+$$
 its norm is
-\[
+$$
 \|T_n\|=\|f_n\|_3.
-\]
+$$
 
 :::
 
@@ -76,15 +76,15 @@ Show that the family $(T_n)$ is pointwise bounded.
 ::: pf-proof
 
 For every $g\in L^{3/2}(\mu)$,
-\[
+$$
 |T_n(g)|
 \le\int_\Omega |f_n g|\,d\mu
 \le\int_\Omega |fg|\,d\mu.
-\]
+$$
 The final quantity is finite by hypothesis and does not depend on $n$. Therefore
-\[
+$$
 \sup_n|T_n(g)|<\infty
-\]
+$$
 for every $g\in L^{3/2}(\mu)$.
 
 :::
@@ -98,29 +98,29 @@ Apply Uniform Boundedness and pass to the limit.
 ::: pf-proof
 
 Since $L^{3/2}(\mu)$ is Banach, the Principle of Uniform Boundedness gives
-\[
+$$
 \sup_n\|T_n\|<\infty.
-\]
+$$
 Thus there is $C<\infty$ such that
-\[
+$$
 \|f_n\|_3\le C
 \qquad\text{for all }n.
-\]
+$$
 
 Because $\Omega_n\uparrow\Omega$ and the cutoffs $\mathbf1_{\{|f|\le n\}}$ also increase, we have
-\[
+$$
 |f_n|^3\uparrow |f|^3
-\]
+$$
 pointwise. Hence the Monotone Convergence Theorem gives
-\[
+$$
 \int_\Omega |f|^3\,d\mu
 =\lim_{n\to\infty}\int_\Omega|f_n|^3\,d\mu
 \le C^3<\infty.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{f\in L^3(\mu).}
-\]
+$$
 
 :::
 

@@ -33,7 +33,7 @@ Let $\{\alpha_1, \ldots, \alpha_n\}$ be the set of zeros of $f$ in $E$.
 :::
 
 ::: {.solution}
-Let \(G=\operatorname{Gal}(E/F)\).
+Let $G=\operatorname{Gal}(E/F)$.
 
 **(a).**
 
@@ -41,11 +41,11 @@ Let \(G=\operatorname{Gal}(E/F)\).
 
 ::: {.pf-step #s1}
 
-The group \(G\) acts transitively on the roots \(\alpha_1,\dots,\alpha_n\) of \(f\).
+The group $G$ acts transitively on the roots $\alpha_1,\dots,\alpha_n$ of $f$.
 
 ::: pf-proof
 
-The polynomial \(f\) is irreducible over \(F\), and \(E\) is its splitting field. In a normal extension, any two roots of the same irreducible polynomial are conjugate by an \(F\)-automorphism of \(E\).
+The polynomial $f$ is irreducible over $F$, and $E$ is its splitting field. In a normal extension, any two roots of the same irreducible polynomial are conjugate by an $F$-automorphism of $E$.
 
 :::
 
@@ -53,19 +53,19 @@ The polynomial \(f\) is irreducible over \(F\), and \(E\) is its splitting field
 
 ::: {.pf-step #s2}
 
-For each \(i\), let
-\[
+For each $i$, let
+$$
 H_i=\{\sigma\in G:\sigma(\alpha_i)=\alpha_i\}
 =\operatorname{Gal}(E/F(\alpha_i)).
-\]
-If \(g(\alpha_i)=\alpha_j\), then
-\[
+$$
+If $g(\alpha_i)=\alpha_j$, then
+$$
 H_j=gH_i g^{-1}.
-\]
+$$
 
 ::: pf-proof
 
-This is the usual conjugacy relation between stabilizers in a group action. The equality with \(\operatorname{Gal}(E/F(\alpha_i))\) follows because fixing \(F\) and \(\alpha_i\) is equivalent to fixing the field they generate.
+This is the usual conjugacy relation between stabilizers in a group action. The equality with $\operatorname{Gal}(E/F(\alpha_i))$ follows because fixing $F$ and $\alpha_i$ is equivalent to fixing the field they generate.
 
 :::
 
@@ -73,11 +73,11 @@ This is the usual conjugacy relation between stabilizers in a group action. The 
 
 ::: pf-step
 
-If \(G\) is abelian, then all the subgroups \(H_i\) are equal.
+If $G$ is abelian, then all the subgroups $H_i$ are equal.
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, for every \(i,j\) there exists \(g\in G\) sending \(\alpha_i\) to \(\alpha_j\). Then step [](#s2){.pf-ref} gives \(H_j=gH_i g^{-1}=H_i\) because \(G\) is abelian.
+By step [](#s1){.pf-ref}, for every $i,j$ there exists $g\in G$ sending $\alpha_i$ to $\alpha_j$. Then step [](#s2){.pf-ref} gives $H_j=gH_i g^{-1}=H_i$ because $G$ is abelian.
 
 :::
 
@@ -89,7 +89,7 @@ This common subgroup is trivial.
 
 ::: pf-proof
 
-Let \(H=H_1=\cdots=H_n\). Every \(h\in H\) fixes every root \(\alpha_i\). Since \(E\) is the splitting field of \(f\), it is generated over \(F\) by these roots. Hence \(h\) fixes all of \(E\), so \(h=1\).
+Let $H=H_1=\cdots=H_n$. Every $h\in H$ fixes every root $\alpha_i$. Since $E$ is the splitting field of $f$, it is generated over $F$ by these roots. Hence $h$ fixes all of $E$, so $h=1$.
 
 :::
 
@@ -97,15 +97,15 @@ Let \(H=H_1=\cdots=H_n\). Every \(h\in H\) fixes every root \(\alpha_i\). Since 
 
 ::: pf-step
 
-Therefore \(E=F(\alpha_i)\) for every \(i\).
+Therefore $E=F(\alpha_i)$ for every $i$.
 
 ::: pf-proof
 
 By steps [](#s2){.pf-ref} and [](#s4){.pf-ref},
-\[
+$$
 \operatorname{Gal}(E/F(\alpha_i))=H_i=1.
-\]
-By the Galois correspondence, the fixed field of the trivial subgroup is \(E\), hence \(F(\alpha_i)=E\).
+$$
+By the Galois correspondence, the fixed field of the trivial subgroup is $E$, hence $F(\alpha_i)=E$.
 
 **(b).**
 
@@ -115,14 +115,14 @@ By the Galois correspondence, the fixed field of the trivial subgroup is \(E\), 
 
 ::: {.pf-step #s6}
 
-Suppose \(n=p\) is prime and \(E=F(\alpha_1)\). Then
-\[
+Suppose $n=p$ is prime and $E=F(\alpha_1)$. Then
+$$
 [E:F]=p.
-\]
+$$
 
 ::: pf-proof
 
-The minimal polynomial of \(\alpha_1\) over \(F\) is the irreducible polynomial \(f\), whose degree is \(p\). Since \(E=F(\alpha_1)\), the extension degree is \(p\).
+The minimal polynomial of $\alpha_1$ over $F$ is the irreducible polynomial $f$, whose degree is $p$. Since $E=F(\alpha_1)$, the extension degree is $p$.
 
 :::
 
@@ -130,11 +130,11 @@ The minimal polynomial of \(\alpha_1\) over \(F\) is the irreducible polynomial 
 
 ::: {.pf-step #s7}
 
-The extension \(E/F\) is Galois.
+The extension $E/F$ is Galois.
 
 ::: pf-proof
 
-The field \(E\) is the splitting field of \(f\). Since \(F\) has characteristic zero, every irreducible polynomial over \(F\) is separable. Thus \(E/F\) is normal and separable.
+The field $E$ is the splitting field of $f$. Since $F$ has characteristic zero, every irreducible polynomial over $F$ is separable. Thus $E/F$ is normal and separable.
 
 :::
 
@@ -143,13 +143,13 @@ The field \(E\) is the splitting field of \(f\). Since \(F\) has characteristic 
 ::: pf-step
 
 Hence
-\[
+$$
 |\operatorname{Gal}(E/F)|=[E:F]=p,
-\]
+$$
 so
-\[
+$$
 \operatorname{Gal}(E/F)\cong\ZZ/p\ZZ.
-\]
+$$
 
 ::: pf-proof
 

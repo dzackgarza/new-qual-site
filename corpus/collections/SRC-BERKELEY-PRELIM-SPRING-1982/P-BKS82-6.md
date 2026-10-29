@@ -24,17 +24,17 @@ audit:
 
 ::: {.problem}
 Let $f(x)$ be a polynomial with real coefficients, and let $a\in\RR$ satisfy $f(a)\ne0$. Prove that there is a real polynomial $g(x)$ such that, for
-\[
+$$
 p(x)=f(x)g(x),
-\]
+$$
 one has
-\[
+$$
 p(a)=1,
 \qquad
 p'(a)=0,
 \qquad
 p''(a)=0.
-\]
+$$
 :::
 
 ::: {.solution}

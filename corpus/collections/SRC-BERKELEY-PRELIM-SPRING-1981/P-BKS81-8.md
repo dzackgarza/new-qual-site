@@ -24,9 +24,9 @@ audit:
 ::: {.problem}
 Let $f:[0,1]\to\RR$ be continuous and let $k\in\NN$.
 Prove that there is a real polynomial $P$ of degree at most $k$ which minimizes
-\[
+$$
 \sup_{0\le x\le1}|f(x)-P(x)|
-\]
+$$
 among all real polynomials of degree at most $k$.
 :::
 

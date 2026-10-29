@@ -47,9 +47,9 @@ Hatcher Section 3.3 (The Orientation Double Cover).
 ::: pf-step
 
 For any point $x_0 \in M$, let $M' = M \setminus \{x_0\}$. The orientation double cover of $M'$ is the restriction:
-\[
+$$
 \widetilde{M'} = p^{-1}(M') = \widetilde{M} \setminus p^{-1}(x_0).
-\]
+$$
 
 ::: pf-proof
 
@@ -99,9 +99,9 @@ in a Euclidean chart $\RR^n$ ($n \ge 2$), $\RR^n \setminus \{0\}$ is connected, 
 **If $M$ is orientable:**
 $\widetilde{M} = M_1 \amalg M_2$ is a disjoint union of two connected components homeomorphic to $M$.
 Since $n \ge 2$, removing $y_1$ from $M_1$ and $y_2$ from $M_2$ leaves each component connected:
-\[
+$$
 \widetilde{M'} = (M_1 \setminus \{y_1\}) \amalg (M_2 \setminus \{y_2\}).
-\]
+$$
 Thus $\widetilde{M'}$ is disconnected, so $M'$ is orientable.
 
 ::: pf-proof

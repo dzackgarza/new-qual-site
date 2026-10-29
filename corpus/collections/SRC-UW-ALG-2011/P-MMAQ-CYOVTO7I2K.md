@@ -37,9 +37,9 @@ Let `\begin{align*} R=\ZZ[x]/(x^2+x+1). \end{align*}`{=tex}
 ::: {.pf-step #s1}
 
 The ring
-\[
+$$
 R=\ZZ[x]/(x^2+x+1)
-\]
+$$
 is a Noetherian integral domain.
 
 ::: pf-proof
@@ -59,17 +59,17 @@ The ring $R$ is not Artinian.
 ::: pf-proof
 
 The image of $2$ in $R$ is not a unit: indeed,
-\[
+$$
 R/(2)\cong \FF_2[x]/(x^2+x+1)
-\]
+$$
 is a nonzero ring. Consider the descending chain of ideals
-\[
+$$
 (2)\supseteq(2^2)\supseteq(2^3)\supseteq\cdots.
-\]
+$$
 Each inclusion is strict. If $(2^n)=(2^{n+1})$, then
-\[
+$$
 2^n=2^{n+1}r
-\]
+$$
 for some $r\in R$. Since $R$ is a domain by step [](#s1){.pf-ref}, cancellation gives $1=2r$, contradicting that $2$ is not a unit. Thus the descending chain condition fails, so $R$ is not Artinian.
 
 :::
@@ -79,30 +79,30 @@ for some $r\in R$. Since $R$ is a domain by step [](#s1){.pf-ref}, cancellation 
 ::: {.pf-step #s3}
 
 Let
-\[
+$$
 \omega=\frac{-1+\sqrt{-3}}2.
-\]
+$$
 Then
-\[
+$$
 R\cong\ZZ[\omega],
 \qquad
 \operatorname{Frac}(R)=\QQ(\sqrt{-3}).
-\]
+$$
 
 ::: pf-proof
 
 The element $\omega$ satisfies
-\[
+$$
 \omega^2+\omega+1=0.
-\]
+$$
 Since this polynomial is irreducible over $\QQ$, evaluation at $\omega$ induces an injective homomorphism
-\[
+$$
 \ZZ[x]/(x^2+x+1)\longrightarrow\CC
-\]
+$$
 with image $\ZZ[\omega]$. Its fraction field is
-\[
+$$
 \QQ(\omega)=\QQ(\sqrt{-3}).
-\]
+$$
 
 :::
 
@@ -115,33 +115,33 @@ Every element of $\QQ(\sqrt{-3})$ that is integral over $\ZZ$ lies in $\ZZ[\omeg
 ::: pf-proof
 
 Let $\alpha\in\QQ(\sqrt{-3})$ be integral over $\ZZ$. Its conjugate $\bar\alpha$ is also integral, so its trace and norm
-\[
+$$
 T=\alpha+\bar\alpha,
 \qquad
 N=\alpha\bar\alpha
-\]
+$$
 are rational algebraic integers and therefore integers.
 
 Write
-\[
+$$
 \alpha=\frac{T+q\sqrt{-3}}2
-\]
+$$
 for some $q\in\QQ$. Since
-\[
+$$
 T^2-4N=(\alpha-\bar\alpha)^2=-3q^2,
-\]
+$$
 we have $3q^2\in\ZZ$. Write $q=a/b$ in lowest terms. Then $b^2\mid3a^2$; coprimality gives $b^2\mid3$, hence $b=1$. Thus $q\in\ZZ$.
 
 Moreover,
-\[
+$$
 4N=T^2+3q^2.
-\]
+$$
 Modulo $4$, this forces $T$ and $q$ to have the same parity: if exactly one were odd, the right side would be congruent to $1$ or $3$ modulo $4$. Hence
-\[
+$$
 \alpha
 =\frac{T+q\sqrt{-3}}2
 =\frac{T+q}{2}+q\omega\in\ZZ[\omega].
-\]
+$$
 
 :::
 
@@ -154,9 +154,9 @@ The domain $R$ is integrally closed.
 ::: pf-proof
 
 Let $\alpha\in\operatorname{Frac}(R)$ be integral over $R$. By step [](#s3){.pf-ref},
-\[
+$$
 \operatorname{Frac}(R)=\QQ(\sqrt{-3}).
-\]
+$$
 The ring $R=\ZZ[\omega]$ is integral over $\ZZ$ because $\omega$ satisfies the monic polynomial $x^2+x+1$. Since $\alpha$ is integral over $R$, transitivity of integrality implies that $\alpha$ is integral over $\ZZ$. By step [](#s4){.pf-ref}, $\alpha\in\ZZ[\omega]=R$. Therefore $R$ is integrally closed.
 
 :::

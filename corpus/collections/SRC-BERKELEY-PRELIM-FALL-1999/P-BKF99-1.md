@@ -24,9 +24,9 @@ audit:
 
 ::: {.problem}
 Let $V,W$ be finite-dimensional vector spaces, let $X\subseteq W$ be a subspace, and let $T:V\to W$ be linear. Prove that
-\[
+$$
 \dim T^{-1}(X)\ge \dim V-\dim W+\dim X.
-\]
+$$
 :::
 
 ::: {.solution}

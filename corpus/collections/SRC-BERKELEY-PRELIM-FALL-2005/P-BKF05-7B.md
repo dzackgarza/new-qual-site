@@ -28,14 +28,14 @@ audit:
 ---
 
 ::: {.problem}
-Let \(V\) be a finite-dimensional complex inner-product space and let \(T:V\to V\) be Hermitian.
+Let $V$ be a finite-dimensional complex inner-product space and let $T:V\to V$ be Hermitian.
 
-(a) Prove that \(I+iT\) is invertible.
+(a) Prove that $I+iT$ is invertible.
 
 (b) Prove that
-\[
+$$
 (I-iT)(I+iT)^{-1}
-\]
+$$
 is unitary.
 :::
 

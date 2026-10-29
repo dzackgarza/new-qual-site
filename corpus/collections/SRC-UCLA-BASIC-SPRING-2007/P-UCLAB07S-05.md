@@ -24,37 +24,37 @@ Prove that if $v$ is an eigenvector of $T$, then $v$ is also an eigenvector of $
 ::: {.solution}
 
 Suppose
-\[
+$$
 Tv=\lambda v
-\]
+$$
 with
-\[
+$$
 v\ne0.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 The operator
-\[
+$$
 S=T-\lambda I
-\]
+$$
 is normal.
 
 
 ::: pf-proof
 
 Since $T$ is normal,
-\[
+$$
 T^*T=TT^*.
-\]
+$$
 Now
-\[
+$$
 S^*=T^*-\overline{\lambda}I.
-\]
+$$
 Hence
-\[
+$$
 \begin{aligned}
 S^*S
 &=
@@ -62,9 +62,9 @@ S^*S
 &=
 T^*T-\lambda T^*-\overline{\lambda}T+|\lambda|^2I,
 \end{aligned}
-\]
+$$
 while
-\[
+$$
 \begin{aligned}
 SS^*
 &=
@@ -72,11 +72,11 @@ SS^*
 &=
 TT^*-\overline{\lambda}T-\lambda T^*+|\lambda|^2I.
 \end{aligned}
-\]
+$$
 These are equal because
-\[
+$$
 T^*T=TT^*.
-\]
+$$
 Thus $S$ is normal.
 
 :::
@@ -86,20 +86,20 @@ Thus $S$ is normal.
 ::: {.pf-step #s1-2}
 
 For every normal operator $N$ on a finite-dimensional complex inner-product space,
-\[
+$$
 \|Nx\|=\|N^*x\|
-\]
+$$
 for all $x$.
 
 
 ::: pf-proof
 
 Normality gives
-\[
+$$
 N^*N=NN^*.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 \|Nx\|^2
 &=
@@ -113,7 +113,7 @@ Therefore
 &=
 \|N^*x\|^2.
 \end{aligned}
-\]
+$$
 Taking nonnegative square roots gives the claim.
 
 :::
@@ -123,20 +123,20 @@ Taking nonnegative square roots gives the claim.
 ::: {.pf-step #s1-3}
 
 One has
-\[
+$$
 Sv=0.
-\]
+$$
 
 
 ::: pf-proof
 
 By definition,
-\[
+$$
 Sv
 =(T-\lambda I)v
 =Tv-\lambda v
 =0.
-\]
+$$
 
 :::
 
@@ -145,32 +145,32 @@ Sv
 ::: {.pf-step #s1-4}
 
 One has
-\[
+$$
 S^*v=0.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref}, $S$ is normal.
 Therefore step [](#s1-2){.pf-ref} gives
-\[
+$$
 \|S^*v\|
 =
 \|Sv\|.
-\]
+$$
 By step [](#s1-3){.pf-ref},
-\[
+$$
 \|Sv\|=0.
-\]
+$$
 Hence
-\[
+$$
 \|S^*v\|=0,
-\]
+$$
 so
-\[
+$$
 S^*v=0.
-\]
+$$
 
 :::
 
@@ -179,25 +179,25 @@ S^*v=0.
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 \boxed{T^*v=\overline{\lambda}v}.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 S^*=T^*-\overline{\lambda}I,
-\]
+$$
 step [](#s1-4){.pf-ref} says
-\[
+$$
 (T^*-\overline{\lambda}I)v=0.
-\]
+$$
 Thus
-\[
+$$
 T^*v=\overline{\lambda}v.
-\]
+$$
 
 :::
 

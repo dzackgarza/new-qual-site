@@ -35,10 +35,10 @@ Prove that $\operatorname{Hom}_A(M, N)$ is a projective $A$-module.
 
 ::: {.pf-step #s1}
 
-Since \(M\) is finitely generated projective, there exist an integer \(r\ge0\) and an \(A\)-module \(M'\) such that
-\[
+Since $M$ is finitely generated projective, there exist an integer $r\ge0$ and an $A$-module $M'$ such that
+$$
 M\oplus M'\cong A^r.
-\]
+$$
 
 ::: pf-proof
 
@@ -51,21 +51,21 @@ A finitely generated projective module is a direct summand of a finite free modu
 ::: {.pf-step #s2}
 
 The dual module
-\[
+$$
 M^\vee=\operatorname{Hom}_A(M,A)
-\]
+$$
 is finitely generated projective.
 
 ::: pf-proof
 
-Apply \(\operatorname{Hom}_A(-,A)\) to the direct-sum isomorphism in step [](#s1){.pf-ref}. Since Hom sends a finite direct sum in the first variable to a direct sum,
-\[
+Apply $\operatorname{Hom}_A(-,A)$ to the direct-sum isomorphism in step [](#s1){.pf-ref}. Since Hom sends a finite direct sum in the first variable to a direct sum,
+$$
 M^\vee\oplus (M')^\vee
 \cong
 \operatorname{Hom}_A(A^r,A)
 \cong A^r.
-\]
-Thus \(M^\vee\) is a direct summand of a finite free module.
+$$
+Thus $M^\vee$ is a direct summand of a finite free module.
 
 :::
 
@@ -73,10 +73,10 @@ Thus \(M^\vee\) is a direct summand of a finite free module.
 
 ::: {.pf-step #s3}
 
-Since \(N\) is finitely generated projective, there exist an integer \(s\ge0\) and an \(A\)-module \(N'\) such that
-\[
+Since $N$ is finitely generated projective, there exist an integer $s\ge0$ and an $A$-module $N'$ such that
+$$
 N\oplus N'\cong A^s.
-\]
+$$
 
 ::: pf-proof
 
@@ -88,8 +88,8 @@ Again use that finitely generated projective modules are direct summands of fini
 
 ::: {.pf-step #s4}
 
-Applying \(\operatorname{Hom}_A(M,-)\) to step [](#s3){.pf-ref} gives
-\[
+Applying $\operatorname{Hom}_A(M,-)$ to step [](#s3){.pf-ref} gives
+$$
 \operatorname{Hom}_A(M,N)
 \oplus
 \operatorname{Hom}_A(M,N')
@@ -97,16 +97,16 @@ Applying \(\operatorname{Hom}_A(M,-)\) to step [](#s3){.pf-ref} gives
 \operatorname{Hom}_A(M,A^s)
 \cong
 (M^\vee)^s.
-\]
+$$
 
 ::: pf-proof
 
 Hom in the second variable preserves finite direct sums, and
-\[
+$$
 \operatorname{Hom}_A(M,A^s)
 \cong
 \operatorname{Hom}_A(M,A)^s.
-\]
+$$
 
 :::
 
@@ -114,11 +114,11 @@ Hom in the second variable preserves finite direct sums, and
 
 ::: pf-step
 
-The module \((M^\vee)^s\) is projective.
+The module $(M^\vee)^s$ is projective.
 
 ::: pf-proof
 
-By step [](#s2){.pf-ref}, \(M^\vee\) is projective. A finite direct sum of projective modules is projective.
+By step [](#s2){.pf-ref}, $M^\vee$ is projective. A finite direct sum of projective modules is projective.
 
 :::
 
@@ -126,11 +126,11 @@ By step [](#s2){.pf-ref}, \(M^\vee\) is projective. A finite direct sum of proje
 
 ::: pf-step
 
-Therefore \(\operatorname{Hom}_A(M,N)\) is projective.
+Therefore $\operatorname{Hom}_A(M,N)$ is projective.
 
 ::: pf-proof
 
-By step [](#s4){.pf-ref} it is a direct summand of the projective module \((M^\vee)^s\). Direct summands of projective modules are projective.
+By step [](#s4){.pf-ref} it is a direct summand of the projective module $(M^\vee)^s$. Direct summands of projective modules are projective.
 
 :::
 

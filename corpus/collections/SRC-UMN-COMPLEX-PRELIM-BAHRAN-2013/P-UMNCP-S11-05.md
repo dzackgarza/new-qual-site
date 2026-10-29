@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that a nonconstant entire function maps \(\CC\) onto a dense subset of \(\CC\).
+Prove that a nonconstant entire function maps $\CC$ onto a dense subset of $\CC$.
 :::
 
 ::: {.solution}

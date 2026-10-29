@@ -25,13 +25,13 @@ audit:
 
 ::: {.problem}
 Suppose $A,B$ are real $n\times n$ matrices and $C$ is an invertible complex $n\times n$ matrix such that
-\[
+$$
 CAC^{-1}=B.
-\]
+$$
 Find an invertible real $n\times n$ matrix $D$ such that
-\[
+$$
 DAD^{-1}=B.
-\]
+$$
 :::
 
 ::: {.solution}

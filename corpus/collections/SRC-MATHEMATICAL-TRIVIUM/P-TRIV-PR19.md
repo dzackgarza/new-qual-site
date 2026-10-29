@@ -37,9 +37,9 @@ Let $S=\xi+\eta$. Both $\xi$ and $\eta$ are independent Bernoulli random variabl
 ::: {.pf-step #s1-1}
 
 Independence gives
-\[
+$$
 \mathbf E(\xi\mid\eta)=\mathbf E\xi=p.
-\]
+$$
 
 
 ::: pf-proof
@@ -53,18 +53,18 @@ For each possible value of $\eta$, the conditional distribution of $\xi$ equals 
 ::: {.pf-step #s1-2}
 
 Therefore
-\[
+$$
 \boxed{\mathbf E(\xi+\eta\mid\eta)=p+\eta}.
-\]
+$$
 
 
 ::: pf-proof
 
 By linearity of conditional expectation and because $\eta$ is measurable with respect to itself,
-\[
+$$
 \mathbf E(\xi+\eta\mid\eta)
 =\mathbf E(\xi\mid\eta)+\eta.
-\]
+$$
 Apply step [](#s1-1){.pf-ref}.
 
 :::
@@ -87,9 +87,9 @@ Since $\xi,\eta\in\{0,1\}$, the sum $0$ occurs only for $(0,0)$ and the sum $2$ 
 ::: {.pf-step #s1-4}
 
 Conditional on $S=1$,
-\[
+$$
 P(\xi=1\mid S=1)=\frac12.
-\]
+$$
 
 
 ::: pf-proof
@@ -103,9 +103,9 @@ The event $S=1$ consists of the two outcomes $(\xi,\eta)=(1,0)$ and $(0,1)$. Ind
 ::: {.pf-step #s1-5}
 
 Hence
-\[
+$$
 \boxed{\mathbf E(\xi\mid\xi+\eta)=\frac{\xi+\eta}{2}}.
-\]
+$$
 
 
 ::: pf-proof

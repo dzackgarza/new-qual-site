@@ -22,14 +22,14 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int\frac{x^2}{1+x^6}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}
 Let $u=x^3$, so $du=3x^2\,dx$. Therefore
-\[
+$$
 \boxed{\int\frac{x^2}{1+x^6}\,dx=\frac13\arctan(x^3)+C.}
-\]
+$$
 :::

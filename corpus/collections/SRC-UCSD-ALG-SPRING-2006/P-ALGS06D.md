@@ -42,9 +42,9 @@ Prove the following.
 ::: {.pf-step #s1}
 
 Let $G$ act by left multiplication on the set $G/H$ of $r$ left cosets. This gives a homomorphism
-\[
+$$
 \rho:G\longrightarrow S_r.
-\]
+$$
 If $G$ is simple, then $\rho$ is injective.
 
 ::: pf-proof
@@ -65,9 +65,9 @@ If $G$ is simple, then $G$ is finite and $|G|\mid r!$.
 
 By step [](#s1){.pf-ref}, $G$ embeds in the finite group $S_r$.
 Hence $G$ is finite, and Lagrange's theorem gives
-\[
+$$
 |G|\mid |S_r|=r!.
-\]
+$$
 
 :::
 
@@ -81,14 +81,14 @@ For $r\in\{2,3,4\}$, the symmetric group $S_r$ is solvable.
 
 For $S_2$ this is immediate.
 For $S_3$ use the normal series
-\[
+$$
 1\triangleleft A_3\triangleleft S_3,
-\]
+$$
 whose factors are cyclic.
 For $S_4$ use
-\[
+$$
 1\triangleleft V_4\triangleleft A_4\triangleleft S_4,
-\]
+$$
 where $V_4$ is the Klein four subgroup; all successive quotients are abelian.
 
 :::
@@ -113,18 +113,18 @@ But $H$ is nontrivial and proper since $[G:H]=r\ge2$, a contradiction.
 ::: {.pf-step #s5}
 
 Let $r\ge5$ and take $G=A_r$ acting naturally on $\{1,\dots,r\}$. Let
-\[
+$$
 H=\operatorname{Stab}_{A_r}(1).
-\]
+$$
 Then $H$ is nontrivial and $[G:H]=r$.
 
 ::: pf-proof
 
 The natural action of $A_r$ is transitive for $r\ge3$.
 Hence orbit-stabilizer gives
-\[
+$$
 [A_r:H]=r.
-\]
+$$
 Moreover $H\cong A_{r-1}$, which is nontrivial for $r\ge5$.
 
 :::

@@ -29,35 +29,35 @@ Formulate and prove DeMorgan's laws for arbitrary unions and intersections.
 :::
 
 ::: {.solution}
-Fix a set \(X\) and a family \(\{A_i\}_{i\in I}\) of subsets of \(X\). The arbitrary DeMorgan laws are
-\[
+Fix a set $X$ and a family $\{A_i\}_{i\in I}$ of subsets of $X$. The arbitrary DeMorgan laws are
+$$
 X-\bigcup_{i\in I}A_i
 =
 \bigcap_{i\in I}(X-A_i)
-\]
+$$
 and
-\[
+$$
 X-\bigcap_{i\in I}A_i
 =
 \bigcup_{i\in I}(X-A_i).
-\]
+$$
 
 For the first identity,
-\[
+$$
 \begin{aligned}
 x\in X-\bigcup_iA_i
 &\iff x\in X\text{ and }x\notin A_i\text{ for every }i\\
 &\iff x\in X-A_i\text{ for every }i\\
 &\iff x\in\bigcap_i(X-A_i).
 \end{aligned}
-\]
+$$
 For the second,
-\[
+$$
 \begin{aligned}
 x\in X-\bigcap_iA_i
 &\iff x\in X\text{ and it is not true that }x\in A_i\text{ for every }i\\
 &\iff x\in X\text{ and }x\notin A_i\text{ for at least one }i\\
 &\iff x\in\bigcup_i(X-A_i).
 \end{aligned}
-\]
+$$
 :::

@@ -30,16 +30,16 @@ Show that if $G_1$ is a subgroup of $G$, there may be no subgroup $G_2$ of $G$ s
 
 ::: {.solution}
 Take
-\[
+$$
 G=\ZZ,\qquad G_1=2\ZZ.
-\]
-Suppose there were a subgroup \(G_2\le\ZZ\) with
-\[
+$$
+Suppose there were a subgroup $G_2\le\ZZ$ with
+$$
 \ZZ=2\ZZ\oplus G_2.
-\]
-Every subgroup of \(\ZZ\) has the form \(m\ZZ\) for some \(m\ge0\). If \(m=0\), then \(2\ZZ+G_2=2\ZZ\ne\ZZ\). If \(m>0\), then
-\[
+$$
+Every subgroup of $\ZZ$ has the form $m\ZZ$ for some $m\ge0$. If $m=0$, then $2\ZZ+G_2=2\ZZ\ne\ZZ$. If $m>0$, then
+$$
 2m\in2\ZZ\cap m\ZZ
-\]
-is nonzero, contradicting directness. Therefore \(2\ZZ\) is a subgroup of \(\ZZ\) that has no complementary subgroup.
+$$
+is nonzero, contradicting directness. Therefore $2\ZZ$ is a subgroup of $\ZZ$ that has no complementary subgroup.
 :::

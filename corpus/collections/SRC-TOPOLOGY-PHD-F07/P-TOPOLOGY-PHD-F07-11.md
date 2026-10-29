@@ -35,14 +35,14 @@ Prove that a connected component is connected.
 
 ::: {.solution}
 Fix $x\in X$ and let
-\[
+$$
 \mathcal C_x
 =\{C\subseteq X:C\text{ is connected and }x\in C\}.
-\]
+$$
 Define the connected component of $x$ to be
-\[
+$$
 K_x=\bigcup_{C\in\mathcal C_x}C.
-\]
+$$
 
 ::: pf
 
@@ -51,9 +51,9 @@ The family $\mathcal C_x$ is nonempty.
 
 ::: pf-proof
 The singleton $\{x\}$ is connected and contains $x$, so
-\[
+$$
 \{x\}\in\mathcal C_x.
-\]
+$$
 :::
 
 :::
@@ -63,37 +63,37 @@ The set $K_x$ is connected.
 
 ::: pf-proof
 Suppose, for contradiction, that
-\[
+$$
 K_x=U\cup V
-\]
+$$
 is a separation of $K_x$, so $U$ and $V$ are disjoint nonempty sets open in the subspace $K_x$.
 By step [](#cx-nonempty){.pf-ref}, $x\in K_x$.
 Since $U$ and $V$ are disjoint and cover $K_x$, exactly one contains $x$; after interchanging them if necessary, assume
-\[
+$$
 x\in U.
-\]
+$$
 
 Take any $C\in\mathcal C_x$.
 Then
-\[
+$$
 C=(C\cap U)\cup(C\cap V),
-\]
+$$
 where $C\cap U$ and $C\cap V$ are disjoint sets open in the subspace $C$.
 Moreover,
-\[
+$$
 x\in C\cap U,
-\]
+$$
 so $C\cap U$ is nonempty.
 Because $C$ is connected, $C\cap V$ must therefore be empty.
 Hence
-\[
+$$
 C\subseteq U
-\]
+$$
 for every $C\in\mathcal C_x$.
 Taking the union over all such $C$ gives
-\[
+$$
 K_x\subseteq U,
-\]
+$$
 so $V=\varnothing$, contradicting that $U,V$ form a separation.
 Thus $K_x$ is connected.
 :::
@@ -105,17 +105,17 @@ The set $K_x$ is maximal among connected subsets of $X$ containing $x$.
 
 ::: pf-proof
 Let $D\subseteq X$ be connected with
-\[
+$$
 K_x\subseteq D.
-\]
+$$
 Since $x\in K_x$, we have $x\in D$, and therefore
-\[
+$$
 D\in\mathcal C_x.
-\]
+$$
 By the definition of $K_x$ as the union of all members of $\mathcal C_x$,
-\[
+$$
 D\subseteq K_x.
-\]
+$$
 Together with $K_x\subseteq D$, this gives $D=K_x$.
 Thus no strictly larger connected subset containing $x$ exists.
 :::
@@ -128,13 +128,13 @@ Consequently, connected components are exactly the maximal connected subsets of 
 ::: pf-proof
 By steps [](#kx-connected){.pf-ref} and [](#kx-maximal){.pf-ref}, $K_x$ is connected and maximal connected for every $x\in X$.
 Conversely, if $M\subseteq X$ is maximal connected and $x\in M$, then $M\in\mathcal C_x$, so
-\[
+$$
 M\subseteq K_x.
-\]
+$$
 Since $K_x$ is connected by step [](#kx-connected){.pf-ref} and contains $M$, maximality of $M$ gives
-\[
+$$
 M=K_x.
-\]
+$$
 Hence the two standard descriptions agree, and in particular every connected component is connected.
 :::
 

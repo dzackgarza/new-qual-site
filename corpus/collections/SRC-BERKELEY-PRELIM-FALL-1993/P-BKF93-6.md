@@ -24,13 +24,13 @@ audit:
 
 ::: {.problem}
 Let $A,B,C$ be finite abelian groups. Prove that if
-\[
+$$
 A\times B\cong A\times C,
-\]
+$$
 then
-\[
+$$
 B\cong C.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -25,16 +25,16 @@ Suppose that $\lambda=(\lambda_1\geq\lambda_2\geq\cdots\geq\lambda_k)$ is a part
 Then $A^\lambda$ denotes the irreducible representation of the symmetric group $S_n$ such that the Frobenius image of $\chi^{A^\lambda}=\chi^\lambda$ is the Schur function $S_\lambda(x_1,\ldots,x_N)$ where $N>n$, and $S_{\lambda_1}\times\cdots\times S_{\lambda_k}$ denotes the Young subgroup of $S_n$ corresponding to $\lambda$.
 
 (a) Find the decomposition of
-\[
+$$
 A^{(2,1^2)}\times A^{(2,2)}\uparrow_{S_4\times S_4}^{S_8}
-\]
+$$
 as a sum of irreducible representations of $S_8$.
 
 (b) Let $T$ denote the trivial representation on the Young subgroup $S_3\times S_2\times S_1$ of $S_7$ and $\mathrm{Alt}$ denote the alternating representation on the Young subgroup $S_3\times S_2\times S_1$ of $S_7$.
 Find the decomposition of
-\[
+$$
 T\uparrow_{S_3\times S_2\times S_1}^{S_7}\quad\text{and}\quad\mathrm{Alt}\uparrow_{S_3\times S_2\times S_1}^{S_7}
-\]
+$$
 as a sum of irreducible representations of $S_7$.
 
 (c) Find the decomposition of the Kronecker product $A^{(3,2)}\otimes A^{(3,2)}$ as a sum of irreducible representations of $S_5$.
@@ -52,23 +52,23 @@ We use the Frobenius characteristic map. Under this map, induction from a Young 
 ::: {.pf-step #s1}
 
 For part (a),
-\[
+$$
 \operatorname{ch}\left(\left(A^{(2,1,1)}\boxtimes A^{(2,2)}\right)\uparrow_{S_4\times S_4}^{S_8}\right)
 =s_{(2,1,1)}s_{(2,2)}.
-\]
+$$
 Moreover
-\[
+$$
 s_{(2,2)}=h_2^2-h_3h_1.
-\]
+$$
 
 ::: pf-proof
 
 The first assertion is the induction-product property of the Frobenius characteristic. The second is the Jacobi--Trudi determinant
-\[
+$$
 s_{(2,2)}=
 \det\begin{pmatrix}h_2&h_3\\ h_1&h_2\end{pmatrix}
 =h_2^2-h_3h_1.
-\]
+$$
 
 :::
 
@@ -77,37 +77,37 @@ s_{(2,2)}=
 ::: {.pf-step #s2}
 
 Repeated application of the Pieri rule gives
-\[
+$$
 \begin{aligned}
 s_{(2,1,1)}h_2^2
 ={}&s_{(2,2,2,1,1)}+2s_{(3,2,1,1,1)}+2s_{(3,2,2,1)}+2s_{(3,3,1,1)}+s_{(3,3,2)}\\
 &+s_{(4,1,1,1,1)}+4s_{(4,2,1,1)}+s_{(4,2,2)}+2s_{(4,3,1)}\\
 &+2s_{(5,1,1,1)}+2s_{(5,2,1)}+s_{(6,1,1)},
 \end{aligned}
-\]
+$$
 and
-\[
+$$
 \begin{aligned}
 s_{(2,1,1)}h_3h_1
 ={}&s_{(3,2,1,1,1)}+s_{(3,2,2,1)}+s_{(3,3,1,1)}+s_{(4,1,1,1,1)}\\
 &+3s_{(4,2,1,1)}+s_{(4,2,2)}+s_{(4,3,1)}\\
 &+2s_{(5,1,1,1)}+2s_{(5,2,1)}+s_{(6,1,1)}.
 \end{aligned}
-\]
+$$
 
 ::: pf-proof
 
 The Pieri rule says that $s_\lambda h_r$ is the sum of $s_\mu$ over partitions $\mu$ for which $\mu/\lambda$ is a horizontal $r$-strip, each with coefficient $1$.
 First,
-\[
+$$
 s_{(2,1,1)}h_2
 =s_{(2,2,1,1)}+s_{(3,1,1,1)}+s_{(3,2,1)}+s_{(4,1,1)},
-\]
+$$
 while
-\[
+$$
 s_{(2,1,1)}h_3
 =s_{(3,2,1,1)}+s_{(4,1,1,1)}+s_{(4,2,1)}+s_{(5,1,1)}.
-\]
+$$
 Applying Pieri once more, with $h_2$ in the first line and $h_1$ in the second, and collecting equal partitions gives exactly the two displayed expansions.
 
 :::
@@ -117,13 +117,13 @@ Applying Pieri once more, with $h_2$ in the first line and $h_1$ in the second, 
 ::: pf-step
 
 Therefore
-\[
+$$
 \begin{aligned}
 \left(A^{(2,1,1)}\boxtimes A^{(2,2)}\right)\uparrow_{S_4\times S_4}^{S_8}
 \cong{}&A^{(2,2,2,1,1)}\oplus A^{(3,2,1,1,1)}\oplus A^{(3,2,2,1)}\\
 &\oplus A^{(3,3,1,1)}\oplus A^{(3,3,2)}\oplus A^{(4,2,1,1)}\oplus A^{(4,3,1)}.
 \end{aligned}
-\]
+$$
 
 ::: pf-proof
 
@@ -138,28 +138,28 @@ For part (b), interpret the source as in the remark: the subgroup is the Young s
 ::: {.pf-step #s4}
 
 The induced trivial representation has Frobenius characteristic
-\[
+$$
 s_{(3)}s_{(2)}s_{(1)}^2.
-\]
+$$
 Repeated Pieri gives
-\[
+$$
 \begin{aligned}
 s_{(3)}s_{(2)}s_{(1)}^2
 ={}&s_{(3,2,1,1)}+s_{(3,2,2)}+2s_{(3,3,1)}+s_{(4,1,1,1)}\\
 &+4s_{(4,2,1)}+3s_{(4,3)}+3s_{(5,1,1)}+4s_{(5,2)}+3s_{(6,1)}+s_{(7)}.
 \end{aligned}
-\]
+$$
 
 ::: pf-proof
 
 First Pieri gives
-\[
+$$
 s_{(3)}s_{(2)}=s_{(3,2)}+s_{(4,1)}+s_{(5)}.
-\]
+$$
 Multiplying by one copy of $s_{(1)}=h_1$ gives
-\[
+$$
 s_{(3,2,1)}+s_{(3,3)}+s_{(4,1,1)}+2s_{(4,2)}+2s_{(5,1)}+s_{(6)}.
-\]
+$$
 A second multiplication by $h_1$ and another application of Pieri gives the displayed degree-$7$ expansion.
 
 :::
@@ -169,14 +169,14 @@ A second multiplication by $h_1$ and another application of Pieri gives the disp
 ::: {.pf-step #s5}
 
 Hence
-\[
+$$
 \begin{aligned}
 T\uparrow_{S_3\times S_2\times S_1}^{S_7}
 \cong{}&A^{(3,2,1,1)}\oplus A^{(3,2,2)}\oplus2A^{(3,3,1)}\oplus A^{(4,1,1,1)}\\
 &\oplus4A^{(4,2,1)}\oplus3A^{(4,3)}\oplus3A^{(5,1,1)}\\
 &\oplus4A^{(5,2)}\oplus3A^{(6,1)}\oplus A^{(7)}.
 \end{aligned}
-\]
+$$
 
 ::: pf-proof
 
@@ -189,37 +189,37 @@ This is the representation decomposition corresponding to the Schur expansion in
 ::: pf-step
 
 The alternating induction is obtained from step [](#s5){.pf-ref} by conjugating every partition:
-\[
+$$
 \begin{aligned}
 \mathrm{Alt}\uparrow_{S_3\times S_2\times S_1}^{S_7}
 \cong{}&A^{(1^7)}\oplus3A^{(2,1^5)}\oplus4A^{(2,2,1,1,1)}\oplus3A^{(2,2,2,1)}\\
 &\oplus3A^{(3,1,1,1,1)}\oplus4A^{(3,2,1,1)}\oplus2A^{(3,2,2)}\\
 &\oplus A^{(3,3,1)}\oplus A^{(4,1,1,1)}\oplus A^{(4,2,1)}.
 \end{aligned}
-\]
+$$
 
 ::: pf-proof
 
 Let $H=S_3\times S_2\times S_1\times S_1\le S_7$. The alternating representation in the problem is the restriction of the sign representation $\operatorname{sgn}_{S_7}$ to $H$. For any $H$-module $V$ and $S_7$-module $W$ there is a natural isomorphism
-\[
+$$
 \operatorname{Ind}_H^{S_7}(V\otimes\operatorname{Res}_H W)
 \cong
 \operatorname{Ind}_H^{S_7}(V)\otimes W.
-\]
+$$
 Taking $V$ trivial and $W=\operatorname{sgn}_{S_7}$ shows that the alternating induction is the sign twist of the trivial induction. Since
-\[
+$$
 A^\lambda\otimes\operatorname{sgn}\cong A^{\lambda'},
-\]
+$$
 conjugating the partitions in step [](#s5){.pf-ref} gives exactly the displayed decomposition.
 
 For part (c), use the conjugacy classes of $S_5$ in the order
-\[
+$$
 (5),(4,1),(3,2),(3,1,1),(2,2,1),(2,1,1,1),(1^5),
-\]
+$$
 whose sizes are
-\[
+$$
 24,30,20,20,15,10,1.
-\]
+$$
 
 :::
 
@@ -228,13 +228,13 @@ whose sizes are
 ::: {.pf-step #s7}
 
 The character of $A^{(3,2)}$ on these classes is
-\[
+$$
 \chi^{(3,2)}=(0,-1,1,-1,1,1,5).
-\]
+$$
 Consequently the character of $A^{(3,2)}\otimes A^{(3,2)}$ is
-\[
+$$
 (0,1,1,1,1,1,25).
-\]
+$$
 
 ::: pf-proof
 
@@ -247,15 +247,15 @@ The first row follows from the Murnaghan--Nakayama rule applied to the diagram $
 ::: {.pf-step #s8}
 
 The pointwise square in step [](#s7){.pf-ref} is the sum of the irreducible characters indexed by
-\[
+$$
 (5),\ (4,1),\ (3,2),\ (3,1,1),\ (2,2,1),\ (2,1,1,1),
-\]
+$$
 each with multiplicity $1$, and has zero inner product with the sign character $(1^5)$.
 
 ::: pf-proof
 
 On the same ordered conjugacy classes, these six irreducible rows are
-\[
+$$
 \begin{array}{c|rrrrrrr}
 (5)&1&1&1&1&1&1&1\\
 (4,1)&-1&0&-1&1&0&2&4\\
@@ -264,11 +264,11 @@ On the same ordered conjugacy classes, these six irreducible rows are
 (2,2,1)&0&1&-1&-1&1&-1&5\\
 (2,1,1,1)&-1&0&1&1&0&-2&4.
 \end{array}
-\]
+$$
 These rows are obtained from Murnaghan--Nakayama (with the dimensions at $(1^5)$ given by the hook-length formula). Adding them columnwise gives
-\[
+$$
 (0,1,1,1,1,1,25),
-\]
+$$
 which is exactly the tensor-square character from step [](#s7){.pf-ref}. The remaining irreducible character is the sign character. The six displayed rows together with the sign character form all seven irreducible characters of $S_5$; since the tensor-square character already equals the sum of the six displayed rows, uniqueness of irreducible-character expansion gives sign multiplicity $0$.
 
 :::
@@ -278,12 +278,12 @@ which is exactly the tensor-square character from step [](#s7){.pf-ref}. The rem
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{
 A^{(3,2)}\otimes A^{(3,2)}
 \cong
 A^{(5)}\oplus A^{(4,1)}\oplus A^{(3,2)}\oplus A^{(3,1,1)}\oplus A^{(2,2,1)}\oplus A^{(2,1,1,1)}.}
-\]
+$$
 
 ::: pf-proof
 

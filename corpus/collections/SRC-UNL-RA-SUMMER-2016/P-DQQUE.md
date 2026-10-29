@@ -27,21 +27,21 @@ audit:
 
 ::: {.problem}
 Let $\{a_k\}_{k=1}^\infty$ be a bounded sequence of real numbers and set
-\[
+$$
 E:=\left\{s\in\RR:\{k\in\NN:a_k\ge s\}\text{ is finite}\right\}.
-\]
+$$
 Prove that
-\[
+$$
 \limsup_{k\to\infty}a_k=\inf E.
-\]
+$$
 :::
 
 ::: {.solution}
 Let
-\[
+$$
 L:=\limsup_{k\to\infty}a_k
  =\lim_{N\to\infty}\sup_{k\ge N}a_k.
-\]
+$$
 Since $(a_k)$ is bounded above, $E\ne\varnothing$: every number larger than $\sup_k a_k$ lies in $E$.
 
 ::: pf
@@ -53,17 +53,17 @@ $L\le \inf E$.
 ::: pf-proof
 
 Fix $s\in E$. By definition of $E$, there is $N$ such that
-\[
+$$
 a_k<s\qquad(k\ge N).
-\]
+$$
 Therefore
-\[
+$$
 \sup_{k\ge N}a_k\le s.
-\]
+$$
 Since the tail suprema decrease to $L$,
-\[
+$$
 L\le \sup_{k\ge N}a_k\le s.
-\]
+$$
 Thus $L$ is a lower bound for $E$, and hence $L\le\inf E$.
 
 :::
@@ -77,25 +77,25 @@ $\inf E\le L$.
 ::: pf-proof
 
 Let $\varepsilon>0$. Since
-\[
+$$
 \sup_{k\ge N}a_k\downarrow L,
-\]
+$$
 there is $N$ such that
-\[
+$$
 \sup_{k\ge N}a_k<L+\varepsilon.
-\]
+$$
 Hence
-\[
+$$
 a_k<L+\varepsilon\qquad(k\ge N),
-\]
+$$
 so only the finitely many indices $k<N$ can satisfy $a_k\ge L+\varepsilon$. Therefore
-\[
+$$
 L+\varepsilon\in E.
-\]
+$$
 It follows that
-\[
+$$
 \inf E\le L+\varepsilon.
-\]
+$$
 Letting $\varepsilon\downarrow0$ gives $\inf E\le L$.
 
 :::
@@ -105,7 +105,7 @@ Letting $\varepsilon\downarrow0$ gives $\inf E\le L$.
 :::
 
 Combining the two inequalities,
-\[
+$$
 \boxed{\limsup_{k\to\infty}a_k=\inf E}.
-\]
+$$
 :::

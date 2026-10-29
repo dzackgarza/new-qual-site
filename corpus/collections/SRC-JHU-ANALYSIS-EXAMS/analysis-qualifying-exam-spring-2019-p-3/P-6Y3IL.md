@@ -37,11 +37,11 @@ $$
 $$
 
 Determine whether condition (A), together with weak convergence, implies
-\[
+$$
 \|f_j\|_2\to\|f\|_2
 \qquad\text{and hence}\qquad
 \|f_j-f\|_2\to0.
-\]
+$$
 If not, give a counterexample.
 :::
 
@@ -56,21 +56,21 @@ Construct a sequence satisfying the weighted pointwise bound.
 ::: pf-proof
 
 Let
-\[
+$$
 Q=[0,1]^d,
 \qquad
 f_j(x)=\mathbf1_Q(x)\sin(2\pi jx_1),
 \qquad
 f=0.
-\]
+$$
 Then $f_j\in L^2(\RR^d)$ and, on $Q$,
-\[
+$$
 (1+|x|)^d|f_j(x)|\le (1+\sqrt d)^d.
-\]
+$$
 Outside $Q$, $f_j=0$. Hence condition (A) holds with
-\[
+$$
 M=(1+\sqrt d)^d.
-\]
+$$
 
 :::
 
@@ -83,23 +83,23 @@ Prove weak convergence to zero.
 ::: pf-proof
 
 Fix $g\in L^2(\RR^d)$. Since $Q$ has finite measure,
-\[
+$$
 g\mathbf1_Q\in L^1(Q)
-\]
+$$
 by Cauchy--Schwarz. Fubini gives an $L^1(0,1)$ function
-\[
+$$
 h(t):=\int_{[0,1]^{d-1}}g(t,x')\,dx'.
-\]
+$$
 Therefore
-\[
+$$
 \int_{\RR^d}f_j(x)g(x)\,dx
 =\int_0^1 h(t)\sin(2\pi jt)\,dt.
-\]
+$$
 By the Riemann--Lebesgue lemma, the right-hand side tends to $0$. Thus
-\[
+$$
 f_j\rightharpoonup0
 \quad\text{in }L^2(\RR^d).
-\]
+$$
 
 :::
 
@@ -112,26 +112,26 @@ Show that strong convergence fails.
 ::: pf-proof
 
 For every positive integer $j$,
-\[
+$$
 \begin{aligned}
 \|f_j\|_2^2
 &=\int_Q\sin^2(2\pi jx_1)\,dx\\
 &=\int_0^1\sin^2(2\pi jt)\,dt\\
 &=\frac12.
 \end{aligned}
-\]
+$$
 Hence
-\[
+$$
 \|f_j\|_2=2^{-1/2}
-\]
+$$
 for every $j$, while $\|f\|_2=0$. Consequently neither
-\[
+$$
 \|f_j\|_2\to\|f\|_2
-\]
+$$
 nor
-\[
+$$
 \|f_j-f\|_2\to0
-\]
+$$
 holds.
 
 Thus condition (A) together with weak convergence does not imply strong convergence: the sequence $f_j$ satisfies the weighted pointwise bound (A) and oscillates at frequency $j$ on $Q$.

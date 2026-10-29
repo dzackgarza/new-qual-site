@@ -33,18 +33,18 @@ Why is $\mathcal{P}(A)$ called the power set of $A$ ?
 :::
 
 ::: {.solution}
-If \(A=\{a,b\}\), then its subsets are exactly
-\[
+If $A=\{a,b\}$, then its subsets are exactly
+$$
 \varnothing,\qquad \{a\},\qquad \{b\},\qquad \{a,b\},
-\]
-so \(|\mathcal P(A)|=4\).
+$$
+so $|\mathcal P(A)|=4$.
 
-In general, if \(|A|=n\), then each element of \(A\) has two independent choices when specifying a subset: include it or omit it. Hence
-\[
+In general, if $|A|=n$, then each element of $A$ has two independent choices when specifying a subset: include it or omit it. Hence
+$$
 |\mathcal P(A)|=2^n.
-\]
+$$
 Therefore:
-\[
+$$
 \begin{array}{c|c}
 |A|&|\mathcal P(A)|\\ \hline
 0&1\\
@@ -52,6 +52,6 @@ Therefore:
 2&4\\
 3&8
 \end{array}
-\]
-The name *power set* refers to this formula: its cardinality is the power \(2^{|A|}\) when \(A\) is finite.
+$$
+The name *power set* refers to this formula: its cardinality is the power $2^{|A|}$ when $A$ is finite.
 :::

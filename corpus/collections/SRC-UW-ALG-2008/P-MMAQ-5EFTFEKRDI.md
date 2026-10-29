@@ -34,9 +34,9 @@ Let $f(x)$ be an irreducible polynomial of degree 5 over the field $\QQ$ of rati
 ::: {.pf-step #s1}
 
 Let
-\[
+$$
 G=\operatorname{Gal}(E/\QQ).
-\]
+$$
 Then $G$ acts transitively on the five roots of $f$.
 
 ::: pf-proof
@@ -78,26 +78,26 @@ A $5$-cycle together with any transposition generates $S_5$.
 ::: pf-proof
 
 Let
-\[
+$$
 \sigma=(0\,1\,2\,3\,4)
-\]
+$$
 be a $5$-cycle after relabeling the roots, and let
-\[
+$$
 \tau=(a\,b)
-\]
+$$
 be any transposition. Conjugating by powers of $\sigma$ gives the transpositions
-\[
+$$
 \sigma^k\tau\sigma^{-k}=(a+k\,b+k)
 \qquad (k\in\ZZ/5\ZZ).
-\]
+$$
 Let $d=b-a\not\equiv0\pmod5$. These are the edges
-\[
+$$
 (k\,\,k+d)
-\]
+$$
 of a graph on $\ZZ/5\ZZ$. Since $5$ is prime and $d\ne0$, repeated addition of $d$ reaches every residue class, so this graph is connected. Transpositions along the edges of a connected graph generate the full symmetric group on its vertices. Hence
-\[
+$$
 \langle\sigma,\tau\rangle=S_5.
-\]
+$$
 
 :::
 
@@ -106,9 +106,9 @@ of a graph on $\ZZ/5\ZZ$. Since $5$ is prime and $d\ne0$, repeated addition of $
 ::: {.pf-step #s5}
 
 Therefore
-\[
+$$
 G=S_5.
-\]
+$$
 
 ::: pf-proof
 
@@ -133,29 +133,29 @@ A polynomial over a field of characteristic zero is solvable by radicals only if
 ::: {.pf-step #s7}
 
 Let $r_1,\dots,r_5$ be the roots of $f$ and define
-\[
+$$
 \delta=\prod_{1\le i<j\le5}(r_i-r_j).
-\]
+$$
 Then
-\[
+$$
 \delta^2=\Delta(f)\in\QQ,
-\]
+$$
 and
-\[
+$$
 K=\QQ(\delta)=\QQ(\sqrt{\Delta(f)})
-\]
+$$
 is the fixed field $E^{A_5}$.
 
 ::: pf-proof
 
 For $\sigma\in S_5=G$, permuting the roots changes the Vandermonde product by the sign of the permutation:
-\[
+$$
 \sigma(\delta)=\operatorname{sgn}(\sigma)\delta.
-\]
+$$
 Hence every element of $A_5$ fixes $\delta$, while every odd permutation sends $\delta$ to $-\delta$. Since $G$ contains odd permutations, $\delta\notin\QQ$. Therefore the stabilizer of $\delta$ in $G$ is exactly $A_5$, so by the Galois correspondence
-\[
+$$
 \QQ(\delta)=E^{A_5}.
-\]
+$$
 Also $\delta^2$ is the discriminant $\Delta(f)$, which lies in $\QQ$.
 
 :::
@@ -169,21 +169,21 @@ The extension $K/\QQ$ is Galois of degree $2$.
 ::: pf-proof
 
 By step [](#s7){.pf-ref},
-\[
+$$
 K=E^{A_5}.
-\]
+$$
 Since $A_5\trianglelefteq S_5$ and
-\[
+$$
 [S_5:A_5]=2,
-\]
+$$
 the Galois correspondence gives
-\[
+$$
 [K:\QQ]=2
-\]
+$$
 and
-\[
+$$
 \operatorname{Gal}(K/\QQ)\cong S_5/A_5\cong C_2.
-\]
+$$
 Thus $K/\QQ$ is Galois.
 
 :::
@@ -193,29 +193,29 @@ Thus $K/\QQ$ is Galois.
 ::: pf-step
 
 No field $F$ satisfying
-\[
+$$
 K\subsetneq F\subsetneq E
-\]
+$$
 is Galois over $\QQ$.
 
 ::: pf-proof
 
 Let
-\[
+$$
 H=\operatorname{Gal}(E/F).
-\]
+$$
 Because $K=E^{A_5}$, the strict containments $K\subsetneq F\subsetneq E$ correspond to
-\[
+$$
 1<H<A_5.
-\]
+$$
 If $F/\QQ$ were Galois, then by the Galois correspondence $H$ would be normal in
-\[
+$$
 G=S_5.
-\]
+$$
 But a normal subgroup $H\trianglelefteq S_5$ contained in $A_5$ is also normal in $A_5$. Since $A_5$ is simple, such an $H$ is either $1$ or $A_5$, contradicting
-\[
+$$
 1<H<A_5.
-\]
+$$
 Therefore no strict intermediate field between $K$ and $E$ is Galois over $\QQ$.
 
 :::

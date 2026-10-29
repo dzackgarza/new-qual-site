@@ -23,13 +23,13 @@ audit:
 
 ::: {.problem}
 Let $(a_n)_{n\ge1}$ be a sequence of positive numbers such that
-\[
+$$
 \sum_{n=1}^\infty a_n
-\]
+$$
 converges. Prove that
-\[
+$$
 \sum_{n=1}^\infty a_n^2
-\]
+$$
 converges.
 :::
 
@@ -42,14 +42,14 @@ Use the necessary condition for convergence of a series.
 
 ::: pf-proof
 Since $\sum a_n$ converges,
-\[
+$$
 a_n\longrightarrow0.
-\]
+$$
 Hence there exists $N$ such that
-\[
+$$
 0<a_n\le1
 \qquad(n\ge N).
-\]
+$$
 :::
 
 :::
@@ -59,13 +59,13 @@ Compare the tails.
 
 ::: pf-proof
 For $n\ge N$,
-\[
+$$
 a_n^2\le a_n.
-\]
+$$
 The comparison test therefore gives convergence of
-\[
+$$
 \sum_{n=N}^\infty a_n^2.
-\]
+$$
 Adding the finitely many terms with $n<N$ proves that $\sum_{n=1}^\infty a_n^2$ converges.
 :::
 

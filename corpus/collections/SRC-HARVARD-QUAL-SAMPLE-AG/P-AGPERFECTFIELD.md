@@ -33,13 +33,13 @@ Let $k$ be a perfect field and let $C$ be a curve of finite type over $k$.
 
 ::: {.pf-step #regular-iff-smooth}
 For a scheme locally of finite type over a perfect field,
-\[
+$$
 \boxed{
 C\text{ is regular}
 \quad\Longleftrightarrow\quad
 C\to\operatorname{Spec}k\text{ is smooth}.
 }
-\]
+$$
 
 ::: pf-proof
 Smoothness over a field means geometric regularity: after every field extension, the fibres remain regular.  Smooth schemes are therefore regular over any field.
@@ -65,9 +65,9 @@ Consequently, normalization resolves the singularities of an integral curve over
 
 ::: pf-proof
 Let
-\[
+$$
 \nu:\widetilde C\longrightarrow C
-\]
+$$
 be the normalization.  The scheme $\widetilde C$ is normal by definition.  Since normalization of a finite-type curve over a field is again a finite-type curve, step [](#normal-curve-smooth){.pf-ref} shows that $\widetilde C$ is smooth over $k$.
 
 Thus in dimension one the normalization itself is a resolution of singularities: it is a finite birational morphism from a smooth curve.
@@ -80,21 +80,21 @@ Over an imperfect field, a regular scheme of finite type need not be smooth.
 
 ::: pf-proof
 Let
-\[
+$$
 k=\FF_p(t),
-\]
+$$
 which is imperfect, and consider
-\[
+$$
 X=\operatorname{Spec}k[x]/(x^p-t).
-\]
+$$
 The polynomial $x^p-t$ is irreducible over $k$, so the coordinate ring is a field.  Hence $X$ is regular.
 
 After adjoining $t^{1/p}$,
-\[
+$$
 k(t^{1/p})\otimes_k k[x]/(x^p-t)
 \cong
 k(t^{1/p})[x]/(x-t^{1/p})^p,
-\]
+$$
 which is nonreduced.  Thus $X$ is not geometrically regular and hence is not smooth over $k$.
 
 The same phenomenon is what perfectness excludes for curves: over a perfect base, regularity cannot be destroyed by a purely inseparable residue-field extension.
@@ -104,12 +104,12 @@ The same phenomenon is what perfectness excludes for curves: over a perfect base
 
 ::: {.pf-step #perfect-field-equivalences}
 Hence
-\[
+$$
 \boxed{
 \text{over a perfect field, normal }\Longleftrightarrow
 \text{ regular }\Longleftrightarrow\text{ smooth}
 }
-\]
+$$
 for an integral curve, and the normalization of any integral curve is smooth.
 
 ::: pf-proof

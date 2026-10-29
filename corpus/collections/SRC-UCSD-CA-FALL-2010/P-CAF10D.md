@@ -25,9 +25,9 @@ Prove your assertion.
 
 ::: {.solution}
 Let
-\[
+$$
 K=\{z:1\le |z|\le2\}.
-\]
+$$
 The function $R$ is holomorphic on a neighborhood of $K$, since its poles are
 $0$ and $3i$.
 
@@ -38,25 +38,25 @@ functions whose poles are allowed only at one chosen point of each component of
 $\CC\setminus K$ are uniformly dense on $K$ in the functions holomorphic
 near $K$. Hence there are rational functions $R_n$ with poles only at $1/3$
 and $3$ such that
-\[
+$$
 \sup_{1\le |z|\le2}|R(z)-R_n(z)|\longrightarrow0.
-\]
+$$
 
 For part (b), suppose instead that polynomials $P_n$ converged uniformly to $R$
 on $K$. Fix any $\rho\in(1,2)$. Uniform convergence on the circle
 $|z|=\rho$ would imply
-\[
+$$
 \int_{|z|=\rho}P_n(z)\,dz
 \longrightarrow
 \int_{|z|=\rho}R(z)\,dz.
-\]
+$$
 The left side is $0$ for every $n$. On the other hand, the circle encloses the
 pole at $0$ but not the pole at $3i$, so
-\[
+$$
 \int_{|z|=\rho}R(z)\,dz
 =2\pi i\operatorname{Res}(R,0)
 =2\pi i\left(\frac1{-3i}\right)
 =-\frac{2\pi}{3}\ne0.
-\]
+$$
 This contradiction shows that no such polynomial sequence exists.
 :::

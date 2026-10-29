@@ -44,14 +44,14 @@ Hint: Recall that there is a multiplicative norm map $N: \ZZ[\sqrt{10}] \to \ZZ$
 
 ::: {.solution}
 We use the multiplicative norm
-\[
+$$
 N(a+b\sqrt{10})=(a+b\sqrt{10})(a-b\sqrt{10})=a^2-10b^2.
-\]
+$$
 For a nonzero element of $R$, this norm is a nonzero integer.
 Moreover, an element $u\in R$ is a unit if and only if $N(u)=\pm1$: necessity follows by taking norms in $uv=1$, while if $N(u)=\pm1$, then
-\[
+$$
 u^{-1}=\frac{\bar u}{N(u)}\in R.
-\]
+$$
 
 ::: pf
 
@@ -60,22 +60,22 @@ The unit group $R^\times$ is infinite.
 
 ::: pf-proof
 Set
-\[
+$$
 u:=3+\sqrt{10}.
-\]
+$$
 Then
-\[
+$$
 N(u)=9-10=-1,
-\]
+$$
 so $u$ is a unit; explicitly,
-\[
+$$
 (3+\sqrt{10})(\sqrt{10}-3)=1.
-\]
+$$
 Hence every power $u^k$, $k\ge0$, is a unit.
 Under the real embedding $R\subset\RR$, we have
-\[
+$$
 u=3+\sqrt{10}>1,
-\]
+$$
 so the positive real numbers $u^k$ are pairwise distinct.
 Thus $R^\times$ contains infinitely many elements.
 :::
@@ -87,40 +87,40 @@ The element $2$ is irreducible in $R$.
 
 ::: pf-proof
 Suppose
-\[
+$$
 2=\alpha\beta
-\]
+$$
 with nonzero $\alpha,\beta\in R$.
 Taking norms gives
-\[
+$$
 4=N(2)=N(\alpha)N(\beta).
-\]
+$$
 If neither factor were a unit, then
-\[
+$$
 |N(\alpha)|\ge2,
 \qquad
 |N(\beta)|\ge2,
-\]
+$$
 so necessarily
-\[
+$$
 |N(\alpha)|=|N(\beta)|=2.
-\]
+$$
 Thus some integers $a,b$ would satisfy
-\[
+$$
 a^2-10b^2=2
-\]
+$$
 or
-\[
+$$
 a^2-10b^2=-2.
-\]
+$$
 Reducing modulo $5$ would give
-\[
+$$
 a^2\equiv2\pmod5
-\]
+$$
 or
-\[
+$$
 a^2\equiv3\pmod5.
-\]
+$$
 But the quadratic residues modulo $5$ are only $0,1,4$.
 Hence no element of $R$ has norm $\pm2$.
 Therefore in every factorization $2=\alpha\beta$, one factor is a unit, so $2$ is irreducible.
@@ -133,24 +133,24 @@ The irreducible element $2$ is not prime.
 
 ::: pf-proof
 We have
-\[
+$$
 2\mid10=(\sqrt{10})(\sqrt{10}),
-\]
+$$
 because $10=2\cdot5$ in $R$.
 However,
-\[
+$$
 2\nmid\sqrt{10}.
-\]
+$$
 Indeed, if
-\[
+$$
 \sqrt{10}=2(a+b\sqrt{10})
-\]
+$$
 for integers $a,b$, comparison of the coefficients of $1$ and $\sqrt{10}$ would give
-\[
+$$
 2a=0,
 \qquad
 2b=1,
-\]
+$$
 which is impossible.
 Thus $2$ divides a product without dividing either factor, so $2$ is not prime.
 :::
@@ -162,29 +162,29 @@ Every nonzero nonunit of $R$ is a finite product of irreducibles.
 
 ::: pf-proof
 We induct on the positive integer
-\[
+$$
 |N(\alpha)|
-\]
+$$
 for a nonzero nonunit $\alpha$.
 Since $\alpha$ is not a unit, $|N(\alpha)|\ge2$.
 
 If $\alpha$ is irreducible, there is nothing to prove.
 Otherwise
-\[
+$$
 \alpha=\beta\gamma
-\]
+$$
 with nonunits $\beta$ and $\gamma$.
 Then
-\[
+$$
 |N(\alpha)|=|N(\beta)|\,|N(\gamma)|,
-\]
+$$
 and both factors on the right are at least $2$.
 Consequently
-\[
+$$
 2\le |N(\beta)|<|N(\alpha)|,
 \qquad
 2\le |N(\gamma)|<|N(\alpha)|.
-\]
+$$
 By induction, both $\beta$ and $\gamma$ are finite products of irreducibles, and hence so is $\alpha$.
 
 Thus $R$ is atomic. As usual, the assertion concerns nonzero nonunits; units are accounted for by a unit factor, while $0$ cannot be a finite product of irreducibles in this domain.

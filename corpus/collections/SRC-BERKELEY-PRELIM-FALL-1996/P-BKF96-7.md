@@ -24,15 +24,15 @@ audit:
 
 ::: {.problem}
 Let $p$ be prime. Show that every element of
-\[
+$$
 GL_2(\FF_p)
-\]
+$$
 has order dividing either
-\[
+$$
 p^2-1
 \qquad\text{or}\qquad
 p(p-1).
-\]
+$$
 :::
 
 ::: {.solution}

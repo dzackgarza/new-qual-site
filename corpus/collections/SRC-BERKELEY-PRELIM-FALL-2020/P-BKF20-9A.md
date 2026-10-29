@@ -34,9 +34,9 @@ audit:
 
 ::: {.problem}
 If $a,b$ are odd integers, prove that
-\[
+$$
 f(x)=x^3+ax+b
-\]
+$$
 has no rational roots.
 :::
 

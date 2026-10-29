@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Evaluate the following limit:
 
-\[
+$$
 \lim_{x \to 0} (\cos x)^{\cot^2 x}
-\]
+$$
 
 (A) $\frac{1}{2}$
 (B) $\frac{1}{\sqrt{e}}$

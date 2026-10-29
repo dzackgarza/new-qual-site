@@ -25,8 +25,8 @@ Use the Meyer-Vietoris sequence to calculate the homology of $X\vee Y$.
 :::
 
 ::: {.solution}
-Assume that the wedge point has an open neighborhood in $X$ and one in $Y$ that deformation retract onto it; this holds when $X$ and $Y$ are CW complexes wedged at $0$-cells. Choose open neighborhoods \(U,V\subset X\vee Y\) deformation retracting onto \(X\) and \(Y\), respectively, with \(U\cap V\) contractible. The reduced Mayer--Vietoris sequence then has, for every \(n\),
-\[
+Assume that the wedge point has an open neighborhood in $X$ and one in $Y$ that deformation retract onto it; this holds when $X$ and $Y$ are CW complexes wedged at $0$-cells. Choose open neighborhoods $U,V\subset X\vee Y$ deformation retracting onto $X$ and $Y$, respectively, with $U\cap V$ contractible. The reduced Mayer--Vietoris sequence then has, for every $n$,
+$$
 0=\widetilde H_n(U\cap V)
 \longrightarrow
 \widetilde H_n(U)\oplus\widetilde H_n(V)
@@ -34,16 +34,16 @@ Assume that the wedge point has an open neighborhood in $X$ and one in $Y$ that 
 \widetilde H_n(X\vee Y)
 \longrightarrow
 \widetilde H_{n-1}(U\cap V)=0.
-\]
+$$
 Hence
-\[
+$$
 \boxed{\widetilde H_n(X\vee Y)
 \cong \widetilde H_n(X)\oplus\widetilde H_n(Y)}
-\]
-for all \(n\). In particular, when \(X\) and \(Y\) are path connected,
-\[
+$$
+for all $n$. In particular, when $X$ and $Y$ are path connected,
+$$
 H_0(X\vee Y)\cong\ZZ,
 \qquad
 H_n(X\vee Y)\cong H_n(X)\oplus H_n(Y)\quad(n>0).
-\]
+$$
 :::

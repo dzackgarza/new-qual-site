@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 Let $f$ be analytic on a connected open subset $G\subset\CC$. Suppose that for every $z\in G$ there is a positive integer $n$ such that
-\[
+$$
 f^{(n)}(z)=0.
-\]
+$$
 Prove that $f$ is a polynomial.
 :::
 

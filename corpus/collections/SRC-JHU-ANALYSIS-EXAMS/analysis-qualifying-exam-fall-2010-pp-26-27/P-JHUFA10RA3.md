@@ -95,7 +95,7 @@ The same weighted inequality gives the claimed norm bound.
 
 ::: pf-proof
 For almost every $x$, Cauchy–Schwarz in the $y$ variable gives
-\[
+$$
 \begin{aligned}
 |Tf(x)|^2
 &=\left|\int K(x,y)^{1/2}q(y)^{1/2}
@@ -106,9 +106,9 @@ For almost every $x$, Cauchy–Schwarz in the $y$ variable gives
 &\le \alpha p(x)
 \int K(x,y)\frac{|f(y)|^2}{q(y)}\,dy.
 \end{aligned}
-\]
+$$
 Integrating in $x$ and using Tonelli's theorem gives [@Fol13]
-\[
+$$
 \begin{aligned}
 \|Tf\|_2^2
 &\le \alpha
@@ -120,11 +120,11 @@ Integrating in $x$ and using Tonelli's theorem gives [@Fol13]
 &\le \alpha\beta\int_{\RR^n}|f(y)|^2\,dy
 =\alpha\beta\|f\|_2^2.
 \end{aligned}
-\]
+$$
 Taking square roots yields
-\[
+$$
 \|Tf\|_{L^2}\le \sqrt{\alpha\beta}\,\|f\|_{L^2}.
-\]
+$$
 :::
 
 :::

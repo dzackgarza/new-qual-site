@@ -21,16 +21,16 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int\frac{dx}{9+x^2}.
-\]
+$$
 :::
 
 ::: {.solution}
 With $u=x/3$, $dx=3\,du$,
-\[
+$$
 \int\frac{dx}{9+x^2}
 =\frac13\int\frac{du}{1+u^2}
 =\boxed{\frac13\arctan\!\left(\frac x3\right)+C.}
-\]
+$$
 :::

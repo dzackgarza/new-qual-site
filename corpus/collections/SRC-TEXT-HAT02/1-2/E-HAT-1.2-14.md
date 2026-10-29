@@ -63,9 +63,9 @@ Following the induced identifications partitions the twelve edges into four orbi
 Similarly, each face is identified with its opposite face, giving three face orbits.
 The open interior of the cube is not identified with any boundary point and therefore descends to a single open $3$-cell.
 Together with step [](#s1){.pf-ref} this gives the claimed cell counts
-\[
+$$
 2,\ 4,\ 3,\ 1.
-\]
+$$
 
 :::
 
@@ -75,17 +75,17 @@ Together with step [](#s1){.pf-ref} this gives the claimed cell counts
 
 Label the four oriented $1$-cells $a,b,c,d$ from $v_0$ to $v_1$.
 After collapsing the edge $a$ as a maximal tree, the $1$-skeleton has free fundamental group on
-\[
+$$
 i=ab^{-1},\qquad j=ac^{-1},\qquad k=ad^{-1}.
-\]
+$$
 
 ::: pf-proof
 
 The quotient $1$-skeleton is a connected graph with two vertices and four edges.
 Collapsing any one edge joining the vertices is a homotopy equivalence from this graph to a wedge of
-\[
+$$
 4-2+1=3
-\]
+$$
 circles.
 Taking $a$ as the tree edge gives the displayed three loops.
 
@@ -96,29 +96,29 @@ Taking $a$ as the tree edge gives the displayed three loops.
 ::: {.pf-step #s4}
 
 The three quotient $2$-cells impose the relations
-\[
+$$
 i^{-1}jk=1,\qquad
 i^{-1}k^{-1}j=1,\qquad
 jk^{-1}i=1.
-\]
+$$
 
 ::: pf-proof
 
 Trace the oriented boundary of one representative of each pair of opposite faces before collapsing the tree edge $a$.
 With the edge orientations from step [](#s3){.pf-ref}, the three face words are
-\[
+$$
 bc^{-1}ad^{-1},\qquad
 ba^{-1}dc^{-1},\qquad
 ac^{-1}db^{-1}.
-\]
+$$
 Substituting the loops
-\[
+$$
 i=ab^{-1},\quad j=ac^{-1},\quad k=ad^{-1}
-\]
+$$
 after collapsing $a$ gives respectively
-\[
+$$
 i^{-1}jk,\qquad i^{-1}k^{-1}j,\qquad jk^{-1}i.
-\]
+$$
 Attaching a $2$-cell sets each of these loops equal to the identity.
 
 :::
@@ -128,24 +128,24 @@ Attaching a $2$-cell sets each of these loops equal to the identity.
 ::: {.pf-step #s5}
 
 Hence
-\[
+$$
 \pi_1(X)
 \cong
 \langle i,j,k\mid i=jk,\ j=ki,\ k=ij\rangle.
-\]
+$$
 
 ::: pf-proof
 
 The first relation in step [](#s4){.pf-ref} is equivalent to $i=jk$.
 The second is equivalent to $j=ki$.
 For the third,
-\[
+$$
 jk^{-1}i=1
 \iff
 k j^{-1}=i
 \iff
 k=ij.
-\]
+$$
 The $3$-cell does not alter the fundamental group.
 
 :::
@@ -155,30 +155,30 @@ The $3$-cell does not alter the fundamental group.
 ::: {.pf-step #s6}
 
 In this group,
-\[
+$$
 i^2=j^2=k^2=:z,
 \qquad
 z=ijk.
-\]
+$$
 
 ::: pf-proof
 
 From $i=jk$, multiplying on the left by $i$ gives
-\[
+$$
 i^2=ijk.
-\]
+$$
 From $k=ij$, multiplying on the right by $k$ gives
-\[
+$$
 k^2=ijk.
-\]
+$$
 Finally, $j=ki$ and $i=jk$ give
-\[
+$$
 j=k(jk)=kjk.
-\]
+$$
 Multiplying on the left by $j$ yields
-\[
+$$
 j^2=jkjk=(jk)^2=i^2.
-\]
+$$
 Thus all three squares equal the common element $z=ijk$.
 
 :::
@@ -192,24 +192,24 @@ The element $z$ is central and satisfies $z^2=1$.
 ::: pf-proof
 
 Since
-\[
+$$
 z=i^2=j^2,
-\]
+$$
 it commutes with both generators $i$ and $j$, hence with the whole group because $k=ij$.
 
 Also $i=jij$ follows from $i=jk$ and $k=ij$.
 Squaring this equality and using centrality of $z$ gives
-\[
+$$
 z=i^2=(jij)^2
 =jij^2ij
 =jizij
 =z\,ji^2j
 =z^3.
-\]
+$$
 Cancelling $z$ yields
-\[
+$$
 z^2=1.
-\]
+$$
 
 :::
 
@@ -218,21 +218,21 @@ z^2=1.
 ::: {.pf-step #s8}
 
 Every element has one of the eight forms
-\[
+$$
 1,\ z,\ i,\ zi,\ j,\ zj,\ ij,\ zij.
-\]
+$$
 
 ::: pf-proof
 
 From steps [](#s6){.pf-ref} and [](#s7){.pf-ref},
-\[
+$$
 i^2=j^2=z,\qquad z^2=1,
-\]
+$$
 and $z$ is central.
 Moreover $k=ij$ and
-\[
+$$
 ji=z\,ij.
-\]
+$$
 Indeed $i=jij$ implies $ji=ij^{-1}$, while $j^{-1}=zj$ because $j^2=z=z^{-1}$.
 Thus any word can first eliminate $k$, then move all $j$'s to the right of all $i$'s, collecting powers of the central element $z$, and finally reduce the exponents of $i,j,z$ modulo $2$.
 This gives at most the eight displayed normal forms.
@@ -248,21 +248,21 @@ These eight elements are distinct and form the quaternion group $Q_8$.
 ::: pf-proof
 
 Map the presented group to
-\[
+$$
 Q_8=\{\pm1,\pm\mathbf i,\pm\mathbf j,\pm\mathbf k\}
-\]
+$$
 by
-\[
+$$
 i\longmapsto\mathbf i,\qquad
 j\longmapsto\mathbf j,\qquad
 k\longmapsto\mathbf k.
-\]
+$$
 The quaternion multiplication rules give
-\[
+$$
 \mathbf i=\mathbf j\mathbf k,\qquad
 \mathbf j=\mathbf k\mathbf i,\qquad
 \mathbf k=\mathbf i\mathbf j,
-\]
+$$
 so this is a surjective homomorphism.
 Hence the presented group has at least eight elements.
 By step [](#s8){.pf-ref} it has at most eight elements.
@@ -275,9 +275,9 @@ Therefore it has exactly eight elements and the surjection is an isomorphism.
 ::: pf-step
 
 Consequently
-\[
+$$
 \boxed{\pi_1(X)\cong Q_8.}
-\]
+$$
 
 ::: pf-proof
 

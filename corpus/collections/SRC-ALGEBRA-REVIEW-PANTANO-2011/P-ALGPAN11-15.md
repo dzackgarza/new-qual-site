@@ -48,16 +48,16 @@ Choice (C) has nonzero zero divisors.
 ::: pf-proof
 
 Define
-\[
+$$
 f(x)=\max\{0,\tfrac12-x\},
 \qquad
 g(x)=\max\{0,x-\tfrac12\}.
-\]
+$$
 Both are nonzero continuous functions on $[0,1]$, but their supports meet only at $x=1/2$, where both vanish.
 Hence
-\[
+$$
 fg=0.
-\]
+$$
 
 :::
 

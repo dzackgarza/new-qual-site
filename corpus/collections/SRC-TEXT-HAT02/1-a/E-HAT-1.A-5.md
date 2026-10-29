@@ -32,14 +32,14 @@ Construct a connected graph $X$ and maps $f, g: X \to X$ such that $fg = \id$ bu
 
 ::: {.solution}
 Let
-\[
+$$
 X=\bigvee_{n=0}^{\infty} C_n
-\]
+$$
 be the CW wedge of countably many circles at a common basepoint $x_0$.
 Choose orientation-preserving homeomorphisms
-\[
+$$
 h_n:C_n\to C_{n+1}
-\]
+$$
 fixing $x_0$.
 
 ::: pf
@@ -47,22 +47,22 @@ fixing $x_0$.
 ::: pf-step
 
 Define
-\[
+$$
 g:X\to X
-\]
+$$
 by
-\[
+$$
 g|_{C_n}=h_n
-\]
+$$
 for every $n\ge0$.
 Define
-\[
+$$
 f:X\to X
-\]
+$$
 by collapsing $C_0$ to $x_0$ and, for $n\ge0$, setting
-\[
+$$
 f|_{C_{n+1}}=h_n^{-1}.
-\]
+$$
 
 ::: pf-proof
 
@@ -76,16 +76,16 @@ By the weak topology of the CW wedge, the resulting maps are continuous on $X$.
 ::: pf-step
 
 One has
-\[
+$$
 f\circ g=\operatorname{id}_X.
-\]
+$$
 
 ::: pf-proof
 
 For every $n\ge0$,
-\[
+$$
 (f\circ g)|_{C_n}=h_n^{-1}\circ h_n=\operatorname{id}_{C_n}.
-\]
+$$
 The wedgepoint is fixed as well.
 
 :::
@@ -95,20 +95,20 @@ The wedgepoint is fixed as well.
 ::: pf-step
 
 The fundamental group is
-\[
+$$
 \pi_1(X,x_0)\cong F(a_0,a_1,a_2,\dots),
-\]
+$$
 where $a_n$ is represented by $C_n$.
 The induced maps satisfy
-\[
+$$
 g_*(a_n)=a_{n+1},
-\]
+$$
 and
-\[
+$$
 f_*(a_0)=1,
 \qquad
 f_*(a_{n+1})=a_n.
-\]
+$$
 
 ::: pf-proof
 
@@ -127,17 +127,17 @@ Neither $f_*$ nor $g_*$ is an isomorphism.
 
 The map $g_*$ is injective but not surjective, since no reduced word in its image contains the generator $a_0$.
 The map $f_*$ is surjective but not injective, since
-\[
+$$
 a_0\ne1
-\]
+$$
 while
-\[
+$$
 f_*(a_0)=1.
-\]
+$$
 Nevertheless
-\[
+$$
 f_*g_*=(fg)_*=\operatorname{id}.
-\]
+$$
 Thus $f,g$ have the required properties.
 
 :::

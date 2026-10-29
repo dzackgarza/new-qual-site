@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 Let $C$ be a positively oriented simple closed contour enclosing the points $0,1,\dots,k$. Evaluate, for $k=0,1,2,\dots$,
-\[
+$$
 I_k=\int_C\frac{dz}{z(z-1)\cdots(z-k)}
-\]
+$$
 and
-\[
+$$
 J_k=\int_C\frac{(z-1)\cdots(z-k)}{z}\,dz.
-\]
+$$
 :::
 
 ::: {.solution}

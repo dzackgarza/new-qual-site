@@ -34,7 +34,7 @@ Prove that $$E \otimes_F \overline{E} \simeq \underbrace{\overline{E} \oplus \cd
 
 ::: pf-step
 
-Since \(E/F\) is finite and separable, there exists \(\alpha\in E\) such that \(E=F(\alpha)\).
+Since $E/F$ is finite and separable, there exists $\alpha\in E$ such that $E=F(\alpha)$.
 
 ::: pf-proof
 
@@ -46,14 +46,14 @@ This is the primitive element theorem for finite separable extensions.
 
 ::: {.pf-step #s2}
 
-Let \(m(x)\in F[x]\) be the minimal polynomial of \(\alpha\). Then \(\deg m=n\) and
-\[
+Let $m(x)\in F[x]$ be the minimal polynomial of $\alpha$. Then $\deg m=n$ and
+$$
 E\cong F[x]/(m).
-\]
+$$
 
 ::: pf-proof
 
-Because \(E=F(\alpha)\), one has \([E:F]=\deg m=n\), and evaluation at \(\alpha\) identifies \(F[x]/(m)\) with \(F(\alpha)=E\).
+Because $E=F(\alpha)$, one has $[E:F]=\deg m=n$, and evaluation at $\alpha$ identifies $F[x]/(m)$ with $F(\alpha)=E$.
 
 :::
 
@@ -62,20 +62,20 @@ Because \(E=F(\alpha)\), one has \([E:F]=\deg m=n\), and evaluation at \(\alpha\
 ::: {.pf-step #s3}
 
 There is a natural ring isomorphism
-\[
+$$
 E\otimes_F\overline E
 \cong
 \overline E[x]/(m).
-\]
+$$
 
 ::: pf-proof
 
 Using step [](#s2){.pf-ref} and scalar extension,
-\[
+$$
 (F[x]/(m))\otimes_F\overline E
 \cong
 \overline E[x]/(m).
-\]
+$$
 
 :::
 
@@ -83,14 +83,14 @@ Using step [](#s2){.pf-ref} and scalar extension,
 
 ::: {.pf-step #s4}
 
-The polynomial \(m\) has exactly \(n\) distinct roots \(\alpha_1,\dots,\alpha_n\) in \(\overline E\), so
-\[
+The polynomial $m$ has exactly $n$ distinct roots $\alpha_1,\dots,\alpha_n$ in $\overline E$, so
+$$
 m(x)=\prod_{i=1}^n (x-\alpha_i).
-\]
+$$
 
 ::: pf-proof
 
-The polynomial \(m\) is separable because \(E/F\) is separable. Since \(\overline E\) is algebraically closed, \(m\) splits there; separability makes the roots distinct. Its degree is \(n\) by step [](#s2){.pf-ref}.
+The polynomial $m$ is separable because $E/F$ is separable. Since $\overline E$ is algebraically closed, $m$ splits there; separability makes the roots distinct. Its degree is $n$ by step [](#s2){.pf-ref}.
 
 :::
 
@@ -98,15 +98,15 @@ The polynomial \(m\) is separable because \(E/F\) is separable. Since \(\overlin
 
 ::: {.pf-step #s5}
 
-The ideals \((x-\alpha_i)\subseteq\overline E[x]\) are pairwise comaximal.
+The ideals $(x-\alpha_i)\subseteq\overline E[x]$ are pairwise comaximal.
 
 ::: pf-proof
 
-If \(i\ne j\), then
-\[
+If $i\ne j$, then
+$$
 (x-\alpha_i)-(x-\alpha_j)=\alpha_j-\alpha_i
-\]
-is a nonzero element of the field \(\overline E\), hence a unit. Therefore the two ideals sum to the whole polynomial ring.
+$$
+is a nonzero element of the field $\overline E$, hence a unit. Therefore the two ideals sum to the whole polynomial ring.
 
 :::
 
@@ -115,17 +115,17 @@ is a nonzero element of the field \(\overline E\), hence a unit. Therefore the t
 ::: {.pf-step #s6}
 
 By the Chinese remainder theorem,
-\[
+$$
 \overline E[x]/(m)
 \cong
 \prod_{i=1}^n \overline E[x]/(x-\alpha_i)
 \cong
 \overline E^{\,n}.
-\]
+$$
 
 ::: pf-proof
 
-Use steps [](#s4){.pf-ref} and [](#s5){.pf-ref} for the first isomorphism. Evaluation at \(\alpha_i\) identifies each quotient \(\overline E[x]/(x-\alpha_i)\) with \(\overline E\).
+Use steps [](#s4){.pf-ref} and [](#s5){.pf-ref} for the first isomorphism. Evaluation at $\alpha_i$ identifies each quotient $\overline E[x]/(x-\alpha_i)$ with $\overline E$.
 
 :::
 
@@ -134,10 +134,10 @@ Use steps [](#s4){.pf-ref} and [](#s5){.pf-ref} for the first isomorphism. Evalu
 ::: pf-step
 
 Hence
-\[
+$$
 E\otimes_F\overline E\cong
 \underbrace{\overline E\oplus\cdots\oplus\overline E}_{n\text{ times}}
-\]
+$$
 as rings.
 
 ::: pf-proof

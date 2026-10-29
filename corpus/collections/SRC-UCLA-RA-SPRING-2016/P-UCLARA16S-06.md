@@ -18,51 +18,51 @@ audit:
 
 ::: {.problem}
 Suppose that $\{\phi_n\}$ is an orthonormal system of continuous functions in $L^2([0,1])$ and let $S$ be the closure of the span of $\{\phi_n\}$. If
-\[
+$$
 \sup_{f\in S\setminus\{0\}}\frac{\lVert f\rVert_\infty}{\lVert f\rVert_2}<\infty,
-\]
+$$
 prove that $S$ is finite dimensional.
 :::
 
 ::: {.solution}
 
 Choose $M<\infty$ such that
-\[
+$$
 \|f\|_\infty
 \le
 M\|f\|_2
 \qquad
 (f\in S).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 For every positive integer $N$ and every $x\in[0,1]$,
-\[
+$$
 \sum_{n=1}^N|\phi_n(x)|^2
 \le
 M^2.
-\]
+$$
 
 
 ::: pf-proof
 
 Fix $N$ and $x$. For arbitrary scalars $a_1,\dots,a_N$, set
-\[
+$$
 f_a
 \coloneqq
 \sum_{n=1}^N a_n\phi_n.
-\]
+$$
 Then $f_a\in S$, and orthonormality gives
-\[
+$$
 \|f_a\|_2^2
 =
 \sum_{n=1}^N|a_n|^2.
-\]
+$$
 Because $f_a$ is continuous on $[0,1]$, its ordinary supremum norm equals its $L^\infty$ norm. Hence
-\[
+$$
 \left|
 \sum_{n=1}^N a_n\phi_n(x)
 \right|
@@ -73,18 +73,18 @@ M
 \left(
 \sum_{n=1}^N|a_n|^2
 \right)^{1/2}.
-\]
+$$
 Taking the supremum over all coefficient vectors with
-\[
+$$
 \sum_{n=1}^N|a_n|^2=1
-\]
+$$
 and using the Euclidean dual-norm identity yields
-\[
+$$
 \left(
 \sum_{n=1}^N|\phi_n(x)|^2
 \right)^{1/2}
 \le M.
-\]
+$$
 Squaring proves the claim.
 
 :::
@@ -99,7 +99,7 @@ Every finite orthonormal subfamily of $\{\phi_n\}$ has cardinality at most $M^2$
 ::: pf-proof
 
 Integrating the inequality from step [](#s1-1){.pf-ref} over $[0,1]$ and using Tonelli's theorem,
-\[
+$$
 \begin{aligned}
 N
 &=
@@ -111,7 +111,7 @@ N
 \int_0^1 M^2\,dx
 =M^2.
 \end{aligned}
-\]
+$$
 Thus no finite orthonormal subfamily can contain more than $M^2$ elements.
 
 :::

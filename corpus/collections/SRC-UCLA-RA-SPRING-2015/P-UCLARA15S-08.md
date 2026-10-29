@@ -18,26 +18,26 @@ audit:
 
 ::: {.problem}
 Let $f:\CC\to\CC$ be holomorphic and suppose
-\[
+$$
 \sup_{x\in\RR}\bigl(|f(x)|^2+|f(ix)|^2\bigr)<\infty
-\]
+$$
 and
-\[
+$$
 |f(z)|\le e^{|z|}\qquad\text{for all }z\in\CC.
-\]
+$$
 Deduce that $f(z)$ is constant.
 :::
 
 ::: {.solution}
 
 Choose $M\ge0$ such that
-\[
+$$
 |f(x)|\le M,
 \qquad
 |f(ix)|\le M
 \qquad
 (x\in\RR).
-\]
+$$
 
 ::: pf
 
@@ -57,15 +57,15 @@ If $M=0$, then $f(x)=0$ for every real $x$. The real axis has accumulation point
 ::: {.pf-step #s2}
 
 Assume $M>0$. In the first quadrant
-\[
+$$
 Q
 \coloneqq
 \{z:0<\arg z<\pi/2\},
-\]
+$$
 one has
-\[
+$$
 |f(z)|\le M.
-\]
+$$
 
 
 ::: pf-proof
@@ -73,7 +73,7 @@ one has
 ::: pf-step
 
 Fix $\varepsilon>0$ and define
-\[
+$$
 g_\varepsilon(z)
 \coloneqq
 f(z)
@@ -82,16 +82,16 @@ f(z)
 (e^{-i\pi/4}z)^{3/2}
 \right),
 \qquad z\in Q,
-\]
+$$
 where the principal branch of the $3/2$-power is used.
 
 
 ::: pf-proof
 
 For $z\in Q$, the number
-\[
+$$
 e^{-i\pi/4}z
-\]
+$$
 has argument in $(-\pi/4,\pi/4)$, so it avoids the negative real axis. The principal $3/2$-power is therefore holomorphic on this rotated quadrant, and hence $g_\varepsilon$ is holomorphic on $Q$ and continuous on its closure.
 
 :::
@@ -101,49 +101,49 @@ has argument in $(-\pi/4,\pi/4)$, so it avoids the negative real axis. The princ
 ::: {.pf-step #s2-2}
 
 There is a constant
-\[
+$$
 \delta
 \coloneqq
 \cos(3\pi/8)>0
-\]
+$$
 such that, for $z=Re^{i\theta}\in\overline Q$,
-\[
+$$
 |g_\varepsilon(z)|
 \le
 \exp\!\left(
 R-\varepsilon\delta R^{3/2}
 \right).
-\]
+$$
 
 
 ::: pf-proof
 
 The growth hypothesis gives
-\[
+$$
 |f(z)|\le e^R.
-\]
+$$
 Also,
-\[
+$$
 (e^{-i\pi/4}z)^{3/2}
 =
 R^{3/2}
 e^{i(3\theta/2-3\pi/8)}.
-\]
+$$
 For $0\le\theta\le\pi/2$,
-\[
+$$
 -\frac{3\pi}{8}
 \le
 \frac{3\theta}{2}-\frac{3\pi}{8}
 \le
 \frac{3\pi}{8},
-\]
+$$
 so
-\[
+$$
 \operatorname{Re}
 (e^{-i\pi/4}z)^{3/2}
 \ge
 \delta R^{3/2}.
-\]
+$$
 Taking absolute values in the definition of $g_\varepsilon$ gives the estimate.
 
 :::
@@ -153,22 +153,22 @@ Taking absolute values in the definition of $g_\varepsilon$ gives the estimate.
 ::: {.pf-step #s2-3}
 
 There exists $R_\varepsilon>0$ such that
-\[
+$$
 |g_\varepsilon(z)|\le M
-\]
+$$
 whenever $z\in\overline Q$ and $|z|\ge R_\varepsilon$.
 
 
 ::: pf-proof
 
 By step [](#s2-2){.pf-ref},
-\[
+$$
 |g_\varepsilon(z)|
 \le
 \exp\!\left(
 R-\varepsilon\delta R^{3/2}
 \right).
-\]
+$$
 The exponent tends to $-\infty$ as $R\to\infty$, so the right-hand side tends to $0$. Since $M>0$, it is at most $M$ for all sufficiently large $R$.
 
 :::
@@ -178,19 +178,19 @@ The exponent tends to $-\infty$ as $R\to\infty$, so the right-hand side tends to
 ::: {.pf-step #s2-4}
 
 On the two boundary rays of $Q$,
-\[
+$$
 |g_\varepsilon(z)|\le M.
-\]
+$$
 
 
 ::: pf-proof
 
 On either boundary ray, $|f(z)|\le M$ by the definition of $M$. Moreover,
-\[
+$$
 \operatorname{Re}
 (e^{-i\pi/4}z)^{3/2}
 \ge0,
-\]
+$$
 so the exponential multiplier in $g_\varepsilon$ has modulus at most $1$.
 
 :::
@@ -200,19 +200,19 @@ so the exponential multiplier in $g_\varepsilon$ has modulus at most $1$.
 ::: {.pf-step #s2-5}
 
 One has
-\[
+$$
 |g_\varepsilon(z)|\le M
 \qquad
 (z\in Q).
-\]
+$$
 
 
 ::: pf-proof
 
 Choose $R\ge R_\varepsilon$ and apply the maximum-modulus principle to the bounded quarter-disk
-\[
+$$
 Q\cap\{|z|<R\}.
-\]
+$$
 Step [](#s2-4){.pf-ref} bounds $|g_\varepsilon|$ by $M$ on the two radial sides, and step [](#s2-3){.pf-ref} bounds it by $M$ on the circular side. Hence the same bound holds throughout that quarter-disk. Letting $R\to\infty$ proves the claim on all of $Q$.
 
 :::
@@ -222,15 +222,15 @@ Step [](#s2-4){.pf-ref} bounds $|g_\varepsilon|$ by $M$ on the two radial sides,
 ::: {.pf-step #s2-6}
 
 For every $z\in Q$,
-\[
+$$
 |f(z)|\le M.
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s2-5){.pf-ref} gives
-\[
+$$
 |f(z)|
 \le
 M
@@ -239,11 +239,11 @@ M
 \operatorname{Re}
 (e^{-i\pi/4}z)^{3/2}
 \right).
-\]
+$$
 For fixed $z$, the real number in the exponent is finite. Letting $\varepsilon\downarrow0$ yields
-\[
+$$
 |f(z)|\le M.
-\]
+$$
 
 :::
 
@@ -262,9 +262,9 @@ Step [](#s2-6){.pf-ref} proves the claim of step [](#s2){.pf-ref}.
 ::: {.pf-step #s3}
 
 The bound
-\[
+$$
 |f(z)|\le M
-\]
+$$
 holds for every $z\in\CC$.
 
 

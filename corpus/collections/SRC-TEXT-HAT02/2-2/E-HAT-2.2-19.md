@@ -32,39 +32,39 @@ Compute $H_i(\RP^n/\RP^m)$ for $m < n$ by cellular homology, using the standard 
 
 ::: {.solution}
 Let
-\[
+$$
 Y=\RP^n/\RP^m,
 \qquad m<n.
-\]
+$$
 The quotient CW structure has one $0$-cell and one cell in each dimension
-\[
+$$
 m+1,m+2,\dots,n.
-\]
+$$
 Thus its reduced cellular chain groups are
-\[
+$$
 \widetilde C_i(Y)\cong
 \begin{cases}
 \ZZ,&m<i\le n,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 For $i>m+1$, the cellular boundary is the usual projective-space boundary
-\[
+$$
 d_i=
 \begin{cases}
 2,&i\text{ even},\\
 0,&i\text{ odd},
 \end{cases}
-\]
+$$
 while $d_{m+1}=0$ because its target chain group has been collapsed away.
 
 ::: pf
 
 ::: {.pf-step #s1}
 If $n=m+1$, then
-\[
+$$
 \widetilde H_n(Y)\cong\ZZ
-\]
+$$
 and all other reduced homology groups vanish.
 
 ::: pf-proof
@@ -81,13 +81,13 @@ Assume henceforth that $n\ge m+2$.
 
 ::: {.pf-step #s2}
 In the bottom degree $m+1$,
-\[
+$$
 \widetilde H_{m+1}(Y)\cong
 \begin{cases}
 \ZZ,&m+1\text{ even},\\
 \ZZ_2,&m+1\text{ odd}.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 The outgoing differential is zero. The incoming differential is $d_{m+2}$, which is zero when $m+2$ is odd and multiplication by $2$ when $m+2$ is even. These are exactly the two displayed cases.
@@ -97,33 +97,33 @@ The outgoing differential is zero. The incoming differential is $d_{m+2}$, which
 
 ::: {.pf-step #s3}
 For $m+1<i<n$,
-\[
+$$
 \widetilde H_i(Y)\cong
 \begin{cases}
 \ZZ_2,&i\text{ odd},\\
 0,&i\text{ even}.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 If $i$ is even, $d_i=2$ is injective, so there are no cycles. If $i$ is odd, $d_i=0$ and $d_{i+1}=2$, giving
-\[
+$$
 H_i\cong\ZZ/2\ZZ.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #s4}
 In the top degree $n$,
-\[
+$$
 \widetilde H_n(Y)\cong
 \begin{cases}
 \ZZ,&n\text{ odd},\\
 0,&n\text{ even},
 \end{cases}
 \qquad(n>m+1).
-\]
+$$
 
 ::: pf-proof
 There is no incoming boundary from degree $n+1$. Thus top homology is $\ker d_n$, which is $\ZZ$ for odd $n$ and $0$ for even $n$.
@@ -133,9 +133,9 @@ There is no incoming boundary from degree $n+1$. Thus top homology is $\ker d_n$
 
 ::: pf-step
 Finally $Y$ is connected, so
-\[
+$$
 H_0(Y)\cong\ZZ.
-\]
+$$
 Together steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give all homology groups of $\RP^n/\RP^m$.
 :::
 

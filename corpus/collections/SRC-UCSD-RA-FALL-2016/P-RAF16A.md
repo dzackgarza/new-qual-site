@@ -42,9 +42,9 @@ Definition of the candidate family $\mathcal{F}$:
 
 ::: pf-step
 Let $\mathcal{F}$ denote the collection of all arbitrary unions of members of the partition:
-\[
+$$
 \mathcal{F} = \left\{ \bigcup_{j \in J} A_j \;\middle|\; J \subseteq \NN \right\},
-\]
+$$
 with the conventions $\bigcup_{j \in \emptyset} A_j = \emptyset$ and $\bigcup_{j \in \NN} A_j = X$.
 :::
 
@@ -64,18 +64,18 @@ $\emptyset \in \mathcal{F}$ (for $J = \emptyset$) and $X \in \mathcal{F}$ (for $
 ::: pf-step
 Let $E = \bigcup_{j \in J} A_j \in \mathcal{F}$ for some $J \subseteq \NN$.
 Because the sets $\{A_i\}_{i=1}^\infty$ form a partition of $X$ (pairwise disjoint and covering $X$), the complement in $X$ is:
-\[
+$$
 X \setminus E = X \setminus \left( \bigcup_{j \in J} A_j \right) = \bigcup_{j \in \NN \setminus J} A_j.
-\]
+$$
 Since $\NN \setminus J \subseteq \NN$, $X \setminus E \in \mathcal{F}$.
 :::
 
 ::: pf-step
 Let $\{E_n\}_{n=1}^\infty \subseteq \mathcal{F}$ be a countable sequence, with $E_n = \bigcup_{j \in J_n} A_j$ where $J_n \subseteq \NN$.
 Then:
-\[
+$$
 \bigcup_{n=1}^\infty E_n = \bigcup_{n=1}^\infty \left( \bigcup_{j \in J_n} A_j \right) = \bigcup_{j \in \bigcup_{n=1}^\infty J_n} A_j.
-\]
+$$
 Since $\bigcup_{n=1}^\infty J_n \subseteq \NN$, the countable union belongs to $\mathcal{F}$.
 :::
 
@@ -95,18 +95,18 @@ Proof that $\mathcal{A} = \mathcal{F}$:
 ::: pf-step
 For each $k \in \NN$, $A_k = \bigcup_{j \in \{k\}} A_j \in \mathcal{F}$, so $\mathcal{F}$ is a $\sigma$-algebra containing all $A_i$.
 Since $\mathcal{A} = \sigma(A_1, A_2, \ldots)$ is the smallest $\sigma$-algebra containing all $A_i$, we have:
-\[
+$$
 \mathcal{A} \subseteq \mathcal{F}.
-\]
+$$
 :::
 
 ::: pf-step
 Conversely, let $E \in \mathcal{F}$, so $E = \bigcup_{j \in J} A_j$ for some $J \subseteq \NN$.
 Since $J$ is a subset of $\NN$, $J$ is at most countable.
 Because $\mathcal{A}$ contains each $A_j$ and is closed under countable unions:
-\[
+$$
 E = \bigcup_{j \in J} A_j \in \mathcal{A}.
-\]
+$$
 Thus $\mathcal{F} \subseteq \mathcal{A}$.
 :::
 

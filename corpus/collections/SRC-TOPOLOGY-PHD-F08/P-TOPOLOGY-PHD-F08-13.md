@@ -41,11 +41,11 @@ Give a brief explanation.
 
 ::: pf-step
 A Möbius band is the quotient
-\[
+$$
 M=([0,1]\times[-1,1])/{\sim},
 \qquad
 (0,t)\sim(1,-t).
-\]
+$$
 
 ::: pf-proof
 This is the standard rectangle model: the two vertical edges are glued with a half-twist.
@@ -58,15 +58,15 @@ The boundary $\partial M$ is a single circle.
 
 ::: pf-proof
 The boundary is the image of
-\[
+$$
 [0,1]\times\{-1,1\}.
-\]
+$$
 Under the twisted edge identification,
-\[
+$$
 (0,1)\sim(1,-1),
 \qquad
 (0,-1)\sim(1,1),
-\]
+$$
 so the two horizontal edges join end-to-end to form one circle.
 :::
 
@@ -77,22 +77,22 @@ In the quotient $M/\partial M$, a collar of $\partial M$ becomes a disk.
 
 ::: pf-proof
 Choose a closed collar
-\[
+$$
 N\cong S^1\times[0,1]
-\]
+$$
 of the boundary, with
-\[
+$$
 \partial M\cong S^1\times\{0\}.
-\]
+$$
 After collapsing $\partial M$ to one point, the image of $N$ is
-\[
+$$
 (S^1\times[0,1])/(S^1\times\{0\}),
-\]
+$$
 the cone on $S^1$.
 The cone on $S^1$ is homeomorphic to the closed disk $D^2$ via
-\[
+$$
 [(e^{i\theta},r)]\longmapsto re^{i\theta}.
-\]
+$$
 Its boundary corresponds to $S^1\times\{1\}$.
 :::
 
@@ -104,31 +104,31 @@ The quotient $M/\partial M$ is obtained by attaching a disk to a Möbius band al
 ::: pf-proof
 Remove the interior of the collar $N$ from $M$.
 The remaining surface
-\[
+$$
 M'=M\setminus\operatorname{int}(N)
-\]
+$$
 is again a Möbius band, with boundary $S^1\times\{1\}$.
 By step [](#collar-becomes-disk){.pf-ref}, the collapsed collar becomes a disk whose boundary is exactly this circle.
 Thus
-\[
+$$
 M/\partial M\cong M'\cup_{\partial M'}D^2.
-\]
+$$
 :::
 
 :::
 
 ::: pf-step
 Therefore
-\[
+$$
 \boxed{M/\partial M\cong\RP^2}.
-\]
+$$
 
 ::: pf-proof
 The real projective plane is obtained by attaching a $2$-disk to a Möbius band along its boundary.
 Indeed, in the disk model
-\[
+$$
 \RP^2=D^2/(x\sim -x\text{ on }\partial D^2),
-\]
+$$
 an annular neighborhood of the boundary descends to a Möbius band, while the remaining central disk caps its boundary.
 By step [](#attach-disk-decomposition){.pf-ref}, $M/\partial M$ has exactly this decomposition.
 :::

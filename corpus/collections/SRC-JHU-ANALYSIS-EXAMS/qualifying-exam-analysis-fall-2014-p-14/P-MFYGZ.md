@@ -59,9 +59,9 @@ Associate a good ball to every point of the superlevel set.
 ::: pf-proof
 
 Fix $\alpha>0$ and write
-\[
+$$
 E_\alpha:=\{x\in\RR^d:M_f(x)>\alpha\}.
-\]
+$$
 Take the balls in the definition to be open. Then
 $E_\alpha$ is the union of all balls on which the average
 of $|f|$ exceeds $\alpha$: every point of such a ball has
@@ -70,13 +70,13 @@ follows from the definition of supremum. Thus $E_\alpha$
 is open, in particular measurable. If it is empty, the
 required inequality is immediate; otherwise proceed below.
 For every $x\in E_\alpha$, by definition of $M_f(x)$ there is a ball $B_x$ containing $x$ such that
-\[
+$$
 \frac1{m(B_x)}\int_{B_x}|f(y)|\,dy>\alpha.
-\]
+$$
 Hence
-\[
+$$
 \alpha\,m(B_x)<\int_{B_x}|f|\le \|f\|_1.
-\]
+$$
 In particular the radii of all such balls are uniformly bounded in terms of $\alpha$, $d$, and $\|f\|_1$.
 
 :::
@@ -90,17 +90,17 @@ Apply the $5r$ covering lemma.
 ::: pf-proof
 
 Apply the $5r$ covering lemma to the family $\{B_x:x\in E_\alpha\}$. There is a finite or countable pairwise disjoint subfamily $\{B_j\}$ such that
-\[
+$$
 E_\alpha\subseteq\bigcup_j 5B_j,
-\]
+$$
 where $5B_j$ denotes the ball with the same center and five times the radius.
 
 Therefore
-\[
+$$
 m(E_\alpha)
 \le \sum_j m(5B_j)
 =5^d\sum_j m(B_j).
-\]
+$$
 
 :::
 
@@ -113,25 +113,25 @@ Use disjointness and the defining average inequality.
 ::: pf-proof
 
 For each selected ball,
-\[
+$$
 \alpha\,m(B_j)<\int_{B_j}|f|.
-\]
+$$
 Since the $B_j$ are pairwise disjoint,
-\[
+$$
 \alpha\sum_j m(B_j)
 \le\sum_j\int_{B_j}|f|
 \le\int_{\RR^d}|f|
 =\|f\|_1.
-\]
+$$
 Combining this with Step 2 gives
-\[
+$$
 m(E_\alpha)
 \le \frac{5^d}{\alpha}\|f\|_1.
-\]
+$$
 Thus the desired estimate holds with, for example,
-\[
+$$
 \boxed{A=5^d.}
-\]
+$$
 
 :::
 

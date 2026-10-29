@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 If the matrices
 
-\[
+$$
 \begin{pmatrix} 3 & -2 & -2 \\ -1 & 1 & 1 \\ 3 & -1 & -2 \end{pmatrix} \quad \text{and} \quad \begin{pmatrix} 1 & a & 0 \\ -1 & b & 1 \\ 2 & c & -1 \end{pmatrix}
-\]
+$$
 
 are inverses of each other, what is the value of $c$?
 

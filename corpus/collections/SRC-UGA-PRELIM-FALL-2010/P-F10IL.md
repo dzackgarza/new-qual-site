@@ -24,12 +24,12 @@ Prove that if $T(v_1), \dots, T(v_k)$ form a linearly independent set in $W$, th
 
 ::: {.solution}
 Suppose
-\[
+$$
 a_1v_1+\cdots+a_kv_k=0.
-\]
+$$
 Applying $T$ and using linearity gives
-\[
+$$
 a_1T(v_1)+\cdots+a_kT(v_k)=0.
-\]
+$$
 Because $T(v_1),\ldots,T(v_k)$ are linearly independent, all $a_i=0$. Hence $v_1,\ldots,v_k$ are linearly independent.
 :::

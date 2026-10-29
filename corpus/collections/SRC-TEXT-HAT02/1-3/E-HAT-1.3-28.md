@@ -32,9 +32,9 @@ Show that for a covering space action of a group $G$ on a simply-connected space
 
 ::: {.solution}
 Let
-\[
+$$
 q:Y\to Y/G
-\]
+$$
 be the orbit map.
 
 ::: pf
@@ -47,9 +47,9 @@ The map $q$ is a covering map with deck transformation group $G$.
 
 This is exactly the definition and basic property of a covering space action: the translates of a suitable neighborhood are pairwise disjoint and map homeomorphically to one neighborhood in the quotient.
 Since $Y$ is path connected, every deck transformation of $q$ is determined by the image of one point, and Proposition 1.40 gives
-\[
+$$
 \operatorname{Deck}(Y/(Y/G))\cong G.
-\]
+$$
 
 :::
 
@@ -70,9 +70,9 @@ A simply connected covering space is universal.
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{\pi_1(Y/G)\cong G.}
-\]
+$$
 
 ::: pf-proof
 

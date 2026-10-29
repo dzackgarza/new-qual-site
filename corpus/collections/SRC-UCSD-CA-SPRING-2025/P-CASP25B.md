@@ -30,9 +30,9 @@ Prove nonexistence or give an explicit example if such exists.
 ::: {.solution}
 (i) A Möbius transformation exists exactly when $\alpha=1$. In that case
 $\Omega_1$ is the right half-plane, and for example
-\[
+$$
 S(z)=\frac{z-1}{z+1}
-\]
+$$
 maps it biholomorphically onto $\DD$.
 
 Now suppose $0<\alpha<1$. The boundary of $\Omega_\alpha$ consists of two
@@ -47,15 +47,15 @@ for $\alpha<1$.
 
 (ii) A conformal map exists for every $0<\alpha\le1$. On the sector choose the
 single-valued branch
-\[
+$$
 w=z^{1/\alpha}.
-\]
+$$
 It maps $\Omega_\alpha$ biholomorphically onto the right half-plane. Composing
 with the Cayley map gives
-\[
+$$
 \boxed{
 f(z)=\frac{z^{1/\alpha}-1}{z^{1/\alpha}+1},
 }
-\]
+$$
 which maps $\Omega_\alpha$ conformally onto $\DD$.
 :::

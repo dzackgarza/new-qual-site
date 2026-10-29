@@ -14,12 +14,12 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 A=\begin{pmatrix}
 3/2&1/2\\
 -1/2&1/2
 \end{pmatrix}.
-\]
+$$
 Calculate $A^{100}$ and $A^{-7}$.
 :::
 

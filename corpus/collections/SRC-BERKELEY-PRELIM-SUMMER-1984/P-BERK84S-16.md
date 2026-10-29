@@ -36,9 +36,9 @@ Since $p(a)\neq0$, none of those roots equals $a$.
 ::: {.pf-step #s1}
 
 Factor $p$ over $\RR$ as
-\[
+$$
 p(z)=c\prod_{j=1}^s (z-r_j)^{m_j},
-\]
+$$
 where the $r_j$ are distinct real numbers and $m_j\ge1$.
 
 ::: pf-proof
@@ -53,9 +53,9 @@ Because $p(a)\neq0$, one has $a-r_j\neq0$ for every $j$.
 ::: {.pf-step #s2}
 
 At every $z$ with $p(z)\neq0$,
-\[
+$$
 \frac{p'(z)}{p(z)}=\sum_{j=1}^s\frac{m_j}{z-r_j}.
-\]
+$$
 
 ::: pf-proof
 
@@ -69,17 +69,17 @@ Equivalently, this is the logarithmic derivative of the factorization.
 ::: {.pf-step #s3}
 
 Differentiating the identity in step [](#s2){.pf-ref} gives
-\[
+$$
 \frac{p''(z)}{p(z)}-\left(\frac{p'(z)}{p(z)}\right)^2
 =-\sum_{j=1}^s\frac{m_j}{(z-r_j)^2}.
-\]
+$$
 
 ::: pf-proof
 
 The derivative of $p'/p$ is
-\[
+$$
 \left(\frac{p'}p\right)'=\frac{p''}{p}-\left(\frac{p'}p\right)^2,
-\]
+$$
 while termwise differentiation of the right-hand side of step [](#s2){.pf-ref} gives the displayed negative sum.
 
 :::
@@ -93,19 +93,19 @@ Evaluating at $z=a$ contradicts the hypotheses.
 ::: pf-proof
 
 Since $p'(a)=0$ and $p(a)\neq0$, step [](#s2){.pf-ref} gives
-\[
+$$
 \sum_{j=1}^s\frac{m_j}{a-r_j}=0.
-\]
+$$
 Using $p'(a)=0$ in step [](#s3){.pf-ref} yields
-\[
+$$
 \frac{p''(a)}{p(a)}
 =-\sum_{j=1}^s\frac{m_j}{(a-r_j)^2}.
-\]
+$$
 Every summand on the right is strictly positive before the minus sign, because $m_j>0$ and $a\neq r_j$.
 Hence
-\[
+$$
 \frac{p''(a)}{p(a)}<0,
-\]
+$$
 so $p''(a)\neq0$.
 This contradicts the assumption $p''(a)=0$.
 

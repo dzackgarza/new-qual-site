@@ -25,15 +25,15 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 \DD=\{z\in\CC:|z|<1\}.
-\]
+$$
 Suppose $f:\DD\to\DD$ is analytic and there exist distinct $a,b\in\DD$ with
-\[
+$$
 f(a)=a,
 \qquad
 f(b)=b.
-\]
+$$
 Prove that $f(z)=z$ for every $z\in\DD$.
 :::
 

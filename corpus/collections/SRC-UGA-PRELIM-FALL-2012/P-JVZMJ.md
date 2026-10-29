@@ -28,24 +28,24 @@ c. $3n+1$ is even if and only if $n^2+4$ is prime.
 
 ::: {.solution}
 (a) The negation is:
-\[
+$$
 \text{For every real }x\text{ there exists a real }y\text{ such that }|x-y|\le1.
-\]
+$$
 
 (b) Making the hidden quantifiers explicit, the original assertion says that for every closed interval $[a,b]$ and every continuous $f:[a,b]\to\RR$, there exists $x\in[a,b]$ such that $f(x)\le f(y)$ for every $y\in[a,b]$. Its negation is therefore:
-\[
+$$
 \text{There exist }a\le b\text{ and continuous }f:[a,b]\to\RR\text{ such that for every }x\in[a,b]
-\]
-\[
+$$
+$$
 \text{there exists }y\in[a,b]\text{ with }f(y)<f(x).
-\]
+$$
 
 (c) Interpreting $n$ as an arbitrary integer, the negation of the biconditional is that there exists an integer $n$ for which exactly one side holds; equivalently,
-\[
+$$
 \text{either }3n+1\text{ is even and }n^2+4\text{ is composite,}
-\]
+$$
 or
-\[
+$$
 3n+1\text{ is odd and }n^2+4\text{ is prime.}
-\]
+$$
 :::

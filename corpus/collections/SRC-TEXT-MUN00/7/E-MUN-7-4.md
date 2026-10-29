@@ -39,21 +39,21 @@ Assuming the reals are uncountable, show that the transcendental numbers are unc
 :::
 
 ::: {.solution}
-(a) For each \(n\ge1\), let \(P_n\) be the set of monic degree-\(n\) polynomials with rational coefficients. The coefficient map gives a bijection
-\[
+(a) For each $n\ge1$, let $P_n$ be the set of monic degree-$n$ polynomials with rational coefficients. The coefficient map gives a bijection
+$$
 P_n\cong\QQ^n.
-\]
-Since finite products of countable sets are countable, each \(P_n\) is countable. Hence
-\[
+$$
+Since finite products of countable sets are countable, each $P_n$ is countable. Hence
+$$
 P=\bigcup_{n\ge1}P_n
-\]
+$$
 is countable.
 
-Each polynomial in \(P\) has only finitely many real roots. The set \(\mathcal A\) of algebraic real numbers is the union, over \(p\in P\), of the finite root set of \(p\). This is a countable union of finite sets, hence countable.
+Each polynomial in $P$ has only finitely many real roots. The set $\mathcal A$ of algebraic real numbers is the union, over $p\in P$, of the finite root set of $p$. This is a countable union of finite sets, hence countable.
 
-(b) Let \(T\) be the set of transcendental reals. Then
-\[
+(b) Let $T$ be the set of transcendental reals. Then
+$$
 \RR=\mathcal A\cup T.
-\]
-If \(T\) were countable, the right side would be a union of two countable sets and hence countable, contradicting the assumed uncountability of \(\RR\). Therefore \(T\) is uncountable.
+$$
+If $T$ were countable, the right side would be a union of two countable sets and hence countable, contradicting the assumed uncountability of $\RR$. Therefore $T$ is uncountable.
 :::

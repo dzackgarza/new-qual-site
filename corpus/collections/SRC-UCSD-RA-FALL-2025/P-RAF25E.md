@@ -46,38 +46,38 @@ Extend the translation identity from $L^1\cap L^2$ to all of $L^2$.
 ::: pf-proof
 
 Fix $a\in\RR^n$. Choose $f_j\in L^1(\RR^n)\cap L^2(\RR^n)$ such that
-\[
+$$
 f_j\to f
 \qquad\text{in }L^2.
-\]
+$$
 Translations are isometries of $L^2$, so
-\[
+$$
 (f_j)_a\to f_a
 \qquad\text{in }L^2.
-\]
+$$
 By Plancherel,
-\[
+$$
 \widehat{(f_j)_a}\to\widehat{f_a}
 \qquad\text{in }L^2.
-\]
+$$
 
 For $f_j\in L^1\cap L^2$, the usual translation formula gives
-\[
+$$
 \widehat{(f_j)_a}(\xi)
 =e^{-2\pi i\xi\cdot a}\widehat{f_j}(\xi).
-\]
+$$
 Again by Plancherel,
-\[
+$$
 \widehat{f_j}\to\widehat f
 \qquad\text{in }L^2,
-\]
+$$
 and multiplication by the unimodular factor $e^{-2\pi i\xi\cdot a}$ is an $L^2$ isometry. Passing to the $L^2$ limit yields
-\[
+$$
 \boxed{
 \widehat{f_a}(\xi)
 =e^{-2\pi i\xi\cdot a}\widehat f(\xi)
 \quad\text{a.e.}}
-\]
+$$
 
 :::
 
@@ -90,15 +90,15 @@ Compute the orthogonal complement of the translation span.
 ::: pf-proof
 
 Let
-\[
+$$
 V:=\overline{\operatorname{span}}\{f_a:a\in\RR^n\}
-\]
+$$
 and suppose $g\in V^\perp$. Then for every $a\in\RR^n$,
-\[
+$$
 0=\langle g,f_a\rangle.
-\]
+$$
 By Plancherel and Step 1,
-\[
+$$
 \begin{aligned}
 0
 &=\int_{\RR^n}\widehat g(\xi)
@@ -107,26 +107,26 @@ By Plancherel and Step 1,
 \widehat g(\xi)\overline{\widehat f(\xi)}
 e^{2\pi i\xi\cdot a}\,d\xi.
 \end{aligned}
-\]
+$$
 
 Set
-\[
+$$
 h(\xi):=\widehat g(\xi)\overline{\widehat f(\xi)}.
-\]
+$$
 By Cauchy--Schwarz,
-\[
+$$
 h\in L^1(\RR^n).
-\]
+$$
 The preceding identity says that the inverse Fourier transform of $h$ vanishes at every $a\in\RR^n$. By uniqueness of the Fourier transform on $L^1$,
-\[
+$$
 h=0
 \qquad\text{a.e.}
-\]
+$$
 Since $\widehat f(\xi)\ne0$ almost everywhere, it follows that
-\[
+$$
 \widehat g=0
 \qquad\text{a.e.}
-\]
+$$
 and therefore $g=0$ by Plancherel.
 
 :::
@@ -140,19 +140,19 @@ Conclude density.
 ::: pf-proof
 
 Step 2 shows
-\[
+$$
 V^\perp=\{0\}.
-\]
+$$
 Since $V$ is a closed subspace of the Hilbert space $L^2(\RR^n)$,
-\[
+$$
 V=(V^\perp)^\perp=L^2(\RR^n).
-\]
+$$
 Hence
-\[
+$$
 \boxed{
 \operatorname{span}\{f_a:a\in\RR^n\}
 \text{ is dense in }L^2(\RR^n).}
-\]
+$$
 
 :::
 

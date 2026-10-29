@@ -40,15 +40,15 @@ Prove that if $\partial f/\partial x$ and $\partial f/\partial y$ exist and are 
 ::: {.pf-step #p2-s1}
 
 The function $f$ is differentiable at
-\[
+$$
 p_0=(x_0,y_0)
-\]
+$$
 if there exists a linear map
-\[
+$$
 L:\RR^2\to\RR
-\]
+$$
 such that
-\[
+$$
 \boxed{
 \lim_{h\to0}
 \frac{
@@ -58,19 +58,19 @@ such that
 }
 =0.
 }
-\]
+$$
 
 ::: pf-proof
 
 This is the definition of Fréchet differentiability.
 When $f_x$ and $f_y$ exist at $p_0$, the only possible derivative is
-\[
+$$
 L(h,k)
 =
 f_x(x_0,y_0)h
 +
 f_y(x_0,y_0)k.
-\]
+$$
 
 :::
 
@@ -79,21 +79,21 @@ f_y(x_0,y_0)k.
 ::: {.pf-step #p2-s2}
 
 Let
-\[
+$$
 \varepsilon>0.
-\]
+$$
 By continuity of $f_x$ and $f_y$ at $(x_0,y_0)$, there exists $\delta>0$ such that whenever
-\[
+$$
 \|(x,y)-(x_0,y_0)\|_2<\delta,
-\]
+$$
 one has
-\[
+$$
 |f_x(x,y)-f_x(x_0,y_0)|<\varepsilon
-\]
+$$
 and
-\[
+$$
 |f_y(x,y)-f_y(x_0,y_0)|<\varepsilon.
-\]
+$$
 
 ::: pf-proof
 
@@ -107,18 +107,18 @@ Choose a ball centered at $(x_0,y_0)$ contained in that neighborhood and small e
 ::: {.pf-step #p2-s3}
 
 For sufficiently small $h,k$, there exists $\xi$ between $x_0$ and $x_0+h$ such that
-\[
+$$
 f(x_0+h,y_0+k)-f(x_0,y_0+k)
 =
 f_x(\xi,y_0+k)\,h.
-\]
+$$
 
 ::: pf-proof
 
 Fix $k$ and apply the one-variable mean value theorem to the function
-\[
+$$
 x\longmapsto f(x,y_0+k)
-\]
+$$
 on the interval with endpoints $x_0$ and $x_0+h$.
 The required partial derivative exists and is continuous in the chosen neighborhood.
 
@@ -129,18 +129,18 @@ The required partial derivative exists and is continuous in the chosen neighborh
 ::: {.pf-step #p2-s4}
 
 For sufficiently small $k$, there exists $\eta$ between $y_0$ and $y_0+k$ such that
-\[
+$$
 f(x_0,y_0+k)-f(x_0,y_0)
 =
 f_y(x_0,\eta)\,k.
-\]
+$$
 
 ::: pf-proof
 
 Apply the one-variable mean value theorem to
-\[
+$$
 y\longmapsto f(x_0,y)
-\]
+$$
 between $y_0$ and $y_0+k$.
 
 :::
@@ -150,7 +150,7 @@ between $y_0$ and $y_0+k$.
 ::: {.pf-step #p2-s5}
 
 Therefore
-\[
+$$
 \begin{aligned}
 &f(x_0+h,y_0+k)-f(x_0,y_0)\\
 &\qquad=
@@ -158,12 +158,12 @@ f_x(\xi,y_0+k)h
 +
 f_y(x_0,\eta)k.
 \end{aligned}
-\]
+$$
 
 ::: pf-proof
 
 Add the identities from steps [](#p2-s3){.pf-ref} and [](#p2-s4){.pf-ref}:
-\[
+$$
 \begin{aligned}
 f(x_0+h,y_0+k)-f(x_0,y_0)
 &=
@@ -175,7 +175,7 @@ f(x_0+h,y_0+k)-f(x_0,y_0+k)
 f(x_0,y_0+k)-f(x_0,y_0)
 \bigr].
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -184,15 +184,15 @@ f(x_0,y_0+k)-f(x_0,y_0)
 ::: {.pf-step #p2-s6}
 
 Let
-\[
+$$
 L(h,k)
 =
 f_x(x_0,y_0)h
 +
 f_y(x_0,y_0)k.
-\]
+$$
 Then
-\[
+$$
 \begin{aligned}
 R(h,k)
 &:=
@@ -206,14 +206,14 @@ f_x(\xi,y_0+k)-f_x(x_0,y_0)
 f_y(x_0,\eta)-f_y(x_0,y_0)
 \bigr)k.
 \end{aligned}
-\]
+$$
 
 ::: pf-proof
 
 Subtract
-\[
+$$
 f_x(x_0,y_0)h+f_y(x_0,y_0)k
-\]
+$$
 from the identity in step [](#p2-s5){.pf-ref} and collect coefficients of $h$ and $k$.
 
 :::
@@ -223,34 +223,34 @@ from the identity in step [](#p2-s5){.pf-ref} and collect coefficients of $h$ an
 ::: {.pf-step #p2-s7}
 
 If
-\[
+$$
 \sqrt{h^2+k^2}<\delta/2,
-\]
+$$
 then
-\[
+$$
 |R(h,k)|
 \le
 \varepsilon(|h|+|k|).
-\]
+$$
 
 ::: pf-proof
 
 The intermediate point
-\[
+$$
 (\xi,y_0+k)
-\]
+$$
 lies within distance less than $\delta$ of $(x_0,y_0)$ when $(h,k)$ is sufficiently small, and likewise for
-\[
+$$
 (x_0,\eta).
-\]
+$$
 Hence step [](#p2-s2){.pf-ref} gives
-\[
+$$
 |f_x(\xi,y_0+k)-f_x(x_0,y_0)|<\varepsilon
-\]
+$$
 and
-\[
+$$
 |f_y(x_0,\eta)-f_y(x_0,y_0)|<\varepsilon.
-\]
+$$
 Apply the triangle inequality to step [](#p2-s6){.pf-ref}.
 
 :::
@@ -260,21 +260,21 @@ Apply the triangle inequality to step [](#p2-s6){.pf-ref}.
 ::: {.pf-step #p2-s8}
 
 One has
-\[
+$$
 \frac{|R(h,k)|}{\sqrt{h^2+k^2}}
 \le
 \sqrt2\,\varepsilon
-\]
+$$
 for all sufficiently small nonzero $(h,k)$.
 
 ::: pf-proof
 
 By Cauchy--Schwarz,
-\[
+$$
 |h|+|k|
 \le
 \sqrt2\,\sqrt{h^2+k^2}.
-\]
+$$
 Combine this with step [](#p2-s7){.pf-ref} and divide by the positive denominator.
 
 :::
@@ -284,7 +284,7 @@ Combine this with step [](#p2-s7){.pf-ref} and divide by the positive denominato
 ::: {.pf-step #p2-s9}
 
 Therefore
-\[
+$$
 \lim_{(h,k)\to(0,0)}
 \frac{
 |f(x_0+h,y_0+k)-f(x_0,y_0)-L(h,k)|
@@ -292,16 +292,16 @@ Therefore
 \sqrt{h^2+k^2}
 }
 =0.
-\]
+$$
 
 ::: pf-proof
 
 The number $\varepsilon>0$ in steps [](#p2-s2){.pf-ref}, [](#p2-s3){.pf-ref}, [](#p2-s4){.pf-ref}, [](#p2-s5){.pf-ref}, [](#p2-s6){.pf-ref}, [](#p2-s7){.pf-ref} and [](#p2-s8){.pf-ref} was arbitrary.
 Thus for every positive tolerance, the quotient is eventually bounded by a constant multiple of that tolerance.
 Equivalently, given $\eta>0$, begin the argument with
-\[
+$$
 \varepsilon=\frac{\eta}{\sqrt2}.
-\]
+$$
 Then the quotient is eventually less than $\eta$.
 
 :::
@@ -311,7 +311,7 @@ Then the quotient is eventually less than $\eta$.
 ::: {.pf-step #p2-s10}
 
 Hence $f$ is differentiable at $(x_0,y_0)$, with
-\[
+$$
 \boxed{
 Df(x_0,y_0)(h,k)
 =
@@ -319,7 +319,7 @@ f_x(x_0,y_0)h
 +
 f_y(x_0,y_0)k.
 }
-\]
+$$
 
 ::: pf-proof
 

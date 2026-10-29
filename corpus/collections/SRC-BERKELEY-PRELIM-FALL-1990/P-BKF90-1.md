@@ -24,11 +24,11 @@ audit:
 
 ::: {.problem}
 Find all pairs of integers $a,b$ satisfying
-\[
+$$
 0<a<b,
 \qquad
 a^b=b^a.
-\]
+$$
 :::
 
 ::: {.solution}

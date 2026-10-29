@@ -14,18 +14,18 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 p(z)=a_0+a_1z+\cdots+a_{n-1}z^{n-1}+z^n,
 \qquad
 R=\sqrt{|a_0|^2+\cdots+|a_{n-1}|^2+1}.
-\]
+$$
 
 1. If $R=1$, show that the zero set of $p$ is $\{0\}$.
 
 2. If $R>1$ and $|z|=R$, show, using Cauchy-Schwarz, that
-   \[
+   $$
    |z^n-p(z)|<|z^n|.
-   \]
+   $$
 
 Conclude that every zero of $p$ lies in the open disk $|z|<R$.
 :::

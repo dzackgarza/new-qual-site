@@ -12,13 +12,13 @@ audit:
 
 ::: {.problem}
 Find as long a list as possible of pairwise nonsimilar real matrices such that every matrix in the list has characteristic polynomial
-\[
+$$
 (x-1)^5(x+1)
-\]
+$$
 and minimal polynomial
-\[
+$$
 (x-1)^2(x+1).
-\]
+$$
 :::
 
 ::: {.solution}

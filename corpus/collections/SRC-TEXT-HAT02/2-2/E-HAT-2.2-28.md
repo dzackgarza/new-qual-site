@@ -40,45 +40,45 @@ For each attachment, use Mayer--Vietoris with the original space and the Möbius
 ::: pf-step
 
 In part (a), let
-\[
+$$
 Y=T^2\cup_{S^1}M,
-\]
+$$
 where the boundary of the Möbius band $M$ is attached to the circle $S^1\times\{x_0\}$ in the torus. Then
-\[
+$$
 H_i(Y)\cong
 \begin{cases}
 \ZZ,&i=0,2,\\
 \ZZ^2,&i=1,\\
 0,&i>2.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 Choose generators $a,b$ for
-\[
+$$
 H_1(T^2)\cong\ZZ^2
-\]
+$$
 with $a$ represented by the attaching circle, and let $c$ generate
-\[
+$$
 H_1(M)\cong\ZZ.
-\]
+$$
 The Mayer--Vietoris map from the intersection is
-\[
+$$
 H_1(S^1)=\ZZ
 \longrightarrow
 H_1(T^2)\oplus H_1(M)=\ZZ^3,
 \qquad
 1\longmapsto(a,-2c).
-\]
+$$
 This map is injective, and its image is primitive because the coordinate of $a$ is $1$. Since $H_2(S^1)=H_2(M)=0$, the exact sequence gives
-\[
+$$
 0\to H_2(T^2)=\ZZ\to H_2(Y)\to\ker(1\mapsto(a,-2c))=0,
-\]
+$$
 so $H_2(Y)\cong\ZZ$. In degree one,
-\[
+$$
 H_1(Y)\cong\ZZ^3/\langle(a,-2c)\rangle\cong\ZZ^2.
-\]
+$$
 Connectedness gives $H_0(Y)=\ZZ$.
 
 :::
@@ -88,38 +88,38 @@ Connectedness gives $H_0(Y)=\ZZ$.
 ::: pf-step
 
 In part (b), let
-\[
+$$
 Z=\RP^2\cup_{\RP^1}M.
-\]
+$$
 Then
-\[
+$$
 H_i(Z)\cong
 \begin{cases}
 \ZZ,&i=0,\\
 \ZZ_4,&i=1,\\
 0,&i\ge2.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 
 Let $u$ generate
-\[
+$$
 H_1(\RP^2)\cong\ZZ_2
-\]
+$$
 and let $c$ generate $H_1(M)\cong\ZZ$. The standard circle $\RP^1$ represents $u$, while the boundary of $M$ represents $2c$. Hence the Mayer--Vietoris map is
-\[
+$$
 \ZZ\longrightarrow\ZZ_2\oplus\ZZ,
 \qquad
 1\longmapsto(u,-2c).
-\]
+$$
 It is injective because of the infinite cyclic second coordinate, so $H_2(Z)=0$. Its cokernel has presentation
-\[
+$$
 \langle u,c\mid 2u=0,\ u=2c\rangle
 \cong
 \langle c\mid4c=0\rangle
 \cong\ZZ_4.
-\]
+$$
 Thus $H_1(Z)\cong\ZZ_4$, and connectedness gives $H_0(Z)=\ZZ$.
 
 :::

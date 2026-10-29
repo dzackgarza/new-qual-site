@@ -29,15 +29,15 @@ Show that if $\varphi: X \to Y$ is a homotopy equivalence, then the induced homo
 :::
 
 ::: {.solution}
-Let \(\varphi:X\to Y\) be a homotopy equivalence, with homotopy inverse \(\psi:Y\to X\). Choose a path \(\eta\) from \(x_0\) to \(\psi\varphi(x_0)\) supplied by the homotopy \(\psi\varphi\simeq\operatorname{id}_X\). Naturality of homotopy groups under a homotopy gives
-\[
+Let $\varphi:X\to Y$ be a homotopy equivalence, with homotopy inverse $\psi:Y\to X$. Choose a path $\eta$ from $x_0$ to $\psi\varphi(x_0)$ supplied by the homotopy $\psi\varphi\simeq\operatorname{id}_X$. Naturality of homotopy groups under a homotopy gives
+$$
 \beta_\eta\circ(\psi\varphi)_*=\operatorname{id}_{\pi_n(X,x_0)},
-\]
-where \(\beta_\eta\) is the appropriate change-of-basepoint isomorphism. Similarly, from \(\varphi\psi\simeq\operatorname{id}_Y\) one gets a change-of-basepoint isomorphism making \(\varphi_*\psi_*\) the identity.
+$$
+where $\beta_\eta$ is the appropriate change-of-basepoint isomorphism. Similarly, from $\varphi\psi\simeq\operatorname{id}_Y$ one gets a change-of-basepoint isomorphism making $\varphi_*\psi_*$ the identity.
 
-Thus \(\varphi_*\) has a two-sided inverse after the canonical basepoint changes. In particular
-\[
+Thus $\varphi_*$ has a two-sided inverse after the canonical basepoint changes. In particular
+$$
 \boxed{\varphi_*:\pi_n(X,x_0)\xrightarrow{\cong}\pi_n(Y,\varphi(x_0))}
-\]
-for every \(n\ge1\). (For \(n=0\), the same argument says that a homotopy equivalence induces a bijection on path components.)
+$$
+for every $n\ge1$. (For $n=0$, the same argument says that a homotopy equivalence induces a bijection on path components.)
 :::

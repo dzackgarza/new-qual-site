@@ -43,15 +43,15 @@ Rewrite the oscillatory factor.
 ::: pf-proof
 
 The identity
-\[
+$$
 \sin^2(nx)=\frac{1-\cos(2nx)}2
-\]
+$$
 gives
-\[
+$$
 \int_{\RR}g(x)\sin^2(nx)\,dx
 =\frac12\int_{\RR}g(x)\,dx
 -\frac12\int_{\RR}g(x)\cos(2nx)\,dx.
-\]
+$$
 The first integral is $3$, so it remains to control the oscillatory term.
 
 :::
@@ -65,18 +65,18 @@ Apply the Riemann--Lebesgue lemma.
 ::: pf-proof
 
 Because $g\in L^1(\RR)$, the Riemann--Lebesgue lemma implies
-\[
+$$
 \int_{\RR}g(x)e^{2inx}\,dx\longrightarrow0.
-\]
+$$
 Taking real parts yields
-\[
+$$
 \int_{\RR}g(x)\cos(2nx)\,dx\longrightarrow0.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{
 \lim_{n\to\infty}\int_{\RR}g(x)\sin^2(nx)\,dx=\frac32.}
-\]
+$$
 
 :::
 

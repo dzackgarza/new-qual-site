@@ -61,24 +61,24 @@ There is a free involution $\alpha$ of $Z$ whose quotient is $X_1$.
 ::: pf-proof
 
 Define $\alpha$ by
-\[
+$$
 N_1\leftrightarrow S_2,
 \qquad
 S_1\leftrightarrow N_2.
-\]
+$$
 Choose the two semicircle edges of $C_1$ to map to the corresponding opposite semicircle edges of $C_2$, and interchange the two joining edges.
 No vertex or edge interior point is fixed.
 
 The two vertex orbits give two quotient vertices.
 The four semicircle edges form two edge orbits joining these vertices, and the two joining edges form a third such orbit.
 Hence
-\[
+$$
 Z/\langle\alpha\rangle\cong X_1.
-\]
+$$
 Because the action is free on vertices and edge interiors, the quotient map
-\[
+$$
 Z\to X_1
-\]
+$$
 is a two-sheeted covering.
 
 :::
@@ -92,10 +92,10 @@ There is a second free involution $\beta$ of $Z$ whose quotient is $X_2$.
 ::: pf-proof
 
 Define $\beta$ by
-\[
+$$
 N_i\leftrightarrow S_i
 \qquad(i=1,2),
-\]
+$$
 interchanging the two semicircle edges of each $C_i$ and interchanging the two joining edges.
 Again no vertex or edge interior point is fixed.
 
@@ -103,13 +103,13 @@ The two vertices $N_1,S_1$ form one orbit and $N_2,S_2$ the other.
 For each $i$, the two semicircles of $C_i$ form one edge orbit whose image is a loop at the corresponding quotient vertex.
 The two joining edges form one edge orbit joining the quotient vertices.
 Thus
-\[
+$$
 Z/\langle\beta\rangle\cong X_2,
-\]
+$$
 and
-\[
+$$
 Z\to X_2
-\]
+$$
 is also a two-sheeted covering.
 
 :::
@@ -136,18 +136,18 @@ Neither $X_1$ nor $X_2$ admits a nontrivial covering map onto a connected graph.
 
 Both graphs have exactly two branch vertices, and every branch vertex has valence $3$.
 Let
-\[
+$$
 p:X_i\to W
-\]
+$$
 be a covering with $W$ connected.
 The valence of a point is preserved by a local homeomorphism, so the preimage of every valence-$3$ vertex of $W$ consists of valence-$3$ vertices of $X_i$.
 Since $X_i$ has exactly two such vertices and the number of sheets is constant on connected $W$, the degree of $p$ is either $1$ or $2$.
 
 If the degree were $2$, then $W$ would have exactly one valence-$3$ vertex.
 But a finite graph has an even number of odd-valence vertices, since
-\[
+$$
 \sum_v \deg(v)=2|E|.
-\]
+$$
 All other points of $W$ have valence $2$, so this is impossible.
 Therefore the degree is $1$, and $p$ is an isomorphism of covering spaces.
 
@@ -177,9 +177,9 @@ Therefore no connected space is covered by both $X_1$ and $X_2$.
 
 If a connected graph $W$ were covered by both, step [](#s5){.pf-ref} would force both covering maps to have degree $1$.
 Hence
-\[
+$$
 X_1\cong W\cong X_2,
-\]
+$$
 contradicting step [](#s6){.pf-ref}.
 
 :::

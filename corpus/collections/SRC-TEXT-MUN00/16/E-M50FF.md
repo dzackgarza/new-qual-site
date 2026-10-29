@@ -29,12 +29,12 @@ Show that if $Y$ is a subspace of $X$, and $A$ is a subset of $Y$, then the topo
 
 ::: {.solution}
 Let $\mathcal T_X$ be the topology of $X$. The topology that $A$ inherits directly from $X$ is
-\[
+$$
 \{A\cap U:U\in\mathcal T_X\}.
-\]
+$$
 The topology that $Y$ inherits from $X$ is $\{Y\cap U:U\in\mathcal T_X\}$. Hence the topology that $A$ inherits from $Y$ consists of
-\[
+$$
 A\cap(Y\cap U)=(A\cap Y)\cap U=A\cap U
-\]
+$$
 with $U\in\mathcal T_X$, since $A\subseteq Y$. Thus the two subspace topologies coincide.
 :::

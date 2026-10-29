@@ -34,17 +34,17 @@ This is the complex version of the chain rule.
 
 ::: {.solution}
 Write the real-differentiable map $f$ locally as a function of $z$ and $\bar z$. Its differential is
-\[
+$$
 df=f_z\,dz+f_{\bar z}\,d\bar z,
 \qquad
 d\bar f=\bar f_z\,dz+\bar f_{\bar z}\,d\bar z.
-\]
+$$
 Likewise, for $g$, viewed at the point $f(z)$,
-\[
+$$
 dg=g_z\,dw+g_{\bar z}\,d\bar w.
-\]
+$$
 For $h=g\circ f$, substitute $w=f(z)$:
-\[
+$$
 \begin{aligned}
 dh
 &=g_z\,df+g_{\bar z}\,d\bar f\\
@@ -53,12 +53,12 @@ dh
 &=(g_zf_z+g_{\bar z}\bar f_z)\,dz
  +(g_zf_{\bar z}+g_{\bar z}\bar f_{\bar z})\,d\bar z.
 \end{aligned}
-\]
+$$
 Comparing the coefficients of $dz$ and $d\bar z$ yields
-\[
+$$
 h_z=g_zf_z+g_{\bar z}\bar f_z,
 \qquad
 h_{\bar z}=g_zf_{\bar z}+g_{\bar z}\bar f_{\bar z},
-\]
+$$
 which are the desired formulas.
 :::

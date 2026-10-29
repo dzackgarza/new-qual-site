@@ -18,13 +18,13 @@ audit:
 ::: {.problem}
 Let $(X,\mathcal A,\mu)$ be a measure space and let $f_n,f$ be integrable real-valued functions.
 Prove that if $f_n\to f$ almost everywhere and
-\[
+$$
 \int_X|f_n|\,d\mu\to\int_X|f|\,d\mu,
-\]
+$$
 then
-\[
+$$
 \int_X|f_n-f|\,d\mu\to0.
-\]
+$$
 :::
 
 ::: {.solution}

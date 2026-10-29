@@ -19,9 +19,9 @@ audit:
 Let $(X,\mathcal B,\mu)$ be a measure space and let $f\ge0$ be integrable.
 
 (a) Prove that for every $a>0$,
-\[
+$$
 \mu\{x:f(x)\ge a\}<\infty.
-\]
+$$
 
 (b) Prove that $\{x:f(x)>0\}$ is a countable union of sets of finite measure.
 :::

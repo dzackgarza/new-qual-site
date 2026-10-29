@@ -24,9 +24,9 @@ audit:
 
 ::: {.problem}
 Find all real-valued $C^1$ solutions $y$ on $(-1,1)$ of
-\[
+$$
 x\frac{dy}{dx}+y=x.
-\]
+$$
 :::
 
 ::: {.solution}

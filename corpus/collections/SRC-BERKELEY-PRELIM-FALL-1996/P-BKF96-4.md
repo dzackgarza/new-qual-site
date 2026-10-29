@@ -24,9 +24,9 @@ audit:
 
 ::: {.problem}
 Does there exist a function $f$, holomorphic on $\CC\setminus\{0\}$, such that
-\[
+$$
 |f(z)|\ge\frac1{\sqrt{|z|}}
-\]
+$$
 for every $z\ne0$?
 :::
 

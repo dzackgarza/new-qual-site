@@ -35,34 +35,34 @@ Let $X$ be the 2 complex obtained from $S^1$ with its usual cell structure by at
 
 ::: {.solution}
 Let $e^0,e^1,e^2_2,e^2_3$ denote the cells, where the subscripts record the degrees of the two attaching maps. The cellular chain complex of $X$ is
-\[
+$$
 0\longrightarrow \ZZ^2
 \xrightarrow{d_2}\ZZ
 \xrightarrow{0}\ZZ\longrightarrow0,
 \qquad
  d_2(a,b)=2a+3b.
-\]
+$$
 Hence
-\[
+$$
 H_2(X)=\ker d_2=\ZZ(3,-2),
 \qquad H_1(X)=0,
 \qquad H_0(X)=\ZZ.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 The subcomplexes of $X$ are exactly
-\[
+$$
 \{e^0\},\quad
 S^1=e^0\cup e^1,\quad
 A_2=S^1\cup e^2_2,\quad
 A_3=S^1\cup e^2_3,\quad
 X.
-\]
+$$
 Their homology groups are
-\[
+$$
 \begin{array}{c|ccc}
 A&H_0&H_1&H_2\\ \hline
 \{e^0\}&\ZZ&0&0\\
@@ -71,18 +71,18 @@ A_2&\ZZ&\ZZ_2&0\\
 A_3&\ZZ&\ZZ_3&0\\
 X&\ZZ&0&\ZZ.
 \end{array}
-\]
+$$
 
 ::: pf-proof
 
 A subcomplex containing a $2$-cell must contain its attaching circle, hence $e^1$. This gives the displayed list. The chain complexes for $A_2$ and $A_3$ are respectively
-\[
+$$
 0\to\ZZ\xrightarrow{2}\ZZ\to\ZZ\to0
-\]
+$$
 and
-\[
+$$
 0\to\ZZ\xrightarrow{3}\ZZ\to\ZZ\to0,
-\]
+$$
 which give the stated groups. The groups for $X$ follow from the cellular complex above.
 
 :::
@@ -92,7 +92,7 @@ which give the stated groups. The groups for $X$ follow from the cellular comple
 ::: pf-step
 
 The quotient spaces and their homology are as follows:
-\[
+$$
 X/\{e^0\}=X,
 \qquad
 X/S^1\cong S^2\vee S^2,
@@ -102,15 +102,15 @@ X/A_2\cong S^2,
 X/A_3\cong S^2,
 \qquad
 X/X=\mathrm{pt}.
-\]
+$$
 Thus
-\[
+$$
 \widetilde H_2(X/S^1)\cong\ZZ^2,
 \quad
 \widetilde H_2(X/A_2)\cong\ZZ,
 \quad
 \widetilde H_2(X/A_3)\cong\ZZ,
-\]
+$$
 and all other reduced homology groups of these three quotients vanish.
 
 ::: pf-proof
@@ -128,15 +128,15 @@ The space $X$ is homotopy equivalent to $S^2$.
 ::: pf-proof
 
 First attach the degree-$2$ cell, obtaining $A_2$. Its fundamental group is
-\[
+$$
 \pi_1(A_2)\cong\ZZ_2.
-\]
+$$
 The degree-$3$ attaching loop for the second $2$-cell represents the same element of this group as a degree-$1$ loop, since $3\equiv1\pmod2$. Hence these two attaching maps are homotopic in $A_2$. Replacing the degree-$3$ attaching map by the homotopic degree-$1$ attaching map does not change the homotopy type of the adjunction space.
 
 With this replacement, $S^1\cup e^2_3$ is a disk, so the remaining degree-$2$ cell is attached to a contractible disk along a loop that is nullhomotopic there. Therefore the resulting space is homotopy equivalent to
-\[
+$$
 D^2\vee S^2\simeq S^2.
-\]
+$$
 Thus $X\simeq S^2$.
 
 :::
@@ -146,25 +146,25 @@ Thus $X\simeq S^2$.
 ::: {.pf-step #s4}
 
 For $A=A_2$, the quotient map
-\[
+$$
 q_2:X\to X/A_2\cong S^2
-\]
+$$
 induces multiplication by $-2$ on $H_2$, up to orientation; for $A=A_3$, the quotient map induces multiplication by $3$, up to orientation.
 
 ::: pf-proof
 
 The generator of $H_2(X)$ is the cellular cycle
-\[
+$$
 3e^2_2-2e^2_3.
-\]
+$$
 After collapsing $A_2$, the first term disappears and the second $2$-cell generates $H_2(X/A_2)$, so
-\[
+$$
 (q_2)_*(3,-2)=-2.
-\]
+$$
 After collapsing $A_3$, only the first cell survives, giving
-\[
+$$
 (q_3)_*(3,-2)=3.
-\]
+$$
 Changing orientations changes only the signs.
 
 :::

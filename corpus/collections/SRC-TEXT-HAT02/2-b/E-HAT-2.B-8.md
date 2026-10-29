@@ -30,18 +30,18 @@ Show that $\RR^{2n+1}$ is not a division algebra over $\RR$ if $n > 0$ by consid
 
 ::: {.solution}
 Assume for contradiction that $A=\RR^{2n+1}$, with $n>0$, has the structure of a real division algebra. For $a\in A$ let
-\[
+$$
 L_a:A\to A,\qquad L_a(x)=ax.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 If $a\ne0$, then $L_a$ is invertible, hence
-\[
+$$
 \det L_a\ne0.
-\]
+$$
 
 ::: pf-proof
 
@@ -54,9 +54,9 @@ In a division algebra the equation $ax=b$ is solvable for every $b$ whenever $a\
 ::: pf-step
 
 Choose $a\ne0$. Since $2n+1\ge3$, there is a path
-\[
+$$
 \gamma:[0,1]\to A-\{0\}
-\]
+$$
 with $\gamma(0)=a$ and $\gamma(1)=-a$.
 
 ::: pf-proof
@@ -70,21 +70,21 @@ The punctured Euclidean space $\RR^{2n+1}-\{0\}$ is path-connected when $2n+1>1$
 ::: {.pf-step #s3}
 
 The function
-\[
+$$
 t\longmapsto \det L_{\gamma(t)}
-\]
+$$
 is continuous and never zero, but its endpoint values have opposite signs.
 
 ::: pf-proof
 
 Bilinearity of multiplication implies that the matrix entries of $L_a$ depend linearly, hence continuously, on $a$. Thus the determinant depends continuously on $a$. By step [](#s1){.pf-ref} it never vanishes along $\gamma$. On the other hand
-\[
+$$
 L_{-a}=-L_a,
-\]
+$$
 so, because the dimension $2n+1$ is odd,
-\[
+$$
 \det L_{-a}=(-1)^{2n+1}\det L_a=-\det L_a.
-\]
+$$
 
 :::
 
@@ -105,7 +105,7 @@ A continuous nonzero real-valued function on the connected interval $[0,1]$ has 
 :::
 
 Hence
-\[
+$$
 \boxed{\RR^{2n+1}\text{ admits no real division-algebra structure for }n>0.}
-\]
+$$
 :::

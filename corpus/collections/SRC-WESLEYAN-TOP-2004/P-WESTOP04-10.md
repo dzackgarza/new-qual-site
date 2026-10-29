@@ -15,13 +15,13 @@ The source lists five familiar principles equivalent to the Axiom of Choice: Zor
 
 1. State the Axiom of Choice and any two of those five principles.
 2. Choose one of the five principles, call it $P$, and prove either
-   \[
+   $$
    \mathrm{AC}\Longrightarrow P
-   \]
+   $$
    or
-   \[
+   $$
    P\Longrightarrow\mathrm{AC}.
-   \]
+   $$
 :::
 
 ::: {.solution}

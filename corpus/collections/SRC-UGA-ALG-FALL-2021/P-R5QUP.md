@@ -41,11 +41,11 @@ $\operatorname{tr} A=1 ?$
 
 - We'll use rank-nullity throughout: $\rank M + \dim \ker M = 7$.
 - Also note that 
-\[
+$$
 Av = \lambda v
 \implies
 A^nv = A^{n-1}Av = A^{n-1}\lambda v = \cdots = \lambda^n v
-,\]
+,$$
   so if $\lambda \in \Spec(A)$ then $\lambda^n\in \Spec(A^n)$.
   Conversely, $\lambda\in \Spec(A^n) \implies \lambda^{1\over n}\in \Spec(A)$, which we'll use several times.
 - Since $5 = \rank A = \rank(A - 0\cdot I)$,  we have $\dim \ker(A-0\cdot I) = 2$ contributing an eigenvalue of $\lambda = 0$ with multiplicity $2$.
@@ -59,15 +59,15 @@ A^nv = A^{n-1}Av = A^{n-1}\lambda v = \cdots = \lambda^n v
   Call these three contributions $z_1, z_2, z_3$, which may not be distinct.
 
 - Now use that $\tr(A) = \sum_{i=1}^n \lambda_i$ is the sum of the diagonal on $\JCF(A)$, using that trace is a similarity invariant, to write
-\[
+$$
 1 = \tr(A) = (0 + 0) + (0) + (1) + (z_1 + z_2 + z_3) \implies z_1 + z_2 + z_3 = 0 
-,\]
+,$$
 which is actually enough to force $z_1 = 1, z_2 = \zeta_3, z_3 = \zeta_3^2$, since no other combination sums to zero.
 That $1 + \zeta_3 + \zeta_3^2 = 0$ is a general fact.
 
 - Since $\lambda=1$ occurs twice as an eigenvalue but $\dim \ker(A-1\cdot I) = 1$, the two copies of $\lambda = 1$ must occur in a nontrivial Jordan block.
 - So we get a Jordan form
-\[
+$$
 \JCF(A) = 
 \begin{bmatrix}
 0 & & & & & & 
@@ -85,7 +85,7 @@ That $1 + \zeta_3 + \zeta_3^2 = 0$ is a general fact.
 & & & & & & \zeta_3^2
 \\
 \end{bmatrix}
-.\]
+.$$
 
 :::
 

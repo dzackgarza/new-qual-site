@@ -31,28 +31,28 @@ If $n>2$ and $\zeta$ is a primitive $n$th root of unity over $\QQ$, then $[\QQ(\
 
 ::: {.solution}
 Put
-\[
+$$
 L=\QQ(\zeta),
 \qquad
 L^+=\QQ(\zeta+\zeta^{-1}).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 One has
-\[
+$$
 [L:\QQ]=\phi(n).
-\]
+$$
 
 ::: pf-proof
 
 The minimal polynomial of a primitive $n$th root of unity over $\QQ$ is the
 $n$th cyclotomic polynomial $\Phi_n(x)$, whose degree is $\phi(n)$. Hence
-\[
+$$
 [\QQ(\zeta):\QQ]=\deg\Phi_n=\phi(n).
-\]
+$$
 
 :::
 
@@ -65,17 +65,17 @@ The element $\zeta$ is algebraic of degree at most $2$ over $L^+$.
 ::: pf-proof
 
 Let
-\[
+$$
 t=\zeta+\zeta^{-1}\in L^+.
-\]
+$$
 Then $\zeta$ satisfies
-\[
+$$
 x^2-tx+1=0,
-\]
+$$
 so
-\[
+$$
 [L:L^+]\le2.
-\]
+$$
 
 :::
 
@@ -88,9 +88,9 @@ The field $L^+$ is contained in $\RR$, whereas $\zeta\notin\RR$.
 ::: pf-proof
 
 Since
-\[
+$$
 \zeta+\zeta^{-1}=2\cos(2\pi/n),
-\]
+$$
 the generator of $L^+$ is real, so $L^+\subseteq\RR$.
 
 If a primitive $n$th root of unity is real, it must be $1$ or $-1$, whose
@@ -104,9 +104,9 @@ Thus $\zeta\notin L^+$.
 ::: {.pf-step #s4}
 
 Therefore
-\[
+$$
 [L:L^+]=2.
-\]
+$$
 
 ::: pf-proof
 
@@ -120,16 +120,16 @@ proper, so the degree is not $1$.
 ::: pf-step
 
 Hence
-\[
+$$
 [\QQ(\zeta+\zeta^{-1}):\QQ]=\frac{\phi(n)}2.
-\]
+$$
 
 ::: pf-proof
 
 The tower law and steps [](#s1){.pf-ref} and [](#s4){.pf-ref} give
-\[
+$$
 \phi(n)=[L:\QQ]=[L:L^+][L^+:\QQ]=2[L^+:\QQ].
-\]
+$$
 Solving for $[L^+:\QQ]$ gives the asserted degree.
 
 :::

@@ -35,17 +35,17 @@ lie in the circle $| z | < \rho .$
 
 ::: {.solution}
 Fix $\rho>0$ and put
-\[
+$$
 R=\frac1\rho.
-\]
+$$
 For $w\in\CC$, let
-\[
+$$
 p_n(w)=\sum_{k=0}^n\frac{w^k}{k!}.
-\]
+$$
 Then for $z\ne0$,
-\[
+$$
 f_n(z)=p_n(1/z).
-\]
+$$
 
 ::: pf
 
@@ -56,25 +56,25 @@ For all sufficiently large $n$, the polynomial $p_n$ has no zero in the closed d
 ::: pf-proof
 
 On $|w|\le R$,
-\[
+$$
 |e^w|=e^{\operatorname{Re}w}\ge e^{-R}.
-\]
+$$
 Also
-\[
+$$
 |e^w-p_n(w)|
 \le \sum_{k=n+1}^{\infty}\frac{|w|^k}{k!}
 \le \sum_{k=n+1}^{\infty}\frac{R^k}{k!}.
-\]
+$$
 The last tail tends to $0$ as $n\to\infty$. Hence for all sufficiently large $n$,
-\[
+$$
 \sum_{k=n+1}^{\infty}\frac{R^k}{k!}<e^{-R}.
-\]
+$$
 For such $n$ and every $|w|\le R$,
-\[
+$$
 |p_n(w)|
 \ge |e^w|-|e^w-p_n(w)|
 >e^{-R}-e^{-R}=0.
-\]
+$$
 Thus $p_n$ has no zero in $|w|\le R$.
 
 :::
@@ -88,13 +88,13 @@ Every zero of $f_n$ then satisfies $|z|<\rho$.
 ::: pf-proof
 
 Let $n$ be large enough for step [](#s1){.pf-ref} and suppose $f_n(z)=0$. Since $f_n$ has a pole rather than a zero at $z=0$, we have $z\ne0$. Put $w=1/z$. Then
-\[
+$$
 p_n(w)=f_n(z)=0.
-\]
+$$
 By step [](#s1){.pf-ref} this forces $|w|>R=1/\rho$. Therefore
-\[
+$$
 |z|=\frac1{|w|}<\rho.
-\]
+$$
 Hence, for all sufficiently large $n$, every zero of $f_n$ lies in the circle $|z|<\rho$.
 
 :::

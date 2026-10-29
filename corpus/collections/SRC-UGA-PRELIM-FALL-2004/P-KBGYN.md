@@ -23,18 +23,18 @@ Let $a$ be a real number other than 1. Use induction to show that for each posit
 
 ::: {.solution}
 For $n=1$,
-\[
+$$
 \sum_{k=0}^{0}a^k=1=\frac{a-1}{a-1}.
-\]
+$$
 Assume
-\[
+$$
 \sum_{k=0}^{n-1}a^k=\frac{a^n-1}{a-1}.
-\]
+$$
 Then
-\[
+$$
 \sum_{k=0}^{n}a^k
 =\frac{a^n-1}{a-1}+a^n
 =\frac{a^{n+1}-1}{a-1}.
-\]
+$$
 Thus the formula holds for all positive integers $n$ by induction.
 :::

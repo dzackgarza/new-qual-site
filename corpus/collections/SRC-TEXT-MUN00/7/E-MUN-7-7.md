@@ -30,26 +30,26 @@ Show that the sets D and E of Exercise 5 have the same cardinality.
 
 ::: {.solution}
 Recall
-\[
+$$
 D=(\ZZ_+)^\omega,
 \qquad
 E=\{0,1\}^\omega.
-\]
-There is an injection \(E\to D\) given by
-\[
+$$
+There is an injection $E\to D$ given by
+$$
 (x_n)\mapsto(x_n+1).
-\]
+$$
 
-For the reverse direction, encode \(a=(a_1,a_2,\ldots)\in D\) by the binary sequence
-\[
+For the reverse direction, encode $a=(a_1,a_2,\ldots)\in D$ by the binary sequence
+$$
 \underbrace{11\cdots1}_{a_1}0\,
 \underbrace{11\cdots1}_{a_2}0\,
 \underbrace{11\cdots1}_{a_3}0\cdots.
-\]
-Because every \(a_i\ge1\), this sequence contains infinitely many separator zeros, and the lengths of the successive blocks of ones uniquely recover \(a_1,a_2,\ldots\). Thus this encoding is injective \(D\to E\).
+$$
+Because every $a_i\ge1$, this sequence contains infinitely many separator zeros, and the lengths of the successive blocks of ones uniquely recover $a_1,a_2,\ldots$. Thus this encoding is injective $D\to E$.
 
 By Schroeder--Bernstein,
-\[
+$$
 \boxed{|D|=|E|}.
-\]
+$$
 :::

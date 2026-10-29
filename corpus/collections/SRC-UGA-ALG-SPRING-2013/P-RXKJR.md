@@ -61,9 +61,9 @@ Since $N^2=0$, the operator $N$ has nonzero kernel on the five-dimensional space
 ::: {.pf-step #s1-3}
 
 All possible Jordan forms are
-\[
+$$
 \boxed{[-1]^{\oplus5},\quad J_2(-1)\oplus[-1]^{\oplus3},\quad J_2(-1)^{\oplus2}\oplus[-1]}.
-\]
+$$
 
 
 ::: pf-proof

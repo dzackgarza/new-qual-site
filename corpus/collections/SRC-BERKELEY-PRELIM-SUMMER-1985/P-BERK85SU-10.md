@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 For each $\lambda>1$, prove that the equation
-\[
+$$
 z=\lambda-e^{-z}
-\]
+$$
 has exactly one root in the half-plane $\operatorname{Re}z\ge0$, and that this root is real.
 :::
 

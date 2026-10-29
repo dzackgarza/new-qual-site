@@ -47,9 +47,9 @@ connected sum of polygonal schemas for $P^2$ ($c^2$) and $T$ ($aba^{-1}b^{-1}$).
 ::: pf-step
 
 The cellular chain complex for $X$ is:
-\[
+$$
 0 \longrightarrow \ZZ \xrightarrow{\partial_2} \ZZ c \oplus \ZZ a \oplus \ZZ b \xrightarrow{\partial_1} \ZZ \longrightarrow 0.
-\]
+$$
 
 ::: pf-proof
 
@@ -62,9 +62,9 @@ cellular homology definition.
 ::: pf-step
 
 The boundary map $\partial_2: C_2(X) \to C_1(X)$ maps the generator of $C_2(X)$ to:
-\[
+$$
 \partial_2(e^2) = 2c + a + b - a - b = 2c.
-\]
+$$
 
 ::: pf-proof
 
@@ -77,9 +77,9 @@ abelianizing the boundary loop word $c^2 a b a^{-1} b^{-1}$.
 ::: pf-step
 
 The first homology group is:
-\[
+$$
 H_1(P^2 \# T) = \frac{\ZZ c \oplus \ZZ a \oplus \ZZ b}{\operatorname{im}(\partial_2)} = \frac{\ZZ c}{2\ZZ c} \oplus \ZZ a \oplus \ZZ b \cong \ZZ_2 \oplus \ZZ \oplus \ZZ \cong \ZZ^2 \oplus \ZZ_2.
-\]
+$$
 
 ::: pf-proof
 
@@ -114,9 +114,9 @@ non-orientability of $P^2$.
 ::: pf-step
 
 Compute the Euler characteristic using $\chi(A \# B) = \chi(A) + \chi(B) - 2$:
-\[
+$$
 \chi(P^2 \# T) = \chi(P^2) + \chi(T) - 2 = 1 + 0 - 2 = -1.
-\]
+$$
 
 ::: pf-proof
 

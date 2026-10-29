@@ -22,24 +22,24 @@ Assuming the Radon–Nikodym theorem for finite measure spaces, prove it for $\s
 ::: {.solution}
 
 Let
-\[
+$$
 (X,\mathcal M)
-\]
+$$
 be a measurable space.
 Let
-\[
+$$
 \mu
 \quad\text{and}\quad
 \nu
-\]
+$$
 be
-\[
+$$
 \sigma\text{-finite}
-\]
+$$
 positive measures with
-\[
+$$
 \nu\ll\mu.
-\]
+$$
 Assume the Radon--Nikodym theorem is known whenever both measures are finite.
 
 ::: pf
@@ -47,45 +47,45 @@ Assume the Radon--Nikodym theorem is known whenever both measures are finite.
 ::: pf-step
 
 Choose measurable sets
-\[
+$$
 A_1,A_2,\dots
-\]
+$$
 and
-\[
+$$
 B_1,B_2,\dots
-\]
+$$
 such that
-\[
+$$
 X
 =
 \bigcup_{i=1}^{\infty}A_i
 =
 \bigcup_{j=1}^{\infty}B_j,
-\]
+$$
 with
-\[
+$$
 \mu(A_i)<\infty
-\]
+$$
 and
-\[
+$$
 \nu(B_j)<\infty.
-\]
+$$
 
 
 ::: pf-proof
 
 This follows from
-\[
+$$
 \sigma\text{-finiteness}
-\]
+$$
 of
-\[
+$$
 \mu
-\]
+$$
 and
-\[
+$$
 \nu,
-\]
+$$
 respectively.
 
 :::
@@ -95,55 +95,55 @@ respectively.
 ::: {.pf-step #s1-2}
 
 The countable family
-\[
+$$
 \{A_i\cap B_j:i,j\ge1\}
-\]
+$$
 covers $X$, and on each member both measures are finite.
 
 
 ::: pf-proof
 
 If
-\[
+$$
 x\in X,
-\]
+$$
 choose
-\[
+$$
 i
-\]
+$$
 with
-\[
+$$
 x\in A_i
-\]
+$$
 and
-\[
+$$
 j
-\]
+$$
 with
-\[
+$$
 x\in B_j.
-\]
+$$
 Then
-\[
+$$
 x\in A_i\cap B_j.
-\]
+$$
 
 Also
-\[
+$$
 \mu(A_i\cap B_j)
 \le
 \mu(A_i)
 <
 \infty,
-\]
+$$
 and
-\[
+$$
 \nu(A_i\cap B_j)
 \le
 \nu(B_j)
 <
 \infty.
-\]
+$$
 
 :::
 
@@ -152,14 +152,14 @@ and
 ::: {.pf-step #s1-3}
 
 Enumerate the intersections from step [](#s1-2){.pf-ref} as
-\[
+$$
 C_1,C_2,\dots
-\]
+$$
 and define
-\[
+$$
 E_1=C_1,
-\]
-\[
+$$
+$$
 E_n
 \coloneqq
 C_n
@@ -167,30 +167,30 @@ C_n
 \bigcup_{k=1}^{n-1}C_k
 \qquad
 (n\ge2).
-\]
+$$
 Then
-\[
+$$
 X
 =
 \bigsqcup_{n=1}^{\infty}E_n,
-\]
+$$
 and
-\[
+$$
 \mu(E_n)<\infty,
 \qquad
 \nu(E_n)<\infty.
-\]
+$$
 
 
 ::: pf-proof
 
 The disjointification procedure preserves the union.
 Each
-\[
+$$
 E_n
 \subseteq
 C_n,
-\]
+$$
 so finiteness of both restricted measures follows from step [](#s1-2){.pf-ref}.
 
 :::
@@ -200,58 +200,58 @@ so finiteness of both restricted measures follows from step [](#s1-2){.pf-ref}.
 ::: pf-step
 
 For each
-\[
+$$
 n,
-\]
+$$
 define finite measures on
-\[
+$$
 (E_n,\mathcal M|_{E_n})
-\]
+$$
 by
-\[
+$$
 \mu_n(F)
 \coloneqq
 \mu(F)
-\]
+$$
 and
-\[
+$$
 \nu_n(F)
 \coloneqq
 \nu(F)
-\]
+$$
 for measurable
-\[
+$$
 F\subseteq E_n.
-\]
+$$
 Then
-\[
+$$
 \nu_n\ll\mu_n.
-\]
+$$
 
 
 ::: pf-proof
 
 Both measures are finite by step [](#s1-3){.pf-ref}.
 If
-\[
+$$
 \mu_n(F)=0,
-\]
+$$
 then
-\[
+$$
 \mu(F)=0.
-\]
+$$
 Since
-\[
+$$
 \nu\ll\mu,
-\]
+$$
 one has
-\[
+$$
 \nu(F)=0,
-\]
+$$
 so
-\[
+$$
 \nu_n(F)=0.
-\]
+$$
 
 :::
 
@@ -261,27 +261,27 @@ so
 
 By the finite-measure Radon--Nikodym theorem, for every $n$ there is
 a measurable function
-\[
+$$
 f_n:E_n\to[0,\infty]
-\]
+$$
 such that
-\[
+$$
 \nu(F)
 =
 \int_F f_n\,d\mu
-\]
+$$
 for every measurable
-\[
+$$
 F\subseteq E_n.
-\]
+$$
 
 
 ::: pf-proof
 
 Apply the assumed finite Radon--Nikodym theorem to
-\[
+$$
 \nu_n\ll\mu_n.
-\]
+$$
 
 :::
 
@@ -290,32 +290,32 @@ Apply the assumed finite Radon--Nikodym theorem to
 ::: pf-step
 
 Define
-\[
+$$
 f:X\to[0,\infty]
-\]
+$$
 by
-\[
+$$
 f(x)=f_n(x)
 \qquad
 \text{when }x\in E_n.
-\]
+$$
 Then $f$ is measurable.
 
 
 ::: pf-proof
 
 The sets
-\[
+$$
 E_n
-\]
+$$
 form a measurable partition of $X$.
 Equivalently,
-\[
+$$
 f
 =
 \sum_{n=1}^{\infty}
 f_n\mathbf 1_{E_n},
-\]
+$$
 where each summand is measurable after extending $f_n$ by zero outside
 $E_n$.
 Thus $f$ is measurable.
@@ -327,23 +327,23 @@ Thus $f$ is measurable.
 ::: {.pf-step #s1-7}
 
 For every measurable
-\[
+$$
 A\subseteq X,
-\]
-\[
+$$
+$$
 \nu(A)
 =
 \sum_{n=1}^{\infty}
 \nu(A\cap E_n).
-\]
+$$
 
 
 ::: pf-proof
 
 The sets
-\[
+$$
 A\cap E_n
-\]
+$$
 are pairwise disjoint and their union is $A$.
 Apply countable additivity of $\nu$.
 
@@ -354,27 +354,27 @@ Apply countable additivity of $\nu$.
 ::: {.pf-step #s1-8}
 
 For every measurable
-\[
+$$
 A\subseteq X,
-\]
-\[
+$$
+$$
 \nu(A)
 =
 \sum_{n=1}^{\infty}
 \int_{A\cap E_n}
 f_n\,d\mu.
-\]
+$$
 
 
 ::: pf-proof
 
 Apply the local Radon--Nikodym formula from step [](#s1-5){.pf-ref} to each measurable
 subset
-\[
+$$
 A\cap E_n
 \subseteq
 E_n,
-\]
+$$
 then substitute into step [](#s1-7){.pf-ref}.
 
 :::
@@ -384,38 +384,38 @@ then substitute into step [](#s1-7){.pf-ref}.
 ::: {.pf-step #s1-9}
 
 One has
-\[
+$$
 \sum_{n=1}^{\infty}
 \int_{A\cap E_n}
 f_n\,d\mu
 =
 \int_A f\,d\mu.
-\]
+$$
 
 
 ::: pf-proof
 
 Define
-\[
+$$
 g_N
 \coloneqq
 \sum_{n=1}^{N}
 f_n\mathbf 1_{A\cap E_n}.
-\]
+$$
 Then
-\[
+$$
 0\le g_1\le g_2\le\cdots
-\]
+$$
 and
-\[
+$$
 g_N(x)
 \uparrow
 f(x)\mathbf 1_A(x)
-\]
+$$
 pointwise.
 
 By the Monotone Convergence Theorem,
-\[
+$$
 \begin{aligned}
 \int_A f\,d\mu
 &=
@@ -429,7 +429,7 @@ By the Monotone Convergence Theorem,
 \int_{A\cap E_n}
 f_n\,d\mu.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -438,17 +438,17 @@ f_n\,d\mu.
 ::: {.pf-step #s1-10}
 
 Therefore
-\[
+$$
 \boxed{
 \nu(A)
 =
 \int_A f\,d\mu
 }
-\]
+$$
 for every
-\[
+$$
 A\in\mathcal M.
-\]
+$$
 
 
 ::: pf-proof
@@ -463,58 +463,58 @@ Thus $f$ is a Radon--Nikodym derivative of $\nu$ with respect to $\mu$.
 ::: {.pf-step #s1-11}
 
 The derivative is unique
-\[
+$$
 \mu\text{-almost everywhere}.
-\]
+$$
 
 
 ::: pf-proof
 
 Suppose
-\[
+$$
 g
-\]
+$$
 is another measurable nonnegative function satisfying
-\[
+$$
 \nu(A)
 =
 \int_A g\,d\mu
-\]
+$$
 for every measurable $A$.
 
 Restrict to any
-\[
+$$
 E_n.
-\]
+$$
 For every measurable
-\[
+$$
 F\subseteq E_n,
-\]
-\[
+$$
+$$
 \int_F f_n\,d\mu
 =
 \nu(F)
 =
 \int_F g\,d\mu.
-\]
+$$
 By uniqueness in the finite Radon--Nikodym theorem,
-\[
+$$
 f_n=g
-\]
+$$
 almost everywhere on
-\[
+$$
 E_n.
-\]
+$$
 
 The countable union of these null exceptional sets is null.
 Since the
-\[
+$$
 E_n
-\]
+$$
 cover $X$,
-\[
+$$
 f=g
-\]
+$$
 almost everywhere on $X$.
 
 :::
@@ -541,9 +541,9 @@ $\sigma$-finite measures.
 ::: pf-qed
 
 Step [](#s1-12){.pf-ref} is the desired extension from finite to
-\[
+$$
 \sigma\text{-finite}
-\]
+$$
 measure spaces.
 
 :::

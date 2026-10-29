@@ -22,14 +22,14 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int \frac{e^x}{e^x+1}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}
 Let $u=e^x+1$, so $du=e^x\,dx$. Then
-\[
+$$
 \boxed{\int \frac{e^x}{e^x+1}\,dx=\ln(e^x+1)+C.}
-\]
+$$
 :::

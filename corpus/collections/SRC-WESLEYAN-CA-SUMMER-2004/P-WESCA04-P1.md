@@ -17,10 +17,10 @@ audit:
 
 ::: {.problem}
 Let $f$ be entire and suppose
-\[
+$$
 \operatorname{Re} f(z)\le 10
 \qquad(z\in\CC).
-\]
+$$
 Show that $f$ is constant.
 :::
 
@@ -31,11 +31,11 @@ Show that $f$ is constant.
 ::: {.pf-step #s1-1}
 
 Define
-\[
+$$
 g(z)
 \coloneqq
 e^{f(z)}.
-\]
+$$
 Then $g$ is entire.
 
 
@@ -43,9 +43,9 @@ Then $g$ is entire.
 
 The function $f$ is entire by hypothesis, and the exponential function is
 entire on $\CC$. Therefore their composition
-\[
+$$
 g=\exp\circ f
-\]
+$$
 is entire.
 
 :::
@@ -55,25 +55,25 @@ is entire.
 ::: {.pf-step #s1-2}
 
 The function $g$ is bounded:
-\[
+$$
 |g(z)|
 \le
 e^{10}
 \qquad
 (z\in\CC).
-\]
+$$
 
 
 ::: pf-proof
 
 For every complex number $w$,
-\[
+$$
 |e^w|
 =
 e^{\operatorname{Re}w}.
-\]
+$$
 Hence
-\[
+$$
 |g(z)|
 =
 |e^{f(z)}|
@@ -81,7 +81,7 @@ Hence
 e^{\operatorname{Re}f(z)}
 \le
 e^{10}
-\]
+$$
 by the hypothesis.
 
 :::
@@ -97,9 +97,9 @@ Liouville's theorem implies that $g$ is constant.
 
 Steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref} show that $g$ is a bounded entire function. Liouville's
 theorem therefore gives
-\[
+$$
 g(z)\equiv c
-\]
+$$
 for some constant $c\in\CC$.
 
 :::
@@ -114,15 +114,15 @@ The constant $c$ is nonzero.
 ::: pf-proof
 
 The exponential function never vanishes:
-\[
+$$
 e^w\ne0
 \qquad
 (w\in\CC).
-\]
+$$
 Thus
-\[
+$$
 g(z)=e^{f(z)}\ne0
-\]
+$$
 for every $z$, so its constant value is nonzero.
 
 :::
@@ -132,31 +132,31 @@ for every $z$, so its constant value is nonzero.
 ::: pf-step
 
 One has
-\[
+$$
 f'(z)=0
 \qquad
 (z\in\CC).
-\]
+$$
 
 
 ::: pf-proof
 
 Differentiate the identity
-\[
+$$
 e^{f(z)}=c.
-\]
+$$
 The chain rule gives
-\[
+$$
 e^{f(z)}f'(z)=0.
-\]
+$$
 By step [](#s1-4){.pf-ref},
-\[
+$$
 e^{f(z)}=c\ne0.
-\]
+$$
 Therefore
-\[
+$$
 f'(z)=0
-\]
+$$
 for every $z$.
 
 :::
@@ -166,9 +166,9 @@ for every $z$.
 ::: {.pf-step #s1-6}
 
 Hence
-\[
+$$
 \boxed{f\text{ is constant}.}
-\]
+$$
 
 
 ::: pf-proof

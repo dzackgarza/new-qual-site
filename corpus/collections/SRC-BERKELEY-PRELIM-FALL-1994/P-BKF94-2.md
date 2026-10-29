@@ -28,13 +28,13 @@ audit:
 
 ::: {.problem}
 Prove that
-\[
+$$
 \begin{pmatrix}
 1&1.00001&1\\
 1.00001&1&1.00001\\
 1&1.00001&1
 \end{pmatrix}
-\]
+$$
 has one positive eigenvalue and one negative eigenvalue.
 :::
 

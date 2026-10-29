@@ -26,81 +26,81 @@ Let $F(x) = \sum_{n=0}^\infty a_n x^n$ be a power series with $a_n \in \RR$. Sho
 ::: {.solution}
 
 Define
-\[
+$$
 C=
 \left\{
 r\ge0:
 \sum_{n=0}^{\infty}a_nx^n
 \text{ converges for every }x\text{ with }|x|<r
 \right\}.
-\]
+$$
 The set $C$ is nonempty because
-\[
+$$
 0\in C.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 If the series converges at some nonzero point
-\[
+$$
 x_0,
-\]
+$$
 then it converges absolutely at every $x$ with
-\[
+$$
 |x|<|x_0|.
-\]
+$$
 
 
 ::: pf-proof
 
 Convergence of
-\[
+$$
 \sum_{n=0}^{\infty}a_nx_0^n
-\]
+$$
 implies
-\[
+$$
 a_nx_0^n\to0.
-\]
+$$
 Hence the sequence
-\[
+$$
 (a_nx_0^n)
-\]
+$$
 is bounded: there exists
-\[
+$$
 M>0
-\]
+$$
 such that
-\[
+$$
 |a_nx_0^n|\le M
-\]
+$$
 for all $n$.
 
 If
-\[
+$$
 |x|<|x_0|,
-\]
+$$
 set
-\[
+$$
 q=\frac{|x|}{|x_0|}<1.
-\]
+$$
 Then
-\[
+$$
 |a_nx^n|
 =
 |a_nx_0^n|q^n
 \le
 Mq^n.
-\]
+$$
 The geometric series
-\[
+$$
 \sum_{n=0}^{\infty}Mq^n
-\]
+$$
 converges, so comparison gives absolute convergence of
-\[
+$$
 \sum_{n=0}^{\infty}a_nx^n.
-\]
+$$
 
 :::
 
@@ -109,21 +109,21 @@ converges, so comparison gives absolute convergence of
 ::: pf-step
 
 If the series diverges at some point
-\[
+$$
 x_0,
-\]
+$$
 then it diverges at every $x$ with
-\[
+$$
 |x|>|x_0|.
-\]
+$$
 
 
 ::: pf-proof
 
 Suppose instead that the series converged at some $x$ satisfying
-\[
+$$
 |x|>|x_0|.
-\]
+$$
 Then step [](#s1-1){.pf-ref}, applied to the convergence point $x$, would imply convergence at every point whose absolute value is smaller than $|x|$, in particular at $x_0$.
 This contradicts the assumed divergence at $x_0$.
 
@@ -134,46 +134,46 @@ This contradicts the assumed divergence at $x_0$.
 ::: {.pf-step #s1-3}
 
 Define
-\[
+$$
 \rho=\sup C
-\]
+$$
 in the extended interval $[0,\infty]$.
 Then the series converges for every
-\[
+$$
 x
-\]
+$$
 with
-\[
+$$
 |x|<\rho.
-\]
+$$
 
 
 ::: pf-proof
 
 Fix $x$ with
-\[
+$$
 |x|<\rho.
-\]
+$$
 Choose a number $r$ satisfying
-\[
+$$
 |x|<r<\rho.
-\]
+$$
 By the definition of the supremum, there exists
-\[
+$$
 s\in C
-\]
+$$
 with
-\[
+$$
 r<s\le\rho.
-\]
+$$
 Since
-\[
+$$
 |x|<s
-\]
+$$
 and
-\[
+$$
 s\in C,
-\]
+$$
 the series converges at $x$.
 
 :::
@@ -183,38 +183,38 @@ the series converges at $x$.
 ::: {.pf-step #s1-4}
 
 If
-\[
+$$
 \rho<\infty,
-\]
+$$
 then the series diverges for every $x$ with
-\[
+$$
 |x|>\rho.
-\]
+$$
 
 
 ::: pf-proof
 
 Suppose, for contradiction, that the series converges at some $x$ with
-\[
+$$
 |x|>\rho.
-\]
+$$
 By step [](#s1-1){.pf-ref}, it then converges for every $y$ satisfying
-\[
+$$
 |y|<|x|.
-\]
+$$
 Hence
-\[
+$$
 |x|\in C.
-\]
+$$
 But
-\[
+$$
 |x|>\rho=\sup C,
-\]
+$$
 a contradiction.
 Therefore the series diverges for every
-\[
+$$
 |x|>\rho.
-\]
+$$
 
 :::
 
@@ -223,22 +223,22 @@ Therefore the series diverges for every
 ::: {.pf-step #s1-5}
 
 If the series converges for every real $x$, then
-\[
+$$
 \rho=\infty.
-\]
+$$
 
 
 ::: pf-proof
 
 In this case every
-\[
+$$
 r\ge0
-\]
+$$
 belongs to $C$.
 Thus $C$ is unbounded above, and its supremum in the extended interval is
-\[
+$$
 \infty.
-\]
+$$
 
 :::
 
@@ -252,18 +252,18 @@ The radius is unique.
 ::: pf-proof
 
 Suppose
-\[
+$$
 \rho_1<\rho_2
-\]
+$$
 both had the stated property.
 Choose
-\[
+$$
 x
-\]
+$$
 with
-\[
+$$
 \rho_1<|x|<\rho_2.
-\]
+$$
 The property for $\rho_1$ would force divergence at $x$, while the property for $\rho_2$ would force convergence at $x$.
 This contradiction shows that two distinct radii cannot satisfy the condition.
 
@@ -274,19 +274,19 @@ This contradiction shows that two distinct radii cannot satisfy the condition.
 ::: {.pf-step #s1-7}
 
 Therefore there is a unique radius of convergence
-\[
+$$
 \boxed{
 \rho\in[0,\infty]
 }
-\]
+$$
 such that the power series converges for
-\[
+$$
 |x|<\rho
-\]
+$$
 and diverges for
-\[
+$$
 |x|>\rho.
-\]
+$$
 
 
 ::: pf-proof

@@ -42,9 +42,9 @@ Exhibit an element of choice (C).
 
 By definition $P_n=\{pn:p\text{ prime}\}$.
 Since
-\[
+$$
 60=5\cdot12=3\cdot20,
-\]
+$$
 we have $60\in P_{12}\cap P_{20}$.
 
 :::

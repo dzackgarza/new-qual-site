@@ -41,42 +41,42 @@ $$
 
 ::: {.solution}
 For $\Re s>0$,
-\[
+$$
 I(s)=\frac1{\Gamma(s)}\int_0^\infty f(x)x^{s-1}\,dx
-\]
+$$
 is holomorphic by dominated convergence on compact vertical strips.
 
 Integrating by parts once gives
-\[
+$$
 \int_0^\infty f(x)x^{s-1}\,dx
 =-\frac1s\int_0^\infty f'(x)x^s\,dx,
-\]
+$$
 because the boundary terms vanish when $\Re s>0$. Using $\Gamma(s+1)=s\Gamma(s)$,
-\[
+$$
 I(s)=-\frac1{\Gamma(s+1)}\int_0^\infty f'(x)x^s\,dx.
-\]
+$$
 Iterating $k$ times yields
-\[
+$$
 I(s)=\frac{(-1)^k}{\Gamma(s+k)}
 \int_0^\infty f^{(k)}(x)x^{s+k-1}\,dx,
 \tag{1}
-\]
+$$
 initially for $\Re s>0$.
 
 For fixed $k$, the right-hand side is holomorphic for $\Re s>-k$: the integral is holomorphic there, and $1/\Gamma$ is entire. On overlaps these expressions agree by (1), so they analytically continue one another. Since $k$ is arbitrary, $I$ extends to an entire function.
 
 Now fix $n\ge0$ and take $k=n+1$ in (1). At $s=-n$,
-\[
+$$
 I(-n)=(-1)^{n+1}\int_0^\infty f^{(n+1)}(x)\,dx,
-\]
+$$
 because $\Gamma(1)=1$. Since $f^{(n)}(x)\to0$ as $x\to\infty$ for a Schwartz function (and likewise for compact support),
-\[
+$$
 \int_0^\infty f^{(n+1)}(x)\,dx
 =-f^{(n)}(0).
-\]
+$$
 Therefore
-\[
+$$
 \boxed{I(-n)=(-1)^n f^{(n)}(0)}.
-\]
+$$
 In particular, $I(0)=f(0)$.
 :::

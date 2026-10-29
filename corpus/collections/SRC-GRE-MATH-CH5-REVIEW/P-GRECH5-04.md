@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 If
 
-\[
+$$
 \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}^n - \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}^n = \begin{pmatrix} 0 & 6 \\ -6 & 0 \end{pmatrix}
-\]
+$$
 
 then $n =$
 

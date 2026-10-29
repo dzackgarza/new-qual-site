@@ -14,9 +14,9 @@ audit:
 
 ::: {.problem}
 Let $f$ be a continuous real-valued function on $[0,1]$ such that, for each $x_0\in[0,1)$,
-\[
+$$
 \limsup_{x\to x_0^+}\frac{f(x)-f(x_0)}{x-x_0}\ge 0.
-\]
+$$
 Prove that $f$ is nondecreasing.
 :::
 

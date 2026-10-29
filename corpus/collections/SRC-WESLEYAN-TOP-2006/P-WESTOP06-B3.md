@@ -15,9 +15,9 @@ Let $A\subset X$.
 
 1. Define what it means for $A$ to be a deformation retract of $X$.
 2. Construct explicitly a deformation retraction
-   \[
+   $$
    \RR^n\setminus\{0\}\longrightarrow S^{n-1}.
-   \]
+   $$
 :::
 
 ::: {.solution}
@@ -26,20 +26,20 @@ Let $A\subset X$.
 
 ::: {.pf-step #s1-1}
 
-A subspace \(A\subseteq X\) is a deformation retract of \(X\) if there is a retraction \(r:X\to A\) and a homotopy
-\[
+A subspace $A\subseteq X$ is a deformation retract of $X$ if there is a retraction $r:X\to A$ and a homotopy
+$$
 H:X\times I\to X
-\]
-from \(\operatorname{id}_X\) to the composite \(i\circ r\), where \(i:A\hookrightarrow X\) is the inclusion, such that
-\[
+$$
+from $\operatorname{id}_X$ to the composite $i\circ r$, where $i:A\hookrightarrow X$ is the inclusion, such that
+$$
 H(a,t)=a
-\]
-for every \(a\in A\) and \(t\in I\).
+$$
+for every $a\in A$ and $t\in I$.
 
 
 ::: pf-proof
 
-The condition \(r|_A=\operatorname{id}_A\) says that \(r\) is a retraction. The additional condition on \(H\) says that the homotopy from \(X\) onto \(A\) fixes \(A\) pointwise throughout.
+The condition $r|_A=\operatorname{id}_A$ says that $r$ is a retraction. The additional condition on $H$ says that the homotopy from $X$ onto $A$ fixes $A$ pointwise throughout.
 
 :::
 
@@ -48,20 +48,20 @@ The condition \(r|_A=\operatorname{id}_A\) says that \(r\) is a retraction. The 
 ::: {.pf-step #s1-2}
 
 The map
-\[
+$$
 \boxed{r:\RR^n\setminus\{0\}\to S^{n-1},\qquad
 r(x)=\frac{x}{\|x\|}}
-\]
+$$
 is a retraction.
 
 
 ::: pf-proof
 
-For \(x\ne0\), one has \(\|x/\|x\|\|=1\), so \(r(x)\in S^{n-1}\). The map is continuous because the norm is continuous and \(\|x\|>0\) on the domain. If \(x\in S^{n-1}\), then \(\|x\|=1\), hence
-\[
+For $x\ne0$, one has $\|x/\|x\|\|=1$, so $r(x)\in S^{n-1}$. The map is continuous because the norm is continuous and $\|x\|>0$ on the domain. If $x\in S^{n-1}$, then $\|x\|=1$, hence
+$$
 r(x)=x.
-\]
-Thus \(r|_{S^{n-1}}=\operatorname{id}_{S^{n-1}}\).
+$$
+Thus $r|_{S^{n-1}}=\operatorname{id}_{S^{n-1}}$.
 
 :::
 
@@ -70,33 +70,33 @@ Thus \(r|_{S^{n-1}}=\operatorname{id}_{S^{n-1}}\).
 ::: {.pf-step #s1-3}
 
 Define
-\[
+$$
 H:(\RR^n\setminus\{0\})\times I\to\RR^n\setminus\{0\}
-\]
+$$
 by
-\[
+$$
 \boxed{H(x,t)=\left((1-t)+\frac{t}{\|x\|}\right)x.}
-\]
-Then \(H\) is a homotopy from \(\operatorname{id}\) to \(i\circ r\).
+$$
+Then $H$ is a homotopy from $\operatorname{id}$ to $i\circ r$.
 
 
 ::: pf-proof
 
 The scalar
-\[
+$$
 (1-t)+\frac{t}{\|x\|}
-\]
-is strictly positive for every \(x\ne0\) and \(t\in I\). Hence \(H(x,t)\ne0\), so the formula takes values in \(\RR^n\setminus\{0\}\). It is continuous because it is assembled from continuous operations on this domain.
+$$
+is strictly positive for every $x\ne0$ and $t\in I$. Hence $H(x,t)\ne0$, so the formula takes values in $\RR^n\setminus\{0\}$. It is continuous because it is assembled from continuous operations on this domain.
 
-At \(t=0\),
-\[
+At $t=0$,
+$$
 H(x,0)=x,
-\]
-while at \(t=1\),
-\[
+$$
+while at $t=1$,
+$$
 H(x,1)=\frac{x}{\|x\|}=r(x)=i(r(x)).
-\]
-Therefore \(H\) is a homotopy from \(\operatorname{id}\) to \(i\circ r\).
+$$
+Therefore $H$ is a homotopy from $\operatorname{id}$ to $i\circ r$.
 
 :::
 
@@ -104,15 +104,15 @@ Therefore \(H\) is a homotopy from \(\operatorname{id}\) to \(i\circ r\).
 
 ::: {.pf-step #s1-4}
 
-The homotopy \(H\) fixes \(S^{n-1}\) pointwise.
+The homotopy $H$ fixes $S^{n-1}$ pointwise.
 
 
 ::: pf-proof
 
-If \(x\in S^{n-1}\), then \(\|x\|=1\), so for every \(t\in I\),
-\[
+If $x\in S^{n-1}$, then $\|x\|=1$, so for every $t\in I$,
+$$
 H(x,t)=((1-t)+t)x=x.
-\]
+$$
 Thus every point of the sphere remains fixed during the homotopy.
 
 :::
@@ -121,12 +121,12 @@ Thus every point of the sphere remains fixed during the homotopy.
 
 ::: {.pf-step #s1-5}
 
-\(S^{n-1}\) is a deformation retract of \(\RR^n\setminus\{0\}\).
+$S^{n-1}$ is a deformation retract of $\RR^n\setminus\{0\}$.
 
 
 ::: pf-proof
 
-Step [](#s1-2){.pf-ref} gives a retraction onto \(S^{n-1}\), step [](#s1-3){.pf-ref} gives a homotopy from the identity to that retraction followed by inclusion, and step [](#s1-4){.pf-ref} shows that this homotopy fixes \(S^{n-1}\) pointwise. These are exactly the conditions in step [](#s1-1){.pf-ref}.
+Step [](#s1-2){.pf-ref} gives a retraction onto $S^{n-1}$, step [](#s1-3){.pf-ref} gives a homotopy from the identity to that retraction followed by inclusion, and step [](#s1-4){.pf-ref} shows that this homotopy fixes $S^{n-1}$ pointwise. These are exactly the conditions in step [](#s1-1){.pf-ref}.
 
 :::
 

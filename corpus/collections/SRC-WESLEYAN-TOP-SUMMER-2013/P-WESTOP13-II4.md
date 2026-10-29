@@ -23,11 +23,11 @@ audit:
    Let $U$ be the upper triangle and $L$ the lower triangle.
 
 3. Let $T_0^2$ be the torus with the interior of a disk removed. Use the Mayer--Vietoris sequence for
-   \[
+   $$
    T^2=T_0^2\cup D^2,
    \qquad
    T_0^2\cap D^2\simeq S^1,
-   \]
+   $$
    to calculate the homology groups of $T_0^2$.
 :::
 

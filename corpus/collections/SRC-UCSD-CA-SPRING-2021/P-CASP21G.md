@@ -30,20 +30,20 @@ Because $f$ is nonconstant and $f_{n_k}\to f$ locally uniformly, Hurwitz's
 theorem implies that $f$ is injective. In particular $f(\DD)$ is open.
 Fix $z\in\DD$. For $k$ large, $f_{n_k}(z)$ stays in a compact subset of
 $\DD$ around $f(z)$. Hence local uniform convergence of $g_{n_k}$ gives
-\[
+$$
 g(f(z))
 =\lim_{k\to\infty}g_{n_k}(f_{n_k}(z))
 =z.
-\]
+$$
 Thus $g\circ f=\operatorname{id}_{\DD}$.
 
 Similarly, for any $w\in\DD$ choose a compact disk containing $w$ and
 use $f_{n_k}\circ g_{n_k}=\operatorname{id}$. The identity above already
 shows that $g$ is nonconstant, hence $g(\DD)\subset\DD$ by the
 maximum principle. Passing to the limit gives
-\[
+$$
 f(g(w))=w.
-\]
+$$
 Therefore $f$ and $g$ are inverse biholomorphisms of $\DD$, so $f$ is an
 automorphism.
 :::

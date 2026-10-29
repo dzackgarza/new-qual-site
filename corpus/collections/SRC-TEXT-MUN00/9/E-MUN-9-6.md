@@ -43,25 +43,25 @@ $$
 :::
 
 ::: {.solution}
-(a) Suppose \(\mathcal A\) were the set of all sets. Every subset of \(\mathcal A\) is itself a set, hence by the defining property of \(\mathcal A\) it is an element of \(\mathcal A\). Therefore
-\[
+(a) Suppose $\mathcal A$ were the set of all sets. Every subset of $\mathcal A$ is itself a set, hence by the defining property of $\mathcal A$ it is an element of $\mathcal A$. Therefore
+$$
 \mathcal P(\mathcal A)\subset\mathcal A.
-\]
+$$
 The inclusion map would be an injection
-\[
+$$
 \mathcal P(\mathcal A)\hookrightarrow\mathcal A,
-\]
+$$
 contradicting Cantor's theorem, which says there is no injection from the power set of a set into the set itself. Hence a set of all sets cannot exist.
 
 (b) Define
-\[
+$$
 \mathcal B=\{A\in\mathcal A:A\notin A\}.
-\]
-Since \(\mathcal A\) is assumed to contain every set, \(\mathcal B\in\mathcal A\). Ask whether \(\mathcal B\in\mathcal B\). By definition,
-\[
+$$
+Since $\mathcal A$ is assumed to contain every set, $\mathcal B\in\mathcal A$. Ask whether $\mathcal B\in\mathcal B$. By definition,
+$$
 \mathcal B\in\mathcal B
 \iff
 \mathcal B\notin\mathcal B,
-\]
-a contradiction in either case. This is Russell's paradox and independently shows that the supposed set \(\mathcal A\) cannot exist.
+$$
+a contradiction in either case. This is Russell's paradox and independently shows that the supposed set $\mathcal A$ cannot exist.
 :::

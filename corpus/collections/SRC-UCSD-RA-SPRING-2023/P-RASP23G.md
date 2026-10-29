@@ -36,26 +36,26 @@ Hint: Use the Fourier transform of the Gaussian, the identity $\int \hat{f} g = 
 
 ::: {.solution}
 Use the Fourier-transform convention from the exam,
-\[
+$$
 \widehat h(\xi)=\int_{\RR^n}e^{-2\pi i\langle\xi,y\rangle}h(y)\,dy.
-\]
+$$
 Set
-\[
+$$
 s:=\frac{n-\alpha}{2}>0.
-\]
+$$
 For $x\ne0$, the Gamma-function identity with the substitution $t=\pi\lambda|x|^2$ gives
-\[
+$$
 \int_0^\infty e^{-\pi\lambda|x|^2}\lambda^{s-1}\,d\lambda
 =\frac{\Gamma(s)}{\pi^s}|x|^{-2s}
 =\frac{\Gamma((n-\alpha)/2)}{\pi^{(n-\alpha)/2}}|x|^{\alpha-n}.
-\]
+$$
 Therefore the left-hand side equals
-\[
+$$
 \int_{\RR^n}\widehat\phi(x)
 \left(\int_0^\infty e^{-\pi\lambda|x|^2}\lambda^{s-1}\,d\lambda\right)dx.
-\]
+$$
 Because $\phi\in C_c^\infty$, its Fourier transform is rapidly decreasing; since $0<\alpha<n$, the weight $|x|^{\alpha-n}$ is locally integrable. Thus the relevant integrals are absolutely convergent, and Fubini applies:
-\[
+$$
 \begin{aligned}
 &\frac{\Gamma((n-\alpha)/2)}{\pi^{(n-\alpha)/2}}
 \int_{\RR^n}|x|^{\alpha-n}\widehat\phi(x)\,dx\\
@@ -63,24 +63,24 @@ Because $\phi\in C_c^\infty$, its Fourier transform is rapidly decreasing; since
 \int_0^\infty \lambda^{s-1}
 \left(\int_{\RR^n}\widehat\phi(x)e^{-\pi\lambda|x|^2}\,dx\right)d\lambda.
 \end{aligned}
-\]
+$$
 
 Let
-\[
+$$
 g_\lambda(x)=e^{-\pi\lambda|x|^2}.
-\]
+$$
 The Gaussian transform formula on the exam cover page is
-\[
+$$
 \widehat g_\lambda(\xi)
 =\lambda^{-n/2}e^{-\pi|\xi|^2/\lambda}.
-\]
+$$
 Using
-\[
+$$
 \int \widehat\phi\,g_\lambda
 =\int \phi\,\widehat g_\lambda,
-\]
+$$
 we obtain
-\[
+$$
 \begin{aligned}
 \text{LHS}
 &=\int_0^\infty\lambda^{s-1-n/2}
@@ -90,15 +90,15 @@ we obtain
 \left(\int_0^\infty
 \lambda^{-\alpha/2-1}e^{-\pi|\xi|^2/\lambda}\,d\lambda\right)d\xi.
 \end{aligned}
-\]
+$$
 Again Fubini is justified by absolute convergence; on the right this reduces to local integrability of $|\xi|^{-\alpha}$ and compact support of $\phi$.
 
 For $\xi\ne0$, substitute
-\[
+$$
 t=\frac{\pi|\xi|^2}{\lambda}.
-\]
+$$
 Then
-\[
+$$
 \begin{aligned}
 \int_0^\infty
 \lambda^{-\alpha/2-1}e^{-\pi|\xi|^2/\lambda}\,d\lambda
@@ -106,9 +106,9 @@ Then
 \int_0^\infty e^{-t}t^{\alpha/2-1}\,dt\\
 &=\frac{\Gamma(\alpha/2)}{\pi^{\alpha/2}}|\xi|^{-\alpha}.
 \end{aligned}
-\]
+$$
 Substitution into the preceding expression gives
-\[
+$$
 \boxed{
 \frac{\Gamma((n-\alpha)/2)}{\pi^{(n-\alpha)/2}}
 \int_{\RR^n}|x|^{\alpha-n}\widehat\phi(x)\,dx
@@ -116,5 +116,5 @@ Substitution into the preceding expression gives
 \frac{\Gamma(\alpha/2)}{\pi^{\alpha/2}}
 \int_{\RR^n}|\xi|^{-\alpha}\phi(\xi)\,d\xi.
 }
-\]
+$$
 :::

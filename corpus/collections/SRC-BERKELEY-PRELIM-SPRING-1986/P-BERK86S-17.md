@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Let $V$ be a finite-dimensional complex vector space of $C^\infty$ functions on $\RR$. Suppose $V$ is closed under differentiation. Prove that $V$ is closed under translations: if $f\in V$ and $a\in\RR$, then
-\[
+$$
 x\longmapsto f(x+a)
-\]
+$$
 also lies in $V$.
 :::
 

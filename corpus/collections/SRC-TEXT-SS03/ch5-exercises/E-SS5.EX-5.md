@@ -48,9 +48,9 @@ Holomorphicity of $F_\alpha(z)$:
 ::: pf-step
 
 For any $z = x + iy \in \CC$ and $t \in \RR$:
-\[
+$$
 \left| e^{-|t|^\alpha} e^{2\pi i z t} \right| = e^{-|t|^\alpha} e^{-2\pi y t} \le e^{-|t|^\alpha + 2\pi |z| |t|}.
-\]
+$$
 
 ::: pf-proof
 
@@ -87,9 +87,9 @@ Upper bound on the order of growth:
 
 Let $\beta = \frac{\alpha}{\alpha - 1}$, so that $\frac{1}{\alpha} + \frac{1}{\beta} = 1$ are conjugate exponents.
 By Young’s inequality $ab \le \frac{a^\alpha}{\alpha} + \frac{b^\beta}{\beta}$ with $a = 2^{1/\alpha} |t|$ and $b = 2^{-1/\alpha} (2\pi |z|)$:
-\[
+$$
 2\pi |z| |t| = (2^{1/\alpha} |t|) (2^{-1/\alpha} 2\pi |z|) \le \frac{2 |t|^\alpha}{\alpha} + \frac{(2^{-1/\alpha} 2\pi |z|)^\beta}{\beta} \le \frac{|t|^\alpha}{2} + c |z|^\beta,
-\]
+$$
 where $c = \frac{(2\pi)^\beta}{\beta 2^{\beta/\alpha}} > 0$.
 
 ::: pf-proof
@@ -104,9 +104,9 @@ Young's inequality for conjugate exponents.
 
 Rearranging gives $-|t|^\alpha + 2\pi |z| |t| \le -\frac{|t|^\alpha}{2} + c |z|^\beta$.
 Integrating over $\RR$:
-\[
+$$
 |F_\alpha(z)| \le \int_{-\infty}^\infty e^{-|t|^\alpha + 2\pi |z| |t|} \, dt \le e^{c |z|^\beta} \int_{-\infty}^\infty e^{-|t|^\alpha / 2} \, dt = C_0 e^{c |z|^\beta},
-\]
+$$
 where $C_0 = \int_{-\infty}^\infty e^{-|t|^\alpha / 2} \, dt < \infty$.
 Thus the growth order $\rho(F_\alpha) \le \beta = \frac{\alpha}{\alpha - 1}$.
 
@@ -131,9 +131,9 @@ Lower bound on the order of growth:
 ::: pf-step
 
 Evaluate $F_\alpha$ on the negative imaginary axis $z = -i y$ for $y > 0$:
-\[
+$$
 F_\alpha(-iy) = \int_{-\infty}^\infty e^{-|t|^\alpha + 2\pi y t} \, dt \ge \int_0^\infty e^{-t^\alpha + 2\pi y t} \, dt.
-\]
+$$
 
 ::: pf-proof
 
@@ -146,9 +146,9 @@ restricting domain of integration to $[0, \infty)$.
 ::: pf-step
 
 The exponent $g(t) = -t^\alpha + 2\pi y t$ attains its maximum at $t_0 = \left(\frac{2\pi y}{\alpha}\right)^{1/(\alpha-1)}$, with maximum value:
-\[
+$$
 g(t_0) = -\left(\frac{2\pi y}{\alpha}\right)^{\frac{\alpha}{\alpha-1}} + 2\pi y \left(\frac{2\pi y}{\alpha}\right)^{\frac{1}{\alpha-1}} = \left(1 - \frac{1}{\alpha}\right) \left(\frac{2\pi}{\alpha}\right)^\beta y^\beta = c' y^\beta \quad (c' > 0).
-\]
+$$
 
 ::: pf-proof
 
@@ -162,9 +162,9 @@ calculus optimization of $g(t)$.
 
 Integrating over the interval $[t_0, t_0 + 1]$ gives $F_\alpha(-iy) \ge C_1 e^{c' y^\beta}$ for large $y > 0$.
 Thus the order of growth satisfies:
-\[
+$$
 \rho(F_\alpha) = \limsup_{r \to \infty} \frac{\log \log M(r)}{\log r} \ge \beta = \frac{\alpha}{\alpha - 1}.
-\]
+$$
 
 ::: pf-proof
 

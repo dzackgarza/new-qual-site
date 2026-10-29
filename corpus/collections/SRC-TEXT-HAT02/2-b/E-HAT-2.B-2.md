@@ -31,30 +31,30 @@ Show that $\tilde{H}_i(S^n - X) \approx \tilde{H}_{n-i-1}(X)$ when $X$ is homeom
 
 ::: {.solution}
 Let $X\subset S^n$ be homeomorphic to a finite connected graph. Since all homology groups of a finite graph are free abelian, the universal coefficient theorem identifies
-\[
+$$
 H^j(X;\ZZ)\cong \operatorname{Hom}(H_j(X;\ZZ),\ZZ)
-\]
+$$
 and hence, noncanonically but naturally in rank,
-\[
+$$
 \widetilde H^j(X;\ZZ)\cong \widetilde H_j(X;\ZZ).
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 If $X$ is a tree, then
-\[
+$$
 \widetilde H_i(S^n-X)=0
 \qquad\text{for all }i.
-\]
+$$
 
 ::: pf-proof
 
 A finite tree is contractible, so its reduced cohomology vanishes. Alexander duality gives
-\[
+$$
 \widetilde H_i(S^n-X)\cong \widetilde H^{\,n-i-1}(X)=0.
-\]
+$$
 
 :::
 
@@ -63,16 +63,16 @@ A finite tree is contractible, so its reduced cohomology vanishes. Alexander dua
 ::: pf-step
 
 For an arbitrary finite connected graph,
-\[
+$$
 \boxed{\widetilde H_i(S^n-X)\cong \widetilde H_{\,n-i-1}(X).}
-\]
+$$
 
 ::: pf-proof
 
 Alexander duality gives
-\[
+$$
 \widetilde H_i(S^n-X)\cong \widetilde H^{\,n-i-1}(X).
-\]
+$$
 The homology of a connected graph is free: $H_0(X)=\ZZ$, $H_1(X)$ is a free abelian group, and $H_j(X)=0$ for $j>1$. Therefore the universal coefficient theorem has no $\operatorname{Ext}$ term, and $\widetilde H^{j}(X)$ is a free abelian group of the same rank as $\widetilde H_j(X)$. Choosing the basis of $H_1(X)$ obtained by collapsing a maximal tree identifies these groups, yielding the displayed isomorphism.
 
 :::
@@ -82,7 +82,7 @@ The homology of a connected graph is free: $H_0(X)=\ZZ$, $H_1(X)$ is a free abel
 :::
 
 In particular, if $r=\operatorname{rank}H_1(X)$, then the only possible nonzero reduced homology group of the complement is
-\[
+$$
 \widetilde H_{n-2}(S^n-X)\cong\ZZ^r.
-\]
+$$
 :::

@@ -28,10 +28,10 @@ audit:
 
 ::: {.problem}
 Prove that
-\[
+$$
 \int_0^\infty\frac{x^{\alpha-1}}{1+x}\,dx
 =\frac{\pi}{\sin(\pi\alpha)}.
-\]
+$$
 What restrictions must be placed on $\alpha$?
 :::
 

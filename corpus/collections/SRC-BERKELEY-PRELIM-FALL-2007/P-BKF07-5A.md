@@ -27,11 +27,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose \(G\) is a finite group such that for every subgroup \(H\le G\) there is a homomorphism
-\[
+Suppose $G$ is a finite group such that for every subgroup $H\le G$ there is a homomorphism
+$$
 \phi:G\to H
-\]
-with \(\phi(h)=h\) for every \(h\in H\). Show that \(G\) is a direct product of groups of prime order.
+$$
+with $\phi(h)=h$ for every $h\in H$. Show that $G$ is a direct product of groups of prime order.
 :::
 
 ::: {.solution}

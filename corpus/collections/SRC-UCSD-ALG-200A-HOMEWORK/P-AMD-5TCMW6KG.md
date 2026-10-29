@@ -39,26 +39,26 @@ audit:
 
 ::: {.problem}
 Let $R$ be a commutative ring and let
-\[
+$$
 R[[x]]
  =\left\{\sum_{n=0}^{\infty}a_nx^n:a_n\in R\right\}
-\]
+$$
 be the ring of formal power series in one variable.
 
 (a) Prove that
-\[
+$$
 \sum_{n=0}^{\infty}a_nx^n\in R[[x]]^\times
 \quad\Longleftrightarrow\quad
 a_0\in R^\times.
-\]
+$$
 
 (b) Prove that if $R$ is a domain, then $R[[x]]$ is a domain.
 
 (c) Suppose that $R$ is a field.
 Prove that
-\[
+$$
 I=\left\{\sum_{n=0}^{\infty}a_nx^n\in R[[x]]:a_0=0\right\}
-\]
+$$
 is a maximal ideal of $R[[x]]$ and is its unique maximal ideal.
 
 (Thus $R[[x]]$ is a local ring.)
@@ -71,22 +71,22 @@ is a maximal ideal of $R[[x]]$ and is its unique maximal ideal.
 ::: {.pf-step #s1}
 
 If a formal power series
-\[
+$$
 f=\sum_{n=0}^{\infty}a_nx^n
-\]
+$$
 is a unit in $R[[x]]$, then $a_0$ is a unit in $R$.
 
 ::: pf-proof
 
 Let
-\[
+$$
 g=\sum_{n=0}^{\infty}b_nx^n
-\]
+$$
 be an inverse of $f$.
 The constant coefficient of $fg=1$ is
-\[
+$$
 a_0b_0=1.
-\]
+$$
 Hence $a_0\in R^\times$.
 
 :::
@@ -100,32 +100,32 @@ If $a_0\in R^\times$, then $f$ has an inverse in $R[[x]]$.
 ::: pf-proof
 
 We construct coefficients $b_n\in R$ recursively so that
-\[
+$$
 g=\sum_{n=0}^{\infty}b_nx^n
-\]
+$$
 satisfies $fg=1$.
 
 Set
-\[
+$$
 b_0=a_0^{-1}.
-\]
+$$
 Suppose $b_0,\ldots,b_{n-1}$ have been defined.
 Define
-\[
+$$
 b_n
   =-a_0^{-1}\sum_{i=1}^{n}a_i b_{n-i}.
-\]
+$$
 Then the coefficient of $x^n$ in $fg$ is
-\[
+$$
 \sum_{i=0}^{n}a_i b_{n-i}
   =a_0b_n+\sum_{i=1}^{n}a_i b_{n-i}
   =0.
-\]
+$$
 The constant coefficient is $a_0b_0=1$.
 Therefore
-\[
+$$
 fg=1.
-\]
+$$
 Since $R[[x]]$ is commutative, $g$ is the inverse of $f$.
 
 :::
@@ -151,36 +151,36 @@ If $R$ is a domain and $f,g\in R[[x]]$ are nonzero, then $fg\ne0$.
 ::: pf-proof
 
 Write
-\[
+$$
 f=\sum_{i=0}^{\infty}a_ix^i,
 \qquad
 g=\sum_{j=0}^{\infty}b_jx^j.
-\]
+$$
 Since $f$ and $g$ are nonzero, there are least indices $m,n$ such that
-\[
+$$
 a_m\ne0,
 \qquad
 b_n\ne0.
-\]
+$$
 
 The coefficient of $x^{m+n}$ in $fg$ is
-\[
+$$
 \sum_{i=0}^{m+n}a_i b_{m+n-i}.
-\]
+$$
 If $i<m$, then $a_i=0$.
 If $i>m$, then
-\[
+$$
 m+n-i<n,
-\]
+$$
 so $b_{m+n-i}=0$.
 Thus the only possibly nonzero summand is the one with $i=m$, and the coefficient is
-\[
+$$
 a_mb_n.
-\]
+$$
 Because $R$ is a domain and both factors are nonzero,
-\[
+$$
 a_mb_n\ne0.
-\]
+$$
 Hence $fg\ne0$.
 
 :::
@@ -208,19 +208,19 @@ If $R$ is a field, the set $I$ of series with zero constant coefficient is a max
 ::: pf-proof
 
 Define the constant-coefficient map
-\[
+$$
 \varepsilon:R[[x]]\longrightarrow R,
 \qquad
 \varepsilon\left(\sum_{n=0}^{\infty}a_nx^n\right)=a_0.
-\]
+$$
 The constant coefficient of a sum or product is respectively the sum or product of the constant coefficients, so $\varepsilon$ is a ring homomorphism.
 It is surjective because every $r\in R$ is the image of the constant series $r$.
 Its kernel is exactly $I$.
 
 The first isomorphism theorem gives
-\[
+$$
 R[[x]]/I\cong R.
-\]
+$$
 Since $R$ is a field, $I$ is maximal.
 
 :::
@@ -234,14 +234,14 @@ Every element of $R[[x]]\setminus I$ is a unit.
 ::: pf-proof
 
 If
-\[
+$$
 f=\sum_{n=0}^{\infty}a_nx^n\notin I,
-\]
+$$
 then $a_0\ne0$.
 Since $R$ is a field,
-\[
+$$
 a_0\in R^\times.
-\]
+$$
 By step [](#s3){.pf-ref}, $f$ is a unit in $R[[x]]$.
 
 :::
@@ -258,13 +258,13 @@ Let $M$ be any maximal ideal of $R[[x]]$.
 A proper ideal cannot contain a unit.
 By step [](#s7){.pf-ref}, every element outside $I$ is a unit.
 Hence every element of $M$ lies in $I$, so
-\[
+$$
 M\le I.
-\]
+$$
 Since $M$ is maximal and $I$ is a proper ideal, it follows that
-\[
+$$
 M=I.
-\]
+$$
 Thus $I$ is the unique maximal ideal, proving part (c).
 
 :::

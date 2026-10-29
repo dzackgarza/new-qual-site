@@ -28,25 +28,25 @@ Let $S^3 \to E \to S^5$ be a fiber bundle and compute $H_3(E)$.
 
 ::: {.pf-step #e-simply-2-connected}
 The total space $E$ is path connected and satisfies
-\[
+$$
 \pi_1(E)=\pi_2(E)=0.
-\]
+$$
 
 ::: pf-proof
 The fiber and base, $S^3$ and $S^5$, are path connected, so the total space of the fiber bundle is path connected.
 
 The homotopy long exact sequence contains
-\[
+$$
 \pi_2(S^3)\longrightarrow\pi_2(E)\longrightarrow\pi_2(S^5)
-\]
+$$
 and
-\[
+$$
 \pi_1(S^3)\longrightarrow\pi_1(E)\longrightarrow\pi_1(S^5).
-\]
+$$
 All four sphere groups displayed on the outside vanish, so exactness gives
-\[
+$$
 \pi_2(E)=\pi_1(E)=0.
-\]
+$$
 :::
 
 :::
@@ -56,18 +56,18 @@ $\pi_3(E)\cong\ZZ$.
 
 ::: pf-proof
 The same long exact sequence contains
-\[
+$$
 \pi_4(S^5)\longrightarrow\pi_3(S^3)
 \longrightarrow\pi_3(E)\longrightarrow\pi_3(S^5).
-\]
+$$
 Since
-\[
+$$
 \pi_4(S^5)=0,
 \qquad
 \pi_3(S^3)\cong\ZZ,
 \qquad
 \pi_3(S^5)=0,
-\]
+$$
 exactness makes the middle map an isomorphism.
 :::
 
@@ -79,9 +79,9 @@ $H_3(E)\cong\ZZ$.
 ::: pf-proof
 By step [](#e-simply-2-connected){.pf-ref}, $E$ is $2$-connected.
 The Hurewicz theorem therefore gives an isomorphism
-\[
+$$
 \pi_3(E)\xrightarrow{\sim}H_3(E).
-\]
+$$
 Apply step [](#pi3-e-iso-z){.pf-ref}.
 :::
 

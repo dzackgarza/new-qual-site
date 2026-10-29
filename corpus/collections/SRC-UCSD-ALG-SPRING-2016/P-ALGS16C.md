@@ -46,9 +46,9 @@ The automorphism group of a cyclic group of order $13$ is the multiplicative gro
 ::: {.pf-step #s2}
 
 Let $H=\langle b\rangle\cong C_3$ act on $N$ by $bab^{-1}=a^3$, and form the semidirect product
-\[
+$$
 G=C_{13}\rtimes C_3=\langle a,b\mid a^{13}=b^3=1,\ bab^{-1}=a^3\rangle.
-\]
+$$
 
 ::: pf-proof
 

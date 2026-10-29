@@ -62,17 +62,17 @@ Statement (1) is false.
 ::: pf-proof
 
 Take $X=[0,1]$ with Lebesgue measure and set
-\[
+$$
 E_j=[0,1]
-\]
+$$
 for every $j$. Then each $\mu(E_j)=1<\infty$, and every point lies in infinitely many $E_j$, so
-\[
+$$
 E=[0,1].
-\]
+$$
 Hence
-\[
+$$
 \mu(E)=1\ne0.
-\]
+$$
 The missing hypothesis in the first Borel--Cantelli lemma is the summability of $\sum_j\mu(E_j)$, not merely finiteness of each term.
 
 :::
@@ -86,18 +86,18 @@ Statement (2) is true.
 ::: pf-proof
 
 Continuity of $f$ at $z_0$ means that for every $\varepsilon>0$ there is $r_0>0$ such that
-\[
+$$
 |f(y)-f(z_0)|<\varepsilon
-\]
+$$
 whenever $|y-z_0|<r_0$. Hence for $0<r<r_0$,
-\[
+$$
 \frac1{|B_r|}\int_{B_r(z_0)}|f(y)-f(z_0)|\,dy
 \le\varepsilon.
-\]
+$$
 Letting $r\downarrow0$ gives the Lebesgue-point condition. Thus
-\[
+$$
 z_0\in L_f.
-\]
+$$
 
 :::
 
@@ -110,17 +110,17 @@ Statement (3) is true.
 ::: pf-proof
 
 Weak convergence gives
-\[
+$$
 \langle z_k,z\rangle\to\|z\|^2.
-\]
+$$
 Since $\|z_k\|=\|z\|$ for every $k$,
-\[
+$$
 \begin{aligned}
 \|z_k-z\|^2
 &=\|z_k\|^2+\|z\|^2-2\langle z_k,z\rangle\\
 &\longrightarrow2\|z\|^2-2\|z\|^2=0.
 \end{aligned}
-\]
+$$
 Hence $z_k\to z$ in norm.
 
 :::
@@ -134,25 +134,25 @@ Statement (4) is false.
 ::: pf-proof
 
 Choose nonzero functions
-\[
+$$
 \phi,\psi\in C_c^\infty(\RR^n)
-\]
+$$
 with disjoint supports. Let
-\[
+$$
 f=\mathcal F^{-1}\phi,
 \qquad
 g=\mathcal F^{-1}\psi.
-\]
+$$
 The inverse Fourier transform maps $C_c^\infty$ into the Schwartz space, so $f,g\in\mathcal S$ and both are nonzero.
 
 But
-\[
+$$
 \widehat{f*g}=\widehat f\,\widehat g=\phi\psi=0.
-\]
+$$
 Fourier-transform injectivity gives
-\[
+$$
 f*g=0,
-\]
+$$
 although neither factor is zero.
 
 :::
@@ -166,11 +166,11 @@ Statement (5) is false.
 ::: pf-proof
 
 For $f(x)=|x|$, the first distributional derivative is
-\[
+$$
 Df=\operatorname{sgn}(x).
-\]
+$$
 For a test function $\varphi$,
-\[
+$$
 \begin{aligned}
 \langle D^2f,\varphi\rangle
 &=-\int_{\RR}\operatorname{sgn}(x)\varphi'(x)\,dx\\
@@ -178,11 +178,11 @@ For a test function $\varphi$,
 +\int_{-\infty}^0\varphi'(x)\,dx\\
 &=2\varphi(0).
 \end{aligned}
-\]
+$$
 Thus
-\[
+$$
 \boxed{D^2|x|=2\delta_0,}
-\]
+$$
 not the zero distribution.
 
 :::

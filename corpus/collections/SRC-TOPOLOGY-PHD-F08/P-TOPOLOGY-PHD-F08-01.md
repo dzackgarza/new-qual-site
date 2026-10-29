@@ -46,15 +46,15 @@ The set $K$ is bounded.
 If $K=\varnothing$, it is bounded trivially.
 Assume $K\ne\varnothing$ and choose $x_0\in X$.
 The family
-\[
+$$
 \{B(x_0,n):n\in\NN,\ n\ge1\}
-\]
+$$
 is an open cover of $K$, since every distance $d(x_0,x)$ is a finite real number.
 By compactness, finitely many of these balls cover $K$.
 If $N$ is the largest radius among that finite collection, then the balls are nested and
-\[
+$$
 K\subseteq B(x_0,N).
-\]
+$$
 Hence $K$ is bounded.
 :::
 
@@ -66,27 +66,27 @@ For every $y\in K$, there are disjoint open neighborhoods $U_y$ of $y$ and $V_y$
 
 ::: pf-proof
 Since $x\ne y$,
-\[
+$$
 r_y=\frac13d(x,y)>0.
-\]
+$$
 Set
-\[
+$$
 U_y=B(y,r_y),
 \qquad
 V_y=B(x,r_y).
-\]
+$$
 If $z\in U_y\cap V_y$, the triangle inequality would give
-\[
+$$
 d(x,y)
 \le d(x,z)+d(z,y)
 <2r_y
 =\frac23d(x,y),
-\]
+$$
 a contradiction.
 Thus
-\[
+$$
 U_y\cap V_y=\varnothing.
-\]
+$$
 :::
 
 :::
@@ -96,37 +96,37 @@ The point $x$ has an open neighborhood disjoint from $K$.
 
 ::: pf-proof
 The sets
-\[
+$$
 \{U_y:y\in K\}
-\]
+$$
 form an open cover of $K$.
 By compactness, choose
-\[
+$$
 y_1,\ldots,y_m\in K
-\]
+$$
 such that
-\[
+$$
 K\subseteq U_{y_1}\cup\cdots\cup U_{y_m}.
-\]
+$$
 Set
-\[
+$$
 V=V_{y_1}\cap\cdots\cap V_{y_m}.
-\]
+$$
 This is an open neighborhood of $x$.
 
 Suppose $z\in V\cap K$.
 Since the $U_{y_i}$ cover $K$, some $i$ satisfies
-\[
+$$
 z\in U_{y_i}.
-\]
+$$
 But $z\in V$ implies
-\[
+$$
 z\in V_{y_i},
-\]
+$$
 contradicting step [](#disjoint-nbhds){.pf-ref}. Therefore
-\[
+$$
 V\cap K=\varnothing.
-\]
+$$
 :::
 
 :::
@@ -136,9 +136,9 @@ The set $K$ is closed.
 
 ::: pf-proof
 By step [](#neighborhood-disjoint-from-k){.pf-ref}, every point of
-\[
+$$
 X\setminus K
-\]
+$$
 has an open neighborhood contained in $X\setminus K$.
 Hence $X\setminus K$ is open, so $K$ is closed.
 :::

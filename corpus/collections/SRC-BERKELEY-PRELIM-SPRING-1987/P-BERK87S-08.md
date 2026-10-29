@@ -26,13 +26,13 @@ audit:
 
 ::: {.problem}
 Let $p(z)$ be a nonconstant complex polynomial all of whose roots satisfy
-\[
+$$
 \operatorname{Re}z>0.
-\]
+$$
 Prove that every root of $p'$ also satisfies
-\[
+$$
 \operatorname{Re}z>0.
-\]
+$$
 :::
 
 ::: {.solution}

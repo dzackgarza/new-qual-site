@@ -41,13 +41,13 @@ Either $p^2\mid n$, or there is a prime $q\ne p$ with $q\mid n$ and $p\mid(q-1)$
 
 ::: pf-proof
 Write
-\[
+$$
 n=\prod_{r\mid n} r^{a_r}.
-\]
+$$
 Euler's formula gives
-\[
+$$
 \phi(n)=\prod_{r\mid n} r^{a_r-1}(r-1).
-\]
+$$
 Since $p\mid n$, the prime $p$ occurs among the $r$.
 If $a_p\ge2$, then $p^2\mid n$.
 Otherwise $a_p=1$, so the factor $p^{a_p-1}$ contributes no factor of $p$ to $\phi(n)$.
@@ -58,16 +58,16 @@ Because $p\mid\phi(n)$ and $p\nmid(p-1)$, some distinct prime $q\mid n$ must sat
 
 ::: {.pf-step #G-noncyclic-p2-case}
 If $p^2\mid n$, then
-\[
+$$
 G=C_p\times C_p\times C_{n/p^2}
-\]
+$$
 is a noncyclic group of order $n$.
 
 ::: pf-proof
 Its order is
-\[
+$$
 |G|=p\cdot p\cdot\frac{n}{p^2}=n.
-\]
+$$
 The subgroup $C_p\times C_p\times\{1\}$ is not cyclic.
 A subgroup of a cyclic group must be cyclic, so $G$ itself cannot be cyclic.
 :::
@@ -80,27 +80,27 @@ Let $q\ne p$ be as in step [](#case-dichotomy){.pf-ref}. There exists a nonabeli
 
 ::: pf-proof
 Since $\FF_q^\times$ is cyclic of order $q-1$ and $p\mid(q-1)$, it has a subgroup
-\[
+$$
 \mu_p=\{a\in\FF_q^\times:a^p=1\}
-\]
+$$
 of order $p$.
 Define
-\[
+$$
 H=\left\{\begin{pmatrix}a&b\\0&1\end{pmatrix}:a\in\mu_p,\ b\in\FF_q\right\}.
-\]
+$$
 Matrix multiplication shows that $H$ is a subgroup of $\operatorname{GL}_2(\FF_q)$, and there are $p$ choices for $a$ and $q$ choices for $b$, so $|H|=pq$.
 
 Choose $a\in\mu_p$ with $a\ne1$.
 Then
-\[
+$$
 \begin{pmatrix}a&0\\0&1\end{pmatrix}\begin{pmatrix}1&1\\0&1\end{pmatrix}
 =\begin{pmatrix}a&a\\0&1\end{pmatrix},
-\]
+$$
 whereas
-\[
+$$
 \begin{pmatrix}1&1\\0&1\end{pmatrix}\begin{pmatrix}a&0\\0&1\end{pmatrix}
 =\begin{pmatrix}a&1\\0&1\end{pmatrix}.
-\]
+$$
 These differ because $a\ne1$, so $H$ is nonabelian.
 :::
 
@@ -108,17 +108,17 @@ These differ because $a\ne1$, so $H$ is nonabelian.
 
 ::: {.pf-step #G-noncyclic-second-case}
 In the second case,
-\[
+$$
 G=H\times C_{n/(pq)}
-\]
+$$
 is a noncyclic group of order $n$.
 
 ::: pf-proof
 Because $p$ and $q$ are distinct primes dividing $n$, $pq\mid n$.
 Thus
-\[
+$$
 |G|=pq\cdot\frac{n}{pq}=n.
-\]
+$$
 The direct factor $H$ is nonabelian by step [](#H-nonabelian-order-pq){.pf-ref}, so $G$ is nonabelian.
 Every cyclic group is abelian; hence $G$ is not cyclic.
 :::

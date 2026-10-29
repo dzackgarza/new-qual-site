@@ -42,9 +42,9 @@ If $A$ is invertible and $AB=0$, then $B=0$.
 
 ::: pf-proof
 Multiply on the left by $A^{-1}$:
-\[
+$$
 B=A^{-1}AB=A^{-1}0=0.
-\]
+$$
 :::
 
 :::

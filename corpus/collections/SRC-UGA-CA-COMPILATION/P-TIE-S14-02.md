@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Without using Cauchy's theorem, evaluate
-\[
+$$
 \int_\gamma z^n\,dz
-\]
+$$
 for every integer $n$, where $\gamma$ is any positively oriented circle that does not contain the origin.
 :::
 

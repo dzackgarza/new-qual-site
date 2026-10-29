@@ -36,9 +36,9 @@ Power series expansion and order of zero at the origin:
 ::: pf-step
 
 Since $f: \DD \to \CC$ is holomorphic, it admits a power series expansion around 0:
-\[
+$$
 f(z) = \sum_{n=0}^\infty a_n z^n.
-\]
+$$
 
 ::: pf-proof
 
@@ -87,9 +87,9 @@ Proof of the bound $|f(z)| \le 2000 |z|^2$:
 ::: pf-step
 
 For any $0 < r < 1$ and any $z$ with $|z| = r$:
-\[
+$$
 |g(z)| = \frac{|f(z)|}{|z|^2} = \frac{|f(z)|}{r^2} < \frac{2000}{r^2}.
-\]
+$$
 
 ::: pf-proof
 
@@ -102,9 +102,9 @@ condition (ii) $|f(z)| < 2000$.
 ::: pf-step
 
 By the Maximum Modulus Principle applied to $g$ on the closed disk $\overline{D}(0, r)$, for all $z \in D(0, r)$:
-\[
+$$
 |g(z)| \le \max_{|w| = r} |g(w)| \le \frac{2000}{r^2}.
-\]
+$$
 
 ::: pf-proof
 
@@ -117,9 +117,9 @@ Maximum Modulus Principle.
 ::: {.pf-step #s2-3}
 
 Taking the limit as $r \to 1^-$ yields:
-\[
+$$
 |g(z)| \le 2000 \quad \text{for all } z \in \DD.
-\]
+$$
 
 ::: pf-proof
 
@@ -132,9 +132,9 @@ limit of upper bounds as $r \to 1^-$.
 ::: pf-step
 
 Multiplying by $|z|^2$:
-\[
+$$
 |f(z)| = |z^2 g(z)| = |z|^2 |g(z)| \le 2000 |z|^2 \quad \text{for all } z \in \DD.
-\]
+$$
 
 ::: pf-proof
 
@@ -171,9 +171,9 @@ $|f(z_0)| = |z_0|^2 |g(z_0)|$.
 
 Since $|g(z)| \le 2000$ throughout $\DD$, the modulus $|g|$ attains its global maximum at the interior point $z_0 \in \DD$.
 By the Maximum Modulus Principle, $g(z)$ must be constant:
-\[
+$$
 g(z) = 2000 e^{i\theta} \quad \text{for some constant } \theta \in \RR.
-\]
+$$
 
 ::: pf-proof
 

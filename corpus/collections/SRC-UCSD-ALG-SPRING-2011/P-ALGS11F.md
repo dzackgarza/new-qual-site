@@ -30,20 +30,20 @@ audit:
 Given vector spaces $V$ and $W$ over the complex numbers, suppose that $\phi \colon V \to V$ and $\psi \colon W \to W$ are $\CC$-linear transformations.
 
 (i) Show that there is a unique linear transformation
-\[
+$$
 \phi \otimes \psi \colon V \otimes_{\CC} W \to V \otimes_{\CC} W
-\]
+$$
 with the property that
-\[
+$$
 (\phi \otimes \psi)(v \otimes w) = \phi(v) \otimes \psi(w)
-\]
+$$
 for all $v \in V$, $w \in W$.
 
 (ii) Let $V$ and $W$ be finite-dimensional of complex dimensions $m$ and $n$ respectively.
 Prove that
-\[
+$$
 \det(\phi \otimes \psi) = \det(\phi)^n \det(\psi)^m.
-\]
+$$
 
 Hint: Choose $\CC$-bases for $V$ and $W$ such that the matrices representing $\phi$ and $\psi$ have a special form.
 :::
@@ -55,26 +55,26 @@ Hint: Choose $\CC$-bases for $V$ and $W$ such that the matrices representing $\p
 ::: pf-step
 
 There is a unique linear map
-\[
+$$
 \phi\otimes\psi:V\otimes_{\CC}W\to V\otimes_{\CC}W
-\]
+$$
 satisfying
-\[
+$$
 (\phi\otimes\psi)(v\otimes w)=\phi(v)\otimes\psi(w).
-\]
+$$
 
 ::: pf-proof
 
 Define
-\[
+$$
 B:V\times W\longrightarrow V\otimes_{\CC}W,\qquad
 B(v,w)=\phi(v)\otimes\psi(w).
-\]
+$$
 Because $\phi$ and $\psi$ are linear, $B$ is bilinear.
 By the universal property of $V\otimes W$, there is a unique linear map
-\[
+$$
 T:V\otimes W\to V\otimes W
-\]
+$$
 such that $T(v\otimes w)=B(v,w)$.
 This map is, by definition, $\phi\otimes\psi$.
 
@@ -90,18 +90,18 @@ Choose bases in which the matrices of $\phi$ and $\psi$ are upper triangular.
 ::: pf-proof
 
 Over $\CC$, every square matrix is triangularizable: equivalently, by Schur triangularization, there are bases in which
-\[
+$$
 [\phi]=A=(a_{ij}),\qquad [\psi]=B=(b_{rs})
-\]
+$$
 are upper triangular.
 Let their diagonal entries be
-\[
+$$
 \lambda_1,\ldots,\lambda_m\quad\text{and}\quad\mu_1,\ldots,\mu_n.
-\]
+$$
 Then
-\[
+$$
 \det\phi=\prod_{i=1}^m\lambda_i,\qquad\det\psi=\prod_{j=1}^n\mu_j.
-\]
+$$
 
 :::
 
@@ -110,16 +110,16 @@ Then
 ::: {.pf-step #s3}
 
 In the tensor-product basis $v_i\otimes w_j$, the matrix of $\phi\otimes\psi$ is the Kronecker product $A\otimes B$, which is upper triangular with diagonal entries
-\[
+$$
 \lambda_i\mu_j\qquad(1\le i\le m,\ 1\le j\le n).
-\]
+$$
 
 ::: pf-proof
 
 For basis vectors,
-\[
+$$
 (\phi\otimes\psi)(v_i\otimes w_j)=\phi(v_i)\otimes\psi(w_j).
-\]
+$$
 Since $A$ and $B$ are upper triangular, each factor is a linear combination only of basis vectors with index at least the original one, so with the lexicographically ordered tensor basis the resulting matrix is upper triangular.
 The coefficient of $v_i\otimes w_j$ in the image of $v_i\otimes w_j$ is $\lambda_i\mu_j$.
 
@@ -130,19 +130,19 @@ The coefficient of $v_i\otimes w_j$ in the image of $v_i\otimes w_j$ is $\lambda
 ::: pf-step
 
 Therefore
-\[
+$$
 \det(\phi\otimes\psi)=\det(\phi)^n\det(\psi)^m.
-\]
+$$
 
 ::: pf-proof
 
 Using step [](#s3){.pf-ref},
-\[
+$$
 \det(\phi\otimes\psi)
 =\prod_{i=1}^m\prod_{j=1}^n(\lambda_i\mu_j)
 =\left(\prod_{i=1}^m\lambda_i\right)^n\left(\prod_{j=1}^n\mu_j\right)^m
 =\det(\phi)^n\det(\psi)^m.
-\]
+$$
 
 :::
 

@@ -34,18 +34,18 @@ Compute the simplicial homology groups of the Klein bottle using the $\Delta$-co
 Use the standard square model of the Klein bottle with all four vertices identified, and draw the diagonal from the lower-left vertex to the upper-right vertex.
 Let $a$ be the horizontal edge class, $b$ the vertical edge class, and $c$ the diagonal.
 Let $U,L$ denote the two oriented $2$-simplices, with orientations chosen so that
-\[
+$$
 \partial U=a+b-c,
 \qquad
 \partial L=a-b-c.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 The simplicial chain complex is
-\[
+$$
 0\longrightarrow
 \ZZ^2
 \xrightarrow{\partial_2}
@@ -53,9 +53,9 @@ The simplicial chain complex is
 \xrightarrow{0}
 \ZZ
 \longrightarrow0,
-\]
+$$
 where, in the ordered bases $(U,L)$ and $(a,b,c)$,
-\[
+$$
 [\partial_2]
 =
 \begin{pmatrix}
@@ -63,7 +63,7 @@ where, in the ordered bases $(U,L)$ and $(a,b,c)$,
 1&-1\\
 -1&-1
 \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 
@@ -83,9 +83,9 @@ The map $\partial_2$ is injective.
 ::: pf-proof
 
 If
-\[
+$$
 x(a+b-c)+y(a-b-c)=0,
-\]
+$$
 then the $b$-coordinate gives $x-y=0$, while the $a$-coordinate gives $x+y=0$.
 Hence $x=y=0$.
 
@@ -96,38 +96,38 @@ Hence $x=y=0$.
 ::: {.pf-step #s3}
 
 The quotient
-\[
+$$
 C_1/\operatorname{im}\partial_2
-\]
+$$
 is isomorphic to
-\[
+$$
 \ZZ\oplus\ZZ/2.
-\]
+$$
 
 ::: pf-proof
 
 The two boundary relations are
-\[
+$$
 a+b-c=0,
 \qquad
 a-b-c=0.
-\]
+$$
 Subtracting them gives
-\[
+$$
 2b=0.
-\]
+$$
 The first relation then expresses
-\[
+$$
 a=c-b.
-\]
+$$
 Thus the quotient is generated freely by $c$ together with $b$ of order two:
-\[
+$$
 C_1/\operatorname{im}\partial_2
 \cong
 \langle c\rangle\oplus\langle b\mid2b=0\rangle
 \cong
 \ZZ\oplus\ZZ/2.
-\]
+$$
 
 :::
 
@@ -136,7 +136,7 @@ C_1/\operatorname{im}\partial_2
 ::: pf-step
 
 Hence the simplicial homology groups of the Klein bottle are
-\[
+$$
 \boxed{
 H_0\cong\ZZ,
 \qquad
@@ -144,14 +144,14 @@ H_1\cong\ZZ\oplus\ZZ/2,
 \qquad
 H_k=0\quad(k\ge2).
 }
-\]
+$$
 
 ::: pf-proof
 
 Since $\partial_1=0$, connectedness gives $H_0\cong\ZZ$ and
-\[
+$$
 H_1=C_1/\operatorname{im}\partial_2,
-\]
+$$
 which is step [](#s3){.pf-ref}.
 Injectivity of $\partial_2$ gives $H_2=0$, and there are no higher simplices.
 

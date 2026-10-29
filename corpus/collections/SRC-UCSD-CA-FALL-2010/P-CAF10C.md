@@ -23,19 +23,19 @@ Assume that each $f_n$ is 1-to-1. Show that $f$ is either constant or 1-to-1.
 Assume that $f$ is not constant. We prove that it is injective.
 
 Suppose instead that there are distinct points $a,b\in G$ with
-\[
+$$
 f(a)=f(b).
-\]
+$$
 Choose disjoint closed disks around $a$ and $b$ contained in $G$. For each
 $n$, define
-\[
+$$
 g_n(z)=f_n(z)-f_n(a).
-\]
+$$
 Because $f_n$ is injective, $g_n$ has exactly one zero in $G$, namely $a$.
 Moreover, local uniform convergence $f_n\to f$ implies
-\[
+$$
 g_n\longrightarrow g:=f-f(a)
-\]
+$$
 locally uniformly on $G$.
 
 The function $g$ is not identically zero because $f$ is nonconstant, and it

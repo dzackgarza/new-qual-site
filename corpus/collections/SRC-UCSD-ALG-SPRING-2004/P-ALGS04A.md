@@ -30,27 +30,27 @@ You may use the first two Sylow Theorems without proof.
 :::
 
 ::: {.solution}
-Let \(\operatorname{Syl}_p(G)\) denote the set of Sylow \(p\)-subgroups of \(G\), and write
-\[
+Let $\operatorname{Syl}_p(G)$ denote the set of Sylow $p$-subgroups of $G$, and write
+$$
 n_p:=|\operatorname{Syl}_p(G)|.
-\]
-Fix \(P\in\operatorname{Syl}_p(G)\).
+$$
+Fix $P\in\operatorname{Syl}_p(G)$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The number \(n_p\) divides \(|G|\).
+The number $n_p$ divides $|G|$.
 
 ::: pf-proof
 
-The group \(G\) acts on \(\operatorname{Syl}_p(G)\) by conjugation.
-By the second Sylow theorem, all Sylow \(p\)-subgroups are conjugate, so this action is transitive.
-The stabilizer of \(P\) is its normalizer \(N_G(P)\). Hence orbit-stabilizer gives
-\[
+The group $G$ acts on $\operatorname{Syl}_p(G)$ by conjugation.
+By the second Sylow theorem, all Sylow $p$-subgroups are conjugate, so this action is transitive.
+The stabilizer of $P$ is its normalizer $N_G(P)$. Hence orbit-stabilizer gives
+$$
 n_p=[G:N_G(P)],
-\]
-which divides \(|G|\).
+$$
+which divides $|G|$.
 
 :::
 
@@ -58,17 +58,17 @@ which divides \(|G|\).
 
 ::: {.pf-step #s2}
 
-Under the conjugation action of \(P\) on \(\operatorname{Syl}_p(G)\), the only fixed point is \(P\) itself.
+Under the conjugation action of $P$ on $\operatorname{Syl}_p(G)$, the only fixed point is $P$ itself.
 
 ::: pf-proof
 
-Certainly \(P\) fixes itself.
-Suppose \(Q\in\operatorname{Syl}_p(G)\) is fixed by every element of \(P\). Then \(P\le N_G(Q)\), so \(P\) normalizes \(Q\). Therefore \(PQ\) is a subgroup of \(G\). Since both \(P\) and \(Q\) are \(p\)-groups, \(PQ\) is a \(p\)-group.
-But \(Q\) is Sylow, so no larger \(p\)-subgroup can contain it; hence
-\[
+Certainly $P$ fixes itself.
+Suppose $Q\in\operatorname{Syl}_p(G)$ is fixed by every element of $P$. Then $P\le N_G(Q)$, so $P$ normalizes $Q$. Therefore $PQ$ is a subgroup of $G$. Since both $P$ and $Q$ are $p$-groups, $PQ$ is a $p$-group.
+But $Q$ is Sylow, so no larger $p$-subgroup can contain it; hence
+$$
 PQ=Q.
-\]
-Thus \(P\le Q\). Since \(|P|=|Q|\), we obtain \(P=Q\).
+$$
+Thus $P\le Q$. Since $|P|=|Q|$, we obtain $P=Q$.
 
 :::
 
@@ -76,14 +76,14 @@ Thus \(P\le Q\). Since \(|P|=|Q|\), we obtain \(P=Q\).
 
 ::: pf-step
 
-One has \(n_p\equiv1\pmod p\).
+One has $n_p\equiv1\pmod p$.
 
 ::: pf-proof
 
-Every orbit of the \(p\)-group \(P\) acting on \(\operatorname{Syl}_p(G)\) has cardinality a power of \(p\). By step [](#s2){.pf-ref} there is exactly one orbit of size \(1\), namely \(\{P\}\); every other orbit therefore has cardinality divisible by \(p\). Consequently
-\[
+Every orbit of the $p$-group $P$ acting on $\operatorname{Syl}_p(G)$ has cardinality a power of $p$. By step [](#s2){.pf-ref} there is exactly one orbit of size $1$, namely $\{P\}$; every other orbit therefore has cardinality divisible by $p$. Consequently
+$$
 n_p\equiv1\pmod p.
-\]
+$$
 Together with step [](#s1){.pf-ref}, this is the third Sylow theorem.
 
 :::

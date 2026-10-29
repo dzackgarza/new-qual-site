@@ -23,17 +23,17 @@ audit:
 
 ::: {.problem}
 Let $A,B$ be real $2\times2$ matrices satisfying
-\[
+$$
 A^2=B^2=I,
 \qquad
 AB+BA=0.
-\]
+$$
 Show that there exists a real invertible $2\times2$ matrix $T$ such that
-\[
+$$
 TAT^{-1}=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
 \qquad
 TBT^{-1}=\begin{pmatrix}0&1\\1&0\end{pmatrix}.
-\]
+$$
 :::
 
 ::: {.solution}

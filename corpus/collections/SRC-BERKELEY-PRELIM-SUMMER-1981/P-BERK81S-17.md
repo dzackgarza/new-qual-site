@@ -28,14 +28,14 @@ audit:
 
 ::: {.problem}
 Suppose $f$ and $g$ are entire functions such that
-\[
+$$
 |f(z)|\le |g(z)|
-\]
+$$
 for every $z\in\CC$.
 Show that
-\[
+$$
 f(z)=c\,g(z)
-\]
+$$
 for some constant $c\in\CC$.
 :::
 

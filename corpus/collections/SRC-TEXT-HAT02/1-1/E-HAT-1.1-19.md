@@ -33,9 +33,9 @@ Show that if $X$ is a path-connected 1 dimensional CW complex with basepoint $x_
 
 ::: {.solution}
 Let
-\[
+$$
 f:I\to X
-\]
+$$
 be a loop based at the $0$-cell $x_0$.
 
 ::: pf
@@ -73,13 +73,13 @@ Inside an open interval the joining path is the unique monotone subinterval, and
 ::: pf-step
 
 There is a subdivision
-\[
+$$
 0=t_0<t_1<\cdots<t_m=1
-\]
+$$
 such that each path segment
-\[
+$$
 f([t_{i-1},t_i])
-\]
+$$
 lies in one member $U_i\in\mathcal U$.
 
 ::: pf-proof
@@ -94,14 +94,14 @@ Choose a Lebesgue number for this cover and take a subdivision with smaller mesh
 ::: {.pf-step #s4}
 
 For each $i$, replace the restricted path
-\[
+$$
 f|_{[t_{i-1},t_i]}
-\]
+$$
 by a path $g_i$ in $U_i$ with the same endpoints that is piecewise monotone on edges.
 Then the concatenation
-\[
+$$
 g=g_1\cdots g_m
-\]
+$$
 is homotopic to $f$ relative to the basepoint.
 
 ::: pf-proof
@@ -109,9 +109,9 @@ is homotopic to $f$ relative to the basepoint.
 Such a $g_i$ exists by step [](#s2){.pf-ref}.
 Since $U_i$ is contractible, any two paths in $U_i$ with the same endpoints are homotopic relative to those endpoints.
 Thus
-\[
+$$
 f|_{[t_{i-1},t_i]}\simeq g_i
-\]
+$$
 rel endpoints.
 The finitely many homotopies paste because adjacent pieces fix their common endpoint.
 Since $t_0=0$ and $t_m=1$, the basepoint $x_0$ is fixed throughout.

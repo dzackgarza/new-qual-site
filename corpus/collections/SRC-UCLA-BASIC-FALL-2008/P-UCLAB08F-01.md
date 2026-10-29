@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 For each $a\in\{0,1,2\}$, determine whether
-\[
+$$
 f(t)=t^a
-\]
+$$
 is uniformly continuous on $[0,\infty)$.
 Prove each assertion.
 :::
@@ -32,18 +32,18 @@ Prove each assertion.
 ::: {.pf-step #s1-1}
 
 For $a=0$, the function
-\[
+$$
 f(t)=1
-\]
+$$
 is uniformly continuous on $[0,\infty)$.
 
 
 ::: pf-proof
 
 For all $s,t\ge0$,
-\[
+$$
 |f(t)-f(s)|=0.
-\]
+$$
 Thus for every $\varepsilon>0$, any $\delta>0$ satisfies the definition of uniform continuity.
 
 :::
@@ -53,30 +53,30 @@ Thus for every $\varepsilon>0$, any $\delta>0$ satisfies the definition of unifo
 ::: {.pf-step #s1-2}
 
 For $a=1$, the function
-\[
+$$
 f(t)=t
-\]
+$$
 is uniformly continuous on $[0,\infty)$.
 
 
 ::: pf-proof
 
 For all $s,t\ge0$,
-\[
+$$
 |f(t)-f(s)|=|t-s|.
-\]
+$$
 Given $\varepsilon>0$, choose
-\[
+$$
 \delta=\varepsilon.
-\]
+$$
 Then
-\[
+$$
 |t-s|<\delta
-\]
+$$
 implies
-\[
+$$
 |f(t)-f(s)|<\varepsilon.
-\]
+$$
 
 :::
 
@@ -85,26 +85,26 @@ implies
 ::: {.pf-step #s1-3}
 
 For $a=2$, the function
-\[
+$$
 f(t)=t^2
-\]
+$$
 is not uniformly continuous on $[0,\infty)$.
 
 
 ::: pf-proof
 
 For each positive integer $n$, set
-\[
+$$
 x_n=n,
 \qquad
 y_n=n+\frac1n.
-\]
+$$
 Then
-\[
+$$
 |x_n-y_n|=\frac1n\longrightarrow0,
-\]
+$$
 but
-\[
+$$
 \begin{aligned}
 |f(y_n)-f(x_n)|
 &=
@@ -114,15 +114,15 @@ but
 >
 1.
 \end{aligned}
-\]
+$$
 If $f$ were uniformly continuous, taking $\varepsilon=1$ would give some $\delta>0$ such that
-\[
+$$
 |s-t|<\delta
-\]
+$$
 implies
-\[
+$$
 |f(s)-f(t)|<1.
-\]
+$$
 For sufficiently large $n$, one has $1/n<\delta$, contradicting the displayed inequality above.
 
 :::
@@ -132,9 +132,9 @@ For sufficiently large $n$, one has $1/n<\delta$, contradicting the displayed in
 ::: {.pf-step #s1-4}
 
 Therefore the uniformly continuous cases are exactly
-\[
+$$
 \boxed{a=0\text{ and }a=1}.
-\]
+$$
 
 
 ::: pf-proof

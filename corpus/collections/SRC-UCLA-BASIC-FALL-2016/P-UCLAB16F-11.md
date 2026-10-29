@@ -41,64 +41,64 @@ The proof establishes (b) and (d).
 ::: {.pf-step #s1-1}
 
 The metric satisfies the strong triangle inequality
-\[
+$$
 \operatorname{dist}(f,h)
 \le
 \max\{
 \operatorname{dist}(f,g),
 \operatorname{dist}(g,h)
 \}.
-\]
+$$
 
 
 ::: pf-proof
 
 Set
-\[
+$$
 a=\operatorname{dist}(f,g),
 \qquad
 b=\operatorname{dist}(g,h).
-\]
+$$
 Fix
-\[
+$$
 r>\max\{a,b\}.
-\]
+$$
 By the definition of infimum, there exist
-\[
+$$
 r_1<r,
 \qquad
 r_2<r
-\]
+$$
 such that
-\[
+$$
 f(t)=g(t)
 \quad\text{for }r_1\le t\le1
-\]
+$$
 and
-\[
+$$
 g(t)=h(t)
 \quad\text{for }r_2\le t\le1.
-\]
+$$
 Hence
-\[
+$$
 f(t)=h(t)
-\]
+$$
 for
-\[
+$$
 \max\{r_1,r_2\}\le t\le1.
-\]
+$$
 Therefore
-\[
+$$
 \operatorname{dist}(f,h)
 \le
 \max\{r_1,r_2\}
 <
 r.
-\]
+$$
 Since this holds for every
-\[
+$$
 r>\max\{a,b\},
-\]
+$$
 the strong triangle inequality follows.
 
 :::
@@ -113,35 +113,35 @@ Every open ball in $(X,\operatorname{dist})$ is also closed.
 ::: pf-proof
 
 Fix
-\[
+$$
 f\in X
-\]
+$$
 and $\rho>0$, and let
-\[
+$$
 U=B(f,\rho).
-\]
+$$
 Take
-\[
+$$
 g\notin U.
-\]
+$$
 Then
-\[
+$$
 \operatorname{dist}(f,g)\ge\rho.
-\]
+$$
 If
-\[
+$$
 h\in B(g,\rho),
-\]
+$$
 then
-\[
+$$
 \operatorname{dist}(g,h)<\rho.
-\]
+$$
 If $h$ belonged to $U$, then
-\[
+$$
 \operatorname{dist}(f,h)<\rho.
-\]
+$$
 The strong triangle inequality from step [](#s1-1){.pf-ref} would give
-\[
+$$
 \operatorname{dist}(f,g)
 \le
 \max\{
@@ -150,17 +150,17 @@ The strong triangle inequality from step [](#s1-1){.pf-ref} would give
 \}
 <
 \rho,
-\]
+$$
 contradicting
-\[
+$$
 \operatorname{dist}(f,g)\ge\rho.
-\]
+$$
 Thus
-\[
+$$
 B(g,\rho)
 \subseteq
 X\setminus U.
-\]
+$$
 So the complement of $U$ is open, and $U$ is closed.
 
 :::
@@ -175,43 +175,43 @@ The space $X$ is not connected.
 ::: pf-proof
 
 Let
-\[
+$$
 f_0(t)=0.
-\]
+$$
 The ball
-\[
+$$
 U=B(f_0,1/2)
-\]
+$$
 is nonempty because it contains $f_0$.
 It is both open and closed by step [](#s1-2){.pf-ref}.
 
 It is proper.
 Indeed, define
-\[
+$$
 g(t)=1-t.
-\]
+$$
 Then
-\[
+$$
 g\in X.
-\]
+$$
 For every
-\[
+$$
 r<1,
-\]
+$$
 the functions $g$ and $f_0$ differ at every
-\[
+$$
 t\in[r,1),
-\]
+$$
 so they do not agree on $[r,1]$.
 They agree on $[1,1]$.
 Hence
-\[
+$$
 \operatorname{dist}(g,f_0)=1,
-\]
+$$
 so
-\[
+$$
 g\notin U.
-\]
+$$
 Thus $U$ is a nonempty proper clopen subset of $X$, and therefore $X$ is not connected.
 This proves (b).
 
@@ -222,57 +222,57 @@ This proves (b).
 ::: {.pf-step #s1-4}
 
 Define, for $0<t\le1$,
-\[
+$$
 h(t)
 =
 \frac{1-t}{2}
 \left(
 1+\sin\frac1t
 \right).
-\]
+$$
 Then
-\[
+$$
 0\le h(t)\le1,
 \qquad
 h(1)=0,
-\]
+$$
 and $h$ has no limit as $t\downarrow0$.
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 -1\le\sin(1/t)\le1,
-\]
+$$
 one has
-\[
+$$
 0
 \le
 \frac{1+\sin(1/t)}2
 \le1.
-\]
+$$
 Multiplication by
-\[
+$$
 1-t\in[0,1)
-\]
+$$
 preserves the interval $[0,1]$, so
-\[
+$$
 0\le h(t)\le1.
-\]
+$$
 At $t=1$,
-\[
+$$
 h(1)=0.
-\]
+$$
 
 As $t\downarrow0$, the factor
-\[
+$$
 1-t
-\]
+$$
 tends to $1$, while
-\[
+$$
 \frac{1+\sin(1/t)}2
-\]
+$$
 oscillates between values arbitrarily close to $0$ and $1$.
 Hence $h$ has no limit at $0$.
 
@@ -283,32 +283,32 @@ Hence $h$ has no limit at $0$.
 ::: pf-step
 
 For each $n\ge1$, define
-\[
+$$
 f_n(t)
 =
 \begin{cases}
 h(1/n),&0\le t\le1/n,\\
 h(t),&1/n\le t\le1.
 \end{cases}
-\]
+$$
 Then
-\[
+$$
 f_n\in X.
-\]
+$$
 
 
 ::: pf-proof
 
 The two formulas agree at
-\[
+$$
 t=1/n,
-\]
+$$
 so $f_n$ is continuous.
 By step [](#s1-4){.pf-ref}, its values lie in $[0,1]$.
 Also
-\[
+$$
 f_n(1)=h(1)=0.
-\]
+$$
 Thus $f_n\in X$.
 
 :::
@@ -318,32 +318,32 @@ Thus $f_n\in X$.
 ::: {.pf-step #s1-6}
 
 If $m\ge n$, then
-\[
+$$
 \operatorname{dist}(f_m,f_n)
 \le
 \frac1n.
-\]
+$$
 
 
 ::: pf-proof
 
 For every
-\[
+$$
 t\ge\frac1n,
-\]
+$$
 one also has
-\[
+$$
 t\ge\frac1m,
-\]
+$$
 because $m\ge n$.
 Thus both functions use the formula $h(t)$ there:
-\[
+$$
 f_m(t)=h(t)=f_n(t).
-\]
+$$
 Hence they agree on
-\[
+$$
 \left[\frac1n,1\right],
-\]
+$$
 so the defining infimum of the distance is at most $1/n$.
 
 :::
@@ -359,16 +359,16 @@ The sequence $(f_n)$ is Cauchy in $(X,\operatorname{dist})$.
 
 Let $\varepsilon>0$.
 Choose $N$ with
-\[
+$$
 \frac1N<\varepsilon.
-\]
+$$
 For
-\[
+$$
 m,n\ge N,
-\]
+$$
 assume without loss of generality that $m\ge n$.
 Then step [](#s1-6){.pf-ref} gives
-\[
+$$
 \operatorname{dist}(f_m,f_n)
 \le
 \frac1n
@@ -376,7 +376,7 @@ Then step [](#s1-6){.pf-ref} gives
 \frac1N
 <
 \varepsilon.
-\]
+$$
 
 :::
 
@@ -385,60 +385,60 @@ Then step [](#s1-6){.pf-ref} gives
 ::: {.pf-step #s1-8}
 
 If $(f_n)$ converged in $X$ to some $f$, then
-\[
+$$
 f(t)=h(t)
-\]
+$$
 for every
-\[
+$$
 t>0.
-\]
+$$
 
 
 ::: pf-proof
 
 Fix $t>0$.
 Choose $N$ so large that
-\[
+$$
 \operatorname{dist}(f_n,f)<t
-\]
+$$
 for every $n\ge N$, and also
-\[
+$$
 \frac1n<t
-\]
+$$
 for every $n\ge N$.
 
 For such $n$, the inequality
-\[
+$$
 \operatorname{dist}(f_n,f)<t
-\]
+$$
 means there exists
-\[
+$$
 r<t
-\]
+$$
 such that
-\[
+$$
 f_n(s)=f(s)
-\]
+$$
 for all
-\[
+$$
 r\le s\le1.
-\]
+$$
 In particular,
-\[
+$$
 f_n(t)=f(t).
-\]
+$$
 Since
-\[
+$$
 t>\frac1n,
-\]
+$$
 the definition of $f_n$ gives
-\[
+$$
 f_n(t)=h(t).
-\]
+$$
 Therefore
-\[
+$$
 f(t)=h(t).
-\]
+$$
 
 :::
 
@@ -452,18 +452,18 @@ The Cauchy sequence $(f_n)$ has no limit in $X$.
 ::: pf-proof
 
 If it converged to some
-\[
+$$
 f\in X,
-\]
+$$
 step [](#s1-8){.pf-ref} would give
-\[
+$$
 f(t)=h(t)
-\]
+$$
 for every $t>0$.
 Since $f$ is continuous on $[0,1]$, the limit
-\[
+$$
 \lim_{t\downarrow0}f(t)
-\]
+$$
 would exist and equal $f(0)$.
 But step [](#s1-4){.pf-ref} says $h(t)$ has no limit as $t\downarrow0$.
 This is a contradiction.

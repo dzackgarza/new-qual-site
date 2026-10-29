@@ -48,9 +48,9 @@ rearrange $f(z)^2 + a(z)f(z) + b(z) = 0$.
 
 ::: pf-step
 Applying the triangle inequality:
-\[
+$$
 |f(z)|^2 \le |a(z)| |f(z)| + |b(z)|.
-\]
+$$
 
 ::: pf-proof
 $|-w| = |w|$ and triangle inequality.
@@ -69,9 +69,9 @@ since $|a(z)| \ge 0$ and $|b(z)| \ge 0$, we have $1 \le 1 + |a(z)| + |b(z)|$, an
 
 ::: {.pf-step #s1-4}
 If $|f(z)| > 1$, then $|b(z)| \le |b(z)| |f(z)|$, so:
-\[
+$$
 |f(z)|^2 \le (|a(z)| + |b(z)|) |f(z)| \implies |f(z)| \le |a(z)| + |b(z)|.
-\]
+$$
 
 ::: pf-proof
 divide by $|f(z)| > 0$.
@@ -81,9 +81,9 @@ divide by $|f(z)| > 0$.
 
 ::: pf-step
 Therefore, for all $z \in \CC$:
-\[
+$$
 |f(z)| \le 1 + |a(z)| + |b(z)|.
-\]
+$$
 
 ::: pf-proof
 step [](#s1-3){.pf-ref} and step [](#s1-4){.pf-ref}.
@@ -111,9 +111,9 @@ hypothesis that $a, b$ have finite order.
 
 ::: {.pf-step #s2-2}
 For any $\varepsilon > 0$, there exists $R > 0$ such that for all $|z| \ge R$:
-\[
+$$
 |a(z)| \le \exp(|z|^{\rho + \varepsilon}) \quad \text{and} \quad |b(z)| \le \exp(|z|^{\rho + \varepsilon}).
-\]
+$$
 
 ::: pf-proof
 definition of the order of an entire function.
@@ -123,9 +123,9 @@ definition of the order of an entire function.
 
 ::: pf-step
 Combining with the bound from step [](#s1){.pf-ref}:
-\[
+$$
 |f(z)| \le 1 + 2\exp(|z|^{\rho + \varepsilon}) \le 3\exp(|z|^{\rho + \varepsilon}) \quad \text{for all } |z| \ge R.
-\]
+$$
 
 ::: pf-proof
 step [](#s1){.pf-ref} and step [](#s2-2){.pf-ref}.
@@ -171,9 +171,9 @@ polynomials have finite non-negative degrees.
 
 ::: pf-step
 There exist constants $C > 0$ and $R > 0$ such that for all $|z| \ge R$:
-\[
+$$
 |a(z)| \le C |z|^d \quad \text{and} \quad |b(z)| \le C |z|^d.
-\]
+$$
 
 ::: pf-proof
 asymptotic growth of polynomials.
@@ -183,9 +183,9 @@ asymptotic growth of polynomials.
 
 ::: pf-step
 By step [](#s1){.pf-ref}, for all $|z| \ge R$:
-\[
+$$
 |f(z)| \le 1 + 2C |z|^d \le (2C + 1) |z|^d.
-\]
+$$
 
 ::: pf-proof
 $|z| \ge R \ge 1 \implies 1 \le |z|^d$.

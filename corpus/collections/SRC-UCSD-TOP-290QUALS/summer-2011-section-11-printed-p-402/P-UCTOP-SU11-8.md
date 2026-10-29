@@ -78,9 +78,9 @@ the 3-ball has dimension 3.
 
 ::: pf-step
 The cellular chain groups are:
-\[
+$$
 C_3(X) = \ZZ e^3,\quad C_2(X) = \ZZ e^2,\quad C_1(X) = \ZZ e^1,\quad C_0(X) = \ZZ e^0,\quad C_k(X) = 0 \text{ for } k \ge 4.
-\]
+$$
 
 ::: pf-proof
 one cell in each dimension $0, 1, 2, 3$.
@@ -184,7 +184,7 @@ $C_k(X) = 0$ for $k \ge 4$.
 
 ::: pf-step
 Conclusion:
-\[
+$$
 H_k(X; \ZZ) \cong \begin{cases}
 \ZZ & k = 0, \\
 \ZZ/3\ZZ & k = 1, \\
@@ -192,7 +192,7 @@ H_k(X; \ZZ) \cong \begin{cases}
 \ZZ & k = 3, \\
 0 & k \ge 4.
 \end{cases}
-\]
+$$
 
 ::: pf-proof
 step [](#s4){.pf-ref}.

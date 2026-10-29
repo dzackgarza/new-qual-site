@@ -25,21 +25,21 @@ audit:
 
 ::: {.problem}
 Let $X$ be the set of functions $f:[0,1]\to\RR$ for which
-\[
+$$
 \|f\|:=|f(0)|+\sup_{x\ne y}\frac{|f(x)-f(y)|}{|x-y|^{1/5}}<\infty.
-\]
+$$
 Prove that $(X,\|\cdot\|)$ is a Banach space.
 :::
 
 ::: {.solution}
 Write
-\[
+$$
 [f]_{1/5}:=\sup_{x\ne y}\frac{|f(x)-f(y)|}{|x-y|^{1/5}}.
-\]
+$$
 Then
-\[
+$$
 \|f\|=|f(0)|+[f]_{1/5}.
-\]
+$$
 
 ::: pf
 
@@ -50,9 +50,9 @@ $X$ is a vector space and $\|\cdot\|$ is a norm.
 ::: pf-proof
 
 If $f,g\in X$ and $a,b\in\RR$, then
-\[
+$$
 [af+bg]_{1/5}\le |a|[f]_{1/5}+|b|[g]_{1/5}<\infty,
-\]
+$$
 so $af+bg\in X$. The seminorm $[\cdot]_{1/5}$ is homogeneous and subadditive, hence so is $\|\cdot\|$.
 
 If $\|f\|=0$, then $f(0)=0$ and $[f]_{1/5}=0$, so $f(x)=f(y)$ for all $x,y$. Thus $f$ is constant, and since $f(0)=0$, one has $f\equiv0$. Therefore $\|\cdot\|$ is a norm.
@@ -68,15 +68,15 @@ The norm controls uniform convergence.
 ::: pf-proof
 
 For every $f\in X$ and $x\in[0,1]$,
-\[
+$$
 |f(x)|\le |f(0)|+|f(x)-f(0)|
 \le |f(0)|+[f]_{1/5}|x|^{1/5}
 \le \|f\|.
-\]
+$$
 Hence
-\[
+$$
 \|f\|_\infty\le\|f\|.
-\]
+$$
 
 :::
 
@@ -89,33 +89,33 @@ $X$ is complete.
 ::: pf-proof
 
 Let $(f_n)$ be Cauchy in $\|\cdot\|$. By step [](#s2){.pf-ref}, it is uniformly Cauchy, so there is a function $f:[0,1]\to\RR$ such that
-\[
+$$
 f_n\to f
-\]
+$$
 uniformly.
 
 Fix $\varepsilon>0$. Since $(f_n)$ is Cauchy in $\|\cdot\|$, there exists $N$ such that for all $m,n\ge N$,
-\[
+$$
 |f_n(0)-f_m(0)|+[f_n-f_m]_{1/5}<\varepsilon.
-\]
+$$
 Fix $n\ge N$ and let $m\to\infty$. Uniform convergence gives
-\[
+$$
 |f_n(0)-f(0)|\le\varepsilon,
-\]
+$$
 and for every $x\ne y$,
-\[
+$$
 |(f_n-f)(x)-(f_n-f)(y)|
 =\lim_{m\to\infty}|(f_n-f_m)(x)-(f_n-f_m)(y)|
 \le\varepsilon |x-y|^{1/5}.
-\]
+$$
 Therefore
-\[
+$$
 [f_n-f]_{1/5}\le\varepsilon,
-\]
+$$
 so
-\[
+$$
 \|f_n-f\|\le2\varepsilon.
-\]
+$$
 In particular $f_n\to f$ in $\|\cdot\|$. Since $f=f_n-(f_n-f)$ and both terms have finite Hölder seminorm, $f\in X$. Thus every Cauchy sequence converges in $X$, and $X$ is Banach.
 
 :::

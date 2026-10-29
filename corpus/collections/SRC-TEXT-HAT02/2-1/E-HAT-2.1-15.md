@@ -32,9 +32,9 @@ Hence for a pair of spaces $(X, A)$, the inclusion $A \hookrightarrow X$ induces
 
 ::: {.solution}
 Consider an exact sequence
-\[
+$$
 A\xrightarrow{\alpha}B\xrightarrow{\beta}C\xrightarrow{\gamma}D\xrightarrow{\delta}E.
-\]
+$$
 
 ::: pf
 
@@ -45,15 +45,15 @@ If $C=0$, then $\alpha$ is surjective and $\delta$ is injective.
 ::: pf-proof
 
 Exactness at $B$ gives
-\[
+$$
 \operatorname{im}\alpha=\ker\beta.
-\]
+$$
 Since $\beta:B\to0$ is zero, $\ker\beta=B$, so $\alpha$ is surjective.
 
 Exactness at $D$ gives
-\[
+$$
 \ker\delta=\operatorname{im}\gamma.
-\]
+$$
 Since $\gamma:0\to D$ has zero image, $\ker\delta=0$, so $\delta$ is injective.
 
 :::
@@ -67,19 +67,19 @@ Conversely, if $\alpha$ is surjective and $\delta$ is injective, then $C=0$.
 ::: pf-proof
 
 Surjectivity of $\alpha$ and exactness at $B$ imply
-\[
+$$
 \ker\beta=B,
-\]
+$$
 so $\beta=0$. Exactness at $C$ then gives
-\[
+$$
 \ker\gamma=\operatorname{im}\beta=0,
-\]
+$$
 so $\gamma$ is injective.
 
 Injectivity of $\delta$ gives $\ker\delta=0$. Exactness at $D$ gives
-\[
+$$
 \operatorname{im}\gamma=0.
-\]
+$$
 Thus $\gamma$ is both injective and zero, forcing $C=0$.
 
 :::
@@ -89,14 +89,14 @@ Thus $\gamma$ is both injective and zero, forcing $C=0$.
 ::: {.pf-step #s3}
 
 For a pair $(X,A)$, the segment
-\[
+$$
 H_n(A)\xrightarrow{i_*}H_n(X)\to H_n(X,A)
 \to H_{n-1}(A)\xrightarrow{i_*}H_{n-1}(X)
-\]
+$$
 is exact. Hence
-\[
+$$
 H_n(X,A)=0
-\]
+$$
 if and only if the first $i_*$ is surjective and the second $i_*$ is injective.
 
 ::: pf-proof
@@ -110,10 +110,10 @@ Apply steps [](#s1){.pf-ref} and [](#s2){.pf-ref} to this five-term exact segmen
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{H_n(X,A)=0\text{ for all }n
 \iff i_*:H_n(A)\to H_n(X)\text{ is an isomorphism for all }n.}
-\]
+$$
 
 ::: pf-proof
 

@@ -18,13 +18,13 @@ audit:
 
 ::: {.problem}
 Let $a_1,\dots,a_n$ be $n\ge1$ distinct points in $\CC$ and let
-\[
+$$
 \Omega=\CC\setminus\{a_1,\dots,a_n\}.
-\]
+$$
 Let $H(\Omega)$ be the vector space of real-valued harmonic functions on $\Omega$ and let $R(\Omega)\subset H(\Omega)$ be the space of real parts of analytic functions on $\Omega$. Prove that the quotient space
-\[
+$$
 H(\Omega)/R(\Omega)
-\]
+$$
 has dimension $n$, find a basis for this space, and prove it is a basis.
 :::
 

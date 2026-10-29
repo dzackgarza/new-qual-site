@@ -28,11 +28,11 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f:\RR\to\RR\) be an arbitrary function.
-Prove that there exists a countable subfield \(K\subseteq\RR\) such that
-\[
+Let $f:\RR\to\RR$ be an arbitrary function.
+Prove that there exists a countable subfield $K\subseteq\RR$ such that
+$$
 f(K)\subseteq K.
-\]
+$$
 :::
 
 ::: {.solution}

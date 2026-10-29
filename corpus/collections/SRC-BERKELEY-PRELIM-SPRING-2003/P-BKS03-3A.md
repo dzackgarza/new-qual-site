@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Let $R$ be the subring of $M_2(\QQ)$ consisting of matrices commuting with
-\[
+$$
 \begin{pmatrix}1&1\\0&1\end{pmatrix}.
-\]
+$$
 
 (a) Prove that $R$ is a subring of $M_2(\QQ)$.
 

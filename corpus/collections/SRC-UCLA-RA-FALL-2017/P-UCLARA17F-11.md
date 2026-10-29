@@ -18,18 +18,18 @@ audit:
 
 ::: {.problem}
 Problem 11. Let $f:\DD\to\CC$ be an injective holomorphic function with $f(0)=0$ and $f'(0)=1$. Show that
-\[
+$$
 \inf\{|w|:w\notin f(\DD)\}\le1,
-\]
+$$
 with equality if and only if $f(z)=z$ for all $z\in\DD$.
 :::
 
 ::: {.solution}
 
 Set
-\[
+$$
 R\coloneqq\inf\{|w|:w\notin f(\DD)\}.
-\]
+$$
 
 ::: pf
 
@@ -43,9 +43,9 @@ The omitted set $\CC\setminus f(\DD)$ is nonempty; moreover, if $R\ge1$, then $\
 If $f(\DD)=\CC$, then the inverse map $f^{-1}:\CC\to\DD$ is an entire bounded function. Liouville's theorem would make $f^{-1}$ constant, contradicting injectivity of $f$. Thus the omitted set is nonempty and $R$ is a finite real number.
 
 If some $w\in\DD$ were omitted by $f$, then $|w|<1$, so the definition of $R$ would give
-\[
+$$
 R\le |w|<1,
-\]
+$$
 contrary to $R\ge1$.
 
 :::
@@ -60,19 +60,19 @@ If $R\ge1$, then $f(z)=z$ for every $z\in\DD$.
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref}, the inverse of the injective holomorphic map $f$ is defined on $\DD$. Let
-\[
+$$
 g\coloneqq f^{-1}|_{\DD}:\DD\to\DD.
-\]
+$$
 Since an injective holomorphic function has nonvanishing derivative, its inverse is holomorphic. Moreover,
-\[
+$$
 g(0)=0,
 \qquad
 g'(0)=\frac1{f'(0)}=1.
-\]
+$$
 Schwarz's lemma, including its equality case, therefore gives $g(z)=z$ for every $z\in\DD$. Thus for every $w\in\DD$,
-\[
+$$
 f^{-1}(w)=w,
-\]
+$$
 and applying $f$ gives $f(w)=w$.
 
 :::
@@ -82,20 +82,20 @@ and applying $f$ gives $f(w)=w$.
 ::: {.pf-step #s1-3}
 
 One has
-\[
+$$
 R\le1.
-\]
+$$
 
 
 ::: pf-proof
 
 If $R>1$, then step [](#s1-2){.pf-ref} gives $f(z)=z$ on $\DD$. But then $f(\DD)=\DD$, so
-\[
+$$
 R
 =
 \inf\{|w|:w\notin\DD\}
 =1,
-\]
+$$
 a contradiction. Hence $R\le1$.
 
 :::
@@ -110,12 +110,12 @@ The equality $R=1$ holds if and only if $f(z)=z$ for every $z\in\DD$.
 ::: pf-proof
 
 If $R=1$, then $R\ge1$, so step [](#s1-2){.pf-ref} gives $f(z)=z$. Conversely, if $f(z)=z$, then $f(\DD)=\DD$, and therefore
-\[
+$$
 R
 =
 \inf\{|w|:|w|\ge1\}
 =1.
-\]
+$$
 
 :::
 

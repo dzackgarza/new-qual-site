@@ -32,9 +32,9 @@ We say $Y$ is given by the **parametric representation** $x = t,\ y = t^2,\ z = 
 
 ::: {.solution}
 **The coordinate ring, and the dimension.**
-\[
+$$
 A(Y) = k[x,y,z]/\generators{y - x^2,\ z - x^3} \cong k[t, t^2, t^3] \cong k[t] ,
-\]
+$$
 since $t^2$ and $t^3$ are already polynomials in $t$.
 This settles the third part, and with $\dim Y = \krulldim A(Y)$ and $\krulldim k[t] = 1$ it settles the first.
 

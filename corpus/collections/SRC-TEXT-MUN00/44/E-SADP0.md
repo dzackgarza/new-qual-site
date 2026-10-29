@@ -33,21 +33,21 @@ $$
 :::
 
 ::: {.solution}
-Let \(p:I\to I^2\) be a continuous surjection, such as the Peano space-filling curve.
+Let $p:I\to I^2$ be a continuous surjection, such as the Peano space-filling curve.
 
-We first obtain surjections onto powers whose dimensions are powers of \(2\). Suppose \(q_k:I\to I^{2^k}\) is continuous and surjective. Then
-\[
+We first obtain surjections onto powers whose dimensions are powers of $2$. Suppose $q_k:I\to I^{2^k}$ is continuous and surjective. Then
+$$
 q_k\times q_k:I^2\longrightarrow I^{2^{k+1}}
-\]
+$$
 is continuous and surjective, so
-\[
+$$
 q_{k+1}=(q_k\times q_k)\circ p:I\longrightarrow I^{2^{k+1}}
-\]
-is continuous and surjective. Starting with \(q_0=\operatorname{id}_I\), induction gives such a map for every \(2^k\).
+$$
+is continuous and surjective. Starting with $q_0=\operatorname{id}_I$, induction gives such a map for every $2^k$.
 
-Given arbitrary \(n\ge1\), choose \(k\) with \(n\le2^k\) and compose \(q_k\) with the projection
-\[
+Given arbitrary $n\ge1$, choose $k$ with $n\le2^k$ and compose $q_k$ with the projection
+$$
 I^{2^k}\longrightarrow I^n
-\]
-onto the first \(n\) coordinates. The resulting map \(I\to I^n\) is continuous and surjective.
+$$
+onto the first $n$ coordinates. The resulting map $I\to I^n$ is continuous and surjective.
 :::

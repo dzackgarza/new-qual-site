@@ -16,9 +16,9 @@ audit:
 
 ::: {.problem}
 Let $C$ be the positively oriented boundary of the upper semicircle of radius $3$, including the diameter from $(-3,0)$ to $(3,0)$. Compute
-\[
+$$
 \oint_C (2x+y)\,dx+y\,dy
-\]
+$$
 both directly and by Green's theorem.
 :::
 

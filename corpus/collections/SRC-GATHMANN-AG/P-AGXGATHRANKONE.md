@@ -16,18 +16,18 @@ review: draft
 
 ::: {.problem}
 Define
-\[
+$$
 X \definedas \theset{M \in \Mat(2\times 3, k) \st \rank M \leq 1} \subseteq \AA^6/k
-.\]
+.$$
 
 Show that $X$ is an irreducible variety, and find its dimension.
 :::
 
 ::: {.solution}
 Write a point of $\AA^6$ as the matrix
-\[
+$$
 M=\begin{bmatrix} x & y & z \\ a & b & c \end{bmatrix}.
-\]
+$$
 
 ::: pf
 
@@ -43,9 +43,9 @@ Hence $\rank M\le 1$ exactly when every $2\times 2$ minor of $M$ vanishes, and t
 
 ::: {.pf-step #image}
 $X$ is the image of the morphism
-\[
+$$
 \Phi:\AA^2\times\AA^3\to\AA^6,\qquad (u,v)\mapsto u\,v^{T},
-\]
+$$
 where $u\in k^2$ and $v\in k^3$ are columns.
 
 ::: pf-proof
@@ -74,9 +74,9 @@ The open subset $X_x\definedas X\cap D(x)$ of $X$ is isomorphic to the open subs
 
 ::: pf-proof
 Let $\pi:X_x\to D(x)\subseteq\AA^4$ forget $b$ and $c$, and define
-\[
+$$
 \sigma:D(x)\to\AA^6,\qquad (x,y,z,a)\mapsto \qty{x,y,z,a,\tfrac{ay}{x},\tfrac{az}{x}},
-\]
+$$
 which is a morphism because $x$ is invertible on $D(x)$.
 The point $\sigma(x,y,z,a)$ lies in $X$: its minors are $x\cdot\frac{ay}{x}-ya=0$, $y\cdot\frac{az}{x}-z\cdot\frac{ay}{x}=0$ and $x\cdot\frac{az}{x}-za=0$.
 So $\sigma$ maps into $X_x$, and $\pi\circ\sigma=\id$.

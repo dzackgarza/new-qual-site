@@ -31,36 +31,36 @@ Show that after a suitable change of basis, a skew-symmetric nonsingular bilinea
 
 ::: {.solution}
 Let $L$ be a free abelian group of finite rank with a skew-symmetric nonsingular bilinear form
-\[
+$$
 B:L\times L\to\ZZ.
-\]
+$$
 Nonsingularity over $\ZZ$ means the adjoint map $L\to L^*$ is an isomorphism.
 
 Choose a primitive element $e\in L$. Since the functional $B(e,-)$ is primitive in $L^*$, there exists $f\in L$ with
-\[
+$$
 B(e,f)=1.
-\]
+$$
 Then the restriction of $B$ to $P=\ZZ e\oplus\ZZ f$ has matrix
-\[
+$$
 \begin{pmatrix}0&1\\-1&0\end{pmatrix}.
-\]
+$$
 For any $x\in L$, set
-\[
+$$
 x'=x-B(x,f)e+B(x,e)f.
-\]
+$$
 A direct calculation gives
-\[
+$$
 B(x',e)=B(x',f)=0.
-\]
+$$
 Thus
-\[
+$$
 L=P\oplus P^\perp.
-\]
+$$
 The restriction of $B$ to $P^\perp$ is again integral, skew-symmetric, and nonsingular. Induction on the rank therefore splits $L$ as an orthogonal direct sum of such rank-two planes.
 
 Replacing $f$ by $-f$ in each plane changes the displayed block to
-\[
+$$
 \boxed{\begin{pmatrix}0&-1\\1&0\end{pmatrix}},
-\]
+$$
 so after a suitable integral change of basis the matrix is a block diagonal sum of these standard symplectic blocks.
 :::

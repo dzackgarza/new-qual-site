@@ -65,9 +65,9 @@ Therefore $[\QQ(\zeta) : \QQ] = \deg \Phi_8(x) = \varphi(8) = 8(1 - 1/2) = 4$.
 ::: {.pf-step #s2}
 
 The three quadratic subfields of $\QQ(\zeta)$ are
-\[
+$$
 \boxed{\QQ(i),\quad \QQ(\sqrt2),\quad\QQ(\sqrt{-2})}.
-\]
+$$
 
 ::: pf-proof
 
@@ -115,9 +115,9 @@ The three distinct quadratic subfields are $\QQ(i)$, $\QQ(\sqrt{2})$, and $\QQ(\
 ::: {.pf-step #s3}
 
 The extension obtained by adjoining the fourth root of two has degree
-\[
+$$
 \boxed{[\QQ(\zeta,\sqrt[4]2):\QQ]=8}.
-\]
+$$
 
 ::: pf-proof
 

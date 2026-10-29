@@ -28,23 +28,23 @@ Take $x>0$. Recall that $K_{-\nu}=K_\nu$.
 ::: pf-step
 
 For $\nu\ne0$, the indicial equation at $x=0$ is
-\[
+$$
 r^2-\nu^2=0,
-\]
+$$
 with roots $r=\pm\nu$.
 
 
 ::: pf-proof
 
 Insert a Frobenius leading term $y\sim x^r$ into
-\[
+$$
 x^2y''+xy'-(x^2+\nu^2)y=0.
-\]
+$$
 The terms of lowest order are
-\[
+$$
 \bigl(r(r-1)+r-\nu^2\bigr)x^r
 =(r^2-\nu^2)x^r.
-\]
+$$
 Thus the two local powers are $x^\nu$ and $x^{-\nu}$.
 
 :::
@@ -54,33 +54,33 @@ Thus the two local powers are $x^\nu$ and $x^{-\nu}$.
 ::: {.pf-step #s1-2}
 
 If $\nu\ne0$, the divergent branch has leading power $x^{-|\nu|}$, and the standard normalization of $K_\nu$ gives
-\[
+$$
 \boxed{K_\nu(x)\sim 2^{|\nu|-1}\Gamma(|\nu|)x^{-|\nu|}}
 \qquad(x\to0^+).
-\]
+$$
 
 
 ::: pf-proof
 
 By $K_{-\nu}=K_\nu$, it suffices to take $\nu>0$. For nonintegral $\nu$,
-\[
+$$
 K_\nu(x)=\frac{\pi}{2\sin(\pi\nu)}\bigl(I_{-\nu}(x)-I_\nu(x)\bigr).
-\]
+$$
 The modified-Bessel series give
-\[
+$$
 I_{-\nu}(x)\sim\frac{(x/2)^{-\nu}}{\Gamma(1-\nu)},
 \qquad
 I_\nu(x)\sim\frac{(x/2)^\nu}{\Gamma(1+\nu)}.
-\]
+$$
 The first term dominates. Euler's reflection identity
-\[
+$$
 \Gamma(\nu)\Gamma(1-\nu)=\frac\pi{\sin(\pi\nu)}
-\]
+$$
 therefore gives
-\[
+$$
 K_\nu(x)\sim\frac12\Gamma(\nu)(x/2)^{-\nu}
 =2^{\nu-1}\Gamma(\nu)x^{-\nu}.
-\]
+$$
 The same leading formula at positive integral $\nu$ follows by continuity in the order.
 
 :::
@@ -90,26 +90,26 @@ The same leading formula at positive integral $\nu$ follows by continuity in the
 ::: {.pf-step #s1-3}
 
 For $\nu=0$, the two indicial roots coalesce at $r=0$, and the divergent solution is logarithmic rather than a power:
-\[
+$$
 \boxed{K_0(x)\sim-\log(x/2)-\gamma}
 \qquad(x\to0^+),
-\]
+$$
 where $\gamma$ is Euler's constant.
 
 
 ::: pf-proof
 
 Use the representation from step [](#s1-2){.pf-ref} and take the limit $\nu\to0$. The expansions
-\[
+$$
 I_\nu(x)=I_0(x)+O(\nu),
 \qquad I_0(x)=1+O(x^2),
-\]
+$$
 together with
-\[
+$$
 \Gamma(1+\nu)=1-\gamma\nu+O(\nu^2),
 \qquad
 (x/2)^\nu=1+\nu\log(x/2)+O(\nu^2)
-\]
+$$
 show that the cancellation of the two coincident power branches leaves the logarithmic term $-\log(x/2)-\gamma$.
 
 :::

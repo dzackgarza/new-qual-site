@@ -23,9 +23,9 @@ audit:
 ::: {.problem}
 Let $f:\RR\to\RR$ be continuous and periodic with period $1$.
 Prove that for every $c\in\RR$ there exists $x_0\in\RR$ such that
-\[
+$$
 f(x_0+c)=f(x_0).
-\]
+$$
 :::
 
 ::: {.solution}

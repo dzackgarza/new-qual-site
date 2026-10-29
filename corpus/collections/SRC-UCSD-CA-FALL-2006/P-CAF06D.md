@@ -30,26 +30,26 @@ false.
 ::: {.solution}
 Jensen's formula for $f(0)=1$ gives, for every $R>0$ avoiding zeros on the
 circle,
-\[
+$$
 \sum_{|a_j|<R}\log\frac{R}{|a_j|}
 =\frac1{2\pi}\int_0^{2\pi}\log|f(Re^{it})|\,dt
 \le \log M(R).
-\]
+$$
 The same inequality follows for arbitrary $R$ by a limiting argument.
 
 Take $R=2|a_k|$. By the ordering,
-\[
+$$
 |a_j|\le |a_k|\qquad(1\le j\le k),
-\]
+$$
 so for each of the first $k$ zeros,
-\[
+$$
 \log\frac{2|a_k|}{|a_j|}\ge\log2.
-\]
+$$
 Therefore
-\[
+$$
 k\log2
 \le \sum_{j=1}^k\log\frac{2|a_k|}{|a_j|}
 \le \log M(2|a_k|),
-\]
+$$
 which is the required estimate.
 :::

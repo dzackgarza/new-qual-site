@@ -27,31 +27,31 @@ $0\le1$. Hence $u\ge0$.
 Let $\phi$ be any function in the Perron lower class and fix $z\in G$. For
 every $\eta>0$, the boundary condition at $0$ gives an $\epsilon_0>0$ such
 that
-\[
+$$
 \phi(\zeta)\le1+\eta
 \qquad(0<|\zeta|\le\epsilon_0).
-\]
+$$
 Choose $0<\epsilon<\min(\epsilon_0,|z|)$. On the annulus
 $A_\epsilon=\{\epsilon<|\zeta|<1\}$ consider
-\[
+$$
 h_\epsilon(\zeta)
 =(1+\eta)\frac{\log|\zeta|}{\log\epsilon}.
-\]
+$$
 This is harmonic, equals $1+\eta$ on $|\zeta|=\epsilon$, and equals $0$ on
 $|\zeta|=1$. The boundary conditions for $\phi$ and the maximum principle for
 subharmonic functions give
-\[
+$$
 \phi(\zeta)\le h_\epsilon(\zeta)
 \qquad(\zeta\in A_\epsilon).
-\]
+$$
 In particular,
-\[
+$$
 \phi(z)\le (1+\eta)\frac{\log|z|}{\log\epsilon}.
-\]
+$$
 Letting $\epsilon\downarrow0$ yields $\phi(z)\le0$. Since this holds for every
 admissible $\phi$, the Perron function satisfies $u(z)\le0$. Together with
 $u\ge0$, this proves
-\[
+$$
 \boxed{u\equiv0.}
-\]
+$$
 :::

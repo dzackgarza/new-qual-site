@@ -28,10 +28,10 @@ Here $R$ is a coefficient ring. The assertion in degrees $i>n$ is the dimension 
 ::: {.pf-step #s1-1}
 
 A smooth or topological $n$-manifold has the homotopy type of an $n$-dimensional CW complex, so
-\[
+$$
 H_i(M;R)=0
 \qquad(i>n).
-\]
+$$
 
 
 ::: pf-proof
@@ -58,9 +58,9 @@ A singular chain is a finite linear combination of singular simplices. Each simp
 ::: {.pf-step #s1-3}
 
 Since $M$ is connected and noncompact, there exists a point
-\[
+$$
 x\in M\setminus K.
-\]
+$$
 
 
 ::: pf-proof
@@ -74,9 +74,9 @@ If $K=M$, then $M$ would be compact, contrary to the hypothesis. Thus its comple
 ::: {.pf-step #s1-4}
 
 The cycle $z$ determines a class in
-\[
+$$
 H_n(M,M\setminus\{x\};R)
-\]
+$$
 which is zero.
 
 
@@ -91,18 +91,18 @@ Because the support of $z$ is contained in $K$ and $x\notin K$, the entire cycle
 ::: {.pf-step #s1-5}
 
 For a connected $n$-manifold, the natural map
-\[
+$$
 H_n(M;R)\longrightarrow H_n(M,M\setminus\{x\};R)
-\]
+$$
 is injective whenever a nonzero top-dimensional ordinary homology class exists; equivalently, a top-dimensional class is determined by its local orientation coefficient at one point.
 
 
 ::: pf-proof
 
 The local homology group at $x$ is
-\[
+$$
 H_n(M,M\setminus\{x\};R),
-\]
+$$
 and excision identifies it with the top relative homology of an $n$-ball modulo its punctured ball. On a connected manifold, the coefficients of an $n$-cycle in these local homology groups propagate uniquely along paths: in an oriented component they are constant after transport by the orientation local system, while if the coefficient ring does not support a global orientation section, the only global top class is zero. Thus a global top-dimensional homology class whose local coefficient vanishes at one point vanishes everywhere. This is the standard local-homology proof of the theorem that a connected manifold has nonzero ordinary top homology only when it is compact and orientable over the chosen coefficients.
 
 :::
@@ -112,9 +112,9 @@ and excision identifies it with the top relative homology of an $n$-ball modulo 
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 H_n(M;R)=0.
-\]
+$$
 
 
 ::: pf-proof
@@ -128,9 +128,9 @@ Let $[z]\in H_n(M;R)$. Steps [](#s1-2){.pf-ref} through [](#s1-4){.pf-ref} choos
 ::: {.pf-step #s1-7}
 
 Combining steps [](#s1-1){.pf-ref} and [](#s1-6){.pf-ref} gives
-\[
+$$
 \boxed{H_i(M;R)=0\quad\text{for every }i\geq n.}
-\]
+$$
 
 
 ::: pf-proof

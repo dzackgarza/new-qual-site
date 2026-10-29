@@ -48,9 +48,9 @@ A polynomial $f\in K[x]$ forces diagonalizability if and only if $f$ is squarefr
 ::: pf-proof
 
 Because $K$ is algebraically closed, write
-\[
+$$
 f(x)=c\prod_{i=1}^r (x-\lambda_i)^{e_i}
-\]
+$$
 with distinct $\lambda_i\in K$.
 
 Suppose first that $f$ is squarefree, so every $e_i=1$.
@@ -62,9 +62,9 @@ Thus $A$ is diagonalizable.
 Conversely, suppose $f$ is not squarefree.
 Then some root $\lambda$ occurs with multiplicity at least $2$, so $(x-\lambda)^2\mid f$.
 Let
-\[
+$$
 J=\begin{pmatrix}\lambda&1\\0&\lambda\end{pmatrix}.
-\]
+$$
 Its minimal polynomial is $(x-\lambda)^2$, so $f(J)=0$, but $J$ is not diagonalizable.
 Therefore $f$ does not force diagonalizability.
 
@@ -88,9 +88,9 @@ Hence $x^m-1$ is squarefree.
 
 If $\operatorname{char}K=p$ divides $m$, write $m=pr$.
 Then
-\[
+$$
 x^m-1=(x^r)^p-1=(x^r-1)^p
-\]
+$$
 in characteristic $p$, so the polynomial has repeated roots.
 By step [](#s1){.pf-ref} there is a non-diagonalizable matrix annihilated by $x^m-1$; explicitly, for any $m$th root $\lambda$ one may take the $2\times2$ Jordan block $J_2(\lambda)$ whenever $(x-\lambda)^2\mid x^m-1$.
 

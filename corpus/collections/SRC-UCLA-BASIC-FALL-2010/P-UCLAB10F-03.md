@@ -31,14 +31,14 @@ Suppose $f:\RR\to\RR$ and $g:\RR^2\to\RR$ have continuous derivatives through or
 ::: {.pf-step #s1-1}
 
 The one-variable Taylor theorem with third-order Lagrange remainder states that for any $a,h\in\RR$, there exists $\theta\in(0,1)$ such that
-\[
+$$
 f(a+h)
 =
 f(a)
 +f'(a)h
 +\frac12f''(a)h^2
 +\frac16f'''(a+\theta h)h^3.
-\]
+$$
 
 
 ::: pf-proof
@@ -52,15 +52,15 @@ This is the ordinary one-variable Taylor theorem through degree $2$ with Lagrang
 ::: {.pf-step #s1-2}
 
 The corresponding two-variable statement is: for
-\[
+$$
 p=(a,b)\in\RR^2
-\]
+$$
 and increment
-\[
+$$
 u=(h,k)\in\RR^2,
-\]
+$$
 there exists $\theta\in(0,1)$ such that
-\[
+$$
 \begin{aligned}
 g(a+h,b+k)
 &=
@@ -82,7 +82,7 @@ g_{xxx}(p+\theta u)h^3
 +g_{yyy}(p+\theta u)k^3
 \Bigr).
 \end{aligned}
-\]
+$$
 
 
 ::: pf-proof
@@ -96,26 +96,26 @@ This is the two-variable Taylor theorem through total degree $2$ with third-orde
 ::: {.pf-step #s1-3}
 
 Define the one-variable function
-\[
+$$
 \phi(t)=g(a+th,b+tk),
 \qquad
 0\le t\le1.
-\]
+$$
 Then
-\[
+$$
 \phi'(t)
 =
 g_x(a+th,b+tk)h
 +g_y(a+th,b+tk)k.
-\]
+$$
 
 
 ::: pf-proof
 
 Apply the chain rule to the composition of $g$ with the affine path
-\[
+$$
 t\mapsto(a+th,b+tk).
-\]
+$$
 
 :::
 
@@ -124,22 +124,22 @@ t\mapsto(a+th,b+tk).
 ::: {.pf-step #s1-4}
 
 One has
-\[
+$$
 \phi''(t)
 =
 g_{xx}h^2
 +2g_{xy}hk
 +g_{yy}k^2,
-\]
+$$
 where all derivatives of $g$ are evaluated at $(a+th,b+tk)$.
 
 
 ::: pf-proof
 
 Differentiate the formula in step [](#s1-3){.pf-ref}. Since $g$ has continuous second derivatives,
-\[
+$$
 g_{xy}=g_{yx},
-\]
+$$
 so the two mixed terms combine to give $2g_{xy}hk$.
 
 :::
@@ -149,14 +149,14 @@ so the two mixed terms combine to give $2g_{xy}hk$.
 ::: {.pf-step #s1-5}
 
 One has
-\[
+$$
 \phi'''(t)
 =
 g_{xxx}h^3
 +3g_{xxy}h^2k
 +3g_{xyy}hk^2
 +g_{yyy}k^3,
-\]
+$$
 again with all derivatives evaluated at $(a+th,b+tk)$.
 
 
@@ -171,14 +171,14 @@ Differentiate the formula in step [](#s1-4){.pf-ref}. Continuity of the third-or
 ::: {.pf-step #s1-6}
 
 Applying the one-variable theorem from step [](#s1-1){.pf-ref} to $\phi$ at $t=0$ with increment $1$ gives
-\[
+$$
 \phi(1)
 =
 \phi(0)
 +\phi'(0)
 +\frac12\phi''(0)
 +\frac16\phi'''(\theta)
-\]
+$$
 for some $\theta\in(0,1)$.
 
 
@@ -198,17 +198,17 @@ Substituting steps [](#s1-3){.pf-ref} through [](#s1-5){.pf-ref} into step [](#s
 ::: pf-proof
 
 One has
-\[
+$$
 \phi(0)=g(a,b),
 \qquad
 \phi(1)=g(a+h,b+k).
-\]
+$$
 The values of $\phi'(0)$ and $\phi''(0)$ are the linear and quadratic terms in step [](#s1-2){.pf-ref}. The value $\phi'''(\theta)$ is the cubic directional expression from step [](#s1-5){.pf-ref} evaluated at
-\[
+$$
 (a+\theta h,b+\theta k)
 =
 p+\theta u.
-\]
+$$
 Thus step [](#s1-6){.pf-ref} becomes precisely the formula stated in step [](#s1-2){.pf-ref}.
 
 :::

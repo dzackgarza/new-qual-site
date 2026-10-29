@@ -32,78 +32,78 @@ Compute the Poincaré series for $S^n$, $\RP^n$, $\RP^\infty$, $\CP^n$, $\CP^\in
 
 ::: {.solution}
 Over the fixed field $F$, the Künneth theorem has no Tor term and gives
-\[
+$$
 H^n(X\times Y;F)\cong\bigoplus_{i+j=n}H^i(X;F)\otimes_F H^j(Y;F).
-\]
+$$
 Taking dimensions therefore yields convolution of the Betti numbers, hence
-\[
+$$
 \boxed{p_{X\times Y}(t)=p_X(t)p_Y(t).}
-\]
+$$
 
 The basic examples are
-\[
+$$
 p_{S^n}(t)=1+t^n.
-\]
+$$
 For $\RP^n$ the answer depends on $\operatorname{char}F$:
-\[
+$$
 p_{\RP^n}(t)=
 \begin{cases}
 1+t+\cdots+t^n,&\operatorname{char}F=2,\\
 1,&\operatorname{char}F\ne2,\ n\text{ even},\\
 1+t^n,&\operatorname{char}F\ne2,\ n\text{ odd},
 \end{cases}
-\]
+$$
 and
-\[
+$$
 p_{\RP^\infty}(t)=
 \begin{cases}
 (1-t)^{-1},&\operatorname{char}F=2,\\
 1,&\operatorname{char}F\ne2.
 \end{cases}
-\]
+$$
 For complex projective spaces,
-\[
+$$
 p_{\CP^n}(t)=1+t^2+\cdots+t^{2n}
 =\frac{1-t^{2n+2}}{1-t^2},
 \qquad
 p_{\CP^\infty}(t)=\frac1{1-t^2}.
-\]
+$$
 
 For Exercise 12, both spaces have one copy of $F$ in degree $0$ and in every degree $\ge2$ except degree $1$, with the same ring structure; thus
-\[
+$$
 p(t)=1+\frac{t^2}{1-t}.
-\]
+$$
 For Exercise 13,
-\[
+$$
 \widetilde H^*(\CP^\infty/\CP^1;F)
-\]
+$$
 has one generator in every even degree $\ge4$, so
-\[
+$$
 p(t)=1+\frac{t^4}{1-t^2}.
-\]
+$$
 For Exercise 14, let $X$ be the pushout built from $\RP^\infty$ and $\CP^n$. If $\operatorname{char}F=2$, the ring description
-\[
+$$
 H^*(X;F)\cong F[\alpha,\beta]/(\beta^2-\alpha^{2n+1}),
 \qquad |\alpha|=2,\ |\beta|=2n+1,
-\]
+$$
 shows that it is free as an $F[\alpha]$-module on $1,\beta$. Hence
-\[
+$$
 p_X(t)=\frac{1+t^{2n+1}}{1-t^2}.
-\]
+$$
 If $\operatorname{char}F\ne2$, the $\RP^\infty$ tail contributes no positive-dimensional cohomology, so $X$ has the same $F$-cohomology as $\CP^n$ and
-\[
+$$
 p_X(t)=\frac{1-t^{2n+2}}{1-t^2}.
-\]
+$$
 
 For the analogous pushout $Y$ associated to $\CP^\infty\to\quatprojective^\infty$, the pair $(Y,\quatprojective^n)$ is the same cellular pair as $(\CP^\infty,\CP^{2n+1})$. Thus, over every field,
-\[
+$$
 H^*(Y;F)
-\]
+$$
 has one generator in degrees $0,4,8,\ldots,4n$ and one generator in every even degree $\ge4n+4$, with no other groups. Therefore
-\[
+$$
 \boxed{
 p_Y(t)=1+t^4+\cdots+t^{4n}+\frac{t^{4n+4}}{1-t^2}.
 }
-\]
+$$
 These formulas complete the Poincaré-series calculation for all spaces in Exercises 12--14.
 :::

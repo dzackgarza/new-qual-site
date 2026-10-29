@@ -41,31 +41,31 @@ Put
 $$
 \mcf=\mcl\tensor\mcm^{-1}.
 $$
-Then \(\mcf\) is invertible on \(X\), and the hypothesis says
+Then $\mcf$ is invertible on $X$, and the hypothesis says
 $$
 \mcf_y\cong\mco_{X_y}
 $$
-for every \(y\in Y\).
+for every $y\in Y$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The sheaf \(\mcf\) is flat over \(Y\), and
+The sheaf $\mcf$ is flat over $Y$, and
 $$
 h^0(X_y,\mcf_y)=1
 $$
-for every \(y\in Y\).
+for every $y\in Y$.
 
 ::: pf-proof
 
-Since \(f\) is flat, \(\mco_X\) is flat over \(Y\). Locally on \(X\), the
-invertible sheaf \(\mcf\) is isomorphic to \(\mco_X\), so \(\mcf\) is also
-flat over \(Y\).
+Since $f$ is flat, $\mco_X$ is flat over $Y$. Locally on $X$, the
+invertible sheaf $\mcf$ is isomorphic to $\mco_X$, so $\mcf$ is also
+flat over $Y$.
 
-For every closed point \(y\in Y\), the residue field is \(k\), because
-\(Y\) is of finite type over the algebraically closed field \(k\). The
-fibre \(X_y\) is integral and projective over \(k\), hence
+For every closed point $y\in Y$, the residue field is $k$, because
+$Y$ is of finite type over the algebraically closed field $k$. The
+fibre $X_y$ is integral and projective over $k$, hence
 $$
 H^0(X_y,\mco_{X_y})=k.
 $$
@@ -79,17 +79,17 @@ By [[T-COHBC|semicontinuity]], the locus where
 $$
 h^0(X_y,\mcf_y)\ge2
 $$
-is closed. If it were nonempty, then, since a finite-type \(k\)-scheme is
+is closed. If it were nonempty, then, since a finite-type $k$-scheme is
 Jacobson, it would contain a closed point, contrary to the preceding
 paragraph. On the other hand constants give
 $$
 h^0(X_y,\mco_{X_y})\ge1
 $$
-for every fibre, and \(\mcf_y\cong\mco_{X_y}\). Hence
+for every fibre, and $\mcf_y\cong\mco_{X_y}$. Hence
 $$
 h^0(X_y,\mcf_y)=1
 $$
-for all \(y\in Y\).
+for all $y\in Y$.
 
 :::
 
@@ -101,7 +101,7 @@ The sheaf
 $$
 \mcn=f_*\mcf
 $$
-is invertible on \(Y\), and formation of \(f_*\mcf\) commutes with every
+is invertible on $Y$, and formation of $f_*\mcf$ commutes with every
 residue-field base change:
 $$
 \mcn\tensor\kappa(y)
@@ -111,19 +111,19 @@ $$
 
 ::: pf-proof
 
-The base \(Y\) is integral, hence reduced. By step [](#s1){.pf-ref}, \(\mcf\) is
-coherent and flat over \(Y\), and the function
+The base $Y$ is integral, hence reduced. By step [](#s1){.pf-ref}, $\mcf$ is
+coherent and flat over $Y$, and the function
 $$
 y\longmapsto h^0(X_y,\mcf_y)
 $$
-is constantly \(1\). The Grauert/base-change statement in
+is constantly $1$. The Grauert/base-change statement in
 [[T-COHBC|cohomology and base change]] therefore gives that
 $$
 f_*\mcf
 $$
-is locally free of rank \(1\), with the displayed base-change
-isomorphism. A locally free sheaf of rank \(1\) is invertible, so
-\(\mcn=f_*\mcf\) is the required line bundle candidate on \(Y\).
+is locally free of rank $1$, with the displayed base-change
+isomorphism. A locally free sheaf of rank $1$ is invertible, so
+$\mcn=f_*\mcf$ is the required line bundle candidate on $Y$.
 
 :::
 
@@ -135,12 +135,12 @@ The canonical evaluation morphism
 $$
 \epsilon:f^*\mcn=f^*f_*\mcf\longrightarrow\mcf
 $$
-restricts to an isomorphism on every fibre \(X_y\).
+restricts to an isomorphism on every fibre $X_y$.
 
 ::: pf-proof
 
 By the base-change isomorphism of step [](#s2){.pf-ref}, the restriction of
-\(\epsilon\) to \(X_y\) is the ordinary evaluation map
+$\epsilon$ to $X_y$ is the ordinary evaluation map
 $$
 H^0(X_y,\mcf_y)\tensor_{\kappa(y)}\mco_{X_y}
 \longrightarrow
@@ -174,7 +174,7 @@ The evaluation morphism
 $$
 \epsilon:f^*\mcn\longrightarrow\mcf
 $$
-is an isomorphism on \(X\).
+is an isomorphism on $X$.
 
 ::: pf-proof
 
@@ -182,24 +182,24 @@ Let
 $$
 \mcc=\operatorname{coker}(\epsilon).
 $$
-This is coherent. Fix \(x\in X\), put \(y=f(x)\), and take the stalk at
-\(x\). By step [](#s3){.pf-ref}, tensoring the stalk sequence with \(\kappa(y)\)
+This is coherent. Fix $x\in X$, put $y=f(x)$, and take the stalk at
+$x$. By step [](#s3){.pf-ref}, tensoring the stalk sequence with $\kappa(y)$
 kills the cokernel:
 $$
 \mcc_x/\mfm_y\mcc_x=0,
 $$
-where \(\mfm_y\mco_{X,x}\subseteq\mfm_x\). Nakayama's lemma therefore
+where $\mfm_y\mco_{X,x}\subseteq\mfm_x$. Nakayama's lemma therefore
 gives
 $$
 \mcc_x=0.
 $$
-Since this holds for every \(x\), the map \(\epsilon\) is surjective.
+Since this holds for every $x$, the map $\epsilon$ is surjective.
 
-Both its source and target are invertible sheaves. Locally at \(x\),
-\(\epsilon_x\) is therefore a surjective endomorphism between free
-rank-one \(\mco_{X,x}\)-modules. It is multiplication by a generator of
-the unit ideal, hence by a unit. Thus \(\epsilon_x\) is an isomorphism
-for every \(x\), so \(\epsilon\) is an isomorphism globally.
+Both its source and target are invertible sheaves. Locally at $x$,
+$\epsilon_x$ is therefore a surjective endomorphism between free
+rank-one $\mco_{X,x}$-modules. It is multiplication by a generator of
+the unit ideal, hence by a unit. Thus $\epsilon_x$ is an isomorphism
+for every $x$, so $\epsilon$ is an isomorphism globally.
 
 :::
 
@@ -207,7 +207,7 @@ for every \(x\), so \(\epsilon\) is an isomorphism globally.
 
 ::: {.pf-step #s5}
 
-There is an invertible sheaf \(\mcn\) on \(Y\) such that
+There is an invertible sheaf $\mcn$ on $Y$ such that
 $$
 \mcl\cong\mcm\tensor f^*\mcn.
 $$
@@ -221,7 +221,7 @@ $$
 \cong
 f^*\mcn.
 $$
-Tensoring by \(\mcm\) gives
+Tensoring by $\mcm$ gives
 $$
 \boxed{\mcl\cong\mcm\tensor f^*\mcn}.
 $$

@@ -36,98 +36,98 @@ This question concerns the polynomial ring $R=\ZZ[x,y]$ and the ideal $I=(5,x^2+
 
 ::: pf-step
 There is an isomorphism
-\[
+$$
 R/I\cong \FF_5[x,y]/(x^2+2).
-\]
+$$
 
 :::
 
 ::: {.pf-step #s2}
-The polynomial \(x^2+2\in\FF_5[x]\) is irreducible.
+The polynomial $x^2+2\in\FF_5[x]$ is irreducible.
 
 ::: pf-proof
-The squares in \(\FF_5\) are
-\[
+The squares in $\FF_5$ are
+$$
 0,1,4.
-\]
-Thus \(-2\equiv3\pmod5\) is not a square, so \(x^2+2\) has no root in \(\FF_5\). Since it has degree \(2\), it is irreducible.
+$$
+Thus $-2\equiv3\pmod5$ is not a square, so $x^2+2$ has no root in $\FF_5$. Since it has degree $2$, it is irreducible.
 :::
 
 :::
 
 ::: pf-step
 Hence
-\[
+$$
 R/I\cong \FF_{25}[y].
-\]
-In particular, \(I\) is prime and \(R/I\) is a PID.
+$$
+In particular, $I$ is prime and $R/I$ is a PID.
 
 ::: pf-proof
 By step [](#s2){.pf-ref},
-\[
+$$
 \FF_5[x]/(x^2+2)
-\]
-is a field with \(5^2=25\) elements. Therefore
-\[
+$$
+is a field with $5^2=25$ elements. Therefore
+$$
 \FF_5[x,y]/(x^2+2)
 \cong
 \bigl(\FF_5[x]/(x^2+2)\bigr)[y]
 \cong \FF_{25}[y].
-\]
-A polynomial ring in one variable over a field is a PID and an integral domain. Therefore \(R/I\) is a domain, so \(I\) is prime.
+$$
+A polynomial ring in one variable over a field is a PID and an integral domain. Therefore $R/I$ is a domain, so $I$ is prime.
 :::
 
 :::
 
 ::: pf-step
 The ideal
-\[
+$$
 \mathfrak m=(5,x^2+2,y)
-\]
-is a maximal ideal of \(R\) containing \(I\).
+$$
+is a maximal ideal of $R$ containing $I$.
 
 ::: pf-proof
 We have
-\[
+$$
 R/\mathfrak m
 \cong \FF_5[x]/(x^2+2)
 \cong \FF_{25},
-\]
-which is a field. Hence \(\mathfrak m\) is maximal.
+$$
+which is a field. Hence $\mathfrak m$ is maximal.
 :::
 
 :::
 
 ::: {.pf-step #s5}
-The ring \(\FF_{25}[y]\) has infinitely many monic irreducible polynomials.
+The ring $\FF_{25}[y]$ has infinitely many monic irreducible polynomials.
 
 ::: pf-proof
 Suppose instead that the monic irreducible polynomials were exactly
-\[
+$$
 q_1(y),\dots,q_r(y).
-\]
+$$
 Consider
-\[
+$$
 Q(y)=q_1(y)\cdots q_r(y)+1.
-\]
-This is a nonconstant polynomial, so it has an irreducible factor \(q(y)\). But no \(q_i\) divides \(Q\), because
-\[
+$$
+This is a nonconstant polynomial, so it has an irreducible factor $q(y)$. But no $q_i$ divides $Q$, because
+$$
 Q\equiv1\pmod{q_i}.
-\]
-Thus \(q\) is a monic irreducible not on the list, a contradiction.
+$$
+Thus $q$ is a monic irreducible not on the list, a contradiction.
 :::
 
 :::
 
 ::: pf-step
-There are infinitely many distinct maximal ideals of \(R\) containing \(I\).
+There are infinitely many distinct maximal ideals of $R$ containing $I$.
 
 ::: pf-proof
-By the correspondence theorem, maximal ideals of \(R\) containing \(I\) are in bijection with maximal ideals of
-\[
+By the correspondence theorem, maximal ideals of $R$ containing $I$ are in bijection with maximal ideals of
+$$
 R/I\cong\FF_{25}[y].
-\]
-Since this is a PID, each monic irreducible \(q(y)\in\FF_{25}[y]\) generates a maximal ideal \((q)\), and distinct monic irreducibles give distinct maximal ideals. By step [](#s5){.pf-ref} there are infinitely many of them. Their inverse images under the quotient map \(R\to R/I\) are therefore infinitely many distinct maximal ideals of \(R\) containing \(I\).
+$$
+Since this is a PID, each monic irreducible $q(y)\in\FF_{25}[y]$ generates a maximal ideal $(q)$, and distinct monic irreducibles give distinct maximal ideals. By step [](#s5){.pf-ref} there are infinitely many of them. Their inverse images under the quotient map $R\to R/I$ are therefore infinitely many distinct maximal ideals of $R$ containing $I$.
 :::
 
 :::

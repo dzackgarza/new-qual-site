@@ -30,9 +30,9 @@ Hint: One approach is to first show that it holds when $B$ is invertible.
 ::: pf-step
 
 If $B$ is invertible, then $AB$ and $BA$ are similar:
-\[
+$$
 BA=B(AB)B^{-1}.
-\]
+$$
 
 
 ::: pf-proof
@@ -46,17 +46,17 @@ Associativity gives $B(AB)B^{-1}=(BA)(BB^{-1})=BA$.
 ::: {.pf-step #s1-2}
 
 Hence, for invertible $B$,
-\[
+$$
 \det(tI-AB)=\det(tI-BA).
-\]
+$$
 
 
 ::: pf-proof
 
 Indeed,
-\[
+$$
 tI-BA=B(tI-AB)B^{-1},
-\]
+$$
 and determinants are invariant under similarity.
 
 :::
@@ -66,11 +66,11 @@ and determinants are invariant under similarity.
 ::: {.pf-step #s1-3}
 
 For fixed $A$ and $t$, the functions
-\[
+$$
 F_t(B)=\det(tI-AB),
 \qquad
 G_t(B)=\det(tI-BA)
-\]
+$$
 are polynomial, hence continuous, functions of the entries of $B$.
 
 
@@ -98,18 +98,18 @@ For arbitrary $B$, the matrix $B+sI$ is singular only when $-s$ is an eigenvalue
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 F_t(B)=G_t(B)
-\]
+$$
 for every $B$ and every $t$.
 
 
 ::: pf-proof
 
 Choose invertible $B_j\to B$ using step [](#s1-4){.pf-ref}. Step [](#s1-2){.pf-ref} gives $F_t(B_j)=G_t(B_j)$, and continuity from step [](#s1-3){.pf-ref} gives
-\[
+$$
 F_t(B)=\lim_jF_t(B_j)=\lim_jG_t(B_j)=G_t(B).
-\]
+$$
 
 :::
 
@@ -118,9 +118,9 @@ F_t(B)=\lim_jF_t(B_j)=\lim_jG_t(B_j)=G_t(B).
 ::: {.pf-step #s1-6}
 
 Consequently
-\[
+$$
 \boxed{\chi_{AB}(t)=\chi_{BA}(t).}
-\]
+$$
 
 
 ::: pf-proof

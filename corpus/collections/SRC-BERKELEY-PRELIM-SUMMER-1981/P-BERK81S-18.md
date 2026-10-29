@@ -31,9 +31,9 @@ audit:
 ::: {.problem}
 Let $A$ and $B$ be square matrices with rational entries.
 Suppose
-\[
+$$
 CAC^{-1}=B
-\]
+$$
 for some invertible real matrix $C$.
 Prove that one can choose such a conjugating matrix $C$ with rational entries.
 :::

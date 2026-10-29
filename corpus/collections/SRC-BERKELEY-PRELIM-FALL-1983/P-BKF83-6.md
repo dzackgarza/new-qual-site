@@ -21,13 +21,13 @@ audit:
 
 ::: {.problem}
 How many zeros, counted with multiplicity, does
-\[
+$$
 p(z)=z^5+z^3+5z^2+2
-\]
+$$
 have in the annulus
-\[
+$$
 1<|z|<2?
-\]
+$$
 :::
 
 ::: {.solution}

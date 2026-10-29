@@ -37,24 +37,24 @@ Thus $f'=f$, so $(e^{-z}f(z))'=0$ and $f(z)=Ce^z$. From $f(0)=1$,
 $C=1$.
 
 2. **False.** Let
-\[
+$$
 f(z)=e^z+\sin(\pi z).
-\]
+$$
 Then $f(0)=1$, and for every positive integer $n$,
-\[
+$$
 f'(n)-f(n)=\pi(-1)^n\ne0,
-\]
+$$
 so this particular perturbation does not work. Instead choose an entire
 function $q$ satisfying $q'(n)-q(n)=0$ for all $n$ and $q(0)=0$, for example
-\[
+$$
 q(z)=e^z\sin(2\pi z).
-\]
+$$
 Indeed $q'(n)=2\pi e^n$ while $q(n)=0$, so again not. A correct choice is
 obtained by setting $q=e^z h$; then $q'-q=e^zh'$. Taking
 $h(z)=1-\cos(2\pi z)$ gives $h(0)=0$ and $h'(n)=0$. Hence
-\[
+$$
 f(z)=e^z\bigl(2-\cos(2\pi z)\bigr)
-\]
+$$
 has $f(0)=1$ and $f'(n)=f(n)$ for every $n$, but $f\ne e^z$.
 
 3. **True.** Since $g$ has no zeros on the closed disk, $f/g$ is analytic on
@@ -74,9 +74,9 @@ $f(\overline{\DD})$ is compactly contained in $\DD$, impossible
 for an automorphism. Hence the fixed point is unique.
 
 6. **False.** Give $\RR^2$ the complex structure
-\[
+$$
 J(x,y)=(y,-x),
-\]
+$$
 the negative of the standard one. Then $f(x,y)=x-iy$ is complex-linear from
 $(\RR^2,J)$ to the standard complex plane, hence holomorphic.
 :::

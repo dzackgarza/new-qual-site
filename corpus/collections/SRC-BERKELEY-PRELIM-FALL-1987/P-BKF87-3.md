@@ -14,11 +14,11 @@ audit:
 
 ::: {.problem}
 Show that the limit
-\[
+$$
 \lim_{t\to0^+}\left(
 \int_0^1\frac{dx}{(x^4+t^4)^{1/4}}+\log t
 \right)
-\]
+$$
 exists and is finite.
 :::
 

@@ -48,11 +48,11 @@ Prove the $L^1$ contraction estimate.
 ::: pf-proof
 
 On each dyadic interval $\Delta_k(j)$, the function $A_kf$ is constant with value
-\[
+$$
 a_k(j)=2^k\int_{\Delta_k(j)}f(y)\,dy.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 \|A_kf\|_1
 &=\sum_j |a_k(j)|\,|\Delta_k(j)|\\
@@ -60,11 +60,11 @@ Therefore
 &\le\sum_j\int_{\Delta_k(j)}|f(y)|\,dy\\
 &=\|f\|_1.
 \end{aligned}
-\]
+$$
 Hence
-\[
+$$
 \boxed{\|A_kf\|_1\le\|f\|_1.}
-\]
+$$
 
 :::
 
@@ -77,25 +77,25 @@ Prove convergence for continuous compactly supported functions.
 ::: pf-proof
 
 Let $g\in C_c(\RR)$. Since $g$ is uniformly continuous, let
-\[
+$$
 \omega_g(\delta)
 :=\sup\{|g(x)-g(y)|:|x-y|\le\delta\}.
-\]
+$$
 Then $\omega_g(\delta)\to0$ as $\delta\downarrow0$.
 
 If $x\in\Delta_k(j)$, then every $y\in\Delta_k(j)$ satisfies $|x-y|\le2^{-k}$, so
-\[
+$$
 \begin{aligned}
 |A_kg(x)-g(x)|
 &=\left|2^k\int_{\Delta_k(j)}(g(y)-g(x))\,dy\right|\\
 &\le \omega_g(2^{-k}).
 \end{aligned}
-\]
+$$
 Moreover, if $\operatorname{supp}g\subset[-R,R]$, then both $g$ and $A_kg$ vanish outside a fixed bounded interval such as $[-R-1,R+1]$ for all $k\ge1$. Thus
-\[
+$$
 \|A_kg-g\|_1
 \le (2R+2)\,\omega_g(2^{-k})\longrightarrow0.
-\]
+$$
 
 :::
 
@@ -108,29 +108,29 @@ Pass to arbitrary $L^1$ functions by density.
 ::: pf-proof
 
 Fix $f\in L^1(\RR)$ and $\varepsilon>0$. Since $C_c(\RR)$ is dense in $L^1(\RR)$, choose $g\in C_c(\RR)$ such that
-\[
+$$
 \|f-g\|_1<\varepsilon.
-\]
+$$
 By Step 1,
-\[
+$$
 \|A_k(f-g)\|_1\le\|f-g\|_1<\varepsilon.
-\]
+$$
 Hence
-\[
+$$
 \begin{aligned}
 \|A_kf-f\|_1
 &\le \|A_k(f-g)\|_1+\|A_kg-g\|_1+\|g-f\|_1\\
 &<2\varepsilon+\|A_kg-g\|_1.
 \end{aligned}
-\]
+$$
 Letting $k\to\infty$ and using Step 2 gives
-\[
+$$
 \limsup_{k\to\infty}\|A_kf-f\|_1\le2\varepsilon.
-\]
+$$
 Since $\varepsilon$ is arbitrary,
-\[
+$$
 \boxed{A_kf\to f\text{ in }L^1(\RR).}
-\]
+$$
 
 :::
 

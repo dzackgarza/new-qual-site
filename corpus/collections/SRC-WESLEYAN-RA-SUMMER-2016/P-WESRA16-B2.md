@@ -19,13 +19,13 @@ audit:
 Let $X\subset\RR^d$ be measurable with $\lambda(X)<\infty$.
 Let $g,f_n$ be measurable with supports contained in $X$.
 Prove that if
-\[
+$$
 f_n\to g\quad\text{in }L^\infty,
-\]
+$$
 then
-\[
+$$
 \int_{\RR^d}f_n\to\int_{\RR^d}g.
-\]
+$$
 :::
 
 ::: {.solution}

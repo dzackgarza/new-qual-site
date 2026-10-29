@@ -28,15 +28,15 @@ audit:
 
 ::: {.problem}
 Let $s,t:\RR\to\RR$ be differentiable and suppose
-\[
+$$
 f(x+iy)=e^x\bigl(s(y)+it(y)\bigr)
-\]
+$$
 is holomorphic on $\CC$, with
-\[
+$$
 s(0)=1,
 \qquad
 t(0)=0.
-\]
+$$
 Determine $s(y)$ and $t(y)$.
 :::
 

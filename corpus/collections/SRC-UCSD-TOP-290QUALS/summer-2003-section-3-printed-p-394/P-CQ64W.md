@@ -32,26 +32,26 @@ Describe the universal cover of $X = (S^1 \cross S^1) \vee S^2$ and compute $\pi
 :::
 
 The universal cover can be identified as
-\[
+$$
 \univcover{X} = \RR^2 \wedgeprod_{i, j \in \ZZ^2} S^2
-,\]
+,$$
 i.e. the plane with a sphere wedged onto every integer lattice point.
 We can then check
-\[
+$$
 \pi_1(X) 
 &\cong \pi_1(\univcover{X} ) \\
 &= \pi_1( \RR^2 \wedgeprod_{i, j \in \ZZ^2} S^2 ) \\
 &= \pi_1( \RR^2 \wedgeprod_{i, j \in \ZZ^2} S^2 ) \\
 &= \prod_{i,j \in \ZZ^2} \pi_1(\RR^2) \cross \pi_1(S^2) \\
 &= 0
-,\]
+,$$
 using that $\pi_1(S^2) = 0$.
 Then by Hurewicz, $\pi_2(X) \cong H_2(X)$, so we can compute
-\[
+$$
 H_2(X) 
 &= H_2( \RR^2 \wedgeprod_{i, j \in \ZZ^2} S^2 ) \\
 &= \bigoplus_{i,j \in \ZZ^2} H_2(\RR^2) \oplus H_2(S^2) \\
 &= \bigoplus_{i,j \in \ZZ^2} \ZZ
-.\]
+.$$
 
 :::

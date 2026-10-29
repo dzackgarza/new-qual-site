@@ -24,13 +24,13 @@ audit:
 
 ::: {.problem}
 Let $A$ be the $n\times n$ matrix whose $i$-th row is
-\[
+$$
 (1,x_i,x_i^2,\ldots,x_i^{n-1}).
-\]
+$$
 Show that
-\[
+$$
 \det A=\prod_{i>j}(x_i-x_j).
-\]
+$$
 :::
 
 ::: {.solution}

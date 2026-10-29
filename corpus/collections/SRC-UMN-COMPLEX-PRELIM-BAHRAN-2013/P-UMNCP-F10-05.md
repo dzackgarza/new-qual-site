@@ -17,12 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be holomorphic on the unit disk and suppose \(|f(z)|\le M\) there.
+Let $f$ be holomorphic on the unit disk and suppose $|f(z)|\le M$ there.
 Prove that
-\[
+$$
 |f'(z)|\le \frac{M}{1-|z|}
-\]
-for every \(z\) in the unit disk.
+$$
+for every $z$ in the unit disk.
 :::
 
 ::: {.solution}

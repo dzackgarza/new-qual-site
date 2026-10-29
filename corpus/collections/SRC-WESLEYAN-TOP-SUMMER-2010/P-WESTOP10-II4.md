@@ -17,16 +17,16 @@ audit:
 Consider three hexagonal disks with boundary edges identified according to the arrows in the source diagram.
 
 For the first diagram, the three edges labeled $a$ are all identified respecting their arrows, and likewise the three edges labeled $b$; its clockwise boundary word is
-\[
+$$
 w_1=ababb^{-1}a^{-1}.
-\]
+$$
 
 For the second and third diagrams the paired-edge words, read clockwise from the top edge, are
-\[
+$$
 w_2=abca^{-1}cb,
 \qquad
 w_3=abcab^{-1}c^{-1}.
-\]
+$$
 
 For each source space:
 

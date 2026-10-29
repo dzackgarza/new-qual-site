@@ -18,29 +18,29 @@ What is the tangent line to the graph of $y = x + e ^ { x }$ at $x = 0 ?$
 ::: {.solution}
 
 Let
-\[
+$$
 f(x)=x+e^x.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 The point on the graph at
-\[
+$$
 x=0
-\]
+$$
 is
-\[
+$$
 \boxed{(0,1)}.
-\]
+$$
 
 
 ::: pf-proof
 
-\[
+$$
 f(0)=0+e^0=1.
-\]
+$$
 
 :::
 
@@ -49,20 +49,20 @@ f(0)=0+e^0=1.
 ::: {.pf-step #s1-2}
 
 The derivative is
-\[
+$$
 \boxed{
 f'(x)=1+e^x}.
-\]
+$$
 
 
 ::: pf-proof
 
 Differentiate term by term:
-\[
+$$
 \frac{d}{dx}x=1,
 \qquad
 \frac{d}{dx}e^x=e^x.
-\]
+$$
 
 :::
 
@@ -70,18 +70,18 @@ Differentiate term by term:
 
 ::: {.pf-step #s1-3}
 
-The slope of the tangent line at \(x=0\) is
-\[
+The slope of the tangent line at $x=0$ is
+$$
 \boxed{f'(0)=2}.
-\]
+$$
 
 
 ::: pf-proof
 
-Substitute \(x=0\) into step [](#s1-2){.pf-ref}:
-\[
+Substitute $x=0$ into step [](#s1-2){.pf-ref}:
+$$
 f'(0)=1+e^0=2.
-\]
+$$
 
 :::
 
@@ -90,14 +90,14 @@ f'(0)=1+e^0=2.
 ::: {.pf-step #s1-4}
 
 Using point-slope form,
-\[
+$$
 y-1=2(x-0).
-\]
+$$
 
 
 ::: pf-proof
 
-The tangent line passes through \((0,1)\) by step [](#s1-1){.pf-ref} and has slope \(2\)
+The tangent line passes through $(0,1)$ by step [](#s1-1){.pf-ref} and has slope $2$
 by step [](#s1-3){.pf-ref}.
 
 :::
@@ -107,9 +107,9 @@ by step [](#s1-3){.pf-ref}.
 ::: {.pf-step #s1-5}
 
 Therefore the tangent line is
-\[
+$$
 \boxed{y=2x+1}.
-\]
+$$
 
 
 ::: pf-proof

@@ -29,17 +29,17 @@ Moreover, when the characteristic of $k$ is 2, find a counterexample to this sta
 ::: {.pf-step #s1-1}
 
 In characteristic zero, $AB-BA=A$ forces
-\[
+$$
 \boxed{\det A=0}.
-\]
+$$
 
 
 ::: pf-proof
 
 Suppose $A$ were invertible. Right multiplication of $AB-BA=A$ by $A^{-1}$ gives $ABA^{-1}-B=I_n$. Taking traces yields
-\[
+$$
 0=\operatorname{tr}(ABA^{-1})-\operatorname{tr}(B)=\operatorname{tr}(I_n)=n,
-\]
+$$
 where the first equality uses invariance of trace under conjugation. Because $n>0$ and $\operatorname{char}k=0$, this is impossible. Hence $A$ is singular.
 
 :::
@@ -49,19 +49,19 @@ where the first equality uses invariance of trace under conjugation. Because $n>
 ::: {.pf-step #s1-2}
 
 In characteristic two, there are invertible matrices satisfying $AB-BA=A$; one example is
-\[
+$$
 \boxed{A=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
 B=\begin{pmatrix}0&0\\0&1\end{pmatrix}}.
-\]
+$$
 
 
 ::: pf-proof
 
 Here $A^2=I_2$, so $A$ is invertible. Direct multiplication gives
-\[
+$$
 AB=\begin{pmatrix}0&1\\0&0\end{pmatrix},
 \qquad BA=\begin{pmatrix}0&0\\1&0\end{pmatrix}.
-\]
+$$
 In characteristic two, subtraction equals addition, so $AB-BA=A$. Nevertheless $\det A=-1=1\neq0$.
 
 :::

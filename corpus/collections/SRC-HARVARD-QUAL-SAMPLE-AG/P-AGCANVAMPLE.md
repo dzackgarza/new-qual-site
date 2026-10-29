@@ -33,9 +33,9 @@ Let $C$ be a smooth projective curve of genus $g$ over an algebraically closed f
 
 ::: {.pf-step #very-ample-criterion}
 A divisor $L$ on $C$ is very ample if and only if
-\[
+$$
 \ell(L-p-q)=\ell(L)-2
-\]
+$$
 for every pair of points $p,q\in C$, allowing $p=q$.
 
 ::: pf-proof
@@ -46,21 +46,21 @@ For $p\ne q$, this condition says that the complete linear system $|L|$ separate
 
 ::: {.pf-step #length-formula}
 Assume $g\ge2$.  For every effective divisor
-\[
+$$
 D=p+q
-\]
+$$
 of degree $2$,
-\[
+$$
 \boxed{\ell(K_C-D)=g-3+\ell(D).}
-\]
+$$
 
 ::: pf-proof
 Riemann--Roch for $D$ gives
-\[
+$$
 \ell(D)-\ell(K_C-D)
 =\deg D+1-g
 =3-g.
-\]
+$$
 Rearranging yields the displayed formula.
 :::
 
@@ -68,24 +68,24 @@ Rearranging yields the displayed formula.
 
 ::: {.pf-step #canonical-very-ample-condition}
 Since
-\[
+$$
 \ell(K_C)=g,
-\]
+$$
 the canonical divisor is very ample exactly when
-\[
+$$
 \ell(D)=1
-\]
+$$
 for every effective divisor $D$ of degree $2$.
 
 ::: pf-proof
 By step [](#very-ample-criterion){.pf-ref}, $K_C$ is very ample exactly when
-\[
+$$
 \ell(K_C-D)=\ell(K_C)-2=g-2
-\]
+$$
 for every degree-two effective $D$.  By step [](#length-formula){.pf-ref}, this becomes
-\[
+$$
 g-3+\ell(D)=g-2,
-\]
+$$
 which is equivalent to $\ell(D)=1$.
 :::
 
@@ -93,22 +93,22 @@ which is equivalent to $\ell(D)=1$.
 
 ::: {.pf-step #hyperelliptic-criterion}
 For a curve of genus at least $2$, there exists an effective degree-two divisor $D$ with
-\[
+$$
 \ell(D)\ge2
-\]
+$$
 if and only if $C$ is hyperelliptic.
 
 ::: pf-proof
 Such a divisor carries a pencil of meromorphic functions with poles bounded by $D$.  The associated nonconstant map
-\[
+$$
 C\longrightarrow\PP^1
-\]
+$$
 has degree at most $2$: after removing the base divisor of the pencil, its degree is the degree of the moving part of $D$.  It cannot have degree $1$, since a degree-one map of smooth projective curves would make $C\cong\PP^1$, contradicting $g\ge2$.  Hence the moving part has degree $2$, so there is no base divisor and the map has degree $2$.  This is the definition of a hyperelliptic curve.
 
 Conversely, a degree-two morphism
-\[
+$$
 C\longrightarrow\PP^1
-\]
+$$
 pulls a point of $\PP^1$ back to a degree-two divisor whose complete linear system contains the pulled-back pencil, so $\ell(D)\ge2$.
 :::
 
@@ -116,11 +116,11 @@ pulls a point of $\PP^1$ back to a degree-two divisor whose complete linear syst
 
 ::: {.pf-step #genus-geq-2-equivalence}
 Therefore, for $g\ge2$,
-\[
+$$
 K_C\text{ is very ample}
 \quad\Longleftrightarrow\quad
 C\text{ is nonhyperelliptic}.
-\]
+$$
 
 ::: pf-proof
 Combine steps [](#canonical-very-ample-condition){.pf-ref} and [](#hyperelliptic-criterion){.pf-ref}.
@@ -130,41 +130,41 @@ Combine steps [](#canonical-very-ample-condition){.pf-ref} and [](#hyperelliptic
 
 ::: {.pf-step #final-criterion}
 The low-genus cases give the final criterion
-\[
+$$
 \boxed{
 K_C\text{ is very ample}
 \quad\Longleftrightarrow\quad
 g\ge3\text{ and }C\text{ is nonhyperelliptic}.
 }
-\]
+$$
 
 ::: pf-proof
 If $g=0$, then
-\[
+$$
 \deg K_C=-2,
-\]
+$$
 so $K_C$ is not even effective and cannot be very ample.
 
 If $g=1$, then
-\[
+$$
 K_C\sim0,
-\]
+$$
 so the canonical system is constant and is not very ample.
 
 If $g=2$, then
-\[
+$$
 \deg K_C=2,
 \qquad
 \ell(K_C)=2.
-\]
+$$
 The canonical system has no base point: if $p$ were a base point, then
-\[
+$$
 \ell(K_C-p)=\ell(K_C)=2,
-\]
+$$
 so the degree-one divisor $K_C-p$ would have two independent sections and would define a nonconstant map of degree at most $1$ to $\PP^1$, forcing $C\cong\PP^1$.  Thus the canonical system itself is a base-point-free degree-two pencil, so every genus-two curve is hyperelliptic and the canonical map is the double cover
-\[
+$$
 C\longrightarrow\PP^1,
-\]
+$$
 not an embedding.
 
 For $g\ge3$, step [](#genus-geq-2-equivalence){.pf-ref} gives the asserted equivalence.
@@ -177,36 +177,36 @@ In the hyperelliptic case, the canonical map is explicitly two-to-one onto a rat
 
 ::: pf-proof
 Let
-\[
+$$
 \pi:C\longrightarrow\PP^1
-\]
+$$
 be the hyperelliptic double cover.  The canonical bundle satisfies
-\[
+$$
 K_C\cong\pi^*\mathcal O_{\PP^1}(g-1).
-\]
+$$
 Indeed, put
-\[
+$$
 L=\pi^*\mathcal O_{\PP^1}(g-1).
-\]
+$$
 Then
-\[
+$$
 \deg L=2g-2=\deg K_C,
-\]
+$$
 and pullback gives at least
-\[
+$$
 h^0(\PP^1,\mathcal O(g-1))=g
-\]
+$$
 independent sections of $L$.  Riemann--Roch gives
-\[
+$$
 h^0(L)-h^0(K_C\otimes L^{-1})=g-1.
-\]
+$$
 Thus $h^0(K_C\otimes L^{-1})\ge1$.  The line bundle $K_C\otimes L^{-1}$ has degree $0$, so a nonzero section has no zeros and trivializes it.  Hence $L\cong K_C$.
 
 Therefore the canonical map factors as
-\[
+$$
 C\xrightarrow{\pi}\PP^1
 \xrightarrow{|\mathcal O(g-1)|}\PP^{g-1},
-\]
+$$
 where the second map is the rational normal curve embedding.  The first map has degree $2$, so the composition cannot be an embedding.
 :::
 

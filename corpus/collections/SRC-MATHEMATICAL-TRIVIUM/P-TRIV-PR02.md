@@ -28,9 +28,9 @@ Assume 365 equally likely birthdays and ignore leap day.
 ::: {.pf-step #s1-1}
 
 For $n\leq365$, the probability that all $n$ birthdays are distinct is
-\[
+$$
 q_n=\prod_{k=0}^{n-1}\frac{365-k}{365}.
-\]
+$$
 
 
 ::: pf-proof
@@ -44,9 +44,9 @@ The first student may have any birthday. Conditional on the first $k$ birthdays 
 ::: {.pf-step #s1-2}
 
 Hence the probability of at least one shared birthday is
-\[
+$$
 p_n=1-q_n.
-\]
+$$
 
 
 ::: pf-proof
@@ -60,11 +60,11 @@ The event that at least two students share a birthday is the complement of the e
 ::: {.pf-step #s1-3}
 
 For $n=22$,
-\[
+$$
 q_{22}\approx0.524305,
 \qquad
 p_{22}\approx0.475695<\frac12.
-\]
+$$
 
 
 ::: pf-proof
@@ -78,19 +78,19 @@ Evaluate the finite product in step [](#s1-1){.pf-ref} through $k=21$ and use st
 ::: {.pf-step #s1-4}
 
 For $n=23$,
-\[
+$$
 q_{23}\approx0.492703,
 \qquad
 p_{23}\approx0.507297>\frac12.
-\]
+$$
 
 
 ::: pf-proof
 
 From step [](#s1-3){.pf-ref},
-\[
+$$
 q_{23}=q_{22}\frac{343}{365}\approx0.492703,
-\]
+$$
 and step [](#s1-2){.pf-ref} gives $p_{23}\approx0.507297$.
 
 :::
@@ -100,9 +100,9 @@ and step [](#s1-2){.pf-ref} gives $p_{23}\approx0.507297$.
 ::: {.pf-step #s1-5}
 
 Therefore the least number of students is
-\[
+$$
 \boxed{23}.
-\]
+$$
 
 
 ::: pf-proof

@@ -23,9 +23,9 @@ audit:
 
 ::: {.problem}
 Let $f:\RR\to\RR$ be infinitely differentiable. Suppose that, for some positive integer $n$,
-\[
+$$
 f(1)=f(0)=f'(0)=f''(0)=\cdots=f^{(n)}(0)=0.
-\]
+$$
 Prove that $f^{(n+1)}(x)=0$ for some $x\in(0,1)$.
 :::
 

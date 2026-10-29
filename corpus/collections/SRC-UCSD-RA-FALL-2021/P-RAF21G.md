@@ -45,23 +45,23 @@ We may assume $f\ne0$ and $\int x^2|f|^2,\int\xi^2|\widehat f|^2<\infty$; then $
 ::: pf-proof
 
 If $f=0$ almost everywhere, both sides are $0$. For nonzero $f$, both second moments are positive; if either
-\[
+$$
 \int_{\RR}x^2|f(x)|^2\,dx
-\]
+$$
 or
-\[
+$$
 \int_{\RR}\xi^2|\widehat f(\xi)|^2\,d\xi
-\]
+$$
 is infinite, the left side is $+\infty$. Hence assume both are finite.
 
 With the convention $\widehat f(\xi)=\int_{\RR}f(x)e^{-2\pi ix\xi}\,dx$,
-\[
+$$
 \widehat{f'}(\xi)=2\pi i\xi\widehat f(\xi)
-\]
+$$
 in the distributional sense. Plancherel therefore gives
-\[
+$$
 \|f'\|_2=2\pi\|\xi\widehat f\|_2<\infty.
-\]
+$$
 
 :::
 
@@ -74,50 +74,50 @@ $\|f\|_2^2\le2\|xf\|_2\|f'\|_2$.
 ::: pf-proof
 
 Choose $\chi\in C_c^\infty(\RR)$ with $0\le\chi\le1$, $\chi=1$ on $[-1,1]$, and $\operatorname{supp}\chi\subset[-2,2]$. Put
-\[
+$$
 \chi_R(x)=\chi(x/R).
-\]
+$$
 Then $|x\chi_R'(x)|$ is bounded uniformly in $R$, and it is supported where $R\le|x|\le2R$.
 
 Because $f,f'\in L^2$, the function $|f|^2$ belongs to $W^{1,1}$ with weak derivative
-\[
+$$
 (|f|^2)'=2\operatorname{Re}(f'\overline f).
-\]
+$$
 Integrating the derivative of the compactly supported function $x\chi_R(x)|f(x)|^2$ gives
-\[
+$$
 0=\int_{\RR}(\chi_R+x\chi_R')|f|^2
 +2\operatorname{Re}\int_{\RR}x\chi_R f'\overline f.
-\]
+$$
 Hence
-\[
+$$
 \int\chi_R|f|^2
 =-\int x\chi_R'|f|^2
 -2\operatorname{Re}\int x\chi_R f'\overline f.
-\]
+$$
 As $R\to\infty$, dominated convergence gives
-\[
+$$
 \int\chi_R|f|^2\to\|f\|_2^2,
-\]
+$$
 while
-\[
+$$
 \left|\int x\chi_R'|f|^2\right|
 \le C\int_{|x|\ge R}|f(x)|^2\,dx\to0.
-\]
+$$
 Finally, $|xf||f'|\in L^1$ by Cauchy--Schwarz, so
-\[
+$$
 \int x\chi_R f'\overline f\to\int x f'\overline f.
-\]
+$$
 Therefore
-\[
+$$
 \|f\|_2^2
 =-2\operatorname{Re}\int_{
 \RR}x f'(x)\overline{f(x)}\,dx.
-\]
+$$
 Taking absolute values and applying Cauchy--Schwarz yields
-\[
+$$
 \|f\|_2^2
 \le 2\|xf\|_2\|f'\|_2.
-\]
+$$
 
 :::
 
@@ -126,19 +126,19 @@ Taking absolute values and applying Cauchy--Schwarz yields
 ::: pf-qed
 
 Substituting $\|f'\|_2=2\pi\|\xi\widehat f\|_2$ from step [](#s1){.pf-ref} into step [](#s2){.pf-ref} gives
-\[
+$$
 \|xf\|_2\,\|\xi\widehat f\|_2
 \ge \frac1{4\pi}\|f\|_2^2.
-\]
+$$
 Squaring both sides,
-\[
+$$
 \boxed{
 \left(\int x^2|f(x)|^2\,dx\right)
 \left(\int \xi^2|\widehat f(\xi)|^2\,d\xi\right)
 \ge
 \frac1{16\pi^2}
 \left(\int |f(x)|^2\,dx\right)^2.}
-\]
+$$
 
 :::
 

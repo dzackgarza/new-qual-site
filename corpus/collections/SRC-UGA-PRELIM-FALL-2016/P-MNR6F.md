@@ -15,9 +15,9 @@ review: draft
 ::: {.problem}
 Let $f:X\to Y$ be a map of sets.
 Give, with proof, necessary and sufficient conditions for
-\[
+$$
 f^{-1}(f(S))=S
-\]
+$$
 for every subset $S\subseteq X$.
 :::
 
@@ -31,9 +31,9 @@ Thus equality holds.
 
 Conversely, suppose the equality holds for every $S\subseteq X$.
 If $f(a)=f(b)$, then
-\[
+$$
 b\in f^{-1}(f(\{a\}))=\{a\},
-\]
+$$
 so $b=a$.
 Hence $f$ is injective.
 :::

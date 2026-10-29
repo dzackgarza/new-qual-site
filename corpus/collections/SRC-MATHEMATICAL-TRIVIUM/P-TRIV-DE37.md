@@ -28,13 +28,13 @@ Assume $m>0$ and seek the Green function on $\RR$ that decays as $|x|\to\infty$.
 ::: {.pf-step #s1-1}
 
 Away from $x=0$, every decaying solution has the form
-\[
+$$
 G(x)=
 \begin{cases}
 A e^{mx},&x<0,\\
 B e^{-mx},&x>0.
 \end{cases}
-\]
+$$
 
 
 ::: pf-proof
@@ -48,9 +48,9 @@ For $x\ne0$, the equation is $-G''+m^2G=0$, or $G''=m^2G$. Its solutions are lin
 ::: {.pf-step #s1-2}
 
 The absence of a $\delta'$ term requires $G$ to be continuous at $0$, hence
-\[
+$$
 A=B.
-\]
+$$
 
 
 ::: pf-proof
@@ -64,21 +64,21 @@ If $G$ had a jump at $0$, its first distributional derivative would contain a mu
 ::: {.pf-step #s1-3}
 
 Integrating across $0$ gives
-\[
+$$
 G'(0^+)-G'(0^-)=-1.
-\]
+$$
 
 
 ::: pf-proof
 
 Integrate
-\[
+$$
 -G''+m^2G=\delta_0
-\]
+$$
 from $-\epsilon$ to $\epsilon$. The $m^2G$ integral tends to zero as $\epsilon\to0^+$, while the second-derivative term gives
-\[
+$$
 -G'(0^+)+G'(0^-)=1.
-\]
+$$
 Rearranging gives the displayed jump condition.
 
 :::
@@ -88,19 +88,19 @@ Rearranging gives the displayed jump condition.
 ::: {.pf-step #s1-4}
 
 The coefficient is
-\[
+$$
 A=B=\frac1{2m}.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref},
-\[
+$$
 G'(0^-)=mA,
 \qquad
 G'(0^+)=-mB.
-\]
+$$
 Using $A=B$ from step [](#s1-2){.pf-ref} in the jump condition of step [](#s1-3){.pf-ref} gives $-2mA=-1$.
 
 :::
@@ -110,9 +110,9 @@ Using $A=B$ from step [](#s1-2){.pf-ref} in the jump condition of step [](#s1-3)
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 \boxed{G(x)=\frac{e^{-m|x|}}{2m}}.
-\]
+$$
 
 
 ::: pf-proof

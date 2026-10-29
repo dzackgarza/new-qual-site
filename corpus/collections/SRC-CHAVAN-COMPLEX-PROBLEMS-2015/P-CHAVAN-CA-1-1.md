@@ -15,36 +15,36 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 p(z)=a_0+a_1z+\cdots+a_nz^n,
 \qquad
 s=\sqrt{1-|z|^2},
 \qquad |z|\le1,
-\]
+$$
 and let $e_1,\ldots,e_{n+1}$ be the standard basis of $\CC^{n+1}$.
 
 1. Let $U$ be the $(n+1)\times(n+1)$ matrix whose columns, in order, are
-   \[
+   $$
    ze_1+se_2,\ e_3,\ldots,e_{n+1},\ se_1-\overline z e_2.
-   \]
+   $$
    Show that $U$ is unitary, hence its eigenvalues $\lambda_1,\ldots,\lambda_{n+1}$ have modulus $1$.
 
 2. For $0\le k\le n$, show that $z^k=e_1^TU^ke_1$, and hence $p(z)=e_1^Tp(U)e_1$.
 
 3. Choose $z$ so that $|p(z)|=\max_{|w|\le1}|p(w)|$, and let $U$ be the matrix from part 1 for this $z$. Deduce
-   \[
+   $$
    \max_{|w|\le1}|p(w)|\le\|p(U)\|.
-   \]
+   $$
 
 4. If $D=\operatorname{diag}(\lambda_1,\ldots,\lambda_{n+1})$, show
-   \[
+   $$
    \|p(U)\|=\|p(D)\|=\max_i|p(\lambda_i)|.
-   \]
+   $$
 
 Conclude that
-\[
+$$
 \max_{|z|\le1}|p(z)|=\max_{|z|=1}|p(z)|.
-\]
+$$
 :::
 
 ::: {.solution}

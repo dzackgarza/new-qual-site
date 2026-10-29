@@ -25,39 +25,39 @@ Let $G$ be the open strip $\{z \in \CC : 1 < \operatorname{Im} z < 2\}$.
 We construct a zero-free example, which proves both parts simultaneously.
 
 First map the strip conformally to the unit disk. Put
-\[
+$$
 \psi(z)=e^{\pi(z-i)},
-\]
+$$
 which maps $G$ onto the upper half-plane, and then set
-\[
+$$
 \phi(z)=\frac{\psi(z)-i}{\psi(z)+i}.
-\]
+$$
 Thus $\phi:G\to\DD$ is conformal.
 
 Choose a countable dense set $\{\zeta_n\}_{n\ge1}$ on the unit circle. Define
-\[
+$$
 H(w)=\sum_{n=1}^\infty 2^{-n}\frac{\zeta_n+w}{\zeta_n-w},
 \qquad |w|<1.
-\]
+$$
 On every compact subset of $\DD$ the series converges uniformly, hence
 $H$ is holomorphic. Moreover,
-\[
+$$
 \operatorname{Re}\frac{\zeta+w}{\zeta-w}
 =\frac{1-|w|^2}{|\zeta-w|^2}>0
 \qquad (|\zeta|=1,\ |w|<1).
-\]
+$$
 Therefore
-\[
+$$
 F(w)=e^{-H(w)}
-\]
+$$
 is holomorphic and has no zeros in $\DD$.
 
 Fix $n$. Along the radius $w=r\zeta_n$ with $r\uparrow1$, the $n$-th summand
 of $\operatorname{Re}H$ tends to $+\infty$, while all other summands are
 nonnegative. Hence
-\[
+$$
 F(r\zeta_n)\longrightarrow0.
-\]
+$$
 
 Suppose $F$ admitted a holomorphic extension across some boundary point
 $\eta\in\partial\DD$. The extension would exist on a small disk about
@@ -69,9 +69,9 @@ $F$, to vanish identically, contradiction.
 
 Thus $F$ has no analytic continuation across any point of $\partial\DD$.
 Finally set
-\[
+$$
 f=F\circ\phi.
-\]
+$$
 Then $f\in H(G)$, $f$ has no zeros in $G$, and any analytic continuation of $f$
 across a boundary point of $G$ would, via the conformal map $\phi$, produce an
 analytic continuation of $F$ across a point of $\partial\DD$. Therefore

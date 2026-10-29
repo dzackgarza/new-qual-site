@@ -18,18 +18,18 @@ audit:
 ::: {.problem}
 Let $V$ be a finite-dimensional vector space, and let $V^*$ be its dual, the space of linear maps $\phi:V\to\CC$.
 For $W\subset V$, define
-\[
+$$
 W^\perp=\{\phi\in V^*: \phi(w)=0\text{ for every }w\in W\}.
-\]
+$$
 For $U\subset V^*$, define
-\[
+$$
 {}^\perp U=\{v\in V: \phi(v)=0\text{ for every }\phi\in U\}.
-\]
+$$
 
 (a) Show that for every subset $W\subset V$,
-\[
+$$
 {}^\perp(W^\perp)=\operatorname{span}(W).
-\]
+$$
 
 (b) Let $W\subset V$ be a linear subspace.
 Give an explicit isomorphism between $(V/W)^*$ and $W^\perp$, and prove that it is an isomorphism.

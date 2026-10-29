@@ -40,40 +40,40 @@ Example 1.52 of the source prints $\alpha' = dx + \frac{1}{2} r^2 d\theta$ and g
 
 ::: {.solution}
 
-Write the target coordinates of \(\phi\) as
-\[
+Write the target coordinates of $\phi$ as
+$$
 (X,Y,Z)
 =
 \left(
 x,\ y,\ z+\frac{xy}{2}
 \right).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 The pullbacks of the coordinate functions are
-\[
+$$
 \boxed{
 \phi^*X=x,
 \qquad
 \phi^*Y=y,
 \qquad
 \phi^*Z=z+\frac{xy}{2}}.
-\]
+$$
 
 
 ::: pf-proof
 
 This is the definition of the map
-\[
+$$
 \phi(x,y,z)
 =
 \left(
 x,y,z+\frac{xy}{2}
 \right).
-\]
+$$
 
 :::
 
@@ -82,28 +82,28 @@ x,y,z+\frac{xy}{2}
 ::: {.pf-step #s1-2}
 
 Therefore
-\[
+$$
 \boxed{
 \phi^*dX=dx}
-\]
+$$
 and
-\[
+$$
 \boxed{
 \phi^*dY=dy}.
-\]
+$$
 
 
 ::: pf-proof
 
 Pullback commutes with exterior differentiation:
-\[
+$$
 \phi^*(dX)
 =
 d(\phi^*X)
 =
 dx,
-\]
-and similarly for \(Y\).
+$$
+and similarly for $Y$.
 
 :::
 
@@ -112,24 +112,24 @@ and similarly for \(Y\).
 ::: {.pf-step #s1-3}
 
 One has
-\[
+$$
 \boxed{
 \phi^*dZ
 =
 dz+\frac12(x\,dy+y\,dx)}.
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-1){.pf-ref},
-\[
+$$
 \phi^*Z
 =
 z+\frac{xy}{2}.
-\]
+$$
 Differentiate:
-\[
+$$
 d\left(
 z+\frac{xy}{2}
 \right)
@@ -137,7 +137,7 @@ z+\frac{xy}{2}
 dz+\frac12\,d(xy)
 =
 dz+\frac12(x\,dy+y\,dx).
-\]
+$$
 
 :::
 
@@ -146,11 +146,11 @@ dz+\frac12(x\,dy+y\,dx).
 ::: {.pf-step #s1-4}
 
 The cylindrically symmetric contact form is
-\[
+$$
 \alpha'
 =
 dZ+\frac12(X\,dY-Y\,dX).
-\]
+$$
 
 
 ::: pf-proof
@@ -164,20 +164,20 @@ This is the rectangular-coordinate expression stated in the problem.
 ::: {.pf-step #s1-5}
 
 Pulling back the skew term gives
-\[
+$$
 \boxed{
 \phi^*\!\left(
 \frac12(X\,dY-Y\,dX)
 \right)
 =
 \frac12(x\,dy-y\,dx)}.
-\]
+$$
 
 
 ::: pf-proof
 
 Using steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
-\[
+$$
 \begin{aligned}
 \phi^*(X\,dY-Y\,dX)
 &=
@@ -187,8 +187,8 @@ Using steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref},
 &=
 x\,dy-y\,dx.
 \end{aligned}
-\]
-Multiply by \(1/2\).
+$$
+Multiply by $1/2$.
 
 :::
 
@@ -197,7 +197,7 @@ Multiply by \(1/2\).
 ::: {.pf-step #s1-6}
 
 Hence
-\[
+$$
 \begin{aligned}
 \phi^*\alpha'
 &=
@@ -211,7 +211,7 @@ dz+\frac12(x\,dy+y\,dx)
 +
 \frac12(x\,dy-y\,dx).
 \end{aligned}
-\]
+$$
 
 
 ::: pf-proof
@@ -225,27 +225,27 @@ steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref}.
 
 ::: {.pf-step #s1-7}
 
-The \(y\,dx\)-terms cancel, so
-\[
+The $y\,dx$-terms cancel, so
+$$
 \boxed{
 \phi^*\alpha'
 =
 dz+x\,dy
 =
 \alpha}.
-\]
+$$
 
 
 ::: pf-proof
 
 In step [](#s1-6){.pf-ref},
-\[
+$$
 \frac12y\,dx-\frac12y\,dx=0,
-\]
+$$
 while
-\[
+$$
 \frac12x\,dy+\frac12x\,dy=x\,dy.
-\]
+$$
 
 :::
 
@@ -254,25 +254,25 @@ while
 ::: pf-step
 
 Therefore
-\[
+$$
 \boxed{
 \phi_*(\ker\alpha)
 =
 \ker\alpha'}.
-\]
+$$
 
 
 ::: pf-proof
 
-For any tangent vector \(v\),
-\[
+For any tangent vector $v$,
+$$
 \alpha(v)=0
 \iff
 (\phi^*\alpha')(v)=0
 \iff
 \alpha'(d\phi(v))=0.
-\]
-Since \(\phi\) is a diffeomorphism, this identifies the two contact
+$$
+Since $\phi$ is a diffeomorphism, this identifies the two contact
 hyperplane fields.
 
 :::
@@ -281,16 +281,16 @@ hyperplane fields.
 
 ::: pf-step
 
-Hence \(\phi\) is a contactomorphism from the standard contact
+Hence $\phi$ is a contactomorphism from the standard contact
 structure to the cylindrically symmetric one.
 
 
 ::: pf-proof
 
 By step [](#s1-7){.pf-ref},
-\[
+$$
 \phi^*\alpha'=\alpha,
-\]
+$$
 which is stronger than merely preserving the kernel distribution.
 
 :::

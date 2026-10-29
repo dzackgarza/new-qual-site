@@ -57,13 +57,13 @@ Part (a) is false.
 ::: pf-proof
 
 In the Banach space $\ell^2$, let $e_n$ be the standard basis vectors. Then
-\[
+$$
 \|e_n\|_2=1
-\]
+$$
 for every $n$, so $(e_n)$ is bounded. But for $m\ne n$,
-\[
+$$
 \|e_n-e_m\|_2=\sqrt2.
-\]
+$$
 Hence no subsequence is Cauchy, and therefore no subsequence converges in norm.
 
 :::
@@ -77,25 +77,25 @@ Part (b) is false.
 ::: pf-proof
 
 Suppose $f_n\to0$ in $L^1([0,1])$. Choose a subsequence $(f_{n_k})$ such that
-\[
+$$
 \|f_{n_k}\|_1<2^{-2k}.
-\]
+$$
 Set
-\[
+$$
 E_k:=\{|f_{n_k}|>2^{-k}\}.
-\]
+$$
 By Chebyshev's inequality,
-\[
+$$
 m(E_k)\le 2^k\|f_{n_k}\|_1<2^{-k}.
-\]
+$$
 Thus
-\[
+$$
 \sum_{k=1}^\infty m(E_k)<\infty.
-\]
+$$
 By the Borel--Cantelli lemma, almost every $x$ belongs to only finitely many $E_k$. Hence for almost every $x$,
-\[
+$$
 |f_{n_k}(x)|\le2^{-k}
-\]
+$$
 for all sufficiently large $k$, so $f_{n_k}(x)\to0$. Therefore every $L^1$-null sequence has a subsequence converging pointwise to $0$ almost everywhere, contradicting the asserted existence.
 
 :::
@@ -109,29 +109,29 @@ Part (c) is false.
 ::: pf-proof
 
 Let
-\[
+$$
 h=\mathbf1_{[0,1/2]}.
-\]
+$$
 We claim that
-\[
+$$
 \|h-g\|_\infty\ge\frac12
-\]
+$$
 for every $g\in C([0,1])$, where the norm is the essential supremum.
 
 Indeed, if the essential-supremum distance were $<1/2$, then for some $\delta>0$ we would have
-\[
+$$
 |g(x)-1|\le\frac12-\delta
-\]
+$$
 for almost every $x<1/2$, and
-\[
+$$
 |g(x)|\le\frac12-\delta
-\]
+$$
 for almost every $x>1/2$. Continuity upgrades these inequalities to all points on the respective open half-intervals, forcing
-\[
+$$
 g(1/2)\ge\frac12+\delta
 \quad\text{and}\quad
 g(1/2)\le\frac12-\delta,
-\]
+$$
 a contradiction. Thus $C([0,1])$ is not dense in $L^\infty([0,1])$.
 
 :::
@@ -145,17 +145,17 @@ Part (d) is true.
 ::: pf-proof
 
 The functions
-\[
+$$
 e_n(x)=e^{2\pi i n x}
-\]
+$$
 form an orthonormal sequence in $L^2([0,1])$. For any $g\in L^2([0,1])$, Bessel's inequality gives
-\[
+$$
 \sum_{n=1}^\infty |\langle g,e_n\rangle|^2\le\|g\|_2^2.
-\]
+$$
 Hence
-\[
+$$
 \langle g,e_n\rangle\to0.
-\]
+$$
 Therefore $e_n\rightharpoonup0$ weakly in $L^2([0,1])$.
 
 :::
@@ -169,19 +169,19 @@ Part (e) is true.
 ::: pf-proof
 
 By Hölder's inequality applied to $(a_j)_{j=1}^n$ and $(1)_{j=1}^n$ with exponents $q$ and $p$,
-\[
+$$
 \sum_{j=1}^n a_j
 \le\sum_{j=1}^n|a_j|
 \le
 \left(\sum_{j=1}^n|a_j|^q\right)^{1/q}
 \left(\sum_{j=1}^n1^p\right)^{1/p}.
-\]
+$$
 Since the second factor is $n^{1/p}$,
-\[
+$$
 \boxed{
 \sum_{j=1}^n a_j
 \le n^{1/p}\left(\sum_{j=1}^n|a_j|^q\right)^{1/q}.}
-\]
+$$
 
 :::
 
@@ -194,13 +194,13 @@ Part (f) is true.
 ::: pf-proof
 
 The specified topology is exactly the product topology on
-\[
+$$
 Y=[-\pi,\pi]^{\RR},
-\]
+$$
 because it is the weakest topology making every coordinate projection
-\[
+$$
 p_r(f)=f(r)
-\]
+$$
 continuous. Each factor $[-\pi,\pi]$ is compact. By Tychonoff's theorem, their arbitrary product is compact. Hence $Y$ is compact.
 
 :::

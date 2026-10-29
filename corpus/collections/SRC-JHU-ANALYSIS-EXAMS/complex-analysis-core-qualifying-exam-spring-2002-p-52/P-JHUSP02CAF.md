@@ -25,26 +25,26 @@ Show that a Möbius transformation maps a straight line or circle onto a straigh
 
 ::: {.solution}
 A generalized circle in $\widehat{\CC}$ means either an ordinary circle or a straight line together with $\infty$. Such a set has an equation
-\[
+$$
 A|z|^2+Bz+\overline B\,\overline z+C=0,
-\]
+$$
 where $A,C\in\RR$, $B\in\CC$, and $|B|^2-AC>0$. If $A=0$, this is a line; if $A\ne0$, completing the square gives a circle.
 
 Every Möbius map is a composition of translations, nonzero complex dilations, and inversion $z\mapsto1/z$. Indeed, for
-\[
+$$
 T(z)=\frac{az+b}{cz+d},\qquad ad-bc\ne0,
-\]
+$$
 there is nothing to prove when $c=0$, while for $c\ne0$,
-\[
+$$
 T(z)=\frac ac+\frac{bc-ad}{c^2}\frac1{z+d/c}.
-\]
+$$
 Translations and nonzero complex dilations plainly preserve generalized circles. For inversion, substitute $z=1/w$ into the equation and multiply by $|w|^2$:
-\[
+$$
 A+B\overline w+\overline B w+C|w|^2=0.
-\]
+$$
 This is again of the same form, now with coefficients $A'=C$, $B'=\overline B$, $C'=A$, and
-\[
+$$
 |B'|^2-A'C'=|B|^2-AC>0.
-\]
+$$
 Thus inversion also preserves generalized circles. Therefore every Möbius transformation maps every line or circle onto another line or circle.
 :::

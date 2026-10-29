@@ -47,9 +47,9 @@ One possible choice is the following four theorems.
 **Rouché's theorem.** Let $D$ be a bounded domain whose boundary is a finite
 union of positively oriented simple closed curves, and let $f,g$ be holomorphic
 on a neighborhood of $\overline D$. If
-\[
+$$
 |g(z)|<|f(z)|\qquad(z\in\partial D),
-\]
+$$
 then $f$ and $f+g$ have the same number of zeros in $D$, counted with
 multiplicity.
 
@@ -70,25 +70,25 @@ open sets to open sets.
 We sketch proofs of Rouché and the open mapping theorem.
 
 For Rouché, on $\partial D$ the homotopy
-\[
+$$
 f_t=f+t g,
 \qquad 0\le t\le1,
-\]
+$$
 never vanishes, since $|tg|<|f|$. Therefore the winding number of
 $f_t(\partial D)$ about $0$ is independent of $t$. By the argument principle,
 that winding number is the number of zeros of $f_t$ in $D$, counted with
 multiplicity. Thus $f=f_0$ and $f+g=f_1$ have the same zero count.
 
 For the open mapping theorem, fix $z_0\in G$ and write
-\[
+$$
 f(z)-f(z_0)=(z-z_0)^m h(z),
-\]
+$$
 where $m\ge1$ and $h(z_0)\ne0$. On a sufficiently small circle
 $|z-z_0|=r$, the quantity $|f(z)-f(z_0)|$ has a positive minimum $\delta$.
 If $|w-f(z_0)|<\delta$, then on that circle
-\[
+$$
 |w-f(z_0)|<|f(z)-f(z_0)|.
-\]
+$$
 Rouché's theorem implies that
 $f(z)-w$ and $f(z)-f(z_0)$ have the same number $m$ of zeros inside the
 circle. Hence every $w$ near $f(z_0)$ lies in the image of $f$, proving that

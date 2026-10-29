@@ -25,17 +25,17 @@ Define the basin of attraction of $z = a$ to be the set $$\Omega := \{z \in G : 
 
 ::: {.solution}
 (a) Choose $q$ with $|f'(a)|<q<1$. By continuity of
-\[
+$$
 \frac{f(z)-f(a)}{z-a}
-\]
+$$
 at $a$, there is $\delta>0$ such that
-\[
+$$
 |f(z)-a|\le q|z-a|
-\]
+$$
 whenever $|z-a|<\delta$, with the disk contained in $G$. Therefore
-\[
+$$
 |f^n(z)-a|\le q^n|z-a|\to0
-\]
+$$
 for every point of that disk. Hence $B(a,\delta)\subset\Omega$.
 
 (b) Since $G$ is bounded, the family of iterates $\{f^n\}$ is locally
@@ -48,7 +48,7 @@ theorem gives $F\equiv a$ on all of $G$.
 Thus every convergent subsequence of the normal family has the same limit
 $a$. Consequently the entire sequence $f^n$ converges locally uniformly to
 $a$ on $G$. In particular $f^n(z)\to a$ for every $z\in G$, so
-\[
+$$
 \boxed{\Omega=G}.
-\]
+$$
 :::

@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Given any group $G$, define a binary operation $\ast$ on the set $H=G\times G$ by
-\[
+$$
 (g_1,h_1)\ast(g_2,h_2)=(g_1g_2,g_2^{-1}h_1g_2h_2).
-\]
+$$
 
 (a) Show that $(H,\ast)$ is a group.
 

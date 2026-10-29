@@ -44,15 +44,15 @@ The condition $4x=0$ for every $x$ says the exponent divides $4$, so no cyclic f
 Hence all parts of the partition are at most $2$.
 
 The partitions are
-\[
+$$
 2+2,\qquad2+1+1,\qquad1+1+1+1,
-\]
+$$
 giving
-\[
+$$
 C_4\times C_4,
 \qquad C_4\times C_2\times C_2,
 \qquad C_2^4.
-\]
+$$
 These are pairwise nonisomorphic and exhaust the possibilities.
 
 :::

@@ -32,34 +32,34 @@ Show the degree of $f$ is $\sum_i \varepsilon_i$ where $\varepsilon_i$ is $+1$ o
 
 ::: {.solution}
 Choose $y\in\operatorname{int}B$. Then
-\[
+$$
 f^{-1}(y)=\{x_1,\ldots,x_r\},\qquad x_i\in\operatorname{int}B_i.
-\]
+$$
 Excision identifies
-\[
+$$
 H_n(M,M-f^{-1}(y))
 \cong
 \bigoplus_i H_n(B_i,B_i-\{x_i\})
 \cong \bigoplus_i\ZZ,
-\]
+$$
 while
-\[
+$$
 H_n(N,N-\{y\})\cong\ZZ.
-\]
+$$
 The image of the fundamental class $[M]$ in the direct sum of local homology groups is the tuple of local orientation generators. On the $i$th summand, the map induced by $f|_{B_i}:B_i\to B$ is multiplication by
-\[
+$$
 \varepsilon_i=
 \begin{cases}
 +1,&f|_{B_i}\text{ preserves the chosen local orientations},\\
 -1,&f|_{B_i}\text{ reverses them}.
 \end{cases}
-\]
+$$
 Hence the image of $[M]$ in $H_n(N,N-\{y\})$ is
-\[
+$$
 \left(\sum_i\varepsilon_i\right)\mu_y.
-\]
+$$
 But the image of $[M]$ under $f_*$ is also $\deg(f)[N]$, whose local image at $y$ is $\deg(f)\mu_y$. Therefore
-\[
+$$
 \boxed{\deg(f)=\sum_i\varepsilon_i.}
-\]
+$$
 :::

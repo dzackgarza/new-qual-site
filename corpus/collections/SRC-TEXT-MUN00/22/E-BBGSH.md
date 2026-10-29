@@ -44,33 +44,33 @@ $$
 
 ::: {.solution}
 (a) Define
-\[
+$$
 g:\RR^2\to\RR,\qquad g(x,y)=x+y^2.
-\]
+$$
 Its fibers are exactly the equivalence classes. The map
-\[
+$$
 H:\RR^2\to\RR^2,\qquad H(x,y)=(x+y^2,y)
-\]
+$$
 is a homeomorphism with inverse $H^{-1}(u,v)=(u-v^2,v)$, and
-\[
+$$
 g=\pi_1\circ H.
-\]
+$$
 Since the projection $\pi_1$ is an open quotient map, so is $g$. Therefore the induced bijection
-\[
+$$
 \bar g:X^*\to\RR
-\]
+$$
 is a homeomorphism. Thus $X^*\cong\RR$.
 
 (b) Now let
-\[
+$$
 h(x,y)=x^2+y^2.
-\]
+$$
 Its fibers are the circles centered at the origin, with the origin as the radius-zero fiber, so the equivalence classes are exactly its fibers. The norm map
-\[
+$$
 r(x,y)=\sqrt{x^2+y^2}:\RR^2\to[0,\infty)
-\]
+$$
 is continuous, surjective, and open onto $[0,\infty)$: for $z$ with $\abs z=r_0$, the disk $B_\varepsilon(z)$ contains the points $z+tu$ with $\abs t<\varepsilon$, where $u=z/r_0$ if $r_0>0$ and $u$ is any unit vector if $r_0=0$, and their norms $\abs{r_0+t}$ cover $(r_0-\varepsilon,r_0+\varepsilon)\cap[0,\infty)$. Hence $r$ is quotient. Squaring is a homeomorphism $[0,\infty)\to[0,\infty)$, so $h=r^2$ is quotient. Consequently the induced map identifies the quotient with
-\[
+$$
 [0,\infty).
-\]
+$$
 :::

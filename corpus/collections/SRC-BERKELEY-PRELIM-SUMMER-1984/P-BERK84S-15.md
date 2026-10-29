@@ -29,9 +29,9 @@ Let $\ZZ _ { 3 }$ be the field of integers mod 3 and $\ZZ _ { 3 } [ x ]$ the cor
 
 ::: {.solution}
 Let
-\[
+$$
 f(x)=x^3+x+2\in\mathbf F_3[x].
-\]
+$$
 
 ::: pf
 
@@ -42,9 +42,9 @@ The element $2\in\mathbf F_3$ is a root.
 ::: pf-proof
 
 Modulo $3$,
-\[
+$$
 f(2)=2^3+2+2=12\equiv0.
-\]
+$$
 Hence $x-2=x+1$ divides $f(x)$.
 
 :::
@@ -54,18 +54,18 @@ Hence $x-2=x+1$ divides $f(x)$.
 ::: pf-step
 
 Dividing by $x+1$ gives
-\[
+$$
 f(x)=(x+1)(x^2+2x+2).
-\]
+$$
 
 ::: pf-proof
 
 A direct multiplication in $\mathbf F_3[x]$ gives
-\[
+$$
 (x+1)(x^2+2x+2)
 =x^3+3x^2+4x+2
 =x^3+x+2.
-\]
+$$
 
 :::
 
@@ -78,9 +78,9 @@ The quadratic factor is irreducible over $\mathbf F_3$.
 ::: pf-proof
 
 Its discriminant is
-\[
+$$
 \Delta=2^2-4\cdot2=4-8=-4\equiv2\pmod3.
-\]
+$$
 The only squares in $\mathbf F_3$ are $0$ and $1$, so $2$ is not a square. Therefore $x^2+2x+2$ has no root in $\mathbf F_3$, and a quadratic over a field with no root is irreducible.
 
 :::
@@ -90,7 +90,7 @@ The only squares in $\mathbf F_3$ are $0$ and $1$, so $2$ is not a square. There
 :::
 
 Thus the irreducible factorization is
-\[
+$$
 \boxed{x^3+x+2=(x+1)(x^2+2x+2)}.
-\]
+$$
 :::

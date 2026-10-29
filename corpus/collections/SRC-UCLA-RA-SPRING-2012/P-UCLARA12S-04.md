@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 S=\left\{f\in L^1(\RR^3):\int_{\RR^3}f(x)\,dx=0\right\}.
-\]
+$$
 
 (a) Show that $S$ is closed in the $L^1$ topology.
 

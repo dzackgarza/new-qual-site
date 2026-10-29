@@ -42,11 +42,11 @@ It is enough to prove that every $\alpha\in E$ has a $p$th root in $E$.
 ::: pf-proof
 
 By the definition recalled in the problem, a field of characteristic $p$ is perfect exactly when its Frobenius map
-\[
+$$
 \operatorname{Fr}_E:E\longrightarrow E,
 \qquad
 x\longmapsto x^p,
-\]
+$$
 is surjective.
 
 :::
@@ -62,9 +62,9 @@ Then $K/F$ is finite.
 
 The extension $E/F$ is algebraic, so $\alpha$ is algebraic over $F$.
 Hence
-\[
+$$
 [K:F]=[F(\alpha):F]<\infty.
-\]
+$$
 
 :::
 
@@ -78,25 +78,25 @@ If $e_1,\ldots,e_n$ is an $F$-basis of $K$, then $e_1^p,\ldots,e_n^p$ is also an
 
 It suffices to prove linear independence, because there are exactly $n=[K:F]$ elements.
 Suppose
-\[
+$$
 \sum_{i=1}^n c_i e_i^p=0,
 \qquad c_i\in F.
-\]
+$$
 Since $F$ is perfect, Frobenius on $F$ is surjective.
 Choose $d_i\in F$ with
-\[
+$$
 d_i^p=c_i.
-\]
+$$
 In characteristic $p$,
-\[
+$$
 0
 =\sum_{i=1}^n d_i^p e_i^p
 =\left(\sum_{i=1}^n d_i e_i\right)^p.
-\]
+$$
 A field has no nonzero nilpotents, so
-\[
+$$
 \sum_{i=1}^n d_i e_i=0.
-\]
+$$
 Because the $e_i$ are $F$-linearly independent, every $d_i=0$, hence every $c_i=0$.
 Thus $e_1^p,\ldots,e_n^p$ is an $F$-basis of $K$.
 
@@ -112,17 +112,17 @@ Frobenius on $K$ is surjective.
 
 Let $y\in K$.
 By step [](#s3){.pf-ref}, write
-\[
+$$
 y=\sum_{i=1}^n c_i e_i^p,
 \qquad c_i\in F.
-\]
+$$
 Again using perfection of $F$, choose $d_i\in F$ with $d_i^p=c_i$.
 Then
-\[
+$$
 y
 =\sum_{i=1}^n d_i^p e_i^p
 =\left(\sum_{i=1}^n d_i e_i\right)^p.
-\]
+$$
 Thus $y$ is a $p$th power of an element of $K$.
 
 :::
@@ -137,9 +137,9 @@ Therefore Frobenius on $E$ is surjective, so $E$ is perfect.
 
 Apply step [](#s4){.pf-ref} to $y=\alpha$.
 There is $\beta\in K\subseteq E$ such that
-\[
+$$
 \beta^p=\alpha.
-\]
+$$
 Since $\alpha\in E$ was arbitrary, every element of $E$ has a $p$th root in $E$.
 Hence Frobenius on $E$ is surjective, and $E$ is perfect.
 

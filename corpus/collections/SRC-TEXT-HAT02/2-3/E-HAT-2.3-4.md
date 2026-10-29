@@ -33,27 +33,27 @@ Show that the wedge axiom for homology theories follows from the other axioms in
 It suffices to prove the binary case and then induct.
 
 Let $X\vee Y$ be the wedge at the common basepoint $*$. Regard $X$ as a subcomplex of $X\vee Y$. Then
-\[
+$$
 (X\vee Y)/X\cong Y.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 The long exact sequence of the pair $(X\vee Y,X)$ splits into short exact sequences
-\[
+$$
 0\longrightarrow\widetilde h_n(X)
 \longrightarrow\widetilde h_n(X\vee Y)
 \longrightarrow\widetilde h_n(Y)\longrightarrow0.
-\]
+$$
 
 ::: pf-proof
 
 By excision,
-\[
+$$
 \widetilde h_n(X\vee Y,X)\cong\widetilde h_n(Y,* )\cong\widetilde h_n(Y).
-\]
+$$
 The retraction $r:X\vee Y\to X$ collapsing $Y$ to the wedge point satisfies $r\circ i=\mathrm{id}_X$. Hence $i_*:\widetilde h_n(X)\to\widetilde h_n(X\vee Y)$ is split injective. Exactness then forces the connecting map from the relative group to $\widetilde h_{n-1}(X)$ to vanish, giving the displayed short exact sequence.
 
 :::
@@ -63,10 +63,10 @@ The retraction $r:X\vee Y\to X$ collapsing $Y$ to the wedge point satisfies $r\c
 ::: pf-step
 
 The sequence splits naturally, so
-\[
+$$
 \widetilde h_n(X\vee Y)\cong
 \widetilde h_n(X)\oplus\widetilde h_n(Y).
-\]
+$$
 
 ::: pf-proof
 

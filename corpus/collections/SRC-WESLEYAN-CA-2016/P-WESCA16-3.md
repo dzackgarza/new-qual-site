@@ -32,21 +32,21 @@ Compute:
 ::: {.pf-step #s1-1}
 
 The integral in part (a) is
-\[
+$$
 \boxed{\int_\gamma e^{2z^2}\,dz=0}.
-\]
+$$
 
 
 ::: pf-proof
 
 The function
-\[
+$$
 z\longmapsto e^{2z^2}
-\]
+$$
 is entire. The contour $\gamma$ is closed, so Cauchy's integral theorem gives
-\[
+$$
 \int_\gamma e^{2z^2}\,dz=0.
-\]
+$$
 
 :::
 
@@ -55,19 +55,19 @@ is entire. The contour $\gamma$ is closed, so Cauchy's integral theorem gives
 ::: {.pf-step #s1-2}
 
 The Laurent expansion of the integrand in part (b) is
-\[
+$$
 \left(\frac1z-\frac1{z^2}\right)^3
 =\frac1{z^3}-\frac3{z^4}+\frac3{z^5}-\frac1{z^6}.
-\]
+$$
 
 
 ::: pf-proof
 
 Expand the cube:
-\[
+$$
 \left(z^{-1}-z^{-2}\right)^3
 =z^{-3}-3z^{-4}+3z^{-5}-z^{-6}.
-\]
+$$
 
 :::
 
@@ -76,11 +76,11 @@ Expand the cube:
 ::: {.pf-step #s1-3}
 
 The integral in part (b) is
-\[
+$$
 \boxed{
 \int_{|z|=5}
 \left(\frac1z-\frac1{z^2}\right)^3\,dz=0}.
-\]
+$$
 
 
 ::: pf-proof
@@ -96,17 +96,17 @@ The residue theorem therefore gives the stated value.
 ::: {.pf-step #s1-4}
 
 The odd part of the integrand in part (c) integrates to zero:
-\[
+$$
 \int_{-\infty}^{\infty}\frac{x}{(x^2+1)^2}\,dx=0.
-\]
+$$
 
 
 ::: pf-proof
 
 The function
-\[
+$$
 x\longmapsto\frac{x}{(x^2+1)^2}
-\]
+$$
 is odd and absolutely integrable on $\RR$. Its integral over the
 symmetric interval $[-R,R]$ is zero for every $R$, and passing to the limit
 gives the claim.
@@ -118,27 +118,27 @@ gives the claim.
 ::: {.pf-step #s1-5}
 
 One has
-\[
+$$
 \int_{-\infty}^{\infty}\frac{dx}{(x^2+1)^2}
 =\frac{\pi}{2}.
-\]
+$$
 
 
 ::: pf-proof
 
 Set $x=\tan\theta$. Then
-\[
+$$
 dx=\sec^2\theta\,d\theta,
 \qquad
 1+x^2=\sec^2\theta,
-\]
+$$
 and $x$ ranges from $-\infty$ to $\infty$ as
 $\theta$ ranges from $-\pi/2$ to $\pi/2$. Hence
-\[
+$$
 \int_{-\infty}^{\infty}\frac{dx}{(x^2+1)^2}
 =\int_{-\pi/2}^{\pi/2}\cos^2\theta\,d\theta
 =\frac{\pi}{2}.
-\]
+$$
 
 :::
 
@@ -147,11 +147,11 @@ $\theta$ ranges from $-\pi/2$ to $\pi/2$. Hence
 ::: {.pf-step #s1-6}
 
 The integral in part (c) is
-\[
+$$
 \boxed{
 \int_{-\infty}^{\infty}\frac{x+1}{(x^2+1)^2}\,dx
 =\frac{\pi}{2}}.
-\]
+$$
 
 
 ::: pf-proof

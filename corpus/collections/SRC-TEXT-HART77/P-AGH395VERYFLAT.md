@@ -33,9 +33,9 @@ For any closed subscheme $X \subseteq \PP^n$, we denote by $C(X) \subseteq \PP^{
 Let $X \subseteq \PP_T^n$ be a closed subscheme, where $T$ is a noetherian integral scheme.
 For each $t \in T$, let $I_t \subseteq S_t = k(t)[x_0, \ldots, x_n]$ be the homogeneous ideal of $X_t$ in $\PP_{k(t)}^n$.
 We say that the family $\theset{X_t}$ is **very flat** if for all $d \geq 0$ the dimension
-\[
+$$
 \dim_{k(t)} (S_t / I_t)_d
-\]
+$$
 is independent of $t$.
 Here $(\cdot)_d$ means the homogeneous part of degree $d$.
 

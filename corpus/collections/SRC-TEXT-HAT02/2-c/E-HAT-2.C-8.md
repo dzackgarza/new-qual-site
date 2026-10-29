@@ -31,11 +31,11 @@ Using the simplicial approximation theorem, show that there are at most countabl
 
 ::: {.solution}
 Choose homotopy equivalences
-\[
+$$
 X\simeq K,
 \qquad
 Y\simeq L,
-\]
+$$
 where $K$ is a finite simplicial complex and $L$ is finite or countable.
 
 ::: pf
@@ -43,9 +43,9 @@ where $K$ is a finite simplicial complex and $L$ is finite or countable.
 ::: pf-step
 
 For each $r\ge0$, there are only countably many simplicial maps
-\[
+$$
 \operatorname{sd}^rK\to L.
-\]
+$$
 
 ::: pf-proof
 
@@ -86,9 +86,9 @@ Therefore there are at most countably many homotopy classes of maps $X\to Y$.
 ::: pf-proof
 
 Composition with fixed homotopy equivalences and their homotopy inverses gives a bijection
-\[
+$$
 [X,Y]\cong[K,L].
-\]
+$$
 By steps [](#s2){.pf-ref} and [](#s3){.pf-ref} the latter set is at most countable.
 
 :::

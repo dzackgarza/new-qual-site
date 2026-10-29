@@ -29,9 +29,9 @@ audit:
 
 ::: {.problem}
 Let $n$ be a positive integer and set
-\[
+$$
 c_n=\binom{2n}{n}.
-\]
+$$
 
 (a) Show that $c_n$ is even.
 

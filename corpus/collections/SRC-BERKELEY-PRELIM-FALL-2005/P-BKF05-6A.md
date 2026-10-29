@@ -27,14 +27,14 @@ audit:
 ---
 
 ::: {.problem}
-Let \(A\) be a real \(n\times n\) matrix such that
-\[
+Let $A$ be a real $n\times n$ matrix such that
+$$
 (A-I)^m=0
-\]
-for some \(m\ge1\). Prove that there is a real \(n\times n\) matrix \(B\) satisfying
-\[
+$$
+for some $m\ge1$. Prove that there is a real $n\times n$ matrix $B$ satisfying
+$$
 B^2=A.
-\]
+$$
 :::
 
 ::: {.solution}

@@ -23,11 +23,11 @@ audit:
 
 ::: {.problem}
 Let $M_n$ be the vector space of real $n\times n$ matrices, identified with $\RR^{n^2}$ with its usual Euclidean norm. Define
-\[
+$$
 f:M_n\to M_n,
 \qquad
 f(X)=X^2.
-\]
+$$
 Determine the derivative $Df$ of $f$.
 :::
 

@@ -42,26 +42,26 @@ Identify the pointwise limit explicitly.
 ::: pf-proof
 
 Since each $f_j$ is absolutely continuous,
-\[
+$$
 f_j(x)=f_j(0)+\int_0^x f_j'(t)\,dt.
-\]
+$$
 Define
-\[
+$$
 F(x):=c+\int_0^x g(t)\,dt.
-\]
+$$
 Then for every $x\in[0,1]$,
-\[
+$$
 \begin{aligned}
 |f_j(x)-F(x)|
 &\le |f_j(0)-c|
 +\left|\int_0^x(f_j'(t)-g(t))\,dt\right|\\
 &\le |f_j(0)-c|+\|f_j'-g\|_1.
 \end{aligned}
-\]
+$$
 The right side tends to $0$, independently of $x$. Hence $f_j\to F$ uniformly, so the pointwise limit exists everywhere and
-\[
+$$
 \boxed{f(x)=c+\int_0^x g(t)\,dt.}
-\]
+$$
 
 :::
 
@@ -74,17 +74,17 @@ Prove absolute continuity and identify the derivative.
 ::: pf-proof
 
 Because $g\in L^1([0,1])$, the function
-\[
+$$
 x\longmapsto c+\int_0^x g(t)\,dt
-\]
+$$
 is absolutely continuous. By the Lebesgue Fundamental Theorem of Calculus,
-\[
+$$
 f'(x)=g(x)
-\]
+$$
 for almost every $x\in[0,1]$. Thus
-\[
+$$
 \boxed{f\in AC([0,1]),\qquad f'=g\text{ a.e.}}
-\]
+$$
 as required.
 
 :::

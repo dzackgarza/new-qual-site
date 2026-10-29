@@ -20,11 +20,11 @@ Throughout, $M_n$ denotes the set of $n \times n$ matrices with complex entries,
 
 (b) For any $A \in M_n$, consider the unique expansion $A = S + iT$, where $S$ and $T$ are Hermitian.
 Prove that for any $\lambda \in \operatorname{eig}(A)$, it holds that
-\[
+$$
 \lambda_n(S) \le \operatorname{Re}(\lambda) \le \lambda_1(S)
 \quad\text{and}\quad
 \lambda_n(T) \le \operatorname{Im}(\lambda) \le \lambda_1(T),
-\]
+$$
 where $\lambda_1(C)$ and $\lambda_n(C)$ denote the largest and smallest eigenvalues of a Hermitian matrix $C \in M_n$.
 :::
 
@@ -34,30 +34,30 @@ where $\lambda_1(C)$ and $\lambda_n(C)$ denote the largest and smallest eigenval
 
 ::: {.pf-step #hermitian-splitting-exists}
 Every matrix $A\in M_n$ has a decomposition
-\[
+$$
 A=S+iT
-\]
+$$
 with $S,T$ Hermitian, namely
-\[
+$$
 S=\frac{A+A^H}{2},
 \qquad
 T=\frac{A-A^H}{2i}.
-\]
+$$
 
 ::: pf-proof
 One has
-\[
+$$
 S^H=\frac{A^H+A}{2}=S
-\]
+$$
 and
-\[
+$$
 T^H=\frac{A^H-A}{-2i}=T,
-\]
+$$
 so both matrices are Hermitian. Also
-\[
+$$
 S+iT
 =\frac{A+A^H}{2}+\frac{A-A^H}{2}=A.
-\]
+$$
 :::
 
 :::
@@ -67,19 +67,19 @@ The decomposition in step [](#hermitian-splitting-exists){.pf-ref} is unique.
 
 ::: pf-proof
 Suppose
-\[
+$$
 A=S_1+iT_1=S_2+iT_2
-\]
+$$
 with all four matrices Hermitian. Taking Hermitian adjoints gives
-\[
+$$
 A^H=S_1-iT_1=S_2-iT_2.
-\]
+$$
 Adding and subtracting the two displayed equations yields
-\[
+$$
 S_1=S_2=\frac{A+A^H}{2},
 \qquad
 T_1=T_2=\frac{A-A^H}{2i}.
-\]
+$$
 This proves part (a).
 :::
 
@@ -87,17 +87,17 @@ This proves part (a).
 
 ::: {.pf-step #eigenvalue-real-imag-as-rayleigh}
 Let $Av=\lambda v$ with $v\ne0$. Then
-\[
+$$
 \operatorname{Re}\lambda=\frac{v^HSv}{v^Hv},
 \qquad
 \operatorname{Im}\lambda=\frac{v^HTv}{v^Hv}.
-\]
+$$
 
 ::: pf-proof
 Since $A=S+iT$,
-\[
+$$
 \lambda v^Hv=v^HAv=v^HSv+i\,v^HTv.
-\]
+$$
 Because $S$ and $T$ are Hermitian, both $v^HSv$ and $v^HTv$ are real. Taking real and imaginary parts and dividing by the positive scalar $v^Hv$ gives the formulas.
 :::
 
@@ -105,22 +105,22 @@ Because $S$ and $T$ are Hermitian, both $v^HSv$ and $v^HTv$ are real. Taking rea
 
 ::: {.pf-step #rayleigh-quotient-bound}
 If $C$ is Hermitian with smallest and largest eigenvalues $\lambda_n(C)$ and $\lambda_1(C)$, then for every nonzero $v$,
-\[
+$$
 \lambda_n(C)\le \frac{v^HCv}{v^Hv}\le\lambda_1(C).
-\]
+$$
 
 ::: pf-proof
 Choose an orthonormal eigenbasis $u_1,\ldots,u_n$ of $C$ and write
-\[
+$$
 v=\sum_j c_j u_j,
 \qquad
 Cu_j=\mu_j u_j.
-\]
+$$
 Then
-\[
+$$
 \frac{v^HCv}{v^Hv}
 =\frac{\sum_j\mu_j|c_j|^2}{\sum_j|c_j|^2},
-\]
+$$
 which is a convex combination of the real eigenvalues $\mu_j$. Hence it lies between the smallest and largest eigenvalues.
 :::
 
@@ -128,12 +128,12 @@ which is a convex combination of the real eigenvalues $\mu_j$. Hence it lies bet
 
 ::: pf-step
 Therefore every eigenvalue $\lambda$ of $A$ satisfies
-\[
+$$
 \boxed{
 \lambda_n(S)\le\operatorname{Re}\lambda\le\lambda_1(S),
 \qquad
 \lambda_n(T)\le\operatorname{Im}\lambda\le\lambda_1(T).}
-\]
+$$
 
 ::: pf-proof
 Apply step [](#rayleigh-quotient-bound){.pf-ref} first to $C=S$ and then to $C=T$, and use the identities in step [](#eigenvalue-real-imag-as-rayleigh){.pf-ref}. This proves part (b).

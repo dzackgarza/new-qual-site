@@ -31,35 +31,35 @@ To prove this, use the fact that $\{ m - n \tau \}$ is dense in R whenever $\tau
 Write $\tau=\omega_2/\omega_1\in\RR$.
 
 For (a), suppose $\tau=p/q$ with $(p,q)=1$. If $f$ has period $\omega_0=\omega_1/q$, then both
-\[
+$$
 \omega_1=q\omega_0,\qquad \omega_2=p\omega_0
-\]
+$$
 are periods. Conversely, if $\omega_1$ and $\omega_2$ are periods, choose integers $m,n$ with
-\[
+$$
 mq+np=1.
-\]
+$$
 Then
-\[
+$$
 m\omega_1+n\omega_2
 =\left(m+\frac{np}{q}\right)\omega_1
 =\frac{mq+np}{q}\omega_1
 =\omega_0.
-\]
+$$
 Integer linear combinations of periods are periods, so $\omega_0$ is a period. Thus the two periodicity conditions are equivalent.
 
 For (b), suppose $\tau$ is irrational. The additive subgroup
-\[
+$$
 G=\{m-n\tau:m,n\in\ZZ\}
-\]
+$$
 is dense in $\RR$. Hence there is a sequence of nonzero periods
-\[
+$$
 h_j=(m_j-n_j\tau)\omega_1\longrightarrow0.
-\]
+$$
 A meromorphic function cannot have a pole: if $p$ were a pole, then every $p+h_j$ would also be a pole, producing distinct poles accumulating at $p$, contrary to isolatedness of poles. Thus $f$ is entire.
 
 For every $z\in\CC$,
-\[
+$$
 f'(z)=\lim_{j\to\infty}\frac{f(z+h_j)-f(z)}{h_j}=0,
-\]
+$$
 because each $h_j$ is a period. Therefore $f'\equiv0$, so $f$ is constant.
 :::

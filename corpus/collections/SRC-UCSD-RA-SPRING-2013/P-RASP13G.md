@@ -46,13 +46,13 @@ Test directly against an arbitrary element of the dual.
 
 ::: pf-proof
 Let $q$ be conjugate to $p$, with $q=\infty$ when $p=1$. Since $X=[-\pi,\pi]$ has finite measure, every $g\in L^q(X)$ belongs to $L^1(X)$. Therefore the Riemann--Lebesgue lemma gives
-\[
+$$
 \int_{-\pi}^{\pi} g(x)e^{ikx}\,dx\longrightarrow0.
-\]
+$$
 Taking imaginary parts yields
-\[
+$$
 \int_{-\pi}^{\pi} g(x)\sin(kx)\,dx\longrightarrow0.
-\]
+$$
 :::
 
 :::

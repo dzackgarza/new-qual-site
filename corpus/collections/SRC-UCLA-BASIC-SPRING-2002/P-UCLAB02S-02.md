@@ -22,11 +22,11 @@ Show that the set $\QQ$ of rational numbers in $\RR$ cannot be expressed as the 
 ::: {.solution}
 
 Suppose, for contradiction, that
-\[
+$$
 \QQ
 =
 \bigcap_{n=1}^{\infty}U_n
-\]
+$$
 with every $U_n\subseteq\RR$ open.
 
 ::: pf
@@ -39,21 +39,21 @@ Every $U_n$ is dense in $\RR$.
 ::: pf-proof
 
 Since
-\[
+$$
 \QQ\subseteq U_n
-\]
+$$
 for every $n$, and $\QQ$ is dense in $\RR$,
-\[
+$$
 \overline{U_n}
 \supseteq
 \overline{\QQ}
 =
 \RR.
-\]
+$$
 Hence
-\[
+$$
 \overline{U_n}=\RR.
-\]
+$$
 
 :::
 
@@ -62,22 +62,22 @@ Hence
 ::: {.pf-step #s1-2}
 
 Enumerate
-\[
+$$
 \QQ=\{q_1,q_2,\ldots\}
-\]
+$$
 and define
-\[
+$$
 V_n=\RR\setminus\{q_n\}.
-\]
+$$
 Then every $V_n$ is open and dense.
 
 
 ::: pf-proof
 
 Each singleton
-\[
+$$
 \{q_n\}
-\]
+$$
 is closed and has empty interior.
 Therefore its complement is open and dense.
 
@@ -88,18 +88,18 @@ Therefore its complement is open and dense.
 ::: {.pf-step #s1-3}
 
 The intersection
-\[
+$$
 \bigcap_{n=1}^{\infty}(U_n\cap V_n)
-\]
+$$
 is nonempty.
 
 
 ::: pf-proof
 
 Each
-\[
+$$
 U_n\cap V_n
-\]
+$$
 is open and dense by steps [](#s1-1){.pf-ref} through [](#s1-2){.pf-ref}.
 
 Apply the Baire category theorem to the complete metric space $\RR$: the intersection of countably many open dense subsets of a nonempty complete metric space is dense, hence nonempty.
@@ -112,17 +112,17 @@ Thus the displayed intersection is nonempty.
 ::: {.pf-step #s1-4}
 
 On the other hand,
-\[
+$$
 \bigcap_{n=1}^{\infty}(U_n\cap V_n)
 =
 \varnothing.
-\]
+$$
 
 
 ::: pf-proof
 
 Distribute the intersection:
-\[
+$$
 \begin{aligned}
 \bigcap_{n=1}^{\infty}(U_n\cap V_n)
 &=
@@ -138,7 +138,7 @@ Distribute the intersection:
 &=
 \varnothing.
 \end{aligned}
-\]
+$$
 The second equality uses the assumed representation of $\QQ$ and the definition of the $V_n$.
 
 :::

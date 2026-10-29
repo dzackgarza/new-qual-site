@@ -31,16 +31,16 @@ If $d$ is a metric for the topology of $X$, show that $d \mid A \times A$ is a m
 
 ::: {.solution}
 The restriction $d_A=d|_{A\times A}$ is a metric on $A$, since the metric axioms for $d$ hold in particular for points of $A$. For $a\in A$ and $r>0$, its open ball is
-\[
+$$
 B_{d_A}(a,r)=\{x\in A:d(a,x)<r\}=A\cap B_d(a,r).
-\]
+$$
 Thus every $d_A$-ball is open in the subspace topology. Conversely, if $U=A\cap V$ is subspace-open and $a\in U$, choose $r>0$ with
-\[
+$$
 B_d(a,r)\subseteq V.
-\]
+$$
 Then
-\[
+$$
 B_{d_A}(a,r)=A\cap B_d(a,r)\subseteq U.
-\]
+$$
 Hence the metric topology of $d_A$ is exactly the subspace topology.
 :::

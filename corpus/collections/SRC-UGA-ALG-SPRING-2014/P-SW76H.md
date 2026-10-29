@@ -62,9 +62,9 @@ Let $g\in C_{\mathrm{alg}}[x]$ be nonconstant and let $L$ be the extension of $F
 ::: {.pf-step #s1-3}
 
 Every algebraic extension $E/F$ admits an $F$-embedding
-\[
+$$
 \boxed{E\hookrightarrow C}.
-\]
+$$
 
 
 ::: pf-proof

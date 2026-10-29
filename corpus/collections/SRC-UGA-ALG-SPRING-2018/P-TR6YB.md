@@ -34,9 +34,9 @@ Every finite group of order $p^k$, with $k\geq1$, has nontrivial center.
 ::: pf-proof
 
 Under conjugation, the classes of elements outside the center have cardinalities $[G:C_G(x)]>1$, each a divisor of $p^k$ and hence divisible by $p$. The class equation
-\[
+$$
 |G|=|Z(G)|+\sum_{[x]\text{ noncentral}}[G:C_G(x)]
-\]
+$$
 therefore gives $p\mid |Z(G)|$. Since the identity belongs to $Z(G)$, its cardinality is positive, so $|Z(G)|\geq p>1$.
 
 :::
@@ -70,14 +70,14 @@ Let $G$ have order $5^2 7^2$, and write $n_5,n_7$ for the numbers of its Sylow s
 ::: {.pf-step #s4}
 
 There are exactly four isomorphism classes of groups of order $1225$, represented by
-\[
+$$
 \boxed{\begin{gathered}
 C_{25}\times C_{49},\qquad
 (C_5\times C_5)\times C_{49},\\
 C_{25}\times(C_7\times C_7),\qquad
 (C_5\times C_5)\times(C_7\times C_7).
 \end{gathered}}
-\]
+$$
 
 ::: pf-proof
 

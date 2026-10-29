@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Let $F$ be a finite field. Give a complete proof that
-\[
+$$
 |F|=p^r
-\]
+$$
 for some prime $p$ and integer $r\ge1$.
 :::
 

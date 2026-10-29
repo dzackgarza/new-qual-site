@@ -29,34 +29,34 @@ Write the contrapositive of each of the statements of Exercise 5.
 :::
 
 ::: {.solution}
-The contrapositive of an implication \(P\Rightarrow Q\) is \(\neg Q\Rightarrow\neg P\). Applying this to the statements of [[E-MUN-1-5]] gives:
+The contrapositive of an implication $P\Rightarrow Q$ is $\neg Q\Rightarrow\neg P$. Applying this to the statements of [[E-MUN-1-5]] gives:
 
 (a)
-\[
+$$
 \bigl(x\notin A\text{ for every }A\in\mathcal A\bigr)
 \Longrightarrow
 x\notin\bigcup_{A\in\mathcal A}A.
-\]
+$$
 
 (b)
-\[
+$$
 \bigl(x\notin A\text{ for at least one }A\in\mathcal A\bigr)
 \Longrightarrow
 x\notin\bigcup_{A\in\mathcal A}A.
-\]
+$$
 
 (c)
-\[
+$$
 \bigl(x\notin A\text{ for every }A\in\mathcal A\bigr)
 \Longrightarrow
 x\notin\bigcap_{A\in\mathcal A}A.
-\]
+$$
 
 (d)
-\[
+$$
 \bigl(x\notin A\text{ for at least one }A\in\mathcal A\bigr)
 \Longrightarrow
 x\notin\bigcap_{A\in\mathcal A}A.
-\]
+$$
 A statement and its contrapositive have the same truth value, so by [[E-MUN-1-5]], (a), (c), and (d) are true and (b) is false.
 :::

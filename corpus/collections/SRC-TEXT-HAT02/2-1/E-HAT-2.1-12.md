@@ -34,9 +34,9 @@ Definition of chain homotopy:
 ::: pf-step
 
 Let $(C_*, \partial^C)$ and $(D_*, \partial^D)$ be chain complexes. Two chain maps $f, g: C_* \to D_*$ are **chain homotopic** (denoted $f \simeq g$) if there exists a sequence of homomorphisms $P_n: C_n \to D_{n+1}$ such that:
-\[
+$$
 f_n - g_n = \partial^D_{n+1} P_n + P_{n-1} \partial^C_n \quad \text{for all } n \in \ZZ.
-\]
+$$
 
 ::: pf-proof
 
@@ -60,9 +60,9 @@ Reflexivity:
 
 For any chain map $f: C_* \to D_*$, define $P_n = 0: C_n \to D_{n+1}$ for all $n$.
 Then:
-\[
+$$
 \partial^D_{n+1} P_n + P_{n-1} \partial^C_n = 0 = f_n - f_n.
-\]
+$$
 Thus $f \simeq f$.
 
 ::: pf-proof
@@ -89,9 +89,9 @@ Suppose $f \simeq g$ via chain homotopy $P = \{P_n\}$.
 Then $f_n - g_n = \partial^D_{n+1} P_n + P_{n-1} \partial^C_n$.
 Define $Q_n = -P_n: C_n \to D_{n+1}$.
 Then:
-\[
+$$
 g_n - f_n = -(f_n - g_n) = -\big(\partial^D_{n+1} P_n + P_{n-1} \partial^C_n\big) = \partial^D_{n+1} (-P_n) + (-P_{n-1}) \partial^C_n = \partial^D_{n+1} Q_n + Q_{n-1} \partial^C_n.
-\]
+$$
 Thus $g \simeq f$.
 
 ::: pf-proof
@@ -116,9 +116,9 @@ Transitivity:
 
 Suppose $f \simeq g$ via chain homotopy $P = \{P_n\}$ and $g \simeq h$ via chain homotopy $Q = \{Q_n\}$.
 Then:
-\[
+$$
 f_n - g_n = \partial^D_{n+1} P_n + P_{n-1} \partial^C_n \quad \text{and} \quad g_n - h_n = \partial^D_{n+1} Q_n + Q_{n-1} \partial^C_n.
-\]
+$$
 
 ::: pf-proof
 
@@ -132,9 +132,9 @@ definitions of $P$ and $Q$.
 
 Define $R_n = P_n + Q_n: C_n \to D_{n+1}$.
 Adding the two equations yields:
-\[
+$$
 f_n - h_n = (f_n - g_n) + (g_n - h_n) = \partial^D_{n+1} (P_n + Q_n) + (P_{n-1} + Q_{n-1}) \partial^C_n = \partial^D_{n+1} R_n + R_{n-1} \partial^C_n.
-\]
+$$
 Thus $f \simeq h$.
 
 ::: pf-proof

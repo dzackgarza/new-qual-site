@@ -39,13 +39,13 @@ audit:
 ::: {.problem}
 Let $R=F[x]$ be the polynomial ring over a field $F$, let $n\geq2$, and
 let $p_1,\dots,p_n\in R$. Prove that
-\[
+$$
 \gcd(p_1,\dots,p_n)=1
-\]
+$$
 if and only if there is an $n\times n$ matrix over $R$ with determinant $1$ whose first row is
-\[
+$$
 (p_1,\dots,p_n).
-\]
+$$
 :::
 
 ::: {.solution}

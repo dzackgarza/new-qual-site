@@ -19,9 +19,9 @@ audit:
 
 ::: {.problem}
 A generalized Cantor space is a space homeomorphic to
-\[
+$$
 \{0,1\}^{\kappa},
-\]
+$$
 where $\{0,1\}$ is discrete and $\kappa$ is a cardinal. A space is zero-dimensional if it is $T_0$ and has a basis of clopen sets.
 
 Outline a proof that a space is zero-dimensional if and only if it is homeomorphic to a subspace of a generalized Cantor space.

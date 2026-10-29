@@ -23,11 +23,11 @@ audit:
 
 ::: {.problem}
 Decompose
-\[
+$$
 x^4-4
 \qquad\text{and}\qquad
 x^3-2
-\]
+$$
 into irreducible factors over $\RR$, over $\ZZ$, and over $\ZZ/3\ZZ$.
 :::
 

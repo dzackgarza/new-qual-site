@@ -46,14 +46,14 @@ Hint: Suppose to the contrary that $ab \in \mathfrak{p}$ and $a, b \notin \mathf
 ::: pf-step
 
 For part (a), there is an exact sequence
-\[
+$$
 0\longrightarrow M\cap N\xrightarrow{\iota}M\oplus N\xrightarrow{\pi}M+N\longrightarrow0,
-\]
-where \(\iota(x)=(x,-x)\) and \(\pi(m,n)=m+n\).
+$$
+where $\iota(x)=(x,-x)$ and $\pi(m,n)=m+n$.
 
 ::: pf-proof
 
-The map \(\iota\) is injective. The map \(\pi\) is surjective by definition of \(M+N\). Its kernel consists of pairs \((m,n)\) with \(m=-n\in M\cap N\), exactly the image of \(\iota\).
+The map $\iota$ is injective. The map $\pi$ is surjective by definition of $M+N$. Its kernel consists of pairs $(m,n)$ with $m=-n\in M\cap N$, exactly the image of $\iota$.
 
 :::
 
@@ -61,15 +61,15 @@ The map \(\iota\) is injective. The map \(\pi\) is surjective by definition of \
 
 ::: {.pf-step #s2}
 
-The module \(M\oplus N\) is finitely generated.
+The module $M\oplus N$ is finitely generated.
 
 ::: pf-proof
 
-Let \(x_1,\ldots,x_r\) generate \(M\cap N\), and let \(y_1,\ldots,y_s\) generate \(M+N\). Choose lifts \(z_j\in M\oplus N\) with \(\pi(z_j)=y_j\). Then the finite set
-\[
+Let $x_1,\ldots,x_r$ generate $M\cap N$, and let $y_1,\ldots,y_s$ generate $M+N$. Choose lifts $z_j\in M\oplus N$ with $\pi(z_j)=y_j$. Then the finite set
+$$
 \{\iota(x_1),\ldots,\iota(x_r),z_1,\ldots,z_s\}
-\]
-generates \(M\oplus N\): subtracting a suitable combination of the \(z_j\)'s from any element leaves an element of \(\ker\pi=\operatorname{im}\iota\).
+$$
+generates $M\oplus N$: subtracting a suitable combination of the $z_j$'s from any element leaves an element of $\ker\pi=\operatorname{im}\iota$.
 
 :::
 
@@ -77,11 +77,11 @@ generates \(M\oplus N\): subtracting a suitable combination of the \(z_j\)'s fro
 
 ::: pf-step
 
-Hence \(M\) is finitely generated.
+Hence $M$ is finitely generated.
 
 ::: pf-proof
 
-The projection \(M\oplus N\twoheadrightarrow M\) is surjective. A quotient of a finitely generated module is finitely generated, so step [](#s2){.pf-ref} implies that \(M\) is finitely generated.
+The projection $M\oplus N\twoheadrightarrow M$ is surjective. A quotient of a finitely generated module is finitely generated, so step [](#s2){.pf-ref} implies that $M$ is finitely generated.
 
 :::
 
@@ -89,15 +89,15 @@ The projection \(M\oplus N\twoheadrightarrow M\) is surjective. A quotient of a 
 
 ::: {.pf-step #s4}
 
-For part (b), let \(\mathcal C\) be a chain in \(\Sigma\). Its union
-\[
+For part (b), let $\mathcal C$ be a chain in $\Sigma$. Its union
+$$
 I=\bigcup_{\mathfrak a\in\mathcal C}\mathfrak a
-\]
-is an ideal of \(A\).
+$$
+is an ideal of $A$.
 
 ::: pf-proof
 
-Because \(\mathcal C\) is totally ordered by inclusion, any two elements of the union lie together in one member of the chain. Closure under addition and multiplication by arbitrary elements of \(A\) follows there.
+Because $\mathcal C$ is totally ordered by inclusion, any two elements of the union lie together in one member of the chain. Closure under addition and multiplication by arbitrary elements of $A$ follows there.
 
 :::
 
@@ -105,15 +105,15 @@ Because \(\mathcal C\) is totally ordered by inclusion, any two elements of the 
 
 ::: {.pf-step #s5}
 
-The ideal \(I\) is not finitely generated, so \(I\in\Sigma\).
+The ideal $I$ is not finitely generated, so $I\in\Sigma$.
 
 ::: pf-proof
 
-Suppose \(I=(x_1,\ldots,x_t)\). Each \(x_i\) lies in some \(\mathfrak a_i\in\mathcal C\). Since the chain is totally ordered and the set is finite, one member \(\mathfrak a\in\mathcal C\) contains all the \(\mathfrak a_i\), hence all the generators \(x_i\). Then
-\[
+Suppose $I=(x_1,\ldots,x_t)$. Each $x_i$ lies in some $\mathfrak a_i\in\mathcal C$. Since the chain is totally ordered and the set is finite, one member $\mathfrak a\in\mathcal C$ contains all the $\mathfrak a_i$, hence all the generators $x_i$. Then
+$$
 I=(x_1,\ldots,x_t)\subseteq\mathfrak a\subseteq I,
-\]
-so \(I=\mathfrak a\), contradicting \(\mathfrak a\in\Sigma\).
+$$
+so $I=\mathfrak a$, contradicting $\mathfrak a\in\Sigma$.
 
 :::
 
@@ -121,11 +121,11 @@ so \(I=\mathfrak a\), contradicting \(\mathfrak a\in\Sigma\).
 
 ::: pf-step
 
-Therefore \(\Sigma\) has a maximal element.
+Therefore $\Sigma$ has a maximal element.
 
 ::: pf-proof
 
-By steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, every chain in \(\Sigma\) has an upper bound in \(\Sigma\). Zorn's lemma gives a maximal element.
+By steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, every chain in $\Sigma$ has an upper bound in $\Sigma$. Zorn's lemma gives a maximal element.
 
 :::
 
@@ -133,16 +133,16 @@ By steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, every chain in \(\Sigma\) has an
 
 ::: {.pf-step #s7}
 
-For part (c), let \(\mathfrak p\) be maximal in \(\Sigma\). Suppose for contradiction that \(ab\in\mathfrak p\) while \(a,b\notin\mathfrak p\).
+For part (c), let $\mathfrak p$ be maximal in $\Sigma$. Suppose for contradiction that $ab\in\mathfrak p$ while $a,b\notin\mathfrak p$.
 Then both
-\[
+$$
 \mathfrak p+(a)\qquad\text{and}\qquad (\mathfrak p:a)=\{x\in A:ax\in\mathfrak p\}
-\]
-strictly contain \(\mathfrak p\), so both are finitely generated.
+$$
+strictly contain $\mathfrak p$, so both are finitely generated.
 
 ::: pf-proof
 
-Because \(a\notin\mathfrak p\), the ideal \(\mathfrak p+(a)\) strictly contains \(\mathfrak p\). Also \(\mathfrak p\subseteq(\mathfrak p:a)\), while \(b\in(\mathfrak p:a)\setminus\mathfrak p\) because \(ab\in\mathfrak p\) and \(b\notin\mathfrak p\). Thus both ideals strictly contain the maximal element \(\mathfrak p\) of \(\Sigma\), and therefore neither belongs to \(\Sigma\); each is finitely generated.
+Because $a\notin\mathfrak p$, the ideal $\mathfrak p+(a)$ strictly contains $\mathfrak p$. Also $\mathfrak p\subseteq(\mathfrak p:a)$, while $b\in(\mathfrak p:a)\setminus\mathfrak p$ because $ab\in\mathfrak p$ and $b\notin\mathfrak p$. Thus both ideals strictly contain the maximal element $\mathfrak p$ of $\Sigma$, and therefore neither belongs to $\Sigma$; each is finitely generated.
 
 :::
 
@@ -150,11 +150,11 @@ Because \(a\notin\mathfrak p\), the ideal \(\mathfrak p+(a)\) strictly contains 
 
 ::: {.pf-step #s8}
 
-The intersection \(\mathfrak p\cap(a)\) is finitely generated.
+The intersection $\mathfrak p\cap(a)$ is finitely generated.
 
 ::: pf-proof
 
-Multiplication by \(a\) maps \((\mathfrak p:a)\) onto \(\mathfrak p\cap(a)\): every \(x\in(\mathfrak p:a)\) gives \(ax\in\mathfrak p\cap(a)\), and every element of \(\mathfrak p\cap(a)\) has the form \(ax\) with \(ax\in\mathfrak p\), hence \(x\in(\mathfrak p:a)\). Since \((\mathfrak p:a)\) is finitely generated by step [](#s7){.pf-ref}, so is its image \(\mathfrak p\cap(a)\).
+Multiplication by $a$ maps $(\mathfrak p:a)$ onto $\mathfrak p\cap(a)$: every $x\in(\mathfrak p:a)$ gives $ax\in\mathfrak p\cap(a)$, and every element of $\mathfrak p\cap(a)$ has the form $ax$ with $ax\in\mathfrak p$, hence $x\in(\mathfrak p:a)$. Since $(\mathfrak p:a)$ is finitely generated by step [](#s7){.pf-ref}, so is its image $\mathfrak p\cap(a)$.
 
 :::
 
@@ -162,11 +162,11 @@ Multiplication by \(a\) maps \((\mathfrak p:a)\) onto \(\mathfrak p\cap(a)\): ev
 
 ::: {.pf-step #s9}
 
-Applying part (a) to the submodules \(\mathfrak p\) and \((a)\) of the \(A\)-module \(A\), we conclude that \(\mathfrak p\) is finitely generated, a contradiction.
+Applying part (a) to the submodules $\mathfrak p$ and $(a)$ of the $A$-module $A$, we conclude that $\mathfrak p$ is finitely generated, a contradiction.
 
 ::: pf-proof
 
-Their sum \(\mathfrak p+(a)\) is finitely generated by step [](#s7){.pf-ref}, and their intersection is finitely generated by step [](#s8){.pf-ref}. Part (a) therefore implies that \(\mathfrak p\) is finitely generated, contradicting \(\mathfrak p\in\Sigma\).
+Their sum $\mathfrak p+(a)$ is finitely generated by step [](#s7){.pf-ref}, and their intersection is finitely generated by step [](#s8){.pf-ref}. Part (a) therefore implies that $\mathfrak p$ is finitely generated, contradicting $\mathfrak p\in\Sigma$.
 
 :::
 
@@ -174,11 +174,11 @@ Their sum \(\mathfrak p+(a)\) is finitely generated by step [](#s7){.pf-ref}, an
 
 ::: pf-step
 
-Hence \(\mathfrak p\) is prime.
+Hence $\mathfrak p$ is prime.
 
 ::: pf-proof
 
-The contradiction in step [](#s9){.pf-ref} shows that \(ab\in\mathfrak p\) implies \(a\in\mathfrak p\) or \(b\in\mathfrak p\). Also \(\mathfrak p\ne A\), because \(A=(1)\) is finitely generated and hence does not lie in \(\Sigma\). Thus \(\mathfrak p\) is a prime ideal.
+The contradiction in step [](#s9){.pf-ref} shows that $ab\in\mathfrak p$ implies $a\in\mathfrak p$ or $b\in\mathfrak p$. Also $\mathfrak p\ne A$, because $A=(1)$ is finitely generated and hence does not lie in $\Sigma$. Thus $\mathfrak p$ is a prime ideal.
 
 :::
 

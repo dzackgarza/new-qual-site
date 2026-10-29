@@ -21,18 +21,18 @@ Calculate $\int _ { - 3 } ^ { 3 } | x + 1 | d x .$
 
 ::: pf-step
 
-The expression \(x+1\) changes sign at
-\[
+The expression $x+1$ changes sign at
+$$
 \boxed{x=-1}.
-\]
+$$
 
 
 ::: pf-proof
 
 Solve
-\[
+$$
 x+1=0.
-\]
+$$
 
 :::
 
@@ -41,21 +41,21 @@ x+1=0.
 ::: {.pf-step #s1-2}
 
 For
-\[
+$$
 -3\le x\le-1,
-\]
+$$
 one has
-\[
+$$
 \boxed{|x+1|=-(x+1)}.
-\]
+$$
 
 
 ::: pf-proof
 
 On this interval,
-\[
+$$
 x+1\le0.
-\]
+$$
 
 :::
 
@@ -64,21 +64,21 @@ x+1\le0.
 ::: {.pf-step #s1-3}
 
 For
-\[
+$$
 -1\le x\le3,
-\]
+$$
 one has
-\[
+$$
 \boxed{|x+1|=x+1}.
-\]
+$$
 
 
 ::: pf-proof
 
 On this interval,
-\[
+$$
 x+1\ge0.
-\]
+$$
 
 :::
 
@@ -87,13 +87,13 @@ x+1\ge0.
 ::: {.pf-step #s1-4}
 
 Therefore
-\[
+$$
 \int_{-3}^{3}|x+1|\,dx
 =
 \int_{-3}^{-1}-(x+1)\,dx
 +
 \int_{-1}^{3}(x+1)\,dx.
-\]
+$$
 
 
 ::: pf-proof
@@ -107,14 +107,14 @@ Split the integral at the sign-change point and use steps [](#s1-2){.pf-ref} thr
 ::: {.pf-step #s1-5}
 
 The first integral equals
-\[
+$$
 \boxed{2}.
-\]
+$$
 
 
 ::: pf-proof
 
-\[
+$$
 \begin{aligned}
 \int_{-3}^{-1}-(x+1)\,dx
 &=
@@ -134,7 +134,7 @@ The first integral equals
 &=
 2.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -143,14 +143,14 @@ The first integral equals
 ::: {.pf-step #s1-6}
 
 The second integral equals
-\[
+$$
 \boxed{8}.
-\]
+$$
 
 
 ::: pf-proof
 
-\[
+$$
 \begin{aligned}
 \int_{-1}^{3}(x+1)\,dx
 &=
@@ -170,7 +170,7 @@ The second integral equals
 &=
 8.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -179,18 +179,18 @@ The second integral equals
 ::: {.pf-step #s1-7}
 
 Hence
-\[
+$$
 \boxed{
 \int_{-3}^{3}|x+1|\,dx=10}.
-\]
+$$
 
 
 ::: pf-proof
 
 Combine steps [](#s1-4){.pf-ref} through [](#s1-6){.pf-ref}:
-\[
+$$
 2+8=10.
-\]
+$$
 
 :::
 

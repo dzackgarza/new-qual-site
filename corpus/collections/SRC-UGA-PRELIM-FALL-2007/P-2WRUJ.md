@@ -24,18 +24,18 @@ Prove by mathematical induction that for all $n \geq k$ we have $$\sum_{m=k}^{n}
 
 ::: {.solution}
 For $n=k$,
-\[
+$$
 \sum_{m=k}^{k}\binom{m}{k}=\binom{k}{k}=1=\binom{k+1}{k+1}.
-\]
+$$
 Assume
-\[
+$$
 \sum_{m=k}^{n}\binom{m}{k}=\binom{n+1}{k+1}.
-\]
+$$
 Then Pascal's identity gives
-\[
+$$
 \sum_{m=k}^{n+1}\binom{m}{k}
 =\binom{n+1}{k+1}+\binom{n+1}{k}
 =\binom{n+2}{k+1}.
-\]
+$$
 Thus the identity holds for all $n\ge k$ by induction.
 :::

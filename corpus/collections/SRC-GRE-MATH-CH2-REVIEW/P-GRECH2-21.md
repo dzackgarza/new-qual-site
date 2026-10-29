@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 The following function is defined for all positive $x$:
 
-\[
+$$
 f(x) = \int_{x}^{2x} \frac{\sin t}{t} dt
-\]
+$$
 
 At what value of $x$ on the interval $(0, \frac{3\pi}{2})$ does this function attain a local maximum?
 

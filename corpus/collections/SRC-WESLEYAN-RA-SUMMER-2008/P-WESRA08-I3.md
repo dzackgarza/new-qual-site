@@ -27,19 +27,19 @@ State the Lebesgue monotone convergence theorem in an abstract measure space.
 
 ::: {.solution}
 Let $(X,\mathcal M,\mu)$ be a measure space, and let
-\[
+$$
 0\le f_1\le f_2\le\cdots
-\]
+$$
 be measurable functions with
-\[
+$$
 f_n(x)\longrightarrow f(x)
-\]
+$$
 for almost every $x\in X$.
 Then $f$ is measurable and
-\[
+$$
 \boxed{
 \int_X f\,d\mu
 =\lim_{n\to\infty}\int_X f_n\,d\mu,}
-\]
+$$
 where both sides are allowed to equal $+\infty$.
 :::

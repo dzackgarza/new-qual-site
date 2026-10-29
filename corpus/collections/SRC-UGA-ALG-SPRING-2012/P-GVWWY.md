@@ -58,21 +58,21 @@ If $A'=PAP^{-1}$ represents $T$ in another basis, then $xI_n-A'=P(xI_n-A)P^{-1}$
 ::: {.pf-step #s3}
 
 The Cayley–Hamilton identity
-\[
+$$
 \boxed{p_T(T)=0}
-\]
+$$
 holds.
 
 ::: pf-proof
 
 For $n=0$ the characteristic polynomial is $1$ and the endomorphism ring of the zero space is the zero ring, so the statement holds. Assume $n>0$. Set $C(x)=\operatorname{adj}(xI_n-A)=\sum_{j=0}^{n-1}C_jx^j$ and $p_T(x)=\sum_{j=0}^na_jx^j$. The adjugate identity gives
-\[
+$$
 C(x)(xI_n-A)=p_T(x)I_n.
-\]
+$$
 Equating coefficients gives $-C_0A=a_0I_n$, $C_{j-1}-C_jA=a_jI_n$ for $1\leq j<n$, and $C_{n-1}=a_nI_n$. Multiplying the $j$-th coefficient equation on the right by $A^j$ and summing yields
-\[
+$$
 \sum_{j=0}^na_jA^j=-C_0A+\sum_{j=1}^{n-1}(C_{j-1}A^j-C_jA^{j+1})+C_{n-1}A^n=0
-\]
+$$
 by telescoping. Thus $p_T(A)=0$, and therefore $p_T(T)=0$.
 
 :::

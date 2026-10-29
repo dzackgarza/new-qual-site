@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Which of the following is the larger eigenvalue of
-\[
+$$
 \begin{pmatrix}5&1\\1&5\end{pmatrix}?
-\]
+$$
 
 (A) $4$  (B) $5$  (C) $6$  (D) $10$  (E) $12$
 :::

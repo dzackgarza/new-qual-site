@@ -27,15 +27,15 @@ Show that $(X,\tau')$ is compact but not Hausdorff.
 ::: {.pf-step #s1-1}
 
 Let
-\[
+$$
 \mathcal U
-\]
-be an open cover of \(X\) in the topology \(\tau'\).
+$$
+be an open cover of $X$ in the topology $\tau'$.
 
 
 ::: pf-proof
 
-To prove \((X,\tau')\) compact, it suffices to show that an arbitrary \(\tau'\)-open cover has a finite subcover.
+To prove $(X,\tau')$ compact, it suffices to show that an arbitrary $\tau'$-open cover has a finite subcover.
 
 :::
 
@@ -43,16 +43,16 @@ To prove \((X,\tau')\) compact, it suffices to show that an arbitrary \(\tau'\)-
 
 ::: {.pf-step #s1-2}
 
-Every member of \(\mathcal U\) is also \(\tau\)-open.
+Every member of $\mathcal U$ is also $\tau$-open.
 
 
 ::: pf-proof
 
 The hypothesis
-\[
+$$
 \tau'\subseteq\tau
-\]
-means every \(\tau'\)-open set belongs to \(\tau\).
+$$
+means every $\tau'$-open set belongs to $\tau$.
 
 :::
 
@@ -60,12 +60,12 @@ means every \(\tau'\)-open set belongs to \(\tau\).
 
 ::: {.pf-step #s1-3}
 
-Therefore \(\mathcal U\) is an open cover of \((X,\tau)\).
+Therefore $\mathcal U$ is an open cover of $(X,\tau)$.
 
 
 ::: pf-proof
 
-It covers the same underlying set \(X\), and all its members are \(\tau\)-open by step [](#s1-2){.pf-ref}.
+It covers the same underlying set $X$, and all its members are $\tau$-open by step [](#s1-2){.pf-ref}.
 
 :::
 
@@ -73,12 +73,12 @@ It covers the same underlying set \(X\), and all its members are \(\tau\)-open b
 
 ::: pf-step
 
-Since \((X,\tau)\) is compact, \(\mathcal U\) has a finite subcover.
+Since $(X,\tau)$ is compact, $\mathcal U$ has a finite subcover.
 
 
 ::: pf-proof
 
-Apply compactness of \((X,\tau)\) to the cover from step [](#s1-3){.pf-ref}.
+Apply compactness of $(X,\tau)$ to the cover from step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -87,16 +87,16 @@ Apply compactness of \((X,\tau)\) to the cover from step [](#s1-3){.pf-ref}.
 ::: {.pf-step #s1-5}
 
 Hence
-\[
+$$
 \boxed{
 (X,\tau')
 \text{ is compact}.}
-\]
+$$
 
 
 ::: pf-proof
 
-The \(\tau'\)-open cover in step [](#s1-1){.pf-ref} was arbitrary.
+The $\tau'$-open cover in step [](#s1-1){.pf-ref} was arbitrary.
 
 :::
 
@@ -105,9 +105,9 @@ The \(\tau'\)-open cover in step [](#s1-1){.pf-ref} was arbitrary.
 ::: {.pf-step #s1-6}
 
 Consider the identity map
-\[
+$$
 \operatorname{id}_X:(X,\tau)\to(X,\tau').
-\]
+$$
 
 
 ::: pf-proof
@@ -126,18 +126,18 @@ The identity map in step [](#s1-6){.pf-ref} is continuous.
 ::: pf-proof
 
 If
-\[
+$$
 U\in\tau',
-\]
+$$
 then
-\[
+$$
 \operatorname{id}_X^{-1}(U)=U.
-\]
+$$
 Since
-\[
+$$
 \tau'\subseteq\tau,
-\]
-the set \(U\) is \(\tau\)-open.
+$$
+the set $U$ is $\tau$-open.
 
 :::
 
@@ -150,7 +150,7 @@ The identity map is bijective.
 
 ::: pf-proof
 
-It is the identity function on the same set \(X\).
+It is the identity function on the same set $X$.
 
 :::
 
@@ -164,10 +164,10 @@ A continuous bijection from a compact space to a Hausdorff space is a homeomorph
 ::: pf-proof
 
 Let
-\[
+$$
 f:K\to Y
-\]
-be continuous and bijective, with \(K\) compact and \(Y\) Hausdorff. If \(C\subseteq K\) is closed, then \(C\) is compact, so \(f(C)\) is compact in \(Y\). Compact subsets of Hausdorff spaces are closed. Thus \(f\) is a closed bijection, so \(f^{-1}\) is continuous.
+$$
+be continuous and bijective, with $K$ compact and $Y$ Hausdorff. If $C\subseteq K$ is closed, then $C$ is compact, so $f(C)$ is compact in $Y$. Compact subsets of Hausdorff spaces are closed. Thus $f$ is a closed bijection, so $f^{-1}$ is continuous.
 
 :::
 
@@ -176,9 +176,9 @@ be continuous and bijective, with \(K\) compact and \(Y\) Hausdorff. If \(C\subs
 ::: pf-step
 
 Therefore
-\[
+$$
 \operatorname{id}_X:(X,\tau)\to(X,\tau')
-\]
+$$
 is a homeomorphism.
 
 
@@ -193,9 +193,9 @@ The domain is compact by hypothesis, the codomain is Hausdorff by the contradict
 ::: pf-step
 
 Hence the inverse identity
-\[
+$$
 \operatorname{id}_X:(X,\tau')\to(X,\tau)
-\]
+$$
 is continuous.
 
 
@@ -210,22 +210,22 @@ A homeomorphism has continuous inverse.
 ::: {.pf-step #s1-12}
 
 Therefore
-\[
+$$
 \boxed{\tau\subseteq\tau'}.
-\]
+$$
 
 
 ::: pf-proof
 
 Let
-\[
+$$
 U\in\tau.
-\]
+$$
 Continuity of the inverse identity means
-\[
+$$
 U=\operatorname{id}_X^{-1}(U)
-\]
-must be \(\tau'\)-open.
+$$
+must be $\tau'$-open.
 
 :::
 
@@ -234,13 +234,13 @@ must be \(\tau'\)-open.
 ::: {.pf-step #s1-13}
 
 Combining
-\[
+$$
 \tau'\subseteq\tau
-\]
+$$
 with step [](#s1-12){.pf-ref} gives
-\[
+$$
 \tau'=\tau.
-\]
+$$
 
 
 ::: pf-proof
@@ -254,9 +254,9 @@ Two sets contained in one another are equal.
 ::: {.pf-step #s1-14}
 
 This contradicts the strict inclusion
-\[
+$$
 \tau'\subsetneq\tau.
-\]
+$$
 
 
 ::: pf-proof
@@ -270,16 +270,16 @@ The equality from step [](#s1-13){.pf-ref} is incompatible with the hypothesis.
 ::: {.pf-step #s1-15}
 
 Therefore
-\[
+$$
 \boxed{
 (X,\tau')
 \text{ is not Hausdorff}.}
-\]
+$$
 
 
 ::: pf-proof
 
-The assumption that \((X,\tau')\) was Hausdorff led to the contradiction in step [](#s1-14){.pf-ref}.
+The assumption that $(X,\tau')$ was Hausdorff led to the contradiction in step [](#s1-14){.pf-ref}.
 
 :::
 

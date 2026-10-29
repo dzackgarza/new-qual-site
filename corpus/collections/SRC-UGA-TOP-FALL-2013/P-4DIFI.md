@@ -37,15 +37,15 @@ Prove that the Euler characteristic of a compact surface with boundary which has
 ::: pf-step
 
 Use the compact-surface convention that a surface is connected, and let $S$ be the given compact surface with boundary components
-\[
+$$
 C_1,\dots,C_k.
-\]
+$$
 Cap each boundary component by a disk to obtain a closed connected surface
-\[
+$$
 \widehat S
 =
 S\cup_{C_1}D_1^2\cup\cdots\cup_{C_k}D_k^2.
-\]
+$$
 
 ::: pf-proof
 
@@ -61,23 +61,23 @@ The connectedness convention matters here: if disconnected $2$-manifolds were al
 ::: {.pf-step #s2}
 
 Capping the $k$ boundary circles increases Euler characteristic by $k$:
-\[
+$$
 \chi(\widehat S)=\chi(S)+k.
-\]
+$$
 
 ::: pf-proof
 
 Compact surfaces admit finite CW structures for which the boundary circles are subcomplexes.
 For finite CW complexes, Euler characteristic satisfies
-\[
+$$
 \chi(A\cup B)
 =
 \chi(A)+\chi(B)-\chi(A\cap B)
-\]
+$$
 when the intersection is a subcomplex.
 
 Attaching one capping disk gives
-\[
+$$
 \chi(S\cup_{S^1}D^2)
 =
 \chi(S)+\chi(D^2)-\chi(S^1)
@@ -85,11 +85,11 @@ Attaching one capping disk gives
 \chi(S)+1-0
 =
 \chi(S)+1.
-\]
+$$
 Applying this successively to the $k$ boundary components yields
-\[
+$$
 \chi(\widehat S)=\chi(S)+k.
-\]
+$$
 
 :::
 
@@ -104,20 +104,20 @@ Every closed connected compact surface has Euler characteristic at most $2$.
 By the classification theorem for compact surfaces, a closed connected surface is either
 
 - orientable of genus $g\ge0$, with
-  \[
+  $$
   \chi=2-2g\le2,
-  \]
+  $$
   or
 
 - nonorientable of genus $h\ge1$, with
-  \[
+  $$
   \chi=2-h\le1<2.
-  \]
+  $$
 
 Therefore
-\[
+$$
 \chi(\widehat S)\le2.
-\]
+$$
 
 :::
 
@@ -126,22 +126,22 @@ Therefore
 ::: pf-step
 
 Hence
-\[
+$$
 \boxed{\chi(S)\le2-k}.
-\]
+$$
 
 ::: pf-proof
 
 By step [](#s2){.pf-ref},
-\[
+$$
 \chi(S)=\chi(\widehat S)-k.
-\]
+$$
 Using step [](#s3){.pf-ref} gives
-\[
+$$
 \chi(S)
 \le
 2-k,
-\]
+$$
 as required.
 
 :::

@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 If $f(x)$ is a function that's differentiable everywhere, what is the value of this limit?
 
-\[
+$$
 \lim_{h \to 0} \frac{f(x + 3h^2) - f(x - h^2)}{2h^2}
-\]
+$$
 
 (A) $4f'(x)$
 (B) $2f'(x)$

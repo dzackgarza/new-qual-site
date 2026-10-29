@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let $f:[0,1]\to\RR$ be nondecreasing. Assume that $f$ is differentiable almost everywhere. Prove that
-\[
+$$
 \int_0^1 f'(x)\,dx\le f(1)-f(0).
-\]
+$$
 :::
 
 ::: {.solution}

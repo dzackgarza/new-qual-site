@@ -32,9 +32,9 @@ Prove that $\sqrt[3]{2} \notin \QQ(\zeta)$.
 
 ::: {.solution}
 Set
-\[
+$$
 L=\QQ(\zeta).
-\]
+$$
 
 ::: pf
 
@@ -46,15 +46,15 @@ The extension $L/\QQ$ is finite abelian Galois.
 
 The field $L$ is the splitting field over $\QQ$ of the $n$th cyclotomic polynomial, so $L/\QQ$ is finite Galois.
 Moreover,
-\[
+$$
 \operatorname{Gal}(L/\QQ)
 \hookrightarrow
 (\ZZ/n\ZZ)^\times,
-\]
+$$
 indeed every automorphism is determined by
-\[
+$$
 \zeta\longmapsto\zeta^a
-\]
+$$
 for some $a$ prime to $n$.
 Hence $\operatorname{Gal}(L/\QQ)$ is abelian.
 
@@ -65,22 +65,22 @@ Hence $\operatorname{Gal}(L/\QQ)$ is abelian.
 ::: {.pf-step #s2}
 
 Every intermediate field
-\[
+$$
 \QQ\subseteq E\subseteq L
-\]
+$$
 is Galois over $\QQ$.
 
 ::: pf-proof
 
 By the fundamental theorem of Galois theory,
-\[
+$$
 E=L^H
-\]
+$$
 for the subgroup
-\[
+$$
 H=\operatorname{Gal}(L/E)
 \le\operatorname{Gal}(L/\QQ).
-\]
+$$
 By step [](#s1){.pf-ref}, the ambient Galois group is abelian, so every subgroup is normal.
 The Galois correspondence therefore implies that $E/\QQ$ is Galois.
 
@@ -91,26 +91,26 @@ The Galois correspondence therefore implies that $E/\QQ$ is Galois.
 ::: {.pf-step #s3}
 
 The extension
-\[
+$$
 \QQ(\sqrt[3]{2})/\QQ
-\]
+$$
 is not Galois.
 
 ::: pf-proof
 
 The polynomial
-\[
+$$
 x^3-2
-\]
+$$
 is irreducible over $\QQ$ by Eisenstein's criterion at $2$, so it is the minimal polynomial of $\sqrt[3]{2}$.
 Its three roots are
-\[
+$$
 \sqrt[3]{2},
 \qquad
 \omega\sqrt[3]{2},
 \qquad
 \omega^2\sqrt[3]{2},
-\]
+$$
 where $\omega$ is a primitive cube root of unity.
 The field $\QQ(\sqrt[3]{2})$ is contained in $\RR$, whereas the latter two roots are nonreal.
 Thus the minimal polynomial does not split over $\QQ(\sqrt[3]{2})$, so this extension is not normal and hence is not Galois.
@@ -122,30 +122,30 @@ Thus the minimal polynomial does not split over $\QQ(\sqrt[3]{2})$, so this exte
 ::: pf-step
 
 One has
-\[
+$$
 \sqrt[3]{2}\notin\QQ(\zeta).
-\]
+$$
 
 ::: pf-proof
 
 Suppose instead that
-\[
+$$
 \sqrt[3]{2}\in L.
-\]
+$$
 Then
-\[
+$$
 \QQ
 \subseteq
 \QQ(\sqrt[3]{2})
 \subseteq
 L.
-\]
+$$
 By step [](#s2){.pf-ref}, the intermediate extension $\QQ(\sqrt[3]{2})/\QQ$ would be Galois.
 This contradicts step [](#s3){.pf-ref}.
 Therefore
-\[
+$$
 \sqrt[3]{2}\notin\QQ(\zeta).
-\]
+$$
 
 :::
 

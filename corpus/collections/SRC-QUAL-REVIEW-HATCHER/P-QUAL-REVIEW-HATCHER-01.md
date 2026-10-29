@@ -18,26 +18,26 @@ audit:
 ::: {.problem}
 Let $R$ be a ring.
 If
-\[
+$$
 z=\sum_i r_i\sigma_i
-\]
+$$
 is a $k$-cycle in $C_k(X;R)$ and $\alpha\in C^k(X;R)$, define
-\[
+$$
 \langle z,\alpha\rangle=\sum_i r_i\,\alpha(\sigma_i).
-\]
+$$
 Prove that if $z-z'$ is a boundary, then $\langle z,\alpha\rangle=\langle z',\alpha\rangle$.
 Likewise, prove that if $\alpha$ is a coboundary and $z$ is a cycle, then $\langle z,\alpha\rangle=0$.
 Deduce that there is a well-defined bilinear pairing
-\[
+$$
 H_k(X;R)\times H^k(X;R)\longrightarrow R.
-\]
+$$
 This pairing is sometimes called the Kronecker product.
 :::
 
 The first assertion in the source needs the standard missing hypothesis
-\[
+$$
 \delta\alpha=0.
-\]
+$$
 Without it, the assertion is false.
 
 ::: {.solution}
@@ -52,50 +52,50 @@ The literal first assertion fails for an arbitrary cochain.
 ::: pf-proof
 
 Take
-\[
+$$
 X=[0,1],
 \qquad
 R=\ZZ,
 \qquad
 k=0.
-\]
+$$
 Let
-\[
+$$
 z=[1],
 \qquad
 z'=[0].
-\]
+$$
 Both are $0$-cycles, and if
-\[
+$$
 \sigma:[0,1]\to[0,1],
 \qquad
 \sigma(t)=t,
-\]
+$$
 is the standard singular $1$-simplex, then
-\[
+$$
 z-z'
 =
 \partial\sigma.
-\]
+$$
 
 Choose a $0$-cochain
-\[
+$$
 \alpha\in C^0(X;\ZZ)
-\]
+$$
 with
-\[
+$$
 \alpha([1])=1,
 \qquad
 \alpha([0])=0.
-\]
+$$
 Then
-\[
+$$
 \langle z,\alpha\rangle=1
-\]
+$$
 while
-\[
+$$
 \langle z',\alpha\rangle=0.
-\]
+$$
 Thus boundary-equivalent cycles need not pair equally with an arbitrary
 cochain.
 
@@ -106,43 +106,43 @@ cochain.
 ::: {.pf-step #s1-2}
 
 For a singular chain
-\[
+$$
 c\in C_k(X;R)
-\]
+$$
 and a cochain
-\[
+$$
 \beta\in C^{k-1}(X;R),
-\]
+$$
 the chain--cochain pairing satisfies
-\[
+$$
 \boxed{
 \langle c,\delta\beta\rangle
 =
 \langle\partial c,\beta\rangle.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 By definition, the singular coboundary
-\[
+$$
 \delta\beta\in C^k(X;R)
-\]
+$$
 is the cochain
-\[
+$$
 (\delta\beta)(\sigma)
 =
 \beta(\partial\sigma)
-\]
+$$
 on each singular $k$-simplex $\sigma$.
 
 If
-\[
+$$
 c=\sum_i r_i\sigma_i,
-\]
+$$
 then
-\[
+$$
 \begin{aligned}
 \langle c,\delta\beta\rangle
 &=
@@ -158,7 +158,7 @@ then
 &=
 \langle\partial c,\beta\rangle.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -167,31 +167,31 @@ then
 ::: {.pf-step #s1-3}
 
 If
-\[
+$$
 z-z'=\partial w
-\]
+$$
 and
-\[
+$$
 \alpha\in Z^k(X;R)
-\]
+$$
 is a cocycle, then
-\[
+$$
 \boxed{
 \langle z,\alpha\rangle
 =
 \langle z',\alpha\rangle.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 \delta\alpha=0,
-\]
+$$
 step [](#s1-2){.pf-ref} gives
-\[
+$$
 \begin{aligned}
 \langle z,\alpha\rangle
 -
@@ -205,7 +205,7 @@ step [](#s1-2){.pf-ref} gives
 &=
 0.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -214,35 +214,35 @@ step [](#s1-2){.pf-ref} gives
 ::: {.pf-step #s1-4}
 
 If
-\[
+$$
 \alpha=\delta\beta
-\]
+$$
 is a coboundary and
-\[
+$$
 z\in Z_k(X;R)
-\]
+$$
 is a cycle, then
-\[
+$$
 \boxed{
 \langle z,\alpha\rangle=0.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-2){.pf-ref},
-\[
+$$
 \langle z,\alpha\rangle
 =
 \langle z,\delta\beta\rangle
 =
 \langle\partial z,\beta\rangle.
-\]
+$$
 Since
-\[
+$$
 \partial z=0,
-\]
+$$
 the right-hand side is zero.
 
 :::
@@ -252,64 +252,64 @@ the right-hand side is zero.
 ::: {.pf-step #s1-5}
 
 If
-\[
+$$
 z,z'\in Z_k(X;R)
-\]
+$$
 represent the same homology class and
-\[
+$$
 \alpha,\alpha'\in Z^k(X;R)
-\]
+$$
 represent the same cohomology class, then
-\[
+$$
 \langle z,\alpha\rangle
 =
 \langle z',\alpha'\rangle.
-\]
+$$
 
 
 ::: pf-proof
 
 Because
-\[
+$$
 [z]=[z'],
-\]
+$$
 one has
-\[
+$$
 z-z'=\partial w
-\]
+$$
 for some
-\[
+$$
 w\in C_{k+1}(X;R).
-\]
+$$
 Step [](#s1-3){.pf-ref} gives
-\[
+$$
 \langle z,\alpha\rangle
 =
 \langle z',\alpha\rangle.
-\]
+$$
 
 Because
-\[
+$$
 [\alpha]=[\alpha'],
-\]
+$$
 there is
-\[
+$$
 \beta\in C^{k-1}(X;R)
-\]
+$$
 with
-\[
+$$
 \alpha-\alpha'=\delta\beta.
-\]
+$$
 Then step [](#s1-4){.pf-ref}, applied to the cycle $z'$, gives
-\[
+$$
 \langle z',\alpha-\alpha'\rangle=0.
-\]
+$$
 Hence
-\[
+$$
 \langle z',\alpha\rangle
 =
 \langle z',\alpha'\rangle.
-\]
+$$
 Combining the two equalities proves the claim.
 
 :::
@@ -319,7 +319,7 @@ Combining the two equalities proves the claim.
 ::: {.pf-step #s1-6}
 
 Therefore
-\[
+$$
 \boxed{
 \langle-,-\rangle:
 H_k(X;R)\times H^k(X;R)
@@ -330,7 +330,7 @@ R,
 \longmapsto
 \langle z,\alpha\rangle
 }
-\]
+$$
 is well defined.
 
 
@@ -351,7 +351,7 @@ The pairing is bilinear.
 ::: pf-proof
 
 On chain and cochain representatives,
-\[
+$$
 \left\langle
 z_1+z_2,\alpha
 \right\rangle
@@ -359,9 +359,9 @@ z_1+z_2,\alpha
 \langle z_1,\alpha\rangle
 +
 \langle z_2,\alpha\rangle,
-\]
+$$
 and
-\[
+$$
 \left\langle
 z,\alpha_1+\alpha_2
 \right\rangle
@@ -369,7 +369,7 @@ z,\alpha_1+\alpha_2
 \langle z,\alpha_1\rangle
 +
 \langle z,\alpha_2\rangle.
-\]
+$$
 Scalar multiplication behaves compatibly as well.
 These identities descend through the quotient groups by step [](#s1-6){.pf-ref}.
 

@@ -30,13 +30,13 @@ Show that the maps $G \xrightarrow{n} G$ and $H \xrightarrow{n} H$ multiplying e
 
 ::: {.solution}
 Choose a free resolution
-\[
+$$
 \cdots\longrightarrow F_1\xrightarrow{d_1}F_0\longrightarrow H\longrightarrow0.
-\]
+$$
 Then
-\[
+$$
 \operatorname{Ext}(H,G)=H^1(\operatorname{Hom}(F_\bullet,G)).
-\]
+$$
 
 ::: pf
 
@@ -47,14 +47,14 @@ Multiplication by $n$ on $G$ induces multiplication by $n$ on $\operatorname{Ext
 ::: pf-proof
 
 The map
-\[
+$$
 [n]_G:G\to G,\qquad g\mapsto ng
-\]
+$$
 induces on every cochain group the map
-\[
+$$
 \operatorname{Hom}(F_i,G)\to\operatorname{Hom}(F_i,G),
 \qquad \varphi\mapsto [n]_G\circ\varphi=n\varphi.
-\]
+$$
 Thus the induced cochain map is literally multiplication by $n$ in every degree. Its map on cohomology, in particular on $H^1=\operatorname{Ext}(H,G)$, is therefore multiplication by $n$.
 
 :::
@@ -68,9 +68,9 @@ Multiplication by $n$ on $H$ also induces multiplication by $n$ on $\operatornam
 ::: pf-proof
 
 The endomorphism $[n]_H:H\to H$ lifts to the chain endomorphism $[n]_{F_i}:F_i\to F_i$ given by multiplication by $n$ in each degree, since all differentials are homomorphisms and hence commute with multiplication by $n$. Because $\operatorname{Ext}$ is contravariant in its first variable, the resulting cochain map is precomposition:
-\[
+$$
 \varphi\longmapsto \varphi\circ[n]_{F_i}=n\varphi.
-\]
+$$
 Again this is multiplication by $n$ on every cochain group, so it induces multiplication by $n$ on cohomology.
 
 :::
@@ -80,7 +80,7 @@ Again this is multiplication by $n$ on every cochain group, so it induces multip
 :::
 
 Hence both endomorphisms specified in the problem induce
-\[
+$$
 \boxed{n\cdot\operatorname{id}_{\operatorname{Ext}(H,G)}}.
-\]
+$$
 :::

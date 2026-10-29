@@ -45,29 +45,29 @@ $$
 :::
 
 ::: {.solution}
-Let \([f]\in\pi_1(X,x_0)\). By definition,
-\[
+Let $[f]\in\pi_1(X,x_0)$. By definition,
+$$
 \widehat\alpha([f])=[\bar\alpha*f*\alpha].
-\]
-Applying \((h_{x_1})_*\) gives
-\[
+$$
+Applying $(h_{x_1})_*$ gives
+$$
 (h_{x_1})_*\widehat\alpha([f])
 =[h\circ\bar\alpha*(h\circ f)*(h\circ\alpha)].
-\]
-Since \(\beta=h\circ\alpha\), we have \(h\circ\bar\alpha=\bar\beta\). Hence
-\[
+$$
+Since $\beta=h\circ\alpha$, we have $h\circ\bar\alpha=\bar\beta$. Hence
+$$
 (h_{x_1})_*\widehat\alpha([f])
 =[\bar\beta*(h\circ f)*\beta].
-\]
+$$
 On the other hand,
-\[
+$$
 \widehat\beta (h_{x_0})_*([f])
 =\widehat\beta([h\circ f])
 =[\bar\beta*(h\circ f)*\beta].
-\]
+$$
 Thus the two maps agree on every class:
-\[
+$$
 \boxed{\widehat\beta\circ(h_{x_0})_*=(h_{x_1})_*\circ\widehat\alpha}.
-\]
-Since change-of-basepoint maps are isomorphisms, this proves that the homomorphism induced by \(h\) is independent of the chosen basepoint up to the canonical basepoint-change isomorphisms.
+$$
+Since change-of-basepoint maps are isomorphisms, this proves that the homomorphism induced by $h$ is independent of the chosen basepoint up to the canonical basepoint-change isomorphisms.
 :::

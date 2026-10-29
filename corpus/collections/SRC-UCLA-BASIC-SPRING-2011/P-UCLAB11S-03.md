@@ -25,9 +25,9 @@ Show that there exists a unitary operator $U$ such that $UHU^*$ is diagonal.
 ::: pf-step
 
 By the spectral theorem, there exists an orthonormal basis
-\[
+$$
 v_1,\ldots,v_n
-\]
+$$
 of eigenvectors of $H$.
 
 
@@ -36,13 +36,13 @@ of eigenvectors of $H$.
 The operator $H$ is Hermitian on a finite-dimensional inner-product space.
 The spectral theorem for Hermitian operators therefore gives an orthonormal basis consisting of eigenvectors.
 Thus there are real numbers
-\[
+$$
 \lambda_1,\ldots,\lambda_n
-\]
+$$
 such that
-\[
+$$
 Hv_j=\lambda_jv_j
-\]
+$$
 for every $j$.
 
 :::
@@ -52,17 +52,17 @@ for every $j$.
 ::: pf-step
 
 Let $U^*$ be the unitary change-of-basis operator sending the standard orthonormal basis
-\[
+$$
 e_1,\ldots,e_n
-\]
+$$
 to
-\[
+$$
 v_1,\ldots,v_n.
-\]
+$$
 Then
-\[
+$$
 U
-\]
+$$
 is its inverse.
 
 
@@ -70,13 +70,13 @@ is its inverse.
 
 An operator sending one orthonormal basis to another preserves inner products, hence is unitary.
 Thus
-\[
+$$
 (U^*)^{-1}=U.
-\]
+$$
 Equivalently,
-\[
+$$
 UU^*=U^*U=I.
-\]
+$$
 
 :::
 
@@ -85,19 +85,19 @@ UU^*=U^*U=I.
 ::: {.pf-step #s1-3}
 
 For every $j$,
-\[
+$$
 UHU^*e_j=\lambda_je_j.
-\]
+$$
 
 
 ::: pf-proof
 
 By definition,
-\[
+$$
 U^*e_j=v_j.
-\]
+$$
 Hence
-\[
+$$
 \begin{aligned}
 UHU^*e_j
 &=
@@ -109,7 +109,7 @@ U(\lambda_jv_j)\\
 &=
 \lambda_je_j.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -118,13 +118,13 @@ U(\lambda_jv_j)\\
 ::: {.pf-step #s1-4}
 
 Therefore
-\[
+$$
 \boxed{
 UHU^*
 =
 \operatorname{diag}(\lambda_1,\ldots,\lambda_n)
 }.
-\]
+$$
 
 
 ::: pf-proof

@@ -39,14 +39,14 @@ Let $A$ be a unital commutative ring which is Artinian, i.e. if $\mathfrak{a}_1 
 
 Part (a): let $0\ne x\in A$.
 Since $A$ is Artinian, the descending chain
-\[
+$$
 (x)\supseteq(x^2)\supseteq(x^3)\supseteq\cdots
-\]
+$$
 stabilizes.
 Hence for some $n\ge1$,
-\[
+$$
 (x^n)=(x^{n+1}).
-\]
+$$
 
 ::: pf-proof
 
@@ -59,9 +59,9 @@ This is the descending chain condition on ideals.
 ::: pf-step
 
 From $(x^n)=(x^{n+1})$ there exists $a\in A$ such that
-\[
+$$
 x^n=ax^{n+1}.
-\]
+$$
 Since $A$ is a domain and $x\ne0$, cancellation gives $1=ax$.
 Thus every nonzero element of $A$ is invertible, so $A$ is a field.
 

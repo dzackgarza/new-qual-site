@@ -25,13 +25,13 @@ audit:
 
 ::: {.problem}
 Let $0<x_1<1$ and define
-\[
+$$
 x_{n+1}=x_n-x_n^{n+1}.
-\]
+$$
 Show that
-\[
+$$
 \liminf_{n\to\infty}x_n>0.
-\]
+$$
 :::
 
 ::: {.solution}

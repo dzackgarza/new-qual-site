@@ -33,9 +33,9 @@ Suspension of a Cartesian product:
 ::: pf-step
 
 For any pointed CW complexes $X$ and $Y$, there is a natural homotopy equivalence:
-\[
+$$
 \Sigma(X \times Y) \simeq \Sigma X \vee \Sigma Y \vee \Sigma(X \wedge Y).
-\]
+$$
 
 ::: pf-proof
 
@@ -48,9 +48,9 @@ Hatcher Proposition 4I.1 (suspension splits product into wedges with the smash p
 ::: pf-step
 
 Let $X = K(\ZZ_m, 1)$ and $Y = K(\ZZ_n, 1)$. Since $K(G \times H, 1) \simeq K(G, 1) \times K(H, 1)$, we have:
-\[
+$$
 \Sigma K(\ZZ_m \times \ZZ_n, 1) \simeq \Sigma K(\ZZ_m, 1) \vee \Sigma K(\ZZ_n, 1) \vee \Sigma\big(K(\ZZ_m, 1) \wedge K(\ZZ_n, 1)\big).
-\]
+$$
 
 ::: pf-proof
 
@@ -123,9 +123,9 @@ algebra of torsion abelian groups.
 ::: pf-step
 
 By the Künneth formula for smash products:
-\[
+$$
 \widetilde{H}_k(X \wedge Y) \cong \bigoplus_{i+j=k} \big(\widetilde{H}_i(X) \otimes \widetilde{H}_j(Y)\big) \oplus \bigoplus_{i+j=k-1} \operatorname{Tor}_1^\ZZ\big(\widetilde{H}_i(X), \widetilde{H}_j(Y)\big) = 0 \quad \text{for all } k \ge 0.
-\]
+$$
 
 ::: pf-proof
 
@@ -138,9 +138,9 @@ Künneth formula for spaces and step [](#s2-4){.pf-ref}.
 ::: pf-step
 
 The suspension $\Sigma(X \wedge Y)$ is simply connected and has all reduced homology groups zero:
-\[
+$$
 \widetilde{H}_*(\Sigma(X \wedge Y)) \cong \widetilde{H}_{*-1}(X \wedge Y) = 0.
-\]
+$$
 
 ::: pf-proof
 
@@ -169,9 +169,9 @@ Whitehead's Theorem and Hurewicz Theorem.
 ::: pf-step
 
 Conclusion:
-\[
+$$
 \Sigma K(\ZZ_m \times \ZZ_n, 1) \simeq \Sigma K(\ZZ_m, 1) \vee \Sigma K(\ZZ_n, 1) \vee * \simeq \Sigma K(\ZZ_m, 1) \vee \Sigma K(\ZZ_n, 1).
-\]
+$$
 Q.E.D.
 
 ::: pf-proof

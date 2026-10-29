@@ -20,9 +20,9 @@ audit:
 ::: {.problem}
 Let $U \subset \CC$ be a bounded connected open set containing $0$, and $f : U \to U$ a holomorphic function which satisfies $f(0) = 0$ and $|f'(0)| < 1$.
 Write
-\[
+$$
 f^{(n)} = \underbrace{f \circ f \circ \cdots \circ f}_{n\text{ times}}.
-\]
+$$
 
 (i) Show that there is a neighborhood $V$ of $0$ such that the sequence $f^{(n)}$ converges to $0$ locally uniformly on $V$.
 
@@ -58,9 +58,9 @@ Taylor expansion of $f$ around $0$.
 
 Let $\lambda = |f'(0)| < 1$ and choose $M$ such that $\lambda < M < 1$.
 There exists $r > 0$ such that the disk $V = B(0, r) \subset U$ satisfies:
-\[
+$$
 |f(z)| \le M |z| \quad \text{for all } z \in V.
-\]
+$$
 
 ::: pf-proof
 
@@ -74,9 +74,9 @@ definition of limit.
 
 Since $M < 1$, for any $z \in V$ we have $|f(z)| \le M |z| < |z| < r$, so $f(V) \subset V$.
 By induction, for every $n \ge 1$ and $z \in V$:
-\[
+$$
 |f^{(n)}(z)| \le M^n |z| \le M^n r.
-\]
+$$
 
 ::: pf-proof
 
@@ -89,9 +89,9 @@ induction on $n$.
 ::: pf-step
 
 As $n \to \infty$, $M^n \to 0$. Thus:
-\[
+$$
 \sup_{z \in V} |f^{(n)}(z)| \le M^n r \to 0.
-\]
+$$
 Hence $f^{(n)}$ converges uniformly to $0$ on $V$.
 
 ::: pf-proof
@@ -116,9 +116,9 @@ Part (ii): Global locally uniform convergence on $U$:
 
 Since $U$ is bounded, there exists $R > 0$ such that $|z| \le R$ for all $z \in U$.
 Because $f(U) \subseteq U$, every iterate satisfies $f^{(n)}(U) \subseteq U$, so:
-\[
+$$
 |f^{(n)}(z)| \le R \quad \text{for all } z \in U \text{ and } n \ge 1.
-\]
+$$
 Thus the sequence of iterates $(f^{(n)})_{n=1}^\infty$ is uniformly bounded on $U$.
 
 ::: pf-proof

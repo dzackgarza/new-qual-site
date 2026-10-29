@@ -39,26 +39,26 @@ Show that $M'_h$ does not retract onto its boundary circle $C$, and hence $M_g$ 
 ::: {.pf-step #s1}
 
 For $h\ge1$, the surface $M'_h$ has fundamental group
-\[
+$$
 \pi_1(M'_h)\cong F(a_1,b_1,\dots,a_h,b_h),
-\]
+$$
 and its boundary loop $C$ represents
-\[
+$$
 [a_1,b_1]\cdots[a_h,b_h].
-\]
+$$
 
 ::: pf-proof
 
 A genus-$h$ orientable surface with one boundary component has the standard CW description with one vertex and $2h$ one-cells
-\[
+$$
 a_1,b_1,\dots,a_h,b_h,
-\]
+$$
 but with the interior of the usual $2$-cell removed.
 Hence its fundamental group is free on these $2h$ generators.
 The boundary of the missing $2$-cell is the usual surface attaching word
-\[
+$$
 [a_1,b_1]\cdots[a_h,b_h],
-\]
+$$
 so this word represents the boundary circle $C$.
 
 :::
@@ -68,35 +68,35 @@ so this word represents the boundary circle $C$.
 ::: {.pf-step #s2}
 
 There is no retraction
-\[
+$$
 r:M'_h\to C.
-\]
+$$
 
 ::: pf-proof
 
 Suppose such a retraction existed, and let
-\[
+$$
 i:C\hookrightarrow M'_h
-\]
+$$
 be the inclusion.
 Then
-\[
+$$
 r_*\circ i_*=\operatorname{id}_{\pi_1(C)}.
-\]
+$$
 Identify
-\[
+$$
 \pi_1(C)\cong\ZZ.
-\]
+$$
 
 For $h\ge1$, step [](#s1){.pf-ref} says that $i_*(1)$ is a product of commutators.
 Every homomorphism from a group to the abelian group $\ZZ$ kills every commutator, so
-\[
+$$
 r_*i_*(1)=0,
-\]
+$$
 contradicting
-\[
+$$
 r_*i_*(1)=1.
-\]
+$$
 
 If $h=0$, then $M'_0=D^2$, so $i_*:\pi_1(S^1)\to\pi_1(D^2)$ is the zero map and cannot possess a left inverse either.
 Thus no retraction exists for any $h\ge0$.
@@ -112,13 +112,13 @@ The closed surface $M_g$ cannot retract onto the separating circle $C$.
 ::: pf-proof
 
 If
-\[
+$$
 r:M_g\to C
-\]
+$$
 were a retraction, then restricting $r$ to either subsurface $M'_h\subset M_g$ would give a retraction
-\[
+$$
 r|_{M'_h}:M'_h\to C,
-\]
+$$
 because $C\subset M'_h$ and $r$ is the identity on $C$.
 This contradicts step [](#s2){.pf-ref}.
 
@@ -145,17 +145,17 @@ Thus it suffices to construct a retraction onto $a_1$.
 ::: pf-step
 
 Define a map on the $1$-skeleton
-\[
+$$
 q:M_g^1\to a_1\cong S^1
-\]
+$$
 by mapping the edge $a_1$ identically to itself and collapsing every other $1$-cell to the common vertex.
 
 ::: pf-proof
 
 The standard $1$-skeleton is a wedge of the $2g$ circles
-\[
+$$
 a_1,b_1,\dots,a_g,b_g.
-\]
+$$
 A map from this wedge is determined continuously by its restrictions to the summand circles, and the stated restrictions agree at the wedge point.
 
 :::
@@ -169,13 +169,13 @@ The map $q$ extends across the $2$-cell of $M_g$.
 ::: pf-proof
 
 The attaching map of the $2$-cell represents
-\[
+$$
 [a_1,b_1]\cdots[a_g,b_g].
-\]
+$$
 Under $q_*$, each $b_i$ and every $a_i$ for $i>1$ maps to the identity in
-\[
+$$
 \pi_1(S^1)\cong\ZZ,
-\]
+$$
 while $a_1$ maps to the generator.
 Therefore every commutator maps to the identity, so the entire attaching loop maps trivially in $\pi_1(S^1)$.
 Hence its composite with $q$ is null-homotopic and $q$ extends over the $2$-cell.
@@ -187,9 +187,9 @@ Hence its composite with $q$ is null-homotopic and $q$ extends over the $2$-cell
 ::: pf-step
 
 The extension
-\[
+$$
 r:M_g\to a_1
-\]
+$$
 is a retraction, and hence $M_g$ retracts onto $C'$.
 
 ::: pf-proof

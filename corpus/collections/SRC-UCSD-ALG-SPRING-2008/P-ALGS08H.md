@@ -39,9 +39,9 @@ The center $Z(R)$ is a commutative subring of $R$ containing $1$.
 ::: pf-proof
 
 By definition,
-\[
+$$
 Z(R)=\{z\in R:zr=rz\text{ for every }r\in R\}.
-\]
+$$
 It is closed under addition, subtraction, and multiplication, every two of its elements commute, and $1\in Z(R)$.
 
 :::
@@ -55,23 +55,23 @@ Every nonzero $z\in Z(R)$ is invertible in $R$.
 ::: pf-proof
 
 Because $z$ is central,
-\[
+$$
 RzR=zR=Rz
-\]
+$$
 is a two-sided ideal of $R$.
 It is nonzero because $z=z\cdot1$ belongs to it.
 Since $R$ is simple,
-\[
+$$
 zR=R.
-\]
+$$
 Hence $1\in zR$, so there exists $w\in R$ such that
-\[
+$$
 zw=1.
-\]
+$$
 Centrality of $z$ gives
-\[
+$$
 wz=zw=1,
-\]
+$$
 so $w=z^{-1}$ in $R$.
 
 :::
@@ -86,9 +86,9 @@ The inverse $z^{-1}$ is again central.
 
 Let $w=z^{-1}$ and let $r\in R$.
 Using $zw=wz=1$ and $zr=rz$,
-\[
+$$
 rw=(wz)rw=w(zr)w=w(rz)w=wr(zw)=wr.
-\]
+$$
 Thus $rw=wr$ for every $r\in R$, so $w\in Z(R)$.
 
 :::

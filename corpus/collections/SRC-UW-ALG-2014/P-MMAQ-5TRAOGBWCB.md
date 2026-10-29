@@ -39,23 +39,23 @@ x^p-t\in K[x]$.
 
 ::: {.pf-step #s1}
 
-The polynomial \(f(X)=X^p-t\) has no root in \(K=\FF_p(t)\).
+The polynomial $f(X)=X^p-t$ has no root in $K=\FF_p(t)$.
 
 ::: pf-proof
 
-Suppose \(r\in K\) satisfies \(r^p=t\). Write
-\[
+Suppose $r\in K$ satisfies $r^p=t$. Write
+$$
 r=\frac{a(t)}{b(t)}
-\]
-with coprime \(a,b\in\FF_p[t]\), \(b\ne0\). Then
-\[
+$$
+with coprime $a,b\in\FF_p[t]$, $b\ne0$. Then
+$$
 a(t)^p=t\,b(t)^p.
-\]
-Let \(v_t\) denote the exponent of the irreducible polynomial \(t\) in a nonzero polynomial. Taking \(v_t\) gives
-\[
+$$
+Let $v_t$ denote the exponent of the irreducible polynomial $t$ in a nonzero polynomial. Taking $v_t$ gives
+$$
 p\,v_t(a)=1+p\,v_t(b),
-\]
-which is impossible modulo \(p\). Hence \(f\) has no root in \(K\).
+$$
+which is impossible modulo $p$. Hence $f$ has no root in $K$.
 
 :::
 
@@ -63,19 +63,19 @@ which is impossible modulo \(p\). Hence \(f\) has no root in \(K\).
 
 ::: {.pf-step #s2}
 
-If \(\alpha\) is a root of \(f\) in a splitting field \(E\), then
-\[
+If $\alpha$ is a root of $f$ in a splitting field $E$, then
+$$
 f(X)=(X-\alpha)^p
-\]
-in \(E[X]\).
+$$
+in $E[X]$.
 
 ::: pf-proof
 
-We have \(\alpha^p=t\). Since the characteristic is \(p\), all intermediate binomial coefficients \(\binom pj\) vanish in \(\FF_p\), so
-\[
+We have $\alpha^p=t$. Since the characteristic is $p$, all intermediate binomial coefficients $\binom pj$ vanish in $\FF_p$, so
+$$
 (X-\alpha)^p=X^p-\alpha^p=X^p-t=f(X).
-\]
-Thus \(\alpha\) is the unique root of \(f\) in an algebraic closure, with multiplicity \(p\).
+$$
+Thus $\alpha$ is the unique root of $f$ in an algebraic closure, with multiplicity $p$.
 
 :::
 
@@ -83,23 +83,23 @@ Thus \(\alpha\) is the unique root of \(f\) in an algebraic closure, with multip
 
 ::: pf-step
 
-The polynomial \(f(X)=X^p-t\) is irreducible over \(K\).
+The polynomial $f(X)=X^p-t$ is irreducible over $K$.
 
 ::: pf-proof
 
-Suppose \(f\) were reducible in \(K[X]\). Since \(f\) is monic, it would have a monic factor \(g\in K[X]\) of degree \(r\) with
-\[
+Suppose $f$ were reducible in $K[X]$. Since $f$ is monic, it would have a monic factor $g\in K[X]$ of degree $r$ with
+$$
 1\le r\le p-1.
-\]
-Over the splitting field \(E\), step [](#s2){.pf-ref} shows that every root of \(g\) must equal \(\alpha\). Hence
-\[
+$$
+Over the splitting field $E$, step [](#s2){.pf-ref} shows that every root of $g$ must equal $\alpha$. Hence
+$$
 g(X)=(X-\alpha)^r.
-\]
-The coefficient of \(X^{r-1}\) in this polynomial is \(-r\alpha\). Because \(1\le r<p\), the element \(r\in\FF_p\) is nonzero, hence invertible. Since \(g\in K[X]\), we obtain
-\[
+$$
+The coefficient of $X^{r-1}$ in this polynomial is $-r\alpha$. Because $1\le r<p$, the element $r\in\FF_p$ is nonzero, hence invertible. Since $g\in K[X]$, we obtain
+$$
 \alpha=-r^{-1}[X^{r-1}]g\in K,
-\]
-contradicting step [](#s1){.pf-ref}. Therefore \(f\) is irreducible over \(K\).
+$$
+contradicting step [](#s1){.pf-ref}. Therefore $f$ is irreducible over $K$.
 
 :::
 

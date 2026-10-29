@@ -22,21 +22,21 @@ Show that there are no bounded holomorphic functions $f : \Delta \to \CC$ with z
 ::: {.solution}
 Suppose that a bounded nonzero holomorphic function $f$ on $\DD$ has
 zeros at all
-\[
+$$
 a_n=1-\frac1n,
 \qquad n\ge2.
-\]
+$$
 The zeros of a bounded nonzero holomorphic function satisfy the Blaschke
 condition
-\[
+$$
 \sum_n(1-|a_n|)<\infty.
-\]
+$$
 But here
-\[
+$$
 \sum_{n=2}^\infty(1-|a_n|)
 =\sum_{n=2}^\infty\frac1n
 =\infty.
-\]
+$$
 This contradiction proves that no such nonzero bounded holomorphic function
 exists. The zero function is excluded because its zero set is all of
 $\DD$, not only the points $a_n$.

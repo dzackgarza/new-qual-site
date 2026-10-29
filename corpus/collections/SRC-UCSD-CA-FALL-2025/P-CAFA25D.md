@@ -37,20 +37,20 @@ constant throughout that disk. Hence $f$ itself is constant by the open
 mapping theorem. Since $r$ was arbitrary, $f$ is constant on $\DD$.
 
 (ii) Write
-\[
+$$
 f(z)=z^m h(z),
-\]
+$$
 where $h$ is holomorphic on $\DD$ and $h(0)\ne0$. For each $r>0$,
-\[
+$$
 |h(re^{i\theta})|
 =\frac{|f(re^{i\theta})|}{r^m}
-\]
+$$
 is independent of $\theta$. Part (i), applied to $h$, gives
-\[
+$$
 h\equiv c.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{f(z)=cz^m.}
-\]
+$$
 :::

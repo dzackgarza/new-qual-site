@@ -41,19 +41,19 @@ The sets $E_m\coloneqq\{x\in[0,1]:|f_n(x)|\le m\text{ for every }n\}$, $m\ge1$, 
 ::: pf-proof
 
 For each integer $m\ge1$, define
-\[
+$$
 E_m:=\{x\in[0,1]: |f_n(x)|\le m\text{ for every }n\}.
-\]
+$$
 Since each $f_n$ is continuous,
-\[
+$$
 E_m=\bigcap_{n=1}^\infty\{x:|f_n(x)|\le m\}
-\]
+$$
 is closed in $[0,1]$.
 
 The pointwise boundedness hypothesis says that for every $x\in[0,1]$ there exists some $m$ with $x\in E_m$. Hence
-\[
+$$
 [0,1]=\bigcup_{m=1}^\infty E_m.
-\]
+$$
 
 :::
 
@@ -68,21 +68,21 @@ Some $E_{m_0}$ contains an interval $(a,b)$ with $0\le a<b\le1$, and then $\sup_
 The compact metric space $[0,1]$ is complete. By the Baire Category Theorem, it cannot be a countable union of closed sets all having empty interior. Therefore some $E_{m_0}$ has nonempty interior relative to $[0,1]$.
 
 Choose $0\le a<b\le1$ such that
-\[
+$$
 (a,b)\subset E_{m_0}.
-\]
+$$
 Then for every $n$ and every $x\in(a,b)$,
-\[
+$$
 |f_n(x)|\le m_0.
-\]
+$$
 Consequently
-\[
+$$
 \|f_n\chi_{(a,b)}\|_u\le m_0
-\]
+$$
 for every $n$, and hence
-\[
+$$
 \boxed{\sup_n\|f_n\chi_{(a,b)}\|_u<\infty.}
-\]
+$$
 
 :::
 

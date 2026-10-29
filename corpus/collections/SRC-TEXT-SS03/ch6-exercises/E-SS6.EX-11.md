@@ -32,25 +32,25 @@ $$
 
 ::: {.solution}
 With the Fourier-transform convention used in this text,
-\[
+$$
 \widehat f(\xi)=\int_{-\infty}^{\infty}f(x)e^{-2\pi i x\xi}\,dx.
-\]
+$$
 For $f(x)=e^{ax}e^{-e^x}$ and $a>0$,
-\[
+$$
 \widehat f(\xi)
 =\int_{-\infty}^{\infty}e^{(a-2\pi i\xi)x}e^{-e^x}\,dx.
-\]
+$$
 Set $t=e^x$. Then $dx=dt/t$ and $x$ runs from $-\infty$ to $\infty$ exactly as $t$ runs from $0$ to $\infty$. Therefore
-\[
+$$
 \widehat f(\xi)
 =\int_0^\infty t^{a-2\pi i\xi-1}e^{-t}\,dt
 =\Gamma(a-2\pi i\xi),
-\]
+$$
 since $\Re(a-2\pi i\xi)=a>0$.
 
 The asserted decay of $f$ on every closed substrip $|y|\le \pi/2-\delta$ follows directly from
-\[
+$$
 |f(x+iy)|=e^{ax}e^{-e^x\cos y}.
-\]
+$$
 As $x\to-\infty$ this is $O(e^{ax})$. On $|y|\le\pi/2-\delta$ we have $\cos y\ge\sin\delta>0$, so as $x\to+\infty$ the factor $e^{-e^x\cos y}$ gives superexponential decay. Thus the stated strip decay holds.
 :::

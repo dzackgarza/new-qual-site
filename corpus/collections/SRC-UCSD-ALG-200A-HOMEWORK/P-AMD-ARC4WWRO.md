@@ -40,18 +40,18 @@ Prove that every subgroup $H\le K$ is normal in $G$.
 
 ::: {.solution}
 Write
-\[
+$$
 K=\langle k\rangle.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 Every subgroup $H\le K$ has the form
-\[
+$$
 H=\langle k^m\rangle
-\]
+$$
 for some integer $m\ge0$.
 
 ::: pf-proof
@@ -70,24 +70,24 @@ Every automorphism of $K$ maps $H$ into $H$.
 
 Let $\varphi\in\operatorname{Aut}(K)$.
 Since $K=\langle k\rangle$, there is an integer $u$ such that
-\[
+$$
 \varphi(k)=k^u.
-\]
+$$
 Using step [](#s1){.pf-ref},
-\[
+$$
 \varphi(H)
 =\varphi(\langle k^m\rangle)
 =\langle\varphi(k)^m\rangle
 =\langle k^{um}\rangle.
-\]
+$$
 But
-\[
+$$
 k^{um}=(k^m)^u\in H,
-\]
+$$
 so
-\[
+$$
 \varphi(H)\le H.
-\]
+$$
 
 :::
 
@@ -101,17 +101,17 @@ The subgroup $H$ is characteristic in $K$.
 
 Apply step [](#s2){.pf-ref} to the inverse automorphism $\varphi^{-1}$.
 It gives
-\[
+$$
 \varphi^{-1}(H)\le H.
-\]
+$$
 Applying $\varphi$ to this inclusion yields
-\[
+$$
 H\le\varphi(H).
-\]
+$$
 Combined with step [](#s2){.pf-ref},
-\[
+$$
 \varphi(H)=H.
-\]
+$$
 Since this holds for every $\varphi\in\operatorname{Aut}(K)$, $H$ is characteristic in $K$.
 
 :::
@@ -127,9 +127,9 @@ Therefore $H\normal G$.
 By hypothesis $K\normal G$, and step [](#s3){.pf-ref} shows that $H$ is characteristic in $K$.
 For every $g\in G$, conjugation by $g$ therefore restricts to an automorphism of $K$ that preserves $H$.
 Hence
-\[
+$$
 gHg^{-1}=H
-\]
+$$
 for every $g\in G$, so $H\normal G$.
 
 :::

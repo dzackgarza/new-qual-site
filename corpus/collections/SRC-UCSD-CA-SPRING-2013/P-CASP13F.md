@@ -22,13 +22,13 @@ Prove that $f \equiv 0$.
 Fix a smaller open subarc $S_0\Subset S$. By hypothesis, $f(z)\to0$ as
 $z\to\zeta$ from within $U$, uniformly in the sequential sense, for each
 $\zeta\in S_0$. Define
-\[
+$$
 F(z)=
 \begin{cases}
 f(z),&z\in U,\\
 0,&z\text{ in the reflected cap across the circle }|z+i|=2.
 \end{cases}
-\]
+$$
 Across $S_0$, the two definitions match continuously.
 
 To prove that $F$ is holomorphic across $S_0$, apply Morera's theorem on a
@@ -43,7 +43,7 @@ The extended function vanishes on the open reflected side, so by the identity
 theorem it vanishes on a neighborhood intersecting $U$. Therefore $f$ vanishes
 on a nonempty open subset of the connected domain $U$, and another application
 of the identity theorem gives
-\[
+$$
 \boxed{f\equiv0\text{ on }U.}
-\]
+$$
 :::

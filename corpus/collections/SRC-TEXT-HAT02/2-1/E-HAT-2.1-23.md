@@ -41,17 +41,17 @@ Every simplex in the first barycentric subdivision of a $\Delta$-complex has dis
 
 ::: pf-proof
 A $k$-simplex in the barycentric subdivision is determined inside some original simplex by a strict chain of faces
-\[
+$$
 \sigma_0<\sigma_1<\cdots<\sigma_k.
-\]
+$$
 Its vertices are the barycenters
-\[
+$$
 b_{\sigma_0},b_{\sigma_1},\dots,b_{\sigma_k}.
-\]
+$$
 Since the face inclusions are strict,
-\[
+$$
 \dim\sigma_0<\dim\sigma_1<\cdots<\dim\sigma_k,
-\]
+$$
 so these simplices, and hence their barycenters as vertices of the subdivided $\Delta$-complex, are all distinct.
 :::
 
@@ -71,13 +71,13 @@ In the barycentric subdivision $Y'$, a finite set of vertices spans at most one 
 
 ::: pf-proof
 A vertex of $Y'$ is a simplex of $Y$. A set
-\[
+$$
 \{\sigma_0,\dots,\sigma_k\}
-\]
+$$
 spans a simplex of $Y'$ exactly when these simplices can be ordered into a strict face chain
-\[
+$$
 \sigma_{i_0}<\sigma_{i_1}<\cdots<\sigma_{i_k}.
-\]
+$$
 Such an ordering is unique because dimensions strictly increase along a proper face inclusion. By step [](#s2){.pf-ref}, the individual face incidences are themselves unambiguous. Hence the given vertex set determines at most one simplex of $Y'$.
 :::
 
@@ -94,9 +94,9 @@ Write two simplices as chains of simplices of $Y$. Their common vertices are exa
 
 ::: pf-step
 Properties step [](#s3){.pf-ref} and step [](#s4){.pf-ref} are the defining combinatorial conditions for a simplicial complex. Applying step [](#s1){.pf-ref} to the first barycentric subdivision $X'$ and then steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} to $Y=X'$ shows that
-\[
+$$
 \boxed{X''\text{ is a simplicial complex}.}
-\]
+$$
 :::
 
 :::

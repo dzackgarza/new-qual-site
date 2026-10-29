@@ -52,9 +52,9 @@ GNS construction / finite-dimensional $C^*$-algebra theory.
 
 ::: pf-step
 By the Artin–Wedderburn theorem for finite-dimensional $C^*$-algebras, $\mathcal{A}$ is $*$-isomorphic to a finite direct sum of full matrix algebras:
-\[
+$$
 \mathcal{A} \cong \bigoplus_{k=1}^m M_{n_k}(\CC).
-\]
+$$
 
 ::: pf-proof
 Artin–Wedderburn theorem for finite-dimensional $C^*$-algebras.
@@ -73,9 +73,9 @@ Construct the candidate tracial state $\tau$:
 
 ::: pf-step
 Under the decomposition $a = (a_1, \dots, a_m) \in \bigoplus_{k=1}^m M_{n_k}(\CC)$, define:
-\[
+$$
 \tau(a) = \frac{1}{\sum_{k=1}^m n_k} \sum_{k=1}^m \operatorname{Tr}(a_k),
-\]
+$$
 where $\operatorname{Tr}$ is the standard matrix trace on $M_{n_k}(\CC)$.
 
 ::: pf-proof
@@ -86,9 +86,9 @@ definition of $\tau$.
 
 ::: pf-step
 **Unital:** The unit element of $\mathcal{A}$ is $1 = (I_{n_1}, \dots, I_{n_m})$.
-\[
+$$
 \tau(1) = \frac{1}{\sum_{k=1}^m n_k} \sum_{k=1}^m \operatorname{Tr}(I_{n_k}) = \frac{\sum_{k=1}^m n_k}{\sum_{k=1}^m n_k} = 1.
-\]
+$$
 
 ::: pf-proof
 $\operatorname{Tr}(I_{n_k}) = n_k$.
@@ -99,9 +99,9 @@ $\operatorname{Tr}(I_{n_k}) = n_k$.
 ::: pf-step
 **Tracial property:** For any $a, b \in \mathcal{A}$, the componentwise products are $(ab)_k = a_k b_k$ and $(ba)_k = b_k a_k$.
 Since the matrix trace is cyclic ($\operatorname{Tr}(a_k b_k) = \operatorname{Tr}(b_k a_k)$):
-\[
+$$
 \tau(ab) = \frac{1}{\sum n_k} \sum_{k=1}^m \operatorname{Tr}(a_k b_k) = \frac{1}{\sum n_k} \sum_{k=1}^m \operatorname{Tr}(b_k a_k) = \tau(ba).
-\]
+$$
 
 ::: pf-proof
 cyclicity of the matrix trace on $M_{n_k}(\CC)$.
@@ -111,9 +111,9 @@ cyclicity of the matrix trace on $M_{n_k}(\CC)$.
 
 ::: pf-step
 **Positivity and Faithfulness:** For any $a \in \mathcal{A}$, $(a^* a)_k = a_k^* a_k$.
-\[
+$$
 \tau(a^* a) = \frac{1}{\sum n_k} \sum_{k=1}^m \operatorname{Tr}(a_k^* a_k) = \frac{1}{\sum n_k} \sum_{k=1}^m \|a_k\|_{HS}^2 \ge 0,
-\]
+$$
 where $\|a_k\|_{HS}^2 = \sum_{i,j} |(a_k)_{ij}|^2$ is the Frobenius / Hilbert–Schmidt norm.
 
 ::: pf-proof

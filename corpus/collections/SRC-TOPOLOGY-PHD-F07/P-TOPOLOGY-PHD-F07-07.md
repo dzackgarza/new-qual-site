@@ -37,18 +37,18 @@ Prove that $\RR$ is not compact.
 
 ::: {.pf-step #cover-is-open}
 The family
-\[
+$$
 \mathcal U=\{(-n,n):n\in\NN,\ n\ge1\}
-\]
+$$
 is an open cover of $\RR$.
 
 ::: pf-proof
 Each interval $(-n,n)$ is Euclidean open.
 Given $x\in\RR$, choose an integer $n>|x|$.
 Then
-\[
+$$
 -n<x<n,
-\]
+$$
 so $x\in(-n,n)$.
 Thus the union of the members of $\mathcal U$ is all of $\RR$.
 :::
@@ -60,17 +60,17 @@ No finite subfamily of $\mathcal U$ covers $\RR$.
 
 ::: pf-proof
 Take finitely many members
-\[
+$$
 (-n_1,n_1),\ldots,(-n_k,n_k).
-\]
+$$
 Let
-\[
+$$
 N=\max\{n_1,\ldots,n_k\}.
-\]
+$$
 Since these intervals are nested as their radii increase,
-\[
+$$
 (-n_1,n_1)\cup\cdots\cup(-n_k,n_k)=(-N,N).
-\]
+$$
 The point $N+1$ does not belong to this union.
 Hence the chosen finite subfamily does not cover $\RR$.
 :::

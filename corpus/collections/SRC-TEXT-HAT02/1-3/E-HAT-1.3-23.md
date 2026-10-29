@@ -33,9 +33,9 @@ In particular, a free action of a finite group on a Hausdorff space is a coverin
 
 ::: {.solution}
 Let
-\[
+$$
 q:X\to X/G
-\]
+$$
 be the orbit map.
 
 ::: pf
@@ -44,9 +44,9 @@ be the orbit map.
 
 Fix $x\in X$.
 By proper discontinuity there is an open neighborhood $U$ of $x$ such that
-\[
+$$
 F=\{g\in G:U\cap gU\ne\varnothing\}
-\]
+$$
 is finite.
 
 ::: pf-proof
@@ -60,52 +60,52 @@ This is exactly the stated proper-discontinuity hypothesis.
 ::: {.pf-step #s2}
 
 There is an open neighborhood $V\subseteq U$ of $x$ such that
-\[
+$$
 V\cap gV=\varnothing
 \qquad\text{for every }g\ne e.
-\]
+$$
 
 ::: pf-proof
 
 For each nonidentity $g\in F$, freeness gives
-\[
+$$
 gx\ne x.
-\]
+$$
 Since $X$ is Hausdorff, choose disjoint open neighborhoods
-\[
+$$
 A_g\ni x,
 \qquad
 B_g\ni gx.
-\]
+$$
 Replace $A_g$ by
-\[
+$$
 A_g\cap g^{-1}(B_g),
-\]
+$$
 so that
-\[
+$$
 gA_g\subseteq B_g
-\]
+$$
 and therefore
-\[
+$$
 A_g\cap gA_g=\varnothing.
-\]
+$$
 Because $F\setminus\{e\}$ is finite, the intersection
-\[
+$$
 V=U\cap\bigcap_{g\in F\setminus\{e\}}A_g
-\]
+$$
 is an open neighborhood of $x$.
 
 If $g\in F\setminus\{e\}$, then
-\[
+$$
 V\subseteq A_g,
 \qquad
 gV\subseteq gA_g,
-\]
+$$
 so $V\cap gV=\varnothing$.
 If $g\notin F$, then already $U\cap gU=\varnothing$, and since $V\subseteq U$ we again have
-\[
+$$
 V\cap gV=\varnothing.
-\]
+$$
 Thus the asserted disjointness holds for every nonidentity $g$.
 
 :::
@@ -119,13 +119,13 @@ The translates $gV$ are pairwise disjoint.
 ::: pf-proof
 
 If
-\[
+$$
 gV\cap hV\ne\varnothing,
-\]
+$$
 then applying $g^{-1}$ gives
-\[
+$$
 V\cap g^{-1}hV\ne\varnothing.
-\]
+$$
 By step [](#s2){.pf-ref} this forces $g^{-1}h=e$, hence $g=h$.
 
 :::
@@ -135,13 +135,13 @@ By step [](#s2){.pf-ref} this forces $g^{-1}h=e$, hence $g=h$.
 ::: pf-step
 
 The orbit map restricts to a homeomorphism
-\[
+$$
 q|_V:V\longrightarrow q(V).
-\]
+$$
 Moreover,
-\[
+$$
 q^{-1}(q(V))=\coprod_{g\in G}gV.
-\]
+$$
 
 ::: pf-proof
 
@@ -150,9 +150,9 @@ By step [](#s3){.pf-ref} the union is disjoint.
 The map $q|_V$ is injective because two points of $V$ in the same orbit would lie in $V\cap gV$ for some $g$, forcing $g=e$.
 It is surjective onto $q(V)$ by definition.
 The quotient map $q$ is open because
-\[
+$$
 q^{-1}(q(W))=\bigcup_{g\in G}gW
-\]
+$$
 is open for every open $W\subseteq X$.
 Hence $q|_V$ is an open continuous bijection, thus a homeomorphism.
 
@@ -180,9 +180,9 @@ If $G$ is finite and acts freely on a Hausdorff space $X$, then the action is a 
 ::: pf-proof
 
 For every neighborhood $U$ of any point,
-\[
+$$
 \{g\in G:U\cap gU\ne\varnothing\}\subseteq G
-\]
+$$
 is finite because $G$ itself is finite.
 Thus the action is properly discontinuous in the stated sense, and step [](#s5){.pf-ref} applies.
 

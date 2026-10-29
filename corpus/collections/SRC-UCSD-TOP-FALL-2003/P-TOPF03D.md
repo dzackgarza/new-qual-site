@@ -53,11 +53,11 @@ $\partial(T^2 \times [0, 1]) = (T^2 \times \{0\}) \cup (T^2 \times \{1\})$.
 
 ::: pf-step
 The homology groups of $N$ and $A$ are:
-\[
+$$
 H_k(N) \cong \begin{cases} \ZZ & k = 0, 2, \\ \ZZ^2 & k = 1, \\ 0 & k \ge 3, \end{cases}
 \qquad
 H_k(A) \cong \begin{cases} \ZZ^2 & k = 0, 2, \\ \ZZ^4 & k = 1, \\ 0 & k \ge 3. \end{cases}
-\]
+$$
 
 ::: pf-proof
 homology of $T^2$ and disjoint union $H_k(T^2 \sqcup T^2) \cong H_k(T^2) \oplus H_k(T^2)$.
@@ -67,9 +67,9 @@ homology of $T^2$ and disjoint union $H_k(T^2 \sqcup T^2) \cong H_k(T^2) \oplus 
 
 ::: pf-step
 The reduced Mayer–Vietoris sequence for $(S^3, X, N)$ is:
-\[
+$$
 0 \to \widetilde{H}_3(S^3) \xrightarrow{\partial_3} H_2(A) \to H_2(X) \oplus H_2(N) \to \widetilde{H}_2(S^3) \to H_1(A) \to H_1(X) \oplus H_1(N) \to \widetilde{H}_1(S^3) \to \widetilde{H}_0(A) \to \widetilde{H}_0(X) \oplus \widetilde{H}_0(N) \to \widetilde{H}_0(S^3) \to 0.
-\]
+$$
 
 ::: pf-proof
 Mayer–Vietoris theorem for open regular neighborhoods in manifolds.
@@ -133,9 +133,9 @@ homology of non-closed 3-manifolds vanishes in dimension $\ge 3$.
 
 ::: {.pf-step #degree3-sequence}
 The sequence at degree 3 to 2 is:
-\[
+$$
 0 \to \ZZ \xrightarrow{\partial_3} \ZZ^2 \xrightarrow{\Phi_2} H_2(X) \oplus \ZZ \to 0.
-\]
+$$
 
 ::: pf-proof
 $\widetilde{H}_3(S^3) \cong \ZZ$, $H_2(A) \cong \ZZ^2$, $H_2(N) \cong \ZZ$, and $\widetilde{H}_2(S^3) = 0$.
@@ -181,9 +181,9 @@ Compute $H_1(X)$:
 
 ::: {.pf-step #degree1-iso}
 Since $\widetilde{H}_2(S^3) = 0$ and $\widetilde{H}_1(S^3) = 0$, the sequence at degree 1 is an isomorphism:
-\[
+$$
 0 \to H_1(A) \xrightarrow{(i_{X*}, i_{N*})} H_1(X) \oplus H_1(N) \to 0.
-\]
+$$
 
 ::: pf-proof
 Mayer–Vietoris exactness.
@@ -215,13 +215,13 @@ classification of finitely generated free abelian groups.
 
 ::: pf-qed
 Conclusion:
-\[
+$$
 H_k(X; \ZZ) \cong \begin{cases}
 \ZZ^2 & k = 0, \\
 \ZZ^2 & k = 1, \\
 0 & k \ge 2.
 \end{cases}
-\]
+$$
 
 Steps [](#compute-h0){.pf-ref}, [](#compute-h2-and-above){.pf-ref}, and [](#compute-h1){.pf-ref}.
 :::

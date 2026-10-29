@@ -17,22 +17,22 @@ audit:
 
 ::: {.problem}
 Equip $M_n(\CC)$ with the metric
-\[
+$$
 \operatorname{dist}(A,B)
 =\left(\sum_{i,j}|A_{ij}-B_{ij}|^2\right)^{1/2}.
-\]
+$$
 
 (a) Suppose $F:\RR\to M_n(\CC)$ is continuous.
 Show that
-\[
+$$
 \{x\in\RR:F(x)\text{ is invertible}\}
-\]
+$$
 is open in the usual topology on $\RR$.
 
 (b) Show that on the set above, the map
-\[
+$$
 x\longmapsto F(x)^{-1}
-\]
+$$
 is continuous.
 :::
 

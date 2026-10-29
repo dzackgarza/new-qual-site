@@ -27,20 +27,20 @@ State the Lebesgue monotone convergence theorem.
 
 ::: {.solution}
 Let $(X,\mathcal A,\mu)$ be a measure space and let
-\[
+$$
 0\le f_1\le f_2\le\cdots
-\]
+$$
 be measurable functions.
 If
-\[
+$$
 f(x)=\lim_{n\to\infty}f_n(x)
-\]
+$$
 pointwise, with values allowed in $[0,\infty]$, then
-\[
+$$
 \boxed{
 \int_X f\,d\mu
 =
 \lim_{n\to\infty}\int_X f_n\,d\mu.}
-\]
+$$
 Both sides are allowed to equal $+\infty$.
 :::

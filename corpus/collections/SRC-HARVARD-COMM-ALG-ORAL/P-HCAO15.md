@@ -40,12 +40,12 @@ to $(\ZZ/2\ZZ)^3$.
 
 ::: pf-proof
 Take the diagonal sign matrices
-\[
+$$
 \left\{
 \operatorname{diag}(\varepsilon_1,\varepsilon_2,\varepsilon_3)
 :\varepsilon_i\in\{\pm1\}
 \right\}.
-\]
+$$
 They form a subgroup of order $8$ in which every nonidentity element has order
 $2$, hence a copy of $(\ZZ/2\ZZ)^3$.
 :::
@@ -59,19 +59,19 @@ has order at most $4$.
 ::: pf-proof
 Let $E\le\operatorname{GL}_2(\RR)$ be elementary abelian. Every
 $A\in E$ satisfies $A^2=I$, so its minimal polynomial divides
-\[
+$$
 T^2-1=(T-1)(T+1).
-\]
+$$
 The roots are distinct over $\RR$, hence every $A$ is diagonalizable.
 Because the elements of $E$ commute, they are simultaneously diagonalizable:
 diagonalize one non-scalar element; its eigenspaces are preserved by every
 commuting element, and scalar elements preserve every basis.
 
 Thus, after conjugation, $E$ is contained in
-\[
+$$
 \{\operatorname{diag}(\varepsilon_1,\varepsilon_2):
 \varepsilon_i\in\{\pm1\}\},
-\]
+$$
 which has order $4$.
 :::
 

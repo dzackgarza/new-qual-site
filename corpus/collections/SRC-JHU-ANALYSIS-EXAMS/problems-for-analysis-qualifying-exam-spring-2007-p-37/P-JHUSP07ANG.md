@@ -26,9 +26,9 @@ audit:
 
 ::: {.problem}
 Suppose $(f_n)$ is a sequence in $L^2(\RR)$ that converges weakly to $f\in L^2(\RR)$. Is it possible that
-\[
+$$
 \|f_n\|_{L^2}\longrightarrow\infty?
-\]
+$$
 :::
 
 ::: {.solution}

@@ -25,11 +25,11 @@ audit:
 
 ::: {.problem}
 Let $A$ be an $n\times n$ complex matrix with characteristic polynomial $\chi$ and minimal polynomial $\mu$. Suppose
-\[
+$$
 \chi(x)=\mu(x)(x-i),
 \qquad
 \mu(x)^2=\chi(x)(x^2+1).
-\]
+$$
 Determine the Jordan canonical form of $A$.
 :::
 

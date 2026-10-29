@@ -26,8 +26,8 @@ What does the Mayer--Vietoris theorem say about the homology groups of $X$ and i
 :::
 
 ::: {.solution}
-For an open cover \(X=A\cup B\), Mayer--Vietoris gives a natural long exact sequence
-\[
+For an open cover $X=A\cup B$, Mayer--Vietoris gives a natural long exact sequence
+$$
 \cdots\to H_n(A\cap B)
 \xrightarrow{(i_*,-j_*)}
 H_n(A)\oplus H_n(B)
@@ -35,10 +35,10 @@ H_n(A)\oplus H_n(B)
 H_n(X)
 \xrightarrow{\partial}
 H_{n-1}(A\cap B)\to\cdots,
-\]
-where \(i,j\) are the inclusions of \(A\cap B\) into \(A,B\), and \(k,\ell\) are the inclusions of \(A,B\) into \(X\). The sequence continues through degree \(0\):
-\[
+$$
+where $i,j$ are the inclusions of $A\cap B$ into $A,B$, and $k,\ell$ are the inclusions of $A,B$ into $X$. The sequence continues through degree $0$:
+$$
 H_1(X)\to H_0(A\cap B)\to H_0(A)\oplus H_0(B)\to H_0(X)\to0.
-\]
-If \(A\cap B\ne\varnothing\), the same maps give an exact sequence in reduced homology, ending in \(\widetilde H_0(A)\oplus\widetilde H_0(B)\to\widetilde H_0(X)\to0\).
+$$
+If $A\cap B\ne\varnothing$, the same maps give an exact sequence in reduced homology, ending in $\widetilde H_0(A)\oplus\widetilde H_0(B)\to\widetilde H_0(X)\to0$.
 :::

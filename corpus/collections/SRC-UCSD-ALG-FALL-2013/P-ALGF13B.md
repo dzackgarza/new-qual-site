@@ -31,76 +31,76 @@ Prove that if $D[x]$ is a PID, then $D$ is a field.
 :::
 
 ::: {.solution}
-Let \(0\neq a\in D\). We prove that \(a\) is a unit.
+Let $0\neq a\in D$. We prove that $a$ is a unit.
 
 ::: pf
 
 ::: pf-step
-The ideal \((a,x)\subseteq D[x]\) is principal.
+The ideal $(a,x)\subseteq D[x]$ is principal.
 
 ::: pf-proof
-By hypothesis \(D[x]\) is a principal ideal domain, so there exists \(f(x)\in D[x]\) such that
-\[
+By hypothesis $D[x]$ is a principal ideal domain, so there exists $f(x)\in D[x]$ such that
+$$
 (a,x)=(f).
-\]
-Thus \(f\mid a\) and \(f\mid x\) in \(D[x]\).
+$$
+Thus $f\mid a$ and $f\mid x$ in $D[x]$.
 :::
 
 :::
 
 ::: {.pf-step #f-is-unit}
-The generator \(f\) is a unit of \(D[x]\).
+The generator $f$ is a unit of $D[x]$.
 
 ::: pf-proof
-Because \(f\mid a\) and \(a\neq0\) is constant, degree additivity in the domain \(D[x]\) gives
-\[
+Because $f\mid a$ and $a\neq0$ is constant, degree additivity in the domain $D[x]$ gives
+$$
 \deg f=0.
-\]
-Hence \(f\in D\setminus\{0\}\).
-Since \(f\mid x\), write
-\[
+$$
+Hence $f\in D\setminus\{0\}$.
+Since $f\mid x$, write
+$$
 x=f g(x).
-\]
-Then \(g\) has degree \(1\). Write
-\[
+$$
+Then $g$ has degree $1$. Write
+$$
 g(x)=cx+d
 \qquad(c,d\in D).
-\]
-Comparing coefficients of \(x\) in \(x=f(cx+d)\) gives
-\[
+$$
+Comparing coefficients of $x$ in $x=f(cx+d)$ gives
+$$
 fc=1.
-\]
-Thus \(f\) is a unit in \(D\), hence also in \(D[x]\).
+$$
+Thus $f$ is a unit in $D$, hence also in $D[x]$.
 :::
 
 :::
 
 ::: {.pf-step #a-is-unit}
-The element \(a\) is a unit in \(D\).
+The element $a$ is a unit in $D$.
 
 ::: pf-proof
 By step [](#f-is-unit){.pf-ref},
-\[
+$$
 (a,x)=(f)=D[x].
-\]
-Therefore there exist \(r(x),s(x)\in D[x]\) such that
-\[
+$$
+Therefore there exist $r(x),s(x)\in D[x]$ such that
+$$
 1=a r(x)+x s(x).
-\]
-Evaluating at \(x=0\) yields
-\[
+$$
+Evaluating at $x=0$ yields
+$$
 1=a r(0).
-\]
-Hence \(a\) is a unit of \(D\).
+$$
+Hence $a$ is a unit of $D$.
 :::
 
 :::
 
 ::: pf-step
-Therefore \(D\) is a field.
+Therefore $D$ is a field.
 
 ::: pf-proof
-Every nonzero element \(a\in D\) is a unit by step [](#a-is-unit){.pf-ref}, which is exactly the definition of a field for an integral domain.
+Every nonzero element $a\in D$ is a unit by step [](#a-is-unit){.pf-ref}, which is exactly the definition of a field for an integral domain.
 :::
 
 :::

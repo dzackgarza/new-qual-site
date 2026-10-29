@@ -27,13 +27,13 @@ audit:
 Let $I=(7,x-3)$ in $\ZZ[x]$.
 
 1. Prove that for every $r\in\ZZ[x]$ there is an integer $\alpha$ with $0\le\alpha\le6$ such that
-\[
+$$
 r-\alpha\in I.
-\]
+$$
 2. Find $\alpha$ for
-\[
+$$
 r=x^{250}+15x^{14}+x^2+5.
-\]
+$$
 :::
 
 ::: {.solution}

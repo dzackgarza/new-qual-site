@@ -44,34 +44,34 @@ For $x\in\mathcal A$, commutativity gives $xx^*=x^*x$.
 Conversely, suppose every element of $\mathcal A$ is normal.
 Fix $x,y\in\mathcal A$ and write $[a,b]=ab-ba$.
 Normality of $x+y$ implies
-\[
+$$
 [x,y^*]+[y,x^*]=0.
-\]
+$$
 
 ::: pf-proof
 Since $x$ and $y$ are individually normal,
-\[
+$$
 0=[x+y,(x+y)^*]
  =[x+y,x^*+y^*]
  =[x,y^*]+[y,x^*].
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #i-sum-normal-gives-commutator-relation}
 Normality of $x+iy$ implies
-\[
+$$
 -i[x,y^*]+i[y,x^*]=0.
-\]
+$$
 
 ::: pf-proof
 Antilinearity of the involution gives $(x+iy)^*=x^*-iy^*$.
 Hence, using again the normality of $x$ and $y$,
-\[
+$$
 0=[x+iy,x^*-iy^*]
  =-i[x,y^*]+i[y,x^*].
-\]
+$$
 :::
 
 :::

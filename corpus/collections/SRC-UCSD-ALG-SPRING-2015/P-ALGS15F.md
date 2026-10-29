@@ -45,14 +45,14 @@ If $H\,\mathrm{char}\,K$ and $K\trianglelefteq G$, then $H\trianglelefteq G$.
 
 Let $g\in G$.
 Since $K\trianglelefteq G$, conjugation by $g$ restricts to an automorphism
-\[
+$$
 c_g:K\longrightarrow K,\qquad k\longmapsto gkg^{-1}.
-\]
+$$
 Because $H$ is characteristic in $K$, every automorphism of $K$ preserves $H$.
 Hence
-\[
+$$
 gHg^{-1}=c_g(H)=H.
-\]
+$$
 This holds for every $g\in G$, so $H\trianglelefteq G$.
 
 **Part (b).**
@@ -121,9 +121,9 @@ Hence $N_G(K)=K$.
 
 If $g\in N_G(K)$, then step [](#s5){.pf-ref} gives $gPg^{-1}=P$.
 Thus $g\in N_G(P)=K$, so
-\[
+$$
 N_G(K)\subseteq K.
-\]
+$$
 The reverse inclusion $K\subseteq N_G(K)$ holds for every subgroup $K$ because each element of $K$ normalizes $K$.
 Therefore $N_G(K)=K$.
 

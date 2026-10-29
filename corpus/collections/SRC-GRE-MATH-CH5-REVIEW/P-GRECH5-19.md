@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 The eigenvalues of the matrix
 
-\[
+$$
 A = \begin{pmatrix} 2 & b \\ 3 & -1 \end{pmatrix}
-\]
+$$
 
 are $-4$ and $b - 1$. Find $b$.
 

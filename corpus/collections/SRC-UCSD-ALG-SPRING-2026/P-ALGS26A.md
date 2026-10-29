@@ -37,11 +37,11 @@ Suppose $G$ is a group of order $5 \cdot 7 \cdot 11$.
 
 ::: {.pf-step #s1}
 
-The Sylow \(11\)-subgroup \(N\) of \(G\) is unique and normal.
+The Sylow $11$-subgroup $N$ of $G$ is unique and normal.
 
 ::: pf-proof
 
-Its number \(n_{11}\) divides \(35\) and satisfies \(n_{11}\equiv1\pmod{11}\). Among the divisors \(1,5,7,35\), only \(1\) is congruent to \(1\pmod{11}\). Hence \(n_{11}=1\). Since \(|N|=11\), one has \(N\cong C_{11}\).
+Its number $n_{11}$ divides $35$ and satisfies $n_{11}\equiv1\pmod{11}$. Among the divisors $1,5,7,35$, only $1$ is congruent to $1\pmod{11}$. Hence $n_{11}=1$. Since $|N|=11$, one has $N\cong C_{11}$.
 
 :::
 
@@ -49,11 +49,11 @@ Its number \(n_{11}\) divides \(35\) and satisfies \(n_{11}\equiv1\pmod{11}\). A
 
 ::: pf-step
 
-The Sylow \(7\)-subgroup \(R\) of \(G\) is unique and normal.
+The Sylow $7$-subgroup $R$ of $G$ is unique and normal.
 
 ::: pf-proof
 
-Its number \(n_7\) divides \(55\) and satisfies \(n_7\equiv1\pmod7\). The divisors \(1,5,11,55\) are congruent modulo \(7\) to \(1,5,4,6\), respectively. Thus \(n_7=1\), and \(R\cong C_7\).
+Its number $n_7$ divides $55$ and satisfies $n_7\equiv1\pmod7$. The divisors $1,5,11,55$ are congruent modulo $7$ to $1,5,4,6$, respectively. Thus $n_7=1$, and $R\cong C_7$.
 
 :::
 
@@ -61,11 +61,11 @@ Its number \(n_7\) divides \(55\) and satisfies \(n_7\equiv1\pmod7\). The diviso
 
 ::: pf-step
 
-Let \(P\) be any Sylow \(5\)-subgroup. Then \(H=PR\) is a subgroup of order \(35\).
+Let $P$ be any Sylow $5$-subgroup. Then $H=PR$ is a subgroup of order $35$.
 
 ::: pf-proof
 
-Because \(R\trianglelefteq G\), the product \(PR\) is a subgroup. The groups \(P\) and \(R\) have coprime orders \(5\) and \(7\), so \(P\cap R=1\), and therefore \(|PR|=35\).
+Because $R\trianglelefteq G$, the product $PR$ is a subgroup. The groups $P$ and $R$ have coprime orders $5$ and $7$, so $P\cap R=1$, and therefore $|PR|=35$.
 
 :::
 
@@ -73,14 +73,14 @@ Because \(R\trianglelefteq G\), the product \(PR\) is a subgroup. The groups \(P
 
 ::: {.pf-step #s4}
 
-The group \(H\) is cyclic of order \(35\).
+The group $H$ is cyclic of order $35$.
 
 ::: pf-proof
 
-Inside a group of order \(35=5\cdot7\), the number of Sylow \(7\)-subgroups divides \(5\) and is \(1\pmod7\), hence is \(1\). The number of Sylow \(5\)-subgroups divides \(7\) and is \(1\pmod5\); since \(7\not\equiv1\pmod5\), it too is \(1\). Thus both Sylow subgroups are normal, so
-\[
+Inside a group of order $35=5\cdot7$, the number of Sylow $7$-subgroups divides $5$ and is $1\pmod7$, hence is $1$. The number of Sylow $5$-subgroups divides $7$ and is $1\pmod5$; since $7\not\equiv1\pmod5$, it too is $1$. Thus both Sylow subgroups are normal, so
+$$
 H\cong C_5\times C_7\cong C_{35}.
-\]
+$$
 
 :::
 
@@ -88,15 +88,15 @@ H\cong C_5\times C_7\cong C_{35}.
 
 ::: {.pf-step #s5}
 
-One has \(G=NH\) and \(N\cap H=1\).
+One has $G=NH$ and $N\cap H=1$.
 
 ::: pf-proof
 
-The intersection has order dividing both \(11\) and \(35\), so it is trivial. Hence
-\[
+The intersection has order dividing both $11$ and $35$, so it is trivial. Hence
+$$
 |NH|=|N||H|=11\cdot35=|G|.
-\]
-Thus \(NH=G\).
+$$
+Thus $NH=G$.
 
 :::
 
@@ -105,13 +105,13 @@ Thus \(NH=G\).
 ::: {.pf-step #s6}
 
 Therefore
-\[
+$$
 G\cong C_{11}\rtimes C_{35}.
-\]
+$$
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, \(N\cong C_{11}\) is normal; by step [](#s4){.pf-ref}, \(H\cong C_{35}\); and step [](#s5){.pf-ref} gives \(G=NH\) with trivial intersection. This is exactly an internal semidirect product.
+By step [](#s1){.pf-ref}, $N\cong C_{11}$ is normal; by step [](#s4){.pf-ref}, $H\cong C_{35}$; and step [](#s5){.pf-ref} gives $G=NH$ with trivial intersection. This is exactly an internal semidirect product.
 
 **(b).**
 
@@ -122,14 +122,14 @@ By step [](#s1){.pf-ref}, \(N\cong C_{11}\) is normal; by step [](#s4){.pf-ref},
 ::: {.pf-step #s7}
 
 The semidirect product is determined by a homomorphism
-\[
+$$
 \varphi:C_{35}\longrightarrow\operatorname{Aut}(C_{11})\cong C_{10}.
-\]
-Its image has order either \(1\) or \(5\).
+$$
+Its image has order either $1$ or $5$.
 
 ::: pf-proof
 
-The image order divides both \(35\) and \(10\), hence divides \(\gcd(35,10)=5\). Thus it is \(1\) or \(5\).
+The image order divides both $35$ and $10$, hence divides $\gcd(35,10)=5$. Thus it is $1$ or $5$.
 
 :::
 
@@ -137,14 +137,14 @@ The image order divides both \(35\) and \(10\), hence divides \(\gcd(35,10)=5\).
 
 ::: {.pf-step #s8}
 
-If \(\varphi\) is trivial, the resulting group is
-\[
+If $\varphi$ is trivial, the resulting group is
+$$
 C_{11}\times C_{35}\cong C_{385}.
-\]
+$$
 
 ::: pf-proof
 
-A semidirect product with trivial action is the direct product. Since \(11\) and \(35\) are coprime, the direct product of the two cyclic groups is cyclic.
+A semidirect product with trivial action is the direct product. Since $11$ and $35$ are coprime, the direct product of the two cyclic groups is cyclic.
 
 :::
 
@@ -152,21 +152,21 @@ A semidirect product with trivial action is the direct product. Since \(11\) and
 
 ::: {.pf-step #s9}
 
-All nontrivial actions \(C_{35}\to C_{10}\) give isomorphic semidirect products.
+All nontrivial actions $C_{35}\to C_{10}$ give isomorphic semidirect products.
 
 ::: pf-proof
 
-The cyclic group \(C_{10}\) has a unique subgroup of order \(5\), so every nontrivial action has that subgroup as its image. Its kernel has order \(7\), hence is the unique subgroup \(C_7\le C_{35}\). Thus a nontrivial action is equivalent to an isomorphism
-\[
+The cyclic group $C_{10}$ has a unique subgroup of order $5$, so every nontrivial action has that subgroup as its image. Its kernel has order $7$, hence is the unique subgroup $C_7\le C_{35}$. Thus a nontrivial action is equivalent to an isomorphism
+$$
 C_{35}/C_7\cong C_5\longrightarrow C_5\le C_{10}.
-\]
-Any two such isomorphisms differ by an automorphism of \(C_5\). The reduction map
-\[
+$$
+Any two such isomorphisms differ by an automorphism of $C_5$. The reduction map
+$$
 \operatorname{Aut}(C_{35})\cong(\ZZ/35\ZZ)^\times
 \longrightarrow
 (\ZZ/5\ZZ)^\times\cong\operatorname{Aut}(C_5)
-\]
-is surjective: for any unit class modulo \(5\), choose by the Chinese remainder theorem a representative congruent to that class modulo \(5\) and to \(1\) modulo \(7\). Precomposing the action by the corresponding automorphism of \(C_{35}\) therefore carries any nontrivial action to any other, and the associated semidirect products are isomorphic.
+$$
+is surjective: for any unit class modulo $5$, choose by the Chinese remainder theorem a representative congruent to that class modulo $5$ and to $1$ modulo $7$. Precomposing the action by the corresponding automorphism of $C_{35}$ therefore carries any nontrivial action to any other, and the associated semidirect products are isomorphic.
 
 :::
 
@@ -178,7 +178,7 @@ A nontrivial action exists.
 
 ::: pf-proof
 
-The group \((\ZZ/11\ZZ)^\times\cong C_{10}\) contains an element of order \(5\); for example, multiplication by \(3\) has order \(5\) modulo \(11\). Map a generator of \(C_{35}\) to this automorphism.
+The group $(\ZZ/11\ZZ)^\times\cong C_{10}$ contains an element of order $5$; for example, multiplication by $3$ has order $5$ modulo $11$. Map a generator of $C_{35}$ to this automorphism.
 
 :::
 
@@ -186,7 +186,7 @@ The group \((\ZZ/11\ZZ)^\times\cong C_{10}\) contains an element of order \(5\);
 
 ::: pf-step
 
-Hence there are exactly two groups of order \(5\cdot7\cdot11\) up to isomorphism: the cyclic group \(C_{385}\) and one nontrivial semidirect product \(C_{11}\rtimes C_{35}\).
+Hence there are exactly two groups of order $5\cdot7\cdot11$ up to isomorphism: the cyclic group $C_{385}$ and one nontrivial semidirect product $C_{11}\rtimes C_{35}$.
 
 ::: pf-proof
 

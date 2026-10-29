@@ -46,9 +46,9 @@ The converse is immediate.
 ::: pf-step
 
 A nonzero polynomial $f(x)\in F[x]$ of degree $n$ \dfn{splits over $F$} if there exist $c\in F^\times$ and $a_1,\ldots,a_n\in F$ such that
-\[
+$$
 f(x)=c\prod_{i=1}^n (x-a_i).
-\]
+$$
 
 ::: pf-proof
 

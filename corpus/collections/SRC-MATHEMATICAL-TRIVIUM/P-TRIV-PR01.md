@@ -27,9 +27,9 @@ What is the probability that the order is correct (direct or inverse)?
 ::: {.pf-step #s1-1}
 
 There are
-\[
+$$
 5!=120
-\]
+$$
 equally likely orders of the five distinct volumes.
 
 
@@ -49,13 +49,13 @@ Exactly two orders are favorable.
 ::: pf-proof
 
 The direct order is
-\[
+$$
 1,2,3,4,5,
-\]
+$$
 and the inverse order is
-\[
+$$
 5,4,3,2,1.
-\]
+$$
 No other permutation has the volumes in numerical order in either direction.
 
 :::
@@ -65,9 +65,9 @@ No other permutation has the volumes in numerical order in either direction.
 ::: {.pf-step #s1-3}
 
 Therefore the probability is
-\[
+$$
 \boxed{\frac{2}{5!}=\frac1{60}}.
-\]
+$$
 
 
 ::: pf-proof

@@ -36,18 +36,18 @@ audit:
 Let $G$ be a finite group and let $H<G$ be a proper subgroup.
 
 1. Show that the number of distinct conjugates of $H$ is
-   \[
+   $$
    [G:N_G(H)],
-   \]
+   $$
    where
-   \[
+   $$
    N_G(H)=\{g\in G:gHg^{-1}=H\}.
-   \]
+   $$
 
 2. Prove that
-   \[
+   $$
    G\ne\bigcup_{g\in G}gHg^{-1}.
-   \]
+   $$
 :::
 
 ::: {.solution}
@@ -61,15 +61,15 @@ Under conjugation, the stabilizer of $H$ in $G$ is $N_G(H)$.
 ::: pf-proof
 
 Let $G$ act on its set of subgroups by
-\[
+$$
 g\cdot K=gKg^{-1}.
-\]
+$$
 By definition,
-\[
+$$
 \operatorname{Stab}_G(H)
 =\{g\in G:gHg^{-1}=H\}
 =N_G(H).
-\]
+$$
 
 :::
 
@@ -82,13 +82,13 @@ The number of distinct conjugates of $H$ is $[G:N_G(H)]$.
 ::: pf-proof
 
 The orbit of $H$ under the conjugation action is exactly
-\[
+$$
 \{gHg^{-1}:g\in G\}.
-\]
+$$
 By step [](#s1){.pf-ref} and orbit-stabilizer, its cardinality is
-\[
+$$
 [G:N_G(H)].
-\]
+$$
 
 :::
 
@@ -97,14 +97,14 @@ By step [](#s1){.pf-ref} and orbit-stabilizer, its cardinality is
 ::: {.pf-step #s3}
 
 If
-\[
+$$
 m=[G:N_G(H)],
-\]
+$$
 then
-\[
+$$
 \left|\bigcup_{g\in G}gHg^{-1}\right|
 \le 1+m(|H|-1).
-\]
+$$
 
 ::: pf-proof
 
@@ -113,10 +113,10 @@ Every conjugate has cardinality $|H|$, and every conjugate contains the identity
 
 After counting $e$ once, each of the $m$ conjugates can contribute at most $|H|-1$ further elements.
 Hence
-\[
+$$
 \left|\bigcup_{g\in G}gHg^{-1}\right|
 \le 1+m(|H|-1).
-\]
+$$
 
 :::
 
@@ -125,21 +125,21 @@ Hence
 ::: {.pf-step #s4}
 
 We have
-\[
+$$
 m\le [G:H].
-\]
+$$
 
 ::: pf-proof
 
 Every subgroup normalizes itself, so
-\[
+$$
 H\le N_G(H).
-\]
+$$
 Therefore the index formula gives
-\[
+$$
 [G:H]=[G:N_G(H)]\,[N_G(H):H]
 =m[N_G(H):H].
-\]
+$$
 Thus $m$ divides, and in particular is at most, $[G:H]$.
 
 :::
@@ -153,25 +153,25 @@ The union of the conjugates of $H$ has strictly fewer than $|G|$ elements.
 ::: pf-proof
 
 By steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
-\[
+$$
 \begin{aligned}
 \left|\bigcup_{g\in G}gHg^{-1}\right|
 &\le 1+[G:H](|H|-1)\\
 &=1+|G|-[G:H].
 \end{aligned}
-\]
+$$
 Since $H$ is proper,
-\[
+$$
 [G:H]\ge2.
-\]
+$$
 Hence
-\[
+$$
 1+|G|-[G:H]\le |G|-1<|G|.
-\]
+$$
 Therefore
-\[
+$$
 \left|\bigcup_{g\in G}gHg^{-1}\right|<|G|.
-\]
+$$
 
 :::
 
@@ -180,9 +180,9 @@ Therefore
 ::: pf-step
 
 Consequently,
-\[
+$$
 G\ne\bigcup_{g\in G}gHg^{-1}.
-\]
+$$
 
 ::: pf-proof
 

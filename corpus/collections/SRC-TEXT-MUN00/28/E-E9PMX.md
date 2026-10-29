@@ -68,9 +68,9 @@ assumption for contradiction.
 
 ::: pf-step
 By De Morgan’s laws, the complements $U_n = X \setminus C_n$ form a countable collection of open sets satisfying:
-\[
+$$
 \bigcup_{n=1}^\infty U_n = \bigcup_{n=1}^\infty (X \setminus C_n) = X \setminus \left(\bigcap_{n=1}^\infty C_n\right) = X \setminus \emptyset = X.
-\]
+$$
 Thus $\{U_n\}_{n=1}^\infty$ is a countable open cover of $X$.
 
 ::: pf-proof
@@ -83,9 +83,9 @@ De Morgan's laws.
 Since $X$ is countably compact, there exists a finite subcover: $X = U_{n_1} \cup \cdots \cup U_{n_k}$.
 Let $N = \max(n_1, \dots, n_k)$.
 Since the sequence $\{C_n\}$ is nested ($C_N \subseteq C_n$ for all $n \le N$), the complements are nested ($U_n \subseteq U_N$ for all $n \le N$), so:
-\[
+$$
 X = \bigcup_{j=1}^k U_{n_j} = U_N = X \setminus C_N.
-\]
+$$
 
 ::: pf-proof
 monotonicity of nested sets.
@@ -143,9 +143,9 @@ Step [](#assume-no-finite-subcover){.pf-ref}.
 
 ::: pf-step
 For each $n \ge 1$:
-\[
+$$
 C_{n+1} = X \setminus \left(\bigcup_{k=1}^{n+1} V_k\right) = \left(X \setminus \bigcup_{k=1}^n V_k\right) \setminus V_{n+1} = C_n \setminus V_{n+1} \subseteq C_n.
-\]
+$$
 Thus $C_1 \supseteq C_2 \supseteq C_3 \supseteq \cdots$ is a nested sequence of non-empty closed sets.
 
 ::: pf-proof

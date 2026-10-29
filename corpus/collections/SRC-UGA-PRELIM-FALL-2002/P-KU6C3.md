@@ -40,16 +40,16 @@ For the cubic polynomial $x^3 - 3x + 2$, the coefficients are $p = -3$ and $q = 
 
 ::: pf-step
 Compute the square root term $s$:
-\[
+$$
 s = \sqrt{\frac{q^2}{4} + \frac{p^3}{27}} = \sqrt{\frac{2^2}{4} + \frac{(-3)^3}{27}} = \sqrt{1 - 1} = 0.
-\]
+$$
 :::
 
 ::: pf-step
 Compute $A$:
-\[
+$$
 A = -\frac{q}{2} + s = -\frac{2}{2} + 0 = -1.
-\]
+$$
 :::
 
 :::
@@ -76,25 +76,25 @@ Computation of roots via $x = c - \frac{p}{3c} = c + \frac{1}{c}$:
 
 ::: pf-step
 **For $c_1 = -1$:**
-\[
+$$
 x_1 = c_1 + \frac{1}{c_1} = -1 + \frac{1}{-1} = -2.
-\]
+$$
 :::
 
 ::: pf-step
 **For $c_2 = \frac{1 + i\sqrt{3}}{2}$:**
 Since $\frac{1}{c_2} = \overline{c_2} = \frac{1 - i\sqrt{3}}{2}$:
-\[
+$$
 x_2 = c_2 + \frac{1}{c_2} = \frac{1 + i\sqrt{3}}{2} + \frac{1 - i\sqrt{3}}{2} = 1.
-\]
+$$
 :::
 
 ::: pf-step
 **For $c_3 = \frac{1 - i\sqrt{3}}{2}$:**
 Since $\frac{1}{c_3} = \overline{c_3} = \frac{1 + i\sqrt{3}}{2}$:
-\[
+$$
 x_3 = c_3 + \frac{1}{c_3} = \frac{1 - i\sqrt{3}}{2} + \frac{1 + i\sqrt{3}}{2} = 1.
-\]
+$$
 :::
 
 :::

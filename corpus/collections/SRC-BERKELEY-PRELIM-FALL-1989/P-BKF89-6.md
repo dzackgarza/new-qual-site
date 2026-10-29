@@ -14,9 +14,9 @@ audit:
 
 ::: {.problem}
 Let $X\subset\RR^n$ be closed and let $r>0$. Define
-\[
+$$
 Y=\{y\in\RR^n:|x-y|=r\text{ for some }x\in X\}.
-\]
+$$
 Show that $Y$ is closed.
 :::
 

@@ -61,9 +61,9 @@ Multiplication $K\times L\to L$ restricted from $L$ makes $L$ a $K$-vector space
 ::: pf-step
 Since $K$ has characteristic $p$, $L$ must also have characteristic $p$.
 The cardinality of $L$ is related to the cardinality of $K$ by:
-\[
+$$
 \# L = (\# K)^d = (p^r)^d = p^{rd}.
-\]
+$$
 
 ::: pf-proof
 A $d$-dimensional vector space over a field with $q$ elements contains $q^d$ elements.
@@ -91,9 +91,9 @@ Reverse direction ($\#K = p^r, \, \#L = p^s$ with $r \mid s \implies K \hookrigh
 
 ::: pf-step
 If $r \mid s$, then $(p^r - 1) \mid (p^s - 1)$ because:
-\[
+$$
 x^k - 1 = (x - 1)(x^{k-1} + \dots + 1) \quad \text{applied to } x = p^r, \, s = kr.
-\]
+$$
 
 ::: pf-proof
 Evaluate the displayed factorization of $x^k-1$ at the integer $x=p^r$.
@@ -116,9 +116,9 @@ divisor of its order [@DF04].
 ::: pf-step
 The subset $K' = H \cup \{0\} \subseteq L$ consists precisely of all roots of the polynomial $f(x) = x^{p^r} - x \in \FF_p[x]$ in $L$.
 Since the map $\phi(x) = x^{p^r}$ is an automorphism of $L$ (the $r$-th power of the Frobenius automorphism), the fixed set:
-\[
+$$
 K' = \operatorname{Fix}(\phi) = \{\alpha \in L \mid \alpha^{p^r} = \alpha\}
-\]
+$$
 is a subfield of $L$.
 
 ::: pf-proof

@@ -23,11 +23,11 @@ audit:
 
 ::: {.problem}
 Compute, on each interval where the integrand is defined,
-\[
+$$
 \int \frac{x}{x^4-16}\,dx,
 \qquad
 \int \frac{x\arctan x}{(x^2+1)^2}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -36,25 +36,25 @@ Compute, on each interval where the integrand is defined,
 
 ::: pf-step
 
-Integrate \(x/(x^4-16)\).
+Integrate $x/(x^4-16)$.
 
 ::: pf-proof
 
-Let \(u=x^2\), so \(du=2x\,dx\). Then
-\[
+Let $u=x^2$, so $du=2x\,dx$. Then
+$$
 \int\frac{x}{x^4-16}\,dx
 =\frac12\int\frac{du}{u^2-16}.
-\]
+$$
 Since
-\[
+$$
 \frac1{u^2-16}=\frac18\left(\frac1{u-4}-\frac1{u+4}\right),
-\]
+$$
 we get
-\[
+$$
 \boxed{
 \int\frac{x}{x^4-16}\,dx
 =\frac1{16}\log\left|\frac{x^2-4}{x^2+4}\right|+C.}
-\]
+$$
 
 :::
 
@@ -62,46 +62,46 @@ we get
 
 ::: pf-step
 
-Integrate \(x\arctan x/(1+x^2)^2\).
+Integrate $x\arctan x/(1+x^2)^2$.
 
 ::: pf-proof
 
 Integrate by parts with
-\[
+$$
 u=\arctan x,
 \qquad
 dv=\frac{x\,dx}{(1+x^2)^2}.
-\]
+$$
 Then
-\[
+$$
 du=\frac{dx}{1+x^2},
 \qquad
 v=-\frac1{2(1+x^2)},
-\]
+$$
 so
-\[
+$$
 I=-\frac{\arctan x}{2(1+x^2)}
 +\frac12\int\frac{dx}{(1+x^2)^2}.
-\]
-For the remaining integral, put \(x=\tan t\). Then
-\[
+$$
+For the remaining integral, put $x=\tan t$. Then
+$$
 \int\frac{dx}{(1+x^2)^2}
 =\int\cos^2t\,dt
 =\frac t2+\frac{\sin2t}{4}+C.
-\]
-Since \(t=\arctan x\) and \(\sin2t=2x/(1+x^2)\),
-\[
+$$
+Since $t=\arctan x$ and $\sin2t=2x/(1+x^2)$,
+$$
 \int\frac{dx}{(1+x^2)^2}
 =\frac12\arctan x+\frac{x}{2(1+x^2)}+C.
-\]
+$$
 Therefore
-\[
+$$
 \boxed{
 \int\frac{x\arctan x}{(1+x^2)^2}\,dx
 =-\frac{\arctan x}{2(1+x^2)}
 +\frac{x}{4(1+x^2)}
 +\frac14\arctan x+C.}
-\]
+$$
 
 :::
 

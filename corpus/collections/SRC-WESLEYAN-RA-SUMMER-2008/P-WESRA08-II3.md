@@ -23,61 +23,61 @@ audit:
 
 ::: {.problem}
 Suppose that $A\subseteq\RR$ is Lebesgue measurable and
-\[
+$$
 A+r=A
-\]
+$$
 for every rational number $r$.
 Prove that either
-\[
+$$
 m(A)=0
 \qquad\text{or}\qquad
 m(\RR\setminus A)=0.
-\]
+$$
 :::
 
 ::: {.solution}
 Suppose, toward a contradiction, that both $A$ and $A^c$ have positive measure.
 
 Choose a nonnegative $\varphi\in C_c^\infty(\RR)$ with
-\[
+$$
 \int_{\RR}\varphi=1,
-\]
+$$
 and put
-\[
+$$
 \varphi_\varepsilon(x)=\varepsilon^{-1}\varphi(x/\varepsilon),
 \qquad
 u_\varepsilon=\mathbf1_A*\varphi_\varepsilon.
-\]
+$$
 Since $\mathbf1_A\in L^\infty_{\mathrm{loc}}$ and $\varphi_\varepsilon$ is compactly supported, $u_\varepsilon$ is a continuous function on $\RR$.
 
 For every $q\in\QQ$ and every $x\in\RR$, the identity $A+q=A$ gives
-\[
+$$
 \mathbf1_A(y+q)=\mathbf1_A(y).
-\]
+$$
 Hence, after a change of variables,
-\[
+$$
 u_\varepsilon(x+q)=u_\varepsilon(x).
-\]
+$$
 Thus every rational number is a period of $u_\varepsilon$.
 Since $\QQ$ is dense and $u_\varepsilon$ is continuous, $u_\varepsilon$ must be constant on $\RR$.
 
 By the Lebesgue density theorem, choose a density point $a$ of $A$ and a density point $b$ of $A^c$.
 Approximate identities recover characteristic functions at density points, so
-\[
+$$
 u_\varepsilon(a)\longrightarrow1,
 \qquad
 u_\varepsilon(b)\longrightarrow0
-\]
+$$
 as $\varepsilon\downarrow0$.
 
 But for every $\varepsilon>0$, the function $u_\varepsilon$ is constant, so
-\[
+$$
 u_\varepsilon(a)=u_\varepsilon(b),
-\]
+$$
 which is impossible in the limit.
 Therefore $A$ and $A^c$ cannot both have positive measure.
 Hence
-\[
+$$
 \boxed{m(A)=0\text{ or }m(A^c)=0.}
-\]
+$$
 :::

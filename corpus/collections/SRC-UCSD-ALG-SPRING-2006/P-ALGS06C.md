@@ -37,24 +37,24 @@ Part (a): Order of $1 + p$ in $(\ZZ/p^2\ZZ)^\times$:
 
 ::: pf-step
 By the Binomial Theorem:
-\[
+$$
 (1 + p)^p = \sum_{k=0}^p \binom{p}{k} p^k = 1 + \binom{p}{1} p + \sum_{k=2}^p \binom{p}{k} p^k = 1 + p^2 + \sum_{k=2}^p \binom{p}{k} p^k.
-\]
+$$
 :::
 
 ::: pf-step
 For every $k \ge 2$, the power $p^k$ is a multiple of $p^2$, so:
-\[
+$$
 (1 + p)^p \equiv 1 + p^2 \equiv 1 \pmod{p^2}.
-\]
+$$
 :::
 
 ::: pf-step
 Since $p \ge 2$, $1 + p \not\equiv 1 \pmod{p^2}$, so the order of $1 + p$ is strictly greater than 1.
 Because the order of $1 + p$ divides the prime $p$, the order must be exactly $p$:
-\[
+$$
 o(1 + p) = p \quad \text{in } (\ZZ/p^2\ZZ)^\times.
-\]
+$$
 :::
 
 :::
@@ -74,17 +74,17 @@ The automorphism group of $N$ is $\operatorname{Aut}(N) \cong (\ZZ/p^2\ZZ)^\time
 ::: pf-step
 By Part (a), the element $1 + p$ has order $p$ in $(\ZZ/p^2\ZZ)^\times$.
 Therefore, there exists a non-trivial group homomorphism $\theta: H \to \operatorname{Aut}(N)$ defined on the generator $1 \in \ZZ/p\ZZ$ by:
-\[
+$$
 \theta(1)(x) = (1 + p)x \pmod{p^2}.
-\]
+$$
 :::
 
 ::: pf-step
 Define $G$ as the semidirect product $G = N \rtimes_\theta H = (\ZZ/p^2\ZZ) \rtimes_\theta (\ZZ/p\ZZ)$.
 The order of $G$ is:
-\[
+$$
 |G| = |N| \cdot |H| = p^2 \cdot p = p^3.
-\]
+$$
 Since $\theta$ is non-trivial ($1 + p \not\equiv 1 \pmod{p^2}$), $G$ is a non-abelian group of order $p^3$.
 :::
 
@@ -105,9 +105,9 @@ The semidirect product action gives $b a b^{-1} = \theta(1)(a) = a^{1 + p}$.
 
 ::: pf-step
 Thus $G$ has the presentation:
-\[
+$$
 G = \langle a, b \mid a^{p^2} = e, \; b^p = e, \; b a b^{-1} = a^{1 + p} \rangle.
-\]
+$$
 :::
 
 :::

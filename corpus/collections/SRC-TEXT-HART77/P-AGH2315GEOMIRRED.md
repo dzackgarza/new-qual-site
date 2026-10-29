@@ -57,13 +57,13 @@ If $X_{\bar k}$ is irreducible, then $X_{k_s}$ is irreducible.
 
 ::: pf-proof
 Choose an embedding
-\[
+$$
 k_s\subseteq\bar k.
-\]
+$$
 The projection
-\[
+$$
 X_{\bar k}\longrightarrow X_{k_s}
-\]
+$$
 is surjective because $\Spec\bar k\to\Spec k_s$ is faithfully flat and hence surjective, and surjectivity is preserved by base change.
 
 The continuous image of an irreducible topological space is irreducible.  Hence irreducibility of $X_{\bar k}$ implies irreducibility of $X_{k_s}$.
@@ -80,13 +80,13 @@ This is the standard separable-closure criterion for geometric irreducibility.  
 First, over a separably closed field, an irreducible scheme remains irreducible after every field extension: affinely, tensoring a ring with a unique minimal prime over a separably closed field with a field extension again has a unique minimal prime.
 
 Second, given $K/k$ there is a common overfield $\Omega$ containing both $K$ and $k_s$ over $k$.  The first fact gives that
-\[
+$$
 X_\Omega=(X_{k_s})_\Omega
-\]
+$$
 is irreducible.  The projection
-\[
+$$
 X_\Omega\longrightarrow X_K
-\]
+$$
 is surjective, so $X_K$ is irreducible.
 
 This is precisely the implication in the separable-closure test for geometric irreducibility.
@@ -112,11 +112,11 @@ If $X_{\bar k}$ is reduced, then $X_{k_p}$ is reduced.
 
 ::: pf-proof
 Embed the perfect closure $k_p$ into $\bar k$.  On an affine open $U=\Spec A\subseteq X$, the ring map
-\[
+$$
 A\otimes_k k_p
 \longrightarrow
 A\otimes_k\bar k
-\]
+$$
 is injective because $k_p\to\bar k$ is an extension of fields and tensoring a $k_p$-vector space with $\bar k$ is faithful.
 
 If $A\otimes_k k_p$ had a nonzero nilpotent, its image would be a nonzero nilpotent in $A\otimes_k\bar k$, contradiction.  Hence every affine chart of $X_{k_p}$ is reduced.
@@ -131,9 +131,9 @@ If $X_{k_p}$ is reduced, then $X_K$ is reduced for every extension field $K/k$.
 The field $k_p$ is perfect.  A reduced finite-type scheme over a perfect field is geometrically reduced: affinely, a reduced finitely generated algebra over a perfect field remains reduced after every field extension.
 
 Choose a common overfield $\Omega$ of $K$ and $k_p$.  The preceding fact gives that
-\[
+$$
 X_\Omega=(X_{k_p})_\Omega
-\]
+$$
 is reduced.
 
 On every affine chart of $X_K$, the base-change map to the corresponding affine chart of $X_\Omega$ is injective because $K\to\Omega$ is a field extension.  A nilpotent in the source would therefore give a nilpotent in the reduced target.  Hence $X_K$ is reduced.
@@ -161,25 +161,25 @@ An integral scheme need not be geometrically irreducible.
 
 ::: pf-proof
 Take
-\[
+$$
 k=\RR,
 \qquad
 X=\Spec\CC
-\]
+$$
 with its natural structure as an $\RR$-scheme.  Since $\CC$ is a field, $X$ is integral.
 
 After base change to $\CC$,
-\[
+$$
 \CC\otimes_{\RR}\CC
 \cong
 \CC\times\CC.
-\]
+$$
 Thus
-\[
+$$
 X_\CC
 \cong
 \Spec\CC\amalg\Spec\CC
-\]
+$$
 is reducible.  Hence $X$ is not geometrically irreducible.
 :::
 
@@ -190,29 +190,29 @@ An integral scheme need not be geometrically reduced.
 
 ::: pf-proof
 Let
-\[
+$$
 k=\FF_p(u)
-\]
+$$
 and set
-\[
+$$
 X=\Spec k[x]/(x^p-u).
-\]
+$$
 The element $u$ is not a $p$th power in $k$: its valuation at the prime $u$ is $1$, whereas a $p$th power has valuation divisible by $p$.  Hence
-\[
+$$
 x^p-u
-\]
+$$
 is irreducible over $k$, so the quotient is a field and $X$ is integral.
 
 After adjoining $u^{1/p}$,
-\[
+$$
 x^p-u=(x-u^{1/p})^p.
-\]
+$$
 Therefore
-\[
+$$
 X_{k(u^{1/p})}
 \cong
 \Spec k(u^{1/p})[x]/(x-u^{1/p})^p
-\]
+$$
 is nonreduced.  Thus $X$ is not geometrically reduced.
 :::
 
@@ -223,50 +223,50 @@ There are integral schemes which are simultaneously neither geometrically irredu
 
 ::: pf-proof
 Let
-\[
+$$
 k=\FF_p(u,v),
-\]
+$$
 and let $w$ satisfy the Artin--Schreier equation
-\[
+$$
 w^p-w=v.
-\]
+$$
 This polynomial is separable because its derivative is $-1$.  It has no root in $k$: using the valuation at infinity in the variable $v$, normalized by
-\[
+$$
 \operatorname{ord}_\infty(v)=-1,
-\]
+$$
 one has
-\[
+$$
 \operatorname{ord}_\infty(r^p-r)
-\]
+$$
 either nonnegative, or a negative integer divisible by $p$, and therefore never $-1$.  An Artin--Schreier polynomial $T^p-T-v$ with no root is irreducible.  Thus
-\[
+$$
 L=k(w)
-\]
+$$
 is a finite separable extension of degree $p$.
 
 Now put
-\[
+$$
 E=L(u^{1/p}),
 \qquad
 X=\Spec E.
-\]
+$$
 The element $u^{1/p}$ cannot lie in $L$: otherwise the nontrivial purely inseparable extension
-\[
+$$
 k(u^{1/p})/k
-\]
+$$
 would be a subextension of the separable extension $L/k$.  Hence
-\[
+$$
 [E:L]=p.
-\]
+$$
 Hence $E$ is a field and $X$ is integral.
 
 Over an algebraic closure $\bar k$, the separable extension $L/k$ splits into $p$ distinct embeddings, while the purely inseparable equation becomes a $p$th power.  Consequently
-\[
+$$
 E\otimes_k\bar k
 \cong
 \prod_{j=1}^{p}
 \bar k[\epsilon]/(\epsilon^p).
-\]
+$$
 This ring has more than one minimal prime and has nonzero nilpotents.  Therefore $X_{\bar k}$ is both reducible and nonreduced, so $X$ is neither geometrically irreducible nor geometrically reduced.
 :::
 

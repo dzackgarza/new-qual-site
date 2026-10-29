@@ -20,9 +20,9 @@ audit:
 
 ::: {.problem}
 For which positive numbers $a,b$, with $a>1$, does the equation
-\[
+$$
 \log_a x=x^b
-\]
+$$
 have a positive solution $x$?
 :::
 

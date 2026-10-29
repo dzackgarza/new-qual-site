@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Problem 9. Find a function that minimizes
-\[
+$$
 \int_0^1 |f'(x)|^2\,dx
-\]
+$$
 among all $f\in C^1(\RR)$ such that $f(0)=0$ and $f(1)=1$.
 Is the minimizing $C^1$ function unique on $[0,1]$?
 :::
@@ -32,17 +32,17 @@ Is the minimizing $C^1$ function unique on $[0,1]$?
 ::: {.pf-step #s1-1}
 
 For every admissible $f$,
-\[
+$$
 1=f(1)-f(0)=\int_0^1f'(x)\,dx.
-\]
+$$
 
 
 ::: pf-proof
 
 Since $f\in C^1(\RR)$, the fundamental theorem of calculus gives
-\[
+$$
 f(1)-f(0)=\int_0^1f'(x)\,dx.
-\]
+$$
 The endpoint conditions make the left side equal to $1$.
 
 :::
@@ -52,20 +52,20 @@ The endpoint conditions make the left side equal to $1$.
 ::: {.pf-step #s1-2}
 
 Cauchy--Schwarz gives
-\[
+$$
 1\leq\int_0^1|f'(x)|^2\,dx.
-\]
+$$
 
 
 ::: pf-proof
 
 Apply Cauchy--Schwarz to $f'$ and the constant function $1$:
-\[
+$$
 \left|\int_0^1f'(x)\,dx\right|^2
 \leq
 \left(\int_0^1|f'(x)|^2\,dx\right)
 \left(\int_0^1 1^2\,dx\right).
-\]
+$$
 The first factor on the left is $1$ by step [](#s1-1){.pf-ref}, and the final integral is $1$.
 
 :::
@@ -75,13 +75,13 @@ The first factor on the left is $1$ by step [](#s1-1){.pf-ref}, and the final in
 ::: {.pf-step #s1-3}
 
 The function
-\[
+$$
 f_0(x)=x
-\]
+$$
 is admissible and has energy
-\[
+$$
 \int_0^1|f_0'(x)|^2\,dx=1.
-\]
+$$
 
 
 ::: pf-proof
@@ -134,18 +134,18 @@ Equality in Cauchy--Schwarz for the functions $f'$ and $1$ occurs exactly when t
 ::: {.pf-step #s1-7}
 
 The endpoint conditions force this constant to be $1$ and hence
-\[
+$$
 f(x)=x
 \qquad(0\leq x\leq1).
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-1){.pf-ref} gives
-\[
+$$
 1=\int_0^1c\,dx=c.
-\]
+$$
 Thus $f'=1$ on $[0,1]$. Since $f(0)=0$, integration gives $f(x)=x$ there.
 
 :::
@@ -155,9 +155,9 @@ Thus $f'=1$ on $[0,1]$. Since $f(0)=0$, integration gives $f(x)=x$ there.
 ::: {.pf-step #s1-8}
 
 Consequently the minimizing function is unique on $[0,1]$:
-\[
+$$
 \boxed{f(x)=x.}
-\]
+$$
 
 
 ::: pf-proof

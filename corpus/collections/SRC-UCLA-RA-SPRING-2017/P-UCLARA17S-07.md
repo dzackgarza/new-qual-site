@@ -18,13 +18,13 @@ audit:
 
 ::: {.problem}
 Let $f(z)$ be a one-to-one continuous mapping from the closed annulus
-\[
+$$
 \{1\le|z|\le R\}
-\]
+$$
 onto the closed annulus
-\[
+$$
 \{1\le|z|\le S\}
-\]
+$$
 such that $f$ is analytic on the open annulus $\{1<|z|<R\}$. Prove that $S=R$.
 :::
 

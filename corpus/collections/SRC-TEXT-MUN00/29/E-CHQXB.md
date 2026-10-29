@@ -23,11 +23,11 @@ Then $x \in \overline{A}$ if and only if there is a net of points of $A$ converg
 :::
 
 ::: {.solution}
-If a net \((a_\alpha)\) in \(A\) converges to \(x\), then every neighborhood of \(x\) contains some tail point \(a_\alpha\in A\); hence every neighborhood of \(x\) meets \(A\), so \(x\in\overline A\).
+If a net $(a_\alpha)$ in $A$ converges to $x$, then every neighborhood of $x$ contains some tail point $a_\alpha\in A$; hence every neighborhood of $x$ meets $A$, so $x\in\overline A$.
 
-Conversely, assume \(x\in\overline A\). Let \(J\) be the set of neighborhoods of \(x\), ordered by reverse inclusion:
-\[
+Conversely, assume $x\in\overline A$. Let $J$ be the set of neighborhoods of $x$, ordered by reverse inclusion:
+$$
 U\preceq V\iff U\supset V.
-\]
-This is directed because \(U\cap V\) is a neighborhood of \(x\) and satisfies \(U\preceq U\cap V\) and \(V\preceq U\cap V\). For each \(U\in J\), choose \(a_U\in A\cap U\), possible because \(x\in\overline A\). Then the net \((a_U)_{U\in J}\) converges to \(x\): if \(W\) is a neighborhood of \(x\), then for every \(U\succeq W\) we have \(U\subset W\), so \(a_U\in W\).
+$$
+This is directed because $U\cap V$ is a neighborhood of $x$ and satisfies $U\preceq U\cap V$ and $V\preceq U\cap V$. For each $U\in J$, choose $a_U\in A\cap U$, possible because $x\in\overline A$. Then the net $(a_U)_{U\in J}$ converges to $x$: if $W$ is a neighborhood of $x$, then for every $U\succeq W$ we have $U\subset W$, so $a_U\in W$.
 :::

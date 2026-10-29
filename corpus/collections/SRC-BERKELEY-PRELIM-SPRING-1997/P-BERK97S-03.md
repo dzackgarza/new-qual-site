@@ -23,13 +23,13 @@ audit:
 
 ::: {.problem}
 Let $f:[0,\infty)\to[0,\infty)$ be continuous and suppose
-\[
+$$
 \int_0^\infty f(x)\,dx<\infty.
-\]
+$$
 Prove that
-\[
+$$
 \lim_{n\to\infty}\int_0^n\frac{x f(x)}{n}\,dx=0.
-\]
+$$
 :::
 
 ::: {.solution}

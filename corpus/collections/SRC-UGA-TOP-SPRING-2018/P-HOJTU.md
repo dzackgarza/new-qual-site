@@ -44,21 +44,21 @@ The correct answer is **(c)**.
 ::: pf-step
 
 For every $n\ge0$, the singular chain group of the one-point space $X=\{*\}$ is
-\[
+$$
 C_n(X)\cong\ZZ.
-\]
+$$
 
 ::: pf-proof
 
 There is exactly one continuous map
-\[
+$$
 \sigma_n:\Delta^n\longrightarrow\{*\},
-\]
+$$
 so there is exactly one singular $n$-simplex.
 By definition, $C_n(X)$ is the free abelian group on the singular $n$-simplices, hence
-\[
+$$
 C_n(X)=\ZZ\langle\sigma_n\rangle\cong\ZZ.
-\]
+$$
 In particular, $C_1(X)\neq0$, so alternative (a) is false.
 
 :::
@@ -68,24 +68,24 @@ In particular, $C_1(X)\neq0$, so alternative (a) is false.
 ::: {.pf-step #s2}
 
 The boundary map
-\[
+$$
 \partial_1:C_1(X)\longrightarrow C_0(X)
-\]
+$$
 is the zero map.
 
 ::: pf-proof
 
 The two faces of the unique singular $1$-simplex are both the unique singular $0$-simplex $\sigma_0$.
 Therefore
-\[
+$$
 \partial_1\sigma_1
 =\sigma_0-\sigma_0
 =0.
-\]
+$$
 Hence
-\[
+$$
 \ker\partial_1=C_1(X)\cong\ZZ\neq0,
-\]
+$$
 so alternative (b) is false.
 
 :::
@@ -95,24 +95,24 @@ so alternative (b) is false.
 ::: {.pf-step #s3}
 
 The boundary map
-\[
+$$
 \partial_2:C_2(X)\longrightarrow C_1(X)
-\]
+$$
 is surjective.
 
 ::: pf-proof
 
 All three faces of the unique singular $2$-simplex are the unique singular $1$-simplex $\sigma_1$.
 Thus
-\[
+$$
 \partial_2\sigma_2
 =\sigma_1-\sigma_1+\sigma_1
 =\sigma_1.
-\]
+$$
 Since $\sigma_1$ generates $C_1(X)$, it follows that
-\[
+$$
 \operatorname{im}\partial_2=C_1(X).
-\]
+$$
 
 :::
 
@@ -121,20 +121,20 @@ Since $\sigma_1$ generates $C_1(X)$, it follows that
 ::: pf-step
 
 Therefore
-\[
+$$
 H_1(X)
 =\ker\partial_1/\operatorname{im}\partial_2
 =0.
-\]
+$$
 
 ::: pf-proof
 
 By steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
-\[
+$$
 \ker\partial_1
 =C_1(X)
 =\operatorname{im}\partial_2,
-\]
+$$
 and this common group is nonzero.
 This is exactly alternative (c).
 

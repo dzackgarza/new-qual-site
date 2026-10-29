@@ -19,42 +19,39 @@ Show that the map $\chi\colon Z(A)\to\CC$ defined by $z\mapsto\chi(z)$ is an alg
 :::
 
 ::: {.solution}
-For \(z\in Z(A)\), the linear map \(
-ho(z)\in\operatorname{End}_{\CC}(V)\) commutes with \(
-ho(a)\) for every \(a\in A\), because
-\[
+For $z\in Z(A)$, the linear map $ho(z)\in\operatorname{End}_{\CC}(V)$ commutes with $ho(a)$ for every $a\in A$, because
+$$
 \rho(z)\rho(a)=\rho(za)=\rho(az)=\rho(a)\rho(z).
-\]
-Since \(V\) is an irreducible complex representation, Schur's lemma implies that
-\[
+$$
+Since $V$ is an irreducible complex representation, Schur's lemma implies that
+$$
 \rho(z)=\chi(z)I_V
-\]
-for a unique scalar \(\chi(z)\in\CC\).
+$$
+for a unique scalar $\chi(z)\in\CC$.
 
-It remains to show that \(\chi\) is an algebra homomorphism. For \(z,w\in Z(A)\) and \(c\in\CC\),
-\[
+It remains to show that $\chi$ is an algebra homomorphism. For $z,w\in Z(A)$ and $c\in\CC$,
+$$
 \rho(z+w)=\rho(z)+\rho(w)=(\chi(z)+\chi(w))I_V,
-\]
+$$
 so uniqueness of the scalar gives
-\[
+$$
 \chi(z+w)=\chi(z)+\chi(w).
-\]
+$$
 Similarly,
-\[
+$$
 \rho(zw)=\rho(z)\rho(w)=\chi(z)\chi(w)I_V,
-\]
+$$
 so
-\[
+$$
 \chi(zw)=\chi(z)\chi(w).
-\]
+$$
 Also
-\[
+$$
 \rho(cz)=c\rho(z)=c\chi(z)I_V,
-\]
-so \(\chi(cz)=c\chi(z)\). Finally, because \(
-ho(1_A)=I_V\),
-\[
+$$
+so $\chi(cz)=c\chi(z)$. Finally, because $ho(1_A)=I_V$,
+$$
 \chi(1_A)=1.
-\]
-Hence \(\chi:Z(A)\to\CC\) is a unital \(\CC\)-algebra homomorphism.
+$$
+Hence $\chi:Z(A)\to\CC$ is a unital $\CC$-algebra homomorphism.
 :::

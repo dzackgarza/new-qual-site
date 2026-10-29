@@ -20,20 +20,20 @@ Show that $u$ is constant.
 
 ::: {.solution}
 Reflect $u$ oddly across the real axis:
-\[
+$$
 U(z)=
 \begin{cases}
 u(z),&\operatorname{Im}z\ge0,\\
 -u(\bar z),&\operatorname{Im}z<0.
 \end{cases}
-\]
+$$
 Because $u$ is continuous up to the boundary and vanishes on
 $\RR$, the harmonic reflection principle shows that $U$ is harmonic on
 all of $\CC$. It is bounded because $u$ is bounded. Liouville's theorem
 for harmonic functions therefore makes $U$ constant. Since $U$ is odd under
 reflection across $\RR$, that constant must be $0$. Hence
-\[
+$$
 u\equiv0
-\]
+$$
 on the upper half-plane.
 :::

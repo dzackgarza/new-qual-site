@@ -20,13 +20,13 @@ audit:
 
 ::: {.problem}
 Let $W\subset V$ be finite-dimensional vector spaces over a field, and let $L:V\to V$ satisfy
-\[
+$$
 L(V)\subset W.
-\]
+$$
 Let $L_W:W\to W$ be the restriction of $L$. Prove that
-\[
+$$
 \det(I_V-tL)=\det(I_W-tL_W).
-\]
+$$
 :::
 
 ::: {.solution}

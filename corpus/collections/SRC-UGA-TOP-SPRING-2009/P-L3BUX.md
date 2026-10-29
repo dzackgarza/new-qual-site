@@ -31,9 +31,9 @@ audit:
 
 ::: {.problem}
 Let $(X, d)$ be a compact metric space, and let $f : X \to X$ be an isometry:
-\[
+$$
 \forall~ x, y \in X, \qquad d(f (x), f (y)) = d(x, y).
-\]
+$$
 Prove that $f$ is a bijection.
 :::
 
@@ -46,13 +46,13 @@ The map $f$ is injective.
 
 ::: pf-proof
 Suppose
-\[
+$$
 f(x)=f(y).
-\]
+$$
 Since $f$ preserves distances,
-\[
+$$
 d(x,y)=d(f(x),f(y))=0.
-\]
+$$
 Because $d$ is a metric, $x=y$.
 Thus $f$ is injective.
 :::
@@ -61,61 +61,61 @@ Thus $f$ is injective.
 
 ::: {.pf-step #s2}
 Assume for contradiction that $f$ is not surjective, and choose
-\[
+$$
 x_0\in X\setminus f(X).
-\]
+$$
 Then there is a number $\delta>0$ such that
-\[
+$$
 d(x_0,y)\ge\delta
-\]
+$$
 for every $y\in f(X)$.
 
 ::: pf-proof
 An isometry is continuous, so $f(X)$ is compact as the continuous image of the compact space $X$.
 
 The function
-\[
+$$
 y\longmapsto d(x_0,y)
-\]
+$$
 is continuous on the compact set $f(X)$, hence attains its minimum there.
 Since $x_0\notin f(X)$, this minimum cannot be $0$.
 Therefore
-\[
+$$
 \delta:=\min_{y\in f(X)}d(x_0,y)>0.
-\]
+$$
 :::
 
 :::
 
 ::: {.pf-step #s3}
 Define
-\[
+$$
 x_n=f^n(x_0)
 \qquad(n\ge0).
-\]
+$$
 Then for every pair $n>m\ge0$,
-\[
+$$
 d(x_n,x_m)\ge\delta.
-\]
+$$
 
 ::: pf-proof
 Because $f$ is an isometry, every iterate $f^m$ is an isometry.
 Hence, for $n>m$,
-\[
+$$
 d(x_n,x_m)
 =
 d(f^n(x_0),f^m(x_0))
 =
 d(f^{n-m}(x_0),x_0).
-\]
+$$
 Since $n-m\ge1$,
-\[
+$$
 f^{n-m}(x_0)=f(f^{n-m-1}(x_0))\in f(X).
-\]
+$$
 By the definition of $\delta$ in step [](#s2){.pf-ref},
-\[
+$$
 d(f^{n-m}(x_0),x_0)\ge\delta.
-\]
+$$
 Thus $d(x_n,x_m)\ge\delta$.
 :::
 
@@ -127,17 +127,17 @@ The conclusion of step [](#s3){.pf-ref} contradicts compactness of $X$.
 ::: pf-proof
 Every sequence in a compact metric space has a convergent subsequence.
 Thus the sequence $(x_n)_{n\ge0}$ has a convergent subsequence
-\[
+$$
 x_{n_k}\longrightarrow x\in X.
-\]
+$$
 Every convergent sequence is Cauchy, so for sufficiently large $k<\ell$ one must have
-\[
+$$
 d(x_{n_k},x_{n_\ell})<\delta.
-\]
+$$
 This contradicts step [](#s3){.pf-ref}, which gives
-\[
+$$
 d(x_{n_k},x_{n_\ell})\ge\delta.
-\]
+$$
 Therefore $f$ must be surjective.
 :::
 
@@ -145,9 +145,9 @@ Therefore $f$ must be surjective.
 
 ::: pf-step
 Combining step [](#s1){.pf-ref} and step [](#s4){.pf-ref},
-\[
+$$
 \boxed{f\text{ is bijective}.}
-\]
+$$
 
 :::
 

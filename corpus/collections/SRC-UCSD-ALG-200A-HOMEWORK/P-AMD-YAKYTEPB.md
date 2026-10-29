@@ -36,9 +36,9 @@ Show: $T(G) \leq G$ (where $T(G) = \{ g\in G : |g| < \infty\}$
 
 ::: {.solution}
 Let
-\[
+$$
 T(G)=\{g\in G:o(g)<\infty\}.
-\]
+$$
 We verify the subgroup conditions.
 
 ::: pf
@@ -49,9 +49,9 @@ The identity belongs to $T(G)$.
 ::: pf-proof
 The identity has order $1$, hence finite order.
 Therefore
-\[
+$$
 e\in T(G).
-\]
+$$
 :::
 
 :::
@@ -61,17 +61,17 @@ If $x\in T(G)$, then $x^{-1}\in T(G)$.
 
 ::: pf-proof
 Since $x$ has finite order, there is an integer $m\ge1$ such that
-\[
+$$
 x^m=e.
-\]
+$$
 Taking inverses gives
-\[
+$$
 (x^{-1})^m=(x^m)^{-1}=e.
-\]
+$$
 Thus $x^{-1}$ has finite order, so
-\[
+$$
 x^{-1}\in T(G).
-\]
+$$
 :::
 
 :::
@@ -81,27 +81,27 @@ If $x,y\in T(G)$, then $xy\in T(G)$.
 
 ::: pf-proof
 Choose positive integers $m,n$ such that
-\[
+$$
 x^m=e,
 \qquad
 y^n=e.
-\]
+$$
 Because $G$ is abelian,
-\[
+$$
 (xy)^{mn}=x^{mn}y^{mn}.
-\]
+$$
 But
-\[
+$$
 x^{mn}=(x^m)^n=e
-\]
+$$
 and
-\[
+$$
 y^{mn}=(y^n)^m=e.
-\]
+$$
 Hence
-\[
+$$
 (xy)^{mn}=e.
-\]
+$$
 Therefore $xy$ has finite order and belongs to $T(G)$.
 :::
 
@@ -113,9 +113,9 @@ Hence $T(G)$ is a subgroup of $G$.
 ::: pf-proof
 By step [](#identity-in-torsion){.pf-ref}, $T(G)$ is nonempty; by steps [](#inverse-in-torsion){.pf-ref} and [](#product-in-torsion){.pf-ref}, it is closed under inverses and products.
 Therefore
-\[
+$$
 T(G)\le G.
-\]
+$$
 :::
 
 :::

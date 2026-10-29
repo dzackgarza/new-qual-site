@@ -35,8 +35,8 @@ Let $p,q\in\RR^2-A$. There are uncountably many lines through $p$, while only co
 For each $a\in A$, the line through $q$ and $a$ is different from $L$, because $q\notin L$, so it meets $L$ in at most one point. Let $E\subseteq L$ be the countable set of these intersection points. Since $L$ is uncountable, choose $r\in L-E$.
 
 The segment $[p,r]$ lies in $L$ and therefore avoids $A$. If $[q,r]$ met $A$ at $a$, then $r$ would lie on the line through $q$ and $a$, contrary to the choice of $r$. Thus the broken line
-\[
+$$
 p\longrightarrow r\longrightarrow q
-\]
+$$
 is a path in $\RR^2-A$. Therefore $\RR^2-A$ is path connected.
 :::

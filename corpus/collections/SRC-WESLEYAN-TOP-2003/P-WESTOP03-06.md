@@ -21,11 +21,11 @@ Describe the universal covering space of the Klein bottle.
 ::: {.pf-step #s1-1}
 
 Realize the Klein bottle $K$ as the quotient of the unit square by the identifications
-\[
+$$
 (0,y)\sim(1,y),
 \qquad
 (x,0)\sim(1-x,1).
-\]
+$$
 
 
 ::: pf-proof
@@ -39,11 +39,11 @@ This is the standard polygonal model of the Klein bottle: one pair of opposite s
 ::: pf-step
 
 Define homeomorphisms of $\RR^2$ by
-\[
+$$
 a(x,y)=(x+1,y),
 \qquad
 b(x,y)=(-x,y+1).
-\]
+$$
 Let $G=\langle a,b\rangle$.
 
 
@@ -58,25 +58,25 @@ Both maps are Euclidean isometries and hence homeomorphisms. Their action reprod
 ::: {.pf-step #s1-3}
 
 The generators satisfy
-\[
+$$
 bab^{-1}=a^{-1}.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 b^{-1}(x,y)=(-x,y-1),
-\]
+$$
 one computes
-\[
+$$
 bab^{-1}(x,y)
 =ba(-x,y-1)
 =b(-x+1,y-1)
 =(x-1,y)
 =a^{-1}(x,y).
-\]
+$$
 
 :::
 
@@ -85,23 +85,23 @@ bab^{-1}(x,y)
 ::: {.pf-step #s1-4}
 
 Every element of $G$ has the form
-\[
+$$
 a^m b^n,
 \qquad m,n\in\ZZ,
-\]
+$$
 and acts by
-\[
+$$
 a^m b^n(x,y)
 =\bigl(m+(-1)^n x,\,y+n\bigr).
-\]
+$$
 
 
 ::: pf-proof
 
 The relation in step [](#s1-3){.pf-ref} allows every word to be rearranged into $a^mb^n$. Since
-\[
+$$
 b^n(x,y)=((-1)^nx,y+n),
-\]
+$$
 applying $a^m$ gives the formula.
 
 :::
@@ -129,9 +129,9 @@ The action is properly discontinuous.
 ::: pf-proof
 
 Let $C\subset\RR^2$ be compact. Its $x$- and $y$-coordinates are bounded. If
-\[
+$$
 a^mb^n(C)\cap C\ne\varnothing,
-\]
+$$
 then the formula in step [](#s1-4){.pf-ref} forces $n$ to lie in a bounded set of integers by comparing $y$-coordinates; for each such $n$, comparison of $x$-coordinates forces $m$ into a bounded set of integers. Hence only finitely many group elements move $C$ to meet itself, which is proper discontinuity for this discrete action.
 
 :::
@@ -141,9 +141,9 @@ then the formula in step [](#s1-4){.pf-ref} forces $n$ to lie in a bounded set o
 ::: {.pf-step #s1-7}
 
 The quotient
-\[
+$$
 \RR^2/G
-\]
+$$
 is homeomorphic to the Klein bottle $K$.
 
 
@@ -158,9 +158,9 @@ The square $[0,1]\times[0,1]$ is a fundamental polygon for the action. The trans
 ::: {.pf-step #s1-8}
 
 Therefore the quotient map
-\[
+$$
 p:\RR^2\to K\cong\RR^2/G
-\]
+$$
 is a covering map.
 
 
@@ -180,9 +180,9 @@ Since $\RR^2$ is simply connected, this covering is universal.
 ::: pf-proof
 
 The plane is contractible via
-\[
+$$
 H((x,y),t)=((1-t)x,(1-t)y),
-\]
+$$
 so it is simply connected. A connected simply connected covering space is a universal covering space.
 
 :::
@@ -192,9 +192,9 @@ so it is simply connected. A connected simply connected covering space is a univ
 ::: {.pf-step #s1-10}
 
 Hence the universal covering space of the Klein bottle is
-\[
+$$
 \boxed{\RR^2.}
-\]
+$$
 
 
 ::: pf-proof

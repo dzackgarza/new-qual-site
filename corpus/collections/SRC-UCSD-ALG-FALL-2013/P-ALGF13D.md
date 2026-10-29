@@ -39,87 +39,87 @@ Prove that if $P$ is a projective $A$-module, then $P \otimes_A B$ is a projecti
 ::: pf
 
 ::: {.pf-step #sum-injective-implies-summands}
-If \(P\oplus Q\) is injective, then both \(P\) and \(Q\) are injective.
+If $P\oplus Q$ is injective, then both $P$ and $Q$ are injective.
 
 ::: pf-proof
-We prove the assertion for \(P\); the argument for \(Q\) is identical.
+We prove the assertion for $P$; the argument for $Q$ is identical.
 Let
-\[
+$$
 N\hookrightarrow M
-\]
-be an inclusion of \(A\)-modules and let
-\[
+$$
+be an inclusion of $A$-modules and let
+$$
 f:N\to P
-\]
-be an \(A\)-linear map.
+$$
+be an $A$-linear map.
 Compose with the canonical inclusion
-\[
+$$
 \iota_P:P\hookrightarrow P\oplus Q
-\]
+$$
 to obtain
-\[
+$$
 \iota_Pf:N\to P\oplus Q.
-\]
-Since \(P\oplus Q\) is injective, there is an extension
-\[
+$$
+Since $P\oplus Q$ is injective, there is an extension
+$$
 F:M\to P\oplus Q
-\]
-whose restriction to \(N\) is \(\iota_Pf\).
+$$
+whose restriction to $N$ is $\iota_Pf$.
 Let
-\[
+$$
 \pi_P:P\oplus Q\to P
-\]
+$$
 be projection onto the first summand.
 Then
-\[
+$$
 \pi_PF:M\to P
-\]
-extends \(f\), because on \(N\)
-\[
+$$
+extends $f$, because on $N$
+$$
 \pi_PF|_N=\pi_P\iota_Pf=f.
-\]
-Thus \(P\) satisfies the extension property and is injective.
+$$
+Thus $P$ satisfies the extension property and is injective.
 :::
 
 :::
 
 ::: {.pf-step #summands-injective-implies-sum}
-If \(P\) and \(Q\) are injective, then \(P\oplus Q\) is injective.
+If $P$ and $Q$ are injective, then $P\oplus Q$ is injective.
 
 ::: pf-proof
-Let \(N\hookrightarrow M\) be an inclusion and let
-\[
+Let $N\hookrightarrow M$ be an inclusion and let
+$$
 f:N\to P\oplus Q
-\]
-be \(A\)-linear.
+$$
+be $A$-linear.
 Write
-\[
+$$
 f=(f_P,f_Q)
-\]
+$$
 with
-\[
+$$
 f_P:N\to P,
 \qquad
 f_Q:N\to Q.
-\]
-By injectivity of \(P\) and \(Q\), extend these maps to
-\[
+$$
+By injectivity of $P$ and $Q$, extend these maps to
+$$
 F_P:M\to P,
 \qquad
 F_Q:M\to Q.
-\]
+$$
 Then
-\[
+$$
 F=(F_P,F_Q):M\to P\oplus Q
-\]
-extends \(f\).
-Hence \(P\oplus Q\) is injective.
+$$
+extends $f$.
+Hence $P\oplus Q$ is injective.
 :::
 
 :::
 
 ::: pf-step
-Therefore \(P\oplus Q\) is injective if and only if both summands are injective.
+Therefore $P\oplus Q$ is injective if and only if both summands are injective.
 
 ::: pf-proof
 The forward implication is step [](#sum-injective-implies-summands){.pf-ref} and the reverse implication is step [](#summands-injective-implies-sum){.pf-ref}.
@@ -128,34 +128,34 @@ The forward implication is step [](#sum-injective-implies-summands){.pf-ref} and
 :::
 
 ::: pf-step
-If \(P\) is projective over \(A\), then \(P\otimes_A B\) is projective over \(B\).
+If $P$ is projective over $A$, then $P\otimes_A B$ is projective over $B$.
 
 ::: pf-proof
-Because \(P\) is projective, there exists an \(A\)-module \(Q\) and a free \(A\)-module \(F\) such that
-\[
+Because $P$ is projective, there exists an $A$-module $Q$ and a free $A$-module $F$ such that
+$$
 P\oplus Q\cong F.
-\]
-Tensor this split decomposition with \(B\) over \(A\).
+$$
+Tensor this split decomposition with $B$ over $A$.
 Since tensor product commutes with direct sums,
-\[
+$$
 (P\otimes_A B)\oplus(Q\otimes_A B)
 \cong
 F\otimes_A B.
-\]
+$$
 If
-\[
+$$
 F\cong\bigoplus_{j\in J}A,
-\]
+$$
 then
-\[
+$$
 F\otimes_A B
 \cong
 \bigoplus_{j\in J}(A\otimes_A B)
 \cong
 \bigoplus_{j\in J}B,
-\]
-which is a free \(B\)-module.
-Therefore \(P\otimes_A B\) is a direct summand of a free \(B\)-module, hence is projective as a \(B\)-module.
+$$
+which is a free $B$-module.
+Therefore $P\otimes_A B$ is a direct summand of a free $B$-module, hence is projective as a $B$-module.
 :::
 
 :::

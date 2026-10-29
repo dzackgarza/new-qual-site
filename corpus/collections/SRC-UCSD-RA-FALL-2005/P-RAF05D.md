@@ -40,25 +40,25 @@ Construct an uncountable separated family.
 ::: pf-proof
 
 For each subset $A\subseteq\NN$, let
-\[
+$$
 x^A=(x^A_n)_{n\ge1},
 \qquad
 x^A_n=\mathbf1_A(n).
-\]
+$$
 Then $x^A\in\ell^\infty$ and $\|x^A\|_\infty\le1$.
 
 If $A\ne B$, choose $n\in A\triangle B$. Then
-\[
+$$
 |x^A_n-x^B_n|=1,
-\]
+$$
 so
-\[
+$$
 \|x^A-x^B\|_\infty=1.
-\]
+$$
 Thus
-\[
+$$
 \{x^A:A\subseteq\NN\}
-\]
+$$
 is an uncountable $1$-separated subset of $\ell^\infty$.
 
 :::
@@ -72,18 +72,18 @@ A separable metric space cannot contain such a family.
 ::: pf-proof
 
 Suppose $\ell^\infty$ were separable, and let $D$ be a countable dense subset. The open balls
-\[
+$$
 B(x^A,1/3),
 \qquad A\subseteq\NN,
-\]
+$$
 are pairwise disjoint because the centers are distance $1$ apart.
 
 Since $D$ is dense, every such ball contains at least one point of $D$. Pairwise disjointness forces distinct balls to contain distinct points of $D$. Hence there could be only countably many such balls, contradicting the uncountability of $\mathcal P(\NN)$.
 
 Therefore
-\[
+$$
 \boxed{\ell^\infty\text{ is not separable}.}
-\]
+$$
 
 :::
 

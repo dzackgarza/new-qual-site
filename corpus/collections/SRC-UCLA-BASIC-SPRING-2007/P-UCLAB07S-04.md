@@ -19,32 +19,32 @@ audit:
 ::: {.problem}
 Let $A$ be a real symmetric $n\times n$ matrix with distinct eigenvalues $\lambda_1,\ldots,\lambda_\ell$, where $\ell\le n$.
 Determine
-\[
+$$
 X=\left\{x\in\RR^n:\lim_{k\to\infty}(x^TA^{2k}x)^{1/k}\text{ exists}\right\}
-\]
+$$
 and
-\[
+$$
 L=\left\{\lim_{k\to\infty}(x^TA^{2k}x)^{1/k}:x\in X\right\}.
-\]
+$$
 :::
 
 ::: {.solution}
 
 For each distinct eigenvalue $\lambda_j$, let
-\[
+$$
 E_j=\ker(A-\lambda_jI).
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 Since $A$ is real symmetric,
-\[
+$$
 \RR^n
 =
 \bigoplus_{j=1}^{\ell}E_j
-\]
+$$
 orthogonally.
 
 
@@ -60,48 +60,48 @@ Grouping basis vectors with the same eigenvalue yields the stated orthogonal dir
 ::: {.pf-step #s1-2}
 
 Every
-\[
+$$
 x\in\RR^n
-\]
+$$
 has a unique decomposition
-\[
+$$
 x=x_1+\cdots+x_\ell,
 \qquad
 x_j\in E_j,
-\]
+$$
 and
-\[
+$$
 \boxed{
 x^TA^{2k}x
 =
 \sum_{j=1}^{\ell}
 \|x_j\|_2^2\,\lambda_j^{2k}
 }.
-\]
+$$
 
 
 ::: pf-proof
 
 The decomposition is given by step [](#s1-1){.pf-ref}.
 Since
-\[
+$$
 Ax_j=\lambda_jx_j,
-\]
+$$
 one has
-\[
+$$
 A^{2k}x_j
 =
 \lambda_j^{2k}x_j.
-\]
+$$
 Therefore
-\[
+$$
 A^{2k}x
 =
 \sum_{j=1}^{\ell}
 \lambda_j^{2k}x_j.
-\]
+$$
 Using orthogonality of the eigenspaces,
-\[
+$$
 \begin{aligned}
 x^TA^{2k}x
 &=
@@ -113,7 +113,7 @@ x^TA^{2k}x
 \sum_{j=1}^{\ell}
 \lambda_j^{2k}\|x_j\|_2^2.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -122,33 +122,33 @@ x^TA^{2k}x
 ::: {.pf-step #s1-3}
 
 For
-\[
+$$
 x\ne0,
-\]
+$$
 define
-\[
+$$
 M(x)
 =
 \max\left\{
 |\lambda_j|^2:
 x_j\ne0
 \right\}.
-\]
+$$
 Then
-\[
+$$
 \lim_{k\to\infty}
 \left(
 x^TA^{2k}x
 \right)^{1/k}
 =
 M(x).
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-2){.pf-ref},
-\[
+$$
 x^TA^{2k}x
 =
 \sum_{j:x_j\ne0}
@@ -156,25 +156,25 @@ x^TA^{2k}x
 \left(
 |\lambda_j|^2
 \right)^k.
-\]
+$$
 Let
-\[
+$$
 M=M(x).
-\]
+$$
 Choose an index $j_0$ with
-\[
+$$
 x_{j_0}\ne0
 \qquad\text{and}\qquad
 |\lambda_{j_0}|^2=M.
-\]
+$$
 Then
-\[
+$$
 \|x_{j_0}\|_2^2 M^k
 \le
 x^TA^{2k}x.
-\]
+$$
 Also,
-\[
+$$
 x^TA^{2k}x
 \le
 \left(
@@ -183,9 +183,9 @@ x^TA^{2k}x
 M^k
 =
 \|x\|_2^2M^k.
-\]
+$$
 Taking $k$th roots gives
-\[
+$$
 \|x_{j_0}\|_2^{2/k}M
 \le
 \left(
@@ -193,7 +193,7 @@ x^TA^{2k}x
 \right)^{1/k}
 \le
 \|x\|_2^{2/k}M.
-\]
+$$
 Both scalar factors tend to $1$ as $k\to\infty$.
 Hence the squeeze theorem gives the stated limit.
 
@@ -204,25 +204,25 @@ Hence the squeeze theorem gives the stated limit.
 ::: {.pf-step #s1-4}
 
 For
-\[
+$$
 x=0,
-\]
+$$
 the limit exists and equals $0$.
 
 
 ::: pf-proof
 
 For every $k$,
-\[
+$$
 x^TA^{2k}x=0.
-\]
+$$
 Thus
-\[
+$$
 \left(
 x^TA^{2k}x
 \right)^{1/k}
 =0.
-\]
+$$
 
 :::
 
@@ -231,9 +231,9 @@ x^TA^{2k}x
 ::: {.pf-step #s1-5}
 
 Therefore
-\[
+$$
 \boxed{X=\RR^n}.
-\]
+$$
 
 
 ::: pf-proof
@@ -248,23 +248,23 @@ Thus every vector belongs to $X$.
 ::: {.pf-step #s1-6}
 
 Every nonzero limit value is one of the numbers
-\[
+$$
 \lambda_1^2,\ldots,\lambda_\ell^2.
-\]
+$$
 
 
 ::: pf-proof
 
 For $x\ne0$, step [](#s1-3){.pf-ref} says that the limit equals
-\[
+$$
 \max\left\{
 |\lambda_j|^2:x_j\ne0
 \right\}.
-\]
+$$
 Since the eigenvalues are real,
-\[
+$$
 |\lambda_j|^2=\lambda_j^2.
-\]
+$$
 The maximum of a finite nonempty subset of the numbers $\lambda_j^2$ is one of those numbers.
 
 :::
@@ -274,26 +274,26 @@ The maximum of a finite nonempty subset of the numbers $\lambda_j^2$ is one of t
 ::: {.pf-step #s1-7}
 
 Every number
-\[
+$$
 \lambda_j^2
-\]
+$$
 occurs as a limit.
 
 
 ::: pf-proof
 
 Choose a nonzero eigenvector
-\[
+$$
 v\in E_j.
-\]
+$$
 Then
-\[
+$$
 A^{2k}v
 =
 \lambda_j^{2k}v.
-\]
+$$
 Hence
-\[
+$$
 \begin{aligned}
 \left(
 v^TA^{2k}v
@@ -307,7 +307,7 @@ v^TA^{2k}v
 \longrightarrow
 \lambda_j^2.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -316,7 +316,7 @@ v^TA^{2k}v
 ::: {.pf-step #s1-8}
 
 Therefore
-\[
+$$
 \boxed{
 L
 =
@@ -324,7 +324,7 @@ L
 \cup
 \{\lambda_1^2,\ldots,\lambda_\ell^2\}
 }.
-\]
+$$
 
 
 ::: pf-proof

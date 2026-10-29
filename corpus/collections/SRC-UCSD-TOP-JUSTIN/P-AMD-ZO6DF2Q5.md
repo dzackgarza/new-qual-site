@@ -169,9 +169,9 @@ suspension of a circle is homeomorphic to $S^2$.
 The space consists of $S^2$ with an interior diameter segment joining the poles.
 Collapsing the contractible diameter segment to a point yields the wedge sum $S^2 \vee S^1$.
 By the Seifert–van Kampen Theorem:
-\[
+$$
 \pi_1(S^2 \cup \text{segment}) \cong \pi_1(S^2 \vee S^1) \cong \pi_1(S^2) * \pi_1(S^1) \cong 0 * \ZZ \cong \ZZ.
-\]
+$$
 
 ::: pf-proof
 
@@ -185,9 +185,9 @@ quotient by contractible subcomplex.
 
 **Item 9: $\RR^3 \setminus \{(x, y, 0) \mid x^2 + y^2 = 1\}$**
 The complement of the unknot in $\RR^3$ deformation retracts onto $S^2 \vee S^1$ (the $z$-axis plus a 2-sphere enclosing the circle), so:
-\[
+$$
 \pi_1(\RR^3 \setminus S^1) \cong \pi_1(S^2 \vee S^1) \cong \ZZ.
-\]
+$$
 
 ::: pf-proof
 
@@ -202,9 +202,9 @@ deformation retraction of unknot complement in $\RR^3$.
 **Item 10: $\RR^3 \setminus H$ (Hopf link complement)**
 The complement of the Hopf link in $S^3$ is homeomorphic to $T^2 \times (0, 1) \simeq S^1 \times S^1$.
 Thus:
-\[
+$$
 \pi_1(\RR^3 \setminus H) \cong \pi_1(S^1 \times S^1) \cong \ZZ \oplus \ZZ.
-\]
+$$
 
 ::: pf-proof
 

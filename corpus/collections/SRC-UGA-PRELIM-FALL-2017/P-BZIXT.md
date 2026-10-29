@@ -15,9 +15,9 @@ review: draft
 
 ::: {.problem}
 Let $X$ and $Y$ be sets, and let $f:X\to Y$ and $g:Y\to X$ satisfy
-\[
+$$
 g(f(x))=x
-\]
+$$
 for every $x\in X$.
 
 1. Show that $f$ is injective.
@@ -29,9 +29,9 @@ for every $x\in X$.
 
 ::: {.solution}
 If $f(x_1)=f(x_2)$, then applying $g$ gives
-\[
+$$
 x_1=g(f(x_1))=g(f(x_2))=x_2.
-\]
+$$
 Thus $f$ is injective.
 
 For each $x\in X$, the element $f(x)\in Y$ satisfies $g(f(x))=x$.

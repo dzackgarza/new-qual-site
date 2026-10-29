@@ -63,9 +63,9 @@ $K\subsetneq L\subsetneq F$.
 ::: pf-proof
 
 Let $K\subseteq L\subseteq F$. The tower law gives
-\[
+$$
 [F:K]=[F:L][L:K].
-\]
+$$
 If $[F:K]=p$ is prime, then one of the positive integer factors on the right is
 $1$. If $[F:L]=1$, then $F=L$ by step [](#s1){.pf-ref}; if $[L:K]=1$, then $L=K$. Thus no
 proper intermediate field exists.
@@ -77,24 +77,24 @@ proper intermediate field exists.
 ::: pf-step
 
 If $u\in F$ has degree $n$ over $K$, then
-\[
+$$
 [F:K]=[F:K(u)]\,n.
-\]
+$$
 
 ::: pf-proof
 
 By definition of the degree of an algebraic element,
-\[
+$$
 [K(u):K]=n.
-\]
+$$
 Applying the tower law to
-\[
+$$
 K\subseteq K(u)\subseteq F
-\]
+$$
 gives
-\[
+$$
 [F:K]=[F:K(u)][K(u):K]=[F:K(u)]n.
-\]
+$$
 When $[F:K]$ is finite, $[F:K(u)]$ is a positive integer, so $n$ divides
 $[F:K]$.
 

@@ -17,9 +17,9 @@ audit:
 Let $A,B$ be real symmetric $n\times n$ matrices.
 Assume all eigenvalues of $A$ lie in $[a_1,a_2]$ and all eigenvalues of $B$ lie in $[b_1,b_2]$.
 Prove that every eigenvalue of $A+B$ lies in
-\[
+$$
 [a_1+b_1,a_2+b_2].
-\]
+$$
 :::
 
 ::: {.solution}

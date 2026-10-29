@@ -31,26 +31,26 @@ Show that the cross product map $H^*(X; \ZZ) \otimes H^*(Y; \ZZ) \to H^*(X \time
 
 ::: {.solution}
 For a discrete space $X$, singular cohomology is concentrated in degree $0$ and
-\[
+$$
 H^0(X;\ZZ)=\operatorname{Map}(X,\ZZ)=\prod_{x\in X}\ZZ.
-\]
+$$
 Thus for infinite discrete sets $X,Y$, the cross product in degree zero is
-\[
+$$
 \operatorname{Map}(X,\ZZ)\otimes
 \operatorname{Map}(Y,\ZZ)
 \longrightarrow
 \operatorname{Map}(X\times Y,\ZZ),
-\]
+$$
 sending $f\otimes g$ to the function $(x,y)\mapsto f(x)g(y)$.
 
 Take countably infinite subsets $\{x_i\}\subset X$ and $\{y_j\}\subset Y$ and define $h:X\times Y\to\ZZ$ by
-\[
+$$
 h(x_i,y_j)=\delta_{ij},
-\]
+$$
 and $h=0$ elsewhere. If $h$ were in the image, then on this countable rectangle its matrix $(\delta_{ij})$ would be a finite sum
-\[
+$$
 \delta_{ij}=\sum_{r=1}^N a_r(i)b_r(j).
-\]
+$$
 Every finite submatrix of such a matrix has rank at most $N$, whereas the $(N+1)\times(N+1)$ identity submatrix of $(\delta_{ij})$ has rank $N+1$. Contradiction.
 
 Hence the cross product is not surjective, so it is not an isomorphism.

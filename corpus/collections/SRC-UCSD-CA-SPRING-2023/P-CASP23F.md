@@ -28,23 +28,23 @@ Prove that the Dirichlet problem on $G$ with boundary data $f$ has no solution: 
 ::: {.solution}
 (a) The Green function of the unit disk with pole at $a$ gives the required
 example:
-\[
+$$
 v(z)=\log\left|
 \frac{1-\overline a z}{z-a}
 \right|.
-\]
+$$
 It is harmonic on $\DD\setminus\{a\}$. If $|z|=1$, then
-\[
+$$
 |1-\overline a z|=|z-a|,
-\]
+$$
 so $v(z)\to0$ as $z$ tends to any point of $\circlegroup$. As $z\to a$, the
 numerator tends to $1-|a|^2>0$ while the denominator tends to $0$, hence
 $v(z)\to+\infty$.
 
 (b) Suppose such a harmonic function $u$ existed. Since
-\[
+$$
 \lim_{z\to a}u(z)=2,
-\]
+$$
 $u$ is bounded near the isolated point $a$. By the removable singularity
 theorem for harmonic functions, $u$ extends harmonically across $a$, with
 $u(a)=2$. The extension is harmonic on all of $\DD$ and continuous on

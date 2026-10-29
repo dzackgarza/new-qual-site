@@ -31,10 +31,10 @@ Show that every map $S^n \to S^n$ can be homotoped to have a fixed point if $n >
 
 ::: {.solution}
 Let
-\[
+$$
 f:S^n\to S^n,
 \qquad n>0.
-\]
+$$
 Choose a point $x_0\in S^n$.
 
 ::: pf
@@ -42,9 +42,9 @@ Choose a point $x_0\in S^n$.
 ::: pf-step
 
 There exists a rotation $R\in SO(n+1)$ such that
-\[
+$$
 R(f(x_0))=x_0.
-\]
+$$
 
 ::: pf-proof
 
@@ -61,10 +61,10 @@ The rotation $R$ is joined to the identity by a path in $SO(n+1)$.
 ::: pf-proof
 
 The group $SO(m)$ is path connected for every $m\ge2$. Here $m=n+1\ge2$, so there is a continuous path
-\[
+$$
 R_t\in SO(n+1),
 \qquad R_0=I,\quad R_1=R.
-\]
+$$
 
 :::
 
@@ -73,17 +73,17 @@ R_t\in SO(n+1),
 ::: pf-step
 
 The maps
-\[
+$$
 f_t=R_t\circ f
-\]
+$$
 form a homotopy from $f$ to a map having a fixed point.
 
 ::: pf-proof
 
 Clearly $f_0=f$. At the other endpoint,
-\[
+$$
 f_1(x_0)=R(f(x_0))=x_0,
-\]
+$$
 so $x_0$ is a fixed point of $f_1$.
 
 :::

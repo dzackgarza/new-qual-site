@@ -23,11 +23,11 @@ Let the first hypothesis claim that the correct value is $2 / 3$ and the second 
 ::: {.solution}
 
 Let $X$ be the number of matching outcomes (HH or TT) in $n$ independent trials. Test
-\[
+$$
 H_0:p=\frac12
 \qquad\text{against}\qquad
 H_1:p=\frac23.
-\]
+$$
 Because larger values of $X$ favor $H_1$, use a threshold rule: accept $H_1$ when $X\geq c$ and accept $H_0$ when $X<c$.
 
 ::: pf
@@ -35,17 +35,17 @@ Because larger values of $X$ favor $H_1$, use a threshold rule: accept $H_1$ whe
 ::: {.pf-step #s1-1}
 
 For fixed $n,c$, the two error probabilities are
-\[
+$$
 \alpha_{n,c}=P_{1/2}(X\geq c)
 =2^{-n}\sum_{k=c}^{n}\binom nk
-\]
+$$
 and
-\[
+$$
 \beta_{n,c}=P_{2/3}(X<c)
 =\sum_{k=0}^{c-1}\binom nk
 \left(\frac23\right)^k
 \left(\frac13\right)^{n-k}.
-\]
+$$
 
 
 ::: pf-proof
@@ -64,11 +64,11 @@ The likelihood ratio is strictly increasing in $X$.
 ::: pf-proof
 
 For an observation $X=k$,
-\[
+$$
 \frac{P_{2/3}(X=k)}{P_{1/2}(X=k)}
 =\frac{(2/3)^k(1/3)^{n-k}}{(1/2)^n}
 =\left(\frac23\right)^n2^k.
-\]
+$$
 Thus larger $k$ gives a larger likelihood ratio, so a threshold test is the likelihood-ratio form and no non-threshold rule can improve the tradeoff between the two simple hypotheses.
 
 :::
@@ -78,27 +78,27 @@ Thus larger $k$ gives a larger likelihood ratio, so a threshold test is the like
 ::: {.pf-step #s1-3}
 
 For $n=98$ and $c=58$,
-\[
+$$
 \alpha_{98,58}\approx0.0427053<0.05,
 \qquad
 \beta_{98,58}\approx0.0484000<0.05.
-\]
+$$
 
 
 ::: pf-proof
 
 Substitution in the exact binomial sums of step [](#s1-1){.pf-ref} gives
-\[
+$$
 2^{-98}\sum_{k=58}^{98}\binom{98}{k}
 \approx0.0427053
-\]
+$$
 and
-\[
+$$
 \sum_{k=0}^{57}\binom{98}{k}
 \left(\frac23\right)^k
 \left(\frac13\right)^{98-k}
 \approx0.0484000.
-\]
+$$
 
 :::
 
@@ -120,14 +120,14 @@ For each fixed $n$, $\alpha_{n,c}$ decreases as $c$ increases, while $\beta_{n,c
 ::: {.pf-step #s1-5}
 
 Therefore the minimum required number of two-coin trials is
-\[
+$$
 \boxed{n=98},
-\]
+$$
 with the decision rule
-\[
+$$
 \boxed{X\geq58\Rightarrow p=2/3,
 \qquad X\leq57\Rightarrow p=1/2.}
-\]
+$$
 
 
 ::: pf-proof

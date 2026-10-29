@@ -40,26 +40,26 @@ Let $f: \RR \to \RR$ be the zero function.
 
 ::: {.solution}
 (a) Fix $x\in\RR$. If $x=0$, then
-\[
+$$
 f_n(0)=\frac1{n+1}\longrightarrow0.
-\]
+$$
 If $x\ne0$, then $x-1/n\to x$, so for all sufficiently large $n$,
-\[
+$$
 |x-1/n|\ge |x|/2.
-\]
+$$
 Hence
-\[
+$$
 0\le f_n(x)\le\frac1{n^3x^2/4+1}\longrightarrow0.
-\]
+$$
 Thus $f_n(x)\to0$ for every fixed $x$.
 
 (b) At the moving point $x=1/n$,
-\[
+$$
 f_n(1/n)=1.
-\]
+$$
 Therefore
-\[
+$$
 \sup_{x\in\RR}|f_n(x)-0|=1
-\]
+$$
 for every $n$. In particular the supremum error does not tend to zero, so the convergence is not uniform.
 :::

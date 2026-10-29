@@ -18,42 +18,42 @@ audit:
 
 ::: {.problem}
 Problem 4. Consider the Banach space $V=C([-1,1])$ of all real-valued continuous functions on $[-1,1]$, equipped with the supremum norm
-\[
+$$
 \|f\|=\sup\{|f(x)|:x\in[-1,1]\},\qquad f\in V.
-\]
+$$
 Let
-\[
+$$
 B=\{f\in V:\|f\|\le1\}
-\]
+$$
 be the closed unit ball in $V$. Show that there exists a bounded linear functional $\Lambda:V\to\RR$ such that $\Lambda(B)$ is an open subset of $\RR$.
 :::
 
 ::: {.solution}
 
 Define
-\[
+$$
 \boxed{
 \Lambda(f)
 =
 \int_0^1 f(x)\,dx
 -
 \int_{-1}^0 f(x)\,dx}.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 The map
-\[
+$$
 \Lambda:V\to\RR
-\]
+$$
 is linear.
 
 
 ::: pf-proof
 
-Both integrals are linear in \(f\), so their difference is linear.
+Both integrals are linear in $f$, so their difference is linear.
 
 :::
 
@@ -61,19 +61,19 @@ Both integrals are linear in \(f\), so their difference is linear.
 
 ::: {.pf-step #s1-2}
 
-For every \(f\in V\),
-\[
+For every $f\in V$,
+$$
 \boxed{
 |\Lambda(f)|
 \le
 2\|f\|_\infty}.
-\]
+$$
 
 
 ::: pf-proof
 
 By the triangle inequality,
-\[
+$$
 \begin{aligned}
 |\Lambda(f)|
 &\le
@@ -85,7 +85,7 @@ By the triangle inequality,
 &=
 2\|f\|_\infty.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -93,11 +93,11 @@ By the triangle inequality,
 
 ::: {.pf-step #s1-3}
 
-Hence \(\Lambda\) is bounded and
-\[
+Hence $\Lambda$ is bounded and
+$$
 \boxed{
 \|\Lambda\|\le2}.
-\]
+$$
 
 
 ::: pf-proof
@@ -111,22 +111,22 @@ Step [](#s1-2){.pf-ref} is exactly the operator-norm estimate.
 ::: pf-step
 
 One has
-\[
+$$
 \boxed{
 f_\varepsilon\in B}.
-\]
+$$
 
 
 ::: pf-proof
 
-The function is continuous at \(\pm\varepsilon\), and
-\[
+The function is continuous at $\pm\varepsilon$, and
+$$
 |f_\varepsilon(x)|\le1
-\]
-for all \(x\). Hence
-\[
+$$
+for all $x$. Hence
+$$
 \|f_\varepsilon\|_\infty\le1.
-\]
+$$
 
 :::
 
@@ -135,16 +135,16 @@ for all \(x\). Hence
 ::: {.pf-step #s1-5}
 
 One has
-\[
+$$
 \boxed{
 \Lambda(f_\varepsilon)=2-\varepsilon}.
-\]
+$$
 
 
 ::: pf-proof
 
 Compute the positive-half integral:
-\[
+$$
 \begin{aligned}
 \int_0^1 f_\varepsilon(x)\,dx
 &=
@@ -158,17 +158,17 @@ Compute the positive-half integral:
 &=
 1-\frac{\varepsilon}{2}.
 \end{aligned}
-\]
-By odd symmetry of \(f_\varepsilon\),
-\[
+$$
+By odd symmetry of $f_\varepsilon$,
+$$
 \int_{-1}^0 f_\varepsilon(x)\,dx
 =
 -\left(
 1-\frac{\varepsilon}{2}
 \right).
-\]
+$$
 Therefore
-\[
+$$
 \Lambda(f_\varepsilon)
 =
 2\left(
@@ -176,7 +176,7 @@ Therefore
 \right)
 =
 2-\varepsilon.
-\]
+$$
 
 :::
 
@@ -185,25 +185,25 @@ Therefore
 ::: pf-step
 
 Hence
-\[
+$$
 \boxed{
 \|\Lambda\|=2}.
-\]
+$$
 
 
 ::: pf-proof
 
-Step [](#s1-3){.pf-ref} gives \(\|\Lambda\|\le2\). Step [](#s1-5){.pf-ref} gives values
-\[
+Step [](#s1-3){.pf-ref} gives $\|\Lambda\|\le2$. Step [](#s1-5){.pf-ref} gives values
+$$
 \Lambda(f_\varepsilon)=2-\varepsilon
-\]
-with \(\|f_\varepsilon\|_\infty\le1\), so
-\[
+$$
+with $\|f_\varepsilon\|_\infty\le1$, so
+$$
 \|\Lambda\|
 \ge
 2-\varepsilon
-\]
-for every \(\varepsilon>0\). Let \(\varepsilon\downarrow0\).
+$$
+for every $\varepsilon>0$. Let $\varepsilon\downarrow0$.
 
 :::
 
@@ -211,45 +211,45 @@ for every \(\varepsilon>0\). Let \(\varepsilon\downarrow0\).
 
 ::: {.pf-step #s1-7}
 
-Suppose \(f\in B\) and
-\[
+Suppose $f\in B$ and
+$$
 \Lambda(f)=2.
-\]
+$$
 Then
-\[
+$$
 \boxed{
 f(x)=1
 \text{ for almost every }x\in[0,1]}.
-\]
+$$
 
 
 ::: pf-proof
 
-Since \(\|f\|_\infty\le1\),
-\[
+Since $\|f\|_\infty\le1$,
+$$
 \int_0^1 f(x)\,dx\le1
-\]
+$$
 and
-\[
+$$
 -\int_{-1}^0f(x)\,dx\le1.
-\]
-Their sum is \(2\). Therefore both inequalities must be equalities:
-\[
+$$
+Their sum is $2$. Therefore both inequalities must be equalities:
+$$
 \int_0^1 f(x)\,dx=1.
-\]
+$$
 Because
-\[
+$$
 f(x)\le1
-\]
+$$
 everywhere,
-\[
+$$
 \int_0^1(1-f(x))\,dx=0
-\]
+$$
 with nonnegative integrand. Hence
-\[
+$$
 f(x)=1
-\]
-almost everywhere on \([0,1]\).
+$$
+almost everywhere on $[0,1]$.
 
 :::
 
@@ -258,30 +258,30 @@ almost everywhere on \([0,1]\).
 ::: pf-step
 
 Under the same assumption,
-\[
+$$
 \boxed{
 f(x)=-1
 \text{ for almost every }x\in[-1,0]}.
-\]
+$$
 
 
 ::: pf-proof
 
 Equality in the second estimate from step [](#s1-7){.pf-ref} gives
-\[
+$$
 \int_{-1}^0f(x)\,dx=-1.
-\]
+$$
 Since
-\[
+$$
 f(x)\ge-1,
-\]
-\[
+$$
+$$
 \int_{-1}^0(f(x)+1)\,dx=0
-\]
+$$
 with nonnegative integrand, so
-\[
+$$
 f=-1
-\]
+$$
 almost everywhere there.
 
 :::
@@ -291,14 +291,14 @@ almost everywhere there.
 ::: {.pf-step #s1-9}
 
 Continuity then forces
-\[
+$$
 f(x)=1
-\]
-for every \(x\in[0,1]\) and
-\[
+$$
+for every $x\in[0,1]$ and
+$$
 f(x)=-1
-\]
-for every \(x\in[-1,0]\).
+$$
+for every $x\in[-1,0]$.
 
 
 ::: pf-proof
@@ -311,17 +311,17 @@ A continuous function that equals a constant almost everywhere on an interval eq
 
 ::: {.pf-step #s1-10}
 
-Step [](#s1-9){.pf-ref} is impossible at \(x=0\).
+Step [](#s1-9){.pf-ref} is impossible at $x=0$.
 
 
 ::: pf-proof
 
 It would require simultaneously
-\[
+$$
 f(0)=1
 \qquad\text{and}\qquad
 f(0)=-1.
-\]
+$$
 
 :::
 
@@ -330,15 +330,15 @@ f(0)=-1.
 ::: {.pf-step #s1-11}
 
 Therefore
-\[
+$$
 \boxed{
 2\notin\Lambda(B)}.
-\]
+$$
 
 
 ::: pf-proof
 
-The assumption that some \(f\in B\) satisfies \(\Lambda(f)=2\) led to the contradiction in step [](#s1-10){.pf-ref}.
+The assumption that some $f\in B$ satisfies $\Lambda(f)=2$ led to the contradiction in step [](#s1-10){.pf-ref}.
 
 :::
 
@@ -347,19 +347,19 @@ The assumption that some \(f\in B\) satisfies \(\Lambda(f)=2\) led to the contra
 ::: {.pf-step #s1-12}
 
 Likewise,
-\[
+$$
 \boxed{
 -2\notin\Lambda(B)}.
-\]
+$$
 
 
 ::: pf-proof
 
-If \(\Lambda(f)=-2\), then
-\[
+If $\Lambda(f)=-2$, then
+$$
 \Lambda(-f)=2,
-\]
-and \(-f\in B\), contradicting step [](#s1-11){.pf-ref}.
+$$
+and $-f\in B$, contradicting step [](#s1-11){.pf-ref}.
 
 :::
 
@@ -368,19 +368,19 @@ and \(-f\in B\), contradicting step [](#s1-11){.pf-ref}.
 ::: {.pf-step #s1-13}
 
 Hence
-\[
+$$
 \boxed{
 \Lambda(B)\subseteq(-2,2)}.
-\]
+$$
 
 
 ::: pf-proof
 
 Step [](#s1-2){.pf-ref} gives
-\[
+$$
 |\Lambda(f)|\le2
-\]
-on \(B\), and steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref} exclude the endpoints.
+$$
+on $B$, and steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref} exclude the endpoints.
 
 :::
 
@@ -388,23 +388,23 @@ on \(B\), and steps [](#s1-11){.pf-ref} through [](#s1-12){.pf-ref} exclude the 
 
 ::: {.pf-step #s1-14}
 
-There exists \(g\in B\) such that
-\[
+There exists $g\in B$ such that
+$$
 \boxed{
 \Lambda(g)>|t|}.
-\]
+$$
 
 
 ::: pf-proof
 
-Choose \(\varepsilon>0\) so small that
-\[
+Choose $\varepsilon>0$ so small that
+$$
 2-\varepsilon>|t|.
-\]
+$$
 Then take
-\[
+$$
 g=f_\varepsilon
-\]
+$$
 from step [](#s1-5){.pf-ref}.
 
 :::
@@ -414,19 +414,19 @@ from step [](#s1-5){.pf-ref}.
 ::: {.pf-step #s1-15}
 
 Define
-\[
+$$
 h
 =
 \frac{t}{\Lambda(g)}\,g.
-\]
+$$
 
 
 ::: pf-proof
 
 Since
-\[
+$$
 \Lambda(g)>|t|\ge0,
-\]
+$$
 the denominator is nonzero.
 
 :::
@@ -436,31 +436,31 @@ the denominator is nonzero.
 ::: {.pf-step #s1-16}
 
 One has
-\[
+$$
 \boxed{
 h\in B}.
-\]
+$$
 
 
 ::: pf-proof
 
-Since \(g\in B\),
-\[
+Since $g\in B$,
+$$
 \|g\|_\infty\le1.
-\]
+$$
 Also
-\[
+$$
 \left|
 \frac{t}{\Lambda(g)}
 \right|
 <1
-\]
+$$
 by step [](#s1-14){.pf-ref}. Therefore
-\[
+$$
 \|h\|_\infty
 <
 1.
-\]
+$$
 
 :::
 
@@ -469,23 +469,23 @@ by step [](#s1-14){.pf-ref}. Therefore
 ::: {.pf-step #s1-17}
 
 One has
-\[
+$$
 \boxed{
 \Lambda(h)=t}.
-\]
+$$
 
 
 ::: pf-proof
 
 By linearity,
-\[
+$$
 \Lambda(h)
 =
 \frac{t}{\Lambda(g)}
 \Lambda(g)
 =
 t.
-\]
+$$
 
 :::
 
@@ -494,15 +494,15 @@ t.
 ::: {.pf-step #s1-18}
 
 Therefore
-\[
+$$
 \boxed{
 (-2,2)\subseteq\Lambda(B)}.
-\]
+$$
 
 
 ::: pf-proof
 
-The number \(t\in(-2,2)\) was arbitrary, and steps [](#s1-14){.pf-ref} through [](#s1-17){.pf-ref} produce \(h\in B\) with image \(t\).
+The number $t\in(-2,2)$ was arbitrary, and steps [](#s1-14){.pf-ref} through [](#s1-17){.pf-ref} produce $h\in B$ with image $t$.
 
 :::
 
@@ -511,10 +511,10 @@ The number \(t\in(-2,2)\) was arbitrary, and steps [](#s1-14){.pf-ref} through [
 ::: pf-step
 
 Combining the two inclusions,
-\[
+$$
 \boxed{
 \Lambda(B)=(-2,2)}.
-\]
+$$
 
 
 ::: pf-proof
@@ -527,12 +527,12 @@ Use steps [](#s1-13){.pf-ref} and [](#s1-18){.pf-ref}.
 
 ::: {.pf-step #s1-20}
 
-Hence \(\Lambda(B)\) is open in \(\RR\).
+Hence $\Lambda(B)$ is open in $\RR$.
 
 
 ::: pf-proof
 
-The interval \((-2,2)\) is open.
+The interval $(-2,2)$ is open.
 
 :::
 

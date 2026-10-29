@@ -22,13 +22,13 @@ Show that $V _ { n } ( \RR ^ { \infty } ) , V _ { n } ( \CC ^ { \infty } ) , V _
 ::: {.solution}
 
 Let $\FF$ denote any of $\RR,\CC,\quaternions$, and write
-\[
+$$
 V_n(\FF^m)
-\]
+$$
 for the Stiefel manifold of orthonormal $n$-frames in $\FF^m$. The infinite Stiefel manifold is the direct limit
-\[
+$$
 V_n(\FF^\infty)=\bigcup_{m\geq n}V_n(\FF^m)
-\]
+$$
 under the standard coordinate inclusions.
 
 ::: pf
@@ -36,15 +36,15 @@ under the standard coordinate inclusions.
 ::: {.pf-step #s1-1}
 
 There is a fiber bundle
-\[
+$$
 S^{d(m-n+1)-1}
 \longrightarrow V_n(\FF^m)
 \longrightarrow V_{n-1}(\FF^m),
-\]
+$$
 where
-\[
+$$
 d=\dim_{\RR}\FF\in\{1,2,4\}.
-\]
+$$
 
 
 ::: pf-proof
@@ -58,18 +58,18 @@ Send an orthonormal $n$-frame $(v_1,\ldots,v_n)$ to its first $n-1$ vectors. Ove
 ::: {.pf-step #s1-2}
 
 For each fixed $n$ and $k\geq0$, there exists $m_0$ such that
-\[
+$$
 \pi_k(V_n(\FF^m))=0
 \qquad(m\geq m_0).
-\]
+$$
 
 
 ::: pf-proof
 
 Induct on $n$. For $n=1$,
-\[
+$$
 V_1(\FF^m)=S^{dm-1},
-\]
+$$
 whose $\pi_k$ vanishes when $dm-1>k$. For the induction step, use the long exact homotopy sequence of the bundle in step [](#s1-1){.pf-ref}. For sufficiently large $m$, the fiber sphere has dimension greater than $k+1$, so both $\pi_k$ and $\pi_{k-1}$ of the fiber vanish. By the induction hypothesis, $\pi_k(V_{n-1}(\FF^m))=0$ for sufficiently large $m$. Exactness then gives $\pi_k(V_n(\FF^m))=0$.
 
 :::
@@ -92,10 +92,10 @@ The direct limit is taken with the weak topology of the nested finite-dimensiona
 ::: {.pf-step #s1-4}
 
 Therefore
-\[
+$$
 \pi_k(V_n(\FF^\infty))=0
 \qquad\text{for every }k\geq0.
-\]
+$$
 
 
 ::: pf-proof
@@ -135,13 +135,13 @@ By step [](#s1-4){.pf-ref} all homotopy groups vanish, and by step [](#s1-5){.pf
 ::: {.pf-step #s1-7}
 
 Applying step [](#s1-6){.pf-ref} to $\FF=\RR,\CC,\quaternions$ gives
-\[
+$$
 \boxed{
 V_n(\RR^\infty),\quad
 V_n(\CC^\infty),\quad
 V_n(\quaternions^\infty)
 \text{ are contractible}.}
-\]
+$$
 
 
 ::: pf-proof

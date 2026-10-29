@@ -19,33 +19,33 @@ Prove that for any $z \in \DD$, $$\frac{1 - |z|}{1 + |z|} \leq |f(z)| \leq \frac
 
 ::: {.solution}
 The Möbius map
-\[
+$$
 \Phi(w)=\frac{w+1}{w-1}
-\]
+$$
 maps the left half-plane conformally onto $\DD$ and sends $-1$ to $0$.
 Thus
-\[
+$$
 g=\Phi\circ f:\DD\to\DD
-\]
+$$
 is holomorphic and satisfies $g(0)=0$. Schwarz's lemma gives
-\[
+$$
 |g(z)|\le |z|.
-\]
+$$
 Solving for $f$ yields
-\[
+$$
 f(z)=\frac{g(z)+1}{g(z)-1}.
-\]
+$$
 Therefore, writing $r=|z|$,
-\[
+$$
 |f(z)|=\frac{|1+g(z)|}{|1-g(z)|}
 \le \frac{1+|g(z)|}{1-|g(z)|}
 \le \frac{1+r}{1-r}.
-\]
+$$
 Likewise,
-\[
+$$
 |f(z)|
 \ge \frac{1-|g(z)|}{1+|g(z)|}
 \ge \frac{1-r}{1+r}.
-\]
+$$
 This is the required pair of inequalities.
 :::

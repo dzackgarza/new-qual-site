@@ -18,67 +18,67 @@ audit:
 
 ::: {.problem}
 Given continuous functions $\alpha:[0,1]\to\RR$ and $\beta:[0,1]\to[0,1)$, define $f_n:[0,1]\to\RR$ recursively by
-\[
+$$
 f_{n+1}(x)=\alpha(x)+\int_0^x \beta(t)f_n(t)\,dt,
 \qquad f_0(x)=0.
-\]
+$$
 Prove that for each $x\in[0,1]$ the limit
-\[
+$$
 f(x):=\lim_{n\to\infty}f_n(x)
-\]
+$$
 exists and compute its value.
 :::
 
 ::: {.solution}
 
 Define the operator
-\[
+$$
 (K\varphi)(x)
 =
 \int_0^x\beta(t)\varphi(t)\,dt
-\]
+$$
 on
-\[
+$$
 C([0,1]).
-\]
+$$
 Then
-\[
+$$
 f_{n+1}
 =
 \alpha+Kf_n,
 \qquad
 f_0=0.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 There exists
-\[
+$$
 q<1
-\]
+$$
 such that
-\[
+$$
 0\le\beta(t)\le q
-\]
+$$
 for every
-\[
+$$
 t\in[0,1].
-\]
+$$
 
 
 ::: pf-proof
 
 The function $\beta$ is continuous on the compact interval $[0,1]$, so it attains a maximum.
 Because its values lie in
-\[
+$$
 [0,1),
-\]
+$$
 that maximum is a number
-\[
+$$
 q<1.
-\]
+$$
 
 :::
 
@@ -87,24 +87,24 @@ q<1.
 ::: {.pf-step #s1-2}
 
 For every
-\[
+$$
 \varphi,\psi\in C([0,1]),
-\]
+$$
 one has
-\[
+$$
 \|K\varphi-K\psi\|_\infty
 \le
 q\|\varphi-\psi\|_\infty.
-\]
+$$
 
 
 ::: pf-proof
 
 For
-\[
+$$
 x\in[0,1],
-\]
-\[
+$$
+$$
 \begin{aligned}
 |(K\varphi)(x)-(K\psi)(x)|
 &=
@@ -120,7 +120,7 @@ q\|\varphi-\psi\|_\infty
 &\le
 q\|\varphi-\psi\|_\infty.
 \end{aligned}
-\]
+$$
 Take the supremum over $x$.
 
 :::
@@ -130,35 +130,35 @@ Take the supremum over $x$.
 ::: {.pf-step #s1-3}
 
 The map
-\[
+$$
 \mathcal T(\varphi)
 =
 \alpha+K\varphi
-\]
+$$
 is a contraction on the Banach space
-\[
+$$
 C([0,1])
-\]
+$$
 with the supremum norm.
 
 
 ::: pf-proof
 
 The space
-\[
+$$
 C([0,1])
-\]
+$$
 is complete in the uniform norm.
 Step [](#s1-2){.pf-ref} gives
-\[
+$$
 \|\mathcal T(\varphi)-\mathcal T(\psi)\|_\infty
 \le
 q\|\varphi-\psi\|_\infty
-\]
+$$
 with
-\[
+$$
 q<1.
-\]
+$$
 Thus $\mathcal T$ is a contraction.
 
 :::
@@ -168,28 +168,28 @@ Thus $\mathcal T$ is a contraction.
 ::: {.pf-step #s1-4}
 
 The sequence $(f_n)$ converges uniformly to the unique fixed point
-\[
+$$
 f
-\]
+$$
 of $\mathcal T$.
 
 
 ::: pf-proof
 
 By definition,
-\[
+$$
 f_{n+1}
 =
 \mathcal T(f_n).
-\]
+$$
 The contraction mapping theorem applied to step [](#s1-3){.pf-ref} therefore implies
-\[
+$$
 f_n\to f
-\]
+$$
 uniformly for a unique continuous function $f$ satisfying
-\[
+$$
 \mathcal T(f)=f.
-\]
+$$
 In particular, the pointwise limit exists for every $x\in[0,1]$.
 
 :::
@@ -199,7 +199,7 @@ In particular, the pointwise limit exists for every $x\in[0,1]$.
 ::: {.pf-step #s1-5}
 
 The limit satisfies the integral equation
-\[
+$$
 \boxed{
 f(x)
 =
@@ -207,15 +207,15 @@ f(x)
 +
 \int_0^x\beta(t)f(t)\,dt.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 This is precisely the fixed-point equation
-\[
+$$
 \mathcal T(f)=f.
-\]
+$$
 
 :::
 
@@ -224,40 +224,40 @@ This is precisely the fixed-point equation
 ::: {.pf-step #s1-6}
 
 Define
-\[
+$$
 B(x)
 =
 \int_0^x\beta(s)\,ds
-\]
+$$
 and
-\[
+$$
 H(x)
 =
 e^{B(x)}
 \int_0^x
 \beta(t)\alpha(t)e^{-B(t)}
 \,dt.
-\]
+$$
 Then
-\[
+$$
 H(0)=0.
-\]
+$$
 
 
 ::: pf-proof
 
 At
-\[
+$$
 x=0,
-\]
+$$
 the integral is zero.
 Thus
-\[
+$$
 H(0)
 =
 e^{B(0)}\cdot0
 =0.
-\]
+$$
 
 :::
 
@@ -266,23 +266,23 @@ e^{B(0)}\cdot0
 ::: {.pf-step #s1-7}
 
 One has
-\[
+$$
 \boxed{
 H'(x)
 =
 \beta(x)\bigl(\alpha(x)+H(x)\bigr).
 }
-\]
+$$
 
 
 ::: pf-proof
 
 Because $\alpha$ and $\beta$ are continuous,
-\[
+$$
 B'(x)=\beta(x).
-\]
+$$
 Differentiate using the product rule and the fundamental theorem of calculus:
-\[
+$$
 \begin{aligned}
 H'(x)
 &=
@@ -298,7 +298,7 @@ e^{B(x)}
 +
 \beta(x)\alpha(x).
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -307,21 +307,21 @@ e^{B(x)}
 ::: {.pf-step #s1-8}
 
 Consequently,
-\[
+$$
 H(x)
 =
 \int_0^x
 \beta(t)\bigl(\alpha(t)+H(t)\bigr)
 \,dt.
-\]
+$$
 
 
 ::: pf-proof
 
 Integrate the differential equation from step [](#s1-7){.pf-ref} from $0$ to $x$ and use
-\[
+$$
 H(0)=0
-\]
+$$
 from step [](#s1-6){.pf-ref}.
 
 :::
@@ -331,22 +331,22 @@ from step [](#s1-6){.pf-ref}.
 ::: {.pf-step #s1-9}
 
 Define
-\[
+$$
 g(x)
 =
 \alpha(x)+H(x).
-\]
+$$
 Then
-\[
+$$
 g
-\]
+$$
 satisfies the fixed-point equation in step [](#s1-5){.pf-ref}.
 
 
 ::: pf-proof
 
 By step [](#s1-8){.pf-ref},
-\[
+$$
 \begin{aligned}
 g(x)
 &=
@@ -364,7 +364,7 @@ g(x)
 \beta(t)g(t)
 \,dt.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -373,7 +373,7 @@ g(x)
 ::: {.pf-step #s1-10}
 
 Therefore the limit is
-\[
+$$
 \boxed{
 f(x)
 =
@@ -385,16 +385,16 @@ e^{\int_0^x\beta(s)\,ds}
 e^{-\int_0^t\beta(s)\,ds}
 \,dt.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 By step [](#s1-9){.pf-ref}, the function $g$ is a fixed point of $\mathcal T$.
 By uniqueness of the fixed point from step [](#s1-4){.pf-ref},
-\[
+$$
 f=g.
-\]
+$$
 Substitute the definition of $H$ from step [](#s1-6){.pf-ref}.
 
 :::
@@ -404,7 +404,7 @@ Substitute the definition of $H$ from step [](#s1-6){.pf-ref}.
 ::: {.pf-step #s1-11}
 
 Hence for every $x\in[0,1]$,
-\[
+$$
 \boxed{
 \lim_{n\to\infty}f_n(x)
 =
@@ -416,7 +416,7 @@ e^{\int_0^x\beta(s)\,ds}
 e^{-\int_0^t\beta(s)\,ds}
 \,dt.
 }
-\]
+$$
 
 
 ::: pf-proof

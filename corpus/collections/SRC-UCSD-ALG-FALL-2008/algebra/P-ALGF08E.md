@@ -30,89 +30,89 @@ If $L$ is a field algebraic over the subfield $K$, show that any $K$-monomorphis
 
 ::: {.solution}
 Let
-\[
+$$
 \sigma:L\longrightarrow L
-\]
-be a \(K\)-monomorphism.
-Thus \(\sigma\) fixes every element of \(K\) and is injective.
+$$
+be a $K$-monomorphism.
+Thus $\sigma$ fixes every element of $K$ and is injective.
 
 ::: pf
 
 ::: {.pf-step #iterates-are-roots}
-For every \(a\in L\), all iterates
-\[
+For every $a\in L$, all iterates
+$$
 a,\sigma(a),\sigma^2(a),\ldots
-\]
-are roots of the same polynomial over \(K\).
+$$
+are roots of the same polynomial over $K$.
 
 ::: pf-proof
-Because \(L/K\) is algebraic, \(a\) has a minimal polynomial
-\[
+Because $L/K$ is algebraic, $a$ has a minimal polynomial
+$$
 m_a(T)\in K[T].
-\]
+$$
 Since
-\[
+$$
 m_a(a)=0
-\]
-and \(\sigma\) fixes the coefficients of \(m_a\), applying \(\sigma\) gives
-\[
+$$
+and $\sigma$ fixes the coefficients of $m_a$, applying $\sigma$ gives
+$$
 m_a(\sigma(a))=0.
-\]
+$$
 Repeating the argument shows
-\[
+$$
 m_a(\sigma^n(a))=0
-\]
-for every \(n\ge0\).
-Thus every iterate is a root of \(m_a\).
+$$
+for every $n\ge0$.
+Thus every iterate is a root of $m_a$.
 :::
 
 :::
 
 ::: {.pf-step #element-has-preimage}
-Every element \(a\in L\) lies in the image of \(\sigma\).
+Every element $a\in L$ lies in the image of $\sigma$.
 
 ::: pf-proof
-The polynomial \(m_a\) has only finitely many roots in the field \(L\).
+The polynomial $m_a$ has only finitely many roots in the field $L$.
 By step [](#iterates-are-roots){.pf-ref}, the infinite sequence
-\[
+$$
 a,\sigma(a),\sigma^2(a),\ldots
-\]
+$$
 takes values in this finite set.
 Hence there exist integers
-\[
+$$
 r>s\ge0
-\]
+$$
 such that
-\[
+$$
 \sigma^r(a)=\sigma^s(a).
-\]
-Because \(\sigma^s\) is injective, cancellation gives
-\[
+$$
+Because $\sigma^s$ is injective, cancellation gives
+$$
 \sigma^{r-s}(a)=a.
-\]
+$$
 Set
-\[
+$$
 b:=\sigma^{r-s-1}(a)\in L.
-\]
-Since \(r-s\ge1\), this is defined, and
-\[
+$$
+Since $r-s\ge1$, this is defined, and
+$$
 \sigma(b)=a.
-\]
-Thus \(a\in\operatorname{im}\sigma\).
+$$
+Thus $a\in\operatorname{im}\sigma$.
 :::
 
 :::
 
 ::: pf-step
-Therefore \(\sigma\) is onto.
+Therefore $\sigma$ is onto.
 
 ::: pf-proof
-By step [](#element-has-preimage){.pf-ref}, every \(a\in L\) has a preimage under \(\sigma\).
+By step [](#element-has-preimage){.pf-ref}, every $a\in L$ has a preimage under $\sigma$.
 Hence
-\[
+$$
 \operatorname{im}\sigma=L,
-\]
-so every \(K\)-monomorphism \(L\to L\) is surjective.
+$$
+so every $K$-monomorphism $L\to L$ is surjective.
 :::
 
 :::

@@ -19,9 +19,9 @@ audit:
 ::: {.problem}
 The hyperbolic sine function, denoted $\sinh$, is defined by the equation:
 
-\[
+$$
 \sinh x = \frac{e^x - e^{-x}}{2}
-\]
+$$
 
 Find a formula for $\sinh^{-1} x$.
 

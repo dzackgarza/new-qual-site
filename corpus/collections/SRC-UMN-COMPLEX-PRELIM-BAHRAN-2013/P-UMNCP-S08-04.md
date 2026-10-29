@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Let \(\lambda>1\). Show that
-\[
+Let $\lambda>1$. Show that
+$$
 z+e^{-z}=\lambda
-\]
+$$
 has exactly one solution with positive real part.
 :::
 

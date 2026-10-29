@@ -30,19 +30,19 @@ If $A$ is unitarily diagonalizable, then $A$ is normal.
 
 ::: pf-proof
 Suppose
-\[
+$$
 A=UDU^H
-\]
+$$
 with $U$ unitary and $D$ diagonal. Then
-\[
+$$
 A^H=UD^HU^H.
-\]
+$$
 Hence
-\[
+$$
 A^HA=UD^HDU^H,
 \qquad
 AA^H=UDD^HU^H.
-\]
+$$
 Since $D$ is diagonal, $D^HD=DD^H$, so $A^HA=AA^H$.
 :::
 
@@ -55,23 +55,23 @@ Every upper-triangular normal matrix is diagonal.
 We argue by induction on the size $n$. The case $n=1$ is immediate.
 
 Let $T=(t_{ij})\in M_n(\CC)$ be upper triangular and normal. Comparing the $(1,1)$ entries of
-\[
+$$
 TT^*=T^*T
-\]
+$$
 gives
-\[
+$$
 \sum_{j=1}^n|t_{1j}|^2
 =\sum_{j=1}^n|t_{j1}|^2.
-\]
+$$
 Because $T$ is upper triangular, $t_{j1}=0$ for $j>1$, so the right side is $|t_{11}|^2$. Therefore
-\[
+$$
 \sum_{j=2}^n|t_{1j}|^2=0,
-\]
+$$
 and hence $t_{1j}=0$ for every $j>1$.
 Thus
-\[
+$$
 T=\begin{pmatrix}t_{11}&0\\0&B\end{pmatrix}
-\]
+$$
 with $B$ upper triangular. Normality of $T$ implies $B$ is normal, so by induction $B$ is diagonal. Hence $T$ is diagonal.
 :::
 
@@ -82,21 +82,21 @@ If $A$ is normal, then $A$ is unitarily diagonalizable.
 
 ::: pf-proof
 By Schur decomposition there exists a unitary matrix $U$ such that
-\[
+$$
 T=U^HAU
-\]
+$$
 is upper triangular.
 Unitary similarity preserves normality:
-\[
+$$
 T^HT=U^HA^HAU,
 \qquad
 TT^H=U^HAA^HU.
-\]
+$$
 Since $A^HA=AA^H$, we have $T^HT=TT^H$, so $T$ is normal.
 By step [](#upper-triangular-normal-is-diagonal){.pf-ref}, $T$ is diagonal. Therefore
-\[
+$$
 U^HAU=T
-\]
+$$
 is diagonal, so $A$ is unitarily diagonalizable.
 :::
 
@@ -104,9 +104,9 @@ is diagonal, so $A$ is unitarily diagonalizable.
 
 ::: pf-step
 Therefore
-\[
+$$
 \boxed{A\text{ is unitarily diagonalizable}\iff A\text{ is normal}.}
-\]
+$$
 
 ::: pf-proof
 The forward implication is step [](#diagonalizable-implies-normal){.pf-ref} and the reverse implication is step [](#normal-implies-diagonalizable){.pf-ref}.

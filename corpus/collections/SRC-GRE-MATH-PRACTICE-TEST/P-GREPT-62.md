@@ -41,9 +41,9 @@ The function $f$ is bounded and Lebesgue integrable on $\RR$.
 The function takes only the values $0$ and $1$, so it is bounded. Since
 $\QQ$ is countable, it has Lebesgue measure zero. Thus $f=0$ almost
 everywhere, and consequently
-\[
+$$
 \int_{\RR}|f|\,dx=0.
-\]
+$$
 Hence $f$ is Lebesgue integrable.
 
 :::

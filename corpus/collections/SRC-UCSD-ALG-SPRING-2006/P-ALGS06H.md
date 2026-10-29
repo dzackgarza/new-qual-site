@@ -45,9 +45,9 @@ By Lagrange's Theorem, $m \le q - 1$.
 By definition of exponent, every element $x \in \FF_q^\times$ satisfies $x^m - 1 = 0$.
 The polynomial $x^m - 1 \in \FF_q[x]$ has degree $m$ and can have at most $m$ roots in the field $\FF_q$.
 Because all $q - 1$ elements of $\FF_q^\times$ are roots:
-\[
+$$
 q - 1 \le m.
-\]
+$$
 :::
 
 ::: pf-step
@@ -78,9 +78,9 @@ Then $\FF_{q^n} = \FF_q(\gamma)$.
 ::: pf-step
 Let $m_\gamma(x) \in \FF_q[x]$ be the minimal polynomial of $\gamma$ over $\FF_q$.
 By field theory, $m_\gamma(x)$ is irreducible over $\FF_q$, and its degree is:
-\[
+$$
 \deg(m_\gamma) = [\FF_q(\gamma) : \FF_q] = [\FF_{q^n} : \FF_q] = n.
-\]
+$$
 Thus $m_\gamma(x)$ is an irreducible polynomial of degree $n$ over $\FF_q$.
 :::
 
@@ -106,17 +106,17 @@ By Dedekind's Theorem on the linear independence of distinct group characters/au
 ::: pf-step
 Therefore, no non-zero polynomial in $\FF_q[T]$ of degree strictly less than $n$ can annihilate $\phi$.
 Since $T^n - 1$ is a monic polynomial of degree $n$ annihilating $\phi$, the minimal polynomial is:
-\[
+$$
 m_\phi(T) = T^n - 1.
-\]
+$$
 :::
 
 ::: pf-step
 The characteristic polynomial $\chi_\phi(T)$ is a monic polynomial of degree $\dim_{\FF_q}(\FF_{q^n}) = n$ which is divisible by $m_\phi(T)$.
 Since $\deg(m_\phi) = n = \deg(\chi_\phi)$ and both are monic:
-\[
+$$
 \chi_\phi(T) = T^n - 1.
-\]
+$$
 :::
 
 :::

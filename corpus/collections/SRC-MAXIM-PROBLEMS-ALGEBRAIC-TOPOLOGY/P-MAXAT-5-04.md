@@ -22,34 +22,34 @@ Construct an orientable sphere bundle with zero Euler class, but no section.
 ::: {.solution}
 
 Take an oriented rank-$3$ real vector bundle over $S^4$ representing the nonzero element of
-\[
+$$
 \pi_3(SO(3))\cong\ZZ,
-\]
+$$
 and let its unit-sphere bundle be
-\[
+$$
 S^2\longrightarrow S(\xi)\longrightarrow S^4.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 Oriented rank-$3$ vector bundles over $S^4$ are classified by
-\[
+$$
 \pi_3(SO(3))\cong\ZZ.
-\]
+$$
 
 
 ::: pf-proof
 
 Write
-\[
+$$
 S^4=D^4_+\cup_{S^3}D^4_-.
-\]
+$$
 An oriented rank-$3$ bundle is trivial over each hemisphere and is determined by an orientation-preserving clutching map
-\[
+$$
 g:S^3\to SO(3).
-\]
+$$
 Changing trivializations changes $g$ by homotopy, so isomorphism classes are $[S^3,SO(3)]=\pi_3(SO(3))$. The universal double cover $S^3\to SO(3)$ induces an isomorphism on $\pi_3$, hence this group is $\ZZ$.
 
 :::
@@ -59,9 +59,9 @@ Changing trivializations changes $g$ by homotopy, so isomorphism classes are $[S
 ::: {.pf-step #s1-2}
 
 Choose $\xi$ corresponding to a generator
-\[
+$$
 [g]\ne0\in\pi_3(SO(3)).
-\]
+$$
 Then $\xi$ is oriented and nontrivial.
 
 
@@ -76,21 +76,21 @@ Its structure group is $SO(3)$ by construction, so it is oriented. Under the clu
 ::: {.pf-step #s1-3}
 
 The Euler class of $\xi$ vanishes:
-\[
+$$
 e(\xi)=0.
-\]
+$$
 
 
 ::: pf-proof
 
 For an oriented rank-$3$ bundle,
-\[
+$$
 e(\xi)\in H^3(S^4;\ZZ).
-\]
+$$
 But
-\[
+$$
 H^3(S^4;\ZZ)=0,
-\]
+$$
 so the Euler class must vanish.
 
 :::
@@ -113,9 +113,9 @@ The sphere bundle consists of the unit vectors in the fibers of $\xi$. A section
 ::: {.pf-step #s1-5}
 
 If $S(\xi)$ had a section, then
-\[
+$$
 \xi\cong\varepsilon^1\oplus\eta
-\]
+$$
 for an oriented rank-$2$ bundle $\eta$ over $S^4$.
 
 
@@ -135,14 +135,14 @@ Every oriented rank-$2$ bundle over $S^4$ is trivial.
 ::: pf-proof
 
 Oriented rank-$2$ bundles are classified by
-\[
+$$
 [S^4,BSO(2)]
 \cong H^2(S^4;\ZZ),
-\]
+$$
 since $BSO(2)=BS^1\simeq\CP^{\infty}=K(\ZZ,2)$. But $H^2(S^4;\ZZ)=0$. Equivalently, their clutching group is
-\[
+$$
 \pi_3(SO(2))=\pi_3(S^1)=0.
-\]
+$$
 Thus $\eta\cong\varepsilon^2$.
 
 :::
@@ -157,10 +157,10 @@ Hence a section would force $\xi$ to be trivial, contradicting step [](#s1-2){.p
 ::: pf-proof
 
 By steps [](#s1-5){.pf-ref} through [](#s1-6){.pf-ref},
-\[
+$$
 \xi\cong\varepsilon^1\oplus\varepsilon^2
 \cong\varepsilon^3.
-\]
+$$
 This contradicts the nontrivial clutching class chosen in step [](#s1-2){.pf-ref}.
 
 :::
@@ -170,9 +170,9 @@ This contradicts the nontrivial clutching class chosen in step [](#s1-2){.pf-ref
 ::: {.pf-step #s1-8}
 
 Therefore the unit-sphere bundle
-\[
+$$
 \boxed{S^2\to S(\xi)\to S^4}
-\]
+$$
 is orientable, has zero Euler class, and has no section.
 
 

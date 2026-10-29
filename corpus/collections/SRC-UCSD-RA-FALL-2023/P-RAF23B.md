@@ -39,16 +39,16 @@ $\|S_af\|_1=a\|f\|_1$ for $a>0$ and $f\in L^1(\RR)$.
 ::: pf-proof
 
 For $a>0$, the change of variables $y=x/a$ gives
-\[
+$$
 \|S_af\|_1
 =\int_{\RR}|f(x/a)|\,dx
 =a\int_{\RR}|f(y)|\,dy
 =a\|f\|_1.
-\]
+$$
 Hence
-\[
+$$
 \|S_a\|_{L^1\to L^1}=a.
-\]
+$$
 In particular, the operators $S_a$ are uniformly bounded for $a$ in any fixed neighborhood of $1$.
 
 :::
@@ -62,26 +62,26 @@ $\|S_ag-g\|_1\to0$ as $a\to1$ for every $g\in C_c(\RR)$.
 ::: pf-proof
 
 Let $g\in C_c(\RR)$ and choose $M>0$ with
-\[
+$$
 \operatorname{supp}g\subset[-M,M].
-\]
+$$
 Restrict first to $a\in[1/2,2]$. Then
-\[
+$$
 \operatorname{supp}(S_ag)\subset[-2M,2M].
-\]
+$$
 Since $g$ is uniformly continuous on $\RR$ and
-\[
+$$
 \sup_{|x|\le2M}|x/a-x|\longrightarrow0
 \qquad(a\to1),
-\]
+$$
 we have
-\[
+$$
 \|S_ag-g\|_\infty\longrightarrow0.
-\]
+$$
 Both functions vanish outside a fixed compact interval, so
-\[
+$$
 \|S_ag-g\|_1\longrightarrow0.
-\]
+$$
 
 :::
 
@@ -94,29 +94,29 @@ $\|S_af-f\|_1\to0$ as $a\to1$ for every $f\in L^1(\RR)$.
 ::: pf-proof
 
 Fix $f\in L^1(\RR)$ and $\varepsilon>0$. Choose $g\in C_c(\RR)$ such that
-\[
+$$
 \|f-g\|_1<\varepsilon.
-\]
+$$
 For $a$ sufficiently close to $1$, say $a\in[1/2,2]$, step [](#s1){.pf-ref} gives
-\[
+$$
 \|S_a(f-g)\|_1\le2\|f-g\|_1<2\varepsilon.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 \|S_af-f\|_1
 &\le \|S_a(f-g)\|_1+\|S_ag-g\|_1+\|g-f\|_1\\
 &<3\varepsilon+\|S_ag-g\|_1.
 \end{aligned}
-\]
+$$
 By step [](#s2){.pf-ref}, the final term tends to $0$ as $a\to1$. Hence
-\[
+$$
 \limsup_{a\to1}\|S_af-f\|_1\le3\varepsilon.
-\]
+$$
 Since $\varepsilon$ is arbitrary,
-\[
+$$
 \boxed{\|S_af-f\|_1\longrightarrow0\quad(a\to1).}
-\]
+$$
 
 :::
 

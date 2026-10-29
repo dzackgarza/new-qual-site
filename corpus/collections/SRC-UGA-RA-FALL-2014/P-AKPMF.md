@@ -30,9 +30,9 @@ audit:
 
 ::: {.problem}
 Let $1 \leq p,q \leq \infty$ be conjugate exponents, and show that
-\[
+$$
 f \in L^p(\RR^n) \implies \|f\|_{p} = \sup _{\|g\|_{q}=1}\left|\int f(x) g(x) d x\right|
-\]
+$$
 :::
 ::: {.solution}
 
@@ -45,15 +45,15 @@ Hölder gives the upper bound.
 ::: pf-proof
 
 For every $g\in L^q(\RR^n)$ with $\|g\|_q=1$, Hölder's inequality gives
-\[
+$$
 \left|\int_{\RR^n}f(x)g(x)\,dx\right|
 \le \|f\|_p\|g\|_q
 =\|f\|_p.
-\]
+$$
 Hence
-\[
+$$
 \sup_{\|g\|_q=1}\left|\int fg\right|\le\|f\|_p.
-\]
+$$
 
 :::
 
@@ -66,21 +66,21 @@ Prove equality when $1<p<\infty$.
 ::: pf-proof
 
 If $f=0$, the result is immediate. Otherwise define
-\[
+$$
 g(x)=\frac{\overline{f(x)}|f(x)|^{p-2}}{\|f\|_p^{p-1}},
-\]
+$$
 with $g=0$ where $f=0$. Since $q=p/(p-1)$,
-\[
+$$
 \|g\|_q^q
 =\frac{\int |f|^{(p-1)q}}{\|f\|_p^{(p-1)q}}
 =\frac{\int |f|^p}{\|f\|_p^p}=1.
-\]
+$$
 Moreover,
-\[
+$$
 \int fg
 =\frac{\int |f|^p}{\|f\|_p^{p-1}}
 =\|f\|_p.
-\]
+$$
 Thus the supremum is at least $\|f\|_p$, and Step 1 gives equality.
 
 :::
@@ -94,17 +94,17 @@ Prove equality when $p=1$ and $q=\infty$.
 ::: pf-proof
 
 If $f=0$, there is nothing to prove. Define the phase
-\[
+$$
 \theta(x)=
 \begin{cases}
 \overline{f(x)}/|f(x)|,&f(x)\ne0,\\
 0,&f(x)=0.
 \end{cases}
-\]
+$$
 Then $\|\theta\|_\infty=1$ and
-\[
+$$
 \int f\theta=\int |f|=\|f\|_1.
-\]
+$$
 Hence the supremum equals $\|f\|_1$.
 
 :::
@@ -118,17 +118,17 @@ Prove equality when $p=\infty$ and $q=1$.
 ::: pf-proof
 
 Let $M=\|f\|_\infty$. If $M=0$, the result is immediate. Fix $\varepsilon\in(0,M)$. By the definition of essential supremum,
-\[
+$$
 A_\varepsilon:=\{x:|f(x)|>M-\varepsilon\}
-\]
+$$
 has positive measure. Since Lebesgue measure on $\RR^n$ is sigma-finite, there is a measurable set
-\[
+$$
 E\subseteq A_\varepsilon,
 \qquad
 0<m(E)<\infty.
-\]
+$$
 Define
-\[
+$$
 g(x)=\frac{\theta(x)\mathbf1_E(x)}{m(E)},
 \qquad
 \theta(x)=
@@ -136,13 +136,13 @@ g(x)=\frac{\theta(x)\mathbf1_E(x)}{m(E)},
 \overline{f(x)}/|f(x)|,&f(x)\ne0,\\
 0,&f(x)=0.
 \end{cases}
-\]
+$$
 Then $\|g\|_1=1$ and
-\[
+$$
 \left|\int fg\right|
 =\frac1{m(E)}\int_E|f(x)|\,dx
 \ge M-\varepsilon.
-\]
+$$
 Letting $\varepsilon\downarrow0$ shows that the supremum is at least $M$. Step 1 gives the reverse inequality, hence equality.
 
 :::
@@ -156,12 +156,12 @@ Conclude.
 ::: pf-proof
 
 All conjugate pairs $1\le p,q\le\infty$ have been covered, so
-\[
+$$
 \boxed{
 \|f\|_p
 =\sup_{\|g\|_q=1}
 \left|\int_{\RR^n}f(x)g(x)\,dx\right|.}
-\]
+$$
 
 :::
 

@@ -20,13 +20,13 @@ audit:
 
 ::: {.problem}
 Find a Laurent series converging in the annulus
-\[
+$$
 1<|z|<2
-\]
+$$
 to a branch of
-\[
+$$
 \log\left(\frac{z(2-z)}{1-z}\right).
-\]
+$$
 :::
 
 ::: {.solution}

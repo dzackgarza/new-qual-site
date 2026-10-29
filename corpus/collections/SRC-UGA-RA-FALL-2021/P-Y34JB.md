@@ -30,9 +30,9 @@ Let $f$ be a measurable function on $\RR$. Show that the graph of $f$ has measur
 
 ::: {.solution}
 Let
-\[
+$$
 \Gamma:=\{(x,f(x)):x\in\RR\}\subset\RR^2.
-\]
+$$
 
 ::: pf
 
@@ -43,15 +43,15 @@ The graph $\Gamma$ is Lebesgue measurable.
 ::: pf-proof
 
 The map
-\[
+$$
 F:\RR^2\to\RR,
 \qquad
 F(x,y)=y-f(x),
-\]
+$$
 is Lebesgue measurable because $(x,y)\mapsto y$ is continuous and $(x,y)\mapsto f(x)$ is measurable. Hence
-\[
+$$
 \Gamma=F^{-1}(\{0\})
-\]
+$$
 is Lebesgue measurable.
 
 :::
@@ -65,13 +65,13 @@ Every vertical section of $\Gamma$ has one-dimensional measure zero.
 ::: pf-proof
 
 For fixed $x\in\RR$,
-\[
+$$
 \Gamma_x:=\{y\in\RR:(x,y)\in\Gamma\}=\{f(x)\}.
-\]
+$$
 Therefore
-\[
+$$
 m_1(\Gamma_x)=0.
-\]
+$$
 
 :::
 
@@ -84,7 +84,7 @@ Apply Tonelli's theorem.
 ::: pf-proof
 
 Since $\mathbf1_\Gamma\ge0$ is measurable, Tonelli's theorem gives
-\[
+$$
 \begin{aligned}
 m_2(\Gamma)
 &=\int_{\RR^2}\mathbf1_\Gamma(x,y)\,d(x,y)\\
@@ -92,11 +92,11 @@ m_2(\Gamma)
 &=\int_{\RR}m_1(\Gamma_x)\,dx\\
 &=0.
 \end{aligned}
-\]
+$$
 Thus
-\[
+$$
 \boxed{m_2(\Gamma)=0.}
-\]
+$$
 
 :::
 

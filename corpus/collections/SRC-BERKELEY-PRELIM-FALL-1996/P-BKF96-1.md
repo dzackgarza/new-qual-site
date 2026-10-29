@@ -24,9 +24,9 @@ audit:
 
 ::: {.problem}
 Let $M$ be the space of real-valued functions $f$ on $[0,1]$ for which $f$ and $f'$ are continuous, with norm
-\[
+$$
 \|f\|=\sup_{0\le x\le1}|f(x)|+\sup_{0\le x\le1}|f'(x)|.
-\]
+$$
 Which subsets of $M$ are compact?
 :::
 

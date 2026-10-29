@@ -22,18 +22,18 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int\frac{4x^3+2x}{x^4+1}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}
 Split the integral:
-\[
+$$
 \int\frac{4x^3}{x^4+1}\,dx+\int\frac{2x}{x^4+1}\,dx.
-\]
+$$
 The first is $\ln(x^4+1)$. In the second, put $u=x^2$, so $du=2x\,dx$ and the denominator is $u^2+1$. Thus
-\[
+$$
 \boxed{\int\frac{4x^3+2x}{x^4+1}\,dx=\ln(x^4+1)+\arctan(x^2)+C.}
-\]
+$$
 :::

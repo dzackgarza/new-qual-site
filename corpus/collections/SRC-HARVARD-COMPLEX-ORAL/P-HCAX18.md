@@ -14,9 +14,9 @@ review: draft
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_0^\infty \frac{x^{1/2}}{1+x^2}\,dx
-\]
+$$
 by complex-analytic methods.
 :::
 

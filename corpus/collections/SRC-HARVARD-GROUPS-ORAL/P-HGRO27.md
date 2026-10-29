@@ -36,8 +36,8 @@ every element of $G$ has order a power of $p$, and no positive power of $p$
 equals the distinct prime $q$. This is a contradiction.
 
 Therefore no prime other than $p$ divides $|G|$, so
-\[
+$$
 |G|=p^n
-\]
+$$
 for some $n\ge0$.
 :::

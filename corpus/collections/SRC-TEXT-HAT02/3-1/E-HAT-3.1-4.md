@@ -31,9 +31,9 @@ More specifically, what are the groups $h_n(X; G)$ when $G = \ZZ$, $\ZZ_m$, and 
 
 ::: {.solution}
 For a space $X$, each singular chain group $C_n(X)$ is a free abelian group. We compute
-\[
+$$
 h_n(X;G)=H_n\bigl(\operatorname{Hom}(G,C_\bullet(X))\bigr)
-\]
+$$
 for the three specified groups $G$.
 
 ::: pf
@@ -41,16 +41,16 @@ for the three specified groups $G$.
 ::: pf-step
 
 If $G=\ZZ$, then
-\[
+$$
 \boxed{h_n(X;\ZZ)\cong H_n(X;\ZZ).}
-\]
+$$
 
 ::: pf-proof
 
 Evaluation at $1$ gives a natural isomorphism
-\[
+$$
 \operatorname{Hom}(\ZZ,C_n(X))\cong C_n(X)
-\]
+$$
 for every $n$, and under this identification the induced differential is the ordinary singular boundary. Thus the two chain complexes are naturally isomorphic.
 
 :::
@@ -60,17 +60,17 @@ for every $n$, and under this identification the induced differential is the ord
 ::: pf-step
 
 If $G=\ZZ_m$, then
-\[
+$$
 \boxed{h_n(X;\ZZ_m)=0}
-\]
+$$
 for every $n$.
 
 ::: pf-proof
 
 A homomorphism $\ZZ_m\to C_n(X)$ must send $1$ to an element annihilated by $m$. Since $C_n(X)$ is free abelian and therefore torsion-free, the only such element is $0$. Hence
-\[
+$$
 \operatorname{Hom}(\ZZ_m,C_n(X))=0
-\]
+$$
 in every degree.
 
 :::
@@ -80,21 +80,21 @@ in every degree.
 ::: pf-step
 
 If $G=\QQ$, then
-\[
+$$
 \boxed{h_n(X;\QQ)=0}
-\]
+$$
 for every $n$.
 
 ::: pf-proof
 
 Let $\varphi:\QQ\to C_n(X)$ be a homomorphism and put $c=\varphi(1)$. For every positive integer $r$,
-\[
+$$
 c=r\,\varphi(1/r),
-\]
+$$
 so $c$ is divisible by every $r$. A free abelian group has no nonzero element divisible by every positive integer, hence $c=0$. Then for $a/b\in\QQ$,
-\[
+$$
 b\varphi(a/b)=a\varphi(1)=0,
-\]
+$$
 and torsion-freeness gives $\varphi(a/b)=0$. Thus every such homomorphism is zero.
 
 :::

@@ -21,29 +21,29 @@ Show that $H$ has infinite index in $F$.
 
 ::: {.solution}
 Consider the right cosets
-\[
+$$
 H\beta^n,\qquad n\in\ZZ,
-\]
-where \(H=\langle\alpha\rangle\).
+$$
+where $H=\langle\alpha\rangle$.
 
 If
-\[
+$$
 H\beta^m=H\beta^n,
-\]
+$$
 then
-\[
+$$
 \beta^{m-n}\in H=\langle\alpha\rangle.
-\]
-Hence for some \(k\in\ZZ\),
-\[
+$$
+Hence for some $k\in\ZZ$,
+$$
 \beta^{m-n}=\alpha^k.
-\]
-In the free group \(F(\alpha,\beta)\), a nonzero power of \(\beta\) is a reduced word involving only the letter \(\beta^{\pm1}\), while a nonzero power of \(\alpha\) involves only \(\alpha^{\pm1}\). By uniqueness of reduced words, equality is possible only when
-\[
+$$
+In the free group $F(\alpha,\beta)$, a nonzero power of $\beta$ is a reduced word involving only the letter $\beta^{\pm1}$, while a nonzero power of $\alpha$ involves only $\alpha^{\pm1}$. By uniqueness of reduced words, equality is possible only when
+$$
 m-n=0\quad\text{and}\quad k=0.
-\]
-Thus the cosets \(H\beta^n\) are pairwise distinct as \(n\) varies. There are infinitely many of them, so
-\[
+$$
+Thus the cosets $H\beta^n$ are pairwise distinct as $n$ varies. There are infinitely many of them, so
+$$
 \boxed{[F:H]=\infty.}
-\]
+$$
 :::

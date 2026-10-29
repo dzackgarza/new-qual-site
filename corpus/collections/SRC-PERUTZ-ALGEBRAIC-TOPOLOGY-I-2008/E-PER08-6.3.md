@@ -26,9 +26,9 @@ Identify all index 2 subgroups of the free group F2. Show that they are all free
 ::: {.solution}
 Write $F_2=\langle a,b\rangle$.
 Index-$2$ subgroups are normal and are exactly the kernels of the three nonzero homomorphisms
-\[
+$$
 F_2\longrightarrow\ZZ/2.
-\]
+$$
 Thus there are exactly three.
 
 ::: pf
@@ -36,9 +36,9 @@ Thus there are exactly three.
 ::: pf-step
 
 The kernel of $a\mapsto1$, $b\mapsto0$ is free on
-\[
+$$
 a^2,\quad b,\quad aba^{-1}.
-\]
+$$
 
 ::: pf-proof
 
@@ -52,9 +52,9 @@ The nontrivial Schreier generators $t x\overline{tx}^{-1}$ for $t\in\{1,a\}$ and
 ::: pf-step
 
 The kernel of $a\mapsto0$, $b\mapsto1$ is free on
-\[
+$$
 b^2,\quad a,\quad bab^{-1}.
-\]
+$$
 
 ::: pf-proof
 
@@ -67,9 +67,9 @@ This is the same Schreier computation with $a$ and $b$ interchanged.
 ::: pf-step
 
 The kernel of $a\mapsto1$, $b\mapsto1$ is free on
-\[
+$$
 a^2,\quad ba^{-1},\quad ab.
-\]
+$$
 
 ::: pf-proof
 

@@ -22,13 +22,13 @@ audit:
 
 ::: {.problem}
 Let $f : \CC \to \CC$ be an entire function. Show that
-\[
+$$
 |f(z)| \leq C e^{a|z|}, \quad z \in \CC,
-\]
+$$
 for some constants $C$ and $a$ if and only if we have
-\[
+$$
 |f^{(n)}(0)| \leq M^{n+1}, \quad n = 0, 1, \ldots,
-\]
+$$
 for some constant $M$.
 :::
 
@@ -39,35 +39,35 @@ for some constant $M$.
 ::: {.pf-step #s1-1}
 
 Assume first that there are constants $C>0$ and $a\ge0$ such that
-\[
+$$
 |f(z)|\le Ce^{a|z|}
 \qquad(z\in\CC).
-\]
+$$
 Then for every $R>0$ and every $n\ge0$,
-\[
+$$
 |f^{(n)}(0)|
 \le
 \frac{n!}{R^n}Ce^{aR}.
-\]
+$$
 
 
 ::: pf-proof
 
 On the circle $|z|=R$,
-\[
+$$
 \max_{|z|=R}|f(z)|
 \le
 Ce^{aR}.
-\]
+$$
 Cauchy's derivative estimate therefore gives
-\[
+$$
 |f^{(n)}(0)|
 \le
 \frac{n!}{R^n}
 \max_{|z|=R}|f(z)|
 \le
 \frac{n!}{R^n}Ce^{aR}.
-\]
+$$
 
 :::
 
@@ -81,14 +81,14 @@ If $a=0$, then $f$ is constant.
 ::: pf-proof
 
 The growth assumption becomes
-\[
+$$
 |f(z)|\le C
-\]
+$$
 on all of $\CC$. Liouville's theorem implies that $f$ is constant.
 Hence
-\[
+$$
 f^{(n)}(0)=0
-\]
+$$
 for every $n\ge1$.
 
 :::
@@ -98,36 +98,36 @@ for every $n\ge1$.
 ::: {.pf-step #s1-3}
 
 Suppose $a>0$. For every $n\ge1$,
-\[
+$$
 |f^{(n)}(0)|
 \le
 C(ae)^n.
-\]
+$$
 
 
 ::: pf-proof
 
 In step [](#s1-1){.pf-ref} choose
-\[
+$$
 R=\frac na.
-\]
+$$
 Then
-\[
+$$
 |f^{(n)}(0)|
 \le
 C\,n!\,
 \frac{e^n a^n}{n^n}.
-\]
+$$
 Since
-\[
+$$
 n!\le n^n,
-\]
+$$
 this yields
-\[
+$$
 |f^{(n)}(0)|
 \le
 C(ae)^n.
-\]
+$$
 
 :::
 
@@ -136,43 +136,43 @@ C(ae)^n.
 ::: {.pf-step #s1-4}
 
 Under the exponential-growth hypothesis, there exists $M>0$ such that
-\[
+$$
 \boxed{
 |f^{(n)}(0)|
 \le
 M^{n+1}
 \qquad(n\ge0)}.
-\]
+$$
 
 
 ::: pf-proof
 
 If $a=0$, step [](#s1-2){.pf-ref} applies. Choose
-\[
+$$
 M\ge\max\{1,C\}.
-\]
+$$
 Then
-\[
+$$
 |f(0)|\le C\le M
-\]
+$$
 and every higher derivative is zero.
 
 If $a>0$, choose
-\[
+$$
 M\ge\max\{1,C,ae\}.
-\]
+$$
 For $n=0$,
-\[
+$$
 |f(0)|\le C\le M.
-\]
+$$
 For $n\ge1$, step [](#s1-3){.pf-ref} gives
-\[
+$$
 |f^{(n)}(0)|
 \le
 C(ae)^n
 \le
 M^{n+1}.
-\]
+$$
 
 :::
 
@@ -181,33 +181,33 @@ M^{n+1}.
 ::: {.pf-step #s1-5}
 
 Conversely, assume there is $M>0$ such that
-\[
+$$
 |f^{(n)}(0)|
 \le
 M^{n+1}
 \qquad(n\ge0).
-\]
+$$
 Then
-\[
+$$
 \boxed{
 |f(z)|
 \le
 M e^{M|z|}
 \qquad(z\in\CC)}.
-\]
+$$
 
 
 ::: pf-proof
 
 Since $f$ is entire, its Taylor series at $0$ converges everywhere:
-\[
+$$
 f(z)
 =
 \sum_{n=0}^{\infty}
 \frac{f^{(n)}(0)}{n!}z^n.
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 |f(z)|
 &\le
@@ -223,13 +223,13 @@ M
 &=
 Me^{M|z|}.
 \end{aligned}
-\]
+$$
 Thus the required exponential-growth estimate holds with
-\[
+$$
 C=M,
 \qquad
 a=M.
-\]
+$$
 
 :::
 

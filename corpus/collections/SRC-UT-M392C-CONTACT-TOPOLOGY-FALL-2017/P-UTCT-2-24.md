@@ -41,9 +41,9 @@ The first paragraph restates the definitions of Section 2 of the source (Definit
 ::: {.solution}
 
 Take the positive area form
-\[
+$$
 \omega=dx\wedge dy
-\]
+$$
 on the $xy$-plane.
 
 ::: pf
@@ -51,40 +51,40 @@ on the $xy$-plane.
 ::: {.pf-step #s1-1}
 
 On each open quadrant, the leaves of the characteristic foliation of
-\[
+$$
 \alpha
 =
 dz+b y\,dx+a x\,dy
-\]
+$$
 on the $xy$-plane are the curves $|x|^b|y|^a=c$.
 
 
 ::: pf-proof
 
 Restricting to the $xy$-plane gives
-\[
+$$
 \alpha|_F
 =
 b y\,dx+a x\,dy.
-\]
+$$
 The level curves of
-\[
+$$
 \Phi(x,y)
 =
 |x|^b |y|^a
-\]
+$$
 on an open quadrant, where $\Phi$ is smooth and positive, satisfy
-\[
+$$
 d\log\Phi
 =
 b\frac{dx}{x}
 +
 a\frac{dy}{y}.
-\]
+$$
 Multiplying by $xy$ gives the proportional $1$-form
-\[
+$$
 b y\,dx+a x\,dy.
-\]
+$$
 Thus its kernel is exactly tangent to the level curves $|x|^b|y|^a=c$, and these are the leaves.
 
 :::
@@ -94,7 +94,7 @@ Thus its kernel is exactly tangent to the level curves $|x|^b|y|^a=c$, and these
 ::: {.pf-step #s1-2}
 
 The characteristic vector field is
-\[
+$$
 \boxed{
 v
 =
@@ -102,36 +102,36 @@ a x\frac{\partial}{\partial x}
 -
 b y\frac{\partial}{\partial y}.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 For
-\[
+$$
 \omega=dx\wedge dy
-\]
+$$
 and any vector field $P\partial_x+Q\partial_y$,
-\[
+$$
 \iota_{P\partial_x+Q\partial_y}
 (dx\wedge dy)
 =
 P\,dy-Q\,dx.
-\]
+$$
 Set this equal to
-\[
+$$
 b y\,dx+a x\,dy.
-\]
+$$
 Then
-\[
+$$
 P=a x,
 \qquad
 -Q=b y,
-\]
+$$
 so
-\[
+$$
 Q=-b y.
-\]
+$$
 
 :::
 
@@ -140,19 +140,19 @@ Q=-b y.
 ::: {.pf-step #s1-3}
 
 The divergence is
-\[
+$$
 \boxed{
 \operatorname{div}_\omega v
 =
 a-b.
 }
-\]
+$$
 
 
 ::: pf-proof
 
 Differentiate the components from step [](#s1-2){.pf-ref}:
-\[
+$$
 \operatorname{div}_\omega v
 =
 \partial_x(a x)
@@ -160,7 +160,7 @@ Differentiate the components from step [](#s1-2){.pf-ref}:
 \partial_y(-b y)
 =
 a-b.
-\]
+$$
 
 :::
 
@@ -169,26 +169,26 @@ a-b.
 ::: {.pf-step #s1-4}
 
 The contact sign is governed by the same quantity:
-\[
+$$
 \alpha\wedge d\alpha
 =
 (a-b)
 \,dx\wedge dy\wedge dz.
-\]
+$$
 Hence, relative to the standard orientation,
-\[
+$$
 \boxed{
 \operatorname{sign}(\xi)
 =
 \operatorname{sign}(a-b).
 }
-\]
+$$
 
 
 ::: pf-proof
 
 Compute
-\[
+$$
 \begin{aligned}
 d\alpha
 &=
@@ -202,9 +202,9 @@ a\,dx\wedge dy\\
 &=
 (a-b)\,dx\wedge dy.
 \end{aligned}
-\]
+$$
 Therefore
-\[
+$$
 \begin{aligned}
 \alpha\wedge
 d\alpha
@@ -218,19 +218,19 @@ dz+b y\,dx+a x\,dy
 (a-b)
 \,dz\wedge dx\wedge dy.
 \end{aligned}
-\]
+$$
 The permutation
-\[
+$$
 (dz,dx,dy)
 \longmapsto
 (dx,dy,dz)
-\]
+$$
 is even, so
-\[
+$$
 dz\wedge dx\wedge dy
 =
 dx\wedge dy\wedge dz.
-\]
+$$
 Thus the sign is the sign of $a-b$.
 
 :::
@@ -248,17 +248,17 @@ The sign of the divergence is visible in the phase portrait:
 ::: pf-proof
 
 By definition,
-\[
+$$
 \mathcal L_{v}\omega
 =
 (\operatorname{div}_\omega v)\omega.
-\]
+$$
 Using step [](#s1-3){.pf-ref},
-\[
+$$
 \mathcal L_{v}\omega
 =
 (a-b)\omega.
-\]
+$$
 Positive coefficient means local area expansion, and negative coefficient means
 local contraction.
 

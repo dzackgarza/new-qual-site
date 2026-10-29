@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Let $f_1=1$, $f_2=2$, and $f_{n+1}=f_n+f_{n-1}$. Show that
-\[
+$$
 \lim_{n\to\infty}\frac{f_{n+1}}{f_n}
-\]
+$$
 exists and evaluate it.
 :::
 

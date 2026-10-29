@@ -53,39 +53,39 @@ Prove part (a) by monotone convergence.
 ::: pf-proof
 
 Since
-\[
+$$
 f_1\ge f_2\ge\cdots\ge0,
-\]
+$$
 the functions
-\[
+$$
 g_j:=f_1-f_j
-\]
+$$
 satisfy
-\[
+$$
 0\le g_1\le g_2\le\cdots
-\]
+$$
 and
-\[
+$$
 g_j\uparrow f_1-f,
 \qquad
 f:=\lim_{j\to\infty}f_j.
-\]
+$$
 By the Monotone Convergence Theorem,
-\[
+$$
 \int g_j\,d\mu\longrightarrow\int(f_1-f)\,d\mu.
-\]
+$$
 Because $f_1\in L^1(\mu)$,
-\[
+$$
 \int f_j\,d\mu
 =\int f_1\,d\mu-\int g_j\,d\mu
 \longrightarrow
 \int f_1\,d\mu-\int(f_1-f)\,d\mu
 =\int f\,d\mu.
-\]
+$$
 Thus
-\[
+$$
 \boxed{\lim_j\int f_j\,d\mu=\int\lim_j f_j\,d\mu.}
-\]
+$$
 
 :::
 
@@ -98,30 +98,30 @@ Prove part (b) by Stone--Weierstrass.
 ::: pf-proof
 
 Let
-\[
+$$
 K=[a,b]\times[c,d]
-\]
+$$
 and let $\mathcal A$ be the set of finite sums
-\[
+$$
 \sum_{j=1}^N g_j(x)h_j(y),
 \qquad
 g_j\in C([a,b]),\quad h_j\in C([c,d]).
-\]
+$$
 Then $\mathcal A$ is a subalgebra of $C(K)$ and contains the constants. It also separates points: if
-\[
+$$
 (x_1,y_1)\ne(x_2,y_2),
-\]
+$$
 then either $x_1\ne x_2$, in which case the function $(x,y)\mapsto x$ separates them, or $y_1\ne y_2$, in which case $(x,y)\mapsto y$ does.
 
 By the real Stone--Weierstrass theorem, $\mathcal A$ is uniformly dense in $C(K)$. Hence for every $\varepsilon>0$ there exists
-\[
+$$
 \sum_{j=1}^N g_j(x)h_j(y)\in\mathcal A
-\]
+$$
 such that
-\[
+$$
 \sup_{(x,y)\in K}
 \left|f(x,y)-\sum_{j=1}^N g_j(x)h_j(y)\right|<\varepsilon.
-\]
+$$
 This is the required approximation.
 
 :::
@@ -135,22 +135,22 @@ Prove part (c) by Baire category.
 ::: pf-proof
 
 The normed space $C([0,1],\RR)$ with the uniform norm is Banach. By hypothesis,
-\[
+$$
 C([0,1],\RR)=\bigcup_{j=1}^\infty F_j
-\]
+$$
 with every $F_j$ closed. The Baire Category Theorem therefore implies that at least one $F_{j_0}$ has nonempty interior.
 
 Hence there exist $f_0\in F_{j_0}$ and $\varepsilon>0$ such that the open ball
-\[
+$$
 B_\infty(f_0,\varepsilon)
 =\left\{f:\sup_{x\in[0,1]}|f(x)-f_0(x)|<\varepsilon\right\}
-\]
+$$
 is contained in $F_{j_0}$. Therefore
-\[
+$$
 \sup_{x\in[0,1]}|f(x)-f_0(x)|<\varepsilon
 \quad\Longrightarrow\quad
 f\in F_{j_0},
-\]
+$$
 as required.
 
 :::

@@ -23,15 +23,15 @@ audit:
 
 ::: {.problem}
 Find the number of roots of
-\[
+$$
 z^7-4z^3-11=0
-\]
+$$
 that lie between the circles
-\[
+$$
 |z|=1
 \qquad\text{and}\qquad
 |z|=2.
-\]
+$$
 :::
 
 ::: {.solution}

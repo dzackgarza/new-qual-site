@@ -18,17 +18,17 @@ audit:
 ::: {.problem}
 (a) Let $t\in\RR$ be not an integer multiple of $\pi$.
 For
-\[
+$$
 A=
 \begin{pmatrix}
 \cos t&\sin t\\
 -\sin t&\cos t
 \end{pmatrix},
-\]
+$$
 prove that there is no real matrix $B$ for which $BAB^{-1}$ is diagonal.
 
 (b) Prove the same assertion for
-\[
+$$
 A=
 \begin{pmatrix}
 1&\lambda\\
@@ -36,7 +36,7 @@ A=
 \end{pmatrix},
 \qquad
 \lambda\in\RR\setminus\{0\}.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -46,23 +46,23 @@ A=
 ::: {.pf-step #s1-1}
 
 In part (a), the characteristic polynomial of
-\[
+$$
 A=
 \begin{pmatrix}
 \cos t&\sin t\\
 -\sin t&\cos t
 \end{pmatrix}
-\]
+$$
 is
-\[
+$$
 p_A(\mu)=\mu^2-2(\cos t)\mu+1.
-\]
+$$
 
 
 ::: pf-proof
 
 One computes
-\[
+$$
 \begin{aligned}
 \det(\mu I-A)
 &=
@@ -78,7 +78,7 @@ One computes
 &=
 \mu^2-2(\cos t)\mu+1.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -92,11 +92,11 @@ If $t$ is not an integer multiple of $\pi$, then the matrix in part (a) has no r
 ::: pf-proof
 
 The discriminant of the polynomial in step [](#s1-1){.pf-ref} is
-\[
+$$
 4\cos^2t-4
 =
 -4\sin^2t.
-\]
+$$
 Since $t\notin\pi\ZZ$, one has $\sin t\ne0$, so the discriminant is strictly negative. Hence $p_A$ has no real roots.
 
 :::
@@ -111,9 +111,9 @@ There is no real invertible matrix $B$ for which $BAB^{-1}$ is diagonal in part 
 ::: pf-proof
 
 Suppose such a real matrix $B$ existed and set
-\[
+$$
 D=BAB^{-1}.
-\]
+$$
 Then $D$ would be a real diagonal matrix similar to $A$. Similar matrices have the same characteristic polynomial, so every diagonal entry of $D$ would be a real eigenvalue of $A$. This contradicts step [](#s1-2){.pf-ref}.
 
 :::
@@ -123,45 +123,45 @@ Then $D$ would be a real diagonal matrix similar to $A$. Similar matrices have t
 ::: {.pf-step #s1-4}
 
 In part (b), the only eigenvalue of
-\[
+$$
 A=
 \begin{pmatrix}
 1&\lambda\\
 0&1
 \end{pmatrix},
 \qquad \lambda\ne0,
-\]
+$$
 is $1$, and its eigenspace is
-\[
+$$
 E_1=\operatorname{span}\{(1,0)\}.
-\]
+$$
 
 
 ::: pf-proof
 
 The characteristic polynomial is
-\[
+$$
 \det(\mu I-A)
 =
 (\mu-1)^2,
-\]
+$$
 so the only eigenvalue is $1$. Moreover,
-\[
+$$
 A-I
 =
 \begin{pmatrix}
 0&\lambda\\
 0&0
 \end{pmatrix}.
-\]
+$$
 Since $\lambda\ne0$,
-\[
+$$
 \ker(A-I)
 =
 \{(x,0):x\in\RR\}
 =
 \operatorname{span}\{(1,0)\}.
-\]
+$$
 
 :::
 

@@ -38,9 +38,9 @@ Suppose $p$ is a prime number and the minimal polynomial of $g \in \operatorname
 ::: pf-step
 
 Factor the minimal polynomial over $\CC$:
-\[
+$$
 t^p - 1 = \prod_{k=0}^{p-1} (t - \zeta^k), \quad \text{where } \zeta = e^{2\pi i/p}.
-\]
+$$
 
 ::: pf-proof
 
@@ -77,7 +77,7 @@ the sum of the multiplicities is $\deg(\operatorname{char}_g(t)) = p$, and each 
 ::: {.pf-step #s4}
 
 Therefore the Jordan canonical form of $g$ is the diagonal matrix:
-\[
+$$
 J = \begin{pmatrix}
 1 & 0 & 0 & \cdots & 0 \\
 0 & \zeta & 0 & \cdots & 0 \\
@@ -85,7 +85,7 @@ J = \begin{pmatrix}
 \vdots & \vdots & \vdots & \ddots & \vdots \\
 0 & 0 & 0 & \cdots & \zeta^{p-1}
 \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 
@@ -100,9 +100,9 @@ Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
 ::: pf-step
 
 Factor the minimal polynomial in characteristic $p$:
-\[
+$$
 t^p - 1 = (t - 1)^p.
-\]
+$$
 
 ::: pf-proof
 
@@ -139,7 +139,7 @@ for any eigenvalue $\lambda$, the degree of $(t - \lambda)$ in the minimal polyn
 ::: {.pf-step #s8}
 
 Since $g$ is a $p \times p$ matrix, there is a single Jordan block of size $p$:
-\[
+$$
 J = J_p(1) = \begin{pmatrix}
 1 & 1 & 0 & \cdots & 0 \\
 0 & 1 & 1 & \cdots & 0 \\
@@ -147,7 +147,7 @@ J = J_p(1) = \begin{pmatrix}
 0 & 0 & \cdots & 1 & 1 \\
 0 & 0 & \cdots & 0 & 1
 \end{pmatrix}.
-\]
+$$
 
 ::: pf-proof
 

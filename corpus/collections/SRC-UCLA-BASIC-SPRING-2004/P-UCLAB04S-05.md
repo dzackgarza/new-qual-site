@@ -19,22 +19,22 @@ audit:
 Suppose $G\subset\RR^n$ is open, $f:G\to\RR^m$ is a function, and $x_0\in G$.
 
 (a) Carefully define what is meant by the derivative
-\[
+$$
 f'(x_0):\RR^n\to\RR^m.
-\]
+$$
 
 (b) Let $I$ be the line segment from $p$ to $q$ contained in $G$, and suppose that $f$ is differentiable at every point of $I$.
 Show that for some $c\in I$,
-\[
+$$
 \|f(q)-f(p)\|_2
 \leq
 \|f'(c)\|\,\|q-p\|_2.
-\]
+$$
 
 Hint: let $w$ be a unit vector such that
-\[
+$$
 \|f(q)-f(p)\|_2=(f(q)-f(p))\mathbin{\cdot}w.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -44,15 +44,15 @@ Hint: let $w$ be a unit vector such that
 ::: {.pf-step #s1-1}
 
 The derivative
-\[
+$$
 f'(x_0):\RR^n\to\RR^m
-\]
+$$
 exists if there is a linear map
-\[
+$$
 L:\RR^n\to\RR^m
-\]
+$$
 such that
-\[
+$$
 \lim_{h\to0}
 \frac{
 \|f(x_0+h)-f(x_0)-Lh\|_2
@@ -60,11 +60,11 @@ such that
 \|h\|_2
 }
 =0.
-\]
+$$
 In that case,
-\[
+$$
 \boxed{f'(x_0)=L}.
-\]
+$$
 
 
 ::: pf-proof
@@ -73,17 +73,17 @@ This is the definition of Fréchet differentiability at $x_0$.
 The linear map $L$, if it exists, is unique.
 
 Indeed, if both $L_1$ and $L_2$ satisfy the limit condition, then for any nonzero $u\in\RR^n$ and scalar $t\ne0$,
-\[
+$$
 \|(L_1-L_2)u\|
 \le
 \frac{\|f(x_0+tu)-f(x_0)-tL_1u\|}{|t|}
 +
 \frac{\|f(x_0+tu)-f(x_0)-tL_2u\|}{|t|}.
-\]
+$$
 Letting $t\to0$ gives
-\[
+$$
 (L_1-L_2)u=0.
-\]
+$$
 Thus $L_1=L_2$.
 
 :::
@@ -93,21 +93,21 @@ Thus $L_1=L_2$.
 ::: {.pf-step #s1-2}
 
 Suppose
-\[
+$$
 f(q)=f(p).
-\]
+$$
 Then the estimate in part (b) holds for every
-\[
+$$
 c\in I.
-\]
+$$
 
 
 ::: pf-proof
 
 The left-hand side is
-\[
+$$
 \|f(q)-f(p)\|_2=0,
-\]
+$$
 while the right-hand side is nonnegative.
 
 :::
@@ -117,35 +117,35 @@ while the right-hand side is nonnegative.
 ::: {.pf-step #s1-3}
 
 Suppose now that
-\[
+$$
 f(q)\ne f(p).
-\]
+$$
 Define
-\[
+$$
 w=
 \frac{f(q)-f(p)}
 {\|f(q)-f(p)\|_2}.
-\]
+$$
 Then
-\[
+$$
 \|w\|_2=1
-\]
+$$
 and
-\[
+$$
 (f(q)-f(p))\cdot w
 =
 \|f(q)-f(p)\|_2.
-\]
+$$
 
 
 ::: pf-proof
 
 The vector is well-defined because
-\[
+$$
 f(q)-f(p)\ne0.
-\]
+$$
 Its norm is $1$ by construction, and
-\[
+$$
 \begin{aligned}
 (f(q)-f(p))\cdot w
 &=
@@ -157,7 +157,7 @@ Its norm is $1$ by construction, and
 &=
 \|f(q)-f(p)\|_2.
 \end{aligned}
-\]
+$$
 
 :::
 
@@ -166,15 +166,15 @@ Its norm is $1$ by construction, and
 ::: {.pf-step #s1-4}
 
 Parametrize the segment $I$ by
-\[
+$$
 \gamma(t)=p+t(q-p),
 \qquad
 0\le t\le1,
-\]
+$$
 and define
-\[
+$$
 \phi(t)=f(\gamma(t))\cdot w.
-\]
+$$
 Then $\phi$ is differentiable on $(0,1)$ and continuous on $[0,1]$.
 
 
@@ -192,28 +192,28 @@ Taking the Euclidean inner product with the fixed vector $w$ preserves these pro
 ::: {.pf-step #s1-5}
 
 There exists
-\[
+$$
 t_0\in(0,1)
-\]
+$$
 such that
-\[
+$$
 \phi(1)-\phi(0)
 =
 \phi'(t_0).
-\]
+$$
 
 
 ::: pf-proof
 
 Apply the one-variable mean value theorem to $\phi$ on $[0,1]$.
 Since the interval length is $1$,
-\[
+$$
 \phi(1)-\phi(0)
 =
 \phi'(t_0)(1-0)
 =
 \phi'(t_0)
-\]
+$$
 for some $t_0\in(0,1)$.
 
 :::
@@ -223,41 +223,41 @@ for some $t_0\in(0,1)$.
 ::: {.pf-step #s1-6}
 
 If
-\[
+$$
 c=\gamma(t_0),
-\]
+$$
 then
-\[
+$$
 \phi'(t_0)
 =
 \bigl(f'(c)(q-p)\bigr)\cdot w.
-\]
+$$
 
 
 ::: pf-proof
 
 The chain rule gives
-\[
+$$
 (f\circ\gamma)'(t_0)
 =
 f'(c)\gamma'(t_0).
-\]
+$$
 Since
-\[
+$$
 \gamma'(t)=q-p,
-\]
+$$
 one has
-\[
+$$
 (f\circ\gamma)'(t_0)
 =
 f'(c)(q-p).
-\]
+$$
 Differentiating the scalar product with the constant vector $w$ gives
-\[
+$$
 \phi'(t_0)
 =
 \bigl(f'(c)(q-p)\bigr)\cdot w.
-\]
+$$
 
 :::
 
@@ -266,17 +266,17 @@ Differentiating the scalar product with the constant vector $w$ gives
 ::: {.pf-step #s1-7}
 
 One has
-\[
+$$
 \|f(q)-f(p)\|_2
 \le
 \|f'(c)\|\,\|q-p\|_2.
-\]
+$$
 
 
 ::: pf-proof
 
 By steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref}, and [](#s1-6){.pf-ref},
-\[
+$$
 \begin{aligned}
 \|f(q)-f(p)\|_2
 &=
@@ -286,23 +286,23 @@ By steps [](#s1-3){.pf-ref} and [](#s1-5){.pf-ref}, and [](#s1-6){.pf-ref},
 &=
 \bigl(f'(c)(q-p)\bigr)\cdot w.
 \end{aligned}
-\]
+$$
 By Cauchy--Schwarz,
-\[
+$$
 \bigl(f'(c)(q-p)\bigr)\cdot w
 \le
 \|f'(c)(q-p)\|_2\,\|w\|_2.
-\]
+$$
 Since
-\[
+$$
 \|w\|_2=1,
-\]
+$$
 and by the definition of the operator norm,
-\[
+$$
 \|f'(c)(q-p)\|_2
 \le
 \|f'(c)\|\,\|q-p\|_2.
-\]
+$$
 Combining the inequalities proves the claim.
 
 :::
