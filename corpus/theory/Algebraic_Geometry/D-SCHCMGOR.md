@@ -62,7 +62,7 @@ $$
 \text{regular} \implies \text{complete intersection} \implies \text{Gorenstein} \implies \text{Cohen--Macaulay},
 $$
 and none of the implications reverses.
-A Cohen--Macaulay projective scheme $X$ of pure dimension over a field has a dualizing sheaf $\omega_X$ with Serre duality in every degree, and $X$ is Gorenstein exactly when $\omega_X$ is invertible.
+A Cohen--Macaulay projective scheme $X$ of pure dimension over a field has a dualizing sheaf $\omega_X^\circ$ with Serre duality in every degree, and $X$ is Gorenstein exactly when $\omega_X^\circ$ is invertible.
 :::
 
 ::: {.example}
