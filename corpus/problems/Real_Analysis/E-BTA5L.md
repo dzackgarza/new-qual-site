@@ -15,18 +15,21 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source leaves f and the measure undeclared; the statement takes f to be a real-valued function in L^1(mu).
 ---
 
 ::: {.exercise}
-- Show that $f=0$ a.e. iff $\int_E f = 0$ for every measurable set $E$.
+Let $(X,\mathcal M,\mu)$ be a measure space and let $f \in L^1(\mu)$ be real-valued. Show that $f=0$ a.e. iff $\int_E f = 0$ for every measurable set $E$.
 :::
 
 ::: {.solution}
-Let $f$ be a real-valued function in $L^1(\mu)$, so that every integral $\int_E f$ is defined.
 
 ::: pf
 
-::: {.pf-step #s1}
+::: pf-step
 
 ($\Rightarrow$) If $f = 0$ a.e. then $\int_E f = 0$ for every measurable $E$.
 
@@ -38,7 +41,7 @@ Functions equal a.e. have equal integrals over $E$, and $\int_E 0 = 0$.
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
 ($\Leftarrow$) If $\int_E f = 0$ for every measurable $E$, then $f = 0$ a.e.
 
@@ -77,12 +80,6 @@ $\theset{f \neq 0} = \theset{f > 0} \cup \theset{f < 0}$ has measure $0$ by step
 :::
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are the two implications.
 
 :::
 
