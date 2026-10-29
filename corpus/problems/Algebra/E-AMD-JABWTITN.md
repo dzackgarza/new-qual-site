@@ -50,7 +50,7 @@ The field $K$ is generated over $F$ by the roots of $f$. Since $f$ is separable,
 :::
 
 ::: pf-qed
-By steps [](#normal-extension){.pf-ref} and [](#separable-extension){.pf-ref}, therefore $K/F$ is normal and separable, hence Galois.
+By steps [](#normal-extension){.pf-ref} and [](#separable-extension){.pf-ref}, $K/F$ is normal and separable, hence Galois.
 :::
 
 :::
