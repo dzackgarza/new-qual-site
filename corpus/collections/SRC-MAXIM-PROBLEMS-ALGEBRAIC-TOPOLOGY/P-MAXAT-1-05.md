@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-1-05
 kind: problem
-title: Maxim algebraic topology 1.5
+title: Homology of a connected non-compact $n$-manifold vanishes in degrees $\geq n$
 classification:
   areas: [topology]
   topics: []
