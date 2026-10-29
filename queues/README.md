@@ -16,7 +16,6 @@ The order of remaining work is the [TODO.md milestone](../TODO.md#milestone-publ
 | `B-naked-urls.md` | done | Wiki files with bare `<https://...>` link text. All 161 converted and committed. |
 | `C-unsolved-cards.md` | active, generated | Every unsolved problem card. Issue #2 target. **Generated** — `just unsolved`, and by the commit gate when a commit touches the corpus. Do not hand-edit or mirror its changing count here: a card leaves by gaining a solution. |
 | `D-duplicate-bodies.md` | done | Duplicate-body pair, dispositioned (keep both). |
-| `E-pdf-attachments.md` | active | Every PDF not in any collection provenance, classified by document content. The authored work is creating collection cards and extracting problems, one document at a time. Owned by `pdf-source-intake`. |
 | `F-wiki-doctor.md` | done | `just doctor` findings; the 5 structural one-child directories are recorded non-defects with real content. |
 | `G-math-error-scan.md` | done | All 66 candidate mathematical errors found by the reading pass have been independently re-derived and dispositioned. |
 | [H-complaint-defects.md](H-complaint-defects.md) | active | Headings promoted from `COMPLAINTS.md`; owned by `math-defect-repair`. |
