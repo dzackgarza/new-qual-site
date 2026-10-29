@@ -43,7 +43,7 @@ so $h$ is surjective, and $h$ is an isomorphism if and only if $\Ext_R(H_{n-1}(X
 
 ::: {.example}
 The evaluation homomorphism $h$ need not be injective.
-For $X = \RR P^2$, $R = \ZZ$, and $n = 2$, one has $H_1(\RR P^2;\ZZ)\cong\ZZ/2$ and $H_2(\RR P^2;\ZZ) = 0$, so $H^2(\RR P^2;\ZZ)\cong\Ext_\ZZ(\ZZ/2,\ZZ)\cong\ZZ/2$ while $\Hom_\ZZ(H_2(\RR P^2;\ZZ),\ZZ) = 0$.
+For $X = \RP^2$, $R = \ZZ$, and $n = 2$, one has $H_1(\RP^2;\ZZ)\cong\ZZ/2$ and $H_2(\RP^2;\ZZ) = 0$, so $H^2(\RP^2;\ZZ)\cong\Ext_\ZZ(\ZZ/2,\ZZ)\cong\ZZ/2$ while $\Hom_\ZZ(H_2(\RP^2;\ZZ),\ZZ) = 0$.
 :::
 
 ::: {.concept}

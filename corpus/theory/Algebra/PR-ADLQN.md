@@ -17,5 +17,5 @@ review: draft
 
 ::: {.proposition}
 Let $F$ be a finite field.
-Then $\ch F = p$ for a prime $p$, the [[D-EOCCU|prime subfield]] of $F$ is isomorphic to $\FF_p$, and $F \cong \FF_{p^n}$ for the unique integer $n = [F:\FF_p] \geq 1$, so that $\abs{F} = p^n$.
+Then $\operatorname{char} F = p$ for a prime $p$, the [[D-EOCCU|prime subfield]] of $F$ is isomorphic to $\FF_p$, and $F \cong \FF_{p^n}$ for the unique integer $n = [F:\FF_p] \geq 1$, so that $\abs{F} = p^n$.
 :::

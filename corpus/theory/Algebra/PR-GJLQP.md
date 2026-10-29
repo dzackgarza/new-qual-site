@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.proposition}
-For every group $G$, the [[D-NK7G7|center]] $Z(G)$ is a [[D-53LTN|characteristic subgroup]] of $G$, $Z(G) \ch G$.
+For every group $G$, the [[D-NK7G7|center]] $Z(G)$ is a [[D-53LTN|characteristic subgroup]] of $G$, $Z(G) \operatorname{char} G$.
 :::
 
 ::: {.proof}
