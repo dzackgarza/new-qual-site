@@ -82,7 +82,7 @@ A singularity at $z_0$ is removable if the Laurent expansion $\sum_{k\in\ZZ} c_k
 
 ::: {.remark}
 By [[T-YKVFQ]], an infinite subset of a compact set $K\subseteq\Omega$ has a limit point in $K$, so a holomorphic $f$ on a connected open set $\Omega$ with infinitely many zeros in $K$ vanishes identically by the identity principle.
-Compactness of $K$ inside $\Omega$ is needed: $\sin\bigl(\pi/(1-z)\bigr)$ is holomorphic on $\DD$, not identically zero, and vanishes at the points $1-1/k$, $k\geq 2$, which accumulate at $1\notin\DD$.
+Compactness of $K$ inside $\Omega$ is needed: $\sin\bigl(\pi/(1-z)\bigr)$ is holomorphic on $\DD$, not identically zero, and vanishes at the points $1-1/k$, $k\geq 1$, which accumulate at $1\notin\DD$.
 
 :::
 
@@ -161,7 +161,7 @@ g(z) = \sum_{k\geq -m} c_k z^{2k}
 = {c_{-m} \over z^{2m}} + \cdots
 ,$$
 so the lowest power of $z$ appearing is $z^{-2m}$ with nonzero coefficient $c_{-m}$, which is exactly a pole of order $2m$.
-Alternatively, by [[PR-NITIQ]], write $f(z) = z^{-m}h(z)$ with $h$ holomorphic and $h(0) \neq 0$; then $f(z^2) = z^{-2m}h(z^2)$ and $h(z^2)\mid_{z=0} = h(0) \neq 0$.
+Alternatively, by [[PR-NITIQ]], write $f(z) = z^{-m}h(z)$ with $h$ holomorphic and $h(0) \neq 0$; then $f(z^2) = z^{-2m}h(z^2)$ where $z\mapsto h(z^2)$ is holomorphic and takes the value $h(0) \neq 0$ at $z=0$.
 
 :::
 
@@ -181,7 +181,7 @@ Likewise $g(z) \coloneqq \sin\qty{1\over z}$ has an essential singularity at $z=
 
 :::
 
-The values taken near an essential singularity are described on [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati–Weierstrass and Picard]].
+The values taken near an essential singularity are described on [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati--Weierstrass and Picard]].
 
 ## At infinity
 
