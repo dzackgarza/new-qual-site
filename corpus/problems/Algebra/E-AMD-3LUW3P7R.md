@@ -25,18 +25,18 @@ Show that $\Inn(G) \normal \Aut(G)$.
 :::
 
 ::: {.solution}
-For \(g\in G\), write \(c_g(x)=gxg^{-1}\). Then \(\Inn(G)=\{c_g:g\in G\}\).
+For $g\in G$, write $c_g(x)=gxg^{-1}$. Then $\Inn(G)=\{c_g:g\in G\}$.
 
-Let \(\phi\in\Aut(G)\). For every \(g,x\in G\),
-\[
+Let $\phi\in\Aut(G)$. For every $g,x\in G$,
+$$
 (\phi c_g\phi^{-1})(x)
 =\phi\bigl(g\phi^{-1}(x)g^{-1}\bigr)
 =\phi(g)x\phi(g)^{-1}
 =c_{\phi(g)}(x).
-\]
+$$
 Hence
-\[
+$$
 \phi c_g\phi^{-1}=c_{\phi(g)}\in\Inn(G).
-\]
-Therefore \(\Inn(G)\trianglelefteq\Aut(G)\).
+$$
+Therefore $\Inn(G)\trianglelefteq\Aut(G)$.
 :::
