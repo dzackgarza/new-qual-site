@@ -62,7 +62,7 @@ For series of functions, the Cauchy criterion in the norm $\norm{\wait}_\infty$ 
 
 [[PR-UJ64S]]
 
-[[C-3S4XS]]
+[[T-ERNLN]]
 
 [[PR-GT5RS]]
 
