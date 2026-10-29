@@ -8,6 +8,10 @@ relations: []
 review: draft
 audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-14}
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source asks for wX = |clop(X)| for every compact Hausdorff zero-dimensional X, which fails for finite X (wX = n, |clop(X)| = 2^n). Part 2 now assumes X is infinite.
 ---
 
 ::: {.problem}
@@ -21,7 +25,7 @@ Call $X$ *zero-dimensional* if $\operatorname{clop}(X)$ is a basis, and let $wX$
    \[
    w\mathbb Q<|\operatorname{clop}(\mathbb Q)|.
    \]
-2. Prove that if $X$ is compact Hausdorff and zero-dimensional, then
+2. Prove that if $X$ is infinite, compact Hausdorff, and zero-dimensional, then
    \[
    wX=|\operatorname{clop}(X)|.
    \]
@@ -131,27 +135,6 @@ by Cantor's theorem.
 
 :::
 
-::: {.pf-step #s1-5}
-
-Part \(2\) is false as printed for finite compact Hausdorff zero-dimensional spaces.
-
-
-::: pf-proof
-
-Let \(X\) be a discrete space with \(n\ge1\) points. It is compact, Hausdorff, and zero-dimensional. Every subset is clopen, so
-\[
-|\operatorname{clop}(X)|=2^n.
-\]
-Moreover \(wX=n\): the singleton subsets form a basis, and every basis must contain every singleton because each singleton is open. Hence
-\[
-wX=n\ne2^n=|\operatorname{clop}(X)|.
-\]
-In particular, the one-point space already contradicts the literal statement.
-
-:::
-
-:::
-
 ::: {.pf-step #s1-6}
 
 If \(X\) is infinite, compact, Hausdorff, and zero-dimensional, then
@@ -191,27 +174,9 @@ Combining the two inequalities gives the claimed equality.
 
 :::
 
-::: {.pf-step #s1-7}
-
-The exact corrected form of part \(2\) is: the asserted equality holds for every infinite compact Hausdorff zero-dimensional space, while an \(n\)-point compact Hausdorff space satisfies
-\[
-wX=n,
-\qquad
-|\operatorname{clop}(X)|=2^n.
-\]
-
-
-::: pf-proof
-
-The infinite case is step [](#s1-6){.pf-ref}. A finite Hausdorff space is discrete, so the finite computation is exactly the one in step [](#s1-5){.pf-ref}.
-
-:::
-
-:::
-
 ::: pf-qed
 
-Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove part \(1\). Steps [](#s1-5){.pf-ref} through [](#s1-7){.pf-ref} show that part \(2\) is false as printed and prove the intended infinite-space statement together with the exact finite exception.
+Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} prove part \(1\). Step [](#s1-6){.pf-ref} proves part \(2\).
 
 :::
 
