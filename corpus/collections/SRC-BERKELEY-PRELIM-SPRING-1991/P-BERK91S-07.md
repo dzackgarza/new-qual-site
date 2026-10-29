@@ -39,6 +39,10 @@ $$
 $$
 :::
 
+::: {.remark title="Variations"}
+The same problem is also asked with the weaker conclusion $\abs{f(z)}\leq\abs{\frac{z^2-r^2}{1-r^2z^2}}$, which follows from the bound above because $\abs{z}<1$.
+:::
+
 ::: {.hint}
 For $a\in(-1,1)$, set $b_a(z)\coloneqq(z-a)/(1-az)$ on the unit disk.
 Schwarz's lemma applied after precomposition with the inverse of $b_a$
