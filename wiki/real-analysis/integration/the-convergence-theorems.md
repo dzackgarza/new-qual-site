@@ -55,14 +55,4 @@ If $\sum_n\norm{f_n}_1<\infty$, then $\sum_n f_n$ converges absolutely almost ev
 
 [[T-MN6WQ]]
 
-[[FS-BM2PV]]
-
-[[PR-EHIXY]]
-
-[[FR-KEWV2]]
-
-[[PR-NKZBT]]
-
-[[PR-YJJSY]]
-
 [[PR-2CZUM]]
