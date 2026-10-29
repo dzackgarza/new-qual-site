@@ -22,31 +22,31 @@ audit:
 ---
 
 ::: {.exercise}
-Let $O_p(G)$ be the intersection of all Sylow $p$-subgroups of $G$.
+Let $G$ be a finite group, let $p$ be a prime, and let $O_p(G)$ be the intersection of all Sylow $p$-subgroups of $G$.
 Show that $O_p(G) \normal G$, and that it is the unique maximal normal $p$-subgroup of $G$ (containing all other normal $p$-subgroups).
 :::
 
 ::: {.solution}
 Let
-\[
+$$
 O_p(G)=\bigcap_{P\in\Syl_p(G)}P.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
-The subgroup \(O_p(G)\) is normal in \(G\) and is a \(p\)-group.
+The subgroup $O_p(G)$ is normal in $G$ and is a $p$-group.
 
 ::: pf-proof
 
-Conjugation by any \(g\in G\) permutes the Sylow \(p\)-subgroups, so
-\[
+Conjugation by any $g\in G$ permutes the Sylow $p$-subgroups, so
+$$
 gO_p(G)g^{-1}
 =\bigcap_{P\in\Syl_p(G)}gPg^{-1}
 =O_p(G).
-\]
-Thus \(O_p(G)\trianglelefteq G\). Since it is contained in every Sylow \(p\)-subgroup, it is itself a \(p\)-group.
+$$
+Thus $O_p(G)\trianglelefteq G$. Since it is contained in every Sylow $p$-subgroup, it is itself a $p$-group.
 
 :::
 
@@ -54,18 +54,18 @@ Thus \(O_p(G)\trianglelefteq G\). Since it is contained in every Sylow \(p\)-sub
 
 ::: pf-step
 
-Every normal \(p\)-subgroup of \(G\) is contained in \(O_p(G)\).
+Every normal $p$-subgroup of $G$ is contained in $O_p(G)$.
 
 ::: pf-proof
 
-Let \(N\trianglelefteq G\) be a \(p\)-subgroup. Choose a Sylow \(p\)-subgroup \(P\) with \(N\le P\). For every \(g\in G\), normality gives
-\[
+Let $N\trianglelefteq G$ be a $p$-subgroup. Choose a Sylow $p$-subgroup $P$ with $N\le P$. For every $g\in G$, normality gives
+$$
 N=gNg^{-1}\le gPg^{-1}.
-\]
-Every Sylow \(p\)-subgroup is conjugate to \(P\), hence \(N\) lies in every Sylow \(p\)-subgroup. Therefore
-\[
+$$
+Every Sylow $p$-subgroup is conjugate to $P$, hence $N$ lies in every Sylow $p$-subgroup. Therefore
+$$
 N\le\bigcap_{Q\in\Syl_p(G)}Q=O_p(G).
-\]
+$$
 
 :::
 
@@ -73,5 +73,5 @@ N\le\bigcap_{Q\in\Syl_p(G)}Q=O_p(G).
 
 :::
 
-Thus \(O_p(G)\) is the unique largest normal \(p\)-subgroup of \(G\).
+Thus $O_p(G)$ is the unique largest normal $p$-subgroup of $G$.
 :::
