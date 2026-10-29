@@ -19,6 +19,8 @@ Show that any infinite set with the cofinite topology is compact.
 
 ::: {.solution}
 
+Let $X$ be an infinite set with the cofinite topology.
+
 ::: pf
 
 ::: {.pf-step #s1}
@@ -35,11 +37,11 @@ This is the definition of the cofinite topology.
 
 ::: pf-step
 
-Let $\mathcal U$ be an open cover and choose one nonempty $U_0\in\mathcal U$. Then $X\setminus U_0$ is finite.
+Let $\mathcal U$ be an open cover of $X$ and choose one nonempty $U_0\in\mathcal U$. Then $X\setminus U_0$ is finite.
 
 ::: pf-proof
 
-Apply step [](#s1){.pf-ref}.
+Such a $U_0$ exists because $X$ is nonempty; apply step [](#s1){.pf-ref}.
 
 :::
 
@@ -59,7 +61,7 @@ Every point is covered because $\mathcal U$ is a cover.
 
 ::: pf-step
 
-Hence every space with the cofinite topology is compact.
+Hence $X$ is compact.
 
 ::: pf-proof
 
