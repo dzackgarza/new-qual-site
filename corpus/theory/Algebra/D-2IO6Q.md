@@ -24,5 +24,5 @@ where $\mspec R$ is the [[D-NX4KW|max spectrum]] of $R$.
 :::
 
 ::: {.remark}
-For a ring $R$ with identity that need not be commutative, $\jacobsonrad{R}$ is the intersection of the maximal left ideals of $R$. It is a two-sided ideal, it equals the intersection of the maximal right ideals, and for commutative $R$ it is the ideal defined above.
+For a ring $R$ with identity that need not be commutative, $\jacobsonrad{R}$ is the intersection of the maximal left ideals of $R$. It is a two-sided ideal, it equals the intersection of the maximal right ideals, and for commutative $R$ it is the ideal defined above. [@Hun74, Chapter IX, §2]
 :::
