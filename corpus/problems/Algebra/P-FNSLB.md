@@ -19,34 +19,31 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: "The source read 'Let $R$ be a Noetherian ring and $A,B$ algebras over $R$. Suppose $A$ is finite type over $R$ and finite over B. Then $B$ is finite type over $R$.' This is false without $B\\subseteq A$: with $A=R$ and $B=R[x_1,x_2,\\ldots]$ mapping onto $A$ by $x_i\\mapsto0$, $A$ is finite over $B$ but $B$ is not of finite type. The statement now takes $B$ to be an $R$-subalgebra of $A$, with all rings commutative, as in the Artin-Tate lemma."
 ---
 
 ::: {.problem}
-- Let $R$ be a Noetherian ring and $A,B$ algebras over $R$.
-  Suppose $A$ is finite type over $R$ and finite over B. Then $B$ is finite type over $R$.
+Let $R$ be a commutative Noetherian ring and let $B\subseteq A$ be commutative $R$-algebras, with $B$ an $R$-subalgebra of $A$.
+Suppose $A$ is of finite type over $R$ and finite over $B$.
+Show that $B$ is of finite type over $R$.
 :::
 
 ::: {.solution}
-Assume $B\subseteq A$ as $R$-subalgebras. Choose elements
-\[
-x_1,\dots,x_n\in A
-\]
-generating $A$ as an $R$-algebra, and elements
-\[
-y_1,\dots,y_m\in A
-\]
-generating $A$ as a $B$-module. Enlarge the module generating set if necessary so that $1=y_1$.
+Choose elements $x_1,\ldots,x_n\in A$ generating $A$ as an $R$-algebra, and elements $y_1,\ldots,y_m\in A$ generating $A$ as a $B$-module. Enlarge the module generating set if necessary so that $1=y_1$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 There are coefficients $a_{ij},b_{ijk}\in B$ such that
-\[
+$$
 x_i=\sum_j a_{ij}y_j,
 \qquad
 y_i y_j=\sum_k b_{ijk}y_k.
-\]
+$$
 
 ::: pf-proof
 
@@ -71,9 +68,9 @@ It is finitely generated as an $R$-algebra, and $R$ is Noetherian. Hilbert's bas
 ::: pf-step
 
 The $B_0$-submodule
-\[
+$$
 M=B_0y_1+\cdots+B_0y_m
-\]
+$$
 is a subring of $A$ containing $R$ and all $x_i$.
 
 ::: pf-proof
@@ -90,7 +87,7 @@ Therefore $A=M$, so $A$ is finite as a $B_0$-module.
 
 ::: pf-proof
 
-Since $A=R[x_1,\dots,x_n]$ and $M$ is a subring containing $R$ and every $x_i$, one has $A\subseteq M$. The reverse inclusion is tautological.
+Since $A=R[x_1,\ldots,x_n]$ and $M$ is a subring containing $R$ and every $x_i$, one has $A\subseteq M$. The reverse inclusion is tautological.
 
 :::
 
