@@ -5,7 +5,7 @@ kind: problem
 title: Partial derivative of the elementary symmetric polynomial $\sum_{i<j}x_ix_j$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft
