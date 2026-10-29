@@ -130,6 +130,6 @@ The standard series and the factorial notation are collected on [[complex-analys
 [[E-SKD7P]] [[E-EMISN]] [[E-QLRNW]]
 [[E-ZQGR5]] [[E-FS7GZ]] [[E-VWVTY]]
 [[FE-LAN3V]] [[FE-VWNUI]] [[FE-EUOB2]]
-[[E-BUVLS]] [[E-VCLTY]] [[E-DUMQG]] [[E-AHBVF]] [[E-SQ4GJ]] [[E-ENJAF]] [[E-GMGFS]] [[E-XOCPO]] [[E-QCVGX]]
+[[E-BUVLS]] [[P-AZOFF-F01]] [[E-DUMQG]] [[E-AHBVF]] [[E-SQ4GJ]] [[E-ENJAF]] [[E-GMGFS]] [[E-XOCPO]] [[E-QCVGX]]
 [[E-ZWNTH]] [[E-THK2Z]] [[E-ORJPT]]
 [[E-TVJFL]] [[E-3QAC4]] [[E-SS1.EX-13]] [[E-FMLK2]]

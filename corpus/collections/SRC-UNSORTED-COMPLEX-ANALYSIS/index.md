@@ -192,7 +192,6 @@ source:
   - id: E-V2VS5
     comment: Stein--Shakarchi 3.1
   - id: E-VA3OK
-  - id: E-VCLTY
   - id: E-VGNUI
   - id: E-VI5ZS
   - id: E-VS4XE
