@@ -11,7 +11,6 @@ relations: []
 review: draft
 source:
   source_kind: compilation
-  area: real-analysis
   date:
     kind: unknown
   problems:
@@ -57,7 +56,8 @@ source:
   - id: P-6QCZ5
   - id: P-7GKWO
   - id: P-7J4VR
-  - id: P-8RB01
+  - id: P-VO7MI
+  - id: P-2B2T5
   - id: P-AGH3O
   - id: P-DFDX4
   - id: P-DQE3F

@@ -89,8 +89,6 @@ The remaining headings are the January, June, and May exam tags printed in Days 
 
 [[P-VO7MI]]
 
-[[P-8RB01]]
-
 ### January 2006, 2b
 
 [[P-FUPZQ]]
