@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPQ17D
 kind: problem
-title: "Integer homology of RP^2 x X where H_k(X) = Z/kZ"
+title: 'Integral homology of $\RP^2\times X$ where $H_k(X)\cong\ZZ/k\ZZ$'
 classification:
   areas:
   - topology

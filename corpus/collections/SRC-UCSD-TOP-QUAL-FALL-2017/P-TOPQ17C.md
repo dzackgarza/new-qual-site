@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPQ17C
 kind: problem
-title: "Homology of the mapping torus of the antipodal map on S^2"
+title: 'Homology of the mapping torus of the antipodal map on $S^2$'
 classification:
   areas:
   - topology

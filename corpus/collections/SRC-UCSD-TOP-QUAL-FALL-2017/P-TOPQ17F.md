@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPQ17F
 kind: problem
-title: "No free Z/2 action on a closed oriented 4-manifold with rank-1 H_2"
+title: 'No free $\ZZ/2$ action on a closed oriented $4$-manifold with $H_2$ of rank $1$'
 classification:
   areas:
   - topology

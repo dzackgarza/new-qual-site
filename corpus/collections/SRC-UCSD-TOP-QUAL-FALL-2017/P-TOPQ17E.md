@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPQ17E
 kind: problem
-title: "Degree 1 map from T^3 to S^3 exists but not vice versa"
+title: 'A degree-one map $T^3\to S^3$ exists but no degree-one map $S^3\to T^3$'
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPQ17G
 kind: problem
-title: "A closed simply-connected 3-manifold is homotopy equivalent to S^3"
+title: 'A closed simply connected $3$-manifold is homotopy equivalent to $S^3$'
 classification:
   areas:
   - topology
