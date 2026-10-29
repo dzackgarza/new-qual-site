@@ -21,8 +21,6 @@ Suppose $f : M \to N$ is a map between two closed connected oriented $n$-manifol
 :::
 
 ::: {.solution}
-**Goal.** Let $f:M\to N$ have degree $\pm1$, where $M,N$ are closed connected oriented $n$-manifolds. Prove that $f_*:\pi_1(M)\to\pi_1(N)$ is surjective.
-
 ::: pf
 
 ::: pf-step
