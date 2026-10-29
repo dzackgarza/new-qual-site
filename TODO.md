@@ -264,7 +264,9 @@ mathematical correction under its own node, not under copy policy.
     $\alpha^{2020}$). The mod-$p$ test already existed as PR-PB6UE and is now on the
     polynomials page; new cards PR-I1T7M (root test), PR-OGUA5 (finite-field extensions) and
     D-99IUP (algebraic closure). D-2IO6Q cites Hungerford IX.2; orbit-stabilizer drops its
-    Lagrange corollary, now carried by E-NNTQB.
+    Lagrange corollary, now carried by E-NNTQB. Open item moved from
+    `ad3-real-analysis-content`: the workshops guide lists P-6XW74 and P-KPEPM twice in its
+    algebra weeks.
   Round 3 (revision `5ba163ac9`, analysis provenance) injected the node below;
   `audited-deployment` needs it.
   - **`ad3-analysis-provenance`**. **Needs:** none. Round-3 analysis findings C1-C4: 16 UCLA
@@ -424,16 +426,16 @@ mathematical correction under its own node, not under copy policy.
     groups of the round-3 analysis report, section F. Restatements (`DEF-1`, `RENDER-02`):
     report H1-H8 and H12-H16. `STYLE-04`/`STYLE-08` on the complex cards of report section I.
     Guides: complex guide `parent:` chains (`NAV-01`) and the "grouped by type" ledes.
+    Moved from `ad3-real-analysis-content`: E-M5MWL interval $(-1,1]$; "exact existing owner"
+    appearance comments on the Wesleyan complex-analysis exams; titles of P-AEWN6, E-SS4.PR-2,
+    E-SS9.PR-1 and FT-FZERI.
     **Acceptance:** each read and repaired, or kept with the reason.
 
   Round 3 (revision `5ba163ac9`, real analysis) injected the node below; `audited-deployment`
   needs it.
-  - **`ad3-real-analysis-content`**. **Needs:** none. Open items. Wrong mathematics: E-M5MWL
-    interval. Process text (`QUAL-08`, `SEC-7`): "exact existing owner" appearance comments on
-    the Wesleyan complex-analysis exams; P-3SSNK source tag; SRC-RA-WORKSHOP locators in
-    statements (D6-10, D4-07, D8-SEQ1). Titles (`CARD-01`, `CARD-06`): P-AEWN6, E-SS4.PR-2,
-    E-SS9.PR-1, UMN, UCLA, UCSD, JHU, Math8100 and UGA formula-in-words titles, FT-FZERI,
-    P-RA-WORKSHOP-D8-SEQ1, appendix-unsorted, P-RA-WORKSHOP-D3-SEQ-14, T-S3C3S, UCSD titles
+  - **`ad3-real-analysis-content`**. **Needs:** none. Open items. Process text (`QUAL-08`, `SEC-7`): P-3SSNK source tag; SRC-RA-WORKSHOP locators in
+    statements (D6-10, D4-07, D8-SEQ1). Titles (`CARD-01`, `CARD-06`): UMN, UCLA, UCSD, JHU,
+    Math8100 and UGA formula-in-words titles, P-RA-WORKSHOP-D8-SEQ1, appendix-unsorted, P-RA-WORKSHOP-D3-SEQ-14, T-S3C3S, UCSD titles
     with a bare `^`. Figures: T-OXNTU, T-ZO5UU, T-SSNLT, PR-YO7MV alt text. P-4FH62 sub-part
     labels. `CARD-04`: D-YWRVG/D-3PVRB; PR-XAVMU/FR-7YFAU; T-QBTWN/T-W5SDY; PR-A7UFG/PR-PRSKG;
     FE-LJRG2/FE-VT5N3/FE-BFDRF/FE-3RPMC against PR-TC76W; P-VO7MI/P-2B2T5/P-8RB01;
@@ -450,8 +452,7 @@ mathematical correction under its own node, not under copy policy.
     sets-and-compactness. `STYLE-04`/`STYLE-08`: typed steps, vacuous QED steps, "a." part
     lists, notation and form on the real-analysis cards of the round-3 report (I1-I16, including
     P-XEEUX, P-VACDU, P-JPDRQ, P-E33SA). Guides: `NAV-01` parent chains in
-    publications/real-analysis-guide.yaml; the workshops guide repeats P-6XW74 and P-KPEPM in its
-    algebra weeks; the real-analysis-workshop-packet lede cites numbers no card shows.
+    publications/real-analysis-guide.yaml; the real-analysis-workshop-packet lede cites numbers no card shows.
     **Acceptance:** each read and repaired, or kept with the reason.
 
   Round 3 (site surfaces) injected the node below; `audited-deployment` needs it.
