@@ -151,8 +151,16 @@ mathematical correction under its own node, not under copy policy.
     SRC-RA-WORKSHOP and Berkeley 1977 (`CARD-01`); TeX outside math in titles (P-CAFA22B,
     P-CAFA22D, the 1-connected CW complex card); P-2J6HK remark before hint and solution
     (`STYLE-07`); the topology packets lede names sections that do not exist; SRC-RA-WORKSHOP
-    has no institution. Round-2 candidates C5, C6, C8 and C9 remain for the owner.
-    **Acceptance:** each item read and repaired.
+    has no institution. Renderer, analysis audit: block `title=` text skips citeproc and smart
+    punctuation; "(a)" list markers render as "a."; PR-TC76W "(U)", "(P)", "(N)" parse as a
+    list; the E-B4ZSQ diagram `<div>` sits in a `<p>`. Round-2 candidates C5, C6, C8 and C9
+    remain for the owner. **Acceptance:** each item read and repaired. **Closed.** Open
+    remainder: the three E-AMD orphans come from the maintainer's own review notes, so no
+    collection lists them; they duplicate P-Q67AG/P-AMD-62OZUWBP (4SSSVQJY),
+    P-MV6ZQ/P-AMD-ZIGVO4GJ/E-JAPBK (564ETBH5) and P-AMD-2NXEX5LK/E-AMD-V3WFKTM6 (E3N4BHJH)
+    and wait on `CARD-04` merges. The Day PDFs name no institution, so SRC-RA-WORKSHOP keeps
+    none. The "Suggest a slogan" issue link on result cards is a `QUAL-08` candidate for the
+    owner. Pagefind may split full institution names at commas.
 
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
