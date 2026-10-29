@@ -266,7 +266,8 @@ mathematical correction under its own node, not under copy policy.
     D-99IUP (algebraic closure). D-2IO6Q cites Hungerford IX.2; orbit-stabilizer drops its
     Lagrange corollary, now carried by E-NNTQB. Open item moved from
     `ad3-real-analysis-content`: the workshops guide lists P-6XW74 and P-KPEPM twice in its
-    algebra weeks.
+    algebra weeks. **Closed.** Both listings are kept: the Algebra Week 1 and Week 2 sheets
+    (`assets/Workshops/Algebra/`) each pose both problems, and each guide week follows its sheet.
   Round 3 (revision `5ba163ac9`, analysis provenance) injected the node below;
   `audited-deployment` needs it.
   - **`ad3-analysis-provenance`**. **Needs:** none. Round-3 analysis findings C1-C4: 16 UCLA
