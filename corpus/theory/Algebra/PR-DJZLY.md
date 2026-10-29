@@ -18,7 +18,7 @@ review: draft
 ::: {.proposition}
 Let $R$ be a ring and $M$ an $R$-module.
 
-(a) For an $R$-module homomorphism $\phi\colon M \to M'$, there is an isomorphism $M/\ker\phi \cong \im\phi$.
+(a) For an $R$-module $M'$ and an $R$-module homomorphism $\phi\colon M \to M'$, there is an isomorphism $M/\ker\phi \cong \im\phi$.
 
 (b) For submodules $A, B \subseteq M$,
 $$
