@@ -30,17 +30,17 @@ What does “integral over $\ZZ$” mean?
 Let $K$ be a number field, i.e. a finite extension of $\QQ$.
 
 An element $\alpha\in K$ is \dfn{integral over $\ZZ$} if it satisfies a monic polynomial
-\[
+$$
 \alpha^n+a_{n-1}\alpha^{n-1}+\cdots+a_0=0
-\]
+$$
 with coefficients $a_i\in\ZZ$.
 
-The \dfn{ring of integers} of $K$ is
-\[
+The \dfn{ring of integers} of $K$ is the integral closure of $\ZZ$ in $K$:
+$$
 \mathcal O_K
 =
 \{\alpha\in K:\alpha\text{ is integral over }\ZZ\}.
-\]
+$$
 
 ::: pf
 
@@ -59,9 +59,9 @@ The elements integral over a ring form a subring of any overring: sums, differen
 ::: pf-step
 
 For $K=\QQ$, one has
-\[
+$$
 \mathcal O_{\QQ}=\ZZ.
-\]
+$$
 
 ::: pf-proof
 
@@ -73,5 +73,4 @@ Let $a/b\in\QQ$ be in lowest terms and integral over $\ZZ$. If it satisfies a mo
 
 :::
 
-Thus $\mathcal O_K$ is the integral closure of $\ZZ$ in the number field $K$.
 :::
