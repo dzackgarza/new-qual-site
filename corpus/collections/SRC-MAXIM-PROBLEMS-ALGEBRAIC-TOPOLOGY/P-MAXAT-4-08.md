@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-4-08
 kind: problem
-title: Maxim algebraic topology 4.8
+title: The homotopy groups $\pi_4(S^3)$ and $\pi_5(S^3)$
 classification:
   areas: [topology]
   topics: []
