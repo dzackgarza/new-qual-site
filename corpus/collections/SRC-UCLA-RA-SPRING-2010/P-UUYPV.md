@@ -5,7 +5,7 @@ kind: problem
 title: An elliptic function has equally many zeros and poles in a period square
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
   - Meromorphic Functions
   - Argument Principle

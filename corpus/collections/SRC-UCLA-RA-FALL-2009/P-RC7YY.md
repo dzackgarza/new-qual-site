@@ -7,6 +7,7 @@ title: Unitary operators, invertibility of $S-\lambda I$ for $|\lambda|<1$, and 
 classification:
   areas:
   - real-analysis
+  - complex-analysis
   topics:
   - Hilbert Spaces
   - Harmonic Functions

@@ -6,7 +6,7 @@ title: Jensen's formula and $\sum |a_n|^{-(\lambda+\epsilon)}<\infty$ for entire
   with $|f(z)|\le Ce^{|z|^\lambda}$
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
   - Entire Functions
   - Integrals

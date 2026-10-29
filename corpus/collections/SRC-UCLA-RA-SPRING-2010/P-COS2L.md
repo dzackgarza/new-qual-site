@@ -6,7 +6,7 @@ title: Dimension and a basis of harmonic functions modulo real parts of analytic
   on $\CC\setminus\{p_1,\dots,p_n\}$
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
   - Harmonic Functions
 relations: []

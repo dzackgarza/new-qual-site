@@ -6,6 +6,7 @@ title: Newtonian and Cauchy potentials of a compactly supported measure
 classification:
   areas:
   - real-analysis
+  - complex-analysis
   topics:
   - Measure Theory
   - Integrals

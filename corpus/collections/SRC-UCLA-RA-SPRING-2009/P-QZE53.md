@@ -8,6 +8,7 @@ title: Local integrability of $F(z)=\int_{\CC}\frac{1}{z-w}\,d\mu(w)$, integrabi
 classification:
   areas:
   - real-analysis
+  - complex-analysis
   topics:
   - Measure Theory
   - Integrals

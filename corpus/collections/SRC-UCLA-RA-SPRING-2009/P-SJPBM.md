@@ -6,7 +6,7 @@ title: No corner-to-corner conformal homeomorphism from a square onto a $2\times
   rectangle
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
   - Conformal Maps
   - Counterexamples

@@ -5,7 +5,7 @@ kind: problem
 title: A nonconstant entire function with $f(1-z)=1-f(z)$ is surjective
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
   - Entire Functions
   - Holomorphic Functions

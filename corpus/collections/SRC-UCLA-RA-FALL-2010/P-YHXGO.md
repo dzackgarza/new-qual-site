@@ -5,7 +5,7 @@ kind: problem
 title: Multiplicative linear functionals on $A(\DD)$ are point evaluations
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
   - Holomorphic Functions
   - Functional Analysis

@@ -5,7 +5,7 @@ kind: problem
 title: The subspace of holomorphic functions in $L^2(\DD)$ is complete
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
   - Holomorphic Functions
   - L²
