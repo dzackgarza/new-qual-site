@@ -26,8 +26,6 @@ A space $Y$ is said to have the universal extension property if for each triple 
 :::
 
 ::: {.solution}
-**Goal:** Prove that the product space $\RR^J$ and all retracts of $\RR^J$ satisfy the Universal Extension Property (UEP).
-
 ::: pf
 
 ::: pf-step
@@ -115,11 +113,6 @@ Thus $g$ is a continuous extension of $f$ to $X$.
 
 :::
 
-:::
-
-::: pf-step
-Conclusion:
-$\RR^J$ and all its retracts satisfy the Universal Extension Property. Q.E.D.
 :::
 
 :::
