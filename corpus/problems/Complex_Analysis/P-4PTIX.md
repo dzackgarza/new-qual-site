@@ -21,152 +21,70 @@ audit:
 ::: {.problem}
 Let $g$ be analytic for $|z|\leq 1$ and $|g(z)| < 1$ for $|z| = 1$.
 
-- Show that $g$ has a unique fixed point in $|z| < 1$.
+(a) Show that $g$ has a unique fixed point in $|z| < 1$.
 
-- What happens if we replace $|g(z)| < 1$ with $|g(z)|\leq 1$ for $|z|=1$?
-  Give an example if (a) is not true or give an proof if (a) is still true.
+(b) What happens if we replace $|g(z)| < 1$ with $|g(z)|\leq 1$ for $|z|=1$?
+Give an example if (a) is not true or give a proof if (a) is still true.
 
-- What happens if we simply assume that $f$ is analytic for $|z| < 1$ and $|f(z)| < 1$ for $|z| < 1$?
-  Suppose that $f(z)     \not\equiv  z$.
-  Can f have more than one fixed point in $|z| < 1$?
+(c) What happens if we simply assume that $f$ is analytic for $|z| < 1$ and $|f(z)| < 1$ for $|z| < 1$?
+Suppose that $f(z)     \not\equiv  z$.
+Can $f$ have more than one fixed point in $|z| < 1$?
+:::
 
-> Hint: The map
+::: {.hint}
+The map
 $\displaystyle{\psi_{\alpha}(z)=\frac{\alpha-z}{1-\bar{\alpha}z}}$
-> may be useful.
+may be useful.
 :::
 
 ::: {.solution}
-**Goal:** Let $g$ be analytic on $|z| \le 1$ with $|g(z)| < 1$ for $|z| = 1$.
-\(a) Show $g$ has a unique fixed point in $|z| < 1$.
-\(b) What changes if $|g(z)| \le 1$ on $|z| = 1$?
-\(c) If $f$ is analytic on $|z| < 1$ with $|f(z)| < 1$ and $f \not\equiv z$, can $f$ have more than one fixed point in $|z| < 1$?
+
+For $\alpha\in\DD$, $\psi_\alpha$ is an automorphism of $\DD$ with $\psi_\alpha(0)=\alpha$, $\psi_\alpha(\alpha)=0$ and $\psi_\alpha\circ\psi_\alpha=\id_\DD$ ([[E-ZSOC4]]).
 
 ::: pf
 
-::: {.pf-step #rouche-setup-a}
-(a) Setup: apply Rouch\'e to $g(z) - z$ on $|z| = 1$.
+::: pf-step
+(a) $g$ has exactly one fixed point in $\abs{z}<1$.
 
 ::: pf-proof
-
-::: {.pf-step #g-lt-z-on-circle}
-On $|z| = 1$, $|g(z)| < |z| = 1$.
-
-::: pf-proof
-given $|g(z)| < 1$ on $|z| = 1$.
-:::
-
-:::
-
-::: {.pf-step #same-zero-count-a}
-$g(z) - z$ and $-z$ have the same number of zeros in $|z| < 1$.
-
-::: pf-proof
-Rouch\'e's theorem with $f(z) = -z$ and $g$ as perturbation: $|g(z)| < |{-z}|$ on $|z| = 1$ by step [](#g-lt-z-on-circle){.pf-ref}, and $(g - z) = (-z) + g$.
+On $\abs{z}=1$, $\abs{g(z)}<1=\abs{z}$.
+By Rouché's theorem, $g(z)-z$ and $-z$ have the same number of zeros in $\abs{z}<1$, counted with multiplicity, namely one.
 :::
 
 :::
 
 ::: pf-step
-$g$ has exactly one fixed point in $|z| < 1$.
+(b) The conclusion of (a) can fail: $g(z)=\frac{z+1}{2}$ satisfies $\abs{g(z)}\leq1$ on $\abs{z}=1$ but has no fixed point in $\abs{z}<1$.
 
 ::: pf-proof
-$-z$ has exactly one zero (at $z = 0$, simple) in $|z| < 1$; by step [](#same-zero-count-a){.pf-ref}, $g(z) - z$ has exactly one zero (counting multiplicity) there.
+$\abs{g(z)}\leq\frac{\abs{z}+1}{2}=1$ on $\abs{z}=1$, and $g(z)=z$ only for $z=1$.
 :::
 
 :::
 
-:::
-
-:::
-
-::: {.pf-step #part-b-counterexample}
-(b) With $|g(z)| \le 1$ on $|z| = 1$, the conclusion of (a) may fail.
+::: {.pf-step #at-most-one}
+(c) No: if $f\not\equiv z$, then $f$ has at most one fixed point in $\abs{z}<1$.
 
 ::: pf-proof
-example $g(z) = \tfrac{z+1}{2}$: $|g(z)| \le \tfrac{|z|+1}{2} = 1$ on $|z| = 1$ (equality at $z = 1$), but the only fixed point solves $z = \tfrac{z+1}{2}$, i.e. $z = 1$, which lies on $|z| = 1$, not in $|z| < 1$. So $g$ has no fixed point in the open disk.
-:::
-
-:::
-
-::: {.pf-step #part-c-at-most-one}
-(c) No: a non-identity analytic map $f: D \to D$ has at most one fixed point in $D$.
-
-::: pf-proof
-
-::: {.pf-step #schwarz-pick}
-Recall the Schwarz--Pick inequality: for $a, b \in D$, $\rho(f(a), f(b)) \le \rho(a, b)$ for the hyperbolic distance $\rho$, with strict inequality if $f$ is not an automorphism.
-
-::: pf-proof
-standard form of Schwarz--Pick.
-:::
-
-:::
-
-::: {.pf-step #equality-forces-automorphism}
-If $f$ had two distinct fixed points $a, b \in D$, then $f$ must be an automorphism.
-
-::: pf-proof
-$\rho(a, b) = \rho(f(a), f(b)) \le \rho(a, b)$; equality in step [](#schwarz-pick){.pf-ref} forces $f \in \Aut(D)$.
-:::
-
-:::
-
-::: {.pf-step #automorphism-one-fixed-point}
-A non-identity automorphism of $D$ has exactly one fixed point in $D$.
-
-::: pf-proof
-writing $\psi(z) = e^{i\theta}\frac{z - \alpha}{1 - \bar\alpha z}$, the fixed-point equation is a quadratic with product of roots of modulus $|\alpha| < 1$, so exactly one root lies in $D$ (or, for $\alpha = 0$, the only fixed point in $D$ is $0$ unless $\psi$ is the identity).
+Suppose $f(a)=a$ and $f(b)=b$ with $a\neq b$ in $\DD$.
+Let $h\coloneqq\psi_a\circ f\circ\psi_a\colon\DD\to\DD$.
+Then $h(0)=\psi_a(f(a))=0$, and $c\coloneqq\psi_a(b)\neq0$ satisfies $h(c)=\psi_a(f(b))=c$.
+The equality case of the Schwarz lemma gives $h(z)=\lambda z$ with $\abs{\lambda}=1$, and $h(c)=c$ forces $\lambda=1$.
+Hence $f=\psi_a\circ h\circ\psi_a=\id_\DD$, a contradiction.
 :::
 
 :::
 
 ::: pf-step
-Conclusion for (c).
+In (c), $f$ may also have no fixed point in $\abs{z}<1$.
 
 ::: pf-proof
-if $f \not\equiv z$ had two fixed points, step [](#equality-forces-automorphism){.pf-ref} makes $f$ a non-identity automorphism, contradicting step [](#automorphism-one-fixed-point){.pf-ref}; hence at most one fixed point.
+Let $C(w)\coloneqq\frac{w-i}{w+i}$, which maps the upper half-plane $\HH$ biholomorphically onto $\DD$, and let $f\coloneqq C\circ\tau\circ C^{-1}$ with $\tau(w)=w+1$.
+Then $f$ is analytic with $\abs{f}<1$ on $\DD$, and $f(z)=z$ would give $\tau(C^{-1}(z))=C^{-1}(z)$, which has no solution.
 :::
 
 :::
 
 :::
 
-:::
-
-::: pf-qed
-Step [](#rouche-setup-a){.pf-ref} proves (a); step [](#part-b-counterexample){.pf-ref} answers (b) with an example; step [](#part-c-at-most-one){.pf-ref} answers (c).
-:::
-
-:::
-
-:::
-
-::: {.solution title="Part 1"}
-Use Rouché: if $\abs{f(z)} < 1$ is strict when $\abs{z} = 1$, then consider $F(z) \definedas f(z) - z$.
-Write the big part as $M(z) = z$ and the small as $m(z) = f(z)$, then on $\abs{z} = 1$
-\[
-\abs{m(z)} = \abs{f(z)} < 1 = \abs{z} = \abs{M(z)}
-,\]
-so $M(z)$ and $m(z) + M(z) = f(z) - z$ have the same number of zeros in $\DD$ -- precisely one.
-:::
-
-::: {.solution title="Part 2"}
-There is still a unique fixed point.
-Use the Brouwer fixed point theorem: since $g$ is holomorphic on $\bar{\DD}$, it is in particular continuous.
-By the Brouwer fixed point theorem, every continuous map $\bar{\DD} \to \bar{\DD}$ has a fixed point.
-If $g$ is nonconstant, then the fixed point is unique by Schwarz: without loss of generality one can assume $f(0) = 0$ by composing with a Blaschke factor.
-Apply Schwarz to $f$, then if $f(a) = a$ we have the equality clause and $f(z) = \lambda z$.
-Since $a = f(a) = \lambda a$, $\lambda = 1$ and $f$ is the identity.
-If $g$ is constant, then $\abs{g(z)} < 1$ on $\abs{z} = 1$ forces $g\equiv 0$.
-:::
-
-::: {.solution title="Part 3"}
-Note that there is a major difference between self maps to $\DD$ versus $\bar{\DD}$.
-By the argument in part 2, if $f(z)$ is not the identity then $f$ can have at most one fixed point.
-Moreover, not every map $f:\DD\to\DD$ need have a fixed point: consider
-\[
-g: \HH &\to \HH \\
-z &\mapsto z+1
-.\]
-Now conjugate with the Cayley map $C:\HH\to \DD$ to define $f\definedas Cg\inverseof{C}:\DD\to \DD$ which has no fixed points at all.
 :::
