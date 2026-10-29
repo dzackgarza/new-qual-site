@@ -49,7 +49,6 @@ source:
   - id: E-FMCFR
   - id: E-FYCWX
   - id: E-GDB6T
-  - id: E-GNMUG
   - id: E-GSE3M
   - id: E-GTNVU
   - id: E-H7BO5
