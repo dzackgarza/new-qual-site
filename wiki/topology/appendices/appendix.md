@@ -143,7 +143,7 @@ $$
 
 - $\pi_3(S^2) \cong \ZZ$, and $\pi_k(S^2) \cong \pi_k(S^3)$ for $k\geq 3$ by the Hopf fibration.
 
-- $\pi_{n+1}(S^n) \cong \ZZ/2$ for $n \geq 3$, and $\pi_4(S^2)\cong\ZZ/2$.
+- $\pi_{n+1}(S^n) \cong \ZZ/2$ for $n \geq 3$.
 
 - $\pi_{n+2}(S^n) \cong \ZZ/2$ for $n\geq 2$.
 
