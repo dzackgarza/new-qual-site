@@ -22,14 +22,11 @@ Check the details of Example 1 of §68.
 :::
 
 ::: {.solution}
-**Goal:** Verify the foundational details of the construction of the free product of groups $G = *_{\alpha \in J} G_\alpha$ from §68, including word reduction, the group axioms, and the universal mapping property.
-
 ::: pf
 
 ::: pf-step
 
-Words and reduced words:
-    *Proof:*
+Words and reduced words in the family $\{G_\alpha\}_{\alpha \in J}$ form a set $G$.
 
 ::: pf-proof
 
@@ -61,10 +58,9 @@ Let $G$ denote the set of all reduced words.
 
 :::
 
-::: pf-step
+::: {.pf-step #group-structure}
 
-Group multiplication and associativity (van der Waerden representation):
-    *Proof:*
+The set $G$ of reduced words carries an associative group multiplication with identity the empty word (van der Waerden representation).
 
 ::: pf-proof
 
@@ -113,10 +109,9 @@ Pulling back the group structure from $\operatorname{Sym}(G)$ via $\Psi$ equips 
 
 :::
 
-::: pf-step
+::: {.pf-step #universal-property}
 
-Canonical inclusions and Universal Mapping Property:
-    *Proof:*
+The inclusions $i_\alpha: G_\alpha \to G$ are injective homomorphisms, and $G$ with these inclusions has the universal mapping property of the free product.
 
 ::: pf-proof
 
@@ -156,11 +151,16 @@ $h$ is the unique homomorphism satisfying $h \circ i_\alpha = h_\alpha$ for all 
 
 ::: pf-step
 
-Conclusion:
+The set $G$ of reduced words, with this multiplication and the inclusions $i_\alpha$, is the free product $*_{\alpha \in J} G_\alpha$.
+
+::: pf-proof
+
+Step [](#group-structure){.pf-ref} makes $G$ a group, and step [](#universal-property){.pf-ref} shows that $G$ with the inclusions $i_\alpha$ has the universal mapping property of the free product.
 
 :::
 
 :::
 
-    The construction rigorously yields the free product $*_{\alpha \in J} G_\alpha$ satisfying all group axioms and universal properties. Q.E.D.
+:::
+
 :::
