@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO23
 kind: problem
-title: A finite p-group has nontrivial center
+title: A finite $p$-group has nontrivial center
 classification:
   areas: [algebra]
   topics: [Group Theory]
