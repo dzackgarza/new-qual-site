@@ -28,7 +28,7 @@ topics:
 [[T-O4UD3]]
 
 ::: {.proof}
-Let $f\colon X\to Y$ be continuous with $X$ a compact metric space, and let $\varepsilon>0$.
+Let $f\colon X\to Y$ be continuous with $X$ a compact metric space and $Y$ a metric space, and let $\varepsilon>0$.
 The sets $\inverseof{f}\qty{B_{\varepsilon/2}(y)}$ for $y\in Y$ form an open cover of $X$; let $\delta>0$ be a Lebesgue number for it.
 If $d(x,x')<\delta$, then $\theset{x,x'}$ has diameter less than $\delta$, so it lies in some $\inverseof{f}\qty{B_{\varepsilon/2}(y)}$, and $d(f(x),f(x'))<\varepsilon$.
 
@@ -85,7 +85,7 @@ Then $U_1,\ldots,U_k$ cover $f(X)$.
 ## Separation axioms
 
 ::: {.remark}
-A [[D-ZFRV4|Hausdorff space]] is one in which distinct points have disjoint open neighborhoods, and a [[D-YEQC3|normal]] space is one in which disjoint closed sets have disjoint open neighborhoods.
+Recall that a [[D-ZFRV4|Hausdorff space]] is one in which distinct points have disjoint open neighborhoods, and a [[D-YEQC3|normal]] space is one in which disjoint closed sets have disjoint open neighborhoods.
 
 :::
 
