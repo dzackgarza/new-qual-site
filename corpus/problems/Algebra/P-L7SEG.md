@@ -23,23 +23,27 @@ audit:
 
 ::: {.problem}
 Let $\phi:G_1\to G_2$ be a group homomorphism and let $H_2\le G_2$. Put
-\[
+$$
 H_1=\phi^{-1}(H_2).
-\]
+$$
 
-1. Show that $\phi(G_1)\le G_2$ and $H_1\le G_1$.
-2. Show that $\ker\phi\trianglelefteq G_1$.
-3. Prove
-   \[
-   xH_1=yH_1
-   \iff
-   \phi(x)H_2=\phi(y)H_2.
-   \]
-4. Show that $\phi$ is injective iff $\ker\phi=\{e\}$.
-5. Prove the first isomorphism theorem
-   \[
-   G_1/\ker\phi\cong\operatorname{im}\phi.
-   \]
+(a) Show that $\phi(G_1)\le G_2$ and $H_1\le G_1$.
+
+(b) Show that $\ker\phi\trianglelefteq G_1$.
+
+(c) Prove
+$$
+xH_1=yH_1
+\iff
+\phi(x)H_2=\phi(y)H_2.
+$$
+
+(d) Show that $\phi$ is injective iff $\ker\phi=\{e\}$.
+
+(e) Prove the first isomorphism theorem
+$$
+G_1/\ker\phi\cong\im\phi.
+$$
 :::
 
 ::: {.solution}
@@ -47,91 +51,46 @@ H_1=\phi^{-1}(H_2).
 ::: pf
 
 ::: pf-step
-
-Images and preimages are subgroups.
+(a) $\phi(G_1)\le G_2$ and $H_1\le G_1$.
 
 ::: pf-proof
-
-If $a=\phi(x)$ and $b=\phi(y)$ lie in $\phi(G_1)$, then
-\[
-ab^{-1}=\phi(xy^{-1})\in\phi(G_1),
-\]
-so the image is a subgroup.
-
-If $x,y\in H_1$, then $\phi(x),\phi(y)\in H_2$, hence
-\[
-\phi(xy^{-1})=\phi(x)\phi(y)^{-1}\in H_2.
-\]
-Thus $xy^{-1}\in H_1$.
-
+Both sets contain the identity. If $a=\phi(x)$ and $b=\phi(y)$, then $ab^{-1}=\phi(xy^{-1})\in\phi(G_1)$. If $x,y\in H_1$, then $\phi(xy^{-1})=\phi(x)\phi(y)^{-1}\in H_2$, so $xy^{-1}\in H_1$.
 :::
 
 :::
 
 ::: pf-step
-
-The kernel is normal.
+(b) $\ker\phi\trianglelefteq G_1$.
 
 ::: pf-proof
+For $k\in\ker\phi$ and $g\in G_1$, $\phi(gkg^{-1})=\phi(g)\,e\,\phi(g)^{-1}=e$.
+:::
 
-If $k\in\ker\phi$ and $g\in G_1$, then
-\[
-\phi(gkg^{-1})=\phi(g)e\phi(g)^{-1}=e,
-\]
-so $gkg^{-1}\in\ker\phi$.
+:::
 
+::: {.pf-step #cosets}
+(c) $xH_1=yH_1\iff\phi(x)H_2=\phi(y)H_2$.
+
+::: pf-proof
+$xH_1=yH_1\iff y^{-1}x\in H_1\iff\phi(y)^{-1}\phi(x)\in H_2\iff\phi(x)H_2=\phi(y)H_2$.
 :::
 
 :::
 
 ::: pf-step
-
-The coset criterion holds.
-
-::: pf-proof
-
-We have
-\[
-xH_1=yH_1
-\iff y^{-1}x\in H_1
-\iff \phi(y)^{-1}\phi(x)\in H_2
-\iff \phi(x)H_2=\phi(y)H_2.
-\]
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-Injectivity is equivalent to trivial kernel.
+(d) $\phi$ is injective if and only if $\ker\phi=\{e\}$.
 
 ::: pf-proof
-
-If $\phi$ is injective, then $\phi(g)=e$ implies $g=e$. Conversely, if $\ker\phi=\{e\}$ and $\phi(x)=\phi(y)$, then
-\[
-\phi(y^{-1}x)=e,
-\]
-so $y^{-1}x=e$ and $x=y$.
-
+If $\phi$ is injective, then $\phi(g)=e=\phi(e)$ implies $g=e$. Conversely, if $\ker\phi=\{e\}$ and $\phi(x)=\phi(y)$, then $\phi(y^{-1}x)=e$, so $y^{-1}x=e$ and $x=y$.
 :::
 
 :::
 
 ::: pf-step
-
-First isomorphism theorem.
+(e) $G_1/\ker\phi\cong\im\phi$.
 
 ::: pf-proof
-
-Define
-\[
-\bar\phi:G_1/\ker\phi\to\operatorname{im}\phi,
-\qquad
-\bar\phi(g\ker\phi)=\phi(g).
-\]
-This is well defined because two cosets are equal exactly when their quotient lies in the kernel. It is a surjective homomorphism by construction, and its kernel is trivial by step [](#s4){.pf-ref}. Hence it is an isomorphism.
-
+Define $\bar\phi:G_1/\ker\phi\to\im\phi$ by $\bar\phi(g\ker\phi)=\phi(g)$. Taking $H_2=\{e\}$ in step [](#cosets){.pf-ref}, so that $H_1=\ker\phi$, shows that $\bar\phi$ is well defined and injective. It is a homomorphism because $\phi$ is, and surjective by construction.
 :::
 
 :::
