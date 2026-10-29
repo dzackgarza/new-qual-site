@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF20C
 kind: problem
-title: "Homology of RP^2 x RP^2"
+title: 'Homology of $\RP^2\times\RP^2$'
 classification:
   areas:
   - topology

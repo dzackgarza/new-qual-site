@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF20G
 kind: problem
-title: "The swap map on M x M has a fixed point when chi(M) is nonzero"
+title: 'The swap map on $M\times M$ has a fixed point when $\chi(M)\ne0$'
 classification:
   areas:
   - topology

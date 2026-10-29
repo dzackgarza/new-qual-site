@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF20A
 kind: problem
-title: "No symmetric map from T^2 to S^1 fixing the diagonal"
+title: 'No symmetric map $T^2\to S^1$ restricting to the identity on the diagonal'
 classification:
   areas:
   - topology

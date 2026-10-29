@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF20D
 kind: problem
-title: "CP^n cannot be covered by n contractible open subsets"
+title: '$\CP^n$ cannot be covered by $n$ contractible open subsets'
 classification:
   areas:
   - topology
