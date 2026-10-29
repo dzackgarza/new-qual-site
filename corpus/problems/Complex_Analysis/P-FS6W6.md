@@ -18,23 +18,38 @@ Find a conformal map from $\DD$ to $\HH$.
 :::
 
 ::: {.solution}
-The Cayley transform
-\[
-\boxed{F(z)=i\frac{1+z}{1-z}}
-\]
-is a Möbius transformation. For $|z|<1$,
-\[
-\Im F(z)
-=\Re\frac{1+z}{1-z}
-=\frac{1-|z|^2}{|1-z|^2}>0,
-\]
-so $F(\mathbb D)\subset\mathbb H$. Its inverse is
-\[
-F^{-1}(w)=\frac{w-i}{w+i},
-\]
-and for $\Im w>0$ one has
-\[
-\left|\frac{w-i}{w+i}\right|<1.
-\]
-Hence $F$ is a biholomorphism from $\mathbb D$ onto $\mathbb H$.
+::: pf
+
+::: {.pf-step #into}
+The Cayley transform $F(z) = i\dfrac{1+z}{1-z}$ maps $\DD$ into $\HH$.
+
+::: pf-proof
+$F$ is a Möbius transformation with its only pole at $z=1\notin\DD$. For $\abs z<1$,
+$$
+\Im F(z) = \Re\frac{1+z}{1-z} = \Re\frac{(1+z)(1-\bar z)}{\abs{1-z}^2} = \frac{1-\abs z^2}{\abs{1-z}^2}>0.
+$$
+:::
+
+:::
+
+::: {.pf-step #inverse}
+$G(w) = \dfrac{w-i}{w+i}$ maps $\HH$ into $\DD$, and $F\circ G = \id_{\HH}$, $G\circ F = \id_{\DD}$.
+
+::: pf-proof
+For $\Im w>0$, $w$ is closer to $i$ than to $-i$, so $\abs{w-i}<\abs{w+i}$ and $\abs{G(w)}<1$. Solving $w = i(1+z)/(1-z)$ for $z$ gives $z = (w-i)/(w+i)$, so $F$ and $G$ are inverse Möbius maps.
+:::
+
+:::
+
+::: pf-step
+$\boxed{F(z)=i\dfrac{1+z}{1-z}}$ is a conformal map from $\DD$ onto $\HH$.
+
+::: pf-proof
+By steps [](#into){.pf-ref} and [](#inverse){.pf-ref}, $F:\DD\to\HH$ is a holomorphic bijection with holomorphic inverse $G$.
+:::
+
+:::
+
+:::
+
 :::
