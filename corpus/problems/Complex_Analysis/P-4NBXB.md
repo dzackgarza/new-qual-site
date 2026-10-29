@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4NBXB
 kind: problem
-title: "Zeros of a polynomial in the annulus one to two"
+title: Zeros of $z^4+5z+3$ in $1<|z|<2$
 classification:
   areas:
   - complex-analysis
@@ -16,38 +16,47 @@ review: draft
 
 ::: {.exercise}
 Find the number of zeros in $\abs{z} \in (1, 2)$ of
-\[
-f(z) \definedas z^4 + 5z + 3
-.\]
+$$
+f(z) \coloneqq z^4 + 5z + 3
+.$$
 Note the strict inequality.
 
 :::
 
 ::: {.solution}
-On $\abs{z} = 1$:
 
-- Big: $M(z) = 5z$
-- Small: $m(z) = z^4 + 3$
-- The estimate:
-\[
-\abs{m(z)} \leq \abs{z}^4 + 3 = 4 < 5 = \abs{M(z)} \implies 1 = \size Z_M = \size Z_f
-.\]
+::: pf
 
-On $\abs{z} = 2$:
+::: {.pf-step #inner}
+$f$ has exactly one zero in $\abs{z}<1$ and none on $\abs{z}=1$.
 
-- Big: $M(z) = z^4$
-- Small: $m(z) = 5z + 3$
-- The estimate:
-\[
-\abs{m(z)} \leq 5\abs{z} + 3 = 13 < 16 = 2^4 = \abs{M(z)} \implies 4 = \size Z_M = \size Z_f
-.\]
-
-So $f$ has $4-1=3$ zeros on $\abs{z} \in (0, 2)\sm (0, 1) = [1, 2)$.
-To get the strict inequality, it suffices to show $f$ has no zeros on $\abs{z} = 1$.
-Estimate a lower bound:
-\[
-\abs{z^4 + 5z + 3} \geq \abs{\abs{5z+3} - \abs{z}^4 } = \abs{\abs{5z+3} - 1 } \geq \abs{ 2-1} > 0
-.\]
-The nontrivial bound at the end comes from the fact that $5z+3 = 3 + 5e^{it}$ whose modulus ranges between $3-5 = -2$ and $3+5 = 8$.
+::: pf-proof
+On $\abs{z}=1$, $\abs{z^4+3}\leq4<5=\abs{5z}$.
+By Rouché's theorem, $f$ and $5z$ have the same number of zeros in $\abs{z}<1$, namely one.
+On $\abs{z}=1$, $\abs{f(z)}\geq\abs{5z}-\abs{z^4+3}\geq1>0$.
 :::
 
+:::
+
+::: {.pf-step #outer}
+$f$ has exactly four zeros in $\abs{z}<2$ and none on $\abs{z}=2$.
+
+::: pf-proof
+On $\abs{z}=2$, $\abs{5z+3}\leq13<16=\abs{z^4}$.
+By Rouché's theorem, $f$ and $z^4$ have the same number of zeros in $\abs{z}<2$, namely four, and $\abs{f(z)}\geq16-13>0$ on $\abs{z}=2$.
+:::
+
+:::
+
+::: pf-step
+$f$ has exactly $\boxed{3}$ zeros, counted with multiplicity, in $1<\abs{z}<2$.
+
+::: pf-proof
+By steps [](#inner){.pf-ref} and [](#outer){.pf-ref}, the zeros in $\abs{z}<2$ number four, one of them lies in $\abs{z}<1$, and none lies on $\abs{z}=1$.
+:::
+
+:::
+
+:::
+
+:::
