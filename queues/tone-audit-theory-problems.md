@@ -2670,7 +2670,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [ ] | `corpus/theory/Real_Analysis/FF-CIESS.md` | `dd03249e19c48d4e9b106cba1ba2bca889753d20` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FF-CKSA3.md` | `52a17a23fc14131ac8b9f5fd71f0dbba37d63847` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FF-CLFAB.md` | `2e04ab107891098709f8244eedabae27a68ba52f` | — | Pending |
-| [ ] | `corpus/theory/Real_Analysis/FF-EMDBP.md` | `f5c88abefe6d8c7b45e60af1b02e5748ef4b8acb` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FF-FSDJP.md` | `16fa66eef7f016c5a4b248f9cae69334a15ff3ed` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FF-GNU7E.md` | `aa06def919a1f4d10abab5fd967548a4c134ea34` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/FF-HORGP.md` | `de47f43ed1eac78424b48edb75ba37c6cb39dced` | — | Pending |

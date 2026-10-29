@@ -6,6 +6,7 @@ title: Integrability of $1/x^p$ on $(0,1)$ and $(1,\infty)$
 slogan: '$x^{-p}$ is integrable near $0$ exactly for $p<1$, and near $\infty$ exactly for $p>1$.'
 prompts:
 - Where is ${1\over x^p}$ integrable in $\RR$? (Depending on $p$)
+- For which $p$ do $\int_0^1 x^{-p}$ and $\int_1^\infty x^{-p}$ converge?
 classification:
   areas:
   - real-analysis

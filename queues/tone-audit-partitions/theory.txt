@@ -353,7 +353,6 @@ corpus/theory/Real_Analysis/FF-C7GY4.md
 corpus/theory/Real_Analysis/FF-CIESS.md
 corpus/theory/Real_Analysis/FF-CKSA3.md
 corpus/theory/Real_Analysis/FF-CLFAB.md
-corpus/theory/Real_Analysis/FF-EMDBP.md
 corpus/theory/Real_Analysis/FF-FSDJP.md
 corpus/theory/Real_Analysis/FF-GNU7E.md
 corpus/theory/Real_Analysis/FF-HORGP.md

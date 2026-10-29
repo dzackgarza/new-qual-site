@@ -43,8 +43,6 @@ A measurable $f$ is integrable if $\int\abs f<\infty$, and then $\int f\coloneqq
 
 [[PR-6OHTJ]]
 
-[[FF-EMDBP]]
-
 [[FF-C7GY4]] [[FF-LMANJ]]
 
 ::: {.remark}
