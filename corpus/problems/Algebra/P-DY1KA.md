@@ -33,11 +33,11 @@ Let $J$ denote their common Jordan canonical form.
 ::: pf-step
 
 There are invertible matrices $P$ and $Q$ such that
-\[
+$$
 T=PJP^{-1},
 \qquad
 S=QJQ^{-1}.
-\]
+$$
 
 ::: pf-proof
 
@@ -54,14 +54,14 @@ Therefore $S$ is similar to $T$.
 ::: pf-proof
 
 From the first equality,
-\[
+$$
 J=P^{-1}TP.
-\]
+$$
 Substituting into the expression for $S$ gives
-\[
+$$
 S=QP^{-1}TPQ^{-1}
 =(QP^{-1})T(QP^{-1})^{-1}.
-\]
+$$
 Since $QP^{-1}$ is invertible, this is a similarity transformation.
 
 :::
