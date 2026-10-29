@@ -15,25 +15,44 @@ review: draft
 
 ::: {.exercise}
 Let $\mcf$ be a family of differentiable functions $f:[0,1]\to\CC$ such that
-\[
-|f'(x)|\le M
-\]
+$$
+\abs{f'(x)}\le M
+$$
 for every $f\in\mcf$ and every $x\in[0,1]$, for one constant $M$ independent of $f$.
 Show that $\mcf$ is equicontinuous.
+:::
 
-> Hint: apply the MVT.
+::: {.hint}
+Apply the mean value inequality.
 :::
 
 ::: {.solution}
-For every $f\in\mcf$ and $x,y\in[0,1]$, the mean-value estimate gives
-\[
-|f(x)-f(y)|\le M|x-y|.
-\]
-Thus the whole family is uniformly Lipschitz with the same constant $M$.
-Given $\varepsilon>0$, if $M>0$ take $\delta=\varepsilon/M$; if $M=0$ any
-$\delta>0$ works. Then $|x-y|<\delta$ implies
-\[
-|f(x)-f(y)|<\varepsilon
-\]
-for every $f\in\mcf$. Hence $\mcf$ is equicontinuous.
+
+::: pf
+
+::: {.pf-step #lipschitz}
+For every $f\in\mcf$ and $x,y\in[0,1]$,
+$$
+\abs{f(x)-f(y)}\le M\abs{x-y}.
+$$
+
+::: pf-proof
+This is the mean value inequality for a differentiable function on $[0,1]$ with $\abs{f'}\le M$.
+:::
+
+:::
+
+::: pf-step
+$\mcf$ is equicontinuous.
+
+::: pf-proof
+Let $\varepsilon>0$. If $M>0$, take $\delta=\varepsilon/M$; if $M=0$, take any $\delta>0$.
+By step [](#lipschitz){.pf-ref}, $\abs{x-y}<\delta$ implies $\abs{f(x)-f(y)}<\varepsilon$ for every $f\in\mcf$.
+The number $\delta$ does not depend on $f$, $x$, or $y$.
+:::
+
+:::
+
+:::
+
 :::
