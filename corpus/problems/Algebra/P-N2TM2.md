@@ -19,105 +19,68 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source leaves G undeclared; the statement declares G as a group.
 ---
 
 ::: {.problem}
-For each standard action below, identify the orbits, stabilizers, global fixed points, kernel, and image in the relevant symmetric group:
+Let $G$ be a group. For each standard action below, identify the orbits, stabilizers, global fixed points, kernel, and image in the relevant symmetric group:
 
-1. left translation of $G$ on itself;
-2. conjugation of $G$ on itself;
-3. conjugation of $G$ on its set of subgroups;
-4. left translation of $G$ on $G/H$ for a fixed subgroup $H\le G$.
+(1) left translation of $G$ on itself;
+
+(2) conjugation of $G$ on itself;
+
+(3) conjugation of $G$ on its set of subgroups;
+
+(4) left translation of $G$ on $G/H$ for a fixed subgroup $H\le G$.
 :::
 
 ::: {.solution}
+For an action of $G$ on a set $X$, the kernel is the set of $g$ acting as the identity on $X$, and the image in $\Sym(X)$ is isomorphic to $G$ modulo the kernel.
 
 ::: pf
 
 ::: pf-step
-
-Left translation on $G$.
+(1) Left translation on $G$ has the single orbit $G$, trivial stabilizers and trivial kernel, and its image is the left regular copy of $G$ in $\Sym(G)$; it has no global fixed point unless $G=1$.
 
 ::: pf-proof
-
-The action is transitive, so there is one orbit, namely $G$. The stabilizer of every $x\in G$ is trivial because
-\[
-gx=x\iff g=e.
-\]
-Hence the kernel is trivial and the image is the left regular copy of $G$ in $\Sym(G)$. If $G\ne1$, there are no global fixed points.
-
+For $x,y\in G$, $(yx^{-1})x=y$, so the action is transitive.
+$gx=x$ holds only for $g=e$, so every stabilizer, and hence the kernel, is trivial.
+A global fixed point $x$ would have stabilizer $G$, so $G=1$.
 :::
 
 :::
 
 ::: pf-step
-
-Conjugation on $G$.
+(2) Conjugation on $G$ has the conjugacy classes as orbits and the centralizers $C_G(x)$ as stabilizers; its global fixed points and its kernel are both $Z(G)$, and its image is $\Inn(G)\cong G/Z(G)$.
 
 ::: pf-proof
-
-The orbit of $x$ is its conjugacy class
-\[
-\operatorname{Cl}_G(x).
-\]
-Its stabilizer is the centralizer
-\[
-C_G(x).
-\]
-The global fixed points are exactly $Z(G)$. The kernel consists of elements conjugating every $x$ trivially, hence is also $Z(G)$. Therefore the image is
-\[
-\Inn(G)\cong G/Z(G).
-\]
-
+The orbit of $x$ is $\{gxg^{-1}:g\in G\}$, and $gxg^{-1}=x$ exactly when $g\in C_G(x)$.
+An element $x$ is fixed by every $g$ exactly when $x\in Z(G)$, and $g$ fixes every $x$ exactly when $g\in Z(G)$.
+The image consists of the inner automorphisms.
 :::
 
 :::
 
 ::: pf-step
-
-Conjugation on the set of subgroups.
+(3) Conjugation on subgroups has orbits the conjugacy classes $\{gHg^{-1}:g\in G\}$ and stabilizers the normalizers $N_G(H)$; its global fixed points are the normal subgroups, its kernel is $\bigcap_{H\le G}N_G(H)$, and its image is $G$ modulo that kernel.
 
 ::: pf-proof
-
-The orbit of $H$ is the conjugacy class of the subgroup,
-\[
-\{gHg^{-1}:g\in G\}.
-\]
-The stabilizer is its normalizer
-\[
-N_G(H).
-\]
-The global fixed points are precisely the normal subgroups of $G$. The kernel is
-\[
-\bigcap_{H\le G}N_G(H),
-\]
-the subgroup of elements normalizing every subgroup of $G$. Thus the image is the quotient of $G$ by this kernel.
-
+$gHg^{-1}=H$ exactly when $g\in N_G(H)$, so this is the stabilizer; a subgroup fixed by every $g$ is normal; and $g$ fixes every subgroup exactly when it lies in every normalizer.
 :::
 
 :::
 
 ::: pf-step
-
-Left translation on $G/H$.
+(4) Left translation on $G/H$ is transitive, with stabilizer $xHx^{-1}$ at $xH$; its kernel is the core $\bigcap_{x\in G}xHx^{-1}$, the largest normal subgroup of $G$ contained in $H$, and its image is $G$ modulo the core; there is a global fixed coset only when $H=G$.
 
 ::: pf-proof
-
-The action is transitive. The stabilizer of the coset $xH$ is
-\[
-xHx^{-1}.
-\]
-The kernel is the core of $H$,
-\[
-\operatorname{core}_G(H)
-=\bigcap_{x\in G}xHx^{-1},
-\]
-the largest normal subgroup of $G$ contained in $H$. Hence the image is
-\[
-G/\operatorname{core}_G(H).
-\]
-If $H<G$, there is no global fixed coset; if $H=G$, the unique coset is fixed.
-
+$(yx^{-1})xH=yH$, so the action is transitive.
+$gxH=xH$ exactly when $x^{-1}gx\in H$, that is, $g\in xHx^{-1}$.
+The kernel is the intersection of the stabilizers; it is normal, and any normal subgroup $N\subseteq H$ satisfies $N=xNx^{-1}\subseteq xHx^{-1}$ for every $x$.
+A global fixed coset has stabilizer $G$, so $xHx^{-1}=G$ and $H=G$.
 :::
 
 :::
