@@ -17,53 +17,24 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Checked problem 130 on Ring_Theory_Qual_Problems.pdf PDF page 16 and added an erratum because the statement is false for arbitrary sets of prime ideals.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source asks to prove that any non-empty set of prime ideals has maximal and minimal elements, which fails for $\{(x_1,\ldots,x_n)\}$ and $\{(x_n,x_{n+1},\ldots)\}$ in $k[x_1,x_2,\ldots]$. The statement now assumes the set contains the union and the intersection of each of its non-empty chains.
 ---
 
 ::: {.problem}
 Let $R$ be a commutative ring with identity.
-Prove that any non-empty set of prime ideals of $R$ contains maximal *and* minimal elements.
-:::
-
-::: {.remark}
-Erratum: the statement is false as written in the source.
-Let $k$ be a field, $R = k[x_1, x_2, x_3, \ldots]$, and $P_n = (x_1, \ldots, x_n)$.
-Each $P_n$ is prime, since $R/P_n \cong k[x_{n+1}, x_{n+2}, \ldots]$ is a domain, and $P_1 \subsetneq P_2 \subsetneq \cdots$.
-The non-empty set $\{P_n : n \geq 1\}$ has no maximal element.
-Likewise the prime ideals $Q_n = (x_n, x_{n+1}, \ldots)$, with $R/Q_n \cong k[x_1, \ldots, x_{n-1}]$, satisfy $Q_1 \supsetneq Q_2 \supsetneq \cdots$, so the non-empty set $\{Q_n : n \geq 1\}$ has no minimal element.
-The statement becomes true, by Zorn's lemma, for a non-empty set of prime ideals that contains the union and the intersection of each of its non-empty chains (the union and the intersection of a chain of prime ideals are prime); for example, the set of all prime ideals of a nonzero ring, or the set of all prime ideals containing a given proper ideal.
+Let $\mathcal S$ be a non-empty set of prime ideals of $R$ that contains the union and the intersection of each of its non-empty chains. Prove that $\mathcal S$ contains maximal *and* minimal elements.
 :::
 
 ::: {.solution}
-
-The statement as posed is false, as shown by the counterexamples in the remark.
-We prove the corrected statement recorded there.
-
-Let
-$$
-\mathcal S
-$$
-be a nonempty collection of prime ideals of $R$ such that for every nonempty chain
-$$
-\mathcal C
-\subseteq
-\mathcal S,
-$$
-both
-$$
-\bigcup_{P\in\mathcal C}P
-$$
-and
-$$
-\bigcap_{P\in\mathcal C}P
-$$
-belong to $\mathcal S$.
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
 The union of a chain of prime ideals is an ideal.
-
 
 ::: pf-proof
 
@@ -133,7 +104,6 @@ Hence $U$ is an ideal.
 
 The union of a nonempty chain of prime ideals is prime.
 
-
 ::: pf-proof
 
 Let
@@ -195,7 +165,6 @@ $$
 $$
 has a maximal element.
 
-
 ::: pf-proof
 
 The poset is nonempty by hypothesis.
@@ -235,7 +204,6 @@ Zorn's lemma yields a maximal element.
 
 The intersection of a chain of prime ideals is an ideal.
 
-
 ::: pf-proof
 
 An arbitrary intersection of ideals is an ideal.
@@ -254,7 +222,6 @@ is an ideal.
 ::: pf-step
 
 The intersection of a nonempty chain of prime ideals is prime.
-
 
 ::: pf-proof
 
@@ -325,7 +292,6 @@ Q\subseteq P.
 $$
 Then every chain has an upper bound.
 
-
 ::: pf-proof
 
 Let
@@ -365,7 +331,6 @@ Again, the empty chain has an upper bound because $\mathcal S$ is nonempty.
 
 The family $\mathcal S$ has a minimal element under ordinary inclusion.
 
-
 ::: pf-proof
 
 Apply Zorn's lemma to the reverse-inclusion order from step [](#s1-6){.pf-ref}.
@@ -381,7 +346,7 @@ Maximality in reverse inclusion is exactly minimality in ordinary inclusion.
 
 ::: {.pf-step #s1-8}
 
-Therefore the corrected statement holds:
+Therefore
 $$
 \boxed{
 \mathcal S
@@ -389,18 +354,11 @@ $$
 }
 $$
 
-
 ::: pf-proof
 
 Step [](#s1-3){.pf-ref} gives a maximal element, and step [](#s1-7){.pf-ref} gives a minimal element.
 
 :::
-
-:::
-
-::: pf-qed
-
-The statement as posed is false; step [](#s1-8){.pf-ref} proves the corrected version stated in the remark.
 
 :::
 
