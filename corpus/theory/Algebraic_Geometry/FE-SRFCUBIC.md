@@ -38,10 +38,10 @@ A line on $S$ is a class $L$ with $L^2 = -1$ and $L \cdot K_S = -1$, and there a
 :::
 
 ::: {.remark}
-The count $6+15+6=27$ is a computation in $\Pic(S)$: adjunction gives
-$-2=L^2+L\cdot K_S$ for a line, hence $L^2=-1$ and $L\cdot K_S=-1$, and enumerating the effective classes with these intersection numbers gives exactly the three families above.
+The count $6+15+6=27$ is a computation in $\Pic(S)$: a line has $L\cdot(-K_S)=\deg L=1$ because $-K_S$ is the hyperplane class, and adjunction
+$-2=L^2+L\cdot K_S$ then gives $L^2=-1$, and enumerating the effective classes with these intersection numbers gives exactly the three families above.
 
-A line on $S$ is a $(-1)$-curve, so each of the $27$ can be contracted; different choices of six pairwise disjoint lines realise $S$ as a blowup of $\PP^2$ in different ways, which is why the configuration has a large symmetry group, the Weyl group of $E_6$ of order $51840$.
+A line on $S$ is a $(-1)$-curve, so each of the $27$ can be contracted; different choices of six pairwise disjoint lines realise $S$ as a blowup of $\PP^2$ in different ways, and the symmetry group of the configuration of $27$ lines is the Weyl group $W(E_6)$, of order $51840$.
 
 That $S$ is anticanonically embedded is what makes it a del Pezzo surface of degree $3$; the same analysis with $9 - d$ blown-up points gives the del Pezzo surfaces of each degree, and the line counts $27$, $16$, $10$ follow the same way.
 :::
