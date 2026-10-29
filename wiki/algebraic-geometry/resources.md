@@ -228,11 +228,3 @@ The [course page](https://math.berkeley.edu/~reb/courses/256A/) has solutions to
 - [Harvard, old qualifying exams](https://www.math.harvard.edu/graduate/study-the-qualifying-exam/some-old-qualifying-exams/), and the [1990–2002 collection](https://www.math.harvard.edu/media/quals90-02.pdf).
 
 - Illinois Math 511 comprehensive exams: [August 2020](https://math.illinois.edu/system/files/2021-01/MATH%20511%20-%20August%202020.pdf), [May 2017](https://math.illinois.edu/system/files/inline-files/comp511_may2017.pdf), [May 2016](https://math.illinois.edu/system/files/inline-files/comp511_may2016.pdf).
-
-### Original locations of the Hartshorne solution collections
-
-- Cutrone and Marshburn: `http://www.math.northwestern.edu/~jcutrone/Work/Hartshorne%20Algebraic%20Geometry%20Solutions.pdf` (removed).
-
-- Sam: `http://math.mit.edu/~ssam/soln/` (removed).
-
-- [Egbert](http://divisibility.files.wordpress.com/2013/09/fullhartshornesolutions1.pdf); [Borcherds](https://math.berkeley.edu/~reb/courses/256A/); [Cais](http://math.arizona.edu/~cais/CourseNotes/AlgGeom04/Hartshorne_Solutions.pdf); [Saglam and Chris](http://algebraicgeometry.blogspot.de/); [Lomont](http://lomont.org/Math/Solutions.pdf); [Park](http://mathsci.kaist.ac.kr/~jinhyun/sol2/hart.html); [Stein](http://wstein.org/AG.html).
