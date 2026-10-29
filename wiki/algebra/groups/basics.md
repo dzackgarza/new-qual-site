@@ -19,8 +19,6 @@ For a finite group $G$ and $g\in G$, the [[D-ZTPHF|order]] of $g$ divides $\size
 
 [[D-ZTPHF]]
 
-[[E-DKMHL]]
-
 [[D-V6UJ7]]
 
 ## Subgroups

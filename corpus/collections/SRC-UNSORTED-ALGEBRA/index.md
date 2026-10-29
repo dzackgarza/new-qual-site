@@ -148,7 +148,6 @@ source:
   - id: E-BSGSM
   - id: E-D62SD
   - id: E-DAS3L
-  - id: E-DKMHL
   - id: E-EMESP
   - id: E-F2PUE
   - id: E-FODKS
