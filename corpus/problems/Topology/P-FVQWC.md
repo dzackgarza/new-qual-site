@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-What surface is represented by the $6\dash$gon with edges identified according to the symbol $xyzx\inverseof{y} \inverseof{z}$ ?
+What surface is represented by the $6$-gon with edges identified according to the symbol $xyzxy^{-1}z^{-1}$?
 :::
 
 ::: {.solution}
@@ -65,7 +65,7 @@ The label $x$ occurs twice with the same boundary orientation. In an orientable 
 
 ::: pf-step
 
-A closed connected nonorientable surface $N_h=\#^h\mathbb{RP}^2$ has Euler characteristic $2-h$. Hence $2-h=-1$, so $h=3$.
+A closed connected nonorientable surface $N_h=\#^h\RP^2$ has Euler characteristic $2-h$. Hence $2-h=-1$, so $h=3$.
 
 ::: pf-proof
 
@@ -78,7 +78,7 @@ Apply the classification theorem for closed connected surfaces.
 ::: pf-step
 
 Thus the polygon represents
-$$\boxed{\mathbb{RP}^2\#\mathbb{RP}^2\#\mathbb{RP}^2.}$$
+$$\boxed{\RP^2\#\RP^2\#\RP^2.}$$
 
 ::: pf-proof
 
