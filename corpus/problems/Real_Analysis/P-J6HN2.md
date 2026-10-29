@@ -19,10 +19,11 @@ audit:
 ---
 
 ::: {.problem}
-- Prove Fatou's lemma using the Monotone Convergence Theorem.
+(a) Prove Fatou's lemma using the Monotone Convergence Theorem.
 
-- Show that if $\theset{f_n}$ is in $L^1$ and $\sum \int \abs{f_n} < \infty$ then $\sum f_n$ converges to an $L^1$ function and $$\int \sum f_n = \sum \int f_n.$$
+(b) Show that if $\theset{f_n}$ is in $L^1$ and $\sum \int \abs{f_n} < \infty$ then $\sum f_n$ converges to an $L^1$ function and $$\int \sum f_n = \sum \int f_n.$$
 :::
+
 ::: {.solution}
 
 ::: pf
