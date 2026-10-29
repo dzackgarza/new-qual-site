@@ -16,9 +16,9 @@ review: draft
 
 ::: {.problem}
 Let $H,K\trianglelefteq G$ satisfy
-\[
+$$
 H\cap K=\{e\},\qquad HK=G.
-\]
+$$
 Prove that $G\cong H\times K$. Generalize the criterion to finitely many normal subgroups.
 :::
 
@@ -33,29 +33,25 @@ The subgroups $H$ and $K$ commute elementwise.
 ::: pf-proof
 
 For $h\in H$ and $k\in K$, the commutator
-\[
+$$
 [h,k]=hkh^{-1}k^{-1}
-\]
+$$
 lies in $H$ because $H$ is normal, and lies in $K$ because $K$ is normal. Hence
-\[
+$$
 [h,k]\in H\cap K=\{e\}.
-\]
+$$
 Thus $hk=kh$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #iso}
 
-Multiplication gives an isomorphism.
+The map $\mu\colon H\times K\to G$, $(h,k)\mapsto hk$, is an isomorphism.
 
 ::: pf-proof
 
-Define
-\[
-\mu:H\times K\to G,\qquad (h,k)\mapsto hk.
-\]
 By step [](#s1){.pf-ref} it is a homomorphism. It is surjective because $HK=G$. If $hk=e$, then $h=k^{-1}\in H\cap K$, so $h=k=e$. Thus $\mu$ is injective.
 
 :::
@@ -64,25 +60,13 @@ By step [](#s1){.pf-ref} it is a homomorphism. It is surjective because $HK=G$. 
 
 ::: pf-step
 
-Finite-family version.
+If $H_1,\ldots,H_r\trianglelefteq G$ satisfy $G=H_1\cdots H_r$ and $H_i\cap\prod_{j\ne i}H_j=\{e\}$ for every $i$, then multiplication $H_1\times\cdots\times H_r\to G$ is an isomorphism.
 
 ::: pf-proof
 
-Let $H_1,\dots,H_r\trianglelefteq G$. If
-\[
-G=H_1\cdots H_r
-\]
-and for every $i$,
-\[
-H_i\cap \prod_{j\ne i}H_j=\{e\},
-\]
-then the subgroups commute pairwise and the multiplication map
-\[
-H_1\times\cdots\times H_r\longrightarrow G
-\]
-is an isomorphism.
+Induct on $r$; the case $r=2$ is step [](#iso){.pf-ref}. For $r\ge3$, the product $N\coloneqq H_1\cdots H_{r-1}$ is a normal subgroup of $G$, as a product of normal subgroups. The subgroups $H_1,\ldots,H_{r-1}$ of $N$ satisfy the hypotheses inside $N$, because $H_i\cap\prod_{j\ne i,\,j<r}H_j\subseteq H_i\cap\prod_{j\ne i}H_j=\{e\}$, so by induction $N\cong H_1\times\cdots\times H_{r-1}$ by multiplication. Also $N\cap H_r=\{e\}$ and $NH_r=G$, so step [](#iso){.pf-ref} gives $G\cong N\times H_r$ by multiplication. Composing gives the claim.
 
-Equivalently, the internal direct-product condition is precisely that the multiplication map be surjective with trivial kernel. Pairwise trivial intersections alone are not sufficient for three or more factors.
+Pairwise trivial intersections are not enough for $r\ge3$: in $V_4=\{e,a,b,ab\}$ the subgroups $\langle a\rangle,\langle b\rangle,\langle ab\rangle$ intersect pairwise trivially and their product is $V_4$, but $V_4$ has order $4$, not $8$.
 
 :::
 
