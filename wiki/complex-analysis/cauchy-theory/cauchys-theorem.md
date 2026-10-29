@@ -25,18 +25,8 @@ Closed path integrals of holomorphic functions vanish.
 
 :::
 
-::: {.proof title="Cauchy's theorem for $f$ with continuous derivative, by Stokes"}
-$$
-\oint_{\partial D} f(z) \dz =\int_{D} d(f(z) \dz)=\int_{D}\left(\frac{\partial f}{\partial z} \dz+\frac{\partial f}{\partial \bar{z}} d \bar{z}\right) \wedge \dz=\int_{D} \frac{\partial f}{\partial \bar z} \, d \bar{z} \wedge \dz=0
-,$$
-since $\dz\wedge\dz = 0$ and $\partial f/\partial\bar z = 0$ by the Cauchy--Riemann equations.
-
-:::
-
 ::: {.remark title="Goursat's theorem"}
-The Stokes argument assumes that $f'$ is continuous.
 Goursat's theorem proves $\int_{\bd T} f = 0$ for every triangle $T$ in the domain of a holomorphic $f$ by repeated bisection, with no continuity assumption on $f'$; continuity of $f'$ is then a consequence of the Cauchy integral formula.
-The bisection proof is on [[complex-analysis/cauchy-theory/morera-and-converses|Morera and converses]].
 
 :::
 
