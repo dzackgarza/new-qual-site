@@ -19,10 +19,37 @@ Show that $f(\CC)=\CC$.
 :::
 
 ::: {.solution}
-The functional equation implies that $w\in\text{Im}(f)$ if and only if $1-w\in\text{Im}(f)$.
-Thus suppose that there were some $w\notin \text{Im}(f)$, then $1-w\notin\text{Im}(f)$ either, so $f$ misses two points (if $w\ne 1/2$). But Picard's little theorem says that an entire function that misses two points is constant, a contradiction.
-Thus $f$ hits everything except possibly $1/2$.
-But putting $z=1/2$ into the functional equation gives $f(1/2)=1-f(1/2)$, so $f(1/2)=1/2$.
-Thus $f$ is surjective.
-$\square$
+
+::: pf
+
+::: {.pf-step #half}
+$f(1/2)=1/2$.
+
+::: pf-proof
+Setting $z=1/2$ in the functional equation gives $f(1/2)=1-f(1/2)$.
+:::
+
+:::
+
+::: {.pf-step #pair}
+If $f$ omits a value $a$, then $f$ also omits $1-a$, and $a\ne1-a$.
+
+::: pf-proof
+If $f(z)=1-a$, then $f(1-z)=1-f(z)=a$, a contradiction.
+By step [](#half){.pf-ref}, $a\ne1/2$, so $a\ne1-a$.
+:::
+
+:::
+
+::: pf-step
+$f(\CC)=\CC$.
+
+::: pf-proof
+If $f$ omitted a value, step [](#pair){.pf-ref} would give two distinct omitted values, contradicting Picard's little theorem for the nonconstant entire function $f$.
+:::
+
+:::
+
+:::
+
 :::

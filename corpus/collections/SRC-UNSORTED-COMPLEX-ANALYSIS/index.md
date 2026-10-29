@@ -26,7 +26,6 @@ source:
   - id: E-3B2YA
   - id: E-3GIQS
   - id: E-3KD4O
-  - id: E-3LIG3
   - id: E-3OJLH
   - id: E-3QAC4
   - id: E-3ZHRE
