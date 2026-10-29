@@ -23,7 +23,8 @@ Show that $p \mid E'$ is not a covering map.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the restriction $q = p|_{E'}: E' \to X = A \vee B$ of the grid covering map to the union of the coordinate axes $E' = (\RR \times \{0\}) \cup (\{0\} \times \RR)$ is not a covering map.
+
+Write $q = p|_{E'}: E' \to X$, where $E' = (\RR \times \{0\}) \cup (\{0\} \times \RR)$.
 
 ::: pf
 
