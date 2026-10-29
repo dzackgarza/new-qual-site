@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-4HEUB
 kind: definition
 title: Decomposable and indecomposable modules
+prompts:
+- When is a module indecomposable?
 classification:
   areas:
   - algebra
