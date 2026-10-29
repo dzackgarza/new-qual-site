@@ -15,9 +15,9 @@ review: draft
 ---
 
 ::: {.problem}
-- Is every product (finite or infinite) of Hausdorff spaces Hausdorff?
+(a) Is every product (finite or infinite) of Hausdorff spaces Hausdorff?
 
-- Is $\RR$ homeomorphic to $[0, \infty)$?
+(b) Is $\RR$ homeomorphic to $[0, \infty)$?
 :::
 
 ::: {.solution}
@@ -38,11 +38,11 @@ If two points $x=(x_i)$ and $y=(y_i)$ differ, choose a coordinate $j$ with $x_j\
 
 ::: pf-step
 
-The spaces $\mathbb R$ and $[0,\infty)$ are not homeomorphic.
+The spaces $\RR$ and $[0,\infty)$ are not homeomorphic.
 
 ::: pf-proof
 
-Removing any point from $\mathbb R$ disconnects it into two components. But removing the endpoint $0$ from $[0,\infty)$ leaves $(0,\infty)$, which is connected. A homeomorphism would preserve this point-deletion property.
+Removing any point from $\RR$ disconnects it into two components. But removing the endpoint $0$ from $[0,\infty)$ leaves $(0,\infty)$, which is connected. A homeomorphism would preserve this point-deletion property.
 
 :::
 
