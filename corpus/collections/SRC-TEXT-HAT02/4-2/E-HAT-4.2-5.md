@@ -25,12 +25,10 @@ In particular, show the action of $\pi_1(A)$ is trivial on $\pi_2(A)$ and $\pi_2
 :::
 
 ::: {.solution}
-**Goal.** For the mapping torus $X = M_f$ of the self-map $f$ of $S^2_\alpha \vee S^2_\beta$, show $\pi_2(A) \to \pi_2(X) \to \pi_2(X, A)$ is the short exact sequence $0 \to \ZZ \to \ZZ \oplus \ZZ \to \ZZ \to 0$, and compute the $\pi_1(A)$-action on the three groups.
-
 ::: pf
 
 ::: pf-step
-Identify the map $f_*$ on $\pi_2$.
+In the basis $(\alpha, \beta)$ of $\pi_2(S^2_\alpha \vee S^2_\beta)$, $f_* = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$.
 
 ::: pf-proof
 
@@ -66,7 +64,7 @@ read off the columns from step [](#s1-2){.pf-ref}.
 :::
 
 ::: pf-step
-Compute $\pi_2(X)$.
+$\pi_2(X) \cong \ZZ\alpha \oplus \ZZ\beta$ and $\pi_1(X) \cong \ZZ$.
 
 ::: pf-proof
 
@@ -102,7 +100,7 @@ $\pi_1(F) = 0$ and $\pi_0(F) = 0$, so $\pi_1(X) \to \pi_1(S^1) = \ZZ$ is an isom
 :::
 
 ::: pf-step
-The subspace $A$ and its homotopy groups.
+$\pi_2(A) \cong \ZZ$ and $\pi_1(A) \cong \ZZ$.
 
 ::: pf-proof
 
@@ -129,7 +127,7 @@ $\pi_2(S^1 \times S^2) = \pi_2(S^2) = \ZZ$ and $\pi_1(S^1 \times S^2) = \pi_1(S^
 :::
 
 ::: pf-step
-The short exact sequence.
+$0 \to \pi_2(A) \to \pi_2(X) \to \pi_2(X, A) \to 0$ is exact and is $0 \to \ZZ \to \ZZ \oplus \ZZ \to \ZZ \to 0$.
 
 ::: pf-proof
 
@@ -174,7 +172,7 @@ combine steps [](#s4-1){.pf-ref}, [](#s4-2){.pf-ref}, [](#s4-3){.pf-ref}.
 :::
 
 ::: {.pf-step #s5}
-The $\pi_1(A)$-action.
+$\pi_1(A)$ acts trivially on $\pi_2(A)$ and on $\pi_2(X, A)$, and nontrivially on $\pi_2(X)$.
 
 ::: pf-proof
 
@@ -207,10 +205,6 @@ $\pi_2(X, A) \cong \ZZ\beta$ (the quotient by $\ZZ\alpha$), and $f_*$ acts trivi
 
 :::
 
-:::
-
-::: pf-qed
-Step [](#s4-4){.pf-ref} gives the short exact sequence; step [](#s5){.pf-ref} gives the action (trivial on $\pi_2(A)$ and $\pi_2(X,A)$, nontrivial on $\pi_2(X)$).
 :::
 
 :::
