@@ -1352,7 +1352,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Real_Analysis/E-6X7Z4.md` | `6664af1f3980bed01ebee196ba4e634578e0c2b6` | `6664af1f3980bed01ebee196ba4e634578e0c2b6` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-7EL3U.md` | `aab4a3cb829d0e724c3a78b7134ca4969df7b201` | `aab4a3cb829d0e724c3a78b7134ca4969df7b201` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-ASWCD.md` | `e8dcfab2c39e65d0010f48e86fc6c2a84fbe7da2` | `e8dcfab2c39e65d0010f48e86fc6c2a84fbe7da2` | Read; retained |
-| [x] | `corpus/problems/Real_Analysis/E-BQBZI.md` | `205fdf9c357e61231464c3a1758e49ea5952cd4f` | `205fdf9c357e61231464c3a1758e49ea5952cd4f` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-BTA5L.md` | `1888d613387fc2de23c7af9437daf1699a3a6f6a` | `1888d613387fc2de23c7af9437daf1699a3a6f6a` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-CGVE4.md` | `3b868eb3e8ce6c6e816db82699675ee45baae30c` | `3b868eb3e8ce6c6e816db82699675ee45baae30c` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/E-D75O4.md` | `579461ded2a48343c4515ce7c992c63c410236de` | `579461ded2a48343c4515ce7c992c63c410236de` | Read; retained |
