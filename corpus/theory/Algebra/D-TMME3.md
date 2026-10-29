@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-TMME3
 kind: definition
 title: Alternating group
+prompts:
+- What is the alternating group, as a kernel?
 classification:
   areas:
   - algebra

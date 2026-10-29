@@ -49,18 +49,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair moves the automorphism-count review prompt to `D-5JYEI`, removes duplicate reader-facing references, and deletes `FD-4GFTY`.
 
-### Duplicate alternating-group card FD-X4DBP
-
-- **Object and need:** `D-TMME3` and `FD-X4DBP` in `corpus/theory/Algebra`. `D-TMME3` already defines even/odd permutations and the alternating group as the kernel of the sign homomorphism; `FD-X4DBP` repeats only the latter definition.
-
-- **Observed evidence:** both complete cards state `$A_n=\ker(\sgn)=\{\sigma\in S_n:\sgn(\sigma)=1\}$`. The wiki and algebra guide displayed both cards adjacent to one another.
-
-- **Impact and owner:** the flashcard adds no distinct mathematics and creates a second defining occurrence.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair moves the kernel review prompt to `D-TMME3`, removes duplicate reader-facing references, and deletes `FD-X4DBP`.
-
 ### Duplicate even/odd-permutation card FD-PIVQZ
 
 - **Object and need:** `D-TMME3` and `FD-PIVQZ` in `corpus/theory/Algebra`. `D-TMME3` already owns the definition of even permutations and the alternating group; `FD-PIVQZ` repeats evenness and adds oddness plus the parity characterization.
