@@ -132,7 +132,7 @@ If $\mu(X) < \infty$, then $\|f\|_p \to \|f\|_\infty$ as $p \to \infty$.
 
 ::: pf-proof
 
-If $\mu(X) = 0$ both sides vanish. Otherwise $\|f\|_p \le \|f\|_\infty\,\mu(X)^{1/p} \to \|f\|_\infty$, and for $0 < M < \|f\|_\infty$ the set $\theset{|f| > M}$ has positive finite measure, so $\|f\|_p \ge M\mu\theset{|f|>M}^{1/p} \to M$. See [[E-TVBUC]].
+If $\mu(X) = 0$ both sides vanish. Otherwise $\|f\|_p \le \|f\|_\infty\,\mu(X)^{1/p} \to \|f\|_\infty$, and for $0 < M < \|f\|_\infty$ the set $\theset{|f| > M}$ has positive finite measure, so $\|f\|_p \ge M\mu\theset{|f|>M}^{1/p} \to M$. See [[P-RVL3K]].
 
 :::
 
