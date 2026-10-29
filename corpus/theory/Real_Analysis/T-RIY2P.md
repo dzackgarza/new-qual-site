@@ -3,6 +3,8 @@ schema: qual/card@1
 id: T-RIY2P
 kind: theorem
 title: Small tails of $L^1(\RR^d)$ functions
+prompts:
+- What does small tails mean for $f\in L^1$?
 slogan: 'For $f\in L^1(\RR^d)$, $\int_{\abs{x}\ge r}\abs{f}\to0$ as $r\to\infty$.'
 classification:
   areas:
@@ -25,4 +27,8 @@ Equivalently, for every $\varepsilon>0$ there exists $r>0$ such that
 $$
 \int_{\RR^d\setminus B_r(0)}\abs{f}\,dm<\varepsilon.
 $$
+:::
+
+::: {.proof}
+The functions $\abs{f}\chi_{\RR^d\setminus B_r(0)}$ tend to $0$ pointwise as $r\to\infty$ and are dominated by $\abs{f}\in L^1$, so their integrals tend to $0$ by dominated convergence.
 :::
