@@ -27,12 +27,7 @@ Show that $\pi_1(K)$, the Klein bottle, is given by pairs $(m,n)$ where $(m,n)\s
 :::
 
 ::: {.solution}
-**Goal:** Prove that the fundamental group of the Klein bottle $\pi_1(K)$ is isomorphic to the semidirect product $G = \ZZ \rtimes \ZZ$ whose underlying set is $\ZZ \times \ZZ$ with group operation $(m, n) \star (p, q) = (m + (-1)^n p, n + q)$.
-Prove that:
-
-1. $G$ is torsion-free.
-
-2. The 2-torus $T^2$ is a 2-fold covering space of the Klein bottle $K$.
+Let $K$ be the Klein bottle and let $G = \ZZ \rtimes \ZZ$ be the group with underlying set $\ZZ \times \ZZ$ and operation $(m, n) \star (p, q) = (m + (-1)^n p, n + q)$.
 
 ::: pf
 
