@@ -18,16 +18,13 @@ audit:
 ---
 
 ::: {.exercise}
-Show that the nilradical is given by $\nilrad{R} = \rad(0)$.
+Let $R$ be a commutative ring. Show that the nilradical is given by $\nilrad{R} = \rad(0)$.
 :::
 
 ::: {.solution}
+Write $\rad{I} = \theset{ x \in R \st x^n \in I \text{ for some } n \geq 1 }$ for the radical of an ideal $I$, and $\nilrad{R} = \theset{ x \in R \st x^n = 0 \text{ for some } n \geq 1 }$ for the nilradical.
 
 ::: pf
-
-::: pf-step
-Write $\rad{I} = \theset{ x \in R \st x^n \in I \text{ for some } n \geq 1 }$ for the radical of an ideal $I$, and $\nilrad{R} = \theset{ x \in R \st x^n = 0 \text{ for some } n \geq 1 }$ for the nilradical.
-:::
 
 ::: {.pf-step #nilrad-subset-rad-zero}
 $\nilrad{R} \subseteq \rad{(0)}$.
