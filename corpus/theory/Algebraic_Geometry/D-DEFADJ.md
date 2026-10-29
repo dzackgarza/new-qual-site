@@ -27,7 +27,7 @@ $$
 for all $A \in \mca$ and $B \in \mcb$, natural in both arguments.
 We call $F$ the \dfn{left adjoint} and $G$ the \dfn{right adjoint}.
 
-Naturality means that for $f: A' \to A$ in $\mca$ the square formed by $\tau_{AB}$, $\tau_{A'B}$ and the two restriction maps along $f$ commutes, and similarly for $g: B \to B'$ in $\mcb$.
+Naturality means that for $f: A' \to A$ in $\mca$ the square formed by $\tau_{AB}$, $\tau_{A'B}$, precomposition with $F(f)$ and precomposition with $f$ commutes, and similarly for $g: B \to B'$ in $\mcb$.
 :::
 
 ::: {.remark}
