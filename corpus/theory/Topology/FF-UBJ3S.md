@@ -5,7 +5,7 @@ kind: fact
 title: Künneth isomorphism with free homology
 slogan: 'With one factor homologically free over a PID, product homology is the graded tensor product.'
 prompts:
-- State the Kunneth isomorphism in the torsion-free case.
+- State the Künneth isomorphism in the torsion-free case.
 classification:
   areas:
   - topology
