@@ -13,11 +13,7 @@ topics:
 
 [[D-AN662]]
 
-## Why the definition is shaped that way
-
-Points are prime ideals because the preimage of a prime ideal under a ring map $\varphi\colon A\to B$ is prime, so $\mathfrak q\mapsto\varphi^{-1}(\mathfrak q)$ is a continuous map $\Spec B\to\Spec A$; the preimage of a maximal ideal need not be maximal, as $(0)\subset\QQ$ pulls back to $(0)\subset\ZZ$.
-The structure sheaf is defined by a local condition so that its sections over $D_f$ come out as $A_f$.
-Morphisms induce local homomorphisms on stalks so that $\Hom(\Spec B,\Spec A)=\Hom(A,B)$.
+## First examples
 
 [[FE-O12TX]]
 
