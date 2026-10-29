@@ -11,36 +11,53 @@ classification:
   - Maximum Modulus Principle
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source did not require the inside of gamma to lie in Omega, and f(z) = z + 1/z on the annulus 1/2 < |z| < 2 is real on the unit circle; the statement now requires the bounded component of C minus gamma to lie in Omega.'
 ---
 
 ::: {.problem}
 Let $f$ be an analytic function on a region $\Omega$.
-Show that $f$ is a constant if there is a simple closed curve $\gamma$ in $\Omega$ such that its image $f(\gamma)$ is contained in the real axis.
+Show that $f$ is a constant if there is a simple closed curve $\gamma$ in $\Omega$ whose inside, the bounded component of $\CC\setminus\gamma$, is contained in $\Omega$, such that its image $f(\gamma)$ is contained in the real axis.
 :::
 
 ::: {.solution}
-The statement is false for a general region $\Omega$.
-Take
-\[
-\Omega=\{z:1/2<|z|<2\},
-\qquad
-f(z)=z+{1\over z},
-\]
-and let $\gamma$ be the unit circle. Then $f$ is nonconstant and holomorphic on
-$\Omega$, while for $z=e^{it}$,
-\[
-f(z)=e^{it}+e^{-it}=2\cos t\in\RR.
-\]
-Thus $f(\gamma)\subset\RR$ although $f$ is not constant.
+Let $U$ be the bounded component of $\CC\setminus\gamma$. By the Jordan curve theorem $U$ is a nonempty bounded open set with $\partial U = \gamma$, and $\overline U = U\cup\gamma\subseteq\Omega$.
 
-The natural corrected statement is true if the bounded component $U$ of
-$\CC\setminus\gamma$ is contained in $\Omega$. Indeed, then
-$v=\Im f$ is harmonic on $U$, continuous on $\overline U$, and satisfies
-$v=0$ on $\partial U=\gamma$. The maximum and minimum principles for harmonic
-functions give $v\equiv0$ on $U$. Hence $f(U)\subset\RR$.
+::: pf
 
-If $f$ were nonconstant on $U$, the open mapping theorem would make $f(U)$
-open in $\CC$, which is impossible for a subset of $\RR$. Thus $f$ is constant
-on the nonempty open set $U$, and the identity theorem then makes $f$ constant
-on the connected region $\Omega$.
+::: {.pf-step #im-zero}
+
+$\Im f = 0$ on $U$.
+
+::: pf-proof
+
+$v = \Im f$ is harmonic on $U$ and continuous on the compact set $\overline U$, and $v = 0$ on $\partial U = \gamma$. The maximum and minimum principles for harmonic functions give $0 \le v \le 0$ on $U$.
+
+:::
+
+:::
+
+::: {.pf-step #const-on-u}
+
+$f$ is constant on each component of $U$.
+
+::: pf-proof
+
+By step [](#im-zero){.pf-ref}, $f$ maps each component of $U$ into $\RR$, which contains no nonempty open subset of $\CC$. By the open mapping theorem, $f$ is constant there.
+
+:::
+
+:::
+
+::: pf-qed
+
+By step [](#const-on-u){.pf-ref}, $f$ is constant on a nonempty open subset of the connected region $\Omega$, so the identity theorem makes $f$ constant on $\Omega$.
+
+:::
+
+:::
+
 :::
