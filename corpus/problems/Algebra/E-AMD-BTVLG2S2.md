@@ -26,29 +26,29 @@ Let $H, K \leq G$ a finite group, and without using the normalizers of $H$ or $K
 
 ::: {.solution}
 Consider the surjection
-\[
+$$
 \mu:H\times K\to HK,\qquad (h,k)\mapsto hk.
-\]
+$$
 Fix $x=h_0k_0\in HK$. Then
-\[
+$$
 hk=x=h_0k_0
-\]
+$$
 if and only if
-\[
-d:=h_0^{-1}h=k_0k^{-1}\in H\cap K.
-\]
+$$
+d\coloneqq h_0^{-1}h=k_0k^{-1}\in H\cap K.
+$$
 Equivalently,
-\[
+$$
 (h,k)=(h_0d,d^{-1}k_0)
-\]
-for a unique $d\in H\cap K$. Hence every fiber of $\mu$ has cardinality $|H\cap K|$.
+$$
+for a unique $d\in H\cap K$. Hence every fiber of $\mu$ has cardinality $\abs{H\cap K}$.
 
 Therefore
-\[
-|H||K|=|H\times K|=|HK|\,|H\cap K|,
-\]
+$$
+\abs{H}\abs{K}=\abs{H\times K}=\abs{HK}\,\abs{H\cap K},
+$$
 so
-\[
-\boxed{|HK|=\frac{|H||K|}{|H\cap K|}}.
-\]
+$$
+\boxed{\abs{HK}=\frac{\abs{H}\abs{K}}{\abs{H\cap K}}}.
+$$
 :::
