@@ -23,11 +23,11 @@ Prove that $X$ is connected iff the only clopen subsets are $\emptyset, X$.
 
 ::: {.pf-step #s1}
 
-If $X$ is disconnected, then $X=U\sqcup V$ for nonempty disjoint open sets $U,V$.
+If $X$ is disconnected, then $X$ has a clopen subset other than $\varnothing$ and $X$.
 
 ::: pf-proof
 
-This is the definition of disconnectedness.
+Write $X=U\sqcup V$ with $U,V$ nonempty, disjoint, and open. Then $U$ is open, and closed because its complement $V$ is open; it is neither empty nor all of $X$ because $V\neq\varnothing$.
 
 :::
 
@@ -35,37 +35,19 @@ This is the definition of disconnectedness.
 
 ::: {.pf-step #s2}
 
-Then $U$ is a nontrivial clopen subset.
+If $A\subseteq X$ is clopen with $A\neq\varnothing,X$, then $X$ is disconnected.
 
 ::: pf-proof
 
-It is open, and its complement $V$ is open, so $U$ is closed; it is neither empty nor all of $X$.
+The sets $A$ and $X\setminus A$ are nonempty, disjoint, and open because $A$ is both open and closed, so $X=A\sqcup(X\setminus A)$ is a separation.
 
 :::
 
 :::
 
-::: {.pf-step #s3}
+::: pf-qed
 
-Conversely, if $A\subset X$ is nontrivial and clopen, then $X=A\sqcup(X\setminus A)$ is a separation.
-
-::: pf-proof
-
-Both pieces are nonempty, disjoint, and open because $A$ is both open and closed.
-
-:::
-
-:::
-
-::: pf-step
-
-Hence $X$ is connected iff its only clopen subsets are $\varnothing$ and $X$.
-
-::: pf-proof
-
-Combine steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
-
-:::
+Step [](#s2){.pf-ref} shows that if $X$ is connected, then its only clopen subsets are $\varnothing$ and $X$; step [](#s1){.pf-ref} is the contrapositive of the converse.
 
 :::
 
