@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO6
 kind: problem
-title: Groups of order pq
+title: Groups of order $pq$
 classification:
   areas: [algebra]
   topics: [Group Theory, Sylow Theory]
