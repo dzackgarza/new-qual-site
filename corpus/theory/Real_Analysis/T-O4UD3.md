@@ -17,7 +17,7 @@ review: draft
 
 ::: {.theorem}
 Let $X$ and $Y$ be metric spaces with $X$ [[D-EILKJ|compact]].
-Every continuous function $f\colon X\to Y$ is [[D-WGYSB|uniformly continuous]] [@Mun00]; [@Rud76].
+Every continuous function $f\colon X\to Y$ is [[D-WGYSB|uniformly continuous]] [@Mun00; @Rud76].
 :::
 
 ::: {.corollary}
