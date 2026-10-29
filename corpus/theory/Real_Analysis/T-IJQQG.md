@@ -3,6 +3,8 @@ schema: qual/card@1
 id: T-IJQQG
 kind: theorem
 title: Dominated convergence theorem
+prompts:
+- State the dominated convergence theorem.
 slogan: 'Almost-everywhere convergence under one integrable majorant gives $L^1$ convergence and convergence of integrals.'
 classification:
   areas:

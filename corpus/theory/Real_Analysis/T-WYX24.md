@@ -31,5 +31,5 @@ $$
 :::
 
 ::: {.remark}
-The [[FT-LCR5P|dominated convergence theorem]] is the case $g_n=g$ for all $n$: the single dominating function $g$ is replaced by dominating functions $g_n$ that converge to $g$ almost everywhere and in integral.
+The [[T-IJQQG|dominated convergence theorem]] is the case $g_n=g$ for all $n$: the single dominating function $g$ is replaced by dominating functions $g_n$ that converge to $g$ almost everywhere and in integral.
 :::

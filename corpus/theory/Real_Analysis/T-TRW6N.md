@@ -43,5 +43,5 @@ As $\varepsilon>0$ was arbitrary, $\int f_n\,dm\to\int f\,dm$.
 :::
 
 ::: {.remark}
-The theorem is a special case of the [[FT-LCR5P|dominated convergence theorem]], with dominating function $M\chi_{[a,b]}$.
+The theorem is a special case of the [[T-IJQQG|dominated convergence theorem]], with dominating function $M\chi_{[a,b]}$.
 :::

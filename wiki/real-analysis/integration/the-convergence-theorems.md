@@ -23,8 +23,6 @@ If $f_n\to f$ almost everywhere and $\abs{f_n}\leq g$ with $g\in L^1$, then $f\i
 
 [[T-IJQQG]]
 
-[[FT-LCR5P]]
-
 [[T-WYX24]]
 
 [[PR-H4ZVI]]
