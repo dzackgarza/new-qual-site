@@ -26,29 +26,36 @@ Is a ring of formal power series $R[[x]]$ a unique factorization domain (UFD)?
 :::
 
 ::: {.solution}
-Not in complete generality.
 
-If $R=k$ is a field, then
-\[
-k[[x]]
-\]
-is a discrete valuation ring: every nonzero series has a unique form
-\[
-f=x^m u,
-\]
-where $u$ is a unit. Hence every ideal is $(x^m)$, so $k[[x]]$ is a PID and therefore a UFD.
+::: pf
 
-Likewise, for a field $k$, each finite-variable formal power series ring
-\[
-k[[x_1,\dots,x_n]]
-\]
-is a regular local ring and hence a UFD.
+::: pf-step
+If $R=k$ is a field, then $k[[x]]$ is a UFD.
 
-However, the implication
-\[
-R\text{ UFD}\Longrightarrow R[[x]]\text{ UFD}
-\]
-is false in general. Samuel constructed UFDs $R$ for which $R[[x]]$ is not a UFD; see P. Samuel, *On unique factorization domains*, Illinois J. Math. **5** (1961), 1--17. Thus the polynomial-ring theorem of Gauss has no unrestricted formal-power-series analogue.
+::: pf-proof
+Every nonzero series has a unique form $f=x^m u$ with $m\ge0$ and $u$ a unit, since a series with nonzero constant term is invertible. Hence every nonzero ideal is $(x^m)$ for some $m$, so $k[[x]]$ is a discrete valuation ring, in particular a PID, and therefore a UFD.
+:::
 
-So the answer depends on hypotheses on $R$: over a field the answer is yes, but for a general UFD the answer can be no.
+:::
+
+::: pf-step
+For a field $k$, every ring $k[[x_1,\ldots,x_n]]$ is a UFD.
+
+::: pf-proof
+It is a regular local ring, and a regular local ring is a UFD by the Auslander--Buchsbaum theorem.
+:::
+
+:::
+
+::: pf-step
+The answer is $\boxed{\text{not in general}}$: there are UFDs $R$ for which $R[[x]]$ is not a UFD.
+
+::: pf-proof
+Samuel constructed such rings (P. Samuel, *On unique factorization domains*, Illinois J. Math. **5** (1961), 1--17). So the polynomial-ring theorem of Gauss, that $R$ a UFD implies $R[x]$ a UFD, has no unrestricted formal-power-series analogue.
+:::
+
+:::
+
+:::
+
 :::
