@@ -43,10 +43,10 @@ The bijection sends $\sigma$ to $\theset{0}$ and $\theset{0}$ to $\dualof{\sigma
 
 | face of $\sigma$ | image in $\dualof{\sigma}$ |
 | --- | --- |
-| facet $\tau$, $\dim = n-1$ | ray $\dualof{\sigma}\cap\tau^\perp$ spanned by a primitive facet normal in $M$ |
+| facet $\tau$, $\dim = n-1$ | ray $\dualof{\sigma}\intersect\tau^\perp$ spanned by a primitive facet normal in $M$ |
 | ray $\rho$, $\dim = 1$ | facet of $\dualof{\sigma}$, $\dim = n-1$ |
 
 Thus the primitive ray generators of $\dualof{\sigma}$ are the primitive inward facet normals of $\sigma$, and conversely.
 
-For an arbitrary polyhedral cone $C\subseteq N_\RR$, strong convexity is equivalent to $\theset{0}$ being a face of $C$, and by face duality this is equivalent to $C^\vee$ being full-dimensional. For the strongly convex $\sigma$ above, $S_\sigma=\sigma^\vee\cap M$ therefore generates $M$ as a group.
+For an arbitrary polyhedral cone $C\subseteq N_\RR$, strong convexity is equivalent to $\theset{0}$ being a face of $C$, and by face duality this is equivalent to $\dualof{C}$ being full-dimensional. For the strongly convex $\sigma$ above, the semigroup $S_\sigma\coloneqq\dualof{\sigma}\intersect M$ therefore generates $M$ as a group.
 :::
