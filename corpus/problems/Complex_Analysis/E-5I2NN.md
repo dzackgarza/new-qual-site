@@ -13,29 +13,51 @@ classification:
   - Blaschke Factors
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source reads "Let f in Hol(D)"; both bounds fail without f(D) contained in D (f(z)=2z), so the statement adds that hypothesis.
 ---
 
 ::: {.exercise}
-Let $f\in \Hol(\DD)$.
-Show that if $f$ has a fixed point $a$ then $\abs{f'(a)} \leq 1$, and that 
-\[
-\abs{f(0)}^2 + \abs{f'(0)}^2 \leq 1
-.\]
+Let $f\in \Hol(\DD)$ with $f(\DD)\subseteq\DD$.
+Show that if $f$ has a fixed point $a$ then $\abs{f'(a)} \leq 1$, and that
+$$
+\abs{f(0)}^2 + \abs{f'(0)}^2 \leq 1.
+$$
 
 :::
 
 ::: {.solution}
-Assume $f(\DD)\subseteq\DD$, which the Schwarz--Pick lemma requires.
-Set $f(a) = a$ in Schwarz-Pick:
-\[
-\left|f^{\prime}(a)\right| \leq \frac{1-|f(a)|^{2}}{1-|a|^{2}} \implies 
-\abs{f'(a)} \leq {1 - \abs{a}^2 \over 1 - \abs{a}^2} = 1
-.\]
-Set $a=0$:
-\[
-\left|f^{\prime}(0)\right| \leq \frac{1-|f(0)|^{2}}{1-|0|^{2}} = 1-\abs{f(0)}^2
-.\]
-Since the right side is at most $1$, $\abs{f'(0)}^2\le\abs{f'(0)}\le1-\abs{f(0)}^2$.
+The Schwarz--Pick lemma gives, for every $z\in\DD$,
+$$
+\abs{f'(z)} \leq \frac{1-\abs{f(z)}^{2}}{1-\abs{z}^{2}}.
+$$
+
+::: pf
+
+::: pf-step
+If $f(a)=a$, then $\abs{f'(a)}\le1$.
+
+::: pf-proof
+Take $z=a$ in the Schwarz--Pick inequality: $\abs{f'(a)} \leq \frac{1 - \abs{a}^2}{1 - \abs{a}^2} = 1$.
+:::
+
+:::
+
+::: pf-step
+$\abs{f(0)}^2 + \abs{f'(0)}^2 \leq 1$.
+
+::: pf-proof
+Take $z=0$: $\abs{f'(0)} \leq 1-\abs{f(0)}^2\le1$.
+Hence $\abs{f'(0)}^2\le\abs{f'(0)}\le1-\abs{f(0)}^2$.
+:::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}
