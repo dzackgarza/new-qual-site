@@ -75,14 +75,12 @@ For $(x,y)\in U\times Y$, choose $i$ with $y\in V_{y_i}$; then $(x,y)\in U_{y_i}
 
 ## Worksheet problems
 
-Problems from the tube lemma worksheet:
+[[P-8TF16]]
 
-![Tube lemma worksheet, problem 1](../../../assets/Workshops/Topology/_attachments/Pasted%20image%2020210520142907.png)
+[[P-MHQ6A]]
 
-![Tube lemma worksheet, problem 2](../../../assets/Workshops/Topology/_attachments/Pasted%20image%2020210520143017.png)
+[[P-XMOZA]]
 
-![Tube lemma worksheet, problem 3](../../../assets/Workshops/Topology/_attachments/Pasted%20image%2020210520143456.png)
+[[P-AT75W]]
 
-![Tube lemma worksheet, problem 4](../../../assets/Workshops/Topology/_attachments/Pasted%20image%2020210520143537.png)
-
-![Tube lemma worksheet, problem 5](../../../assets/Workshops/Topology/_attachments/Pasted%20image%2020210520143652.png)
+[[E-HYQMG]]
