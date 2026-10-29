@@ -413,7 +413,6 @@ corpus/theory/Real_Analysis/PR-26CWE.md
 corpus/theory/Real_Analysis/PR-2C3SZ.md
 corpus/theory/Real_Analysis/PR-2CZUM.md
 corpus/theory/Real_Analysis/PR-2JV43.md
-corpus/theory/Real_Analysis/PR-2KEIE.md
 corpus/theory/Real_Analysis/PR-2P7FZ.md
 corpus/theory/Real_Analysis/PR-3W4FO.md
 corpus/theory/Real_Analysis/PR-47TTS.md
