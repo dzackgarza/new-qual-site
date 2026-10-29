@@ -19,11 +19,15 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: "The source asked 'What is the Galois group of $x^2 - 2$? Why is $x^2 - 2$ irreducible?' without naming the base field; both questions now name $\\QQ$, the field the solution uses."
 ---
 
 ::: {.problem}
-What is the Galois group of $x^2 - 2$?
-Why is $x^2 - 2$ irreducible?
+What is the Galois group of $x^2 - 2$ over $\QQ$?
+Why is $x^2 - 2$ irreducible over $\QQ$?
 :::
 
 ::: {.solution}
@@ -57,9 +61,9 @@ The roots are $\pm\sqrt2$, both contained in $\QQ(\sqrt2)$, and irreducibility g
 ::: pf-step
 
 Therefore
-\[
-\operatorname{Gal}(x^2-2/\QQ)\cong C_2.
-\]
+$$
+\Gal(\QQ(\sqrt2)/\QQ)\cong \boxed{C_2}.
+$$
 
 ::: pf-proof
 
