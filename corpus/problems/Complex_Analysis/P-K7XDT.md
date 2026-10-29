@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-K7XDT
 kind: problem
-title: A conformal map from $\{\Re z>0,\ |z-i|>1\}$ onto $\HH$
+title: A conformal map from $\{\Re z>0,\ \abs{z-i}>1\}$ onto $\HH$
 classification:
   areas:
   - complex-analysis
@@ -21,39 +21,47 @@ audit:
 ---
 
 ::: {.problem}
-Find a conformal map from $\Omega = \{z\in \mathbb{C} \mid |z-i| > 1,\, \operatorname{Re}(z) > 0\}$ to $\mathbb{H} = \{w \in \mathbb{C} \mid \operatorname{Im}(w) > 0\}$.
+Find a conformal map from $\Omega = \{z\in \CC \mid \abs{z-i} > 1,\, \Re(z) > 0\}$ to $\HH = \{w \in \CC \mid \Im(w) > 0\}$.
 :::
 
 ::: {.solution}
-Define
-$$
-T(z)=\frac{z}{z-2i}.
-$$
-The boundary line $\Re z=0$ and the circle $|z-i|=1$ both pass through $0$ and $2i$, so $T$ sends them to straight lines through $0$ and $\infty$.
+Let $T(z)=\frac{z}{z-2i}$ and $Q=\{w:\Re w>0,\ \Im w>0\}$.
 
-Write $z=x+iy$. A direct computation gives
-$$
-T(z)=\frac{|z-i|^2-1+2ix}{|z-2i|^2}.
-$$
-Thus, for $z\in\Omega$,
-$$
-\Re T(z)>0
-\quad\text{and}\quad
-\Im T(z)>0.
-$$
-Hence $T(\Omega)$ lies in the first quadrant
-$$
-Q=\{w:\Re w>0,\ \Im w>0\}.
-$$
-Conversely, $T$ is a Möbius transformation and the two boundary arcs of $\Omega$ map to the two boundary rays of $Q$; equivalently, solving
-$$
-z=\frac{2iw}{w-1}
-$$
-shows that every $w\in Q$ has a preimage in $\Omega$. Therefore $T$ maps $\Omega$ biholomorphically onto $Q$.
+::: pf
 
-The squaring map is biholomorphic from $Q$ onto the upper half-plane. Consequently
+::: {.pf-step #formula}
+For $z = x+iy \neq 2i$,
 $$
-F(z)=T(z)^2=\left(\frac{z}{z-2i}\right)^2
+T(z)=\frac{\abs{z-i}^2-1+2ix}{\abs{z-2i}^2}.
 $$
-is a conformal map from $\Omega$ onto $\mathbb H$.
+
+::: pf-proof
+$T(z) = \frac{z(\bar z + 2i)}{\abs{z-2i}^2} = \frac{\abs{z}^2 - 2y + 2ix}{\abs{z-2i}^2}$, and $\abs{z}^2 - 2y = \abs{z-i}^2 - 1$.
+:::
+
+:::
+
+::: {.pf-step #quadrant}
+$T$ maps $\Omega$ biholomorphically onto $Q$.
+
+::: pf-proof
+$T$ is a Möbius transformation, hence a bijection of $\CC \setminus \{2i\}$ onto $\CC \setminus \{1\}$, and $2i \notin \Omega$, $1 \notin Q$.
+By step [](#formula){.pf-ref}, for $z \neq 2i$ we have $T(z) \in Q$ exactly when $\abs{z-i} > 1$ and $x > 0$, that is, when $z \in \Omega$.
+:::
+
+:::
+
+::: pf-step
+$$
+\boxed{F(z)=\left(\frac{z}{z-2i}\right)^2}
+$$
+maps $\Omega$ conformally onto $\HH$.
+
+::: pf-proof
+Squaring maps $Q$ biholomorphically onto $\HH$, since it doubles arguments in $(0, \pi/2)$; compose with step [](#quadrant){.pf-ref}.
+:::
+
+:::
+
+:::
 :::
