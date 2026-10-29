@@ -9,6 +9,9 @@ classification:
   - algebra
   topics:
   - Groups
+  - p-Groups
+  - Group Actions
+  - Orbit-Stabilizer
 relations:
 - kind: uses
   target: D-WYC7C

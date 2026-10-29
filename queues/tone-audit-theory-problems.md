@@ -1872,7 +1872,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Algebra/FT-PUVIQ.md` | `3bd7c88cb7de950056ca5b2ad788fc5fddea610d` | `3bd7c88cb7de950056ca5b2ad788fc5fddea610d` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/FT-RVIGS.md` | `56e0be0d3600c06f023c381c5851c001720e67e2` | `56e0be0d3600c06f023c381c5851c001720e67e2` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/FT-ZENUU.md` | `b0b73225b92950fdd41614677a80f1fbe25a95bd` | `b0b73225b92950fdd41614677a80f1fbe25a95bd` | Full file read; retained |
-| [x] | `corpus/theory/Algebra/L-354HC.md` | `24085e52bf90b1e24ac8186723aa449b750543e2` | `24085e52bf90b1e24ac8186723aa449b750543e2` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/L-6QBOJ.md` | `f9fec2713087a13422d6c517676eeca2fa1036c9` | `f9fec2713087a13422d6c517676eeca2fa1036c9` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/L-C5DDK.md` | `b1a3d1404be1a9d80b65c1738f7863197eb2fb3f` | `b1a3d1404be1a9d80b65c1738f7863197eb2fb3f` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/L-CD6QT.md` | `60a23f71ce9b42b233bef35c313fb36236e731f8` | `60a23f71ce9b42b233bef35c313fb36236e731f8` | Full file read; retained |

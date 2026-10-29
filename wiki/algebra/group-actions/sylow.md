@@ -22,7 +22,7 @@ Throughout, $G$ is a finite group, $p$ is a prime, $\size G = p^k m$ with $p\not
   For $k>1$, two distinct Sylow $p$-subgroups can intersect nontrivially.
 :::
 
-[[L-354HC]]
+[[L-DJKXL]]
 
 ## The Sylow theorems
 
