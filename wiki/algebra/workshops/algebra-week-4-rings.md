@@ -13,7 +13,7 @@ title: "Algebra qual prep week 4: rings"
 
 - Radicals, the nilradical, $\Spec R$ and $\mspec R$
 
-- Classes of rings: integral domains, Euclidean domains $\implies$ PIDs $\implies$ UFDs $\implies$ integral domains, Dedekind domains, Noetherian and Artinian rings
+- Classes of rings: Euclidean domains $\implies$ PIDs $\implies$ UFDs $\implies$ integral domains; Dedekind domains; Noetherian and Artinian rings
 
 - Existence arguments using Zorn's lemma
 
