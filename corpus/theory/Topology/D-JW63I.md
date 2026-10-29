@@ -21,9 +21,5 @@ Then $H_n(M, M\sm\theset{x};\ZZ)\cong H_n(\RR^n, \RR^n\sm\theset{0};\ZZ)\cong\ZZ
 
 ::: {.definition}
 Let $M$ be an $n$-manifold and $x\in M$.
-A \dfn{local orientation} of $M$ at $x$ is a choice of generator $\mu_x$ of the infinite cyclic group $H_n(M, M\sm\theset{x};\ZZ)$.
-:::
-
-::: {.concept}
-See [@Hat02].
+A \dfn{local orientation} of $M$ at $x$ is a choice of generator $\mu_x$ of the infinite cyclic group $H_n(M, M\sm\theset{x};\ZZ)$ [@Hat02].
 :::
