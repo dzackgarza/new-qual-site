@@ -60,7 +60,7 @@ For finitely generated modules over a PID, the four conditions coincide.
 
 - $\QQ$ over $\ZZ$ is flat, not projective, and not finitely generated.
 
-- The ideal $\generators{2,x} \subseteq \ZZ[x]$ is torsion-free and not free.
+- The ideal $\generators{2,x} \subseteq \ZZ[x]$ is torsion-free and not flat. Its localization at $\mathfrak m=\generators{2,x}$ is a finitely generated ideal of the local Noetherian domain $\ZZ[x]_{\mathfrak m}$ that needs two generators, since $\mathfrak m/\mathfrak m^2$ is $2$-dimensional over $\FF_2$; a finitely generated flat module over a local Noetherian ring is free, and a free ideal is principal ([[PR-ASW5L]]).
 :::
 
 ## Free ideals
