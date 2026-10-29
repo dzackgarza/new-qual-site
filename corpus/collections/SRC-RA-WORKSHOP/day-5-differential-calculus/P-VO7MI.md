@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VO7MI
 kind: problem
-title: "The derivative as a limit of difference quotients"
+title: "Product rule from the definition of the derivative"
 classification:
   areas:
   - real-analysis
