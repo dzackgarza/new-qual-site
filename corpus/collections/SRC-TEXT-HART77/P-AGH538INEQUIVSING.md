@@ -310,7 +310,7 @@ countercalculation to its claimed matching data.
 
 Steps [](#same-multiplicity-tangent){.pf-ref}, [](#a-first-blowup-transform){.pf-ref}, [](#a-infinitely-near-mult-two){.pf-ref}, [](#a-branches-separate){.pf-ref} and [](#a-delta-seven){.pf-ref} compute the infinitely near multiplicities and delta
 invariant of (a); steps [](#b-first-blowup-transform){.pf-ref}, [](#b-infinitely-near-mult-three){.pf-ref}, [](#b-resolves-after-blowup){.pf-ref} and [](#b-delta-nine){.pf-ref} do the same for (b); step [](#transcribed-claim-false){.pf-ref} exhibits
-the contradiction to the source claim.
+the contradiction to the claim of the statement.
 :::
 
 :::
