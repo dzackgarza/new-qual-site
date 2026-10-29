@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-4-09
 kind: problem
-title: Maxim algebraic topology 4.9
+title: The first $p$-torsion in $\pi_*(S^3)$ is $\ZZ_p$ in degree $2p$
 classification:
   areas: [topology]
   topics: []
