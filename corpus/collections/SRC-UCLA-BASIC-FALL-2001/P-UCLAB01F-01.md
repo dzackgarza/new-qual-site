@@ -13,10 +13,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Problem 1 of the retained UCLA Basic Exam, Fall 2001 PDF.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source printed "a compact set of real numbers", which fails for the empty set. The statement now says nonempty compact set.
 ---
 
 ::: {.problem}
-Let $K$ be a compact set of real numbers and let $f:K\to\mathbb R$ be continuous.
+Let $K$ be a nonempty compact set of real numbers and let $f:K\to\mathbb R$ be continuous.
 Prove that there exists $x_0\in K$ such that
 \[
 f(x)\le f(x_0)
@@ -25,8 +29,6 @@ for every $x\in K$.
 :::
 
 ::: {.solution}
-
-As stated, the assertion requires the implicit hypothesis $K\ne\varnothing$: if $K=\varnothing$, there is no point $x_0\in K$. Assume therefore that $K$ is nonempty.
 
 ::: pf
 
@@ -90,7 +92,7 @@ f(x)\le M=f(x_0).
 
 ::: pf-qed
 
-Step [](#s1-3){.pf-ref} proves the required conclusion for every nonempty compact $K$, while the opening observation identifies the empty-set exception in the statement as printed.
+Step [](#s1-3){.pf-ref} is the required conclusion.
 
 :::
 
