@@ -16,7 +16,7 @@ source:
   source_kind: compilation
   area: topology
   sections:
-  - name: Chapter 1
+  - name: 1. Plane Fields and Contact Structures
     problems:
     - id: P-UTCT-1-5
       comment: Exercise 1.5
@@ -26,17 +26,17 @@ source:
       comment: Exercise 1.27
     - id: P-UTCT-1-53
       comment: Exercise 1.53
-  - name: Chapter 2
+  - name: 2. Gray’s Theorem
     problems:
     - id: P-UTCT-2-24
       comment: Exercise 2.24
-  - name: Chapter 3
+  - name: 3. Convex Surfaces
     problems:
     - id: P-UTCT-3-15
       comment: Exercise 3.15
     - id: P-UTCT-3-19
       comment: Exercise 3.19
-  - name: Chapter 4
+  - name: 4. Contact Structures in 3-Manifolds
     problems:
     - id: P-UTCT-4-3
       comment: Exercise 4.3
