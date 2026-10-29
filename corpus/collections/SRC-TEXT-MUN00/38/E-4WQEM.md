@@ -22,7 +22,6 @@ Verify the statements made in Example 4 of §38 concerning the one-point compact
 :::
 
 ::: {.solution}
-**Goal:** Verify the topological properties of the compactification of $X = (0, 1)$ formed by the closure of the embedding $h(x) = (x, \sin(1/x))$ in $\RR^2$, its remainder structure, and its relationship to the one-point compactification.
 
 ::: pf
 
