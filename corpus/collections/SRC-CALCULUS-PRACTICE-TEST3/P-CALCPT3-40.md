@@ -24,3 +24,39 @@ If $x$, $y$, and $z$ are selected independently and at random from the interval 
 (D) $\frac13$
 (E) $\frac14$
 :::
+
+::: {.solution}
+Let $x,y,z$ be independent and uniform on $[0,1]$, so $(x,y,z)$ is uniform on the unit cube and probabilities are volumes.
+
+::: pf
+
+::: {.pf-step #fixed}
+For fixed $y,z\in[0,1]$, the probability over $x$ that $x<yz$ is $yz$.
+
+::: pf-proof
+$yz\in[0,1]$, and $x$ is uniform on $[0,1]$.
+:::
+
+:::
+
+::: {.pf-step #complement}
+The probability that $x<yz$ is $\frac14$.
+
+::: pf-proof
+By step [](#fixed){.pf-ref} and Fubini's theorem, it equals $\int_0^1\int_0^1yz\,dy\,dz=\frac12\cdot\frac12=\frac14$.
+:::
+
+:::
+
+::: pf-step
+The probability that $x\ge yz$ is $\boxed{\frac34}$, choice (A).
+
+::: pf-proof
+It is the complement of the event in step [](#complement){.pf-ref}, so it is $1-\frac14=\frac34$; this value differs from each of (B) through (E).
+:::
+
+:::
+
+:::
+
+:::
