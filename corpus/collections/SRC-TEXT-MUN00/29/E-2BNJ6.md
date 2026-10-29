@@ -30,7 +30,8 @@ Show that if the net $(x_\alpha)$ converges to $x$, so does any subnet.
 :::
 
 ::: {.solution}
-**Goal:** Prove that every subnet $(y_k)_{k \in K} = (x_{g(k)})_{k \in K}$ of a convergent net $(x_\alpha)_{\alpha \in J} \to x$ in a topological space $X$ also converges to $x$.
+
+Suppose $x_\alpha \to x$, and write $y_k = (f \circ g)(k) = x_{g(k)}$, so that the subnet is $(y_k)_{k \in K}$.
 
 ::: pf
 
