@@ -34,24 +34,17 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The statement named the curve C and its normalization the normalization of Y. The curve is now named Y throughout.
 ---
 
 ::: {.problem}
-Assume $\operatorname{char}k\ne2$. Let $a_1, \ldots, a_r$, $r \geqslant 5$, be distinct elements of $k$, and let $C$ be the curve in $\PP^2$ given by the (affine) equation $y^2=\prod_{i=1}^r\left(x-a_i\right)$.
+Assume $\operatorname{char}k\ne2$. Let $a_1, \ldots, a_r$, $r \geqslant 5$, be distinct elements of $k$, and let $Y$ be the curve in $\PP^2$ given by the (affine) equation $y^2=\prod_{i=1}^r\left(x-a_i\right)$.
 Show that the point $P$ at infinity on the $y$-axis is a singular point.
 Compute $\delta_P$ and $g(\tilde{Y})$, where $\tilde{Y}$ is the normalization of $Y$.
 Show in this way that one obtains hyperelliptic curves of every genus $g \geqslant 2$.
-:::
-
-::: {.remark title="Erratum"}
-The characteristic hypothesis is necessary for this model. In characteristic
-$2$, the extension defined by
-$$
-y^2=\prod_i(x-a_i)
-$$
-is purely inseparable over $k(x)$, so it is not the separable degree-two
-hyperelliptic cover used in the conclusion. The proof below treats the
-intended case $\operatorname{char}k\ne2$.
 :::
 
 ::: {.solution}
