@@ -19,7 +19,7 @@ relations:
 review: draft
 prompts:
 - Why is the affine chart of a face an open subset of the chart of the cone?
-- What function is inverted when passing from U_sigma to U_tau?
+- What function is inverted when passing from $U_\sigma$ to $U_\tau$?
 ---
 
 ::: {.proposition title="Localisation at a face"}
