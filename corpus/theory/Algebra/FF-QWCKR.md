@@ -18,7 +18,7 @@ review: draft
 
 ::: {.fact}
 Let $R$ be a commutative ring.
-An element $a\in R$ is \dfn{quasiregular} if $1-a$ is a [[D-QQIQZ|unit]] of $R$.
+Recall that $a\in R$ is [[D-1H2E1|quasiregular]] if $1-a$ is a [[D-QQIQZ|unit]] of $R$.
 The [[D-2IO6Q|Jacobson radical]] $J(R)$ is the largest ideal of $R$ all of whose elements are quasiregular: every element of $J(R)$ is quasiregular, and every ideal consisting of quasiregular elements is contained in $J(R)$.
 :::
 
