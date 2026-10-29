@@ -12,7 +12,7 @@ topics:
 ::: {.example title="The limit of the integrals need not be the integral of the limit"}
 On $\RR$ with Lebesgue measure, each of the following sequences converges pointwise to $0$ while $\int f_n = 1$ for every $n$:
 
-- $f_n \coloneqq n\chi_{[0,1/n]}$, whose mass concentrates near $0$;
+- $f_n \coloneqq n\chi_{(0,1/n)}$, whose mass concentrates near $0$;
 
 - $f_n \coloneqq \frac1n\chi_{[0,n]}$, which is uniformly bounded by $1$ with supports of unbounded measure, so the bounded convergence theorem fails without the hypothesis that the $f_n$ are supported in one set of finite measure;
 
