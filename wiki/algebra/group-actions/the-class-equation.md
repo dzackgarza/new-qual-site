@@ -28,18 +28,9 @@ which is the class equation.
 
 ## $p$-groups
 
-::: {.proposition title="A nontrivial $p$-group has nontrivial center"}
-If $\size G = p^k$ with $k\geq 1$, then $Z(G)\neq 1$.
-:::
+A nontrivial finite $p$-group has nontrivial center ([[E-6AOD7|class equation, part (a)]]). Consequences for a group $G$ of order $p^k$:
 
-::: {.proof}
-Each term $[G : C_G(g_i)]$ in the class equation is a divisor of $p^k$ greater than $1$, hence divisible by $p$, and $\size G$ is divisible by $p$.
-So $\size{Z(G)}$ is divisible by $p$, and $Z(G) \neq 1$.
-:::
-
-Consequences for a group $G$ of order $p^k$:
-
-- If $k=2$, then $G$ is abelian.
+- If $k=2$, then $G$ is abelian ([[PR-IGLFV|groups of order $p^2$]]).
 
 - $G$ has a normal subgroup of every order dividing $\size G$.
 
