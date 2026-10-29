@@ -5,7 +5,7 @@ kind: fact
 title: Integrability of $x^p$ on $(0,1)$ and $(1,\infty)$
 slogan: '$x^p$ is integrable near $0$ exactly for $p>-1$, and near $\infty$ exactly for $p<-1$.'
 prompts:
-- Where is $x^p$ integrable in $\RR$? (Depending on $p$)
+- For which $p$ is $x^p$ integrable on $(0,1)$, and for which on $(1,\infty)$?
 classification:
   areas:
   - real-analysis
