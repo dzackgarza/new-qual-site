@@ -22,50 +22,50 @@ audit:
 ---
 
 ::: {.problem}
-Describe the Galois theory of cyclotomic extensions $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ (irreducibility of cyclotomic polynomials, Galois group isomorphism, and subfield structure).
+Describe the Galois theory of cyclotomic extensions $\QQ(\zeta_n)/\QQ$ (irreducibility of cyclotomic polynomials, Galois group isomorphism, and subfield structure).
 :::
 
 ::: {.solution}
 Let $\zeta_n$ be a primitive $n$th root of unity. The cyclotomic polynomial is
-\[
+$$
 \Phi_n(x)=\prod_{(a,n)=1}(x-\zeta_n^a).
-\]
-It lies in $\mathbb Z[x]$, is monic, has degree $\varphi(n)$, and is irreducible over $\mathbb Q$. Hence
-\[
-[\mathbb Q(\zeta_n):\mathbb Q]=\varphi(n).
-\]
+$$
+It lies in $\ZZ[x]$, is monic, has degree $\varphi(n)$, and is irreducible over $\QQ$. Hence
+$$
+[\QQ(\zeta_n):\QQ]=\varphi(n).
+$$
 
-The field $\mathbb Q(\zeta_n)$ is the splitting field of $\Phi_n$, so it is Galois over $\mathbb Q$. Every automorphism is determined by the image of $\zeta_n$, and that image must be another primitive $n$th root. Thus
-\[
-\operatorname{Gal}(\mathbb Q(\zeta_n)/\mathbb Q)
-\longrightarrow (\mathbb Z/n\mathbb Z)^\times,
+The field $\QQ(\zeta_n)$ is the splitting field of $\Phi_n$, so it is Galois over $\QQ$. Every automorphism is determined by the image of $\zeta_n$, and that image must be another primitive $n$th root. Thus
+$$
+\Gal(\QQ(\zeta_n)/\QQ)
+\longrightarrow (\ZZ/n\ZZ)^\times,
 \qquad
 \sigma\longmapsto a
 \quad\text{when }\sigma(\zeta_n)=\zeta_n^a,
-\]
+$$
 is an injective homomorphism. Both groups have order $\varphi(n)$, so it is an isomorphism:
-\[
-\operatorname{Gal}(\mathbb Q(\zeta_n)/\mathbb Q)
-\cong(\mathbb Z/n\mathbb Z)^\times.
-\]
+$$
+\Gal(\QQ(\zeta_n)/\QQ)
+\cong(\ZZ/n\ZZ)^\times.
+$$
 In particular the extension is abelian.
 
-By Galois correspondence, intermediate fields are in inclusion-reversing bijection with subgroups of $(\mathbb Z/n\mathbb Z)^\times$.
+By Galois correspondence, intermediate fields are in inclusion-reversing bijection with subgroups of $(\ZZ/n\ZZ)^\times$.
 
-For $n>2$, complex conjugation corresponds to $-1\in(\mathbb Z/n\mathbb Z)^\times$ and has order $2$. Its fixed field is the maximal real subfield
-\[
-\mathbb Q(\zeta_n)^+
-=\mathbb Q(\zeta_n+\zeta_n^{-1}),
-\]
+For $n>2$, complex conjugation corresponds to $-1\in(\ZZ/n\ZZ)^\times$ and has order $2$. Its fixed field is the maximal real subfield
+$$
+\QQ(\zeta_n)^+
+=\QQ(\zeta_n+\zeta_n^{-1}),
+$$
 with
-\[
-[\mathbb Q(\zeta_n):\mathbb Q(\zeta_n)^+]=2.
-\]
-For $n=1,2$, the cyclotomic field is already $\mathbb Q$, so this index is $1$.
+$$
+[\QQ(\zeta_n):\QQ(\zeta_n)^+]=2.
+$$
+For $n=1,2$, the cyclotomic field is already $\QQ$, so this index is $1$.
 
-For an odd prime $p$, $(\mathbb Z/p\mathbb Z)^\times$ is cyclic, hence has a unique subgroup of index $2$; correspondingly $\mathbb Q(\zeta_p)$ has a unique quadratic subfield,
-\[
-\mathbb Q\!\left(\sqrt{(-1)^{(p-1)/2}p}\right).
-\]
-Finally, the Kronecker--Weber theorem states that every finite abelian extension of $\mathbb Q$ is contained in some cyclotomic field.
+For an odd prime $p$, $(\ZZ/p\ZZ)^\times$ is cyclic, hence has a unique subgroup of index $2$; correspondingly $\QQ(\zeta_p)$ has a unique quadratic subfield,
+$$
+\QQ\!\left(\sqrt{(-1)^{(p-1)/2}p}\right).
+$$
+Finally, the Kronecker--Weber theorem states that every finite abelian extension of $\QQ$ is contained in some cyclotomic field.
 :::
