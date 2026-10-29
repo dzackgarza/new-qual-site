@@ -61,12 +61,6 @@ This is the open-cover definition of compactness, using the terms defined in ste
 
 :::
 
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} give the requested definitions.
-
-:::
-
 :::
 
 :::
