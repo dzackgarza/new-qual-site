@@ -117,7 +117,7 @@ For everything that follows, assume $G$ is a finite group.
 
 ### Symmetric groups
 
-[[P-DUVZD]] [[P-VGFA7]]
+[[P-AMH-ALG-SG16-13]] [[P-VGFA7]]
 
 ### Matrix groups
 
