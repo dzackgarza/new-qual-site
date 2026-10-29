@@ -26,7 +26,7 @@ What is the generalisation of this to operators on a Hilbert space?
 ::: {.solution}
 The generalization of $z=e^{i\theta}\abs{z}$ is the polar decomposition.
 Let $H$ be a complex Hilbert space, $T\in B(H)$, and $|T|=\sqrt{T^*T}$, the unique positive square root of the positive operator $T^*T$.
-A \dfn{partial isometry} is an operator $U$ that is isometric on $(\ker U)^\perp$.
+Recall that a [[D-W4KQ7|partial isometry]] is an operator $U$ that is isometric on $(\ker U)^\perp$.
 
 ::: pf
 
