@@ -41,24 +41,24 @@ $$
 
 ::: pf-step
 
-Prove continuity at an arbitrary $x_0\in(0,1)$ directly from the definition.
+(1) $f$ is continuous at every $x_0\in(0,1)$.
 
 ::: pf-proof
 
 Fix $x_0\in(0,1)$ and $\varepsilon>0$. For $x\in(0,1)$,
 $$
 \begin{aligned}
-|f(x)-f(x_0)|
-&=\left|\frac{x}{1-x^2}-\frac{x_0}{1-x_0^2}\right|\\
-&=\frac{|x-x_0|\,|1+x x_0|}{(1-x^2)(1-x_0^2)}.
+\abs{f(x)-f(x_0)}
+&=\abs{\frac{x}{1-x^2}-\frac{x_0}{1-x_0^2}}\\
+&=\frac{\abs{x-x_0}\,\abs{1+x x_0}}{(1-x^2)(1-x_0^2)}.
 \end{aligned}
 $$
 Choose
 $$
 \delta
-:=\min\left\{\frac{1-x_0}{2},\frac{\varepsilon(1-x_0)^2}{4}\right\}.
+\coloneqq\min\left\{\frac{1-x_0}{2},\frac{\varepsilon(1-x_0)^2}{4}\right\}.
 $$
-If $|x-x_0|<\delta$, then
+If $\abs{x-x_0}<\delta$, then
 $$
 x<x_0+\frac{1-x_0}{2}=\frac{1+x_0}{2},
 $$
@@ -66,7 +66,7 @@ so
 $$
 1-x>\frac{1-x_0}{2}.
 $$
-Also $1+x\ge1$, $1+x_0\ge1$, and $|1+x x_0|\le2$. Hence
+Also $1+x\ge1$, $1+x_0\ge1$, and $\abs{1+x x_0}\le2$. Hence
 $$
 (1-x^2)(1-x_0^2)
 =(1-x)(1+x)(1-x_0)(1+x_0)
@@ -74,8 +74,8 @@ $$
 $$
 Therefore
 $$
-|f(x)-f(x_0)|
-\le \frac{4|x-x_0|}{(1-x_0)^2}
+\abs{f(x)-f(x_0)}
+\le \frac{4\abs{x-x_0}}{(1-x_0)^2}
 <\varepsilon.
 $$
 Thus $f$ is continuous at $x_0$. Since $x_0$ was arbitrary, $f$ is continuous on $(0,1)$.
@@ -86,7 +86,7 @@ Thus $f$ is continuous at $x_0$. Since $x_0$ was arbitrary, $f$ is continuous on
 
 ::: pf-step
 
-$f$ is not uniformly continuous on $(0,1)$.
+(2) $f$ is not uniformly continuous on $(0,1)$.
 
 ::: pf-proof
 
@@ -98,7 +98,7 @@ y_n=\frac{n+1}{n+2}.
 $$
 Then
 $$
-|x_n-y_n|=\frac{1}{(n+1)(n+2)}\longrightarrow0.
+\abs{x_n-y_n}=\frac{1}{(n+1)(n+2)}\longrightarrow0.
 $$
 On the other hand,
 $$
@@ -108,15 +108,15 @@ f(y_n)=\frac{(n+1)(n+2)}{2n+3},
 $$
 so
 $$
-|f(y_n)-f(x_n)|
+\abs{f(y_n)-f(x_n)}
 =\frac{2(n+1)^2}{(2n+1)(2n+3)}
 \longrightarrow\frac12.
 $$
 If $f$ were uniformly continuous, taking $\varepsilon=1/4$ would force
 $$
-|f(y_n)-f(x_n)|<\frac14
+\abs{f(y_n)-f(x_n)}<\frac14
 $$
-for all sufficiently large $n$, because $|x_n-y_n|\to0$. This contradicts the displayed limit. Therefore
+for all sufficiently large $n$, because $\abs{x_n-y_n}\to0$. This contradicts the displayed limit. Therefore
 $$
 \boxed{f\text{ is not uniformly continuous on }(0,1)}.
 $$
