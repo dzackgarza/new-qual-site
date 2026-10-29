@@ -61,14 +61,14 @@ A ring $R\neq 0$ is a field if and only if its only ideals are $0$ and $R$.
 [[PR-DDDXH]]
 
 ::: {.proof}
-$\implies$: If $0\neq x\in I\normal R$ and every nonzero element is a unit, then $1 = \inverseof{x} x \in I$, so $I = R$.
+$\implies$: If $I$ is an ideal of $R$ containing some $x\neq 0$ and every nonzero element of $R$ is a unit, then $1 = \inverseof{x} x \in I$, so $I = R$.
 
 $\impliedby$: For $x\in \nonzeroof{R}$, the ideal $Rx$ is nonzero, so $Rx = R$, and $1 = rx$ for some $r\in R$; hence $x$ is a unit.
 :::
 
 ## Radicals
 
-The [[D-JLCOX|radical]] of an ideal $I$ is $\sqrt I = \theset{x\in R \st x^n\in I \text{ for some } n\geq 1}$.
+Recall that the [[D-JLCOX|radical]] of an ideal $I$ is $\sqrt I = \theset{x\in R \st x^n\in I \text{ for some } n\geq 1}$.
 The [[D-C2IM4|nilradical]] $\sqrt{(0)}$ is the set of nilpotent elements, it equals $\Intersect_{\mfp\in\Spec R}\mfp$, and $R/\sqrt{(0)}$ is reduced.
 The [[D-2IO6Q|Jacobson radical]] $J(R)$ is the intersection of the maximal ideals, and $x\in J(R)$ if and only if $1-rx$ is a unit for every $r\in R$.
 
