@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-6-05
 kind: problem
-title: Maxim algebraic topology 6.5
+title: $\RP^n$ does not embed in $\RR^{2n-1}$ when $n$ is a power of $2$
 classification:
   areas: [topology]
   topics: []
