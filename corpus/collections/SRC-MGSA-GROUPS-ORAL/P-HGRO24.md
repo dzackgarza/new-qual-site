@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO24
 kind: problem
-title: Finite p-groups are solvable
+title: Finite $p$-groups are solvable
 classification:
   areas: [algebra]
   topics: [Solvable Groups]
