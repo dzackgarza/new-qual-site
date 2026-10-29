@@ -135,7 +135,7 @@ Slits:
 
 Strips:
 
-[[P-RMH6X]]
+[[P-PPWDW]]
 
 Lunes:
 

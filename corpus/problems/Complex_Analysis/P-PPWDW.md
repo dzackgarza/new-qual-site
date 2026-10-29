@@ -65,3 +65,7 @@ $T$ is entire, and by steps [](#onto){.pf-ref} and [](#injective){.pf-ref} it is
 :::
 
 :::
+
+::: {.remark}
+Equivalently, factor the map: $z\mapsto\pi z$ takes $S$ onto the strip $\theset{0<\Im z<\pi}$, and $\exp$ takes that strip onto $\HH$ with inverse the principal logarithm $\Log w=\ln\abs w+i\Arg w$.
+:::
