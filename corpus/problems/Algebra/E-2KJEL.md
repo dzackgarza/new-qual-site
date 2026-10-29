@@ -45,23 +45,32 @@ B_1=\begin{pmatrix}5&-1\\9&-1\end{pmatrix},
 B_2=\begin{pmatrix}7&-2\\12&-3\end{pmatrix}.
 $$
 
-For $B_1$,
-$$
-\chi_{B_1}(t)=(t-5)(t+1)+9=(t-2)^2.
-$$
-Moreover
+::: pf
+
+::: {.pf-step #block-1}
+$B_1$ has Jordan form $J_2(2)$.
+
+::: pf-proof
+$\chi_{B_1}(t)=(t-5)(t+1)+9=(t-2)^2$, and
 $$
 B_1-2I=\begin{pmatrix}3&-1\\9&-3\end{pmatrix}
 $$
-has rank $1$, so the eigenspace for $2$ is one-dimensional. Hence $B_1$ contributes one Jordan block $J_2(2)$.
+has rank $1$, so the eigenspace for $2$ is one-dimensional and there is one Jordan block.
+:::
 
-For $B_2$,
-$$
-\chi_{B_2}(t)=(t-7)(t+3)+24=t^2-4t+3=(t-1)(t-3),
-$$
-so $B_2$ has two distinct eigenvalues and is diagonalizable.
+:::
 
-Therefore, up to ordering of Jordan blocks,
+::: {.pf-step #block-2}
+$B_2$ has Jordan form $\operatorname{diag}(1,3)$.
+
+::: pf-proof
+$\chi_{B_2}(t)=(t-7)(t+3)+24=t^2-4t+3=(t-1)(t-3)$ has distinct roots, so $B_2$ is diagonalizable.
+:::
+
+:::
+
+::: pf-step
+Up to the order of the Jordan blocks,
 $$
 \boxed{
 \operatorname{JCF}(B)=
@@ -72,4 +81,13 @@ $$
 0&0&0&3
 \end{pmatrix}.}
 $$
+
+::: pf-proof
+The Jordan form of a block-diagonal matrix is the direct sum of the Jordan forms of its blocks, given by steps [](#block-1){.pf-ref} and [](#block-2){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::
