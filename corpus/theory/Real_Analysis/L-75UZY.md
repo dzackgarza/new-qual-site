@@ -26,5 +26,5 @@ $$
 Given $N$, for $\delta$ small enough neither index set contains any $n\le N$, so both sums are at most $\sum_{n>N}2^{-n}=2^{-N}$.
 Hence $\lim_{t\to x^-}f(t)=f(x)$ and $\lim_{t\to x^+}f(t)=g(x)$.
 If $x=q_n$, then $g(x)-f(x)=2^{-n}>0$; if $x\notin\QQ$, then $g(x)=f(x)$.
-So $f$ is discontinuous at every rational and [[D-HHVPT|continuous]] at every irrational.
+So $f$ is discontinuous at every rational and [[D-WGYSB|continuous]] at every irrational.
 :::

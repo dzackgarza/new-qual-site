@@ -9,8 +9,6 @@ order: 10
 
 [[D-HOKQD]]
 
-[[D-HHVPT]]
-
 [[D-WGYSB]]
 
 ::: {.remark}

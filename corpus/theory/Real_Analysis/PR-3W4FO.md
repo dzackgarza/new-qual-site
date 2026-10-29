@@ -28,7 +28,7 @@ converges absolutely for every $x\in\RR^d$, satisfies
 $$
 \sup_{x\in\RR^d}\abs{(f*g)(x)}\le \norm{f}_p\norm{g}_q,
 $$
-and is [[D-HHVPT|uniformly continuous]] on $\RR^d$.
+and is [[D-WGYSB|uniformly continuous]] on $\RR^d$.
 :::
 
 ::: {.proof}

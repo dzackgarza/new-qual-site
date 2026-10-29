@@ -16,7 +16,7 @@ review: draft
 
 ::: {.proposition}
 Let $I\subseteq\RR$ be an open interval, let $f\colon I\to\RR$, and let $x_0\in I$.
-If $f$ is differentiable at $x_0$, then $f$ is [[D-HHVPT|continuous]] at $x_0$.
+If $f$ is differentiable at $x_0$, then $f$ is [[D-WGYSB|continuous]] at $x_0$.
 :::
 
 ::: {.proof}
