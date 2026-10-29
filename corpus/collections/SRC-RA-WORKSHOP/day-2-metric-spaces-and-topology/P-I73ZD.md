@@ -31,166 +31,50 @@ $(M, d_M)$ and $(N, d_N)$, respectively. Prove that $S \times T$
 is a compact set in $(M \times N, d_{M \times N})$.
 :::
 
-::: {.proof}
-*Proof.* To prove that $(M \times N, d_{M \times N})$ is a
-metric space we must prove that $d_{M\times N}$ is a metric on
-$M \times N$.
-
--   Positive Definite-
-
-Let $(x_1,y_1), (x_2,y_2) \in M \times N$. Then since $d_M$
-is a metric on $M$, then $d_M(x_1,x_2)\geq 0$ for all
-$x_i,x_j \in M$ and $d_N$ is a metric on $N$ and likewise
-$d_N(y_1,y_2)\geq 0$ for any $y_i,y_j \in N.$
-
-Then by definition
-$d_{M\times N}((x_1,y_1),(x_2,y_2))=d_M(x_1,x_2)+d_N(y_1,y_2)\geq 0 + 0 =0.$
-Hence since $(x_1,y_1),(x_2,y_2)$ are arbitrary,
-$d_{M\times N}((x_1,y_1),(x_2,y_2))\geq 0$ for all
-$(x_i,y_i),(x_j,y_j)\in M \times N$.
-
-Suppose that $d_{M \times N}((x_1,y_1),(x_2,y_2))=0.$ By
-definition
-$d_{M \times N}((x_1,y_1),(x_2,y_2))=d_M(x_1,x_2)+d_N(y_1,y_2)$.
-Therefore $d_M(x_1,x_2)+d_N(y_1,y_2)=0$, since $d_M, d_N$
-are metrics, then $d_M(x_1,x_2)\geq 0, d_N(y_1,y_2)\geq 0$,
-which implies that $d_M(x_1,x_2)=d_N(y_1,y_2)=0$ and also
-since they are metrics we have that $x_1=x_2, y_1=y_2.$
-Hence, $(x_1,y_1)=(x_2,y_2).$
-
-Now suppose that $(x_1,y_1)=(x_2,y_2).$ Then
-$x_1=x_2, y_1=y_2$ and for the metrics $d_M, d_N$ we would
-have $d_M(x_1,x_2)=0, d_N(y_1,y_2)=0.$ Thus
-$d_{M \times N}((x_1,y_1),(x_2,y_2))=d_M(x_1,x_2)+d_N(y_1,y_2)=0+0=0$.
-
-Therefore $d_{M \times N}((x_1,y_1),(x_2,y_2))=0$ if and
-only if $(x_1,y_1)=(x_2,y_2).$
-
--   Symmetric
-
-Let $(x_1,y_1), (x_2,y_2) \in M \times N$. Then since $d_M$
-is a metric on $M$, then $d_M(x_1,x_2)=d_M(x_2,x_1)$ for all
-$x_i,x_j \in M$ and $d_N$ is a metric on $N$ and likewise
-$d_N(y_1,y_2)=d_N(y_2,y_1)$ for any $y_i,y_j \in N.$
-Therefore, $$\begin{aligned}
-d_{M \times N}((x_1,y_1),(x_2,y_2))&=d_M(x_1,x_2)+d_N(y_1,y_2)\\
-&=d_M(x_2,x_1)+d_N(y_2,y_1)\\
-&=d_{M \times N}((x_2,y_2),(x_1,y_1)).
-\end{aligned}$$
-
--   Triangle Inequality
-
-Since $d_M, d_N$ are metrics then for all
-$x_1,x_2,x_3 \in M, y_1,y_2,y_3 \in N$ we have that
-$d_M(x_1,x_2)\leq d_M(x_1,x_3)+d_M(x_3,x_2)$ and that
-$d_N(y_1,y_2)\leq d_N(y_1,y_3)+d_N(y_3,y_2).$ Therefore,
-$$\begin{aligned}
-d_{M \times N}((x_1,y_1),(x_2,y_2))&=d_M(x_1,x_2)+d_N(y_1,y_2)\\
-&\leq d_M(x_1,x_3)+d_M(x_3,x_2)+d_N(y_1,y_3)+d_N(y_3,y_2)\\
-&=d_{M \times N}((x_1,y_1),(x_3,y_3))+d_{M \times N}((x_3,y_3),(x_2,y_2)).
-\end{aligned}$$
-
-Therefore $d_{M \times N}$ is a metric on $M \times N$ and
-$(M \times N, d_{M\times N})$ is a metric space. ◻
-:::
-
-::: {.proof}
-*Proof.* By part a we showed that $(M \times N, d_{M \times N})$
-is a metric space. Let $\{s_n,t_n\}$ be a sequence in
-$S \times T.$ Since $\{s_n\}$ is a sequence on a compact set $S$
-in a metric space $(M,d_M)$ then it has a convergent subsequence
-${s_{n_k}}.$ Let $\lim_{k \to \infty}{s_{n_k}}=s_0.$
-
-Since $\{t_{n_k}\}$ is a sequence on a compact set $T$ in a
-metric space. Thus $\{t_{n_k}\}$ has a convergent subsequence
-$\{t_{n_{k_j}}\}.$ Let $\lim_{j\to \infty} t_{n_{k_j}}=t_0.$
-Thus $\{s_{n_{k_j}}\}$ is a subsequence of $\{s_{n_k}\}.$ And
-since $\{s_{n_k}\}$ converges to $s_0$, then any subsequence
-also converges to $s_0.$
-
-Let $\varepsilon >0$ be given. Then for $\varepsilon/2$ there exist
-$N_1, N_2\in \NN$ such that for all
-$j\geq N_1$, $d_M(s_{n_{k_j}},s_0)<\varepsilon/2$, and for all
-$j\geq N_2$, $d_N(t_{n_{k_j}},t_0)<\varepsilon/2$. Choose
-$N=\max\{N_1,N_2\}$.
-
-Then for $j\geq N$,
-$d_{M \times N}((s_{n_{k_j}},t_{n_{k_j}}),(s_0,t_0))=d_M(s_{n_{k_j}},s_0)+d_N(t_{n_{k_j}},t_0)<\varepsilon/2 + \varepsilon/2 = \varepsilon.$
-
-Hence $\{(s_{n_{k_j}},t_{n_{k_j}})$ converges to $(s_0,t_0).$
-Therefore $S \times T$ is sequentially compact and $S \times T$
-is therefore compact. ◻
-:::
 ::: {.solution}
-**Part 1: $d_{M \times N}$ is a metric.**
 
 ::: pf
 
-::: {.pf-step #s1}
-$d_{M\times N} \ge 0$, and $d_{M\times N}((x_1,y_1),(x_2,y_2)) = 0$ iff $(x_1,y_1) = (x_2,y_2)$.
+::: pf-step
 
-::: pf-proof
-$d_{M\times N} = d_M(x_1,x_2) + d_N(y_1,y_2) \ge 0$ with equality iff both $d_M = 0$ and $d_N = 0$, i.e. $x_1 = x_2$ and $y_1 = y_2$ (metrics separate points).
-:::
-
-:::
-
-::: {.pf-step #s2}
-Symmetry: $d_{M\times N}(p, q) = d_{M\times N}(q, p)$ for all $p, q \in M \times N$.
-
-::: pf-proof
-$d_M, d_N$ are symmetric, so the sum is.
-:::
-
-:::
-
-::: {.pf-step #s3}
-Triangle inequality: for $p_i = (x_i, y_i)$, $d_{M\times N}(p_1, p_3) \le d_{M\times N}(p_1, p_2) + d_{M\times N}(p_2, p_3)$.
-
-::: pf-proof
-$d_{M\times N}(p_1,p_3) = d_M(x_1,x_3) + d_N(y_1,y_3) \le (d_M(x_1,x_2) + d_M(x_2,x_3)) + (d_N(y_1,y_2) + d_N(y_2,y_3))$ by the triangle inequalities in $M$ and $N$; regroup.
-:::
-
-:::
-
-::: pf-qed
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} verify positivity, symmetry, and the triangle inequality for $d_{M\times N}$, so $(M\times N, d_{M\times N})$ is a metric space.
-:::
-
-:::
-
-**Part 2: $S \times T$ is compact.**
-
-::: pf
-
-::: {.pf-step #s5}
-Every sequence $((s_k, t_k)) \subseteq S \times T$ has a convergent subsequence.
+$(M\times N, d_{M\times N})$ is a metric space.
 
 ::: pf-proof
 
 ::: pf-step
-$(s_k)$ has a convergent subsequence $s_{k_j} \to s \in S$.
+
+$d_{M\times N} \ge 0$, and $d_{M\times N}((x_1,y_1),(x_2,y_2)) = 0$ if and only if $(x_1,y_1) = (x_2,y_2)$.
 
 ::: pf-proof
-$S$ is compact (metric, hence sequentially compact).
+
+$d_{M\times N}((x_1,y_1),(x_2,y_2)) = d_M(x_1,x_2) + d_N(y_1,y_2)$ is a sum of two nonnegative numbers, so it vanishes if and only if $d_M(x_1,x_2) = 0$ and $d_N(y_1,y_2) = 0$, that is, $x_1 = x_2$ and $y_1 = y_2$.
+
 :::
 
 :::
 
 ::: pf-step
-$(t_{k_j})$ has a further convergent subsequence $t_{k_{j_l}} \to t \in T$.
+
+$d_{M\times N}(p, q) = d_{M\times N}(q, p)$ for all $p, q \in M \times N$.
 
 ::: pf-proof
-$T$ is compact.
+
+$d_M$ and $d_N$ are symmetric, so their sum is.
+
 :::
 
 :::
 
 ::: pf-step
-$(s_{k_{j_l}}, t_{k_{j_l}}) \to (s, t) \in S \times T$ in $d_{M\times N}$.
+
+$d_{M\times N}(p_1, p_3) \le d_{M\times N}(p_1, p_2) + d_{M\times N}(p_2, p_3)$ for $p_i = (x_i, y_i)$.
 
 ::: pf-proof
-$d_{M\times N}((s_{k_{j_l}},t_{k_{j_l}}),(s,t)) = d_M(s_{k_{j_l}}, s) + d_N(t_{k_{j_l}}, t) \to 0$.
+
+By the triangle inequalities in $M$ and $N$,
+$$d_{M\times N}(p_1,p_3) = d_M(x_1,x_3) + d_N(y_1,y_3) \le d_M(x_1,x_2) + d_M(x_2,x_3) + d_N(y_1,y_2) + d_N(y_2,y_3),$$
+and the right side regroups as $d_{M\times N}(p_1, p_2) + d_{M\times N}(p_2, p_3)$.
+
 :::
 
 :::
@@ -200,13 +84,42 @@ $d_{M\times N}((s_{k_{j_l}},t_{k_{j_l}}),(s,t)) = d_M(s_{k_{j_l}}, s) + d_N(t_{k
 :::
 
 ::: pf-step
-$S \times T$ is compact.
+
+$S \times T$ is compact in $(M\times N, d_{M\times N})$.
 
 ::: pf-proof
-Step [](#s5){.pf-ref} shows that $S \times T$ is sequentially compact, and in a metric space sequential compactness is equivalent to compactness.
+
+In a metric space compactness is equivalent to sequential compactness, so it suffices to show that every sequence $((s_k, t_k))$ in $S \times T$ has a subsequence converging in $S\times T$.
+
+::: pf-step
+
+Some subsequence satisfies $s_{k_j} \to s \in S$ and $t_{k_j} \to t \in T$.
+
+::: pf-proof
+
+$S$ is sequentially compact, so $(s_k)$ has a subsequence converging to some $s \in S$.
+$T$ is sequentially compact, so the corresponding subsequence of $(t_k)$ has a further subsequence converging to some $t \in T$; along it the first coordinates still converge to $s$.
+
+:::
+
+:::
+
+::: pf-step
+
+Along that subsequence, $(s_{k_j}, t_{k_j}) \to (s, t)$ in $d_{M\times N}$.
+
+::: pf-proof
+
+$d_{M\times N}((s_{k_j},t_{k_j}),(s,t)) = d_M(s_{k_j}, s) + d_N(t_{k_j}, t) \to 0$.
+
+:::
+
 :::
 
 :::
 
 :::
+
+:::
+
 :::
