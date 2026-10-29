@@ -6,7 +6,7 @@ title: Translation-invariant subspaces of $L^1$ as convolution algebras relative
   $L^2$
 classification:
   areas:
-  - algebra
+  - real-analysis
   topics:
   - Convolution
   - Function Spaces
