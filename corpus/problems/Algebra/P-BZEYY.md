@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-- Show that every permutation in $S_n$ can be written as a product of pairwise disjoint cycles.
+Show that every permutation in $S_n$ can be written as a product of pairwise disjoint cycles.
 :::
 
 ::: {.solution}
@@ -47,13 +47,13 @@ Each nontrivial orbit determines a cycle.
 ::: pf-proof
 
 If
-\[
+$$
 \mathcal O=\{a,\sigma(a),\ldots,\sigma^{r-1}(a)\}
-\]
+$$
 with $r$ minimal such that $\sigma^r(a)=a$, define
-\[
+$$
 c_{\mathcal O}=(a\ \sigma(a)\ \cdots\ \sigma^{r-1}(a)).
-\]
+$$
 On this orbit, $c_{\mathcal O}$ agrees with $\sigma$.
 
 :::
