@@ -90,7 +90,7 @@ Substitute: $F(0) = w/1$ and $F(w) = 0/(1-\abs w^2)$.
 :::
 
 ::: pf-step
-$F\circ F = \mathrm{id}_{\DD}$, so $F:\DD\to\DD$ is bijective.
+$F\circ F = \id_{\DD}$, so $F:\DD\to\DD$ is bijective.
 
 ::: pf-proof
 Multiplying numerator and denominator of $F(F(z)) = \frac{w - F(z)}{1 - \bar w F(z)}$ by $1 - \bar w z$ gives
