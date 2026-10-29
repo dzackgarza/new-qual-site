@@ -25,14 +25,14 @@ audit:
 ::: {.problem}
 Let $A=(a_{ij})\in F^{m\times n}$, let $\mathbf x=(x_1,\dots,x_n)^t\in F^n$, and let $\mathbf b=(b_1,\dots,b_m)^t\in F^m$.
 Prove that the matrix equation
-\[
+$$
 A\mathbf x=\mathbf b
-\]
+$$
 is equivalent to the system of linear equations
-\[
+$$
 a_{i1}x_1+\cdots+a_{in}x_n=b_i,
 \qquad i=1,\dots,m.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -43,9 +43,9 @@ Let $\mathbf a_i=(a_{i1},\dots,a_{in})$ be the $i$th row of $A$.
 ::: {.pf-step #s1}
 
 The $i$th coordinate of $A\mathbf x$ is
-\[
+$$
 \sum_{j=1}^n a_{ij}x_j.
-\]
+$$
 
 ::: pf-proof
 
@@ -62,9 +62,9 @@ If $A\mathbf x=\mathbf b$, then $x_1,\dots,x_n$ satisfy the displayed system.
 ::: pf-proof
 
 Equality of the two vectors implies equality of their $i$th coordinates for every $i$. By step [](#s1){.pf-ref},
-\[
+$$
 \sum_{j=1}^n a_{ij}x_j=b_i
-\]
+$$
 for each $i=1,\dots,m$.
 
 :::
