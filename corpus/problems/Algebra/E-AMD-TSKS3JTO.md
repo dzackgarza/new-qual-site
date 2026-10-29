@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that $x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i$ of degree $d$ dividing $n$.
+Let $p$ be a prime and $n \geq 1$. Show that in $\FF_p[x]$, $x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i \in \FF_p[x]$ of degree $d$ dividing $n$.
 :::
 
 
@@ -37,11 +37,11 @@ The roots of $x^{p^n}-x$ are exactly the elements fixed by the $n$th power of Fr
 
 ::: pf-proof
 For $\alpha\in\overline{\FF}_p$,
-\[
+$$
 \alpha^{p^n}-\alpha=0
 \quad\Longleftrightarrow\quad
 \alpha^{p^n}=\alpha.
-\]
+$$
 These fixed points form the finite field $\FF_{p^n}$.
 :::
 
@@ -52,9 +52,9 @@ The polynomial $x^{p^n}-x$ is squarefree.
 
 ::: pf-proof
 Its derivative in characteristic $p$ is
-\[
+$$
 \frac{d}{dx}(x^{p^n}-x)=p^n x^{p^n-1}-1=-1,
-\]
+$$
 so it has no repeated roots.
 :::
 
@@ -65,17 +65,17 @@ Let $f\in\FF_p[x]$ be monic irreducible of degree $d$, and let $\alpha$ be a roo
 
 ::: pf-proof
 The roots of $f$ are the Frobenius conjugates
-\[
+$$
 \alpha,\alpha^p,\ldots,\alpha^{p^{d-1}},
-\]
+$$
 and $d$ is the least positive integer with $\alpha^{p^d}=\alpha$. Hence
-\[
+$$
 f\mid x^{p^n}-x
 \quad\Longleftrightarrow\quad
 \alpha^{p^n}=\alpha
 \quad\Longleftrightarrow\quad
 d\mid n.
-\]
+$$
 Indeed, writing $n=qd+r$ with $0\le r<d$, the equality $\alpha^{p^n}=\alpha$ and $\alpha^{p^d}=\alpha$ imply $\alpha^{p^r}=\alpha$; minimality of $d$ forces $r=0$.
 :::
 
@@ -83,9 +83,9 @@ Indeed, writing $n=qd+r$ with $0\le r<d$, the equality $\alpha^{p^n}=\alpha$ and
 
 ::: pf-step
 Therefore
-\[
+$$
 x^{p^n}-x=\prod_{\substack{f\text{ monic irreducible in }\FF_p[x]\\ \deg f\mid n}} f(x).
-\]
+$$
 
 ::: pf-proof
 By step [](#irreducible-divides-iff-degree-divides-n){.pf-ref}, the irreducible divisors are exactly the displayed factors. By step [](#xpn-x-squarefree){.pf-ref}, each occurs with multiplicity one. Since both sides are monic, their irreducible factorizations agree exactly.
