@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: P-ETEJW
 kind: problem
-title: Rational and Jordan forms with given minimal polynomials over $\mathbb{Q}$
-  and $\mathbb{C}$
+title: Rational and Jordan forms with given minimal polynomials over $\QQ$
+  and $\CC$
 classification:
   areas:
   - algebra
@@ -20,13 +20,13 @@ audit:
 ---
 
 ::: {.problem}
-Find all possible rational canonical forms for a matrix $A\in M_n(\Bbb Q)$ such that
+Find all possible rational canonical forms for a matrix $A\in M_n(\QQ)$ such that
 
-1. $A$ is $6\times 6$ with minimal polynomial $q(x) = (x-2)^2(x+3)$.
+(a) $A$ is $6\times 6$ with minimal polynomial $q(x) = (x-2)^2(x+3)$.
 
-2. $A$ is $7\times 7$ with $q(x) = (x^2+1)(x-7)$.
+(b) $A$ is $7\times 7$ with $q(x) = (x^2+1)(x-7)$.
 
-Also find all such forms when $A \in M_n(\Bbb C)$ instead, and find all possible Jordan Canonical Forms over $\Bbb C$.
+Also find all such forms when $A \in M_n(\CC)$ instead, and find all possible Jordan Canonical Forms over $\CC$.
 :::
 
 ::: {.solution}
@@ -44,7 +44,7 @@ $$\begin{aligned}
 
 ::: pf-proof
 
-The factors $a_1,\dots,a_{k-1}$ divide $q$ and have degrees summing to $3$.
+The factors $a_1,\ldots,a_{k-1}$ divide $q$ and have degrees summing to $3$.
 The proper monic divisors of $q$ are $x-2$, $x+3$, $(x-2)^2$ and $(x-2)(x+3)$.
 A chain of two factors has degrees $1,2$, giving $(x-2)\mid(x-2)^2$, $(x-2)\mid(x-2)(x+3)$ or $(x+3)\mid(x-2)(x+3)$; a chain of three factors of degree $1$ is constant, giving $(x-2)^3$ or $(x+3)^3$; a single factor of degree $3$ is $q$.
 Since $q$ splits over $\QQ$, the lists over $\CC$ are the same.
@@ -85,7 +85,7 @@ The factors before $q$ form a divisibility chain with degrees summing to $4$: fo
 
 ::: pf-step
 
-Over $\CC$, every such $A$ is diagonalizable with Jordan form $\operatorname{diag}(i^{(m_1)},(-i)^{(m_2)},7^{(m_3)})$, where $m_1,m_2,m_3\ge1$ and $m_1+m_2+m_3=7$; there are $\binom62=15$ of them.
+Over $\CC$, every such $A$ is diagonalizable with Jordan form $\diag(i^{(m_1)},(-i)^{(m_2)},7^{(m_3)})$, where $m_1,m_2,m_3\ge1$ and $m_1+m_2+m_3=7$; there are $\binom62=15$ of them.
 
 ::: pf-proof
 
