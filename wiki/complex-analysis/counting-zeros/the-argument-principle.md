@@ -21,7 +21,7 @@ $$
 &= \logd (z-z_0)^m + \logd g(z) \\
 &= {m\over (z-z_0)} + {g'(z) \over g(z)}
 \end{aligned}.$$
-Since $g$ is holomorphic and nonvanishing there, so is $g'/g$, and the only contribution at $z_0$ is $m$.
+Since $g$ is holomorphic and nonvanishing there, $g'/g$ is holomorphic there, and the only contribution at $z_0$ is $m$.
 
 :::
 
