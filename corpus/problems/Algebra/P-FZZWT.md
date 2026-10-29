@@ -28,17 +28,17 @@ Do you know what the trace of a group representation is?
 
 ::: {.solution}
 A finite-dimensional representation of a group $G$ over a field $F$ is a homomorphism
-\[
-\rho:G\to\operatorname{GL}(V)
-\]
+$$
+\rho:G\to\GL(V)
+$$
 for some finite-dimensional $F$-vector space $V$.
 
 The trace attached to the representation is its character
-\[
+$$
 \chi_\rho:G\to F,
 \qquad
-\chi_\rho(g)=\operatorname{tr}(\rho(g)).
-\]
+\chi_\rho(g)=\tr(\rho(g)).
+$$
 
 ::: pf
 
@@ -49,13 +49,13 @@ The character is constant on conjugacy classes.
 ::: pf-proof
 
 For $g,h\in G$,
-\[
+$$
 \rho(hgh^{-1})=\rho(h)\rho(g)\rho(h)^{-1}.
-\]
+$$
 Trace is invariant under similarity, so
-\[
+$$
 \chi_\rho(hgh^{-1})=\chi_\rho(g).
-\]
+$$
 
 :::
 
@@ -68,9 +68,9 @@ Isomorphic representations have the same character.
 ::: pf-proof
 
 If $\rho_1$ and $\rho_2$ are isomorphic, then for some invertible $T$,
-\[
+$$
 \rho_2(g)=T\rho_1(g)T^{-1}
-\]
+$$
 for every $g$. Again trace is similarity-invariant.
 
 :::
