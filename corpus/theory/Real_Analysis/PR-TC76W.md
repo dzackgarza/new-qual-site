@@ -54,8 +54,6 @@ Every $x\in[0,1]$ lies in some $I_{k,j}$ and outside some $I_{k,j'}$ for each $k
 ![Graphs of $f_1, \ldots, f_6$: unit-height indicators of $[0,1/2]$, $[1/2,1]$, then $[0,1/4]$, $[1/4,1/2]$, $[1/2,3/4]$, $[3/4,1]$, sweeping across $[0,1]$ with halving width](../../assets/figures/image_2021-05-21-16-49-09.png)
 :::
 
-::: {.example}
-Almost everywhere convergence does not imply convergence in $L^p(\RR)$ for any $1\leq p\leq\infty$.
-The functions $f_k\coloneqq\chi_{[k,k+1]}$ converge to $0$ at every point, but $\norm{f_k}_p=1$ for all $k$ and all $1\leq p\leq\infty$.
-The functions $f_k\coloneqq k\chi_{[0,1/k]}$ converge to $0$ at every $x\neq0$, but $\norm{f_k}_p=k^{1-1/p}\geq1$ for $1\leq p<\infty$ and $\norm{f_k}_\infty=k$.
+::: {.remark}
+The sequences $\chi_{(n,n+1)}$ and $n\chi_{[0,1/n]}$ above also show that almost everywhere convergence does not imply $L^p$ convergence for any $1\le p\le\infty$ ([[PR-2JV43]]).
 :::

@@ -4,6 +4,8 @@ id: T-5AALA
 kind: theorem
 title: Parseval's theorem for orthonormal families
 slogan: 'For an orthonormal family, completeness, Parseval equality, and norm-convergent Fourier expansion are equivalent.'
+prompts:
+- State Parseval's identity, and say when Bessel's inequality becomes it.
 classification:
   areas:
   - real-analysis
@@ -32,4 +34,9 @@ $$
 x = \sum_{n\in A} \inner{x}{u_n}u_n ,
 $$
 with the series converging in norm in any enumeration of its nonzero terms; and if $x=\sum_{n\in A}c_nu_n$ for scalars $c_n$, only countably many nonzero, then $c_n=\inner{x}{u_n}$ for all $n$.
+:::
+
+::: {.remark title="Variations"}
+For an [[D-AQX7W|orthonormal basis]] $(e_k)_{k\geq1}$ of $\mch$, Parseval's identity reads $\sum_{k\geq1}\abs{\inner{x}{e_k}}^2=\norm{x}^2$ for every $x\in\mch$.
+It is the case of equality in [[T-4BDE3|Bessel's inequality]], which gives $\sum_{n\in A}\abs{\inner{x}{u_n}}^2\le\norm{x}^2$ for every [[D-4IXAO|orthonormal]] family; by the theorem, equality holds for every $x$ exactly when the family is [[D-SLYE5|complete]].
 :::

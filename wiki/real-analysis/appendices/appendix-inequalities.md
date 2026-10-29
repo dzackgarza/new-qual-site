@@ -60,7 +60,7 @@ For sequences, if $x\in\ell^p$ then $x_n\to0$, so $\abs{x_n}\leq1$ for $n\geq N$
 
 [[T-4BDE3]]
 
-[[PR-ZI7M3]]
+[[T-5AALA]]
 
 ::: {.remark title="Parseval's identity for Fourier series"}
 For $f\in L^2(-\pi,\pi)$ and the orthonormal basis $\theset{e^{ikx}/\sqrt{2\pi}}_{k\in\ZZ}$, Parseval's identity reads
