@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-4-03
 kind: problem
-title: Maxim algebraic topology 4.3
+title: Homology and cohomology ring of the loop space $\Omega S^n$
 classification:
   areas: [topology]
   topics: []
