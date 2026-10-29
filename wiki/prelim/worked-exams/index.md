@@ -1,11 +1,11 @@
 ---
-title: Worked exams
+title: UGA prelim exams
 order: 4
 ---
 
-# Worked exams
+# UGA prelim exams
 
-UGA prelim exams, one page per exam.
+One page per exam; each links the exam's problems in exam order.
 
 - [[prelim/worked-exams/fall-2014|Fall 2014]].
 
@@ -15,4 +15,4 @@ UGA prelim exams, one page per exam.
 
 - [[prelim/worked-exams/fall-2017|Fall 2017]].
 
-- [[prelim/worked-exams/all|Qualifying exam review]] -- links to the four exams.
+- [[prelim/worked-exams/all|UGA prelim exams, Fall 2014 to Fall 2017]] -- the four exams, newest first.

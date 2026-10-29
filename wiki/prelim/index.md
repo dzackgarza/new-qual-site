@@ -22,7 +22,7 @@ Undergraduate calculus, analysis, linear algebra, and abstract algebra.
 
 - [[prelim/counterexamples|Counterexamples]] -- counterexamples to false statements in analysis and algebra.
 
-- [[prelim/worked-exams/index|Worked exams]] -- UGA prelims, one page per exam.
+- [[prelim/worked-exams/index|UGA prelim exams]] -- one page per exam, linking its problems in exam order.
 
 - [[prelim/problems/index|Problems]] -- the Berkeley and UCLA exam archives and an integral practice sheet.
 
