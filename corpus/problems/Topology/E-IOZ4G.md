@@ -25,25 +25,42 @@ Show that any topological space $X$ equipped with the indiscrete (trivial) topol
 :::
 
 ::: {.solution}
-If $X=\varnothing$, then $X$ itself is a countable dense subset. Assume $X\ne\varnothing$ and choose $x\in X$.
 
 ::: pf
 
 ::: pf-step
 
-In the indiscrete topology, the only nonempty open set is $X$.
+If $X=\varnothing$, then $X$ is separable.
+
+::: pf-proof
+
+The empty set is a countable dense subset of itself.
+
+:::
+
+:::
+
+::: {.pf-step #dense}
+
+If $X\ne\varnothing$, every nonempty subset of $X$ is dense.
+
+::: pf-proof
+
+In the indiscrete topology the only nonempty open set is $X$, and every nonempty subset meets $X$.
+
+:::
 
 :::
 
 ::: pf-step
 
-Hence every nonempty subset of $X$ meets every nonempty open set, so every nonempty subset is dense.
+If $X\ne\varnothing$, then $X$ is separable.
+
+::: pf-proof
+
+Choose $x\in X$. By step [](#dense){.pf-ref}, the finite set $\{x\}$ is dense.
 
 :::
-
-::: pf-step
-
-In particular, the singleton $\{x\}$ is finite and dense. Therefore $X$ is separable.
 
 :::
 
