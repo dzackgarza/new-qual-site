@@ -19,35 +19,53 @@ audit:
 ::: {.problem}
 Use the definition of the derivative to prove that if $f$ and $g$ are differentiable at $x$, then $fg$ is differentiable at $x$.
 :::
+
 ::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1}
-Write the difference quotient of $fg$.
+
+For $h \neq 0$,
+$$
+\frac{(fg)(x+h) - (fg)(x)}{h} = \frac{f(x+h) - f(x)}{h}\,g(x+h) + f(x)\,\frac{g(x+h) - g(x)}{h}.
+$$
 
 ::: pf-proof
-for $h \neq 0$, \[ \frac{(fg)(x+h) - (fg)(x)}{h} = \frac{f(x+h)g(x+h) - f(x)g(x)}{h} = \frac{f(x+h) - f(x)}{h}\,g(x+h) + f(x)\,\frac{g(x+h) - g(x)}{h}. \]
+
+The numerator $f(x+h)g(x+h) - f(x)g(x)$ equals $(f(x+h)-f(x))g(x+h) + f(x)(g(x+h)-g(x))$, as adding and subtracting $f(x)g(x+h)$ shows.
+
 :::
 
 :::
 
 ::: {.pf-step #s2}
+
 $g$ is continuous at $x$.
 
 ::: pf-proof
-$g$ is differentiable at $x$, hence continuous at $x$: $g(x+h) \to g(x)$ as $h \to 0$.
+
+For $h\neq0$, $g(x+h)-g(x) = h\cdot\frac{g(x+h)-g(x)}{h}\to 0\cdot g'(x)=0$ as $h\to0$.
+
 :::
 
 :::
 
 ::: pf-step
-Pass to the limit.
+
+$fg$ is differentiable at $x$ with $(fg)'(x)=f'(x)g(x) + f(x)g'(x)$.
 
 ::: pf-proof
-as $h \to 0$, $\frac{f(x+h)-f(x)}{h} \to f'(x)$, $g(x+h) \to g(x)$ (step [](#s2){.pf-ref}), and $\frac{g(x+h)-g(x)}{h} \to g'(x)$; substituting into step [](#s1){.pf-ref}, \[ \lim_{h\to 0}\frac{(fg)(x+h)-(fg)(x)}{h} = f'(x)g(x) + f(x)g'(x), \] so $fg$ is differentiable at $x$ with derivative $f'(x)g(x) + f(x)g'(x)$.
-:::
+
+As $h \to 0$, $\frac{f(x+h)-f(x)}{h} \to f'(x)$, $g(x+h) \to g(x)$ by step [](#s2){.pf-ref}, and $\frac{g(x+h)-g(x)}{h} \to g'(x)$. Substituting into the identity of step [](#s1){.pf-ref} gives
+$$
+\lim_{h\to 0}\frac{(fg)(x+h)-(fg)(x)}{h} = f'(x)g(x) + f(x)g'(x).
+$$
 
 :::
 
 :::
+
+:::
+
 :::
