@@ -22,40 +22,44 @@ audit:
 ---
 
 ::: {.problem}
-Which is the connection between Hom and tensor product?
-What is this called in representation theory?
+(a) Which is the connection between Hom and tensor product?
+
+(b) What is this called in representation theory?
 :::
 
 ::: {.solution}
-For a commutative ring $R$ and $R$-modules $M,N,P$, there is a natural Hom--tensor adjunction
-\[
-\operatorname{Hom}_R(M\otimes_R N,P)
-\cong
-\operatorname{Hom}_R\!\left(M,\operatorname{Hom}_R(N,P)\right).
-\]
-The isomorphism sends $F:M\otimes_RN\to P$ to the map
-\[
-m\longmapsto(n\mapsto F(m\otimes n)).
-\]
-For noncommutative rings the same statement requires the usual left/right module and bimodule hypotheses.
 
-In representation theory, the corresponding induction--restriction adjunction is **Frobenius reciprocity**. For $H\le G$,
-\[
-\operatorname{Hom}_{\mathbb C[G]}
-\bigl(\mathbb C[G]\otimes_{\mathbb C[H]}V,W\bigr)
-\cong
-\operatorname{Hom}_{\mathbb C[H]}
-\bigl(V,\operatorname{Res}_H^GW\bigr).
-\]
-Since
-\[
-\operatorname{Ind}_H^GV
-=\mathbb C[G]\otimes_{\mathbb C[H]}V,
-\]
-this is usually written
-\[
-\operatorname{Hom}_G(\operatorname{Ind}_H^GV,W)
-\cong
-\operatorname{Hom}_H(V,\operatorname{Res}_H^GW).
-\]
+::: pf
+
+::: pf-step
+(a) For a commutative ring $R$ and $R$-modules $M,N,P$ there is an isomorphism, natural in $M$, $N$ and $P$,
+$$
+\Hom_R(M\otimes_R N,P)\cong\Hom_R\bigl(M,\Hom_R(N,P)\bigr),
+$$
+so $-\otimes_R N$ is left adjoint to $\Hom_R(N,-)$.
+
+::: pf-proof
+The isomorphism sends $F:M\otimes_RN\to P$ to $m\mapsto(n\mapsto F(m\otimes n))$, and its inverse sends $G$ to the map induced by the bilinear map $(m,n)\mapsto G(m)(n)$. For a noncommutative ring the same statement holds with $M$ a right $R$-module, $N$ an $(R,S)$-bimodule and $P$ a right $S$-module.
+:::
+
+:::
+
+::: pf-step
+(b) In representation theory this is Frobenius reciprocity: for $H\le G$, a $\CC[H]$-module $V$ and a $\CC[G]$-module $W$,
+$$
+\Hom_G(\operatorname{Ind}_H^GV,W)\cong\Hom_H(V,\operatorname{Res}_H^GW).
+$$
+
+::: pf-proof
+With $\operatorname{Ind}_H^GV=\CC[G]\otimes_{\CC[H]}V$, this is the adjunction of part (a) for the $(\CC[G],\CC[H])$-bimodule $\CC[G]$:
+$$
+\Hom_{\CC[G]}\bigl(\CC[G]\otimes_{\CC[H]}V,W\bigr)\cong\Hom_{\CC[H]}\bigl(V,\Hom_{\CC[G]}(\CC[G],W)\bigr),
+$$
+and $\Hom_{\CC[G]}(\CC[G],W)\cong\operatorname{Res}_H^GW$.
+:::
+
+:::
+
+:::
+
 :::
