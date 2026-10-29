@@ -17,6 +17,10 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Rewrote the garbled ring R and hint formulas against Problem 3.11 on pp. 2-3 of the Nori Galois Theory Problems PDF, stated the setup of Problems 3.9-3.10, moved the source hint to a hint block, and noted the sign condition in R.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source printed R = {m/2^n : m >= 0, n in Z}, which is not a ring. The statement now defines R = {m/2^n : m in Z, n >= 0} = Z[1/2], the ring the hint uses.
 ---
 
 ::: {.problem}
@@ -26,7 +30,7 @@ Prove that we may choose $P, Q, c$ satisfying
 
 (i) $c$ is a square-free integer, and
 
-(ii) the coefficients of $P$ and $Q$ lie in $R = \{\frac{m}{2^n} : m \geq 0, n \in \mathbb{Z}\}$.
+(ii) the coefficients of $P$ and $Q$ lie in $R = \{\frac{m}{2^n} : m \in \mathbb{Z}, n \geq 0\}$.
 
 Deduce that if $p$ is an odd prime, then $f$ modulo $p$, i.e. its image $\overline{f} \in \mathbb{F}_p[X]$ does not have an irreducible factor of degree $3$.
 
@@ -61,20 +65,9 @@ Examining the degree one coefficient of $f$, we see that the highest power of $p
 Thus case 2 does not occur.
 :::
 
-::: {.remark}
-The source defines $R = \{\frac{m}{2^n} : m \geq 0, n \in \mathbb{Z}\}$, which is not closed under negation; the hint uses $R$ as the ring $\mathbb{Z}[\frac{1}{2}] = \{\frac{m}{2^n} : m \in \mathbb{Z}, n \geq 0\}$ (for instance $f = X^4 - 2X^3 + X^2 - 2 = (X^2 - X)^2 - 2 \cdot 1^2$ is irreducible with $\mathbb{Q}(\sqrt{2}) \subset \mathbb{Q}(\theta)$, and every admissible $Q = X^2 + uX + v$ has $2u = -2$, so $u = -1$ is not in $R$ as printed).
-:::
-
 ::: {.solution}
 
-The source hint uses
-$$
-R=\ZZ\left[\frac12\right]
-=\left\{\frac{m}{2^n}:m\in\ZZ,\ n\ge0\right\}.
-$$
-This is the intended meaning of $R$; the literal set with $m\ge0$ printed in the source is not a ring and cannot contain negative coefficients.
-
-Let
+Note that $R=\ZZ[1/2]$. Let
 $$
 \QQ\subset K\subset E=\QQ(\theta)
 $$
@@ -382,7 +375,7 @@ But $\deg g=3$ while $\overline f$ is monic of degree $4$, a contradiction.
 
 ::: pf-qed
 
-Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} prove conditions (i)--(ii), interpreted with the intended ring $R=\ZZ[1/2]$, and steps [](#s1-9){.pf-ref} through [](#s1-11){.pf-ref} prove the asserted absence of cubic irreducible factors modulo every odd prime.
+Steps [](#s1-1){.pf-ref} through [](#s1-8){.pf-ref} prove conditions (i)--(ii), and steps [](#s1-9){.pf-ref} through [](#s1-11){.pf-ref} prove the asserted absence of cubic irreducible factors modulo every odd prime.
 
 :::
 
