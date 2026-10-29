@@ -26,37 +26,36 @@ Prove that $a^2$ is algebraic over $K$, that $[K(a^2) : K]$ is odd, and that $K(
 :::
 
 ::: {.solution}
-Since $a$ is algebraic over $K$, so is $a^2$, and
-$$
-K\subseteq K(a^2)\subseteq K(a).
-$$
-Hence the tower law gives
-$$
-[K(a):K]
-=[K(a):K(a^2)]\,[K(a^2):K].
-$$
 
-Now $a$ is a root of
-$$
-x^2-a^2\in K(a^2)[x],
-$$
-so
-$$
-[K(a):K(a^2)]\le2.
-$$
-Therefore this degree is either $1$ or $2$. But it divides the odd integer
-$$
-[K(a):K]=2m+1,
-$$
-so it cannot be $2$. Thus
-$$
-[K(a):K(a^2)]=1,
-\qquad
-K(a)=K(a^2).
-$$
-Consequently
-$$
-[K(a^2):K]=[K(a):K]=2m+1,
-$$
-which is odd.
+::: pf
+
+::: {.pf-step #tower}
+$a^2$ is algebraic over $K$, and $[K(a):K]=[K(a):K(a^2)]\,[K(a^2):K]$.
+
+::: pf-proof
+$a^2\in K(a)$, and $K(a)/K$ is finite, so $a^2$ is algebraic over $K$ and $K\subseteq K(a^2)\subseteq K(a)$. The tower law gives the product formula.
+:::
+
+:::
+
+::: {.pf-step #top-degree}
+$K(a)=K(a^2)$.
+
+::: pf-proof
+$a$ is a root of $x^2-a^2\in K(a^2)[x]$, so $[K(a):K(a^2)]\le2$. By step [](#tower){.pf-ref}, this degree divides the odd integer $2m+1$, so it is $1$.
+:::
+
+:::
+
+::: pf-step
+$[K(a^2):K]=2m+1$ is odd.
+
+::: pf-proof
+This follows from step [](#top-degree){.pf-ref}: $[K(a^2):K]=[K(a):K]$.
+:::
+
+:::
+
+:::
+
 :::
