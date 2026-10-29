@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YDJE6
 kind: problem
-title: $\frac{1}{2\pi i}\int_{|z|=2}\frac{z^n}{1-3z\cos\theta+z^2}\,dz=\frac{\sin(n\theta)}{\sin\theta}$
+title: $\frac{1}{2\pi i}\int_{\abs{z}=2}\frac{z^n}{1-2z\cos\theta+z^2}\,dz=\frac{\sin(n\theta)}{\sin\theta}$
 classification:
   areas:
   - complex-analysis
@@ -17,97 +17,55 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: statement-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'The card printed the denominator as 1 - 3z cos(theta) + z^2, for which the stated value is false; corrected to 1 - 2z cos(theta) + z^2, which the solution already used.'
 ---
 
 ::: {.problem}
 Let $n\in \ZZ^{\geq 1}$ and $0<\theta<\pi$ and show that
-\[
-{1\over 2\pi i} \int_{\abs z = 2} {z^n \over 1 -3z\cos(\theta) + z^2} \,dz = {\sin(n\theta) \over \sin(\theta)}
-.\]
+$$
+\frac{1}{2\pi i} \int_{\abs z = 2} \frac{z^n}{1 -2z\cos(\theta) + z^2} \,dz = \frac{\sin(n\theta)}{\sin(\theta)}.
+$$
 :::
 
 ::: {.solution}
+Let $g(z)=\dfrac{z^n}{1-2z\cos\theta+z^2}$.
 
 ::: pf
 
-::: pf-step
-Factorization of the quadratic denominator $P(z) = z^2 - 2z\cos\theta + 1$:
+::: {.pf-step #poles}
+$g$ has simple poles at $e^{i\theta}$ and $e^{-i\theta}$, both in $\abs{z}<2$, and no other poles.
 
 ::: pf-proof
-
-::: pf-step
-For $0 < \theta < \pi$, the quadratic $z^2 - 2z\cos\theta + 1$ factors over $\mathbb{C}$ as:
-\[
-z^2 - 2z\cos\theta + 1 = (z - e^{i\theta})(z - e^{-i\theta}).
-\]
-
-:::
-
-::: pf-step
-The roots are $z_1 = e^{i\theta}$ and $z_2 = e^{-i\theta}$.
-Since $|z_1| = |z_2| = 1 < 2$, both poles lie strictly inside the circular contour $\gamma: |z| = 2$.
-Since $0 < \theta < \pi$, $\sin\theta \neq 0$, so $z_1 \neq z_2$, and both poles are simple poles.
-
+$z^2-2z\cos\theta+1=(z-e^{i\theta})(z-e^{-i\theta})$, the roots have modulus $1<2$, and they are distinct because $\sin\theta\ne0$ for $0<\theta<\pi$.
 :::
 
 :::
 
-:::
-
-::: pf-step
-Residue computation:
+::: {.pf-step #residues}
+$\Res(g,e^{i\theta})+\Res(g,e^{-i\theta})=\dfrac{\sin(n\theta)}{\sin\theta}$.
 
 ::: pf-proof
-
-::: pf-step
-Let $g(z) = \frac{z^n}{(z - e^{i\theta})(z - e^{-i\theta})}$.
-At the simple pole $z_1 = e^{i\theta}$:
-\[
-\operatorname{Res}(g, e^{i\theta}) = \lim_{z \to e^{i\theta}} (z - e^{i\theta}) g(z) = \frac{(e^{i\theta})^n}{e^{i\theta} - e^{-i\theta}} = \frac{e^{in\theta}}{2i\sin\theta}.
-\]
-
-:::
-
-::: pf-step
-At the simple pole $z_2 = e^{-i\theta}$:
-\[
-\operatorname{Res}(g, e^{-i\theta}) = \lim_{z \to e^{-i\theta}} (z - e^{-i\theta}) g(z) = \frac{(e^{-i\theta})^n}{e^{-i\theta} - e^{i\theta}} = -\frac{e^{-in\theta}}{2i\sin\theta}.
-\]
-
-:::
-
-::: pf-step
-Summing the residues:
-\[
-\operatorname{Res}(g, e^{i\theta}) + \operatorname{Res}(g, e^{-i\theta}) = \frac{e^{in\theta} - e^{-in\theta}}{2i\sin\theta} = \frac{2i\sin(n\theta)}{2i\sin\theta} = \frac{\sin(n\theta)}{\sin\theta}.
-\]
-
-:::
-
+At simple poles,
+$$
+\Res(g,e^{i\theta})=\frac{e^{in\theta}}{e^{i\theta}-e^{-i\theta}}=\frac{e^{in\theta}}{2i\sin\theta},
+\qquad
+\Res(g,e^{-i\theta})=\frac{e^{-in\theta}}{e^{-i\theta}-e^{i\theta}}=-\frac{e^{-in\theta}}{2i\sin\theta},
+$$
+and the sum is $\dfrac{e^{in\theta}-e^{-in\theta}}{2i\sin\theta}=\dfrac{\sin(n\theta)}{\sin\theta}$.
 :::
 
 :::
 
 ::: pf-step
-Evaluation of the contour integral:
+$\dfrac{1}{2\pi i}\displaystyle\int_{\abs{z}=2}g(z)\,dz=\dfrac{\sin(n\theta)}{\sin\theta}$.
 
 ::: pf-proof
-
-::: pf-step
-By the Cauchy Residue Theorem:
-\[
-\frac{1}{2\pi i} \oint_{|z|=2} \frac{z^n}{z^2 - 2z\cos\theta + 1} \, dz = \sum_{j=1}^2 \operatorname{Res}(g, z_j) = \frac{\sin(n\theta)}{\sin\theta}.
-\]
-
+By the residue theorem and steps [](#poles){.pf-ref} and [](#residues){.pf-ref}.
 :::
 
-:::
-
-:::
-
-::: pf-qed
-Conclusion:
-$\frac{1}{2\pi i} \int_{|z|=2} \frac{z^n}{1 - 2z\cos\theta + z^2} \, dz = \frac{\sin(n\theta)}{\sin\theta}$.
 :::
 
 :::
