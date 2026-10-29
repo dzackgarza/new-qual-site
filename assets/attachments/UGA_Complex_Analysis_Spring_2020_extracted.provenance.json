@@ -1,0 +1,10 @@
+{
+  "source_pdf": "assets/attachments/UGA_Complex_Analysis_Spring_2020.pdf",
+  "source_pdf_sha256": "aec907cad3f2d311b9881a29af5995c144b39aea01b48074e8b5d3998b2c17d3",
+  "extracted_markdown": "assets/attachments/UGA_Complex_Analysis_Spring_2020_extracted.md",
+  "extracted_markdown_sha256": "a4d33d45638c77d82f9e4596eb0960338262cac577f4535c616f9b91b0563d0c",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/UGA_Complex_Analysis_Spring_2020.pdf --language en",
+  "generated_at": "2026-10-30"
+}

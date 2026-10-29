@@ -1,0 +1,10 @@
+{
+  "source_pdf": "assets/Algebra/500_Exercises/PSets/PSet 5/Qual Problems.pdf",
+  "source_pdf_sha256": "43b540e10196576d09848438131b0d7fd57c271852850c0d9d471f743d4d53ff",
+  "extracted_markdown": "assets/Algebra/500_Exercises/PSets/PSet 5/Qual Problems_extracted.md",
+  "extracted_markdown_sha256": "c3428df17c622e398388098107f6210674e9b9a0939f39d5c3b12fec9d59e70e",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/Algebra/500_Exercises/PSets/PSet 5/Qual Problems.pdf --language en",
+  "generated_at": "2026-10-30"
+}
