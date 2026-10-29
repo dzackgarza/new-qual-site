@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS13E
 kind: problem
-title: "No antipodal-preserving map from R^3 minus origin to R^2"
+title: 'No antipodal-preserving map $\RR^3\setminus\{0\}\to\RR^2$'
 classification:
   areas:
   - topology

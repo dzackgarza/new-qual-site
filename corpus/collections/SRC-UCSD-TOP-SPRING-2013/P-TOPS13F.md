@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS13F
 kind: problem
-title: "Z5-orientable manifold is orientable"
+title: 'A $\ZZ/5$-orientable manifold is orientable'
 classification:
   areas:
   - topology

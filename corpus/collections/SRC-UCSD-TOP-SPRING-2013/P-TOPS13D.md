@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS13D
 kind: problem
-title: "Klein bottle sandwich: homology and homotopy equivalence to S^2"
+title: 'Klein bottle sandwich: homology, and homotopy equivalence to $S^2$'
 classification:
   areas:
   - topology

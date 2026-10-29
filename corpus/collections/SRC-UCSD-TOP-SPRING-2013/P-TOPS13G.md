@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS13G
 kind: problem
-title: "Fundamental group of a 2-cell attached to S^1 by degree k and covering spaces of X_30"
+title: 'Fundamental group of a $2$-cell attached to $S^1$ by degree $k$, and covering spaces of $X_{30}$'
 classification:
   areas:
   - topology
