@@ -55,7 +55,7 @@ For the action on subgroups, the orbit of $H$ is the set of [[D-ES7MP|conjugate 
 
 [[E-VPWK4]]
 
-[[E-ZCJZC]] [[E-BSGSM]] [[E-47X7Y]]
+[[E-BSGSM]] [[E-47X7Y]]
 
 ## Normal subgroups
 

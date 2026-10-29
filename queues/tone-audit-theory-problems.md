@@ -206,7 +206,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Algebra/E-XTWN7.md` | `9a05b2223f03edff85a55422990eecec8fe99194` | `9a05b2223f03edff85a55422990eecec8fe99194` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-YFT35.md` | `78a00df45f113f73c144746d83e62e3f7800bd0b` | `78a00df45f113f73c144746d83e62e3f7800bd0b` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-YYL5U.md` | `128dcdfe968090b738e8138b9b37b82f7af4b6de` | `128dcdfe968090b738e8138b9b37b82f7af4b6de` | Read; retained |
-| [x] | `corpus/problems/Algebra/E-ZCJZC.md` | `dde83b16728adaff57fd349028101aad7abe5bf6` | `dde83b16728adaff57fd349028101aad7abe5bf6` | Read; retained |
 | [x] | `corpus/problems/Algebra/E-ZHJGI.md` | `22f6c5f51625eab52eafbc56f799aa39ee4c42b1` | `22f6c5f51625eab52eafbc56f799aa39ee4c42b1` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-0221B.md` | `17a79aff60f6c6058096cc3cf4eb305245a540e4` | `17a79aff60f6c6058096cc3cf4eb305245a540e4` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-0T149.md` | `dac67c2274948aef7d7c61ef2da5f5c135e24d76` | `dac67c2274948aef7d7c61ef2da5f5c135e24d76` | Read; retained |
@@ -1234,7 +1233,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Complex_Analysis/P-HQWC5.md` | `5dba5cd8c506a00a34acc7d1ee31494c2d452431` | `5dba5cd8c506a00a34acc7d1ee31494c2d452431` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-HQXCX.md` | `9a0716e2da064845c44df0d53a90929d483e366b` | `9a0716e2da064845c44df0d53a90929d483e366b` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-HUG4G.md` | `aa47dc3a0c1fc41fb4794ef8314dc6b0bc99da01` | `aa47dc3a0c1fc41fb4794ef8314dc6b0bc99da01` | Read; retained |
-| [x] | `corpus/problems/Complex_Analysis/P-HZ3G4.md` | `f11d31990a2aef9ce74194bcb108c8d4ed65683f` | `f11d31990a2aef9ce74194bcb108c8d4ed65683f` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-HZIPO.md` | `eecbea85754e396b140f05ebaa3e6725ecf60c71` | `eecbea85754e396b140f05ebaa3e6725ecf60c71` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-ICOAE.md` | `10d189f20066931b5302b87659eb063eb7f2368b` | `10d189f20066931b5302b87659eb063eb7f2368b` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-IF6H2.md` | `e76d70c716d77875b3543af885798923d4ea53ea` | `e76d70c716d77875b3543af885798923d4ea53ea` | Read; retained |
