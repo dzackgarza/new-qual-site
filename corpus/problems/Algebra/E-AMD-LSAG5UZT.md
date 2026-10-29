@@ -43,7 +43,7 @@ For a central $z$ of order $p$, the quotient $G/\generators{z}$ has order $p^2$ 
 ::: pf
 
 ::: {.pf-step #p3-has-normal-p2-subgroup}
-$G$ has a normal subgroup of order $p^2$.
+(a) $G$ has a normal subgroup of order $p^2$.
 
 ::: pf-proof
 
@@ -82,8 +82,13 @@ $$\abs N = \abs{\bar H}\cdot \abs{\generators z} = p \cdot p = p^2 .$$
 
 :::
 
+::: pf-step
+(b) If $h$ has largest order in $G$, then (i) $\abs h = p^3$ gives $G \cong \ZZ/p^3$, and (ii) $\abs h = p$ gives $G \cong (\ZZ/p)^3$ or, for odd $p$, the Heisenberg group of order $p^3$.
+
+::: pf-proof
+
 ::: {.pf-step #cyclic-case-order-p3}
-If $\abs h = p^3$ then $G \cong \ZZ/p^3$.
+(i) If $\abs h = p^3$ then $G \cong \ZZ/p^3$.
 
 ::: pf-proof
 
@@ -100,7 +105,7 @@ A cyclic group is determined up to isomorphism by its order.
 :::
 
 ::: {.pf-step #exponent-p-case}
-If $\abs h = p$ for an element of largest order, then $G$ has exponent $p$, and $G$ is one of two groups.
+(ii) If $\abs h = p$ for an element of largest order, then $G$ has exponent $p$, and $G$ is one of two groups.
 
 ::: pf-proof
 
@@ -113,7 +118,7 @@ Suppose first that $G$ is abelian. Then $G$ is a vector space over $\FF_p$ of di
 :::
 
 ::: pf-step
-Suppose instead that $G$ is nonabelian. Then $\abs{Z(G)} \neq p^3$, and $\abs{Z(G)} \neq p^2$, since $G/Z(G)$ cyclic forces $G$ abelian. With step [](#p3-has-normal-p2-subgroup){.pf-ref}'s $Z(G) \neq 1$ this gives $\abs{Z(G)} = p$.
+Suppose instead that $G$ is nonabelian. Then $\abs{Z(G)} \neq p^3$, and $\abs{Z(G)} \neq p^2$, since $G/Z(G)$ cyclic forces $G$ abelian. With $Z(G) \neq 1$ from step [](#class-equation-nontrivial-center){.pf-ref} this gives $\abs{Z(G)} = p$.
 :::
 
 ::: pf-step
@@ -142,8 +147,8 @@ This case is empty for $p = 2$: exponent $2$ forces $g^2 = 1$ for all $g$, hence
 
 :::
 
-::: pf-qed
-Step [](#p3-has-normal-p2-subgroup){.pf-ref} produces $N$, and steps [](#cyclic-case-order-p3){.pf-ref} and [](#exponent-p-case){.pf-ref} classify $G$ in the two stated cases.
+:::
+
 :::
 
 :::
