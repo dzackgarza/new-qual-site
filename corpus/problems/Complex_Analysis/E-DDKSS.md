@@ -32,21 +32,33 @@ Show that $f$ is a polynomial of degree at most $n$.
 :::
 
 ::: {.solution}
-Since $f$ is entire, it equals its Taylor expansion about $z_0 = 0$, so for every $\rho>0$
+Write $f(z)=\sum_{k\ge0}c_kz^k$ for the Taylor expansion of $f$ about $0$, which converges on $\CC$ because $f$ is entire.
+
+::: pf
+
+::: {.pf-step #cauchy-estimate}
+$\abs{c_k}\le M\rho^{n-k}$ for every $k\ge0$ and every $\rho\ge R$.
+
+::: pf-proof
+By the Cauchy integral formula, $c_k=\frac{f^{(k)}(0)}{k!}=\frac1{2\pi i}\int_{\abs\xi=\rho}\frac{f(\xi)}{\xi^{k+1}}\dxi$.
+On $\abs\xi=\rho\ge R$ the hypothesis gives $\abs{f(\xi)}\le M\rho^n$, so
 $$
-f(z) = \sum_{k\geq 0} c_k z^k, \qquad c_k = {f^{(k)}(0)\over k! } = {1\over 2\pi i}\int_{\abs{\xi} = \rho} {f(\xi) \over \xi^{k+1}}\dxi.
+\abs{c_k}\le\frac1{2\pi}\cdot\frac{M\rho^n}{\rho^{k+1}}\cdot2\pi\rho=M\rho^{n-k}.
 $$
-For $\rho\geq R$, a direct estimate yields
-$$
-\begin{aligned}
-\abs{c_k} 
-&\leq {1\over 2\pi} \int_{\abs{\xi} = \rho} {\abs{f(\xi)} \over \abs{\xi}^{k+1} }\abs{\dxi}\\
-&\leq {1\over 2\pi} \int_{\abs{\xi} = \rho} {M \abs{\xi}^n \over \abs{\xi}^{k+1} }\abs{\dxi} \\
-&= {M\over 2\pi} \rho^{n-k-1} \cdot 2\pi \rho \\
-&= M\rho^{n-k},
-\end{aligned}
-$$
-which converges to $0$ as $\rho\to \infty$ provided $k>n$.
-So $c_k=0$ for $k>n$, and $f$ is a polynomial of degree at most $n$.
+:::
+
+:::
+
+::: pf-step
+$f$ is a polynomial of degree at most $n$.
+
+::: pf-proof
+For $k>n$, letting $\rho\to\infty$ in step [](#cauchy-estimate){.pf-ref} gives $c_k=0$.
+:::
+
+:::
+
+:::
+
 :::
 
