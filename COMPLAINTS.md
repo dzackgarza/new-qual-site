@@ -142,18 +142,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** `FD-KPW3H` is merged into `D-BVMTZ`. A `CARD-04` repair moves the prompt and linear-polynomial remark from `FD-GHY34` to `D-BVMTZ` and deletes `FD-GHY34`.
 
-### Duplicate projective-module cards D-RHJMK and FD-6XJ7D
-
-- **Object and need:** `D-RHJMK` and `FD-6XJ7D` in `corpus/theory/Algebra`. Both define projective modules by the lifting property and prove that projective modules are exactly direct summands of free modules.
-
-- **Observed evidence:** `D-RHJMK` contains the same lifting diagram and direct-summand proof and additionally records splitting of short exact sequences and exactness of `\Hom_R(P,-)`. The wiki and algebra guide displayed both cards.
-
-- **Impact and owner:** the flashcard duplicates a strictly richer canonical card without preserving distinct mathematics.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair moves the review prompt to `D-RHJMK`, removes duplicate reader-facing references, and deletes `FD-6XJ7D`.
-
 ### Duplicate maximal-ideal cards D-7XH2R and FD-CD2FE
 
 - **Object and need:** `D-7XH2R` and `FD-CD2FE` in `corpus/theory/Algebra`. Both define a proper ideal to be maximal when no proper strictly larger ideal exists.
