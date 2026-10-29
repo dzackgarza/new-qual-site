@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-(January 2009 #2a, obfuscated) Is $f(x)=\ln x$ uniformly continuous on $(0,1]$?
+Is $f(x)=\ln x$ uniformly continuous on $(0,1]$?
 Prove your answer.
 :::
 

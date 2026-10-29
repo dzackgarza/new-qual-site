@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-(June 2010 #2b) Prove that $\{1/n:n\in\ZZ\setminus\{0\}\}\cup\{0\}$ is compact using the open-cover definition: every open cover has a finite subcover.
+Prove that $\{1/n:n\in\ZZ\setminus\{0\}\}\cup\{0\}$ is compact using the open-cover definition: every open cover has a finite subcover.
 :::
 
 ::: {.solution}

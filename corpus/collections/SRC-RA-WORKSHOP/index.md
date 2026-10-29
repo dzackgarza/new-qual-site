@@ -28,10 +28,12 @@ source:
   - name: Day 2 Metric Spaces and Topology
     problems:
     - P-RA-WORKSHOP-D2-METRIC-HW1
-    - P-RA-WORKSHOP-D2-METRIC-HW2
+    - id: P-RA-WORKSHOP-D2-METRIC-HW2
+      comment: 'June 2010 #2b'
     - P-RA-WORKSHOP-D2-METRIC-HW3
     - P-RA-WORKSHOP-D2-METRIC-HW4
-    - P-RA-WORKSHOP-D2-METRIC-HW5
+    - id: P-RA-WORKSHOP-D2-METRIC-HW5
+      comment: 'January 2010 #1a, in part'
     - P-I73ZD
     - P-VACDU
     - P-YACKS
@@ -44,7 +46,8 @@ source:
     problems:
     - P-RA-WORKSHOP-D3-SEQ-HW1
     - P-RA-WORKSHOP-D3-SEQ-HW2
-    - P-RA-WORKSHOP-D3-SEQ-HW3
+    - id: P-RA-WORKSHOP-D3-SEQ-HW3
+      comment: 'January 2003 #1'
     - P-RA-WORKSHOP-D3-SEQ-HW4
     - P-RA-WORKSHOP-D3-SEQ-HW5
     - P-MCFQT
@@ -53,32 +56,41 @@ source:
     - P-PJY52
     - P-A4O6K
     - P-GGJ5N
-    - P-RA-WORKSHOP-D3-SEQ-12
+    - id: P-RA-WORKSHOP-D3-SEQ-12
+      comment: 'January 2012 #1a'
     - P-RA-WORKSHOP-D3-SEQ-13
     - id: P-RA-WORKSHOP-D3-SEQ-14
       comment: 'January 2008 #6b'
     - P-RA-WORKSHOP-D3-SEQ-15
-    - P-RA-WORKSHOP-D3-SEQ-16
+    - id: P-RA-WORKSHOP-D3-SEQ-16
+      comment: 'January 2006 #5'
   - name: Day 4 Continuity of Functions
     problems:
     - P-RA-WORKSHOP-D4-W1
-    - P-RA-WORKSHOP-D4-W2
+    - id: P-RA-WORKSHOP-D4-W2
+      comment: 'Compare June 2012 #1b'
     - P-RA-WORKSHOP-D4-W3
-    - P-RA-WORKSHOP-D4-W4
+    - id: P-RA-WORKSHOP-D4-W4
+      comment: 'June 2013 #1b'
     - P-RA-WORKSHOP-D4-W5
-    - P-RA-WORKSHOP-D4-06
+    - id: P-RA-WORKSHOP-D4-06
+      comment: 'January 2009 #2a, reworded'
     - id: P-RA-WORKSHOP-D4-07
       comment: 'Compare January 2007 #3a and June 2010 #2a'
-    - P-RA-WORKSHOP-D4-08
+    - id: P-RA-WORKSHOP-D4-08
+      comment: 'June 2009 #1'
     - P-RA-WORKSHOP-D4-09
     - P-RA-WORKSHOP-D4-10
-    - P-RA-WORKSHOP-D4-11
-    - P-RA-WORKSHOP-D4-12
+    - id: P-RA-WORKSHOP-D4-11
+      comment: 'June 2013 #5b'
+    - id: P-RA-WORKSHOP-D4-12
+      comment: 'January 2012 #1b'
     - P-RA-WORKSHOP-D4-13
     - P-RA-WORKSHOP-D4-14
   - name: Day 5 Differential Calculus
     problems:
-    - P-RA-WORKSHOP-D5-W1
+    - id: P-RA-WORKSHOP-D5-W1
+      comment: 'June 1999 #10'
     - P-RA-WORKSHOP-D5-W2
     - P-RA-WORKSHOP-D5-W3
     - P-VO7MI
@@ -87,15 +99,18 @@ source:
     - P-AUACU
     - P-SKT7G
     - P-NXMNQ
-    - P-RA-WORKSHOP-D5-10
+    - id: P-RA-WORKSHOP-D5-10
+      comment: 'January 2005 #6'
     - P-RA-WORKSHOP-D5-11
-    - P-RA-WORKSHOP-D5-12
+    - id: P-RA-WORKSHOP-D5-12
+      comment: 'January 2010 #4'
     - P-RA-WORKSHOP-D5-13
   - name: Day 6 Integral Calculus
     problems:
     - P-RA-WORKSHOP-D6-W1
     - P-RA-WORKSHOP-D6-W2
-    - P-RA-WORKSHOP-D6-W3
+    - id: P-RA-WORKSHOP-D6-W3
+      comment: 'January 2007 #1'
     - P-RA-WORKSHOP-D6-W4
     - P-R4EGZ
     - P-2B2T5
@@ -117,10 +132,14 @@ source:
     - P-5UQSK
     - P-AIDWR
     - P-KZZ7M
-    - P-RA-WORKSHOP-D7-12
-    - P-RA-WORKSHOP-D7-13
-    - P-RA-WORKSHOP-D7-14
-    - P-RA-WORKSHOP-D7-15
+    - id: P-RA-WORKSHOP-D7-12
+      comment: 'January 2006 #7a'
+    - id: P-RA-WORKSHOP-D7-13
+      comment: 'June 2007 #4b, part i'
+    - id: P-RA-WORKSHOP-D7-14
+      comment: 'June 2009 #4a'
+    - id: P-RA-WORKSHOP-D7-15
+      comment: 'June 2009 #4b'
   - name: Day 8 Miscellaneous Topics
     problems:
     - P-DX6EM

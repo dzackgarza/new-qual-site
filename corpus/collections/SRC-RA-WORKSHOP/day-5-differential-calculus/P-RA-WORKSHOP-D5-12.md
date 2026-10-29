@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-(January 2010 #4) Suppose that $f:\RR\to\RR$ is differentiable at $a\in\RR$.
+Suppose that $f:\RR\to\RR$ is differentiable at $a\in\RR$.
 If $\{x_n\}$ is a nondecreasing sequence of real numbers converging to $a$ and $\{y_n\}$ is a nonincreasing sequence of real numbers converging to $a$, and $x_n\ne y_n$ for all sufficiently large $n$, prove that $$\lim_{n\to\infty}\frac{f(y_n)-f(x_n)}{y_n-x_n}=f'(a).$$
 :::
 

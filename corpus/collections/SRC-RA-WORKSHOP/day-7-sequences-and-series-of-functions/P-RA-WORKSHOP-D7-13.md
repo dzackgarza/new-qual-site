@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-(June 2007 #4b part i) Evaluate $$\lim_{n\to\infty}\int_{\pi/2}^{\pi}\frac{n\sin(x/n)}{x}\,dx$$ and justify your reasoning.
+Evaluate $$\lim_{n\to\infty}\int_{\pi/2}^{\pi}\frac{n\sin(x/n)}{x}\,dx$$ and justify your reasoning.
 :::
 
 ::: {.solution}

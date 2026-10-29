@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-(January 2006 #5) Let $a_{m,n}\ge0$ for $m,n\in\NN$ and assume that the partial sums
+Let $a_{m,n}\ge0$ for $m,n\in\NN$ and assume that the partial sums
 $$
 \sum_{m=1}^{M}\sum_{n=1}^{N}a_{m,n}
 $$

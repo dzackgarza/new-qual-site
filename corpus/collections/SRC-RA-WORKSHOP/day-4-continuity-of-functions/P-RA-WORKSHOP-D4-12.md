@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-(January 2012 #1b) Let $y\in\RR$ and $f:\RR\to\RR$ be given.
+Let $y\in\RR$ and $f:\RR\to\RR$ be given.
 Suppose that for every sequence $\{x_n\}$ we have
 $$
 \liminf_{n\to\infty}\abs{f(x_n)-f(y)}\le

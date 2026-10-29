@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-(January 2007 #1) Let $$f(x)=\int_1^x\frac1t\,dt$$ for $x>0$.
+Let $$f(x)=\int_1^x\frac1t\,dt$$ for $x>0$.
 
 (a) Use an $\varepsilon$-$\delta$ proof to show that $f$ is continuous on $(0,\infty)$.
 

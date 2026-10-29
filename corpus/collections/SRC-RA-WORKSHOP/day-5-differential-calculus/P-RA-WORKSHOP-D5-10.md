@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-(January 2005 #6) Suppose that $f:[0,1]\to\RR$ is a differentiable function with $f(0)=0$ and that there exists some $K>0$ so that $\abs{f'(x)}\le K\abs{f(x)}$ for all $x\in[0,1]$.
+Suppose that $f:[0,1]\to\RR$ is a differentiable function with $f(0)=0$ and that there exists some $K>0$ so that $\abs{f'(x)}\le K\abs{f(x)}$ for all $x\in[0,1]$.
 Prove that $f(x)=0$ on $[0,1]$.
 
 Note: See [Rud76, Chap 5, #26] for a significant hint.
