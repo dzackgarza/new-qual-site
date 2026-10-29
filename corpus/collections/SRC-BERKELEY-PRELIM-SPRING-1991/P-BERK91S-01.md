@@ -63,7 +63,7 @@ $\abs{G}=p\in\{2,3,5\}$, then $G\cong C_p$.
 
 In the first case $G=\{e\}$, which is isomorphic to $C_1$ by
 the unique map. In the second case choose $g\in G\setminus\{e\}$.
-By [[T-GJNT5|Lagrange's theorem]], the order of $g$ divides
+By [[E-NNTQB|Lagrange's theorem]], the order of $g$ divides
 $p$. Since $g\neq e$, its order is $p$, and therefore its
 powers exhaust $G$. The map
 $$
@@ -110,7 +110,7 @@ commutative.
 
 ::: pf-proof
 
-By [[T-GJNT5|Lagrange's theorem]], each element has order
+By [[E-NNTQB|Lagrange's theorem]], each element has order
 $1$, $2$, or $4$. The assumption excludes order $4$, so
 $x^2=e$ for every $x\in G$. Consequently, for every
 $x,y\in G$,

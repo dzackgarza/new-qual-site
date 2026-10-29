@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-NNTQB
 kind: problem
-title: 'Lagrange''s theorem: $|G|/|H|=[G:H]$ for finite $G$'
+title: Lagrange's theorem
 classification:
   areas:
   - algebra
@@ -29,6 +29,7 @@ $$
 :::
 
 ::: {.solution}
+Here $H$ is a [[D-IQ4OX|subgroup]] of the finite group $G$ and $[G:H]$ is its [[D-VJGH5|index]], the number of left cosets of $H$ in $G$.
 
 ::: pf
 
@@ -42,10 +43,10 @@ For $g\in G$, the map $H\to gH$, $h\mapsto gh$, is surjective by definition of $
 :::
 
 ::: pf-step
-$[G:H]=\dfrac{\abs{G}}{\abs{H}}$.
+$\abs{G}=[G:H]\,\abs{H}$, so $[G:H]=\dfrac{\abs{G}}{\abs{H}}$ and both $\abs{H}$ and $[G:H]$ divide $\abs{G}$.
 
 ::: pf-proof
-The left cosets of $H$ partition $G$, and there are $[G:H]$ of them, each of size $\abs{H}$ by step [](#coset-size){.pf-ref}. Hence $\abs{G}=[G:H]\,\abs{H}$.
+The left cosets of $H$ partition $G$ ([[PR-VUKHO]]), and there are $[G:H]$ of them, each of size $\abs{H}$ by step [](#coset-size){.pf-ref}. Hence $\abs{G}=[G:H]\,\abs{H}$.
 :::
 
 :::

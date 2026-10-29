@@ -11,18 +11,7 @@ topics:
 
 ## Lagrange and Cauchy
 
-[[T-GJNT5]]
-
-::: {.proof title="of Lagrange's theorem"}
-Let $N \definedas [G:H]$ and write $G/H = \theset{g_1 H, \ldots, g_N H}$.
-Two left cosets are equal or disjoint, and $x\mapsto g_kx$ is a bijection $H\to g_kH$, so
-$$
-G = \disjoint_{k=1}^N g_k H \implies \size G = \sum_{k=1}^N \size{g_k H} = \sum_{k=1}^N \size H = N \size H.
-$$
-Hence $\size G = [G:H]\,\size H$, and both $\size H$ and $[G:H]$ divide $\size G$.
-:::
-
-[[C-HWX2P]]
+[[E-NNTQB]]
 
 ::: {.corollary}
 For a finite group $G$ and $g\in G$, the order of $g$ divides $\size G$, and $g^{\size G} = e$.

@@ -29,7 +29,7 @@ Chapter: [[algebra/groups/index|Groups]].
 
 ## Group actions
 
-[[T-GJNT5]]
+[[E-NNTQB]]
 
 [[T-3KCD6]]
 

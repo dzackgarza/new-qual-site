@@ -53,7 +53,7 @@ The integer $c$ is either $p$ or $p^2$.
 Since $\abs{R}=p^2>1$, the identity is nonzero: otherwise
 every $r\in R$ would satisfy $r=r1_R=r0=0$. The additive
 order of $1_R$ is finite and divides $p^2$ by
-[[T-GJNT5|Lagrange's theorem]] applied to the additive group
+[[E-NNTQB|Lagrange's theorem]] applied to the additive group
 of $R$. It is not $1$, since $1_R\neq0$. This order is $c$,
 so $c=p$ or $c=p^2$.
 
