@@ -75,8 +75,6 @@ Proofs of Egorov's and Lusin's theorems are on [[real-analysis/measure/littlewoo
 
 [[T-RA-WORKSHOP-D5-4-1]]
 
-[[T-RA-WORKSHOP-D5-4-2]]
-
 [[T-RA-WORKSHOP-D5-4-3]]
 
 ## Riemann--Stieltjes integration

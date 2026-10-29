@@ -62,7 +62,7 @@ $f^{(k)}(s)=0$.
 Since $f$ is infinitely differentiable, $f^{(k-1)}$ is continuous
 on $[0,t]$ and differentiable on $(0,t)$. The inequality
 $0\leq k-1\leq n$ and the hypotheses give $f^{(k-1)}(0)=0$.
-By the [[T-RA-WORKSHOP-D5-4-2|mean value theorem]], there is
+By the [[T-OXNTU|mean value theorem]], there is
 $s\in(0,t)$ with
 $$
 f^{(k)}(s)

@@ -104,7 +104,6 @@ sections:
       - Calculus
     items:
       - ref: T-RA-WORKSHOP-D5-4-1
-      - ref: T-RA-WORKSHOP-D5-4-2
       - ref: T-OXNTU
       - ref: T-RA-WORKSHOP-D5-4-3
       - ref: T-2R7PC

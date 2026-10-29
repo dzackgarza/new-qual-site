@@ -64,7 +64,7 @@ $$
 ::: pf-proof
 
 For $x=x_j$, both sides are zero. For $x>x_j$, apply the
-[[T-RA-WORKSHOP-D5-4-2|mean value theorem]] to $f$ on
+[[T-OXNTU|mean value theorem]] to $f$ on
 $[x_j,x]$. There is $\xi\in(x_j,x)\subset(0,1)$ such that
 $$
 f(x)-f(x_j)=f'(\xi)(x-x_j).
