@@ -23,10 +23,11 @@ audit:
 ---
 
 ::: {.problem}
-(1) Let $X$ and $Y$ be topological spaces, and let $f: X \to Y$ be a continuous map.
-Prove that if $X$ is **compact**, then its image $f(X) \subseteq Y$ is compact.
-(2) Let $(X, d)$ be a metric space.
-Prove that if $X$ is **compact**, then $(X, d)$ is **complete** (every Cauchy sequence in $X$ converges to a limit in $X$).
+(a) Let $X$ and $Y$ be topological spaces, and let $f: X \to Y$ be a continuous map.
+Prove that if $X$ is compact, then its image $f(X) \subseteq Y$ is compact.
+
+(b) Let $(X, d)$ be a metric space.
+Prove that if $X$ is compact, then $(X, d)$ is complete (every Cauchy sequence in $X$ converges to a limit in $X$).
 :::
 
 ::: {.solution}
