@@ -27,7 +27,7 @@ For the $k$-linear Frobenius $F\colon X\to X'$, the map $F^*\Omega_{X'}\to\Omega
 
 [[T-IV2LUROTH]]
 
-In the proof, a finite morphism $X\to Y$ of smooth projective curves satisfies $g(X)\ge g(Y)$: Riemann--Hurwitz gives the inequality across the separable part, and [[PR-IV2INSEP]] gives equality across the purely inseparable part.
+The proof uses two facts. A finite morphism $X\to Y$ of smooth projective curves satisfies $g(X)\ge g(Y)$: Riemann--Hurwitz gives the inequality across the separable part, and [[PR-IV2INSEP]] gives equality across the purely inseparable part.
 A genus-$0$ curve over an algebraically closed field is $\PP^1$.
 
 Restated as geometry, Lüroth says unirational implies rational in dimension $1$.
