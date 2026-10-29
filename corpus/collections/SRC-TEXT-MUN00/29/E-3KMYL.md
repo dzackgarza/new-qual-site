@@ -27,7 +27,6 @@ Let $\theset{X_\alpha}$ be an indexed family of nonempty spaces.
 :::
 
 ::: {.solution}
-**Goal:** Prove the necessary and sufficient conditions for the Cartesian product $\prod_{\alpha \in J} X_\alpha$ of non-empty topological spaces to be locally compact.
 
 ::: pf
 
