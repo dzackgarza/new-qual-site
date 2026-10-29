@@ -19,22 +19,28 @@ Show that every group of prime order is cyclic.
 :::
 
 ::: {.solution}
-Let $|G|=p$ with $p$ prime, and choose any nonidentity element $g\in G$.
-By Lagrange's theorem,
-\[
-|g|\mid p.
-\]
-Since $g\ne e$, its order is not $1$, so
-\[
-|g|=p.
-\]
-Therefore
-\[
-|\langle g\rangle|=p=|G|,
-\]
-and hence
-\[
-G=\langle g\rangle.
-\]
-Thus $G$ is cyclic.
+Let $\abs{G}=p$ with $p$ prime. Since $p>1$, choose a nonidentity element $g\in G$.
+
+::: pf
+
+::: {.pf-step #order}
+
+$\abs{\langle g\rangle}=p$.
+
+::: pf-proof
+
+By Lagrange's theorem, $\abs{\langle g\rangle}$ divides $p$. It is not $1$ because $g\ne e$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By step [](#order){.pf-ref}, $\langle g\rangle$ is a subgroup of $G$ with $\abs{G}$ elements, so $G=\langle g\rangle$ is cyclic.
+
+:::
+
+:::
+
 :::
