@@ -47,7 +47,7 @@ $R \ge \min\{R_1, R_2\}$.
 
 ::: pf-proof
 
-For $|x| < \min\{R_1, R_2\}$ both $\sum a_n x^n$ and $\sum b_n x^n$ converge absolutely, and $\abs{(a_n + b_n)x^n} \le \abs{a_nx^n} + \abs{b_nx^n}$.
+For $\abs{x} < \min\{R_1, R_2\}$ both $\sum a_n x^n$ and $\sum b_n x^n$ converge absolutely, and $\abs{(a_n + b_n)x^n} \le \abs{a_nx^n} + \abs{b_nx^n}$.
 
 :::
 
@@ -59,7 +59,7 @@ If $R_1 < R_2$, then $R \le R_1$.
 
 ::: pf-proof
 
-Let $R_1 < |x| < R_2$. Then $\sum a_n x^n$ diverges and $\sum b_n x^n$ converges. If $\sum (a_n + b_n)x^n$ converged, then $\sum a_n x^n$ would converge as the difference of two convergent series. So $\sum (a_n + b_n)x^n$ diverges at points with $|x| > R_1$ arbitrarily close to $R_1$, and $R \le R_1$.
+Let $R_1 < \abs{x} < R_2$. Then $\sum a_n x^n$ diverges and $\sum b_n x^n$ converges. If $\sum (a_n + b_n)x^n$ converged, then $\sum a_n x^n$ would converge as the difference of two convergent series. So $\sum (a_n + b_n)x^n$ diverges at points with $\abs{x} > R_1$ arbitrarily close to $R_1$, and $R \le R_1$.
 
 :::
 
@@ -95,13 +95,13 @@ If $R_1 \neq R_2$, steps [](#a1){.pf-ref} and [](#a2){.pf-ref}, with the roles o
 
 ::: {.pf-step #b1}
 
-For $|x| < R_1 R_2$, $\sum a_n b_n x^n$ converges absolutely.
+For $\abs{x} < R_1 R_2$, $\sum a_n b_n x^n$ converges absolutely.
 
 ::: pf-proof
 
 ::: {.pf-step #b1-1}
 
-There are $u < R_1$ and $v < R_2$ with $|x| < uv$.
+There are $u < R_1$ and $v < R_2$ with $\abs{x} < uv$.
 
 ::: pf-proof
 
@@ -147,17 +147,11 @@ $\limsup \abs{a_n}^{1/n} = 1$ along the even indices and $\limsup\abs{b_n}^{1/n}
 
 ::: pf-qed
 
-By step [](#b1){.pf-ref}, the series converges at every $x$ with $|x| < R_1R_2$, so $R \ge R_1R_2$; step [](#b2){.pf-ref} gives coefficients with $R > R_1R_2$.
+By step [](#b1){.pf-ref}, the series converges at every $x$ with $\abs{x} < R_1R_2$, so $R \ge R_1R_2$; step [](#b2){.pf-ref} gives coefficients with $R > R_1R_2$.
 
 :::
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#a){.pf-ref} and [](#b){.pf-ref} answer parts (a) and (b).
 
 :::
 
