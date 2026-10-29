@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-EJN4Q
 kind: problem
-title: Open subsets of $\mathbb{R}$ are countable unions of disjoint open intervals
+title: Open subsets of $\RR$ are countable unions of disjoint open intervals
 classification:
   areas:
   - real-analysis
@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-- Show that every open $U \subseteq \RR$ is a countable union of disjoint open intervals.
+Show that every open $U \subseteq \RR$ is a countable union of disjoint open intervals.
 :::
 
 ::: {.solution}
@@ -26,7 +26,7 @@ Let $U \subseteq \RR$ be open.
 
 ::: pf
 
-::: {.pf-step #s1}
+::: pf-step
 
 Each connected component $C$ of $U$ is an open interval $(a,b)$ with $-\infty \leq a < b \leq \infty$.
 
@@ -50,7 +50,7 @@ The components are the equivalence classes of the relation $x \sim y$ if and onl
 
 :::
 
-::: {.pf-step #s3}
+::: pf-step
 
 There are at most countably many components.
 
@@ -59,12 +59,6 @@ There are at most countably many components.
 Each component is a nonempty open interval, so it contains a rational number; choose one, $q_C$, for each component $C$. By step [](#s2){.pf-ref} distinct components are disjoint, so $C \mapsto q_C$ is injective into the countable set $\QQ$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} express $U$ as a disjoint union of open intervals, and step [](#s3){.pf-ref} shows the family is countable.
 
 :::
 
