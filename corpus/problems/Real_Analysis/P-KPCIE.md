@@ -5,7 +5,7 @@ kind: problem
 title: Midpoint recurrence $x_n=\frac{x_{n-1}+x_{n-2}}{2}$ converges to $\frac{a+2b}{3}$
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Sequences of Numbers
   - Completeness
