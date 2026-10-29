@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.definition}
-A topological space $X$ is \dfn{locally compact} if every $x\in X$ has a [[D-JMRPA|neighborhood]] $U$ contained in a [[D-EILKJ|compact]] subset $K\subseteq X$.
+A topological space $X$ is \dfn{locally compact} if every $x\in X$ has a [[D-JMRPA|neighborhood]] $U$ contained in a [[D-EILKJ|compact]] subset $K\subseteq X$ [@Mun00].
 :::
 
 ::: {.example}
@@ -35,8 +35,4 @@ The following subspaces of Euclidean space are not locally compact:
 ::: {.remark}
 Some authors also require a locally compact space to be Hausdorff.
 For Hausdorff $X$ the condition above is equivalent to every point having a neighborhood whose closure is compact.
-:::
-
-::: {.concept}
-[@Mun00].
 :::

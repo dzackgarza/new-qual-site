@@ -16,7 +16,7 @@ review: draft
 
 ::: {.definition}
 Let $X$ be a topological space.
-Two subsets $S, T\subseteq X$ are \dfn{separated by neighborhoods} if there exist disjoint open sets $U\supseteq S$ and $V\supseteq T$.
+Two subsets $S, T\subseteq X$ are \dfn{separated by neighborhoods} if there exist disjoint open sets $U\supseteq S$ and $V\supseteq T$ [@Mun00].
 
 - $X$ is \dfn{$T_0$} if for all $x\neq y$ in $X$ there exists an open set containing exactly one of $x$ and $y$.
 
@@ -35,8 +35,4 @@ Two subsets $S, T\subseteq X$ are \dfn{separated by neighborhoods} if there exis
 
 ::: {.remark}
 A space is $T_1$ if and only if every singleton is closed.
-:::
-
-::: {.concept}
-[@Mun00].
 :::
