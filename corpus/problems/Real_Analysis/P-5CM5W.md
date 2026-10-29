@@ -15,23 +15,27 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source printed "h in R" in the first part and "tau_h d(x) := f(x-h)" in the second; the statement now reads h in R^n and tau_h f(x).'
 ---
 
 ::: {.problem}
-Prove that if \( E \subseteq \RR^n \) is a Lebesgue measurable set, then for any \( h \in \RR \) the set
-\[
-E+h \definedas \theset{x + h \st x\in E }
-\]
-is also Lebesgue measurable and satisfies \( m(E + h) = m(E) \).
+(a) Prove that if $E \subseteq \RR^n$ is a Lebesgue measurable set, then for any $h \in \RR^n$ the set
+$$
+E+h \coloneqq \theset{x + h \st x\in E }
+$$
+is also Lebesgue measurable and satisfies $m(E + h) = m(E)$.
 
-Prove that if $f$ is a non-negative measurable function on $\RR^n$ and $h\in \RR^n$ then the function
-\[
-\tau_h d(x) \definedas f(x-h)
-\]
+(b) Prove that if $f$ is a non-negative measurable function on $\RR^n$ and $h\in \RR^n$ then the function
+$$
+\tau_h f(x) \coloneqq f(x-h)
+$$
 is a non-negative measurable function and
-\[
-\int f(x) \dx = \int f(x-h) \dx
-.\]
+$$
+\int f(x) \dx = \int f(x-h) \dx.
+$$
 :::
 
 ::: {.solution}
@@ -116,12 +120,6 @@ By linearity, step [](#s2-2){.pf-ref} gives $\int \tau_h s = \int s$ for nonnega
 :::
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are the two parts.
 
 :::
 
