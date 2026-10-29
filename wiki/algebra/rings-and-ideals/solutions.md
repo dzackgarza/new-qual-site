@@ -7,11 +7,11 @@ order: 90
 
 ## Fields
 
-[Chapter 15 solutions](attachments/Ch15Sltns.pdf)
+[Solution outlines for chapter 15 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch15Sltns.pdf)
 
-[Chapter 16 solutions](attachments/Ch16Sltns.pdf)
+[Solution outlines for chapter 16 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch16Sltns.pdf)
 
-[Chapter 17 solutions](attachments/Ch17Sltns.pdf)
+[Solution outlines for chapter 17 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch17Sltns.pdf)
 
 [Algebra homework 11 (Clay Shonkwiler)](attachments/603_11.pdf)
 
@@ -29,7 +29,7 @@ order: 90
 
 [Math 114 Galois-theory homework solutions](attachments/solhwg.pdf)
 
-[Chapter 20 solutions](attachments/Ch20Sltns.pdf)
+[Solution outlines for chapter 20 of Gallian, *Contemporary Abstract Algebra*](attachments/Ch20Sltns.pdf)
 
 [Calculating a Galois group from a polynomial](attachments/calculating_galois_from_polynomial.pdf)
 
