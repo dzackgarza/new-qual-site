@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-5JYEI
 kind: definition
 title: Galois extension and Galois group
+prompts:
+- In terms of $\size \Aut_{\Fieldsover{k}}(L)$, when is a finite extension $L/k$ Galois?
 classification:
   areas:
   - algebra
