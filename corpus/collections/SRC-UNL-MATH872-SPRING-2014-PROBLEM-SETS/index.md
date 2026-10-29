@@ -92,19 +92,32 @@ source:
     comment: Assignment 10.C.3
   - id: P-UNL872S14-10-C-4
     comment: Assignment 10.C.4
-  - P-UNL872S14-11-B-1
-  - P-UNL872S14-11-B-2
-  - P-UNL872S14-11-C-1
-  - P-UNL872S14-11-C-2
-  - P-UNL872S14-11-C-3
-  - P-UNL872S14-11-C-4
-  - P-UNL872S14-PP-4
-  - P-UNL872S14-PP-5
-  - P-UNL872S14-12-A-1
-  - P-UNL872S14-12-A-2
-  - P-UNL872S14-12-B-1
-  - P-UNL872S14-12-B-2
-  - P-UNL872S14-12-B-3
+  - id: P-UNL872S14-11-B-1
+    comment: Assignment 11.B.1
+  - id: P-UNL872S14-11-B-2
+    comment: Assignment 11.B.2
+  - id: P-UNL872S14-11-C-1
+    comment: Assignment 11.C.1
+  - id: P-UNL872S14-11-C-2
+    comment: Assignment 11.C.2
+  - id: P-UNL872S14-11-C-3
+    comment: Assignment 11.C.3
+  - id: P-UNL872S14-11-C-4
+    comment: Assignment 11.C.4
+  - id: P-UNL872S14-PP-4
+    comment: Assignment PP.4
+  - id: P-UNL872S14-PP-5
+    comment: Assignment PP.5
+  - id: P-UNL872S14-12-A-1
+    comment: Assignment 12.A.1
+  - id: P-UNL872S14-12-A-2
+    comment: Assignment 12.A.2
+  - id: P-UNL872S14-12-B-1
+    comment: Assignment 12.B.1
+  - id: P-UNL872S14-12-B-2
+    comment: Assignment 12.B.2
+  - id: P-UNL872S14-12-B-3
+    comment: Assignment 12.B.3
   date:
     kind: academic-term
     term: spring
