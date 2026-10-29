@@ -104,6 +104,6 @@ Since $\varepsilon_n \to 0$, the integral over $\partial R$ vanishes.
 
 :::
 
-## Exercises
+## Problems
 
 [[E-WIANB]]
