@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that for $H\leq G$, $C_H(x) = H \intersect C_G(x)$.
+Let $G$ be a group, $H\leq G$, and $x\in G$. Show that $C_H(x) = H \intersect C_G(x)$.
 :::
 
 
@@ -34,21 +34,21 @@ An element $h$ lies in $C_H(x)$ if and only if it lies in $H\cap C_G(x)$.
 
 ::: pf-proof
 By definition,
-\[
+$$
 h\in C_H(x)
 \quad\Longleftrightarrow\quad
 h\in H\text{ and }hx=xh.
-\]
+$$
 Also,
-\[
+$$
 h\in C_G(x)\quad\Longleftrightarrow\quad h\in G\text{ and }hx=xh.
-\]
+$$
 Since $H\le G$, for $h\in H$ the condition $h\in C_G(x)$ is exactly $hx=xh$. Therefore
-\[
+$$
 h\in C_H(x)
 \quad\Longleftrightarrow\quad
 h\in H\cap C_G(x).
-\]
+$$
 :::
 
 :::
