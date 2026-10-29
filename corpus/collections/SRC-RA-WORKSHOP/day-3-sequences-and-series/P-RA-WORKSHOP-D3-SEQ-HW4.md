@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-HW4
 kind: problem
-title: Select a convergent subseries from a sequence tending to zero
+title: A null sequence has a subsequence with convergent series
 classification:
   areas:
   - real-analysis
