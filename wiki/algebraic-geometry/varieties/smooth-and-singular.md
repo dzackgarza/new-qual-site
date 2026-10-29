@@ -35,12 +35,13 @@ For a normal curve this leaves no singular points, which is why normalization re
 
 ## Where the singular points are
 
-Finding them is the Jacobian computation: set the partials to zero, intersect with the variety, and use the Euler relation in $\PP^n$:
+The singular points of a hypersurface $V(f)\subseteq\PP^n$ are the points of $V(f)$ at which every partial derivative of $f$ vanishes.
+The Euler relation
 $$
 \sum_i x_i \frac{\partial f}{\partial x_i} = (\deg f) \cdot f
 $$
 makes the vanishing of the partials imply the vanishing of $f$ whenever $\deg f$ is invertible in $k$.
-So for a plane curve in characteristic zero the singular locus is cut out by the partials alone.
+So for a projective plane curve in characteristic zero the singular locus is cut out by the partials alone.
 
 ## Resolutions
 
