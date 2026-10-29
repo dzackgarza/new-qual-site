@@ -227,7 +227,25 @@ mathematical correction under its own node, not under copy policy.
     (`CARD-02`); SRC-HARVARD-GROUPS-ORAL invented sections and institution (and the COMM-ALG
     and FIELDS orals); rings-and-ideals/solutions Gallian headings and MIT pointer; groups
     resources "Chapter N solutions" (`RES-01`). **Acceptance:** each read and repaired, or kept
-    with the reason.
+    with the reason. **Closed.** Merges (survivor first): E-NNTQB/T-SZRXI/E-DKMHL;
+    E-47X7Y/E-VPWK4; E-BSGSM/PR-PYYRK (a collection lists E-BSGSM); E-R6I7G/T-SVJUN;
+    T-WRMBM, T-EF2MZ, T-S5T5C/FT-ZENUU; PR-73MCN/E-PHSV5; T-AILFB/PR-LXSGE; D-ZJJ7G/FD-BPUNZ;
+    E-HOJKE/PR-DDDXH; FT-BC6S2/T-6ABNR; PR-4GQIZ/PR-GBL6P/PR-OF7ZW; D-GIGM2/D-HGMOW. Kept
+    apart after reading: E-6AOD7 and PR-IGLFV (PR-IGLFV also classifies the groups; FF-C3SN4
+    now cites it); PR-GEHJF loses only its items owned by E-XH2QU and E-HOJKE; P-HGRO2/P-HGRO4
+    (P-HGRO2 also counts order 35); P-HGRO7, P-HGRO8, P-HGRO31 (state against two different
+    proofs); P-AMD-QBEEJKCX already argues in its QED step. The three oral sources name no
+    institution and list Berkeley examiners from the MGSA files, so they are now
+    SRC-MGSA-GROUPS-ORAL, SRC-MGSA-COMM-ALG-ORAL and SRC-MGSA-FIELDS-ORAL with no institution
+    and one source section each. The homework 1 image became SRC-FIELDS-HOMEWORK-1 (PDF wrapped
+    from the retained JPEG, MinerU extraction). `\maxspec` is retired for `\mspec`. The
+    Gorenstein section moved to commutative-algebra. Open remainder: SRC-HARVARD-COMPLEX-ORAL
+    has the same unsupported institution; the oral PDF and extraction filenames still say
+    Harvard; P-FHW1 cards overlap PR-ABSJX, PR-OFBRQ, P-HBWYH and P-JXIIG and need a `CARD-04`
+    reading; no card exists for the mod-$p$ irreducibility test, the degree-2-or-3 root test,
+    finite extensions of finite fields being Galois, or algebraic closure; the D-2IO6Q
+    noncommutative remark has no citation; orbit-stabilizer still restates the element-order
+    clause of E-NNTQB.
   Round 3 (revision `5ba163ac9`, topology and algebraic geometry) injected the node below;
   `audited-deployment` needs it.
   - **`ad3-topology-content`**. **Needs:** none. Wrong mathematics: P-TOPS05A (a free
