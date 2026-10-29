@@ -121,13 +121,12 @@ $$
 
 :::
 
-[[PR-NZZ2C]]
+[[E-EG3W7]]
 
 The standard series and the factorial notation are collected on [[complex-analysis/basics/series-reference|Series: Reference]].
 
 ## Exercises
 
-[[E-EG3W7]]
 [[E-SKD7P]] [[E-EMISN]] [[E-QLRNW]]
 [[E-ZQGR5]] [[E-FS7GZ]] [[E-VWVTY]]
 [[FE-LAN3V]] [[FE-VWNUI]] [[FE-EUOB2]]
