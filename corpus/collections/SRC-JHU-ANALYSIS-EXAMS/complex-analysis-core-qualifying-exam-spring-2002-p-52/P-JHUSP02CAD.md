@@ -42,14 +42,6 @@ $$
 for some real $\theta$.
 :::
 
-::: {.remark}
-As printed, the source omits $f(0)=0$, so the inequality is false at $z=0$;
-$f\equiv1/2$ is a counterexample. It also says only "equality holds for some
-$z$". After the necessary normalization, equality at $z=0$ is automatic, so
-the equality statement must require a nonzero point; $f(z)=z$ otherwise gives
-a counterexample to the claimed conclusion.
-:::
-
 ::: {.solution}
 
 ::: pf
@@ -166,7 +158,7 @@ Step [](#s3){.pf-ref} gives $|a_2|=1$, so every other coefficient must vanish. T
 $$
 f(z)=a_2z^2=\lambda z^2=e^{i\theta}z^2
 $$
-for some real $\theta$, which is exactly the corrected equality conclusion.
+for some real $\theta$.
 
 :::
 
