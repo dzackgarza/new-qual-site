@@ -43,7 +43,7 @@ Then there is a scheme $X$ with an open cover by copies of the $X_i$ inducing th
 :::
 
 ::: {.example title="Projective space by charts"}
-Take $n+1$ copies of $\AA^n\slice k = \Spec k[x_0/x_i, \dots, x_n/x_i]$ and glue $U_{ij} = D(x_j/x_i)$ to $U_{ji} = D(x_i/x_j)$ by inverting the ratio.
+Take $n+1$ copies of $\AA^n\slice k = \Spec k[x_0/x_i, \ldots, x_n/x_i]$ and glue $U_{ij} = D(x_j/x_i)$ to $U_{ji} = D(x_i/x_j)$ by inverting the ratio.
 The result is $\PP^n\slice k$, and its global sections are $k$, so it is not affine for $n\geq1$.
 :::
 
