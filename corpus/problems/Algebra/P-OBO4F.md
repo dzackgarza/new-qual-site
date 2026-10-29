@@ -15,20 +15,44 @@ review: draft
 
 ::: {.problem}
 Let $G$ be a finite group of order $n$. Prove that
-\[
+$$
 g^n=e
-\]
+$$
 for every $g\in G$.
 :::
 
 ::: {.solution}
-For any $g\in G$, the cyclic subgroup $\langle g\rangle$ has order $|g|$. By Lagrange's theorem,
-\[
-|g|\mid |G|=n.
-\]
-Write $n=k|g|$. Then
-\[
-g^n=g^{k|g|}=(g^{|g|})^k=e.
-\]
-Thus every element satisfies $g^{|G|}=e$.
+Let $g\in G$, and let $\abs{g}$ denote its order.
+
+::: pf
+
+::: {.pf-step #divides}
+
+$\abs{g}\mid n$.
+
+::: pf-proof
+
+The cyclic subgroup $\langle g\rangle$ has order $\abs{g}$, and by Lagrange's theorem its order divides $\abs{G}=n$.
+
+:::
+
+:::
+
+::: pf-step
+
+$g^n=e$.
+
+::: pf-proof
+
+By step [](#divides){.pf-ref}, write $n=k\abs{g}$. Then
+$$
+g^n=\bigl(g^{\abs{g}}\bigr)^k=e^k=e.
+$$
+
+:::
+
+:::
+
+:::
+
 :::
