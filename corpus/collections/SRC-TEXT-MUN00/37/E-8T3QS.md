@@ -64,8 +64,6 @@ When $\alpha$ is the largest element of $J$, one has a contradiction.
 :::
 
 ::: {.solution}
-**Goal:** Prove the Lemma (generalized Tube Lemma for slices) and complete the transfinite induction proof of the Tychonoff Product Theorem via the Well-Ordering Theorem.
-
 ::: pf
 
 ::: {.pf-step #tube-lemma-for-slices}
@@ -179,7 +177,7 @@ Since $\mathcal{A}$ covers $X$, the single point $Y_\Omega$ is covered by a sing
 :::
 
 ::: pf-step
-Therefore, every basic open cover of $X$ has a finite subcover, proving $X = \prod_{\alpha \in J} X_\alpha$ is compact. Q.E.D.
+Therefore, every basic open cover of $X$ has a finite subcover, proving $X = \prod_{\alpha \in J} X_\alpha$ is compact.
 :::
 
 :::
