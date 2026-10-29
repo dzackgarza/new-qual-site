@@ -37,19 +37,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
-### Duplicate UFD cards D-INULL and FD-25SUQ
-
-- **Object and need:** `D-INULL` and `FD-25SUQ` in `corpus/theory/Algebra`. Both cards gave the full definition of a unique factorization domain, including existence and uniqueness up to order and associates.
-
-- **Observed evidence:** the complete statements are mathematically identical; `D-INULL` is the dependency used by the UFD theorems and polynomial-ring material, while `FD-25SUQ` came from the flashcard migration.
-  The wiki and algebra guide displayed both adjacent to one another.
-
-- **Impact and owner:** the duplicate flashcard creates a second defining occurrence and splits review/navigation without adding mathematics.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair moves the flashcard review prompt to `D-INULL`, removes duplicate reader-facing references, and deletes `FD-25SUQ`.
-
 ### Duplicate composition-series cards D-FYX4I and FD-PLAEO
 
 - **Object and need:** `D-FYX4I` and `FD-PLAEO` in `corpus/theory/Algebra`. They define the same finite normal series, with `D-FYX4I` descending by maximal proper normal subgroups and `FD-PLAEO` ascending with simple successive quotients.
