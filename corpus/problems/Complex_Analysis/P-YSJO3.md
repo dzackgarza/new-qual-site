@@ -16,9 +16,9 @@ review: draft
 
 ::: {.exercise}
 Find the number of zeros in $\abs{z} < 2$ of
-\[
-h(z) \definedas z^5 + 3z + 1
-.\]
+$$
+h(z) \coloneqq z^5 + 3z + 1.
+$$
 
 :::
 
@@ -28,8 +28,26 @@ Compare $h$ with $z^5$ on $\abs{z} = 2$ and apply Rouché's theorem.
 
 ::: {.solution}
 
-- Big: $F(z) \definedas z^5$ so $\abs{F(z)} = 2^5 = 32$ on $\abs{z} = 2$
-- Small: $g(z) \definedas p(z) - F(z) = 3z+1$, so $\abs{g(z)} \leq 3\abs{z}+ 1 = 7$ on $\abs{z} = 2$.
+::: pf
 
-Then $\abs{g}\leq \abs{F}$ on $\abs{z} = 2$, $Z_{p} = Z_F = 5$.
+::: {.pf-step #compare}
+$\abs{3z+1}<\abs{z^5}$ on $\abs{z}=2$.
+
+::: pf-proof
+On $\abs{z}=2$, $\abs{z^5}=32$ and $\abs{3z+1}\le3\abs{z}+1=7$.
+:::
+
+:::
+
+::: pf-step
+$h$ has $\boxed{5}$ zeros in $\abs{z}<2$, counted with multiplicity.
+
+::: pf-proof
+By step [](#compare){.pf-ref} and Rouché's theorem, $h=z^5+(3z+1)$ has as many zeros in $\abs{z}<2$ as $z^5$, which has a zero of order $5$ at $0$.
+:::
+
+:::
+
+:::
+
 :::
