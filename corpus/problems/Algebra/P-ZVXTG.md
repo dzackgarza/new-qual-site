@@ -19,22 +19,50 @@ review: draft
 What's the relation between the number of conjugacy classes in a finite group and the number of irreducible representations?
 :::
 
-
 ::: {.solution}
-Assume representations are finite-dimensional over $\CC$. Let $k(G)$ denote the number of conjugacy classes of the finite group $G$.
+Representations are finite-dimensional over $\CC$. Let $k(G)$ be the number of conjugacy classes of the finite group $G$, let $\operatorname{Cl}(G)$ be the space of complex-valued class functions on $G$, and give it the inner product
+$$
+\inner{\chi}{\psi}=\frac1{\abs{G}}\sum_{g\in G}\chi(g)\overline{\psi(g)}.
+$$
 
-The space $\operatorname{Cl}(G)$ of complex-valued class functions on $G$ has dimension $k(G)$: a class function is determined independently by one value on each conjugacy class.
+::: pf
 
-On the other hand, the irreducible characters of $G$ form an orthonormal basis of $\operatorname{Cl}(G)$ for the inner product
-\[
-\langle\chi,\psi\rangle
-=\frac1{|G|}\sum_{g\in G}\chi(g)\overline{\psi(g)}.
-\]
-Orthogonality gives linear independence. Completeness follows from the regular representation, or equivalently from the standard character-theoretic fact that every class function is a linear combination of irreducible characters.
+::: {.pf-step #dim}
 
-Therefore the number of irreducible complex characters, equivalently the number of isomorphism classes of irreducible complex representations, equals the dimension of $\operatorname{Cl}(G)$:
-\[
-\boxed{\#\operatorname{Irr}(G)=k(G).}
-\]
-Thus a finite group has exactly as many irreducible complex representations as conjugacy classes.
+$\dim\operatorname{Cl}(G)=k(G)$.
+
+::: pf-proof
+
+A class function is determined by its values on the conjugacy classes, and these values are arbitrary, so the indicator functions of the classes form a basis.
+
+:::
+
+:::
+
+::: {.pf-step #basis}
+
+The irreducible characters of $G$ form an orthonormal basis of $\operatorname{Cl}(G)$.
+
+::: pf-proof
+
+They are orthonormal by the row orthogonality relations, hence linearly independent, and they span $\operatorname{Cl}(G)$ by the standard completeness theorem of character theory.
+
+:::
+
+:::
+
+::: pf-step
+
+The number of isomorphism classes of irreducible complex representations of $G$ is $\boxed{k(G)}$.
+
+::: pf-proof
+
+Irreducible representations are determined up to isomorphism by their characters, so their number is the number of irreducible characters, which is $\dim\operatorname{Cl}(G)$ by step [](#basis){.pf-ref} and equals $k(G)$ by step [](#dim){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::
