@@ -28,15 +28,15 @@ Show that every proper ideal in a commutative ring with identity is contained in
 
 ::: {.solution}
 Let $I\subsetneq R$ and consider
-\[
+$$
 \mathcal F=\{J\trianglelefteq R: I\subseteq J\subsetneq R\},
-\]
+$$
 ordered by inclusion. This set is nonempty since $I\in\mathcal F$.
 
-If $\mathcal C\subseteq\mathcal F$ is a chain, then
-\[
+The empty chain has the upper bound $I$. If $\mathcal C\subseteq\mathcal F$ is a nonempty chain, then
+$$
 J=\bigcup_{L\in\mathcal C}L
-\]
+$$
 is an ideal: any two of its elements lie in a common member of the chain. It contains $I$. Moreover $J$ is proper, since $1\in J$ would imply $1\in L$ for some $L\in\mathcal C$, contradicting $L\ne R$. Hence every chain has an upper bound in $\mathcal F$.
 
 By Zorn's lemma, $\mathcal F$ has a maximal element $\mathfrak m$. By definition, $\mathfrak m$ is a proper ideal containing $I$ and no larger proper ideal contains it. Therefore $\mathfrak m$ is maximal.
