@@ -27,39 +27,23 @@ Can a polynomial over a division ring (skew-field) have more roots than its degr
 :::
 
 ::: {.solution}
-Yes. Over a noncommutative division ring, a polynomial can have more roots than its degree.
+Let $\HH$ be the Hamilton quaternions, and let $S=\{bi+cj+dk:b,c,d\in\RR,\ b^2+c^2+d^2=1\}$.
 
-Take the Hamilton quaternions $\mathbb H$ and the polynomial
-\[
-p(x)=x^2+1.
-\]
-For every pure imaginary unit quaternion
-\[
-q=bi+cj+dk,
-\qquad
-b^2+c^2+d^2=1,
-\]
-one has
-\[
-q^2
-=b^2i^2+c^2j^2+d^2k^2
-+bc(ij+ji)+bd(ik+ki)+cd(jk+kj).
-\]
-Using
-\[
-i^2=j^2=k^2=-1,\qquad ij=-ji,\quad ik=-ki,\quad jk=-kj,
-\]
-this becomes
-\[
-q^2=-(b^2+c^2+d^2)=-1.
-\]
-Thus
-\[
-p(q)=q^2+1=0.
-\]
-The unit sphere
-\[
-\{bi+cj+dk:b^2+c^2+d^2=1\}
-\]
-therefore consists entirely of roots of the quadratic polynomial $x^2+1$. Hence a degree-$2$ polynomial over the division ring $\mathbb H$ has infinitely many roots.
+::: pf
+
+::: pf-step
+Every $q\in S$ satisfies $q^2+1=0$.
+
+::: pf-proof
+Expanding with $i^2=j^2=k^2=-1$ and $ij=-ji$, $ik=-ki$, $jk=-kj$, the cross terms cancel and $q^2=-(b^2+c^2+d^2)=-1$.
+:::
+
+:::
+
+::: pf-qed
+$\boxed{\text{Yes}}$: the degree-$2$ polynomial $x^2+1$ over the division ring $\HH$ has the infinitely many roots in $S$.
+:::
+
+:::
+
 :::
