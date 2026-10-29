@@ -12,20 +12,47 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source leaves the interval I undeclared; the statement takes I=[0,1], the interval the solution uses.
 ---
 
 ::: {.problem}
-Show that the Dirichlet function $f(x) = \chi_{I \intersect \QQ}$ is not Riemann integrable and is everywhere discontinuous.
+Let $I=[0,1]$. Show that the Dirichlet function $f(x) = \chi_{I \intersect \QQ}$ on $I$ is not Riemann integrable and is everywhere discontinuous.
 :::
 
 ::: {.solution}
-Check $\sup f = 1$ and $\inf f = 0$ on every sub-interval, so $L(f, P) = 0$ and $U(f, P) = 1$ for every partition $P$ of $[0, 1]$.
-Hence the upper and lower Darboux integrals differ ($\overline{\int_0^1} f = 1 \neq 0 = \underline{\int_0^1} f$), so $f$ is not Riemann integrable.
+::: pf
 
-Discontinuity: fix $x \in [0,1]$.
-Every open interval around $x$ contains both rational and irrational points (both $\QQ$ and $\RR \setminus \QQ$ are dense in $\RR$).
-On the rational points of any such interval, $f$ takes the value $1$; on the irrational points, $f$ takes the value $0$.
-Therefore, for any $\delta > 0$ there are points $y, z$ with $|y - x| < \delta$ and $|z - x| < \delta$ such that $f(y) = 1$ and $f(z) = 0$, so $|f(y) - f(z)| = 1$.
-This means $f$ fails the $\varepsilon$-$\delta$ definition of continuity at $x$ for any $\varepsilon < 1$ (indeed, no limit $\lim_{y \to x} f(y)$ can exist, since approaching $x$ along rationals gives $1$ and along irrationals gives $0$).
-Since $x$ was arbitrary, $f$ is discontinuous at every point of $[0,1]$.
+::: {.pf-step #oscillation}
+Every open interval $J$ meeting $I$ in more than one point contains points $y,z\in I$ with $f(y)=1$ and $f(z)=0$.
+
+::: pf-proof
+$J\cap I$ is a nondegenerate interval, and $\QQ$ and $\RR\setminus\QQ$ are both dense in $\RR$.
+:::
+
+:::
+
+::: pf-step
+$f$ is not Riemann integrable on $I$.
+
+::: pf-proof
+By step [](#oscillation){.pf-ref}, on every subinterval of a partition $P$ of $I$ we have $\sup f=1$ and $\inf f=0$, so $U(f,P)=1$ and $L(f,P)=0$. The upper and lower Darboux integrals are $1\neq0$.
+:::
+
+:::
+
+::: pf-step
+$f$ is discontinuous at every $x\in I$.
+
+::: pf-proof
+For every $\delta>0$, step [](#oscillation){.pf-ref} applied to $(x-\delta,x+\delta)$ gives $y,z$ within $\delta$ of $x$ with $\abs{f(y)-f(z)}=1$, so $\abs{f(y)-f(x)}\ge\frac12$ or $\abs{f(z)-f(x)}\ge\frac12$. Continuity at $x$ fails for $\varepsilon=\frac12$.
+:::
+
+:::
+
+:::
+
 :::
