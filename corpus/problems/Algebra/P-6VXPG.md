@@ -22,37 +22,37 @@ audit:
 ---
 
 ::: {.problem}
-Let $f(x) \in \mathbb{Z}[x]$ be an irreducible polynomial of degree $n \ge 2$, and let $K/\mathbb{Q}$ be its splitting field with $\operatorname{Gal}(K/\mathbb{Q}) \cong S_n$.
-What algebraic, geometric, and field-theoretic properties must the roots $\alpha_1, \alpha_2, \dots, \alpha_n \in \mathbb{C}$ of $f(x)$ satisfy?
+Let $f(x) \in \ZZ[x]$ be an irreducible polynomial of degree $n \ge 2$, and let $K/\QQ$ be its splitting field with $\Gal(K/\QQ) \cong S_n$.
+What algebraic, geometric, and field-theoretic properties must the roots $\alpha_1, \alpha_2, \dots, \alpha_n \in \CC$ of $f(x)$ satisfy?
 :::
 
 ::: {.solution}
-Let \(K\) be the splitting field and identify \(G=\operatorname{Gal}(K/\mathbb Q)\) with the full permutation group \(S_n\) on the roots.
+Let $K$ be the splitting field and identify $G=\Gal(K/\QQ)$ with the full permutation group $S_n$ on the roots.
 
-Since the characteristic is \(0\), the roots \(\alpha_1,\dots,\alpha_n\) are distinct. Irreducibility gives transitivity, hence each root has degree
-\[
-[\mathbb Q(\alpha_i):\mathbb Q]=n.
-\]
-More generally, after ordering the roots, the pointwise stabilizer of \(\alpha_1,\dots,\alpha_k\) is naturally \(S_{n-k}\). By Galois correspondence,
-\[
-[\mathbb Q(\alpha_1,\dots,\alpha_k):\mathbb Q]
+Since the characteristic is $0$, the roots $\alpha_1,\dots,\alpha_n$ are distinct. Irreducibility gives transitivity, hence each root has degree
+$$
+[\QQ(\alpha_i):\QQ]=n.
+$$
+More generally, after ordering the roots, the pointwise stabilizer of $\alpha_1,\dots,\alpha_k$ is naturally $S_{n-k}$. By Galois correspondence,
+$$
+[\QQ(\alpha_1,\dots,\alpha_k):\QQ]
 =[S_n:S_{n-k}]=\frac{n!}{(n-k)!}
-\]
-for \(0\le k\le n-1\); adjoining the last root does not enlarge the field. In particular \([K:\mathbb Q]=n!\).
+$$
+for $0\le k\le n-1$; adjoining the last root does not enlarge the field. In particular $[K:\QQ]=n!$.
 
-Every polynomial relation over \(\mathbb Q\) among the ordered roots is transported to another valid relation by every permutation in \(S_n\): if
-\(P(\alpha_1,\dots,\alpha_n)=0\), then
-\[
+Every polynomial relation over $\QQ$ among the ordered roots is transported to another valid relation by every permutation in $S_n$: if
+$P(\alpha_1,\dots,\alpha_n)=0$, then
+$$
 P(\alpha_{\sigma(1)},\dots,\alpha_{\sigma(n)})=0
 \quad(\sigma\in S_n).
-\]
-Thus the ideal of polynomials \(P\in\mathbb Q[x_1,\dots,x_n]\) with \(P(\alpha_1,\dots,\alpha_n)=0\) is stable under permuting the variables.
+$$
+Thus the ideal of polynomials $P\in\QQ[x_1,\dots,x_n]$ with $P(\alpha_1,\dots,\alpha_n)=0$ is stable under permuting the variables.
 
-The discriminant \(\Delta(f)\) is not a square in \(\mathbb Q\), because otherwise the Galois group would lie in \(A_n\). For \(n\ge3\), the unique index-two subgroup of \(S_n\) is \(A_n\), so the unique quadratic intermediate field is
-\[
-\mathbb Q(\sqrt{\Delta(f)}).
-\]
-For \(n=2\), \(K=\mathbb Q(\sqrt{\Delta(f)})\).
+The discriminant $\Delta(f)$ is not a square in $\QQ$, because otherwise the Galois group would lie in $A_n$. For $n\ge3$, the unique index-two subgroup of $S_n$ is $A_n$, so the unique quadratic intermediate field is
+$$
+\QQ(\sqrt{\Delta(f)}).
+$$
+For $n=2$, $K=\QQ(\sqrt{\Delta(f)})$.
 
-Finally, complex conjugation is an element of \(G\); as a permutation of the roots it fixes the real roots and swaps each nonreal conjugate pair. Thus its cycle type records exactly the number of real and nonreal roots.
+Finally, complex conjugation is an element of $G$; as a permutation of the roots it fixes the real roots and swaps each nonreal conjugate pair. Thus its cycle type records exactly the number of real and nonreal roots.
 :::
