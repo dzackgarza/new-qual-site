@@ -5,7 +5,7 @@ kind: fact
 title: Tor groups among $\ZZ/n$, $\ZZ$ and $\QQ$
 slogan: 'Over $\ZZ$, $\Tor_1(\ZZ/n, \ZZ/m)\cong\ZZ/\gcd(m,n)$, $\Tor_1(A, B) = 0$ when $A$ or $B$ is torsion-free, and $\Tor_k = 0$ for $k\geq 2$.'
 prompts:
-- What are the groups $\operatorname{Tor}^{\mathbf{Z}}_*$ among $\ZZ/n$, $\ZZ$ and $\QQ$?
+- What are the groups $\Tor^{\ZZ}_*$ among $\ZZ/n$, $\ZZ$ and $\QQ$?
 classification:
   areas:
   - topology
