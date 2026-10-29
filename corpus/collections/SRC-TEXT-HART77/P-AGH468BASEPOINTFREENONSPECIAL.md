@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AGH468BASEPOINTFREENONSPECIAL
 kind: problem
-title: A base-point-free nonspecial divisor of degree $d$ exists iff $d \geq g+1$
+title: A base-point-free nonspecial divisor of positive degree $d$ exists iff $d \geq g+1$
 classification:
   areas:
   - algebraic-geometry
@@ -31,26 +31,14 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Hartshorne IV.6.8 prints the equivalence for every degree d, which fails for the zero divisor on P^1 (g=d=0). The statement now assumes d>0.
 ---
 
 ::: {.problem}
-A curve $X$ of genus $g$ has a nonspecial divisor $D$ of degree $d$ such that $\abs{D}$ has no base points if and only if $d \geq g+1$.
-:::
-
-::: {.remark title="Erratum"}
-As printed, there is one exceptional case.  If $g=0$, then
-$X\cong\PP^1$ and the zero divisor is nonspecial and has base-point-free
-complete linear system, but its degree is $0<g+1$.
-
-Thus the stated equivalence is correct for $d>0$.  Without the positivity
-assumption, the complete statement is that such a divisor exists exactly when
-$$
-d\ge g+1
-$$
-or
-$$
-(g,d)=(0,0).
-$$
+Let $d>0$. A curve $X$ of genus $g$ has a nonspecial divisor $D$ of degree $d$ such that $\abs{D}$ has no base points if and only if $d \geq g+1$.
 :::
 
 ::: {.solution}
@@ -358,28 +346,9 @@ step [](#s6){.pf-ref} proves it when $g\ge1$.
 
 :::
 
-::: {.pf-step #s8}
-
-Without the positivity assumption, the only additional case is
-$$
-\boxed{(g,d)=(0,0)}.
-$$
-
-::: pf-proof
-
-The zero divisor on $\PP^1$ supplies this case, as recorded in the erratum.
-Step [](#s1){.pf-ref} shows that no other case with $d<g+1$ can occur.
-
-:::
-
-:::
-
 ::: pf-qed
 
-for the corrected statement.
-
-Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} give exactly the corrected classification stated in the
-erratum.
+Step [](#s7){.pf-ref} is the statement.
 
 :::
 
