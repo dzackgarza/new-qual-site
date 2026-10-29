@@ -16,73 +16,86 @@ review: draft
 ::: {.exercise}
 Suppose $f:\DD\to \DD$ is holomorphic and $f(0)=0$.
 Show that
-\[
+$$
 \abs{f(z)+f(-z)}\le 2\abs z^2
 \qquad(z\in\DD).
-\]
+$$
 If equality holds at some $z_0\neq0$, show that
-\[
+$$
 f(z)=\lambda z^2
-\]
+$$
 for some $\abs\lambda=1$.
 :::
 
 ::: {.solution}
-By Schwarz's lemma, $|f(z)|\le |z|$.
-Hence
-\[
-g(z)=
-\begin{cases}
-f(z)/z,&z\neq0,\\
-f'(0),&z=0
-\end{cases}
-\]
-is holomorphic on $\DD$ and satisfies $|g|\le1$.
-Set
-\[
-h(z)=\frac{g(z)-g(-z)}2.
-\]
-Then $h$ is holomorphic, $h(0)=0$, and $|h(z)|\le1$.
-Schwarz's lemma gives $|h(z)|\le|z|$.
-Since
-\[
-f(z)+f(-z)=z\bigl(g(z)-g(-z)\bigr)=2zh(z),
-\]
-we obtain
-\[
-|f(z)+f(-z)|\le2|z|^2.
-\]
+Let $g(z)=f(z)/z$ for $z\ne0$ and $g(0)=f'(0)$, and let
+$$
+h(z)=\frac{g(z)-g(-z)}2,\qquad e(z)=\frac{g(z)+g(-z)}2.
+$$
 
-Suppose equality holds at some $z_0\neq0$.
-Then $|h(z_0)|=|z_0|$, so the equality case of Schwarz's lemma gives
-\[
-h(z)=\lambda z,
-\qquad |\lambda|=1.
-\]
-Let
-\[
-e(z)=\frac{g(z)+g(-z)}2.
-\]
-Then
-\[
-g(z)=e(z)+\lambda z,
-\qquad
-g(-z)=e(z)-\lambda z.
-\]
-Because $|g(z)|,|g(-z)|\le1$, the parallelogram identity yields
-\[
-2|e(z)|^2+2|z|^2
-=|g(z)|^2+|g(-z)|^2
-\le2,
-\]
-so $|e(z)|\le\sqrt{1-|z|^2}$.
-On $|z|=r<1$ this gives $|e(z)|\le\sqrt{1-r^2}$; by the maximum modulus principle the same bound holds on $|z|\le r$.
-Letting $r\uparrow1$ shows $e\equiv0$.
-Therefore
-\[
-g(z)=\lambda z,
-\qquad
-f(z)=zg(z)=\lambda z^2.
-\]
-Conversely, these maps attain equality for every $z$.
+::: pf
+
+::: {.pf-step #g-bound}
+$g$ and $h$ are holomorphic on $\DD$, $\abs g\le1$, and $\abs{h(z)}\le\abs z$.
+
+::: pf-proof
+By the Schwarz lemma $\abs{f(z)}\le\abs z$, so $g$ is holomorphic with $\abs g\le1$.
+Then $h$ is holomorphic, $\abs h\le1$, and $h(0)=0$, so the Schwarz lemma gives $\abs{h(z)}\le\abs z$.
+:::
+
+:::
+
+::: {.pf-step #inequality}
+$\abs{f(z)+f(-z)}\le 2\abs z^2$ for $z\in\DD$.
+
+::: pf-proof
+$f(z)+f(-z)=z\bigl(g(z)-g(-z)\bigr)=2zh(z)$, and step [](#g-bound){.pf-ref} bounds $\abs{h(z)}$ by $\abs z$.
+:::
+
+:::
+
+::: pf-step
+If equality holds at some $z_0\ne0$, then $f(z)=\lambda z^2$ with $\abs\lambda=1$.
+
+::: pf-proof
+
+::: {.pf-step #h-rotation}
+$h(z)=\lambda z$ for some $\abs\lambda=1$.
+
+::: pf-proof
+By the identity in step [](#inequality){.pf-ref}, equality at $z_0$ means $\abs{h(z_0)}=\abs{z_0}$, and the equality case of the Schwarz lemma applies.
+:::
+
+:::
+
+::: {.pf-step #e-zero}
+$e\equiv0$.
+
+::: pf-proof
+By step [](#h-rotation){.pf-ref}, $g(z)=e(z)+\lambda z$ and $g(-z)=e(z)-\lambda z$.
+The parallelogram identity and $\abs g\le1$ give
+$$
+2\abs{e(z)}^2+2\abs{z}^2=\abs{g(z)}^2+\abs{g(-z)}^2\le2,
+$$
+so $\abs{e(z)}\le\sqrt{1-\abs z^2}$.
+By the maximum modulus principle $\abs e\le\sqrt{1-r^2}$ on $\abs z\le r$ for each $r<1$, and letting $r\to1$ gives $e\equiv0$.
+:::
+
+:::
+
+::: pf-step
+$f(z)=\lambda z^2$.
+
+::: pf-proof
+By steps [](#h-rotation){.pf-ref} and [](#e-zero){.pf-ref}, $g=e+h=\lambda z$, so $f(z)=zg(z)=\lambda z^2$.
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
 :::
