@@ -58,7 +58,7 @@ $\mathfrak m$ is proper since $1\notin\mathfrak m$. Every proper ideal consists 
 
 ::: pf-proof
 
-A fraction $a/s$ with $a\notin\mathfrak p$ is a unit with inverse $s/a$. A fraction $a/s$ with $a\in\mathfrak p$ is not a unit: if $(a/s)(b/t)=1$, then $u(ab-st)=0$ for some $u\notin\mathfrak p$, so $uab=ust\notin\mathfrak p$, contradicting $a\in\mathfrak p$. Hence the nonunits of $R_{\mathfrak p}$ form the ideal $\mathfrak pR_{\mathfrak p}$. Also $R_{\mathfrak p}\ne0$, since $1/1$ is a unit. Step [](#ideal-criterion){.pf-ref} applies.
+A fraction $a/s$ with $a\notin\mathfrak p$ is a unit with inverse $s/a$. A fraction $a/s$ with $a\in\mathfrak p$ is not a unit: if $(a/s)(b/t)=1$, then $u(ab-st)=0$ for some $u\notin\mathfrak p$, so $uab=ust\notin\mathfrak p$, contradicting $a\in\mathfrak p$. Hence the nonunits of $R_{\mathfrak p}$ form the ideal $\mathfrak pR_{\mathfrak p}$. In particular $0/1\ne1/1$, so $R_{\mathfrak p}\ne0$. Step [](#ideal-criterion){.pf-ref} applies.
 
 :::
 
