@@ -17,25 +17,17 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Cleaned Real Analysis Problem 26 against page 10 of the source PDF and added an erratum remark for the missing hypothesis ab > 0.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source states the identity for all real a, b, which fails when ab <= 0. The statement now assumes ab > 0.
 ---
 
 ::: {.problem}
-Show that $\displaystyle\int_0^1 \frac{dx}{(ax + b(1-x))^2} = \frac{1}{ab}$, $a, b \in \mathbb{R}$.
-:::
-
-::: {.remark}
-Erratum: as stated, with arbitrary $a, b \in \mathbb{R}$, the identity is false.
-For $a = 1$, $b = -1$ the integrand is $\frac{1}{(2x-1)^2}$, which is not integrable near $x = \frac{1}{2}$, so the integral diverges, while $\frac{1}{ab} = -1$.
-More generally, if $ab < 0$ then $ax + b(1-x)$ vanishes at $x = \frac{b}{b-a} \in (0,1)$ and the integral diverges, and if $ab = 0$ the right-hand side is undefined.
-The identity holds under the corrected hypothesis $ab > 0$, that is, $a$ and $b$ nonzero of the same sign.
+Show that $\displaystyle\int_0^1 \frac{dx}{(ax + b(1-x))^2} = \frac{1}{ab}$, $a, b \in \mathbb{R}$, $ab > 0$.
 :::
 
 ::: {.solution}
-
-Assume
-$$
-ab>0.
-$$
 
 ::: pf
 
@@ -178,7 +170,7 @@ $$
 
 ::: {.pf-step #s1-6}
 
-Hence, under the corrected hypothesis $ab>0$,
+Hence, for $ab>0$,
 $$
 \boxed{
 \int_0^1
@@ -199,7 +191,7 @@ Step [](#s1-1){.pf-ref} handles $a=b$, and step [](#s1-5){.pf-ref} handles $a\ne
 
 ::: pf-qed
 
-Step [](#s1-6){.pf-ref} is the corrected intended identity.
+Step [](#s1-6){.pf-ref} is the required identity.
 
 :::
 
