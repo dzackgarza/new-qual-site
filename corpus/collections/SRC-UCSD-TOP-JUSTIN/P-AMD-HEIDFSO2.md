@@ -13,10 +13,15 @@ classification:
   - Homological Algebra
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source printed H^*(X; Z) on the left of the cohomology formula and omitted the conjunction; it now reads H^*(X; Q) = Hom(H_*(X; Z), Q).
 ---
 
 ::: {.problem}
-Show that $H_*(X; \QQ) = H_*(X;\ZZ)\tensor \QQ$ $H^*(X; \ZZ) = \hom(H_*(X; \ZZ), \QQ)$
+Show that $H_*(X; \QQ) = H_*(X;\ZZ)\tensor \QQ$ and $H^*(X; \QQ) = \hom(H_*(X; \ZZ), \QQ)$.
 :::
 
 ::: {.solution}
@@ -25,7 +30,7 @@ Show that $H_*(X; \QQ) = H_*(X;\ZZ)\tensor \QQ$ $H^*(X; \ZZ) = \hom(H_*(X; \ZZ),
 
 ::: pf-step
 
-The homology statement is correct:
+The homology statement holds:
 $$
 \boxed{H_n(X;\mathbb Q)\cong H_n(X;\mathbb Z)\otimes\mathbb Q.}
 $$
@@ -44,7 +49,7 @@ The group $\mathbb Q$ is flat over $\mathbb Z$, so the Tor term vanishes.
 
 ::: pf-step
 
-The cohomology formula in the card has a coefficient typo. The correct statement is
+The cohomology statement holds:
 $$
 \boxed{H^n(X;\mathbb Q)\cong \operatorname{Hom}_{\mathbb Z}(H_n(X;\mathbb Z),\mathbb Q).}
 $$
@@ -59,21 +64,6 @@ $$
 \to0.
 $$
 The abelian group $\mathbb Q$ is divisible, hence injective as a $\mathbb Z$-module, so the Ext term vanishes.
-
-:::
-
-:::
-
-::: pf-step
-
-As literally written, $H^*(X;\mathbb Z)=\operatorname{Hom}(H_*(X;\mathbb Z),\mathbb Q)$ is false.
-
-::: pf-proof
-
-Take $X=S^1$. Then $H^1(S^1;\mathbb Z)\cong\mathbb Z$, whereas
-$$
-\operatorname{Hom}(H_1(S^1;\mathbb Z),\mathbb Q)\cong\operatorname{Hom}(\mathbb Z,\mathbb Q)\cong\mathbb Q.
-$$
 
 :::
 
