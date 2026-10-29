@@ -22,7 +22,7 @@ A hexagon with the identifications $a+b+c-a-b-c$
 :::
 
 ::: {.solution}
-**Goal:** Identify the closed 2-dimensional surface $X$ represented by a regular hexagon whose perimeter edges are identified according to the boundary word $w = a b c a^{-1} b^{-1} c^{-1}$, compute its Euler characteristic $\chi(X)$, classify the surface, and determine its fundamental group $\pi_1(X)$.
+Let $X$ be the quotient of a regular hexagon whose perimeter edges are identified according to the boundary word $w = a b c a^{-1} b^{-1} c^{-1}$.
 
 ::: pf
 
