@@ -5,7 +5,7 @@ kind: problem
 title: "Second symmetric difference quotient of a polynomial with step $3h$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Taylor Series, Limits]
 relations: []
 review: draft
 audit:
