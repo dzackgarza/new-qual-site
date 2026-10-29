@@ -26,9 +26,9 @@ audit:
 ::: {.pf-step #s1}
 
 For every $x\ne0$,
-\[
-\left|\frac{x-1}{x}-1\right|=\frac1{|x|}.
-\]
+$$
+\abs{\frac{x-1}{x}-1}=\frac1{\abs{x}}.
+$$
 
 ::: pf-proof
 
@@ -38,25 +38,19 @@ Subtracting the fractions gives $(x-1)/x-1=-1/x$. Taking absolute values yields 
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
-The limit is $\boxed{\lim_{x\to-\infty}(x-1)/x=1}$.
+$\lim_{x\to-\infty}(x-1)/x=1$.
 
 ::: pf-proof
 
-Given $\varepsilon>0$, choose $M=1/\varepsilon$. If $x<-M$, then $|x|=-x>M$, and by step [](#s1){.pf-ref},
-\[
-\left|\frac{x-1}{x}-1\right|=\frac1{|x|}<\frac1M=\varepsilon.
-\]
+Given $\varepsilon>0$, choose $M=1/\varepsilon$. If $x<-M$, then $\abs{x}=-x>M$, and by step [](#s1){.pf-ref},
+$$
+\abs{\frac{x-1}{x}-1}=\frac1{\abs{x}}<\frac1M=\varepsilon.
+$$
 This is the definition of convergence to $1$ as $x\to-\infty$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s2){.pf-ref} proves the requested limit.
 
 :::
 
