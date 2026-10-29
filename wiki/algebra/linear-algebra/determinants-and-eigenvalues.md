@@ -35,8 +35,7 @@ Over a perfect field, every linear operator $T$ has a unique Jordan--Chevalley d
 
 [[PR-WDPF7]]
 
-Square matrices $A$ and $B$ are [[D-JIGMN|similar]] if $B=PA\inverseof{P}$ for an invertible $P$, and $m\times n$ matrices are [[D-JRPTK|equivalent]] if $B=PAQ$ for invertible $P$ and $Q$.
-Similar matrices have the same characteristic polynomial, minimal polynomial, and Jordan form; two matrices over a field are equivalent if and only if they have the same size and rank.
+[[D-JIGMN|Similar]] matrices have the same characteristic polynomial, minimal polynomial, and Jordan form; two matrices over a field are [[D-JRPTK|equivalent]] if and only if they have the same size and rank.
 
 [[D-JIGMN]]
 
@@ -153,7 +152,7 @@ Since $\det\colon\GL_n(\FF_q)\to\FF_q^\times$ is surjective with kernel $\SL_n(\
 
 [[PR-UQ3XJ]]
 
-## Exercises
+## Problems
 
 [[E-LJ7PF]]
 
