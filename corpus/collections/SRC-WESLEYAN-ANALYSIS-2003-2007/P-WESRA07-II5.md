@@ -29,27 +29,47 @@ $$
 :::
 
 ::: {.solution}
-For $x\in[0,1]$, Bernoulli's inequality gives
-$$
-(1+x^2)^n\ge 1+n x^2.
-$$
-Hence
-$$
-0\le \frac{1+n x^2}{(1+x^2)^n}\le1
-$$
-for every $n$ and every $x\in[0,1]$.
 
-For each fixed $x>0$, the denominator grows exponentially in $n$, while the numerator grows only linearly.
-More explicitly,
-$$
-\frac{1+n x^2}{(1+x^2)^n}\longrightarrow0.
-$$
-At $x=0$ the integrand equals $1$, but this single point is irrelevant for Lebesgue integration.
-Thus the integrands converge almost everywhere to $0$ and are dominated by the integrable function $1$.
+Let $f_n(x) \coloneqq \frac{1+n x^2}{(1+x^2)^n}$ on $[0,1]$.
 
-By the Dominated Convergence Theorem,
-$$
-\boxed{
-\lim_{n\to\infty}\int_0^1\frac{1+n x^2}{(1+x^2)^n}\,dx=0.}
-$$
+::: pf
+
+::: {.pf-step #bound}
+
+$0\le f_n\le1$ on $[0,1]$ for every $n$.
+
+::: pf-proof
+
+Bernoulli's inequality gives $(1+x^2)^n\ge 1+n x^2$.
+
+:::
+
+:::
+
+::: {.pf-step #limit}
+
+$f_n(x)\to0$ for every $x\in(0,1]$.
+
+::: pf-proof
+
+With $q = 1+x^2 > 1$, the numerator $1+nx^2$ grows linearly in $n$ and the denominator $q^n$ grows exponentially, so the ratio tends to $0$.
+
+:::
+
+:::
+
+::: pf-step
+
+$\displaystyle\lim_{n\to\infty}\int_0^1 f_n(x)\,dx=\boxed{0}$.
+
+::: pf-proof
+
+By steps [](#bound){.pf-ref} and [](#limit){.pf-ref}, $f_n\to0$ almost everywhere on $[0,1]$ with the integrable bound $1$, so the dominated convergence theorem applies.
+
+:::
+
+:::
+
+:::
+
 :::
