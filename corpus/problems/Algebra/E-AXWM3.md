@@ -25,20 +25,17 @@ audit:
 ---
 
 ::: {.problem}
-24. Prove that the Galois group of the polynomial $x^{n}-1$ over $Q$ is abelian.
+Prove that the Galois group of the polynomial $x^{n}-1$ over $\QQ$ is abelian.
 :::
 
 
 ::: {.solution}
+Let $\zeta_n$ be a primitive $n$-th root of unity and let $K=\QQ(\zeta_n)$.
 
 ::: pf
 
 ::: pf-step
-Let $\zeta_n$ be a primitive $n$-th root of unity and let
-$$
-K=\QQ(\zeta_n).
-$$
-Then $K$ is the splitting field of $x^n-1$ over $\QQ$.
+The field $K$ is the splitting field of $x^n-1$ over $\QQ$.
 
 ::: pf-proof
 Every root of $x^n-1$ is a power of $\zeta_n$, hence belongs to $\QQ(\zeta_n)$. Conversely, every splitting field contains a primitive $n$-th root of unity, so it contains $\QQ(\zeta_n)$.
