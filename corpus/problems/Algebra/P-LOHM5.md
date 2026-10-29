@@ -22,46 +22,62 @@ audit:
 ---
 
 ::: {.problem}
-- Let $p$ be a prime and $\abs{G} = p^3$.
-  Prove that $G$ has a normal subgroup $N$ of order $p^2$.
+Let $p$ be a prime and $\abs{G} = p^3$.
 
-  - Suppose $N = \generators{h}$ is cyclic and classify all possibilities for $G$ if:
+(a) Prove that $G$ has a normal subgroup $N$ of order $p^2$.
 
-    - $\abs h = p^3$
+(b) Suppose $N = \generators{h}$ is cyclic and classify all possibilities for $G$ if:
 
-    - $\abs h = p$.
+(i) $\abs h = p^3$
 
-    > Hint: Sylow and semidirect products.
+(ii) $\abs h = p$.
+:::
+
+::: {.hint}
+Sylow and semidirect products.
 :::
 
 ::: {.solution}
-First, every group $G$ of order $p^3$ has a normal subgroup of order $p^2$. Since $G$ is a nontrivial finite $p$-group, $Z(G)\ne1$.
 
-If $|Z(G)|\ge p^2$, then $Z(G)$ contains a subgroup of order $p^2$, and every subgroup of the center is normal.
+::: pf
 
-If $|Z(G)|=p$, then $G/Z(G)$ has order $p^2$ and is abelian. Choose any subgroup
-\[
-L/Z(G)\le G/Z(G)
-\]
-of order $p$. Because $G/Z(G)$ is abelian, $L/Z(G)$ is normal, hence its inverse image $L$ is normal in $G$; moreover
-\[
-|L|=p^2.
-\]
-Thus a normal subgroup of order $p^2$ always exists.
+::: pf-step
+(a) $G$ has a normal subgroup of order $p^2$.
 
-The remaining bullets in the problem, read literally, are incompatible with the preceding hypothesis. If the same subgroup is assumed to satisfy
-\[
-N=\langle h\rangle,\qquad |N|=p^2,
-\]
-then necessarily
-\[
-|h|=p^2.
-\]
-Therefore neither case $|h|=p^3$ nor case $|h|=p$ can occur for that $N$.
+::: pf-proof
+Since $G$ is a nontrivial finite $p$-group, $Z(G)\ne1$ by the class equation.
 
-If instead one merely asks what happens when **an element of $G$** has order $p^3$, then that element generates all of $G$, so
-\[
-G\cong C_{p^3}.
-\]
-The condition that $G$ merely contain an element of order $p$ gives no classification at all: every group of order $p^3$ contains such an element by Cauchy's theorem.
+::: pf-step
+If $\abs{Z(G)}\ge p^2$, the claim holds.
+
+::: pf-proof
+The $p$-group $Z(G)$ has a subgroup of order $p^2$, and every subgroup of the center is normal.
+:::
+
+:::
+
+::: pf-step
+If $\abs{Z(G)}=p$, the claim holds.
+
+::: pf-proof
+Then $G/Z(G)$ has order $p^2$, so it is abelian. Choose a subgroup $L/Z(G)$ of order $p$; it is normal in the abelian group $G/Z(G)$, so its preimage $L$ is normal in $G$, and $\abs{L}=p\cdot p=p^2$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+(b) Neither case occurs for the subgroup $N$ of part (a); if instead $G$ has an element $h$ of order $p^3$, then $G=\generators{h}\cong C_{p^3}$, and the existence of an element of order $p$ imposes no condition on $G$.
+
+::: pf-proof
+If $N=\generators{h}$ has order $p^2$, then $\abs h=p^2$, which is neither $p^3$ nor $p$. An element of order $p^3=\abs G$ generates $G$. Every group of order $p^3$ has an element of order $p$ by Cauchy's theorem.
+:::
+
+:::
+
+:::
+
 :::
