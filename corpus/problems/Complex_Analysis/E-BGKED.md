@@ -12,45 +12,65 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: 'The source reads "Show that f = u+iv with u, v in C^1(R) satisfying the Cauchy-Riemann equations on Omega, then f is holomorphic on Omega with f''(z) = df/dx = (1/i) df/dy = (1/2)(u_x + i v_x)". The statement takes u, v in C^1(Omega), supplies "if", and drops the factor 1/2, which belongs to the Wirtinger derivative and makes the last equality false.'
 ---
 
 ::: {.exercise}
-Show that $f = u+iv$ with $u, v\in C^1(\RR)$ satisfying the Cauchy-Riemann equations on $\Omega$, then $f$ is holomorphic on $\Omega$ with
-\[
-f'(z) = \dd{f}{x} = {1\over i} \dd{f}{y} = {1\over 2}\qty{u_x + iv_x}
-.\]
+Let $\Omega\subseteq\CC$ be open. Show that if $f = u+iv$ with $u, v\in C^1(\Omega)$ satisfying the Cauchy-Riemann equations on $\Omega$, then $f$ is holomorphic on $\Omega$ with
+$$
+f'(z) = \dd{f}{x} = \frac{1}{i} \dd{f}{y} = u_x + iv_x.
+$$
 Conversely, show that if $f$ is holomorphic, then $f$ satisfies the Cauchy-Riemann equations.
 :::
 
 ::: {.solution}
-**Direction 1: Holomorphic $\implies$ CR.**
+Fix $z_0 = x_0 + iy_0 \in \Omega$, write $h=\Delta x+i\Delta y$, and evaluate all partial derivatives at $(x_0,y_0)$.
 
-Suppose $f'(z_0)$ exists for some $z_0 = x_0 + iy_0 \in \Omega$. Since the limit
-$$f'(z_0) = \lim_{h\to 0,\, h\in \CC} \frac{f(z_0 + h) - f(z_0)}{h}$$
-exists, we may approach along the real and imaginary axes.
+::: pf
 
-Along $h = t \in \RR$:
-$$f'(z_0) = \lim_{t\to 0} \frac{f(x_0 + t, y_0) - f(x_0, y_0)}{t} = f_x(x_0, y_0).$$
-Along $h = it$, $t \in \RR$:
-$$f'(z_0) = \lim_{t\to 0} \frac{f(x_0, y_0 + t) - f(x_0, y_0)}{it} = \frac{1}{i} f_y(x_0, y_0).$$
-Equating the two expressions for $f'(z_0)$ and writing $f = u + iv$:
-$$f_x = \frac{1}{i} f_y \implies i(u_x + iv_x) = u_y + iv_y \implies -v_x + iu_x = u_y + iv_y.$$
-Comparing real and imaginary parts: $u_x = v_y$ and $u_y = -v_x$.
+::: {.pf-step #axes}
+If $f'(z_0)$ exists, then $f'(z_0)=f_x=\frac1i f_y$.
 
-**Direction 2: CR $\implies$ holomorphic.**
-
-Suppose $u, v \in C^1(\Omega)$ satisfy $u_x = v_y$ and $u_y = -v_x$ on $\Omega$. Write $h = \Delta x + i\Delta y$. By the multivariable Taylor theorem (since $u, v$ are $C^1$):
-$$u(x_0 + \Delta x, y_0 + \Delta y) - u(x_0, y_0) = u_x \Delta x + u_y \Delta y + o(|h|),$$
-$$v(x_0 + \Delta x, y_0 + \Delta y) - v(x_0, y_0) = v_x \Delta x + v_y \Delta y + o(|h|),$$
-where the partial derivatives are evaluated at $(x_0, y_0)$. Using the CR equations $u_y = -v_x$ and $v_y = u_x$:
-$$f(z_0 + h) - f(z_0) = (u_x \Delta x - v_x \Delta y) + i(v_x \Delta x + u_x \Delta y) + o(|h|).$$
-The first two terms factor as $(u_x + iv_x)(\Delta x + i\Delta y) = (u_x + iv_x) h$, so:
-$$\frac{f(z_0 + h) - f(z_0)}{h} = (u_x + iv_x) + \frac{o(|h|)}{h}.$$
-Since $|o(|h|)/h| \to 0$ as $h \to 0$, the limit exists and $f'(z_0) = u_x + iv_x = u_x - iu_y$.
+::: pf-proof
+The limit $f'(z_0) = \lim_{h\to 0} \frac{f(z_0 + h) - f(z_0)}{h}$ may be taken along $h = t\in\RR$, giving $f_x(x_0,y_0)$, and along $h = it$ with $t\in\RR$, giving $\frac1i f_y(x_0,y_0)$.
+:::
 
 :::
 
-::: {.remark}
-The last expression in the statement has a spurious factor: $f'(z)=\dd{f}{x}=u_x+iv_x$. The factor ${1\over2}$ belongs to the Wirtinger derivative ${\partial f\over\partial z}={1\over2}\qty{\dd{f}{x}-i\dd{f}{y}}$, which equals $f'(z)$ for holomorphic $f$.
+::: pf-step
+If $f$ is holomorphic, then $u_x = v_y$ and $u_y = -v_x$.
+
+::: pf-proof
+By step [](#axes){.pf-ref}, $i(u_x + iv_x) = u_y + iv_y$, that is, $-v_x + iu_x = u_y + iv_y$.
+Compare real and imaginary parts.
 :::
 
+:::
+
+::: pf-step
+If $u,v\in C^1(\Omega)$ satisfy the Cauchy--Riemann equations, then $f$ is holomorphic with $f'=\dd fx=\frac1i\dd fy=u_x+iv_x$.
+
+::: pf-proof
+Since $u$ and $v$ are $C^1$, they are differentiable at $(x_0,y_0)$:
+$$
+\begin{aligned}
+u(x_0 + \Delta x, y_0 + \Delta y) - u(x_0, y_0) &= u_x \Delta x + u_y \Delta y + o(\abs h),\\
+v(x_0 + \Delta x, y_0 + \Delta y) - v(x_0, y_0) &= v_x \Delta x + v_y \Delta y + o(\abs h).
+\end{aligned}
+$$
+Substituting $u_y = -v_x$ and $v_y = u_x$,
+$$
+f(z_0 + h) - f(z_0) = (u_x \Delta x - v_x \Delta y) + i(v_x \Delta x + u_x \Delta y) + o(\abs h) = (u_x + iv_x)h + o(\abs h).
+$$
+Dividing by $h$ and letting $h\to0$ gives $f'(z_0) = u_x + iv_x=\dd fx$, and step [](#axes){.pf-ref} gives $\dd fx=\frac1i\dd fy$.
+:::
+
+:::
+
+:::
+
+:::
