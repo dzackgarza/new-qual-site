@@ -22,8 +22,6 @@ Show that $S^3 - \{p_0, p_1\} \simeq S^2$
 :::
 
 ::: {.solution}
-**Goal:** Prove that the complement of two distinct points in the 3-sphere, $S^3 \setminus \{p_0, p_1\}$, is homotopy equivalent to $S^2$.
-
 ::: pf
 
 ::: {.pf-step #s1}
@@ -93,11 +91,11 @@ For all $x \in \RR^3 \setminus \{0\}$ and $t \in [0, 1]$, $(1-t) + \frac{t}{\|x\
 Thus $H$ is a well-defined continuous map into $\RR^3 \setminus \{0\}$.
 :::
 
-::: {.pf-step #s4-5}
-$H(x, 0) = x = \operatorname{id}_{\RR^3 \setminus \{0\}}(x)$, $H(x, 1) = \iota(r(x))$, and for every $s \in S^2$ and $t \in [0, 1]$, $H(s, t) = s$.
+::: pf-step
+$H(x, 0) = x$, $H(x, 1) = \iota(r(x))$, and $H(s, t) = s$ for every $s \in S^2$ and $t \in [0, 1]$, so $H$ is a strong deformation retraction onto $S^2$.
 
 ::: pf-proof
-The three identities in step [](#s4-5){.pf-ref} are exactly the defining conditions of a strong deformation retraction: $H(\cdot, 0) = \operatorname{id}$, $H(\cdot, 1) = \iota \circ r$, and $H$ fixes $S^2$ pointwise throughout.
+Substitute $t = 0$ and $t = 1$ into the formula for $H$. For $s \in S^2$, $\|s\| = 1$, so $H(s, t) = (1-t)s + ts = s$.
 :::
 
 :::
@@ -106,8 +104,8 @@ The three identities in step [](#s4-5){.pf-ref} are exactly the defining conditi
 
 :::
 
-::: {.pf-step #s5}
-Homotopy equivalence is an equivalence relation preserved under homeomorphisms.
+::: pf-step
+$S^3 \setminus \{p_0, p_1\} \simeq S^2$.
 
 ::: pf-proof
 
@@ -121,10 +119,6 @@ Composing homotopy equivalences yields a homotopy equivalence: $$S^3 \setminus \
 
 :::
 
-:::
-
-::: pf-qed
-Combining steps [](#s1){.pf-ref} through [](#s5){.pf-ref} establishes $S^3 \setminus \{p_0, p_1\} \simeq S^2$.
 :::
 
 :::
