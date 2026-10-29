@@ -9,10 +9,7 @@ topics:
 # Banach and Hilbert spaces
 
 Recall that a [[D-BG455|Banach space]] is a normed space that is complete in its norm, and a [[D-7QQUO|Hilbert space]] is an inner product space that is complete in the norm $\norm x\coloneqq\inner xx^{1/2}$; every Hilbert space is a Banach space.
-In a Hilbert space $H$, closed subspaces have orthogonal complements and orthogonal projections, and for an orthonormal set $\theset{e_n}$ Bessel's inequality $\sum_n \abs{\inner{x}{e_n}}^2\leq\norm x^2$ holds for every $x\in H$.
-Parseval's identity, equality for every $x$, holds exactly when $\theset{e_n}$ is an orthonormal basis.
-The Riesz--Fischer theorem gives the converse: for an orthonormal set $\theset{e_n}$ and a square-summable sequence $(c_n)$, $\sum_n c_ne_n$ converges in $H$ to an element with coefficients $c_n$.
-The Riesz representation theorem states that every bounded linear functional on $H$ is $x\mapsto\inner{x}{y}$ for a unique $y\in H$, with the inner product linear in its first argument.
+In a Hilbert space $H$, closed subspaces have orthogonal complements and orthogonal projections.
 
 [[PR-L35O7]]
 

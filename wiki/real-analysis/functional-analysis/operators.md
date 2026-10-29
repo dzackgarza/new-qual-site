@@ -13,8 +13,6 @@ For normed spaces $X$ and $Y$ and a linear map $T\colon X\to Y$, the operator no
 $$
 \norm{T}\coloneqq\sup_{\norm{x}\le 1}\norm{Tx}.
 $$
-$T$ is continuous if and only if it is continuous at $0$, if and only if $\norm T<\infty$.
-The dual space $X^*$ of bounded linear functionals, with the operator norm, is a Banach space for every normed space $X$, since $\RR$ and $\CC$ are complete.
 
 [[T-5IWCG]]
 
