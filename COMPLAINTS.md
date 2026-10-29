@@ -164,19 +164,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair moves the review prompt to `D-KGGWK`, removes the duplicate wiki link, and deletes `FD-KSKDG`.
 
-### Duplicate generated-subfield card FD-QPNDA
-
-- **Object and need:** `FD-J3HIA` and `FD-QPNDA` in `corpus/theory/Algebra`. Both define `$K(\alpha)$` as the smallest subfield of an ambient extension containing `$K$` and `$\alpha$`.
-
-- **Observed evidence:** the definition bodies are identical.
-  `FD-QPNDA` declared itself `variant-of: FD-J3HIA` and also repeated the already-false `variant-of: FD-3V3ZW` edge to the generated subring `$K[\alpha]$`. The wiki and algebra guide exposed both generated-subfield cards.
-
-- **Impact and owner:** the duplicate adds no mathematics and reintroduces the subfield/subring conflation repaired on `FD-J3HIA`.
-
-- **Uncertainty:** none after reading both complete generated-subfield cards.
-
-- **Repair:** a `CARD-04` repair moves the additional review prompt to `FD-J3HIA`, removes duplicate reader-facing references, and deletes `FD-QPNDA`.
-
 ### UCSD covering-spaces subgroup matching card holds no recoverable posed task
 
 - **Object and need:** `P-O2J6S` in `SRC-UNSORTED-TOPOLOGY`.
