@@ -60,6 +60,8 @@ For a group $G$ of automorphisms of a field $L$, the [[D-5FG7E|fixed field]] $L^
 
 [[FD-3GZPO]]
 
+[[D-99IUP]]
+
 [[PR-IK6AM]]
 
 ## Cyclotomic polynomials

@@ -18,7 +18,7 @@ topics:
 
 [[PR-TZN4M]]
 
-For a finite extension $L = K(\alpha_1,\ldots,\alpha_r)$ inside an algebraic closure $\overline K$, the [[D-XD5NG|normal closure]] of $L/K$ is the splitting field over $K$ of the product of the minimal polynomials of $\alpha_1,\ldots,\alpha_r$; it is the smallest normal extension of $K$ in $\overline K$ containing $L$.
+For a finite extension $L = K(\alpha_1,\ldots,\alpha_r)$ inside an [[D-99IUP|algebraic closure]] $\overline K$, the [[D-XD5NG|normal closure]] of $L/K$ is the splitting field over $K$ of the product of the minimal polynomials of $\alpha_1,\ldots,\alpha_r$; it is the smallest normal extension of $K$ in $\overline K$ containing $L$.
 For example, the normal closure of $\QQ(2^{1/4})/\QQ$ is $\QQ(2^{1/4}, i)$, the splitting field of $x^4-2$.
 
 ::: {.remark title="Normality is not transitive"}
