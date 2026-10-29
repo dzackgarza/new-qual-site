@@ -5,7 +5,7 @@ kind: fact
 title: Diameter of a set
 slogan: 'The diameter is the supremum of the distances between pairs of points of the set.'
 prompts:
-- What is the diameter of set?
+- What is the diameter of a set?
 classification:
   areas:
   - real-analysis
