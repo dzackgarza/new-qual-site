@@ -22,31 +22,41 @@ audit:
 ---
 
 ::: {.problem}
-- Show that \( \generators{ 2, x }\normal \ZZ[x]  \) is not a principal ideal.
+Show that $\generators{ 2, x }\normal \ZZ[x]$ is not a principal ideal.
 :::
 
 ::: {.solution}
-Let
-\[
-I=(2,x)\subset\mathbb Z[x].
-\]
-Suppose $I=(f)$ were principal. Since $2\in(f)$, the polynomial $f$ divides the constant polynomial $2$. Because $\mathbb Z[x]$ is a domain,
-\[
-\deg f=0,
-\]
-so $f$ is an integer divisor of $2$. Up to a unit,
-\[
-f=1\quad\text{or}\quad f=2.
-\]
+Let $I=(2,x)\subseteq\ZZ[x]$.
 
-If $f=2$, then $(f)=(2)$ does not contain $x$. If $f=1$, then $(f)=\mathbb Z[x]$, but $I$ is proper: reduction modulo $2$ followed by evaluation at $x=0$ gives a homomorphism
-\[
-\mathbb Z[x]\to\mathbb F_2
-\]
-whose kernel contains $(2,x)$ but not $1$.
+::: pf
 
-Both possibilities are impossible. Therefore
-\[
-\boxed{(2,x)\text{ is not principal in }\mathbb Z[x]}.
-\]
+::: {.pf-step #constant}
+If $I=(f)$, then $f=\pm1$ or $f=\pm2$.
+
+::: pf-proof
+$2\in(f)$ gives $2=fg$; in the domain $\ZZ[x]$ degrees add, so $\deg f=0$ and $f$ is an integer dividing $2$.
+:::
+
+:::
+
+::: {.pf-step #proper}
+$I\ne\ZZ[x]$.
+
+::: pf-proof
+The kernel of the homomorphism $\ZZ[x]\to\FF_2$ given by reduction modulo $2$ and evaluation at $0$ contains $2$ and $x$ but not $1$.
+:::
+
+:::
+
+::: pf-step
+$\boxed{I\text{ is not principal.}}$
+
+::: pf-proof
+By step [](#constant){.pf-ref}, $(f)$ would be $\ZZ[x]$, which step [](#proper){.pf-ref} excludes, or $(2)$, which does not contain $x$.
+:::
+
+:::
+
+:::
+
 :::
