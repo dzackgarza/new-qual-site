@@ -21,7 +21,6 @@ audit:
 ::: {.problem}
 Find a conformal map
 
-```
 1.  from $\{ z: |z - 1/2| > 1/2, \text{Re}(z)>0 \}$ to $\halfplane$
 
 2.  from $\{ z: |z - 1/2| > 1/2, |z| <1  \}$ to $\DD$
@@ -30,12 +29,11 @@ Find a conformal map
     ${\halfplane}$ to ${\DD}$.
 
 4.  from ${\DD}  \backslash [a, 1)$ to
-    ${\DD} \backslash [0, 1)$ ($0<a<1)$. \[ Short solution
-    possible using Blaschke factor\]
+    ${\DD} \backslash [0, 1)$ ($0<a<1$). [Short solution
+    possible using Blaschke factor]
 
 5.  from $\{ z: |z| < 1, \text{Re}(z) > 0 \} \backslash (0, 1/2]$ to
     $\halfplane$.
-```
 :::
 
 ::: {.solution}
