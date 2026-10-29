@@ -12,24 +12,48 @@ classification:
   - Ideals
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source reads "Maximal $\implies$ prime, but generally not the converse." with no ring and no request; the statement declares a commutative ring with identity and asks for the proof and a counterexample to the converse.'
 ---
 
 ::: {.problem}
-Maximal $\implies$ prime, but generally not the converse.
+Let $R$ be a commutative ring with identity. Show that every maximal ideal of $R$ is prime, but that a prime ideal need not be maximal.
 :::
 
 ::: {.solution}
 
-- Suppose $\mm$ is maximal, $ab\in \mm$, and $b\not\in \mm$.
+::: pf
 
-- Then there is a containment of ideals $\mm \subsetneq \mm + (b) \implies \mm + (b) = R$.
+::: pf-step
 
-- So
-\[
-1 = m + rb \implies a = am + r(ab)
-,\]
-  but $am\in \mm$ and $ab\in \mm \implies a\in \mm$.
+Every maximal ideal $\mm$ of $R$ is prime.
 
+::: pf-proof
 
-The ideal $(0) \subset \ZZ$ is prime since $\ZZ$ is a domain, but not maximal since $(0) \subsetneq (2) \subsetneq \ZZ$.
+The ideal $\mm$ is proper by definition.
+Suppose $ab\in\mm$ and $b\notin\mm$.
+Then $\mm\subsetneq\mm+(b)$, so maximality gives $\mm+(b)=R$, and $1=m+rb$ for some $m\in\mm$ and $r\in R$.
+Hence $a=am+r(ab)$, and both $am$ and $r(ab)$ lie in $\mm$, so $a\in\mm$.
+
+:::
+
+:::
+
+::: pf-step
+
+The ideal $(0)\subset\ZZ$ is prime but not maximal.
+
+::: pf-proof
+
+It is prime because $\ZZ$ is an integral domain, and it is not maximal because $(0)\subsetneq(2)\subsetneq\ZZ$.
+
+:::
+
+:::
+
+:::
+
 :::
