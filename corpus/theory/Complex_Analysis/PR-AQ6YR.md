@@ -26,11 +26,13 @@ R(z) \coloneqq (z, a,b,c) = {z - b\over z-c}\cdot{a - c\over a - b}
 $$
 is a [[D-FRVBV|Möbius transformation]] with $R(a)=1$, $R(b)=0$, and $R(c)=\infty$.
 
-(b) If one of $a,b,c$ is $\infty$, the factors containing it are deleted, and the resulting Möbius transformation has the same three values: $$ (z,\infty,b,c)={z-b\over z-c},\qquad (z,a,\infty,c)={a-c\over z-c},\qquad (z,a,b,\infty)={z-b\over a-b}.
+(b) If one of $a,b,c$ is $\infty$, the factors containing it are deleted, and the resulting Möbius transformation has the same three values:
+$$
+(z,\infty,b,c)={z-b\over z-c},\qquad (z,a,\infty,c)={a-c\over z-c},\qquad (z,a,b,\infty)={z-b\over a-b}.
 $$
 
 (c) For distinct $z_1,z_2,z_3$ and distinct $w_1,w_2,w_3$ in $\CC\cup\theset{\infty}$, let $R_z(z)\coloneqq(z,z_1,z_2,z_3)$ and $R_w(w)\coloneqq(w,w_1,w_2,w_3)$.
-    Then $T\coloneqq \inverseof{R_w}\circ R_z$ is a Möbius transformation with $T(z_j)=w_j$ for $j=1,2,3$.
+Then $T\coloneqq \inverseof{R_w}\circ R_z$ is a Möbius transformation with $T(z_j)=w_j$ for $j=1,2,3$.
 :::
 
 ::: {.proof}
