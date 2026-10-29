@@ -39,3 +39,13 @@ $$
 
 Part 1 is in [@Rud76].
 :::
+
+::: {.remark title="Variations"}
+The Lagrange form holds on a closed interval with the expansion point allowed at an endpoint.
+Let $a<b$, $n\geq1$ and $c\in[a,b]$, and let $f\colon[a,b]\to\RR$ have $f^{(n-1)}$ continuous on $[a,b]$ and $f^{(n)}$ defined on $(a,b)$.
+Then for every $x\in[a,b]$ with $x\neq c$ there exists $\xi$ strictly between $c$ and $x$ with
+$$
+f(x)=\sum_{k=0}^{n-1}\frac{f^{(k)}(c)}{k!}(x-c)^k+\frac{f^{(n)}(\xi)}{n!}(x-c)^{n}.
+$$
+In particular, if $\abs{f^{(n)}(t)}\leq M$ for all $t\in(a,b)$, then the remainder satisfies $\abs{R_n(x)}\leq M\abs{x-c}^{n}/n!$ for all $x\in[a,b]$.
+:::
