@@ -10,8 +10,6 @@ topics:
 
 ## Free modules, rank, and torsion
 
-An $R$-module is [[D-LIEMF|free]] if it has a basis, equivalently if it is isomorphic to $\bigoplus_{i\in I}R$ for some set $I$; over a commutative ring $R\neq0$ the cardinality of $I$ is its [[FD-CVEAI|rank]]. Over an integral domain, a free module is [[D-ZJJ7G|torsion-free]]; if $r\neq0$ and $x=\sum_i c_ie_i\neq0$ in a basis $(e_i)$, then $rx=\sum_i rc_ie_i\neq0$.
-
 [[D-LIEMF]]
 
 [[FD-CVEAI]]
@@ -26,8 +24,6 @@ An $R$-module is [[D-LIEMF|free]] if it has a basis, equivalently if it is isomo
 
 ## Projective modules
 
-An $R$-module is [[D-RHJMK|projective]] if and only if it is a direct summand of a free module.
-Every free module is projective, and every short exact sequence $0\to A\to B\to P\to0$ with $P$ projective splits.
 Over a PID, a finitely generated torsion-free module is free, so finitely generated projective and free modules coincide.
 
 [[D-RHJMK]]
