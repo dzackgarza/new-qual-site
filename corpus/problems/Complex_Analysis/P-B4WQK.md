@@ -24,38 +24,58 @@ Take a disc $D$ centered at a point of $\RR$ and show $f$ is holomorphic in $D$ 
 
 ::: {.solution}
 
-- Note $f$ is continuous on $\CC$ since analytic implies continuous ($f$ equals its power series, where the partials sums uniformly converge to it, and uniform limit of continuous is continuous).
+Let $D$ be an open disc centered at a point of $\RR$.
+By Morera's theorem it suffices to show $\int_{\partial\Delta}f=0$ for every closed triangle $\Delta\subset D$.
 
-- Let $\Delta \subset D$ be a triangle in $D$.
+::: pf
 
-- Case 1: If $\Delta \intersect \RR = 0$, then $f$ is holomorphic on $\Delta$ and $\int_\Delta f = 0$.
+::: {.pf-step #off-axis}
+If $\Delta\cap\RR=\emptyset$, then $\int_{\partial\Delta}f=0$.
 
-- Case 2: one side or vertex of $\Delta$ intersects $\RR$, and wlog the rest of $\Delta$ is in $\HH^+$.
+::: pf-proof
+$\Delta$ lies in the convex set $D\cap\{\Im z>0\}$ or $D\cap\{\Im z<0\}$, on which $f$ is holomorphic, so Goursat's theorem applies.
+:::
 
-  - Then let $\Delta_\eps$ be the perturbation $\Delta + i\eps = \theset{z+ i\eps \suchthat z\in \Delta}$; then $\Delta_\eps \intersect \RR = 0$ and $\int_{\Delta_\eps} f = 0$.
+:::
 
-  - Now let $\eps\to 0$ and conclude by continuity of $f$.
+::: {.pf-step #touching}
+If $\Delta$ meets $\RR$ and lies in $\{\Im z\ge0\}$ (or in $\{\Im z\le0\}$), then $\int_{\partial\Delta}f=0$.
 
-    - Parametrize $\Delta$ by a piecewise-smooth closed curve $\gamma: [a,b] \to \CC$, and write $\gamma_\eps(t) \definedas \gamma(t) + i\eps$ for the corresponding parametrization of $\Delta_\eps$.
-      Then $\gamma_\eps'(t) = \gamma'(t)$, so
-      \begin{align*}
-      \int_{\Delta_\eps} f = \int_a^b f(\gamma_\eps(t)) \gamma_\eps'(t)\,dt = \int_a^b f(\gamma(t) + i\eps) \gamma'(t)\,dt.
-      \end{align*}
+::: pf-proof
+Treat $\Im z\ge0$; the other case is symmetric.
+For small $\varepsilon>0$ the translate $\Delta_\varepsilon\coloneqq\Delta+i\varepsilon$ lies in $D\cap\{\Im z>0\}$, so $\int_{\partial\Delta_\varepsilon}f=0$ by step [](#off-axis){.pf-ref}.
+Parametrize $\partial\Delta$ by a piecewise smooth $\gamma:[a,b]\to\CC$ with $\abs{\gamma'}\le M$; then
+$$
+\abs{\int_{\partial\Delta_\varepsilon}f-\int_{\partial\Delta}f}
+\le\int_a^b\abs{f(\gamma(t)+i\varepsilon)-f(\gamma(t))}\,\abs{\gamma'(t)}\,dt
+\le M(b-a)\sup_{t}\abs{f(\gamma(t)+i\varepsilon)-f(\gamma(t))}.
+$$
+$f$ is uniformly continuous on a compact neighborhood of $\partial\Delta$, so the right side tends to $0$ as $\varepsilon\to0$, and $\int_{\partial\Delta}f=0$.
+:::
 
-    - We claim this converges to $\int_\Delta f = \int_a^b f(\gamma(t))\gamma'(t)\,dt$ as $\eps \to 0$.
-      The image $\gamma([a,b])$ is compact, so $f$ is uniformly continuous on a compact neighborhood of it: for every $\eta > 0$ there is $\eps_0 > 0$ such that $|f(\gamma(t) + i\eps) - f(\gamma(t))| < \eta$ for all $t \in [a,b]$ and all $0 < \eps < \eps_0$.
-      Since $\gamma'$ is bounded on $[a,b]$ (it is continuous on a compact interval), say $|\gamma'(t)| \le M$, we get
-      \begin{align*}
-      \left| \int_a^b f(\gamma(t)+i\eps)\gamma'(t)\,dt - \int_a^b f(\gamma(t))\gamma'(t)\,dt \right|
-      \le \int_a^b |f(\gamma(t)+i\eps) - f(\gamma(t))|\,|\gamma'(t)|\,dt
-      \le \eta M (b-a),
-      \end{align*}
-      which tends to $0$ as $\eta \to 0$.
-      Hence $\int_{\Delta_\eps} f \to \int_\Delta f$, and since each $\int_{\Delta_\eps} f = 0$, we get $\int_\Delta f = 0$.
+:::
 
-- Case 3: $\Delta$ intersects both $\HH^+$ and $\HH^-$.
+::: pf-step
+$\int_{\partial\Delta}f=0$ for every closed triangle $\Delta\subset D$.
 
-  - Break into smaller triangles, each of which falls into one of the previous two cases.
+::: pf-proof
+If $\Delta$ meets both open half-planes, the real axis cuts $\Delta$ into at most three triangles, each lying in a closed half-plane.
+The integral over $\partial\Delta$ is the sum of the integrals over their boundaries, because the added edges are traversed in opposite directions, and each summand vanishes by step [](#off-axis){.pf-ref} or step [](#touching){.pf-ref}.
+:::
+
+:::
+
+::: pf-step
+$f$ is entire.
+
+::: pf-proof
+By Morera's theorem $f$ is holomorphic on each such disc $D$, and $f$ is holomorphic off $\RR$ by hypothesis.
+:::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}
