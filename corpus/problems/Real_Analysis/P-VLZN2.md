@@ -17,115 +17,135 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source did not name the domain, said that f with f, f-hat in L^1 is itself bounded and uniformly continuous, and asked whether a C^1 function equals its Fourier series without periodicity; the statement now works on R, says f agrees a.e. with such a function, and takes f to be 1-periodic for the Fourier series part.'
 ---
 
 ::: {.problem}
-- Show that if $f\in L^1$ then $\hat f$ is bounded and uniformly continuous.
 
-- Is it the case that $f\in L^1$ implies $\hat f\in L^1$?
+All functions below are complex-valued functions on $\RR$, and $\hat f(\xi) = \int_\RR f(x)e^{-2\pi i x\xi}\dx$.
 
-- Show that if $f, \hat f \in L^1$ then $f$ is bounded, uniformly continuous, and vanishes at infinity.
+(a) Show that if $f\in L^1$ then $\hat f$ is bounded and uniformly continuous.
 
-  - Show that this is not true for arbitrary $L^1$ functions.
+(b) Is it the case that $f\in L^1$ implies $\hat f\in L^1$?
 
-- Show that if $f\in L^1$ and $\hat f = 0$ almost everywhere then $f = 0$ almost everywhere.
+(c) Show that if $f, \hat f \in L^1$ then $f$ agrees almost everywhere with a function that is bounded, uniformly continuous, and vanishes at infinity. Show that this is not true for arbitrary $L^1$ functions.
 
-  - Prove that $\hat f = \hat g$ implies that $f=g$ a.e.
+(d) Show that if $f\in L^1$ and $\hat f = 0$ almost everywhere then $f = 0$ almost everywhere. Prove that $\hat f = \hat g$ implies that $f=g$ a.e.
 
-- Show that if $f, g \in L^1$ then $$\int \hat f g = \int f\hat g.$$
+(e) Show that if $f, g \in L^1$ then
+$$
+\int \hat f g = \int f\hat g.
+$$
+Give an example showing that this fails if $g$ is not bounded.
 
-  - Give an example showing that this fails if $g$ is not bounded.
+(f) Show that if $f$ is $1$-periodic and $C^1$ then $f$ is equal to its Fourier *series*.
 
-- Show that if $f\in C^1$ then $f$ is equal to its Fourier *series*.
 :::
+
 ::: {.solution}
-The Fourier transform is normalized as $\hat f(\xi) = \int f(x)e^{-2\pi i x\xi}\,dx$. Related solutions are E-WURI3, E-FZXFR, E-O742O, and E-TF33D.
+
+Related problems are [[E-WURI3]], [[E-FZXFR]], [[E-O742O]], and [[E-TF33D]].
 
 ::: pf
 
 ::: {.pf-step #s1}
-$\hat f$ is bounded and uniformly continuous.
+
+(a) $\hat f$ is bounded and uniformly continuous.
 
 ::: pf-proof
-boundedness: $|\hat f(\xi)| \le \int|f| = \norm{f}_1$.
 
-Uniform continuity: for $h \to 0$, \[ \hat f(\xi+h) - \hat f(\xi) = \int f(x) e^{-2\pi i x\xi}\big(e^{-2\pi i xh} - 1\big)\,dx, \] and the integrand is dominated by $2|f(x)| \in L^1$, so the dominated convergence theorem gives $\hat f(\xi+h) - \hat f(\xi) \to 0$ uniformly in $\xi$ (the domination is independent of $\xi$).
+Boundedness: $\abs{\hat f(\xi)} \le \int\abs{f} = \norm{f}_1$.
+
+Uniform continuity: for $h \in \RR$,
+$$
+\abs{\hat f(\xi+h) - \hat f(\xi)} \le \int \abs{f(x)}\,\abs{e^{-2\pi i xh} - 1}\dx,
+$$
+and the right side does not depend on $\xi$. Its integrand is dominated by $2\abs{f} \in L^1$ and tends to $0$ pointwise as $h \to 0$, so the dominated convergence theorem gives $\sup_\xi \abs{\hat f(\xi+h) - \hat f(\xi)} \to 0$.
+
 :::
 
 :::
 
 ::: pf-step
-$f \in L^1$ does not imply $\hat f \in L^1$.
+
+(b) No: $f \in L^1$ does not imply $\hat f \in L^1$.
 
 ::: pf-proof
-$f = \chi_{[-1,1]}$ has $\hat f(\xi) = \frac{\sin 2\pi\xi}{\pi\xi}$, which is not integrable (its absolute value integrates like $1/|\xi|$ at infinity).
 
-So the answer to the question is no.
+$f = \chi_{[-1,1]}$ has $\hat f(\xi) = \frac{\sin 2\pi\xi}{\pi\xi}$, which is not integrable: $\int_{k/2}^{(k+1)/2} \abs{\sin 2\pi\xi}\,d\xi = 1/\pi$ for every integer $k$, so $\int_{1/2}^\infty \abs{\hat f} \ge \sum_{k\ge1} \frac{2}{\pi^2 (k+1)} = \infty$.
+
 :::
 
 :::
 
 ::: {.pf-step #s3}
-If $f, \hat f \in L^1$, then $f$ is bounded, uniformly continuous, and vanishes at infinity.
+
+(c) If $f, \hat f \in L^1$, then $f$ agrees a.e. with a bounded, uniformly continuous function that vanishes at infinity; this fails for arbitrary $f \in L^1$.
 
 ::: pf-proof
-the Fourier inversion formula $f(x) = \int \hat f(\xi) e^{2\pi i x\xi}\,d\xi$ holds (valid a.e., and here the right side is a continuous function, so $f$ has a continuous representative).
 
-Boundedness: $|f(x)| \le \int|\hat f|$.
-Uniform continuity: same argument as step [](#s1){.pf-ref} with $f$ and $\hat f$ interchanged.
-Vanishing at infinity: $\hat f \in L^1$ and the Riemann--Lebesgue lemma applied to $\hat f$ give $f(x) \to 0$ as $|x| \to \infty$.
+By the Fourier inversion theorem, $f(x) = \int \hat f(\xi) e^{2\pi i x\xi}\,d\xi$ for almost every $x$. The right side is the Fourier transform of $\hat f \in L^1$ evaluated at $-x$, so it is bounded and uniformly continuous by step [](#s1){.pf-ref}, and it tends to $0$ as $\abs{x} \to \infty$ by the Riemann--Lebesgue lemma.
+
+For arbitrary $f \in L^1$ this fails: $f(x) = x^{-1/2}\chi_{(0,1)}(x)$ lies in $L^1$, but every function equal to it a.e. is unbounded near $0$.
+
 :::
 
 :::
 
 ::: pf-step
-This fails for arbitrary $L^1$ functions.
+
+(d) $\hat f = 0$ a.e. implies $f = 0$ a.e.; hence $\hat f = \hat g$ implies $f = g$ a.e.
 
 ::: pf-proof
-$\chi_{[-1,1]}$ is bounded and uniformly continuous but does not vanish at infinity.
 
-(A function that is merely in $L^1$ need not even be bounded: $f(x) = x^{-1/2}\chi_{(0,1)}$.)
+$\hat f$ is continuous by step [](#s1){.pf-ref}, so $\hat f = 0$ a.e. gives $\hat f = 0$ everywhere, and $\hat f \in L^1$. Step [](#s3){.pf-ref} gives $f(x) = \int 0 \, d\xi = 0$ for almost every $x$. For the second part, $\widehat{f-g} = \hat f - \hat g = 0$, so $f - g = 0$ a.e.
+
 :::
 
 :::
 
 ::: pf-step
-$\hat f = 0$ a.e. implies $f = 0$ a.e.; hence $\hat f = \hat g$ implies $f = g$ a.e.
+
+(e) $\int \hat f\,g = \int f\,\hat g$ for $f, g \in L^1$.
 
 ::: pf-proof
-apply step [](#s3){.pf-ref} to the case $\hat f = 0 \in L^1$: then $f$ equals the inverse transform of $0$, i.e. $f = 0$ everywhere (a.e.). For the second part, apply the first to $f - g$: $\widehat{f-g} = \hat f - \hat g = 0$ a.e., so $f - g = 0$ a.e.
+
+The function $(x,\xi) \mapsto f(x) g(\xi) e^{-2\pi i x\xi}$ has absolute value $\abs{f(x)}\abs{g(\xi)}$, which is integrable on $\RR^2$ with integral $\norm{f}_1\norm{g}_1$. Fubini's theorem gives
+$$
+\int \hat f(\xi) g(\xi)\,d\xi = \iint f(x) g(\xi) e^{-2\pi i x\xi}\dx\,d\xi = \int f(x) \Big(\int g(\xi) e^{-2\pi i x\xi}\,d\xi\Big)\dx = \int f\,\hat g.
+$$
+
 :::
 
 :::
 
 ::: pf-step
-$\int \hat f\,g = \int f\,\hat g$ for $f, g \in L^1$.
+
+(e) Without integrability of $g$ the identity can fail.
 
 ::: pf-proof
-by Tonelli--Fubini, \[ \int \hat f(\xi) g(\xi)\,d\xi = \int\!\!\int f(x) g(\xi) e^{-2\pi i x\xi}\,dx\,d\xi = \int f(x) \Big(\int g(\xi) e^{-2\pi i x\xi}\,d\xi\Big)\,dx = \int f\,\hat g, \] since $|f(x)g(\xi)|$ is integrable on the product space.
+
+Take $f(x) = e^{-\abs{x}}$, so $\hat f(\xi) = \frac{2}{1 + (2\pi\xi)^2}$, and the unbounded function $g(\xi) = 1 + (2\pi\xi)^2$, which is not in $L^1$. Then $\int \hat f\,g = \int 2\,d\xi = \infty$, while $\hat g$ is not defined as a Lebesgue integral, so the right side has no meaning.
+
 :::
 
 :::
 
 ::: pf-step
-The identity fails if $g$ is not bounded.
+
+(f) If $f$ is $1$-periodic and $C^1$, then $f(x) = \sum_{n\in\ZZ} \hat f(n) e^{2\pi i n x}$ for every $x$, where $\hat f(n) = \int_0^1 f(x)e^{-2\pi i n x}\dx$.
 
 ::: pf-proof
-take $f(x) = e^{-|x|}$, so $\hat f(\xi) = \frac{2}{1 + (2\pi\xi)^2}$, and $g(\xi) = 1 + (2\pi\xi)^2$, unbounded and not in $L^1$.
 
-Then $\int \hat f\,g = \int 2\,d\xi = \infty$ while $\hat g$ is not defined (as $g \notin L^1$), so the identity has no meaning.
-(See E-TF33D for the full treatment.)
-:::
+Integration by parts, with periodicity cancelling the boundary terms, gives $\widehat{f'}(n) = 2\pi i n \hat f(n)$, so $\hat f(n) = \widehat{f'}(n)/(2\pi i n)$ for $n \neq 0$. By the Cauchy--Schwarz inequality and Bessel's inequality,
+$$
+\sum_{n \neq 0}\abs{\hat f(n)} \le \Big(\sum_{n\neq 0}\frac{1}{(2\pi n)^2}\Big)^{1/2}\Big(\sum_n\abs{\widehat{f'}(n)}^2\Big)^{1/2} \le \Big(\sum_{n\neq 0}\frac{1}{(2\pi n)^2}\Big)^{1/2}\norm{f'}_{L^2[0,1]} < \infty.
+$$
+So the Fourier series converges absolutely and uniformly to a continuous $1$-periodic function $g$. Uniform convergence allows term-by-term integration, so $\hat g(n) = \hat f(n)$ for all $n$. The continuous function $f - g$ has all Fourier coefficients $0$; its Fejér means are then $0$ and converge uniformly to $f - g$ by Fejér's theorem, so $f = g$.
 
-:::
-
-::: pf-step
-If $f \in C^1$, then $f$ equals its Fourier series.
-
-::: pf-proof
-for $f \in C^1$, $\widehat{f'}(n) = 2\pi i n \hat f(n)$, so $\hat f(n) = \widehat{f'}(n)/(2\pi i n)$ for $n \neq 0$; by Parseval and Cauchy--Schwarz, \[ \sum_{n \neq 0}|\hat f(n)| \le \Big(\sum_{n\neq 0}\frac{1}{(2\pi n)^2}\Big)^{1/2}\Big(\sum_n|\widehat{f'}(n)|^2\Big)^{1/2} < \infty, \] so the Fourier series converges absolutely, hence uniformly, to $f$ (Fejér's theorem gives the pointwise/uniform limit $f$ since the series converges).
-
-(See E-TF33D for details.)
 :::
 
 :::
