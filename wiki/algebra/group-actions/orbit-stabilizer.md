@@ -162,8 +162,10 @@ $G$ acts on $\theset{H \st H\leq G}$ by conjugation.
 
 - The kernel is $\Intersect_{H\leq G} N_G(H)$.
 
-- Orbit-stabilizer gives the number of conjugates of $H$: $$ \size{\theset{ gHg ^{-1} \st g \in G } } = [G: N_G(H)].
-$$
+- Orbit-stabilizer gives the number of conjugates of $H$:
+  $$
+  \size{\theset{ gH\inverseof{g} \st g \in G } } = [G: N_G(H)].
+  $$
 :::
 
 ::: {.example title="Left translation on cosets: the normal core"}
@@ -178,7 +180,7 @@ For a proper subgroup $H < G$, $G$ acts on $G/H$ by left translation.
   &= \theset{g\in G \st \inverseof{x} g x\in H} \\
   &= xH\inverseof{x}.
   \end{aligned}
-$$
+  $$
 
 - $\Fix(\phi) = \emptyset$, because the action is transitive and $\size{G/H} > 1$.
 
