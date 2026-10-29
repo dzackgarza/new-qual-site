@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-- Show that if the minimal polynomial of a linear map $T$ is irreducible, then every $T\dash$invariant subspace has a $T\dash$invariant complement.
+Show that if the minimal polynomial of a linear map $T$ is irreducible, then every $T\dash$invariant subspace has a $T\dash$invariant complement.
 :::
 
 ::: {.solution}
@@ -34,17 +34,17 @@ Let $V$ be a finite-dimensional vector space over a field $F$, let $T\in\operato
 ::: pf-step
 
 The algebra
-\[
+$$
 K=F[x]/(m_T)
-\]
+$$
 is a field, and $V$ is naturally a vector space over $K$.
 
 ::: pf-proof
 
 Because $m_T$ is irreducible, the ideal $(m_T)$ is maximal in the PID $F[x]$, so $K$ is a field. Define
-\[
+$$
 [f(x)]\cdot v=f(T)v.
-\]
+$$
 This is well defined because $m_T(T)=0$, so two polynomials congruent modulo $m_T$ induce the same endomorphism of $V$. Thus the $F[x]$-module structure defined by $x\cdot v=T(v)$ factors through the field $K$.
 
 :::
@@ -72,9 +72,9 @@ Every $T$-invariant subspace has a $T$-invariant complement.
 ::: pf-proof
 
 Let $W\subseteq V$ be $T$-invariant. By step [](#s2){.pf-ref}, $W$ is a $K$-subspace of the $K$-vector space $V$. Extend a $K$-basis of $W$ to a $K$-basis of $V$, and let $U$ be the $K$-span of the added basis vectors. Then
-\[
+$$
 V=W\oplus U
-\]
+$$
 as $K$-vector spaces. Since $U$ is a $K$-subspace, step [](#s2){.pf-ref} shows that $U$ is $T$-invariant. Thus $U$ is the required invariant complement.
 
 :::
