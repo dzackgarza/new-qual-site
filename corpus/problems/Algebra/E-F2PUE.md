@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-5. If $F$ is over $E$, and $E$ is $\quad$ over $K$ is $F$ necessarily over $K$ ? Answer this question for each of the words "algebraic," "normal," and "separable" in the blanks.
+If $F$ is \_\_\_ over $E$, and $E$ is \_\_\_ over $K$, is $F$ necessarily \_\_\_ over $K$? Answer this question for each of the words "algebraic," "normal," and "separable" in the blanks.
 :::
 
 ::: {.solution}
@@ -105,7 +105,7 @@ Hence $x^4-2$ does not split over $F$, so $F/\QQ$ is not normal.
 :::
 
 ::: pf-step
-Therefore the answers are: algebraic — yes; normal — no; separable — yes.
+Therefore the answers are $\boxed{\text{algebraic: yes; normal: no; separable: yes}}$.
 
 ::: pf-proof
 Combine steps [](#algebraic-transitive){.pf-ref}, [](#separable-transitive){.pf-ref}, and [](#normal-not-transitive){.pf-ref}.
