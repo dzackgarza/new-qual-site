@@ -71,7 +71,6 @@ source:
   - id: P-6BKXI
   - id: P-6QCZ5
   - id: P-7GKWO
-  - id: P-7ITXP
   - id: P-7J4VR
   - id: P-7XPOK
   - id: P-8RB01

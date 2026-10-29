@@ -1409,7 +1409,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Real_Analysis/P-6BKXI.md` | `8004d150b7a876a415a1e450a0cd46899043e38f` | `8004d150b7a876a415a1e450a0cd46899043e38f` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/P-6QCZ5.md` | `49e7a439fbe061b31fbf37f709edbefe84127ed9` | `49e7a439fbe061b31fbf37f709edbefe84127ed9` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/P-7GKWO.md` | `d3f3327d00aa2ed67e6a7402e038bb6c5a48750e` | `d3f3327d00aa2ed67e6a7402e038bb6c5a48750e` | Read; retained |
-| [x] | `corpus/problems/Real_Analysis/P-7ITXP.md` | `4074ce382b2491c5497271ff1ecb4533efa3a9f0` | `5875b1a72d6d1543787015bbfde57a5e90e9351c` | Read; replaced moral framing and asserted intent with the missing containment |
 | [x] | `corpus/problems/Real_Analysis/P-7J4VR.md` | `53df67dc97b10a8a9958262104405ac5eb7c795d` | `53df67dc97b10a8a9958262104405ac5eb7c795d` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/P-7XPOK.md` | `c951993c5311442fdd3ecab339f0caf50a2e1639` | `c951993c5311442fdd3ecab339f0caf50a2e1639` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/P-8RB01.md` | `0d1d00169c21b6e99af41cc10e3ceb26b9a76767` | `0d1d00169c21b6e99af41cc10e3ceb26b9a76767` | Read; retained |
