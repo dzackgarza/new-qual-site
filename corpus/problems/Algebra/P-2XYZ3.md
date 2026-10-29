@@ -35,7 +35,7 @@ For $x\in D^\times$ noncentral, $|C_D(x)|=q^d$ with $d\mid n$ and $d<n$.
 ::: pf-proof
 
 $C_D(x)=\{y:yx=xy\}$ is a division subring containing $Z$, so $|C_D(x)|=q^d$ with $d=\dim_ZC_D(x)$.
-$D$ is a vector space over $C_D(x)$, so $q^n=(q^d)^m$ for some $m$, and $d\mid n$; $d<n$ because $x$ is not central.
+$D$ is a vector space over $C_D(x)$, so $q^n=(q^d)^e$ for some $e$, and $d\mid n$; $d<n$ because $x$ is not central.
 
 :::
 
@@ -84,12 +84,12 @@ Hence $|\Phi_n(q)|=\prod_\zeta|q-\zeta|>(q-1)^{\varphi(n)}\ge q-1$, contradictin
 
 ::: pf-step
 
-The real quaternions $\mathbb H=\{a+bi+cj+dk:a,b,c,d\in\RR\}$, with $i^2=j^2=k^2=ijk=-1$, form a division ring that is not a field.
+The real quaternions $\HH=\{a+bi+cj+dk:a,b,c,d\in\RR\}$, with $i^2=j^2=k^2=ijk=-1$, form a division ring that is not a field.
 
 ::: pf-proof
 
 For $z=a+bi+cj+dk\neq0$, put $\bar z=a-bi-cj-dk$; then $z\bar z=\bar zz=a^2+b^2+c^2+d^2>0$, so $z^{-1}=\bar z/(a^2+b^2+c^2+d^2)$.
-Since $ij=k\neq-k=ji$, $\mathbb H$ is not commutative.
+Since $ij=k\neq-k=ji$, $\HH$ is not commutative.
 
 :::
 
