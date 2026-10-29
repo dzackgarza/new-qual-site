@@ -31,98 +31,98 @@ Show that a finitely generated module over a Noetherian local ring is flat iff i
 ::: pf
 
 ::: {.pf-step #free-implies-flat}
-If \(M\) is free, then \(M\) is flat.
+If $M$ is free, then $M$ is flat.
 
 ::: pf-proof
-Every free module is a direct sum of copies of \(R\), and tensoring with a free module preserves injections because it is a direct sum of copies of the original map.
+Every free module is a direct sum of copies of $R$, and tensoring with a free module preserves injections because it is a direct sum of copies of the original map.
 :::
 
 :::
 
 ::: {.pf-step #choose-basis-lifts}
-Conversely, suppose \((R,\mathfrak m)\) is Noetherian local and \(M\) is finitely generated and flat. Let
-\[
-n=\dim_{R/\mathfrak m}(M/\mathfrak m M).
-\]
-Choose elements \(m_1,\dots,m_n\in M\) whose residue classes form a basis of \(M/\mathfrak m M\).
+Conversely, suppose $(R,\mfm)$ is Noetherian local and $M$ is finitely generated and flat. Let
+$$
+n=\dim_{R/\mfm}(M/\mfm M).
+$$
+Choose elements $m_1,\ldots,m_n\in M$ whose residue classes form a basis of $M/\mfm M$.
 
 ::: pf-proof
-Since \(M\) is finitely generated, \(M/\mathfrak m M\) is a finite-dimensional vector space over the residue field \(R/\mathfrak m\).
+Since $M$ is finitely generated, $M/\mfm M$ is a finite-dimensional vector space over the residue field $R/\mfm$.
 :::
 
 :::
 
 ::: pf-step
 The map
-\[
+$$
 \pi:R^n\longrightarrow M,
 \qquad e_i\longmapsto m_i,
-\]
+$$
 is surjective.
 
 ::: pf-proof
-The classes of the \(m_i\) generate \(M/\mathfrak mM\). Hence
-\[
-M=Rm_1+\cdots+Rm_n+\mathfrak mM.
-\]
-Nakayama's lemma gives \(M=Rm_1+\cdots+Rm_n\), so \(\pi\) is surjective.
+The classes of the $m_i$ generate $M/\mfm M$. Hence
+$$
+M=Rm_1+\cdots+Rm_n+\mfm M.
+$$
+Nakayama's lemma gives $M=Rm_1+\cdots+Rm_n$, so $\pi$ is surjective.
 :::
 
 :::
 
 ::: {.pf-step #kernel-finitely-generated}
-Let \(K=\ker\pi\). Then \(K\) is finitely generated.
+Let $K=\ker\pi$. Then $K$ is finitely generated.
 
 ::: pf-proof
-The module \(R^n\) is finitely generated over the Noetherian ring \(R\), so every submodule of \(R^n\), in particular \(K\), is finitely generated.
+The module $R^n$ is finitely generated over the Noetherian ring $R$, so every submodule of $R^n$, in particular $K$, is finitely generated.
 :::
 
 :::
 
 ::: {.pf-step #tensored-sequence-exact}
 Tensoring
-\[
+$$
 0\longrightarrow K\longrightarrow R^n\longrightarrow M\longrightarrow0
-\]
-with \(k:=R/\mathfrak m\) gives an exact sequence
-\[
-0\longrightarrow K/\mathfrak mK
+$$
+with $k\coloneqq R/\mfm$ gives an exact sequence
+$$
+0\longrightarrow K/\mfm K
 \longrightarrow k^n
-\longrightarrow M/\mathfrak mM
+\longrightarrow M/\mfm M
 \longrightarrow0.
-\]
+$$
 
 ::: pf-proof
 The long exact Tor sequence begins
-\[
-\operatorname{Tor}_1^R(M,k)\longrightarrow K\otimes_Rk
+$$
+\Tor_1^R(M,k)\longrightarrow K\otimes_Rk
 \longrightarrow R^n\otimes_Rk
 \longrightarrow M\otimes_Rk\longrightarrow0.
-\]
-Because \(M\) is flat, \(\operatorname{Tor}_1^R(M,k)=0\). Also
-\(K\otimes_Rk\cong K/\mathfrak mK\), \(R^n\otimes_Rk\cong k^n\), and
-\(M\otimes_Rk\cong M/\mathfrak mM\).
+$$
+Because $M$ is flat, $\Tor_1^R(M,k)=0$. Also
+$K\otimes_Rk\cong K/\mfm K$, $R^n\otimes_Rk\cong k^n$, and
+$M\otimes_Rk\cong M/\mfm M$.
 :::
 
 :::
 
 ::: {.pf-step #kn-to-mmodmm-iso}
-The map \(k^n\to M/\mathfrak mM\) in step [](#tensored-sequence-exact){.pf-ref} is an isomorphism, so
-\[
-K/\mathfrak mK=0.
-\]
+The map $k^n\to M/\mfm M$ in step [](#tensored-sequence-exact){.pf-ref} is an isomorphism, so
+$$
+K/\mfm K=0.
+$$
 
 ::: pf-proof
-By construction in step [](#choose-basis-lifts){.pf-ref}, the images of \(e_1,\dots,e_n\) are exactly the chosen basis of \(M/\mathfrak mM\). Hence the induced map \(k^n\to M/\mathfrak mM\) is an isomorphism. Exactness in step [](#tensored-sequence-exact){.pf-ref} then forces its kernel \(K/\mathfrak mK\) to vanish.
+By construction in step [](#choose-basis-lifts){.pf-ref}, the images of $e_1,\ldots,e_n$ are exactly the chosen basis of $M/\mfm M$. Hence the induced map $k^n\to M/\mfm M$ is an isomorphism. Exactness in step [](#tensored-sequence-exact){.pf-ref} then forces its kernel $K/\mfm K$ to vanish.
 :::
 
 :::
 
 ::: {.pf-step #k-zero-pi-iso}
-Nakayama's lemma gives \(K=0\). Hence \(\pi:R^n\to M\) is an isomorphism, so \(M\) is free.
+Nakayama's lemma gives $K=0$. Hence $\pi:R^n\to M$ is an isomorphism, so $M$ is free.
 
 ::: pf-proof
-By step [](#kernel-finitely-generated){.pf-ref}, \(K\) is finitely generated, and by step [](#kn-to-mmodmm-iso){.pf-ref}, \(K=\mathfrak mK\). Nakayama's lemma therefore gives \(K=0\). Since \(\pi\) is already surjective, it is an isomorphism.
+By step [](#kernel-finitely-generated){.pf-ref}, $K$ is finitely generated, and by step [](#kn-to-mmodmm-iso){.pf-ref}, $K=\mfm K$. Nakayama's lemma therefore gives $K=0$. Since $\pi$ is already surjective, it is an isomorphism.
 :::
 
 :::
