@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-HW2
 kind: problem
-title: A limit point is the limit of a sequence from the set (warm-up)
+title: A limit point is the limit of a sequence from the set
 classification:
   areas:
   - real-analysis
