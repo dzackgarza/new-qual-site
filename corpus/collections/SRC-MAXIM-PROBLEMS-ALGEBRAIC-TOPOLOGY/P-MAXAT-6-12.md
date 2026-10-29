@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-6-12
 kind: problem
-title: Maxim algebraic topology 6.12
+title: All Pontrjagin numbers of an oriented boundary vanish
 classification:
   areas: [topology]
   topics: []
