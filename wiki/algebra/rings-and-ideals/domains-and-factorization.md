@@ -14,7 +14,7 @@ The implications among the classes of rings, with a ring separating each class f
 ## Elements
 
 Let $R$ be an integral domain.
-Elements $a,b\in R$ are [[D-R4H6F|associates]] if $a=ub$ for a [[D-QQIQZ|unit]] $u$, so factorizations are compared up to units and associates.
+Recall that elements $a,b\in R$ are [[D-R4H6F|associates]] if $a=ub$ for a [[D-QQIQZ|unit]] $u$, so factorizations are compared up to units and associates.
 A nonzero nonunit $p$ is [[D-TO3IY|irreducible]] if $p=ab$ implies that $a$ or $b$ is a unit, and [[D-AWSKI|prime]] if $p\divides ab$ implies $p\divides a$ or $p\divides b$.
 
 [[D-AVBIP]]
@@ -35,7 +35,7 @@ In $\ZZ[\sqrt{-5}]$ the element $3$ is irreducible and not prime, since $3$ divi
 
 ## Classes of rings
 
-A commutative ring $R\neq 0$ is an [[D-QJ3QL|integral domain]] if it has no nonzero [[D-4I3SL|zero divisors]], equivalently if $ab=ac$ and $a\neq0$ imply $b=c$.
+Recall that a commutative ring $R\neq 0$ is an [[D-QJ3QL|integral domain]] if it has no nonzero [[D-4I3SL|zero divisors]], equivalently if $ab=ac$ and $a\neq0$ imply $b=c$.
 It is a [[D-UI6CU|field]] if every nonzero element is a unit.
 
 [[D-7O2CH]]
@@ -70,6 +70,8 @@ In a [[D-NKRGN|Euclidean domain]] the division algorithm computes greatest commo
 [[D-NKRGN]]
 
 ### Other classes of rings
+
+Recall the following classes of rings.
 
 - A ring is [[D-TZXBO|Noetherian]] if every ascending chain of ideals stabilizes.
 
@@ -109,7 +111,7 @@ In a [[D-NKRGN|Euclidean domain]] the division algorithm computes greatest commo
 
 ## Structure theorems
 
-An $R$-module is [[D-4KM4P|simple]] if it is nonzero and has no submodules other than $0$ and itself, and [[D-CYAJI|semisimple]] if it is a direct sum of simple modules.
+Recall that an $R$-module is [[D-4KM4P|simple]] if it is nonzero and has no submodules other than $0$ and itself, and [[D-CYAJI|semisimple]] if it is a direct sum of simple modules.
 By the Artin--Wedderburn theorem, a ring that is semisimple as a left module over itself is isomorphic to a finite product $\prod_i M_{n_i}(D_i)$ of matrix rings over division rings $D_i$.
 By Wedderburn's little theorem, every finite division ring is a field.
 
