@@ -31,11 +31,11 @@ Compute the higher homotopy groups $\pi_i(T^n)$ of the $n$-torus $T^n = (S^1)^n$
 
 ::: pf-step
 
-The product of the universal covering maps $\mathbb R\to S^1$ gives a universal covering map
+The product of the universal covering maps $\RR\to S^1$ gives a universal covering map
 $$
-p:\mathbb R^n\longrightarrow T^n=(S^1)^n.
+p:\RR^n\longrightarrow T^n=(S^1)^n.
 $$
-The total space $\mathbb R^n$ is contractible.
+The total space $\RR^n$ is contractible.
 
 :::
 
@@ -54,13 +54,12 @@ For $i\ge2$, every based map $S^i\to T^n$ lifts uniquely after choosing the lift
 ::: pf-step
 
 Therefore, for every $i\ge2$,
+$$
+\boxed{\pi_i(T^n)\cong\pi_i(\RR^n)=0.}
+$$
 
 :::
 
 :::
 
-$$
-\pi_i(T^n)\cong\pi_i(\mathbb R^n)=0.
-$$
-Thus $T^n$ is aspherical.
 :::
