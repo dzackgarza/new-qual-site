@@ -38,45 +38,29 @@ $$
 
 ::: {.solution}
 
+Let $M \coloneqq \norm{f}_\infty > 0$ and $r_k \coloneqq \alpha_{k+1}/\alpha_k$. Since $M > 0$, the set $\theset{\abs{f} > 0}$ has positive measure, so $\alpha_k > 0$ for every $k$.
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #monotone}
 
-Show that the moment ratios are increasing and bounded above.
+$(r_k)$ is increasing and bounded above by $M$, so $r_k \to L$ for some $L$ with $0 < r_1 \le L \le M$.
 
 ::: pf-proof
 
-Put
-$$
-M:=\|f\|_\infty>0,
-\qquad
-r_k:=\frac{\alpha_{k+1}}{\alpha_k}.
-$$
-Since $M>0$, the set on which $|f|>0$ has positive measure, so $\alpha_k>0$ for every $k$.
+By the Cauchy--Schwarz inequality, $\alpha_{k+1}^2 = \left(\int \abs{f}^{k/2}\abs{f}^{(k+2)/2}\,d\mu\right)^2 \le \alpha_k\alpha_{k+2}$, which is $r_k \le r_{k+1}$. Since $\abs{f} \le M$ almost everywhere, $\alpha_{k+1} \le M\alpha_k$, which is $r_k \le M$.
 
-By Cauchy--Schwarz,
-$$
-\alpha_{k+1}^2
-=\left(\int |f|^{k/2}|f|^{(k+2)/2}\,d\mu\right)^2
-\le \alpha_k\alpha_{k+2}.
-$$
-Hence
-$$
-r_k\le r_{k+1}.
-$$
-Also $|f|\le M$ almost everywhere, so
-$$
-\alpha_{k+1}\le M\alpha_k,
-$$
-and therefore
-$$
-r_k\le M.
-$$
-Thus $(r_k)$ is increasing and bounded, so
-$$
-r_k\longrightarrow L
-$$
-for some $L\le M$.
+:::
+
+:::
+
+::: {.pf-step #root}
+
+$\alpha_k^{1/k} \to M$.
+
+::: pf-proof
+
+First, $\alpha_k^{1/k} \le M\mu(X)^{1/k}$, so $\limsup_k \alpha_k^{1/k} \le M$. For $0 < a < M$, the set $E_a \coloneqq \theset{\abs{f} > a}$ has positive measure by the definition of the essential supremum, so $\alpha_k \ge a^k\mu(E_a)$ and $\liminf_k \alpha_k^{1/k} \ge a$. Let $a \uparrow M$.
 
 :::
 
@@ -84,73 +68,11 @@ for some $L\le M$.
 
 ::: pf-step
 
-Recall the finite-measure $L^k$-norm limit.
+$\displaystyle\lim_{k \to \infty} \frac{\alpha_{k+1}}{\alpha_k} = L = \boxed{\norm{f}_\infty}$.
 
 ::: pf-proof
 
-We claim
-$$
-\alpha_k^{1/k}=\|f\|_k\longrightarrow M.
-$$
-The upper bound is
-$$
-\alpha_k^{1/k}
-\le M\,\mu(X)^{1/k},
-$$
-so
-$$
-\limsup_{k\to\infty}\alpha_k^{1/k}\le M.
-$$
-
-Conversely, fix $a<M$. By the definition of essential supremum,
-$$
-E_a:=\{|f|>a\}
-$$
-has positive measure. Hence
-$$
-\alpha_k\ge a^k\mu(E_a),
-$$
-so
-$$
-\liminf_{k\to\infty}\alpha_k^{1/k}\ge a.
-$$
-Letting $a\uparrow M$ proves
-$$
-\boxed{\alpha_k^{1/k}\to M.}
-$$
-
-:::
-
-:::
-
-::: pf-step
-
-Identify the ratio limit.
-
-::: pf-proof
-
-Since
-$$
-\alpha_k=\alpha_1\prod_{j=1}^{k-1}r_j,
-$$
-we have
-$$
-\alpha_k^{1/k}
-=\alpha_1^{1/k}
-\left(\prod_{j=1}^{k-1}r_j\right)^{1/k}.
-$$
-Because $r_j\to L$, the geometric means of $(r_j)$ also converge to $L$, while $\alpha_1^{1/k}\to1$. Therefore
-$$
-\alpha_k^{1/k}\longrightarrow L.
-$$
-Step 2 shows that the same sequence converges to $M$. Hence
-$$
-L=M,
-$$
-and consequently
-$$
-\boxed{\lim_{k\to\infty}\frac{\alpha_{k+1}}{\alpha_k}=\|f\|_\infty.}
-$$
+Write $\alpha_k^{1/k} = \alpha_1^{1/k}\left(\prod_{j=1}^{k-1}r_j\right)^{1/k}$. By step [](#monotone){.pf-ref}, $\log r_j \to \log L$, so the Cesàro means of $(\log r_j)$ tend to $\log L$, and with $\alpha_1^{1/k} \to 1$ this gives $\alpha_k^{1/k} \to L$. By step [](#root){.pf-ref}, $L = M$.
 
 :::
 
