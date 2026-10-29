@@ -35,24 +35,13 @@ $$
 $$
 [@SS03, sec. 1.3]
 
-::: {.theorem title="Goursat"}
-If $\Omega\subseteq\CC$ is open, $T\subset\Omega$ is a triangle whose interior is also contained in $\Omega$, and $f$ is holomorphic on $\Omega$, then $\int_T f(z)\dz=0$.
-[@SS03, Theorem 2.1.1]
-:::
+[[T-B3BDO]]
 
 ### Residues
 
 The contours used with the residue theorem include the keyhole, the multiple keyhole, the rectangular keyhole, the semicircle, the indented semicircle, the sector and the parallelogram [@SS03, ch. 2, Figure 7].
 
-::: {.theorem title="Residue formula"}
-Suppose $f$ is holomorphic on an open set containing a circle $C$ and its interior, except for poles at $z_1,\ldots,z_N$ inside $C$. Then
-$$
-\int_C f(z)\dz=2\pi i\sum_{k=1}^N\res_{z_k}f.
-$$
-[@SS03, Corollary 3.2.2]
-:::
-
-The proof integrates over a multiple keyhole with one loop around each pole and lets the widths of the corridors tend to zero.
+[[T-HRPNO]]
 
 If $f$ has a pole of order $n$ at $z_0$, then near $z_0$
 $$
@@ -84,18 +73,9 @@ $$
 
 ### Bounds
 
-::: {.proposition title="$ML$-inequality"}
-For a smooth curve $\gamma$ and $f$ continuous on $\gamma$,
-$$
-\abs{\int_\gamma f(z)\dz}\le\sup_{z\in\gamma}\abs{f(z)}\cdot\operatorname{length}(\gamma).
-$$
-[@SS03, Proposition 1.3.1]
-:::
+[[T-SFXI7]]
 
-[[T-ZO5UU|Jordan's lemma]] states the following. Let $C_R\coloneqq\theset{Re^{i\theta} \st 0\le\theta\le\pi}$ with $R>0$, and let $f(z)=e^{iaz}g(z)$ on $C_R$ with $g$ continuous and $a>0$. Then
-$$
-\abs{\int_{C_R}f(z)\dz}\le\frac\pi a\,M_R,\qquad M_R\coloneqq\max_{0\le\theta\le\pi}\abs{g(Re^{i\theta})}.
-$$
+[[T-ZO5UU]]
 
 ### Blaschke factors
 
@@ -113,55 +93,19 @@ $$
 $$
 
 (b) Fix $w$ in the unit disc $\DD$ and let $F(z)\coloneqq\dfrac{w-z}{1-\bar wz}$.
-
-(i) $F$ is holomorphic and maps $\DD$ to itself.
-
-(ii) $F$ interchanges $0$ and $w$: $F(0)=w$ and $F(w)=0$.
-
-(iii) $\abs{F(z)}=1$ when $\abs z=1$.
-
-(iv) $F$ is a bijection $\DD\to\DD$, since $F\circ F=\id$.
+Then $F$ is holomorphic and maps $\DD$ to itself; $F$ interchanges $0$ and $w$, that is, $F(0)=w$ and $F(w)=0$; $\abs{F(z)}=1$ when $\abs z=1$; and $F$ is a bijection $\DD\to\DD$, since $F\circ F=\id$.
 
 ### Cauchy's integral formula
 
-::: {.theorem title="Cauchy integral formula"}
-If $f$ is holomorphic on an open set containing the closure of a disc $D$, and $C$ is the positively oriented boundary circle of $D$, then
-$$
-f(z)=\frac1{2\pi i}\int_C\frac{f(\zeta)}{\zeta-z}\,d\zeta\qquad(z\in D).
-$$
-[@SS03, Theorem 2.4.1]
-:::
+[[T-LA2UI]]
 
-::: {.corollary}
-If $f$ is holomorphic on an open set $\Omega$, then $f$ has complex derivatives of all orders on $\Omega$, and for a circle $C\subset\Omega$ whose interior lies in $\Omega$,
-$$
-f^{(n)}(z)=\frac{n!}{2\pi i}\int_C\frac{f(\zeta)}{(\zeta-z)^{n+1}}\,d\zeta
-$$
-for all $z$ inside $C$ [@SS03, Corollary 2.4.2].
-:::
-
-::: {.corollary title="Cauchy inequalities"}
-If $f$ is holomorphic on an open set containing the closure of the disc $D$ of radius $R$ centered at $z_0$, with boundary circle $C$, then
-$$
-\abs{f^{(n)}(z_0)}\le\frac{n!\,\norm{f}_C}{R^n},\qquad\norm{f}_C\coloneqq\sup_{z\in C}\abs{f(z)}.
-$$
-[@SS03, Corollary 2.4.3]
-:::
+[[T-22RQZ]]
 
 ### Further review
 
-::: {.theorem}
-If $f$ is holomorphic on an open set $\Omega$ and $D$ is a disc centered at $z_0$ whose closure lies in $\Omega$, then
-$$
-f(z)=\sum_{n=0}^\infty a_n(z-z_0)^n\quad(z\in D),\qquad a_n=\frac{f^{(n)}(z_0)}{n!}.
-$$
-[@SS03, Theorem 2.4.4]
-:::
+[[T-GROTS]]
 
-::: {.corollary title="Liouville"}
-A bounded entire function is constant.
-[@SS03, Corollary 2.4.5]
-:::
+[[T-QHIHJ]]
 
 ## Warmup
 
