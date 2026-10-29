@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU09-7
 kind: problem
-title: 1-connected CW complex with H_3 = Z^2 is S^3 ∨ S^3
+title: A simply connected CW complex with the homology of $S^3 \vee S^3$ is homotopy equivalent to it
 classification:
   areas:
   - topology
