@@ -15,15 +15,7 @@ topics:
 
 A real symmetric or complex Hermitian matrix is diagonalizable in an orthonormal basis of eigenvectors.
 
-::: {.remark title="Notation"}
-For a matrix $A$, $A^t$ is the transpose and $A^{\dagger}$ the conjugate transpose, and $\inner{\cdot}{\cdot}$ is the standard inner product on $\RR^n$ or $\CC^n$.
-
-- The \dfn{adjoint} of $A$ is the matrix $A^{\dagger}$, characterized by $\inner{A\vector x}{\vector y} = \inner{\vector x}{A^{\dagger} \vector y}$ for all $\vector x,\vector y$, and $A$ is \dfn{self-adjoint} if $A=A^\dagger$.
-
-- A real matrix $A$ is \dfn{symmetric} if $A = A^t$, and \dfn{orthogonal} if $A^tA = AA^t = I$.
-
-- A complex matrix $A$ is \dfn{Hermitian} if $A^{\dagger} = A$, [[D-BSUV4|normal]] if $AA^{\dagger} = A^{\dagger}A$, and \dfn{unitary} if $A^{\dagger}A = AA^{\dagger} = I$.
-:::
+[[D-DVLK5]] [[D-BSUV4]]
 
 ## Diagonalizability
 
