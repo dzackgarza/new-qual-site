@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XKMVX
 kind: problem
-title: Combining with Rouche
+title: Solutions of $f(z)=(2z)^m$ in $\abs{z}<1/2$ for $f:\DD\to\bar\DD$ with $f(0)=0$
 classification:
   areas:
   - complex-analysis
@@ -15,25 +15,41 @@ review: draft
 ---
 
 ::: {.exercise}
-Use Rouché's theorem and the Schwarz lemma to prove the following: if $f:\DD\to \bar{ \DD}$ is holomorphic with $f(0) = 0$, then there are exactly $m$ solutions (counted with multiplicity) to $f(z) = (2z)^m$ in the disc $\abs{z} < 1/2$.
-
+Use Rouché's theorem and the Schwarz lemma to prove the following: if $f:\DD\to \bar{\DD}$ is holomorphic with $f(0) = 0$, then there are exactly $m$ solutions (counted with multiplicity) to $f(z) = (2z)^m$ in the disc $\abs{z} < 1/2$.
 :::
 
 ::: {.solution}
-First note that the image of $f$ is in fact $\DD$ rather than $\bar{\DD}$, using the open mapping theorem and that the domain $\DD$ is open.
-So Schwarz applies to $f$.
-Write $g(z) \definedas f(z) - (2z)^m$, the claim is that $g$ has $m$ zeros.
-Toward applying Rouché, identify 
 
-- The big part of $g$: $M(z) \definedas -(2z)^m$ 
-- The small part of $g$: $m(z) \definedas g(z) - M(z) = f(z)$.
+::: pf
 
-Now
-\[
-\abs{m(z)} \definedas \abs{f(z)} \leq \abs{z} = {1\over 2} < \abs{m(z)} = \abs{2z}^m = 1 \qquad \text{on } \abs{z} = {1\over 2}
-,\]
-so Rouché applies: $\size Z_m = \size Z_M$ on $\abs{z} < {1\over 2}$, where $m(z) = f(z)$ and $M(z) = -(2z)^m$ which has exactly $m$ zeros.
+::: {.pf-step #schwarz}
+$\abs{f(z)} \le \abs{z}$ for all $z\in\DD$.
 
-> Note that this works with $g(z) \definedas (cz)^m$ and $R = {1\over c}$.
+::: pf-proof
+This is the Schwarz lemma, since $f$ is holomorphic on $\DD$ with $\abs{f}\le1$ and $f(0)=0$.
+:::
+
+:::
+
+::: {.pf-step #rouche-bound}
+On the circle $\abs{z}=1/2$, $\abs{f(z)} < \abs{(2z)^m}$.
+
+::: pf-proof
+By step [](#schwarz){.pf-ref}, $\abs{f(z)}\le 1/2 < 1 = \abs{2z}^m$ there.
+:::
+
+:::
+
+::: pf-step
+$f(z) - (2z)^m$ has exactly $m$ zeros, counted with multiplicity, in $\abs{z}<1/2$.
+
+::: pf-proof
+Both $f$ and $(2z)^m$ are holomorphic on a neighbourhood of $\abs{z}\le1/2$.
+By step [](#rouche-bound){.pf-ref} and Rouché's theorem, $-(2z)^m + f(z)$ has as many zeros in $\abs{z}<1/2$ as $-(2z)^m$, which has a zero of order $m$ at $0$ and no other zero.
+:::
+
+:::
+
+:::
 
 :::
