@@ -19,7 +19,7 @@ review: draft
 Let $M$ be a compact $R\dash$orientable $n\dash$manifold whose boundary is decomposed as $\del M = A \union B$ with $A, B$ compact $(n-1)\dash$manifolds meeting in $\del A = \del B = A \intersect B$.
 Then cap product with a fundamental class $[M]\in H_n(M, \del M; R)$ gives isomorphisms
 $$
-D_M: H^k(M, A; R) \mapsvia{\sim} H_{n-k}(M, B; R)
+D_M\colon H^k(M, A; R) \mapsvia{\sim} H_{n-k}(M, B; R)
 $$
 for all $k$.
 The cases $A = \del M$, $B = \emptyset$ and $A = \emptyset$, $B = \del M$ give the isomorphisms
