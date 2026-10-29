@@ -36,7 +36,7 @@ Then $Y$ is disconnected if and only if there exist disjoint nonempty subsets $A
 
 ::: {.example}
 The subspace $\QQ\subseteq\RR$ is disconnected, and every connected subspace of $\QQ$ has at most one point, so the connected components of $\QQ$ are its singletons.
-For rationals $p < q$ and an irrational $r$ with $p<r<q$, the sets $\QQ\intersect(-\infty, r)$ and $\QQ\intersect(r, \infty)$ form a separation of $\QQ$.
+For an irrational number $r$, the sets $\QQ\intersect(-\infty, r)$ and $\QQ\intersect(r, \infty)$ form a separation of $\QQ$.
 :::
 
 ::: {.concept}
