@@ -65,7 +65,7 @@ The two summands commute, and $\exp\bigl(\sum_{r\ge1}(-1)^{r+1}N^r/r\bigr)=I+N$ 
 Over $\RR$, a real $B$ is $e^A$ for a real matrix $A$ if and only if $B$ is invertible and, for each negative eigenvalue of $B$, the Jordan blocks of each size occur an even number of times. In particular $\det B>0$ is necessary but not sufficient.
 
 ::: pf-proof
-The equivalence is Culver's theorem on real logarithms. Positive eigenvalues use the logarithm of step [](#complex){.pf-ref} with the real choice of $\ell$; a pair of conjugate nonreal blocks, or a pair of equal negative blocks, has a real logarithm block. Necessity of $\det B>0$ follows from $\det e^A=e^{\operatorname{tr}A}>0$ for real $A$.
+The equivalence is Culver's theorem on real logarithms [@Cul66]. Positive eigenvalues use the logarithm of step [](#complex){.pf-ref} with the real choice of $\ell$; a pair of conjugate nonreal blocks, or a pair of equal negative blocks, has a real logarithm block. Necessity of $\det B>0$ follows from $\det e^A=e^{\operatorname{tr}A}>0$ for real $A$.
 :::
 
 :::
