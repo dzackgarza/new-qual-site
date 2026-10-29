@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF23F
 kind: problem
-title: "L^p characterization via distribution function and interpolation of weak-type bounds"
+title: "$L^p$ characterization via distribution function and interpolation of weak-type bounds"
 classification:
   areas:
   - real-analysis
