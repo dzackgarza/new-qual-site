@@ -21,8 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-- How do you compute the totient $\phi(p)$ for $p$ prime?
-  Or $\phi(n)$ for $n$ composite?
+How do you compute the totient $\phi(p)$ for $p$ prime? Or $\phi(n)$ for $n$ composite?
 :::
 
 ::: {.solution}
@@ -32,9 +31,9 @@ audit:
 ::: pf-step
 
 If $p$ is prime, then
-\[
-\varphi(p)=p-1.
-\]
+$$
+\phi(p)=p-1.
+$$
 
 ::: pf-proof
 
@@ -47,9 +46,9 @@ Every nonzero residue modulo $p$ is relatively prime to $p$, so the invertible r
 ::: {.pf-step #s2}
 
 For a prime power $p^a$ with $a\ge1$,
-\[
-\varphi(p^a)=p^a-p^{a-1}=p^{a-1}(p-1).
-\]
+$$
+\phi(p^a)=p^a-p^{a-1}=p^{a-1}(p-1).
+$$
 
 ::: pf-proof
 
@@ -66,17 +65,17 @@ Euler's totient is multiplicative on coprime integers.
 ::: pf-proof
 
 If $\gcd(m,n)=1$, the Chinese remainder theorem gives
-\[
+$$
 \ZZ/mn\ZZ\cong \ZZ/m\ZZ\times\ZZ/n\ZZ.
-\]
+$$
 Taking unit groups gives
-\[
+$$
 (\ZZ/mn\ZZ)^\times\cong(\ZZ/m\ZZ)^\times\times(\ZZ/n\ZZ)^\times,
-\]
+$$
 so
-\[
-\varphi(mn)=\varphi(m)\varphi(n).
-\]
+$$
+\phi(mn)=\phi(m)\phi(n).
+$$
 
 :::
 
@@ -85,14 +84,14 @@ so
 ::: pf-step
 
 Therefore, if
-\[
+$$
 n=\prod_{i=1}^r p_i^{a_i}
-\]
+$$
 is the prime factorization, then
-\[
-\varphi(n)=\prod_{i=1}^r p_i^{a_i-1}(p_i-1)
+$$
+\phi(n)=\prod_{i=1}^r p_i^{a_i-1}(p_i-1)
 =n\prod_{p\mid n}\left(1-\frac1p\right).
-\]
+$$
 
 ::: pf-proof
 
