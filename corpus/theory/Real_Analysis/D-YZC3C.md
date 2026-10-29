@@ -4,7 +4,7 @@ id: D-YZC3C
 kind: definition
 title: Uniform convergence
 prompts:
-- What does it mean for $f_n$ to converge uniformly to $f$ on $E$?
+- What does it mean for $f_n$ to converge uniformly to $f$ on $S$?
 classification:
   areas:
   - real-analysis
