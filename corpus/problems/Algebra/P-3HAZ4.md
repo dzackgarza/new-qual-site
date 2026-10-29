@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-- Show that $C_G(G) = Z(G)$.
+Show that $C_G(G) = Z(G)$.
 :::
 
 ::: {.solution}
@@ -30,9 +30,9 @@ audit:
 ::: {.pf-step #s1}
 
 By definition,
-\[
+$$
 C_G(G)=\{g\in G:gx=xg\text{ for every }x\in G\}.
-\]
+$$
 
 ::: pf-proof
 
@@ -45,9 +45,9 @@ The centralizer $C_G(S)$ of a subset $S\subseteq G$ consists of the elements of 
 ::: {.pf-step #s2}
 
 By definition,
-\[
+$$
 Z(G)=\{g\in G:gx=xg\text{ for every }x\in G\}.
-\]
+$$
 
 ::: pf-proof
 
