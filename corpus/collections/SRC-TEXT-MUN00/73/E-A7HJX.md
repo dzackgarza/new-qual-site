@@ -27,14 +27,11 @@ Show that $f(N)$ is normal; conclude that $\ker(g \circ f) = f^{-1}(\ker g) \sub
 :::
 
 ::: {.solution}
-**Goal:** Prove that if $f: G \to H$ is a surjective homomorphism and $\ker g = \langle\langle f(x_0) \rangle\rangle_H$, then $\ker(g \circ f)$ is the least normal subgroup $N = \langle\langle \ker f \cup \{x_0\} \rangle\rangle_G$.
-
 ::: pf
 
-::: pf-step
+::: {.pf-step #n-in-kernel}
 
-Inclusion $N \subseteq \ker(g \circ f)$:
-    *Proof:*
+$N \subseteq \ker(g \circ f)$.
 
 ::: pf-proof
 
@@ -72,10 +69,9 @@ Since $N$ is defined as the least normal subgroup of $G$ containing $\ker f$ and
 
 :::
 
-::: pf-step
+::: {.pf-step #fn-normal}
 
-Normality of the image $f(N)$ in $H$:
-    *Proof:*
+The image $f(N)$ is a normal subgroup of $H$.
 
 ::: pf-proof
 
@@ -87,7 +83,7 @@ Let $h \in H$ and $y \in f(N)$.
 
 ::: pf-step
 
-Since $f$ is surjective, choose $g \in G$ such that $f(g) = h$.
+Since $f$ is surjective, choose $a \in G$ such that $f(a) = h$.
 
 :::
 
@@ -99,13 +95,13 @@ Choose $n \in N$ such that $f(n) = y$.
 
 ::: pf-step
 
-Then $h y h^{-1} = f(g) f(n) f(g)^{-1} = f(g n g^{-1})$.
+Then $h y h^{-1} = f(a) f(n) f(a)^{-1} = f(a n a^{-1})$.
 
 :::
 
 ::: pf-step
 
-Because $N \trianglelefteq G$, $g n g^{-1} \in N$, so $f(g n g^{-1}) \in f(N)$.
+Because $N \trianglelefteq G$, $a n a^{-1} \in N$, so $f(a n a^{-1}) \in f(N)$.
 
 :::
 
@@ -119,10 +115,9 @@ Thus $f(N)$ is a normal subgroup of $H$.
 
 :::
 
-::: pf-step
+::: {.pf-step #kerg-in-fn}
 
-Inclusion $\ker g \subseteq f(N)$:
-    *Proof:*
+$\ker g \subseteq f(N)$.
 
 ::: pf-proof
 
@@ -140,7 +135,7 @@ By hypothesis, $\ker g$ is the least normal subgroup of $H$ containing $f(x_0)$.
 
 ::: pf-step
 
-Since $f(N)$ is a normal subgroup of $H$ containing $f(x_0)$, it follows that $\ker g \subseteq f(N)$.
+Since $f(N)$ is a normal subgroup of $H$ (step [](#fn-normal){.pf-ref}) containing $f(x_0)$, it follows that $\ker g \subseteq f(N)$.
 
 :::
 
@@ -150,45 +145,40 @@ Since $f(N)$ is a normal subgroup of $H$ containing $f(x_0)$, it follows that $\
 
 ::: pf-step
 
-Inclusion $\ker(g \circ f) \subseteq N$:
-    *Proof:*
+$\ker(g \circ f) \subseteq N$, and hence $\ker(g \circ f) = N$.
 
 ::: pf-proof
 
-::: pf-step
+::: {.pf-step #preimage-bound}
 
-Taking preimages under $f$ gives:
-        $$\ker(g \circ f) = f^{-1}(\ker g) \subseteq f^{-1}(f(N)).$$
-
-:::
-
-::: pf-step
-
-We claim $f^{-1}(f(N)) = N$:
-        - We have $N \subseteq f^{-1}(f(N))$: for any $n \in N$, $f(n) \in f(N)$, so $n \in f^{-1}(f(N))$ by definition of the preimage.
-        - If $x \in f^{-1}(f(N))$, then $f(x) = f(n)$ for some $n \in N$.
-        - Then $f(x n^{-1}) = f(x) f(n)^{-1} = 1_H$, which means $x n^{-1} \in \ker f$.
-        - Since $\ker f \subseteq N$, $x = (x n^{-1}) n \in N \cdot N = N$.
+Taking preimages under $f$ of the inclusion in step [](#kerg-in-fn){.pf-ref} gives:
+$$\ker(g \circ f) = f^{-1}(\ker g) \subseteq f^{-1}(f(N)).$$
 
 :::
 
-::: pf-step
+::: {.pf-step #preimage-image}
 
-Thus $f^{-1}(f(N)) = N$, which proves $\ker(g \circ f) \subseteq N$.
+$f^{-1}(f(N)) = N$.
+
+::: pf-proof
+
+Clearly $N \subseteq f^{-1}(f(N))$.
+Conversely, if $x \in f^{-1}(f(N))$, then $f(x) = f(n)$ for some $n \in N$, so $f(x n^{-1}) = 1_H$ and $x n^{-1} \in \ker f \subseteq N$; hence $x = (x n^{-1}) n \in N$.
 
 :::
 
 :::
 
-:::
+::: pf-qed
 
-::: pf-step
-
-Conclusion:
+Steps [](#preimage-bound){.pf-ref} and [](#preimage-image){.pf-ref} give $\ker(g \circ f) \subseteq N$, and step [](#n-in-kernel){.pf-ref} gives the reverse inclusion.
 
 :::
 
 :::
 
-    $\ker(g \circ f) = N$, so $\ker(g \circ f)$ is the least normal subgroup of $G$ containing $\ker f$ and $x_0$. Q.E.D.
+:::
+
+:::
+
 :::
