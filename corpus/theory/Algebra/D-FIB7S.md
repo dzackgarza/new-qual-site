@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: D-FIB7S
 kind: definition
-title: '$p$-groups'
+title: '$p$-group'
+prompts:
+- What is a $p$-group?
 classification:
   areas:
   - algebra

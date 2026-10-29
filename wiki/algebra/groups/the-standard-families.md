@@ -22,8 +22,6 @@ A [[D-7UIPO|transitive subgroup]] of $S_n$ acts transitively on $\theset{1,\ldot
 
 [[D-FIB7S]]
 
-[[FD-OR3BW]]
-
 ## Cyclic groups
 
 [[T-QMKXQ]]

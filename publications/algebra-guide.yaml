@@ -147,7 +147,6 @@ sections:
       - ref: L-6QBOJ
       - ref: T-4XKGD
       - ref: D-FIB7S
-      - ref: FD-OR3BW
       - ref: PR-IGLFV
       - ref: L-Q44MT
   - slug: permutation-groups
