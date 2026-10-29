@@ -34,7 +34,7 @@ By Carathéodory's theorem, the [[D-TWUBM|Carathéodory measurable]] sets form a
 
 [[D-MDJII]]
 
-[[FT-O4DRR]] [[FF-LA4J2]]
+[[FT-O4DRR]]
 
 ## Measures on $\RR^d$
 
