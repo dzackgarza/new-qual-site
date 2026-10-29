@@ -5,7 +5,7 @@ kind: theorem
 title: Carathéodory's criterion for Lebesgue measurability
 slogan: 'A set $E$ is measurable exactly when, for every set $A$, the outer measure of $A$ is additive over $A\cap E$ and $A\cap E^c$.'
 prompts:
-- State the Caratheodory characterization of measurability.
+- State the Carathéodory characterization of measurability.
 classification:
   areas:
   - real-analysis
