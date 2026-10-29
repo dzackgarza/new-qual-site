@@ -35,7 +35,7 @@ Let $R$ be a commutative ring with $1$. Consider the conditions:
 
 (iii) every nonempty set of ideals of $R$ has a maximal element under inclusion.
 
-The ring $R$ is \dfn{Noetherian} if it satisfies these equivalent conditions.
+The ring $R$ is Noetherian if it satisfies these equivalent conditions.
 
 ::: pf
 
