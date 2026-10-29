@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-QCVGX
 kind: problem
-title: Laurent expanding tricky exponentials
+title: Laurent expansions of $\frac{1}{1+e^z}$ at $0$ and $i\pi$
 classification:
   areas:
   - complex-analysis
@@ -16,62 +16,45 @@ review: draft
 
 ::: {.exercise}
 Find a Laurent expansion for
-\[
+$$
 f(z) = {1\over 1 + e^z}
-\]
+$$
 about $z_0 = 0$ and $z_1 = i\pi$.
-
 :::
 
 ::: {.solution}
-At $z=0$, we can use a geometric series approach since $\abs{e^z} = e^{\Re(z)} \leq 1$ near $0$.
-However, we still have to get rid of the leading 1 in the expansion of $e^z$ in order to get a constant coefficient.
-\[
-{1\over 1 + e^z} 
-&= {1\over 1 + 1 + z + {1\over 2!}z^2 + {1\over 3!} z^3 + \bigo(z^4)} \\
-&= {1\over 2 + z + {1\over 2!}z^2 + {1\over 3!} z^3 + \bigo(z^4) } \\
-&= {1\over 2} {1\over 1 + {1\over 2} z + {1\over 2\cdot 2!}z^2 + {1\over 2\cdot 3!} z^3 + \bigo(z^4) } \\
-&= {1\over 2}{1\over 1 - (-p(z)) } \qquad p(z) \definedas {1\over 2}z + {1\over 2\cdot 2!}z^2 + {1\over 2\cdot 3!}z^3 + \bigo(z^4)  \\
-&= {1\over 2} \sum_{k\geq 0} (-p(z))^k \\
-&= {1\over 2}\Big[ 1 - \qty{{1\over 2}z + {1\over 2\cdot 2!}z^2 + {1\over 2\cdot 3!}z^3 + \bigo\qty{z^4} } \\ 
-&\qquad + \qty{ {1\over 2}z + {1\over 2\cdot 2!}z^2 + {1\over 2\cdot 3!}z^3 + \bigo\qty{z^4} }^2 \\ 
-&\qquad - \qty{{1\over 2} z + {1\over 2\cdot 2!}z^2 + {1\over 2\cdot 3!}z^3 + \bigo\qty{z^4} }^3 \\
-&\qquad - \bigo(z^4) \Big]\\
-&= {1\over 2}
-\Big[ 
-1 + z\qty{- {1\over 2}} + z^2\qty{- {1\over 2\cdot 2!} + \qty{1\over 2}^2}\\
-&\qquad + z^3
-\Big(
--{1\over 2\cdot 3! } +\left[ \qty{1\over 2}^3 + {1\over 2}{1\over 2\cdot 2!}\right] - \qty{1\over 2}^3 
-\Big) \\
-&\qquad + \bigo(z^4)
-\Big]\\
-&= {1\over 2} - {1\over 4}z + 0z^2 + {1\over 48}z^3 + \bigo(z^4)
-.\]
 
-Expanding at $z-i\pi$: quite a bit easier.
-Let $\omega \definedas z-i\pi$, then
-\[
-{1\over 1 + e^z}
-&= {1\over 1 + e^{z-i\pi}e^{i\pi}} \\
-&= {1\over 1 - e^{\omega} } \\
-&= {1 \over -\omega - {1\over 2!}\omega^2 - {1\over 3!}\omega^3 - \bigo(\omega^4) } \\
-&= -{1\over \omega} {1 \over 1 + {1\over 2!}\omega + {1\over 3!}\omega^2 + \bigo(\omega^3) } \\
-&= -{1\over \omega}{1\over 1-(- p(z) ) } \qquad p(z) \definedas \sum_{k\geq 2}{\omega^{k-1}\over k!} \\
-&= -{1\over \omega} \sum_{k\geq 0} (-p(z))^k \\
-&= -{1\over \omega}
-\left[
-1 -
-\qty{{1\over 2!}\omega + {1\over 3!}\omega^2 + \bigo(\omega^3)} + 
-\qty{{1\over 2!}\omega + {1\over 3!}\omega^2 + \bigo(\omega^3)}^2 -
-\bigo(\omega^3)
-\right] \\
-&= -{1\over \omega}
-\left[
-1 + \omega\qty{-{1\over 2!}} + \omega^2\qty{-{1\over 3!} + \qty{1\over 2!}^2} + \bigo(\omega^3)
-\right] \\
-&= -{1\over w} + {1\over 2} - {1\over 12}\omega + \bigo(\omega^2)
-.\]
+::: pf
+
+::: pf-step
+Near $0$, $f$ is holomorphic and $\boxed{f(z) = \frac12 - \frac14 z + \frac1{48}z^3 + O(z^5)}$.
+
+::: pf-proof
+$1+e^0 = 2\neq0$, so $f$ is holomorphic near $0$.
+Write $1+e^z = 2(1+p(z))$ with $p(z) \coloneqq \frac{z}{2} + \frac{z^2}{4} + \frac{z^3}{12} + \frac{z^4}{48} + O(z^5)$; for small $z$, $\abs{p(z)}<1$ and
+$$
+f(z) = \frac12\left(1 - p + p^2 - p^3 + p^4 - \cdots\right).
+$$
+Collecting coefficients: $z$ gives $-\frac12$; $z^2$ gives $-\frac14+\frac14 = 0$; $z^3$ gives $-\frac1{12} + 2\cdot\frac12\cdot\frac14 - \frac18 = \frac1{24}$; $z^4$ gives $-\frac1{48} + \left(\frac1{16}+2\cdot\frac12\cdot\frac1{12}\right) - 3\cdot\frac14\cdot\frac14 + \frac1{16} = 0$.
+Multiplying by $\frac12$ gives the expansion.
+:::
 
 :::
 
+::: pf-step
+Near $i\pi$, with $\omega \coloneqq z - i\pi$, $f$ has a simple pole and $\boxed{f(z) = -\frac{1}{\omega} + \frac12 - \frac{1}{12}\omega + O(\omega^2)}$.
+
+::: pf-proof
+$e^z = e^{i\pi}e^{\omega} = -e^{\omega}$, so $f = \frac{1}{1-e^\omega}$.
+Write $1-e^\omega = -\omega(1+q(\omega))$ with $q(\omega) \coloneqq \frac{\omega}{2} + \frac{\omega^2}{6} + O(\omega^3)$.
+Then
+$$
+f = -\frac1\omega\left(1 - q + q^2 - \cdots\right) = -\frac1\omega\left(1 - \frac{\omega}{2} + \left(\frac14 - \frac16\right)\omega^2 + O(\omega^3)\right).
+$$
+:::
+
+:::
+
+:::
+
+:::
