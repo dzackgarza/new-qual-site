@@ -26,17 +26,28 @@ Show that if $G$ is an infinite simple group, then $G$ cannot have a proper subg
 :::
 
 ::: {.solution}
-Suppose $H<G$ has finite index $n$. The action of $G$ on the left cosets $G/H$ gives a homomorphism
-\[
-\rho:G\to S_n.
-\]
-Its kernel is the core
-\[
-\ker\rho=\bigcap_{g\in G}gHg^{-1},
-\]
-which is a normal subgroup of $G$ contained in $H$.
+Suppose, for contradiction, that $H<G$ is a proper subgroup of finite index $n$.
 
-If $G$ is simple, then $\ker\rho$ is either $1$ or $G$. Since $H$ is proper, $\ker\rho\ne G$, so $\ker\rho=1$. Hence $\rho$ is injective and embeds $G$ into the finite group $S_n$, forcing $G$ to be finite. This contradicts the hypothesis that $G$ is infinite.
+::: pf
 
-Therefore an infinite simple group has no proper subgroup of finite index.
+::: {.pf-step #core}
+The action of $G$ on the left cosets $G/H$ gives a homomorphism $\rho:G\to S_n$ whose kernel $\bigcap_{g\in G}gHg^{-1}$ is a normal subgroup of $G$ contained in $H$.
+
+::: pf-proof
+The kernel consists of the $g$ with $gxH=xH$ for all $x$, that is, $g\in xHx^{-1}$ for all $x$. Kernels are normal, and taking $x=e$ gives $\ker\rho\subseteq H$.
+:::
+
+:::
+
+::: pf-step
+This contradicts the infiniteness of $G$.
+
+::: pf-proof
+Since $G$ is simple, $\ker\rho$ is $1$ or $G$. By step [](#core){.pf-ref}, $\ker\rho\subseteq H\ne G$, so $\ker\rho=1$. Then $\rho$ embeds $G$ into the finite group $S_n$, so $G$ is finite.
+:::
+
+:::
+
+:::
+
 :::
