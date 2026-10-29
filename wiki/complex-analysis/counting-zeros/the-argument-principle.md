@@ -14,14 +14,6 @@ topics:
 
 ::: {.fact}
 Every zero of a meromorphic $f$ is a simple pole of $\logd f$ whose residue is its multiplicity.
-If $z_0$ is a root of multiplicity $m$, write $f(z) = (z-z_0)^m g(z)$ with $g$ holomorphic and nonvanishing near $z_0$, and take logarithmic derivatives:
-$$
-\begin{aligned}
-\logd f(z)
-&= \logd (z-z_0)^m + \logd g(z) \\
-&= {m\over (z-z_0)} + {g'(z) \over g(z)}
-\end{aligned}.$$
-Since $g$ is holomorphic and nonvanishing there, $g'/g$ is holomorphic there, and the only contribution at $z_0$ is $m$.
 
 :::
 
@@ -39,48 +31,9 @@ d \qty{ \log(f) } = {f'\over f}\dz \implies \Res_{z=p}(d \log(f) ) = v_p(f)
 
 [[T-JXDQT]]
 
-::: {.proof}
-\envlist
-
-- If $z_0$ is a zero of $f$ of order $m$, write $f(z) = (z-z_0)^m g(z)$ with $g$ holomorphic and nonvanishing on a neighborhood of $z_0$, and compute
-$$
-\begin{aligned}
-\logd f(z)
-&=
-\frac{m\left(z-z_{0}\right)^{m-1} g(z)+\left(z-z_{0}\right)^{m} g^{\prime}(z)}{\left(z-z_{0}\right)^{m} g(z)} \\
-&= {m \over z-z_0} + \logd g(z)
-\end{aligned},$$
-so $z_0$ is a simple pole of $\logd f$ with $\res_{z=z_0} \logd f = m$.
-
-- If $z_0$ is a pole of $f$ of order $m$, write $f(z) = (z-z_0)^{-m} g(z)$, so that
-$$
-\logd f = {-m \over z-z_0} + \logd g
-,$$
-and $z_0$ is again a simple pole, now with residue $-m$.
-
-- Apply the residue theorem and group the residues by sign:
-$$
-\begin{aligned}
-{1\over 2\pi i } \int_{\gamma} \logd f(z) \dz
-&= \sum_{z_i \in P_{\logd f}} \Res_{z=z_i} \logd f(z)\\
-&= \sum_{z_k \text{ a zero of } f} \operatorname{ord}_{z_k} f - \sum_{z_j \text{ a pole of } f} \operatorname{ord}_{z_j} (1/f) \\
-&= Z_f - P_f
-\end{aligned}.$$
-
-:::
-
 ## The index version
 
 [[T-52HK6]]
-
-::: {.proof}
-Change variables by $w = f(z)$, so that $z=\gamma(t) \mapsto w = (f\circ \gamma)(t)$ and $\dw = f'(z) \dz$:
-$$
-{1\over 2\pi i }\int_{\gamma} \logd f(z) \dz
-= {1\over 2\pi i} \int_{f\circ \gamma} {1\over w} \dw = \Index_{w=0} (f\circ \gamma)
-.$$
-
-:::
 
 ::: {.example title="Using the index version"}
 Let $f(z) = z^2 + z = z(z+1)$.
