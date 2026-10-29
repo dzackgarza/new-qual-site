@@ -57,3 +57,8 @@ By continuity $g\neq0$ on a smaller disk about $a$, and there $f(z)\neq0$ for $z
 :::
 
 :::
+
+::: {.remark title="Variations"}
+A disc $D_r(a)$ and the plane $\CC$ are regions, so a holomorphic function on either that is not identically zero has isolated zeros.
+The proof also gives the local statement at any point $a\in\Omega$: there is $\rho>0$ with $f(z)\neq0$ for $0<\abs{z-a}<\rho$, whether or not $f(a)=0$.
+:::

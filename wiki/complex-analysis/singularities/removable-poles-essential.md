@@ -78,26 +78,7 @@ Compactness of $K$ inside $\Omega$ is needed: $\sin\bigl(\pi/(1-z)\bigr)$ is hol
 
 :::
 
-[[PR-VUBCC]]
-
-[[PR-EWOP5]]
-
-::: {.proof}
-Suppose not: there are a zero $z_0$ of $f$ and zeros $z_k \neq z_0$ of $f$ with $z_k \to z_0$.
-Since $f\not\equiv 0$, the Taylor series of $f$ at $z_0$ has a smallest index $m$ with $c_m\neq 0$:
-$$
-f(z) = \sum_{k\geq m}c_k (z-z_0)^k = c_m(z-z_0)^m \qty{1 + \sum_{k\geq 1}c_k' (z-z_0)^k } \coloneqq c_m(z-z_0)^m (1 + g(z-z_0))
-.$$
-Here $g(z-z_0)\to 0$ as $z\to z_0$, so for large $k$, $\abs{g(z_k - z_0)} < 1$ and hence $1 + g(z_k-z_0) \neq 0$.
-But then
-$$
-0 = f(z_k) = c_m(z_k - z_0)^m (1 + g(z_k - z_0)) \neq 0
-.$$
-
-$\contradiction$
-
-:::
-
+[[E-WNXIR]]
 [[C-F2ZZQ]]
 
 ## Poles
@@ -151,7 +132,6 @@ The values taken near an essential singularity are described on [[complex-analys
 [[E-GRXN4]]
 [[E-WE7UT]]
 [[E-XPMW5]]
-[[E-WNXIR]]
 [[E-V2VS5]]
 [[E-G3DCH]]
 [[E-JOSK3]]
