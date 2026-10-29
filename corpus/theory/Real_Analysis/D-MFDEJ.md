@@ -21,5 +21,5 @@ L^\infty(X)
 \coloneqq \theset{f\colon X\to \CC \suchthat f \text{ is measurable and essentially bounded}}
 = \theset{f\colon X\to \CC \suchthat f \text{ is measurable and } \norm{f}_\infty < \infty},
 $$
-where $\norm{f}_\infty$ is the [[D-3PVRB|essential supremum]] of $\abs{f}$.
+where $\norm{f}_\infty$ is the [[D-YWRVG|essential supremum]] of $\abs{f}$.
 :::
