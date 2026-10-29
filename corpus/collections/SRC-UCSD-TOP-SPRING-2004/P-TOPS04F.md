@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS04F
 kind: problem
-title: "RP^2 is not the boundary of a compact 3-manifold; is RP^3 a boundary?"
+title: '$\RP^2$ is not the boundary of a compact $3$-manifold; is $\RP^3$ a boundary?'
 classification:
   areas:
   - topology

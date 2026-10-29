@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS04D
 kind: problem
-title: "Tor over Q[x,y] with trivial module and free resolutions of length 2"
+title: '$\operatorname{Tor}$ over $\QQ[x,y]$ with the trivial module, and free resolutions of length $2$'
 classification:
   areas:
   - topology

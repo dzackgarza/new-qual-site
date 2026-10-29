@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS04A
 kind: problem
-title: "Cohomology ring of a CW-complex from S^n with an (n+1)-cell attached by degree 4"
+title: 'Cohomology ring of $S^n$ with an $(n+1)$-cell attached by a map of degree $4$'
 classification:
   areas:
   - topology
