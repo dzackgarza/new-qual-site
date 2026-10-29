@@ -35,9 +35,9 @@ The cyclic subgroup $\langle g\rangle$ has order equal to the order of $g$.
 
 ::: pf-proof
 By definition, the order $|g|$ is the least positive integer $n$ such that $g^n=e$. Then
-\[
+$$
 \langle g\rangle=\{e,g,g^2,\ldots,g^{n-1}\}
-\]
+$$
 has exactly $n=|g|$ elements.
 :::
 
@@ -45,9 +45,9 @@ has exactly $n=|g|$ elements.
 
 ::: {.pf-step #lagrange-formula}
 Lagrange's theorem gives
-\[
+$$
 |G|=[G:\langle g\rangle]\,|\langle g\rangle|.
-\]
+$$
 
 ::: pf-proof
 The left cosets of the subgroup $\langle g\rangle$ partition the finite group $G$, and each coset has $|\langle g\rangle|$ elements. Their number is the index $[G:\langle g\rangle]$.
@@ -60,9 +60,9 @@ Therefore $|g|$ divides $|G|$.
 
 ::: pf-proof
 By steps [](#cyclic-order-eq-g-order){.pf-ref} and [](#lagrange-formula){.pf-ref},
-\[
+$$
 |G|=[G:\langle g\rangle]\,|g|,
-\]
+$$
 and the index is a positive integer.
 :::
 
