@@ -1,4 +1,5 @@
 ---
+title: Solutions (algebra)
 order: 50
 ---
 
