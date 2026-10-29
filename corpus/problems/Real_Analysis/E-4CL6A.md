@@ -19,42 +19,45 @@ audit:
 ---
 
 ::: {.exercise}
-- Show that if a subset of a metric space is complete and totally bounded, then it is compact.
+Show that if a subset of a metric space is complete and totally bounded, then it is compact.
 :::
 
 ::: {.solution}
-In a metric space, compactness is equivalent to sequential compactness.
-We will show that every sequence in a complete, totally bounded metric space $(X, d)$ has a convergent subsequence.
+Let $X$ be the subset with the restricted metric $d$, so $(X,d)$ is a complete, totally bounded metric space. A metric space is compact if and only if it is sequentially compact, so it suffices to show that an arbitrary sequence $(x_n)$ in $X$ has a convergent subsequence.
 
-Let $(x_n)_{n=1}^\infty$ be an arbitrary sequence in $X$.
+::: pf
 
-1. **Constructing nested subsequences by total boundedness:**
+::: {.pf-step #nested}
+There are nested subsequences $(x_{m,k})_{k\ge1}$, $m\ge1$, each a subsequence of the previous one (with $(x_{0,k})=(x_n)$), and points $y_m\in X$ with $x_{m,k}\in B(y_m,1/m)$ for all $k$.
 
-   - For $\varepsilon = 1$: Since $X$ is totally bounded, $X$ can be covered by finitely many balls of radius $1$.
-     By the Pigeonhole Principle, at least one of these balls contains infinitely many terms of $(x_n)$.
-     Let $B(y_1, 1)$ be such a ball, and let $(x_{1, k})_{k=1}^\infty$ be a subsequence of $(x_n)$ entirely contained in $B(y_1, 1)$.
+::: pf-proof
+Given $(x_{m-1,k})$, total boundedness covers $X$ by finitely many balls of radius $1/m$. By the pigeonhole principle one of them, $B(y_m,1/m)$, contains $x_{m-1,k}$ for infinitely many $k$; let $(x_{m,k})$ be the subsequence of those terms.
+:::
 
-   - For $\varepsilon = 1/2$: The ball $B(y_1, 1)$ (or $X$) is covered by finitely many balls of radius $1/2$.
-     At least one ball $B(y_2, 1/2)$ contains infinitely many terms of the subsequence $(x_{1, k})$.
-     Let $(x_{2, k})_{k=1}^\infty$ be a subsequence of $(x_{1, k})$ contained in $B(y_2, 1/2)$.
+:::
 
-   - Inductively, for each $m \geq 1$: Having chosen the subsequence $(x_{m-1, k})$, covered by finitely many balls of radius $1/m$, we extract a subsequence $(x_{m, k})_{k=1}^\infty$ of $(x_{m-1, k})$ that is entirely contained in some ball $B(y_m, 1/m)$.
+::: {.pf-step #cauchy}
+The diagonal sequence $z_j=x_{j,j}$ is a Cauchy subsequence of $(x_n)$.
 
-2. **Diagonal subsequence:** Consider the diagonal sequence $(z_j)_{j=1}^\infty$ defined by $z_j = x_{j, j}$.
+::: pf-proof
+By step [](#nested){.pf-ref}, $(z_j)$ is a subsequence of $(x_n)$, and for each $m$ the tail $(z_j)_{j\ge m}$ is a subsequence of $(x_{m,k})$, so $z_j\in B(y_m,1/m)$ for $j\ge m$. Hence for $j,\ell\ge m$,
+$$
+d(z_j,z_\ell)\le d(z_j,y_m)+d(y_m,z_\ell)<\frac2m,
+$$
+which is less than any given $\varepsilon>0$ once $m>2/\varepsilon$.
+:::
 
-   - For each $m \geq 1$, the tail $(z_j)_{j=m}^\infty$ is a subsequence of $(x_{m, k})_{k=1}^\infty$, so for all $j \geq m$, $z_j \in B(y_m, 1/m)$.
+:::
 
-   - Therefore, for any $j, \ell \geq m$:
-     $$
-     d(z_j, z_\ell) \leq d(z_j, y_m) + d(y_m, z_\ell) < \frac{1}{m} + \frac{1}{m} = \frac{2}{m}.
-     $$
+::: pf-step
+$(x_n)$ has a subsequence converging in $X$, so $X$ is compact.
 
-3. **Cauchy sequence and convergence:** Given any $\varepsilon > 0$, choose $m \in \mathbb{N}$ such that $\frac{2}{m} < \varepsilon$.
-   Then for all $j, \ell \geq m$, $d(z_j, z_\ell) < \varepsilon$.
-   Thus $(z_j)_{j=1}^\infty$ is a Cauchy sequence in $X$.
+::: pf-proof
+By step [](#cauchy){.pf-ref} and completeness of $X$, $(z_j)$ converges to a point of $X$.
+:::
 
-   Since $X$ is complete, the Cauchy sequence $(z_j)$ converges to some $x^* \in X$.
+:::
 
-4. **Conclusion:** $(z_j)$ is a subsequence of the original sequence $(x_n)$ that converges in $X$.
-   Thus, every sequence in $X$ has a convergent subsequence, which proves that $X$ is sequentially compact, and therefore compact.
+:::
+
 :::
