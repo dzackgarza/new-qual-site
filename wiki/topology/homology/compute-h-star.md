@@ -37,7 +37,7 @@ $S^n$ as the union of two open hemispherical caps meeting in a band $\homotopic 
 A pair $(X,A)$ has the [[D-UEWPN|long exact sequence of the pair]].
 
 ::: {.theorem}
-If $(X,A)$ is a [[D-IGUUS|good pair]], the quotient map induces $H_n(X, A)\cong \tilde H_n(X/A)$ for all $n$.
+If $(X,A)$ is a good pair, that is, $A$ is a nonempty closed subspace that is a deformation retract of some neighborhood in $X$, the quotient map induces $H_n(X, A)\cong \tilde H_n(X/A)$ for all $n$.
 
 :::
 
