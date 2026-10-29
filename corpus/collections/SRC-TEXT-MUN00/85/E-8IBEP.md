@@ -25,7 +25,7 @@ Find a system of free generators for the subgroup $q_*(\pi_1(E, e_0))$, where $e
 :::
 
 ::: {.solution}
-**Goal:** Find a system of free generators for the subgroup $H = q_*(\pi_1(E, e_0)) \le \pi_1(X, x_0) \cong F(\alpha, \beta)$ corresponding to the grid covering of the figure-eight space.
+Write $x_0 = (b_0, b_0)$ for the base point of $X$ and $H = q_*(\pi_1(E, e_0)) \le \pi_1(X, x_0)$.
 
 ::: pf
 
