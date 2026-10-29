@@ -34,12 +34,13 @@ $$
 of schemes.
 
 ::: {.theorem title="Flat base change"}
-If $f$ is quasicompact and quasiseparated, $g$ is flat, and $\mathcal{F}$ is quasicoherent on $X$, the base change map is an isomorphism for all $i$.
+If $f$ is quasicompact and quasiseparated, $g$ is flat, and $\mathcal{F}$ is quasicoherent on $X$, the base change map
 $$
 g^*R^if_*\mathcal F
 \xrightarrow{\sim}
-R^if'_*g'^*\mathcal F.
+R^if'_*g'^*\mathcal F
 $$
+is an isomorphism for all $i$.
 [@Har10a, Proposition III.9.3]
 :::
 
