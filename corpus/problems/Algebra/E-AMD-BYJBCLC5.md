@@ -22,29 +22,29 @@ audit:
 ---
 
 ::: {.exercise}
-Is $\QQ(2^{1\over 3})/\QQ$ normal?
+Is $\QQ(2^{1/3})/\QQ$ normal?
 :::
 
 ::: {.solution}
 No. Let $\alpha=\sqrt[3]{2}$. The polynomial
-\[
+$$
 f(x)=x^3-2
-\]
+$$
 is irreducible over $\QQ$ by Eisenstein at $2$, so it is the minimal polynomial of $\alpha$ over $\QQ$.
 
 Its roots are
-\[
+$$
 \alpha,\qquad \alpha\zeta_3,\qquad \alpha\zeta_3^2,
-\]
+$$
 where $\zeta_3=e^{2\pi i/3}$. Since
-\[
+$$
 \QQ(\alpha)\subseteq\RR,
-\]
+$$
 the two nonreal roots $\alpha\zeta_3$ and $\alpha\zeta_3^2$ do not lie in $\QQ(\alpha)$.
 
 Thus an irreducible polynomial over $\QQ$ has a root in $\QQ(\alpha)$ but does not split there. Hence
-\[
+$$
 \QQ(\sqrt[3]{2})/\QQ
-\]
+$$
 is not normal.
 :::
