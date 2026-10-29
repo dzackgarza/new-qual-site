@@ -124,7 +124,7 @@ $$
 
 ::: pf-step
 
-(e) Without integrability of $g$ the identity can fail.
+(e) For an unbounded $g$ the identity can fail.
 
 ::: pf-proof
 
