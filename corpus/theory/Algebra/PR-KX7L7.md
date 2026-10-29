@@ -22,7 +22,7 @@ Let $R$ be a commutative ring and $X$ an $R$-module, and let $F \coloneqq (\wait
 
 - $F$ preserves injections, that is, $T \tensor_R \id_X\colon V \tensor_R X \to W \tensor_R X$ is injective for every injective $R$-linear map $T\colon V \injects W$, if and only if $X$ is [[D-DEFFLAT|flat]], and in that case $F$ is exact.
 
-- If $R = k$ is a field, every $k$-module is flat, so $T \tensor_k \id_X\colon V \tensor_k X \injects W \tensor_k X$ is injective for every injective $k$-linear map $T\colon V \injects W$ and every $k$-vector space $X$.
+- If $R = k$ is a field, every $k$-module is flat, so $T \tensor_k \id_X\colon V \tensor_k X \to W \tensor_k X$ is injective for every injective $k$-linear map $T\colon V \injects W$ and every $k$-vector space $X$.
 :::
 
 ::: {.example}
