@@ -31,25 +31,6 @@ Because $A$ is characteristic in $B$, $\psi_c(A) = A$.
 Hence $cAc^{-1} = A$ for every $c \in C$, and $A \normal C$.
 :::
 
-[[PR-GJLQP]]
-
-::: {.proof}
-Let $\psi \in \Aut(H)$ and $y\in Z(H)$.
-For every $h\in H$,
-$$
-\begin{aligned}
-\psi(y)h
-&= \psi(y)\,\psi\big(\inverseof{\psi}(h)\big) \\
-&= \psi\big( y \cdot \inverseof{\psi}(h) \big) \\
-&= \psi\big( \inverseof{\psi}(h) \cdot y \big) && \text{since } \inverseof{\psi}(h)\in H \text{ and } y\in Z(H) \\
-&= h\,\psi(y).
-\end{aligned}
-$$
-Hence $\psi(Z(H))\subseteq Z(H)$ for every $\psi\in\Aut(H)$.
-:::
-
-### Exercises
-
 [[P-5UUNM]]
 
 ## Normal closures and cores

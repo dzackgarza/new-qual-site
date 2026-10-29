@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.exercise}
-Show that $Z(G) \leq G$ is always characteristic.
+Show that the [[D-NK7G7|center]] $Z(G) \leq G$ is always [[D-53LTN|characteristic]].
 :::
 
 ::: {.solution}
