@@ -1148,7 +1148,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Complex_Analysis/P-5S2DR.md` | `1b0b7777c77f3f25704e84c5ba44e3ec1786a717` | `1b0b7777c77f3f25704e84c5ba44e3ec1786a717` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-5SR2D.md` | `7a0b93439a3ccabbdac767789e529fb3050d1e39` | `7a0b93439a3ccabbdac767789e529fb3050d1e39` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-5U7QZ.md` | `4ac03c26bf52977dd93e09a4687d85893f218ce7` | `4ac03c26bf52977dd93e09a4687d85893f218ce7` | Read; retained |
-| [x] | `corpus/problems/Complex_Analysis/P-5UKXY.md` | `5475ad53ea91b6b3bea93bca1f92fca73e5eda87` | `5475ad53ea91b6b3bea93bca1f92fca73e5eda87` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-5VEUZ.md` | `58b275383253bdcca708c1903bbc43ff1da1a201` | `58b275383253bdcca708c1903bbc43ff1da1a201` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-63VGL.md` | `32b3ba7a9c9bcddef0f3a4dd9acfead41a7d298c` | `32b3ba7a9c9bcddef0f3a4dd9acfead41a7d298c` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-642LC.md` | `69aba0ebbef958fed9fa10cd426ff1a28a3958a1` | `69aba0ebbef958fed9fa10cd426ff1a28a3958a1` | Read; retained |
