@@ -18,55 +18,79 @@ review: draft
 ::: {.problem}
 Suppose $f:\DD\to\DD$ is analytic and admits a continuous extension $\tilde f: \bar \DD \to \bar \DD$ such that $\abs{z} = 1 \implies \abs{f(z)} = 1$.
 
-a.
-Prove that $f$ is a rational function.
+(a) Prove that $f$ is a rational function.
 
-b.
-Suppose that $z=0$ is the unique zero of $f$.
+(b) Suppose that $z=0$ is the unique zero of $f$.
 Show that
-\[  
-\exists n\in \NN, \lambda \in S^1 \qtext{ such that }f(z) = \lambda z^n
-.\]
+$$
+\exists n\in \NN, \lambda \in S^1 \qtext{ such that }f(z) = \lambda z^n.
+$$
 
-c.
-Suppose that $a_1, \cdots, a_n \in \DD$ are the zeros of $f$ and prove that
-\[  
-\exists \lambda \in S^1 \qtext{such that} f(z) = \lambda \prod_{j=1}^n {z - a_j \over 1 - \bar{a_j} z}
-.\]
-
+(c) Suppose that $a_1, \cdots, a_n \in \DD$ are the zeros of $f$ and prove that
+$$
+\exists \lambda \in S^1 \qtext{such that} f(z) = \lambda \prod_{j=1}^n \frac{z - a_j}{1 - \bar{a_j} z}.
+$$
 :::
 
 ::: {.solution}
-**Part 1**:
-use the reflection principle to define
-\[
-F(z) \definedas 
-\begin{cases}
-f(z) & \abs{z} \leq 1 
-\\
-{1\over \bar{f\qty{1/\bar{z}}} } & \abs{z} \geq 1
-\end{cases}
-.\]
+Write $f$ also for the extension $\tilde f$.
+Zeros are counted with multiplicity.
 
-Now $F:\CP^1\to \CP^1$ is holomorphic and all such functions are rational.
-As a consequence, $f$ is rational.
+::: pf
 
-**Part 2**:
-As in the proof of Schwarz, define $g(z) \definedas {f(z)\over z^n}$ where $n = \order_{f}(0)$.
-Then $g$ is holomorphic on $\DD$ since the singularity at $z=0$ is removable.
-On $\abs{z} = r<1$,
-\[
-\abs{g(z)} = { \abs{f(z)} \over \abs{z} } = {\abs{f(z)} \over r} \leq {1\over r} \convergesto{r\to 1^-} 1
-,\]
-using that $\abs{f} \leq 1$ on $\DD$.
-By the MMP, $\abs{g} \leq 1$ on all of $\DD$.
-Note that $\abs{g} = 1$ when $\abs{z}=1$, so $\abs{1/g}\leq 1$ in $\DD$ by the MMP, forcing $\abs{g} = 1$.
-Unwinding this, $\abs{f} = \abs{z}^n$, go $f(z) = \lambda z^n$ for some $\abs{\lambda} = 1$.
+::: {.pf-step #finite-zeros}
+$f$ has finitely many zeros in $\DD$, and there is $r<1$ with $\abs{f}\ge\frac12$ on $r\le\abs z\le1$.
 
-**Part 3**:
-Define $\Psi(z) \definedas \prod_{k\leq n} \psi_{a_k}(z)$ where $\psi_a(z) \definedas {a-z\over 1-\bar a z}$.
-Set $g(z) \definedas {f(z) \over \Psi(z)}$, then by the same argument as above, $\abs{g} \leq 1$ and $\abs{g} = 1$ on $\abs{z} = 1$.
-Then $g$ has no zeros, since they've all been divided out, and no poles since $f$ is holomorphic on $\DD$, so $1/g$ is holomorphic on $\DD$.
-Since $\abs{1/g} = 1$ on $S^1$, this forces $g$ to be constant.
-Equality in the Schwarz lemma implies $g(z) = \lambda z$ is a rotation, and unwinding this yields $f(z) = \lambda \Psi(z)$.
+::: pf-proof
+$\abs f=1$ on the compact set $\abs z=1$ and $f$ is uniformly continuous on $\overline\DD$, which gives $r$.
+The zeros therefore lie in the compact disk $\abs z\le r$, and they are isolated since $f\not\equiv0$, so there are finitely many.
+:::
+
+:::
+
+::: {.pf-step #reflection}
+(a) $f$ is a rational function.
+
+::: pf-proof
+Define $F$ on the Riemann sphere by $F(z)=f(z)$ for $\abs z\le1$ and $F(z)=1/\overline{f(1/\bar z)}$ for $\abs z\ge1$, with $F(\infty)=1/\overline{f(0)}$ (equal to $\infty$ if $f(0)=0$).
+The two formulas agree on $\abs z=1$ because $\abs{f(z)}=1$ there.
+By step [](#finite-zeros){.pf-ref}, $F$ is meromorphic on $\abs z>1$ with finitely many poles, none on $1\le\abs z<1/r$.
+So $F$ is continuous on the annulus $r<\abs z<1/r$ and holomorphic off the circle $\abs z=1$; by Morera's theorem it is holomorphic across the circle.
+Thus $F$ is meromorphic on the Riemann sphere, hence rational, and $f=F|_{\DD}$.
+:::
+
+:::
+
+::: {.pf-step #unimodular-quotient}
+If $B$ is holomorphic on a neighbourhood of $\overline\DD$, $\abs B=1$ on $\abs z=1$, and $B$ has the same zeros in $\DD$ as $f$, then $f=\lambda B$ for some $\lambda\in S^1$.
+
+::: pf-proof
+$g\coloneqq f/B$ has removable singularities at the common zeros, so it is holomorphic and zero-free on $\DD$, and continuous on $\overline\DD$ with $\abs g=1$ on $\abs z=1$.
+The maximum modulus principle applied to $g$ and to $1/g$ gives $\abs g\le1$ and $\abs{1/g}\le1$ on $\DD$, so $\abs g\equiv1$.
+A holomorphic function of constant modulus on $\DD$ is constant, so $g\equiv\lambda$ with $\abs\lambda=1$.
+:::
+
+:::
+
+::: pf-step
+(b) $f(z)=\lambda z^n$ with $n\ge1$ the order of the zero of $f$ at $0$ and $\lambda\in S^1$.
+
+::: pf-proof
+Apply step [](#unimodular-quotient){.pf-ref} with $B(z)=z^n$.
+:::
+
+:::
+
+::: pf-step
+(c) $f(z)=\lambda\prod_{j=1}^n\frac{z-a_j}{1-\bar a_jz}$ for some $\lambda\in S^1$.
+
+::: pf-proof
+Each factor $\frac{z-a_j}{1-\bar a_jz}$ is holomorphic on $\abs z<1/\abs{a_j}$, has modulus $1$ on $\abs z=1$, and vanishes only at $a_j$.
+Apply step [](#unimodular-quotient){.pf-ref} with $B$ their product.
+:::
+
+:::
+
+:::
+
 :::
