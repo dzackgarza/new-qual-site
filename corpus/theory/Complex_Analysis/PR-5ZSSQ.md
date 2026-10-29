@@ -20,7 +20,7 @@ Let $(X,d)$ be a nonempty complete metric space, and let $f\colon X\to X$ be a m
 $$
 d(f(x),f(y)) \leq c\, d(x,y) \quad\text{for all } x, y\in X.
 $$
-Then $f$ has a unique fixed point: there is exactly one $x_0\in X$ with $f(x_0) = x_0$.
+Then $f$ has a unique fixed point: there is exactly one $x^*\in X$ with $f(x^*) = x^*$.
 :::
 
 ::: {.proof}
