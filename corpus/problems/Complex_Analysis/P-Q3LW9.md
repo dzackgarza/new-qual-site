@@ -19,12 +19,37 @@ that $p_n(z)\to\bar z$ uniformly for $z\in\partial\DD$.
 :::
 
 ::: {.solution}
-Such a sequence does not exist. On $|z|=1$, $\bar z=1/z$. If $p_n\to\bar z$ uniformly there,
-then
-\[
-zp_n(z)\to1
-\]
-uniformly on $|z|=1$. By the maximum modulus principle applied to
-$zp_n(z)-1$, the convergence would be uniform on the whole closed disk. But
-at $z=0$ every term equals $-1$, a contradiction.
+
+::: pf
+
+::: {.pf-step #reduce}
+
+If $p_n\to\bar z$ uniformly on $\partial\DD$, then $\varepsilon_n\coloneqq\max_{\abs z=1}\abs{zp_n(z)-1}\to0$.
+
+::: pf-proof
+
+On $\abs z=1$ we have $\bar z=1/z$, so $\abs{zp_n(z)-1}=\abs{p_n(z)-\bar z}$.
+
+:::
+
+:::
+
+::: pf-step
+
+No such sequence $p_n$ exists.
+
+::: pf-proof
+
+Each $zp_n(z)-1$ is a polynomial, so by the maximum modulus principle
+$$
+1=\abs{0\cdot p_n(0)-1}\le\varepsilon_n.
+$$
+This contradicts step [](#reduce){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::
