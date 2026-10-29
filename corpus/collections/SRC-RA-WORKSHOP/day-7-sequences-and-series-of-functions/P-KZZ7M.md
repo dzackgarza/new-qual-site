@@ -19,32 +19,23 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f_n:[0,1]\to\mathbb{R}$ are continuous functions converging uniformly to $f:[0,1]\to\mathbb{R}$.
+Suppose $f_n:[0,1]\to\RR$ are continuous functions converging uniformly to $f:[0,1]\to\RR$.
 Either prove that $\displaystyle\lim_{n\to\infty}\int_{1/n}^1 f_n(x)\,dx=\int_0^1 f(x)\,dx$ or give a counterexample.
 :::
+
 ::: {.solution}
+
+The statement is true.
 
 ::: pf
 
-::: pf-step
-
-Claim: $\lim_{n\to\infty}\int_{1/n}^1 f_n(x)\,dx = \int_0^1 f(x)\,dx$.
-
-::: pf-proof
-
-split the difference into the convergence part (uniform) and the endpoint part (small interval).
-
-:::
-
-:::
-
 ::: {.pf-step #s2}
 
-$\int_{1/n}^1 f_n = \int_{1/n}^1 f + \int_{1/n}^1 (f_n - f)$, and $\left|\int_{1/n}^1 (f_n - f)\right| \le \|f_n - f\|_\infty \cdot 1 \to 0$.
+$\int_{1/n}^1 (f_n - f) \to 0$.
 
 ::: pf-proof
 
-uniform convergence $f_n \to f$ means $\|f_n - f\|_\infty \to 0$; the interval has length $\le 1$.
+Uniform convergence $f_n \to f$ means $\norm{f_n - f}_\infty \to 0$, and the interval $[1/n,1]$ has length at most $1$, so $\abs{\int_{1/n}^1 (f_n - f)} \le \norm{f_n - f}_\infty \to 0$.
 
 :::
 
@@ -56,15 +47,21 @@ $\int_{1/n}^1 f \to \int_0^1 f$.
 
 ::: pf-proof
 
-$f$ is continuous on $[0,1]$ (uniform limit of continuous functions), hence bounded, $|f| \le M$; then $\left|\int_0^{1/n} f\right| \le M/n \to 0$, so $\int_{1/n}^1 f = \int_0^1 f - \int_0^{1/n} f \to \int_0^1 f$.
+$f$ is continuous on $[0,1]$, as a uniform limit of continuous functions, hence bounded: $\abs{f} \le M$. Then $\abs{\int_0^{1/n} f} \le M/n \to 0$, so $\int_{1/n}^1 f = \int_0^1 f - \int_0^{1/n} f \to \int_0^1 f$.
 
 :::
 
 :::
 
-::: pf-qed
+::: pf-step
 
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} combine: $\int_{1/n}^1 f_n = \int_{1/n}^1 f + o(1) \to \int_0^1 f$.
+$\lim_{n\to\infty}\int_{1/n}^1 f_n(x)\,dx = \int_0^1 f(x)\,dx$.
+
+::: pf-proof
+
+Write $\int_{1/n}^1 f_n = \int_{1/n}^1 f + \int_{1/n}^1 (f_n - f)$. The first term tends to $\int_0^1 f$ by step [](#s3){.pf-ref}, and the second tends to $0$ by step [](#s2){.pf-ref}.
+
+:::
 
 :::
 
