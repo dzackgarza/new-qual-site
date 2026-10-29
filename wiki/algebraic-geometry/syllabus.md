@@ -28,7 +28,7 @@ Past examinations with transcribed questions are linked from [[algebraic-geometr
 
 - Algebraic curves: genus; the genus formula for plane curves; the Riemann–Hurwitz formula; the Riemann–Roch theorem.
 
-References: Shafarevich, *Basic Algebraic Geometry 1*, 2nd edition; [@Har10b].
+References: [@Sha94; @Har10b].
 
 ## Scheme theory, cohomology and curves
 
@@ -178,7 +178,7 @@ Cohomology of sheaves:
 
 ## Complex algebraic geometry (minor topic)
 
-Complex geometry (Griffiths–Harris, Ch. 0.1–0.2, 0.4–0.7, 1.1–1.4):
+Complex geometry [@GH94, Ch. 0.1–0.2, 0.4–0.7, 1.1–1.4]:
 
 - Complex and Kähler manifolds.
 
@@ -188,13 +188,13 @@ Complex geometry (Griffiths–Harris, Ch. 0.1–0.2, 0.4–0.7, 1.1–1.4):
 
 - Kodaira vanishing and Kodaira embedding.
 
-Riemann–Roch and Abel's theorem (Miranda, Ch. V–VIII):
+Riemann–Roch and Abel's theorem [@Mir25, Ch. V–VIII]:
 
 - Divisors, embeddings, the Abel–Jacobi map.
 
 - Riemann–Roch, geometric Riemann–Roch, Abel's theorem.
 
-Cohomology (Griffiths–Harris, Ch. 0.3, 1.1; Miranda, Ch. IX):
+Cohomology [@GH94, Ch. 0.3, 1.1; @Mir25, Ch. IX]:
 
 - De Rham, Dolbeault and Čech cohomology.
 
@@ -202,4 +202,4 @@ Cohomology (Griffiths–Harris, Ch. 0.3, 1.1; Miranda, Ch. IX):
 
 - Chern classes.
 
-Texts: Griffiths and Harris, *Principles of Algebraic Geometry*; Miranda, *Algebraic Curves and Riemann Surfaces*.
+Texts: [@GH94; @Mir25].
