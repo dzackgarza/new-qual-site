@@ -13,35 +13,6 @@ topics:
 
 [[T-22RQZ]]
 
-[[FT-5MASA]]
-
-::: {.slogan}
-The $k$th Taylor coefficient of $f$ at $z_0$ is bounded by the supremum of $\abs f$ on a circle of radius $R$ about $z_0$, divided by $R^k$:
-$$
-\abs{c_k} \leq {\sup_{\abs{z-z_0}=R}\abs{f(z)} \over R^k}
-.$$
-
-:::
-
-::: {.proof title="Cauchy's inequality"}
-\envlist
-
-- Given $z_0\in \Omega$, let $r>0$ with $\overline{D_r(z_0)} \subset \Omega$, let $C = \bd D_r(z_0)$, and let $M\coloneqq \sup_{C}\abs f$.
-- Apply the integral formula for $f^{(n)}$:
-
-$$
-\begin{aligned}
-\left|f^{(n)}(z_0)\right|
-&= \abs{ \frac{n !}{2 \pi i} \int_{C} \frac{f(\zeta) }{(\zeta-z_0)^{n+1}} \dzeta } \\
-&=\left|\frac{n !}{2 \pi i} \int_{0}^{2 \pi} \frac{f\left(z_0 + r e^{i \theta}\right) r i e^{i \theta} }{\left(r e^{i \theta}\right)^{n+1}} \dtheta \right| \\
-&\leq \frac{n !}{2 \pi} \int_{0}^{2 \pi}\left|\frac{f\left( z_0 +r e^{i \theta}\right) r i e^{i \theta}}{\left(r e^{i \theta}\right)^{n+1}}\right| \dtheta \\
-&=\frac{n !}{2 \pi} \int_{0}^{2 \pi} \frac{\left|f\left(z_0 +r e^{i \theta}\right)\right|}{r^{n}} \dtheta \\
-&\leq \frac{n !}{2 \pi} \int_{0}^{2 \pi} \frac{M}{r^{n}} \dtheta \\
-&=\frac{M n !}{r^{n}}
-\end{aligned}.$$
-
-:::
-
 ::: {.remark title="Growth bounds for entire functions"}
 Let $f$ be entire with $\abs{f(z)} \leq A \abs z^n$ for all $\abs z\geq R_0$.
 For fixed $z_0$ and large $R$, $\abs f\leq A(R+\abs{z_0})^n$ on the circle $\abs{z-z_0}=R$, so Cauchy's inequality gives $\abs{f^{(n+1)}(z_0)} \leq (n+1)!\,A (R+\abs{z_0})^n/R^{n+1}\to 0$ as $R\to\infty$.

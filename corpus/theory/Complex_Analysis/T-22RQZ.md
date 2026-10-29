@@ -4,6 +4,10 @@ id: T-22RQZ
 kind: theorem
 title: Cauchy's inequalities
 slogan: 'If $\abs{f}\le M$ on the circle $\abs{z-z_0}=R$, then $\abs{f^{(n)}(z_0)}\le n!M/R^n$ for every $n\ge0$.'
+prompts:
+- State the Cauchy inequalities for $f^{(n)}(z_0)$.
+- State the Cauchy estimate for $\abs{f^{(n)}(0)}$.
+- State the Cauchy inequalities in the form bounding $\abs{f^{(n)}(z_0)/n!}$.
 classification:
   areas:
   - complex-analysis
@@ -28,4 +32,8 @@ By the Cauchy integral formula for derivatives, with $\gamma$ parametrized by $z
 $$
 \abs{f^{(n)}(z_0)}=\abs{\frac{n!}{2\pi i}\int_\gamma\frac{f(z)}{(z-z_0)^{n+1}}\dz}\le\frac{n!}{2\pi}\int_0^{2\pi}\frac{M}{R^{n+1}}R\dtheta=\frac{n!\,M}{R^n}.
 $$
+:::
+
+::: {.remark title="Variations"}
+Dividing by $n!$ gives the form for Taylor coefficients: the $n$th Taylor coefficient $f^{(n)}(z_0)/n!$ of $f$ at $z_0$ has modulus at most $R^{-n}\max_{\abs{z-z_0}=R}\abs{f(z)}$.
 :::
