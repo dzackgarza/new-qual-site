@@ -26,20 +26,28 @@ $$Z(A_n) = \{e\} \quad \text{for all } n \ge 4.$$
 :::
 
 ::: {.solution}
-Let $\sigma\in Z(A_n)$ with $n\ge4$. For every $3$-cycle $(i\,j\,k)\in A_n$, centrality gives
-$$
-\sigma(i\,j\,k)\sigma^{-1}=(i\,j\,k).
-$$
-But conjugation acts on a cycle by applying $\sigma$ to its entries, so
-$$
-(\sigma(i)\,\sigma(j)\,\sigma(k))=(i\,j\,k).
-$$
-In particular, $\sigma$ preserves the underlying set $\{i,j,k\}$ of every $3$-subset of $\{1,\dots,n\}$.
+Let $n\ge4$ and $\sigma\in Z(A_n)$.
 
-Fix $i$. The intersection of all $3$-subsets containing $i$ is exactly $\{i\}$ when $n\ge4$. Since $\sigma$ preserves each such $3$-subset, it preserves their intersection, so $\sigma(i)=i$. This holds for every $i$, hence $\sigma=e$.
+::: pf
 
-Therefore
-$$
-Z(A_n)=\{e\}\qquad(n\ge4).
-$$
+::: {.pf-step #preserves-triples}
+$\sigma$ maps every $3$-subset $\{i,j,k\}$ of $\{1,\ldots,n\}$ onto itself.
+
+::: pf-proof
+The $3$-cycle $(i\,j\,k)$ lies in $A_n$, so centrality gives $\sigma(i\,j\,k)\sigma^{-1}=(i\,j\,k)$. Conjugation applies $\sigma$ to the entries of a cycle, so $(\sigma(i)\,\sigma(j)\,\sigma(k))=(i\,j\,k)$, and the two cycles move the same set of points.
+:::
+
+:::
+
+::: pf-step
+$\sigma=e$, so $Z(A_n)=\{e\}$.
+
+::: pf-proof
+Fix $i$. By step [](#preserves-triples){.pf-ref}, $\sigma(i)$ lies in every $3$-subset that contains $i$. Since $n\ge4$, the intersection of these $3$-subsets is $\{i\}$, so $\sigma(i)=i$. This holds for every $i$.
+:::
+
+:::
+
+:::
+
 :::
