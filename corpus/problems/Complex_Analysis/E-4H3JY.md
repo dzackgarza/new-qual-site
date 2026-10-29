@@ -18,21 +18,44 @@ Find a conformal map from $\DD$ to $\HH$.
 :::
 
 ::: {.solution}
-The inverse of the standard Cayley map $w\mapsto(w-i)/(w+i)$ is
-\[
-T(z)=i{1+z\over1-z}.
-\]
+Let
+$$
+T(z)=i\frac{1+z}{1-z},\qquad S(w)=\frac{w-i}{w+i},
+$$
+so that $S$ is the Cayley map and $T=S^{-1}$ as fractional linear transformations.
+
+::: pf
+
+::: {.pf-step #into-H}
+$T(\DD)\subseteq\HH$.
+
+::: pf-proof
 For $z\in\DD$,
-\[
-\Im T(z)
-=\Re {1+z\over1-z}
-={1-|z|^2\over |1-z|^2}>0,
-\]
-so $T(\DD)\subseteq\HH$.
-Its inverse is
-\[
-T^{-1}(w)={w-i\over w+i},
-\]
-which maps $\HH$ into $\DD$.
-Thus $T:\DD\to\HH$ is biholomorphic, hence conformal.
+$$
+\Im T(z)=\Re \frac{1+z}{1-z}=\frac{1-\abs{z}^2}{\abs{1-z}^2}>0.
+$$
+:::
+
+:::
+
+::: {.pf-step #into-D}
+$S(\HH)\subseteq\DD$.
+
+::: pf-proof
+For $\Im w>0$, the point $w$ is closer to $i$ than to $-i$, so $\abs{w-i}<\abs{w+i}$.
+:::
+
+:::
+
+::: pf-step
+$T:\DD\to\HH$ is a conformal bijection.
+
+::: pf-proof
+By steps [](#into-H){.pf-ref} and [](#into-D){.pf-ref}, $T|_\DD$ and $S|_\HH$ are mutually inverse holomorphic maps, so $T$ is biholomorphic onto $\HH$.
+:::
+
+:::
+
+:::
+
 :::
