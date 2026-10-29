@@ -19,29 +19,39 @@ Let $J \normal k[x_1, \cdots, x_n]$ be an ideal, and find a counterexample to $I
 :::
 
 ::: {.solution}
-Take $J = \generators{x^2+1} \normal \RR[x]$, noting that $J$ is nontrivial and proper but $\RR$ is not algebraically closed.
-Then $V(J) \subseteq \RR$ is empty, so $I(V(J)) = I(\emptyset)$.
+Take $k = \RR$, $n = 1$, and $J = \generators{x^2 + 1} \normal \RR[x]$.
 
-**Claim**: $I(V(J)) = \RR[x]$.
+::: pf
 
-For any set $X \subset \AA^n/k$,
-$$
-I(X) = \theset{f\in \RR[x] \st \forall x\in X,\, f(x)=0}
-,$$
-and so vacuously
-$$
-I(\emptyset) = \theset{f\in \RR[x] \st \forall x\in \emptyset,\, f(x)=0} = \theset{f\in \RR[x]} = \RR[x]
-.$$
+::: {.pf-step #ivj}
+$I(V(J)) = \RR[x]$.
 
-**Claim**: $\sqrt{J} \neq \RR[x]$.
+::: pf-proof
+The polynomial $x^2 + 1$ has no real root, so $V(J) = \emptyset$.
+Every polynomial vanishes at every point of $\emptyset$, so $I(\emptyset) = \RR[x]$.
+:::
 
-Maximal ideals are radical, and $\RR[x]/ J \cong \CC$ being a field implies $J$ is maximal.
-In this case $\sqrt{J} = J \neq \RR[x]$.
+:::
 
-That maximal ideals are radical follows because if $J\normal R$ is maximal, then $J \subset \sqrt{J} \subset R$, forcing $\sqrt{J} = J$ or $\sqrt{J}=R$.
-But if $\sqrt{J}=R$, then
-$$
-1\in \sqrt{J} \implies 1^n \in J \text{ for some }n \implies 1 \in J \implies J=R
-,$$
-contradicting that $J$ is maximal and thus proper.
+::: {.pf-step #radical}
+$\sqrt{J} = J \neq \RR[x]$.
+
+::: pf-proof
+Since $\RR[x]/J \cong \CC$ is a field, $J$ is maximal and so proper.
+Then $J \subseteq \sqrt{J}$, and $\sqrt{J} \neq \RR[x]$, because $1 \in \sqrt{J}$ would give $1 = 1^n \in J$.
+By maximality, $\sqrt{J} = J$.
+:::
+
+:::
+
+::: pf-step
+$I(V(J)) \neq \sqrt{J}$.
+
+::: pf-proof
+Compare steps [](#ivj){.pf-ref} and [](#radical){.pf-ref}.
+:::
+
+:::
+
+:::
 :::
