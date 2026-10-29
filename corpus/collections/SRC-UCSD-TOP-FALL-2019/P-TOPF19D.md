@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF19D
 kind: problem
-title: "Every continuous self-map of CP^{2n} has a fixed point"
+title: 'Every continuous self-map of $\CP^{2n}$ has a fixed point'
 classification:
   areas:
   - topology

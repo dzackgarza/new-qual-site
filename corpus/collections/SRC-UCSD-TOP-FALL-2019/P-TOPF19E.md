@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF19E
 kind: problem
-title: "H_{n-1} of a closed n-manifold is torsion-free iff orientable"
+title: '$H_{n-1}$ of a closed $n$-manifold is torsion-free if and only if the manifold is orientable'
 classification:
   areas:
   - topology

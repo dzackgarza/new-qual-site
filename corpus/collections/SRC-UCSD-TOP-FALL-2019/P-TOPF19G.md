@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF19G
 kind: problem
-title: "Two maps from T^3 to S^3 are homotopic iff they have the same degree"
+title: 'Two maps $T^3\to S^3$ are homotopic if and only if they have the same degree'
 classification:
   areas:
   - topology

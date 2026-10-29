@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF19C
 kind: problem
-title: "Integer homology of RP^2 x RP^2"
+title: 'Integral homology of $\RP^2\times\RP^2$'
 classification:
   areas:
   - topology

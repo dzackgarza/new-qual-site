@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF19H
 kind: problem
-title: "Half die half alive: kernel of boundary inclusion on H_1 has dimension g"
+title: 'Half lives, half dies: the kernel of $H_1(\partial M;\QQ)\to H_1(M;\QQ)$ has dimension $g$'
 classification:
   areas:
   - topology

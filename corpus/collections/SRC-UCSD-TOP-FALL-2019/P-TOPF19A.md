@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF19A
 kind: problem
-title: "A map from R^n to R^n bounded distance from the identity is surjective"
+title: 'A map $\RR^n\to\RR^n$ at bounded distance from the identity is surjective'
 classification:
   areas:
   - topology
