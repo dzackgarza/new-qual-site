@@ -18,29 +18,33 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: source-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source did not say where x lies; the statement now takes x in G.'
 ---
 
 ::: {.problem}
-- Show that for $H\leq G$, $C_H(x) = H \intersect C_G(x)$.
+Show that for $H\leq G$ and $x\in G$, $C_H(x) = H \intersect C_G(x)$.
 :::
 
 ::: {.solution}
 By definition,
-\[
+$$
 C_H(x)=\{h\in H:hx=xh\}
-\]
+$$
 and
-\[
+$$
 C_G(x)=\{g\in G:gx=xg\}.
-\]
+$$
 Hence for $h\in G$,
-\[
+$$
 h\in C_H(x)
 \iff h\in H\text{ and }hx=xh
 \iff h\in H\cap C_G(x).
-\]
+$$
 Therefore
-\[
+$$
 C_H(x)=H\cap C_G(x).
-\]
+$$
 :::
