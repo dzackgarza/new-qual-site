@@ -19,25 +19,32 @@ Does diagonalizable imply invertible? Does invertible imply diagonalizable?
 :::
 
 ::: {.solution}
-Neither implication holds.
 
-A diagonalizable matrix need not be invertible. For example,
-\[
-A=\begin{pmatrix}0&0\\0&1\end{pmatrix}
-\]
-is already diagonal, but
-\[
-\det A=0,
-\]
-so it is not invertible.
+::: pf
 
-An invertible matrix need not be diagonalizable. For example,
-\[
-B=\begin{pmatrix}1&1\\0&1\end{pmatrix}
-\]
-has determinant $1$, so it is invertible. But its only eigenvalue is $1$, and
-\[
-\ker(B-I)
-\]
-is one-dimensional, so $B$ does not have a basis of eigenvectors and is not diagonalizable.
+::: pf-step
+A diagonalizable matrix need not be invertible.
+
+::: pf-proof
+$A=\begin{pmatrix}0&0\\0&1\end{pmatrix}$ is diagonal, and $\det A=0$.
+:::
+
+:::
+
+::: pf-step
+An invertible matrix need not be diagonalizable.
+
+::: pf-proof
+$B=\begin{pmatrix}1&1\\0&1\end{pmatrix}$ has $\det B=1$.
+Its only eigenvalue is $1$, and $\ker(B-I)$ is one-dimensional, so $B$ has no basis of eigenvectors.
+:::
+
+:::
+
+::: pf-qed
+$\boxed{\text{Neither implication holds.}}$
+:::
+
+:::
+
 :::
