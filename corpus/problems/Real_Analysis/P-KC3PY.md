@@ -39,6 +39,7 @@ $$
 :::
 
 ::: {.solution}
+
 ::: pf
 
 ::: {.pf-step #s1}
