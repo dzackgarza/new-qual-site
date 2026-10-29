@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.exercise}
-- Show that if $f\in L^1$ then $\hat f$ is bounded and uniformly continuous.
+Show that if $f\in L^1$ then $\hat f$ is bounded and uniformly continuous.
 :::
 
 ::: {.solution}
