@@ -16,16 +16,22 @@ audit:
 - event: solution-written
   by: Claude Opus 5
   date: 2026-08-30
+- event: source-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source part (b) read "Suppose N = <h> is cyclic and classify all possibilities for G if |h| = p^3, |h| = p", which is inconsistent since |N| = p^2; the statement takes h to be an element of G of largest order. The source hint "Sylow and semidirect products" moved to a hint block.'
 ---
 
 ::: {.exercise}
-Let $p$ be a prime and $\abs{G} = p^3$. 
-Prove that $G$ has a normal subgroup $N$ of order $p^2$.
-- Suppose $N = \generators{h}$ is cyclic and classify all possibilities for $G$ if:
-  - $\abs h = p^3$
-  - $\abs h = p$.
+Let $p$ be a prime and let $G$ be a group with $\abs{G} = p^3$.
 
-  > Hint: Sylow and semidirect products.
+(a) Prove that $G$ has a normal subgroup $N$ of order $p^2$.
+
+(b) Let $h \in G$ be an element of largest order. Classify all possibilities for $G$ if (i) $\abs h = p^3$; (ii) $\abs h = p$.
+:::
+
+::: {.hint}
+Sylow and semidirect products.
 :::
 
 ::: {.hint}
@@ -70,23 +76,6 @@ By Cauchy's theorem, $G/\generators z$ has a subgroup $\bar H$ with $\abs{\bar H
 ::: pf-step
 Let $N$ be the preimage of $\bar H$ under $\pi: G \to G/\generators z$. The correspondence theorem gives $N \normal G$, and
 $$\abs N = \abs{\bar H}\cdot \abs{\generators z} = p \cdot p = p^2 .$$
-:::
-
-:::
-
-:::
-
-::: pf-step
-The two classification cases are cases on the largest order of an element of $G$.
-
-::: pf-proof
-
-::: pf-step
-$N$ has order $p^2$, so a generator of a cyclic $N$ has order $p^2$, never $p^3$ or $p$.
-:::
-
-::: pf-step
-The orders $p^3$ and $p$ are therefore the orders of an element $h \in G$ of largest order, and they are the two extreme cases: $G$ is cyclic, or $G$ has exponent $p$.
 :::
 
 :::
