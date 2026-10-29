@@ -22,7 +22,7 @@ $$
 
 :::
 
-[[L-EAZX6]]
+[[FT-3ZL25]]
 
 ::: {.proof}
 Let $\abs{A_n}\leq M$ for all $n$, where $A_n \coloneqq \sum_{k\leq n} a_k$ and $A_0 \coloneqq 0$.

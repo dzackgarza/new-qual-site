@@ -6,6 +6,7 @@ title: Dirichlet's test
 slogan: 'Monotone decay to zero times bounded partial sums gives convergence.'
 prompts:
 - State Dirichlet's test for convergence of a series.
+- What hypotheses does Dirichlet's test put on $\theset{a_n}$ and $\theset{b_n}$?
 classification:
   areas:
   - complex-analysis

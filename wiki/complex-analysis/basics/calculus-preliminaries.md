@@ -137,7 +137,7 @@ For polynomials $f, g$ over a field with $g\neq 0$, there are unique polynomials
 
 :::
 
-[[FT-3ZL25]] [[FT-BSOZF]]
+[[FT-3ZL25]]
 
 ## Convergence of functions
 
