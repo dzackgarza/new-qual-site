@@ -43,7 +43,10 @@ The pullback $f^* : \operatorname{Div} Y \to \operatorname{Div} X$ is the homomo
 $$
 f^* q = \sum_{p \in f^{-1}(q)} e_p \, p .
 $$
-It preserves linear equivalence and satisfies $f^* \mcl(D) \cong \mcl(f^* D)$, so it induces $f^* : \Pic Y \to \Pic X$, and $\deg f^* D = \deg f \cdot \deg D$.
+:::
+
+::: {.proposition}
+The pullback $f^*$ preserves linear equivalence and satisfies $f^* \mcl(D) \cong \mcl(f^* D)$, so it induces $f^* : \Pic Y \to \Pic X$, and $\deg f^* D = \deg f \cdot \deg D$.
 [@Har10a, §IV.2, Proposition II.6.9, Exercise II.6.8]
 :::
 
