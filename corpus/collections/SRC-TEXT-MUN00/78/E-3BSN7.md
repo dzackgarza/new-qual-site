@@ -26,7 +26,6 @@ What space is indicated by each of the following labelling schemes for a collect
 :::
 
 ::: {.solution}
-**Goal:** Identify the topological surfaces represented by each of the two triangular labeling schemes.
 
 ::: pf
 
