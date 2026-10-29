@@ -13,19 +13,11 @@ The exact statements are on [[real-analysis/fubini-tonelli/statements|The statem
 
 ## Hypotheses of each theorem
 
-- **Tonelli.** If $\mu$ and $\nu$ are $\sigma$-finite and $f \geq 0$, then the two iterated integrals and $\int_{X\times Y} f\,d(\mu\times\nu)$ are equal, possibly all equal to $+\infty$.
-
-- **Fubini.** If $\mu$ and $\nu$ are $\sigma$-finite and $f \in L^1(\mu\times\nu)$, then the two iterated integrals are finite and equal to $\int_{X\times Y} f\,d(\mu\times\nu)$.
-
-::: {.proposition}
-If $\mu$ and $\nu$ are $\sigma$-finite and one iterated integral of $\abs f$ is finite, then $f\in L^1(\mu\times\nu)$, and the iterated integrals of $f$ are equal.
-
-:::
-
-::: {.proof}
-By Tonelli's theorem applied to $\abs f$, $\int_{X\times Y}\abs f\,d(\mu\times\nu)$ equals the finite iterated integral, so $f\in L^1(\mu\times\nu)$, and Fubini's theorem applies to $f$.
-
-:::
+| Theorem | Hypotheses beyond $\sigma$-finiteness |
+| --- | --- |
+| [[FT-4JRQX\|Tonelli]] | $f\geq0$; the integrals may be $+\infty$ |
+| [[T-4GPEF\|Fubini]] | $f\in L^1(\mu\times\nu)$ |
+| [[T-X7XZX\|Fubini--Tonelli]] | one iterated integral of $\abs f$ is finite |
 
 ## Counterexamples without the hypotheses
 

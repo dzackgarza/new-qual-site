@@ -13,14 +13,11 @@ Tonelli's and Fubini's theorems both equate $\int_{X\times Y} f\,d(\mu\times\nu)
 
 ## Tonelli: nonnegative measurable functions
 
-For $f\geq0$ measurable on $X\times Y$, the iterated integrals and the integral over $X\times Y$ are equal as elements of $[0,\infty]$.
 For a double sequence $a_{mn}\geq0$ (counting measure on $\NN\times\NN$), this gives $\sum_m\sum_n a_{mn} = \sum_n\sum_m a_{mn}$.
 
 [[FT-4JRQX]]
 
 ## Fubini: integrable functions
-
-For $f\in L^1(\mu\times\nu)$, the sections $f(x,\wait)$ are in $L^1(\nu)$ for $\mu$-almost every $x$, the function $x\mapsto\int_Y f(x,y)\,d\nu(y)$ is in $L^1(\mu)$, and the iterated integrals are finite and equal to $\int_{X\times Y} f\,d(\mu\times\nu)$; the same holds with the roles of $X$ and $Y$ exchanged.
 
 [[T-4GPEF]]
 
@@ -29,7 +26,6 @@ For $f\in L^1(\mu\times\nu)$, the sections $f(x,\wait)$ are in $L^1(\nu)$ for $\
 ## Other interchanges
 
 For nonnegative terms, sums and integrals commute by the monotone convergence theorem, or by Tonelli's theorem with counting measure.
-For differentiation under the integral sign: if $f(\wait,t)\in L^1(\mu)$ for each $t\in(a,b)$, $\partial_t f(x,t)$ exists for all $x\in X$ and $t\in(a,b)$, and $\abs{\partial_t f(x,t)}\leq g(x)$ for some $g\in L^1(\mu)$, then $F(t)\coloneqq\int_X f(x,t)\,d\mu(x)$ is differentiable on $(a,b)$ with $F'(t)=\int_X\partial_t f(x,t)\,d\mu(x)$, by the mean value theorem and the dominated convergence theorem.
 
 [[PR-2CZUM]]
 
