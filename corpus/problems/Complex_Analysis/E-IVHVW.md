@@ -13,25 +13,58 @@ classification:
   - Maximum Modulus Principle
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source reads "Let f:D -> D with {a_k}_{k <= n} the zeros of f in D" and leaves psi_a undefined; the statement adds that f is holomorphic, counts the zeros with multiplicity, and defines psi_a.
 ---
 
 ::: {.exercise}
-Let $f: \DD\to \DD$ with $\theset{a_k}_{k\leq n}$ the zeros of $f$ in $\DD$.
+Let $f: \DD\to \DD$ be holomorphic, and let $a_1,\ldots,a_n$ be zeros of $f$ in $\DD$, listed with multiplicity.
+For $a\in\DD$, let $\psi_a(z)\coloneqq{a-z\over1-\bar az}$.
 Show that
-\[
+$$
 \abs{f(z)}\leq \prod_{k\leq n} \abs{ \psi_{a_k}(z) }
-.\]
-
+.$$
 :::
 
 ::: {.solution}
-Here $\psi_a(z)\definedas{a-z\over1-\bar az}$, and the zeros $a_k$ are listed with multiplicity.
-Define $\Psi(z) \definedas \prod_{k\leq n} \psi_{a_k}(z)$ and $g(z) \definedas f(z)/\Psi(z)$.
-Each zero of $\Psi$ in $\DD$ is a zero of $f$ of at least the same order, so $g$ has removable singularities and is holomorphic on $\DD$.
-The claim is that $\abs{g(z)} \leq 1$, which implies the result directly.
-Since $\Psi$ is continuous on $\overline\DD$ with $\abs{\Psi} = 1$ on $\abs{z} = 1$, $m(r)\definedas\min_{\abs z=r}\abs{\Psi(z)}\to1$ as $r\to1^-$.
-Fix $z\in\DD$. For $\abs z<r<1$ close enough to $1$ that $m(r)>0$, the maximum modulus principle on $\abs\zeta\le r$ gives
-\[
-\abs{g(z)}\le\max_{\abs\zeta=r}\abs{g(\zeta)} = \max_{\abs\zeta=r}{ \abs{f(\zeta)} \over \abs{\Psi(\zeta)} } \leq {1\over m(r)} \convergesto{r\to 1^-} 1
-.\]
+Let $\Psi \coloneqq \prod_{k\leq n} \psi_{a_k}$.
+
+::: pf
+
+::: {.pf-step #quotient}
+$g\coloneqq f/\Psi$ extends to a holomorphic function on $\DD$.
+
+::: pf-proof
+Each zero of $\Psi$ in $\DD$ is a zero of $f$ of at least the same order, so the singularities of $g$ are removable.
+:::
+
+:::
+
+::: {.pf-step #boundary}
+$m(r)\coloneqq\min_{\abs z=r}\abs{\Psi(z)}\to1$ as $r\to1^-$.
+
+::: pf-proof
+$\Psi$ is continuous on $\overline\DD$ with $\abs{\Psi} = 1$ on $\abs{z} = 1$, so this follows from uniform continuity of $\abs\Psi$ on $\overline\DD$.
+:::
+
+:::
+
+::: pf-step
+$\abs{f(z)}\le\abs{\Psi(z)}$ for $z\in\DD$.
+
+::: pf-proof
+Fix $z\in\DD$. For $\abs z<r<1$ with $m(r)>0$, the maximum modulus principle for the function $g$ of step [](#quotient){.pf-ref} on $\abs\zeta\le r$ and $\abs f<1$ give
+$$
+\abs{g(z)}\le\max_{\abs\zeta=r}{ \abs{f(\zeta)} \over \abs{\Psi(\zeta)} } \leq {1\over m(r)}
+,$$
+which tends to $1$ as $r\to1^-$ by step [](#boundary){.pf-ref}. Hence $\abs{g(z)}\le1$.
+:::
+
+:::
+
+:::
+
 :::
