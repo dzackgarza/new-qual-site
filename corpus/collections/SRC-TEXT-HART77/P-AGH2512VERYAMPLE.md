@@ -37,7 +37,7 @@ Use a Segre embedding.
 
 ::: {.solution}
 Use [[D-MODAMPLE|very ampleness]] and the [[D-MORIMM|immersion]] convention in which the source is an open subscheme of a closed subscheme of the target.
-The locally noetherian hypotheses give a corrected formulation of the source exercise; the erratum treats its unrestricted version.
+The locally noetherian hypotheses give a corrected formulation of the exercise; the erratum treats its unrestricted version.
 
 ::: pf
 
@@ -71,7 +71,7 @@ This construction commutes with base change, so the calculation over affine open
 
 ::: {.pf-step #s2}
 
-A [[D-MORIMM|locally closed immersion]] into a locally noetherian scheme is an [[D-MORIMM|immersion]] in the source convention.
+A [[D-MORIMM|locally closed immersion]] into a locally noetherian scheme is an [[D-MORIMM|immersion]] in the convention of the statement.
 
 ::: pf-proof
 
@@ -105,7 +105,7 @@ $$
 h=\sigma\circ(i,j):X\longrightarrow\PP_Y^{(r+1)(s+1)-1}
 $$
 is a locally closed immersion.
-The target is locally noetherian, so step [](#s2){.pf-ref} makes $h$ an immersion in the source convention.
+The target is locally noetherian, so step [](#s2){.pf-ref} makes $h$ an immersion in the convention of the statement.
 Step [](#s1){.pf-ref} gives
 $$
 h^*\OO(1)\cong i^*\OO(1)\otimes j^*\OO(1)\cong\mcl\otimes\mcm.
@@ -170,7 +170,7 @@ Omitting that conversion proves the arbitrary-base formulation when very amplene
 
 ::: pf-qed
 
-Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove the corrected assertions in the source convention, and step [](#s5){.pf-ref} proves their arbitrary-base closed-in-open formulation.
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove the corrected assertions in the convention of the statement, and step [](#s5){.pf-ref} proves their arbitrary-base closed-in-open formulation.
 
 :::
 
@@ -178,7 +178,7 @@ Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove the corrected assertions in th
 
 :::
 
-::: {.remark title="Erratum to the unrestricted source convention"}
+::: {.remark title="Erratum to the unrestricted statement"}
 Exercise II.5.12 does not state the locally noetherian hypotheses added here.
 The definition preceding Remark II.5.16.1 uses open-in-closed immersions, not closed-in-open immersions [@Har10a, Chapter II, §5 and Exercise II.5.12].
 With that definition, unrestricted part (b) is false.
@@ -260,7 +260,7 @@ Its image in the quotient local ring $\OO_{H,w_n}$ must also be zero, a contradi
 This proves the nonembedding assertion.
 
 Now take $f:W\hookrightarrow U$ to be the closed immersion and $g:U\hookrightarrow V$ the open immersion, with $\mcl=\OO_W$ and $\mcm=\OO_U$.
-Both sheaves are very ample over their respective bases using $\PP^0$ and the source immersion convention.
+Both sheaves are very ample over their respective bases using $\PP^0$ and the immersion convention of the statement.
 Their proposed tensor product is $\OO_W$.
 If it were very ample over $V$, there would be an immersion of $W$ as an open subscheme of a closed subscheme of some $\PP_V^N$.
 That closed subscheme is of finite type over $A$, contradicting the nonembedding assertion.
