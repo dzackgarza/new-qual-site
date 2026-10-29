@@ -32,6 +32,10 @@ audit:
 Show that if $E \subset [ 0 , 1 ]$ is uncountable, then there is some $t \in \RR$ such that both $E \cap ( - \infty , t )$ and $E \cap ( t , \infty )$ are uncountable.
 :::
 
+::: {.remark title="Variations"}
+The same statement is also asked with $t\in(0,1)$. Any $t$ that works lies in $(0,1)$, since $E\cap(-\infty,t)$ is empty for $t\leq0$ and $E\cap(t,\infty)$ is empty for $t\geq1$.
+:::
+
 ::: {.solution}
 Set
 $$

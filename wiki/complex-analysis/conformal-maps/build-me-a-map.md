@@ -127,11 +127,11 @@ Cross ratios:
 
 Discs and planes:
 
-[[P-IIONX]] [[E-W6MWU]] [[P-AZOFF-C01]] [[E-PGGNF]] [[E-6BH7D]] [[E-PQ7NC]]
+[[P-AZOFF-C03]] [[E-W6MWU]] [[P-AZOFF-C01]] [[E-PGGNF]] [[E-6BH7D]] [[E-PQ7NC]]
 
 Slits:
 
-[[E-YAYQB]] [[P-DQTVL]] [[P-IJQ5Z]] [[P-A6PQA]] [[P-CWXEW]]
+[[E-YAYQB]] [[P-AZOFF-C08]] [[P-IJQ5Z]] [[P-A6PQA]] [[P-CWXEW]]
 
 Strips:
 
@@ -139,7 +139,7 @@ Strips:
 
 Lunes:
 
-[[E-UUBBS]] [[E-VS4XE]] [[P-K7XDT]] [[P-PYCCN]] [[P-64ZUP]]
+[[E-UUBBS]] [[E-VS4XE]] [[P-K7XDT]] [[P-OONH6]] [[P-64ZUP]]
 
 Sectors:
 
@@ -151,4 +151,4 @@ Joukowski regions:
 
 Mixed:
 
-[[E-H64WF]] [[E-3GIQS]] [[P-EEUV6]] [[P-K4WSJ]] [[E-YCHOS]] [[E-JPAJE]] [[E-PIB7A]] [[E-KZB33]]
+[[E-H64WF]] [[E-3GIQS]] [[P-AZOFF-C07]] [[P-AZOFF-C12]] [[E-YCHOS]] [[E-JPAJE]] [[E-PIB7A]] [[E-KZB33]]

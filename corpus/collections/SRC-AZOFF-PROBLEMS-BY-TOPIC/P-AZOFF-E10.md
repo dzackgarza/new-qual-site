@@ -58,6 +58,10 @@ $$
 $$
 :::
 
+::: {.remark title="Variations"}
+The same series is also asked about as follows: decide whether it converges uniformly on the half-plane $\{\operatorname{Im}z<\ln2\}$ (it does not), and prove that for every $0<r<\ln2$ it converges uniformly on the closed disk $\abs z\leq r$. The disk lies in the substrip $\abs{\operatorname{Im}z}\leq r$, so the second part is a special case.
+:::
+
 ::: {.solution}
 Fix $c$ with
 $$
