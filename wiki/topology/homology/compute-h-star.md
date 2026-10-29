@@ -13,11 +13,7 @@ topics:
 
 ## Cellular homology
 
-::: {.fact title="Cellular homology"}
-For a [[D-ZOU5G|CW complex]] $X$, the [[D-6BUWA|singular homology]] $H_*(X)$ is the homology of the [[D-A3PUW|cellular chain complex]], whose group $C_n$ is free abelian on the $n$-cells.
-The coefficient of an $(n-1)$-cell $e^{n-1}_\beta$ in $\del e^n_\alpha$ is the [[D-XC53X|degree]] of the composite of the attaching map $S^{n-1}\to X^{(n-1)}$ with the quotient $X^{(n-1)}\to X^{(n-1)}/\qty{X^{(n-1)}\sm e^{n-1}_\beta}\cong S^{n-1}$.
-
-:::
+[[D-A3PUW]]
 
 ::: {.example}
 \envlist
@@ -29,13 +25,7 @@ The coefficient of an $(n-1)$-cell $e^{n-1}_\beta$ in $\del e^n_\alpha$ is the [
 
 ## The Mayer--Vietoris sequence
 
-::: {.theorem title="Mayer--Vietoris"}
-For subspaces $A,B\subseteq X$ whose interiors cover $X$, there is a long exact sequence
-$$
-\cdots \to H_n(A\intersect B) \to H_n(A)\oplus H_n(B)\to H_n(X)\to H_{n-1}(A\intersect B)\to\cdots.
-$$
-
-:::
+[[D-FAIJX]]
 
 ::: {.example title="Standard decompositions"}
 $S^n$ as the union of two open hemispherical caps meeting in a band $\homotopic S^{n-1}$; a connected sum $M\# N$ of $n$-manifolds as the union of $M$ and $N$ each minus an open ball, meeting in $S^{n-1}$; the torus as the union of two cylinders meeting in two disjoint circles.
@@ -44,12 +34,10 @@ $S^n$ as the union of two open hemispherical caps meeting in a band $\homotopic 
 
 ## Pairs and quotients
 
+A pair $(X,A)$ has the [[D-UEWPN|long exact sequence of the pair]].
+
 ::: {.theorem}
-For a pair $(X,A)$ there is a long exact sequence
-$$
-\cdots\to H_n(A)\to H_n(X)\to H_n(X,A)\to H_{n-1}(A)\to\cdots,
-$$
-and if $(X,A)$ is a good pair, the quotient map induces $H_n(X, A)\cong \tilde H_n(X/A)$ for all $n$.
+If $(X,A)$ is a [[D-IGUUS|good pair]], the quotient map induces $H_n(X, A)\cong \tilde H_n(X/A)$ for all $n$.
 
 :::
 
