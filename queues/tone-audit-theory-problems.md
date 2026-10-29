@@ -616,7 +616,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Algebra/P-Q3OYW.md` | `d05842bc964af9bbcbc6bfe696130758f9ea8600` | `d05842bc964af9bbcbc6bfe696130758f9ea8600` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-Q3X6W.md` | `8412aaf1adb3296b3a488a15ca9bfccf03dd0765` | `8412aaf1adb3296b3a488a15ca9bfccf03dd0765` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-Q44SQ.md` | `be1587d3f350cc3652a2bf570b2c401ca9d087d3` | `be1587d3f350cc3652a2bf570b2c401ca9d087d3` | Read; retained |
-| [x] | `corpus/problems/Algebra/P-Q5D6X.md` | `e9a3e29c11266fb3ae75a5d5986667deac38ffc4` | `e9a3e29c11266fb3ae75a5d5986667deac38ffc4` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-Q5NH5.md` | `ffa89f4f79cdd3767016be26b5cbac8978544ab4` | `806dfa8ee6ac043a8a772bfea4705b9cb91b5e46` | Read; removed importance ranking from the group-ring representation correspondence. |
 | [x] | `corpus/problems/Algebra/P-Q5PQ6.md` | `5907103bc170816984910829109cc86791d8d865` | `5907103bc170816984910829109cc86791d8d865` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-Q67AG.md` | `be54b377146a153d2fffc85e17926510df070173` | `be54b377146a153d2fffc85e17926510df070173` | Read; retained |
