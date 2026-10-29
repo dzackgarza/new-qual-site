@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-S3BCC
 kind: problem
-title: The kernel of the conjugation homomorphism $G\to\mathrm{Aut}(G)$ is $Z(G)$
+title: The kernel of the conjugation homomorphism $G\to\Aut(G)$ is $Z(G)$
 classification:
   areas:
   - algebra
@@ -22,28 +22,33 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a group and let $\gamma: G \to \operatorname{Aut}(G)$ be the conjugation homomorphism defined by $\gamma(g) = c_g$, where $c_g(h) = g h g^{-1}$ for all $h \in G$.
+Let $G$ be a group and let $\gamma: G \to \Aut(G)$ be the conjugation homomorphism defined by $\gamma(g) = c_g$, where $c_g(h) = g h g^{-1}$ for all $h \in G$.
 Show that the kernel of $\gamma$ is the center of $G$:
 $$\ker(\gamma) = Z(G).$$
 :::
 
 ::: {.solution}
-For $g\in G$,
-\[
-g\in\ker\gamma
-\iff c_g=\operatorname{id}_G
-\iff ghg^{-1}=h\quad\forall h\in G.
-\]
-Multiplying on the right by $g$ gives
-\[
-gh=hg\quad\forall h\in G,
-\]
-which is exactly the condition $g\in Z(G)$. Hence
-\[
-\boxed{\ker\gamma=Z(G)}.
-\]
-By the first isomorphism theorem this also yields
-\[
-\operatorname{Inn}(G)\cong G/Z(G).
-\]
+
+::: pf
+
+::: pf-step
+
+For $g\in G$, $g\in\ker\gamma$ if and only if $ghg^{-1}=h$ for all $h\in G$.
+
+::: pf-proof
+
+$g\in\ker\gamma$ means $c_g=\operatorname{id}_G$, that is, $c_g(h)=h$ for every $h$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Multiplying $ghg^{-1}=h$ on the right by $g$ shows that it is equivalent to $gh=hg$. So $g\in\ker\gamma$ exactly when $g$ commutes with every $h\in G$, that is, when $g\in Z(G)$. Hence $\ker\gamma=Z(G)$, and the first isomorphism theorem gives $\operatorname{Inn}(G)\cong G/Z(G)$.
+
+:::
+
+:::
+
 :::
