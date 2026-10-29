@@ -28,89 +28,48 @@ $$
 :::
 
 ::: {.solution}
-**Part (a).**
+For a skew shape $\lambda/\mu$, the Littlewood--Richardson rule gives $s_{\lambda/\mu}=\sum_\nu c^\lambda_{\mu\nu}s_\nu$, where $c^\lambda_{\mu\nu}$ is the number of semistandard fillings of $\lambda/\nu$ with content $\mu$ whose reverse reading word (rows top to bottom, each row right to left) is a lattice word.
 
 ::: pf
 
-::: {.pf-step #p1-s1}
-By adjointness of skewing, $\langle s_{\lambda/\mu}, s_{\nu/\rho} \rangle = \langle s_\lambda s_\rho, s_\mu s_\nu \rangle$.
-
-::: pf-proof
-the standard adjointness identity for skew Schur functions.
-:::
-
-:::
-
 ::: pf-step
-Hence $\langle s_{(4,4,2,2)/(2,1)}, s_{(4,3,2,2)/(1,1)} \rangle = \langle s_{(4,4,2,2)} s_{(1,1)}, s_{(2,1)} s_{(4,3,2,2)} \rangle$.
+(a) $\left\langle s_{(4,4,2,2)/(2,1)},\ s_{(4,3,2,2)/(1,1)}\right\rangle=\boxed{4}$.
 
 ::: pf-proof
-step [](#p1-s1){.pf-ref} with $\lambda = (4,4,2,2)$, $\mu = (2,1)$, $\nu = (4,3,2,2)$, $\rho = (1,1)$.
-:::
 
-:::
-
-::: pf-step
-By the Littlewood–Richardson rule, this equals $\sum_\kappa c^\kappa_{(4,4,2,2),(1,1)} c^\kappa_{(2,1),(4,3,2,2)}$, where $c$ denotes Littlewood–Richardson coefficients.
+::: {.pf-step #vertical-strip}
+$s_{(4,3,2,2)/(1,1)}=s_{(3,2,2,2)}+s_{(3,3,2,1)}+s_{(4,2,2,1)}+s_{(4,3,1,1)}$.
 
 ::: pf-proof
-expand both products in the Schur basis and use orthonormality.
+For $\mu=(1,1)$, a lattice filling with content $(1,1)$ puts $1$ above $2$, so $c^\lambda_{(1,1)\nu}=1$ exactly when $\lambda/\nu$ is a vertical strip of two boxes, and $0$ otherwise. The vertical $2$-strips of $(4,3,2,2)$ remove one corner box from two different rows and leave a partition: rows $1,2$ give $(3,2,2,2)$, rows $1,4$ give $(3,3,2,1)$, rows $2,4$ give $(4,2,2,1)$, and rows $3,4$ give $(4,3,1,1)$. Rows $1,3$ and $2,3$ leave a row $3$ shorter than row $4$.
 :::
 
 :::
 
-::: {.pf-step #p1-s4}
-Computing the Littlewood–Richardson coefficients (the sum runs over partitions $\kappa$ of $14$ containing both $(4,4,2,2)$ and $(2,1)$) gives the value $59$.
+::: {.pf-step #lr-coefficients}
+$c^{(4,4,2,2)}_{(2,1)\nu}=1$ for each of the four $\nu$ of step [](#vertical-strip){.pf-ref}.
 
 ::: pf-proof
-direct Littlewood–Richardson computation.
+For each $\nu$ the skew shape $(4,4,2,2)/\nu$ has three boxes, and there is exactly one lattice filling with content $(2,1)$. For $\nu=(3,2,2,2)$ the boxes are $(1,4),(2,3),(2,4)$: column $4$ must read $1,2$ and then $(2,3)=1$, with reading word $1,2,1$. For $\nu=(3,3,2,1)$ the boxes are $(1,4),(2,4),(4,2)$: column $4$ reads $1,2$ and $(4,2)=1$. For $\nu=(4,2,2,1)$ the boxes are $(2,3),(2,4),(4,2)$: the row-$2$ filling $1,2$ has reading word starting with $2$, so row $2$ is $1,1$ and $(4,2)=2$. For $\nu=(4,3,1,1)$ the boxes are $(2,4),(3,2),(4,2)$: column $2$ reads $1,2$ and $(2,4)=1$.
 :::
 
 :::
 
 ::: pf-qed
-(a).
-
-the inner product is $59$ (step [](#p1-s4){.pf-ref}).
+The Schur functions are orthonormal, so the inner product is $\sum_\nu c^{(4,4,2,2)}_{(2,1)\nu}\,c^{(4,3,2,2)}_{(1,1)\nu}$, and only the four $\nu$ of step [](#vertical-strip){.pf-ref} contribute, each with product $1\cdot1$ by step [](#lr-coefficients){.pf-ref}. The full expansion $s_{(4,4,2,2)/(2,1)}=s_{(3,2,2,2)}+s_{(3,3,2,1)}+s_{(4,2,2,1)}+s_{(4,3,1,1)}+s_{(4,3,2)}+s_{(4,4,1)}$ (checked in Sage) has two further terms, which do not occur in step [](#vertical-strip){.pf-ref}.
 :::
 
 :::
 
-**Part (b).**
+:::
 
-::: pf
-
-::: {.pf-step #p2-s1}
-The number of standard Young tableaux of shape $\lambda$ is $f^\lambda = \frac{n!}{\prod \text{hook lengths}}$.
+::: pf-step
+(b) The number of standard Young tableaux of shape $(5,3,2,2,1)$ is $\boxed{21450}$.
 
 ::: pf-proof
-the hook length formula.
+By the hook length formula, $f^\lambda=n!/\prod_{c\in\lambda}h(c)$. For $\lambda=(5,3,2,2,1)$, $n=13$ and the hook lengths are $9,7,4,2,1$ in row $1$, $6,4,1$ in row $2$, $4,2$ in row $3$, $3,1$ in row $4$ and $1$ in row $5$, whose product is $504\cdot24\cdot8\cdot3=290304$. Hence $f^\lambda=13!/290304=6227020800/290304=21450$.
 :::
 
-:::
-
-::: {.pf-step #p2-s2}
-For $\lambda = (5,3,2,2,1)$, $n = 13$, and the product of hook lengths is $290304$.
-
-::: pf-proof
-compute the hook lengths of all $13$ cells and multiply.
-:::
-
-:::
-
-::: {.pf-step #p2-s3}
-Hence $f^{(5,3,2,2,1)} = \frac{13!}{290304} = 21450$.
-
-::: pf-proof
-step [](#p2-s1){.pf-ref} and step [](#p2-s2){.pf-ref}.
-:::
-
-:::
-
-::: pf-qed
-(b).
-
-the number is $21450$ (step [](#p2-s3){.pf-ref}).
 :::
 
 :::
