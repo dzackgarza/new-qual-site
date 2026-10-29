@@ -17,11 +17,11 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Records the source defect and proves both requested assertions after the standard correction $V=\mathbb C^n$ (equivalently, after complexifying the real operator).
----
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
   note: The source sets V = R^n while allowing complex lambda, so T - lambda I is not an operator on V. The statement now sets V = C^n.
+---
 
 ::: {.problem}
 Let $V=\mathbb C^n$, let $T:V\to V$ be linear, and for $\lambda\in\mathbb C$ define
