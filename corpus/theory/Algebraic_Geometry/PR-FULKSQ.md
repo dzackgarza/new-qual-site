@@ -16,7 +16,7 @@ relations:
   target: T-TORSURF
 review: draft
 prompts:
-- Compute K^2 for a smooth complete toric surface from its fan.
+- Compute $K_X^2$ for a smooth complete toric surface from its fan.
 - How does Noether's formula read for toric surfaces?
 ---
 
@@ -48,7 +48,7 @@ $$
 again yielding $K_X^2=12-d$.
 
 $\PP^2$ has $d = 3$ and $K^2 = 9$.
-Each Hirzebruch surface has $d = 4$ and $K^2 = 8$, independent of $a$.
+Each Hirzebruch surface $\FF_a$ has $d = 4$ and $K^2 = 8$, independent of $a$.
 A blowup at a torus-fixed point is a star subdivision that adds one ray, so it decreases $K^2$ by one. For example, the blowups of $\PP^2$ at one, two, and three torus-fixed points have $K^2=8,7,6$ respectively.
 The ray count does not characterize the Fano condition: $\FF_a$ has four rays for every $a\ge0$, while $-K_{\FF_a}\cdot S=2-a$ on its negative section $S$, so $\FF_a$ is not Fano for $a\ge2$.
 :::
