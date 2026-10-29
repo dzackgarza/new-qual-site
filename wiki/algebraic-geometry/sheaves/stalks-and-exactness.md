@@ -31,8 +31,7 @@ The section lifts globally exactly when that cocycle is a coboundary, so the obs
 $$
 0 \to \mcf(X) \to \mcg(X) \to \mch(X) \to H^1(X, \mcf) \to \cdots
 $$
-is the bookkeeping for it.
-Everything in [[algebraic-geometry/cohomology/index|cohomology]] is downstream of this paragraph.
+records it as the connecting map $\mch(X)\to H^1(X,\mcf)$; see [[algebraic-geometry/cohomology/index|cohomology]].
 
 ## Locally constant and constructible sheaves
 
