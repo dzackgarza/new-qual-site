@@ -15,7 +15,7 @@ title: "Algebra qual prep week 1: groups warmup"
 
   - Cosets
 
-    - $xH \definedas \theset{xh\st h\in H}$, $G/H \definedas \theset{xH \st x\in G}$, and the left cosets partition $G$
+    - $xH \coloneqq \theset{xh\st h\in H}$, $G/H \coloneqq \theset{xH \st x\in G}$, and the left cosets partition $G$
 
   - The index of a subgroup
 
@@ -49,7 +49,7 @@ title: "Algebra qual prep week 1: groups warmup"
 
   - $p\dash$groups
 
-  - Free groups $F_n$ (and presentations/relations)
+  - Free groups $F_n$, presentations, and relations
 
 - The four isomorphism theorems
 
@@ -93,7 +93,7 @@ For everything that follows, assume $G$ is a finite group.
 
 - $H\leq G$ denotes that $H$ is a subgroup of $G$.
 
-- $\size G$ denotes the *order* of $G$.
+- $\size G$ denotes the order of $G$.
 
 - $e$ or $e_G$ denotes the identity element of $G$.
 
