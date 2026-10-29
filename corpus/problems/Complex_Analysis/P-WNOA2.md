@@ -21,28 +21,39 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f$ is holomorphic on the strip $S = \{x+iy \mid x\in \mathbb{R},~ -1<y<1\}$ with $|f(z)| \leq A (1 + |z|)^\nu$ for $\nu \ge 0$ a fixed real number.
-Show that for each integer $n\geq 0$ there exists an $A_n \geq 0$ such that $|f^{(n)}(x)| \leq A_n (1 + |x|)^\nu$ for all $x\in \mathbb{R}$.
+Suppose that $f$ is holomorphic on the strip $S = \{x+iy \mid x\in \RR,~ -1<y<1\}$ with $\abs{f(z)} \leq A (1 + \abs{z})^\nu$ for $\nu \ge 0$ a fixed real number.
+Show that for each integer $n\geq 0$ there exists an $A_n \geq 0$ such that $\abs{f^{(n)}(x)} \leq A_n (1 + \abs{x})^\nu$ for all $x\in \RR$.
 :::
 
 ::: {.solution}
-Fix $n\ge0$. For each real $x$, the closed disk $\overline{D(x,1/2)}$ lies in the strip $S$. If $|\zeta-x|=1/2$, then
-$$
-1+|\zeta|\le 1+|x|+\frac12
-\le \frac32(1+|x|).
-$$
-Therefore
-$$
-|f(\zeta)|
-\le A\left(\frac32\right)^\nu(1+|x|)^\nu.
-$$
-Cauchy's estimate on the circle $|\zeta-x|=1/2$ gives
-$$
-|f^{(n)}(x)|
-\le n!2^n A\left(\frac32\right)^\nu(1+|x|)^\nu.
-$$
-Thus one may take
-$$
-A_n=A\,n!\,2^n\left(\frac32\right)^\nu.
-$$
+Fix $n\ge0$ and $x \in \RR$. The closed disc $\overline{D(x,1/2)}$ lies in $S$.
+
+::: pf
+
+::: {.pf-step #circle}
+
+$\abs{f(\zeta)} \le A\qty(\frac32)^\nu(1+\abs{x})^\nu$ for $\abs{\zeta-x}=\frac12$.
+
+::: pf-proof
+
+For such $\zeta$, $1+\abs{\zeta}\le 1+\abs{x}+\frac12 \le \frac32(1+\abs{x})$, and $t \mapsto t^\nu$ is nondecreasing on $[0, \infty)$ since $\nu \geq 0$.
+
+:::
+
+:::
+
+::: pf-step
+
+$\abs{f^{(n)}(x)} \le A_n(1+\abs{x})^\nu$ with $\boxed{A_n=A\,n!\,2^n\qty(\frac32)^\nu}$.
+
+::: pf-proof
+
+Cauchy's estimate on the circle $\abs{\zeta-x}=\frac12$ gives $\abs{f^{(n)}(x)} \le n!\,2^n \max_{\abs{\zeta-x}=1/2}\abs{f(\zeta)}$; apply step [](#circle){.pf-ref}. The constant does not depend on $x$.
+
+:::
+
+:::
+
+:::
+
 :::
