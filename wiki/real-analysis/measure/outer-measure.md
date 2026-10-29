@@ -8,10 +8,6 @@ topics:
 
 # Outer measure and the construction
 
-Let $(X,\mathcal M,\mu)$ be a measure space.
-Countable additivity gives continuity of measure: if $E_1\subseteq E_2\subseteq\cdots$ then $\mu\qty{\bigcup_n E_n} = \lim_n\mu(E_n)$, and if $E_1\supseteq E_2\supseteq\cdots$ with $\mu(E_1)<\infty$ then $\mu\qty{\bigcap_n E_n}=\lim_n\mu(E_n)$.
-For arbitrary $E_n\in\mathcal M$, the sets $F_n\coloneqq E_n\setminus\bigcup_{k<n}E_k$ are disjoint with the same union, so countable additivity gives countable subadditivity $\mu\qty{\bigcup_nE_n}=\sum_n\mu(F_n)\leq\sum_n\mu(E_n)$.
-
 [[D-QYLPH]]
 
 [[PR-A4J4G]]
@@ -37,10 +33,6 @@ By Carathéodory's theorem, the [[D-TWUBM|Carathéodory measurable]] sets form a
 [[FT-O4DRR]]
 
 ## Measures on $\RR^d$
-
-Lebesgue measure $m$ on $\RR^d$ is translation invariant, satisfies $m(aE) = \abs a^d m(E)$ for $a\in\RR$, and assigns to a rectangle the product of its side lengths.
-It is complete, and for every Lebesgue measurable $E$ and $\varepsilon>0$ there are an open $U\supseteq E$ and a closed $F\subseteq E$ with $m(U\setminus E)<\varepsilon$ and $m(E\setminus F)<\varepsilon$.
-For measurable $E_n$, the set $\limsup_n E_n$ of points lying in infinitely many $E_n$ is measurable, and by the Borel--Cantelli lemma it is null when $\sum_n m(E_n)<\infty$.
 
 [[PR-I4YON]]
 
