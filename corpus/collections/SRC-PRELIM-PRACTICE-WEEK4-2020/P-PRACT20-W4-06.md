@@ -5,7 +5,7 @@ kind: problem
 title: General solution of $y'''-3y''+3y'-y=0$
 classification:
   areas:
-  - applied-algebra
+  - prelim
   topics:
   - Ordinary Differential Equations
 relations: []
