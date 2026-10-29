@@ -160,15 +160,10 @@ in $H\times K$, so their images satisfy $hk=kh$ in $G$. Hence elementwise commut
 
 :::
 
-::: pf-step
-In the finite coprime-order case, trivial intersection is automatic.
-
-::: pf-proof
-If $H$ and $K$ are finite and $\gcd(|H|,|K|)=1$, then $|H\cap K|$ divides both $|H|$ and $|K|$ by Lagrange's theorem. Hence $|H\cap K|=1$, so $H\cap K=\{e\}$.
 :::
 
 :::
 
-:::
-
+::: {.remark}
+In the finite coprime-order case, trivial intersection is automatic: if $H$ and $K$ are finite and $\gcd(|H|,|K|)=1$, then $|H\cap K|$ divides both $|H|$ and $|K|$ by Lagrange's theorem, so $H\cap K=\{e\}$.
 :::
