@@ -12,20 +12,37 @@ classification:
   - Zeros
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source states the identity without saying where it holds; the statement adds that f and g are holomorphic and nonvanishing on an open set.
 ---
 
 ::: {.exercise}
-Show that $\logd(fg) = \logd f + \logd g$, i.e. 
-\[
-{ (fg)' \over fg} = {f'\over f} + {g' \over g}
-.\]
-
+Let $f$ and $g$ be holomorphic and nonvanishing on an open set $\Omega$.
+Show that $\logd(fg) = \logd f + \logd g$ on $\Omega$, i.e.
+$$
+{ (fg)' \over fg} = {f'\over f} + {g' \over g}.
+$$
 :::
 
 ::: {.solution}
-\[
-{(fg)' \over fg} = { f'g + fg' \over fg} = {f'g \over fg} + {fg' \over fg} = {f'\over f} + {g' \over g}
-.\]
+
+::: pf
+
+::: pf-step
+$\displaystyle\frac{(fg)'}{fg} = \frac{f'}{f}+\frac{g'}{g}$ on $\Omega$.
+
+::: pf-proof
+$fg$ does not vanish on $\Omega$, and by the product rule
+$$
+\frac{(fg)'}{fg} = \frac{f'g + fg'}{fg} = \frac{f'}{f} + \frac{g'}{g}.
+$$
+:::
 
 :::
 
+:::
+
+:::
