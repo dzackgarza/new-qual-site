@@ -307,6 +307,21 @@ mathematical correction under its own node, not under copy policy.
     collections are not checked for complex-analysis problems (C11); P-4FH62 holds 17
     problems that six UGA exams cite as one card (C12). **Acceptance:** each item repaired
     against its source PDF.
+  Round 3 (provenance finding C5) injected the node below; `audited-deployment` needs it.
+  - **`ad3-unsorted-dissolution`**. **Needs:** none. The UNSORTED buckets (about 1500
+    problems) are not dissolved into source collections. For each card, one at a time: find
+    the document its statement came from (an exam PDF under `assets/attachments/`, a sibling
+    clone's source, or a web search on distinctive text); list it in that document's
+    collection, or create the collection with real provenance (one PDF is one collection);
+    remove it from the bucket only after the source listing is confirmed; leave it in the
+    bucket when no source is found. Never invent provenance.
+    - [ ] SRC-UNSORTED-ALGEBRA (801 cards)
+    - [ ] SRC-UNSORTED-COMPLEX-ANALYSIS (508 cards)
+    - [ ] SRC-UNSORTED-REAL-ANALYSIS (91 cards)
+    - [ ] SRC-UNSORTED-TOPOLOGY (147 cards)
+    - [ ] SRC-UNSORTED-PRELIM (1 card)
+    **Acceptance:** every bucket card tried; each bucket's count of cards with no source found
+    is recorded here.
   Round 3 (revision `5ba163ac9`, topology and algebraic geometry) injected the node below;
   `audited-deployment` needs it.
   - **`ad3-topology-content`**. **Needs:** none. Wrong mathematics: P-TOPS05A (a free
