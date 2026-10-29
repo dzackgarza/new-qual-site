@@ -13,7 +13,7 @@ The contour cases are described on [[complex-analysis/residues-and-contours/whic
 
 **Arc.** The ML estimate, since the integrand is $\bigo(1/R^2)$.
 
-**Residues.** A simple pole at $z=i$ with residue $1/2i$, so the integral is $2\pi i \cdot {1\over 2i} = \pi$.
+**Residues.** A simple pole at $z=i$ with residue $1/(2i)$, so the integral is $2\pi i \cdot {1\over 2i} = \pi$.
 
 The same contour applies to every rational integrand whose denominator has no real zeros and degree at least two more than the numerator.
 
