@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS20E
 kind: problem
-title: "A manifold admitting a nonzero-degree map from S^n has the rational homology of S^n"
+title: 'A manifold receiving a nonzero-degree map from $S^n$ has the rational homology of $S^n$'
 classification:
   areas:
   - topology

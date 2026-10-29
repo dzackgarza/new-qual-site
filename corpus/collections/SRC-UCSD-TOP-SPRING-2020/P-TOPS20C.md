@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS20C
 kind: problem
-title: "Homology of X x X where X is S^2 with a 3-cell attached by degree 3"
+title: 'Homology of $X\times X$ where $X$ is $S^2$ with a $3$-cell attached by degree $3$'
 classification:
   areas:
   - topology

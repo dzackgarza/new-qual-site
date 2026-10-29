@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS20H
 kind: problem
-title: "A simply-connected closed smooth manifold with the homology of S^n is homotopy equivalent to S^n"
+title: 'A simply connected closed smooth manifold with the homology of $S^n$ is homotopy equivalent to $S^n$'
 classification:
   areas:
   - topology

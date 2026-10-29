@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS20B
 kind: problem
-title: "No map from S^{2n} to itself avoiding both x and -x"
+title: 'No map $S^{2n}\to S^{2n}$ avoids both $x$ and $-x$'
 classification:
   areas:
   - topology

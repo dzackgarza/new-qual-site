@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS20F
 kind: problem
-title: "Every self-map of RP^{2n} has a fixed point"
+title: 'Every self-map of $\RP^{2n}$ has a fixed point'
 classification:
   areas:
   - topology

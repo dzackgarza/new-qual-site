@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS20D
 kind: problem
-title: "CP^2 has no orientation-reversing self-homeomorphism"
+title: '$\CP^2$ has no orientation-reversing self-homeomorphism'
 classification:
   areas:
   - topology
