@@ -26,29 +26,29 @@ Show that the Quaternion group has only one element of order 2, namely $-1$.
 
 ::: {.solution}
 The quaternion group is
-\[
+$$
 Q_8=\{\pm1,\pm i,\pm j,\pm k\},
-\]
+$$
 with
-\[
+$$
 i^2=j^2=k^2=-1.
-\]
+$$
 Now
-\[
+$$
 (-1)^2=1,
-\]
-and \(-1\ne1\), so \(-1\) has order \(2\).
+$$
+and $-1\ne1$, so $-1$ has order $2$.
 
-For each \(u\in\{i,j,k\}\),
-\[
+For each $u\in\{i,j,k\}$,
+$$
 (\pm u)^2=u^2=-1\ne1,
 \qquad
 (\pm u)^4=1.
-\]
-Hence each of \(\pm i,\pm j,\pm k\) has order \(4\). The identity has order \(1\).
+$$
+Hence each of $\pm i,\pm j,\pm k$ has order $4$. The identity has order $1$.
 
-Therefore the only element of order \(2\) is
-\[
+Therefore the only element of order $2$ is
+$$
 \boxed{-1}.
-\]
+$$
 :::
