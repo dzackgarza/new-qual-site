@@ -28,23 +28,23 @@ What happens when the field is not algebraically closed?
 
 ::: {.solution}
 Over an algebraically closed field, every matrix is similar to a direct sum of Jordan blocks
-\[
+$$
 J_m(\lambda).
-\]
+$$
 For each eigenvalue $\lambda$, the numbers and sizes of the blocks are determined by the generalized eigenspaces, equivalently by the nullities of the powers
-\[
+$$
 (A-\lambda I)^k.
-\]
+$$
 
 Over a field $F$ that is not algebraically closed, the characteristic polynomial may not split, so a Jordan form over $F$ need not exist. For example, the real rotation
-\[
+$$
 \begin{pmatrix}0&-1\\1&0\end{pmatrix}
-\]
-has no real eigenvalues and hence no Jordan form over $\mathbb R$.
+$$
+has no real eigenvalues and hence no Jordan form over $\RR$.
 
 The canonical substitute valid over every field is the rational canonical form. Viewing $F^n$ as an $F[x]$-module via $x\cdot v=Av$, the structure theorem over the PID $F[x]$ gives invariant factors
-\[
+$$
 d_1\mid d_2\mid\cdots\mid d_r,
-\]
+$$
 and the rational canonical form is the block diagonal matrix of their companion matrices. When all invariant factors split into powers of linear factors, this data refines to the usual Jordan form.
 :::
