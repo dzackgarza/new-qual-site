@@ -8,21 +8,16 @@ topics:
 
 # Convolution
 
-For measurable $f,g$ on $\RR^n$, the convolution is $f * g(x) \coloneqq \int f(x-y)g(y)\dy$ wherever the integral converges absolutely.
+[[D-TS42Y]]
 
-::: {.remark title="Properties of convolution from Fubini--Tonelli"}
-The integrability of $f*g$, associativity, and Young's inequality are proved by applying [[real-analysis/fubini-tonelli/statements|Tonelli's or Fubini's theorem]] to the function $(x,y)\mapsto f(x-y)g(y)$ on $\RR^n\times\RR^n$:
-
-- for $f,g\in L^1$, Tonelli's theorem applied to $\abs{f(x-y)g(y)}$ gives $\int\int\abs{f(x-y)g(y)}\dy\dx = \norm f_1\norm g_1$, so $f*g(x)$ is defined for almost every $x$ and $\norm{f*g}_1 \leq \norm f_1\norm g_1$;
-
-- commutativity $f*g=g*f$ follows from the change of variables $y \mapsto x-y$, and associativity $(f*g)*h=f*(g*h)$ for $f,g,h\in L^1$ from that change of variables and Fubini's theorem;
-
-- Young's inequality $\norm{f*g}_r \leq \norm f_p\norm g_q$ with $\frac1r = \frac1p + \frac1q - 1$ follows from Hölder's inequality applied inside Tonelli's theorem.
+::: {.remark}
+For $f,g,h\in L^1(\RR^n)$, convolution is commutative and associative, $f*g\in L^1$, and $\norm{f*g}_1\leq\norm f_1\norm g_1$, by [[real-analysis/fubini-tonelli/statements|Tonelli's and Fubini's theorems]] applied to $(x,y)\mapsto f(x-y)g(y)$.
+More generally, [[PR-PRSKG|Young's inequality]] bounds $\norm{f*g}_r$.
 
 :::
 
 ::: {.remark title="Smoothing"}
-If $f\in L^1(\RR^n)$ and $g\in C^k(\RR^n)$ with $\partial^\alpha g$ bounded for $\abs\alpha\leq k$, then $f*g\in C^k$ and $\partial^\alpha(f*g) = f*\partial^\alpha g$, by differentiating under the integral with the dominating function $\abs f\,\norm{\partial^\alpha g}_\infty$.
+If $f\in L^1(\RR^n)$ and $g\in C^k(\RR^n)$ with $\partial^\alpha g$ bounded for $\abs\alpha\leq k$, then $f*g\in C^k$ and $\partial^\alpha(f*g) = f*\partial^\alpha g$.
 With $\phi\in C_c^\infty$, $\int\phi=1$, and $\phi_t(x)\coloneqq t^{-n}\phi(x/t)$, the functions $f*\phi_t$ are smooth and converge to $f$ in $L^p$ as $t\to0$ for $f\in L^p$, $1\leq p<\infty$; this proves density of $C^\infty$ functions in $L^p$.
 
 :::
