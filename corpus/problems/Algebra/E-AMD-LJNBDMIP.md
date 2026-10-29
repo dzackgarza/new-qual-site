@@ -21,7 +21,7 @@ Show that a permutation is odd iff it has an odd number of even cycles.
 :::
 
 ::: {.solution}
-Write $\sigma\in S_n$ as a product $\sigma=c_1c_2\cdots c_r$ of disjoint cycles of lengths $\ell_1,\dots,\ell_r$, and let $E=\{i:\ell_i\text{ is even}\}$.
+Write $\sigma\in S_n$ as a product $\sigma=c_1c_2\cdots c_r$ of disjoint cycles of lengths $\ell_1,\ldots,\ell_r$, and let $E=\{i:\ell_i\text{ is even}\}$.
 
 ::: pf
 
@@ -30,19 +30,19 @@ A cycle of length $\ell\ge1$ has sign $(-1)^{\ell-1}$.
 
 ::: pf-proof
 For $\ell\ge2$,
-$$(a_1\ a_2\ \dots\ a_\ell)=(a_1\ a_\ell)(a_1\ a_{\ell-1})\cdots(a_1\ a_2)$$
-is a product of $\ell-1$ transpositions, and $\operatorname{sgn}$ is a homomorphism sending each transposition to $-1$.
+$$(a_1\ a_2\ \ldots\ a_\ell)=(a_1\ a_\ell)(a_1\ a_{\ell-1})\cdots(a_1\ a_2)$$
+is a product of $\ell-1$ transpositions, and $\sgn$ is a homomorphism sending each transposition to $-1$.
 For $\ell=1$ the cycle is the identity, of sign $1=(-1)^0$.
 :::
 
 :::
 
 ::: {.pf-step #sgn-sigma-formula}
-$\operatorname{sgn}(\sigma)=(-1)^{|E|}$.
+$\sgn(\sigma)=(-1)^{|E|}$.
 
 ::: pf-proof
-By step [](#cycle-sign){.pf-ref} and multiplicativity of $\operatorname{sgn}$,
-$$\operatorname{sgn}(\sigma)=\prod_{i=1}^r(-1)^{\ell_i-1}=(-1)^{\sum_i(\ell_i-1)}.$$
+By step [](#cycle-sign){.pf-ref} and multiplicativity of $\sgn$,
+$$\sgn(\sigma)=\prod_{i=1}^r(-1)^{\ell_i-1}=(-1)^{\sum_i(\ell_i-1)}.$$
 The integer $\ell_i-1$ is odd exactly when $i\in E$, so $\sum_i(\ell_i-1)\equiv|E|\pmod 2$.
 :::
 
