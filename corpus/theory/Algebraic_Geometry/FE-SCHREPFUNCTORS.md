@@ -27,7 +27,7 @@ Let $R$ be a ring and consider functors on the category of $R$-schemes.
 ::: {.example title="Affine space"}
 The functor $X \mapsto \Gamma(X, \OO_X)^{n}$, sending a morphism $f \colon X' \to X$ to $(a_i) \mapsto (f^\sharp a_i)$, is represented by $\AA^n_R = \Spec R[x_1, \ldots, x_n]$, with universal element $(x_1, \ldots, x_n)$.
 
-Over $R = \ZZ$ this is the functor $X \mapsto \Gamma(X, \OO_X)^n$ on all schemes, represented by $\Spec \ZZ[x_1, \ldots, x_n]$: $n$ variables, not $n+1$.
+Over $R = \ZZ$ this is the functor $X \mapsto \Gamma(X, \OO_X)^n$ on all schemes, represented by $\Spec \ZZ[x_1, \ldots, x_n]$.
 :::
 
 ::: {.example title="Punctured affine space"}
