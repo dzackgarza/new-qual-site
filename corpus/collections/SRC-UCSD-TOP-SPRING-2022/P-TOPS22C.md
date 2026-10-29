@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS22C
 kind: problem
-title: "A simply-connected closed 5-manifold with H_2 = 0 is homotopy equivalent to S^5"
+title: 'A simply connected closed $5$-manifold with $H_2=0$ is homotopy equivalent to $S^5$'
 classification:
   areas:
   - topology
