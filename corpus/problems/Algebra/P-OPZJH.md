@@ -21,41 +21,54 @@ audit:
 ---
 
 ::: {.problem}
-What is the structure of the multiplicative group $(\mathbb{F}_9)^\times$?
-Construct $\mathbb{F}_9$ as a quotient ring and find an explicit primitive generator of $(\mathbb{F}_9)^\times$.
+What is the structure of the multiplicative group $(\FF_9)^\times$?
+Construct $\FF_9$ as a quotient ring and find an explicit primitive generator of $(\FF_9)^\times$.
 :::
 
 ::: {.solution}
-The polynomial
-\[
-x^2+1\in\mathbb F_3[x]
-\]
-has no root in $\mathbb F_3$, hence is irreducible. Thus
-\[
-\mathbb F_9\cong\mathbb F_3[i],
-\qquad i^2=-1=2.
-\]
-Its multiplicative group has order $8$, and the multiplicative group of a finite field is cyclic, so
-\[
-(\mathbb F_9)^\times\cong C_8.
-\]
 
-Take
-\[
-\alpha=1+i.
-\]
-Then
-\[
-\alpha^2=1+2i+i^2=2i,
-\]
-and hence
-\[
-\alpha^4=(2i)^2=4i^2=2\neq1,
-\qquad
-\alpha^8=2^2=1.
-\]
-Therefore $\alpha$ has order $8$, so it is a primitive generator. Hence
-\[
-\boxed{(\mathbb F_9)^\times=\langle1+i\rangle\cong C_8.}
-\]
+::: pf
+
+::: pf-step
+
+$\FF_9\cong\FF_3[x]/(x^2+1)=\FF_3[i]$ with $i^2=-1=2$.
+
+::: pf-proof
+
+The polynomial $x^2+1\in\FF_3[x]$ takes the values $1,2,2$ at $0,1,2$, so it has no root in $\FF_3$; being of degree $2$, it is irreducible. The quotient is therefore a field with $3^2=9$ elements.
+
+:::
+
+:::
+
+::: pf-step
+
+$(\FF_9)^\times\cong C_8$.
+
+::: pf-proof
+
+It has order $8$, and the multiplicative group of a finite field is cyclic.
+
+:::
+
+:::
+
+::: pf-step
+
+$(\FF_9)^\times=\boxed{\langle1+i\rangle}$.
+
+::: pf-proof
+
+Let $\alpha=1+i$. Then
+$$
+\alpha^2=1+2i+i^2=2i,\qquad \alpha^4=(2i)^2=4i^2=2\neq1,\qquad \alpha^8=2^2=1.
+$$
+The order of $\alpha$ divides $8$ but not $4$, so it is $8$.
+
+:::
+
+:::
+
+:::
+
 :::
