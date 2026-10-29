@@ -82,3 +82,9 @@ By step [](#zeta-biholomorphism){.pf-ref}, $\zeta$ maps a neighborhood $U$ of $z
 :::
 
 :::
+
+::: {.remark title="Alternative proof by Rouché's theorem"}
+$f-f(z_0)$ has a zero of order exactly $n+1$ at $z_0$.
+Choose $\rho>0$ so that $f\neq f(z_0)$ and $f'\neq0$ on $0<\abs{z-z_0}\le\rho$, and let $\delta=\min_{\abs{z-z_0}=\rho}\abs{f(z)-f(z_0)}$.
+For $\abs{w-f(z_0)}<\delta$, Rouché's theorem gives $f-w$ exactly $n+1$ zeros with multiplicity in $\abs{z-z_0}<\rho$; for $w\neq f(z_0)$ each is a simple zero because $f'\neq0$ there, so they are $n+1$ distinct points.
+:::

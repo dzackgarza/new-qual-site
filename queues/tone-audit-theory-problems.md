@@ -1071,7 +1071,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Complex_Analysis/E-WNTXK.md` | `0787c242a51d6e0a7e5d545abd5eeeff56e25869` | `0787c242a51d6e0a7e5d545abd5eeeff56e25869` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-WNXIR.md` | `f7dc124301312d55182c988092d5a31129706320` | `f7dc124301312d55182c988092d5a31129706320` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-WPGNS.md` | `f984ca8f9ef2f975687a03a9d65d6086f393d35d` | `f984ca8f9ef2f975687a03a9d65d6086f393d35d` | Read; retained |
-| [x] | `corpus/problems/Complex_Analysis/E-WTCTP.md` | `25140ecf251a6bdc95a00f37d023e3c535106bfd` | `25140ecf251a6bdc95a00f37d023e3c535106bfd` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-WXHMJ.md` | `57c1e6d3319c61c9f61f41129d5fcaffe536b9ea` | `57c1e6d3319c61c9f61f41129d5fcaffe536b9ea` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-WYJ7K.md` | `97f277300acf3237a32cd8eb82dabef1452b3a2e` | `97f277300acf3237a32cd8eb82dabef1452b3a2e` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-X4MBB.md` | `16e730689f2d4aaf7eab719efc175920cdffc2aa` | `16e730689f2d4aaf7eab719efc175920cdffc2aa` | Read; retained |
