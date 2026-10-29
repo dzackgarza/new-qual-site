@@ -24,7 +24,7 @@ source:
   - P-M4100-20-A1-07
   - P-M4100-20-A1-08
   - id: P-UCLAB14F-05
-    comment: Assignment 1 Problem 9; exact canonical appearance of the nested-radical recurrence
+    comment: Assignment 1 Problem 9
   - P-M4100-20-A1-10
   - id: P-M4100-20-A1-B01
     comment: Math 6100 Bonus Problem 1

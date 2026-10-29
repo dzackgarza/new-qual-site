@@ -274,7 +274,7 @@ source:
     - id: P-TRIV-CA15
       comment: Problem 15
     - id: P-BKS04-7A
-      comment: Problem 16; exact existing canonical owner
+      comment: Problem 16
     - id: P-TRIV-CA17
       comment: Problem 17
     - id: P-TRIV-CA18

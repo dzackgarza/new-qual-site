@@ -42,11 +42,11 @@ source:
     - id: P-AZOFF-B01
       comment: Problem 1
     - id: P-8CB06
-      comment: Problem 2; exact existing canonical owner
+      comment: Problem 2
     - id: P-AZOFF-B03
       comment: Problem 3
     - id: P-TH3WN
-      comment: Problem 4; exact existing canonical owner
+      comment: Problem 4
     - id: P-AZOFF-B05
       comment: Problem 5
     - id: P-AZOFF-B06
@@ -64,9 +64,9 @@ source:
     - id: P-AZOFF-C04
       comment: Problem 4
     - id: P-TIE-F09-12
-      comment: Problem 5; exact existing canonical owner
+      comment: Problem 5
     - id: P-OONH6
-      comment: Problem 6; exact existing canonical owner
+      comment: Problem 6
     - id: P-AZOFF-C07
       comment: Problem 7
     - id: P-AZOFF-C08
@@ -98,7 +98,7 @@ source:
     - id: P-AZOFF-D08
       comment: Problem 8
     - id: P-CAFA23E
-      comment: Problem 9; exact existing canonical owner
+      comment: Problem 9
     - id: P-AZOFF-D10
       comment: Problem 10
   - name: Liouville, FTA, and power series
@@ -106,13 +106,13 @@ source:
     - id: P-AZOFF-E01
       comment: Problem 1
     - id: P-VQUPX
-      comment: Problem 2; exact existing canonical owner
+      comment: Problem 2
     - id: P-AZOFF-E03
       comment: Problem 3
     - id: P-AZOFF-E04
       comment: Problem 4
     - id: P-3IDAX
-      comment: Problem 5; exact existing canonical owner
+      comment: Problem 5
     - id: P-AZOFF-E06
       comment: Problem 6
     - id: P-AZOFF-E07
@@ -136,7 +136,7 @@ source:
     - id: P-AZOFF-F05
       comment: Problem 5
     - id: P-34ALC
-      comment: Problem 6; exact existing canonical owner
+      comment: Problem 6
     - id: P-AZOFF-F07
       comment: Problem 7
     - id: P-AZOFF-F08
@@ -146,7 +146,7 @@ source:
     - id: P-AZOFF-G01
       comment: Problem 1
     - id: P-TIE-F09-04
-      comment: Problem 2; exact existing canonical owner
+      comment: Problem 2
     - id: P-AZOFF-G03
       comment: Problem 3
     - id: P-AZOFF-G04
@@ -154,7 +154,7 @@ source:
     - id: P-AZOFF-G05
       comment: Problem 5
     - id: P-BKS04-7A
-      comment: Problem 6; exact existing canonical owner
+      comment: Problem 6
     - id: P-AZOFF-G07
       comment: Problem 7
     - id: P-AZOFF-G08
@@ -176,7 +176,7 @@ source:
     - id: P-AZOFF-H02
       comment: Problem 2
     - id: P-5R3FT
-      comment: Problem 3; exact existing canonical owner
+      comment: Problem 3
     - id: P-AZOFF-H04
       comment: Problem 4
     - id: P-AZOFF-H05
@@ -190,17 +190,17 @@ source:
     - id: P-AZOFF-H09
       comment: Problem 9
     - id: P-WASE4
-      comment: Problem 10; exact existing canonical owner
+      comment: Problem 10
   - name: Schwarz lemma and reflection principle
     problems:
     - id: P-AZOFF-I01
       comment: Problem 1
     - id: P-ZS4IH
-      comment: Problem 2; exact existing canonical owner
+      comment: Problem 2
     - id: P-ZUQU7
-      comment: Problem 3; exact existing canonical owner
+      comment: Problem 3
     - id: P-ZNVSP
-      comment: Problem 4; exact existing canonical owner
+      comment: Problem 4
     - id: P-AZOFF-I05
       comment: Problem 5
     - id: P-AZOFF-I06

@@ -16,7 +16,7 @@ source:
   area: real-analysis
   problems:
   - id: P-RA-WORKSHOP-D5-W2
-    comment: Assignment 8 Problem 1; exact canonical appearance of Rudin Exercise 5.1
+    comment: Assignment 8 Problem 1
   - id: P-M4100-20-A8-02
     comment: Problem 2
   - id: P-M4100-20-A8-03
@@ -28,7 +28,7 @@ source:
   - id: P-M4100-20-A8-06
     comment: Problem 6
   - id: P-AZOFF-A05
-    comment: Assignment 8 Math 6100 Bonus Problem 1; exact canonical uniformly-differentiable problem
+    comment: Assignment 8 Math 6100 Bonus Problem 1
   - id: P-M4100-20-A8-B02
     comment: Bonus problem 2
   date:
