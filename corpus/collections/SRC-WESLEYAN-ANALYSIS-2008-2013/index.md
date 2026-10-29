@@ -13,6 +13,7 @@ provenance:
 - assets/attachments/analysis_2008-2013.pdf
 source:
   source_kind: compilation
+  institution: wesleyan
   date:
     kind: unknown
   sections:
