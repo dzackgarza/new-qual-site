@@ -15,19 +15,25 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source printed only the implication "F(x) := ..., G(x) := ... implies the identity" with no hypothesis on f and g; the statement now assumes f, g in L^1([0,1]), the hypothesis the solution uses.'
 ---
 
 ::: {.exercise}
-\[
-F(x):=\int_{0}^{x} f(y) d y \quad \text { and } \quad G(x):=\int_{0}^{x} g(y) d y \\ 
-\implies
-\int_{0}^{1} F(x) g(x) d x=F(1) G(1)-\int_{0}^{1} f(x) G(x) d x
-.\]
-
+Let $f, g \in L^1([0,1])$ and set
+$$
+F(x) \coloneqq \int_{0}^{x} f(y)\, d y \quad \text { and } \quad G(x) \coloneqq \int_{0}^{x} g(y)\, d y.
+$$
+Show that
+$$
+\int_{0}^{1} F(x) g(x)\, d x=F(1) G(1)-\int_{0}^{1} f(x) G(x)\, d x.
+$$
 :::
 
 ::: {.solution}
-Let $f, g \in L^1[0,1]$ and let $T = \theset{(x,y) : 0 \le y \le x \le 1}$.
+Let $T = \theset{(x,y) : 0 \le y \le x \le 1}$.
 
 ::: pf
 
