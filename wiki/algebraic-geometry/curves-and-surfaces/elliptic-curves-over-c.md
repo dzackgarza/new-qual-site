@@ -48,7 +48,7 @@ The points of the fundamental region with nontrivial stabilizer in $\PSL_2(\ZZ)$
 
 [[T-CRVCM]]
 
-The endomorphism ring $R_\Lambda=\{\alpha\in\CC\st\alpha\Lambda\subseteq\Lambda\}$ lies in $\Lambda$, so it is either $\ZZ$ or an order in an imaginary quadratic field.
+For $\Lambda=\ZZ+\ZZ\tau$, the endomorphism ring $R_\Lambda=\{\alpha\in\CC\st\alpha\Lambda\subseteq\Lambda\}$ lies in $\Lambda$, so it is either $\ZZ$ or an order in an imaginary quadratic field.
 The order need not be maximal: $\tau=2i$ gives $\ZZ[2i]$, of conductor $2$ in $\ZZ[i]$.
 
 [[T-CRVCMCFT]]
