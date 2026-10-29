@@ -36,10 +36,7 @@ Each sequence $(T_nx)_n$ converges, hence is bounded, so the uniform boundedness
 
 :::
 
-::: {.remark}
-To show that the graph of a linear map $T\colon X\to Y$ is closed, it suffices to show that $x_n\to x$ and $Tx_n\to y$ imply $y = Tx$.
-
-:::
+The sequential test for a closed graph, and its use to prove boundedness without an explicit estimate, is on [[real-analysis/appendices/functional-analysis|Appendix: Functional analysis]].
 
 ::: {.corollary}
 If $X$ is a normed space and $x\neq y$ in $X$, there is $f\in X^*$ with $f(x)\neq f(y)$.
