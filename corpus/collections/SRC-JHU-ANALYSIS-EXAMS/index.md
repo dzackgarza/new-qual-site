@@ -22,7 +22,6 @@ source:
     - P-PAQ4K
     - P-8RA17
     - P-8XT20
-    - P-PCOHF
     - P-RGBUN
     - P-8XT21
     - P-7QJS2
