@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA08ANA
 kind: problem
-title: "Iteration of s -> s^2 on [0,1]: pushforward measures and their weak limit"
+title: 'Iteration of $s\mapsto s^2$ on $[0,1]$: pushforward measures and their weak limit'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP05ANB
 kind: problem
-title: "An integral operator on L^1[0,1] with kernel 1/t"
+title: 'The integral operator $g(x)=\int_x^1 f(t)/t\,dt$ on $L^1([0,1])$'
 classification:
   areas:
   - real-analysis

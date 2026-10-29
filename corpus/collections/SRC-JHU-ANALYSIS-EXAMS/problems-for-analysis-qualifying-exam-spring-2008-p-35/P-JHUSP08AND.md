@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP08AND
 kind: problem
-title: "Boundedness of an operator on l2 from its matrix coefficients"
+title: 'Boundedness of an operator on $\ell^2$ from its matrix coefficients'
 classification:
   areas:
   - real-analysis

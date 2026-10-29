@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA06ANF
 kind: problem
-title: 'Oscillatory integral is o(1/t) under endpoint vanishing'
+title: 'The oscillatory integral $\int_0^2 f(x)e^{itx}\,dx$ is $o(1/t)$ under endpoint vanishing'
 classification:
   areas:
   - real-analysis

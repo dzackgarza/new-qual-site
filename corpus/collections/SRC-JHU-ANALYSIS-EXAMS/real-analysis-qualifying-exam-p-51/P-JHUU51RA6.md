@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUU51RA6
 kind: problem
-title: "The principal value distribution is the derivative of log |x|"
+title: 'The principal value distribution is the derivative of $\log\abs{x}$'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA08ANC
 kind: problem
-title: "Separability of the Banach space l-infinity"
+title: '$\ell^\infty$ is not separable'
 classification:
   areas:
   - real-analysis

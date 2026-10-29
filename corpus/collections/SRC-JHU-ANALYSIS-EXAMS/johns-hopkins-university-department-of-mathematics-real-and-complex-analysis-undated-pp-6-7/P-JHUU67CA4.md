@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUU67CA4
 kind: problem
-title: Bergman space embedding, normal family, and removable singularity
+title: 'Bergman space embedding, normal family, and removable singularity'
 classification:
   areas:
   - complex-analysis

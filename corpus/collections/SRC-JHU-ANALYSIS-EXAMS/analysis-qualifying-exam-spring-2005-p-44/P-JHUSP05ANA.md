@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP05ANA
 kind: problem
-title: "Smoothness and decay of the Fourier transform of e^{-|x|}"
+title: 'Smoothness and decay of the Fourier transform of $e^{-\abs{x}}$'
 classification:
   areas:
   - real-analysis

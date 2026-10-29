@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA09ANB
 kind: problem
-title: "Bilinear forms with polynomially weighted coefficients on l2"
+title: 'Bilinear forms with polynomially weighted coefficients on $\ell^2$'
 classification:
   areas:
   - real-analysis

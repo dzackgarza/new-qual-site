@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP05ANE
 kind: problem
-title: "Nonzero C_c^∞ function with compactly supported Fourier transform"
+title: 'No nonzero $C_c^\infty$ function has a compactly supported Fourier transform'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA08ANE
 kind: problem
-title: "Counting solutions of e^z = 3z^7 in the unit disk"
+title: 'Solutions of $e^z=3z^7$ in the unit disk'
 classification:
   areas:
   - complex-analysis

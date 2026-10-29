@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA06ANE
 kind: problem
-title: "Finite-dimensionality of trigonometric-polynomial subspaces of C[0, pi]"
+title: 'Closed subspaces of trigonometric polynomials in $C_0([0,\pi])$ are finite-dimensional'
 classification:
   areas:
   - real-analysis
