@@ -18,29 +18,24 @@ What are symmetric polynomials? State their fundamental structure theorem.
 :::
 
 ::: {.solution}
-A polynomial
-\[
-f(x_1,\dots,x_n)\in R[x_1,\dots,x_n]
-\]
-is **symmetric** if
-\[
-f(x_{\sigma(1)},\dots,x_{\sigma(n)})=f(x_1,\dots,x_n)
-\]
-for every permutation $\sigma\in S_n$.
+Let $R$ be a commutative ring. A polynomial $f\in R[x_1,\ldots,x_n]$ is symmetric if
+$$f(x_{\sigma(1)},\ldots,x_{\sigma(n)})=f(x_1,\ldots,x_n)\quad\text{for every }\sigma\in S_n,$$
+that is, if $f$ lies in the invariant ring $R[x_1,\ldots,x_n]^{S_n}$. The elementary symmetric polynomials are
+$$e_k=\sum_{1\le i_1<\cdots<i_k\le n}x_{i_1}\cdots x_{i_k},\qquad 1\le k\le n.$$
 
-The basic examples are the elementary symmetric polynomials
-\[
-e_k=\sum_{1\le i_1<\cdots<i_k\le n}x_{i_1}\cdots x_{i_k},
-\qquad 1\le k\le n.
-\]
+::: pf
 
-The fundamental theorem of symmetric polynomials says that every symmetric polynomial $f$ can be written uniquely as a polynomial in
-\[
-e_1,\dots,e_n.
-\]
-Equivalently,
-\[
-R[x_1,\dots,x_n]^{S_n}=R[e_1,\dots,e_n].
-\]
-Thus the ring of symmetric polynomials is itself a polynomial ring on the elementary symmetric functions.
+::: pf-step
+(Fundamental theorem of symmetric polynomials.) Every symmetric polynomial is a polynomial in $e_1,\ldots,e_n$ in exactly one way:
+$$\boxed{R[x_1,\ldots,x_n]^{S_n}=R[e_1,\ldots,e_n]},$$
+and $e_1,\ldots,e_n$ are algebraically independent over $R$, so this ring is a polynomial ring in them.
+
+::: pf-proof
+This is the standard theorem, proved by induction on the leading monomial in the lexicographic order: if the leading monomial of a symmetric $f$ is $c\,x_1^{a_1}\cdots x_n^{a_n}$, then $a_1\ge\cdots\ge a_n$, and $f-c\,e_1^{a_1-a_2}\cdots e_{n-1}^{a_{n-1}-a_n}e_n^{a_n}$ is symmetric with a smaller leading monomial.
+:::
+
+:::
+
+:::
+
 :::
