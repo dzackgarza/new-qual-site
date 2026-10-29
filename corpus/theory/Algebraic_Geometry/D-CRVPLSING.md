@@ -77,5 +77,5 @@ The Milnor number is $\mu_p = 2\delta_p - r_p + 1$: the node and the cusp have $
 
 ::: {.remark title="Singularities of general projections"}
 By [[T-CRVEMBP3]], projection of a smooth curve in $\PP^3$ from a general point is birational onto a plane curve whose only singularities are nodes.
-The centres of projection that produce a cusp lie on a tangent line of the curve, and those that produce a tacnode lie on a secant line whose two tangent lines are coplanar; each set has dimension less than $3$, so a general centre avoids them.
+The centres of projection that produce a triple point lie on a trisecant line, those that produce a cusp lie on a tangent line of the curve, and those that produce a tacnode lie on a secant line whose two tangent lines are coplanar; each set has dimension less than $3$, so a general centre avoids them.
 :::
