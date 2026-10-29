@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMC34
 kind: problem
-title: Entire functions satisfying $|f(z)|\geq|z|$ are the maps $cz$ with $|c|\geq
+title: Entire functions satisfying $\abs{f(z)}\geq\abs{z}$ are the maps $cz$ with $\abs{c}\geq
   1$
 classification:
   areas:
@@ -18,47 +18,69 @@ review: draft
 
 ::: {.problem}
 Find all entire functions that satisfy
-\[
-\abs{f(z)} \geq \abs{z} \quad \forall z\in \CC
-.\]
+$$
+\abs{f(z)} \geq \abs{z} \quad \forall z\in \CC.
+$$
 Prove this list is complete.
 
 :::
 
 ::: {.concept}
-\envlist
-- If $f$ is bounded in a neighborhood of a singularity $z_0$, then $z_0$ is removable.
-
+If $f$ is bounded in a punctured neighborhood of an isolated singularity $z_0$, then $z_0$ is removable.
 :::
 
 ::: {.solution}
-\envlist
 
-- Suppose $f$ is entire and define $g(z) \definedas {z \over f(z)}$.
+::: pf
 
-- By the inequality, $\abs{g(z)} \leq 1$, so $g$ is bounded.
+::: {.pf-step #zeros}
 
-- $g$ potentially has singularities at the zeros $Z_f \definedas \inverseof{f}(0)$, but since $f$ is entire, $g$ is holomorphic on $\CC\setminus Z_f$.
+The only possible zero of $f$ is $z = 0$.
 
-- Claim: $Z_f = \theset{0}$.
+::: pf-proof
 
-  - If $f(z) = 0$, then $\abs{z} \leq \abs{f(z)} = 0$ which forces $z=0$.
+If $f(z) = 0$, then $\abs{z} \leq \abs{f(z)} = 0$.
 
-- We can now apply Riemann's removable singularity theorem:
+:::
 
-  - Check $g$ is bounded on some open subset $D\smz$, clear since it's bounded everywhere
+:::
 
-  - Check $g$ is holomorphic on $D\smz$, clear since the only singularity of $g$ is $z=0$.
+::: {.pf-step #g}
 
-- By Riemann's removable singularity theorem, the singularity $z = 0$ is removable and $g$ has an extension to an entire function $\tilde g$.
+The function $g(z) \coloneqq z/f(z)$ on $\CC\setminus\{0\}$ extends to an entire function $\tilde g$ with $\abs{\tilde g} \leq 1$.
 
-- By continuity, we have $\abs{\tilde g(z)} \leq 1$ on all of $\CC$
+::: pf-proof
 
-  - If not, then $\abs{\tilde g(0)} = 1+\eps > 1$, but then there would be a domain $\Omega \subseteq \CC\smz$ such that $1 < \abs{\tilde g(z)} \leq 1 +\eps$ on $\Omega$, a contradiction.
+By step [](#zeros){.pf-ref}, $g$ is holomorphic on $\CC\setminus\{0\}$, and the inequality gives $\abs{g} \leq 1$ there. By Riemann's removable singularity theorem $g$ extends to an entire function $\tilde g$, and $\abs{\tilde g(0)} \leq 1$ by continuity.
 
-- By Liouville, $\tilde g$ is constant, so $\tilde g(z) = c_0$ with $\abs {c_0} \leq 1$
+:::
 
-- Thus $f(z) = \inverseof{c_0} z \definedas cz$ where $\abs{c}\geq 1$
+:::
 
-Thus all such functions are of the form $f(z) = cz$ for some $c\in \CC$ with $\abs{c}\geq 1$.
+::: pf-step
+
+$f(z) = cz$ for a constant $c$ with $\abs{c} \geq 1$.
+
+::: pf-proof
+
+By step [](#g){.pf-ref} and Liouville's theorem, $\tilde g$ is a constant $c_0$ with $\abs{c_0} \leq 1$. Since $g(z) = z/f(z) \neq 0$ for $z \neq 0$, $c_0 \neq 0$. Hence $f(z) = c_0^{-1} z$ for $z \neq 0$, and also at $z = 0$ by continuity, with $c = c_0^{-1}$ satisfying $\abs{c} \geq 1$.
+
+:::
+
+:::
+
+::: pf-step
+
+The entire functions with $\abs{f(z)} \geq \abs{z}$ are exactly $\boxed{f(z) = cz \text{ with } c \in \CC,\ \abs{c} \geq 1}$.
+
+::: pf-proof
+
+Each such $f$ is entire and satisfies $\abs{f(z)} = \abs{c}\abs{z} \geq \abs{z}$; the preceding step shows there are no others.
+
+:::
+
+:::
+
+:::
+
 :::
