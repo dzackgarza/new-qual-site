@@ -15,10 +15,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source leaves delta and f unquantified; the statement takes delta > 0 and f in L^1(R^n).
 ---
 
 ::: {.exercise}
-- $\star$: Prove that the Lebesgue integral is dilation invariant, i.e. if $f_\delta(x) = {f({x\over \delta}) \over \delta^n}$ then $\int f_\delta = \int f$.
+$\star$: Prove that the Lebesgue integral is dilation invariant, i.e. if $f \in L^1(\RR^n)$, $\delta > 0$ and $f_\delta(x) = {f({x\over \delta}) \over \delta^n}$ then $\int f_\delta = \int f$.
 :::
 
 ::: {.solution}
