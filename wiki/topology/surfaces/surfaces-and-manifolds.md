@@ -170,12 +170,12 @@ so if $n$ is odd then $\chi(M)=0$.
 
 [[PR-BQKHS]]
 
-### 3-manifolds and knot complements
-
 ::: {.fact}
 Every complex manifold is canonically oriented by its complex structure.
 
 :::
+
+### 3-manifolds and knot complements
 
 [[PR-UL3KL]]
 
