@@ -114,11 +114,11 @@ Let $\mathcal B$ be a countable basis. For each $B\in\mathcal B$ contained in so
 
 ::: pf-step
 
-Every countable open cover $U_1,U_2,\ldots$ of $X$ has a finite subcover.
+Every open cover of $X$ has a finite subcover.
 
 ::: pf-proof
 
-Suppose not, and choose $x_N\in X\setminus(U_1\cup\cdots\cup U_N)$ for each $N$. By (3), a subsequence $x_{N_k}$ converges to some $x$. Choose $m$ with $x\in U_m$. Then $x_{N_k}\in U_m$ for all large $k$, while $N_k\ge m$ for all large $k$ forces $x_{N_k}\notin U_m$, a contradiction.
+By step [](#countable){.pf-ref}, it suffices to treat a countable open cover $U_1,U_2,\ldots$. Suppose it has no finite subcover, and choose $x_N\in X\setminus(U_1\cup\cdots\cup U_N)$ for each $N$. By (3), a subsequence $x_{N_k}$ converges to some $x$. Choose $m$ with $x\in U_m$. Then $x_{N_k}\in U_m$ for all large $k$, while $N_k\ge m$ for all large $k$ forces $x_{N_k}\notin U_m$, a contradiction.
 
 :::
 
