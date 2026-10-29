@@ -16,40 +16,43 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source does not say the domain is connected; a real-valued holomorphic function on a disconnected open set need only be locally constant. The statement now takes a connected open set.
 ---
 
 ::: {.exercise}
-Show that a real-valued holomorphic function must be constant.
+Show that a real-valued holomorphic function on a connected open set must be constant.
 :::
 
 ::: {.solution}
-**Goal:** Show that a real-valued holomorphic function on a domain must be constant.
+Let $f = u + iv$ be holomorphic and real-valued on a connected open set $\Omega$, so $v \equiv 0$.
 
 ::: pf
 
 ::: {.pf-step #cauchy-riemann-vanish}
-Write $f = u + iv$ with $v \equiv 0$; the Cauchy–Riemann equations give $u_x = v_y = 0$ and $u_y = -v_x = 0$.
+$u_x = u_y = 0$ on $\Omega$.
 
 ::: pf-proof
-If $f$ is holomorphic, the Cauchy–Riemann equations $u_x = v_y$, $u_y = -v_x$ hold.
-Since $f$ is real-valued, $v \equiv 0$, so $v_x = v_y = 0$; hence $u_x = u_y = 0$ on the domain.
+The Cauchy–Riemann equations give $u_x = v_y = 0$ and $u_y = -v_x = 0$.
 :::
 
 :::
 
 ::: {.pf-step #u-constant}
-$u$ is constant on the domain.
+$u$ is constant on $\Omega$.
 
 ::: pf-proof
-Step [](#cauchy-riemann-vanish){.pf-ref} shows both partial derivatives of $u$ vanish.
-On a connected (path-connected) domain, fix $z_0$; any other point joins to $z_0$ by a path, and along the path $u$ is constant (vanishing directional derivative), so $u(z) = u(z_0)$ everywhere.
+By step [](#cauchy-riemann-vanish){.pf-ref} the gradient of $u$ vanishes. A connected open subset of the plane is path-connected by polygonal paths, and $u$ is constant along each segment of such a path, so $u(z) = u(z_0)$ for every $z\in\Omega$ and a fixed $z_0\in\Omega$.
 :::
 
 :::
 
 ::: pf-qed
-$f = u$ (as $v \equiv 0$) is constant by step [](#u-constant){.pf-ref}.
+$f = u$ is constant by step [](#u-constant){.pf-ref}.
 :::
 
 :::
+
 :::
