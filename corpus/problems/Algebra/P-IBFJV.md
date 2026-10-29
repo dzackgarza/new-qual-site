@@ -26,7 +26,7 @@ Are there two nonisomorphic groups with the same representations?
 :::
 
 ::: {.solution}
-Yes, if “the same representations” means the same complex character table or the same complex representation ring. A standard example is the dihedral group $D_8$ of order $8$ and the quaternion group $Q_8$.
+Yes, if "the same representations" means the same complex character table or the same complex representation ring. A standard example is the dihedral group $D_8$ of order $8$ and the quaternion group $Q_8$.
 
 ::: pf
 
@@ -49,9 +49,9 @@ Each group has four one-dimensional complex irreducible representations and one 
 ::: pf-proof
 
 Both abelianizations are isomorphic to $C_2\times C_2$, so both have four one-dimensional characters. Each group has five conjugacy classes, hence five irreducible complex characters. The sum-of-squares formula
-\[
+$$
 \sum_i (\dim V_i)^2=8
-\]
+$$
 forces the remaining irreducible to have dimension $2$.
 
 :::
@@ -60,11 +60,12 @@ forces the remaining irreducible to have dimension $2$.
 
 ::: pf-step
 
-After a suitable matching of conjugacy classes, their character tables are identical.
+After a suitable matching of conjugacy classes, their character tables are identical, so their complex representation rings are isomorphic.
 
 ::: pf-proof
 
 In both groups the four linear characters factor through $C_2\times C_2$. The two-dimensional irreducible character has value $2$ at the identity, $-2$ at the unique central nonidentity element in the commutator subgroup, and $0$ on the remaining three noncentral conjugacy classes. Thus the character tables coincide after relabeling the classes.
+Characters multiply pointwise, so the matching of classes identifies the two character rings, which are the complex representation rings.
 
 :::
 
@@ -72,7 +73,8 @@ In both groups the four linear characters factor through $C_2\times C_2$. The tw
 
 :::
 
-Consequently the complex representation rings are isomorphic even though the groups are not.
+:::
 
-This does **not** mean their symmetric tensor categories of representations, together with the forgetful fiber functor, are indistinguishable: Tannakian reconstruction recovers the group from that richer structure. The counterexample concerns coarser representation-theoretic data such as characters or the representation ring.
+::: {.remark}
+The symmetric tensor categories of representations, together with the forgetful fiber functor, do distinguish the two groups: Tannakian reconstruction recovers a group from that richer structure. The example concerns coarser data, such as characters or the representation ring.
 :::
