@@ -86,7 +86,7 @@ where $\mathbb M$ is the Möbius band, $\mathbb K$ the Klein bottle, and $\Sigma
 - Surgery on manifolds
 - Simplicial complexes, such as the following:
 
-![A small simplicial complex](../../../../assets/assets/figures/image_2020-05-22-18-58-03.png)
+  ![A small simplicial complex](../../../../assets/assets/figures/image_2020-05-22-18-58-03.png)
 
 :::
 
