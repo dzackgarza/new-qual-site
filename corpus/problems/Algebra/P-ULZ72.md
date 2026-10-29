@@ -19,32 +19,52 @@ Let $G$ be a finite group and $g\in G$. Suppose $\chi(g)\in\RR$ for every comple
 :::
 
 ::: {.solution}
-One has
-\[
-\chi(g^{-1})=\overline{\chi(g)}
-\]
-for every complex character $\chi$. Indeed, a finite-group representation may be chosen unitary, so the eigenvalues of $\rho(g)$ lie on the unit circle and the trace of $\rho(g^{-1})$ is the complex conjugate of the trace of $\rho(g)$.
 
-By hypothesis $\chi(g)$ is real for every irreducible character, hence
-\[
-\chi(g^{-1})=\chi(g)
-\]
-for every irreducible $\chi$.
+::: pf
 
-Irreducible characters form a basis of the space of complex class functions on $G$. Therefore two elements on which all irreducible characters take the same values must lie in the same conjugacy class. Hence
-\[
-g^{-1}\sim g.
-\]
+::: {.pf-step #conj}
 
-Conversely, if $g$ is conjugate to $g^{-1}$, then every character satisfies
-\[
-\chi(g)=\chi(g^{-1})=\overline{\chi(g)},
-\]
-so $\chi(g)$ is real.
+For every complex character $\chi$ of $G$, $\chi(g^{-1})=\overline{\chi(g)}$.
 
-Thus
-\[
-\boxed{\chi(g)\in\RR\text{ for every irreducible }\chi
-\iff g\text{ is conjugate to }g^{-1}.}
-\]
+::: pf-proof
+
+A representation $\rho$ of a finite group may be chosen unitary, so the eigenvalues of $\rho(g)$ lie on the unit circle and the trace of $\rho(g^{-1})$ is the complex conjugate of the trace of $\rho(g)$.
+
+:::
+
+:::
+
+::: {.pf-step #forward}
+
+If $\chi(g)\in\RR$ for every irreducible $\chi$, then $g$ is conjugate to $g^{-1}$.
+
+::: pf-proof
+
+By step [](#conj){.pf-ref} and the hypothesis, $\chi(g^{-1})=\chi(g)$ for every irreducible $\chi$. The irreducible characters form a basis of the space of complex class functions on $G$, so two elements on which all irreducible characters take the same values lie in the same conjugacy class. Hence $g^{-1}\sim g$.
+
+:::
+
+:::
+
+::: {.pf-step #converse}
+
+If $g$ is conjugate to $g^{-1}$, then $\chi(g)\in\RR$ for every character $\chi$.
+
+::: pf-proof
+
+A character is a class function, so step [](#conj){.pf-ref} gives $\chi(g)=\chi(g^{-1})=\overline{\chi(g)}$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#forward){.pf-ref} and [](#converse){.pf-ref} give
+$$\boxed{\chi(g)\in\RR\text{ for every irreducible }\chi\iff g\text{ is conjugate to }g^{-1}.}$$
+
+:::
+
+:::
+
 :::
