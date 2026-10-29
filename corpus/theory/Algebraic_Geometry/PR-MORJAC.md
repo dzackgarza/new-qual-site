@@ -16,7 +16,7 @@ relations:
   target: D-MORSM
 review: draft
 prompts:
-- State the jacobian criterion.
+- State the Jacobian criterion.
 - How do you check in practice that a variety is smooth at a point?
 ---
 
