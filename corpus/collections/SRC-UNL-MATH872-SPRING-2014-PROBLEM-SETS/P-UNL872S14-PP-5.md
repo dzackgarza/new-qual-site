@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UNL872S14-PP-5
 kind: problem
-title: UNL Math 872 Spring 2014 assignment PP.5
+title: Simplicial homology of a finite connected graph in terms of its Euler characteristic
 classification:
   areas: [topology]
   topics: []
