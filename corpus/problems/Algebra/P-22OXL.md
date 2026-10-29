@@ -19,15 +19,17 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source reads "Show that S_{n>=5} has one normal subgroup: A_n.", which omits the trivial subgroup and S_n itself; the statement asks for the unique proper nontrivial normal subgroup.'
 ---
 
 ::: {.problem}
-- Show that $S_{n\geq 5}$ has one normal subgroup: $A_n$.
+Let $n\geq 5$. Show that $A_n$ is the only proper nontrivial normal subgroup of $S_n$.
 :::
 
 ::: {.solution}
-For $n\ge 5$, the normal subgroups of $S_n$ are $1$, $A_n$ and $S_n$, so $A_n$ is its unique proper nontrivial normal subgroup.
-
 ::: pf
 
 ::: {.pf-step #s1}
@@ -46,9 +48,9 @@ This is [[E-AMD-6TLQZZWT]].
 
 Let $N\trianglelefteq S_n$.
 Then $N\cap A_n\trianglelefteq A_n$, so
-\[
+$$
 N\cap A_n\in\{1,A_n\}.
-\]
+$$
 
 ::: pf-proof
 
@@ -79,9 +81,9 @@ If $N\cap A_n=1$, then $N=1$.
 ::: pf-proof
 
 The composite
-\[
+$$
 N\hookrightarrow S_n\twoheadrightarrow S_n/A_n\cong C_2
-\]
+$$
 has kernel $N\cap A_n=1$, so $N$ embeds in $C_2$.
 Thus $|N|\le 2$.
 If $|N|=2$, write $N=\{1,\tau\}$.
@@ -96,9 +98,9 @@ Hence $|N|\ne2$, so $N=1$.
 ::: pf-step
 
 Therefore the normal subgroups of $S_n$ are exactly
-\[
+$$
 1,\qquad A_n,\qquad S_n,
-\]
+$$
 and $A_n$ is the unique proper nontrivial normal subgroup.
 
 ::: pf-proof
