@@ -1,5 +1,6 @@
 ---
 order: 0
+title: Topology references
 ---
 
 # Topology references
@@ -10,11 +11,11 @@ order: 0
 
 - [@CE12] — [PDF](attachments/From%20Stein%20to%20Weinstein%20and%20Back.pdf)
 
-- W. Fulton, *Algebraic Topology: A First Course*
+- [@Ful95]
 
-- E. Spanier, *Algebraic Topology*
+- [@Spa66]
 
-- M. Greenberg and J. Harper, *Algebraic Topology: A First Course*
+- [@GH81]
 
 ## Notes
 
