@@ -14,19 +14,17 @@ audit:
   by: chatgpt
   date: 2026-09-12
   note: Checked against the retained Questions_from_Tie.pdf compilation, section Spring 2015, question 19.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source assumes only that f is analytic in the unit disk D with f(0) = 0, so the iterates need not be defined. The statement now assumes f maps D into D.
 ---
 
 ::: {.problem}
-Assume $f ( z )$ is analytic in $\mathbb { D } : | z | < 1$ and $f ( 0 ) = 0$ and is not a rotation $( { \mathrm { i . e . ~ } } f ( z ) \neq e ^ { i \theta } z )$ Show that $\sum ^ { \infty } f ^ { n } ( z )$ converges uniformly to an analytic function on compact subsets of D, where ${ f ^ { n + 1 } } ( z ) = f ( f ^ { n } ( z ) )$
-:::
-
-::: {.remark}
-Erratum: the source omits the hypothesis $f(\DD)\subseteq\DD$. Without it, the iterates need not be defined on all of $\DD$. The proof below uses the intended hypothesis that $f:\DD\to\DD$.
+Assume $f(z)$ is analytic in $\mathbb{D}: |z| < 1$, maps $\mathbb{D}$ into $\mathbb{D}$, satisfies $f(0) = 0$, and is not a rotation (i.e. $f(z) \neq e^{i\theta} z$). Show that $\sum^{\infty} f^{n}(z)$ converges uniformly to an analytic function on compact subsets of $\mathbb{D}$, where $f^{n+1}(z) = f(f^{n}(z))$.
 :::
 
 ::: {.solution}
-
-Assume the intended hypothesis $f:\DD\to\DD$.
 
 ::: pf
 
