@@ -11,14 +11,20 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source uses an interval I that it never introduces; the statement declares I an open interval, as the solution reads it.
 ---
 
 ::: {.exercise}
+Let $I \subseteq \RR$ be an open interval.
 Can there be a function $f:I\to \RR$ that is continuous on $\QQ$ and discontinuous otherwise?
 :::
 
 ::: {.solution}
-No. Let $I \subseteq \RR$ be an open interval and $f\colon I \to \RR$ any function.
+No. Let $f\colon I \to \RR$ be any function.
 
 ::: pf
 
@@ -48,7 +54,7 @@ Suppose $\QQ \cap I = \bigcap_n V_n$ with $V_n$ open. Each $V_n$ contains $\QQ \
 
 ::: pf-qed
 
-Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}. See also [[E-QSNCL]].
+If $f$ were continuous exactly at the points of $\QQ \cap I$, step [](#s1){.pf-ref} would make $\QQ \cap I$ a countable intersection of open subsets of $I$, contradicting step [](#s2){.pf-ref}.
 
 :::
 
