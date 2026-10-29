@@ -46,8 +46,20 @@ f(z)=\frac{1}{2 \pi i} \int_{S^{1}} \frac{f(w) }{w-z} \dw
 :::
 
 ::: {.proof title="Holomorphic implies analytic, alternative"}
-
-![](../../../../assets/assets/figures/2021-12-14_16-53-51.png)
+Let $f$ be holomorphic on a domain $D$, let $z_0\in D$, and let $r_0>0$ with $D(z_0, r_0)\subseteq D$.
+Fix $0<R<r_0$ and $z\in D(z_0,R)$.
+By the Cauchy integral formula,
+$$
+f(z) = {1\over 2\pi i}\oint_{\abs{w-z_0}=R} {f(w)\over w-z}\dw
+= {1\over 2\pi i}\oint_{\abs{w-z_0}=R} {f(w)\over (w-z_0)\qty{1 - {z-z_0\over w-z_0}}}\dw
+.$$
+For $\abs{w-z_0}=R$, $\abs{z-z_0\over w-z_0} = \abs{z-z_0}/R < 1$, so the geometric series $\sum_{n\geq 0}\qty{z-z_0\over w-z_0}^n$ converges uniformly in $w$ on $\partial D(z_0,R)$ and may be integrated term by term:
+$$
+f(z) = \sum_{n=0}^\infty \qty{ {1\over 2\pi i}\oint_{\abs{w-z_0}=R} {f(w)\over (w-z_0)^{n+1}}\dw } (z-z_0)^n
+= \sum_{n=0}^\infty {f^{(n)}(z_0)\over n!}(z-z_0)^n
+,$$
+the last equality by the Cauchy integral formula for derivatives.
+The series converges on $D(z_0,R)$ for every $R<r_0$, so its radius of convergence is at least $r_0$.
 
 :::
 

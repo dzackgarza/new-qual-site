@@ -16,8 +16,6 @@ A holomorphic map $f\colon\DD\to\DD$ with $f(0)=0$ satisfies $\abs{f(z)}\leq\abs
 
 [[FF-5H4UZ]]
 
-![](../../../../assets/assets/figures/2021-10-29_02-32-14.png)
-
 ::: {.proof title="Schwarz lemma"}
 The proof applies the maximum modulus principle to $g(z) \coloneqq f(z)/z$.
 
@@ -44,10 +42,20 @@ The proof applies the maximum modulus principle to $g(z) \coloneqq f(z)/z$.
 :::
 
 ::: {.proof title="Schwarz lemma, alternative"}
+Since $f(0)=0$, the Taylor series is $f(z) = a_1z + a_2z^2 + \cdots$, so $f(z)/z = a_1 + a_2 z + \cdots$ extends holomorphically to $0$.
+Fix $0<r<1$.
+For $\abs z = r$, $\abs{f(z)/z} = \abs{f(z)}/r \leq 1/r$, so by the maximum modulus principle $\abs{f(z)/z}\leq 1/r$ for all $\abs z\leq r$.
+Letting $r\to 1$ gives $\abs{f(z)/z}\leq 1$, that is, $\abs{f(z)}\leq\abs z$, on $\DD$.
 
-![](../../../../assets/assets/figures/2021-12-14_16-30-35.png)
+If $\abs{f(z_0)} = \abs{z_0}$ for some $z_0\neq 0$, then $\abs{f(z)/z}$ attains its maximum $1$ at the interior point $z_0$, so $f(z)/z = c$ is constant.
+Then $\abs{z_0} = \abs{c z_0} = \abs c\abs{z_0}$, and $z_0\neq 0$ gives $\abs c = 1$, so $c = e^{i\theta}$ and $f(z) = e^{i\theta}z$ is a rotation.
 
-![](../../../../assets/assets/figures/2021-12-14_16-30-46.png)
+Let $g(z)\coloneqq f(z)/z$. Then
+$$
+f'(0) = \lim_{z\to 0}{f(z)-f(0)\over z-0} = \lim_{z\to 0} g(z) = g(0)
+,$$
+so $\abs{f'(0)} = \abs{g(0)}\leq 1$.
+If $\abs{f'(0)} = 1$, then $\abs g$ attains its maximum at $0$, so $g\equiv c$ with $\abs c = \abs{g(0)} = 1$, and $f$ is again a rotation.
 :::
 
 ::: {.remark title="Schwarz--Pick inequality"}

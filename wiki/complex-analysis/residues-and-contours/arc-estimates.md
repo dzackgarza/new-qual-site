@@ -78,8 +78,22 @@ The integral over an arc of angle $\theta$ about a simple pole $z_0$, traversed 
 [[T-SSNLT]]
 
 ::: {.proof}
-
-![](../../../../assets/assets/figures/2021-12-22_05-13-27.png)
+Let $\gamma_\varepsilon(t) = a + \varepsilon e^{it}$ for $t\in[\alpha,\beta]$ be the arc of angle $\theta = \beta-\alpha$ about the simple pole $a$.
+Near $a$ write
+$$
+f(z) = {c\over z-a} + g(z), \qquad c = \Res_{z=a} f,
+$$
+with $g$ holomorphic on $B(a,\delta)$, and take $\varepsilon < \delta/2$.
+Since $g$ is bounded on $\overline{B(a,\delta/2)}$,
+$$
+\abs{\int_{\gamma_\varepsilon} g(z)\dz} \leq (\beta-\alpha)\,\varepsilon\sup_{z\in\gamma_\varepsilon}\abs{g(z)} \longrightarrow 0
+\quad\text{as }\varepsilon\to 0.
+$$
+The remaining integral is
+$$
+\int_{\gamma_\varepsilon}{c\over z-a}\dz = c\int_\alpha^\beta {1\over\varepsilon e^{it}}\, i\varepsilon e^{it}\dt = i(\beta-\alpha)c
+,$$
+so the limit is $i\theta\Res_{z=a}f$.
 
 :::
 
