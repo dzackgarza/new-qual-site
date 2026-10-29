@@ -15,39 +15,52 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-16
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source reads "a sequentially compact space is totally bounded"; total boundedness needs a metric, so the statement now takes a sequentially compact metric space.'
 ---
 
 ::: {.exercise}
-Show that a sequentially compact space is totally bounded.
+
+Show that a sequentially compact metric space is totally bounded.
+
 :::
 
 ::: {.solution}
-Let $(X, d)$ be a sequentially compact metric space.
-We want to prove that $X$ is totally bounded: for every $\varepsilon > 0$, $X$ can be covered by finitely many open balls of radius $\varepsilon$.
 
-Suppose towards a contradiction that $X$ is not totally bounded for some $\varepsilon_0 > 0$.
-We construct a sequence $(x_n)_{n=1}^\infty$ inductively as follows:
-1. Choose an arbitrary point $x_1 \in X$.
-2. Since $B(x_1, \varepsilon_0)$ does not cover $X$, choose $x_2 \in X \setminus B(x_1, \varepsilon_0)$.
-   Then $d(x_2, x_1) \geq \varepsilon_0$.
-3. Inductively, given $x_1, x_2, \ldots, x_k$ such that $d(x_i, x_j) \geq \varepsilon_0$ for all $1 \leq i < j \leq k$:
-   Since $\bigcup_{i=1}^k B(x_i, \varepsilon_0)$ is a finite union of $\varepsilon_0$-balls and $X$ is not covered by any finite collection of $\varepsilon_0$-balls, there exists:
-   $$
-   x_{k+1} \in X \setminus \bigcup_{i=1}^k B(x_i, \varepsilon_0).
-   $$
-   By construction, $d(x_{k+1}, x_i) \geq \varepsilon_0$ for all $1 \leq i \leq k$.
+Let $(X, d)$ be a sequentially compact metric space, and suppose for contradiction that for some $\varepsilon_0 > 0$ no finite collection of open $\varepsilon_0$-balls covers $X$.
 
-In this way, we obtain an infinite sequence $(x_n)_{n=1}^\infty$ in $X$ such that:
-$$
-d(x_n, x_m) \geq \varepsilon_0 \quad \text{for all } n \neq m.
-$$
+::: pf
 
-Since $X$ is sequentially compact, the sequence $(x_n)$ must contain a convergent subsequence $(x_{n_k})_{k=1}^\infty$.
-Every convergent sequence in a metric space is Cauchy, so there exists $N \in \mathbb{N}$ such that for all $j, k \geq N$:
-$$
-d(x_{n_j}, x_{n_k}) < \varepsilon_0.
-$$
-However, taking $j \neq k$, our sequence satisfies $d(x_{n_j}, x_{n_k}) \geq \varepsilon_0$, a direct contradiction.
+::: {.pf-step #separated}
 
-Therefore, $X$ must be totally bounded.
+There is a sequence $(x_n)_{n\ge1}$ in $X$ with $d(x_n, x_m) \geq \varepsilon_0$ for all $n \neq m$.
+
+::: pf-proof
+
+Choose $x_1 \in X$. Given $x_1, \ldots, x_k$, the finitely many balls $B(x_i, \varepsilon_0)$, $1 \le i \le k$, do not cover $X$, so there is
+$$
+x_{k+1} \in X \setminus \bigcup_{i=1}^k B(x_i, \varepsilon_0),
+$$
+and then $d(x_{k+1}, x_i) \geq \varepsilon_0$ for all $i \leq k$.
+
+:::
+
+:::
+
+::: pf-step
+
+The sequence of step [](#separated){.pf-ref} has no convergent subsequence, contradicting sequential compactness.
+
+::: pf-proof
+
+A convergent subsequence $(x_{n_k})$ is Cauchy, so $d(x_{n_j}, x_{n_k}) < \varepsilon_0$ for all large $j \ne k$; but $n_j \ne n_k$ gives $d(x_{n_j}, x_{n_k}) \geq \varepsilon_0$.
+
+:::
+
+:::
+
+:::
+
 :::
