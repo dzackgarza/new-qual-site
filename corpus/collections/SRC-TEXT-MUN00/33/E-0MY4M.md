@@ -28,7 +28,6 @@ A function satisfying the requirements of this theorem is said to vanish precise
 :::
 
 ::: {.solution}
-**Goal:** Prove that in a normal space $X$, a subset $A \subseteq X$ is the zero set of a continuous function $f: X \to [0, 1]$ if and only if $A$ is a closed $G_\delta$ set.
 
 ::: pf
 
