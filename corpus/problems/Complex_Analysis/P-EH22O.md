@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EH22O
 kind: problem
-title: Area of $f(\{|z|<r\})$ is $\pi\sum_{n=1}^\infty n|c_n|^2 r^{2n}$ for univalent
+title: Area of $f(\{\abs{z}<r\})$ is $\pi\sum_{n=1}^\infty n\abs{c_n}^2 r^{2n}$ for univalent
   $f(z)=\sum_{n=0}^\infty c_n z^n$
 classification:
   areas:
@@ -20,64 +20,42 @@ audit:
 ---
 
 ::: {.problem}
-Let $f(z) = \sum_{n=0}^\infty c_n z^n$ be analytic and one-to-one in $|z| < 1$.
-For $0<r<1$, let $D_r$ be the disk $|z|<r$.
-Show that the area of $f(D_r)$ is finite and is given by $$S = \pi \sum_{n=1}^\infty n |c_n|^2 r^{2n}.$$ (Note that in general the area of $f(D_1)$ is infinite.)
+Let $f(z) = \sum_{n=0}^\infty c_n z^n$ be analytic and one-to-one in $\abs{z} < 1$.
+For $0<r<1$, let $D_r$ be the disk $\abs{z}<r$.
+Show that the area of $f(D_r)$ is finite and is given by $$S = \pi \sum_{n=1}^\infty n \abs{c_n}^2 r^{2n}.$$ (Note that in general the area of $f(D_1)$ is infinite.)
 :::
 
 ::: {.solution}
-**Goal:** For $f(z) = \sum_{n=0}^\infty c_n z^n$ analytic and one-to-one in $\abs{z} < 1$, show the area of $f(D_r)$, $0 < r < 1$, is finite and equals $S = \pi \sum_{n=1}^\infty n\abs{c_n}^2 r^{2n}$.
 
 ::: pf
 
-::: {.pf-step #area-integral-formula}
-The area of $f(D_r)$ equals $\iint_{D_r} \abs{f'(z)}^2\, dA(z)$.
+::: {.pf-step #area-integral}
+$\operatorname{Area}(f(D_r))=\iint_{D_r}\abs{f'(z)}^2\,dA(z)$, and this is finite.
 
 ::: pf-proof
-$f$ is injective and holomorphic on $D_r$, so it is a $C^1$ diffeomorphism onto its image with Jacobian $\abs{\det J_f} = \abs{f'}^2$ (the Cauchy–Riemann equations make the Jacobian $\abs{f'}^2$); the change-of-variables formula gives $\mathrm{Area}(f(D_r)) = \int_{f(D_r)} 1\, dA = \int_{D_r} \abs{f'}^2\, dA$.
+An injective holomorphic map has nonvanishing derivative, so $f$ is a $C^1$ diffeomorphism of $D_r$ onto its image, with real Jacobian determinant $\abs{f'}^2$ by the Cauchy--Riemann equations.
+The change-of-variables formula gives the identity, and $\abs{f'}^2$ is bounded on the compact set $\overline{D_r}\subset\DD$.
+:::
+
+:::
+
+::: {.pf-step #orthogonality}
+For integers $n,m\ge0$, $\iint_{D_r}z^n\bar z^m\,dA=0$ if $n\ne m$, and $\iint_{D_r}\abs{z}^{2n}\,dA=\frac{\pi r^{2n+2}}{n+1}$.
+
+::: pf-proof
+In polar coordinates, $\iint_{D_r}z^n\bar z^m\,dA=\int_0^r\rho^{n+m+1}\,d\rho\int_0^{2\pi}e^{i(n-m)\theta}\,d\theta$.
 :::
 
 :::
 
 ::: pf-step
-$f'(z) = \sum_{n=1}^\infty n c_n z^{n-1}$, converging uniformly on compact subsets of $D_1$.
+$\iint_{D_r}\abs{f'}^2\,dA=\pi\sum_{n=1}^\infty n\abs{c_n}^2r^{2n}$.
 
 ::: pf-proof
-Term-by-term differentiation of the power series is valid inside the radius of convergence, which is at least $1$ since $f$ is analytic in $\DD$.
+$f'(z)=\sum_{n\ge1}nc_nz^{n-1}$ converges absolutely and uniformly on $\overline{D_r}$, so the double series for $\abs{f'}^2=\sum_{n,m\ge1}nm\,c_n\bar c_m z^{n-1}\bar z^{m-1}$ may be integrated term by term.
+By step [](#orthogonality){.pf-ref}, only $n=m$ survives, and the integral is $\sum_{n\ge1}n^2\abs{c_n}^2\frac{\pi r^{2n}}{n}$; step [](#area-integral){.pf-ref} gives the result.
 :::
 
-:::
-
-::: {.pf-step #orthogonality-integral}
-$\iint_{D_r} \bar{z}^{m} z^{n}\, dA(z) = 0$ for $m \neq n$, and $\iint_{D_r} \abs{z}^{2k}\, dA(z) = \frac{2\pi r^{2k+2}}{2k+2}$.
-
-::: pf-proof
-In polar coordinates $z = \rho e^{i\theta}$, $\iint_{D_r} z^n \bar{z}^m\, dA = \int_0^r \rho^{n+m+1} d\rho \int_0^{2\pi} e^{i(n-m)\theta} d\theta$, and $\int_0^{2\pi} e^{ik\theta} d\theta = 0$ for $k \neq 0$, $2\pi$ for $k = 0$.
-:::
-
-:::
-
-::: {.pf-step #area-series-form}
-$\iint_{D_r} \abs{f'(z)}^2\, dA = \sum_{n=1}^\infty n^2\abs{c_n}^2 \cdot \frac{2\pi r^{2n}}{2n}$.
-
-::: pf-proof
-Expand $\abs{f'}^2 = \qty(\sum n c_n z^{n-1})\qty(\sum m \bar{c_m} \bar{z}^{m-1})$; by step [](#orthogonality-integral){.pf-ref} the cross terms with $n \neq m$ integrate to zero, and $\iint_{D_r} \abs{z}^{2n-2}\, dA = \frac{2\pi r^{2n}}{2n}$ by step [](#orthogonality-integral){.pf-ref} with $k = n-1$.
-Uniform convergence on $\overline{D_r}$ justifies integrating the (absolutely convergent) product term by term; the series is finite by step [](#series-converges){.pf-ref}.
-:::
-
-:::
-
-::: {.pf-step #series-converges}
-The series $\sum_{n=1}^\infty n\abs{c_n}^2 r^{2n}$ converges.
-
-::: pf-proof
-Since $f$ is analytic in $\DD$, $\abs{c_n} s^n \to 0$ for every $s < 1$; fixing $s$ with $r < s < 1$, $\abs{c_n} \leq M s^{-n}$, so $n\abs{c_n}^2 r^{2n} \leq M^2 n (r/s)^{2n}$, a convergent geometric-type series.
-:::
-
-:::
-
-::: pf-qed
-Steps [](#area-integral-formula){.pf-ref}, [](#area-series-form){.pf-ref} and [](#series-converges){.pf-ref} give $\mathrm{Area}(f(D_r)) = \sum_{n\geq1} n^2\abs{c_n}^2 \frac{2\pi r^{2n}}{2n} = \pi\sum_{n\geq1} n\abs{c_n}^2 r^{2n}$, finite as claimed.
 :::
 
 :::
