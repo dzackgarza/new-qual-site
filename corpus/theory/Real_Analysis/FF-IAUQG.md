@@ -24,12 +24,10 @@ If $\sum_{n\geq 0}\norm{f_n}_{\infty, A} < \infty$, then for every $x\in A$ the 
 Equivalently, the conclusion holds whenever there are real numbers $M_n$ with $\abs{f_n(x)} \leq M_n$ for all $x\in A$ and $n\geq 0$ and $\sum_{n\geq 0} M_n < \infty$.
 :::
 
-::: {.proof}
-For each $x$, $\sum_n\abs{f_n(x)}\leq\sum_n M_n<\infty$, so $S(x)\coloneqq\sum_{n\geq 0}f_n(x)$ exists.
-For $x\in A$ and $N\geq 0$, $\abs{S(x) - \sum_{n=0}^{N}f_n(x)}\leq\sum_{n>N}M_n$, which tends to $0$ as $N\to\infty$ independently of $x$.
-The first form is the case $M_n = \norm{f_n}_{\infty,A}$, and conversely $\norm{f_n}_{\infty,A}\leq M_n$.
-:::
-
 ::: {.remark}
 Conversely, if $\sum_n f_n$ converges uniformly on $A$, then $\sup_{x\in A}\abs{f_n(x)}\to0$; this necessary condition does not imply $\sum_n\sup_{x\in A}\abs{f_n(x)}<\infty$, as the constant functions $f_n\coloneqq(-1)^n/n$ show.
+:::
+
+::: {.remark title="Variations"}
+If $A$ is a topological space and every $f_n$ is continuous, then $\sum_{n\geq0}f_n$ is continuous on $A$, by the uniform limit theorem.
 :::

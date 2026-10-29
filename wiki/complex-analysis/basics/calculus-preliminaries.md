@@ -106,7 +106,7 @@ Then $p/q$ is a sum of the following terms:
 
 [[PR-4LISY]]
 
-[[T-AZSCN]]
+[[FF-IAUQG]]
 
 ::: {.remark}
 Inside its radius of convergence, a power series may be integrated and differentiated term by term, and the resulting series have the same radius of convergence.

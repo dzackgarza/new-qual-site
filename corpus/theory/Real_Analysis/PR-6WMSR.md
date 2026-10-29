@@ -22,5 +22,5 @@ Then the series $f(x) \coloneqq \sum_{n} f_n(x)$ converges absolutely at every $
 
 ::: {.remark}
 The constants $M_n(x)$ may depend on $x$, and the conclusion is only pointwise convergence.
-When one sequence $M_n$ serves every $x\in S$, the [[FS-5FKPD|Weierstrass $M$-test]] gives uniform convergence on $S$.
+When one sequence $M_n$ serves every $x\in S$, the [[FF-IAUQG|Weierstrass $M$-test]] gives uniform convergence on $S$.
 :::

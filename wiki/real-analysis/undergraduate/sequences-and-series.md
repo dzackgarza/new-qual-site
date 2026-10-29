@@ -89,7 +89,7 @@ For a series, the Weierstrass $M$-test reduces uniform convergence to convergenc
 
 [[FS-FZL2X]] [[FS-THMMW]]
 
-[[FF-IAUQG]] [[FS-5FKPD]]
+[[FF-IAUQG]]
 
 ::: {.remark title="Negating uniform convergence"}
 $f_n\not\to0$ uniformly if and only if there are $\varepsilon>0$, infinitely many $n$, and points $x_n$ with $\abs{f_n(x_n)}\geq\varepsilon$.
