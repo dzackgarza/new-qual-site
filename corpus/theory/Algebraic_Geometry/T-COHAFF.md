@@ -46,6 +46,6 @@ Let $\mcf$ be a quasicoherent sheaf on a scheme $X$.
 Quasicoherence is the essential hypothesis: the theorem is false for general sheaves of abelian groups, which see the topology of $X$ rather than the module $M$.
 Noetherianness is only used to know that $\tilde I$ is flasque for $I$ injective; the statement is true for any affine scheme, but that version is harder.
 
-This is the direction of Serre's criterion that is a theorem about affines, and the other direction is the criterion proper.
+This is the easy direction of Serre's criterion: an affine scheme has vanishing higher cohomology for quasicoherent sheaves. The converse, that a noetherian scheme with this vanishing is affine, is the criterion proper.
 It is also the reason every computation is done on an affine cover: on the pieces of the cover there is nothing above degree $0$, so all the cohomology comes from the gluing, which is exactly what the Čech complex records.
 :::
