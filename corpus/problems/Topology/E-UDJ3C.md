@@ -21,39 +21,29 @@ Show that if $B\subset X$ satisfies $A\subseteq B \subseteq \bar{A}$, then $B$ i
 
 ::: {.solution}
 
+Suppose $B=U\sqcup V$, where $U$ and $V$ are disjoint and open in $B$.
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #a-in-u}
 
-Suppose $B=U\sqcup V$ were a separation of $B$.
-
-::: pf-proof
-
-We show one side must be empty.
-
-:::
-
-:::
-
-::: pf-step
-
-Since $A$ is connected and $A\subseteq B$, all of $A$ lies in one side, say $A\subseteq U$.
+After renaming, $A\subseteq U$.
 
 ::: pf-proof
 
-The intersections $A\cap U$ and $A\cap V$ would otherwise separate $A$.
+Since $A\subseteq B$, the sets $A\cap U$ and $A\cap V$ are disjoint, open in $A$, and cover $A$. As $A$ is connected, one of them is empty.
 
 :::
 
 :::
 
-::: {.pf-step #s3}
+::: {.pf-step #v-misses-closure}
 
-No point of $V$ can lie in $\overline A$.
+$V\cap\overline A=\varnothing$.
 
 ::: pf-proof
 
-Because $V$ is open in $B$, for each $v\in V$ there is an open set $O\subset X$ with $v\in O$ and $O\cap B\subseteq V$. Since $A\subseteq U$, this gives $O\cap A=\varnothing$, so $v\notin\overline A$.
+Because $V$ is open in $B$, for each $v\in V$ there is an open set $O\subseteq X$ with $v\in O$ and $O\cap B\subseteq V$. By step [](#a-in-u){.pf-ref}, $O\cap A\subseteq V\cap U=\varnothing$, so $v\notin\overline A$.
 
 :::
 
@@ -61,11 +51,11 @@ Because $V$ is open in $B$, for each $v\in V$ there is an open set $O\subset X$ 
 
 ::: pf-step
 
-But $B\subseteq\overline A$, so $V=\varnothing$, a contradiction. Thus $B$ is connected.
+$B$ is connected.
 
 ::: pf-proof
 
-Combine the hypothesis with step [](#s3){.pf-ref}.
+Since $V\subseteq B\subseteq\overline A$, step [](#v-misses-closure){.pf-ref} gives $V=\varnothing$. So $B$ admits no separation.
 
 :::
 
