@@ -61,7 +61,7 @@ The nilradical is the intersection of all prime ideals, and every maximal ideal 
 :::
 
 ::: {.pf-step #jacobson}
-If $R$ is a finitely generated $k$-algebra, then $R$ is a Jacobson ring: every prime ideal $\mathfrak p$ is the intersection of the maximal ideals containing it.
+If $R$ is a finitely generated commutative $k$-algebra, then $R$ is a Jacobson ring: every prime ideal $\mathfrak p$ is the intersection of the maximal ideals containing it.
 
 ::: pf-proof
 This is a form of Hilbert's Nullstellensatz; its weak form says that the residue field at each maximal ideal of $R$ is a finite extension of $k$.
@@ -70,7 +70,7 @@ This is a form of Hilbert's Nullstellensatz; its weak form says that the residue
 :::
 
 ::: pf-step
-(2) If $R$ is a finitely generated $k$-algebra, then $J(R)=\sqrt{(0)}$; in particular $J(R)=0$ when $R$ is reduced.
+(2) If $R$ is a finitely generated commutative $k$-algebra, then $J(R)=\sqrt{(0)}$; in particular $J(R)=0$ when $R$ is reduced.
 
 ::: pf-proof
 By step [](#jacobson){.pf-ref}, the intersection of all maximal ideals equals the intersection of all prime ideals, which is the nilradical.
