@@ -4,6 +4,8 @@ id: T-SFXI7
 kind: theorem
 title: $ML$ estimate for contour integrals
 slogan: 'Contour integrals are bounded by maximum size times path length: $\abs{\int_\gamma f\,dz}\le ML$.'
+prompts:
+- State the maximum length (ML) estimate for a contour integral.
 classification:
   areas:
   - complex-analysis
