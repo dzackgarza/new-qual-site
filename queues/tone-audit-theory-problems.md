@@ -554,7 +554,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Algebra/P-MV6ZQ.md` | `0aba314e75a8e9813bcf01c2269f7c3d89da3c6d` | `0aba314e75a8e9813bcf01c2269f7c3d89da3c6d` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-MVETM.md` | `f6a08f4f57b62667809718bc6e9df903faf4b0c9` | `f6a08f4f57b62667809718bc6e9df903faf4b0c9` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-MWSPM.md` | `f3d503c7d95d9293d764268f022d4cdf950361d7` | `f3d503c7d95d9293d764268f022d4cdf950361d7` | Read; retained |
-| [x] | `corpus/problems/Algebra/P-MXATB.md` | `25873450e7715c890a98093ae69aef1f4cb0c6ae` | `25873450e7715c890a98093ae69aef1f4cb0c6ae` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-MZIFW.md` | `82a92fc285ad06aa64f4205b1d17b5f9e240410e` | `82a92fc285ad06aa64f4205b1d17b5f9e240410e` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-MZJIA.md` | `a329a385e84d38298745806d5bee00e23b32b5c4` | `a329a385e84d38298745806d5bee00e23b32b5c4` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-N27XI.md` | `449c06cb74ebc995a921f1fd81cc05953d2a70d5` | `449c06cb74ebc995a921f1fd81cc05953d2a70d5` | Read; retained |

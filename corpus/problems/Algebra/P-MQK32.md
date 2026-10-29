@@ -107,3 +107,10 @@ The transposition becomes some $(a\ b)$ with $1\le b-a<p$, so $\gcd(b-a,p)=1$, a
 :::
 
 :::
+
+::: {.remark title="A direct proof of (6)"}
+Label the $p$ points by $\ZZ/p\ZZ$ so that $\sigma(x)=x+1$, and write the transposition as $(a\ b)$ with $d=b-a\ne0$.
+The conjugates $\sigma^k(a\ b)\sigma^{-k}$ are the transpositions $(x\ x+d)$.
+Conjugating $(0\ jd)$ by $(jd\ (j+1)d)$ gives $(0\ (j+1)d)$, so by induction the subgroup contains $(0\ jd)$ for $1\le j\le p-1$.
+Since $p$ is prime, these are all transpositions $(0\ y)$ with $y\ne0$, and $(x\ y)=(0\ x)(0\ y)(0\ x)$ gives every transposition.
+:::
