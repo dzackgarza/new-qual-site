@@ -24,7 +24,7 @@ source:
   - P-G23Y5
   - P-8TF01
   - id: P-C3NSR
-    comment: Problem 8; the Fall 2004 version omits the optional degree hint.
+    comment: Problem 8
   date:
     kind: academic-term
     term: fall
