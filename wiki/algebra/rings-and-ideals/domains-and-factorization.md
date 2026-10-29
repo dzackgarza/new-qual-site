@@ -13,10 +13,6 @@ The implications among the classes of rings, with a ring separating each class f
 
 ## Elements
 
-Let $R$ be an integral domain.
-Recall that elements $a,b\in R$ are [[D-R4H6F|associates]] if $a=ub$ for a [[D-QQIQZ|unit]] $u$, so factorizations are compared up to units and associates.
-A nonzero nonunit $p$ is [[D-TO3IY|irreducible]] if $p=ab$ implies that $a$ or $b$ is a unit, and [[D-AWSKI|prime]] if $p\divides ab$ implies $p\divides a$ or $p\divides b$.
-
 [[D-AVBIP]]
 
 [[D-QQIQZ]]
@@ -70,18 +66,6 @@ In a [[D-NKRGN|Euclidean domain]] the division algorithm computes greatest commo
 [[D-NKRGN]]
 
 ### Other classes of rings
-
-Recall the following classes of rings.
-
-- A ring is [[D-TZXBO|Noetherian]] if every ascending chain of ideals stabilizes.
-
-- A ring is [[D-PQHHJ|reduced]] if its only nilpotent element is $0$.
-
-- A ring is [[D-TGB4R|local]] if it has a unique maximal ideal.
-
-- In a [[D-WUGPG|Dedekind domain]] every nonzero proper ideal is a product of prime ideals, uniquely up to order.
-
-- A Noetherian local ring $(R,\mfm)$ is [[D-DEFREGLR|regular]] if $\dim_{R/\mfm}\mfm/\mfm^2=\dim R$.
 
 [[D-TZXBO]]
 
