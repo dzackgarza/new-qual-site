@@ -17,49 +17,52 @@ review: draft
 Show that if $E\subset [0, 1]$ is uncountable, then there is some $t\in \RR$ such that $E\intersect (-\infty ,t)$ and $E\intersect (t, \infty)$ are also uncountable.
 :::
 
-
 ::: {.solution}
-See 3.2.12 of Understanding analysis 2ed. of Abbott.
-Show something stronger, that the following set is nonempty and open:
-\[
-S \definedas \theset{t\in \RR \st E \intersect (-\infty, t), E \intersect (t, \infty) \text{ are uncountable}}
-\subseteq \RR
-.\]
-Write
-\[
-S_- &\definedas \theset{ t\in \RR \st E \intersect (- \infty, t) \text{ is countable}} \\
-S_+ &\definedas \theset{ s\in \RR \st E \intersect (s, \infty) \text{ is countable}}
-.\]
+Let
+$$
+\begin{aligned}
+S_- &\definedas \theset{ t\in \RR \st E \intersect (- \infty, t) \text{ is countable}}, \\
+S_+ &\definedas \theset{ s\in \RR \st E \intersect (s, \infty) \text{ is countable}}.
+\end{aligned}
+$$
 
-Note that $S_- \neq \RR$ since then we could write $E = \Union_{n\in \ZZ} E \intersect (- \infty, n)$ as a countable union of countable sets.
+::: pf
 
-Claim: $S = (\sup S_-, \inf S_+)$.
+::: {.pf-step #a-finite}
+$a \definedas \sup S_-$ and $b \definedas \inf S_+$ are real numbers with $0\le a\le 1$ and $0\le b\le 1$.
 
-We prove the two inclusions.
-
-First, $S \subseteq (\sup S_-, \inf S_+)$.
-Let $t \in S$, so both $E \cap (-\infty, t)$ and $E \cap (t, \infty)$ are uncountable.
-Then $t \notin S_-$ (since $E \cap (-\infty, t)$ is uncountable, not countable), and $t \notin S_+$.
-Now $S_-$ is downward closed: if $s \in S_-$ and $s' < s$, then $E \cap (-\infty, s') \subseteq E \cap (-\infty, s)$ is countable, so $s' \in S_-$.
-Hence every element of $S_-$ is $< t$ (if some $s \in S_-$ satisfied $s \ge t$, then $t \in S_-$ by downward closure, a contradiction), so $t \ge \sup S_-$.
-Similarly $S_+$ is upward closed, so every element of $S_+$ is $> t$, giving $t \le \inf S_+$.
-Thus $t \in [\sup S_-, \inf S_+]$.
-It remains to rule out the endpoints: if $t = \sup S_-$, then for every $s < t$ we have $s \in S_-$, so $E \cap (-\infty, s)$ is countable for all $s < t$; writing $E \cap (-\infty, t) = \bigcup_{n} E \cap (-\infty, t - 1/n)$ expresses $E \cap (-\infty, t)$ as a countable union of countable sets, hence countable, contradicting $t \in S$.
-So $t > \sup S_-$, and symmetrically $t < \inf S_+$.
-Therefore $t \in (\sup S_-, \inf S_+)$.
-
-Conversely, let $t \in (\sup S_-, \inf S_+)$.
-Since $t > \sup S_-$, we have $t \notin S_-$ (if $t \in S_-$ then $t \le \sup S_-$), so $E \cap (-\infty, t)$ is uncountable.
-Since $t < \inf S_+$, we have $t \notin S_+$, so $E \cap (t, \infty)$ is uncountable.
-Hence $t \in S$.
-
-Finally, $S$ is nonempty and open.
-First note $S_- \cap S_+ = \emptyset$: if $t$ lay in both, then $E \cap (-\infty, t)$ and $E \cap (t, \infty)$ would both be countable, so $E = (E \cap (-\infty, t)) \cup (E \cap (t, \infty)) \cup (E \cap \{t\})$ would be countable, contradicting that $E$ is uncountable.
-Since $S_-$ is downward closed and $S_+$ is upward closed, their disjointness forces $\sup S_- \le \inf S_+$ (if $\sup S_- > \inf S_+$, some $t$ with $\inf S_+ < t < \sup S_-$ would lie in both).
-Moreover $\sup S_- < \inf S_+$: if $\sup S_- = \inf S_+ = c$, then $E \cap (-\infty, c) = \bigcup_n E \cap (-\infty, c - 1/n)$ is a countable union of countable sets (each $c - 1/n < c = \sup S_-$ lies in $S_-$), hence countable, so $c \in S_-$; symmetrically $E \cap (c, \infty) = \bigcup_n E \cap (c + 1/n, \infty)$ is countable, so $c \in S_+$, contradicting $S_- \cap S_+ = \emptyset$.
-Therefore $(\sup S_-, \inf S_+)$ is a nonempty open interval, and by the two inclusions above it equals $S$, so $S$ is nonempty and open.
+::: pf-proof
+Since $E\subset[0,1]$, every $t\le 0$ lies in $S_-$, and no $t>1$ does, because then $E\intersect(-\infty,t)=E$ is uncountable. The argument for $S_+$ is symmetric.
 :::
 
+:::
 
+::: {.pf-step #a-countable}
+$E\intersect(-\infty,a)$ and $E\intersect(b,\infty)$ are countable.
 
+::: pf-proof
+$S_-$ is downward closed: if $s\in S_-$ and $s'<s$, then $E\intersect(-\infty,s')\subseteq E\intersect(-\infty,s)$. So $a-1/n\in S_-$ for every $n\geq1$, and $E\intersect(-\infty,a)=\Union_{n\ge1}E\intersect(-\infty,a-1/n)$ is a countable union of countable sets. The argument for $b$ is symmetric.
+:::
 
+:::
+
+::: {.pf-step #a-less-b}
+$a<b$.
+
+::: pf-proof
+If $b\le a$, then every $x\in E$ satisfies $x<a$, $x=a$, or $x>a\ge b$, so $E\subseteq \bigl(E\intersect(-\infty,a)\bigr)\cup\theset{a}\cup\bigl(E\intersect(b,\infty)\bigr)$, which is countable by step [](#a-countable){.pf-ref}. This contradicts the uncountability of $E$.
+:::
+
+:::
+
+::: pf-step
+Every $t\in(a,b)$ has $E\intersect(-\infty,t)$ and $E\intersect(t,\infty)$ uncountable.
+
+::: pf-proof
+The interval is nonempty by step [](#a-less-b){.pf-ref}. Since $t>a=\sup S_-$, $t\notin S_-$; since $t<b=\inf S_+$, $t\notin S_+$.
+:::
+
+:::
+
+:::
+:::
