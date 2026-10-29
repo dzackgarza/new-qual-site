@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESRA12-4
 kind: problem
-title: 'A course-reflection question about theorems'
+title: 'The most interesting theorems of the course'
 classification:
   areas: [real-analysis]
   topics: []
