@@ -22,8 +22,6 @@ What is $\pi_n(S^3 \times S^4 \times S^5)$ for $n \leq 3$?
 :::
 
 ::: {.solution}
-**Goal.** Compute $\pi_n(S^3 \times S^4 \times S^5)$ for $n \le 3$.
-
 ::: pf
 
 ::: pf-step
