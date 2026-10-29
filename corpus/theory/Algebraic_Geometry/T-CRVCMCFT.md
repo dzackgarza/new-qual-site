@@ -67,9 +67,8 @@ For example, $D=-4$ gives $j=1728$, $D=-3$ gives $j=0$, and $D=-163$ gives $j=-6
 :::
 
 ::: {.remark}
-What the theorem buys is a bridge in the direction that was blocked.
-CM is immediate from an imaginary-quadratic lattice parameter $\tau$, while recovering such a parameter from an algebraic equation is transcendental.
-The class field theory statement replaces that passage by an arithmetic test on $j$ itself: every CM $j$-invariant is an algebraic integer, so a transcendental or non-integral value of $j$ rules out complex multiplication.
+Complex multiplication is read off from a lattice parameter $\tau$ ([[T-CRVCM]]), but recovering $\tau$ from an algebraic equation is a transcendental computation.
+The theorem gives an arithmetic test on $j$ itself: every CM $j$-invariant is an algebraic integer, so a transcendental or non-integral value of $j$ rules out complex multiplication.
 For the Legendre curve
 $$
 y^2=x(x-1)(x-3),
@@ -80,7 +79,7 @@ j=\frac{2^6\cdot7^3}{3^2},
 $$
 which is not an algebraic integer; hence this elliptic curve does not have complex multiplication.
 
-The Galois statement is the reason the subject is called complex multiplication and not just "curves with extra endomorphisms": $K(j)$ is the ring class field of $R$, and for $R = \OO_K$ it is the Hilbert class field, the maximal unramified abelian extension of $K$.
+By the Galois statement, $K(j)$ is the ring class field of $R$, and for $R = \OO_K$ it is the Hilbert class field, the maximal unramified abelian extension of $K$.
 Thus singular moduli generate the ring class fields of imaginary quadratic orders. Obtaining arbitrary abelian extensions of $K$ requires additional special values, for example Weber-function values at torsion points; the $j$-invariant alone does not generate every abelian extension of $K$.
 The isomorphism $\Gal \iso \Pic(R)$ is induced by the action of the class group on lattices --- a class $[\mathfrak{a}]$ sends $\CC/\Lambda$ to $\CC/\mathfrak{a}^{-1}\Lambda$, which is another curve with the same $R$, and this action is simply transitive on the isomorphism classes.
 That is also why $j$ has exactly $h(R)$ conjugates: they are the $j$-invariants of the $h(R)$ curves in one orbit.
