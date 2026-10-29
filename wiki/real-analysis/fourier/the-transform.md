@@ -19,7 +19,7 @@ Fourier inversion recovers $f$ from $\hat f$ under the additional hypothesis $\h
 [[T-DTXIA]]
 
 ::: {.example}
-The function $\hat f = \chi_{[-1,1]}$ is not the Fourier transform of any $f\in L^1(\RR)$, since it is not continuous.
+The function $\chi_{[-1,1]}$ is not the Fourier transform of any $f\in L^1(\RR)$, since it is not continuous.
 For $f=\chi_{[-1,1]}\in L^1(\RR)$, $\hat f(\xi) = \frac{\sin 2\pi\xi}{\pi\xi}$ is not in $L^1(\RR)$, so Fourier inversion does not apply to it.
 
 :::
