@@ -15,7 +15,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source used Hf without defining it and did not quantify x; the statement now names Hf as the Hardy-Littlewood maximal function and asks for the bound for every x in R^n.
