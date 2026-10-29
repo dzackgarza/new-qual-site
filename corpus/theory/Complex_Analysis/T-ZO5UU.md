@@ -28,16 +28,3 @@ In particular, if $g$ is continuous on $\{z : \operatorname{Im}z\geq0,\ \abs{z}\
 
 For $\alpha<0$ the same statements hold with $C_R$ replaced by the lower semicircle $t\mapsto Re^{-it}$, $t\in[0,\pi]$, and $\pi/\alpha$ replaced by $\pi/\abs{\alpha}$.
 :::
-
-::: {.proof}
-For $\alpha>0$ and $z=Re^{it}$, $\abs{e^{i\alpha z}}=e^{-\alpha R\sin t}$ and $\abs{\dz}=R\,dt$, so
-$$
-\abs{\int_{C_R}e^{i\alpha z}g(z)\dz}\leq M_R\int_0^\pi e^{-\alpha R\sin t}R\,dt=2M_R\int_0^{\pi/2}e^{-\alpha R\sin t}R\,dt.
-$$
-Since $\sin t\geq 2t/\pi$ for $t\in[0,\pi/2]$,
-$$
-\int_0^{\pi/2}e^{-\alpha R\sin t}R\,dt\leq\int_0^{\pi/2}e^{-2\alpha Rt/\pi}R\,dt\leq\frac{\pi}{2\alpha},
-$$
-which gives the bound.
-For $\alpha<0$ and $z=Re^{-it}$ with $t\in[0,\pi]$, $\abs{e^{i\alpha z}}=e^{\alpha R\sin t}=e^{-\abs{\alpha}R\sin t}$, and the same estimate applies with $\abs{\alpha}$ in place of $\alpha$.
-:::
