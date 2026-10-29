@@ -315,8 +315,8 @@ mathematical correction under its own node, not under copy policy.
 
     **Acceptance:** each read and repaired, or kept with the reason.
 
-  Round 3 (revision `5ba163ac9`, site surfaces and prelims) injected the node below;
-  `audited-deployment` needs it.
+  Round 3 (revision `5ba163ac9`, site surfaces and prelims) injected the nodes below;
+  `audited-deployment` needs both.
   - **`ad3-prelim-content`**. **Needs:** none. F8: prose solutions with no structured proof
     (`STYLE-08`) on P-PRACT20-W3-13, P-PRACT20-W4-06, P-PRACT20-W3-18, P-ALGPAN11-01. F9: wrong
     area on P-PRACT20-W4-06 (`applied-algebra`), P-PRACT20-W3-13 and P-PRACT20-W3-18
