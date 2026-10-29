@@ -5,23 +5,23 @@ kind: problem
 title: Burnside's lemma
 classification:
   areas:
-    - algebra
+  - algebra
   topics:
-    - Burnside's Lemma
-    - Group Actions
+  - Burnside's Lemma
+  - Group Actions
 relations: []
 review: draft
 audit:
-  - event: solution-written
-    by: gemini-3.7-flash
-    date: 2026-08-29
-  - event: solution-written
-    by: OpenAI GPT-5.6 Sol
-    date: 2026-09-09
-  - event: source-corrected
-    by: claude-opus-5.5
-    date: 2026-10-29
-    note: The source reads "Prove Burnside's theorem." without stating it; the statement names Burnside's lemma, which the card proves, and states it.
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-29
+- event: solution-written
+  by: OpenAI GPT-5.6 Sol
+  date: 2026-09-09
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source reads "Prove Burnside's theorem." without stating it; the statement names Burnside's lemma, which the card proves, and states it.
 ---
 
 ::: {.problem}
