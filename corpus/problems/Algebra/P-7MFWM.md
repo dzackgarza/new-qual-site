@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7MFWM
 kind: problem
-title: If $\exp(A)=B\in\SL_n(\RR)$, must $A\in\SL_n(\RR)$?
+title: 'Real logarithms of matrices in $\SL_n(\RR)$ are traceless'
 classification:
   areas:
   - algebra
@@ -27,33 +27,39 @@ Does $A$ also have to be in $\operatorname{SL}_n(\mathbb{R})$?
 Does $A$ have to satisfy $\operatorname{tr}(A) = 0$ (i.e. $A \in \mathfrak{sl}_n(\mathbb{R})$)?
 :::
 
-::: {.solution}
-For every real matrix $A$,
-\[
-\det(e^A)=e^{\operatorname{tr}A}.
-\]
-If $e^A=B\in\SL_n(\RR)$, then
-\[
-1=\det B=e^{\operatorname{tr}A}.
-\]
-Because $\operatorname{tr}A\in\RR$, this implies
-\[
-\operatorname{tr}A=0.
-\]
-Hence
-\[
-A\in\mathfrak{sl}_n(\RR).
-\]
+Say we can find a matrix $A \in M_n(\RR)$ such that $\exp(A) = B$ for $B \in \SL_n(\RR)$.
+Does $A$ also have to be in $\SL_n(\RR)$?
+Does $A$ have to satisfy $\tr(A) = 0$ (i.e. $A \in \mathfrak{sl}_n(\RR)$)?
+:::
 
-However, $A$ need not lie in the group $\SL_n(\RR)$: that would require $\det A=1$. The zero matrix already gives a counterexample,
-\[
-e^0=I_n\in\SL_n(\RR),
-\qquad
-\det0=0.
-\]
-Thus
-\[
-\boxed{e^A\in\SL_n(\RR)\implies A\in\mathfrak{sl}_n(\RR),
-\quad\text{but not necessarily }A\in\SL_n(\RR).}
-\]
+::: {.solution}
+
+::: pf
+
+::: pf-step
+
+If $e^A\in\SL_n(\RR)$, then $\boxed{\tr A=0}$, so $A\in\mathfrak{sl}_n(\RR)$.
+
+::: pf-proof
+
+For every real matrix $A$, $\det(e^A)=e^{\tr A}$. Hence $1=\det(e^A)=e^{\tr A}$, and since $\tr A\in\RR$ and the real exponential is injective, $\tr A=0$.
+
+:::
+
+:::
+
+::: pf-step
+
+$A$ need $\boxed{\text{not}}$ lie in $\SL_n(\RR)$.
+
+::: pf-proof
+
+The zero matrix satisfies $e^0=I_n\in\SL_n(\RR)$, while $\det 0=0\ne1$.
+
+:::
+
+:::
+
+:::
+
 :::
