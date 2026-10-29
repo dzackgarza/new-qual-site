@@ -67,6 +67,8 @@ source:
       comment: Problem 22 (January 2014)
     - id: P-AMH-ALG-SG16-23
       comment: Problem 23 (February 2008)
+    - id: P-3PTP5
+      comment: Section 12, field criterion stated before Problem 24
     - id: P-AMH-ALG-SG16-24
       comment: Problem 24
     - id: P-AMH-ALG-SG16-25

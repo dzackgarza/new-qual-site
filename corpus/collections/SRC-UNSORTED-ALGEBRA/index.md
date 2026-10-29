@@ -206,7 +206,6 @@ source:
   - id: P-3JNFF
   - id: P-3MHHW
   - id: P-3OUVI
-  - id: P-3PTP5
   - id: P-3Q4IQ
   - id: P-3RGXW
   - id: P-3SQVT
