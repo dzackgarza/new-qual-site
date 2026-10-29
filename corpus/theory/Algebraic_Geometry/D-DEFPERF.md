@@ -20,6 +20,7 @@ prompts:
 ---
 
 ::: {.definition title="perfect pairing"}
+Let $A$ be a ring and $M$, $N$, $L$ be $A$-modules.
 A bilinear \dfn{pairing} is a map $M \tensor_A N \to L$.
 By the tensor-hom adjunction this is the same data as a canonical map
 $$
