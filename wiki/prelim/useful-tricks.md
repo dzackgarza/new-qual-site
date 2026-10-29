@@ -45,3 +45,7 @@ Since $\cos$ is even and $\sin$ is odd, their series contain only even and only 
 For $\abs x<1$, $\sum_{n\geq0} x^n = \frac{1}{1-x}$.
 Differentiating term by term gives $\sum_{n\geq1} n x^{n-1} = \frac{1}{(1-x)^2}$, and multiplying by $x$ gives $\sum_{n\geq1} n x^n = \frac{x}{(1-x)^2}$.
 Repeating the operation $x\frac{d}{dx}$ gives $\sum_n n^kx^n$ for each $k\geq 1$.
+
+## Proving a biconditional
+
+For propositions $P$ and $Q$, $P\iff Q$ is equivalent to the conjunction of $P \implies Q$ and $\neg P \implies \neg Q$, since $\neg P\implies\neg Q$ is the contrapositive of $Q\implies P$.
