@@ -119,6 +119,7 @@ a_1^k & & * \\
 0 & & a_n^k
 \end{array}\right).
 $$
+By induction on $k$: a product of upper-triangular matrices is upper triangular, and its $i$th diagonal entry is the product of the $i$th diagonal entries of the factors.
 :::
 
 ## Matrix groups
