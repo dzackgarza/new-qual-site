@@ -21,32 +21,47 @@ audit:
 ---
 
 ::: {.problem}
-Let $S \coloneqq \{z \in \mathbb{D} \mid \operatorname{Im}(z) \ge 0\}$ be the closed upper half of the unit disk $\mathbb{D}$.
-Suppose $f: S \to \mathbb{C}$ is continuous on $S$, real-valued on $S \cap \mathbb{R} = (-1, 1)$, and holomorphic on the interior $S^\circ = \{z \in \mathbb{D} \mid \operatorname{Im}(z) > 0\}$.
+Let $S \coloneqq \{z \in \DD \mid \operatorname{Im}(z) \ge 0\}$ be the closed upper half of the unit disk $\DD$.
+Suppose $f: S \to \CC$ is continuous on $S$, real-valued on $S \cap \RR = (-1, 1)$, and holomorphic on the interior $S^\circ = \{z \in \DD \mid \operatorname{Im}(z) > 0\}$.
 
-Prove that $f$ extends to a holomorphic function on the entire unit disk $\mathbb{D}$ (the Schwarz Reflection Principle).
+Prove that $f$ extends to a holomorphic function on the entire unit disk $\DD$ (the Schwarz Reflection Principle).
 :::
 
 ::: {.solution}
-Define
-\[
-F(z)=
-\begin{cases}
-f(z),&\Im z\ge0,\\
-\overline{f(\overline z)},&\Im z<0.
-\end{cases}
-\]
-Because $f(x)\in\mathbb R$ for $-1<x<1$, the two formulas agree continuously on the real diameter. Thus $F$ is continuous on $\mathbb D$.
 
-On the lower half-disk, $z\mapsto\overline{f(\overline z)}$ is holomorphic. Indeed, if $w=\overline z$, then its derivative is
-\[
-\overline{f'(w)}.
-\]
-Hence $F$ is holomorphic off the real diameter.
+Define $F:\DD\to\CC$ by $F(z)\coloneqq f(z)$ for $\Im z\ge0$ and $F(z)\coloneqq\overline{f(\bar z)}$ for $\Im z<0$.
 
-To cross the diameter, apply Morera's theorem. For any triangle $T\Subset\mathbb D$, split $T$ along the real axis into finitely many polygons lying in the upper and lower half-disks. Approximate any boundary segment on the real axis by parallel segments at heights $\pm\varepsilon$. Cauchy's theorem applies away from the axis, and continuity of $F$ lets $\varepsilon\to0$. Thus
-\[
-\oint_{\partial T}F(z)\,dz=0.
-\]
-Morera's theorem implies that $F$ is holomorphic on all of $\mathbb D$. By construction $F=f$ on the upper half-disk.
+::: pf
+
+::: {.pf-step #continuous}
+$F$ is continuous on $\DD$.
+
+::: pf-proof
+Each formula is continuous on its closed half of $\DD$, and on $(-1,1)$ they agree because $\overline{f(x)}=f(x)$ for real $x$.
+:::
+
+:::
+
+::: {.pf-step #off-axis}
+$F$ is holomorphic on $\DD\setminus\RR$.
+
+::: pf-proof
+On the upper half-disc $F=f$.
+On the lower half-disc, $F(z)=\overline{f(\bar z)}$ has complex derivative $\overline{f'(\bar z)}$, since $\frac{F(z+h)-F(z)}{h}=\overline{\left(\frac{f(\bar z+\bar h)-f(\bar z)}{\bar h}\right)}$.
+:::
+
+:::
+
+::: pf-step
+$F$ is holomorphic on $\DD$ and extends $f$.
+
+::: pf-proof
+By steps [](#continuous){.pf-ref} and [](#off-axis){.pf-ref}, $F$ is continuous on $\DD$ and holomorphic off the line $\RR$, so it is holomorphic on $\DD$ by the Morera argument of [[P-B4WQK]]: $\int_{\partial\Delta}F=0$ for every triangle $\Delta\subset\DD$, because a triangle with a side or vertex on $\RR$ is a limit of triangles translated off $\RR$, and a triangle crossing $\RR$ splits into triangles of those two kinds.
+By construction $F=f$ on $S$.
+:::
+
+:::
+
+:::
+
 :::
