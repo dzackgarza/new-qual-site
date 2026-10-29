@@ -29,21 +29,21 @@ Show that $H \operatorname{char} K \operatorname{char} G \implies H \operatornam
 :::
 
 ::: {.solution}
-Let \(\phi\in\Aut(G)\). Since \(K\operatorname{char}G\),
-\[
+Let $\phi\in\Aut(G)$. Since $K\operatorname{char}G$,
+$$
 \phi(K)=K,
-\]
+$$
 so the restriction
-\[
+$$
 \phi|_K:K\longrightarrow K
-\]
-is an automorphism of \(K\). Since \(H\operatorname{char}K\), every automorphism of \(K\) preserves \(H\); hence
-\[
+$$
+is an automorphism of $K$. Since $H\operatorname{char}K$, every automorphism of $K$ preserves $H$; hence
+$$
 \phi(H)=(\phi|_K)(H)=H.
-\]
-As this holds for every \(\phi\in\Aut(G)\), we have
-\[
+$$
+As this holds for every $\phi\in\Aut(G)$, we have
+$$
 H\operatorname{char}G.
-\]
+$$
 Thus characteristicity is transitive.
 :::
