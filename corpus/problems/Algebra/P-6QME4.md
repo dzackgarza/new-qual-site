@@ -29,37 +29,37 @@ Show that $S_4$ has exactly two proper nontrivial normal subgroups: $A_4$ and a 
 :::
 
 ::: {.solution}
-The proper nontrivial normal subgroups of $S_4$ are
-$$
-V_4=\{e,(12)(34),(13)(24),(14)(23)\}
-$$
-and $A_4$.
+Let $V_4=\{e,(12)(34),(13)(24),(14)(23)\}$.
 
-Both are normal: $A_4$ is the kernel of the sign map, and $V_4$ is the identity together with the entire conjugacy class of double transpositions.
+::: pf
 
-To see there are no others, use the conjugacy classes of $S_4$, whose sizes are
-$$
-1,\ 6,\ 3,\ 8,\ 6
-$$
-for cycle types
-$$
-1^4,\quad 2\,1^2,\quad 2^2,\quad 3\,1,\quad 4,
-$$
-respectively. A normal subgroup is a union of conjugacy classes containing the identity, and its order must divide $24$.
+::: {.pf-step #both-normal}
+$V_4$ and $A_4$ are normal subgroups of $S_4$, and $V_4\cong\ZZ_2^2$.
 
-The only such class-size sums that can be orders of proper nontrivial subgroups are
-$$
-1+3=4
-$$
-and
-$$
-1+3+8=12.
-$$
-These give $V_4$ and $A_4$, respectively. All other unions containing the identity have sizes not dividing $24$, except the full union of size $24$.
+::: pf-proof
+$A_4$ is the kernel of the sign map. $V_4$ is closed under products, for example $(12)(34)\cdot(13)(24)=(14)(23)$, and it is the identity together with the whole conjugacy class of double transpositions, so it is normal. Its three nonidentity elements have order $2$, so $V_4\cong\ZZ_2^2$.
+:::
 
-Hence the normal subgroups of $S_4$ are exactly
-$$
-\{e\},\quad V_4,\quad A_4,\quad S_4,
-$$
-so the proper nontrivial ones are precisely $V_4$ and $A_4$.
+:::
+
+::: {.pf-step #class-sizes}
+The conjugacy classes of $S_4$ have sizes $1,6,3,8,6$, for the cycle types $1^4$, $2\,1^2$, $2^2$, $3\,1$, $4$.
+
+::: pf-proof
+Conjugacy classes in $S_4$ are the cycle types. The counts are $1$, $\binom42=6$, $3$, $4\cdot2=8$ and $3!=6$.
+:::
+
+:::
+
+::: pf-step
+Every proper nontrivial normal subgroup of $S_4$ is $V_4$ or $A_4$.
+
+::: pf-proof
+A normal subgroup $N$ is a union of conjugacy classes that contains the class $\{e\}$, and its order divides $24$. For $1<\abs N<24$, the possible orders are $2,3,4,6,8,12$. By step [](#class-sizes){.pf-ref}, the only sums $1+\sum(\text{other class sizes})$ among these values are $1+3=4$ and $1+3+8=12$. The first union is $V_4$, and the second is the set of even permutations, $A_4$.
+:::
+
+:::
+
+:::
+
 :::
