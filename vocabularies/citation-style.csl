@@ -45,8 +45,21 @@
   </macro>
 
   <citation collapse="citation-label">
-    <layout prefix="[" suffix="]" delimiter=", ">
-      <text variable="citation-label"/>
+    <layout prefix="[" suffix="]" delimiter="; ">
+      <group delimiter=", ">
+        <text variable="citation-label"/>
+        <group delimiter=" ">
+          <choose>
+            <if locator="page">
+              <label variable="locator" form="short"/>
+            </if>
+            <else>
+              <label variable="locator" text-case="capitalize-first"/>
+            </else>
+          </choose>
+          <text variable="locator"/>
+        </group>
+      </group>
     </layout>
   </citation>
 

@@ -846,6 +846,19 @@ def unlist_step_claims(element: pf.Element, doc: pf.Doc) -> pf.Element:
     return element
 
 
+def typeset_link_dashes(element: pf.Element, doc: pf.Doc) -> pf.Element:
+    """Typeset the dashes in a wikilink's text, which Pandoc leaves as written.
+
+    The `wikilinks_title_after_pipe` reader keeps the text after the pipe as
+    plain strings, so `[[FF-CSABG|Artin--Rees lemma]]` bypasses the `smart`
+    extension that typesets every other `--` in a card.
+    """
+    del doc
+    if isinstance(element, pf.Str) and isinstance(element.parent, pf.Link) and "wikilink" in element.parent.classes:
+        element.text = typeset_dashes(element.text)
+    return element
+
+
 def drop_path_captions(element: pf.Element, doc: pf.Doc) -> pf.Element:
     """Take the caption off a figure captioned with its own path.
 
@@ -1051,7 +1064,7 @@ def drop_citeproc_metadata(document: pf.Doc) -> pf.Doc:
 
 def _normalize_ast(source: str) -> NormalizedAst | AstDiagnostic:
     try:
-        document = drop_citeproc_metadata(from_ast(source)).walk(drop_path_captions).walk(drop_bibliography).walk(unlist_step_claims)
+        document = drop_citeproc_metadata(from_ast(source)).walk(drop_path_captions).walk(drop_bibliography).walk(unlist_step_claims).walk(typeset_link_dashes)
         return NormalizedAst(
             ast=to_json(document),
             sections=extract_sections(document),

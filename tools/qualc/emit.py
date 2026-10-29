@@ -194,7 +194,7 @@ def _title_html(title: str) -> str:
     `attr()` would print that as its source. In the body MathJax typesets it
     like any other `$...$` on the page.
     """
-    return f'<p class="qual-section-qualifier">({html.escape(title)})</p>'
+    return f'<p class="qual-section-qualifier">({html.escape(typeset_dashes(title))})</p>'
 
 
 def _rename(el: pf.Element, doc: pf.Doc) -> pf.Element:
@@ -1010,7 +1010,7 @@ def _slogan_json(card: sqlite3.Row) -> list[dict]:
     )
     href = html.escape(f"{REPOSITORY_URL}/issues/new?{query}", quote=True)
     slogan = str(card["slogan"] or "")
-    badge = f'<span class="result-slogan-badge">{html.escape(slogan)}</span>' if slogan else ""
+    badge = f'<span class="result-slogan-badge">{html.escape(typeset_dashes(slogan))}</span>' if slogan else ""
     block = f'<div class="result-slogan">{badge}<a class="result-slogan-suggest" href="{href}">Suggest a slogan</a></div>'
     return [{"t": "RawBlock", "c": ["html", block]}]
 

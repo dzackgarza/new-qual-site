@@ -33,6 +33,7 @@ from .model import (
     reject_extraction_residue,
     to_json,
     typeset_dashes,
+    typeset_link_dashes,
     unlist_step_claims,
     unread_math,
 )
@@ -324,7 +325,9 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
             if padded:
                 errors.append(padded)
             restored.extend(f"{source_rel.as_posix()}: \\cref[{label}]" for label, _ in CREF.findall(body))
-            document = from_ast(result.output).walk(drop_path_captions).walk(unlist_step_claims).walk(anchor_block_markers).walk(unpack_cross_references)
+            document = (
+                from_ast(result.output).walk(drop_path_captions).walk(unlist_step_claims).walk(typeset_link_dashes).walk(anchor_block_markers).walk(unpack_cross_references)
+            )
             drop_citeproc_metadata(document)
             order = _order(metadata, path)
             if isinstance(order, Diagnostic):

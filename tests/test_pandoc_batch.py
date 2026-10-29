@@ -101,3 +101,39 @@ def test_parallel_writers_preserve_serial_result_order() -> None:
 
     assert parallel_markdown == serial_markdown
     assert parallel_html == serial_html
+
+
+def test_wikilink_text_typesets_dashes(tmp_path: Path) -> None:
+    path = tmp_path / "P-LINK.md"
+    path.write_text(_card(tmp_path / "P-LINK.md", "P-LINK", "Note.").read_text().replace("Dr. Example states", "See [[FF-CSABG|Artin--Rees lemma]];"))
+
+    parsed, errors = model.parse_cards([path])
+
+    assert errors == []
+    assert "Artin–Rees" in parsed[0].ast
+    assert "Artin--Rees" not in parsed[0].ast
+
+
+def test_citation_keeps_its_locator() -> None:
+    source = "A [@DF04, Section 10.1, Exercise 8]. B [@DF04, p. 5].\n"
+    vocabularies = Path(__file__).resolve().parent.parent / "vocabularies"
+    result = subprocess.run(
+        [
+            str(pandoc_executable()),
+            "--citeproc",
+            "--bibliography",
+            str(vocabularies / "references.bib"),
+            "--csl",
+            str(vocabularies / "citation-style.csl"),
+            "--to",
+            "plain",
+            "--wrap",
+            "none",
+        ],
+        input=source,
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    assert "[DuFo04, Section 10.1, Exercise 8]" in result.stdout
+    assert "[DuFo04, p. 5]" in result.stdout
