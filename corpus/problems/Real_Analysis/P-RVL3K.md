@@ -28,16 +28,31 @@ audit:
 ---
 
 ::: {.problem}
-- Show that if $E\subseteq \RR^n$ is measurable with $\mu(E) < \infty$ and $f\in L^p(E)$ then $$\norm{f}_{L^p(E)} \converges{p\to\infty}\to \norm{f}_\infty.$$
-- Is it true that the converse to the DCT holds? 
-  I.e. if $\int f_n \to \int f$, is there a $g\in L^p$ such that $f_n < g$ a.e. for every $n$?
-- Prove continuity in $L^p$: If $f$ is uniformly continuous, then $$\norm{\tau_h f - f}_p \converges{h\to 0}\to 0$$ for $p = \infty$, and for every $1 \le p < \infty$ with $f \in L^p$.
-- Prove the following inclusions of $L^p$ spaces for $m(X) < \infty$:
-\[
-L^\infty(X) &\subset L^2(X) \subset L^1(X) \\
-\ell^1(\ZZ) &\subset \ell^2(\ZZ) \subset \ell^\infty(\ZZ)
-.\]
+
+(a) Show that if $E\subseteq \RR^n$ is measurable with $\mu(E) < \infty$ and $f\in L^p(E)$ then
+$$
+\norm{f}_{L^p(E)} \converges{p\to\infty}\to \norm{f}_\infty.
+$$
+
+(b) Is it true that the converse to the DCT holds?
+I.e. if $\int f_n \to \int f$, is there a $g\in L^p$ such that $f_n < g$ a.e. for every $n$?
+
+(c) Prove continuity in $L^p$: If $f$ is uniformly continuous, then
+$$
+\norm{\tau_h f - f}_p \converges{h\to 0}\to 0
+$$
+for $p = \infty$, and for every $1 \le p < \infty$ with $f \in L^p$.
+
+(d) Prove the following inclusions of $L^p$ spaces for $m(X) < \infty$:
+$$
+\begin{aligned}
+L^\infty(X) &\subset L^2(X) \subset L^1(X), \\
+\ell^1(\ZZ) &\subset \ell^2(\ZZ) \subset \ell^\infty(\ZZ).
+\end{aligned}
+$$
+
 :::
+
 ::: {.solution}
 
 ::: pf
