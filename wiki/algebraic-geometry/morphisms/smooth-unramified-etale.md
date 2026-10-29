@@ -29,13 +29,13 @@ The length equals $e_p-1$ exactly when $e_p$ is invertible in $k$; in the wild c
 
 [[PR-IV2DEGREVEN]]
 
-For a degree-two cover of $\PP^1$ by a curve of genus $g$, in characteristic $\neq2$, every ramification point has $e_p=2$, and parity with Riemann--Hurwitz gives $2g+2$ branch points.
+For a degree-two cover of $\PP^1$ by a curve of genus $g$, in characteristic $\neq2$, every ramification point has $e_p=2$, so Riemann--Hurwitz reads $2g-2=2(-2)+r$ and there are $r=2g+2$ branch points.
 
 ## Étale covers
 
 [[D-IV2ETCOV]]
 
-A connected finite étale cover $X\to\PP^1$ of degree $n$ has $2g_X-2=-2n$ by Riemann--Hurwitz, so $n=1$: $\PP^1$ has no nontrivial connected finite étale covers.
+A connected finite étale cover $X\to\PP^1$ of degree $n$ has $2g_X-2=-2n$ by Riemann--Hurwitz, so $g_X\ge0$ forces $n=1$: $\PP^1$ has no nontrivial connected finite étale covers.
 In characteristic $p$ the affine line has the nontrivial connected finite étale Artin--Schreier covers $y^p-y=x$.
 
 ## Smoothness
