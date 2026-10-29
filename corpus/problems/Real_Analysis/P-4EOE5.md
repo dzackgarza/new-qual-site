@@ -28,7 +28,7 @@ audit:
 2. $E = H\union Z$ where $H$ is $F_\sigma$ and $Z$ is null
 3. $E = V\setminus Z'$ where $V\in G_\delta$ and $Z'$ is null.
 
-(b) $\star$: Show that if $E\subseteq \RR^n$ is measurable then $m(E) = \sup \theset{ m(K) \suchthat K\subset E\text{ compact}}$ iff for all $\eps> 0$ there exists a compact $K\subseteq E$ such that $m(K) \geq m(E) - \eps$.
+(b) $\star$: Show that if $E\subseteq \RR^n$ is measurable then $m(E) = \sup \theset{ m(K) \suchthat K\subset E\text{ compact}}$ iff for all $\varepsilon> 0$ there exists a compact $K\subseteq E$ such that $m(K) \geq m(E) - \varepsilon$.
 
 (c) $\star$: Show that cylinder functions are measurable, i.e. if $f$ is measurable on $\RR^s$, then $F(x, y) \coloneqq f(x)$ is measurable on $\RR^s\cross \RR^t$ for any $t$.
 
@@ -45,7 +45,7 @@ $$
 
 (h) $\star$: Show that if $X\subseteq \RR$ with $\mu(X) < \infty$ then
 $$
-\norm{f}_p \converges{p\to\infty}\to \norm{f}_\infty.
+\norm{f}_p \convergesto{p\to\infty} \norm{f}_\infty.
 $$
 :::
 
@@ -68,11 +68,11 @@ If $E$ is measurable, outer regularity gives open $G_k \supseteq E$ and, applied
 
 ::: {.pf-step #s2}
 
-$m(E) = \sup\theset{m(K) : K \subseteq E \text{ compact}}$ if and only if for every $\eps > 0$ there is a compact $K \subseteq E$ with $m(K) \ge m(E) - \eps$.
+$m(E) = \sup\theset{m(K) : K \subseteq E \text{ compact}}$ if and only if for every $\varepsilon > 0$ there is a compact $K \subseteq E$ with $m(K) \ge m(E) - \varepsilon$.
 
 ::: pf-proof
 
-$m(E)$ is an upper bound of $\theset{m(K) : K \subseteq E \text{ compact}}$ by monotonicity. It is the least upper bound exactly when no $m(E) - \eps$ with $\eps > 0$ is an upper bound, which is the stated condition. See [[E-3OAGD]].
+$m(E)$ is an upper bound of $\theset{m(K) : K \subseteq E \text{ compact}}$ by monotonicity. It is the least upper bound exactly when no $m(E) - \varepsilon$ with $\varepsilon > 0$ is an upper bound, which is the stated condition. See [[E-3OAGD]].
 
 :::
 
@@ -108,7 +108,7 @@ For $f \in L^1(\RR^n)$, $\lim_{h\to 0}\int|f(x+h) - f(x)|\,dx = 0$.
 
 ::: pf-proof
 
-For the indicator of a bounded box $I$, the integral is $m(I \triangle (I - h))$, and $I \triangle (I-h)$ lies within distance $|h|$ of $\partial I$, so it tends to $0$. Finite linear combinations of such indicators are dense in $L^1$: simple functions are dense, and for $m(E) < \infty$ outer regularity gives an open $U \supseteq E$ with $m(U \setminus E) < \eps$, a finite union $A$ of the almost disjoint closed cubes composing $U$ has $m(U \setminus A) < \eps$, and then $\|\chi_E - \chi_A\|_1 < 2\eps$. Also by step [](#s4){.pf-ref} translation preserves $L^1$ distances, so for such a combination $s$ with $\|f - s\|_1 < \eps$, $\int|f(x+h) - f(x)|\,dx < 2\eps + \int|s(x+h) - s(x)|\,dx$.
+For the indicator of a bounded box $I$, the integral is $m(I \triangle (I - h))$, and $I \triangle (I-h)$ lies within distance $|h|$ of $\partial I$, so it tends to $0$. Finite linear combinations of such indicators are dense in $L^1$: simple functions are dense, and for $m(E) < \infty$ outer regularity gives an open $U \supseteq E$ with $m(U \setminus E) < \varepsilon$, a finite union $A$ of the almost disjoint closed cubes composing $U$ has $m(U \setminus A) < \varepsilon$, and then $\|\chi_E - \chi_A\|_1 < 2\varepsilon$. Also by step [](#s4){.pf-ref} translation preserves $L^1$ distances, so for such a combination $s$ with $\|f - s\|_1 < \varepsilon$, $\int|f(x+h) - f(x)|\,dx < 2\varepsilon + \int|s(x+h) - s(x)|\,dx$.
 
 :::
 
