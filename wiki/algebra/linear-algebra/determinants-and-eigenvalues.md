@@ -144,14 +144,9 @@ The [[D-GY7ZN|special orthogonal]] and [[D-MCUTE|special unitary]] groups are th
 
 ## Counting over a finite field
 
-An element of $\GL_n(\FF_q)$ is determined by its columns, which form an ordered basis of $\FF_q^n$.
-The first column is any of the $q^n-1$ nonzero vectors, and the $(i+1)$st column is any of the $q^n-q^i$ vectors outside the span of the first $i$ columns, so
-$$
-\size{\GL_n(\FF_q)} = \prod_{i=0}^{n-1}(q^n-q^i).
-$$
-Since $\det\colon\GL_n(\FF_q)\to\FF_q^\times$ is surjective with kernel $\SL_n(\FF_q)$, $\size{\SL_n(\FF_q)} = \size{\GL_n(\FF_q)}/(q-1)$.
-
 [[PR-UQ3XJ]]
+
+Since $\det\colon\GL_n(\FF_q)\to\FF_q^\times$ is surjective with kernel $\SL_n(\FF_q)$, $\size{\SL_n(\FF_q)} = \size{\GL_n(\FF_q)}/(q-1)$.
 
 ## Problems
 
