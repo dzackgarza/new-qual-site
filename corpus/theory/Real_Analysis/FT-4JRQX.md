@@ -37,3 +37,8 @@ The same statements hold with the roles of $x$ and $y$ exchanged, so the two ite
 The hypotheses are that $f$ is nonnegative and measurable; $f$ need not be integrable, and all three integrals in (3) may be $+\infty$.
 Fubini's theorem instead assumes $f\in L^1(\RR^{n+k})$ and allows $f$ to take values of both signs.
 :::
+
+::: {.remark}
+Applied to the indicator of a [[D-MDJII|Lebesgue measurable]] set $E\subseteq\RR^n\times\RR^k$, part 1 says that for almost every $y\in\RR^k$ the slice $E^y\coloneqq\theset{x\in\RR^n \suchthat (x, y) \in E}$ is Lebesgue measurable.
+See [@Fol13].
+:::

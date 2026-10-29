@@ -529,7 +529,6 @@ corpus/theory/Real_Analysis/T-5BFVS.md
 corpus/theory/Real_Analysis/T-5IWCG.md
 corpus/theory/Real_Analysis/T-5K3IO.md
 corpus/theory/Real_Analysis/T-5YROQ.md
-corpus/theory/Real_Analysis/T-6PRW3.md
 corpus/theory/Real_Analysis/T-7FJFK.md
 corpus/theory/Real_Analysis/T-7LQ7X.md
 corpus/theory/Real_Analysis/T-BFOJT.md

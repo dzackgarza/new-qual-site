@@ -16,8 +16,6 @@ Tonelli's and Fubini's theorems both equate $\int_{X\times Y} f\,d(\mu\times\nu)
 For $f\geq0$ measurable on $X\times Y$, the iterated integrals and the integral over $X\times Y$ are equal as elements of $[0,\infty]$.
 For a double sequence $a_{mn}\geq0$ (counting measure on $\NN\times\NN$), this gives $\sum_m\sum_n a_{mn} = \sum_n\sum_m a_{mn}$.
 
-[[T-6PRW3]]
-
 [[FT-4JRQX]]
 
 ## Fubini: integrable functions
