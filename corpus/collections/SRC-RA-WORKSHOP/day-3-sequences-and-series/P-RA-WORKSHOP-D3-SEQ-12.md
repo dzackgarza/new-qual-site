@@ -37,25 +37,19 @@ Boundedness of the positive sequence $(a_n)$ supplies $M>0$ with $a_n\leq M$ for
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
 The series $\sum_n a_nb_n$ converges.
 
 ::: pf-proof
 
 For every $N$, step [](#s1){.pf-ref} yields
-\[
+$$
 0\leq\sum_{n=1}^N a_nb_n\leq M\sum_{n=1}^N b_n.
-\]
-The right-hand partial sums are bounded because $\sum_n b_n$ converges. The left-hand partial sums are nondecreasing and bounded, hence converge in $\mathbb R$.
+$$
+The right-hand partial sums are bounded because $\sum_n b_n$ converges. The left-hand partial sums are nondecreasing and bounded, hence converge in $\RR$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s2){.pf-ref} establishes the required convergence.
 
 :::
 
