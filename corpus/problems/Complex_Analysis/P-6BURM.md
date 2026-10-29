@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6BURM
 kind: problem
-title: Number of solutions of $e^z=az^n$ in the unit disc when $|a|>e$ and when $|a|<1/e$
+title: Number of solutions of $e^z=az^n$ in the unit disc when $\abs{a}>e$ and when $\abs{a}<1/e$
 classification:
   areas:
   - complex-analysis
@@ -15,32 +15,38 @@ review: draft
 
 ::: {.problem}
 Let $n\in \ZZ^{\geq 0}$ and show that the equation
-\[
+$$
 e^z = az^n
-\]
-has $n$ solutions in the open unit disc if $\abs{a} > e$, and no solutions if $\abs{a} < {1\over e}$.
-
+$$
+has $n$ solutions in the open unit disc if $\abs{a} > e$, and no solutions if $\abs{a} < \frac{1}{e}$.
 :::
 
 ::: {.solution}
-Note that $\abs{e^z} = e^{\Re(z)}$, which is maximizes on $S^1$ at $z=1 \in \RR$ and minimized at $z=-1$.
-Write $f(z) = e^z-az^n$, so solution correspond to zeros of $f$.
+Solutions are the zeros of $f(z) \coloneqq e^z-az^n$ in $\DD$, counted with multiplicity.
+On $\abs{z}=1$, $\abs{e^z} = e^{\Re z}\in[e^{-1},e]$.
 
-Case 1: suppose $\abs{a} > e$.
-Big: $M(z) = az^n$.
-Small: $m(z) = e^z$.
-On $\abs{z} = 1$,
-\[
-\abs{m(z)} = \abs{e^z} = e^\Re(z) \leq e^1 < \abs{a} = \abs{az^n} = \abs{M(z)}
-,\]
-so $f$ has $\size Z_M = n$ zeros.
+::: pf
 
-Case 2: suppose $\abs{a} < 1/e$.
-Big: $M(z) = e^z$.
-Small: $m(z) = az^n$.
-On $\abs{z} = 1$,
-\[
-\abs{m(z)} = \abs{az^n} = \abs{a} < \inverseof{e} \leq e^{\Re(z)} = \abs{e^z} = \abs{M(z)}
-,\]
-and $M$ has no zeros in $\DD$ (and in fact none in $\CC$), so neither does $f$.
+::: pf-step
+If $\abs{a}>e$, then $f$ has exactly $n$ zeros in $\DD$.
+
+::: pf-proof
+On $\abs{z}=1$, $\abs{e^z}\le e<\abs{a}=\abs{az^n}$.
+By Rouché's theorem, $f$ has as many zeros in $\DD$ as $az^n$, which has a zero of order $n$ at $0$ and no others.
+:::
+
+:::
+
+::: pf-step
+If $\abs{a}<1/e$, then $f$ has no zeros in $\DD$.
+
+::: pf-proof
+On $\abs{z}=1$, $\abs{az^n}=\abs{a}<e^{-1}\le\abs{e^z}$.
+By Rouché's theorem, $f$ has as many zeros in $\DD$ as $e^z$, which has none.
+:::
+
+:::
+
+:::
+
 :::
