@@ -46,9 +46,8 @@ Let $X$ be a metric space, and let $f_n\colon X\to\RR$ be continuous functions c
 Then $D_f$ is [[D-5NODS|meager]] in $X$.
 :::
 
-::: {.fact title="Lebesgue criterion"}
-Let $a<b$ and let $f\colon[a,b]\to\RR$ be bounded.
-Then $f$ is Riemann integrable on $[a,b]$ if and only if $D_f$ has Lebesgue measure $0$.
+::: {.remark}
+For a bounded $f\colon[a,b]\to\RR$, the [[PR-TDH2A|Lebesgue criterion]] characterizes Riemann integrability by $D_f$ having Lebesgue measure $0$.
 :::
 
 ::: {.fact}
