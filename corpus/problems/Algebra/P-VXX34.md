@@ -22,21 +22,50 @@ audit:
 ---
 
 ::: {.problem}
-Show that if $G \curvearrowright X$ is a group action, then the stabilizer $G_x = \operatorname{Stab}_G(x)$ of any point $x \in X$ is a subgroup of $G$.
+Show that if $G \curvearrowright X$ is a group action, then the stabilizer $G_x = \Stab_G(x)$ of any point $x \in X$ is a subgroup of $G$.
 :::
 
 ::: {.solution}
-By definition,
-\[
-G_x=\{g\in G:g\cdot x=x\}.
-\]
-The identity lies in $G_x$ because $e\cdot x=x$. If $g,h\in G_x$, then
-\[
+Recall that $G_x=\{g\in G:g\cdot x=x\}$.
+
+::: pf
+
+::: pf-step
+
+$e\in G_x$.
+
+::: pf-proof
+
+$e\cdot x=x$ by the axioms of an action.
+
+:::
+
+:::
+
+::: pf-step
+
+If $g,h\in G_x$, then $gh^{-1}\in G_x$.
+
+::: pf-proof
+
+Applying $h^{-1}$ to $h\cdot x=x$ gives $h^{-1}\cdot x=x$. Hence
+$$
 (gh^{-1})\cdot x
 =g\cdot(h^{-1}\cdot x)
 =g\cdot x
-=x,
-\]
-because $h\cdot x=x$ implies $h^{-1}\cdot x=x$. Thus $gh^{-1}\in G_x$.
+=x.
+$$
+
+:::
+
+:::
+
+::: pf-qed
+
 By the subgroup criterion, $G_x\le G$.
+
+:::
+
+:::
+
 :::
