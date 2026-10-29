@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-QDRB4
 kind: proposition
 title: Galois subextensions of a Galois tower
-slogan: 'Intermediate Galois subextensions correspond to normal subgroups, with quotient Galois group upstairs.'
+slogan: 'An intermediate field is Galois over the base exactly when its fixing subgroup is normal, and its Galois group is then the quotient.'
 classification:
   areas:
   - algebra
