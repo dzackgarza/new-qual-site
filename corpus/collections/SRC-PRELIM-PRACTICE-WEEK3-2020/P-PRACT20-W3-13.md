@@ -5,7 +5,7 @@ kind: problem
 title: Octants met by the graph of $e^{x+y}$
 classification:
   areas:
-  - real-analysis
+  - prelim
   topics: []
 relations: []
 review: draft
