@@ -16,19 +16,43 @@ review: draft
 
 ::: {.exercise}
 Show that $\sin(z) = z$ has infinitely many solutions in $\CC$.
-
 :::
 
 ::: {.solution}
-Let $f(z) = \sin(z)-z$ and apply Big Picard: $f$ takes on every value in $\CC$, except possibly for some single $z_0$, infinitely many times.
-So there is at most one $z_0$ such that there are *finitely* many solutions to $\sin(z) - z = z_0$.
-If $z_0\neq 0$, we're done, so suppose such an exception $z_0$ does exist whose fiber has finitely many points.
-Since $z_0+2\pi \neq z_0$, there must then be infinitely many solutions to $f(z) = z_0 + 2\pi$.
-But then
-\[
-f(z+2\pi) = \sin(z+2\pi) - z - 2\pi = \sin(z) - z - 2\pi = (z_0 + 2\pi)-2\pi = z_0
-,\]
-so we can produce infinitely many points in the fiber over $w_0$, contradicting finiteness. 
-So no exception $z_0$ exists, and in particular, $z_0=0$ is not an exception so $f(z) = 0$ has infinitely many solutions.
+Let $f(z)\coloneqq\sin(z) - z$.
+
+::: pf
+
+::: {.pf-step #picard}
+$f$ takes every value in $\CC$, with at most one exception, infinitely many times.
+
+::: pf-proof
+$f$ is entire and not a polynomial, since its Taylor series $-\frac{z^3}{3!} + \frac{z^5}{5!} - \cdots$ does not terminate.
+So $w\mapsto f(1/w)$ has an essential singularity at $0$, and the big Picard theorem applies to it on every punctured neighbourhood of $0$.
 :::
 
+:::
+
+::: {.pf-step #shift}
+$f(z+2\pi) = f(z) - 2\pi$ for all $z$.
+
+::: pf-proof
+$\sin$ is $2\pi$-periodic.
+:::
+
+:::
+
+::: pf-step
+No value is taken only finitely often by $f$; in particular $f(z) = 0$ has infinitely many solutions.
+
+::: pf-proof
+Suppose $f$ takes the value $c$ only finitely often.
+By step [](#picard){.pf-ref}, $c$ is the unique exceptional value, so $f$ takes $c+2\pi\neq c$ at infinitely many points $z_j$.
+By step [](#shift){.pf-ref}, $f(z_j+2\pi) = c$ at the infinitely many distinct points $z_j + 2\pi$, a contradiction.
+:::
+
+:::
+
+:::
+
+:::
