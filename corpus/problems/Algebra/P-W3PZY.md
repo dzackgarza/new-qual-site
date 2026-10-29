@@ -17,40 +17,63 @@ review: draft
 
 ::: {.problem}
 Let $F$ be a field of characteristic $p>0$ and let $f\in F[x]$ be irreducible. Show that there are a unique integer $e\ge0$ and an irreducible separable polynomial $g\in F[x]$ such that
-\[
+$$
 f(x)=g(x^{p^e}),
-\]
+$$
 and that every root of $f$ in an algebraic closure has multiplicity $p^e$.
 :::
 
 ::: {.solution}
-Choose $e\ge0$ maximal such that every exponent occurring in $f$ is divisible by $p^e$. Then there is a unique polynomial $g\in F[x]$ with
-\[
-f(x)=g(x^{p^e}).
-\]
+Since $f$ is nonconstant, some positive exponent occurs in $f$. Choose $e\ge0$ maximal such that every exponent occurring in $f$ is divisible by $p^e$, and let $g\in F[x]$ be the polynomial with $f(x)=g(x^{p^e})$.
 
-The polynomial $g$ is irreducible. Indeed, if $g=uv$ with nonconstant $u,v\in F[x]$, then
-\[
-f(x)=u(x^{p^e})v(x^{p^e})
-\]
-would be a nontrivial factorization of $f$.
+::: pf
 
-By maximality of $e$, not every exponent occurring in $g$ is divisible by $p$. Hence $g'\ne0$. Since $g$ is irreducible, $\gcd(g,g')=1$, so $g$ is separable.
+::: pf-step
 
-Now work in an algebraic closure $\overline F$. Since $g$ is separable,
-\[
-g(y)=a\prod_{i=1}^r(y-\beta_i)
-\]
-with distinct $\beta_i$. For each $i$, choose $\alpha_i\in\overline F$ with $\alpha_i^{p^e}=\beta_i$. In characteristic $p$,
-\[
-x^{p^e}-\beta_i=x^{p^e}-\alpha_i^{p^e}=(x-\alpha_i)^{p^e}.
-\]
-Therefore
-\[
-f(x)=g(x^{p^e})
-=a\prod_{i=1}^r(x-\alpha_i)^{p^e}.
-\]
-Thus every root of $f$ has multiplicity exactly $p^e$.
+$g$ is irreducible.
 
-Uniqueness of $e$ follows from maximality of the common $p$-power dividing all occurring exponents; then $g$ is forced coefficient-by-coefficient.
+::: pf-proof
+
+If $g=uv$ with nonconstant $u,v\in F[x]$, then $f(x)=u(x^{p^e})v(x^{p^e})$ would be a factorization of $f$ into nonconstant factors.
+
+:::
+
+:::
+
+::: {.pf-step #sep}
+
+$g$ is separable.
+
+::: pf-proof
+
+By maximality of $e$, some exponent occurring in $g$ is not divisible by $p$, so $g'\ne0$. Since $g$ is irreducible and $\deg g'<\deg g$, $\gcd(g,g')=1$.
+
+:::
+
+:::
+
+::: {.pf-step #mult}
+
+If $f(x)=h(x^{p^c})$ for some $c\ge0$ and some separable $h\in F[x]$, then every root of $f$ in $\overline F$ has multiplicity exactly $p^c$.
+
+::: pf-proof
+
+Write $h(y)=a\prod_{i=1}^r(y-\beta_i)$ with distinct $\beta_i\in\overline F$, and choose $\alpha_i\in\overline F$ with $\alpha_i^{p^c}=\beta_i$. In characteristic $p$, $x^{p^c}-\beta_i=(x-\alpha_i)^{p^c}$, so
+$$
+f(x)=a\prod_{i=1}^r(x-\alpha_i)^{p^c},
+$$
+and the $\alpha_i$ are distinct because the $\beta_i$ are.
+
+:::
+
+:::
+
+::: pf-qed
+
+By steps [](#sep){.pf-ref} and [](#mult){.pf-ref}, every root of $f$ has multiplicity $p^e$. If also $f(x)=h(x^{p^c})$ with $h$ separable, step [](#mult){.pf-ref} gives $p^c=p^e$, so $c=e$; and then $h=g$, since $g(x^{p^e})$ determines the coefficients of $g$.
+
+:::
+
+:::
+
 :::
