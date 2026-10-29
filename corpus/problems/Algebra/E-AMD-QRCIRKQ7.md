@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that every prime ideal is irreducible.
+Let $R$ be a commutative ring. Show that every prime ideal of $R$ is irreducible.
 :::
 
 ::: {.hint}
@@ -27,16 +27,10 @@ If $\mfp = J\cap K$ with $a\in J\sm\mfp$ and $b\in K\sm\mfp$, then $ab\in J\cap 
 :::
 
 ::: {.solution}
+Recall that an ideal $I$ is irreducible when $I = J \cap K$ for ideals $J, K$ forces $I = J$ or $I = K$.
+Let $\mfp$ be prime and suppose $\mfp = J \cap K$ with $\mfp \neq J$ and $\mfp \neq K$.
 
 ::: pf
-
-::: pf-step
-Recall that $I$ is *irreducible* when $I = J \cap K$ for ideals $J, K$ forces $I = J$ or $I = K$.
-:::
-
-::: pf-step
-Let $\mfp$ be prime and suppose $\mfp = J \cap K$ with $\mfp \neq J$ and $\mfp \neq K$.
-:::
 
 ::: {.pf-step #exists-a-and-b-outside-p}
 There are $a \in J \sm \mfp$ and $b \in K \sm \mfp$.
