@@ -82,7 +82,7 @@ Let $\mathcal{F}\subseteq C(X)$ be pointwise bounded and equicontinuous, with $X
 - Total boundedness.
   Given $\varepsilon>0$, equicontinuity supplies $\delta>0$ such that $d(x,y)<\delta$ implies $\abs{f(x)-f(y)}<\varepsilon$ for every $f\in\mathcal{F}$.
   Cover $X$ by finitely many $\delta$-balls with centres $x_1,\ldots,x_m$.
-  Pointwise boundedness puts $\theset{(f(x_1),\ldots,f(x_m))\st f\in\mathcal{F}}$ in a bounded, hence totally bounded, subset of $\RR^m$, so there are $f_1,\ldots,f_N\in\mathcal{F}$ such that every $f\in\mathcal F$ has some $f_j$ with $\abs{f(x_i)-f_j(x_i)}<\varepsilon$ for all $i$.
+  Pointwise boundedness puts $\theset{(f(x_1),\ldots,f(x_m))\st f\in\mathcal{F}}$ in a bounded, hence totally bounded, subset of $\CC^m$, so there are $f_1,\ldots,f_N\in\mathcal{F}$ such that every $f\in\mathcal F$ has some $f_j$ with $\abs{f(x_i)-f_j(x_i)}<\varepsilon$ for all $i$.
   For $x\in X$ choose $i$ with $d(x,x_i)<\delta$; then $\abs{f(x)-f_j(x)}\leq\abs{f(x)-f(x_i)}+\abs{f(x_i)-f_j(x_i)}+\abs{f_j(x_i)-f_j(x)}<3\varepsilon$, so $\norm{f-f_j}_\infty < 3\varepsilon$.
 
 - Compactness of the closure.
