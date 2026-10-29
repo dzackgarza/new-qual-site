@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SNRS5
 kind: problem
-title: The integral of $1/(1+x^2)^2$ over $\mathbb{R}$
+title: The integral of $1/(1+x^2)^2$ over $\RR$
 classification:
   areas:
   - complex-analysis
@@ -13,32 +13,55 @@ classification:
   - Poles
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source prints the integral with no instruction; the statement now asks to compute it.
 ---
 
 ::: {.exercise}
-\[
-\int_\RR {1 \over (1+x^2)^2} \dx
-.\]
+Compute
+$$
+\int_\RR {1 \over (1+x^2)^2} \dx.
+$$
 :::
 
 ::: {.solution}
-\envlist
+Let $f(z) \coloneqq (1+z^2)^{-2} = (z-i)^{-2}(z+i)^{-2}$, with poles of order $2$ at $\pm i$. For $R>1$ let $\gamma_R$ be the segment $[-R,R]$ followed by the upper semicircle $C_R$ of radius $R$.
 
-- Factor $(1+z^2)^2 = ((z-i)(z+i))^2$, so $f$ has poles at $\pm i$ of order 2.
-- Take a semicircular contour $\gamma \definedas I_R \union D_R$, then $f(z) \approx 1/z^4 \to 0$ for large $R$ and $\int_{D_R} f \to 0$.
-- Note $\int_{I_R} f \to \int_\RR f$, so $\int_\gamma f \to \int_\RR f$.
-- $\int_\gamma f = 2\pi i \sum_{z_0} \Res_{z=z_0} f$, and $z_0 = i$ is the only pole in this region.
-- Compute
-\[
-\Res_{z=i} f 
-&= \lim_{z\to i} {1\over (2-1)!} \dd{}{z} (z-i)^2 f(z) \\
-&= \lim_{z\to i} \dd{}{z} {1\over (z+i)^2 } \\
-&= \lim_{z\to i} {-2 \over (z+i)^3 } \\
-&= -{2 \over (2i)^3 } \\
-&= {1\over 4i} \\ \\
-\implies
-\int_\gamma f &= {2\pi i \over 4i} = \pi/2
-,\]
+::: pf
+
+::: {.pf-step #arc}
+$\int_{C_R} f \to 0$ as $R\to\infty$.
+
+::: pf-proof
+On $C_R$, $\abs{1+z^2}\geq R^2-1$, so $\abs{\int_{C_R} f}\leq \pi R/(R^2-1)^2\to 0$.
+:::
 
 :::
 
+::: {.pf-step #residue}
+$\Res_{z=i} f = \frac{1}{4i}$.
+
+::: pf-proof
+For a pole of order $2$,
+$$
+\Res_{z=i} f = \lim_{z\to i} \frac{d}{dz}\left[(z-i)^2 f(z)\right] = \lim_{z\to i} \frac{-2}{(z+i)^3} = \frac{-2}{(2i)^3} = \frac{1}{4i}.
+$$
+:::
+
+:::
+
+::: pf-step
+$\int_\RR {1 \over (1+x^2)^2} \dx = \boxed{\frac{\pi}{2}}$.
+
+::: pf-proof
+For $R>1$, only the pole $i$ lies inside $\gamma_R$, so $\int_{-R}^R f + \int_{C_R} f = 2\pi i\cdot\frac{1}{4i} = \frac{\pi}{2}$ by the residue theorem and step [](#residue){.pf-ref}. Let $R\to\infty$ and apply step [](#arc){.pf-ref}.
+:::
+
+:::
+
+:::
+
+:::
