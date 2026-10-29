@@ -28,7 +28,6 @@ You should be able to answer all but one of the 340 questions involved in Exerci
 :::
 
 ::: {.solution}
-**Goal:** Systematically establish the core topological behaviors (separation axioms, subspace inheritance, product preservation, and image properties) for (18) Paracompactness and (19) Topological Completeness (complete metrizability).
 
 ::: pf
 
