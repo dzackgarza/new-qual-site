@@ -28,6 +28,10 @@ audit:
     as required by the surrounding statement. Described the universal cover as
     the Bass--Serre tree of universal covers of the two wedge summands and
     checked both the covering map and simple connectivity.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source prints $S^2$ twice in the quotient description of part (c); the statement now reads $S^1$.
 ---
 
 ::: {.problem}
@@ -35,7 +39,7 @@ audit:
 
 (b) State the main theorem about path lifting and covering spaces.
 
-(c) Let $S^1\vee\mathbb{R}P^2$ be the one point union of the circle and two-dimensional real projective space, i.e. the quotient space obtained by taking the disjoint union of $S^2$ and $\mathbb{R}P^2$ and then identifying a single point $x\in S^2$ with a single point $y\in\mathbb{R}P^2$.
+(c) Let $S^1\vee\mathbb{R}P^2$ be the one point union of the circle and two-dimensional real projective space, i.e. the quotient space obtained by taking the disjoint union of $S^1$ and $\mathbb{R}P^2$ and then identifying a single point $x\in S^1$ with a single point $y\in\mathbb{R}P^2$.
 Describe the universal cover of $S^1\vee\mathbb{R}P^2$.
 
 (d) Describe the fundamental group of $S^1\vee\mathbb{R}P^2$.
@@ -263,8 +267,4 @@ The group computation is step [](#s3){.pf-ref}.
 
 :::
 
-:::
-
-::: {.remark}
-Part (c) describes $S^1\vee\mathbb{R}P^2$ as a quotient of the disjoint union of $S^2$ and $\mathbb{R}P^2$. The same sentence calls the first summand a circle and displays $S^1\vee\mathbb{R}P^2$ before and after, so $S^2$ there is a misprint for $S^1$.
 :::
