@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-H7BO5
 kind: problem
-title: A sequentially compact space is totally bounded
+title: A sequentially compact metric space is totally bounded
 classification:
   areas:
   - topology
@@ -11,12 +11,15 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source reads "a sequentially compact space"; total boundedness is defined only for metric spaces, so the statement now says "metric space". A stray "Exercise" heading inside the statement is removed.
 ---
 
 ::: {.exercise}
-Show that a sequentially compact space is totally bounded.
-
-#### Exercise
+Show that a sequentially compact metric space is totally bounded.
 :::
 
 ::: {.solution}
