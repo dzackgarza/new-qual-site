@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Q3X6W
 kind: problem
-title: No group of order 90 is simple
+title: No group of order $90$ is simple
 classification:
   areas:
   - algebra
@@ -18,40 +18,37 @@ Prove that no group of order $90$ is simple.
 :::
 
 ::: {.solution}
-Suppose for contradiction that $G$ is simple of order
-\[
-90=2\cdot 3^2\cdot 5.
-\]
+Suppose, for a contradiction, that $G$ is simple of order $90=2\cdot3^2\cdot5$, and let $n_5$ be the number of Sylow $5$-subgroups of $G$.
 
-Let $n_5$ be the number of Sylow $5$-subgroups. Sylow's theorem gives
-\[
-n_5\equiv1\pmod5,
-\qquad
-n_5\mid18,
-\]
-so $n_5\in\{1,6\}$. Simplicity rules out $n_5=1$, hence $n_5=6$.
+::: pf
 
-Conjugation on the six Sylow $5$-subgroups gives a homomorphism
-\[
-\rho:G\to S_6.
-\]
-Its kernel is normal. The action is nontrivial, so simplicity implies that $\rho$ is injective. Thus we may regard $G$ as a subgroup of $S_6$ of order $90$.
+::: {.pf-step #n5}
+$n_5=6$.
 
-The sign homomorphism restricted to $G$ has normal kernel. Since $G$ is nonabelian simple, it admits no nontrivial quotient of order $2$, so the sign is trivial on $G$. Hence
-\[
-G\le A_6.
-\]
-But then
-\[
-[A_6:G]=\frac{360}{90}=4.
-\]
-The action of $A_6$ on the four left cosets of $G$ gives a homomorphism
-\[
-A_6\to S_4.
-\]
-Since $A_6$ is simple and the coset action is nontrivial, this map would be injective, impossible because
-\[
-|A_6|=360>|S_4|=24.
-\]
-Therefore no simple group of order $90$ exists.
+::: pf-proof
+By the Sylow theorems, $n_5\equiv1\pmod5$ and $n_5\mid18$, so $n_5\in\{1,6\}$. If $n_5=1$, the Sylow $5$-subgroup is a proper nontrivial normal subgroup, which simplicity excludes.
+:::
+
+:::
+
+::: {.pf-step #in-a6}
+$G$ is isomorphic to a subgroup of $A_6$, of index $4$.
+
+::: pf-proof
+Conjugation on the six Sylow $5$-subgroups of step [](#n5){.pf-ref} gives a homomorphism $\rho:G\to S_6$. It is nontrivial because the action is transitive on six points, so its kernel is a proper normal subgroup and hence trivial. Identify $G$ with $\rho(G)\le S_6$. The kernel of $\operatorname{sgn}|_G$ is normal of index at most $2$; since $\abs{G}=90$ is not prime, $G$ is not cyclic of order $2$, so simplicity forces the kernel to be $G$. Hence $G\le A_6$, and $[A_6:G]=360/90=4$.
+:::
+
+:::
+
+::: pf-step
+This is a contradiction.
+
+::: pf-proof
+The action of $A_6$ on the four left cosets of $G$ from step [](#in-a6){.pf-ref} gives a homomorphism $A_6\to S_4$, nontrivial because the action is transitive. Since $A_6$ is simple, it is injective, which is impossible because $\abs{A_6}=360>24=\abs{S_4}$.
+:::
+
+:::
+
+:::
+
 :::
