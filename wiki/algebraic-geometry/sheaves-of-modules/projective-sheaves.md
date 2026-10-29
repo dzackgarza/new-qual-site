@@ -25,7 +25,7 @@ Every quasicoherent sheaf on an affine scheme is globally generated, so global g
 
 [[D-MODAMPLE]]
 
-The three conditions form a ladder: globally generated gives a morphism, very ample gives a closed immersion, and ample means that some positive power is very ample.
+The three conditions form a ladder: globally generated gives a morphism, very ample gives an immersion (a closed immersion when $X$ is proper), and ample means that some positive power is very ample.
 Ampleness is preserved by positive tensor powers.
 
 ## Serre's theorems
