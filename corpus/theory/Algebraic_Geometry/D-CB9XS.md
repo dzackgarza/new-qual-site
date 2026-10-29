@@ -37,5 +37,5 @@ of dimension $\binom{n+d}{n}$ for $d \geq 0$ and zero for $d < 0$.
 For $n \geq 1$, $\OO(-1)$ has no nonzero global sections, whereas the global sections of $\OO(1)$ are the linear forms.
 
 By Serre's theorem, every coherent sheaf on $\PP^n_k$ is a quotient of a finite sum of twists $\OO(-d_i)$.
-On a smooth projective curve, line bundles correspond to [divisors](wiki/algebraic-geometry/divisors/index.html) modulo linear equivalence; their degree need not determine their isomorphism class.
+On a smooth projective curve, line bundles correspond to [[D-5PQ5W|divisors]] modulo linear equivalence; their degree need not determine their isomorphism class.
 :::
