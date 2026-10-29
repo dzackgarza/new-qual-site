@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-6-08
 kind: problem
-title: Euclidean embedding dimension of CP^n for n a power of two
+title: Euclidean embedding dimension of $\CP^n$ for $n$ a power of $2$
 classification:
   areas: [topology]
   topics: []
