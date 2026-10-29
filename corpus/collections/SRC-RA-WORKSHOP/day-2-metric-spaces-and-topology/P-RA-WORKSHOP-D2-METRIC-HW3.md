@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D2-METRIC-HW3
 kind: problem
-title: Uncountability of the set of binary sequences (warm-up)
+title: Uncountability of the set of binary sequences
 classification:
   areas:
   - real-analysis
