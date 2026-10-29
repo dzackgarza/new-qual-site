@@ -22,124 +22,59 @@ $$
 $$
 :::
 
-::: {.remark}
-The current Quals `.docx` writes the OMML limits as $-\infty$ to $\infty$ (Word’s default nary limits).
-That integral has a pole on the real axis when $n$ is odd, and the same sentence asks for a wedge of angle $2\pi/n$, which evaluates the integral from $0$ to $\infty$.
-The exam as transcribed in `2021_Fall.md.source`, and the existing solutions, are $\int_0^\infty$.
+::: {.solution}
+Let $f(z) \coloneqq 1/(1+z^n)$, $\omega \coloneqq e^{i\pi/n}$ and $\zeta \coloneqq \omega^2 = e^{2\pi i/n}$.
+For $R>1$, let $\Gamma_R$ be the boundary of the sector $\theset{re^{it} \st 0\leq r\leq R,\ 0\leq t\leq 2\pi/n}$, oriented positively: the segment $\gamma_1 = [0,R]$, the arc $C_R = \theset{Re^{it} \st 0\leq t\leq 2\pi/n}$, and the segment $\gamma_3$ from $R\zeta$ to $0$.
+
+::: pf
+
+::: {.pf-step #pole}
+The only pole of $f$ inside $\Gamma_R$ is the simple pole $\omega$, and $\Res_{z=\omega} f = -\omega/n$.
+
+::: pf-proof
+The poles of $f$ are the roots $e^{(2k+1)i\pi/n}$, $0\leq k\leq n-1$, of $z^n=-1$, and they are simple.
+Their arguments are $(2k+1)\pi/n$, so only $k=0$ lies in the open sector of angle $2\pi/n$, and none lies on $\Gamma_R$ when $R>1$.
+At a simple zero $\omega$ of $1+z^n$, $\Res_{z=\omega} f = 1/(n\omega^{n-1}) = \omega/(n\omega^n) = -\omega/n$, since $\omega^n=-1$.
 :::
-
-::: {.solution title="Newer, sketch"}
-By the ML estimate, $\int_{C_R} f \to 0$.
-
-The residue contribution: note the simple pole at $\omega_n \definedas e^{i\pi \over n}$,
-$$
-\Res_{z=\omega_n} f(z) = {1\over n\omega_n^{n-1}} = {\omega \over n\omega^n} = -{\omega_n \over n}
-.$$
-
-The segment contributions: $\int_{\gamma_1}f\to I$, and
-$$
-\int_{\gamma_2}f(z) \dz = \int_\infty^0 {1\over 1 + (\zeta_nt)^n} \zeta_n \dt = -\zeta_n I
-,$$
-so the contour contributions sum to $(1-\zeta_n)I$.
-
-Solving:
-$$
-I
-= -{2\pi i \omega_n\over n(1-\zeta_n)}
-= -2\pi i {1\over \inverseof{\omega_n} - \omega_n}
-= -2\pi i {1\over 2i \sin\qty{\pi \over n}}
-= {\pi \over n} \csc\qty{\pi \over n}
-.$$
-:::
-
-::: {.solution title="Older, detailed"}
-Write $\omega_{n, k} = \exp\qty{(2k+1)i\pi \over n}$ and factor $z^n+1$ as
-$$
-z^n+1  = \prod_{1\leq k \leq n}(z-\omega_{n, k}) =
-(z-e^{i\pi \over n})(z-e^{3i\pi \over n})
-\cdots (z-e^{(2n-1)i\pi \over n})
-.$$
-Note that only the root $e^{i\pi\over n}$ lies in the $2\pi/n$ wedge, so it is the only (simple) pole of $f(z) \definedas {1\over 1+z^n}$ in this region.
-Since the pole is simple, the residue is computed by the simple-pole formula $\Res_{z=r_0} f = \lim_{z \to r_0} (z - r_0) f(z)$.
-Write $r_0 \definedas e^{i\pi\over n}$, then by L'Hôpital,
-$$
-\Res_{z = r_0} {1\over 1+z^n}
-&= \lim_{z\to r_0} {z-r_0 \over 1 + z^n} \\
-&= \lim_{z\to r_0} {1\over nz^{n-1}} \\
-&= {1\over nr_0^{n-1}} \\
-&= {1\over n e^{i\pi (n-1) \over n}} \\
-&= \inverseof{n} {\exp\qty{-i\pi (n-1)\over n }}
-.$$
-
-Take a contour $\Gamma$ comprised of
-
-- $\gamma_1 = [0, R] \subseteq \RR$
-
-- $\gamma_2 = \theset{Re^{it} \st t\in [0, 2\pi/n]}$
-
-- $\gamma_3 = \zeta_n [0, R]$
-
-By the residue theorem
-$$
-2\pi i \Res_{z=r_0} f(z) = I \definedas \int_\Gamma f = \qty{\int_{\gamma_1} + \int_{\gamma_2} + \int_{\gamma_3}}f
-.$$
-
-::: {.claim}
-Taking orientations into account,
-$$
-\int_{\gamma_3} f = -\zeta_n \int_{\gamma_1} f
-.$$
-:::
-
-::: {.claim}
-$$
-\int_{\gamma_2}f\convergesto{R\to\infty}0
-.$$
-:::
-
-so in the limit we have
-$$
-2\pi i \Res_{z=r_0}f(z)  &= \qty{1 - \zeta_n}\int_{\gamma_1}f \\
-\implies \int_{\gamma_1} f
-&= {2\pi i \Res_{z=r_0}f(z) \over 1 - \zeta_n}\\
-&= {2\pi i e^{-\pi (n-1) \over n} \over n\qty{1-e^{2\pi i \over n}}} \\
-&= {2\pi i \over n}
-\inverseof{\left[
-e^{i\pi} e^{-i\pi \over n}\qty{1 - e^{2\pi i \over n}}
-\right]} \\
-&= {2\pi i \over n}
-\inverseof{\left[
--1\qty{e^{-i\pi \over n} - e^{\pi i \over n}}
-\right]}\\
-&= {2\pi i \over n}
-\inverseof{\left[
-2i \sin\qty{\pi\over n}
-\right]} \\
-&= {\pi \over n\sin\qty{\pi \over n}}
-.$$
-
-::: {.proof title="of claim 1"}
-Parameterize the curves:
-
-- $\gamma_1 \definedas \theset{t \st t\in [0, R]}, \dz = \dt$
-
-- $\gamma_3 \definedas \theset{t\zeta_n \st t\in [0, R]}, \dz = \zeta_n \dt$
-
-Then, a direct check:
-$$
-\int_{\gamma_3}f(z) \dz
-&= \int_0^R {1\over 1 + (\zeta_n t)^n}\zeta_n \dt \\
-&= \zeta_n\int_0^R {1\over 1 + t^n}\dt \\
-&= \zeta_n \int_{\gamma_1}f(z) \dz
-.$$
 
 :::
 
-::: {.proof title="of claim 2"}
-Parameterize $\gamma_2 = \theset{Re^{it} \st t\in [0, 2\pi/n]}$ and apply the ML estimate:
+::: {.pf-step #ray}
+$\int_{\gamma_3} f = -\zeta\int_0^R \frac{dt}{1+t^n}$.
+
+::: pf-proof
+Parametrize $\gamma_3$ in reverse by $z=\zeta t$, $t\in[0,R]$, with $dz = \zeta\,dt$.
+Since $\zeta^n=1$, $f(\zeta t) = 1/(1+t^n)$, and reversing the orientation gives the sign.
+:::
+
+:::
+
+::: {.pf-step #arc}
+$\int_{C_R} f \to 0$ as $R\to\infty$.
+
+::: pf-proof
+On $C_R$, $\abs{1+z^n}\geq R^n-1$, and $C_R$ has length $2\pi R/n$.
+By the ML estimate, $\abs{\int_{C_R} f}\leq \frac{2\pi R}{n(R^n-1)} = O(R^{1-n})$, which tends to $0$ because $n\geq 2$.
+:::
+
+:::
+
+::: pf-step
+$I = \boxed{\dfrac{\pi}{n\sin(\pi/n)}}$.
+
+::: pf-proof
+By the residue theorem and steps [](#pole){.pf-ref} and [](#ray){.pf-ref},
 $$
-{1\over 1 + (Re^{it})^n} \leq {1\over R^n - 1} \implies \int_{\gamma_2}f \leq {1\over R^n - 1} \qty{{2\pi R \over n}} = \bigo(R^{n-1})\convergesto{R\to\infty}0
-.$$
+(1-\zeta)\int_0^R \frac{dt}{1+t^n} + \int_{C_R} f = 2\pi i\Res_{z=\omega} f = -\frac{2\pi i\,\omega}{n}.
+$$
+Letting $R\to\infty$ and using step [](#arc){.pf-ref}, $(1-\zeta) I = -2\pi i\omega/n$.
+Since $(1-\zeta)/\omega = \omega^{-1}-\omega = -2i\sin(\pi/n)$,
+$$
+I = \frac{-2\pi i}{n(\omega^{-1}-\omega)} = \frac{-2\pi i}{-2in\sin(\pi/n)} = \frac{\pi}{n\sin(\pi/n)}.
+$$
+:::
+
+:::
 
 :::
 
