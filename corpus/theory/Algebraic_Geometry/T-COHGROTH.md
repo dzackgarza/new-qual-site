@@ -27,13 +27,12 @@ Then $H^i(X, \mcf) = 0$ for all $i > n$ and every sheaf of abelian groups $\mcf$
 :::
 
 ::: {.remark}
-Two features distinguish this from every other vanishing theorem on the syllabus.
-It asks nothing of $\mcf$: no quasicoherence, no coherence.
-And the bound is topological, the dimension of the underlying space, not the dimension of a variety over a field.
+The theorem places no hypothesis on $\mcf$: it need not be quasicoherent or coherent.
+The bound is topological: it is the dimension of the underlying space, not the dimension of a variety over a field.
 
-Noetherianness of the space is load-bearing and is used to run the Noetherian induction on closed subsets; without it the statement fails.
-Nothing else can be dropped, since $H^n$ is generally nonzero: $H^n(\PP^n, \OO(-n-1)) \neq 0$ shows the bound is sharp.
+The Noetherian hypothesis on $X$ cannot be dropped; the proof is a Noetherian induction on closed subsets.
+The bound is sharp: $H^n(\PP^n, \OO(-n-1)) \neq 0$.
 
-For quasicoherent sheaves there is a cheaper route to the same bound on $\PP^n$: a cover by $n+1$ affines makes the Čech complex vanish above degree $n$.
+For quasicoherent sheaves there is a shorter route to the same bound on $\PP^n$: a cover by $n+1$ affines makes the Čech complex vanish above degree $n$.
 The two arguments give the same number for different reasons, and the Čech one says nothing about non-quasicoherent sheaves.
 :::
