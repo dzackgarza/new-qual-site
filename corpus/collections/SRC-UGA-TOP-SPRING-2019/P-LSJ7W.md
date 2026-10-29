@@ -39,8 +39,6 @@ Compute $H_1(T_A^3; \ZZ)$ for $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$
 :::
 
 ::: {.solution}
-**Goal:** Prove well-definedness and invertibility of the induced map $\bar{f}_A$ in (a), and compute $H_1(T_A^3; \ZZ)$ using the Mayer–Vietoris sequence (and fundamental group abelianization) for the mapping torus in (b).
-
 ::: pf
 
 ::: {.pf-step #s1}
