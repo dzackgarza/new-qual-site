@@ -37,51 +37,65 @@ $$
 h_p(x)=\sup\{m\ge0:x\in p^mG\}\in\NN\cup\{\infty\}.
 $$
 The sequence $(h_p(x))_p$ is called a characteristic of $G$.
+Two characteristics $(a_p)$ and $(b_p)$ are called equivalent when they agree at all but finitely many primes and $a_p=\infty\iff b_p=\infty$ for every $p$.
+The equivalence class of a characteristic of $G$ is the type of $G$.
 
 ::: pf
 
 ::: {.pf-step #s1}
-
-Changing the nonzero element changes its characteristic only at finitely many primes, and never changes which coordinates are infinite.
+Changing the nonzero element changes its characteristic only at finitely many primes, and never changes which coordinates are infinite. Hence the type of $G$ is well defined.
 
 ::: pf-proof
-
 If $0\ne y\in G$, then $by=ax$ for nonzero integers $a,b$. In the torsion-free group $G\le\QQ$, $h_p(nz)=h_p(z)+v_p(n)$ for every nonzero integer $n$ and $0\neq z\in G$, since $nz\in p^mG$ if and only if $z\in p^{m-v_p(n)}G$ for $m\ge v_p(n)$. Hence for every prime $p$,
 $$
 h_p(y)=h_p(x)+v_p(a)-v_p(b)
 $$
-with the convention $\infty+c=\infty$. Only primes dividing $ab$ can change, and an infinite height remains infinite. Thus the equivalence class of the characteristic is independent of the chosen nonzero element.
-
-Two characteristics $(a_p)$ and $(b_p)$ are called equivalent when they agree at all but finitely many primes and
-$$
-a_p=\infty\iff b_p=\infty
-$$
-for every $p$. Their equivalence class is the type of $G$.
-
+with the convention $\infty+c=\infty$. Only primes dividing $ab$ can change, and an infinite height remains infinite.
 :::
 
 :::
 
-::: pf-step
-
+::: {.pf-step #s2}
 Two nonzero subgroups of $\QQ$ are isomorphic if and only if they have the same type.
 
 ::: pf-proof
 
-This is Baer's classification of rank-one torsion-free abelian groups. In the special case of subgroups of $\QQ$, any homomorphism between two nonzero such groups is multiplication by a rational number: after choosing $0\ne x$ in the source, the image of every $y\in G$ is forced by the rational relation between $x$ and $y$. Multiplication by a rational changes only finitely many finite $p$-heights, exactly as in step [](#s1){.pf-ref}. Conversely, equivalent height data differ by such a finite rational rescaling, which gives an isomorphism.
+::: {.pf-step #recover}
+If $0\ne x\in G\le\QQ$, then $G=\{qx: q\in\QQ,\ v_p(q)\ge -h_p(x)\text{ for every prime }p\}$.
+
+::: pf-proof
+For a prime $p$ and $m\ge0$, the element $x/p^m\in\QQ$ is the only rational $g$ with $p^mg=x$, so $x/p^m\in G$ exactly when $x\in p^mG$, that is, when $m\le h_p(x)$. Let $q=a/b$ in lowest terms with $b=\prod_p p^{m_p}$. If $qx\in G$, then $x/p^{m_p}$ is an integer combination of $qx$ and $x$, because $a$ is prime to $p^{m_p}$, so $m_p\le h_p(x)$. Conversely, if $m_p\le h_p(x)$ for every $p\mid b$, then each $x/p^{m_p}$ lies in $G$, and since the integers $b/p^{m_p}$ have gcd $1$, the element $x/b$ is an integer combination of the $x/p^{m_p}$; hence $qx=a\cdot x/b\in G$.
+:::
+
+:::
+
+::: pf-step
+Isomorphic subgroups have the same type.
+
+::: pf-proof
+An isomorphism $\varphi\colon G\to H$ satisfies $x\in p^mG\iff\varphi(x)\in p^mH$, so $h_p(\varphi(x))=h_p(x)$ for every $p$.
+:::
+
+:::
+
+::: pf-step
+Subgroups of the same type are isomorphic.
+
+::: pf-proof
+Let $0\ne x\in G$ and $0\ne y\in H$ have equivalent characteristics. At the finitely many primes where they differ, both heights are finite, so replacing $y$ by $(c/d)y$ for suitable coprime integers $c,d$, with $d$ dividing a power of those primes within the height of $y$, changes $h_p(y)$ by $v_p(c)-v_p(d)$ at those primes only, by the computation of step [](#s1){.pf-ref}; choose $c,d$ so that $h_p(y)=h_p(x)$ for every $p$. By step [](#recover){.pf-ref}, multiplication by the rational number $y/x$ maps $G$ onto $H$, and it is injective.
+:::
+
+:::
 
 :::
 
 :::
 
 ::: pf-step
-
-There are exactly $2^{\aleph_0}$ isomorphism classes.
+(1), (2) The groups $G_S$ for distinct sets of primes $S$ are pairwise non-isomorphic, and there are exactly $\boxed{2^{\aleph_0}}$ isomorphism classes.
 
 ::: pf-proof
-
 There are at most $2^{\aleph_0}$ subgroups because $\QQ$ is countable.
-
 For each set of primes $S$, let
 $$
 G_S=\ZZ[1/p:p\in S].
@@ -93,29 +107,24 @@ h_p(1)=\begin{cases}
 0,&p\notin S.
 \end{cases}
 $$
-Thus $G_S\cong G_T$ implies $S=T$. Since the set of primes is countable, there are $2^{\aleph_0}$ choices of $S$. Hence the number of isomorphism classes is exactly $2^{\aleph_0}$.
-
+The set of primes with infinite height is an invariant of the type, so step [](#s2){.pf-ref} shows that $G_S\cong G_T$ implies $S=T$. The set of primes is countably infinite, so there are $2^{\aleph_0}$ choices of $S$.
 :::
 
 :::
 
 ::: pf-step
-
-The groups $G_S$ do not exhaust all subgroups of $\QQ$.
+(3) The groups $G_S$ do not exhaust all subgroups of $\QQ$.
 
 ::: pf-proof
-
 Choose finite numbers $e_p\ge0$ with $e_p>0$ for infinitely many primes $p$ (for example $e_p=1$ for all $p$), and set
 $$
 G=\left\langle p^{-j}:p\text{ prime},\ 0\le j\le e_p\right\rangle\le\QQ.
 $$
-Then $h_p(1)=e_p$. Such a type can have infinitely many positive finite coordinates, whereas every $G_S$ has only heights $0$ or $\infty$. Hence it is not of localization type.
-
+Then $h_p(1)=e_p$. This characteristic has infinitely many positive finite coordinates, so it is not equivalent to a characteristic with values only $0$ and $\infty$, as every type of a $G_S$ is. By step [](#s2){.pf-ref}, $G$ is isomorphic to no $G_S$.
 :::
 
 :::
 
 :::
 
-Therefore Baer's types classify all nonzero subgroups of $\QQ$, and there are exactly continuum many isomorphism classes.
 :::
