@@ -50,7 +50,7 @@ The proof applies the maximum modulus principle to $g(z) \coloneqq f(z)/z$.
 ![](../../../../assets/assets/figures/2021-12-14_16-30-46.png)
 :::
 
-::: {.remark title="Schwarz–Pick inequality"}
+::: {.remark title="Schwarz--Pick inequality"}
 For $a\in\DD$ the [[D-MFPYG|Blaschke factor]] $\psi_a(z) = (a-z)/(1-\bar a z)$ is an automorphism of $\DD$ with $\psi_a(0)=a$, $\psi_a(a)=0$, and $\psi_a\circ\psi_a = \id$.
 Let $f\colon\DD\to\DD$ be holomorphic, $a\in\DD$ and $b\coloneqq f(a)$.
 Then $h\coloneqq\psi_b\circ f\circ\psi_a$ maps $\DD$ to $\DD$ with $h(0)=0$, and the Schwarz lemma applied to $h$ at $w=\psi_a(z)$ gives
