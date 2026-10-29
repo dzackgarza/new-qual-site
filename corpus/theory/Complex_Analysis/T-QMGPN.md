@@ -6,9 +6,10 @@ title: Implicit function theorem
 slogan: 'A relation is locally the graph of a function wherever the derivative block in the solved-for variables is invertible.'
 classification:
   areas:
-  - complex-analysis
+    - complex-analysis
+    - real-analysis
   topics:
-  - Calculus
+    - Calculus
 relations: []
 review: draft
 ---
