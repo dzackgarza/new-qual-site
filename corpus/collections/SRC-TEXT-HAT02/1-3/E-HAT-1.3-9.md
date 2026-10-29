@@ -22,15 +22,12 @@ Show that if a path-connected, locally path-connected space $X$ has $\pi_1(X)$ f
 :::
 
 ::: {.solution}
-**Goal:** Prove that every continuous map $f: X \to S^1$ from a path-connected, locally path-connected space with finite $\pi_1(X)$ is nullhomotopic, by lifting $f$ to the universal cover $\RR$.
-
 ::: pf
 
 ::: {.pf-step #s1}
-Triviality of the induced homomorphism on fundamental groups:
+The induced homomorphism $f_*: \pi_1(X, x_0) \to \pi_1(S^1, f(x_0))$ is trivial.
 
 ::: pf-proof
-*Proof:*
 
 ::: pf-step
 Fix a basepoint $x_0 \in X$ and let $s_0 = f(x_0) \in S^1$.
@@ -60,11 +57,10 @@ Thus $f_*(\pi_1(X, x_0)) = \{0\}$.
 
 :::
 
-::: pf-step
-Lifting $f$ to the universal cover $\RR$:
+::: {.pf-step #lift}
+$f$ lifts to a map $\widetilde{f}: X \to \RR$ with $p \circ \widetilde{f} = f$, where $p: \RR \to S^1$ is the universal covering.
 
 ::: pf-proof
-*Proof:*
 
 ::: pf-step
 Let $p: \RR \to S^1$ be the standard universal covering map given by $p(t) = e^{2\pi i t}$, and choose $t_0 \in \RR$ with $p(t_0) = s_0$.
@@ -88,10 +84,9 @@ $$p \circ \widetilde{f} = f \quad \text{and} \quad \widetilde{f}(x_0) = t_0.$$
 :::
 
 ::: pf-step
-Null-homotopy of $f$:
+$f$ is nullhomotopic.
 
 ::: pf-proof
-*Proof:*
 
 ::: pf-step
 The codomain $\RR$ is convex and contractible.
@@ -124,16 +119,6 @@ $$H(x, 0) = p(\widetilde{f}(x)) = f(x), \qquad H(x, 1) = p(0) = e^0 = 1.$$
 Thus $H$ is a homotopy between $f$ and the constant map $c_1(x) = 1$.
 :::
 
-:::
-
-:::
-
-::: pf-step
-Conclusion:
-
-::: pf-proof
-*Proof:*
-Every continuous map $f: X \to S^1$ is nullhomotopic.
 :::
 
 :::
