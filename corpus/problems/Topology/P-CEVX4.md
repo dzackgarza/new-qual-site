@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-- Compute $\pi_1(S^1 \cross S^1)$
+Compute $\pi_1(S^1 \cross S^1)$
 :::
 
 ::: {.solution}
@@ -23,7 +23,7 @@ review: draft
 
 ::: {.pf-step #s1}
 
-For path-connected spaces, fundamental groups commute with products:
+For based spaces, fundamental groups commute with products:
 $$\pi_1(X\times Y,(x_0,y_0))\cong\pi_1(X,x_0)\times\pi_1(Y,y_0).$$
 
 ::: pf-proof
@@ -36,8 +36,8 @@ A loop in a product is exactly a pair of loops, and homotopies are likewise coor
 
 ::: pf-step
 
-Since $\pi_1(S^1)\cong\mathbb Z$,
-$$\boxed{\pi_1(S^1\times S^1)\cong\mathbb Z\times\mathbb Z.}$$
+Since $\pi_1(S^1)\cong\ZZ$,
+$$\boxed{\pi_1(S^1\times S^1)\cong\ZZ\times\ZZ.}$$
 
 ::: pf-proof
 
