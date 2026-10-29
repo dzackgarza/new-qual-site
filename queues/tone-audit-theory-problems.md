@@ -1426,7 +1426,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Real_Analysis/P-FYGQ6.md` | `d4c77928e4daa0f2117027f000f7562d95aae296` | `d4c77928e4daa0f2117027f000f7562d95aae296` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/P-GJIZI.md` | `538c1f8726ef6a2a88681881ae7cbb7b94a113b4` | `538c1f8726ef6a2a88681881ae7cbb7b94a113b4` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/P-H2AG2.md` | `594235469601eebc9b59d2cad69cf4ffee690584` | `594235469601eebc9b59d2cad69cf4ffee690584` | Read; retained |
-| [x] | `corpus/problems/Real_Analysis/P-HCA6D.md` | `58bf4b5e3c48ac0ed50ca0f2a1b72865cc4010e3` | `58bf4b5e3c48ac0ed50ca0f2a1b72865cc4010e3` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/P-HHPDB.md` | `9156c28e978fc5db9096f7a2017c6d8447f56e83` | `9156c28e978fc5db9096f7a2017c6d8447f56e83` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/P-J6HN2.md` | `bb3c4eba1cf793a799d451cd5473ec8fe5c39588` | `bb3c4eba1cf793a799d451cd5473ec8fe5c39588` | Read; retained |
 | [x] | `corpus/problems/Real_Analysis/P-JETLX.md` | `8398320ed39e1f0ad9498b3e4d3c7966c1c3c6c4` | `8398320ed39e1f0ad9498b3e4d3c7966c1c3c6c4` | Read; retained |
