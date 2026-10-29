@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-TIHRR
 kind: definition
 title: Equicontinuous family
+prompts:
+- What does it mean for a family of functions to be equicontinuous?
 classification:
   areas:
   - complex-analysis
