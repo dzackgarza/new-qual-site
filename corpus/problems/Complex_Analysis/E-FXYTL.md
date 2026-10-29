@@ -12,13 +12,42 @@ classification:
   - Zeros
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source reads "Show that if fg = 0 on a domain Omega then either f = 0 or g = 0" and does not say that f and g are holomorphic; the statement adds that hypothesis, without which the claim fails.
 ---
 
 ::: {.exercise}
-Show that if $fg \equiv 0$ on a domain $\Omega$ then either $f\equiv 0$ or $g\equiv 0$.
+Let $f$ and $g$ be holomorphic on a domain $\Omega$.
+Show that if $fg \equiv 0$ on $\Omega$ then either $f\equiv 0$ or $g\equiv 0$.
 :::
 
 ::: {.solution}
-If $f\not\equiv 0$, there is a point $z_0$ where $f(z_0)\neq 0$, and thus a neighborhood $U\ni z_0$ where $f$ is nonvanishing.
-This forces $g\equiv 0$ on $U$, however $U$ is a set with a limit point, so $g\equiv 0$ on $\Omega$ by the identity principle.
+
+::: pf
+
+::: {.pf-step #nonvanishing}
+If $f\not\equiv 0$, then there is a nonempty open set $U\subseteq\Omega$ on which $f$ has no zeros.
+
+::: pf-proof
+Choose $z_0\in\Omega$ with $f(z_0)\neq 0$.
+Since $f$ is continuous, $f$ has no zeros on some open disk $U$ about $z_0$.
+:::
+
+:::
+
+::: pf-step
+If $f\not\equiv 0$, then $g\equiv 0$ on $\Omega$.
+
+::: pf-proof
+On the set $U$ of step [](#nonvanishing){.pf-ref}, $fg=0$ and $f\neq0$, so $g=0$ on $U$.
+The open set $U$ has a limit point in $\Omega$ and $\Omega$ is connected, so the identity theorem gives $g\equiv0$ on $\Omega$.
+:::
+
+:::
+
+:::
+
 :::
