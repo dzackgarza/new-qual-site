@@ -17,15 +17,7 @@ Every algebraic extension of a field of characteristic $0$ or of a finite field 
 
 [[E-6OUJV]]
 
-::: {.example}
-Over $\FF_p(t)$ the polynomial $x^p - t$ is irreducible and $x^p - t = (x - t^{1/p})^p$ over $\FF_p(t^{1/p})$, so $\FF_p(t^{1/p})/\FF_p(t)$ is inseparable.
-:::
-
 ## Permanence and the Galois condition
-
-A finite extension $L/K$ is separable if and only if the number of $K$-embeddings of $L$ into an algebraic closure of $K$ equals $[L:K]$.
-Every algebraic extension of a [[D-KQFIV|perfect field]] is separable.
-If $K\subseteq L\subseteq M$, then $M/K$ is separable if and only if $M/L$ and $L/K$ are separable, and a compositum of separable extensions is separable.
 
 [[PR-3VQBI]]
 
@@ -41,5 +33,4 @@ If $K\subseteq L\subseteq M$, then $M/K$ is separable if and only if $M/L$ and $
 
 [[PR-KFQJG]]
 
-A finite extension is Galois if and only if it is normal and separable, if and only if it is the splitting field of a separable polynomial.
-A splitting field need not be separable in characteristic $p$: $\FF_p(t^{1/p})$ is the splitting field of $x^p-t$ over $\FF_p(t)$, and it is not Galois over $\FF_p(t)$.
+A splitting field need not be Galois in characteristic $p$: [[PR-MK2W6|$\FF_p(t^{1/p})$ over $\FF_p(t)$]] is the splitting field of $x^p-t$ and is inseparable.
