@@ -204,6 +204,10 @@ mathematical correction under its own node, not under copy policy.
     links `assets/attachments/calculus_practice_test3.pdf`, which no collection lists as
     provenance. **Acceptance:** the PDF is ingested as a collection, like the GRE chapter
     reviews, and the page links that collection. **Closed:** ingested as `SRC-CALCULUS-PRACTICE-TEST3`.
+  - **`ad-calcpt3-extraction`**. **Needs:** none. The checked-in MinerU extraction of
+    calculus_practice_test3.pdf drops about half the questions; `just ocr-pdf` hit Mistral
+    HTTP 429. The 20 `P-CALCPT3-*` cards were read from page renders. **Acceptance:** a
+    complete Mistral extraction is checked in and each `P-CALCPT3-*` card is compared with it.
 
 ### Marking a node closed
 
