@@ -18,17 +18,20 @@ Give an example of an Artinian ring.
 :::
 
 ::: {.solution}
-For any integer $n\ge2$, the ring
-\[
-\ZZ/n\ZZ
-\]
-is Artinian.
 
-Indeed, it is finite. Any descending chain of ideals
-\[
-I_1\supseteq I_2\supseteq I_3\supseteq\cdots
-\]
-is therefore a descending chain of subsets of a finite set, so there can be only finitely many strict inclusions. Hence the chain stabilizes.
+::: pf
 
-Thus every finite ring is Artinian, and $\ZZ/n\ZZ$ is a basic example.
+::: pf-step
+For every integer $n\ge2$, the ring $\boxed{\ZZ/n\ZZ}$ is Artinian.
+
+::: pf-proof
+$\ZZ/n\ZZ$ is finite, so a descending chain of ideals $I_1\supseteq I_2\supseteq\cdots$ is a descending chain of subsets of a finite set and has only finitely many strict inclusions.
+Hence every such chain stabilizes.
+The same argument shows that every finite ring is Artinian.
+:::
+
+:::
+
+:::
+
 :::
