@@ -12,56 +12,26 @@ classification:
   - Surfaces
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The problem block held a numbered solution sketch (deformation retract M = I x I/(x,0)~(1-x,1) onto {1/2} x I/~ by ((1-t)x+t/2, y), and compare with S^1 x I) instead of a question. The statement now asks for the homotopy equivalence; the solution carries the same argument."
 ---
 
 ::: {.problem}
-5. **Main Idea**: Deformation retract $M$ onto its center circle; two spaces that deformation retract onto a common space are themselves homotopy equivalent.
-
-Claim: $S^1 \cross I \homotopic S^1 \cross \theset{*}$ This is because $I$ is contractible, so $I \homotopic \theset{*}$.
-(Maybe needs further proof)
-
-Claim: $M \homotopic S^1 \cross \theset{*}$.
-
-If both of these claims hold, then we will have $M \homotopic S^1 \cross I$ as two spaces that deformation retract onto a common space.
-Identifying $M = I \cross I / \sim$ where $(x, 0) \sim (1-x, 1)$, fix $x=1/2$.
-
-Then consider the subspace $U = \theset{(1/2, y) \mid y \in [0,1]} \subset M$.
-Claim: $U \cong \theset{*} \cross S^1$ for some point $*$.
-
-$U$ can be written $\theset{1/2} \cross (I/\sim)$, and since $(1/2, 0) \sim (1/2,1)$, we have $I/ \sim =  I /\bd I \cong S^1$, so $U \cong \theset{1/2}\cross S^1$ as desired (taking $* = \frac{1}{2}$).
-
-However, we can define a homotopy from $M$ onto $U$, in the form of a deformation retract.
-
-Let $F: M \cross I \into M$ be defined by $F((x,y), t) = F_t(x,y) = ((1-t)x + \frac{1}{2}t, y)$.
-Then $F((x,y), 0) = (x,y) = \id_M$, and $F((x,y), 1) = (\frac{1}{2}, y) \subseteq U$.
-Moreover, if $(x,y) \in U$, then $(x,y) = (\frac{1}{2}, y)$ and $F((x,y), t) = ((1-t)\frac{1}{2} + \frac{1}{2}t, y) = (\frac{1}{2} - t\frac{1}{2} + \frac{1}{2}t, y) = (\frac{1}{2}, y) = (x,y)$, so $F = \id_U$.
-This makes $F$ a deformation retract from $M$ onto $U$, and so $M \homotopic U$.
-
-But then, summarizing our results, we have $S^1 \cross I \homotopic S^1 \cross \theset{*} \cong S^1 \cross \theset{\frac{1}{2}} = U \homotopic M$, and so $S^1 \cross I \homotopic M$ as desired.
+Show that the Möbius band $M$ is homotopy equivalent to $S^1 \cross I$.
 :::
 
 ::: {.solution}
 
+Model the Möbius band as $M=[0,1]\times[-1,1]/{\sim}$, where $(0,t)\sim(1,-t)$, and write $C=\{[x,0]\}\cong S^1$ for its center circle.
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #mobius}
 
-Model the Möbius band as
-$$M=[0,1]\times[-1,1]/(0,t)\sim(1,-t).$$
-
-::: pf-proof
-
-This is the standard quotient model.
-
-:::
-
-:::
-
-::: pf-step
-
-The homotopy
-$$H_s([x,t])=[x,(1-s)t]$$
-is a strong deformation retraction of $M$ onto its center circle $C=\{[x,0]\}$.
+The homotopy $H_s([x,t])=[x,(1-s)t]$ is a strong deformation retraction of $M$ onto $C$.
 
 ::: pf-proof
 
@@ -71,9 +41,9 @@ It is compatible with the quotient relation because $(0,t)\sim(1,-t)$ implies $(
 
 :::
 
-::: pf-step
+::: {.pf-step #cylinder}
 
-The cylinder $S^1\times I$ also deformation retracts onto $S^1\times\{0\}$.
+The cylinder $S^1\times I$ strongly deformation retracts onto $S^1\times\{0\}\cong S^1$.
 
 ::: pf-proof
 
@@ -85,12 +55,11 @@ Use $(z,t,s)\mapsto(z,(1-s)t)$.
 
 ::: pf-step
 
-Since both spaces deformation retract onto a circle,
-$$\boxed{M\simeq S^1\times I.}$$
+$\boxed{M\simeq S^1\times I}$.
 
 ::: pf-proof
 
-Each is homotopy equivalent to $S^1$.
+By steps [](#mobius){.pf-ref} and [](#cylinder){.pf-ref}, both spaces are homotopy equivalent to $S^1$.
 
 :::
 
