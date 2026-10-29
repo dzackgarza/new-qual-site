@@ -20,6 +20,29 @@ Show that if $f$ is entire and $f(1/z)$ has a pole at $z=0$, then $f$ is a polyn
 :::
 
 ::: {.solution}
-Write $f(z) = \sum_{k\geq 0}c_k z^k$, so $g(z) \definedas f(1/z) = \sum_{k\geq 0} c_k z^{-k}$.
-Since $z=0$ is a pole of $g$, $c_k = 0$ for all $k\geq m$ for $m$ the order of the pole, so $f(z) = \sum_{0\leq k\leq m}c_k z^k$ is a polynomial of degree at most $m$.
+Write $f(z) = \sum_{k\geq 0}c_k z^k$, which converges on all of $\CC$, and let $m$ be the order of the pole of $g(z) \definedas f(1/z)$ at $0$.
+
+::: pf
+
+::: {.pf-step #laurent}
+The Laurent series of $g$ on $\CC\setminus\theset{0}$ is $\sum_{k\geq 0} c_k z^{-k}$.
+
+::: pf-proof
+Substitute $1/z$ into the power series of $f$; the series converges for every $z\neq0$, and a Laurent series on an annulus is unique.
+:::
+
+:::
+
+::: pf-step
+$f(z) = \sum_{k=0}^{m}c_k z^k$ is a polynomial of degree at most $m$.
+
+::: pf-proof
+A pole of order $m$ at $0$ means the Laurent coefficients of $z^{-k}$ vanish for $k>m$.
+By step [](#laurent){.pf-ref} these coefficients are $c_k$, so $c_k=0$ for $k>m$.
+:::
+
+:::
+
+:::
+
 :::
