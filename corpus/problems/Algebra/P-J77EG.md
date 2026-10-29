@@ -27,35 +27,49 @@ Find its Jordan canonical form (over a splitting field, if necessary).
 :::
 
 ::: {.solution}
-Let
-\[
-\mathbf 1=(1,\ldots,1)^t.
-\]
-Then
-\[
-M\mathbf 1=n\mathbf 1,
-\]
-so $n$ is an eigenvalue.
+Write $\mathbf 1=(1,\ldots,1)^t\in F^n$ and $H=\{v\in F^n:v_1+\cdots+v_n=0\}$.
 
-For every vector $v=(v_1,\ldots,v_n)^t$ with
-\[
-v_1+\cdots+v_n=0,
-\]
-each coordinate of $Mv$ is this same sum, so $Mv=0$. Hence the hyperplane
-\[
-H=\left\{v\in F^n:\sum_i v_i=0\right\}
-\]
-is contained in the $0$-eigenspace and has dimension $n-1$.
+::: pf
 
-Because $n\neq0$ in $F$, the vector $\mathbf1$ does not lie in $H$. Therefore
-\[
-F^n=H\oplus F\mathbf1
-\]
-is a direct sum of eigenspaces. Thus $M$ is diagonalizable, with eigenvalue $0$ of multiplicity $n-1$ and eigenvalue $n$ of multiplicity $1$.
+::: {.pf-step #eigenvectors}
 
-Consequently
-\[
-J(M)=\operatorname{diag}(\underbrace{0,\ldots,0}_{n-1},n).
-\]
-Equivalently, since $M^2=nM$, its minimal polynomial is $x(x-n)$.
+$M\mathbf 1=n\mathbf 1$, and $Mv=0$ for every $v\in H$.
+
+::: pf-proof
+
+Each coordinate of $Mv$ is $v_1+\cdots+v_n$. For $v=\mathbf 1$ this is $n$, and for $v\in H$ it is $0$.
+
+:::
+
+:::
+
+::: {.pf-step #decomposition}
+
+$F^n=H\oplus F\mathbf 1$.
+
+::: pf-proof
+
+$H$ has dimension $n-1$, and $\mathbf 1\notin H$ because the coordinate sum of $\mathbf 1$ is $n\ne0$ in $F$.
+
+:::
+
+:::
+
+::: pf-step
+
+$M$ is diagonalizable over $F$, with Jordan form
+$$
+\boxed{\diag(\underbrace{0,\ldots,0}_{n-1},n)}.
+$$
+
+::: pf-proof
+
+By steps [](#eigenvectors){.pf-ref} and [](#decomposition){.pf-ref}, $F^n$ is the direct sum of the $0$-eigenspace $H$ of dimension $n-1$ and the $n$-eigenspace $F\mathbf 1$. No extension of $F$ is needed.
+
+:::
+
+:::
+
+:::
+
 :::
