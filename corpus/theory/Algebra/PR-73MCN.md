@@ -41,3 +41,7 @@ f\mid \rho_n
 $$
 Finally, $\rho_n'(x)=-1$, so $\rho_n$ is squarefree; therefore each of these irreducible factors occurs exactly once, giving the displayed product.
 :::
+
+::: {.remark title="Divisibility without the product formula"}
+The equivalence $f\mid\rho_n\iff\deg f\mid n$ also follows from polynomial divisibility. If $d=\deg f$ and $\alpha$ is a root of $f$, then $\alpha^{p^d}=\alpha$, so $f\mid x^{p^d}-x$. If $d\mid n$, then $x^d-1\mid x^n-1$ ([[E-LUR7G]]); evaluating at $x=p$ gives $p^d-1\mid p^n-1$, so $x^{p^d-1}-1\mid x^{p^n-1}-1$ and $x^{p^d}-x\mid x^{p^n}-x$. Conversely, if $f\mid\rho_n$, then $\FF_p(\alpha)\subseteq\FF_{p^n}$ and the tower law gives $n=[\FF_{p^n}:\FF_p(\alpha)]\cdot d$.
+:::
