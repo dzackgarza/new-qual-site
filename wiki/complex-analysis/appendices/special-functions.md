@@ -1,5 +1,6 @@
 ---
 order: 121
+title: Special functions
 ---
 
 # Special functions
