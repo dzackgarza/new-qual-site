@@ -49,7 +49,7 @@ $\abs{\Aut(\CC)}\ge2^{\mathfrak c}$.
 
 ::: pf-proof
 
-Let $B$ be a transcendence basis of $\CC/\QQ$. If $B$ were countable, then $\QQ(B)$ and its algebraic closure $\CC$ would be countable; in general $\abs{\CC}=\max(\abs{B},\aleph_0)$, so $\abs{B}=\mathfrak c$. Every permutation of $B$ induces an automorphism of $\QQ(B)$, which extends to $\CC$ by step [](#extend){.pf-ref}. Distinct permutations give distinct automorphisms, and a set of cardinality $\mathfrak c$ has $2^{\mathfrak c}$ permutations.
+Let $B$ be a transcendence basis of $\CC/\QQ$. Since $\CC$ is algebraic over $\QQ(B)$, $\abs{\CC}=\max(\abs{B},\aleph_0)$, so $\abs{B}=\mathfrak c$. Every permutation of $B$ induces an automorphism of $\QQ(B)$, which extends to $\CC$ by step [](#extend){.pf-ref}. Distinct permutations give distinct automorphisms, and a set of cardinality $\mathfrak c$ has $2^{\mathfrak c}$ permutations.
 
 :::
 
