@@ -26,15 +26,28 @@ Show that if the minimal polynomial of a linear operator $T: V \to V$ on a finit
 :::
 
 ::: {.solution}
-Let $m_T(x)=p(x)$ be irreducible. Regard $V$ as an $F[x]$-module by letting $x$ act as $T$. Since $p(T)=0$, the action factors through
-$$
-K\coloneqqF[x]/(p),
-$$
-which is a field. Hence $V$ is naturally a vector space over $K$.
+Let $m_T=p$ be irreducible, and regard $V$ as an $F[x]$-module with $x$ acting as $T$.
 
-A subspace $W\subseteq V$ is $T$-invariant exactly when it is an $F[x]$-submodule. Because the $F[x]$-action factors through $K$, such a $W$ is a $K$-subspace. Choose a $K$-linear complement $W'$ so that
-$$
-V=W\oplus W'.
-$$
-Since $W'$ is a $K$-subspace, it is stable under the class of $x$, hence under $T$. Thus every $T$-invariant subspace has a $T$-invariant complement.
+::: pf
+
+::: {.pf-step #field-action}
+$V$ is a vector space over the field $K\coloneqq F[x]/(p)$, and its $K$-subspaces are exactly its $T$-invariant $F$-subspaces.
+
+::: pf-proof
+Since $p(T)=0$, the $F[x]$-action factors through $F[x]/(p)$, which is a field because $p$ is irreducible. A subspace is $T$-invariant exactly when it is an $F[x]$-submodule, and the $F[x]$-submodules are exactly the $K$-submodules because the action factors through $K$.
+:::
+
+:::
+
+::: pf-step
+Every $T$-invariant subspace $W$ has a $T$-invariant complement.
+
+::: pf-proof
+By step [](#field-action){.pf-ref}, $W$ is a $K$-subspace, so it has a $K$-linear complement $W'$ with $V=W\oplus W'$. By step [](#field-action){.pf-ref} again, $W'$ is $T$-invariant.
+:::
+
+:::
+
+:::
+
 :::
