@@ -40,7 +40,7 @@ for the standard matching.
 ::: pf
 
 ::: {.pf-step}
-The subgroup
+(a) The subgroup
 $$
 \boxed{H=\operatorname{Stab}_{S_{2n}}(m_0)\cong (S_2)^n\rtimes S_n=S_2\wr S_n}
 $$
@@ -59,7 +59,7 @@ is an $S_{2n}$-equivariant bijection, and the permutation module of $S_{2n}/H$ i
 :::
 
 ::: {.pf-step}
-The assertion of part (b) is false: for $n=1$ and $k=\CC$ there is no surjective $S_2$-equivariant map $\CC[M_1]\to S^{(1,1)}$.
+(b) $\boxed{\text{False}}$: for $n=1$ and $k=\CC$ there is no surjective $S_2$-equivariant map $\CC[M_1]\to S^{(1,1)}$.
 
 ::: pf-proof
 There is exactly one perfect matching of $\{1,2\}$, so $\CC[M_1]$ is the trivial one-dimensional representation of $S_2$.
