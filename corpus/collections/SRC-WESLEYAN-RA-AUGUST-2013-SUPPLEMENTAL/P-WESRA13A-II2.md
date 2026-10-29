@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESRA13A-II2
 kind: problem
-title: 'A positive-measure set of points lying in many measurable sets — as extracted'
+title: 'Sets of measure greater than $1/2$: a positive-measure set of points lying in more than half of them'
 classification:
   areas: [real-analysis]
   topics: []

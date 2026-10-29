@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESRA13A-II5
 kind: problem
-title: 'Monotonicity versus positivity of the derivative — partially extractor-defective'
+title: "Strictly increasing functions versus functions with $F'>0$ almost everywhere"
 classification:
   areas: [real-analysis]
   topics: []
