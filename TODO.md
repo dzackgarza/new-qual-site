@@ -181,6 +181,46 @@ mathematical correction under its own node, not under copy policy.
     (`CARD-04`): E-AMD-4SSSVQJY and P-AMD-62OZUWBP into P-Q67AG; E-AMD-564ETBH5, P-MV6ZQ and
     P-AMD-ZIGVO4GJ into E-JAPBK; E-AMD-E3N4BHJH and P-AMD-2NXEX5LK into E-AMD-V3WFKTM6.
 
+  Round 3 (revision `5ba163ac9`, algebra and applied algebra) injected the nodes below;
+  `audited-deployment` needs both.
+  - **`ad3-renderer`**. **Needs:** none. Citation labels such as `[DuFo04]` and `[Hung74]` on
+    wiki and tag pages (D-IPR4B, D-FK47C, PR-E4T3S) render with no bibliography entry or link,
+    and the `data-cites` key differs from the label; the `<title>` of P-ALGQUAL18W-I1 carries
+    expanded TeX for nested `\sqrt`; the syllabus locator `[@Smi96, sec. 844-1]` renders as a
+    section range; `tikzcd` diagrams are still missing on groups pages (D-KRKV7, FF-TSZNT,
+    T-NFQBO; open under `ad-tikzcd`). **Acceptance:** each corrected on the deployed pages.
+  - **`ad3-algebra-content`**. **Needs:** none. Wrong mathematics: P-APAS18H invariant-ring
+    generators omit $xy(x^2-y^2)$; P-APA22F(a) value; PR-OODAV slogan (an abstract
+    $B\cong A\oplus C$ does not split); P-RPSTO(b) fixed-field tower indexed backwards;
+    P-WBK5B $k=2$ equation; PR-GV5CF proof covers finite families only; classify-this-module
+    $\langle 2,x\rangle$ example does not separate flat from torsion-free.
+    CARD-04: T-SZRXI/E-NNTQB/E-DKMHL; E-47X7Y/E-VPWK4; PR-PYYRK/E-BSGSM; T-SVJUN/E-R6I7G;
+    FT-ZENUU/T-WRMBM/T-EF2MZ/T-S5T5C; PR-IGLFV/E-6AOD7(b)/FF-C3SN4; PR-73MCN/E-PHSV5;
+    T-AILFB/PR-LXSGE; D-ZJJ7G/FD-BPUNZ; E-XH2QU/E-HOJKE/PR-DDDXH/PR-GEHJF; T-6ABNR/FT-BC6S2;
+    PR-4GQIZ/PR-GBL6P/PR-OF7ZW; D-HGMOW/D-GIGM2; P-HGRO2/P-HGRO4; P-HGRO7/P-HGRO8/P-HGRO31.
+    Page restatements (`THEOREM-01`, `DEF-1`): sylow, the-class-equation, is-this-group-abelian,
+    orbit-stabilizer, series-and-solvability, groups-of-small-order, fields/extensions,
+    splitting-and-normal, separability, the-correspondence, worked-examples,
+    compute-this-galois-group, ideals-and-quotients, domains-and-factorization (valuation ring
+    and DVR, D-DEFREGLR), commutative-algebra, number-theory, which-kind-of-ring,
+    free-and-projective, classify-this-module, exact-sequences, characters, the-spectral-theorem,
+    minimal-and-characteristic-polynomials, determinants-and-eigenvalues, matrix-counterexamples.
+    Notation (`NOT-3`): series indexing and the D-BGNME lower central series; `\maxspec` against
+    `\mspec` (E-AMD-V3WFKTM6, E-AMD-DCVAD27P, P-W8CJF, E-AMD-EBIC3Z5S); over-a-pid $M_{(p)}$;
+    the sylow exponent letter. Titles: E-BAOST (`CARD-01`), P-APAS18D "octogon", P-HGRO* group
+    names (`CARD-06`). Screenshots: compute-this-galois-group $S_4$ tables, review-sheet-1
+    homework 1 image, minimal-and-characteristic-polynomials long division. Topics
+    (`TAXON-01`): the-correspondence, worked-examples. `STYLE-08`: P-ZIMYA, E-XH2QU, E-HOJKE,
+    E-VFEWT, E-G4KAC, E-M6J67, P-AMD-QBEEJKCX, E-LJ7PF, P-4XOCE (attribution, $C_x$ notation,
+    bullet solution), P-VI6QM literal lists, P-APAS18A–H, P-APA22A–H, P-APAF20A/D/H, the
+    P-ALGQUAL18W cards. Scope: E-G4KAC noncommutative on a commutative page; which-kind-of-ring
+    Gorenstein section; determinants-and-eigenvalues matrix groups over $F$ linked to
+    $\RR$/$\CC$ cards. Sources: SRC-AMHERST-ALGEBRA-STUDY-GUIDE-2016 exam dates in statements
+    (`CARD-02`); SRC-HARVARD-GROUPS-ORAL invented sections and institution (and the COMM-ALG
+    and FIELDS orals); rings-and-ideals/solutions Gallian headings and MIT pointer; groups
+    resources "Chapter N solutions" (`RES-01`). **Acceptance:** each read and repaired, or kept
+    with the reason.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
