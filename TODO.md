@@ -253,6 +253,16 @@ mathematical correction under its own node, not under copy policy.
     extensions of finite fields being Galois, and algebraic closure; a citation on the D-2IO6Q
     noncommutative remark; the E-NNTQB restatement on orbit-stabilizer. `audited-deployment`
     needs it. **Acceptance:** each read and repaired, or kept with the reason.
+  Round 3 (revision `5ba163ac9`, analysis provenance) injected the node below;
+  `audited-deployment` needs it.
+  - **`ad3-analysis-provenance`**. **Needs:** none. Round-3 analysis findings C1-C4: 16 UCLA
+    real-analysis collections list the solution writeup `UCLA_Solutions.pdf` as provenance;
+    SRC-UGA-CA-COMPILATION lists maintainer PDFs, wrong section labels and a repeated entry;
+    eight UGA complex-analysis collections link dead department PDFs; one PDF is split across
+    several collections (Lyall MATH4100-6100 A1-A9, the Wesleyan real- and complex-analysis
+    PDFs, Cracking the GRE). **Acceptance:** no collection lists a solution writeup or a
+    maintainer PDF; each UGA href resolves to a vendored paper; each PDF is one collection
+    whose papers are sections, with every problem link kept. One collection at a time.
   Round 3 (revision `5ba163ac9`, topology and algebraic geometry) injected the node below;
   `audited-deployment` needs it.
   - **`ad3-topology-content`**. **Needs:** none. Wrong mathematics: P-TOPS05A (a free
@@ -360,6 +370,25 @@ mathematical correction under its own node, not under copy policy.
     areas for prelim practice drills (COMPLAINTS.md "2020 prelim practice weeks 3 and 4").
     **Acceptance:** each card and both collections read and given the area of the exam track
     they belong to. **Closed.** All 54 cards and both collections are `prelim`.
+
+  Round 3 (revision `5ba163ac9`, real and complex analysis) injected the node below;
+  `audited-deployment` needs it.
+  - **`ad3-complex-analysis-content`**. **Needs:** none. Wrong mathematics: analytic-nt
+    Dirichlet-test proof with the sequences swapped; P-W23PS ($O(R^{1-n})$, two integrals named
+    $I$, lost $i$, two solutions); E-NZY3B image; P-CZ3R7 algebra and circle; P-37Z7J identity;
+    E-3B2YA intermediate value; P-ER23C Rouché count; maximum-modulus-and-open-mapping $f(U)$;
+    E-XQX6X, E-XKMVX Schwarz lemma on the closed disc; T-6F3GO codomain and D-TIHRR
+    equicontinuity; P-CASP17A title bounds; complex-week-2-cauchy $\int_{\partial T}$.
+    `QUAL-10` wiki proofs: computing-residues, arc-estimates, the-argument-principle,
+    rouches-theorem, the-integral-formula, max-modulus, cauchys-theorem, cauchy-estimates,
+    maximum-modulus-and-open-mapping, analytic-nt. Process text (`QUAL-08`): P-CASP17A,
+    P-CASP15E, P-CASP17D, P-W23PS, P-TIE-S14-03, HARVARD-MATH213A-2017 "(repeats Exercise 3)",
+    E-UVNVV and E-QVMUV step prose, Wesleyan complex extractor titles, tips-techs [Eur15].
+    Titles (`CARD-01`, `CARD-06`) on the complex UCSD and UGA cards. `CARD-04`: the complex
+    groups of the round-3 analysis report, section F. Restatements (`DEF-1`, `RENDER-02`):
+    report H1-H8 and H12-H16. `STYLE-04`/`STYLE-08` on the complex cards of report section I.
+    Guides: complex guide `parent:` chains (`NAV-01`) and the "grouped by type" ledes.
+    **Acceptance:** each read and repaired, or kept with the reason.
 
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
