@@ -44,9 +44,9 @@ Separability means that every element of $L$ is separable over $K$. Normality me
 ::: pf-step
 
 If $L/K$ is finite, then $L/K$ is Galois if and only if
-\[
-|\operatorname{Aut}_K(L)|=[L:K].
-\]
+$$
+\abs{\Aut_K(L)}=[L:K].
+$$
 
 ::: pf-proof
 
