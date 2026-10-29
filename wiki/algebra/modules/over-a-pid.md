@@ -26,8 +26,6 @@ Over $\ZZ$, the module $\ZZ$ is indecomposable and not simple, and $\ZZ/4$ is cy
 
 [[D-4KM4P]]
 
-[[FD-BVM37]]
-
 [[D-4HEUB]]
 
 [[FD-GNRTS]]
