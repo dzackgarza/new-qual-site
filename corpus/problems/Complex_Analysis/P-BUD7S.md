@@ -5,7 +5,7 @@ kind: problem
 title: Distance between disjoint compact sets in $\RR^n$ is attained
 classification:
   areas:
-  - complex-analysis
+  - topology
   topics:
   - Compactness
   - Metric Spaces
