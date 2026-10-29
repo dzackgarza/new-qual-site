@@ -32,75 +32,61 @@ Show that if $X$ is second-countable and Hausdorff (or a metric space), then the
 
 ::: {.solution}
 
+A metric space is first-countable and Hausdorff; a second-countable space is first-countable. The arguments for (1)$\Rightarrow$(2) and (2)$\Rightarrow$(3) use only that $X$ is first-countable and Hausdorff.
+
 ::: pf
 
 ::: pf-step
-$(1)\Rightarrow(2)$. Suppose $X$ is compact and $A\subseteq X$ is infinite. If $A$ had no limit point, then for every $x\in X$ there would be an open neighborhood $U_x$ with
-\[
-U_x\cap A\subseteq\{x\}.
-\]
-A finite subcover $U_{x_1},\dots,U_{x_m}$ would then imply
-\[
-A\subseteq\{x_1,\dots,x_m\},
-\]
-a contradiction.
+
+(1)$\Rightarrow$(2).
+
+::: pf-proof
+
+Suppose $X$ is compact and $A\subseteq X$ is infinite with no limit point. Then every $x\in X$ has an open neighborhood $U_x$ with $U_x\cap A\subseteq\{x\}$. A finite subcover $U_{x_1},\ldots,U_{x_m}$ gives $A\subseteq\{x_1,\ldots,x_m\}$, contradicting that $A$ is infinite.
+
+:::
 
 :::
 
 ::: pf-step
-$(2)\Rightarrow(3)$. Assume $X$ is second-countable Hausdorff; the metric case is identical because metric spaces are first-countable and Hausdorff.
+
+(2)$\Rightarrow$(3).
 
 ::: pf-proof
 
 ::: pf-step
-Let $(x_n)$ be a sequence. If its range is finite, some value occurs infinitely often and gives a constant convergent subsequence.
 
-:::
-
-::: pf-step
-Otherwise its range $S$ is infinite, so it has a limit point $x$.
-
-:::
-
-::: pf-step
-Second countability implies first countability, so choose a decreasing countable neighborhood basis
-\[
-B_1\supseteq B_2\supseteq\cdots
-\]
-at $x$.
-
-:::
-
-::: pf-step
-Since Hausdorff spaces are $T_1$, every neighborhood of a limit point of the infinite set $S$ contains infinitely many points of $S$: if one contained only finitely many points of $S\setminus\{x\}$, deleting those finitely many closed points would produce a neighborhood of $x$ meeting $S$ in at most $\{x\}$.
-
-:::
-
-::: pf-step
-Hence one can choose $n_1<n_2<\cdots$ with $x_{n_k}\in B_k$. Then $x_{n_k}\to x$.
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-$(3)\Rightarrow(1)$. Assume first that $X$ is second-countable.
+Let $(x_n)$ be a sequence. If its range is finite, it has a convergent subsequence.
 
 ::: pf-proof
 
-::: pf-step
-Every open cover has a countable subcover: if $\mathcal B$ is a countable basis, for each basis element $B\in\mathcal B$ lying in some member of the cover choose one such member; these chosen sets cover $X$.
+Some value occurs infinitely often and gives a constant subsequence.
+
+:::
+
+:::
+
+::: {.pf-step #limit}
+
+If the range $S$ is infinite, it has a limit point $x$, and every neighborhood of $x$ contains infinitely many points of $S$.
+
+::: pf-proof
+
+The limit point exists by (2). If a neighborhood $U$ of $x$ contained only finitely many points of $S\setminus\{x\}$, then removing them, which is possible because points are closed in a Hausdorff space, would give a neighborhood of $x$ meeting $S$ in at most $\{x\}$.
+
+:::
 
 :::
 
 ::: pf-step
-Let $U_1,U_2,\dots$ be a countable open cover with no finite subcover. Choose
-\[
-x_N\in X\setminus\bigcup_{n=1}^N U_n.
-\]
-Sequential compactness gives a subsequence $x_{N_k}\to x$. Choose $m$ with $x\in U_m$. Eventually $x_{N_k}\in U_m$, while for large $k$ one has $N_k\ge m$ and hence $x_{N_k}\notin U_m$, a contradiction.
+
+If the range is infinite, $(x_n)$ has a subsequence converging to $x$.
+
+::: pf-proof
+
+Choose a decreasing countable neighborhood basis $B_1\supseteq B_2\supseteq\cdots$ at $x$. By step [](#limit){.pf-ref}, each $B_k$ contains $x_n$ for infinitely many $n$, so we may choose $n_1<n_2<\cdots$ with $x_{n_k}\in B_k$. Then $x_{n_k}\to x$.
+
+:::
 
 :::
 
@@ -109,12 +95,48 @@ Sequential compactness gives a subsequence $x_{N_k}\to x$. Choose $m$ with $x\in
 :::
 
 ::: pf-step
-For a metric space, $(3)\Rightarrow(1)$ follows by the standard metric argument: sequential compactness implies total boundedness and completeness, and every complete totally bounded metric space is compact. Equivalently, one may use the Lebesgue-number proof for an arbitrary open cover.
+
+(3)$\Rightarrow$(1) when $X$ is second-countable.
+
+::: pf-proof
+
+::: {.pf-step #countable}
+
+Every open cover of $X$ has a countable subcover.
+
+::: pf-proof
+
+Let $\mathcal B$ be a countable basis. For each $B\in\mathcal B$ contained in some member of the cover, choose one such member. These countably many chosen sets cover $X$, since each point lies in a basis element inside some member of the cover.
+
+:::
 
 :::
 
 ::: pf-step
-Therefore compactness, limit-point compactness, and sequential compactness are equivalent in every second-countable Hausdorff space and in every metric space.
+
+Every countable open cover $U_1,U_2,\ldots$ of $X$ has a finite subcover.
+
+::: pf-proof
+
+Suppose not, and choose $x_N\in X\setminus(U_1\cup\cdots\cup U_N)$ for each $N$. By (3), a subsequence $x_{N_k}$ converges to some $x$. Choose $m$ with $x\in U_m$. Then $x_{N_k}\in U_m$ for all large $k$, while $N_k\ge m$ for all large $k$ forces $x_{N_k}\notin U_m$, a contradiction.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+(3)$\Rightarrow$(1) when $X$ is a metric space.
+
+::: pf-proof
+
+A sequentially compact metric space is complete and totally bounded, and a complete totally bounded metric space is compact.
+
+:::
 
 :::
 
