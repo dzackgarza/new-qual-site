@@ -6,6 +6,7 @@ title: Dense subspace
 prompts:
 - In terms of closure, when is $A \subset X$ dense in $X$?
 - When is a subset $A \subseteq X$ dense in $X$?
+- What is a dense subset?
 classification:
   areas:
   - topology
@@ -23,7 +24,7 @@ A subset $Q\subseteq X$ is \dfn{dense} in $X$ if every [[D-JMRPA|neighborhood]] 
 :::
 
 ::: {.proposition}
-A subset $Q\subseteq X$ is dense in $X$ if and only if its [[D-ASXW6|closure]] is $\cl_X(Q) = X$.
+A subset $Q\subseteq X$ is dense in $X$ if and only if its [[D-ASXW6|closure]] is $\cl_X(Q) = X$, if and only if every nonempty open subset of $X$ meets $Q$.
 :::
 
 ::: {.concept}
