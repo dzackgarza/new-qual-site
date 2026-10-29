@@ -10,7 +10,7 @@ topics:
 
 ## Normal and composition series
 
-A [[D-FYX4I|composition series]] of $G$ is a chain $1=G_0\normal G_1\normal\cdots\normal G_n=G$ whose factors $G_{i+1}/G_i$ are [[FD-2UWAQ|simple groups]]. By the Jordan--Hölder theorem, any two composition series of a finite group have the same length and the same composition factors, counted with multiplicity and up to isomorphism.
+A [[D-FYX4I|composition series]] of $G$ is a chain $G=G_0\trianglerighteq G_1\trianglerighteq\cdots\trianglerighteq G_n=1$ whose factors $G_i/G_{i+1}$ are [[FD-2UWAQ|simple groups]]. By the Jordan--Hölder theorem, any two composition series of a finite group have the same length and the same composition factors, counted with multiplicity and up to isomorphism.
 
 [[D-KM2DV]]
 

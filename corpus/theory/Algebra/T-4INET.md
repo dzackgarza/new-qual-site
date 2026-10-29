@@ -15,6 +15,6 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $G$ be a group with identity $e$ and [[D-BGNME|lower central series]] $G^0\geq G^1\geq\cdots$.
-Then $G$ is [[D-53JVH|nilpotent]] if and only if $G^n=\theset{e}$ for some $n\geq0$.
+Let $G$ be a group with identity $e$ and [[D-BGNME|lower central series]] $\gamma_1(G)\geq\gamma_2(G)\geq\cdots$.
+Then $G$ is [[D-53JVH|nilpotent]] if and only if $\gamma_n(G)=\theset{e}$ for some $n\geq1$.
 :::

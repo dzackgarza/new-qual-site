@@ -19,9 +19,9 @@ review: draft
 Let $G$ be a group with identity $e$.
 A \dfn{composition series} of $G$ is a finite [[D-KM2DV|normal series]]
 $$
-G = G^0 \geq G^1 \geq \cdots \geq G^n = \theset{e}, \qquad G^{i+1}\normal G^i,
+G = G_0 \geq G_1 \geq \cdots \geq G_n = \theset{e}, \qquad G_{i+1}\normal G_i,
 $$
-such that for each $0\leq i<n$, $G^{i+1}$ is a maximal proper normal subgroup of $G^i$.
-Equivalently, each quotient $G^i/G^{i+1}$ is [[FD-2UWAQ|simple]], since by the correspondence theorem the normal subgroups of $G^i/G^{i+1}$ are the images of the normal subgroups of $G^i$ containing $G^{i+1}$.
-The quotients $G^i/G^{i+1}$ are the \dfn{composition factors} of the series.
+such that for each $0\leq i<n$, $G_{i+1}$ is a maximal proper normal subgroup of $G_i$.
+Equivalently, each quotient $G_i/G_{i+1}$ is [[FD-2UWAQ|simple]], since by the correspondence theorem the normal subgroups of $G_i/G_{i+1}$ are the images of the normal subgroups of $G_i$ containing $G_{i+1}$.
+The quotients $G_i/G_{i+1}$ are the \dfn{composition factors} of the series.
 :::
