@@ -22,6 +22,10 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: The source labels the integrals (i)-(v), (v), (vi); the statement now numbers them (i)-(vii), so the source's second (v) is (vi) and its (vi) is (vii).
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source allows every real a in (ii), but the integral diverges at a = 0. Integral (ii) now assumes a is nonzero.
 ---
 
 ::: {.problem}
@@ -29,7 +33,7 @@ Compute the following integrals.
 
 (i) $\displaystyle\int_0^\infty \frac{1}{(1+x^n)^2}\,dx$, $n \ge 1$
 
-(ii) $\displaystyle\int_0^\infty \frac{\cos x}{(x^2+a^2)^2}\,dx$, $a \in \mathbb{R}$
+(ii) $\displaystyle\int_0^\infty \frac{\cos x}{(x^2+a^2)^2}\,dx$, $a \in \mathbb{R}$, $a \neq 0$
 
 (iii) $\displaystyle\int_0^\pi \frac{1}{a + \sin\theta}\,d\theta$, $a > 1$
 
@@ -40,11 +44,6 @@ Compute the following integrals.
 (vi) $\displaystyle\int_{-\infty}^\infty \frac{\sin \pi a}{\cosh \pi x + \cos \pi a}\,e^{-ix\xi}\,dx$, $0 < a < 1$, $\xi \in \mathbb{R}$
 
 (vii) $\displaystyle\int_{\abs{z}=1} \cot^2 z\,dz$.
-:::
-
-::: {.remark}
-Erratum: integral (ii) diverges for $a = 0$, where the integrand is $\cos x / x^4$, which is not integrable at $0$.
-The hypothesis should be $a \in \mathbb{R}$, $a \ne 0$.
 :::
 
 ::: {.solution}
@@ -250,7 +249,7 @@ $$
 
 ::: pf-proof
 
-The integrand depends on $a$ only through $a^2$. Thus replacing $a$ by $\abs{a}>0$ in step [](#s1-3){.pf-ref} gives the formula for every nonzero real $a$. The case $a=0$ diverges, as recorded in the erratum.
+The integrand depends on $a$ only through $a^2$. Thus replacing $a$ by $\abs{a}>0$ in step [](#s1-3){.pf-ref} gives the formula for every nonzero real $a$.
 
 :::
 
