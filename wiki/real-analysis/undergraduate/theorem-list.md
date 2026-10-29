@@ -37,8 +37,6 @@ title: Theorems
 
 [[L-JBMRH]]
 
-Proofs of the Heine--Cantor theorem, the equivalence of compactness and sequential compactness, the non-compactness of the unit ball of $C([0,1])$, and the properties of the Cantor set are on [[real-analysis/undergraduate/continuity|Continuity]] and [[real-analysis/undergraduate/sets-and-compactness|Sets and compactness]].
-
 ## Functions
 
 [[PR-HRAOC]]

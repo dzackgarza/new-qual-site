@@ -61,18 +61,6 @@ order: 5
 
 [[T-ERNLN]]
 
-::: {.proof}
-Let $\varepsilon>0$ and $x$ in the domain.
-Choose $N$ with $\sup_y\abs{F_N(y)-F(y)}<\varepsilon/3$, and $\delta>0$ with $\abs{F_N(x)-F_N(y)}<\varepsilon/3$ for $\abs{x-y}<\delta$, by continuity of $F_N$.
-Then for $\abs{x-y}<\delta$,
-$$
-\abs{F(x) - F(y)} \leq
-\abs{F(x) - F_N(x)} + \abs{F_N(x) - F_N(y)} + \abs{F_N(y) - F(y)}
-< \varepsilon.
-$$
-
-:::
-
 [[PR-L7LNZ]]
 
 [[PR-6WMSR]]
