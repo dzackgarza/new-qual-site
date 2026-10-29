@@ -19,13 +19,21 @@ Give an example of a non-equicontinuous family.
 :::
 
 ::: {.solution}
-Take $f_k(x)=x^k$ on $[0,1]$ and test equicontinuity at the endpoint $1$.
-Set $\varepsilon=1/2$.
-Given any $\delta>0$, choose $x\in[0,1)$ with $|1-x|<\delta$.
-Since $x<1$, choose $k$ large enough that $x^k<1/2$.
-Then
-\[
-|f_k(1)-f_k(x)|=1-x^k>{1\over2}=\varepsilon.
-\]
-Thus no single $\delta$ works for the whole family at $1$, so $\{f_k\}$ is not equicontinuous.
+Let $f_k(x)\coloneqq x^k$ on $[0,1]$ for $k\ge1$.
+
+::: pf
+
+::: pf-step
+The family $\theset{f_k}$ is not equicontinuous at $1$.
+
+::: pf-proof
+Set $\varepsilon=1/2$ and let $\delta>0$.
+Choose $x\in[0,1)$ with $1-x<\delta$, and, since $x<1$, choose $k$ with $x^k<1/2$.
+Then $\abs{f_k(1)-f_k(x)}=1-x^k>1/2=\varepsilon$, so no $\delta$ serves every $f_k$ at the point $1$.
+:::
+
+:::
+
+:::
+
 :::
