@@ -15,7 +15,7 @@ review: draft
 
 ::: {.definition}
 Let $G$ be an abelian group and $n\geq 1$.
-A \dfn{Moore space} $M(G, n)$ is a [[D-ZOU5G|CW complex]] $X$ with
+A \dfn{Moore space} $M(G, n)$ [@Hat02] is a [[D-ZOU5G|CW complex]] $X$ with
 $$
 \tilde H_i(X;\ZZ)\cong
 \begin{cases}
@@ -36,8 +36,4 @@ The resulting CW complex $X$ has cellular chain complex $0\to F_1\mapsvia{\varph
 ::: {.example}
 The sphere $S^n$ is an $M(\ZZ, n)$.
 For $m\geq 2$, the space $S^n\cup_m e^{n+1}$ obtained by attaching an $(n+1)$-cell to $S^n$ along a map $S^n\to S^n$ of degree $m$ is an $M(\ZZ/m, n)$.
-:::
-
-::: {.concept}
-See [@Hat02].
 :::
