@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Neil_Spring_2018_Solutions.pdf",
+  "source_pdf_sha256": "0247c09295120c5594a5d27648f5381fdb744bf3e6f1dbe7a7b74dfd79a29ae9",
+  "extracted_markdown": "assets/attachments/Neil_Spring_2018_Solutions_extracted.md",
+  "extracted_markdown_sha256": "36de6fe07533ccb80a604c7ae965989246bf9fbeb3fd4204f19f66598041e132",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Neil_Spring_2018_Solutions.pdf --language en --pages 1-2",
+  "generated_at": "2026-10-30",
+  "result": "exit 0"
+}

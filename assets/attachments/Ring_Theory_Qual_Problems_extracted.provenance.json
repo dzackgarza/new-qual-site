@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Ring_Theory_Qual_Problems.pdf",
+  "source_pdf_sha256": "c570c41c5e06f5e3ba727873421156b19510bb3a139248af6b5c4dd4ffa45218",
+  "extracted_markdown": "assets/attachments/Ring_Theory_Qual_Problems_extracted.md",
+  "extracted_markdown_sha256": "ad632fe332b975c67a8dc24ed5c8b166762b5f2b852cec8a408acecebe3e1bda",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Ring_Theory_Qual_Problems.pdf --language en --pages 1-16",
+  "generated_at": "2026-10-30",
+  "result": "exit 0"
+}

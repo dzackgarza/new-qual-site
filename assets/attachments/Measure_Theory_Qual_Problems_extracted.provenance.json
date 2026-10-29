@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Measure_Theory_Qual_Problems.pdf",
+  "source_pdf_sha256": "68d844aa1f707a87c5c592d3950b64f4614dcd418d7882542a1d37295f3653a9",
+  "extracted_markdown": "assets/attachments/Measure_Theory_Qual_Problems_extracted.md",
+  "extracted_markdown_sha256": "d9666f24878885457ecfcd4a84418fa2737e461ad101619c888d7fb2b9cc2c61",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Measure_Theory_Qual_Problems.pdf --language en --pages 1-17",
+  "generated_at": "2026-10-30",
+  "result": "exit 0"
+}
