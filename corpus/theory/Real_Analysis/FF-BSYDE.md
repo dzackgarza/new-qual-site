@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FF-BSYDE
 kind: fact
 title: Compact operators
-slogan: 'Compact operators send bounded sets to precompact sets; on Hilbert space they are norm-limits of finite-rank operators.'
+slogan: 'Compact operators send bounded sets to relatively compact sets; on Hilbert space they are norm-limits of finite-rank operators.'
 prompts:
 - What is a compact operator?
 classification:
@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact}
+::: {.definition}
 Let $X$ and $Y$ be normed vector spaces.
 A linear map $T\colon X\to Y$ is \dfn{compact} if $T(B)$ has compact closure in $Y$ for every bounded subset $B\subseteq X$.
 :::
