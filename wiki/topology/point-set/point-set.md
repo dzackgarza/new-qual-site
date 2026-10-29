@@ -74,11 +74,9 @@ Then $U_1,\ldots,U_k$ cover $f(X)$.
 
 [[T-JFADP]]
 
-## Separability
+## Retracts
 
 [[PR-O7535]]
-
-[[PR-R72XL]]
 
 ## Separation axioms
 
@@ -86,6 +84,8 @@ Then $U_1,\ldots,U_k$ cover $f(X)$.
 Recall that a [[D-ZFRV4|Hausdorff space]] is one in which distinct points have disjoint open neighborhoods, and a [[D-YEQC3|normal]] space is one in which disjoint closed sets have disjoint open neighborhoods.
 
 :::
+
+[[PR-R72XL]]
 
 [[FT-52GNK]]
 
