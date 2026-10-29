@@ -1860,7 +1860,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Algebra/FF-TDXQT.md` | `ee7f0207600916b02614c0e171ee402fd28a4160` | `ee7f0207600916b02614c0e171ee402fd28a4160` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/FF-TEGRU.md` | `b5d6abdf52037a67ee8ca0fcb8721ade2e23a21c` | `b5d6abdf52037a67ee8ca0fcb8721ade2e23a21c` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/FF-TSZNT.md` | `002371c2911ecdf242ee6851f005cd5c2015ba82` | `002371c2911ecdf242ee6851f005cd5c2015ba82` | Full file read; retained |
-| [x] | `corpus/theory/Algebra/FF-U4FHF.md` | `0ea5db80b42b90c8eaa2c4122d30d2191bc8c3cd` | `0ea5db80b42b90c8eaa2c4122d30d2191bc8c3cd` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/FF-UACKH.md` | `8d1b89753ac0645d7936760831604693fed0cba0` | `8d1b89753ac0645d7936760831604693fed0cba0` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/FF-UYMWY.md` | `b6d7aa3a9875e7eb181f48adacd79d0444a3925d` | `b6d7aa3a9875e7eb181f48adacd79d0444a3925d` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/FF-VAKLJ.md` | `c11ff3754ac7e4182c94cc15e83b0532704f755e` | `c11ff3754ac7e4182c94cc15e83b0532704f755e` | Full file read; retained |
