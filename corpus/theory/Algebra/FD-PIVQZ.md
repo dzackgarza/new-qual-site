@@ -15,8 +15,8 @@ review: draft
 ---
 
 ::: {.definition}
-Let $\varepsilon\colon S_n\to\theset{\pm1}$ be the sign homomorphism and $\sigma\in S_n$.
-The permutation $\sigma$ is \dfn{even} if $\varepsilon(\sigma) = 1$ and \dfn{odd} if $\varepsilon(\sigma) = -1$.
+Let $\sgn\colon S_n\to\theset{\pm1}$ be the sign homomorphism and $\sigma\in S_n$.
+The permutation $\sigma$ is \dfn{even} if $\sgn(\sigma) = 1$ and \dfn{odd} if $\sgn(\sigma) = -1$.
 :::
 
 ::: {.remark}
