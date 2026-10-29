@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF06C
 kind: problem
-title: "Connected covering spaces of RP^3 x RP^7"
+title: 'Connected covering spaces of $\RP^3\times\RP^7$'
 classification:
   areas:
   - topology

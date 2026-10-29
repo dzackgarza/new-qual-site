@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF06F
 kind: problem
-title: "Even-degree maps from S^{2n+1} to RP^{2n+1} exist; odd-degree maps do not"
+title: 'Even-degree maps $S^{2n+1}\to\RP^{2n+1}$ exist; odd-degree maps do not'
 classification:
   areas:
   - topology

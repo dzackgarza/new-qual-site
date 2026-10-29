@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF06B
 kind: problem
-title: "A space with H^* = Z in all degrees and finitely generated cohomology ring"
+title: 'A space with $H^*\cong\ZZ$ in all degrees and finitely generated cohomology ring'
 classification:
   areas:
   - topology

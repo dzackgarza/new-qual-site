@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF06D
 kind: problem
-title: "RP^n cannot be covered by fewer than n+1 contractible closed subsets"
+title: '$\RP^n$ cannot be covered by fewer than $n+1$ contractible closed subsets'
 classification:
   areas:
   - topology
