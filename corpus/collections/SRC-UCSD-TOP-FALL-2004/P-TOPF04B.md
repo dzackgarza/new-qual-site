@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF04B
 kind: problem
-title: "The covering projection S^n to RP^n is not null-homotopic"
+title: 'The covering projection $S^n\to\RP^n$ is not null-homotopic'
 classification:
   areas:
   - topology

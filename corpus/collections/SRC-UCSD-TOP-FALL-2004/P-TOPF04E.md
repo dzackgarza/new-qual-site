@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF04E
 kind: problem
-title: "Borsuk-Ulam theorem: no antipodal-preserving map from S^n to S^m for n > m >= 1"
+title: 'Borsuk–Ulam: no antipodal-preserving map $S^n\to S^m$ for $n>m\ge1$'
 classification:
   areas:
   - topology
