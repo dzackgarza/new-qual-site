@@ -19,21 +19,41 @@ Show that $P(z) \definedas z^4 + 6z + 3$ has 3 zeros in $\theset{1\leq \abs{z} \
 :::
 
 ::: {.solution}
-\envlist
+Zeros are counted with multiplicity.
 
-- Take $P(z) = z^4 + 6z + 3$.
+::: pf
 
-- On $\abs{z} < 2$:
+::: {.pf-step #outer}
+$P$ has no zeros on $\abs z = 2$ and exactly $4$ zeros in $\abs z<2$.
 
-  - Set $f(z) = z^4$ and $g(z) = 6z + 3$, then $\abs{g(z)} \leq 6\abs{z} + 3 = 15 < 16= \abs{f(z)}$.
+::: pf-proof
+Put $f(z) = z^4$ and $g(z) = 6z+3$.
+On $\abs z = 2$, $\abs{g(z)}\leq 6\abs z + 3 = 15 < 16 = \abs{f(z)}$.
+Hence $\abs{P(z)}\geq \abs{f(z)} - \abs{g(z)} > 0$ there, and by Rouché's theorem $P = f+g$ has as many zeros in $\abs z<2$ as $f$, which is $4$.
+:::
 
-  - So $P$ has 4 zeros here.
+:::
 
-- On $\abs{z} < 1$:
+::: {.pf-step #inner}
+$P$ has no zeros on $\abs z = 1$ and exactly $1$ zero in $\abs z<1$.
 
-  - Set $f(z) = 6z$ and $g(z) = z^4 + 3$.
+::: pf-proof
+Put $f(z) = 6z$ and $g(z) = z^4+3$.
+On $\abs z = 1$, $\abs{g(z)}\leq \abs z^4 + 3 = 4 < 6 = \abs{f(z)}$.
+Hence $P$ does not vanish there, and by Rouché's theorem $P$ has as many zeros in $\abs z<1$ as $6z$, which is $1$.
+:::
 
-  - Check $\abs{g(z)} \leq \abs{z}^4 + 3 = 4 < 6 = \abs{f(z)}$.
+:::
 
-  - So $P$ has 1 zero here.
+::: pf-step
+$P$ has exactly $\boxed{3}$ zeros in $\theset{1\leq\abs z\leq 2}$.
+
+::: pf-proof
+By steps [](#outer){.pf-ref} and [](#inner){.pf-ref}, no zero lies on either boundary circle, so the zeros in the closed annulus are the zeros in $\abs z<2$ that are not in $\abs z<1$, and there are $4-1 = 3$ of them.
+:::
+
+:::
+
+:::
+
 :::
