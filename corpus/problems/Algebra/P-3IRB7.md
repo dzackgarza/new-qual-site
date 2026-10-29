@@ -22,24 +22,62 @@ audit:
   note: Removed the false zero-constant-term description of (x1,x2) for n>2 and kept the common-divisor proof.
 ---
 
-::: {.exercise}
-For which $n$ is the polynomial ring $k[x_1,\dots,x_n]$ over a field $k$ a PID?
+::: {.problem}
+For which $n$ is the polynomial ring $k[x_1,\ldots,x_n]$ over a field $k$ a PID?
 :::
 
 ::: {.solution}
-For $n=0$, the ring is the field $k$, hence a PID. For $n=1$, the ring $k[x_1]$ is Euclidean, hence a PID.
 
-Assume $n\ge2$ and consider
-\[
-I=(x_1,x_2).
-\]
-This is proper: evaluation at $x_1=x_2=0$ sends every element of $I$ to $0$, while it sends $1$ to $1$.
+::: pf
 
-Suppose $I=(d)$ were principal. Since $x_1,x_2\in(d)$, the polynomial $d$ divides both $x_1$ and $x_2$. In the UFD $k[x_1,\dots,x_n]$, the irreducibles $x_1$ and $x_2$ are nonassociate, so their only common divisors are units. Thus $d$ is a unit, which would give
-\[
-I=(1),
-\]
-contradicting properness.
+::: {.pf-step #small}
 
-Therefore $k[x_1,\dots,x_n]$ is a PID exactly for $n\le1$.
+For $n\le1$, $k[x_1,\ldots,x_n]$ is a PID.
+
+::: pf-proof
+
+For $n=0$ the ring is the field $k$, whose only ideals are $0=(0)$ and $k=(1)$. For $n=1$ the ring $k[x_1]$ is a Euclidean domain under the degree, hence a PID.
+
+:::
+
+:::
+
+::: {.pf-step #proper}
+
+For $n\ge2$, the ideal $I=(x_1,x_2)$ is proper.
+
+::: pf-proof
+
+The evaluation homomorphism $x_1,\ldots,x_n\mapsto0$ sends every element of $I$ to $0$ and sends $1$ to $1$, so $1\notin I$.
+
+:::
+
+:::
+
+::: {.pf-step #not-principal}
+
+For $n\ge2$, the ideal $I=(x_1,x_2)$ is not principal.
+
+::: pf-proof
+
+Suppose $I=(d)$. Then $d$ divides both $x_1$ and $x_2$. In the UFD $k[x_1,\ldots,x_n]$, the irreducibles $x_1$ and $x_2$ are nonassociate, so their only common divisors are units. Thus $d$ is a unit and $I=(1)$, contradicting step [](#proper){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-step
+
+$k[x_1,\ldots,x_n]$ is a PID exactly for $\boxed{n\le1}$.
+
+::: pf-proof
+
+This follows from steps [](#small){.pf-ref} and [](#not-principal){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::
