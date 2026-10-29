@@ -16,40 +16,65 @@ review: draft
 
 ::: {.problem}
 Is the following function continuous, differentiable, continuously differentiable?
-\[  
+$$
+\begin{aligned}
 f: \RR^2 &\to \RR  \\
 f(x, y) &= 
 \begin{cases}
 {xy \over \sqrt{x^2 + y^2}} & (x, y) \neq (0, 0) \\
 0 & \text{else}.
 \end{cases}
-\]
+\end{aligned}
+$$
 :::
 
 ::: {.solution}
-Away from $(0,0)$ the function is smooth. At the origin,
-\[
-|f(x,y)|=\frac{|xy|}{\sqrt{x^2+y^2}}
-\le \frac{x^2+y^2}{2\sqrt{x^2+y^2}}
-=\frac12\sqrt{x^2+y^2},
-\]
-so $f(x,y)\to0=f(0,0)$. Hence $f$ is continuous everywhere.
+Away from $(0,0)$ the function $f$ is smooth, so only the origin needs attention.
 
-The partial derivatives at the origin are both $0$, so if $f$ were
-differentiable there, its derivative would be the zero map. Differentiability
-would then require
-\[
-\frac{|f(x,y)|}{\sqrt{x^2+y^2}}\to0.
-\]
-But along $y=x\ne0$,
-\[
-\frac{|f(x,x)|}{\sqrt{2x^2}}
-=\frac{x^2/(\sqrt2|x|)}{\sqrt2|x|}
-=\frac12.
-\]
-Thus $f$ is not differentiable at $(0,0)$.
+::: pf
 
-Therefore $f$ is continuous everywhere, differentiable on
-$\mathbb R^2\setminus\{0\}$ but not at the origin, and consequently is not
-continuously differentiable on $\mathbb R^2$.
+::: pf-step
+
+$f$ is continuous on $\RR^2$.
+
+::: pf-proof
+
+Since $\abs{xy}\le\frac12(x^2+y^2)$,
+$$
+\abs{f(x,y)}\le\frac12\sqrt{x^2+y^2}\longrightarrow0=f(0,0).
+$$
+
+:::
+
+:::
+
+::: {.pf-step #not-diff}
+
+$f$ is not differentiable at $(0,0)$.
+
+::: pf-proof
+
+$f$ vanishes on both axes, so both partial derivatives at the origin are $0$, and a derivative there would be the zero map. That would require $\abs{f(x,y)}/\sqrt{x^2+y^2}\to0$. Along $y=x\ne0$,
+$$
+\frac{\abs{f(x,x)}}{\sqrt{2x^2}}=\frac{x^2/(\sqrt2\abs x)}{\sqrt2\abs x}=\frac12.
+$$
+
+:::
+
+:::
+
+::: pf-step
+
+$f$ is $\boxed{\text{continuous, differentiable exactly on } \RR^2\setminus\{0\}, \text{ and not } C^1 \text{ on } \RR^2}$.
+
+::: pf-proof
+
+$f$ is smooth away from the origin, and a $C^1$ function is differentiable everywhere, which step [](#not-diff){.pf-ref} rules out.
+
+:::
+
+:::
+
+:::
+
 :::
