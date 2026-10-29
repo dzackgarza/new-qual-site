@@ -70,3 +70,7 @@ For a simple pole, $\Res_{z = n} \frac{1}{\sin(\pi z)} = \lim_{z \to n} (z - n)\
 :::
 
 :::
+
+::: {.remark}
+The order of each zero can also be read off the power series: $\sin(\pi z)=(-1)^n\sin(\pi(z-n))=(z-n)g(z)$ with $g$ entire and $g(n)=(-1)^n\pi\neq0$. Then $1/\sin(\pi z)=1/((z-n)g(z))$ has residue $1/g(n)=(-1)^n/\pi$ at $n$.
+:::
