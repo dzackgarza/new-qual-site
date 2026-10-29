@@ -126,8 +126,6 @@ For $E_n\nearrow E=\bigcup_nE_n$ the equality $\mu(E)=\lim_n\mu(E_n)$ holds for 
 
 [[D-EWXAT]]
 
-[[D-MAGRK]]
-
 [[D-ARQFC]]
 
 ## Functional analysis
