@@ -9,7 +9,7 @@ topics:
 
 # Subschemes and points
 
-A closed subset of a scheme carries many closed subscheme structures and an open subset carries one open subscheme structure.
+A closed subset of a scheme can carry several closed subscheme structures, and an open subset carries exactly one open subscheme structure.
 
 [[D-SCHSUB]]
 
