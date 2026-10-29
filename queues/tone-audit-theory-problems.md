@@ -1624,7 +1624,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/theory/Algebra/C-A6UAR.md` | `038cfe1a6520e2695e734740676327a712dc313c` | `038cfe1a6520e2695e734740676327a712dc313c` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/C-BOM4E.md` | `6842f508be60ec30af6890f079c2daab25749763` | `6842f508be60ec30af6890f079c2daab25749763` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/C-C2GYX.md` | `3fc5dc9bac7d8746b1e0d4c777660fe58cd8de1f` | `3fc5dc9bac7d8746b1e0d4c777660fe58cd8de1f` | Full file read; retained |
-| [x] | `corpus/theory/Algebra/C-CM7ZS.md` | `f6ef41bd4c371a0690691d1e25e15537ef61afa2` | `f6ef41bd4c371a0690691d1e25e15537ef61afa2` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/C-HE5SL.md` | `336cbb724c475b100eea1f4512a68eb926b990f9` | `336cbb724c475b100eea1f4512a68eb926b990f9` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/C-HWX2P.md` | `fe142611dd79fddbdb6276fefd74c9b5d5496a85` | `fe142611dd79fddbdb6276fefd74c9b5d5496a85` | Full file read; retained |
 | [x] | `corpus/theory/Algebra/C-O7CP3.md` | `9cb4bd7fb6d377316fd101b0b77f03ae3de6fe53` | `9cb4bd7fb6d377316fd101b0b77f03ae3de6fe53` | Full file read; retained |
