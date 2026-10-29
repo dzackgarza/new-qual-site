@@ -19,15 +19,8 @@ audit:
 ---
 
 ::: {.exercise}
-- Show that
-
-  - $f_n: [a, b]\to \RR$ are continuously differentiable with derivatives $f_n'$
-
-  - The sequence of derivatives $f_n'$ converges uniformly to some function $g$
-
-  - There exists *at least one* point $x_0$ such that $\lim_n f_n(x_0)$ exists,
-
-  - Then $f_n \to f$ uniformly to some differentiable $f$, and $f' = g$.
+Suppose that $f_n: [a, b]\to \RR$ are continuously differentiable with derivatives $f_n'$, that the sequence of derivatives $f_n'$ converges uniformly to some function $g$, and that there exists *at least one* point $x_0$ such that $\lim_n f_n(x_0)$ exists.
+Show that $f_n \to f$ uniformly to some differentiable $f$, and $f' = g$.
 :::
 
 ::: {.solution}
@@ -75,21 +68,16 @@ and the right-hand side does not depend on $x$ and tends to $0$.
 
 :::
 
-::: {.pf-step #s4}
+::: pf-step
 
-$f$ is differentiable and $f' = g$.
+$f_n \to f$ uniformly, $f$ is differentiable, and $f' = g$.
 
 ::: pf-proof
 
+The uniform convergence is step [](#s3){.pf-ref}.
 Since $g$ is continuous by step [](#s1){.pf-ref}, the fundamental theorem of calculus applied to $f(x) = c + \int_{x_0}^x g(t)\,dt$ gives $f'(x) = g(x)$ for every $x \in [a,b]$. In particular $f \in C^1[a,b]$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s3){.pf-ref} gives $f_n \to f$ uniformly, and step [](#s4){.pf-ref} gives that $f$ is differentiable with $f' = g$.
 
 :::
 
