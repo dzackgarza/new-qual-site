@@ -72,3 +72,5 @@ They are open in the subspace topology, disjoint because $U \cap V = \varnothing
 :::
 
 :::
+
+:::
