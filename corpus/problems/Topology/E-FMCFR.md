@@ -16,25 +16,12 @@ review: draft
 
 ::: {.exercise}
 Show that a continuous map from a compact space to a Hausdorff space is closed.
-
-#### Exercise
 :::
 
 ::: {.solution}
+Let $f:X\to Y$ be continuous, with $X$ compact and $Y$ Hausdorff, and let $F\subseteq X$ be closed. We show that $f(F)$ is closed in $Y$.
 
 ::: pf
-
-::: pf-step
-
-Let $f:X\to Y$ be continuous, with $X$ compact and $Y$ Hausdorff, and let $F\subseteq X$ be closed.
-
-::: pf-proof
-
-To show that $f$ is closed, it suffices to prove that $f(F)$ is closed for every closed $F$.
-
-:::
-
-:::
 
 ::: pf-step
 
@@ -60,25 +47,13 @@ Continuous images of compact spaces are compact.
 
 :::
 
-::: {.pf-step #s4}
-
-Since $Y$ is Hausdorff, $f(F)$ is closed in $Y$.
-
-::: pf-proof
-
-Compact subsets of Hausdorff spaces are closed.
-
-:::
-
-:::
-
 ::: pf-step
 
-Therefore $f$ is a closed map.
+$f(F)$ is closed in $Y$.
 
 ::: pf-proof
 
-Apply step [](#s4){.pf-ref} to every closed subset $F\subseteq X$.
+Compact subsets of Hausdorff spaces are closed. Since $F$ was an arbitrary closed set, $f$ is a closed map.
 
 :::
 
