@@ -16,7 +16,7 @@ review: draft
 
 ::: {.definition}
 Let $n\geq 1$ and let $G$ be a group, abelian if $n\geq 2$.
-An \dfn{Eilenberg--MacLane space} $K(G, n)$ is a path-connected [[D-ZOU5G|CW complex]] $X$ with [[D-EUX36|homotopy groups]]
+An \dfn{Eilenberg--MacLane space} $K(G, n)$ [@Hat02] is a path-connected [[D-ZOU5G|CW complex]] $X$ with [[D-EUX36|homotopy groups]]
 $$
 \pi_i(X)\cong
 \begin{cases}
@@ -38,8 +38,4 @@ with the set of basepoint-preserving homotopy classes of basepoint-preserving ma
 
 ::: {.example}
 The circle $S^1$ is a $K(\ZZ, 1)$, $\CP^\infty$ is a $K(\ZZ, 2)$, and $\RP^\infty$ is a $K(\ZZ/2, 1)$.
-:::
-
-::: {.concept}
-See [@Hat02].
 :::

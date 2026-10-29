@@ -21,9 +21,5 @@ In particular, a nonempty space that is both an $m$-manifold and an $n$-manifold
 
 ::: {.definition}
 Let $M$ be a nonempty space that is an $n$-manifold for some $n\geq 0$.
-The \dfn{dimension} of $M$ is this integer $n$, equivalently the unique $i$ with $H_i(M, M\sm\theset{x};\ZZ)\neq 0$ for any $x\in M$.
-:::
-
-::: {.concept}
-See [@Hat02].
+The \dfn{dimension} of $M$ is this integer $n$, equivalently the unique $i$ with $H_i(M, M\sm\theset{x};\ZZ)\neq 0$ for any $x\in M$ [@Hat02].
 :::
