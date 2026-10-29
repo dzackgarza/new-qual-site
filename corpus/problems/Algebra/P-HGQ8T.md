@@ -22,34 +22,50 @@ audit:
 ---
 
 ::: {.problem}
+
 Let $A, B \in M_n(R)$ be $n \times n$ matrices over a commutative ring $R$.
-(1) Prove that if $A$ and $B$ are symmetric matrices ($A^t = A, B^t = B$), then the product $AB$ is symmetric if and only if $A$ and $B$ commute ($AB = BA$). (2) For an arbitrary matrix $B \in M_n(R)$, prove that $B B^t$ and $B + B^t$ are symmetric, and $B - B^t$ is skew-symmetric.
+
+(a) Prove that if $A$ and $B$ are symmetric matrices ($A^t = A, B^t = B$), then the product $AB$ is symmetric if and only if $A$ and $B$ commute ($AB = BA$).
+
+(b) For an arbitrary matrix $B \in M_n(R)$, prove that $B B^t$ and $B + B^t$ are symmetric, and $B - B^t$ is skew-symmetric.
+
 :::
 
 ::: {.solution}
-Assume first that $A^t=A$ and $B^t=B$. Then
-\[
-(AB)^t=B^tA^t=BA.
-\]
-Therefore
-\[
-AB\text{ is symmetric}
-\iff (AB)^t=AB
-\iff BA=AB.
-\]
-This proves part (1).
 
-For arbitrary $B$,
-\[
+::: pf
+
+::: pf-step
+
+(a) If $A^t=A$ and $B^t=B$, then $AB$ is symmetric if and only if $AB=BA$.
+
+::: pf-proof
+
+Since $R$ is commutative, $(AB)^t=B^tA^t=BA$. Hence $(AB)^t=AB$ if and only if $BA=AB$.
+
+:::
+
+:::
+
+::: pf-step
+
+(b) $BB^t$ and $B+B^t$ are symmetric, and $B-B^t$ is skew-symmetric.
+
+::: pf-proof
+
+We have
+$$
 (BB^t)^t=(B^t)^tB^t=BB^t,
-\]
-so $BB^t$ is symmetric. Also
-\[
+\qquad
 (B+B^t)^t=B^t+B=B+B^t,
-\]
-while
-\[
+\qquad
 (B-B^t)^t=B^t-B=-(B-B^t).
-\]
-Thus $B+B^t$ is symmetric and $B-B^t$ is skew-symmetric.
+$$
+
+:::
+
+:::
+
+:::
+
 :::
