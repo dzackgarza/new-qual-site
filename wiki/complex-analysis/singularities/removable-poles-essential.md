@@ -121,26 +121,10 @@ $\contradiction$
 
 [[D-AUD6K]]
 
-[[FD-C7EQD]] [[FD-EKGLW]]
-
 [[D-C3JIU]]
 
 ::: {.remark}
 A pole admits a neighborhood on which $f$ is nonvanishing, and in fact bounded below.
-
-:::
-
-[[PR-NITIQ]]
-
-::: {.proof}
-Since $\abs f\to\infty$, $f$ has no zeros near $z_0$, and $1/f$ has a removable singularity at $z_0$ with value $0$; it is not identically zero, so by [[PR-5A64G]]
-$$
-{1\over f(z) } = (z-z_0)^n g(z)
-$$
-with $g$ holomorphic and nonvanishing near $z_0$, then take reciprocals:
-$$
-f(z) = (z-z_0)^{-n} h(z), \qquad h(z) \coloneqq {1\over g(z)}
-.$$
 
 :::
 
@@ -153,7 +137,7 @@ g(z) = \sum_{k\geq -m} c_k z^{2k}
 = {c_{-m} \over z^{2m}} + \cdots
 ,$$
 so the lowest power of $z$ appearing is $z^{-2m}$ with nonzero coefficient $c_{-m}$, which is exactly a pole of order $2m$.
-Alternatively, by [[PR-NITIQ]], write $f(z) = z^{-m}h(z)$ with $h$ holomorphic and $h(0) \neq 0$; then $f(z^2) = z^{-2m}h(z^2)$ where $z\mapsto h(z^2)$ is holomorphic and takes the value $h(0) \neq 0$ at $z=0$.
+Alternatively, by [[D-AUD6K]], write $f(z) = z^{-m}h(z)$ with $h$ holomorphic and $h(0) \neq 0$; then $f(z^2) = z^{-2m}h(z^2)$ where $z\mapsto h(z^2)$ is holomorphic and takes the value $h(0) \neq 0$ at $z=0$.
 
 :::
 

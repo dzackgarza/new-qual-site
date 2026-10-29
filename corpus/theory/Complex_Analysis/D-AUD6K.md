@@ -3,6 +3,9 @@ schema: qual/card@1
 id: D-AUD6K
 kind: definition
 title: Poles and their order
+prompts:
+- What does it mean for $f$ to have a pole of order $m$ at $a$?
+- What is the order of a pole of $f$ at $a$?
 classification:
   areas:
   - complex-analysis
@@ -61,4 +64,8 @@ It is not identically zero, so $z_0$ is a zero of $g$ of some order $n\ge1$, and
 A pole may be defined by condition (b) without naming $n$: $f$ has no zeros near $z_0$ and $1/f$, extended by $0$ at $z_0$, is holomorphic.
 The order is then the least integer $n\ge1$ for which $f(z)=(z-z_0)^{-n}h(z)$ near $z_0$ with $h$ holomorphic, without the condition $h(z_0)\neq0$.
 This least $n$ is the order in the definition above: if $f=(z-z_0)^{-n}h_0$ with $h_0(z_0)\neq0$ and $f=(z-z_0)^{-m}h$ with $m<n$, then $h=(z-z_0)^{m-n}h_0$ is unbounded near $z_0$, a contradiction.
+
+The order is also read off from limits: $f$ has a pole of order $n$ at $z_0$ if and only if $\lim_{z\to z_0}(z-z_0)^nf(z)$ exists in $\CC\setminus\{0\}$, and then $n$ is the least integer $m\ge0$ with $\lim_{z\to z_0}(z-z_0)^{m+1}f(z)=0$.
+Indeed, if $f=(z-z_0)^{-n}h$ with $h(z_0)\neq0$, then $(z-z_0)^kf(z)=(z-z_0)^{k-n}h(z)$ tends to $0$ for $k>n$, to $h(z_0)\neq0$ for $k=n$, and in modulus to $\infty$ for $k<n$.
+Conversely, if $(z-z_0)^nf(z)\to c\neq0$, then $(z-z_0)^nf$ is bounded near $z_0$, so by [[T-ZZJDP|Riemann's removable singularity theorem]] it extends to a holomorphic $h$ with $h(z_0)=c$, and $f=(z-z_0)^{-n}h$.
 :::
