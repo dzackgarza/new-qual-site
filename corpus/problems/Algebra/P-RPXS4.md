@@ -19,31 +19,31 @@ audit:
 ---
 
 ::: {.problem}
-How many irreducible polynomials are there of degree 4 over \( \FF_2 \)?
+How many irreducible polynomials are there of degree 4 over $\FF_2$?
 :::
 
 ::: {.solution}
-Let $N_q(n)$ denote the number of monic irreducible polynomials of degree $n$ over $\mathbb F_q$. From
-\[
-x^{q^n}-x=\prod_{d\mid n}\prod_{\substack{f\text{ monic irreducible}\\ \deg f=d}}f(x)
-\]
-we get
-\[
-q^n=\sum_{d\mid n}d\,N_q(d).
-\]
-Möbius inversion gives
-\[
-N_q(n)=\frac1n\sum_{d\mid n}\mu(d)q^{n/d}.
-\]
-Hence
-\[
-N_2(4)=\frac14\bigl(2^4-2^2\bigr)=3,
-\]
-because $\mu(4)=0$.
+Let $N_q(n)$ be the number of monic irreducible polynomials of degree $n$ over $\FF_q$. Over $\FF_2$ the only unit is $1$, so every irreducible polynomial is monic.
 
-Thus there are exactly
-\[
-\boxed{3}
-\]
-monic irreducible quartics over $\mathbb F_2$.
+::: pf
+
+::: {.pf-step #count}
+$q^n=\sum_{d\mid n}d\,N_q(d)$.
+
+::: pf-proof
+$x^{q^n}-x$ is the product of all monic irreducible polynomials over $\FF_q$ whose degree divides $n$, each once. Compare degrees.
+:::
+
+:::
+
+::: pf-step
+$N_2(4)=\boxed{3}$.
+
+::: pf-proof
+By step [](#count){.pf-ref} with $q=2$: $N_2(1)=2$, $2+2N_2(2)=4$ gives $N_2(2)=1$, and $2+2\cdot1+4N_2(4)=16$ gives $N_2(4)=3$. They are $x^4+x+1$, $x^4+x^3+1$ and $x^4+x^3+x^2+x+1$.
+:::
+
+:::
+
+:::
 :::
