@@ -19,37 +19,42 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: "The source statement was a bullet item, 'Show that if $x, y$ are in the same orbit, then their stabilizers are conjugate.', that declared no group or set; the action of a group $G$ on a set $X$ is now stated."
 ---
 
 ::: {.problem}
-- Show that if $x, y$ are in the same orbit, then their stabilizers are conjugate.
+Let a group $G$ act on a set $X$.
+Show that if $x, y\in X$ are in the same orbit, then their stabilizers are conjugate.
 :::
 
 ::: {.solution}
 Let $G$ act on $X$, and suppose $y=g\cdot x$. Then
-\[
+$$
 G_y=gG_xg^{-1}.
-\]
+$$
 Indeed, if $h\in G_x$, then
-\[
+$$
 (ghg^{-1})\cdot y
 =ghg^{-1}g\cdot x
 =g(h\cdot x)
 =g\cdot x
 =y,
-\]
+$$
 so $gG_xg^{-1}\subseteq G_y$.
 
 Conversely, if $k\in G_y$, then
-\[
+$$
 (g^{-1}kg)\cdot x
 =g^{-1}k\cdot(gx)
 =g^{-1}(k\cdot y)
 =g^{-1}y
 =x,
-\]
+$$
 so $g^{-1}kg\in G_x$, hence $k\in gG_xg^{-1}$. Therefore
-\[
+$$
 G_y=gG_xg^{-1}.
-\]
+$$
 :::
