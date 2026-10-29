@@ -27,5 +27,5 @@ $$
 ::: {.example}
 $\CC(x)$ is the field of meromorphic functions on the Riemann sphere $\hat\CC=\CC\cup\theset{\infty}$.
 Every rational function is meromorphic on $\hat\CC$.
-Conversely, a meromorphic function $h$ on the compact surface $\hat\CC$ has finitely many poles; subtracting from $h$ its principal parts at the poles in $\CC$, which are rational functions, and the polynomial principal part at $\infty$ leaves a holomorphic function on $\hat\CC$, which is constant by Liouville's theorem, so $h\in\CC(x)$.
+Conversely, a meromorphic function $h$ on the compact surface $\hat\CC$ has finitely many poles; subtracting from $h$ its principal parts at the poles in $\CC$, which are rational functions, and the polynomial principal part at $\infty$ leaves a holomorphic function on the compact surface $\hat\CC$; its restriction to $\CC$ is a bounded entire function, hence constant by Liouville's theorem, so $h\in\CC(x)$.
 :::
