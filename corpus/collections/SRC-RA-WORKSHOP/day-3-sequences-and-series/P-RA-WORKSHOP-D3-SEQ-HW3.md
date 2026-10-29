@@ -29,31 +29,25 @@ Compare this to June 2009 #3a and January 2005 #1b.)
 
 ::: {.pf-step #s1}
 
-If $\sum_{k=1}^{\infty}|a_k|$ converges, then there is $N$ such that $0\leq a_k^2\leq |a_k|$ for all $k\geq N$.
+If $\sum_{k=1}^{\infty}\abs{a_k}$ converges, then there is $N$ such that $0\leq a_k^2\leq \abs{a_k}$ for all $k\geq N$.
 
 ::: pf-proof
 
-Convergence of the nonnegative series implies $|a_k|\to0$. Choose $N$ so that $|a_k|\leq1$ for $k\geq N$. Then $a_k^2=|a_k|^2\leq|a_k|$.
+Convergence of the nonnegative series implies $\abs{a_k}\to0$. Choose $N$ so that $\abs{a_k}\leq1$ for $k\geq N$. Then $a_k^2=\abs{a_k}^2\leq\abs{a_k}$.
 
 :::
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
-The series $\sum_{k=1}^{\infty}|a_k|$ cannot converge.
+The series $\sum_{k=1}^{\infty}a_k$ does not converge absolutely.
 
 ::: pf-proof
 
-Suppose it converges. By step [](#s1){.pf-ref} and comparison of nonnegative series, the tail $\sum_{k=N}^{\infty}a_k^2$ converges. Adding the finite initial sum would make $\sum_{k=1}^{\infty}a_k^2$ convergent, contrary to the hypothesis.
+Suppose $\sum_{k=1}^{\infty}\abs{a_k}$ converges. By step [](#s1){.pf-ref} and comparison of nonnegative series, the tail $\sum_{k=N}^{\infty}a_k^2$ converges. Adding the finite initial sum would make $\sum_{k=1}^{\infty}a_k^2$ convergent, contrary to the hypothesis.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s2){.pf-ref} proves that the given convergent series is not absolutely convergent.
 
 :::
 
