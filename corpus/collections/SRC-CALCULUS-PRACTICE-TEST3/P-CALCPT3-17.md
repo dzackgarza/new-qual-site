@@ -12,7 +12,7 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-10-30
-  note: "Transcribed from Question 17 of assets/attachments/calculus_practice_test3.pdf, checked against the page render. The source writes Arccos for the principal inverse cosine."
+  note: "Transcribed from Question 17 of assets/attachments/calculus_practice_test3.pdf and checked against its MinerU Flash extraction; they agree. The source writes Arccos for the principal inverse cosine."
 ---
 
 ::: {.problem}
