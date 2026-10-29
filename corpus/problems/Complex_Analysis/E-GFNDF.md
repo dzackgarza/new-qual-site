@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-GFNDF
 kind: problem
-title: The family $\{z^k\}$ on $[0,1]$ is not equicontinuous
+title: The family $\{x^k\}$ on $[0,1]$ is not equicontinuous
 classification:
   areas:
   - complex-analysis
