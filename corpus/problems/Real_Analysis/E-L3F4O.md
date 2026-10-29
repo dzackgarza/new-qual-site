@@ -20,13 +20,13 @@ audit:
 ---
 
 ::: {.exercise}
-- Show that that Cantor middle-thirds set is compact, totally disconnected, and perfect, with outer measure zero.
+(a) Show that the Cantor middle-thirds set is compact, totally disconnected, and perfect, with outer measure zero.
 
-- Prove the Borel-Cantelli lemma.
+(b) Prove the Borel--Cantelli lemma.
 :::
 
 ::: {.solution}
-Let $C_0 = [0,1]$, let $C_n$ be obtained from $C_{n-1}$ by deleting the open middle third of each of its intervals, and let $C = \bigcap_{n \ge 0} C_n$. By induction, $C_n$ is the disjoint union of $2^n$ closed intervals of length $3^{-n}$, the stage-$n$ intervals.
+For (a), let $C_0 = [0,1]$, let $C_n$ be obtained from $C_{n-1}$ by deleting the open middle third of each of its intervals, and let $C = \bigcap_{n \ge 0} C_n$. By induction, $C_n$ is the disjoint union of $2^n$ closed intervals of length $3^{-n}$, the stage-$n$ intervals.
 
 ::: pf
 
@@ -54,7 +54,7 @@ $C \subseteq C_n$ and $m^*(C_n) = 2^n 3^{-n}$, so monotonicity gives $m^*(C) \le
 
 :::
 
-::: {.pf-step #s3}
+::: pf-step
 
 $C$ is totally disconnected.
 
@@ -66,7 +66,7 @@ A connected subset of $\RR$ is an interval. If a connected $S \subseteq C$ conta
 
 :::
 
-::: {.pf-step #s4}
+::: pf-step
 
 $C$ is perfect: every point of $C$ is a limit point of $C$.
 
@@ -106,21 +106,15 @@ Step [](#s4-2){.pf-ref} gives points of $C \setminus \theset{x}$ within $3^{-n}$
 
 :::
 
-::: {.pf-step #s5}
+::: pf-step
 
-Borel--Cantelli lemma: if $(E_n)$ is a sequence of measurable sets in a measure space $(X, \mu)$ with $\sum_n \mu(E_n) < \infty$, then $\mu(\limsup_n E_n) = 0$.
+(b) Borel--Cantelli lemma: if $(E_n)$ is a sequence of measurable sets in a measure space $(X, \mu)$ with $\sum_n \mu(E_n) < \infty$, then $\mu(\limsup_n E_n) = 0$.
 
 ::: pf-proof
 
 $\limsup_n E_n = \bigcap_N \bigcup_{n \ge N} E_n$ is measurable. For every $N$, $\limsup_n E_n \subseteq \bigcup_{n \ge N} E_n$, so monotonicity and countable subadditivity give $\mu(\limsup_n E_n) \le \sum_{n \ge N} \mu(E_n)$. The right-hand side is the tail of a convergent series and tends to $0$ as $N \to \infty$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove compactness, outer measure zero, total disconnectedness, and perfectness of $C$; step [](#s5){.pf-ref} proves the Borel--Cantelli lemma.
 
 :::
 
