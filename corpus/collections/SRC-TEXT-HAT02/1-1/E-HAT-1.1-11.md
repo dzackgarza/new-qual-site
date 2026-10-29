@@ -53,8 +53,8 @@ Therefore $f(y) \in X_0$ for every $y \in Y$, so $f(Y) \subseteq X_0$.
 
 :::
 
-::: pf-step
-Surjectivity of $i_*: \pi_1(X_0, x_0) \to \pi_1(X, x_0)$:
+::: {.pf-step #i-surjective}
+$i_*: \pi_1(X_0, x_0) \to \pi_1(X, x_0)$ is surjective.
 
 ::: pf-proof
 
@@ -82,8 +82,8 @@ Therefore $i_*$ is surjective.
 
 :::
 
-::: pf-step
-Injectivity of $i_*: \pi_1(X_0, x_0) \to \pi_1(X, x_0)$:
+::: {.pf-step #i-injective}
+$i_*: \pi_1(X_0, x_0) \to \pi_1(X, x_0)$ is injective.
 
 ::: pf-proof
 
@@ -113,10 +113,10 @@ Therefore $[\alpha] = [\beta]$ in $\pi_1(X_0, x_0)$, proving that $i_*$ is injec
 :::
 
 ::: pf-step
-Conclusion:
+$i_*: \pi_1(X_0, x_0) \to \pi_1(X, x_0)$ is an isomorphism.
 
 ::: pf-proof
-The map $i_*: \pi_1(X_0, x_0) \to \pi_1(X, x_0)$ is a bijective group homomorphism, hence an isomorphism of groups.
+The map $i_*$ is a group homomorphism that is surjective by step [](#i-surjective){.pf-ref} and injective by step [](#i-injective){.pf-ref}, hence an isomorphism.
 :::
 
 :::
