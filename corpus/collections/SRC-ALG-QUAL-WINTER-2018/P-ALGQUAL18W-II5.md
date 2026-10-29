@@ -194,12 +194,6 @@ expression.
 
 :::
 
-::: pf-qed
-
-Step [](#s5){.pf-ref} is precisely the claimed trace identity.
-
-:::
-
 :::
 
 :::
