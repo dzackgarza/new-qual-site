@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-HW5
 kind: problem
-title: Analyze the Babylonian square-root iteration (warm-up)
+title: Limit of the Babylonian square-root iteration
 classification:
   areas:
   - real-analysis
