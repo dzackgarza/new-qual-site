@@ -9,9 +9,7 @@ topics:
 
 # Schemes
 
-$\Spec$ and $\Proj$, gluing, fibre products, and the properties — reduced, irreducible, integral, Noetherian — read off the ring.
-
-The definition of a scheme is the starting point for everything on this page: the next questions are how to recognise an affine scheme, whether the Noetherian hypothesis in Serre's criterion can be weakened, and what goes wrong without quasicompactness.
+This chapter covers $\Spec$ and $\Proj$, gluing, fibre products, and the properties of a scheme (reduced, irreducible, integral, noetherian) that are read off its rings.
 
 ## Syllabus
 
