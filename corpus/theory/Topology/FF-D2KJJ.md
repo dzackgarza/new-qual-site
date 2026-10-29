@@ -6,6 +6,7 @@ title: Tor groups among $\ZZ/n$, $\ZZ$ and $\QQ$
 slogan: 'Over $\ZZ$, $\Tor_1(\ZZ/n, \ZZ/m)\cong\ZZ/\gcd(m,n)$, $\Tor_1(A, B) = 0$ when $A$ or $B$ is torsion-free, and $\Tor_k = 0$ for $k\geq 2$.'
 prompts:
 - What are the groups $\Tor^{\ZZ}_*$ among $\ZZ/n$, $\ZZ$ and $\QQ$?
+- What is $\Tor^{\ZZ}_*(\ZZ/n, A)$ for an abelian group $A$?
 classification:
   areas:
   - topology
@@ -18,7 +19,7 @@ review: draft
 ::: {.fact}
 Let $m, n\geq 1$ and $d\coloneqq\gcd(m,n)$.
 For an abelian group $A$ let $A[n]\coloneqq\theset{a\in A \st na = 0}$.
-Then $\Tor^{\ZZ}_0(\ZZ/n, A)\cong A/nA$, $\Tor^{\ZZ}_1(\ZZ/n, A)\cong A[n]$, $\Tor^{\ZZ}_k(\ZZ, A) = 0$ for $k\geq 1$, $\Tor^{\ZZ}_1(A, B)\cong\Tor^{\ZZ}_1(B, A)$, and $\Tor^{\ZZ}_1(A, B) = 0$ whenever $A$ or $B$ is torsion-free [@Hat02].
+Then $\Tor^{\ZZ}_0(\ZZ/n, A)\cong A/nA$, $\Tor^{\ZZ}_1(\ZZ/n, A)\cong A[n]$, $\Tor^{\ZZ}_k(\ZZ, A) = 0$ for $k\geq 1$, $\Tor^{\ZZ}_k(A, B) = 0$ for all abelian groups $A, B$ and $k\geq 2$, $\Tor^{\ZZ}_1(A, B)\cong\Tor^{\ZZ}_1(B, A)$, and $\Tor^{\ZZ}_1(A, B) = 0$ whenever $A$ or $B$ is torsion-free [@Hat02].
 The groups $\Tor^{\ZZ}_0(V, W) = V\otimes_{\ZZ}W$ are
 
 | $V \otimes_{\ZZ} W$ | $W=\ZZ/m$ | $W=\ZZ$ | $W=\QQ$ |

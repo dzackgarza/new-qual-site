@@ -150,8 +150,6 @@ $$
 
 :::
 
-[[FF-5QPHF]]
-
 ## Computing Ext
 
 ::: {.fact}
