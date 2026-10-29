@@ -5,7 +5,7 @@ kind: problem
 title: "Vanishing second partials of $x^2+2xy+xz^2$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Partial Derivatives, Multivariable Calculus]
 relations: []
 review: draft
 audit:
