@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AGH538INEQUIVSING
 kind: problem
-title: Inequivalent singularities with matching multiplicity data
+title: Multiplicity data of two quadruple-point singularities
 classification:
   areas:
   - algebraic-geometry
@@ -30,24 +30,18 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-19
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source says "Show that" the two displayed singularities have matching infinitely near multiplicities and delta invariants but are not equivalent; with these equations the first infinitely near multiplicities are 2 and 3 and the delta invariants are 7 and 9. No corrected equation is known, so the statement now says "Prove or disprove", and the solution disproves the matching claim.
 ---
 
 ::: {.problem}
-Show that the following two singularities have the same multiplicity, and the same configuration of infinitely near singular points with the same multiplicities, hence the same $\delta_P$, but are not equivalent.
+Prove or disprove: the following two singularities have the same multiplicity, and the same configuration of infinitely near singular points with the same multiplicities, hence the same $\delta_P$, but are not equivalent.
 
 a. $x^4-x y^4=0$.
 
 b. $x^4-x^2 y^3-x^2 y^5+y^8=0$.
-:::
-
-::: {.remark title="Erratum"}
-As transcribed, the two displayed singularities do **not** have the same
-multiplicities at their infinitely near singular points. After blowing up
-the origin in their common tangent direction, (a) has multiplicity $2$ and
-(b) has multiplicity $3$. In fact their delta invariants are $7$ and $9$.
-Thus the claimed example cannot be proved with the equations printed above.
-The computation is given below so that the defect is explicit rather than
-silently repaired to an unverified equation.
 :::
 
 ::: {.solution}
@@ -282,11 +276,13 @@ $$
 
 :::
 
-::: {.pf-step #transcribed-claim-false}
-The transcribed claim of V.3.8 is therefore false.
+::: {.pf-step #claim-false}
+The assertion is false: the two singularities have the same multiplicity
+but different infinitely near multiplicities and different $\delta_P$.
+They are not equivalent.
 
 ::: pf-proof
-Although the two original singularities both have multiplicity $4$, their
+Both singularities have multiplicity $4$, but their
 first infinitely near singular points have different multiplicities:
 $$
 2\ne3.
@@ -295,22 +291,16 @@ Their delta invariants also differ:
 $$
 7\ne9.
 $$
-Consequently they cannot have the same configuration with the same
+Consequently they do not have the same configuration with the same
 multiplicities, and in particular they are not equivalent in the sense of
-(3.9.4). The final inequivalence assertion is true, but the stronger claimed
-matching of resolution data is not true for the equations transcribed on
-this card.
+(3.9.4).
 :::
 
 :::
 
 ::: pf-qed
-For the transcribed statement, the displayed equations give a
-countercalculation to its claimed matching data.
-
 Steps [](#same-multiplicity-tangent){.pf-ref}, [](#a-first-blowup-transform){.pf-ref}, [](#a-infinitely-near-mult-two){.pf-ref}, [](#a-branches-separate){.pf-ref} and [](#a-delta-seven){.pf-ref} compute the infinitely near multiplicities and delta
-invariant of (a); steps [](#b-first-blowup-transform){.pf-ref}, [](#b-infinitely-near-mult-three){.pf-ref}, [](#b-resolves-after-blowup){.pf-ref} and [](#b-delta-nine){.pf-ref} do the same for (b); step [](#transcribed-claim-false){.pf-ref} exhibits
-the contradiction to the claim of the statement.
+invariant of (a); steps [](#b-first-blowup-transform){.pf-ref}, [](#b-infinitely-near-mult-three){.pf-ref}, [](#b-resolves-after-blowup){.pf-ref} and [](#b-delta-nine){.pf-ref} do the same for (b); step [](#claim-false){.pf-ref} compares them and disproves the assertion.
 :::
 
 :::
