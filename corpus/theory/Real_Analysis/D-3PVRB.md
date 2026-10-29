@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-3PVRB
 kind: definition
 title: Essential supremum norm and essentially bounded functions
+prompts:
+- What is the infinity norm $\norm{f}_\infty$?
 classification:
   areas:
   - real-analysis
@@ -19,7 +21,7 @@ The \dfn{essential supremum} of $\abs{f}$ is
 $$
 \norm{f}_\infty \coloneqq \inf \theset{\alpha \geq 0 \suchthat \mu\qty{\theset{x\in X \suchthat \abs{f(x)} \geq \alpha}} = 0} \in [0,\infty],
 $$
-with $\inf\emptyset=\infty$.
+with $\inf\emptyset=\infty$; it is also called the \dfn{$L^\infty$ norm} of $f$.
 The function $f$ is \dfn{essentially bounded} if there exists a real number $c$ such that $\mu\qty{\theset{x\in X \suchthat \abs{f(x)} > c}} = 0$, equivalently $\norm{f}_\infty < \infty$.
 :::
 
