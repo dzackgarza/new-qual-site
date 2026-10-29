@@ -21,7 +21,6 @@ The order of remaining work is the [TODO.md milestone](../TODO.md#milestone-publ
 | `E-corrections.md` | superseded | Hand OCR repair of the old extractions; superseded by the MinerU Flash extraction rule in `AGENTS.md`. |
 | `F-wiki-doctor.md` | done | `just doctor` findings; the 5 structural one-child directories are recorded non-defects with real content. |
 | `G-math-error-scan.md` | done | All 66 candidate mathematical errors found by the reading pass have been independently re-derived and dispositioned. |
-| [H-ag-notes-migration.md](H-ag-notes-migration.md) | active | Deployed ag-notes source comparison, remaining mathematical content, source repair, references and private material. |
 | [H-complaint-defects.md](H-complaint-defects.md) | active | Headings promoted from `COMPLAINTS.md`; owned by `math-defect-repair`. |
 
 ## Validity review queues (TODO.md items)
