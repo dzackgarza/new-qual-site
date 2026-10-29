@@ -18,37 +18,41 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Source did not say what G and H are; the statement now declares G a group and H a subgroup of G.
 ---
 
 ::: {.problem}
-- Show that $C_G(H) \subseteq N_G(H) \leq G$.
+Let $G$ be a group and $H\le G$ a subgroup. Show that $C_G(H) \subseteq N_G(H) \leq G$.
 :::
 
 ::: {.solution}
 Recall
-\[
+$$
 C_G(H)=\{g\in G:gh=hg\text{ for all }h\in H\}
-\]
+$$
 and
-\[
+$$
 N_G(H)=\{g\in G:gHg^{-1}=H\}.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 One has
-\[
+$$
 C_G(H)\subseteq N_G(H).
-\]
+$$
 
 ::: pf-proof
 
 If $g\in C_G(H)$, then for every $h\in H$,
-\[
+$$
 ghg^{-1}=h.
-\]
+$$
 Thus conjugation by $g$ fixes every element of $H$, so $gHg^{-1}=H$ and $g\in N_G(H)$.
 
 :::
@@ -58,19 +62,19 @@ Thus conjugation by $g$ fixes every element of $H$, so $gHg^{-1}=H$ and $g\in N_
 ::: pf-step
 
 One has
-\[
+$$
 N_G(H)\le G.
-\]
+$$
 
 ::: pf-proof
 
 The identity normalizes $H$. If $g_1,g_2\in N_G(H)$, then
-\[
+$$
 (g_1g_2)H(g_1g_2)^{-1}
 =g_1(g_2Hg_2^{-1})g_1^{-1}
 =g_1Hg_1^{-1}
 =H,
-\]
+$$
 so $g_1g_2\in N_G(H)$. If $g\in N_G(H)$, then $gHg^{-1}=H$, and conjugating this equality by $g^{-1}$ gives $g^{-1}Hg=H$, so $g^{-1}\in N_G(H)$.
 
 :::
@@ -79,8 +83,4 @@ so $g_1g_2\in N_G(H)$. If $g\in N_G(H)$, then $gHg^{-1}=H$, and conjugating this
 
 :::
 
-Therefore
-\[
-C_G(H)\subseteq N_G(H)\le G.
-\]
 :::
