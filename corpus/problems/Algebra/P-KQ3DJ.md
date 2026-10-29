@@ -25,34 +25,32 @@ What is a projective module? Give standard equivalent characterizations.
 :::
 
 ::: {.solution}
-An $R$-module $P$ is **projective** if it has the following lifting property: whenever
-\[
-M\twoheadrightarrow N
-\]
-is a surjective $R$-linear map and $f:P\to N$ is any $R$-linear map, there exists $\widetilde f:P\to M$ such that the triangle commutes:
-\[
-P\xrightarrow{\widetilde f}M\twoheadrightarrow N
-\quad=\quad
-P\xrightarrow{f}N.
-\]
 
-The following are equivalent:
+::: pf
 
-1. $P$ is projective.
-2. Every short exact sequence
-   \[
-   0\to A\to B\to P\to0
-   \]
-   splits.
-3. $P$ is a direct summand of a free module: there is a module $Q$ and a free module $F$ with
-   \[
-   F\cong P\oplus Q.
-   \]
-4. The functor
-   \[
-   \Hom_R(P,-)
-   \]
-   is exact.
+::: pf-step
+An $R$-module $P$ is projective if for every surjective $R$-linear map $\pi:M\twoheadrightarrow N$ and every $R$-linear map $f:P\to N$ there is an $R$-linear map $\widetilde f:P\to M$ with $\pi\circ\widetilde f=f$.
 
-Every free module is projective. Over a PID, every submodule of a free module is free, and every finitely generated projective module is free; over a general ring, projective modules need not be free.
+:::
+
+::: pf-step
+The following are equivalent: (i) $P$ is projective; (ii) every short exact sequence $0\to A\to B\to P\to0$ splits; (iii) $P$ is a direct summand of a free module, that is, $P\oplus Q\cong F$ for some module $Q$ and free module $F$; (iv) the functor $\Hom_R(P,-)$ is exact.
+
+::: pf-proof
+(i)$\Rightarrow$(ii): lift $\id_P$ along $B\to P$ to obtain a section. (ii)$\Rightarrow$(iii): apply (ii) to a surjection $F\twoheadrightarrow P$ from a free module. (iii)$\Rightarrow$(i): a free module has the lifting property, by choosing preimages of the images of a basis, and a direct summand inherits it by composing with the inclusion and the projection. (i)$\Leftrightarrow$(iv): $\Hom_R(P,-)$ is always left exact, and right exactness says that $\Hom_R(P,M)\to\Hom_R(P,N)$ is surjective for every surjection $M\to N$, which is the lifting property.
+:::
+
+:::
+
+::: pf-step
+Every free module is projective; over a PID every projective module is free; over a general ring a projective module need not be free.
+
+::: pf-proof
+The first claim is (iii). Over a PID every submodule of a free module is free, and a projective module is a submodule of a free module by (iii). Over $R=\ZZ/6\ZZ\cong\ZZ/2\ZZ\times\ZZ/3\ZZ$, the summand $\ZZ/2\ZZ$ is projective but not free, since a nonzero free $R$-module has at least $6$ elements.
+:::
+
+:::
+
+:::
+
 :::
