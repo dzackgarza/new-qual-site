@@ -77,17 +77,15 @@ $f=1$ $\mu$-almost everywhere.
 
 ::: pf-proof
 
-After changing $f$ on a null set if necessary, assume $0\le f\le1$ everywhere. For every open set $U$,
+After changing $f$ on a null set if necessary, assume $0\le f\le1$ everywhere.
+Because $X$ is $\sigma$-compact and locally compact Hausdorff, it admits a countable cover by relatively compact open sets $U_j$.
+Each $\overline{U_j}$ is compact and $\mu$ is Radon, so $\mu(U_j)<\infty$.
+The hypothesis therefore gives an equation of finite quantities, and
 \[
-0=\mu(U)-\int_U f\,d\mu
-=\int_U(1-f)\,d\mu.
+0=\mu(U_j)-\int_{U_j} f\,d\mu
+=\int_{U_j}(1-f)\,d\mu.
 \]
-Thus the nonnegative function $1-f$ has integral zero on every open set.
-
-Because $X$ is $\sigma$-compact and locally compact Hausdorff, it admits a countable cover by relatively compact open sets $U_j$. On each $U_j$,
-\[
-\int_{U_j}(1-f)\,d\mu=0,
-\]
+Thus the nonnegative function $1-f$ has integral zero on $U_j$,
 so $1-f=0$ almost everywhere on $U_j$. Taking the countable union yields
 \[
 \boxed{f=1\quad\mu\text{-a.e. on }X.}
