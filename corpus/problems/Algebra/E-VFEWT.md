@@ -19,33 +19,37 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source reads "Show that if J ... is radical/prime/maximal iff ..." with R and I undeclared; the statement drops the stray "if" and declares I as an ideal of a commutative ring R.'
 ---
 
 ::: {.exercise}
-Show that if $J\in \Id(R)$ (with $J\containing I$) is radical/prime/maximal iff $\bar J \in \Id(R/I)$ is radical/prime/maximal.
+Let $I$ be an ideal of a commutative ring $R$. Show that $J\in \Id(R)$ (with $J\containing I$) is radical/prime/maximal iff $\bar J \in \Id(R/I)$ is radical/prime/maximal.
 :::
 
 ::: {.solution}
 Let $I\subseteq J$ be ideals of the commutative ring $R$, and write
-\[
+$$
 \overline J=J/I\subseteq R/I.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #quotient-iso}
 The quotient correspondence gives
-\[
+$$
 (R/I)/(J/I)\cong R/J.
-\]
+$$
 
 ::: pf-proof
 Define
-\[
+$$
 \phi:R/I\longrightarrow R/J,
 \qquad
 r+I\longmapsto r+J.
-\]
+$$
 Because $I\subseteq J$, this map is well-defined and surjective. Its kernel is exactly $J/I$. The first isomorphism theorem therefore gives the displayed isomorphism.
 :::
 
@@ -56,9 +60,9 @@ The ideal $J$ is prime in $R$ if and only if $J/I$ is prime in $R/I$.
 
 ::: pf-proof
 An ideal is prime exactly when its quotient ring is an integral domain. By step [](#quotient-iso){.pf-ref},
-\[
+$$
 R/J\cong (R/I)/(J/I).
-\]
+$$
 Hence one quotient is a domain exactly when the other is.
 :::
 
@@ -78,15 +82,15 @@ The ideal $J$ is radical in $R$ if and only if $J/I$ is radical in $R/I$.
 
 ::: pf-proof
 Suppose first that $J$ is radical. If
-\[
+$$
 (r+I)^n\in J/I,
-\]
+$$
 then $r^n+I\in J/I$, which means $r^n\in J$. Radicality of $J$ gives $r\in J$, hence $r+I\in J/I$. Thus $J/I$ is radical.
 
 Conversely, suppose $J/I$ is radical and $r^n\in J$. Then
-\[
+$$
 (r+I)^n=r^n+I\in J/I.
-\]
+$$
 Hence $r+I\in J/I$, so $r\in J$. Therefore $J$ is radical.
 :::
 
