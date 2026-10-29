@@ -21,14 +21,14 @@ audit:
 ---
 
 ::: {.problem}
-- Show that  $\GF(p^n)$ is the splitting field of $x^{p^n} - x \in \FF_p[x]$.
+Show that $\GF(p^n)$ is the splitting field of $x^{p^n} - x \in \FF_p[x]$.
 :::
 
 ::: {.solution}
 Let
-\[
+$$
 f(x)=x^{p^n}-x\in\FF_p[x],
-\]
+$$
 and let $L$ be its splitting field over $\FF_p$.
 
 ::: pf
@@ -40,9 +40,9 @@ The polynomial $f$ has exactly $p^n$ distinct roots in $L$.
 ::: pf-proof
 
 Its derivative is
-\[
+$$
 f'(x)=p^n x^{p^n-1}-1=-1
-\]
+$$
 in characteristic $p$. Thus $\gcd(f,f')=1$, so $f$ is separable. Since $\deg f=p^n$ and $L$ is a splitting field, $f$ has exactly $p^n$ distinct roots in $L$.
 
 :::
@@ -52,25 +52,25 @@ in characteristic $p$. Thus $\gcd(f,f')=1$, so $f$ is separable. Since $\deg f=p
 ::: {.pf-step #s2}
 
 The root set
-\[
+$$
 S=\{a\in L:a^{p^n}=a\}
-\]
+$$
 is a subfield of $L$.
 
 ::: pf-proof
 
 Clearly $0,1\in S$. If $a,b\in S$, then the Frobenius identity in characteristic $p$ gives
-\[
+$$
 (a-b)^{p^n}=a^{p^n}-b^{p^n}=a-b,
-\]
+$$
 so $a-b\in S$, and
-\[
+$$
 (ab)^{p^n}=a^{p^n}b^{p^n}=ab,
-\]
+$$
 so $ab\in S$. If $0\ne b\in S$, then
-\[
+$$
 (b^{-1})^{p^n}=(b^{p^n})^{-1}=b^{-1},
-\]
+$$
 so $b^{-1}\in S$. Hence $S$ is a field.
 
 :::
