@@ -38,10 +38,10 @@ A diagonalizable matrix need not be invertible.
 ::: pf-proof
 
 For example,
-\[
+$$
 A=\begin{pmatrix}1&0\\0&0\end{pmatrix}
-\]
-is diagonal, hence diagonalizable, but \(\det A=0\). More generally, a diagonalizable matrix is invertible exactly when none of its eigenvalues is zero.
+$$
+is diagonal, hence diagonalizable, but $\det A=0$. More generally, a diagonalizable matrix is invertible exactly when none of its eigenvalues is zero.
 
 :::
 
@@ -54,15 +54,15 @@ An invertible matrix need not be diagonalizable.
 ::: pf-proof
 
 Take
-\[
+$$
 B=\begin{pmatrix}1&1\\0&1\end{pmatrix}.
-\]
-Then \(\det B=1\), so \(B\) is invertible. Its characteristic polynomial is \((t-1)^2\), while
-\[
+$$
+Then $\det B=1$, so $B$ is invertible. Its characteristic polynomial is $(t-1)^2$, while
+$$
 \ker(B-I)=\ker\begin{pmatrix}0&1\\0&0\end{pmatrix}
 =\operatorname{span}\!\left\{\binom10\right\}
-\]
-has dimension \(1\). Thus the geometric multiplicity of the only eigenvalue is smaller than its algebraic multiplicity, so \(B\) is not diagonalizable.
+$$
+has dimension $1$. Thus the geometric multiplicity of the only eigenvalue is smaller than its algebraic multiplicity, so $B$ is not diagonalizable.
 
 :::
 
