@@ -52,7 +52,7 @@ $F$ is continuous on each closed half of $\DD$, and the two definitions agree on
 $\int_{\partial T}F\,dz=0$ for every closed triangle $T\subset\DD$.
 
 ::: pf-proof
-If $T$ lies in one closed half-disk, take triangles $T_\varepsilon$ in the open half-disk with $T_\varepsilon\to T$; $\int_{\partial T_\varepsilon}F=0$ by Goursat's theorem and steps [](#lower){.pf-ref}, and the integrals converge because $F$ is uniformly continuous on compact sets by step [](#continuous){.pf-ref}. A triangle that meets both halves is cut by $\RR$ into at most three triangles, each in one closed half-disk, and the integrals over the cut segments cancel.
+If $T$ lies in one closed half-disk, take triangles $T_\varepsilon$ in the open half-disk with $T_\varepsilon\to T$; $\int_{\partial T_\varepsilon}F=0$ by Goursat's theorem, since $F$ is holomorphic on the open upper half-disk by hypothesis and on the open lower half-disk by step [](#lower){.pf-ref}, and the integrals converge because $F$ is uniformly continuous on compact sets by step [](#continuous){.pf-ref}. A triangle that meets both halves is cut by $\RR$ into at most three triangles, each in one closed half-disk, and the integrals over the cut segments cancel.
 :::
 
 :::
