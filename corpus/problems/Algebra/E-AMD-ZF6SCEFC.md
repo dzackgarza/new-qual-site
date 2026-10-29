@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-ZF6SCEFC
 kind: problem
-title: Groups of order $p^2q^2$ are abelian when $q\nmid p^2-1$ and $p\nmid q^2-1$
+title: Groups of order $p^2q^2$, $p\neq q$, are abelian when $q\nmid p^2-1$ and $p\nmid q^2-1$
 classification:
   areas:
   - algebra
@@ -16,14 +16,18 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source omits that p and q are distinct, and for p = q = 2 the dihedral group of order 16 satisfies both divisibility conditions and is not abelian. The statement now assumes p and q distinct.
 ---
 
 ::: {.exercise}
-Show that a group of order $p^2 q^2$ where $q$ does not divide $p^2-1$ and $p$ does not divide $q^2-1$ is abelian.
+Let $p$ and $q$ be distinct primes. Show that a group of order $p^2 q^2$ where $q$ does not divide $p^2-1$ and $p$ does not divide $q^2-1$ is abelian.
 :::
 
 ::: {.solution}
-Let $p\neq q$ be primes and $|G|=p^2q^2$, and let $n_p$, $n_q$ be the numbers of Sylow $p$- and $q$-subgroups.
+Let $|G|=p^2q^2$, and let $n_p$, $n_q$ be the numbers of Sylow $p$- and $q$-subgroups.
 
 ::: pf
 
