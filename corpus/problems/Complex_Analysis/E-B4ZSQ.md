@@ -20,7 +20,7 @@ u(x, y) = x^3 - 3xy^2 -x -y.
 $$
 :::
 
-::: {.concept}
+::: {.hint}
 A harmonic conjugate $v$ of $u$ on a simply connected domain is computed as follows:
 
 - Start with $u$
