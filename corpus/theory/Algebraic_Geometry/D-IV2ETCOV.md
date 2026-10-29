@@ -49,7 +49,7 @@ For a connected covering space $S\to S^2$ of degree $n$, $\chi(S)=n\chi(S^2)=2n$
 
 ::: {.example title="The affine line in characteristic $p$"}
 Let $\operatorname{char}k=p>0$.
-The Artin--Schreier cover $\Spec k[x,y]/(y^p - y - x)\to\AA^1$, $(x,y)\mapsto x$, is finite étale of degree $p$ and connected, because $d(y^p - y) = -dy$ never vanishes; so $\AA^1_k$ is not simply connected.
+The Artin--Schreier cover $\Spec k[x,y]/(y^p - y - x)\to\AA^1$, $(x,y)\mapsto x$, is finite étale of degree $p$, because $\partial(y^p - y - x)/\partial y = -1$ is a unit, and connected, because its total space is isomorphic to $\Spec k[y] = \AA^1$; so $\AA^1_k$ is not simply connected.
 The cover extends to a morphism $\PP^1\to\PP^1$ that is totally and wildly ramified at $\infty$ ([[D-IV2RAM]]).
 Over $\CC$, $\AA^1$ has no nontrivial finite étale covers.
 :::
