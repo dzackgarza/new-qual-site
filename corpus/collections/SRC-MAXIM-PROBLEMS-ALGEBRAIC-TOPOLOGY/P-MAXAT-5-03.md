@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-5-03
 kind: problem
-title: Maxim algebraic topology 5.3
+title: An oriented vector bundle with a nowhere-zero section has zero Euler class
 classification:
   areas: [topology]
   topics: []
