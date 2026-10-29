@@ -66,31 +66,16 @@ $$
 [[PR-GSDKO]]
 
 ::: {.proof title="of orbit-stabilizer"}
-Define $\Phi\colon G/G_x\to\Orb(x)$ by $\Phi(gG_x) = g\actson x$.
+Define $\Phi\colon G/G_x\to\Orb(x)$ by $\Phi(gG_x) = g\cdot x$.
 
-- $\Phi$ is well defined: if $gG_x = hG_x$, then $\inverseof{g} h \in G_x$, so $h\actson x = g\actson\big((\inverseof{g} h)\actson x\big) = g\actson x$.
+- $\Phi$ is well defined: if $gG_x = hG_x$, then $\inverseof{g} h \in G_x$, so $h\cdot x = g\cdot\big((\inverseof{g} h)\cdot x\big) = g\cdot x$.
 
-- $\Phi$ is injective: if $g\actson x=h\actson x$, then $\inverseof{g} h \actson x = x$, so $\inverseof{g} h \in G_x$ and $gG_x = hG_x$.
+- $\Phi$ is injective: if $g\cdot x=h\cdot x$, then $\inverseof{g} h \cdot x = x$, so $\inverseof{g} h \in G_x$ and $gG_x = hG_x$.
 
-- $\Phi$ is surjective, since every element of $\Orb(x)$ has the form $g\actson x$.
+- $\Phi$ is surjective, since every element of $\Orb(x)$ has the form $g\cdot x$.
 :::
 
 [[PR-KGHJ2]]
-
-::: {.proof title="that stabilizers along an orbit are conjugate"}
-Let $x\in X$ and $y\in \Orb(x)$, choose $g\in G$ with $g\actson x=y$, and write $H_x \definedas \Stab(x)$ and $H_y\definedas \Stab(y)$.
-Then
-$$
-\begin{aligned}
-h\in H_x &\iff hx = x \\
-&\iff h\inverseof{g} y = \inverseof{g} y \\
-&\iff gh\inverseof{g} y = y \\
-&\iff gh\inverseof{g} \in H_y \\
-&\iff h\in \inverseof{g} H_y g,
-\end{aligned}
-$$
-so $H_x = \inverseof{g} H_y g$.
-:::
 
 [[T-QYDVH]]
 
@@ -126,7 +111,7 @@ $G$ acts on itself by $\phi\colon g \mapsto (h\mapsto gh)$.
 :::
 
 ::: {.example title="Conjugation on $G$: centers and centralizers"}
-$G$ acts on itself by $g\actson x = gx\inverseof{g}$.
+$G$ acts on itself by $g\cdot x = gx\inverseof{g}$.
 
 - $\Orb(x) = [x]$ is the [[D-HLDEY|conjugacy class]] of $x$.
   The orbit of $e$ is $\theset e$, so the action is transitive only when $G$ is trivial; every orbit is a singleton if and only if $G$ is abelian.
