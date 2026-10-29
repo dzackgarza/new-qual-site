@@ -28,21 +28,21 @@ Prove that if $H$ is a characteristic subgroup of $K$ ($H \operatorname{char} K$
 :::
 
 ::: {.solution}
-Let $\varphi\in\operatorname{Aut}(G)$. Since $K\operatorname{char}G$,
-\[
+Let $\varphi\in\Aut(G)$. Since $K\operatorname{char}G$,
+$$
 \varphi(K)=K.
-\]
+$$
 Therefore the restriction
-\[
+$$
 \varphi|_K:K\to K
-\]
+$$
 is an automorphism of $K$. Since $H\operatorname{char}K$, this restriction preserves $H$:
-\[
+$$
 \varphi(H)=(\varphi|_K)(H)=H.
-\]
+$$
 Because this holds for every automorphism $\varphi$ of $G$, we have
-\[
+$$
 H\operatorname{char}G.
-\]
+$$
 Thus characteristicity is transitive.
 :::
