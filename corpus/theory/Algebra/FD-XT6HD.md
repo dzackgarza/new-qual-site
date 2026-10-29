@@ -4,7 +4,7 @@ id: FD-XT6HD
 kind: definition
 title: Rational canonical form
 prompts:
-- 'Which decomposition of $V$ as a $k[x]\dash$module gives the rational canonical form of $\phi: V \to V$?'
+- 'Which decomposition of $V$ as a $k[x]\dash$module gives the rational canonical form of $\phi\colon V \to V$?'
 classification:
   areas:
   - algebra
