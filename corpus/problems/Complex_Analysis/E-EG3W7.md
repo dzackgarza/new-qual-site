@@ -22,31 +22,37 @@ audit:
 ---
 
 ::: {.exercise}
-Let $\Omega \subseteq \mathbb{C}$ be a connected open region.
-(1) Prove that if $f: \Omega \to \mathbb{C}$ is a non-constant holomorphic function, then $f'$ is holomorphic on $\Omega$ and the zeros of $f'$ are **isolated** in $\Omega$.
-(2) Prove that if $f, g: \Omega \to \mathbb{C}$ are holomorphic functions satisfying $f'(z) = g'(z)$ for all $z \in \Omega$, then $f(z) - g(z) = C$ for some constant $C \in \mathbb{C}$.
+Let $\Omega \subseteq \CC$ be a connected open region.
+
+(1) Prove that if $f: \Omega \to \CC$ is a non-constant holomorphic function, then $f'$ is holomorphic on $\Omega$ and the zeros of $f'$ are isolated in $\Omega$.
+
+(2) Prove that if $f, g: \Omega \to \CC$ are holomorphic functions satisfying $f'(z) = g'(z)$ for all $z \in \Omega$, then $f(z) - g(z) = C$ for some constant $C \in \CC$.
 :::
 
 ::: {.solution}
-Because $f$ is holomorphic, $f'$ is holomorphic.
 
-If the zeros of $f'$ had an accumulation point in $\Omega$, the identity theorem would give
-\[
-f'\equiv0.
-\]
-A holomorphic function with zero derivative on a connected domain is constant, contradicting the hypothesis. Hence the zeros of $f'$ are isolated.
+::: pf
 
-For the second statement, let
-\[
-h=f-g.
-\]
-Then $h$ is holomorphic and
-\[
-h'=f'-g'=0.
-\]
-Therefore $h$ is constant on the connected domain $\Omega$. Thus
-\[
-f-g=C
-\]
-for some $C\in\mathbb C$.
+::: pf-step
+(1) $f'$ is holomorphic on $\Omega$ and its zeros are isolated.
+
+::: pf-proof
+The derivative of a holomorphic function is holomorphic.
+If the zeros of $f'$ had an accumulation point in $\Omega$, the identity theorem on the connected set $\Omega$ would give $f'\equiv0$.
+A holomorphic function with zero derivative on a connected open set is constant, which contradicts the hypothesis.
+:::
+
+:::
+
+::: pf-step
+(2) $f-g=C$ for some $C\in\CC$.
+
+::: pf-proof
+Put $h=f-g$. Then $h$ is holomorphic and $h'=f'-g'=0$ on $\Omega$, so $h$ is constant on the connected set $\Omega$.
+:::
+
+:::
+
+:::
+
 :::
