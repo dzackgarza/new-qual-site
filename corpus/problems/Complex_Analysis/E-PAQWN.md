@@ -16,35 +16,50 @@ review: draft
 ---
 
 ::: {.problem}
-a.
-Let Let $f:{\mathbb C}\rightarrow {\mathbb C}$ be an entire function. Assume the existence of a non-negative integer $m$, and of positive constants $L$ and $R$, such that for all $z$ with $|z|>R$ the inequality $$|f(z)| \leq L |z|^m$$ holds. 
+(a) Let $f:\CC\rightarrow \CC$ be an entire function. Assume the existence of a non-negative integer $m$, and of positive constants $L$ and $R$, such that for all $z$ with $\abs{z}>R$ the inequality $$\abs{f(z)} \leq L \abs{z}^m$$ holds.
 Prove that $f$ is a polynomial of degree $\leq m$.
 
-b.
-Let $f:{\mathbb C}\rightarrow {\mathbb C}$ be an entire function. Suppose that there exists a real number $M$ such that for all $z\in {\mathbb C}, \Re(f) \leq M$.
+(b) Let $f:\CC\rightarrow \CC$ be an entire function. Suppose that there exists a real number $M$ such that for all $z\in \CC, \Re(f) \leq M$.
 Prove that $f$ must be a constant.
 :::
 
 ::: {.solution}
-\[
-\abs{f^{(n)}(z)} 
-&= \abs{ {1\over 2\pi i} \oint_\gamma {f(\xi) \over (\xi - z)^{n+1}} \dxi } \\
-&\leq  {1\over 2\pi i} \oint_\gamma { \abs{ f(\xi) } \over \abs{\xi - z}^{n+1}} \dxi \\
-&\leq {1\over 2\pi i } \oint_\gamma {LR^m \over R^{n+1} } \dxi \\
-&= {L\over 2\pi i} R^{m-(n+1)} \cdot 2\pi R \\
-&= LR^{m-n} \\
-&\convergesto{R\to\infty} 0 \qquad \iff m-n<0 \iff n>m
-,\]
-so $f$ is a polynomial of degree at most $m$.
 
-Now if $f$ is entire, $g(z) \definedas e^{f(z)}$ is entire and
-\[
-\abs{g(z)} = \abs{e^{f(z)}} = e^{\Re(f)} \leq e^M
-,\]
-so $g$ is an entire bounded function and thus constant by Liouville, making $f$ constant.
-Why this is true:
-\[
-e^{f} = C \implies e^f \cdot f' = 0 \implies f'\equiv 0
-,\]
-since $e^f$ is nonvanishing, and $f'\equiv 0$ implies $f$ is constant.
+Write $f(z)=\sum_{n\geq0}c_nz^n$, the Taylor series of $f$ at $0$, which converges on $\CC$.
+
+::: pf
+
+::: {.pf-step #cauchy}
+(a) For every $n\geq0$ and $\rho>R$, $\abs{c_n}\leq L\rho^{m-n}$.
+
+::: pf-proof
+By the Cauchy integral formula on the circle $\abs{\xi}=\rho$,
+$$
+\abs{c_n} = \abs{\frac{1}{2\pi i}\oint_{\abs{\xi}=\rho}\frac{f(\xi)}{\xi^{n+1}}\,d\xi} \leq \frac{1}{2\pi}\cdot 2\pi\rho\cdot\frac{L\rho^m}{\rho^{n+1}} = L\rho^{m-n}.
+$$
+:::
+
+:::
+
+::: pf-step
+(a) $f$ is a polynomial of degree at most $m$.
+
+::: pf-proof
+For $n>m$, letting $\rho\to\infty$ in step [](#cauchy){.pf-ref} gives $c_n=0$.
+:::
+
+:::
+
+::: pf-step
+(b) $f$ is constant.
+
+::: pf-proof
+$g\coloneqq e^{f}$ is entire and $\abs{g} = e^{\Re f}\leq e^M$, so $g$ is constant by Liouville's theorem.
+Then $0 = g' = f'e^{f}$, and $e^{f}$ never vanishes, so $f'\equiv0$ and $f$ is constant.
+:::
+
+:::
+
+:::
+
 :::
