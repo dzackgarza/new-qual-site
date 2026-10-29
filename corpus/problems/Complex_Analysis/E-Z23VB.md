@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.exercise}
-Find a Mobius transformation sending
+Find a Möbius transformation sending
 
 - $1\to 3$
 
@@ -25,20 +25,33 @@ Find a Mobius transformation sending
 :::
 
 ::: {.solution}
-Use cross ratios: set $T(z) \definedas (z;,1,i,2)$ and $S(w) = (w;,3,0,-1)$ and solve $T(z) = S(w) \implies w = (\inverseof{S} T)(z)$:
-\[
-{z-i \over z-2}{1-2\over 1-i}
-&= {w-0\over w+1}{3+1 \over 3-0} \\
-\implies -\frac{\left(i + 1\right) \, {\left(z - i\right)}}{2 \, {\left(z - 2\right)}}
-&=
-\frac{4 \, w}{3 \, {\left(w + 1\right)}} \\
-\implies w
-&=
--\frac{3 \, {\left(\left(i + 1\right) \, z - i + 1\right)}}{\left(3 i + 11\right) \, z - 3 i - 13}
-\\
-&= - {3z - 3i \over {3i+11\over i+1}z + {-3i-13 \over 3i+11}} \\
-&= - {3z - 3i \over (7-4i) z + {-8+5i} } \\
-&= \frac{-3 z+3 i}{(7-4 i) z+(-8+5 i)}
-.\]
+
+::: pf
+
+::: {.pf-step #cross-ratio}
+The Möbius map $w = T(z)$ with $T(1)=3$, $T(i)=0$, $T(2)=-1$ is determined by
+$$
+\frac{z-i}{z-2}\cdot\frac{1-2}{1-i} = \frac{w-0}{w+1}\cdot\frac{3+1}{3-0}.
+$$
+
+::: pf-proof
+Each side is the Möbius map sending the three given points, in order, to $1, 0, \infty$; a Möbius map is determined by the images of three distinct points, so $T$ composed with the right-hand map equals the left-hand map.
+:::
+
+:::
+
+::: pf-step
+$$
+\boxed{T(z) = \frac{-3z+3i}{(7-4i)z+(-8+5i)}}.
+$$
+
+::: pf-proof
+Solving step [](#cross-ratio){.pf-ref} for $w$ gives this map, which is checked directly: $T(i) = 0$, $T(1) = \frac{-3+3i}{-1+i} = 3$, and $T(2) = \frac{-6+3i}{6-3i} = -1$.
+Its determinant $-3(-8+5i) - 3i(7-4i) = 12 - 36i$ is nonzero, so $T$ is a Möbius transformation.
+:::
+
+:::
+
+:::
 
 :::
