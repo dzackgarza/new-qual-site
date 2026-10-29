@@ -16,80 +16,62 @@ review: draft
 
 ::: {.problem}
 Describe all conjugacy classes of $3\times3$ matrices $A\in M_3(\QQ)$ satisfying
-\[
+$$
 A^4-A^3-A+I=0.
-\]
+$$
 Give a representative of each class.
 :::
 
 ::: {.solution}
-Factor the annihilating polynomial:
-\[
-x^4-x^3-x+1=(x-1)(x^3-1)=(x-1)^2(x^2+x+1).
-\]
-Over $\QQ$, the factors
-\[
-x-1,\qquad x^2+x+1
-\]
-are irreducible. Therefore the minimal polynomial of $A$ divides
-\[
-(x-1)^2(x^2+x+1).
-\]
-
-View $\QQ^3$ as a $\QQ[x]$-module via $x\cdot v=Av$. The possible elementary divisors have total degree $3$, with $(x-1)$-primary blocks of size at most $2$ and an $(x^2+x+1)$-primary block of size at most $1$.
-
-There are exactly three possibilities:
+View $\QQ^3$ as a $\QQ[x]$-module via $x\cdot v=Av$; conjugacy classes of $A$ correspond to isomorphism classes of these modules, which are determined by their elementary divisors.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #minpoly}
+The minimal polynomial of $A$ divides $(x-1)^2(x^2+x+1)$, and $x-1$ and $x^2+x+1$ are irreducible over $\QQ$.
 
-Three size-$1$ $(x-1)$ blocks:
-\[
-A\sim I_3.
-\]
+::: pf-proof
+$x^4-x^3-x+1=(x-1)(x^3-1)=(x-1)^2(x^2+x+1)$ annihilates $A$.
+The quadratic $x^2+x+1$ has negative discriminant, so it has no rational root.
+:::
+
+:::
+
+::: {.pf-step #divisors}
+The elementary divisors of $A$ are $(x-1),(x-1),(x-1)$, or $(x-1)^2,(x-1)$, or $(x-1),(x^2+x+1)$.
+
+::: pf-proof
+By step [](#minpoly){.pf-ref} each elementary divisor is $x-1$, $(x-1)^2$, or $x^2+x+1$, with $x^2+x+1$ occurring at most once because $(x^2+x+1)^2$ does not divide the minimal polynomial, and their degrees sum to $3$.
+These are all the ways to obtain total degree $3$.
+:::
 
 :::
 
 ::: pf-step
-
-One size-$2$ $(x-1)$ block and one size-$1$ block:
-\[
-A\sim
+There are exactly three conjugacy classes, with representatives
+$$
+I_3,
+\qquad
 \begin{pmatrix}
 1&1&0\\
 0&1&0\\
 0&0&1
-\end{pmatrix}.
-\]
-
-:::
-
-::: pf-step
-
-One $(x-1)$ block and one block for $x^2+x+1$:
-
-:::
-
-:::
-
-\[
-A\sim
+\end{pmatrix},
+\qquad
 \begin{pmatrix}
 1&0&0\\
 0&0&-1\\
 0&1&-1
 \end{pmatrix}.
-\]
-The lower-right block is a companion matrix for $x^2+x+1$.
+$$
 
-These three matrices have distinct minimal polynomials
-\[
-x-1,
-\qquad
-(x-1)^2,
-\qquad
-(x-1)(x^2+x+1),
-\]
-so they are pairwise nonconjugate. Hence these are exactly the conjugacy classes.
+::: pf-proof
+These matrices realize the three lists of step [](#divisors){.pf-ref}: the second has a $2\times2$ Jordan block for $1$, and the lower-right block of the third is the companion matrix of $x^2+x+1$.
+Their minimal polynomials $x-1$, $(x-1)^2$ and $(x-1)(x^2+x+1)$ are distinct, so they are pairwise nonconjugate.
+:::
+
+:::
+
+:::
+
 :::
