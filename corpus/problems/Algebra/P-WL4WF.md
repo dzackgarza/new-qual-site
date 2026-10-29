@@ -22,33 +22,33 @@ audit:
 ---
 
 ::: {.problem}
-Prove that the cyclotomic extension $\mathbb{Q}(\zeta_{43})/\mathbb{Q}$ has degree 42 and that its Galois group is cyclic of order 42:
-$$\operatorname{Gal}(\mathbb{Q}(\zeta_{43})/\mathbb{Q}) \cong (\mathbb{Z}/43\mathbb{Z})^\times \cong \mathbb{Z}/42\mathbb{Z}.$$
+Prove that the cyclotomic extension $\QQ(\zeta_{43})/\QQ$ has degree 42 and that its Galois group is cyclic of order 42:
+$$\Gal(\QQ(\zeta_{43})/\QQ) \cong (\ZZ/43\ZZ)^\times \cong \ZZ/42\ZZ.$$
 :::
 
 ::: {.solution}
 For the prime $43$,
-\[
+$$
 \Phi_{43}(x)=1+x+\cdots+x^{42}.
-\]
-The shifted polynomial $\Phi_{43}(x+1)$ is Eisenstein at $43$, so $\Phi_{43}$ is irreducible over $\mathbb Q$. Hence
-\[
-[\mathbb Q(\zeta_{43}):\mathbb Q]=\deg\Phi_{43}=42.
-\]
+$$
+The shifted polynomial $\Phi_{43}(x+1)$ is Eisenstein at $43$, so $\Phi_{43}$ is irreducible over $\QQ$. Hence
+$$
+[\QQ(\zeta_{43}):\QQ]=\deg\Phi_{43}=42.
+$$
 
-The field $\mathbb Q(\zeta_{43})$ is the splitting field of $\Phi_{43}$, hence is Galois. Every automorphism is determined by
-\[
+The field $\QQ(\zeta_{43})$ is the splitting field of $\Phi_{43}$, hence is Galois. Every automorphism is determined by
+$$
 \zeta_{43}\longmapsto \zeta_{43}^a,
-\qquad a\in(\mathbb Z/43\mathbb Z)^\times,
-\]
+\qquad a\in(\ZZ/43\ZZ)^\times,
+$$
 and every such $a$ occurs. Therefore
-\[
-\operatorname{Gal}(\mathbb Q(\zeta_{43})/\mathbb Q)
-\cong(\mathbb Z/43\mathbb Z)^\times.
-\]
+$$
+\Gal(\QQ(\zeta_{43})/\QQ)
+\cong(\ZZ/43\ZZ)^\times.
+$$
 Since the multiplicative group of a finite field is cyclic,
-\[
-(\mathbb Z/43\mathbb Z)^\times\cong C_{42}.
-\]
+$$
+(\ZZ/43\ZZ)^\times\cong C_{42}.
+$$
 Thus the extension has degree $42$ and cyclic Galois group of order $42$.
 :::
