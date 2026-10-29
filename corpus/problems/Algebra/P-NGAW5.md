@@ -25,43 +25,49 @@ State and prove Eisenstein's criterion.
 :::
 
 ::: {.solution}
-Let
-\[
-f(x)=a_nx^n+\cdots+a_1x+a_0\in\ZZ[x]
-\]
-be primitive. Suppose there is a prime $p$ such that
-\[
-p\nmid a_n,
-\qquad
-p\mid a_i\quad(0\le i<n),
-\qquad
-p^2\nmid a_0.
-\]
+Bars denote reduction modulo $p$, from $\ZZ[x]$ to $\FF_p[x]$.
+
+::: pf
+
+::: pf-step
+Eisenstein's criterion: let $f(x)=a_nx^n+\cdots+a_1x+a_0\in\ZZ[x]$ with $n\ge1$, and let $p$ be a prime with $p\nmid a_n$, $p\mid a_i$ for $0\le i<n$, and $p^2\nmid a_0$.
 Then $f$ is irreducible in $\QQ[x]$.
 
-::: {.proof}
-By Gauss's lemma it is enough to prove irreducibility in $\ZZ[x]$. Suppose
-\[
-f=gh
-\]
-with nonconstant $g,h\in\ZZ[x]$. Reduce modulo $p$. Since all nonleading coefficients of $f$ vanish modulo $p$,
-\[
-\bar f=\bar a_n x^n
-\]
-in $\FF_p[x]$. Thus
-\[
-\bar g=cx^r,
-\qquad
-\bar h=dx^s
-\]
-for some $r,s\ge1$ and nonzero $c,d\in\FF_p$.
+::: pf-proof
 
-Therefore the constant terms of both $g$ and $h$ are divisible by $p$. Their product is $a_0$, so
-\[
-p^2\mid a_0,
-\]
-contradicting the hypothesis.
+::: {.pf-step #gauss}
+If $f$ is reducible in $\QQ[x]$, then $f=gh$ with $g,h\in\ZZ[x]$ of degrees $r,s\ge1$.
 
-Hence no nontrivial factorization exists, and $f$ is irreducible over $\QQ$.
+::: pf-proof
+This is Gauss's lemma.
 :::
+
+:::
+
+::: {.pf-step #reduce}
+In such a factorization, $\bar g=cx^r$ and $\bar h=dx^s$ with $c,d\in\FF_p$ nonzero.
+
+::: pf-proof
+The leading coefficients of $g$ and $h$ multiply to $a_n$, which $p$ does not divide, so $\deg\bar g=r$ and $\deg\bar h=s$.
+By hypothesis $\bar f=\bar a_nx^n$, and $\bar g\bar h=\bar f$; since $\FF_p[x]$ is a UFD and $x$ is irreducible, the divisors of $\bar a_nx^n$ are unit multiples of powers of $x$.
+:::
+
+:::
+
+::: pf-step
+$f$ is irreducible in $\QQ[x]$.
+
+::: pf-proof
+Otherwise take $g,h$ as in step [](#gauss){.pf-ref}.
+By step [](#reduce){.pf-ref} and $r,s\ge1$, $p$ divides the constant terms of $g$ and of $h$, so $p^2$ divides their product $a_0$, contrary to the hypothesis.
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
 :::
