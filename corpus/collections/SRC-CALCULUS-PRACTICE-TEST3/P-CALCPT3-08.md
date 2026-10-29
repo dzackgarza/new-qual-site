@@ -5,7 +5,7 @@ kind: problem
 title: "Possible domain of the continuous function $\\sqrt{\\tan^2x-1}$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Continuity, Trigonometry]
 relations: []
 review: draft
 audit:
