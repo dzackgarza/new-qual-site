@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FJI2B
 kind: problem
-title: Classification of finitely generated modules over $\mathbb{Z}$, PIDs, and Dedekind
+title: Classification of finitely generated modules over $\ZZ$, PIDs, and Dedekind
   rings
 classification:
   areas:
@@ -34,11 +34,11 @@ Let all modules be finitely generated.
 ::: pf-step
 
 Over $\ZZ$, every module is a finitely generated abelian group and has a unique invariant-factor decomposition
-\[
+$$
 M\cong \ZZ^r\oplus \ZZ/d_1\ZZ\oplus\cdots\oplus\ZZ/d_t\ZZ,
 \qquad
 1<d_1\mid d_2\mid\cdots\mid d_t.
-\]
+$$
 Equivalently, its torsion part has a unique elementary-divisor decomposition into cyclic groups of prime-power order.
 
 ::: pf-proof
@@ -52,12 +52,12 @@ This is the structure theorem for finitely generated modules over the PID $\ZZ$.
 ::: pf-step
 
 More generally, if $R$ is a PID, then
-\[
+$$
 M\cong R^r\oplus R/(a_1)\oplus\cdots\oplus R/(a_t),
 \qquad
-0\ne a_1\mid a_2\mid\cdots\mid a_t,
-\]
-with the nonunit invariant factors unique up to associates.
+a_1\mid a_2\mid\cdots\mid a_t,
+$$
+where the invariant factors $a_i$ are nonzero nonunits, unique up to associates.
 
 ::: pf-proof
 
@@ -70,17 +70,17 @@ This is the structure theorem for finitely generated modules over a PID. The fre
 ::: pf-step
 
 Let $R$ be a Dedekind domain. Then every finitely generated module decomposes as
-\[
+$$
 M\cong P\oplus T,
-\]
+$$
 where $T$ is the torsion submodule and $P$ is finitely generated projective.
 
 ::: pf-proof
 
 Over a Dedekind domain, finitely generated torsion-free modules are projective. The quotient $M/T$ is torsion-free, hence projective, so the exact sequence
-\[
+$$
 0\to T\to M\to M/T\to0
-\]
+$$
 splits. Put $P=M/T$.
 
 :::
@@ -90,10 +90,10 @@ splits. Put $P=M/T$.
 ::: pf-step
 
 If $P$ has positive rank $r$, then
-\[
+$$
 P\cong R^{r-1}\oplus I
-\]
-for a nonzero fractional ideal $I$, and the ideal class $[I]\in\operatorname{Cl}(R)$ is uniquely determined by $P$.
+$$
+for a nonzero fractional ideal $I$, and the ideal class $[I]\in\Cl(R)$ is uniquely determined by $P$.
 
 ::: pf-proof
 
@@ -106,11 +106,11 @@ This is the Steinitz classification of finitely generated projective modules ove
 ::: pf-step
 
 The torsion part has a unique primary decomposition
-\[
+$$
 T\cong
 \bigoplus_{\mathfrak p}
 \bigoplus_j R/\mathfrak p^{e_{\mathfrak p,j}},
-\]
+$$
 where only finitely many nonzero prime ideals $\mathfrak p$ occur and, for each $\mathfrak p$, the exponents may be ordered increasingly.
 
 ::: pf-proof
