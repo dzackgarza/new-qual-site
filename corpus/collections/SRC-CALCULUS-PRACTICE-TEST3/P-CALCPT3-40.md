@@ -5,7 +5,7 @@ kind: problem
 title: "Probability that $x\\ge yz$ for independent uniform $x,y,z$ on $[0,1]$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Probability, Integrals]
 relations: []
 review: draft
 audit:
