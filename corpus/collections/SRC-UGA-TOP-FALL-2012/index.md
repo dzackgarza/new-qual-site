@@ -24,7 +24,7 @@ source:
   - P-LWGC4
   - P-8TF26
   - id: P-DRVWD
-    comment: Problem 8; this appearance asks for $\pi_1$ and $H_*$ but does not explicitly request attaching maps.
+    comment: Problem 8
   date:
     kind: academic-term
     term: fall
