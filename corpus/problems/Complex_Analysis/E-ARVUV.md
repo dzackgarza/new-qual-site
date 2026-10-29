@@ -21,10 +21,9 @@ audit:
 
 ::: {.exercise}
 Show that
-\[
-\sum_{k\in \ZZ} {1\over k^2 + a^2} = {\pi \coth(\pi a) \over a} \qquad\text{for } a>0
-.\]
-
+$$
+\sum_{k\in \ZZ} \frac{1}{k^2 + a^2} = \frac{\pi \coth(\pi a)}{a} \qquad\text{for } a>0.
+$$
 :::
 
 ::: {.solution}
@@ -81,7 +80,7 @@ This is the residue theorem with the residues of steps [](#res-integer){.pf-ref}
 $\oint_{\gamma_N} f(z)\,dz \to 0$ as $N \to \infty$.
 
 ::: pf-proof
-$|\cot(\pi z)|$ is bounded on $\gamma_N$ independently of $N$, and $|z^2 + a^2| \ge (N+\tfrac12)^2-a^2$ there, so $|f(z)| \le C/N^2$ on $\gamma_N$. The perimeter is $O(N)$, so the integral is $O(1/N)$.
+On $\gamma_N$, $\abs{\cot(\pi z)}\le\coth(\pi/2)$: on the vertical sides $\abs{\cot(\pi z)}=\abs{\tanh(\pi\Im z)}\le1$, and on the horizontal sides $\abs{\cot(x+iy)}\le\coth\abs{y}$ with $\abs y\ge\pi/2$. Also $\abs{z^2 + a^2} \ge (N+\tfrac12)^2-a^2$ there, so $\abs{f(z)} \le C/N^2$ on $\gamma_N$. The perimeter is $O(N)$, so the integral is $O(1/N)$.
 :::
 
 :::
@@ -91,5 +90,5 @@ Letting $N\to\infty$ in step [](#residue-theorem-sum){.pf-ref} and using step []
 :::
 
 :::
-:::
 
+:::
