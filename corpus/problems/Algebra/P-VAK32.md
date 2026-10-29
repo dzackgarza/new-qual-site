@@ -22,22 +22,47 @@ audit:
 ---
 
 ::: {.problem}
-- Show that a nilpotent operator is diagonalizable if and only if it is the zero operator.
+Show that a nilpotent operator is diagonalizable if and only if it is the zero operator.
 :::
 
 ::: {.solution}
-If $T$ is nilpotent and $Tv=\lambda v$ with $v\ne0$, then for some $k$,
-\[
-0=T^kv=\lambda^k v,
-\]
-so $\lambda=0$. Thus a nilpotent operator has only the eigenvalue $0$.
+Let $T$ be a nilpotent operator on a vector space $V$, with $T^k=0$.
 
-If $T$ is also diagonalizable, it has a basis of eigenvectors, and every basis vector has eigenvalue $0$. Therefore $T$ vanishes on a basis and hence
-\[
-T=0.
-\]
-Conversely, the zero operator is nilpotent and its matrix in every basis is diagonal. Hence
-\[
+::: pf
+
+::: {.pf-step #eig}
+
+Every eigenvalue of $T$ is $0$.
+
+::: pf-proof
+
+If $Tv=\lambda v$ with $v\ne0$, then $0=T^kv=\lambda^k v$, so $\lambda^k=0$ and $\lambda=0$.
+
+:::
+
+:::
+
+::: {.pf-step #forward}
+
+If $T$ is diagonalizable, then $T=0$.
+
+::: pf-proof
+
+$V$ has a basis of eigenvectors of $T$, and by step [](#eig){.pf-ref} $T$ sends each of them to $0$. So $T$ vanishes on a basis.
+
+:::
+
+:::
+
+::: pf-qed
+
+Conversely, the zero operator is nilpotent and its matrix in every basis is diagonal. With step [](#forward){.pf-ref},
+$$
 \boxed{T\text{ nilpotent and diagonalizable}\iff T=0}.
-\]
+$$
+
+:::
+
+:::
+
 :::
