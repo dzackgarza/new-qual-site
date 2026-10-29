@@ -24,3 +24,30 @@ If $n$ apples, no two of the same weight, are lined up at random on a table, wha
 (D) $\frac1{2^n}$
 (E) $\left(\frac1n\right)^n$
 :::
+
+::: {.solution}
+"At random" means each of the $n!$ left-to-right orders of the apples is equally likely.
+
+::: pf
+
+::: {.pf-step #unique}
+Exactly one order is increasing in weight.
+
+::: pf-proof
+The weights are distinct, so sorting them gives one and only one increasing sequence.
+:::
+
+:::
+
+::: pf-step
+The probability is $\boxed{\frac1{n!}}$, choice (C).
+
+::: pf-proof
+By step [](#unique){.pf-ref}, one of $n!$ equally likely outcomes is favorable. For $n=3$, $\frac1{3!}=\frac16$, while (A), (B), (D), (E) give $\frac12$, $\frac13$, $\frac18$, $\frac1{27}$, so each other choice is wrong.
+:::
+
+:::
+
+:::
+
+:::
