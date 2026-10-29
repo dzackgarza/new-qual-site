@@ -26,39 +26,50 @@ Show that if $E \subset [0, 1]$ is uncountable, then there exists some $t \in (0
 :::
 
 ::: {.solution}
-For $t\in[0,1]$, set
-\[
-L_t=E\cap[0,t),\qquad R_t=E\cap(t,1].
-\]
-Suppose no $t\in(0,1)$ makes both sets uncountable.
+For $t\in[0,1]$, put $L_t=E\cap[0,t)$ and $R_t=E\cap(t,1]$. Suppose, for a contradiction, that for every $t\in(0,1)$ at least one of $L_t$ and $R_t$ is countable. Put
+$$
+a=\sup\{t\in[0,1]:L_t\text{ is countable}\},
+$$
+which exists because $L_0=\varnothing$.
 
-Define
-\[
-a=\sup\{t\in[0,1]:L_t\text{ is countable}\}.
-\]
-Because $L_0=\varnothing$, the set is nonempty. Since $E$ is uncountable, $a<1$ cannot fail merely because all initial segments are countable; in any case the following argument handles the endpoint possibilities.
+::: pf
 
-For every rational $q<a$, $L_q$ is countable. Hence
-\[
-E\cap[0,a)=\bigcup_{q\in\mathbb Q,\,q<a}L_q
-\]
-is countable.
-For every rational $q>a$, maximality of $a$ implies $L_q$ is uncountable; by the assumed failure of the conclusion, $R_q$ must therefore be countable. Hence
-\[
-E\cap(a,1]=\bigcup_{q\in\mathbb Q,\,q>a}R_q
-\]
-is countable.
-Thus
-\[
-E=(E\cap[0,a))\cup(E\cap\{a\})\cup(E\cap(a,1]
-\]
-is countable, a contradiction.
+::: {.pf-step #left}
 
-Therefore some $t\in(0,1)$ has both
-\[
-E\cap(-\infty,t)
-\quad\text{and}\quad
-E\cap(t,\infty)
-\]
-uncountable.
+$E\cap[0,a)$ is countable.
+
+::: pf-proof
+
+For each rational $q<a$ there is $t > q$ with $L_t$ countable, so $L_q \subseteq L_t$ is countable. Hence $E\cap[0,a)=\bigcup_{q\in\QQ,\,q<a}L_q$ is a countable union of countable sets.
+
+:::
+
+:::
+
+::: {.pf-step #right}
+
+$E\cap(a,1]$ is countable.
+
+::: pf-proof
+
+Let $q$ be rational with $q>a$. If $q \geq 1$, then $R_q = \varnothing$. If $q < 1$, then $q \in (0, 1)$ and $L_q$ is uncountable by the definition of $a$, so $R_q$ is countable by the assumption. Hence $E\cap(a,1]=\bigcup_{q\in\QQ,\,q>a}R_q$ is countable.
+
+:::
+
+:::
+
+::: pf-step
+
+Some $t\in(0,1)$ makes both $E\cap(-\infty,t)$ and $E\cap(t,\infty)$ uncountable.
+
+::: pf-proof
+
+By steps [](#left){.pf-ref} and [](#right){.pf-ref}, $E=(E\cap[0,a))\cup(E\cap\{a\})\cup(E\cap(a,1])$ is countable, which contradicts the hypothesis. So the assumption fails, and since $E \subset [0, 1]$, $E\cap(-\infty,t) = L_t$ and $E\cap(t,\infty) = R_t$.
+
+:::
+
+:::
+
+:::
+
 :::
