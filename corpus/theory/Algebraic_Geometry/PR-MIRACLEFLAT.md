@@ -40,16 +40,16 @@ A=\OO_{Y,y},\qquad B=\OO_{X,x},\qquad d=\dim A=\dim B.
 $$
 The ring $B$ is a finite $A$-module. Since $A\to B$ is local and finite, $\sqrt{\mfm_A B}=\mfm_B$, so depth computed with respect to $\mfm_A$ agrees with depth computed with respect to $\mfm_B$. Hence
 $$
-\operatorname{depth}_A B
-=\operatorname{depth}_B B
+\depth_A B
+=\depth_B B
 =d,
 $$
 because $B$ is Cohen--Macaulay.
 
 The regular local ring $A$ has finite global dimension $d$, so the finite $A$-module $B$ has finite projective dimension. Auslander--Buchsbaum gives
 $$
-\operatorname{pd}_A B+\operatorname{depth}_A B
-=\operatorname{depth}A=d.
+\operatorname{pd}_A B+\depth_A B
+=\depth A=d.
 $$
 Thus $\operatorname{pd}_A B=0$, so $B$ is finite projective over the local ring $A$, hence free. Therefore $B$ is flat over $A$. This holds at every $x$, so $f$ is flat.
 :::
