@@ -23,6 +23,7 @@ audit:
 Let $\phi\in L^1(\RR^n)$ such that $\int \phi = 1$ and define $\phi_t(x) = t^{-n}\phi(\inverseof{t} x)$.
 Show that if $f$ is bounded and uniformly continuous then $f\ast \phi_t \converges{t\to 0}\to f$ uniformly.
 :::
+
 ::: {.solution}
 If $\|f\|_\infty = 0$ then $f \ast \phi_t = 0 = f$; assume $\|f\|_\infty > 0$.
 
