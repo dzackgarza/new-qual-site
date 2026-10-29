@@ -18,39 +18,58 @@ Find a conformal  map from $\theset{\abs{z-1} < 2} \intersect \theset{\abs{z+1} 
 :::
 
 ::: {.solution}
-The two boundary circles meet at
-\[
-z=\pm i\sqrt3.
-\]
-Set
-\[
-T(z)=\frac{z-i\sqrt3}{z+i\sqrt3}.
-\]
-Then $T$ sends the two intersection points to $0$ and $\infty$, so each of the
-two boundary circles is sent to a line through the origin, hence to a ray on
-the relevant boundary arc.
+Write $L$ for the lens and set
+$$
+T(z)\coloneqq\frac{z-i\sqrt3}{z+i\sqrt3}.
+$$
 
-To identify the rays, note that $-1$ lies on the circle $|z-1|=2$ and $1$ lies
-on $|z+1|=2$. Direct computation gives
-\[
-T(-1)=e^{2\pi i/3},
+::: pf
+
+::: {.pf-step #corners}
+
+The boundary circles $\abs{z-1}=2$ and $\abs{z+1}=2$ meet exactly at $z=\pm i\sqrt3$.
+
+::: pf-proof
+
+Subtracting the equations $\abs{z\mp1}^2=4$ gives $\Re z=0$, and then $1+y^2=4$ gives $y=\pm\sqrt3$.
+
+:::
+
+:::
+
+::: {.pf-step #sector}
+
+$T$ maps $L$ biholomorphically onto the sector $\theset{w : 2\pi/3<\arg w<4\pi/3}$.
+
+::: pf-proof
+
+By step [](#corners){.pf-ref}, $T$ sends the two corners of $L$ to $0$ and $\infty$, so it sends each boundary circle to a line through $0$ and each boundary arc of $L$ to a ray from $0$. The point $-1$ lies on $\abs{z-1}=2$ and the point $1$ on $\abs{z+1}=2$, and
+$$
+T(-1)=\frac{-1-i\sqrt3}{-1+i\sqrt3}=e^{2\pi i/3},
 \qquad
-T(1)=e^{4\pi i/3}.
-\]
-Also $0$ lies in the lens and $T(0)=-1=e^{i\pi}$. Thus $T$ maps the lens
-biholomorphically onto the sector
-\[
-\frac{2\pi}{3}<\arg w<\frac{4\pi}{3}.
-\]
-After rotating by $e^{-2\pi i/3}$ we obtain the sector
-$0<\arg w<2\pi/3$. On this sector choose the branch of $w^{3/2}$ with
-$0<\arg(w^{3/2})<\pi$. Therefore
-\[
-\boxed{
-\Phi(z)=
-\left(
-e^{-2\pi i/3}\frac{z-i\sqrt3}{z+i\sqrt3}
-\right)^{3/2}}
-\]
-is a conformal bijection from the lens onto the upper half-plane.
+T(1)=\frac{1-i\sqrt3}{1+i\sqrt3}=e^{4\pi i/3}.
+$$
+So the boundary arcs go to the rays of argument $2\pi/3$ and $4\pi/3$. Since $0\in L$ and $T(0)=-1$, the image of $L$ is the sector between these rays that contains $-1$.
+
+:::
+
+:::
+
+::: pf-step
+
+$$
+\boxed{\Phi(z)=\left(e^{-2\pi i/3}\,\frac{z-i\sqrt3}{z+i\sqrt3}\right)^{3/2}},
+$$
+with the branch of $w^{3/2}$ satisfying $0<\arg(w^{3/2})<\pi$ on $\theset{0<\arg w<2\pi/3}$, is a conformal bijection from $L$ onto $\HH$.
+
+::: pf-proof
+
+By step [](#sector){.pf-ref}, $z\mapsto e^{-2\pi i/3}T(z)$ maps $L$ biholomorphically onto the sector $\theset{0<\arg w<2\pi/3}$, and the stated branch of $w\mapsto w^{3/2}$ maps this sector biholomorphically onto $\theset{0<\arg\zeta<\pi}=\HH$.
+
+:::
+
+:::
+
+:::
+
 :::
