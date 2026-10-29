@@ -25,8 +25,6 @@ Construct maps $\RP^{2n-1} \to \RP^{2n-1}$ without fixed points from linear tran
 :::
 
 ::: {.solution}
-**Goal.** Show every map $f: S^{2n} \to S^{2n}$ has a fixed point or an antipodal point; deduce every map $\RP^{2n} \to \RP^{2n}$ has a fixed point; and construct fixed-point-free maps of $\RP^{2n-1}$.
-
 ::: pf
 
 ::: {.pf-step #s1}
@@ -80,10 +78,10 @@ Every map $\RP^{2n} \to \RP^{2n}$ has a fixed point.
 ::: pf-proof
 
 ::: pf-step
-A map $g: \RP^{2n} \to \RP^{2n}$ lifts to a map $\tilde g: S^{2n} \to S^{2n}$.
+For a map $g: \RP^{2n} \to \RP^{2n}$ there is a map $\tilde g: S^{2n} \to S^{2n}$ with $p \circ \tilde g = g \circ p$, where $p: S^{2n} \to \RP^{2n}$ is the quotient map.
 
 ::: pf-proof
-$\RP^{2n}$ has universal cover $S^{2n}$; since $\pi_1(\RP^{2n}) = \ZZ/2$ and $g_*$ maps $\ZZ/2$ into itself, the lift exists (the induced map on $\pi_1$ is either identity or zero, both compatible with the covering).
+The map $g \circ p: S^{2n} \to \RP^{2n}$ lifts through the covering $p$ because $S^{2n}$ is simply connected for $n \ge 1$ and locally path-connected.
 :::
 
 :::
@@ -111,7 +109,7 @@ $[x] = [-x]$ in $\RP^{2n}$, and $g([x]) = [\tilde g(x)] = [x]$ or $[-x] = [x]$.
 :::
 
 ::: {.pf-step #s3}
-Fixed-point-free maps of $\RP^{2n-1}$.
+A linear map $\RR^{2n} \to \RR^{2n}$ without real eigenvectors induces a map $\RP^{2n-1} \to \RP^{2n-1}$ without fixed points.
 
 ::: pf-proof
 
@@ -119,7 +117,7 @@ Fixed-point-free maps of $\RP^{2n-1}$.
 A linear map $T: \RR^{2n} \to \RR^{2n}$ without real eigenvectors induces a map $\RP^{2n-1} \to \RP^{2n-1}$.
 
 ::: pf-proof
-$T$ sends lines to lines (it is linear), and no line is fixed because a fixed line would be an eigenspace, i.e. an eigenvector.
+$T$ has no kernel, since a nonzero vector in the kernel would be an eigenvector for $0$; so $T$ sends each line through the origin to a line, and $[v] \mapsto [Tv]$ is a continuous map of $\RP^{2n-1}$. A fixed line $[v] = [Tv]$ would make $v$ an eigenvector.
 :::
 
 :::
@@ -135,10 +133,6 @@ $T$ has no real eigenvectors (its eigenvalues are $\pm i$), so the induced map o
 
 :::
 
-:::
-
-::: pf-qed
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} are the three requested statements.
 :::
 
 :::
