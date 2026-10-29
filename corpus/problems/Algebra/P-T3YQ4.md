@@ -22,40 +22,33 @@ audit:
 ---
 
 ::: {.problem}
-(1) Define the **nilradical** $\operatorname{Nil}(R)$ of a commutative ring $R$, and state the characterization theorem relating it to the intersection of all prime ideals of $R$.
-(2) Prove that the polynomial ring $F[x]$ over a field $F$ contains **infinitely many prime ideals**.
+(a) Define the nilradical $\operatorname{Nil}(R)$ of a commutative ring $R$, and state the characterization theorem relating it to the intersection of all prime ideals of $R$.
+
+(b) Prove that the polynomial ring $F[x]$ over a field $F$ contains infinitely many prime ideals.
 :::
 
 ::: {.solution}
-The nilradical is
-\[
-\operatorname{Nil}(R)=\sqrt{(0)}
-=\{a\in R: a^m=0\text{ for some }m\ge1\}.
-\]
-The standard characterization is
-\[
-\boxed{\operatorname{Nil}(R)=\bigcap_{\mathfrak p\in\operatorname{Spec}R}\mathfrak p.}
-\]
-In particular, because $F[x]$ is a domain,
-\[
-\operatorname{Nil}(F[x])=(0).
-\]
 
-To prove that $F[x]$ has infinitely many prime ideals, suppose instead that its nonzero prime ideals are
-\[
-(p_1),\dots,(p_m),
-\]
-where each $p_i$ is irreducible. Set
-\[
-h=p_1\cdots p_m+1.
-\]
-Then $h$ is nonconstant, so it has an irreducible divisor $q\in F[x]$. Hence $(q)$ is a nonzero prime ideal. By the assumed list, $q$ is associate to some $p_j$. But then $p_j$ divides both $p_1\cdots p_m$ and $h$, hence divides
-\[
-h-p_1\cdots p_m=1,
-\]
-a contradiction.
+::: pf
 
-Therefore $F[x]$ has infinitely many nonzero prime ideals, and hence infinitely many prime ideals.
+::: pf-step
 
-The nilradical theorem is compatible with this conclusion, but it does not by itself force infinitude here: $(0)$ is already a prime ideal of the domain $F[x]$, so the intersection of any family of primes containing $(0)$ is automatically $(0)$.
+(a) $\operatorname{Nil}(R)=\sqrt{(0)}=\{a\in R: a^m=0\text{ for some }m\ge1\}$, and $\boxed{\operatorname{Nil}(R)=\bigcap_{\mathfrak p\in\Spec R}\mathfrak p}$.
+
+::: pf-proof
+
+The first equality is the definition. The second is the standard characterization of the nilradical as the intersection of all prime ideals.
+
+:::
+
+:::
+
+::: pf-qed
+
+(b) Every nonzero prime ideal of the PID $F[x]$ is $(p)$ with $p$ irreducible. Suppose the nonzero prime ideals were only $(p_1),\ldots,(p_m)$, and set $h=p_1\cdots p_m+1$. Then $h$ is nonconstant, so it has an irreducible factor $q$, and $(q)$ is a nonzero prime ideal; hence $q$ is associate to some $p_j$. Then $p_j$ divides both $h$ and $p_1\cdots p_m$, hence divides $1$, a contradiction. So $F[x]$ has infinitely many nonzero prime ideals.
+
+:::
+
+:::
+
 :::
