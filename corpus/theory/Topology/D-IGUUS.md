@@ -25,10 +25,6 @@ Let $X$ be a [[D-ZOU5G|CW complex]] with $n$-skeleton $X^n$.
 Then $X^n/X^{n-1}$ is homeomorphic to $\bigvee_\alpha S^n_\alpha$, a wedge of $n$-spheres with one sphere for each [[D-MEPE3|$n$-cell]] of $X$.
 :::
 
-::: {.proposition}
-If each $(X_\alpha, x_\alpha)$ is a good pair, then the inclusions $X_\alpha\hookrightarrow\bigvee_\alpha X_\alpha$ induce an isomorphism
-$$
-\bigoplus_\alpha\tilde H_n(X_\alpha)\to\tilde H_n\qty{\bigvee_\alpha X_\alpha}
-$$
-for every $n$.
+::: {.remark}
+The reduced homology of a wedge sum is [[PR-B6BB2|the direct sum of the reduced homologies]] when the basepoints form good pairs.
 :::
