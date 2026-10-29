@@ -34,93 +34,75 @@ Here $C_q$ depends on $q, q_1, q_2$ and $C_1, C_2$.
 
 ::: {.solution}
 
+For $\beta>1$ and a measurable $f$, write $S_\beta(f)\coloneqq\sum_{k\in\ZZ}\beta^{kp}\lambda_f(\beta^k)$.
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #part-i}
 
-Prove the discrete characterization of $L^p$.
-
-::: pf-proof
-
-Fix $\beta>1$ and define
-\[
-A_k:=\{x:\beta^k<|f(x)|\le \beta^{k+1}\}.
-\]
-Then the sets $A_k$ are pairwise disjoint and cover $\{|f|>0\}$ up to a null set. Hence
-\[
-\sum_k \beta^{kp}\mu(A_k)
-\le \|f\|_p^p
-\le \beta^p\sum_k\beta^{kp}\mu(A_k).
-\]
-
-Also
-\[
-\lambda_f(\beta^k)
-=\sum_{j\ge k}\mu(A_j).
-\]
-Therefore, by Tonelli for nonnegative series,
-\[
-\begin{aligned}
-\sum_{k\in\mathbb Z}\beta^{kp}\lambda_f(\beta^k)
-&=\sum_j\mu(A_j)\sum_{k\le j}\beta^{kp}\\
-&=\frac{\beta^p}{\beta^p-1}
-\sum_j\beta^{jp}\mu(A_j).
-\end{aligned}
-\]
-Thus
-\[
-\|f\|_p^p<\infty
-\quad\Longleftrightarrow\quad
-\sum_{k\in\mathbb Z}\beta^{kp}\lambda_f(\beta^k)<\infty.
-\]
-Since the argument holds for every $\beta>1$, this proves part (i).
-
-:::
-
-:::
-
-::: pf-step
-
-Normalize the input for part (ii).
+(i) For every $\beta>1$, $f\in L^p$ if and only if $S_\beta(f)<\infty$. Moreover, if $\abs{f}<\infty$ almost everywhere, then $\norm{f}_p^p\le(\beta^p-1)\,S_\beta(f)$.
 
 ::: pf-proof
 
-If $f=0$, the conclusion is trivial. Otherwise set
-\[
-h:=\frac{f}{\|f\|_p}.
-\]
-Then $\|h\|_p=1$. By linearity,
-\[
-Tf=\|f\|_p\,Th.
-\]
-It is therefore enough to prove a bound
-\[
-\|Th\|_q\le C_q
-\]
-for all $h$ with $\|h\|_p=1$.
+Fix $\beta>1$.
+If $E\coloneqq\{\abs{f}=\infty\}$ has positive measure, then $f\notin L^p$, and $\lambda_f(\beta^k)\ge\mu(E)>0$ for every $k$, so the terms $\beta^{kp}\lambda_f(\beta^k)$ with $k\ge0$ do not tend to $0$ and $S_\beta(f)=\infty$.
+Both sides of the equivalence therefore fail, and we may assume $\mu(E)=0$.
+
+Set $A_k\coloneqq\{x:\beta^k<\abs{f(x)}\le\beta^{k+1}\}$ for $k\in\ZZ$.
+These sets are pairwise disjoint, and their union is $\{0<\abs{f}<\infty\}$, which differs from $\{\abs{f}>0\}$ by the null set $E$.
+Since $\beta^{kp}<\abs{f}^p\le\beta^{(k+1)p}$ on $A_k$,
+$$
+\sum_{k}\beta^{kp}\mu(A_k)\le\norm{f}_p^p\le\beta^p\sum_{k}\beta^{kp}\mu(A_k).
+$$
+Also $\lambda_f(\beta^k)=\sum_{j\ge k}\mu(A_j)$, so exchanging the order of summation of nonnegative terms gives
+$$
+S_\beta(f)=\sum_j\mu(A_j)\sum_{k\le j}\beta^{kp}=\frac{\beta^p}{\beta^p-1}\sum_j\beta^{jp}\mu(A_j).
+$$
+The two displays together give
+$$
+\frac{\beta^p-1}{\beta^p}\,S_\beta(f)\le\norm{f}_p^p\le(\beta^p-1)\,S_\beta(f),
+$$
+so $\norm{f}_p<\infty$ exactly when $S_\beta(f)<\infty$.
+Since $\beta>1$ was arbitrary, this holds for all $\beta>1$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #normalize}
 
-Sum the low-frequency distribution levels.
+For part (ii) it suffices to find $C_q$ with $\norm{Th}_q\le C_q$ for every $h\in L^p$ with $\norm{h}_p=1$.
 
 ::: pf-proof
 
-For integers $k\le0$, the assumed weak-type estimate gives
-\[
-\lambda_{Th}(2^k)
-\le C_1^{q_1}2^{-kq_1}.
-\]
-Hence
-\[
-\sum_{k\le0}2^{kq}\lambda_{Th}(2^k)
-\le C_1^{q_1}
-\sum_{k\le0}2^{k(q-q_1)}.
-\]
-Since $q>q_1$, this geometric series converges.
+If $f=0$, then $Tf=0$ by linearity and the bound holds.
+Otherwise $h\coloneqq f/\norm{f}_p$ has $\norm{h}_p=1$ and $Tf=\norm{f}_p\,Th$ by linearity, so $\norm{Tf}_q=\norm{f}_p\norm{Th}_q\le C_q\norm{f}_p$.
+
+:::
+
+:::
+
+::: {.pf-step #low}
+
+If $\norm{h}_p=1$, then $\sum_{k\le0}2^{kq}\lambda_{Th}(2^k)\le C_1^{q_1}\big(1-2^{-(q-q_1)}\big)^{-1}$.
+
+::: pf-proof
+
+For integers $k\le0$ the first weak-type hypothesis gives $\lambda_{Th}(2^k)\le C_1^{q_1}2^{-kq_1}$, so the sum is at most $C_1^{q_1}\sum_{k\le0}2^{k(q-q_1)}$.
+Since $q>q_1$, this geometric series converges to the stated value.
+
+:::
+
+:::
+
+::: {.pf-step #high}
+
+If $\norm{h}_p=1$, then $\sum_{k\ge0}2^{kq}\lambda_{Th}(2^k)\le C_2^{q_2}\big(1-2^{-(q_2-q)}\big)^{-1}$.
+
+::: pf-proof
+
+For integers $k\ge0$ the second weak-type hypothesis gives $\lambda_{Th}(2^k)\le C_2^{q_2}2^{-kq_2}$, so the sum is at most $C_2^{q_2}\sum_{k\ge0}2^{-k(q_2-q)}$.
+Since $q<q_2$, this geometric series converges to the stated value.
 
 :::
 
@@ -128,42 +110,15 @@ Since $q>q_1$, this geometric series converges.
 
 ::: pf-step
 
-Sum the high-frequency distribution levels.
+(ii) $\boxed{\norm{Tf}_q\le C_q\norm{f}_p}$ with $C_q^q=(2^q-1)\Big(C_1^{q_1}\big(1-2^{-(q-q_1)}\big)^{-1}+C_2^{q_2}\big(1-2^{-(q_2-q)}\big)^{-1}\Big)$.
 
 ::: pf-proof
 
-For integers $k\ge0$,
-\[
-\lambda_{Th}(2^k)
-\le C_2^{q_2}2^{-kq_2},
-\]
-so
-\[
-\sum_{k\ge0}2^{kq}\lambda_{Th}(2^k)
-\le C_2^{q_2}
-\sum_{k\ge0}2^{-k(q_2-q)}.
-\]
-Because $q<q_2$, this geometric series also converges.
-
-Combining Steps 3 and 4 yields
-\[
-\sum_{k\in\mathbb Z}2^{kq}\lambda_{Th}(2^k)
-\le C(q,q_1,q_2,C_1,C_2)<\infty.
-\]
-By part (i) with $\beta=2$, $Th\in L^q$. More quantitatively, the proof of part (i) gives
-\[
-\|Th\|_q^q
-\le (2^q-1)
-\sum_{k\in\mathbb Z}2^{kq}\lambda_{Th}(2^k),
-\]
-so
-\[
-\|Th\|_q\le C_q.
-\]
-Undoing the normalization,
-\[
-\boxed{\|Tf\|_q\le C_q\|f\|_p.}
-\]
+Let $\norm{h}_p=1$.
+Since $Th\in L^{q_1}$, $\abs{Th}<\infty$ almost everywhere.
+Steps [](#low){.pf-ref} and [](#high){.pf-ref} bound $\sum_{k\in\ZZ}2^{kq}\lambda_{Th}(2^k)$ by $C_q^q/(2^q-1)$.
+Step [](#part-i){.pf-ref}, applied to $Th$ with exponent $q$ and $\beta=2$, gives $\norm{Th}_q^q\le(2^q-1)\sum_{k\in\ZZ}2^{kq}\lambda_{Th}(2^k)\le C_q^q$.
+Step [](#normalize){.pf-ref} turns this bound into the claim.
 
 :::
 
