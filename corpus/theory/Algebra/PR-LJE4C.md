@@ -32,7 +32,8 @@ In particular, every ideal of $R/I$ is of the form $S/I$ for a unique ideal $S \
 
 (b) The same maps give a bijection between subrings $A \subseteq R$ containing $I$ and subrings of $R/I$.
 
-(c) (Third isomorphism theorem.)
-    For ideals $I \subseteq J \subseteq R$, there is a ring isomorphism $$ \frac{R/I}{J/I} \cong \frac{R}{J}.
+(c) For ideals $I \subseteq J \subseteq R$, there is a ring isomorphism (the third isomorphism theorem)
+$$
+\frac{R/I}{J/I} \cong \frac{R}{J}.
 $$
 :::
