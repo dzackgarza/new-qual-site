@@ -14,6 +14,10 @@ audit:
   by: chatgpt
   date: 2026-09-12
   note: Checked against the retained Questions_from_Tie.pdf compilation, section Fall 2016, question 3.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source asks to bound the integral of log(z)/z^2 over |z| = R without choosing a determination of log z, which has no single-valued branch on the circle. Part (c) now fixes the determination log R + it along z(t) = Re^{it}, 0 <= t <= 2pi.
 ---
 
 ::: {.problem}
@@ -30,21 +34,7 @@ $$
 \big | \int _ { \alpha } f \big | \leq M \times \mathrm { l e n g t h } ( \alpha ) .
 $$
 
-(c) Let $C _ { R }$ be the circle $| z | = R ,$ , described in the counterclockwise direction, where $R > 1$ Provide an upper bound for $| \int _ { C _ { R } } \frac { \log { ( z ) } } { z ^ { 2 } } |$ , which depends only on R and other constants.
-:::
-
-::: {.remark}
-Erratum: part (c) does not specify a branch or determination of $\log z$. No single-valued holomorphic logarithm exists on a neighborhood of the full circle $C_R$.
-The estimate below uses the standard continuous determination along the parametrization
-$$
-z(t)=Re^{it},
-\qquad
-0\le t\le2\pi,
-$$
-namely
-$$
-\Log_{C_R}(Re^{it})=\log R+it.
-$$
+(c) Let $C_{R}$ be the circle $|z| = R$, parametrized counterclockwise by $z(t) = Re^{it}$, $0 \le t \le 2\pi$, where $R > 1$, and let $\Log_{C_R}$ be the continuous determination of the logarithm along $C_R$ given by $\Log_{C_R}(Re^{it}) = \log R + it$. Provide an upper bound for $\left| \int_{C_{R}} \frac{\Log_{C_R} z}{z^{2}}\,dz \right|$, which depends only on $R$ and other constants.
 :::
 
 ::: {.solution}
@@ -139,7 +129,7 @@ z(t)=Re^{it},
 \qquad
 0\le t\le2\pi,
 $$
-the chosen determination satisfies
+the determination $\Log_{C_R}$ satisfies
 $$
 \abs{\Log_{C_R}(z(t))}
 \le
@@ -244,7 +234,7 @@ $$
 
 ::: pf-qed
 
-Step [](#s1-1){.pf-ref} gives the precise definition requested in part (a), step [](#s1-2){.pf-ref} proves part (b), and step [](#s1-5){.pf-ref} gives the requested $R$-dependent bound for part (c) after specifying the logarithm determination, which the statement leaves open.
+Step [](#s1-1){.pf-ref} gives the precise definition requested in part (a), step [](#s1-2){.pf-ref} proves part (b), and step [](#s1-5){.pf-ref} gives the requested $R$-dependent bound for part (c).
 
 :::
 
