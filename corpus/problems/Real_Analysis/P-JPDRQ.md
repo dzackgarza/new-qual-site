@@ -19,20 +19,23 @@ audit:
 ---
 
 ::: {.exercise}
-- Can a convergent sequence of real numbers have a subsequence converging to a different limit?
+(a) Can a convergent sequence of real numbers have a subsequence converging to a different limit?
 
-- What does it mean for a sequence of functions to converge **pointwise** and to converge **uniformly**?
+(b) What does it mean for a sequence of functions to converge **pointwise** and to converge **uniformly**?
 
-  - Give an example of a sequence that converges pointwise but not uniformly.
+(c) Give an example of a sequence that converges pointwise but not uniformly.
 
-- Prove that every sequence admits a monotone subsequence.
+(d) Prove that every sequence admits a monotone subsequence.
 
-- Prove the monotone convergence theorem for sequences.
+(e) Prove the monotone convergence theorem for sequences.
 
-- Prove the Bolzano-Weierstrass Theorem.
+(f) Prove the Bolzano-Weierstrass Theorem.
 :::
+
 ::: {.solution}
-Functions $f_n\colon E \to \RR$ \dfn{converge pointwise} to $f$ if $f_n(x) \to f(x)$ for every $x \in E$, and \dfn{converge uniformly} to $f$ if $\sup_{x \in E}|f_n(x) - f(x)| \to 0$.
+(b) Functions $f_n\colon E \to \RR$ \dfn{converge pointwise} to $f$ if $f_n(x) \to f(x)$ for every $x \in E$, and \dfn{converge uniformly} to $f$ if $\sup_{x \in E}|f_n(x) - f(x)| \to 0$.
+
+The five steps answer (a), (c), (d), (e), and (f) in order; (a) has answer no.
 
 ::: pf
 
