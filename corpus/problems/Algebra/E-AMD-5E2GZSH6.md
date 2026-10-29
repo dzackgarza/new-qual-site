@@ -29,37 +29,37 @@ where $X^g = \{x \in X \mid g \cdot x = x\}$ is the fixed point set of $g$.
 :::
 
 ::: {.solution}
-Let
-$$
-S=\{(g,x)\in G\times X:g\cdot x=x\}.
-$$
-We count $|S|$ in two ways.
+Let $S=\{(g,x)\in G\times X:g\cdot x=x\}$, and write $G_x$ for the stabilizer of $x$.
 
-For fixed $g\in G$, the admissible $x$ are exactly $X^g$, so
-$$
-|S|=\sum_{g\in G}|X^g|.
-$$
-For fixed $x\in X$, the admissible $g$ are exactly the stabilizer $G_x$, so
-$$
-|S|=\sum_{x\in X}|G_x|.
-$$
+::: pf
 
-Now sum the second expression orbit by orbit. If $\mathcal O$ is an orbit and $x\in\mathcal O$, then orbit-stabilizer gives
-$$
-|G_x|=\frac{|G|}{|\mathcal O|}.
-$$
-Hence
-$$
-\sum_{x\in\mathcal O}|G_x|
-=|\mathcal O|\frac{|G|}{|\mathcal O|}
-=|G|.
-$$
-There are $|X/G|$ orbits, so
-$$
-\sum_{x\in X}|G_x|=|G|\,|X/G|.
-$$
-Combining the two counts yields
-$$
-\boxed{|X/G|=\frac1{|G|}\sum_{g\in G}|X^g|}.
-$$
+::: {.pf-step #count-g}
+$\abs S=\sum_{g\in G}\abs{X^g}$.
+
+::: pf-proof
+For fixed $g\in G$, the pairs $(g,x)\in S$ are those with $x\in X^g$.
+:::
+
+:::
+
+::: {.pf-step #count-x}
+$\abs S=\abs G\,\abs{X/G}$.
+
+::: pf-proof
+For fixed $x\in X$, the pairs $(g,x)\in S$ are those with $g\in G_x$, so $\abs S=\sum_{x\in X}\abs{G_x}$. If $\mathcal O$ is an orbit and $x\in\mathcal O$, orbit-stabilizer gives $\abs{G_x}=\abs G/\abs{\mathcal O}$, so $\sum_{x\in\mathcal O}\abs{G_x}=\abs G$. Summing over the $\abs{X/G}$ orbits gives the claim.
+:::
+
+:::
+
+::: pf-step
+$\boxed{\abs{X/G}=\frac1{\abs G}\sum_{g\in G}\abs{X^g}}$.
+
+::: pf-proof
+Equate the two counts of steps [](#count-g){.pf-ref} and [](#count-x){.pf-ref} and divide by $\abs G$.
+:::
+
+:::
+
+:::
+
 :::
