@@ -40,7 +40,7 @@ For $k\ge2$ this is equivalent to
 $$
 \frac{(n-2)!}{2^{k-1}k!(n-2k)!}=1.
 $$
-For $k=2$ it reads $(n-2)(n-3)=8$, which has no integer solution. For $k=3$ it reads $(n-2)(n-3)(n-4)(n-5)=24$, whose unique solution with $n\ge6$ is $n=6$. For $k\ge4$, at the smallest possible $n=2k$ the left side is $\frac{(2k-2)!}{2^{k-1}k!}>1$, and it increases with $n$. Hence $k=1$ when $n\ne6$. All transpositions are conjugate, so the same holds for each of them.
+For $k=2$ it reads $(n-2)(n-3)=4$, which has no integer solution because $4$ is not a product of two consecutive integers. For $k=3$ it reads $(n-2)(n-3)(n-4)(n-5)=24$, whose unique solution with $n\ge6$ is $n=6$. For $k\ge4$, at the smallest possible $n=2k$ the left side is $\frac{(2k-2)!}{2^{k-1}k!}>1$, and it increases with $n$. Hence $k=1$ when $n\ne6$. All transpositions are conjugate, so the same holds for each of them.
 
 :::
 
