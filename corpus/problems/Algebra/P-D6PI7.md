@@ -22,6 +22,10 @@ audit:
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "- Show that if a matrix is diagonalizable, its minimal polynomial is squarefree." with no matrix or field declared; the statement declares an n x n matrix A over a field F.'
+- event: solution-written
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: Converted the prose solution to a STYLE-08 structured proof.
 ---
 
 ::: {.problem}
@@ -29,27 +33,39 @@ Let $A$ be an $n\times n$ matrix over a field $F$. Show that if $A$ is diagonali
 :::
 
 ::: {.solution}
-Suppose $A$ is diagonalizable over $F$. Then for some $P\in\GL_n(F)$,
-$$
-P^{-1}AP=\diag(\lambda_1,\dots,\lambda_n).
-$$
-Let $\mu_1,\dots,\mu_r$ be the distinct eigenvalues of $A$ and put
-$$
-q(x)=\prod_{j=1}^r(x-\mu_j).
-$$
-Then $q$ is squarefree and
-$$
-q(A)=P\,\diag(q(\lambda_1),\dots,q(\lambda_n))P^{-1}=0.
-$$
-Hence the minimal polynomial $m_A$ divides $q$.
+Suppose $A$ is diagonalizable over $F$, so that $P^{-1}AP=\diag(\lambda_1,\ldots,\lambda_n)$ for some $P\in\GL_n(F)$.
+Let $\mu_1,\ldots,\mu_r$ be the distinct eigenvalues of $A$, put $q(x)=\prod_{j=1}^r(x-\mu_j)$, and let $m_A$ be the minimal polynomial of $A$.
 
-Conversely, if $\mu_j$ is an eigenvalue with eigenvector $v\ne0$, then
+::: pf
+
+::: {.pf-step #divides}
+$m_A\mid q$.
+
+::: pf-proof
+Each $\lambda_i$ is one of the $\mu_j$, so $q(\lambda_i)=0$ and
 $$
-0=m_A(A)v=m_A(\mu_j)v,
+q(A)=P\,\diag(q(\lambda_1),\ldots,q(\lambda_n))P^{-1}=0.
 $$
-so $m_A(\mu_j)=0$. Thus every factor $(x-\mu_j)$ divides $m_A$. Since these factors are pairwise coprime,
-$$
-q\mid m_A.
-$$
-Therefore $m_A=q$, a product of distinct linear factors. In particular, $m_A$ is squarefree.
+The minimal polynomial divides every polynomial that annihilates $A$.
+:::
+
+:::
+
+::: {.pf-step #divided}
+$q\mid m_A$.
+
+::: pf-proof
+If $v\ne0$ is an eigenvector for $\mu_j$, then $0=m_A(A)v=m_A(\mu_j)v$, so $m_A(\mu_j)=0$ and $(x-\mu_j)\mid m_A$.
+The factors $x-\mu_j$ are pairwise coprime, so their product $q$ divides $m_A$.
+:::
+
+:::
+
+::: pf-qed
+Both polynomials are monic, so steps [](#divides){.pf-ref} and [](#divided){.pf-ref} give $m_A=q$, a product of distinct linear factors.
+Hence $m_A$ is squarefree.
+:::
+
+:::
+
 :::
