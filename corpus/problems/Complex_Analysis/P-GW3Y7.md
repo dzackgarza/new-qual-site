@@ -15,9 +15,9 @@ review: draft
 
 ::: {.exercise}
 Find the number of solutions in $\theset{\Re(z) \leq 0}$ of
-\[
+$$
 -2e^z = z+3
-.\]
+.$$
 :::
 
 ::: {.hint}
@@ -25,33 +25,68 @@ Show $h(z) = z + 3 + 2e^z$ has one root in $\theset{ \Re(z) \leq 0}$.
 :::
 
 ::: {.solution}
+Write $p(z) \coloneqq z+3+2e^z$ and $F(z)\coloneqq z+3$; the solutions are the zeros of $p$. Let $D$ be the open disk $\abs{z+3}<2$.
 
-Note that $\abs{e^z} = e^{\Re(z)} \leq e^{0} = 1$ since $\Re(z) \leq 0$, so if the equality holds then
-\[
-\abs{2e^z} = \abs{z+3} \implies \abs{z+3}\leq 2
-.\]
-So apply Rouché to $\Omega$ the circle of radius 2 centered at $z=-3$.
-Write $p(z) \definedas z+3 + 2e^z$, then
+::: pf
 
-- Big: $F(z) = z+3$, so $\abs{F(z)} = 2$ on $\bd \Omega$.
-- Small: $g(z) = 2e^z$, so $\abs{g(z)} = 2e^{\Re(z)} < 2$ in $\Omega$.
+::: {.pf-step #confine}
+Every zero of $p$ with $\Re z\le 0$ lies in $D$.
 
-Then $Z_p = Z_F = 1$, and any such zero is a solution to the original equation.
+::: pf-proof
+If $p(z)=0$ and $\Re z\le 0$, then $\abs{z+3}=\abs{2e^z}=2e^{\Re z}\le 2$. Equality would force $\Re z=0$, but every point with $\abs{z+3}\le 2$ has $\Re z\le -1$. So $\abs{z+3}<2$.
+:::
+
+:::
+
+::: {.pf-step #rouche}
+$p$ has exactly one zero in $D$, and $D\subseteq\theset{\Re z\le 0}$.
+
+::: pf-proof
+On $\abs{z+3}=2$ we have $\Re z\le -1$, so $\abs{p(z)-F(z)}=2e^{\Re z}\le 2e^{-1}<2=\abs{F(z)}$. By Rouché's theorem $p$ and $F$ have the same number of zeros in $D$, namely one. Every point of $D$ has $\Re z<-1$.
+:::
+
+:::
+
+::: pf-step
+The equation has $\boxed{1}$ solution in $\theset{\Re z\le 0}$.
+
+::: pf-proof
+Steps [](#confine){.pf-ref} and [](#rouche){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::
 
 ::: {.solution title="Alternative"}
-Use the following region:
+Apply Rouché's theorem on the half-disk bounded by the segment $C_1=\theset{it \suchthat t\in[-R,R]}$ and the left semicircle $\abs z=R$, $\Re z\le 0$:
 
 ![figures/2021-07-29_20-39-31.png](../../assets/figures/2021-07-29_20-39-31.png)
 
-Consider $p(z) \definedas z+3+2e^z$, take $F(z) \definedas z+3$ and $h(z) \definedas 2e^z$ for the perturbation.
-On $C_1, z=it$ for $t\in [-R, R]$, so
-\[
-\abs{F(z)} &= \abs{3+it} \geq 3 \\
-\abs{h(z)} &= 2e^{\Re(iy)}=2
-,\]
-so $\abs{h} < \abs{F}$ here.
-On $\abs{z} = R$, $\abs{h(z)} < 2e^{\Re(z)} < 2$ since $\Re(z) < 0$, and $\abs{F(z)} = \bigo(R)$, so for $R\gg 1$ we have $\abs{F} > \abs{h}$ here too.
+With $p$ and $F$ as above, write $h(z)\coloneqq 2e^z = p(z)-F(z)$.
 
-Thus $Z_{h+F} = Z_f = 1$ in this region, and taking $R\to\infty$ covers all of $\Re(z) \leq 0$.
+::: pf
+
+::: pf-step
+For $R>5$, $\abs{h}<\abs{F}$ on the boundary of the half-disk.
+
+::: pf-proof
+On $C_1$, $\abs{F(it)}=\abs{3+it}\ge 3>2=\abs{h(it)}$. On the semicircle, $\abs{h(z)}=2e^{\Re z}\le 2$ and $\abs{F(z)}\ge R-3>2$.
+:::
+
+:::
+
+::: pf-step
+$p$ has exactly $\boxed{1}$ zero with $\Re z\le 0$.
+
+::: pf-proof
+By Rouché's theorem $p$ has as many zeros in each half-disk as $F$, which has the single zero $-3$. No zero of $p$ lies on $C_1$, by the previous step, and every zero with $\Re z\le 0$ lies in the half-disk for $R$ large; letting $R\to\infty$ gives the count.
+:::
+
+:::
+
+:::
+
 :::
