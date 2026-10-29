@@ -26,11 +26,32 @@ Show that any normal $p$-subgroup of a finite group $G$ is contained in every Sy
 :::
 
 ::: {.solution}
-Let $N\trianglelefteq G$ be a normal $p$-subgroup and let $P\in\Syl_p(G)$. Since $N\trianglelefteq G$, the product $NP$ is a subgroup of $G$. Moreover,
-$$
-|NP|=\frac{|N||P|}{|N\cap P|}
-$$
-is a power of $p$, so $NP$ is a $p$-subgroup containing $P$.
+Let $N\trianglelefteq G$ be a normal $p$-subgroup and let $P\in\Syl_p(G)$.
 
-By maximality of the Sylow $p$-subgroup $P$, we must have $NP=P$. Therefore $N\le P$. Since $P$ was arbitrary, $N$ is contained in every Sylow $p$-subgroup of $G$.
+::: pf
+
+::: {.pf-step #np-p-group}
+$NP$ is a $p$-subgroup of $G$ that contains $P$.
+
+::: pf-proof
+$NP$ is a subgroup because $N$ is normal, and
+$$
+\abs{NP}=\frac{\abs N\abs P}{\abs{N\cap P}}
+$$
+is a power of $p$.
+:::
+
+:::
+
+::: pf-step
+$N\le P$.
+
+::: pf-proof
+$P$ is a $p$-subgroup of maximal order, so step [](#np-p-group){.pf-ref} forces $NP=P$, hence $N\le P$. Since $P$ is arbitrary, $N$ lies in every Sylow $p$-subgroup.
+:::
+
+:::
+
+:::
+
 :::
