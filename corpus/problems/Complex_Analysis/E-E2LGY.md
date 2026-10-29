@@ -47,9 +47,9 @@ $\sup_{z\in K}\abs{f_n(z)-f_m(z)}\le{L\over2\pi\delta}\sup_{\xi\in\partial Q}\ab
 
 ::: pf-proof
 For $z\in K$, the Cauchy integral formula applied to the entire function $f_n-f_m$ gives
-\[
-f_n(z)-f_m(z)={1\over2\pi i}\oint_{\partial Q}{f_n(\xi)-f_m(\xi)\over\xi-z}\dxi
-,\]
+$$
+f_n(z)-f_m(z)={1\over2\pi i}\oint_{\partial Q}{f_n(\xi)-f_m(\xi)\over\xi-z}\dxi,
+$$
 and $\abs{\xi-z}\ge\delta$ on $\partial Q$.
 :::
 
@@ -64,22 +64,16 @@ By step [](#uniform-on-boundary){.pf-ref} the right side of step [](#cauchy-esti
 
 :::
 
-::: {.pf-step #g-entire}
-$g$ is entire.
+::: pf-step
+$g$ is entire, and $f_n\to g$ uniformly on every compact subset of $\CC$.
 
 ::: pf-proof
-By step [](#uniform-on-K){.pf-ref}, $g$ is a uniform limit of continuous functions on every compact set, hence continuous. For every closed triangle $T$, $\int_{\partial T} g=\lim_n\int_{\partial T} f_n=0$ by uniform convergence on $\partial T$ and Cauchy's theorem. By Morera's theorem, $g$ is entire.
+The compact set $K$ in step [](#uniform-on-K){.pf-ref} was arbitrary, which gives the second claim.
+Hence $g$ is a uniform limit of continuous functions on every compact set, so $g$ is continuous. For every closed triangle $T$, $\int_{\partial T} g=\lim_n\int_{\partial T} f_n=0$ by uniform convergence on $\partial T$ and Cauchy's theorem. By Morera's theorem, $g$ is entire.
 :::
 
 :::
 
-::: pf-qed
-Steps [](#g-entire){.pf-ref} and [](#uniform-on-K){.pf-ref} are the two claims.
 :::
-
-:::
-
-
-
 
 :::
