@@ -24,59 +24,48 @@ audit:
 
 ::: {.exercise}
 Let $K$ be a field, let $f\in K[x]$ have degree $n\ge1$, and let $F$ be its splitting field. Prove that
-\[
+$$
 [F:K]\mid n!.
-\]
+$$
 In particular, $[F:K]\le n!$.
 :::
 
 ::: {.solution}
-We prove the divisibility by induction on $n=\deg f$.
+We argue by strong induction on $n=\deg f$, for all base fields at once. If $n=1$, the splitting field is $K$.
+Let $n\ge2$ and assume the claim for every polynomial of degree less than $n$ over every field.
 
-If $n=1$, the splitting field is $K$.
+::: pf
 
-Suppose first that $f$ is irreducible of degree $n$. Choose a root $\alpha\in F$. Then
-\[
-[K(\alpha):K]=n.
-\]
-Over $K(\alpha)$ we can write
-\[
-f=(x-\alpha)g,
-\qquad \deg g=n-1,
-\]
-and $F$ is the splitting field of $g$ over $K(\alpha)$. By induction,
-\[
-[F:K(\alpha)]\mid (n-1)!.
-\]
-Hence
-\[
-[F:K]=[F:K(\alpha)]\,[K(\alpha):K]\mid (n-1)!\,n=n!.
-\]
+::: {.pf-step #irreducible-case}
+If $f$ is irreducible, then $[F:K]\mid n!$.
 
-Now suppose $f$ is reducible. Write
-\[
-f=gh
-\]
-with $g,h\in K[x]$ nonconstant, say $\deg g=d$ and $\deg h=n-d$ with $1\le d<n$. Let $L$ be the splitting field of $g$ over $K$. By induction,
-\[
-[L:K]\mid d!.
-\]
-Since $g$ already splits over $L$, the splitting field $F$ of $f$ is exactly the splitting field of $h$ over $L$. Applying induction again, now over the base field $L$, gives
-\[
-[F:L]\mid (n-d)!.
-\]
-Therefore
-\[
-[F:K]=[F:L][L:K]\mid d!(n-d)!.
-\]
-Finally,
-\[
-\frac{n!}{d!(n-d)!}=\binom nd\in\mathbb Z,
-\]
-so $d!(n-d)!\mid n!$. Hence
-\[
-\boxed{[F:K]\mid n!}.
-\]
-In particular, $[F:K]\le n!$.
+::: pf-proof
+Choose a root $\alpha\in F$. Then $[K(\alpha):K]=n$, and over $K(\alpha)$ one has $f=(x-\alpha)g$ with $\deg g=n-1$. The field $F$ is the splitting field of $g$ over $K(\alpha)$, so by induction $[F:K(\alpha)]\mid(n-1)!$. Hence
+$$
+[F:K]=[F:K(\alpha)]\,[K(\alpha):K]\mid(n-1)!\,n=n!.
+$$
 :::
 
+:::
+
+::: {.pf-step #reducible-case}
+If $f=gh$ with $g,h\in K[x]$ of degrees $d$ and $n-d$, where $1\le d<n$, then $[F:K]\mid n!$.
+
+::: pf-proof
+Let $L$ be the splitting field of $g$ over $K$. By induction $[L:K]\mid d!$. Since $g$ splits over $L$, the field $F$ is the splitting field of $h$ over $L$, and induction over the base field $L$ gives $[F:L]\mid(n-d)!$. Hence $[F:K]=[F:L][L:K]$ divides $d!(n-d)!$, which divides $n!$ because $\frac{n!}{d!(n-d)!}=\binom nd\in\ZZ$.
+:::
+
+:::
+
+::: pf-step
+$\boxed{[F:K]\mid n!}$, and in particular $[F:K]\le n!$.
+
+::: pf-proof
+Every $f$ of degree $n\ge2$ is irreducible or a product as in step [](#reducible-case){.pf-ref}; step [](#irreducible-case){.pf-ref} covers the first case.
+:::
+
+:::
+
+:::
+
+:::
