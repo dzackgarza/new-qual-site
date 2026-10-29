@@ -14,7 +14,6 @@ relations: []
 review: draft
 ---
 
-
 ::: {.problem}
 Let $\gamma$ be a piecewise smooth simple closed curve with interior $\Omega_1$ and exterior $\Omega_2$.
 Assume $f'$ exists in an open set containing $\gamma$ and $\Omega_2$ with $\lim_{z\to \infty} f(z) = A$.
