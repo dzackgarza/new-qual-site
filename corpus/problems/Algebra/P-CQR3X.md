@@ -19,6 +19,10 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: solution-written
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: Converted the prose solution to a STYLE-08 structured proof.
 ---
 
 ::: {.problem}
@@ -27,13 +31,28 @@ Prove that $G$ is solvable if and only if all of its composition factors are of 
 :::
 
 ::: {.solution}
-Suppose first that $G$ is finite and solvable. Every subgroup and quotient of a solvable group is solvable, so every composition factor of $G$ is both simple and solvable. If $S$ is simple and solvable, then $[S,S]\trianglelefteq S$ and solvability forces $[S,S]\ne S$; hence $[S,S]=1$, so $S$ is abelian. A finite simple abelian group is cyclic of prime order. Thus every composition factor of $G$ is $C_p$ for some prime $p$.
 
-Conversely, if a composition series
-$$
-1=G_0\triangleleft G_1\triangleleft\cdots\triangleleft G_r=G
-$$
-has factors $G_{i+1}/G_i$ of prime order, then every factor is cyclic and hence abelian. Therefore this is a subnormal series with abelian factors, so $G$ is solvable.
+::: pf
 
-Thus a finite group is solvable if and only if all of its composition factors have prime order.
+::: {.pf-step #forward}
+If $G$ is solvable, then every composition factor of $G$ has prime order.
+
+::: pf-proof
+Every subquotient of a solvable group is solvable, so every composition factor $S$ of $G$ is simple and solvable.
+Since $S$ is solvable and nontrivial, $[S,S]\ne S$.
+Since $[S,S]\trianglelefteq S$ and $S$ is simple, $[S,S]=1$, so $S$ is abelian.
+A finite simple abelian group is cyclic of prime order.
+:::
+
+:::
+
+::: pf-qed
+Step [](#forward){.pf-ref} proves one implication.
+Conversely, suppose every composition factor of $G$ has prime order, and let $1=G_0\triangleleft G_1\triangleleft\cdots\triangleleft G_r=G$ be a composition series.
+Each factor $G_{i+1}/G_i$ has prime order, so it is cyclic and therefore abelian.
+Thus this series is a subnormal series with abelian factors, and $G$ is solvable.
+:::
+
+:::
+
 :::
