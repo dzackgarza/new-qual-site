@@ -251,7 +251,6 @@ corpus/theory/Complex_Analysis/T-ZO5UU.md
 corpus/theory/Complex_Analysis/T-ZZJDP.md
 corpus/theory/Real_Analysis/C-3S4XS.md
 corpus/theory/Real_Analysis/C-44LL4.md
-corpus/theory/Real_Analysis/C-VSE32.md
 corpus/theory/Real_Analysis/C-WR7YV.md
 corpus/theory/Real_Analysis/D-2CCDB.md
 corpus/theory/Real_Analysis/D-2MJRE.md

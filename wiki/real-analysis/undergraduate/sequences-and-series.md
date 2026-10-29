@@ -72,8 +72,6 @@ For series of functions, the Cauchy criterion in the norm $\norm{\wait}_\infty$ 
 
 [[PR-LEDI3]]
 
-[[C-VSE32]]
-
 [[T-2R7PC]]
 
 ## Uniform convergence

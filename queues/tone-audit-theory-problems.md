@@ -2528,7 +2528,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [ ] | `corpus/theory/Complex_Analysis/T-ZZJDP.md` | `25401818687e3769ded00face88bdaf13cba021d` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/C-3S4XS.md` | `63b3906fecda5872485388493e14814d6dc6be25` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/C-44LL4.md` | `1c98988fc5e997cceef78c7d13d78835825e3656` | — | Pending |
-| [ ] | `corpus/theory/Real_Analysis/C-VSE32.md` | `95094dee84e7f254fab2b94363436a0b5e72cc5a` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/C-WR7YV.md` | `c2ee3db35e0057ea7c23da2cd51586494e170d91` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/D-2CCDB.md` | `e831220f7897eb9f681f8a6e8d5aaa836574443c` | — | Pending |
 | [ ] | `corpus/theory/Real_Analysis/D-2MJRE.md` | `15434b527bd996e74c6e560d80ce2a70ac16bbb4` | — | Pending |
