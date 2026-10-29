@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESRA14-8
 kind: problem
-title: 'Extend Radon–Nikodym from finite to sigma-finite measures'
+title: 'The Radon–Nikodym theorem from finite to $\sigma$-finite measures'
 classification:
   areas: [real-analysis]
   topics: []

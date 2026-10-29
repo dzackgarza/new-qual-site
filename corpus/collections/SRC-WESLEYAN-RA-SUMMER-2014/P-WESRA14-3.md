@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESRA14-3
 kind: problem
-title: '$\\sigma$-finiteness characterized by a strictly positive $L^1$ function'
+title: '$\sigma$-finiteness characterized by a strictly positive $L^1$ function'
 classification:
   areas: [real-analysis]
   topics: []

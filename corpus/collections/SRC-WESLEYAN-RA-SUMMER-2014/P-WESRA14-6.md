@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESRA14-6
 kind: problem
-title: 'An integral inequality from $fg\\ge1$ on a probability space'
+title: 'An integral inequality from $fg\ge1$ on a probability space'
 classification:
   areas: [real-analysis]
   topics: []

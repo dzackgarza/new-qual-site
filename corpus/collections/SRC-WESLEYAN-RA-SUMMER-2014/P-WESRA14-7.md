@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESRA14-7
 kind: problem
-title: 'A Borel set that is measure-theoretically thick in every interval'
+title: 'A Borel set $E$ with $0<m(E\cap I)<m(I)$ for every interval $I$'
 classification:
   areas: [real-analysis]
   topics: []

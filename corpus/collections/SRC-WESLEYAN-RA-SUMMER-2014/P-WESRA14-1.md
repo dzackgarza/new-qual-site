@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESRA14-1
 kind: problem
-title: 'State one of Littlewood’s three principles'
+title: 'Littlewood’s three principles'
 classification:
   areas: [real-analysis]
   topics: []
