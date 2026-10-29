@@ -1,0 +1,10 @@
+{
+  "source_pdf": "assets/attachments/PrincetonQuestions.pdf",
+  "source_pdf_sha256": "9ef5c3fee6a62b2eb412ef4af6f0b40619821f25e0e0144702a2ba7b0f39d0c7",
+  "extracted_markdown": "assets/attachments/PrincetonQuestions_extracted.md",
+  "extracted_markdown_sha256": "2d6a4b43484b6fb923de71f80b410842bc5066f3a45a7877e734d00f9c6a8fd6",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/PrincetonQuestions.pdf --language en",
+  "generated_at": "2026-10-30"
+}
