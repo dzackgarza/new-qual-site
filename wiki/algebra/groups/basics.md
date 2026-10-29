@@ -70,8 +70,6 @@ If $M,N\normal G$ and $M\intersect N=1$, then $mn=nm$ for all $m\in M$ and $n\in
 
 [[E-LUH54]]
 
-[[E-P4LG6]]
-
 ## Centralizers and centers
 
 For a subset $S\subseteq G$, the [[D-PX64W|centralizer]] $C_G(S)$ consists of the elements fixing every element of $S$ under conjugation, and the [[D-OZ2RR|normalizer]] $N_G(S)$ of the elements with $gSg^{-1}=S$; thus $C_G(S)\le N_G(S)$.
