@@ -10,7 +10,6 @@ relations: []
 review: draft
 provenance:
 - https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-11S.pdf
-- assets/attachments/UCLA_Solutions.pdf
 source:
   source_kind: university-exam
   institution: ucla

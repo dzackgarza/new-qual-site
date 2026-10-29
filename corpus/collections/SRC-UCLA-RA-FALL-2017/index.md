@@ -10,7 +10,6 @@ classification:
 relations: []
 review: draft
 provenance:
-- assets/attachments/UCLA_Solutions.pdf
 - https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-17F.pdf
 source:
   source_kind: university-exam
