@@ -35,141 +35,58 @@ Bernoulli's inequality gives $\left(1+\frac{x^2}{n}\right)^{n+1}\ge 1+x^2$, so $
 
 ::: {.solution}
 
+For $n \ge 1$ and $x \ge 0$, let $f_n(x) \coloneqq \chi_{[0, n]}(x) \left(1 + \frac{x^2}{n}\right)^{-(n+1)}$, so that the $n$th integral is $\int_0^\infty f_n(x)\,dx$.
+
 ::: pf
 
-::: pf-step
-Pointwise limit of the integrands:
+::: {.pf-step #pointwise}
+
+$f_n(x) \to e^{-x^2}$ for every $x \ge 0$.
 
 ::: pf-proof
 
-::: pf-step
-Define the sequence of functions $f_n: [0, \infty) \to \RR$ by
-$$f_n(x) = \chi_{[0, n]}(x) \left(1 + \frac{x^2}{n}\right)^{-(n+1)}.$$
-
-:::
-
-::: pf-step
-For any fixed $x \ge 0$, for all $n > x$, $\chi_{[0, n]}(x) = 1$.
-
-:::
-
-::: pf-step
-Rewrite the expression:
-$$f_n(x) = \frac{1}{\left(1 + \frac{x^2}{n}\right) \left(1 + \frac{x^2}{n}\right)^n}.$$
-
-:::
-
-::: pf-step
-Compute the component limits as $n \to \infty$:
-$$\lim_{n \to \infty} \left(1 + \frac{x^2}{n}\right) = 1, \quad \lim_{n \to \infty} \left(1 + \frac{x^2}{n}\right)^n = e^{x^2}.$$
-
-:::
-
-::: pf-step
-Thus for every $x \in [0, \infty)$:
-$$\lim_{n \to \infty} f_n(x) = \frac{1}{1 \cdot e^{x^2}} = e^{-x^2}.$$
+For fixed $x$, $\chi_{[0,n]}(x) = 1$ once $n \ge x$, and $f_n(x) = \left(1 + \frac{x^2}{n}\right)^{-1}\left(1 + \frac{x^2}{n}\right)^{-n}$ with $1 + \frac{x^2}{n} \to 1$ and $\left(1 + \frac{x^2}{n}\right)^n \to e^{x^2}$.
 
 :::
 
 :::
 
-:::
+::: {.pf-step #dominated}
 
-::: pf-step
-Construction of an integrable dominating function:
+$0 \le f_n(x) \le \frac{1}{1+x^2}$ for all $n \ge 1$ and $x \ge 0$, and $\int_0^\infty \frac{dx}{1+x^2} = \frac{\pi}{2}$.
 
 ::: pf-proof
 
-::: pf-step
-By Bernoulli's inequality (or the binomial expansion), for any $u = \frac{x^2}{n} \ge 0$:
-$$\left(1 + \frac{x^2}{n}\right)^n \ge 1 + n \left(\frac{x^2}{n}\right) = 1 + x^2.$$
-
-:::
-
-::: pf-step
-Since $1 + \frac{x^2}{n} \ge 1$:
-$$\left(1 + \frac{x^2}{n}\right)^{n+1} = \left(1 + \frac{x^2}{n}\right) \left(1 + \frac{x^2}{n}\right)^n \ge 1 \cdot (1 + x^2) = 1 + x^2.$$
-
-:::
-
-::: pf-step
-Taking reciprocals:
-$$|f_n(x)| \le \chi_{[0, n]}(x) \frac{1}{1 + x^2} \le \frac{1}{1 + x^2} =: g(x) \quad \text{for all } x \ge 0 \text{ and all } n \ge 1.$$
-
-:::
-
-::: pf-step
-The function $g(x) = \frac{1}{1 + x^2}$ is Lebesgue integrable on $[0, \infty)$:
-$$\int_0^\infty g(x) \, dx = \int_0^\infty \frac{dx}{1 + x^2} = \left[ \arctan(x) \right]_0^\infty = \frac{\pi}{2} < \infty.$$
+By Bernoulli's inequality, $\left(1 + \frac{x^2}{n}\right)^{n+1} \ge \left(1 + \frac{x^2}{n}\right)^n \ge 1 + x^2$. Take reciprocals.
 
 :::
 
 :::
 
-:::
+::: {.pf-step #gaussian}
 
-::: pf-step
-Application of the Dominated Convergence Theorem:
+$\int_0^\infty e^{-x^2}\,dx = \frac{\sqrt\pi}{2}$.
 
 ::: pf-proof
 
-::: pf-step
-The sequence $(f_n)$ is dominated by the integrable function $g \in L^1([0, \infty))$ and converges pointwise to $e^{-x^2}$.
-
-:::
-
-::: pf-step
-By the Dominated Convergence Theorem:
-$$\lim_{n \to \infty} \int_0^n \left(1 + \frac{x^2}{n}\right)^{-(n+1)} \, dx = \lim_{n \to \infty} \int_0^\infty f_n(x) \, dx = \int_0^\infty \lim_{n \to \infty} f_n(x) \, dx = \int_0^\infty e^{-x^2} \, dx.$$
-
-:::
+Let $I = \int_0^\infty e^{-x^2}\,dx$. Since the integrand is even, Tonelli's theorem and polar coordinates give
+$$
+I^2 = \frac14\int_{\RR^2} e^{-(x^2+y^2)}\,dx\,dy = \frac14\int_0^{2\pi}\int_0^\infty e^{-r^2}r\,dr\,d\theta = \frac14\cdot 2\pi\cdot\frac12 = \frac{\pi}{4},
+$$
+and $I > 0$.
 
 :::
 
 :::
 
 ::: pf-step
-Evaluation of the limiting Gaussian integral:
+
+$\displaystyle\lim_{n \to \infty} \int_0^n \left(1 + \frac{x^2}{n}\right)^{-(n+1)} \, dx = \boxed{\frac{\sqrt{\pi}}{2}}$.
 
 ::: pf-proof
 
-::: pf-step
-Let $I = \int_0^\infty e^{-x^2} \, dx$.
+By steps [](#pointwise){.pf-ref} and [](#dominated){.pf-ref}, the dominated convergence theorem gives the limit $\int_0^\infty e^{-x^2}\,dx$, which step [](#gaussian){.pf-ref} evaluates.
 
-:::
-
-::: pf-step
-Since $e^{-x^2}$ is an even function, $I = \frac{1}{2} \int_{-\infty}^\infty e^{-x^2} \, dx$.
-
-:::
-
-::: pf-step
-By Tonelli's Theorem and conversion to polar coordinates:
-$$I^2 = \frac{1}{4} \int_{\RR} e^{-x^2} \, dx \int_{\RR} e^{-y^2} \, dy = \frac{1}{4} \int_{\RR^2} e^{-(x^2 + y^2)} \, dx \, dy = \frac{1}{4} \int_0^{2\pi} \int_0^\infty e^{-r^2} r \, dr \, d\theta.$$
-
-:::
-
-::: pf-step
-Compute the radial integral with $u = r^2$, $du = 2r \, dr$:
-$$\int_0^\infty e^{-r^2} r \, dr = \frac{1}{2} \int_0^\infty e^{-u} \, du = \frac{1}{2} [-e^{-u}]_0^\infty = \frac{1}{2}.$$
-
-:::
-
-::: pf-step
-Thus:
-$$I^2 = \frac{1}{4} (2\pi) \left(\frac{1}{2}\right) = \frac{\pi}{4} \implies I = \frac{\sqrt{\pi}}{2}.$$
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-Conclusion:
-
-::: pf-proof
-$\lim_{n \to \infty} \int_0^n \left(1 + \frac{x^2}{n}\right)^{-(n+1)} \, dx = \frac{\sqrt{\pi}}{2}$.
 :::
 
 :::
