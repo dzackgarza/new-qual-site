@@ -56,7 +56,7 @@ Let $m$ be Lebesgue measure.
 
 ::: {.pf-step #s1}
 
-$E \subseteq \RR^n$ is measurable if and only if $E = H \cup Z$ with $H$ an $F_\sigma$ set and $Z$ null, if and only if $E = V \setminus Z'$ with $V$ a $G_\delta$ set and $Z'$ null.
+(a) $E \subseteq \RR^n$ is measurable if and only if $E = H \cup Z$ with $H$ an $F_\sigma$ set and $Z$ null, if and only if $E = V \setminus Z'$ with $V$ a $G_\delta$ set and $Z'$ null.
 
 ::: pf-proof
 
@@ -68,7 +68,7 @@ If $E$ is measurable, outer regularity gives open $G_k \supseteq E$ and, applied
 
 ::: {.pf-step #s2}
 
-$m(E) = \sup\theset{m(K) : K \subseteq E \text{ compact}}$ if and only if for every $\varepsilon > 0$ there is a compact $K \subseteq E$ with $m(K) \ge m(E) - \varepsilon$.
+(b) $m(E) = \sup\theset{m(K) : K \subseteq E \text{ compact}}$ if and only if for every $\varepsilon > 0$ there is a compact $K \subseteq E$ with $m(K) \ge m(E) - \varepsilon$.
 
 ::: pf-proof
 
@@ -80,7 +80,7 @@ $m(E)$ is an upper bound of $\theset{m(K) : K \subseteq E \text{ compact}}$ by m
 
 ::: {.pf-step #s3}
 
-If $f$ is Lebesgue measurable on $\RR^s$, then $F(x,y) = f(x)$ is Lebesgue measurable on $\RR^s \times \RR^t$.
+(c) If $f$ is Lebesgue measurable on $\RR^s$, then $F(x,y) = f(x)$ is Lebesgue measurable on $\RR^s \times \RR^t$.
 
 ::: pf-proof
 
@@ -92,7 +92,7 @@ For an open $W \subseteq \RR$, $F^{-1}(W) = f^{-1}(W) \times \RR^t$ with $f^{-1}
 
 ::: {.pf-step #s4}
 
-$\int f(x+h)\,dx = \int f$ and $\int \delta^{-n}f(x/\delta)\,dx = \int f$ for $f \geq 0$ measurable or $f \in L^1$.
+(d), (e) $\int f(x+h)\,dx = \int f$ and $\int \delta^{-n}f(x/\delta)\,dx = \int f$ for $f \geq 0$ measurable or $f \in L^1$.
 
 ::: pf-proof
 
@@ -104,11 +104,11 @@ For $f = \chi_E$ these are $m(E - h) = m(E)$ and $\delta^{-n}m(\delta E) = m(E)$
 
 ::: {.pf-step #s5}
 
-For $f \in L^1(\RR^n)$, $\lim_{h\to 0}\int|f(x+h) - f(x)|\,dx = 0$.
+(f) For $f \in L^1(\RR^n)$, $\lim_{h\to 0}\int\abs{f(x+h) - f(x)}\,dx = 0$.
 
 ::: pf-proof
 
-For the indicator of a bounded box $I$, the integral is $m(I \triangle (I - h))$, and $I \triangle (I-h)$ lies within distance $|h|$ of $\partial I$, so it tends to $0$. Finite linear combinations of such indicators are dense in $L^1$: simple functions are dense, and for $m(E) < \infty$ outer regularity gives an open $U \supseteq E$ with $m(U \setminus E) < \varepsilon$, a finite union $A$ of the almost disjoint closed cubes composing $U$ has $m(U \setminus A) < \varepsilon$, and then $\|\chi_E - \chi_A\|_1 < 2\varepsilon$. Also by step [](#s4){.pf-ref} translation preserves $L^1$ distances, so for such a combination $s$ with $\|f - s\|_1 < \varepsilon$, $\int|f(x+h) - f(x)|\,dx < 2\varepsilon + \int|s(x+h) - s(x)|\,dx$.
+For the indicator of a bounded box $I$, the integral is $m(I \triangle (I - h))$, and $I \triangle (I-h)$ lies within distance $\abs{h}$ of $\partial I$, so it tends to $0$. Finite linear combinations of such indicators are dense in $L^1$: simple functions are dense, and for $m(E) < \infty$ outer regularity gives an open $U \supseteq E$ with $m(U \setminus E) < \varepsilon$, a finite union $A$ of the almost disjoint closed cubes composing $U$ has $m(U \setminus A) < \varepsilon$, and then $\norm{\chi_E - \chi_A}_1 < 2\varepsilon$. Also by step [](#s4){.pf-ref} translation preserves $L^1$ distances, so for such a combination $s$ with $\norm{f - s}_1 < \varepsilon$, $\int\abs{f(x+h) - f(x)}\,dx < 2\varepsilon + \int\abs{s(x+h) - s(x)}\,dx$.
 
 :::
 
@@ -116,11 +116,11 @@ For the indicator of a bounded box $I$, the integral is $m(I \triangle (I - h))$
 
 ::: {.pf-step #s6}
 
-If $f, g \in L^1$, then $f \ast g \in L^1$ and $\|f \ast g\|_1 \le \|f\|_1\|g\|_1$.
+(g) If $f, g \in L^1$, then $f \ast g \in L^1$ and $\norm{f \ast g}_1 \le \norm{f}_1\norm{g}_1$.
 
 ::: pf-proof
 
-By Tonelli's theorem and step [](#s4){.pf-ref}, $\iint |f(x-y)||g(y)|\,dy\,dx = \|f\|_1\|g\|_1 < \infty$. So $f\ast g(x)$ is defined for a.e. $x$ by Fubini's theorem, and $\int|f\ast g| \le \iint |f(x-y)||g(y)|\,dy\,dx$. See [[E-DUWXR]].
+By Tonelli's theorem and step [](#s4){.pf-ref}, $\iint \abs{f(x-y)}\abs{g(y)}\,dy\,dx = \norm{f}_1\norm{g}_1 < \infty$. So $f\ast g(x)$ is defined for a.e. $x$ by Fubini's theorem, and $\int\abs{f\ast g} \le \iint \abs{f(x-y)}\abs{g(y)}\,dy\,dx$. See [[E-DUWXR]].
 
 :::
 
@@ -128,11 +128,11 @@ By Tonelli's theorem and step [](#s4){.pf-ref}, $\iint |f(x-y)||g(y)|\,dy\,dx = 
 
 ::: {.pf-step #s7}
 
-If $\mu(X) < \infty$, then $\|f\|_p \to \|f\|_\infty$ as $p \to \infty$.
+(h) If $\mu(X) < \infty$, then $\norm{f}_p \to \norm{f}_\infty$ as $p \to \infty$.
 
 ::: pf-proof
 
-If $\mu(X) = 0$ both sides vanish. Otherwise $\|f\|_p \le \|f\|_\infty\,\mu(X)^{1/p} \to \|f\|_\infty$, and for $0 < M < \|f\|_\infty$ the set $\theset{|f| > M}$ has positive finite measure, so $\|f\|_p \ge M\mu\theset{|f|>M}^{1/p} \to M$. So $M \le \liminf_p \|f\|_p \le \limsup_p \|f\|_p \le \|f\|_\infty$ for every such $M$, which gives the limit, also when $\|f\|_\infty = \infty$. See [[P-RVL3K]].
+If $\mu(X) = 0$ both sides vanish. Otherwise $\norm{f}_p \le \norm{f}_\infty\,\mu(X)^{1/p} \to \norm{f}_\infty$, and for $0 < M < \norm{f}_\infty$ the set $\theset{\abs{f} > M}$ has positive finite measure, so $\norm{f}_p \ge M\mu\theset{\abs{f}>M}^{1/p} \to M$. So $M \le \liminf_p \norm{f}_p \le \limsup_p \norm{f}_p \le \norm{f}_\infty$ for every such $M$, which gives the limit, also when $\norm{f}_\infty = \infty$. See [[P-RVL3K]].
 
 :::
 
