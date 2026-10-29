@@ -41,3 +41,7 @@ Choose $h\in C\cap N$. Since $C$ is the conjugacy class of $h$, $C=\{ghg^{-1}:g\
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The converse holds: a subgroup $N\le G$ that is a union of conjugacy classes is normal, since for $h\in N$ and $g\in G$ the conjugate $ghg^{-1}$ lies in the class of $h$, which is contained in $N$. So a subgroup is normal if and only if it is a union of conjugacy classes, and then $N$ is the disjoint union of the classes of $G$ it contains.
+:::
