@@ -39,7 +39,7 @@ Going down also holds for every flat ring map $A \to B$.
 :::
 
 ::: {.remark}
-The translation is the content of the answer: going up says that a chain of primes in $A$ ascending from one that is hit can be lifted, which is exactly the statement that the image of a closed set is closed.
+Going up says that a chain of primes of $A$ ascending from a prime in the image of $f$ lifts to $B$; this is what makes $f(V(\mfq)) = V(\phi^{-1}(\mfq))$, so the image of a closed set is closed.
 So going up is the algebraic form of "a finite morphism is closed", hence of "a finite morphism is proper".
 
 Going up together with incomparability makes $\dim B = \dim A$ for an integral extension, which is why a finite surjective morphism cannot drop dimension.
