@@ -24,36 +24,78 @@ Show that $X$ is an irreducible variety, and find its dimension.
 :::
 
 ::: {.solution}
-We use the following fact from linear algebra.
-
-*Matrix minor*: for an $m\times n$ matrix, a *minor of order* $\ell$ is the determinant of an $\ell\times \ell$ submatrix obtained by deleting any $m-\ell$ rows and any $n-\ell$ columns.
-
-*Rank is a function of minors*: if $A\in \Mat(m \times n, k)$, then the rank of $A$ equals the order of the largest nonzero minor.
-
-Thus
+Write a point of $\AA^6$ as the matrix
 \[
-M_{ij} = 0 \text{ for all } \ell\times \ell \text{ minors } M_{ij} \iff \rank(M) < \ell
-,\]
-following from the fact that if one takes $\ell = \min(m,n)$ and all $\ell\times \ell$ minors vanish, then the largest nonzero minor must be of size $j\times j$ for $j\leq \ell -1$.
-But $\det M_{ij}$ is a polynomial $f_{ij}$ in its entries, so $X$ can be written as
-\[
-X = V\qty{\theset{f_{ij}}}
-,\]
-which exhibits $X$ as a variety.
-Thus
-\[
-M =  \begin{bmatrix} x & y & z \\ a & b & c \end{bmatrix} \implies X = V\qty{\generators{xb-ya, yc-zb, xc-za}} \subset \AA^6
-.\]
+M=\begin{bmatrix} x & y & z \\ a & b & c \end{bmatrix}.
+\]
 
-**Claim**: the ideal above is prime, so the coordinate ring $A(X)$ is a domain and thus $X$ is irreducible.
+::: pf
 
-**Claim**: $\dim (X) = 4$.
+::: {.pf-step #closed}
+$X=V(xb-ya,\ yc-zb,\ xc-za)$, so $X$ is closed in $\AA^6$.
 
-Heuristic: there are three degrees of freedom in choosing the first row $x,y,z$.
-To enforce the rank one condition, the second row must be a scalar multiple of the first, yielding one degree of freedom for the scalar.
+::: pf-proof
+The rank of a matrix is the largest order of a nonzero minor.
+Hence $\rank M\le 1$ exactly when every $2\times 2$ minor of $M$ vanishes, and the $2\times2$ minors of $M$ are the three displayed polynomials.
 :::
 
-::: {.remark}
-Erratum: the solution is incomplete.
-It shows that $X$ is the zero locus of the three $2 \times 2$ minors, but both claims it then needs, that the ideal $\generators{xb-ya, yc-zb, xc-za}$ is prime and that $\dim X = 4$, are asserted without proof, and the degree-of-freedom count is a heuristic rather than an argument.
+:::
+
+::: {.pf-step #image}
+$X$ is the image of the morphism
+\[
+\Phi:\AA^2\times\AA^3\to\AA^6,\qquad (u,v)\mapsto u\,v^{T},
+\]
+where $u\in k^2$ and $v\in k^3$ are columns.
+
+::: pf-proof
+Each entry of $u\,v^T$ is a product $u_iv_j$, so $\Phi$ is a morphism.
+Every column of $u\,v^T$ is a multiple of $u$, so $\rank u\,v^T\le1$ and $\Phi$ maps into $X$.
+Conversely, let $\rank M\le1$.
+If $M=0$, then $M=\Phi(0,0)$.
+Otherwise the column space of $M$ is spanned by one nonzero vector $u$, so the $j$-th column of $M$ is $v_ju$ for some $v_j\in k$, and $M=\Phi(u,v)$ with $v=(v_1,v_2,v_3)^T$.
+:::
+
+:::
+
+::: {.pf-step #irreducible}
+$X$ is an irreducible variety.
+
+::: pf-proof
+The space $\AA^2\times\AA^3=\AA^5$ is irreducible because $k[t_1,\dots,t_5]$ is a domain.
+A morphism is continuous in the Zariski topology, and the continuous image of an irreducible space is irreducible.
+By step [](#image){.pf-ref}, $X=\Phi(\AA^5)$ is irreducible, and by step [](#closed){.pf-ref} it is closed in $\AA^6$.
+:::
+
+:::
+
+::: {.pf-step #chart}
+The open subset $X_x\definedas X\cap D(x)$ of $X$ is isomorphic to the open subset $D(x)$ of $\AA^4$ with coordinates $x,y,z,a$.
+
+::: pf-proof
+Let $\pi:X_x\to D(x)\subseteq\AA^4$ forget $b$ and $c$, and define
+\[
+\sigma:D(x)\to\AA^6,\qquad (x,y,z,a)\mapsto \qty{x,y,z,a,\tfrac{ay}{x},\tfrac{az}{x}},
+\]
+which is a morphism because $x$ is invertible on $D(x)$.
+The point $\sigma(x,y,z,a)$ lies in $X$: its minors are $x\cdot\frac{ay}{x}-ya=0$, $y\cdot\frac{az}{x}-z\cdot\frac{ay}{x}=0$ and $x\cdot\frac{az}{x}-za=0$.
+So $\sigma$ maps into $X_x$, and $\pi\circ\sigma=\id$.
+On $X_x$ the equations $xb=ya$ and $xc=za$ give $b=ay/x$ and $c=az/x$, so $\sigma\circ\pi=\id$.
+:::
+
+:::
+
+::: pf-step
+$\dim X=\boxed{4}$.
+
+::: pf-proof
+The set $X_x$ is nonempty, since it contains the matrix with $x=1$ and all other entries $0$.
+A nonempty open subset of an irreducible variety has the same dimension as the variety.
+By step [](#irreducible){.pf-ref}, $X$ is irreducible, so $\dim X=\dim X_x$.
+By step [](#chart){.pf-ref}, $X_x\cong D(x)$, a nonempty open subset of the irreducible variety $\AA^4$, so $\dim X_x=\dim\AA^4=4$.
+:::
+
+:::
+
+:::
 :::
