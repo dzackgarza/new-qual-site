@@ -17,166 +17,102 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The problem block held a worked argument (real eigenvalues, Schur triangularization, an induction proof of Schur) instead of a statement; it is replaced by the statement that argument answers, and the argument is merged into the structured solution.'
 ---
 
 ::: {.problem}
-Suppose $A^* = A$.
-It is then a fact that $A$ is self-adjoint, and so for every $\vector{v}\in V$ we have
-$$
-\inner{A\vector{v}}{\vector{v}} =
-\inner{\vector{v}}{A^*\vector{v}} =
-\inner{\vector{v}}{A\vector{v}}.
-$$
+Let $V$ be a finite-dimensional complex inner product space and let $A\colon V\to V$ be a linear operator with $A^*=A$.
 
-Let $(\lambda, \vector v)$ be an eigenvalue of $A$ with one of its corresponding eigenvectors, so $A\vector{v} = \lambda{\vector v}$.
+(a) Show that every eigenvalue of $A$ is real.
 
-On one hand, \begin{align*}
-\inner{A\vector{v}}{\vector{v}}
-=
-\inner{\lambda\vector{v}}{\vector{v}}
-=
-\lambda \inner{\vector{v}}{\vector{v}}
-=
-\lambda \norm{\vector{v}}^2
-,\end{align*}
+(b) Prove Schur's theorem: every linear operator on $V$ has an upper-triangular matrix with respect to some orthonormal basis of $V$.
 
-while on the other hand,
-
-\begin{align*}
-\inner{A\vector{v}}{\vector{v}}
-=
-\inner{\vector{v}}{A^*\vector{v}} 
-=
-\inner{\vector{v}}{A\vector{v}}
-=
-\inner{\vector{v}}{\lambda\vector{v}}
-=
-\overline{\lambda} \inner{\vector{v}}{\vector{v}}
-=
-\overline{\lambda} \norm{\vector{v}}^2
-.\end{align*}
-
-Equating these expressions, we find that
-$$
-\lambda = \overline{\lambda} \implies \lambda \in \RR. \qed
-$$
-
-We can make use of the following fact:
-
-**Theorem (Schur):** Every square matrix $A \in M_n(\CC)$ is unitarily similar to an upper triangular matrix, i.e. there exists a unitary matrix $U$ such that $A = UT\inverseof{U}$ where $T$ is upper-triangular.
-
-Applying this theorem yields $A = UT\inverseof{U}$ and thus $T = \inverseof{U} A U$.
-In particular, $A \sim T$.
-
-Noting that if $U$ is unitary then $\inverseof{U} = U^*$, we have
-
-\begin{align*}
-T^* 
-&= (\inverseof{U} A U)^* \\
-&= U^* A^* (\inverseof{U})^* \\
-&= U^* A^* U^{**} \\
-&= \inverseof{U} A^* U \\
-&= T
-,\end{align*}
-
-and so $T^* = T$.
-
-Since $T$ is upper triangular, this forces $T_{ij} = 0$ whenever $i\neq j$ But this makes $T$ diagonal, so $A$ is similar to a diagonal matrix.
-$\qed$
-
-*Proof of Schur's Theorem:* We'll proceed by induction on $n = \dim_\CC(V)$, and showing that there is an orthonormal basis of $V$ such that the matrix of $A$ is upper triangular.
-
-**Lemma:** If $V$ is finite dimensional and $\lambda$ is an eigenvalue of $A$, then $\overline{\lambda}$ is an eigenvalue of $A^*$.
-
-*Proof:* Since $A^* - \bar\lambda I = (A - \lambda I)^*$ and $\det(M^*) = \overline{\det M}$,
-$$
-\operatorname{det}\left(A^{*} - \bar{\lambda} I\right) = \overline{\operatorname{det}(A-\lambda I)} = \bar 0 = 0. \qed
-$$
-
-Since $\CC$ is algebraically closed, every matrix $A \in M_n(\CC)$ will have an eigenvalue, since its characteristic polynomial will have a root by the Fundamental Theorem of Algebra.
-
-So let $\lambda_1, \vector v_1$ be an eigenvalue/eigenvector pair of the adjoint $A^*$.
-
-Consider the space $S = \spanof_\CC\theset{\vector v_1}$; then $V = S \oplus S^\perp$.
-The claim is that the original $A$ will restrict to an operator on $S^\perp$, which has dimension $n-1$.
-The inductive hypothesis will then apply to $\restrictionof{A}{S^\perp}$.
-
-Note that if this holds, there will be an orthonormal basis $\mathcal{B}$ of $S^\perp$ such that the matrix
-$$
-\mathbf{A}' \definedas [\restrictionof{A}{S^\perp}]_{\mathcal{B}}
-$$
-will be upper triangular.
-We would then be able to obtain an orthonormal basis $\mathcal{C} \definedas \mathcal{B} \union \theset{\vector{v_1}}$ of $S \oplus S^\perp = V$, **ordered with $\vector v_1$ last**.
-
-Only $S^\perp$ is $A\dash$invariant here; $S$ is an eigenspace of $A^*$, not of $A$, so $\restrictionof{A}{S}$ is not defined and the matrix is not block diagonal.
-What the invariance of $S^\perp$ gives is that the first $n-1$ columns have no $\vector v_1$ component, i.e. a zero in the last row:
-
-\begin{align*}
-[A]_{\mathcal{C}} &=
-\left[\begin{array}{cc}
-[\restrictionof{A}{S^\perp}]_{\mathcal{B}} & \vector u \\
-0 & c
-\end{array}\right]
-=
-\left[\begin{array}{cc}
-\mathbf{A}' & \vector u \\
-0 & c
-\end{array}\right]
-,\end{align*}
-
-where $\vector u$ and the scalar $c$ record $A\vector v_1$ in the basis $\mathcal C$, and are otherwise unconstrained.
-This is upper-triangular since $\mathbf{A}'$ is upper-triangular.
-
-> Ordering $\vector v_1$ first would instead put the unconstrained column on the left and give a **lower** triangular matrix.
-
-To see that $A$ does indeed restrict to an operator on $S^\perp$, we need to show that $A(S^\perp) \subseteq S^\perp$.
-So let $\vector s \in S^\perp$; then $\inner{\vector v_1}{\vector s} = 0$ by definition.
-Then $A\vector s \in S^\perp$ since
-
-\begin{align*}
-\inner{\vector v_1}{A\vector s} 
-&= \inner{A^* \vector v_1}{\vector s} \\
-&= \inner{\lambda_1 \vector v_1}{\vector s} \\
-&= \lambda_1 \inner{\vector v_1}{\vector s} \\
-&= 0
-.\end{align*}
-
-$\qed$
+(c) Show that $A$ is unitarily diagonalizable: $V$ has an orthonormal basis of eigenvectors of $A$.
 :::
 
 ::: {.solution}
-Let $A$ be self-adjoint on a finite-dimensional complex inner-product space.
 
-If $Av=\lambda v$ with $v\ne0$, then
-\[
-\lambda\langle v,v\rangle
-=\langle Av,v\rangle
-=\langle v,Av\rangle
-=\overline\lambda\langle v,v\rangle.
-\]
-Hence $\lambda=\overline\lambda$, so every eigenvalue is real.
+::: pf
 
-For diagonalization, Schur's theorem gives a unitary $U$ such that
-\[
-T=U^*AU
-\]
-is upper triangular.
-Since $A^*=A$,
-\[
-T^*=U^*A^*U=U^*AU=T.
-\]
-An upper-triangular self-adjoint matrix is diagonal: upper triangularity gives $T_{ij}=0$ for $i>j$, and $T=T^*$ then gives $T_{ij}=0$ also for $i<j$.
-Thus $T$ is diagonal and
-\[
-A=UTU^*
-\]
-is unitarily diagonalizable.
+::: pf-step
 
-For completeness, Schur's theorem itself follows by induction on dimension.
-Choose an eigenvector $v$ of $A^*$; then $v^\perp$ is $A$-invariant because
-\[
-\langle v,Aw\rangle=\langle A^*v,w\rangle=0
-\qquad(w\in v^\perp).
-\]
-Apply induction to $A|_{v^\perp}$ and place $v$ last in the resulting orthonormal basis.
+(a) Every eigenvalue of $A$ is real.
+
+::: pf-proof
+
+Let $A\vector v=\lambda\vector v$ with $\vector v\neq 0$. Then
+$$
+\lambda\norm{\vector v}^2=\inner{A\vector v}{\vector v}=\inner{\vector v}{A^*\vector v}=\inner{\vector v}{A\vector v}=\overline\lambda\norm{\vector v}^2 .
+$$
+Since $\norm{\vector v}\neq 0$, $\lambda=\overline\lambda$, so $\lambda\in\RR$.
+
+:::
+
+:::
+
+::: {.pf-step #schur}
+
+(b) Every linear operator $B$ on $V$ has an upper-triangular matrix in some orthonormal basis of $V$.
+
+::: pf-proof
+
+We argue by induction on $n=\dim_\CC V$; the case $n\le 1$ is trivial.
+
+::: pf-step
+
+$B^*$ has an eigenvector $\vector v_1$ with $\norm{\vector v_1}=1$.
+
+::: pf-proof
+
+The characteristic polynomial of $B^*$ has a root $\mu\in\CC$ by the fundamental theorem of algebra, and an eigenvector for $\mu$ can be normalized.
+
+:::
+
+:::
+
+::: {.pf-step #invariant}
+
+The subspace $W\coloneqq\vector v_1^{\perp}$ satisfies $B(W)\subseteq W$ and $\dim W=n-1$.
+
+::: pf-proof
+
+Let $B^*\vector v_1=\mu\vector v_1$ and $\vector w\in W$. Then
+$$
+\inner{\vector v_1}{B\vector w}=\inner{B^*\vector v_1}{\vector w}=\inner{\mu\vector v_1}{\vector w}=\overline\mu\inner{\vector v_1}{\vector w}=0 ,
+$$
+so $B\vector w\in W$. Since $V=\CC\vector v_1\oplus W$, $\dim W=n-1$.
+
+:::
+
+:::
+
+::: pf-qed
+
+By the inductive hypothesis applied to $B|_W$, there is an orthonormal basis $\mathcal B$ of $W$ in which $B|_W$ has an upper-triangular matrix $\mathbf A'$. Let $\mathcal C$ be $\mathcal B$ followed by $\vector v_1$; it is an orthonormal basis of $V$. By step [](#invariant){.pf-ref}, the first $n-1$ columns of $[B]_{\mathcal C}$ have no $\vector v_1$-component, so
+$$
+[B]_{\mathcal C}=\begin{pmatrix}\mathbf A' & \vector u\\ 0 & c\end{pmatrix}
+$$
+for a column $\vector u$ and a scalar $c$ that record $B\vector v_1$. This matrix is upper triangular because $\mathbf A'$ is. Placing $\vector v_1$ first instead would give a lower-triangular matrix.
+
+:::
+
+:::
+
+:::
+
+::: pf-qed
+
+(c) By step [](#schur){.pf-ref}, there is a unitary $U$ such that $T\coloneqq U^*AU$ is upper triangular. Then
+$$
+T^*=U^*A^*U=U^*AU=T .
+$$
+Upper triangularity gives $T_{ij}=0$ for $i>j$, and then $T_{ij}=\overline{T_{ji}}=0$ for $i<j$. Thus $T$ is diagonal, $A=UTU^*$, and the columns of $U$ form an orthonormal basis of eigenvectors of $A$.
+
+:::
+
+:::
+
 :::
