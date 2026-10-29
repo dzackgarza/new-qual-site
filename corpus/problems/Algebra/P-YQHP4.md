@@ -19,40 +19,42 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source labels the parts (1) and (2); they are labelled (a) and (b).
 ---
 
 ::: {.problem}
-(1) Let $R$ be a ring with identity $1 \ne 0$, and let $I \trianglelefteq R$ be an ideal of $R$.
+(a) Let $R$ be a ring with identity $1 \ne 0$, and let $I \trianglelefteq R$ be an ideal of $R$.
 Prove that if $I$ contains a unit $u \in R^\times$, then $I = R$.
-(2) Prove that the group of units $R^\times$ need not be closed under addition, and provide concrete examples in standard rings.
+
+(b) Prove that the group of units $R^\times$ need not be closed under addition, and provide concrete examples in standard rings.
 :::
 
 ::: {.solution}
-If an ideal $I\trianglelefteq R$ contains a unit $u$, then it also contains
-\[
-u^{-1}u=1.
-\]
-Hence for every $r\in R$,
-\[
-r=r\cdot1\in I,
-\]
-so
-\[
-\boxed{I=R}.
-\]
-The same argument works for one-sided ideals using the appropriate side of the inverse.
 
-The unit group $R^\times$ is a group under multiplication, not generally under addition. For example,
-\[
-\mathbb Z^\times=\{\pm1\},
-\]
-but
-\[
-1+1=2\notin\mathbb Z^\times.
-\]
-More universally, in any nonzero unital ring, if $u$ is a unit then so is $-u$, while
-\[
-u+(-u)=0
-\]
-is not a unit. Thus $R^\times$ need not be additively closed.
+::: pf
+
+::: pf-step
+(a) $\boxed{I=R}$.
+
+::: pf-proof
+Since $I$ is an ideal containing $u$, it contains $u^{-1}u=1$, and then $r=r\cdot1\in I$ for every $r\in R$.
+:::
+
+:::
+
+::: pf-step
+(b) $R^\times$ is never closed under addition when $1\ne0$; for example $1+1=2\notin\ZZ^\times=\{\pm1\}$.
+
+::: pf-proof
+If $u$ is a unit, so is $-u$, with inverse $-u^{-1}$, but $u+(-u)=0$ is not a unit because $0\cdot r=0\ne1$.
+The example in $\ZZ$ is direct.
+:::
+
+:::
+
+:::
+
 :::
