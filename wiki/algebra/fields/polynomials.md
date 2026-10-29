@@ -25,6 +25,8 @@ Over a unique factorization domain $R$ with field of fractions $F$, a product of
 
 [[PR-I1T7M]]
 
+[[PR-PB6UE]]
+
 ## Standard factorizations and root counts
 
 [[FF-ED3CD]]
