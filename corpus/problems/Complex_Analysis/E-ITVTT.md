@@ -14,26 +14,37 @@ review: draft
 ---
 
 ::: {.exercise}
-Find the residue at $\omega_n \definedas e^{\pi i \over n}$ of
-\[
+Find the residue at $\omega_n \coloneqq e^{\pi i \over n}$ of
+$$
 f(z) = {1\over z^n + 1}
-.\]
-
+.$$
 :::
 
 ::: {.solution}
-Check that $\dd{}{z} z^n+1 = nz^{n-1}\neq 0$ for $z\neq 0$, so this has no repeated roots since $z=0$ is not a root.
-Thus all of the poles are simple, and the residue of $1/q$ at a simple zero $z_0$ of $q$ is $1/q'(z_0)$:
-\[
-\Res_{z=\omega_n} {1\over z^n + 1} 
-&= {1 \over nz^{n-1}}\evalfrom_{z=\omega_n} \\
-&= {1\over n\omega_n^{n-1}} \\
-&= {\omega_n^{1-n}\over n} \\
-&= -{\omega_n \over n}
-,\]
-which follows from expanding 
-\[
-\omega_n^{1-n} = e^{i\pi (1-n) \over n} =  e^{i\pi\over n}e^{-i\pi n \over n} = e^{i\pi \over n}\cdot (-1) = -\omega_n
-.\].
+
+::: pf
+
+::: {.pf-step #simple}
+$\omega_n$ is a simple pole of $f$.
+
+::: pf-proof
+$\omega_n^n=e^{\pi i}=-1$, so $\omega_n$ is a zero of $q(z)\coloneqq z^n+1$, and $q'(\omega_n)=n\omega_n^{n-1}\neq0$.
 :::
 
+:::
+
+::: pf-step
+$\Res_{z=\omega_n}f(z)=\boxed{-{\omega_n\over n}}$.
+
+::: pf-proof
+By step [](#simple){.pf-ref}, the residue of $1/q$ at the simple zero $\omega_n$ is
+$$
+{1\over q'(\omega_n)}={1\over n\omega_n^{n-1}}={\omega_n\over n\omega_n^n}=-{\omega_n\over n}
+.$$
+:::
+
+:::
+
+:::
+
+:::
