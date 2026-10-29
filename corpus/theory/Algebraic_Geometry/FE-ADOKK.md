@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.example}
-Let $C$ be a singular curve with normalization $\nu : \tilde{C} \to C$.
+Let $C$ be a singular curve with normalization $\nu \colon \tilde{C} \to C$.
 Comparing units gives the exact sequence
 $$
 0 \to \OO_C^* \to \nu_* \OO_{\tilde{C}}^* \to \mcs \to 0
