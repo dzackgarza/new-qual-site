@@ -27,9 +27,9 @@ Prove that if $G/Z(G)$ is cyclic, then $G$ is abelian.
 
 ::: {.solution}
 Write $Z=Z(G)$ and suppose
-\[
+$$
 G/Z=\langle gZ\rangle.
-\]
+$$
 
 ::: pf
 
@@ -40,13 +40,13 @@ Every element of $G$ can be written as $g^m z$ for some $m\in\ZZ$ and $z\in Z$.
 ::: pf-proof
 
 If $x\in G$, then its coset lies in the cyclic quotient, so
-\[
+$$
 xZ=(gZ)^m=g^mZ
-\]
+$$
 for some $m$. Hence
-\[
+$$
 g^{-m}x\in Z,
-\]
+$$
 so $x=g^m z$ for some $z\in Z$.
 
 :::
@@ -60,16 +60,16 @@ Any two elements of $G$ commute.
 ::: pf-proof
 
 Take
-\[
+$$
 x=g^m z_1,
 \qquad
 y=g^n z_2
-\]
+$$
 with $z_1,z_2\in Z$ by step [](#s1){.pf-ref}. Since the $z_i$ are central,
-\[
+$$
 xy=g^m z_1g^n z_2=g^{m+n}z_1z_2
 =g^{m+n}z_2z_1=g^n z_2g^m z_1=yx.
-\]
+$$
 
 :::
 
