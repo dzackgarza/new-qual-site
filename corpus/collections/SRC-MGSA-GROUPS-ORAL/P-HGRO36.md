@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO36
 kind: problem
-title: Sylow 3-subgroups of symmetric groups
+title: Sylow $3$-subgroups of symmetric groups
 classification:
   areas: [algebra]
   topics: [Sylow Theory, Permutation Groups]
