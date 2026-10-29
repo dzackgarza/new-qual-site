@@ -24,8 +24,6 @@ If $f$ is homotopic to a map that is extendable to a continuous map $h: X \to Y$
 :::
 
 ::: {.solution}
-**Goal:** Prove the Homotopy Extension Property for $(X, A)$ into an open set $Y \subseteq \RR^n$ under the hypothesis that $X \times I$ is normal.
-
 ::: pf
 
 ::: pf-step
