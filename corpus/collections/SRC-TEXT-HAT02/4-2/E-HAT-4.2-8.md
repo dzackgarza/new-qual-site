@@ -21,108 +21,78 @@ Show the suspension of an acyclic CW complex is contractible.
 :::
 
 ::: {.solution}
-**Goal:** Show the suspension $\Sigma X$ is contractible when $X$ is acyclic.
+Let $X$ be an acyclic CW complex, so $\widetilde H_n(X) = 0$ for all $n$. Write $\Sigma X = X \times I / {\sim}$, with $X \times \{0\}$ and $X \times \{1\}$ each collapsed to a point.
 
 ::: pf
 
-::: pf-step
-
-Use reduced homology of suspension.
-
-::: pf-proof
-
-::: pf-step
-
-For reduced homology of a suspension, $\widetilde H_n(\Sigma X)\cong \widetilde H_{n-1}(X)$ for $n\ge2$.
-
-:::
-
-::: pf-step
-
-Since $X$ is acyclic, $\widetilde H_{n-1}(X)=0$ for all $n-1\ge0$, so $\widetilde H_n(\Sigma X)=0$ for all $n\ge2$.
-
-:::
-
-::: pf-step
-
-The space $\Sigma X$ is nonempty and connected, hence $\widetilde H_0(\Sigma X)=0$.
-
-:::
-
-::: pf-step
-
-Therefore $\widetilde H_n(\Sigma X)=0$ for every $n\ge0$.
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-$\Sigma X$ is simply connected.
+::: {.pf-step #homology}
+$\widetilde H_n(\Sigma X) = 0$ for every $n \ge 0$.
 
 ::: pf-proof
 
 ::: pf-step
+$\widetilde H_n(\Sigma X) \cong \widetilde H_{n-1}(X) = 0$ for $n \ge 1$.
 
-The suspension $\Sigma X = CX \cup_{X} CX$ is path-connected: any two points lie in one of the two cones, and each cone is path-connected (every point is connected to the cone vertex by a straight line).
-
-:::
-
-::: pf-step
-
-Let $\gamma \colon S^1 \to \Sigma X$ be a loop. The image $\gamma(S^1)$ is compact, so the open cover $\{\mathring{C}_+, \mathring{C}_-\}$ of $\Sigma X$ by the interiors of the two cones has a finite subcover.
-
-:::
-
-::: pf-step
-
-Break $\gamma$ into finitely many arcs, each lying in one cone. Since each cone $C_\pm$ is contractible (it deformation-retracts onto its vertex), any arc in $C_\pm$ is null-homotopic relative to its endpoints.
-
-:::
-
-::: pf-step
-
-Concatenating these null-homotopies (along the finitely many junction points) gives a null-homotopy of $\gamma$ in $\Sigma X$.
-
-:::
-
-::: pf-step
-
-Hence $\pi_1(\Sigma X) = 1$.
-
-:::
-
+::: pf-proof
+This is the suspension isomorphism for reduced homology, which holds for all $n \ge 1$.
 :::
 
 :::
 
 ::: pf-step
+$\widetilde H_0(\Sigma X) = 0$.
 
-Apply Whitehead’s theorem for CW complexes.
+::: pf-proof
+Every point of $\Sigma X$ is joined by a path to a cone point, and the two cone points are joined through any point of $X$; $X$ is nonempty because $\widetilde H_0$ of the empty space is $\ZZ$ in degree $-1$, which acyclicity excludes. So $\Sigma X$ is path-connected.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #pi1}
+$\pi_1(\Sigma X) = 1$.
 
 ::: pf-proof
 
 ::: pf-step
+$U = X \times [0, 2/3) / {\sim}$ and $V = X \times (1/3, 1] / {\sim}$ are open, contractible, and cover $\Sigma X$.
 
-$\Sigma X$ is a CW complex (suspension of a CW complex).
+::: pf-proof
+Each is an open cone on $X$, which deformation retracts to its cone point.
+:::
 
 :::
 
 ::: pf-step
+$U \cap V = X \times (1/3, 2/3)$ is path-connected.
 
-A simply connected CW complex with all reduced homology zero is contractible.
+::: pf-proof
+$U \cap V \simeq X$, and $\widetilde H_0(X) = 0$ says $X$ is path-connected.
+:::
 
 :::
 
 ::: pf-step
+$\pi_1(\Sigma X) = 1$.
 
-Therefore $\Sigma X$ is contractible.
+::: pf-proof
+By van Kampen, $\pi_1(\Sigma X)$ is a quotient of $\pi_1(U) * \pi_1(V) = 1$.
+:::
 
 :::
 
+:::
+
+:::
+
+::: pf-step
+$\Sigma X$ is contractible.
+
+::: pf-proof
+$\Sigma X$ is a CW complex. By step [](#pi1){.pf-ref} it is simply connected, and by step [](#homology){.pf-ref} it has trivial reduced homology. By the Hurewicz theorem, $\pi_n(\Sigma X) = 0$ for all $n$, so the map $\Sigma X \to \mathrm{pt}$ is a weak homotopy equivalence. By Whitehead's theorem, it is a homotopy equivalence.
 :::
 
 :::
