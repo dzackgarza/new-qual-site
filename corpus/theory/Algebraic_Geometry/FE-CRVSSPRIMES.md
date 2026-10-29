@@ -39,7 +39,7 @@ The set $B$ depends on whether $X_{/\CC}$ has complex multiplication:
   Half the primes split, so $B$ has density $\tfrac{1}{2}$.
 
 - Without CM: $B$ has density $0$ (Serre), and $B$ is infinite (Elkies).
-  The asymptotic $\abs{\theset{p \in B \st p \leq x}} \sim c\,\tfrac{\sqrt x}{\log x}$ is the Lang--Trotter conjecture, which is open.
+  The asymptotic $\abs{\theset{p \in B \st p \leq x}} \sim c\,\tfrac{\sqrt x}{\log x}$, with a constant $c=c_E$ fixed by the image of the Galois representations on the torsion of $E$, is the Lang--Trotter conjecture, which is open.
 :::
 
 ::: {.remark title="Status of the three claims"}
