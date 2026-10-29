@@ -18,6 +18,10 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Rebuilt the run-together integral list with consecutive labels (the source repeats (v)) and added an erratum for a = 0 in (ii), against Spring 2015, question 13, page 12 of Questions_from_Tie.pdf (read from the page image).
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source labels the integrals (i)-(v), (v), (vi); the statement now numbers them (i)-(vii), so the source's second (v) is (vi) and its (vi) is (vii).
 ---
 
 ::: {.problem}
@@ -36,10 +40,6 @@ Compute the following integrals.
 (vi) $\displaystyle\int_{-\infty}^\infty \frac{\sin \pi a}{\cosh \pi x + \cos \pi a}\,e^{-ix\xi}\,dx$, $0 < a < 1$, $\xi \in \mathbb{R}$
 
 (vii) $\displaystyle\int_{\abs{z}=1} \cot^2 z\,dz$.
-:::
-
-::: {.remark}
-The source labels these integrals (i), (ii), (iii), (iv), (v), (v), (vi); here they are numbered consecutively, so the source's second (v) is (vi) and its (vi) is (vii).
 :::
 
 ::: {.remark}
