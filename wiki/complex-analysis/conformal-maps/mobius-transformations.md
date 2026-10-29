@@ -51,7 +51,7 @@ $$
 .$$
 Nonzero scalar multiples of a matrix give the same transformation, so the inverse transformation is given by the adjugate matrix:
 $$
-{az + b\over cz+ d} \leadsto \matt a b c \inverseof{d} = \matt d {-b} {-c} a
+{az + b\over cz+ d} \leadsto \inverseof{\matt a b c d} = \matt d {-b} {-c} a
 \leadsto
 {dw-b \over -cw + a}
 .$$
