@@ -71,16 +71,3 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** this is the doctor's current installation result, not a failure of the Pages tests or build.
 
 - **Repair:** reconcile the shared PR installation with `QUAL-09`'s direct-to-main workflow before changing branch protection.
-
-
-### STYLE-08 has no form for the last part of a multi-part solution
-
-- **Object and need:** E-P5BF6 (parts (a)–(e)); audit node `ad-algebra-content` asks that part (e) be its own step rather than the QED step.
-
-- **Observed evidence:** `lamport_proof.lua` labels the last step of each level QED whether or not it is marked `.pf-qed` (filter lines 389–398). STYLE-08 forbids a `pf-qed` sentence that only says the earlier steps answer the question. A solution whose steps are the parts (a)–(e) therefore has either part (e) as its QED step or a forbidden closing sentence.
-
-- **Impact and owner:** every multi-part problem whose solution keys one top-level step per part. The owner is STYLE-08 in CONTRIBUTING.md, or the filter's QED labeling for proofs whose goal is a list of parts.
-
-- **Uncertainty:** a policy conflict, not a mathematical error. E-P5BF6 is unchanged.
-
-- **Repair:** STYLE-08 states the form for a multi-part solution (for example, no QED label when the top-level steps are the parts), and E-P5BF6 follows it.

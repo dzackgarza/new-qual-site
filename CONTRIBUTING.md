@@ -533,6 +533,7 @@ Never type a step number or indent a step by hand.
 - The filter labels the last step at each level QED: that step proves the level's goal.
   When the goal needs an argument but no claim of its own, write the last step as a `::: pf-qed` block holding that argument.
   Never write a `pf-qed` sentence that only says the earlier steps answer the question.
+  In a multi-part solution whose top-level steps are the parts, the last part is the QED step.
 
 - Give a step an identifier, `::: {.pf-step #name}`, only when another step cites it.
   The identifier is an anchor that readers never see; a kebab-case name for what the step claims, or a path such as `#s2-1`, both serve.
