@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF18B
 kind: problem
-title: 'Matrices of $p$-power order in characteristic $p$: unipotence and failure of $g^p=I$'
+title: 'Matrices of $p$-power order in characteristic $p\ge n$ are unipotent with $g^p=I$'
 classification:
   areas:
   - algebra
@@ -23,10 +23,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-07
   note: Verified the Frobenius-power nilpotence argument and the explicit GL_3(F_2) counterexample to part (b).
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The card printed "p is a prime which is at most n", under which part (b) fails (p=2, n=3, a 3x3 unipotent Jordan block). The statement now says "at least n", under which (g-I)^p=0 and g^p=I.
 ---
 
 ::: {.problem}
-Suppose $p$ is a prime which is at most $n$, and $F$ is a field of characteristic $p$.
+Suppose $p$ is a prime which is at least $n$, and $F$ is a field of characteristic $p$.
 Suppose $g \in \mathrm{GL}_n(F)$ and $g^{p^m} = I$ for some positive integer $m$.
 
 (a) Prove that $g - I$ is a nilpotent matrix.
@@ -34,15 +38,11 @@ Suppose $g \in \mathrm{GL}_n(F)$ and $g^{p^m} = I$ for some positive integer $m$
 (b) Prove that $g^p = I$.
 :::
 
-::: {.remark}
-Part (b) is false as stated. A counterexample satisfying all printed hypotheses is given in the solution below.
-:::
-
 ::: {.solution}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #s1}
 The matrix $g-I$ is nilpotent.
 
 ::: pf-proof
@@ -58,65 +58,24 @@ The hypothesis $g^{p^m}=I$ therefore yields
 \[
 (g-I)^{p^m}=0.
 \]
-Hence $g-I$ is nilpotent, proving part (a).
 :::
 
 :::
 
-::: pf-step
-The conclusion $g^p=I$ in part (b) does not follow from the stated hypotheses.
+::: {.pf-step #s2}
+$g^p=I$.
 
 ::: pf-proof
-Take
+By step [](#s1){.pf-ref}, $N=g-I$ is a nilpotent $n\times n$ matrix, so its minimal polynomial is $x^k$ for some $k\le n$, and hence $N^n=0$. Since $p\ge n$, also $N^p=0$. As $g=I+N$ with $I$ and $N$ commuting, in characteristic $p$
 \[
-p=2,
-\qquad
-n=3,
-\qquad
-F=\mathbb F_2,
+g^p=(I+N)^p=I+N^p=I.
 \]
-and set
-\[
-N=
-\begin{pmatrix}
-0&1&0\\
-0&0&1\\
-0&0&0
-\end{pmatrix},
-\qquad
-g=I+N.
-\]
-The matrix $g$ is upper triangular with diagonal entries $1$, so
-\[
-g\in\operatorname{GL}_3(\mathbb F_2).
-\]
-Moreover,
-\[
-N^2=
-\begin{pmatrix}
-0&0&1\\
-0&0&0\\
-0&0&0
-\end{pmatrix}
-\neq0,
-\qquad
-N^3=0.
-\]
-Because the characteristic is $2$,
-\[
-g^2=(I+N)^2=I+N^2\neq I.
-\]
-On the other hand,
-\[
-g^4=(g^2)^2=(I+N^2)^2=I+N^4=I.
-\]
-Thus $g^{2^2}=I$ while $g^2\neq I$, and the hypotheses hold because
-\[
-p=2\le3=n.
-\]
-This disproves part (b) as printed.
 :::
 
+:::
+
+::: pf-qed
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove parts (a) and (b).
 :::
 
 :::
