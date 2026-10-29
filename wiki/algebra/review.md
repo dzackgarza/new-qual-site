@@ -15,8 +15,6 @@ order: 7
 
 [[T-6CQEB]]
 
-[[T-RLVA4]]
-
 [[T-TTZ2Y]]
 
 [[T-SVJUN]]

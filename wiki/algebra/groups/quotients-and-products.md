@@ -22,8 +22,6 @@ The correspondence theorem identifies the subgroups of $G/N$ with the subgroups 
 
 [[T-6CQEB]]
 
-[[T-RLVA4]]
-
 ## Products
 
 A group $G$ is the internal direct product of subgroups $H$ and $K$ if $H,K\normal G$, $H\intersect K=1$, and $HK=G$; then $hk=kh$ for all $h\in H$, $k\in K$, and $G\cong H\times K$.
