@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-2-02
 kind: problem
-title: Maxim algebraic topology 2.2
+title: CW structure on lens spaces
 classification:
   areas: [topology]
   topics: []
