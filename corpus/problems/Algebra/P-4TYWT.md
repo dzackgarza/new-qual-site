@@ -18,10 +18,14 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: source-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source did not say that p and q are primes; the statement now does.'
 ---
 
 ::: {.problem}
-- Show that a group of order $p^2 q^2$ has a normal Sylow subgroup.
+Let $p$ and $q$ be primes. Show that a group of order $p^2 q^2$ has a normal Sylow subgroup.
 :::
 
 ::: {.solution}
@@ -36,11 +40,11 @@ The number $n_q$ of Sylow $q$-subgroups is either $1$ or $p^2$.
 ::: pf-proof
 
 Sylow's theorems give
-\[
+$$
 n_q\mid p^2,
 \qquad
 n_q\equiv1\pmod q.
-\]
+$$
 Thus $n_q\in\{1,p,p^2\}$. Since $1<p<q$, the possibility $n_q=p$ is incompatible with $n_q\equiv1\pmod q$. Hence $n_q=1$ or $p^2$.
 
 :::
@@ -54,9 +58,9 @@ If $n_q=p^2$, then $(p,q)=(2,3)$.
 ::: pf-proof
 
 The congruence $p^2\equiv1\pmod q$ gives
-\[
+$$
 q\mid(p-1)(p+1).
-\]
+$$
 Because $q>p$, one cannot have $q\mid p-1$, so $q\mid p+1$. Since $0<p+1<2q$, this forces $q=p+1$. The only consecutive primes are $2$ and $3$, so $p=2$ and $q=3$.
 
 :::
@@ -78,9 +82,9 @@ If $n_q=1$, the Sylow $q$-subgroup is normal. By step [](#s2){.pf-ref}, the only
 ::: {.pf-step #s4}
 
 Now suppose $|G|=36$. If the Sylow $3$-subgroup is not normal, then $n_3=4$ and conjugation on the four Sylow $3$-subgroups gives a homomorphism
-\[
+$$
 \varphi:G\longrightarrow S_4
-\]
+$$
 whose kernel $K$ has order $3$ or $9$.
 
 ::: pf-proof
@@ -110,15 +114,15 @@ Under the assumptions of step [](#s5){.pf-ref}, $K\subseteq Z(G)$.
 ::: pf-proof
 
 Conjugation on the normal subgroup $K\cong C_3$ gives
-\[
+$$
 G\longrightarrow\operatorname{Aut}(K)\cong C_2.
-\]
+$$
 If this map were nontrivial, its kernel $H$ would be normal of order $18$. Sylow's theorem in $H$ gives
-\[
+$$
 n_3(H)\mid2,
 \qquad
 n_3(H)\equiv1\pmod3,
-\]
+$$
 so $n_3(H)=1$. Its unique subgroup of order $9$ is characteristic in $H$, hence normal in $G$, and is a Sylow $3$-subgroup of $G$, contrary to step [](#s5){.pf-ref}. Therefore the conjugation action on $K$ is trivial, so $K\subseteq Z(G)$.
 
 :::
@@ -132,17 +136,17 @@ In the remaining order-$36$ case, $G$ has a normal Sylow $2$-subgroup.
 ::: pf-proof
 
 Let $V_4\trianglelefteq A_4$ be its unique Sylow $2$-subgroup and put
-\[
+$$
 N=\varphi^{-1}(V_4).
-\]
+$$
 Then $N\trianglelefteq G$ and $|N|=|K||V_4|=12$. Let $P$ be a Sylow $2$-subgroup of $N$; then $|P|=4$, so $P$ is also a Sylow $2$-subgroup of $G$. Since $K\cap P=1$ and $K\subseteq Z(G)$ by step [](#s6){.pf-ref},
-\[
+$$
 |KP|=|K||P|=12=|N|,
-\]
+$$
 so $N=KP$. Every element of $N$ is $kp'$ with $k\in K$, $p'\in P$, and centrality of $K$ gives
-\[
+$$
 (kp')P(kp')^{-1}=p'Pp'^{-1}=P.
-\]
+$$
 Thus $P\trianglelefteq N$. It is therefore the unique Sylow $2$-subgroup of $N$, hence characteristic in $N$. Since $N\trianglelefteq G$, we get $P\trianglelefteq G$.
 
 :::
