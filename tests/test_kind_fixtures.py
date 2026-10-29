@@ -403,7 +403,7 @@ def test_collection_page_lists_problems_and_links_the_central_browser(collection
 
     # The count is singular, and outside the paragraph the drop cap takes.
     exam_html = (work / "build" / "quarto" / "_site" / "exam" / "SRC-UGA-LIST.html").read_text()
-    assert '<div class="collection-count">\n<p>1 problem.</p>' in exam_html
+    assert '<div class="collection-count" data-pagefind-ignore="">\n<p>1 problem.</p>' in exam_html
 
     index = json.loads((work / "build" / "quarto" / "_site" / "collection-problems.json").read_text())
     assert [item["id"] for item in index["SRC-UGA-LIST"]["items"]] == ["P-LISTED"]
@@ -639,13 +639,14 @@ def test_appearance_comment_belongs_to_the_collection(collections_site: Path) ->
     ]
 
     # Both numbers reach the reader, each next to the source that uses it. An
-    # entry with no comment falls back on the only locator its collection has,
-    # which is the position it was listed in.
+    # entry with no comment names its collection alone: a position in the list
+    # is not a locator the source printed.
     appearances = (work / "build" / "quarto" / "_site" / "tag" / "P-INDEXP.html").read_text()
     assert "Algebra homework 3, Spring 2020, Problem 5" in appearances
     assert "UGA Algebra qualifying exam, Spring 2019, Problem 6" in appearances
     uncommented = (work / "build" / "quarto" / "_site" / "tag" / "E-CENTER.html").read_text()
-    assert "Algebra homework 3, Spring 2020, problem 2" in uncommented
+    assert "Algebra homework 3, Spring 2020" in uncommented
+    assert "Algebra homework 3, Spring 2020, problem" not in uncommented
     assert '<div class="card-statement">' in uncommented
     assert "<dt>Area</dt>" in uncommented
     assert "<dt>Topics</dt>" in uncommented

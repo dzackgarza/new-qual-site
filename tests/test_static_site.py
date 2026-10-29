@@ -674,16 +674,16 @@ def test_a_source_counts_only_the_problem_cards_it_lists(static_site: Path) -> N
     assert rows["SRC-PACKET"]["worked"] == "0 / 1 solved"
 
 
-def test_an_appearance_without_a_comment_names_only_its_collection(static_site: Path) -> None:
-    """P-PACKET-1's appearance has no authored locator, so none is derived from its ordinal."""
-    page = (static_site / "build" / "quarto" / "_site" / "tag" / "P-PACKET-1.html").read_text()
-    assert "Algebra qual packet" in page
-    assert "Algebra qual packet, problem" not in page
-
-
 def test_an_institution_is_named_by_the_vocabulary(static_site: Path) -> None:
     site = static_site / "build" / "quarto" / "_site"
     sources = {row["id"]: row for row in json.loads((site / "sources.json").read_text())["rows"]}
     assert sources["SRC-UGA-FIX"]["institution"] == "University of Georgia"
     problems = {row["id"]: row for row in json.loads((site / "problems.json").read_text())["rows"]}
     assert problems["P-CENTER"]["institutions"] == ["University of Georgia"]
+
+
+def test_site_apparatus_is_kept_out_of_the_search_index(built_fixture: Path) -> None:
+    """Search excerpts should quote mathematics, not the slogan prompt."""
+    page = read_html(built_fixture / "build" / "quarto" / "_site" / "tag" / "THM-SYLOW.html")
+    suggest = page.root.find_all("a", **{"class": "result-slogan-suggest"})[0]
+    assert "data-pagefind-ignore" in suggest.attrs

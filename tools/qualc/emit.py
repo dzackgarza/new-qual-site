@@ -591,7 +591,7 @@ def _wiki_incoming_html(sources: list[WikiPage]) -> str:
     if not sources:
         return ""
     items = "".join(f'<li><a href="{html.escape(page.route.as_posix(), quote=True)}">{html.escape(page.title)}</a></li>' for page in sources)
-    return f'<section class="relation-group" data-relation-group="wiki-backlinks"><h2>What links to this</h2><ul>{items}</ul></section>'
+    return f'<section class="relation-group" data-relation-group="wiki-backlinks" data-pagefind-ignore><h2>What links to this</h2><ul>{items}</ul></section>'
 
 
 # A wikilink standing on its own -- in a paragraph that is nothing but card
@@ -1011,7 +1011,7 @@ def _slogan_json(card: sqlite3.Row) -> list[dict]:
     href = html.escape(f"{REPOSITORY_URL}/issues/new?{query}", quote=True)
     slogan = str(card["slogan"] or "")
     badge = f'<span class="result-slogan-badge">{html.escape(typeset_dashes(slogan))}</span>' if slogan else ""
-    block = f'<div class="result-slogan">{badge}<a class="result-slogan-suggest" href="{href}">Suggest a slogan</a></div>'
+    block = f'<div class="result-slogan">{badge}<a class="result-slogan-suggest" href="{href}" data-pagefind-ignore>Suggest a slogan</a></div>'
     return [{"t": "RawBlock", "c": ["html", block]}]
 
 
@@ -1625,6 +1625,7 @@ def _collection_listing(
                 pf.Str("problem." if problem_count == 1 else "problems."),
             ),
             classes=["collection-count"],
+            attributes={"data-pagefind-ignore": ""},
         )
     )
     if listed:
