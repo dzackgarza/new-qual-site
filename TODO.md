@@ -315,6 +315,19 @@ mathematical correction under its own node, not under copy policy.
 
     **Acceptance:** each read and repaired, or kept with the reason.
 
+  Round 3 (revision `5ba163ac9`, site surfaces and prelims) injected the node below;
+  `audited-deployment` needs it.
+  - **`ad3-prelim-content`**. **Needs:** none. F8: prose solutions with no structured proof
+    (`STYLE-08`) on P-PRACT20-W3-13, P-PRACT20-W4-06, P-PRACT20-W3-18, P-ALGPAN11-01. F9: wrong
+    area on P-PRACT20-W4-06 (`applied-algebra`), P-PRACT20-W3-13 and P-PRACT20-W3-18
+    (`real-analysis`). F10: P-ALGPAN11-01 answer choices only in an image (`CARD-03`). F11: the
+    20 P-CALCPT3 cards have no topics (`TAXON-01`). F12: wiki/prelim/problems/berkeley-prelims.md
+    and ucla-prelims.md link raw PDFs where a collection owns the exam (`RES-01`). F13: prelim
+    wiki `order` does not follow wiki/prelim/index.md (`NAV-01`). F14: worked-exams pages hold
+    no worked material, and the index link label differs from the page title. F15:
+    "$\deg P + 1$ integrations by parts" on useful-tricks.md and which-technique.md.
+    **Acceptance:** each read and repaired, or kept with the reason.
+
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
     (PR-U5CHT/FF-QVQXM, E-EMESP/E-P4LG6, D-FIB7S/FD-OR3BW, T-SVJUN/FT-7NMQR, E-DFUYC/E-R6I7G,
