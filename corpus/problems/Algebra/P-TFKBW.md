@@ -19,36 +19,40 @@ Let $G$ be a finite abelian group. Suppose that for every positive integer $n$, 
 :::
 
 ::: {.solution}
-Let $m$ be the exponent of $G$, the least positive integer such that
-\[
-x^m=e\qquad\text{for every }x\in G.
-\]
-Since every element of $G$ satisfies $x^m=e$, the hypothesis with $n=m$ gives
-\[
-|G|\le m.
-\]
-On the other hand, the order of every element divides $|G|$ by Lagrange's theorem, so the exponent also divides $|G|$. Hence
-\[
-m\le |G|.
-\]
-Therefore
-\[
-m=|G|.
-\]
+Let $m$ be the exponent of $G$, the least positive integer such that $x^m=e$ for every $x\in G$.
 
-For a finite abelian group, the exponent is attained as the order of some element. Indeed, decompose $G$ into its Sylow subgroups
-\[
-G=\prod_p G_p.
-\]
-For each $p$, choose an element $g_p\in G_p$ of maximal order, equal to the exponent of $G_p$. Since these orders are pairwise coprime, the element
-\[
-g=\prod_p g_p
-\]
-has order equal to the product of those exponents, namely $m$.
+::: pf
 
-Thus $G$ contains an element of order
-\[
-m=|G|.
-\]
-That element generates all of $G$, so $G$ is cyclic.
+::: {.pf-step #exponent}
+$m=\abs{G}$.
+
+::: pf-proof
+Every element of $G$ satisfies $x^m=e$, so the hypothesis with $n=m$ gives $\abs{G}\le m$.
+By Lagrange's theorem every element satisfies $x^{\abs{G}}=e$, so $m\le\abs{G}$.
+:::
+
+:::
+
+::: {.pf-step #attained}
+$G$ has an element of order $m$.
+
+::: pf-proof
+Write $G=\prod_p G_p$ as the product of its Sylow subgroups.
+In the finite abelian $p$-group $G_p$, an element $g_p$ of maximal order has order equal to the exponent $p^{e_p}$ of $G_p$, and $m=\prod_p p^{e_p}$.
+Since the orders of the commuting elements $g_p$ are pairwise coprime, $g=\prod_p g_p$ has order $\prod_p p^{e_p}=m$.
+:::
+
+:::
+
+::: pf-step
+$G$ is cyclic.
+
+::: pf-proof
+By step [](#attained){.pf-ref} and step [](#exponent){.pf-ref}, $G$ has an element of order $\abs{G}$, and that element generates $G$.
+:::
+
+:::
+
+:::
+
 :::
