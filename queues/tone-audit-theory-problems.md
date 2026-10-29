@@ -1334,7 +1334,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Complex_Analysis/P-XWO5N.md` | `ba67e25cc1e139dc046507ec3b75256b07117396` | `ba67e25cc1e139dc046507ec3b75256b07117396` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-Y5SS5.md` | `e6b82815d873f5a513777855051f60c2d3f40918` | `e6b82815d873f5a513777855051f60c2d3f40918` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-YDJE6.md` | `edeccbe680804a3393759dcce844e58bba68a196` | `edeccbe680804a3393759dcce844e58bba68a196` | Read; retained |
-| [x] | `corpus/problems/Complex_Analysis/P-YEZTR.md` | `8e1dd96426221364603b7d141ed89a9cd093a5dd` | `8e1dd96426221364603b7d141ed89a9cd093a5dd` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-YFBBW.md` | `28e9c1d244ce7998e6ec541efc5df0ef2df27d63` | `28e9c1d244ce7998e6ec541efc5df0ef2df27d63` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-YGU32.md` | `525dbaba2f50a2cd2d2cf702a03afb6c5b11b438` | `525dbaba2f50a2cd2d2cf702a03afb6c5b11b438` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/P-YHARF.md` | `5b6a85ad2168075a0706bc97fd1518051fbf6a84` | `5b6a85ad2168075a0706bc97fd1518051fbf6a84` | Read; retained |
