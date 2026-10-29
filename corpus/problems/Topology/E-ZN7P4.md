@@ -25,41 +25,35 @@ Prove that if $f: X \to Y$ is a continuous map between topological spaces and $X
 :::
 
 ::: {.solution}
-Give $f(X)$ the subspace topology. Suppose $f(X)$ were disconnected. Then there would be nonempty disjoint open subsets $U,V\subseteq f(X)$ with
-\[
-f(X)=U\cup V.
-\]
+
+Give $f(X)$ the subspace topology, and suppose $f(X)=U\cup V$ with $U,V$ disjoint, nonempty, and open in $f(X)$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #preimages}
 
-The map
-\[
-f:X\longrightarrow f(X)
-\]
-is continuous, so $f^{-1}(U)$ and $f^{-1}(V)$ are open in $X$.
+$f^{-1}(U)$ and $f^{-1}(V)$ are disjoint, open in $X$, and cover $X$.
+
+::: pf-proof
+
+The corestriction $f:X\to f(X)$ is continuous, which gives openness. Disjointness and covering follow from $U\cap V=\varnothing$ and $U\cup V=f(X)$.
 
 :::
-
-::: pf-step
-
-They are disjoint and cover $X$:
-\[
-f^{-1}(U)\cap f^{-1}(V)=\varnothing,
-\qquad
-f^{-1}(U)\cup f^{-1}(V)=X.
-\]
 
 :::
 
 ::: pf-step
 
-Both are nonempty because $U$ and $V$ consist of points in the image of $f$. Thus they form a separation of $X$, contradicting connectedness.
+$f(X)$ is connected.
+
+::: pf-proof
+
+Both preimages are nonempty because $U$ and $V$ are nonempty subsets of the image of $f$. By step [](#preimages){.pf-ref} they separate $X$, contradicting connectedness of $X$.
 
 :::
 
 :::
 
-Therefore $f(X)$ is connected.
+:::
+
 :::
