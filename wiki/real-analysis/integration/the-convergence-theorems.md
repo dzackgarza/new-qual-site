@@ -56,7 +56,7 @@ Lusin's theorem: if $E\subseteq\RR^d$ has finite Lebesgue measure and $f$ is mea
 ## Interchanging limits, sums, and integrals
 
 The equality $\lim_n\int f_n=\int\lim_n f_n$ holds when $f_n\to f$ uniformly and all $f_n$ vanish outside one set of finite measure, when $f_n\to f$ almost everywhere with $\abs{f_n}\leq g\in L^1$, and when $0\leq f_n\uparrow f$.
-It fails for the pointwise convergent sequences $n\chi_{(0,1/n)}$, $\chi_{[n,n+1]}$, and $\frac1n\chi_{[0,n]}$ on [[real-analysis/integration/l1|$L^1$]], each with limit $0$ and integral $1$.
+It fails for the pointwise convergent sequences $n\chi_{(0,1/n)}$, $\chi_{[n,n+1]}$, and $\frac1n\chi_{[0,n]}$ on $\RR$, all in [[real-analysis/integration/l1|$L^1$]], each with limit $0$ and integral $1$.
 If $\sum_n\norm{f_n}_1<\infty$, then $\sum_n f_n$ converges absolutely almost everywhere and in $L^1$, and $\int\sum_n f_n = \sum_n\int f_n$.
 
 [[T-MN6WQ]]
