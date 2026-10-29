@@ -22,11 +22,6 @@ audit:
 ---
 
 ::: {.problem}
-Say we can find a matrix $A \in M_n(\mathbb{R})$ such that $\exp(A) = B$ for $B \in \operatorname{SL}_n(\mathbb{R})$.
-Does $A$ also have to be in $\operatorname{SL}_n(\mathbb{R})$?
-Does $A$ have to satisfy $\operatorname{tr}(A) = 0$ (i.e. $A \in \mathfrak{sl}_n(\mathbb{R})$)?
-:::
-
 Say we can find a matrix $A \in M_n(\RR)$ such that $\exp(A) = B$ for $B \in \SL_n(\RR)$.
 Does $A$ also have to be in $\SL_n(\RR)$?
 Does $A$ have to satisfy $\tr(A) = 0$ (i.e. $A \in \mathfrak{sl}_n(\RR)$)?
