@@ -14,138 +14,24 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the vendored UCLA Basic Examination, Spring 2016, `assets/attachments/basic-16S.pdf`.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source prints $\lim_{n\to\infty} n\bigl(\sum_{k=0}^{n} f(k/n)-n\int_0^1 f\bigr)$, which diverges for $f\equiv1$. The statement now drops the outer factor $n$; the limit is $(f(0)+f(1))/2$.
 ---
 
 ::: {.problem}
 Suppose $f:[0,1]\to\mathbb R$ is continuously differentiable.
 Show that the limit
 \[
-\lim_{n\to\infty} n\left(\sum_{k=0}^{n} f\!\left(\frac{k}{n}\right)-n\int_0^1 f(x)\,dx\right)
+\lim_{n\to\infty} \left(\sum_{k=0}^{n} f\!\left(\frac{k}{n}\right)-n\int_0^1 f(x)\,dx\right)
 \]
 exists and compute its value.
 :::
 
 ::: {.solution}
 
-The statement is false as printed.
-
 ::: pf
-
-::: {.pf-step #s1-1}
-
-Take the continuously differentiable function
-\[
-\boxed{f(x)=1}
-\]
-on $[0,1]$.
-
-
-::: pf-proof
-
-Constant functions are continuously differentiable.
-
-:::
-
-:::
-
-::: {.pf-step #s1-2}
-
-For this function,
-\[
-\sum_{k=0}^{n}f\left(\frac{k}{n}\right)
-=
-n+1
-\]
-and
-\[
-n\int_0^1f(x)\,dx
-=
-n.
-\]
-
-
-::: pf-proof
-
-There are exactly
-\[
-n+1
-\]
-terms in the sum, each equal to $1$.
-Also,
-\[
-\int_0^1 1\,dx=1.
-\]
-
-:::
-
-:::
-
-::: {.pf-step #s1-3}
-
-Hence the expression in the source equals
-\[
-\boxed{n}
-\]
-for every positive integer $n$.
-
-
-::: pf-proof
-
-By step [](#s1-2){.pf-ref},
-\[
-n
-\left(
-(n+1)-n
-\right)
-=
-n.
-\]
-
-:::
-
-:::
-
-::: {.pf-step #s1-4}
-
-Therefore the displayed limit does not exist as a finite real number.
-
-
-::: pf-proof
-
-Step [](#s1-3){.pf-ref} gives
-\[
-n\to+\infty.
-\]
-Thus the literal claim that the limit exists is false.
-
-:::
-
-:::
-
-::: {.pf-step #s1-5}
-
-The natural corrected statement is obtained by removing the outer factor $n$:
-\[
-\boxed{
-\lim_{n\to\infty}
-\left(
-\sum_{k=0}^{n}f\left(\frac{k}{n}\right)
--
-n\int_0^1f(x)\,dx
-\right)
-=
-\frac{f(0)+f(1)}{2}.
-}
-\]
-
-
-::: pf-proof
-
-The remaining steps prove this corrected first-order Riemann-sum formula.
-
-:::
-
-:::
 
 ::: {.pf-step #s1-6}
 
@@ -199,7 +85,7 @@ For each $k$,
 f(x_k)
 -
 n\int_{x_k}^{x_{k+1}}f(x)\,dx
-
++
 \frac{f'(x_k)}{2n}
 \end{aligned}
 \]
@@ -358,7 +244,7 @@ The second limit is the ordinary left-endpoint Riemann-sum convergence for the c
 
 ::: {.pf-step #s1-10}
 
-Thus the corrected expression converges to
+Thus the expression converges to
 \[
 \frac{f(0)+f(1)}2.
 \]
@@ -396,8 +282,7 @@ f(1)
 
 ::: pf-qed
 
-Steps [](#s1-1){.pf-ref} through [](#s1-4){.pf-ref} disprove the literal source statement.
-Steps [](#s1-5){.pf-ref} through [](#s1-10){.pf-ref} prove the natural corrected first-order Riemann-sum formula.
+Steps [](#s1-6){.pf-ref} through [](#s1-10){.pf-ref} show that the limit exists and equals $\dfrac{f(0)+f(1)}{2}$.
 
 :::
 
