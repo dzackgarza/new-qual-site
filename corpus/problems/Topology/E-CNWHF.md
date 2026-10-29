@@ -27,38 +27,29 @@ Show that every compact metric space $(X, d)$ is complete (every Cauchy sequence
 
 ::: {.solution}
 
+Let $(x_n)$ be a Cauchy sequence in $X$.
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #subseq}
 
-Let $(x_n)$ be a Cauchy sequence in the compact metric space $X$. Compactness of a metric space implies sequential compactness, so some subsequence satisfies
-\[
-x_{n_k}\longrightarrow x\in X.
-\]
+Some subsequence satisfies $x_{n_k}\to x$ for a point $x\in X$.
+
+::: pf-proof
+
+A compact metric space is sequentially compact.
 
 :::
 
-::: pf-step
+:::
 
-Fix $\varepsilon>0$. Since $(x_n)$ is Cauchy, choose $N$ such that
-\[
-m,n\ge N\implies d(x_m,x_n)<\varepsilon/2.
-\]
-Choose $k$ with $n_k\ge N$ and
-\[
-d(x_{n_k},x)<\varepsilon/2.
-\]
-Then for every $n\ge N$,
-\[
+::: pf-qed
+
+Fix $\varepsilon>0$. Since $(x_n)$ is Cauchy, choose $N$ such that $m,n\ge N$ implies $d(x_m,x_n)<\varepsilon/2$. By step [](#subseq){.pf-ref}, choose $k$ with $n_k\ge N$ and $d(x_{n_k},x)<\varepsilon/2$. Then for every $n\ge N$,
+$$
 d(x_n,x)\le d(x_n,x_{n_k})+d(x_{n_k},x)<\varepsilon.
-\]
-Thus $x_n\to x$.
-
-:::
-
-::: pf-step
-
-Every Cauchy sequence in $X$ therefore converges to a point of $X$, so $X$ is complete.
+$$
+Thus $x_n\to x$, and $X$ is complete.
 
 :::
 
