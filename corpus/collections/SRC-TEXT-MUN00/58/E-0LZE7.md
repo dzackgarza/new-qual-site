@@ -23,7 +23,6 @@ Describe maps $f: X \to Y$ and $g: Y \to X$ that are homotopy inverse to each ot
 :::
 
 ::: {.solution}
-**Goal:** Explicitly construct continuous maps $f: X \to Y$ and $g: Y \to X$ between the figure-eight space $X = S^1 \vee S^1$ and the theta space $Y = S^1 \cup ([-1, 1] \times \{0\})$, and prove they are homotopy inverses.
 
 ::: pf
 
