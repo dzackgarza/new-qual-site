@@ -11,12 +11,16 @@ classification:
   - Product Topology
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source reads "a finite product or union compact spaces"; the missing "of" is supplied and a stray "Exercise" heading inside the statement is removed.
 ---
 
 ::: {.exercise}
-Show that a finite product or union compact spaces is again compact.
+Show that a finite product or union of compact spaces is again compact.
 
-#### Exercise
 :::
 
 ::: {.solution}
