@@ -12,23 +12,41 @@ classification:
   - Conformal Maps
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source does not say what f is; the statement takes f holomorphic on an open set Omega.
 ---
 
 ::: {.exercise}
-Show that if $f$ is injective, then $f'$ is nowhere vanishing and thus $f$ is conformal.
+Let $f$ be holomorphic on an open set $\Omega\subseteq\CC$. Show that if $f$ is injective, then $f'$ is nowhere vanishing and thus $f$ is conformal.
 
 :::
 
 ::: {.solution}
-Contrapositive: if $f'(z_0)=0$ at some point, then $f$ fails injectivity in a neighborhood of $z_0$.
-Without loss of generality, we can assume $f(0) = 0$ after changes of coordinates in the domain/codomain, since this won't affect injectivity or vanishing of derivatives.
-If $z_0$ is a zero of $f$ of some order $n$, we can write $f(z) = z^n g(z)$ with $g(0) \neq 0$ and $g$ nonvanishing in some neighborhood of zero.
-Choosing a branch of $z\mapsto z^{1\over n}$, write $g(z) = (h(z))^n$ for some $h$, then
-\[
-f(z) = z^n h(z)^n = (zh(z))^n
-.\]
-Write $H(z) \definedas zh(z)$, then $H'(z) = h(z) + zh'(z)$, so $H'(0)\neq 0$.
-By the inverse function theorem, $H$ is invertible on a small neighborhood of $0$, making $f$ $n$-to-one for some $n$.
-Writing $f(z) = \sum_{k\geq 0} c_k z^k$, we have $c_0 = 0$ since $f(0) = 0$ and $c_1 = 0$ if $f'(0) = 0$, making $n\geq 2$, so $f$ fails injectivity in this neighborhood.
+We prove the contrapositive: suppose $f'(z_0)=0$ for some $z_0\in\Omega$; we show $f$ is not injective. If $f$ is constant near $z_0$ it is not injective, so assume it is not.
+
+::: pf
+
+::: {.pf-step #factor}
+There are $n\ge2$ and a holomorphic $H$ near $z_0$ with $H(z_0)=0$, $H'(z_0)\neq0$ and $f(z)-f(z_0)=H(z)^n$.
+
+::: pf-proof
+The zero of $f-f(z_0)$ at $z_0$ has some finite order $n$, and $n\ge2$ because $f'(z_0)=0$. Write $f(z)-f(z_0)=(z-z_0)^ng(z)$ with $g(z_0)\neq0$. On a disk around $z_0$ where $g$ does not vanish, $g$ has a holomorphic $n$-th root $h$. Then $H(z)\coloneqq(z-z_0)h(z)$ has $H'(z_0)=h(z_0)\neq0$.
 :::
 
+:::
+
+::: pf-step
+$f$ is not injective near $z_0$.
+
+::: pf-proof
+By step [](#factor){.pf-ref} and the inverse function theorem, $H$ maps a neighborhood $U$ of $z_0$ biholomorphically onto a disk $\DD_r(0)$. For $0<\rho<r$, the $n\ge2$ distinct points $\rho e^{2\pi ij/n}$ have preimages in $U$ on which $f-f(z_0)=H^n$ takes the same value $\rho^n$.
+:::
+
+:::
+
+:::
+
+:::
