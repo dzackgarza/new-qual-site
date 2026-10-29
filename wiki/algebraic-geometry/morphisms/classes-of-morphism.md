@@ -35,11 +35,14 @@ Finite means finitely generated as a module, while finite type means finitely ge
 
 [[D-MORPROJ]]
 
-The implication chain is
+The implications are
 $$
-\text{closed immersion} \implies \text{finite} \implies \text{projective} \implies \text{proper} \implies \text{universally closed} ,
+\text{closed immersion} \implies \text{finite} \implies \text{proper} \implies \text{universally closed} ,
+\qquad
+\text{closed immersion} \implies \text{projective} \implies \text{proper} .
 $$
-together with the fact that finite type sits underneath all of it and is implied by each.
+A finite morphism to a quasi-compact scheme $Y$ with an ample invertible sheaf is projective.
+Closed immersions, finite, projective, and proper morphisms are of finite type; a universally closed morphism need not be: $\Spec\overline{\QQ}\to\Spec\QQ$ is integral, hence universally closed, and not of finite type.
 Standard converse counterexamples include $\PP^1_k \to \Spec k$, which is projective but not finite, and the hyperbola projection, which is quasi-finite but not proper.
 
 ## Base change
