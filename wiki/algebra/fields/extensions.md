@@ -10,8 +10,7 @@ topics:
 
 ## Simple and algebraic extensions
 
-For fields $K\subseteq L$ and $\alpha\in L$, $K(\alpha)$ is the smallest subfield of $L$ containing $K$ and $\alpha$, and $K[\alpha]$ is the smallest subring containing them.
-If $\alpha$ is algebraic over $K$ with minimal polynomial $f$, then $K[\alpha]=K(\alpha)\cong K[x]/\generators f$ and $[K(\alpha):K]=\deg f$.
+For fields $K\subseteq L$ and $\alpha\in L$, if $\alpha$ is algebraic over $K$ with minimal polynomial $f$, then $K[\alpha]=K(\alpha)\cong K[x]/\generators f$ and $[K(\alpha):K]=\deg f$.
 If $\alpha$ is transcendental over $K$, then $K[\alpha]\cong K[x]$ is a polynomial ring and $K(\alpha)\cong K(x)$ is its field of fractions.
 Every finite extension is algebraic, and by the primitive element theorem every finite separable extension is simple.
 
@@ -70,7 +69,6 @@ The quadratic extensions of $\QQ$ are the fields $\QQ(\sqrt d)$ for squarefree i
 
 ## Distinguished classes
 
-A class of field extensions is [[D-JMATC|distinguished]] if, for every tower $K\subseteq L\subseteq M$, $M/K$ is in the class if and only if $M/L$ and $L/K$ are, and if $E/K$ is in the class and $F/K$ is any extension with $E,F$ in a common field, then $EF/F$ is in the class.
 Separable extensions form a distinguished class.
 Normal extensions satisfy: if $M/K$ is normal and $K\subseteq L\subseteq M$, then $M/L$ is normal; normality is not transitive, by the example on [[algebra/fields/splitting-and-normal|Splitting fields and normal extensions]].
 

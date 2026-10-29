@@ -8,9 +8,6 @@ topics:
 
 # Splitting fields and normal extensions
 
-An algebraic extension $L/K$ is [[D-LZTAK|normal]] if every irreducible polynomial in $K[x]$ with a root in $L$ splits into linear factors over $L$.
-A finite extension $L/K$ is normal if and only if $L$ is the [[FD-LHTRR|splitting field]] over $K$ of some polynomial in $K[x]$.
-
 [[D-LZTAK]]
 
 [[FD-LHTRR]]
