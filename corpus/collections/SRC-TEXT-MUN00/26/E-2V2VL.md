@@ -24,7 +24,6 @@ Find a metric space in which not every closed bounded subspace is compact.
 :::
 
 ::: {.solution}
-**Goal:** Prove that compact subspaces of metric spaces are closed and bounded, and provide a metric space containing a closed, bounded subspace that fails to be compact.
 
 ::: pf
 
