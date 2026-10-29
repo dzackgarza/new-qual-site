@@ -28,24 +28,35 @@ Prove that $f(x)$ is irreducible in $k[x]$ if and only if $f(x)$ has no roots in
 :::
 
 ::: {.solution}
-If $f$ is irreducible and had a root $a\in k$, then the factor theorem would give
-\[
+
+::: pf
+
+::: pf-step
+If $f$ is irreducible, then $f$ has no root in $k$.
+
+::: pf-proof
+If $f$ had a root $a\in k$, the factor theorem would give
+$$
 f(x)=(x-a)g(x)
-\]
-with $\deg g=\deg f-1\ge1$, a nontrivial factorization. Hence an irreducible polynomial of degree $2$ or $3$ has no root in $k$.
+$$
+with $\deg g=\deg f-1\ge1$, a factorization into two nonunits.
+:::
 
-Conversely, suppose $f$ is reducible. Then
-\[
-f=gh
-\]
-with $\deg g,\deg h\ge1$ and
-\[
+:::
+
+::: pf-step
+If $f$ is reducible, then $f$ has a root in $k$.
+
+::: pf-proof
+Write $f=gh$ with $\deg g,\deg h\ge1$ and
+$$
 \deg g+\deg h=\deg f\in\{2,3\}.
-\]
-Therefore at least one factor has degree $1$. Write that factor as $ax+b$ with $a\ne0$. It vanishes at $-b/a\in k$, so $f$ has a root in $k$.
+$$
+Then at least one factor has degree $1$. Write that factor as $ax+b$ with $a\ne0$. It vanishes at $-b/a\in k$, so $f$ has a root in $k$.
+:::
 
-Thus, for degrees $2$ and $3$,
-\[
-f\text{ irreducible}\quad\Longleftrightarrow\quad f\text{ has no root in }k.
-\]
+:::
+
+:::
+
 :::
