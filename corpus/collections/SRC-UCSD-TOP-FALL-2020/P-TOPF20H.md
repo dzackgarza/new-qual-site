@@ -27,7 +27,7 @@ Hint: Compute the Euler characteristic of the universal covering space.
 :::
 
 ::: {.solution}
-**Goal:** Prove that a connected CW complex $X$ with finite non-trivial $\pi_1(X)$ and $\pi_k(X) = 0$ for all $k \ge 2$ (an Eilenberg–MacLane space $K(G, 1)$ for a finite group $G \neq 1$) cannot be a finite CW complex.
+Write $G = \pi_1(X)$, so $X$ is an Eilenberg–MacLane space $K(G, 1)$ for a finite group $G \neq 1$.
 
 ::: pf
 
