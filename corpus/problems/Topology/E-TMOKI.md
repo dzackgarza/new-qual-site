@@ -12,10 +12,15 @@ classification:
   - Subspace Topology
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source reads "the set (x, y) in R^2 such that"; the missing "of" is supplied.'
 ---
 
 ::: {.exercise}
-Show that the set $(x, y) \in \RR^2$ such that at least one of $x, y$ is rational with the subspace topology is a connected space.
+Show that the set of $(x, y) \in \RR^2$ such that at least one of $x, y$ is rational with the subspace topology is a connected space.
 :::
 
 ::: {.solution}
@@ -25,12 +30,12 @@ Show that the set $(x, y) \in \RR^2$ such that at least one of $x, y$ is rationa
 ::: pf-step
 
 Let
-$$X=(\mathbb Q\times\mathbb R)\cup(\mathbb R\times\mathbb Q).$$
-For each $q\in\mathbb Q$, the horizontal line $H_q=\mathbb R\times\{q\}$ and vertical line $V_q=\{q\}\times\mathbb R$ are connected.
+$$X=(\QQ\times\RR)\cup(\RR\times\QQ).$$
+For each $q\in\QQ$, the horizontal line $H_q=\RR\times\{q\}$ and vertical line $V_q=\{q\}\times\RR$ are connected.
 
 ::: pf-proof
 
-Each is homeomorphic to $\mathbb R$.
+Each is homeomorphic to $\RR$.
 
 :::
 
@@ -39,12 +44,12 @@ Each is homeomorphic to $\mathbb R$.
 ::: pf-step
 
 The union
-$$Y=V_0\cup\bigcup_{q\in\mathbb Q}H_q$$
+$$Y=V_0\cup\bigcup_{q\in\QQ}H_q$$
 is connected.
 
 ::: pf-proof
 
-Every $H_q$ meets the connected set $V_0$ at $(0,q)$. A union of connected sets all meeting a fixed connected set is connected.
+Every $H_q$ meets the connected set $V_0$ at $(0,q)$, and a union of connected sets all meeting a fixed connected set is connected.
 
 :::
 
@@ -52,11 +57,11 @@ Every $H_q$ meets the connected set $V_0$ at $(0,q)$. A union of connected sets 
 
 ::: pf-step
 
-Every vertical line $V_q$ meets $Y$ at $(q,0)$, since $H_0\subseteq Y$.
+Every vertical line $V_q$ with $q\in\QQ$ meets $Y$ at $(q,0)$.
 
 ::: pf-proof
 
-Both coordinates $q,0$ are rational where needed, so the point lies in the indicated sets.
+The point $(q,0)$ lies on $V_q$, and it lies on $H_0\subseteq Y$ because $0\in\QQ$.
 
 :::
 
@@ -65,12 +70,12 @@ Both coordinates $q,0$ are rational where needed, so the point lies in the indic
 ::: pf-step
 
 Hence
-$$X=Y\cup\bigcup_{q\in\mathbb Q}V_q$$
+$$X=Y\cup\bigcup_{q\in\QQ}V_q$$
 is connected.
 
 ::: pf-proof
 
-Again use that adjoining connected sets each meeting an already connected set preserves connectedness.
+Every point of $X$ has a rational coordinate, so it lies on some $H_q$ or $V_q$; this gives the displayed equality. Each $V_q$ is connected and meets the connected set $Y$, so the union is connected.
 
 :::
 
