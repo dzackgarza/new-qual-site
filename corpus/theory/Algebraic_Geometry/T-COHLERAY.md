@@ -33,7 +33,8 @@ $$
 \Gamma(X,-)=\Gamma(Y,-)\circ f_*.
 $$
 
-If $R^{q>0} f_* \mcf = 0$, the sequence collapses to the edge and $H^i(X,\mcf) \cong H^i(Y, f_*\mcf)$ for all $i$; that is the affine-morphism case above.
+If $R^q f_* \mcf = 0$ for all $q>0$, the sequence collapses to the edge and $H^i(X,\mcf) \cong H^i(Y, f_*\mcf)$ for all $i$.
+This holds, for example, when $f$ is an affine morphism of schemes and $\mcf$ is quasicoherent.
 In low degrees one obtains the five-term exact sequence
 $$
 0 \to H^1(Y, f_* \mcf)
