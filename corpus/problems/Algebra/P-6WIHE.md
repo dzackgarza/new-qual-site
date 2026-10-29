@@ -26,7 +26,7 @@ Draw the subgroup lattice for $S_3$.
 
 ::: {.solution}
 The subgroups of $S_3$ are
-\[
+$$
 \{e\},
 \qquad
 \langle(12)\rangle,
@@ -38,7 +38,7 @@ The subgroups of $S_3$ are
 A_3=\langle(123)\rangle,
 \qquad
 S_3.
-\]
+$$
 
 ::: pf
 
@@ -57,15 +57,15 @@ By Lagrange's theorem, a subgroup has order dividing $6$, hence order $1,2,3$, o
 ::: pf-step
 
 The subgroup lattice is
-\[
-\begin{array}{c}
-S_3\\[6pt]
-/\quad|\quad|\quad\\\\[-6pt]
-A_3\quad \langle(12)\rangle\quad \langle(13)\rangle\quad \langle(23)\rangle\\[6pt]
-\backslash\quad|\quad|\quad/\\\\[-6pt]
-\{e\}.
+$$
+\begin{array}{ccccccc}
+&&&S_3&&&\\
+&\diagup&\diagup&&\diagdown&\diagdown&\\
+A_3&&\langle(12)\rangle&&\langle(13)\rangle&&\langle(23)\rangle\\
+&\diagdown&\diagdown&&\diagup&\diagup&\\
+&&&\{e\}&&&
 \end{array}
-\]
+$$
 
 ::: pf-proof
 
