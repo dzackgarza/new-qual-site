@@ -23,36 +23,36 @@ audit:
 ---
 
 ::: {.problem}
-- If $L/k$ is an abelian Galois extension of degree $540 = 2^2 \times 3^3\times 5$, what are the possible Galois groups $\Gal(L/k)$?
+(a) If $L/k$ is an abelian Galois extension of degree $540 = 2^2 \times 3^3\times 5$, what are the possible Galois groups $\Gal(L/k)$?
 
-  - Are there any intermediate fields $E$ for which $L/E$ is a quadratic extension?
+(b) Are there any intermediate fields $E$ for which $L/E$ is a quadratic extension?
 :::
 
 ::: {.solution}
 Let
-\[
+$$
 G=\operatorname{Gal}(L/k).
-\]
+$$
 Since $L/k$ is abelian Galois and $[L:k]=540$, $G$ is a finite abelian group of order
-\[
+$$
 540=2^2 3^3 5.
-\]
+$$
 
 ::: pf
 
 ::: pf-step
 
 The possible primary components are
-\[
+$$
 G_{(2)}\cong C_4\quad\text{or}\quad C_2\oplus C_2,
-\]
-\[
+$$
+$$
 G_{(3)}\cong C_{27},\quad C_9\oplus C_3,\quad\text{or}\quad C_3\oplus C_3\oplus C_3,
-\]
+$$
 and
-\[
+$$
 G_{(5)}\cong C_5.
-\]
+$$
 
 ::: pf-proof
 
@@ -69,20 +69,20 @@ Hence there are exactly six possible Galois groups.
 ::: pf-proof
 
 The $2$-primary and $3$-primary choices are independent, while the $5$-primary part is forced. Thus there are
-\[
+$$
 2\cdot3\cdot1=6
-\]
+$$
 isomorphism classes. In invariant-factor form they are
-\[
+$$
 C_{540},
 \qquad C_3\oplus C_{180},
 \qquad C_3\oplus C_3\oplus C_{60},
-\]
-\[
+$$
+$$
 C_2\oplus C_{270},
 \qquad C_6\oplus C_{90},
 \qquad C_3\oplus C_6\oplus C_{30}.
-\]
+$$
 
 :::
 
@@ -95,9 +95,9 @@ An intermediate field $E$ satisfies $[L:E]=2$ exactly when the corresponding sub
 ::: pf-proof
 
 By the fundamental theorem of Galois theory,
-\[
+$$
 [L:E]=|\operatorname{Gal}(L/E)|.
-\]
+$$
 Thus quadratic extensions $L/E$ correspond precisely to order-$2$ subgroups of $G$.
 
 :::
@@ -123,9 +123,9 @@ The number of such fields is determined by the $2$-primary part.
 ::: pf-proof
 
 If $G_{(2)}\cong C_4$, there is a unique subgroup of order $2$, hence exactly one such $E$. If $G_{(2)}\cong C_2\oplus C_2$, its three nonzero elements generate three distinct order-$2$ subgroups, hence there are exactly three such fields. In every case
-\[
+$$
 [E:k]=[L:k]/2=270.
-\]
+$$
 
 :::
 
