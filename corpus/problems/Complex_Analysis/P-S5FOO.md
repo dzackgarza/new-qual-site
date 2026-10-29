@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: P-S5FOO
 kind: problem
-title: $L^\infty$ and $L^1$ disc norms of holomorphic functions
+title: The sup norm of a holomorphic function on $D_s(z_0)$ is bounded by its $L^1$
+  norm on $D_r(z_0)$
 classification:
   areas:
   - complex-analysis
@@ -15,108 +16,67 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'The card printed only the two norm definitions and posed no question. The statement now asks for the estimate the solution proves: for f holomorphic on D_r(z_0) and 0<s<r, the sup norm on D_s(z_0) is at most 1/(pi (r-s)^2) times the L^1 norm on D_r(z_0).'
 ---
 
 ::: {.problem}
+For $f$ holomorphic on a disc $D_r(z_0)$ and $0<s<r$, let
 $\displaystyle \|f\|_{(\infty, s)} = \text{sup}_{z \in D_s(z_0)}|f(z)|$ and $\displaystyle \|f\|_{(1, r)} = \int_{D_r(z_0)} |f(z)|dx dy$.
+Prove that
+$$
+\|f\|_{(\infty, s)} \le \frac{1}{\pi (r-s)^2}\, \|f\|_{(1, r)}.
+$$
 :::
 
 ::: {.solution}
+Fix $w\in D_s(z_0)$ and set $\rho\coloneqq r-s>0$.
 
 ::: pf
 
-::: pf-step
-Mean Value Property for holomorphic functions:
+::: {.pf-step #contained}
+
+$D_\rho(w)\subseteq D_r(z_0)$.
 
 ::: pf-proof
 
-::: pf-step
-Let $w \in D_s(z_0)$ and set $\rho = r - s > 0$.
-For any $\zeta \in D_\rho(w)$, the triangle inequality gives:
-\[
-|\zeta - z_0| \le |\zeta - w| + |w - z_0| < \rho + s = (r - s) + s = r.
-\]
-Thus the disc $D_\rho(w)$ is entirely contained in $D_r(z_0)$.
-
-:::
-
-::: pf-step
-By Cauchy's Integral Formula, for any radius $t \in (0, \rho)$:
-\[
-f(w) = \frac{1}{2\pi} \int_0^{2\pi} f(w + t e^{i\theta}) \, d\theta.
-\]
+For $\zeta\in D_\rho(w)$, $\abs{\zeta-z_0}\le\abs{\zeta-w}+\abs{w-z_0}<\rho+s=r$.
 
 :::
 
 :::
 
-:::
+::: {.pf-step #area-mean}
 
-::: pf-step
-Area mean value formula:
+$\displaystyle f(w)=\frac1{\pi\rho^2}\iint_{D_\rho(w)}f(z)\,dx\,dy$.
 
 ::: pf-proof
 
-::: pf-step
-Multiplying both sides of the circular mean value identity by $t$ and integrating from $t = 0$ to $t = \rho$:
-\[
-\int_0^\rho t f(w) \, dt = \frac{1}{2\pi} \int_0^\rho \int_0^{2\pi} f(w + t e^{i\theta}) t \, d\theta \, dt.
-\]
-
-:::
-
-::: pf-step
-Evaluating the left-hand side gives $\frac{\rho^2}{2} f(w)$, and changing to Cartesian coordinates on the right-hand side gives:
-\[
-\frac{\rho^2}{2} f(w) = \frac{1}{2\pi} \iint_{D_\rho(w)} f(z) \, dx \, dy \implies f(w) = \frac{1}{\pi \rho^2} \iint_{D_\rho(w)} f(z) \, dx \, dy.
-\]
-
-:::
+For $0<t<\rho$, the closed disc $\overline D_t(w)$ lies in $D_r(z_0)$ by step [](#contained){.pf-ref}, so the mean value property gives $f(w)=\frac1{2\pi}\int_0^{2\pi}f(w+te^{i\theta})\,d\theta$. Multiply by $t$ and integrate over $0<t<\rho$; in polar coordinates about $w$,
+$$
+\frac{\rho^2}2f(w)=\frac1{2\pi}\int_0^\rho\int_0^{2\pi}f(w+te^{i\theta})\,t\,d\theta\,dt=\frac1{2\pi}\iint_{D_\rho(w)}f(z)\,dx\,dy.
+$$
 
 :::
 
 :::
 
 ::: pf-step
-Norm estimate:
+
+$\|f\|_{(\infty,s)}\le\dfrac1{\pi(r-s)^2}\|f\|_{(1,r)}$.
 
 ::: pf-proof
 
-::: pf-step
-Taking absolute values and using the sub-mean value property:
-\[
-|f(w)| \le \frac{1}{\pi \rho^2} \iint_{D_\rho(w)} |f(z)| \, dx \, dy.
-\]
+By steps [](#area-mean){.pf-ref} and [](#contained){.pf-ref}, since $\abs f\ge0$,
+$$
+\abs{f(w)}\le\frac1{\pi\rho^2}\iint_{D_\rho(w)}\abs{f(z)}\,dx\,dy\le\frac1{\pi(r-s)^2}\|f\|_{(1,r)}.
+$$
+Take the supremum over $w\in D_s(z_0)$.
 
 :::
 
-::: pf-step
-Since $D_\rho(w) \subseteq D_r(z_0)$ and the integrand is non-negative:
-\[
-\iint_{D_\rho(w)} |f(z)| \, dx \, dy \le \iint_{D_r(z_0)} |f(z)| \, dx \, dy = \|f\|_{(1, r)}.
-\]
-
-:::
-
-::: pf-step
-Substituting $\rho = r - s$:
-\[
-|f(w)| \le \frac{1}{\pi (r - s)^2} \|f\|_{(1, r)}.
-\]
-Taking the supremum over all $w \in D_s(z_0)$:
-\[
-\|f\|_{(\infty, s)} \le \frac{1}{\pi (r - s)^2} \|f\|_{(1, r)}.
-\]
-
-:::
-
-:::
-
-:::
-
-::: pf-qed
-Conclusion:
-$\|f\|_{(\infty, s)} \le \frac{1}{\pi (r - s)^2} \|f\|_{(1, r)}$ for all $0 < s < r$.
 :::
 
 :::
