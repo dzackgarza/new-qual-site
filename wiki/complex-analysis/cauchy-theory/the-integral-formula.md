@@ -18,15 +18,15 @@ The values of a holomorphic function inside a curve are determined by its values
 
 ::: {.proof}
 
-![figures/image_2021-05-27-16-54-06.png](../../../../assets/assets/figures/image_2021-05-27-16-54-06.png)
+![](../../../../assets/assets/figures/image_2021-05-27-16-54-06.png)
 
 :::
 
 ::: {.proof}
 
-![figures/image_2021-05-27-16-56-39.png](../../../../assets/assets/figures/image_2021-05-27-16-56-39.png)
+![](../../../../assets/assets/figures/image_2021-05-27-16-56-39.png)
 
-![figures/image_2021-05-27-16-56-52.png](../../../../assets/assets/figures/image_2021-05-27-16-56-52.png)
+![](../../../../assets/assets/figures/image_2021-05-27-16-56-52.png)
 
 :::
 
@@ -74,7 +74,7 @@ This is the argument for the [[complex-analysis/cauchy-theory/maximum-modulus-an
 
 :::
 
-## Exercises
+## Problems
 
 [[E-4F5TF]] [[E-RLHXB]] [[E-VGNUI]] [[E-3B2YA]]
 [[E-ZVO5P]] [[E-5AKU5]] [[E-AZSMO]] [[E-DDKSS]]
