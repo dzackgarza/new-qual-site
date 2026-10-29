@@ -28,16 +28,17 @@ prompts:
 ---
 
 ::: {.definition title="The spectrum"}
+Let $A$ be a commutative ring.
 $\Spec A$ is the set of prime ideals of $A$, with closed sets $V(J) = \theset{\mfp \st \mfp \supseteq J}$.
 Its structure sheaf sends $U$ to the functions
 $$
-\varphi : U \to \coprod_{\mfp \in U} A_\mfp
+\varphi \colon U \to \coprod_{\mfp \in U} A_\mfp
 $$
 with $\varphi(\mfp) \in A_\mfp$, locally of the form $f/g$ with $g \notin \mfp$.
 :::
 
 ::: {.proposition}
-$\OO_{\Spec A}(D_f) = A_f$, and in particular $\OO_{\Spec A}(\Spec A) = A$.
+For $f \in A$, $\OO_{\Spec A}(D_f) = A_f$, and in particular $\OO_{\Spec A}(\Spec A) = A$.
 The stalk at $\mfp$ is $A_\mfp$, a local ring.
 :::
 
