@@ -25,80 +25,87 @@ audit:
 ::: {.problem}
 Let $G$ be a finite group and work with finite-dimensional complex representations.
 
-1. Define a representation and an irreducible representation of $G$.
-2. Prove that every finite-dimensional complex representation of $G$ is a direct sum of irreducible representations.
-3. Construct a $G$-invariant Hermitian inner product.
-:::
+(a) Define a representation and an irreducible representation of $G$.
 
+(b) Prove that every finite-dimensional complex representation of $G$ is a direct sum of irreducible representations.
+
+(c) Construct a $G$-invariant Hermitian inner product.
+:::
 
 ::: {.solution}
 
 ::: pf
 
 ::: pf-step
-A representation of $G$ is a homomorphism
-\[
-\rho:G\to\operatorname{GL}(V)
-\]
-for a finite-dimensional complex vector space $V$. It is irreducible if its only $G$-stable subspaces are $0$ and $V$.
+
+(a) A representation of $G$ is a homomorphism $\rho:G\to\GL(V)$ for a finite-dimensional complex vector space $V$. It is irreducible if $V\neq0$ and its only $G$-stable subspaces are $0$ and $V$.
 
 ::: pf-proof
+
 A subspace $W\subseteq V$ is $G$-stable when $\rho(g)W\subseteq W$ for every $g\in G$.
+
+:::
+
+:::
+
+::: {.pf-step #invariant-product}
+
+(c) Every representation admits a $G$-invariant positive-definite Hermitian inner product.
+
+::: pf-proof
+
+Start with any positive-definite Hermitian inner product $\inner{-}{-}_0$ on $V$ and average it over $G$:
+$$
+\inner{v}{w}_G
+=
+\frac1{\abs{G}}\sum_{g\in G}
+\inner{\rho(g)v}{\rho(g)w}_0.
+$$
+This remains Hermitian and positive definite. For $h\in G$,
+$$
+\inner{\rho(h)v}{\rho(h)w}_G
+=
+\frac1{\abs{G}}\sum_{g\in G}
+\inner{\rho(gh)v}{\rho(gh)w}_0
+=
+\inner{v}{w}_G,
+$$
+because $g\mapsto gh$ permutes $G$.
+
+:::
+
+:::
+
+::: {.pf-step #complement}
+
+If $W\subseteq V$ is $G$-stable, then its orthogonal complement $W^\perp$ with respect to $\inner{-}{-}_G$ is also $G$-stable.
+
+::: pf-proof
+
+For $v\in W^\perp$, $w\in W$, and $g\in G$, step [](#invariant-product){.pf-ref} gives
+$$
+\inner{\rho(g)v}{w}_G
+=
+\inner{v}{\rho(g^{-1})w}_G=0,
+$$
+since $\rho(g^{-1})w\in W$. Hence $\rho(g)v\in W^\perp$.
+
 :::
 
 :::
 
 ::: pf-step
-Every representation admits a $G$-invariant positive-definite Hermitian inner product.
+
+(b) Every finite-dimensional complex representation of $G$ is a direct sum of irreducible representations.
 
 ::: pf-proof
-Start with any positive-definite Hermitian inner product $\langle-,-\rangle_0$ on $V$ and average it over $G$:
-\[
-\langle v,w\rangle_G
-=
-\frac1{|G|}\sum_{g\in G}
-\langle\rho(g)v,\rho(g)w\rangle_0.
-\]
-This remains Hermitian and positive definite. For $h\in G$,
-\[
-\langle\rho(h)v,\rho(h)w\rangle_G
-=
-\frac1{|G|}\sum_{g\in G}
-\langle\rho(gh)v,\rho(gh)w\rangle_0
-=
-\langle v,w\rangle_G,
-\]
-because $g\mapsto gh$ permutes $G$.
-:::
 
-:::
-
-::: {.pf-step #s3}
-If $W\subseteq V$ is $G$-stable, then its orthogonal complement $W^\perp$ is also $G$-stable.
-
-::: pf-proof
-For $v\in W^\perp$, $w\in W$, and $g\in G$, invariance of the inner product gives
-\[
-\langle\rho(g)v,w\rangle_G
-=
-\langle v,\rho(g^{-1})w\rangle_G=0,
-\]
-since $\rho(g^{-1})w\in W$. Hence $\rho(g)v\in W^\perp$.
-:::
-
-:::
-
-::: {.pf-step #s4}
-Every finite-dimensional complex representation of $G$ is completely reducible.
-
-::: pf-proof
-Induct on $\dim V$. If $V$ is irreducible, there is nothing to prove. Otherwise choose a nonzero proper invariant subspace $W$. By step [](#s3){.pf-ref},
-\[
+This is Maschke's theorem over $\CC$. Induct on $\dim V$. The zero representation is the empty direct sum, and an irreducible $V$ is its own decomposition. Otherwise choose a nonzero proper $G$-stable subspace $W$. By step [](#complement){.pf-ref},
+$$
 V=W\oplus W^\perp
-\]
+$$
 as $G$-representations. Apply induction to the two lower-dimensional summands.
 
-Step [](#s4){.pf-ref} is Maschke's theorem over $\CC$.
 :::
 
 :::
