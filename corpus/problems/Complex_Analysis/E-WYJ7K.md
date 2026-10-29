@@ -17,49 +17,47 @@ review: draft
 Find a conformal map from the region bounded by $\abs{z - {i\over 2}} = {1\over 2}$ and $\abs{z-i} = 1$ to $\DD$.
 :::
 
+::: {.hint}
+The two circles are internally tangent at $0$; inversion sends both to parallel lines.
+:::
+
 ::: {.solution}
-The two circles are internally tangent at $z=0$, not at $z=i$.
-The desired region is the part inside $|z-i|<1$ and outside $|z-i/2|<1/2$.
+Let $\Omega = \theset{\abs{z-i}<1}\setminus\theset{\abs{z-i/2}\le1/2}$, the region between the circles.
 
-Since both boundary circles pass through $0$, inversion sends them to parallel lines.
-If
-\[
-w={1\over z},
-\]
-then the circle
-\[
-|z-ia|=a
-\]
-has equation $|z|^2=2a\Im z$, hence on its image
-\[
-\Im w=-{\Im z\over |z|^2}=-{1\over 2a}.
-\]
-Therefore
-\[
-|z-i|=1\longmapsto \Im w=-{1\over2},
-\qquad
-|z-i/2|={1\over2}\longmapsto \Im w=-1.
-\]
-The lune maps to the horizontal strip
-\[
--1<\Im w<-{1\over2}.
-\]
+::: pf
 
-Now set
-\[
-\zeta=2\pi(w+i).
-\]
-Then $0<\Im\zeta<\pi$, so $u=e^\zeta$ maps the strip biholomorphically onto $\HH$.
-Finally the Cayley map
-\[
-C(u)={u-i\over u+i}
-\]
-sends $\HH$ to $\DD$.
+::: {.pf-step #strip}
+$w = 1/z$ maps $\Omega$ conformally onto the strip $S = \theset{-1<\Im w<-\frac12}$.
 
-Thus one conformal map is
-\[
-F(z)
-=\frac{\exp\!\left(2\pi\left(z^{-1}+i\right)\right)-i}
-{\exp\!\left(2\pi\left(z^{-1}+i\right)\right)+i}.
-\]
+::: pf-proof
+The circle $\abs{z-ia}=a$ is $\abs z^2 = 2a\Im z$, and on it $\Im(1/z) = -\Im z/\abs z^2 = -\frac1{2a}$.
+So $\abs{z-i}=1$ maps into $\Im w=-\frac12$ and $\abs{z-i/2}=\frac12$ maps into $\Im w=-1$.
+The point $\frac32 i\in\Omega$ maps to $-\frac23 i\in S$, so $1/z$ maps $\Omega$ onto $S$.
+:::
+
+:::
+
+::: {.pf-step #half-plane}
+$w\mapsto e^{2\pi(w+i)}$ maps $S$ conformally onto $\HH$.
+
+::: pf-proof
+$w\mapsto2\pi(w+i)$ maps $S$ onto $\theset{0<\Im\zeta<\pi}$, which $\exp$ maps bijectively onto $\HH$.
+:::
+
+:::
+
+::: pf-step
+$$
+\boxed{F(z) = \frac{\exp\qty(2\pi\qty(z^{-1}+i))-i}{\exp\qty(2\pi\qty(z^{-1}+i))+i}}
+$$
+maps $\Omega$ conformally onto $\DD$.
+
+::: pf-proof
+Compose steps [](#strip){.pf-ref} and [](#half-plane){.pf-ref} with the Cayley map $u\mapsto\frac{u-i}{u+i}$ from $\HH$ onto $\DD$.
+:::
+
+:::
+
+:::
+
 :::
