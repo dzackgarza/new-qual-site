@@ -46,8 +46,6 @@ Over a field of characteristic $0$, a polynomial is solvable by radicals if and 
 
 [[D-53JVH]]
 
-[[T-7PU33]]
-
 [[T-4INET]]
 
 [[T-GM7EB]]
