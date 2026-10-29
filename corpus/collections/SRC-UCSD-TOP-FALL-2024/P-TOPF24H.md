@@ -21,8 +21,6 @@ Compute $\operatorname{Tor}(\ZZ \oplus \ZZ_4, \ZZ_6 \oplus \ZZ_8)$.
 :::
 
 ::: {.solution}
-**Goal:** Compute the torsion group $\operatorname{Tor}_1^\ZZ(\ZZ \oplus \ZZ_4, \ZZ_6 \oplus \ZZ_8)$.
-
 ::: pf
 
 ::: pf-step
