@@ -46,6 +46,5 @@ a curve of type $(a,a)$ has $d=2a$ and $g=(a-1)^2$, while a curve of type $(a,a+
 
 An extremal curve lies on a quadric surface, but the quadric need not be smooth. The balanced bidegree calculation therefore supplies the equality numerics without asserting that every extremal curve is presented on a smooth quadric.
 
-The contrast with plane curves explains the nonplanarity hypothesis.
-A smooth plane curve of degree $d$ has genus $\binom{d-1}{2}$, so the nonplanarity hypothesis is essential for the smaller Castelnuovo bound.
+The nonplanarity hypothesis is necessary: a smooth plane curve of degree $d$ has genus $\binom{d-1}{2}$, which exceeds the bound for $d \geq 3$.
 :::
