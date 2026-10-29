@@ -34,19 +34,19 @@ Neither implication reverses, none of (U), (P), (AE) implies (N), and (N) implie
 ::: {.example}
 The functions $f_n\coloneqq\frac1n\chi_{(0,n)}$ converge uniformly to $0$, but $\int_\RR f_n=1$ for all $n$, so they satisfy (U), (P), (AE) and not (N).
 
-![image_2021-05-21-16-38-30](../../assets/figures/image_2021-05-21-16-38-30.png)
+![Graph of $f_n = \frac1n\chi_{(0,n)}$: a rectangle of height $1/n$ over $(0,n)$, of area $1$](../../assets/figures/image_2021-05-21-16-38-30.png)
 :::
 
 ::: {.example}
 The functions $f_n\coloneqq\chi_{(n,n+1)}$ converge pointwise to $0$, but $\sup_\RR\abs{f_n}=1$ and $\norm{f_n}_1=1$ for all $n$, so they satisfy (P), (AE) and not (U), (N).
 
-![image_2021-05-21-16-42-08](../../assets/figures/image_2021-05-21-16-42-08.png)
+![Graphs of $f_1, f_2, f_3, f_4$: unit-height rectangles over the adjacent intervals $(1,2), (2,3), (3,4), (4,5)$, each of area $1$, moving to the right](../../assets/figures/image_2021-05-21-16-42-08.png)
 :::
 
 ::: {.example}
 The functions $f_n\coloneqq n\chi_{[0,1/n]}$ converge to $0$ at every $x\neq0$ and diverge at $x=0$, and $\norm{f_n}_1=1$ for all $n$, so they satisfy (AE) and not (U), (P), (N).
 
-![image_2021-05-21-16-54-38](../../assets/figures/image_2021-05-21-16-54-38.png)
+![Graph of $f_n = n\chi_{[0,1/n]}$: a rectangle of height $n$ over $[0,1/n]$, of area $1$](../../assets/figures/image_2021-05-21-16-54-38.png)
 :::
 
 ::: {.example}
@@ -54,7 +54,7 @@ For $k\geq1$ and $0\leq j<2^k$, let $I_{k,j}\coloneqq[j2^{-k},(j+1)2^{-k}]$, and
 If $f_n=\chi_{I_{k,j}}$, then $\norm{f_n}_1=2^{-k}\to0$, so $f_n\to0$ in (N).
 Every $x\in[0,1]$ lies in some $I_{k,j}$ and outside some $I_{k,j'}$ for each $k$, so $f_n(x)=1$ for infinitely many $n$ and $f_n(x)=0$ for infinitely many $n$; hence $(f_n)$ satisfies (N) and not (U), (P), (AE).
 
-![image_2021-05-21-16-49-09](../../assets/figures/image_2021-05-21-16-49-09.png)
+![Graphs of $f_1, \ldots, f_6$: unit-height indicators of $[0,1/2]$, $[1/2,1]$, then $[0,1/4]$, $[1/4,1/2]$, $[1/2,3/4]$, $[3/4,1]$, sweeping across $[0,1]$ with halving width](../../assets/figures/image_2021-05-21-16-49-09.png)
 :::
 
 ::: {.example}

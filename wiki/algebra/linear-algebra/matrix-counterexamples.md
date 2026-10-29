@@ -5,7 +5,16 @@ order: 520
 
 # Matrix counterexamples
 
-![attachments/Pasted image 20211129205548.png](../../../assets/attachments/Pasted%20image%2020211129205548.png)
+::: {.example title="A basis of $\mathfrak{su}(2)$ from the Pauli matrices"}
+The Lie algebra $\mathfrak{su}(2) = \theset{X \in \Mat_{2\times 2}(\CC) \suchthat X^* = -X,\ \trace X = 0}$ is a real vector space of dimension $3$ with basis
+$$
+\sigma_1 \coloneqq \frac{1}{\sqrt 2}\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix},\qquad
+\sigma_2 \coloneqq \frac{1}{\sqrt 2}\begin{pmatrix} 0 & i \\ i & 0 \end{pmatrix},\qquad
+\sigma_3 \coloneqq \frac{1}{\sqrt 2}\begin{pmatrix} i & 0 \\ 0 & -i \end{pmatrix}.
+$$
+With the Pauli matrices $\tau_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$, $\tau_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}$, $\tau_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$, these are $\sigma_1 = \frac{1}{\sqrt 2}\, i\tau_y$, $\sigma_2 = \frac{1}{\sqrt 2}\, i\tau_x$, and $\sigma_3 = \frac{1}{\sqrt 2}\, i\tau_z$.
+Each Pauli matrix is Hermitian and traceless, so $i$ times it is skew-Hermitian and traceless, and lies in $\mathfrak{su}(2)$.
+:::
 
 ::: {.example title="Diagonalizable over $\CC$ and not over $\RR$"}
 The matrix

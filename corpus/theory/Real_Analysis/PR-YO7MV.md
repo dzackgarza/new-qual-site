@@ -34,7 +34,7 @@ $$
 $$
 Dividing by $\alpha^p > 0$ gives the second inequality, and $p=1$ gives the first.
 
-![figures/image_2021-06-02-22-59-46.png](../../assets/figures/image_2021-06-02-22-59-46.png)
+![Graph of a nonnegative function $f$ with the horizontal line at height $\alpha$; the set where $f > \alpha$ is two intervals, and the shaded rectangles of height $\alpha$ over them have total area $\alpha\, m(\theset{x \suchthat f(x)>\alpha})$ and lie under the graph of $f$](../../assets/figures/image_2021-06-02-22-59-46.png)
 :::
 
 ::: {.remark}

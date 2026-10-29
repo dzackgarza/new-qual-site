@@ -34,9 +34,28 @@ the sum of the $\binom{n}{\ell}$ principal $\ell\times\ell$ minors of $A$, where
 
 ::: {.example}
 Let $M = (4i + j)_{0 \leq i, j \leq 3} \in \Mat_{4\times 4}(\QQ)$.
-The principal submatrices of $M$ of sizes $\ell=1,\ldots,4$:
-
-![](../../assets/figures/2021-07-24_19-48-11.png)
+Its principal submatrices are as follows.
+$$
+M = \begin{bmatrix} 0 & 1 & 2 & 3 \\ 4 & 5 & 6 & 7 \\ 8 & 9 & 10 & 11 \\ 12 & 13 & 14 & 15 \end{bmatrix}
+$$
+For $\ell = 1$: $[0], [5], [10], [15]$.
+For $\ell = 2$:
+$$
+\begin{bmatrix} 0 & 1 \\ 4 & 5 \end{bmatrix},\
+\begin{bmatrix} 0 & 2 \\ 8 & 10 \end{bmatrix},\
+\begin{bmatrix} 0 & 3 \\ 12 & 15 \end{bmatrix},\
+\begin{bmatrix} 5 & 6 \\ 9 & 10 \end{bmatrix},\
+\begin{bmatrix} 5 & 7 \\ 13 & 15 \end{bmatrix},\
+\begin{bmatrix} 10 & 11 \\ 14 & 15 \end{bmatrix}.
+$$
+For $\ell = 3$:
+$$
+\begin{bmatrix} 0 & 1 & 2 \\ 4 & 5 & 6 \\ 8 & 9 & 10 \end{bmatrix},\
+\begin{bmatrix} 0 & 1 & 3 \\ 4 & 5 & 7 \\ 12 & 13 & 15 \end{bmatrix},\
+\begin{bmatrix} 0 & 2 & 3 \\ 8 & 10 & 11 \\ 12 & 14 & 15 \end{bmatrix},\
+\begin{bmatrix} 5 & 6 & 7 \\ 9 & 10 & 11 \\ 13 & 14 & 15 \end{bmatrix}.
+$$
+For $\ell = 4$ the only principal submatrix is $M$ itself.
 
 The $1\times 1$ minors sum to $\trace M = 0 + 5 + 10 + 15 = 30$, and the $2\times 2$ minors are $-4, -16, -36, -4, -16, -4$, with sum $-80$.
 Every row of $M$ is a linear combination of $(1,1,1,1)$ and $(0,1,2,3)$, so $\rank M = 2$ and every $3\times 3$ and $4\times 4$ minor vanishes.
