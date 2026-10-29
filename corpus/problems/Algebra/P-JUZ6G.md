@@ -18,27 +18,35 @@ audit:
   by: OpenAI
   date: 2026-09-09
 ---
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The statement left G undeclared; it now declares G as a group.
+---
 
 ::: {.problem}
-Show that
-\[
+Let $G$ be a group. Show that
+$$
 Z(G)=\bigcap_{a\in G}C_G(a).
-\]
+$$
 :::
 
 ::: {.solution}
-By definition,
-\[
-Z(G)=\{x\in G:xa=ax\text{ for every }a\in G\}.
-\]
-For a fixed $a\in G$,
-\[
-C_G(a)=\{x\in G:xa=ax\}.
-\]
-Therefore an element $x$ lies in every $C_G(a)$ exactly when it commutes with every element of $G$. Hence
-\[
-\bigcap_{a\in G}C_G(a)
-=\{x\in G:xa=ax\text{ for all }a\in G\}
-=Z(G).
-\]
+
+::: pf
+
+::: pf-step
+
+An element $x\in G$ lies in $\bigcap_{a\in G}C_G(a)$ if and only if $x\in Z(G)$.
+
+::: pf-proof
+
+By definition $C_G(a)=\{x\in G:xa=ax\}$, so $x$ lies in every $C_G(a)$ exactly when $xa=ax$ for every $a\in G$, which is the definition of $x\in Z(G)$.
+
+:::
+
+:::
+
+:::
+
 :::
