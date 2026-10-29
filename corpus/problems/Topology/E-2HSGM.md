@@ -22,38 +22,50 @@ Show that $[0, 1]$ is compact.
 :::
 
 ::: {.solution}
-We prove that $[0, 1]$ is compact directly using the least-upper-bound property of $\RR$.
 
-Let $\mathcal{U} = \{U_\alpha\}_{\alpha \in A}$ be an open cover of $[0, 1]$ by open subsets of $\RR$.
-Define the set:
+Let $\mathcal{U}$ be a cover of $[0, 1]$ by open subsets of $\RR$, and let
 $$
-S = \{x \in [0, 1] \mid [0, x] \text{ can be covered by finitely many sets from } \mathcal{U}\}.
+S = \{x \in [0, 1] \mid [0, x] \text{ is covered by finitely many members of } \mathcal{U}\}.
 $$
 
-1. **$S$ is non-empty and bounded:**
+::: pf
 
-   - Since $0 \in [0, 1]$, there is some $U_0 \in \mathcal{U}$ with $0 \in U_0$.
-     Thus $[0, 0] = \{0\} \subseteq U_0$, so $0 \in S$, and $S \neq \emptyset$.
+::: pf-step
 
-   - By definition, $S \subseteq [0, 1]$, so $S$ is bounded above by $1$.
+$S$ has a supremum $c \in [0,1]$.
 
-2. **Supremum of $S$:** By the completeness (least upper bound property) of $\RR$, $c = \sup S$ exists, and $0 \leq c \leq 1$.
+::: pf-proof
 
-3. **Show $c \in S$:** Since $c \in [0, 1]$, there exists some $U_c \in \mathcal{U}$ containing $c$.
-   Since $U_c$ is open in $\RR$, there exists $\varepsilon > 0$ such that $(c - \varepsilon, c + \varepsilon) \cap [0, 1] \subseteq U_c$.
-   By definition of the supremum, there exists $x_0 \in S$ with $c - \varepsilon < x_0 \leq c$.
-   Since $x_0 \in S$, $[0, x_0]$ is covered by a finite subcollection $\{U_{\alpha_1}, \ldots, U_{\alpha_k}\} \subseteq \mathcal{U}$.
-   Then:
-   $$
-   [0, c] \subseteq [0, x_0] \cup [x_0, c] \subseteq \left(\bigcup_{i=1}^k U_{\alpha_i}\right) \cup U_c.
-   $$
-   This is a finite subcover of $[0, c]$, so $c \in S$.
+Some $U_0 \in \mathcal{U}$ contains $0$, so $[0,0] \subseteq U_0$ and $0 \in S$. Also $S \subseteq [0,1]$ is bounded above by $1$, so the least upper bound property of $\RR$ gives $c = \sup S$ with $0 \le c \le 1$.
 
-4. **Show $c = 1$:** Suppose towards a contradiction that $c < 1$.
-   Since $c \in U_c$ and $U_c$ is open, we can choose $x_1 \in (c, c + \varepsilon) \cap [0, 1]$ (since $c < 1$). Then $[0, x_1] = [0, c] \cup [c, x_1] \subseteq \left(\bigcup_{i=1}^k U_{\alpha_i}\right) \cup U_c$.
-   Thus $[0, x_1]$ is also covered by finitely many sets from $\mathcal{U}$, meaning $x_1 \in S$.
-   Since $x_1 > c$, this contradicts that $c = \sup S$.
+:::
 
-Therefore, $c = 1$, and since $c \in S$, we have $1 \in S$.
-Hence $[0, 1]$ is covered by a finite subcollection of $\mathcal{U}$, proving that $[0, 1]$ is compact.
+:::
+
+::: {.pf-step #c-in-S}
+
+$c \in S$.
+
+::: pf-proof
+
+Choose $U_c \in \mathcal{U}$ containing $c$ and $\varepsilon > 0$ with $(c - \varepsilon, c + \varepsilon) \subseteq U_c$. By definition of the supremum there is $x_0 \in S$ with $c - \varepsilon < x_0 \le c$, and finitely many members of $\mathcal{U}$ cover $[0, x_0]$. Together with $U_c \supseteq [x_0, c]$ they cover $[0, c]$.
+
+:::
+
+:::
+
+::: pf-step
+
+$c = 1$, so $[0,1]$ is covered by finitely many members of $\mathcal{U}$.
+
+::: pf-proof
+
+Suppose $c < 1$, and take $U_c$, $\varepsilon$ as in step [](#c-in-S){.pf-ref} and $x_1 \in (c, \min(c + \varepsilon, 1))$. The finite cover of $[0,c]$ from step [](#c-in-S){.pf-ref} together with $U_c \supseteq [c, x_1]$ covers $[0, x_1]$, so $x_1 \in S$, contradicting $x_1 > c = \sup S$. Hence $c = 1$, and $1 \in S$ by step [](#c-in-S){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::
