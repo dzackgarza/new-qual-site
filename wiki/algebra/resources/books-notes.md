@@ -1,4 +1,5 @@
 ---
+title: Algebra books and notes
 order: 20
 ---
 
