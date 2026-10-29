@@ -27,8 +27,5 @@ In particular, if $n_\gamma(z_j)=1$ for every $j$, then
 $$
 \frac{1}{2\pi i}\int_\gamma f(z)\dz=\sum_{j=1}^N\Res_{z=z_j}f.
 $$
-:::
-
-::: {.remark}
-See [@SS03].
+This is the residue theorem of [@SS03].
 :::
