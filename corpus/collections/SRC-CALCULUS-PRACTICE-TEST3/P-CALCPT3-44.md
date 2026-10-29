@@ -25,3 +25,39 @@ $$\lim_{h\to0}\frac{P(x+3h)+P(x-3h)-2P(x)}{h^2}=$$
 (D) $9P''(x)$
 (E) $\infty$
 :::
+
+::: {.solution}
+Fix $x$ and let $d\coloneqq\deg P$. A polynomial equals its Taylor expansion at $x$: $P(x+t)=\sum_{j=0}^{d}\frac{P^{(j)}(x)}{j!}t^j$ for all real $t$.
+
+::: pf
+
+::: {.pf-step #expand}
+$P(x+3h)+P(x-3h)-2P(x)=9P''(x)h^2+\sum_{j\ge4,\ j\text{ even}}\frac{2\cdot3^jP^{(j)}(x)}{j!}h^j$.
+
+::: pf-proof
+Add the expansions at $t=3h$ and $t=-3h$. Odd powers of $t$ cancel, and the constant terms cancel against $-2P(x)$. The $t^2$ terms give $2\cdot\frac{P''(x)}2(3h)^2=9P''(x)h^2$.
+:::
+
+:::
+
+::: {.pf-step #limit}
+The limit is $\boxed{9P''(x)}$, choice (D).
+
+::: pf-proof
+Divide step [](#expand){.pf-ref} by $h^2$. The remaining sum is a polynomial in $h$ with no constant term, so it tends to $0$ as $h\to0$.
+:::
+
+:::
+
+::: pf-step
+Choices (A), (B), (C), and (E) are wrong.
+
+::: pf-proof
+Take $P(t)=t^2$ and $x=0$. By step [](#limit){.pf-ref} the limit is $18$, while (A), (B), (C), (E) give $0$, $0$, $6$, $\infty$.
+:::
+
+:::
+
+:::
+
+:::
