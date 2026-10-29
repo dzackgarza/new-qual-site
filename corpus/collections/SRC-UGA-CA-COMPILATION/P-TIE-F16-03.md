@@ -244,7 +244,7 @@ $$
 
 ::: pf-qed
 
-Step [](#s1-1){.pf-ref} gives the precise definition requested in part (a), step [](#s1-2){.pf-ref} proves part (b), and step [](#s1-5){.pf-ref} gives the requested $R$-dependent bound for part (c) after specifying the logarithm determination omitted by the source.
+Step [](#s1-1){.pf-ref} gives the precise definition requested in part (a), step [](#s1-2){.pf-ref} proves part (b), and step [](#s1-5){.pf-ref} gives the requested $R$-dependent bound for part (c) after specifying the logarithm determination, which the statement leaves open.
 
 :::
 
