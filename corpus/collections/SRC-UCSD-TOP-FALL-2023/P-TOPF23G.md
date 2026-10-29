@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF23G
 kind: problem
-title: "Half die half alive: H_1 of complementary pieces in S^3 are isomorphic; RP^3 minus a ball cannot embed in S^3"
+title: 'Half lives, half dies: complementary pieces of $S^3$ have isomorphic $H_1$, and $\RP^3$ minus a ball does not embed in $S^3$'
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF23F
 kind: problem
-title: "The quotient map S^n to RP^n is not null-homotopic"
+title: 'The quotient map $S^n\to\RP^n$ is not null-homotopic'
 classification:
   areas:
   - topology

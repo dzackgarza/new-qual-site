@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF23C
 kind: problem
-title: "Intersection forms on mod-2 homology of the torus, Klein bottle, and RP^2 # RP^2"
+title: 'Intersection forms on mod $2$ homology of the torus, the Klein bottle, and $\RP^2\#\RP^2$'
 classification:
   areas:
   - topology
