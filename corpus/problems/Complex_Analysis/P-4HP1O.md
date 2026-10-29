@@ -21,18 +21,33 @@ Prove that there is no sequence of polynomials that uniformly converge to $f(z) 
 
 ::: {.solution}
 
-- By Cauchy's integral formula, $\int_{S^1} f = 2\pi i$
+Orient $S^1$ counterclockwise, and suppose polynomials $p_j$ converge uniformly to $1/z$ on $S^1$.
 
-- If $p_j$ is any polynomial, then $p_j$ is holomorphic in $\DD$, so $\int_{S^1} p_j = 0$.
+::: pf
 
-- Contradiction: compact sets in $\CC$ are bounded, so
-  \[
-  \abs{\int f - \int p_j} 
-  &\leq \int \abs{p_j - f} \\
-  &\leq \int \norm{p_j - f}_\infty  \\
-  &= \norm{p_j - f}_\infty \int_{S^1} 1 \,dz \\
-  &= \norm{p_j-f}_\infty \cdot 2\pi \\
-  &\to 0
-  \]
-  which forces $\int f = \int p_j = 0$.
+::: {.pf-step #integrals}
+$\int_{S^1}\frac{dz}{z}=2\pi i$ and $\int_{S^1}p_j(z)\,dz=0$ for every $j$.
+
+::: pf-proof
+The first is the direct computation with $z=e^{it}$.
+The second is Cauchy's theorem, since $p_j$ is entire.
+:::
+
+:::
+
+::: pf-step
+This is a contradiction.
+
+::: pf-proof
+By the standard estimate,
+$$
+\abs{\int_{S^1}\frac{dz}{z}-\int_{S^1}p_j(z)\,dz}\leq2\pi\sup_{\abs{z}=1}\abs{\frac1z-p_j(z)}\to0,
+$$
+while by step [](#integrals){.pf-ref} the left side is $2\pi$ for every $j$.
+:::
+
+:::
+
+:::
+
 :::
