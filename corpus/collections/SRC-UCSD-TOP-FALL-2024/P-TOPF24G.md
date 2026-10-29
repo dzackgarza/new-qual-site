@@ -24,8 +24,6 @@ Give a description of the universal cover $\widetilde{X}$ of $X$ and use this to
 :::
 
 ::: {.solution}
-**Goal:** Compute the fundamental group $\pi_1(X)$, describe the universal cover $\widetilde{X}$, and compute $\pi_2(X)$ for the connected sum $X = \RP^3 \# \RP^3$.
-
 ::: pf
 
 ::: pf-step
