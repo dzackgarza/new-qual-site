@@ -18,29 +18,38 @@ review: draft
 ---
 
 ::: {.problem}
-- Let $H\leq G$ be a subgroup (not necessarily normal).
-  Prove that any two cosets $xH, yH\in G/H$ have the same cardinality.
+Let $H\leq G$ be a subgroup (not necessarily normal).
+Prove that any two cosets $xH, yH\in G/H$ have the same cardinality.
+:::
 
-  > Define a map $m_g: G\to G$ where $x\mapsto gx$, restrict to $m_h:H\surjects gH$, inverse $\inverseof{(m_g)} = m_{\inverseof{g}}$
+::: {.hint}
+Left multiplication $m_g\colon G\to G$, $x\mapsto gx$, is a bijection with inverse $m_{g^{-1}}$, and it restricts to a bijection $H\to gH$.
 :::
 
 ::: {.solution}
-**Theorem.**\
-Any two left cosets of a subgroup have equal cardinality.
 
-*Proof.*
+Fix $x,y\in G$ and define $\tau\colon xH\to yH$ by $\tau(xh)=yh$ for $h\in H$.
 
-1. Fix $x,y\in G$.
-   Define $\tau:xH\to yH$ by $\tau(xh)=yh$ for $h\in H$.
+::: pf
 
-2. $\tau$ is well defined since multiplying $h$ by an element of $H$ gives another element of $H$.
+::: {.pf-step #well-defined}
 
-3. For $u\in H$, define $\tau^{-1}(yu)=xu$; then $\tau^{-1}(yu)\in xH$ and
-   \[
-   \tau(\tau^{-1}(yu))=y u,\qquad
-   \tau^{-1}(\tau(xh))=x h.
-   \]
-   So $\tau^{-1}$ is an inverse.
+$\tau$ is well defined.
 
-4. Hence $\tau$ is a bijection and $|xH|=|yH|$.
+::: pf-proof
+
+Each element of $xH$ is $xh$ for exactly one $h\in H$: if $xh=xh'$, then $h=h'$ by cancellation.
+
+:::
+
+:::
+
+::: pf-qed
+
+By the same argument, $\sigma\colon yH\to xH$, $\sigma(yh)=xh$, is well defined, and $\sigma(\tau(xh))=xh$ and $\tau(\sigma(yh))=yh$ for all $h\in H$. So $\tau$ is a bijection with inverse $\sigma$, and $\abs{xH}=\abs{yH}$.
+
+:::
+
+:::
+
 :::
