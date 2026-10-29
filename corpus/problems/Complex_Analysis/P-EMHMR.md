@@ -21,65 +21,46 @@ audit:
 ---
 
 ::: {.problem}
-Prove that if a function $f$ has two Laurent series expansions in an annulus $A = \{z \in \mathbb{C} \mid r < |z-a| < R\}$:
+Prove that if a function $f$ has two Laurent series expansions in an annulus $A = \{z \in \CC \mid r < \abs{z-a} < R\}$:
 $$f(z) = \sum_{n=-\infty}^\infty c_n(z-a)^n \quad\text{and}\quad f(z) = \sum_{n=-\infty}^\infty c_n'(z-a)^n$$
-then $c_n = c_n'$ for all $n \in \mathbb{Z}$.
+then $c_n = c_n'$ for all $n \in \ZZ$.
 :::
 
 ::: {.solution}
-Fix $\rho$ with
-\[
-r<\rho<R,
-\]
-and let
-\[
-\gamma(t)=a+\rho e^{it},\qquad0\le t\le2\pi.
-\]
-For every integer $k$, define
-\[
-I_k=\frac1{2\pi i}\int_\gamma\frac{f(z)}{(z-a)^{k+1}}\,dz.
-\]
+
+Fix $\rho$ with $r<\rho<R$, let $\gamma(t)\coloneqq a+\rho e^{it}$ for $0\le t\le2\pi$, and for $k\in\ZZ$ let
+$$
+I_k\coloneqq\frac1{2\pi i}\int_\gamma\frac{f(z)}{(z-a)^{k+1}}\,dz.
+$$
 
 ::: pf
 
-::: pf-step
-A Laurent series converges uniformly on every circle compactly contained in its annulus of convergence. Hence the first expansion may be integrated term by term on $\gamma$:
-\[
-I_k
-=\sum_{n\in\mathbb Z}c_n\frac1{2\pi i}\int_\gamma(z-a)^{n-k-1}\,dz.
-\]
+::: {.pf-step #monomials}
+For every $m\in\ZZ$, $\frac1{2\pi i}\int_\gamma(z-a)^m\,dz$ is $1$ if $m=-1$ and $0$ otherwise.
+
+::: pf-proof
+$\frac1{2\pi i}\int_0^{2\pi}\rho^{m+1}e^{i(m+1)t}\,i\,dt=\frac{\rho^{m+1}}{2\pi}\int_0^{2\pi}e^{i(m+1)t}\,dt$.
+:::
+
+:::
+
+::: {.pf-step #coefficient}
+$I_k=c_k$.
+
+::: pf-proof
+A Laurent series converges uniformly on each circle in its annulus of convergence, so the first expansion may be integrated term by term on $\gamma$: $I_k=\sum_{n\in\ZZ}c_n\frac1{2\pi i}\int_\gamma(z-a)^{n-k-1}\,dz$.
+By step [](#monomials){.pf-ref}, only $n=k$ contributes.
+:::
+
 :::
 
 ::: pf-step
-For every integer $m$,
-\[
-\frac1{2\pi i}\int_\gamma(z-a)^m\,dz
-=\begin{cases}
-1,&m=-1,\\
-0,&m\ne-1.
-\end{cases}
-\]
-Therefore only the term $n=k$ survives, and
-\[
-I_k=c_k.
-\]
+$c_k=c_k'$ for every $k\in\ZZ$.
+
+::: pf-proof
+Step [](#coefficient){.pf-ref} applied to each expansion gives $c_k=I_k=c_k'$.
 :::
 
-::: pf-step
-Applying the same computation to the second Laurent expansion gives
-\[
-I_k=c_k'.
-\]
-Thus
-\[
-c_k=c_k'
-\]
-for every $k\in\mathbb Z$.
-
-Hence Laurent coefficients on a fixed annulus are unique, with
-\[
-c_k=\frac1{2\pi i}\int_{|z-a|=\rho}\frac{f(z)}{(z-a)^{k+1}}\,dz.
-\]
 :::
 
 :::
