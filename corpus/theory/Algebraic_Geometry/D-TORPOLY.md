@@ -21,12 +21,12 @@ prompts:
 
 ::: {.definition title="Faces"}
 Let $P \subseteq M_\RR$ be a lattice polytope.
-A face is a slice by a supporting affine hyperplane,
+A \dfn{face} is a slice by a supporting affine hyperplane,
 $$
 F = P \intersect \theset{m \in M_\RR \st \inner{m}{u} = r}, \qquad \inner{m}{u} \geq r \text{ on } P ,
 $$
 for some $u \in N$ and $r \in \RR$.
-The facets are the faces of codimension one, and $P$ has the facet presentation
+The \dfn{facets} are the faces of codimension one, and $P$ has the facet presentation
 $$
 P = \theset{ m \in M_\RR \st \inner{m}{u_F} \geq -a_F \text{ for every facet } F } ,
 $$
