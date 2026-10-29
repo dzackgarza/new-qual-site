@@ -94,11 +94,16 @@ But $1-rx$ is a unit, impossible for an element of the proper left ideal $M$. Th
 
 :::
 
-::: pf-qed
-By steps [](#forward-direction){.pf-ref} and [](#converse-direction){.pf-ref}, thus
+::: pf-step
+Therefore
 $$
 x\in J(R)\iff 1-xR\subseteq R^\times.
 $$
+
+::: pf-proof
+Combine steps [](#forward-direction){.pf-ref} and [](#converse-direction){.pf-ref}.
+:::
+
 :::
 
 :::
