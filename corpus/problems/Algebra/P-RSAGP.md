@@ -22,48 +22,53 @@ audit:
 ---
 
 ::: {.problem}
-(1) What is a bilinear form on a vector space $V$ over a field $K$?
-(2) When are two bilinear forms equivalent (congruent)?
-(3) What is an orthogonal matrix $Q \in \operatorname{O}(n)$, and what are its special geometric and algebraic properties?
+(a) What is a bilinear form on a vector space $V$ over a field $K$?
+
+(b) When are two bilinear forms equivalent (congruent)?
+
+(c) What is an orthogonal matrix $Q \in \operatorname{O}(n)$, and what are its special geometric and algebraic properties?
 :::
 
 ::: {.solution}
-A bilinear form on a $K$-vector space $V$ is a map
-\[
-B:V\times V\to K
-\]
-that is linear in each argument. In a basis $e_1,\dots,e_n$, its Gram matrix is
-\[
-M=(B(e_i,e_j)),
-\]
-and if $x,y$ are coordinate columns then
-\[
-B(x,y)=x^TM y.
-\]
 
-Two bilinear forms are equivalent if there is $P\in\operatorname{GL}_n(K)$ carrying one to the other. Their matrices are then related by congruence:
-\[
-M_2=P^TM_1P.
-\]
-Thus congruence, not similarity, is the natural change-of-basis relation for bilinear forms.
+Let $V$ have basis $e_1,\ldots,e_n$, and write vectors of $V$ as coordinate columns.
 
-Over $\mathbb R$, an orthogonal matrix is a matrix $Q$ satisfying
-\[
-Q^TQ=I,
-\]
-equivalently $Q^{-1}=Q^T$. It preserves the Euclidean inner product:
-\[
-\langle Qx,Qy\rangle=x^TQ^TQy=\langle x,y\rangle.
-\]
-Hence it preserves lengths, distances, and angles; its columns and rows are orthonormal; and
-\[
-(\det Q)^2=1,
-\]
-so $\det Q=\pm1$. Its complex eigenvalues have absolute value $1$.
+::: pf
 
-For an orthogonal change of basis, congruence and similarity have the same matrix expression,
-\[
-Q^TAQ=Q^{-1}AQ.
-\]
-This identity is one reason orthogonal diagonalization is especially natural for real symmetric matrices.
+::: pf-step
+
+(a) A bilinear form on $V$ is a map $B\colon V\times V\to K$ that is linear in each argument. With Gram matrix $M=(B(e_i,e_j))_{i,j}$, it is $B(x,y)=x^TMy$.
+
+::: pf-proof
+
+Expanding $x=\sum_i x_ie_i$ and $y=\sum_j y_je_j$ by bilinearity gives $B(x,y)=\sum_{i,j}x_iB(e_i,e_j)y_j=x^TMy$.
+
+:::
+
+:::
+
+::: pf-step
+
+(b) Bilinear forms $B_1,B_2$ with Gram matrices $M_1,M_2$ are equivalent when $B_2(x,y)=B_1(Px,Py)$ for some $P\in\operatorname{GL}_n(K)$, that is, when $M_2=P^TM_1P$.
+
+::: pf-proof
+
+By step (a), $B_1(Px,Py)=x^TP^TM_1Py$, and two forms agree exactly when their Gram matrices agree. Thus equivalence of forms is congruence of their Gram matrices, not similarity.
+
+:::
+
+:::
+
+::: pf-qed
+
+(c) A real matrix $Q$ is orthogonal when $Q^TQ=I$, equivalently $Q^{-1}=Q^T$. For $x,y\in\RR^n$,
+$$
+\inner{Qx}{Qy}=x^TQ^TQy=\inner{x}{y},
+$$
+so $Q$ preserves lengths, distances, and angles, and its columns (and, since $QQ^T=I$, its rows) are orthonormal. From $(\det Q)^2=\det(Q^TQ)=1$ we get $\det Q=\pm1$. If $Qv=\lambda v$ with $v\in\CC^n$ nonzero, then $\norm{v}=\norm{Qv}=\abs{\lambda}\norm{v}$ for the Hermitian norm, since $Q$ is real with $Q^TQ=I$; hence $\abs{\lambda}=1$. Finally, for orthogonal $Q$ the congruence $Q^TAQ$ equals the similarity $Q^{-1}AQ$, which is why orthogonal diagonalization of real symmetric matrices serves both bilinear forms and linear maps.
+
+:::
+
+:::
+
 :::
