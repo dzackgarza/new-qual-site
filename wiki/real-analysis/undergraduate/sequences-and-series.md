@@ -70,8 +70,6 @@ For series of functions, the Cauchy criterion in the norm $\norm{\wait}_\infty$ 
 
 [[PR-6OHTJ]]
 
-[[PR-LEDI3]]
-
 [[T-2R7PC]]
 
 ## Uniform convergence
