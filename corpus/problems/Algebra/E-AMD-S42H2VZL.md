@@ -25,12 +25,9 @@ Each cycle maps its own support to itself and fixes every point outside it.
 :::
 
 ::: {.solution}
+Let $\sigma$ and $\tau$ be cycles with disjoint supports $A = \supp(\sigma)$ and $B = \supp(\tau)$, so $A \cap B = \emptyset$, and let $x$ be any point.
 
 ::: pf
-
-::: pf-step
-Let $\sigma$ and $\tau$ be cycles with disjoint supports $A = \supp(\sigma)$ and $B = \supp(\tau)$, so $A \cap B = \emptyset$, and let $x$ be any point.
-:::
 
 ::: {.pf-step #sigma-tau-preserve-own-support}
 $\sigma$ maps $A$ to itself, and $\tau$ maps $B$ to itself.
