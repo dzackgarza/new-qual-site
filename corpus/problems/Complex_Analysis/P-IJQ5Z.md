@@ -22,62 +22,48 @@ audit:
 ---
 
 ::: {.problem}
-Construct an explicit **conformal map** (biholomorphic equivalence) from the slit plane $\Omega = \mathbb{C} \setminus (-\infty, 0]$ onto the open unit disk $\mathbb{D} = \{w \in \mathbb{C} \mid |w| < 1\}$.
+Construct an explicit conformal map (biholomorphic equivalence) from the slit plane $\Omega = \CC \setminus (-\infty, 0]$ onto the open unit disk $\DD = \{w \in \CC \mid \abs{w} < 1\}$.
 :::
 
 ::: {.solution}
-Use the principal square root on
-\[
-\Omega=\mathbb C\setminus(-\infty,0].
-\]
-If $z=re^{i\theta}$ with $-\pi<\theta<\pi$, define
-\[
-\sqrt z=\sqrt r\,e^{i\theta/2}.
-\]
-Then
-\[
--\frac\pi2<\arg\sqrt z<\frac\pi2,
-\]
-so $\Re\sqrt z>0$. Thus
-\[
-z\longmapsto\sqrt z
-\]
-is a biholomorphism from $\Omega$ onto the right half-plane
-\[
-H=\{u:\Re u>0\}.
-\]
+Write $H = \{u : \Re u > 0\}$ for the right half-plane, and for $z = re^{i\theta} \in \Omega$ with $-\pi < \theta < \pi$ let $\sqrt z = \sqrt r\, e^{i\theta/2}$ be the principal square root.
 
 ::: pf
 
+::: {.pf-step #sqrt}
+$z \mapsto \sqrt z$ is a biholomorphism $\Omega \to H$.
+
+::: pf-proof
+The principal square root is holomorphic on $\Omega$, and $-\pi/2 < \arg\sqrt z < \pi/2$, so $\sqrt z \in H$.
+Its inverse $u \mapsto u^2$ maps $H$ into $\Omega$, because $\abs{\arg u} < \pi/2$ gives $\abs{\arg u^2} < \pi$.
+:::
+
+:::
+
+::: {.pf-step #cayley}
+The Cayley transform $C(u) = \frac{u-1}{u+1}$ is a biholomorphism $H \to \DD$.
+
+::: pf-proof
+For $u = x+iy$ with $x > 0$,
+$$
+\abs{C(u)}^2 = \frac{(x-1)^2+y^2}{(x+1)^2+y^2} < 1.
+$$
+Its inverse $w \mapsto \frac{1+w}{1-w}$ maps $\DD$ into $H$, since $\Re\frac{1+w}{1-w} = \frac{1-\abs{w}^2}{\abs{1-w}^2} > 0$ for $\abs{w} < 1$.
+:::
+
+:::
+
 ::: pf-step
-The Cayley transform
-\[
-C(u)=\frac{u-1}{u+1}
-\]
-maps $H$ biholomorphically onto $\mathbb D$. Indeed, if $u=x+iy$ with $x>0$, then
-\[
-|C(u)|^2
-=\frac{(x-1)^2+y^2}{(x+1)^2+y^2}<1.
-\]
-:::
+$$
+\boxed{F(z)=\frac{\sqrt z-1}{\sqrt z+1}}
+$$
+is a conformal bijection $\Omega\to\DD$, with inverse $F^{-1}(w)=\left(\frac{1+w}{1-w}\right)^2$.
 
-::: pf-step
-Therefore
-\[
-F(z)=\frac{\sqrt z-1}{\sqrt z+1}
-\]
-is a conformal bijection $\Omega\to\mathbb D$.
-:::
-
-::: pf-step
-Solving for $z$ gives
-\[
-F^{-1}(w)=\left(\frac{1+w}{1-w}\right)^2,
-\qquad |w|<1.
-\]
-Since $(1+w)/(1-w)$ lies in the right half-plane, its square lies in $\Omega$, so this is indeed the inverse.
+::: pf-proof
+$F = C \circ \sqrt{\cdot}$ is a composition of the biholomorphisms of steps [](#sqrt){.pf-ref} and [](#cayley){.pf-ref}, and its inverse is the composition of their inverses.
 :::
 
 :::
 
+:::
 :::
