@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UNL872S14-PP-4
 kind: problem
-title: UNL Math 872 Spring 2014 assignment PP.4
+title: $\Delta$-complex structure and homology of the cube with opposite faces glued by a quarter twist
 classification:
   areas: [topology]
   topics: []
