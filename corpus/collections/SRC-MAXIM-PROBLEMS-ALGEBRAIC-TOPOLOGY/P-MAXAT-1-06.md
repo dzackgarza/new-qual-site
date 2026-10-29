@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-1-06
 kind: problem
-title: Maxim algebraic topology 1.6
+title: A closed odd-dimensional manifold has Euler characteristic zero
 classification:
   areas: [topology]
   topics: []
