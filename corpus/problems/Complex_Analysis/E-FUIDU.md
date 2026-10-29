@@ -28,13 +28,30 @@ Does there exist a holomorphic map $f: \DD\to \DD$ with
 :::
 
 ::: {.solution}
-$\boxed{\text{No}}$. By the Schwarz--Pick lemma,
+
+::: pf
+
+::: {.pf-step #pick-bound}
+Every holomorphic $f:\DD\to\DD$ with $f\qty(\frac12)=\frac34$ satisfies $\abs{f'\qty(\frac12)}\le\frac7{12}$.
+
+::: pf-proof
+By the Schwarz--Pick lemma,
 $$
-\abs{f'\qty{1\over 2}}
-\leq {1 - \abs{f\qty{1\over 2}}^2 \over 1 - \abs{1\over 2}^2 }
-= {1-(3/4)^2\over 1-(1/2)^2}
-= {7/16\over 3/4}
-= {7\over 12}.
+\abs{f'\qty(\tfrac12)}\le\frac{1-\abs{f(1/2)}^2}{1-(1/2)^2}=\frac{1-9/16}{3/4}=\frac7{12}.
 $$
-Since $7/12<2/3$, no holomorphic $f:\DD\to\DD$ has the prescribed derivative.
+:::
+
+:::
+
+::: pf-step
+$\boxed{\text{No}}$ such $f$ exists.
+
+::: pf-proof
+$\frac23>\frac7{12}$, which step [](#pick-bound){.pf-ref} excludes.
+:::
+
+:::
+
+:::
+
 :::
