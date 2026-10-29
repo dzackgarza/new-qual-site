@@ -42,7 +42,7 @@ is a continuous bijection.
 
 ::: pf-step
 
-It is a closed map.
+The corestriction is a closed map.
 
 ::: pf-proof
 
@@ -54,7 +54,13 @@ If $C\subseteq X$ is closed, then $C$ is compact. Hence $f(C)$ is compact in $Y$
 
 ::: pf-step
 
-A bijective closed map has continuous inverse. Hence $f:X\to f(X)$ is a homeomorphism, so $f:X\to Y$ is an embedding.
+$f:X\to f(X)$ is a homeomorphism, so $f:X\to Y$ is an embedding.
+
+::: pf-proof
+
+For closed $C \subseteq X$, the preimage of $C$ under $f^{-1}\colon f(X)\to X$ is $f(C)$, which is closed, so $f^{-1}$ is continuous.
+
+:::
 
 :::
 
