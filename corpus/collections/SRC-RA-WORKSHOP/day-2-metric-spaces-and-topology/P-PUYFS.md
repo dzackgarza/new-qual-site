@@ -22,20 +22,6 @@ Let $(X,d)$ be a metric space, $K\subset X$ be compact, and $F\subset X$ be clos
 If $K\cap F=\emptyset$, prove that there exists an $\varepsilon>0$ so that $d(k,f)\geq \varepsilon$ for all $k\in K$ and $f\in F$.
 :::
 
-::: {.proof}
-*Proof.* We prove this by contrapositive.
-Suppose for all $\varepsilon >0$, there exists $k \in K$, $f \in F$ such that $d(k,f)< \varepsilon$.
-Then for all $n \in \NN$, we can choose $k_n \in K$, $f_n \in F$ such that $d(k_n, f_n) < \frac{1}{n}$.
-
-Since $k_n$ is a sequence in $K$, which is compact (and therefore sequentially compact), there exists a subsequence $k_{n_j} \subseteq k_n$ with the property that $k_{n_j}$ converges to some $k_0 \in K$.
-Given $\varepsilon>0$, find $J \in \NN$ such that for $j \geq J$, $d(k_{n_j}, k_0) < \frac{\varepsilon}{2}$ and $\frac{1}{n_j} < \frac{\varepsilon}{2}$.
-Then for $j\geq J$, $$d(f_{n_j}, k_0) \leq d(f_{n_j}, k_{n_j}) + d(k_{n_j}, k_0) < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.$$
-
-Thus, $f_{n_j}$ also converges to $k_0$, and since $F$ is closed, $k_0 \in F$.
-So $K \cap F \neq \emptyset$.
-◻
-:::
-
 ::: {.solution}
 
 ::: pf
