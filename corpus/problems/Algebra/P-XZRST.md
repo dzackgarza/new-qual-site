@@ -19,57 +19,32 @@ Does $L^1$ have a natural multiplication making it an algebra? Distinguish point
 :::
 
 ::: {.solution}
-There is no single answer for a bare symbol $L^1$: the multiplication depends on the underlying measure-theoretic structure.
+The multiplication depends on the structure underlying $L^1$: a measure space alone, or a locally compact group with Haar measure.
 
 ::: pf
 
 ::: pf-step
+Pointwise multiplication does not make a general $L^1(X,\mu)$ an algebra.
 
-Pointwise multiplication does not make a general $L^1(X,\mu)$ into an algebra.
-If $f,g\in L^1$, the product $fg$ need not lie in $L^1$. For example, on $(0,1)$ with Lebesgue measure,
-\[
-f(x)=x^{-2/3}
-\]
-lies in $L^1(0,1)$, but
-\[
-f(x)^2=x^{-4/3}\notin L^1(0,1).
-\]
-Thus $L^1(X,\mu)$ is not generally closed under pointwise multiplication.
-
-A standard pointwise algebra is instead
-\[
-L^1\cap L^\infty,
-\]
-since
-\[
-\|fg\|_1\le \|f\|_1\|g\|_\infty.
-\]
+::: pf-proof
+On $(0,1)$ with Lebesgue measure, $f(x)=x^{-2/3}$ lies in $L^1(0,1)$, but $f(x)^2=x^{-4/3}\notin L^1(0,1)$.
+Pointwise multiplication does make $L^1\cap L^\infty$ an algebra, since $\norm{fg}_1\le\norm{f}_1\norm{g}_\infty$ and $\norm{fg}_\infty\le\norm{f}_\infty\norm{g}_\infty$.
+:::
 
 :::
 
 ::: pf-step
+For a locally compact group $G$ with left Haar measure, $L^1(G)$ is a Banach algebra under convolution $(f*g)(x)=\int_G f(y)g(y^{-1}x)\,dy$; it is commutative when $G$ is abelian, and it is $\ell^1(G)$ when $G$ is discrete.
 
-Convolution gives the canonical $L^1$ algebra on a locally compact group.
-
+::: pf-proof
+By Tonelli and left invariance of Haar measure, $\int_G\int_G\abs{f(y)}\abs{g(y^{-1}x)}\,dx\,dy=\norm{f}_1\norm{g}_1$, so $f*g$ is defined almost everywhere, lies in $L^1(G)$, and $\norm{f*g}_1\le\norm{f}_1\norm{g}_1$.
+Associativity follows from Fubini, which is justified by the same absolute bound, and bilinearity is clear.
+If $G$ is abelian, the substitution $y\mapsto xy^{-1}$, which preserves Haar measure on an abelian group, gives $f*g=g*f$.
+On a discrete group with counting measure the integral is the sum $\sum_y f(y)g(y^{-1}x)$.
 :::
 
 :::
 
-Let $G$ be a locally compact group with a left Haar measure. For $f,g\in L^1(G)$ define
-\[
-(f*g)(x)=\int_G f(y)g(y^{-1}x)\,dy.
-\]
-Then $f*g\in L^1(G)$ and Young's inequality gives
-\[
-\|f*g\|_1\le \|f\|_1\|g\|_1.
-\]
-Convolution is associative, so
-\[
-L^1(G)
-\]
-is a Banach algebra under convolution.
+:::
 
-If $G$ is discrete, this specializes to the usual convolution algebra $\ell^1(G)$. If $G$ is abelian, the convolution algebra is commutative.
-
-Thus a general $L^1$ space has no canonical multiplication from the notation alone, while group structure plus Haar measure supplies the natural convolution product.
 :::
