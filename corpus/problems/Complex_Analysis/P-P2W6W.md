@@ -21,8 +21,8 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f: \mathbb{R} \to \mathbb{R}$ is continuous and $\lim_{x \to \pm \infty} f(x) = 0$.
-Prove that $f$ is uniformly continuous on $\mathbb{R}$.
+Suppose $f: \RR \to \RR$ is continuous and $\lim_{x \to \pm \infty} f(x) = 0$.
+Prove that $f$ is uniformly continuous on $\RR$.
 :::
 
 ::: {.solution}
