@@ -53,13 +53,7 @@ The [[D-CXXCG|prime spectrum]] $\Spec R$ is the set of prime ideals of $R$, and 
 
 ## Units and simple rings
 
-[[PR-DDDXH]]
-
-::: {.proof}
-$\implies$: If $I$ is an ideal of $R$ containing some $x\neq 0$ and every nonzero element of $R$ is a unit, then $1 = \inverseof{x} x \in I$, so $I = R$.
-
-$\impliedby$: For $x\in \nonzeroof{R}$, the ideal $Rx$ is nonzero, so $Rx = R$, and $1 = rx$ for some $r\in R$; hence $x$ is a unit.
-:::
+[[E-HOJKE]]
 
 ## Radicals
 
