@@ -140,7 +140,6 @@ source:
   - id: P-SDQTV
   - id: P-T5QRW
   - id: P-TC2PJ
-  - id: P-TIRTE
   - id: P-TJSP5
   - id: P-UEGAX
   - id: P-V4A37
