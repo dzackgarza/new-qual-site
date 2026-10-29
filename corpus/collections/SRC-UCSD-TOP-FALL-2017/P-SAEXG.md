@@ -24,7 +24,7 @@ What are the total spaces?
 :::
 
 ::: {.solution}
-**Goal:** Determine the number of connected 2-fold covering spaces of $X = S^1 \vee \RP^2$ and identify the total space for each covering.
+Let $X = S^1 \vee \RP^2$.
 
 ::: pf
 
