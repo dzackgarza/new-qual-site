@@ -51,19 +51,19 @@ A finite transitive action on at least two points has a fixed-point-free element
 
 ::: pf-proof
 For $g\in G$, let $X^g$ be its fixed-point set. Burnside's orbit-counting lemma gives
-\[
+$$
 1=|X/G|=\frac1{|G|}\sum_{g\in G}|X^g|,
-\]
+$$
 so
-\[
+$$
 \sum_{g\in G}|X^g|=|G|.
-\]
+$$
 The identity fixes all of $X$, and $|X|\ge2$. If every $g\in G$ fixed at least one point, then
-\[
+$$
 \sum_{g\in G}|X^g|
 \ge |X|+(|G|-1)
 \ge |G|+1,
-\]
+$$
 a contradiction. Hence some $g$ has $X^g=\varnothing$.
 :::
 
@@ -71,44 +71,44 @@ a contradiction. Hence some $g$ has $X^g=\varnothing$.
 
 ::: pf-step
 The numbers of subgroups $H\le\ZZ^3$ with quotient of order $p^2$ are
-\[
+$$
 \begin{array}{c|c}
 K & \#\{H:\ZZ^3/H\cong K\}\\ \hline
 \ZZ/p\ZZ\oplus\ZZ/p\ZZ & p^2+p+1,\\
 \ZZ/p^2\ZZ & p^2(p^2+p+1).
 \end{array}
-\]
+$$
 
 ::: pf-proof
 There are exactly two abelian groups of order $p^2$.
 
 For $K\cong(\ZZ/p\ZZ)^2$, any such $H$ contains $p\ZZ^3$, and $H/p\ZZ^3$ is a one-dimensional subspace of
-\[
+$$
 \ZZ^3/p\ZZ^3\cong\FF_p^3.
-\]
+$$
 Conversely every line in $\FF_p^3$ gives such an $H$. The number of lines is
-\[
+$$
 \frac{p^3-1}{p-1}=p^2+p+1.
-\]
+$$
 
 For $K\cong\ZZ/p^2\ZZ$, kernels are counted by surjections
-\[
+$$
 \ZZ^3\twoheadrightarrow\ZZ/p^2\ZZ
-\]
+$$
 modulo postcomposition by automorphisms of the target. A homomorphism is determined by a triple in $(\ZZ/p^2\ZZ)^3$, and it is surjective exactly when the triple is not entirely divisible by $p$. Thus there are
-\[
+$$
 p^6-p^3
-\]
+$$
 surjections. Two surjections have the same kernel exactly when they differ by an automorphism of $\ZZ/p^2\ZZ$, and
-\[
-|\operatorname{Aut}(\ZZ/p^2\ZZ)|=\varphi(p^2)=p(p-1).
-\]
+$$
+|\Aut(\ZZ/p^2\ZZ)|=\varphi(p^2)=p(p-1).
+$$
 Therefore the number of kernels is
-\[
+$$
 \frac{p^6-p^3}{p(p-1)}
 =p^2\frac{p^3-1}{p-1}
 =p^2(p^2+p+1).
-\]
+$$
 :::
 
 :::
@@ -118,19 +118,19 @@ Every group of order $pq$ has a nontrivial proper normal subgroup; under the two
 
 ::: pf-proof
 Interchange $p$ and $q$ if necessary so that $p<q$. Let $n_q$ be the number of Sylow $q$-subgroups. Then
-\[
+$$
 n_q\mid p,
 \qquad
 n_q\equiv1\pmod q.
-\]
+$$
 Since $p<q$, the only possibility is $n_q=1$. Thus the Sylow $q$-subgroup $Q$ is nontrivial, proper, and normal.
 
 Now assume also $q\not\equiv1\pmod p$; the other displayed congruence is automatic when $p<q$. For the number $n_p$ of Sylow $p$-subgroups,
-\[
+$$
 n_p\mid q,
 \qquad
 n_p\equiv1\pmod p.
-\]
+$$
 Hence $n_p=1$ or $q$, and the congruence hypothesis excludes $q$, so the Sylow $p$-subgroup $P$ is also normal. Since $P\cap Q=1$ and $|P||Q|=|G|$, we have $G=PQ$. For $a\in P$ and $b\in Q$, the commutator $aba^{-1}b^{-1}$ lies in both $P$ and $Q$ because both are normal, hence is trivial. Thus $P$ and $Q$ commute elementwise and $G\cong P\times Q$ is abelian.
 :::
 
@@ -141,18 +141,18 @@ If $p$ is the smallest prime divisor of $|G|$ and $H\trianglelefteq G$ has order
 
 ::: pf-proof
 Since $|H|=p$, $H\cong C_p$, so
-\[
-|\operatorname{Aut}(H)|=p-1.
-\]
+$$
+|\Aut(H)|=p-1.
+$$
 Normality of $H$ gives the conjugation homomorphism
-\[
-\theta:G\longrightarrow\operatorname{Aut}(H).
-\]
-The order of $\operatorname{im}\theta$ divides both $|G|$ and $p-1$. Every prime divisor of $p-1$ is smaller than $p$, while $p$ is the smallest prime divisor of $|G|$. Hence
-\[
+$$
+\theta:G\longrightarrow\Aut(H).
+$$
+The order of $\im\theta$ divides both $|G|$ and $p-1$. Every prime divisor of $p-1$ is smaller than $p$, while $p$ is the smallest prime divisor of $|G|$. Hence
+$$
 \gcd(|G|,p-1)=1,
-\]
-so $\operatorname{im}\theta=1$. Thus every $g\in G$ centralizes every $h\in H$, proving $H\subseteq Z(G)$.
+$$
+so $\im\theta=1$. Thus every $g\in G$ centralizes every $h\in H$, proving $H\subseteq Z(G)$.
 :::
 
 :::
@@ -162,41 +162,41 @@ If $G$ has even order and its Sylow $2$-subgroup $P=\langle x\rangle$ is cyclic,
 
 ::: pf-proof
 Write
-\[
+$$
 |P|=2^r\quad(r\ge1),
 \qquad
 |G|=2^r m
-\]
+$$
 with $m$ odd. In the left regular action of $G$ on itself, the permutation
-\[
+$$
 \lambda_x:G\to G,
 \qquad y\longmapsto xy,
-\]
+$$
 has orbits equal to the left action of $\langle x\rangle$ on $G$. Since $x$ has order $2^r$, every orbit is a cycle of length $2^r$. There are
-\[
+$$
 |G|/2^r=m
-\]
+$$
 such cycles. Each $2^r$-cycle has sign
-\[
+$$
 (-1)^{2^r-1}=-1,
-\]
+$$
 and $m$ is odd, so
-\[
+$$
 \operatorname{sgn}(\lambda_x)=(-1)^m=-1.
-\]
+$$
 
 The left regular representation
-\[
+$$
 \lambda:G\longrightarrow S_G
-\]
+$$
 is a homomorphism, so
-\[
+$$
 \varepsilon:=\operatorname{sgn}\circ\lambda:G\longrightarrow\{\pm1\}
-\]
+$$
 is a homomorphism. Since $\varepsilon(x)=-1$, it is surjective. Therefore its kernel is normal of index $2$, and
-\[
+$$
 G/\ker\varepsilon\cong C_2.
-\]
+$$
 :::
 
 :::
