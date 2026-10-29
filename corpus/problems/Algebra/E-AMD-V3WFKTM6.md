@@ -52,30 +52,25 @@ The inclusion can be strict.
 
 ::: pf-proof
 Take $R=\ZZ$. Since $\ZZ$ is an integral domain, $(0)$ is a prime ideal. It is not maximal because
-\[
+$$
 (0)\subsetneq (2)\subsetneq\ZZ.
-\]
+$$
 Thus
-\[
+$$
 (0)\in\Spec(\ZZ)\setminus\maxspec(\ZZ),
-\]
+$$
 so $\maxspec(\ZZ)\subsetneq\Spec(\ZZ)$.
 :::
 
 :::
 
-::: pf-step
-Strictness is not automatic for every ring.
+:::
 
-::: pf-proof
-If $R=k$ is a field, then $(0)$ is its only proper ideal, and it is both prime and maximal. Hence
-\[
+:::
+
+::: {.remark}
+Strictness is not automatic for every ring. If $R=k$ is a field, then $(0)$ is its only proper ideal, and it is both prime and maximal. Hence
+$$
 \maxspec(k)=\Spec(k)=\{(0)\}.
-\]
-:::
-
-:::
-
-:::
-
+$$
 :::
