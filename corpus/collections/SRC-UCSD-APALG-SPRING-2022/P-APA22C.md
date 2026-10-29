@@ -37,41 +37,33 @@ to be the two new inner products on $V$ associated with $\alpha$ and $\beta$ res
 :::
 
 ::: {.solution}
+Write $\theta^{*_\alpha}$ for the adjoint of $\theta$ with respect to $\langle-,-\rangle_\alpha$. Since $\alpha$ is positive definite, it is invertible.
 
 ::: pf
 
-::: {.pf-step #s1}
+::: {.pf-step #adjoint}
 
-Part (a): Compute the adjoint of $\theta$ with respect to $\langle -, - \rangle_\alpha$:
-
-::: pf-proof
-
-::: pf-step
-
-By definition of the adjoint $\theta^{*_\alpha}$ in the inner product space $(V, \langle -, - \rangle_\alpha)$:
-$$
-\langle \theta(v), w \rangle_\alpha = \langle v, \theta^{*_\alpha}(w) \rangle_\alpha \quad \text{for all } v, w \in V.
-$$
+(a) $\theta^{*_\alpha}=\alpha^{-1}\theta^*\alpha$.
 
 ::: pf-proof
 
-definition of adjoint.
+For all $v,w\in V$, using $\alpha^*=\alpha$,
+$$
+\langle\theta v,w\rangle_\alpha=\langle\alpha\theta v,w\rangle=\langle\theta v,\alpha w\rangle=\langle v,\theta^*\alpha w\rangle=\langle\alpha v,\alpha^{-1}\theta^*\alpha w\rangle=\langle v,\alpha^{-1}\theta^*\alpha w\rangle_\alpha .
+$$
+The adjoint is unique because $\langle-,-\rangle_\alpha$ is nondegenerate, so $\theta^{*_\alpha}=\alpha^{-1}\theta^*\alpha$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #self-adjoint}
 
-Express both sides using the original inner product $\langle -, - \rangle$:
-$$
-\langle \theta(v), w \rangle_\alpha = \langle \alpha(\theta(v)), w \rangle = \langle \theta(v), \alpha^*(w) \rangle = \langle \theta(v), \alpha(w) \rangle = \langle v, \theta^*(\alpha(w)) \rangle,
-$$
-since $\alpha$ is self-adjoint ($\alpha^* = \alpha$).
+(b) $\gamma=\alpha^{-1}\beta$ is self-adjoint with respect to $\langle-,-\rangle_\alpha$.
 
 ::: pf-proof
 
-adjoint property with respect to $\langle -, - \rangle$.
+By step [](#adjoint){.pf-ref}, $\gamma^{*_\alpha}=\alpha^{-1}(\alpha^{-1}\beta)^*\alpha$. Since $\alpha$ and $\beta$ are self-adjoint, $(\alpha^{-1}\beta)^*=\beta^*(\alpha^{-1})^*=\beta\alpha^{-1}$, so $\gamma^{*_\alpha}=\alpha^{-1}\beta\alpha^{-1}\alpha=\gamma$.
 
 :::
 
@@ -79,176 +71,19 @@ adjoint property with respect to $\langle -, - \rangle$.
 
 ::: pf-step
 
-The right-hand side is:
-$$
-\langle v, \theta^{*_\alpha}(w) \rangle_\alpha = \langle \alpha(v), \theta^{*_\alpha}(w) \rangle = \langle v, \alpha^*(\theta^{*_\alpha}(w)) \rangle = \langle v, \alpha(\theta^{*_\alpha}(w)) \rangle.
-$$
+(c) There is a basis $v_1,\ldots,v_n$ of $V$ orthogonal for both $\langle-,-\rangle_\alpha$ and $\langle-,-\rangle_\beta$.
 
 ::: pf-proof
 
-$\alpha^* = \alpha$.
-
-:::
-
-:::
-
-::: pf-step
-
-Equating the two expressions for all $v \in V$:
+By step [](#self-adjoint){.pf-ref} and the spectral theorem for the inner product space $(V,\langle-,-\rangle_\alpha)$, there is a $\langle-,-\rangle_\alpha$-orthonormal basis $v_1,\ldots,v_n$ with $\gamma v_i=\lambda_iv_i$. Since $\beta=\alpha\gamma$,
 $$
-\alpha(\theta^{*_\alpha}(w)) = \theta^*(\alpha(w)) \implies \theta^{*_\alpha}(w) = \alpha^{-1} \theta^* \alpha(w).
+\langle v_i,v_j\rangle_\beta=\langle\alpha\gamma v_i,v_j\rangle=\langle\gamma v_i,v_j\rangle_\alpha=\lambda_i\langle v_i,v_j\rangle_\alpha=\lambda_i\delta_{ij},
 $$
-Thus $\theta^{*_\alpha} = \alpha^{-1} \theta^* \alpha$.
-
-::: pf-proof
-
-non-degeneracy of inner product and invertibility of $\alpha$.
+which vanishes for $i\ne j$.
 
 :::
 
 :::
 
 :::
-
-:::
-
-::: {.pf-step #s2}
-
-Part (b): Show that $\gamma = \alpha^{-1}\beta$ is self-adjoint with respect to $\langle -, - \rangle_\alpha$:
-
-::: pf-proof
-
-::: {.pf-step #s2-1}
-
-Apply the formula from Part (a) to $\gamma = \alpha^{-1}\beta$:
-$$
-\gamma^{*_\alpha} = \alpha^{-1} \gamma^* \alpha = \alpha^{-1} (\alpha^{-1}\beta)^* \alpha.
-$$
-
-::: pf-proof
-
-Part (a).
-
-:::
-
-:::
-
-::: pf-step
-
-Using $(AB)^* = B^* A^*$ and self-adjointness of $\alpha$ and $\beta$ ($\alpha^* = \alpha, \beta^* = \beta$):
-$$
-(\alpha^{-1}\beta)^* = \beta^* (\alpha^{-1})^* = \beta (\alpha^*)^{-1} = \beta \alpha^{-1}.
-$$
-
-::: pf-proof
-
-algebraic properties of adjoints.
-
-:::
-
-:::
-
-::: pf-step
-
-Substituting into step [](#s2-1){.pf-ref}:
-$$
-\gamma^{*_\alpha} = \alpha^{-1} (\beta \alpha^{-1}) \alpha = \alpha^{-1} \beta (\alpha^{-1} \alpha) = \alpha^{-1} \beta = \gamma.
-$$
-Thus $\gamma$ is self-adjoint with respect to $\langle -, - \rangle_\alpha$.
-
-::: pf-proof
-
-associative law and $\alpha^{-1}\alpha = I$.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Part (c): Construct the simultaneous orthogonal basis:
-
-::: pf-proof
-
-::: {.pf-step #s3-1}
-
-By the Spectral Theorem for self-adjoint operators on the finite-dimensional inner product space $(V, \langle -, - \rangle_\alpha)$, there exists an orthonormal basis $B = \{v_1, \dots, v_n\}$ of eigenvectors of $\gamma$:
-$$
-\langle v_i, v_j \rangle_\alpha = \delta_{ij} \quad \text{and} \quad \gamma(v_i) = \lambda_i v_i \quad (\lambda_i \in \RR).
-$$
-
-::: pf-proof
-
-Spectral Theorem for self-adjoint operators.
-
-:::
-
-:::
-
-::: pf-step
-
-Express $\langle v_i, v_j \rangle_\beta$ in terms of $\langle -, - \rangle_\alpha$:
-$$
-\langle v_i, v_j \rangle_\beta = \langle \beta(v_i), v_j \rangle = \langle \alpha(\alpha^{-1}\beta(v_i)), v_j \rangle = \langle \alpha(\gamma(v_i)), v_j \rangle = \langle \gamma(v_i), v_j \rangle_\alpha.
-$$
-
-::: pf-proof
-
-definition of $\langle -, - \rangle_\alpha$ and $\gamma = \alpha^{-1}\beta$.
-
-:::
-
-:::
-
-::: {.pf-step #s3-3}
-
-Using $\gamma(v_i) = \lambda_i v_i$:
-$$
-\langle v_i, v_j \rangle_\beta = \langle \lambda_i v_i, v_j \rangle_\alpha = \lambda_i \langle v_i, v_j \rangle_\alpha = \lambda_i \delta_{ij}.
-$$
-
-::: pf-proof
-
-linearity of inner products.
-
-:::
-
-:::
-
-::: pf-step
-
-For all $i \neq j$, $\langle v_i, v_j \rangle_\alpha = 0$ and $\langle v_i, v_j \rangle_\beta = 0$.
-Thus the basis $B = \{v_1, \dots, v_n\}$ is orthogonal with respect to both $\langle -, - \rangle_\alpha$ and $\langle -, - \rangle_\beta$.
-
-::: pf-proof
-
-Steps [](#s3-1){.pf-ref} and [](#s3-3){.pf-ref}.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Conclusion:
-The basis $B$ simultaneously orthogonalizes both inner products. Q.E.D.
-
-::: pf-proof
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
-
-:::
-
-:::
-
-:::
-
 :::
