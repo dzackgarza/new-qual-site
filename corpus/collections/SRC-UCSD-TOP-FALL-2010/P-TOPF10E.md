@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF10E
 kind: problem
-title: "No degree-1 map from S^2 x S^2 to CP^2"
+title: 'No degree-one map $S^2\times S^2\to\CP^2$'
 classification:
   areas:
   - topology
