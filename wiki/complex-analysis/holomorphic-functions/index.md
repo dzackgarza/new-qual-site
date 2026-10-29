@@ -13,7 +13,7 @@ Complex arithmetic, holomorphy, power series, and harmonic functions.
 
 - [[complex-analysis/holomorphic-functions/complex-arithmetic-and-log|Complex arithmetic and the logarithm]], roots, branches, and branch points.
 
-- [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations|The Cauchy-Riemann equations]], in rectangular, polar, and Wirtinger form.
+- [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations|The Cauchy--Riemann equations]], in rectangular, polar, and Wirtinger form.
 
 - [[complex-analysis/holomorphic-functions/power-series|Power series]], the equivalence of holomorphy and analyticity, and Abel's theorem.
 
