@@ -28,7 +28,7 @@ $$
 
 2. Suppose the partial derivative $\frac{\partial f}{\partial t}(x,t)$ exists for all $x\in X$ and $t\in I$, and there exists $g\in L^1(X,\mu)$ with $\abs{\frac{\partial f}{\partial t}(x, t)} \leq g(x)$ for all $x\in X$ and $t\in I$.
    Then $F$ is differentiable on $I$ and
-$$
-F'(t) = \int_X \frac{\partial f}{\partial t}(x, t) \dmu(x) .
-$$
+   $$
+   F'(t) = \int_X \frac{\partial f}{\partial t}(x, t) \dmu(x) .
+   $$
 :::
