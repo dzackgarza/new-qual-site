@@ -16,10 +16,14 @@ audit:
 - event: solution-written
   by: Claude Opus 5
   date: 2026-08-30
+- event: source-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source asked for a counterexample "showing that this condition is necessary", which is false (H = S_3 and K a subgroup of order 2 give HK = S_3 without H normalizing K); the statement asks that the conclusion can fail without the condition, and binds H and K as subgroups of G.'
 ---
 
 ::: {.exercise}
-Show that if $H \leq N_G(K)$ then $HK \leq G$, and give a counterexample showing that this condition is necessary.
+Let $H$ and $K$ be subgroups of a group $G$. Show that if $H \leq N_G(K)$ then $HK \leq G$, and give a counterexample showing that the conclusion can fail when this condition is dropped.
 :::
 
 ::: {.solution}
@@ -51,7 +55,7 @@ For $hk\in HK$, $(hk)^{-1}=k^{-1}h^{-1}=h^{-1}\bigl(hk^{-1}h^{-1}\bigr)$, and $h
 If $H\le N_G(K)$, then $HK\le G$.
 
 ::: pf-proof
-$1=1\cdot1\in HK$, and steps [](#hk-closed-under-multiplication){.pf-ref} and [](#hk-closed-under-inverses){.pf-ref} give the subgroup criterion.
+The identity $1=1\cdot1$ lies in $HK$, and steps [](#hk-closed-under-multiplication){.pf-ref} and [](#hk-closed-under-inverses){.pf-ref} give the subgroup criterion.
 :::
 
 :::
