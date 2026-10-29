@@ -16,5 +16,5 @@ review: draft
 
 ::: {.theorem}
 For $n\geq 1$, the sphere $S^n$ has a continuous field of nonzero tangent vectors if and only if $n$ is odd.
-In particular, every continuous tangent vector field on $S^{2k}$ vanishes somewhere [@Hat02].
+In particular, for even $n$ every continuous tangent vector field on $S^n$ vanishes somewhere [@Hat02].
 :::
