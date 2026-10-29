@@ -952,7 +952,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Complex_Analysis/E-ISFYB.md` | `c7eb8ebf5a0f527236f2678caf731f3c3fe4b60e` | `c7eb8ebf5a0f527236f2678caf731f3c3fe4b60e` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-ITVTT.md` | `fff4153fa9f2a78bc970fb479e96ae3f9a43bc6e` | `fff4153fa9f2a78bc970fb479e96ae3f9a43bc6e` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-IVHVW.md` | `337d77f5a218ef28a686ba0309ebfa87b9c128ef` | `337d77f5a218ef28a686ba0309ebfa87b9c128ef` | Read; retained |
-| [x] | `corpus/problems/Complex_Analysis/E-IYBZP.md` | `8d24d321153389ed14d2ab84397876da5dfbe832` | `8d24d321153389ed14d2ab84397876da5dfbe832` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-IZKCV.md` | `1d0b8686a1754459fc157a73b4f35c7c5c46031e` | `1d0b8686a1754459fc157a73b4f35c7c5c46031e` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-J3QMJ.md` | `00f68f9f8e418d0811bdf0d7ca4f203be34a0065` | `00f68f9f8e418d0811bdf0d7ca4f203be34a0065` | Read; retained |
 | [x] | `corpus/problems/Complex_Analysis/E-JK5PG.md` | `f48b3e5f21a5a8d9c7d025d5c5b9c7b83359e63e` | `f48b3e5f21a5a8d9c7d025d5c5b9c7b83359e63e` | Read; retained |
