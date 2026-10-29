@@ -76,3 +76,7 @@ By steps [](#contour){.pf-ref}, [](#big){.pf-ref} and [](#small){.pf-ref}, letti
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The integrand is even, so $\int_\RR \frac{\sin x}{x}\,dx=\pi$.
+:::
