@@ -28,7 +28,6 @@ The order of remaining work is the [TODO.md milestone](../TODO.md#milestone-publ
 | `08-owner-decisions.md` | 0 | 3 | none | All done |
 | ~~`09-author-solutions.md`~~ | — | — | — | Removed: redundant with Queue C |
 | `10-close-roadmap.md` | 0 | 5 | #1 (CLOSED) | All obligations hold |
-| `11-design-issues.md` | 0 | 25 | #41 surface | 25/25 resolved (17 fixed, 8 design-accepted) |
 
 ## How to use
 
