@@ -6,7 +6,7 @@ order: 2
 
 ## Repeated integration by parts
 
-For integrals $\int P(x) e^{ax} \dx$ or $\int P(x) \sin(bx) \dx$ with $P$ a polynomial, each integration by parts with $u$ the polynomial factor lowers its degree by one, so $\deg P + 1$ integrations by parts reduce the integral to an elementary one.
+For integrals $\int P(x) e^{ax} \dx$ or $\int P(x) \sin(bx) \dx$ with $P$ a polynomial, each integration by parts with $u$ the polynomial factor lowers its degree by one, so $\deg P$ integrations by parts reduce the integral to a constant multiple of $\int e^{ax} \dx$, $\int \sin(bx) \dx$, or $\int \cos(bx) \dx$.
 
 The tabular method records this: one column lists $P$ and its successive derivatives, the other lists $e^{ax}$ (or $\sin(bx)$) and its successive antiderivatives, and the integral is the sum of the products along the diagonals with alternating signs starting from $+$.
 
