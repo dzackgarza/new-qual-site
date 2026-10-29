@@ -19,10 +19,14 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source leaves F and K undeclared; the statement declares the field extension F/K.'
 ---
 
 ::: {.problem}
-3. For a polynomial $f \in K[x]$, prove that if $r \in F$ is a root of $f$ then for any $\sigma\in\operatorname{Aut}_K(F)$, $\sigma(r)$ is also a root of $f$.
+Let $F/K$ be a field extension. For a polynomial $f \in K[x]$, prove that if $r \in F$ is a root of $f$ then for any $\sigma\in\Aut_K(F)$, $\sigma(r)$ is also a root of $f$.
 :::
 
 ::: {.solution}
@@ -34,10 +38,10 @@ A $K$-automorphism fixes every coefficient of $f$.
 
 ::: pf-proof
 Write
-\[
+$$
 f(x)=a_0+a_1x+\cdots+a_nx^n
-\]
-with $a_i\in K$. If $\sigma\in\operatorname{Aut}_K(F)$, then by definition $\sigma(a_i)=a_i$ for every $i$.
+$$
+with $a_i\in K$. If $\sigma\in\Aut_K(F)$, then by definition $\sigma(a_i)=a_i$ for every $i$.
 :::
 
 :::
@@ -47,7 +51,7 @@ If $r\in F$ satisfies $f(r)=0$, then $f(\sigma(r))=0$.
 
 ::: pf-proof
 Using step [](#automorphism-fixes-coefficients){.pf-ref} and the fact that $\sigma$ is a field homomorphism,
-\[
+$$
 \begin{aligned}
 f(\sigma(r))
 &=\sum_{i=0}^n a_i\sigma(r)^i\\
@@ -56,7 +60,7 @@ f(\sigma(r))
 &=\sigma(f(r))\\
 &=\sigma(0)=0.
 \end{aligned}
-\]
+$$
 Thus $\sigma(r)$ is again a root of $f$.
 :::
 
