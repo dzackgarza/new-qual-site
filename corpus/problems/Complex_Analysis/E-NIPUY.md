@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-NIPUY
 kind: problem
-title: The false uniform-continuity claim for $x^{-n}$ near $0$
+title: Uniform continuity of $x^{-n}$ near $0$
 classification:
   areas:
   - complex-analysis
@@ -11,38 +11,34 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source claims that f(x)=x^{-n}, n in Z_{>=0}, is uniformly continuous on [0,infinity), which is false for n>=1. The previous statement reported that claim and asked where it fails; the statement now asks the question directly.
 ---
 
 ::: {.problem}
-A source claims that
-\[
-f(x)=x^{-n},\qquad n\in\ZZ_{\geq0},
-\]
-is uniformly continuous on $[0,\infty)$.
-Determine for which $n$ this is correct, and explain the defect when it is false.
+Let $n\in\ZZ_{\geq0}$ and $f(x)=x^{-n}$.
+Determine for which $n$ the function $f$ is uniformly continuous on $[0,\infty)$, and for the remaining $n$ decide whether $f$ is uniformly continuous on $(0,\infty)$.
 :::
 
 ::: {.solution}
-For $n=0$, $f\equiv1$, so $f$ is uniformly continuous on $[0,\infty)$.
+::: pf
 
-For every $n\ge1$, the claim is already ill-posed at $0$, since $x^{-n}$ is not defined there.
-Even on its natural domain $(0,\infty)$, the function is not uniformly continuous.
-Take
-\[
-x_k={1\over k},
-\qquad
-y_k={1\over k+1}.
-\]
-Then
-\[
-|x_k-y_k|={1\over k(k+1)}\to0,
-\]
-but
-\[
-|f(x_k)-f(y_k)|
-=|k^n-(k+1)^n|
-\ge1
-\]
-for every $k$.
-Hence no uniform-continuity modulus can exist.
+::: pf-step
+For $n=0$, $f\equiv1$ is uniformly continuous on $[0,\infty)$.
+:::
+
+::: pf-step
+For $n\ge1$, $f$ is not defined at $0$, and it is not uniformly continuous on $(0,\infty)$.
+
+::: pf-proof
+Take $x_k=\frac1k$ and $y_k=\frac1{k+1}$. Then $\abs{x_k-y_k}=\frac1{k(k+1)}\to0$, while $\abs{f(x_k)-f(y_k)}=(k+1)^n-k^n\ge1$ for every $k$.
+:::
+
+:::
+
+:::
+
 :::
