@@ -18,15 +18,15 @@ review: draft
 ::: {.problem}
 Suppose $f:\DD\to\DD$ is analytic and admits a continuous extension $\tilde f: \bar \DD \to \bar \DD$ such that $\abs{z} = 1 \implies \abs{f(z)} = 1$.
 
-Prove that $f$ is a rational function.
+(a) Prove that $f$ is a rational function.
 
-Suppose that $z=0$ is the unique zero of $f$.
+(b) Suppose that $z=0$ is the unique zero of $f$.
 Show that
 $$
 \exists n\in \NN, \lambda \in S^1 \text{ such that } f(z) = \lambda z^n
 .$$
 
-Suppose that $a_1, \cdots, a_n \in \DD$ are the zeros of $f$ and prove that
+(c) Suppose that $a_1, \cdots, a_n \in \DD$ are the zeros of $f$ and prove that
 $$
 \exists \lambda \in S^1 \text{ such that } f(z) = \lambda \prod_{j=1}^n {z - a_j \over 1 - \bar{a_j} z}
 .$$
@@ -63,7 +63,7 @@ By step [](#finite){.pf-ref}, the zeros of the denominator, with multiplicity, a
 
 ::: {.pf-step #blaschke}
 
-$f(z)=\boxed{\lambda\prod_{j=1}^n\dfrac{z-a_j}{1-\overline{a_j}z}}$ for some $\lambda\in S^1$; in particular $f$ is rational.
+$f(z)=\boxed{\lambda\prod_{j=1}^n\dfrac{z-a_j}{1-\overline{a_j}z}}$ for some $\lambda\in S^1$.
 
 ::: pf-proof
 
@@ -75,11 +75,35 @@ By step [](#quotient){.pf-ref} and the maximum modulus principle applied to $g$ 
 
 ::: pf-step
 
-If $0$ is the only zero of $f$, then $f(z)=\boxed{\lambda z^n}$ for some $n\in\NN$ and $\lambda\in S^1$.
+(a) $f$ is rational.
+
+::: pf-proof
+
+By step [](#blaschke){.pf-ref}, $f$ is a constant times a finite product of the rational functions $B_{a_j}$.
+
+:::
+
+:::
+
+::: pf-step
+
+(b) If $0$ is the only zero of $f$, then $f(z)=\boxed{\lambda z^n}$ for some $n\in\NN$ and $\lambda\in S^1$.
 
 ::: pf-proof
 
 Every $a_j$ equals $0$ and $B_0(z)=z$, so step [](#blaschke){.pf-ref} gives $f(z)=\lambda z^n$, where $n$ is the multiplicity of the zero at $0$.
+
+:::
+
+:::
+
+::: pf-step
+
+(c) If $a_1,\ldots,a_n$ are the zeros of $f$, then $f(z)=\lambda\prod_{j=1}^n\dfrac{z-a_j}{1-\overline{a_j}z}$ for some $\lambda\in S^1$.
+
+::: pf-proof
+
+This is step [](#blaschke){.pf-ref}.
 
 :::
 
