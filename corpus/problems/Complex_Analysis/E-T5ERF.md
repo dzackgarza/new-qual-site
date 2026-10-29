@@ -24,45 +24,40 @@ audit:
 ::: {.problem}
 Let $f$ be holomorphic in a neighborhood of the closed disk $\overline{D}_r(z_0)$.
 Show that for any $s < r$, there exists a constant $c > 0$ (depending on $r$ and $s$) such that:
-$$\|f\|_{(\infty, s)} \le c \|f\|_{(1, r)}$$
-where $\|f\|_{(\infty, s)} = \sup_{z \in D_s(z_0)} |f(z)|$ and $\|f\|_{(1, r)} = \iint_{D_r(z_0)} |f(z)| \, dx \, dy$.
+$$\norm{f}_{(\infty, s)} \le c \norm{f}_{(1, r)}$$
+where $\norm{f}_{(\infty, s)} = \sup_{z \in D_s(z_0)} \abs{f(z)}$ and $\norm{f}_{(1, r)} = \iint_{D_r(z_0)} \abs{f(z)} \, dx \, dy$.
 :::
 
 ::: {.solution}
-Let
-\[
-\delta=r-s>0.
-\]
-For $w\in D_s(z_0)$ one has
-\[
-D_\delta(w)\subset D_r(z_0).
-\]
+Let $\delta \coloneqq r-s>0$. For $w\in D_s(z_0)$, $D_\delta(w)\subseteq D_r(z_0)$ by the triangle inequality.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #pointwise}
+For $w\in D_s(z_0)$, $\abs{f(w)}\leq\frac{1}{\pi(r-s)^2}\norm{f}_{(1,r)}$.
+
+::: pf-proof
 The area mean-value formula for holomorphic functions gives
-\[
-f(w)=\frac1{\pi\delta^2}\iint_{D_\delta(w)}f(z)\,dA(z).
-\]
-Hence
-\[
-|f(w)|
-\le\frac1{\pi\delta^2}\iint_{D_\delta(w)}|f(z)|\,dA(z)
-\le\frac1{\pi(r-s)^2}\|f\|_{(1,r)}.
-\]
+$$
+f(w)=\frac1{\pi\delta^2}\iint_{D_\delta(w)}f(z)\,dA(z),
+$$
+so
+$$
+\abs{f(w)}
+\le\frac1{\pi\delta^2}\iint_{D_\delta(w)}\abs{f(z)}\,dA(z)
+\le\frac1{\pi(r-s)^2}\norm{f}_{(1,r)}.
+$$
+:::
+
 :::
 
 ::: pf-step
-Taking the supremum over $w\in D_s(z_0)$ gives
-\[
-\|f\|_{(\infty,s)}
-\le\frac1{\pi(r-s)^2}\|f\|_{(1,r)}.
-\]
-Thus one may take
-\[
-c=\frac1{\pi(r-s)^2}.
-\]
+$\norm{f}_{(\infty,s)} \le c\norm{f}_{(1,r)}$ with $\boxed{c=\frac1{\pi(r-s)^2}}$.
+
+::: pf-proof
+Take the supremum over $w\in D_s(z_0)$ in step [](#pointwise){.pf-ref}.
+:::
+
 :::
 
 :::
