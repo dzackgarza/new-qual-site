@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-I6PEO
 kind: problem
-title: $1/f$ has bounded variation on $[a,b]$ when $f$ does and $|f|\ge c>0$
+title: $1/f$ has bounded variation on $[a,b]$ when $f$ does and $\abs{f}\ge c>0$
 classification:
   areas:
   - real-analysis
@@ -17,25 +17,26 @@ audit:
 ---
 ::: {.problem}
 Let $f$ be a function of bounded variation on $[a,b]$.
-Furthermore, assume that for some $c>0$, $|f(x)| \geq c$ on $[a,b]$.
+Furthermore, assume that for some $c>0$, $\abs{f(x)} \geq c$ on $[a,b]$.
 Show that $g(x) = 1/f(x)$ is of bounded variation on $[a,b]$.
 :::
+
 ::: {.solution}
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-For $x, y \in [a,b]$: $\left|\frac{1}{f(x)} - \frac{1}{f(y)}\right| = \frac{|f(x) - f(y)|}{|f(x)f(y)|} \le \frac{1}{c^2}|f(x) - f(y)|$.
+For $x, y \in [a,b]$, $\abs{g(x)-g(y)} \le c^{-2}\abs{f(x) - f(y)}$.
 
 ::: pf-proof
 
-The lower bound $|f|\geq c>0$ ensures that $g=1/f$ is defined everywhere. For any $x,y\in[a,b]$,
-\[
-|g(x)-g(y)|=\frac{|f(y)-f(x)|}{|f(x)f(y)|}
-\leq c^{-2}|f(y)-f(x)|,
-\]
-since $|f(x)f(y)|\geq c^2$.
+The lower bound $\abs{f}\geq c>0$ ensures that $g=1/f$ is defined everywhere. For any $x,y\in[a,b]$,
+$$
+\abs{g(x)-g(y)}=\frac{\abs{f(y)-f(x)}}{\abs{f(x)f(y)}}
+\leq c^{-2}\abs{f(y)-f(x)},
+$$
+since $\abs{f(x)f(y)}\geq c^2$.
 
 :::
 
@@ -43,31 +44,25 @@ since $|f(x)f(y)|\geq c^2$.
 
 ::: {.pf-step #s2}
 
-For any partition $a = x_0 < \cdots < x_n = b$: $\sum_{i=1}^n \left|\frac{1}{f(x_i)} - \frac{1}{f(x_{i-1})}\right| \le \frac{1}{c^2}\sum_{i=1}^n |f(x_i) - f(x_{i-1})| \le \frac{1}{c^2}V_{[a,b]}(f)$.
+For any partition $a = x_0 < \cdots < x_n = b$, $\sum_{i=1}^n \abs{g(x_i) - g(x_{i-1})} \le c^{-2}\sum_{i=1}^n \abs{f(x_i) - f(x_{i-1})} \le c^{-2}V_{[a,b]}(f)$.
 
 ::: pf-proof
 
-Apply step [](#s1){.pf-ref} to each pair $(x_i,x_{i-1})$ and sum. By definition, every partition variation sum of $f$ is bounded above by $V_{[a,b]}(f)$.
+Step [](#s1){.pf-ref} applies to each pair $(x_i,x_{i-1})$; summing gives the first inequality. By definition, every partition variation sum of $f$ is bounded above by $V_{[a,b]}(f)$.
 
 :::
 
 :::
 
-::: {.pf-step #s3}
+::: pf-step
 
-The reciprocal satisfies $\boxed{V_{[a,b]}(g)\leq c^{-2}V_{[a,b]}(f)<\infty}$.
+$V_{[a,b]}(g)\leq c^{-2}V_{[a,b]}(f)<\infty$, so $g$ is of bounded variation.
 
 ::: pf-proof
 
-Take the supremum of the left-hand partition sums in step [](#s2){.pf-ref} over all finite partitions of $[a,b]$. The right-hand bound is independent of the partition and finite because $f$ has bounded variation.
+$V_{[a,b]}(g)$ is the supremum of the left-hand partition sums in step [](#s2){.pf-ref} over all finite partitions of $[a,b]$. The right-hand bound is independent of the partition and finite because $f$ has bounded variation.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s3){.pf-ref} proves that $g=1/f$ is of bounded variation.
 
 :::
 
