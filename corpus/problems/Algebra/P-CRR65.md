@@ -84,7 +84,7 @@ so $\rho$ is irreducible.
 
 :::
 
-::: {.pf-step #table}
+::: pf-step
 The character table of $D_4$ is
 $$
 \boxed{\begin{array}{c|ccccc}
