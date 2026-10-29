@@ -290,7 +290,7 @@ The ring is commutative with identity, and by step [](#s1-7){.pf-ref} every nonz
 
 ::: pf-qed
 
-Step [](#s1-8){.pf-ref} proves the corrected statement intended by the source.
+Step [](#s1-8){.pf-ref} proves the corrected statement.
 
 :::
 
