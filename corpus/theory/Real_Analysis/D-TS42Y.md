@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-TS42Y
 kind: definition
 title: Convolution of functions on $\RR^n$
+prompts:
+- How is the convolution $(f \ast g)(\xi)$ defined?
 classification:
   areas:
   - real-analysis

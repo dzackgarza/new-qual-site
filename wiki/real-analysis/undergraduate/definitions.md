@@ -108,8 +108,6 @@ For $E_n\nearrow E=\bigcup_nE_n$ the equality $\mu(E)=\lim_n\mu(E_n)$ holds for 
 
 [[D-TS42Y]]
 
-[[FF-4WIMZ]]
-
 [[D-5LZQ4]]
 
 [[D-EWXAT]]
