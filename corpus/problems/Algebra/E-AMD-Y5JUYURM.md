@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-Y5JUYURM
 kind: problem
-title: Maximal subgroups of a $p$-group are normal
+title: Maximal subgroups of a finite $p$-group are normal of index $p$
 classification:
   areas:
   - algebra
