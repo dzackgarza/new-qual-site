@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-5-04
 kind: problem
-title: Maxim algebraic topology 5.4
+title: An orientable sphere bundle with zero Euler class but no section
 classification:
   areas: [topology]
   topics: []
