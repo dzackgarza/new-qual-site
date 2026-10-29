@@ -154,20 +154,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair moves the prompt, odd definition, and parity remark to `D-TMME3`, redirects `FD-X4DBP`, removes duplicate reader-facing references, and deletes `FD-PIVQZ`.
 
-### Duplicate characteristic cards D-JNCUB and FD-LXZIW
-
-- **Object and need:** `D-JNCUB` and `FD-LXZIW` in `corpus/theory/Algebra`. Both define the characteristic of a ring as the least positive `$n$` with `$n\cdot1_R=0$`, or `0` when no such integer exists.
-
-- **Observed evidence:** the definitions are identical.
-  `FD-LXZIW` adds the useful characterization as the nonnegative generator of the kernel of `$\ZZ\to R$`; `D-JNCUB` is the canonical dependency used by the field and separability theory.
-  One problem card and a wiki page still linked to the flashcard duplicate.
-
-- **Impact and owner:** the duplicate splits a basic ring invariant while the useful kernel characterization belongs naturally on the canonical card.
-
-- **Uncertainty:** none after reading both complete cards; the older candidate `D-O26OY` is absent from the live tree.
-
-- **Repair:** a `CARD-04` repair moves the review prompt and kernel characterization to `D-JNCUB`, redirects the problem-card reference, removes the duplicate wiki entry, and deletes `FD-LXZIW`.
-
 ### Duplicate Euclidean-domain cards D-NKRGN and FD-GXXBV
 
 - **Object and need:** `D-NKRGN` and `FD-GXXBV` in `corpus/theory/Algebra`. Both define a Euclidean domain by a Euclidean function and the division-with-remainder inequality.

@@ -40,7 +40,7 @@ $1_R$.
 
 ::: {.solution}
 Write $1_R$ for the multiplicative identity and let $c$ be
-the [[FD-LXZIW|characteristic]] of $R$.
+the [[D-JNCUB|characteristic]] of $R$.
 
 ::: pf
 
