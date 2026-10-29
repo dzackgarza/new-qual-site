@@ -16,6 +16,6 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $X$ be a normed vector space over $\mathbb K\in\theset{\RR,\CC}$, and let $\dualof{X}$ be the vector space of continuous linear functionals $X\to\mathbb K$ with the [[D-T4LOC|operator norm]] $\norm{L}_{\text{op}}\coloneqq\sup_{x\in X,\ \norm{x}\leq1}\abs{L(x)}$.
+Let $X$ be a normed vector space over a field $F\in\theset{\RR,\CC}$, and let $\dualof{X}$ be the vector space of continuous linear functionals $X\to F$ with the [[D-T4LOC|operator norm]] $\norm{L}_{\text{op}}\coloneqq\sup_{x\in X,\ \norm{x}\leq1}\abs{L(x)}$.
 Then $(\dualof{X},\norm{\cdot}_{\text{op}})$ is a [[D-BG455|Banach space]].
 :::
