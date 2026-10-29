@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-OODAV
 kind: proposition
 title: Splitting lemma for short exact sequences
-slogan: 'A short exact sequence splits iff either side splits, equivalently the middle term is the direct sum of the ends.'
+slogan: 'A short exact sequence splits on the left iff it splits on the right, iff the middle term is the direct sum of the ends compatibly with the maps.'
 classification:
   areas:
   - algebra
