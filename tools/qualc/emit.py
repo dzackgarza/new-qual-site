@@ -37,6 +37,7 @@ from .model import (
     MARKDOWN,
     TERMS_IN_YEAR_ORDER,
     from_ast,
+    mark_list_delimiters,
     to_json,
     typeset_dashes,
 )
@@ -1393,7 +1394,7 @@ def _lamport_proofs(documents: list[str]) -> list[str]:
 
 
 def _html_ast(ast: str) -> str:
-    return to_json(from_ast(ast).walk(_prepare_html))
+    return to_json(from_ast(ast).walk(_prepare_html).walk(mark_list_delimiters))
 
 
 def _html_asts(documents: list[str]) -> list[str]:

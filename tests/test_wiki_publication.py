@@ -276,7 +276,10 @@ def wiki_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
         "twice.md": wiki_md("# Twice\n\n[[DEF-PGROUP]]\n\n[[LEM-FRATTINI]]\n\n[[DEF-PGROUP]]\n", order=8),
         "yaml-title.md": wiki_md("# YAML title\n\n[[PRP-PIDX]] [[WRN-SYLOWCOUNT]] [[PRP-TRACES]]\n", order=9),
         "citations.md": wiki_md("# Citations\n\nReferences: [@DF04], [@Smi96].\n", order=10),
-        "paren-list.md": wiki_md("# Paren list\n\n(a) First.\n(b) Second.\n", order=13),
+        "paren-list.md": wiki_md(
+            "# Paren list\n\n(a) First.\n(b) Second.\n\n::: pf\n\n::: pf-step\n\nBoth hold.\n\n(a) One.\n(b) Two.\n\n:::\n\n::: pf-qed\n\nDone.\n\n:::\n\n:::\n",
+            order=13,
+        ),
         "block-title.md": wiki_md(
             '# Block title\n\n::: {.theorem title="Arzelà--Ascoli [@DF04]"}\nStatement.\n:::\n\n::: {.remark title="(ii) implies (vii)"}\nCompare.\n:::\n',
             order=12,
@@ -592,6 +595,9 @@ def test_a_parenthesized_list_keeps_its_parentheses(wiki_site: Path) -> None:
     page = (wiki_site / "build" / "quarto" / "_site" / "wiki" / "paren-list.html").read_text()
     assert '<div class="list-two-parens">' in page
     assert '<ol type="a">' in page.split('<div class="list-two-parens">', 1)[1]
+    # A list inside a proof step is still marked: the step admits no foreign Div,
+    # so the marker is added after the structured-proof filter has run.
+    assert page.count('<div class="list-two-parens">') == 2
 
 
 def test_incoming_wiki_links_are_generated_from_the_resolved_graph(wiki_site: Path) -> None:

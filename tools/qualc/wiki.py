@@ -30,7 +30,6 @@ from .model import (
     from_ast,
     load_citations,
     load_front_matter,
-    mark_list_delimiters,
     reject_extraction_residue,
     to_json,
     typeset_block_titles,
@@ -331,7 +330,6 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
                 from_ast(typeset_block_titles(pandoc, [result.output], citations)[0])
                 .walk(drop_path_captions)
                 .walk(unlist_step_claims)
-                .walk(mark_list_delimiters)
                 .walk(typeset_link_dashes)
                 .walk(anchor_block_markers)
                 .walk(unpack_cross_references)
