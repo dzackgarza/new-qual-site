@@ -22,32 +22,25 @@ audit:
 ---
 
 ::: {.problem}
-- Find two groups $G\not\cong H$ where $\Aut G\cong \Aut H$.
+Find two groups $G\not\cong H$ where $\Aut G\cong \Aut H$.
 :::
 
-
 ::: {.solution}
-Take
-\[
-G=C_3,
-\qquad
-H=C_4.
-\]
-Then $G\not\cong H$ because they have different orders. On the other hand,
-\[
-\Aut(C_n)\cong (\ZZ/n\ZZ)^\times.
-\]
-Therefore
-\[
-\Aut(C_3)\cong (\ZZ/3\ZZ)^\times\cong C_2
-\]
-and
-\[
-\Aut(C_4)\cong (\ZZ/4\ZZ)^\times\cong C_2.
-\]
-Hence
-\[
-\Aut(G)\cong\Aut(H)
-\]
-even though $G\not\cong H$.
+
+::: pf
+
+::: pf-step
+
+$G=\boxed{C_3}$ and $H=\boxed{C_4}$ are not isomorphic but have isomorphic automorphism groups.
+
+::: pf-proof
+
+$C_3$ and $C_4$ have different orders, so $G\not\cong H$. For every $n\ge1$, $\Aut(C_n)\cong(\ZZ/n\ZZ)^\times$, because an automorphism of $C_n=\langle g\rangle$ is determined by $g\mapsto g^k$ with $\gcd(k,n)=1$. Hence $\Aut(C_3)\cong(\ZZ/3\ZZ)^\times\cong C_2$ and $\Aut(C_4)\cong(\ZZ/4\ZZ)^\times\cong C_2$.
+
+:::
+
+:::
+
+:::
+
 :::
