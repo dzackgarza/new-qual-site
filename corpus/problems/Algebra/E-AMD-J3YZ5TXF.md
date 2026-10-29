@@ -23,37 +23,35 @@ audit:
 ---
 
 ::: {.exercise}
-Let $K=\mathbb Q(2^{1/n},\zeta_n)$, the splitting field of $x^n-2$ over $\mathbb Q$.
+Let $K=\QQ(2^{1/n},\zeta_n)$, the splitting field of $x^n-2$ over $\QQ$.
 Show that
-\[
-\operatorname{Gal}(K/\mathbb Q)\hookrightarrow (\mathbb Z/n\mathbb Z)\rtimes(\mathbb Z/n\mathbb Z)^\times
-\]
+$$
+\Gal(K/\QQ)\hookrightarrow (\ZZ/n\ZZ)\rtimes(\ZZ/n\ZZ)^\times
+$$
 via $\sigma\mapsto(a,b)$, where
-\[
+$$
 \sigma(2^{1/n})=\zeta_n^a2^{1/n},\qquad \sigma(\zeta_n)=\zeta_n^b.
-\]
+$$
 For $n=3,4,6$, show that this embedding is an isomorphism onto the dihedral group of order $2n$.
-
-> The formula $[K:\mathbb Q]=n\varphi(n)$ is false in general; the intersection $\mathbb Q(2^{1/n})\cap\mathbb Q(\zeta_n)$ can be nontrivial.
 :::
 
 ::: {.solution}
-Write $\alpha=2^{1/n}$ and $G=\operatorname{Gal}(K/\mathbb Q)$.
+Write $\alpha=2^{1/n}$ and $G=\Gal(K/\QQ)$.
 
 ::: pf
 
 ::: {.pf-step #sigma-determined-by-pair}
 Each $\sigma\in G$ determines a unique pair
-\[
-(a,b)\in \mathbb Z/n\mathbb Z\times(\mathbb Z/n\mathbb Z)^\times
-\]
+$$
+(a,b)\in \ZZ/n\ZZ\times(\ZZ/n\ZZ)^\times
+$$
 by
-\[
+$$
 \sigma(\alpha)=\zeta_n^a\alpha,\qquad \sigma(\zeta_n)=\zeta_n^b.
-\]
+$$
 
 ::: pf-proof
-The conjugates of $\alpha$ are the roots $\zeta_n^a\alpha$ of $x^n-2$, and an automorphism sends the primitive $n$th root $\zeta_n$ to another primitive $n$th root. Since $K=\mathbb Q(\alpha,\zeta_n)$, the pair determines $\sigma$ uniquely.
+The conjugates of $\alpha$ are the roots $\zeta_n^a\alpha$ of $x^n-2$, and an automorphism sends the primitive $n$th root $\zeta_n$ to another primitive $n$th root. Since $K=\QQ(\alpha,\zeta_n)$, the pair determines $\sigma$ uniquely.
 :::
 
 :::
@@ -63,15 +61,15 @@ This gives an injective homomorphism into the affine group.
 
 ::: pf-proof
 If $\sigma_i$ corresponds to $(a_i,b_i)$, then
-\[
+$$
 (\sigma_1\sigma_2)(\alpha)=\zeta_n^{a_1+b_1a_2}\alpha,
 \qquad
 (\sigma_1\sigma_2)(\zeta_n)=\zeta_n^{b_1b_2}.
-\]
+$$
 Hence composition corresponds to
-\[
+$$
 (a_1,b_1)(a_2,b_2)=(a_1+b_1a_2,b_1b_2),
-\]
+$$
 the semidirect-product law. Injectivity follows from step [](#sigma-determined-by-pair){.pf-ref}.
 :::
 
@@ -82,40 +80,34 @@ For $n=3,4,6$, the embedding is onto and $G\cong D_n$.
 
 ::: pf-proof
 For these three values, $\varphi(n)=2$ and
-\[
-(\mathbb Z/n\mathbb Z)^\times=\{\pm1\}.
-\]
-Also $\mathbb Q(\alpha)\subset\mathbb R$, while $\mathbb Q(\zeta_n)$ is the imaginary quadratic field $\mathbb Q(\sqrt{-3})$ for $n=3,6$ and $\mathbb Q(i)$ for $n=4$. Hence
-\[
-\mathbb Q(\alpha)\cap\mathbb Q(\zeta_n)=\mathbb Q.
-\]
-Eisenstein at $2$ gives $[\mathbb Q(\alpha):\mathbb Q]=n$, so
-\[
-[K:\mathbb Q]=2n.
-\]
-The target affine group also has order $2n$, hence the injection is an isomorphism. Since the nontrivial unit $-1$ acts on $\mathbb Z/n\mathbb Z$ by inversion,
-\[
-G\cong (\mathbb Z/n\mathbb Z)\rtimes\{\pm1\}=D_n.
-\]
+$$
+(\ZZ/n\ZZ)^\times=\{\pm1\}.
+$$
+Also $\QQ(\alpha)\subset\RR$, while $\QQ(\zeta_n)$ is the imaginary quadratic field $\QQ(\sqrt{-3})$ for $n=3,6$ and $\QQ(i)$ for $n=4$. Hence
+$$
+\QQ(\alpha)\cap\QQ(\zeta_n)=\QQ.
+$$
+Eisenstein at $2$ gives $[\QQ(\alpha):\QQ]=n$, so
+$$
+[K:\QQ]=2n.
+$$
+The target affine group also has order $2n$, hence the injection is an isomorphism. Since the nontrivial unit $-1$ acts on $\ZZ/n\ZZ$ by inversion,
+$$
+G\cong (\ZZ/n\ZZ)\rtimes\{\pm1\}=D_n.
+$$
 :::
 
 :::
 
-::: pf-step
-The degree formula $[K:\mathbb Q]=n\varphi(n)$ cannot be used for arbitrary $n$.
+:::
 
-::: pf-proof
-For example, when $n=8$,
-\[
-\sqrt2=\alpha^4\in\mathbb Q(\alpha),
+:::
+
+::: {.remark}
+The degree formula $[K:\QQ]=n\varphi(n)$ fails for general $n$, because $\QQ(2^{1/n})\cap\QQ(\zeta_n)$ can be larger than $\QQ$. For $n=8$, with $\alpha=2^{1/8}$,
+$$
+\sqrt2=\alpha^4\in\QQ(\alpha),
 \qquad
-\sqrt2=\zeta_8+\zeta_8^{-1}\in\mathbb Q(\zeta_8).
-\]
-Thus the two subfields have nontrivial intersection, so their degrees do not multiply.
-:::
-
-:::
-
-:::
-
+\sqrt2=\zeta_8+\zeta_8^{-1}\in\QQ(\zeta_8).
+$$
 :::
