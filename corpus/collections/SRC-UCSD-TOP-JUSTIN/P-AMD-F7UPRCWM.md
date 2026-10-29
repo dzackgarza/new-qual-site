@@ -22,8 +22,6 @@ Show that $S^2 \not\cong S^3$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the 2-sphere $S^2$ is not homeomorphic to the 3-sphere $S^3$ ($S^2 \not\cong S^3$).
-
 ::: pf
 
 ::: pf-step
