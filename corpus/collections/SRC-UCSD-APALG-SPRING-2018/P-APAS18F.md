@@ -32,129 +32,44 @@ into irreducible $S_5$-modules.
 :::
 
 ::: {.solution}
-**Goal.** Decompose the induced module $V$, and compute $\dim \operatorname{End}_{S_5}(V)$ and the dimension of its center.
+Induction from a Young subgroup corresponds to multiplication of Schur functions, and $S^{(1,1)}$, $S^{(2)}$, $S^{(1)}$ have Frobenius characteristics $s_{(1,1)}$, $s_{(2)}$, $s_{(1)}$, so the Frobenius characteristic of $V$ is $s_{(1,1)}s_{(2)}s_{(1)}$.
 
 ::: pf
 
-::: pf-step
-(a) Decompose $V = (S^{(1,1)} \otimes S^{(2)} \otimes S^{(1)}) \uparrow_{S_2 \times S_2 \times S_1}^{S_5}$.
+::: {.pf-step #decomposition}
+
+(a) $V\cong S^{(4,1)}\oplus S^{(3,2)}\oplus 2S^{(3,1,1)}\oplus S^{(2,2,1)}\oplus S^{(2,1,1,1)}$.
 
 ::: pf-proof
 
-::: pf-step
-$S^{(1,1)}$ is the sign representation of $S_2$, $S^{(2)}$ the trivial of $S_2$, $S^{(1)}$ the trivial of $S_1$.
-
-::: pf-proof
-the irreducible representations of $S_2$ are trivial $(2)$ and sign $(1,1)$; of $S_1$ only trivial $(1)$.
-:::
-
-:::
-
-::: pf-step
-By the Pieri rule, $s_{(1,1)} s_{(2)} = s_{(3,1)} + s_{(2,1,1)}$.
-
-::: pf-proof
-multiplying by $s_{(2)}$ adds a horizontal strip of size $2$ to $(1,1)$.
-:::
-
-:::
-
-::: pf-step
-Then $s_{(3,1)} s_{(1)} = s_{(4,1)} + s_{(3,2)} + s_{(3,1,1)}$ and $s_{(2,1,1)} s_{(1)} = s_{(3,1,1)} + s_{(2,2,1)} + s_{(2,1,1,1)}$.
-
-::: pf-proof
-multiplying by $s_{(1)}$ adds a single box in all valid ways.
-:::
-
-:::
-
-::: {.pf-step #s1-4}
-Hence $V = S^{(4,1)} \oplus S^{(3,2)} \oplus 2 S^{(3,1,1)} \oplus S^{(2,2,1)} \oplus S^{(2,1,1,1)}$.
-
-::: pf-proof
-collect terms; $S^{(3,1,1)}$ appears with multiplicity $2$.
-:::
-
-:::
-
-::: pf-step
-Dimensions: $\dim S^{(4,1)} = 4$, $\dim S^{(3,2)} = 5$, $\dim S^{(3,1,1)} = 6$, $\dim S^{(2,2,1)} = 5$, $\dim S^{(2,1,1,1)} = 4$.
-
-::: pf-proof
-hook-length formula.
-:::
-
-:::
+By the Pieri rule, $s_{(1,1)}s_{(2)}$ adds a horizontal strip of two boxes to $(1,1)$, giving $s_{(3,1)}+s_{(2,1,1)}$; the shape $(2,2)$ is excluded because its two new boxes share a column. Multiplying by $s_{(1)}$ adds one box in every possible way: $s_{(3,1)}s_{(1)}=s_{(4,1)}+s_{(3,2)}+s_{(3,1,1)}$ and $s_{(2,1,1)}s_{(1)}=s_{(3,1,1)}+s_{(2,2,1)}+s_{(2,1,1,1)}$. As a check, the hook length formula gives dimensions $4+5+2\cdot6+5+4=30=5!/(2!\,2!\,1!)=\dim V$.
 
 :::
 
 :::
 
 ::: pf-step
-(b) $\dim \operatorname{End}_{S_5}(V)$.
+
+(b) $\dim\operatorname{End}_{S_5}(V)=\boxed{8}$.
 
 ::: pf-proof
 
-::: pf-step
-$V = \bigoplus_\lambda m_\lambda S^\lambda$ with multiplicities $m_{(4,1)} = m_{(3,2)} = m_{(2,2,1)} = m_{(2,1,1,1)} = 1$ and $m_{(3,1,1)} = 2$.
-
-::: pf-proof
-the decomposition from step [](#s1-4){.pf-ref}.
-:::
-
-:::
-
-::: pf-step
-$\operatorname{End}_{S_5}(V) \cong \bigoplus_\lambda M_{m_\lambda}(\CC)$.
-
-::: pf-proof
-Schur's lemma / the endomorphism algebra of a semisimple module is a product of matrix algebras.
-:::
-
-:::
-
-::: {.pf-step #s2-3}
-$\dim \operatorname{End}_{S_5}(V) = \sum_\lambda m_\lambda^2 = 1 + 1 + 4 + 1 + 1 = 8$.
-
-::: pf-proof
-sum the squares of the multiplicities.
-:::
-
-:::
+By Schur's lemma, $\operatorname{End}_{S_5}\bigl(\bigoplus_\lambda (S^\lambda)^{m_\lambda}\bigr)\cong\prod_\lambda M_{m_\lambda}(\CC)$, of dimension $\sum_\lambda m_\lambda^2$. Step [](#decomposition){.pf-ref} gives multiplicities $1,1,2,1,1$, so the dimension is $1+1+4+1+1$.
 
 :::
 
 :::
 
 ::: pf-step
-(c) Dimension of the center of $\operatorname{End}_{S_5}(V)$.
+
+(c) The center of $\operatorname{End}_{S_5}(V)$ has dimension $\boxed{5}$.
 
 ::: pf-proof
 
-::: pf-step
-The center of $\bigoplus_\lambda M_{m_\lambda}(\CC)$ is $\bigoplus_\lambda \CC$ (one copy of $\CC$ per block).
-
-::: pf-proof
-the center of $M_m(\CC)$ is $\CC$ (scalar matrices).
-:::
+The center of $\prod_\lambda M_{m_\lambda}(\CC)$ is the product of the scalar matrices, one copy of $\CC$ for each $\lambda$ with $m_\lambda>0$; step [](#decomposition){.pf-ref} has five such $\lambda$.
 
 :::
 
-::: {.pf-step #s3-2}
-Hence $\dim Z(\operatorname{End}_{S_5}(V)) = \text{number of distinct irreducibles} = 5$.
-
-::: pf-proof
-there are five distinct irreducible summands.
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-qed
-step [](#s1-4){.pf-ref} gives the decomposition; step [](#s2-3){.pf-ref} gives $\dim \operatorname{End} = 8$; step [](#s3-2){.pf-ref} gives $\dim Z = 5$.
 :::
 
 :::
