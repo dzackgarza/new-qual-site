@@ -27,7 +27,7 @@ Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space, let $1\leq p<\infty$, and let
 :::
 
 ::: {.example}
-Without $\mu(X)<\infty$, uniform convergence does not imply $L^1$ convergence: $\frac1n\chi_{[0,n]}\to 0$ uniformly on $\RR$ with $\int_\RR\frac1n\chi_{[0,n]} = 1$ ([[FE-3RPMC]]). Almost everywhere convergence does not imply $L^1$ convergence: $n\chi_{[0,1/n]}\to 0$ almost everywhere on $\RR$ with integral $1$ ([[FE-VT5N3]]).
+Without $\mu(X)<\infty$, uniform convergence does not imply $L^1$ convergence: $\frac1n\chi_{[0,n]}\to 0$ uniformly on $\RR$ with $\int_\RR\frac1n\chi_{[0,n]} = 1$ ([[PR-TC76W]]). Almost everywhere convergence does not imply $L^1$ convergence: $n\chi_{[0,1/n]}\to 0$ almost everywhere on $\RR$ with integral $1$ ([[PR-TC76W]]).
 :::
 
 ::: {.example}

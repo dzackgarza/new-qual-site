@@ -4,6 +4,12 @@ id: PR-TC76W
 kind: proposition
 title: Counterexamples among uniform, pointwise, almost everywhere and $L^1$ convergence
 slogan: 'Uniform implies pointwise implies almost everywhere, but no other implication among these and $L^1$ convergence holds in general.'
+prompts:
+- Give a sequence that converges uniformly, pointwise, and a.e., but not in $L^1$.
+- Give a sequence that converges pointwise and a.e. but not uniformly or in $L^1$.
+- Give a sequence of functions that converges pointwise but not in $L^1$.
+- Give a sequence that converges a.e. but not in $L^1$, uniformly, or pointwise.
+- Show that almost everywhere convergence does not imply $L^p$ convergence.
 classification:
   areas:
   - real-analysis
@@ -54,6 +60,8 @@ Every $x\in[0,1]$ lies in some $I_{k,j}$ and outside some $I_{k,j'}$ for each $k
 ![Graphs of $f_1, \ldots, f_6$: unit-height indicators of $[0,1/2]$, $[1/2,1]$, then $[0,1/4]$, $[1/4,1/2]$, $[1/2,3/4]$, $[3/4,1]$, sweeping across $[0,1]$ with halving width](../../assets/figures/image_2021-05-21-16-49-09.png)
 :::
 
-::: {.remark}
-The sequences $\chi_{(n,n+1)}$ and $n\chi_{[0,1/n]}$ above also show that almost everywhere convergence does not imply $L^p$ convergence for any $1\le p\le\infty$ ([[PR-2JV43]]).
+::: {.remark title="Variations"}
+Almost everywhere convergence does not imply $L^p$ convergence for any $1\le p\le\infty$: the sequence $\chi_{(n,n+1)}$ tends to $0$ everywhere with $\norm{\chi_{(n,n+1)}}_p=1$, and the spikes $n\chi_{[0,1/n]}$ tend to $0$ almost everywhere with $\norm{n\chi_{[0,1/n]}}_p=n^{1-1/p}\geq1$ for $1\le p<\infty$ and $\norm{n\chi_{[0,1/n]}}_\infty=n$.
+
+Over the open interval, $n\chi_{(0,1/n)}$ converges to $0$ at every $x\in\RR$, including $x=0$, and still has integral $1$: it satisfies (P) and (AE) and not (U), (N).
 :::
