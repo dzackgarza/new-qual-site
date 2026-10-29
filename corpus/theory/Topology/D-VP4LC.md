@@ -16,7 +16,7 @@ review: draft
 ::: {.definition}
 Let $X$ be a topological space, $R$ a commutative ring, and $n\geq 0$.
 For a singular cochain $\varphi\in C^n(X;R) = \Hom_R(C_n(X;R), R)$ and a singular chain $\alpha\in C_n(X;R)$, put $\inner{\varphi}{\alpha} \coloneqq \varphi(\alpha)$.
-The \dfn{Kronecker pairing}, also called the \dfn{Kronecker product}, is the $R$-bilinear map
+The \dfn{Kronecker pairing}, also called the \dfn{Kronecker product} [@Hat02], is the $R$-bilinear map
 $$
 \inner{\wait}{\wait}\colon H^n(X; R) \cross H_n(X; R) \to R, \qquad \inner{[\varphi]}{[\alpha]} \coloneqq \varphi(\alpha),
 $$
@@ -44,8 +44,4 @@ so $h$ is surjective, and $h$ is an isomorphism if and only if $\Ext_R(H_{n-1}(X
 ::: {.example}
 The evaluation homomorphism $h$ need not be injective.
 For $X = \RP^2$, $R = \ZZ$, and $n = 2$, one has $H_1(\RP^2;\ZZ)\cong\ZZ/2$ and $H_2(\RP^2;\ZZ) = 0$, so $H^2(\RP^2;\ZZ)\cong\Ext_\ZZ(\ZZ/2,\ZZ)\cong\ZZ/2$ while $\Hom_\ZZ(H_2(\RP^2;\ZZ),\ZZ) = 0$.
-:::
-
-::: {.concept}
-[@Hat02].
 :::

@@ -20,7 +20,7 @@ The \dfn{relative homotopy group} is
 $$
 \pi_n(X, A, x_0) \coloneqq \theset{ f\colon (D^n, S^{n-1}, s_0) \to (X, A, x_0) } / \homotopic,
 $$
-the set of [[D-Z7I7F|homotopy]] classes of maps of triples, where the homotopies are through maps of triples.
+the set of [[D-Z7I7F|homotopy]] classes of maps of triples, where the homotopies are through maps of triples [@Hat02].
 :::
 
 ::: {.proposition}
@@ -33,8 +33,4 @@ $$
 \cdots \to \pi_n(A, x_0) \to \pi_n(X, x_0) \to \pi_n(X, A, x_0) \xrightarrow{\del} \pi_{n-1}(A, x_0)\to \cdots \to \pi_0(X, x_0),
 $$
 whose unlabelled maps are induced by the inclusions $(A, x_0)\injects(X, x_0)$ and $(X, x_0, x_0)\injects (X, A, x_0)$ and where $\del$ restricts a map of triples to $S^{n-1}$, is exact.
-:::
-
-::: {.concept}
-[@Hat02].
 :::
