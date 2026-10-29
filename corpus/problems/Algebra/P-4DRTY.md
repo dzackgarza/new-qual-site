@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Is $\mathbb{Q}(\sqrt[3]{21})$ normal?
+Is $\QQ(\sqrt[3]{21})$ normal?
 What is its splitting field?
 What is its Galois group?
 Describe the lattice of subfields.
@@ -30,39 +30,39 @@ Describe the lattice of subfields.
 
 ::: {.solution}
 Let $\alpha=\sqrt[3]{21}$ and let $\omega$ be a primitive cube root of unity. The polynomial
-\[
+$$
 f(x)=x^3-21
-\]
-is irreducible over $\mathbb Q$ by Eisenstein at $3$ (or $7$). Its roots are $\alpha,\omega\alpha,\omega^2\alpha$.
+$$
+is irreducible over $\QQ$ by Eisenstein at $3$ (or $7$). Its roots are $\alpha,\omega\alpha,\omega^2\alpha$.
 
-Since $\mathbb Q(\alpha)\subset\mathbb R$, it contains only the real root, so it is not normal over $\mathbb Q$. The splitting field is
-\[
-K=\mathbb Q(\alpha,\omega)=\mathbb Q(\alpha,\sqrt{-3}).
-\]
-Now $[\mathbb Q(\alpha):\mathbb Q]=3$ and $\omega\notin\mathbb R$, so $[K:\mathbb Q(\alpha)]=2$; hence $[K:\mathbb Q]=6$.
+Since $\QQ(\alpha)\subset\RR$, it contains only the real root, so it is not normal over $\QQ$. The splitting field is
+$$
+K=\QQ(\alpha,\omega)=\QQ(\alpha,\sqrt{-3}).
+$$
+Now $[\QQ(\alpha):\QQ]=3$ and $\omega\notin\RR$, so $[K:\QQ(\alpha)]=2$; hence $[K:\QQ]=6$.
 
 The discriminant of $x^3-21$ is
-\[
+$$
 -27\cdot 21^2,
-\]
-which is not a square in $\mathbb Q$. Therefore the Galois group of the irreducible cubic is
-\[
-\operatorname{Gal}(K/\mathbb Q)\cong S_3.
-\]
+$$
+which is not a square in $\QQ$. Therefore the Galois group of the irreducible cubic is
+$$
+\operatorname{Gal}(K/\QQ)\cong S_3.
+$$
 One may take generators
-\[
+$$
 \sigma(\alpha)=\omega\alpha,\quad \sigma(\omega)=\omega,
 \qquad
 \tau(\alpha)=\alpha,\quad \tau(\omega)=\omega^2,
-\]
+$$
 with $\sigma^3=\tau^2=1$ and $\tau\sigma\tau=\sigma^{-1}$.
 
 By Galois correspondence, the intermediate fields are:
-\[
-\mathbb Q,
-\quad \mathbb Q(\omega),
-\quad \mathbb Q(\alpha),\quad \mathbb Q(\omega\alpha),\quad \mathbb Q(\omega^2\alpha),
+$$
+\QQ,
+\quad \QQ(\omega),
+\quad \QQ(\alpha),\quad \QQ(\omega\alpha),\quad \QQ(\omega^2\alpha),
 \quad K.
-\]
-The quadratic field $\mathbb Q(\omega)=\mathbb Q(\sqrt{-3})$ corresponds to $A_3$, and the three cubic fields correspond to the three subgroups of order $2$ in $S_3$.
+$$
+The quadratic field $\QQ(\omega)=\QQ(\sqrt{-3})$ corresponds to $A_3$, and the three cubic fields correspond to the three subgroups of order $2$ in $S_3$.
 :::
