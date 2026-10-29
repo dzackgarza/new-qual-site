@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-YAYQB
 kind: problem
-title: Disc minus a slit
+title: Conformal map from the slit disc $\DD\setminus[1/2,1)$ onto $\DD$
 classification:
   areas:
   - complex-analysis
@@ -16,36 +16,60 @@ review: draft
 
 ::: {.exercise}
 Find a conformal map
-\[
-\DD\sm \left[ {1\over 2}, 1\right) \to \DD
-.\]
-
+$$
+\DD\setminus \left[ \frac12, 1\right) \to \DD.
+$$
 :::
 
 ::: {.solution}
-The picture:
+Write $Q\coloneqq\{w : \Re w>0,\ \Im w>0\}$ for the open first quadrant and $\DD^+\coloneqq\DD\cap\HH$ for the upper half-disc.
 
-![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_16-51-43.png)
+::: pf
 
-In steps:
+::: {.pf-step #move-slit}
+$\varphi_1(z)\coloneqq\dfrac{z-1/2}{1-z/2}$ maps $\DD\setminus[1/2,1)$ conformally onto $\DD\setminus[0,1)$.
 
-- $f_1$: send $1/2\to 0$ and $1\to 1$ in order to lengthen the slit.
-  Mobius transformations preserve lines, so take $f_1(z) = {z-1/2 \over 1-1/2}$.
-  New domain: $\DD\sm [0, 1)$.
-
-- $f_2$: send $\DD\to \HH$ and keep track of the slit.
-  Use the standard inverse to the Cayley transform, $f_2(z) = i{1-z\over 1+z}$.
-  New domain: $\HH\sm [i, i\infty)$, noting that $\HH$ is the open half-plane.
-
-- $f_3$: rotate the slit so it becomes a line segment from $-1$ to $1$ passing through $\infty$.
-  Use $f_3(z) = z^2$.
-  New domain: $\CC\sm\qty{(-\infty, 1] \union [1, \infty) }$
-
-- $f_4$: move the slit off to infinity to be left with a ray, so send $-1\to \infty$ and $0\to 0$.
-  Take $f_4(z) = {z\over z+1}$, the new domain is $\CC\sm [0, \infty)$.
-
-- $f_5$: fold it back. Branch cut log along $[0, \infty)$ to define $f_5(z) = z^{1\over 2}$, so the new domain is $\HH$.
-
-- $f_6$: apply the standard Cayley transform $f_6(z) = {i-z\over i+z}$
+::: pf-proof
+$\varphi_1$ is a disc automorphism, and on $[1/2,1]$ it is real and increasing with $\varphi_1(1/2)=0$ and $\varphi_1(1)=1$, so it maps $[1/2,1)$ onto $[0,1)$.
 :::
 
+:::
+
+::: {.pf-step #root}
+$\varphi_2(re^{i\theta})\coloneqq\sqrt r\,e^{i\theta/2}$, for $0<r<1$ and $0<\theta<2\pi$, maps $\DD\setminus[0,1)$ conformally onto $\DD^+$.
+
+::: pf-proof
+$\DD\setminus[0,1) = \{re^{i\theta} : 0<r<1,\ 0<\theta<2\pi\}$, and $\varphi_2$ is a holomorphic branch of $\sqrt z$ there with inverse $w\mapsto w^2$ on $\DD^+ = \{\rho e^{i\psi} : 0<\rho<1,\ 0<\psi<\pi\}$.
+:::
+
+:::
+
+::: {.pf-step #quadrant}
+$\varphi_3(w)\coloneqq\dfrac{1+w}{1-w}$ maps $\DD^+$ conformally onto $Q$.
+
+::: pf-proof
+For $w\in\DD$,
+$$
+\frac{1+w}{1-w} = \frac{(1+w)(1-\bar w)}{\abs{1-w}^2} = \frac{1-\abs w^2 + 2i\Im w}{\abs{1-w}^2},
+$$
+so $\varphi_3$ maps $\DD$ onto the right half-plane and $\{\Im w>0\}$ onto $\{\Im>0\}$; its inverse $u\mapsto\frac{u-1}{u+1}$ maps $Q$ back into $\DD^+$.
+:::
+
+:::
+
+::: pf-step
+$$
+\boxed{f \coloneqq \varphi_5\circ\varphi_4\circ\varphi_3\circ\varphi_2\circ\varphi_1},\qquad \varphi_4(u)\coloneqq u^2,\quad \varphi_5(v)\coloneqq\frac{v-i}{v+i},
+$$
+is a conformal map of $\DD\setminus[1/2,1)$ onto $\DD$.
+
+::: pf-proof
+$\varphi_4$ maps $Q$ conformally onto $\HH$, and $\varphi_5$ maps $\HH$ conformally onto $\DD$ since $\abs{v-i}<\abs{v+i}$ exactly when $\Im v>0$.
+Composing with steps [](#move-slit){.pf-ref}, [](#root){.pf-ref} and [](#quadrant){.pf-ref} gives a holomorphic bijection onto $\DD$.
+:::
+
+:::
+
+:::
+
+:::
