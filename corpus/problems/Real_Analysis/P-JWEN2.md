@@ -6,7 +6,7 @@ title: 'Dini''s theorem: monotone continuous functions decreasing to $0$ on $[0,
   converge uniformly'
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Uniform Convergence
   - Sequences of Functions
