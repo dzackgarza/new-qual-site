@@ -15,10 +15,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source reads "Show that every compact set is closed and bounded." with no ambient space; the statement places the set in a metric space, where boundedness is defined.
 ---
 
 ::: {.exercise}
-- Show that every compact set is closed and bounded.
+Show that every compact subset of a metric space is closed and bounded.
 :::
 
 ::: {.solution}
@@ -26,7 +30,7 @@ Let $(X,d)$ be a metric space and $K \subseteq X$ compact. If $K = \emptyset$ bo
 
 ::: pf
 
-::: {.pf-step #s1}
+::: pf-step
 
 $K$ is bounded.
 
@@ -38,7 +42,7 @@ Fix $x_0 \in X$. The open balls $B(x_0, n)$, $n \geq 1$, cover $X$, hence $K$. C
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 
 $K$ is closed.
 
@@ -87,12 +91,6 @@ By step [](#s2-3){.pf-ref} every point of $X \setminus K$ has an open neighborho
 :::
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s1){.pf-ref} proves boundedness and step [](#s2){.pf-ref} proves closedness.
 
 :::
 
