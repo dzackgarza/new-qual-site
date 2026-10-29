@@ -47,7 +47,7 @@ $G\le A_3$ if and only if $\Delta(f)$ is a square in $F$.
 
 ::: pf-proof
 
-Each $\sigma\in G$ satisfies $\sigma(\delta)=\operatorname{sgn}(\sigma)\delta$.
+Each $\sigma\in G$ satisfies $\sigma(\delta)=\sgn(\sigma)\delta$.
 Since $f$ is separable, $\delta\neq0$, and since $\operatorname{char}F\neq2$, $-\delta\neq\delta$.
 So $\delta$ is fixed by $G$, that is $\delta\in F$, exactly when $G$ consists of even permutations; and $\Delta(f)$ is a square in $F$ exactly when $\delta\in F$.
 
