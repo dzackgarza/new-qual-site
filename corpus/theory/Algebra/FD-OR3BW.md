@@ -4,7 +4,7 @@ id: FD-OR3BW
 kind: definition
 title: '$p$-group'
 prompts:
-- What is a $p\dash$group?
+- What is a $p$-group?
 classification:
   areas:
   - algebra
