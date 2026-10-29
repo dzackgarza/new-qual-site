@@ -24,63 +24,11 @@ audit:
 :::
 
 ::: {.solution}
-
-::: pf
-
-::: pf-step
-
 Let $X$ be a topological space and $A \subseteq X$.
 
-::: pf-proof
+(a) A point $x \in A$ is an interior point of $A$ if there is an open set $U$ with $x \in U \subseteq A$.
 
-setup.
+(b) A point $x \in A$ is an isolated point of $A$ if there is an open set $U$ with $U \cap A = \{x\}$.
 
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-A point $x \in A$ is an **interior point** of $A$ if there is an open set $U$ with $x \in U \subseteq A$.
-
-::: pf-proof
-
-definition of interior point.
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-A point $x \in A$ is an **isolated point** of $A$ if there is an open set $U$ with $U \cap A = \{x\}$.
-
-::: pf-proof
-
-definition of isolated point.
-
-:::
-
-:::
-
-::: {.pf-step #s4}
-
-A point $x \in X$ is a **limit point** (accumulation point) of $A$ if every open set $U$ containing $x$ meets $A$ in a point other than $x$, i.e. $(U \setminus \{x\}) \cap A \neq \varnothing$.
-
-::: pf-proof
-
-definition of limit point.
-
-:::
-
-:::
-
-::: pf-qed
-
-Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}.
-
-:::
-
-:::
-
+(c) A point $x \in X$ is a limit point, or accumulation point, of $A$ if every open set $U$ containing $x$ satisfies $(U \setminus \{x\}) \cap A \neq \varnothing$.
 :::
