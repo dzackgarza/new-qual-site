@@ -22,19 +22,41 @@ audit:
 ---
 
 ::: {.problem}
-- Prove that if $R$ is an integral domain, then $R[t]$ is again an integral domain.
+Prove that if $R$ is an integral domain, then $R[t]$ is again an integral domain.
 :::
 
 ::: {.solution}
-Let
-\[
-f(t)=a_nt^n+\cdots+a_0,\qquad g(t)=b_mt^m+\cdots+b_0
-\]
-be nonzero polynomials in $R[t]$, with $a_n,b_m\neq0$. The coefficient of $t^{n+m}$ in $fg$ is $a_nb_m$. Since $R$ is an integral domain, $a_nb_m\neq0$. Hence $fg\neq0$.
 
-Therefore $R[t]$ has no nonzero zero divisors, so it is an integral domain. In particular,
-\[
-\deg(fg)=\deg f+\deg g
-\]
-for nonzero $f,g\in R[t]$.
+::: pf
+
+::: {.pf-step #no-zero-divisors}
+
+If $f,g\in R[t]$ are nonzero, then $fg\neq0$ and $\deg(fg)=\deg f+\deg g$.
+
+::: pf-proof
+
+Write
+$$
+f(t)=a_nt^n+\cdots+a_0,\qquad g(t)=b_mt^m+\cdots+b_0
+$$
+with $a_n,b_m\neq0$. The coefficient of $t^{n+m}$ in $fg$ is $a_nb_m$, and every other coefficient of $fg$ belongs to a lower power of $t$. Since $R$ is an integral domain, $a_nb_m\neq0$.
+
+:::
+
+:::
+
+::: pf-step
+
+$R[t]$ is an integral domain.
+
+::: pf-proof
+
+$R[t]$ is a commutative ring with $1\neq0$ because $R$ is, and by step [](#no-zero-divisors){.pf-ref} it has no nonzero zero divisors.
+
+:::
+
+:::
+
+:::
+
 :::
