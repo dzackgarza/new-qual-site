@@ -56,8 +56,8 @@ This contradicts $\tilde H_{n-1}(S^{n-1})\cong\ZZ$.
 [[T-BX4LD]]
 
 ::: {.remark}
-Brouwer's theorem is also the case $X = D^n$ of the Lefschetz fixed point theorem: $D^n$ is contractible, so $H_0(D^n;\QQ) = \QQ$, all higher homology vanishes, and every self-map $f$ has Lefschetz number $\Lambda_f = \operatorname{Tr}(f_* \mid H_0) = 1 \neq 0$.
-The implication $\Lambda_f\neq 0\Rightarrow$ $f$ has a fixed point has no converse in general: $\Lambda_f=0$ does not imply that $f$ is homotopic to a map without fixed points.
+Brouwer's theorem is also the case $X = D^n$ of the Lefschetz fixed point theorem: $D^n$ is contractible, so $H_0(D^n;\QQ) = \QQ$, all higher homology vanishes, and every self-map $f$ has Lefschetz number $\tau(f) = \tr\qty{f_*\colon H_0(D^n;\QQ)\to H_0(D^n;\QQ)} = 1 \neq 0$.
+The implication $\tau(f)\neq 0\Rightarrow$ $f$ has a fixed point has no converse in general: $\tau(f)=0$ does not imply that $f$ is homotopic to a map without fixed points.
 
 :::
 
