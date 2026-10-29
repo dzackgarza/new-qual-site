@@ -17,14 +17,29 @@ Show that g is continuous.
 :::
 
 ::: {.solution}
-It is enough to show that for every closed subset $F \subset Z$, the subset $g^{-1}(F) \subset Y$ is closed.
+Let $F \subseteq Z$ be closed.
+It is enough to show that $g^{-1}(F)$ is closed in $Y$.
 
-By continuity of $g \circ f$, the set $(g \circ f)^{-1}(F) = f^{-1}(g^{-1}(F))$ is a closed subset of $X$. Since $f$ is a closed map, it takes this closed subset of $X$ to a closed subset of $Y$. But
+::: pf
 
-$$
-f((g \circ f)^{-1}(F)) = f(f^{-1}(g^{-1}(F))) = g^{-1}(F),
-$$
+::: {.pf-step #preimage}
+$f^{-1}(g^{-1}(F))$ is closed in $X$.
 
-since $f$ is surjective.
-Hence $g^{-1}(F)$ is closed.
+::: pf-proof
+It equals $(g \circ f)^{-1}(F)$, which is closed because $g \circ f$ is continuous.
+:::
+
+:::
+
+::: pf-step
+$g^{-1}(F)$ is closed in $Y$, so $g$ is continuous.
+
+::: pf-proof
+Since $f$ is surjective, $f(f^{-1}(A)) = A$ for every $A \subseteq Y$, so $g^{-1}(F) = f\bigl(f^{-1}(g^{-1}(F))\bigr)$.
+This is the image of the closed set of step [](#preimage){.pf-ref} under the closed map $f$, so it is closed.
+:::
+
+:::
+
+:::
 :::
