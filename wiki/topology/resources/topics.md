@@ -50,7 +50,7 @@ Fridays 12--2 PM EST.
 
 - Week 5 (June 18): Homology
 
-  - Mayer-Vietoris, Künneth, UCT
+  - Mayer--Vietoris, Künneth, UCT
 
   - Cellular homology (direct definition)
 
@@ -70,7 +70,7 @@ Fridays 12--2 PM EST.
 
   - Degree theory
 
-  - Lefschetz, Brouwer, hairy ball theorem, Borsuk-Ulam
+  - Lefschetz, Brouwer, hairy ball theorem, Borsuk--Ulam
 
 - Week 8 (July 9): Buffer
 
@@ -102,7 +102,7 @@ Fridays 12--2 PM EST.
 
 - CW complexes and the homology of CW complexes
 
-- Mayer-Vietoris
+- Mayer--Vietoris
 
 - Universal coefficient theorem
 
