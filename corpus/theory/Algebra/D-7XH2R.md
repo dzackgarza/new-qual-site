@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-7XH2R
 kind: definition
 title: Maximal ideal
+prompts:
+- When is a proper ideal $\mfm \normal R$ maximal?
 classification:
   areas:
   - algebra

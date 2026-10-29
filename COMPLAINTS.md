@@ -49,19 +49,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair moves the automorphism-count review prompt to `D-5JYEI`, removes duplicate reader-facing references, and deletes `FD-4GFTY`.
 
-### Duplicate maximal-ideal cards D-7XH2R and FD-CD2FE
-
-- **Object and need:** `D-7XH2R` and `FD-CD2FE` in `corpus/theory/Algebra`. Both define a proper ideal to be maximal when no proper strictly larger ideal exists.
-
-- **Observed evidence:** the complete definitions are mathematically identical.
-  `D-7XH2R` is the dependency used throughout the ideal and local ring theory; `FD-CD2FE` is a migrated flashcard and the wiki displayed it beside the canonical card.
-
-- **Impact and owner:** the duplicate flashcard adds no mathematics and creates a second defining occurrence.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair moves the review prompt to `D-7XH2R`, removes the duplicate wiki link, and deletes `FD-CD2FE`.
-
 ### Duplicate prime-ideal cards D-5BM46 and FD-OSSYR
 
 - **Object and need:** `D-5BM46` and `FD-OSSYR` in `corpus/theory/Algebra`. Both define a proper ideal `$\mathfrak p$` of a commutative ring to be prime when `$ab\in\mathfrak p$` implies `$a\in\mathfrak p$` or `$b\in\mathfrak p$`.
