@@ -18,25 +18,28 @@ Show that every abelian group is nilpotent.
 :::
 
 ::: {.solution}
-Let $G$ be abelian. Then
-\[
-[G,G]=1.
-\]
-The lower central series is
-\[
-\gamma_1(G)=G,
-\qquad
-\gamma_{i+1}(G)=[\gamma_i(G),G].
-\]
-Therefore
-\[
-\gamma_2(G)=[G,G]=1.
-\]
-So the lower central series reaches the identity after one nontrivial step. Hence $G$ is nilpotent of class at most $1$.
+Let $G$ be abelian, and let $\gamma_1(G)=G$ and $\gamma_{i+1}(G)=[\gamma_i(G),G]$ be its lower central series.
 
-Equivalently, since $G$ is abelian,
-\[
-Z(G)=G,
-\]
-so the upper central series reaches all of $G$ immediately.
+::: pf
+
+::: pf-step
+$\gamma_2(G)=1$.
+
+::: pf-proof
+Every commutator $[x,y]=xyx^{-1}y^{-1}$ is trivial because $G$ is abelian, so $\gamma_2(G)=[G,G]=1$.
+:::
+
+:::
+
+::: pf-step
+$G$ is nilpotent of class at most $1$.
+
+::: pf-proof
+The lower central series reaches $1$ at $\gamma_2(G)$.
+:::
+
+:::
+
+:::
+
 :::
