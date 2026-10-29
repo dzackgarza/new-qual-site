@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO12
 kind: problem
-title: No surjection from A4 to the cyclic group of order two
+title: No surjection from $A_4$ onto $ZZ/2ZZ$
 classification:
   areas: [algebra]
   topics: [Group Theory]
