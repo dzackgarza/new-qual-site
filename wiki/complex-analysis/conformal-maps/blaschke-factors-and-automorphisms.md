@@ -19,44 +19,8 @@ Every biholomorphic self-map of $\DD$ has the form $e^{i\theta}\psi_a$ for some 
 
 [[D-MFPYG]]
 
-[[PR-ULJAJ]]
-
 ::: {.remark}
 For $a\neq 0$, $\psi_a(z) = (a-z)/(1-\bar a z)$ has a simple zero at $z=a$ and a simple pole at $z = 1/\bar a$, the reflection of $a$ in the unit circle.
-
-:::
-
-::: {.proof title="Properties"}
-For $\abs z=1$, $\abs{1-\bar a z} = \abs{\bar z}\abs{1-\bar a z} = \abs{\bar z - \bar a} = \abs{a-z}$, so $\abs{\psi_a(z)} = 1$ and $\psi_a$ maps $S^1$ to $S^1$.
-Since $\psi_a$ is holomorphic on a neighborhood of $\overline\DD$ (its pole $1/\bar a$ lies outside $\overline\DD$) and $\abs{\psi_a}=1$ on $S^1$, the maximum modulus principle gives $\psi_a(\DD)\subseteq\DD$.
-
-Inverting: set $\psi_a(z) = w$ and solve.
-$$
-\begin{aligned}
-{a-z \over 1 - \bar{a}z} &= w \\
-\implies a-z - w(1-\bar{a} z) &= 0 \\
-\implies z&= {w-a \over \bar a w - 1} = {a-w\over 1-\bar a w}
-\end{aligned},$$
-so $\psi_a\circ\psi_a=\id$, and $\psi_a$ is an automorphism of $\DD$.
-
-Differentiating, by the quotient rule:
-$$
-\psi'_a(z)
-= {-(1-\bar a z) + \bar a(a-z) \over \qty{1-\bar a z}^2}
-= {-1 + \abs{a}^2 \over \qty{1-\bar a z}^2}
-.$$
-
-Scaling: for $\abs\lambda = 1$, insert $1 = \bar\lambda\lambda$,
-$$
-\begin{aligned}
-\psi_a(\lambda z)
-&=
-{a - \lambda z \over 1 - \bar a \lambda z}\\
-&=
-{\lambda\bar\lambda a - \lambda z \over 1 - \bar a \lambda z} \\
-&= \lambda {\bar\lambda a - z \over 1 - \bar{\bar\lambda a} z} \\
-&= \lambda \psi_{\bar \lambda a}(z)
-\end{aligned}.$$
 
 :::
 

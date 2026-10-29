@@ -36,9 +36,11 @@ Let $a\in\DD$.
 
 (ii) $\psi_a\circ\psi_a=\operatorname{id}$ on $\overline{\DD}$, so $\psi_a$ is a biholomorphism $\DD\to\DD$ exchanging $0$ and $a$.
 
-(iii) $\psi_a$ preserves the hyperbolic metric $\frac{\abs{dz}}{1-\abs{z}^2}$ on $\DD$: $\frac{\abs{\psi_a'(z)}}{1-\abs{\psi_a(z)}^2}=\frac{1}{1-\abs{z}^2}$ for $z\in\DD$.
+(iii) $\psi_a'(z)=\frac{\abs{a}^2-1}{(1-\bar a z)^2}$, and $\psi_a$ preserves the hyperbolic metric $\frac{\abs{dz}}{1-\abs{z}^2}$ on $\DD$: $\frac{\abs{\psi_a'(z)}}{1-\abs{\psi_a(z)}^2}=\frac{1}{1-\abs{z}^2}$ for $z\in\DD$.
 
 (iv) Every finite Blaschke product $B$ is holomorphic on a neighborhood of $\overline{\DD}$, maps $\DD$ into $\DD$ and $S^1$ into $S^1$, and its zeros in $\DD$ are exactly $a_1,\ldots,a_n$.
+
+(v) $\psi_a(\lambda z)=\lambda\,\psi_{\bar\lambda a}(z)$ for every $\lambda\in\CC$ with $\abs\lambda=1$.
 :::
 
 ::: {.proof}
@@ -56,4 +58,6 @@ With (i), $\psi_a\colon\DD\to\DD$ is holomorphic with holomorphic inverse $\psi_
 (iii) By the quotient rule, $\psi_a'(z)=-\frac{1-\abs{a}^2}{(1-\bar a z)^2}$; divide by the expression for $1-\abs{\psi_a(z)}^2$ in (i).
 
 (iv) Each factor is holomorphic near $\overline{\DD}$, has modulus less than $1$ on $\DD$ and equal to $1$ on $S^1$ by (i), and vanishes on $\overline{\DD}$ only at its own $a_k$; multiply, using $\abs{\lambda}=1$.
+
+(v) Since $\lambda\bar\lambda=1$, $\lambda\,\psi_{\bar\lambda a}(z)=\lambda\,\frac{\bar\lambda a-z}{1-\lambda\bar az}=\frac{a-\lambda z}{1-\bar a\lambda z}=\psi_a(\lambda z)$.
 :::

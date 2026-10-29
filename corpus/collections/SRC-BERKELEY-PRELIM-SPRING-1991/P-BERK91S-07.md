@@ -61,7 +61,7 @@ b_a(z)\coloneqq\frac{z-a}{1-az},
 \qquad
 b_a^{-1}(w)=\frac{w+a}{1+aw}.
 $$
-These are the [[PR-ULJAJ|Blaschke-factor automorphisms]], with the
+These are the [[D-MFPYG|Blaschke-factor automorphisms]], with the
 opposite sign convention. In particular, $b_a(a)=0$, and $a$ is the
 only zero of $b_a$ in $\DD$.
 
