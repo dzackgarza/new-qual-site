@@ -65,8 +65,6 @@ Proofs of Egorov's and Lusin's theorems are on [[real-analysis/measure/littlewoo
 
 [[T-RA-WORKSHOP-D4-3-2]]
 
-[[T-RA-WORKSHOP-D4-3-3]]
-
 [[T-RA-WORKSHOP-D4-3-4]]
 
 [[T-RA-WORKSHOP-D4-3-5]]

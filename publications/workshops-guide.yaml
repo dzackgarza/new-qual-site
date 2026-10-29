@@ -152,7 +152,7 @@ sections:
       # No collection lists them.
       - ref: T-RA-WORKSHOP-D4-3-1
       - ref: T-RA-WORKSHOP-D4-3-2
-      - ref: T-RA-WORKSHOP-D4-3-3
+      - ref: T-O4UD3
       - ref: T-RA-WORKSHOP-D4-3-4
       - ref: T-RA-WORKSHOP-D4-3-5
       - ref: T-RA-WORKSHOP-D5-4-1
