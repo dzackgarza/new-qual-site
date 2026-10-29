@@ -22,27 +22,55 @@ audit:
 ---
 
 ::: {.problem}
-- Show that any quadratic extension of a field $F$ with $\ch(F)\neq 2$ is Galois.
+Show that any quadratic extension of a field $F$ with $\ch(F)\neq 2$ is Galois.
 :::
 
 ::: {.solution}
-Let $K/F$ be quadratic and assume $\operatorname{char}F\ne2$. Choose $\alpha\in K\setminus F$. Then $K=F(\alpha)$ and the minimal polynomial of $\alpha$ has degree $2$:
-\[
-m(x)=x^2+bx+c.
-\]
-Set
-\[
-\beta=\alpha+\frac b2.
-\]
-Then $K=F(\beta)$ and
-\[
-\beta^2=\frac{b^2-4c}{4}=:d\in F.
-\]
-Since $\beta\notin F$, $d$ is not a square in $F$, and the minimal polynomial of $\beta$ is
-\[
-x^2-d.
-\]
-Its two roots are $\beta$ and $-\beta$, both of which lie in $K$. Thus $K$ is the splitting field of $x^2-d$ over $F$, so $K/F$ is normal.
+Let $K/F$ be a quadratic extension with $\ch(F)\ne2$.
 
-Because $\operatorname{char}F\ne2$, the two roots $\beta$ and $-\beta$ are distinct; hence the polynomial is separable. Therefore $K/F$ is finite, normal, and separable, so it is Galois.
+::: pf
+
+::: {.pf-step #pure}
+$K=F(\beta)$ for some $\beta\in K\setminus F$ with $d\coloneqq\beta^2\in F$, and the minimal polynomial of $\beta$ over $F$ is $x^2-d$.
+
+::: pf-proof
+Choose $\alpha\in K\setminus F$. Since $[K:F]=2$, $K=F(\alpha)$ and the minimal polynomial of $\alpha$ is some $x^2+bx+c\in F[x]$.
+Since $2$ is invertible in $F$, put $\beta=\alpha+b/2$. Then $K=F(\beta)$, $\beta\notin F$, and
+$$
+\beta^2=\alpha^2+b\alpha+\frac{b^2}{4}=\frac{b^2-4c}{4}\in F.
+$$
+So $\beta$ is a root of $x^2-d$, which is its minimal polynomial because $\beta\notin F$.
+:::
+
+:::
+
+::: {.pf-step #normal}
+$K/F$ is normal.
+
+::: pf-proof
+The roots of $x^2-d$ are $\beta$ and $-\beta$, both in $K$, so by step [](#pure){.pf-ref} $K$ is the splitting field of $x^2-d$ over $F$.
+:::
+
+:::
+
+::: {.pf-step #separable}
+$K/F$ is separable.
+
+::: pf-proof
+Since $\ch(F)\ne2$ and $\beta\ne0$, the roots $\beta$ and $-\beta$ are distinct, so the minimal polynomial $x^2-d$ of the generator $\beta$ is separable.
+:::
+
+:::
+
+::: pf-step
+$K/F$ is Galois.
+
+::: pf-proof
+A finite extension that is normal and separable is Galois; apply step [](#normal){.pf-ref} and step [](#separable){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::
