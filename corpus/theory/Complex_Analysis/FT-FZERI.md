@@ -5,7 +5,7 @@ kind: theorem
 title: Rouché's theorem
 slogan: 'If $\abs{f-g}<\abs{f}+\abs{g}$ on the boundary circle, then $f$ and $g$ have the same number of zeros in the disc.'
 prompts:
-- What does Rouche's theorem conclude about the zero counts of $f$ and $g$?
+- What does Rouché's theorem conclude about the zero counts of $f$ and $g$?
 classification:
   areas:
   - complex-analysis
