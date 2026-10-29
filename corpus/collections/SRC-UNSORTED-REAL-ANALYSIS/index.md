@@ -57,7 +57,6 @@ source:
   - id: P-6QCZ5
   - id: P-7GKWO
   - id: P-7J4VR
-  - id: P-7XPOK
   - id: P-8RB01
   - id: P-AGH3O
   - id: P-DFDX4
