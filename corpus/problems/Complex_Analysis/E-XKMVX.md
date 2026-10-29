@@ -26,7 +26,8 @@ Use Rouché's theorem and the Schwarz lemma to prove the following: if $f:\DD\to
 $\abs{f(z)} \le \abs{z}$ for all $z\in\DD$.
 
 ::: pf-proof
-This is the Schwarz lemma, since $f$ is holomorphic on $\DD$ with $\abs{f}\le1$ and $f(0)=0$.
+If $f$ is constant, then $f\equiv f(0)=0$ and the bound holds.
+Otherwise $\abs f<1$ on $\DD$ by the maximum modulus principle, since $\abs f\le 1$; so $f$ maps $\DD$ into $\DD$ with $f(0)=0$, and the Schwarz lemma gives the bound.
 :::
 
 :::

@@ -27,7 +27,10 @@ Let $f$ be entire with $\abs{f}\le M$, and put $g(z)\coloneqq f(z)-f(0)$, so $g(
 For every $R>0$ and $\abs{z}<R$, $\abs{g(z)}\le \dfrac{2M}{R}\abs{z}$.
 
 ::: pf-proof
-Apply the Schwarz lemma to $w\mapsto \frac{1}{2M}g(Rw)$, which maps $\DD$ into $\bar\DD$ and fixes $0$: it gives $\frac{1}{2M}\abs{g(Rw)}\le\abs{w}$, and $z = Rw$.
+Put $h(w)\coloneqq \frac{1}{2M}g(Rw)$, which is holomorphic on $\DD$ with $\abs h\le 1$ and $h(0)=0$.
+If $h$ is constant, then $h\equiv h(0)=0$ and the bound holds.
+Otherwise $\abs h<1$ on $\DD$ by the maximum modulus principle, so $h$ maps $\DD$ into $\DD$, and the Schwarz lemma gives $\abs{h(w)}\le\abs w$.
+Substituting $z = Rw$ gives the claim.
 :::
 
 :::
