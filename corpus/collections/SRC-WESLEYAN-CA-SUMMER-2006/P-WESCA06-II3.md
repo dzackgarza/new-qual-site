@@ -13,10 +13,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Complex Analysis Problems, problem 3 (August 9, 2006) in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source assumed only that f and g are analytic on D, so the boundary maximum is undefined for f(z)=1/(1-z) on the unit disc; the statement now also assumes f and g continuous on the closure of D.
 ---
 
 ::: {.problem}
-Let $f$ and $g$ be analytic on a domain $D$ whose closure is compact in $\mathbb C$.
+Let $D$ be a domain whose closure is compact in $\mathbb C$, and let $f$ and $g$ be continuous on $\overline D$ and analytic on $D$.
 Show that
 \[
 |f(z)|+|g(z)|
@@ -26,64 +30,13 @@ takes its maximum on the boundary $\partial D$.
 Hint: consider $f(z)e^{i\alpha}+g(z)e^{i\beta}$ for suitable $\alpha,\beta$.
 :::
 
-As written, the source statement is missing a boundary-regularity hypothesis:
-if $f$ and $g$ are only holomorphic on $D$, they need not extend to
-$\partial D$.
-The intended statement is correct if
-\[
-f,g\in C(\overline D)
-\]
-and are holomorphic on $D$.
-
 ::: {.solution}
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-The literal statement is false without boundary regularity.
-
-
-::: pf-proof
-
-Take
-\[
-D=\{z:|z|<1\},
-\qquad
-f(z)=\frac1{1-z},
-\qquad
-g(z)=0.
-\]
-Then $f$ and $g$ are holomorphic on $D$, and
-\[
-\overline D
-\]
-is compact.
-But $f$ does not extend continuously to
-\[
-z=1\in\partial D,
-\]
-and
-\[
-|f(z)|
-\longrightarrow
-\infty
-\]
-as $z\to1$ from within $D$.
-Thus the boundary maximum in the literal statement is not defined.
-
-:::
-
-:::
-
-::: {.pf-step #s1-2}
-
-Assume henceforth that $f$ and $g$ are continuous on
-\[
-\overline D
-\]
-and holomorphic on $D$.
-Then
+The function
 \[
 h(z)
 \coloneqq
@@ -115,7 +68,7 @@ M
 
 :::
 
-::: {.pf-step #s1-3}
+::: {.pf-step #s1-2}
 
 If
 \[
@@ -126,7 +79,7 @@ then the desired conclusion already holds.
 
 ::: pf-proof
 
-By step [](#s1-2){.pf-ref},
+By step [](#s1-1){.pf-ref},
 \[
 h(z_0)=M.
 \]
@@ -136,7 +89,7 @@ Thus $h$ attains its maximum on the boundary.
 
 :::
 
-::: {.pf-step #s1-4}
+::: {.pf-step #s1-3}
 
 Suppose instead that
 \[
@@ -183,7 +136,7 @@ The same construction gives $\beta$ for $g(z_0)$.
 
 :::
 
-::: {.pf-step #s1-5}
+::: {.pf-step #s1-4}
 
 Define
 \[
@@ -204,7 +157,7 @@ It is a fixed complex linear combination of $f$ and $g$.
 
 :::
 
-::: {.pf-step #s1-6}
+::: {.pf-step #s1-5}
 
 For every
 \[
@@ -228,7 +181,7 @@ At $z_0$,
 The first inequality is the triangle inequality.
 The second is the definition of $M$.
 
-By the phase choice in step [](#s1-4){.pf-ref},
+By the phase choice in step [](#s1-3){.pf-ref},
 \[
 F(z_0)
 =
@@ -246,7 +199,7 @@ Hence
 
 :::
 
-::: {.pf-step #s1-7}
+::: {.pf-step #s1-6}
 
 Since $z_0$ is an interior point where $|F|$ attains its global
 maximum, the maximum modulus principle implies that $F$ is constant on $D$.
@@ -255,7 +208,7 @@ maximum, the maximum modulus principle implies that $F$ is constant on $D$.
 ::: pf-proof
 
 The domain $D$ is connected and $F$ is holomorphic.
-By step [](#s1-6){.pf-ref},
+By step [](#s1-5){.pf-ref},
 \[
 |F(z)|
 \le
@@ -268,7 +221,7 @@ The strong maximum modulus principle therefore makes $F$ constant.
 
 :::
 
-::: {.pf-step #s1-8}
+::: {.pf-step #s1-7}
 
 For every boundary point
 \[
@@ -282,7 +235,7 @@ one has
 
 ::: pf-proof
 
-By step [](#s1-7){.pf-ref},
+By step [](#s1-6){.pf-ref},
 \[
 F
 \]
@@ -305,7 +258,7 @@ M.
 
 :::
 
-::: {.pf-step #s1-9}
+::: {.pf-step #s1-8}
 
 For every
 \[
@@ -326,7 +279,7 @@ By the triangle inequality,
 =
 h(\zeta).
 \]
-Step [](#s1-8){.pf-ref} gives
+Step [](#s1-7){.pf-ref} gives
 \[
 M
 \le
@@ -347,9 +300,9 @@ h(\zeta)=M.
 
 :::
 
-::: {.pf-step #s1-10}
+::: {.pf-step #s1-9}
 
-Consequently, under the intended boundary-continuity hypothesis,
+Consequently,
 \[
 \boxed{
 |f(z)|+|g(z)|
@@ -360,9 +313,9 @@ Consequently, under the intended boundary-continuity hypothesis,
 
 ::: pf-proof
 
-If the maximizing point from step [](#s1-2){.pf-ref} lies on the boundary, apply
-step [](#s1-3){.pf-ref}.
-If it lies in the interior, step [](#s1-9){.pf-ref} shows that every boundary point also
+If the maximizing point from step [](#s1-1){.pf-ref} lies on the boundary, apply
+step [](#s1-2){.pf-ref}.
+If it lies in the interior, step [](#s1-8){.pf-ref} shows that every boundary point also
 has the same maximal value.
 
 :::
@@ -371,9 +324,7 @@ has the same maximal value.
 
 ::: pf-qed
 
-Step [](#s1-1){.pf-ref} records the defect in the literal source statement.
-Steps [](#s1-2){.pf-ref} through [](#s1-10){.pf-ref} prove the corrected theorem using the source's
-phase-alignment hint.
+Step [](#s1-9){.pf-ref} is the assertion.
 
 :::
 
