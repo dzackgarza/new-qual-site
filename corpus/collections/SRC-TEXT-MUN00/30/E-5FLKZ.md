@@ -25,7 +25,6 @@ The original exercise asked for the converse, which is false: an uncountable dis
 :::
 
 ::: {.solution}
-**Goal:** Prove that every second-countable space $X$ is first-countable.
 
 ::: pf
 
