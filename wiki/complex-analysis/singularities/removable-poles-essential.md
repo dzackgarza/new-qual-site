@@ -161,8 +161,6 @@ Alternatively, by [[PR-NITIQ]], write $f(z) = z^{-m}h(z)$ with $h$ holomorphic a
 
 [[D-VKP6N]]
 
-[[FD-BACTZ]] [[FD-ZPKLQ]]
-
 ::: {.example title="Essential singularities"}
 $f(z) \coloneqq e^{1/z}$ has an essential singularity at $z=0$: expanding picks up infinitely many negative terms,
 $$
