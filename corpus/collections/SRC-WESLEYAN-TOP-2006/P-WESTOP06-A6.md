@@ -11,6 +11,10 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: The retained extraction prints I(S)={f in C(X) | Z(f) contains X}, although the following sentences use S and its closure. It also literally asks, for compact X, that every ideal I equal I(S) for some closed S. Both points are source-sensitive and are not silently repaired.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source defines I(S) by Z(f) containing X (a typo for S) and asks, for compact X, that every ideal of C(X) be I(S) for a closed S, which fails for the ideal (x) in C([0,1]). The statement now defines I(S) by Z(f) containing S and asks the converse for ideals closed in the supremum norm.
 ---
 
 ::: {.problem}
@@ -21,21 +25,16 @@ Recall the definition of a commutative ring with identity and of an ideal.
    \[
    Z(f)=\{x\in X:f(x)=0\}.
    \]
-   The retained extraction defines
+   For $S\subseteq X$, prove that
    \[
-   I(S)=\{f\in C(X):Z(f)\supseteq X\},
+   I(S)=\{f\in C(X):Z(f)\supseteq S\}
    \]
-   while immediately asserting $I(\overline S)=I(S)$ and $S_1\subseteq S_2\Rightarrow I(S_1)\supseteq I(S_2)$. Prove the requested ideal assertions, retaining this notation gap as source-sensitive.
-3. The retained source next asks: for compact $X$, prove the converse that if $I$ is an ideal in $C(X)$, then $I=I(S)$ for some closed $S$. Record and address the statement as printed.
+   is an ideal in $C(X)$. Note that $I(\overline S)=I(S)$ and $S_1\subseteq S_2\Rightarrow I(S_1)\supseteq I(S_2)$.
+3. Prove: for compact $X$, the converse holds for closed ideals: if $I$ is an ideal in $C(X)$ that is closed in the supremum norm, then $I=I(S)$ for some closed $S$.
 4. Determine the maximal ideals in $C(X)$ when $X$ is compact.
 :::
 
 ::: {.solution}
-
-For the intended vanishing ideal, write
-\[
-I_{\mathrm{van}}(S)=\{f\in C(X):Z(f)\supseteq S\}.
-\]
 
 ::: pf
 
@@ -73,37 +72,20 @@ is an ideal containing \(J\): for two elements of \(U\), the chain condition put
 
 :::
 
-::: {.pf-step #s1-3}
-
-With the retained literal definition
-\[
-I(S)=\{f\in C(X):Z(f)\supseteq X\},
-\]
-one has \(I(S)=\{0\}\) for every \(S\subseteq X\); consequently \(I(\overline S)=I(S)\) and \(S_1\subseteq S_2\Rightarrow I(S_1)\supseteq I(S_2)\) hold trivially.
-
-
-::: pf-proof
-
-The condition \(Z(f)\supseteq X\) means exactly that \(f(x)=0\) for every \(x\in X\), hence \(f=0\). Therefore the displayed set is the zero ideal and is independent of \(S\). The two asserted relations follow because both sides are always \(\{0\}\).
-
-:::
-
-:::
-
 ::: {.pf-step #s1-4}
 
-For the intended definition \(I_{\mathrm{van}}(S)\), the set \(I_{\mathrm{van}}(S)\) is an ideal,
+The set \(I(S)\) is an ideal,
 \[
-I_{\mathrm{van}}(\overline S)=I_{\mathrm{van}}(S),
+I(\overline S)=I(S),
 \qquad
 S_1\subseteq S_2\Longrightarrow
-I_{\mathrm{van}}(S_1)\supseteq I_{\mathrm{van}}(S_2).
+I(S_1)\supseteq I(S_2).
 \]
 
 
 ::: pf-proof
 
-If \(f,g\) vanish on \(S\), then \(f-g\) vanishes on \(S\), and if \(h\in C(X)\), then \(hf\) vanishes on \(S\). Thus \(I_{\mathrm{van}}(S)\) is an ideal.
+If \(f,g\) vanish on \(S\), then \(f-g\) vanishes on \(S\), and if \(h\in C(X)\), then \(hf\) vanishes on \(S\). Thus \(I(S)\) is an ideal.
 
 For every \(f\in C(X)\), the zero set \(Z(f)=f^{-1}(\{0\})\) is closed. Hence \(S\subseteq Z(f)\) if and only if \(\overline S\subseteq Z(f)\), proving the equality. Finally, if \(S_1\subseteq S_2\), every function vanishing on \(S_2\) also vanishes on \(S_1\), which gives the reversed inclusion.
 
@@ -113,18 +95,32 @@ For every \(f\in C(X)\), the zero set \(Z(f)=f^{-1}(\{0\})\) is closed. Hence \(
 
 ::: {.pf-step #s1-5}
 
-The converse in part \(3\) is false as printed, and it remains false after replacing the retained \(X\) by the intended \(S\).
+Let \(X\) be compact and let \(I\subseteq C(X)\) be an ideal closed in the supremum norm. Put
+\[
+S=\bigcap_{f\in I}Z(f).
+\]
+Then \(S\) is closed and \(I=I(S)\).
 
 
 ::: pf-proof
 
-With the literal definition, every \(I(S)\) is \(\{0\}\), so any nonzero proper ideal is already a counterexample.
+The set \(S\) is an intersection of closed sets, hence closed, and every \(f\in I\) vanishes on \(S\), so \(I\subseteq I(S)\).
 
-For the intended definition, take \(X=[0,1]\) and let
+Conversely, let \(g\in I(S)\) and \(\varepsilon>0\). The set
 \[
-J=(x)=\{xg(x):g\in C([0,1])\},
+K=\{x\in X:\abs{g(x)}\ge\varepsilon\}
 \]
-where \(x\) denotes the identity function. Suppose \(J=I_{\mathrm{van}}(S)\) for some closed \(S\subseteq[0,1]\). Since \(x\in J\), every point of \(S\) must lie in \(Z(x)=\{0\}\), so \(S\) is either \(\varnothing\) or \(\{0\}\). If \(S=\varnothing\), then \(I_{\mathrm{van}}(S)=C([0,1])\), but \(J\) is proper because every element of \(J\) vanishes at \(0\). If \(S=\{0\}\), then \(\sqrt{x}\in I_{\mathrm{van}}(\{0\})\), while \(\sqrt{x}\notin J\): an equality \(\sqrt{x}=xg(x)\) would force \(g(x)=1/\sqrt{x}\) for \(x>0\), which cannot extend continuously to \(0\). Thus no such closed \(S\) exists.
+is closed in the compact space \(X\), hence compact, and \(K\cap S=\varnothing\) because \(g\) vanishes on \(S\). For each \(x\in K\) there is \(f_x\in I\) with \(f_x(x)\ne0\), so \(f_x^2>0\) on an open neighborhood of \(x\). Finitely many of these neighborhoods cover \(K\); let \(h\) be the sum of the corresponding \(f_{x_i}^2\). Then \(h\in I\), \(h\ge0\) on \(X\), and \(h>0\) on \(K\), so \(\delta=\min_K h>0\) when \(K\ne\varnothing\).
+
+For \(n\ge1\), the function \(n/(1+nh)\) is continuous, so
+\[
+g_n=g\cdot\frac{nh}{1+nh}\in I.
+\]
+Moreover
+\[
+\abs{g-g_n}=\frac{\abs g}{1+nh}.
+\]
+On \(K\) this is at most \(\norm{g}_\infty/(1+n\delta)\), and off \(K\) it is less than \(\varepsilon\). Hence \(\norm{g-g_n}_\infty\le\varepsilon\) for all large \(n\). Since \(\varepsilon\) was arbitrary, \(g\) lies in the closure of \(I\), which is \(I\). Therefore \(I(S)\subseteq I\).
 
 :::
 
@@ -132,7 +128,7 @@ where \(x\) denotes the identity function. Suppose \(J=I_{\mathrm{van}}(S)\) for
 
 ::: {.pf-step #s1-6}
 
-If \(X\) is compact Hausdorff, then the maximal ideals of \(C(X)\) are exactly
+If \(X\) is compact, then the maximal ideals of \(C(X)\) are exactly
 \[
 \boxed{M_x=\{f\in C(X):f(x)=0\},\qquad x\in X.}
 \]
@@ -172,7 +168,7 @@ is nonempty. Choose \(x\) in it. Then every \(f\in M\) vanishes at \(x\), so \(M
 
 ::: pf-qed
 
-Step [](#s1-2){.pf-ref} proves part \(1\); steps [](#s1-3){.pf-ref} and [](#s1-4){.pf-ref} address the literal and intended readings of part \(2\); step [](#s1-5){.pf-ref} resolves the false converse in part \(3\); and step [](#s1-6){.pf-ref} gives the maximal ideals requested in part \(4\).
+Step [](#s1-2){.pf-ref} proves part \(1\); step [](#s1-4){.pf-ref} proves part \(2\); step [](#s1-5){.pf-ref} proves part \(3\); and step [](#s1-6){.pf-ref} gives the maximal ideals requested in part \(4\).
 
 :::
 
