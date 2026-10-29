@@ -27,35 +27,39 @@ Prove the Heine–Cantor Theorem: let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces
 :::
 
 ::: {.solution}
-Fix $\varepsilon>0$. For each $p\in X$, continuity gives $r_p>0$ such that
-$$
-d_X(x,p)<r_p
-\quad\Longrightarrow\quad
-d_Y(f(x),f(p))<\frac\varepsilon2.
-$$
-The balls $B(p,r_p/2)$ cover $X$. By compactness, choose a finite subcover
-$$
-B(p_1,r_1/2),\ldots,B(p_N,r_N/2).
-$$
-Set
-$$
-\delta=\frac12\min_{1\le j\le N}r_j>0.
-$$
 
-If $d_X(x,y)<\delta$, choose $j$ with $x\in B(p_j,r_j/2)$. Then
-$$
-d_X(y,p_j)\le d_X(y,x)+d_X(x,p_j)
-<\delta+\frac{r_j}{2}\le r_j.
-$$
-Thus
-$$
-d_Y(f(x),f(p_j))<\frac\varepsilon2,
-\qquad
-d_Y(f(y),f(p_j))<\frac\varepsilon2.
-$$
-By the triangle inequality,
-$$
-d_Y(f(x),f(y))<\varepsilon.
-$$
-Hence $f$ is uniformly continuous.
+::: pf
+
+::: pf-step
+$f$ is uniformly continuous.
+
+::: pf-proof
+
+::: {.pf-step #finite-cover}
+Fix $\varepsilon>0$.
+There are $p_1,\ldots,p_N\in X$ and $r_1,\ldots,r_N>0$ such that the balls $B(p_j,r_j/2)$ cover $X$ and $d_X(x,p_j)<r_j$ implies $d_Y(f(x),f(p_j))<\frac\varepsilon2$.
+
+::: pf-proof
+By continuity, each $p\in X$ has $r_p>0$ with $d_X(x,p)<r_p\implies d_Y(f(x),f(p))<\frac\varepsilon2$.
+The balls $B(p,r_p/2)$ cover $X$, and compactness gives a finite subcover.
+:::
+
+:::
+
+::: pf-step
+With $\delta\coloneqq\frac12\min_jr_j>0$, $d_X(x,y)<\delta$ implies $d_Y(f(x),f(y))<\varepsilon$.
+
+::: pf-proof
+Choose $j$ with $x\in B(p_j,r_j/2)$.
+Then $d_X(y,p_j)\le d_X(y,x)+d_X(x,p_j)<\delta+\frac{r_j}2\le r_j$, so by step [](#finite-cover){.pf-ref} both $f(x)$ and $f(y)$ lie within $\frac\varepsilon2$ of $f(p_j)$, and the triangle inequality gives $d_Y(f(x),f(y))<\varepsilon$.
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
 :::
