@@ -28,7 +28,7 @@ Then there exists a finite morphism $X \to \AA^{d}$ which is the restriction to 
 
 ::: {.theorem title="Noether normalization (projective)"}
 Let $k$ be an infinite field and $X \subseteq \PP^{n}_k$ a projective variety of dimension $d$.
-Then there exists a finite morphism $X \to \PP^{d}$ which is the restriction to $X$ of a linear projection $\PP^{n} \dashrightarrow \PP^{d}$ with centre a linear subspace $\PP^{k} \subseteq \PP^{n}$ disjoint from $X$, where $k + d = n - 1$.
+Then there exists a finite morphism $X \to \PP^{d}$ which is the restriction to $X$ of a linear projection $\PP^{n} \dashrightarrow \PP^{d}$ with centre a linear subspace $\PP^{c} \subseteq \PP^{n}$ disjoint from $X$, where $c + d = n - 1$.
 :::
 
 ::: {.remark}
@@ -58,7 +58,7 @@ If $f$ is flat, then
 $$
 \dim_x X_{f(x)}=\dim_xX-\dim_{f(x)}Y,
 $$
-and the local fibre-dimension function is locally constant on $X$.
+so the local fibre-dimension function is constant on $X$ when $X$ and $Y$ are equidimensional.
 
 If $f$ is proper, then the function $y\mapsto\dim X_y$ is upper semicontinuous on $Y$: the locus $\theset{y\st\dim X_y\geq r}$ is the proper image of the corresponding closed locus in $X$.
 :::
@@ -72,5 +72,6 @@ The two halves are used differently.
 The lower bound proves positive-dimensional fibres in dimension-comparison arguments.
 The generic equality gives the dimension formula $\dim X = \dim Y + \dim(\text{general fibre})$.
 
-For a flat finite-type morphism, the relative local dimension is locally constant, so this source-side jumping disappears.
+For a flat finite-type morphism between equidimensional schemes, the local fibre dimension is constant, so this source-side jumping disappears.
+Equidimensionality is needed: $X=V(z)\cup V(x,y)\subseteq\AA^3$ is flat over $\AA^1$ by $x+z$, and the local fibre dimension is $1$ at the origin and $0$ at the other points of the line $V(x,y)$.
 :::
