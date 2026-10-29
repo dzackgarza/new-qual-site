@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-6-01
 kind: problem
-title: Maxim algebraic topology 6.1
+title: The total characteristic classes $w(\RP^n)$, $c(\CP^n)$ and $p(\CP^n)$
 classification:
   areas: [topology]
   topics: []
