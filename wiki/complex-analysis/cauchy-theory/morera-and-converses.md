@@ -66,7 +66,9 @@ Goursat's theorem proves Cauchy's theorem for triangles and rectangles with no c
 
 [[T-B3BDO]]
 
-::: {.proof title="from Gamelin"}
+::: {.proof}
+The argument follows [@Gam01].
+
 The argument is written for a rectangle; for a triangle, the midpoints of the sides divide it into four triangles, each with half the perimeter, and the same estimates hold.
 
 ![](../../../../assets/assets/figures/2021-12-10_19-47-54.png)
