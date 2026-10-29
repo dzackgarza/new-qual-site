@@ -160,7 +160,9 @@ mathematical correction under its own node, not under copy policy.
     P-MV6ZQ/P-AMD-ZIGVO4GJ/E-JAPBK (564ETBH5) and P-AMD-2NXEX5LK/E-AMD-V3WFKTM6 (E3N4BHJH)
     and wait on `CARD-04` merges. The Day PDFs name no institution, so SRC-RA-WORKSHOP keeps
     none. The "Suggest a slogan" issue link on result cards is a `QUAL-08` candidate for the
-    owner. Pagefind may split full institution names at commas.
+    owner. Pagefind may split full institution names at commas. The orphan merges are done
+    (`CARD-04`): E-AMD-4SSSVQJY and P-AMD-62OZUWBP into P-Q67AG; E-AMD-564ETBH5, P-MV6ZQ and
+    P-AMD-ZIGVO4GJ into E-JAPBK; E-AMD-E3N4BHJH and P-AMD-2NXEX5LK into E-AMD-V3WFKTM6.
 
   Content nodes (owner: the named cards and pages; one item at a time):
   - **`ad-algebra-content`**. **Needs:** none. CARD-04 merges confirmed in round 1
