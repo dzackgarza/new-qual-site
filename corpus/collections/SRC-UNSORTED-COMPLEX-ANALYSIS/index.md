@@ -275,7 +275,6 @@ source:
   - id: P-L7QND
   - id: P-V3KMW
   - id: P-66WI2
-  - id: P-6BURM
   - id: P-6PMCN
   - id: P-6SR5N
   - id: P-6YHN7
@@ -298,7 +297,6 @@ source:
   - id: P-BZNEO
   - id: P-CIWAP
   - id: P-CWXEW
-  - id: P-DAI2Z
   - id: P-DEJGY
   - id: P-DFHS3
   - id: P-DO7TE
