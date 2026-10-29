@@ -21,10 +21,12 @@ audit:
 ---
 
 ::: {.exercise}
-Suppose $f\colon[0,1]\to\mathbb{R}$ is continuous and $\int_0^1 f(t)t^n\,dt=0$ for all $n=0,1,2,\ldots$.
+Suppose $f\colon[0,1]\to\RR$ is continuous and $\int_0^1 f(t)t^n\,dt=0$ for all $n=0,1,2,\ldots$.
 Show that $f(t)=0$ for all $t\in[0,1]$.
+:::
 
-![](../../assets/Real_Analysis/020_Integration/figures/2021-11-27_20-59-05.png)
+::: {.hint}
+Use the Stone--Weierstrass theorem to show that $\int_0^1 f(t)^2\,dt = 0$.
 :::
 
 ::: {.solution}
@@ -61,16 +63,16 @@ $\int_0^1 f(t)^2\,dt = 0$.
 
 By the Weierstrass approximation theorem, there are polynomials $p_n$ such that
 $$
-\|p_n-f\|_\infty\longrightarrow0.
+\norm{p_n-f}_\infty\longrightarrow0.
 $$
 Since $f$ is continuous on $[0,1]$, it is integrable, and therefore
 $$
 \begin{aligned}
-\left|\int_0^1 f(t)^2\,dt-\int_0^1 f(t)p_n(t)\,dt\right|
+\abs{\int_0^1 f(t)^2\,dt-\int_0^1 f(t)p_n(t)\,dt}
 &=
-\left|\int_0^1 f(t)(f(t)-p_n(t))\,dt\right|\\
+\abs{\int_0^1 f(t)(f(t)-p_n(t))\,dt}\\
 &\le
-\|f-p_n\|_\infty\int_0^1|f(t)|\,dt
+\norm{f-p_n}_\infty\int_0^1\abs{f(t)}\,dt
 \longrightarrow0.
 \end{aligned}
 $$
