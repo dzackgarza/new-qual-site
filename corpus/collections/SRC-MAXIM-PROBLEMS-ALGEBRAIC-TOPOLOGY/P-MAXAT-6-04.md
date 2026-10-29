@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-6-04
 kind: problem
-title: Maxim algebraic topology 6.4
+title: Only $\RP^1$, $\RP^3$ and $\RP^7$ can be parallelizable
 classification:
   areas: [topology]
   topics: []
