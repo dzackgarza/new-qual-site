@@ -54,47 +54,17 @@ Prove that $g\equiv0$.
 
 ::: pf-step
 
-Prove the Riemann--Stieltjes assertion.
+(1) $f\in\mathcal R(\alpha)[-1,1]$ and $\boxed{\int_{-1}^1 f\,d\alpha=2f(0)}$.
 
 ::: pf-proof
 
-The integrator $\alpha$ is nondecreasing and has a single jump of size $2$ immediately to the right of $0$.
+The integrator $\alpha$ is nondecreasing, constant on $[-1,0]$ and on $(0,1]$, with $\alpha(0)=-1$ and $\alpha(x)=1$ for $x>0$.
 
-Fix $\varepsilon>0$. By continuity of $f$ at $0$, choose $r\in(0,1)$ such that
+Fix $\varepsilon>0$. By continuity of $f$ at $0$, choose $r\in(0,1)$ with $\abs{f(x)-f(0)}<\varepsilon/4$ for $0\le x\le r$. Let $P$ be any partition containing the points $-1<0<r<1$. Every increment of $\alpha$ over a subinterval of $P$ vanishes except the one over $[0,r]$, which is $\alpha(r)-\alpha(0)=2$. If $M$ and $m$ are the supremum and infimum of $f$ on $[0,r]$, then $M-m<\varepsilon/2$, so
 $$
-|f(x)-f(0)|<\frac{\varepsilon}{4}
-\qquad(0\le x\le r).
+U(f,P,\alpha)-L(f,P,\alpha)=2(M-m)<\varepsilon.
 $$
-Take any partition containing the points
-$$
--1<0<r<1.
-$$
-All increments of $\alpha$ are zero except the one on the subinterval $[0,r]$, where
-$$
-\alpha(r)-\alpha(0)=1-(-1)=2.
-$$
-Consequently, if $M$ and $m$ are the supremum and infimum of $f$ on $[0,r]$, then
-$$
-U(f,P,\alpha)-L(f,P,\alpha)=2(M-m).
-$$
-Since $|f(x)-f(0)|<\varepsilon/4$ on $[0,r]$,
-$$
-M-m<\frac{\varepsilon}{2},
-$$
-and hence
-$$
-U(f,P,\alpha)-L(f,P,\alpha)<\varepsilon.
-$$
-Thus $f\in\mathcal R(\alpha)[-1,1]$.
-
-Moreover,
-$$
-2m\le \int_{-1}^1f\,d\alpha\le2M,
-$$
-and both $m$ and $M$ can be made arbitrarily close to $f(0)$ by shrinking $r$. Therefore
-$$
-\boxed{\int_{-1}^1f\,d\alpha=2f(0)}.
-$$
+Thus $f\in\mathcal R(\alpha)[-1,1]$. Moreover $2m\le \int_{-1}^1f\,d\alpha\le2M$ and $f(0)-\varepsilon/4\le m\le M\le f(0)+\varepsilon/4$, so $\abs{\int_{-1}^1 f\,d\alpha-2f(0)}\le\varepsilon/2$ for every $\varepsilon>0$.
 
 :::
 
@@ -102,18 +72,17 @@ $$
 
 ::: pf-step
 
-Extend the moment identities from monomials to polynomials in $x^3$.
+(2) $\boxed{g\equiv0}$.
 
 ::: pf-proof
 
-For every polynomial $p$,
-$$
-x^2p(x^3)
-$$
-is a finite linear combination of the functions $x^{3k+2}$. Hence the hypothesis gives
-$$
-\int_0^1 g(x)x^2p(x^3)\,dx=0.
-$$
+::: {.pf-step #moments}
+
+$\int_0^1 g(x)x^2p(x^3)\,dx=0$ for every polynomial $p$.
+
+::: pf-proof
+
+$x^2p(x^3)$ is a finite linear combination of the functions $x^{3k+2}$, $k\ge0$, so this follows from the hypothesis by linearity.
 
 :::
 
@@ -121,34 +90,19 @@ $$
 
 ::: pf-step
 
-Approximate $g$ by polynomials in $x^3$.
+$\int_0^1 x^2 g(x)^2\,dx=0$, and therefore $g\equiv0$.
 
 ::: pf-proof
 
-Define
+Let $h(t)\coloneqq g(t^{1/3})$ for $t\in[0,1]$. Then $h$ is continuous, so by the Weierstrass approximation theorem there are polynomials $p_n$ with $p_n\to h$ uniformly on $[0,1]$. Substituting $t=x^3$ gives $p_n(x^3)\to g(x)$ uniformly on $[0,1]$. Since $x^2g(x)$ is bounded, step [](#moments){.pf-ref} gives
 $$
-h(t):=g(t^{1/3}),\qquad t\in[0,1].
+0=\lim_{n\to\infty}\int_0^1 g(x)x^2p_n(x^3)\,dx=\int_0^1x^2g(x)^2\,dx.
 $$
-Then $h$ is continuous. By the Weierstrass approximation theorem there are polynomials $p_n$ such that
-$$
-p_n\to h
-$$
-uniformly on $[0,1]$. Substituting $t=x^3$ gives
-$$
-p_n(x^3)\to g(x)
-$$
-uniformly on $[0,1]$.
+The integrand is continuous and nonnegative, so it vanishes identically. Thus $g(x)=0$ for every $x\in(0,1]$, and continuity gives $g(0)=0$.
 
-Since $x^2g(x)$ is bounded, we may pass to the limit in the identities from Step 2:
-$$
-0
-=\lim_{n\to\infty}\int_0^1 g(x)x^2p_n(x^3)\,dx
-=\int_0^1x^2g(x)^2\,dx.
-$$
-The integrand is continuous and nonnegative, so it vanishes identically. Thus $g(x)=0$ for every $x\in(0,1]$, and continuity gives $g(0)=0$. Hence
-$$
-\boxed{g\equiv0}.
-$$
+:::
+
+:::
 
 :::
 
