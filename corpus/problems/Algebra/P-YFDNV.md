@@ -22,29 +22,44 @@ audit:
 ---
 
 ::: {.problem}
-State Frobenius's Theorem classifying all finite-dimensional associative division algebras over the real numbers $\mathbb{R}$, and state the generalized Hurwitz / Adams theorem for normed / alternative division algebras.
+State Frobenius's Theorem classifying all finite-dimensional associative division algebras over the real numbers $\RR$, and state the generalized Hurwitz / Adams theorem for normed / alternative division algebras.
 :::
 
 ::: {.solution}
-There are three related statements that should be distinguished.
+Write $\HH$ for the quaternions and $\mathbb O$ for the octonions.
+The three results below are stated with their standard names; the question asks only for statements.
 
-**Frobenius' theorem.** The finite-dimensional associative division algebras over $\mathbb R$ are exactly
-\[
-\boxed{\mathbb R,\ \mathbb C,\ \mathbb H}.
-\]
-Their real dimensions are $1,2,4$.
+::: pf
 
-**Hurwitz' theorem.** The finite-dimensional real normed division algebras, equivalently positive-definite real composition division algebras, are exactly
-\[
-\boxed{\mathbb R,\ \mathbb C,\ \mathbb H,\ \mathbb O},
-\]
-of dimensions $1,2,4,8$. The octonions $\mathbb O$ are nonassociative but alternative.
+::: pf-step
+(Frobenius) A finite-dimensional associative division algebra over $\RR$ is isomorphic to exactly one of $\boxed{\RR,\ \CC,\ \HH}$, of real dimensions $1,2,4$.
 
-For more general finite-dimensional real division algebras, one no longer has uniqueness up to isomorphism in dimensions $4$ and $8$. What survives is the dimension restriction: the existence of a finite-dimensional real division algebra forces
-\[
-\boxed{\dim_\mathbb R D\in\{1,2,4,8\}},
-\]
-a consequence of the Hopf-invariant-one/division-algebra results of Bott--Milnor--Kervaire and Adams.
+::: pf-proof
+This is Frobenius' theorem.
+:::
 
-Thus Frobenius is an isomorphism classification in the associative case; Hurwitz is an isomorphism classification in the normed composition case; and the general topological theorem is a dimension restriction, not an isomorphism classification.
+:::
+
+::: pf-step
+(Hurwitz, Zorn) A finite-dimensional real normed division algebra, equivalently a real composition algebra with positive-definite norm, is isomorphic to exactly one of $\boxed{\RR,\ \CC,\ \HH,\ \mathbb O}$, of dimensions $1,2,4,8$; the same four algebras are the finite-dimensional alternative division algebras over $\RR$.
+The octonions are alternative and not associative.
+
+::: pf-proof
+The normed case is Hurwitz' theorem, and the alternative case is Zorn's theorem.
+:::
+
+:::
+
+::: pf-step
+(Bott--Milnor, Kervaire, Adams) If $D$ is a finite-dimensional real division algebra with no associativity assumption, then $\boxed{\dim_\RR D\in\{1,2,4,8\}}$.
+
+::: pf-proof
+Bott--Milnor and Kervaire proved the dimension restriction; Adams' Hopf invariant one theorem gives the same restriction through the parallelizable spheres $S^0,S^1,S^3,S^7$.
+In dimensions $4$ and $8$ there are infinitely many non-isomorphic such algebras, so this result restricts the dimension and does not classify up to isomorphism.
+:::
+
+:::
+
+:::
+
 :::
