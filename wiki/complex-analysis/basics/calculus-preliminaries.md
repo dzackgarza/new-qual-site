@@ -123,14 +123,7 @@ A uniformly convergent series of differentiable functions need not be differenti
 
 [[PR-5WUAP]]
 
-::: {.fact title="Cauchy product"}
-Where both series converge absolutely,
-$$
-\sum_{k\geq 0} a_kz^k \cdot \sum_{k\geq 0} b_k z^k = \sum_{k\geq 0} c_k z^k,\qquad c_k \coloneqq \sum_{j=0}^k a_j b_{k-j}.
-$$
-The standard power series are on [[complex-analysis/basics/series-reference|Series reference]].
-
-:::
+The Cauchy product of power series and the standard power series are on [[complex-analysis/basics/series-reference|Series reference]].
 
 ::: {.fact title="Polynomial division"}
 For polynomials $f, g$ over a field with $g\neq 0$, there are unique polynomials $q, r$ with $f = qg + r$ and $\deg r < \deg g$ or $r = 0$.
