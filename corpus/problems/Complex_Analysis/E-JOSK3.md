@@ -15,33 +15,41 @@ review: draft
 ---
 
 ::: {.exercise}
-Determine the order of the pole of 
+Determine the order of the pole of
 
-- ${1\over z\sin(z)}$ at $z_0 = 0$.
-- ${e^{z^2}-1\over z^4}$ at $z_0=0$
+(a) ${1\over z\sin(z)}$ at $z_0 = 0$.
+
+(b) ${e^{z^2}-1\over z^4}$ at $z_0=0$.
 
 :::
 
 ::: {.solution}
-- Order 2:
-\[
-\lim_{z\to 0}z^0 f(z) &= \infty\\
-\lim_{z\to 0}z^1 f(z) &= \infty\\
-\lim_{z\to 0}z^2 f(z) &= 1 \neq 0 
-,\]
-using that $z/\sin(z) \convergesto{z\to 0} 1$.
+A function $f$ has a pole of order $m$ at $0$ exactly when $\lim_{z\to0}z^mf(z)$ exists and is nonzero.
 
-- Order 2: apply L'Hopital as necessary
-\[
-\lim_{z\to 0}z^0 f(z) &= \infty\\
-\lim_{z\to 0}z^1 f(z) &= \infty\\
-\lim_{z\to 0}z^2 f(z) &= 1 \neq 0 
-.\]
-  Alternatively, take the Laurent expansion:
-  \[
-  f(z) 
-  &= z^{-4}(1 + z^2 + {1\over 2!} (z^2)^2 + {1\over 3!} (z^2)^3 + \bigo(z^4) - 1) \\
-  &= z^{-2} + {1\over 2!} + {1\over 3!} z^2 + \bigo(z^4)
-  .\]
+::: pf
+
+::: pf-step
+(a) $\frac{1}{z\sin z}$ has a pole of order $\boxed{2}$ at $0$.
+
+::: pf-proof
+$z^2\cdot\frac{1}{z\sin z}=\frac{z}{\sin z}\to1$ as $z\to0$, since $\sin z=z+\bigo(z^3)$.
+:::
+
+:::
+
+::: pf-step
+(b) $\frac{e^{z^2}-1}{z^4}$ has a pole of order $\boxed{2}$ at $0$.
+
+::: pf-proof
+From $e^{w}=1+w+\frac{w^2}{2!}+\frac{w^3}{3!}+\bigo(w^4)$ with $w=z^2$,
+$$
+\frac{e^{z^2}-1}{z^4}=z^{-4}\qty{z^2+\frac{z^4}{2!}+\frac{z^6}{3!}+\bigo(z^8)}=z^{-2}+\frac1{2}+\frac{z^2}{6}+\bigo(z^4).
+$$
+The principal part is $z^{-2}$.
+:::
+
+:::
+
+:::
 
 :::
