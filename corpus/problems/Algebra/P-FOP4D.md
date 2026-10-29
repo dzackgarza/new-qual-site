@@ -19,37 +19,41 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: "The source asked 'Is a square matrix always similar to its transpose?' without naming the entries' ring; the statement now says over a field, the setting of the solution."
 ---
 
 ::: {.problem}
-Is a square matrix always similar to its transpose?
+Is a square matrix over a field always similar to its transpose?
 :::
 
 ::: {.solution}
-Yes. Let $A\in M_n(F)$.
+Yes. Let $F$ be a field and $A\in M_n(F)$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 The polynomial matrices
-\[
+$$
 tI-A
 \qquad\text{and}\qquad
 tI-A^t=(tI-A)^t
-\]
+$$
 have the same Smith normal form over the PID $F[t]$.
 
 ::: pf-proof
 
 If
-\[
+$$
 U(tI-A)V=D
-\]
+$$
 is a Smith normal form with $U,V$ unimodular, then transposing gives
-\[
+$$
 V^t(tI-A)^tU^t=D^t=D.
-\]
+$$
 Thus the invariant factors are unchanged by transpose.
 
 :::
