@@ -23,122 +23,58 @@ Show that $M$ is homeomorphic to the space obtained by deleting an open disc fro
 :::
 
 ::: {.solution}
+Take $M$ to be the quotient of the rectangle $[0,\pi] \times [1/2, 3/2]$ by $(0, s) \sim (\pi, 2 - s)$; the affine map $(\theta, s) \mapsto (\theta/\pi, 3/2 - s)$ carries this to the presentation $[0,1] \times [0,1]$ with $(0,y) \sim (1, 1-y)$.
+Write points of the plane in polar coordinates $(r, \theta)$, with $\theta$ taken mod $2\pi$.
+
 ::: pf
 
-::: pf-step
-
-The real projective plane is a quotient of the closed disc.
-
-::: pf-proof
-
-::: pf-step
-
-The real projective plane $\RP^2$ is homeomorphic to the closed unit disc $D^2 = \{x \in \RR^2 \mid \|x\| \le 1\}$ modulo the antipodal identification on its boundary:
-        $$\RP^2 \cong D^2 / \sim, \quad \text{where } x \sim -x \text{ for } x \in S^1 = \partial D^2.$$
-
-:::
-
-::: pf-step
-
-Let $q: D^2 \to \RP^2$ be the canonical quotient map.
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #y-is-annulus-quotient}
-
-Deleting an open disc $U$ from $\RP^2$ leaves the quotient $A/\sim$ of a closed annulus $A$.
+::: {.pf-step #disc-model}
+$P^2$ is homeomorphic to the quotient of the closed unit disc $D^2$ by $x \sim -x$ for $|x| = 1$.
 
 ::: pf-proof
-
-::: pf-step
-
-Let $D_{1/2} = \{x \in \RR^2 \mid \|x\| < 1/2\}$ be the open central disc of radius $1/2$.
-
-:::
-
-::: pf-step
-
-Since $D_{1/2} \subset \operatorname{Int}(D^2)$ contains no boundary points, $U = q(D_{1/2})$ is an open topological disc in $\RP^2$.
-
-:::
-
-::: pf-step
-
-The punctured space $Y = \RP^2 \setminus U$ is homeomorphic to the quotient of the closed annulus $A = \{x \in \RR^2 \mid 1/2 \le \|x\| \le 1\}$ by the boundary identification $x \sim -x$ on the outer boundary circle $\|x\| = 1$.
-
+The map $h \colon D^2 \to S^2$, $h(x) = (x, \sqrt{1 - |x|^2})$, followed by the quotient $S^2 \to P^2$, is continuous and surjective, because every antipodal pair has a point with nonnegative last coordinate.
+Two points of $D^2$ have the same image exactly when they are equal or are antipodal points of $\partial D^2$.
+As $D^2$ is compact and $P^2$ is Hausdorff, the map is closed, hence a quotient map, and induces the homeomorphism.
 :::
 
 :::
 
-:::
-
-::: {.pf-step #annulus-quotient-is-mobius}
-
-The identified annulus $A/\sim$ is homeomorphic to the Möbius strip $M$.
+::: {.pf-step #annulus}
+Let $q \colon D^2 \to P^2$ be the quotient map of step [](#disc-model){.pf-ref} and $U = q(\{|x| < 1/2\})$.
+Then $U$ is an open disc in $P^2$, and $Y = P^2 \setminus U$ is homeomorphic to the quotient $A/{\sim}$ of the closed annulus $A = \{1/2 \le |x| \le 1\}$ by $x \sim -x$ for $|x| = 1$.
 
 ::: pf-proof
-
-::: pf-step
-
-In polar coordinates $(r, \theta)$ on $A$, the equivalence relation identifies $(1, \theta) \sim (1, \theta + \pi)$ for all $\theta \in [0, \pi]$, while leaving points with $1/2 \le r < 1$ un-identified.
-
-:::
-
-::: pf-step
-
-Cut the annulus along the segments $\theta = 0$ and $\theta = \pi$.
-
-:::
-
-::: pf-step
-
-Consider the semi-annulus $R = [0, \pi] \times [1/2, 1]$.
-
-:::
-
-::: pf-step
-
-The outer arc $(1, \theta)$ connects $(1, 0)$ to $(1, \pi) \sim (1, 0)$, forming a continuous strip.
-
-:::
-
-::: pf-step
-
-The radial edges at $\theta = 0$ and $\theta = \pi$ are glued with a reversal of orientation on the radial parameter, exactly realizing the standard quotient presentation of the Möbius strip:
-        $$M = ([0, 1] \times [-1, 1]) / \sim, \quad (0, t) \sim (1, -t).$$
-
-:::
-
-::: pf-step
-
-The inner boundary circle $r = 1/2$ becomes the single continuous boundary circle $\partial M$.
-
-:::
-
-::: pf-step
-
-Hence $Y = A/\sim$ is homeomorphic to $M$.
-
+The set $\{|x| < 1/2\}$ is open and saturated, so $U$ is open, and $q$ is injective on it, so $q$ maps it homeomorphically onto $U$ (an injective restriction of a quotient map to an open saturated set is a quotient map onto its image).
+$A$ is saturated with $q(A) = Y$, so $q|_A \colon A \to Y$ is a continuous surjection from a compact space to a Hausdorff space, hence a quotient map, and its identifications are exactly $x \sim -x$ on $|x| = 1$.
 :::
 
 :::
 
-:::
-
-::: pf-step
-
-The space obtained by deleting an open disc from $\RP^2$ is homeomorphic to the Möbius band $M$.
+::: {.pf-step #map}
+The map $\Phi \colon [0,\pi] \times [1/2, 3/2] \to A/{\sim}$ given by $\Phi(\theta, s) = [(s, \theta)]$ for $s \le 1$ and $\Phi(\theta, s) = [(2 - s, \theta + \pi)]$ for $s \ge 1$ is well defined, continuous and surjective.
 
 ::: pf-proof
-
-By step [](#y-is-annulus-quotient){.pf-ref}, $\RP^2 \setminus U \cong A/\sim$, and by step [](#annulus-quotient-is-mobius){.pf-ref}, $A/\sim \cong M$.
+At $s = 1$ the two formulas give the classes of $(1, \theta)$ and $(1, \theta + \pi)$, which are equal, so the pasting lemma gives a continuous map.
+The first formula covers the half annulus $\theta \in [0, \pi]$ and the second the half annulus $\theta \in [\pi, 2\pi]$, so $\Phi$ is surjective.
+:::
 
 :::
 
+::: {.pf-step #fibres}
+$\Phi(\theta, s) = \Phi(\theta', s')$ with $(\theta, s) \neq (\theta', s')$ holds exactly when $\{\theta, \theta'\} = \{0, \pi\}$ and $s' = 2 - s$.
+
+::: pf-proof
+For $s < 1$, $\Phi(\theta, s)$ is the class of the single point at radius $s$ and angle $\theta \in [0, \pi]$; for $s > 1$, it is the single point at radius $2 - s < 1$ and angle $\theta + \pi \in [\pi, 2\pi]$.
+Points at radius $r < 1$ are unidentified in $A/{\sim}$, so two such values agree only when the angles agree mod $2\pi$: either $(\theta, s) = (\theta', s')$, or one angle is $0 \equiv 2\pi$ and the other $\pi$, that is $\{\theta, \theta'\} = \{0, \pi\}$ and $s' = 2 - s$.
+For $s = 1$, $\Phi(\theta, 1)$ is the class $\{(1, \theta), (1, \theta + \pi)\}$, and $\theta \mapsto$ this class is injective on $[0, \pi)$ with $\Phi(\pi, 1) = \Phi(0, 1)$, which is the case $s = s' = 1$ of the stated rule.
+Conversely, $\Phi(0, s) = \Phi(\pi, 2 - s)$ for every $s$, by the two formulas.
+:::
+
+:::
+
+::: pf-qed
+By step [](#fibres){.pf-ref}, $\Phi$ identifies exactly the points $(0, s) \sim (\pi, 2 - s)$, so it induces a continuous bijection $M \to A/{\sim}$.
+$M$ is compact and $A/{\sim} \cong Y \subset P^2$ is Hausdorff by step [](#annulus){.pf-ref}, so this bijection is a homeomorphism, and $M \cong P^2 \setminus U$.
 :::
 
 :::
