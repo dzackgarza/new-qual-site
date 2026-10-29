@@ -56,5 +56,5 @@ The left cosets of $H$ partition $G$ ([[PR-VUKHO]]), and there are $[G:H]$ of th
 :::
 
 ::: {.remark title="Variations"}
-The order of any element $g$ of a finite group $G$ divides $\abs G$: the cyclic subgroup $\langle g\rangle$ has exactly $\abs g$ elements, so the last step with $H=\langle g\rangle$ gives $\abs G=[G:\langle g\rangle]\,\abs g$.
+The order of any element $g$ of a finite group $G$ divides $\abs G$: the cyclic subgroup $\langle g\rangle$ has exactly $\abs g$ elements, so the last step with $H=\langle g\rangle$ gives $\abs G=[G:\langle g\rangle]\,\abs g$. Hence $g^{\abs G}=\bigl(g^{\abs g}\bigr)^{[G:\langle g\rangle]}=e$.
 :::

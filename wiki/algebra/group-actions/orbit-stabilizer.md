@@ -13,10 +13,6 @@ topics:
 
 [[E-NNTQB]]
 
-::: {.corollary}
-For a finite group $G$ and $g\in G$, the order of $g$ divides $\size G$, and $g^{\size G} = e$.
-:::
-
 ::: {.warnings title="The converse of Lagrange's theorem is false"}
 A finite group $G$ need not have a subgroup of order $n$ for every $n \divides \size G$.
 
