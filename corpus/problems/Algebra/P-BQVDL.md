@@ -27,19 +27,34 @@ Prove that $H$ is a **normal** subgroup of $G$ ($H \trianglelefteq G$).
 :::
 
 ::: {.solution}
-Let \(G\) act on the \(p\) left cosets of \(H\). This gives
-\[
-\rho:G\to S_p,
-\]
-and let \(K=\ker\rho\). Then \(K\trianglelefteq G\), \(K\le H\), and
-\[
-[G:K]=|\operatorname{im}\rho|\mid p!.
-\]
-Since \([G:H]=p\),
-\[
-[G:K]=p[H:K],
-\]
-so \([H:K]\mid (p-1)!\).
+Let $G$ act by left multiplication on the $p$ left cosets of $H$, let $\rho:G\to S_p$ be the resulting homomorphism, and let $K=\ker\rho$.
 
-On the other hand, \([H:K]\mid |G|\). If \([H:K]>1\), choose a prime \(q\mid[H:K]\). Then \(q\mid|G|\), so by minimality of \(p\) we have \(q\ge p\). But \(q\mid(p-1)!\), so \(q<p\), a contradiction. Hence \([H:K]=1\), so \(H=K\trianglelefteq G\).
+::: pf
+
+::: {.pf-step #kernel}
+
+$K\trianglelefteq G$, $K\le H$, and $[H:K]$ divides $(p-1)!$.
+
+::: pf-proof
+
+$K$ is a kernel, so it is normal. An element of $K$ fixes the coset $H$, so it lies in $H$. By the first isomorphism theorem, $[G:K]=\abs{\im\rho}$ divides $\abs{S_p}=p!$. Since $[G:K]=[G:H][H:K]=p[H:K]$, $[H:K]$ divides $(p-1)!$.
+
+:::
+
+:::
+
+::: pf-step
+
+$[H:K]=1$, so $H=K\trianglelefteq G$.
+
+::: pf-proof
+
+Suppose $[H:K]>1$ and let $q$ be a prime dividing $[H:K]$. Then $q$ divides $\abs{G}$, so $q\ge p$ by the minimality of $p$. By step [](#kernel){.pf-ref}, $q$ divides $(p-1)!$, so $q<p$, a contradiction.
+
+:::
+
+:::
+
+:::
+
 :::
