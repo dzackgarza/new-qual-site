@@ -35,7 +35,7 @@ The cycle graphs of $\ZZ/4\ZZ = \generators{g}$ and of $(\ZZ/2\ZZ)^2 = \theset{e
 \begin{tikzcd}
 	& {g^2} &&&& a \\
 	g && {g^3} &&& e \\
-	& e &&&& b && ab
+	& e &&& b && ab
 	\arrow[no head, from=3-2, to=2-1]
 	\arrow[no head, from=2-1, to=1-2]
 	\arrow[no head, from=1-2, to=2-3]
