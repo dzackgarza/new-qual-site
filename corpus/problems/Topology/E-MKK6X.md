@@ -28,7 +28,7 @@ Let $\omega_1$ denote the set of all countable ordinals with the order topology.
 
 ::: pf-proof
 
-This is the minimal uncountable ordinal/order.
+The minimal uncountable well-ordered set is order-isomorphic to $\omega_1$, the least uncountable ordinal.
 
 :::
 
@@ -54,7 +54,7 @@ is nonempty and disjoint from $D$.
 
 ::: pf-proof
 
-It is a basic open final interval in the order topology, and every element of $D$ is at most $\alpha$.
+It is a basic open set in the order topology; it is nonempty because $\alpha+1<\omega_1$, and every element of $D$ is at most $\alpha$.
 
 :::
 
