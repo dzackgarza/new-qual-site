@@ -12,29 +12,39 @@ review: draft
 
 ::: {.problem}
 Let $p \colon X \to Y$ be a quotient map.
-Suppose Y is connected, and, for each $y \in Y$ the subspace $p ^ { - 1 } ( \{ y \} )$ is connected.
-Show that X is connected.
+Suppose $Y$ is connected, and, for each $y \in Y$, the subspace $p^{-1}(\{y\})$ is connected.
+Show that $X$ is connected.
 :::
 
 ::: {.solution}
-Suppose, toward a contradiction, that $X=U\sqcup V$ is a separation into nonempty open sets.
-Because $U$ and $V$ are complementary open sets, both are also closed.
+Suppose that $X = U \sqcup V$ with $U$ and $V$ disjoint, open and nonempty.
+We derive a contradiction.
 
-For each $y\in Y$, the connected fiber $p^{-1}(y)$ cannot meet both $U$ and $V$; otherwise
-$$
-p^{-1}(y)=\bigl(p^{-1}(y)\cap U\bigr)\sqcup\bigl(p^{-1}(y)\cap V\bigr)
-$$
-would be a separation of that fiber.
-Hence every fiber lies entirely in $U$ or entirely in $V$.
-Thus $U$ and $V$ are saturated for $p$:
-$$
-p^{-1}(p(U))=U,
-\qquad
-p^{-1}(p(V))=V.
-$$
+::: pf
 
-Since $p$ is a quotient map and $U,V$ are open saturated subsets of $X$, the sets $p(U)$ and $p(V)$ are open in $Y$.
-They are nonempty, disjoint, and cover $Y$ because $p$ is surjective.
-This contradicts connectedness of $Y$.
-Therefore $X$ is connected.
+::: {.pf-step #saturated}
+$U = p^{-1}(p(U))$ and $V = p^{-1}(p(V))$.
+
+::: pf-proof
+For $y \in Y$, the sets $p^{-1}(y) \cap U$ and $p^{-1}(y) \cap V$ are disjoint, relatively open, and cover the connected fiber $p^{-1}(y)$.
+So one of them is empty, and every fiber lies in $U$ or in $V$.
+A point of $p^{-1}(p(U))$ shares its fiber with a point of $U$, so it lies in $U$; the same holds for $V$.
+:::
+
+:::
+
+::: pf-step
+$Y = p(U) \sqcup p(V)$ with $p(U)$ and $p(V)$ disjoint, open and nonempty, which contradicts the connectedness of $Y$.
+
+::: pf-proof
+Since $p$ is a quotient map, a set $W \subseteq Y$ is open when $p^{-1}(W)$ is open.
+By step [](#saturated){.pf-ref}, $p^{-1}(p(U)) = U$ and $p^{-1}(p(V)) = V$ are open, so $p(U)$ and $p(V)$ are open.
+They are nonempty because $U$ and $V$ are.
+They are disjoint, because a common point would have its fiber in both $U$ and $V$ by step [](#saturated){.pf-ref}.
+They cover $Y$ because $p$ is surjective.
+:::
+
+:::
+
+:::
 :::
