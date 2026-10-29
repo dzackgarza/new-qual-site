@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CAFA22B
 kind: problem
-title: "Zero of e^{tz} + z + 1 in the left half-plane"
+title: The zero of $e^{tz} + z + 1$ in the left half-plane
 classification:
   areas:
   - complex-analysis
