@@ -15,29 +15,30 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The source takes h in R in part (a) and names the translate tau_h d(x); the statement takes h in R^n, as translation of a subset of R^n requires, and names the translate tau_h f(x)."
 ---
 
 ::: {.problem}
-a.
-Prove that if \( E \subseteq \RR^n \) is a Lebesgue measurable set, then for any \( h \in \RR \) the set
-\[
+(a) Prove that if $E \subseteq \RR^n$ is a Lebesgue measurable set, then for any $h \in \RR^n$ the set
+$$
 E+h \definedas \theset{x + h \st x\in E }
-\]
-is also Lebesgue measurable and satisfies \( m(E + h) = m(E) \).
+$$
+is also Lebesgue measurable and satisfies $m(E + h) = m(E)$.
 
-b.
-Prove that if $f$ is a non-negative measurable function on $\RR^n$ and $h\in \RR^n$ then the function
-\[
-\tau_h d(x) \definedas f(x-h)
-\]
+(b) Prove that if $f$ is a non-negative measurable function on $\RR^n$ and $h\in \RR^n$ then the function
+$$
+\tau_h f(x) \definedas f(x-h)
+$$
 is a non-negative measurable function and
-\[
-\int f(x) \dx = \int f(x-h) \dx
-.\]
+$$
+\int f(x) \dx = \int f(x-h) \dx.
+$$
 :::
-::: {.solution}
-Take $h \in \RR^n$ and write $\tau_h f(x) \coloneqq f(x-h)$.
 
+::: {.solution}
 ::: pf
 
 ::: {.pf-step #s1}
