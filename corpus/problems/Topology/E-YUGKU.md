@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.exercise}
-- State the definition of the product topology, the subspace topology, and the quotient topology.
+State the definition of the product topology, the subspace topology, and the quotient topology.
 :::
 
 ::: {.solution}
