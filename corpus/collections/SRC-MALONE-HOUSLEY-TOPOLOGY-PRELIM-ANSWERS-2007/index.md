@@ -35,7 +35,7 @@ source:
     - P-MH07-JAN07-06
     - P-MH07-JAN07-07
     - id: P-MH07-6510-07
-      comment: January 2007 Problem 8; repeated exactly as Math 6510 Final Exam Problem 7
+      comment: Problem 8
     - P-MH07-JAN07-09
     - P-MH07-JAN07-10
     - P-MH07-JAN07-11
@@ -77,7 +77,7 @@ source:
     - P-MH07-JAN06-01
     - P-MH07-JAN06-02
     - id: P-MH07-AUG05-07
-      comment: January 2006 Problem 3; the retained extraction drops the final superscript on $\RR^2$, while the same problem is printed completely as August 2005 Problem 7
+      comment: Problem 3
     - P-MH07-JAN06-04
     - P-MH07-JAN06-05
     - P-MH07-JAN06-06
@@ -94,7 +94,7 @@ source:
     - P-MH07-AUG05-06
     - P-MH07-AUG05-07
     - id: P-MH07-AUG06-05
-      comment: August 2005 Problem 8; repeated exactly as August 2006 Problem 5
+      comment: Problem 8
   - name: January 2005
     problems:
     - P-MH07-JAN05-01
