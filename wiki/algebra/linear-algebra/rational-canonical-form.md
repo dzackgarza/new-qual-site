@@ -32,46 +32,8 @@ If $\min_A = \chi_A$, comparing degrees gives $m = 1$, so $V\cong k[x]/\generato
 If $v$ generates $V$, then $V = \theset{f(A)v \st f\in k[x]}$ is spanned by $v, Av, A^2v, \ldots$, and by Cayley--Hamilton by $v, Av, \ldots, A^{n-1}v$.
 :::
 
-[[PR-TI6YA]]
-
 ::: {.remark}
 The blocks of the rational canonical form of $A$ are in bijection with the nonconstant invariant factors of $xI-A$, and a companion matrix is its own rational canonical form.
-:::
-
-## Derivation
-
-::: {.proof title="Derivation of the rational canonical form"}
-\envlist
-
-- Let $T\colon V\to V$ be the linear map given by $A$, and let $k[x]$ act on $V$ by $p(x)\actson \vector v \definedas p(T)\vector v$.
-  This makes $V$ a finitely generated torsion $k[x]$-module whose submodules are the $T$-invariant subspaces.
-
-- Since $k[x]$ is a PID, the structure theorem gives the invariant factor decomposition
-$$
-V \cong \bigoplus_{i=1}^m k[x] / \generators{ p_i(x) }, \qquad p_1 \divides p_2 \divides \cdots \divides p_m.
-$$
-
-- Each summand is a $T$-invariant subspace $V_i$ on which the minimal polynomial of $T$ is $p_i$.
-  Since $p_i \divides p_m$ for every $i$, $p_m(T) = 0$ on $V$, so $\min_T \divides p_m$; since $\min_T(T)$ vanishes on $V_m\cong k[x]/\generators{p_m}$, $p_m\divides\min_T$.
-  Hence $\min_T = p_m$.
-
-- $T$ is block diagonal with one block for each $V_i$, so it suffices to treat a cyclic module $V = k[x]/\generators{p(x)}$ with $p(x) = x^n + a_{n-1}x^{n-1}+\cdots+a_0$ and generator $\vector v$.
-
-- Then $\vector v, T\vector v, \ldots, T^{n-1}\vector v$ is a basis: a linear dependence among them would give a nonzero polynomial of degree less than $n$ annihilating the generator $\vector v$, hence annihilating $V$, contradicting that $p$ is the minimal polynomial of $T$.
-
-- In this basis $T$ sends each basis vector to the next, and $T^n\vector v = -\sum_{i<n}a_iT^i\vector v$ because $p(T)=0$, so the matrix of $T$ is the companion matrix
-$$
-C(p) =
-\begin{bmatrix}
-0 &  &  &  & -a_0 \\
-1 & 0 &  &  & -a_1 \\
- &  1 &  0&  & -a_2 \\
- &  & \ddots &  \ddots & \vdots \\
- &  &  & 1 & -a_{n-1}
-\end{bmatrix},
-$$
-whose characteristic polynomial is $p$.
-Hence $\chi_T = \prod_i p_i$.
 :::
 
 ## Cyclic vectors

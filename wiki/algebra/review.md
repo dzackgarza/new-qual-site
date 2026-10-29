@@ -97,7 +97,7 @@ Chapter: [[algebra/modules/index|Modules]].
 
 [[PR-GBL6P]]
 
-[[PR-TI6YA]]
+[[FD-XT6HD]]
 
 [[T-6ABNR]]
 
