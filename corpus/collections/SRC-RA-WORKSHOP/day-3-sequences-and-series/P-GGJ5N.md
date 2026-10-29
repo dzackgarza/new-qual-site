@@ -27,10 +27,10 @@ Show that $\displaystyle \sum \frac{a_n}{\beta + a_n}$ is also divergent.
 ::: {.pf-step #s1}
 
 For every $n$,
-\[
+$$
 \frac{a_n}{\beta+a_n}\geq
 \frac12\min\left\{\frac{a_n}{\beta},1\right\}.
-\]
+$$
 
 ::: pf-proof
 
@@ -52,21 +52,15 @@ Let $I=\{n\geq1:a_n\geq\beta\}$. If $I$ is infinite, the summand equals $1$ at e
 
 :::
 
-::: {.pf-step #s3}
+::: pf-step
 
-The series $\boxed{\sum_{n=1}^{\infty}\frac{a_n}{\beta+a_n}=+\infty}$.
+The series $\sum_{n=1}^{\infty}\frac{a_n}{\beta+a_n}$ diverges to $+\infty$.
 
 ::: pf-proof
 
 The terms are positive. By step [](#s1){.pf-ref}, their partial sums dominate half the corresponding partial sums of the divergent nonnegative series in step [](#s2){.pf-ref}. They are therefore unbounded and tend to $+\infty$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s3){.pf-ref} proves the required divergence.
 
 :::
 
