@@ -26,23 +26,23 @@ Show that the center of $S_n$ for $n\geq 4$ (and in fact $n \ge 3$) is trivial.
 
 ::: {.solution}
 Let $\sigma\in Z(S_n)$ with $n\ge3$. Suppose $\sigma\ne1$. Choose $a$ with
-\[
+$$
 \sigma(a)=b\ne a,
-\]
+$$
 and choose $c$ distinct from $a,b$. Let
-\[
+$$
 \tau=(bc).
-\]
+$$
 Then $\tau(a)=a$, so
-\[
+$$
 (\sigma\tau)(a)=\sigma(a)=b,
-\]
+$$
 whereas
-\[
+$$
 (\tau\sigma)(a)=\tau(b)=c.
-\]
+$$
 Thus $\sigma\tau\ne\tau\sigma$, contradicting centrality. Hence
-\[
+$$
 \boxed{Z(S_n)=\{1\}\qquad(n\ge3)}.
-\]
+$$
 :::
