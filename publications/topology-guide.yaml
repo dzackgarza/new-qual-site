@@ -301,7 +301,6 @@ sections:
       - ref: D-RQS4J
       - ref: D-VP4LC
       - ref: D-QP7WI
-      - ref: PR-4X6G2
       - ref: T-QNYSB
       - ref: D-5KDNB
       - ref: D-6POU4
