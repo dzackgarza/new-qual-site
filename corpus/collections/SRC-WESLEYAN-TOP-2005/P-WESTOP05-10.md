@@ -41,8 +41,6 @@ audit:
 
 ::: {.solution}
 
-## Part 1: the based lifting criterion
-
 Let
 $$
 p:(E,e_0)\to(B,b_0)
@@ -381,6 +379,28 @@ $$
 ::: pf-proof
 
 The lift in step [](#s1-12){.pf-ref} is based.
+
+:::
+
+:::
+
+::: pf-step
+
+Define continuous maps $A,B:H^3\to H$ by
+$$
+A(h_1,h_2,h_3)
+=
+\mu'(\mu'(h_1,h_2),h_3),
+\qquad
+B(h_1,h_2,h_3)
+=
+\mu'(h_1,\mu'(h_2,h_3)).
+$$
+
+
+::: pf-proof
+
+Each is a composite of $\mu'$, which is continuous by step [](#s1-12){.pf-ref}, with products of continuous maps.
 
 :::
 
