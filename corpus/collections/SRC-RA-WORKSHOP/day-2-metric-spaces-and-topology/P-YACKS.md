@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YACKS
 kind: problem
-title: Compactness of $\{x\in\QQ : 2<x^2<3\}$ in $\QQ$
+title: Compactness of $\{x\in\QQ \mid 2<x^2<3\}$ in $\QQ$
 classification:
   areas:
   - real-analysis
