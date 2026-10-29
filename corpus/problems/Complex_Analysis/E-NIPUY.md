@@ -5,7 +5,7 @@ kind: problem
 title: Uniform continuity of $x^{-n}$ near $0$
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Uniform Continuity
   - Continuity
