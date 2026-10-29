@@ -53,8 +53,6 @@ If $X$ is a Banach space and $\sum_n\norm{x_n}<\infty$, then $\sum_n x_n$ conver
 
 [[D-PAEDW]]
 
-[[FD-AI6XN]] [[FF-JBCFQ]]
-
 ::: {.remark}
 For sets $E_n\subseteq X$,
 $$
