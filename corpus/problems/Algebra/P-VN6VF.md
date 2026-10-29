@@ -19,7 +19,7 @@ Give an example of a UFD that is not a Euclidean domain.
 :::
 
 ::: {.solution}
-Let $k$ be a field. We show that $k[x,y]$ is a $\boxed{\text{UFD that is not Euclidean}}$.
+Let $k$ be a field. The ring $\boxed{k[x,y]}$ is a UFD that is not a Euclidean domain.
 
 ::: pf
 
