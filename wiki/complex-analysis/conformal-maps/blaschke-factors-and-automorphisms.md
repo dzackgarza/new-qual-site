@@ -21,8 +21,6 @@ Every biholomorphic self-map of $\DD$ has the form $e^{i\theta}\psi_a$ for some 
 
 [[PR-ULJAJ]]
 
-[[FF-4GUYL]]
-
 ::: {.remark}
 For $a\neq 0$, $\psi_a(z) = (a-z)/(1-\bar a z)$ has a simple zero at $z=a$ and a simple pole at $z = 1/\bar a$, the reflection of $a$ in the unit circle.
 
