@@ -78,21 +78,6 @@ Compactness of $K$ inside $\Omega$ is needed: $\sin\bigl(\pi/(1-z)\bigr)$ is hol
 
 :::
 
-[[PR-5A64G]]
-
-::: {.proof title="Existence and uniqueness of the order"}
-Assume $z_0 = 0$.
-Since $f$ is not identically zero on the connected set $\Omega$, the identity principle shows that not every Taylor coefficient of $f$ at $0$ vanishes.
-Expand $f$ as a power series on a disc about $0$:
-$$
-f(z) = \sum_{k\geq 0}c_k z^k = z^n\qty{c_n + c_{n+1}z + \cdots} \coloneqq z^n g(z)
-,$$
-where $c_n$ is the minimal nonvanishing coefficient.
-Since $c_n \neq 0$ and $\lim_{z\to 0} g(z) = c_n$, $g$ is nonvanishing on a neighborhood of $0$.
-For uniqueness, $z^n g(z) = z^m h(z)$ with $m > n$ gives $g(z) = z^{m-n}h(z)$, and letting $z\to 0$ forces $g(0) = 0$, a contradiction.
-
-:::
-
 [[PR-VUBCC]]
 
 [[PR-EWOP5]]
@@ -114,8 +99,6 @@ $\contradiction$
 :::
 
 [[C-F2ZZQ]]
-
-[[PR-ITZIT]]
 
 ## Poles
 

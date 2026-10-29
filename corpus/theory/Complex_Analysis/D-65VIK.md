@@ -40,3 +40,9 @@ Uniqueness.
 Suppose $(z-z_0)^n g(z)=(z-z_0)^m h(z)$ near $z_0$ with $g(z_0)\neq0$, $h(z_0)\neq0$, and $n<m$.
 Then $g(z)=(z-z_0)^{m-n}h(z)$ for $z\neq z_0$ near $z_0$, and letting $z\to z_0$ gives $g(z_0)=0$, a contradiction.
 :::
+
+::: {.remark title="Variations"}
+The proof shows that the order $n$ is characterized by $f^{(k)}(z_0)=0$ for $0\le k\le n-1$ and $f^{(n)}(z_0)\neq0$, equivalently by the Taylor expansion $f(z)=\sum_{k\ge n}c_k(z-z_0)^k$ with $c_n\neq0$.
+The neighborhood $U$ may be taken to be all of $\Omega$: the function $g(z)\coloneqq f(z)/(z-z_0)^n$ for $z\neq z_0$, with $g(z_0)\coloneqq f^{(n)}(z_0)/n!$, agrees near $z_0$ with the power series in the proof, so it is holomorphic on $\Omega$ and $f=(z-z_0)^ng$ on $\Omega$.
+Shrinking $U$ instead, $g$ may be taken nonvanishing on $U$, by continuity.
+:::
