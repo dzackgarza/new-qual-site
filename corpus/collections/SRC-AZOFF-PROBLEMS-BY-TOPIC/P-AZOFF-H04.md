@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-How many roots does the equation $z ^ { 7 } - 4 z ^ { 3 } - 1 = 0$ have in the open disk $| z | < 1 \ \mathrm { ? }$
+How many roots does the equation $z^7-4z^3-1=0$ have in the open disk $\abs{z}<1$?
 :::
 
 ::: {.solution}

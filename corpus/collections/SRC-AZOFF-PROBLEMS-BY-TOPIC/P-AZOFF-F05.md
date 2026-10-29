@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Find all entire functions which have poles at $\infty$
+Find all entire functions which have poles at $\infty$.
 :::
 
 ::: {.solution}

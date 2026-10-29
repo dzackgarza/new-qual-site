@@ -27,10 +27,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $| a _ { k } | < 1 ( k = 1 , 2 , \ldots , n ) , | b | < 1$ and
+Let $\abs{a_k}<1$ ($k=1,2,\ldots,n$), $\abs{b}<1$, and
 
 $$
-f ( z ) = { \frac { z - a _ { 1 } } { 1 - { \overline { { a } } } _ { 1 } z } } { \frac { z - a _ { 2 } } { 1 - { \overline { { a } } } _ { 2 } z } } \cdots { \frac { z - a _ { n } } { 1 - { \overline { { a } } } _ { n } z } } .
+f(z)=\frac{z-a_1}{1-\bar a_1 z}\,\frac{z-a_2}{1-\bar a_2 z}\cdots\frac{z-a_n}{1-\bar a_n z}.
 $$
 
 Show that $f(z) = b$ has $n$ solutions in $\abs{z} < 1$.

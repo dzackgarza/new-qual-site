@@ -28,7 +28,10 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $a > b > 0$ . Evaluate $\begin{array} { r } { \int _ { 0 } ^ { 2 \pi } \frac { d \theta } { ( a + b \cos \theta ) ^ { 2 } } } \end{array}$
+Suppose $a>b>0$. Evaluate
+$$
+\int_0^{2\pi} \frac{d\theta}{(a+b\cos\theta)^2}.
+$$
 :::
 
 ::: {.solution}

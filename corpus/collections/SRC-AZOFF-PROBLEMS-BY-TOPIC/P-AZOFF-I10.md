@@ -36,7 +36,7 @@ audit:
 Prove that for any $a \in \DD$
 
 $$
-{ \frac { | f ^ { \prime } ( a ) | } { 1 - | f ( a ) | ^ { 2 } } } \leq { \frac { 1 } { 1 - | a | ^ { 2 } } } .
+\frac{\abs{f'(a)}}{1-\abs{f(a)}^2}\leq\frac{1}{1-\abs{a}^2}.
 $$
 :::
 
