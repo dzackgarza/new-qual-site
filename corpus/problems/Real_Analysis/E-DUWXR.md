@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.exercise}
-- $\star$: Show that $$f,g \in L^1 \implies f\ast g \in L^1 \qtext{and} \norm{f\ast g}_1 \leq \norm{f}_1 \norm{g}_1.$$
+$\star$: Show that $$f,g \in L^1 \implies f\ast g \in L^1 \qtext{and} \norm{f\ast g}_1 \leq \norm{f}_1 \norm{g}_1.$$
 :::
 
 ::: {.solution}
@@ -27,7 +27,7 @@ Let $f,g \in L^1(\RR)$.
 
 ::: pf
 
-::: {.pf-step #s1}
+::: pf-step
 $f \ast g$ is defined almost everywhere and belongs to $L^1(\RR)$.
 
 ::: pf-proof
@@ -49,17 +49,13 @@ By step [](#s1-1){.pf-ref}, $(x,y)\mapsto f(x-y)g(y)$ is in $L^1(\RR^2)$. By Fub
 
 :::
 
-::: {.pf-step #s2}
+::: pf-step
 $\norm{f\ast g}_1 \leq \norm{f}_1 \norm{g}_1$.
 
 ::: pf-proof
 $\norm{f\ast g}_1 = \int |f\ast g(x)|\,dx \leq \int\!\int |f(x-y)g(y)|\,dy\,dx = \norm{f}_1 \norm{g}_1$, where the last equality is step [](#s1-1){.pf-ref}.
 :::
 
-:::
-
-::: pf-qed
-step [](#s1){.pf-ref} gives $f\ast g \in L^1$ and step [](#s2){.pf-ref} gives the norm bound.
 :::
 
 :::
