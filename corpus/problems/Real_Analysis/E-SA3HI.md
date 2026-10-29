@@ -64,7 +64,7 @@ If $\dist(k_0, F) = 0$, then $k_0$ is a limit of points of $F$; since $F$ is clo
 
 ::: pf-qed
 
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, $\dist(K,F) = \dist(k_0,F) > 0$.
 
 :::
 
