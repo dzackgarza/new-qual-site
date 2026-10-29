@@ -95,7 +95,7 @@ def build_search_index(site: Path) -> None:
 
 def build_catalog(root: Path, parsed: list[ParsedCard]) -> Path:
     db = root / "build" / "catalog.sqlite"
-    index.build(parsed, db)
+    index.build(parsed, db, index.load_institution_names(root / "vocabularies"))
     return db
 
 

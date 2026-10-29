@@ -872,7 +872,7 @@ def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
         select cp.problem_id, cp.collection_id, cp.section_ordinal, cp.section_name, cp.ordinal, cp.comment,
           c.title as collection_title, s.source_kind, s.year as source_year,
           case when s.source_kind='university-exam' then s.year else null end as exam_year,
-          e.institution
+          e.institution_name as institution
         from collection_problems cp
         join cards listed on listed.id=cp.problem_id and listed.kind='problem'
         join cards c on c.id=cp.collection_id
@@ -1187,7 +1187,7 @@ def _card_meta(
 
 def _asked_meta(data: CardPageData, card: sqlite3.Row, area_names: dict[str, str]) -> dict[str, object]:
     facets = _page_rows(data.facets, card["id"])
-    institutions = sorted({f["institution"].upper() for f in facets if f["institution"]})
+    institutions = sorted({f["institution"] for f in facets if f["institution"]})
     years = sorted({str(f["exam_year"]) for f in facets if f["exam_year"] is not None})
     areas = _page_terms(data, card["id"], "area")
     topics = _page_terms(data, card["id"], "topic")
@@ -1270,7 +1270,7 @@ def _card_filters(
         *(("topic", term) for term in _page_terms(data, card["id"], "topic")),
         *sorted({("source_kind", row["source_kind"]) for row in facets}),
         *sorted({("collection", row["collection_id"]) for row in facets}),
-        *sorted({("institution", row["institution"].upper()) for row in facets if row["institution"]}),
+        *sorted({("institution", row["institution"]) for row in facets if row["institution"]}),
         *sorted({("year", str(row["source_year"])) for row in facets if row["source_year"] is not None}),
     )
 
@@ -1866,11 +1866,10 @@ def card_source_collections(
         order by c.title, coalesce(cp.section_ordinal, -1), cp.ordinal
         """,
     ):
-        locator = row["comment"] or f"problem {row['ordinal'] + 1}"
         sources[row["problem_id"]].append(
             Appearance(
                 target_key=row["collection_id"],
-                title=f"{row['title']}, {locator}",
+                title=f"{row['title']}, {row['comment']}" if row["comment"] else row["title"],
             )
         )
     return sources
@@ -2019,7 +2018,7 @@ def collection_problem_index(
         con,
         """
         select cp.collection_id, cp.section_ordinal, cp.section_name, cp.ordinal, cp.problem_id, cp.comment,
-          source.title as collection_title, problem.title as problem_title, s.source_kind, s.year, e.institution
+          source.title as collection_title, problem.title as problem_title, s.source_kind, s.year, e.institution_name as institution
         from collection_problems cp
         join cards source on source.id=cp.collection_id
         join cards problem on problem.id=cp.problem_id and problem.kind='problem'
@@ -2042,7 +2041,7 @@ def collection_problem_index(
             "collection": [collection_id],
         }
         if row["institution"]:
-            filters["institution"] = [row["institution"].upper()]
+            filters["institution"] = [row["institution"]]
         if row["year"] is not None:
             filters["year"] = [str(row["year"])]
         locator = row["comment"] or ""
@@ -2078,7 +2077,7 @@ def problem_table_data(
         area_ids = _page_terms(data, card["id"], "area")
         topics = _page_terms(data, card["id"], "topic")
         source_kinds = sorted({row["source_kind"] for row in facets})
-        institutions = sorted({row["institution"].upper() for row in facets if row["institution"]})
+        institutions = sorted({row["institution"] for row in facets if row["institution"]})
         years = sorted({str(row["source_year"]) for row in facets if row["source_year"] is not None})
         collections = sorted({collection_names[row["collection_id"]] for row in facets})
         source_bits = institutions or [SOURCE_KIND_HEADINGS[kind] for kind in source_kinds]
@@ -2121,10 +2120,14 @@ def source_table_data(
         f"""
         select c.id, c.title, c.route, s.source_kind, s.year, s.term,
           coalesce(e.institution, '') as institution,
+          coalesce(e.institution_name, '') as institution_name,
           coalesce(e.area, '') as exam_area,
           {TERM_RANK} as term_rank,
-          (select count(*) from collection_problems cp where cp.collection_id=c.id) as problems,
           (select count(*) from collection_problems cp
+             join cards listed on listed.id=cp.problem_id and listed.kind='problem'
+             where cp.collection_id=c.id) as problems,
+          (select count(*) from collection_problems cp
+             join cards listed on listed.id=cp.problem_id and listed.kind='problem'
              where cp.collection_id=c.id
                and cp.problem_id in (select card_id from sections where section_kind='solution')) as solved
         from cards c join sources s on s.id=c.id
@@ -2141,7 +2144,7 @@ def source_table_data(
                 "url": f"{row['route']}/{row['id']}.html",
                 "sourceKind": SOURCE_KIND_HEADINGS[row["source_kind"]],
                 "areas": [area_names[area] for area in area_ids],
-                "institution": row["institution"].upper() if row["institution"] else "",
+                "institution": row["institution_name"],
                 "year": str(row["year"]) if row["year"] is not None else "",
                 "worked": f"{row['solved']} / {row['problems']} solved" if row["problems"] else "No problems listed",
                 "order": f"{list(SOURCE_KIND_HEADINGS).index(row['source_kind']):02d}|{row['institution']}|{row['year'] or 0:04d}|{row['term_rank']}|{row['exam_area']}",
@@ -2579,8 +2582,11 @@ def project(
             select s.id, s.source_kind,
               coalesce(e.institution, '') as institution, coalesce(e.area, '') as area, s.year,
               {TERM_RANK} as term_rank,
-              (select count(*) from collection_problems where collection_id=s.id) as problems,
               (select count(*) from collection_problems cp
+               join cards listed on listed.id=cp.problem_id and listed.kind='problem'
+               where cp.collection_id=s.id) as problems,
+              (select count(*) from collection_problems cp
+               join cards listed on listed.id=cp.problem_id and listed.kind='problem'
                where cp.collection_id=s.id
                  and cp.problem_id in (select card_id from sections where section_kind='solution')) as solved
             from sources s left join exam_sources e on e.id=s.id

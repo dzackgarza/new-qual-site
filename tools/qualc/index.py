@@ -53,7 +53,10 @@ create table sources (
   date_kind text not null, year integer, term text,
   completion text not null
 );
-create table exam_sources (id text primary key, institution text not null, area text not null);
+create table exam_sources (
+  id text primary key, institution text not null, area text not null,
+  institution_name text not null   -- the vocabulary's name for `institution`
+);
 create table textbook_sources (id text primary key, textbook text not null);
 create table homework_sources (id text primary key, area text not null);
 create table compilation_sources (id text primary key, area text not null);
@@ -219,7 +222,12 @@ def card_route(card: Card) -> str:
     return "exam" if isinstance(card.source, ExamSource) else "source"
 
 
-def build(parsed: list[ParsedCard], db_path: Path) -> None:
+def load_institution_names(vocabulary_root: Path) -> dict[str, str]:
+    """Institution id to the name `institutions.yaml` gives it."""
+    return {entry["id"]: entry["name"] for entry in yaml.safe_load((vocabulary_root / "institutions.yaml").read_text())}
+
+
+def build(parsed: list[ParsedCard], db_path: Path, institution_names: dict[str, str]) -> None:
     db_path.parent.mkdir(parents=True, exist_ok=True)
     db_path.unlink(missing_ok=True)
     con = sqlite3.connect(db_path)
@@ -282,8 +290,8 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
             match c.source:
                 case ExamSource():
                     con.execute(
-                        "insert into exam_sources values (?,?,?)",
-                        (c.id, c.source.institution, c.source.area),
+                        "insert into exam_sources values (?,?,?,?)",
+                        (c.id, c.source.institution, c.source.area, institution_names[c.source.institution]),
                     )
                     _insert_problems(con, c.id, None, None, c.source.problems)
                 case TextbookSource():

@@ -665,3 +665,25 @@ def static_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
     return work
+
+
+def test_a_source_counts_only_the_problem_cards_it_lists(static_site: Path) -> None:
+    """SRC-PACKET lists one problem and one reprinted exam; the exam is not a problem."""
+    site = static_site / "build" / "quarto" / "_site"
+    rows = {row["id"]: row for row in json.loads((site / "sources.json").read_text())["rows"]}
+    assert rows["SRC-PACKET"]["worked"] == "0 / 1 solved"
+
+
+def test_an_appearance_without_a_comment_names_only_its_collection(static_site: Path) -> None:
+    """P-PACKET-1's appearance has no authored locator, so none is derived from its ordinal."""
+    page = (static_site / "build" / "quarto" / "_site" / "tag" / "P-PACKET-1.html").read_text()
+    assert "Algebra qual packet" in page
+    assert "Algebra qual packet, problem" not in page
+
+
+def test_an_institution_is_named_by_the_vocabulary(static_site: Path) -> None:
+    site = static_site / "build" / "quarto" / "_site"
+    sources = {row["id"]: row for row in json.loads((site / "sources.json").read_text())["rows"]}
+    assert sources["SRC-UGA-FIX"]["institution"] == "University of Georgia"
+    problems = {row["id"]: row for row in json.loads((site / "problems.json").read_text())["rows"]}
+    assert problems["P-CENTER"]["institutions"] == ["University of Georgia"]

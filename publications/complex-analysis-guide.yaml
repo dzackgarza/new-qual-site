@@ -1,7 +1,7 @@
 schema: qual/publication@2
 id: GUIDE-COMPLEX-ANALYSIS
 kind: study-guide
-title: Complex Analysis
+title: Complex analysis
 lede: >-
   The qualifying exam syllabus in complex analysis: complex arithmetic and the elementary
   functions, power series, holomorphy and the Cauchy--Riemann equations, harmonic

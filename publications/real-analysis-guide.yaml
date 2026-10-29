@@ -1,7 +1,7 @@
 schema: qual/publication@2
 id: GUIDE-REAL-ANALYSIS
 kind: study-guide
-title: Real Analysis
+title: Real analysis
 lede: 'Real analysis: metric spaces, differentiation, integration, measure theory, functional
   analysis, and Fourier analysis.'
 sections:

@@ -1,7 +1,7 @@
 schema: qual/publication@2
 id: GUIDE-APPLIED-ALGEBRA
 kind: study-guide
-title: Applied Algebra
+title: Applied algebra
 lede: >-
   The qualifying exam syllabus in applied algebra: spectral theory and factorizations of
   matrices, representations and characters of finite groups, symmetric functions and the
