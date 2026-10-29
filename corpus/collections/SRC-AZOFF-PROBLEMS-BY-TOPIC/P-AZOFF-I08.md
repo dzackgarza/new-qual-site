@@ -61,7 +61,7 @@ for every $z\in\DD$.
 
 ::: pf-proof
 
-This is Schwarz's lemma; the source's first part asks for its statement.
+This is Schwarz's lemma, whose statement the first part of the problem asks for.
 
 :::
 
