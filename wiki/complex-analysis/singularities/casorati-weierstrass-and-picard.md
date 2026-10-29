@@ -15,26 +15,8 @@ Near an essential singularity, a holomorphic function takes values dense in $\CC
 
 [[T-C5VEI]]
 
-[[FT-2N57U]]
-
 ::: {.slogan}
 The image of a punctured disc at an essential singularity is dense in $\CC$.
-
-:::
-
-::: {.proof title="Casorati--Weierstrass theorem"}
-Let $f$ have an essential singularity at $z_0$, and suppose toward a contradiction that there is a punctured neighborhood $\Omega$ of $z_0$, a point $w\in\CC$, and $\varepsilon>0$ with $f(\Omega) \intersect \DD_\varepsilon(w)$ empty, so that $\abs{f(z) - w} \geq \varepsilon$ on $\Omega$.
-
-Define
-$$
-g(z) \coloneqq {1\over f(z) - w}
-,$$
-which is holomorphic on $\Omega$ and bounded there by $\inverseof{\varepsilon}$, and not identically zero.
-By Riemann's removable singularity theorem $g$ extends holomorphically across $z_0$.
-
-Now $f(z) = {1\over g(z)} + w$.
-If $g(z_0) = 0$ then $z_0$ is a zero of finite order for $g$, hence a pole of finite order for $f$, contradicting that $z_0$ is essential.
-If $g(z_0) \neq 0$ then $1/g + w$ is holomorphic near $z_0$ and equals $f$ off $z_0$, so $z_0$ is removable, again a contradiction.
 
 :::
 
