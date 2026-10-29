@@ -27,7 +27,7 @@ prompts:
 ::: {.definition}
 For a projective integral curve $C$ over $k = \bar{k}$:
 
-- the \dfn{arithmetic genus} is $p_a(C) = 1 - \chi(\OO_C)$, the constant term of the Hilbert polynomial read with a sign;
+- the \dfn{arithmetic genus} is $p_a(C) = 1 - \chi(\OO_C)$, so that $p_a(C) = 1 - P_C(0)$ for the Hilbert polynomial $P_C$ of any embedding of $C$ in a projective space;
 
 - the \dfn{geometric genus} is $p_g(C) = h^0(\tilde{C}, \omega_{\tilde{C}}) = p_a(\tilde{C})$, computed on the normalization $\tilde{C}$.
 :::
@@ -37,12 +37,12 @@ If $X$ is a nonsingular projective curve over $k = \bar k$, then
 $$
 p_a(X) = p_g(X) = \dim_k H^1(X, \OO_X) ,
 $$
-the **genus** $g$ of $X$: since $h^0(\OO_X) = 1$, $p_a = 1 - \chi(\OO_X) = h^1(\OO_X)$, and Serre duality gives $h^0(\omega_X) = h^1(\OO_X)$.
+the \dfn{genus} $g$ of $X$: since $h^0(\OO_X) = 1$, $p_a = 1 - \chi(\OO_X) = h^1(\OO_X)$, and Serre duality gives $h^0(\omega_X) = h^1(\OO_X)$.
 [@Har10a, Exercise III.5.3]
 :::
 
 ::: {.proposition}
-$p_g \leq p_a$, with
+For $C$ as above with normalization $\nu \colon \tilde C \to C$, $p_g(C) \leq p_a(C)$, with
 $$
 p_a(C) - p_g(C) = \sum_{p \in C} \delta_p ,
 $$
