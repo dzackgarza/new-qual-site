@@ -23,7 +23,3 @@ R \cong \bigoplus_{i=1}^m \Mat_{n_i}(D_i),
 $$
 a finite direct sum of the rings of $n_i\times n_i$ matrices over $D_i$.
 :::
-
-::: {.slogan}
-Semisimple rings are finite direct sums of matrix rings over division rings.
-:::
