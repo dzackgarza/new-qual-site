@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-UFTKH
 kind: problem
-title: $\mathrm{cl}_X(\bigcup_i A_i)=\bigcup_i\mathrm{cl}_X(A_i)$
+title: Closure of a finite union is the union of the closures
 classification:
   areas:
   - topology
@@ -10,23 +10,30 @@ classification:
   - Closure
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The source asks to show cl_X(union_i A_i) = union_i cl_X(A_i) for an arbitrary family, which is false (A_n = {1/n} in R). The statement now takes finitely many sets; the infinite counterexample is a remark."
 ---
 
 ::: {.exercise}
-Show that if $A_i \subseteq X$, then $\cl_X(\union_i A_i) = \union_i \cl_X(A_i)$.
+Show that if $A_1,\ldots,A_n \subseteq X$, then $\cl_X\left(\union_{i=1}^n A_i\right) = \union_{i=1}^n \cl_X(A_i)$.
 :::
 
 ::: {.solution}
 
+Write $\overline{S}$ for $\cl_X(S)$.
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #two-sets}
 
-The displayed assertion is true for finite unions but false for arbitrary indexed unions.
+For $A,B\subseteq X$, $\overline{A\cup B}=\overline A\cup\overline B$.
 
 ::: pf-proof
 
-For two sets, $\overline{A\cup B}=\overline A\cup\overline B$: the right side is closed and contains $A\cup B$, while monotonicity of closure gives the reverse inclusion. Induction handles finite unions.
+The set $\overline A\cup\overline B$ is closed and contains $A\cup B$, so it contains $\overline{A\cup B}$. Conversely, $A\subseteq A\cup B$ gives $\overline A\subseteq\overline{A\cup B}$ by monotonicity of closure, and likewise for $B$.
 
 :::
 
@@ -34,31 +41,21 @@ For two sets, $\overline{A\cup B}=\overline A\cup\overline B$: the right side is
 
 ::: pf-step
 
-For an infinite counterexample in $\mathbb R$, take $A_n=\{1/n\}$ for $n\ge1$.
+$\overline{\bigcup_{i=1}^nA_i}=\bigcup_{i=1}^n\overline{A_i}$.
 
 ::: pf-proof
 
-Each $A_n$ is closed, so $\bigcup_n\overline{A_n}=\{1/n:n\ge1\}$. But $0$ is a limit point of the union, hence
+Induct on $n$: the case $n=1$ is trivial, and $\bigcup_{i=1}^{n}A_i=\left(\bigcup_{i=1}^{n-1}A_i\right)\cup A_n$, so step [](#two-sets){.pf-ref} and the inductive hypothesis give the claim.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark}
+For an infinite family only $\bigcup_i\overline{A_i}\subseteq\overline{\bigcup_iA_i}$ holds. In $\RR$, take $A_n=\{1/n\}$ for $n\ge1$: each $A_n$ is closed, so $\bigcup_n\overline{A_n}=\{1/n:n\ge1\}$, but
 $$0\in\overline{\bigcup_nA_n}\setminus\bigcup_n\overline{A_n}.$$
-
-:::
-
-:::
-
-::: pf-step
-
-Thus the correct general relation is only
-$$\boxed{\bigcup_i\overline{A_i}\subseteq\overline{\bigcup_iA_i}},$$
-with equality guaranteed for finite index sets.
-
-::: pf-proof
-
-Each $A_i\subseteq\bigcup_jA_j$, so monotonicity gives $\overline{A_i}\subseteq\overline{\bigcup_jA_j}$; take the union over $i$.
-
-:::
-
-:::
-
-:::
-
 :::
