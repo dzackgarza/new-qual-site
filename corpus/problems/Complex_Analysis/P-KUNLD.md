@@ -19,29 +19,48 @@ Find a Laurent expansion about $z_0=0$ for $f(z) = \tan(z)$ by using polynomial 
 :::
 
 ::: {.solution}
-Computing the Laurent series for $\tan(z)$ at $z=0$:
+Write $C(z) = 1 - \frac{z^2}{2} + \frac{z^4}{24} + O(z^6)$ and $S(z) = z - \frac{z^3}{6} + \frac{z^5}{120} + O(z^7)$ for the series of $\cos z$ and $\sin z$.
+Since $\cos 0 \neq 0$, $\tan z = S/C$ is holomorphic at $0$, so its Laurent series is a Taylor series, convergent for $\abs{z} < \pi/2$; we divide $S$ by $C$ in increasing powers of $z$.
 
-\[
-{\sin(z) \over \cos(z)} 
-&= {z - {1\over 3!}z^3 + {1\over 5!} z^5 + \bigo(z^7) \over 1 - {1\over 2!} z^2 + {1\over 4!}z^4 + \bigo(z^6) } 
-\\ \\
-z - {1\over 3!}z^3 + {1\over 5!}z^5 
-&= \qty{1 - {1\over 2!}z^2 + {1\over 4!}z^4}(z)
-\ +\qty{ \qty{{1\over 2!} - {1\over 3!}}z^3 + \qty{-{1\over 4!} + {1\over 5!} }z^5 } \\
-&= \qty{1 - {1\over 2!}z^2 + {1\over 4!}z^4}(z)
-\ +\qty{ {1\over 3}z^3 -{1\over 30}z^5 } 
-\\ \\
-{1\over 3}z^3 -{1\over 30}z^5 
-&= \qty{1 - {1\over 2!}z^2 + {1\over 4!}z^4}\qty{{1\over 3} z^3}
-\ +\qty{ \qty{ {1\over 6} - {1\over 30} } z^5 + \qty{ -{1\over 3\cdot 24} }z^7 } 
-\\
-&= \qty{1 - {1\over 2!}z^2 + {1\over 4!}z^4}\qty{{1\over 3} z^3}
-\ + \qty{ {2\over 15}z^5 - {1\over 72}z^7 }
-\\ \\
-{ {2\over 15}z^5 - {1\over 72}z^7 }
-&= \qty{1 - {1\over 2!}z^2 + {1\over 4!}z^4}\qty{{2\over 15} z^5} + \cdot
-\\ \\
-\implies \tan(z) &= z + {1\over 3}z^3 + {2\over 15 }z^5 + \bigo(z^7)
-.\]
+::: pf
 
+::: {.pf-step #first}
+$S = C\cdot z + \frac13 z^3 - \frac1{30}z^5 + O(z^7)$.
+
+::: pf-proof
+$C\cdot z = z - \frac{z^3}{2} + \frac{z^5}{24} + O(z^7)$, and $-\frac16 + \frac12 = \frac13$, $\frac1{120} - \frac1{24} = -\frac1{30}$.
+:::
+
+:::
+
+::: {.pf-step #second}
+$\frac13 z^3 - \frac1{30}z^5 = C\cdot\frac13 z^3 + \frac2{15}z^5 + O(z^7)$.
+
+::: pf-proof
+$C\cdot\frac13 z^3 = \frac13 z^3 - \frac16 z^5 + O(z^7)$, and $-\frac1{30} + \frac16 = \frac2{15}$.
+:::
+
+:::
+
+::: {.pf-step #third}
+$\frac2{15}z^5 = C\cdot\frac2{15}z^5 + O(z^7)$.
+
+::: pf-proof
+$C\cdot\frac2{15}z^5 = \frac2{15}z^5 + O(z^7)$.
+:::
+
+:::
+
+::: pf-step
+$$
+\boxed{\tan z = z + \frac13 z^3 + \frac2{15}z^5 + O(z^7)}.
+$$
+
+::: pf-proof
+Steps [](#first){.pf-ref}, [](#second){.pf-ref} and [](#third){.pf-ref} give $S = C\cdot\left(z + \frac13 z^3 + \frac2{15}z^5\right) + O(z^7)$; divide by $C$, which is a unit near $0$.
+:::
+
+:::
+
+:::
 :::
