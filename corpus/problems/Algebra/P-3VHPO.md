@@ -9,6 +9,8 @@ classification:
   topics:
   - Field Extensions
   - Splitting Fields
+prompts:
+- What is an example of isomorphic but not equal fields?
 relations: []
 review: draft
 ---

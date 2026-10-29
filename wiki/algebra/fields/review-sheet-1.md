@@ -12,6 +12,6 @@ aliases: [Algebra Fields Review 1]
 
 ## Problems
 
-[[P-TTUVH]] [[P-ZIMYA]] [[P-ZYHXO]] [[P-4FVOI]] [[P-UZDCX]]
+[[P-TTUVH]] [[P-ZIMYA]] [[P-ZYHXO]] [[P-UZDCX]]
 
 [[P-CDUB4]] [[P-HI4U2]] [[P-IEZIG]] [[P-DUXVY]]

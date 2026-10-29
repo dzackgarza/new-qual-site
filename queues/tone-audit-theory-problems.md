@@ -258,7 +258,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Algebra/P-4BQIP.md` | `8aad2c3ce56f190f7e5bc156cf7dbabd3c29cc0f` | `8aad2c3ce56f190f7e5bc156cf7dbabd3c29cc0f` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-4CJY7.md` | `83aa0cee7847da82fbcbd28964b9822d4a6ac417` | `83aa0cee7847da82fbcbd28964b9822d4a6ac417` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-4DRTY.md` | `0afe5ab4e5b471e9d8c57b1ea34b964b7cfabcde` | `0afe5ab4e5b471e9d8c57b1ea34b964b7cfabcde` | Read; retained |
-| [x] | `corpus/problems/Algebra/P-4FVOI.md` | `84471fdcc1dce8cc10209ee2b1957ef28166bf0d` | `84471fdcc1dce8cc10209ee2b1957ef28166bf0d` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-4GQEC.md` | `55ac9b2f01c4084610df4d6545b988ed5c57c9b6` | `55ac9b2f01c4084610df4d6545b988ed5c57c9b6` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-4H2GZ.md` | `72c3281f79c9e2158e8791572d99a242c0549cbf` | `72c3281f79c9e2158e8791572d99a242c0549cbf` | Read; retained |
 | [x] | `corpus/problems/Algebra/P-4HGM3.md` | `b9e0535b8152137a50d5c95bde3bd374a3c4c749` | `b9e0535b8152137a50d5c95bde3bd374a3c4c749` | Read; retained |
