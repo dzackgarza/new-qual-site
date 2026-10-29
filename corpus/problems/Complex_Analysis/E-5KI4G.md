@@ -22,7 +22,7 @@ audit:
 ::: {.exercise}
 Determine where on $[0,\infty)$ the following sequence of real-valued functions is or is not uniformly convergent:
 $$
-f_n(x) \definedas \frac{\sin(nx)}{1+nx}.
+f_n(x) \coloneqq \frac{\sin(nx)}{1+nx}.
 $$
 
 :::
