@@ -22,7 +22,6 @@ Show that if $X$ is Hausdorff and $A\subseteq X$ is compact then $A$ is closed.
 :::
 
 ::: {.solution}
-**Goal:** Show that if $X$ is Hausdorff and $A \subseteq X$ is compact, then $A$ is closed.
 
 ::: pf
 
@@ -81,7 +80,7 @@ If $y \in V \cap A$, then $y \in U_{a_j}$ for some $j$ (step [](#s3){.pf-ref}), 
 :::
 
 ::: pf-qed
-step [](#s1){.pf-ref} and step [](#s4){.pf-ref} show every $x \notin A$ has a neighborhood avoiding $A$; hence $A$ is closed.
+Steps [](#s1){.pf-ref} and [](#s4){.pf-ref} show that every $x \notin A$ has a neighborhood avoiding $A$; hence $A$ is closed.
 :::
 
 :::
