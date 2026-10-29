@@ -133,6 +133,8 @@ mathematical correction under its own node, not under copy policy.
     SRC-JHU-ANALYSIS-EXAMS, SRC-TEXT-HK71 and SRC-HARVARD-MATH213A-2017. Each use is read in
     context: a `\mathbb` letter that is not a standard number system with a vocabulary macro
     stays. **Acceptance:** every remaining `\mathbb` is one that `STYLE-03` permits.
+    **Progress 2026-10-30:** SRC-TEXT-MUN00 done (f3ecc3fa43); it keeps `\mathbb{P}` for the
+    irrationals in E-AKPMH and `\mathbb{B}^2` for the open ball in E-2B91X. Next: SRC-TEXT-HAT02.
   - **`ad2-complex-analysis-content`**. **Needs:** none. The power-series Dirichlet's-test proof
     swaps the two sequences. CARD-04: PR-K57J6/E-TZJKN; E-6F2HU/E-THK2Z; PR-OOHUL/E-PAQPF;
     PR-Y36BS/D-E7A5W proposition/Cauchy–Riemann page remark; T-E76LX/P-Y5SS5; D-4CSPM/D-OMBQT;
