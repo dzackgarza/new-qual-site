@@ -5,6 +5,7 @@ kind: definition
 title: Diameter of a subset of a metric space
 prompts:
 - What is the diameter of a set $A$ in a metric space?
+- What is the diameter of a set?
 classification:
   areas:
   - real-analysis

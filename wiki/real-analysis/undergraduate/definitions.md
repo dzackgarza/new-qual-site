@@ -20,7 +20,7 @@ In the definition of continuity on a set, $\delta$ may depend on both $\varepsil
 
 [[D-TVKFM]]
 
-[[FD-5I73B]] [[FF-7JOOD]]
+[[FD-5I73B]]
 
 [[D-IYDZU]]
 
