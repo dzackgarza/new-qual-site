@@ -28,19 +28,51 @@ Thus $H_0(X)\cong\ZZ^{\pi_0(X)}$.
 :::
 
 ::: {.solution}
-Every singular simplex has path-connected image, hence its image lies in a unique path component of $X$.
-Therefore the singular chain complex decomposes degreewise, compatibly with the boundary maps, as
-$$
-S_*(X)=\bigoplus_{Y\in\pi_0(X)}S_*(Y).
-$$
-Kernels and images of a direct sum of chain complexes are the corresponding direct sums, so
-$$
-H_n(X)\cong\bigoplus_{Y\in\pi_0(X)}H_n(Y).
-$$
-For every path-connected component $Y$, $H_0(Y)\cong\ZZ$.
-Hence
-$$
-H_0(X)\cong\bigoplus_{Y\in\pi_0(X)}\ZZ,
-$$
-the free abelian group on the set $\pi_0(X)$, usually denoted $\ZZ[\pi_0(X)]$.
+Write $S_*(X)$ for the singular chain complex.
+When $\pi_0(X)$ is infinite, $\ZZ^{\pi_0(X)}$ must be read as the direct sum $\bigoplus_{\pi_0(X)} \ZZ$, the free abelian group on $\pi_0(X)$, not the product.
+
+::: pf
+
+::: {.pf-step #split}
+$S_*(X) = \bigoplus_{Y \in \pi_0(X)} S_*(Y)$ as chain complexes.
+
+::: pf-proof
+A singular simplex $\Delta^n \to X$ has path-connected image, so its image lies in a unique path component $Y$.
+So each $S_n(X)$ is the direct sum of the $S_n(Y)$.
+Each face of a simplex in $Y$ is again in $Y$, so the boundary map preserves each summand.
+:::
+
+:::
+
+::: {.pf-step #sum}
+$H_n(X) \cong \bigoplus_{Y \in \pi_0(X)} H_n(Y)$.
+
+::: pf-proof
+By step [](#split){.pf-ref}, the boundary maps are direct sums.
+The kernel and the image of a direct sum of maps are the direct sums of the kernels and images, so homology commutes with direct sums of chain complexes.
+:::
+
+:::
+
+::: {.pf-step #h0-connected}
+If $Y$ is path-connected and nonempty, $H_0(Y) \cong \ZZ$.
+
+::: pf-proof
+The augmentation $\varepsilon\colon S_0(Y) \to \ZZ$, $\sum n_i y_i \mapsto \sum n_i$, is surjective and vanishes on boundaries, since $\partial\sigma = \sigma(1) - \sigma(0)$ for a path $\sigma$.
+If $\varepsilon(c) = 0$ and $y_0 \in Y$, then $c = \sum n_i (y_i - y_0)$, and each $y_i - y_0$ is the boundary of a path from $y_0$ to $y_i$.
+So $\ker \varepsilon$ is the group of boundaries, and $H_0(Y) \cong \ZZ$.
+:::
+
+:::
+
+::: pf-step
+$H_0(X) \cong \bigoplus_{Y \in \pi_0(X)} \ZZ$.
+
+::: pf-proof
+This is step [](#sum){.pf-ref} in degree $0$ together with step [](#h0-connected){.pf-ref}.
+:::
+
+:::
+
+:::
 :::
