@@ -22,22 +22,33 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $|G| = pq$ with $p, q \geq 2$ prime, and let $H \le G$ be a proper subgroup.
+Suppose $\abs{G} = pq$ with $p, q \geq 2$ prime, and let $H \le G$ be a proper subgroup.
 Prove that $H$ must be cyclic.
 :::
 
 ::: {.solution}
-By Lagrange's theorem,
-\[
-|H|\mid pq.
-\]
-Since $H$ is proper,
-\[
-|H|\in\{1,p,q\}.
-\]
-The trivial group is cyclic. If $|H|$ is prime, choose $h\in H$ with $h\neq e$. Then the order of $h$ divides $|H|$ and is greater than $1$, hence equals $|H|$. Therefore
-\[
-H=\langle h\rangle.
-\]
-Thus every proper subgroup of $G$ is cyclic.
+
+::: pf
+
+::: {.pf-step #order}
+$\abs{H}\in\{1,p,q\}$.
+
+::: pf-proof
+By Lagrange's theorem $\abs{H}$ divides $pq$, and $\abs{H}\ne pq$ because $H$ is proper.
+:::
+
+:::
+
+::: pf-step
+$H$ is cyclic.
+
+::: pf-proof
+If $\abs{H}=1$, $H$ is trivial.
+Otherwise $\abs{H}$ is prime by step [](#order){.pf-ref}; any $h\in H$ with $h\ne e$ has order greater than $1$ dividing $\abs{H}$, so its order is $\abs{H}$ and $H=\langle h\rangle$.
+:::
+
+:::
+
+:::
+
 :::
