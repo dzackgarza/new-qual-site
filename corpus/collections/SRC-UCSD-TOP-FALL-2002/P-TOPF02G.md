@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF02G
 kind: problem
-title: "Submanifold representatives of CP^n homology generators and cohomology ring"
+title: 'Submanifold representatives of the homology generators of $\CP^n$ and its cohomology ring'
 classification:
   areas:
   - topology

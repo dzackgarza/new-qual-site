@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF02F
 kind: problem
-title: "Z3-orientable manifold is orientable"
+title: 'A $\ZZ/3$-orientable manifold is orientable'
 classification:
   areas:
   - topology

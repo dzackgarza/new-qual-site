@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF02H
 kind: problem
-title: "Fundamental group of the complement of a knot in S^4 via transversality"
+title: 'Fundamental group of the complement of a knot in $S^4$ via transversality'
 classification:
   areas:
   - topology

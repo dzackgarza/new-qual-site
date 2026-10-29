@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF02I
 kind: problem
-title: "Which powers of the height coordinate are Morse functions on S^2"
+title: 'Which powers of the height coordinate are Morse functions on $S^2$'
 classification:
   areas:
   - topology
