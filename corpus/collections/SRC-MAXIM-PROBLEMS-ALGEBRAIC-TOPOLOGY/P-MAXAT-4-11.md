@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-4-11
 kind: problem
-title: Serre's theorem that homotopy groups of spheres are torsion outside degrees $n$ and $2n-1$
+title: Serre's theorem on the torsion in the homotopy groups of spheres
 classification:
   areas: [topology]
   topics: []
