@@ -26,24 +26,37 @@ Prove that the symmetric group $S_4$ is a **non-abelian** and **solvable** group
 :::
 
 ::: {.solution}
-The group $S_4$ is nonabelian because, for example,
-$$
-(12)(23)=(123)\ne(132)=(23)(12).
-$$
+Let $V_4=\{e,(12)(34),(13)(24),(14)(23)\}$.
 
-For solvability, consider
-$$
-1\triangleleft V_4\triangleleft A_4\triangleleft S_4,
-$$
-where
-$$
-V_4=\{e,(12)(34),(13)(24),(14)(23)\}.
-$$
-The subgroup $A_4$ is normal of index $2$ in $S_4$. The subgroup $V_4$ is normal in $S_4$ because conjugation preserves cycle type, hence is normal in $A_4$ as well. The factors are
-$$
-V_4,\qquad A_4/V_4\cong C_3,\qquad S_4/A_4\cong C_2,
-$$
-all abelian. Therefore $S_4$ is solvable.
+::: pf
 
-Thus $S_4$ is solvable but nonabelian.
+::: pf-step
+$S_4$ is nonabelian.
+
+::: pf-proof
+$(12)(23)=(123)\ne(132)=(23)(12)$.
+:::
+
+:::
+
+::: {.pf-step #series}
+$1\triangleleft V_4\triangleleft A_4\triangleleft S_4$ is a normal series.
+
+::: pf-proof
+$A_4$ is the kernel of the sign map. $V_4$ is a subgroup consisting of the identity and the whole conjugacy class of double transpositions, so it is normal in $S_4$, hence in $A_4$.
+:::
+
+:::
+
+::: pf-step
+$S_4$ is solvable.
+
+::: pf-proof
+The factors of the series of step [](#series){.pf-ref} are $V_4\cong C_2\times C_2$, $A_4/V_4\cong C_3$ (order $3$) and $S_4/A_4\cong C_2$, and all are abelian.
+:::
+
+:::
+
+:::
+
 :::
