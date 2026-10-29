@@ -38,6 +38,6 @@ The two examples exhibit different failures of flatness.
 The blowup fails because the fibre dimension jumps; the normalisation fails because the fibre *length* jumps, from $1$ to $2$, while the dimension is constant at $0$.
 For projective flat families over a connected Noetherian base, the Hilbert polynomial is constant; equal fibre dimension alone is not sufficient for flatness.
 
-No nontrivial normalisation is flat, for the same rank argument, and a ramified map of curves in the sense of a map that is not finite locally free is not either.
+No nontrivial normalisation is flat, for the same rank argument; more generally, a finite morphism $f$ to a Noetherian scheme is flat exactly when $f_*\OO$ is locally free.
 By contrast, a nonconstant morphism of smooth projective curves is finite flat of constant degree; ramification then appears through nonreduced fibre structure rather than a drop in degree.
 :::
