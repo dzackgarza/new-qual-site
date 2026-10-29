@@ -24,15 +24,29 @@ Show that $A$ is closed.
 
 ::: {.solution}
 
+We show that $X\setminus A$ is open. Fix $x \in X \setminus A$.
+
 ::: pf
 
-::: {.pf-step #s1}
+::: {.pf-step #finite-subcover}
 
-It suffices to show $X \setminus A$ is open.
+There are $a_1,\ldots,a_k\in A$ and open sets $U_{a_i}\ni x$, $V_{a_i}\ni a_i$ with $U_{a_i}\cap V_{a_i}=\varnothing$ and $A \subseteq V_{a_1} \cup \cdots \cup V_{a_k}$.
 
 ::: pf-proof
 
-a set is closed iff its complement is open.
+Since $X$ is Hausdorff and $x\neq a$ for each $a \in A$, there are disjoint open sets $U_a \ni x$ and $V_a \ni a$. The sets $\{V_a\}_{a \in A}$ cover $A$, and compactness of $A$ gives a finite subcover.
+
+:::
+
+:::
+
+::: {.pf-step #nbhd}
+
+$U \coloneqq U_{a_1} \cap \cdots \cap U_{a_k}$ is an open neighborhood of $x$ disjoint from $A$.
+
+::: pf-proof
+
+$U$ is a finite intersection of open sets containing $x$. For each $i$, $U\subseteq U_{a_i}$ is disjoint from $V_{a_i}$, so $U$ is disjoint from $V_{a_1}\cup\cdots\cup V_{a_k}\supseteq A$ by step [](#finite-subcover){.pf-ref}.
 
 :::
 
@@ -40,103 +54,13 @@ a set is closed iff its complement is open.
 
 ::: pf-step
 
-Let $x \in X \setminus A$.
+$A$ is closed.
 
 ::: pf-proof
 
-take an arbitrary point outside $A$.
+By step [](#nbhd){.pf-ref}, every point of $X\setminus A$ is an interior point of $X\setminus A$, so $X\setminus A$ is open.
 
 :::
-
-:::
-
-::: pf-step
-
-For each $a \in A$, there are disjoint open sets $U_a \ni x$ and $V_a \ni a$.
-
-::: pf-proof
-
-$X$ is Hausdorff and $x \neq a$.
-
-:::
-
-:::
-
-::: pf-step
-
-$\{V_a\}_{a \in A}$ is an open cover of $A$.
-
-::: pf-proof
-
-each $a \in A$ lies in $V_a$.
-
-:::
-
-:::
-
-::: {.pf-step #s5}
-
-Since $A$ is compact, there is a finite subcover $A \subseteq V_{a_1} \cup \cdots \cup V_{a_k}$.
-
-::: pf-proof
-
-compactness.
-
-:::
-
-:::
-
-::: pf-step
-
-Let $U = U_{a_1} \cap \cdots \cap U_{a_k}$.
-
-::: pf-proof
-
-define a neighborhood of $x$.
-
-:::
-
-:::
-
-::: {.pf-step #s7}
-
-$U$ is open, contains $x$, and is disjoint from $A$.
-
-::: pf-proof
-
-$U$ is a finite intersection of open sets containing $x$; and $U \cap V_{a_i} = \varnothing$ for each $i$ (since $U \subseteq U_{a_i}$ and $U_{a_i} \cap V_{a_i} = \varnothing$), so $U \cap A = \varnothing$ by step [](#s5){.pf-ref}.
-
-:::
-
-:::
-
-::: {.pf-step #s8}
-
-Hence $x$ is an interior point of $X \setminus A$, so $X \setminus A$ is open.
-
-::: pf-proof
-
-Step [](#s7){.pf-ref} holds for every $x \in X \setminus A$.
-
-:::
-
-:::
-
-::: {.pf-step #s9}
-
-Therefore $A$ is closed.
-
-::: pf-proof
-
-Steps [](#s1){.pf-ref} and [](#s8){.pf-ref}.
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s9){.pf-ref}.
 
 :::
 
