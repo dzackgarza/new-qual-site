@@ -11,41 +11,19 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "The source problem block held a worked answer: a theorem with proof that pi_1 of a wedge of circles is free (with the index k and n mixed), a lemma that F_n is not isomorphic to F_m for n != m, and an argument that S^2 and S^3 are not homeomorphic citing 'the previous problems'. The statement now poses those three claims, and the solution carries the arguments."
 ---
 
 ::: {.problem}
-7. Theorem: $\pi_1(\bigvee_{i=1}^k S^1) \cong {\Large{*}}_{i=1}^n\ZZ$, the free product of $n$ copies of $\ZZ$.
+(a) Show that $\pi_1\left(\bigvee_{i=1}^n S^1\right)$ is the free group $F_n$ on $n$ generators.
 
-::: {.proof}
-We proceed by induction on $n$, using the Seifert–van Kampen theorem.
+(b) Show that $F_n \not\cong F_m$ for $n \neq m$.
 
-**Base case:** Take $n=1$, then $\pi_1(S^1) = \ZZ$ as proved in Hatcher.
-
-**Inductive step:** Suppose this holds for all $k < n$, then we have $X = \bigvee^n S^1 = \left( \bigvee^{n-1}S^1\right) \vee S^1$.
-Let $p$ be the point of common intersection, then let $U = \bigvee^{n-1} S^1$ and $V = S^1 \union \theset{p}$.
-
-Then $U\union V = X$, $U \intersect V = \theset{p}$, and both $U,V$ are path-connected.
-Since we have $\pi_1(\pt) = 0$, the amalgamated free product reduces to the usual free product.
-By the induction hypothesis, we have $\pi_1(U) = {\Large{*}}^{n-1}\ZZ$, so
-
-$$\pi_1(X) = \pi_1(U\cup V) = \pi_1(U) * \pi_1(V) =_{\text{IH}} ({\Large{*}}^{n-1} \ZZ ) * \pi_1(V) = ({\Large{*}}^{n-1} \ZZ) * \ZZ = {\Large{*}}^{n} \ZZ.$$
-:::
-
-Definition: Let $F_n \definedas {\Large{*}^n} \ZZ$ be the free group on $n$ generators.
-Lemma: If $n\neq m, F_n \not\cong F_m$.
-
-::: {.proof}
-If $F_n \cong F_m$, then abelianizing gives $\ZZ^n \cong \ZZ^m$.
-But then tensor both sides with $\ZZ_2$ over $\ZZ$, yielding $\ZZ^n \otimes_\ZZ \ZZ_2 \cong \ZZ^m \otimes_\ZZ \ZZ_2$.
-But the LHS is isomorphic to $(\ZZ/2\ZZ)^n$, while the RHS is isomorphic to $(\ZZ/2\ZZ)^m$.
-These are both finite groups: there are 2 elements in $\ZZ/2\ZZ$, so the first has $2^n$ elements and the latter has $2^m$ elements.
-But if $2^n=2^m$, then $n=m$.
-The lemma follows from the contrapositive.
-:::
-
-Now we have all we need - let $X = S^2 - \theset{p_1, p_2}$ and $Y = S^3 - \theset{q_1, q_2}$.
-Then by the previous problems, $X \homotopic S^1$ and $Y \homotopic S^2$, so if $S^2 \cong S^3$ then $X \homotopic Y$ and $S^1 \homotopic S^2$.
-But $\pi_1(S^1) = \ZZ$ and $\pi_1(S^2) = 0$, so $S^1 \not\simeq S^2$, a contradiction.
+(c) Show that $S^2$ and $S^3$ are not homeomorphic.
 :::
 
 ::: {.solution}
@@ -53,41 +31,33 @@ But $\pi_1(S^1) = \ZZ$ and $\pi_1(S^2) = 0$, so $S^1 \not\simeq S^2$, a contradi
 ::: pf
 
 ::: pf-step
-
-For $n\ge1$,
-$$\boxed{\pi_1\left(\bigvee_{i=1}^nS^1\right)\cong F_n.}$$
+(a) For $n\ge1$, $\pi_1\left(\bigvee_{i=1}^nS^1\right)\cong F_n$.
 
 ::: pf-proof
-
-Apply van Kampen inductively: adjoining one circle at the common basepoint takes the free product with $\pi_1(S^1)=\mathbb Z$.
-
+We induct on $n$; the case $n = 1$ is $\pi_1(S^1) \cong \ZZ = F_1$.
+For $n > 1$, write $X = \bigvee^n S^1$ with wedge point $p$, and let $U$ be the union of the first $n-1$ circles with a small open arc about $p$ in the last circle, and $V$ the last circle with small open arcs about $p$ in the others.
+Then $U$ and $V$ are open and path connected, $U \simeq \bigvee^{n-1} S^1$, $V \simeq S^1$, and $U \cap V$ is contractible.
+By van Kampen's theorem and the induction hypothesis, $\pi_1(X) \cong F_{n-1} * \ZZ \cong F_n$.
 :::
 
 :::
 
 ::: pf-step
-
-If $F_n\cong F_m$, then $n=m$.
+(b) If $F_n\cong F_m$, then $n=m$.
 
 ::: pf-proof
-
-Abelianization gives $\mathbb Z^n\cong\mathbb Z^m$, forcing equal ranks.
-
+Abelianizing gives $\ZZ^n\cong\ZZ^m$, and tensoring with $\ZZ/2$ gives $(\ZZ/2)^n \cong (\ZZ/2)^m$, groups of orders $2^n$ and $2^m$.
 :::
 
 :::
 
 ::: pf-step
-
-In particular $S^2$ and $S^3$ are not homeomorphic.
+(c) $S^2$ and $S^3$ are not homeomorphic.
 
 ::: pf-proof
-
-Removing two points from a sphere preserves homeomorphism type under any hypothetical homeomorphism. But
-$$S^2\setminus\{p,q\}\simeq S^1,\qquad S^3\setminus\{p',q'\}\simeq S^2,$$
-where the first equivalence is the deformation retraction of [[P-6DZST]].
-Their fundamental groups are $\mathbb Z$ and $0$, so the punctured spaces are not homotopy equivalent, hence cannot be homeomorphic.
-
+A homeomorphism $h\colon S^2 \to S^3$ would restrict to a homeomorphism $S^2\setminus\{p,q\} \to S^3\setminus\{h(p),h(q)\}$.
+But $S^2\setminus\{p,q\}\simeq S^1$, by the deformation retraction of [[P-6DZST]], and $S^3\setminus\{p',q'\}\simeq S^2$, since by stereographic projection from $p'$ it is $\RR^3$ minus a point.
+Their fundamental groups are $\ZZ$ and $0$, so the punctured spaces are not homotopy equivalent, hence not homeomorphic.
 :::
 
 :::
