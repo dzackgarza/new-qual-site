@@ -30,7 +30,6 @@ source:
   - id: E-6XHXX
   - id: E-7DSGZ
   - id: E-7GKPR
-  - id: E-7NUZ2
   - id: E-ARJT3
   - id: E-AUAOC
   - id: E-AZ7SN
@@ -121,7 +120,6 @@ source:
   - id: P-N7RR5
   - id: P-NESQN
   - id: P-NJNNL
-  - id: P-NNHWB
   - id: P-O2J6S
   - id: P-OTXNQ
   - id: P-OX7OF
