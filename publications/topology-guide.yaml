@@ -265,12 +265,10 @@ sections:
     items:
       - ref: PR-JL5JP
       - ref: T-NBARV
-      - ref: FF-GBHJL
       - ref: PR-LIXWH
       - ref: PR-BDH3V
       - ref: PR-GKRFP
       - ref: D-QK5BM
-      - ref: FF-IEHB2
       - ref: FF-W3AIU
       - ref: C-CT2NX
       - ref: PR-QV4U5

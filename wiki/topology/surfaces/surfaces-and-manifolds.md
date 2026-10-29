@@ -39,13 +39,10 @@ The Möbius band, the annulus $S^1\cross I$, $\TT^2$, $\KK$, and $\RP^2$ are quo
 [[T-NBARV]]
 
 ::: {.remark}
-A compact connected surface is therefore determined up to homeomorphism by its orientability, its number $b$ of boundary components, and its Euler characteristic.
-A polygon model computes these: the edge word of a polygon with identifications reduces to a normal form $a_1b_1\inverseof{a_1} \inverseof{b_1}\cdots a_gb_g\inverseof{a_g} \inverseof{b_g}$ or $a_1a_1\cdots a_ka_k$, together with the unpaired boundary edges.
+A polygon model computes the orientability, $b$ and $\chi$ of a surface: the edge word of a polygon with identifications reduces to a normal form $a_1b_1\inverseof{a_1} \inverseof{b_1}\cdots a_gb_g\inverseof{a_g} \inverseof{b_g}$ or $a_1a_1\cdots a_ka_k$, together with the unpaired boundary edges.
 For example, the torus and the annulus both have Euler characteristic $0$ and are not homeomorphic, since $b=0$ for the torus and $b=2$ for the annulus.
 
 :::
-
-[[FF-GBHJL]]
 
 [[FF-D5Q4S]] [[FF-WDTKX]]
 
@@ -53,13 +50,10 @@ For example, the torus and the annulus both have Euler characteristic $0$ and ar
 
 ### Euler characteristic
 
-[[FF-IEHB2]]
-
 [[FF-W3AIU]]
 
 ::: {.fact title="Closed surfaces by Euler characteristic"}
-The closed orientable surface $\Sigma_g$ has $\chi = 2-2g$, and the closed nonorientable surface $N_k \coloneqq \#_{i=1}^k\RP^2$ has $\chi = 2-k$.
-Removing the interiors of $b$ disjoint discs lowers $\chi$ by $b$.
+With $N_k \coloneqq \#_{i=1}^k\RP^2$, the closed surfaces by Euler characteristic are:
 
 | Orientable | $-4$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ | $2$ |
 | ---------- | ---        | ----        | ----       | ---         | ---     | ---     | ---         |
