@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-6-10
 kind: problem
-title: Maxim algebraic topology 6.10
+title: Characteristic-class obstructions to a complex structure on an even-dimensional manifold
 classification:
   areas: [topology]
   topics: []
