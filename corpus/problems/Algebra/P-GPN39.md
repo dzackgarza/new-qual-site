@@ -45,7 +45,7 @@ If $\dim V<\infty$, then $I-L$ is invertible.
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, $I-L$ is injective, and rank-nullity gives $\dim\operatorname{im}(I-L)=\dim V$, so $I-L$ is also surjective.
+By step [](#s1){.pf-ref}, $I-L$ is injective, and rank-nullity gives $\dim\im(I-L)=\dim V$, so $I-L$ is also surjective.
 
 :::
 
