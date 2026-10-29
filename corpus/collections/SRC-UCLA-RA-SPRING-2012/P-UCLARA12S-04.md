@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA12S-04
 kind: problem
-title: A closed mean-zero subspace and L2 density
+title: 'A closed mean-zero subspace of $L^1$ and $L^2$ density'
 classification:
   areas:
   - real-analysis

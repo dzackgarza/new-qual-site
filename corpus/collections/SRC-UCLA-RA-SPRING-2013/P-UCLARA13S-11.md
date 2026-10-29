@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA13S-11
 kind: problem
-title: Poles and Taylor coefficients of minus pi z cot pi z
+title: 'Poles and Taylor coefficients of $-\pi z\cot(\pi z)$'
 classification:
   areas:
   - real-analysis

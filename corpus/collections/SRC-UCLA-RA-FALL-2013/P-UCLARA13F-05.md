@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA13F-05
 kind: problem
-title: L1-bounded holomorphic functions form a normal family
+title: '$L^1$-bounded holomorphic functions on the disk form a normal family'
 classification:
   areas:
   - real-analysis

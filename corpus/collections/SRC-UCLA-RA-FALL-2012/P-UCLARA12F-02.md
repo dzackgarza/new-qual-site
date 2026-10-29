@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA12F-02
 kind: problem
-title: Vanishing Fourier moments against L1 densities
+title: 'Vanishing Fourier moments against $L^1$ densities'
 classification:
   areas:
   - real-analysis

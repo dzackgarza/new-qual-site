@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14S-04
 kind: problem
-title: Functionals on C[0,1] and L-infinity not represented by L1 densities
+title: 'Functionals on $C([0,1])$ and $L^\infty$ not represented by $L^1$ densities'
 classification:
   areas:
   - real-analysis

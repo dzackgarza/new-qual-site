@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14S-11
 kind: problem
-title: Improper integral of x to a power over one plus x squared
+title: 'The integral $\int_0^\infty \frac{x^p}{x^2+1}\,dx$ for $-1<p<1$'
 classification:
   areas:
   - real-analysis

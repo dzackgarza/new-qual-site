@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14S-12
 kind: problem
-title: Zeros of z6 plus i z4 plus 1 in the upper half-plane
+title: 'Zeros of $z^6+iz^4+1$ in the upper half-plane'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA12S-03
 kind: problem
-title: Piecewise averages converge in L1
+title: 'Piecewise averages converge in $L^1$'
 classification:
   areas:
   - real-analysis

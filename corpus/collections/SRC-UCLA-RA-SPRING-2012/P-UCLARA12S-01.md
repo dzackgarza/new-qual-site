@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA12S-01
 kind: problem
-title: Modes of convergence in L3
+title: 'Modes of convergence in $L^3$'
 classification:
   areas:
   - real-analysis

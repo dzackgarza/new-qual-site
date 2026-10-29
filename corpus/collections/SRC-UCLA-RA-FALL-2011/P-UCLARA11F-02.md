@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA11F-02
 kind: problem
-title: Fourier transform of sphere measure and an L2 functional
+title: 'Fourier transform of surface measure on $S^2$ and an $L^2$ functional'
 classification:
   areas:
   - real-analysis

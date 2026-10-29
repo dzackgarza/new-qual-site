@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB07F-08
 kind: problem
-title: Divergence after the transform a_n over 1 plus a_n
+title: 'Divergence of $\sum a_n/(1+a_n)$ when $\sum a_n$ diverges'
 classification:
   areas: [prelim]
   topics: []

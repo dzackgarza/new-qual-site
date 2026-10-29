@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA13F-10
 kind: problem
-title: Fourier transforms and self-convolutions of L2 functions
+title: 'Fourier transforms and self-convolutions of $L^2$ functions'
 classification:
   areas:
   - real-analysis

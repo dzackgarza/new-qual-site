@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB17F-06
 kind: problem
-title: Diagonalizability of symmetric two-by-two matrices over three fields
+title: 'Diagonalizability of symmetric $2\times2$ matrices over $\RR$, $\CC$ and $\FF_3$'
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14S-02
 kind: problem
-title: Almost-everywhere finiteness of a fractional potential of an L1 function
+title: 'Almost-everywhere finiteness of a fractional potential of an $L^1$ function'
 classification:
   areas:
   - real-analysis

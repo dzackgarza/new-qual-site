@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB09F-09
 kind: problem
-title: An odd-dimensional real orthogonal matrix has eigenvalue 1 or minus 1
+title: 'An odd-dimensional real orthogonal matrix has eigenvalue $1$ or $-1$'
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA11F-09
 kind: problem
-title: L2 integrability removes a punctured-disc singularity
+title: '$L^2$ integrability removes a punctured-disc singularity'
 classification:
   areas:
   - real-analysis

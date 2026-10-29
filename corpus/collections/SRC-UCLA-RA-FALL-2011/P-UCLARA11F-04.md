@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA11F-04
 kind: problem
-title: Weighted time derivative implies an L2 limit
+title: 'Weighted time derivative implies an $L^2$ limit'
 classification:
   areas:
   - real-analysis

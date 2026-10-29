@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA12F-05
 kind: problem
-title: A quadratic identity under bounded L2 convergence
+title: 'A quadratic identity under bounded $L^2$ convergence'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB18F-04
 kind: problem
-title: Monotonicity of f(x) divided by x
+title: 'Monotonicity of $f(x)/x$ for $f$ with decreasing derivative'
 classification:
   areas:
   - prelim

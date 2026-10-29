@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA14S-01
 kind: problem
-title: Layer-cake formula for the L1 distance
+title: 'Layer-cake formula for the $L^1$ distance'
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB08F-05
 kind: problem
-title: Rearrange the alternating harmonic series to converge to pi
+title: 'A rearrangement of the alternating harmonic series converging to $\pi$'
 classification:
   areas:
   - prelim

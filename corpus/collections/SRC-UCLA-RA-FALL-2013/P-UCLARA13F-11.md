@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA13F-11
 kind: problem
-title: An L2-to-supremum norm bound forces finite dimension
+title: 'An $L^2$-to-supremum norm bound forces finite dimension'
 classification:
   areas:
   - real-analysis
