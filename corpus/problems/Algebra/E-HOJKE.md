@@ -17,10 +17,14 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
+- event: source-corrected
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: "Source did not assume A commutative, and a noncommutative simple ring such as M_2(R) is not a field; the statement now assumes A commutative with 1 != 0."
 ---
 
 ::: {.exercise}
-Show that TFAE:
+Let $A$ be a commutative ring with $1\neq0$. Show that the following are equivalent:
 
 - $A\in \Field$
 
@@ -30,7 +34,7 @@ Show that TFAE:
 :::
 
 ::: {.solution}
-Let $A$ be a commutative ring with $1\neq0$; ring homomorphisms preserve $1$.
+Ring homomorphisms preserve $1$.
 Number the three conditions (1), (2), (3) in the order stated.
 
 ::: pf
