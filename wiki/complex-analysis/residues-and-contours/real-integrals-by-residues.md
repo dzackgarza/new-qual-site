@@ -72,7 +72,7 @@ $$
 
 [[E-FJJA6]]
 [[E-ENWYG]]
-[[E-KC6DS]]
+[[P-CAEXAMPREP-05]]
 [[E-HHSCS]]
 
 ## Branch cuts: powers

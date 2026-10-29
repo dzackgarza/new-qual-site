@@ -120,3 +120,10 @@ Step [](#s1-3){.pf-ref} proves the required identity.
 :::
 
 :::
+
+::: {.remark title="Variations"}
+The case $p=1$, $q=a$ is
+$$
+\int_0^\infty \frac{\log x}{x^2+a^2}\,dx=\frac{\pi\log a}{2a},\qquad a>0.
+$$
+:::
