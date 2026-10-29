@@ -7,7 +7,7 @@ order: 43
 
 ## Limits superior
 
-[[D-G2I5Q]]
+[[D-HOKQD]]
 
 ::: {.example title="The supremum and the limit superior differ"}
 For $x_n \coloneqq \frac{n+1}{n}$, $\sup_n x_n = x_1 = 2$, while $x_n\to1$, so $\limsup_n x_n = 1$.

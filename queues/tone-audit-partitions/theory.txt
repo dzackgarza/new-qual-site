@@ -270,7 +270,6 @@ corpus/theory/Real_Analysis/D-BXAUS.md
 corpus/theory/Real_Analysis/D-DHFN4.md
 corpus/theory/Real_Analysis/D-EPSKF.md
 corpus/theory/Real_Analysis/D-EWXAT.md
-corpus/theory/Real_Analysis/D-G2I5Q.md
 corpus/theory/Real_Analysis/D-G5N6I.md
 corpus/theory/Real_Analysis/D-HHVPT.md
 corpus/theory/Real_Analysis/D-HOKQD.md
