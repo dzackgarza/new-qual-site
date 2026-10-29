@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TCONN
 kind: problem
-title: Fixed point convergence
+title: Iterates of a self-map of the disk converge to an attracting fixed point
 classification:
   areas:
   - complex-analysis
@@ -13,51 +13,62 @@ classification:
   - Sequences of Functions
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source does not say that $f$ is holomorphic or that the initial point lies in $\DD$; the statement now says both.
 ---
 
 ::: {.exercise}
-Suppose $f:\DD\to \DD$ with $f(a) = a$ a fixed point where $\abs{f'(a)} < 1$.
-Show that for any initial point $z_0$, the sequence $z_k \definedas f(z_{k-1})$ converges to $a$.
-
+Suppose $f:\DD\to \DD$ is holomorphic with $f(a) = a$ a fixed point where $\abs{f'(a)} < 1$.
+Show that for any initial point $z_0\in\DD$, the sequence $z_k \coloneqq f(z_{k-1})$ converges to $a$.
 :::
 
 ::: {.solution}
-First suppose $a=0$ -- then Schwarz applies, and since $\abs{f'(a)} < 1$ is strict, $f$ is *not* a rotation.
+For $a\in\DD$ let $\psi_a(z) \coloneqq \frac{a-z}{1-\bar az}$, an automorphism of $\DD$ with $\psi_a\circ\psi_a = \mathrm{id}$ and $\psi_a(0)=a$.
 
-::: {.claim}
-For any choice of $z_0\in \DD$, there is an $r$ with $0< \abs{z_0} < r < 1$ and a constant $C<1$ such that $\abs{f(z)} \leq C\abs{z}$ for $\abs{z} < r$.
+::: pf
+
+::: {.pf-step #contraction}
+If $a=0$, then for each $r\in(0,1)$ there is $C<1$ with $\abs{f(z)}\leq C\abs{z}$ for $\abs{z}\leq r$.
+
+::: pf-proof
+By the Schwarz lemma, $g(z)\coloneqq f(z)/z$, extended by $g(0)=f'(0)$, is holomorphic on $\DD$ with $\abs{g}\leq 1$. Since $\abs{g(0)} = \abs{f'(0)}<1$, $g$ is not a unimodular constant, so by the maximum modulus principle $\abs{g}<1$ on $\DD$. The continuous function $\abs{g}$ attains a maximum $C<1$ on the compact disk $\abs{z}\leq r$.
 :::
 
-With such an $r$ and $C<1$ in hand,
-
-\[
-\abs{z_k} = \abs{f(z_{k-1})} \leq C\abs{z_{k-1}} = C\abs{f(z_{k-2})} \leq C^2 \abs{z_{k-2}} \cdots \implies \abs{z_k} \leq C^k\abs{z_0} \convergesto{k\to\infty}0
-,\]
-which proves the $a=0$ case.
-
-::: {.proof title="That $f$ is a contraction"}
-The claim is that for any given $r$, the constant $C\definedas M/r$ works, where $M\definedas \max_{\abs{z} = r} \abs{f(z)}>0$.
-The scaled Schwarz lemma gives $\abs{f(z)}\leq {M\over r}\abs{z} = C\abs{z}$, and $\abs{C} \leq 1$ since $\abs{M} \leq r$, which follows because $\abs{f(z)}\leq \abs{z}$ on $\DD$ itself.
 :::
 
-For $a\neq 0$, take a Blaschke factor $\psi_a(z)$ and consider $F \definedas \inverseof{\psi_a} \circ f\circ \psi_a$.
-The claim is that this reduces to the case $a=0$.
+::: {.pf-step #zero-case}
+If $a=0$, then $z_k\to 0$.
 
-Note $F(0) = 0$, so $0$ is a fixed point of $F$.
-Moreover, a clever calculation shows
-\[
-F'(0)
-&= (\inverseof{\psi_a})'(f(\psi_a(0))) \cdot f'(\psi_a(0)) \cdot \psi_a'(0) \\ \\
-&= (\inverseof{\psi_a})'(f( a )) \cdot f'(a ) \cdot \psi_a'(0) \\ \\
-&= (\inverseof{\psi_a})'(a) \cdot f'(a ) \cdot \psi_a'(0) \qquad \text{since } f(a) = a \\ \\
-&= (\psi_a)'(a) \cdot \psi_a'(0) \cdot f'(a) \qquad \text{since } \inverseof{\psi_a} = \psi_a \\ \\
-&= (\psi_a)'( \psi_a(0) ) \cdot \psi_a'(0) \cdot f'(a) \\ \\
-&= (\psi_a \circ \psi_a)'(0) \cdot f'(a) \\
-&= 1 \cdot f'(a)
-,\]
-so $\abs{F'(0)} = \abs{f'(a)} < 1$.
-Now setting $w_k \definedas \psi_a(z_n)$ and writing $f = \psi_a \circ F \circ \inverseof{\psi_a}$, by continuity we have
-\[
-f(z_k) = \psi_a(F(w_k)) \convergesto{k\to\infty} \psi_a(0) = a
-.\]
+::: pf-proof
+Choose $r$ with $\abs{z_0}\leq r<1$ and $C$ as in step [](#contraction){.pf-ref}. By induction $\abs{z_k}\leq C^k\abs{z_0}\leq r$ for all $k$, so $z_k\to 0$.
+:::
+
+:::
+
+::: {.pf-step #conjugate}
+$F \coloneqq \psi_a\circ f\circ\psi_a$ is a holomorphic self-map of $\DD$ with $F(0) = 0$ and $\abs{F'(0)} = \abs{f'(a)}<1$.
+
+::: pf-proof
+$F(0) = \psi_a(f(a)) = \psi_a(a) = 0$. By the chain rule,
+$$
+F'(0) = \psi_a'(f(a))\, f'(a)\,\psi_a'(0) = \psi_a'(\psi_a(0))\,\psi_a'(0)\, f'(a) = (\psi_a\circ\psi_a)'(0)\, f'(a) = f'(a).
+$$
+:::
+
+:::
+
+::: pf-step
+$z_k\to a$.
+
+::: pf-proof
+Put $w_k\coloneqq\psi_a(z_k)$. Then $w_k = \psi_a(f(\psi_a(w_{k-1}))) = F(w_{k-1})$, so $w_k\to 0$ by steps [](#conjugate){.pf-ref} and [](#zero-case){.pf-ref} applied to $F$. By continuity, $z_k = \psi_a(w_k)\to\psi_a(0) = a$.
+:::
+
+:::
+
+:::
+
 :::
