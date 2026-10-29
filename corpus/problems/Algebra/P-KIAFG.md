@@ -26,35 +26,36 @@ What is a Dedekind domain, what is its ideal class group, and what is the class 
 :::
 
 ::: {.solution}
-A **Dedekind domain** is an integral domain $R$ satisfying any of the standard equivalent conditions; one common definition is:
 
-1. $R$ is Noetherian;
-2. $R$ is integrally closed in its fraction field;
-3. every nonzero prime ideal is maximal.
+::: pf
 
-Equivalently, every nonzero proper ideal factors uniquely as a product of nonzero prime ideals.
+::: pf-step
+A Dedekind domain is an integral domain $R$ that is Noetherian, integrally closed in its fraction field, and in which every nonzero prime ideal is maximal.
 
-Let $K=\operatorname{Frac}(R)$. The nonzero fractional ideals of $R$ form an abelian group under multiplication. The nonzero principal fractional ideals
-\[
-(a)=aR,
-\qquad a\in K^\times,
-\]
-form a subgroup. The quotient
-\[
-\operatorname{Cl}(R)
-=\{\text{nonzero fractional ideals}\}/\{\text{principal fractional ideals}\}
-\]
-is the **ideal class group**.
+::: pf-proof
+Equivalently, every nonzero proper ideal of $R$ factors uniquely as a product of nonzero prime ideals.
+:::
 
-Its elements measure the obstruction to ideals being principal. In particular,
-\[
-\operatorname{Cl}(R)=0
-\iff R\text{ is a PID}.
-\]
+:::
 
-When the class group is finite, its order
-\[
-h(R)=|\operatorname{Cl}(R)|
-\]
-is the **class number**. For the ring of integers $\OO_K$ of a number field, the class group is finite, so the class number is always defined. Class number $1$ means that $\OO_K$ is a PID and hence a UFD.
+::: pf-step
+The ideal class group is $\Cl(R)=I(R)/P(R)$, where $K=\Frac(R)$, $I(R)$ is the group of nonzero fractional ideals of $R$ under multiplication, and $P(R)=\{aR : a\in K^\times\}$ is its subgroup of principal fractional ideals.
+
+::: pf-proof
+In a Dedekind domain every nonzero fractional ideal is invertible, so $I(R)$ is a group. The class group measures the failure of ideals to be principal: $\Cl(R)=0$ if and only if $R$ is a PID.
+:::
+
+:::
+
+::: pf-step
+When $\Cl(R)$ is finite, the class number is $h(R)=\abs{\Cl(R)}$.
+
+::: pf-proof
+For the ring of integers $\OO_K$ of a number field $K$, the class group is finite, so the class number is defined. Class number $1$ means that $\OO_K$ is a PID, hence a UFD.
+:::
+
+:::
+
+:::
+
 :::
