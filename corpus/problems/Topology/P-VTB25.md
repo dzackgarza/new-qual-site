@@ -24,22 +24,24 @@ audit:
 
 ::: {.problem}
 Let $M$ be a connected topological manifold.
-(1) Prove that if $\widetilde{M}$ is an orientable connected manifold and $p: \widetilde{M} \to M$ is a $k$-fold covering map onto a **non-orientable** manifold $M$, then the covering degree $k$ must be **even** (or infinite).
-(2) Prove that if $\pi_1(M)$ has no subgroup of index $2$, then $M$ must be **orientable**.
+
+(a) Prove that if $\widetilde{M}$ is an orientable connected manifold and $p: \widetilde{M} \to M$ is a $k$-fold covering map onto a **non-orientable** manifold $M$, then the covering degree $k$ must be **even** (or infinite).
+
+(b) Prove that if $\pi_1(M)$ has no subgroup of index $2$, then $M$ must be **orientable**.
 :::
 
 ::: {.solution}
 Let
 $$
-w:\pi_1(M)\longrightarrow\{\pm1\}\cong\mathbb Z/2
+w:\pi_1(M)\longrightarrow\{\pm1\}\cong\ZZ/2
 $$
 be the orientation character. Since $M$ is connected, it is orientable exactly when $w$ is trivial.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #kernel}
 
-Suppose $M$ is non-orientable and $p:\widetilde M\to M$ is a connected covering with $\widetilde M$ orientable. Put
+(a) Suppose $M$ is non-orientable and $p:\widetilde M\to M$ is a connected covering with $\widetilde M$ orientable. Put
 $$
 H=p_*\pi_1(\widetilde M)\le\pi_1(M).
 $$
@@ -58,11 +60,12 @@ A loop in $\widetilde M$ preserves the orientation of $\widetilde M$. Its projec
 
 ::: pf-step
 
-Since $M$ is non-orientable, $w$ is surjective, so
-$$
-[\pi_1(M):\ker w]=2.
-$$
-Thus, when the covering has finite degree,
+The degree $k$ is even or infinite.
+
+::: pf-proof
+
+Since $M$ is non-orientable, $w$ is surjective, so $[\pi_1(M):\ker w]=2$.
+When the covering has finite degree, step [](#kernel){.pf-ref} gives $H \subseteq \ker w$, so
 $$
 k=[\pi_1(M):H]
 =[\pi_1(M):\ker w]\,[\ker w:H]
@@ -72,9 +75,11 @@ so $k$ is even. If $[\ker w:H]$ is infinite, then the covering has infinitely ma
 
 :::
 
+:::
+
 ::: pf-step
 
-If $\pi_1(M)$ has no subgroup of index $2$, then $M$ is orientable.
+(b) If $\pi_1(M)$ has no subgroup of index $2$, then $M$ is orientable.
 
 ::: pf-proof
 
