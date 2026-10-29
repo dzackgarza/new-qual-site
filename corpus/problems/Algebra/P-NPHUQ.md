@@ -23,48 +23,47 @@ audit:
 
 ::: {.problem}
 Show that over $\FF_p$,
-\[
+$$
 x^{p^n}-x
-\]
+$$
 is the product of all monic irreducible polynomials whose degrees divide $n$, each occurring once.
 :::
 
 ::: {.solution}
-The roots of
-\[
-x^{p^n}-x
-\]
-in an algebraic closure of $\FF_p$ are exactly the elements of the finite field
-\[
-\FF_{p^n}.
-\]
-Moreover,
-\[
-\frac{d}{dx}(x^{p^n}-x)=-1,
-\]
-so the polynomial is squarefree.
+Fix an algebraic closure $\bar\FF_p$, and write $F(x)=x^{p^n}-x$.
 
-Let $f\in\FF_p[x]$ be monic irreducible of degree $d$, and let $\alpha$ be one of its roots. Then
-\[
-\FF_p(\alpha)\cong\FF_{p^d}.
-\]
-Therefore
-\[
-f\mid x^{p^n}-x
-\]
-if and only if $\alpha\in\FF_{p^n}$, equivalently
-\[
-\FF_{p^d}\subseteq\FF_{p^n}.
-\]
-The subfield theorem for finite fields gives
-\[
-\FF_{p^d}\subseteq\FF_{p^n}
-\iff d\mid n.
-\]
+::: pf
 
-Hence the irreducible factors of $x^{p^n}-x$ are exactly the monic irreducibles whose degrees divide $n$. Since the polynomial is squarefree, each occurs with multiplicity one. Thus
-\[
-x^{p^n}-x
-=\prod_{\substack{f\text{ monic irreducible}\\ \deg f\mid n}} f(x).
-\]
+::: {.pf-step #roots}
+The roots of $F$ in $\bar\FF_p$ are the elements of the subfield $\FF_{p^n}$, and $F$ is squarefree.
+
+::: pf-proof
+$F'=-1$ has no roots, so $F$ has $p^n$ distinct roots and is squarefree.
+They form a field, the fixed field of the $n$-th power of Frobenius, of order $p^n$.
+:::
+
+:::
+
+::: {.pf-step #divides}
+A monic irreducible $f\in\FF_p[x]$ of degree $d$ divides $F$ if and only if $d\mid n$.
+
+::: pf-proof
+Let $\alpha\in\bar\FF_p$ be a root of $f$, so $\FF_p(\alpha)$ is the subfield $\FF_{p^d}$ of $\bar\FF_p$.
+Since $f$ is the minimal polynomial of $\alpha$, $f\mid F$ exactly when $F(\alpha)=0$, which by step [](#roots){.pf-ref} means $\alpha\in\FF_{p^n}$, that is, $\FF_{p^d}\subseteq\FF_{p^n}$.
+A subfield of order $p^d$ lies in $\FF_{p^n}$ exactly when $d\mid n$.
+:::
+
+:::
+
+::: pf-step
+$F=\prod f$, the product over the monic irreducible $f\in\FF_p[x]$ with $\deg f\mid n$.
+
+::: pf-proof
+$F$ is monic, its irreducible factors are the $f$ of step [](#divides){.pf-ref}, and by step [](#roots){.pf-ref} each occurs once.
+:::
+
+:::
+
+:::
+
 :::
