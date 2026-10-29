@@ -11,7 +11,7 @@ topics:
 ## Polynomial rings and Gauss's lemma
 
 For a field $k$, $k[x]$ is a Euclidean domain with respect to degree, hence a PID and a UFD, and its prime elements are the irreducible polynomials.
-A polynomial in $\ZZ[x]$ is primitive if the greatest common divisor of its coefficients is $1$, and by Gauss's lemma a product of primitive polynomials is primitive.
+Over a unique factorization domain $R$ with field of fractions $F$, a product of [[D-4VC6X|primitive]] polynomials is primitive, and [[T-JEZZY|Gauss's lemma]] says that a primitive polynomial is irreducible in $R[x]$ if and only if it is irreducible in $F[x]$.
 
 [[FD-CI4NB]]
 
@@ -22,10 +22,6 @@ A polynomial in $\ZZ[x]$ is primitive if the greatest common divisor of its coef
 [[D-4VC6X]]
 
 [[T-JEZZY]]
-
-::: {.corollary}
-A primitive polynomial $p\in \ZZ[x]$ of positive degree is irreducible in $\ZZ[x]$ if and only if it is irreducible in $\QQ[x]$.
-:::
 
 ## Standard factorizations and root counts
 
