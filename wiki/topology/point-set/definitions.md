@@ -56,7 +56,7 @@ Local connectedness and local path connectedness use the second.
 
 [[D-E2NWN]]
 
-[[D-ZFRV4]] [[D-BUAYX]]
+[[D-ZFRV4]]
 
 [[D-3ZBXG]]
 
