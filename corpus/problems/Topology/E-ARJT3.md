@@ -22,22 +22,17 @@ audit:
 :::
 
 ::: {.solution}
+A topological space $X$ is separable if it has a countable subset $D$ that is dense, $\overline{D} = X$.
 
 ::: pf
 
 ::: pf-step
-Definition of a separable space:
+
+$X$ is separable if and only if some countable $D \subseteq X$ meets every nonempty open subset of $X$.
 
 ::: pf-proof
 
-::: pf-step
-A topological space $(X, \mathcal{T})$ is called **separable** if there exists a subset $D \subseteq X$ such that:
-
-1. $D$ is at most countable (i.e., $|D| \le \aleph_0$),
-2. $D$ is dense in $X$, meaning that the topological closure of $D$ equals $X$:
-\[
-\overline{D} = X.
-\]
+A point $x$ lies in $\overline{D}$ exactly when every open neighborhood of $x$ meets $D$, so $\overline{D}=X$ exactly when every nonempty open set meets $D$.
 
 :::
 
@@ -45,52 +40,8 @@ A topological space $(X, \mathcal{T})$ is called **separable** if there exists a
 
 :::
 
-::: pf-step
-Equivalent characterizations:
-
-::: pf-proof
-
-::: pf-step
-A space $X$ is separable if and only if there exists a countable set $D \subseteq X$ that intersects every non-empty open set:
-\[
-\forall U \in \mathcal{T} \setminus \{\emptyset\}, \qquad U \cap D \neq \emptyset.
-\]
-
 :::
 
-:::
-
-:::
-
-::: pf-step
-Properties and examples:
-
-::: pf-proof
-
-::: pf-step
-Every second-countable space is separable (choosing one point from each element of a countable basis).
-
-:::
-
-::: pf-step
-For metric spaces, separability is equivalent to being second-countable and equivalent to being Lindelöf.
-
-:::
-
-::: pf-step
-The Euclidean space $\mathbb{R}^n$ with the standard topology is separable, with countable dense subset $\mathbb{Q}^n$.
-
-:::
-
-:::
-
-:::
-
-::: pf-qed
-Conclusion:
-A separable space is a topological space containing a countable dense subset.
-:::
-
-:::
-
+::: {.remark}
+Every second-countable space is separable: choose one point from each nonempty member of a countable basis. For metric spaces, separability, second countability, and the Lindelöf property are equivalent. The space $\RR^n$ is separable, with countable dense subset $\QQ^n$.
 :::
