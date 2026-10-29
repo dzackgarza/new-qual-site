@@ -275,6 +275,14 @@ mathematical correction under its own node, not under copy policy.
     PDFs, Cracking the GRE). **Acceptance:** no collection lists a solution writeup or a
     maintainer PDF; each UGA href resolves to a vendored paper; each PDF is one collection
     whose papers are sections, with every problem link kept. One collection at a time.
+    **Closed.** The UCLA collections list the department papers `analysis-YYS.pdf`;
+    SRC-UGA-CA-COMPILATION has empty provenance (no external original found; its sections and
+    repeats follow the PDF); the eight UGA papers are vendored from the Wayback Machine; the
+    compilations are SRC-MATH4100-6100-2020, SRC-WESLEYAN-ANALYSIS-2003-2007, -2008-2013,
+    -2014-2016 and SRC-GRE-MATH-SUBJECT. `CompilationSource` has no `institution` and one
+    `area`, so the Wesleyan compilations lose the `wesleyan` institution and carry
+    `area: real-analysis` for mixed real and complex papers. The Wesleyan topology PDFs are
+    still split across collections.
   Round 3 (revision `5ba163ac9`, topology and algebraic geometry) injected the node below;
   `audited-deployment` needs it.
   - **`ad3-topology-content`**. **Needs:** none. Wrong mathematics: P-TOPS05A (a free
