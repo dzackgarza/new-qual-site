@@ -22,17 +22,16 @@ audit:
 
 ::: {.problem}
 Compute
-\[
+$$
 \int_{\abs z = 1} \qty{z + {1\over z}}^{2n} {dz \over z}
-\]
+$$
 and use it to show that
-\[
-\int_0^{2\pi} \cos^{2n}(\theta) \, d\theta = 2\pi \qty{1\cdot 3 \cdot 5 \cdots (2n-1) \over 2 \cdot 4 \cdot 6 \cdots (2n)}
-.\]
+$$
+\int_0^{2\pi} \cos^{2n}(\theta) \, d\theta = 2\pi \qty{1\cdot 3 \cdot 5 \cdots (2n-1) \over 2 \cdot 4 \cdot 6 \cdots (2n)}.
+$$
 :::
 
 ::: {.solution}
-**Goal:** Compute $\int_{\abs z = 1} \qty{z + \frac1z}^{2n} \frac{dz}{z}$ and use it to show $\int_0^{2\pi} \cos^{2n}\theta\, d\theta = 2\pi \frac{1\cdot 3 \cdots (2n-1)}{2\cdot 4 \cdots (2n)}$.
 
 ::: pf
 
@@ -62,7 +61,7 @@ By step [](#s1){.pf-ref}, $\qty{z + \frac1z}^{2n} \frac1z = \sum_{k=0}^{2n} \bin
 
 ::: {.pf-step #s3}
 
-$\int_{\abs z = 1} \qty{z + \frac1z}^{2n} \frac{dz}{z} = 2\pi i \binom{2n}{n}$.
+$\int_{\abs z = 1} \qty{z + \frac1z}^{2n} \frac{dz}{z} = \boxed{2\pi i \binom{2n}{n}}$.
 
 ::: pf-proof
 
