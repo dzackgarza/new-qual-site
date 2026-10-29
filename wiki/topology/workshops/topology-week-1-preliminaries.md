@@ -41,7 +41,7 @@ Point-set topology used in algebraic topology: definitions, theorems, and counte
 
 - Prove Cantor's intersection theorem.
 
-- Determine if the following subsets of $\RR$ are open, closed, both, or neither: [[P-MFWBK]] [[P-HPN6K]] [[P-N7RR5]] [[P-2V6GL]] [[P-3GOJI]] [[P-JAEYU]] [[P-FNJCM]] [[P-WXTVX]] [[P-NNHWB]] [[P-OTXNQ]] [[P-NJNNL]] [[P-SG462]] [[P-GAA3C]] [[P-YBQ3V]] [[P-ZQBPZ]] [[P-WHXWM]] [[P-TC2PJ]]
+- Determine if the following subsets of $\RR$ are open, closed, both, or neither: [[P-MFWBK]] [[P-HPN6K]] [[P-N7RR5]] [[P-2V6GL]] [[P-3GOJI]] [[P-JAEYU]] [[P-FNJCM]] [[P-WXTVX]] [[P-NNHWB]] [[P-OTXNQ]] [[P-NJNNL]] [[P-SG462]] [[P-GAA3C]] [[P-YBQ3V]] [[P-T16A2]] [[P-WHXWM]] [[P-TC2PJ]]
 
 ## The tube lemma
 
