@@ -23,7 +23,7 @@ Show that $S^1 \times I \simeq M$, the Mobius strip.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the cylinder $S^1 \times [0, 1]$ is homotopy equivalent to the Möbius strip $M = ([0, 1] \times [0, 1]) / ((0, y) \sim (1, 1-y))$.
+Let $M = ([0, 1] \times [0, 1]) / ((0, y) \sim (1, 1-y))$ be the Möbius strip.
 
 ::: pf
 
