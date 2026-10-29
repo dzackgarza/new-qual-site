@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YACKS
 kind: problem
-title: Consider the metric space $(\mathbb{Q},d)$
+title: Compactness of $\{x\in\QQ : 2<x^2<3\}$ in $\QQ$
 classification:
   areas:
   - real-analysis
