@@ -32,19 +32,19 @@ Equivalently, the hyperplane $u^\perp$ places $\sigma$ in the closed half-space 
 ::: {.proof}
 Choose an inner product on $N_\RR$ and let $p\in\sigma$ be the point minimizing the distance to $v$; it exists because a polyhedral cone is closed and convex. The characterization of the metric projection gives
 $$
-\langle v-p,x-p\rangle\leq0
+\inner{v-p}{x-p}\leq0
 \qquad\text{for every }x\in\sigma.
 $$
-Taking $x=0$ and $x=2p$ shows $\langle v-p,p\rangle=0$. Hence
+Taking $x=0$ and $x=2p$ shows $\inner{v-p}{p}=0$. Hence
 $$
-\langle p-v,x\rangle\geq0
+\inner{p-v}{x}\geq0
 \qquad\text{for every }x\in\sigma,
 $$
 while
 $$
-\langle p-v,v\rangle=-\norm{v-p}^2<0.
+\inner{p-v}{v}=-\norm{v-p}^2<0.
 $$
-The functional $u=\langle p-v,\wait\rangle\in M_\RR$ therefore has the required properties.
+The functional $u=\inner{p-v}{\wait}\in M_\RR$ therefore has the required properties.
 :::
 
 ::: {.proposition title="Double duality"}
