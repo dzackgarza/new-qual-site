@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS14H
 kind: problem
-title: Irreducible factors of $X^{64}-X$ over $\mathbb{F}_2$ by degree
+title: Irreducible factors of $X^{64}-X$ over $\FF_2$ by degree
 classification:
   areas:
   - algebra
@@ -23,12 +23,12 @@ audit:
 ---
 
 ::: {.problem}
-In the factorization of $X^{64} - X$ into irreducible terms, how many terms of each degree appear over the field $K = \mathbb{F}_2$?
+In the factorization of $X^{64} - X$ into irreducible terms, how many terms of each degree appear over the field $K = \FF_2$?
 (e.g. $5$ terms of degree $1$, $4$ terms of degree $7$, etc.) Justify your answer, but you do not have to actually find the factorization.
 :::
 
 ::: {.solution}
-Over $\mathbb F_2$, the polynomial
+Over $\FF_2$, the polynomial
 \[
 X^{64}-X=X^{2^6}-X
 \]
@@ -39,7 +39,7 @@ Thus only degrees $1,2,3,$ and $6$ can occur.
 
 ::: {.pf-step #s1}
 
-Let $N_d$ be the number of monic irreducible polynomials of degree $d$ over $\mathbb F_2$.
+Let $N_d$ be the number of monic irreducible polynomials of degree $d$ over $\FF_2$.
 Then
 \[
 2^n=\sum_{d\mid n} dN_d,
@@ -48,8 +48,8 @@ because $X^{2^n}-X$ is the product of all monic irreducibles whose degrees divid
 
 ::: pf-proof
 
-The roots of $X^{2^n}-X$ are exactly the elements of $\mathbb F_{2^n}$.
-An irreducible polynomial of degree $d$ over $\mathbb F_2$ splits in $\mathbb F_{2^n}$ exactly when $d\mid n$, and contributes its $d$ distinct roots.
+The roots of $X^{2^n}-X$ are exactly the elements of $\FF_{2^n}$.
+An irreducible polynomial of degree $d$ over $\FF_2$ splits in $\FF_{2^n}$ exactly when $d\mid n$, and contributes its $d$ distinct roots.
 
 :::
 
@@ -123,7 +123,7 @@ Substituting the preceding values gives $64=10+6N_6$.
 
 ::: pf-step
 
-Therefore the factorization of $X^{64}-X$ over $\mathbb F_2$ contains exactly
+Therefore the factorization of $X^{64}-X$ over $\FF_2$ contains exactly
 \[
 \boxed{2\text{ factors of degree }1,\quad
 1\text{ of degree }2,\quad

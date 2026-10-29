@@ -170,7 +170,7 @@ If $k$ is finite, the nonsplit conic case cannot occur.
 ::: pf-proof
 Let
 \[
-C=V(Q)\subseteq\mathbb P^2_{\mathbb F_q}
+C=V(Q)\subseteq\mathbb P^2_{\FF_q}
 \]
 be the conic from step [](#anticanonical-embedding){.pf-ref}, with $Q$ a homogeneous quadratic polynomial in three variables.  By the Chevalley--Warning theorem, because
 \[
@@ -180,11 +180,11 @@ the number of affine solutions of
 \[
 Q(x_0,x_1,x_2)=0
 \]
-in $\mathbb F_q^3$ is divisible by the characteristic $p$ of $\mathbb F_q$.
+in $\FF_q^3$ is divisible by the characteristic $p$ of $\FF_q$.
 
-The zero vector is one solution, so divisibility by $p$ forces at least one further, nonzero solution.  Its projective class is an $\mathbb F_q$-rational point of $C$.  Step [](#genus-zero-classification){.pf-ref} therefore gives
+The zero vector is one solution, so divisibility by $p$ forces at least one further, nonzero solution.  Its projective class is an $\FF_q$-rational point of $C$.  Step [](#genus-zero-classification){.pf-ref} therefore gives
 \[
-C\cong\mathbb P^1_{\mathbb F_q}.
+C\cong\mathbb P^1_{\FF_q}.
 \]
 :::
 

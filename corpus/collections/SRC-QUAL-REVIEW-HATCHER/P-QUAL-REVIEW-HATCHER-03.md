@@ -27,7 +27,7 @@ Assume that every $A_i$ is contractible and that
 \alpha_1\smile\cdots\smile\alpha_n=0.
 \]
 
-(b) Prove that $\mathbb{RP}^n$ cannot be covered by $n$ contractible subspaces.
+(b) Prove that $\RP^n$ cannot be covered by $n$ contractible subspaces.
 :::
 
 ::: {.solution}
@@ -214,12 +214,12 @@ The image of the zero class from step [](#s1-6){.pf-ref} is zero, and by step []
 
 ::: pf-step
 
-Over \(\mathbb F_2\),
+Over \(\FF_2\),
 \[
 \boxed{
-H^*(\mathbb{RP}^n;\mathbb F_2)
+H^*(\RP^n;\FF_2)
 \cong
-\mathbb F_2[x]/(x^{n+1})}
+\FF_2[x]/(x^{n+1})}
 \]
 with
 \[
@@ -241,7 +241,7 @@ In particular,
 \[
 \boxed{
 x^n\ne0
-\in H^n(\mathbb{RP}^n;\mathbb F_2)}.
+\in H^n(\RP^n;\FF_2)}.
 \]
 
 
@@ -249,7 +249,7 @@ x^n\ne0
 
 In the quotient ring
 \[
-\mathbb F_2[x]/(x^{n+1}),
+\FF_2[x]/(x^{n+1}),
 \]
 the class \(x^n\) survives while \(x^{n+1}=0\).
 
@@ -261,7 +261,7 @@ the class \(x^n\) survives while \(x^{n+1}=0\).
 
 Apply part (a) with
 \[
-R=\mathbb F_2
+R=\FF_2
 \]
 and
 \[
@@ -311,7 +311,7 @@ Step [](#s1-10){.pf-ref} says \(x^n\ne0\), while step [](#s1-12){.pf-ref} says \
 Therefore
 \[
 \boxed{
-\mathbb{RP}^n
+\RP^n
 \text{ cannot be covered by }n\text{ contractible subspaces}.}
 \]
 

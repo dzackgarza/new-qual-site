@@ -21,20 +21,20 @@ audit:
 ---
 
 ::: {.exercise}
-The **pseudo-hyperbolic distance** between two points $z, w \in \mathbb{D}$ is defined by:
+The **pseudo-hyperbolic distance** between two points $z, w \in \DD$ is defined by:
 $$\rho(z, w) = \left| \frac{z - w}{1 - \bar{w} z} \right|.$$
 
-(a) Prove that if $f: \mathbb{D} \to \mathbb{D}$ is holomorphic, then:
-$$\rho(f(z), f(w)) \le \rho(z, w) \quad \text{for all } z, w \in \mathbb{D}.$$
-Moreover, prove that if $f \in \operatorname{Aut}(\mathbb{D})$ is a conformal automorphism of $\mathbb{D}$, then $f$ preserves the pseudo-hyperbolic distance:
-$$\rho(f(z), f(w)) = \rho(z, w) \quad \text{for all } z, w \in \mathbb{D}.$$
+(a) Prove that if $f: \DD \to \DD$ is holomorphic, then:
+$$\rho(f(z), f(w)) \le \rho(z, w) \quad \text{for all } z, w \in \DD.$$
+Moreover, prove that if $f \in \operatorname{Aut}(\DD)$ is a conformal automorphism of $\DD$, then $f$ preserves the pseudo-hyperbolic distance:
+$$\rho(f(z), f(w)) = \rho(z, w) \quad \text{for all } z, w \in \DD.$$
 
-(b) Prove the **Schwarz-Pick Lemma**: for any holomorphic function $f: \mathbb{D} \to \mathbb{D}$,
-$$\frac{|f'(z)|}{1 - |f(z)|^2} \le \frac{1}{1 - |z|^2} \quad \text{for all } z \in \mathbb{D}.$$
+(b) Prove the **Schwarz-Pick Lemma**: for any holomorphic function $f: \DD \to \DD$,
+$$\frac{|f'(z)|}{1 - |f(z)|^2} \le \frac{1}{1 - |z|^2} \quad \text{for all } z \in \DD.$$
 :::
 
 ::: {.solution}
-For $a\in\mathbb D$, define the disk automorphism
+For $a\in\DD$, define the disk automorphism
 \[
 \phi_a(\zeta)=\frac{\zeta-a}{1-\overline a\zeta}.
 \]
@@ -43,11 +43,11 @@ Then
 \rho(z,w)=|\phi_w(z)|.
 \]
 
-Fix $w\in\mathbb D$ and set
+Fix $w\in\DD$ and set
 \[
 g=\phi_{f(w)}\circ f\circ\phi_w^{-1}.
 \]
-Then $g:\mathbb D\to\mathbb D$ is holomorphic and $g(0)=0$. Schwarz's lemma gives
+Then $g:\DD\to\DD$ is holomorphic and $g(0)=0$. Schwarz's lemma gives
 \[
 |g(\zeta)|\le|\zeta|.
 \]

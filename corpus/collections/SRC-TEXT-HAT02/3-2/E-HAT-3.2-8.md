@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be $\mathbb{CP}^2$ with a cell $e^3$ attached by a map $S^2 \to \mathbb{CP}^1 \subset \mathbb{CP}^2$ of degree $p$, and let $Y = M(\ZZ_p, 2) \vee S^4$.
+Let $X$ be $\CP^2$ with a cell $e^3$ attached by a map $S^2 \to \CP^1 \subset \CP^2$ of degree $p$, and let $Y = M(\ZZ_p, 2) \vee S^4$.
 Thus $X$ and $Y$ have the same 3-skeleton but differ in the way their 4-cells are attached.
 Show that $X$ and $Y$ have isomorphic cohomology rings with $\ZZ$ coefficients but not with $\ZZ_p$ coefficients.
 :::
@@ -54,7 +54,7 @@ Now use $\ZZ_p$ coefficients. Since multiplication by $p$ becomes zero, both spa
 \[
 x\in H^2(X;\ZZ_p)
 \]
-be the class restricting to the standard generator of $H^2(\mathbb{CP}^2;\ZZ_p)$. The attached $3$-cell does not alter the $4$-cell cup-product calculation, and by naturality with respect to the inclusion of the $\mathbb{CP}^2$ subcomplex one has
+be the class restricting to the standard generator of $H^2(\CP^2;\ZZ_p)$. The attached $3$-cell does not alter the $4$-cell cup-product calculation, and by naturality with respect to the inclusion of the $\CP^2$ subcomplex one has
 \[
 x^2\ne0\in H^4(X;\ZZ_p);
 \]

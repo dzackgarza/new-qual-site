@@ -174,14 +174,14 @@ least $3$, proving the additive statement.
 For $n\ge1$, Cohen--Jones--Yan compute the shifted loop homology
 algebra
 \[
-\mathbb H_*(L\mathbb{CP}^n)
+\mathbb H_*(L\CP^n)
 \coloneqq
-H_{*+2n}(L\mathbb{CP}^n;\ZZ)
+H_{*+2n}(L\CP^n;\ZZ)
 \]
 as
 \[
 \boxed{
-\mathbb H_*(L\mathbb{CP}^n)
+\mathbb H_*(L\CP^n)
 \cong
 \frac{
 \ZZ[a_{-2},x_{-1},y_{2n}]
@@ -200,15 +200,15 @@ R. Cohen, J. Jones, and J. Yan,
 It is obtained from the multiplicative Serre spectral sequence of the
 evaluation fibration
 \[
-\Omega\mathbb{CP}^n
+\Omega\CP^n
 \longrightarrow
-L\mathbb{CP}^n
+L\CP^n
 \xrightarrow{\operatorname{ev}}
-\mathbb{CP}^n.
+\CP^n.
 \]
 The grading displayed here is the string-topology grading shifted downward by
 \[
-\dim_{\RR}\mathbb{CP}^n=2n.
+\dim_{\RR}\CP^n=2n.
 \]
 
 :::
@@ -219,7 +219,7 @@ The grading displayed here is the string-topology grading shifted downward by
 
 As an ordinary homology group,
 \[
-H_q(L\mathbb{CP}^n;\ZZ)
+H_q(L\CP^n;\ZZ)
 \cong
 \begin{cases}
 \ZZ,
@@ -303,10 +303,10 @@ groups.
 ::: {.pf-step #s1-6}
 
 The integral cohomology groups of the free loop space of
-$\mathbb{CP}^n$ are therefore
+$\CP^n$ are therefore
 \[
 \boxed{
-H^q(L\mathbb{CP}^n;\ZZ)
+H^q(L\CP^n;\ZZ)
 \cong
 \begin{cases}
 \ZZ,
@@ -320,7 +320,7 @@ H^q(L\mathbb{CP}^n;\ZZ)
 \]
 In particular,
 \[
-H^1(L\mathbb{CP}^n;\ZZ)\cong\ZZ.
+H^1(L\CP^n;\ZZ)\cong\ZZ.
 \]
 
 
@@ -332,14 +332,14 @@ Apply the universal coefficient theorem:
 \to
 \operatorname{Ext}
 \bigl(
-H_{q-1}(L\mathbb{CP}^n),\ZZ
+H_{q-1}(L\CP^n),\ZZ
 \bigr)
 \to
-H^q(L\mathbb{CP}^n;\ZZ)
+H^q(L\CP^n;\ZZ)
 \to
 \operatorname{Hom}
 \bigl(
-H_q(L\mathbb{CP}^n),\ZZ
+H_q(L\CP^n),\ZZ
 \bigr)
 \to0.
 \]
@@ -378,7 +378,7 @@ so the group is the displayed direct sum.
 
 Since
 \[
-\mathbb{CP}^1\cong S^2,
+\CP^1\cong S^2,
 \]
 step [](#s1-6){.pf-ref} with $n=1$ gives
 \[
@@ -420,7 +420,7 @@ Step [](#s1-7){.pf-ref} computes the cohomology of
 \]
 and step [](#s1-6){.pf-ref} computes the cohomology of
 \[
-\operatorname{Map}(S^1,\mathbb{CP}^n).
+\operatorname{Map}(S^1,\CP^n).
 \]
 
 :::

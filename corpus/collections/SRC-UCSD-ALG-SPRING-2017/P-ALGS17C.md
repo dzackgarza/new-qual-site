@@ -108,14 +108,14 @@ Then $I$ is maximal.
 
 Define
 \[
-\pi:R\longrightarrow \mathbb F_3,\qquad a+b\sqrt{-6}\longmapsto \overline a.
+\pi:R\longrightarrow \FF_3,\qquad a+b\sqrt{-6}\longmapsto \overline a.
 \]
 This is a surjective ring homomorphism because $-6\equiv0\pmod3$.
 Its kernel consists exactly of elements with $3\mid a$, namely
 \[
 \ker\pi=(3,\sqrt{-6})=I.
 \]
-Hence $R/I\cong\mathbb F_3$ is a field, so $I$ is maximal.
+Hence $R/I\cong\FF_3$ is a field, so $I$ is maximal.
 
 :::
 
@@ -127,7 +127,7 @@ The ideal $I$ is not principal.
 
 ::: pf-proof
 
-The quotient $R/I\cong\mathbb F_3$ has three elements, so $[R:I]=3$ as additive groups.
+The quotient $R/I\cong\FF_3$ has three elements, so $[R:I]=3$ as additive groups.
 If $I=(\alpha)$ for some nonzero $\alpha=a+b\sqrt{-6}$, multiplication by $\alpha$ on the free abelian group $R=\ZZ\oplus\ZZ\sqrt{-6}$ has matrix
 \[
 \begin{pmatrix}a&-6b\\ b&a\end{pmatrix},

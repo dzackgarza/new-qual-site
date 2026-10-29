@@ -14,7 +14,7 @@ review: draft
 
 ::: {.problem}
 The connect-sum (#) of two oriented 4-manifolds is defined by removing an open 4-ball from each, and gluing the resulting manifolds using a homeomorphism between their boundary 3-spheres, in such a way that the orientations match to make a new oriented manifold.
-Compute the cohomology ring of the connect-sum $X = \mathbb{CP}^2 \# (S^2 \times S^2)$.
+Compute the cohomology ring of the connect-sum $X = \CP^2 \# (S^2 \times S^2)$.
 :::
 
 ::: {.solution}
@@ -24,7 +24,7 @@ Compute the cohomology ring of the connect-sum $X = \mathbb{CP}^2 \# (S^2 \times
 ::: {.pf-step #additive-cohomology-groups}
 The additive cohomology groups of
 $$
-X=\mathbb{CP}^2\#(S^2\times S^2)
+X=\CP^2\#(S^2\times S^2)
 $$
 are
 $$
@@ -41,10 +41,10 @@ For connected sums of closed oriented $4$-manifolds, the middle cohomology is th
 :::
 
 ::: pf-step
-Choose degree-$2$ classes $x,u,v$ so that $x$ comes from $\mathbb{CP}^2$ and $u,v$ come from the two sphere factors of $S^2\times S^2$.
+Choose degree-$2$ classes $x,u,v$ so that $x$ comes from $\CP^2$ and $u,v$ come from the two sphere factors of $S^2\times S^2$.
 
 ::: pf-proof
-Thus $x$ generates $H^2(\mathbb{CP}^2)$ and $u,v$ are the pullbacks of the fundamental classes of the two $S^2$ factors.
+Thus $x$ generates $H^2(\CP^2)$ and $u,v$ are the pullbacks of the fundamental classes of the two $S^2$ factors.
 :::
 
 :::
@@ -60,7 +60,7 @@ u^2=v^2=0.
 $$
 
 ::: pf-proof
-On $\mathbb{CP}^2$, the standard generator satisfies $x^2=[\mathbb{CP}^2]^*$. On $S^2\times S^2$, the two factor classes square to zero and their product is the orientation class. Under the oriented connected sum, the two top classes are identified with the common orientation class $\omega$.
+On $\CP^2$, the standard generator satisfies $x^2=[\CP^2]^*$. On $S^2\times S^2$, the two factor classes square to zero and their product is the orientation class. Under the oriented connected sum, the two top classes are identified with the common orientation class $\omega$.
 :::
 
 :::

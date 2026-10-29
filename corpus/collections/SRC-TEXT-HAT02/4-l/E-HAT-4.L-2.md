@@ -25,28 +25,28 @@ audit:
 ---
 
 ::: {.problem}
-Use cohomology operations to show that the spaces $(S^1 \times \mathbb{CP}^\infty) / (S^1 \times \{x_0\})$ and $S^3 \times \mathbb{CP}^\infty$ are not homotopy equivalent.
+Use cohomology operations to show that the spaces $(S^1 \times \CP^\infty) / (S^1 \times \{x_0\})$ and $S^3 \times \CP^\infty$ are not homotopy equivalent.
 :::
 
 ::: {.solution}
 Put
 \[
-X=(S^1\times\mathbb{CP}^\infty)/(S^1\times\{x_0\}),
+X=(S^1\times\CP^\infty)/(S^1\times\{x_0\}),
 \qquad
-Y=S^3\times\mathbb{CP}^\infty.
+Y=S^3\times\CP^\infty.
 \]
 With \(\ZZ_2\)-coefficients, the relative Künneth theorem gives
 \[
 \widetilde H^*(X;\ZZ_2)
 \cong
 H^*(S^1;\ZZ_2)\otimes
-\widetilde H^*(\mathbb{CP}^\infty;\ZZ_2).
+\widetilde H^*(\CP^\infty;\ZZ_2).
 \]
 Let
 \[
 a\in H^1(S^1;\ZZ_2),
 \qquad
-x\in H^2(\mathbb{CP}^\infty;\ZZ_2)
+x\in H^2(\CP^\infty;\ZZ_2)
 \]
 be the standard generators. Then the unique nonzero class in \(H^3(X;\ZZ_2)\) is
 \[
@@ -58,7 +58,7 @@ Sq^2(u)
 =Sq^2(a\times x)
 =a\times Sq^2x,
 \]
-since \(Sq^1a=a^2=0\) and \(Sq^2a=0\) by instability. For the degree-two generator of \(\mathbb{CP}^\infty\),
+since \(Sq^1a=a^2=0\) and \(Sq^2a=0\) by instability. For the degree-two generator of \(\CP^\infty\),
 \[
 Sq^2x=x^2.
 \]
@@ -82,6 +82,6 @@ because \(H^5(S^3;\ZZ_2)=0\).
 
 Any homotopy equivalence \(X\simeq Y\) would induce an isomorphism on mod-2 cohomology carrying the unique nonzero degree-three class to the unique nonzero degree-three class and commuting with \(Sq^2\). Equations (1) and (2) contradict this. Therefore
 \[
-\boxed{X\not\simeq S^3\times\mathbb{CP}^\infty.}
+\boxed{X\not\simeq S^3\times\CP^\infty.}
 \]
 :::

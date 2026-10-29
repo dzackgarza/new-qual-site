@@ -157,7 +157,7 @@ coefficient action. Moreover,
 \[
 K(\ZZ,2)
 \simeq
-\mathbb{CP}^{\infty}
+\CP^{\infty}
 \]
 and hence
 \[

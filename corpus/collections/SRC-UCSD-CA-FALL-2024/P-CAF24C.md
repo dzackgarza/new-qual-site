@@ -18,10 +18,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \mathbb{D} \to \CC$ be holomorphic.
+Let $f : \DD \to \CC$ be holomorphic.
 Assume that
 
-(i) $|f(z)| < 2$ for all $z \in \mathbb{D}$,
+(i) $|f(z)| < 2$ for all $z \in \DD$,
 
 (ii) $f\!\left(\dfrac{1}{3}\right) = 1$.
 

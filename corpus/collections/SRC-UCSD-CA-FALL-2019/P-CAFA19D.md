@@ -13,10 +13,10 @@ review: draft
 ---
 
 ::: {.problem}
-Let $b \in \mathbb{D}$ and set $f(z) = z^7 - 2z^5 + b$.
+Let $b \in \DD$ and set $f(z) = z^7 - 2z^5 + b$.
 
-(a) How many roots (counting multiplicity) does $f$ have in $\mathbb{D}$?
-How many simple roots does $f$ have in $\mathbb{D}$?
+(a) How many roots (counting multiplicity) does $f$ have in $\DD$?
+How many simple roots does $f$ have in $\DD$?
 
 (b) How many simple roots does $f$ have in $\{1 \leq |z| < 2\}$?
 :::
@@ -27,7 +27,7 @@ On $|z|=1$,
 |z^7+b|\le 1+|b|<2=|-2z^5|.
 \]
 By Rouché's theorem, $f$ and $-2z^5$ have the same number of zeros in
-$\mathbb D$, namely $5$, counted with multiplicity.
+$\DD$, namely $5$, counted with multiplicity.
 
 We next determine multiplicities. Since
 \[
@@ -39,13 +39,13 @@ $f(0)=b\ne0$. At $z=\pm\sqrt{10/7}$, the condition $f(z)=0$ would force
 |b|=\left|z^5(2-z^2)\right|
 =\frac47\left(\frac{10}{7}\right)^{5/2}>1,
 \]
-contrary to $|b|<1$. Thus for $b\ne0$ all five zeros in $\mathbb D$ are
+contrary to $|b|<1$. Thus for $b\ne0$ all five zeros in $\DD$ are
 simple. If $b=0$, then
 \[
 f(z)=z^5(z^2-2),
 \]
-so the only zero in $\mathbb D$ is $0$, with multiplicity $5$, and hence
-there are no simple zeros in $\mathbb D$.
+so the only zero in $\DD$ is $0$, with multiplicity $5$, and hence
+there are no simple zeros in $\DD$.
 
 On $|z|=2$,
 \[

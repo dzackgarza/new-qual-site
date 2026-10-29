@@ -48,7 +48,7 @@ A lens space of sufficiently high dimension with fundamental group \(\ZZ_{p^n}\)
 (\Sigma K)^{(2k+1)}.
 \]
 
-Recall the construction of (1). For a generator \(r\in\mathbb F_p^\times\), Proposition 4I.3 constructs maps
+Recall the construction of (1). For a generator \(r\in\FF_p^\times\), Proposition 4I.3 constructs maps
 \[
 m_i:\Sigma K\to\Sigma K
 \]

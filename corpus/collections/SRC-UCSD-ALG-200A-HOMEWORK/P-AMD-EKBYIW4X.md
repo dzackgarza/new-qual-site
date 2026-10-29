@@ -263,17 +263,17 @@ If $H=C_p$ is a cyclic simple group of prime order, then $H^n$ is characteristic
 
 Identify
 \[
-H^n\cong \mathbb F_p^n
+H^n\cong \FF_p^n
 \]
 as an additive group.
-Its automorphism group is $\operatorname{GL}_n(\mathbb F_p)$.
+Its automorphism group is $\operatorname{GL}_n(\FF_p)$.
 
 Let $K$ be a nontrivial characteristic subgroup and choose $0\ne v\in K$.
-For every nonzero $w\in\mathbb F_p^n$, there is an invertible linear map carrying $v$ to $w$.
+For every nonzero $w\in\FF_p^n$, there is an invertible linear map carrying $v$ to $w$.
 Since $K$ is invariant under every automorphism, every nonzero $w$ lies in $K$.
 Hence
 \[
-K=\mathbb F_p^n=H^n.
+K=\FF_p^n=H^n.
 \]
 Thus the only characteristic subgroups are $1$ and $H^n$.
 

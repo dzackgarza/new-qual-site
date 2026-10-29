@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Let $\{f_n\}$ be a sequence of holomorphic functions on $\mathbb D$ with the property that
+Problem 10. Let $\{f_n\}$ be a sequence of holomorphic functions on $\DD$ with the property that
 \[
 F(z):=\sum_{n=1}^{\infty}|f_n(z)|^2\le1
 \]
-for all $z\in\mathbb D$. Show that the series defining $F(z)$ converges uniformly on compact subsets of $\mathbb D$ and that $F$ is subharmonic.
+for all $z\in\DD$. Show that the series defining $F(z)$ converges uniformly on compact subsets of $\DD$ and that $F$ is subharmonic.
 :::
 
 ::: {.solution}
@@ -35,10 +35,10 @@ g_N(z)\coloneqq\sum_{n=1}^N|f_n(z)|^2.
 
 ::: {.pf-step #s1}
 
-Each $g_N$ is continuous and subharmonic on $\mathbb D$, and
+Each $g_N$ is continuous and subharmonic on $\DD$, and
 \[
 0\le g_N(z)\uparrow F(z)\le1
-\qquad (z\in\mathbb D).
+\qquad (z\in\DD).
 \]
 
 
@@ -56,27 +56,27 @@ so $|f|^2$ is subharmonic. Finite sums of subharmonic functions are subharmonic,
 
 ::: {.pf-step #s2}
 
-The sequence $(g_N)$ is uniformly Cauchy on every compact subset of $\mathbb D$.
+The sequence $(g_N)$ is uniformly Cauchy on every compact subset of $\DD$.
 
 
 ::: pf-proof
 
 ::: pf-step
 
-Fix a compact set $K\subset\mathbb D$. There exist $\rho>0$ and points $w_1,\dots,w_m\in K$ such that
+Fix a compact set $K\subset\DD$. There exist $\rho>0$ and points $w_1,\dots,w_m\in K$ such that
 \[
 K\subset\bigcup_{j=1}^m B(w_j,\rho)
 \quad\text{and}\quad
-\overline{B(w_j,2\rho)}\subset\mathbb D
+\overline{B(w_j,2\rho)}\subset\DD
 \ \text{for every }j.
 \]
 
 
 ::: pf-proof
 
-Since $K$ is compact and $\mathbb D$ is open,
+Since $K$ is compact and $\DD$ is open,
 \[
-d\coloneqq\operatorname{dist}(K,\partial\mathbb D)>0.
+d\coloneqq\operatorname{dist}(K,\partial\DD)>0.
 \]
 Choose $0<\rho<d/2$. The balls $B(w,\rho)$ with $w\in K$ cover $K$, so compactness gives a finite subcover with centers $w_1,\dots,w_m\in K$. The choice $2\rho<d$ gives the second assertion.
 
@@ -171,7 +171,7 @@ This bound is independent of $z\in K$.
 
 ::: pf-qed
 
-Step [](#s2-4){.pf-ref} proves the claim of step [](#s2){.pf-ref} for an arbitrary compact set $K\subset\mathbb D$.
+Step [](#s2-4){.pf-ref} proves the claim of step [](#s2){.pf-ref} for an arbitrary compact set $K\subset\DD$.
 
 :::
 
@@ -185,7 +185,7 @@ The series
 \[
 \sum_{n=1}^{\infty}|f_n(z)|^2
 \]
-converges uniformly on every compact subset of $\mathbb D$ to $F$.
+converges uniformly on every compact subset of $\DD$ to $F$.
 
 
 ::: pf-proof
@@ -198,12 +198,12 @@ By step [](#s2){.pf-ref}, the partial sums $(g_N)$ are uniformly Cauchy on each 
 
 ::: {.pf-step #s4}
 
-The function $F$ is subharmonic on $\mathbb D$.
+The function $F$ is subharmonic on $\DD$.
 
 
 ::: pf-proof
 
-By step [](#s3){.pf-ref}, $F$ is a locally uniform limit of the continuous functions $g_N$, so $F$ is continuous. Let $\overline{B(z_0,r)}\subset\mathbb D$. Since $g_N$ is subharmonic,
+By step [](#s3){.pf-ref}, $F$ is a locally uniform limit of the continuous functions $g_N$, so $F$ is continuous. Let $\overline{B(z_0,r)}\subset\DD$. Since $g_N$ is subharmonic,
 \[
 g_N(z_0)
 \le
@@ -215,7 +215,7 @@ F(z_0)
 \le
 \frac1{2\pi}\int_0^{2\pi}F(z_0+re^{i\theta})\,d\theta.
 \]
-Thus the continuous function $F$ satisfies the sub-mean-value inequality on every closed disk compactly contained in $\mathbb D$, which is the defining criterion for subharmonicity.
+Thus the continuous function $F$ satisfies the sub-mean-value inequality on every closed disk compactly contained in $\DD$, which is the defining criterion for subharmonicity.
 
 :::
 

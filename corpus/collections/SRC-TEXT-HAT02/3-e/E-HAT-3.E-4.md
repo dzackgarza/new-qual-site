@@ -35,24 +35,24 @@ SO(5)\simeq X\times Y
 \]
 with both \(X\) and \(Y\) having nontrivial reduced cohomology. Replacing the factors by the images of the two standard retractions, each factor is homotopy dominated by \(SO(5)\). Hence its integral cohomology is a direct summand of the corresponding cohomology of \(SO(5)\); in particular all torsion in the factors is \(2\)-torsion.
 
-Over \(\mathbb F_2\), Hatcher's computation gives
+Over \(\FF_2\), Hatcher's computation gives
 \[
-H^*(SO(5);\mathbb F_2)
+H^*(SO(5);\FF_2)
 \cong
-\mathbb F_2[\beta_1,\beta_3]/(\beta_1^8,\beta_3^2),
+\FF_2[\beta_1,\beta_3]/(\beta_1^8,\beta_3^2),
 \qquad
 |\beta_1|=1,\ |\beta_3|=3.
 \]
 By the field-coefficient Künneth theorem,
 \[
-H^*(SO(5);\mathbb F_2)
-\cong H^*(X;\mathbb F_2)\otimes H^*(Y;\mathbb F_2)
+H^*(SO(5);\FF_2)
+\cong H^*(X;\FF_2)\otimes H^*(Y;\FF_2)
 \]
 as graded algebras.
 
 Let \(Q(A)=A^+/(A^+)^2\) denote the indecomposables of a connected graded algebra. Here
 \[
-QH^*(SO(5);\mathbb F_2)
+QH^*(SO(5);\FF_2)
 \]
 has dimension \(2\), with generators in degrees \(1\) and \(3\). For a tensor product,
 \[
@@ -78,11 +78,11 @@ Thus the degree-3 factor generator is necessarily \(\beta_3\). Consequently, und
 
 Now use the integral Bockstein
 \[
-\delta:H^*(-;\mathbb F_2)\longrightarrow H^{*+1}(-;\ZZ)
+\delta:H^*(-;\FF_2)\longrightarrow H^{*+1}(-;\ZZ)
 \]
 for
 \[
-0\to\ZZ\xrightarrow{2}\ZZ\to\mathbb F_2\to0.
+0\to\ZZ\xrightarrow{2}\ZZ\to\FF_2\to0.
 \]
 Hatcher's calculation of the integral ring gives a class
 \[

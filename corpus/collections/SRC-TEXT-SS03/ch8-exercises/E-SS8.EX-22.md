@@ -30,9 +30,9 @@ $$
 ::: {.solution}
 Put $\beta_j=1-\alpha_j$. Choose a Möbius map
 \[
-\phi:\mathbb H\longrightarrow\mathbb D
+\phi:\mathbb H\longrightarrow\DD
 \]
-whose inverse sends real points $x_j$ to the boundary points $B_j\in\partial\mathbb D$ that correspond under $F$ to the polygon vertices $a_j$.
+whose inverse sends real points $x_j$ to the boundary points $B_j\in\partial\DD$ that correspond under $F$ to the polygon vertices $a_j$.
 
 Then $G=F\circ\phi$ maps $\mathbb H$ conformally onto $P$. By the Schwarz--Christoffel formula,
 \[

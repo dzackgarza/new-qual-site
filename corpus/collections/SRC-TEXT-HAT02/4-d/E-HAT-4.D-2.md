@@ -25,13 +25,13 @@ audit:
 ---
 
 ::: {.problem}
-Apply the Leray–Hirsch theorem to the bundle $S^1 \to S^\infty/\ZZ_p \to \mathbb{CP}^\infty$ to compute $H^*(K(\ZZ_p, 1); \ZZ_p)$ from $H^*(\mathbb{CP}^\infty; \ZZ_p)$.
+Apply the Leray–Hirsch theorem to the bundle $S^1 \to S^\infty/\ZZ_p \to \CP^\infty$ to compute $H^*(K(\ZZ_p, 1); \ZZ_p)$ from $H^*(\CP^\infty; \ZZ_p)$.
 :::
 
 ::: {.solution}
 Consider
 \[
-S^1\longrightarrow S^\infty/\ZZ_p\xrightarrow{q}\mathbb{CP}^\infty.
+S^1\longrightarrow S^\infty/\ZZ_p\xrightarrow{q}\CP^\infty.
 \]
 The inclusion of a fiber induces on fundamental groups the reduction map
 \[
@@ -44,9 +44,9 @@ a\in H^1(S^\infty/\ZZ_p;\ZZ_p)
 restricts to the generator of \(H^1(S^1;\ZZ_p)\). Leray--Hirsch gives
 \[
 H^*(K(\ZZ_p,1);\ZZ_p)
-\cong H^*(\mathbb{CP}^\infty;\ZZ_p)\{1,a\}
+\cong H^*(\CP^\infty;\ZZ_p)\{1,a\}
 \]
-as a module. If \(b=q^*c\), where \(c\) generates \(H^2(\mathbb{CP}^\infty;\ZZ_p)\), then
+as a module. If \(b=q^*c\), where \(c\) generates \(H^2(\CP^\infty;\ZZ_p)\), then
 \[
 H^*(K(\ZZ_p,1);\ZZ_p)
 \cong \ZZ_p[b]\{1,a\},

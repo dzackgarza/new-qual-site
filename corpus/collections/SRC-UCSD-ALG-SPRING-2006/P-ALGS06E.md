@@ -196,7 +196,7 @@ S^{-1}R
 \cong
 \operatorname{Frac}(R/(2))\times\operatorname{Frac}(R/(X))
 \cong
-\mathbb F_2(X)\times\QQ,
+\FF_2(X)\times\QQ,
 \]
 a product of fields. Thus the stated gcd hypothesis is sufficient but not necessary.
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ARTALG-SU05-5
 kind: problem
-title: 'Roots of $x^{80}-1$, $x^{81}-1$, and $x^{88}-1$ over $\mathbb F_{81}$'
+title: 'Roots of $x^{80}-1$, $x^{81}-1$, and $x^{88}-1$ over $\FF_{81}$'
 classification:
   areas:
   - algebra

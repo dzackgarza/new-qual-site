@@ -25,11 +25,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha}z}$ with $\abs{\alpha} < 1$ and $\mathbb{D} = \{z : \abs{z} < 1\}$. Prove that
+Let $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha}z}$ with $\abs{\alpha} < 1$ and $\DD = \{z : \abs{z} < 1\}$. Prove that
 
-(a) $\displaystyle\frac{1}{\pi}\iint_{\mathbb{D}} \abs{\psi_\alpha'}^2\,dx\,dy = 1$.
+(a) $\displaystyle\frac{1}{\pi}\iint_{\DD} \abs{\psi_\alpha'}^2\,dx\,dy = 1$.
 
-(b) for $0 < \abs{\alpha} < 1$, $\displaystyle\frac{1}{\pi}\iint_{\mathbb{D}} \abs{\psi_\alpha'}\,dx\,dy = \frac{1 - \abs{\alpha}^2}{\abs{\alpha}^2}\log\frac{1}{1 - \abs{\alpha}^2}$.
+(b) for $0 < \abs{\alpha} < 1$, $\displaystyle\frac{1}{\pi}\iint_{\DD} \abs{\psi_\alpha'}\,dx\,dy = \frac{1 - \abs{\alpha}^2}{\abs{\alpha}^2}\log\frac{1}{1 - \abs{\alpha}^2}$.
 :::
 
 ::: {.solution}

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HFGO35
 kind: problem
-title: $\mathbb F_{27}$ as a cubic extension of $\mathbb F_3$
+title: $\FF_{27}$ as a cubic extension of $\FF_3$
 classification:
   areas: [algebra]
   topics: [Finite Fields]
@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Construct a field of order $27$ from $\mathbb F_3$ and an irreducible polynomial.
+Construct a field of order $27$ from $\FF_3$ and an irreducible polynomial.
 What degree must the polynomial have?
 :::
 
@@ -33,16 +33,16 @@ The polynomial must have degree $3$.
 
 ::: {.pf-step #s1}
 
-If $f(T)\in\mathbb F_3[T]$ is irreducible of degree $d$, then
+If $f(T)\in\FF_3[T]$ is irreducible of degree $d$, then
 \[
-\mathbb F_3[T]/(f)
+\FF_3[T]/(f)
 \]
 has $3^d$ elements.
 
 ::: pf-proof
 
 Every residue class has a unique representative of degree less than $d$, so it
-is determined by $d$ coefficients in $\mathbb F_3$. Hence there are $3^d$
+is determined by $d$ coefficients in $\FF_3$. Hence there are $3^d$
 classes. Irreducibility of $f$ makes the quotient a field.
 
 :::
@@ -67,11 +67,11 @@ For example,
 \[
 f(T)=T^3-T-1
 \]
-is irreducible over $\mathbb F_3$.
+is irreducible over $\FF_3$.
 
 ::: pf-proof
 
-It has no root in $\mathbb F_3$:
+It has no root in $\FF_3$:
 \[
 f(0)=2,
 \qquad
@@ -90,7 +90,7 @@ root. Therefore $f$ is irreducible.
 
 Thus
 \[
-\mathbb F_3[T]/(T^3-T-1)
+\FF_3[T]/(T^3-T-1)
 \]
 is a field of order $27$.
 

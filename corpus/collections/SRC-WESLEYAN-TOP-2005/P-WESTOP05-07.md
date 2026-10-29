@@ -261,7 +261,7 @@ Hence the quotient is
 \boxed{
 N_3
 =
-\mathbb{RP}^2\#\mathbb{RP}^2\#\mathbb{RP}^2}.
+\RP^2\#\RP^2\#\RP^2}.
 \]
 
 
@@ -417,7 +417,7 @@ x^2y^2z^2=1
 
 Step [](#s1-11){.pf-ref} identifies the underlying surface with
 \[
-N_3=\#^3\mathbb{RP}^2,
+N_3=\#^3\RP^2,
 \]
 whose standard polygon presentation has the displayed fundamental group.
 
@@ -514,7 +514,7 @@ This is the group in step [](#s1-21){.pf-ref} written in standard form.
 
 Step [](#s1-17){.pf-ref} gives a presentation of the fundamental group, step [](#s1-22){.pf-ref} gives
 the first homology group, and step [](#s1-11){.pf-ref} identifies the surface as
-\(\#^3\mathbb{RP}^2\).
+\(\#^3\RP^2\).
 
 :::
 

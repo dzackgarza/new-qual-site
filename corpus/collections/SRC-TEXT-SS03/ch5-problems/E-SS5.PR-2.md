@@ -87,5 +87,5 @@ because
 |1-\overline\alpha z|^2-|\alpha-z|^2
 =(1-|\alpha|^2)(1-|z|^2)>0.
 \]
-Therefore every finite partial product has modulus at most $1$, and passing to the locally uniform limit gives $|f(z)|\le1$ on $\mathbb D$.
+Therefore every finite partial product has modulus at most $1$, and passing to the locally uniform limit gives $|f(z)|\le1$ on $\DD$.
 :::

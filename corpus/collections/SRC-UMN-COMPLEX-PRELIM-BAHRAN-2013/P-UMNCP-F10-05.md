@@ -29,7 +29,7 @@ for every \(z\) in the unit disk.
 
 Fix
 $$
-z_0\in\mathbb D.
+z_0\in\DD.
 $$
 
 ::: pf
@@ -63,7 +63,7 @@ r+|z_0|
 <
 1.
 $$
-Thus every point of the closed disk lies in $\mathbb D$.
+Thus every point of the closed disk lies in $\DD$.
 
 :::
 
@@ -182,7 +182,7 @@ The estimate holds for every point of the unit disk.
 
 The point
 $$
-z_0\in\mathbb D
+z_0\in\DD
 $$
 was arbitrary.
 

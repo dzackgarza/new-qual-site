@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-6
 kind: problem
-title: Simplicial cohomology of the torus, $\mathbb{RP}^2$, and the Klein bottle
+title: Simplicial cohomology of the torus, $\RP^2$, and the Klein bottle
 classification:
   areas:
   - topology
@@ -27,7 +27,7 @@ audit:
 ::: {.problem}
 (a) Directly from the definitions, compute the simplicial cohomology groups of $S^1 \times S^1$ with $\ZZ$ and $\ZZ_2$ coefficients, using the $\Delta$-complex structure given in §2.1.
 
-(b) Do the same for $\mathbb{RP}^2$ and the Klein bottle.
+(b) Do the same for $\RP^2$ and the Klein bottle.
 :::
 
 ::: {.solution}
@@ -81,7 +81,7 @@ The kernel of $\delta^1$ is given by one equation $x+y-z=0$, hence is isomorphic
 
 ::: pf-step
 
-For $\mathbb{RP}^2$, choose the standard $\Delta$-complex with vertices $v,w$, edges $a,b,c$, and faces $U,L$, with
+For $\RP^2$, choose the standard $\Delta$-complex with vertices $v,w$, edges $a,b,c$, and faces $U,L$, with
 \[
 \partial a=\partial b=w-v,\qquad \partial c=0,
 \]
@@ -110,9 +110,9 @@ These are obtained by evaluating cochains on the displayed simplicial boundaries
 
 With integral coefficients,
 \[
-\boxed{H^0(\mathbb{RP}^2;\ZZ)=\ZZ,\quad
-H^1(\mathbb{RP}^2;\ZZ)=0,\quad
-H^2(\mathbb{RP}^2;\ZZ)=\ZZ_2.}
+\boxed{H^0(\RP^2;\ZZ)=\ZZ,\quad
+H^1(\RP^2;\ZZ)=0,\quad
+H^2(\RP^2;\ZZ)=\ZZ_2.}
 \]
 
 ::: pf-proof
@@ -131,7 +131,7 @@ so $H^1=0$. The matrix of $\delta^1$ has rank two and its $2\times2$ minors have
 
 With $\ZZ_2$ coefficients,
 \[
-\boxed{H^i(\mathbb{RP}^2;\ZZ_2)\cong\ZZ_2\quad(i=0,1,2).}
+\boxed{H^i(\RP^2;\ZZ_2)\cong\ZZ_2\quad(i=0,1,2).}
 \]
 
 ::: pf-proof

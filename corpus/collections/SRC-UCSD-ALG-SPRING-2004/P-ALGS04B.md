@@ -46,10 +46,10 @@ normal subgroup.
 
 Let
 \[
-U=\left\{\begin{pmatrix}1&b\\0&1\end{pmatrix}:b\in\mathbb F_{17}\right\}.
+U=\left\{\begin{pmatrix}1&b\\0&1\end{pmatrix}:b\in\FF_{17}\right\}.
 \]
-Then \(U\cong (\mathbb F_{17},+)\), so \(|U|=17\) and \(U\) is a Sylow \(17\)-subgroup
-of \(G=\operatorname{GL}(2,\mathbb F_{17})\).
+Then \(U\cong (\FF_{17},+)\), so \(|U|=17\) and \(U\) is a Sylow \(17\)-subgroup
+of \(G=\operatorname{GL}(2,\FF_{17})\).
 
 ::: pf-proof
 
@@ -105,8 +105,8 @@ Conversely, \(N_G(U)\le B\). Hence \(N_G(U)=B\).
 
 ::: pf-proof
 
-The common fixed subspace of \(U\) on \(\mathbb F_{17}^2\) is exactly the line
-\(L=\mathbb F_{17}e_1\): a vector \((r,s)^T\) is fixed by every
+The common fixed subspace of \(U\) on \(\FF_{17}^2\) is exactly the line
+\(L=\FF_{17}e_1\): a vector \((r,s)^T\) is fixed by every
 \(\begin{pmatrix}1&b\\0&1\end{pmatrix}\) iff \(bs=0\) for every \(b\), hence iff
 \(s=0\).
 

@@ -348,7 +348,7 @@ The quotient $P/\Phi(P)$ is an elementary abelian $p$-group.
 
 By step [](#s9){.pf-ref}, the quotient is abelian and every element has order dividing $p$.
 It is finite because $P$ is finite.
-Hence it is a finite-dimensional vector space over $\mathbb F_p$, equivalently a finite direct product of copies of $C_p$.
+Hence it is a finite-dimensional vector space over $\FF_p$, equivalently a finite direct product of copies of $C_p$.
 Thus $P/\Phi(P)$ is elementary abelian.
 
 :::
@@ -369,12 +369,12 @@ Set
 V=P/N.
 \]
 If $V=0$, then $N=P$ and the conclusion is immediate.
-Otherwise, view $V$ as a finite-dimensional vector space over $\mathbb F_p$.
+Otherwise, view $V$ as a finite-dimensional vector space over $\FF_p$.
 
 The intersection of all codimension-one subspaces of $V$ is $0$.
 Indeed, for any nonzero $v\in V$, extend $v$ to a basis and choose a linear functional
 \[
-f:V\to\mathbb F_p
+f:V\to\FF_p
 \]
 with $f(v)=1$; then $\ker f$ is a hyperplane not containing $v$.
 

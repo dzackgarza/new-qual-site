@@ -32,7 +32,7 @@ We derive a contradiction.
 ::: pf-step
 The map descends to
 $$
-\bar g:\mathbb{RP}^n\to\mathbb{RP}^m.
+\bar g:\RP^n\to\RP^m.
 $$
 
 ::: pf-proof
@@ -48,19 +48,19 @@ $$
 $$
 
 ::: pf-proof
-A generator of $\pi_1(\mathbb{RP}^n)$ lifts to a path in $S^n$ from $x$ to $-x$. Its image under $g$ is a path from $g(x)$ to $-g(x)$, which projects to the nontrivial loop in $\mathbb{RP}^m$. Thus the generator maps to the generator.
+A generator of $\pi_1(\RP^n)$ lifts to a path in $S^n$ from $x$ to $-x$. Its image under $g$ is a path from $g(x)$ to $-g(x)$, which projects to the nontrivial loop in $\RP^m$. Thus the generator maps to the generator.
 :::
 
 :::
 
 ::: pf-step
-If $u\in H^1(\mathbb{RP}^m;\mathbb F_2)$ and $v\in H^1(\mathbb{RP}^n;\mathbb F_2)$ are the standard generators, then
+If $u\in H^1(\RP^m;\FF_2)$ and $v\in H^1(\RP^n;\FF_2)$ are the standard generators, then
 $$
 \bar g^*(u)=v.
 $$
 
 ::: pf-proof
-Degree-$1$ mod-$2$ cohomology is $\operatorname{Hom}(\pi_1,\mathbb F_2)$ here, and step [](#pi1-map-isomorphism){.pf-ref} shows the induced homomorphism is nonzero.
+Degree-$1$ mod-$2$ cohomology is $\operatorname{Hom}(\pi_1,\FF_2)$ here, and step [](#pi1-map-isomorphism){.pf-ref} shows the induced homomorphism is nonzero.
 :::
 
 :::
@@ -75,9 +75,9 @@ which is impossible.
 ::: pf-proof
 The cohomology rings are
 $$
-H^*(\mathbb{RP}^r;\mathbb F_2)\cong\mathbb F_2[t]/(t^{r+1}).
+H^*(\RP^r;\FF_2)\cong\FF_2[t]/(t^{r+1}).
 $$
-Thus $u^{m+1}=0$ in the target, while $v^{m+1}\ne0$ in $H^{m+1}(\mathbb{RP}^n;\mathbb F_2)$ because $m+1\le n$.
+Thus $u^{m+1}=0$ in the target, while $v^{m+1}\ne0$ in $H^{m+1}(\RP^n;\FF_2)$ because $m+1\le n$.
 :::
 
 :::

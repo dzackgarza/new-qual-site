@@ -29,7 +29,7 @@ Determine the Jordan Canonical Form (JCF) of $A$ and an explicit change-of-basis
 
 (a) When $F = \QQ$,
 
-(b) When $F = \mathbb{F}_p$.
+(b) When $F = \FF_p$.
 :::
 
 ::: {.solution}
@@ -126,23 +126,23 @@ $$P = \begin{pmatrix} v_1 & u_1 & u_2 & \cdots & u_{p-1} \end{pmatrix} = \begin{
 
 ::: pf-step
 
-Over $\mathbb F_p$, the nilpotent part $A+I_p$ has square zero and rank one.
+Over $\FF_p$, the nilpotent part $A+I_p$ has square zero and rank one.
 
 ::: pf-proof
 
 ::: pf-step
 
-Characteristic polynomial over $\mathbb{F}_p$:
-        - In $\mathbb{F}_p$, $p - 1 \equiv -1 \pmod p$.
+Characteristic polynomial over $\FF_p$:
+        - In $\FF_p$, $p - 1 \equiv -1 \pmod p$.
         - Thus $\chi_A(x) = (x - (p - 1))(x + 1)^{p-1} \equiv (x + 1)^p \pmod p$.
-        - The only eigenvalue of $A$ in $\mathbb{F}_p$ is $\lambda = -1$, with algebraic multiplicity $p$.
+        - The only eigenvalue of $A$ in $\FF_p$ is $\lambda = -1$, with algebraic multiplicity $p$.
 
 :::
 
 ::: pf-step
 
 Nilpotent part $N = A - (-1) I_p = A + I_p = J_p$:
-        - Over $\mathbb{F}_p$, $N^2 = J_p^2 = p J_p \equiv 0 \in M_p(\mathbb{F}_p)$.
+        - Over $\FF_p$, $N^2 = J_p^2 = p J_p \equiv 0 \in M_p(\FF_p)$.
         - Since $J_p \ne 0$, the minimal polynomial of $A$ is $m_A(x) = (x + 1)^2$.
         - Thus the largest Jordan block has size 2.
 
@@ -160,8 +160,8 @@ Geometric multiplicity:
 ::: pf-step
 
 Jordan block structure:
-        - Since the partition of $p$ into $p - 1$ parts with largest part 2 is uniquely $2 + 1 + 1 + \dots + 1$, the JCF over $\mathbb{F}_p$ consists of one $2 \times 2$ block and $p - 2$ blocks of size $1 \times 1$:
-        $$J_{\mathbb{F}_p}(A) = \begin{pmatrix}
+        - Since the partition of $p$ into $p - 1$ parts with largest part 2 is uniquely $2 + 1 + 1 + \dots + 1$, the JCF over $\FF_p$ consists of one $2 \times 2$ block and $p - 2$ blocks of size $1 \times 1$:
+        $$J_{\FF_p}(A) = \begin{pmatrix}
         -1 & 1 & 0 & \cdots & 0 \\
         0 & -1 & 0 & \cdots & 0 \\
         0 & 0 & -1 & \cdots & 0 \\
@@ -177,14 +177,14 @@ Jordan basis and matrix $P$:
 
 :::
 
-- Choose the generalized eigenvector $w = e_1 = (1, 0, 0, \dots, 0)^t \in \mathbb{F}_p^p$.
+- Choose the generalized eigenvector $w = e_1 = (1, 0, 0, \dots, 0)^t \in \FF_p^p$.
 - Apply $A + I = J_p$:
 $$(A + I) w = J_p e_1 = (1, 1, \dots, 1)^t = v_1.$$
 - Since $(A + I) v_1 = J_p v_1 = p v_1 \equiv 0$, the pair $\{v_1, w\}$ forms a Jordan chain of length 2:
 $$A v_1 = -v_1, \qquad A w = v_1 - w.$$
 - For the remaining $p - 2$ blocks of size 1, choose eigenvectors $u_1, \dots, u_{p-2}$ where $u_i = e_1 - e_{i+1}$.
-- These $p$ vectors $\{v_1, w, u_1, u_2, \dots, u_{p-2}\}$ form a basis of $\mathbb{F}_p^p$.
-- Setting $P = \begin{pmatrix} v_1 & w & u_1 & u_2 & \cdots & u_{p-2} \end{pmatrix} \in \operatorname{GL}_p(\mathbb{F}_p)$ satisfies $P^{-1} A P = J_{\mathbb{F}_p}(A)$.
+- These $p$ vectors $\{v_1, w, u_1, u_2, \dots, u_{p-2}\}$ form a basis of $\FF_p^p$.
+- Setting $P = \begin{pmatrix} v_1 & w & u_1 & u_2 & \cdots & u_{p-2} \end{pmatrix} \in \operatorname{GL}_p(\FF_p)$ satisfies $P^{-1} A P = J_{\FF_p}(A)$.
 
 :::
 
@@ -192,7 +192,7 @@ $$A v_1 = -v_1, \qquad A w = v_1 - w.$$
 
 ::: pf-qed
 
-Over $\QQ$, $A$ is diagonalizable with eigenvalues $p-1$ (mult 1) and $-1$ (mult $p-1$). Over $\mathbb{F}_p$, $A$ has one Jordan block of size 2 and $p-2$ Jordan blocks of size 1 for eigenvalue $-1$.
+Over $\QQ$, $A$ is diagonalizable with eigenvalues $p-1$ (mult 1) and $-1$ (mult $p-1$). Over $\FF_p$, $A$ has one Jordan block of size 2 and $p-2$ Jordan blocks of size 1 for eigenvalue $-1$.
 
 :::
 

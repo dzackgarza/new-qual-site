@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Prove that there exists a sequence of rational functions $R_n$ analytic in $\CC \setminus \{3/2\}$, satisfying both of the following:
 
-(i) $\lim_{n \to \infty} R_n(z) = 1$ for all $z \in \mathbb{D}$.
+(i) $\lim_{n \to \infty} R_n(z) = 1$ for all $z \in \DD$.
 
 (ii) $\lim_{n \to \infty} R_n(z) = 2$ for $2 \leq |z| \leq 3$.
 :::

@@ -69,9 +69,9 @@ whereas
 Thus no limit exists as $|z|\to\infty$.
 
 **(e) True.** Since $G$ is bounded, it is a proper simply connected domain.
-Choose a conformal map $\phi:G\to\mathbb D$ with $\phi(i)=0$. Then
+Choose a conformal map $\phi:G\to\DD$ with $\phi(i)=0$. Then
 \[
-F=\phi\circ f\circ\phi^{-1}:\mathbb D\to\mathbb D
+F=\phi\circ f\circ\phi^{-1}:\DD\to\DD
 \]
 fixes $0$. Schwarz's lemma gives $|F'(0)|\le1$. By the chain rule,
 \[

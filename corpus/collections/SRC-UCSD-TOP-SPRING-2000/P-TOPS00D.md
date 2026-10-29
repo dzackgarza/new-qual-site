@@ -15,9 +15,9 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X$ be the suspension of $\mathbb{RP}^2$, i.e.
+Let $X$ be the suspension of $\RP^2$, i.e.
 $$
-X = \mathbb{RP}^2 \times [0, 1] / (\mathbb{RP}^2 \times \{0\}), (\mathbb{RP}^2 \times \{1\}).
+X = \RP^2 \times [0, 1] / (\RP^2 \times \{0\}), (\RP^2 \times \{1\}).
 $$
 Prove that $X$ is not homotopy equivalent to a compact manifold.
 :::
@@ -28,7 +28,7 @@ Prove that $X$ is not homotopy equivalent to a compact manifold.
 
 ::: {.pf-step #s1}
 
-The suspension $X=\Sigma\mathbb{RP}^2$ is simply connected.
+The suspension $X=\Sigma\RP^2$ is simply connected.
 
 ::: pf-proof
 
@@ -43,7 +43,7 @@ The suspension of any path-connected space is the union of two contractible cone
 Its reduced integral homology is
 $$
 \widetilde H_i(X;\ZZ)\cong
-\widetilde H_{i-1}(\mathbb{RP}^2;\ZZ),
+\widetilde H_{i-1}(\RP^2;\ZZ),
 $$
 so the only nonzero reduced group is
 $$
@@ -52,7 +52,7 @@ $$
 
 ::: pf-proof
 
-Suspension shifts reduced homology by one degree. Since $\widetilde H_1(\mathbb{RP}^2)=\ZZ/2$ and all other reduced integral homology groups vanish, the claim follows.
+Suspension shifts reduced homology by one degree. Since $\widetilde H_1(\RP^2)=\ZZ/2$ and all other reduced integral homology groups vanish, the claim follows.
 
 :::
 

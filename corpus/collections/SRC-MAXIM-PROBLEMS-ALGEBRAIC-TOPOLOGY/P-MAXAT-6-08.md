@@ -20,11 +20,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $n=2^r$ with $r\ge0$. Find the smallest $k$ such that $\mathbb{CP}^n$ can be smoothly embedded in $\RR^{2n+k}$.
+Let $n=2^r$ with $r\ge0$. Find the smallest $k$ such that $\CP^n$ can be smoothly embedded in $\RR^{2n+k}$.
 :::
 
 ::: {.solution}
-Write $\alpha(n)$ for the number of $1$'s in the binary expansion of $n$, so $\alpha(n)=1$, and let $N(n)$ be the least $N$ such that $\mathbb{CP}^n$ embeds smoothly in $\RR^N$. Then $k_{\min}=N(n)-2n$.
+Write $\alpha(n)$ for the number of $1$'s in the binary expansion of $n$, so $\alpha(n)=1$, and let $N(n)$ be the least $N$ such that $\CP^n$ embeds smoothly in $\RR^N$. Then $k_{\min}=N(n)-2n$.
 
 ::: pf
 
@@ -32,7 +32,7 @@ Write $\alpha(n)$ for the number of $1$'s in the binary expansion of $n$, so $\a
 $N(n)\ge4n-2\alpha(n)+1=4n-1$.
 
 ::: pf-proof
-This is the Atiyah--Hirzebruch nonembedding theorem for complex projective spaces, $\mathbb{CP}^n\not\hookrightarrow\RR^{4n-2\alpha(n)}$; see Feder--Segal, *Immersions and embeddings of projective spaces*.
+This is the Atiyah--Hirzebruch nonembedding theorem for complex projective spaces, $\CP^n\not\hookrightarrow\RR^{4n-2\alpha(n)}$; see Feder--Segal, *Immersions and embeddings of projective spaces*.
 :::
 
 :::
@@ -42,7 +42,7 @@ $N(n)\le4n-\alpha(n)=4n-1$.
 
 ::: pf-proof
 This is the embedding of A. Mukherjee, *Embedding complex projective spaces in Euclidean space*, Bull. London Math. Soc. 13 (1981), 323--324.
-For $n=1$ it is the familiar embedding $\mathbb{CP}^1\cong S^2\hookrightarrow\RR^3$.
+For $n=1$ it is the familiar embedding $\CP^1\cong S^2\hookrightarrow\RR^3$.
 :::
 
 :::

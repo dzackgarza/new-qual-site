@@ -21,26 +21,26 @@ Show that the only real projective spaces which can be parallelizable are P 1 , 
 
 ::: {.solution}
 
-Assume $n>0$. If $\mathbb{RP}^n$ is parallelizable, its tangent bundle is trivial. The key point is that this forces the existence of a real division algebra of dimension $n+1$ in the sense needed by the classical Hopf invariant one theorem.
+Assume $n>0$. If $\RP^n$ is parallelizable, its tangent bundle is trivial. The key point is that this forces the existence of a real division algebra of dimension $n+1$ in the sense needed by the classical Hopf invariant one theorem.
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-If $\mathbb{RP}^n$ is parallelizable, then its double cover $S^n$ is parallelizable.
+If $\RP^n$ is parallelizable, then its double cover $S^n$ is parallelizable.
 
 
 ::: pf-proof
 
 Let
 \[
-p:S^n\to\mathbb{RP}^n
+p:S^n\to\RP^n
 \]
 be the antipodal covering. Since $p$ is a local diffeomorphism,
 \[
-TS^n\cong p^*T\mathbb{RP}^n.
+TS^n\cong p^*T\RP^n.
 \]
-The pullback of a trivial bundle is trivial, so parallelizability of $T\mathbb{RP}^n$ implies parallelizability of $TS^n$.
+The pullback of a trivial bundle is trivial, so parallelizability of $T\RP^n$ implies parallelizability of $TS^n$.
 
 :::
 
@@ -70,7 +70,7 @@ for positive-dimensional spheres. This is the classical theorem that the only pa
 
 ::: {.pf-step #s1-3}
 
-Therefore, if $\mathbb{RP}^n$ is parallelizable and $n>0$, then
+Therefore, if $\RP^n$ is parallelizable and $n>0$, then
 \[
 n\in\{1,3,7\}.
 \]
@@ -86,7 +86,7 @@ Combine steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}.
 
 ::: {.pf-step #s1-4}
 
-The spaces $\mathbb{RP}^1$, $\mathbb{RP}^3$, and $\mathbb{RP}^7$ are in fact parallelizable.
+The spaces $\RP^1$, $\RP^3$, and $\RP^7$ are in fact parallelizable.
 
 
 ::: pf-proof
@@ -114,7 +114,7 @@ are tangent and pointwise linearly independent because multiplication by a nonze
 
 These framings descend through the antipodal quotient
 \[
-S^n\to\mathbb{RP}^n
+S^n\to\RP^n
 \]
 for $n=1,3,7$.
 
@@ -139,7 +139,7 @@ Thus each vector field is equivariant for the deck transformation and descends t
 
 Hence
 \[
-\mathbb{RP}^1,\quad\mathbb{RP}^3,\quad\mathbb{RP}^7
+\RP^1,\quad\RP^3,\quad\RP^7
 \]
 are parallelizable.
 
@@ -157,7 +157,7 @@ Step [](#s1-4){.pf-ref} constructs global frames upstairs and step [](#s1-5){.pf
 Therefore
 \[
 \boxed{
-\mathbb{RP}^n\text{ is parallelizable for }n>0
+\RP^n\text{ is parallelizable for }n>0
 \iff n=1,3,7.}
 \]
 

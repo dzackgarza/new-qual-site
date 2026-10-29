@@ -105,15 +105,15 @@ that its degree is finite.
 
 ::: {.pf-step #s3}
 
-In part (c), take $\mathbb F_2[T]/(T^3+T+1)$.
+In part (c), take $\FF_2[T]/(T^3+T+1)$.
 
 ::: pf-proof
 
 The polynomial is nonzero at both $0$ and $1$.
 A reducible cubic over a field has a linear factor,
-so this polynomial is irreducible over $\mathbb F_2$.
+so this polynomial is irreducible over $\FF_2$.
 The quotient is consequently a field [@DF04]. Polynomial
-division gives the basis $1,[T],[T^2]$ over $\mathbb F_2$,
+division gives the basis $1,[T],[T^2]$ over $\FF_2$,
 so it has exactly $2^3=8$ elements.
 
 :::
@@ -145,7 +145,7 @@ of $120$. Since $7\nmid120$, degree seven is impossible.
 
 ::: {.pf-step #s5}
 
-In part (e), take $F=\mathbb F_2(t)$ and $K=F(u)$
+In part (e), take $F=\FF_2(t)$ and $K=F(u)$
 with $u^2=t$, where $t$ is transcendental.
 
 ::: pf-proof

@@ -23,14 +23,14 @@ For each of the following, determine if the statement is always true or if it is
 Suppose $f \in H(G)$ such that $|f(z)| \leq 1$ for all $z \in G$.
 Then $f$ is constant.
 
-(b) There exists $g \in H(B(0; 2))$ with $|g(z)| < 1$ for all $|z| < 2$, with $z + g(z) \neq 0$ for all $z \in \mathbb{D}$.
+(b) There exists $g \in H(B(0; 2))$ with $|g(z)| < 1$ for all $|z| < 2$, with $z + g(z) \neq 0$ for all $z \in \DD$.
 
-(c) There is an analytic function $f$ on $\mathbb{D} \setminus \{0\}$ with an essential singularity at $z = 0$ such that $f$ can be extended as a continuous function from the whole disk $\mathbb{D}$ to the extended plane $\CC_\infty$.
+(c) There is an analytic function $f$ on $\DD \setminus \{0\}$ with an essential singularity at $z = 0$ such that $f$ can be extended as a continuous function from the whole disk $\DD$ to the extended plane $\CC_\infty$.
 
-(d) Suppose that $f$ is a continuous function on $\mathbb{D} \cap \{z : \operatorname{Im} z \leq 0\}$ and analytic in $\mathbb{D} \cap \{z : \operatorname{Im} z < 0\}$.
-If $\operatorname{Re} f(x) = 0$ for all $x$ with $-1 < x < 1$, then $f$ admits an analytic extension to $\mathbb{D}$.
+(d) Suppose that $f$ is a continuous function on $\DD \cap \{z : \operatorname{Im} z \leq 0\}$ and analytic in $\DD \cap \{z : \operatorname{Im} z < 0\}$.
+If $\operatorname{Re} f(x) = 0$ for all $x$ with $-1 < x < 1$, then $f$ admits an analytic extension to $\DD$.
 
-(e) If $G \subset \CC$ is a region and $G \cap B(0; r) = \emptyset$ for some $r > 0$, there is a 1-1 analytic function $f$ on $G$ such that $f(G) \subset \mathbb{D}$.
+(e) If $G \subset \CC$ is a region and $G \cap B(0; r) = \emptyset$ for some $r > 0$, there is a 1-1 analytic function $f$ on $G$ such that $f(G) \subset \DD$.
 
 (f) If $f: \CC \to \CC$ is analytic and $\operatorname{Re} f(z) \geq c$ for some real constant $c$, then $f$ is constant.
 
@@ -85,7 +85,7 @@ hypothesis.
 :::
 
 ::: {.pf-step #p2-s3}
-By Rouché, $h(z) = z + g(z)$ and $z$ have the same number of zeros in $\mathbb{D}$, namely one.
+By Rouché, $h(z) = z + g(z)$ and $z$ have the same number of zeros in $\DD$, namely one.
 
 ::: pf-proof
 step [](#p2-s2){.pf-ref} and Rouché's theorem.
@@ -94,7 +94,7 @@ step [](#p2-s2){.pf-ref} and Rouché's theorem.
 :::
 
 ::: pf-step
-Hence $h$ has a zero in $\mathbb{D}$, contradicting $z + g(z) \neq 0$.
+Hence $h$ has a zero in $\DD$, contradicting $z + g(z) \neq 0$.
 
 ::: pf-proof
 step [](#p2-s3){.pf-ref}.
@@ -118,7 +118,7 @@ essential singularity.
 :::
 
 ::: {.pf-step #p3-s2}
-A continuous extension $F : \mathbb{D} \to \CC_\infty$ would satisfy $F(0) = \lim_{z \to 0} f(z)$, so $f(z) \to F(0)$ as $z \to 0$.
+A continuous extension $F : \DD \to \CC_\infty$ would satisfy $F(0) = \lim_{z \to 0} f(z)$, so $f(z) \to F(0)$ as $z \to 0$.
 
 ::: pf-proof
 continuity at $0$.
@@ -160,7 +160,7 @@ reflection principle (the map $w \mapsto -\bar w$ reflects across $i\RR$).
 :::
 
 ::: pf-step
-$F$ is continuous on $\mathbb{D}$ and analytic on $\mathbb{D} \setminus (-1,1)$, hence analytic on $\mathbb{D}$ (Morera).
+$F$ is continuous on $\DD$ and analytic on $\DD \setminus (-1,1)$, hence analytic on $\DD$ (Morera).
 
 ::: pf-proof
 step [](#p4-s2){.pf-ref} and Morera's theorem (or the Schwarz reflection principle).
@@ -202,7 +202,7 @@ $f(z_1) = f(z_2) \Rightarrow z_1 = z_2$.
 :::
 
 ::: pf-step
-For $z \in G$, $|f(z)| = \frac{r}{2|z|} \le \frac{1}{2} < 1$, so $f(G) \subset \mathbb{D}$.
+For $z \in G$, $|f(z)| = \frac{r}{2|z|} \le \frac{1}{2} < 1$, so $f(G) \subset \DD$.
 
 ::: pf-proof
 step [](#p5-s2){.pf-ref} and $|z| \ge r$.

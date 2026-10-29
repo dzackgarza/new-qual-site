@@ -18,7 +18,7 @@ review: draft
 ::: {.problem}
 Suppose that $S^3 = M \cup_\Sigma N$ is a decomposition of the $3$-sphere into two compact $3$-manifolds-with-boundary, glued along their common boundary surface $\Sigma$.
 Prove that $H_1(N; \ZZ) \cong H_1(M; \ZZ)$.
-Let $X$ be the compact $3$-manifold-with-boundary obtained by removing the interior of a small ball from $\mathbb{RP}^3$.
+Let $X$ be the compact $3$-manifold-with-boundary obtained by removing the interior of a small ball from $\RP^3$.
 Conclude that $X$ cannot be embedded in $S^3$.
 :::
 
@@ -70,12 +70,12 @@ Since $H_1(N)$ is free by step [](#s2){.pf-ref}, its dual has the same rank and 
 
 ::: {.pf-step #s4}
 
-Let $X=\mathbb{RP}^3-\operatorname{int}B^3$. Then
+Let $X=\RP^3-\operatorname{int}B^3$. Then
 $$H_1(X;\ZZ)\cong\ZZ/2.$$
 
 ::: pf-proof
 
-Removing an open ball from a $3$-manifold does not change its fundamental group, so $H_1(X)$ is the abelianization of $\pi_1(\mathbb{RP}^3)\cong\ZZ/2$.
+Removing an open ball from a $3$-manifold does not change its fundamental group, so $H_1(X)$ is the abelianization of $\pi_1(\RP^3)\cong\ZZ/2$.
 
 :::
 

@@ -13,13 +13,13 @@ review: draft
 ---
 
 ::: {.problem}
-State and prove Harnack's inequality for non-negative functions that are continuous in $\overline{\mathbb{D}}$ and harmonic in $\mathbb{D}$.
+State and prove Harnack's inequality for non-negative functions that are continuous in $\overline{\DD}$ and harmonic in $\DD$.
 (You may use without proof the Poisson integral formula.)
 :::
 
 ::: {.solution}
-For a nonnegative harmonic function $u$ on $\mathbb D$ that is continuous on
-$\overline{\mathbb D}$, Harnack's inequality states that for $z\in\mathbb D$,
+For a nonnegative harmonic function $u$ on $\DD$ that is continuous on
+$\overline{\DD}$, Harnack's inequality states that for $z\in\DD$,
 \[
 \boxed{\displaystyle
 \frac{1-|z|}{1+|z|}\,u(0)

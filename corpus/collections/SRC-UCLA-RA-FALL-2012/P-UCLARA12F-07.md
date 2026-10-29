@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be holomorphic on $\CC$ and suppose that $f(0)=0$, $f(1)=1$, and $f(\mathbb D)\subseteq\mathbb D$, where $\mathbb D$ is the unit disc.
+Let $f$ be holomorphic on $\CC$ and suppose that $f(0)=0$, $f(1)=1$, and $f(\DD)\subseteq\DD$, where $\DD$ is the unit disc.
 Show that
 
 (a) $f'(1)\in\RR$;
@@ -31,7 +31,7 @@ Show that
 
 ::: {.pf-step #s1-1}
 
-For every $z\in\mathbb D$,
+For every $z\in\DD$,
 $$
 |f(z)|\le |z|.
 $$
@@ -39,7 +39,7 @@ $$
 
 ::: pf-proof
 
-The map $f$ is holomorphic on $\mathbb D$, satisfies $f(0)=0$, and maps $\mathbb D$ into itself. Schwarz's lemma therefore gives the estimate.
+The map $f$ is holomorphic on $\DD$, satisfies $f(0)=0$, and maps $\DD$ into itself. Schwarz's lemma therefore gives the estimate.
 
 :::
 

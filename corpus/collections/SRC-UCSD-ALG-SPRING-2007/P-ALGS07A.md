@@ -36,7 +36,7 @@ Let $g$ be an element not in $N$.
 
 (ii) If the order of $g$ is $p$, classify the possible $G$ up to isomorphism.
 
-(Incidentally, for odd $p$ there exist groups of neither type, such as the group of $3 \times 3$ upper triangular matrices over $\mathbb{F}_p$ with 1's on the diagonal. For $p=2$, the quaternion group $Q_8$ is an example of neither type.)
+(Incidentally, for odd $p$ there exist groups of neither type, such as the group of $3 \times 3$ upper triangular matrices over $\FF_p$ with 1's on the diagonal. For $p=2$, the quaternion group $Q_8$ is an example of neither type.)
 :::
 
 ::: {.remark}

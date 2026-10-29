@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f$ is holomorphic in the unit disc $\mathbb D$, and $(x_n)$ is a sequence of real numbers satisfying
+Suppose $f$ is holomorphic in the unit disc $\DD$, and $(x_n)$ is a sequence of real numbers satisfying
 \[
 0<x_{n+1}<x_n<1
 \]

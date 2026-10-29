@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-(a) Prove that the function $f(z) = \left(\frac{1 + \sqrt{z}}{1 - \sqrt{z}}\right)^2$ is a conformal bijection mapping $\CC_-$ onto $\mathbb{D} \setminus [0, 1)$.
+(a) Prove that the function $f(z) = \left(\frac{1 + \sqrt{z}}{1 - \sqrt{z}}\right)^2$ is a conformal bijection mapping $\CC_-$ onto $\DD \setminus [0, 1)$.
 
 (b) Let $f(z) = \frac{az + b}{cz + d}$ with $a, b, c, d \in \RR$ and $ad - bc < 0$.
 Show that $f$ is a conformal bijection from $\CC_+$ onto $\CC_-$.
@@ -44,7 +44,7 @@ real boundary ray maps to $(-1,1)$, the positive imaginary boundary ray maps to
 the upper unit semicircle, and for $\operatorname{Re}w<0$ one has
 $|1+w|<|1-w|$. Finally, squaring maps the upper half-disk conformally onto
 \[
-\mathbb D\setminus[0,1),
+\DD\setminus[0,1),
 \]
 because it doubles arguments from $(0,\pi)$ to $(0,2\pi)$. The composition is
 exactly

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-2.C-3
 kind: problem
-title: Conjugate-linear map on $\CC^{2k}$ induces fixed-point-free map on $\mathbb{CP}^{2k-1}$
+title: Conjugate-linear map on $\CC^{2k}$ induces fixed-point-free map on $\CP^{2k-1}$
 classification:
   areas:
   - topology
@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Verify that the formula $f(z_1, \cdots, z_{2k}) = (\bar{z}_2, -\bar{z}_1, \bar{z}_4, -\bar{z}_3, \cdots, \bar{z}_{2k}, -\bar{z}_{2k-1})$ defines a map $f: \CC^{2k} \to \CC^{2k}$ inducing a quotient map $\mathbb{CP}^{2k-1} \to \mathbb{CP}^{2k-1}$ without fixed points.
+Verify that the formula $f(z_1, \cdots, z_{2k}) = (\bar{z}_2, -\bar{z}_1, \bar{z}_4, -\bar{z}_3, \cdots, \bar{z}_{2k}, -\bar{z}_{2k-1})$ defines a map $f: \CC^{2k} \to \CC^{2k}$ inducing a quotient map $\CP^{2k-1} \to \CP^{2k-1}$ without fixed points.
 :::
 
 ::: {.solution}
@@ -62,7 +62,7 @@ Both identities follow by direct calculation on each coordinate pair $(z_{2j-1},
 
 Hence $F$ induces a well-defined map
 \[
-f:\mathbb{CP}^{2k-1}\to\mathbb{CP}^{2k-1},
+f:\CP^{2k-1}\to\CP^{2k-1},
 \qquad
 f([z])=[F(z)].
 \]
@@ -101,5 +101,5 @@ Since $z\ne0$, this would imply $|\lambda|^2=-1$, impossible.
 
 :::
 
-Thus the displayed conjugate-linear map induces a fixed-point-free self-map of $\mathbb{CP}^{2k-1}$.
+Thus the displayed conjugate-linear map induces a fixed-point-free self-map of $\CP^{2k-1}$.
 :::

@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Calculate the fundamental group of $\mathbb{RP}^2 \# \mathbb{RP}^2$.
+Calculate the fundamental group of $\RP^2 \# \RP^2$.
 :::
 
 ::: {.solution}
@@ -29,11 +29,11 @@ Calculate the fundamental group of $\mathbb{RP}^2 \# \mathbb{RP}^2$.
 
 ::: pf-step
 
-The connected sum $\mathbb{RP}^2\#\mathbb{RP}^2$ is the closed nonorientable surface of genus $2$, hence the Klein bottle $K$.
+The connected sum $\RP^2\#\RP^2$ is the closed nonorientable surface of genus $2$, hence the Klein bottle $K$.
 
 ::: pf-proof
 
-Removing an open disk from each copy of $\mathbb{RP}^2$ leaves a Möbius band. Gluing the two boundary circles gives the connected sum. This is the standard nonorientable genus-$2$ surface, which is homeomorphic to the Klein bottle.
+Removing an open disk from each copy of $\RP^2$ leaves a Möbius band. Gluing the two boundary circles gives the connected sum. This is the standard nonorientable genus-$2$ surface, which is homeomorphic to the Klein bottle.
 
 :::
 

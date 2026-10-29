@@ -28,7 +28,7 @@ Assume the inner product is linear in its first variable.
 
 ::: {.pf-step #s1-1}
 
-Let $H$ be a real or complex Hilbert space and let $L:H\to\mathbb F$ be a bounded linear functional. Then there exists a unique $y\in H$ such that
+Let $H$ be a real or complex Hilbert space and let $L:H\to\FF$ be a bounded linear functional. Then there exists a unique $y\in H$ such that
 $$
 \boxed{L(x)=\langle x,y\rangle\quad\text{for every }x\in H,}
 $$

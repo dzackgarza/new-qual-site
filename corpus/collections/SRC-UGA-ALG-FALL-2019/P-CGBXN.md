@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 ::: {.problem}
-Let $F = \mathbb{F}_q$ be a finite field with $q$ elements. Let $n$ be a positive integer relatively prime to $q$ ($\gcd(n, q) = 1$), and let $\omega$ be a primitive $n$-th root of unity in an algebraic closure $\overline{F}$. Let $E = F(\omega) = F[\omega]$ and $k = [E : F]$.
+Let $F = \FF_q$ be a finite field with $q$ elements. Let $n$ be a positive integer relatively prime to $q$ ($\gcd(n, q) = 1$), and let $\omega$ be a primitive $n$-th root of unity in an algebraic closure $\overline{F}$. Let $E = F(\omega) = F[\omega]$ and $k = [E : F]$.
 
 (a) Prove that $n$ divides $q^k - 1$.
 
@@ -35,7 +35,7 @@ The integer $n$ divides $q^k-1$.
 
 ::: pf-step
 
-The field $E = F(\omega)$ is a finite field extension of $F = \mathbb{F}_q$ of degree $[E : F] = k$.
+The field $E = F(\omega)$ is a finite field extension of $F = \FF_q$ of degree $[E : F] = k$.
 
 :::
 
@@ -121,7 +121,7 @@ Since $m = \operatorname{ord}_n(q)$, $q^m \equiv 1 \pmod n$, so $n$ divides $q^m
 
 ::: pf-step
 
-Let $K = \mathbb{F}_{q^m}$ be the unique subfield of $\overline{F}$ with $q^m$ elements, which is an extension of $F = \mathbb{F}_q$ of degree $[K : F] = m$.
+Let $K = \FF_{q^m}$ be the unique subfield of $\overline{F}$ with $q^m$ elements, which is an extension of $F = \FF_q$ of degree $[K : F] = m$.
 
 :::
 

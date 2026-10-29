@@ -92,14 +92,14 @@ $$
 since $a^p\in A^p$.
 
 An abelian group $B$ of exponent dividing $p$ is a vector space
-over $\mathbb F_p$: vector addition is the group operation and
+over $\FF_p$: vector addition is the group operation and
 scalar multiplication by the residue class of $n$ is $b\mapsto b^n$.
 This is independent of the representative $n$ because $b^p=1$;
 the vector-space identities follow from the laws of exponents
 and commutativity. The group identity is the zero vector.
 
 The two finite vector spaces $A/A^p$ and $A[p]$ have the same
-cardinality by step [](#s2){.pf-ref}. A finite-dimensional $\mathbb F_p$-space
+cardinality by step [](#s2){.pf-ref}. A finite-dimensional $\FF_p$-space
 of dimension $r$ has $p^r$ elements, so their dimensions are equal.
 Choosing a basis in each and matching the bases gives a linear
 isomorphism and hence the asserted group isomorphism. This also

@@ -15,7 +15,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be a space whose homology groups are $\ZZ$, $0$, $\ZZ_6$ in dimensions $0$, $1$, $2$ and zero otherwise.
-Compute the integral homology $H_*(X \times \mathbb{RP}^3; \ZZ)$.
+Compute the integral homology $H_*(X \times \RP^3; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -30,7 +30,7 @@ H_0(X)=\ZZ,\quad H_2(X)=\ZZ/6,
 $$
 and
 $$
-H_0(\mathbb{RP}^3)=\ZZ,\quad H_1(\mathbb{RP}^3)=\ZZ/2,\quad H_3(\mathbb{RP}^3)=\ZZ.
+H_0(\RP^3)=\ZZ,\quad H_1(\RP^3)=\ZZ/2,\quad H_3(\RP^3)=\ZZ.
 $$
 
 ::: pf-proof
@@ -55,11 +55,11 @@ $$
 
 Besides the terms with $H_0$, one has
 $$
-H_2(X)\otimes H_1(\mathbb{RP}^3)\cong\ZZ/2
+H_2(X)\otimes H_1(\RP^3)\cong\ZZ/2
 $$
 in degree $3$ and
 $$
-H_2(X)\otimes H_3(\mathbb{RP}^3)\cong\ZZ/6
+H_2(X)\otimes H_3(\RP^3)\cong\ZZ/6
 $$
 in degree $5$.
 
@@ -87,7 +87,7 @@ In the homological Künneth sequence, $\operatorname{Tor}(H_p(X),H_q(Y))$ contri
 
 Hence
 $$
-\boxed{H_i(X\times\mathbb{RP}^3;\ZZ)\cong
+\boxed{H_i(X\times\RP^3;\ZZ)\cong
 \begin{cases}
 \ZZ,&i=0,\\
 \ZZ/2,&i=1,4,\\

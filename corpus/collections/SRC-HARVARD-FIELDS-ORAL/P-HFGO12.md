@@ -28,7 +28,7 @@ Give an example of an inseparable field extension.
 ::: {.solution}
 Let $p$ be prime, let
 \[
-F=\mathbb F_p(t),
+F=\FF_p(t),
 \]
 and let $u$ satisfy
 \[
@@ -52,10 +52,10 @@ is irreducible.
 
 ::: pf-proof
 
-Regard $f$ first as a polynomial in $\mathbb F_p[t][x]$. It is Eisenstein at
+Regard $f$ first as a polynomial in $\FF_p[t][x]$. It is Eisenstein at
 the prime element $t$: every nonleading coefficient is divisible by $t$, the
 constant term $-t$ is not divisible by $t^2$, and the leading coefficient is
-$1$. Thus $f$ is irreducible over $\mathbb F_p(t)$ by Eisenstein's criterion
+$1$. Thus $f$ is irreducible over $\FF_p(t)$ by Eisenstein's criterion
 and Gauss's lemma.
 
 :::

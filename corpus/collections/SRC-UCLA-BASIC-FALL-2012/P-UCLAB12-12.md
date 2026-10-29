@@ -20,9 +20,9 @@ Prove that the row rank of $M$ equals the column rank of $M$. Also, however you 
 
 Let
 \[
-T:\mathbb F^m\to\mathbb F^n
+T:\FF^m\to\FF^n
 \]
-be the linear map whose matrix in the standard bases is $M$, where $\mathbb F$ is the underlying field.
+be the linear map whose matrix in the standard bases is $M$, where $\FF$ is the underlying field.
 
 ::: pf
 
@@ -40,7 +40,7 @@ If
 \[
 e_1,\ldots,e_m
 \]
-is the standard basis of $\mathbb F^m$, then
+is the standard basis of $\FF^m$, then
 \[
 T(e_j)
 \]
@@ -55,7 +55,7 @@ Hence the span of the columns is exactly $\operatorname{image}T$.
 
 Let
 \[
-T^*:(\mathbb F^n)^*\to(\mathbb F^m)^*
+T^*:(\FF^n)^*\to(\FF^m)^*
 \]
 be the dual map
 \[
@@ -73,7 +73,7 @@ In the standard dual bases, the matrix of $T^*$ is the transpose
 \[
 M^t.
 \]
-Its columns are exactly the rows of $M$, regarded as coordinate vectors in $(\mathbb F^m)^*$.
+Its columns are exactly the rows of $M$, regarded as coordinate vectors in $(\FF^m)^*$.
 Thus the row space of $M$ is naturally identified with $\operatorname{image}T^*$.
 
 :::
@@ -88,14 +88,14 @@ One has
 =
 (\operatorname{image}T)^0,
 \]
-the annihilator of $\operatorname{image}T$ in $(\mathbb F^n)^*$.
+the annihilator of $\operatorname{image}T$ in $(\FF^n)^*$.
 
 
 ::: pf-proof
 
 Let
 \[
-\varphi\in(\mathbb F^n)^*.
+\varphi\in(\FF^n)^*.
 \]
 Then
 \[
@@ -109,7 +109,7 @@ This means
 \[
 \varphi(Tv)=0
 \]
-for every $v\in\mathbb F^m$, equivalently $\varphi$ vanishes on every vector in $\operatorname{image}T$.
+for every $v\in\FF^m$, equivalently $\varphi$ vanishes on every vector in $\operatorname{image}T$.
 That is precisely the condition
 \[
 \varphi\in(\operatorname{image}T)^0.
@@ -123,7 +123,7 @@ That is precisely the condition
 
 For every subspace
 \[
-U\subseteq\mathbb F^n,
+U\subseteq\FF^n,
 \]
 one has
 \[
@@ -141,7 +141,7 @@ be a basis of $U$, and extend it to a basis
 \[
 u_1,\ldots,u_r,v_{r+1},\ldots,v_n
 \]
-of $\mathbb F^n$.
+of $\FF^n$.
 In the corresponding dual basis, the annihilator $U^0$ is spanned by
 \[
 v_{r+1}^*,\ldots,v_n^*.
@@ -169,7 +169,7 @@ The dual map has the same rank as the original map:
 
 By rank-nullity for
 \[
-T^*:(\mathbb F^n)^*\to(\mathbb F^m)^*,
+T^*:(\FF^n)^*\to(\FF^m)^*,
 \]
 steps [](#s1-3){.pf-ref} through [](#s1-4){.pf-ref} give
 \[

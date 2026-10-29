@@ -53,7 +53,7 @@ The ideal $\mathfrak a$ is proper.
 
 Define
 \[
-\varphi:D\longrightarrow\mathbb F_3,
+\varphi:D\longrightarrow\FF_3,
 \qquad
 \varphi(m+ns)=m-n\pmod3.
 \]

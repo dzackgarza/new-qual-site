@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Determine the conformal automorphism group of
 \[
-\mathbb D^*=\{z:0<|z|<1\},
+\DD^*=\{z:0<|z|<1\},
 \]
 and prove your claim.
 :::
@@ -29,10 +29,10 @@ and prove your claim.
 
 ::: {.pf-step #s1-1}
 
-Let $f:\mathbb D^*\to\mathbb D^*$ be a conformal automorphism. Then
+Let $f:\DD^*\to\DD^*$ be a conformal automorphism. Then
 $f$ extends holomorphically across $0$ to a map
 \[
-F:\mathbb D\to\mathbb D.
+F:\DD\to\DD.
 \]
 
 
@@ -40,9 +40,9 @@ F:\mathbb D\to\mathbb D.
 
 The function $f$ is bounded by $1$ on a punctured neighborhood of $0$, so
 the removable singularity theorem gives a holomorphic extension $F$ to
-$\mathbb D$. The extension satisfies $|F(0)|\le1$. If $|F(0)|=1$, then the
+$\DD$. The extension satisfies $|F(0)|\le1$. If $|F(0)|=1$, then the
 maximum modulus principle would force $F$ to be constant, contradicting that
-$f$ is bijective. Hence $|F(0)|<1$, so $F(\mathbb D)\subseteq\mathbb D$.
+$f$ is bijective. Hence $|F(0)|<1$, so $F(\DD)\subseteq\DD$.
 
 :::
 
@@ -52,24 +52,24 @@ $f$ is bijective. Hence $|F(0)|<1$, so $F(\mathbb D)\subseteq\mathbb D$.
 
 The inverse $f^{-1}$ extends to a holomorphic map
 \[
-G:\mathbb D\to\mathbb D,
+G:\DD\to\DD,
 \]
-and $F$ and $G$ are inverse automorphisms of $\mathbb D$.
+and $F$ and $G$ are inverse automorphisms of $\DD$.
 
 
 ::: pf-proof
 
-Apply step [](#s1-1){.pf-ref} to $f^{-1}$ to obtain $G$. On $\mathbb D^*$,
+Apply step [](#s1-1){.pf-ref} to $f^{-1}$ to obtain $G$. On $\DD^*$,
 \[
 G(F(z))=z.
 \]
-Both sides are holomorphic on $\mathbb D$, so the identity theorem gives
+Both sides are holomorphic on $\DD$, so the identity theorem gives
 \[
-G\circ F=\operatorname{id}_{\mathbb D}.
+G\circ F=\operatorname{id}_{\DD}.
 \]
 Similarly,
 \[
-F\circ G=\operatorname{id}_{\mathbb D}.
+F\circ G=\operatorname{id}_{\DD}.
 \]
 Thus $F$ is a conformal automorphism of the full unit disk, with inverse $G$.
 
@@ -86,16 +86,16 @@ The disk automorphism $F$ fixes $0$.
 
 By hypothesis,
 \[
-F(\mathbb D^*)=f(\mathbb D^*)=\mathbb D^*.
+F(\DD^*)=f(\DD^*)=\DD^*.
 \]
 By step [](#s1-2){.pf-ref}, $F$ is a bijection
 \[
-F:\mathbb D\to\mathbb D.
+F:\DD\to\DD.
 \]
 Therefore the unique point in the image contributed by the omitted domain
-point $0$ is the unique point omitted from $F(\mathbb D^*)$. Since
+point $0$ is the unique point omitted from $F(\DD^*)$. Since
 \[
-\mathbb D\setminus\mathbb D^*=\{0\},
+\DD\setminus\DD^*=\{0\},
 \]
 one must have
 \[
@@ -111,13 +111,13 @@ F(0)=0.
 There is $\lambda\in\CC$ with $|\lambda|=1$ such that
 \[
 F(z)=\lambda z
-\qquad(z\in\mathbb D).
+\qquad(z\in\DD).
 \]
 
 
 ::: pf-proof
 
-By step [](#s1-3){.pf-ref}, $F:\mathbb D\to\mathbb D$ is holomorphic and fixes $0$.
+By step [](#s1-3){.pf-ref}, $F:\DD\to\DD$ is holomorphic and fixes $0$.
 Schwarz's lemma gives
 \[
 |F(z)|\le|z|.
@@ -151,7 +151,7 @@ F(z)=\lambda z,
 Consequently
 \[
 \boxed{
-\operatorname{Aut}(\mathbb D^*)
+\operatorname{Aut}(\DD^*)
 =\{z\mapsto\lambda z:|\lambda|=1\}
 \cong S^1 }.
 \]
@@ -164,7 +164,7 @@ for every $|\lambda|=1$, the map
 \[
 z\longmapsto\lambda z
 \]
-is a conformal bijection of $\mathbb D^*$ with inverse
+is a conformal bijection of $\DD^*$ with inverse
 $z\mapsto\overline\lambda z$. Composition corresponds to multiplication in
 $S^1$.
 

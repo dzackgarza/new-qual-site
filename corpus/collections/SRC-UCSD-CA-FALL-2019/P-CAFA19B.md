@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f$ be analytic on $\mathbb{D}$ with $|f(z)| \leq 1/2$ on $\mathbb{D}$ and $f(0) = r \in \RR$, where $0 < r < 1/2$.
+Let $f$ be analytic on $\DD$ with $|f(z)| \leq 1/2$ on $\DD$ and $f(0) = r \in \RR$, where $0 < r < 1/2$.
 
 (a) Prove that $f(z)$ has no zeros in the disk $\{|z| < 2r\}$.
 
@@ -22,7 +22,7 @@ If so, find all such functions $f(z)$.
 :::
 
 ::: {.solution}
-Set $g=2f$. Then $g:\mathbb D\to\mathbb D$ is holomorphic and $g(0)=2r$.
+Set $g=2f$. Then $g:\DD\to\DD$ is holomorphic and $g(0)=2r$.
 
 If $g(a)=0$, Schwarz--Pick gives
 \[
@@ -52,7 +52,7 @@ and therefore
 f(z)=\frac12\frac{2r-e^{-i\phi}z}{1-2r e^{-i\phi}z},
 \qquad \phi\in\RR.}
 \]
-Conversely, each of these functions maps $\mathbb D$ into the disk of radius
+Conversely, each of these functions maps $\DD$ into the disk of radius
 $1/2$, satisfies $f(0)=r$, and has its zero at $2re^{i\phi}$. These are exactly
 the extremal functions.
 :::

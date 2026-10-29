@@ -77,7 +77,7 @@ is a unit only if \(a_0\) is odd and every \(a_i\) for \(i>0\) is even.
 
 ::: pf-proof
 
-Reduce modulo \(2\). The image of a unit of \(\ZZ_4[x]\) is a unit of \(\mathbb F_2[x]\), hence must equal the nonzero constant \(1\). Therefore
+Reduce modulo \(2\). The image of a unit of \(\ZZ_4[x]\) is a unit of \(\FF_2[x]\), hence must equal the nonzero constant \(1\). Therefore
 \[
 a_0\equiv1\pmod2,
 \qquad

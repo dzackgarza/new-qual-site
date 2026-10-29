@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f : \mathbb{D} \to \CC$ be a holomorphic function in the unit disk.
+Let $f : \DD \to \CC$ be a holomorphic function in the unit disk.
 Assume that $|f(z)|$ is constant on each circle $|z| = r$ for $0 < r < 1$; i.e., $|f(re^{i\theta})| = \varphi(r)$, for some non-negative function $\varphi$ on $0 < r < 1$.
 
 (i) Assume that $f(0) \neq 0$.
@@ -26,7 +26,7 @@ Show that $f(z) = cz^m$ for some constant $c$.
 :::
 
 ::: {.solution}
-(i) Suppose $f(0)\ne0$. Then $f$ has no zero anywhere in $\mathbb D$: if
+(i) Suppose $f(0)\ne0$. Then $f$ has no zero anywhere in $\DD$: if
 $f(z_0)=0$ with $|z_0|=r>0$, the assumed radial constancy would give
 $|f|=0$ on the whole circle $|z|=r$, and the identity theorem would force
 $f\equiv0$, contradicting $f(0)\ne0$.
@@ -34,13 +34,13 @@ $f\equiv0$, contradicting $f(0)\ne0$.
 Fix $0<r<1$. On $|z|=r$, both $|f|$ and $|1/f|$ are constant. Applying the
 maximum modulus principle to $f$ and to $1/f$ on $|z|<r$ shows that $|f|$ is
 constant throughout that disk. Hence $f$ itself is constant by the open
-mapping theorem. Since $r$ was arbitrary, $f$ is constant on $\mathbb D$.
+mapping theorem. Since $r$ was arbitrary, $f$ is constant on $\DD$.
 
 (ii) Write
 \[
 f(z)=z^m h(z),
 \]
-where $h$ is holomorphic on $\mathbb D$ and $h(0)\ne0$. For each $r>0$,
+where $h$ is holomorphic on $\DD$ and $h(0)\ne0$. For each $r>0$,
 \[
 |h(re^{i\theta})|
 =\frac{|f(re^{i\theta})|}{r^m}

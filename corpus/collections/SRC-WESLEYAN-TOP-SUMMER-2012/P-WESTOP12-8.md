@@ -21,7 +21,7 @@ Let $X$ be the Klein bottle.
 
 Write
 \[
-\mathbb F_2
+\FF_2
 \coloneqq
 \ZZ/2\ZZ.
 \]
@@ -94,21 +94,21 @@ structure.
 
 With coefficients in
 \[
-\mathbb F_2,
+\FF_2,
 \]
 the simplicial chain groups are
 \[
 C_2
 \cong
-\mathbb F_2^2,
+\FF_2^2,
 \qquad
 C_1
 \cong
-\mathbb F_2^3,
+\FF_2^3,
 \qquad
 C_0
 \cong
-\mathbb F_2.
+\FF_2.
 \]
 
 
@@ -145,7 +145,7 @@ v-v
 \]
 Over
 \[
-\mathbb F_2
+\FF_2
 \]
 the same conclusion holds.
 
@@ -157,7 +157,7 @@ the same conclusion holds.
 
 Over
 \[
-\mathbb F_2,
+\FF_2,
 \]
 both $2$-simplices have the same boundary:
 \[
@@ -183,7 +183,7 @@ The two triangles differ only in orientation conventions on some boundary
 edges.
 Over
 \[
-\mathbb F_2,
+\FF_2,
 \]
 all signs disappear.
 Thus each boundary is the sum
@@ -199,7 +199,7 @@ a+b+c.
 
 Therefore
 \[
-\operatorname{rank}_{\mathbb F_2}
+\operatorname{rank}_{\FF_2}
 \partial_2
 =
 1.
@@ -210,7 +210,7 @@ Therefore
 
 The image of $\partial_2$ is the one-dimensional subspace of
 \[
-\mathbb F_2^3
+\FF_2^3
 \]
 spanned by
 \[
@@ -228,15 +228,15 @@ The simplicial cochain groups are
 \[
 C^0
 \cong
-\mathbb F_2,
+\FF_2,
 \qquad
 C^1
 \cong
-\mathbb F_2^3,
+\FF_2^3,
 \qquad
 C^2
 \cong
-\mathbb F_2^2.
+\FF_2^2.
 \]
 
 
@@ -246,8 +246,8 @@ Over a field,
 \[
 C^n
 =
-\operatorname{Hom}_{\mathbb F_2}
-(C_n,\mathbb F_2),
+\operatorname{Hom}_{\FF_2}
+(C_n,\FF_2),
 \]
 so the cochain groups have the same dimensions as the corresponding chain
 groups.
@@ -288,9 +288,9 @@ Step [](#s1-3){.pf-ref} gives
 In the dual bases,
 \[
 \delta^1:
-\mathbb F_2^3
+\FF_2^3
 \to
-\mathbb F_2^2
+\FF_2^2
 \]
 is
 \[
@@ -348,9 +348,9 @@ j=1,2.
 The zeroth cohomology group is
 \[
 \boxed{
-H^0(X;\mathbb F_2)
+H^0(X;\FF_2)
 \cong
-\mathbb F_2.
+\FF_2.
 }
 \]
 
@@ -368,7 +368,7 @@ H^0
 \cong
 C^0
 \cong
-\mathbb F_2.
+\FF_2.
 \]
 
 :::
@@ -380,9 +380,9 @@ C^0
 The first cohomology group is
 \[
 \boxed{
-H^1(X;\mathbb F_2)
+H^1(X;\FF_2)
 \cong
-\mathbb F_2^2.
+\FF_2^2.
 }
 \]
 
@@ -400,7 +400,7 @@ x+y+z=0
 \]
 This is a two-dimensional subspace of
 \[
-\mathbb F_2^3.
+\FF_2^3.
 \]
 
 Since
@@ -413,7 +413,7 @@ H^1
 \ker\delta^1/
 \operatorname{im}\delta^0
 \cong
-\mathbb F_2^2.
+\FF_2^2.
 \]
 
 :::
@@ -425,9 +425,9 @@ H^1
 The second cohomology group is
 \[
 \boxed{
-H^2(X;\mathbb F_2)
+H^2(X;\FF_2)
 \cong
-\mathbb F_2.
+\FF_2.
 }
 \]
 
@@ -451,7 +451,7 @@ By step [](#s1-8){.pf-ref},
 \operatorname{im}\delta^1
 =
 \{
-(t,t):t\in\mathbb F_2
+(t,t):t\in\FF_2
 \},
 \]
 which is one-dimensional.
@@ -467,7 +467,7 @@ Thus
 \[
 H^2
 \cong
-\mathbb F_2.
+\FF_2.
 \]
 
 :::

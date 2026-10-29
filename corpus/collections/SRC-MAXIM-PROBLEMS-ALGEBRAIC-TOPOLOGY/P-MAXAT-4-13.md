@@ -55,7 +55,7 @@ T^n=U(1)^n\hookrightarrow U(n)
 \]
 induces
 \[
-BT^n=(\mathbb{CP}^{\infty})^n\longrightarrow BU(n).
+BT^n=(\CP^{\infty})^n\longrightarrow BU(n).
 \]
 If $x_i\in H^2(BT^n;\ZZ)$ is the first Chern class of the $i$th universal line bundle, then
 \[
@@ -114,7 +114,7 @@ Let
 be the universal real $n$-plane bundle. Its Stiefel--Whitney classes are
 \[
 w_i=w_i(\gamma_n^{\RR})
-\in H^i(BO(n);\mathbb F_2),
+\in H^i(BO(n);\FF_2),
 \qquad1\leq i\leq n.
 \]
 
@@ -135,7 +135,7 @@ O(1)^n\hookrightarrow O(n)
 \]
 gives
 \[
-(\mathbb{RP}^{\infty})^n\to BO(n),
+(\RP^{\infty})^n\to BO(n),
 \]
 under which
 \[
@@ -162,8 +162,8 @@ Again, homogeneous components are elementary symmetric polynomials.
 Hence
 \[
 \boxed{
-H^*(BO(n);\mathbb F_2)
-\cong\mathbb F_2[w_1,\ldots,w_n],
+H^*(BO(n);\FF_2)
+\cong\FF_2[w_1,\ldots,w_n],
 \qquad |w_i|=i.}
 \]
 
@@ -172,8 +172,8 @@ H^*(BO(n);\mathbb F_2)
 
 The mod-$2$ splitting principle reduces relations to symmetric-polynomial relations in
 \[
-H^*((\mathbb{RP}^{\infty})^n;\mathbb F_2)
-=\mathbb F_2[y_1,\ldots,y_n].
+H^*((\RP^{\infty})^n;\FF_2)
+=\FF_2[y_1,\ldots,y_n].
 \]
 The elementary symmetric polynomials are algebraically independent and generate the invariant ring. The Schubert-cell decomposition of the real Grassmannian model of $BO(n)$ gives the matching mod-$2$ Poincare series
 \[
@@ -193,7 +193,7 @@ Therefore the standard cohomology-ring calculations are
 \]
 and
 \[
-\boxed{H^*(BO(n);\mathbb F_2)=\mathbb F_2[w_1,\ldots,w_n].}
+\boxed{H^*(BO(n);\FF_2)=\FF_2[w_1,\ldots,w_n].}
 \]
 
 

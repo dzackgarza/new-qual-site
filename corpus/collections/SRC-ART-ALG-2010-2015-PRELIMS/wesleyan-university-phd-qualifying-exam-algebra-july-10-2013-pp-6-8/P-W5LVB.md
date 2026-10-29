@@ -58,7 +58,7 @@ The order-$3$ and order-$5$ factors are cyclic. An abelian
 group of order $4$ either contains an element of order $4$,
 in which case it is $C_4$, or has every nonidentity element
 of order $2$, in which case it is a two-dimensional vector
-space over $\mathbb F_2$ and is $C_2\times C_2$.
+space over $\FF_2$ and is $C_2\times C_2$.
 
 Thus the possibilities are
 $C_4\times C_3\times C_5\cong C_{60}$ and

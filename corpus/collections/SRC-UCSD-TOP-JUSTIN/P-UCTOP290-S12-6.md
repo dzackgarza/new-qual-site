@@ -109,7 +109,7 @@ Likewise $\mathbb RP^n$ cannot be covered by fewer than $n+1$ contractible open 
 
 Use mod-$2$ cohomology
 $$
-H^*(\mathbb RP^n;\mathbb F_2)=\mathbb F_2[\beta]/(\beta^{n+1}),\qquad |\beta|=1,
+H^*(\mathbb RP^n;\FF_2)=\FF_2[\beta]/(\beta^{n+1}),\qquad |\beta|=1,
 $$
 for which $\beta^n\ne0$.
 

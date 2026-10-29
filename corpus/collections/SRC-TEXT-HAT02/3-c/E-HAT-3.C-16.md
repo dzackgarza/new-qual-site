@@ -128,7 +128,7 @@ Conversely, any such $p$-adic divisor cocycle lifts: take
 \[
 m_{ij}=p^{e_{ij}}
 \]
-(and choose valuation $0$ at all other primes), then the preceding integral construction produces a Hopf algebra whose reduction has exactly this structure. Up to rescaling each one-dimensional graded piece by a unit of $\mathbb F_p$, these are precisely the Hopf algebras $A\otimes\mathbb F_p$ that arise.
+(and choose valuation $0$ at all other primes), then the preceding integral construction produces a Hopf algebra whose reduction has exactly this structure. Up to rescaling each one-dimensional graded piece by a unit of $\FF_p$, these are precisely the Hopf algebras $A\otimes\FF_p$ that arise.
 
 In particular, the polynomial and divided-power reductions are the two extreme valuation choices $e_{ij}=0$ and
 \[

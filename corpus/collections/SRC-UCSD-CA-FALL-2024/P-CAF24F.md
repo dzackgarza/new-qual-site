@@ -18,7 +18,7 @@ Let $f$ be meromorphic in $\CC$ with finitely many zeros and poles.
 Write $\alpha_1,\ldots,\alpha_n$ for the zeros and poles of $f$, and let $m_1,\ldots,m_n$ be their orders.
 Assume that
 
-- the poles of $f$ are in the unit disc $\mathbb{D}$,
+- the poles of $f$ are in the unit disc $\DD$,
 
 - $|f(z) - 1| \le \dfrac{1}{|z|^2}$ for all $|z| \ge 1$.
 

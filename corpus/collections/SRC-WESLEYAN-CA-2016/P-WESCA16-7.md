@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that no two of the unit disk $\mathbb D$, the complex plane $\CC$, and the Riemann sphere are conformally equivalent.
+Prove that no two of the unit disk $\DD$, the complex plane $\CC$, and the Riemann sphere are conformally equivalent.
 :::
 
 ::: {.solution}
@@ -25,7 +25,7 @@ Prove that no two of the unit disk $\mathbb D$, the complex plane $\CC$, and the
 
 ::: {.pf-step #s1-1}
 
-The unit disk $\mathbb D$ and the complex plane $\CC$ are not
+The unit disk $\DD$ and the complex plane $\CC$ are not
 conformally equivalent.
 
 
@@ -33,18 +33,18 @@ conformally equivalent.
 
 Suppose there were a conformal equivalence
 \[
-F:\CC\longrightarrow\mathbb D.
+F:\CC\longrightarrow\DD.
 \]
 Then $F$ would be a bounded entire function, so Liouville's theorem would
 force $F$ to be constant, contradicting bijectivity.
 
 If instead a conformal equivalence were given in the other direction,
 \[
-G:\mathbb D\longrightarrow\CC,
+G:\DD\longrightarrow\CC,
 \]
 then its holomorphic inverse
 \[
-G^{-1}:\CC\longrightarrow\mathbb D
+G^{-1}:\CC\longrightarrow\DD
 \]
 would contradict the preceding argument. Hence no conformal equivalence
 exists.
@@ -56,7 +56,7 @@ exists.
 ::: {.pf-step #s1-2}
 
 The Riemann sphere is not conformally equivalent to either
-$\CC$ or $\mathbb D$.
+$\CC$ or $\DD$.
 
 
 ::: pf-proof
@@ -87,7 +87,7 @@ Consequently the three spaces are pairwise not conformally equivalent.
 
 ::: pf-proof
 
-Step [](#s1-1){.pf-ref} separates $\mathbb D$ from $\CC$, while step [](#s1-2){.pf-ref} separates
+Step [](#s1-1){.pf-ref} separates $\DD$ from $\CC$, while step [](#s1-2){.pf-ref} separates
 the Riemann sphere from each of them.
 
 :::

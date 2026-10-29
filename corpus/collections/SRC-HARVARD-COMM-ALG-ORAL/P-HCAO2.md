@@ -88,7 +88,7 @@ For an odd prime $\ell$, the units modulo $\ell^e$
 form a cyclic group of order $\ell^{e-1}(\ell-1)$.
 
 ::: pf-proof
-The multiplicative group of the finite field $\mathbb F_\ell$
+The multiplicative group of the finite field $\FF_\ell$
 is cyclic [@DF04]. Choose an integer $a$ whose residue has
 order $\ell-1$. There is a choice $b=a$ or $b=a+\ell$
 such that

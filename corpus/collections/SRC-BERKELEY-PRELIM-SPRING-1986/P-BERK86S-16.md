@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK86S-16
 kind: problem
-title: $\mathbb F_p[x]/(x^2-2)$ versus $\mathbb F_p[x]/(x^2-3)$ for $p=2,5,11$
+title: $\FF_p[x]/(x^2-2)$ versus $\FF_p[x]/(x^2-3)$ for $p=2,5,11$
 classification:
   areas: [prelim]
   topics: []
@@ -27,9 +27,9 @@ audit:
 ::: {.problem}
 Let
 \[
-R_1=\mathbb F_p[x]/(x^2-2),
+R_1=\FF_p[x]/(x^2-2),
 \qquad
-R_2=\mathbb F_p[x]/(x^2-3).
+R_2=\FF_p[x]/(x^2-3).
 \]
 Determine whether $R_1$ and $R_2$ are isomorphic in each of the cases
 \[

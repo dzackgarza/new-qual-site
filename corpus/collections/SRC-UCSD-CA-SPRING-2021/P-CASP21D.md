@@ -25,16 +25,16 @@ Scale to the unit disk by setting
 \[
 F(w)=f(2w).
 \]
-Then $F:\mathbb D\to\mathbb D$ and $F$ vanishes at
+Then $F:\DD\to\DD$ and $F$ vanishes at
 \[
 \frac12,-\frac12,\frac i2,-\frac i2.
 \]
-For $a\in\mathbb D$, let
+For $a\in\DD$, let
 \[
 \phi_a(w)=\frac{w-a}{1-\bar a w}.
 \]
 Successively applying the Schwarz lemma after dividing out these four
-Blaschke factors gives a holomorphic map $H:\mathbb D\to\overline{\mathbb D}$
+Blaschke factors gives a holomorphic map $H:\DD\to\overline{\DD}$
 such that
 \[
 F(w)=H(w)

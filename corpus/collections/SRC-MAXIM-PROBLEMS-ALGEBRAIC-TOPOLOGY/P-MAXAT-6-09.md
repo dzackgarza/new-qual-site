@@ -24,7 +24,7 @@ Show that $\mathbb { C P } ^ { 2 n }$ is not an oriented boundary.
 
 Let
 \[
-M=\mathbb{CP}^{2n},
+M=\CP^{2n},
 \qquad n\geq1,
 \]
 and let
@@ -50,7 +50,7 @@ p(TM)=(1+x^2)^{2n+1}.
 
 The complex Euler sequence gives the stable complex-bundle identity
 \[
-T\mathbb{CP}^{2n}\oplus\varepsilon^1_{\CC}
+T\CP^{2n}\oplus\varepsilon^1_{\CC}
 \cong(2n+1)\gamma^*,
 \]
 where $c_1(\gamma^*)=x$. The underlying real bundle of $\gamma^*$ has total Pontryagin class $1+x^2$. Pontryagin classes are stable and multiplicative, giving the formula.
@@ -132,12 +132,12 @@ Since $[N]=\partial[W,N]$, the Kronecker pairing with a restricted absolute coho
 
 ::: {.pf-step #s1-5}
 
-Therefore $\mathbb{CP}^{2n}$ cannot be an oriented boundary.
+Therefore $\CP^{2n}$ cannot be an oriented boundary.
 
 
 ::: pf-proof
 
-If $M=\mathbb{CP}^{2n}$ bounded orientably, step [](#s1-4){.pf-ref} would force
+If $M=\CP^{2n}$ bounded orientably, step [](#s1-4){.pf-ref} would force
 \[
 \langle p_n(TM),[M]\rangle=0.
 \]
@@ -151,7 +151,7 @@ Step [](#s1-3){.pf-ref} computes the same integer as the nonzero value $\binom{2
 
 Thus
 \[
-\boxed{\mathbb{CP}^{2n}\text{ is not an oriented boundary}.}
+\boxed{\CP^{2n}\text{ is not an oriented boundary}.}
 \]
 
 

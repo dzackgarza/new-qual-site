@@ -24,11 +24,11 @@ There exists a Möbius (linear fractional) transformation sending the circular s
 (c) Let $D$ be a discrete subset of $\CC$.
 Every bounded analytic function in $\CC \setminus D$ is constant.
 
-(d) Suppose that $f(z)$ is analytic in $G := \mathbb{D} \setminus \{0\}$ and that $\int_\gamma z^p f(z)\,dz = 0$ for every closed curve $\gamma: [0,1] \to G$ and every nonnegative integer $p$.
+(d) Suppose that $f(z)$ is analytic in $G := \DD \setminus \{0\}$ and that $\int_\gamma z^p f(z)\,dz = 0$ for every closed curve $\gamma: [0,1] \to G$ and every nonnegative integer $p$.
 Then $f(z)$ has a removable singularity at 0.
 
 (e) Let $a$ be a complex number with $|a| > 1$.
-There exists $\epsilon > 0$ such that if a polynomial $p(z)$ satisfies $|p(z)| < \epsilon$ on the closed unit disk $\overline{\mathbb{D}}$, then $|p(a)| < 1$.
+There exists $\epsilon > 0$ such that if a polynomial $p(z)$ satisfies $|p(z)| < \epsilon$ on the closed unit disk $\overline{\DD}$, then $|p(a)| < 1$.
 :::
 
 ::: {.solution}
@@ -62,6 +62,6 @@ coefficient. Hence the singularity at $0$ is removable.
 \[
 p_N(z)=\frac\epsilon2 z^N.
 \]
-Then $|p_N(z)|<\epsilon$ on $\overline{\mathbb D}$, while
+Then $|p_N(z)|<\epsilon$ on $\overline{\DD}$, while
 $|p_N(a)|=(\epsilon/2)|a|^N>1$ for all sufficiently large $N$.
 :::

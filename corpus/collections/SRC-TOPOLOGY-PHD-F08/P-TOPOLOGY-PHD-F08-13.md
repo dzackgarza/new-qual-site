@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-13
 kind: problem
-title: Collapsing the boundary of a Möbius band gives $\mathbb{RP}^2$
+title: Collapsing the boundary of a Möbius band gives $\RP^2$
 classification:
   areas:
   - topology
@@ -120,14 +120,14 @@ M/\partial M\cong M'\cup_{\partial M'}D^2.
 ::: pf-step
 Therefore
 \[
-\boxed{M/\partial M\cong\mathbb{RP}^2}.
+\boxed{M/\partial M\cong\RP^2}.
 \]
 
 ::: pf-proof
 The real projective plane is obtained by attaching a $2$-disk to a Möbius band along its boundary.
 Indeed, in the disk model
 \[
-\mathbb{RP}^2=D^2/(x\sim -x\text{ on }\partial D^2),
+\RP^2=D^2/(x\sim -x\text{ on }\partial D^2),
 \]
 an annular neighborhood of the boundary descends to a Möbius band, while the remaining central disk caps its boundary.
 By step [](#attach-disk-decomposition){.pf-ref}, $M/\partial M$ has exactly this decomposition.

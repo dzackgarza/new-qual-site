@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Can there exist a map $f$ of degree $\pm 1$ of the form:
 $$
-f : \mathbb{CP}^n \to S^{n+1} \times S^{n-1}, \quad n > 1.
+f : \CP^n \to S^{n+1} \times S^{n-1}, \quad n > 1.
 $$
 Prove your answer.
 :::
@@ -30,7 +30,7 @@ Prove your answer.
 
 Assume for contradiction that
 $$
-f:\mathbb{CP}^n\to S^{n+1}\times S^{n-1}
+f:\CP^n\to S^{n+1}\times S^{n-1}
 $$
 has degree $\pm1$.
 
@@ -63,13 +63,13 @@ so $f^*\alpha\ne0$.
 
 If $n$ is even, the target has a nonzero class in odd degree $n-1$, but
 $$
-H^{n-1}(\mathbb{CP}^n;\ZZ)=0,
+H^{n-1}(\CP^n;\ZZ)=0,
 $$
 contradicting step [](#s2){.pf-ref}.
 
 ::: pf-proof
 
-The class pulled back from $S^{n-1}$ generates $H^{n-1}$ of the product, while $\mathbb{CP}^n$ has cohomology only in even degrees.
+The class pulled back from $S^{n-1}$ generates $H^{n-1}$ of the product, while $\CP^n$ has cohomology only in even degrees.
 
 :::
 
@@ -93,14 +93,14 @@ Injectivity forces
 $$
 f^*x=k\,u^{(n-1)/2}
 $$
-for some nonzero integer $k$, where $u\in H^2(\mathbb{CP}^n)$ is the standard generator. But then
+for some nonzero integer $k$, where $u\in H^2(\CP^n)$ is the standard generator. But then
 $$
 (f^*x)^2=k^2u^{n-1}\ne0.
 $$
 
 ::: pf-proof
 
-We have $H^*(\mathbb{CP}^n;\ZZ)=\ZZ[u]/(u^{n+1})$. Since $n>1$, the power $u^{n-1}$ is nonzero. The coefficient $k$ is nonzero by injectivity from step [](#s2){.pf-ref}.
+We have $H^*(\CP^n;\ZZ)=\ZZ[u]/(u^{n+1})$. Since $n>1$, the power $u^{n-1}$ is nonzero. The coefficient $k$ is nonzero by injectivity from step [](#s2){.pf-ref}.
 
 :::
 

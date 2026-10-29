@@ -28,13 +28,13 @@ Show that the degree of $f$ must be odd.
 ::: pf
 
 ::: pf-step
-Descent to real projective space $\mathbb{RP}^{2n+1}$:
+Descent to real projective space $\RP^{2n+1}$:
 
 ::: pf-proof
 
 ::: pf-step
 Let $k = 2n+1$.
-The antipodal identification $x \sim -x$ gives the 2-fold covering projection $p: S^k \to \mathbb{RP}^k$.
+The antipodal identification $x \sim -x$ gives the 2-fold covering projection $p: S^k \to \RP^k$.
 
 ::: pf-proof
 definition of real projective space.
@@ -52,7 +52,7 @@ hypothesis $f(-x) = -f(x)$.
 :::
 
 ::: pf-step
-Thus $f$ induces a well-defined continuous map $\bar{f}: \mathbb{RP}^k \to \mathbb{RP}^k$ such that $p \circ f = \bar{f} \circ p$.
+Thus $f$ induces a well-defined continuous map $\bar{f}: \RP^k \to \RP^k$ such that $p \circ f = \bar{f} \circ p$.
 
 ::: pf-proof
 universal property of quotient spaces.
@@ -65,7 +65,7 @@ universal property of quotient spaces.
 :::
 
 ::: pf-step
-Show that $\bar{f}^*$ acts non-trivially on $H^1(\mathbb{RP}^k; \ZZ_2)$:
+Show that $\bar{f}^*$ acts non-trivially on $H^1(\RP^k; \ZZ_2)$:
 
 ::: pf-proof
 
@@ -79,10 +79,10 @@ $S^k$ is path-connected for $k \ge 1$.
 :::
 
 ::: pf-step
-The projection $p \circ \gamma$ is a closed loop in $\mathbb{RP}^k$ representing the unique non-trivial element of $\pi_1(\mathbb{RP}^k) \cong \ZZ_2$.
+The projection $p \circ \gamma$ is a closed loop in $\RP^k$ representing the unique non-trivial element of $\pi_1(\RP^k) \cong \ZZ_2$.
 
 ::: pf-proof
-paths connecting antipodal points project to generators of $\pi_1(\mathbb{RP}^k)$.
+paths connecting antipodal points project to generators of $\pi_1(\RP^k)$.
 :::
 
 :::
@@ -97,7 +97,7 @@ $p \circ f = \bar{f} \circ p$ and $f(-x_0) = -f(x_0)$.
 :::
 
 ::: pf-step
-Since $f \circ \gamma$ connects antipodal points in $S^k$, its projection $p \circ (f \circ \gamma)$ is non-trivial in $\pi_1(\mathbb{RP}^k)$.
+Since $f \circ \gamma$ connects antipodal points in $S^k$, its projection $p \circ (f \circ \gamma)$ is non-trivial in $\pi_1(\RP^k)$.
 
 ::: pf-proof
 covering homotopy property.
@@ -106,7 +106,7 @@ covering homotopy property.
 :::
 
 ::: {.pf-step #s2-5}
-Thus $\bar{f}_*: \pi_1(\mathbb{RP}^k) \to \pi_1(\mathbb{RP}^k)$ is the identity isomorphism.
+Thus $\bar{f}_*: \pi_1(\RP^k) \to \pi_1(\RP^k)$ is the identity isomorphism.
 
 ::: pf-proof
 the only non-trivial endomorphism of $\ZZ_2$ is the identity.
@@ -115,7 +115,7 @@ the only non-trivial endomorphism of $\ZZ_2$ is the identity.
 :::
 
 ::: {.pf-step #s2-6}
-By the Universal Coefficient Theorem, $H^1(\mathbb{RP}^k; \ZZ_2) \cong \operatorname{Hom}(\pi_1(\mathbb{RP}^k), \ZZ_2) \cong \ZZ_2$.
+By the Universal Coefficient Theorem, $H^1(\RP^k; \ZZ_2) \cong \operatorname{Hom}(\pi_1(\RP^k), \ZZ_2) \cong \ZZ_2$.
 
 ::: pf-proof
 Hurewicz theorem and UCT.
@@ -124,7 +124,7 @@ Hurewicz theorem and UCT.
 :::
 
 ::: {.pf-step #s2-7}
-Thus $\bar{f}^*(\alpha) = \alpha$, where $\alpha \in H^1(\mathbb{RP}^k; \ZZ_2)$ is the non-zero generator.
+Thus $\bar{f}^*(\alpha) = \alpha$, where $\alpha \in H^1(\RP^k; \ZZ_2)$ is the non-zero generator.
 
 ::: pf-proof
 Step [](#s2-5){.pf-ref} and step [](#s2-6){.pf-ref}.
@@ -142,19 +142,19 @@ Compute the mod 2 degree of $\bar{f}$ and $f$:
 ::: pf-proof
 
 ::: pf-step
-The cohomology ring of $\mathbb{RP}^k$ with $\ZZ_2$ coefficients is:
+The cohomology ring of $\RP^k$ with $\ZZ_2$ coefficients is:
 \[
-H^*(\mathbb{RP}^k; \ZZ_2) \cong \ZZ_2[\alpha] / (\alpha^{k+1}).
+H^*(\RP^k; \ZZ_2) \cong \ZZ_2[\alpha] / (\alpha^{k+1}).
 \]
 
 ::: pf-proof
-standard cell structure and cup product structure of $\mathbb{RP}^k$.
+standard cell structure and cup product structure of $\RP^k$.
 :::
 
 :::
 
 ::: pf-step
-The top cohomology generator is $\alpha^k \in H^k(\mathbb{RP}^k; \ZZ_2) \cong \ZZ_2$.
+The top cohomology generator is $\alpha^k \in H^k(\RP^k; \ZZ_2) \cong \ZZ_2$.
 
 ::: pf-proof
 $k = 2n+1$.
@@ -184,7 +184,7 @@ $\bar{f}^*(\alpha^k) = \deg_2(\bar{f}) \alpha^k$.
 :::
 
 ::: pf-step
-Since $p: S^k \to \mathbb{RP}^k$ is a 2-fold cover and $p \circ f = \bar{f} \circ p$, the degree of $f$ modulo 2 equals $\deg_2(\bar{f})$:
+Since $p: S^k \to \RP^k$ is a 2-fold cover and $p \circ f = \bar{f} \circ p$, the degree of $f$ modulo 2 equals $\deg_2(\bar{f})$:
 \[
 \deg(f) \equiv \deg_2(\bar{f}) \equiv 1 \pmod 2.
 \]

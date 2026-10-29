@@ -69,7 +69,7 @@ For part (b), take $D=\ZZ[x]$.
 The integers are a UFD, and the polynomial ring over a
 UFD is a UFD by Gauss's lemma [@DF04]. Thus $D$ is a UFD.
 The ideal $I=(2,x)$ is proper: the homomorphism
-$\ZZ[x]\to\mathbb F_2$, $f\mapsto f(0)\bmod2$,
+$\ZZ[x]\to\FF_2$, $f\mapsto f(0)\bmod2$,
 annihilates both generators but does not annihilate $1$.
 
 Suppose $I=(h)$. Since $h$ divides the nonzero constant

@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-(1) Let $f ( z ) \in H ( \mathbb { D } ) , \operatorname { R e } ( f ( z ) ) > 0 , f ( 0 ) = a > 0$ . Show that
+(1) Let $f ( z ) \in H ( \DD ) , \operatorname { R e } ( f ( z ) ) > 0 , f ( 0 ) = a > 0$ . Show that
 
 $$
 | \frac { f ( z ) - a } { f ( z ) + a } | \leq | z | , | f ^ { \prime } ( 0 ) | \leq 2 a .

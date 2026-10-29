@@ -3,7 +3,7 @@ schema: qual/card@1
 id: E-H3AV4
 kind: problem
 title: A conformal map from the lens $\{|z-\lambda|<1\}\cap\{|z-\bar\lambda|<1\}$
-  onto $\mathbb{D}$, for $\lambda=\frac12(1+i\sqrt{3})$
+  onto $\DD$, for $\lambda=\frac12(1+i\sqrt{3})$
 classification:
   areas:
   - complex-analysis

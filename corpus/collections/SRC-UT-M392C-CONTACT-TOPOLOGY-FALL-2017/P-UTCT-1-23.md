@@ -25,9 +25,9 @@ Let $M$ be a closed, oriented $3$-manifold with a trivialization $\tau$ of $TM$,
 Let $\Gamma_\tau$ be the map taking an oriented plane field $\xi$ to the class in $H_1(M)$ of the corresponding framed link; it is onto, and the Euler class satisfies $\operatorname{PD}(e(\xi)) = 2\Gamma_\tau(\xi)$.
 Consequently an oriented plane bundle $\xi$ on $M$ is realized as a plane field if and only if $e(\xi) = 2x$ for some $x \in H_1(M)$.
 
-Example: consider $M = \mathbb{RP}^3$.
-We know $H_1(\mathbb{RP}^3) = \ZZ/2\ZZ$.
-Note that only $0 \in H_1$ can be represented as $2x$, so every plane field in $\mathbb{RP}^3$ is trivial as a plane bundle.
+Example: consider $M = \RP^3$.
+We know $H_1(\RP^3) = \ZZ/2\ZZ$.
+Note that only $0 \in H_1$ can be represented as $2x$, so every plane field in $\RP^3$ is trivial as a plane bundle.
 For fixed choice of $\tau$, however, we get two values of $\Gamma_\tau$ and therefore there are at least two different plane fields that are not homotopic.
 
 Analyze the lens space $L(p,q)$ in the same way.
@@ -381,7 +381,7 @@ plane bundles are isomorphic.
 
 ::: {.pf-step #s1-15}
 
-For \(p=2\), this recovers the \(\mathbb{RP}^3\) example:
+For \(p=2\), this recovers the \(\RP^3\) example:
 every plane field has trivial Euler class, but \(\Gamma_\tau\) takes two
 values.
 
@@ -448,7 +448,7 @@ This is step [](#s1-2){.pf-ref}. The parity analysis describes how those \(p\) d
 ::: pf-qed
 
 Steps [](#s1-7){.pf-ref} through [](#s1-9){.pf-ref} analyze the odd case, and steps [](#s1-12){.pf-ref} through [](#s1-15){.pf-ref} analyze the
-even case, including the \(\mathbb{RP}^3\) specialization.
+even case, including the \(\RP^3\) specialization.
 
 :::
 

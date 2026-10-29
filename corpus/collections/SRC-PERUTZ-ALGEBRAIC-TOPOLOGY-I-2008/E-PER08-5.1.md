@@ -43,7 +43,7 @@ Show that each of the following is a covering map.
 
 4. The quotient map
    \[
-   S^n\longrightarrow\mathbb{RP}^n
+   S^n\longrightarrow\RP^n
    \]
    identifying antipodal points.
 :::
@@ -185,14 +185,14 @@ Taking the $n$-fold product of the covering $\RR\to\RR/\ZZ$ from step [](#s1){.p
 
 ::: pf-step
 
-The antipodal quotient $q:S^n\to\mathbb{RP}^n$ is a covering map.
+The antipodal quotient $q:S^n\to\RP^n$ is a covering map.
 
 ::: pf-proof
 
-Fix a point $[x]\in\mathbb{RP}^n$, represented by a unit vector $x\in S^n$.
+Fix a point $[x]\in\RP^n$, represented by a unit vector $x\in S^n$.
 Define
 \[
-U=\{[y]\in\mathbb{RP}^n:\langle x,y\rangle\neq0\}.
+U=\{[y]\in\RP^n:\langle x,y\rangle\neq0\}.
 \]
 This is well defined because replacing $y$ by $-y$ changes the sign but not the nonvanishing of the inner product.
 It is an open neighborhood of $[x]$.
@@ -218,7 +218,7 @@ Hence both restrictions are homeomorphisms.
 
 Thus $U$ is evenly covered and
 \[
-S^n\to\mathbb{RP}^n
+S^n\to\RP^n
 \]
 is a two-sheeted covering.
 

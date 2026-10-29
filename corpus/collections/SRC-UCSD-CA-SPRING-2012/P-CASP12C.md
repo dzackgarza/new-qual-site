@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $f: \mathbb{D} \to \mathbb{D}$ be an analytic function satisfying $f(0) = 0$.
-Prove that $$|f(z) + f(-z)| \leq 2|z|^2$$ for all $z \in \mathbb{D}$.
-Further, show that this inequality is strict for all $z \in \mathbb{D} \setminus \{0\}$ unless $f(z) + f(-z) = 2cz^2$ for some $c \in \CC$ with $|c| = 1$.
+Let $f: \DD \to \DD$ be an analytic function satisfying $f(0) = 0$.
+Prove that $$|f(z) + f(-z)| \leq 2|z|^2$$ for all $z \in \DD$.
+Further, show that this inequality is strict for all $z \in \DD \setminus \{0\}$ unless $f(z) + f(-z) = 2cz^2$ for some $c \in \CC$ with $|c| = 1$.
 :::
 
 ::: {.solution}

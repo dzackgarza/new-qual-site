@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Show that there is no self-map of $\mathbb{CP}^2 \times \mathbb{CP}^2$ having degree $-1$.
+Show that there is no self-map of $\CP^2 \times \CP^2$ having degree $-1$.
 :::
 
 ::: {.solution}
@@ -23,13 +23,13 @@ Show that there is no self-map of $\mathbb{CP}^2 \times \mathbb{CP}^2$ having de
 ::: pf-step
 Write
 $$
-H^*(\mathbb{CP}^2\times\mathbb{CP}^2;\ZZ)
+H^*(\CP^2\times\CP^2;\ZZ)
 \cong\ZZ[x,y]/(x^3,y^3),
 \qquad |x|=|y|=2.
 $$
 
 ::: pf-proof
-This follows from the cohomology ring of $\mathbb{CP}^2$ and the Künneth theorem.
+This follows from the cohomology ring of $\CP^2$ and the Künneth theorem.
 :::
 
 :::
@@ -93,7 +93,7 @@ The expression in step [](#degree-formula){.pf-ref} is a sum of two integer squa
 :::
 
 ::: pf-step
-Therefore no self-map of $\mathbb{CP}^2\times\mathbb{CP}^2$ can have degree $-1$.
+Therefore no self-map of $\CP^2\times\CP^2$ can have degree $-1$.
 
 ::: pf-proof
 Immediate from step [](#degree-nonnegative){.pf-ref}.

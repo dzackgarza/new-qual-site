@@ -36,14 +36,14 @@ An outer automorphism is an automorphism that is not inner.
 ::: pf
 
 ::: pf-step
-The affine transformations of \(\mathbb F_5\),
+The affine transformations of \(\FF_5\),
 \[
-H=\{x\mapsto ax+b:a\in\mathbb F_5^\times,\ b\in\mathbb F_5\},
+H=\{x\mapsto ax+b:a\in\FF_5^\times,\ b\in\FF_5\},
 \]
 form a subgroup of \(S_5\) of order \(20\).
 
 ::: pf-proof
-Each map \(x\mapsto ax+b\) with \(a\ne0\) is a permutation of the five-element set \(\mathbb F_5\). The composite of
+Each map \(x\mapsto ax+b\) with \(a\ne0\) is a permutation of the five-element set \(\FF_5\). The composite of
 \[
 x\mapsto ax+b
 \quad\text{and}\quad

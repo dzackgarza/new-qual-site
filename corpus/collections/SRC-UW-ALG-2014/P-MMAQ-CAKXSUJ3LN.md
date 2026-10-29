@@ -158,7 +158,7 @@ for some \(k\ge0\).
 
 ::: pf-proof
 
-By step [](#s5){.pf-ref}, every nonidentity element of the finite abelian group \(G\) has order \(2\). Thus \(G\) is naturally a vector space over \(\mathbb F_2\). Since it is finite, it has finite dimension \(k\), so as an abelian group
+By step [](#s5){.pf-ref}, every nonidentity element of the finite abelian group \(G\) has order \(2\). Thus \(G\) is naturally a vector space over \(\FF_2\). Since it is finite, it has finite dimension \(k\), so as an abelian group
 \[
 G\cong (C_2)^k.
 \]

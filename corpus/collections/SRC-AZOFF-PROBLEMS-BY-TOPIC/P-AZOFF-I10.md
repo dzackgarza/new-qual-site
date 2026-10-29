@@ -32,8 +32,8 @@ audit:
 ---
 
 ::: {.problem}
-[Fall 1998, Problem #5] Suppose $f : \mathbb { D } \to \mathbb { D }$ is analytic.
-Prove that for any $a \in \mathbb { D }$
+[Fall 1998, Problem #5] Suppose $f : \DD \to \DD$ is analytic.
+Prove that for any $a \in \DD$
 
 $$
 { \frac { | f ^ { \prime } ( a ) | } { 1 - | f ( a ) | ^ { 2 } } } \leq { \frac { 1 } { 1 - | a | ^ { 2 } } } .

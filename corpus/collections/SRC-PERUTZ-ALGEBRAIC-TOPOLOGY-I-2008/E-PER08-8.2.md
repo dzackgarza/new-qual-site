@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-8.2
 kind: problem
-title: Simplicial homology of $T^2$, $\mathbb{RP}^2$, and the Klein bottle
+title: Simplicial homology of $T^2$, $\RP^2$, and the Klein bottle
 classification:
   areas: [topology]
   topics: []
@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Compute $H_*^{\mathrm{simp}}$ for the spaces $T^2$, $\mathbb{RP}^2$ and $K^2$, each thought of as a $\Delta$-complex with two $2$-simplices (and some $1$- and $0$-simplices).
+Compute $H_*^{\mathrm{simp}}$ for the spaces $T^2$, $\RP^2$ and $K^2$, each thought of as a $\Delta$-complex with two $2$-simplices (and some $1$- and $0$-simplices).
 :::
 
 ::: {.solution}
@@ -33,7 +33,7 @@ The resulting homology is
 \boxed{H_*(T^2):\quad H_0=\ZZ,\ H_1=\ZZ^2,\ H_2=\ZZ,}
 \]
 \[
-\boxed{H_*(\mathbb{RP}^2):\quad H_0=\ZZ,\ H_1=\ZZ/2,\ H_2=0,}
+\boxed{H_*(\RP^2):\quad H_0=\ZZ,\ H_1=\ZZ/2,\ H_2=0,}
 \]
 and
 \[

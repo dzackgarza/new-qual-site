@@ -20,12 +20,12 @@ audit:
 2. Find the universal covering space of each:
    - $S^1$;
    - $S^2$;
-   - $\mathbb{RP}^2$;
+   - $\RP^2$;
    - the torus.
 3. Compute the simplicial homology groups of each:
    - $S^1$;
    - $S^2$;
-   - $\mathbb{RP}^2$.
+   - $\RP^2$.
 :::
 
 ::: {.solution}
@@ -273,12 +273,12 @@ is simply connected, so it is already its own universal covering space.
 
 A universal covering of
 \[
-\mathbb{RP}^2
+\RP^2
 \]
 is
 \[
 \boxed{
-S^2\longrightarrow\mathbb{RP}^2,
+S^2\longrightarrow\RP^2,
 \qquad
 x\longmapsto[x].
 }
@@ -408,7 +408,7 @@ in degrees $0$ and $2$ and zero elsewhere.
 The simplicial homology of the projective plane is
 \[
 \boxed{
-H_k(\mathbb{RP}^2)
+H_k(\RP^2)
 \cong
 \begin{cases}
 \ZZ,&k=0,\\
@@ -423,7 +423,7 @@ H_k(\mathbb{RP}^2)
 
 The standard CW structure on
 \[
-\mathbb{RP}^2
+\RP^2
 \]
 has one cell in each dimension
 \[

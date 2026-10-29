@@ -38,7 +38,7 @@ $$
 \boxed{
 S^2,\qquad
 \#^g(S^1\times S^1)\ (g\ge1),\qquad
-\#^k\mathbb{RP}^2\ (k\ge1).}
+\#^k\RP^2\ (k\ge1).}
 $$
 
 
@@ -99,12 +99,12 @@ The letter $a$ occurs twice in the word with the same exponent. The two $a$-edge
 ::: {.pf-step #s1-4}
 
 $$
-\boxed{S\cong\mathbb{RP}^2\#\mathbb{RP}^2\#\mathbb{RP}^2.}
+\boxed{S\cong\RP^2\#\RP^2\#\RP^2.}
 $$
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref} and step [](#s1-3){.pf-ref}, $S\cong\#^k\mathbb{RP}^2$ for some $k\ge1$, and $\chi(\#^k\mathbb{RP}^2)=2-k$. Step [](#s1-2){.pf-ref} gives $2-k=-1$, so $k=3$.
+By step [](#s1-1){.pf-ref} and step [](#s1-3){.pf-ref}, $S\cong\#^k\RP^2$ for some $k\ge1$, and $\chi(\#^k\RP^2)=2-k$. Step [](#s1-2){.pf-ref} gives $2-k=-1$, so $k=3$.
 
 :::
 

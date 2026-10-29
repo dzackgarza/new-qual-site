@@ -30,14 +30,14 @@ where $\chi(M)$ denotes the Euler characteristic of $M$.
 
 ::: {.pf-step #s1}
 
-Write $b_i=\dim_{\mathbb F_2}H^i(M;\mathbb F_2)$. Mod-$2$ Poincaré duality gives
+Write $b_i=\dim_{\FF_2}H^i(M;\FF_2)$. Mod-$2$ Poincaré duality gives
 $$
 b_i=b_{2n-i}.
 $$
 
 ::: pf-proof
 
-Every closed manifold is orientable over $\mathbb F_2$, so Poincaré duality applies without an orientability hypothesis.
+Every closed manifold is orientable over $\FF_2$, so Poincaré duality applies without an orientability hypothesis.
 
 :::
 
@@ -75,7 +75,7 @@ Use step [](#s1){.pf-ref}; every degree except the middle degree occurs in one s
 
 Hence only the middle Betti number survives modulo $2$:
 $$
-\boxed{\chi(M)\equiv \dim_{\mathbb F_2}H^n(M;\mathbb F_2)\pmod2}.
+\boxed{\chi(M)\equiv \dim_{\FF_2}H^n(M;\FF_2)\pmod2}.
 $$
 
 ::: pf-proof

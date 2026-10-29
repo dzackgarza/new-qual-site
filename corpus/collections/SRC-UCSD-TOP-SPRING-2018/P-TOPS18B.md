@@ -65,12 +65,12 @@ The construction glues two trivial bundles over the hemispheres of the base $S^2
 :::
 
 ::: pf-step
-This nontrivial bundle is diffeomorphic to $\mathbb{CP}^2\#\overline{\mathbb{CP}}^{\,2}$ and has intersection form
+This nontrivial bundle is diffeomorphic to $\CP^2\#\overline{\CP}^{\,2}$ and has intersection form
 $$Q_M\cong\begin{pmatrix}1&0\\0&-1\end{pmatrix},$$
 which is odd.
 
 ::: pf-proof
-The two oriented $S^2$-bundles over $S^2$ are classified by $\pi_1(SO(3))\cong\ZZ/2$. The nontrivial bundle is the first Hirzebruch surface, diffeomorphic to $\mathbb{CP}^2\#\overline{\mathbb{CP}}^{\,2}$; its standard exceptional and hyperplane classes give the displayed form.
+The two oriented $S^2$-bundles over $S^2$ are classified by $\pi_1(SO(3))\cong\ZZ/2$. The nontrivial bundle is the first Hirzebruch surface, diffeomorphic to $\CP^2\#\overline{\CP}^{\,2}$; its standard exceptional and hyperplane classes give the displayed form.
 :::
 
 :::

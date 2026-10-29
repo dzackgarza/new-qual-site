@@ -17,12 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $(f_n)$ be holomorphic functions on $\mathbb D$ satisfying
+Let $(f_n)$ be holomorphic functions on $\DD$ satisfying
 \[
-\int_{\mathbb D}|f_n(z)|\,d\lambda(z)\le1
+\int_{\DD}|f_n(z)|\,d\lambda(z)\le1
 \]
 for every $n$.
-Show that some subsequence converges uniformly on every compact subset of $\mathbb D$.
+Show that some subsequence converges uniformly on every compact subset of $\DD$.
 :::
 
 ::: {.solution}
@@ -35,7 +35,7 @@ Fix $0<r<R<1$. For every $z$ with $|z|\leq r$, the disk
 \[
 D(z,R-r)
 \]
-is contained in $\mathbb D$.
+is contained in $\DD$.
 
 
 ::: pf-proof
@@ -80,7 +80,7 @@ Therefore, uniformly in $n$,
 
 The integral over the smaller disk in step [](#s1-2){.pf-ref} is at most
 \[
-\int_{\mathbb D}|f_n(w)|\,d\lambda(w)\leq1
+\int_{\DD}|f_n(w)|\,d\lambda(w)\leq1
 \]
 by hypothesis.
 
@@ -90,12 +90,12 @@ by hypothesis.
 
 ::: pf-step
 
-Thus the family $\{f_n\}$ is locally uniformly bounded on $\mathbb D$.
+Thus the family $\{f_n\}$ is locally uniformly bounded on $\DD$.
 
 
 ::: pf-proof
 
-Every compact $K\subset\mathbb D$ is contained in some closed disk $\{|z|\leq r\}$ with $r<1$. Choose $R$ with $r<R<1$ and apply step [](#s1-3){.pf-ref}.
+Every compact $K\subset\DD$ is contained in some closed disk $\{|z|\leq r\}$ with $r<1$. Choose $R$ with $r<R<1$ and apply step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -170,12 +170,12 @@ Choose a subsequence converging on $K_2$; from it choose one converging on $K_3$
 
 ::: {.pf-step #s1-9}
 
-Hence $(f_{n_j})$ converges uniformly on every compact subset of $\mathbb D$.
+Hence $(f_{n_j})$ converges uniformly on every compact subset of $\DD$.
 
 
 ::: pf-proof
 
-Every compact subset of $\mathbb D$ lies in some $K_k$, and step [](#s1-8){.pf-ref} gives uniform convergence there.
+Every compact subset of $\DD$ lies in some $K_k$, and step [](#s1-8){.pf-ref} gives uniform convergence there.
 
 :::
 

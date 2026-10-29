@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-6A
 kind: problem
-title: Order of $\operatorname{Sp}_4(\mathbb F_3)$ and the number of symplectic forms on $\mathbb F_3^4$
+title: Order of $\operatorname{Sp}_4(\FF_3)$ and the number of symplectic forms on $\FF_3^4$
 classification:
   areas:
   - prelim

@@ -31,9 +31,9 @@ audit:
 ::: {.problem}
 Let $f$ be holomorphic on the open unit disk
 \[
-\mathbb D=\{z:|z|<1\}.
+\DD=\{z:|z|<1\}.
 \]
-Prove that there is a sequence $(z_n)$ in $\mathbb D$ such that
+Prove that there is a sequence $(z_n)$ in $\DD$ such that
 \[
 |z_n|\to1
 \]

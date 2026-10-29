@@ -13,10 +13,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbb D$ be the open unit disk.
-Show that $\operatorname{Aut}(\mathbb D)$ acts transitively on $\mathbb D$: for every $a,b\in\mathbb D$, there exists a biholomorphism
+Let $\DD$ be the open unit disk.
+Show that $\operatorname{Aut}(\DD)$ acts transitively on $\DD$: for every $a,b\in\DD$, there exists a biholomorphism
 \[
-f:\mathbb D\to\mathbb D
+f:\DD\to\DD
 \]
 such that $f(a)=b$.
 :::

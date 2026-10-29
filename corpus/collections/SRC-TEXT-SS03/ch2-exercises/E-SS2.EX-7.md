@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-7
 kind: problem
-title: $2\abs{f'(0)}$ is at most the diameter of $f(\mathbb D)$
+title: $2\abs{f'(0)}$ is at most the diameter of $f(\DD)$
 classification:
   areas:
   - complex-analysis
@@ -18,8 +18,8 @@ audit:
 ---
 
 ::: {.exercise}
-7. Suppose $f : \mathbb { D } \to \CC$ is holomorphic.
-   Show that the diameter $d =$ $\begin{array} { r } { \operatorname* { s u p } _ { z , w \in \mathbb { D } } | f ( z ) - f ( w ) | } \end{array}$ of the image of f satisfies
+7. Suppose $f : \DD \to \CC$ is holomorphic.
+   Show that the diameter $d =$ $\begin{array} { r } { \operatorname* { s u p } _ { z , w \in \DD } | f ( z ) - f ( w ) | } \end{array}$ of the image of f satisfies
 
 $$
 2 | f ^ {\prime} (0) | \leq d.
@@ -39,7 +39,7 @@ Fix $0<r<1$. By the Cauchy integral formula for first derivatives, $\frac1{2\pi 
 2f'(0)=\frac1{2\pi i}\int_{|\zeta|=r}
 \frac{f(\zeta)-f(-\zeta)}{\zeta^2}\,d\zeta.
 \]
-Since both $\zeta$ and $-\zeta$ lie in $\mathbb D$,
+Since both $\zeta$ and $-\zeta$ lie in $\DD$,
 \[
 |f(\zeta)-f(-\zeta)|\le d.
 \]

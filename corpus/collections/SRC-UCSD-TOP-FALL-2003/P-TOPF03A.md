@@ -36,10 +36,10 @@ Hence positive, zero, and negative Euler characteristic cannot mix under finite 
 :::
 
 ::: {.pf-step #positive-class}
-The closed surfaces with positive Euler characteristic, namely $S^2$ and $\mathbb{RP}^2$, form one commensurability class.
+The closed surfaces with positive Euler characteristic, namely $S^2$ and $\RP^2$, form one commensurability class.
 
 ::: pf-proof
-The antipodal quotient $S^2\to\mathbb{RP}^2$ is a two-sheeted covering.
+The antipodal quotient $S^2\to\RP^2$ is a two-sheeted covering.
 :::
 
 :::

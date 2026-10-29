@@ -51,12 +51,12 @@ If the quotient is a field, its subring $\ZZ_n$ has no zero divisors. Thus $\ZZ_
 ::: {.pf-step #quadratic-criterion}
 For a prime $p$, the quotient
 $$
-\mathbb F_p[x]/(q)
+\FF_p[x]/(q)
 $$
-is a field exactly when $q$ has no root in $\mathbb F_p$.
+is a field exactly when $q$ has no root in $\FF_p$.
 
 ::: pf-proof
-Over the field $\mathbb F_p$, the quotient by $(q)$ is a field exactly when $q$ is irreducible. Since $q$ has degree $2$, it is reducible exactly when it has a linear factor, equivalently a root in $\mathbb F_p$.
+Over the field $\FF_p$, the quotient by $(q)$ is a field exactly when $q$ is irreducible. Since $q$ has degree $2$, it is reducible exactly when it has a linear factor, equivalently a root in $\FF_p$.
 :::
 
 :::
@@ -74,10 +74,10 @@ These are precisely the primes between $1$ and $10$.
 :::
 
 ::: {.pf-step #irreducible-cases}
-The polynomial $q$ is irreducible over $\mathbb F_2$ and over $\mathbb F_5$.
+The polynomial $q$ is irreducible over $\FF_2$ and over $\FF_5$.
 
 ::: pf-proof
-Over $\mathbb F_2$,
+Over $\FF_2$,
 $$
 q(0)=1,
 \qquad
@@ -85,7 +85,7 @@ q(1)=1+1+1=1,
 $$
 so $q$ has no root.
 
-Over $\mathbb F_5$, direct evaluation gives
+Over $\FF_5$, direct evaluation gives
 $$
 \begin{array}{c|ccccc}
 a&0&1&2&3&4\\
@@ -93,20 +93,20 @@ a&0&1&2&3&4\\
 q(a)&1&3&2&3&1
 \end{array}
 $$
-in $\mathbb F_5$, so again there is no root. [](#quadratic-criterion){.pf-ref} gives irreducibility in both cases.
+in $\FF_5$, so again there is no root. [](#quadratic-criterion){.pf-ref} gives irreducibility in both cases.
 :::
 
 :::
 
 ::: {.pf-step #reducible-cases}
-The polynomial $q$ is reducible over $\mathbb F_3$ and over $\mathbb F_7$.
+The polynomial $q$ is reducible over $\FF_3$ and over $\FF_7$.
 
 ::: pf-proof
-In $\mathbb F_3$,
+In $\FF_3$,
 $$
 q(1)=1+1+1=0.
 $$
-In $\mathbb F_7$,
+In $\FF_7$,
 $$
 q(2)=4+2+1=0.
 $$
@@ -132,7 +132,7 @@ $$
 ::: {.pf-step #defining-relation}
 In the case $n=2$, let
 $$
-\alpha\coloneqq[x]\in\mathbb F_2[x]/(q).
+\alpha\coloneqq[x]\in\FF_2[x]/(q).
 $$
 Then
 $$

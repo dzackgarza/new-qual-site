@@ -18,20 +18,20 @@ audit:
 ---
 
 ::: {.exercise}
-12. A complex number $w \in \mathbb { D }$ is a fixed point for the map $f : \mathbb { D } \to \mathbb { D } { \mathrm { i f ~ } } f ( w ) = w$
+12. A complex number $w \in \DD$ is a fixed point for the map $f : \DD \to \DD { \mathrm { i f ~ } } f ( w ) = w$
 
-(a) Prove that if $f : \mathbb { D } \to \mathbb { D }$ is analytic and has two distinct fixed points, then f is the identity, that is, $f ( z ) = z { \mathrm { ~ f o r } }$ all $z \in \mathbb { D }$
+(a) Prove that if $f : \DD \to \DD$ is analytic and has two distinct fixed points, then f is the identity, that is, $f ( z ) = z { \mathrm { ~ f o r } }$ all $z \in \DD$
 
-(b) Must every holomorphic function $f : \mathbb { D } \to \mathbb { D }$ have a fixed point?
+(b) Must every holomorphic function $f : \DD \to \DD$ have a fixed point?
 [Hint: Consider the upper half-plane.]
 :::
 
 ::: {.solution}
-For part (a), let $a,b\in\mathbb D$ be distinct fixed points of $f$. Choose a disc automorphism $\phi$ with $\phi(a)=0$ and define
+For part (a), let $a,b\in\DD$ be distinct fixed points of $f$. Choose a disc automorphism $\phi$ with $\phi(a)=0$ and define
 \[
 g=\phi\circ f\circ\phi^{-1}.
 \]
-Then $g:\mathbb D\to\mathbb D$ is holomorphic, $g(0)=0$, and $c=\phi(b)\ne0$ is another fixed point. Schwarz's lemma gives $|g(z)|\le|z|$. Since $|g(c)|=|c|$ for $c\ne0$, the equality case of Schwarz's lemma implies
+Then $g:\DD\to\DD$ is holomorphic, $g(0)=0$, and $c=\phi(b)\ne0$ is another fixed point. Schwarz's lemma gives $|g(z)|\le|z|$. Since $|g(c)|=|c|$ for $c\ne0$, the equality case of Schwarz's lemma implies
 \[
 g(z)=e^{i\theta}z
 \]
@@ -41,9 +41,9 @@ For part (b), no. Let
 \[
 \phi(z)=\frac{z-i}{z+i}
 \]
-map the upper half-plane biholomorphically onto $\mathbb D$, and let $T(z)=z+1$, an automorphism of the upper half-plane with no fixed point there. Then
+map the upper half-plane biholomorphically onto $\DD$, and let $T(z)=z+1$, an automorphism of the upper half-plane with no fixed point there. Then
 \[
-F=\phi\circ T\circ\phi^{-1}:\mathbb D\to\mathbb D
+F=\phi\circ T\circ\phi^{-1}:\DD\to\DD
 \]
 is a holomorphic self-map. If $F(w)=w$, then applying $\phi^{-1}$ would give a fixed point of $T$, impossible. Thus a holomorphic self-map of the disc need not have a fixed point.
 :::

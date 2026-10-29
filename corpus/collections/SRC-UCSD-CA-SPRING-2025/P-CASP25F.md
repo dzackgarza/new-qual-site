@@ -16,10 +16,10 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f : \mathbb{D} \to \CC$ be holomorphic and assume $f(z) \neq 0$ for $z \neq 0$.
+Let $f : \DD \to \CC$ be holomorphic and assume $f(z) \neq 0$ for $z \neq 0$.
 For $0 \leq r < 1$, let $M(r) = \max_{|z|=r} |f(z)|$.
 
-(i) Show that the function $h_s(z) = s \log |z| + \log |f(z)|$ is harmonic in $\mathbb{D} \setminus \{0\}$ for all $s \in \RR$.
+(i) Show that the function $h_s(z) = s \log |z| + \log |f(z)|$ is harmonic in $\DD \setminus \{0\}$ for all $s \in \RR$.
 
 (ii) Show that there exists $s \in \RR$ such that $\max_{|z|=\frac{1}{2}} h_s(z) = \max_{|z|=\frac{1}{8}} h_s(z)$.
 
@@ -29,7 +29,7 @@ For $0 \leq r < 1$, let $M(r) = \max_{|z|=r} |f(z)|$.
 :::
 
 ::: {.solution}
-(i) On $\mathbb D\setminus\{0\}$ the function $f$ has no zeros, so
+(i) On $\DD\setminus\{0\}$ the function $f$ has no zeros, so
 $\log|f|$ is harmonic there. Since $\log|z|$ is also harmonic on the punctured
 disk,
 \[
@@ -79,7 +79,7 @@ write
 \[
 f(z)=z^n g(z),
 \]
-where $g$ is holomorphic and nowhere zero on $\mathbb D$. Then
+where $g$ is holomorphic and nowhere zero on $\DD$. Then
 \[
 h_s(z)=(s+n)\log|z|+\log|g(z)|.
 \]

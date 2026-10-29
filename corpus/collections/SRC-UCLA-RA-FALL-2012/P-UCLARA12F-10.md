@@ -17,12 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $(f_n)$ be a sequence of holomorphic functions on $\mathbb D$ satisfying $|f_n(z)|\le1$ for every $z\in\mathbb D$ and every $n$.
+Let $(f_n)$ be a sequence of holomorphic functions on $\DD$ satisfying $|f_n(z)|\le1$ for every $z\in\DD$ and every $n$.
 Let
 \[
-A=\{z\in\mathbb D:\lim_{n\to\infty}f_n(z)\text{ exists}\}.
+A=\{z\in\DD:\lim_{n\to\infty}f_n(z)\text{ exists}\}.
 \]
-Show that if $A$ has an accumulation point in $\mathbb D$, then there exists a holomorphic function $f$ on $\mathbb D$ such that $f_n\to f$ locally uniformly on $\mathbb D$.
+Show that if $A$ has an accumulation point in $\DD$, then there exists a holomorphic function $f$ on $\DD$ such that $f_n\to f$ locally uniformly on $\DD$.
 :::
 
 ::: {.solution}
@@ -31,7 +31,7 @@ Show that if $A$ has an accumulation point in $\mathbb D$, then there exists a h
 
 ::: {.pf-step #s1-1}
 
-The family $\{f_n:n\ge1\}$ is normal on $\mathbb D$.
+The family $\{f_n:n\ge1\}$ is normal on $\DD$.
 
 
 ::: pf-proof
@@ -40,7 +40,7 @@ The functions satisfy
 $$
 |f_n(z)|\le1
 $$
-for every $z\in\mathbb D$ and every $n$. Thus the family is locally uniformly bounded. By Montel's theorem, every sequence in this family has a subsequence that converges locally uniformly on $\mathbb D$ to a holomorphic function.
+for every $z\in\DD$ and every $n$. Thus the family is locally uniformly bounded. By Montel's theorem, every sequence in this family has a subsequence that converges locally uniformly on $\DD$ to a holomorphic function.
 
 :::
 
@@ -62,11 +62,11 @@ g(z)=\lim_{k\to\infty}f_{n_k}(z)
 =\lim_{j\to\infty}f_{m_j}(z)
 =h(z).
 $$
-Hence $g=h$ on $A$. Since $A$ has an accumulation point in $\mathbb D$, the identity theorem gives
+Hence $g=h$ on $A$. Since $A$ has an accumulation point in $\DD$, the identity theorem gives
 $$
 g\equiv h
 $$
-on $\mathbb D$.
+on $\DD$.
 
 :::
 
@@ -74,7 +74,7 @@ on $\mathbb D$.
 
 ::: {.pf-step #s1-3}
 
-There exists a holomorphic function $f$ on $\mathbb D$ that is the locally uniform limit of some subsequence of $(f_n)$.
+There exists a holomorphic function $f$ on $\DD$ that is the locally uniform limit of some subsequence of $(f_n)$.
 
 
 ::: pf-proof
@@ -92,7 +92,7 @@ The full sequence $(f_n)$ converges locally uniformly to the function $f$ from s
 
 ::: pf-proof
 
-Suppose not. Then there exist a compact set $K\subset\mathbb D$, a number $\varepsilon>0$, and a subsequence $(f_{m_j})$ such that
+Suppose not. Then there exist a compact set $K\subset\DD$, a number $\varepsilon>0$, and a subsequence $(f_{m_j})$ such that
 $$
 \sup_{z\in K}|f_{m_j}(z)-f(z)|\ge\varepsilon
 $$
@@ -110,9 +110,9 @@ contradicting the displayed lower bound by $\varepsilon$.
 
 ::: {.pf-step #s1-5}
 
-Therefore there exists a holomorphic function $f$ on $\mathbb D$ such that
+Therefore there exists a holomorphic function $f$ on $\DD$ such that
 $$
-\boxed{f_n\to f\text{ locally uniformly on }\mathbb D.}
+\boxed{f_n\to f\text{ locally uniformly on }\DD.}
 $$
 
 

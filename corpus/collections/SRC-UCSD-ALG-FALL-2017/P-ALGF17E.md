@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF17E
 kind: problem
-title: Companion-like matrix over $\QQ(y)$ vs $\mathbb{F}_3(y)$; irreducibility and diagonalizability
+title: Companion-like matrix over $\QQ(y)$ vs $\FF_3(y)$; irreducibility and diagonalizability
 classification:
   areas:
   - algebra
@@ -36,7 +36,7 @@ where $y$ is an indeterminate.
 
 (b) Show that $A$ is diagonalisable over the algebraic closure of $\QQ(y)$.
 
-(c) Show that $A$ is not diagonalisable over the algebraic closure of $\mathbb{F}_3(y)$.
+(c) Show that $A$ is not diagonalisable over the algebraic closure of $\FF_3(y)$.
 :::
 
 ::: {.solution}
@@ -135,10 +135,10 @@ This proves part (b).
 :::
 
 ::: {.pf-step #min-poly-f3}
-Over $\mathbb F_3(y)$, the minimal polynomial of $A$ is still $x^3+y$.
+Over $\FF_3(y)$, the minimal polynomial of $A$ is still $x^3+y$.
 
 ::: pf-proof
-The cyclic-vector computation from step [](#min-poly-q){.pf-ref} uses only the displayed matrix and therefore remains valid over $\mathbb F_3(y)$:
+The cyclic-vector computation from step [](#min-poly-q){.pf-ref} uses only the displayed matrix and therefore remains valid over $\FF_3(y)$:
 \[
 e_1,Ae_1,A^2e_1
 \]
@@ -157,10 +157,10 @@ m_A(x)=x^3+y.
 :::
 
 ::: pf-step
-The matrix $A$ is not diagonalizable over the algebraic closure of $\mathbb F_3(y)$.
+The matrix $A$ is not diagonalizable over the algebraic closure of $\FF_3(y)$.
 
 ::: pf-proof
-Let $\overline F$ be an algebraic closure of $\mathbb F_3(y)$ and choose $\alpha\in\overline F$ with
+Let $\overline F$ be an algebraic closure of $\FF_3(y)$ and choose $\alpha\in\overline F$ with
 \[
 \alpha^3=-y.
 \]

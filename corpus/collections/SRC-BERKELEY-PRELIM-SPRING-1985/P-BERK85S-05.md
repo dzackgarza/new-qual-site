@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK85S-05
 kind: problem
-title: Factorization of $x^4+x^3+x+3$ over $\mathbb F_5$
+title: Factorization of $x^4+x^3+x+3$ over $\FF_5$
 classification:
   areas: [prelim]
   topics: []
@@ -29,7 +29,7 @@ Factor
 \[
 x^4+x^3+x+3
 \]
-completely in $\mathbb F_5[x]$.
+completely in $\FF_5[x]$.
 :::
 
 ::: {.solution}

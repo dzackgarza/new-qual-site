@@ -87,12 +87,12 @@ The spaces $\ell^1(\NN)$ and $\ell^2(\NN)$ are separable.
 
 ::: pf-proof
 
-Let $\mathbb F_0$ be $\QQ$ in the real case and $\QQ+i\QQ$ in the complex case. Define
+Let $\FF_0$ be $\QQ$ in the real case and $\QQ+i\QQ$ in the complex case. Define
 \[
 D
 \coloneqq
 \{x=(x_k):
-x_k\in\mathbb F_0,
+x_k\in\FF_0,
 \text{ and }x_k=0\text{ for all but finitely many }k\}.
 \]
 The set $D$ is countable.
@@ -103,7 +103,7 @@ Fix $x\in\ell^p$ and $\varepsilon>0$, with $p=1$ or $2$. Choose $N$ so that
 <
 \frac{\varepsilon^p}{2}.
 \]
-For each $1\le k\le N$, choose $q_k\in\mathbb F_0$ so close to $x_k$ that
+For each $1\le k\le N$, choose $q_k\in\FF_0$ so close to $x_k$ that
 \[
 \sum_{k=1}^N|x_k-q_k|^p
 <

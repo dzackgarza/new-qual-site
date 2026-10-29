@@ -23,13 +23,13 @@ Show that $f(z) = z$.
 ::: {.solution}
 By the Riemann mapping theorem choose a biholomorphism
 \[
-\phi:G\to\mathbb D
+\phi:G\to\DD
 \]
 with $\phi(a)=0$. Set
 \[
 F=\phi\circ f\circ\phi^{-1}.
 \]
-Then $F:\mathbb D\to\mathbb D$ is holomorphic, $F(0)=0$, and by the chain
+Then $F:\DD\to\DD$ is holomorphic, $F(0)=0$, and by the chain
 rule
 \[
 F'(0)=f'(a)=1.

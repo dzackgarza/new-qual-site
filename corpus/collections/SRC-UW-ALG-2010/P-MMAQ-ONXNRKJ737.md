@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: P-MMAQ-ONXNRKJ737
 kind: problem
-title: The sum of group elements is central and nilpotent in $\mathbb{F}[G]$ when
-  $\mathrm{char}\,\mathbb{F}=p$ and $|G|=p^n$, so $\mathbb{F}[G]$ is not semisimple
+title: The sum of group elements is central and nilpotent in $\FF[G]$ when
+  $\mathrm{char}\,\FF=p$ and $|G|=p^n$, so $\FF[G]$ is not semisimple
 classification:
   areas:
   - algebra
@@ -19,8 +19,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbb F$ be a field of characteristic $p$, and $G$ a group of order $p^n$.
-Let $R=\mathbb F[G]$ be the group ring (group algebra) of $G$ over $\mathbb F$, and let $u:=\sum_{x\in G}x$ (so $u$ is an element of $R$).
+Let $\FF$ be a field of characteristic $p$, and $G$ a group of order $p^n$.
+Let $R=\FF[G]$ be the group ring (group algebra) of $G$ over $\FF$, and let $u:=\sum_{x\in G}x$ (so $u$ is an element of $R$).
 
 - Prove that $u$ lies in the center of $R$.
 
@@ -44,7 +44,7 @@ The element
 \[
 u=\sum_{x\in G}x
 \]
-lies in the center of $R=\mathbb F[G]$.
+lies in the center of $R=\FF[G]$.
 
 ::: pf-proof
 
@@ -66,7 +66,7 @@ Thus $gu=ug$ for every basis element $g\in G$, and therefore $u$ commutes with e
 
 One has
 \[
-Ru=\mathbb F u,
+Ru=\FF u,
 \]
 and $Ru$ is a nonzero two-sided ideal of $R$.
 
@@ -80,7 +80,7 @@ then by step [](#s1){.pf-ref},
 \[
 ru=\sum_{g\in G}a_g(gu)=\left(\sum_{g\in G}a_g\right)u.
 \]
-Hence $Ru\subseteq\mathbb F u$, while the reverse inclusion is immediate since $\mathbb F\subseteq R$. Thus $Ru=\mathbb F u$. Because the group elements form an $\mathbb F$-basis of $R$, the element $u$ is nonzero. Finally, centrality of $u$ gives
+Hence $Ru\subseteq\FF u$, while the reverse inclusion is immediate since $\FF\subseteq R$. Thus $Ru=\FF u$. Because the group elements form an $\FF$-basis of $R$, the element $u$ is nonzero. Finally, centrality of $u$ gives
 \[
 (Ru)R=R(uR)=R(Ru)\subseteq Ru,
 \]
@@ -109,7 +109,7 @@ u^2=\left(\sum_{x\in G}x\right)u
 =\sum_{x\in G}u
 =|G|u=p^n u=0
 \]
-because $\operatorname{char}\mathbb F=p$. Thus one may take $k=2$. Since $Ru=\mathbb F u$ by step [](#s2){.pf-ref}, every product of two elements of $Ru$ is a scalar multiple of $u^2$, hence is zero.
+because $\operatorname{char}\FF=p$. Thus one may take $k=2$. Since $Ru=\FF u$ by step [](#s2){.pf-ref}, every product of two elements of $Ru$ is a scalar multiple of $u^2$, hence is zero.
 
 :::
 

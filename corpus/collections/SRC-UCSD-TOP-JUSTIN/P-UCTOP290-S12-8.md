@@ -78,7 +78,7 @@ a contradiction.
 
 ::: pf-step
 
-The identical argument over $\mathbb F_2$ rules out a retraction
+The identical argument over $\FF_2$ rules out a retraction
 $$
 \mathbb RP^n\to\mathbb RP^k
 $$

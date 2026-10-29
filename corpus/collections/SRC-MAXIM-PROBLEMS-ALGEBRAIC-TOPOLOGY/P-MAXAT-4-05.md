@@ -22,7 +22,7 @@ Find the cohomology ring of Lens Spaces.
 ::: {.solution}
 
 The coefficient ring matters.
-The standard clean presentations are over $\mathbb F_2$ for real projective space, over $\ZZ$ for complex projective space, and over $\mathbb F_p$ for the standard $(2n-1)$-dimensional lens space with fundamental group $C_p$, where $p$ is an odd prime.
+The standard clean presentations are over $\FF_2$ for real projective space, over $\ZZ$ for complex projective space, and over $\FF_p$ for the standard $(2n-1)$-dimensional lens space with fundamental group $C_p$, where $p$ is an odd prime.
 
 ::: pf
 
@@ -31,8 +31,8 @@ The standard clean presentations are over $\mathbb F_2$ for real projective spac
 For finite real projective space,
 \[
 \boxed{
-H^*(\mathbb{RP}^{m};\mathbb F_2)
-\cong\mathbb F_2[x]/(x^{m+1}),
+H^*(\RP^{m};\FF_2)
+\cong\FF_2[x]/(x^{m+1}),
 \qquad |x|=1.}
 \]
 
@@ -41,10 +41,10 @@ H^*(\mathbb{RP}^{m};\mathbb F_2)
 
 Let $\gamma^1$ be the tautological real line bundle and put
 \[
-x=w_1(\gamma^1)\in H^1(\mathbb{RP}^m;\mathbb F_2).
+x=w_1(\gamma^1)\in H^1(\RP^m;\FF_2).
 \]
-The standard CW decomposition has one cell in each dimension $0,\ldots,m$, and all mod-$2$ cellular differentials vanish, so every $H^k$ is one-dimensional over $\mathbb F_2$.
-The restriction from $\mathbb{RP}^{\infty}$ identifies the generator in degree $k$ with $x^k$ for $0\leq k\leq m$, while dimensional reasons give $x^{m+1}=0$.
+The standard CW decomposition has one cell in each dimension $0,\ldots,m$, and all mod-$2$ cellular differentials vanish, so every $H^k$ is one-dimensional over $\FF_2$.
+The restriction from $\RP^{\infty}$ identifies the generator in degree $k$ with $x^k$ for $0\leq k\leq m$, while dimensional reasons give $x^{m+1}=0$.
 Hence the displayed truncated polynomial ring.
 
 :::
@@ -55,15 +55,15 @@ Hence the displayed truncated polynomial ring.
 
 In particular,
 \[
-H^*(\mathbb{RP}^{\infty};\mathbb F_2)
-\cong\mathbb F_2[x],
+H^*(\RP^{\infty};\FF_2)
+\cong\FF_2[x],
 \qquad |x|=1.
 \]
 
 
 ::: pf-proof
 
-Take the direct limit of the presentations in step [](#s1-1){.pf-ref} under the standard inclusions $\mathbb{RP}^m\subset\mathbb{RP}^{m+1}$.
+Take the direct limit of the presentations in step [](#s1-1){.pf-ref} under the standard inclusions $\RP^m\subset\RP^{m+1}$.
 No finite power of $x$ vanishes in the limit.
 
 :::
@@ -75,7 +75,7 @@ No finite power of $x$ vanishes in the limit.
 For finite complex projective space,
 \[
 \boxed{
-H^*(\mathbb{CP}^{m};\ZZ)
+H^*(\CP^{m};\ZZ)
 \cong\ZZ[u]/(u^{m+1}),
 \qquad |u|=2.}
 \]
@@ -85,7 +85,7 @@ H^*(\mathbb{CP}^{m};\ZZ)
 
 Let $u=c_1((\gamma^1_{\CC})^*)$ be the positive generator of $H^2$.
 The standard CW decomposition has one cell in each even dimension $0,2,\ldots,2m$ and none in odd dimensions, so the cellular differentials vanish and $H^{2k}\cong\ZZ$ for $0\leq k\leq m$.
-The class $u^k$ evaluates nontrivially on the fundamental class of the linear subspace $\mathbb{CP}^k$, hence generates $H^{2k}$.
+The class $u^k$ evaluates nontrivially on the fundamental class of the linear subspace $\CP^k$, hence generates $H^{2k}$.
 Dimensional reasons give $u^{m+1}=0$.
 
 :::
@@ -96,7 +96,7 @@ Dimensional reasons give $u^{m+1}=0$.
 
 Thus
 \[
-H^*(\mathbb{CP}^{\infty};\ZZ)
+H^*(\CP^{\infty};\ZZ)
 \cong\ZZ[u],
 \qquad |u|=2.
 \]
@@ -104,7 +104,7 @@ H^*(\mathbb{CP}^{\infty};\ZZ)
 
 ::: pf-proof
 
-As in step [](#s1-2){.pf-ref}, pass to the direct limit under $\mathbb{CP}^m\subset\mathbb{CP}^{m+1}$.
+As in step [](#s1-2){.pf-ref}, pass to the direct limit under $\CP^m\subset\CP^{m+1}$.
 
 :::
 
@@ -120,10 +120,10 @@ with $p$ an odd prime.
 Then
 \[
 \boxed{
-H^*(L^{2n-1};\mathbb F_p)
+H^*(L^{2n-1};\FF_p)
 \cong
-\Lambda_{\mathbb F_p}(a)\otimes
-\mathbb F_p[b]/(b^n),
+\Lambda_{\FF_p}(a)\otimes
+\FF_p[b]/(b^n),
 \qquad |a|=1,\ |b|=2,}
 \]
 where
@@ -141,8 +141,8 @@ L^{\infty}(p)=S^{\infty}/C_p=BC_p.
 \]
 For odd $p$, group cohomology gives
 \[
-H^*(BC_p;\mathbb F_p)
-\cong\Lambda(a)\otimes\mathbb F_p[b],
+H^*(BC_p;\FF_p)
+\cong\Lambda(a)\otimes\FF_p[b],
 \qquad b=\beta(a),
 \]
 with $|a|=1$ and $|b|=2$.
@@ -181,15 +181,15 @@ The universal coefficient theorem for cohomology then gives the displayed groups
 
 Therefore the standard ring presentations are
 \[
-\boxed{H^*(\mathbb{RP}^{m};\mathbb F_2)=\mathbb F_2[x]/(x^{m+1}),}
+\boxed{H^*(\RP^{m};\FF_2)=\FF_2[x]/(x^{m+1}),}
 \]
 \[
-\boxed{H^*(\mathbb{CP}^{m};\ZZ)=\ZZ[u]/(u^{m+1}),}
+\boxed{H^*(\CP^{m};\ZZ)=\ZZ[u]/(u^{m+1}),}
 \]
 and, for odd prime $p$,
 \[
-\boxed{H^*(L^{2n-1}(p);\mathbb F_p)
-=\Lambda(a)\otimes\mathbb F_p[b]/(b^n),\quad b=\beta(a).}
+\boxed{H^*(L^{2n-1}(p);\FF_p)
+=\Lambda(a)\otimes\FF_p[b]/(b^n),\quad b=\beta(a).}
 \]
 
 

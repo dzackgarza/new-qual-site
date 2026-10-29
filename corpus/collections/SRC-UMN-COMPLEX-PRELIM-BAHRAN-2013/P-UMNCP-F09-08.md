@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f:\mathbb D\to\mathbb D\) be holomorphic.
-Suppose there are distinct points \(p,q\in\mathbb D\) such that \(f(p)=p\) and \(f(q)=q\). Show that \(f(z)=z\) for every \(z\in\mathbb D\).
+Let \(f:\DD\to\DD\) be holomorphic.
+Suppose there are distinct points \(p,q\in\DD\) such that \(f(p)=p\) and \(f(q)=q\). Show that \(f(z)=z\) for every \(z\in\DD\).
 :::
 
 ::: {.solution}
@@ -42,7 +42,7 @@ $$
 
 The map
 $$
-g:\mathbb D\to\mathbb D
+g:\DD\to\DD
 $$
 is holomorphic and fixes $0$.
 
@@ -55,7 +55,7 @@ $$
 \quad\text{and}\quad
 \phi_p^{-1}
 $$
-are holomorphic automorphisms of the disk, so $g$ is a holomorphic self-map of $\mathbb D$. Since
+are holomorphic automorphisms of the disk, so $g$ is a holomorphic self-map of $\DD$. Since
 $$
 f(p)=p,
 $$
@@ -125,7 +125,7 @@ $$
 $$
 for every
 $$
-z\in\mathbb D.
+z\in\DD.
 $$
 
 
@@ -163,7 +163,7 @@ Therefore there is a real number $\theta$ such that
 $$
 g(z)=e^{i\theta}z
 $$
-for every $z\in\mathbb D$.
+for every $z\in\DD$.
 
 
 ::: pf-proof
@@ -188,7 +188,7 @@ In fact,
 $$
 \boxed{g(z)=z}
 $$
-for every $z\in\mathbb D$.
+for every $z\in\DD$.
 
 
 ::: pf-proof
@@ -221,7 +221,7 @@ Therefore
 $$
 \boxed{f(z)=z}
 $$
-for every $z\in\mathbb D$.
+for every $z\in\DD$.
 
 
 ::: pf-proof
@@ -232,13 +232,13 @@ g
 =
 \phi_p\circ f\circ\phi_p^{-1}.
 $$
-Step [](#p1-s1-6){.pf-ref} says $g=\operatorname{id}_{\mathbb D}$. Conjugating by $\phi_p^{-1}$ gives
+Step [](#p1-s1-6){.pf-ref} says $g=\operatorname{id}_{\DD}$. Conjugating by $\phi_p^{-1}$ gives
 $$
 f
 =
 \phi_p^{-1}\circ g\circ\phi_p
 =
-\operatorname{id}_{\mathbb D}.
+\operatorname{id}_{\DD}.
 $$
 
 :::
@@ -272,7 +272,7 @@ $$
 
 The map
 $$
-g:\mathbb D\to\mathbb D
+g:\DD\to\DD
 $$
 is holomorphic and satisfies
 $$
@@ -349,7 +349,7 @@ $$
 $$
 for every
 $$
-w\in\mathbb D.
+w\in\DD.
 $$
 
 
@@ -408,7 +408,7 @@ In fact
 $$
 \boxed{g(w)=w}
 $$
-for every $w\in\mathbb D$.
+for every $w\in\DD$.
 
 
 ::: pf-proof
@@ -437,7 +437,7 @@ Therefore
 $$
 \boxed{f(z)=z}
 $$
-for every $z\in\mathbb D$.
+for every $z\in\DD$.
 
 
 ::: pf-proof
@@ -454,7 +454,7 @@ f
 =
 \phi_p^{-1}\circ g\circ\phi_p
 =
-\operatorname{id}_{\mathbb D}.
+\operatorname{id}_{\DD}.
 $$
 
 :::

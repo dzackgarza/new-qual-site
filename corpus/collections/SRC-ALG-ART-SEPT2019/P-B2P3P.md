@@ -23,7 +23,7 @@ a. Let $T: V \to V$ be a linear transformation with characteristic polynomial $(
     ii. Write down the matrix which represents $T$ in rational normal form.
 b. Instead, let $T: V \to V$ be a *nilpotent* linear transformation which has exactly one 2-dimensional invariant subspace.
     i. How many similarity classes of such linear maps $T$ are there?
-    ii. Assuming finally that $F$ is the finite field $\mathbb{F}_q$ with $q$ elements, find an explicit formula for the number of such linear maps $T$.
+    ii. Assuming finally that $F$ is the finite field $\FF_q$ with $q$ elements, find an explicit formula for the number of such linear maps $T$.
 :::
 
 ::: {.solution}
@@ -39,7 +39,7 @@ A nilpotent $T$ is similar to a sum of Jordan blocks with eigenvalue $0$, one fo
 - For the partition $4+1$, with blocks $e_1,\ldots,e_4$ and $f$, both $\ker T=\langle e_1,f\rangle$ and $\langle e_1,e_2\rangle$ are invariant.
 - For the partition $3+2$, with blocks $e_1,e_2,e_3$ and $f_1,f_2$, both $\langle e_1,e_2\rangle$ and $\langle f_1,f_2\rangle$ are invariant.
 
-**(b) ii.** The orbit size equals the index of the centralizer in $GL_5(\mathbb{F}_q)$.
+**(b) ii.** The orbit size equals the index of the centralizer in $GL_5(\FF_q)$.
 The centralizer of a regular nilpotent (single Jordan block) consists of invertible matrices of the form $$\begin{pmatrix} a&b&c&d&e\\ &a&b&c&d\\ &&a&b&c\\ &&&a&b\\ &&&&a \end{pmatrix}$$ which has order $(q-1)q^4$.
-Since $|GL_5(\mathbb{F}_q)| = q^{10}(q^5-1)(q^4-1)(q^3-1)(q^2-1)(q-1)$, the number of such linear maps $T$ is $$\frac{q^{10}(q^5-1)(q^4-1)(q^3-1)(q^2-1)(q-1)}{(q-1)q^4} = q^6(q^5-1)(q^4-1)(q^3-1)(q^2-1)$$
+Since $|GL_5(\FF_q)| = q^{10}(q^5-1)(q^4-1)(q^3-1)(q^2-1)(q-1)$, the number of such linear maps $T$ is $$\frac{q^{10}(q^5-1)(q^4-1)(q^3-1)(q^2-1)(q-1)}{(q-1)q^4} = q^6(q^5-1)(q^4-1)(q^3-1)(q^2-1)$$
 :::

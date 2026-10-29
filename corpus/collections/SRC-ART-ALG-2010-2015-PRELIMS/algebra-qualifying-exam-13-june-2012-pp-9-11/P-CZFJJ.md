@@ -33,8 +33,8 @@ Do the same for the quotient ring $\ZZ[x]/J$ where $J = (2, x^3 + 3x^2 - x + 4)$
 :::
 
 ::: {.solution}
-The two rings are respectively $\mathbb F_4$ and
-$\mathbb F_2\times\mathbb F_4$.
+The two rings are respectively $\FF_4$ and
+$\FF_2\times\FF_4$.
 
 ::: pf
 
@@ -42,14 +42,14 @@ $\mathbb F_2\times\mathbb F_4$.
 
 Reduction modulo $2$ gives
 $$
-\ZZ[x]/I\cong\mathbb F_2[x]/(q),\qquad
-\ZZ[x]/J\cong\mathbb F_2[x]/(xq),
+\ZZ[x]/I\cong\FF_2[x]/(q),\qquad
+\ZZ[x]/J\cong\FF_2[x]/(xq),
 \qquad q=x^2+x+1.
 $$
 
 ::: pf-proof
 
-Coefficient reduction $\ZZ[x]\to\mathbb F_2[x]$ is
+Coefficient reduction $\ZZ[x]\to\FF_2[x]$ is
 surjective and has kernel $(2)$. For any $f\in\ZZ[x]$,
 the inverse image of $(\overline f)$ is $(2,f)$: if
 $\overline h=\overline f\,\overline a$, lift $\overline a$
@@ -67,7 +67,7 @@ $x^3+x^2+x=xq$, respectively.
 
 The first ring is the field
 $$
-E=\mathbb F_2[\alpha],\qquad
+E=\FF_2[\alpha],\qquad
 \alpha^2=\alpha+1,
 \qquad E=\{0,1,\alpha,1+\alpha\}.
 $$
@@ -77,8 +77,8 @@ $$
 The polynomial $q$ has neither $0$ nor $1$ as a root. A
 reducible quadratic over a field has a linear factor and hence
 a root, so $q$ is irreducible. Polynomial division gives
-unique representatives $a+bx$, with $a,b\in\mathbb F_2$,
-in $\mathbb F_2[x]/(q)$. Let $\alpha$ be the class of $x$.
+unique representatives $a+bx$, with $a,b\in\FF_2$,
+in $\FF_2[x]/(q)$. Let $\alpha$ be the class of $x$.
 Its defining relation is $\alpha^2=\alpha+1$, and
 $\alpha^3=\alpha(\alpha+1)=1$.
 The three nonzero elements are $1,\alpha,\alpha^2$ and
@@ -98,14 +98,14 @@ $e(e-1)=0$ in a field; it has no nonzero zero divisors or nilpotents.
 
 ::: {.pf-step #s3}
 
-The second ring $B=\mathbb F_2[x]/(xq)$ is explicitly
-isomorphic to $\mathbb F_2\times E$.
+The second ring $B=\FF_2[x]/(xq)$ is explicitly
+isomorphic to $\FF_2\times E$.
 
 ::: pf-proof
 
 Define
 $$
-\Theta:B\longrightarrow\mathbb F_2\times E,
+\Theta:B\longrightarrow\FF_2\times E,
 \qquad [h(x)]\longmapsto(h(0),h(\alpha)).
 $$
 Both evaluations are ring homomorphisms, and $xq$ vanishes
@@ -121,13 +121,13 @@ $$
 e_0=[q],\qquad e_1=[x^2+x].
 $$
 Then $\Theta(e_0)=(1,0)$ and $\Theta(e_1)=(0,1)$.
-For $a,b,c\in\mathbb F_2$, the element
+For $a,b,c\in\FF_2$, the element
 $$
 a e_0+(b+c[x])e_1
 $$
 maps to $(a,b+c\alpha)$. This proves surjectivity and
 gives the inverse on every element of the product.
-Consequently $B\cong\mathbb F_2\times E$ as rings.
+Consequently $B\cong\FF_2\times E$ as rings.
 
 :::
 
@@ -141,8 +141,8 @@ The product description determines the remaining ring structure.
 
 The ring $B$ has eight elements, characteristic $2$, and
 additive group $C_2^3$. Equivalently, polynomial division
-gives the basis $1,[x],[x^2]$ over $\mathbb F_2$.
-A pair $(a,b)\in\mathbb F_2\times E$ is a unit exactly
+gives the basis $1,[x],[x^2]$ over $\FF_2$.
+A pair $(a,b)\in\FF_2\times E$ is a unit exactly
 when $a=1$ and $b\ne0$, so $B^\times\cong E^\times\cong C_3$.
 A nonzero pair is a zero divisor exactly when at least one
 component is zero: multiply by a nonzero pair supported
@@ -159,7 +159,7 @@ $$
 (0),\quad (e_0),\quad(e_1),\quad B.
 $$
 The middle two are maximal, with quotients $E$ and
-$\mathbb F_2$, respectively, and are the only prime ideals:
+$\FF_2$, respectively, and are the only prime ideals:
 the zero ideal is not prime because $e_0e_1=0$ with both
 factors nonzero. Hence $B$ is neither a field nor a domain
 nor a local ring, and $J$ is neither prime nor maximal.

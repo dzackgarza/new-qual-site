@@ -173,7 +173,7 @@ The quotient
 \[
 E/\langle\sigma_a\rangle
 \]
-has genus $0$ and hence is isomorphic to $\mathbb{CP}^1$.
+has genus $0$ and hence is isomorphic to $\CP^1$.
 
 ::: pf-proof
 The quotient map has degree $2$.  By step [](#sigma-fixed-points){.pf-ref} it is simply ramified at four points, so the total ramification contribution in Riemann--Hurwitz is $4$.  If the quotient has genus $g'$, then
@@ -187,14 +187,14 @@ Since $g(E)=1$,
 \]
 hence $g'=0$.  Every compact Riemann surface of genus $0$ is biholomorphic to the Riemann sphere
 \[
-\widehat{\CC}=\mathbb{CP}^1.
+\widehat{\CC}=\CP^1.
 \]
 :::
 
 :::
 
 ::: {.pf-step #explicit-cp1-identification}
-The quotient in step [](#sigma-quotient-genus-zero){.pf-ref} can also be identified explicitly with $\mathbb{CP}^1$.
+The quotient in step [](#sigma-quotient-genus-zero){.pf-ref} can also be identified explicitly with $\CP^1$.
 
 ::: pf-proof
 Choose $b\in E$ with
@@ -222,7 +222,7 @@ The group inverse is
 \]
 The $x$-coordinate therefore defines a degree-two map
 \[
-E\longrightarrow\mathbb{CP}^1
+E\longrightarrow\CP^1
 \]
 whose generic fibre is the pair
 \[
@@ -230,7 +230,7 @@ whose generic fibre is the pair
 \]
 Hence its fibres are precisely the orbits of the involution, so it is the quotient map
 \[
-E\longrightarrow E/\{\pm1\}\cong\mathbb{CP}^1.
+E\longrightarrow E/\{\pm1\}\cong\CP^1.
 \]
 Its four branch points are the four fixed points $E[2]$ of negation.
 :::
@@ -238,7 +238,7 @@ Its four branch points are the four fixed points $E[2]$ of negation.
 :::
 
 ::: pf-qed
-Step [](#involution-classification){.pf-ref} classifies the involutions, steps [](#translation-involution-quotient){.pf-ref} and [](#sigma-fixed-points){.pf-ref} identify their fixed-point behaviour, and steps [](#sigma-quotient-genus-zero){.pf-ref} and [](#explicit-cp1-identification){.pf-ref} identify the quotient arising from the fixed-point involution with $\mathbb{CP}^1$.
+Step [](#involution-classification){.pf-ref} classifies the involutions, steps [](#translation-involution-quotient){.pf-ref} and [](#sigma-fixed-points){.pf-ref} identify their fixed-point behaviour, and steps [](#sigma-quotient-genus-zero){.pf-ref} and [](#explicit-cp1-identification){.pf-ref} identify the quotient arising from the fixed-point involution with $\CP^1$.
 :::
 
 :::

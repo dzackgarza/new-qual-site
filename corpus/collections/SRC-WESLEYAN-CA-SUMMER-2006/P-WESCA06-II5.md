@@ -38,7 +38,7 @@ h(z)
 The function $h$ is holomorphic on a neighborhood of the closed unit
 disk
 \[
-\overline{\mathbb D}.
+\overline{\DD}.
 \]
 
 
@@ -75,7 +75,7 @@ h(z)=\Log(z+e)
 \]
 is holomorphic on a neighborhood of
 \[
-\overline{\mathbb D}.
+\overline{\DD}.
 \]
 
 :::

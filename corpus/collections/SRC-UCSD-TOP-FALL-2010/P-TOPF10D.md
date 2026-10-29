@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $X$ be a space whose integral homology groups are $\ZZ$, $0$, $\ZZ_8$ in dimensions $0$, $1$, $2$, and zero otherwise.
-Compute the integral homology groups of $X \times \mathbb{RP}^3$.
+Compute the integral homology groups of $X \times \RP^3$.
 :::
 
 ::: {.solution}
@@ -31,12 +31,12 @@ H_0(X)=\ZZ,\quad H_2(X)=\ZZ/8,
 $$
 and
 $$
-H_0(\mathbb{RP}^3)=\ZZ,\quad H_1(\mathbb{RP}^3)=\ZZ/2,\quad H_3(\mathbb{RP}^3)=\ZZ.
+H_0(\RP^3)=\ZZ,\quad H_1(\RP^3)=\ZZ/2,\quad H_3(\RP^3)=\ZZ.
 $$
 
 ::: pf-proof
 
-The groups for $X$ are the hypothesis; those for $\mathbb{RP}^3$ are the standard cellular homology groups.
+The groups for $X$ are the hypothesis; those for $\RP^3$ are the standard cellular homology groups.
 
 :::
 
@@ -74,7 +74,7 @@ which occurs in degree $4$.
 
 ::: pf-proof
 
-A Tor term $\operatorname{Tor}(H_i(X),H_j(\mathbb{RP}^3))$ contributes to total degree $i+j+1$. The only pair of torsion groups is $(i,j)=(2,1)$.
+A Tor term $\operatorname{Tor}(H_i(X),H_j(\RP^3))$ contributes to total degree $i+j+1$. The only pair of torsion groups is $(i,j)=(2,1)$.
 
 :::
 
@@ -84,7 +84,7 @@ A Tor term $\operatorname{Tor}(H_i(X),H_j(\mathbb{RP}^3))$ contributes to total 
 
 Therefore
 $$
-\boxed{H_n(X\times\mathbb{RP}^3;\ZZ)\cong
+\boxed{H_n(X\times\RP^3;\ZZ)\cong
 \begin{cases}
 \ZZ,&n=0,\\
 \ZZ/2,&n=1,4,\\

@@ -63,9 +63,9 @@ to the hypothesis.
 the intersection of two convex disks, hence convex. By the Riemann mapping
 theorem choose a biholomorphism
 \[
-\phi:G\to\mathbb D.
+\phi:G\to\DD.
 \]
-The automorphism group of $\mathbb D$ acts transitively. Thus there is a disk
+The automorphism group of $\DD$ acts transitively. Thus there is a disk
 automorphism $T$ with $T(\phi(a))=\phi(b)$, and
 \[
 \phi^{-1}\circ T\circ\phi

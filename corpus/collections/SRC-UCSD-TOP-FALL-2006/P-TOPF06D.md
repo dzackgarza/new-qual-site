@@ -16,10 +16,10 @@ review: draft
 ---
 
 ::: {.problem}
-Assume that $\mathbb{RP}^n$ can be covered by $k$ contractible closed subsets.
+Assume that $\RP^n$ can be covered by $k$ contractible closed subsets.
 Prove that $k > n$.
 
-Hint: Use the mod $2$ cohomology ring structure of $\mathbb{RP}^n$ and the fact that the degree $1$ generator restricts to zero on any contractible subset.
+Hint: Use the mod $2$ cohomology ring structure of $\RP^n$ and the fact that the degree $1$ generator restricts to zero on any contractible subset.
 :::
 
 ::: {.solution}
@@ -28,9 +28,9 @@ Hint: Use the mod $2$ cohomology ring structure of $\mathbb{RP}^n$ and the fact 
 
 ::: {.pf-step #s1}
 
-Let $a\in H^1(\mathbb{RP}^n;\mathbb F_2)$ be the standard generator. Then
+Let $a\in H^1(\RP^n;\FF_2)$ be the standard generator. Then
 $$
-H^*(\mathbb{RP}^n;\mathbb F_2)\cong\mathbb F_2[a]/(a^{n+1}),
+H^*(\RP^n;\FF_2)\cong\FF_2[a]/(a^{n+1}),
 $$
 so $a^n\ne0$.
 
@@ -44,7 +44,7 @@ This is the standard mod-$2$ cohomology ring of real projective space.
 
 ::: {.pf-step #s2}
 
-If $A\subset\mathbb{RP}^n$ is contractible, then $a|_A=0$.
+If $A\subset\RP^n$ is contractible, then $a|_A=0$.
 
 ::: pf-proof
 
@@ -75,7 +75,7 @@ and maps to the absolute product.
 
 ::: {.pf-step #s4}
 
-If $\mathbb{RP}^n$ were covered by $k\le n$ contractible closed subsets, then $a^k=0$.
+If $\RP^n$ were covered by $k\le n$ contractible closed subsets, then $a^k=0$.
 
 ::: pf-proof
 

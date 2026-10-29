@@ -67,7 +67,7 @@ then partitions them by exact order; hence the roots of $\Phi_m$ are precisely t
 
 ::: {.pf-step #s1-2}
 
-Assume $k>0$. In $\mathbb F_p[X]$ one has
+Assume $k>0$. In $\FF_p[X]$ one has
 \[
 X^{mp^k}-1=(X^m-1)^{p^k}.
 \]

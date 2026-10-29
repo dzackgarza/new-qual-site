@@ -17,32 +17,32 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Let $f:\mathbb D\to\CC$ be an injective holomorphic function with $f(0)=0$ and $f'(0)=1$. Show that
+Problem 11. Let $f:\DD\to\CC$ be an injective holomorphic function with $f(0)=0$ and $f'(0)=1$. Show that
 \[
-\inf\{|w|:w\notin f(\mathbb D)\}\le1,
+\inf\{|w|:w\notin f(\DD)\}\le1,
 \]
-with equality if and only if $f(z)=z$ for all $z\in\mathbb D$.
+with equality if and only if $f(z)=z$ for all $z\in\DD$.
 :::
 
 ::: {.solution}
 
 Set
 \[
-R\coloneqq\inf\{|w|:w\notin f(\mathbb D)\}.
+R\coloneqq\inf\{|w|:w\notin f(\DD)\}.
 \]
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-The omitted set $\CC\setminus f(\mathbb D)$ is nonempty; moreover, if $R\ge1$, then $\mathbb D\subset f(\mathbb D)$.
+The omitted set $\CC\setminus f(\DD)$ is nonempty; moreover, if $R\ge1$, then $\DD\subset f(\DD)$.
 
 
 ::: pf-proof
 
-If $f(\mathbb D)=\CC$, then the inverse map $f^{-1}:\CC\to\mathbb D$ is an entire bounded function. Liouville's theorem would make $f^{-1}$ constant, contradicting injectivity of $f$. Thus the omitted set is nonempty and $R$ is a finite real number.
+If $f(\DD)=\CC$, then the inverse map $f^{-1}:\CC\to\DD$ is an entire bounded function. Liouville's theorem would make $f^{-1}$ constant, contradicting injectivity of $f$. Thus the omitted set is nonempty and $R$ is a finite real number.
 
-If some $w\in\mathbb D$ were omitted by $f$, then $|w|<1$, so the definition of $R$ would give
+If some $w\in\DD$ were omitted by $f$, then $|w|<1$, so the definition of $R$ would give
 \[
 R\le |w|<1,
 \]
@@ -54,14 +54,14 @@ contrary to $R\ge1$.
 
 ::: {.pf-step #s1-2}
 
-If $R\ge1$, then $f(z)=z$ for every $z\in\mathbb D$.
+If $R\ge1$, then $f(z)=z$ for every $z\in\DD$.
 
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref}, the inverse of the injective holomorphic map $f$ is defined on $\mathbb D$. Let
+By step [](#s1-1){.pf-ref}, the inverse of the injective holomorphic map $f$ is defined on $\DD$. Let
 \[
-g\coloneqq f^{-1}|_{\mathbb D}:\mathbb D\to\mathbb D.
+g\coloneqq f^{-1}|_{\DD}:\DD\to\DD.
 \]
 Since an injective holomorphic function has nonvanishing derivative, its inverse is holomorphic. Moreover,
 \[
@@ -69,7 +69,7 @@ g(0)=0,
 \qquad
 g'(0)=\frac1{f'(0)}=1.
 \]
-Schwarz's lemma, including its equality case, therefore gives $g(z)=z$ for every $z\in\mathbb D$. Thus for every $w\in\mathbb D$,
+Schwarz's lemma, including its equality case, therefore gives $g(z)=z$ for every $z\in\DD$. Thus for every $w\in\DD$,
 \[
 f^{-1}(w)=w,
 \]
@@ -89,11 +89,11 @@ R\le1.
 
 ::: pf-proof
 
-If $R>1$, then step [](#s1-2){.pf-ref} gives $f(z)=z$ on $\mathbb D$. But then $f(\mathbb D)=\mathbb D$, so
+If $R>1$, then step [](#s1-2){.pf-ref} gives $f(z)=z$ on $\DD$. But then $f(\DD)=\DD$, so
 \[
 R
 =
-\inf\{|w|:w\notin\mathbb D\}
+\inf\{|w|:w\notin\DD\}
 =1,
 \]
 a contradiction. Hence $R\le1$.
@@ -104,12 +104,12 @@ a contradiction. Hence $R\le1$.
 
 ::: {.pf-step #s1-4}
 
-The equality $R=1$ holds if and only if $f(z)=z$ for every $z\in\mathbb D$.
+The equality $R=1$ holds if and only if $f(z)=z$ for every $z\in\DD$.
 
 
 ::: pf-proof
 
-If $R=1$, then $R\ge1$, so step [](#s1-2){.pf-ref} gives $f(z)=z$. Conversely, if $f(z)=z$, then $f(\mathbb D)=\mathbb D$, and therefore
+If $R=1$, then $R\ge1$, so step [](#s1-2){.pf-ref} gives $f(z)=z$. Conversely, if $f(z)=z$, then $f(\DD)=\DD$, and therefore
 \[
 R
 =

@@ -18,7 +18,7 @@ Show that there exists $a \in \CC$ and $n \geq 0$ such that $f(z) = az^n$.
 :::
 
 ::: {.solution}
-The zeros of $f$ in $\mathbb D$ are finite in number, since $f$ has no zeros
+The zeros of $f$ in $\DD$ are finite in number, since $f$ has no zeros
 on $|z|=1$. Let $a_1,\dots,a_m$ be those zeros with multiplicity and form the
 finite Blaschke product
 \[

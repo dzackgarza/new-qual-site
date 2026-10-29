@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF19F
 kind: problem
-title: Irreducible factors of $x^{p^\ell} - x$ over $\mathbb{F}_p$; count of degree $\ell$
+title: Irreducible factors of $x^{p^\ell} - x$ over $\FF_p$; count of degree $\ell$
 classification:
   areas:
   - algebra
@@ -26,20 +26,20 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $\ell$ and $p$ are prime and $\mathbb{F}_p$ is a finite field of order $p$.
+Suppose $\ell$ and $p$ are prime and $\FF_p$ is a finite field of order $p$.
 
 (a) Prove that the degree of an irreducible factor of $x^{p^\ell} - x$ is either $1$ or $\ell$.
 
-(b) Suppose $f(x) \in \mathbb{F}_p[x]$ is a monic irreducible polynomial of degree $\ell$.
+(b) Suppose $f(x) \in \FF_p[x]$ is a monic irreducible polynomial of degree $\ell$.
 Prove that $f(x) \mid (x^{p^\ell} - x)$.
 
-(c) Prove that there are exactly $\dfrac{p^\ell - p}{\ell}$ many monic irreducible polynomials of degree $\ell$ in $\mathbb{F}_p[x]$.
+(c) Prove that there are exactly $\dfrac{p^\ell - p}{\ell}$ many monic irreducible polynomials of degree $\ell$ in $\FF_p[x]$.
 :::
 
 ::: {.solution}
 Set
 \[
-g(x)=x^{p^\ell}-x\in\mathbb F_p[x].
+g(x)=x^{p^\ell}-x\in\FF_p[x].
 \]
 
 ::: pf
@@ -56,7 +56,7 @@ In characteristic $p$, the Frobenius map satisfies
 \]
 Hence the set
 \[
-K:=\{u\in\overline{\mathbb F}_p:u^{p^\ell}=u\}
+K:=\{u\in\overline{\FF}_p:u^{p^\ell}=u\}
 \]
 is closed under addition, subtraction, and multiplication. If $u\in K$ is nonzero, then
 \[
@@ -72,7 +72,7 @@ Thus $g$ has no repeated roots. Since $g$ splits in the algebraic closure and ha
 \[
 |K|=p^\ell,
 \qquad
-[K:\mathbb F_p]=\ell.
+[K:\FF_p]=\ell.
 \]
 
 :::
@@ -85,23 +85,23 @@ Every irreducible factor of $g$ has degree $1$ or $\ell$.
 
 ::: pf-proof
 
-Let $h(x)\in\mathbb F_p[x]$ be an irreducible factor of $g$, and let $\alpha$ be a root of $h$ in $\overline{\mathbb F}_p$. Since $h\mid g$,
+Let $h(x)\in\FF_p[x]$ be an irreducible factor of $g$, and let $\alpha$ be a root of $h$ in $\overline{\FF}_p$. Since $h\mid g$,
 \[
 \alpha^{p^\ell}=\alpha,
 \]
 so $\alpha\in K$ by step [](#s1){.pf-ref}.
 
-Because $h$ is the minimal polynomial of $\alpha$ over $\mathbb F_p$,
+Because $h$ is the minimal polynomial of $\alpha$ over $\FF_p$,
 \[
-\deg h=[\mathbb F_p(\alpha):\mathbb F_p].
+\deg h=[\FF_p(\alpha):\FF_p].
 \]
 The tower
 \[
-\mathbb F_p\subseteq\mathbb F_p(\alpha)\subseteq K
+\FF_p\subseteq\FF_p(\alpha)\subseteq K
 \]
 shows that $\deg h$ divides
 \[
-[K:\mathbb F_p]=\ell.
+[K:\FF_p]=\ell.
 \]
 Since $\ell$ is prime,
 \[
@@ -119,9 +119,9 @@ Every monic irreducible polynomial of degree $\ell$ divides $g$.
 
 ::: pf-proof
 
-Let $f(x)\in\mathbb F_p[x]$ be monic and irreducible of degree $\ell$, and put
+Let $f(x)\in\FF_p[x]$ be monic and irreducible of degree $\ell$, and put
 \[
-L=\mathbb F_p[x]/(f).
+L=\FF_p[x]/(f).
 \]
 Then $L$ is a field with
 \[
@@ -137,7 +137,7 @@ Let $\alpha$ be the residue class of $x$ in $L$. Then
 \[
 \alpha^{p^\ell}-\alpha=0.
 \]
-Since $f$ is the minimal polynomial of $\alpha$ over $\mathbb F_p$, it follows that
+Since $f$ is the minimal polynomial of $\alpha$ over $\FF_p$, it follows that
 \[
 f(x)\mid x^{p^\ell}-x.
 \]
@@ -153,11 +153,11 @@ The polynomial $g$ has exactly $p$ monic linear factors, each with multiplicity 
 
 ::: pf-proof
 
-Every $a\in\mathbb F_p$ satisfies $a^p=a$, and iterating Frobenius gives
+Every $a\in\FF_p$ satisfies $a^p=a$, and iterating Frobenius gives
 \[
 a^{p^\ell}=a.
 \]
-Thus each $x-a$ divides $g$. These are the $p$ monic linear polynomials over $\mathbb F_p$.
+Thus each $x-a$ divides $g$. These are the $p$ monic linear polynomials over $\FF_p$.
 
 By step [](#s1){.pf-ref}, $g'(x)=-1$, so $g$ is squarefree. Hence each of these linear factors occurs exactly once.
 
@@ -171,7 +171,7 @@ There are exactly
 \[
 \frac{p^\ell-p}{\ell}
 \]
-monic irreducible polynomials of degree $\ell$ over $\mathbb F_p$.
+monic irreducible polynomials of degree $\ell$ over $\FF_p$.
 
 ::: pf-proof
 

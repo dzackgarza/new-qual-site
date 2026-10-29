@@ -29,17 +29,17 @@ W(z)=i\frac{1+z}{1-z}.
 
 ::: {.pf-step #s1-1}
 
-The map \(W\) is a biholomorphism from the unit disk \(\mathbb D\) onto the upper half-plane \(\mathbb H\).
+The map \(W\) is a biholomorphism from the unit disk \(\DD\) onto the upper half-plane \(\mathbb H\).
 
 
 ::: pf-proof
 
-For \(z\in\mathbb D\), direct calculation gives
+For \(z\in\DD\), direct calculation gives
 \[
 \operatorname{Im}W(z)
 =\frac{1-|z|^2}{|1-z|^2}>0,
 \]
-so \(W(\mathbb D)\subseteq\mathbb H\). Solving \(w=W(z)\) gives
+so \(W(\DD)\subseteq\mathbb H\). Solving \(w=W(z)\) gives
 \[
 z=\frac{w-i}{w+i}.
 \]
@@ -47,7 +47,7 @@ If \(\operatorname{Im}w>0\), then
 \[
 |w+i|^2-|w-i|^2=4\operatorname{Im}w>0,
 \]
-so the inverse satisfies \(|z|<1\). Thus \(W\) is bijective between \(\mathbb D\) and \(\mathbb H\), and both \(W\) and its inverse are holomorphic there.
+so the inverse satisfies \(|z|<1\). Thus \(W\) is bijective between \(\DD\) and \(\mathbb H\), and both \(W\) and its inverse are holomorphic there.
 
 :::
 
@@ -59,7 +59,7 @@ With the branch \(0<\operatorname{Arg}w<\pi\) on \(\mathbb H\), the function
 \[
 \phi(z)=\frac1\pi\operatorname{Arg}W(z)
 \]
-is harmonic on \(\mathbb D\).
+is harmonic on \(\DD\).
 
 
 ::: pf-proof
@@ -69,7 +69,7 @@ On \(\mathbb H\), choose the holomorphic branch
 \operatorname{Log}w=\log|w|+i\operatorname{Arg}w,
 \qquad 0<\operatorname{Arg}w<\pi.
 \]
-By step [](#s1-1){.pf-ref}, \(\operatorname{Log}W(z)\) is holomorphic on \(\mathbb D\). The imaginary part of a holomorphic function is harmonic: the Cauchy--Riemann equations imply its Laplacian is zero. Therefore
+By step [](#s1-1){.pf-ref}, \(\operatorname{Log}W(z)\) is holomorphic on \(\DD\). The imaginary part of a holomorphic function is harmonic: the Cauchy--Riemann equations imply its Laplacian is zero. Therefore
 \[
 \phi(z)=\frac1\pi\operatorname{Im}(\operatorname{Log}W(z))
 \]

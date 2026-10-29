@@ -15,8 +15,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $q : S^3 \to \mathbb{RP}^3$ be the usual quotient map which identifies antipodal points.
-It can be used to attach a $4$-ball to $\mathbb{RP}^3$, forming a space $X = \mathbb{RP}^3 \cup_q B^4$.
+Let $q : S^3 \to \RP^3$ be the usual quotient map which identifies antipodal points.
+It can be used to attach a $4$-ball to $\RP^3$, forming a space $X = \RP^3 \cup_q B^4$.
 Compute $\pi_4(X)$.
 :::
 
@@ -25,13 +25,13 @@ Compute $\pi_4(X)$.
 ::: pf
 
 ::: {.pf-step #rp4-cw-structure}
-The standard CW construction of $\mathbb{RP}^4$ is obtained from $\mathbb{RP}^3$ by attaching a $4$-cell via the antipodal quotient
+The standard CW construction of $\RP^4$ is obtained from $\RP^3$ by attaching a $4$-cell via the antipodal quotient
 $$
-q:S^3\to\mathbb{RP}^3.
+q:S^3\to\RP^3.
 $$
 
 ::: pf-proof
-In the usual CW structure on real projective space, the characteristic map of the top cell descends from a hemisphere of $S^4$, and its boundary attaching map is exactly the double covering $S^3\to\mathbb{RP}^3$.
+In the usual CW structure on real projective space, the characteristic map of the top cell descends from a hemisphere of $S^4$, and its boundary attaching map is exactly the double covering $S^3\to\RP^3$.
 :::
 
 :::
@@ -39,7 +39,7 @@ In the usual CW structure on real projective space, the characteristic map of th
 ::: pf-step
 Hence the given space is
 $$
-X\cong\mathbb{RP}^4.
+X\cong\RP^4.
 $$
 
 ::: pf-proof
@@ -49,7 +49,7 @@ It has precisely the standard cell attachment described in step [](#rp4-cw-struc
 :::
 
 ::: pf-step
-The universal covering map $S^4\to\mathbb{RP}^4$ induces an isomorphism on $\pi_4$.
+The universal covering map $S^4\to\RP^4$ induces an isomorphism on $\pi_4$.
 
 ::: pf-proof
 Covering maps induce isomorphisms on all homotopy groups in degrees at least $2$.

@@ -25,8 +25,8 @@ audit:
 ---
 
 ::: {.problem}
-(1) Show that any self-homotopy equivalence $f: \mathbb{CP}^{2n} \to \mathbb{CP}^{2n}$ is orientation-preserving, i.e. has degree $+1$.
-(2) Is this necessarily true for $\mathbb{CP}^{2n+1}$?
+(1) Show that any self-homotopy equivalence $f: \CP^{2n} \to \CP^{2n}$ is orientation-preserving, i.e. has degree $+1$.
+(2) Is this necessarily true for $\CP^{2n+1}$?
 :::
 
 ::: {.solution}
@@ -36,15 +36,15 @@ audit:
 ::: pf-step
 For every $m\ge1$,
 $$
-H^*(\mathbb{CP}^m;\ZZ)
+H^*(\CP^m;\ZZ)
 \cong \ZZ[x]/(x^{m+1}),
 \qquad |x|=2,
 $$
-and $x^m$ generates the top cohomology $H^{2m}(\mathbb{CP}^m;\ZZ)$.
+and $x^m$ generates the top cohomology $H^{2m}(\CP^m;\ZZ)$.
 :::
 
 ::: pf-step
-Let $f:\mathbb{CP}^m\to\mathbb{CP}^m$ be a homotopy equivalence.
+Let $f:\CP^m\to\CP^m$ be a homotopy equivalence.
 
 ::: pf-proof
 
@@ -75,11 +75,11 @@ For $m=2n$, the exponent is even, so
 $$
 \deg(f)=\varepsilon^{2n}=1.
 $$
-Thus every self-homotopy equivalence of $\mathbb{CP}^{2n}$ preserves orientation.
+Thus every self-homotopy equivalence of $\CP^{2n}$ preserves orientation.
 :::
 
 ::: pf-step
-The analogous statement is false for $\mathbb{CP}^{2n+1}$.
+The analogous statement is false for $\CP^{2n+1}$.
 
 ::: pf-proof
 

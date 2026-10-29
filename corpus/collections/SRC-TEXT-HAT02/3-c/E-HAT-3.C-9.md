@@ -50,17 +50,17 @@ P_{\QQ}(-1)=\prod_{i=1}^r(1+(-1)^{|x_i|})=0,
 \]
 so $\chi(X)=0$.
 
-It remains to rule out $r=0$ under the hypothesis $\widetilde H_*(X;\ZZ)\ne0$. If $r=0$, then $H^*(X;\QQ)=\QQ$, so $\chi(X)=1$ and all positive-dimensional integral homology is torsion. Choose a prime $p$ for which $\widetilde H^*(X;\mathbb F_p)\ne0$; such a prime exists by the universal coefficient theorem.
+It remains to rule out $r=0$ under the hypothesis $\widetilde H_*(X;\ZZ)\ne0$. If $r=0$, then $H^*(X;\QQ)=\QQ$, so $\chi(X)=1$ and all positive-dimensional integral homology is torsion. Choose a prime $p$ for which $\widetilde H^*(X;\FF_p)\ne0$; such a prime exists by the universal coefficient theorem.
 
-Borel's theorem expresses the finite-dimensional Hopf algebra $H^*(X;\mathbb F_p)$ as a tensor product of single-generator factors, each either an exterior algebra on an odd-dimensional generator or a truncated polynomial algebra
+Borel's theorem expresses the finite-dimensional Hopf algebra $H^*(X;\FF_p)$ as a tensor product of single-generator factors, each either an exterior algebra on an odd-dimensional generator or a truncated polynomial algebra
 \[
-\mathbb F_p[y]/(y^{p^k})
+\FF_p[y]/(y^{p^k})
 \]
 with $|y|$ even when $p$ is odd. If an exterior factor occurs, its Poincare polynomial vanishes at $-1$, giving $\chi(X)=0$, contradicting $\chi(X)=1$. If there are no exterior factors, every nontrivial truncated factor contributes
 \[
 1+1+\cdots+1=p^k
 \]
-to $P_{\mathbb F_p}(-1)$, so $\chi(X)$ is divisible by $p$, again contradicting $\chi(X)=1$. Therefore $r=0$ is impossible.
+to $P_{\FF_p}(-1)$, so $\chi(X)$ is divisible by $p$, again contradicting $\chi(X)=1$. Therefore $r=0$ is impossible.
 
 Hence necessarily
 \[

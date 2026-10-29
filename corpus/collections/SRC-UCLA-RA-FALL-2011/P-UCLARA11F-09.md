@@ -17,12 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f$ is holomorphic on the punctured unit disc $\mathbb D^*=\mathbb D\setminus\{0\}$ and
+Suppose $f$ is holomorphic on the punctured unit disc $\DD^*=\DD\setminus\{0\}$ and
 \[
-\int_{\mathbb D^*}|f(z)|^2\,dA(z)<\infty,
+\int_{\DD^*}|f(z)|^2\,dA(z)<\infty,
 \]
 where $dA$ is two-dimensional Lebesgue measure.
-Show that $f$ extends holomorphically to the unit disc $\mathbb D$.
+Show that $f$ extends holomorphically to the unit disc $\DD$.
 :::
 
 ::: {.solution}
@@ -117,7 +117,7 @@ Uniform convergence permits the usual Fourier/Parseval identity.
 
 In polar coordinates,
 \[
-\int_{\mathbb D^*}|f(z)|^2\,dA(z)
+\int_{\DD^*}|f(z)|^2\,dA(z)
 =
 \int_0^1
 \int_0^{2\pi}
@@ -141,7 +141,7 @@ dA=r\,dr\,d\theta.
 
 Using step [](#s1-3){.pf-ref},
 \[
-\int_{\mathbb D^*}|f|^2\,dA
+\int_{\DD^*}|f|^2\,dA
 =
 2\pi
 \int_0^1
@@ -165,7 +165,7 @@ Substitute the Parseval identity into step [](#s1-4){.pf-ref}.
 Since all summands are nonnegative, Tonelli's theorem gives
 \[
 \boxed{
-\int_{\mathbb D^*}|f|^2\,dA
+\int_{\DD^*}|f|^2\,dA
 =
 2\pi
 \sum_{k\in\ZZ}
@@ -323,7 +323,7 @@ The series is well-defined by step [](#s1-11){.pf-ref}.
 
 ::: {.pf-step #s1-13}
 
-The function \(\widetilde f\) is holomorphic on \(\mathbb D\).
+The function \(\widetilde f\) is holomorphic on \(\DD\).
 
 
 ::: pf-proof

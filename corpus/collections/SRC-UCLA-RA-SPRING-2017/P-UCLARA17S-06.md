@@ -19,15 +19,15 @@ audit:
 ::: {.problem}
 Let
 \[
-\mathbb D=\{z\in\CC:|z|<1\}
+\DD=\{z\in\CC:|z|<1\}
 \]
-be the open unit disk and let $\overline{\mathbb D}$ be the closed unit disk. Let $\{p_n\}$ be distinct points in $\mathbb D$, and let $r_n>0$ be such that the disks
+be the open unit disk and let $\overline{\DD}$ be the closed unit disk. Let $\{p_n\}$ be distinct points in $\DD$, and let $r_n>0$ be such that the disks
 \[
 D_n=\{z:|z-p_n|\le r_n\}
 \]
-satisfy (i) $D_n\subset\mathbb D$; (ii) $D_n\cap D_m=\varnothing$ if $n\ne m$; and (iii) $\sum_n r_n<\infty$. Prove that
+satisfy (i) $D_n\subset\DD$; (ii) $D_n\cap D_m=\varnothing$ if $n\ne m$; and (iii) $\sum_n r_n<\infty$. Prove that
 \[
-X=\overline{\mathbb D}\setminus\bigcup_n D_n
+X=\overline{\DD}\setminus\bigcup_n D_n
 \]
 has positive area.
 
@@ -71,7 +71,7 @@ $$
 &=\sum_{n=1}^{\infty}2r_n.
 \end{aligned}
 $$
-Here $[a_n-r_n,a_n+r_n]\subset(-1,1)$ because the closed disk $D_n$ is contained in the open unit disk $\mathbb D$.
+Here $[a_n-r_n,a_n+r_n]\subset(-1,1)$ because the closed disk $D_n$ is contained in the open unit disk $\DD$.
 
 :::
 
@@ -106,7 +106,7 @@ $$
 I_x=
 \left[-\sqrt{1-x^2},\sqrt{1-x^2}\right].
 $$
-Only the finitely many disks counted by $N(x)$ remove points from this interval. Each such section $D_n\cap\{\operatorname{Re}z=x\}$ is a compact interval, and because $D_n\subset\mathbb D$, it is contained in the interior of $I_x$.
+Only the finitely many disks counted by $N(x)$ remove points from this interval. Each such section $D_n\cap\{\operatorname{Re}z=x\}$ is a compact interval, and because $D_n\subset\DD$, it is contained in the interior of $I_x$.
 
 The union of finitely many such sections is therefore a compact subset of the open interval
 $$

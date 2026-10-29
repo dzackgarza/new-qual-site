@@ -110,13 +110,13 @@ Let \(\alpha\) be a root of
 \[
 f(x)=x^4-x-1\in\QQ[x],
 \]
-and put \(L=\QQ(\alpha)\). The reduction modulo \(2\) is \(x^4+x+1\), which is irreducible over \(\mathbb F_2\); hence \(f\) is irreducible over \(\QQ\), so \([L:\QQ]=4\).
+and put \(L=\QQ(\alpha)\). The reduction modulo \(2\) is \(x^4+x+1\), which is irreducible over \(\FF_2\); hence \(f\) is irreducible over \(\QQ\), so \([L:\QQ]=4\).
 
 Let \(N\) be the splitting field of \(f\). The factorization modulo \(2\) is irreducible, so the Galois group of \(N/\QQ\) contains a \(4\)-cycle. Modulo \(7\),
 \[
 f(x)\equiv (x-3)(x^3+3x^2+2x-2),
 \]
-and the cubic factor has no root in \(\mathbb F_7\), so the group contains a \(3\)-cycle. Modulo \(17\),
+and the cubic factor has no root in \(\FF_7\), so the group contains a \(3\)-cycle. Modulo \(17\),
 \[
 f(x)\equiv (x+2)(x+5)(x^2-7x+5),
 \]

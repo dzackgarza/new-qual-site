@@ -49,7 +49,7 @@ maps $\Omega$ conformally onto
 \Omega'
 =
 \left\{
-w\in\mathbb D:
+w\in\DD:
 \left|w+\frac14\right|>\frac14
 \right\}.
 \]
@@ -108,7 +108,7 @@ to $|\zeta|=r$.
 
 ::: pf-proof
 
-Since $r\in(0,1)$, $\phi$ is an automorphism of $\mathbb D$, so it maps the unit circle to itself.
+Since $r\in(0,1)$, $\phi$ is an automorphism of $\DD$, so it maps the unit circle to itself.
 
 On the inner circle, step [](#s1-1){.pf-ref} gives
 \[

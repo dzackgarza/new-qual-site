@@ -81,7 +81,7 @@ Over an imperfect field, a regular scheme of finite type need not be smooth.
 ::: pf-proof
 Let
 \[
-k=\mathbb F_p(t),
+k=\FF_p(t),
 \]
 which is imperfect, and consider
 \[

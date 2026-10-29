@@ -91,7 +91,7 @@ There is an injective holomorphic map
 \Phi:
 \CC\setminus[0,\infty)
 \longrightarrow
-\mathbb D.
+\DD.
 \]
 
 
@@ -123,7 +123,7 @@ maps the upper half-plane biholomorphically onto the unit disk. Thus
 \[
 \Phi=C\circ S
 \]
-is an injective holomorphic map into $\mathbb D$.
+is an injective holomorphic map into $\DD$.
 
 :::
 
@@ -133,7 +133,7 @@ is an injective holomorphic map into $\mathbb D$.
 
 The entire function
 \[
-\Phi\circ g:\CC\to\mathbb D
+\Phi\circ g:\CC\to\DD
 \]
 is constant.
 

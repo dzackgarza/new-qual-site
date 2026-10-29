@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SLNSQ
 kind: problem
-title: $\mathbb{F}_8\cong\mathbb{F}_2[t]/\langle t^3+t+1\rangle$
+title: $\FF_8\cong\FF_2[t]/\langle t^3+t+1\rangle$
 classification:
   areas:
   - prelim
@@ -47,38 +47,38 @@ Describe the construction of a field with eight elements.
 :::
 
 ::: {.solution}
-**Goal:** Construct a finite field with 8 elements, $\mathbb{F}_8$, as a quotient of the polynomial ring $\mathbb{F}_2[t]$.
+**Goal:** Construct a finite field with 8 elements, $\FF_8$, as a quotient of the polynomial ring $\FF_2[t]$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-A field of order $8 = 2^3$ can be constructed as $\mathbb{F}_2[t]/\langle p(t)\rangle$, where $p(t) \in \mathbb{F}_2[t]$ is an irreducible polynomial of degree $3$.
+A field of order $8 = 2^3$ can be constructed as $\FF_2[t]/\langle p(t)\rangle$, where $p(t) \in \FF_2[t]$ is an irreducible polynomial of degree $3$.
     Proof:
 
 ::: pf-proof
 
 ::: pf-step
 
-$\mathbb{F}_2[t]$ is a principal ideal domain because $\mathbb{F}_2$ is a field.
+$\FF_2[t]$ is a principal ideal domain because $\FF_2$ is a field.
 
 :::
 
 ::: pf-step
 
-For any irreducible polynomial $p(t) \in \mathbb{F}_2[t]$, the ideal $\langle p(t)\rangle$ is maximal.
+For any irreducible polynomial $p(t) \in \FF_2[t]$, the ideal $\langle p(t)\rangle$ is maximal.
 
 :::
 
 ::: pf-step
 
-Hence the quotient ring $K = \mathbb{F}_2[t]/\langle p(t)\rangle$ is a field.
+Hence the quotient ring $K = \FF_2[t]/\langle p(t)\rangle$ is a field.
 
 :::
 
 ::: pf-step
 
-The dimension of $K$ as an $\mathbb{F}_2$-vector space is $\deg(p(t)) = 3$, so $|K| = |\mathbb{F}_2|^3 = 2^3 = 8$.
+The dimension of $K$ as an $\FF_2$-vector space is $\deg(p(t)) = 3$, so $|K| = |\FF_2|^3 = 2^3 = 8$.
 
 :::
 
@@ -88,7 +88,7 @@ The dimension of $K$ as an $\mathbb{F}_2$-vector space is $\deg(p(t)) = 3$, so $
 
 ::: {.pf-step #s2}
 
-The polynomial $p(t) = t^3 + t + 1 \in \mathbb{F}_2[t]$ is irreducible over $\mathbb{F}_2$.
+The polynomial $p(t) = t^3 + t + 1 \in \FF_2[t]$ is irreducible over $\FF_2$.
     Proof:
 
 ::: pf-proof
@@ -101,7 +101,7 @@ A polynomial of degree $2$ or $3$ over a field is reducible if and only if it ha
 
 ::: pf-step
 
-The elements of $\mathbb{F}_2$ are $0$ and $1$.
+The elements of $\FF_2$ are $0$ and $1$.
 
 :::
 
@@ -115,7 +115,7 @@ Evaluating $p(t)$ at these points:
 
 ::: pf-step
 
-Since $p(t)$ has degree $3$ and has no roots in $\mathbb{F}_2$, $p(t)$ is irreducible over $\mathbb{F}_2$.
+Since $p(t)$ has degree $3$ and has no roots in $\FF_2$, $p(t)$ is irreducible over $\FF_2$.
 
 :::
 
@@ -125,8 +125,8 @@ Since $p(t)$ has degree $3$ and has no roots in $\mathbb{F}_2$, $p(t)$ is irredu
 
 ::: pf-step
 
-Construction of $\mathbb{F}_8$:
-    $$\mathbb{F}_8 \cong \mathbb{F}_2[t]/\langle t^3 + t + 1\rangle = \{a_0 + a_1 \alpha + a_2 \alpha^2 \mid a_0, a_1, a_2 \in \mathbb{F}_2\},$$
+Construction of $\FF_8$:
+    $$\FF_8 \cong \FF_2[t]/\langle t^3 + t + 1\rangle = \{a_0 + a_1 \alpha + a_2 \alpha^2 \mid a_0, a_1, a_2 \in \FF_2\},$$
     where $\alpha = t \pmod{t^3+t+1}$ satisfies $\alpha^3 = \alpha + 1$.
 
 ::: pf-proof

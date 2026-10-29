@@ -191,7 +191,7 @@ An integral scheme need not be geometrically reduced.
 ::: pf-proof
 Let
 \[
-k=\mathbb F_p(u)
+k=\FF_p(u)
 \]
 and set
 \[
@@ -224,7 +224,7 @@ There are integral schemes which are simultaneously neither geometrically irredu
 ::: pf-proof
 Let
 \[
-k=\mathbb F_p(u,v),
+k=\FF_p(u,v),
 \]
 and let $w$ satisfy the Artin--Schreier equation
 \[

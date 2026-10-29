@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCTOP-SU11-4
 kind: problem
-title: 'Manifold homotopy types of $\mathbb{CP}^n/\mathbb{CP}^k$'
+title: 'Manifold homotopy types of $\CP^n/\CP^k$'
 classification:
   areas:
   - topology
@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-For which $n$ and $k$ is $X = \mathbb{CP}^n / \mathbb{CP}^k$ homotopy-equivalent to a manifold?
+For which $n$ and $k$ is $X = \CP^n / \CP^k$ homotopy-equivalent to a manifold?
 :::
 
 ::: {.solution}
@@ -21,7 +21,7 @@ For which $n$ and $k$ is $X = \mathbb{CP}^n / \mathbb{CP}^k$ homotopy-equivalent
 ::: pf
 
 ::: pf-step
-The quotient $X=\mathbb{CP}^n/\mathbb{CP}^k$ has integral cohomology
+The quotient $X=\CP^n/\CP^k$ has integral cohomology
 $$
 H^r(X)\cong
 \begin{cases}
@@ -32,7 +32,7 @@ H^r(X)\cong
 $$
 
 ::: pf-proof
-This is the relative cohomology computation for $(\mathbb{CP}^n,\mathbb{CP}^k)$, equivalently the cellular cohomology of the quotient after collapsing the $2k$-skeleton.
+This is the relative cohomology computation for $(\CP^n,\CP^k)$, equivalently the cellular cohomology of the quotient after collapsing the $2k$-skeleton.
 :::
 
 :::
@@ -40,11 +40,11 @@ This is the relative cohomology computation for $(\mathbb{CP}^n,\mathbb{CP}^k)$,
 ::: {.pf-step #k-equals-n-minus-1-gives-sphere}
 If $k=n-1$, then
 $$
-X=\mathbb{CP}^n/\mathbb{CP}^{n-1}\cong S^{2n}.
+X=\CP^n/\CP^{n-1}\cong S^{2n}.
 $$
 
 ::: pf-proof
-The standard CW structure on $\mathbb{CP}^n$ is obtained from $\mathbb{CP}^{n-1}$ by attaching a single $2n$-cell. Collapsing $\mathbb{CP}^{n-1}$ to a point therefore gives $D^{2n}/S^{2n-1}\cong S^{2n}$.
+The standard CW structure on $\CP^n$ is obtained from $\CP^{n-1}$ by attaching a single $2n$-cell. Collapsing $\CP^{n-1}$ to a point therefore gives $D^{2n}/S^{2n-1}\cong S^{2n}$.
 :::
 
 :::
@@ -88,7 +88,7 @@ The first group is present because $n-1\ge k+1$, while the second vanishes becau
 ::: pf-step
 Therefore
 $$
-\boxed{\mathbb{CP}^n/\mathbb{CP}^k\text{ is homotopy-equivalent to a manifold exactly when }k=n-1.}
+\boxed{\CP^n/\CP^k\text{ is homotopy-equivalent to a manifold exactly when }k=n-1.}
 $$
 
 ::: pf-proof

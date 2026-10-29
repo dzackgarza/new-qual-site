@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-C44AH
 kind: problem
-title: The subspace of holomorphic functions in $L^2(\mathbb{D})$ is complete
+title: The subspace of holomorphic functions in $L^2(\DD)$ is complete
 classification:
   areas:
   - real-analysis
@@ -19,8 +19,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mu$ be Lebesgue measure on $\mathbb{D}$.
-Let $H$ be the subspace of $L^2(\mathbb{D},\mu)$ consisting of holomorphic functions.
+Let $\mu$ be Lebesgue measure on $\DD$.
+Let $H$ be the subspace of $L^2(\DD,\mu)$ consisting of holomorphic functions.
 Show that $H$ is complete.
 :::
 

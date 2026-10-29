@@ -33,7 +33,7 @@ audit:
 
 The polynomial
 \[
-f(x)=x^5+x^2+1\in\mathbb F_2[x]
+f(x)=x^5+x^2+1\in\FF_2[x]
 \]
 is irreducible.
 
@@ -45,7 +45,7 @@ f(0)=1,
 \qquad
 f(1)=1+1+1=1,
 \]
-so \(f\) has no linear factor. The only monic irreducible quadratic over \(\mathbb F_2\) is
+so \(f\) has no linear factor. The only monic irreducible quadratic over \(\FF_2\) is
 \[
 q(x)=x^2+x+1.
 \]
@@ -63,13 +63,13 @@ Thus \(q\nmid f\). Therefore \(f\) is irreducible.
 
 Consequently
 \[
-F=\mathbb F_2[x]/(f(x))
+F=\FF_2[x]/(f(x))
 \]
 is a field with \(2^5=32\) elements.
 
 ::: pf-proof
 
-Since \(f\) is irreducible of degree \(5\), the quotient is a field and has \(2^5\) elements as a \(5\)-dimensional vector space over \(\mathbb F_2\).
+Since \(f\) is irreducible of degree \(5\), the quotient is a field and has \(2^5\) elements as a \(5\)-dimensional vector space over \(\FF_2\).
 
 :::
 
@@ -97,7 +97,7 @@ With respect to the basis
 \[
 1,\alpha,\alpha^2,\alpha^3,\alpha^4
 \]
-of \(F\) over \(\mathbb F_2\), multiplication by \(\alpha\) is represented by
+of \(F\) over \(\FF_2\), multiplication by \(\alpha\) is represented by
 \[
 M=
 \begin{pmatrix}

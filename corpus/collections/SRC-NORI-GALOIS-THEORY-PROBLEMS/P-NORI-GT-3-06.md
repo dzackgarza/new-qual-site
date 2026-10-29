@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-06
 kind: problem
-title: Image of $x\mapsto x-x^p$ on $\mathbb F_q$
+title: Image of $x\mapsto x-x^p$ on $\FF_q$
 classification:
   areas: [algebra]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbb { F } _ { q }$ be a finite field of characteristic $p .$ How mny elements of $\mathbb { F } _ { q }$ are of the type $x - x ^ { \bar { p } } , x \in \mathbb { F } _ { q } ?$
+Let $\FF _ { q }$ be a finite field of characteristic $p .$ How mny elements of $\FF _ { q }$ are of the type $x - x ^ { \bar { p } } , x \in \FF _ { q } ?$
 :::
 
 ::: {.solution}
@@ -29,20 +29,20 @@ Interpret the extraction artifact $x^{\bar p}$ as $x^p$.
 
 Define
 \[
-T:\mathbb F_q\to\mathbb F_q,
+T:\FF_q\to\FF_q,
 \qquad
 T(x)=x-x^p.
 \]
-Then $T$ is linear over $\mathbb F_p$.
+Then $T$ is linear over $\FF_p$.
 
 
 ::: pf-proof
 
-For $x,y\in\mathbb F_q$, the Frobenius identity in characteristic $p$ gives
+For $x,y\in\FF_q$, the Frobenius identity in characteristic $p$ gives
 \[
 (x+y)^p=x^p+y^p,
 \]
-so $T(x+y)=T(x)+T(y)$. For $c\in\mathbb F_p$, one has $c^p=c$, hence
+so $T(x+y)=T(x)+T(y)$. For $c\in\FF_p$, one has $c^p=c$, hence
 \[
 T(cx)=cx-c^px^p=c(x-x^p)=cT(x).
 \]
@@ -55,7 +55,7 @@ T(cx)=cx-c^px^p=c(x-x^p)=cT(x).
 
 Its kernel is
 \[
-\ker T=\mathbb F_p.
+\ker T=\FF_p.
 \]
 
 
@@ -66,7 +66,7 @@ One has
 T(x)=0
 \iff x^p=x.
 \]
-The roots of $X^p-X$ in any field of characteristic $p$ are exactly the elements of its prime subfield $\mathbb F_p$: all $p$ elements of $\mathbb F_p$ are roots, and the polynomial has degree $p$. Thus the kernel is $\mathbb F_p$.
+The roots of $X^p-X$ in any field of characteristic $p$ are exactly the elements of its prime subfield $\FF_p$: all $p$ elements of $\FF_p$ are roots, and the polynomial has degree $p$. Thus the kernel is $\FF_p$.
 
 :::
 
@@ -82,7 +82,7 @@ Hence
 
 ::: pf-proof
 
-The prime field $\mathbb F_p$ has exactly $p$ elements.
+The prime field $\FF_p$ has exactly $p$ elements.
 
 :::
 
@@ -127,7 +127,7 @@ The $q$ elements of the domain are partitioned into the nonempty fibers over the
 
 ::: {.pf-step #s1-6}
 
-Thus the number of elements of $\mathbb F_q$ of the form
+Thus the number of elements of $\FF_q$ of the form
 \[
 x-x^p
 \]

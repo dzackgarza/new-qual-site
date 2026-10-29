@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-How many distinct double covers does $\mathbb{RP}^3 \times S^1$ have?
+How many distinct double covers does $\RP^3 \times S^1$ have?
 Can you identify any of them?
 :::
 
@@ -24,11 +24,11 @@ Can you identify any of them?
 ::: pf-step
 We have
 $$
-\pi_1(\mathbb{RP}^3\times S^1)\cong\ZZ/2\oplus\ZZ.
+\pi_1(\RP^3\times S^1)\cong\ZZ/2\oplus\ZZ.
 $$
 
 ::: pf-proof
-Use $\pi_1(X\times Y)\cong\pi_1(X)\times\pi_1(Y)$ together with $\pi_1(\mathbb{RP}^3)=\ZZ/2$ and $\pi_1(S^1)=\ZZ$.
+Use $\pi_1(X\times Y)\cong\pi_1(X)\times\pi_1(Y)$ together with $\pi_1(\RP^3)=\ZZ/2$ and $\pi_1(S^1)=\ZZ$.
 :::
 
 :::
@@ -67,10 +67,10 @@ These are the kernels of the three maps $(\epsilon,m)\mapsto\epsilon$, $(\epsilo
 :::
 
 ::: {.pf-step #first-two-covers-identified}
-The first cover is $S^3\times S^1\to\mathbb{RP}^3\times S^1$, and the second is the product of the identity on $\mathbb{RP}^3$ with the degree-$2$ circle cover.
+The first cover is $S^3\times S^1\to\RP^3\times S^1$, and the second is the product of the identity on $\RP^3$ with the degree-$2$ circle cover.
 
 ::: pf-proof
-The first replaces the $\mathbb{RP}^3$ factor by its universal double cover $S^3$. The second replaces only the $S^1$ factor by $z\mapsto z^2$.
+The first replaces the $\RP^3$ factor by its universal double cover $S^3$. The second replaces only the $S^1$ factor by $z\mapsto z^2$.
 :::
 
 :::

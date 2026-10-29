@@ -18,9 +18,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \mathbb{D} \to \CC$ be holomorphic such that (i) $f(0) = 0$, (ii) $|f(z)| < 2000$ for all $z \in \mathbb{D}$, (iii) $f(z) = f(-z)$ for all $z \in \mathbb{D}$.
+Let $f : \DD \to \CC$ be holomorphic such that (i) $f(0) = 0$, (ii) $|f(z)| < 2000$ for all $z \in \DD$, (iii) $f(z) = f(-z)$ for all $z \in \DD$.
 
-Show that $|f(z)| \leq 2000|z|^2$ for all $z \in \mathbb{D}$, and determine when equality holds.
+Show that $|f(z)| \leq 2000|z|^2$ for all $z \in \DD$, and determine when equality holds.
 :::
 
 ::: {.solution}
@@ -35,7 +35,7 @@ Power series expansion and order of zero at the origin:
 
 ::: pf-step
 
-Since $f: \mathbb{D} \to \CC$ is holomorphic, it admits a power series expansion around 0:
+Since $f: \DD \to \CC$ is holomorphic, it admits a power series expansion around 0:
 \[
 f(z) = \sum_{n=0}^\infty a_n z^n.
 \]
@@ -64,7 +64,7 @@ uniqueness of power series coefficients for even functions.
 
 ::: pf-step
 
-Therefore $f(z) = z^2 g(z)$, where $g(z) = \sum_{k=0}^\infty a_{2k+2} z^{2k}$ is holomorphic on $\mathbb{D}$.
+Therefore $f(z) = z^2 g(z)$, where $g(z) = \sum_{k=0}^\infty a_{2k+2} z^{2k}$ is holomorphic on $\DD$.
 
 ::: pf-proof
 
@@ -118,7 +118,7 @@ Maximum Modulus Principle.
 
 Taking the limit as $r \to 1^-$ yields:
 \[
-|g(z)| \le 2000 \quad \text{for all } z \in \mathbb{D}.
+|g(z)| \le 2000 \quad \text{for all } z \in \DD.
 \]
 
 ::: pf-proof
@@ -133,7 +133,7 @@ limit of upper bounds as $r \to 1^-$.
 
 Multiplying by $|z|^2$:
 \[
-|f(z)| = |z^2 g(z)| = |z|^2 |g(z)| \le 2000 |z|^2 \quad \text{for all } z \in \mathbb{D}.
+|f(z)| = |z^2 g(z)| = |z|^2 |g(z)| \le 2000 |z|^2 \quad \text{for all } z \in \DD.
 \]
 
 ::: pf-proof
@@ -156,7 +156,7 @@ Characterization of equality:
 
 ::: pf-step
 
-Suppose equality $|f(z_0)| = 2000 |z_0|^2$ holds for some non-zero $z_0 \in \mathbb{D} \setminus \{0\}$.
+Suppose equality $|f(z_0)| = 2000 |z_0|^2$ holds for some non-zero $z_0 \in \DD \setminus \{0\}$.
 Then $|g(z_0)| = 2000$.
 
 ::: pf-proof
@@ -169,7 +169,7 @@ $|f(z_0)| = |z_0|^2 |g(z_0)|$.
 
 ::: pf-step
 
-Since $|g(z)| \le 2000$ throughout $\mathbb{D}$, the modulus $|g|$ attains its global maximum at the interior point $z_0 \in \mathbb{D}$.
+Since $|g(z)| \le 2000$ throughout $\DD$, the modulus $|g|$ attains its global maximum at the interior point $z_0 \in \DD$.
 By the Maximum Modulus Principle, $g(z)$ must be constant:
 \[
 g(z) = 2000 e^{i\theta} \quad \text{for some constant } \theta \in \RR.
@@ -186,7 +186,7 @@ Maximum Modulus Principle forces constant functions.
 ::: pf-step
 
 Consequently, $f(z) = 2000 e^{i\theta} z^2$.
-Notice that for this function, $|f(z)| = 2000 |z|^2 < 2000$ holds strictly for all $z \in \mathbb{D}$, and $f(z) = f(-z)$ and $f(0) = 0$ are satisfied.
+Notice that for this function, $|f(z)| = 2000 |z|^2 < 2000$ holds strictly for all $z \in \DD$, and $f(z) = f(-z)$ and $f(0) = 0$ are satisfied.
 
 ::: pf-proof
 
@@ -203,7 +203,7 @@ $|z| < 1 \implies 2000|z|^2 < 2000$.
 ::: pf-step
 
 Conclusion:
-$|f(z)| \le 2000 |z|^2$ for all $z \in \mathbb{D}$, with equality at any non-zero point if and only if $f(z) = 2000 e^{i\theta} z^2$ for some $\theta \in [0, 2\pi)$. Q.E.D.
+$|f(z)| \le 2000 |z|^2$ for all $z \in \DD$, with equality at any non-zero point if and only if $f(z) = 2000 e^{i\theta} z^2$ for some $\theta \in [0, 2\pi)$. Q.E.D.
 
 ::: pf-proof
 

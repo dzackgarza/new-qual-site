@@ -31,7 +31,7 @@ If $k = \ZZ/2\ZZ$, find all $k[X]$ module structures on $k^3$ up to isomorphism 
 ::: {.solution}
 Write
 $$
-k=\mathbb F_2.
+k=\FF_2.
 $$
 A $k[X]$-module structure on the underlying vector space $k^3$ is equivalent
 to choosing a $k$-linear operator
@@ -73,7 +73,7 @@ r_1=X^3+X+1,
 r_2=X^3+X^2+1.
 $$
 A cubic over a field is reducible exactly when it has a root. A monic cubic
-$X^3+aX^2+bX+c$ over $\mathbb F_2$ has no root at $0$ exactly when $c=1$, and
+$X^3+aX^2+bX+c$ over $\FF_2$ has no root at $0$ exactly when $c=1$, and
 then no root at $1$ exactly when $1+a+b+1=a+b=1$. This leaves exactly $r_1$
 and $r_2$.
 

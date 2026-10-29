@@ -164,7 +164,7 @@ Hence
 \[
 \boxed{
 X\cong
-\mathbb{RP}^2
+\RP^2
 \vee
 M(\ZZ/3,1)},
 \]
@@ -175,7 +175,7 @@ attaching a \(2\)-cell by a degree-\(3\) map.
 ::: pf-proof
 
 The \(a\)-circle together with the \(a^2\)-cell is the standard CW structure
-on \(\mathbb{RP}^2\). The \(b\)-circle together with the \(b^3\)-cell is the
+on \(\RP^2\). The \(b\)-circle together with the \(b^3\)-cell is the
 standard Moore-space presentation complex for \(\ZZ/3\). The two
 subcomplexes meet only at the unique vertex.
 

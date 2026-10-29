@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.B-1
 kind: problem
-title: "Homology and cohomology of $\\mathbb{RP}^m \\times \\mathbb{RP}^n$"
+title: "Homology and cohomology of $\\RP^m \\times \\RP^n$"
 classification:
   areas:
   - topology
@@ -24,19 +24,19 @@ audit:
 ---
 
 ::: {.problem}
-Compute the groups $H_i(\mathbb{RP}^m \times \mathbb{RP}^n; G)$ and $H^i(\mathbb{RP}^m \times \mathbb{RP}^n; G)$ for $G = \ZZ$ and $\ZZ_2$ via the cellular chain and cochain complexes.
+Compute the groups $H_i(\RP^m \times \RP^n; G)$ and $H^i(\RP^m \times \RP^n; G)$ for $G = \ZZ$ and $\ZZ_2$ via the cellular chain and cochain complexes.
 [See Example 3B.4.]
 :::
 
 ::: {.solution}
-Give $\mathbb{RP}^r$ its standard CW structure with one cell $e_j$ in each dimension $0\le j\le r$. Its cellular chain complex over $\ZZ$ has
+Give $\RP^r$ its standard CW structure with one cell $e_j$ in each dimension $0\le j\le r$. Its cellular chain complex over $\ZZ$ has
 \[
 \partial e_j=\begin{cases}
 0,&j\text{ odd},\\
 2e_{j-1},&j\text{ even}.
 \end{cases}
 \]
-The product CW structure on $\mathbb{RP}^m\times\mathbb{RP}^n$ has one cell $e_p\times e_q$ for each $0\le p\le m$, $0\le q\le n$, and its cellular chain complex is the tensor product of the two cellular complexes, with
+The product CW structure on $\RP^m\times\RP^n$ has one cell $e_p\times e_q$ for each $0\le p\le m$, $0\le q\le n$, and its cellular chain complex is the tensor product of the two cellular complexes, with
 \[
 \partial(e_p\otimes e_q)
 =(\partial e_p)\otimes e_q+(-1)^p e_p\otimes(\partial e_q).
@@ -48,15 +48,15 @@ F_r=\{0\}\cup\bigl(\{r\}\text{ if $r$ is odd}\bigr),
 \qquad
 T_r=\{j:1\le j<r,\ j\text{ odd}\}.
 \]
-Thus the integral homology of $\mathbb{RP}^r$ is $\ZZ$ in degrees in $F_r$, $\ZZ_2$ in degrees in $T_r$, and zero otherwise.
+Thus the integral homology of $\RP^r$ is $\ZZ$ in degrees in $F_r$, $\ZZ_2$ in degrees in $T_r$, and zero otherwise.
 
 The cellular tensor complex gives the integral Künneth decomposition
 \[
-H_i(\mathbb{RP}^m\times\mathbb{RP}^n;\ZZ)
+H_i(\RP^m\times\RP^n;\ZZ)
 \cong
-\bigoplus_{p+q=i}H_p(\mathbb{RP}^m)\otimes H_q(\mathbb{RP}^n)
+\bigoplus_{p+q=i}H_p(\RP^m)\otimes H_q(\RP^n)
 \oplus
-\bigoplus_{p+q=i-1}\operatorname{Tor}(H_p(\mathbb{RP}^m),H_q(\mathbb{RP}^n)).
+\bigoplus_{p+q=i-1}\operatorname{Tor}(H_p(\RP^m),H_q(\RP^n)).
 \]
 Since the only torsion is $\ZZ_2$, this may be written explicitly as
 \[
@@ -78,7 +78,7 @@ This is the complete integral homology calculation.
 
 The integral cohomology follows from the universal coefficient theorem. Since $\operatorname{Hom}(\ZZ_2,\ZZ)=0$ and $\operatorname{Ext}(\ZZ_2,\ZZ)\cong\ZZ_2$,
 \[
-\boxed{H^i(\mathbb{RP}^m\times\mathbb{RP}^n;\ZZ)
+\boxed{H^i(\RP^m\times\RP^n;\ZZ)
 \cong \ZZ^{f_i}\oplus(\ZZ_2)^{t_{i-1}}.}
 \]
 

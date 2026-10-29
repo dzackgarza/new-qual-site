@@ -30,7 +30,7 @@ Then
 \[
 g(z)=\frac{s(f(z))-1}{s(f(z))+1}
 \]
-maps $\mathbb D$ holomorphically into itself and satisfies $g(0)=0$.
+maps $\DD$ holomorphically into itself and satisfies $g(0)=0$.
 Schwarz's lemma gives $|g'(0)|\le1$. Since
 \[
 g'(0)=\frac{f'(0)}4,

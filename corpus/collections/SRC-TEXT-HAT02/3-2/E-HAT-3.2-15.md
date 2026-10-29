@@ -27,7 +27,7 @@ audit:
 ::: {.problem}
 For a fixed coefficient field $F$, define the Poincaré series of a space $X$ to be the formal power series $p(t) = \sum_i a_i t^i$ where $a_i$ is the dimension of $H^i(X; F)$ as a vector space over $F$, assuming this dimension is finite for all $i$.
 Show that $p(X \times Y) = p(X) p(Y)$.
-Compute the Poincaré series for $S^n$, $\mathbb{RP}^n$, $\mathbb{RP}^\infty$, $\mathbb{CP}^n$, $\mathbb{CP}^\infty$, and the spaces in the preceding three exercises.
+Compute the Poincaré series for $S^n$, $\RP^n$, $\RP^\infty$, $\CP^n$, $\CP^\infty$, and the spaces in the preceding three exercises.
 :::
 
 ::: {.solution}
@@ -44,9 +44,9 @@ The basic examples are
 \[
 p_{S^n}(t)=1+t^n.
 \]
-For $\mathbb{RP}^n$ the answer depends on $\operatorname{char}F$:
+For $\RP^n$ the answer depends on $\operatorname{char}F$:
 \[
-p_{\mathbb{RP}^n}(t)=
+p_{\RP^n}(t)=
 \begin{cases}
 1+t+\cdots+t^n,&\operatorname{char}F=2,\\
 1,&\operatorname{char}F\ne2,\ n\text{ even},\\
@@ -55,7 +55,7 @@ p_{\mathbb{RP}^n}(t)=
 \]
 and
 \[
-p_{\mathbb{RP}^\infty}(t)=
+p_{\RP^\infty}(t)=
 \begin{cases}
 (1-t)^{-1},&\operatorname{char}F=2,\\
 1,&\operatorname{char}F\ne2.
@@ -63,10 +63,10 @@ p_{\mathbb{RP}^\infty}(t)=
 \]
 For complex projective spaces,
 \[
-p_{\mathbb{CP}^n}(t)=1+t^2+\cdots+t^{2n}
+p_{\CP^n}(t)=1+t^2+\cdots+t^{2n}
 =\frac{1-t^{2n+2}}{1-t^2},
 \qquad
-p_{\mathbb{CP}^\infty}(t)=\frac1{1-t^2}.
+p_{\CP^\infty}(t)=\frac1{1-t^2}.
 \]
 
 For Exercise 12, both spaces have one copy of $F$ in degree $0$ and in every degree $\ge2$ except degree $1$, with the same ring structure; thus
@@ -75,13 +75,13 @@ p(t)=1+\frac{t^2}{1-t}.
 \]
 For Exercise 13,
 \[
-\widetilde H^*(\mathbb{CP}^\infty/\mathbb{CP}^1;F)
+\widetilde H^*(\CP^\infty/\CP^1;F)
 \]
 has one generator in every even degree $\ge4$, so
 \[
 p(t)=1+\frac{t^4}{1-t^2}.
 \]
-For Exercise 14, let $X$ be the pushout built from $\mathbb{RP}^\infty$ and $\mathbb{CP}^n$. If $\operatorname{char}F=2$, the ring description
+For Exercise 14, let $X$ be the pushout built from $\RP^\infty$ and $\CP^n$. If $\operatorname{char}F=2$, the ring description
 \[
 H^*(X;F)\cong F[\alpha,\beta]/(\beta^2-\alpha^{2n+1}),
 \qquad |\alpha|=2,\ |\beta|=2n+1,
@@ -90,12 +90,12 @@ shows that it is free as an $F[\alpha]$-module on $1,\beta$. Hence
 \[
 p_X(t)=\frac{1+t^{2n+1}}{1-t^2}.
 \]
-If $\operatorname{char}F\ne2$, the $\mathbb{RP}^\infty$ tail contributes no positive-dimensional cohomology, so $X$ has the same $F$-cohomology as $\mathbb{CP}^n$ and
+If $\operatorname{char}F\ne2$, the $\RP^\infty$ tail contributes no positive-dimensional cohomology, so $X$ has the same $F$-cohomology as $\CP^n$ and
 \[
 p_X(t)=\frac{1-t^{2n+2}}{1-t^2}.
 \]
 
-For the analogous pushout $Y$ associated to $\mathbb{CP}^\infty\to\mathbb{HP}^\infty$, the pair $(Y,\mathbb{HP}^n)$ is the same cellular pair as $(\mathbb{CP}^\infty,\mathbb{CP}^{2n+1})$. Thus, over every field,
+For the analogous pushout $Y$ associated to $\CP^\infty\to\mathbb{HP}^\infty$, the pair $(Y,\mathbb{HP}^n)$ is the same cellular pair as $(\CP^\infty,\CP^{2n+1})$. Thus, over every field,
 \[
 H^*(Y;F)
 \]

@@ -49,7 +49,7 @@ has contractible total space. Pullback along a map $X\to BS^1$ produces a princi
 
 Since
 \[
-BS^1\simeq\mathbb{CP}^{\infty}=K(\ZZ,2),
+BS^1\simeq\CP^{\infty}=K(\ZZ,2),
 \]
 one has
 \[

@@ -35,7 +35,7 @@ $$
 
 The map
 $$
-\phi:\mathbb H\longrightarrow\mathbb D
+\phi:\mathbb H\longrightarrow\DD
 $$
 is a biholomorphism satisfying
 $$
@@ -80,7 +80,7 @@ $$
 =
 i\frac{1+w}{1-w},
 $$
-which maps $\mathbb D$ to $\mathbb H$. Finally,
+which maps $\DD$ to $\mathbb H$. Finally,
 $$
 \phi(i)=0.
 $$
@@ -99,7 +99,7 @@ f(\phi^{-1}(w)).
 $$
 Then
 $$
-g:\mathbb D\to\mathbb D
+g:\DD\to\DD
 $$
 is holomorphic and
 $$
@@ -113,11 +113,11 @@ The function
 $$
 \phi^{-1}
 $$
-maps $\mathbb D$ holomorphically into the domain of $f$, and
+maps $\DD$ holomorphically into the domain of $f$, and
 $$
 |f|<1
 $$
-there. Thus $g$ maps $\mathbb D$ into itself. Since
+there. Thus $g$ maps $\DD$ into itself. Since
 $$
 \phi^{-1}(0)=i
 $$
@@ -142,7 +142,7 @@ $$
 $$
 for every
 $$
-w\in\mathbb D.
+w\in\DD.
 $$
 
 

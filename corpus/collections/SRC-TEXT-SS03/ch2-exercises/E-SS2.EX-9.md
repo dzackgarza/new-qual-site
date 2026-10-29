@@ -72,5 +72,5 @@ By step [](#s2){.pf-ref}, $\varphi(z)=z$ near $0$, so $\varphi(z)=z$ on the conn
 :::
 
 ::: {.remark}
-Connectedness is needed. For $\Omega=\mathbb D\cup D_1(3)$, the map equal to $z$ on $\mathbb D$ and to the constant $3$ on $D_1(3)$ is holomorphic from $\Omega$ to $\Omega$, fixes $0$ with derivative $1$, and is not linear.
+Connectedness is needed. For $\Omega=\DD\cup D_1(3)$, the map equal to $z$ on $\DD$ and to the constant $3$ on $D_1(3)$ is holomorphic from $\Omega$ to $\Omega$, fixes $0$ with derivative $1$, and is not linear.
 :::

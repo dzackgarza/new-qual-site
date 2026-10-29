@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASP20E
 kind: problem
-title: Biholomorphisms between $\mathbb D\setminus\{0,1/2\}$ and $\mathbb D\setminus\{0,-1/2\}$
+title: Biholomorphisms between $\DD\setminus\{0,1/2\}$ and $\DD\setminus\{0,-1/2\}$
 classification:
   areas:
   - complex-analysis
@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $A_1 = \mathbb{D} \setminus \left\{0, \frac{1}{2}\right\}$ and $A_2 = \mathbb{D} \setminus \left\{0, -\frac{1}{2}\right\}$.
+Let $A_1 = \DD \setminus \left\{0, \frac{1}{2}\right\}$ and $A_2 = \DD \setminus \left\{0, -\frac{1}{2}\right\}$.
 Find all bijective analytic maps from $A_1$ to $A_2$.
 :::
 
@@ -23,11 +23,11 @@ Find all bijective analytic maps from $A_1$ to $A_2$.
 Let $F:A_1\to A_2$ be biholomorphic. Since $F$ is bounded, its singularities
 at $0$ and $1/2$ are removable, so it extends holomorphically to a map
 \[
-\widetilde F:\mathbb D\to\mathbb D.
+\widetilde F:\DD\to\DD.
 \]
 The inverse extends similarly. Their compositions equal the identity on the
 punctured domains and therefore, by the identity theorem, on all of
-$\mathbb D$. Thus $\widetilde F$ is an automorphism of the unit disk and must
+$\DD$. Thus $\widetilde F$ is an automorphism of the unit disk and must
 map
 \[
 \{0,1/2\}\quad\text{onto}\quad\{0,-1/2\}.

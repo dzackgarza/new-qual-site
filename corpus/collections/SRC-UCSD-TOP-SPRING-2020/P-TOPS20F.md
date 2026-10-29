@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Consider a continuous map $f : \mathbb{RP}^n \to \mathbb{RP}^n$, where $n$ is a positive even number.
+Consider a continuous map $f : \RP^n \to \RP^n$, where $n$ is a positive even number.
 Show that $f$ has a fixed point.
 :::
 
@@ -24,8 +24,8 @@ Show that $f$ has a fixed point.
 ::: pf
 
 ::: pf-step
-For even $n>0$, the rational homology of $\mathbb{RP}^n$ is
-$$H_0(\mathbb{RP}^n;\QQ)\cong\QQ,$$
+For even $n>0$, the rational homology of $\RP^n$ is
+$$H_0(\RP^n;\QQ)\cong\QQ,$$
 with all positive-degree rational homology groups zero.
 
 ::: pf-proof
@@ -35,7 +35,7 @@ Integral homology in positive degrees is $2$-torsion in the odd degrees below $n
 :::
 
 ::: pf-step
-Hence every self-map $f:\mathbb{RP}^n\to\mathbb{RP}^n$ has Lefschetz number
+Hence every self-map $f:\RP^n\to\RP^n$ has Lefschetz number
 $$L(f)=1.$$
 
 ::: pf-proof

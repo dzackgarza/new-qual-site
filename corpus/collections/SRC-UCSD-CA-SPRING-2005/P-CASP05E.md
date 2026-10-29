@@ -41,5 +41,5 @@ z^n=e^{z-\lambda},
 nz^{n-1}=e^{z-\lambda}.
 \]
 Since a zero cannot be $0$, division gives $z=n$, which is not in the open unit
-disk. Thus the $n$ zeros in $\mathbb D$ are distinct and simple.
+disk. Thus the $n$ zeros in $\DD$ are distinct and simple.
 :::

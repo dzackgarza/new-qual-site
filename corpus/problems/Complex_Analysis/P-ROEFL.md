@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Assume $f(z)$ is analytic in ${\mathbb D}$, maps ${\mathbb D}$ into ${\mathbb D}$, $f(0)=0$, and $f$ is not a rotation (i.e. $f(z) \neq e^{i \theta} z$). Show that $\displaystyle \sum_{n=1}^\infty f^{n}(z)$ converges uniformly to an analytic function on compact subsets of ${\mathbb D}$, where $f^{n+1}(z) = f(f^{n}(z))$.
+Assume $f(z)$ is analytic in ${\DD}$, maps ${\DD}$ into ${\DD}$, $f(0)=0$, and $f$ is not a rotation (i.e. $f(z) \neq e^{i \theta} z$). Show that $\displaystyle \sum_{n=1}^\infty f^{n}(z)$ converges uniformly to an analytic function on compact subsets of ${\DD}$, where $f^{n+1}(z) = f(f^{n}(z))$.
 :::
 
 ::: {.solution}

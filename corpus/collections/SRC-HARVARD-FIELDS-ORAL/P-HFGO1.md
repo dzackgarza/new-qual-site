@@ -44,8 +44,8 @@ Modulo $3$,
 \[
 \bar f(x)=x^5-x-1.
 \]
-It has no root in $\mathbb F_3$. The monic irreducible quadratics over
-$\mathbb F_3$ are
+It has no root in $\FF_3$. The monic irreducible quadratics over
+$\FF_3$ are
 \[
 x^2+1,\qquad x^2+x+2,\qquad x^2+2x+2,
 \]

@@ -50,12 +50,12 @@ Each Möbius band has one boundary circle, so the $g$ gluings eliminate all boun
 
 Each attached Möbius band contributes one crosscap, so the resulting surface is the connected sum
 $$
-\boxed{N_g=\#^g\mathbb{RP}^2}.
+\boxed{N_g=\#^g\RP^2}.
 $$
 
 ::: pf-proof
 
-A projective plane with an open disk removed is a Möbius band. The connected-sum construction removes a disk from each summand and glues boundary circles. Thus attaching a Möbius band to a boundary component is exactly adding one $\mathbb{RP}^2$ summand.
+A projective plane with an open disk removed is a Möbius band. The connected-sum construction removes a disk from each summand and glues boundary circles. Thus attaching a Möbius band to a boundary component is exactly adding one $\RP^2$ summand.
 
 :::
 

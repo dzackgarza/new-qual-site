@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-5TRAOGBWCB
 kind: problem
-title: $x^p-t$ is irreducible over $\mathbb{F}_p(t)$ and splits as a $p$-th power
+title: $x^p-t$ is irreducible over $\FF_p(t)$ and splits as a $p$-th power
   in its splitting field
 classification:
   areas:
@@ -20,9 +20,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $p$ be a prime, let $\mathbb F_p$ be the $p$-element field,
-and let $K=\mathbb F_p(t)$ be the field of rational functions in
-$t$ with coefficients in $\mathbb F_p$. Consider the polynomial $f(x)=
+Let $p$ be a prime, let $\FF_p$ be the $p$-element field,
+and let $K=\FF_p(t)$ be the field of rational functions in
+$t$ with coefficients in $\FF_p$. Consider the polynomial $f(x)=
 x^p-t\in K[x]$.
 
 -   Show that $f$ does not have a root in $K$.
@@ -39,7 +39,7 @@ x^p-t\in K[x]$.
 
 ::: {.pf-step #s1}
 
-The polynomial \(f(X)=X^p-t\) has no root in \(K=\mathbb F_p(t)\).
+The polynomial \(f(X)=X^p-t\) has no root in \(K=\FF_p(t)\).
 
 ::: pf-proof
 
@@ -47,7 +47,7 @@ Suppose \(r\in K\) satisfies \(r^p=t\). Write
 \[
 r=\frac{a(t)}{b(t)}
 \]
-with coprime \(a,b\in\mathbb F_p[t]\), \(b\ne0\). Then
+with coprime \(a,b\in\FF_p[t]\), \(b\ne0\). Then
 \[
 a(t)^p=t\,b(t)^p.
 \]
@@ -71,7 +71,7 @@ in \(E[X]\).
 
 ::: pf-proof
 
-We have \(\alpha^p=t\). Since the characteristic is \(p\), all intermediate binomial coefficients \(\binom pj\) vanish in \(\mathbb F_p\), so
+We have \(\alpha^p=t\). Since the characteristic is \(p\), all intermediate binomial coefficients \(\binom pj\) vanish in \(\FF_p\), so
 \[
 (X-\alpha)^p=X^p-\alpha^p=X^p-t=f(X).
 \]
@@ -95,7 +95,7 @@ Over the splitting field \(E\), step [](#s2){.pf-ref} shows that every root of \
 \[
 g(X)=(X-\alpha)^r.
 \]
-The coefficient of \(X^{r-1}\) in this polynomial is \(-r\alpha\). Because \(1\le r<p\), the element \(r\in\mathbb F_p\) is nonzero, hence invertible. Since \(g\in K[X]\), we obtain
+The coefficient of \(X^{r-1}\) in this polynomial is \(-r\alpha\). Because \(1\le r<p\), the element \(r\in\FF_p\) is nonzero, hence invertible. Since \(g\in K[X]\), we obtain
 \[
 \alpha=-r^{-1}[X^{r-1}]g\in K,
 \]

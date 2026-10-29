@@ -30,7 +30,7 @@ Prove that $|g'(z_1)| \leq |f'(z_1)|$.
 ::: {.solution}
 Choose Riemann maps
 \[
-\phi_j:R_j\to\mathbb D
+\phi_j:R_j\to\DD
 \]
 with
 \[
@@ -46,7 +46,7 @@ is a biholomorphism $R_1\to R_2$ and satisfies $f(z_1)=z_2$.
 
 (ii) Given $g:R_1\to R_2$ with $g(z_1)=z_2$, define
 \[
-G=\phi_2\circ g\circ\phi_1^{-1}:\mathbb D\to\mathbb D.
+G=\phi_2\circ g\circ\phi_1^{-1}:\DD\to\DD.
 \]
 Then $G(0)=0$, so Schwarz's lemma gives $|G'(0)|\le1$. By the chain rule,
 \[

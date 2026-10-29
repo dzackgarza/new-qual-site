@@ -21,7 +21,7 @@ $\mathbb { C P } ^ { n }$ cannot be expressed non-trivially as a product of comp
 
 ::: {.solution}
 
-In fact, the stronger topological statement holds: for $n>0$, $\mathbb{CP}^n$ is not homotopy equivalent to a product $X\times Y$ of two connected positive-dimensional closed manifolds. Hence it cannot be biholomorphic to a nontrivial product of complex manifolds.
+In fact, the stronger topological statement holds: for $n>0$, $\CP^n$ is not homotopy equivalent to a product $X\times Y$ of two connected positive-dimensional closed manifolds. Hence it cannot be biholomorphic to a nontrivial product of complex manifolds.
 
 ::: pf
 
@@ -29,7 +29,7 @@ In fact, the stronger topological statement holds: for $n>0$, $\mathbb{CP}^n$ is
 
 Suppose, for contradiction, that
 \[
-\mathbb{CP}^n\cong X\times Y
+\CP^n\cong X\times Y
 \]
 with $X$ and $Y$ connected compact complex manifolds of positive complex dimensions $r$ and $s$, where
 \[
@@ -49,7 +49,7 @@ A product decomposition of complex manifolds is in particular a diffeomorphism o
 
 Since
 \[
-H^1(\mathbb{CP}^n;\ZZ)=0,
+H^1(\CP^n;\ZZ)=0,
 \]
 the Kunneth theorem gives
 \[
@@ -64,7 +64,7 @@ For connected spaces,
 H^1(X\times Y;\ZZ)
 \cong H^1(X;\ZZ)\oplus H^1(Y;\ZZ).
 \]
-The left side is zero because $X\times Y\cong\mathbb{CP}^n$. Hence both summands vanish.
+The left side is zero because $X\times Y\cong\CP^n$. Hence both summands vanish.
 
 :::
 
@@ -74,7 +74,7 @@ The left side is zero because $X\times Y\cong\mathbb{CP}^n$. Hence both summands
 
 In degree two, Kunneth gives
 \[
-H^2(\mathbb{CP}^n;\ZZ)
+H^2(\CP^n;\ZZ)
 \cong H^2(X;\ZZ)\oplus H^2(Y;\ZZ).
 \]
 
@@ -106,7 +106,7 @@ are nonzero.
 
 Every compact complex manifold is canonically oriented. Since $X$ has real dimension $2r>0$, its fundamental class is nonzero. If $H^2(X;\ZZ)$ were zero, then every degree-two class on the product would come from $Y$. But the generator
 \[
-h\in H^2(\mathbb{CP}^n;\ZZ)
+h\in H^2(\CP^n;\ZZ)
 \]
 satisfies
 \[
@@ -126,7 +126,7 @@ for dimensional reasons, and since $s<n$ this would force $h^n=0$, a contradicti
 
 Step [](#s1-3){.pf-ref} is impossible because
 \[
-H^2(\mathbb{CP}^n;\ZZ)\cong\ZZ
+H^2(\CP^n;\ZZ)\cong\ZZ
 \]
 has rank one, whereas the right-hand side contains two nonzero free summands.
 
@@ -144,7 +144,7 @@ The direct sum in step [](#s1-3){.pf-ref} is isomorphic to the torsion-free grou
 Therefore no such nontrivial product decomposition exists:
 \[
 \boxed{
-\mathbb{CP}^n\not\cong X\times Y
+\CP^n\not\cong X\times Y
 \quad\text{for }\dim_{\CC}X,\dim_{\CC}Y>0.}
 \]
 

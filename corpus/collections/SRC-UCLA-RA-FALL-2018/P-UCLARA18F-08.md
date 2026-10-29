@@ -19,16 +19,16 @@ audit:
 ::: {.problem}
 Problem 8. Let $\mathcal D$ be the space of analytic functions $f(z)$ on the unit disc
 \[
-\mathbb D=\{z:|z|<1\}
+\DD=\{z:|z|<1\}
 \]
 such that $f(0)=0$ and
 \[
-\int_{\mathbb D}|f'(z)|^2\,dx\,dy<\infty.
+\int_{\DD}|f'(z)|^2\,dx\,dy<\infty.
 \]
 
 (a) Prove that $\mathcal D$ is complete in the norm
 \[
-\|f\|=\left(\int_{\mathbb D}|f'(z)|^2\,dx\,dy\right)^{1/2}.
+\|f\|=\left(\int_{\DD}|f'(z)|^2\,dx\,dy\right)^{1/2}.
 \]
 
 (b) Give a necessary and sufficient condition on the coefficients $a_n$ for the function
@@ -46,22 +46,22 @@ Write \(dA=dx\,dy\).
 
 ::: {.pf-step #s1-1}
 
-For every \(0<r<1\) there is a constant \(C_r>0\) such that every holomorphic \(h\in L^2(\mathbb D,dA)\) satisfies
+For every \(0<r<1\) there is a constant \(C_r>0\) such that every holomorphic \(h\in L^2(\DD,dA)\) satisfies
 \[
-\sup_{|z|\le r}|h(z)|\le C_r\|h\|_{L^2(\mathbb D)}.
+\sup_{|z|\le r}|h(z)|\le C_r\|h\|_{L^2(\DD)}.
 \]
 
 
 ::: pf-proof
 
-Put \(\rho=(1-r)/2\). If \(|z|\le r\), then \(B(z,\rho)\subset\mathbb D\). The area mean-value formula for the holomorphic function \(h\), followed by Cauchy--Schwarz, gives
+Put \(\rho=(1-r)/2\). If \(|z|\le r\), then \(B(z,\rho)\subset\DD\). The area mean-value formula for the holomorphic function \(h\), followed by Cauchy--Schwarz, gives
 \[
 \begin{aligned}
 |h(z)|
 &=\left|\frac1{\pi\rho^2}\int_{B(z,\rho)}h(w)\,dA(w)\right|\\
 &\le\frac1{\pi\rho^2}\bigl(\pi\rho^2\bigr)^{1/2}
-\|h\|_{L^2(\mathbb D)}\\
-&=\frac1{\sqrt\pi\rho}\|h\|_{L^2(\mathbb D)}.
+\|h\|_{L^2(\DD)}\\
+&=\frac1{\sqrt\pi\rho}\|h\|_{L^2(\DD)}.
 \end{aligned}
 \]
 Thus one may take \(C_r=1/(\sqrt\pi\rho)\).
@@ -72,7 +72,7 @@ Thus one may take \(C_r=1/(\sqrt\pi\rho)\).
 
 ::: {.pf-step #s1-2}
 
-Let \((f_j)\) be Cauchy in \(\mathcal D\). Then \((f_j')\) converges in \(L^2(\mathbb D)\) to some \(g\in L^2(\mathbb D)\), and it also converges locally uniformly on \(\mathbb D\) to a holomorphic function \(h\).
+Let \((f_j)\) be Cauchy in \(\mathcal D\). Then \((f_j')\) converges in \(L^2(\DD)\) to some \(g\in L^2(\DD)\), and it also converges locally uniformly on \(\DD\) to a holomorphic function \(h\).
 
 
 ::: pf-proof
@@ -81,7 +81,7 @@ By definition of the norm,
 \[
 \|f_j'-f_k'\|_{L^2}=\|f_j-f_k\|_{\mathcal D},
 \]
-so \((f_j')\) is Cauchy in the complete space \(L^2(\mathbb D)\) and hence converges there to some \(g\).
+so \((f_j')\) is Cauchy in the complete space \(L^2(\DD)\) and hence converges there to some \(g\).
 
 Fix \(0<r<1\). Applying step [](#s1-1){.pf-ref} to \(h=f_j'-f_k'\) gives
 \[
@@ -96,7 +96,7 @@ Thus \((f_j')\) is uniformly Cauchy on every closed disc \(\{|z|\le r\}\). It th
 
 ::: {.pf-step #s1-3}
 
-The functions \(g\) and \(h\) agree almost everywhere on \(\mathbb D\).
+The functions \(g\) and \(h\) agree almost everywhere on \(\DD\).
 
 
 ::: pf-proof
@@ -109,7 +109,7 @@ From \(f_j'\to g\) in \(L^2\), choose a subsequence \((f_{j_k}')\) converging to
 
 ::: {.pf-step #s1-4}
 
-There is a unique holomorphic function \(F\) on \(\mathbb D\) such that
+There is a unique holomorphic function \(F\) on \(\DD\) such that
 \[
 F(0)=0,
 \qquad
@@ -122,9 +122,9 @@ and \(F\in\mathcal D\).
 
 The unit disc is simply connected, so the holomorphic function \(h\) has a primitive. Fix the additive constant by requiring \(F(0)=0\). By step [](#s1-3){.pf-ref},
 \[
-\int_{\mathbb D}|F'|^2\,dA
-=\int_{\mathbb D}|h|^2\,dA
-=\int_{\mathbb D}|g|^2\,dA<\infty,
+\int_{\DD}|F'|^2\,dA
+=\int_{\DD}|h|^2\,dA
+=\int_{\DD}|g|^2\,dA<\infty,
 \]
 so \(F\in\mathcal D\). Uniqueness follows because two primitives with the same value at \(0\) differ by the zero constant.
 
@@ -157,7 +157,7 @@ If
 \[
 f(z)=\sum_{n\ge1}a_nz^n
 \]
-is analytic on \(\mathbb D\), then for every \(0<R<1\),
+is analytic on \(\DD\), then for every \(0<R<1\),
 \[
 \int_{|z|<R}|f'(z)|^2\,dA(z)
 =\pi\sum_{n=1}^\infty n|a_n|^2R^{2n}.
@@ -201,7 +201,7 @@ with either side allowed to be \(+\infty\).
 
 ::: pf-proof
 
-Let \(R\uparrow1\) in step [](#s1-6){.pf-ref}. The discs \(\{|z|<R\}\) increase to \(\mathbb D\), so monotone convergence gives convergence of the left side to \(\int_{\mathbb D}|f'|^2dA\). On the right, each nonnegative term \(n|a_n|^2R^{2n}\) increases to \(n|a_n|^2\), so monotone convergence for series gives the displayed identity.
+Let \(R\uparrow1\) in step [](#s1-6){.pf-ref}. The discs \(\{|z|<R\}\) increase to \(\DD\), so monotone convergence gives convergence of the left side to \(\int_{\DD}|f'|^2dA\). On the right, each nonnegative term \(n|a_n|^2R^{2n}\) increases to \(n|a_n|^2\), so monotone convergence for series gives the displayed identity.
 
 :::
 

@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathcal{F}$ be a non-empty family of analytic functions on the unit disc $\mathbb{D}$.
-Assume for every $f \in \mathcal{F}$ it holds that $$\int_{\mathbb{D}} |f(z)|(1 - |z|)^5 \, dm < 10.$$ Prove $\mathcal{F}$ is a normal family.
+Let $\mathcal{F}$ be a non-empty family of analytic functions on the unit disc $\DD$.
+Assume for every $f \in \mathcal{F}$ it holds that $$\int_{\DD} |f(z)|(1 - |z|)^5 \, dm < 10.$$ Prove $\mathcal{F}$ is a normal family.
 
 Here $dm$ denotes the standard measure in $\RR^2$ (i.e.\ $dm = dx\,dy$ for $z = x + iy$).
 :::
@@ -29,9 +29,9 @@ Here $dm$ denotes the standard measure in $\RR^2$ (i.e.\ $dm = dx\,dy$ for $z = 
 
 ::: {.pf-step #s1}
 
-For $f$ analytic on $\mathbb{D}$ and $z_0 \in \mathbb{D}$, the subharmonicity of $|f|$ gives
+For $f$ analytic on $\DD$ and $z_0 \in \DD$, the subharmonicity of $|f|$ gives
 $$|f(z_0)| \le \frac{1}{\pi r^2} \int_{D(z_0, r)} |f(z)|\,dm(z)$$
-for any $r$ with $D(z_0, r) \subseteq \mathbb{D}$.
+for any $r$ with $D(z_0, r) \subseteq \DD$.
 
 ::: pf-proof
 
@@ -43,7 +43,7 @@ mean value inequality for the subharmonic function $|f|$.
 
 ::: {.pf-step #s2}
 
-For $z_0$ with $|z_0| < 1/2$, take $r = 1/4$; then $D(z_0, 1/4) \subseteq \mathbb{D}$ and $1 - |z| \ge 1/4$ on this disk.
+For $z_0$ with $|z_0| < 1/2$, take $r = 1/4$; then $D(z_0, 1/4) \subseteq \DD$ and $1 - |z| \ge 1/4$ on this disk.
 
 ::: pf-proof
 
@@ -71,7 +71,7 @@ Therefore $|f(z_0)| \le \frac{16 \cdot 4^5}{\pi} \cdot 10 =: C$ for all $|z_0| <
 
 ::: pf-proof
 
-Step [](#s3){.pf-ref} and the hypothesis $\int_{\mathbb{D}} |f|(1-|z|)^5\,dm < 10$.
+Step [](#s3){.pf-ref} and the hypothesis $\int_{\DD} |f|(1-|z|)^5\,dm < 10$.
 
 :::
 

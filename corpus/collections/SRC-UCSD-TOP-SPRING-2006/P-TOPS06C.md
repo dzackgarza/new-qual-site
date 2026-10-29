@@ -17,7 +17,7 @@ review: draft
 
 ::: {.problem}
 Let $M$ be a $2n+1$ dimensional compact oriented manifold with $\pi_1(M) = \ZZ/k$, where $k$ is an odd integer.
-Show that the degree of any map from $M$ to $\mathbb{RP}^{2n+1}$ is an even integer.
+Show that the degree of any map from $M$ to $\RP^{2n+1}$ is an even integer.
 :::
 
 ::: {.solution}
@@ -29,7 +29,7 @@ Show that the degree of any map from $M$ to $\mathbb{RP}^{2n+1}$ is an even inte
 The induced homomorphism
 $$
 f_*:\pi_1(M)\cong\ZZ/k\longrightarrow
-\pi_1(\mathbb{RP}^{2n+1})\cong\ZZ/2
+\pi_1(\RP^{2n+1})\cong\ZZ/2
 $$
 is trivial.
 
@@ -45,7 +45,7 @@ The image of an element whose order divides the odd integer $k$ must have order 
 
 Therefore $f$ lifts through the universal double cover
 $$
-p:S^{2n+1}\to\mathbb{RP}^{2n+1}:
+p:S^{2n+1}\to\RP^{2n+1}:
 $$
 there is $\widetilde f:M\to S^{2n+1}$ with
 $$
@@ -62,7 +62,7 @@ The lifting criterion for coverings says that a map lifts precisely when the ima
 
 ::: pf-step
 
-Because $2n+1$ is odd, $\mathbb{RP}^{2n+1}$ is orientable and the covering $p$ has degree $2$ after compatible choices of orientation.
+Because $2n+1$ is odd, $\RP^{2n+1}$ is orientable and the covering $p$ has degree $2$ after compatible choices of orientation.
 
 ::: pf-proof
 

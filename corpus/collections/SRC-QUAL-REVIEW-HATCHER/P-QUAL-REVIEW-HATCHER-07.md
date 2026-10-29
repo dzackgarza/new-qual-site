@@ -74,7 +74,7 @@ Each projective-plane link becomes a nonorientable genus-\(1\) surface with two 
 
 ::: pf-proof
 
-Replacing a torus-link by \(\mathbb{RP}^2\) and cutting its two attaching necks removes two open disks from \(\mathbb{RP}^2\).
+Replacing a torus-link by \(\RP^2\) and cutting its two attaching necks removes two open disks from \(\RP^2\).
 
 :::
 
@@ -159,7 +159,7 @@ Each projective-plane piece contains a one-sided simple closed curve disjoint fr
 
 ::: pf-step
 
-By the classification theorem, \(Y\) is homeomorphic to a connected sum of \(k\) copies of \(\mathbb{RP}^2\) for some \(k\ge1\).
+By the classification theorem, \(Y\) is homeomorphic to a connected sum of \(k\) copies of \(\RP^2\) for some \(k\ge1\).
 
 
 ::: pf-proof
@@ -182,7 +182,7 @@ A closed nonorientable surface of genus \(k\) has
 
 This is the Euler-characteristic formula for
 \[
-\#^k\mathbb{RP}^2.
+\#^k\RP^2.
 \]
 
 :::
@@ -231,7 +231,7 @@ Thus
 \boxed{
 Y
 \cong
-\#^{10}\mathbb{RP}^2}.
+\#^{10}\RP^2}.
 \]
 
 

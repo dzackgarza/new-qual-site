@@ -14,7 +14,7 @@ review: draft
 
 ::: {.problem}
 Let $Y$ be a space whose homology groups vanish except for $H_0(Y; \ZZ) = \ZZ$ and $H_2(Y; \ZZ) = \ZZ_4$.
-Compute the homology $H_*(\mathbb{RP}^2 \times Y; \ZZ)$ and cohomology $H^*(\mathbb{RP}^2 \times Y; \ZZ)$.
+Compute the homology $H_*(\RP^2 \times Y; \ZZ)$ and cohomology $H^*(\RP^2 \times Y; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -24,7 +24,7 @@ Compute the homology $H_*(\mathbb{RP}^2 \times Y; \ZZ)$ and cohomology $H^*(\mat
 ::: pf-step
 The only nonzero integral homology groups of the factors are
 $$
-H_0(\mathbb{RP}^2)=\ZZ,\quad H_1(\mathbb{RP}^2)=\ZZ/2,
+H_0(\RP^2)=\ZZ,\quad H_1(\RP^2)=\ZZ/2,
 $$
 and
 $$
@@ -32,7 +32,7 @@ H_0(Y)=\ZZ,\quad H_2(Y)=\ZZ/4.
 $$
 
 ::: pf-proof
-These are the standard homology groups of $\mathbb{RP}^2$ and the groups assumed for $Y$.
+These are the standard homology groups of $\RP^2$ and the groups assumed for $Y$.
 :::
 
 :::
@@ -40,7 +40,7 @@ These are the standard homology groups of $\mathbb{RP}^2$ and the groups assumed
 ::: {.pf-step #kunneth-homology}
 The Künneth theorem gives
 $$
-H_n(\mathbb{RP}^2\times Y;\ZZ)\cong
+H_n(\RP^2\times Y;\ZZ)\cong
 \begin{cases}
 \ZZ,&n=0,\\
 \ZZ/2,&n=1,\\
@@ -67,7 +67,7 @@ which appears one degree later, in degree $4$.
 ::: pf-step
 The cohomological universal coefficient theorem gives
 $$
-H^n(\mathbb{RP}^2\times Y;\ZZ)\cong
+H^n(\RP^2\times Y;\ZZ)\cong
 \begin{cases}
 \ZZ,&n=0,\\
 0,&n=1,\\

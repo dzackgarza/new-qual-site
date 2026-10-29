@@ -30,7 +30,7 @@ $$
 \frac {a z + b}{c z + d} = f ^ {- 1} \left(e ^ {i \theta} f (z)\right).
 $$
 
-(b) Given $\alpha \in \mathbb { D }$ find real numbers $a , b , c ,$ d so that ad $- b c = 1$ , and so that for any $z \in \mathbb { H }$
+(b) Given $\alpha \in \DD$ find real numbers $a , b , c ,$ d so that ad $- b c = 1$ , and so that for any $z \in \mathbb { H }$
 
 $$
 \frac {a z + b}{c z + d} = f ^ {- 1} \left(\psi_ {\alpha} (f (z))\right),

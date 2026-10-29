@@ -61,7 +61,7 @@ zero of $f_n$ for all sufficiently large $n$.
 
 **Riemann mapping theorem.** Every nonempty simply connected proper domain
 $G\subsetneq\CC$ is conformally equivalent to the unit disk. If
-$a\in G$, there is a unique conformal map $F:G\to\mathbb D$ satisfying
+$a\in G$, there is a unique conformal map $F:G\to\DD$ satisfying
 $F(a)=0$ and $F'(a)>0$.
 
 **Open mapping theorem.** A nonconstant holomorphic function on a domain maps

@@ -40,9 +40,9 @@ Let
 \]
 This maps the upper half-plane biholomorphically onto the unit disc and satisfies $\phi(i)=0$. Define
 \[
-g(w)=F(\phi^{-1}(w)),\qquad w\in\mathbb D.
+g(w)=F(\phi^{-1}(w)),\qquad w\in\DD.
 \]
-Then $g$ is holomorphic on $\mathbb D$, $|g(w)|\le1$, and $g(0)=F(i)=0$. By Schwarz's lemma,
+Then $g$ is holomorphic on $\DD$, $|g(w)|\le1$, and $g(0)=F(i)=0$. By Schwarz's lemma,
 \[
 |g(w)|\le|w|.
 \]

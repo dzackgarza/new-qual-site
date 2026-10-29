@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESTOP12-4
 kind: problem
-title: CW structures on $\mathbb{RP}^2$ and $\mathbb{CP}^4$ and the homology of $\mathbb{CP}^4$
+title: CW structures on $\RP^2$ and $\CP^4$ and the homology of $\CP^4$
 classification: {areas: [topology], topics: []}
 relations: []
 review: draft
@@ -12,8 +12,8 @@ audit:
 
 ::: {.problem}
 1. Define a CW complex.
-2. Give CW-complex structures on $\mathbb{RP}^2$ and $\mathbb{CP}^4$.
-3. Using the CW structure from part 2, compute the homology of $\mathbb{CP}^4$.
+2. Give CW-complex structures on $\RP^2$ and $\CP^4$.
+3. Using the CW structure from part 2, compute the homology of $\CP^4$.
 :::
 
 ::: {.solution}
@@ -95,7 +95,7 @@ The open cells are the images of the interiors of the attached disks.
 
 The projective plane
 \[
-\mathbb{RP}^2
+\RP^2
 \]
 has a CW structure with exactly one cell in each dimension
 \[
@@ -107,43 +107,43 @@ has a CW structure with exactly one cell in each dimension
 
 Use the filtration
 \[
-\mathbb{RP}^0
+\RP^0
 \subset
-\mathbb{RP}^1
+\RP^1
 \subset
-\mathbb{RP}^2.
+\RP^2.
 \]
 
 The space
 \[
-\mathbb{RP}^0
+\RP^0
 \]
 is a point, giving one $0$-cell.
 
 The difference
 \[
-\mathbb{RP}^1
+\RP^1
 \setminus
-\mathbb{RP}^0
+\RP^0
 \]
 is an open $1$-cell, so one $1$-cell is attached.
 Indeed,
 \[
-\mathbb{RP}^1
+\RP^1
 \cong
 S^1.
 \]
 
 Finally,
 \[
-\mathbb{RP}^2
+\RP^2
 \setminus
-\mathbb{RP}^1
+\RP^1
 \]
 is an open $2$-cell.
 Equivalently,
 \[
-\mathbb{RP}^2
+\RP^2
 \]
 is obtained from a closed disk
 \[
@@ -152,7 +152,7 @@ D^2
 by identifying antipodal boundary points.
 Thus the $2$-cell is attached to
 \[
-\mathbb{RP}^1\cong S^1
+\RP^1\cong S^1
 \]
 by the double covering
 \[
@@ -170,7 +170,7 @@ which has degree $2$.
 
 The complex projective space
 \[
-\mathbb{CP}^4
+\CP^4
 \]
 has one cell in each even dimension
 \[
@@ -183,15 +183,15 @@ and no odd-dimensional cells.
 
 Use the standard filtration
 \[
-\mathbb{CP}^0
+\CP^0
 \subset
-\mathbb{CP}^1
+\CP^1
 \subset
-\mathbb{CP}^2
+\CP^2
 \subset
-\mathbb{CP}^3
+\CP^3
 \subset
-\mathbb{CP}^4.
+\CP^4.
 \]
 
 For each
@@ -200,9 +200,9 @@ k=0,1,2,3,4,
 \]
 the difference
 \[
-\mathbb{CP}^k
+\CP^k
 \setminus
-\mathbb{CP}^{k-1}
+\CP^{k-1}
 \]
 is homeomorphic to
 \[
@@ -233,12 +233,12 @@ appears at each stage.
 
 Therefore the cellular chain groups of
 \[
-\mathbb{CP}^4
+\CP^4
 \]
 are
 \[
 C_n^{\mathrm{cell}}
-(\mathbb{CP}^4)
+(\CP^4)
 \cong
 \begin{cases}
 \ZZ,
@@ -263,7 +263,7 @@ odd degrees.
 
 Every cellular boundary map for
 \[
-\mathbb{CP}^4
+\CP^4
 \]
 is zero.
 
@@ -307,9 +307,9 @@ d_n=0.
 
 Hence the cellular homology is
 \[
-H_n(\mathbb{CP}^4;\ZZ)
+H_n(\CP^4;\ZZ)
 \cong
-C_n^{\mathrm{cell}}(\mathbb{CP}^4).
+C_n^{\mathrm{cell}}(\CP^4).
 \]
 
 
@@ -346,7 +346,7 @@ C_n^{\mathrm{cell}}.
 Thus
 \[
 \boxed{
-H_n(\mathbb{CP}^4;\ZZ)
+H_n(\CP^4;\ZZ)
 \cong
 \begin{cases}
 \ZZ,
@@ -372,7 +372,7 @@ Step [](#s1-1){.pf-ref} defines a CW complex.
 Steps [](#s1-2){.pf-ref} through [](#s1-3){.pf-ref} give the requested CW structures.
 Step [](#s1-7){.pf-ref} computes the homology of
 \[
-\mathbb{CP}^4.
+\CP^4.
 \]
 
 :::

@@ -27,7 +27,7 @@ Suppose $p$ is a prime number and the minimal polynomial of $g \in \operatorname
 
 (a) Find the Jordan form of $g$ if $F = \CC$.
 
-(b) Find the Jordan form of $g$ if $F = \overline{\mathbb{F}}_p$ is an algebraic closure of the finite field $\mathbb{F}_p$.
+(b) Find the Jordan form of $g$ if $F = \overline{\FF}_p$ is an algebraic closure of the finite field $\FF_p$.
 :::
 
 ::: {.solution}
@@ -91,7 +91,7 @@ J = \begin{pmatrix}
 
 Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
 
-**(b). Case $F = \overline{\mathbb{F}}_p$:**
+**(b). Case $F = \overline{\FF}_p$:**
 
 :::
 

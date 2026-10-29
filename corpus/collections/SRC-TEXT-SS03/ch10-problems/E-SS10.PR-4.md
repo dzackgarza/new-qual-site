@@ -43,9 +43,9 @@ Prove that $f \equiv 0$.
 
 ::: pf-proof
 
-Let $\Phi(z) = \frac{z - i}{z + i}$ be the Cayley transform $\mathbb H\to\mathbb D$ and $g=f\circ\Phi^{-1}$, a bounded holomorphic function on $\mathbb D$ vanishing at $\alpha_k = \Phi(\tau_k)$. Then
+Let $\Phi(z) = \frac{z - i}{z + i}$ be the Cayley transform $\mathbb H\to\DD$ and $g=f\circ\Phi^{-1}$, a bounded holomorphic function on $\DD$ vanishing at $\alpha_k = \Phi(\tau_k)$. Then
 $$1 - |\alpha_k|^2 = \frac{(x_k^2 + (y_k+1)^2) - (x_k^2 + (y_k-1)^2)}{x_k^2 + (y_k+1)^2} = \frac{4 y_k}{x_k^2 + (y_k + 1)^2}\ge\frac{4y_k}{5},$$
-since $x_k^2 + (y_k + 1)^2 \le 1 + 4$. Using $1 - r \ge \frac{1}{2}(1 - r^2)$ for $0\le r<1$, $\sum_k (1 - |\alpha_k|) \ge \frac{2}{5} \sum_k y_k = \infty$. By [[E-SS5.PR-1]], the zeros of a bounded holomorphic function on $\mathbb D$ that is not identically zero satisfy $\sum(1-\abs{\alpha_k})<\infty$. Hence $g \equiv 0$ and $f \equiv 0$.
+since $x_k^2 + (y_k + 1)^2 \le 1 + 4$. Using $1 - r \ge \frac{1}{2}(1 - r^2)$ for $0\le r<1$, $\sum_k (1 - |\alpha_k|) \ge \frac{2}{5} \sum_k y_k = \infty$. By [[E-SS5.PR-1]], the zeros of a bounded holomorphic function on $\DD$ that is not identically zero satisfy $\sum(1-\abs{\alpha_k})<\infty$. Hence $g \equiv 0$ and $f \equiv 0$.
 
 :::
 

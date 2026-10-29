@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f(z)$ be analytic with $|f(z)| \leq M$ in $\mathbb{D}$ and $f(0) = \alpha > 0$.
+Let $f(z)$ be analytic with $|f(z)| \leq M$ in $\DD$ and $f(0) = \alpha > 0$.
 
 (a) Show that $f(z)$ has no zeros in the disk $|z| < \alpha/M$.
 
@@ -26,8 +26,8 @@ If $M=0$ there is nothing to prove, so assume $M>0$ and put
 h(z)=\frac{f(z)}M,
 \qquad a=\frac\alpha M\in(0,1].
 \]
-Then $h:\mathbb D\to\overline{\mathbb D}$ is holomorphic and $h(0)=a$.
-If $h$ is nonconstant, in fact $h(\mathbb D)\subset\mathbb D$.
+Then $h:\DD\to\overline{\DD}$ is holomorphic and $h(0)=a$.
+If $h$ is nonconstant, in fact $h(\DD)\subset\DD$.
 
 Suppose $h(z_0)=0$. Schwarz--Pick gives
 \[
@@ -60,5 +60,5 @@ f(z)=-M\frac{a}{z_0}
 \]
 
 If $a=1$, the maximum principle forces $h\equiv1$, so there is no zero in
-$\mathbb D$ and hence no extremal of the requested kind.
+$\DD$ and hence no extremal of the requested kind.
 :::

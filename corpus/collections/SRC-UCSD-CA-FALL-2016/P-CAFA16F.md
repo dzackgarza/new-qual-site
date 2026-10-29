@@ -18,11 +18,11 @@ audit:
 
 ::: {.problem}
 For $k \geq 1$, let $a_k = 1 - 1/k^2$.
-For $n \geq 1$, define $f_n: \mathbb{D} \to \mathbb{D}$ by $f_n(z) = \prod_{k=1}^{n} \frac{a_k - z}{1 - a_k z}$.
+For $n \geq 1$, define $f_n: \DD \to \DD$ by $f_n(z) = \prod_{k=1}^{n} \frac{a_k - z}{1 - a_k z}$.
 
-(a) Prove that the sequence $\{f_n\}$ converges to an analytic function $f: \mathbb{D} \to \mathbb{D}$, uniformly on compact subsets of $\mathbb{D}$.
+(a) Prove that the sequence $\{f_n\}$ converges to an analytic function $f: \DD \to \DD$, uniformly on compact subsets of $\DD$.
 
-(b) Prove that there do not exist an open set $U \subset \CC$ and an analytic function $g: U \to \CC$ such that $\overline{\mathbb{D}} \subset U$ and $g(z) = f(z)$ for every $z \in \mathbb{D}$.
+(b) Prove that there do not exist an open set $U \subset \CC$ and an analytic function $g: U \to \CC$ such that $\overline{\DD} \subset U$ and $g(z) = f(z)$ for every $z \in \DD$.
 :::
 
 ::: {.solution}
@@ -67,12 +67,12 @@ convergence of the $p$-series with $p = 2$.
 :::
 
 ::: pf-step
-Show uniform convergence on compact subsets $K \subset \mathbb{D}$:
+Show uniform convergence on compact subsets $K \subset \DD$:
 
 ::: pf-proof
 
 ::: pf-step
-Let $K \subset \mathbb{D}$ be a compact subset, and set $r = \sup_{z \in K} |z| < 1$.
+Let $K \subset \DD$ be a compact subset, and set $r = \sup_{z \in K} |z| < 1$.
 
 ::: pf-proof
 compact subsets of the open unit disk are bounded away from the boundary.
@@ -114,7 +114,7 @@ step [](#s2-3){.pf-ref} and Weierstrass $M$-test.
 :::
 
 ::: pf-step
-By the theorem on infinite products of analytic functions, the partial products $f_n(z) = -z \prod_{k=2}^n \frac{a_k - z}{1 - a_k z}$ converge uniformly on compact subsets of $\mathbb{D}$ to an analytic function $f: \mathbb{D} \to \CC$.
+By the theorem on infinite products of analytic functions, the partial products $f_n(z) = -z \prod_{k=2}^n \frac{a_k - z}{1 - a_k z}$ converge uniformly on compact subsets of $\DD$ to an analytic function $f: \DD \to \CC$.
 
 ::: pf-proof
 uniform convergence of $\sum |u_k|$ implies uniform convergence of $\prod (1 - u_k)$.
@@ -127,12 +127,12 @@ uniform convergence of $\sum |u_k|$ implies uniform convergence of $\prod (1 - u
 :::
 
 ::: {.pf-step #s3}
-Show that $f(\mathbb{D}) \subset \mathbb{D}$:
+Show that $f(\DD) \subset \DD$:
 
 ::: pf-proof
 
 ::: pf-step
-Each Blaschke factor $B_k(z) = \frac{a_k - z}{1 - a_k z}$ is a conformal automorphism of $\mathbb{D}$, so $|B_k(z)| < 1$ for all $z \in \mathbb{D}$.
+Each Blaschke factor $B_k(z) = \frac{a_k - z}{1 - a_k z}$ is a conformal automorphism of $\DD$, so $|B_k(z)| < 1$ for all $z \in \DD$.
 
 ::: pf-proof
 properties of Möbius transformations of the disk.
@@ -141,7 +141,7 @@ properties of Möbius transformations of the disk.
 :::
 
 ::: pf-step
-Thus $|f_n(z)| \le 1$ for all $z \in \mathbb{D}$ and all $n$, so $|f(z)| \le 1$ for all $z \in \mathbb{D}$.
+Thus $|f_n(z)| \le 1$ for all $z \in \DD$ and all $n$, so $|f(z)| \le 1$ for all $z \in \DD$.
 
 ::: pf-proof
 limit of bounded functions.
@@ -159,7 +159,7 @@ $f(0) = 0 \neq 1$.
 :::
 
 ::: pf-step
-By the Maximum Modulus Principle, $|f(z)| < 1$ for all $z \in \mathbb{D}$, so $f: \mathbb{D} \to \mathbb{D}$.
+By the Maximum Modulus Principle, $|f(z)| < 1$ for all $z \in \DD$, so $f: \DD \to \DD$.
 
 ::: pf-proof
 open mapping theorem / maximum modulus principle for non-constant analytic functions.
@@ -178,7 +178,7 @@ open mapping theorem / maximum modulus principle for non-constant analytic funct
 ::: pf
 
 ::: {.pf-step #s4}
-Assume for contradiction that there exist an open set $U \supset \overline{\mathbb{D}}$ and an analytic function $g: U \to \CC$ such that $g(z) = f(z)$ for all $z \in \mathbb{D}$.
+Assume for contradiction that there exist an open set $U \supset \overline{\DD}$ and an analytic function $g: U \to \CC$ such that $g(z) = f(z)$ for all $z \in \DD$.
 
 ::: pf-proof
 proof by contradiction assumption.
@@ -192,7 +192,7 @@ Show that $z = 1$ is an accumulation point of zeros of $g$:
 ::: pf-proof
 
 ::: pf-step
-For every $k \ge 1$, $a_k \in \mathbb{D}$, so $g(a_k) = f(a_k) = 0$.
+For every $k \ge 1$, $a_k \in \DD$, so $g(a_k) = f(a_k) = 0$.
 
 ::: pf-proof
 step [](#s4){.pf-ref} and definition of $f$.
@@ -210,10 +210,10 @@ $\lim 1/k^2 = 0$.
 :::
 
 ::: pf-step
-Since $1 \in \overline{\mathbb{D}} \subset U$, the point $z_0 = 1$ lies in $U$.
+Since $1 \in \overline{\DD} \subset U$, the point $z_0 = 1$ lies in $U$.
 
 ::: pf-proof
-hypothesis $\overline{\mathbb{D}} \subset U$.
+hypothesis $\overline{\DD} \subset U$.
 :::
 
 :::
@@ -246,11 +246,11 @@ Apply the Identity Theorem:
 ::: pf-proof
 
 ::: pf-step
-$U$ contains the connected open unit disk $\mathbb{D}$ and the point $1 \in \partial\mathbb{D}$.
-Let $V \subseteq U$ be the connected component of $U$ containing $\mathbb{D}$.
+$U$ contains the connected open unit disk $\DD$ and the point $1 \in \partial\DD$.
+Let $V \subseteq U$ be the connected component of $U$ containing $\DD$.
 
 ::: pf-proof
-$U$ is a neighborhood of the connected set $\overline{\mathbb{D}}$, so $\overline{\mathbb{D}}$ lies in a single connected component $V$.
+$U$ is a neighborhood of the connected set $\overline{\DD}$, so $\overline{\DD}$ lies in a single connected component $V$.
 :::
 
 :::
@@ -265,10 +265,10 @@ Identity Theorem for analytic functions on a connected domain.
 :::
 
 ::: {.pf-step #s6-3}
-Thus $f(z) = g(z) = 0$ for all $z \in \mathbb{D}$.
+Thus $f(z) = g(z) = 0$ for all $z \in \DD$.
 
 ::: pf-proof
-$\mathbb{D} \subset V$ and step [](#s4){.pf-ref}.
+$\DD \subset V$ and step [](#s4){.pf-ref}.
 :::
 
 :::

@@ -19,11 +19,11 @@ audit:
 ::: {.problem}
 Problem 12. Let $f(z)$ be bounded and holomorphic on the unit disc
 \[
-\mathbb D=\{z:|z|<1\}.
+\DD=\{z:|z|<1\}.
 \]
-Prove that for every $w\in\mathbb D$,
+Prove that for every $w\in\DD$,
 \[
-f(w)=\frac1\pi\int_{\mathbb D}\frac{f(z)}{(1-\overline z w)^2}\,dA(z),
+f(w)=\frac1\pi\int_{\DD}\frac{f(z)}{(1-\overline z w)^2}\,dA(z),
 \]
 where $dA(z)$ means integration with respect to Lebesgue measure.
 :::
@@ -42,7 +42,7 @@ f(z)=\sum_{n=0}^{\infty}a_nz^n.
 For every \(n\ge0\),
 \[
 \boxed{
-\int_{\mathbb D}
+\int_{\DD}
 f(z)\overline z^{\,n}\,dA(z)
 =
 \frac{\pi}{n+1}a_n}.
@@ -51,14 +51,14 @@ f(z)\overline z^{\,n}\,dA(z)
 
 ::: pf-proof
 
-Because \(f\) is bounded and \(\mathbb D\) has finite area, the function
+Because \(f\) is bounded and \(\DD\) has finite area, the function
 \[
 f(z)\overline z^{\,n}
 \]
 is integrable. In polar coordinates,
 \[
 \begin{aligned}
-\int_{\mathbb D}
+\int_{\DD}
 f(z)\overline z^{\,n}\,dA(z)
 &=
 \int_0^1
@@ -86,7 +86,7 @@ e^{i(m-n)\theta}\,d\theta\\
 Therefore
 \[
 \begin{aligned}
-\int_{\mathbb D}
+\int_{\DD}
 f(z)\overline z^{\,n}\,dA(z)
 &=
 2\pi a_n
@@ -105,7 +105,7 @@ f(z)\overline z^{\,n}\,dA(z)
 
 ::: {.pf-step #s1-2}
 
-For fixed \(w\in\mathbb D\),
+For fixed \(w\in\DD\),
 \[
 \boxed{
 \frac1{(1-\overline zw)^2}
@@ -113,7 +113,7 @@ For fixed \(w\in\mathbb D\),
 \sum_{n=0}^{\infty}
 (n+1)\overline z^{\,n}w^n}
 \]
-uniformly for \(z\in\mathbb D\).
+uniformly for \(z\in\DD\).
 
 
 ::: pf-proof
@@ -165,7 +165,7 @@ Let
 \[
 \|f\|_\infty
 =
-\sup_{z\in\mathbb D}|f(z)|
+\sup_{z\in\DD}|f(z)|
 <\infty.
 \]
 The terms satisfy
@@ -176,8 +176,8 @@ The terms satisfy
 (n+1)|w|^n.
 \]
 The right-hand side is summable in \(n\) and independent of \(z\), while
-\(\mathbb D\) has finite area. Equivalently, the kernel series converges
-uniformly by step [](#s1-2){.pf-ref} and \(f\in L^1(\mathbb D)\). Hence integration and
+\(\DD\) has finite area. Equivalently, the kernel series converges
+uniformly by step [](#s1-2){.pf-ref} and \(f\in L^1(\DD)\). Hence integration and
 summation may be interchanged.
 
 :::
@@ -186,11 +186,11 @@ summation may be interchanged.
 
 ::: {.pf-step #s1-4}
 
-For every \(w\in\mathbb D\),
+For every \(w\in\DD\),
 \[
 \begin{aligned}
 \frac1\pi
-\int_{\mathbb D}
+\int_{\DD}
 \frac{f(z)}
 {(1-\overline zw)^2}
 \,dA(z)
@@ -206,7 +206,7 @@ By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref},
 \[
 \begin{aligned}
 \frac1\pi
-\int_{\mathbb D}
+\int_{\DD}
 \frac{f(z)}
 {(1-\overline zw)^2}
 \,dA(z)
@@ -214,7 +214,7 @@ By steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref},
 \frac1\pi
 \sum_{n=0}^{\infty}
 (n+1)w^n
-\int_{\mathbb D}
+\int_{\DD}
 f(z)\overline z^{\,n}\,dA(z).
 \end{aligned}
 \]
@@ -243,18 +243,18 @@ Therefore
 f(w)
 =
 \frac1\pi
-\int_{\mathbb D}
+\int_{\DD}
 \frac{f(z)}
 {(1-\overline zw)^2}
 \,dA(z)}
-\qquad(w\in\mathbb D).
+\qquad(w\in\DD).
 \]
 
 
 ::: pf-proof
 
 The Taylor series of the holomorphic function \(f\) converges to \(f(w)\)
-for every \(w\in\mathbb D\). Thus the series on the right-hand side of
+for every \(w\in\DD\). Thus the series on the right-hand side of
 step [](#s1-4){.pf-ref} equals \(f(w)\).
 
 :::

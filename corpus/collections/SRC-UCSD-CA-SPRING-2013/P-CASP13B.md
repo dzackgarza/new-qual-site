@@ -21,8 +21,8 @@ It is possible for $Z$ to have an accumulation point in $U$.
 
 (b) There is a meromorphic function $f$ on $\CC \setminus (2\ZZ)^2$ such that, if $n, m \in 2\ZZ$ are even integers, then $f$ has a pole of order $n^2 + m^2$ at $(n, m)$, and if $(n, m) \in \ZZ \times \ZZ$ with at least one odd, then $f$ has a zero of order $n^2 + m^2$ at $(n, m)$.
 
-(c) Let $\{u_n\}$ be a sequence of harmonic functions in $\mathbb{D}$.
-If $u_n$ converges to $u$ uniformly on compact subsets, then $u$ is harmonic on $\mathbb{D}$.
+(c) Let $\{u_n\}$ be a sequence of harmonic functions in $\DD$.
+If $u_n$ converges to $u$ uniformly on compact subsets, then $u$ is harmonic on $\DD$.
 
 (d) There is a sequence of holomorphic polynomials $p_n$ such that $$\lim_{n \to \infty} \sup_{2 \leq |z| \leq 3} \left|\frac{1}{z^2(z-5)^3} - p_n(z)\right| = 0.$$
 :::
@@ -48,7 +48,7 @@ at $(0,0)$. A pole has positive integer order, so a pole of order $0$ does
 not exist. Hence the asserted meromorphic function cannot exist as stated.
 
 **(c) True.** The mean-value property passes to locally uniform limits. If
-$\overline{B(a,r)}\subset\mathbb D$, then
+$\overline{B(a,r)}\subset\DD$, then
 \[
 u_n(a)=\frac1{2\pi}\int_0^{2\pi}u_n(a+re^{it})\,dt.
 \]

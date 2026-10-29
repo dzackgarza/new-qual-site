@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-03
 kind: problem
-title: Towers of quadratic extensions of $\mathbb F_p$ by iterated square roots
+title: Towers of quadratic extensions of $\FF_p$ by iterated square roots
 classification:
   areas: [algebra]
   topics: []
@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-Let p be a prime which is  1 mod $2 ^ { k }$ , but not congruent to 1 modulo a higher power of 2. Assume $k \geq 2$ . Assume that $u _ { 0 } \in \mathbb { F } _ { p }$ is not a square.
+Let p be a prime which is  1 mod $2 ^ { k }$ , but not congruent to 1 modulo a higher power of 2. Assume $k \geq 2$ . Assume that $u _ { 0 } \in \FF _ { p }$ is not a square.
 Construct a sequence of pairs $\left( E _ { n } , u _ { n } \right)$ where $E _ { n }$ is a field and $u _ { n } \in E _ { n }$ as follows.
-Define $( E _ { 0 } , u _ { 0 } ) = ( \mathbb { F } _ { p } , u _ { 0 } )$
+Define $( E _ { 0 } , u _ { 0 } ) = ( \FF _ { p } , u _ { 0 } )$
 
 Assume that $( E _ { n } , u _ { n } )$ has been defined.
 Let $E _ { n + 1 }$ be a field extension of $E _ { n }$ obtaing by adjoining a square-root $u _ { n + 1 }$ of $u _ { n } \in E _ { n }$
@@ -59,17 +59,17 @@ u_n^{2^n}=u_{n-1}^{2^{n-1}}=\cdots=u_0.
 
 If all extensions through $E_n$ have degree $2$, then
 \[
-E_n\cong\mathbb F_{p^{2^n}}.
+E_n\cong\FF_{p^{2^n}}.
 \]
 
 
 ::: pf-proof
 
-Starting with $E_0=\mathbb F_p$, the tower law gives
+Starting with $E_0=\FF_p$, the tower law gives
 \[
-[E_n:\mathbb F_p]=2^n.
+[E_n:\FF_p]=2^n.
 \]
-Every finite extension of $\mathbb F_p$ of degree $2^n$ is isomorphic to the unique finite field $\mathbb F_{p^{2^n}}$.
+Every finite extension of $\FF_p$ of degree $2^n$ is isomorphic to the unique finite field $\FF_{p^{2^n}}$.
 
 :::
 
@@ -101,7 +101,7 @@ u_0^{(p-1)/2}=-1.
 
 ::: pf-proof
 
-By hypothesis $u_0$ is not a square in $\mathbb F_p$. Euler's criterion, equivalently step [](#p1-s1-3){.pf-ref} with $Q=p$, gives the value $-1$ rather than $1$.
+By hypothesis $u_0$ is not a square in $\FF_p$. Euler's criterion, equivalently step [](#p1-s1-3){.pf-ref} with $Q=p$, gives the value $-1$ rather than $1$.
 
 :::
 
@@ -129,7 +129,7 @@ Assume inductively that
 \[
 [E_j:E_{j-1}]=2
 \]
-for $1\leq j\leq n$. Then $E_n=\mathbb F_{p^{2^n}}$ and
+for $1\leq j\leq n$. Then $E_n=\FF_{p^{2^n}}$ and
 \[
 u_n^{(p^{2^n}-1)/2}=-1.
 \]
@@ -260,7 +260,7 @@ u_n^{2^n}=u_{n-1}^{2^{n-1}}=\cdots=u_0.
 
 It suffices to prove inductively that
 \[
-E_n=\mathbb F_{p^{2^n}}
+E_n=\FF_{p^{2^n}}
 \]
 and that $u_n$ is not a square in $E_n$.
 
@@ -271,7 +271,7 @@ If $u_n$ is not a square in $E_n$, then $X^2-u_n$ is irreducible over $E_n$, so 
 \[
 [E_{n+1}:E_n]=2.
 \]
-Since a degree-two extension of the finite field $\mathbb F_{p^{2^n}}$ is the unique field $\mathbb F_{p^{2^{n+1}}}$, the asserted field identification propagates as well.
+Since a degree-two extension of the finite field $\FF_{p^{2^n}}$ is the unique field $\FF_{p^{2^{n+1}}}$, the asserted field identification propagates as well.
 
 :::
 
@@ -279,7 +279,7 @@ Since a degree-two extension of the finite field $\mathbb F_{p^{2^n}}$ is the un
 
 ::: {.pf-step #p2-s1-3}
 
-The assertion holds at $n=0$: $E_0=\mathbb F_p$ and $u_0$ is not a square in $E_0$.
+The assertion holds at $n=0$: $E_0=\FF_p$ and $u_0$ is not a square in $E_0$.
 
 
 ::: pf-proof
@@ -294,7 +294,7 @@ This is exactly the initial condition in the problem.
 
 Assume
 \[
-E_n=\mathbb F_{p^{2^n}}
+E_n=\FF_{p^{2^n}}
 \]
 and $u_n$ is not a square in $E_n$. Then
 \[
@@ -302,7 +302,7 @@ and $u_n$ is not a square in $E_n$. Then
 \]
 and
 \[
-E_{n+1}=\mathbb F_{p^{2^{n+1}}}.
+E_{n+1}=\FF_{p^{2^{n+1}}}.
 \]
 
 
@@ -312,7 +312,7 @@ The polynomial $X^2-u_n$ has no root in $E_n$ by the nonsquare hypothesis, hence
 \[
 |E_n|^2=p^{2^{n+1}}
 \]
-elements, so it is the finite field $\mathbb F_{p^{2^{n+1}}}$.
+elements, so it is the finite field $\FF_{p^{2^{n+1}}}$.
 
 :::
 
@@ -320,7 +320,7 @@ elements, so it is the finite field $\mathbb F_{p^{2^{n+1}}}$.
 
 ::: {.pf-step #p2-s1-5}
 
-In a finite field $K=\mathbb F_Q$ of odd order, an element $a\in K^\times$ is a square if and only if
+In a finite field $K=\FF_Q$ of odd order, an element $a\in K^\times$ is a square if and only if
 \[
 a^{(Q-1)/2}=1.
 \]
@@ -340,7 +340,7 @@ so this equals $1$ exactly when $r$ is even.
 
 ::: {.pf-step #p2-s1-6}
 
-Since $u_0$ is a nonsquare in $\mathbb F_p$, one has
+Since $u_0$ is a nonsquare in $\FF_p$, one has
 \[
 u_0^{(p-1)/2}=-1.
 \]

@@ -30,19 +30,19 @@ $$
 \abs{\frac{w - z}{1 - \bar{w}z}} = 1 \quad \text{if } \abs{z} = 1 \text{ or } \abs{w} = 1.
 $$
 
-(b) Prove that for fixed $w$ in the unit disk $\mathbb{D}$, the mapping
+(b) Prove that for fixed $w$ in the unit disk $\DD$, the mapping
 $$
 F \colon z \mapsto \frac{w - z}{1 - \bar{w}z}
 $$
 satisfies the following conditions:
 
-(i) $F$ maps $\mathbb{D}$ to itself and is holomorphic.
+(i) $F$ maps $\DD$ to itself and is holomorphic.
 
 (ii) $F$ interchanges $0$ and $w$, namely, $F(0) = w$ and $F(w) = 0$.
 
 (iii) $\abs{F(z)} = 1$ if $\abs{z} = 1$.
 
-(iv) $F \colon \mathbb{D} \to \mathbb{D}$ is bijective.
+(iv) $F \colon \DD \to \DD$ is bijective.
 
 Hint: Calculate $F \circ F$.
 :::

@@ -75,7 +75,7 @@ v,u,e_3,\ldots,e_n
 of $V$.
 Define a linear functional
 \[
-\varphi:V\to\mathbb F
+\varphi:V\to\FF
 \]
 by
 \[

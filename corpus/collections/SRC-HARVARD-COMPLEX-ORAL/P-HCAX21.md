@@ -19,7 +19,7 @@ Prove the uniqueness statement in the Riemann mapping theorem after fixing the i
 ::: {.solution}
 Let $\Omega\subsetneq\CC$ be simply connected, fix $z_0\in\Omega$, and suppose
 \[
-f,g:\Omega\longrightarrow\mathbb D
+f,g:\Omega\longrightarrow\DD
 \]
 are conformal isomorphisms satisfying
 \[
@@ -32,7 +32,7 @@ and
 
 Consider
 \[
-h=g\circ f^{-1}:\mathbb D\longrightarrow\mathbb D.
+h=g\circ f^{-1}:\DD\longrightarrow\DD.
 \]
 Then $h$ is an automorphism of the disk and $h(0)=0$. By Schwarz's lemma,
 \[
@@ -42,7 +42,7 @@ Applying Schwarz's lemma to $h^{-1}$ gives the reverse inequality, so
 \[
 |h(z)|=|z|
 \]
-for every $z\in\mathbb D$. The rigidity case of Schwarz's lemma therefore yields
+for every $z\in\DD$. The rigidity case of Schwarz's lemma therefore yields
 \[
 h(z)=e^{i\theta}z
 \]

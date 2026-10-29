@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-ZM6JCKEX
 kind: problem
-title: The equatorial inclusion $\mathbb{RP}^2\to\mathbb{RP}^3$ is not nullhomotopic
+title: The equatorial inclusion $\RP^2\to\RP^3$ is not nullhomotopic
 classification:
   areas:
   - topology
@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $i: \mathbb{RP}^2 \to \mathbb{RP}^3$, induced by $S^2 \hookrightarrow S^3$ as the equator.
+Let $i: \RP^2 \to \RP^3$, induced by $S^2 \hookrightarrow S^3$ as the equator.
 Show that $i \not\simeq \text{const}$.
 :::
 
@@ -27,20 +27,20 @@ Show that $i \not\simeq \text{const}$.
 
 The inclusion
 $$
-i:\mathbb{RP}^2\hookrightarrow\mathbb{RP}^3
+i:\RP^2\hookrightarrow\RP^3
 $$
 induces the identity isomorphism
 $$
-i_*:\pi_1(\mathbb{RP}^2)\cong\ZZ/2\longrightarrow\pi_1(\mathbb{RP}^3)\cong\ZZ/2.
+i_*:\pi_1(\RP^2)\cong\ZZ/2\longrightarrow\pi_1(\RP^3)\cong\ZZ/2.
 $$
 
 ::: pf-proof
 
 Use the standard CW structures
 $$
-\mathbb{RP}^2=e^0\cup e^1\cup e^2,
+\RP^2=e^0\cup e^1\cup e^2,
 \qquad
-\mathbb{RP}^3=\mathbb{RP}^2\cup e^3.
+\RP^3=\RP^2\cup e^3.
 $$
 Attaching cells of dimension at least $3$ does not change the fundamental group. Hence the inclusion of the $2$-skeleton induces an isomorphism on $\pi_1$.
 

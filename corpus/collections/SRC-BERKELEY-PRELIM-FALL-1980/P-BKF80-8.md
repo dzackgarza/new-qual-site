@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF80-8
 kind: problem
-title: $GL_2(\mathbb F_2)$ is isomorphic to $S_3$
+title: $GL_2(\FF_2)$ is isomorphic to $S_3$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft

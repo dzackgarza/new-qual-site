@@ -17,9 +17,9 @@ Define six fields as follows:
 
 • Let B be a splitting field of $x ^ { 3 } - 2$ over Q.
 
-• Let C be an algebraic closure of the field $\mathbb { F } _ { 2 }$ of 2 elements.
+• Let C be an algebraic closure of the field $\FF _ { 2 }$ of 2 elements.
 
-• Let D be the subfield of C generated over $\mathbb { F } _ { 2 }$ by the set of $a \in C$ such that there exists $n \geq 1$ with $a ^ { n } = 1$
+• Let D be the subfield of C generated over $\FF _ { 2 }$ by the set of $a \in C$ such that there exists $n \geq 1$ with $a ^ { n } = 1$
 
 • Let E be the field R of real numbers.
 
@@ -37,7 +37,7 @@ By Eisenstein’s criterion, $x ^ { 3 } - 2$ is irreducible, so $\left[ A : \QQ 
 Thus $\omega \in B$ . Since $[ \QQ ( \omega ) : \QQ ] = 2$ , the degree $\left[ B : \QQ \right]$ is even.
 Hence $A \not \simeq B$
 
-If $a \in C$ , then $\mathbb { F } _ { 2 } ( a )$ is a finite extension of $\mathbb { F } _ { 2 }$ , hence finite, say of order $q ;$ if moreover $a \neq 0$ , then $a ^ { q - 1 } = 1$ . Hence $C \subseteq D$ . But $D \subseteq C$ , so $C = D$
+If $a \in C$ , then $\FF _ { 2 } ( a )$ is a finite extension of $\FF _ { 2 }$ , hence finite, say of order $q ;$ if moreover $a \neq 0$ , then $a ^ { q - 1 } = 1$ . Hence $C \subseteq D$ . But $D \subseteq C$ , so $C = D$
 
 The square of a nonzero element of $\QQ [ [ T ] ] ( T ^ { - 1 } )$ has a leading coefficient that is a rational square.
 Thus 2 is not a square in $\QQ [ [ T ] ] ( T ^ { - 1 } )$ . But 2 is a square in R. So $E \not \simeq F$

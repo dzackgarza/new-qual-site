@@ -33,13 +33,13 @@ For a closed oriented $4$-manifold, the cup product followed by evaluation on th
 :::
 
 ::: pf-step
-For $\mathbb{CP}^2\#\mathbb{CP}^2$, the intersection form is
+For $\CP^2\#\CP^2$, the intersection form is
 $$
 \begin{pmatrix}1&0\\0&1\end{pmatrix}.
 $$
 
 ::: pf-proof
-The two summands contribute their standard generators in degree two; classes supported in different connect-sum summands have zero intersection, and each $\mathbb{CP}^2$ generator has square $+1$ with the chosen orientation.
+The two summands contribute their standard generators in degree two; classes supported in different connect-sum summands have zero intersection, and each $\CP^2$ generator has square $+1$ with the chosen orientation.
 :::
 
 :::
@@ -70,7 +70,7 @@ In the first form the vector $(1,0)$ has self-intersection $1$. In the hyperboli
 :::
 
 ::: pf-step
-Hence $\mathbb{CP}^2\#\mathbb{CP}^2$ and $S^2\times S^2$ are not homotopy-equivalent.
+Hence $\CP^2\#\CP^2$ and $S^2\times S^2$ are not homotopy-equivalent.
 
 ::: pf-proof
 A homotopy equivalence induces an isomorphism of integral cohomology rings and takes the top class to its positive or negative generator, so it preserves the intersection form up to overall sign. This contradicts step [](#forms-differ-parity){.pf-ref}.

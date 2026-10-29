@@ -28,14 +28,14 @@ Construct a field with $27$ elements.
 ::: {.solution}
 Consider
 \[
-f(T)=T^3-T-1\in\mathbb F_3[T].
+f(T)=T^3-T-1\in\FF_3[T].
 \]
 
 ::: pf
 
 ::: pf-step
 
-The polynomial $f$ is irreducible over $\mathbb F_3$.
+The polynomial $f$ is irreducible over $\FF_3$.
 
 ::: pf-proof
 
@@ -48,7 +48,7 @@ f(1)=-1\ne0,
 \qquad
 f(2)=8-2-1=5\equiv2\ne0\pmod3.
 \]
-Thus $f$ has no root in $\mathbb F_3$ and is irreducible.
+Thus $f$ has no root in $\FF_3$ and is irreducible.
 
 :::
 
@@ -58,14 +58,14 @@ Thus $f$ has no root in $\mathbb F_3$ and is irreducible.
 
 The quotient
 \[
-K=\mathbb F_3[T]/(T^3-T-1)
+K=\FF_3[T]/(T^3-T-1)
 \]
 is a field.
 
 ::: pf-proof
 
 Since $f$ is irreducible, the ideal $(f)$ is maximal in the PID
-$\mathbb F_3[T]$.
+$\FF_3[T]$.
 
 :::
 
@@ -81,7 +81,7 @@ Every class has a unique representative
 \[
 a+bT+cT^2,
 \qquad
-a,b,c\in\mathbb F_3.
+a,b,c\in\FF_3.
 \]
 There are therefore $3^3=27$ residue classes.
 

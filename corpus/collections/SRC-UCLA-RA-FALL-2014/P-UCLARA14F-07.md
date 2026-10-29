@@ -219,7 +219,7 @@ The Cayley map
 \[
 T_5(s)=\frac{s-1}{s+1}
 \]
-is a conformal bijection from $H_R$ onto the unit disk $\mathbb D$.
+is a conformal bijection from $H_R$ onto the unit disk $\DD$.
 
 
 ::: pf-proof
@@ -242,7 +242,7 @@ The inverse is
 \[
 \xi\longmapsto\frac{1+\xi}{1-\xi},
 \]
-which maps $\mathbb D$ to $H_R$. Thus $T_5$ is a conformal bijection.
+which maps $\DD$ to $H_R$. Thus $T_5$ is a conformal bijection.
 
 :::
 
@@ -258,7 +258,7 @@ T_5\circ T_4\circ T_3\circ T_2\circ T_1
 \]
 is therefore a conformal bijection
 \[
-\Omega\xrightarrow{\sim}\mathbb D.
+\Omega\xrightarrow{\sim}\DD.
 \]
 
 

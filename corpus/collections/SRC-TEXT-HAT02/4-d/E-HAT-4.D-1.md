@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-4.D-1
 kind: problem
-title: Cup product structure on pullbacks of $\mathbb{CP}^3 \to S^4$
+title: Cup product structure on pullbacks of $\CP^3 \to S^4$
 classification:
   areas:
   - topology
@@ -25,27 +25,27 @@ audit:
 ---
 
 ::: {.problem}
-By Exercise 35 in §4.2 there is a bundle $S^2 \to \mathbb{CP}^3 \to S^4$.
+By Exercise 35 in §4.2 there is a bundle $S^2 \to \CP^3 \to S^4$.
 Let $S^2 \to E_k \to S^4$ be the pullback of this bundle via a degree $k$ map $S^4 \to S^4$, $k > 1$.
-Use the Leray-Hirsch theorem to show that $H^*(E_k; \ZZ)$ is additively isomorphic to $H^*(\mathbb{CP}^3; \ZZ)$ but has a different cup product structure in which the square of a generator of $H^2(E_k; \ZZ)$ is $k$ times a generator of $H^4(E_k; \ZZ)$.
+Use the Leray-Hirsch theorem to show that $H^*(E_k; \ZZ)$ is additively isomorphic to $H^*(\CP^3; \ZZ)$ but has a different cup product structure in which the square of a generator of $H^2(E_k; \ZZ)$ is $k$ times a generator of $H^4(E_k; \ZZ)$.
 :::
 
 ::: {.solution}
-Let \(p:\mathbb{CP}^3\to S^4\) denote the bundle and let \(f:S^4\to S^4\) have degree \(k\). Form the pullback square
+Let \(p:\CP^3\to S^4\) denote the bundle and let \(f:S^4\to S^4\) have degree \(k\). Form the pullback square
 \[
 \begin{array}{ccc}
-E_k&\xrightarrow{F}&\mathbb{CP}^3\\
+E_k&\xrightarrow{F}&\CP^3\\
 \downarrow p_k&&\downarrow p\\
 S^4&\xrightarrow{f}&S^4.
 \end{array}
 \]
-Choose \(x\in H^2(\mathbb{CP}^3;\ZZ)\) restricting to a generator on each fiber \(S^2\). Then \(F^*x\), which we again call \(x\), restricts to a generator on each fiber of \(E_k\). Leray--Hirsch gives
+Choose \(x\in H^2(\CP^3;\ZZ)\) restricting to a generator on each fiber \(S^2\). Then \(F^*x\), which we again call \(x\), restricts to a generator on each fiber of \(E_k\). Leray--Hirsch gives
 \[
 H^*(E_k;\ZZ)\cong H^*(S^4;\ZZ)\{1,x\}
 \]
-as an \(H^*(S^4)\)-module. Thus additively there is one copy of \(\ZZ\) in degrees \(0,2,4,6\), exactly as for \(\mathbb{CP}^3\).
+as an \(H^*(S^4)\)-module. Thus additively there is one copy of \(\ZZ\) in degrees \(0,2,4,6\), exactly as for \(\CP^3\).
 
-Let \(u\in H^4(S^4;\ZZ)\) be a generator and normalize signs so that in \(\mathbb{CP}^3\)
+Let \(u\in H^4(S^4;\ZZ)\) be a generator and normalize signs so that in \(\CP^3\)
 \[
 x^2=p^*u.
 \]
@@ -57,5 +57,5 @@ Hence
 \[
 \boxed{x^2=kv,}
 \]
-where \(x\) and \(v\) generate \(H^2(E_k)\) and \(H^4(E_k)\). Since \(k>1\), this ring cannot be isomorphic to \(H^*(\mathbb{CP}^3;\ZZ)\), although the additive groups are the same.
+where \(x\) and \(v\) generate \(H^2(E_k)\) and \(H^4(E_k)\). Since \(k>1\), this ring cannot be isomorphic to \(H^*(\CP^3;\ZZ)\), although the additive groups are the same.
 :::

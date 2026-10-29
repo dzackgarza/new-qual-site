@@ -65,25 +65,25 @@ $$
 :::
 
 ::: pf-step
-For part (b), take $Y=\mathbb{RP}^2$.
+For part (b), take $Y=\RP^2$.
 
 ::: pf-proof
 
 ::: pf-step
-The universal covering map $S^2\to\mathbb{RP}^2$ induces an isomorphism on $\pi_2$, so
+The universal covering map $S^2\to\RP^2$ induces an isomorphism on $\pi_2$, so
 $$
-\pi_2(\mathbb{RP}^2)\cong\pi_2(S^2)\cong\ZZ\ne0.
+\pi_2(\RP^2)\cong\pi_2(S^2)\cong\ZZ\ne0.
 $$
 :::
 
 ::: pf-step
-Give $\mathbb{RP}^2$ its standard CW structure with one cell in each dimension $0,1,2$.
+Give $\RP^2$ its standard CW structure with one cell in each dimension $0,1,2$.
 :::
 
 ::: pf-step
 Its cellular boundary map $C_2\to C_1$ is multiplication by $2$. Therefore
 $$
-H_2(\mathbb{RP}^2;\ZZ)=\ker(\ZZ\xrightarrow{\,2\,}\ZZ)=0.
+H_2(\RP^2;\ZZ)=\ker(\ZZ\xrightarrow{\,2\,}\ZZ)=0.
 $$
 :::
 
@@ -92,7 +92,7 @@ $$
 :::
 
 ::: pf-step
-Thus $T^2$ and $\mathbb{RP}^2$ give the required examples.
+Thus $T^2$ and $\RP^2$ give the required examples.
 :::
 
 :::

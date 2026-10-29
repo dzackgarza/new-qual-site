@@ -23,7 +23,7 @@ Then identify which type occurs in each case:
 
 3. the roots of $z^8-1$ in $\CC$, under multiplication;
 
-4. the additive group $\mathbb F_8^+$;
+4. the additive group $\FF_8^+$;
 
 5. $(\ZZ_{16})^\times$.
 :::

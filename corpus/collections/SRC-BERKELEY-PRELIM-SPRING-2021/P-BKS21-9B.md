@@ -37,7 +37,7 @@ $$
 
 Modulo $2$,
 $$
-\overline f(x)=x^4+x+1\in\mathbb F_2[x].
+\overline f(x)=x^4+x+1\in\FF_2[x].
 $$
 
 
@@ -51,7 +51,7 @@ Since $2021\equiv1\pmod2$, reduction of the coefficients modulo $2$ gives the di
 
 ::: {.pf-step #s1-2}
 
-The polynomial $\overline f$ has no linear factor over $\mathbb F_2$.
+The polynomial $\overline f$ has no linear factor over $\FF_2$.
 
 
 ::: pf-proof
@@ -62,7 +62,7 @@ $$
 \qquad
 \overline f(1)=1+1+1=1
 $$
-in $\mathbb F_2$. Hence $\overline f$ has no root and therefore no linear factor.
+in $\FF_2$. Hence $\overline f$ has no root and therefore no linear factor.
 
 :::
 
@@ -70,7 +70,7 @@ in $\mathbb F_2$. Hence $\overline f$ has no root and therefore no linear factor
 
 ::: {.pf-step #s1-3}
 
-The only monic irreducible quadratic over $\mathbb F_2$ is
+The only monic irreducible quadratic over $\FF_2$ is
 $$
 q(x)=x^2+x+1.
 $$
@@ -78,14 +78,14 @@ $$
 
 ::: pf-proof
 
-The monic quadratics over $\mathbb F_2$ are
+The monic quadratics over $\FF_2$ are
 $$
 x^2,\quad
 x^2+1,\quad
 x^2+x,\quad
 x^2+x+1.
 $$
-The first three have a root in $\mathbb F_2$, while
+The first three have a root in $\FF_2$, while
 $$
 q(0)=1,
 \qquad
@@ -134,7 +134,7 @@ so the remainder is nonzero.
 
 ::: {.pf-step #s1-5}
 
-The polynomial $\overline f$ is irreducible in $\mathbb F_2[x]$.
+The polynomial $\overline f$ is irreducible in $\FF_2[x]$.
 
 
 ::: pf-proof

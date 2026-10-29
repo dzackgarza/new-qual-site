@@ -16,12 +16,12 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f(z)$ be analytic on $\mathbb{D}$.
+Let $f(z)$ be analytic on $\DD$.
 Prove the following statements.
 
-(a) If $|f'(z) - f'(0)| < |f'(0)|$ for all $z \in \mathbb{D}$, then $f(z)$ is injective.
+(a) If $|f'(z) - f'(0)| < |f'(0)|$ for all $z \in \DD$, then $f(z)$ is injective.
 
-(b) If $|f(z)| < 1$ for all $z \in \mathbb{D}$ and $f(z)$ has two distinct fixed points, then $f(z) = z$.
+(b) If $|f(z)| < 1$ for all $z \in \DD$ and $f(z)$ has two distinct fixed points, then $f(z) = z$.
 :::
 
 ::: {.solution}
@@ -33,8 +33,8 @@ we have $f'(0)\ne0$ and
 \[
 \operatorname{Re}\frac{f'(z)}{f'(0)}>0
 \]
-for every $z\in\mathbb D$. If $z_1\ne z_2$, the line segment joining them
-lies in $\mathbb D$, and
+for every $z\in\DD$. If $z_1\ne z_2$, the line segment joining them
+lies in $\DD$, and
 \[
 \frac{f(z_2)-f(z_1)}{f'(0)(z_2-z_1)}
 =\int_0^1
@@ -48,7 +48,7 @@ $\phi(a)=0$ and set
 \[
 F=\phi\circ f\circ\phi^{-1}.
 \]
-Then $F:\mathbb D\to\mathbb D$ fixes $0$ and also the nonzero point
+Then $F:\DD\to\DD$ fixes $0$ and also the nonzero point
 $\phi(b)$. Schwarz's lemma gives $|F(z)|\le|z|$, and equality at the nonzero
 fixed point forces
 \[

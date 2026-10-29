@@ -139,7 +139,7 @@ Oriented rank-$2$ bundles are classified by
 [S^4,BSO(2)]
 \cong H^2(S^4;\ZZ),
 \]
-since $BSO(2)=BS^1\simeq\mathbb{CP}^{\infty}=K(\ZZ,2)$. But $H^2(S^4;\ZZ)=0$. Equivalently, their clutching group is
+since $BSO(2)=BS^1\simeq\CP^{\infty}=K(\ZZ,2)$. But $H^2(S^4;\ZZ)=0$. Equivalently, their clutching group is
 \[
 \pi_3(SO(2))=\pi_3(S^1)=0.
 \]

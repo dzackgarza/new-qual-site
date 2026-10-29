@@ -63,7 +63,7 @@ Contravariantly, this gives
 \[
 H^*(C_p)\longrightarrow H^*(C_f).
 \]
-The Hopf mapping cone is \(C_p\simeq\mathbb{CP}^2\). If \(x\in H^2(C_p;\ZZ)\) is its standard generator, then
+The Hopf mapping cone is \(C_p\simeq\CP^2\). If \(x\in H^2(C_p;\ZZ)\) is its standard generator, then
 \[
 x^2\ne0\in H^4(C_p;\ZZ).
 \]

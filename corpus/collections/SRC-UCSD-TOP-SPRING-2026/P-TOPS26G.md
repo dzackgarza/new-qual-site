@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS26G
 kind: problem
-title: Cohomology ring of $\mathbb{CP}^n$ and orientation under homotopy equivalences
+title: Cohomology ring of $\CP^n$ and orientation under homotopy equivalences
 classification:
   areas:
   - topology
@@ -13,12 +13,12 @@ review: draft
 ---
 
 ::: {.problem}
-Compute the cohomology ring of $\mathbb{CP}^n$.
+Compute the cohomology ring of $\CP^n$.
 Show the following statements are equivalent:
 
 - $n$ is even
 
-- there is an orientation on $\mathbb{CP}^n$ that is preserved by every homotopy equivalence $f \colon \mathbb{CP}^n \to \mathbb{CP}^n$.
+- there is an orientation on $\CP^n$ that is preserved by every homotopy equivalence $f \colon \CP^n \to \CP^n$.
 :::
 
 ::: {.solution}
@@ -27,7 +27,7 @@ Show the following statements are equivalent:
 
 ::: pf-step
 The integral cohomology ring is
-$$\boxed{H^*(\mathbb{CP}^n;\ZZ)\cong\ZZ[x]/(x^{n+1}),\qquad |x|=2.}$$
+$$\boxed{H^*(\CP^n;\ZZ)\cong\ZZ[x]/(x^{n+1}),\qquad |x|=2.}$$
 
 ::: pf-proof
 This is the standard projective-space computation; $x$ is the first Chern class of the dual tautological line bundle.
@@ -36,7 +36,7 @@ This is the standard projective-space computation; $x$ is the first Chern class 
 :::
 
 ::: pf-step
-Any homotopy equivalence $f:\mathbb{CP}^n\to\mathbb{CP}^n$ satisfies $f^*x=\pm x$.
+Any homotopy equivalence $f:\CP^n\to\CP^n$ satisfies $f^*x=\pm x$.
 
 ::: pf-proof
 The group $H^2\cong\ZZ$, and a cohomology isomorphism must send its generator to a generator.
@@ -64,7 +64,7 @@ Then $(\pm1)^n=1$, so every $f^*$ fixes the chosen top generator $x^n$.
 :::
 
 ::: pf-step
-If $n$ is odd, complex conjugation $c:\mathbb{CP}^n\to\mathbb{CP}^n$ is a homotopy equivalence with $c^*x=-x$, hence $c^*(x^n)=-x^n$.
+If $n$ is odd, complex conjugation $c:\CP^n\to\CP^n$ is a homotopy equivalence with $c^*x=-x$, hence $c^*(x^n)=-x^n$.
 
 ::: pf-proof
 Conjugation is a homeomorphism and sends the first Chern class of a complex line bundle to its negative.

@@ -185,7 +185,7 @@ Therefore
 
 ::: {.pf-step #s6}
 
-If \(X_n\) is homeomorphic to a surface, then that surface is \(\mathbb{RP}^2\).
+If \(X_n\) is homeomorphic to a surface, then that surface is \(\RP^2\).
 
 ::: pf-proof
 
@@ -209,13 +209,13 @@ so \(M\cong D^2\). In the nonorientable case it forces
 \[
 k+b=1,
 \]
-so \(M\cong\mathbb{RP}^2\).
+so \(M\cong\RP^2\).
 
 But step [](#s4){.pf-ref} gives
 \[
 H_1(X_n;\ZZ)\cong\ZZ/n\ZZ\ne0,
 \]
-whereas \(H_1(D^2;\ZZ)=0\). Hence the disk is impossible, and the only possible surface is \(\mathbb{RP}^2\).
+whereas \(H_1(D^2;\ZZ)=0\). Hence the disk is impossible, and the only possible surface is \(\RP^2\).
 
 :::
 
@@ -230,9 +230,9 @@ n=2.
 
 ::: pf-proof
 
-By step [](#s6){.pf-ref}, such an \(X_n\) must be homeomorphic to \(\mathbb{RP}^2\). Homology is a homeomorphism invariant, and
+By step [](#s6){.pf-ref}, such an \(X_n\) must be homeomorphic to \(\RP^2\). Homology is a homeomorphism invariant, and
 \[
-H_1(\mathbb{RP}^2;\ZZ)
+H_1(\RP^2;\ZZ)
 \cong
 \ZZ/2\ZZ.
 \]
@@ -250,13 +250,13 @@ which for \(n\ge2\) forces \(n=2\).
 
 ::: {.pf-step #s8}
 
-The space \(X_2\) is homeomorphic to \(\mathbb{RP}^2\).
+The space \(X_2\) is homeomorphic to \(\RP^2\).
 
 ::: pf-proof
 
 Use the standard disk model
 \[
-\mathbb{RP}^2
+\RP^2
 \cong
 D^2/\bigl(z\sim -z\text{ for }z\in\partial D^2=S^1\bigr).
 \]
@@ -300,10 +300,10 @@ so the map is constant on the identifications defining \(X_2\). It therefore des
 \[
 X_2\longrightarrow D^2/(z\sim-z).
 \]
-The space $X_2$ is compact, and the disk quotient is the Hausdorff space $\mathbb{RP}^2$, so this continuous bijection is a homeomorphism.
+The space $X_2$ is compact, and the disk quotient is the Hausdorff space $\RP^2$, so this continuous bijection is a homeomorphism.
 Composing with the standard disk-model homeomorphism gives
 \[
-\boxed{X_2\cong\mathbb{RP}^2}.
+\boxed{X_2\cong\RP^2}.
 \]
 
 :::
@@ -314,7 +314,7 @@ Composing with the standard disk-model homeomorphism gives
 
 Therefore exactly one \(X_n\) is a surface:
 \[
-\boxed{n=2,\qquad X_2\cong\mathbb{RP}^2}.
+\boxed{n=2,\qquad X_2\cong\RP^2}.
 \]
 
 ::: pf-proof

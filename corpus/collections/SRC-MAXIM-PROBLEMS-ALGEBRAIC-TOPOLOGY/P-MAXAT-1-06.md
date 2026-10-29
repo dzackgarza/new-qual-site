@@ -21,7 +21,7 @@ The Euler characteristic of a closed manifold of odd dimension is zero.
 
 ::: {.solution}
 
-Let $M$ be a closed $n$-manifold with $n$ odd. Work with coefficients in $\mathbb F_2$, so orientability is irrelevant.
+Let $M$ be a closed $n$-manifold with $n$ odd. Work with coefficients in $\FF_2$, so orientability is irrelevant.
 
 ::: pf
 
@@ -29,15 +29,15 @@ Let $M$ be a closed $n$-manifold with $n$ odd. Work with coefficients in $\mathb
 
 Poincaré duality gives
 \[
-H_i(M;\mathbb F_2)
-\cong H^{n-i}(M;\mathbb F_2)
+H_i(M;\FF_2)
+\cong H^{n-i}(M;\FF_2)
 \]
 for every $i$.
 
 
 ::: pf-proof
 
-Every manifold is orientable over $\mathbb F_2$. Since $M$ is closed, mod-$2$ Poincaré duality identifies homology in degree $i$ with cohomology in complementary degree $n-i$.
+Every manifold is orientable over $\FF_2$. Since $M$ is closed, mod-$2$ Poincaré duality identifies homology in degree $i$ with cohomology in complementary degree $n-i$.
 
 :::
 
@@ -53,10 +53,10 @@ b_i=b_{n-i}.
 
 ::: pf-proof
 
-Over the field $\mathbb F_2$, the universal coefficient theorem gives
+Over the field $\FF_2$, the universal coefficient theorem gives
 \[
-\dim H^{n-i}(M;\mathbb F_2)
-=\dim H_{n-i}(M;\mathbb F_2).
+\dim H^{n-i}(M;\FF_2)
+=\dim H_{n-i}(M;\FF_2).
 \]
 Take dimensions in the duality isomorphism from step [](#s1-1){.pf-ref}.
 

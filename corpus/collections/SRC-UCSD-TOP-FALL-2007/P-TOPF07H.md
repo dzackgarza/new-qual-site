@@ -61,7 +61,7 @@ The conclusion remains true without orientability.
 
 ::: pf-proof
 
-Use Poincaré duality with $\mathbb F_2$ coefficients, which holds for every closed manifold. If $c_i=\dim_{\mathbb F_2}H_i(M;\mathbb F_2)$, then $c_i=c_{d-i}$. Euler characteristic can be computed over any field, so
+Use Poincaré duality with $\FF_2$ coefficients, which holds for every closed manifold. If $c_i=\dim_{\FF_2}H_i(M;\FF_2)$, then $c_i=c_{d-i}$. Euler characteristic can be computed over any field, so
 $$
 \chi(M)=\sum_i(-1)^i c_i,
 $$

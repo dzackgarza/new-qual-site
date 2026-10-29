@@ -21,11 +21,11 @@ Hint: You may use part of the proof of the Riemann mapping theorem.
 :::
 
 ::: {.solution}
-Choose $a\in\mathbb D\setminus Y$. Since $0\in Y$, we have $a\ne0$. Let
+Choose $a\in\DD\setminus Y$. Since $0\in Y$, we have $a\ne0$. Let
 \[
 \phi_a(z)=\frac{z-a}{1-\overline a z},
 \]
-an automorphism of $\mathbb D$ sending $a$ to $0$. The function
+an automorphism of $\DD$ sending $a$ to $0$. The function
 $\phi_a$ has no zeros on $Y$. Since $Y$ is simply connected, it has a
 holomorphic square root there: choose $q$ with
 \[
@@ -39,7 +39,7 @@ Put $b=q(0)$ and let
 \]
 Then
 \[
-F=\psi_b\circ q:Y\to\mathbb D
+F=\psi_b\circ q:Y\to\DD
 \]
 is univalent and satisfies $F(0)=0$. Since $b^2=\phi_a(0)=-a$,
 $|b|^2=|a|$. Furthermore

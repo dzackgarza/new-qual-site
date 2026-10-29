@@ -35,7 +35,7 @@ H_i(X;\ZZ)\cong\ZZ^{b_i}\oplus T_i,
 $$
 where $T_i$ is finite, and set
 $$
-t_i=\dim_{\mathbb F_2}(T_i\otimes\mathbb F_2).
+t_i=\dim_{\FF_2}(T_i\otimes\FF_2).
 $$
 
 ::: pf-proof
@@ -47,13 +47,13 @@ The total integral homology is finitely generated, so each $H_i$ has this form a
 ::: pf-step
 The homological universal coefficient theorem gives a split short exact sequence
 $$
-0\to H_i(X;\ZZ)\otimes\mathbb F_2
-\to H_i(X;\mathbb F_2)
-\to \operatorname{Tor}(H_{i-1}(X;\ZZ),\mathbb F_2)\to0.
+0\to H_i(X;\ZZ)\otimes\FF_2
+\to H_i(X;\FF_2)
+\to \operatorname{Tor}(H_{i-1}(X;\ZZ),\FF_2)\to0.
 $$
 
 ::: pf-proof
-This is the universal coefficient theorem for homology with coefficients in $\mathbb F_2$.
+This is the universal coefficient theorem for homology with coefficients in $\FF_2$.
 :::
 
 :::
@@ -61,11 +61,11 @@ This is the universal coefficient theorem for homology with coefficients in $\ma
 ::: {.pf-step #dimension-formula}
 Therefore
 $$
-\dim_{\mathbb F_2}H_i(X;\mathbb F_2)=b_i+t_i+t_{i-1}.
+\dim_{\FF_2}H_i(X;\FF_2)=b_i+t_i+t_{i-1}.
 $$
 
 ::: pf-proof
-The free summand contributes $b_i$. For a finite abelian group $T$, both $T\otimes\mathbb F_2$ and $\operatorname{Tor}(T,\mathbb F_2)$ have the same $\mathbb F_2$-dimension, namely the number of cyclic summands of even order; this is $t_i$ for $T_i$ and $t_{i-1}$ for $T_{i-1}$.
+The free summand contributes $b_i$. For a finite abelian group $T$, both $T\otimes\FF_2$ and $\operatorname{Tor}(T,\FF_2)$ have the same $\FF_2$-dimension, namely the number of cyclic summands of even order; this is $t_i$ for $T_i$ and $t_{i-1}$ for $T_{i-1}$.
 :::
 
 :::

@@ -17,13 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f:\mathbb D\to\mathbb D\) be holomorphic and suppose
+Let \(f:\DD\to\DD\) be holomorphic and suppose
 \[
 f(0)=f'(0)=0.
 \]
 Prove that \(|f''(0)|\le2\), and describe all such \(f\) for which \(|f''(0)|=2\).
 
-The retained solution notes explicitly record that the printed exam omitted the necessary hypothesis \(f(\mathbb D)\subseteq\mathbb D\); it is included here because without it the assertion is false.
+The retained solution notes explicitly record that the printed exam omitted the necessary hypothesis \(f(\DD)\subseteq\DD\); it is included here because without it the assertion is false.
 :::
 
 ::: {.solution}
@@ -36,7 +36,7 @@ Schwarz's lemma gives
 $$
 |f(z)|\le |z|
 $$
-for every $z\in\mathbb D$.
+for every $z\in\DD$.
 
 
 ::: pf-proof
@@ -57,7 +57,7 @@ f(z)/z,&z\ne0,\\
 f'(0),&z=0
 \end{cases}
 $$
-is holomorphic on $\mathbb D$, maps $\mathbb D$ into the closed unit disk, and satisfies $g(0)=0$.
+is holomorphic on $\DD$, maps $\DD$ into the closed unit disk, and satisfies $g(0)=0$.
 
 
 ::: pf-proof
@@ -78,7 +78,7 @@ A second application of Schwarz's lemma gives
 $$
 |g(z)|\le |z|
 $$
-for every $z\in\mathbb D$.
+for every $z\in\DD$.
 
 
 ::: pf-proof
@@ -91,7 +91,7 @@ If $g$ were a unimodular constant then $g(0)$ would have modulus $1$, contrary t
 
 ::: {.pf-step #s1-4}
 
-There is a holomorphic function $h:\mathbb D\to\overline{\mathbb D}$ such that
+There is a holomorphic function $h:\DD\to\overline{\DD}$ such that
 $$
 \boxed{f(z)=z^2h(z)}.
 $$

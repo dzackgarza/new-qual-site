@@ -27,7 +27,7 @@ Assume $n\geq1$. By the preceding Euler-characteristic criterion, the boundary o
 
 ::: {.pf-step #s1-1}
 
-Real projective space $\mathbb{RP}^{2n}$ has a CW decomposition with exactly one cell in every dimension
+Real projective space $\RP^{2n}$ has a CW decomposition with exactly one cell in every dimension
 \[
 0,1,\ldots,2n.
 \]
@@ -37,9 +37,9 @@ Real projective space $\mathbb{RP}^{2n}$ has a CW decomposition with exactly one
 
 The standard filtration
 \[
-\mathbb{RP}^0\subset\mathbb{RP}^1\subset\cdots\subset\mathbb{RP}^{2n}
+\RP^0\subset\RP^1\subset\cdots\subset\RP^{2n}
 \]
-is obtained by attaching one $k$-cell in passing from $\mathbb{RP}^{k-1}$ to $\mathbb{RP}^k$.
+is obtained by attaching one $k$-cell in passing from $\RP^{k-1}$ to $\RP^k$.
 
 :::
 
@@ -49,7 +49,7 @@ is obtained by attaching one $k$-cell in passing from $\mathbb{RP}^{k-1}$ to $\m
 
 Therefore
 \[
-\chi(\mathbb{RP}^{2n})
+\chi(\RP^{2n})
 =\sum_{k=0}^{2n}(-1)^k=1.
 \]
 
@@ -64,7 +64,7 @@ Euler characteristic is the alternating sum of the numbers of cells in a finite 
 
 ::: {.pf-step #s1-3}
 
-Complex projective space $\mathbb{CP}^{2n}$ has one cell in each even real dimension
+Complex projective space $\CP^{2n}$ has one cell in each even real dimension
 \[
 0,2,4,\ldots,4n
 \]
@@ -75,7 +75,7 @@ and no odd-dimensional cells.
 
 The standard filtration
 \[
-\mathbb{CP}^0\subset\mathbb{CP}^1\subset\cdots\subset\mathbb{CP}^{2n}
+\CP^0\subset\CP^1\subset\cdots\subset\CP^{2n}
 \]
 attaches one real $2k$-cell at the $k$th stage.
 
@@ -87,7 +87,7 @@ attaches one real $2k$-cell at the $k$th stage.
 
 Hence
 \[
-\chi(\mathbb{CP}^{2n})=2n+1.
+\chi(\CP^{2n})=2n+1.
 \]
 
 
@@ -126,7 +126,7 @@ Each of the three Euler characteristics is odd.
 
 ::: pf-proof
 
-Step [](#s1-2){.pf-ref} gives $1$ for $\mathbb{RP}^{2n}$, while steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give $2n+1$ for the complex and quaternionic projective spaces. These integers are odd.
+Step [](#s1-2){.pf-ref} gives $1$ for $\RP^{2n}$, while steps [](#s1-4){.pf-ref} through [](#s1-5){.pf-ref} give $2n+1$ for the complex and quaternionic projective spaces. These integers are odd.
 
 :::
 
@@ -150,7 +150,7 @@ If any one were such a boundary, its Euler characteristic would be even by the b
 Therefore
 \[
 \boxed{
-\mathbb{RP}^{2n},\ \mathbb{CP}^{2n},\ \mathbb{HP}^{2n}
+\RP^{2n},\ \CP^{2n},\ \mathbb{HP}^{2n}
 \text{ are not boundaries}.}
 \]
 

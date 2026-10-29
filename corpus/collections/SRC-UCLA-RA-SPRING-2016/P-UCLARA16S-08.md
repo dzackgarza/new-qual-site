@@ -32,7 +32,7 @@ Let
 =
 i\frac{1+\zeta}{1-\zeta}.
 \]
-Then $\Phi$ is a biholomorphism from $\CC_+$ onto the unit disk $\mathbb D$.
+Then $\Phi$ is a biholomorphism from $\CC_+$ onto the unit disk $\DD$.
 
 ::: pf
 
@@ -66,9 +66,9 @@ After passing to a further subsequence, the functions
 \[
 g_j
 \coloneqq
-\Phi\circ f_{n_j}:\CC_+\to\mathbb D
+\Phi\circ f_{n_j}:\CC_+\to\DD
 \]
-converge uniformly on compact subsets of $\CC_+$ to a holomorphic function $g:\CC_+\to\overline{\mathbb D}$, and the points $z_j$ converge to some $z_\infty\in K$.
+converge uniformly on compact subsets of $\CC_+$ to a holomorphic function $g:\CC_+\to\overline{\DD}$, and the points $z_j$ converge to some $z_\infty\in K$.
 
 
 ::: pf-proof

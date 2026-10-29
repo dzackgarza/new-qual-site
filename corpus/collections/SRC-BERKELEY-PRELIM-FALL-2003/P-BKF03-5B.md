@@ -79,16 +79,16 @@ Suppose instead that $p^2\nmid n$.
 Let $q\ne p$ be as in step [](#case-dichotomy){.pf-ref}. There exists a nonabelian group $H$ of order $pq$.
 
 ::: pf-proof
-Since $\mathbb F_q^\times$ is cyclic of order $q-1$ and $p\mid(q-1)$, it has a subgroup
+Since $\FF_q^\times$ is cyclic of order $q-1$ and $p\mid(q-1)$, it has a subgroup
 \[
-\mu_p=\{a\in\mathbb F_q^\times:a^p=1\}
+\mu_p=\{a\in\FF_q^\times:a^p=1\}
 \]
 of order $p$.
 Define
 \[
-H=\left\{\begin{pmatrix}a&b\\0&1\end{pmatrix}:a\in\mu_p,\ b\in\mathbb F_q\right\}.
+H=\left\{\begin{pmatrix}a&b\\0&1\end{pmatrix}:a\in\mu_p,\ b\in\FF_q\right\}.
 \]
-Matrix multiplication shows that $H$ is a subgroup of $\operatorname{GL}_2(\mathbb F_q)$, and there are $p$ choices for $a$ and $q$ choices for $b$, so $|H|=pq$.
+Matrix multiplication shows that $H$ is a subgroup of $\operatorname{GL}_2(\FF_q)$, and there are $p$ choices for $a$ and $q$ choices for $b$, so $|H|=pq$.
 
 Choose $a\in\mu_p$ with $a\ne1$.
 Then

@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f(z)$ be analytic in $\mathbb{D}$ and assume $|f(z)| \leq 1$ for all $z \in \mathbb{D}$.
+Let $f(z)$ be analytic in $\DD$ and assume $|f(z)| \leq 1$ for all $z \in \DD$.
 
 (a) Suppose that $f(z)$ has a zero of order $m$ at $z = 0$.
 Show that $|f(z)| \leq |z|^m$.
@@ -28,12 +28,12 @@ For part (a), write
 \[
 f(z)=z^m g(z),
 \]
-where $g$ is holomorphic in $\mathbb D$. Fix $0<r<1$. On $|z|=r$,
+where $g$ is holomorphic in $\DD$. Fix $0<r<1$. On $|z|=r$,
 \[
 |g(z)|=\frac{|f(z)|}{r^m}\le \frac1{r^m}.
 \]
 By the maximum modulus principle, the same bound holds for $|z|\le r$.
-For a fixed $z\in\mathbb D$, let $r\uparrow1$ to obtain $|g(z)|\le1$.
+For a fixed $z\in\DD$, let $r\uparrow1$ to obtain $|g(z)|\le1$.
 Therefore
 \[
 |f(z)|\le |z|^m.
@@ -48,7 +48,7 @@ the maximum modulus principle and is immediate. Set
 \[
 h(z)=\phi_\alpha(f(z)).
 \]
-Then $h:\mathbb D\to\mathbb D$, $h(0)=0$, and $h'(0)=0$. Thus $h$ has a zero
+Then $h:\DD\to\DD$, $h(0)=0$, and $h'(0)=0$. Thus $h$ has a zero
 of order at least $2$, so part (a) gives
 \[
 \left|\frac{f(z)-\alpha}{1-\overline\alpha f(z)}\right|

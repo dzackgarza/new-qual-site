@@ -34,7 +34,7 @@ Let $R=\ZZ[x]$ and $I=(7,x-3)$.
 ::: {.solution}
 Define
 $$
-\varphi:\ZZ[x]\longrightarrow\mathbb F_7,
+\varphi:\ZZ[x]\longrightarrow\FF_7,
 \qquad
 \varphi(r)=r(3)\pmod7.
 $$

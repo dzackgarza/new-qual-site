@@ -192,7 +192,7 @@ N\cong C_5\times C_5.
 \]
 Identify $N$ with the additive group of the two-dimensional vector space
 \[
-V=\mathbb F_5^2.
+V=\FF_5^2.
 \]
 
 :::
@@ -203,7 +203,7 @@ V=\mathbb F_5^2.
 
 One has
 \[
-\operatorname{Aut}(N)\cong\operatorname{GL}_2(\mathbb F_5)
+\operatorname{Aut}(N)\cong\operatorname{GL}_2(\FF_5)
 \]
 and
 \[
@@ -212,11 +212,11 @@ and
 
 ::: pf-proof
 
-An automorphism of the additive group $V$ is exactly an invertible $\mathbb F_5$-linear map, so
+An automorphism of the additive group $V$ is exactly an invertible $\FF_5$-linear map, so
 \[
-\operatorname{Aut}(N)\cong\operatorname{GL}_2(\mathbb F_5).
+\operatorname{Aut}(N)\cong\operatorname{GL}_2(\FF_5).
 \]
-To choose an invertible $2\times2$ matrix over $\mathbb F_5$, its first column may be any nonzero vector, giving
+To choose an invertible $2\times2$ matrix over $\FF_5$, its first column may be any nonzero vector, giving
 \[
 5^2-1=24
 \]
@@ -228,7 +228,7 @@ Its second column may be any vector outside the one-dimensional span of the firs
 choices.
 Thus
 \[
-|\operatorname{GL}_2(\mathbb F_5)|
+|\operatorname{GL}_2(\FF_5)|
 =(25-1)(25-5)
 =24\cdot20
 =480
@@ -298,7 +298,7 @@ A=
 0&-1\\
 1&-1
 \end{pmatrix}
-\in\operatorname{GL}_2(\mathbb F_5),
+\in\operatorname{GL}_2(\FF_5),
 \]
 which has order $3$.
 

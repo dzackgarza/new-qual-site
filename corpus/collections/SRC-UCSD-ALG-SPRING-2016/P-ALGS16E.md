@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGS16E
 kind: problem
-title: Whether $\mathbb{F}_9$ embeds in $\mathbb{F}_{27}$
+title: Whether $\FF_9$ embeds in $\FF_{27}$
 classification:
   areas:
   - algebra

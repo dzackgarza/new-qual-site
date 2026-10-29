@@ -26,10 +26,10 @@ Consider the $n$th iterate $f_n := f \circ f \circ \cdots \circ f$ ($n$ times), 
 
 ::: {.solution}
 For (a), assume first that $G\ne\CC$ is simply connected. By the Riemann
-mapping theorem there is a conformal map $\phi:G\to\mathbb D$; composing with a
+mapping theorem there is a conformal map $\phi:G\to\DD$; composing with a
 disk automorphism, arrange $\phi(0)=0$. Then
 \[
-F=\phi\circ f\circ\phi^{-1}:\mathbb D\to\mathbb D
+F=\phi\circ f\circ\phi^{-1}:\DD\to\DD
 \]
 fixes $0$, and the chain rule gives $F'(0)=f'(0)=1$. Schwarz's lemma and its
 equality case imply $F(z)=z$, hence $f(z)=z$ on $G$.

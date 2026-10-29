@@ -101,9 +101,9 @@ Bilinearity gives $e_i(-x)=-(e_ix)$. Also $(-x)^\perp=x^\perp$, and orthogonal p
 
 The frame from step [](#s1-3){.pf-ref} descends through
 \[
-S^{n-1}\to\mathbb{RP}^{n-1}
+S^{n-1}\to\RP^{n-1}
 \]
-to a frame of $T\mathbb{RP}^{n-1}$. In particular, $\mathbb{RP}^{n-1}$ is orientable.
+to a frame of $T\RP^{n-1}$. In particular, $\RP^{n-1}$ is orientable.
 
 
 ::: pf-proof
@@ -163,7 +163,7 @@ for some $r\ge0$. Applying it to the multiplication map of step [](#s1-6){.pf-re
 Therefore
 \[
 \boxed{
-\mathbb{RP}^{n-1}\text{ is orientable and }n=2^r
+\RP^{n-1}\text{ is orientable and }n=2^r
 \text{ for some }r.}
 \]
 

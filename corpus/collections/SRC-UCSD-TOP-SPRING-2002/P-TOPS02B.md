@@ -52,7 +52,7 @@ Degree is multiplicative under composition, and the antipodal map on $S^n$ has d
 
 ::: pf-step
 
-If $n$ is odd, $f$ factors through the quotient $q:S^n\to\mathbb{RP}^n$:
+If $n$ is odd, $f$ factors through the quotient $q:S^n\to\RP^n$:
 $$
 f=\bar f\circ q.
 $$
@@ -67,7 +67,7 @@ The equality $f(x)=f(-x)$ says precisely that $f$ is constant on antipodal orbit
 
 ::: {.pf-step #s4}
 
-For odd $n$, $\mathbb{RP}^n$ is orientable and $q$ has degree $2$, so
+For odd $n$, $\RP^n$ is orientable and $q$ has degree $2$, so
 $$
 \deg f=\deg \bar f\cdot \deg q=2\deg\bar f.
 $$

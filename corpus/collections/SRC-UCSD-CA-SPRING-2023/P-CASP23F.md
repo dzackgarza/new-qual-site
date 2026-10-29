@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $a \in \mathbb{D}$ and $G = \mathbb{D} \setminus \{a\}$.
+Let $a \in \DD$ and $G = \DD \setminus \{a\}$.
 
 (a) Construct a harmonic function $v$ on $G$ such that the following two conditions are satisfied: $\lim_{z \to z^*} v(z) = 0$ for all $z^* \in \mathbb{T}$ and $\lim_{z \to a} v(z) = +\infty$.
 Write down an explicit formula for the function $v$ you constructed.
@@ -33,7 +33,7 @@ v(z)=\log\left|
 \frac{1-\overline a z}{z-a}
 \right|.
 \]
-It is harmonic on $\mathbb D\setminus\{a\}$. If $|z|=1$, then
+It is harmonic on $\DD\setminus\{a\}$. If $|z|=1$, then
 \[
 |1-\overline a z|=|z-a|,
 \]
@@ -47,8 +47,8 @@ $v(z)\to+\infty$.
 \]
 $u$ is bounded near the isolated point $a$. By the removable singularity
 theorem for harmonic functions, $u$ extends harmonically across $a$, with
-$u(a)=2$. The extension is harmonic on all of $\mathbb D$ and continuous on
-$\overline{\mathbb D}$, with boundary value $0$ on $\mathbb T$. The maximum
+$u(a)=2$. The extension is harmonic on all of $\DD$ and continuous on
+$\overline{\DD}$, with boundary value $0$ on $\mathbb T$. The maximum
 and minimum principles therefore force $u\equiv0$, contradicting $u(a)=2$.
 Thus the Dirichlet problem has no solution.
 :::

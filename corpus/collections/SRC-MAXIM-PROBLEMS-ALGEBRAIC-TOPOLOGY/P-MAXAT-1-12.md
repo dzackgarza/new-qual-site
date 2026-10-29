@@ -23,7 +23,7 @@ Show that $\RR \mathbb { P } ^ { 2 n }$ cannot be embedded in $S ^ { 2 n + 1 }$
 
 Assume $n\geq1$ and suppose, for contradiction, that there is an embedding
 \[
-\mathbb{RP}^{2n}\hookrightarrow S^{2n+1}.
+\RP^{2n}\hookrightarrow S^{2n+1}.
 \]
 Its image is a closed codimension-one submanifold.
 
@@ -44,18 +44,18 @@ Let $M^m\subset N^{m+1}$ be a two-sided embedded hypersurface and choose a nowhe
 
 ::: {.pf-step #s1-2}
 
-The embedded copy of $\mathbb{RP}^{2n}$ in $S^{2n+1}$ is two-sided.
+The embedded copy of $\RP^{2n}$ in $S^{2n+1}$ is two-sided.
 
 
 ::: pf-proof
 
 Alexander duality with $\ZZ/2$ coefficients gives
 \[
-\widetilde H_0(S^{2n+1}\setminus\mathbb{RP}^{2n};\ZZ/2)
+\widetilde H_0(S^{2n+1}\setminus\RP^{2n};\ZZ/2)
 \cong
-\widetilde H^{2n}(\mathbb{RP}^{2n};\ZZ/2).
+\widetilde H^{2n}(\RP^{2n};\ZZ/2).
 \]
-The top mod-$2$ cohomology of the closed connected $2n$-manifold $\mathbb{RP}^{2n}$ is $\ZZ/2$, so the complement has exactly two connected components. A closed embedded hypersurface whose complement has two sides has trivial normal line bundle: choose the normal direction pointing into one fixed complementary component. Hence the embedding is two-sided.
+The top mod-$2$ cohomology of the closed connected $2n$-manifold $\RP^{2n}$ is $\ZZ/2$, so the complement has exactly two connected components. A closed embedded hypersurface whose complement has two sides has trivial normal line bundle: choose the normal direction pointing into one fixed complementary component. Hence the embedding is two-sided.
 
 :::
 
@@ -63,7 +63,7 @@ The top mod-$2$ cohomology of the closed connected $2n$-manifold $\mathbb{RP}^{2
 
 ::: {.pf-step #s1-3}
 
-Therefore the assumed embedding would make $\mathbb{RP}^{2n}$ orientable.
+Therefore the assumed embedding would make $\RP^{2n}$ orientable.
 
 
 ::: pf-proof
@@ -76,7 +76,7 @@ The sphere $S^{2n+1}$ is orientable. Apply step [](#s1-1){.pf-ref} to the two-si
 
 ::: {.pf-step #s1-4}
 
-But $\mathbb{RP}^{2n}$ is nonorientable.
+But $\RP^{2n}$ is nonorientable.
 
 
 ::: pf-proof
@@ -86,7 +86,7 @@ The antipodal map
 a:S^{2n}\to S^{2n},
 \qquad a(x)=-x,
 \]
-is the deck transformation of the double covering $S^{2n}\to\mathbb{RP}^{2n}$. Its degree is
+is the deck transformation of the double covering $S^{2n}\to\RP^{2n}$. Its degree is
 \[
 \deg(a)=(-1)^{2n+1}=-1,
 \]
@@ -100,7 +100,7 @@ so it reverses orientation. If the quotient were orientable, its orientation wou
 
 This contradiction proves that
 \[
-\boxed{\mathbb{RP}^{2n}\text{ does not embed in }S^{2n+1}.}
+\boxed{\RP^{2n}\text{ does not embed in }S^{2n+1}.}
 \]
 
 

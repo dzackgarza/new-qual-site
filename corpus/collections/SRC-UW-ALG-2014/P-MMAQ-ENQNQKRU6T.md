@@ -126,11 +126,11 @@ x(x-1)=0
 \]
 forces \(x=1\). Thus each residue field has exactly two elements, so
 \[
-R/\mathfrak m_i\cong\mathbb F_2.
+R/\mathfrak m_i\cong\FF_2.
 \]
 Therefore
 \[
-R\cong \mathbb F_2^d\cong(\ZZ/2\ZZ)^d.
+R\cong \FF_2^d\cong(\ZZ/2\ZZ)^d.
 \]
 
 :::

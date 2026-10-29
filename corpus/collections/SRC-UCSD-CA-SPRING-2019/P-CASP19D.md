@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\Omega \neq \CC$ be a simply connected region with $a \in \Omega$ and $f$ a one-to-one analytic function from $\Omega$ onto $\mathbb{D}$.
+Let $\Omega \neq \CC$ be a simply connected region with $a \in \Omega$ and $f$ a one-to-one analytic function from $\Omega$ onto $\DD$.
 Assume $f(a) = 0$ and $f'(a) > 0$.
 Prove that
 $$
@@ -34,7 +34,7 @@ The disk $D(a,r)$ is contained in $\Omega$. Therefore
 \[
 F(\zeta)=f(a+r\zeta)
 \]
-is a holomorphic map from $\mathbb D$ to $\mathbb D$ with $F(0)=0$. Schwarz's
+is a holomorphic map from $\DD$ to $\DD$ with $F(0)=0$. Schwarz's
 lemma gives
 \[
 r f'(a)=F'(0)\le1,
@@ -44,7 +44,7 @@ so
 r\le \frac1{f'(a)}.
 \]
 
-For the other inequality, let $g=f^{-1}:\mathbb D\to\Omega$. Then
+For the other inequality, let $g=f^{-1}:\DD\to\Omega$. Then
 \[
 g(0)=a,
 \qquad
@@ -65,7 +65,7 @@ connectedness of their complement in the sphere. Hence
 \[
 G(\zeta)=\frac{g(\zeta)-a}{R}
 \]
-maps $\mathbb D$ into itself and satisfies $G(0)=0$. Schwarz's lemma yields
+maps $\DD$ into itself and satisfies $G(0)=0$. Schwarz's lemma yields
 \[
 \frac1{R f'(a)}=|G'(0)|\le1.
 \]

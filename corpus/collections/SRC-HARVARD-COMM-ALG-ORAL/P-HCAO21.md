@@ -259,12 +259,12 @@ an injective hull, by the definition of an injective hull.
 :::
 
 ::: {.pf-step #counterexample-field-extension}
-For $k=\mathbb F_2$ and $R=k(t)$, the ring $R$ is a
+For $k=\FF_2$ and $R=k(t)$, the ring $R$ is a
 zero-dimensional Gorenstein $k$-algebra with $D\not\cong R$
 and with no $k$-algebra homomorphism $R\to k$.
 
 ::: pf-proof
-Take $k=\mathbb F_2$ and $R=k(t)$ with $t$ transcendental.
+Take $k=\FF_2$ and $R=k(t)$ with $t$ transcendental.
 This is a field, hence has Krull dimension zero. It is
 Gorenstein: as a module over itself it is injective,
 because linear maps from subspaces extend by a basis.

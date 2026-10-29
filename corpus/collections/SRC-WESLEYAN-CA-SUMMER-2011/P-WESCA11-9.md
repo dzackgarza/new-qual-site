@@ -146,7 +146,7 @@ Apply the boundary estimate from step [](#s1-2){.pf-ref}.
 
 Fix
 \[
-z\in\mathbb D.
+z\in\DD.
 \]
 Then
 \[

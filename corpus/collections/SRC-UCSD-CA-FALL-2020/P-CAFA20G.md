@@ -13,10 +13,10 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\mathbb{D}$ denote the open unit disc, and let $\mathbb{D}' = \{z \in \CC : |z + 2/5| < 2/5\}$ denote the open disc of center $-2/5$ and radius $2/5$.
-Let $\Omega = \mathbb{D} \setminus \overline{\mathbb{D}'}$.
+Let $\DD$ denote the open unit disc, and let $\DD' = \{z \in \CC : |z + 2/5| < 2/5\}$ denote the open disc of center $-2/5$ and radius $2/5$.
+Let $\Omega = \DD \setminus \overline{\DD'}$.
 
-Find, with justification, an explicit continuous function $h: \overline{\Omega} \to \RR$, harmonic in $\Omega$, and with boundary values $h = 0$ on $\partial\mathbb{D}$ and $h = 1$ on $\partial\mathbb{D}'$.
+Find, with justification, an explicit continuous function $h: \overline{\Omega} \to \RR$, harmonic in $\Omega$, and with boundary values $h = 0$ on $\partial\DD$ and $h = 1$ on $\partial\DD'$.
 
 Hint: You may wish to use a conformal map to change the domain $\Omega$.
 :::
@@ -52,6 +52,6 @@ Therefore
 h(z)=\frac{\log\!\left(\frac{|z+2|}{2|z+1/2|}\right)}{\log 2}}
 \]
 is harmonic on $\Omega$ and continuous on $\overline\Omega$. On
-$\partial\mathbb D$, $|\Phi|=1/2$, so $h=0$; on
-$\partial\mathbb D'$, $|\Phi|=1/4$, so $h=1$.
+$\partial\DD$, $|\Phi|=1/2$, so $h=0$; on
+$\partial\DD'$, $|\Phi|=1/4$, so $h=1$.
 :::

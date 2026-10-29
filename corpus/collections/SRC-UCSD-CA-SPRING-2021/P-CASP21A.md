@@ -33,12 +33,12 @@ while
 \]
 Hence Rouché's theorem shows that
 $z^3\sin z+5z^2+2$ and $5z^2+2$ have the same number of zeros in
-$\mathbb D$, counted with multiplicity. The latter polynomial has the two
+$\DD$, counted with multiplicity. The latter polynomial has the two
 zeros
 \[
 z=\pm i\sqrt{\frac25},
 \]
-both in $\mathbb D$. Therefore the given equation has exactly
+both in $\DD$. Therefore the given equation has exactly
 \[
 \boxed{2}
 \]

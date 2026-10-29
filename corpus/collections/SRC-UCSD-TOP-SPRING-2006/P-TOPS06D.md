@@ -25,7 +25,7 @@ Assume that the attaching maps of the two $2$-cells to the $1$-cell have degree 
 
 (a) Calculate the Euler characteristic of $X$.
 
-(b) Calculate the integral and mod $2$ homology of $X \times \mathbb{RP}^2$.
+(b) Calculate the integral and mod $2$ homology of $X \times \RP^2$.
 :::
 
 ::: {.solution}
@@ -114,13 +114,13 @@ Euler characteristic formula $\chi(X) = \sum (-1)^n c_n$.
 
 ::: {.pf-step #s3}
 
-Part (b): Integral homology of $X \times \mathbb{RP}^2$:
+Part (b): Integral homology of $X \times \RP^2$:
 
 ::: pf-proof
 
 ::: pf-step
 
-The homology of $\mathbb{RP}^2$ is $H_0(\mathbb{RP}^2) \cong \ZZ$, $H_1(\mathbb{RP}^2) \cong \ZZ_2$, and $H_k(\mathbb{RP}^2) = 0$ for $k \ge 2$.
+The homology of $\RP^2$ is $H_0(\RP^2) \cong \ZZ$, $H_1(\RP^2) \cong \ZZ_2$, and $H_k(\RP^2) = 0$ for $k \ge 2$.
 
 ::: pf-proof
 
@@ -134,7 +134,7 @@ standard homology of real projective plane.
 
 Apply the Künneth Theorem for integral homology:
 \[
-0 \to \bigoplus_{i+j=k} H_i(X) \otimes H_j(\mathbb{RP}^2) \to H_k(X \times \mathbb{RP}^2) \to \bigoplus_{i+j=k-1} \operatorname{Tor}_1(H_i(X), H_j(\mathbb{RP}^2)) \to 0.
+0 \to \bigoplus_{i+j=k} H_i(X) \otimes H_j(\RP^2) \to H_k(X \times \RP^2) \to \bigoplus_{i+j=k-1} \operatorname{Tor}_1(H_i(X), H_j(\RP^2)) \to 0.
 \]
 
 ::: pf-proof
@@ -147,7 +147,7 @@ Künneth formula for CW complexes.
 
 ::: pf-step
 
-Evaluate $H_k(X \times \mathbb{RP}^2; \ZZ)$ degree by degree:
+Evaluate $H_k(X \times \RP^2; \ZZ)$ degree by degree:
 - $k=0$: $\ZZ \otimes \ZZ \cong \ZZ$.
 - $k=1$: $(\ZZ_2 \otimes \ZZ) \oplus (\ZZ \otimes \ZZ_2) \cong \ZZ_2 \oplus \ZZ_2$.
 - $k=2$: $(\ZZ \otimes \ZZ) \oplus (\ZZ_2 \otimes \ZZ_2) \cong \ZZ \oplus \ZZ_2$.
@@ -170,7 +170,7 @@ tensor product and Tor evaluations.
 
 ::: {.pf-step #s4}
 
-Part (b): Mod 2 homology of $X \times \mathbb{RP}^2$:
+Part (b): Mod 2 homology of $X \times \RP^2$:
 
 ::: pf-proof
 
@@ -181,7 +181,7 @@ Thus $H_0(X; \ZZ_2) \cong \ZZ_2$, $H_1(X; \ZZ_2) \cong \ZZ_2$, $H_2(X; \ZZ_2) \c
 
 ::: pf-proof
 
-cellular chain complex over $\mathbb{F}_2$.
+cellular chain complex over $\FF_2$.
 
 :::
 
@@ -189,11 +189,11 @@ cellular chain complex over $\mathbb{F}_2$.
 
 ::: pf-step
 
-For $\mathbb{RP}^2$, $H_0(\mathbb{RP}^2; \ZZ_2) \cong \ZZ_2$, $H_1(\mathbb{RP}^2; \ZZ_2) \cong \ZZ_2$, $H_2(\mathbb{RP}^2; \ZZ_2) \cong \ZZ_2$.
+For $\RP^2$, $H_0(\RP^2; \ZZ_2) \cong \ZZ_2$, $H_1(\RP^2; \ZZ_2) \cong \ZZ_2$, $H_2(\RP^2; \ZZ_2) \cong \ZZ_2$.
 
 ::: pf-proof
 
-mod 2 homology of $\mathbb{RP}^2$.
+mod 2 homology of $\RP^2$.
 
 :::
 
@@ -202,13 +202,13 @@ mod 2 homology of $\mathbb{RP}^2$.
 ::: pf-step
 
 By the Künneth Theorem over the field $\ZZ_2$:
-- $H_0(X \times \mathbb{RP}^2; \ZZ_2) \cong \ZZ_2$
-- $H_1(X \times \mathbb{RP}^2; \ZZ_2) \cong \ZZ_2^2$
-- $H_2(X \times \mathbb{RP}^2; \ZZ_2) \cong \ZZ_2^4$
-- $H_3(X \times \mathbb{RP}^2; \ZZ_2) \cong \ZZ_2^3$
-- $H_4(X \times \mathbb{RP}^2; \ZZ_2) \cong \ZZ_2^3$
-- $H_5(X \times \mathbb{RP}^2; \ZZ_2) \cong \ZZ_2$
-- $H_6(X \times \mathbb{RP}^2; \ZZ_2) \cong \ZZ_2$, and $0$ for $k \ge 7$.
+- $H_0(X \times \RP^2; \ZZ_2) \cong \ZZ_2$
+- $H_1(X \times \RP^2; \ZZ_2) \cong \ZZ_2^2$
+- $H_2(X \times \RP^2; \ZZ_2) \cong \ZZ_2^4$
+- $H_3(X \times \RP^2; \ZZ_2) \cong \ZZ_2^3$
+- $H_4(X \times \RP^2; \ZZ_2) \cong \ZZ_2^3$
+- $H_5(X \times \RP^2; \ZZ_2) \cong \ZZ_2$
+- $H_6(X \times \RP^2; \ZZ_2) \cong \ZZ_2$, and $0$ for $k \ge 7$.
 
 ::: pf-proof
 

@@ -41,15 +41,15 @@ e^0,\qquad e^1,\qquad e^2.
 \]
 The cells $e^1$ and $e^2$ are the images of the standard cells of
 \[
-\mathbb{RP}^{n-1}\subset SO(n)
+\RP^{n-1}\subset SO(n)
 \]
 under Hatcher's map
 \[
 \rho(v)=r(v)r(e_1).
 \]
-The characteristic map of the $2$-cell of $\mathbb{RP}^{n-1}$ restricts on its boundary circle to the double covering
+The characteristic map of the $2$-cell of $\RP^{n-1}$ restricts on its boundary circle to the double covering
 \[
-S^1\to\mathbb{RP}^1\cong S^1.
+S^1\to\RP^1\cong S^1.
 \]
 Consequently the $2$-cell of $SO(n)$ is attached to the $1$-cell by a map of degree $2$. Thus the $2$-skeleton has fundamental group
 \[

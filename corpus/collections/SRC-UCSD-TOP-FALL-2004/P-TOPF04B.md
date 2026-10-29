@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Consider the standard covering projection $S^n \to \mathbb{RP}^n$ which maps antipodal points to the same point in $\mathbb{RP}^n$.
+Consider the standard covering projection $S^n \to \RP^n$ which maps antipodal points to the same point in $\RP^n$.
 Prove that the covering projection is not null-homotopic.
 :::
 
@@ -24,7 +24,7 @@ Prove that the covering projection is not null-homotopic.
 ::: pf
 
 ::: pf-step
-For $n=1$, the map $S^1\to\mathbb{RP}^1\cong S^1$ has degree $2$, so it is not null-homotopic.
+For $n=1$, the map $S^1\to\RP^1\cong S^1$ has degree $2$, so it is not null-homotopic.
 
 ::: pf-proof
 A null-homotopic circle map has degree zero.
@@ -35,7 +35,7 @@ A null-homotopic circle map has degree zero.
 ::: pf-step
 For $n\ge2$, a covering map induces an isomorphism on $\pi_n$:
 $$
-p_*:\pi_n(S^n)\xrightarrow{\cong}\pi_n(\mathbb{RP}^n).
+p_*:\pi_n(S^n)\xrightarrow{\cong}\pi_n(\RP^n).
 $$
 
 ::: pf-proof

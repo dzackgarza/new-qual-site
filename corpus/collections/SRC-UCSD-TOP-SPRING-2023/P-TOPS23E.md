@@ -24,7 +24,7 @@ Decompose $X$ as a CW-complex and compute its homology $H_*(X; \ZZ)$.
 ::: pf
 
 ::: pf-step
-The quotient $X=B^3/(x\sim-x\text{ on }S^2)$ is the standard model of $\mathbb{RP}^3$.
+The quotient $X=B^3/(x\sim-x\text{ on }S^2)$ is the standard model of $\RP^3$.
 
 ::: pf-proof
 Real projective $3$-space is obtained from a closed $3$-ball by identifying antipodal points on its boundary sphere.
@@ -36,7 +36,7 @@ Real projective $3$-space is obtained from a closed $3$-ball by identifying anti
 It has a CW structure with one cell $e^k$ in each dimension $k=0,1,2,3$.
 
 ::: pf-proof
-The standard filtration $\mathbb{RP}^0\subset\mathbb{RP}^1\subset\mathbb{RP}^2\subset\mathbb{RP}^3$ adds one cell in each dimension.
+The standard filtration $\RP^0\subset\RP^1\subset\RP^2\subset\RP^3$ adds one cell in each dimension.
 :::
 
 :::
@@ -46,7 +46,7 @@ The cellular boundary maps are
 $$0\to\ZZ\xrightarrow{0}\ZZ\xrightarrow{2}\ZZ\xrightarrow{0}\ZZ\to0.$$
 
 ::: pf-proof
-For the standard CW structure on $\mathbb{RP}^n$, the cellular boundary in degree $k$ is multiplication by $1+(-1)^k$: it is $0$ for odd $k$ and $2$ for even $k$.
+For the standard CW structure on $\RP^n$, the cellular boundary in degree $k$ is multiplication by $1+(-1)^k$: it is $0$ for odd $k$ and $2$ for even $k$.
 :::
 
 :::

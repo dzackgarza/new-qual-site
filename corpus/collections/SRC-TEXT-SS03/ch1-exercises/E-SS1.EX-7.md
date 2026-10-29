@@ -48,13 +48,13 @@ $$
 
 satisfies the following conditions:
 
-(i) F maps the unit disc to itself (that is, $F : \mathbb { D } \to \mathbb { D } )$ , and is holomorphic.
+(i) F maps the unit disc to itself (that is, $F : \DD \to \DD )$ , and is holomorphic.
 
 (ii) F interchanges 0 and $w ,$ namely $F ( 0 ) = w$ and $F ( w ) = 0$
 
 (iii) $| F ( z ) | = 1 { \mathrm { ~ i f ~ } } | z | = 1 .$
 
-(iv) $F : \mathbb { D } \to \mathbb { D }$ is bijective.
+(iv) $F : \DD \to \DD$ is bijective.
 [Hint: Calculate $F \circ F . ]$
 :::
 
@@ -104,17 +104,17 @@ By step [](#s1-1){.pf-ref} take $z=r=\abs z$. If $r<1$ and $\abs w<1$, the right
 
 ::: pf-step
 
-(b) For fixed $w\in\mathbb D$, the map $F(z) = \frac{w - z}{1 - \bar w z}$ satisfies (i)--(iv).
+(b) For fixed $w\in\DD$, the map $F(z) = \frac{w - z}{1 - \bar w z}$ satisfies (i)--(iv).
 
 ::: pf-proof
 
 ::: {.pf-step #s2-1}
 
-(i) $F$ is holomorphic on $\mathbb D$ and $F(\mathbb D)\subseteq\mathbb D$.
+(i) $F$ is holomorphic on $\DD$ and $F(\DD)\subseteq\DD$.
 
 ::: pf-proof
 
-For $\abs z<1$, $\abs{\bar wz}<1$, so the denominator does not vanish and $F$ is a rational function without poles in $\mathbb D$. Step [](#s1){.pf-ref} gives $\abs{F(z)}<1$.
+For $\abs z<1$, $\abs{\bar wz}<1$, so the denominator does not vanish and $F$ is a rational function without poles in $\DD$. Step [](#s1){.pf-ref} gives $\abs{F(z)}<1$.
 
 :::
 
@@ -134,13 +134,13 @@ Substitution gives (ii), and step [](#s1){.pf-ref} gives (iii).
 
 ::: pf-step
 
-(iv) $F\circ F = \operatorname{id}_{\mathbb D}$, so $F\colon\mathbb D\to\mathbb D$ is bijective.
+(iv) $F\circ F = \operatorname{id}_{\DD}$, so $F\colon\DD\to\DD$ is bijective.
 
 ::: pf-proof
 
-For $z\in\mathbb D$,
+For $z\in\DD$,
 $$F(F(z)) = \frac{w - \frac{w - z}{1 - \bar w z}}{1 - \bar w \frac{w - z}{1 - \bar w z}} = \frac{w(1 - \bar w z) - (w - z)}{(1 - \bar w z) - \bar w(w - z)} = \frac{z(1 - |w|^2)}{1 - |w|^2} = z.$$
-By step [](#s2-1){.pf-ref}, $F$ maps $\mathbb D$ into itself, so $F$ is its own inverse on $\mathbb D$.
+By step [](#s2-1){.pf-ref}, $F$ maps $\DD$ into itself, so $F$ is its own inverse on $\DD$.
 
 :::
 

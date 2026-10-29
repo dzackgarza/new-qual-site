@@ -18,7 +18,7 @@ audit:
 
 ::: {.problem}
 Let $n \geq 2$ be a positive integer, and let $k$ be in the range $0 < k < n$.
-Let $X = \mathbb{CP}^n / \mathbb{CP}^k$ be the quotient space obtained from $\mathbb{CP}^n$ by identifying its subspace $\mathbb{CP}^k$ to a point.
+Let $X = \CP^n / \CP^k$ be the quotient space obtained from $\CP^n$ by identifying its subspace $\CP^k$ to a point.
 Calculate the integral cohomology ring of $X$.
 :::
 
@@ -27,9 +27,9 @@ Calculate the integral cohomology ring of $X$.
 ::: pf
 
 ::: pf-step
-For the quotient map $q:\mathbb{CP}^n\to X=\mathbb{CP}^n/\mathbb{CP}^k$, there is a natural identification
+For the quotient map $q:\CP^n\to X=\CP^n/\CP^k$, there is a natural identification
 $$
-\widetilde H^*(X;\ZZ)\cong H^*(\mathbb{CP}^n,\mathbb{CP}^k;\ZZ).
+\widetilde H^*(X;\ZZ)\cong H^*(\CP^n,\CP^k;\ZZ).
 $$
 
 ::: pf-proof
@@ -50,7 +50,7 @@ H^r(X;\ZZ)\cong
 $$
 
 ::: pf-proof
-The inclusion $\mathbb{CP}^k\hookrightarrow\mathbb{CP}^n$ identifies the cellular cochain complexes through degree $2k$. Equivalently, the relative CW complex has one cell in each even dimension $2k+2,2k+4,\dots,2n$ and no odd-dimensional cells, so all relative coboundaries vanish.
+The inclusion $\CP^k\hookrightarrow\CP^n$ identifies the cellular cochain complexes through degree $2k$. Equivalently, the relative CW complex has one cell in each even dimension $2k+2,2k+4,\dots,2n$ and no odd-dimensional cells, so all relative coboundaries vanish.
 :::
 
 :::
@@ -60,10 +60,10 @@ Let $u_i\in H^{2i}(X;\ZZ)$, $k+1\le i\le n$, be the unique generator characteriz
 $$
 q^*(u_i)=x^i,
 $$
-where $H^*(\mathbb{CP}^n;\ZZ)=\ZZ[x]/(x^{n+1})$, $|x|=2$.
+where $H^*(\CP^n;\ZZ)=\ZZ[x]/(x^{n+1})$, $|x|=2$.
 
 ::: pf-proof
-From the long exact sequence of the pair, the map $q^*:H^{2i}(X)\to H^{2i}(\mathbb{CP}^n)$ is an isomorphism for $i>k$ because $H^{2i}(\mathbb{CP}^k)=0$ there.
+From the long exact sequence of the pair, the map $q^*:H^{2i}(X)\to H^{2i}(\CP^n)$ is an isomorphism for $i>k$ because $H^{2i}(\CP^k)=0$ there.
 :::
 
 :::
@@ -83,7 +83,7 @@ Naturality of cup product gives
 $$
 q^*(u_i u_j)=q^*(u_i)q^*(u_j)=x^{i+j}.
 $$
-If $i+j\le n$, then $q^*:H^{2(i+j)}(X)\to H^{2(i+j)}(\mathbb{CP}^n)$ is an isomorphism, so $u_i u_j=u_{i+j}$. If $i+j>n$, the target cohomology group is zero.
+If $i+j\le n$, then $q^*:H^{2(i+j)}(X)\to H^{2(i+j)}(\CP^n)$ is an isomorphism, so $u_i u_j=u_{i+j}$. If $i+j>n$, the target cohomology group is zero.
 :::
 
 :::

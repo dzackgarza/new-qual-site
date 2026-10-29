@@ -81,8 +81,8 @@ The full automorphism group of any finite field is cyclic.
 Let $F$ be finite. Its characteristic is a prime $p$: the
 additive order of $1$ is finite and exceeds one, and a
 composite order would give zero divisors by factoring it.
-The prime subfield is therefore $\mathbb F_p$. If
-$[F:\mathbb F_p]=n$, then counting coordinates in a basis
+The prime subfield is therefore $\FF_p$. If
+$[F:\FF_p]=n$, then counting coordinates in a basis
 gives $|F|=p^n$, with $n\geq1$.
 
 The Frobenius map $\varphi(a)=a^p$ is a field homomorphism:
@@ -98,7 +98,7 @@ root bound. Hence $\varphi$ has order exactly $n$.
 
 Every automorphism of $F$ fixes $1$, and consequently fixes
 the prime subfield. There are at most $n$ embeddings of
-$F$ over $\mathbb F_p$ into an algebraic closure. Indeed,
+$F$ over $\FF_p$ into an algebraic closure. Indeed,
 adjoin a finite set of generators successively. At a step
 of degree $d$, an extension of a given embedding is determined
 by the image of the adjoined element, and that image must be
@@ -123,7 +123,7 @@ Exactly the finite cyclic groups are realized in part (b).
 Every subgroup of a cyclic group is cyclic [@DF04], so
 step [](#s2){.pf-ref} proves necessity. To prove existence for every
 order $n\geq1$, fix a prime $p$ and work in an algebraic
-closure of $\mathbb F_p$. The polynomial $T^{p^n}-T$ has
+closure of $\FF_p$. The polynomial $T^{p^n}-T$ has
 derivative $-1$, so it has exactly $p^n$ distinct roots there.
 Their set $F_n$ is a field: it contains $0,1$, and for
 roots $a,b$,

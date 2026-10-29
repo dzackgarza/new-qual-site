@@ -129,7 +129,7 @@ Hence the surface is nonorientable.
 ::: pf-step
 The surface in part (i) is
 \[
-\boxed{\mathbb{RP}^2\#\mathbb{RP}^2\#\mathbb{RP}^2},
+\boxed{\RP^2\#\RP^2\#\RP^2},
 \]
 the nonorientable surface of genus $3$, and its Euler characteristic is
 \[
@@ -139,7 +139,7 @@ the nonorientable surface of genus $3$, and its Euler characteristic is
 ::: pf-proof
 By the classification theorem for compact connected surfaces, a closed nonorientable surface is uniquely a connected sum
 \[
-N_k=\#^k\mathbb{RP}^2
+N_k=\#^k\RP^2
 \]
 for some $k\ge1$, and
 \[
@@ -221,7 +221,7 @@ a_1a_1a_2a_2\cdots a_ka_k.
 \]
 Its quotient is the nonorientable surface
 \[
-N_k=\#^k\mathbb{RP}^2
+N_k=\#^k\RP^2
 \]
 of genus $k$, with
 \[
@@ -234,7 +234,7 @@ The polygon-reduction moves collect all orientation-reversing pairs into square 
 \[
 a_i a_i.
 \]
-A single square block is the standard polygonal presentation of $\mathbb{RP}^2$, and concatenating $k$ such blocks gives the connected sum of $k$ projective planes.
+A single square block is the standard polygonal presentation of $\RP^2$, and concatenating $k$ such blocks gives the connected sum of $k$ projective planes.
 Its standard one-vertex CW structure has
 \[
 V=1,

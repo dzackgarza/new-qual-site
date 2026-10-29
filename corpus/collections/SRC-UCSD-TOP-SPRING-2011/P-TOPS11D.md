@@ -36,7 +36,7 @@ It is formed by gluing two oriented solid tori along their boundaries by a homeo
 ::: {.pf-step #first-betti-number-bound}
 Its first homology is cyclic (possibly infinite), so
 $$
-\dim_{\mathbb F_2}H_1(M;\mathbb F_2)\le1.
+\dim_{\FF_2}H_1(M;\FF_2)\le1.
 $$
 
 ::: pf-proof
@@ -52,7 +52,7 @@ b_0=b_3=1,\qquad b_2=b_1.
 $$
 
 ::: pf-proof
-Every closed connected $3$-manifold is mod-$2$ orientable, so Poincaré duality over $\mathbb F_2$ applies.
+Every closed connected $3$-manifold is mod-$2$ orientable, so Poincaré duality over $\FF_2$ applies.
 :::
 
 :::
@@ -70,7 +70,7 @@ Substitute the identities from step [](#poincare-duality-mod2){.pf-ref} and the 
 :::
 
 ::: {.pf-step #bound-attained-by-s1-times-s2}
-The bound is attained, for example by $S^1\times S^2$, which admits a genus-one Heegaard splitting and has $b_1=b_2=1$ over $\mathbb F_2$.
+The bound is attained, for example by $S^1\times S^2$, which admits a genus-one Heegaard splitting and has $b_1=b_2=1$ over $\FF_2$.
 
 ::: pf-proof
 Its mod-$2$ homology has dimension one in each degree $0,1,2,3$.

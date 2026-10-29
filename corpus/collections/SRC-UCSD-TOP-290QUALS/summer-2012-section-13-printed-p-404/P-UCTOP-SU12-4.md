@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Let $X$ be a path-connected topological space whose integer homology groups in positive dimensions are:
 $$H_0(X; \ZZ) \cong \ZZ, \qquad H_k(X; \ZZ) \cong \ZZ/k\ZZ \quad \text{for all } k \ge 1.$$
-Compute the integer homology groups $H_n(\mathbb{RP}^2 \times X; \ZZ)$ for all $n \ge 0$.
+Compute the integer homology groups $H_n(\RP^2 \times X; \ZZ)$ for all $n \ge 0$.
 :::
 
 ::: {.solution}
@@ -33,9 +33,9 @@ Compute the integer homology groups $H_n(\mathbb{RP}^2 \times X; \ZZ)$ for all $
 ::: pf
 
 ::: pf-step
-The integral homology of $\mathbb{RP}^2$ is
+The integral homology of $\RP^2$ is
 $$
-H_i(\mathbb{RP}^2;\ZZ)\cong
+H_i(\RP^2;\ZZ)\cong
 \begin{cases}
 \ZZ,&i=0,\\
 \ZZ/2,&i=1,\\
@@ -48,7 +48,7 @@ $$
 ::: pf-step
 The homological Künneth theorem gives, noncanonically,
 $$
-H_n(\mathbb{RP}^2\times X;\ZZ)
+H_n(\RP^2\times X;\ZZ)
 \cong H_n(X)
 \oplus ((\ZZ/2)\otimes H_{n-1}(X))
 \oplus \operatorname{Tor}_1^{\ZZ}(\ZZ/2,H_{n-2}(X)),
@@ -96,7 +96,7 @@ Therefore the tensor summand is $\ZZ/2$ exactly when $n-1$ is even, while the To
 ::: pf-step
 Exactly one of the consecutive integers $n-1,n-2$ is even, so exactly one of these two summands is nonzero. Hence
 $$
-H_n(\mathbb{RP}^2\times X;\ZZ)
+H_n(\RP^2\times X;\ZZ)
 \cong \ZZ/n\oplus\ZZ/2
 \qquad(n\ge3).
 $$
@@ -109,7 +109,7 @@ $$
 ::: pf-step
 Thus
 $$
-H_n(\mathbb{RP}^2\times X;\ZZ)\cong
+H_n(\RP^2\times X;\ZZ)\cong
 \begin{cases}
 \ZZ,&n=0,\\
 \ZZ/2,&n=1,2,\\

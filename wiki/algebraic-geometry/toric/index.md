@@ -17,7 +17,7 @@ At the level of [@Ful93, Chapters 1–4].
 
 - [[algebraic-geometry/toric/the-dictionary|The fan dictionary]], the lattices $M$ and $N$, strongly convex rational polyhedral cones and their duals, fans, the affine toric variety $\Spec\CC[\sigma^\vee\cap M]$ of a semigroup algebra, gluing along faces, the orbit-cone correspondence, and orbit closures.
 
-- [[algebraic-geometry/toric/examples|Examples]], the torus $(\CC^\times)^n$, $\CC^n$, $\PP^n$, the Hirzebruch surfaces $\mathbb{F}_n$, the quadric cone, the cuspidal cubic, weighted projective spaces, and products and blowups of these.
+- [[algebraic-geometry/toric/examples|Examples]], the torus $(\CC^\times)^n$, $\CC^n$, $\PP^n$, the Hirzebruch surfaces $\FF_n$, the quadric cone, the cuspidal cubic, weighted projective spaces, and products and blowups of these.
 
 - [[algebraic-geometry/toric/affine-computations|Affine toric computations]], dualising a cone by hand, the equations of $X_\sigma$, the cone over the rational normal curve, and minimal resolution by convex hull.
 

@@ -18,9 +18,9 @@ Show that $f(z) = z$.
 :::
 
 ::: {.solution}
-By the Riemann mapping theorem choose a biholomorphism $\phi:G\to\mathbb D$.
-Then $F=\phi\circ f\circ\phi^{-1}$ is a holomorphic self-map of $\mathbb D$
-with two distinct fixed points $\alpha,\beta\in\mathbb D$.
+By the Riemann mapping theorem choose a biholomorphism $\phi:G\to\DD$.
+Then $F=\phi\circ f\circ\phi^{-1}$ is a holomorphic self-map of $\DD$
+with two distinct fixed points $\alpha,\beta\in\DD$.
 
 Let $T$ be a disk automorphism with $T(\alpha)=0$. Then
 $H=T\circ F\circ T^{-1}$ fixes $0$ and the nonzero point $T(\beta)$.

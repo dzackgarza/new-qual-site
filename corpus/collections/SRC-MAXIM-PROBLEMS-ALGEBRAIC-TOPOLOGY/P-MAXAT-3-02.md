@@ -21,7 +21,7 @@ Calculate $H ^ { * } ( \RR \mathbb { P } ^ { \infty } ; \ZZ ) , H ^ { * } ( \RR 
 
 ::: {.solution}
 
-Use the standard CW decomposition of $\mathbb{RP}^m$ with one cell in every dimension $0,1,\ldots,m$.
+Use the standard CW decomposition of $\RP^m$ with one cell in every dimension $0,1,\ldots,m$.
 
 ::: pf
 
@@ -47,7 +47,7 @@ d_k=
 
 ::: pf-proof
 
-The attaching map of the $k$-cell is the quotient map $S^{k-1}\to\mathbb{RP}^{k-1}$. Its incidence number with the unique $(k-1)$-cell is the sum of the contributions from the two hemispheres, which differ by the degree $(-1)^k$ of the antipodal map on $S^{k-1}$. Hence the coefficient is $1+(-1)^k$.
+The attaching map of the $k$-cell is the quotient map $S^{k-1}\to\RP^{k-1}$. Its incidence number with the unique $(k-1)$-cell is the sum of the contributions from the two hemispheres, which differ by the degree $(-1)^k$ of the antipodal map on $S^{k-1}$. Hence the coefficient is $1+(-1)^k$.
 
 :::
 
@@ -79,10 +79,10 @@ Cellular cochains are $C^k=\operatorname{Hom}(C_k,\ZZ)\cong\ZZ$, and $\delta^k$ 
 
 ::: {.pf-step #s1-3}
 
-For $\mathbb{RP}^{\infty}$,
+For $\RP^{\infty}$,
 \[
 \boxed{
-H^k(\mathbb{RP}^{\infty};\ZZ)
+H^k(\RP^{\infty};\ZZ)
 \cong
 \begin{cases}
 \ZZ,&k=0,\\
@@ -108,10 +108,10 @@ At positive even degree, the outgoing map is zero and the incoming image is $2\Z
 
 ::: {.pf-step #s1-4}
 
-For $\mathbb{RP}^{2n}$,
+For $\RP^{2n}$,
 \[
 \boxed{
-H^k(\mathbb{RP}^{2n};\ZZ)
+H^k(\RP^{2n};\ZZ)
 \cong
 \begin{cases}
 \ZZ,&k=0,\\
@@ -127,7 +127,7 @@ The cochain complex of step [](#s1-2){.pf-ref} truncates in degree $2n$. The cal
 \[
 H^{2n}\cong\ZZ/2.
 \]
-This agrees with the fact that $\mathbb{RP}^{2n}$ is nonorientable but has top integral cohomology $\ZZ/2$.
+This agrees with the fact that $\RP^{2n}$ is nonorientable but has top integral cohomology $\ZZ/2$.
 
 :::
 
@@ -135,10 +135,10 @@ This agrees with the fact that $\mathbb{RP}^{2n}$ is nonorientable but has top i
 
 ::: {.pf-step #s1-5}
 
-For $\mathbb{RP}^{2n+1}$,
+For $\RP^{2n+1}$,
 \[
 \boxed{
-H^k(\mathbb{RP}^{2n+1};\ZZ)
+H^k(\RP^{2n+1};\ZZ)
 \cong
 \begin{cases}
 \ZZ,&k=0,2n+1,\\
@@ -160,18 +160,18 @@ Again the calculation below the top is step [](#s1-3){.pf-ref}. In degree $2n+1$
 
 If the ring structure is also desired, let
 \[
-u\in H^2(\mathbb{RP}^{\infty};\ZZ)
+u\in H^2(\RP^{\infty};\ZZ)
 \]
 be the unique nonzero class. Then
 \[
-\boxed{H^*(\mathbb{RP}^{\infty};\ZZ)
+\boxed{H^*(\RP^{\infty};\ZZ)
 \cong\ZZ[u]/(2u),\qquad |u|=2.}
 \]
 
 
 ::: pf-proof
 
-The class $u$ is the Bockstein of the mod-$2$ generator $x\in H^1(\mathbb{RP}^{\infty};\mathbb F_2)$. Naturality and the mod-$2$ ring $\mathbb F_2[x]$ show that $u^j$ is the unique nonzero integral class in degree $2j$. Each such class has order $2$, giving the relation $2u=0$ and no further relation in the infinite case.
+The class $u$ is the Bockstein of the mod-$2$ generator $x\in H^1(\RP^{\infty};\FF_2)$. Naturality and the mod-$2$ ring $\FF_2[x]$ show that $u^j$ is the unique nonzero integral class in degree $2j$. Each such class has order $2$, giving the relation $2u=0$ and no further relation in the infinite case.
 
 :::
 
@@ -181,14 +181,14 @@ The class $u$ is the Bockstein of the mod-$2$ generator $x\in H^1(\mathbb{RP}^{\
 
 For finite even-dimensional projective space,
 \[
-\boxed{H^*(\mathbb{RP}^{2n};\ZZ)
+\boxed{H^*(\RP^{2n};\ZZ)
 \cong\ZZ[u]/(2u,u^{n+1}),\qquad |u|=2.}
 \]
 
 
 ::: pf-proof
 
-Restrict the class $u$ from $\mathbb{RP}^{\infty}$. Step [](#s1-4){.pf-ref} shows that $u^j$ supplies the unique nonzero class in degrees $2j$ for $1\leq j\leq n$, and dimension forces $u^{n+1}=0$.
+Restrict the class $u$ from $\RP^{\infty}$. Step [](#s1-4){.pf-ref} shows that $u^j$ supplies the unique nonzero class in degrees $2j$ for $1\leq j\leq n$, and dimension forces $u^{n+1}=0$.
 
 :::
 

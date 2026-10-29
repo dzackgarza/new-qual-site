@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF25G
 kind: problem
-title: $\mathbb{CP}^2$ not homotopy equivalent to $S^2 \vee S^4$; nontriviality of $\pi_3(S^2)$
+title: $\CP^2$ not homotopy equivalent to $S^2 \vee S^4$; nontriviality of $\pi_3(S^2)$
 classification:
   areas:
   - topology
@@ -14,8 +14,8 @@ review: draft
 ---
 
 ::: {.problem}
-Show that $\mathbb{CP}^2$ is not homotopy equivalent to $S^2 \vee S^4$.
-Now, by considering the attaching map of the 4-cell in the standard cell decomposition of $\mathbb{CP}^2$, show that $\pi_3(S^2)$ is not trivial.
+Show that $\CP^2$ is not homotopy equivalent to $S^2 \vee S^4$.
+Now, by considering the attaching map of the 4-cell in the standard cell decomposition of $\CP^2$, show that $\pi_3(S^2)$ is not trivial.
 :::
 
 ::: {.solution}
@@ -24,8 +24,8 @@ Now, by considering the attaching map of the 4-cell in the standard cell decompo
 
 ::: {.pf-step #s1}
 
-The integral cohomology ring of $\mathbb{CP}^2$ is
-$$H^*(\mathbb{CP}^2;\ZZ)\cong\ZZ[u]/(u^3),\qquad |u|=2,$$
+The integral cohomology ring of $\CP^2$ is
+$$H^*(\CP^2;\ZZ)\cong\ZZ[u]/(u^3),\qquad |u|=2,$$
 so $u^2\ne0$.
 
 ::: pf-proof
@@ -50,7 +50,7 @@ The only degree-$2$ class comes from the $S^2$ summand, and its square vanishes 
 
 ::: {.pf-step #s3}
 
-Hence $\mathbb{CP}^2$ is not homotopy equivalent to $S^2\vee S^4$.
+Hence $\CP^2$ is not homotopy equivalent to $S^2\vee S^4$.
 
 ::: pf-proof
 
@@ -63,7 +63,7 @@ A homotopy equivalence induces an isomorphism of graded cohomology rings, contra
 ::: pf-step
 
 The standard CW decomposition is
-$$\mathbb{CP}^2=S^2\cup_\eta e^4$$
+$$\CP^2=S^2\cup_\eta e^4$$
 for an attaching map $\eta:S^3\to S^2$.
 
 ::: pf-proof
@@ -77,7 +77,7 @@ Complex projective space has one cell in each even dimension $0,2,4$.
 ::: {.pf-step #s5}
 
 If $\pi_3(S^2)=0$, then $\eta$ would be null-homotopic and
-$$\mathbb{CP}^2\simeq S^2\vee S^4,$$
+$$\CP^2\simeq S^2\vee S^4,$$
 contradicting step [](#s3){.pf-ref}.
 
 ::: pf-proof

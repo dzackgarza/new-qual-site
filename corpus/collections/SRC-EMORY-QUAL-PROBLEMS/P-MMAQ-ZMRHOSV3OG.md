@@ -23,20 +23,20 @@ audit:
 ::: {.problem}
 1. State the Schwarz lemma for analytic functions in the unit disc.
 
-2. Let $f: \mathbb{D} \to \mathbb{D}$ be an analytic map from the unit disc $\mathbb{D}$ into itself.
-   Use the Schwarz lemma to show that for each $a\in \mathbb{D}$ we have `\begin{align*} \dfrac{|f'(a)|}{1-|f(a)|^2} \leq \dfrac{1}{1-|a|^2} \end{align*}`{=tex}
+2. Let $f: \DD \to \DD$ be an analytic map from the unit disc $\DD$ into itself.
+   Use the Schwarz lemma to show that for each $a\in \DD$ we have `\begin{align*} \dfrac{|f'(a)|}{1-|f(a)|^2} \leq \dfrac{1}{1-|a|^2} \end{align*}`{=tex}
 :::
 
 ::: {.solution}
 ### Part 1: Statement of the Schwarz Lemma
 
-**Schwarz Lemma:** Let $\mathbb{D} = \{z \in \CC : |z| < 1\}$.
-If $g: \mathbb{D} \to \mathbb{D}$ is a holomorphic function satisfying $g(0) = 0$, then:
+**Schwarz Lemma:** Let $\DD = \{z \in \CC : |z| < 1\}$.
+If $g: \DD \to \DD$ is a holomorphic function satisfying $g(0) = 0$, then:
 
-1. $|g(z)| \leq |z|$ for all $z \in \mathbb{D}$.
+1. $|g(z)| \leq |z|$ for all $z \in \DD$.
 
 2. $|g'(0)| \leq 1$.
-   Furthermore, if $|g(z)| = |z|$ for some non-zero $z \in \mathbb{D}$, or if $|g'(0)| = 1$, then $g(z) = e^{i\theta} z$ for some constant $\theta \in \RR$ (i.e. $g$ is a rotation).
+   Furthermore, if $|g(z)| = |z|$ for some non-zero $z \in \DD$, or if $|g'(0)| = 1$, then $g(z) = e^{i\theta} z$ for some constant $\theta \in \RR$ (i.e. $g$ is a rotation).
 
 * * *
 
@@ -52,7 +52,7 @@ If $g: \mathbb{D} \to \mathbb{D}$ is a holomorphic function satisfying $g(0) = 0
 
 ::: pf-step
 
-For any $w \in \mathbb{D}$, define the Möbius transformation $\phi_w(z) = \frac{w - z}{1 - \bar{w} z}$.
+For any $w \in \DD$, define the Möbius transformation $\phi_w(z) = \frac{w - z}{1 - \bar{w} z}$.
 
 ::: pf-proof
 
@@ -64,11 +64,11 @@ This is a definition; the denominator does not vanish for $|z|<1$ because $|\bar
 
 ::: pf-step
 
-$\phi_w$ is a biholomorphic map from $\mathbb{D}$ onto $\mathbb{D}$ with $\phi_w(w) = 0$, $\phi_w(0) = w$, and $\phi_w^{-1} = \phi_w$.
+$\phi_w$ is a biholomorphic map from $\DD$ onto $\DD$ with $\phi_w(w) = 0$, $\phi_w(0) = w$, and $\phi_w^{-1} = \phi_w$.
 
 ::: pf-proof
 
-Direct substitution gives $\phi_w(w)=0$, $\phi_w(0)=w$, and $\phi_w(\phi_w(z))=z$. The identity $1-|\phi_w(z)|^2=\frac{(1-|w|^2)(1-|z|^2)}{|1-\bar wz|^2}$ shows that $\phi_w$ maps $\mathbb D$ into $\mathbb D$; being its own inverse, it is a biholomorphism of $\mathbb D$.
+Direct substitution gives $\phi_w(w)=0$, $\phi_w(0)=w$, and $\phi_w(\phi_w(z))=z$. The identity $1-|\phi_w(z)|^2=\frac{(1-|w|^2)(1-|z|^2)}{|1-\bar wz|^2}$ shows that $\phi_w$ maps $\DD$ into $\DD$; being its own inverse, it is a biholomorphism of $\DD$.
 
 :::
 
@@ -104,14 +104,14 @@ Substitution into derivative formula.
 
 ::: pf-step
 
-**Construct the normalized map $g: \mathbb{D} \to \mathbb{D}$.**
+**Construct the normalized map $g: \DD \to \DD$.**
 
 ::: pf-proof
 
 ::: pf-step
 
-Set $b = f(a) \in \mathbb{D}$.
-Define $g: \mathbb{D} \to \mathbb{D}$ by: $$g(z) = (\phi_b \circ f \circ \phi_a)(z) = \phi_b(f(\phi_a(z))).$$
+Set $b = f(a) \in \DD$.
+Define $g: \DD \to \DD$ by: $$g(z) = (\phi_b \circ f \circ \phi_a)(z) = \phi_b(f(\phi_a(z))).$$
 
 ::: pf-proof
 
@@ -123,7 +123,7 @@ Composition of holomorphic maps.
 
 ::: pf-step
 
-Since $\phi_a(\mathbb{D}) = \mathbb{D}$, $f(\mathbb{D}) \subseteq \mathbb{D}$, and $\phi_b(\mathbb{D}) = \mathbb{D}$, $g$ maps $\mathbb{D}$ into $\mathbb{D}$.
+Since $\phi_a(\DD) = \DD$, $f(\DD) \subseteq \DD$, and $\phi_b(\DD) = \DD$, $g$ maps $\DD$ into $\DD$.
 
 ::: pf-proof
 
@@ -157,7 +157,7 @@ $\phi_a(0) = a$, $f(a) = b$, $\phi_b(b) = 0$.
 
 ::: {.pf-step #s3-1}
 
-By Part 1, since $g$ is holomorphic on $\mathbb{D}$, $g(\mathbb{D}) \subseteq \mathbb{D}$, and $g(0) = 0$, we have: $$|g'(0)| \leq 1.$$
+By Part 1, since $g$ is holomorphic on $\DD$, $g(\DD) \subseteq \DD$, and $g(0) = 0$, we have: $$|g'(0)| \leq 1.$$
 
 ::: pf-proof
 

@@ -59,7 +59,7 @@ The ideal $I$ is proper.
 ::: pf-proof
 Define
 \[
-\varphi:R\longrightarrow\mathbb F_2,
+\varphi:R\longrightarrow\FF_2,
 \qquad
 \varphi(a+bs)=\bar a.
 \]
@@ -77,7 +77,7 @@ Hence
 \]
 so
 \[
-R/I\cong\mathbb F_2.
+R/I\cong\FF_2.
 \]
 In particular, $I\neq R$.
 :::

@@ -125,7 +125,7 @@ and is realized over $\QQ$.
 
 ::: pf-proof
 
-View $C_3\times C_3$ as the additive group of $\mathbb F_3^2$.
+View $C_3\times C_3$ as the additive group of $\FF_3^2$.
 Each nonzero vector spans a subgroup of order $3$ containing
 exactly two nonzero vectors. The eight nonzero vectors are thus
 partitioned among $8/2=4$ such subgroups. Lagrange's theorem

@@ -66,7 +66,7 @@ If $\alpha^{17}=1$ and $\alpha\neq1$, then
 
 Since $17$ is prime, $\alpha$ has multiplicative order $17$. Write $d=[F(\alpha):F]$. The multiplicative group of $F(\alpha)$ has order $2^d-1$, so $17\mid2^d-1$ and step [](#s1-2){.pf-ref} implies $8\mid d$.
 
-Conversely, $2^8\equiv1\pmod{17}$ implies that every root of $x^{17}-1$ belongs to the root set of $x^{2^8}-x$: any such root is nonzero and satisfies $\alpha^{2^8-1}=1$. This root set is the unique subfield $\mathbb F_{2^8}$ of $\bar F$. Hence $\alpha\in\mathbb F_{2^8}$, giving $d\mid8$. Thus $d=8$.
+Conversely, $2^8\equiv1\pmod{17}$ implies that every root of $x^{17}-1$ belongs to the root set of $x^{2^8}-x$: any such root is nonzero and satisfies $\alpha^{2^8-1}=1$. This root set is the unique subfield $\FF_{2^8}$ of $\bar F$. Hence $\alpha\in\FF_{2^8}$, giving $d\mid8$. Thus $d=8$.
 
 :::
 

@@ -44,7 +44,7 @@ points in $U$, but $u\ne v$.
 U=\CC\setminus(-\infty,0]
 \]
 is simply connected and proper, so by the Riemann mapping theorem there is a
-nonconstant biholomorphism $F:U\to\mathbb D$. In particular $|F|<1$.
+nonconstant biholomorphism $F:U\to\DD$. In particular $|F|<1$.
 
 **(iii) False.** If polynomials $p_n$ converged uniformly on
 $1<|z|<2$ to $1/[z(z-3)]$, then they would converge uniformly on the circle

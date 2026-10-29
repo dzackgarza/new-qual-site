@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Find all irreducible polynomials of degree at most $4$ over $\mathbb F_2$.
+Find all irreducible polynomials of degree at most $4$ over $\FF_2$.
 :::
 
 ::: {.solution}

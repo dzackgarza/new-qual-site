@@ -218,7 +218,7 @@ The group $E=C_7\times C_7$ has exactly $10$ subgroups.
 
 ::: pf-proof
 
-View $E$ as the $2$-dimensional vector space $\mathbb F_7^2$. Its subgroups are exactly its linear subspaces. There is one zero subspace, one whole space, and the $1$-dimensional subspaces. The number of $1$-dimensional subspaces is
+View $E$ as the $2$-dimensional vector space $\FF_7^2$. Its subgroups are exactly its linear subspaces. There is one zero subspace, one whole space, and the $1$-dimensional subspaces. The number of $1$-dimensional subspaces is
 \[
 \frac{7^2-1}{7-1}=8,
 \]

@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Show that any homotopy equivalence from $\mathbb{CP}^{2n}$ to itself is orientation-preserving, i.e. has degree +1. Is this true for $\mathbb{CP}^{2n+1}$?
+Show that any homotopy equivalence from $\CP^{2n}$ to itself is orientation-preserving, i.e. has degree +1. Is this true for $\CP^{2n+1}$?
 :::
 
 ::: {.solution}
@@ -21,9 +21,9 @@ Show that any homotopy equivalence from $\mathbb{CP}^{2n}$ to itself is orientat
 ::: pf
 
 ::: pf-step
-Let $x\in H^2(\mathbb{CP}^m;\ZZ)$ be the standard generator, so
+Let $x\in H^2(\CP^m;\ZZ)$ be the standard generator, so
 $$
-H^*(\mathbb{CP}^m;\ZZ)\cong\ZZ[x]/(x^{m+1}),
+H^*(\CP^m;\ZZ)\cong\ZZ[x]/(x^{m+1}),
 \qquad |x|=2.
 $$
 
@@ -34,7 +34,7 @@ The top class $x^m$ is the cohomological orientation class for the complex orien
 :::
 
 ::: pf-step
-If $f:\mathbb{CP}^m\to\mathbb{CP}^m$ is a homotopy equivalence, then
+If $f:\CP^m\to\CP^m$ is a homotopy equivalence, then
 $$
 f^*(x)=\varepsilon x
 $$
@@ -67,13 +67,13 @@ By step [](#degree-formula){.pf-ref},
 $$
 \deg f=\varepsilon^{2n}=1.
 $$
-Thus every homotopy equivalence of $\mathbb{CP}^{2n}$ preserves orientation.
+Thus every homotopy equivalence of $\CP^{2n}$ preserves orientation.
 :::
 
 :::
 
 ::: pf-step
-The analogous statement is false for $\mathbb{CP}^{2n+1}$.
+The analogous statement is false for $\CP^{2n+1}$.
 
 ::: pf-proof
 Complex conjugation

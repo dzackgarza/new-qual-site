@@ -18,7 +18,7 @@ audit:
 ::: {.problem}
 Suppose $X$ and $Y$ are spaces such that
 \[
-X\times Y\simeq\mathbb{CP}^n,
+X\times Y\simeq\CP^n,
 \qquad n\ge1.
 \]
 Prove that either
@@ -37,7 +37,7 @@ All cohomology groups below have coefficients in \(\ZZ\).
 
 Assume
 \[
-X\times Y\simeq\mathbb{CP}^n,
+X\times Y\simeq\CP^n,
 \qquad
 n\ge1.
 \]
@@ -51,7 +51,7 @@ The spaces \(X\) and \(Y\) are connected.
 
 ::: pf-proof
 
-The product \(X\times Y\) is homotopy equivalent to the connected space \(\mathbb{CP}^n\), hence is connected. A product is connected only if each factor is connected.
+The product \(X\times Y\) is homotopy equivalent to the connected space \(\CP^n\), hence is connected. A product is connected only if each factor is connected.
 
 :::
 
@@ -108,10 +108,10 @@ Each map has a left inverse by step [](#s1-2){.pf-ref}.
 
 ::: {.pf-step #s1-4}
 
-The integral cohomology of \(\mathbb{CP}^n\) is
+The integral cohomology of \(\CP^n\) is
 \[
 \boxed{
-H^*(\mathbb{CP}^n)
+H^*(\CP^n)
 \cong
 \ZZ[u]/(u^{n+1})},
 \qquad
@@ -138,7 +138,7 @@ By step [](#s1-3){.pf-ref}, each \(H^m(X)\) and \(H^m(Y)\) injects into
 \[
 H^m(X\times Y)
 \cong
-H^m(\mathbb{CP}^n).
+H^m(\CP^n).
 \]
 By step [](#s1-4){.pf-ref}, this target is either \(0\) or \(\ZZ\). Thus the factor group is either \(0\) or a subgroup of \(\ZZ\), hence torsion-free; and it vanishes whenever \(m\) is odd.
 
@@ -207,7 +207,7 @@ Since
 \[
 H^2(X\times Y)
 \cong
-H^2(\mathbb{CP}^n)
+H^2(\CP^n)
 \cong
 \ZZ,
 \]
@@ -241,7 +241,7 @@ p_X^*a=\pm u}
 \]
 under a fixed cohomology-ring isomorphism
 \[
-H^*(X\times Y)\cong H^*(\mathbb{CP}^n).
+H^*(X\times Y)\cong H^*(\CP^n).
 \]
 
 
@@ -288,7 +288,7 @@ for some \(1\le r\le n\).
 
 ::: pf-proof
 
-Odd-degree cohomology of \(Y\) vanishes by step [](#s1-5){.pf-ref}, and no positive cohomology can occur above degree \(2n\) because it injects into that of \(\mathbb{CP}^n\).
+Odd-degree cohomology of \(Y\) vanishes by step [](#s1-5){.pf-ref}, and no positive cohomology can occur above degree \(2n\) because it injects into that of \(\CP^n\).
 
 :::
 
@@ -321,7 +321,7 @@ Since
 \[
 H^{2r}(X\times Y)
 \cong
-H^{2r}(\mathbb{CP}^n)
+H^{2r}(\CP^n)
 \cong
 \ZZ\,u^r,
 \]

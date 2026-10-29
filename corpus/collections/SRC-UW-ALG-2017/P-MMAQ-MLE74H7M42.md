@@ -23,9 +23,9 @@ Classify (with proof) all fields with finitely many elements.
 
 
 ::: {.solution}
-Let \(F\) be a finite field. Its characteristic is a prime \(p\), so its prime subfield is \(\mathbb F_p\). Since \(F\) is finite-dimensional over \(\mathbb F_p\), say
+Let \(F\) be a finite field. Its characteristic is a prime \(p\), so its prime subfield is \(\FF_p\). Since \(F\) is finite-dimensional over \(\FF_p\), say
 \[
-[F:\mathbb F_p]=n,
+[F:\FF_p]=n,
 \]
 we have
 \[
@@ -33,9 +33,9 @@ we have
 \]
 Thus every finite field has prime-power order.
 
-Conversely, fix a prime \(p\) and \(n\ge1\), and work in an algebraic closure \(\overline{\mathbb F_p}\). Let
+Conversely, fix a prime \(p\) and \(n\ge1\), and work in an algebraic closure \(\overline{\FF_p}\). Let
 \[
-E=\{a\in\overline{\mathbb F_p}:a^{p^n}=a\}.
+E=\{a\in\overline{\FF_p}:a^{p^n}=a\}.
 \]
 If \(a,b\in E\), then in characteristic \(p\),
 \[

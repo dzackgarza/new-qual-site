@@ -33,10 +33,10 @@ If $\widetilde S\to S$ is a finite $d$-sheeted cover, then $\chi(\widetilde S)=d
 
 ::: {.pf-step #positive-class}
 The positive-Euler-characteristic class is
-$$\boxed{\{S^2,\mathbb{RP}^2\}}.$$
+$$\boxed{\{S^2,\RP^2\}}.$$
 
 ::: pf-proof
-The antipodal quotient gives a double cover $S^2\to\mathbb{RP}^2$. These are exactly the closed connected surfaces with positive Euler characteristic.
+The antipodal quotient gives a double cover $S^2\to\RP^2$. These are exactly the closed connected surfaces with positive Euler characteristic.
 :::
 
 :::
@@ -63,7 +63,7 @@ Every nonorientable $N_h$ with $h\ge3$ has orientation double cover $\Sigma_{h-1
 
 ::: pf-step
 Hence there are exactly three commensurability classes:
-$$\boxed{\{S^2,\mathbb{RP}^2\},\qquad\{T^2,K\},\qquad\{\Sigma_g:g\ge2\}\cup\{N_h:h\ge3\}.}$$
+$$\boxed{\{S^2,\RP^2\},\qquad\{T^2,K\},\qquad\{\Sigma_g:g\ge2\}\cup\{N_h:h\ge3\}.}$$
 
 ::: pf-proof
 Combine steps [](#euler-char-sign-invariant){.pf-ref}, [](#positive-class){.pf-ref}, [](#zero-class){.pf-ref} and [](#negative-class-single){.pf-ref}.

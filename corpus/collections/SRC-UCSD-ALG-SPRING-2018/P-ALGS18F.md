@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f(x) \in \mathbb{F}_p[x]$ is an irreducible factor of $x^{p^n} - x$ where $p$ is a prime number.
+Suppose $f(x) \in \FF_p[x]$ is an irreducible factor of $x^{p^n} - x$ where $p$ is a prime number.
 Prove that $\deg f$ divides $n$.
 :::
 
@@ -33,11 +33,11 @@ Prove that $\deg f$ divides $n$.
 
 ::: pf-step
 
-Let $d=\deg f$, and let $\alpha$ be a root of $f$ in an algebraic closure $\overline{\mathbb F}_p$.
+Let $d=\deg f$, and let $\alpha$ be a root of $f$ in an algebraic closure $\overline{\FF}_p$.
 
 ::: pf-proof
 
-Since $f$ is irreducible over $\mathbb F_p$, it is the minimal polynomial of $\alpha$ over $\mathbb F_p$, so $[\mathbb F_p(\alpha):\mathbb F_p]=d$.
+Since $f$ is irreducible over $\FF_p$, it is the minimal polynomial of $\alpha$ over $\FF_p$, so $[\FF_p(\alpha):\FF_p]=d$.
 
 :::
 
@@ -60,16 +60,16 @@ Every root of $f$ is a root of the polynomial $x^{p^n}-x$.
 
 ::: {.pf-step #s3}
 
-Let $\varphi:\overline{\mathbb F}_p\to\overline{\mathbb F}_p$ be Frobenius, $\varphi(x)=x^p$.
+Let $\varphi:\overline{\FF}_p\to\overline{\FF}_p$ be Frobenius, $\varphi(x)=x^p$.
 The least positive integer $r$ such that $\varphi^r(\alpha)=\alpha$ is $d$.
 
 ::: pf-proof
 
-The distinct conjugates of $\alpha$ over $\mathbb F_p$ are
+The distinct conjugates of $\alpha$ over $\FF_p$ are
 \[
 \alpha,\alpha^p,\alpha^{p^2},\ldots,\alpha^{p^{d-1}}.
 \]
-Indeed, Frobenius fixes $\mathbb F_p$, so these are roots of the minimal polynomial; conversely the finite extension $\mathbb F_p(\alpha)$ has $p^d$ elements, hence Frobenius has order $d$ on the orbit of a generator of this degree-$d$ extension.
+Indeed, Frobenius fixes $\FF_p$, so these are roots of the minimal polynomial; conversely the finite extension $\FF_p(\alpha)$ has $p^d$ elements, hence Frobenius has order $d$ on the orbit of a generator of this degree-$d$ extension.
 Thus the orbit length is exactly $d$.
 
 :::

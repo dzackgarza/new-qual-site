@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let f be a non-constant analytic function on D with $f ( \mathbb { D } ) \subseteq \mathbb { D } . { \mathrm { ~ U s e ~ } } \psi _ { a } ( f ( z ) )$ (where $a = f ( 0 )$ $\psi _ { a } ( z ) = \frac { a - z } { 1 - \bar { a } z } )$ to prove that ${ \frac { | f ( 0 ) | - | z | } { 1 + | f ( 0 ) | | z | } } \leq | f ( z ) | \leq { \frac { | f ( 0 ) | + | z | } { 1 - | f ( 0 ) | | z | } } ,$
+Let f be a non-constant analytic function on D with $f ( \DD ) \subseteq \DD . { \mathrm { ~ U s e ~ } } \psi _ { a } ( f ( z ) )$ (where $a = f ( 0 )$ $\psi _ { a } ( z ) = \frac { a - z } { 1 - \bar { a } z } )$ to prove that ${ \frac { | f ( 0 ) | - | z | } { 1 + | f ( 0 ) | | z | } } \leq | f ( z ) | \leq { \frac { | f ( 0 ) | + | z | } { 1 - | f ( 0 ) | | z | } } ,$
 :::
 
 ::: {.solution}

@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that any continuous map $f : S^2 \times S^2 \to \mathbb{CP}^2$ has even degree.
+Prove that any continuous map $f : S^2 \times S^2 \to \CP^2$ has even degree.
 :::
 
 ::: {.solution}
@@ -23,9 +23,9 @@ Prove that any continuous map $f : S^2 \times S^2 \to \mathbb{CP}^2$ has even de
 
 ::: pf-step
 
-Let $x\in H^2(\mathbb{CP}^2;\ZZ)$ be the standard generator, normalized by
+Let $x\in H^2(\CP^2;\ZZ)$ be the standard generator, normalized by
 $$
-\langle x^2,[\mathbb{CP}^2]\rangle=1.
+\langle x^2,[\CP^2]\rangle=1.
 $$
 
 ::: pf-proof
@@ -95,7 +95,7 @@ so every such map has even degree.
 Evaluate step [](#s4){.pf-ref} on $[S^2\times S^2]$:
 $$
 \langle f^*(x^2),[S^2\times S^2]\rangle
-=\deg(f)\langle x^2,[\mathbb{CP}^2]\rangle.
+=\deg(f)\langle x^2,[\CP^2]\rangle.
 $$
 The left side is $2rs$ and the final factor on the right is $1$.
 

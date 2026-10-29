@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be holomorphic on the unit disk \(\mathbb D\), with \(f(0)=0\) and \(|f(z)|\le1\). Prove that for every integer \(m\ge1\),
+Let \(f\) be holomorphic on the unit disk \(\DD\), with \(f(0)=0\) and \(|f(z)|\le1\). Prove that for every integer \(m\ge1\),
 \[
 f(z)-2^m z^m
 \]
@@ -47,7 +47,7 @@ $$
 $$
 for every
 $$
-z\in\mathbb D.
+z\in\DD.
 $$
 
 

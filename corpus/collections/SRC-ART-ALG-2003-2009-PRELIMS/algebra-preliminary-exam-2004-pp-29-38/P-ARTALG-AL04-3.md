@@ -47,8 +47,8 @@ The groups with normal Sylow $3$-subgroup are precisely the
 following $42$ groups $N\rtimes H$.
 
 For $N=C_9$, the symbol $+$ denotes the identity automorphism and $-$
-denotes inversion. For $N=C_3^2$, identify $N$ with $\mathbb F_3^2$
-of column vectors and use these matrices over $\mathbb F_3$:
+denotes inversion. For $N=C_3^2$, identify $N$ with $\FF_3^2$
+of column vectors and use these matrices over $\FF_3$:
 $$
 I=\begin{pmatrix}1&0\\0&1\end{pmatrix},\quad
 Z=-I,\quad D=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\quad
@@ -111,7 +111,7 @@ r^2\rangle\cong C_2^2$. Permuting its three cyclic subgroups of
 order $4$ induces all automorphisms of this quotient, giving two
 orbits. This proves completeness and distinctness in the $C_9$ column.
 
-For $C_3^2$, the automorphism group is $\operatorname{GL}_2(\mathbb F_3)$.
+For $C_3^2$, the automorphism group is $\operatorname{GL}_2(\FF_3)$.
 Step [](#s2){.pf-ref} gives an exhaustive, executable verification of precisely
 the action orbits in the third column. Together with the preceding
 isomorphism criterion, this proves all assertions about the $42$ groups.
@@ -147,7 +147,7 @@ different cyclic axes. Such elements square to $-1$, anticommute,
 and generate $Q_8$, so all $6\cdot4=24$ choices work.
 The three axes in normal form $r^a s^b$ are exactly those listed
 in the code. Thus `orbit` enumerates the entire
-$\operatorname{Aut}(H)\times\operatorname{GL}_2(\mathbb F_3)$-orbit.
+$\operatorname{Aut}(H)\times\operatorname{GL}_2(\FF_3)$-orbit.
 
 The calculation checks that the listed orbits are disjoint and that
 their union equals `candidates`. All arithmetic is exact modulo $3$;
@@ -290,7 +290,7 @@ Q8 100 5
 
 Exactly four further groups have a normal Sylow $2$-subgroup.
 
-Let $V=C_2^3=\mathbb F_2\oplus\mathbb F_2^2$, and let $\tau_V$
+Let $V=C_2^3=\FF_2\oplus\FF_2^2$, and let $\tau_V$
 fix the first coordinate and act on the second summand by
 $\left(\begin{smallmatrix}0&1\\1&1\end{smallmatrix}\right)$.
 Let $Q_8=\{\pm1,\pm i,\pm j,\pm k\}$ with $ij=k$, and let
@@ -458,7 +458,7 @@ $-1$. If the kernel has eigenvalue $+1$, the two eigenspaces give
 $H=C_3\times S_3$ with its central $C_3$ as kernel. If the kernel
 has eigenvalue $-1$, the involution is $-I$, so
 $H=C_3^2\rtimes_{-I}C_2$; all choices of a kernel line are
-equivalent under $\operatorname{GL}_2(\mathbb F_3)$.
+equivalent under $\operatorname{GL}_2(\FF_3)$.
 
 Any two quotient identifications differ by an automorphism of
 $S_3$, which is inner. Conjugation by a lift in $S_4$ absorbs

@@ -116,7 +116,7 @@ In characteristic $2$ a quadratic extension need not be Galois.
 
 ::: pf-proof
 
-Let $F=\mathbb F_2(t)$ with $t$ an indeterminate. The polynomial
+Let $F=\FF_2(t)$ with $t$ an indeterminate. The polynomial
 $X^2-t$ has no root in $F$. Indeed, a root $A(t)/B(t)$ with
 nonzero polynomials $A,B$ would imply $A(t)^2=tB(t)^2$.
 The degrees of the two sides would be respectively even and odd,

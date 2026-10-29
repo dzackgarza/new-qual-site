@@ -38,11 +38,11 @@ Let $X_2$ be the quotient of $S^2$ obtained by identifying antipodal points on t
 
 ::: pf-step
 
-The space $X_2$ has a CW structure with one $0$-cell, one $1$-cell, and two $2$-cells, with both $2$-cells attached to the $1$-skeleton $\mathbb{RP}^1\cong S^1$ by maps of degree $2$ up to sign.
+The space $X_2$ has a CW structure with one $0$-cell, one $1$-cell, and two $2$-cells, with both $2$-cells attached to the $1$-skeleton $\RP^1\cong S^1$ by maps of degree $2$ up to sign.
 
 ::: pf-proof
 
-The quotient equator is $S^1/(x\sim-x)=\mathbb{RP}^1\cong S^1$. The northern and southern open hemispheres descend to two open $2$-cells. On the boundary of either hemisphere the quotient map $S^1\to\mathbb{RP}^1$ is the standard double covering, hence has degree $\pm2$ according to orientation choices.
+The quotient equator is $S^1/(x\sim-x)=\RP^1\cong S^1$. The northern and southern open hemispheres descend to two open $2$-cells. On the boundary of either hemisphere the quotient map $S^1\to\RP^1$ is the standard double covering, hence has degree $\pm2$ according to orientation choices.
 
 Thus the cellular chain complex is
 \[
@@ -72,14 +72,14 @@ Now let $X_3$ be the quotient of $S^3$ obtained by identifying antipodal points 
 
 ::: pf-step
 
-The $2$-skeleton of $X_3$ is $\mathbb{RP}^2$, and the two hemispheres give two $3$-cells attached by the standard covering map
+The $2$-skeleton of $X_3$ is $\RP^2$, and the two hemispheres give two $3$-cells attached by the standard covering map
 \[
-S^2\longrightarrow\mathbb{RP}^2.
+S^2\longrightarrow\RP^2.
 \]
 
 ::: pf-proof
 
-The equator quotient is exactly $\mathbb{RP}^2$. Each open hemisphere of $S^3$ is a $3$-ball, and its boundary is identified with $\mathbb{RP}^2$ by the antipodal quotient map.
+The equator quotient is exactly $\RP^2$. Each open hemisphere of $S^3$ is a $3$-ball, and its boundary is identified with $\RP^2$ by the antipodal quotient map.
 
 :::
 
@@ -91,11 +91,11 @@ The cellular boundary $d_3:\ZZ^2\to\ZZ$ is zero.
 
 ::: pf-proof
 
-For the standard CW structure on $\mathbb{RP}^3$, the attaching map of the $3$-cell is the same quotient map $S^2\to\mathbb{RP}^2$, and its cellular boundary coefficient is
+For the standard CW structure on $\RP^3$, the attaching map of the $3$-cell is the same quotient map $S^2\to\RP^2$, and its cellular boundary coefficient is
 \[
 1+(-1)^3=0.
 \]
-Equivalently, after collapsing $\mathbb{RP}^1$, the attaching map $S^2\to S^2$ has degree zero. Each of the two $3$-cells in $X_3$ has this attaching map, so both columns of $d_3$ vanish.
+Equivalently, after collapsing $\RP^1$, the attaching map $S^2\to S^2$ has degree zero. Each of the two $3$-cells in $X_3$ has this attaching map, so both columns of $d_3$ vanish.
 
 :::
 

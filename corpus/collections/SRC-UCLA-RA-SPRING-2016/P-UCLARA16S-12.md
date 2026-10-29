@@ -43,7 +43,7 @@ v(z)
 -\log\left|\frac{1-z}{2}\right|
 }.
 \]
-Then $v$ is harmonic and strictly positive on $\mathbb D$, and
+Then $v$ is harmonic and strictly positive on $\DD$, and
 \[
 v(z)\longrightarrow\infty
 \qquad
@@ -53,7 +53,7 @@ v(z)\longrightarrow\infty
 
 ::: pf-proof
 
-For $z\in\mathbb D$ one has
+For $z\in\DD$ one has
 \[
 \operatorname{Re}(1-z)>0,
 \]
@@ -63,13 +63,13 @@ F(z)
 \coloneqq
 -\Log\left(\frac{1-z}{2}\right)
 \]
-is holomorphic on $\mathbb D$, and
+is holomorphic on $\DD$, and
 \[
 v=\operatorname{Re}F
 \]
 is harmonic.
 
-Moreover, for $z\in\mathbb D$,
+Moreover, for $z\in\DD$,
 \[
 |1-z|<2,
 \]
@@ -97,7 +97,7 @@ w_\varepsilon
 \coloneqq
 u-\varepsilon v.
 \]
-Then $w_\varepsilon$ is harmonic on $\mathbb D$, bounded above, and for every $\zeta\in\partial\mathbb D$,
+Then $w_\varepsilon$ is harmonic on $\DD$, bounded above, and for every $\zeta\in\partial\DD$,
 \[
 \limsup_{r\to1}
 w_\varepsilon(r\zeta)
@@ -148,7 +148,7 @@ w_\varepsilon(r)\longrightarrow-\infty
 
 ::: pf-proof
 
-The hypothesis gives $u(z)\le M$ throughout $\mathbb D$, while step [](#s1){.pf-ref} gives $v(r)\to\infty$ as $r\to1$. Therefore
+The hypothesis gives $u(z)\le M$ throughout $\DD$, while step [](#s1){.pf-ref} gives $v(r)\to\infty$ as $r\to1$. Therefore
 \[
 w_\varepsilon(r)
 =
@@ -179,7 +179,7 @@ because $v>0$. Steps [](#s2-1){.pf-ref} and [](#s2-2){.pf-ref} give the boundary
 
 ::: {.pf-step #s3}
 
-If a harmonic function $w$ on $\mathbb D$ is bounded above and satisfies
+If a harmonic function $w$ on $\DD$ is bounded above and satisfies
 \[
 \limsup_{r\to1}w(re^{i\theta})\le0
 \qquad
@@ -189,7 +189,7 @@ then
 \[
 w\le0
 \qquad
-\text{on }\mathbb D.
+\text{on }\DD.
 \]
 
 
@@ -197,7 +197,7 @@ w\le0
 
 Fix
 \[
-z=\rho e^{i\varphi}\in\mathbb D.
+z=\rho e^{i\varphi}\in\DD.
 \]
 For every $R$ with $\rho<R<1$, the Poisson formula on the disk of radius $R$ gives
 \[
@@ -261,7 +261,7 @@ together with the assumed radial limsup inequality for $w$.
 
 ::: {.pf-step #s4}
 
-For every $\varepsilon>0$ and every $z\in\mathbb D$,
+For every $\varepsilon>0$ and every $z\in\DD$,
 \[
 u(z)\le\varepsilon v(z).
 \]
@@ -283,7 +283,7 @@ w_\varepsilon(z)
 
 ::: {.pf-step #s5}
 
-For every $z\in\mathbb D$,
+For every $z\in\DD$,
 \[
 \boxed{u(z)\le0}.
 \]
@@ -291,7 +291,7 @@ For every $z\in\mathbb D$,
 
 ::: pf-proof
 
-Fix $z\in\mathbb D$. The number $v(z)$ is finite. By step [](#s4){.pf-ref},
+Fix $z\in\DD$. The number $v(z)$ is finite. By step [](#s4){.pf-ref},
 \[
 u(z)\le\varepsilon v(z)
 \]

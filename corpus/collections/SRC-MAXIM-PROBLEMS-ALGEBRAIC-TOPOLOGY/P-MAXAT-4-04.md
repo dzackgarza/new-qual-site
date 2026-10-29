@@ -33,11 +33,11 @@ Use integral coefficients and based loop spaces. Write $\Gamma_{mathbb Z}(y)$ fo
 
 Looping the Hopf fibration
 \[
-S^1\longrightarrow S^{2n+1}\longrightarrow\mathbb{CP}^n
+S^1\longrightarrow S^{2n+1}\longrightarrow\CP^n
 \]
 gives a fibration
 \[
-\Omega S^{2n+1}\longrightarrow\Omega\mathbb{CP}^n
+\Omega S^{2n+1}\longrightarrow\Omega\CP^n
 \longrightarrow S^1.
 \]
 
@@ -58,17 +58,17 @@ Apply this to the Hopf fibration. Since $\Omega S^1$ is discrete and the relevan
 
 The fibration in step [](#s1-1){.pf-ref} splits up to homotopy:
 \[
-\Omega\mathbb{CP}^n\simeq S^1\times\Omega S^{2n+1}.
+\Omega\CP^n\simeq S^1\times\Omega S^{2n+1}.
 \]
 
 
 ::: pf-proof
 
-The connecting map $\Omega\mathbb{CP}^n\to S^1$ induces an isomorphism on $\pi_1$: from the long exact sequence of the Hopf fibration,
+The connecting map $\Omega\CP^n\to S^1$ induces an isomorphism on $\pi_1$: from the long exact sequence of the Hopf fibration,
 \[
-\pi_2(\mathbb{CP}^n)\cong\pi_1(S^1)\cong\ZZ.
+\pi_2(\CP^n)\cong\pi_1(S^1)\cong\ZZ.
 \]
-A loop representing the corresponding generator gives a homotopy section $S^1\to\Omega\mathbb{CP}^n$. The fiber is the H-space $\Omega S^{2n+1}$, and multiplication by the section gives the stated homotopy product decomposition.
+A loop representing the corresponding generator gives a homotopy section $S^1\to\Omega\CP^n$. The fiber is the H-space $\Omega S^{2n+1}$, and multiplication by the section gives the stated homotopy product decomposition.
 
 :::
 
@@ -108,7 +108,7 @@ H_*(\Omega S^{2n+1};\ZZ)\cong\ZZ[t_{2n}].
 Hence
 \[
 \boxed{
-H^*(\Omega\mathbb{CP}^n;\ZZ)
+H^*(\Omega\CP^n;\ZZ)
 \cong\Lambda_{mathbb Z}(a_1)\otimes
 \Gamma_{mathbb Z}(y_{2n}).}
 \]
@@ -126,16 +126,16 @@ Apply the Künneth theorem to step [](#s1-2){.pf-ref}. The cohomology of $S^1$ i
 
 For $n\geq2$, the covering
 \[
-S^n\to\mathbb{RP}^n
+S^n\to\RP^n
 \]
-identifies each path component of $\Omega\mathbb{RP}^n$ with a space homotopy equivalent to $\Omega S^n$, and there are exactly two components.
+identifies each path component of $\Omega\RP^n$ with a space homotopy equivalent to $\Omega S^n$, and there are exactly two components.
 
 
 ::: pf-proof
 
 The components of a based loop space are indexed by $\pi_1$, so
 \[
-\pi_0(\Omega\mathbb{RP}^n)=\pi_1(\mathbb{RP}^n)=\ZZ/2.
+\pi_0(\Omega\RP^n)=\pi_1(\RP^n)=\ZZ/2.
 \]
 Every null-homotopic based loop lifts uniquely to a based loop in the universal cover $S^n$, giving a homeomorphism of the identity component with $\Omega S^n$. Multiplication by any loop representing the nontrivial element of $\pi_1$ is a homotopy equivalence from the identity component to the other component.
 
@@ -148,7 +148,7 @@ Every null-homotopic based loop lifts uniquely to a based loop in the universal 
 Therefore, as a graded ring,
 \[
 \boxed{
-H^*(\Omega\mathbb{RP}^n;\ZZ)
+H^*(\Omega\RP^n;\ZZ)
 \cong
 H^*(\Omega S^n;\ZZ)\times
 H^*(\Omega S^n;\ZZ),
@@ -158,7 +158,7 @@ H^*(\Omega S^n;\ZZ),
 
 ::: pf-proof
 
-Step [](#s1-5){.pf-ref} gives $\Omega\mathbb{RP}^n$ as the disjoint union of two components, each homotopy equivalent to $\Omega S^n$. Cohomology sends a finite disjoint union to the direct product of the component rings.
+Step [](#s1-5){.pf-ref} gives $\Omega\RP^n$ as the disjoint union of two components, each homotopy equivalent to $\Omega S^n$. Cohomology sends a finite disjoint union to the direct product of the component rings.
 
 :::
 
@@ -174,7 +174,7 @@ H^*(\Omega S^{2m+1};\ZZ)
 so
 \[
 \boxed{
-H^*(\Omega\mathbb{RP}^{2m+1};\ZZ)
+H^*(\Omega\RP^{2m+1};\ZZ)
 \cong\Gamma(z_{2m})\times\Gamma(z_{2m}).}
 \]
 
@@ -210,7 +210,7 @@ The cohomology ring is its graded Hopf dual, whose multiplication is the signed 
 
 ::: pf-qed
 
-Step [](#s1-4){.pf-ref} gives the ring for $\Omega\mathbb{CP}^n$, and steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} give the ring of $\Omega\mathbb{RP}^n$ componentwise, including the explicit odd-dimensional presentation.
+Step [](#s1-4){.pf-ref} gives the ring for $\Omega\CP^n$, and steps [](#s1-5){.pf-ref} through [](#s1-8){.pf-ref} give the ring of $\Omega\RP^n$ componentwise, including the explicit odd-dimensional presentation.
 
 :::
 

@@ -25,8 +25,8 @@ Compute the cohomology ring $H^*(K \times S^1; \ZZ_2)$.
 
 ::: pf-step
 
-Regard the Klein bottle as the closed nonorientable surface $N_2=\mathbb{RP}^2\#\mathbb{RP}^2$. Then
-$$H^0(K;\mathbb F_2)\cong H^2(K;\mathbb F_2)\cong\mathbb F_2,\qquad H^1(K;\mathbb F_2)\cong\mathbb F_2^2.$$
+Regard the Klein bottle as the closed nonorientable surface $N_2=\RP^2\#\RP^2$. Then
+$$H^0(K;\FF_2)\cong H^2(K;\FF_2)\cong\FF_2,\qquad H^1(K;\FF_2)\cong\FF_2^2.$$
 
 ::: pf-proof
 
@@ -38,7 +38,7 @@ This is the mod-$2$ cohomology of a closed connected surface of nonorientable ge
 
 ::: {.pf-step #s2}
 
-Choose degree-$1$ classes $x,y\in H^1(K;\mathbb F_2)$ dual to the two standard one-sided curves, and let $u\in H^2(K;\mathbb F_2)$ be the fundamental class. Then
+Choose degree-$1$ classes $x,y\in H^1(K;\FF_2)$ dual to the two standard one-sided curves, and let $u\in H^2(K;\FF_2)$ be the fundamental class. Then
 $$x^2=u,\qquad y^2=u,\qquad xy=0.$$
 
 ::: pf-proof
@@ -52,11 +52,11 @@ For $N_2$, the mod-$2$ intersection form in the basis of the two crosscap curves
 ::: {.pf-step #s3}
 
 Thus
-$$H^*(K;\mathbb F_2)\cong \mathbb F_2[x,y]/(xy,\ x^2+y^2,\ x^3,\ y^3),\qquad |x|=|y|=1.$$
+$$H^*(K;\FF_2)\cong \FF_2[x,y]/(xy,\ x^2+y^2,\ x^3,\ y^3),\qquad |x|=|y|=1.$$
 
 ::: pf-proof
 
-The relations in step [](#s2){.pf-ref} determine all products in degrees at most $2$, and every product of total degree greater than $2$ vanishes for dimensional reasons. Over $\mathbb F_2$, $x^2+y^2=0$ expresses equality of the two top classes.
+The relations in step [](#s2){.pf-ref} determine all products in degrees at most $2$, and every product of total degree greater than $2$ vanishes for dimensional reasons. Over $\FF_2$, $x^2+y^2=0$ expresses equality of the two top classes.
 
 :::
 
@@ -64,8 +64,8 @@ The relations in step [](#s2){.pf-ref} determine all products in degrees at most
 
 ::: {.pf-step #s4}
 
-Let $t\in H^1(S^1;\mathbb F_2)$ be the generator, so $t^2=0$. The field-coefficient Künneth theorem is multiplicative and gives
-$$\boxed{H^*(K\times S^1;\mathbb F_2)\cong H^*(K;\mathbb F_2)\otimes_{\mathbb F_2}\mathbb F_2[t]/(t^2).}$$
+Let $t\in H^1(S^1;\FF_2)$ be the generator, so $t^2=0$. The field-coefficient Künneth theorem is multiplicative and gives
+$$\boxed{H^*(K\times S^1;\FF_2)\cong H^*(K;\FF_2)\otimes_{\FF_2}\FF_2[t]/(t^2).}$$
 
 ::: pf-proof
 
@@ -78,8 +78,8 @@ Over a field there are no Tor terms, and the cross product identifies the cohomo
 ::: pf-step
 
 Equivalently,
-$$\boxed{H^*(K\times S^1;\mathbb F_2)\cong
-\mathbb F_2[x,y,t]/(xy,\ x^2+y^2,\ x^3,\ y^3,\ t^2),}$$
+$$\boxed{H^*(K\times S^1;\FF_2)\cong
+\FF_2[x,y,t]/(xy,\ x^2+y^2,\ x^3,\ y^3,\ t^2),}$$
 with all three generators in degree $1$.
 
 ::: pf-proof

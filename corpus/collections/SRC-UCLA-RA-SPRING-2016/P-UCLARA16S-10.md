@@ -62,7 +62,7 @@ g(z)
 \frac{f(z)}
 {\prod_{j=1}^N(z-a_j)}.
 \]
-Then $g$ is holomorphic and nonvanishing on $\mathbb D$, and
+Then $g$ is holomorphic and nonvanishing on $\DD$, and
 \[
 |g(z)|\longrightarrow\infty
 \qquad
@@ -72,7 +72,7 @@ Then $g$ is holomorphic and nonvanishing on $\mathbb D$, and
 
 ::: pf-proof
 
-The quotient has removable singularities at the zeros $a_j$, and after removal it is holomorphic with no zeros in $\mathbb D$.
+The quotient has removable singularities at the zeros $a_j$, and after removal it is holomorphic with no zeros in $\DD$.
 
 For $|z|<1$,
 \[
@@ -101,7 +101,7 @@ The reciprocal
 \[
 h\coloneqq\frac1g
 \]
-extends continuously to $\overline{\mathbb D}$ by setting
+extends continuously to $\overline{\DD}$ by setting
 \[
 h(\zeta)=0
 \qquad
@@ -111,7 +111,7 @@ h(\zeta)=0
 
 ::: pf-proof
 
-Since $g$ is holomorphic and nonvanishing on $\mathbb D$, the function $h=1/g$ is holomorphic there. Step [](#s1-2){.pf-ref} gives
+Since $g$ is holomorphic and nonvanishing on $\DD$, the function $h=1/g$ is holomorphic there. Step [](#s1-2){.pf-ref} gives
 \[
 |h(z)|
 =
@@ -133,9 +133,9 @@ Such an $h$ cannot exist.
 
 ::: pf-proof
 
-The continuous function $|h|$ on the compact disk $\overline{\mathbb D}$ attains its maximum. Since $h$ vanishes on the boundary, if $h$ were not identically zero then its positive maximum would be attained at an interior point. The maximum-modulus principle would then force $h$ to be constant, which is impossible for a nonzero constant with zero boundary values. Hence $h\equiv0$.
+The continuous function $|h|$ on the compact disk $\overline{\DD}$ attains its maximum. Since $h$ vanishes on the boundary, if $h$ were not identically zero then its positive maximum would be attained at an interior point. The maximum-modulus principle would then force $h$ to be constant, which is impossible for a nonzero constant with zero boundary values. Hence $h\equiv0$.
 
-But $h=1/g$ on $\mathbb D$, so $h$ cannot vanish anywhere there. This is a contradiction.
+But $h=1/g$ on $\DD$, so $h$ cannot vanish anywhere there. This is a contradiction.
 
 :::
 

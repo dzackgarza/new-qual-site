@@ -72,7 +72,7 @@ Modulo $pG$, the two images become
 \[
 (a\bmod p,b),\qquad(0,d)
 \]
-in $G/pG\cong(\mathbb F_p)^2$.
+in $G/pG\cong(\FF_p)^2$.
 Since $a\bmod p\ne0$, these two vectors span the quotient if and only if $d\ne0$.
 An automorphism must induce an automorphism of this quotient, so $d\ne0$.
 :::

@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the fiber bundle $S^3 \to S^{4n+3} \to \mathbb{HP}^n$ gives rise to a quotient fiber bundle $S^2 \to \mathbb{CP}^{2n+1} \to \mathbb{HP}^n$ by factoring out the action of $S^1$ on $S^{4n+3}$ by complex scalar multiplication.
+Show that the fiber bundle $S^3 \to S^{4n+3} \to \mathbb{HP}^n$ gives rise to a quotient fiber bundle $S^2 \to \CP^{2n+1} \to \mathbb{HP}^n$ by factoring out the action of $S^1$ on $S^{4n+3}$ by complex scalar multiplication.
 :::
 
 ::: {.solution}
@@ -46,7 +46,7 @@ Its action on \(S^{4n+3}\) is precisely complex scalar multiplication after iden
 \]
 Therefore
 \[
-S^{4n+3}/S^1\cong\mathbb{CP}^{2n+1}.
+S^{4n+3}/S^1\cong\CP^{2n+1}.
 \]
 
 Although \(S^1\subset S^3\) is not a normal subgroup, the quotient is taken fiberwise by the right \(S^1\)-action: over a quaternionic line \(L\), the Hopf fiber is \(S^3\), and dividing that fiber by the right \(S^1\)-action gives
@@ -55,6 +55,6 @@ S^3/S^1\cong S^2.
 \]
 The original local trivializations of the quaternionic Hopf bundle are \(S^3\)-equivariant, hence descend after quotienting by \(S^1\). Thus we obtain a locally trivial bundle
 \[
-\boxed{S^2\longrightarrow\mathbb{CP}^{2n+1}\longrightarrow\mathbb{HP}^n.}
+\boxed{S^2\longrightarrow\CP^{2n+1}\longrightarrow\mathbb{HP}^n.}
 \]
 :::

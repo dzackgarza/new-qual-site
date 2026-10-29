@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\mathcal{F}$ be the family of holomorphic functions $f : \mathbb{D} \to \CC$ defined over the open unit disc with $f(0) = 1$ and $\operatorname{Re} f > 0$.
+Let $\mathcal{F}$ be the family of holomorphic functions $f : \DD \to \CC$ defined over the open unit disc with $f(0) = 1$ and $\operatorname{Re} f > 0$.
 Show that $\mathcal{F}$ is a normal family.
 :::
 
@@ -23,8 +23,8 @@ For $f\in\mathcal F$, define
 \[
 \phi_f(z)=\frac{f(z)-1}{f(z)+1}.
 \]
-Because $\operatorname{Re}f>0$, this maps $\mathbb D$ holomorphically into
-$\mathbb D$, and $\phi_f(0)=0$. Schwarz's lemma gives
+Because $\operatorname{Re}f>0$, this maps $\DD$ holomorphically into
+$\DD$, and $\phi_f(0)=0$. Schwarz's lemma gives
 \[
 |\phi_f(z)|\le |z|.
 \]

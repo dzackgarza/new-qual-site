@@ -38,7 +38,7 @@ $F$, and in particular $h$, is constant.
 Conversely suppose $G\subsetneq\CC$ is nonempty and simply connected.
 By the Riemann mapping theorem there is a biholomorphism
 \[
-\phi:G\to\mathbb D.
+\phi:G\to\DD.
 \]
 Then
 \[

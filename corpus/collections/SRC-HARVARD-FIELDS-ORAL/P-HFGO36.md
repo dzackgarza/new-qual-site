@@ -22,7 +22,7 @@ audit:
 
 ::: {.problem}
 Prove that any two fields with $27 = 3^3$ elements are **isomorphic**:
-$$F_1 \cong F_2 \cong \mathbb{F}_{27}.$$
+$$F_1 \cong F_2 \cong \FF_{27}.$$
 :::
 
 ::: {.solution}
@@ -33,7 +33,7 @@ Let $F$ be a field with $27$ elements.
 ::: pf-step
 
 $\operatorname{char}F=3$, and the prime subfield of $F$ is
-$\mathbb F_3=\ZZ/3\ZZ$.
+$\FF_3=\ZZ/3\ZZ$.
 
 ::: pf-proof
 
@@ -63,12 +63,12 @@ linear factors.
 
 ::: {.pf-step #s3}
 
-$F$ is a splitting field of $x^{27}-x$ over $\mathbb F_3$.
+$F$ is a splitting field of $x^{27}-x$ over $\FF_3$.
 
 ::: pf-proof
 
 By step [](#s2){.pf-ref} the polynomial splits in $F$, and its roots are all of $F$, so
-they generate $F$ over $\mathbb F_3$.
+they generate $F$ over $\FF_3$.
 
 :::
 
@@ -77,9 +77,9 @@ they generate $F$ over $\mathbb F_3$.
 ::: pf-qed
 
 By step [](#s3){.pf-ref}, two fields $F_1,F_2$ with $27$ elements are splitting fields of
-$x^{27}-x$ over $\mathbb F_3$. Splitting fields of a polynomial over a field
+$x^{27}-x$ over $\FF_3$. Splitting fields of a polynomial over a field
 are unique up to isomorphism over that field, so $F_1\cong F_2$; calling this
-field $\mathbb F_{27}$ gives $F_1\cong F_2\cong\mathbb F_{27}$.
+field $\FF_{27}$ gives $F_1\cong F_2\cong\FF_{27}$.
 
 :::
 

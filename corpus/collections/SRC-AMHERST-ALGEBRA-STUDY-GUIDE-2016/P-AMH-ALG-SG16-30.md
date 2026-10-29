@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-30
 kind: problem
-title: Reducibility of $X^4+X^2+1$ over $\mathbb F_2$ and irreducibility of $X^3+2X^2+2X+3$ over $\mathbb F_5$
+title: Reducibility of $X^4+X^2+1$ over $\FF_2$ and irreducibility of $X^3+2X^2+2X+3$ over $\FF_5$
 classification:
   areas:
   - algebra
@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-(January 2009) (a) Prove that $f(X)=X^4+X^2+1$ is reducible in the polynomial ring $\mathbb{F}_2[X]$, where $\mathbb{F}_2=\{0,1\}$ is the field of two elements.
-(b) Prove that $g(X)=X^3+2X^2+2X+3$ is irreducible in the polynomial ring $\mathbb{F}_5[X]$, where $\mathbb{F}_5=\{0,1,2,3,4\}$ is the field of five elements.
+(January 2009) (a) Prove that $f(X)=X^4+X^2+1$ is reducible in the polynomial ring $\FF_2[X]$, where $\FF_2=\{0,1\}$ is the field of two elements.
+(b) Prove that $g(X)=X^3+2X^2+2X+3$ is irreducible in the polynomial ring $\FF_5[X]$, where $\FF_5=\{0,1,2,3,4\}$ is the field of five elements.
 :::
 
 ::: {.solution}

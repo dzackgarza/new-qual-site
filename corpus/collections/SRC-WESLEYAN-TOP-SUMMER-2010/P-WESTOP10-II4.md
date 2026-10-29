@@ -570,9 +570,9 @@ $$
 \boxed{
 X_3
 \cong
-\mathbb{RP}^2
-\#\mathbb{RP}^2
-\#\mathbb{RP}^2.}
+\RP^2
+\#\RP^2
+\#\RP^2.}
 $$
 
 
@@ -615,7 +615,7 @@ X_1&1&0&\text{not a manifold}\\
 X_2&\langle u,v\mid u^2v^2\rangle&
 \ZZ\oplus\ZZ/2&\text{Klein bottle}\\
 X_3&\langle a,b,c\mid abcab^{-1}c^{-1}\rangle&
-\ZZ^2\oplus\ZZ/2&\#^3\mathbb{RP}^2
+\ZZ^2\oplus\ZZ/2&\#^3\RP^2
 \end{array}}
 $$
 with

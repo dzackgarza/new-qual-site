@@ -24,13 +24,13 @@ Find a conformal map
 ```
 1.  from $\{ z: |z - 1/2| > 1/2, \text{Re}(z)>0 \}$ to $\mathbb H$
 
-2.  from $\{ z: |z - 1/2| > 1/2, |z| <1  \}$ to $\mathbb D$
+2.  from $\{ z: |z - 1/2| > 1/2, |z| <1  \}$ to $\DD$
 
 3.  from the intersection of the disk $|z + i| < \sqrt{2}$ with
-    ${\mathbb H}$ to ${\mathbb D}$.
+    ${\mathbb H}$ to ${\DD}$.
 
-4.  from ${\mathbb D}  \backslash [a, 1)$ to
-    ${\mathbb D} \backslash [0, 1)$ ($0<a<1)$. \[ Short solution
+4.  from ${\DD}  \backslash [a, 1)$ to
+    ${\DD} \backslash [0, 1)$ ($0<a<1)$. \[ Short solution
     possible using Blaschke factor\]
 
 5.  from $\{ z: |z| < 1, \text{Re}(z) > 0 \} \backslash (0, 1/2]$ to
@@ -150,7 +150,7 @@ Composition of biholomorphisms is a biholomorphism.
 
 * * *
 
-### Part 2: Map from $\Omega_2 = \{ z : |z - 1/2| > 1/2, |z| < 1 \}$ to $\mathbb{D}$
+### Part 2: Map from $\Omega_2 = \{ z : |z - 1/2| > 1/2, |z| < 1 \}$ to $\DD$
 
 ::: pf
 
@@ -194,7 +194,7 @@ By continuity and connectedness, evaluating at the test point $z = -1/2 \in \Ome
 :::
 
 ::: pf-step
-**Map the strip $S_2$ to $\mathbb{D}$.**
+**Map the strip $S_2$ to $\DD$.**
 
 ::: pf-proof
 
@@ -227,10 +227,10 @@ Standard exponential mapping of a horizontal strip of width $\pi$.
 :::
 
 ::: pf-step
-Cayley transform to $\mathbb{D}$: $f_2(z) = \frac{w_4 - i}{w_4 + i} = \frac{\exp\left(\frac{2\pi i z}{z-1}\right) - i}{\exp\left(\frac{2\pi i z}{z-1}\right) + i}$ is a conformal map from $\Omega_2$ to $\mathbb{D}$.
+Cayley transform to $\DD$: $f_2(z) = \frac{w_4 - i}{w_4 + i} = \frac{\exp\left(\frac{2\pi i z}{z-1}\right) - i}{\exp\left(\frac{2\pi i z}{z-1}\right) + i}$ is a conformal map from $\Omega_2$ to $\DD$.
 
 ::: pf-proof
-The Cayley transform $w \mapsto \frac{w-i}{w+i}$ maps $\mathbb{H}$ biholomorphically onto $\mathbb{D}$.
+The Cayley transform $w \mapsto \frac{w-i}{w+i}$ maps $\mathbb{H}$ biholomorphically onto $\DD$.
 :::
 
 :::
@@ -243,7 +243,7 @@ The Cayley transform $w \mapsto \frac{w-i}{w+i}$ maps $\mathbb{H}$ biholomorphic
 
 * * *
 
-### Part 3: Map from $\Omega_3 = \{z \in \mathbb{H} : |z + i| < \sqrt{2}\}$ to $\mathbb{D}$
+### Part 3: Map from $\Omega_3 = \{z \in \mathbb{H} : |z + i| < \sqrt{2}\}$ to $\DD$
 
 ::: pf
 
@@ -285,7 +285,7 @@ At $z=1$, the tangent vector to the circle is $e^{i 3\pi/4}$, which makes an ang
 :::
 
 ::: pf-step
-**Map the lune $\Omega_3$ conformally to $\mathbb{D}$.**
+**Map the lune $\Omega_3$ conformally to $\DD$.**
 
 ::: pf-proof
 
@@ -328,7 +328,7 @@ $z \mapsto z^4$ multiplies arguments by 4, sending $(0, \pi/4)$ to $(0, \pi) = \
 :::
 
 ::: pf-step
-Cayley transform: $f_3(z) = \frac{w_3 - i}{w_3 + i} = \frac{- \left(\frac{z+1}{z-1}\right)^4 - i}{- \left(\frac{z+1}{z-1}\right)^4 + i} = \frac{\left(\frac{z+1}{z-1}\right)^4 + i}{\left(\frac{z+1}{z-1}\right)^4 - i}$ maps $\Omega_3$ conformally to $\mathbb{D}$.
+Cayley transform: $f_3(z) = \frac{w_3 - i}{w_3 + i} = \frac{- \left(\frac{z+1}{z-1}\right)^4 - i}{- \left(\frac{z+1}{z-1}\right)^4 + i} = \frac{\left(\frac{z+1}{z-1}\right)^4 + i}{\left(\frac{z+1}{z-1}\right)^4 - i}$ maps $\Omega_3$ conformally to $\DD$.
 
 ::: pf-proof
 Composition of biholomorphisms.
@@ -344,7 +344,7 @@ Composition of biholomorphisms.
 
 * * *
 
-### Part 4: Map from $\mathbb{D} \setminus [a, 1)$ to $\mathbb{D} \setminus [0, 1)$ ($0 < a < 1$)
+### Part 4: Map from $\DD \setminus [a, 1)$ to $\DD \setminus [0, 1)$ ($0 < a < 1$)
 
 ::: pf
 
@@ -357,7 +357,7 @@ Composition of biholomorphisms.
 Define $\phi_a(z) = \frac{z - a}{1 - az}$.
 
 ::: pf-proof
-For $a \in (-1, 1)$, $\phi_a$ is an automorphism of $\mathbb{D}$ (i.e. $\phi_a \in \text{Aut}(\mathbb{D})$).
+For $a \in (-1, 1)$, $\phi_a$ is an automorphism of $\DD$ (i.e. $\phi_a \in \text{Aut}(\DD)$).
 :::
 
 :::
@@ -381,7 +381,7 @@ $\phi_a$ is a strictly increasing diffeomorphism on $[a, 1)$ with $\phi_a(a)=0$ 
 :::
 
 ::: pf-step
-Since $\phi_a$ is a bijection of $\mathbb{D}$ to $\mathbb{D}$ and maps the slit $[a,1)$ bijectively onto the slit $[0,1)$, it restricts to a conformal map from $\mathbb{D} \setminus [a,1)$ onto $\mathbb{D} \setminus [0,1)$.
+Since $\phi_a$ is a bijection of $\DD$ to $\DD$ and maps the slit $[a,1)$ bijectively onto the slit $[0,1)$, it restricts to a conformal map from $\DD \setminus [a,1)$ onto $\DD \setminus [0,1)$.
 
 ::: pf-proof
 Restriction of a biholomorphism to an open subset.
@@ -416,7 +416,7 @@ Polar coordinate description of the right half-disc.
 :::
 
 ::: pf-step
-The map $w_1 = z^2$ sends $r e^{i\theta} \mapsto r^2 e^{2i\theta}$, which maps the right half-disc conformally to the slit unit disc $\mathbb{D} \setminus (-1, 0]$.
+The map $w_1 = z^2$ sends $r e^{i\theta} \mapsto r^2 e^{2i\theta}$, which maps the right half-disc conformally to the slit unit disc $\DD \setminus (-1, 0]$.
 
 ::: pf-proof
 Angles $-\pi/2 < \theta < \pi/2$ map bijectively to $-\pi < 2\theta < \pi$, so the negative real axis is the boundary slit coming from the imaginary axis.
@@ -434,7 +434,7 @@ For $x \in (0, 1/2]$, $x^2 \in (0, 1/4]$.
 :::
 
 ::: pf-step
-Thus, $w_1 = z^2$ maps $\Omega_5$ conformally onto $\mathbb{D} \setminus ( (-1, 0] \cup (0, 1/4] ) = \mathbb{D} \setminus (-1, 1/4]$.
+Thus, $w_1 = z^2$ maps $\Omega_5$ conformally onto $\DD \setminus ( (-1, 0] \cup (0, 1/4] ) = \DD \setminus (-1, 1/4]$.
 
 ::: pf-proof
 Union of the two slits.
@@ -447,7 +447,7 @@ Union of the two slits.
 :::
 
 ::: pf-step
-**Use an automorphism of $\mathbb{D}$ to center/shift the slit.**
+**Use an automorphism of $\DD$ to center/shift the slit.**
 
 ::: pf-proof
 
@@ -455,7 +455,7 @@ Union of the two slits.
 Consider the Möbius transformation $\psi(w_1) = \frac{w_1 - 1/4}{1 - w_1/4}$.
 
 ::: pf-proof
-This is a Blaschke factor mapping $\mathbb{D} \to \mathbb{D}$.
+This is a Blaschke factor mapping $\DD \to \DD$.
 :::
 
 :::
@@ -479,7 +479,7 @@ $\psi((-1, 1/4]) = (\psi(-1), \psi(1/4)] = (-1, 0]$.
 :::
 
 ::: pf-step
-Hence $w_2 = \psi(z^2) = \frac{z^2 - 1/4}{1 - z^2/4} = \frac{4z^2 - 1}{4 - z^2}$ maps $\Omega_5$ conformally onto the slit disc $\mathbb{D} \setminus (-1, 0]$.
+Hence $w_2 = \psi(z^2) = \frac{z^2 - 1/4}{1 - z^2/4} = \frac{4z^2 - 1}{4 - z^2}$ maps $\Omega_5$ conformally onto the slit disc $\DD \setminus (-1, 0]$.
 
 ::: pf-proof
 Composition of $z \mapsto z^2$ and $\psi$.
@@ -492,12 +492,12 @@ Composition of $z \mapsto z^2$ and $\psi$.
 :::
 
 ::: pf-step
-**Map $\mathbb{D} \setminus (-1, 0]$ onto the upper half-plane $\mathbb{H}$.**
+**Map $\DD \setminus (-1, 0]$ onto the upper half-plane $\mathbb{H}$.**
 
 ::: pf-proof
 
 ::: pf-step
-The principal square root $w_3 = \sqrt{w_2}$ maps $\mathbb{D} \setminus (-1, 0]$ conformally onto the right half-disc $\{w_3 \in \mathbb{D} : \text{Re}(w_3) > 0\}$.
+The principal square root $w_3 = \sqrt{w_2}$ maps $\DD \setminus (-1, 0]$ conformally onto the right half-disc $\{w_3 \in \DD : \text{Re}(w_3) > 0\}$.
 
 ::: pf-proof
 The principal square root maps the slit plane $\CC \setminus (-\infty, 0]$ to the right half-plane $\text{Re}(w_3) > 0$, and preserves the condition $|w_2| < 1 \iff |w_3| < 1$.

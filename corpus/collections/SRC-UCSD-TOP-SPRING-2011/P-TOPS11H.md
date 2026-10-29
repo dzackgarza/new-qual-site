@@ -26,8 +26,8 @@ audit:
 ---
 
 ::: {.problem}
-(1) What are the integer cohomology rings of $S^2 \times S^2$ and $\mathbb{CP}^2$?
-(2) Show that there is no continuous map $f: S^2 \times S^2 \to \mathbb{CP}^2$ having **odd degree**.
+(1) What are the integer cohomology rings of $S^2 \times S^2$ and $\CP^2$?
+(2) Show that there is no continuous map $f: S^2 \times S^2 \to \CP^2$ having **odd degree**.
 :::
 
 ::: {.solution}
@@ -46,18 +46,18 @@ and $uv$ generates $H^4(S^2\times S^2;\ZZ)$ after choosing the product orientati
 :::
 
 ::: pf-step
-If $x\in H^2(\mathbb{CP}^2;\ZZ)$ is the standard generator, then
+If $x\in H^2(\CP^2;\ZZ)$ is the standard generator, then
 $$
-H^*(\mathbb{CP}^2;\ZZ)
+H^*(\CP^2;\ZZ)
 \cong \ZZ[x]/(x^3),
 \qquad |x|=2,
 $$
-with $x^2$ generating $H^4(\mathbb{CP}^2;\ZZ)$ after choosing the usual orientation.
+with $x^2$ generating $H^4(\CP^2;\ZZ)$ after choosing the usual orientation.
 
 :::
 
 ::: pf-step
-Let $f:S^2\times S^2\to\mathbb{CP}^2$ be continuous.
+Let $f:S^2\times S^2\to\CP^2$ be continuous.
 
 ::: pf-proof
 
@@ -91,7 +91,7 @@ Thus $\deg(f)=2ab$, which is even.
 :::
 
 ::: pf-step
-Therefore no map $S^2\times S^2\to\mathbb{CP}^2$ has odd degree.
+Therefore no map $S^2\times S^2\to\CP^2$ has odd degree.
 
 :::
 

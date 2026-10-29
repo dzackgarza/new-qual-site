@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that there is no compact $4$-manifold $M$ (with or without boundary) which is homotopy-equivalent to the suspension $\Sigma \mathbb{RP}^3$.
+Prove that there is no compact $4$-manifold $M$ (with or without boundary) which is homotopy-equivalent to the suspension $\Sigma \RP^3$.
 :::
 
 ::: {.solution}
@@ -25,17 +25,17 @@ Prove that there is no compact $4$-manifold $M$ (with or without boundary) which
 ::: {.pf-step #suspension-homology}
 Suspension shifts reduced homology, so
 $$
-\widetilde H_i(\Sigma\mathbb{RP}^3;\ZZ)
-\cong \widetilde H_{i-1}(\mathbb{RP}^3;\ZZ).
+\widetilde H_i(\Sigma\RP^3;\ZZ)
+\cong \widetilde H_{i-1}(\RP^3;\ZZ).
 $$
 Hence
 $$
-H_2(\Sigma\mathbb{RP}^3)\cong\ZZ/2,\qquad
-H_4(\Sigma\mathbb{RP}^3)\cong\ZZ,\qquad H_1=H_3=0.
+H_2(\Sigma\RP^3)\cong\ZZ/2,\qquad
+H_4(\Sigma\RP^3)\cong\ZZ,\qquad H_1=H_3=0.
 $$
 
 ::: pf-proof
-The integral homology of $\mathbb{RP}^3$ is $H_0=H_3=\ZZ$, $H_1=\ZZ/2$, and $H_2=0$.
+The integral homology of $\RP^3$ is $H_0=H_3=\ZZ$, $H_1=\ZZ/2$, and $H_2=0$.
 :::
 
 :::
@@ -74,7 +74,7 @@ has zero left term, so $H^2(M)$ is free abelian. Hence $H_2(M)$ is free abelian 
 ::: pf-step
 This contradicts $H_2(M)\cong\ZZ/2$. Therefore
 $$
-\boxed{\Sigma\mathbb{RP}^3\text{ is not homotopy equivalent to any compact }4\text{-manifold}.}
+\boxed{\Sigma\RP^3\text{ is not homotopy equivalent to any compact }4\text{-manifold}.}
 $$
 
 ::: pf-proof

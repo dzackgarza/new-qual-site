@@ -35,7 +35,7 @@ Every connected compact surface without boundary is homeomorphic to exactly one 
 with \(g\) torus summands;
 3. for each \(k\ge1\), the nonorientable surface
 \[
-N_k=\mathbb{RP}^2\#\cdots\#\mathbb{RP}^2
+N_k=\RP^2\#\cdots\#\RP^2
 \]
 with \(k\) projective-plane summands.
 

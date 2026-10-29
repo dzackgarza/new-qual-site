@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF20-8A
 kind: problem
-title: The element $10$ generates $\mathbb F_{179}^{\times}$
+title: The element $10$ generates $\FF_{179}^{\times}$
 classification:
   areas:
   - prelim

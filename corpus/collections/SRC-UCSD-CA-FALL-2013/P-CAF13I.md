@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-(a) Does there exist a harmonic function $u$ on $\mathbb{D}$, continuous on $\overline{\mathbb{D}}$, so that $u(e^{i\theta}) = \cos^2\theta$ for $\theta \in [0, 2\pi)$?
+(a) Does there exist a harmonic function $u$ on $\DD$, continuous on $\overline{\DD}$, so that $u(e^{i\theta}) = \cos^2\theta$ for $\theta \in [0, 2\pi)$?
 If not, prove it.
 If so, what is the value $u(0)$?
 
-(b) Prove that there is no holomorphic function $f$ on $\mathbb{D}$, continuous on $\overline{\mathbb{D}}$, so that $f(e^{i\theta}) = e^{-i\theta}$ for $\theta \in [0, 2\pi)$.
+(b) Prove that there is no holomorphic function $f$ on $\DD$, continuous on $\overline{\DD}$, so that $f(e^{i\theta}) = e^{-i\theta}$ for $\theta \in [0, 2\pi)$.
 :::
 
 ::: {.solution}

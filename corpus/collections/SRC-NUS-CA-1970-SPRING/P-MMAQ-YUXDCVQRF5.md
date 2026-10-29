@@ -223,7 +223,7 @@ Therefore, only $z_1 = 7 - 4\sqrt{3}$ lies inside the unit circle $|z| < 1$.
 
 ::: pf-proof
 
-$z_1 \in \mathbb{D}$ and $z_2 \notin \mathbb{D}$.
+$z_1 \in \DD$ and $z_2 \notin \DD$.
 
 :::
 

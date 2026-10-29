@@ -43,7 +43,7 @@ For part (1), let
 \[
 X_1
 \coloneqq
-T^2\vee\mathbb{RP}^2.
+T^2\vee\RP^2.
 \]
 Then
 \[
@@ -343,7 +343,7 @@ Therefore the complete response is:
 
 - part (1):
   \[
-  X=T^2\vee\mathbb{RP}^2;
+  X=T^2\vee\RP^2;
   \]
 - part (2): the presentation $2$-complex with two $1$-cells and three
   $2$-cells attached by

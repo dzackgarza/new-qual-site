@@ -31,9 +31,9 @@ Show the first integral homology group of $M$ is infinite.
 The statement is correct under the standard convention that “manifold” means a manifold without boundary; under that convention compactness makes $M$ closed.
 
 ::: pf-proof
-This convention is necessary. If manifolds with boundary are allowed, the statement is false: $M=\mathbb{RP}^2\times I$ is compact, connected, and nonorientable, but
+This convention is necessary. If manifolds with boundary are allowed, the statement is false: $M=\RP^2\times I$ is compact, connected, and nonorientable, but
 $$
-H_1(M;\ZZ)\cong H_1(\mathbb{RP}^2;\ZZ)\cong\ZZ/2,
+H_1(M;\ZZ)\cong H_1(\RP^2;\ZZ)\cong\ZZ/2,
 $$
 which is finite.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF08D
 kind: problem
-title: $\pi_n(\mathbb{RP}^n\vee S^n)$ for $n>1$
+title: $\pi_n(\RP^n\vee S^n)$ for $n>1$
 classification:
   areas:
   - topology
@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Calculate $\pi_n(\mathbb{RP}^n \vee S^n)$ for $n > 1$.
+Calculate $\pi_n(\RP^n \vee S^n)$ for $n > 1$.
 :::
 
 ::: {.solution}
@@ -25,13 +25,13 @@ Calculate $\pi_n(\mathbb{RP}^n \vee S^n)$ for $n > 1$.
 
 Let
 $$
-X=\mathbb{RP}^n\vee S^n,\qquad n>1.
+X=\RP^n\vee S^n,\qquad n>1.
 $$
 Then $\pi_1(X)\cong\ZZ/2$.
 
 ::: pf-proof
 
-The sphere $S^n$ is simply connected for $n>1$, while $\pi_1(\mathbb{RP}^n)\cong\ZZ/2$.
+The sphere $S^n$ is simply connected for $n>1$, while $\pi_1(\RP^n)\cong\ZZ/2$.
 
 :::
 
@@ -39,7 +39,7 @@ The sphere $S^n$ is simply connected for $n>1$, while $\pi_1(\mathbb{RP}^n)\cong
 
 ::: pf-step
 
-The universal cover $\widetilde X$ is obtained from $S^n\to\mathbb{RP}^n$ by attaching one copy of $S^n$ at each of the two lifts of the wedge point. Hence
+The universal cover $\widetilde X$ is obtained from $S^n\to\RP^n$ by attaching one copy of $S^n$ at each of the two lifts of the wedge point. Hence
 $$
 \widetilde X\simeq S^n\vee S^n\vee S^n.
 $$
@@ -86,7 +86,7 @@ The first nonzero homotopy group of an $(n-1)$-connected space is identified wit
 
 Covering maps induce isomorphisms on homotopy groups in degrees at least $2$. Therefore
 $$
-\boxed{\pi_n(\mathbb{RP}^n\vee S^n)\cong\ZZ^3.}
+\boxed{\pi_n(\RP^n\vee S^n)\cong\ZZ^3.}
 $$
 
 ::: pf-proof

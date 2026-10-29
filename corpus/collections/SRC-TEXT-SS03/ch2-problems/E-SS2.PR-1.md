@@ -19,7 +19,7 @@ audit:
 ::: {.exercise}
 1. Here are some examples of analytic functions on the unit disc that cannot be extended analytically past the unit circle.
    The following definition is needed.
-   Let $f$ be a function defined in the unit disc D, with boundary circle C. A point w on C is said to be regular for $f$ if there is an open neighborhood U of w and an analytic function $g$ on $U _ { i }$ , so that $f = g$ on $\mathbb { D } \cap U$ . A function f defined on D cannot be continued analytically past the unit circle if no point of C is regular for $f .$
+   Let $f$ be a function defined in the unit disc D, with boundary circle C. A point w on C is said to be regular for $f$ if there is an open neighborhood U of w and an analytic function $g$ on $U _ { i }$ , so that $f = g$ on $\DD \cap U$ . A function f defined on D cannot be continued analytically past the unit circle if no point of C is regular for $f .$
 
 (a) Let
 
@@ -41,7 +41,7 @@ extends continuously to the unit circle, but cannot be analytically continued pa
 :::
 
 ::: {.solution}
-Throughout, a dyadic point is $e^{i\theta}$ with $\theta = 2\pi p / 2^k$, $p,k$ positive integers; dyadic points are dense in $C$. The set of regular points of a function on $\mathbb D$ is open in $C$, so if it contains no dyadic point, it is empty.
+Throughout, a dyadic point is $e^{i\theta}$ with $\theta = 2\pi p / 2^k$, $p,k$ positive integers; dyadic points are dense in $C$. The set of regular points of a function on $\DD$ is open in $C$, so if it contains no dyadic point, it is empty.
 
 ::: pf
 
@@ -61,11 +61,11 @@ Each term of the second sum tends to $1$ as $r\to1^-$, and the terms are nonnega
 
 ::: pf-step
 
-(1b) $f(z)=\sum_{n\ge0} 2^{-n\alpha} z^{2^n}$ extends continuously to $\overline{\mathbb D}$ and cannot be continued analytically past $C$.
+(1b) $f(z)=\sum_{n\ge0} 2^{-n\alpha} z^{2^n}$ extends continuously to $\overline{\DD}$ and cannot be continued analytically past $C$.
 
 ::: pf-proof
 
-Since $\sum 2^{-n\alpha} < \infty$, the Weierstrass $M$-test shows that the series converges uniformly on $\overline{\mathbb D}$, so $f$ extends continuously. Suppose a dyadic point $e^{i\theta}$, $\theta = 2\pi p/2^k$, were regular. Then $f$ agrees near $e^{i\theta}$ with a function analytic on a neighborhood of $e^{i\theta}$, so for every $m$ the derivative $\frac{d^m}{dr^m}f(re^{i\theta})=e^{im\theta}f^{(m)}(re^{i\theta})$ stays bounded as $r\to1^-$. But $f(re^{i\theta})=P(r)+\sum_{n\ge k}2^{-n\alpha}r^{2^n}$ with $P$ a polynomial, and for an integer $m\ge\alpha$,
+Since $\sum 2^{-n\alpha} < \infty$, the Weierstrass $M$-test shows that the series converges uniformly on $\overline{\DD}$, so $f$ extends continuously. Suppose a dyadic point $e^{i\theta}$, $\theta = 2\pi p/2^k$, were regular. Then $f$ agrees near $e^{i\theta}$ with a function analytic on a neighborhood of $e^{i\theta}$, so for every $m$ the derivative $\frac{d^m}{dr^m}f(re^{i\theta})=e^{im\theta}f^{(m)}(re^{i\theta})$ stays bounded as $r\to1^-$. But $f(re^{i\theta})=P(r)+\sum_{n\ge k}2^{-n\alpha}r^{2^n}$ with $P$ a polynomial, and for an integer $m\ge\alpha$,
 $$\frac{d^m}{dr^m}\sum_{n\ge k}2^{-n\alpha}r^{2^n}\ge\sum_{n\ge n_0}2^{-n\alpha}\bigl(2^{n-1}\bigr)^m r^{2^n-m},$$
 where $n_0\ge k$ is chosen with $2^{n_0}\ge2m$, so that $2^n(2^n-1)\cdots(2^n-m+1)\ge(2^{n-1})^m$. As $r\to1^-$ the right side tends to $2^{-m}\sum_{n\ge n_0}2^{n(m-\alpha)}=\infty$. Hence no dyadic point is regular, and no point of $C$ is regular.
 

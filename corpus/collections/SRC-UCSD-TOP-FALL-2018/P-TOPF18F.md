@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Calculate the homotopy group $\pi_3(\mathbb{RP}^4 \vee S^3)$.
+Calculate the homotopy group $\pi_3(\RP^4 \vee S^3)$.
 (Here $\vee$ denotes the one-point union of the two spaces.)
 :::
 
@@ -27,13 +27,13 @@ Calculate the homotopy group $\pi_3(\mathbb{RP}^4 \vee S^3)$.
 
 Let
 $$
-X=\mathbb{RP}^4\vee S^3.
+X=\RP^4\vee S^3.
 $$
 Then $\pi_1(X)\cong\ZZ/2$.
 
 ::: pf-proof
 
-The $S^3$ summand is simply connected and $\pi_1(\mathbb{RP}^4)=\ZZ/2$.
+The $S^3$ summand is simply connected and $\pi_1(\RP^4)=\ZZ/2$.
 
 :::
 
@@ -48,7 +48,7 @@ $$
 
 ::: pf-proof
 
-The universal cover of $\mathbb{RP}^4$ is $S^4$. The simply connected wedge summand lifts once at each point of the two-element fiber over the wedge point. Moving the attachment points together along an arc gives the stated wedge up to homotopy.
+The universal cover of $\RP^4$ is $S^4$. The simply connected wedge summand lifts once at each point of the two-element fiber over the wedge point. Moving the attachment points together along an arc gives the stated wedge up to homotopy.
 
 :::
 
@@ -88,7 +88,7 @@ The degree-$3$ Hurewicz map is an isomorphism for a $2$-connected space.
 
 Therefore
 $$
-\boxed{\pi_3(\mathbb{RP}^4\vee S^3)\cong\ZZ^2.}
+\boxed{\pi_3(\RP^4\vee S^3)\cong\ZZ^2.}
 $$
 
 ::: pf-proof

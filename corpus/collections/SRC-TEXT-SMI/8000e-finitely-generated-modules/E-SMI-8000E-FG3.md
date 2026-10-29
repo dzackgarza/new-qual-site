@@ -53,20 +53,20 @@ Let $G_{(2)}$ be the $2$-primary component. Since its order is $2^3$, its
 cyclic decomposition corresponds to a partition of $3$.
 
 For a cyclic summand $\ZZ/2^e$, the kernel of multiplication by $2$ has
-one-dimensional $\mathbb F_2$-dimension, and
+one-dimensional $\FF_2$-dimension, and
 $$
-\dim_{\mathbb F_2}
+\dim_{\FF_2}
 \frac{\ker(2^2)}{\ker(2)}
 $$
 receives one additional dimension exactly when $e\ge2$.
 
 The hypotheses say
 $$
-\dim_{\mathbb F_2}\ker(2)=2
+\dim_{\FF_2}\ker(2)=2
 $$
 and
 $$
-\dim_{\mathbb F_2}\ker(2^2)/\ker(2)=1.
+\dim_{\FF_2}\ker(2^2)/\ker(2)=1.
 $$
 Thus there are exactly two cyclic summands, exactly one of which has exponent
 at least $4$. Their exponents must sum to $3$, so the partition is
@@ -90,11 +90,11 @@ Determine the $3$-primary part in part (a).
 
 Let $G_{(3)}$ be the $3$-primary component. Its order is $3^4$. As above,
 $$
-\dim_{\mathbb F_3}\ker(3)
+\dim_{\FF_3}\ker(3)
 $$
 counts the cyclic summands, while
 $$
-\dim_{\mathbb F_3}\ker(3^2)/\ker(3)
+\dim_{\FF_3}\ker(3^2)/\ker(3)
 $$
 counts those summands whose exponent is at least $9$.
 

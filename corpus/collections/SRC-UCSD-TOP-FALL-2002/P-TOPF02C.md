@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF02C
 kind: problem
-title: A Moore space $M(\ZZ_4,2)$ and the homology of $\mathbb{RP}^2\times M(\ZZ_4,2)$
+title: A Moore space $M(\ZZ_4,2)$ and the homology of $\RP^2\times M(\ZZ_4,2)$
 classification:
   areas:
   - topology
@@ -23,7 +23,7 @@ $$
 H_k(Y; \ZZ) = \begin{cases} \ZZ_4 & \text{if } k = 2 \\ \ZZ & \text{if } k = 0 \\ 0 & \text{otherwise.} \end{cases}
 $$
 
-(b) Compute $H_*(\mathbb{RP}^2 \times Y; \ZZ_2)$, $H_*(\mathbb{RP}^2 \times Y; \ZZ)$, and $H^*(\mathbb{RP}^2 \times Y; \ZZ)$.
+(b) Compute $H_*(\RP^2 \times Y; \ZZ_2)$, $H_*(\RP^2 \times Y; \ZZ)$, and $H^*(\RP^2 \times Y; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -74,12 +74,12 @@ homology of cellular chain complex.
 :::
 
 ::: pf-step
-Part (b)(i): Integer homology $H_*(\mathbb{RP}^2 \times Y; \ZZ)$:
+Part (b)(i): Integer homology $H_*(\RP^2 \times Y; \ZZ)$:
 
 ::: pf-proof
 
 ::: pf-step
-Recall $H_*(\mathbb{RP}^2; \ZZ) = (\ZZ, \ZZ_2, 0, \dots)$.
+Recall $H_*(\RP^2; \ZZ) = (\ZZ, \ZZ_2, 0, \dots)$.
 
 ::: pf-proof
 standard homology of real projective plane.
@@ -111,12 +111,12 @@ Künneth Theorem for integral homology.
 :::
 
 ::: pf-step
-Part (b)(ii): Mod 2 homology $H_*(\mathbb{RP}^2 \times Y; \ZZ_2)$:
+Part (b)(ii): Mod 2 homology $H_*(\RP^2 \times Y; \ZZ_2)$:
 
 ::: pf-proof
 
 ::: pf-step
-By the Universal Coefficient Theorem, $H_*(\mathbb{RP}^2; \ZZ_2) = (\ZZ_2, \ZZ_2, \ZZ_2, 0, \dots)$ and $H_*(Y; \ZZ_2) = (\ZZ_2, 0, \ZZ_2, \ZZ_2, 0, \dots)$.
+By the Universal Coefficient Theorem, $H_*(\RP^2; \ZZ_2) = (\ZZ_2, \ZZ_2, \ZZ_2, 0, \dots)$ and $H_*(Y; \ZZ_2) = (\ZZ_2, 0, \ZZ_2, \ZZ_2, 0, \dots)$.
 
 ::: pf-proof
 UCT over $\ZZ_2$.
@@ -125,7 +125,7 @@ UCT over $\ZZ_2$.
 :::
 
 ::: pf-step
-By the Künneth Theorem over the field $\ZZ_2$, $H_n(\mathbb{RP}^2 \times Y; \ZZ_2) \cong \bigoplus_{i+j=n} H_i(\mathbb{RP}^2; \ZZ_2) \otimes_{\ZZ_2} H_j(Y; \ZZ_2)$:
+By the Künneth Theorem over the field $\ZZ_2$, $H_n(\RP^2 \times Y; \ZZ_2) \cong \bigoplus_{i+j=n} H_i(\RP^2; \ZZ_2) \otimes_{\ZZ_2} H_j(Y; \ZZ_2)$:
 
 - $n = 0$: $H_0 \otimes H_0 \cong \ZZ_2$.
 
@@ -152,7 +152,7 @@ field Künneth formula.
 :::
 
 ::: {.pf-step #integer-cohomology}
-Part (b)(iii): Integer cohomology $H^*(\mathbb{RP}^2 \times Y; \ZZ)$:
+Part (b)(iii): Integer cohomology $H^*(\RP^2 \times Y; \ZZ)$:
 
 ::: pf-proof
 

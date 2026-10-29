@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U \subset \CC$ be an open set that contains the closed unit disc $\overline{\mathbb{D}} \subset U$.
+Let $U \subset \CC$ be an open set that contains the closed unit disc $\overline{\DD} \subset U$.
 Show that for all holomorphic functions $f: U \to \CC$ we have $$\max_{|z|=1} \left|f(z) - \frac{e^z}{z}\right| \geq 1.$$
 :::
 

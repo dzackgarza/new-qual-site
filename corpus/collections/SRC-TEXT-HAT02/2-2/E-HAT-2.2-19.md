@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-2.2-19
 kind: problem
-title: $H_i(\mathbb{RP}^n/\mathbb{RP}^m)$ by cellular homology
+title: $H_i(\RP^n/\RP^m)$ by cellular homology
 classification:
   areas:
   - topology
@@ -27,13 +27,13 @@ audit:
 ---
 
 ::: {.problem}
-Compute $H_i(\mathbb{RP}^n/\mathbb{RP}^m)$ for $m < n$ by cellular homology, using the standard CW structure on $\mathbb{RP}^n$ with $\mathbb{RP}^m$ as its $m$ skeleton.
+Compute $H_i(\RP^n/\RP^m)$ for $m < n$ by cellular homology, using the standard CW structure on $\RP^n$ with $\RP^m$ as its $m$ skeleton.
 :::
 
 ::: {.solution}
 Let
 \[
-Y=\mathbb{RP}^n/\mathbb{RP}^m,
+Y=\RP^n/\RP^m,
 \qquad m<n.
 \]
 The quotient CW structure has one $0$-cell and one cell in each dimension
@@ -136,7 +136,7 @@ Finally $Y$ is connected, so
 \[
 H_0(Y)\cong\ZZ.
 \]
-Together steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give all homology groups of $\mathbb{RP}^n/\mathbb{RP}^m$.
+Together steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give all homology groups of $\RP^n/\RP^m$.
 :::
 
 :::

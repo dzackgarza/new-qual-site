@@ -20,10 +20,10 @@ $$
 \Omega_\alpha := \left\{z = re^{i\theta} : \theta \in \left(-\frac{\alpha\pi}{2}, \frac{\alpha\pi}{2}\right), r > 0\right\}.
 $$
 
-(i) Determine for which $\alpha$ there is a Möbius transformation $S$ from $\Omega_\alpha$ onto $\mathbb{D}$.
+(i) Determine for which $\alpha$ there is a Möbius transformation $S$ from $\Omega_\alpha$ onto $\DD$.
 Prove nonexistence or give an explicit example if such exists.
 
-(ii) Determine for which $\alpha$ there is a conformal map $f$ from $\Omega_\alpha$ onto $\mathbb{D}$.
+(ii) Determine for which $\alpha$ there is a conformal map $f$ from $\Omega_\alpha$ onto $\DD$.
 Prove nonexistence or give an explicit example if such exists.
 :::
 
@@ -33,14 +33,14 @@ $\Omega_1$ is the right half-plane, and for example
 \[
 S(z)=\frac{z-1}{z+1}
 \]
-maps it biholomorphically onto $\mathbb D$.
+maps it biholomorphically onto $\DD$.
 
 Now suppose $0<\alpha<1$. The boundary of $\Omega_\alpha$ consists of two
 distinct rays lying on two distinct lines through the origin. Möbius
 transformations take generalized circles to generalized circles and preserve
 incidence. If such a transformation sent $\Omega_\alpha$ onto the disk, both
 boundary rays would have to map into the single generalized circle
-$\partial\mathbb D$. Their two supporting lines would therefore both have to
+$\partial\DD$. Their two supporting lines would therefore both have to
 map to that same generalized circle, impossible because a Möbius
 transformation is injective on generalized circles. Hence no Möbius map exists
 for $\alpha<1$.
@@ -57,5 +57,5 @@ with the Cayley map gives
 f(z)=\frac{z^{1/\alpha}-1}{z^{1/\alpha}+1},
 }
 \]
-which maps $\Omega_\alpha$ conformally onto $\mathbb D$.
+which maps $\Omega_\alpha$ conformally onto $\DD$.
 :::

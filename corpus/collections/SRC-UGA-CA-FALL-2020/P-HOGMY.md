@@ -16,14 +16,14 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose that $f: \mathbb{D} \rightarrow \mathbb{D}$ is holomorphic and $f(0)=0$.
+Suppose that $f: \DD \rightarrow \DD$ is holomorphic and $f(0)=0$.
 Let $n \geq 1$, and define the function $f_{n}(z)$ to be the $n$-th composition of $f$ with itself; more precisely, let
 
 $$
 f_{1}(z):=f(z), f_{2}(z):=f(f(z)), \text { in general } f_{n}(z):=f\left(f_{n-1}(z)\right) .
 $$
 
-Suppose that for each $z \in \mathbb{D}, \lim _{n \rightarrow \infty} f_{n}(z)$ exists and equals to $g(z)$.
+Suppose that for each $z \in \DD, \lim _{n \rightarrow \infty} f_{n}(z)$ exists and equals to $g(z)$.
 Prove that either $g(z) \equiv 0$ or $g(z)=z$ for all $z \in D$.
 :::
 

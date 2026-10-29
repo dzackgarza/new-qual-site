@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF06-6A
 kind: problem
-title: Irreducibility of $x^p-x+1$ over $\mathbb F_p$
+title: Irreducibility of $x^p-x+1$ over $\FF_p$
 classification:
   areas: [prelim]
   topics: []
@@ -32,7 +32,7 @@ Prove that
 \[
 f(x)=x^p-x+1
 \]
-is irreducible over the field $\mathbb F_p$.
+is irreducible over the field $\FF_p$.
 :::
 
 ::: {.solution}

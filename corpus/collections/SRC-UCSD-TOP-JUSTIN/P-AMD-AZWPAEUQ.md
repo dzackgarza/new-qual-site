@@ -22,43 +22,43 @@ Compute $H_*(\Sigma\RP^2 \cross \RP^2; \ZZ)$
 :::
 
 ::: {.solution}
-**Goal:** Compute the integral homology groups $H_k(\Sigma \mathbb{RP}^2 \times \mathbb{RP}^2; \ZZ)$ for all $k \ge 0$.
+**Goal:** Compute the integral homology groups $H_k(\Sigma \RP^2 \times \RP^2; \ZZ)$ for all $k \ge 0$.
 
 ::: pf
 
 ::: pf-step
-Compute the homology of the factors $\Sigma \mathbb{RP}^2$ and $\mathbb{RP}^2$.
+Compute the homology of the factors $\Sigma \RP^2$ and $\RP^2$.
 
 ::: pf-proof
 
 ::: pf-step
-The homology of the real projective plane $\mathbb{RP}^2$ is:
+The homology of the real projective plane $\RP^2$ is:
 
-- $H_0(\mathbb{RP}^2) \cong \ZZ$,
+- $H_0(\RP^2) \cong \ZZ$,
 
-- $H_1(\mathbb{RP}^2) \cong \ZZ/2\ZZ$,
+- $H_1(\RP^2) \cong \ZZ/2\ZZ$,
 
-- $H_2(\mathbb{RP}^2) = 0$,
+- $H_2(\RP^2) = 0$,
 
-- $H_k(\mathbb{RP}^2) = 0$ for $k \ge 3$.
+- $H_k(\RP^2) = 0$ for $k \ge 3$.
 :::
 
 ::: pf-step
-By the suspension isomorphism $\widetilde{H}_k(\Sigma X) \cong \widetilde{H}_{k-1}(X)$, the reduced homology of $\Sigma \mathbb{RP}^2$ is:
+By the suspension isomorphism $\widetilde{H}_k(\Sigma X) \cong \widetilde{H}_{k-1}(X)$, the reduced homology of $\Sigma \RP^2$ is:
 
-- $H_0(\Sigma \mathbb{RP}^2) \cong \ZZ$,
+- $H_0(\Sigma \RP^2) \cong \ZZ$,
 
-- $H_1(\Sigma \mathbb{RP}^2) \cong \widetilde{H}_0(\mathbb{RP}^2) = 0$,
+- $H_1(\Sigma \RP^2) \cong \widetilde{H}_0(\RP^2) = 0$,
 
-- $H_2(\Sigma \mathbb{RP}^2) \cong \widetilde{H}_1(\mathbb{RP}^2) \cong \ZZ/2\ZZ$,
+- $H_2(\Sigma \RP^2) \cong \widetilde{H}_1(\RP^2) \cong \ZZ/2\ZZ$,
 
-- $H_3(\Sigma \mathbb{RP}^2) \cong \widetilde{H}_2(\mathbb{RP}^2) = 0$,
+- $H_3(\Sigma \RP^2) \cong \widetilde{H}_2(\RP^2) = 0$,
 
-- $H_k(\Sigma \mathbb{RP}^2) = 0$ for $k \ge 4$.
+- $H_k(\Sigma \RP^2) = 0$ for $k \ge 4$.
 :::
 
 ::: pf-qed
-Standard cellular homology of $\mathbb{RP}^2$ and suspension theorem.
+Standard cellular homology of $\RP^2$ and suspension theorem.
 :::
 
 :::
@@ -75,7 +75,7 @@ For topological spaces $A$ and $B$, the Künneth formula over PID $\ZZ$ gives a 
 :::
 
 ::: pf-step
-Here $A = \Sigma \mathbb{RP}^2$ and $B = \mathbb{RP}^2$.
+Here $A = \Sigma \RP^2$ and $B = \RP^2$.
 :::
 
 ::: {.pf-step #s2-3}
@@ -154,7 +154,7 @@ Conclusion.
 ::: pf-proof
 
 ::: pf-step
-The homology groups are: $$H_k(\Sigma \mathbb{RP}^2 \times \mathbb{RP}^2; \ZZ) \cong \begin{cases} \ZZ & k = 0, \\ \ZZ/2\ZZ & k = 1, 2, 3, 4, \\ 0 & k \ge 5. \end{cases}$$
+The homology groups are: $$H_k(\Sigma \RP^2 \times \RP^2; \ZZ) \cong \begin{cases} \ZZ & k = 0, \\ \ZZ/2\ZZ & k = 1, 2, 3, 4, \\ 0 & k \ge 5. \end{cases}$$
 
 ::: pf-proof
 The groups computed in step [](#s3){.pf-ref} assemble into the stated description of $H_k$ for all $k \ge 0$.

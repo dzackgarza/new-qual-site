@@ -24,7 +24,7 @@ audit:
   note: "Verified the exact Frobenius order, the embedding-count bound, and irreducibility of the inseparable example by a residue-class basis argument."
 ---
 ::: {.problem}
-(a) Describe the Galois group of $\mathbb{F}_{p^n}$ over $\mathbb{F}_p$, where $p$ is a prime and $n \geq 1$.
+(a) Describe the Galois group of $\FF_{p^n}$ over $\FF_p$, where $p$ is a prime and $n \geq 1$.
 
 (b) Find fields $K$ and $F$ such that $K$ is a splitting field over $F$, but $K$ is NOT separable over $F$.
 :::
@@ -40,9 +40,9 @@ Frobenius automorphism $\varphi(x)=x^p$.
 
 ::: pf-proof
 
-Write $E=\mathbb F_{p^n}$. In characteristic $p$, the binomial theorem
+Write $E=\FF_{p^n}$. In characteristic $p$, the binomial theorem
 gives $(x+y)^p=x^p+y^p$, and $(xy)^p=x^py^p$. Thus $\varphi$ is a
-field homomorphism fixing $\mathbb F_p$. It is injective and hence,
+field homomorphism fixing $\FF_p$. It is injective and hence,
 since $E$ is finite, surjective.
 
 The multiplicative group $E^\times$ has order $p^n-1$. Lagrange's
@@ -52,8 +52,8 @@ $\varphi^d=1$ would make all $p^n$ elements of $E$ roots of the
 nonzero polynomial $X^{p^d}-X$, whose degree is $p^d<p^n$. This is
 impossible, so $\varphi$ has order exactly $n$.
 
-Since a vector space of dimension $m$ over $\mathbb F_p$ has $p^m$
-elements, $[E:\mathbb F_p]=n$. A finite extension of degree $n$
+Since a vector space of dimension $m$ over $\FF_p$ has $p^m$
+elements, $[E:\FF_p]=n$. A finite extension of degree $n$
 has at most $n$ embeddings into an algebraic closure: choose a finite
 tower obtained by adjoining generators, and note that at a step of
 degree $d$ each embedding of the preceding field has at most $d$
@@ -61,13 +61,13 @@ extensions, because the image of the new generator must be a root
 of the image of its minimal polynomial. Multiplication of these
 bounds along the tower gives the degree $n$.
 Consequently the $n$ distinct powers of $\varphi$ exhaust all
-$\mathbb F_p$-automorphisms of $E$.
+$\FF_p$-automorphisms of $E$.
 
 Moreover, $X^{p^n}-X$ splits over $E$, has derivative $-1$, and its
 roots are exactly all the elements of $E$. Therefore $E$ is its
-splitting field and $E/\mathbb F_p$ is Galois [@DF04]. Explicitly,
+splitting field and $E/\FF_p$ is Galois [@DF04]. Explicitly,
 $$
-\operatorname{Gal}(E/\mathbb F_p)
+\operatorname{Gal}(E/\FF_p)
 =\{x\mapsto x^{p^j}:0\leq j<n\}
 \cong\ZZ/n\ZZ.
 $$
@@ -79,8 +79,8 @@ For $n=1$ this is the trivial group.
 
 ::: {.pf-step #s2}
 
-In part (b), take $K=\mathbb F_p(u)$ and
-$F=\mathbb F_p(u^p)$, where $u$ is an indeterminate.
+In part (b), take $K=\FF_p(u)$ and
+$F=\FF_p(u^p)$, where $u$ is an indeterminate.
 
 ::: pf-proof
 
@@ -88,10 +88,10 @@ Put $t=u^p\in F$. The element $u$ satisfies $X^p-t$, so
 $[F(u):F]\leq p$. To obtain equality, suppose
 $$
 \sum_{j=0}^{p-1}a_j(u^p)u^j=0,
-\qquad a_j(T)\in\mathbb F_p(T).
+\qquad a_j(T)\in\FF_p(T).
 $$
 Multiplication by a common nonzero polynomial denominator gives
-$\sum_{j=0}^{p-1}P_j(u^p)u^j=0$ with $P_j\in\mathbb F_p[T]$.
+$\sum_{j=0}^{p-1}P_j(u^p)u^j=0$ with $P_j\in\FF_p[T]$.
 The powers of $u$ occurring in the $j$th summand are all congruent
 to $j$ modulo $p$. Distinct summands therefore have disjoint
 monomial supports. Since $u$ is transcendental, every coefficient
@@ -107,7 +107,7 @@ $$
 Its only root is $u$, and that root generates $K$ over $F$.
 Therefore $K$ is its splitting field. Its minimal polynomial has
 a repeated root, so $u$ is not separable over $F$ and $K/F$ is not
-separable. In fact every $r(u)\in\mathbb F_p(u)$ satisfies
+separable. In fact every $r(u)\in\FF_p(u)$ satisfies
 $r(u)^p=r(u^p)\in F$, so the extension is purely inseparable.
 
 :::

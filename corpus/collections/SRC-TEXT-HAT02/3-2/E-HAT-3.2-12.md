@@ -25,12 +25,12 @@ audit:
 ---
 
 ::: {.problem}
-Show that the spaces $(S^1 \times \mathbb{CP}^\infty) / (S^1 \times \{x_0\})$ and $S^3 \times \mathbb{CP}^\infty$ have isomorphic cohomology rings with $\ZZ$ or any other coefficients.
+Show that the spaces $(S^1 \times \CP^\infty) / (S^1 \times \{x_0\})$ and $S^3 \times \CP^\infty$ have isomorphic cohomology rings with $\ZZ$ or any other coefficients.
 [An exercise for §4.L is to show these two spaces are not homotopy equivalent.]
 :::
 
 ::: {.solution}
-Let $Y=\mathbb{CP}^\infty$ with basepoint $y_0$, and set
+Let $Y=\CP^\infty$ with basepoint $y_0$, and set
 \[
 Q=(S^1\times Y)/(S^1\times\{y_0\}).
 \]
@@ -66,7 +66,7 @@ H^*(Q;R)\cong R[u,v]/(v^2),\qquad |u|=2,\ |v|=3.
 
 On the other hand
 \[
-H^*(S^3\times\mathbb{CP}^\infty;R)
+H^*(S^3\times\CP^\infty;R)
 \cong H^*(S^3;R)\otimes_R R[u]
 \cong R[u,v]/(v^2),
 \]

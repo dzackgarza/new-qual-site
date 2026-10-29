@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Determine all covering spaces of $S^1 \times \mathbb{RP}^3$.
+Determine all covering spaces of $S^1 \times \RP^3$.
 (This includes determining the covering projections.)
 :::
 
@@ -26,13 +26,13 @@ Determine all covering spaces of $S^1 \times \mathbb{RP}^3$.
 
 We have
 $$
-\pi_1(S^1\times\mathbb{RP}^3)\cong \ZZ\times\ZZ/2
+\pi_1(S^1\times\RP^3)\cong \ZZ\times\ZZ/2
 =\langle a,b\mid [a,b]=1,\ b^2=1\rangle.
 $$
 
 ::: pf-proof
 
-Use the product formula for fundamental groups, $\pi_1(S^1)=\ZZ$, and $\pi_1(\mathbb{RP}^3)=\ZZ/2$.
+Use the product formula for fundamental groups, $\pi_1(S^1)=\ZZ$, and $\pi_1(\RP^3)=\ZZ/2$.
 
 :::
 
@@ -77,7 +77,7 @@ $$
 the connected cover corresponding to $H$ is
 $$
 (\RR\times S^3)/H\longrightarrow
-(\RR\times S^3)/G=S^1\times\mathbb{RP}^3.
+(\RR\times S^3)/G=S^1\times\RP^3.
 $$
 
 ::: pf-proof
@@ -92,9 +92,9 @@ This is the standard subgroup construction for coverings from the universal cove
 
 Concretely:
 - $H=0$ gives the universal cover $\RR\times S^3$;
-- $H=\langle b\rangle$ gives $\RR\times\mathbb{RP}^3$;
+- $H=\langle b\rangle$ gives $\RR\times\RP^3$;
 - $H=\langle a^d\rangle$ gives $S^1\times S^3$ with projection $(z,u)\mapsto(z^d,[u])$;
-- $H=\langle a^d,b\rangle$ gives $S^1\times\mathbb{RP}^3$ with projection $(z,[u])\mapsto(z^d,[u])$;
+- $H=\langle a^d,b\rangle$ gives $S^1\times\RP^3$ with projection $(z,[u])\mapsto(z^d,[u])$;
 - $H=\langle a^db\rangle$ gives $(\RR\times S^3)/((t,u)\sim(t+d,-u))$ with the quotient projection induced by $(t,u)\mapsto(e^{2\pi it},[u])$.
 
 ::: pf-proof

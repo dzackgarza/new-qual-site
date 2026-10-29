@@ -34,7 +34,7 @@ of $V_1$.
 
 For each $j=1,\dots,n$, the coordinate functional
 \[
-\lambda_j:V_1\to\mathbb F,
+\lambda_j:V_1\to\FF,
 \qquad
 \lambda_j\!\left(\sum_{k=1}^n a_ke_k\right)=a_j,
 \]
@@ -53,7 +53,7 @@ Every linear map from a finite-dimensional normed space to a normed space is con
 
 For each $j$, there exists a continuous linear functional
 \[
-\widetilde\lambda_j:V\to\mathbb F
+\widetilde\lambda_j:V\to\FF
 \]
 whose restriction to $V_1$ is $\lambda_j$.
 

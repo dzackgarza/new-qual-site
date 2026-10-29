@@ -25,7 +25,7 @@ What is its topological degree?
 
 Interpreting $p$ as a rational map of the Riemann sphere,
 $$
-p:\mathbb{CP}^1\longrightarrow\mathbb{CP}^1,
+p:\CP^1\longrightarrow\CP^1,
 $$
 its topological degree is
 $$
@@ -41,7 +41,7 @@ $$
 [W^{d-n}P_h(Z,W):W^{d-m}Q_h(Z,W)]
 \end{cases}
 $$
-after placing the necessary power of $W$ in the lower-degree component. These homogeneous forms have no common zero on $\mathbb{CP}^1$. A generic value therefore has exactly $d$ preimages counted with multiplicity. Holomorphic maps preserve orientation at regular points, so the topological degree equals this algebraic count, namely $d$.
+after placing the necessary power of $W$ in the lower-degree component. These homogeneous forms have no common zero on $\CP^1$. A generic value therefore has exactly $d$ preimages counted with multiplicity. Holomorphic maps preserve orientation at regular points, so the topological degree equals this algebraic count, namely $d$.
 
 :::
 

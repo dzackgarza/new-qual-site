@@ -9,13 +9,13 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\mathbb D=\{z:|z|<1\}$ and
+Let $\DD=\{z:|z|<1\}$ and
 \[
-\Omega=\{z\in\mathbb D:\operatorname{Im}z>0\}.
+\Omega=\{z\in\DD:\operatorname{Im}z>0\}.
 \]
 Evaluate
 \[
-\sup\left\{\operatorname{Re}f'(i/2): f:\Omega\to\mathbb D\text{ is holomorphic}\right\}.
+\sup\left\{\operatorname{Re}f'(i/2): f:\Omega\to\DD\text{ is holomorphic}\right\}.
 \]
 :::
 
@@ -66,7 +66,7 @@ Thus
 \]
 Hence $M(\Omega)\subset Q$.
 
-Conversely, $M^{-1}$ maps the right half-plane to $\mathbb D$ and the upper half-plane to itself, so every point of $Q$ has preimage in $\Omega$.
+Conversely, $M^{-1}$ maps the right half-plane to $\DD$ and the upper half-plane to itself, so every point of $Q$ has preimage in $\Omega$.
 
 :::
 
@@ -230,7 +230,7 @@ Therefore
 
 Let
 \[
-G:\mathbb H\to\mathbb D
+G:\mathbb H\to\DD
 \]
 be holomorphic. Then
 \[
@@ -268,7 +268,7 @@ H
 \coloneqq
 \psi_a\circ G\circ\chi^{-1}
 \]
-maps $\mathbb D$ holomorphically to itself and satisfies $H(0)=0$. Schwarz's lemma gives
+maps $\DD$ holomorphically to itself and satisfies $H(0)=0$. Schwarz's lemma gives
 \[
 |H'(0)|\le1.
 \]
@@ -307,7 +307,7 @@ which is the first inequality. The second follows from $1-|a|^2\le1$.
 
 If
 \[
-f:\Omega\to\mathbb D
+f:\Omega\to\DD
 \]
 is holomorphic, then
 \[
@@ -323,7 +323,7 @@ Define
 \[
 G
 \coloneqq
-f\circ\Phi^{-1}:\mathbb H\to\mathbb D.
+f\circ\Phi^{-1}:\mathbb H\to\DD.
 \]
 Then
 \[
@@ -412,7 +412,7 @@ f_0'(z_0)
 \]
 is positive real.
 
-The function $f_0$ maps $\Omega$ holomorphically into $\mathbb D$. Since
+The function $f_0$ maps $\Omega$ holomorphically into $\DD$. Since
 \[
 |\chi'(q_0)|
 =
@@ -439,7 +439,7 @@ Therefore
 \boxed{
 \sup\left\{
 \operatorname{Re}f'(i/2):
-f:\Omega\to\mathbb D
+f:\Omega\to\DD
 \text{ holomorphic}
 \right\}
 =

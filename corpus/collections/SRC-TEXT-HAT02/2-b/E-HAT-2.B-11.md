@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-2.B-11
 kind: problem
-title: "Homology of $X \\times \\mathbb{RP}^\\infty$ via transfer"
+title: "Homology of $X \\times \\RP^\\infty$ via transfer"
 classification:
   areas:
   - topology
@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Use the transfer sequence for the covering $X \times S^\infty \to X \times \mathbb{RP}^\infty$ to produce isomorphisms $H_n(X \times \mathbb{RP}^\infty; \ZZ_2) \approx \bigoplus_{i \leq n} H_i(X; \ZZ_2)$ for all $n$.
+Use the transfer sequence for the covering $X \times S^\infty \to X \times \RP^\infty$ to produce isomorphisms $H_n(X \times \RP^\infty; \ZZ_2) \approx \bigoplus_{i \leq n} H_i(X; \ZZ_2)$ for all $n$.
 :::
 
 ::: {.solution}
@@ -33,7 +33,7 @@ Put
 \[
 E=X\times S^\infty,
 \qquad
-B=X\times\mathbb{RP}^\infty,
+B=X\times\RP^\infty,
 \]
 and use $\ZZ_2$ coefficients. The projection $p:E\to B$ is a double cover, so its transfer sequence is
 \[
@@ -54,9 +54,9 @@ Under this identification, $p_*:H_n(X)\to H_n(B)$ is split injective.
 
 ::: pf-proof
 
-Choose $e_0\in S^\infty$ and write $b_0=[e_0]\in\mathbb{RP}^\infty$. After deforming $E$ to $X\times\{e_0\}$, the covering map becomes the inclusion
+Choose $e_0\in S^\infty$ and write $b_0=[e_0]\in\RP^\infty$. After deforming $E$ to $X\times\{e_0\}$, the covering map becomes the inclusion
 \[
-j:X\to X\times\mathbb{RP}^\infty,
+j:X\to X\times\RP^\infty,
 \qquad j(x)=(x,b_0).
 \]
 The projection
@@ -112,7 +112,7 @@ By step [](#s2){.pf-ref}, exactness makes $\delta$ surjective. By step [](#s1){.
 Inductively,
 \[
 \boxed{
-H_n(X\times\mathbb{RP}^\infty;\ZZ_2)
+H_n(X\times\RP^\infty;\ZZ_2)
 \cong
 \bigoplus_{i=0}^{n}H_i(X;\ZZ_2).
 }
@@ -124,7 +124,7 @@ From step [](#s3){.pf-ref},
 \[
 H_n(B)\cong H_n(X)\oplus H_{n-1}(B).
 \]
-For $n=0$, $H_0(B)\cong H_0(X)$ because $\mathbb{RP}^\infty$ is connected. Iterating the displayed recurrence yields the stated direct sum.
+For $n=0$, $H_0(B)\cong H_0(X)$ because $\RP^\infty$ is connected. Iterating the displayed recurrence yields the stated direct sum.
 
 :::
 

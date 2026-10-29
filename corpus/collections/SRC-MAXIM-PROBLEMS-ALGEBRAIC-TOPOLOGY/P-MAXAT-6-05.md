@@ -28,11 +28,11 @@ n=2^r,
 \]
 and let
 \[
-a\in H^1(\mathbb{RP}^n;\mathbb F_2)
+a\in H^1(\RP^n;\FF_2)
 \]
 be the standard generator. Suppose, for contradiction, that there is a smooth embedding
 \[
-\mathbb{RP}^n\hookrightarrow\RR^{2n-1}.
+\RP^n\hookrightarrow\RR^{2n-1}.
 \]
 
 ::: pf
@@ -45,7 +45,7 @@ Its normal bundle $\nu$ has rank
 \]
 and satisfies
 \[
-T\mathbb{RP}^n\oplus\nu\cong\varepsilon^{2n-1}.
+T\RP^n\oplus\nu\cong\varepsilon^{2n-1}.
 \]
 
 
@@ -61,7 +61,7 @@ For a smooth embedding, the tangent bundle of the ambient Euclidean space restri
 
 Since
 \[
-w(T\mathbb{RP}^n)=(1+a)^{n+1},
+w(T\RP^n)=(1+a)^{n+1},
 \]
 one has
 \[
@@ -73,12 +73,12 @@ w(\nu)=(1+a)^{-(n+1)}.
 
 Apply the Whitney product formula to step [](#s1-1){.pf-ref}:
 \[
-w(T\mathbb{RP}^n)w(\nu)=1.
+w(T\RP^n)w(\nu)=1.
 \]
 The standard tangent-bundle calculation gives the first displayed formula, so $w(\nu)$ is its multiplicative inverse in
 \[
-H^*(\mathbb{RP}^n;\mathbb F_2)
-=\mathbb F_2[a]/(a^{n+1}).
+H^*(\RP^n;\FF_2)
+=\FF_2[a]/(a^{n+1}).
 \]
 
 :::
@@ -107,7 +107,7 @@ Set $x=1$, $y=a$.
 
 ::: {.pf-step #s1-4}
 
-In the truncated ring $\mathbb F_2[a]/(a^{n+1})$,
+In the truncated ring $\FF_2[a]/(a^{n+1})$,
 \[
 (1+a)^{-(n+1)}
 =1+a+a^2+\cdots+a^n.
@@ -157,8 +157,8 @@ w_n(\nu)=a^n\ne0.
 
 Step [](#s1-4){.pf-ref} identifies the degree-$n$ component of $w(\nu)$ with $a^n$. The mod-$2$ cohomology ring of real projective space is
 \[
-H^*(\mathbb{RP}^n;\mathbb F_2)
-=\mathbb F_2[a]/(a^{n+1}),
+H^*(\RP^n;\FF_2)
+=\FF_2[a]/(a^{n+1}),
 \]
 so $a^n$ is its nonzero top-dimensional class.
 
@@ -200,7 +200,7 @@ The same normal bundle $\nu$ cannot simultaneously have $w_n(\nu)=a^n\ne0$ and $
 Hence
 \[
 \boxed{
-\mathbb{RP}^{2^r}\text{ cannot be smoothly embedded in }
+\RP^{2^r}\text{ cannot be smoothly embedded in }
 \RR^{2^{r+1}-1}.}
 \]
 

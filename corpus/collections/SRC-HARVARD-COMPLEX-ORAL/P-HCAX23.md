@@ -44,9 +44,9 @@ Conversely, let $F\in\operatorname{Aut}(\mathbb H)$. The Cayley transform
 \[
 C(z)=\frac{z-i}{z+i}
 \]
-is a conformal isomorphism from $\mathbb H$ to $\mathbb D$. Hence
+is a conformal isomorphism from $\mathbb H$ to $\DD$. Hence
 \[
-C\circ F\circ C^{-1}\in\operatorname{Aut}(\mathbb D).
+C\circ F\circ C^{-1}\in\operatorname{Aut}(\DD).
 \]
 By the classification of disk automorphisms, this conjugate is Möbius, so $F$ is Möbius as well. Since $F$ maps the boundary circle $\RR\cup\{\infty\}$ to itself, its coefficients may be scaled to be real. The condition that $F$ sends the upper, rather than lower, half-plane to itself is exactly $ad-bc>0$ by the displayed imaginary-part formula. This gives the stated classification.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK92S-06
 kind: problem
-title: Quadratic factors of $x^4+1$ over $\mathbb F_p$ for $p\equiv3\pmod4$
+title: Quadratic factors of $x^4+1$ over $\FF_p$ for $p\equiv3\pmod4$
 classification:
   areas:
   - prelim
@@ -27,7 +27,7 @@ Suppose
 \[
 x^4+1=g(x)h(x)
 \]
-in $\mathbb F_p[x]$, where $g,h$ are quadratic. Prove that both $g$ and $h$ are irreducible over $\mathbb F_p$.
+in $\FF_p[x]$, where $g,h$ are quadratic. Prove that both $g$ and $h$ are irreducible over $\FF_p$.
 :::
 
 ::: {.solution}

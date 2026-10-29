@@ -42,13 +42,13 @@ If $K$ is isomorphic to a subfield of $L$, then $m\mid n$.
 Suppose $K$ is identified with a subfield of $L$.
 Then $L$ is a finite-dimensional vector space over $K$, so the tower law gives
 \[
-[L:\mathbb F_p]=[L:K][K:\mathbb F_p].
+[L:\FF_p]=[L:K][K:\FF_p].
 \]
 Since
 \[
-[L:\mathbb F_p]=n,
+[L:\FF_p]=n,
 \qquad
-[K:\mathbb F_p]=m,
+[K:\FF_p]=m,
 \]
 we obtain
 \[
@@ -70,7 +70,7 @@ Write
 \[
 n=rm.
 \]
-Every element $x\in L=\mathbb F_{p^n}$ satisfies
+Every element $x\in L=\FF_{p^n}$ satisfies
 \[
 x^{p^n}=x.
 \]

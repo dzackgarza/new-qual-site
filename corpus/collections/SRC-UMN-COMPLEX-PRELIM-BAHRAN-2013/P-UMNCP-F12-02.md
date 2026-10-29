@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be a complex-valued function on the unit disk \(\mathbb D\). Suppose both
+Let \(f\) be a complex-valued function on the unit disk \(\DD\). Suppose both
 \[
 g=f^2\qquad\text{and}\qquad h=f^3
 \]
@@ -37,7 +37,7 @@ satisfy the pointwise identity
 $$
 \boxed{h^2=g^3}
 $$
-on $\mathbb D$.
+on $\DD$.
 
 ::: pf
 
@@ -47,7 +47,7 @@ On the open set
 $$
 U
 \coloneqq
-\{z\in\mathbb D:g(z)\ne0\},
+\{z\in\DD:g(z)\ne0\},
 $$
 one has
 $$
@@ -82,7 +82,7 @@ $$
 
 Let
 $$
-a\in\mathbb D
+a\in\DD
 $$
 be a zero of $g$. Then
 $$
@@ -227,7 +227,7 @@ there. The zero function is analytic.
 
 ::: {.pf-step #s1-6}
 
-The function $f$ is analytic on all of $\mathbb D$.
+The function $f$ is analytic on all of $\DD$.
 
 
 ::: pf-proof

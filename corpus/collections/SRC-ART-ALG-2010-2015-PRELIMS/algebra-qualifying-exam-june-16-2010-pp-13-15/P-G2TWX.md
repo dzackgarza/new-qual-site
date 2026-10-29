@@ -73,15 +73,15 @@ $L/F$ is not normal and hence is not Galois.
 
 For part (b), take
 $$
-F=\mathbb F_2(t),\qquad K=F(u),\qquad u^2=t,
+F=\FF_2(t),\qquad K=F(u),\qquad u^2=t,
 $$
-where $t$ is transcendental over $\mathbb F_2$.
+where $t$ is transcendental over $\FF_2$.
 
 ::: pf-proof
 
 The polynomial $T^2-t$ has no root in $F$.
 Indeed, a root written as $A(t)/B(t)$, with nonzero
-$A,B\in\mathbb F_2[t]$, would give $A(t)^2=tB(t)^2$.
+$A,B\in\FF_2[t]$, would give $A(t)^2=tB(t)^2$.
 The left side has even degree and the right side odd
 degree, an impossibility. Since a reducible quadratic
 over a field has a root, $T^2-t$ is irreducible.

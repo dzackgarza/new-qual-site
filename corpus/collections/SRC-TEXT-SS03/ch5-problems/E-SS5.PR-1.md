@@ -29,7 +29,7 @@ $$
 ::: {.solution}
 If $0$ is a zero of $f$, factor $f(z)=z^m g(z)$ with $g(0)\ne0$; this removes only finitely many zeros, so it suffices to treat the case $f(0)\ne0$.
 
-Let $M=\sup_{\mathbb D}|f|$. For $0<r<1$ such that no zero lies on $|z|=r$, Jensen's formula gives
+Let $M=\sup_{\DD}|f|$. For $0<r<1$ such that no zero lies on $|z|=r$, Jensen's formula gives
 \[
 \log |f(0)|+\sum_{|z_n|<r}\log\frac r{|z_n|}
 =\frac1{2\pi}\int_0^{2\pi}\log|f(re^{i\theta})|\,d\theta

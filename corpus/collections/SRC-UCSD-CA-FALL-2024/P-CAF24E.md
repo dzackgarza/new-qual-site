@@ -14,17 +14,17 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f_n : \mathbb{D} \to \CC$ be holomorphic functions such that
+Let $f_n : \DD \to \CC$ be holomorphic functions such that
 \[
-\int_{\mathbb{D}} |f_n|\, dx\, dy \le 1, \qquad \forall n \ge 1.
+\int_{\DD} |f_n|\, dx\, dy \le 1, \qquad \forall n \ge 1.
 \]
-Show that there exists a subsequence of $\{f_n\}$ that converges locally uniformly on $\mathbb{D}$.
+Show that there exists a subsequence of $\{f_n\}$ that converges locally uniformly on $\DD$.
 :::
 
 ::: {.solution}
-Fix a compact set $K\Subset\mathbb D$. Choose $r>0$ such that
+Fix a compact set $K\Subset\DD$. Choose $r>0$ such that
 \[
-B(z,r)\subset\mathbb D
+B(z,r)\subset\DD
 \]
 for every $z\in K$. Since $|f_n|$ is subharmonic, the submean inequality gives
 \[
@@ -34,9 +34,9 @@ for every $z\in K$. Since $|f_n|$ is subharmonic, the submean inequality gives
 \le \frac1{\pi r^2}.
 \]
 Thus the family $(f_n)$ is uniformly bounded on every compact subset of
-$\mathbb D$. By Montel's theorem it is a normal family. Therefore every
+$\DD$. By Montel's theorem it is a normal family. Therefore every
 sequence has a subsequence converging uniformly on compact subsets of
-$\mathbb D$ to a holomorphic function (or, in the spherical formulation, to
+$\DD$ to a holomorphic function (or, in the spherical formulation, to
 $\infty$; the local bounds exclude the latter). Hence the required locally
 uniformly convergent subsequence exists.
 :::

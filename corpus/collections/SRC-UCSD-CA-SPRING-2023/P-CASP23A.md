@@ -22,7 +22,7 @@ Let $A(z) = \sum_{n=0}^\infty a_n z^n$ be a power series with radius of converge
 
 (b) Give an example where $A(z)$ converges absolutely on $\mathbb{T}$, and explain why.
 
-(c) Prove that $A(z)$ has a singularity on $\mathbb{T}$, i.e. cannot be analytically continued to an open set containing $\overline{\mathbb{D}}$.
+(c) Prove that $A(z)$ has a singularity on $\mathbb{T}$, i.e. cannot be analytically continued to an open set containing $\overline{\DD}$.
 
 (d) Prove that if $A(z)$ has nonnegative coefficients, the point $z = 1$ is a singularity of $A(z)$.
 
@@ -52,7 +52,7 @@ The root test gives radius $1$, while on $|z|=1$ the series converges
 absolutely because $\sum n^{-2}<\infty$.
 
 (c) If $A$ admitted an analytic continuation to an open neighborhood of
-$\overline{\mathbb D}$, compactness of $\overline{\mathbb D}$ would give
+$\overline{\DD}$, compactness of $\overline{\DD}$ would give
 $\varepsilon>0$ such that the continuation is holomorphic on
 $|z|<1+\varepsilon$. Its Taylor series at $0$ would then have radius of
 convergence at least $1+\varepsilon$, contradicting the assumed radius $1$.
@@ -62,7 +62,7 @@ Thus at least one point of $\mathbb T$ is a singularity.
 contrary, that $A$ were holomorphic in a neighborhood of $1$. Choose
 $\delta>0$ such that $A$ is holomorphic on $D(1,2\delta)$, and set
 $r=1-\delta$. The function is holomorphic on the union
-$\mathbb D\cup D(1,2\delta)$, so its Taylor series about $r$ converges at
+$\DD\cup D(1,2\delta)$, so its Taylor series about $r$ converges at
 $r+\delta=1$ and in fact slightly beyond $1$.
 
 Because $a_n\ge0$, for $k\ge0$ and $0<r<1$,

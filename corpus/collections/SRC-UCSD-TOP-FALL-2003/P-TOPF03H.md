@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-Describe the universal cover of $X = \mathbb{RP}^3 \vee S^2$, and use it to compute the abelian group $\pi_2(X)$.
+Describe the universal cover of $X = \RP^3 \vee S^2$, and use it to compute the abelian group $\pi_2(X)$.
 :::
 
 ::: {.solution}
@@ -27,11 +27,11 @@ Describe the universal cover of $X = \mathbb{RP}^3 \vee S^2$, and use it to comp
 
 ::: pf-step
 
-$\pi_1(\mathbb{RP}^3) = \ZZ/2$ and $\pi_1(S^2) = 1$.
+$\pi_1(\RP^3) = \ZZ/2$ and $\pi_1(S^2) = 1$.
 
 ::: pf-proof
 
-$\mathbb{RP}^3$ has universal cover $S^3$ (a double cover), and $S^2$ is simply connected.
+$\RP^3$ has universal cover $S^3$ (a double cover), and $S^2$ is simply connected.
 
 :::
 
@@ -39,7 +39,7 @@ $\mathbb{RP}^3$ has universal cover $S^3$ (a double cover), and $S^2$ is simply 
 
 ::: pf-step
 
-Hence $\pi_1(X) = \pi_1(\mathbb{RP}^3) * \pi_1(S^2) = \ZZ/2$.
+Hence $\pi_1(X) = \pi_1(\RP^3) * \pi_1(S^2) = \ZZ/2$.
 
 ::: pf-proof
 
@@ -55,7 +55,7 @@ The universal cover $\widetilde X$ is obtained by attaching a copy of $S^2$ at e
 
 ::: pf-proof
 
-the universal cover of $\mathbb{RP}^3$ is $S^3$, and the preimage of the wedge point is two points; over each, we attach a copy of the (simply connected) $S^2$ factor.
+the universal cover of $\RP^3$ is $S^3$, and the preimage of the wedge point is two points; over each, we attach a copy of the (simply connected) $S^2$ factor.
 
 :::
 

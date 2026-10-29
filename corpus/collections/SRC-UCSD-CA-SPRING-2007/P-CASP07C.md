@@ -19,7 +19,7 @@ audit:
 
 ::: {.problem}
 Let $f(z)$ be analytic in the disk $B(0, 2)$.
-Show that there is a function $g(z)$, analytic in the unit disk $\mathbb{D}$, such that the series $\sum_{n=1}^{\infty} \frac{f^{(n)}(z)}{n!}$ converges to $g$ in $\mathcal{O}(\mathbb{D})$.
+Show that there is a function $g(z)$, analytic in the unit disk $\DD$, such that the series $\sum_{n=1}^{\infty} \frac{f^{(n)}(z)}{n!}$ converges to $g$ in $\mathcal{O}(\DD)$.
 :::
 
 ::: {.solution}

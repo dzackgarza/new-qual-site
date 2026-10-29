@@ -31,7 +31,7 @@ Let $K$ and $L$ be finite fields with
 |K|=|L|=q.
 \]
 Then $q=p^n$ for the same prime $p$, and both fields contain the same prime
-field $\mathbb F_p$ up to the unique isomorphism fixing $1$.
+field $\FF_p$ up to the unique isomorphism fixing $1$.
 
 ::: pf
 
@@ -39,7 +39,7 @@ field $\mathbb F_p$ up to the unique isomorphism fixing $1$.
 
 Every element of a field with $q$ elements is a root of
 \[
-f(T)=T^q-T\in\mathbb F_p[T].
+f(T)=T^q-T\in\FF_p[T].
 \]
 
 ::: pf-proof
@@ -72,7 +72,7 @@ in characteristic $p$, so $f$ is separable.
 
 ::: {.pf-step #s3}
 
-Both $K$ and $L$ are splitting fields of $T^q-T$ over $\mathbb F_p$.
+Both $K$ and $L$ are splitting fields of $T^q-T$ over $\FF_p$.
 
 ::: pf-proof
 
@@ -90,8 +90,8 @@ Therefore $K\cong L$.
 ::: pf-proof
 
 Splitting fields of a fixed polynomial over a fixed base field are unique up to
-base-field isomorphism. Applying this to $T^q-T$ over $\mathbb F_p$ and using
-step [](#s3){.pf-ref} yields an $\mathbb F_p$-isomorphism $K\to L$.
+base-field isomorphism. Applying this to $T^q-T$ over $\FF_p$ and using
+step [](#s3){.pf-ref} yields an $\FF_p$-isomorphism $K\to L$.
 
 :::
 

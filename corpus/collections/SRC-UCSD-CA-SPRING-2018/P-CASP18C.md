@@ -21,16 +21,16 @@ Show that if $G \neq \CC$ is a simply connected subset of $\CC$, $f : G \to G$ i
 ::: {.solution}
 By the Riemann mapping theorem, choose a conformal bijection
 \[
-\phi:G\to\mathbb D.
+\phi:G\to\DD.
 \]
 Then
 \[
 F=\phi\circ f\circ\phi^{-1}
 \]
-is a holomorphic self-map of $\mathbb D$.
+is a holomorphic self-map of $\DD$.
 
 If $f$ had two distinct fixed points, then $F$ would have two distinct fixed
-points $a,b\in\mathbb D$. Let $T$ be a disk automorphism with $T(a)=0$ and
+points $a,b\in\DD$. Let $T$ be a disk automorphism with $T(a)=0$ and
 set
 \[
 H=T\circ F\circ T^{-1}.

@@ -35,7 +35,7 @@ Let $\Omega \subset \CC$ be open, bounded, and simply connected. Let $u$ be harm
 
 By the Riemann mapping theorem, there is a conformal bijection
 \[
-\phi:\mathbb D\longrightarrow\Omega.
+\phi:\DD\longrightarrow\Omega.
 \]
 
 
@@ -55,13 +55,13 @@ The function
 \[
 v=u\circ\phi
 \]
-is nonnegative and harmonic on $\mathbb D$.
+is nonnegative and harmonic on $\DD$.
 
 
 ::: pf-proof
 
 A conformal change of variable preserves harmonicity in the plane. Since
-$u\ge0$ on $\Omega$ and $\phi(\mathbb D)=\Omega$, one also has
+$u\ge0$ on $\Omega$ and $\phi(\DD)=\Omega$, one also has
 \[
 v\ge0.
 \]
@@ -76,7 +76,7 @@ The set
 \[
 L=\phi^{-1}(K)
 \]
-is compact in $\mathbb D$, so there is $r\in(0,1)$ such that
+is compact in $\DD$, so there is $r\in(0,1)$ such that
 \[
 L\subseteq\overline{D(0,r)}.
 \]

@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the number of conjugacy classes of $\operatorname{GL}_3(\mathbb{F}_q)$, where $q$ is a power of a prime number.
+Find the number of conjugacy classes of $\operatorname{GL}_3(\FF_q)$, where $q$ is a power of a prime number.
 :::
 
 ::: {.solution}
@@ -32,7 +32,7 @@ Find the number of conjugacy classes of $\operatorname{GL}_3(\mathbb{F}_q)$, whe
 
 ::: pf-step
 
-Conjugacy classes in \(\operatorname{GL}_3(\mathbb F_q)\) are classified by rational canonical form, equivalently by assigning to each monic irreducible polynomial \(\phi\neq x\) a partition \(\lambda_\phi\), with
+Conjugacy classes in \(\operatorname{GL}_3(\FF_q)\) are classified by rational canonical form, equivalently by assigning to each monic irreducible polynomial \(\phi\neq x\) a partition \(\lambda_\phi\), with
 \[
 \sum_\phi (\deg\phi)|\lambda_\phi|=3.
 \]
@@ -47,7 +47,7 @@ This is the primary rational-canonical-form classification of similarity classes
 
 ::: {.pf-step #s2}
 
-The classes whose characteristic polynomial splits completely over \(\mathbb F_q\) contribute
+The classes whose characteristic polynomial splits completely over \(\FF_q\) contribute
 \[
 \binom{q-1}{3}+2(q-1)(q-2)+3(q-1).
 \]
@@ -78,14 +78,14 @@ give three conjugacy classes for each nonzero eigenvalue. Hence this case contri
 
 ::: pf-step
 
-The number of monic irreducible quadratic polynomials over \(\mathbb F_q\) is
+The number of monic irreducible quadratic polynomials over \(\FF_q\) is
 \[
 N_2=\frac{q^2-q}{2}.
 \]
 
 ::: pf-proof
 
-Every element of \(\mathbb F_{q^2}\setminus\mathbb F_q\) has degree \(2\) over \(\mathbb F_q\), and each monic irreducible quadratic has exactly two roots in \(\mathbb F_{q^2}\). Thus
+Every element of \(\FF_{q^2}\setminus\FF_q\) has degree \(2\) over \(\FF_q\), and each monic irreducible quadratic has exactly two roots in \(\FF_{q^2}\). Thus
 \[
 2N_2=q^2-q.
 \]
@@ -111,14 +111,14 @@ Choose the monic irreducible quadratic in \(N_2\) ways and the nonzero linear ei
 
 ::: pf-step
 
-The number of monic irreducible cubic polynomials over \(\mathbb F_q\) is
+The number of monic irreducible cubic polynomials over \(\FF_q\) is
 \[
 N_3=\frac{q^3-q}{3}.
 \]
 
 ::: pf-proof
 
-Because \(3\) is prime, the only proper subfield of \(\mathbb F_{q^3}\) containing \(\mathbb F_q\) is \(\mathbb F_q\). Hence the \(q^3-q\) elements of \(\mathbb F_{q^3}\setminus\mathbb F_q\) all have degree \(3\) over \(\mathbb F_q\). Each monic irreducible cubic has three roots in \(\mathbb F_{q^3}\), so
+Because \(3\) is prime, the only proper subfield of \(\FF_{q^3}\) containing \(\FF_q\) is \(\FF_q\). Hence the \(q^3-q\) elements of \(\FF_{q^3}\setminus\FF_q\) all have degree \(3\) over \(\FF_q\). Each monic irreducible cubic has three roots in \(\FF_{q^3}\), so
 \[
 3N_3=q^3-q.
 \]
@@ -147,7 +147,7 @@ For an irreducible cubic \(\phi\), the only possible partition is \((1)\), so it
 Summing all five disjoint types gives
 \[
 \begin{aligned}
-k(\operatorname{GL}_3(\mathbb F_q))
+k(\operatorname{GL}_3(\FF_q))
 &=\binom{q-1}{3}+2(q-1)(q-2)+3(q-1)\\
 &\qquad +(q-1)\frac{q^2-q}{2}+\frac{q^3-q}{3}\\
 &=q^3-q.

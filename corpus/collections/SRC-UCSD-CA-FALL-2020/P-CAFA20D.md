@@ -17,7 +17,7 @@ Find all entire functions $f: \CC \to \CC$ such that $|f(z)| = 2$ everywhere on 
 :::
 
 ::: {.solution}
-Let the zeros of $f$ in $\mathbb D$ be $a_1,\dots,a_m$, counted with
+Let the zeros of $f$ in $\DD$ be $a_1,\dots,a_m$, counted with
 multiplicity. Since $|f|=2$ on the unit circle, there are no boundary zeros.
 Form the finite Blaschke product
 \[

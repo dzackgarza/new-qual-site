@@ -22,7 +22,7 @@ audit:
 (a) Let $G$ be a group of homeomorphisms of $S^{2n}$ such that for all $g \in G$, $gx = x$ if and only if $g = 1$.
 Prove if $G$ has $2$ elements, then one of them is the antipodal map.
 
-(b) If $S^{2n} \to X$ is a covering space, prove $X$ is homeomorphic to $S^{2n}$ or $\mathbb{RP}^{2n}$.
+(b) If $S^{2n} \to X$ is a covering space, prove $X$ is homeomorphic to $S^{2n}$ or $\RP^{2n}$.
 :::
 
 ::: {.solution}
@@ -162,7 +162,7 @@ degree homomorphism properties.
 
 We have two cases for the order of $G$:
 - If $|G| = 1$, then $G = \{1\}$, so $X \cong S^{2n}/\{1\} \cong S^{2n}$.
-- If $|G| = 2$, then $G = \{1, \tau\}$ is a free $\ZZ_2$-action, so $X = S^{2n}/\{1, \tau\} \cong \mathbb{RP}^{2n}$.
+- If $|G| = 2$, then $G = \{1, \tau\}$ is a free $\ZZ_2$-action, so $X = S^{2n}/\{1, \tau\} \cong \RP^{2n}$.
 
 ::: pf-proof
 
@@ -179,7 +179,7 @@ quotient of $S^{2n}$ by a free involution.
 ::: pf-step
 
 Conclusion:
-Any covering space of $S^{2n}$ is homeomorphic to $S^{2n}$ or $\mathbb{RP}^{2n}$. Q.E.D.
+Any covering space of $S^{2n}$ is homeomorphic to $S^{2n}$ or $\RP^{2n}$. Q.E.D.
 
 ::: pf-proof
 

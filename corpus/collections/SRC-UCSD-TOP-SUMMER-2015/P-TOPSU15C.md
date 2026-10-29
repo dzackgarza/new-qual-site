@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that any map $\mathbb{RP}^2 \to T^2$ must be null-homotopic.
+Prove that any map $\RP^2 \to T^2$ must be null-homotopic.
 :::
 
 ::: {.solution}
@@ -23,9 +23,9 @@ Prove that any map $\mathbb{RP}^2 \to T^2$ must be null-homotopic.
 ::: pf
 
 ::: pf-step
-Let $f:\mathbb{RP}^2\to T^2$. The induced homomorphism
+Let $f:\RP^2\to T^2$. The induced homomorphism
 $$
-f_*:\pi_1(\mathbb{RP}^2)\cong\ZZ/2\longrightarrow\pi_1(T^2)\cong\ZZ^2
+f_*:\pi_1(\RP^2)\cong\ZZ/2\longrightarrow\pi_1(T^2)\cong\ZZ^2
 $$
 is trivial.
 
@@ -38,11 +38,11 @@ The torsion-free group $\ZZ^2$ has no nontrivial element of order dividing $2$.
 ::: pf-step
 Therefore $f$ lifts to the universal cover
 $$
-\widetilde f:\mathbb{RP}^2\to\RR^2.
+\widetilde f:\RP^2\to\RR^2.
 $$
 
 ::: pf-proof
-The lifting criterion for the universal covering $\RR^2\to T^2$ says that a lift exists exactly when $f_*(\pi_1(\mathbb{RP}^2))$ is trivial.
+The lifting criterion for the universal covering $\RR^2\to T^2$ says that a lift exists exactly when $f_*(\pi_1(\RP^2))$ is trivial.
 :::
 
 :::

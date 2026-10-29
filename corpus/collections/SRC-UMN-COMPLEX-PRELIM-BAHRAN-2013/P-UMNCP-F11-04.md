@@ -35,7 +35,7 @@ $$
 
 The map
 $$
-\phi:\{z:\operatorname{Re}z>0\}\longrightarrow\mathbb D
+\phi:\{z:\operatorname{Re}z>0\}\longrightarrow\DD
 $$
 is a biholomorphism and
 $$
@@ -109,7 +109,7 @@ f(\phi^{-1}(w)).
 $$
 Then
 $$
-g:\mathbb D\to\mathbb D
+g:\DD\to\DD
 $$
 is holomorphic and
 $$
@@ -151,7 +151,7 @@ $$
 $$
 for every
 $$
-w\in\mathbb D.
+w\in\DD.
 $$
 
 

@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Use the Hurewicz theorem to calculate $\pi_2$ of the space $\mathbb{RP}^2 \vee S^2 \vee S^2$ (that is, the one-point union of a projective plane and two spheres).
+Use the Hurewicz theorem to calculate $\pi_2$ of the space $\RP^2 \vee S^2 \vee S^2$ (that is, the one-point union of a projective plane and two spheres).
 :::
 
 ::: {.solution}
@@ -27,7 +27,7 @@ Use the Hurewicz theorem to calculate $\pi_2$ of the space $\mathbb{RP}^2 \vee S
 
 Let
 $$
-X=\mathbb{RP}^2\vee S^2\vee S^2.
+X=\RP^2\vee S^2\vee S^2.
 $$
 Then $\pi_1(X)\cong\ZZ/2$.
 
@@ -41,7 +41,7 @@ The two sphere summands are simply connected.
 
 ::: pf-step
 
-The universal cover is obtained from $S^2\to\mathbb{RP}^2$ by attaching two copies of each $S^2$ wedge summand, one at each lift of the wedge point. Hence
+The universal cover is obtained from $S^2\to\RP^2$ by attaching two copies of each $S^2$ wedge summand, one at each lift of the wedge point. Hence
 $$
 \widetilde X\simeq\bigvee^5 S^2.
 $$
@@ -88,7 +88,7 @@ For a simply connected space, the degree-$2$ Hurewicz map is an isomorphism.
 
 Therefore
 $$
-\boxed{\pi_2(\mathbb{RP}^2\vee S^2\vee S^2)\cong\ZZ^5.}
+\boxed{\pi_2(\RP^2\vee S^2\vee S^2)\cong\ZZ^5.}
 $$
 
 ::: pf-proof

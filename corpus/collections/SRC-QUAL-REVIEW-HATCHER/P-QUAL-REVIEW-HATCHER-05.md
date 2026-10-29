@@ -18,9 +18,9 @@ audit:
 ::: {.problem}
 Compute the homology and cohomology groups of
 \[
-\mathbb{RP}^n\setminus\{x,y\},
+\RP^n\setminus\{x,y\},
 \]
-where $x$ and $y$ are distinct points of $\mathbb{RP}^n$.
+where $x$ and $y$ are distinct points of $\RP^n$.
 :::
 
 ::: {.solution}
@@ -31,7 +31,7 @@ n\ge2.
 \]
 Let
 \[
-X=\mathbb{RP}^n\setminus\{x,y\}.
+X=\RP^n\setminus\{x,y\}.
 \]
 
 ## Homotopy type
@@ -42,7 +42,7 @@ X=\mathbb{RP}^n\setminus\{x,y\}.
 
 There exists a projective hyperplane
 \[
-H\cong\mathbb{RP}^{n-1}
+H\cong\RP^{n-1}
 \]
 that contains neither \(x\) nor \(y\).
 
@@ -69,7 +69,7 @@ Then the projectivization of \(\ker\lambda\) is a projective hyperplane avoiding
 
 The complement
 \[
-\mathbb{RP}^n-H
+\RP^n-H
 \]
 is an affine \(n\)-space, hence homeomorphic to \(\RR^n\), and contains both punctures.
 
@@ -86,9 +86,9 @@ The complement of a projective hyperplane is the standard affine chart.
 
 With respect to the standard CW decomposition
 \[
-\mathbb{RP}^n
+\RP^n
 =
-\mathbb{RP}^{n-1}\cup e^n,
+\RP^{n-1}\cup e^n,
 \]
 we may therefore regard both \(x\) and \(y\) as points of the open \(n\)-cell.
 
@@ -109,18 +109,18 @@ D^n
 \]
 be the characteristic disk of the top cell, whose boundary is attached to
 \[
-\mathbb{RP}^{n-1}
+\RP^{n-1}
 \]
 by the antipodal quotient map
 \[
-q:S^{n-1}\to\mathbb{RP}^{n-1}.
+q:S^{n-1}\to\RP^{n-1}.
 \]
 Choose two interior points \(u,v\in D^n\) mapping to \(x,y\).
 
 
 ::: pf-proof
 
-This is the standard characteristic-map description of the top cell of \(\mathbb{RP}^n\).
+This is the standard characteristic-map description of the top cell of \(\RP^n\).
 
 :::
 
@@ -151,7 +151,7 @@ Equivalently, \(D^n\setminus\{u,v\}\) is obtained from \(D^n\setminus\{u\}\), wh
 
 ::: {.pf-step #s1-6}
 
-After gluing the outer boundary sphere to \(\mathbb{RP}^{n-1}\) by \(q\), the boundary-sphere part of the deformation retract becomes a mapping cylinder of \(q\), which deformation retracts onto \(\mathbb{RP}^{n-1}\).
+After gluing the outer boundary sphere to \(\RP^{n-1}\) by \(q\), the boundary-sphere part of the deformation retract becomes a mapping cylinder of \(q\), which deformation retracts onto \(\RP^{n-1}\).
 
 
 ::: pf-proof
@@ -160,7 +160,7 @@ Keeping a collar of \(\partial D^n\) produces the mapping cylinder
 \[
 M_q
 =
-S^{n-1}\times[0,1]\cup_q\mathbb{RP}^{n-1}.
+S^{n-1}\times[0,1]\cup_q\RP^{n-1}.
 \]
 Every mapping cylinder deformation retracts onto its target.
 
@@ -175,7 +175,7 @@ The additional \((n-1)\)-sphere from step [](#s1-5){.pf-ref} is attached at one 
 
 ::: pf-proof
 
-In the relative deformation retract from step [](#s1-5){.pf-ref}, the extra sphere meets the outer-boundary part only at the endpoint of the chosen connecting arc. After the outer-boundary part retracts to \(\mathbb{RP}^{n-1}\), that intersection remains one point.
+In the relative deformation retract from step [](#s1-5){.pf-ref}, the extra sphere meets the outer-boundary part only at the endpoint of the chosen connecting arc. After the outer-boundary part retracts to \(\RP^{n-1}\), that intersection remains one point.
 
 :::
 
@@ -187,7 +187,7 @@ Hence
 \[
 \boxed{
 X\simeq
-\mathbb{RP}^{n-1}\vee S^{n-1}}.
+\RP^{n-1}\vee S^{n-1}}.
 \]
 
 
@@ -201,9 +201,9 @@ Combine steps [](#s1-3){.pf-ref} through [](#s1-7){.pf-ref}.
 
 ::: {.pf-step #s1-9}
 
-The integral homology of \(\mathbb{RP}^{m}\) is
+The integral homology of \(\RP^{m}\) is
 \[
-H_k(\mathbb{RP}^{m};\ZZ)
+H_k(\RP^{m};\ZZ)
 \cong
 \begin{cases}
 \ZZ,&k=0,\\
@@ -255,7 +255,7 @@ H_k(X;\ZZ)
 
 ::: pf-proof
 
-In these degrees, only the \(\mathbb{RP}^{n-1}\)-summand contributes. Apply steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref}.
+In these degrees, only the \(\RP^{n-1}\)-summand contributes. Apply steps [](#s1-8){.pf-ref} through [](#s1-10){.pf-ref}.
 
 :::
 
@@ -274,7 +274,7 @@ H_{n-1}(X;\ZZ)
 
 ::: pf-proof
 
-The top homology of \(\mathbb{RP}^{n-1}\) is \(\ZZ\) when \(n-1\) is odd, and the \(S^{n-1}\)-summand contributes another \(\ZZ\).
+The top homology of \(\RP^{n-1}\) is \(\ZZ\) when \(n-1\) is odd, and the \(S^{n-1}\)-summand contributes another \(\ZZ\).
 
 :::
 
@@ -293,7 +293,7 @@ H_{n-1}(X;\ZZ)
 
 ::: pf-proof
 
-The top integral homology of the even-dimensional nonorientable manifold \(\mathbb{RP}^{n-1}\) is \(0\), while the sphere summand contributes \(\ZZ\).
+The top integral homology of the even-dimensional nonorientable manifold \(\RP^{n-1}\) is \(0\), while the sphere summand contributes \(\ZZ\).
 
 :::
 
@@ -479,7 +479,7 @@ The degree-zero statement follows from connectedness. For \(k\ge n\), both \(H_k
 
 Since
 \[
-\mathbb{RP}^1\cong S^1,
+\RP^1\cong S^1,
 \]
 removing two distinct points gives two open intervals.
 

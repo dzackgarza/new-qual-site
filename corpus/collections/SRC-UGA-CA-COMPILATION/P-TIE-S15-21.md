@@ -25,7 +25,7 @@ Find a conformal map
 
 3. from the intersection of the disk $| z + i | < { \sqrt { 2 } }$ with H to D.
 
-4. from $\mathbb { D } \backslash [ a , 1 )$ to ${ \mathbb D } \backslash [ 0 , 1 ) ~ ( 0 < a < 1 )$ . Short solution possible using Blaschke factor
+4. from $\DD \backslash [ a , 1 )$ to ${ \DD } \backslash [ 0 , 1 ) ~ ( 0 < a < 1 )$ . Short solution possible using Blaschke factor
 
 5. from $\{ z : | z | < 1 , \mathrm { R e } ( z ) > 0 \} \backslash ( 0 , 1 / 2 ]$ to H.
 :::

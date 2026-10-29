@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $u$ be a nonnegative continuous function on $\mathbb D\setminus\{0\}$ that is subharmonic there.
-Suppose $u|_{\partial\mathbb D}=0$ and
+Let $u$ be a nonnegative continuous function on $\DD\setminus\{0\}$ that is subharmonic there.
+Suppose $u|_{\partial\DD}=0$ and
 \[
 \lim_{r\to0^+}\frac{1}{r^2\log(1/r)}\int_{0<|z|<r}u(z)\,d\lambda(z)=0,
 \]
@@ -195,7 +195,7 @@ Divide the estimate in step [](#s1-5){.pf-ref} by $\log(1/r)$ and apply step [](
 
 ::: {.pf-step #s1-8}
 
-Therefore $u(z)=0$ for every $z\in\mathbb D\setminus\{0\}$.
+Therefore $u(z)=0$ for every $z\in\DD\setminus\{0\}$.
 
 
 ::: pf-proof

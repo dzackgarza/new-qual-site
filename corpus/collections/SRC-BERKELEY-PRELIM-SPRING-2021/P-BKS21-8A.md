@@ -89,7 +89,7 @@ is irreducible over $\ZZ$.
 
 The polynomial is primitive. Modulo $2$ it becomes
 $$
-\overline p(t)=t^3+t^2+1\in\mathbb F_2[t].
+\overline p(t)=t^3+t^2+1\in\FF_2[t].
 $$
 A cubic over a field is reducible if and only if it has a root. But
 $$
@@ -97,7 +97,7 @@ $$
 \qquad
 \overline p(1)=1+1+1=1
 $$
-in $\mathbb F_2$, so $\overline p$ has no root and is irreducible. Gauss's lemma therefore implies that $p$ is irreducible over $\ZZ$.
+in $\FF_2$, so $\overline p$ has no root and is irreducible. Gauss's lemma therefore implies that $p$ is irreducible over $\ZZ$.
 
 :::
 

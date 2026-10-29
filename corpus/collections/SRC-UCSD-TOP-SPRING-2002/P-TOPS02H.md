@@ -77,7 +77,7 @@ Therefore $H_k(M;\ZZ)=0$ for $0<k<n$.
 
 ::: pf-proof
 
-The homology groups of a compact manifold are finitely generated. If some $H_k(M;\ZZ)$ were nonzero in an intermediate degree, then either it had a free summand, detected after tensoring with $\QQ$, or nonzero $p$-torsion, detected with $\mathbb F_p$ coefficients via the universal coefficient theorem. Both contradict step [](#s3){.pf-ref}.
+The homology groups of a compact manifold are finitely generated. If some $H_k(M;\ZZ)$ were nonzero in an intermediate degree, then either it had a free summand, detected after tensoring with $\QQ$, or nonzero $p$-torsion, detected with $\FF_p$ coefficients via the universal coefficient theorem. Both contradict step [](#s3){.pf-ref}.
 
 :::
 

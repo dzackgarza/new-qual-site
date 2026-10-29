@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.problem}
-Since there is a fiber bundle $S^2 \to \mathbb{CP}^5 \to \mathbb{HP}^2$ by Exercise 35 in §4.2, one might ask whether there is an analogous bundle $S^4 \to \mathbb{HP}^5 \to \mathbb{OP}^2$.
+Since there is a fiber bundle $S^2 \to \CP^5 \to \mathbb{HP}^2$ by Exercise 35 in §4.2, one might ask whether there is an analogous bundle $S^4 \to \mathbb{HP}^5 \to \mathbb{OP}^2$.
 Use Steenrod powers for the prime 3 to show that such a bundle cannot exist.
 :::
 
@@ -70,7 +70,7 @@ For the generator \(x\in H^4(\mathbb{HP}^\infty;\ZZ_3)\), the splitting-principl
 \[
 P^1x=x^2.
 \]
-Indeed, after restriction to \(\mathbb{CP}^\infty\) one has \(x=-u^2\), and
+Indeed, after restriction to \(\CP^\infty\) one has \(x=-u^2\), and
 \[
 P^1(-u^2)=-2u^4=u^4=x^2\quad\text{in }\ZZ_3.
 \]

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-F2ZJO265HN
 kind: problem
-title: Generators of $\mathbb F_{p^6}$ inside $\mathbb F_{p^n}$
+title: Generators of $\FF_{p^6}$ inside $\FF_{p^n}$
 classification:
   areas:
   - algebra
@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-For each prime number $p$ and each positive integer $n$, how many elements $\alpha$ are there in $\mathbb F_{p^n}$ such that $F_p(\alpha)=F_{p^6}$?
+For each prime number $p$ and each positive integer $n$, how many elements $\alpha$ are there in $\FF_{p^n}$ such that $F_p(\alpha)=F_{p^6}$?
 :::
 
 ::: {.solution}
@@ -34,15 +34,15 @@ If $6\nmid n$, there are no such elements.
 
 ::: pf-proof
 
-Suppose $\alpha\in\mathbb F_{p^n}$ satisfies
+Suppose $\alpha\in\FF_{p^n}$ satisfies
 \[
-\mathbb F_p(\alpha)=\mathbb F_{p^6}.
+\FF_p(\alpha)=\FF_{p^6}.
 \]
 Then
 \[
-[\mathbb F_p(\alpha):\mathbb F_p]=6.
+[\FF_p(\alpha):\FF_p]=6.
 \]
-Since $\mathbb F_p(\alpha)$ is a subfield of $\mathbb F_{p^n}$, the tower law gives
+Since $\FF_p(\alpha)$ is a subfield of $\FF_{p^n}$, the tower law gives
 \[
 6\mid n.
 \]
@@ -54,11 +54,11 @@ Therefore no such $\alpha$ exists when $6\nmid n$.
 
 ::: {.pf-step #s2}
 
-Assume $6\mid n$. Then $\mathbb F_{p^6}$ is the unique subfield of $\mathbb F_{p^n}$ having $p^6$ elements.
+Assume $6\mid n$. Then $\FF_{p^6}$ is the unique subfield of $\FF_{p^n}$ having $p^6$ elements.
 
 ::: pf-proof
 
-A finite field $\mathbb F_{p^n}$ has a subfield of order $p^d$ exactly when $d\mid n$, and that subfield is unique. Since $6\mid n$, the stated subfield exists and is unique.
+A finite field $\FF_{p^n}$ has a subfield of order $p^d$ exactly when $d\mid n$, and that subfield is unique. Since $6\mid n$, the stated subfield exists and is unique.
 
 :::
 
@@ -66,19 +66,19 @@ A finite field $\mathbb F_{p^n}$ has a subfield of order $p^d$ exactly when $d\m
 
 ::: {.pf-step #s3}
 
-Under the assumption $6\mid n$, the desired elements are exactly the elements of $\mathbb F_{p^6}$ having degree $6$ over $\mathbb F_p$.
+Under the assumption $6\mid n$, the desired elements are exactly the elements of $\FF_{p^6}$ having degree $6$ over $\FF_p$.
 
 ::: pf-proof
 
-For $\alpha\in\mathbb F_{p^6}$,
+For $\alpha\in\FF_{p^6}$,
 \[
-\mathbb F_p(\alpha)=\mathbb F_{p^6}
+\FF_p(\alpha)=\FF_{p^6}
 \]
 if and only if
 \[
-[\mathbb F_p(\alpha):\mathbb F_p]=6.
+[\FF_p(\alpha):\FF_p]=6.
 \]
-By step [](#s2){.pf-ref}, every element satisfying the original condition lies in this distinguished copy of $\mathbb F_{p^6}$ inside $\mathbb F_{p^n}$.
+By step [](#s2){.pf-ref}, every element satisfying the original condition lies in this distinguished copy of $\FF_{p^6}$ inside $\FF_{p^n}$.
 
 :::
 
@@ -86,7 +86,7 @@ By step [](#s2){.pf-ref}, every element satisfying the original condition lies i
 
 ::: {.pf-step #s4}
 
-The number of elements of degree exactly $2$ over $\mathbb F_p$ is
+The number of elements of degree exactly $2$ over $\FF_p$ is
 \[
 p^2-p,
 \]
@@ -97,9 +97,9 @@ p^3-p.
 
 ::: pf-proof
 
-The only proper divisor of $2$ is $1$, so the elements of $\mathbb F_{p^2}$ having degree less than $2$ are exactly the $p$ elements of $\mathbb F_p$. Thus the degree-$2$ count is $p^2-p$.
+The only proper divisor of $2$ is $1$, so the elements of $\FF_{p^2}$ having degree less than $2$ are exactly the $p$ elements of $\FF_p$. Thus the degree-$2$ count is $p^2-p$.
 
-Likewise, the only proper divisor of $3$ is $1$, so the elements of $\mathbb F_{p^3}$ having degree less than $3$ are exactly the elements of $\mathbb F_p$. Thus the degree-$3$ count is $p^3-p$.
+Likewise, the only proper divisor of $3$ is $1$, so the elements of $\FF_{p^3}$ having degree less than $3$ are exactly the elements of $\FF_p$. Thus the degree-$3$ count is $p^3-p$.
 
 :::
 
@@ -107,18 +107,18 @@ Likewise, the only proper divisor of $3$ is $1$, so the elements of $\mathbb F_{
 
 ::: {.pf-step #s5}
 
-The number of elements of degree exactly $6$ over $\mathbb F_p$ is
+The number of elements of degree exactly $6$ over $\FF_p$ is
 \[
 p^6-p^3-p^2+p.
 \]
 
 ::: pf-proof
 
-For any $\alpha\in\mathbb F_{p^6}$, the degree
+For any $\alpha\in\FF_{p^6}$, the degree
 \[
-d=[\mathbb F_p(\alpha):\mathbb F_p]
+d=[\FF_p(\alpha):\FF_p]
 \]
-divides $6$, so $d\in\{1,2,3,6\}$. These four degree classes are disjoint and exhaust $\mathbb F_{p^6}$. The degree-$1$ class has $p$ elements, while step [](#s4){.pf-ref} gives the degree-$2$ and degree-$3$ counts. Therefore, if $N_6$ denotes the degree-$6$ count,
+divides $6$, so $d\in\{1,2,3,6\}$. These four degree classes are disjoint and exhaust $\FF_{p^6}$. The degree-$1$ class has $p$ elements, while step [](#s4){.pf-ref} gives the degree-$2$ and degree-$3$ counts. Therefore, if $N_6$ denotes the degree-$6$ count,
 \[
 p^6=p+(p^2-p)+(p^3-p)+N_6.
 \]

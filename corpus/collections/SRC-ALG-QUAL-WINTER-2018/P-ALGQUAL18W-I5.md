@@ -25,7 +25,7 @@ audit:
 
 ::: {.problem}
 True or false?
-Justify your answer with a proof or counterexample: the cyclotomic polynomial $\Phi_{255}(x)$, reduced modulo $2$, is irreducible in $\mathbb F_2[x]$.
+Justify your answer with a proof or counterexample: the cyclotomic polynomial $\Phi_{255}(x)$, reduced modulo $2$, is irreducible in $\FF_2[x]$.
 :::
 
 ::: {.solution}

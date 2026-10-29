@@ -21,7 +21,7 @@ Find a bijective conformal map that takes a bounded region of $\CC$ to an unboun
 
 Let
 \[
-\mathbb D=\{z:|z|<1\},
+\DD=\{z:|z|<1\},
 \qquad
 H=\{w:\operatorname{Re}w>0\},
 \]
@@ -34,7 +34,7 @@ F(z)=\frac{1+z}{1-z}.
 
 ::: {.pf-step #s1-1}
 
-The map \(F\) sends \(\mathbb D\) into \(H\).
+The map \(F\) sends \(\DD\) into \(H\).
 
 
 ::: pf-proof
@@ -59,7 +59,7 @@ The inverse formula
 \[
 F^{-1}(w)=\frac{w-1}{w+1}
 \]
-maps \(H\) into \(\mathbb D\).
+maps \(H\) into \(\DD\).
 
 
 ::: pf-proof
@@ -84,16 +84,16 @@ The map
 \[
 \boxed{F(z)=\frac{1+z}{1-z}}
 \]
-is a bijective conformal map from the bounded region \(\mathbb D\) onto the unbounded region \(H\).
+is a bijective conformal map from the bounded region \(\DD\) onto the unbounded region \(H\).
 
 
 ::: pf-proof
 
-Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that the displayed formulas for \(F\) and \(F^{-1}\) map between \(\mathbb D\) and \(H\), and direct substitution shows they are mutual inverses. Moreover,
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} show that the displayed formulas for \(F\) and \(F^{-1}\) map between \(\DD\) and \(H\), and direct substitution shows they are mutual inverses. Moreover,
 \[
 F'(z)=\frac{2}{(1-z)^2}\ne0
 \]
-on \(\mathbb D\), so \(F\) is conformal. The unit disc is bounded, whereas the right half-plane is unbounded.
+on \(\DD\), so \(F\) is conformal. The unit disc is bounded, whereas the right half-plane is unbounded.
 
 :::
 

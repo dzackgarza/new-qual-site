@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Compute the first, second and third homotopy groups of $X = \mathbb{RP}^2 \times S^1 \times S^1$.
+Compute the first, second and third homotopy groups of $X = \RP^2 \times S^1 \times S^1$.
 :::
 
 ::: {.solution}
@@ -29,7 +29,7 @@ $$
 ::: pf-proof
 Fundamental groups commute with finite products, and
 $$
-\pi_1(\mathbb{RP}^2)=\ZZ/2,
+\pi_1(\RP^2)=\ZZ/2,
 \qquad
 \pi_1(S^1)=\ZZ.
 $$
@@ -40,7 +40,7 @@ $$
 ::: {.pf-step #pi-n-x-equals-pi-n-rp2}
 For every $n\ge2$,
 $$
-\pi_n(X)\cong\pi_n(\mathbb{RP}^2).
+\pi_n(X)\cong\pi_n(\RP^2).
 $$
 
 ::: pf-proof
@@ -50,7 +50,7 @@ Higher homotopy groups commute with products, while $\pi_n(S^1)=0$ for $n\ge2$.
 :::
 
 ::: {.pf-step #universal-cover-iso-degree2}
-The universal cover $S^2\to\mathbb{RP}^2$ induces isomorphisms on homotopy groups in degrees at least $2$.
+The universal cover $S^2\to\RP^2$ induces isomorphisms on homotopy groups in degrees at least $2$.
 
 ::: pf-proof
 Every covering map induces isomorphisms on $\pi_n$ for $n\ge2$.

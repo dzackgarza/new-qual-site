@@ -60,7 +60,7 @@ This is the homology of the cellular complex $0\to\ZZ\xrightarrow p\ZZ\to\ZZ\to0
 
 ::: {.pf-step #s3}
 
-If $p$ is odd, then $M(p)$ has trivial reduced homology with $\mathbb F_2$ coefficients.
+If $p$ is odd, then $M(p)$ has trivial reduced homology with $\FF_2$ coefficients.
 
 ::: pf-proof
 
@@ -76,7 +76,7 @@ Hence for odd $p$, $M(p)$ cannot be homotopy equivalent to a compact connected b
 
 ::: pf-proof
 
-Every closed connected $d$-manifold has $H_d(-;\mathbb F_2)\cong\mathbb F_2$ by mod-$2$ Poincaré duality, whereas step [](#s3){.pf-ref} gives zero reduced mod-$2$ homology in every positive degree.
+Every closed connected $d$-manifold has $H_d(-;\FF_2)\cong\FF_2$ by mod-$2$ Poincaré duality, whereas step [](#s3){.pf-ref} gives zero reduced mod-$2$ homology in every positive degree.
 
 :::
 
@@ -84,11 +84,11 @@ Every closed connected $d$-manifold has $H_d(-;\mathbb F_2)\cong\mathbb F_2$ by 
 
 ::: {.pf-step #s5}
 
-For $p=2$, $M(2)$ is homeomorphic to $\mathbb{RP}^2$.
+For $p=2$, $M(2)$ is homeomorphic to $\RP^2$.
 
 ::: pf-proof
 
-The standard disk model of $\mathbb{RP}^2$ identifies antipodal points of the boundary circle, equivalently attaches a $2$-cell to $S^1$ by the degree-$2$ map. This is precisely $M(2)$.
+The standard disk model of $\RP^2$ identifies antipodal points of the boundary circle, equivalently attaches a $2$-cell to $S^1$ by the degree-$2$ map. This is precisely $M(2)$.
 
 :::
 

@@ -23,9 +23,9 @@ Calculate $w ( \mathbb { R P } ^ { n } ) , c ( \mathbb { C P } ^ { n } ) , p ( \
 
 These denote the total characteristic classes of the tangent bundles. Let
 \[
-a\in H^1(\mathbb{RP}^n;\mathbb F_2),
+a\in H^1(\RP^n;\FF_2),
 \qquad
-x\in H^2(\mathbb{CP}^n;\ZZ)
+x\in H^2(\CP^n;\ZZ)
 \]
 be the standard generators, with $x=c_1(\gamma^*)$ for the dual tautological complex line bundle.
 
@@ -35,7 +35,7 @@ be the standard generators, with $x=c_1(\gamma^*)$ for the dual tautological com
 
 For real projective space there is a stable bundle isomorphism
 \[
-T\mathbb{RP}^n\oplus\varepsilon^1
+T\RP^n\oplus\varepsilon^1
 \cong(n+1)\gamma^1,
 \]
 where $\gamma^1$ is the tautological real line bundle.
@@ -45,7 +45,7 @@ where $\gamma^1$ is the tautological real line bundle.
 
 At a line $\ell\subset\RR^{n+1}$,
 \[
-T_{\ell}\mathbb{RP}^n\cong\operatorname{Hom}(\ell,\ell^\perp).
+T_{\ell}\RP^n\cong\operatorname{Hom}(\ell,\ell^\perp).
 \]
 Since $\gamma^1$ is a real line bundle, tensoring the decomposition
 \[
@@ -53,7 +53,7 @@ Since $\gamma^1$ is a real line bundle, tensoring the decomposition
 \]
 by $\gamma^1$ gives
 \[
-\varepsilon^1\oplus T\mathbb{RP}^n
+\varepsilon^1\oplus T\RP^n
 \cong(n+1)\gamma^1,
 \]
 because $\gamma^1\otimes\gamma^1\cong\varepsilon^1$.
@@ -70,7 +70,7 @@ w(\gamma^1)=1+a,
 \]
 the Whitney product formula gives
 \[
-\boxed{w(T\mathbb{RP}^n)=(1+a)^{n+1}.}
+\boxed{w(T\RP^n)=(1+a)^{n+1}.}
 \]
 
 
@@ -78,12 +78,12 @@ the Whitney product formula gives
 
 Apply total Stiefel--Whitney classes to step [](#s1-1){.pf-ref}. The trivial line has total class $1$, and Whitney multiplicativity gives
 \[
-w(T\mathbb{RP}^n)=(1+a)^{n+1}
+w(T\RP^n)=(1+a)^{n+1}
 \]
 in
 \[
-H^*(\mathbb{RP}^n;\mathbb F_2)
-=\mathbb F_2[a]/(a^{n+1}).
+H^*(\RP^n;\FF_2)
+=\FF_2[a]/(a^{n+1}).
 \]
 
 :::
@@ -94,7 +94,7 @@ H^*(\mathbb{RP}^n;\mathbb F_2)
 
 For complex projective space the Euler sequence gives a stable complex bundle isomorphism
 \[
-T\mathbb{CP}^n\oplus\varepsilon^1_{\CC}
+T\CP^n\oplus\varepsilon^1_{\CC}
 \cong(n+1)\gamma^*.
 \]
 
@@ -105,7 +105,7 @@ The holomorphic Euler sequence is
 \[
 0\to\mathcal O
 \to\mathcal O(1)^{\oplus(n+1)}
-\to T\mathbb{CP}^n\to0.
+\to T\CP^n\to0.
 \]
 As complex topological bundles, $\mathcal O(1)=\gamma^*$, and a short exact sequence splits after choosing a Hermitian metric, yielding the stable isomorphism.
 
@@ -117,7 +117,7 @@ As complex topological bundles, $\mathcal O(1)=\gamma^*$, and a short exact sequ
 
 Therefore
 \[
-\boxed{c(T\mathbb{CP}^n)=(1+x)^{n+1}.}
+\boxed{c(T\CP^n)=(1+x)^{n+1}.}
 \]
 
 
@@ -125,12 +125,12 @@ Therefore
 
 The total Chern class of $\gamma^*$ is $1+x$. Apply Whitney multiplicativity to step [](#s1-3){.pf-ref} and use $c(\varepsilon^1_{\CC})=1$. The formula is interpreted in
 \[
-H^*(\mathbb{CP}^n;\ZZ)
+H^*(\CP^n;\ZZ)
 =\ZZ[x]/(x^{n+1}).
 \]
 Thus explicitly
 \[
-c_i(T\mathbb{CP}^n)=\binom{n+1}{i}x^i.
+c_i(T\CP^n)=\binom{n+1}{i}x^i.
 \]
 
 :::
@@ -170,7 +170,7 @@ If the Chern roots of $E$ are $y_j$, those of $\overline E$ are $-y_j$, and the 
 
 Applying step [](#s1-5){.pf-ref} to the stable splitting in step [](#s1-3){.pf-ref} gives
 \[
-\boxed{p(T\mathbb{CP}^n)=(1+x^2)^{n+1}.}
+\boxed{p(T\CP^n)=(1+x^2)^{n+1}.}
 \]
 
 
@@ -182,7 +182,7 @@ Pontryagin classes are stable, so the trivial complex line in step [](#s1-3){.pf
 \]
 Whitney multiplicativity over the $(n+1)$ copies gives the displayed formula. Explicitly,
 \[
-p_i(T\mathbb{CP}^n)=\binom{n+1}{i}x^{2i}.
+p_i(T\CP^n)=\binom{n+1}{i}x^{2i}.
 \]
 
 :::
@@ -193,14 +193,14 @@ p_i(T\mathbb{CP}^n)=\binom{n+1}{i}x^{2i}.
 
 Hence
 \[
-\boxed{w(\mathbb{RP}^n)=(1+a)^{n+1},}
+\boxed{w(\RP^n)=(1+a)^{n+1},}
 \]
 \[
-\boxed{c(\mathbb{CP}^n)=(1+x)^{n+1},}
+\boxed{c(\CP^n)=(1+x)^{n+1},}
 \]
 and
 \[
-\boxed{p(\mathbb{CP}^n)=(1+x^2)^{n+1}.}
+\boxed{p(\CP^n)=(1+x^2)^{n+1}.}
 \]
 
 

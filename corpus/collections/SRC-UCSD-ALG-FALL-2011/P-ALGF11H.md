@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF11H
 kind: problem
-title: Jordan form of a companion-like $3\times 3$ matrix over $\CC$ and $\overline{\mathbb{F}_3}$
+title: Jordan form of a companion-like $3\times 3$ matrix over $\CC$ and $\overline{\FF_3}$
 classification:
   areas:
   - algebra
@@ -129,7 +129,7 @@ up to reordering of the diagonal entries.
 :::
 
 ::: {.pf-step #char-and-min-poly-f3}
-Over \(\overline{\mathbb F}_3\), the characteristic and minimal polynomials are
+Over \(\overline{\FF}_3\), the characteristic and minimal polynomials are
 \[
 (t-1)^3.
 \]
@@ -144,7 +144,7 @@ because
 (t-1)^3=t^3-3t^2+3t-1=t^3-1.
 \]
 The cyclic-vector argument in step [](#char-and-min-poly){.pf-ref} works over every field, so the minimal polynomial still has degree \(3\).
-Hence over \(\overline{\mathbb F}_3\),
+Hence over \(\overline{\FF}_3\),
 \[
 m_A(t)=(t-1)^3.
 \]
@@ -153,7 +153,7 @@ m_A(t)=(t-1)^3.
 :::
 
 ::: pf-step
-Over \(\overline{\mathbb F}_3\), the Jordan canonical form is one size-3 block
+Over \(\overline{\FF}_3\), the Jordan canonical form is one size-3 block
 \[
 J_3(1)=
 \begin{pmatrix}

@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-How many connected covering spaces does $\mathbb{RP}^3 \times \mathbb{RP}^7$ have?
+How many connected covering spaces does $\RP^3 \times \RP^7$ have?
 Can you identify any of them?
 :::
 
@@ -26,7 +26,7 @@ Can you identify any of them?
 
 We have
 $$
-\pi_1(\mathbb{RP}^3\times\mathbb{RP}^7)\cong(\ZZ/2)^2.
+\pi_1(\RP^3\times\RP^7)\cong(\ZZ/2)^2.
 $$
 
 ::: pf-proof
@@ -43,7 +43,7 @@ Since the group is abelian, equivalence classes of connected covers correspond e
 
 ::: pf-proof
 
-The subgroups are the trivial subgroup, the three one-dimensional subspaces of $(\mathbb F_2)^2$, and the whole group. Conjugacy does nothing because the group is abelian.
+The subgroups are the trivial subgroup, the three one-dimensional subspaces of $(\FF_2)^2$, and the whole group. Conjugacy does nothing because the group is abelian.
 
 :::
 
@@ -69,7 +69,7 @@ Apply the connected-cover/subgroup correspondence to step [](#s2){.pf-ref}.
 
 They may be identified as the base itself; the universal cover $S^3\times S^7$; the two product double covers
 $$
-S^3\times\mathbb{RP}^7,\qquad \mathbb{RP}^3\times S^7;
+S^3\times\RP^7,\qquad \RP^3\times S^7;
 $$
 and the double cover
 $$

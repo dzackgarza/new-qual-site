@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 Let $X$ be a connected CW complex with 1-skeleton $X^1$.
 Show that $\pi_2(X, X^1) \approx \pi_2(X) \times K$ where $K$ is the kernel of $\pi_1(X^1) \to \pi_1(X)$, a free group.
-Show also that the map $\pi_2'(X) \to \pi_2'(X, X^1)$ need not be injective by considering the case $X = \mathbb{RP}^2$ with its standard CW structure.
+Show also that the map $\pi_2'(X) \to \pi_2'(X, X^1)$ need not be injective by considering the case $X = \RP^2$ with its standard CW structure.
 :::
 
 ::: {.solution}
@@ -55,7 +55,7 @@ By Exercise 27, the image of \(\pi_2(X)\) in \(\pi_2(X,X^1)\) is central. Hence 
 \boxed{\pi_2(X,X^1)\cong\pi_2(X)\times K.}
 \]
 
-For the second assertion take \(X=\mathbb{RP}^2\) with its standard CW structure and \(X^1=S^1\). The action of
+For the second assertion take \(X=\RP^2\) with its standard CW structure and \(X^1=S^1\). The action of
 \[
 \pi_1(X)\cong\ZZ/2
 \]

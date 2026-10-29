@@ -139,7 +139,7 @@ for a unique $u\in(\ZZ/q\ZZ)^\times$, so
 \[
 \operatorname{Aut}(C_q)\cong(\ZZ/q\ZZ)^\times.
 \]
-The multiplicative group of the finite field $\mathbb F_q$ is cyclic of order $q-1$.
+The multiplicative group of the finite field $\FF_q$ is cyclic of order $q-1$.
 Thus $\operatorname{Aut}(C_q)$ is cyclic of order $q-1$.
 Because $p\mid q-1$, a cyclic group of order $q-1$ has a unique subgroup of order $p$.
 

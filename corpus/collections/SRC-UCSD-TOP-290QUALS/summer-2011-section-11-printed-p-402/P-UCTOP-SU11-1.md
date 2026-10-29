@@ -14,7 +14,7 @@ review: draft
 
 ::: {.problem}
 Let $M$ be a simply connected $n$-dimensional CW complex.
-Show that any map from $M$ to $\mathbb{RP}^{n+1}$ is homotopic to the constant map.
+Show that any map from $M$ to $\RP^{n+1}$ is homotopic to the constant map.
 :::
 
 ::: {.solution}
@@ -22,10 +22,10 @@ Show that any map from $M$ to $\mathbb{RP}^{n+1}$ is homotopic to the constant m
 ::: pf
 
 ::: pf-step
-Any map $f:M\to\mathbb{RP}^{n+1}$ lifts to a map $\widetilde f:M\to S^{n+1}$.
+Any map $f:M\to\RP^{n+1}$ lifts to a map $\widetilde f:M\to S^{n+1}$.
 
 ::: pf-proof
-The universal covering map $p:S^{n+1}\to\mathbb{RP}^{n+1}$ has fundamental group subgroup $p_*\pi_1(S^{n+1})=0$. Since $M$ is simply connected, $f_*\pi_1(M)=0$, so the covering-space lifting criterion gives a lift $p\circ\widetilde f=f$.
+The universal covering map $p:S^{n+1}\to\RP^{n+1}$ has fundamental group subgroup $p_*\pi_1(S^{n+1})=0$. Since $M$ is simply connected, $f_*\pi_1(M)=0$, so the covering-space lifting criterion gives a lift $p\circ\widetilde f=f$.
 :::
 
 :::

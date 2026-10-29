@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK83SU-11
 kind: problem
-title: Jordan form over $\mathbb F_3$ of the matrix with diagonal $2$ and off-diagonal $1$
+title: Jordan form over $\FF_3$ of the matrix with diagonal $2$ and off-diagonal $1$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Over $\mathbb F_3=\ZZ/3\ZZ$, find the eigenvalues, eigenvectors, and Jordan canonical form of
+Over $\FF_3=\ZZ/3\ZZ$, find the eigenvalues, eigenvectors, and Jordan canonical form of
 \[
 A=
 \begin{pmatrix}

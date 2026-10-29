@@ -19,7 +19,7 @@ audit:
 ::: {.exercise}
 3.* The Schwarz-Pick lemma (see Exercise 13) is the infinitesimal version of an important observation in complex analysis and geometry.
 
-For complex numbers $w \in \CC$ and $z \in \mathbb{D}$ we define the hyperbolic length of $w$ at $z$ by
+For complex numbers $w \in \CC$ and $z \in \DD$ we define the hyperbolic length of $w$ at $z$ by
 
 $$
 \| w \| _ {z} = \frac{| w |}{1 - | z | ^ {2}},
@@ -42,11 +42,11 @@ $$
 d (z_1, z_2) = \inf_ {\gamma} \int_ {0} ^ {1} \| \gamma' (t) \| _ {\gamma (t)} d t,
 $$
 
-where the infimum is taken over all smooth curves $\gamma : [0, 1] \to \mathbb{D}$ joining $z_1$ and $z_2$.
-Use the Schwarz-Pick lemma to prove that if $f : \mathbb{D} \to \mathbb{D}$ is holomorphic, then
+where the infimum is taken over all smooth curves $\gamma : [0, 1] \to \DD$ joining $z_1$ and $z_2$.
+Use the Schwarz-Pick lemma to prove that if $f : \DD \to \DD$ is holomorphic, then
 
 $$
-d (f (z_1), f (z_2)) \leq d (z_1, z_2) \quad \text{for any } z_1, z_2 \in \mathbb{D}.
+d (f (z_1), f (z_2)) \leq d (z_1, z_2) \quad \text{for any } z_1, z_2 \in \DD.
 $$
 
 In other words, holomorphic functions are distance-decreasing in the hyperbolic metric.
@@ -54,13 +54,13 @@ In other words, holomorphic functions are distance-decreasing in the hyperbolic 
 (b) Prove that automorphisms of the unit disc preserve the hyperbolic distance, namely
 
 $$
-d (\varphi (z_1), \varphi (z_2)) = d (z_1, z_2), \quad \text{for any } z_1, z_2 \in \mathbb{D}
+d (\varphi (z_1), \varphi (z_2)) = d (z_1, z_2), \quad \text{for any } z_1, z_2 \in \DD
 $$
 
 and any automorphism $\varphi$.
-Conversely, if $\varphi : \mathbb{D} \to \mathbb{D}$ preserves the hyperbolic distance, then either $\varphi$ or $\overline{\varphi}$ is an automorphism of $\mathbb{D}$.
+Conversely, if $\varphi : \DD \to \DD$ preserves the hyperbolic distance, then either $\varphi$ or $\overline{\varphi}$ is an automorphism of $\DD$.
 
-(c) Given two points $z_1, z_2 \in \mathbb{D}$, show that there exists an automorphism $\varphi$ such that $\varphi(z_1) = 0$ and $\varphi(z_2) = s$ for some $s$ on the segment $[0, 1)$ on the real line.
+(c) Given two points $z_1, z_2 \in \DD$, show that there exists an automorphism $\varphi$ such that $\varphi(z_1) = 0$ and $\varphi(z_2) = s$ for some $s$ on the segment $[0, 1)$ on the real line.
 
 (d) Prove that the hyperbolic distance between $0$ and $s \in [0, 1)$ is
 
@@ -77,7 +77,7 @@ The Schwarz--Pick lemma says
 \frac{|f'(z)|}{1-|f(z)|^2}\le \frac1{1-|z|^2}.
 \tag{1}
 \]
-Hence for every smooth curve $\gamma$ in $\mathbb D$,
+Hence for every smooth curve $\gamma$ in $\DD$,
 \[
 \frac{|(f\circ\gamma)'(t)|}{1-|f(\gamma(t))|^2}
 \le
@@ -139,7 +139,7 @@ we obtain
 \]
 This proves (e).
 
-It remains to prove the converse in (b). Let $T:\mathbb D\to\mathbb D$ preserve hyperbolic distance. Formula (4) shows that it also preserves $\delta$. Choose a disk automorphism $A$ with $A(T(0))=0$ and set $S=A\circ T$. Then $S$ preserves $\delta$ and fixes $0$. Since
+It remains to prove the converse in (b). Let $T:\DD\to\DD$ preserve hyperbolic distance. Formula (4) shows that it also preserves $\delta$. Choose a disk automorphism $A$ with $A(T(0))=0$ and set $S=A\circ T$. Then $S$ preserves $\delta$ and fixes $0$. Since
 \[
 \delta(0,z)=|z|,
 \]
@@ -156,5 +156,5 @@ S(z)=e^{i\theta}z
 \qquad\text{or}\qquad
 S(z)=e^{i\theta}\overline z.
 \]
-Consequently $T=A^{-1}\circ S$ is either a disk automorphism or the conjugate of one. Equivalently, either $T$ or $\overline T$ is an automorphism of $\mathbb D$.
+Consequently $T=A^{-1}\circ S$ is either a disk automorphism or the conjugate of one. Equivalently, either $T$ or $\overline T$ is an automorphism of $\DD$.
 :::

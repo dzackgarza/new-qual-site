@@ -29,7 +29,7 @@ Two standard pairs answer the two parenthetical versions separately.
 
 The spaces
 \[
-X=\mathbb{CP}^2,
+X=\CP^2,
 \qquad
 Y=S^2\vee S^4
 \]
@@ -38,9 +38,9 @@ have isomorphic integral homology groups in every degree.
 
 ::: pf-proof
 
-The standard CW structure on $\mathbb{CP}^2$ has one cell in dimensions $0,2,4$ and no others; its cellular boundary maps vanish, so
+The standard CW structure on $\CP^2$ has one cell in dimensions $0,2,4$ and no others; its cellular boundary maps vanish, so
 \[
-H_k(\mathbb{CP}^2;\ZZ)\cong
+H_k(\CP^2;\ZZ)\cong
 \begin{cases}
 \ZZ,&k=0,2,4,\\
 0,&\text{otherwise}.
@@ -61,15 +61,15 @@ which gives exactly the same groups.
 
 Nevertheless,
 \[
-\mathbb{CP}^2\not\simeq S^2\vee S^4.
+\CP^2\not\simeq S^2\vee S^4.
 \]
 
 
 ::: pf-proof
 
-Homotopy equivalence preserves the integral cohomology ring. For $\mathbb{CP}^2$,
+Homotopy equivalence preserves the integral cohomology ring. For $\CP^2$,
 \[
-H^*(\mathbb{CP}^2;\ZZ)
+H^*(\CP^2;\ZZ)
 \cong\ZZ[u]/(u^3),
 \qquad |u|=2,
 \]
@@ -149,7 +149,7 @@ The nonzero squares modulo $5$ are $1$ and $4=-1$, so the values $\pm a^2$ are o
 Therefore the requested examples are
 \[
 \boxed{
-\mathbb{CP}^2\text{ and }S^2\vee S^4
+\CP^2\text{ and }S^2\vee S^4
 \text{ for equal homology groups},}
 \]
 and

@@ -28,7 +28,7 @@ audit:
 
 (b) What would be your answer to part (a) if $S^1\times\RR$ is replaced by $S^2\times\RR$ and $2$-disks are replaced by $3$-balls?
 
-(c) Let $Y$ be the union of two copies of the real projective plane $\mathbb{RP}^2$ having exactly one point $y$ in common.
+(c) Let $Y$ be the union of two copies of the real projective plane $\RP^2$ having exactly one point $y$ in common.
 Compute $\pi_1(Y,y)$.
 :::
 
@@ -47,9 +47,9 @@ Applying this successively to the \(k\) disjoint balls gives
 \pi_1\bigl((S^2\times\RR)\setminus\textstyle\bigcup_i\operatorname{int}B_i^3\bigr)=0.
 \]
 
-(c) The space \(Y\) is the wedge \(\mathbb{RP}^2\vee\mathbb{RP}^2\). Van Kampen therefore gives
+(c) The space \(Y\) is the wedge \(\RP^2\vee\RP^2\). Van Kampen therefore gives
 \[
-\pi_1(Y,y)\cong \pi_1(\mathbb{RP}^2)*\pi_1(\mathbb{RP}^2)
+\pi_1(Y,y)\cong \pi_1(\RP^2)*\pi_1(\RP^2)
 \cong (\ZZ/2)*(\ZZ/2)
 \cong \langle a,b\mid a^2=b^2=1\rangle.
 \]

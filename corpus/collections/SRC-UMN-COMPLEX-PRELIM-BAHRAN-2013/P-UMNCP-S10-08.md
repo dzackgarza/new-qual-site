@@ -17,8 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f:\mathbb D\to\mathbb D\) be holomorphic.
-Suppose \(c\in\mathbb D\) is a fixed point and \(|f'(c)|<1\). For any \(z_0\in\mathbb D\), define \(z_n=f(z_{n-1})\). Prove that \(z_n\to c\).
+Let \(f:\DD\to\DD\) be holomorphic.
+Suppose \(c\in\DD\) is a fixed point and \(|f'(c)|<1\). For any \(z_0\in\DD\), define \(z_n=f(z_{n-1})\). Prove that \(z_n\to c\).
 :::
 
 ::: {.solution}
@@ -46,7 +46,7 @@ $$
 
 The map
 $$
-g:\mathbb D\to\mathbb D
+g:\DD\to\DD
 $$
 is holomorphic, satisfies
 $$
@@ -99,7 +99,7 @@ $$
 $$
 for every
 $$
-w\in\mathbb D.
+w\in\DD.
 $$
 
 
@@ -121,11 +121,11 @@ g(w)/w,&w\ne0,\\
 g'(0),&w=0
 \end{cases}
 $$
-is holomorphic on $\mathbb D$ and satisfies
+is holomorphic on $\DD$ and satisfies
 $$
 \boxed{|h(w)|<1}
 $$
-for every $w\in\mathbb D$.
+for every $w\in\DD$.
 
 
 ::: pf-proof

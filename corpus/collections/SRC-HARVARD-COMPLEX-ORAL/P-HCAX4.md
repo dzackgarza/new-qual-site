@@ -23,7 +23,7 @@ Let
 \Omega=\CC\setminus(-\infty,-1/4].
 \]
 
-a. Show that there is a conformal isomorphism $f:\mathbb D\to\Omega$ with $f(0)=0$.
+a. Show that there is a conformal isomorphism $f:\DD\to\Omega$ with $f(0)=0$.
 
 b. Give a normalization which makes $f$ unique.
 

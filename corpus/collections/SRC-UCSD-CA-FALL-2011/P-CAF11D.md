@@ -32,14 +32,14 @@ which maps $G$ onto the upper half-plane, and then set
 \[
 \phi(z)=\frac{\psi(z)-i}{\psi(z)+i}.
 \]
-Thus $\phi:G\to\mathbb D$ is conformal.
+Thus $\phi:G\to\DD$ is conformal.
 
 Choose a countable dense set $\{\zeta_n\}_{n\ge1}$ on the unit circle. Define
 \[
 H(w)=\sum_{n=1}^\infty 2^{-n}\frac{\zeta_n+w}{\zeta_n-w},
 \qquad |w|<1.
 \]
-On every compact subset of $\mathbb D$ the series converges uniformly, hence
+On every compact subset of $\DD$ the series converges uniformly, hence
 $H$ is holomorphic. Moreover,
 \[
 \operatorname{Re}\frac{\zeta+w}{\zeta-w}
@@ -50,7 +50,7 @@ Therefore
 \[
 F(w)=e^{-H(w)}
 \]
-is holomorphic and has no zeros in $\mathbb D$.
+is holomorphic and has no zeros in $\DD$.
 
 Fix $n$. Along the radius $w=r\zeta_n$ with $r\uparrow1$, the $n$-th summand
 of $\operatorname{Re}H$ tends to $+\infty$, while all other summands are
@@ -60,20 +60,20 @@ F(r\zeta_n)\longrightarrow0.
 \]
 
 Suppose $F$ admitted a holomorphic extension across some boundary point
-$\eta\in\partial\mathbb D$. The extension would exist on a small disk about
+$\eta\in\partial\DD$. The extension would exist on a small disk about
 $\eta$. Because the $\zeta_n$ are dense on the unit circle, that disk contains
 infinitely many $\zeta_n$ accumulating at a point of the disk. By continuity of
 the extension and the radial limits above, the extension would vanish at all
 those $\zeta_n$. The identity theorem would then force the extension, and hence
 $F$, to vanish identically, contradiction.
 
-Thus $F$ has no analytic continuation across any point of $\partial\mathbb D$.
+Thus $F$ has no analytic continuation across any point of $\partial\DD$.
 Finally set
 \[
 f=F\circ\phi.
 \]
 Then $f\in H(G)$, $f$ has no zeros in $G$, and any analytic continuation of $f$
 across a boundary point of $G$ would, via the conformal map $\phi$, produce an
-analytic continuation of $F$ across a point of $\partial\mathbb D$. Therefore
+analytic continuation of $F$ across a point of $\partial\DD$. Therefore
 $f$ has no analytic continuation across any boundary point of the strip.
 :::

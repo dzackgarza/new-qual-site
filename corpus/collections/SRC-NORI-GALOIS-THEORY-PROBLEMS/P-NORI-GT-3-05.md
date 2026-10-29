@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-05
 kind: problem
-title: Towers of cubic extensions of $\mathbb F_{19}$
+title: Towers of cubic extensions of $\FF_{19}$
 classification:
   areas: [algebra]
   topics: []
@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Explain how you would obtain a sequence of field extensions $E _ { n + 1 } / E _ { n }$ of degree three, with $E _ { 0 } = \mathbb { F } _ { 1 9 }$
+Explain how you would obtain a sequence of field extensions $E _ { n + 1 } / E _ { n }$ of degree three, with $E _ { 0 } = \FF _ { 1 9 }$
 :::
 
 ::: {.solution}
@@ -31,12 +31,12 @@ Since
 \[
 19-1=18
 \]
-is divisible by $3$, the field $\mathbb F_{19}$ contains all cube roots of unity.
+is divisible by $3$, the field $\FF_{19}$ contains all cube roots of unity.
 
 
 ::: pf-proof
 
-The cyclic group $\mathbb F_{19}^\times$ has order $18$. Hence it contains an element of order $3$, so $X^3-1$ splits completely over $\mathbb F_{19}$.
+The cyclic group $\FF_{19}^\times$ has order $18$. Hence it contains an element of order $3$, so $X^3-1$ splits completely over $\FF_{19}$.
 
 :::
 
@@ -46,14 +46,14 @@ The cyclic group $\mathbb F_{19}^\times$ has order $18$. Hence it contains an el
 
 Choose an element
 \[
-u_0\in\mathbb F_{19}^\times
+u_0\in\FF_{19}^\times
 \]
 that is not a cube.
 
 
 ::: pf-proof
 
-The cube map on the cyclic group $\mathbb F_{19}^\times$ has image of order
+The cube map on the cyclic group $\FF_{19}^\times$ has image of order
 \[
 18/\gcd(18,3)=6,
 \]
@@ -108,13 +108,13 @@ Hence, as long as $u_n$ is a noncube,
 \]
 and
 \[
-E_{n+1}\cong\mathbb F_{19^{3^{n+1}}}.
+E_{n+1}\cong\FF_{19^{3^{n+1}}}.
 \]
 
 
 ::: pf-proof
 
-Step [](#s1-4){.pf-ref} gives irreducibility of the degree-three polynomial defining $u_{n+1}$. Inductively $[E_n:\mathbb F_{19}]=3^n$, so $E_n$ has $19^{3^n}$ elements. A degree-three extension therefore has $19^{3^{n+1}}$ elements and is the unique finite field of that order.
+Step [](#s1-4){.pf-ref} gives irreducibility of the degree-three polynomial defining $u_{n+1}$. Inductively $[E_n:\FF_{19}]=3^n$, so $E_n$ has $19^{3^n}$ elements. A degree-three extension therefore has $19^{3^{n+1}}$ elements and is the unique finite field of that order.
 
 :::
 
@@ -164,7 +164,7 @@ because $19-1=18$ has $3$-adic valuation $2$.
 
 ::: {.pf-step #s1-8}
 
-In a finite field $K=\mathbb F_Q$ with $3\mid Q-1$, an element $a\in K^\times$ is a cube if and only if
+In a finite field $K=\FF_Q$ with $3\mid Q-1$, an element $a\in K^\times$ is a cube if and only if
 \[
 a^{(Q-1)/3}=1.
 \]
@@ -180,7 +180,7 @@ The cyclic group $K^\times$ has order $Q-1$. Its subgroup of cubes has index $3$
 
 ::: {.pf-step #s1-9}
 
-Since $u_0$ is a noncube in $\mathbb F_{19}$,
+Since $u_0$ is a noncube in $\FF_{19}$,
 \[
 u_0^6\ne1.
 \]
@@ -256,7 +256,7 @@ Step [](#s1-2){.pf-ref} starts with a noncube. Steps [](#s1-5){.pf-ref} and [](#
 
 ::: pf-qed
 
-Step [](#s1-12){.pf-ref} gives the requested sequence of cubic field extensions beginning at $E_0=\mathbb F_{19}$.
+Step [](#s1-12){.pf-ref} gives the requested sequence of cubic field extensions beginning at $E_0=\FF_{19}$.
 
 :::
 

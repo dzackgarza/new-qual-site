@@ -30,7 +30,7 @@ audit:
 ::: {.problem}
 Let \(p\) be prime and
 \[
-R=\mathbb F_p[x]/(x^3).
+R=\FF_p[x]/(x^3).
 \]
 For which primes \(p\) is the unit group \(R^\times\) cyclic?
 :::

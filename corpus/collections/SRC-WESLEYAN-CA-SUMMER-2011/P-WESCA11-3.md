@@ -61,7 +61,7 @@ Thus \(f(\overline z)\) is defined on the whole unit disk.
 
 Fix
 \[
-z_0\in\mathbb D
+z_0\in\DD
 \]
 and let
 \[
@@ -72,7 +72,7 @@ be sufficiently small.
 
 ::: pf-proof
 
-Since the unit disk is open, \(z_0+h\in\mathbb D\) for all sufficiently
+Since the unit disk is open, \(z_0+h\in\DD\) for all sufficiently
 small \(h\).
 
 :::
@@ -212,10 +212,10 @@ the difference quotient identity in step [](#s1-4){.pf-ref}.
 
 ::: {.pf-step #s1-8}
 
-Since \(z_0\in\mathbb D\) was arbitrary,
+Since \(z_0\in\DD\) was arbitrary,
 \[
 \boxed{
-g\text{ is holomorphic on }\mathbb D}.
+g\text{ is holomorphic on }\DD}.
 \]
 
 

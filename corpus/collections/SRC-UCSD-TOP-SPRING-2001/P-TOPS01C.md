@@ -17,7 +17,7 @@ review: draft
 
 ::: {.problem}
 The connect-sum ($\#$) of two oriented $4$-manifolds is defined by removing an open $4$-ball from each, and gluing the resulting manifolds using a homeomorphism between their boundary $3$-spheres, in such a way that the orientations match to make a new oriented manifold.
-Compute the cohomology ring of the connect-sum $X = \mathbb{CP}^2 \# (S^2 \times S^2)$.
+Compute the cohomology ring of the connect-sum $X = \CP^2 \# (S^2 \times S^2)$.
 :::
 
 ::: {.solution}
@@ -26,7 +26,7 @@ Compute the cohomology ring of the connect-sum $X = \mathbb{CP}^2 \# (S^2 \times
 
 ::: pf-step
 
-Let $x\in H^2(\mathbb{CP}^2;\ZZ)$ be the standard generator and let $a,b\in H^2(S^2\times S^2;\ZZ)$ be the two factor generators.
+Let $x\in H^2(\CP^2;\ZZ)$ be the standard generator and let $a,b\in H^2(S^2\times S^2;\ZZ)$ be the two factor generators.
 
 ::: pf-proof
 
@@ -40,7 +40,7 @@ These groups are respectively $\ZZ$ and $\ZZ^2$ in degree two.
 
 For the connected sum
 $$
-X=\mathbb{CP}^2\#(S^2\times S^2),
+X=\CP^2\#(S^2\times S^2),
 $$
 one has
 $$
@@ -65,7 +65,7 @@ $$
 
 ::: pf-proof
 
-The intersection form of $\mathbb{CP}^2$ is $(1)$, while that of $S^2\times S^2$ in the basis $a,b$ is
+The intersection form of $\CP^2$ is $(1)$, while that of $S^2\times S^2$ in the basis $a,b$ is
 $$
 \begin{pmatrix}0&1\\1&0\end{pmatrix}.
 $$

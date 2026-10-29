@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Use the Hurewicz theorem to calculate $\pi_3(\mathbb{RP}^3 \vee S^3)$.
+Use the Hurewicz theorem to calculate $\pi_3(\RP^3 \vee S^3)$.
 :::
 
 ::: {.solution}
@@ -23,12 +23,12 @@ Use the Hurewicz theorem to calculate $\pi_3(\mathbb{RP}^3 \vee S^3)$.
 ::: pf-step
 The universal cover of
 $$
-X=\mathbb{RP}^3\vee S^3
+X=\RP^3\vee S^3
 $$
-is obtained from the universal cover $S^3\to\mathbb{RP}^3$ by attaching one copy of $S^3$ at each of the two lifts of the wedge point.
+is obtained from the universal cover $S^3\to\RP^3$ by attaching one copy of $S^3$ at each of the two lifts of the wedge point.
 
 ::: pf-proof
-The fundamental group of $X$ is $\ZZ/2$, contributed by the $\mathbb{RP}^3$ summand, since $S^3$ is simply connected. Pulling the simply connected wedge summand up to the universal cover attaches a copy at each point of the fiber over the wedge point, which has two elements.
+The fundamental group of $X$ is $\ZZ/2$, contributed by the $\RP^3$ summand, since $S^3$ is simply connected. Pulling the simply connected wedge summand up to the universal cover attaches a copy at each point of the fiber over the wedge point, which has two elements.
 :::
 
 :::
@@ -40,7 +40,7 @@ S^3\vee S^3\vee S^3.
 $$
 
 ::: pf-proof
-The underlying lifted $\mathbb{RP}^3$ is $S^3$, with two further $S^3$'s attached at two points. Move one attachment point to the other along an arc in the first $S^3$; contracting that arc gives the stated wedge up to homotopy.
+The underlying lifted $\RP^3$ is $S^3$, with two further $S^3$'s attached at two points. Move one attachment point to the other along an arc in the first $S^3$; contracting that arc gives the stated wedge up to homotopy.
 :::
 
 :::
@@ -72,7 +72,7 @@ Since $\widetilde X$ is $2$-connected, the degree-$3$ Hurewicz homomorphism is a
 ::: pf-step
 Therefore
 $$
-\boxed{\pi_3(\mathbb{RP}^3\vee S^3)\cong\ZZ^3}.
+\boxed{\pi_3(\RP^3\vee S^3)\cong\ZZ^3}.
 $$
 
 ::: pf-proof

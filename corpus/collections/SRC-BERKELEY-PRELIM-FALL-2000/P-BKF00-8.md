@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF00-8
 kind: problem
-title: A Singer cycle in $GL_n(\mathbb F_p)$
+title: A Singer cycle in $GL_n(\FF_p)$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -24,9 +24,9 @@ audit:
 ::: {.problem}
 Let $p$ be prime and $n$ a positive integer. Prove that there exists
 \[
-A\in GL_n(\mathbb F_p)
+A\in GL_n(\FF_p)
 \]
-which, as a permutation of the nonzero vectors of $\mathbb F_p^n$, is a single cycle of length
+which, as a permutation of the nonzero vectors of $\FF_p^n$, is a single cycle of length
 \[
 p^n-1.
 \]

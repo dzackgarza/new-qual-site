@@ -22,28 +22,28 @@ Hint: Examine the family $\mathcal{F}$ consisting of the inverse automorphisms $
 :::
 
 ::: {.solution}
-Set $g_n=f_n^{-1}$. Since the family of holomorphic self-maps of $\mathbb D$
+Set $g_n=f_n^{-1}$. Since the family of holomorphic self-maps of $\DD$
 is normal, some subsequence $g_{n_k}$ converges locally uniformly to a
-holomorphic map $g:\mathbb D\to\overline{\mathbb D}$.
+holomorphic map $g:\DD\to\overline{\DD}$.
 
 Because $f$ is nonconstant and $f_{n_k}\to f$ locally uniformly, Hurwitz's
-theorem implies that $f$ is injective. In particular $f(\mathbb D)$ is open.
-Fix $z\in\mathbb D$. For $k$ large, $f_{n_k}(z)$ stays in a compact subset of
-$\mathbb D$ around $f(z)$. Hence local uniform convergence of $g_{n_k}$ gives
+theorem implies that $f$ is injective. In particular $f(\DD)$ is open.
+Fix $z\in\DD$. For $k$ large, $f_{n_k}(z)$ stays in a compact subset of
+$\DD$ around $f(z)$. Hence local uniform convergence of $g_{n_k}$ gives
 \[
 g(f(z))
 =\lim_{k\to\infty}g_{n_k}(f_{n_k}(z))
 =z.
 \]
-Thus $g\circ f=\operatorname{id}_{\mathbb D}$.
+Thus $g\circ f=\operatorname{id}_{\DD}$.
 
-Similarly, for any $w\in\mathbb D$ choose a compact disk containing $w$ and
+Similarly, for any $w\in\DD$ choose a compact disk containing $w$ and
 use $f_{n_k}\circ g_{n_k}=\operatorname{id}$. The identity above already
-shows that $g$ is nonconstant, hence $g(\mathbb D)\subset\mathbb D$ by the
+shows that $g$ is nonconstant, hence $g(\DD)\subset\DD$ by the
 maximum principle. Passing to the limit gives
 \[
 f(g(w))=w.
 \]
-Therefore $f$ and $g$ are inverse biholomorphisms of $\mathbb D$, so $f$ is an
+Therefore $f$ and $g$ are inverse biholomorphisms of $\DD$, so $f$ is an
 automorphism.
 :::

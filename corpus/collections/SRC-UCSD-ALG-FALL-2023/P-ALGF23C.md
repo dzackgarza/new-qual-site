@@ -132,7 +132,7 @@ The ideal $\mathfrak a$ is proper.
 
 Define
 \[
-\varphi:A\longrightarrow\mathbb F_3,
+\varphi:A\longrightarrow\FF_3,
 \qquad
 \varphi(u+vs)=u-v\pmod3.
 \]

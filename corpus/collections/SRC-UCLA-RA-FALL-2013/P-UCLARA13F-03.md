@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Does there exist a holomorphic function $f:\mathbb D\to\CC$ such that
+Does there exist a holomorphic function $f:\DD\to\CC$ such that
 \[
 |f(z_n)|\longrightarrow\infty
 \]
-for every sequence $(z_n)\subset\mathbb D$ with $|z_n|\to1$?
+for every sequence $(z_n)\subset\DD$ with $|z_n|\to1$?
 Justify your answer.
 :::
 
@@ -33,7 +33,7 @@ No such holomorphic function exists.
 
 ::: {.pf-step #s1-1}
 
-Suppose, for contradiction, that $f:\mathbb D\to\CC$ is holomorphic and satisfies the stated property.
+Suppose, for contradiction, that $f:\DD\to\CC$ is holomorphic and satisfies the stated property.
 
 
 ::: pf-proof
@@ -56,7 +56,7 @@ The stated sequential property implies that for every $M>0$ there exists $0<r<1$
 
 ::: pf-proof
 
-If this failed for some $M>0$, then for every integer $n$ one could choose $z_n\in\mathbb D$ with
+If this failed for some $M>0$, then for every integer $n$ one could choose $z_n\in\DD$ with
 \[
 |z_n|>1-1/n
 \qquad\text{and}\qquad
@@ -105,12 +105,12 @@ p(z)=\prod_{j=1}^s(z-a_j),
 \qquad
 g(z)=\frac{p(z)}{f(z)}.
 \]
-Then $g$ extends to a holomorphic function on all of $\mathbb D$.
+Then $g$ extends to a holomorphic function on all of $\DD$.
 
 
 ::: pf-proof
 
-By step [](#s1-3){.pf-ref} there are no zeros outside the compact disk, so $a_1,\ldots,a_s$ list every zero of $f$ in $\mathbb D$. At each zero, $p$ has exactly the same multiplicity as $f$, so the apparent singularity of $p/f$ is removable. Removing all of them yields a holomorphic function on $\mathbb D$.
+By step [](#s1-3){.pf-ref} there are no zeros outside the compact disk, so $a_1,\ldots,a_s$ list every zero of $f$ in $\DD$. At each zero, $p$ has exactly the same multiplicity as $f$, so the apparent singularity of $p/f$ is removable. Removing all of them yields a holomorphic function on $\DD$.
 
 :::
 
@@ -163,7 +163,7 @@ g\equiv0.
 
 ::: pf-proof
 
-Fix $z\in\mathbb D$. For every $\rho$ with $|z|<\rho<1$,
+Fix $z\in\DD$. For every $\rho$ with $|z|<\rho<1$,
 \[
 |g(z)|\leq\max_{|w|=\rho}|g(w)|.
 \]

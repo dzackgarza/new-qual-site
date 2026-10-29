@@ -23,9 +23,9 @@ If true, give a brief proof.
 
 3. If $f$ and $g$ are analytic functions defined on a neighborhood of $|z| \leq 1$, $g \neq 0$ on $|z| \leq 1$, and $|f| \leq |g|$ on $|z| = 1$, then $|f| \leq |g|$ on $|z| \leq 1$.
 
-4. There exists a nonconstant analytic function $f$ on $\CC$ such that $\operatorname{ran} f \cap \mathbb{D} = \emptyset$.
+4. There exists a nonconstant analytic function $f$ on $\CC$ such that $\operatorname{ran} f \cap \DD = \emptyset$.
 
-5. If $f$ is analytic on a neighborhood of $|z| \leq 1$ and $|f(z)| < 1$ for $|z| \leq 1$, then $f$ when viewed as a mapping of $\overline{\mathbb{D}}$ into $\overline{\mathbb{D}}$ has a unique fixed point.
+5. If $f$ is analytic on a neighborhood of $|z| \leq 1$ and $|f(z)| < 1$ for $|z| \leq 1$, then $f$ when viewed as a mapping of $\overline{\DD}$ into $\overline{\DD}$ has a unique fixed point.
 
 6. There is no complex structure on $\RR^2$ such that the function $f: \RR^2 \to \CC$ defined by $f(x, y) = x - iy$ is analytic.
 :::
@@ -66,11 +66,11 @@ an entire bounded function, hence constant by Liouville's theorem. Thus $f$
 would be constant.
 
 5. **True.** Existence follows from Brouwer's fixed-point theorem because
-$f(\overline{\mathbb D})\subset\mathbb D\subset\overline{\mathbb D}$. If
+$f(\overline{\DD})\subset\DD\subset\overline{\DD}$. If
 $a\ne b$ were two fixed points, conjugating by a disk automorphism sending
 $a$ to $0$ would produce a disk self-map fixing $0$ and another nonzero point.
 The equality case of Schwarz's lemma would make it a disk automorphism. But
-$f(\overline{\mathbb D})$ is compactly contained in $\mathbb D$, impossible
+$f(\overline{\DD})$ is compactly contained in $\DD$, impossible
 for an automorphism. Hence the fixed point is unique.
 
 6. **False.** Give $\RR^2$ the complex structure

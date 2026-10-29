@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\mathbb{RP}^{2k}$ cannot be a boundary.
+Show that $\RP^{2k}$ cannot be a boundary.
 :::
 
 ::: {.solution}
@@ -31,10 +31,10 @@ Show that $\mathbb{RP}^{2k}$ cannot be a boundary.
 If a closed manifold $M$ is the boundary of a compact manifold, then $\chi(M)$ is even.
 
 ::: pf-proof
-Suppose $M=\partial W$ with $\dim W=m$, and work with coefficients in $\mathbb F_2$, so orientability is irrelevant.
+Suppose $M=\partial W$ with $\dim W=m$, and work with coefficients in $\FF_2$, so orientability is irrelevant.
 Poincaré--Lefschetz duality gives
 \[
-H_i(W,M;\mathbb F_2)\cong H^{m-i}(W;\mathbb F_2),
+H_i(W,M;\FF_2)\cong H^{m-i}(W;\FF_2),
 \]
 so $\chi(W,M)=(-1)^m\chi(W)$.
 The long exact sequence of the pair gives $\chi(W)=\chi(M)+\chi(W,M)$. Hence
@@ -47,16 +47,16 @@ and the coefficient $1-(-1)^m$ is $0$ or $2$.
 :::
 
 ::: {.pf-step #s2}
-$\chi(\mathbb{RP}^{2k})=1$.
+$\chi(\RP^{2k})=1$.
 
 ::: pf-proof
-The standard CW structure on $\mathbb{RP}^{2k}$ has one cell in each dimension $0,1,\dots,2k$, so $\chi(\mathbb{RP}^{2k})=\sum_{j=0}^{2k}(-1)^j=1$.
+The standard CW structure on $\RP^{2k}$ has one cell in each dimension $0,1,\dots,2k$, so $\chi(\RP^{2k})=\sum_{j=0}^{2k}(-1)^j=1$.
 :::
 
 :::
 
 ::: pf-qed
-By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $\mathbb{RP}^{2k}$ is not the boundary of a compact manifold.
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $\RP^{2k}$ is not the boundary of a compact manifold.
 :::
 
 :::

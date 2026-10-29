@@ -68,7 +68,7 @@ For $\mathbb K=\RR$ and $n\ge2$, no section exists.
 
 ::: pf-proof
 
-The total space deformation-retracts onto $S^n$, so $H_1(-;\mathbb F_2)=0$. But $H_1(\mathbb RP^n;\mathbb F_2)\cong\mathbb F_2$, contradicting step [](#s1){.pf-ref}.
+The total space deformation-retracts onto $S^n$, so $H_1(-;\FF_2)=0$. But $H_1(\mathbb RP^n;\FF_2)\cong\FF_2$, contradicting step [](#s1){.pf-ref}.
 
 :::
 

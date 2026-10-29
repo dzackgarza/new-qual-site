@@ -39,8 +39,8 @@ Part (a): Additive structure of a finite field:
 ::: pf-proof
 
 ::: pf-step
-Let $\operatorname{char}(\mathbb{F}) = p$.
-Since $\mathbb{F}$ is a field, $p$ is a prime number, and the prime subfield of $\mathbb{F}$ is $\mathbb{F}_p \cong \ZZ/p\ZZ$.
+Let $\operatorname{char}(\FF) = p$.
+Since $\FF$ is a field, $p$ is a prime number, and the prime subfield of $\FF$ is $\FF_p \cong \ZZ/p\ZZ$.
 
 ::: pf-proof
 characteristic of an integral domain is prime.
@@ -49,8 +49,8 @@ characteristic of an integral domain is prime.
 :::
 
 ::: pf-step
-The field $\mathbb{F}$ is a finite-dimensional vector space over $\mathbb{F}_p$.
-Let $n = [\mathbb{F} : \mathbb{F}_p] = \dim_{\mathbb{F}_p}(\mathbb{F})$.
+The field $\FF$ is a finite-dimensional vector space over $\FF_p$.
+Let $n = [\FF : \FF_p] = \dim_{\FF_p}(\FF)$.
 
 ::: pf-proof
 finite field extension.
@@ -59,14 +59,14 @@ finite field extension.
 :::
 
 ::: pf-step
-Choosing an $\mathbb{F}_p$-basis $\{v_1, \dots, v_n\}$ for $\mathbb{F}$ gives an $\mathbb{F}_p$-linear isomorphism:
+Choosing an $\FF_p$-basis $\{v_1, \dots, v_n\}$ for $\FF$ gives an $\FF_p$-linear isomorphism:
 \[
-(\mathbb{F}, +) \cong \mathbb{F}_p^n \cong \bigoplus_{i=1}^n \ZZ_p.
+(\FF, +) \cong \FF_p^n \cong \bigoplus_{i=1}^n \ZZ_p.
 \]
-Thus $(\mathbb{F}, +)$ is isomorphic to the direct sum of $n$ copies of the cyclic group $\ZZ_p$.
+Thus $(\FF, +)$ is isomorphic to the direct sum of $n$ copies of the cyclic group $\ZZ_p$.
 
 ::: pf-proof
-vector space isomorphism over $\mathbb{F}_p$.
+vector space isomorphism over $\FF_p$.
 :::
 
 :::
@@ -114,12 +114,12 @@ order of generator in cyclic direct summand.
 :::
 
 ::: {.pf-step #part-c-cyclicity}
-Part (c): Cyclicity of the multiplicative group $(\mathbb{F}^\times, \cdot)$:
+Part (c): Cyclicity of the multiplicative group $(\FF^\times, \cdot)$:
 
 ::: pf-proof
 
 ::: pf-step
-The multiplicative group $\mathbb{F}^\times$ is a finite abelian group of order $N = |\mathbb{F}| - 1 = p^n - 1$.
+The multiplicative group $\FF^\times$ is a finite abelian group of order $N = |\FF| - 1 = p^n - 1$.
 
 ::: pf-proof
 non-zero elements of a finite field form an abelian group under multiplication.
@@ -128,7 +128,7 @@ non-zero elements of a finite field form an abelian group under multiplication.
 :::
 
 ::: {.pf-step #e-leq-n}
-Let $e = \exp(\mathbb{F}^\times)$. By Part (b), there exists an element $g \in \mathbb{F}^\times$ of order $|g| = e$.
+Let $e = \exp(\FF^\times)$. By Part (b), there exists an element $g \in \FF^\times$ of order $|g| = e$.
 By Lagrange’s Theorem, $e \mid N$, so $e \le N$.
 
 ::: pf-proof
@@ -138,20 +138,20 @@ Part (b) and Lagrange's Theorem.
 :::
 
 ::: pf-step
-By definition of the exponent, $x^e = 1$ for all $x \in \mathbb{F}^\times$.
-Thus every element of $\mathbb{F}^\times$ is a root of the polynomial $P(T) = T^e - 1 \in \mathbb{F}[T]$.
+By definition of the exponent, $x^e = 1$ for all $x \in \FF^\times$.
+Thus every element of $\FF^\times$ is a root of the polynomial $P(T) = T^e - 1 \in \FF[T]$.
 
 ::: pf-proof
-$x^e = 1$ for all $x \in \mathbb{F}^\times$.
+$x^e = 1$ for all $x \in \FF^\times$.
 :::
 
 :::
 
 ::: {.pf-step #n-leq-e}
-Since $\mathbb{F}$ is a field, the non-zero polynomial $P(T)$ of degree $e$ has at most $e$ roots in $\mathbb{F}$.
+Since $\FF$ is a field, the non-zero polynomial $P(T)$ of degree $e$ has at most $e$ roots in $\FF$.
 Therefore:
 \[
-N = |\mathbb{F}^\times| \le e.
+N = |\FF^\times| \le e.
 \]
 
 ::: pf-proof
@@ -161,8 +161,8 @@ a degree $e$ polynomial over a field has at most $e$ roots.
 :::
 
 ::: pf-step
-Combining $e \le N$ (step [](#e-leq-n){.pf-ref}) and $N \le e$ (step [](#n-leq-e){.pf-ref}) gives $e = N = |\mathbb{F}^\times|$.
-Since $g \in \mathbb{F}^\times$ has order $e = |\mathbb{F}^\times|$, $\mathbb{F}^\times = \langle g \rangle$ is cyclic.
+Combining $e \le N$ (step [](#e-leq-n){.pf-ref}) and $N \le e$ (step [](#n-leq-e){.pf-ref}) gives $e = N = |\FF^\times|$.
+Since $g \in \FF^\times$ has order $e = |\FF^\times|$, $\FF^\times = \langle g \rangle$ is cyclic.
 
 ::: pf-proof
 a finite group containing an element of order equal to the group order is cyclic.
@@ -176,7 +176,7 @@ a finite group containing an element of order equal to the group order is cyclic
 
 ::: pf-step
 Conclusion:
-$(\mathbb{F}, +) \cong (\ZZ_p)^n$, any finite abelian group has an element of order $\exp(G)$, and $(\mathbb{F}^\times, \cdot)$ is cyclic. Q.E.D.
+$(\FF, +) \cong (\ZZ_p)^n$, any finite abelian group has an element of order $\exp(G)$, and $(\FF^\times, \cdot)$ is cyclic. Q.E.D.
 
 ::: pf-proof
 Step [](#part-a-additive-structure){.pf-ref} through step [](#part-c-cyclicity){.pf-ref}.

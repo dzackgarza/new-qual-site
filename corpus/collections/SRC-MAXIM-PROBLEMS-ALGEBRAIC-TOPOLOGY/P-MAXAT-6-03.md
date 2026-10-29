@@ -23,7 +23,7 @@ Study possible immersions (embeddings) of $\mathbb { R P } ^ { n }$ into $\RR ^ 
 
 The Stiefel--Whitney classes give a necessary lower bound on the codimension $k$. Let
 \[
-a\in H^1(\mathbb{RP}^n;\mathbb F_2)
+a\in H^1(\RP^n;\FF_2)
 \]
 be the standard generator.
 
@@ -33,7 +33,7 @@ be the standard generator.
 
 The tangent bundle satisfies
 \[
-w(T\mathbb{RP}^n)=(1+a)^{n+1}.
+w(T\RP^n)=(1+a)^{n+1}.
 \]
 
 
@@ -41,7 +41,7 @@ w(T\mathbb{RP}^n)=(1+a)^{n+1}.
 
 The standard stable isomorphism
 \[
-T\mathbb{RP}^n\oplus\varepsilon^1
+T\RP^n\oplus\varepsilon^1
 \cong(n+1)\gamma^1
 \]
 and $w(\gamma^1)=1+a$ give the formula by the Whitney product theorem.
@@ -54,17 +54,17 @@ and $w(\gamma^1)=1+a$ give the formula by the Whitney product theorem.
 
 If
 \[
-f:\mathbb{RP}^n\looparrowright\RR^{n+k}
+f:\RP^n\looparrowright\RR^{n+k}
 \]
 is a smooth immersion with normal bundle $\nu$ of rank $k$, then
 \[
-T\mathbb{RP}^n\oplus\nu\cong\varepsilon^{n+k}.
+T\RP^n\oplus\nu\cong\varepsilon^{n+k}.
 \]
 
 
 ::: pf-proof
 
-The derivative identifies $T\mathbb{RP}^n$ with a rank-$n$ subbundle of the pulled-back tangent bundle
+The derivative identifies $T\RP^n$ with a rank-$n$ subbundle of the pulled-back tangent bundle
 \[
 f^*T\RR^{n+k}\cong\varepsilon^{n+k}.
 \]
@@ -80,7 +80,7 @@ Consequently the total Stiefel--Whitney class of the normal bundle is
 \[
 w(\nu)=(1+a)^{-(n+1)}
 =\sum_{j\geq0}\binom{n+j}{j}a^j
-\quad\text{in }\mathbb F_2[a]/(a^{n+1}).
+\quad\text{in }\FF_2[a]/(a^{n+1}).
 \]
 
 
@@ -88,13 +88,13 @@ w(\nu)=(1+a)^{-(n+1)}
 
 Whitney multiplicativity applied to step [](#s1-2){.pf-ref} gives
 \[
-w(T\mathbb{RP}^n)w(\nu)=1.
+w(T\RP^n)w(\nu)=1.
 \]
 Use step [](#s1-1){.pf-ref} and the formal binomial expansion
 \[
 (1+a)^{-m}=\sum_{j\geq0}(-1)^j\binom{m+j-1}{j}a^j.
 \]
-Over $\mathbb F_2$ the signs disappear, and setting $m=n+1$ yields the stated coefficients.
+Over $\FF_2$ the signs disappear, and setting $m=n+1$ yields the stated coefficients.
 
 :::
 
@@ -120,7 +120,7 @@ Stiefel--Whitney classes above the rank of a vector bundle vanish. By step [](#s
 \[
 w_j(\nu)=\binom{n+j}{j}a^j.
 \]
-For $j\leq n$, the class $a^j$ is nonzero in $H^j(\mathbb{RP}^n;\mathbb F_2)$. Hence vanishing is equivalent to evenness of the binomial coefficient.
+For $j\leq n$, the class $a^j$ is nonzero in $H^j(\RP^n;\FF_2)$. Hence vanishing is equivalent to evenness of the binomial coefficient.
 
 :::
 
@@ -159,7 +159,7 @@ Thus the coefficient is $1$ mod $2$, proving the claim.
 
 Hence, whenever $n\ne2^s-1$, every immersion
 \[
-\mathbb{RP}^n\looparrowright\RR^{n+k}
+\RP^n\looparrowright\RR^{n+k}
 \]
 must satisfy
 \[
@@ -197,7 +197,7 @@ Step [](#s1-4){.pf-ref} says every nonzero inverse Stiefel--Whitney class must o
 
 The same bound applies to embeddings
 \[
-\mathbb{RP}^n\hookrightarrow\RR^{n+k}.
+\RP^n\hookrightarrow\RR^{n+k}.
 \]
 
 

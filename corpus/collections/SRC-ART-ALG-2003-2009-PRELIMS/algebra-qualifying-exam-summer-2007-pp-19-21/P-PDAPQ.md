@@ -51,11 +51,11 @@ For part (a), take $(2,x)\subseteq\ZZ[x]$.
 
 ::: pf-proof
 
-The homomorphism $\ZZ[x]\to\mathbb F_2$ sending a polynomial
+The homomorphism $\ZZ[x]\to\FF_2$ sending a polynomial
 to its constant coefficient modulo $2$ is surjective. Its kernel
 is $(2,x)$: a polynomial has even constant coefficient exactly when
 it has the form $2a+xg(x)$ with $a\in\ZZ$ and
-$g(x)\in\ZZ[x]$. Thus the quotient is the field $\mathbb F_2$,
+$g(x)\in\ZZ[x]$. Thus the quotient is the field $\FF_2$,
 so the ideal is maximal.
 
 :::

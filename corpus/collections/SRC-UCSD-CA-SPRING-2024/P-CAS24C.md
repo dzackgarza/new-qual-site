@@ -13,8 +13,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f : \mathbb{D} \to \CC$ be holomorphic.
-Assume $\operatorname{Re} f(z) > 0$ for all $z \in \mathbb{D}$.
+Let $f : \DD \to \CC$ be holomorphic.
+Assume $\operatorname{Re} f(z) > 0$ for all $z \in \DD$.
 Show that
 \[
 |f'(0)| \le 2\operatorname{Re} f(0).
@@ -28,7 +28,7 @@ Let $a=f(0)$, so $\operatorname{Re}a>0$. The Möbius map
 \]
 maps the right half-plane to the unit disk and sends $a$ to $0$. Hence
 \[
-g=\Phi\circ f:\mathbb D\to\mathbb D
+g=\Phi\circ f:\DD\to\DD
 \]
 is holomorphic and $g(0)=0$. Schwarz's lemma yields $|g'(0)|\le1$.
 Since

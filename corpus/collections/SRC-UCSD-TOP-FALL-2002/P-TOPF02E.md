@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that any continuous map $f : \mathbb{RP}^{2n} \to \mathbb{RP}^{2n}$ has a fixed point, if $n \geq 1$.
+Prove that any continuous map $f : \RP^{2n} \to \RP^{2n}$ has a fixed point, if $n \geq 1$.
 :::
 
 ::: {.solution}
@@ -24,7 +24,7 @@ Prove that any continuous map $f : \mathbb{RP}^{2n} \to \mathbb{RP}^{2n}$ has a 
 ::: {.pf-step #rational-homology}
 With rational coefficients,
 $$
-H_k(\mathbb{RP}^{2n};\QQ)=
+H_k(\RP^{2n};\QQ)=
 \begin{cases}
 \QQ,&k=0,\\
 0,&k>0.
@@ -38,7 +38,7 @@ The positive-dimensional integral homology of even-dimensional real projective s
 :::
 
 ::: pf-step
-For any continuous self-map $f:\mathbb{RP}^{2n}\to\mathbb{RP}^{2n}$, the Lefschetz number is
+For any continuous self-map $f:\RP^{2n}\to\RP^{2n}$, the Lefschetz number is
 $$
 L(f)=1.
 $$
@@ -56,7 +56,7 @@ $$
 Hence $f$ has a fixed point.
 
 ::: pf-proof
-The Lefschetz fixed-point theorem states that a self-map of a finite CW complex with nonzero Lefschetz number has a fixed point. Since $\mathbb{RP}^{2n}$ is a finite CW complex and $L(f)=1\ne0$, the conclusion follows.
+The Lefschetz fixed-point theorem states that a self-map of a finite CW complex with nonzero Lefschetz number has a fixed point. Since $\RP^{2n}$ is a finite CW complex and $L(f)=1\ne0$, the conclusion follows.
 :::
 
 :::

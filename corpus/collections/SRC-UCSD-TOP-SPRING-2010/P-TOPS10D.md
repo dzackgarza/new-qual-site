@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS10D
 kind: problem
-title: 'Manifold homotopy types of $\mathbb{CP}^n/\mathbb{CP}^k$'
+title: 'Manifold homotopy types of $\CP^n/\CP^k$'
 classification:
   areas:
   - topology
@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-For which $n$ and $k$ (with $0 < k < n$) is $X = \mathbb{CP}^n / \mathbb{CP}^k$ homotopy equivalent to a manifold?
+For which $n$ and $k$ (with $0 < k < n$) is $X = \CP^n / \CP^k$ homotopy equivalent to a manifold?
 :::
 
 ::: {.solution}
@@ -26,11 +26,11 @@ For which $n$ and $k$ (with $0 < k < n$) is $X = \mathbb{CP}^n / \mathbb{CP}^k$ 
 ::: {.pf-step #codimension-one-quotient-is-sphere}
 If $k=n-1$, then
 $$
-\mathbb{CP}^n/\mathbb{CP}^{n-1}\cong S^{2n}.
+\CP^n/\CP^{n-1}\cong S^{2n}.
 $$
 
 ::: pf-proof
-The standard CW decomposition of $\mathbb{CP}^n$ is obtained from $\mathbb{CP}^{n-1}$ by attaching a single $2n$-cell. Collapsing the entire $(2n-2)$-skeleton therefore gives $D^{2n}/S^{2n-1}\cong S^{2n}$.
+The standard CW decomposition of $\CP^n$ is obtained from $\CP^{n-1}$ by attaching a single $2n$-cell. Collapsing the entire $(2n-2)$-skeleton therefore gives $D^{2n}/S^{2n-1}\cong S^{2n}$.
 :::
 
 :::
@@ -44,7 +44,7 @@ H^2(X;\ZZ)=0.
 $$
 
 ::: pf-proof
-By the relative-cohomology computation for $X=\mathbb{CP}^n/\mathbb{CP}^k$, the positive cohomology groups occur exactly in degrees $2j$ for $j=k+1,\ldots,n$. Since $k\le n-2$, the exponent $j=n-1$ occurs; since $k>0$, exponent $j=1$ does not.
+By the relative-cohomology computation for $X=\CP^n/\CP^k$, the positive cohomology groups occur exactly in degrees $2j$ for $j=k+1,\ldots,n$. Since $k\le n-2$, the exponent $j=n-1$ occurs; since $k>0$, exponent $j=1$ does not.
 :::
 
 :::
@@ -74,7 +74,7 @@ Homotopy equivalence transfers the cohomology groups in step [](#degree-2-and-to
 ::: pf-step
 Consequently
 $$
-\boxed{\mathbb{CP}^n/\mathbb{CP}^k\text{ has the homotopy type of a closed manifold exactly when }k=n-1,}
+\boxed{\CP^n/\CP^k\text{ has the homotopy type of a closed manifold exactly when }k=n-1,}
 $$
 in which case that manifold is $S^{2n}$.
 

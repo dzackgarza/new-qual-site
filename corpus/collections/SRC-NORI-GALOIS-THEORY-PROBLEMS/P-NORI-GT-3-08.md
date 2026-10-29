@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-08
 kind: problem
-title: $\Phi_{n'p^k}=\Phi_{n'}^{\varphi(p^k)}$ in $\mathbb F_p[X]$
+title: $\Phi_{n'p^k}=\Phi_{n'}^{\varphi(p^k)}$ in $\FF_p[X]$
 classification:
   areas: [algebra]
   topics: []
@@ -27,7 +27,7 @@ $$
 Let $n = n'p^k$ with $p$ not dividing $n'$, and let $\varphi$ be Euler's phi function.
 Problem 3.7 reads: let $F$ be a field of characteristic $p$ such that $\mu_{n'}(F)$ has order $n'$. Show that the roots of $\Phi_n(X)$ in $F$ are the primitive $n'$-th roots of unity, each of them occuring with multiplicity $\varphi(p^k)$.
 
-Deduce the equality $\Phi_n(X) = \Phi_{n'}(X)^{\varphi(p^k)}$ in $\mathbb{F}_p[X]$ from the previous problem.
+Deduce the equality $\Phi_n(X) = \Phi_{n'}(X)^{\varphi(p^k)}$ in $\FF_p[X]$ from the previous problem.
 :::
 
 ::: {.remark}

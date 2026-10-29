@@ -44,7 +44,7 @@ The classification theorem for compact connected surfaces says that every orient
 
 Up to homeomorphism, the nonorientable surfaces are
 \[
-N_k=\#^k\mathbb{RP}^2,
+N_k=\#^k\RP^2,
 \qquad k=1,2,3,\ldots.
 \]
 
@@ -82,7 +82,7 @@ The Euler characteristics are
 
 ::: pf-proof
 
-The sphere has Euler characteristic $2$, the torus has Euler characteristic $0$, and $\mathbb{RP}^2$ has Euler characteristic $1$. For closed connected surfaces,
+The sphere has Euler characteristic $2$, the torus has Euler characteristic $0$, and $\RP^2$ has Euler characteristic $1$. For closed connected surfaces,
 \[
 \chi(M\#N)=\chi(M)+\chi(N)-2,
 \]
@@ -117,7 +117,7 @@ so $k=\ell$. Together with step [](#s1-3){.pf-ref}, this proves that no two dist
 
 The connected sum
 \[
-T^2\#\mathbb{RP}^2
+T^2\#\RP^2
 \]
 is nonorientable and has Euler characteristic
 \[
@@ -127,10 +127,10 @@ is nonorientable and has Euler characteristic
 
 ::: pf-proof
 
-The connected sum with the nonorientable surface $\mathbb{RP}^2$ is nonorientable. Using the connected-sum formula,
+The connected sum with the nonorientable surface $\RP^2$ is nonorientable. Using the connected-sum formula,
 \[
-\chi(T^2\#\mathbb{RP}^2)
-=\chi(T^2)+\chi(\mathbb{RP}^2)-2
+\chi(T^2\#\RP^2)
+=\chi(T^2)+\chi(\RP^2)-2
 =0+1-2=-1.
 \]
 
@@ -142,7 +142,7 @@ The connected sum with the nonorientable surface $\mathbb{RP}^2$ is nonorientabl
 
 The unique nonorientable surface with Euler characteristic $-1$ is
 \[
-N_3=\mathbb{RP}^2\#\mathbb{RP}^2\#\mathbb{RP}^2.
+N_3=\RP^2\#\RP^2\#\RP^2.
 \]
 
 
@@ -163,15 +163,15 @@ gives $k=3$. The uniqueness assertion follows from the classification theorem an
 Therefore
 \[
 \boxed{
-T^2\#\mathbb{RP}^2
+T^2\#\RP^2
 \cong
-\mathbb{RP}^2\#\mathbb{RP}^2\#\mathbb{RP}^2.}
+\RP^2\#\RP^2\#\RP^2.}
 \]
 
 
 ::: pf-proof
 
-Step [](#s1-6){.pf-ref} places $T^2\#\mathbb{RP}^2$ in the nonorientable class with Euler characteristic $-1$, and step [](#s1-7){.pf-ref} identifies the unique member of the classification with those invariants.
+Step [](#s1-6){.pf-ref} places $T^2\#\RP^2$ in the nonorientable class with Euler characteristic $-1$, and step [](#s1-7){.pf-ref} identifies the unique member of the classification with those invariants.
 
 :::
 

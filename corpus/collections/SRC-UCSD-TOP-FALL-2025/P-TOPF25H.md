@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF25H
 kind: problem
-title: No closed 3-manifold homotopy equivalent to $\Sigma\mathbb{RP}^2$
+title: No closed 3-manifold homotopy equivalent to $\Sigma\RP^2$
 classification:
   areas:
   - topology
@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that there is no closed 3-manifold which is homotopy-equivalent to the suspension $\Sigma\mathbb{RP}^2$.
+Prove that there is no closed 3-manifold which is homotopy-equivalent to the suspension $\Sigma\RP^2$.
 :::
 
 ::: {.solution}
@@ -24,14 +24,14 @@ Prove that there is no closed 3-manifold which is homotopy-equivalent to the sus
 ::: {.pf-step #s1}
 
 Suspension shifts reduced integral homology, so
-$$\widetilde H_i(\Sigma\mathbb{RP}^2;\ZZ)\cong\widetilde H_{i-1}(\mathbb{RP}^2;\ZZ).$$
+$$\widetilde H_i(\Sigma\RP^2;\ZZ)\cong\widetilde H_{i-1}(\RP^2;\ZZ).$$
 Thus
-$$H_2(\Sigma\mathbb{RP}^2;\ZZ)\cong\ZZ/2,$$
+$$H_2(\Sigma\RP^2;\ZZ)\cong\ZZ/2,$$
 and all other positive-degree integral homology groups vanish.
 
 ::: pf-proof
 
-The only nonzero reduced integral homology group of $\mathbb{RP}^2$ is $H_1\cong\ZZ/2$.
+The only nonzero reduced integral homology group of $\RP^2$ is $H_1\cong\ZZ/2$.
 
 :::
 
@@ -39,7 +39,7 @@ The only nonzero reduced integral homology group of $\mathbb{RP}^2$ is $H_1\cong
 
 ::: pf-step
 
-If a closed connected $3$-manifold $M$ were homotopy equivalent to $\Sigma\mathbb{RP}^2$, then $H_3(M;\ZZ)=0$, so $M$ would be nonorientable.
+If a closed connected $3$-manifold $M$ were homotopy equivalent to $\Sigma\RP^2$, then $H_3(M;\ZZ)=0$, so $M$ would be nonorientable.
 
 ::: pf-proof
 
@@ -63,7 +63,7 @@ The orientation character $w_1:\pi_1(M)\to\ZZ/2$ is nontrivial. Since its target
 
 ::: pf-step
 
-This contradicts $H_1(\Sigma\mathbb{RP}^2;\ZZ)=0$. Hence no such closed $3$-manifold exists.
+This contradicts $H_1(\Sigma\RP^2;\ZZ)=0$. Hence no such closed $3$-manifold exists.
 
 ::: pf-proof
 

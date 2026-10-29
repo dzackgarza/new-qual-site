@@ -36,7 +36,7 @@ Determine whether $X = S^2 \vee S^3 \vee S^5$ is homotopy equivalent to:
 ::: pf
 
 ::: pf-step
-With coefficients in $\mathbb F_2$, the only nonzero reduced cohomology groups of
+With coefficients in $\FF_2$, the only nonzero reduced cohomology groups of
 $X=S^2\vee S^3\vee S^5$ occur in degrees $2,3,5$, and every cup product of two positive-degree classes is zero.
 
 :::
@@ -51,18 +51,18 @@ Suppose that $X\simeq M$ for a connected closed $n$-manifold $M$.
 :::
 
 ::: pf-step
-Poincaré duality over $\mathbb F_2$ gives $H_n(M;\mathbb F_2)\cong\mathbb F_2$, independently of orientability. Since $H_k(X;\mathbb F_2)=0$ for $k>5$, this forces $n\le5$.
+Poincaré duality over $\FF_2$ gives $H_n(M;\FF_2)\cong\FF_2$, independently of orientability. Since $H_k(X;\FF_2)=0$ for $k>5$, this forces $n\le5$.
 :::
 
 ::: pf-step
-Since $H_5(X;\mathbb F_2)\ne0$ and an $n$-manifold has no homology above degree $n$, we also have $n\ge5$. Thus $n=5$.
+Since $H_5(X;\FF_2)\ne0$ and an $n$-manifold has no homology above degree $n$, we also have $n\ge5$. Thus $n=5$.
 :::
 
 ::: pf-step
 Poincaré duality then makes the pairing
 $$
-H^2(M;\mathbb F_2)\times H^3(M;\mathbb F_2)
-\xrightarrow{\smile} H^5(M;\mathbb F_2)\cong\mathbb F_2
+H^2(M;\FF_2)\times H^3(M;\FF_2)
+\xrightarrow{\smile} H^5(M;\FF_2)\cong\FF_2
 $$
 nondegenerate.
 :::

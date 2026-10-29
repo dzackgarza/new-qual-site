@@ -23,8 +23,8 @@ If a Cauchy sequence $\{x_n\}_{n=1}^{\infty}$ in $X$ has a convergent subsequenc
 (c) Let $\gamma_+(t) = e^{i\pi t}$ and $\gamma_-(t) = e^{-i\pi t}$, for $t \in [0, 1]$.
 Then $\int_{\gamma_+} \frac{2}{(2z-1)^2}\,dz = \int_{\gamma_-} \frac{2}{(2z-1)^2}\,dz$.
 
-(d) Let $f_n \in \mathcal{O}(G)$ be a sequence such that $f_n(G) \subset \mathbb{D} \setminus \{0\}$ for $n = 1, 2, \ldots$, and assume that $f_n \to f$ in $\mathcal{O}(G)$.
-Then either $f$ is constant or $f(G) \subset \mathbb{D} \setminus \{0\}$.
+(d) Let $f_n \in \mathcal{O}(G)$ be a sequence such that $f_n(G) \subset \DD \setminus \{0\}$ for $n = 1, 2, \ldots$, and assume that $f_n \to f$ in $\mathcal{O}(G)$.
+Then either $f$ is constant or $f(G) \subset \DD \setminus \{0\}$.
 
 (e) There is a sequence of complex numbers $\{a_n\}_{n=0}^{\infty}$ and strictly increasing sequence of integers $\{p_n\}_{n=0}^{\infty}$ with $p_n \geq n$ such that the radius of convergence of $\sum_{n=0}^{\infty} a_n z^n$ is one but that of $\sum_{n=0}^{\infty} a_n z^{p_n}$ is less than one.
 :::
@@ -54,7 +54,7 @@ $1/2$, so the two integrals are equal.
 holomorphic functions is either identically zero or zero-free. If $f$ is not
 constant, it is zero-free; moreover $|f|\le1$, and the maximum principle
 excludes an interior value of modulus $1$. Hence
-$f(G)\subset\mathbb D\setminus\{0\}$.
+$f(G)\subset\DD\setminus\{0\}$.
 
 (e) **False.** By Cauchy--Hadamard,
 \[

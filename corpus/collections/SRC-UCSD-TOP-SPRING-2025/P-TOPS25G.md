@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS25G
 kind: problem
-title: No compact 4-manifold homotopy equivalent to $\Sigma\mathbb{RP}^3$
+title: No compact 4-manifold homotopy equivalent to $\Sigma\RP^3$
 classification:
   areas:
   - topology
@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that there is no compact 4-manifold $M$ (with or without boundary) which is homotopy-equivalent to the suspension $\Sigma\mathbb{RP}^3$.
+Prove that there is no compact 4-manifold $M$ (with or without boundary) which is homotopy-equivalent to the suspension $\Sigma\RP^3$.
 :::
 
 ::: {.solution}

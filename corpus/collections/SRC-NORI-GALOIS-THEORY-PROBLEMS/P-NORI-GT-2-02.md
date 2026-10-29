@@ -25,7 +25,7 @@ Write
 \[
 V=F^\times/(F^\times)^2.
 \]
-Since every element of $V$ has order at most $2$, the subgroup $G$ is a finite-dimensional $\mathbb F_2$-vector space.
+Since every element of $V$ has order at most $2$, the subgroup $G$ is a finite-dimensional $\FF_2$-vector space.
 
 ::: pf
 
@@ -35,12 +35,12 @@ Choose indices $i_1,\ldots,i_s$ such that
 \[
 [a_{i_1}],\ldots,[a_{i_s}]
 \]
-form an $\mathbb F_2$-basis of $G$.
+form an $\FF_2$-basis of $G$.
 
 
 ::: pf-proof
 
-The finitely generated elementary abelian $2$-group $G$ is a finite-dimensional vector space over $\mathbb F_2$, so a basis can be selected from the given generating set.
+The finitely generated elementary abelian $2$-group $G$ is a finite-dimensional vector space over $\FF_2$, so a basis can be selected from the given generating set.
 
 :::
 
@@ -56,7 +56,7 @@ Then
 
 ::: pf-proof
 
-An $s$-dimensional vector space over $\mathbb F_2$ has exactly $2^s$ elements.
+An $s$-dimensional vector space over $\FF_2$ has exactly $2^s$ elements.
 
 :::
 

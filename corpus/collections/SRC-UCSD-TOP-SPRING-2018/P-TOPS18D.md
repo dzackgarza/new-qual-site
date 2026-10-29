@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $Y$ be a space obtained by attaching a $4$-ball, via a degree $6$ map of its boundary, to a $3$-sphere.
-Calculate the integral homology $H_*(Y \times \mathbb{RP}^2; \ZZ)$.
+Calculate the integral homology $H_*(Y \times \RP^2; \ZZ)$.
 :::
 
 ::: {.solution}
@@ -45,14 +45,14 @@ The attaching map of the $4$-cell has degree $6$, so the cellular boundary $C_4\
 :::
 
 ::: pf-step
-The integral homology of $\mathbb{RP}^2$ is
+The integral homology of $\RP^2$ is
 $$
 H_0\cong\ZZ,\qquad H_1\cong\ZZ/2,
 $$
 with all higher groups zero.
 
 ::: pf-proof
-This is the standard cellular calculation for $\mathbb{RP}^2$.
+This is the standard cellular calculation for $\RP^2$.
 :::
 
 :::
@@ -61,7 +61,7 @@ This is the standard cellular calculation for $\mathbb{RP}^2$.
 The Künneth theorem gives
 $$
 \boxed{
-H_i(Y\times\mathbb{RP}^2;\ZZ)\cong
+H_i(Y\times\RP^2;\ZZ)\cong
 \begin{cases}
 \ZZ,&i=0,\\
 \ZZ/2,&i=1,4,5,\\
@@ -71,11 +71,11 @@ H_i(Y\times\mathbb{RP}^2;\ZZ)\cong
 $$
 
 ::: pf-proof
-The tensor contribution $H_3(Y)\otimes H_1(\mathbb{RP}^2)$ is $\ZZ/2$ in degree $4$, while
+The tensor contribution $H_3(Y)\otimes H_1(\RP^2)$ is $\ZZ/2$ in degree $4$, while
 $$
 \operatorname{Tor}(\ZZ/6,\ZZ/2)\cong\ZZ/2
 $$
-contributes in degree $5$. The remaining nonzero tensor terms are $H_0(Y)\otimes H_0(\mathbb{RP}^2)\cong\ZZ$ in degree $0$, $H_0(Y)\otimes H_1(\mathbb{RP}^2)\cong\ZZ/2$ in degree $1$, and $H_3(Y)\otimes H_0(\mathbb{RP}^2)\cong\ZZ/6$ in degree $3$.
+contributes in degree $5$. The remaining nonzero tensor terms are $H_0(Y)\otimes H_0(\RP^2)\cong\ZZ$ in degree $0$, $H_0(Y)\otimes H_1(\RP^2)\cong\ZZ/2$ in degree $1$, and $H_3(Y)\otimes H_0(\RP^2)\cong\ZZ/6$ in degree $3$.
 :::
 
 :::
@@ -83,7 +83,7 @@ contributes in degree $5$. The remaining nonzero tensor terms are $H_0(Y)\otimes
 ::: pf-step
 If the notation $H^*$ in the question was intended literally, the integral cohomology groups are
 $$
-H^i(Y\times\mathbb{RP}^2;\ZZ)\cong
+H^i(Y\times\RP^2;\ZZ)\cong
 \begin{cases}
 \ZZ,&i=0,\\
 \ZZ/2,&i=2,5,6,\\

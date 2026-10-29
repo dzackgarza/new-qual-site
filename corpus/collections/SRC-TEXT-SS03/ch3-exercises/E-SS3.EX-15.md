@@ -45,7 +45,7 @@ For $n>k$, letting $R\to\infty$ yields $a_n=0$. Hence $f$ is a polynomial of deg
 \[
 I=\{e^{it}:\theta<t<\varphi\}
 \]
-on which $f(z)\to0$ uniformly as $|z|\to1$ inside the sector. Thus defining $f=0$ on $I$ gives a continuous extension to that arc. Fix a smaller open subarc $I'\Subset I$. After rotating coordinates, a neighborhood of each point of $I'$ is conformally equivalent to a half-disc whose diameter lies on the real axis, and the boundary values of $f$ there are identically $0$, hence real. By the Schwarz reflection principle, $f$ extends holomorphically across $I'$, with the extension vanishing on $I'$. The identity theorem then forces the extension, and hence $f$ on $\mathbb D$, to vanish identically.
+on which $f(z)\to0$ uniformly as $|z|\to1$ inside the sector. Thus defining $f=0$ on $I$ gives a continuous extension to that arc. Fix a smaller open subarc $I'\Subset I$. After rotating coordinates, a neighborhood of each point of $I'$ is conformally equivalent to a half-disc whose diameter lies on the real axis, and the boundary values of $f$ there are identically $0$, hence real. By the Schwarz reflection principle, $f$ extends holomorphically across $I'$, with the extension vanishing on $I'$. The identity theorem then forces the extension, and hence $f$ on $\DD$, to vanish identically.
 
 (c) Let
 \[

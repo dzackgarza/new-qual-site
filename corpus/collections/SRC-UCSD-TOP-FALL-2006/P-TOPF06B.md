@@ -24,7 +24,7 @@ Give an example of a space $X$ such that $H^*(X; \ZZ) = \ZZ$ for all $0 \leq i <
 ::: pf-step
 Take
 $$
-X=S^1\times\mathbb{CP}^{\infty}.
+X=S^1\times\CP^{\infty}.
 $$
 
 ::: pf-proof
@@ -32,7 +32,7 @@ We use the standard integral cohomology rings
 $$
 H^*(S^1;\ZZ)=\Lambda_{\ZZ}(u),\quad |u|=1,
 \qquad
-H^*(\mathbb{CP}^{\infty};\ZZ)=\ZZ[c],\quad |c|=2.
+H^*(\CP^{\infty};\ZZ)=\ZZ[c],\quad |c|=2.
 $$
 :::
 

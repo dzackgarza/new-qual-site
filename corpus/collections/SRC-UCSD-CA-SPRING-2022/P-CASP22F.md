@@ -15,19 +15,19 @@ review: draft
 ---
 
 ::: {.problem}
-Let $h$ be a bounded harmonic function on the unit disc $\mathbb{D} = \{z : |z| < 1\}$.
+Let $h$ be a bounded harmonic function on the unit disc $\DD = \{z : |z| < 1\}$.
 Assume that
 $$
 \limsup_{z \to a} h(z) \leq 0
 $$
-for all $a \in \partial \mathbb{D} \setminus \{1\}$.
-Show that $h \leq 0$ in $\mathbb{D}$.
+for all $a \in \partial \DD \setminus \{1\}$.
+Show that $h \leq 0$ in $\DD$.
 :::
 
 ::: {.solution}
-Let $|h|\le M$. Fix $z\in\mathbb D$ and $\varepsilon>0$. Choose a small open
-arc $I\subset\partial\mathbb D$ centered at $1$. By compactness of
-$\partial\mathbb D\setminus I$ and the boundary limsup hypothesis, there is
+Let $|h|\le M$. Fix $z\in\DD$ and $\varepsilon>0$. Choose a small open
+arc $I\subset\partial\DD$ centered at $1$. By compactness of
+$\partial\DD\setminus I$ and the boundary limsup hypothesis, there is
 $r_0<1$ such that
 \[
 h(re^{it})\le\varepsilon
@@ -52,5 +52,5 @@ $I$. Hence $h(z)\le\varepsilon$. Finally let $\varepsilon\downarrow0$ to obtain
 \[
 h(z)\le0.
 \]
-Since $z$ was arbitrary, $h\le0$ throughout $\mathbb D$.
+Since $z$ was arbitrary, $h\le0$ throughout $\DD$.
 :::

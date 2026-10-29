@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Show that for any $n \geq 1$ the natural quotient map $S^n \to \mathbb{RP}^n$ is not null-homotopic.
+Show that for any $n \geq 1$ the natural quotient map $S^n \to \RP^n$ is not null-homotopic.
 :::
 
 ::: {.solution}
@@ -24,7 +24,7 @@ Show that for any $n \geq 1$ the natural quotient map $S^n \to \mathbb{RP}^n$ is
 
 ::: {.pf-step #s1}
 
-For $n=1$, the covering $p:S^1\to\mathbb{RP}^1\cong S^1$ has degree $2$, hence is not null-homotopic.
+For $n=1$, the covering $p:S^1\to\RP^1\cong S^1$ has degree $2$, hence is not null-homotopic.
 
 ::: pf-proof
 
@@ -38,7 +38,7 @@ A null-homotopic map $S^1\to S^1$ has degree $0$.
 
 For $n\ge2$, a covering map induces an isomorphism on $\pi_n$:
 $$
-p_*:\pi_n(S^n)\xrightarrow{\cong}\pi_n(\mathbb{RP}^n).
+p_*:\pi_n(S^n)\xrightarrow{\cong}\pi_n(\RP^n).
 $$
 
 ::: pf-proof

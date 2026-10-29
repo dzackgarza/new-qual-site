@@ -59,9 +59,9 @@ in degree \(1\); all operations to \(H^n\) for \(n>1\) are zero.
 
 For \(H^2(-;\ZZ)\), use
 \[
-K(\ZZ,2)=\mathbb{CP}^\infty,
+K(\ZZ,2)=\CP^\infty,
 \qquad
-H^*(\mathbb{CP}^\infty;\ZZ)=\ZZ[x],\quad |x|=2.
+H^*(\CP^\infty;\ZZ)=\ZZ[x],\quad |x|=2.
 \]
 Therefore
 \[

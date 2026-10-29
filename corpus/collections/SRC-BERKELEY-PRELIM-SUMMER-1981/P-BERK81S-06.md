@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK81S-06
 kind: problem
-title: The symmetric nonidentity elements of $SO(3)$ form a space homeomorphic to $\mathbb{RP}^2$
+title: The symmetric nonidentity elements of $SO(3)$ form a space homeomorphic to $\RP^2$
 classification:
   areas: [prelim]
   topics: []
@@ -34,11 +34,11 @@ Let
 \[
 Q=\{A\in SO(3):A^T=A,\ A\ne I\},
 \]
-and let $\mathbb{RP}^2$ denote the space of lines through the origin in $\RR^3$.
+and let $\RP^2$ denote the space of lines through the origin in $\RR^3$.
 
-1. Show that $\mathbb{RP}^2$ and $SO(3)$ are compact metric spaces in their usual topologies.
+1. Show that $\RP^2$ and $SO(3)$ are compact metric spaces in their usual topologies.
 
-2. Show that $\mathbb{RP}^2$ and $Q$ are homeomorphic.
+2. Show that $\RP^2$ and $Q$ are homeomorphic.
 :::
 
 ::: {.solution}
@@ -124,7 +124,7 @@ to a metric inducing the usual topology on $SO(3)$.
 
 The real projective plane is the quotient
 $$
-\mathbb{RP}^2
+\RP^2
 \cong
 S^2/(u\sim-u).
 $$
@@ -141,7 +141,7 @@ spans identifies precisely antipodal pairs, giving the stated quotient.
 
 ::: {.pf-step #s5}
 
-The space $\mathbb{RP}^2$ is compact.
+The space $\RP^2$ is compact.
 
 ::: pf-proof
 
@@ -150,7 +150,7 @@ $$
 S^2\longrightarrow S^2/(u\sim-u)
 $$
 is continuous and surjective. A continuous image of a compact space is
-compact. Step [](#s4){.pf-ref} identifies the quotient with $\mathbb{RP}^2$.
+compact. Step [](#s4){.pf-ref} identifies the quotient with $\RP^2$.
 
 :::
 
@@ -158,7 +158,7 @@ compact. Step [](#s4){.pf-ref} identifies the quotient with $\mathbb{RP}^2$.
 
 ::: {.pf-step #s6}
 
-For lines $[u],[v]\in\mathbb{RP}^2$, represented by unit vectors
+For lines $[u],[v]\in\RP^2$, represented by unit vectors
 $u,v\in S^2$, define
 $$
 d([u],[v])
@@ -166,7 +166,7 @@ d([u],[v])
 \min\{\norm{u-v},\norm{u+v}\}.
 $$
 This is a metric inducing the usual quotient topology on
-$\mathbb{RP}^2$.
+$\RP^2$.
 
 ::: pf-proof
 
@@ -188,7 +188,7 @@ induces the quotient topology.
 
 ::: {.pf-step #s7}
 
-Consequently, $\mathbb{RP}^2$ is a compact metric space in its usual
+Consequently, $\RP^2$ is a compact metric space in its usual
 topology.
 
 ::: pf-proof
@@ -279,7 +279,7 @@ orthogonal summands, so the operators are equal.
 
 ::: pf-step
 
-For a line $L=[u]\in\mathbb{RP}^2$, with $u$ a unit vector, define
+For a line $L=[u]\in\RP^2$, with $u$ a unit vector, define
 $$
 \Phi(L)=2uu^T-I.
 $$
@@ -313,7 +313,7 @@ on the line $L$.
 
 The map
 $$
-\Phi:\mathbb{RP}^2\longrightarrow Q
+\Phi:\RP^2\longrightarrow Q
 $$
 is bijective.
 
@@ -351,7 +351,7 @@ is polynomial in the coordinates of $u$, hence continuous. It is invariant
 under $u\mapsto-u$, so by the universal property of the quotient topology
 it descends to a continuous map
 $$
-\Phi:\mathbb{RP}^2\longrightarrow Q.
+\Phi:\RP^2\longrightarrow Q.
 $$
 
 :::
@@ -363,13 +363,13 @@ $$
 The map $\Phi$ is a homeomorphism:
 $$
 \boxed{
-\mathbb{RP}^2\cong Q.
+\RP^2\cong Q.
 }
 $$
 
 ::: pf-proof
 
-By step [](#s7){.pf-ref}, $\mathbb{RP}^2$ is compact. The space $Q$ is a subspace of
+By step [](#s7){.pf-ref}, $\RP^2$ is compact. The space $Q$ is a subspace of
 the metric space $SO(3)$, hence is Hausdorff. Steps [](#s12){.pf-ref} and [](#s13){.pf-ref} show that
 $\Phi$ is a continuous bijection from a compact space to a Hausdorff
 space. Such a map is a homeomorphism.

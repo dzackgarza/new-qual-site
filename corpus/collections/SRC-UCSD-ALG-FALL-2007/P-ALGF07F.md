@@ -84,12 +84,12 @@ There are quadratic Galois extensions in characteristic $2$.
 ::: pf-proof
 Take
 \[
-K=\mathbb F_2
+K=\FF_2
 \]
 and
 \[
-F=\mathbb F_4
-=\mathbb F_2[\alpha],
+F=\FF_4
+=\FF_2[\alpha],
 \]
 where $\alpha$ satisfies
 \[
@@ -99,7 +99,7 @@ The polynomial
 \[
 T^2+T+1
 \]
-has no root in $\mathbb F_2$, so it is irreducible and
+has no root in $\FF_2$, so it is irreducible and
 \[
 [F:K]=2.
 \]
@@ -112,7 +112,7 @@ Its derivative is $1$, so it is separable, and its two roots are
 both of which lie in $F$.
 Thus $F$ is its splitting field over $K$, so
 \[
-\mathbb F_4/\mathbb F_2
+\FF_4/\FF_2
 \]
 is Galois.
 Its nontrivial automorphism is the Frobenius map
@@ -127,9 +127,9 @@ x\longmapsto x^2.
 There are quadratic extensions in characteristic $2$ which are not Galois.
 
 ::: pf-proof
-Let $t$ be transcendental over $\mathbb F_2$, set
+Let $t$ be transcendental over $\FF_2$, set
 \[
-K=\mathbb F_2(t),
+K=\FF_2(t),
 \]
 and let
 \[
@@ -142,7 +142,7 @@ Indeed, if
 \[
 t=\left(\frac{a(t)}{b(t)}\right)^2
 \]
-for nonzero coprime polynomials $a,b\in\mathbb F_2[t]$, then
+for nonzero coprime polynomials $a,b\in\FF_2[t]$, then
 \[
 a(t)^2=t\,b(t)^2.
 \]

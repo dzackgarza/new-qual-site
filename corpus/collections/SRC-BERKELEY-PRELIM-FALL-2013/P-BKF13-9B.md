@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-9B
 kind: problem
-title: Number of irreducible sextics over $\mathbb F_3$
+title: Number of irreducible sextics over $\FF_3$
 classification:
   areas:
   - prelim

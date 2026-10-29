@@ -24,7 +24,7 @@ State and prove **Schwarz's Lemma** for holomorphic functions on the unit disk.
 :::
 
 ::: {.solution}
-Let $f:\mathbb D\to\mathbb D$ be holomorphic with $f(0)=0$. Schwarz's lemma states
+Let $f:\DD\to\DD$ be holomorphic with $f(0)=0$. Schwarz's lemma states
 $$
 |f(z)|\le |z|,\qquad |f'(0)|\le1.
 $$
@@ -38,7 +38,7 @@ Since $f(0)=0$,
 $$
 g(z)=\begin{cases}f(z)/z,&z\ne0,\\ f'(0),&z=0\end{cases}
 $$
-is holomorphic on $\mathbb D$.
+is holomorphic on $\DD$.
 
 :::
 

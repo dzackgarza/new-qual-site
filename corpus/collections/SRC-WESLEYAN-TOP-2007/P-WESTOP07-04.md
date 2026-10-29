@@ -39,7 +39,7 @@ S^2,
 \quad
 \#^g(S^1\times S^1)\ (g\ge1),
 \quad
-\#^k\mathbb{RP}^2\ (k\ge1).}
+\#^k\RP^2\ (k\ge1).}
 $$
 
 
@@ -73,7 +73,7 @@ $$
 $$
 and
 $$
-\chi(\#^k\mathbb{RP}^2)=2-k.
+\chi(\#^k\RP^2)=2-k.
 $$
 
 :::
@@ -374,10 +374,10 @@ $$
 \boxed{
 X
 \cong
-\mathbb{RP}^2
-\#\mathbb{RP}^2
-\#\mathbb{RP}^2
-\#\mathbb{RP}^2.}
+\RP^2
+\#\RP^2
+\#\RP^2
+\#\RP^2.}
 $$
 
 
@@ -420,7 +420,7 @@ $$
 \boxed{
 N_k
 =
-\#^k\mathbb{RP}^2,
+\#^k\RP^2,
 \qquad
 k\ge1.}
 $$
@@ -664,7 +664,7 @@ is nonorientable.
 Therefore
 $$
 \boxed{
-X_1\cong\mathbb{RP}^2}.
+X_1\cong\RP^2}.
 $$
 
 
@@ -695,7 +695,7 @@ k=1.
 $$
 Hence
 $$
-X_1\cong N_1=\mathbb{RP}^2.
+X_1\cong N_1=\RP^2.
 $$
 
 :::
@@ -828,7 +828,7 @@ X_2
 \cong
 N_5
 =
-\#^5\mathbb{RP}^2}.
+\#^5\RP^2}.
 $$
 
 
@@ -869,10 +869,10 @@ $$
 \boxed{
 X
 \cong
-\mathbb{RP}^2
+\RP^2
 \sqcup
 \left(
-\#^5\mathbb{RP}^2
+\#^5\RP^2
 \right)}.
 $$
 

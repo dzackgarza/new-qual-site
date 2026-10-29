@@ -22,11 +22,11 @@ Prove that $f(z) = z$ for all $z \in G$.
 ::: {.solution}
 By the Riemann mapping theorem, choose a conformal bijection
 \[
-\phi:G\to\mathbb D.
+\phi:G\to\DD.
 \]
 Set
 \[
-g=\phi\circ f\circ\phi^{-1}:\mathbb D\to\mathbb D.
+g=\phi\circ f\circ\phi^{-1}:\DD\to\DD.
 \]
 Then $g$ fixes the two distinct points
 \[
@@ -41,7 +41,7 @@ and define
 \[
 h=\psi_\alpha\circ g\circ\psi_\alpha^{-1}.
 \]
-Then $h:\mathbb D\to\mathbb D$ is holomorphic, $h(0)=0$, and it fixes the
+Then $h:\DD\to\DD$ is holomorphic, $h(0)=0$, and it fixes the
 nonzero point $\psi_\alpha(\beta)$.
 
 Schwarz's lemma gives $|h(z)|\le|z|$. Since equality holds at the nonzero fixed

@@ -18,11 +18,11 @@ audit:
 
 ::: {.problem}
 Suppose $f(X) \in \ZZ[X]$ is monic irreducible of degree $7$, has a square discriminant, and has exactly three real roots.
-Prove that $G_f$ is isomorphic either to $A_7$ or to the group $G_{168} = \mathrm{GL}(3, \mathbb{F}_2) \cong \mathrm{PSL}(2, \mathbb{F}_7)$.
-Note that $G_{168}$ is isomorphic to a subgroup of $S_7$, in fact of $A_7$, via the action of $G_{168} = \mathrm{GL}_3(\mathbb{F}_2)$ on the $7$ nonzero vectors in $\mathbb{F}_2^3$.
+Prove that $G_f$ is isomorphic either to $A_7$ or to the group $G_{168} = \mathrm{GL}(3, \FF_2) \cong \mathrm{PSL}(2, \FF_7)$.
+Note that $G_{168}$ is isomorphic to a subgroup of $S_7$, in fact of $A_7$, via the action of $G_{168} = \mathrm{GL}_3(\FF_2)$ on the $7$ nonzero vectors in $\FF_2^3$.
 
 (By considering Sylow subgroups, especially the ones for $7$, this can be done from scratch without too much trouble.
-But it is even easier if you know that the only non-abelian simple groups of order $< 1000$ are $A_5$ of order $60 = 2^2 \cdot 3 \cdot 5$, $G_{168}$ of order $168 = 2^3 \cdot 3 \cdot 7$, $A_6$ of order $360 = 2^3 \cdot 3^2 \cdot 5$, $\mathrm{PSL}(2, \mathbb{F}_8)$ of order $504 = 2^3 \cdot 3^2 \cdot 7$, and $\mathrm{PSL}(2, \mathbb{F}_{11})$ of order $660 = 2^2 \cdot 3 \cdot 5 \cdot 11$.)
+But it is even easier if you know that the only non-abelian simple groups of order $< 1000$ are $A_5$ of order $60 = 2^2 \cdot 3 \cdot 5$, $G_{168}$ of order $168 = 2^3 \cdot 3 \cdot 7$, $A_6$ of order $360 = 2^3 \cdot 3^2 \cdot 5$, $\mathrm{PSL}(2, \FF_8)$ of order $504 = 2^3 \cdot 3^2 \cdot 7$, and $\mathrm{PSL}(2, \FF_{11})$ of order $660 = 2^2 \cdot 3 \cdot 5 \cdot 11$.)
 :::
 
 ::: {.solution}
@@ -101,7 +101,7 @@ G\le N_{S_7}(N).
 \]
 For a regular \(7\)-cycle, its normalizer is the affine group
 \[
-N_{S_7}(N)\cong \mathbb F_7\rtimes\mathbb F_7^\times
+N_{S_7}(N)\cong \FF_7\rtimes\FF_7^\times
 \]
 of order \(42\): the centralizer of a \(7\)-cycle is \(N\) itself, conjugation identifies the quotient of the normalizer by \(N\) with a subgroup of \(\operatorname{Aut}(C_7)\cong C_6\), and the six affine multipliers \(x\mapsto ax\) realize all six automorphisms. This normalizer contains an odd permutation: the affine map \(x\mapsto-x\) fixes \(0\) and acts on the other six points as three transpositions. Consequently
 \[
@@ -144,8 +144,8 @@ contrary to \(|N|\le360\). Thus \(k=1\), so \(N\) itself is nonabelian simple.
 
 By step [](#s1-2){.pf-ref}, \(N\) is transitive, and therefore \(7\mid |N|\). From the list of nonabelian simple groups of order below \(1000\) supplied in the problem, the only group of order at most \(360\) whose order is divisible by \(7\) is
 \[
-G_{168}\cong\operatorname{GL}_3(\mathbb F_2)
-\cong\operatorname{PSL}_2(\mathbb F_7).
+G_{168}\cong\operatorname{GL}_3(\FF_2)
+\cong\operatorname{PSL}_2(\FF_7).
 \]
 Thus a proper \(N\) is isomorphic to \(G_{168}\).
 

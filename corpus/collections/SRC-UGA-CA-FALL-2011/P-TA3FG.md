@@ -50,7 +50,7 @@ Convergence on $S^1$:
 
 - For any $z \in S^1$, $|z| = 1$, so $\left| \frac{z^n}{n^2} \right| = \frac{1}{n^2}$.
 - The series $\sum_{n=1}^\infty \frac{1}{n^2} < \infty$ converges ($p$-series with $p = 2 > 1$).
-- By the Weierstrass $M$-test, the series converges absolutely (and uniformly) on the entire closed disk $\overline{\mathbb{D}} = \{|z| \le 1\}$.
+- By the Weierstrass $M$-test, the series converges absolutely (and uniformly) on the entire closed disk $\overline{\DD} = \{|z| \le 1\}$.
 :::
 
 ::: pf-step
@@ -103,7 +103,7 @@ Suppose for contradiction that $f$ can be analytically continued across every po
 :::
 
 ::: pf-step
-Local extensions: For each point $w \in S^1$, there exists an open disk $D(w, r_w)$ and a holomorphic function $f_w: D(w, r_w) \to \CC$ such that $f_w(z) = f(z)$ on $D(w, r_w) \cap \mathbb{D}$.
+Local extensions: For each point $w \in S^1$, there exists an open disk $D(w, r_w)$ and a holomorphic function $f_w: D(w, r_w) \to \CC$ such that $f_w(z) = f(z)$ on $D(w, r_w) \cap \DD$.
 :::
 
 ::: pf-step
@@ -116,7 +116,7 @@ Open cover of compact $S^1$:
 ::: pf-step
 Global extension:
 
-- Define the open domain $U = \mathbb{D} \cup \bigcup_{j=1}^m D(w_j, r_j)$.
+- Define the open domain $U = \DD \cup \bigcup_{j=1}^m D(w_j, r_j)$.
 - The functions $f$ and $f_{w_j}$ agree on all pairwise intersections by the Identity Theorem for connected domains.
 - Thus they define a single holomorphic function $F: U \to \CC$ that extends $f$.
 :::
@@ -124,7 +124,7 @@ Global extension:
 ::: pf-step
 Enlarged disk:
 
-- The domain $U$ is an open set containing the compact set $\overline{\mathbb{D}} = \{|z| \le 1\}$.
+- The domain $U$ is an open set containing the compact set $\overline{\DD} = \{|z| \le 1\}$.
 - By the Lebesgue Covering Lemma (or distance from a compact set to the complement), there exists $\varepsilon > 0$ such that the disk $D(0, 1 + \varepsilon) \subseteq U$.
 :::
 

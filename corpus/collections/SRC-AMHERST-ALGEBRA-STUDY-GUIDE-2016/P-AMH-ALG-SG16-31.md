@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMH-ALG-SG16-31
 kind: problem
-title: Reducibility of $x^2+3$ over $\mathbb F_7$ and an intermediate ideal
+title: Reducibility of $x^2+3$ over $\FF_7$ and an intermediate ideal
 classification:
   areas:
   - algebra
@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-(March 2008) Let $g(x)=x^2+3\in\mathbb{F}_7[x]$, where $\mathbb{F}_7=\{0,1,2,3,4,5,6\}$ is the field of seven elements.
-(a) Prove that $g$ is reducible in $\mathbb{F}_7[x]$.
-(b) Let $\langle g\rangle\subseteq\mathbb{F}_7[x]$ denote the principal ideal $\{gh\mid h\in\mathbb{F}_7[x]\}$.
-Find an ideal $I\subseteq\mathbb{F}_7[x]$ such that $\langle g\rangle\subsetneq I\subsetneq\mathbb{F}_7[x]$.
+(March 2008) Let $g(x)=x^2+3\in\FF_7[x]$, where $\FF_7=\{0,1,2,3,4,5,6\}$ is the field of seven elements.
+(a) Prove that $g$ is reducible in $\FF_7[x]$.
+(b) Let $\langle g\rangle\subseteq\FF_7[x]$ denote the principal ideal $\{gh\mid h\in\FF_7[x]\}$.
+Find an ideal $I\subseteq\FF_7[x]$ such that $\langle g\rangle\subsetneq I\subsetneq\FF_7[x]$.
 :::
 
 ::: {.solution}

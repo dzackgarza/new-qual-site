@@ -54,7 +54,7 @@ a&r\\
 c&D
 \end{pmatrix},
 \]
-where $a\in\mathbb F$, $r$ is a $1\times(n-1)$ row, $c$ is an $(n-1)\times1$ column, and $D$ is an $(n-1)\times(n-1)$ matrix.
+where $a\in\FF$, $r$ is a $1\times(n-1)$ row, $c$ is an $(n-1)\times1$ column, and $D$ is an $(n-1)\times(n-1)$ matrix.
 Then
 \[
 a\ne0.

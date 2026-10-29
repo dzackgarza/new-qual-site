@@ -61,7 +61,7 @@ $\bar x^2\bar y=\bar x$ we get $\bar x(\bar x\bar y-1)=0$, so
 $\bar x\bar y=1$ in the domain $R/\mathfrak p$. Hence $R/\mathfrak p$ is a
 field. A Boolean ring is von Neumann regular with $y=1$; there, each
 $R/\mathfrak p$ is a domain in which $\bar x(\bar x-1)=0$ for every $\bar x$,
-so $R/\mathfrak p\cong\mathbb F_2$.
+so $R/\mathfrak p\cong\FF_2$.
 :::
 
 :::

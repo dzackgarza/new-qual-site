@@ -17,17 +17,17 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Show that a harmonic function $u:\mathbb D\to\RR$ is uniformly continuous if and only if it admits the representation
+Problem 8. Show that a harmonic function $u:\DD\to\RR$ is uniformly continuous if and only if it admits the representation
 \[
 u(z)=\frac1{2\pi}\int_0^{2\pi}\operatorname{Re}\!\left(\frac{e^{i\theta}+z}{e^{i\theta}-z}\right)f(e^{i\theta})\,d\theta,
-\qquad z\in\mathbb D,
+\qquad z\in\DD,
 \]
-with $f:\partial\mathbb D\to\RR$ continuous.
+with $f:\partial\DD\to\RR$ continuous.
 :::
 
 ::: {.solution}
 
-For $z\in\mathbb D$ and $\zeta\in\partial\mathbb D$, write
+For $z\in\DD$ and $\zeta\in\partial\DD$, write
 \[
 P(z,\zeta)
 \coloneqq
@@ -40,22 +40,22 @@ P(z,\zeta)
 
 ::: {.pf-step #s1}
 
-If $u$ is uniformly continuous on $\mathbb D$, then $u$ has a unique continuous extension $f:\overline{\mathbb D}\to\RR$.
+If $u$ is uniformly continuous on $\DD$, then $u$ has a unique continuous extension $f:\overline{\DD}\to\RR$.
 
 
 ::: pf-proof
 
-Let $\zeta\in\partial\mathbb D$ and choose any sequence $(z_n)$ in $\mathbb D$ with $z_n\to\zeta$. Since $(z_n)$ is Cauchy and $u$ is uniformly continuous, $(u(z_n))$ is Cauchy in $\RR$, hence convergent.
+Let $\zeta\in\partial\DD$ and choose any sequence $(z_n)$ in $\DD$ with $z_n\to\zeta$. Since $(z_n)$ is Cauchy and $u$ is uniformly continuous, $(u(z_n))$ is Cauchy in $\RR$, hence convergent.
 
-If $(w_n)$ is another sequence in $\mathbb D$ with $w_n\to\zeta$, then $|z_n-w_n|\to0$, so uniform continuity gives $|u(z_n)-u(w_n)|\to0$. Thus the limit depends only on $\zeta$; define it to be $f(\zeta)$, and set $f=u$ on $\mathbb D$.
+If $(w_n)$ is another sequence in $\DD$ with $w_n\to\zeta$, then $|z_n-w_n|\to0$, so uniform continuity gives $|u(z_n)-u(w_n)|\to0$. Thus the limit depends only on $\zeta$; define it to be $f(\zeta)$, and set $f=u$ on $\DD$.
 
-To prove continuity at a boundary point $\zeta$, fix $\varepsilon>0$ and choose $\delta>0$ from uniform continuity of $u$. If $x\in\overline{\mathbb D}$ and $|x-\zeta|<\delta/2$, choose $x_n\in\mathbb D$ with $x_n\to x$ and $\zeta_n\in\mathbb D$ with $\zeta_n\to\zeta$. For all sufficiently large $n$,
+To prove continuity at a boundary point $\zeta$, fix $\varepsilon>0$ and choose $\delta>0$ from uniform continuity of $u$. If $x\in\overline{\DD}$ and $|x-\zeta|<\delta/2$, choose $x_n\in\DD$ with $x_n\to x$ and $\zeta_n\in\DD$ with $\zeta_n\to\zeta$. For all sufficiently large $n$,
 \[
 |x_n-\zeta_n|
 \le |x_n-x|+|x-\zeta|+|\zeta-\zeta_n|
 <\delta.
 \]
-Hence $|u(x_n)-u(\zeta_n)|<\varepsilon$, and passage to the limit gives $|f(x)-f(\zeta)|\le\varepsilon$. Therefore $f$ is continuous on $\overline{\mathbb D}$. Uniqueness follows because $\mathbb D$ is dense in $\overline{\mathbb D}$.
+Hence $|u(x_n)-u(\zeta_n)|<\varepsilon$, and passage to the limit gives $|f(x)-f(\zeta)|\le\varepsilon$. Therefore $f$ is continuous on $\overline{\DD}$. Uniqueness follows because $\DD$ is dense in $\overline{\DD}$.
 
 :::
 
@@ -66,13 +66,13 @@ Hence $|u(x_n)-u(\zeta_n)|<\varepsilon$, and passage to the limit gives $|f(x)-f
 Under the hypothesis of step [](#s1){.pf-ref},
 \[
 u(z)=\frac1{2\pi}\int_0^{2\pi}P(z,e^{i\theta})f(e^{i\theta})\,d\theta
-\qquad (z\in\mathbb D).
+\qquad (z\in\DD).
 \]
 
 
 ::: pf-proof
 
-Fix $z=re^{i\varphi}\in\mathbb D$ and choose $R$ with $r<R<1$. Since $u$ is harmonic on the closed disk $\{|w|\le R\}$, the Poisson formula on that disk gives
+Fix $z=re^{i\varphi}\in\DD$ and choose $R$ with $r<R<1$. Since $u$ is harmonic on the closed disk $\{|w|\le R\}$, the Poisson formula on that disk gives
 \[
 u(z)
 =
@@ -80,7 +80,7 @@ u(z)
 P\!\left(\frac zR,e^{i\theta}\right)
 u(Re^{i\theta})\,d\theta.
 \]
-As $R\uparrow1$, continuity of $f$ on the compact disk $\overline{\mathbb D}$ implies
+As $R\uparrow1$, continuity of $f$ on the compact disk $\overline{\DD}$ implies
 \[
 \sup_{\theta}|u(Re^{i\theta})-f(e^{i\theta})|\longrightarrow0.
 \]
@@ -98,13 +98,13 @@ uniformly in $\theta$. Passing to the limit in the integral yields the claimed r
 
 ::: {.pf-step #s3}
 
-Conversely, suppose that $f:\partial\mathbb D\to\RR$ is continuous and that
+Conversely, suppose that $f:\partial\DD\to\RR$ is continuous and that
 \[
 u(z)=\frac1{2\pi}\int_0^{2\pi}P(z,e^{i\theta})f(e^{i\theta})\,d\theta.
 \]
-Then for every $\zeta_0\in\partial\mathbb D$,
+Then for every $\zeta_0\in\partial\DD$,
 \[
-\lim_{z\to\zeta_0,\ z\in\mathbb D}u(z)=f(\zeta_0).
+\lim_{z\to\zeta_0,\ z\in\DD}u(z)=f(\zeta_0).
 \]
 
 
@@ -112,7 +112,7 @@ Then for every $\zeta_0\in\partial\mathbb D$,
 
 ::: {.pf-step #s3-1}
 
-For every $z\in\mathbb D$,
+For every $z\in\DD$,
 \[
 \frac1{2\pi}\int_0^{2\pi}P(z,e^{i\theta})\,d\theta=1.
 \]
@@ -128,7 +128,7 @@ The Poisson kernel is the harmonic extension of the constant boundary function $
 
 ::: pf-step
 
-Fix $\varepsilon>0$. There is an open arc $I\subset\partial\mathbb D$ containing $\zeta_0$ such that
+Fix $\varepsilon>0$. There is an open arc $I\subset\partial\DD$ containing $\zeta_0$ such that
 \[
 |f(\zeta)-f(\zeta_0)|<\varepsilon
 \qquad (\zeta\in I).
@@ -145,10 +145,10 @@ This is continuity of $f$ at $\zeta_0$.
 
 ::: {.pf-step #s3-3}
 
-If $J=\partial\mathbb D\setminus I$, then
+If $J=\partial\DD\setminus I$, then
 \[
 \sup_{\zeta\in J}P(z,\zeta)\longrightarrow0
-\qquad\text{as }z\to\zeta_0, z\in\mathbb D.
+\qquad\text{as }z\to\zeta_0, z\in\DD.
 \]
 
 
@@ -178,14 +178,14 @@ and the right-hand side tends to $0$ as $z\to\zeta_0$.
 
 ::: {.pf-step #s3-4}
 
-$u(z)\to f(\zeta_0)$ as $z\to\zeta_0$ within $\mathbb D$.
+$u(z)\to f(\zeta_0)$ as $z\to\zeta_0$ within $\DD$.
 
 
 ::: pf-proof
 
 Let
 \[
-M\coloneqq\max_{\zeta\in\partial\mathbb D}|f(\zeta)-f(\zeta_0)|.
+M\coloneqq\max_{\zeta\in\partial\DD}|f(\zeta)-f(\zeta_0)|.
 \]
 Using step [](#s3-1){.pf-ref} and splitting the boundary integral over $I$ and $J$,
 \[
@@ -224,12 +224,12 @@ Step [](#s3-4){.pf-ref} proves the claim of step [](#s3){.pf-ref}.
 
 ::: {.pf-step #s4}
 
-Under the hypothesis of step [](#s3){.pf-ref}, $u$ is uniformly continuous on $\mathbb D$.
+Under the hypothesis of step [](#s3){.pf-ref}, $u$ is uniformly continuous on $\DD$.
 
 
 ::: pf-proof
 
-Define $\widetilde u$ on $\overline{\mathbb D}$ by $\widetilde u=u$ on $\mathbb D$ and $\widetilde u=f$ on $\partial\mathbb D$. The function $u$ is continuous in $\mathbb D$, and step [](#s3){.pf-ref} shows that $\widetilde u$ is continuous at every boundary point. Thus $\widetilde u$ is continuous on the compact set $\overline{\mathbb D}$, hence uniformly continuous there. Its restriction $u$ to $\mathbb D$ is therefore uniformly continuous.
+Define $\widetilde u$ on $\overline{\DD}$ by $\widetilde u=u$ on $\DD$ and $\widetilde u=f$ on $\partial\DD$. The function $u$ is continuous in $\DD$, and step [](#s3){.pf-ref} shows that $\widetilde u$ is continuous at every boundary point. Thus $\widetilde u$ is continuous on the compact set $\overline{\DD}$, hence uniformly continuous there. Its restriction $u$ to $\DD$ is therefore uniformly continuous.
 
 :::
 

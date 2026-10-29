@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-9A
 kind: problem
-title: Order of $\operatorname{GL}_n(\mathbb F_p)$
+title: Order of $\operatorname{GL}_n(\FF_p)$
 classification:
   areas:
   - prelim
@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let p be a prime number, $\mathbb { F } _ { p }$ be the finite field of $p$ elements, and ${ \mathrm { G L } } _ { n } ( \mathbb { F } _ { p } )$ be the finite group of all invertible $n \times n$ matrices with coefficients in $\mathbb { F } _ { p } .$ . Find the order of ${ \mathrm { G L } } _ { n } ( \mathbb { F } _ { p } )$
+Let p be a prime number, $\FF _ { p }$ be the finite field of $p$ elements, and ${ \mathrm { G L } } _ { n } ( \FF _ { p } )$ be the finite group of all invertible $n \times n$ matrices with coefficients in $\FF _ { p } .$ . Find the order of ${ \mathrm { G L } } _ { n } ( \FF _ { p } )$
 :::
 
 ::: {.solution}

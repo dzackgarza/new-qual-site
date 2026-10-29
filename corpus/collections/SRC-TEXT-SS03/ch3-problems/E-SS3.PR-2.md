@@ -66,7 +66,7 @@ $T$ is a holomorphic automorphism of the disk with $T(0) = z_0$ and $T(z_0) = 0$
 
 ::: pf-proof
 
-$T$ is a Blaschke factor (an involution of $\mathbb{D}$).
+$T$ is a Blaschke factor (an involution of $\DD$).
 
 :::
 

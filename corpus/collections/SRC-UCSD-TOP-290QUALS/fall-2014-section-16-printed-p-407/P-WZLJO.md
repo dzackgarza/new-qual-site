@@ -80,11 +80,11 @@ Under this condition, both factors on the right-hand side of step [](#naturality
 As written, however, the assertion “for any field $F$” is false when the characteristic of $F$ divides $\deg f$.
 
 ::: pf-proof
-Take the degree-$p$ map $f:S^1\to S^1$, $z\mapsto z^p$, and $F=\mathbb F_p$. Then $\deg f=p\ne0$ as an integer, but
+Take the degree-$p$ map $f:S^1\to S^1$, $z\mapsto z^p$, and $F=\FF_p$. Then $\deg f=p\ne0$ as an integer, but
 $$
-f^*:H^1(S^1;\mathbb F_p)\longrightarrow H^1(S^1;\mathbb F_p)
+f^*:H^1(S^1;\FF_p)\longrightarrow H^1(S^1;\FF_p)
 $$
-is multiplication by $p=0$ in $\mathbb F_p$, hence is the zero map and is not injective. Thus the correct hypothesis is that $\operatorname{char}F$ does not divide $\deg f$ (in particular, any field works when $\deg f=\pm1$).
+is multiplication by $p=0$ in $\FF_p$, hence is the zero map and is not injective. Thus the correct hypothesis is that $\operatorname{char}F$ does not divide $\deg f$ (in particular, any field works when $\deg f=\pm1$).
 :::
 
 :::

@@ -30,12 +30,12 @@ Since
 \]
 is simply connected, the Riemann mapping theorem gives a biholomorphism
 \[
-\phi:\Omega\to\mathbb D.
+\phi:\Omega\to\DD.
 \]
 
 Define
 \[
-F=\phi\circ f\circ\phi^{-1}:\mathbb D\to\mathbb D.
+F=\phi\circ f\circ\phi^{-1}:\DD\to\DD.
 \]
 
 ::: pf
@@ -79,7 +79,7 @@ Let
 =
 \frac{\zeta-w_1}{1-\overline{w_1}\zeta}.
 \]
-Then \(\psi\) is an automorphism of \(\mathbb D\) satisfying
+Then \(\psi\) is an automorphism of \(\DD\) satisfying
 \[
 \boxed{\psi(w_1)=0}.
 \]
@@ -182,12 +182,12 @@ By Schwarz's lemma,
 \le
 |\zeta|
 \]
-for every \(\zeta\in\mathbb D\).
+for every \(\zeta\in\DD\).
 
 
 ::: pf-proof
 
-The map \(G:\mathbb D\to\mathbb D\) is holomorphic and fixes \(0\) by step [](#s1-3){.pf-ref}.
+The map \(G:\DD\to\DD\) is holomorphic and fixes \(0\) by step [](#s1-3){.pf-ref}.
 
 :::
 
@@ -228,7 +228,7 @@ The equality case of Schwarz's lemma says that if
 \[
 |G(a)|=|a|
 \]
-at some nonzero \(a\in\mathbb D\), then \(G\) is a rotation.
+at some nonzero \(a\in\DD\), then \(G\) is a rotation.
 
 :::
 
@@ -259,7 +259,7 @@ Divide by \(a\ne0\).
 Hence
 \[
 \boxed{
-G=\operatorname{id}_{\mathbb D}}.
+G=\operatorname{id}_{\DD}}.
 \]
 
 
@@ -283,7 +283,7 @@ F
 =
 \psi^{-1}\circ G\circ\psi
 =
-\operatorname{id}_{\mathbb D}.
+\operatorname{id}_{\DD}.
 \]
 
 

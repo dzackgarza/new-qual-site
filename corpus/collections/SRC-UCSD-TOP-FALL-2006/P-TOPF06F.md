@@ -16,8 +16,8 @@ review: draft
 
 ::: {.problem}
 Let $k$ be an even integer, and let $n$ be any positive integer.
-Show that there is a map $f : S^{2n+1} \to \mathbb{RP}^{2n+1}$ of degree $k$.
-Show that there is no map from $S^{2n+1}$ to $\mathbb{RP}^{2n+1}$ of odd degree.
+Show that there is a map $f : S^{2n+1} \to \RP^{2n+1}$ of degree $k$.
+Show that there is no map from $S^{2n+1}$ to $\RP^{2n+1}$ of odd degree.
 :::
 
 ::: {.solution}
@@ -28,7 +28,7 @@ Show that there is no map from $S^{2n+1}$ to $\mathbb{RP}^{2n+1}$ of odd degree.
 
 Let
 $$
-q:S^{2n+1}\to\mathbb{RP}^{2n+1}
+q:S^{2n+1}\to\RP^{2n+1}
 $$
 be the antipodal quotient. Since $2n+1$ is odd, both manifolds are orientable and $q$ has degree $2$ after compatible choices of orientation.
 
@@ -57,7 +57,7 @@ $$
 
 ::: {.pf-step #s3}
 
-Conversely, every map $f:S^{2n+1}\to\mathbb{RP}^{2n+1}$ lifts through $q$ to a map $\widetilde f:S^{2n+1}\to S^{2n+1}$.
+Conversely, every map $f:S^{2n+1}\to\RP^{2n+1}$ lifts through $q$ to a map $\widetilde f:S^{2n+1}\to S^{2n+1}$.
 
 ::: pf-proof
 

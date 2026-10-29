@@ -90,26 +90,26 @@ Traversing the boundary circle of the $2$-cell according to this word means goin
 The resulting CW complex is homeomorphic to the real projective plane:
 \[
 \boxed{
-X_G\cong\mathbb{RP}^2.
+X_G\cong\RP^2.
 }
 \]
 
 
 ::: pf-proof
 
-A standard CW decomposition of $\mathbb{RP}^2$ has one cell in each dimension $0,1,2$. Its $1$-skeleton is
+A standard CW decomposition of $\RP^2$ has one cell in each dimension $0,1,2$. Its $1$-skeleton is
 \[
-\mathbb{RP}^1\cong S^1,
+\RP^1\cong S^1,
 \]
 and the $2$-cell is attached along the quotient map
 \[
-S^1\to\mathbb{RP}^1,
+S^1\to\RP^1,
 \]
 which has degree $2$ after identifying
 \[
-\mathbb{RP}^1\cong S^1.
+\RP^1\cong S^1.
 \]
-Thus its CW attaching data agree exactly with steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}, so the presentation complex is homeomorphic to $\mathbb{RP}^2$.
+Thus its CW attaching data agree exactly with steps [](#s1-1){.pf-ref} through [](#s1-3){.pf-ref}, so the presentation complex is homeomorphic to $\RP^2$.
 
 :::
 
@@ -119,7 +119,7 @@ Thus its CW attaching data agree exactly with steps [](#s1-1){.pf-ref} through [
 
 The quotient map
 \[
-p:S^2\to\mathbb{RP}^2,
+p:S^2\to\RP^2,
 \qquad
 p(v)=[v],
 \]
@@ -140,7 +140,7 @@ U\xrightarrow{\cong}p(U),
 \qquad
 -U\xrightarrow{\cong}p(U).
 \]
-Hence every point of $\mathbb{RP}^2$ has an evenly covered neighborhood, so $p$ is a two-sheeted covering.
+Hence every point of $\RP^2$ has an evenly covered neighborhood, so $p$ is a two-sheeted covering.
 
 :::
 
@@ -177,7 +177,7 @@ Therefore the covering in step [](#s1-5){.pf-ref} is the universal cover, and
 
 By step [](#s1-4){.pf-ref},
 \[
-X_G\cong\mathbb{RP}^2.
+X_G\cong\RP^2.
 \]
 Step [](#s1-5){.pf-ref} gives a covering
 \[

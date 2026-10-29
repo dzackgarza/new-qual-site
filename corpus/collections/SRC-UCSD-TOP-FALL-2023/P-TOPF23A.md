@@ -31,8 +31,8 @@ Closed homotopy-equivalent manifolds have the same dimension.
 ::: pf-proof
 
 For every closed connected $d$-manifold $P$, mod-$2$ Poincaré duality gives
-$$H_d(P;\mathbb F_2)\cong\mathbb F_2,$$
-while $H_i(P;\mathbb F_2)=0$ for $i>d$. Homotopy equivalence preserves homology, so the largest degree with nonzero mod-$2$ homology is both $m$ and $n$. Hence $m=n$.
+$$H_d(P;\FF_2)\cong\FF_2,$$
+while $H_i(P;\FF_2)=0$ for $i>d$. Homotopy equivalence preserves homology, so the largest degree with nonzero mod-$2$ homology is both $m$ and $n$. Hence $m=n$.
 
 :::
 

@@ -46,7 +46,7 @@ We derive a contradiction.
 
 The map descends to
 $$
-\bar f:\mathbb{RP}^n\to\mathbb{RP}^m.
+\bar f:\RP^n\to\RP^m.
 $$
 
 ::: pf-proof
@@ -59,11 +59,11 @@ Equivariance sends antipodal orbits to antipodal orbits.
 
 ::: {.pf-step #s3}
 
-The induced map on $H^1(-;\mathbb F_2)$ sends the generator $u\in H^1(\mathbb{RP}^m;\mathbb F_2)$ to the generator $v\in H^1(\mathbb{RP}^n;\mathbb F_2)$.
+The induced map on $H^1(-;\FF_2)$ sends the generator $u\in H^1(\RP^m;\FF_2)$ to the generator $v\in H^1(\RP^n;\FF_2)$.
 
 ::: pf-proof
 
-A generator of $\pi_1(\mathbb{RP}^n)$ lifts to a path from $x$ to $-x$. Its image under $f$ runs from $f(x)$ to $-f(x)$, so its projection is the nontrivial loop in $\mathbb{RP}^m$. Thus $\bar f_*$ is nontrivial on $\pi_1\cong\ZZ/2$, hence $\bar f^*$ is nontrivial, and therefore an isomorphism, on one-dimensional $H^1(-;\mathbb F_2)$.
+A generator of $\pi_1(\RP^n)$ lifts to a path from $x$ to $-x$. Its image under $f$ runs from $f(x)$ to $-f(x)$, so its projection is the nontrivial loop in $\RP^m$. Thus $\bar f_*$ is nontrivial on $\pi_1\cong\ZZ/2$, hence $\bar f^*$ is nontrivial, and therefore an isomorphism, on one-dimensional $H^1(-;\FF_2)$.
 
 :::
 
@@ -85,7 +85,7 @@ because $m+1\le n$.
 
 Use
 $$
-H^*(\mathbb{RP}^r;\mathbb F_2)=\mathbb F_2[t]/(t^{r+1}).
+H^*(\RP^r;\FF_2)=\FF_2[t]/(t^{r+1}).
 $$
 
 :::

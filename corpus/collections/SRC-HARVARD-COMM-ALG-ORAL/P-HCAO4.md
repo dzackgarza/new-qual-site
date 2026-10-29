@@ -59,7 +59,7 @@ I=(2,x).
 \]
 It is proper, since the quotient map
 \[
-\ZZ[x]\to\mathbb F_2,
+\ZZ[x]\to\FF_2,
 \qquad
 f(x)\mapsto f(0)\bmod2
 \]

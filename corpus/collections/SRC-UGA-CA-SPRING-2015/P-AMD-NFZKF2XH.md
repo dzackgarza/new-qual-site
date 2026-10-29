@@ -19,14 +19,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $\displaystyle{\psi_{\alpha}(z)=\frac{\alpha-z}{1-\bar{\alpha}z}}$ with $|\alpha|<1$ and ${\mathbb D}=\{z:\ |z|<1\}$.
+Let $\displaystyle{\psi_{\alpha}(z)=\frac{\alpha-z}{1-\bar{\alpha}z}}$ with $|\alpha|<1$ and ${\DD}=\{z:\ |z|<1\}$.
 Prove that
 
-- $\displaystyle{\frac{1}{\pi}\iint_{{\mathbb D}} |\psi'_{\alpha}|^2 dx dy =1}$.
+- $\displaystyle{\frac{1}{\pi}\iint_{{\DD}} |\psi'_{\alpha}|^2 dx dy =1}$.
 
 - Show that
   $$
-  \frac{1}{\pi}\iint_{{\mathbb D}} |\psi'_{\alpha}| dx dy
+  \frac{1}{\pi}\iint_{{\DD}} |\psi'_{\alpha}| dx dy
   =\frac{1-|\alpha|^2}{|\alpha|^2}\log \frac{1}{1-|\alpha|^2}.
   $$
 
@@ -36,11 +36,11 @@ Prove that $\displaystyle{f(z)=-\frac{1}{2}\left(z+\frac{1}{z}\right)}$ is a con
 ::: {.solution}
 **Goal:**
 
-1. For $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha}z}$ with $|\alpha| < 1$, prove that $\frac{1}{\pi}\iint_{\mathbb{D}} |\psi_\alpha'(z)|^2 \,dx\,dy = 1$.
+1. For $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha}z}$ with $|\alpha| < 1$, prove that $\frac{1}{\pi}\iint_{\DD} |\psi_\alpha'(z)|^2 \,dx\,dy = 1$.
 
-2. Prove that $\frac{1}{\pi}\iint_{\mathbb{D}} |\psi_\alpha'(z)| \,dx\,dy = \frac{1-|\alpha|^2}{|\alpha|^2}\log\left(\frac{1}{1-|\alpha|^2}\right)$ (for $\alpha \neq 0$, with limit $1$ as $\alpha \to 0$).
+2. Prove that $\frac{1}{\pi}\iint_{\DD} |\psi_\alpha'(z)| \,dx\,dy = \frac{1-|\alpha|^2}{|\alpha|^2}\log\left(\frac{1}{1-|\alpha|^2}\right)$ (for $\alpha \neq 0$, with limit $1$ as $\alpha \to 0$).
 
-3. Prove that $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ is a conformal map from the upper half-disk $\mathbb{D}^+ = \{z = x+iy : |z| < 1, y > 0\}$ to the upper half-plane $\mathbb{H} = \{w = u+iv : v > 0\}$.
+3. Prove that $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ is a conformal map from the upper half-disk $\DD^+ = \{z = x+iy : |z| < 1, y > 0\}$ to the upper half-plane $\mathbb{H} = \{w = u+iv : v > 0\}$.
 
 * * *
 
@@ -49,13 +49,13 @@ Prove that $\displaystyle{f(z)=-\frac{1}{2}\left(z+\frac{1}{z}\right)}$ is a con
 ::: pf
 
 ::: pf-step
-**$\psi_\alpha$ is a biholomorphic automorphism of the unit disk $\mathbb{D}$.**
+**$\psi_\alpha$ is a biholomorphic automorphism of the unit disk $\DD$.**
 
 ::: pf-proof
 
 ::: pf-step
 $\psi_\alpha$ is a Möbius transformation with pole at $z = 1/\bar{\alpha}$.
-Since $|\alpha| < 1$, $|1/\bar{\alpha}| > 1$, so $\psi_\alpha$ is holomorphic in a neighborhood of $\overline{\mathbb{D}}$.
+Since $|\alpha| < 1$, $|1/\bar{\alpha}| > 1$, so $\psi_\alpha$ is holomorphic in a neighborhood of $\overline{\DD}$.
 
 ::: pf-proof
 Pole lies strictly outside the closed unit disk.
@@ -67,7 +67,7 @@ Pole lies strictly outside the closed unit disk.
 For $|z| = 1$, $|\psi_\alpha(z)|^2 = \frac{|\alpha - z|^2}{|1 - \bar{\alpha}z|^2} = \frac{(\alpha - z)(\bar{\alpha} - \bar{z})}{(1 - \bar{\alpha}z)(1 - \alpha \bar{z})} = \frac{|\alpha|^2 - \alpha \bar{z} - \bar{\alpha}z + 1}{1 - \alpha \bar{z} - \bar{\alpha}z + |\alpha|^2|z|^2} = 1$ (since $|z|^2=1$).
 
 ::: pf-proof
-Algebraic calculation on the boundary circle $\partial \mathbb{D}$.
+Algebraic calculation on the boundary circle $\partial \DD$.
 :::
 
 :::
@@ -76,7 +76,7 @@ Algebraic calculation on the boundary circle $\partial \mathbb{D}$.
 $\psi_\alpha(\psi_\alpha(z)) = \frac{\alpha - \frac{\alpha-z}{1-\bar{\alpha}z}}{1 - \bar{\alpha}\frac{\alpha-z}{1-\bar{\alpha}z}} = \frac{\alpha(1-\bar{\alpha}z) - (\alpha-z)}{(1-\bar{\alpha}z) - \bar{\alpha}(\alpha-z)} = \frac{z(1-|\alpha|^2)}{1-|\alpha|^2} = z$.
 
 ::: pf-proof
-$\psi_\alpha$ is its own inverse (an involution), hence a bijection of $\mathbb{D}$ onto $\mathbb{D}$.
+$\psi_\alpha$ is its own inverse (an involution), hence a bijection of $\DD$ onto $\DD$.
 :::
 
 :::
@@ -104,12 +104,12 @@ Standard real-differentiability computation for holomorphic functions.
 :::
 
 ::: pf-step
-**Compute $\frac{1}{\pi}\iint_{\mathbb{D}} |\psi_\alpha'(z)|^2 \,dx\,dy$.**
+**Compute $\frac{1}{\pi}\iint_{\DD} |\psi_\alpha'(z)|^2 \,dx\,dy$.**
 
 ::: pf-proof
 
 ::: {.pf-step #s3-1}
-By the change of variables formula for 2D integrals under the diffeomorphism $\psi_\alpha: \mathbb{D} \to \mathbb{D}$: $$\iint_{\mathbb{D}} |\psi_\alpha'(z)|^2 \,dx\,dy = \iint_{\mathbb{D}} J_{\psi_\alpha}(x,y) \,dx\,dy = \text{Area}(\psi_\alpha(\mathbb{D})) = \text{Area}(\mathbb{D}) = \pi.$$
+By the change of variables formula for 2D integrals under the diffeomorphism $\psi_\alpha: \DD \to \DD$: $$\iint_{\DD} |\psi_\alpha'(z)|^2 \,dx\,dy = \iint_{\DD} J_{\psi_\alpha}(x,y) \,dx\,dy = \text{Area}(\psi_\alpha(\DD)) = \text{Area}(\DD) = \pi.$$
 
 ::: pf-proof
 Change of variables theorem for planar integrals.
@@ -118,7 +118,7 @@ Change of variables theorem for planar integrals.
 :::
 
 ::: pf-step
-Dividing both sides by $\pi$ yields $\frac{1}{\pi}\iint_{\mathbb{D}} |\psi_\alpha'(z)|^2 \,dx\,dy = \frac{\pi}{\pi} = 1$.
+Dividing both sides by $\pi$ yields $\frac{1}{\pi}\iint_{\DD} |\psi_\alpha'(z)|^2 \,dx\,dy = \frac{\pi}{\pi} = 1$.
 
 ::: pf-proof
 Follows from step [](#s3-1){.pf-ref}.
@@ -171,8 +171,8 @@ Absolute value of step [](#s4-1){.pf-ref}.
 ::: pf-proof
 
 ::: {.pf-step #s5-1}
-Without loss of generality, assume $\alpha \neq 0$ (if $\alpha = 0$, $|\psi_0'(z)| = 1$, and $\frac{1}{\pi}\iint_{\mathbb{D}} 1\,dx\,dy = 1 = \lim_{\alpha\to 0} \frac{1-|\alpha|^2}{|\alpha|^2}\log\frac{1}{1-|\alpha|^2}$). Let $\alpha = a e^{i\phi}$ with $a = |\alpha| \in (0, 1)$.
-By rotational invariance of the disk, substituting $z \mapsto e^{i\phi} z$ allows us to assume $\alpha = a \in (0,1)$ is real: $$\iint_{\mathbb{D}} \frac{1-a^2}{|1-a z|^2} \,dx\,dy = (1-a^2) \int_0^1 r \left( \int_0^{2\pi} \frac{d\theta}{|1 - a r e^{i\theta}|^2} \right) dr.$$
+Without loss of generality, assume $\alpha \neq 0$ (if $\alpha = 0$, $|\psi_0'(z)| = 1$, and $\frac{1}{\pi}\iint_{\DD} 1\,dx\,dy = 1 = \lim_{\alpha\to 0} \frac{1-|\alpha|^2}{|\alpha|^2}\log\frac{1}{1-|\alpha|^2}$). Let $\alpha = a e^{i\phi}$ with $a = |\alpha| \in (0, 1)$.
+By rotational invariance of the disk, substituting $z \mapsto e^{i\phi} z$ allows us to assume $\alpha = a \in (0,1)$ is real: $$\iint_{\DD} \frac{1-a^2}{|1-a z|^2} \,dx\,dy = (1-a^2) \int_0^1 r \left( \int_0^{2\pi} \frac{d\theta}{|1 - a r e^{i\theta}|^2} \right) dr.$$
 
 ::: pf-proof
 Polar coordinates $z = r e^{i\theta}$ and rotation invariance of the area element $dx\,dy = r\,dr\,d\theta$.
@@ -200,7 +200,7 @@ Applied step [](#s5-2){.pf-ref} with $c = ar$.
 :::
 
 ::: {.pf-step #s5-4}
-Integrate with respect to $r$: $$\frac{1}{\pi}\iint_{\mathbb{D}} |\psi_a'(z)| \,dx\,dy = \frac{1-a^2}{\pi} \int_0^1 r \cdot \frac{2\pi}{1-a^2 r^2} \,dr = (1-a^2) \int_0^1 \frac{2r}{1-a^2 r^2} \,dr.$$
+Integrate with respect to $r$: $$\frac{1}{\pi}\iint_{\DD} |\psi_a'(z)| \,dx\,dy = \frac{1-a^2}{\pi} \int_0^1 r \cdot \frac{2\pi}{1-a^2 r^2} \,dr = (1-a^2) \int_0^1 \frac{2r}{1-a^2 r^2} \,dr.$$
 
 ::: pf-proof
 Substitution of step [](#s5-3){.pf-ref} into step [](#s5-1){.pf-ref}.
@@ -218,7 +218,7 @@ Standard calculus integration.
 :::
 
 ::: pf-step
-Multiplying by $(1-a^2)$ gives: $$\frac{1}{\pi}\iint_{\mathbb{D}} |\psi_\alpha'(z)| \,dx\,dy = \frac{1-a^2}{a^2}\log\left(\frac{1}{1-a^2}\right) = \frac{1-|\alpha|^2}{|\alpha|^2}\log\left(\frac{1}{1-|\alpha|^2}\right).$$
+Multiplying by $(1-a^2)$ gives: $$\frac{1}{\pi}\iint_{\DD} |\psi_\alpha'(z)| \,dx\,dy = \frac{1-a^2}{a^2}\log\left(\frac{1}{1-a^2}\right) = \frac{1-|\alpha|^2}{|\alpha|^2}\log\left(\frac{1}{1-|\alpha|^2}\right).$$
 
 ::: pf-proof
 Combines steps [](#s5-4){.pf-ref} and [](#s5-5){.pf-ref}.
@@ -234,20 +234,20 @@ Combines steps [](#s5-4){.pf-ref} and [](#s5-5){.pf-ref}.
 
 * * *
 
-### Part 3: Conformal Map $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ from $\mathbb{D}^+$ to $\mathbb{H}$
+### Part 3: Conformal Map $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ from $\DD^+$ to $\mathbb{H}$
 
 ::: pf
 
 ::: {.pf-step #s6}
-**$f$ is holomorphic on $\mathbb{D}^+$ with non-vanishing derivative.**
+**$f$ is holomorphic on $\DD^+$ with non-vanishing derivative.**
 
 ::: pf-proof
 
 ::: pf-step
-$f(z) = -\frac{1}{2}(z + z^{-1})$ is rational with its only pole at $z=0 \notin \mathbb{D}^+$, hence holomorphic on $\mathbb{D}^+$.
+$f(z) = -\frac{1}{2}(z + z^{-1})$ is rational with its only pole at $z=0 \notin \DD^+$, hence holomorphic on $\DD^+$.
 
 ::: pf-proof
-$0 \notin \mathbb{D}^+$ since points in $\mathbb{D}^+$ have $y = \text{Im}(z) > 0$.
+$0 \notin \DD^+$ since points in $\DD^+$ have $y = \text{Im}(z) > 0$.
 :::
 
 :::
@@ -262,11 +262,11 @@ Direct differentiation.
 :::
 
 ::: pf-step
-$f'(z) = 0 \iff z^2 = 1 \iff z = \pm 1 \notin \mathbb{D}^+$.
-Thus $f'(z) \neq 0$ for all $z \in \mathbb{D}^+$.
+$f'(z) = 0 \iff z^2 = 1 \iff z = \pm 1 \notin \DD^+$.
+Thus $f'(z) \neq 0$ for all $z \in \DD^+$.
 
 ::: pf-proof
-Points $\pm 1$ have $y=0$ and $|z|=1$, so they lie on the boundary, not in $\mathbb{D}^+$.
+Points $\pm 1$ have $y=0$ and $|z|=1$, so they lie on the boundary, not in $\DD^+$.
 :::
 
 :::
@@ -276,12 +276,12 @@ Points $\pm 1$ have $y=0$ and $|z|=1$, so they lie on the boundary, not in $\mat
 :::
 
 ::: pf-step
-**$f$ maps $\mathbb{D}^+$ into the upper half-plane $\mathbb{H}$.**
+**$f$ maps $\DD^+$ into the upper half-plane $\mathbb{H}$.**
 
 ::: pf-proof
 
 ::: pf-step
-For $z = r e^{i\theta} \in \mathbb{D}^+$ (so $0 < r < 1$ and $0 < \theta < \pi$): $$f(z) = -\frac{1}{2}\left(r e^{i\theta} + \frac{1}{r} e^{-i\theta}\right) = -\frac{1}{2}\left( r(\cos\theta + i\sin\theta) + \frac{1}{r}(\cos\theta - i\sin\theta) \right).$$
+For $z = r e^{i\theta} \in \DD^+$ (so $0 < r < 1$ and $0 < \theta < \pi$): $$f(z) = -\frac{1}{2}\left(r e^{i\theta} + \frac{1}{r} e^{-i\theta}\right) = -\frac{1}{2}\left( r(\cos\theta + i\sin\theta) + \frac{1}{r}(\cos\theta - i\sin\theta) \right).$$
 
 ::: pf-proof
 Euler's formula.
@@ -300,7 +300,7 @@ Extracting the imaginary component.
 
 ::: pf-step
 Since $0 < r < 1$, $\frac{1}{r} - r > 0$; and since $0 < \theta < \pi$, $\sin\theta > 0$.
-Thus $\text{Im}(f(z)) > 0$, so $f(\mathbb{D}^+) \subseteq \mathbb{H}$.
+Thus $\text{Im}(f(z)) > 0$, so $f(\DD^+) \subseteq \mathbb{H}$.
 
 ::: pf-proof
 Product of two strictly positive real numbers is strictly positive.
@@ -313,7 +313,7 @@ Product of two strictly positive real numbers is strictly positive.
 :::
 
 ::: {.pf-step #s8}
-**$f: \mathbb{D}^+ \to \mathbb{H}$ is bijective.**
+**$f: \DD^+ \to \mathbb{H}$ is bijective.**
 
 ::: pf-proof
 
@@ -357,7 +357,7 @@ If $|z_1| < 1$, then $|z_2| = 1/|z_1| > 1$.
 
 ::: pf-step
 From step [](#s7-2){.pf-ref}, $\text{Im}(w) = \frac{1}{2}(\frac{1}{|z_1|} - |z_1|)\sin(\arg z_1)$.
-Since $\text{Im}(w) > 0$ and $\frac{1}{|z_1|} - |z_1| > 0$, we must have $\sin(\arg z_1) > 0$, which means $\arg(z_1) \in (0, \pi)$, so $z_1 \in \mathbb{D}^+$.
+Since $\text{Im}(w) > 0$ and $\frac{1}{|z_1|} - |z_1| > 0$, we must have $\sin(\arg z_1) > 0$, which means $\arg(z_1) \in (0, \pi)$, so $z_1 \in \DD^+$.
 
 ::: pf-proof
 Sign of $\sin(\arg z_1)$ must match the sign of $\text{Im}(w)$.
@@ -366,10 +366,10 @@ Sign of $\sin(\arg z_1)$ must match the sign of $\text{Im}(w)$.
 :::
 
 ::: pf-step
-Thus, for each $w \in \mathbb{H}$, there is a unique $z \in \mathbb{D}^+$ such that $f(z) = w$.
+Thus, for each $w \in \mathbb{H}$, there is a unique $z \in \DD^+$ such that $f(z) = w$.
 
 ::: pf-proof
-Exactly one of the two quadratic roots lies in $\mathbb{D}^+$.
+Exactly one of the two quadratic roots lies in $\DD^+$.
 :::
 
 :::
@@ -379,12 +379,12 @@ Exactly one of the two quadratic roots lies in $\mathbb{D}^+$.
 :::
 
 ::: pf-step
-**Conclusion: $f$ is a conformal map (biholomorphism) from $\mathbb{D}^+$ to $\mathbb{H}$.**
+**Conclusion: $f$ is a conformal map (biholomorphism) from $\DD^+$ to $\mathbb{H}$.**
 
 ::: pf-proof
 
 ::: pf-step
-By steps [](#s6){.pf-ref} and [](#s8){.pf-ref}, $f$ is a holomorphic bijection from $\mathbb{D}^+$ to $\mathbb{H}$, hence a biholomorphism / conformal map.
+By steps [](#s6){.pf-ref} and [](#s8){.pf-ref}, $f$ is a holomorphic bijection from $\DD^+$ to $\mathbb{H}$, hence a biholomorphism / conformal map.
 
 ::: pf-proof
 A bijective holomorphic function between open domains in $\CC$ has a holomorphic inverse.

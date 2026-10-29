@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f(z) \in H({\mathbb D})$, $\text{Re}(f(z)) >0$ and $f(0)= a>0$.
+Let $f(z) \in H({\DD})$, $\text{Re}(f(z)) >0$ and $f(0)= a>0$.
 Show that
 $$
 \abs{ \frac{f(z)-a}{f(z)+a}} \leq |z|, \; \; \; |f'(0)| \leq 2a

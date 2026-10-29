@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-YUFSQW36WS
 kind: problem
-title: The group of upper-triangular unipotent $3\times 3$ matrices over $\mathbb{F}_p$
+title: The group of upper-triangular unipotent $3\times 3$ matrices over $\FF_p$
   is nonabelian, $g^p=I$ for $p$ odd, and $D_8$ versus the quaternionic group for
   $p=2$
 classification:
@@ -28,7 +28,7 @@ Let $G$ be the group of matrices of the form `\begin{align*}
 \end{pmatrix}
 .\end{align*}`{=tex}
 
-with entries in the finite field $\mathbb F_p$ of $p$ element, where $p$ is a prime.
+with entries in the finite field $\FF_p$ of $p$ element, where $p$ is a prime.
 
 - Prove that $G$ is non-abelian.
 
@@ -46,7 +46,7 @@ with entries in the finite field $\mathbb F_p$ of $p$ element, where $p$ is a pr
 
 ::: pf-step
 
-$G$ is the group of upper-triangular unipotent $3 \times 3$ matrices over $\mathbb{F}_p$, the Heisenberg group over $\mathbb{F}_p$.
+$G$ is the group of upper-triangular unipotent $3 \times 3$ matrices over $\FF_p$, the Heisenberg group over $\FF_p$.
 
 ::: pf-proof
 
@@ -98,7 +98,7 @@ If $p$ is odd, then $p \equiv 0 \pmod p$ and $\binom{p}{2} = \frac{p(p-1)}{2} \e
 
 ::: pf-proof
 
-arithmetic in $\mathbb{F}_p$.
+arithmetic in $\FF_p$.
 
 :::
 
@@ -122,7 +122,7 @@ For $p = 2$, $G$ has order $2^3 = 8$.
 
 ::: pf-proof
 
-there are $p^3 = 8$ choices of $(a, b, c) \in \mathbb{F}_2^3$.
+there are $p^3 = 8$ choices of $(a, b, c) \in \FF_2^3$.
 
 :::
 

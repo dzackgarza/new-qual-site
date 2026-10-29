@@ -42,14 +42,14 @@ All polynomial computations below are in characteristic two.
 ::: {.pf-step #s1}
 
 The polynomial $h(y)=y^4+y^3+y^2+y+1$ is irreducible
-over $\mathbb F_2$, so $K$ is a field with $16$ elements.
+over $\FF_2$, so $K$ is a field with $16$ elements.
 
 ::: pf-proof
 
 Neither $0$ nor $1$ is a root of $h$, so $h$ has no linear
 factor. If it were reducible, its factorization into monic
 irreducibles would therefore consist of two quadratics.
-The only monic irreducible quadratic over $\mathbb F_2$ is
+The only monic irreducible quadratic over $\FF_2$ is
 $q(y)=y^2+y+1$: a root-free monic quadratic must have
 constant term one, and of $y^2+1$ and $y^2+y+1$ only the
 latter is nonzero at $1$.
@@ -60,7 +60,7 @@ Thus no irreducible quadratic divides $h$, proving its
 irreducibility. The quotient by an irreducible polynomial
 over a field is a field [@DF04]. Polynomial division gives
 the basis $1,\bar y,\bar y^2,\bar y^3$ of $K$ over
-$\mathbb F_2$, so $[K:\mathbb F_2]=4$ and $|K|=2^4=16$.
+$\FF_2$, so $[K:\FF_2]=4$ and $|K|=2^4=16$.
 
 :::
 
@@ -95,7 +95,7 @@ therefore split completely over $K$.
 
 ::: pf-proof
 
-In the quotient $\mathbb F_2[x]/(x^4+x+1)$, write $t$ for
+In the quotient $\FF_2[x]/(x^4+x+1)$, write $t$ for
 the class of $x$. The identity $t^4=t+1$ gives
 $$
 t^{16}=(t+1)^4=t^4+1=t.
@@ -104,7 +104,7 @@ Here $(u+v)^4=u^4+v^4$ follows by squaring twice in
 characteristic two. Thus $x^{16}-x$ belongs to the ideal
 $(x^4+x+1)$, which is precisely the required divisibility.
 
-In $\mathbb F_2[x]/(x^2+x+1)$ one has $t^2=t+1$ and
+In $\FF_2[x]/(x^2+x+1)$ one has $t^2=t+1$ and
 $$
 t^4=(t+1)^2=t^2+1=t,
 \qquad t^{16}=(t^4)^4=t^4=t.
@@ -127,15 +127,15 @@ The polynomial $g(x)=x^3+x+1$ is irreducible over $K$.
 ::: pf-proof
 
 The values $g(0)=g(1)=1$ show that $g$ has no root in
-$\mathbb F_2$. A reducible cubic over a field has a linear
-factor, so $g$ is irreducible over $\mathbb F_2$.
+$\FF_2$. A reducible cubic over a field has a linear
+factor, so $g$ is irreducible over $\FF_2$.
 If $b\in K$ were a root, its minimal polynomial over
-$\mathbb F_2$ would be $g$, and $[\mathbb F_2(b):\mathbb F_2]=3$.
+$\FF_2$ would be $g$, and $[\FF_2(b):\FF_2]=3$.
 The tower law would then imply
 $$
-4=[K:\mathbb F_2]
- =[K:\mathbb F_2(b)]\,[\mathbb F_2(b):\mathbb F_2]
- =3[K:\mathbb F_2(b)],
+4=[K:\FF_2]
+ =[K:\FF_2(b)]\,[\FF_2(b):\FF_2]
+ =3[K:\FF_2(b)],
 $$
 which is impossible for a positive integer degree.
 Hence $g$ has no root in $K$. Since its degree is three,

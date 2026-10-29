@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-QK2M6JW4MI
 kind: problem
-title: Irreducible representations of $\mathrm{GL}_2(\mathbb{F}_2)$, and reducibility
+title: Irreducible representations of $\mathrm{GL}_2(\FF_2)$, and reducibility
   of the adjoint representation in order $12$
 classification:
   areas:
@@ -23,7 +23,7 @@ audit:
 ::: {.problem}
 Given a finite group $G$, recall that its *regular representation* is the representation on the complex group algebra $\CC[G]$ induced by left multiplication of $G$ on itself and its *adjoint representation* is the representation on the complex group algebra $\CC[G]$ induced by conjugation of $G$ on itself.
 
-- Let $G=\GL_2(\mathbb F_2)$.
+- Let $G=\GL_2(\FF_2)$.
   Describe the number and dimensions of the irreducible representations of $G$.
   Then describe the decomposition of its regular representation as a direct sum of irreducible representations.
 
@@ -36,17 +36,17 @@ Given a finite group $G$, recall that its *regular representation* is the repres
 
 ::: {.pf-step #s1}
 
-The group $\operatorname{GL}_2(\mathbb F_2)$ is isomorphic to $S_3$.
+The group $\operatorname{GL}_2(\FF_2)$ is isomorphic to $S_3$.
 
 ::: pf-proof
 
-There are exactly three nonzero vectors in $\mathbb F_2^2$. Every invertible linear map permutes them, giving a homomorphism
+There are exactly three nonzero vectors in $\FF_2^2$. Every invertible linear map permutes them, giving a homomorphism
 \[
-\operatorname{GL}_2(\mathbb F_2)\longrightarrow S_3.
+\operatorname{GL}_2(\FF_2)\longrightarrow S_3.
 \]
 If an invertible linear map fixes all three nonzero vectors, then in particular it fixes a basis, hence is the identity. Thus the homomorphism is injective. Also
 \[
-|\operatorname{GL}_2(\mathbb F_2)|=(2^2-1)(2^2-2)=3\cdot2=6=|S_3|,
+|\operatorname{GL}_2(\FF_2)|=(2^2-1)(2^2-2)=3\cdot2=6=|S_3|,
 \]
 so it is an isomorphism.
 
@@ -56,7 +56,7 @@ so it is an isomorphism.
 
 ::: {.pf-step #s2}
 
-Up to isomorphism, $G=\operatorname{GL}_2(\mathbb F_2)$ has exactly three irreducible complex representations, of dimensions
+Up to isomorphism, $G=\operatorname{GL}_2(\FF_2)$ has exactly three irreducible complex representations, of dimensions
 \[
 1,\quad1,\quad2.
 \]

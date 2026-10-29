@@ -46,9 +46,9 @@ is the universal covering of a closed \(n\)-manifold, with
 \]
 Attach one \((n+1)\)-cell along a generator of \(\pi_n(M)\), then cells of dimensions at least \(n+2\) to kill all remaining higher homotopy groups. This produces a \(K(G,1)\).
 
-Up through dimension \(n+1\) this CW complex has exactly one new \((n+1)\)-cell beyond the \(n\)-dimensional manifold \(M\). With \(\mathbb F_p\)-coefficients the cochain group in degree \(n+1\) is therefore one-dimensional. Consequently
+Up through dimension \(n+1\) this CW complex has exactly one new \((n+1)\)-cell beyond the \(n\)-dimensional manifold \(M\). With \(\FF_p\)-coefficients the cochain group in degree \(n+1\) is therefore one-dimensional. Consequently
 \[
-\dim_{\mathbb F_p}H^{n+1}(K(G,1);\mathbb F_p)\le1.
+\dim_{\FF_p}H^{n+1}(K(G,1);\FF_p)\le1.
 \]
 
 But
@@ -57,17 +57,17 @@ K(G,1)\simeq K(\ZZ_p,1)\times K(\ZZ_p,1).
 \]
 For \(p=2\),
 \[
-H^*(K(\ZZ_2,1);\mathbb F_2)\cong\mathbb F_2[u],\quad |u|=1,
+H^*(K(\ZZ_2,1);\FF_2)\cong\FF_2[u],\quad |u|=1,
 \]
 and for odd \(p\),
 \[
-H^*(K(\ZZ_p,1);\mathbb F_p)
-\cong\Lambda(u)\otimes\mathbb F_p[v],
+H^*(K(\ZZ_p,1);\FF_p)
+\cong\Lambda(u)\otimes\FF_p[v],
 \quad |u|=1,\ |v|=2.
 \]
 In either case the Künneth formula shows that the degree-\(d\) cohomology of the product has dimension \(d+1\). In particular
 \[
-\dim H^{n+1}(K(G,1);\mathbb F_p)=n+2>1,
+\dim H^{n+1}(K(G,1);\FF_p)=n+2>1,
 \]
 a contradiction.
 

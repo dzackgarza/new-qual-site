@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-When $n$ is even, show that any continuous map $f : \mathbb{CP}^n \to \mathbb{CP}^n$ has a fixed point.
+When $n$ is even, show that any continuous map $f : \CP^n \to \CP^n$ has a fixed point.
 :::
 
 ::: {.solution}
@@ -24,11 +24,11 @@ When $n$ is even, show that any continuous map $f : \mathbb{CP}^n \to \mathbb{CP
 
 ::: pf-step
 
-Let $x\in H^2(\mathbb{CP}^n;\QQ)$ be the standard generator. Then $f^*x=ax$ for some $a\in\QQ$.
+Let $x\in H^2(\CP^n;\QQ)$ be the standard generator. Then $f^*x=ax$ for some $a\in\QQ$.
 
 ::: pf-proof
 
-$H^2(\mathbb{CP}^n;\QQ)$ is one-dimensional.
+$H^2(\CP^n;\QQ)$ is one-dimensional.
 
 :::
 

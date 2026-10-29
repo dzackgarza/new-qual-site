@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-K8Z3W
 kind: problem
-title: Splitting fields of $x^3 - 7$ over $\QQ$, $\RR$, and $\mathbb{F}_{13}$
+title: Splitting fields of $x^3 - 7$ over $\QQ$, $\RR$, and $\FF_{13}$
 classification:
   areas:
   - algebra
@@ -23,7 +23,7 @@ audit:
 ::: {.problem}
 
 Let $f(x) = x^3 - 7 \in \QQ[x]$.
-Determine the splitting field and Galois group of $f$ over each of $\QQ$, $\RR$, and $\mathbb{F}_{13}$.
+Determine the splitting field and Galois group of $f$ over each of $\QQ$, $\RR$, and $\FF_{13}$.
 :::
 
 ::: {.solution}

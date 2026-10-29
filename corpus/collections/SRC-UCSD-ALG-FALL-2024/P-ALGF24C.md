@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF24C
 kind: problem
-title: $p$-elements in $\mathrm{GL}_n(\mathbb{F}_p)$ and conjugacy classes matching $S_n$
+title: $p$-elements in $\mathrm{GL}_n(\FF_p)$ and conjugacy classes matching $S_n$
 classification:
   areas:
   - algebra
@@ -28,11 +28,11 @@ audit:
 
 ::: {.problem}
 Suppose $p$ is a prime and $n$ is a positive integer.
-An element $x \in \mathrm{GL}_n(\mathbb{F}_p)$ is called a $p$-element if its order is a power of $p$.
+An element $x \in \mathrm{GL}_n(\FF_p)$ is called a $p$-element if its order is a power of $p$.
 
 (a) Prove that $x$ is a $p$-element if and only if $x - 1$ is nilpotent.
 
-(b) Prove that the number of conjugacy classes of $\mathrm{GL}_n(\mathbb{F}_p)$ that consist of $p$-elements is the same as the number of conjugacy classes of the symmetric group $S_n$.
+(b) Prove that the number of conjugacy classes of $\mathrm{GL}_n(\FF_p)$ that consist of $p$-elements is the same as the number of conjugacy classes of the symmetric group $S_n$.
 :::
 
 ::: {.solution}
@@ -70,7 +70,7 @@ This includes the identity, whose order is $1=p^0$, and proves part (a).
 
 ::: {.pf-step #s2}
 
-The correspondence $N\mapsto I+N$ induces a bijection from similarity classes of nilpotent matrices to conjugacy classes of $p$-elements in $\mathrm{GL}_n(\mathbb{F}_p)$.
+The correspondence $N\mapsto I+N$ induces a bijection from similarity classes of nilpotent matrices to conjugacy classes of $p$-elements in $\mathrm{GL}_n(\FF_p)$.
 
 ::: pf-proof
 
@@ -92,12 +92,12 @@ Consequently $I+N$ and $I+N'$ are conjugate if and only if $N$ and $N'$ are simi
 
 ::: {.pf-step #s3}
 
-Similarity classes of nilpotent $n\times n$ matrices over $\mathbb{F}_p$ are indexed by partitions of $n$.
+Similarity classes of nilpotent $n\times n$ matrices over $\FF_p$ are indexed by partitions of $n$.
 
 ::: pf-proof
 
-The minimal polynomial of a nilpotent matrix is a power of $t$, which splits over $\mathbb{F}_p$.
-Its Jordan form therefore exists over $\mathbb{F}_p$, not merely over an extension field, and consists of blocks
+The minimal polynomial of a nilpotent matrix is a power of $t$, which splits over $\FF_p$.
+Its Jordan form therefore exists over $\FF_p$, not merely over an extension field, and consists of blocks
 \[
 J_{\lambda_1}(0),\ldots,J_{\lambda_k}(0),
 \qquad \lambda_1\ge\cdots\ge\lambda_k\ge1,
@@ -105,7 +105,7 @@ J_{\lambda_1}(0),\ldots,J_{\lambda_k}(0),
 \]
 Conversely, every such partition defines a nilpotent matrix by taking this block diagonal sum.
 
-To see explicitly that distinct partitions cannot become similar over $\mathbb{F}_p$, put $d_j=\dim\ker N^j$, with $d_0=0$.
+To see explicitly that distinct partitions cannot become similar over $\FF_p$, put $d_j=\dim\ker N^j$, with $d_0=0$.
 For these blocks,
 \[
 d_j=\sum_i\min(j,\lambda_i),\qquad

@@ -21,13 +21,13 @@ Find the universal covering space $\widetilde X$ of $X$ and compute its homology
 
 Let
 \[
-X=\mathbb{RP}^2\vee S^2
+X=\RP^2\vee S^2
 \]
 with wedgepoint \(x_0\).
 
 Let
 \[
-q:S^2\to\mathbb{RP}^2
+q:S^2\to\RP^2
 \]
 be the antipodal double cover, and choose
 \[
@@ -45,7 +45,7 @@ There is a continuous map
 p:\widetilde X\to X
 \]
 defined by:
-- \(p|_{S^2_0}=q\) onto \(\mathbb{RP}^2\);
+- \(p|_{S^2_0}=q\) onto \(\RP^2\);
 - \(p|_{S^2_+}\) is the identity homeomorphism onto the wedged \(S^2\)-summand of \(X\);
 - \(p|_{S^2_-}\) is another identity homeomorphism onto the same \(S^2\)-summand.
 
@@ -69,9 +69,9 @@ Away from the wedgepoint \(x_0\), the map \(p\) is locally a two-sheeted coverin
 
 ::: pf-proof
 
-On the \(\mathbb{RP}^2\)-part away from \(x_0\), this is the usual antipodal covering
+On the \(\RP^2\)-part away from \(x_0\), this is the usual antipodal covering
 \[
-S^2_0\to\mathbb{RP}^2.
+S^2_0\to\RP^2.
 \]
 On the \(S^2\)-summand away from its basepoint, there are exactly two disjoint copies, one in \(S^2_+\) and one in \(S^2_-\), each mapping homeomorphically to the same neighborhood.
 
@@ -88,7 +88,7 @@ The map \(p\) is also evenly covered near the wedgepoint.
 
 Choose an open neighborhood
 \[
-U_R\subset\mathbb{RP}^2
+U_R\subset\RP^2
 \]
 of \(x_0\) that is evenly covered by two disjoint open sets
 \[

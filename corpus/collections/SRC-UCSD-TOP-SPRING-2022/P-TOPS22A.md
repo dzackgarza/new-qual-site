@@ -21,7 +21,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X = \mathbb{RP}^3$ and $Y = S^1 \vee S^1$.
+Let $X = \RP^3$ and $Y = S^1 \vee S^1$.
 
 (a) Let $A = X \vee Y$ be their wedge sum (one-point union).
 Provide a presentation of the group $\pi_1(A)$.
@@ -54,17 +54,17 @@ Compute the Euler characteristic of $C$.
 ::: pf
 
 ::: pf-step
-For $A=\mathbb{RP}^3\vee(S^1\vee S^1)$,
+For $A=\RP^3\vee(S^1\vee S^1)$,
 $$\boxed{\pi_1(A)\cong\langle r,a,b\mid r^2=1\rangle\cong(\ZZ/2)*F_2.}$$
 
 ::: pf-proof
-Van Kampen gives the free product of $\pi_1(\mathbb{RP}^3)=\ZZ/2$ and $\pi_1(S^1\vee S^1)=F_2$.
+Van Kampen gives the free product of $\pi_1(\RP^3)=\ZZ/2$ and $\pi_1(S^1\vee S^1)=F_2$.
 :::
 
 :::
 
 ::: pf-step
-For $B=\mathbb{RP}^3\times(S^1\vee S^1)$,
+For $B=\RP^3\times(S^1\vee S^1)$,
 $$\boxed{\pi_1(B)\cong(\ZZ/2)\times F_2
 \cong\langle r,a,b\mid r^2,[r,a],[r,b]\rangle.}$$
 
@@ -83,7 +83,7 @@ $$\boxed{H_i(A;\ZZ)\cong\begin{cases}
 \end{cases}}$$
 
 ::: pf-proof
-Reduced homology of a wedge is the direct sum of the reduced homologies. Use $H_1(\mathbb{RP}^3)=\ZZ/2$, $H_3(\mathbb{RP}^3)=\ZZ$, and $H_1(S^1\vee S^1)=\ZZ^2$.
+Reduced homology of a wedge is the direct sum of the reduced homologies. Use $H_1(\RP^3)=\ZZ/2$, $H_3(\RP^3)=\ZZ$, and $H_1(S^1\vee S^1)=\ZZ^2$.
 :::
 
 :::
@@ -99,7 +99,7 @@ $$\boxed{H_i(B;\ZZ)\cong\begin{cases}
 \end{cases}}$$
 
 ::: pf-proof
-The graph $Y=S^1\vee S^1$ has free homology only in degrees $0,1$, so the integral Künneth theorem has no Tor terms. Tensor $H_*(\mathbb{RP}^3)$ with $H_0(Y)=\ZZ$ and $H_1(Y)=\ZZ^2$.
+The graph $Y=S^1\vee S^1$ has free homology only in degrees $0,1$, so the integral Künneth theorem has no Tor terms. Tensor $H_*(\RP^3)$ with $H_0(Y)=\ZZ$ and $H_1(Y)=\ZZ^2$.
 :::
 
 :::
@@ -121,31 +121,31 @@ Apply the universal coefficient theorem for cohomology to step [](#homology-of-B
 :::
 
 ::: pf-step
-With $\mathbb F_2$ coefficients,
-$$\boxed{H^*(A;\mathbb F_2)\cong
-\mathbb F_2[x,a,b]/(x^4,a^2,b^2,ab,ax,bx),}$$
+With $\FF_2$ coefficients,
+$$\boxed{H^*(A;\FF_2)\cong
+\FF_2[x,a,b]/(x^4,a^2,b^2,ab,ax,bx),}$$
 with $|x|=|a|=|b|=1$.
 
 ::: pf-proof
-$H^*(\mathbb{RP}^3;\mathbb F_2)=\mathbb F_2[x]/(x^4)$. The graph has degree-$1$ generators $a,b$ with all positive-degree products zero. In a wedge, all products between positive-degree classes from different summands vanish.
+$H^*(\RP^3;\FF_2)=\FF_2[x]/(x^4)$. The graph has degree-$1$ generators $a,b$ with all positive-degree products zero. In a wedge, all products between positive-degree classes from different summands vanish.
 :::
 
 :::
 
 ::: pf-step
 For the product,
-$$\boxed{H^*(B;\mathbb F_2)\cong
-\mathbb F_2[x,a,b]/(x^4,a^2,b^2,ab),}$$
+$$\boxed{H^*(B;\FF_2)\cong
+\FF_2[x,a,b]/(x^4,a^2,b^2,ab),}$$
 again with all generators in degree $1$.
 
 ::: pf-proof
-The field-coefficient Künneth theorem is multiplicative, so the ring is the tensor product of $\mathbb F_2[x]/(x^4)$ with the cohomology ring of the figure-eight. Cross-products such as $xa$ and $xb$ are now generally nonzero.
+The field-coefficient Künneth theorem is multiplicative, so the ring is the tensor product of $\FF_2[x]/(x^4)$ with the cohomology ring of the figure-eight. Cross-products such as $xa$ and $xb$ are now generally nonzero.
 :::
 
 :::
 
 ::: pf-step
-Every map $f:\mathbb{RP}^3\to S^1\vee S^1$ is null-homotopic.
+Every map $f:\RP^3\to S^1\vee S^1$ is null-homotopic.
 
 ::: pf-proof
 Its induced homomorphism on fundamental groups is a map $\ZZ/2\to F_2$, necessarily trivial because a free group is torsion-free. The target graph is a $K(F_2,1)$, so a map inducing the trivial fundamental-group homomorphism is null-homotopic.
@@ -154,10 +154,10 @@ Its induced homomorphism on fundamental groups is a map $\ZZ/2\to F_2$, necessar
 :::
 
 ::: pf-step
-Not every map $g:S^1\vee S^1\to\mathbb{RP}^3$ is null-homotopic.
+Not every map $g:S^1\vee S^1\to\RP^3$ is null-homotopic.
 
 ::: pf-proof
-Map one circle to a loop representing the nontrivial element of $\pi_1(\mathbb{RP}^3)=\ZZ/2$ and the other circle to the basepoint. The induced map on $\pi_1$ is nontrivial, so the map cannot be null-homotopic.
+Map one circle to a loop representing the nontrivial element of $\pi_1(\RP^3)=\ZZ/2$ and the other circle to the basepoint. The induced map on $\pi_1$ is nontrivial, so the map cannot be null-homotopic.
 :::
 
 :::
@@ -167,7 +167,7 @@ Every double cover $C\to B$ has
 $$\boxed{\chi(C)=0.}$$
 
 ::: pf-proof
-$\chi(\mathbb{RP}^3)=0$, so $\chi(B)=\chi(\mathbb{RP}^3)\chi(S^1\vee S^1)=0$. Euler characteristic multiplies by the number of sheets of a finite cover.
+$\chi(\RP^3)=0$, so $\chi(B)=\chi(\RP^3)\chi(S^1\vee S^1)=0$. Euler characteristic multiplies by the number of sheets of a finite cover.
 :::
 
 :::

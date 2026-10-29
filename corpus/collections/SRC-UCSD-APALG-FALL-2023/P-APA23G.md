@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APA23G
 kind: problem
-title: Indecomposable modules for $C_4 \times C_3 \times C_2$ over $\mathbb{F}_3$
+title: Indecomposable modules for $C_4 \times C_3 \times C_2$ over $\FF_3$
 classification:
   areas:
   - applied-algebra
@@ -13,20 +13,20 @@ review: draft
 ---
 
 ::: {.problem}
-Let $G$ be the product group $G = C_4 \times C_3 \times C_2$, where $C_n$ denotes the cyclic group of order $n$, and let $\mathbb{F}_3$ be the field with $3$ elements.
-Let $V$ be an indecomposable $G$-module over $\mathbb{F}_3$.
+Let $G$ be the product group $G = C_4 \times C_3 \times C_2$, where $C_n$ denotes the cyclic group of order $n$, and let $\FF_3$ be the field with $3$ elements.
+Let $V$ be an indecomposable $G$-module over $\FF_3$.
 Is $V$ necessarily irreducible?
 Justify your answer.
 :::
 
 ::: {.solution}
 
-No. There are indecomposable $G$-modules over $\mathbb F_3$ that are reducible.
+No. There are indecomposable $G$-modules over $\FF_3$ that are reducible.
 
 ::: pf
 
 ::: {.pf-step #example-module-v}
-Let $V=\mathbb F_3^2$ with basis $e_1,e_2$. Let the $C_4$ and $C_2$ factors act trivially, and let a generator $g$ of the $C_3$ factor act by
+Let $V=\FF_3^2$ with basis $e_1,e_2$. Let the $C_4$ and $C_2$ factors act trivially, and let a generator $g$ of the $C_3$ factor act by
 \[
 J=
 \begin{pmatrix}
@@ -64,7 +64,7 @@ The module $V$ is reducible.
 ::: pf-proof
 The line
 \[
-L=\mathbb F_3 e_1
+L=\FF_3 e_1
 \]
 is fixed by $J$, since $Je_1=e_1$. The other two group factors act trivially, so $L$ is a nonzero proper $G$-submodule of $V$.
 :::
@@ -72,14 +72,14 @@ is fixed by $J$, since $Je_1=e_1$. The other two group factors act trivially, so
 :::
 
 ::: {.pf-step #unique-invariant-line}
-The only one-dimensional $J$-invariant subspace of $V$ is $L=\mathbb F_3e_1$.
+The only one-dimensional $J$-invariant subspace of $V$ is $L=\FF_3e_1$.
 
 ::: pf-proof
-If a one-dimensional subspace $M=\mathbb F_3v$ is $J$-invariant, then $v$ is an eigenvector of $J$. Since
+If a one-dimensional subspace $M=\FF_3v$ is $J$-invariant, then $v$ is an eigenvector of $J$. Since
 \[
 J-I=N
 \]
-has kernel exactly $\mathbb F_3e_1$, the eigenspace for the only eigenvalue $1$ is precisely $L$. Thus $M=L$.
+has kernel exactly $\FF_3e_1$, the eigenspace for the only eigenvalue $1$ is precisely $L$. Thus $M=L$.
 :::
 
 :::
@@ -95,7 +95,7 @@ Thus $V$ is indecomposable.
 :::
 
 ::: pf-step
-Hence an indecomposable $G$-module over $\mathbb F_3$ need not be irreducible.
+Hence an indecomposable $G$-module over $\FF_3$ need not be irreducible.
 
 ::: pf-proof
 The module constructed in step [](#example-module-v){.pf-ref} is reducible by step [](#v-is-reducible){.pf-ref} and indecomposable by step [](#v-is-indecomposable){.pf-ref}, providing the required counterexample.

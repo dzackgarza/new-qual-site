@@ -16,7 +16,7 @@ audit:
 ---
 
 ::: {.exercise}
-22. Show that there is no holomorphic function f in the unit disc D that extends continuously to $\partial D$ such that $f ( z ) = 1 / z \ \mathrm { f o r } \ z \in \partial \mathbb { D }$
+22. Show that there is no holomorphic function f in the unit disc D that extends continuously to $\partial D$ such that $f ( z ) = 1 / z \ \mathrm { f o r } \ z \in \partial \DD$
 :::
 
 ::: {.solution}
@@ -25,13 +25,13 @@ Define
 \[
 h(z)=zf(z)-1.
 \]
-Then $h$ is holomorphic in $\mathbb D$ and continuous on $\overline{\mathbb D}$.
+Then $h$ is holomorphic in $\DD$ and continuous on $\overline{\DD}$.
 On the boundary, $f(z)=1/z$, so $h(z)=0$ whenever $|z|=1$.
 By the maximum modulus principle,
 \[
 |h(z)|\le \max_{|\zeta|=1}|h(\zeta)|=0
 \]
-for every $z\in\mathbb D$.
+for every $z\in\DD$.
 Hence $h\equiv0$.
 But
 \[

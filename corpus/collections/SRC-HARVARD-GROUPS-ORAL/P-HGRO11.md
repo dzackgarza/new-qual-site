@@ -39,7 +39,7 @@ $$
 ::: {.pf-step #s1}
 
 The group is not simple when $\operatorname{char}F\ne2$,
-or when $F=\mathbb F_2$.
+or when $F=\FF_2$.
 
 ::: pf-proof
 
@@ -49,7 +49,7 @@ $\left(\begin{smallmatrix}1&1\\0&1\end{smallmatrix}\right)$
 has determinant one and is not scalar. A central subgroup
 is normal, so this disproves simplicity.
 
-Over $\mathbb F_2$, every invertible matrix has determinant
+Over $\FF_2$, every invertible matrix has determinant
 one. Its first column can be any of the three nonzero vectors,
 and its second column can be either of the two vectors not
 in the span of the first. Thus the group has six elements.

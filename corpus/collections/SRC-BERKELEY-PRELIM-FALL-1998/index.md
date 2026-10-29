@@ -33,7 +33,7 @@ source:
   - P-BKF98-15
   - P-BKF98-16
   - id: P-BJDIE
-    comment: Fall 1998 Problem 17; order of $GL_n(\mathbb F_q)$
+    comment: Fall 1998 Problem 17; order of $GL_n(\FF_q)$
   - P-BKF98-18
   date:
     kind: academic-term

@@ -22,12 +22,12 @@ Which of these rings contains a nonzero prime ideal that is not a maximal ideal?
 
 ::: {.solution}
 In the ring of integers Z the nonzero prime ideals are $\langle p \rangle$ , where p is a prime number.
-Each of these ideals is maximal since $\mathbb { F } _ { p } = \ZZ / \langle p \rangle$ is a field.
+Each of these ideals is maximal since $\FF _ { p } = \ZZ / \langle p \rangle$ is a field.
 Hence every nonzero prime ideal in $\ZZ$ is maximal.
 
 The polynomial ring $\ZZ [ x ]$ in one variable x over the ring of integers Z is not a principal ideal domain.
 For instance, $\langle 2 , x \rangle$ is not a principal ideal; it strictly contains the ideal $\langle 2 \rangle$ , which is therefore not a maximal ideal.
-The ideal $\langle 2 \rangle$ is a prime ideal, because $\ZZ [ x ] / \langle 2 \rangle = \mathbb { F } _ { 2 } [ x ]$ is a polynomial ring over a field, and hence an integral domain.
+The ideal $\langle 2 \rangle$ is a prime ideal, because $\ZZ [ x ] / \langle 2 \rangle = \FF _ { 2 } [ x ]$ is a polynomial ring over a field, and hence an integral domain.
 Hence $\langle 2 \rangle$ is a nonzero prime ideal in $\ZZ [ x ]$ which is not maximal.
 
 The polynomial ring $\RR [ x ]$ in one variable x over the field R is a principal ideal domain.

@@ -25,7 +25,7 @@ Let $W$ be a compact manifold with boundary
 \[
 \partial W=M.
 \]
-All homology groups below are taken with coefficients in $\mathbb F_2$, so no orientability assumption is needed.
+All homology groups below are taken with coefficients in $\FF_2$, so no orientability assumption is needed.
 
 ::: pf
 
@@ -33,14 +33,14 @@ All homology groups below are taken with coefficients in $\mathbb F_2$, so no or
 
 If $\dim W=n$, then Poincaré--Lefschetz duality gives
 \[
-H_i(W,M;\mathbb F_2)
-\cong H^{n-i}(W;\mathbb F_2).
+H_i(W,M;\FF_2)
+\cong H^{n-i}(W;\FF_2).
 \]
 
 
 ::: pf-proof
 
-Every manifold is orientable over $\mathbb F_2$. Poincaré--Lefschetz duality for the compact $n$-manifold $W$ therefore identifies relative homology of $(W,\partial W)$ with cohomology of $W$ in complementary degree. Since $M=\partial W$, this is the displayed isomorphism.
+Every manifold is orientable over $\FF_2$. Poincaré--Lefschetz duality for the compact $n$-manifold $W$ therefore identifies relative homology of $(W,\partial W)$ with cohomology of $W$ in complementary degree. Since $M=\partial W$, this is the displayed isomorphism.
 
 :::
 
@@ -56,16 +56,16 @@ Consequently,
 
 ::: pf-proof
 
-Over the field $\mathbb F_2$, the universal coefficient theorem gives
+Over the field $\FF_2$, the universal coefficient theorem gives
 \[
-\dim H^j(W;\mathbb F_2)=\dim H_j(W;\mathbb F_2).
+\dim H^j(W;\FF_2)=\dim H_j(W;\FF_2).
 \]
 Using step [](#s1-1){.pf-ref},
 \[
 \begin{aligned}
 \chi(W,M)
-&=\sum_i(-1)^i\dim H_i(W,M;\mathbb F_2)\\
-&=\sum_i(-1)^i\dim H^{n-i}(W;\mathbb F_2)\\
+&=\sum_i(-1)^i\dim H_i(W,M;\FF_2)\\
+&=\sum_i(-1)^i\dim H^{n-i}(W;\FF_2)\\
 &=(-1)^n\chi(W).
 \end{aligned}
 \]

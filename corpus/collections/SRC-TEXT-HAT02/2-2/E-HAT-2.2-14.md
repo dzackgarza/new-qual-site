@@ -29,13 +29,13 @@ audit:
 A map $f: S^n \to S^n$ satisfying $f(x) = f(-x)$ for all $x$ is called an even map.
 Show that an even map $S^n \to S^n$ must have even degree, and that the degree must in fact be zero when $n$ is even.
 When $n$ is odd, show there exist even maps of any given even degree.
-[Hints: If $f$ is even, it factors as a composition $S^n \to \mathbb{RP}^n \to S^n$. Using the calculation of $H_n(\mathbb{RP}^n)$ in the text, show that the induced map $H_n(S^n) \to H_n(\mathbb{RP}^n)$ sends a generator to twice a generator when $n$ is odd. It may be helpful to show that the quotient map $\mathbb{RP}^n \to \mathbb{RP}^n/\mathbb{RP}^{n-1}$ induces an isomorphism on $H_n$ when $n$ is odd.]
+[Hints: If $f$ is even, it factors as a composition $S^n \to \RP^n \to S^n$. Using the calculation of $H_n(\RP^n)$ in the text, show that the induced map $H_n(S^n) \to H_n(\RP^n)$ sends a generator to twice a generator when $n$ is odd. It may be helpful to show that the quotient map $\RP^n \to \RP^n/\RP^{n-1}$ induces an isomorphism on $H_n$ when $n$ is odd.]
 :::
 
 ::: {.solution}
 Let $f:S^n\to S^n$ be even, so $f(x)=f(-x)$. Then $f$ factors through the antipodal quotient:
 \[
-S^n\xrightarrow{q}\mathbb{RP}^n\xrightarrow{g}S^n.
+S^n\xrightarrow{q}\RP^n\xrightarrow{g}S^n.
 \]
 
 ::: pf
@@ -48,11 +48,11 @@ If $n$ is even, then $\deg f=0$.
 
 For even $n$,
 \[
-H_n(\mathbb{RP}^n;\ZZ)=0.
+H_n(\RP^n;\ZZ)=0.
 \]
 Hence the induced map
 \[
-H_n(S^n)\xrightarrow{q_*}H_n(\mathbb{RP}^n)
+H_n(S^n)\xrightarrow{q_*}H_n(\RP^n)
 \]
 is zero, and therefore
 \[
@@ -70,13 +70,13 @@ If $n$ is odd, every even map has even degree.
 
 ::: pf-proof
 
-For odd $n$, $\mathbb{RP}^n$ is orientable and
+For odd $n$, $\RP^n$ is orientable and
 \[
-H_n(\mathbb{RP}^n)\cong\ZZ.
+H_n(\RP^n)\cong\ZZ.
 \]
-The quotient map $q:S^n\to\mathbb{RP}^n$ is a two-sheeted covering between oriented closed $n$-manifolds, so
+The quotient map $q:S^n\to\RP^n$ is a two-sheeted covering between oriented closed $n$-manifolds, so
 \[
-q_*[S^n]=2[\mathbb{RP}^n].
+q_*[S^n]=2[\RP^n].
 \]
 If $g_*$ is multiplication by $k$, then
 \[
@@ -94,13 +94,13 @@ When $n$ is odd, every even integer occurs as the degree of an even map.
 
 ::: pf-proof
 
-Collapse the $(n-1)$-skeleton of $\mathbb{RP}^n$:
+Collapse the $(n-1)$-skeleton of $\RP^n$:
 \[
-c:\mathbb{RP}^n\to\mathbb{RP}^n/\mathbb{RP}^{n-1}\cong S^n.
+c:\RP^n\to\RP^n/\RP^{n-1}\cong S^n.
 \]
-For odd $n$, the top cellular boundary in $\mathbb{RP}^n$ is zero, so the unique top cell generates $H_n(\mathbb{RP}^n)$. The quotient map $c$ carries this top cell homeomorphically to the top cell of $S^n$, hence
+For odd $n$, the top cellular boundary in $\RP^n$ is zero, so the unique top cell generates $H_n(\RP^n)$. The quotient map $c$ carries this top cell homeomorphically to the top cell of $S^n$, hence
 \[
-c_*:H_n(\mathbb{RP}^n)\xrightarrow{\cong}H_n(S^n).
+c_*:H_n(\RP^n)\xrightarrow{\cong}H_n(S^n).
 \]
 Given any $k\in\ZZ$, choose a degree-$k$ map
 \[

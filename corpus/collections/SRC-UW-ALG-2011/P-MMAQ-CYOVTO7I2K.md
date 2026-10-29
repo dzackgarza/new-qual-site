@@ -60,7 +60,7 @@ The ring $R$ is not Artinian.
 
 The image of $2$ in $R$ is not a unit: indeed,
 \[
-R/(2)\cong \mathbb F_2[x]/(x^2+x+1)
+R/(2)\cong \FF_2[x]/(x^2+x+1)
 \]
 is a nonzero ring. Consider the descending chain of ideals
 \[

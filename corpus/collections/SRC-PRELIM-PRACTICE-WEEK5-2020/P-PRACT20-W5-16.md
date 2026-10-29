@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-16
 kind: problem
-title: Singular $2\times2$ matrices of trace $1$ over $\mathbb F_p$
+title: Singular $2\times2$ matrices of trace $1$ over $\FF_p$
 classification:
   areas:
   - algebra

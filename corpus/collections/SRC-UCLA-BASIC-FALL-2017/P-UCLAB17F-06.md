@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-For each field $F=\RR$, $\CC$, and $\mathbb F_3$, determine whether every symmetric matrix in $M_2(F)$ is diagonalizable. Give proofs or counterexamples.
+For each field $F=\RR$, $\CC$, and $\FF_3$, determine whether every symmetric matrix in $M_2(F)$ is diagonalizable. Give proofs or counterexamples.
 :::
 
 ::: {.solution}
@@ -106,7 +106,7 @@ Hence $A$ is not diagonalizable.
 
 Over
 \[
-F=\mathbb F_3,
+F=\FF_3,
 \]
 the assertion is also false.
 
@@ -120,7 +120,7 @@ A=
 0&1\\
 1&1
 \end{pmatrix}
-\in M_2(\mathbb F_3).
+\in M_2(\FF_3).
 \]
 It is symmetric.
 Its characteristic polynomial is
@@ -139,7 +139,7 @@ Its characteristic polynomial is
 \lambda^2-\lambda-1.
 \end{aligned}
 \]
-In $\mathbb F_3$, this polynomial takes the values
+In $\FF_3$, this polynomial takes the values
 \[
 \chi_A(0)=-1=2,
 \]
@@ -149,8 +149,8 @@ In $\mathbb F_3$, this polynomial takes the values
 \[
 \chi_A(2)=4-2-1=1.
 \]
-Thus it has no root in $\mathbb F_3$.
-Therefore $A$ has no eigenvalue in $\mathbb F_3$, so it cannot be diagonalizable over $\mathbb F_3$.
+Thus it has no root in $\FF_3$.
+Therefore $A$ has no eigenvalue in $\FF_3$, so it cannot be diagonalizable over $\FF_3$.
 
 :::
 
@@ -166,7 +166,7 @@ F&\text{every symmetric }2\times2\text{ matrix diagonalizable?}\\
 \hline
 \RR&\text{yes}\\
 \CC&\text{no}\\
-\mathbb F_3&\text{no}
+\FF_3&\text{no}
 \end{array}
 }
 \]
@@ -176,7 +176,7 @@ F&\text{every symmetric }2\times2\text{ matrix diagonalizable?}\\
 
 Step [](#s1-1){.pf-ref} proves the positive real case.
 Step [](#s1-2){.pf-ref} gives a complex counterexample.
-Step [](#s1-3){.pf-ref} gives a counterexample over $\mathbb F_3$.
+Step [](#s1-3){.pf-ref} gives a counterexample over $\FF_3$.
 
 :::
 

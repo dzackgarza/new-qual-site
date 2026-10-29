@@ -30,7 +30,7 @@ Suppose $p$ is a prime number and the minimal polynomial of $a \in M_p(F)$ is $t
 (a) Find the Jordan form of $a$ if $F = \CC$.
 Justify your answer.
 
-(b) Find the Jordan form of $a$ if $F = \mathbb{F}_p$.
+(b) Find the Jordan form of $a$ if $F = \FF_p$.
 Justify your answer.
 :::
 
@@ -104,7 +104,7 @@ This proves part (a).
 
 ::: {.pf-step #s4}
 
-Over $\mathbb F_p$ one has
+Over $\FF_p$ one has
 \[
 t^p-1=(t-1)^p.
 \]
@@ -128,7 +128,7 @@ Thus the binomial theorem gives
 
 ::: {.pf-step #s5}
 
-If $F=\mathbb F_p$, the largest Jordan block of $a$ for the eigenvalue $1$ has size $p$.
+If $F=\FF_p$, the largest Jordan block of $a$ for the eigenvalue $1$ has size $p$.
 
 ::: pf-proof
 
@@ -145,7 +145,7 @@ Hence a Jordan block of size $p$ occurs.
 
 ::: pf-step
 
-If $F=\mathbb F_p$, the Jordan form of $a$ is the single block
+If $F=\FF_p$, the Jordan form of $a$ is the single block
 \[
 J_p(1).
 \]

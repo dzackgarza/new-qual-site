@@ -62,7 +62,7 @@ reductions, these commutators can be arranged to produce a nontrivial
 transvection in $N$.
 
 For $n=2$, the same reduction is carried out directly with $2\times2$ matrices;
-the very small fields $\mathbb F_2$ and $\mathbb F_3$ are exactly where the
+the very small fields $\FF_2$ and $\FF_3$ are exactly where the
 argument fails and yield the two exceptions.
 
 :::

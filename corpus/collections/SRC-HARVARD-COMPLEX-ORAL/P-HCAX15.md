@@ -17,7 +17,7 @@ State the formula for a conformal map from the unit disk onto the interior of a 
 :::
 
 ::: {.solution}
-Let $\zeta_1,\dots,\zeta_n\in \partial\mathbb D$ be the prevertices corresponding to the vertices of the polygon. If the interior angle at the $i$th vertex is
+Let $\zeta_1,\dots,\zeta_n\in \partial\DD$ be the prevertices corresponding to the vertices of the polygon. If the interior angle at the $i$th vertex is
 \[
 \alpha_i\pi=(2-\beta_i)\pi,
 \]
@@ -26,7 +26,7 @@ then the Schwarz--Christoffel formula on the disk gives
 f'(z)=C\prod_{i=1}^n\left(1-\frac{z}{\zeta_i}\right)^{\alpha_i-1}
 =C\prod_{i=1}^n\left(1-\frac{z}{\zeta_i}\right)^{1-\beta_i},
 \]
-where the branches are chosen holomorphically on $\mathbb D$ and $C\ne0$.
+where the branches are chosen holomorphically on $\DD$ and $C\ne0$.
 
 Thus one may write
 \[

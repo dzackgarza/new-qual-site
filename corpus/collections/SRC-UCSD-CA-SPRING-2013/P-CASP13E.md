@@ -29,7 +29,7 @@ Let
 \qquad
 w_n=\phi(x_n+i)=\frac{x_n}{x_n+2i}.
 \]
-The Cayley map $\phi$ is a biholomorphism of $\CC_+$ onto the unit disk $\mathbb D$, and the points $w_n$ are distinct because $\phi$ is injective.
+The Cayley map $\phi$ is a biholomorphism of $\CC_+$ onto the unit disk $\DD$, and the points $w_n$ are distinct because $\phi$ is injective.
 
 ::: pf
 
@@ -51,7 +51,7 @@ Hence the two series converge or diverge together.
 :::
 
 ::: {.pf-step #transfer}
-A bounded $f\not\equiv0$ on $\CC_+$ vanishes at every $x_n+i$ if and only if $g=f\circ\phi^{-1}$ is a bounded $g\not\equiv0$ on $\mathbb D$ vanishing at every $w_n$.
+A bounded $f\not\equiv0$ on $\CC_+$ vanishes at every $x_n+i$ if and only if $g=f\circ\phi^{-1}$ is a bounded $g\not\equiv0$ on $\DD$ vanishing at every $w_n$.
 
 ::: pf-proof
 Composition with the biholomorphism $\phi$ or $\phi^{-1}$ preserves holomorphy, boundedness, and the property of not being identically zero, and $g(w_n)=f(x_n+i)$.
@@ -67,7 +67,7 @@ Under the Blaschke condition, the Blaschke product
 \[
 B(w)=\prod_n\frac{|w_n|}{w_n}\,\frac{w_n-w}{1-\overline{w_n}w}
 \]
-(with the factor $w$ in place of the $n$-th factor when $w_n=0$) converges locally uniformly on $\mathbb D$, satisfies $|B|\le1$, is not identically zero, and vanishes exactly at the $w_n$. Take $g=B$.
+(with the factor $w$ in place of the $n$-th factor when $w_n=0$) converges locally uniformly on $\DD$, satisfies $|B|\le1$, is not identically zero, and vanishes exactly at the $w_n$. Take $g=B$.
 :::
 
 :::
@@ -76,7 +76,7 @@ B(w)=\prod_n\frac{|w_n|}{w_n}\,\frac{w_n-w}{1-\overline{w_n}w}
 If such a $g$ exists, then $\sum_n(1-|w_n|)<\infty$.
 
 ::: pf-proof
-Dividing $g$ by a power of $w$, which keeps it bounded on $\mathbb D$ (it is bounded near $|w|=1$, and holomorphic at $0$), we may assume $g(0)\neq0$; this removes at most one point $w_n=0$ from the zero set. Let $|g|\le M$. For $r<1$ avoiding $|w_n|$, Jensen's formula gives
+Dividing $g$ by a power of $w$, which keeps it bounded on $\DD$ (it is bounded near $|w|=1$, and holomorphic at $0$), we may assume $g(0)\neq0$; this removes at most one point $w_n=0$ from the zero set. Let $|g|\le M$. For $r<1$ avoiding $|w_n|$, Jensen's formula gives
 \[
 \log|g(0)|+\sum_{|w_n|<r}\log\frac{r}{|w_n|}
 \le\frac1{2\pi}\int_0^{2\pi}\log|g(re^{it})|\,dt\le\log M,

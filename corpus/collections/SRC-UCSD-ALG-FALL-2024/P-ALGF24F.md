@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGF24F
 kind: problem
-title: Irreducibility of $x^p - x + 1$ over $\mathbb{F}_p$
+title: Irreducibility of $x^p - x + 1$ over $\FF_p$
 classification:
   areas:
   - algebra
@@ -27,12 +27,12 @@ audit:
 
 ::: {.problem}
 Suppose $p$ is a prime.
-Prove that $x^p - x + 1$ is irreducible in $\mathbb{F}_p[x]$.
+Prove that $x^p - x + 1$ is irreducible in $\FF_p[x]$.
 :::
 
 ::: {.solution}
-Put $f(x)=x^p-x+1$ and choose a root $\alpha$ in an algebraic closure of $\mathbb{F}_p$.
-Let $h\in\mathbb{F}_p[x]$ be the monic minimal polynomial of $\alpha$.
+Put $f(x)=x^p-x+1$ and choose a root $\alpha$ in an algebraic closure of $\FF_p$.
+Let $h\in\FF_p[x]$ be the monic minimal polynomial of $\alpha$.
 
 ::: pf
 
@@ -42,7 +42,7 @@ For every integer $r\ge0$,
 \[
 \alpha^{p^r}=\alpha-r,
 \]
-where the integer $r$ on the right denotes its image in $\mathbb{F}_p$.
+where the integer $r$ on the right denotes its image in $\FF_p$.
 
 ::: pf-proof
 
@@ -65,7 +65,7 @@ The polynomial $h$ has at least $p$ distinct roots.
 
 ::: pf-proof
 
-For a polynomial with coefficients in $\mathbb{F}_p$, the Frobenius map satisfies
+For a polynomial with coefficients in $\FF_p$, the Frobenius map satisfies
 \[
 h(z^p)=h(z)^p.
 \]
@@ -76,7 +76,7 @@ By step [](#s1){.pf-ref}, the elements
 \alpha,\alpha-1,\ldots,\alpha-(p-1)
 \]
 are therefore roots of $h$.
-They are distinct: equality of the $r$th and $s$th terms would give $r-s=0$ in $\mathbb{F}_p$, which for $0\le r,s<p$ forces $r=s$.
+They are distinct: equality of the $r$th and $s$th terms would give $r-s=0$ in $\FF_p$, which for $0\le r,s<p$ forces $r=s$.
 Consequently $\deg h\ge p$.
 
 :::

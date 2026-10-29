@@ -25,7 +25,7 @@ Compute $H_*(\RP^2\cross \RP^3; \ZZ)$
 
 The integral homology of the factors is
 $$
-H_i(\mathbb{RP}^2)=
+H_i(\RP^2)=
 \begin{cases}
 \ZZ,&i=0,\\
 \ZZ/2,&i=1,\\
@@ -34,7 +34,7 @@ H_i(\mathbb{RP}^2)=
 $$
 and
 $$
-H_i(\mathbb{RP}^3)=
+H_i(\RP^3)=
 \begin{cases}
 \ZZ,&i=0,3,\\
 \ZZ/2,&i=1,\\
@@ -54,7 +54,7 @@ These are the standard cellular homology groups of real projective spaces.
 
 The Künneth theorem gives
 $$
-\boxed{H_n(\mathbb{RP}^2\times\mathbb{RP}^3;\ZZ)\cong
+\boxed{H_n(\RP^2\times\RP^3;\ZZ)\cong
 \begin{cases}
 \ZZ,&n=0,\\
 (\ZZ/2)^2,&n=1,\\
@@ -71,13 +71,13 @@ The tensor terms give
 $$
 \begin{array}{c|ccccc}
 n&0&1&2&3&4\\ \hline
-\bigoplus_{i+j=n}H_i(\mathbb{RP}^2)\otimes H_j(\mathbb{RP}^3)
+\bigoplus_{i+j=n}H_i(\RP^2)\otimes H_j(\RP^3)
 &\ZZ&(\ZZ/2)^2&\ZZ/2&\ZZ&\ZZ/2.
 \end{array}
 $$
 The only nonzero Tor contribution is
 $$
-\operatorname{Tor}(H_1(\mathbb{RP}^2),H_1(\mathbb{RP}^3))
+\operatorname{Tor}(H_1(\RP^2),H_1(\RP^3))
 \cong\operatorname{Tor}(\ZZ/2,\ZZ/2)
 \cong\ZZ/2,
 $$

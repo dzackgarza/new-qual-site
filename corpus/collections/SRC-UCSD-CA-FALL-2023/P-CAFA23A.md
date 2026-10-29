@@ -15,7 +15,7 @@ review: draft
 ::: {.problem}
 Let $G_N(z) = \sum_{n=0}^{N} z^n$ and $G(z) = (1-z)^{-1}$.
 
-(a) Carefully prove that $G_N \to G$ as $N \to \infty$, uniformly on compact subsets of $\mathbb{D}$.
+(a) Carefully prove that $G_N \to G$ as $N \to \infty$, uniformly on compact subsets of $\DD$.
 
 (b) What is the power series expansion of $G(z)$ at $z = 2023$, and what is its radius of convergence?
 :::
@@ -29,13 +29,13 @@ so
 \[
 G_N(z)-G(z)=-\frac{z^{N+1}}{1-z}.
 \]
-If $K\Subset\mathbb D$, choose $r<1$ with $|z|\le r$ on $K$. Also
+If $K\Subset\DD$, choose $r<1$ with $|z|\le r$ on $K$. Also
 $\delta=\min_{z\in K}|1-z|>0$. Hence
 \[
 \sup_{z\in K}|G_N(z)-G(z)|
 \le \frac{r^{N+1}}{\delta}\longrightarrow0.
 \]
-Thus $G_N\to G$ uniformly on compact subsets of $\mathbb D$.
+Thus $G_N\to G$ uniformly on compact subsets of $\DD$.
 
 (b) Put $w=z-2023$. Then
 \[

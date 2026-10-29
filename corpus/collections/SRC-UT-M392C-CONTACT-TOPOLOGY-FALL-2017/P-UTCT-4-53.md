@@ -485,7 +485,7 @@ S^2-\{\text{north},\text{south}\}.
 
 The Hopf fibration
 \[
-h:S^3\to\mathbb{CP}^1\cong S^2
+h:S^3\to\CP^1\cong S^2
 \]
 has the coordinate circles as fibers over \(0\) and \(\infty\). The angular
 coordinate on the punctured base is represented in Hopf coordinates by

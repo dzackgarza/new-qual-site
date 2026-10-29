@@ -40,19 +40,19 @@ H_n(X;F)\cong H_n(X;\ZZ)\otimes F\cong F^{r_n}.
 \]
 Thus $\dim_FH_n(X;F)=r_n$ in every degree.
 
-Now suppose $\operatorname{char}F=p$. Since $F$ is a vector space over $\mathbb F_p$, it is enough to compute with $\mathbb F_p$ and then extend scalars. Let
+Now suppose $\operatorname{char}F=p$. Since $F$ is a vector space over $\FF_p$, it is enough to compute with $\FF_p$ and then extend scalars. Let
 \[
-t_n=\dim_{\mathbb F_p}(T_n/pT_n).
+t_n=\dim_{\FF_p}(T_n/pT_n).
 \]
-For a finite abelian group the $p$-torsion subgroup $T_n[p]$ has the same $\mathbb F_p$-dimension $t_n$. The universal coefficient short exact sequence gives
+For a finite abelian group the $p$-torsion subgroup $T_n[p]$ has the same $\FF_p$-dimension $t_n$. The universal coefficient short exact sequence gives
 \[
-0\to H_n(X;\ZZ)\otimes\mathbb F_p
-\to H_n(X;\mathbb F_p)
-\to \operatorname{Tor}(H_{n-1}(X;\ZZ),\mathbb F_p)\to0.
+0\to H_n(X;\ZZ)\otimes\FF_p
+\to H_n(X;\FF_p)
+\to \operatorname{Tor}(H_{n-1}(X;\ZZ),\FF_p)\to0.
 \]
 Hence
 \[
-\dim_{\mathbb F_p}H_n(X;\mathbb F_p)=r_n+t_n+t_{n-1}.
+\dim_{\FF_p}H_n(X;\FF_p)=r_n+t_n+t_{n-1}.
 \]
 Taking the alternating sum, the two torsion contributions cancel:
 \[

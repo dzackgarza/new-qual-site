@@ -52,9 +52,9 @@ since the amalgamated subgroup \(\pi_1(U\cap V)\) is trivial. More generally, th
 \[
 G=\langle a,b,c\mid a^2=1\rangle
 \]
-has one vertex, three \(1\)-cells \(a,b,c\), and one \(2\)-cell attached along the degree-two loop \(a^2\). The subcomplex consisting of the vertex, the \(a\)-edge, and this \(2\)-cell is the standard CW structure on \(\mathbb{RP}^2\). The \(b\)- and \(c\)-edges are two additional circle summands attached only at the vertex. Hence
+has one vertex, three \(1\)-cells \(a,b,c\), and one \(2\)-cell attached along the degree-two loop \(a^2\). The subcomplex consisting of the vertex, the \(a\)-edge, and this \(2\)-cell is the standard CW structure on \(\RP^2\). The \(b\)- and \(c\)-edges are two additional circle summands attached only at the vertex. Hence
 \[
-X_G\cong\mathbb{RP}^2\vee S^1\vee S^1.
+X_G\cong\RP^2\vee S^1\vee S^1.
 \]
 By van Kampen,
 \[

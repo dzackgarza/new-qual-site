@@ -137,12 +137,12 @@ Computation of fundamental groups for items 6 through 10:
 ::: pf-step
 
 **Item 6: $S^2 / \ZZ_2$ via the antipodal map**
-The quotient of $S^2$ under the antipodal identification is the real projective plane $\mathbb{RP}^2$, which has universal cover $S^2$.
+The quotient of $S^2$ under the antipodal identification is the real projective plane $\RP^2$, which has universal cover $S^2$.
 Thus $\pi_1(S^2 / \ZZ_2) \cong \ZZ_2$.
 
 ::: pf-proof
 
-covering space classification for $\mathbb{RP}^2$.
+covering space classification for $\RP^2$.
 
 :::
 

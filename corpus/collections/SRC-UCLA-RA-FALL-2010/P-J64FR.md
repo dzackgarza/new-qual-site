@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Consider the complex Hilbert space $$H := \left\{f:\overline{\mathbb{D}}\to\CC: f(z)=\sum_{k=0}^\infty \widehat{f}(k)z^k \text{ with } ||f||^2 := \sum_{k=0}^\infty (1+k^2)|\widehat{f}(k)|^2 < \infty\right\}.$$
+Consider the complex Hilbert space $$H := \left\{f:\overline{\DD}\to\CC: f(z)=\sum_{k=0}^\infty \widehat{f}(k)z^k \text{ with } ||f||^2 := \sum_{k=0}^\infty (1+k^2)|\widehat{f}(k)|^2 < \infty\right\}.$$
 
 a. Prove that the linear function $L:f\mapsto f(1)$ is bounded.
 
@@ -29,7 +29,7 @@ c. Show that $f\mapsto \text{Re}\,L(f)$ achieves its maximal value on the set $$
 (a) We have $$|f(1)| \le \sum_{k=0}^\infty |\widehat{f}(k)| = \sum_{k=0}^\infty |\widehat{f}(k)|\sqrt{1+k^2}\frac{1}{\sqrt{1+k^2}} \le \left(\sum_{k=0}^\infty |\widehat{f}(k)|^2(1+k^2)\right)^{1/2}\left(\sum_{k=0}^\infty \frac{1}{1+k^2}\right)^{1/2} = C||f||$$ where $C^2 = \sum_{k=0}^\infty \frac{1}{1+k^2} < \infty$.
 
 (b) The inner product on $H$ is $$\langle f,g\rangle = \sum_{k=0}^\infty \widehat{f}(k)\overline{\widehat{g}(k)}(1+k^2).$$ If $g$ represents $L$ then we must have $$\langle f,g\rangle = \sum_{k=0}^\infty \widehat{f}(k)\overline{\widehat{g}(k)}(1+k^2) = f(1) = \sum_{k=0}^\infty \widehat{f}(k).$$ We verify that the choice $\widehat{g}(k)=\frac{1}{1+k^2}$ works: substituting into the inner product gives $$\langle f,g\rangle = \sum_{k=0}^\infty \widehat{f}(k)\overline{\frac{1}{1+k^2}}(1+k^2) = \sum_{k=0}^\infty \widehat{f}(k) = f(1),$$ since $\frac{1}{1+k^2}$ is real and $\frac{1}{1+k^2}(1+k^2) = 1$.
-Define $$g(z) = \sum_{k=0}^\infty \frac{1}{1+k^2}z^k.$$ The series converges uniformly on $\overline{\mathbb{D}}$, and $\|g\|^2=\sum_{k\ge0}(1+k^2)^{-1}<\infty$, so $g\in H$.
+Define $$g(z) = \sum_{k=0}^\infty \frac{1}{1+k^2}z^k.$$ The series converges uniformly on $\overline{\DD}$, and $\|g\|^2=\sum_{k\ge0}(1+k^2)^{-1}<\infty$, so $g\in H$.
 $\square$
 
 (c) The value $\text{Re}(L(f))$ is positive for some $f\in B$, so at a maximizer $||f||=1$: otherwise $f/||f||\in B$ has a larger value.

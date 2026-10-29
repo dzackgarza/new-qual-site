@@ -13,8 +13,8 @@ audit:
 ::: {.problem}
 Compute the fundamental group of each space:
 
-1. $M\times\mathbb{RP}^{\infty}$, where $M$ is the Möbius band;
-2. $\Sigma_2\times\mathbb{CP}^2$, where $\Sigma_2$ is the closed orientable surface of genus $2$;
+1. $M\times\RP^{\infty}$, where $M$ is the Möbius band;
+2. $\Sigma_2\times\CP^2$, where $\Sigma_2$ is the closed orientable surface of genus $2$;
 3. $L(p,q)\vee K$, where $K$ is the Klein bottle;
 4. the $1$-skeleton of the standard $3$-simplex $\Delta^3$.
 :::
@@ -27,7 +27,7 @@ Compute the fundamental group of each space:
 
 For the Möbius-band product,
 \[
-\boxed{\pi_1(M\times\mathbb{RP}^{\infty})
+\boxed{\pi_1(M\times\RP^{\infty})
 \cong \ZZ\times\ZZ/2}.
 \]
 
@@ -40,16 +40,16 @@ The Möbius band deformation retracts onto its core circle, so
 \]
 The universal cover
 \[
-S^\infty\longrightarrow\mathbb{RP}^{\infty}
+S^\infty\longrightarrow\RP^{\infty}
 \]
 has deck group $\ZZ/2$, and $S^\infty$ is contractible, so
 \[
-\pi_1(\mathbb{RP}^{\infty})\cong\ZZ/2.
+\pi_1(\RP^{\infty})\cong\ZZ/2.
 \]
 The fundamental group of a product of path-connected spaces is the direct
 product of their fundamental groups. Therefore
 \[
-\pi_1(M\times\mathbb{RP}^{\infty})
+\pi_1(M\times\RP^{\infty})
 \cong\ZZ\times\ZZ/2.
 \]
 
@@ -59,10 +59,10 @@ product of their fundamental groups. Therefore
 
 ::: pf-step
 
-For the product with $\mathbb{CP}^2$,
+For the product with $\CP^2$,
 \[
 \boxed{
-\pi_1(\Sigma_2\times\mathbb{CP}^2)
+\pi_1(\Sigma_2\times\CP^2)
 \cong
 \left\langle
 a_1,b_1,a_2,b_2
@@ -74,15 +74,15 @@ a_1,b_1,a_2,b_2
 
 ::: pf-proof
 
-The standard CW decomposition of $\mathbb{CP}^2$ has one cell in dimensions
+The standard CW decomposition of $\CP^2$ has one cell in dimensions
 $0$, $2$, and $4$. Its $2$-skeleton is $S^2$, and attaching a $4$-cell does
 not change the fundamental group. Hence
 \[
-\pi_1(\mathbb{CP}^2)=\{1\}.
+\pi_1(\CP^2)=\{1\}.
 \]
 The product theorem gives
 \[
-\pi_1(\Sigma_2\times\mathbb{CP}^2)
+\pi_1(\Sigma_2\times\CP^2)
 \cong
 \pi_1(\Sigma_2)\times \{1\}
 \cong

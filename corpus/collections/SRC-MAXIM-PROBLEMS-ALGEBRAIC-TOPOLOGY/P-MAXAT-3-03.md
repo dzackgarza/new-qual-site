@@ -80,13 +80,13 @@ g(-x)
 
 Because $g$ is odd, it descends to a continuous map
 \[
-\bar g:\mathbb{RP}^{n}\to\mathbb{RP}^{n-1}
+\bar g:\RP^{n}\to\RP^{n-1}
 \]
 satisfying
 \[
 q_{n-1}\circ g=\bar g\circ q_n,
 \]
-where $q_k:S^k\to\mathbb{RP}^k$ is the antipodal quotient.
+where $q_k:S^k\to\RP^k$ is the antipodal quotient.
 
 
 ::: pf-proof
@@ -105,9 +105,9 @@ is well-defined and continuous on the quotient.
 
 If
 \[
-a\in H^1(\mathbb{RP}^{n};\mathbb F_2),
+a\in H^1(\RP^{n};\FF_2),
 \qquad
-b\in H^1(\mathbb{RP}^{n-1};\mathbb F_2)
+b\in H^1(\RP^{n-1};\FF_2)
 \]
 are the standard generators, then
 \[
@@ -117,7 +117,7 @@ are the standard generators, then
 
 ::: pf-proof
 
-The double covers $S^n\to\mathbb{RP}^n$ and $S^{n-1}\to\mathbb{RP}^{n-1}$ are classified by the nonzero classes $a$ and $b$ in $H^1(-;\mathbb F_2)$. The commutative square in step [](#s1-3){.pf-ref} is a map of these double covers, so the pullback of the target cover along $\bar g$ is the source antipodal cover. Therefore their classifying classes satisfy $\bar g^*(b)=a$. Equivalently, for $n\ge2$, the induced map on fundamental groups sends the nontrivial antipodal loop to the nontrivial antipodal loop; the $n=1$ case is immediate separately.
+The double covers $S^n\to\RP^n$ and $S^{n-1}\to\RP^{n-1}$ are classified by the nonzero classes $a$ and $b$ in $H^1(-;\FF_2)$. The commutative square in step [](#s1-3){.pf-ref} is a map of these double covers, so the pullback of the target cover along $\bar g$ is the source antipodal cover. Therefore their classifying classes satisfy $\bar g^*(b)=a$. Equivalently, for $n\ge2$, the induced map on fundamental groups sends the nontrivial antipodal loop to the nontrivial antipodal loop; the $n=1$ case is immediate separately.
 
 :::
 
@@ -158,13 +158,13 @@ a^n\ne0.
 
 The mod-$2$ cohomology rings are
 \[
-H^*(\mathbb{RP}^{n-1};\mathbb F_2)
-\cong\mathbb F_2[b]/(b^n)
+H^*(\RP^{n-1};\FF_2)
+\cong\FF_2[b]/(b^n)
 \]
 and
 \[
-H^*(\mathbb{RP}^{n};\mathbb F_2)
-\cong\mathbb F_2[a]/(a^{n+1}).
+H^*(\RP^{n};\FF_2)
+\cong\FF_2[a]/(a^{n+1}).
 \]
 Thus $b^n$ vanishes by the target truncation, whereas $a^n$ is the nonzero top-degree class of the source.
 

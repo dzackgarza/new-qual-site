@@ -793,7 +793,7 @@ $$
 X_1&
 \langle a,b,c\mid abacb^{-1}c^{-1}\rangle&
 \ZZ^2\oplus\ZZ/2&
-\text{yes, }\#^3\mathbb{RP}^2
+\text{yes, }\#^3\RP^2
 \\
 X_2&
 \langle u,v\mid u^2v^2\rangle&

@@ -16,12 +16,12 @@ review: draft
 ---
 
 ::: {.problem}
-(a) Compute the integral and mod $2$ cohomology and homology of $\mathbb{RP}^2 \times \mathbb{RP}^3$.
-Is $\mathbb{RP}^2 \times \mathbb{RP}^3$ orientable?
+(a) Compute the integral and mod $2$ cohomology and homology of $\RP^2 \times \RP^3$.
+Is $\RP^2 \times \RP^3$ orientable?
 
 (b) Determine the action of the Bockstein
 $$
-\beta_1 : H^*(\mathbb{RP}^2 \times \mathbb{RP}^3; \ZZ_2) \to H^{*+1}(\mathbb{RP}^2 \times \mathbb{RP}^3; \ZZ_2).
+\beta_1 : H^*(\RP^2 \times \RP^3; \ZZ_2) \to H^{*+1}(\RP^2 \times \RP^3; \ZZ_2).
 $$
 :::
 
@@ -32,8 +32,8 @@ $$
 ::: pf-step
 
 The integral homology of the two factors is
-$$H_*(\mathbb{RP}^2)=\bigl(\ZZ,\ZZ/2,0\bigr),\qquad
-H_*(\mathbb{RP}^3)=\bigl(\ZZ,\ZZ/2,0,\ZZ\bigr).$$
+$$H_*(\RP^2)=\bigl(\ZZ,\ZZ/2,0\bigr),\qquad
+H_*(\RP^3)=\bigl(\ZZ,\ZZ/2,0,\ZZ\bigr).$$
 
 ::: pf-proof
 
@@ -46,7 +46,7 @@ This is the standard cellular homology computation for real projective spaces.
 ::: {.pf-step #s2}
 
 The integral Künneth theorem gives
-$$\boxed{H_k(\mathbb{RP}^2\times\mathbb{RP}^3;\ZZ)\cong
+$$\boxed{H_k(\RP^2\times\RP^3;\ZZ)\cong
 \begin{cases}
 \ZZ,&k=0,\\
 (\ZZ/2)^2,&k=1,\\
@@ -58,7 +58,7 @@ $$\boxed{H_k(\mathbb{RP}^2\times\mathbb{RP}^3;\ZZ)\cong
 
 ::: pf-proof
 
-The tensor term $H_1(\mathbb{RP}^2)\otimes H_1(\mathbb{RP}^3)$ contributes $\ZZ/2$ in degree $2$; the Tor term $\operatorname{Tor}(\ZZ/2,\ZZ/2)$ contributes $\ZZ/2$ in degree $3$; and $H_1(\mathbb{RP}^2)\otimes H_3(\mathbb{RP}^3)$ contributes $\ZZ/2$ in degree $4$.
+The tensor term $H_1(\RP^2)\otimes H_1(\RP^3)$ contributes $\ZZ/2$ in degree $2$; the Tor term $\operatorname{Tor}(\ZZ/2,\ZZ/2)$ contributes $\ZZ/2$ in degree $3$; and $H_1(\RP^2)\otimes H_3(\RP^3)$ contributes $\ZZ/2$ in degree $4$.
 
 :::
 
@@ -67,7 +67,7 @@ The tensor term $H_1(\mathbb{RP}^2)\otimes H_1(\mathbb{RP}^3)$ contributes $\ZZ/
 ::: pf-step
 
 By the integral cohomology universal coefficient theorem,
-$$\boxed{H^k(\mathbb{RP}^2\times\mathbb{RP}^3;\ZZ)\cong
+$$\boxed{H^k(\RP^2\times\RP^3;\ZZ)\cong
 \begin{cases}
 \ZZ,&k=0,\\
 0,&k=1,\\
@@ -87,15 +87,15 @@ Use $0\to\operatorname{Ext}(H_{k-1},\ZZ)\to H^k\to\operatorname{Hom}(H_k,\ZZ)\to
 
 ::: pf-step
 
-With $\mathbb F_2$ coefficients,
-$$H^*(\mathbb{RP}^2\times\mathbb{RP}^3;\mathbb F_2)
-\cong \mathbb F_2[x,y]/(x^3,y^4),\qquad |x|=|y|=1,$$
+With $\FF_2$ coefficients,
+$$H^*(\RP^2\times\RP^3;\FF_2)
+\cong \FF_2[x,y]/(x^3,y^4),\qquad |x|=|y|=1,$$
 and the mod-$2$ homology dimensions in degrees $0,\dots,5$ are
 $$\boxed{1,2,3,3,2,1}.$$
 
 ::: pf-proof
 
-For $\mathbb{RP}^m$, mod-$2$ cohomology is $\mathbb F_2[t]/(t^{m+1})$. The field-coefficient Künneth theorem gives the tensor-product ring and the stated Betti numbers.
+For $\RP^m$, mod-$2$ cohomology is $\FF_2[t]/(t^{m+1})$. The field-coefficient Künneth theorem gives the tensor-product ring and the stated Betti numbers.
 
 :::
 
@@ -125,7 +125,7 @@ with terms beyond $x^2$ or $y^3$ understood to vanish.
 
 ::: pf-proof
 
-This mod-$2$ Bockstein is $Sq^1$. On the degree-one generator of $H^*(\mathbb{RP}^m;\mathbb F_2)$, $Sq^1(t)=t^2$, and the Cartan formula gives $Sq^1(x^iy^j)=Sq^1(x^i)y^j+x^iSq^1(y^j)$ with $Sq^1(t^r)=r t^{r+1}$ mod $2$.
+This mod-$2$ Bockstein is $Sq^1$. On the degree-one generator of $H^*(\RP^m;\FF_2)$, $Sq^1(t)=t^2$, and the Cartan formula gives $Sq^1(x^iy^j)=Sq^1(x^i)y^j+x^iSq^1(y^j)$ with $Sq^1(t^r)=r t^{r+1}$ mod $2$.
 
 :::
 

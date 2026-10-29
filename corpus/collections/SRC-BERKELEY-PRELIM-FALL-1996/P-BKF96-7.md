@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF96-7
 kind: problem
-title: Possible orders of elements of $GL_2(\mathbb F_p)$
+title: Possible orders of elements of $GL_2(\FF_p)$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Let $p$ be prime. Show that every element of
 \[
-GL_2(\mathbb F_p)
+GL_2(\FF_p)
 \]
 has order dividing either
 \[

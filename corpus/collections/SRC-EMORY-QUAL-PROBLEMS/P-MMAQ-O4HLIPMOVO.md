@@ -114,7 +114,7 @@ divisor of its order [@DF04].
 :::
 
 ::: pf-step
-The subset $K' = H \cup \{0\} \subseteq L$ consists precisely of all roots of the polynomial $f(x) = x^{p^r} - x \in \mathbb{F}_p[x]$ in $L$.
+The subset $K' = H \cup \{0\} \subseteq L$ consists precisely of all roots of the polynomial $f(x) = x^{p^r} - x \in \FF_p[x]$ in $L$.
 Since the map $\phi(x) = x^{p^r}$ is an automorphism of $L$ (the $r$-th power of the Frobenius automorphism), the fixed set:
 \[
 K' = \operatorname{Fix}(\phi) = \{\alpha \in L \mid \alpha^{p^r} = \alpha\}
@@ -172,13 +172,13 @@ An embedding forces the stated characteristic and divisibility.
 ::: pf-proof
 Every finite field has prime characteristic $p$ and
 is a finite-dimensional vector space over its prime
-subfield $\mathbb F_p$ [@DF04]. Its size is therefore
+subfield $\FF_p$ [@DF04]. Its size is therefore
 $p^r$, where $r$ is that positive dimension.
 An embedding preserves the identity and hence the
 characteristic. Identify $K$ with its image in $L$.
 If $d=[L:K]$, the tower law gives
 $$
-s=[L:\mathbb F_p]=[L:K][K:\mathbb F_p]=dr.
+s=[L:\FF_p]=[L:K][K:\FF_p]=dr.
 $$
 Consequently $r\mid s$. This also proves the
 four-versus-eight obstruction in the remark.
@@ -191,10 +191,10 @@ If $r\mid s$, then $L$ contains a subfield of size $p^r$.
 
 ::: pf-proof
 Write $s=rd$ with $d\geq1$, and put
-$h(T)=T^{p^r}-T$. In $\mathbb F_p[T]/(h)$ the
+$h(T)=T^{p^r}-T$. In $\FF_p[T]/(h)$ the
 class $t$ satisfies $t^{p^r}=t$. Iterating this
 identity $d$ times gives $t^{p^s}=t$. Hence
-$h$ divides $T^{p^s}-T$ in $\mathbb F_p[T]$.
+$h$ divides $T^{p^s}-T$ in $\FF_p[T]$.
 
 Lagrange's theorem in $L^\times$ shows that every
 $a\in L$ satisfies $a^{p^s}=a$, including zero.
@@ -224,7 +224,7 @@ The field $K$ embeds in this subfield $K'$.
 ::: pf-proof
 Every element of $K$ is a root of $h$, again by
 Lagrange's theorem in $K^\times$. Thus $K$ is a
-splitting field of $h$ over $\mathbb F_p$.
+splitting field of $h$ over $\FF_p$.
 The field $K'$ is another: its elements are all
 the roots. Uniqueness of splitting fields up to
 base-field isomorphism gives $K\cong K'$ [@DF04].
@@ -244,9 +244,9 @@ the literal-containment assertion of the remark.
 :::
 
 ::: {.remark}
-The inequality $r\leq s$ is not sufficient: $\mathbb F_4$
-does not embed in $\mathbb F_8$, because the tower law
+The inequality $r\leq s$ is not sufficient: $\FF_4$
+does not embed in $\FF_8$, because the tower law
 would require $2\mid 3$. If both fields lie in one
-algebraic closure of $\mathbb F_p$, the criterion
+algebraic closure of $\FF_p$, the criterion
 $r\mid s$ also characterizes the containment $K\subseteq L$.
 :::

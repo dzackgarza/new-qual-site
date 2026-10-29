@@ -13,13 +13,13 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f \in \mathcal{O}(\mathbb{D})$ and assume that $|f(z)| \leq 1$ in $\mathbb{D}$.
+Let $f \in \mathcal{O}(\DD)$ and assume that $|f(z)| \leq 1$ in $\DD$.
 Show that $$\frac{|f(0)| - |z|}{1 + |f(0)||z|} \leq |f(z)| \leq \frac{|f(0)| + |z|}{1 - |f(0)||z|}.$$
 :::
 
 ::: {.solution}
 Put $a=f(0)$. If $f$ is constant the inequalities are immediate. Otherwise
-$f(\mathbb D)\subset\mathbb D$, and Schwarz--Pick applied at $0$ gives
+$f(\DD)\subset\DD$, and Schwarz--Pick applied at $0$ gives
 \[
 \left|\frac{f(z)-a}{1-\overline a f(z)}\right|\le |z|.
 \]

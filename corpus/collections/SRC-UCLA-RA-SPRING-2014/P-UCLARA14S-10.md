@@ -22,7 +22,7 @@ Show that
 \[
 f(z)=\sum_{n\ge1}\frac{a_n}{z-e^{i\alpha n}}
 \]
-converges and defines a function analytic in the unit disk $\mathbb D$, and that $f$ admits no analytic continuation to any domain properly containing $\mathbb D$.
+converges and defines a function analytic in the unit disk $\DD$, and that $f$ admits no analytic continuation to any domain properly containing $\DD$.
 :::
 
 ::: {.solution}
@@ -61,20 +61,20 @@ b_j
 \coloneqq
 \sum_{m=0}^{\infty}2^{-(j+10m)}.
 \]
-Each $b_j$ is positive. Since the original series is absolutely convergent on compact subsets of $\mathbb D$, terms may be grouped by residue class modulo $10$, giving
+Each $b_j$ is positive. Since the original series is absolutely convergent on compact subsets of $\DD$, terms may be grouped by residue class modulo $10$, giving
 \[
 f(z)
 =
 \sum_{j=1}^{10}
 \frac{b_j}{z-\zeta_j}
 \qquad
-(z\in\mathbb D).
+(z\in\DD).
 \]
 The right-hand side is a rational function, holomorphic on
 \[
 \CC\setminus\{\zeta_1,\dots,\zeta_{10}\}.
 \]
-Choose any point of the unit circle not among these ten poles and a sufficiently small disk around it avoiding all poles. The union of that disk with $\mathbb D$ is a domain properly containing $\mathbb D$ on which the rational expression gives an analytic continuation of $f$. Thus the literal claim is false.
+Choose any point of the unit circle not among these ten poles and a sufficiently small disk around it avoiding all poles. The union of that disk with $\DD$ is a domain properly containing $\DD$ on which the rational expression gives an analytic continuation of $f$. Thus the literal claim is false.
 
 :::
 
@@ -116,7 +116,7 @@ f(z)
 \sum_{n=1}^{\infty}
 \frac{a_n}{z-\zeta_n}
 \]
-converges uniformly on compact subsets of $\mathbb D$.
+converges uniformly on compact subsets of $\DD$.
 
 
 ::: pf-proof
@@ -137,7 +137,7 @@ Hence
 \le
 \frac{|a_n|}{1-r}.
 \]
-Since $(a_n)\in\ell^1$, the Weierstrass M-test gives uniform absolute convergence on $|z|\le r$. Every compact subset of $\mathbb D$ is contained in such a disk, so the convergence is locally uniform.
+Since $(a_n)\in\ell^1$, the Weierstrass M-test gives uniform absolute convergence on $|z|\le r$. Every compact subset of $\DD$ is contained in such a disk, so the convergence is locally uniform.
 
 :::
 
@@ -145,7 +145,7 @@ Since $(a_n)\in\ell^1$, the Weierstrass M-test gives uniform absolute convergenc
 
 ::: {.pf-step #s1-4}
 
-Under the corrected hypothesis, $f$ is holomorphic on $\mathbb D$.
+Under the corrected hypothesis, $f$ is holomorphic on $\DD$.
 
 
 ::: pf-proof
@@ -155,7 +155,7 @@ Each summand
 z\longmapsto
 \frac{a_n}{z-\zeta_n}
 \]
-is holomorphic on $\mathbb D$, because $|\zeta_n|=1$. By step [](#s1-3){.pf-ref}, the series converges uniformly on compact subsets. A locally uniform limit of holomorphic functions is holomorphic.
+is holomorphic on $\DD$, because $|\zeta_n|=1$. By step [](#s1-3){.pf-ref}, the series converges uniformly on compact subsets. A locally uniform limit of holomorphic functions is holomorphic.
 
 :::
 
@@ -163,14 +163,14 @@ is holomorphic on $\mathbb D$, because $|\zeta_n|=1$. By step [](#s1-3){.pf-ref}
 
 ::: {.pf-step #s1-5}
 
-Let $\Omega$ be a domain properly containing $\mathbb D$. Then $\Omega$ contains at least one point $\zeta_k=e^{i\alpha k}$.
+Let $\Omega$ be a domain properly containing $\DD$. Then $\Omega$ contains at least one point $\zeta_k=e^{i\alpha k}$.
 
 
 ::: pf-proof
 
-Because $\Omega$ properly contains $\mathbb D$, it contains a point $w\notin\mathbb D$. If $|w|=1$, openness of $\Omega$ gives a nearby point of modulus greater than $1$ that also lies in $\Omega$. Thus $\Omega$ contains a point outside the closed unit disk as well as points inside $\mathbb D$.
+Because $\Omega$ properly contains $\DD$, it contains a point $w\notin\DD$. If $|w|=1$, openness of $\Omega$ gives a nearby point of modulus greater than $1$ that also lies in $\Omega$. Thus $\Omega$ contains a point outside the closed unit disk as well as points inside $\DD$.
 
-Open connected subsets of $\CC$ are path connected, so a path in $\Omega$ from an interior point of $\mathbb D$ to a point outside the closed unit disk must meet the unit circle. Thus $\Omega$ contains some point of $\partial\mathbb D$.
+Open connected subsets of $\CC$ are path connected, so a path in $\Omega$ from an interior point of $\DD$ to a point outside the closed unit disk must meet the unit circle. Thus $\Omega$ contains some point of $\partial\DD$.
 
 Since $\Omega$ is open, it contains a nonempty open arc of the unit circle around that boundary point. By density of the set $\{\zeta_n\}$ from step [](#s1-2){.pf-ref}, that arc contains some $\zeta_k$.
 
@@ -217,7 +217,7 @@ a_n
 
 ::: pf-proof
 
-Inside $\mathbb D$, the continuation $F$ agrees with the original function $f$. Thus
+Inside $\DD$, the continuation $F$ agrees with the original function $f$. Thus
 \[
 \begin{aligned}
 G(r\zeta_k)
@@ -344,7 +344,7 @@ Under the corrected hypothesis $\alpha/(2\pi)\notin\QQ$, the unit circle is a na
 
 ::: pf-proof
 
-Steps [](#s1-5){.pf-ref} through [](#s1-10){.pf-ref} show that no domain properly containing $\mathbb D$ can support a holomorphic continuation of $f$.
+Steps [](#s1-5){.pf-ref} through [](#s1-10){.pf-ref} show that no domain properly containing $\DD$ can support a holomorphic continuation of $f$.
 
 :::
 

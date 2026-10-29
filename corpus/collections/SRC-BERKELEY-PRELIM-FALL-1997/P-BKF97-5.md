@@ -26,15 +26,15 @@ audit:
 ::: {.problem}
 Let
 \[
-\mathbb D=\{z\in\CC:|z|<1\}.
+\DD=\{z\in\CC:|z|<1\}.
 \]
-Suppose $f:\mathbb D\to\mathbb D$ is analytic and there exist distinct $a,b\in\mathbb D$ with
+Suppose $f:\DD\to\DD$ is analytic and there exist distinct $a,b\in\DD$ with
 \[
 f(a)=a,
 \qquad
 f(b)=b.
 \]
-Prove that $f(z)=z$ for every $z\in\mathbb D$.
+Prove that $f(z)=z$ for every $z\in\DD$.
 :::
 
 ::: {.solution}

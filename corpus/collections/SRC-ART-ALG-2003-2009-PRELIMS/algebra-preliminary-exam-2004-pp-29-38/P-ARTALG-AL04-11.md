@@ -49,13 +49,13 @@ The characteristic of a finite field is a prime dividing its order:
 the additive order of $1$ divides the additive group order, and a
 composite characteristic would give nonzero zero divisors.
 Here that prime must be $5$. Thus $F$ contains its prime field
-$\mathbb F_5$. If $[F:\mathbb F_5]=n$, a basis counts its
+$\FF_5$. If $[F:\FF_5]=n$, a basis counts its
 elements as $5^n$, so $n=20$.
 
-Every subfield $K$ contains $\mathbb F_5$. Writing
-$d=[K:\mathbb F_5]$, the tower law gives
+Every subfield $K$ contains $\FF_5$. Writing
+$d=[K:\FF_5]$, the tower law gives
 $$
-20=[F:\mathbb F_5]=[F:K]d.
+20=[F:\FF_5]=[F:K]d.
 $$
 Consequently $d\mid20$ and $|K|=5^d$. The positive divisors
 of $20=2^2\cdot5$ are exactly $1,2,4,5,10,20$.
@@ -72,7 +72,7 @@ $F_d=\{a\in F:a^{5^d}=a\}$ is a subfield with exactly $5^d$ elements.
 ::: pf-proof
 
 Put $h_d(T)=T^{5^d}-T$. First, $h_d$ divides $h_{20}$ in
-$\mathbb F_5[T]$. Indeed, in the quotient ring by $(h_d)$ the
+$\FF_5[T]$. Indeed, in the quotient ring by $(h_d)$ the
 class $t$ of $T$ satisfies $t^{5^d}=t$. Repeatedly taking the
 $5^d$th power gives $t^{5^{kd}}=t$ for every positive integer
 $k$. Taking $k=20/d$ shows that $h_{20}$ has zero class in

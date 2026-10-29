@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-04
 kind: problem
-title: Towers of quadratic extensions of $\mathbb F_p$ for $p\equiv 3 \pmod 4$
+title: Towers of quadratic extensions of $\FF_p$ for $p\equiv 3 \pmod 4$
 classification:
   areas: [algebra]
   topics: []
@@ -22,9 +22,9 @@ audit:
 ::: {.problem}
 Problem 3.3 reads: Let $p$ be a prime which is $\equiv 1 \bmod 2^k$, but not congruent to $1$ modulo a higher power of $2$.
 Assume $k \geq 2$.
-Assume that $u_0 \in \mathbb{F}_p$ is not a square.
+Assume that $u_0 \in \FF_p$ is not a square.
 Construct a sequence of pairs $(E_n, u_n)$ where $E_n$ is a field and $u_n \in E_n$ as follows.
-Define $(E_0, u_0) = (\mathbb{F}_p, u_0)$.
+Define $(E_0, u_0) = (\FF_p, u_0)$.
 Assume that $(E_n, u_n)$ has been defined.
 Let $E_{n+1}$ be a field extension of $E_n$ obtaing by adjoining a square-root $u_{n+1}$ of $u_n \in E_n$.
 Show that $\deg(E_n/E_{n-1}) = 2$ for all $n > 0$.
@@ -38,13 +38,13 @@ Here $k=1$ means
 \[
 p\equiv3\pmod4.
 \]
-The direct iteration from Problem 3.3 cannot start with an arbitrary nonsquare $u_0\in\mathbb F_p$ and retain the same valuation argument. Instead, first pass to the quadratic extension by adjoining a square root of $-1$.
+The direct iteration from Problem 3.3 cannot start with an arbitrary nonsquare $u_0\in\FF_p$ and retain the same valuation argument. Instead, first pass to the quadratic extension by adjoining a square root of $-1$.
 
 ::: pf
 
 ::: {.pf-step #s1-1}
 
-Since $p\equiv3\pmod4$, the element $-1$ is not a square in $\mathbb F_p$.
+Since $p\equiv3\pmod4$, the element $-1$ is not a square in $\FF_p$.
 
 
 ::: pf-proof
@@ -67,21 +67,21 @@ i^2=-1
 \]
 and set
 \[
-E_1=\mathbb F_p(i).
+E_1=\FF_p(i).
 \]
 Then
 \[
-[E_1:\mathbb F_p]=2
+[E_1:\FF_p]=2
 \]
 and
 \[
-E_1\cong\mathbb F_{p^2}.
+E_1\cong\FF_{p^2}.
 \]
 
 
 ::: pf-proof
 
-By step [](#s1-1){.pf-ref}, $X^2+1$ is irreducible over $\mathbb F_p$, so adjoining a root gives degree $2$. The resulting field has $p^2$ elements and hence is the unique field $\mathbb F_{p^2}$.
+By step [](#s1-1){.pf-ref}, $X^2+1$ is irreducible over $\FF_p$, so adjoining a root gives degree $2$. The resulting field has $p^2$ elements and hence is the unique field $\FF_{p^2}$.
 
 :::
 
@@ -137,7 +137,7 @@ for $n\ge1$.
 
 ::: pf-proof
 
-This is the same recursive construction as in Problem 3.3, now with base field $E_1\cong\mathbb F_{p^2}$ and initial nonsquare $u_1$.
+This is the same recursive construction as in Problem 3.3, now with base field $E_1\cong\FF_{p^2}$ and initial nonsquare $u_1$.
 
 :::
 
@@ -154,7 +154,7 @@ Every extension in this recursive tail is quadratic:
 
 ::: pf-proof
 
-Problem 3.3 applies verbatim to the finite field $E_1=\mathbb F_{p^2}$ because the exact power of $2$ dividing $|E_1^\times|=p^2-1$ is $2^{k'}$ with $k'\ge2$, by step [](#s1-3){.pf-ref}, and $u_1$ is a nonsquare by step [](#s1-4){.pf-ref}. Its conclusion is that every successive square-root adjunction has degree $2$.
+Problem 3.3 applies verbatim to the finite field $E_1=\FF_{p^2}$ because the exact power of $2$ dividing $|E_1^\times|=p^2-1$ is $2^{k'}$ with $k'\ge2$, by step [](#s1-3){.pf-ref}, and $u_1$ is a nonsquare by step [](#s1-4){.pf-ref}. Its conclusion is that every successive square-root adjunction has degree $2$.
 
 :::
 
@@ -164,7 +164,7 @@ Problem 3.3 applies verbatim to the finite field $E_1=\mathbb F_{p^2}$ because t
 
 Together with the first extension, this gives an infinite tower
 \[
-\mathbb F_p=E_0
+\FF_p=E_0
 \subset E_1
 \subset E_2
 \subset\cdots

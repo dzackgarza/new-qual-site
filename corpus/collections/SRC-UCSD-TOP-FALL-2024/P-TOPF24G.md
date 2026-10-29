@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF24G
 kind: problem
-title: 'Fundamental group and $\pi_2$ of $\mathbb{RP}^3 \# \mathbb{RP}^3$'
+title: 'Fundamental group and $\pi_2$ of $\RP^3 \# \RP^3$'
 classification:
   areas:
   - topology
@@ -19,12 +19,12 @@ audit:
 ---
 
 ::: {.problem}
-What is the fundamental group of $X = \mathbb{RP}^3 \# \mathbb{RP}^3$?
+What is the fundamental group of $X = \RP^3 \# \RP^3$?
 Give a description of the universal cover $\widetilde{X}$ of $X$ and use this to calculate $\pi_2(X)$.
 :::
 
 ::: {.solution}
-**Goal:** Compute the fundamental group $\pi_1(X)$, describe the universal cover $\widetilde{X}$, and compute $\pi_2(X)$ for the connected sum $X = \mathbb{RP}^3 \# \mathbb{RP}^3$.
+**Goal:** Compute the fundamental group $\pi_1(X)$, describe the universal cover $\widetilde{X}$, and compute $\pi_2(X)$ for the connected sum $X = \RP^3 \# \RP^3$.
 
 ::: pf
 
@@ -34,13 +34,13 @@ Computation of $\pi_1(X)$:
 ::: pf-proof
 
 ::: pf-step
-By definition of the connected sum of 3-manifolds, $X = M_1 \# M_2$ is formed by deleting the interior of an open 3-ball $B^3$ from each copy of $\mathbb{RP}^3$ to obtain $M_1' = M_2' = \mathbb{RP}^3 \setminus \operatorname{int}(D^3)$, and gluing along their boundary 2-spheres:
+By definition of the connected sum of 3-manifolds, $X = M_1 \# M_2$ is formed by deleting the interior of an open 3-ball $B^3$ from each copy of $\RP^3$ to obtain $M_1' = M_2' = \RP^3 \setminus \operatorname{int}(D^3)$, and gluing along their boundary 2-spheres:
 $$X = M_1' \cup_{S^2} M_2'.$$
 :::
 
 ::: pf-step
 Since $\operatorname{codim}(D^3) = 3 \ge 3$, removing an open 3-ball does not affect the fundamental group:
-$$\pi_1(M_1') \cong \pi_1(\mathbb{RP}^3) \cong \ZZ/2\ZZ, \qquad \pi_1(M_2') \cong \pi_1(\mathbb{RP}^3) \cong \ZZ/2\ZZ.$$
+$$\pi_1(M_1') \cong \pi_1(\RP^3) \cong \ZZ/2\ZZ, \qquad \pi_1(M_2') \cong \pi_1(\RP^3) \cong \ZZ/2\ZZ.$$
 :::
 
 ::: pf-step
@@ -63,7 +63,7 @@ Description of the universal cover $\widetilde{X}$:
 ::: pf-proof
 
 ::: pf-step
-The universal cover of $M_1' = \mathbb{RP}^3 \setminus \operatorname{int}(D^3)$ is $\widetilde{M}_1' = S^3 \setminus (D_1^3 \cup D_2^3)$ (the 3-sphere with two antipodal open 3-balls removed).
+The universal cover of $M_1' = \RP^3 \setminus \operatorname{int}(D^3)$ is $\widetilde{M}_1' = S^3 \setminus (D_1^3 \cup D_2^3)$ (the 3-sphere with two antipodal open 3-balls removed).
 :::
 
 ::: pf-step

@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $p$ be a positive prime number, $\mathbb F_p$ the field with $p$ elements, and let $G=\text{GL}_2(\mathbb F_p)$.
+Let $p$ be a positive prime number, $\FF_p$ the field with $p$ elements, and let $G=\text{GL}_2(\FF_p)$.
 
 - Compute the order of $G$, $|G|$.
 
@@ -28,7 +28,7 @@ Let $p$ be a positive prime number, $\mathbb F_p$ the field with $p$ elements, a
     1 & a\\
     0 & 1
   \end{pmatrix}
-  \bigg|a\in\mathbb F_p\right\}. \end{align*}`{=tex}
+  \bigg|a\in\FF_p\right\}. \end{align*}`{=tex}
 
 - How many subgroups of order $p$ does $G$ have?
 
@@ -41,14 +41,14 @@ Let $p$ be a positive prime number, $\mathbb F_p$ the field with $p$ elements, a
 
 ::: {.pf-step #s1}
 
-The order of $G=\operatorname{GL}_2(\mathbb F_p)$ is
+The order of $G=\operatorname{GL}_2(\FF_p)$ is
 \[
 |G|=(p^2-1)(p^2-p)=p(p-1)^2(p+1).
 \]
 
 ::: pf-proof
 
-The first column of an invertible $2\times2$ matrix may be any nonzero vector in $\mathbb F_p^2$, giving $p^2-1$ choices.
+The first column of an invertible $2\times2$ matrix may be any nonzero vector in $\FF_p^2$, giving $p^2-1$ choices.
 Once it is chosen, the second column may be any vector not in its one-dimensional span, giving $p^2-p$ choices.
 
 :::
@@ -75,7 +75,7 @@ Matrix multiplication gives
 =
 \begin{pmatrix}1&a+b\\0&1\end{pmatrix},
 \]
-so $\varphi$ is a homomorphism from the additive group of $\mathbb F_p$. It is visibly bijective.
+so $\varphi$ is a homomorphism from the additive group of $\FF_p$. It is visibly bijective.
 
 :::
 
@@ -104,7 +104,7 @@ The normalizer of $U$ is the subgroup
 N_G(U)=
 \left\{
 \begin{pmatrix}a&b\\0&d\end{pmatrix}:
- a,d\in\mathbb F_p^\times,\ b\in\mathbb F_p
+ a,d\in\FF_p^\times,\ b\in\FF_p
 \right\}.
 \]
 
@@ -116,7 +116,7 @@ u_t=\begin{pmatrix}1&t\\0&1\end{pmatrix},\qquad t\ne0,
 \]
 and its fixed-point space is exactly the line
 \[
-L=\mathbb F_p e_1.
+L=\FF_p e_1.
 \]
 If $gUg^{-1}=U$, then for nontrivial $u\in U$, the fixed line of $gug^{-1}$ is $gL$.
 But every nontrivial element of $U$ has fixed line $L$, so $gL=L$.

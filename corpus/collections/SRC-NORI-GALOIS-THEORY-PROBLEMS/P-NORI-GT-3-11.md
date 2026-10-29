@@ -32,7 +32,7 @@ Prove that we may choose $P, Q, c$ satisfying
 
 (ii) the coefficients of $P$ and $Q$ lie in $R = \{\frac{m}{2^n} : m \in \ZZ, n \geq 0\}$.
 
-Deduce that if $p$ is an odd prime, then $f$ modulo $p$, i.e. its image $\overline{f} \in \mathbb{F}_p[X]$ does not have an irreducible factor of degree $3$.
+Deduce that if $p$ is an odd prime, then $f$ modulo $p$, i.e. its image $\overline{f} \in \FF_p[X]$ does not have an irreducible factor of degree $3$.
 
 (this was an example I gave on Wednesday first week (without a proof) of a degree four extension of $\QQ$ that does not contain a quadratic extension)
 :::

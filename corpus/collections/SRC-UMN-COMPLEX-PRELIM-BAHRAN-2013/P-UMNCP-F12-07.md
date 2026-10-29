@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose \(f\) is analytic on the punctured unit disk \(\mathbb D\setminus\{0\}\) and
+Suppose \(f\) is analytic on the punctured unit disk \(\DD\setminus\{0\}\) and
 \[
 \operatorname{Re} f(z)>0.
 \]
@@ -37,7 +37,7 @@ $$
 
 ::: {.pf-step #s1-1}
 
-The denominator $f(z)+1$ never vanishes on $\mathbb D\setminus\{0\}$.
+The denominator $f(z)+1$ never vanishes on $\DD\setminus\{0\}$.
 
 
 ::: pf-proof
@@ -61,7 +61,7 @@ $$
 
 ::: {.pf-step #s1-2}
 
-The function $g$ is holomorphic on $\mathbb D\setminus\{0\}$ and satisfies
+The function $g$ is holomorphic on $\DD\setminus\{0\}$ and satisfies
 $$
 \boxed{|g(z)|<1}.
 $$
@@ -114,7 +114,7 @@ $$
 $$
 throughout the punctured disk. Thus $g$ is bounded near $0$. Riemann's removable-singularity theorem therefore gives a holomorphic extension
 $$
-\widetilde g:\mathbb D\to\CC.
+\widetilde g:\DD\to\CC.
 $$
 
 :::

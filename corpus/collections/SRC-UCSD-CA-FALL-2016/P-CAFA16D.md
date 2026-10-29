@@ -13,9 +13,9 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f: \overline{\mathbb{D}} \to \CC$ be a continuous function which is analytic on $\mathbb{D}$.
+Let $f: \overline{\DD} \to \CC$ be a continuous function which is analytic on $\DD$.
 Assume that there exists $0 < \alpha \leq 2\pi$ such that $f(e^{i\theta}) = 0$ for all $\theta \in (0, \alpha)$.
-Prove that $f(z) = 0$ for every $z \in \mathbb{D}$.
+Prove that $f(z) = 0$ for every $z \in \DD$.
 :::
 
 ::: {.solution}
@@ -23,8 +23,8 @@ Choose a point $e^{i\theta_0}$ in the interior of the boundary arc, so $0<\theta
 
 On that interval the boundary values of $f$ are identically $0$, hence real. By the Schwarz reflection principle, $f$ extends holomorphically across a smaller subarc. The extended function vanishes on that subarc, which is now a set of interior points having accumulation points. By the identity theorem, the extension is identically zero in a neighborhood of the arc.
 
-Thus $f$ vanishes on a nonempty open subset of $\mathbb D$. Applying the identity theorem once more on the connected disk yields
+Thus $f$ vanishes on a nonempty open subset of $\DD$. Applying the identity theorem once more on the connected disk yields
 \[
-f\equiv0\quad\text{on }\mathbb D.
+f\equiv0\quad\text{on }\DD.
 \]
 :::

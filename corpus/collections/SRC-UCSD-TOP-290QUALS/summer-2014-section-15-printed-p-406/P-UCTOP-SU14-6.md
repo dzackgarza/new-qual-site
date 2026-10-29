@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that $\mathbb{QP}^2 \vee S^3$ and $\mathbb{RP}^3$ are not homotopy-equivalent.
+Prove that $\mathbb{QP}^2 \vee S^3$ and $\RP^3$ are not homotopy-equivalent.
 :::
 
 ::: {.solution}
@@ -48,17 +48,17 @@ Reduced homology of a wedge is the direct sum of the reduced homologies of its s
 ::: {.pf-step #h4-rp3-zero}
 But
 $$
-H_4(\mathbb{RP}^3;\ZZ)=0.
+H_4(\RP^3;\ZZ)=0.
 $$
 
 ::: pf-proof
-The space $\mathbb{RP}^3$ is a $3$-dimensional CW complex.
+The space $\RP^3$ is a $3$-dimensional CW complex.
 :::
 
 :::
 
 ::: pf-step
-Hence $\mathbb{QP}^2\vee S^3$ and $\mathbb{RP}^3$ are not homotopy-equivalent.
+Hence $\mathbb{QP}^2\vee S^3$ and $\RP^3$ are not homotopy-equivalent.
 
 ::: pf-proof
 Homotopy-equivalent spaces have isomorphic integral homology groups in every degree, contradicting steps [](#h4-wedge){.pf-ref} and [](#h4-rp3-zero){.pf-ref}.

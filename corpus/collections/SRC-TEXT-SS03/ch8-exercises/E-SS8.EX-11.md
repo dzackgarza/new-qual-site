@@ -33,17 +33,17 @@ $$
 ::: {.solution}
 Define
 \[
-g(\zeta)=\frac{f(R\zeta)}{M},\qquad \zeta\in\mathbb D.
+g(\zeta)=\frac{f(R\zeta)}{M},\qquad \zeta\in\DD.
 \]
-Then $g:\mathbb D\to\mathbb D$. Put $a=g(0)=f(0)/M$ and let
+Then $g:\DD\to\DD$. Put $a=g(0)=f(0)/M$ and let
 \[
 \phi_a(w)=\frac{w-a}{1-\overline a\,w},
 \]
-the automorphism of $\mathbb D$ carrying $a$ to $0$. The function
+the automorphism of $\DD$ carrying $a$ to $0$. The function
 \[
 h=\phi_a\circ g
 \]
-is holomorphic from $\mathbb D$ to itself and satisfies $h(0)=0$. Schwarz's lemma yields
+is holomorphic from $\DD$ to itself and satisfies $h(0)=0$. Schwarz's lemma yields
 \[
 |h(\zeta)|\le|\zeta|.
 \]

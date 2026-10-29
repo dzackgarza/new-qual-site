@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-Compute the homology group $H_k(\mathbb{RP}^2 \times \mathbb{RP}^2; \ZZ)$ for all $k \geq 0$.
+Compute the homology group $H_k(\RP^2 \times \RP^2; \ZZ)$ for all $k \geq 0$.
 :::
 
 ::: {.solution}
@@ -24,7 +24,7 @@ Compute the homology group $H_k(\mathbb{RP}^2 \times \mathbb{RP}^2; \ZZ)$ for al
 
 ::: pf-step
 
-Integrally, $H_0(\mathbb{RP}^2)=\ZZ$, $H_1(\mathbb{RP}^2)=\ZZ/2$, and all higher homology vanishes.
+Integrally, $H_0(\RP^2)=\ZZ$, $H_1(\RP^2)=\ZZ/2$, and all higher homology vanishes.
 
 ::: pf-proof
 
@@ -63,7 +63,7 @@ In the Künneth short exact sequence for $H_n$, Tor terms with indices summing t
 ::: pf-step
 
 Hence
-$$\boxed{H_k(\mathbb{RP}^2\times\mathbb{RP}^2;\ZZ)\cong\begin{cases}
+$$\boxed{H_k(\RP^2\times\RP^2;\ZZ)\cong\begin{cases}
 \ZZ,&k=0,\\
 (\ZZ/2)^2,&k=1,\\
 \ZZ/2,&k=2,3,\\

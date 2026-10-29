@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA18S-08
 kind: problem
-title: Sharp bound on $|\partial_xu(0)|$ for harmonic $u:\mathbb D\to[0,1]$
+title: Sharp bound on $|\partial_xu(0)|$ for harmonic $u:\DD\to[0,1]$
 classification:
   areas:
   - real-analysis
@@ -21,9 +21,9 @@ Problem 8. Determine the supremum of
 \[
 \left|\frac{\partial u}{\partial x}(0,0)\right|
 \]
-among all harmonic functions $u:\mathbb D\to[0,1]$, where
+among all harmonic functions $u:\DD\to[0,1]$, where
 \[
-\mathbb D=\{z\in\CC:|z|<1\}.
+\DD=\{z\in\CC:|z|<1\}.
 \]
 Prove that your answer is correct.
 :::
@@ -51,10 +51,10 @@ Thus constant functions cannot increase the supremum.
 
 ::: {.pf-step #s1-2}
 
-If \(u:\mathbb D\to[0,1]\) is nonconstant and harmonic, then
+If \(u:\DD\to[0,1]\) is nonconstant and harmonic, then
 \[
 0<u(z)<1
-\qquad(z\in\mathbb D).
+\qquad(z\in\DD).
 \]
 
 
@@ -73,7 +73,7 @@ open interval \((0,1)\).
 
 There is a holomorphic function
 \[
-F=u+iv:\mathbb D\to
+F=u+iv:\DD\to
 S
 \coloneqq
 \{w\in\CC:0<\operatorname{Re}w<1\}
@@ -107,7 +107,7 @@ Step [](#s1-2){.pf-ref} shows that the image lies in the vertical strip \(S\).
 
 Define
 \[
-T:S\longrightarrow\mathbb D,
+T:S\longrightarrow\DD,
 \qquad
 T(w)
 =
@@ -127,7 +127,7 @@ half-plane. The Cayley map
 \[
 \zeta\longmapsto\frac{\zeta-i}{\zeta+i}
 \]
-is a conformal bijection from the upper half-plane to \(\mathbb D\).
+is a conformal bijection from the upper half-plane to \(\DD\).
 Their composition is \(T\).
 
 :::
@@ -165,7 +165,7 @@ G
 =
 \psi_\alpha\circ T\circ F
 :
-\mathbb D\to\mathbb D
+\DD\to\DD
 \]
 is holomorphic and
 \[
@@ -291,7 +291,7 @@ Combine steps [](#s1-5){.pf-ref} and [](#s1-6){.pf-ref}.
 
 ::: {.pf-step #s1-8}
 
-Let \(H=T^{-1}:\mathbb D\to S\) be the inverse conformal map,
+Let \(H=T^{-1}:\DD\to S\) be the inverse conformal map,
 \[
 H(z)
 =
@@ -370,7 +370,7 @@ and
 \[
 u_*(z)=\operatorname{Re}\widetilde H(z).
 \]
-Then \(u_*:\mathbb D\to(0,1)\) is harmonic and
+Then \(u_*:\DD\to(0,1)\) is harmonic and
 \[
 \boxed{
 \frac{\partial u_*}{\partial x}(0,0)
@@ -381,9 +381,9 @@ Then \(u_*:\mathbb D\to(0,1)\) is harmonic and
 
 ::: pf-proof
 
-Since multiplication by \(i\) is an automorphism of \(\mathbb D\),
+Since multiplication by \(i\) is an automorphism of \(\DD\),
 \[
-\widetilde H:\mathbb D\to S
+\widetilde H:\DD\to S
 \]
 is holomorphic, so its real part \(u_*\) is harmonic and takes values in
 \((0,1)\).

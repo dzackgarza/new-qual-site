@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-2.2-28
 kind: problem
-title: Mayer–Vietoris computations for torus with Möbius band and $\mathbb{RP}^2$ with Möbius band
+title: Mayer–Vietoris computations for torus with Möbius band and $\RP^2$ with Möbius band
 classification:
   areas:
   - topology
@@ -29,7 +29,7 @@ audit:
 ::: {.problem}
 (a) Use the Mayer–Vietoris sequence to compute the homology groups of the space obtained from a torus $S^1 \times S^1$ by attaching a Möbius band via a homeomorphism from the boundary circle of the Möbius band to the circle $S^1 \times \{x_0\}$ in the torus.
 
-(b) Do the same for the space obtained by attaching a Möbius band to $\mathbb{RP}^2$ via a homeomorphism of its boundary circle to the standard $\mathbb{RP}^1 \subset \mathbb{RP}^2$.
+(b) Do the same for the space obtained by attaching a Möbius band to $\RP^2$ via a homeomorphism of its boundary circle to the standard $\RP^1 \subset \RP^2$.
 :::
 
 ::: {.solution}
@@ -89,7 +89,7 @@ Connectedness gives $H_0(Y)=\ZZ$.
 
 In part (b), let
 \[
-Z=\mathbb{RP}^2\cup_{\mathbb{RP}^1}M.
+Z=\RP^2\cup_{\RP^1}M.
 \]
 Then
 \[
@@ -105,9 +105,9 @@ H_i(Z)\cong
 
 Let $u$ generate
 \[
-H_1(\mathbb{RP}^2)\cong\ZZ_2
+H_1(\RP^2)\cong\ZZ_2
 \]
-and let $c$ generate $H_1(M)\cong\ZZ$. The standard circle $\mathbb{RP}^1$ represents $u$, while the boundary of $M$ represents $2c$. Hence the Mayer--Vietoris map is
+and let $c$ generate $H_1(M)\cong\ZZ$. The standard circle $\RP^1$ represents $u$, while the boundary of $M$ represents $2c$. Hence the Mayer--Vietoris map is
 \[
 \ZZ\longrightarrow\ZZ_2\oplus\ZZ,
 \qquad

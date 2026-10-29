@@ -36,7 +36,7 @@ Asymptotic limit of the integral along a large circle $C_R$:
 ::: pf-proof
 
 ::: pf-step
-Let $C_R$ denote the circle $\{|\xi| = R\}$, oriented counterclockwise, for $R > 0$ sufficiently large such that $\gamma \subset \mathbb{D}_R$ and (if $z \in \Omega_2$) $|z| < R$.
+Let $C_R$ denote the circle $\{|\xi| = R\}$, oriented counterclockwise, for $R > 0$ sufficiently large such that $\gamma \subset \DD_R$ and (if $z \in \Omega_2$) $|z| < R$.
 :::
 
 ::: pf-step
@@ -78,11 +78,11 @@ Let $z \in \Omega_1$.
 :::
 
 ::: pf-step
-Choose $R > 0$ large enough that $\gamma \subset \mathbb{D}_R$.
+Choose $R > 0$ large enough that $\gamma \subset \DD_R$.
 :::
 
 ::: pf-step
-Consider the bounded region $U_R = \mathbb{D}_R \cap \Omega_2$ between $\gamma$ and $C_R$.
+Consider the bounded region $U_R = \DD_R \cap \Omega_2$ between $\gamma$ and $C_R$.
 :::
 
 ::: pf-step
@@ -122,11 +122,11 @@ Let $z \in \Omega_2$.
 :::
 
 ::: pf-step
-Choose $R > |z|$ large enough that $\gamma \subset \mathbb{D}_R$.
+Choose $R > |z|$ large enough that $\gamma \subset \DD_R$.
 :::
 
 ::: pf-step
-Now the point $z$ lies in the interior of the bounded region $U_R = \mathbb{D}_R \cap \Omega_2$.
+Now the point $z$ lies in the interior of the bounded region $U_R = \DD_R \cap \Omega_2$.
 :::
 
 ::: pf-step
