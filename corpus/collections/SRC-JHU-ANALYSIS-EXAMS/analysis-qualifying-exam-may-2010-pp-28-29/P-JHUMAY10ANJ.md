@@ -54,7 +54,7 @@ $$
 &\le \|\chi_E\|_2\,\|\chi_E(\cdot-h)-\chi_E\|_2.
 \end{aligned}
 $$
-The inequality is [[FF-4XBYG|Cauchy--Schwarz in $L^2$]]. The right-hand side is independent of $x$ and tends to $0$ as $h\to0$ by [[PR-JX4YU|continuity of translation in $L^p$]]. Thus $F$ is uniformly continuous.
+The inequality is [[FF-4XBYG|Cauchy--Schwarz in $L^2$]]. The right-hand side is independent of $x$ and tends to $0$ as $h\to0$ by [[T-BFOJT|continuity of translation in $L^p$]]. Thus $F$ is uniformly continuous.
 
 :::
 

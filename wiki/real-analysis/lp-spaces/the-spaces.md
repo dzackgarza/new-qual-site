@@ -32,8 +32,6 @@ By the Riesz--Fischer theorem, $L^p$ is complete for $1\leq p\leq\infty$.
 
 [[PR-TWF4F]]
 
-[[PR-JX4YU]]
-
 [[PR-3W4FO]]
 
 ## Approximation and translation
@@ -62,8 +60,6 @@ If $\Phi,\Psi\colon L^p\to Y$ are continuous maps into a metric space $Y$ and $\
 For $1\leq p<\infty$ and $f\in L^p$, if $\int fg=0$ for every $g$ in a dense subset of $L^q$, then $f=0$ almost everywhere.
 
 [[E-IAQ6D]]
-
-[[FT-4ED3Q]]
 
 [[PR-C626A]]
 

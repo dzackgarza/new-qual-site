@@ -71,7 +71,7 @@ $$
 |(f*g)(x+h)-(f*g)(x)|
 \le\|f\|_2\,\|g(\cdot+h)-g\|_2.
 $$
-By [[PR-JX4YU|continuity of translation in $L^p$]], the final norm tends to $0$ as $h\to0$. The bound is independent of $x$, so $f*g$ is uniformly continuous, hence continuous.
+By [[T-BFOJT|continuity of translation in $L^p$]], the final norm tends to $0$ as $h\to0$. The bound is independent of $x$, so $f*g$ is uniformly continuous, hence continuous.
 
 :::
 

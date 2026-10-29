@@ -3,6 +3,8 @@ schema: qual/card@1
 id: T-BFOJT
 kind: theorem
 title: Continuity of translation in $L^1$
+prompts:
+- State and prove continuity of translation in $L^1(\RR^n)$.
 slogan: 'For each $f\in L^1(\RR^n)$, $\norm{\tau_hf-f}_1\to0$ as $h\to0$.'
 classification:
   areas:
@@ -11,6 +13,9 @@ classification:
   - L¹
   - Continuity
   - Equicontinuity
+  - Density
+  - Lp Spaces
+  - Uniform Continuity
 relations: []
 review: draft
 ---
@@ -21,6 +26,24 @@ For every $f\in L^1(\RR^n)$,
 $$
 \lim_{h\to 0}\norm{\tau_h f - f}_1 = 0 .
 $$
+:::
+
+::: {.proof}
+Let $\varepsilon>0$.
+Since compactly supported continuous functions are dense in $L^1(\RR^n)$, choose $g\in C_c(\RR^n)$ with $\norm{f-g}_1<\varepsilon/3$.
+By translation invariance of Lebesgue measure, $\norm{\tau_hf-\tau_hg}_1=\norm{f-g}_1<\varepsilon/3$ for every $h$.
+The function $g$ is uniformly continuous and, for $\abs{h}\le1$, $\tau_hg-g$ vanishes outside the compact set $K=\supp g+\overline{B(0,1)}$, so $\norm{\tau_hg-g}_1\le \vol(K)\sup_x\abs{g(x-h)-g(x)}<\varepsilon/3$ for $\abs{h}$ small enough.
+The triangle inequality then gives $\norm{\tau_hf-f}_1<\varepsilon$ for $\abs{h}$ small enough.
+:::
+
+::: {.remark title="Variations"}
+(a) For $1\leq p<\infty$ and $f\in L^p(\RR^n)$, $\norm{\tau_h f-f}_p\to0$ as $h\to0$ [@Fol13].
+The proof above applies with $L^p$ norms, since $C_c(\RR^n)$ is dense in $L^p(\RR^n)$ and $\norm{\tau_hg-g}_p\le\vol(K)^{1/p}\sup_x\abs{g(x-h)-g(x)}$.
+
+(b) The statement fails for $p=\infty$: for $f\coloneqq\chi_{[0,\infty)}\in L^\infty(\RR)$ and $h\neq0$, $\tau_h f-f=\pm\chi_I$ for the half-open interval $I$ between $0$ and $h$, so $\norm{\tau_h f-f}_\infty=1$.
+
+(c) In the sup norm the statement characterizes uniform continuity: a function $f\colon\RR^n\to\CC$ is [[D-WGYSB|uniformly continuous]] if and only if $\sup_{x\in\RR^n}\abs{f(x-h)-f(x)}\to0$ as $h\to0$.
+This is the definition of uniform continuity with $y=x-h$.
 :::
 
 ::: {.remark}
