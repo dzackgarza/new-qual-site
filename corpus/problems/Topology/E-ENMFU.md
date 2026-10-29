@@ -15,8 +15,6 @@ review: draft
 
 ::: {.exercise}
 Show that a quotient of a compact space is again compact.
-
-#### Exercise
 :::
 
 ::: {.solution}
