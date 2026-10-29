@@ -49,7 +49,7 @@ The Lebesgue $\sigma$-algebra is the completion of the Borel $\sigma$-algebra an
 
 :::
 
-## Exercises
+## Problems
 
 [[P-QZT5B]]
 
