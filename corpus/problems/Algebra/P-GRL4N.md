@@ -23,13 +23,13 @@ audit:
 
 ::: {.problem}
 Let $A$ be a $4\times4$ matrix over a field of characteristic not equal to $2$ with
-\[
+$$
 \chi_A(x)=(x-1)^2(x+1)^2
-\]
+$$
 and minimal polynomial
-\[
+$$
 m_A(x)=(x-1)(x+1)^2.
-\]
+$$
 Determine the Jordan canonical form and rational canonical form of $A$.
 :::
 
@@ -64,9 +64,9 @@ The algebraic multiplicity of $-1$ is $2$, while the exponent of $x+1$ in the mi
 ::: pf-step
 
 Thus
-\[
-J(A)=J_2(-1)\oplus[1]\oplus[1].
-\]
+$$
+J(A)=\boxed{J_2(-1)\oplus[1]\oplus[1]}.
+$$
 
 ::: pf-proof
 
@@ -79,18 +79,18 @@ Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
 ::: pf-step
 
 The invariant factors are
-\[
+$$
 d_1=x-1,
 \qquad
 d_2=(x-1)(x+1)^2.
-\]
+$$
 
 ::: pf-proof
 
 The largest invariant factor is the minimal polynomial. Their product is the characteristic polynomial, so
-\[
+$$
 d_1=\frac{\chi_A}{d_2}=x-1.
-\]
+$$
 The divisibility condition $d_1\mid d_2$ holds.
 
 :::
@@ -100,24 +100,24 @@ The divisibility condition $d_1\mid d_2$ holds.
 ::: pf-step
 
 Therefore the rational canonical form is
-\[
-C(x-1)\oplus C((x-1)(x+1)^2).
-\]
+$$
+\boxed{C(x-1)\oplus C((x-1)(x+1)^2)}.
+$$
 
 ::: pf-proof
 
 Rational canonical form is the direct sum of the companion matrices of the invariant factors. Since
-\[
+$$
 (x-1)(x+1)^2=x^3+x^2-x-1,
-\]
+$$
 one standard companion-matrix convention gives
-\[
+$$
 \begin{pmatrix}
 0&0&1\\
 1&0&1\\
 0&1&-1
 \end{pmatrix}
-\]
+$$
 for the cubic factor, together with the $1\times1$ block $[1]$.
 
 :::
