@@ -70,10 +70,7 @@ For a $\sigma$-finite measure, $(L^1)^* \cong L^\infty$.
 
 :::
 
-::: {.example title="$L^p$ is a Hilbert space only for $p=2$"}
-If the measure space contains disjoint sets $E, F$ of measure $1$, then $f\coloneqq\chi_E$ and $g\coloneqq\chi_F$ satisfy $\norm{f+g}_p^2+\norm{f-g}_p^2 = 2\cdot 2^{2/p}$ and $2\norm f_p^2+2\norm g_p^2 = 4$, so the parallelogram law fails unless $p=2$.
-
-:::
+The parallelogram-law argument that $L^p$ is a Hilbert space only for $p=2$ is on [[real-analysis/functional-analysis/banach-and-hilbert|Banach and Hilbert spaces]].
 
 ## Undergraduate analysis
 
