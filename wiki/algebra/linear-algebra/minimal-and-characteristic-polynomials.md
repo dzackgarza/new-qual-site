@@ -59,7 +59,13 @@ If $\chi_A = \prod_i q_i^{e_i}$ with the $q_i$ distinct monic irreducibles, then
 For $f(x) \definedas x^3-6x^2+12x-8$, [[PR-RRTST|the rational root theorem]] restricts the rational roots to $\theset{\pm 8, \pm 4, \pm 2, \pm 1}$.
 Since $f(2) = 0$, divide by $x-2$:
 
-![](../../../assets/figures/2021-07-24_18-32-38.png)
+$$
+\begin{aligned}
+x^3-6x^2+12x-8 - x^2(x-2) &= -4x^2+12x-8,\\
+-4x^2+12x-8 - (-4x)(x-2) &= 4x-8,\\
+4x-8 - 4(x-2) &= 0.
+\end{aligned}
+$$
 
 The quotient is $x^2-4x+4 = (x-2)^2$, so $f(x) = (x-2)^3$.
 :::
