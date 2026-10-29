@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UNL872S14-PP-3
 kind: problem
-title: UNL Math 872 Spring 2014 assignment PP.3
+title: Cayley complex of $\ZZ/2*\ZZ/3$ and its quotients by two subgroups
 classification:
   areas: [topology]
   topics: []
