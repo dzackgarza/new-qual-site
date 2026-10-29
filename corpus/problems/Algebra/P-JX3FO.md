@@ -21,25 +21,38 @@ audit:
 ---
 
 ::: {.problem}
-- Prove that the kernel of a homomorphism is a normal subgroup.
+Prove that the kernel of a homomorphism is a normal subgroup.
 :::
 
 ::: {.solution}
-Let $\phi:G\to H$ be a group homomorphism. Its kernel is
-\[
-\ker\phi=\{g\in G:\phi(g)=1_H\}.
-\]
-It is a subgroup: if $x,y\in\ker\phi$, then
-\[
-\phi(xy^{-1})=\phi(x)\phi(y)^{-1}=1_H.
-\]
+Let $\phi:G\to H$ be a group homomorphism, with kernel $\ker\phi=\{g\in G:\phi(g)=1_H\}$.
 
-For normality, let $g\in G$ and $k\in\ker\phi$. Then
-\[
-\phi(gkg^{-1})=\phi(g)\phi(k)\phi(g)^{-1}=1_H,
-\]
-so $gkg^{-1}\in\ker\phi$. Therefore
-\[
-\ker\phi\trianglelefteq G.
-\]
+::: pf
+
+::: pf-step
+
+$\ker\phi$ is a subgroup of $G$.
+
+::: pf-proof
+
+$\phi(1_G)=1_H$, so $1_G\in\ker\phi$. If $x,y\in\ker\phi$, then $\phi(xy^{-1})=\phi(x)\phi(y)^{-1}=1_H$.
+
+:::
+
+:::
+
+::: pf-step
+
+$\ker\phi\trianglelefteq G$.
+
+::: pf-proof
+
+For $g\in G$ and $k\in\ker\phi$, $\phi(gkg^{-1})=\phi(g)\phi(k)\phi(g)^{-1}=\phi(g)\phi(g)^{-1}=1_H$, so $gkg^{-1}\in\ker\phi$.
+
+:::
+
+:::
+
+:::
+
 :::
