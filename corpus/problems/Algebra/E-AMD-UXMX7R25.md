@@ -22,25 +22,25 @@ audit:
 ---
 
 ::: {.exercise}
-Show that $(\mathbb Q,+)$ is not finitely generated as an abelian group.
+Show that $(\QQ,+)$ is not finitely generated as an abelian group.
 :::
 
 ::: {.solution}
 Suppose
-\[
-\mathbb Q=\langle a_1/b_1,\dots,a_r/b_r\rangle
-\]
-with $a_i\in\mathbb Z$ and $b_i>0$. Let
-\[
-M=\operatorname{lcm}(b_1,\dots,b_r).
-\]
+$$
+\QQ=\langle a_1/b_1,\ldots,a_r/b_r\rangle
+$$
+with $a_i\in\ZZ$ and positive integers $b_i$. Let
+$$
+M=\lcm(b_1,\ldots,b_r).
+$$
 Every integer linear combination of the proposed generators lies in
-\[
-\frac1M\mathbb Z.
-\]
+$$
+\frac1M\ZZ.
+$$
 But
-\[
-\frac1{2M}\notin\frac1M\mathbb Z,
-\]
-since $1/(2M)=k/M$ would imply $1=2k$ for some $k\in\mathbb Z$. This contradiction proves that $(\mathbb Q,+)$ is not finitely generated.
+$$
+\frac1{2M}\notin\frac1M\ZZ,
+$$
+since $1/(2M)=k/M$ would imply $1=2k$ for some $k\in\ZZ$. This contradiction proves that $(\QQ,+)$ is not finitely generated.
 :::
