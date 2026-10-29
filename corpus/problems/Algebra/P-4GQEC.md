@@ -36,6 +36,7 @@ Regard $V$ as an $F[x]$-module by
 $$
 f(x)\cdot v=f(T)v.
 $$
+
 ::: pf-proof
 
 Polynomial evaluation respects addition and multiplication:
@@ -110,6 +111,7 @@ Therefore $T$ is similar to the rational canonical form
 $$
 C(a_1)\oplus\cdots\oplus C(a_r).
 $$
+
 ::: pf-proof
 
 Choose for each cyclic summand the basis from step [](#s4){.pf-ref} and transport the direct-sum basis to $V$ through the module isomorphism in step [](#s3){.pf-ref}. Since multiplication by $x$ is exactly the action of $T$, its matrix is the displayed block diagonal matrix.
@@ -126,6 +128,7 @@ $$
 \qquad
 \mu_T(x)=a_r(x).
 $$
+
 ::: pf-proof
 
 The characteristic polynomial of a companion matrix $C(a_i)$ is $a_i$, so block diagonality gives the product formula. A polynomial annihilates the direct sum exactly when it is divisible by every $a_i$; because $a_1\mid\cdots\mid a_r$, their least common multiple is $a_r$. Hence the minimal polynomial is $a_r$.
