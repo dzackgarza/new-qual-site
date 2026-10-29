@@ -15,7 +15,7 @@ order: 7
 
 [[FT-6WPJI]]
 
-[[topology/point-set/point-set|Point-set topology]] proves the tube lemma.
+[[topology/point-set/point-set|Point-set topology]] gathers the point-set definitions, theorems and counterexamples.
 
 ## Fundamental group
 
@@ -41,7 +41,7 @@ order: 7
 
 [[PR-EWJMJ]]
 
-[[topology/fundamental-group/theorems|Theorems: algebraic topology]] proves that [[T-2YTCZ|maps into a convex set are homotopic]], computes [[PR-3APOT|$\pi_1$ of a wedge sum]], and proves that [[PR-EWJMJ|$\pi_1$ detects simple connectivity]]; it sketches the proofs of the [[T-BTPU4|Seifert--van Kampen theorem]] and of the formula for [[PR-OO3DH|$\pi_1$ of a product]].
+[[topology/fundamental-group/theorems|Theorems: algebraic topology]] gathers the homotopy and fundamental-group theorems with worked examples, such as an amalgamated product.
 
 ## Homology
 
@@ -57,7 +57,7 @@ order: 7
 
 [[PR-6PENU]]
 
-[[topology/homology/homology|Homology theory and computations]] computes the [[PR-B6BB2|reduced homology of a wedge sum]] and proves the [[PR-6PENU|suspension isomorphism for the cohomology of spheres]].
+[[topology/homology/homology|Homology theory and computations]] places the homology tools next to the computations that use them.
 
 ## The standard computations
 
