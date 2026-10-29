@@ -21,10 +21,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be a finite connected graph whose fundamental group is the free group on generators (e.g. the wedge sum $S^1 \vee S^1$ or the theta graph with 3 edges).
-(1) Construct the **universal covering space** $\widetilde{X}$ of $X$ as the tree $T$ of non-backtracking reduced paths from a basepoint $x_0 \in X$.
-(2) Prove that $\widetilde{X}$ is a connected, acyclic tree (hence simply connected: $\pi_1(\widetilde{X}) = 0$).
-(3) Explain why for a 3-valent graph (like the theta graph), the universal cover is the **infinite 3-regular tree** $T_3$.
+Let $X$ be a finite connected graph, for example the wedge sum $S^1 \vee S^1$ or the theta graph with $3$ edges.
+
+(a) Construct the universal covering space $\widetilde{X}$ of $X$ as the graph $T$ of reduced (non-backtracking) edge-paths from a base vertex $x_0 \in X$.
+
+(b) Prove that $\widetilde{X}$ is a connected, acyclic graph, that is, a tree; hence $\pi_1(\widetilde{X}) = 0$.
+
+(c) Explain why, when every vertex of $X$ has valence $3$ (as in the theta graph), the universal cover is the infinite $3$-regular tree $T_3$.
 :::
 
 ::: {.solution}
