@@ -31,6 +31,10 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: Hartshorne IV.5.5(b) says a plane quintic with one node, and (c) says conics through the node; the normalization of the cuspidal quintic y^2z^3-x^3z^2+x^5+y^5 is trigonal of genus 5 with no nodal quintic model. The statement now says one double point, a node or an ordinary cusp, in (b) and the double point in (c).
 ---
 
 ::: {.problem}
@@ -38,33 +42,13 @@ Assume $X$ is not hyperelliptic.
 
 a. The curves of genus 5 whose canonical model in $\PP^4$ is a complete intersection $F_2 . F_2 . F_2$ form a family of dimension 12.
 
-b. $X$ has a $g_3^1$ if and only if it can be represented as a plane quintic with one node. These form an irreducible family of dimension 11. Hint: If $D \in g_3^1$, use $K-D$ to map $X \to \PP^2$.
+b. $X$ has a $g_3^1$ if and only if it can be represented as a plane quintic whose only singularity is one double point, a node or an ordinary cusp. These form an irreducible family of dimension 11. Hint: If $D \in g_3^1$, use $K-D$ to map $X \to \PP^2$.
 
-c. \* In that case, the conics through the node cut out the canonical system (not counting the fixed points at the node). Mapping $\PP^2 \to \PP^4$ by this linear system of conics, show that the canonical curve $X$ is contained in a cubic surface $V \subseteq \PP^4$, with $V$ isomorphic to $\PP^2$ with one point blown up (II, Ex. 7.7).
+c. \* In that case, the conics through the double point cut out the canonical system (not counting the fixed points at the double point). Mapping $\PP^2 \to \PP^4$ by this linear system of conics, show that the canonical curve $X$ is contained in a cubic surface $V \subseteq \PP^4$, with $V$ isomorphic to $\PP^2$ with one point blown up (II, Ex. 7.7).
 
     Furthermore, $V$ is the union of all the trisecants of $X$ corresponding to the $g_3^1$ (5.5.3), so $V$ is contained in the intersection of all the quadric hypersurfaces containing $X$. Thus $V$ and the $g_3^1$ are unique.
 
 Note. Conversely, if $X$ does not have a $g_3^1$, then its canonical embedding is a complete intersection, as in (a). More generally, a classical theorem of Enriques and Petri shows that for any nonhyperelliptic curve of genus $g \geq 3$, the canonical model is projectively normal, and it is an intersection of quadric hypersurfaces unless $X$ has a $g_3^1$ or $g=6$ and $X$ has a $g_5^2$. See Saint-Donat.
-:::
-
-::: {.remark title="Erratum to part (b)"}
-The word "node" in part (b) is too restrictive.  The correct statement is
-that $X$ is trigonal if and only if it is the normalization of a plane
-quintic having exactly one singularity of delta invariant $1$.  That
-singularity can be an ordinary node or an ordinary cusp.  In part (c),
-"the node" should accordingly be replaced by "the double point".
-
-The cuspidal case really occurs.  Over a field of characteristic zero, the
-plane quintic
-$$
-C=V\left(y^2z^3-x^3z^2+x^5+y^5\right)
-\subseteq\PP^2
-$$
-has an ordinary cusp at $[0:0:1]$ and no other singularity.  Step [](#s9){.pf-ref}
-checks that its normalization is a nonhyperelliptic trigonal curve of genus
-$5$ and, using the uniqueness proved below, cannot have a nodal plane
-quintic model.  Thus replacing "node" by "node or ordinary cusp" is
-necessary, not merely a weakening of the proof.
 :::
 
 ::: {.solution}
@@ -200,7 +184,7 @@ $$
 $$
 There is therefore exactly one singular point, and its delta invariant is
 $1$.  Such a plane double point is either an ordinary node or an ordinary
-cusp.  This proves the corrected forward implication in part (b).
+cusp.  This proves the forward implication in part (b).
 :::
 
 :::
@@ -233,7 +217,7 @@ $$
 (5H-2E)\cdot(H-E)=3.
 $$
 It has no base point on the blowup.  Hence it cuts out a base-point-free
-$g^1_3$ on $X$.  This proves the corrected converse in part (b).
+$g^1_3$ on $X$.  This proves the converse in part (b).
 :::
 
 :::
@@ -417,103 +401,11 @@ locus is its codimension-one specialization.
 
 :::
 
-::: {.pf-step #s9}
-The cuspidal quintic displayed in the erratum gives a genuine
-counterexample to the literal nodal assertion in part (b).
-
-::: pf-proof
-Assume the ground field has characteristic zero and set
-$$
-F=y^2z^3-x^3z^2+x^5+y^5.
-$$
-At
-$$
-p=[0:0:1],
-$$
-the affine equation is
-$$
-y^2-x^3+x^5+y^5=0.
-$$
-On the blowup chart $y=xu$, its strict transform has equation
-$$
-u^2-x+x^3(1+u^5)=0.
-$$
-This is smooth at $(x,u)=(0,0)$ because its $x$-derivative there is $-1$,
-and it meets the exceptional curve $x=0$ there with multiplicity $2$.
-Thus $p$ is an ordinary cusp and $\delta_p=1$.
-
-There is no singular point on $z=0$, because there
-$$
-F_x=5x^4,
-\qquad
-F_y=5y^4.
-$$
-On the chart $z=1$, a singular point must satisfy
-$$
-x^2(-3+5x^2)=0,
-\qquad
-y(2+5y^3)=0,
-\qquad
-3y^2-2x^3=0.
-$$
-If $x=0$, the last equation forces $y=0$.  If $y=0$, it similarly forces
-$x=0$.  In the remaining case
-$$
-x^2=\frac35,
-\qquad
-y^3=-\frac25,
-\qquad
-3y^2=2x^3.
-$$
-Cubing the last equality and substituting the first two gives
-$$
-\frac{108}{25}=\frac{648}{625}x,
-$$
-so $x=25/6$, contradicting $x^2=3/5$.  Thus $p$ is the only singular point.
-Since its germ at $p$ is unibranch, the quintic is integral: distinct
-projective plane components would meet by Bezout, producing either another
-singular point or more than one branch at $p$.
-
-Let $X$ be its normalization.  The genus formula gives
-$$
-g(X)=6-1=5,
-$$
-and projection from $p$ gives a degree-$3$ map to $\PP^1$.  The curve is not
-hyperelliptic: if it also had a degree-$2$ map to $\PP^1$, the product of
-the degree-$2$ and degree-$3$ maps would be birational onto a curve of
-bidegree $(2,3)$ in $\PP^1\times\PP^1$, because its generic degree divides
-both $2$ and $3$.  Such a curve has arithmetic genus
-$$
-(2-1)(3-1)=2,
-$$
-contradicting $g(X)=5$.
-
-Finally, let $M$ be the line bundle of any birational plane quintic model
-of $X$.  Then $\deg M=5$ and $h^0(M)\ge3$.  Riemann--Roch gives
-$$
-h^0(K-M)=h^0(M)-1\ge2,
-$$
-so $K-M$ is a degree-$3$ pencil.  Clifford's theorem forces $h^0(M)=3$,
-and step [](#s7){.pf-ref} says that this $g^1_3$ is the unique one.  Hence
-$$
-M=K-A
-$$
-for the unique trigonal pencil $A$, so the plane quintic model is unique up
-to projective coordinates.  The model above is cuspidal, and therefore this
-$X$ has no nodal plane quintic model.  This proves the erratum asserted
-above.
-:::
-
-:::
-
 ::: pf-qed
-for the corrected statement.
-
-Step [](#s1){.pf-ref} proves part (a).  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref} prove the corrected equivalence
+Step [](#s1){.pf-ref} proves part (a).  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref} prove the equivalence
 in part (b), and step [](#s8){.pf-ref} proves its irreducibility and dimension claim.
 Steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, and [](#s7){.pf-ref} prove all the cubic-scroll, trisecant, and uniqueness
-assertions in part (c).  Step [](#s9){.pf-ref} proves that the printed word "node"
-cannot be retained in general.
+assertions in part (c).
 :::
 
 :::
