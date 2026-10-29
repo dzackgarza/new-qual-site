@@ -3000,7 +3000,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [ ] | `corpus/theory/Topology/D-KJBAK.md` | `721ff87a01cfeca0d406f9388b486dacf2b63278` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-KJC6W.md` | `18da6ad5d8b9b85796af23329ba8861ecc03651e` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-KVAI3.md` | `ac5a83acc21d27aece59e62967b96da257b73ec8` | — | Pending |
-| [ ] | `corpus/theory/Topology/D-KW52R.md` | `8a1e61940d3bf32018e51e7069f78ff149e3fdab` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-KWWVL.md` | `e90029fce20b5d5473b0f1d5a0a2b1a51f3b1695` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-L6SGU.md` | `4159adc889682a934e9279104608755827b9285f` | — | Pending |
 | [ ] | `corpus/theory/Topology/D-LB2LS.md` | `1c5e0967eee0b15e14ba826d5772e64d7f2bd653` | — | Pending |

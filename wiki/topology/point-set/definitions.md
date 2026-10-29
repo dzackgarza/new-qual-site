@@ -28,8 +28,6 @@ Local connectedness and local path connectedness use the second.
 
 [[D-WKURJ]]
 
-[[D-KW52R]]
-
 [[D-YO6NZ]]
 
 [[D-3KS2F]]

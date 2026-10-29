@@ -637,7 +637,6 @@ corpus/theory/Topology/D-KC4BS.md
 corpus/theory/Topology/D-KJBAK.md
 corpus/theory/Topology/D-KJC6W.md
 corpus/theory/Topology/D-KVAI3.md
-corpus/theory/Topology/D-KW52R.md
 corpus/theory/Topology/D-KWWVL.md
 corpus/theory/Topology/D-L6SGU.md
 corpus/theory/Topology/D-LB2LS.md
