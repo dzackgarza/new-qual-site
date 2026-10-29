@@ -246,6 +246,13 @@ mathematical correction under its own node, not under copy policy.
     finite extensions of finite fields being Galois, or algebraic closure; the D-2IO6Q
     noncommutative remark has no citation; orbit-stabilizer still restates the element-order
     clause of E-NNTQB.
+  - **`ad3-algebra-followups`**. **Needs:** none. The open remainder of `ad3-algebra-content`:
+    SRC-HARVARD-COMPLEX-ORAL institution; oral PDF and extraction filenames that say Harvard;
+    `CARD-04` reading of the P-FHW1 cards against PR-ABSJX, PR-OFBRQ, P-HBWYH and P-JXIIG;
+    statement cards for the mod-$p$ irreducibility test, the degree-2-or-3 root test, finite
+    extensions of finite fields being Galois, and algebraic closure; a citation on the D-2IO6Q
+    noncommutative remark; the E-NNTQB restatement on orbit-stabilizer. `audited-deployment`
+    needs it. **Acceptance:** each read and repaired, or kept with the reason.
   Round 3 (revision `5ba163ac9`, topology and algebraic geometry) injected the node below;
   `audited-deployment` needs it.
   - **`ad3-topology-content`**. **Needs:** none. Wrong mathematics: P-TOPS05A (a free
