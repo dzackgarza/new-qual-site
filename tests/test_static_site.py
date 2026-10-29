@@ -547,6 +547,8 @@ def test_problem_pagination_is_library_owned(built_fixture: Path) -> None:
     assert "moreButton" not in app
     assert "pageLength: 50" in table_script
     assert 'bottomEnd: "paging"' in table_script
+    # A facet pane opens only over a column that some loaded row fills.
+    assert "if (!filled) column.searchPanes.show = false;" in table_script
 
 
 def test_a_subject_is_called_what_its_wiki_branch_calls_it(static_site: Path) -> None:

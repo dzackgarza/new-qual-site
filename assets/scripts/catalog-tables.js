@@ -160,6 +160,13 @@
         },
         { data: "order", visible: false, searchable: false },
     ];
+    // A pane over a column no loaded row fills would list only an empty-table
+    // row (collection mode loads one source, which may carry no year).
+    columns.forEach((column) => {
+      if (!column.searchPanes?.show) return;
+      const filled = rows.some((row) => [].concat(row[column.data] ?? []).some((value) => value !== ""));
+      if (!filled) column.searchPanes.show = false;
+    });
     const unmatched = unmatchedValues(rows, columns, preSelect);
 
     const table = new DataTable(problemTable, {
