@@ -17,5 +17,5 @@ review: draft
 
 ::: {.theorem}
 Let $R$ be a nonzero [[D-GURUB|ring]].
-Then every proper [[D-GOFWL|ideal]] of $R$ is contained in a proper [[D-7XH2R|maximal ideal]]; in particular, $R$ has a proper maximal ideal.
+Then every proper [[D-GOFWL|ideal]] of $R$ is contained in a [[D-7XH2R|maximal ideal]]; in particular, $R$ has a maximal ideal.
 :::
