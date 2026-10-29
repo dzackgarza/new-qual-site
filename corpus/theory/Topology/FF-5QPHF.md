@@ -5,7 +5,7 @@ kind: fact
 title: $\Tor^{\ZZ}_*(\ZZ/n, A)$
 slogan: 'For $\ZZ/n$, $\Tor_0=A/nA$, $\Tor_1=A[n]$, and all higher $\Tor$ groups vanish.'
 prompts:
-- What is $\operatorname{Tor}^{\mathbf{Z}}_*(C_n, A)$?
+- What is $\Tor^{\ZZ}_*(C_n, A)$?
 classification:
   areas:
   - topology
