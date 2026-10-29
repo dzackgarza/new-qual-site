@@ -60,5 +60,5 @@ whose order is $d$ when the characteristic does not divide $d$.
 Thus the same determinant that detects non-smoothness gives the order of the finite quotient group.
 
 For $m = 2$ this is the quadric cone $V(z_0 z_2 - z_1^2) = \AA^2/\pm 1$, the $A_1$ surface singularity, and the same variety appears as the singular chart of $\PP(1,1,2)$.
-The quotient description is the one that generalises: it survives to higher dimension and to non-diagonal weights, where the determinantal presentation by $2 \times 2$ minors does not.
+The quotient description extends to the cyclic quotient singularities $\tfrac{1}{n}(1,q)$ and to higher dimension, whose coordinate rings are in general not cut out by the $2 \times 2$ minors of one matrix.
 :::
