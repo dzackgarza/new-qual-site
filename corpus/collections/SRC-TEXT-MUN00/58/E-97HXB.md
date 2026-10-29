@@ -22,8 +22,6 @@ Show that a retract of a contractible space is contractible.
 :::
 
 ::: {.solution}
-**Goal:** Prove that if $X$ is a contractible topological space and $A \subseteq X$ is a retract of $X$, then $A$ is contractible.
-
 ::: pf
 
 ::: pf-step
@@ -79,7 +77,6 @@ Setting $a_0 = r(x_0) \in A$, $K(a, 1) = a_0$ is constant for all $a \in A$.
 :::
 
 ::: pf-step
-Conclusion:
 $K$ is a continuous homotopy between the identity map $\operatorname{id}_A$ and the constant map $c_{a_0}: A \to A$.
 Thus $\operatorname{id}_A$ is nullhomotopic, so $A$ is contractible.
 :::
