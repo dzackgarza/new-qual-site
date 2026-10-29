@@ -11,18 +11,43 @@ review: draft
 ---
 
 ::: {.problem}
-Let X be a Hausdorff space.
-Suppose A is a compact subspace, and $x \in X \setminus A$ Show that there exist disjoint open sets U and V containing A and x, respectively.
+Let $X$ be a Hausdorff space.
+Suppose $A$ is a compact subspace, and $x \in X \setminus A$.
+Show that there exist disjoint open sets $U$ and $V$ containing $A$ and $x$, respectively.
 :::
 
 ::: {.solution}
-Let $y \in A$. Since $x \in X \setminus A$, we have $y \neq x$. Since $X$ is Hausdorff, there are open, disjoint sets $U_y$ and $V_y$ containing $y$ and $x$, respectively.
+::: pf
 
-The family $\{U_y\}_{y \in A}$ is an open cover of $A$. Since $A$ is compact, this cover admits a finite subcover $U_{y_1}, \ldots, U_{y_n}$. Define
+::: {.pf-step #pointwise}
+For each $y \in A$, there are disjoint open sets $U_y \ni y$ and $V_y \ni x$.
 
-$$
-U \coloneqq \bigcup_{i=1}^{n} U_{y_i} \quad \text{and} \quad V \coloneqq \bigcap_{i=1}^{n} V_{y_i}.
-$$
+::: pf-proof
+Since $x \notin A$, we have $y \neq x$, and $X$ is Hausdorff.
+:::
 
-Then $U$ is open and contains $A$, and $V$ is a finite intersection of open sets containing $x$. They are disjoint, since $U_{y_i} \cap V \subseteq U_{y_i} \cap V_{y_i} = \emptyset$ for each $i$.
+:::
+
+::: {.pf-step #finite}
+There are $y_1, \ldots, y_n \in A$ with $A \subseteq U_{y_1} \cup \cdots \cup U_{y_n}$.
+
+::: pf-proof
+By step [](#pointwise){.pf-ref}, the sets $U_y$, $y \in A$, form an open cover of $A$, and $A$ is compact.
+If $A = \emptyset$, take $n = 0$.
+:::
+
+:::
+
+::: pf-step
+The sets $U \coloneqq \bigcup_{i=1}^n U_{y_i}$ and $V \coloneqq \bigcap_{i=1}^n V_{y_i}$, with $V = X$ when $n = 0$, are disjoint open sets with $A \subseteq U$ and $x \in V$.
+
+::: pf-proof
+$U$ is a union of open sets, and $V$ is a finite intersection of open sets, so both are open.
+$A \subseteq U$ by step [](#finite){.pf-ref}, and $x \in V$ because $x \in V_{y_i}$ for each $i$.
+For each $i$, $U_{y_i} \cap V \subseteq U_{y_i} \cap V_{y_i} = \emptyset$, so $U \cap V = \emptyset$.
+:::
+
+:::
+
+:::
 :::
