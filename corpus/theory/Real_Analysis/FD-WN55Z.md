@@ -1,21 +1,22 @@
 ---
 schema: qual/card@1
 id: FD-WN55Z
-kind: definition
+kind: proposition
 title: Completeness of a normed space via absolutely convergent series
 prompts:
-- What two conditions each characterise completeness?
+  - What two conditions each characterise completeness?
 classification:
   areas:
-  - real-analysis
+    - real-analysis
   topics:
-  - Completeness
-  - Series of Numbers
+    - Completeness
+    - Series of Numbers
 relations: []
 review: draft
+slogan: 'A normed space is complete exactly when every absolutely convergent series in it converges.'
 ---
 
-::: {.definition}
+::: {.proposition}
 Let $(V,\norm{\cdot})$ be a normed vector space.
 The following are equivalent:
 
