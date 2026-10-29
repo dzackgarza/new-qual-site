@@ -4,6 +4,8 @@ id: PR-SCTER
 kind: proposition
 title: Pointwise limits of continuous functions need not be continuous
 slogan: 'The continuous functions $x^n$ on $[0,1]$ converge pointwise to a discontinuous function.'
+prompts:
+- Give a sequence that converges pointwise but not uniformly.
 classification:
   areas:
   - real-analysis
@@ -23,4 +25,8 @@ $$
 \lim_{k\to \infty} \lim_{n\to\infty} f_n(x_k) = 0 \neq 1 =
 \lim_{n\to \infty} \lim_{k\to\infty} f_n(x_k) .
 $$
+:::
+
+::: {.remark title="Variations"}
+The convergence of $x^n$ on $[0,1]$ is not [[D-YZC3C|uniform]]: for every $n$, $\sup_{x\in[0,1]}\abs{f_n(x) - f(x)} = \sup_{0\leq x<1} x^n = 1$.
 :::
