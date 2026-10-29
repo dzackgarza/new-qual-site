@@ -20,16 +20,14 @@ audit:
 ---
 
 ::: {.exercise}
-a.
-Let $F$ be an analytic function inside and on a simple closed curve $C$, oriented counterclockwise, except for a pole of order $m\geq 1$ at $z=a$ inside $C$.
+(a) Let $F$ be an analytic function inside and on a simple closed curve $C$, oriented counterclockwise, except for a pole of order $m\geq 1$ at $z=a$ inside $C$.
 Prove that
 
 $$\frac{1}{2 \pi i}\oint_{C} F(\tau) d\tau =
 \frac{1}{(m-1)!}\lim_{\tau\rightarrow a} \frac{d^{m-1}}{d\tau^{m-1}}\big((\tau-a)^m F(\tau)\big).$$
 
-b.
-Evaluate $$\oint_{C}\frac{e^{\tau}}{(\tau^2+\pi^2)^2}d\tau$$
-where $C$ is the circle $|z|=4$.
+(b) Evaluate $$\oint_{C}\frac{e^{\tau}}{(\tau^2+\pi^2)^2}d\tau$$
+where $C$ is the circle $\abs{z}=4$.
 :::
 
 ::: {.solution}
@@ -63,7 +61,7 @@ $g(\tau) = (\tau-a)^mF(\tau) = \sum_{j=0}^\infty c_{j-m}(\tau-a)^j$ is holomorph
 
 ::: {.pf-step #residues}
 
-The integrand $h(z) = e^z/(z^2+\pi^2)^2$ has double poles at $\pm i\pi$, both inside $|z|=4$, with $\operatorname{Res}_{z=\pm i\pi}h = \frac{1}{4\pi^2} \pm \frac{i}{4\pi^3}$.
+The integrand $h(z) = e^z/(z^2+\pi^2)^2$ has double poles at $\pm i\pi$, both inside $\abs{z}=4$, with $\operatorname{Res}_{z=\pm i\pi}h = \frac{1}{4\pi^2} \pm \frac{i}{4\pi^3}$.
 
 ::: pf-proof
 
