@@ -285,7 +285,7 @@ mathematical correction under its own node, not under copy policy.
     `area`, so the Wesleyan compilations lose the `wesleyan` institution and carry
     `area: real-analysis` for mixed real and complex papers. The Wesleyan topology PDFs are
     still split across collections.
-  Round 3 (analysis provenance follow-up) injected the node below; `audited-deployment` needs it.
+  Round 3 (analysis provenance follow-up) injected the nodes below; `audited-deployment` needs both.
   - **`ad3-compilation-schema`**. **Needs:** none. `CompilationSource` has no `institution`
     and one `area`, so mixed-area compilations mislabel their papers; the Wesleyan topology
     PDFs topology_2005-2003.pdf and topology_2006-2014.pdf are split across 14 collections;
@@ -294,7 +294,18 @@ mathematical correction under its own node, not under copy policy.
     every source kind shares; the three SRC-WESLEYAN-ANALYSIS compilations name `wesleyan`
     and their real areas; each Wesleyan topology PDF is one compilation with one section per
     exam and every entry kept; each unowned C5-C12 finding read and repaired, or kept with
-    the reason.
+    the reason. **Closed.** C8 locators, C9 and C10 are repaired; C6 vendoring runs in a
+    separate stream. The rest is kept in `ad3-provenance-residue`, because each item needs
+    a source read or a card split.
+  - **`ad3-provenance-residue`**. **Needs:** none. Kept round-3 provenance findings:
+    the UNSORTED buckets (about 1500 problems) are not dissolved into source collections
+    (C5); SRC-CA-ART-E3SXDB, SRC-CA-ART-T34TG3, SRC-NUS-CA-1970-SPRING and
+    SRC-NUS-RA-1970-SPRING have no provenance (C5); JHU September 2019 complex Problem 4
+    has no card in SRC-JHU-ANALYSIS-EXAMS (C7); P-DUKEBA14-9 adds a domain change of
+    coordinates that the source does not ask for (C8); the UCLA 2009 and 2010 real-analysis
+    collections are not checked for complex-analysis problems (C11); P-4FH62 holds 17
+    problems that six UGA exams cite as one card (C12). **Acceptance:** each item repaired
+    against its source PDF.
   Round 3 (revision `5ba163ac9`, topology and algebraic geometry) injected the node below;
   `audited-deployment` needs it.
   - **`ad3-topology-content`**. **Needs:** none. Wrong mathematics: P-TOPS05A (a free
