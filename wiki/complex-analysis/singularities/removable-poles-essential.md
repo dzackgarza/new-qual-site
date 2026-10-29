@@ -140,7 +140,6 @@ The values taken near an essential singularity are described on [[complex-analys
 [[E-WXHMJ]]
 [[E-LIK72]]
 [[E-CLSFF]]
-[[E-4GLUR]]
 [[E-NT2T3]]
 [[E-UWKTZ]]
 [[E-SHKZX]]

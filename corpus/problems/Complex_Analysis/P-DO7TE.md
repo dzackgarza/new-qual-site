@@ -8,6 +8,7 @@ classification:
   - complex-analysis
   topics:
   - Removable Singularities
+  - Laurent Series
   - Singularities
   - Trigonometry
 relations: []
