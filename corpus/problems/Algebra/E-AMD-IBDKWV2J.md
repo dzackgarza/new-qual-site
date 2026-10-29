@@ -26,16 +26,16 @@ Show that every abelian group is nilpotent.
 
 ::: {.solution}
 If $G$ is abelian, then every commutator is trivial:
-\[
+$$
 [x,y]=xyx^{-1}y^{-1}=1.
-\]
+$$
 Hence
-\[
+$$
 [G,G]=1.
-\]
+$$
 Therefore the lower central series
-\[
+$$
 G\supseteq [G,G]\supseteq\cdots
-\]
+$$
 reaches the trivial subgroup after one step. Thus every abelian group is nilpotent, of nilpotency class at most $1$.
 :::
