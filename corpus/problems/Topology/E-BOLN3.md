@@ -23,11 +23,11 @@ Show that the diagonal map $\Delta(x) = (x, x)$ is continuous.
 
 ::: pf-step
 
-The diagonal is the product map $(\operatorname{id}_X,\operatorname{id}_X):X\to X\times X$.
+For every topological space $X$, the map $\Delta: X\to X\times X$ is continuous.
 
 ::: pf-proof
 
-Both component maps are continuous. By the universal property of the product topology, a map into $X\times X$ is continuous exactly when both coordinate maps are continuous.
+The coordinate maps of $\Delta$ are $\pi_1\circ\Delta=\id_X$ and $\pi_2\circ\Delta=\id_X$, both continuous. By the universal property of the product topology, a map into $X\times X$ is continuous exactly when both coordinate maps are continuous.
 
 :::
 
