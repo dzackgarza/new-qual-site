@@ -175,7 +175,6 @@ source:
   - id: E-SNRS5
   - id: E-SPIVX
   - id: E-SQ4GJ
-  - id: E-SUDRI
   - id: E-T4VAX
   - id: E-T5ERF
   - id: E-TCONN
@@ -223,7 +222,6 @@ source:
   - id: E-WNNSK
   - id: E-WNTXK
   - id: E-WNXIR
-  - id: E-WPGNS
   - id: E-WXHMJ
   - id: E-WYJ7K
   - id: E-X4MBB
