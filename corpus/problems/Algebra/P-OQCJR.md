@@ -16,25 +16,44 @@ review: draft
 
 ::: {.problem}
 Let $A\in M_{m\times n}(F)$. Prove that the homogeneous system
-\[
+$$
 Ax=0
-\]
+$$
 has a nonzero solution if and only if
-\[
-\operatorname{rank}(A)<n.
-\]
+$$
+\rank(A)<n.
+$$
 :::
 
 ::: {.solution}
-By rank-nullity for the linear map $A:F^n\to F^m$,
-\[
-n=\dim\ker A+\operatorname{rank}(A).
-\]
-Hence
-\[
-\ker A\ne0
-\iff \dim\ker A>0
-\iff \operatorname{rank}(A)<n.
-\]
-A nonzero vector in $\ker A$ is exactly a nontrivial solution of $Ax=0$.
+Regard $A$ as the linear map $F^n\to F^m$, $x\mapsto Ax$; its nonzero kernel vectors are exactly the nonzero solutions of $Ax=0$.
+
+::: pf
+
+::: {.pf-step #rank-nullity}
+
+$n=\dim\ker A+\rank(A)$.
+
+::: pf-proof
+
+This is the rank-nullity theorem for $A\colon F^n\to F^m$.
+
+:::
+
+:::
+
+::: pf-step
+
+$\ker A\ne0$ if and only if $\rank(A)<n$.
+
+::: pf-proof
+
+$\ker A\ne0$ if and only if $\dim\ker A>0$, which by step [](#rank-nullity){.pf-ref} holds if and only if $\rank(A)<n$.
+
+:::
+
+:::
+
+:::
+
 :::
