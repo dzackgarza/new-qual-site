@@ -16,7 +16,6 @@ relations: []
 review: draft
 ---
 
-
 ::: {.problem}
 Compute the following integrals:
 
