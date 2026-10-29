@@ -46,7 +46,7 @@ Let $q:[0,1]\times[0,1]\to M$ be the quotient map.
 
 $H$ is well defined because $(0,y)\sim(1,1-y)$ implies
 $$\bigl(0,(1-s)y+s/2\bigr)\sim\bigl(1,1-((1-s)y+s/2)\bigr)=\bigl(1,(1-s)(1-y)+s/2\bigr).$$
-It is continuous on $M\times I$ because $q\times\mathrm{id}_I$ is a quotient map ($I$ is locally compact). It fixes $C=\{q(x,1/2)\}$ pointwise, and $H_1$ maps $M$ onto $C$.
+It is continuous on $M\times I$ because $q\times\id_I$ is a quotient map ($I$ is locally compact). It fixes $C=\{q(x,1/2)\}$ pointwise, and $H_1$ maps $M$ onto $C$.
 
 :::
 
