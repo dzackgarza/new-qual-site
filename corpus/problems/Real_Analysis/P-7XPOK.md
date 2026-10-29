@@ -17,18 +17,22 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source read "any disjoint intervals is countable", false for the singletons {x}, x in R; the statement now requires each interval to have nonempty interior. Source typo "that that" corrected.'
 ---
 
 ::: {.problem}
-- Show that any disjoint intervals is countable.
+(a) Show that any collection of pairwise disjoint intervals in $\RR$, each with nonempty interior, is countable.
 
-- Show that every open $U \subseteq \RR$ is a countable union of disjoint open intervals.
+(b) Show that every open $U \subseteq \RR$ is a countable union of disjoint open intervals.
 
-- Show that every open $U \subseteq \RR^n$ is a countable union of *almost* disjoint closed cubes.
+(c) Show that every open $U \subseteq \RR^n$ is a countable union of *almost* disjoint closed cubes.
 
-- Show that that Cantor middle-thirds set is compact, totally disconnected, and perfect, with outer measure zero.
+(d) Show that the Cantor middle-thirds set is compact, totally disconnected, and perfect, with outer measure zero.
 
-- Prove the Borel-Cantelli lemma.
+(e) Prove the Borel-Cantelli lemma.
 :::
 
 ::: {.solution}
