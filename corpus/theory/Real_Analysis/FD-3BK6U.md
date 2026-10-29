@@ -1,8 +1,9 @@
 ---
 schema: qual/card@1
 id: FD-3BK6U
-kind: definition
+kind: proposition
 title: Chebyshev's inequality
+slogan: 'The set where $\abs{f}\geq\alpha$ has measure at most $(\norm{f}_p/\alpha)^p$.'
 prompts:
 - State Chebyshev's inequality.
 classification:
@@ -16,7 +17,7 @@ relations: []
 review: draft
 ---
 
-::: {.definition}
+::: {.proposition}
 Let $m$ be Lebesgue measure on $\RR^n$, let $f\colon\RR^n\to\CC$ be [[D-DHFN4|measurable]], and let $0<p<\infty$.
 For every $\alpha>0$,
 $$
