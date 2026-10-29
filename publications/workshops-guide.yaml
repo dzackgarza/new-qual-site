@@ -163,7 +163,8 @@ sections:
       - ref: T-RA-WORKSHOP-D6-5-3
       - ref: T-RA-WORKSHOP-D6-5-4
       - ref: T-RA-WORKSHOP-D6-5-5
-      - ref: D-RA-WORKSHOP-D7-CONVERGENCE
+      - ref: D-IYDZU
+      - ref: D-YZC3C
       - ref: T-ERNLN
       - ref: FF-IAUQG
       - ref: T-RA-WORKSHOP-D7-6-3

@@ -87,7 +87,9 @@ Proofs of Egorov's and Lusin's theorems are on [[real-analysis/measure/littlewoo
 
 ## Sequences and series of functions
 
-[[D-RA-WORKSHOP-D7-CONVERGENCE]]
+[[D-IYDZU]]
+
+[[D-YZC3C]]
 
 [[T-ERNLN]]
 

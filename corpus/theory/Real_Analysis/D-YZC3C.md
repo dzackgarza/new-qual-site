@@ -37,3 +37,7 @@ With $\norm{g}_\infty \coloneqq \sup_{x\in S}\abs{g(x)}$ for $g\colon S\to\CC$, 
 If $(f_n)$ converges uniformly, then for $\varepsilon>0$ and $n_0$ as in the definition, $\norm{f_n - f}_\infty \leq \varepsilon$ for all $n>n_0$.
 Conversely, if $\norm{f_n - f}_\infty\to 0$, then for $\varepsilon>0$ there is $n_0$ with $\abs{f_n(x) - f(x)}\leq\norm{f_n - f}_\infty<\varepsilon$ for all $n>n_0$ and $x\in S$.
 :::
+
+::: {.remark title="Series"}
+For functions $f_n\colon S\to\CC$, the series $\sum_{n=1}^{\infty}f_n$ \dfn{converges uniformly} to $f$ on $S$ if the partial sums $\sum_{n=1}^{N}f_n$ converge uniformly to $f$ on $S$ as $N\to\infty$.
+:::

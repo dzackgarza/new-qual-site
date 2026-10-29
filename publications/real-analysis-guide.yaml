@@ -163,7 +163,8 @@ sections:
       - Roots of Unity
       - Counterexamples
     items:
-      - ref: D-RA-WORKSHOP-D7-CONVERGENCE
+      - ref: D-IYDZU
+      - ref: D-YZC3C
       - ref: T-ERNLN
       - ref: FF-IAUQG
       - ref: T-RA-WORKSHOP-D7-6-3
