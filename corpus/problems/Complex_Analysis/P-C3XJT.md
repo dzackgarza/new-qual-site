@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-C3XJT
 kind: problem
-title: $\int_0^\infty\frac{x^{a-1}}{1+x^n}\,dx=\frac{\pi}{n\sin(a\pi/n)}$ for $0<a\le
-  n$
+title: $\int_0^\infty\frac{x^{a-1}}{1+x^n}\,dx=\frac{\pi}{n\sin(a\pi/n)}$ for $0<a<n$
 classification:
   areas:
   - complex-analysis
@@ -17,124 +16,64 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: 'The source reads "$0 < a \leq n$". At a = n the integrand behaves like 1/x at infinity and the integral diverges; the statement now requires 0 < a < n.'
 ---
 
 ::: {.problem}
 Show that
-\[
-\displaystyle \int_0^\infty \frac{x^{a-1}}{1+x^n} \dx 
+$$
+\displaystyle \int_0^\infty \frac{x^{a-1}}{1+x^n} \dx
 = \frac{\pi}{n\sin \frac{a\pi}{n}}
-\]
-using complex analysis, $0 < a \leq n$.
+$$
+using complex analysis, $0 < a < n$.
 Here $n$ is a positive integer.
 :::
 
 ::: {.solution}
-**Goal.** Show $\int_0^\infty \frac{x^{a-1}}{1+x^n}\,dx = \frac{\pi}{n\sin(a\pi/n)}$ for $0 < a \le n$.
+
+Let $I$ denote the integral, which converges because $0<a<n$.
+Let $z^{a-1}$ be the branch $\abs{z}^{a-1}e^{i(a-1)\arg z}$ with $0\le\arg z\le2\pi/n$, let $f(z)\coloneqq z^{a-1}/(1+z^n)$, and let $z_0\coloneqq e^{i\pi/n}$.
+For $0<\varepsilon<1<R$ let $\Gamma$ be the boundary of the sector $\{\varepsilon<\abs{z}<R,\ 0<\arg z<2\pi/n\}$, oriented positively.
 
 ::: pf
 
-::: pf-step
-Use the keyhole contour (or a sector contour) around the branch cut of $z^{a-1}$.
+::: {.pf-step #residue}
+$z_0$ is the only pole of $f$ inside $\Gamma$, and $\Res_{z=z_0}f=-z_0^a/n=-e^{ia\pi/n}/n$.
 
 ::: pf-proof
-the integrand $z^{a-1}/(1+z^n)$ has a branch point at $0$ and poles at the $n$-th roots of $-1$.
+The poles of $f$ are the roots $e^{i(2k+1)\pi/n}$ of $z^n=-1$, and only $k=0$ has argument in $(0,2\pi/n)$.
+The pole is simple, and $\Res_{z=z_0}f=z_0^{a-1}/(nz_0^{n-1})=z_0^a/(nz_0^n)=-z_0^a/n$.
 :::
 
 :::
 
-::: pf-step
-The poles of $1/(1+z^n)$ are at $z = e^{i(2k+1)\pi/n}$, $k = 0, \dots, n-1$.
+::: {.pf-step #contour}
+$(1-e^{2\pi ia/n})\,I=2\pi i\Res_{z=z_0}f$.
 
 ::: pf-proof
-$z^n = -1$ at these points.
-:::
-
-:::
-
-::: {.pf-step #residue-at-z0}
-The residue at $z_0 = e^{i\pi/n}$ (the pole in the upper half-plane nearest the positive real axis) is $\frac{z_0^{a-1}}{n z_0^{n-1}} = \frac{z_0^a}{n z_0^n} = -\frac{z_0^a}{n}$.
-
-::: pf-proof
-$\operatorname{Res}(z^{a-1}/(1+z^n), z_0) = z_0^{a-1}/(n z_0^{n-1}) = z_0^a/(n z_0^n) = -z_0^a/n$ (since $z_0^n = -1$).
+On the ray $\arg z=2\pi/n$, $z=xe^{2\pi i/n}$ gives $z^{a-1}\,dz=e^{2\pi ia/n}x^{a-1}\,dx$ and $1+z^n=1+x^n$, so the two radial sides of $\Gamma$ contribute $(1-e^{2\pi ia/n})\int_\varepsilon^Rx^{a-1}/(1+x^n)\,dx$.
+The outer arc contributes $O(R^{a}/R^n)\to0$ as $R\to\infty$ because $a<n$, and the inner arc contributes $O(\varepsilon^a)\to0$ as $\varepsilon\to0$ because $a>0$.
+The residue theorem and step [](#residue){.pf-ref} give the claim in the limit.
 :::
 
 :::
 
 ::: pf-step
-Sum the residues over the poles in the upper half-plane and apply the residue theorem to the sector contour.
+$I=\dfrac{\pi}{n\sin(a\pi/n)}$.
 
 ::: pf-proof
-
-::: pf-step
-The sector contour (angle $2\pi/n$) encloses exactly one pole, $z_0 = e^{i\pi/n}$.
-
-::: pf-proof
-the sector $0 \le \arg z \le 2\pi/n$ contains the single pole $e^{i\pi/n}$.
+By steps [](#residue){.pf-ref} and [](#contour){.pf-ref},
+$$
+I=\frac{-2\pi ie^{ia\pi/n}}{n(1-e^{2\pi ia/n})}
+=\frac{-2\pi i}{n(e^{-ia\pi/n}-e^{ia\pi/n})}
+=\frac{-2\pi i}{-2in\sin(a\pi/n)}
+=\frac{\pi}{n\sin(a\pi/n)}.
+$$
 :::
 
-:::
-
-::: pf-step
-The integral over the sector gives $(1 - e^{2\pi i a/n})\int_0^\infty \frac{x^{a-1}}{1+x^n}\,dx = 2\pi i \operatorname{Res}(f, z_0)$.
-
-::: pf-proof
-the two radial segments differ by the factor $e^{2\pi i a/n}$ (from the branch of $z^{a-1}$), and the arc contribution vanishes as the radius $\to \infty$.
-:::
-
-:::
-
-::: pf-step
-Hence $\int_0^\infty \frac{x^{a-1}}{1+x^n}\,dx = \frac{2\pi i \operatorname{Res}(f, z_0)}{1 - e^{2\pi i a/n}}$.
-
-::: pf-proof
-solve for the integral.
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-Evaluate.
-
-::: pf-proof
-
-::: pf-step
-$\operatorname{Res}(f, z_0) = -\frac{e^{i a\pi/n}}{n}$.
-
-::: pf-proof
-Step [](#residue-at-z0){.pf-ref} with $z_0 = e^{i\pi/n}$.
-:::
-
-:::
-
-::: pf-step
-$\frac{2\pi i \cdot (-e^{ia\pi/n}/n)}{1 - e^{2\pi i a/n}} = \frac{-2\pi i e^{ia\pi/n}}{n(1 - e^{2\pi i a/n})}$.
-
-::: pf-proof
-substitute.
-:::
-
-:::
-
-::: {.pf-step #final-value}
-$= \frac{\pi}{n \sin(a\pi/n)}$.
-
-::: pf-proof
-$\frac{-2\pi i e^{ia\pi/n}}{1 - e^{2\pi i a/n}} = \frac{-2\pi i}{e^{-ia\pi/n} - e^{ia\pi/n}} = \frac{-2\pi i}{-2i\sin(a\pi/n)} = \frac{\pi}{\sin(a\pi/n)}$.
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-qed
-Step [](#final-value){.pf-ref} gives the result.
 :::
 
 :::
