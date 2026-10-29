@@ -11,7 +11,7 @@ topics:
 
 # Ideals and quotients
 
-Throughout, rings are commutative with identity.
+Throughout, rings are commutative with identity, except in [[E-G4KAC]], which holds for every ring with identity and uses the Jacobson radical of the remark on [[D-2IO6Q]].
 The kernel of a ring homomorphism is an [[D-GOFWL|ideal]], and for an ideal $I\subseteq R$ the quotient map $R\to R/I$ is initial among ring homomorphisms out of $R$ that vanish on $I$.
 
 [[PR-PZZUO]]
