@@ -17,23 +17,38 @@ Show that a permutation is odd if and only if its disjoint-cycle decomposition c
 :::
 
 ::: {.solution}
-An $m$-cycle has sign
-\[
-(-1)^{m-1},
-\]
-so it is odd exactly when $m$ is even.
+Write a permutation as a product of disjoint cycles $\sigma=c_1\cdots c_r$, and let $e$ be the number of $c_i$ of even length.
 
-Write a permutation as a product of disjoint cycles
-\[
-\sigma=c_1\cdots c_r.
-\]
-Then
-\[
+::: pf
+
+::: {.pf-step #cycle-sign}
+
+An $m$-cycle has sign $(-1)^{m-1}$; it is odd exactly when $m$ is even.
+
+::: pf-proof
+
+$(a_1\ a_2\ \cdots\ a_m)=(a_1\ a_m)(a_1\ a_{m-1})\cdots(a_1\ a_2)$ is a product of $m-1$ transpositions.
+
+:::
+
+:::
+
+::: pf-step
+
+$\operatorname{sgn}(\sigma)=(-1)^e$, so $\sigma$ is odd exactly when $e$ is odd.
+
+::: pf-proof
+
+Since $\operatorname{sgn}$ is a homomorphism,
+$$
 \operatorname{sgn}(\sigma)=\prod_{i=1}^r\operatorname{sgn}(c_i).
-\]
-Odd-length cycles contribute $+1$, while even-length cycles contribute $-1$. Hence
-\[
-\operatorname{sgn}(\sigma)=(-1)^e,
-\]
-where $e$ is the number of even-length cycles. Therefore $\sigma$ is odd exactly when $e$ is odd.
+$$
+By step [](#cycle-sign){.pf-ref}, odd-length cycles contribute $+1$ and even-length cycles contribute $-1$.
+
+:::
+
+:::
+
+:::
+
 :::
