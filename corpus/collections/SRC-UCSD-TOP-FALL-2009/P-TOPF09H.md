@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF09H
 kind: problem
-title: "Free group F_2 contains subgroups isomorphic to F_n for all n via covering spaces"
+title: 'The free group $F_2$ contains subgroups isomorphic to $F_n$ for all $n$, via covering spaces'
 classification:
   areas:
   - topology

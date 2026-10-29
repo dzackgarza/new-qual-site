@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF09E
 kind: problem
-title: "Every self-homotopy equivalence of CP^{2n} is orientation-preserving"
+title: 'Every self-homotopy equivalence of $\CP^{2n}$ is orientation-preserving'
 classification:
   areas:
   - topology
