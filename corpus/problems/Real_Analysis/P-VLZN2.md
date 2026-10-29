@@ -11,6 +11,8 @@ classification:
   - Fourier Analysis
   - L¹
   - Uniform Continuity
+  - Counterexamples
+  - Series of Functions
 relations: []
 review: draft
 audit:
@@ -46,8 +48,6 @@ Give an example showing that this fails if $g$ is not bounded.
 :::
 
 ::: {.solution}
-
-Related problems are [[E-WURI3]], [[E-FZXFR]], [[E-O742O]], and [[E-TF33D]].
 
 ::: pf
 
@@ -152,4 +152,16 @@ So the Fourier series converges absolutely and uniformly to a continuous $1$-per
 
 :::
 
+:::
+
+::: {.remark title="Variations"}
+The parts are also posed with the convention $\hat f(\xi)=\int f(x)e^{-ix\xi}\,dx$. Then the inversion formula in (c) reads $f(x)=\frac1{2\pi}\int\hat f(\xi)e^{ix\xi}\,d\xi$, and the proofs apply unchanged.
+
+Parts (d) and (e) are also posed for $f,g\in L^1(\RR^n)$. The proofs apply unchanged, with Fourier inversion on $\RR^n$ in (d) and Fubini's theorem on $\RR^{2n}$ in (e).
+
+Part (f) is also posed for $2\pi$-periodic $f$. Apply (f) to the $1$-periodic function $x\mapsto f(2\pi x)$.
+:::
+
+::: {.remark}
+Uniqueness in (d) can also be proved without the inversion theorem. Put $h=f-g$ and let $u_\eps=h\ast\phi_\eps$ for an approximate identity $\phi_\eps$ built from a continuous compactly supported $\phi\ge0$ with $\int\phi=1$. Then $u_\eps\to h$ in $L^1$, and $\widehat{u_\eps}=\hat h\,\hat\phi(\eps\,\cdot)=0$. Each $u_\eps$ is continuous and lies in $L^1\cap L^\infty\subseteq L^2$, so Plancherel's theorem gives $u_\eps=0$. Hence $h=0$ a.e.
 :::
