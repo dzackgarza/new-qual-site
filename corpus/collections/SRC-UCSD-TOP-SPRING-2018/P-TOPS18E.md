@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS18E
 kind: problem
-title: "Intersection number of the graph of a self-map of S^n with the diagonal"
+title: 'Intersection number of the graph of a self-map of $S^n$ with the diagonal'
 classification:
   areas:
   - topology

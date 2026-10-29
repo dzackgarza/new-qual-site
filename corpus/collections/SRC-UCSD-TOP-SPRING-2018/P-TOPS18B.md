@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS18B
 kind: problem
-title: "Mayer-Vietoris computation of a closed 4-manifold from gluing two copies of B^2 x S^2"
+title: 'Mayer–Vietoris computation for a closed $4$-manifold glued from two copies of $B^2\times S^2$'
 classification:
   areas:
   - topology

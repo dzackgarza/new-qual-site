@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS18G
 kind: problem
-title: "H_1 of complementary pieces in S^3 are isomorphic; RP^2 cannot embed in S^3"
+title: 'Complementary pieces of $S^3$ have isomorphic $H_1$, and $\RP^2$ does not embed in $S^3$'
 classification:
   areas:
   - topology

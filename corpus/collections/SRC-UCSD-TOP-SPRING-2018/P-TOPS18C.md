@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS18C
 kind: problem
-title: "H_1 of a mapping telescope built from degree-k gluing maps"
+title: '$H_1$ of a mapping telescope built from degree-$k$ gluing maps'
 classification:
   areas:
   - topology

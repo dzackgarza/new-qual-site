@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS18A
 kind: problem
-title: "Kernel of a surjection from Z/2 * Z/3 to S_3 is a free group of rank 2"
+title: 'The kernel of a surjection $\ZZ/2*\ZZ/3\to S_3$ is free of rank $2$'
 classification:
   areas:
   - topology
