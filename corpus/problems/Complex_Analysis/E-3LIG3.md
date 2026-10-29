@@ -11,21 +11,50 @@ classification:
   - Entire Functions
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: Claude Opus 5.5
+  date: 2026-10-29
+  note: The source reads "Suppose that g is entire"; the constant g = 1/2 satisfies the functional equation and is not surjective, so the statement adds the hypothesis that g is nonconstant.
 ---
 
 ::: {.exercise}
-Suppose that $g$ is entire and satisfies the functional equation $g(1-z) = 1-g(z)$.
+Suppose that $g$ is a nonconstant entire function and satisfies the functional equation $g(1-z) = 1-g(z)$.
 Show that $g(\CC) = \CC$.
 :::
 
 ::: {.solution}
-Assume $g$ is nonconstant; the remark treats constant $g$.
-Suppose $g$ omits a value $a$.
-Setting $z=1/2$ in the functional equation gives $g(1/2)=1-g(1/2)$, so $g(1/2)=1/2$ and $a\neq 1/2$.
-The value $1-a$ is also omitted: if $g(z)=1-a$, then $g(1-z)=1-g(z)=a$.
-Since $a\ne1/2$, the values $a$ and $1-a$ are distinct, so the nonconstant entire function $g$ omits two values, contradicting Picard's little theorem.
+
+::: pf
+
+::: {.pf-step #half}
+$g(1/2)=1/2$.
+
+::: pf-proof
+Setting $z=1/2$ in the functional equation gives $g(1/2)=1-g(1/2)$.
 :::
 
-::: {.remark}
-The only constant solution of $g(1-z)=1-g(z)$ is $g\equiv1/2$, which is not surjective. The conclusion holds for every nonconstant solution.
+:::
+
+::: {.pf-step #pair}
+If $g$ omits a value $a$, then $g$ also omits $1-a$, and $a\ne1-a$.
+
+::: pf-proof
+If $g(z)=1-a$, then $g(1-z)=1-g(z)=a$, a contradiction.
+By step [](#half){.pf-ref}, $a\ne1/2$, so $a\ne1-a$.
+:::
+
+:::
+
+::: pf-step
+$g(\CC)=\CC$.
+
+::: pf-proof
+If $g$ omitted a value, step [](#pair){.pf-ref} would give two distinct omitted values, contradicting Picard's little theorem for the nonconstant entire function $g$.
+:::
+
+:::
+
+:::
+
 :::
