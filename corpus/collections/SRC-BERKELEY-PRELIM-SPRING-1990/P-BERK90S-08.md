@@ -45,7 +45,7 @@ Every $w\in G$ satisfies $w^n\in H$.
 ::: pf-proof
 
 Since $G$ is abelian, $H$ is normal. The quotient group $G/H$ has order
-$n$, so [[T-SZRXI|Lagrange's theorem]] gives $(wH)^n=H$.
+$n$, so [[E-NNTQB|Lagrange's theorem]] gives $(wH)^n=H$.
 Thus $w^n\in H$.
 
 :::

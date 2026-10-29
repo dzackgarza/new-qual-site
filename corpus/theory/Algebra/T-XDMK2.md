@@ -11,7 +11,7 @@ classification:
   - Groups
 relations:
 - kind: uses
-  target: T-SZRXI
+  target: E-NNTQB
 review: reviewed
 ---
 
@@ -21,6 +21,6 @@ If $p$ divides $\abs G$, then $G$ contains an element of order $p$, and therefor
 :::
 
 ::: {.remark}
-By [[T-SZRXI|Lagrange's theorem]], the order of every element of $G$ divides $\abs G$; Cauchy's theorem is the converse for prime divisors of $\abs G$.
+By [[E-NNTQB|Lagrange's theorem]], the order of every element of $G$ divides $\abs G$; Cauchy's theorem is the converse for prime divisors of $\abs G$.
 [[T-WRMBM|Sylow's first theorem]] strengthens the existence statement from order $p$ to order $p^a$, where $p^a$ is the largest power of $p$ dividing $\abs G$.
 :::
