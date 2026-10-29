@@ -26,5 +26,9 @@ where $B$ ranges over the open balls of finite radius in charts $\RR^n\subseteq 
 ::: {.proposition}
 Let $M$ be an $n$-manifold with orientation double cover $p\colon\tilde M\to M$.
 Then $p$ is a two-sheeted [[D-ANO2D|covering space]], and $\tilde M$ is an orientable $n$-manifold.
-If $M$ is connected, then $M$ is orientable if and only if $\tilde M$ has two components.
+If $M$ is connected, then $M$ is orientable if and only if $\tilde M$ has two components [@Hat02].
+:::
+
+::: {.remark title="Variations"}
+A connected $M$ is orientable if $\pi_1(M)$ has no subgroup of index two: if $\tilde M$ were connected, it would be a connected two-sheeted cover, which corresponds to a subgroup of index two [@Hat02].
 :::

@@ -33,8 +33,6 @@ A nonempty connected orientable $n$-manifold has exactly two orientations.
 
 ::: {.remark}
 Each $H_n(M\mid x)$ has exactly two generators, so $M$ has exactly two local orientations at each point.
-The local orientations form the orientation double cover $\tilde M = \theset{\mu_x \st x\in M,\ \mu_x \text{ a local orientation of } M \text{ at } x}$, with $\mu_x\mapsto x$.
-The manifold $\tilde M$ is orientable, and a connected manifold $M$ is orientable if and only if $\tilde M$ has two components [@Hat02].
 :::
 
 ::: {.proposition}
