@@ -33,7 +33,7 @@ Since $\zeta_8=(1+i)/\sqrt2$ and $\sqrt2=\alpha^2$, $L=\QQ(\alpha,i)$, which con
 
 :::
 
-::: {.pf-step #group}
+::: pf-step
 $G=\Gal(L/\QQ)\cong D_4=\langle r,s\mid r^4=s^2=1,\ srs=r^{-1}\rangle$, where $r(\alpha)=i\alpha$, $r(i)=i$, $s(\alpha)=\alpha$, $s(i)=-i$.
 
 ::: pf-proof
