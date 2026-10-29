@@ -14,9 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A topological space $X$ is \dfn{locally connected} if for every $x\in X$ and every [[D-JMRPA|neighborhood]] $U$ of $x$ there is a [[D-YO6NZ|connected]] open set $V$ with $x\in V\subseteq U$.
-:::
-
-::: {.concept}
-See [@Mun00].
+A topological space $X$ is \dfn{locally connected} if for every $x\in X$ and every [[D-JMRPA|neighborhood]] $U$ of $x$ there is a [[D-YO6NZ|connected]] open set $V$ with $x\in V\subseteq U$ [@Mun00].
 :::
