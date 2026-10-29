@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS10C
 kind: problem
-title: "Integral cohomology ring of CP^n with CP^k collapsed to a point"
+title: 'Integral cohomology ring of $\CP^n/\CP^k$'
 classification:
   areas:
   - topology

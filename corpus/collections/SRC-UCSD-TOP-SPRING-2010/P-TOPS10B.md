@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS10B
 kind: problem
-title: "Double covers of RP^3 x S^1"
+title: 'Double covers of $\RP^3\times S^1$'
 classification:
   areas:
   - topology

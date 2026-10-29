@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS10A
 kind: problem
-title: "Any map from a simply connected CW complex to RP^{n+1} is null-homotopic"
+title: 'Every map from a simply connected CW complex to $\RP^{n+1}$ is null-homotopic'
 classification:
   areas:
   - topology
