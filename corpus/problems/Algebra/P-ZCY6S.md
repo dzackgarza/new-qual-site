@@ -18,43 +18,46 @@ Let $G$ be a finite group and work with finite-dimensional complex representatio
 :::
 
 ::: {.solution}
-For class functions $\chi,\psi:G\to\CC$, define
-\[
-\langle\chi,\psi\rangle
-=\frac1{|G|}\sum_{g\in G}\chi(g)\overline{\psi(g)}.
-\]
+For class functions $\chi,\psi\colon G\to\CC$, let
+$$
+\inner{\chi}{\psi}=\frac1{\abs{G}}\sum_{g\in G}\chi(g)\overline{\psi(g)},
+$$
+and let $\chi_1,\ldots,\chi_r$ be the irreducible characters of $G$, the characters of the irreducible representations $V_1,\ldots,V_r$.
 
-If $\chi_1,\ldots,\chi_r$ are the irreducible characters of $G$, then the row orthogonality relations are
-\[
-\langle\chi_i,\chi_j\rangle=\delta_{ij}.
-\]
-Equivalently, irreducible characters form an orthonormal basis of the space of complex class functions.
+::: pf
 
-The column orthogonality relation says that for $g,h\in G$,
-\[
+::: {.pf-step #row}
+
+(Row orthogonality) $\inner{\chi_i}{\chi_j}=\delta_{ij}$, and $\chi_1,\ldots,\chi_r$ form an orthonormal basis of the space of complex class functions on $G$.
+
+:::
+
+::: pf-step
+
+(Column orthogonality) For $g,h\in G$,
+$$
 \sum_{i=1}^r \chi_i(g)\overline{\chi_i(h)}
 =
 \begin{cases}
-|C_G(g)|,&g\text{ and }h\text{ are conjugate},\\
+\abs{C_G(g)},&g\text{ and }h\text{ are conjugate},\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 
-Now let $V$ be a representation with character $\chi_V$. Complete reducibility gives
-\[
-V\cong\bigoplus_i m_i V_i,
-\]
-where $V_i$ has irreducible character $\chi_i$. Taking characters,
-\[
-\chi_V=\sum_i m_i\chi_i.
-\]
-By orthogonality,
-\[
-m_i=\langle\chi_V,\chi_i\rangle.
-\]
-Thus an irreducible representation $V_i$ occurs in $V$ exactly when
-\[
-\langle\chi_V,\chi_i\rangle>0,
-\]
-and the inner product gives its multiplicity.
+:::
+
+::: pf-step
+
+If $V$ is a representation with character $\chi_V$, then $V_i$ occurs in $V$ with multiplicity $\inner{\chi_V}{\chi_i}$; in particular $V_i$ is a constituent of $V$ exactly when $\inner{\chi_V}{\chi_i}>0$.
+
+::: pf-proof
+
+By Maschke's theorem, $V\cong\bigoplus_j V_j^{\oplus m_j}$ for some multiplicities $m_j\ge0$. Characters are additive on direct sums, so $\chi_V=\sum_j m_j\chi_j$, and step [](#row){.pf-ref} gives $\inner{\chi_V}{\chi_i}=\sum_j m_j\delta_{ji}=m_i$.
+
+:::
+
+:::
+
+:::
+
 :::
