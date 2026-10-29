@@ -22,18 +22,20 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-07
   note: "The sourced uniqueness claim is false for singular A. The solution gives an explicit counterexample and proves the corrected theorem: H is always unique, while U is unique exactly when A has full column rank."
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source asks for a unique U and a unique H, which is false for rank-deficient A. The statement now asks for existence, uniqueness of H, and uniqueness of U exactly when A has rank n.
 ---
 
 ::: {.problem}
-Given $A \in M_{m,n}$ with $m \geq n$, prove that there exists a unique $U \in M_{m,n}$ with orthonormal columns, and a unique Hermitian positive semidefinite $H \in M_n$ such that $A = UH$.
+Given $A \in M_{m,n}$ with $m \geq n$, prove that there exist $U \in M_{m,n}$ with orthonormal columns and a Hermitian positive semidefinite $H \in M_n$ such that $A = UH$.
+Prove that $H$ is unique, and that $U$ is unique if and only if $A$ has rank $n$.
 (State in detail any auxiliary results that you use.)
 :::
 
 
 ::: {.solution}
-The uniqueness assertion is false as stated.
-The precise result is that the positive semidefinite factor $H$ is always unique, while the factor $U$ with orthonormal columns is unique if and only if $A$ has full column rank.
-
 ::: pf
 
 ::: {.pf-step #psd-square-root-unique}
@@ -149,28 +151,6 @@ Conversely, if $\operatorname{rank}A<n$, then $K=\ker A\neq0$.
 In the construction of step [](#existence){.pf-ref}, choose an isometric embedding $V:K\to(\operatorname{Ran}A)^\perp$.
 Replacing $V$ by $-V$ gives a distinct isometric extension of $U_0$, hence a distinct matrix $U$, while $UH=A$ is unchanged because $H$ vanishes on $K$.
 Therefore $U$ is not unique.
-:::
-
-:::
-
-::: pf-step
-In particular, the statement in the problem fails already for $A=0$.
-
-::: pf-proof
-Then $H=0$.
-For example, with $e_1,\ldots,e_m$ the standard basis and $m\ge n\ge1$, both
-\[
-U_1=(e_1\ \cdots\ e_n)
-\]
-and
-\[
-U_2=(-e_1\ e_2\ \cdots\ e_n)
-\]
-have orthonormal columns, are distinct, and satisfy
-\[
-A=0=U_1H=U_2H.
-\]
-Thus the unconditional uniqueness of $U$ requested by the sourced problem is false.
 :::
 
 :::
