@@ -25,18 +25,34 @@ What happens when the polynomial has a root in the base field?
 :::
 
 ::: {.solution}
-**Theorem.**  
-Let $f\in F[x]$ be irreducible of degree $n\ge1$ and let $L$ be its splitting field.
-Then $G=\mathrm{Gal}(L/F)$ acts transitively on the $n$ roots of $f$.
-If $f$ has a root in $F$, then $n=1$, so $L=F$ and $G$ is trivial.
+Let $f\in F[x]$ be irreducible of degree $n\ge1$, let $L$ be its splitting field over $F$, and let $G=\Gal(L/F)$.
 
-1. Let $\alpha,\beta$ be roots of $f$ in $L$.
-   Each generates an $F$-embedding $F(\alpha)\hookrightarrow L$ with $\alpha\mapsto\beta$.
-2. Because $L/F$ is normal, any such embedding extends to an $F$-automorphism $\sigma\in G$.
-3. Then $\sigma(\alpha)=\beta$, so every root is in the $G$-orbit of every other root.
-   Hence the action is transitive.
+::: pf
 
-4. If $f$ has a root $\alpha\in F$, then $x-\alpha$ divides $f$ in $F[x]$.
-   Irreducibility forces $f(x)=x-\alpha$ (degree $1$).
-5. For degree $1$ there is no nontrivial splitting field extension, so $L=F$ and $G=\{1\}$.
+::: pf-step
+
+$G$ acts transitively on the roots of $f$ in $L$.
+
+::: pf-proof
+
+Let $\alpha,\beta\in L$ be roots of $f$. Since $f$ is irreducible, it is the minimal polynomial of both up to a scalar, so there is an $F$-isomorphism $F(\alpha)\to F(\beta)\subseteq L$ with $\alpha\mapsto\beta$. Because $L/F$ is normal, this embedding extends to an $F$-automorphism $\sigma\in G$, and $\sigma(\alpha)=\beta$.
+
+:::
+
+:::
+
+::: pf-step
+
+If $f$ has a root in $F$, then $f$ has degree $1$, $L=F$, and $G$ is trivial.
+
+::: pf-proof
+
+If $\alpha\in F$ is a root, then $x-\alpha$ divides $f$ in $F[x]$, and irreducibility forces $f=c(x-\alpha)$ with $c\in F^\times$. Its only root lies in $F$, so $L=F$ and $G=\{1\}$.
+
+:::
+
+:::
+
+:::
+
 :::
