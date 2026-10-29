@@ -25,24 +25,38 @@ What is the center $Z(S_n)$ of the symmetric group $S_n$? Prove it.
 :::
 
 ::: {.solution}
-For $n=1$, $S_1$ is trivial, so $Z(S_1)=S_1$. For $n=2$, $S_2$ is abelian, so $Z(S_2)=S_2$.
 
-Now let $n\ge3$ and suppose $\sigma\in Z(S_n)$ is nontrivial. Choose $a$ with $\sigma(a)=b\ne a$, and choose $c$ distinct from $a,b$. Let $\tau=(bc)$. Then $\tau(a)=a$, so
-\[
-(\sigma\tau)(a)=\sigma(a)=b,
-\]
-whereas
-\[
-(\tau\sigma)(a)=\tau(b)=c.
-\]
-Thus $\sigma\tau\ne\tau\sigma$, contradicting $\sigma\in Z(S_n)$.
+::: pf
 
-Therefore
-\[
-Z(S_n)=
-\begin{cases}
-S_n,&n=1,2,\\
-\{1\},&n\ge3.
-\end{cases}
-\]
+::: {.pf-step #small-n}
+For $n=1,2$, $Z(S_n)=S_n$.
+
+::: pf-proof
+$S_1$ is trivial and $S_2$ has order $2$, so both are abelian.
+:::
+
+:::
+
+::: {.pf-step #large-n}
+For $n\ge3$, $Z(S_n)=\{1\}$.
+
+::: pf-proof
+Let $\sigma\in S_n$ be nontrivial. Choose $a$ with $b=\sigma(a)\ne a$, choose $c\notin\{a,b\}$, which exists since $n\ge3$, and let $\tau=(bc)$. Then $\sigma\tau(a)=\sigma(a)=b$ while $\tau\sigma(a)=\tau(b)=c$, so $\sigma\tau\ne\tau\sigma$ and $\sigma\notin Z(S_n)$.
+:::
+
+:::
+
+::: pf-step
+$$
+Z(S_n)=\boxed{\begin{cases}S_n,&n=1,2,\\ \{1\},&n\ge3.\end{cases}}
+$$
+
+::: pf-proof
+This combines steps [](#small-n){.pf-ref} and [](#large-n){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::
