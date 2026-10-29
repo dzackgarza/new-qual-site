@@ -18,10 +18,33 @@ Give an example of spaces $A\subseteq B \subseteq X$ such that $A$ is open in $B
 :::
 
 ::: {.solution}
-::: {.concept}
-:::
-No: Take $[0, 1] \subset [0, 1] \subset \RR$.
-Then $[0, 1]$ is tautologically open in $[0, 1]$ as it is the entire space, But $[0, 1]$ is not open in $\RR$:
 
-- E.g. $\theset{1}$ is not an interior point (every neighborhood intersects the complement $\RR\setminus[0, 1]$).
+::: pf
+
+::: pf-step
+
+Take $A = B = [0, 1]$ and $X = \RR$. Then $A$ is open in $B$.
+
+::: pf-proof
+
+Every space is open in itself.
+
+:::
+
+:::
+
+::: pf-step
+
+$A = [0,1]$ is not open in $\RR$.
+
+::: pf-proof
+
+The point $1$ is not an interior point of $[0,1]$: every interval $(1-\varepsilon, 1+\varepsilon)$ contains $1 + \varepsilon/2 \notin [0,1]$.
+
+:::
+
+:::
+
+:::
+
 :::
