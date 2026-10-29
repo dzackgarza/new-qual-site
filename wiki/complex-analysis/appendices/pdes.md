@@ -1,5 +1,6 @@
 ---
 order: 111
+title: The Dirichlet problem
 ---
 
 # The Dirichlet problem
