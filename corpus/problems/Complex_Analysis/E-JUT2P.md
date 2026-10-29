@@ -21,17 +21,28 @@ Conversely, if $z_0$ is removable for $f'$, then it is also removable for $f$.
 :::
 
 ::: {.solution}
-Let $f$ be holomorphic on a punctured disk $\DD_\eps^*(z_0)$.
+Let $f$ be holomorphic on a punctured disk $D^*\coloneqq\DD_\varepsilon^*(z_0)$, and write $D\coloneqq\DD_\varepsilon(z_0)$.
 
-If $z_0$ is removable for $f$, let $F$ be the holomorphic extension of $f$ to $\DD_\eps(z_0)$. Then $F'$ is holomorphic on $\DD_\eps(z_0)$ and equals $f'$ on $\DD_\eps^*(z_0)$, so $z_0$ is removable for $f'$.
+::: pf
 
-For the converse, if $z_0$ is removable for $f'$, let $g$ be the holomorphic extension of $f'$ to $\DD_\eps(z_0)$, which exists by Riemann's removable singularity theorem.
-Since $g$ is holomorphic on the disk, it has a primitive $F(z) \definedas \int_{z_0}^z g(\xi) \dxi$ there.
-Now $G\definedas F - f$ satisfies $G' = g - f' \equiv 0$ on the connected set $\DD_\eps^*(z_0)$, so $G\equiv c$ is constant and $f(z) = F(z) - c$.
-In particular,
-\[
-\lim_{z\to z_0} f(z) = F(z_0) - c
-\]
-exists, so $z_0$ is removable for $f$.
+::: pf-step
+If $z_0$ is removable for $f$, then it is removable for $f'$.
+
+::: pf-proof
+Let $F$ be the holomorphic extension of $f$ to $D$. Then $F'$ is holomorphic on $D$ and equals $f'$ on $D^*$.
+:::
+
+:::
+
+::: pf-step
+If $z_0$ is removable for $f'$, then it is removable for $f$.
+
+::: pf-proof
+Let $g$ be the holomorphic extension of $f'$ to $D$. A holomorphic function on a disk has a primitive, so $F(z)\coloneqq\int_{z_0}^zg(\xi)\,d\xi$ is holomorphic on $D$ with $F'=g$. Then $(F-f)'=0$ on the connected set $D^*$, so $f=F-c$ there for a constant $c$, and $F-c$ is a holomorphic extension of $f$ to $D$.
+:::
+
+:::
+
+:::
 
 :::
