@@ -35,6 +35,7 @@ Dirichlet's theorem says that there are infinitely many primes $p$ satisfying
 $$
 p\equiv a\pmod q.
 $$
+
 ::: pf-proof
 
 This is Dirichlet's theorem on primes in arithmetic progressions: every reduced residue class modulo $q$ contains infinitely many primes. The coprimality condition is necessary, since if $\gcd(a,q)>1$, then all sufficiently large integers in the progression share a nontrivial divisor with $q$.

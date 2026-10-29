@@ -42,7 +42,7 @@ sections:
       - ref: D-CTGON
       - ref: D-9KQZT
       - ref: D-BCNUH
-      - ref: D-KW52R
+      - ref: D-MVBYO
   - slug: constructions-of-spaces
     title: Constructions of spaces
     parent: spaces-and-continuous-maps
@@ -126,7 +126,7 @@ sections:
       - ref: D-WGYSB
       - ref: FF-VWKGM
       - ref: T-PCL4H
-      - ref: T-4RLPQ
+      - ref: T-HH3YP
       - ref: D-SDMMS
       - ref: FT-6WPJI
   - slug: compactness

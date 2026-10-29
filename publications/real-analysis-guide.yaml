@@ -57,7 +57,7 @@ sections:
       - ref: T-QPTHZ
       - ref: PR-25GM2
       - ref: T-YOZX6
-      - ref: FD-BA2WU
+      - ref: D-KJBAK
       - ref: D-2MJRE
       - ref: T-7FJFK
   - slug: continuity
@@ -173,7 +173,6 @@ sections:
       - ref: FF-IAUQG
       - ref: T-RA-WORKSHOP-D7-6-3
       - ref: T-RA-WORKSHOP-D7-6-4
-      - ref: T-TR526
       - ref: D-2CCDB
       - ref: T-RA-WORKSHOP-D7-6-5
       - ref: FF-XZGIY
@@ -248,7 +247,7 @@ sections:
       - ref: T-IJQQG
       - ref: PR-YO7MV
       - ref: T-RIY2P
-      - ref: T-6PRW3
+      - ref: FT-4JRQX
       - ref: T-4GPEF
       - ref: T-X7XZX
   - slug: lp-spaces

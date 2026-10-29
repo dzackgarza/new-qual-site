@@ -264,7 +264,7 @@ sections:
     items:
       - ref: T-HRPNO
       - ref: T-ESKLY
-      - ref: C-ZTEH7
+      - ref: C-Q6BSL
       - ref: PR-ZCMJQ
       - ref: T-ZO5UU
       - ref: T-SSNLT
@@ -344,7 +344,6 @@ sections:
       - ref: T-FZWEC
       - ref: T-SULVA
       - ref: T-4MDS6
-      - ref: T-55MPA
       - ref: T-HWBWI
       - ref: T-DDOWW
   - slug: special-functions-and-factorization

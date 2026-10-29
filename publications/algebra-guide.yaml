@@ -81,7 +81,6 @@ sections:
       - ref: T-I5N43
       - ref: T-NFQBO
       - ref: T-6CQEB
-      - ref: T-RLVA4
       - ref: PR-DJZLY
   - slug: group-actions-and-counting
     title: Group actions and counting
@@ -120,7 +119,7 @@ sections:
       - ref: D-OZ2RR
       - ref: C-O7CP3
       - ref: T-4CDTT
-      - ref: L-354HC
+      - ref: L-DJKXL
       - ref: PR-PYYRK
       - ref: C-HE5SL
   - slug: sylow-theory
@@ -176,7 +175,7 @@ sections:
       - ref: PR-JY4PV
       - ref: D-7UIPO
       - ref: PR-5PI25
-      - ref: D-T2NZ4
+      - ref: FD-2UWAQ
       - ref: PR-5FGA7
       - ref: T-EN5H4
       - ref: PR-2JG3F
@@ -356,7 +355,6 @@ sections:
       - ref: D-FK47C
       - ref: FF-HK72Z
       - ref: D-WUGPG
-      - ref: FF-UC7SQ
       - ref: FF-ED3CD
       - ref: FF-2AKVH
       - ref: FF-HAMDC
@@ -464,7 +462,6 @@ sections:
       - ref: D-4KM4P
       - ref: D-CYAJI
       - ref: D-4HEUB
-      - ref: FD-BVM37
   - slug: structure-theorem
     title: The structure theorem over a PID
     parent: modules

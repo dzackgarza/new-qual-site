@@ -92,7 +92,7 @@ $$
 [@SS03, Proposition 1.3.1]
 :::
 
-[[T-ZO5UU|Jordan's lemma]]: let $C_R\coloneqq\theset{Re^{i\theta} \st 0\le\theta\le\pi}$ with $R>0$, and let $f(z)=e^{iaz}g(z)$ on $C_R$ with $g$ continuous and $a>0$. Then
+[[T-ZO5UU|Jordan's lemma]] states the following. Let $C_R\coloneqq\theset{Re^{i\theta} \st 0\le\theta\le\pi}$ with $R>0$, and let $f(z)=e^{iaz}g(z)$ on $C_R$ with $g$ continuous and $a>0$. Then
 $$
 \abs{\int_{C_R}f(z)\dz}\le\frac\pi a\,M_R,\qquad M_R\coloneqq\max_{0\le\theta\le\pi}\abs{g(Re^{i\theta})}.
 $$

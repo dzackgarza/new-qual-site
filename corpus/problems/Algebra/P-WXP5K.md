@@ -51,7 +51,7 @@ $$
 $$
 is free of countably infinite rank. If $H$ has finite index $d$ in $F_r$, then the Schreier formula gives
 $$
-\rankH=1+d(r-1),
+\rank H=1+d(r-1),
 $$
 so finite-index subgroups are finitely generated.
 :::

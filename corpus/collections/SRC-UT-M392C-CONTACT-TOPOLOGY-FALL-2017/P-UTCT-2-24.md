@@ -142,7 +142,7 @@ Q=-b y.
 The divergence is
 \[
 \boxed{
-\operatorname{div}_\omegav
+\operatorname{div}_\omega v
 =
 a-b.
 }
@@ -153,7 +153,7 @@ a-b.
 
 Differentiate the components from step [](#s1-2){.pf-ref}:
 \[
-\operatorname{div}_\omegav
+\operatorname{div}_\omega v
 =
 \partial_x(a x)
 +
@@ -251,7 +251,7 @@ By definition,
 \[
 \mathcal L_{v}\omega
 =
-(\operatorname{div}_\omegav)\omega.
+(\operatorname{div}_\omega v)\omega.
 \]
 Using step [](#s1-3){.pf-ref},
 \[

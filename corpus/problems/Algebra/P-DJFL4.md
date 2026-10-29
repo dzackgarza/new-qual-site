@@ -49,13 +49,13 @@ The map $L$ is not surjective.
 
 By rank-nullity,
 $$
-5=\dim\ker L+\dim\imL.
+5=\dim\ker L+\dim\im L.
 $$
 Since $\dim\ker L\ge1$,
 $$
-\dim\imL\le4<5=\dim\RR^5.
+\dim\im L\le4<5=\dim\RR^5.
 $$
-Hence $\imL\ne\RR^5$.
+Hence $\im L\ne\RR^5$.
 
 :::
 
