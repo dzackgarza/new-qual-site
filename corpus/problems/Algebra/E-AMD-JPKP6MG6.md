@@ -28,13 +28,13 @@ Show that every permutation in $S_n$ is a product of disjoint cycles.
 Let $\sigma\in S_n$ act on $\{1,\dots,n\}$. Its orbits partition this finite set.
 
 For an orbit containing $a$, choose the least $m>0$ with $\sigma^m(a)=a$. Then
-\[
+$$
 a,\sigma(a),\dots,\sigma^{m-1}(a)
-\]
+$$
 are distinct and form the entire orbit, and on this orbit $\sigma$ acts as the cycle
-\[
+$$
 (a\ \sigma(a)\ \dots\ \sigma^{m-1}(a)).
-\]
+$$
 Distinct orbits are disjoint, so the corresponding cycles are pairwise disjoint. Their product agrees with $\sigma$ on every point, hence equals $\sigma$.
 
 The decomposition is unique up to reordering the disjoint cycles and inserting or deleting $1$-cycles, because the supports of the nontrivial cycles are precisely the nontrivial orbits of the cyclic group $\langle\sigma\rangle$.
