@@ -15,17 +15,23 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source used Hf without defining it and did not quantify x; the statement now names Hf as the Hardy-Littlewood maximal function and asks for the bound for every x in R^n.
 ---
 
 ::: {.problem}
-Let $f\in L^1(\RR^n)$ with $f\neq 0$.
 
-a. Prove that there exists a $c>0$ such that
-\[
-Hf(x) \geq {c \over (1 + \abs x)^n }
-.\]
+Let $f\in L^1(\RR^n)$ with $f\neq 0$, and let $Hf$ be its Hardy--Littlewood maximal function. Prove that there exists a $c>0$ such that for every $x\in\RR^n$,
+$$
+Hf(x) \geq \frac{c}{(1 + \abs x)^n}.
+$$
+
 :::
+
 ::: {.solution}
+
 Here $Hf(x) = \sup_{s > 0}\frac{1}{m(B(x,s))}\int_{B(x,s)}|f|$ is the Hardy--Littlewood maximal function, and $m(B(x,s)) = \omega_n s^n$ with $\omega_n$ the volume of the unit ball.
 
 ::: pf
