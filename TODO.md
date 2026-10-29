@@ -94,6 +94,8 @@ mathematical correction under its own node, not under copy policy.
     PR-ENHVC, FD-6WSIA, C-C2GYX, E-6OUJV. which-kind-of-ring claims 3 and 3 are nonassociate.
     PR-DLPTR restates D-LIEMF. Page restatements: finite-fields, fields/polynomials,
     commutative-algebra, which-kind-of-ring, maschke-and-schur. **Acceptance:** each read and repaired.
+    **Closed.** P-UZDCX stays distinct from T-NGBVC: it also asks why a finitely generated
+    algebraic extension is finite.
   - **`ad2-topology-content`**. **Needs:** none. Citation-only `concept` blocks on about 80
     topology cards (D-EBNUE, D-IGUUS, …); FF-AE7ID/C-CT2NX merge; fundamental-group/theorems
     change-of-basepoint restatement; curves-in-projective-space opening and projection
