@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-1-07
 kind: problem
-title: Maxim algebraic topology 1.7
+title: Orientable manifolds as double covers of non-orientable manifolds
 classification:
   areas: [topology]
   topics: []
