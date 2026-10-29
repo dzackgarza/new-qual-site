@@ -18,31 +18,32 @@ Which finite groups occur as Galois groups of some field extension?
 :::
 
 ::: {.solution}
-Every finite group occurs as the Galois group of some field extension.
+Let $G$ be a finite group, let $k$ be a field, and let $L=k(x_g:g\in G)$ be the rational function field in algebraically independent variables indexed by $G$.
 
-Let $G$ be finite and choose a field $k$. Form the rational function field
-\[
-L=k(x_g:g\in G)
-\]
-in algebraically independent variables indexed by $G$. Let $G$ act on $L$ by
-\[
-h(x_g)=x_{hg}
-\qquad(h,g\in G).
-\]
-This action is faithful. Let
-\[
-K=L^G
-\]
-be the fixed field. Artin's theorem on fixed fields of finite groups of automorphisms gives
-\[
-[L:K]=|G|
-\]
-and
-\[
-\operatorname{Gal}(L/K)\cong G.
-\]
+::: pf
 
-Thus there is no restriction if the base field is allowed to vary.
+::: {.pf-step #action}
+$G$ acts faithfully on $L$ by $k$-automorphisms with $h(x_g)=x_{hg}$.
 
-By contrast, asking which finite groups occur as Galois groups over the specific field $\QQ$ is the inverse Galois problem over $\QQ$, which is not known in full generality.
+::: pf-proof
+For each $h\in G$, the permutation $x_g\mapsto x_{hg}$ of the variables extends uniquely to a $k$-automorphism of the polynomial ring and hence of its fraction field $L$. These automorphisms compose as $G$ does, and $h\ne e$ moves $x_e$ to $x_h\ne x_e$.
+:::
+
+:::
+
+::: pf-step
+$\boxed{\text{Every finite group}}$ occurs: with $K=L^G$, the extension $L/K$ is Galois with $\Gal(L/K)\cong G$.
+
+::: pf-proof
+By step [](#action){.pf-ref}, $G$ is a finite group of automorphisms of $L$. Artin's theorem gives that $L/L^G$ is Galois with $[L:L^G]=\abs{G}$ and $\Gal(L/L^G)=G$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark}
+Over the fixed base field $\QQ$, whether every finite group occurs is the inverse Galois problem, which is open.
 :::
