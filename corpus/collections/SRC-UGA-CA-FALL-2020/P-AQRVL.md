@@ -26,6 +26,10 @@ Expand $\frac{1}{1-z^{2}}+\frac{1}{z-3}$ in a series of the form $\sum_{-\infty}
 
 :::
 
+::: {.remark title="Variations"}
+The same problem is also asked with $\frac{1}{3-z}$ in place of $\frac{1}{z-3}$, together with the question of how many Laurent expansions about $0$ the function has. The singularities $\pm1$ and $3$ split the plane into the three annuli above, so there are exactly three, and replacing $\frac{1}{z-3}$ by $\frac{1}{3-z}$ only changes the sign of its series.
+:::
+
 ::: {.solution}
 
 Each expansion comes from the geometric series $\frac1{1-w}=\sum_{k\ge0}w^k$ for $\abs{w}<1$.
