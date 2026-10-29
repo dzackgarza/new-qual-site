@@ -25,21 +25,21 @@ Show that every finite $p$-group is nilpotent.
 :::
 
 ::: {.solution}
-Let \(G\) be a finite \(p\)-group. We prove by induction on \(|G|\) that its upper central series reaches \(G\).
+Let $G$ be a finite $p$-group. We prove by induction on $|G|$ that its upper central series reaches $G$.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-Every nontrivial finite \(p\)-group has nontrivial center.
+Every nontrivial finite $p$-group has nontrivial center.
 
 ::: pf-proof
 
 The class equation is
-\[
+$$
 |G|=|Z(G)|+\sum_i [G:C_G(x_i)],
-\]
-where the sum runs over representatives of noncentral conjugacy classes. Each index in the sum is a nontrivial power of \(p\), hence divisible by \(p\). Since \(|G|\) is divisible by \(p\), so is \(|Z(G)|\). Thus \(|Z(G)|\ge p\).
+$$
+where the sum runs over representatives of noncentral conjugacy classes. Each index in the sum is a nontrivial power of $p$, hence divisible by $p$. Since $|G|$ is divisible by $p$, so is $|Z(G)|$. Thus $|Z(G)|\ge p$.
 
 :::
 
@@ -47,14 +47,14 @@ where the sum runs over representatives of noncentral conjugacy classes. Each in
 
 ::: pf-step
 
-The quotient \(G/Z(G)\) is a strictly smaller finite \(p\)-group.
+The quotient $G/Z(G)$ is a strictly smaller finite $p$-group.
 
 ::: pf-proof
 
-By step [](#s1){.pf-ref}, \(|Z(G)|\ge p\), so
-\[
+By step [](#s1){.pf-ref}, $|Z(G)|\ge p$, so
+$$
 |G/Z(G)|=|G|/|Z(G)|<|G|.
-\]
+$$
 
 :::
 
@@ -62,15 +62,15 @@ By step [](#s1){.pf-ref}, \(|Z(G)|\ge p\), so
 
 ::: pf-step
 
-The upper central series of \(G\) reaches \(G\).
+The upper central series of $G$ reaches $G$.
 
 ::: pf-proof
 
-Induct on \(|G|\). The trivial group is nilpotent. For nontrivial \(G\), the quotient \(G/Z(G)\) is nilpotent by induction. If its upper central series reaches \(G/Z(G)\) in \(c\) steps, then by the definition
-\[
+Induct on $|G|$. The trivial group is nilpotent. For nontrivial $G$, the quotient $G/Z(G)$ is nilpotent by induction. If its upper central series reaches $G/Z(G)$ in $c$ steps, then by the definition
+$$
 Z_{i+1}(G)/Z(G)=Z_i(G/Z(G))
-\]
-for the corresponding shifted series, so \(Z_{c+1}(G)=G\). Hence \(G\) is nilpotent.
+$$
+for the corresponding shifted series, so $Z_{c+1}(G)=G$. Hence $G$ is nilpotent.
 
 :::
 
@@ -78,5 +78,5 @@ for the corresponding shifted series, so \(Z_{c+1}(G)=G\). Hence \(G\) is nilpot
 
 :::
 
-Therefore every finite \(p\)-group is nilpotent.
+Therefore every finite $p$-group is nilpotent.
 :::
