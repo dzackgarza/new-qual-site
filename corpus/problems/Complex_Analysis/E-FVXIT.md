@@ -21,46 +21,31 @@ Find a sharp upper bound for $\abs{f'(0)}$, and prove sharpness by example.
 :::
 
 ::: {.solution}
-Let
-$$
-r(w)=\frac{i}{2}w:\HH_R\to\HH,
-\qquad
-C(w)=\frac{w-i}{w+i}:\HH\to\DD.
-$$
-Then $r(2)=i$ and $C(i)=0$, so
-$$
-F\coloneqq C\circ r\circ f:\DD\to\DD
-$$
-satisfies $F(0)=0$.
-Schwarz's lemma gives $\abs{F'(0)}\le1$.
+Let $r(w)\coloneqq\frac i2w$, a biholomorphism $\HH_R\to\HH$ with $r(2)=i$, and $C(w)\coloneqq\frac{w-i}{w+i}$, a biholomorphism $\HH\to\DD$ with $C(i)=0$.
 
-By the chain rule,
-$$
-F'(0)=C'(r(f(0)))\,r'(f(0))\,f'(0)
-=C'(i)\frac{i}{2}f'(0).
-$$
-Since
-$$
-C'(w)=\frac{2i}{(w+i)^2},
-\qquad
-\abs{C'(i)}=\frac12,
-$$
-we obtain
-$$
-1\ge \abs{F'(0)}=\frac14\abs{f'(0)},
-\qquad
-\abs{f'(0)}\le4.
-$$
+::: pf
 
-The bound is sharp.
-For $\abs{\lambda}=1$, take $F(z)=\lambda z$ and unwind the conjugation:
-$$
-f(z)=r^{-1}\!\left(C^{-1}(\lambda z)\right)
-=2\frac{1+\lambda z}{1-\lambda z}.
-$$
-This maps $\DD$ biholomorphically onto $\HH_R$, satisfies $f(0)=2$, and
-$$
-f'(0)=4\lambda,
-$$
-so $\abs{f'(0)}=4$.
+::: {.pf-step #bound}
+$\abs{f'(0)}\le4$.
+
+::: pf-proof
+$F\coloneqq C\circ r\circ f:\DD\to\DD$ is holomorphic with $F(0)=0$, so $\abs{F'(0)}\le1$ by the Schwarz lemma.
+By the chain rule $F'(0)=C'(i)\cdot\frac i2\cdot f'(0)$, and $C'(w)=\frac{2i}{(w+i)^2}$ gives $\abs{C'(i)}=\frac12$.
+Hence $1\ge\abs{F'(0)}=\frac14\abs{f'(0)}$.
+:::
+
+:::
+
+::: pf-step
+The sharp bound is $\abs{f'(0)}\le\boxed4$.
+
+::: pf-proof
+By step [](#bound){.pf-ref} it remains to attain it.
+For $\abs\lambda=1$, the map $f(z)=r^{-1}\qty(C^{-1}(\lambda z))=2\frac{1+\lambda z}{1-\lambda z}$ is a biholomorphism $\DD\to\HH_R$ with $f(0)=2$ and $f'(0)=4\lambda$.
+:::
+
+:::
+
+:::
+
 :::
