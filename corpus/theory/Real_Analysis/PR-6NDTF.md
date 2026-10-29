@@ -22,12 +22,12 @@ Then:
 - For almost every $x\in \RR^{n_1}$, the slice $E_x$ is measurable in $\RR^{n_2}$.
 
 - The function
-$$
-F\colon \RR^{n_1} \to [0,\infty], \qquad x \mapsto m(E_x) = \int_{\RR^{n_2}} \chi_{E_x}(y) \,dy,
-$$
-defined for almost every $x$, is measurable, and
-$$
-m(E) = \int_{\RR^{n_1}} m(E_x) \,dx
-= \int_{\RR^{n_1}} \int_{\RR^{n_2}} \chi_{E_x}(y) \,dy \,dx .
-$$
+  $$
+  F\colon \RR^{n_1} \to [0,\infty], \qquad x \mapsto m(E_x) = \int_{\RR^{n_2}} \chi_{E_x}(y) \,dy,
+  $$
+  defined for almost every $x$, is measurable, and
+  $$
+  m(E) = \int_{\RR^{n_1}} m(E_x) \,dx
+  = \int_{\RR^{n_1}} \int_{\RR^{n_2}} \chi_{E_x}(y) \,dy \,dx .
+  $$
 :::
