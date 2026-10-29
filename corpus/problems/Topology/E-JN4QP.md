@@ -19,19 +19,34 @@ Show that a continuous bijection from a compact space to a Hausdorff space is a 
 :::
 
 ::: {.solution}
-\envlist
+Let $f\colon X\to Y$ be a continuous bijection with $X$ compact and $Y$ Hausdorff.
 
-- It suffices to show that $f$ is a closed map, i.e. if $U\subseteq X$ is closed then $f(U)\subseteq Y$ is again closed.
+::: pf
 
-- Let $U\in X$ be closed; since $X$ is closed, $U$ is compact
+::: {.pf-step #closed}
 
-  - Since closed subsets of compact spaces are compact.
+For every closed $C\subseteq X$, the image $f(C)$ is closed in $Y$.
 
-- Since $f$ is continuous, $f(U)$ is compact
+::: pf-proof
 
-  - Since the continuous image of a compact set is compact.
+A closed subset of a compact space is compact, so $C$ is compact. The continuous image of a compact set is compact, so $f(C)$ is compact. A compact subset of a Hausdorff space is closed, so $f(C)$ is closed.
 
-- Since $Y$ is Hausdorff and $f(U)$ is compact, $f(U)$ is closed
+:::
 
-  - Since compact subsets of Hausdorff spaces are closed.
+:::
+
+::: pf-step
+
+$f$ is a homeomorphism.
+
+::: pf-proof
+
+Since $f$ is bijective, $f^{-1}\colon Y\to X$ exists and $(f^{-1})^{-1}(C) = f(C)$ for every $C\subseteq X$. By step [](#closed){.pf-ref}, preimages of closed sets under $f^{-1}$ are closed, so $f^{-1}$ is continuous.
+
+:::
+
+:::
+
+:::
+
 :::
