@@ -139,7 +139,14 @@ mathematical correction under its own node, not under copy policy.
     "exactly" on the annulus; extra proofs in remarks (PR-K57J6, Schwarz lemma, T-ZZJDP, PR-NITIQ,
     PR-EWOP5, PR-5A64G); possible duplicates E-UVNVV/E-I26BF, PR-YO7MV/FD-3BK6U, D-2CCDB/FD-XVMEE,
     D-HHVPT/FD-ST7TD; `STYLE-03` `\mathbb` on maximum-modulus-and-open-mapping and
-    cauchy-estimates-and-liouville. **Acceptance:** each read and repaired, or kept with the reason.
+    cauchy-estimates-and-liouville. Also: D-QTJ7T and T-TUXBP concept blocks that hold only a
+    citation. Found while merging: FT-OEYLQ/C-FRF33 (open mapping), FT-5MASA/T-22RQZ (Cauchy
+    inequalities). **Acceptance:** each read and repaired, or kept with the reason. **Closed.**
+    Every CARD-04 group was one statement and is merged; PR-PDYJC into PR-AQFRA settles PR-BPP7D;
+    D-IJMPJ into D-QTJ7T settles the Montel remark; the listed extra proofs left with their merged
+    cards. E-UVNVV is kept apart from P-Z776N: it states that $f$ is locally $(n+1)$-to-one, a
+    stronger statement. PR-YO7MV/FD-3BK6U, D-2CCDB/FD-XVMEE, D-HHVPT/FD-ST7TD are real-analysis
+    cards and stay with `ad2-real-analysis-content` above.
   - **`ad2-site-surfaces`**. **Needs:** none. Renderer: a "problem N" locator is derived when an
     appearance comment is empty; solved counts include child-collection rows
     (SRC-MATH8100-FALL-2019-ASSIGNMENTS, SRC-RA-WORKSHOP); institution ids are upper-cased
