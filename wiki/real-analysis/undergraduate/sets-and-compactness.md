@@ -64,15 +64,6 @@ A subsequence converging in $\norm{\wait}_\infty$ would converge uniformly to it
 
 [[PR-JTFMW]]
 
-::: {.proof}
-Let $C_n$ be the union of the $2^n$ closed intervals of length $3^{-n}$ remaining at stage $n$, so $C = \bigcap_n C_n$.
-Each $C_n$ is closed, so $C$ is closed.
-An interval contained in $C$ lies in some component of $C_n$ for every $n$, so has length at most $3^{-n}$ for every $n$; hence $C$ contains no interval and has empty interior.
-
-:::
-
-[[C-44LL4]]
-
 ## Compactness in function spaces
 
 [[PR-HRAOC]]

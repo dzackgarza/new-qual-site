@@ -31,8 +31,6 @@ title: Theorems
 
 [[PR-JTFMW]]
 
-[[C-44LL4]]
-
 [[PR-OGEEA]]
 
 [[T-7FJFK]]
