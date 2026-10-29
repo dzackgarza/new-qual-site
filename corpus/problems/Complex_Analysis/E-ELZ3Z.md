@@ -16,7 +16,7 @@ audit:
 - event: statement-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
-  note: 'The source reads "Show that $f'' bounded implies $f$ is uniformly continuous." with no domain. On a disconnected domain the claim fails (a locally constant function on $\bigcup_n [1/(2n+1),1/(2n)]$ taking alternate values $0$ and $1$); the statement now takes $f$ real-valued and differentiable on an interval.'
+  note: 'The source reads "Show that $f''$ bounded implies $f$ is uniformly continuous." with no domain. On a disconnected domain the claim fails (a locally constant function on $\bigcup_n [1/(2n+1),1/(2n)]$ taking alternate values $0$ and $1$); the statement now takes $f$ real-valued and differentiable on an interval.'
 ---
 
 ::: {.problem}
