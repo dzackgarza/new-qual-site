@@ -1504,7 +1504,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Topology/E-GSE3M.md` | `e443f37c00ed00b00301f6141d12a7d6f3ae276d` | `e443f37c00ed00b00301f6141d12a7d6f3ae276d` | Read; retained |
 | [x] | `corpus/problems/Topology/E-GTNVU.md` | `170b2e54cf9a922d5f3e42352118138902cf6fb9` | `170b2e54cf9a922d5f3e42352118138902cf6fb9` | Read; retained |
 | [x] | `corpus/problems/Topology/E-H7BO5.md` | `0111a7ef7f60a582e1cc097511fc72bdee55b5b3` | `0111a7ef7f60a582e1cc097511fc72bdee55b5b3` | Read; retained |
-| [x] | `corpus/problems/Topology/E-HXOHR.md` | `c5d3fc933b0211812a79fd696e0d27419d5a6948` | `c5d3fc933b0211812a79fd696e0d27419d5a6948` | Read; retained |
 | [x] | `corpus/problems/Topology/E-HYQMG.md` | `503a62c2f7ce1c4dfa7783cc7cdda51b8f725495` | `503a62c2f7ce1c4dfa7783cc7cdda51b8f725495` | Read; retained |
 | [x] | `corpus/problems/Topology/E-IECHS.md` | `cfc65b7aecec8d18296d85d1abf62377d5930318` | `cfc65b7aecec8d18296d85d1abf62377d5930318` | Read; retained |
 | [x] | `corpus/problems/Topology/E-IHJ56.md` | `a4c1e6119585b1f556fbe9e9b5fc00a20e97a83c` | `a4c1e6119585b1f556fbe9e9b5fc00a20e97a83c` | Read; retained |
@@ -1513,7 +1512,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Topology/E-J3IO7.md` | `6fc40516c396635f4f6f17a75e2c9828aca3f0b0` | `6fc40516c396635f4f6f17a75e2c9828aca3f0b0` | Read; retained |
 | [x] | `corpus/problems/Topology/E-JN4QP.md` | `ec489311ace2682a995c0bbcea8813d22bf557be` | `ec489311ace2682a995c0bbcea8813d22bf557be` | Read; retained |
 | [x] | `corpus/problems/Topology/E-JSCGD.md` | `4f3bd252be27258fae5bfa9b9c4726826fbacf96` | `4f3bd252be27258fae5bfa9b9c4726826fbacf96` | Read; retained |
-| [x] | `corpus/problems/Topology/E-KDAVR.md` | `b87ada89532b31c2eb1a54d11cfd9f7ae13edd62` | `b87ada89532b31c2eb1a54d11cfd9f7ae13edd62` | Read; retained |
 | [x] | `corpus/problems/Topology/E-KJQUD.md` | `9cd933e3bd8bb1aba64c66c2a6c288971f7cab7e` | `9cd933e3bd8bb1aba64c66c2a6c288971f7cab7e` | Read; retained |
 | [x] | `corpus/problems/Topology/E-MGS22.md` | `e5eb7b8e3bf53d0cf7f7ec65b3010fa1735edcaf` | `e5eb7b8e3bf53d0cf7f7ec65b3010fa1735edcaf` | Read; retained |
 | [x] | `corpus/problems/Topology/E-MKK6X.md` | `0860976f823b3ad4511e62871fd0afd140d6f460` | `0860976f823b3ad4511e62871fd0afd140d6f460` | Read; retained |
@@ -1521,7 +1519,6 @@ Each checkbox records a full semantic reading of the named file. Original and fi
 | [x] | `corpus/problems/Topology/E-NZ4WI.md` | `be4c8e774407ac5b79016252b9b872d67556d187` | `be4c8e774407ac5b79016252b9b872d67556d187` | Read; retained |
 | [x] | `corpus/problems/Topology/E-OIS5D.md` | `6981497b900c703a291dad783e267a7314d10b14` | `6981497b900c703a291dad783e267a7314d10b14` | Read; retained |
 | [x] | `corpus/problems/Topology/E-OYP3Y.md` | `5cef3f69a383727a0f5e4fa6fc48b96b403c686a` | `5cef3f69a383727a0f5e4fa6fc48b96b403c686a` | Read; retained |
-| [x] | `corpus/problems/Topology/E-P3RLK.md` | `6244bef80cc4561ccb6d13eb469f774c22cec7de` | `6244bef80cc4561ccb6d13eb469f774c22cec7de` | Read; retained |
 | [x] | `corpus/problems/Topology/E-Q7TSH.md` | `236f81f6d1c70ff30edc07f557cd60ae9f9129e6` | `236f81f6d1c70ff30edc07f557cd60ae9f9129e6` | Read; retained |
 | [x] | `corpus/problems/Topology/E-TIFII.md` | `bf9da075c6e15b108476f6a1722029d194286d0c` | `bf9da075c6e15b108476f6a1722029d194286d0c` | Read; retained |
 | [x] | `corpus/problems/Topology/E-TMOKI.md` | `53f2c23968dc00a6f444cc3604e82bf1fd60c2c6` | `53f2c23968dc00a6f444cc3604e82bf1fd60c2c6` | Read; retained |
