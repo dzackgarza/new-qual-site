@@ -25,23 +25,23 @@ Show that if $\alpha, \beta$ are algebraic over $F$, then $\alpha\pm \beta, \alp
 
 ::: {.solution}
 Since $\alpha$ and $\beta$ are algebraic over $F$, the extension
-\[
+$$
 F(\alpha,\beta)/F
-\]
+$$
 is finite. Indeed,
-\[
+$$
 [F(\alpha,\beta):F]
 =[F(\alpha,\beta):F(\alpha)]\,[F(\alpha):F]<\infty.
-\]
+$$
 Every element of a finite extension is algebraic over the base field.
 
 Now $F(\alpha,\beta)$ is a field containing
-\[
+$$
 \alpha+\beta,\quad \alpha-\beta,\quad \alpha\beta,
-\]
+$$
 and, when $\beta\ne0$,
-\[
+$$
 \alpha\beta^{-1}.
-\]
+$$
 Hence all these elements are algebraic over $F$.
 :::
