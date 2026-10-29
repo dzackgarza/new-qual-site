@@ -26,9 +26,9 @@ Give an interesting example of a subgroup of the additive group of the rationals
 
 ::: {.solution}
 The subgroup of dyadic rationals is
-\[
+$$
 \ZZ[1/2]=\left\{\frac{m}{2^n}:m\in\ZZ,\ n\ge0\right\}\subseteq(\QQ,+).
-\]
+$$
 
 ::: pf
 
@@ -70,5 +70,4 @@ For example, $1/3\notin\ZZ[1/2]$, since no power of $2$ is divisible by $3$.
 
 :::
 
-Thus $\ZZ[1/2]$ is a proper, noncyclic subgroup of the additive rationals.
 :::
