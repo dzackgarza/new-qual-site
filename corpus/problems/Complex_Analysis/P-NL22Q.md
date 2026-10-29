@@ -24,77 +24,36 @@ Prove that if $fg = 0$ on $D$, then either $f \equiv 0$ or $g\equiv 0$ on $D$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that if $f, g$ are analytic on a domain $D$ and $fg \equiv 0$ on $D$, then either $f \equiv 0$ or $g \equiv 0$ on $D$.
+Suppose $f\not\equiv0$; we show $g\equiv0$.
 
 ::: pf
 
-::: {.pf-step #s1}
-Assume $f \not\equiv 0$; it suffices to show $g \equiv 0$.
+::: {.pf-step #open-set}
+There is a nonempty open set $U\subseteq D$ on which $f$ has no zero.
 
 ::: pf-proof
-By symmetry between $f$ and $g$.
+Pick $z_1\in D$ with $f(z_1)\neq0$. By continuity, $f$ has no zero on some disk $U$ about $z_1$.
+:::
+
+:::
+
+::: {.pf-step #g-on-u}
+$g\equiv0$ on $U$.
+
+::: pf-proof
+For $z\in U$, $f(z)g(z)=0$ and $f(z)\neq0$.
 :::
 
 :::
 
 ::: pf-step
-The zero set $Z \definedas \theset{z \in D \suchthat f(z) = 0}$ is a closed subset of $D$ with no accumulation point in $D$.
+$g\equiv0$ on $D$.
 
 ::: pf-proof
-
-::: {.pf-step #s2-1}
-$Z$ is closed in $D$.
-
-::: pf-proof
-$f$ is continuous, and $Z$ is the preimage of the closed set $\theset{0}$.
-:::
-
-:::
-
-::: pf-step
-$Z$ has empty interior.
-
-::: pf-proof
-If $Z$ contained a nonempty open set $U$, then $f \equiv 0$ on $U$, and by the identity theorem $f \equiv 0$ on $D$, contradicting step [](#s1){.pf-ref}.
+By step [](#g-on-u){.pf-ref}, $g$ vanishes on the nonempty open set $U$ of step [](#open-set){.pf-ref}. Since $D$ is connected, the identity theorem gives $g\equiv0$ on $D$.
 :::
 
 :::
 
 :::
-
-:::
-
-::: {.pf-step #s3}
-$D \setminus Z$ is nonempty and open in $D$.
-
-::: pf-proof
-$Z \neq D$ (else $f \equiv 0$, contradicting step [](#s1){.pf-ref}) and $Z$ is closed by step [](#s2-1){.pf-ref}.
-:::
-
-:::
-
-::: pf-step
-$g \equiv 0$ on $D \setminus Z$.
-
-::: pf-proof
-For $z \in D \setminus Z$, $f(z) \neq 0$, so $fg(z) = 0$ forces $g(z) = 0$.
-:::
-
-:::
-
-::: {.pf-step #s5}
-$g \equiv 0$ on $D$.
-
-::: pf-proof
-step [](#s3){.pf-ref} gives a nonempty open set (e.g. a disk contained in $D \setminus Z$) on which $g$ vanishes; by the identity theorem, $g$ vanishes on all of $D$.
-:::
-
-:::
-
-::: pf-qed
-steps [](#s1){.pf-ref} through [](#s5){.pf-ref} show that if $f \not\equiv 0$ then $g \equiv 0$; the alternative case is symmetric.
-:::
-
-:::
-
 :::
