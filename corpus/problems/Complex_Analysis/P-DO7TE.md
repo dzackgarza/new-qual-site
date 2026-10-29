@@ -15,21 +15,35 @@ review: draft
 ---
 
 ::: {.problem}
-- Show that $\sin(z)/z$ has no poles.
+Show that $\sin(z)/z$ has no poles.
 :::
 
 ::: {.solution}
-For $z\ne0$, the quotient $\sin z/z$ is holomorphic. At $z=0$, use the Taylor
-series
-\[
-\sin z=z-\frac{z^3}{3!}+\frac{z^5}{5!}-\cdots.
-\]
-Then
-\[
-\frac{\sin z}{z}
-=1-\frac{z^2}{3!}+\frac{z^4}{5!}-\cdots,
-\]
-which converges near $0$ and extends the quotient holomorphically there with
-value $1$. Hence the apparent singularity at $0$ is removable, and
-$\sin z/z$ has no poles anywhere.
+
+::: pf
+
+::: pf-step
+$\sin z/z$ is holomorphic on $\CC\setminus\{0\}$.
+
+::: pf-proof
+It is a quotient of entire functions whose denominator vanishes only at $0$.
+:::
+
+:::
+
+::: pf-step
+The singularity at $0$ is removable, so $\sin z/z$ has no poles.
+
+::: pf-proof
+From $\sin z=\sum_{n\ge0}(-1)^nz^{2n+1}/(2n+1)!$, for $z\ne0$,
+$$
+\frac{\sin z}{z}=\sum_{n=0}^\infty\frac{(-1)^nz^{2n}}{(2n+1)!}=1-\frac{z^2}{3!}+\frac{z^4}{5!}-\cdots,
+$$
+and the right side is an entire function with value $1$ at $0$.
+:::
+
+:::
+
+:::
+
 :::
