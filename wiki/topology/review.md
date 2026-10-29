@@ -39,8 +39,6 @@ order: 7
 
 [[PR-OO3DH]]
 
-[[PR-EWJMJ]]
-
 [[topology/fundamental-group/theorems|Theorems: algebraic topology]] gathers the homotopy and fundamental-group theorems with worked examples, such as an amalgamated product.
 
 ## Homology

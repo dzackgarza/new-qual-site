@@ -69,8 +69,6 @@ For path-connected $X$, the Hurewicz map induces an isomorphism $\pi_1(X)^{\math
 
 [[PR-OO3DH]]
 
-[[PR-EWJMJ]]
-
 ::: {.fact}
 For a finite connected graph $G$ and a maximal tree $T\subseteq G$,
 $$

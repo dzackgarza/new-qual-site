@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.definition}
-A topological space $X$ is \dfn{simply connected} if $X$ is [[D-X73EB|path connected]] and the [[D-EBNUE|fundamental group]] $\pi_1(X, x_0)$ is trivial for every $x_0\in X$ [@Hat02].
+A topological space $X$ is \dfn{simply connected} if $X$ is [[D-X73EB|path connected]] and the [[D-EBNUE|fundamental group]] $\pi_1(X, x_0)$ is trivial for some, equivalently every, $x_0\in X$ [@Hat02]; by change of basepoint the groups $\pi_1(X,x_0)$ of a path connected space are all isomorphic.
 :::
 
 ::: {.proposition}
