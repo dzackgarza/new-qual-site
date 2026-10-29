@@ -19,9 +19,5 @@ A \dfn{chain homotopy} from $f$ to $g$ is a family of $R$-linear maps $h_i\colon
 $$
 f_i - g_i = \del^D_{i+1}\circ h_i + h_{i-1}\circ \del^C_i \quad\text{for all } i\in\ZZ
 .$$
-The chain maps $f$ and $g$ are \dfn{chain homotopic} if a chain homotopy from $f$ to $g$ exists.
-:::
-
-::: {.concept}
-[@Hat02].
+The chain maps $f$ and $g$ are \dfn{chain homotopic} if a chain homotopy from $f$ to $g$ exists [@Hat02].
 :::
