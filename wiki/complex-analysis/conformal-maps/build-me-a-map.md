@@ -139,7 +139,7 @@ Strips:
 
 Lunes:
 
-[[E-UUBBS]] [[E-VS4XE]] [[P-AZOFF-C04]] [[P-OONH6]] [[P-6N3HI]]
+[[E-UUBBS]] [[P-AZOFF-C04]] [[P-OONH6]] [[P-6N3HI]]
 
 Sectors:
 
