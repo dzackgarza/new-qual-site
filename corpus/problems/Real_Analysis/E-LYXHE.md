@@ -18,15 +18,15 @@ audit:
 ---
 
 ::: {.exercise}
-- If $f, g$ are compactly supported, is it necessarily the case that $f\ast g$ is compactly supported?
+(a) If $f, g$ are compactly supported, is it necessarily the case that $f\ast g$ is compactly supported?
 
-- Show that under any of the following assumptions, $f\ast g$ vanishes at infinity:
+(b) Show that under any of the following assumptions, $f\ast g$ vanishes at infinity:
 
-  - $f, g\in L^1$ are both bounded.
+- $f, g\in L^1$ are both bounded.
 
-  - $f, g\in L^1$ with just $g$ bounded.
+- $f, g\in L^1$ with just $g$ bounded.
 
-  - $f, g$ smooth and compactly supported (and in fact $f\ast g$ is smooth)
+- $f, g$ smooth and compactly supported (and in fact $f\ast g$ is smooth)
 :::
 
 ::: {.solution}
@@ -35,7 +35,7 @@ audit:
 
 ::: {.pf-step #s1}
 
-If $f$ and $g$ are compactly supported, then $f \ast g$ is compactly supported.
+(a) If $f$ and $g$ are compactly supported, then $f \ast g$ is compactly supported.
 
 ::: pf-proof
 
@@ -75,7 +75,7 @@ A closed subset of a compact set is compact; apply steps [](#s1-1){.pf-ref} and 
 
 ::: {.pf-step #s2}
 
-If $f, g \in L^1$ are both bounded, then $f \ast g$ vanishes at infinity.
+(b) If $f, g \in L^1$ are both bounded, then $f \ast g$ vanishes at infinity.
 
 ::: pf-proof
 
@@ -113,9 +113,9 @@ $f\ast g(x)$ is the sum of the two integrals in steps [](#s2-1){.pf-ref} and [](
 
 :::
 
-::: {.pf-step #s3}
+::: pf-step
 
-If $f, g \in L^1$ with only $g$ bounded, then $f \ast g$ vanishes at infinity.
+(b) If $f, g \in L^1$ with only $g$ bounded, then $f \ast g$ vanishes at infinity.
 
 ::: pf-proof
 
@@ -165,13 +165,13 @@ Given $\eps > 0$, choose $M$ with $\|r_M \ast g\|_\infty < \eps/2$ by steps [](#
 
 :::
 
-::: {.pf-step #s4}
+::: pf-step
 
-If $f, g$ are smooth and compactly supported, then $f \ast g$ is smooth and vanishes at infinity.
+(b) If $f, g$ are smooth and compactly supported, then $f \ast g$ is smooth and vanishes at infinity.
 
 ::: pf-proof
 
-::: {.pf-step #s4-1}
+::: pf-step
 
 $f \ast g$ is $C^\infty$, with $D^\alpha(f \ast g) = (D^\alpha f) \ast g$ for every multi-index $\alpha$.
 
@@ -183,7 +183,7 @@ Each $D^\alpha f$ is continuous and compactly supported, hence bounded, and $g$ 
 
 :::
 
-::: {.pf-step #s4-2}
+::: pf-step
 
 $f \ast g$ vanishes at infinity.
 
@@ -195,19 +195,7 @@ By step [](#s1){.pf-ref}, $f \ast g$ is zero outside a compact set.
 
 :::
 
-::: pf-qed
-
-Steps [](#s4-1){.pf-ref} and [](#s4-2){.pf-ref}.
-
 :::
-
-:::
-
-:::
-
-::: pf-qed
-
-Step [](#s1){.pf-ref} answers the first question affirmatively; steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove vanishing at infinity under the three listed assumptions.
 
 :::
 
