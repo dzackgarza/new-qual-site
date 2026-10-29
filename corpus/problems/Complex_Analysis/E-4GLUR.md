@@ -21,11 +21,28 @@ Show that $\sin(z)/z$ has no poles.
 :::
 
 ::: {.solution}
-The function $\sin(z)/z$ is holomorphic on $\CC\setminus\theset{0}$, and $\sin(z)$ has a simple zero at $0$.
-The Laurent expansion about zero is
-\[
-\inverseof{z} \sin(z) = \inverseof{z}\qty{ z - {z^3 \over 3!} + {z^5\over 5!} - \cdots} = 1 - {z^2\over 3!} + {z^4 \over 5!} - \cdots
-,\]
-which has no terms $z^{-k}$ with $k\geq 1$.
-So $z=0$ is a removable singularity, and $\sin(z)/z$ has no poles.
+
+::: pf
+
+::: {.pf-step #laurent}
+The Laurent expansion of $\sin(z)/z$ about $0$ is $1 - \frac{z^2}{3!} + \frac{z^4}{5!} - \cdots$.
+
+::: pf-proof
+Divide the Taylor series $\sin z = z - \frac{z^3}{3!} + \frac{z^5}{5!} - \cdots$, valid on $\CC$, by $z$.
+:::
+
+:::
+
+::: pf-step
+$\sin(z)/z$ has no poles.
+
+::: pf-proof
+The function is holomorphic on $\CC\setminus\theset{0}$, so $0$ is its only possible pole.
+By step [](#laurent){.pf-ref} its Laurent expansion at $0$ has no terms $z^{-k}$ with $k\ge1$, so $0$ is a removable singularity.
+:::
+
+:::
+
+:::
+
 :::
