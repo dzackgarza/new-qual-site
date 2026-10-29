@@ -25,48 +25,35 @@ Compute the fundamental group $\pi_1(S^1 \vee S^1, x_0)$ of the wedge sum of two
 :::
 
 ::: {.solution}
-Let $X=S^1_a\vee S^1_b$ with wedge point $x_0$.
+
+Let $X=S^1_a\vee S^1_b$ with wedge point $x_0$. Choose $p_a\in S^1_a\setminus\{x_0\}$ and $p_b\in S^1_b\setminus\{x_0\}$, and put $U=X\setminus\{p_b\}$ and $V=X\setminus\{p_a\}$.
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #pieces}
 
-Choose points $p_a\in S^1_a\setminus\{x_0\}$ and $p_b\in S^1_b\setminus\{x_0\}$, and put
-$$
-U=X\setminus\{p_b\},
-\qquad
-V=X\setminus\{p_a\}.
-$$
-Then $U\simeq S^1_a$, $V\simeq S^1_b$, and $U\cap V$ is contractible.
+$U$ and $V$ are open path-connected sets containing $x_0$ with $\pi_1(U,x_0)\cong\ZZ$, $\pi_1(V,x_0)\cong\ZZ$, and $\pi_1(U\cap V,x_0)=1$.
+
+::: pf-proof
+
+$S^1_b\setminus\{p_b\}$ is an open arc through $x_0$, which deformation retracts to $x_0$; so $U$ deformation retracts onto $S^1_a$, and likewise $V$ onto $S^1_b$. The set $U\cap V$ is the union of two open arcs meeting at $x_0$, which deformation retracts to $x_0$.
 
 :::
-
-::: pf-step
-
-Therefore
-$$
-\pi_1(U,x_0)\cong\mathbb Z,
-\qquad
-\pi_1(V,x_0)\cong\mathbb Z,
-\qquad
-\pi_1(U\cap V,x_0)=1.
-$$
 
 :::
 
 ::: pf-step
 
-Seifert--van Kampen gives
+$\pi_1(S^1\vee S^1,x_0)\cong\boxed{\ZZ*\ZZ\cong F_2}$, free on the loops around the two circles.
+
+::: pf-proof
+
+$X=U\cup V$, so the Seifert--van Kampen theorem and step [](#pieces){.pf-ref} give $\pi_1(X,x_0)\cong\pi_1(U,x_0)*\pi_1(V,x_0)$, with generators the loops around $S^1_a$ and $S^1_b$.
 
 :::
 
 :::
 
-$$
-\pi_1(S^1\vee S^1,x_0)
-\cong
-\mathbb Z*\mathbb Z
-\cong F_2.
-$$
-Thus the figure eight has free fundamental group on the two circle loops.
+:::
+
 :::
