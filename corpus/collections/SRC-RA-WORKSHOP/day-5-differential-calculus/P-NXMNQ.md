@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NXMNQ
 kind: problem
-title: $f:\RR	o\RR$ with $f(0)=0$ is differentiable at $0$ if and only
+title: $f:\RR\to\RR$ with $f(0)=0$ is differentiable at $0$ if and only
   if $f(x)=xg(x)$ for a function $g$ continuous at $0$
 classification:
   areas:
