@@ -36,6 +36,7 @@ Using the parametrization $z=Re^{it}$ for $0\le t\le2\pi$ and the pathwise deter
 :::
 
 ::: {.solution}
+
 ::: pf
 
 ::: pf-step
