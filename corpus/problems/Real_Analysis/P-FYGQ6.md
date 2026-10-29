@@ -15,14 +15,19 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source does not introduce R_1 and R_2; the statement declares them as the radii of convergence of sum a_n x^n and sum b_n x^n, as the solution reads them, and fixes 0 times infinity as 0 so that R_1 R_2 is defined when one radius is 0 and the other infinite.
 ---
 
 ::: {.problem}
+Let $R_1$ and $R_2$ be the radii of convergence of $\sum_{n=0}^\infty a_n x^n$ and $\sum_{n=0}^\infty b_n x^n$, with $0 \cdot \infty = 0$.
 Prove that the radius of convergence, $R$, of $\sum_{n=0}^\infty a_nb_nx^n$ satisfies $R \geq R_1R_2$.
 Show by means of example that this inequality can be strict.
 :::
+
 ::: {.solution}
-Here $R_1$ and $R_2$ are the radii of convergence of $\sum a_n x^n$ and $\sum b_n x^n$.
 
 ::: pf
 
@@ -66,18 +71,6 @@ By step [](#s1-2){.pf-ref}, $|a_n b_n x^n| = (|a_n|u^n)(|b_n|v^n)\left|\frac{x}{
 
 :::
 
-::: {.pf-step #s2}
-
-$R \ge R_1 R_2$.
-
-::: pf-proof
-
-Step [](#s1){.pf-ref}.
-
-:::
-
-:::
-
 ::: {.pf-step #s3}
 
 For $a_n = 1$ ($n$ even), $a_n = 0$ ($n$ odd), $b_n = 0$ ($n$ even), $b_n = 1$ ($n$ odd), $R_1 = R_2 = 1$ and $R = \infty$.
@@ -92,7 +85,7 @@ $\limsup |a_n|^{1/n} = 1$ along the even indices and $\limsup|b_n|^{1/n} = 1$ al
 
 ::: pf-qed
 
-Step [](#s2){.pf-ref} is the inequality and step [](#s3){.pf-ref} shows that it can be strict.
+By step [](#s1){.pf-ref}, the series converges at every $x$ with $|x| < R_1R_2$, so $R \ge R_1R_2$; step [](#s3){.pf-ref} gives coefficients with $R > R_1R_2$.
 
 :::
 
