@@ -14,7 +14,9 @@ review: draft
 ---
 
 ::: {.problem}
-Classify the letters of the alphabet up to homeomorphism, and up to homotopy.
+Classify the capital letters of the alphabet up to homeomorphism, and up to homotopy.
+
+Regard each letter as a finite graph in the plane, drawn in a standard sans-serif font: the leg of R is a segment that leaves the bowl at a point other than where the bowl meets the stem, the two arms of K meet each other at a point off the stem, the tail of Q is a segment attached to the circle at one point, and J has no top bar.
 :::
 
 ::: {.hint}
