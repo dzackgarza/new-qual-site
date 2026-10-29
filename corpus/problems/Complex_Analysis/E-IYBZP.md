@@ -16,30 +16,45 @@ review: draft
 
 ::: {.exercise}
 If $f$ is holomorphic on a region $\Omega$ and for each $z_0\in\Omega$ at least one coefficient in the power series $f(z)=\sum_{n=0}^\infty c_n(z-z_0)^n$ is zero, show that $f$ is a polynomial.
-
-![image_2021-05-17-11-53-33](../../assets/Complex_Analysis/Review%20Doc/sections/figures/image_2021-05-17-11-53-33.png)
 :::
 
 ::: {.solution}
-For each $n\ge0$, let
-\[
-Z_n=\{z\in\Omega:f^{(n)}(z)=0\}.
-\]
-Each $Z_n$ is closed in $\Omega$. The hypothesis says that for every
-$z_0\in\Omega$ at least one Taylor coefficient at $z_0$ vanishes, i.e.
-$f^{(n)}(z_0)=0$ for some $n$. Hence
-\[
-\Omega=\bigcup_{n=0}^\infty Z_n.
-\]
+For $n\ge0$, let $Z_n\coloneqq\theset{z\in\Omega \st f^{(n)}(z)=0}$, which is closed in $\Omega$.
+Since $c_n=f^{(n)}(z_0)/n!$, the hypothesis says $\Omega=\bigcup_{n\ge0}Z_n$.
 
-Choose a closed disk $\overline D\Subset\Omega$. Since $\overline D$ is a
-complete metric space, Baire's theorem implies that one of the closed sets
-$Z_n\cap\overline D$ has nonempty interior in $\overline D$. Thus
-$f^{(n)}$ vanishes on a nonempty open subset of $\Omega$. By the identity
-theorem,
-\[
-f^{(n)}\equiv0\quad\text{on }\Omega.
-\]
-Therefore $f$ is a polynomial of degree at most $n-1$ (with the case $n=0$
-giving $f\equiv0$).
+::: pf
+
+::: {.pf-step #baire}
+Some $f^{(N)}$ vanishes on a nonempty open subset of $\Omega$.
+
+::: pf-proof
+Choose a closed disk $\overline D\subseteq\Omega$ with interior $D$.
+Since $\overline D$ is a complete metric space and $\overline D=\bigcup_n\qty{Z_n\intersect\overline D}$, Baire's theorem gives some $Z_N\intersect\overline D$ with nonempty interior in $\overline D$.
+A nonempty relatively open subset of $\overline D$ meets the dense subset $D$ in a nonempty open subset of $\Omega$, on which $f^{(N)}=0$.
+:::
+
+:::
+
+::: {.pf-step #vanish}
+$f^{(N)}\equiv0$ on $\Omega$.
+
+::: pf-proof
+This follows from step [](#baire){.pf-ref} by the identity theorem, since $\Omega$ is connected.
+:::
+
+:::
+
+::: pf-step
+$f$ is a polynomial of degree at most $N-1$, and $f\equiv0$ if $N=0$.
+
+::: pf-proof
+If $N=0$, step [](#vanish){.pf-ref} says $f\equiv0$.
+If $N\ge1$, fix $z_0\in\Omega$; the polynomial $P(z)\coloneqq\sum_{n<N}f^{(n)}(z_0)(z-z_0)^n/n!$ has the same derivatives of order less than $N$ at $z_0$ as $f$, and all its derivatives of order at least $N$ vanish, as do those of $f$ by step [](#vanish){.pf-ref}.
+So every derivative of $f-P$ vanishes at $z_0$, and the identity theorem gives $f=P$ on $\Omega$.
+:::
+
+:::
+
+:::
+
 :::
