@@ -19,69 +19,34 @@ audit:
 ---
 
 ::: {.problem}
-- Compute the homology of the Klein bottle using the Mayer-Vietoris sequence and a decomposition $K = M \disjoint_f M$
+Compute the homology of the Klein bottle using the Mayer-Vietoris sequence and a decomposition $K = M \disjoint_f M$
 :::
 
 ::: {.solution}
 
+The Klein bottle $K$ is the union of two Möbius bands $M_1$ and $M_2$ glued along their boundary circles. Let $U,V\subset K$ be open collars of $M_1$ and $M_2$, so that $U\cap V$ is an open annulus around the common boundary circle $\gamma$. Let $a$ and $b$ be the core circles of $M_1$ and $M_2$.
+
 ::: pf
 
-::: pf-step
+::: {.pf-step #pieces}
 
-Decomposition of the Klein bottle into two Möbius bands:
-
-::: pf-proof
-
-::: pf-step
-
-The Klein bottle $K$ is homeomorphic to the union of two Möbius bands $M_1$ and $M_2$ glued along their boundary circles:
-\[
-K = M_1 \cup_\partial M_2.
-\]
-Slightly thicken $M_1$ and $M_2$ to open sets $U, V \subset K$.
+$H_1(U)\cong\ZZ\langle a\rangle$, $H_1(V)\cong\ZZ\langle b\rangle$, $H_1(U\cap V)\cong\ZZ\langle\gamma\rangle$, all three are path-connected, and their homology vanishes in degrees $\ge2$.
 
 ::: pf-proof
 
-standard decomposition of the Klein bottle.
+$U$ and $V$ deformation retract onto the Möbius bands and then onto their core circles, and the annulus $U\cap V$ deformation retracts onto $\gamma$.
 
 :::
 
 :::
 
-::: pf-step
+::: {.pf-step #phi1}
 
-The homotopy types of the pieces are:
-- $U \simeq S^1$ (core circle $a$ of $M_1$), so $H_0(U) \cong \mathbb{Z}$, $H_1(U) \cong \mathbb{Z} \langle a \rangle$, and $H_k(U) = 0$ for $k \ge 2$.
-- $V \simeq S^1$ (core circle $b$ of $M_2$), so $H_0(V) \cong \mathbb{Z}$, $H_1(V) \cong \mathbb{Z} \langle b \rangle$, and $H_k(V) = 0$ for $k \ge 2$.
-- $U \cap V \simeq S^1$ (the common boundary circle $\gamma$), so $H_0(U \cap V) \cong \mathbb{Z}$, $H_1(U \cap V) \cong \mathbb{Z} \langle \gamma \rangle$, and $H_k(U \cap V) = 0$ for $k \ge 2$.
+The Mayer-Vietoris map $\Phi_1=((i_1)_*,-(i_2)_*):H_1(U\cap V)\to H_1(U)\oplus H_1(V)$ is $\ZZ\to\ZZ^2$, $1\mapsto(2,-2)$.
 
 ::: pf-proof
 
-deformation retract of Möbius band onto its core circle and collar neighborhood onto boundary.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-Inclusion homomorphisms on homology:
-
-::: pf-proof
-
-::: pf-step
-
-The boundary circle of a Möbius band traverses its core circle twice:
-The inclusion $i_1: U \cap V \to U$ induces $(i_1)_*: H_1(U \cap V) \to H_1(U)$ with $(i_1)_*([\gamma]) = 2[a]$.
-Similarly, the inclusion $i_2: U \cap V \to V$ induces $(i_2)_*: H_1(U \cap V) \to H_1(V)$ with $(i_2)_*([\gamma]) = 2[b]$.
-
-::: pf-proof
-
-degree 2 wrapping of the boundary circle around the core of a Möbius band.
+The boundary circle of a Möbius band wraps twice around its core circle, so $(i_1)_*[\gamma]=2[a]$ and $(i_2)_*[\gamma]=2[b]$.
 
 :::
 
@@ -89,39 +54,11 @@ degree 2 wrapping of the boundary circle around the core of a Möbius band.
 
 ::: pf-step
 
-In the Mayer–Vietoris sequence, the map $\Phi_1 = ((i_1)_*, -(i_2)_*): H_1(U \cap V) \to H_1(U) \oplus H_1(V)$ is given by:
-\[
-\Phi_1: \mathbb{Z} \to \mathbb{Z} \oplus \mathbb{Z}, \qquad 1 \mapsto (2, -2).
-\]
+$H_2(K)=0$ and $H_k(K)=0$ for $k\ge3$.
 
 ::: pf-proof
 
-Mayer–Vietoris homomorphism definition.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: {.pf-step #s3}
-
-Computation of homology groups via Mayer–Vietoris:
-
-::: pf-proof
-
-::: pf-step
-
-The Mayer–Vietoris sequence is:
-\[
-0 \to H_2(K) \xrightarrow{\partial_*} H_1(U \cap V) \xrightarrow{\Phi_1} H_1(U) \oplus H_1(V) \xrightarrow{\Psi_1} H_1(K) \xrightarrow{\partial_*} H_0(U \cap V) \xrightarrow{\Phi_0} H_0(U) \oplus H_0(V) \to H_0(K) \to 0.
-\]
-
-::: pf-proof
-
-Mayer–Vietoris long exact sequence.
+By step [](#pieces){.pf-ref}, the Mayer-Vietoris sequence gives $H_k(K)=0$ for $k\ge3$ and $0\to H_2(K)\to H_1(U\cap V)\xrightarrow{\Phi_1}H_1(U)\oplus H_1(V)$. By step [](#phi1){.pf-ref}, $\Phi_1$ is injective, so $H_2(K)\cong\ker\Phi_1=0$.
 
 :::
 
@@ -129,16 +66,11 @@ Mayer–Vietoris long exact sequence.
 
 ::: pf-step
 
-**Second homology $H_2(K)$:**
-Since $\Phi_1(n) = (2n, -2n) = (0, 0) \iff n = 0$, $\Phi_1$ is injective ($\ker \Phi_1 = 0$).
-By exactness at $H_1(U \cap V)$:
-\[
-H_2(K) \cong \ker(\Phi_1) = 0.
-\]
+$H_1(K)\cong\ZZ\oplus\ZZ/2\ZZ$.
 
 ::: pf-proof
 
-injectivity of $\Phi_1$.
+The sequence continues $H_1(U)\oplus H_1(V)\to H_1(K)\to H_0(U\cap V)\xrightarrow{\Phi_0}H_0(U)\oplus H_0(V)$, where $\Phi_0:\ZZ\to\ZZ^2$, $1\mapsto(1,-1)$, is injective. So $H_1(K)\cong\coker\Phi_1=\ZZ^2/\langle(2,-2)\rangle$. In the basis $u=(1,0)$, $v=(1,-1)$ of $\ZZ^2$, the subgroup is $\langle 2v\rangle$, so the quotient is $\ZZ u\oplus\ZZ v/2\ZZ v\cong\ZZ\oplus\ZZ/2\ZZ$.
 
 :::
 
@@ -146,56 +78,11 @@ injectivity of $\Phi_1$.
 
 ::: pf-step
 
-**Zeroth homology $H_0(K)$:**
-$K$ is connected, so $H_0(K) \cong \mathbb{Z}$.
+$H_0(K)\cong\ZZ$.
 
 ::: pf-proof
 
-path-connectedness of $K$.
-
-:::
-
-:::
-
-::: pf-step
-
-**First homology $H_1(K)$:**
-The map $\Phi_0: \mathbb{Z} \to \mathbb{Z} \oplus \mathbb{Z}$ given by $1 \mapsto (1, -1)$ is injective, so $\ker(\Phi_0) = 0$.
-Thus the boundary map $\partial_*: H_1(K) \to H_0(U \cap V)$ is the zero map.
-By exactness:
-\[
-H_1(K) \cong \operatorname{coker}(\Phi_1) = \frac{\mathbb{Z} \oplus \mathbb{Z}}{\operatorname{span}\{(2, -2)\}}.
-\]
-Using the basis change $u = (1, 0)$ and $v = (1, -1)$ for $\mathbb{Z} \oplus \mathbb{Z}$, the submodule is generated by $2v$.
-Therefore:
-\[
-H_1(K) \cong \frac{\mathbb{Z} u \oplus \mathbb{Z} v}{2\mathbb{Z} v} \cong \mathbb{Z} \oplus \mathbb{Z}/2\mathbb{Z}.
-\]
-
-::: pf-proof
-
-Smith normal form / quotient of free abelian groups.
-
-:::
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-
-Conclusion:
-The homology groups of the Klein bottle are:
-\[
-H_0(K) \cong \mathbb{Z}, \qquad H_1(K) \cong \mathbb{Z} \oplus \mathbb{Z}/2\mathbb{Z}, \qquad H_2(K) \cong 0, \qquad H_k(K) \cong 0 \quad (k \ge 3).
-\]
-Q.E.D.
-
-::: pf-proof
-
-Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+$K$ is path-connected.
 
 :::
 
