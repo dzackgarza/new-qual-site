@@ -36,6 +36,10 @@ audit:
     analytic self-map of the disk fixing zero. Schwarz's lemma gives
     |phi(z)|<=|z|, which immediately sends every radius-r disk into itself
     and yields the desired image inclusion after applying f.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source omits g(D) ⊆ f(D), and Omega = D, f(z) = z/2, g(z) = z is a counterexample; the statement includes g(D) ⊆ f(D). The rendered erratum remark is removed.'
 ---
 
 ::: {.problem}
@@ -165,29 +169,6 @@ $$
 
 :::
 
-::: pf-qed
-
-Step [](#s5){.pf-ref} is the required inclusion.
-
 :::
 
-:::
-
-:::
-
-::: {.remark}
-Erratum: the source omits the hypothesis $g(D)\subseteq f(D)$.
-Without it the conclusion is false. For example, with
-$$
-\Omega=D,\qquad f(z)=\frac z2,\qquad g(z)=z,
-$$
-all printed hypotheses hold, but
-$$
-g(D_r)=D_r
-$$
-is not contained in
-$$
-f(D_r)=D_{r/2}.
-$$
-The corrected statement adds the subordination hypothesis $g(D)\subseteq f(D)$.
 :::
