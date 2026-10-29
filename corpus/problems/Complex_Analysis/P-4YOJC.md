@@ -18,17 +18,46 @@ review: draft
 ::: {.problem}
 Suppose $f$ is analytic, defined on all of $\CC$, and for each $z_0 \in \CC$ there is at least one coefficient in the expansion $f(z) = \sum_{n=0}^\infty c_n(z-z_0)^n$ is zero.
 Prove that $f$ is a polynomial.
+:::
 
-> Hint: use the fact that $c_n n! = f^{(n)}(z_0)$ and use a countability argument.
+::: {.hint}
+Use the fact that $c_n n! = f^{(n)}(z_0)$ and use a countability argument.
 :::
 
 ::: {.solution}
-The claim is that there is some $N$ such that $\dd{^N f}{z^N} \equiv 0$, making $f$ a polynomial.
-If no derivative is identically zero, the following set is countable:
-\[
-\Union_{n\in \NN} \inverseof{\dd{^n f}{z^n}}(0)
-.\]
-This is because each derivative is analytic and the zeros of an analytic function are countable.
-But by hypothesis this set is uncountable.
+
+For $n\geq0$, let $Z_n\coloneqq\theset{z\in\CC\st f^{(n)}(z)=0}$.
+
+::: pf
+
+::: {.pf-step #cover}
+$\CC=\Union_{n\geq0}Z_n$.
+
+::: pf-proof
+For each $z_0$, some coefficient $c_n=f^{(n)}(z_0)/n!$ of the expansion at $z_0$ vanishes, so $z_0\in Z_n$.
+:::
+
+:::
+
+::: {.pf-step #some-derivative}
+Some $f^{(N)}$ vanishes identically.
+
+::: pf-proof
+If no $f^{(n)}$ vanishes identically, then each $Z_n$ is a discrete closed subset of $\CC$ by the identity theorem, so it meets each compact disc $\abs{z}\leq k$ in finitely many points and is countable.
+Then $\Union_nZ_n$ is countable, contradicting step [](#cover){.pf-ref}, since $\CC$ is uncountable.
+:::
+
+:::
+
+::: pf-step
+$f$ is a polynomial.
+
+::: pf-proof
+By step [](#some-derivative){.pf-ref}, $f^{(n)}(0)=0$ for all $n\geq N$, so the Taylor series of $f$ at $0$, which equals $f$ on $\CC$, is a polynomial of degree less than $N$.
+:::
+
+:::
+
+:::
 
 :::
