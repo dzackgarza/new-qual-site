@@ -22,8 +22,6 @@ Compute $H_*(\Sigma\RP^2 \cross \RP^2; \ZZ)$
 :::
 
 ::: {.solution}
-**Goal:** Compute the integral homology groups $H_k(\Sigma \RP^2 \times \RP^2; \ZZ)$ for all $k \ge 0$.
-
 ::: pf
 
 ::: pf-step
