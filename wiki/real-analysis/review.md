@@ -77,8 +77,6 @@ Chapter: [[real-analysis/fourier/index|Fourier]].
 
 [[T-5IWCG]]
 
-[[T-QBTWN]]
-
 [[T-W5SDY]]
 
 Chapter: [[real-analysis/functional-analysis/index|Functional analysis]].

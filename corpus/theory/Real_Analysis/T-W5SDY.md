@@ -19,3 +19,7 @@ review: draft
 Let $X$ be a normed vector space over a field $F\in\theset{\RR,\CC}$, and let $\dualof{X}$ be the vector space of continuous linear functionals $X\to F$ with the [[D-T4LOC|operator norm]] $\norm{L}_{\text{op}}\coloneqq\sup_{x\in X,\ \norm{x}\leq1}\abs{L(x)}$.
 Then $(\dualof{X},\norm{\cdot}_{\text{op}})$ is a [[D-BG455|Banach space]].
 :::
+
+::: {.remark title="Variations"}
+For a [[D-7QQUO|Hilbert space]] $H\neq\theset{0}$ the supremum may be taken over the unit sphere, $\norm{L}_{\text{op}}=\sup_{\norm{x}=1}\abs{L(x)}$, since $\abs{L(x)}=\norm{x}\,\abs{L(x/\norm{x})}$ for $x\neq 0$. That $\norm{\cdot}_{\text{op}}$ is a norm on $\dualof{H}$ is part of the statement above.
+:::

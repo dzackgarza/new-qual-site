@@ -18,8 +18,6 @@ The dual space $X^*$ of bounded linear functionals, with the operator norm, is a
 
 [[T-5IWCG]]
 
-[[T-QBTWN]]
-
 [[T-W5SDY]]
 
 ## Compact operators
