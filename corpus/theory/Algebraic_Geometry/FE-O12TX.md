@@ -25,7 +25,7 @@ It is the scheme-theoretic intersection of the parabola $y = x^2$ with the line 
 
 The function $\varepsilon$ is nonzero, but its value at the unique point, its image in the residue field $k[\varepsilon]/(\varepsilon) = k$, is $0$; so $\varepsilon$ and $0$ are different functions with the same values at every point.
 
-Its $k$-points valued in a $k$-algebra compute tangent vectors: a morphism $\Spec k[\varepsilon]/(\varepsilon^2) \to X$ is a point of $X$ together with an element of $T_p X$.
+Morphisms out of it compute tangent vectors: for a $k$-scheme $X$, a $k$-morphism $\Spec k[\varepsilon]/(\varepsilon^2) \to X$ is a $k$-point $p$ of $X$ together with an element of $T_p X$.
 :::
 
 ::: {.example title="Two points that are not the same size"}
