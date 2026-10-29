@@ -17,24 +17,46 @@ review: draft
 
 ::: {.exercise}
 Show that $\Aut(\CC) = \theset{ z \mapsto az+b\st a\in \units{\CC}, b\in \CC }$.
-
 :::
 
 ::: {.solution}
-$\supseteq$: Clear, every affine function is bijective with inverse $g(z) \definedas \inverseof{a}(z-b)$, and holomorphic since
-\[
-g(f(z)) = z \implies g'(f(z)) f'(z) = 1 \implies g'(w) = {1\over f'(\inverseof{f}(w))}
-.\]
 
-$\subseteq$: Suppose $f$ is entire and bijective.
-If $f$ is bounded, then $f(z) = b$ is constant by Liouville and we're done, so suppose not.
-Then $\abs{f(z)}\to \infty$ as $\abs{z}\to \infty$, making $z=\infty$ either an essential singularity or a pole, since it is isolated and not removable since $f$ is unbounded in every small enough neighborhood of $\infty$.
-If $f(b) = 0$ without loss of generality we can translate to assume $f(0) = 0$ by replacing $f(z)$ with $f(z) - b$.
-By bijectivity, $z=0$ must be a zero of order 1, so ${1\over f(z)}$ has a pole of order 1 at $z=0$.
-So define $G(z) \definedas {z\over f(z)}$, which is now an entire function.
+::: pf
 
-On a large enough disc, $\abs{f(z)} > 1$ for all $\abs{z} > R$, so $\abs{G(z)} < 1\inverseof{R}$ on $\abs{z} > R$.
-Since $G$ is holomorphic and thus continuous on $\abs{z}\leq R$, which is compact, $G$ is bounded here too.
-Thus $G$ is constant by Liouville, and $G(z) = c \implies f(z) = \inverseof{c} z \definedas az$.
-Unwinding the initial translation that ensured $f(0)=0$, we get $f(z) = az + b$.
+::: pf-step
+Every map $z\mapsto az+b$ with $a\in\units{\CC}$ and $b\in\CC$ lies in $\Aut(\CC)$.
+
+::: pf-proof
+It is entire, and $w\mapsto a^{-1}(w-b)$ is an entire two-sided inverse.
+:::
+
+:::
+
+::: {.pf-step #pole}
+If $f\in\Aut(\CC)$, then $f$ has a pole at $\infty$, so $f$ is a polynomial.
+
+::: pf-proof
+$f$ is entire, so $g(w)\coloneqq f(1/w)$ has an isolated singularity at $w=0$.
+It is not removable: otherwise $f$ is bounded, hence constant by Liouville's theorem, and not injective.
+Suppose it is essential.
+By the Casorati--Weierstrass theorem, $f(\{\abs{z}>1\})$ is dense in $\CC$.
+By the open mapping theorem, $f(\DD)$ is a nonempty open set, so it meets $f(\{\abs{z}>1\})$, which contradicts the injectivity of $f$.
+So $\infty$ is a pole, and an entire function with a pole at $\infty$ is a polynomial.
+:::
+
+:::
+
+::: pf-step
+If $f\in\Aut(\CC)$, then $f(z) = az+b$ with $a\neq0$.
+
+::: pf-proof
+By step [](#pole){.pf-ref}, $f$ is a polynomial, of degree $n\ge1$ since $f$ is not constant.
+If $n\ge2$, then $f'$ has a zero $z_0$, and $f$ is $k$-to-one near $z_0$ for some $k\ge2$, which contradicts injectivity.
+So $n=1$.
+:::
+
+:::
+
+:::
+
 :::
