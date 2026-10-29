@@ -15,5 +15,5 @@ review: draft
 
 ::: {.theorem}
 Let $X$ be a [[D-K43GA|contractible]] space and $Y$ any space.
-Then every continuous map $f\colon Y \to X$ is [[D-MGRZP|nullhomotopic]].
+Then every continuous map $f\colon Y \to X$ is [[D-MGRZP|nullhomotopic]] [@Mun00, sec. 51, exercise 3].
 :::
