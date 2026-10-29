@@ -3,6 +3,8 @@ schema: qual/card@1
 id: T-5K3IO
 kind: theorem
 title: Monotone convergence theorem
+prompts:
+- State the monotone convergence theorem.
 slogan: 'For an almost everywhere increasing sequence in $L^+$, the integral of the limit is the limit of the integrals.'
 classification:
   areas:

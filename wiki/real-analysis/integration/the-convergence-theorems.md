@@ -17,8 +17,6 @@ Applied to partial sums, it gives $\int\sum_n g_n = \sum_n\int g_n$ for measurab
 
 [[T-5K3IO]]
 
-[[FT-5G4Y3]]
-
 ## Dominated convergence
 
 If $f_n\to f$ almost everywhere and $\abs{f_n}\leq g$ with $g\in L^1$, then $f\in L^1$ and $\int f_n\to\int f$; applying the theorem to $\abs{f_n-f}\leq 2g$ gives $\norm{f_n-f}_1\to0$.
