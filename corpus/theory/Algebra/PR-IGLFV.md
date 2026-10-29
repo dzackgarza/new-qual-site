@@ -27,5 +27,5 @@ Hence $Z(G)=G$ and $G$ is abelian.
 
 If $G$ has an element of order $p^2$, then $G\cong C_{p^2}$.
 Otherwise every nonidentity element has order $p$.
-Choose $a\neq e$ and $b\notin\generators{a}$; then $\generators a\cap\generators b = 1$, both subgroups are normal because $G$ is abelian, and $\size{\generators a\generators b}=p^2$, so [[T-SVJUN]] gives $G\cong C_p\times C_p$.
+Choose $a\neq e$ and $b\notin\generators{a}$; then $\generators a\cap\generators b = 1$, both subgroups are normal because $G$ is abelian, and $\size{\generators a\generators b}=p^2$, so [[E-R6I7G|the recognition theorem for direct products]] gives $G\cong C_p\times C_p$.
 :::

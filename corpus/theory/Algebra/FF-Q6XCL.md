@@ -24,5 +24,5 @@ Every group of order $15$ is isomorphic to the cyclic group $\ZZ/15\ZZ$.
 ::: {.proof}
 Let $\abs G=15$.
 By [[FT-ZENUU|Sylow's theorems]], the number of Sylow $3$-subgroups divides $5$ and is congruent to $1$ modulo $3$, and the number of Sylow $5$-subgroups divides $3$ and is congruent to $1$ modulo $5$; both numbers are $1$.
-So $G$ has normal subgroups $P\cong\ZZ/3\ZZ$ and $Q\cong\ZZ/5\ZZ$ with $P\cap Q=\theset{e}$ and $\abs{PQ}=15$, and [[T-SVJUN]] gives $G\cong\ZZ/3\ZZ\times\ZZ/5\ZZ\cong\ZZ/15\ZZ$.
+So $G$ has normal subgroups $P\cong\ZZ/3\ZZ$ and $Q\cong\ZZ/5\ZZ$ with $P\cap Q=\theset{e}$ and $\abs{PQ}=15$, and [[E-R6I7G|the recognition theorem for direct products]] gives $G\cong\ZZ/3\ZZ\times\ZZ/5\ZZ\cong\ZZ/15\ZZ$.
 :::

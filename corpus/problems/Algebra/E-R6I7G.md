@@ -3,6 +3,8 @@ schema: qual/card@1
 id: E-R6I7G
 kind: problem
 title: Recognition theorem for internal direct products
+prompts:
+- What conditions on subgroups $H, K \leq G$ give $G \cong H \times K$?
 classification:
   areas:
   - algebra
@@ -166,4 +168,8 @@ in $H\times K$, so their images satisfy $hk=kh$ in $G$. Hence elementwise commut
 
 ::: {.remark}
 In the finite coprime-order case, trivial intersection is automatic: if $H$ and $K$ are finite and $\gcd(|H|,|K|)=1$, then $|H\cap K|$ divides both $|H|$ and $|K|$ by Lagrange's theorem, so $H\cap K=\{e\}$.
+:::
+
+::: {.remark}
+The condition $[H,K]=1$ together with $G=HK$ implies that $H$ and $K$ are [[D-EKE4Q|normal]] in $G$: conjugating $h'\in H$ by $g=hk$ gives $hkh'k^{-1}h^{-1}=hh'h^{-1}\in H$, and symmetrically for $K$.
 :::
