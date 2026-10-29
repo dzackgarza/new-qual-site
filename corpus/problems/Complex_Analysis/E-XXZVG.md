@@ -20,18 +20,39 @@ Prove the uniform limit theorem for holomorphic functions: if $f_n\to f$ locally
 :::
 
 ::: {.solution}
-This is S&S Theorem 5.2.
-Statement: if $f_n\to f$ uniformly locally uniformly on $\Omega$ then $f$ is holomorphic on $\Omega$.
+Let $\Omega$ be the open set on which the $f_n$ are holomorphic and $f_n\to f$ locally uniformly.
+Holomorphy is local, so fix an open disc $D$ with $\bar D\subset\Omega$; it suffices to show $f$ is holomorphic on $D$.
 
-\envlist
+::: pf
 
-- Let $D \subset \Omega$ with $\bar\DD \subset \Omega$ and $\Delta \subset D$ be a triangle.
-- Apply Goursat: $\int_\Delta f_n = 0$.
-- $f_n\to f$ uniformly on $\Delta$ since it is closed and bounded and thus compact by Heine-Borel, so $f$ is continuous and
-\[
-\lim_n \int_\Delta f_n = \int_\Delta \lim_n f_n \definedas \int_\Delta f
-.\]
-- Apply Morera's theorem: $\int_\Delta f$ vanishes on every triangle in $\Omega$, so $f$ is holomorphic on $\Omega$.
+::: {.pf-step #continuous}
+$f_n\to f$ uniformly on $\bar D$, and $f$ is continuous on $D$.
+
+::: pf-proof
+$\bar D$ is compact, so it is covered by finitely many neighbourhoods on which the convergence is uniform; a uniform limit of continuous functions is continuous.
+:::
 
 :::
 
+::: {.pf-step #triangles}
+$\int_{\partial T} f = 0$ for every closed triangle $T\subset D$.
+
+::: pf-proof
+By Goursat's theorem, $\int_{\partial T} f_n = 0$.
+By step [](#continuous){.pf-ref}, $\abs{\int_{\partial T}(f_n - f)} \le \sup_{\bar D}\abs{f_n-f}\cdot L(\partial T)\to0$.
+:::
+
+:::
+
+::: pf-step
+$f$ is holomorphic on $D$.
+
+::: pf-proof
+By steps [](#continuous){.pf-ref} and [](#triangles){.pf-ref}, Morera's theorem applies on $D$.
+:::
+
+:::
+
+:::
+
+:::
