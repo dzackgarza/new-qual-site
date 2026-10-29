@@ -40,7 +40,7 @@ Isomorphism classes of $\mathcal{G}$-torsors trivialized on a covering $\mathfra
 
 ::: {.example}
 On a scheme $X$ with the Zariski topology, a $\GG_m = \OO_X^\times$-torsor is the sheaf of nowhere-vanishing local sections of an invertible sheaf $\mathcal{L}$, so $\Pic X \cong H^1(X, \OO_X^\times)$ ([[PR-DIVLB]]).
-Likewise $\operatorname{GL}_n$-torsors correspond to locally free sheaves of rank $n$, through their sheaves of local frames.
+Likewise $\GL_n$-torsors correspond to locally free sheaves of rank $n$, through their sheaves of local frames.
 :::
 
 ::: {.example}
