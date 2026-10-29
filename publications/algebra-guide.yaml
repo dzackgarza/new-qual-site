@@ -350,7 +350,6 @@ sections:
       - ref: FF-HK72Z
       - ref: D-WUGPG
       - ref: FF-ED3CD
-      - ref: FF-2AKVH
       - ref: FF-HAMDC
   - slug: commutative-algebra
     title: Commutative algebra
