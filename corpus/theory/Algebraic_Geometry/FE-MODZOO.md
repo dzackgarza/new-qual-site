@@ -23,18 +23,19 @@ prompts:
 ---
 
 ::: {.example title="Not quasicoherent"}
-On $X = \Spec A$ with $Z \subseteq X$ closed and $j: U = X \setminus Z \injects X$ open, the sheaf $j_!\OO_U$ extended by zero is an $\OO_X$-module that is not quasicoherent: its sections are not a localization at any point of $Z$.
-The constant sheaf $\underline{\ZZ}$ on a positive-dimensional $X$ is another, for the same reason — restriction maps do not localize.
+On $X = \AA^1_k = \Spec k[t]$ with $j\colon U = X \setminus \theset{0} \injects X$, the extension by zero $j_!\OO_U$ is an $\OO_X$-module that is not quasicoherent.
+Its stalk at the origin is $0$, so a global section vanishes on a neighbourhood of the origin, hence on the dense open $U$, hence everywhere; thus $\Gamma(X, j_!\OO_U) = 0$.
+But $\Gamma(U, j_!\OO_U) = k[t,t^{-1}] \neq 0 = \Gamma(X, j_!\OO_U)_t$, so the sections over the basic open $U = D(t)$ are not the localization of the global sections.
 :::
 
 ::: {.example title="Quasicoherent, not coherent"}
 $\OO_{\AA^1}$ pushed to a point: $f: \AA^1_k \to \Spec k$ has $f_*\OO_{\AA^1} = \widetilde{k[t]}$, quasicoherent but not finitely generated over $k$.
-On any integral $X$, the constant sheaf of rational functions $\mck_X$ with $U \mapsto K(X)$ is quasicoherent and not coherent.
+On any integral Noetherian $X$ of positive dimension, the constant sheaf of rational functions $\mck_X$ with $U \mapsto K(X)$ is quasicoherent and not coherent.
 :::
 
 ::: {.example title="Coherent, not locally free"}
 On $X = \Spec k[t]$, the skyscraper $\widetilde{k[t]/(t)}$ at the origin is coherent, with fibre dimension $1$ at the origin and $0$ elsewhere.
-Any torsion module gives such an example, and the non-constant fibre dimension is exactly the obstruction.
+Any nonzero finitely generated torsion $k[t]$-module gives such an example, and the non-constant fibre dimension is exactly the obstruction.
 On a singular curve the maximal ideal sheaf at the singular point is coherent, torsion-free, and still not locally free.
 :::
 
