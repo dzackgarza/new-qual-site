@@ -16,9 +16,9 @@ review: draft
 
 ::: {.problem}
 Let $S$ be a real skew-symmetric matrix or a complex skew-Hermitian matrix. Define the Cayley transform
-\[
+$$
 U=(S+I)(S-I)^{-1}.
-\]
+$$
 Show that $U$ is respectively orthogonal or unitary, and solve for $S$ in terms of $U$.
 :::
 
@@ -46,19 +46,19 @@ The Cayley transform is unitary.
 ::: pf-proof
 
 Because $S^*=-S$,
-\[
+$$
 U^*=\bigl((S-I)^{-1}\bigr)^*(S+I)^*
 =(-S-I)^{-1}(-S+I).
-\]
+$$
 Thus
-\[
+$$
 U^*=(S+I)^{-1}(S-I).
-\]
+$$
 All factors are rational functions of $S$, hence commute. Therefore
-\[
+$$
 U^*U
 =(S+I)^{-1}(S-I)(S+I)(S-I)^{-1}=I.
-\]
+$$
 So $U$ is unitary. In the real case the same computation gives $U^TU=I$.
 
 :::
@@ -67,26 +67,26 @@ So $U$ is unitary. In the real case the same computation gives $U^TU=I$.
 
 ::: pf-step
 
-Recover $S$ from $U$.
+$S=\boxed{(U-I)^{-1}(U+I)}$.
 
 ::: pf-proof
 
 From
-\[
+$$
 U(S-I)=S+I
-\]
+$$
 we obtain
-\[
+$$
 (U-I)S=U+I.
-\]
+$$
 Moreover
-\[
+$$
 U-I=2(S-I)^{-1},
-\]
-so $U-I$ is invertible over $\RR$ or $\CC$. Hence
-\[
+$$
+so $U-I$ is invertible. Hence
+$$
 S=(U-I)^{-1}(U+I).
-\]
+$$
 Since $U$ commutes with polynomials in $U$, this may equivalently be written $(U+I)(U-I)^{-1}$.
 
 :::
