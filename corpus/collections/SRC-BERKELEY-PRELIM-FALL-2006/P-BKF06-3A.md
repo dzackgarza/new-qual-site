@@ -23,6 +23,10 @@ audit:
     Independently checked the central-binomial generating function and the
     continuation argument. The proof globalizes the branch-free identity
     (1-4z)f(z)^2=1 on U, so no square-root branch on all of U is assumed.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The exam paper prints the target set as {3,-3}; the statement now reads {1/3,-1/3}.
 ---
 
 ::: {.problem}
@@ -152,8 +156,4 @@ Step [](#f-minus-2-value){.pf-ref} is the required conclusion.
 
 :::
 
-:::
-
-::: {.remark}
-Erratum: the exam paper prints the set as $\{3,-3\}$. By the identity $(1-4z)f(z)^2=1$ on $U$, $f(-2)^2=1/9$, so the correct set is $\{1/3,-1/3\}$.
 :::
