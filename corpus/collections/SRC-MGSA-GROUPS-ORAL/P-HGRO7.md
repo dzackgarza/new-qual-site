@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO7
 kind: problem
-title: Every p-subgroup lies in a Sylow subgroup
+title: Every $p$-subgroup lies in a Sylow $p$-subgroup
 classification:
   areas: [algebra]
   topics: [Sylow Theory]
