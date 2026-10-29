@@ -16,41 +16,45 @@ review: draft
 ---
 
 ::: {.exercise}
-For $a\in\RR$ with $|a|>1$, evaluate
-\[
-I(a)\definedas \int_{-1}^1 {dx\over (x-a)\sqrt{1-x^2}}.
-\]
+For $a\in\RR$ with $\abs{a}>1$, evaluate
+$$
+I(a)\coloneqq \int_{-1}^1 {dx\over (x-a)\sqrt{1-x^2}}.
+$$
 :::
 
 ::: {.solution}
-Put $x=\cos\theta$.
-Since $\sqrt{1-x^2}=\sin\theta$ for $0<\theta<\pi$,
-\[
-I(a)=\int_0^\pi {d\theta\over \cos\theta-a}.
-\]
-Now set $t=\tan(\theta/2)$, so
-\[
-\cos\theta={1-t^2\over1+t^2},
-\qquad
-d\theta={2\,dt\over1+t^2}.
-\]
-Therefore
-\[
-I(a)=2\int_0^\infty {dt\over (1-a)-(1+a)t^2}.
-\]
 
-If $a>1$, then
-\[
-I(a)=-2\int_0^\infty {dt\over (a-1)+(a+1)t^2}
-=-{\pi\over\sqrt{a^2-1}}.
-\]
-If $a<-1$, both coefficients in the denominator are positive and the same calculation gives
-\[
-I(a)={\pi\over\sqrt{a^2-1}}.
-\]
-Thus
-\[
-I(a)=-\operatorname{sgn}(a){\pi\over\sqrt{a^2-1}},
-\qquad |a|>1.
-\]
+::: pf
+
+::: {.pf-step #theta}
+$I(a)=\int_0^\pi {d\theta\over \cos\theta-a}$.
+
+::: pf-proof
+Put $x=\cos\theta$ with $\theta\in(0,\pi)$; then $dx=-\sin\theta\,d\theta$ and $\sqrt{1-x^2}=\sin\theta$, and the limits $x=-1,1$ become $\theta=\pi,0$.
+:::
+
+:::
+
+::: {.pf-step #t}
+$I(a)=2\int_0^\infty {dt\over (1-a)-(1+a)t^2}$.
+
+::: pf-proof
+Substitute $t=\tan(\theta/2)$ in step [](#theta){.pf-ref}, so that $\cos\theta={1-t^2\over1+t^2}$, $d\theta={2\,dt\over1+t^2}$, and $\cos\theta-a={(1-a)-(1+a)t^2\over1+t^2}$.
+:::
+
+:::
+
+::: pf-step
+$I(a)=\boxed{-\operatorname{sgn}(a){\pi\over\sqrt{a^2-1}}}$.
+
+::: pf-proof
+For $p,q>0$, $\int_0^\infty{dt\over p+qt^2}={\pi\over2\sqrt{pq}}$.
+If $a>1$, step [](#t){.pf-ref} gives $I(a)=-2\int_0^\infty{dt\over(a-1)+(a+1)t^2}=-{\pi\over\sqrt{a^2-1}}$.
+If $a<-1$, both $1-a$ and $-(1+a)$ are positive, and the same formula gives $I(a)={\pi\over\sqrt{a^2-1}}$.
+:::
+
+:::
+
+:::
+
 :::
