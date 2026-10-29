@@ -699,7 +699,8 @@ def _transcluded_listing(con: sqlite3.Connection, card: sqlite3.Row, inline_cach
     """
     if card["kind"] != "collection":
         return []
-    return _collection_listing(card["id"], _collection_rows(con, card["id"]), inline_cache, base="")
+    problems, _solved = _collection_counts(con).get(card["id"], (0, 0))
+    return _collection_listing(card["id"], _collection_rows(con, card["id"]), problems, inline_cache, base="")
 
 
 def _transclude(card: sqlite3.Row, counts: Counter[str], listing: list[pf.Block]) -> pf.Div:
@@ -1477,6 +1478,33 @@ def write_pages(
 # --- pages ------------------------------------------------------------------
 
 
+def _collection_counts(con: sqlite3.Connection) -> dict[str, tuple[int, int]]:
+    """Each collection's distinct problems and solved problems, child collections included.
+
+    A compilation lists its child collections as entries; their problems are
+    the compilation's too. `union` keeps each (collection, problem) pair once,
+    so a problem reached twice counts once.
+    """
+    return {
+        row["collection_id"]: (row["problems"], row["solved"])
+        for row in _rows(
+            con,
+            """
+            with recursive reach(collection_id, member) as (
+              select collection_id, problem_id from collection_problems
+              union
+              select reach.collection_id, cp.problem_id
+              from reach join collection_problems cp on cp.collection_id=reach.member
+            )
+            select reach.collection_id, count(*) as problems,
+              sum(reach.member in (select card_id from sections where section_kind='solution')) as solved
+            from reach join cards listed on listed.id=reach.member and listed.kind='problem'
+            group by reach.collection_id
+            """,
+        )
+    }
+
+
 def _collection_rows(con: sqlite3.Connection, collection_id: str) -> list[sqlite3.Row]:
     """The cards a collection lists, in source order."""
     return _rows(
@@ -1499,6 +1527,7 @@ def collection_page(
     inline_cache: dict[str, list[pf.Inline]],
     repo_root: Path,
     area_names: dict[str, str],
+    problem_count: int,
 ) -> Page:
     listed = _collection_rows(con, src["id"])
     provenance = [
@@ -1518,6 +1547,7 @@ def collection_page(
     return meta, _collection_listing(
         src["id"],
         listed,
+        problem_count,
         inline_cache,
     )
 
@@ -1578,6 +1608,7 @@ def _pdf_extraction_href(repo_root: Path, href: str) -> str | None:
 def _collection_listing(
     collection_id: str,
     listed: list[sqlite3.Row],
+    problem_count: int,
     inline_cache: dict[str, list[pf.Inline]],
     base: str = "../",
 ) -> list[pf.Block]:
@@ -1601,7 +1632,6 @@ def _collection_listing(
         return pf.ListItem(pf.Plain(*inlines))
 
     blocks: list[pf.Block] = []
-    problem_count = sum(row["kind"] == "problem" for row in listed)
     # The count sits in its own div so the page's drop cap, which takes the
     # first letter of the first paragraph, does not split the number.
     blocks.append(
@@ -1637,7 +1667,7 @@ def _collection_listing(
                     classes=["qual-exam-listing"],
                 )
             )
-    if problem_count:
+    if any(row["kind"] == "problem" for row in listed):
         blocks.append(
             pf.Div(
                 pf.Para(
@@ -2110,21 +2140,16 @@ def source_table_data(
           coalesce(e.institution, '') as institution,
           coalesce(e.institution_name, '') as institution_name,
           coalesce(e.area, '') as exam_area,
-          {TERM_RANK} as term_rank,
-          (select count(*) from collection_problems cp
-             join cards listed on listed.id=cp.problem_id and listed.kind='problem'
-             where cp.collection_id=c.id) as problems,
-          (select count(*) from collection_problems cp
-             join cards listed on listed.id=cp.problem_id and listed.kind='problem'
-             where cp.collection_id=c.id
-               and cp.problem_id in (select card_id from sections where section_kind='solution')) as solved
+          {TERM_RANK} as term_rank
         from cards c join sources s on s.id=c.id
         left join exam_sources e on e.id=s.id
         order by c.id
         """,
     )
+    counts = _collection_counts(con)
     for row in sources:
         area_ids = _page_terms(data, row["id"], "area")
+        problems, solved = counts.get(row["id"], (0, 0))
         rows.append(
             {
                 "id": row["id"],
@@ -2134,7 +2159,7 @@ def source_table_data(
                 "areas": [area_names[area] for area in area_ids],
                 "institution": row["institution_name"],
                 "year": str(row["year"]) if row["year"] is not None else "",
-                "worked": f"{row['solved']} / {row['problems']} solved" if row["problems"] else "No problems listed",
+                "worked": f"{solved} / {problems} solved" if problems else "No problems listed",
                 "order": f"{list(SOURCE_KIND_HEADINGS).index(row['source_kind']):02d}|{row['institution']}|{row['year'] or 0:04d}|{row['term_rank']}|{row['exam_area']}",
             }
         )
@@ -2558,10 +2583,16 @@ def project(
     pages: list[PageItem] = []
     # How much of a collection is worked is what a reader picking one is after,
     # and the index cannot count it: it is carried as page metadata.
+    counts = _collection_counts(con)
+
+    def worked_fact(collection_id: str) -> str:
+        problems, solved = counts.get(collection_id, (0, 0))
+        return f"{problems} problems, {solved} solved" if problems else "no problems listed"
+
     collection_facts = {
         row["id"]: (
             row["source_kind"],
-            f"{row['problems']} problems, {row['solved']} solved" if row["problems"] else "no problems listed",
+            worked_fact(row["id"]),
             f"{list(SOURCE_KIND_HEADINGS).index(row['source_kind']):02d}|{row['institution']}|{row['year'] or 0:04d}|{row['term_rank']}|{row['area']}",
         )
         for row in _rows(
@@ -2569,14 +2600,7 @@ def project(
             f"""
             select s.id, s.source_kind,
               coalesce(e.institution, '') as institution, coalesce(e.area, '') as area, s.year,
-              {TERM_RANK} as term_rank,
-              (select count(*) from collection_problems cp
-               join cards listed on listed.id=cp.problem_id and listed.kind='problem'
-               where cp.collection_id=s.id) as problems,
-              (select count(*) from collection_problems cp
-               join cards listed on listed.id=cp.problem_id and listed.kind='problem'
-               where cp.collection_id=s.id
-                 and cp.problem_id in (select card_id from sections where section_kind='solution')) as solved
+              {TERM_RANK} as term_rank
             from sources s left join exam_sources e on e.id=s.id
             """,
         )
@@ -2585,7 +2609,7 @@ def project(
         kind, worked, order = collection_facts.get(src["id"], ("", "", ""))
         pages.append(
             (
-                collection_page(con, src, inline_cache, site.parent, area_names),
+                collection_page(con, src, inline_cache, site.parent, area_names, counts.get(src["id"], (0, 0))[0]),
                 out / src["route"] / f"{src['id']}.qmd",
                 StandardPage(
                     SearchDocument(

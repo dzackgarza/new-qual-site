@@ -322,6 +322,12 @@ def test_compilation_section_may_list_a_collection_without_putting_it_in_problem
     rows = con.execute("select section_name, problem_id from collection_problems where collection_id='SRC-NEIL-NESTED'").fetchall()
     assert rows == [("Day 1", "SRC-UGA-FIX")]
 
+    # The compilation's count is its child's problems: P-INDEXP and E-CENTER.
+    nested_html = (work / "build" / "quarto" / "_site" / "source" / "SRC-NEIL-NESTED.html").read_text()
+    assert '<div class="collection-count" data-pagefind-ignore="">\n<p>2 problems.</p>' in nested_html
+    sources = {row["id"]: row for row in json.loads((work / "build" / "quarto" / "_site" / "sources.json").read_text())["rows"]}
+    assert sources["SRC-NEIL-NESTED"]["worked"].endswith(" / 2 solved")
+
 
 def test_compilation_rejects_problems_and_sections(tmp_path: Path) -> None:
     from qualc.model import parse_card
