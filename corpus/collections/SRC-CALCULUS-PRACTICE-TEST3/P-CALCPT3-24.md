@@ -5,7 +5,7 @@ kind: problem
 title: "Events with $0<P(A)=P(B)=P(A\\cap B)<1$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Probability]
 relations: []
 review: draft
 audit:
