@@ -87,7 +87,7 @@ For a series, the Weierstrass $M$-test reduces uniform convergence to convergenc
 
 [[FF-I6VGK]]
 
-[[FS-FZL2X]] [[FS-THMMW]]
+[[FS-THMMW]]
 
 [[FF-IAUQG]]
 
