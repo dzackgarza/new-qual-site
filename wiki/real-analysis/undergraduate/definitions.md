@@ -74,8 +74,6 @@ For $E_n\nearrow E=\bigcup_nE_n$ the equality $\mu(E)=\lim_n\mu(E_n)$ holds for 
 
 [[D-RPOGQ]]
 
-[[FD-BBR6Q]] [[FD-HGESN]]
-
 [[FD-V5ISD]]
 
 [[D-3XE77]]

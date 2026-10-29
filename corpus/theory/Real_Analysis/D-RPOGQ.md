@@ -3,6 +3,9 @@ schema: qual/card@1
 id: D-RPOGQ
 kind: definition
 title: $F_\sigma$ and $G_\delta$ sets
+prompts:
+- What is an $F_\sigma$ set?
+- What is a $G_\delta$ set?
 classification:
   areas:
   - real-analysis

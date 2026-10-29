@@ -21,5 +21,5 @@ Its elements are the \dfn{Borel sets} of $X$.
 :::
 
 ::: {.remark}
-Since a $\sigma$-algebra is closed under complements, countable unions, and countable intersections, every closed set, every [[FD-BBR6Q|$F_\sigma$ set]], and every [[FD-HGESN|$G_\delta$ set]] is a Borel set.
+Since a $\sigma$-algebra is closed under complements, countable unions, and countable intersections, every closed set, every [[D-RPOGQ|$F_\sigma$ set]], and every [[D-RPOGQ|$G_\delta$ set]] is a Borel set.
 :::
