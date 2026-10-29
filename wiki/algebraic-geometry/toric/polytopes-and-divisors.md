@@ -40,8 +40,9 @@ On a non-simplicial fan the index can be infinite: the cone over a square, whose
 
 [[PR-TORPOS]]
 
-For $D = \sum a_\rho D_\rho$, compute $P_D$ from the inequalities $\inner{m}{u_\rho} \geq -a_\rho$ and compare its vertices with the maximal cones.
-If they are, $D$ is ample and $h^0$ is the number of lattice points in $P_D$; if two maximal cones share a vertex, the support function failed to crease and $D$ is at best base point free.
+For $D = \sum a_\rho D_\rho$ on a complete fan, compute $P_D$ from the inequalities $\inner{m}{u_\rho} \geq -a_\rho$ and compare its vertices with the maximal cones.
+If the vertices of $P_D$ correspond bijectively to the maximal cones of $\Sigma$, then $D$ is ample, and $h^0(\OO(D))$ is the number of lattice points in $P_D$.
+If two maximal cones give the same vertex, the support function is linear across the wall between them and $D$ is not ample; it is base point free when the support function is still convex.
 
 [[D-FULNORMPOLY]]
 
