@@ -28,7 +28,7 @@ Let $X = \Spec A$ with $A$ Noetherian and $\mcf \in \QCoh(X)$.
 Then $H^0(X, \mcf) = \globsec{X;\mcf}$ and $H^i(X, \mcf) = 0$ for all $i > 0$.
 :::
 
-::: {.remark title="The proof in one line"}
+::: {.remark title="Proof sketch"}
 Put $M = \globsec{X;\mcf}$, so $\mcf \cong \tilde M$.
 Take an injective resolution $M \injects I^\bullet$ in $\amod$ and sheafify: each $\tilde{I^j}$ is flasque, hence acyclic, so $\tilde{I^\bullet}$ computes the cohomology.
 Applying $\globsec{X;\wait}$ returns the original exact complex $M \injects I^\bullet$, and its higher cohomology is zero.
@@ -43,7 +43,7 @@ Let $\mcf$ be a quasicoherent sheaf on a scheme $X$.
 :::
 
 ::: {.remark title="Hypotheses"}
-Quasicoherence is the load-bearing hypothesis, and it is where the whole argument lives: the theorem is false for general sheaves of abelian groups, which see the topology of $X$ rather than the module $M$.
+Quasicoherence is the essential hypothesis: the theorem is false for general sheaves of abelian groups, which see the topology of $X$ rather than the module $M$.
 Noetherianness is only used to know that $\tilde I$ is flasque for $I$ injective; the statement is true for any affine scheme, but that version is harder.
 
 This is the direction of Serre's criterion that is a theorem about affines, and the other direction is the criterion proper.
