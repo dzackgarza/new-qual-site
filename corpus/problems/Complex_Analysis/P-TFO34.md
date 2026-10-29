@@ -19,61 +19,48 @@ audit:
 ---
 
 ::: {.problem}
-Prove that if $z\mapsto f(z)$ is analytic, then $z \mapsto \bar{f(\bar z)}$ is analytic.
+Prove that if $z\mapsto f(z)$ is analytic, then $z \mapsto \overline{f(\bar z)}$ is analytic.
 :::
 
 ::: {.solution}
-**Goal:** Prove that if $z \mapsto f(z)$ is analytic on a domain $\Omega$, then $z \mapsto \overline{f(\bar z)}$ is analytic on $\overline{\Omega} \definedas \theset{\bar z \suchthat z \in \Omega}$.
+Let $f$ be analytic on an open set $\Omega$, put $\Omega^* \coloneqq \{\bar z : z \in \Omega\}$, and define $g(z) \coloneqq \overline{f(\bar z)}$ for $z \in \Omega^*$. Fix $w_0 \in \Omega^*$ and put $z_0 = \bar w_0 \in \Omega$.
 
 ::: pf
 
-::: {.pf-step #s1}
-Fix $z_0 \in \Omega$; near $z_0$, $f$ has a convergent power series $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$.
+::: {.pf-step #taylor}
 
-::: pf-proof
-Analytic functions are locally representable by power series (Taylor expansion).
-:::
-
-:::
-
-::: pf-step
-Compute $\overline{f(\bar z)}$ for $z$ near $\bar z_0$.
+There are $r > 0$ and coefficients $a_n$ with $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$ for $\abs{z - z_0} < r$.
 
 ::: pf-proof
 
-::: {.pf-step #s2-1}
-$\overline{f(\bar z)} = \sum_{n=0}^{\infty} \bar a_n (z - \bar z_0)^n$.
+An analytic function is represented by its Taylor series on a disc about each point of its domain.
+
+:::
+
+:::
+
+::: {.pf-step #conj}
+
+For $\abs{z - w_0} < r$, $g(z) = \sum_{n=0}^{\infty} \bar a_n (z - w_0)^n$.
 
 ::: pf-proof
-Substitute $\bar z$ for $z$ in step [](#s1){.pf-ref} and conjugate termwise: $\overline{a_n(\bar z - z_0)^n} = \bar a_n \overline{(\bar z - z_0)}^n = \bar a_n (z - \bar z_0)^n$.
-:::
 
-:::
-
-::: pf-step
-The series $\sum \bar a_n (z - \bar z_0)^n$ converges for $\abs{z - \bar z_0} < r$, where $r$ is the radius of convergence of step [](#s1){.pf-ref}.
-
-::: pf-proof
-$\abs{z - \bar z_0} = \abs{\bar z - z_0}$, so the set of convergence is the mirror image of that of step [](#s1){.pf-ref}.
-:::
-
-:::
+If $\abs{z - w_0} < r$, then $\abs{\bar z - z_0} = \abs{z - w_0} < r$, so step [](#taylor){.pf-ref} applies at $\bar z$. Complex conjugation is continuous and additive, so it passes through the convergent series term by term, and $\overline{a_n(\bar z - z_0)^n} = \bar a_n (z - w_0)^n$.
 
 :::
 
 :::
 
 ::: pf-step
-$g(z) := \overline{f(\bar z)}$ is analytic at $\bar z_0$.
+
+$g$ is analytic on $\Omega^*$.
 
 ::: pf-proof
-step [](#s2-1){.pf-ref} gives a power series representation of $g$ centered at $\bar z_0$ with positive radius of convergence, which characterizes analyticity.
-:::
+
+By step [](#conj){.pf-ref}, $g$ is given by a convergent power series on a disc about $w_0$, so $g$ is analytic at $w_0$. The point $w_0 \in \Omega^*$ was arbitrary.
 
 :::
 
-::: pf-qed
-$\bar z_0$ was an arbitrary point of $\overline{\Omega}$, so $g$ is analytic throughout $\overline{\Omega}$.
 :::
 
 :::
