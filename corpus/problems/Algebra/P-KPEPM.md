@@ -23,68 +23,48 @@ audit:
 
 ::: {.problem}
 Let $p$ be prime and $n\ge1$. Determine all pairs $(n,p)$ for which
-\[
+$$
 \SL_n(\FF_p)
-\]
+$$
 is solvable.
 :::
 
 ::: {.solution}
-The solvable cases are
-\[
-n=1\quad\text{for every prime }p,
-\]
-and
-\[
-(n,p)=(2,2),(2,3).
-\]
 
 ::: pf
 
-::: pf-step
-
-If $n=1$, then $\SL_1(\FF_p)=1$, so it is solvable.
-
-:::
-
-::: pf-step
-
-The groups $\SL_2(\FF_2)$ and $\SL_2(\FF_3)$ are solvable.
+::: {.pf-step #n-one}
+If $n=1$, then $\SL_1(\FF_p)$ is solvable.
 
 ::: pf-proof
+$\SL_1(\FF_p)=1$.
+:::
 
-We have
-\[
-\SL_2(\FF_2)\cong S_3,
-\]
-which is solvable.
+:::
 
-For $p=3$, the center of $\SL_2(\FF_3)$ is $\{\pm I\}$ and
-\[
-\PSL_2(\FF_3)\cong A_4.
-\]
-Thus $\SL_2(\FF_3)$ is an extension of the solvable group $A_4$ by the abelian group $C_2$, hence is solvable.
+::: {.pf-step #small}
+$\SL_2(\FF_2)$ and $\SL_2(\FF_3)$ are solvable.
 
+::: pf-proof
+$\SL_2(\FF_2)\cong S_3$, which is solvable. The center of $\SL_2(\FF_3)$ is $\{\pm I\}\cong C_2$ and $\PSL_2(\FF_3)\cong A_4$, so $\SL_2(\FF_3)$ is an extension of the solvable group $A_4$ by the abelian group $C_2$, hence solvable.
+:::
+
+:::
+
+::: {.pf-step #rest}
+For every other pair with $n\ge2$, $\SL_n(\FF_p)$ is not solvable.
+
+::: pf-proof
+By the simplicity theorem for projective special linear groups, $\PSL_n(\FF_p)$ is nonabelian simple for $n\ge2$ except for $(n,p)=(2,2),(2,3)$. A nonabelian simple group is not solvable, and $\PSL_n(\FF_p)$ is a quotient of $\SL_n(\FF_p)$, so $\SL_n(\FF_p)$ is not solvable.
 :::
 
 :::
 
 ::: pf-step
-
-All other cases with $n\ge2$ are nonsolvable.
+$\SL_n(\FF_p)$ is solvable exactly for $\boxed{n=1 \text{ and every prime } p,\ \text{or } (n,p)=(2,2),(2,3)}$.
 
 ::: pf-proof
-
-The classical simplicity theorem for projective special linear groups says that
-\[
-\PSL_n(\FF_p)
-\]
-is nonabelian simple for $n\ge2$, except for
-\[
-(n,p)=(2,2),(2,3).
-\]
-Since $\PSL_n(\FF_p)$ is a quotient of $\SL_n(\FF_p)$, solvability of $\SL_n(\FF_p)$ would force solvability of $\PSL_n(\FF_p)$. A nonabelian simple group is not solvable, so no other pair occurs.
-
+Steps [](#n-one){.pf-ref}, [](#small){.pf-ref} and [](#rest){.pf-ref} cover every pair.
 :::
 
 :::
