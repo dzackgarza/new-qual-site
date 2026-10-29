@@ -17,11 +17,11 @@ audit:
   date: 2026-09-10
 - event: solution-reviewed
   by: OpenAI
+  date: 2026-09-10
 - event: source-checked
   by: claude-opus-5-5
   date: 2026-10-29
   note: The source prints the sum in (c) as sign(sigma) v with no action of sigma, which makes the operator zero trivially. The statement now reads sign(sigma) sigma v, the antisymmetrizer.
-  date: 2026-09-10
 ---
 
 ::: {.problem}
