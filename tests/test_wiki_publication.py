@@ -1089,3 +1089,12 @@ def test_subject_root_automatically_links_all_problems_in_its_area(wiki_site: Pa
     links = LinkCollector()
     links.feed((wiki_site / "build" / "quarto" / "_site" / "wiki" / "algebra" / "index.html").read_text())
     assert ("../../problems.html?area=algebra", "", "Browse the problems") in links.links
+
+
+def test_list_marker_styles_tell_lowercase_from_uppercase_types() -> None:
+    """HTML matches `type` case-insensitively, so without the `s` flag the
+    `(A)` and `(I)` rules also style `(a)` and `(i)` lists."""
+    css = (ROOT / "site" / "styles.css").read_text()
+    selectors = re.findall(r'ol\[type="([aAiI])"( s)?\]', css)
+    assert {letter for letter, _ in selectors} == {"a", "A", "i", "I"}
+    assert all(flag == " s" for _, flag in selectors), selectors
