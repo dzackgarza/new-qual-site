@@ -26,31 +26,31 @@ audit:
 ---
 
 ::: {.problem}
-Let \(O_p(G)\) be the intersection of all Sylow \(p\)-subgroups of the finite group \(G\).
-Show that \(O_p(G)\trianglelefteq G\), that \(O_p(G)\) is a \(p\)-group, and that it contains every normal \(p\)-subgroup of \(G\).
+Let $O_p(G)$ be the intersection of all Sylow $p$-subgroups of the finite group $G$.
+Show that $O_p(G)\trianglelefteq G$, that $O_p(G)$ is a $p$-group, and that it contains every normal $p$-subgroup of $G$.
 :::
 
 ::: {.solution}
 Let
-\[
-O_p(G)=\bigcap_{P\in\operatorname{Syl}_p(G)}P.
-\]
+$$
+O_p(G)=\bigcap_{P\in\Syl_p(G)}P.
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-The subgroup \(O_p(G)\) is normal in \(G\).
+The subgroup $O_p(G)$ is normal in $G$.
 
 ::: pf-proof
 
-For every \(g\in G\), conjugation sends Sylow \(p\)-subgroups to Sylow \(p\)-subgroups and therefore permutes the set \(\operatorname{Syl}_p(G)\). Hence
-\[
+For every $g\in G$, conjugation sends Sylow $p$-subgroups to Sylow $p$-subgroups and therefore permutes the set $\Syl_p(G)$. Hence
+$$
 gO_p(G)g^{-1}
-=\bigcap_{P\in\operatorname{Syl}_p(G)}gPg^{-1}
-=\bigcap_{Q\in\operatorname{Syl}_p(G)}Q
+=\bigcap_{P\in\Syl_p(G)}gPg^{-1}
+=\bigcap_{Q\in\Syl_p(G)}Q
 =O_p(G).
-\]
+$$
 
 :::
 
@@ -58,11 +58,11 @@ gO_p(G)g^{-1}
 
 ::: {.pf-step #s2}
 
-The subgroup \(O_p(G)\) is a \(p\)-group.
+The subgroup $O_p(G)$ is a $p$-group.
 
 ::: pf-proof
 
-It is contained in every Sylow \(p\)-subgroup, hence in particular in one \(p\)-group. Every subgroup of a finite \(p\)-group is a \(p\)-group.
+It is contained in every Sylow $p$-subgroup, hence in particular in one $p$-group. Every subgroup of a finite $p$-group is a $p$-group.
 
 :::
 
@@ -70,15 +70,15 @@ It is contained in every Sylow \(p\)-subgroup, hence in particular in one \(p\)-
 
 ::: {.pf-step #s3}
 
-Every normal \(p\)-subgroup \(N\trianglelefteq G\) is contained in every Sylow \(p\)-subgroup of \(G\).
+Every normal $p$-subgroup $N\trianglelefteq G$ is contained in every Sylow $p$-subgroup of $G$.
 
 ::: pf-proof
 
-Fix \(P\in\operatorname{Syl}_p(G)\). Since \(N\trianglelefteq G\), the product \(NP\) is a subgroup of \(G\). Both \(N\) and \(P\) are \(p\)-groups, so
-\[
-|NP|=\frac{|N|\,|P|}{|N\cap P|}
-\]
-is a power of \(p\). Thus \(NP\) is a \(p\)-subgroup containing the Sylow subgroup \(P\). Maximality of \(P\) among \(p\)-subgroups gives \(NP=P\), hence \(N\le P\).
+Fix $P\in\Syl_p(G)$. Since $N\trianglelefteq G$, the product $NP$ is a subgroup of $G$. Both $N$ and $P$ are $p$-groups, so
+$$
+\abs{NP}=\frac{\abs{N}\,\abs{P}}{\abs{N\cap P}}
+$$
+is a power of $p$. Thus $NP$ is a $p$-subgroup containing the Sylow subgroup $P$. Maximality of $P$ among $p$-subgroups gives $NP=P$, hence $N\le P$.
 
 :::
 
@@ -86,15 +86,15 @@ is a power of \(p\). Thus \(NP\) is a \(p\)-subgroup containing the Sylow subgro
 
 ::: pf-step
 
-Therefore \(O_p(G)\) is the unique maximal normal \(p\)-subgroup of \(G\).
+Therefore $O_p(G)$ is the unique maximal normal $p$-subgroup of $G$.
 
 ::: pf-proof
 
-By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, \(O_p(G)\) itself is a normal \(p\)-subgroup. By step [](#s3){.pf-ref}, every normal \(p\)-subgroup \(N\) satisfies
-\[
-N\le\bigcap_{P\in\operatorname{Syl}_p(G)}P=O_p(G).
-\]
-Hence \(O_p(G)\) contains every normal \(p\)-subgroup, which is exactly the asserted maximality and uniqueness.
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $O_p(G)$ itself is a normal $p$-subgroup. By step [](#s3){.pf-ref}, every normal $p$-subgroup $N$ satisfies
+$$
+N\le\bigcap_{P\in\Syl_p(G)}P=O_p(G).
+$$
+Hence $O_p(G)$ contains every normal $p$-subgroup, which is exactly the asserted maximality and uniqueness.
 
 :::
 
