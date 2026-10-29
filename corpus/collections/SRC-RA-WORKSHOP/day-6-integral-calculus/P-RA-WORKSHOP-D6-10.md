@@ -19,7 +19,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-(Essentially June 2013 #7) Let $a<b$, let $\alpha\colon[a,b]\to\RR$ be monotonically increasing and differentiable with $\alpha'$ Riemann integrable on $[a,b]$, and let $f\colon[a,b]\to\RR$ be bounded.
+Let $a<b$, let $\alpha\colon[a,b]\to\RR$ be monotonically increasing and differentiable with $\alpha'$ Riemann integrable on $[a,b]$, and let $f\colon[a,b]\to\RR$ be bounded.
 Prove that $f\in\mathcal R(\alpha)$ on $[a,b]$ if and only if $f\alpha'$ is Riemann integrable on $[a,b]$, and that in that case
 $$
 \int_a^b f\,d\alpha=\int_a^b f(x)\alpha'(x)\,dx.

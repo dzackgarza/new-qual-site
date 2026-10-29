@@ -55,7 +55,8 @@ source:
     - P-GGJ5N
     - P-RA-WORKSHOP-D3-SEQ-12
     - P-RA-WORKSHOP-D3-SEQ-13
-    - P-RA-WORKSHOP-D3-SEQ-14
+    - id: P-RA-WORKSHOP-D3-SEQ-14
+      comment: 'January 2008 #6b'
     - P-RA-WORKSHOP-D3-SEQ-15
     - P-RA-WORKSHOP-D3-SEQ-16
   - name: Day 4 Continuity of Functions
@@ -66,7 +67,8 @@ source:
     - P-RA-WORKSHOP-D4-W4
     - P-RA-WORKSHOP-D4-W5
     - P-RA-WORKSHOP-D4-06
-    - P-RA-WORKSHOP-D4-07
+    - id: P-RA-WORKSHOP-D4-07
+      comment: 'Compare January 2007 #3a and June 2010 #2a'
     - P-RA-WORKSHOP-D4-08
     - P-RA-WORKSHOP-D4-09
     - P-RA-WORKSHOP-D4-10
@@ -100,7 +102,8 @@ source:
     - P-QXYTV
     - P-YIC3K
     - P-VG7GK
-    - P-RA-WORKSHOP-D6-10
+    - id: P-RA-WORKSHOP-D6-10
+      comment: 'Essentially June 2013 #7'
   - name: Day 7 Sequences and Series of Functions
     problems:
     - P-RA-WORKSHOP-D7-W1
@@ -127,7 +130,8 @@ source:
     - P-GR6TV
     - P-US4ES
     - P-U354O
-    - P-3SSNK
+    - id: P-3SSNK
+      comment: 'June 2014 #1'
     - P-DEYSQ
     - P-ZCPFV
     - id: P-DFDX4

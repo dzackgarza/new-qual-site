@@ -19,7 +19,7 @@ audit:
   date: 2026-08-25
 ---
 ::: {.problem}
-(c.f. January 2007 #3a, June 2010 #2a) Let $K\subseteq\RR$ be compact and let $f:K\to\RR$ be continuous.
+Let $K\subseteq\RR$ be compact and let $f:K\to\RR$ be continuous.
 
 (a) Prove that $f(K)$ is compact.
 
