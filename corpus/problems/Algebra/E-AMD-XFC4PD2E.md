@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-XFC4PD2E
 kind: problem
-title: $S_4$ has two normal subgroups $A_4$ and $\ZZ_2^2$
+title: $A_4$ and the Klein four-group $\ZZ_2^2$ are normal in $S_4$
 classification:
   areas:
   - algebra
@@ -18,10 +18,14 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source reads "Show that S_4 has two normal subgroups, A_4 and Z_2^2." S_4 has four normal subgroups (1, V, A_4, S_4), so the statement now asks only that A_4 and a subgroup isomorphic to Z_2^2 be normal.
 ---
 
 ::: {.exercise}
-Show that $S_4$ has two normal subgroups: $A_4, \ZZ_2^2$.
+Show that $S_4$ has normal subgroups isomorphic to $A_4$ and to $\ZZ_2^2$.
 :::
 
 
@@ -74,7 +78,7 @@ which is again a double transposition. There are exactly three double transposit
 :::
 
 ::: pf-step
-Therefore $S_4$ has the two stated normal subgroups $A_4$ and $\ZZ_2^2$.
+Therefore $S_4$ has the normal subgroups $A_4$ and $\ZZ_2^2$.
 
 ::: pf-proof
 Combine steps [](#a4-normal){.pf-ref}, [](#v-is-z2sq){.pf-ref} and [](#v-normal){.pf-ref}, identifying $V\cong\ZZ_2^2$.
