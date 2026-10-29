@@ -22,9 +22,9 @@ prompts:
 ::: {.theorem title="Kodaira vanishing"}
 Let $X$ be a smooth projective variety of dimension $n$ over a field of characteristic zero, and let $L$ be an ample line bundle on $X$.
 Then
-\[
+$$
 H^i(X, \omega_X \otimes L) = 0 \quad \text{for } i > 0 .
-\]
+$$
 Equivalently, by Serre duality, $H^i(X, L^{-1}) = 0$ for $i < n$.
 :::
 
