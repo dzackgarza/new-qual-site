@@ -13,24 +13,14 @@ review: draft
 ---
 
 ::: {.problem}
-- Show that a closed subset $A$ of a compact space $X$ is compact.
+Show that a closed subset $A$ of a compact space $X$ is compact.
 :::
 
 ::: {.solution}
 
+Let $\mathcal U$ be a cover of $A$ by open subsets of $X$.
+
 ::: pf
-
-::: pf-step
-
-Let $\mathcal U$ be an open cover of the closed subset $A\subseteq X$.
-
-::: pf-proof
-
-We prove that $\mathcal U$ has a finite subcover.
-
-:::
-
-:::
 
 ::: pf-step
 
