@@ -18,22 +18,26 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source read "If f is continuous, is f'' continuous?" and "a subset of a metric space is closed iff it is complete", which is false since (0,1] is closed in itself and not complete. The statement now reads "differentiable" and "a subset of a complete metric space".'
 ---
 
 ::: {.problem}
-- If $f$ is continuous, is it necessarily the case that $f'$ is continuous?
+(a) If $f$ is differentiable, is it necessarily the case that $f'$ is continuous?
 
-- If $f_n \to f$, is it necessarily the case that $f_n'$ converges to $f'$ (or at all)?
+(b) If $f_n \to f$, is it necessarily the case that $f_n'$ converges to $f'$ (or at all)?
 
-- Is it true that the sum of differentiable functions is differentiable?
+(c) Is it true that the sum of differentiable functions is differentiable?
 
-- Is it true that the limit of integrals equals the integral of the limit?
+(d) Is it true that the limit of integrals equals the integral of the limit?
 
-- Is it true that a limit of continuous functions is continuous?
+(e) Is it true that a limit of continuous functions is continuous?
 
-- Show that a subset of a metric space is closed iff it is complete.
+(f) Show that a subset of a complete metric space is closed iff it is complete.
 
-- Show that if $m(E) < \infty$ and $f_n\to f$ uniformly, then $\lim \int_E f_n = \int_E f$.
+(g) Show that if $m(E) < \infty$ and $f_n\to f$ uniformly, then $\lim \int_E f_n = \int_E f$.
 :::
 
 ::: {.solution}
@@ -126,8 +130,4 @@ $\left|\int_E f_n - \int_E f\right| \le \int_E |f_n - f| \le m(E)\sup_E|f_n - f|
 
 :::
 
-:::
-
-::: {.remark}
-The closed-iff-complete statement needs the ambient space to be complete: $(0,1]$ is closed in the metric space $(0,1]$ but is not complete, since $1/n$ is Cauchy with no limit in it. Complete subsets are closed in every metric space.
 :::
