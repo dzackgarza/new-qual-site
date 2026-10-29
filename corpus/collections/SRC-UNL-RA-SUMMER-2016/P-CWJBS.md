@@ -17,6 +17,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+---
 
 ::: {.problem}
 Assume $(X,d)$ is a compact metric space.
