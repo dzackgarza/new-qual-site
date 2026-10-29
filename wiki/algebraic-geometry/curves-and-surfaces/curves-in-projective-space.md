@@ -39,7 +39,7 @@ The twisted cubic has type $(1,2)$, the elliptic quartic type $(2,2)$, and the c
 [[T-CRVCAST]]
 
 The bound is attained by curves of type $(a,a)$, with $d=2a$ and $g=(a-1)^2$, and of type $(a,a+1)$, with $d=2a+1$ and $g=a^2-a$, on a smooth quadric.
-A smooth plane curve of degree $d\ge3$ has genus $\binom{d-1}{2}$, which exceeds Castelnuovo's bound.
+A smooth plane curve of degree $d\ge3$ has genus $\binom{d-1}{2}$, which exceeds Castelnuovo's bound for degree $d$; the bound needs the hypothesis that $C$ lies in no plane.
 
 [[FE-CRVDEGS]]
 
