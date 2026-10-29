@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-- Show that every maximal subgroup of a $p$-group is normal.
+Show that every maximal subgroup of a $p$-group is normal.
 :::
 
 ::: {.solution}
@@ -37,9 +37,9 @@ One has $M<N_G(M)$.
 ::: pf-proof
 
 By the normalizer condition for finite $p$-groups, every proper subgroup is properly contained in its normalizer. Since $M<G$,
-\[
+$$
 M<N_G(M).
-\]
+$$
 
 :::
 
@@ -52,9 +52,9 @@ Hence $N_G(M)=G$.
 ::: pf-proof
 
 We have
-\[
+$$
 M<N_G(M)\le G.
-\]
+$$
 Because $M$ is maximal, there is no subgroup strictly between $M$ and $G$. Therefore $N_G(M)=G$.
 
 :::
