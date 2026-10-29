@@ -13,16 +13,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Linear Algebra, Problem 21, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: The source asks to prove [A, B] != cE for c in R, which fails for c = 0 when A and B commute. The statement now requires c != 0.
 ---
 
 ::: {.problem}
-Consider the linear transformations A, B of the vector space $\mathbb { R } ^ { n }$ . Prove that $[ A , B ] \neq c E$ , where E is the identity matrix, $c \in \mathbb { R }$
-:::
-
-::: {.remark}
-As printed, the statement is false for $c=0$: if $A$ and $B$ commute, then
-$[A,B]=0$. The intended assertion is that a commutator cannot equal a
-nonzero scalar multiple $cI$ with $c\neq0$.
+Consider the linear transformations $A$, $B$ of the vector space $\mathbb{R}^{n}$, $n \geq 1$. Prove that $[A, B] \neq cE$, where $E$ is the identity matrix and $c \in \mathbb{R}$, $c \neq 0$.
 :::
 
 ::: {.solution}
@@ -151,7 +149,7 @@ If such an equality held, step [](#s1-4){.pf-ref} would force $c=0$, a contradic
 
 ::: pf-qed
 
-Step [](#s1-5){.pf-ref} is the corrected intended conclusion.
+Step [](#s1-5){.pf-ref} is the required conclusion.
 
 :::
 
