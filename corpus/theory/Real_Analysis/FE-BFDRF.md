@@ -5,6 +5,7 @@ kind: example
 title: A sequence converging pointwise on $\RR$ but neither uniformly nor in $L^1(\RR)$
 prompts:
 - Give a sequence that converges pointwise and a.e. but not uniformly or in $L^1$.
+- Give an example of a sequence of functions that converge pointwise but not uniformly or in $L^1$.
 classification:
   areas:
   - real-analysis
