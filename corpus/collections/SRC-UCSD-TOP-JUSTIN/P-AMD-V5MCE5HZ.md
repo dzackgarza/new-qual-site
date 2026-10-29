@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-V5MCE5HZ
 kind: problem
-title: A map $S^m\to S^n$ homeomorphic onto an open set is a surjection of $S^n$
+title: An injective map $S^m\to S^n$ homeomorphic on an open set onto an open set is a surjection of $S^n$
 classification:
   areas:
   - topology
@@ -11,35 +11,28 @@ classification:
   - Homology
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source sheet printed "if f: S^m -> S^n and there is U ⊂ S^m with f|_U ≅ f(U), then m = n and f is surjective", false for the equatorial S^1 -> S^2; the statement now assumes f continuous and injective and U nonempty open with f(U) open and f|_U a homeomorphism onto f(U).'
 ---
 
 ::: {.problem}
-Show that if $f: S^m \into S^n$ and $\exists U \subset S^m$ such that $\restrictionof{f}{U} \cong f(U)$, then $m=n$ and $f$ is surjective.
+Let $f: S^m \to S^n$ be continuous and injective, and suppose there is a nonempty open $U \subset S^m$ such that $f(U)$ is open in $S^n$ and $\restrictionof{f}{U} : U \to f(U)$ is a homeomorphism. Show that $m=n$ and $f$ is surjective.
 :::
 
 ::: {.solution}
 
 ::: pf
 
-::: pf-step
+::: {.pf-step #dim}
 
-The statement on the retained source sheet is false as written.
-
-::: pf-proof
-
-Take the standard equatorial embedding $f:S^1\hookrightarrow S^2$. For every nonempty open arc $U\subset S^1$, the restriction $f|_U$ is a homeomorphism onto its image, but $m=1\ne2=n$ and $f$ is not surjective.
-
-:::
-
-:::
-
-::: pf-step
-
-Even requiring $f(U)$ to be open in $S^n$ would not by itself imply surjectivity unless a global injectivity/local-homeomorphism hypothesis is added.
+$m = n$.
 
 ::: pf-proof
 
-A map $S^1\to S^1$ can map one open arc homeomorphically onto an open arc while collapsing or folding the rest of the circle into that same proper arc. Thus a local condition at one open set cannot force global surjectivity.
+Every point of $S^k$ has an open neighborhood homeomorphic to $\RR^k$. Shrinking $U$, we may take $U$ homeomorphic to a nonempty open subset of $\RR^m$ and $f(U)$ inside such a chart of $S^n$, so $f(U)$ is homeomorphic to a nonempty open subset of $\RR^n$. By invariance of dimension, a nonempty open subset of $\RR^m$ is homeomorphic to an open subset of $\RR^n$ only if $m = n$.
 
 :::
 
@@ -47,11 +40,11 @@ A map $S^1\to S^1$ can map one open arc homeomorphically onto an open arc while 
 
 ::: pf-step
 
-A standard valid correction is: if $f:S^m\to S^n$ is continuous and injective, then $m=n$ implies $f$ is surjective; moreover an injective map between spheres can exist only when $m\le n$, while a homeomorphism from a nonempty open subset of $S^m$ onto an open subset of $S^n$ forces $m=n$ by invariance of dimension.
+$f$ is surjective.
 
 ::: pf-proof
 
-The dimension assertion is invariance of dimension. If $m=n$ and $f$ is injective, invariance of domain makes $f(S^n)$ open in $S^n$; compactness of the domain and Hausdorffness of the target make the image closed. Since $S^n$ is connected and the image is nonempty, it is all of $S^n$.
+By step [](#dim){.pf-ref}, $f : S^n \to S^n$ is a continuous injection. If $n = 0$, it is an injection of a two-point set into itself, hence a bijection. If $n \ge 1$, invariance of domain, applied in charts, makes $f$ an open map, so $f(S^n)$ is open. $f(S^n)$ is compact in the Hausdorff space $S^n$, hence closed. It is nonempty, and $S^n$ is connected, so $f(S^n) = S^n$.
 
 :::
 
