@@ -15,10 +15,14 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source leaves f and h unquantified; the statement takes f in L^1(R^n) and h in R^n.
 ---
 
 ::: {.exercise}
-- $\star$: Prove that the Lebesgue integral is translation invariant, i.e. if $\tau_h(x) = x+h$ then $\int \tau_h f = \int f$.
+$\star$: Prove that the Lebesgue integral is translation invariant, i.e. if $f \in L^1(\RR^n)$, $h \in \RR^n$ and $\tau_h(x) = x+h$, then $\int \tau_h f = \int f$.
 :::
 
 ::: {.solution}
