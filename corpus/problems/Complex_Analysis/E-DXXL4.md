@@ -28,34 +28,34 @@ Prove the Heine–Cantor Theorem: let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces
 
 ::: {.solution}
 Fix $\varepsilon>0$. For each $p\in X$, continuity gives $r_p>0$ such that
-\[
+$$
 d_X(x,p)<r_p
 \quad\Longrightarrow\quad
 d_Y(f(x),f(p))<\frac\varepsilon2.
-\]
+$$
 The balls $B(p,r_p/2)$ cover $X$. By compactness, choose a finite subcover
-\[
-B(p_1,r_1/2),\dots,B(p_N,r_N/2).
-\]
+$$
+B(p_1,r_1/2),\ldots,B(p_N,r_N/2).
+$$
 Set
-\[
+$$
 \delta=\frac12\min_{1\le j\le N}r_j>0.
-\]
+$$
 
 If $d_X(x,y)<\delta$, choose $j$ with $x\in B(p_j,r_j/2)$. Then
-\[
+$$
 d_X(y,p_j)\le d_X(y,x)+d_X(x,p_j)
 <\delta+\frac{r_j}{2}\le r_j.
-\]
+$$
 Thus
-\[
+$$
 d_Y(f(x),f(p_j))<\frac\varepsilon2,
 \qquad
 d_Y(f(y),f(p_j))<\frac\varepsilon2.
-\]
+$$
 By the triangle inequality,
-\[
+$$
 d_Y(f(x),f(y))<\varepsilon.
-\]
+$$
 Hence $f$ is uniformly continuous.
 :::
