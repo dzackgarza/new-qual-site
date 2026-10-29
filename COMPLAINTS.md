@@ -37,19 +37,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
-### FD-T7IQV restated solvability as a definition instead of a finite-group criterion
-
-- **Object and need:** `D-DFIDP` and `FD-T7IQV` in `corpus/theory/Algebra`. `D-DFIDP` canonically defines solvable groups by a finite normal series with abelian quotients; `FD-T7IQV` independently defined finite-group solvability via abelian composition factors.
-
-- **Observed evidence:** the latter condition is an equivalent theorem for finite groups, not a second definition owner.
-  No other card states this composition-factor criterion.
-
-- **Impact and owner:** keeping the card as a definition duplicated the term, while deleting it would lose a useful finite-group characterization.
-
-- **Uncertainty:** none; the equivalence follows because subgroups and quotients of solvable groups are solvable and a simple solvable group is abelian.
-
-- **Repair:** a repair converts `FD-T7IQV` to the proposition “Solvability via composition factors,” links it to the canonical solvability and composition-series cards, and adds the proof of the equivalence.
-
 ### Duplicate finite-Galois card FD-4GFTY
 
 - **Object and need:** `D-5JYEI` and `FD-4GFTY` in `corpus/theory/Algebra`. The canonical Galois card defines finite Galois extensions by normality and separability and proves the automorphism-count condition as an equivalent characterization; the flashcard restates that characterization as a second definition.
@@ -61,19 +48,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** none after reading both cards.
 
 - **Repair:** a `CARD-04` repair moves the automorphism-count review prompt to `D-5JYEI`, removes duplicate reader-facing references, and deletes `FD-4GFTY`.
-
-### Duplicate finite-Galois characterization theorem FT-3WWKN
-
-- **Object and need:** `D-5JYEI` and `FT-3WWKN` in `corpus/theory/Algebra`. Both list equivalent characterizations of a finite Galois extension.
-
-- **Observed evidence:** `FT-3WWKN` lists separable splitting field, fixed field, full automorphism count, and normal-plus-separable.
-  `D-5JYEI` already contains all four and additionally the irreducible separable splitting-field characterization and the separable-degree equality.
-
-- **Impact and owner:** the flashcard theorem duplicates a strictly richer canonical card; one downstream example still linked to the duplicate.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair adds a characterization review prompt to `D-5JYEI`, redirects the downstream link, removes duplicate reader-facing references, and deletes `FT-3WWKN`.
 
 ### Duplicate fundamental-theorem-of-Galois-theory cards
 
@@ -316,18 +290,4 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** this is the doctor's current installation result, not a failure of the Pages tests or build.
 
 - **Repair:** reconcile the shared PR installation with `QUAL-09`'s direct-to-main workflow before changing branch protection.
-
-### UNL Math 872 assignment cards retain lost TeX escapes
-
-- **Object and need:** cards for assignments 10.B.1–3, 10.C.1–4 and 11.B.1–2, 11.C.1 in `SRC-UNL-MATH872-SPRING-2014-PROBLEM-SETS` must preserve readable mathematical notation.
-
-- **Observed evidence:** while repairing control bytes rejected by the push gate, reading these cards showed additional transport damage: `P-UNL872S14-10-B-3` has `operatorname{Homeo}`, `Fcirc q_G` and bare `[` display delimiters; `P-UNL872S14-10-C-4` has `ho:G` where the command prefix was lost.
-  Restoring backspace, vertical-tab and form-feed bytes does not repair the missing escapes elsewhere.
-
-- **Impact and owner:** the authored cards need a source-faithful notation repair; a successful corpus parse does not establish that their rendered formulas are correct.
-
-- **Uncertainty:** the listed byte and text defects were inspected directly.
-  The original sources have not been reread for a complete repair, and the remaining affected population has not been established beyond these ten cards.
-
-- **Repair:** TODO.md section 7 / issue #2. Read each retained source, restore the intended notation without changing the mathematical claims, and inspect the rendered result at the normal publication boundary.
 
