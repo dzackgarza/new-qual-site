@@ -460,7 +460,7 @@ Attributes such as a title go inside the braces.
 
 ### `STYLE-02`: Math is delimited with dollars
 
-Inline mathematics is `$…$` and displayed mathematics is `$$…$$`. Multi-line displays use `\begin{aligned}…\end{aligned}` inside `$$…$$`. The extraction check and Pandoc's Markdown reader both treat dollar-delimited spans as mathematics, so one delimiter family keeps every statement checkable.
+Inline mathematics is `$…$` and displayed mathematics is `$$…$$`. Multi-line displays use `\begin{aligned}…\end{aligned}` inside `$$…$$`. The extraction check and Pandoc's Markdown reader both treat dollar-delimited spans as mathematics, so one delimiter family keeps every statement checkable. The card check rejects `\(`, `\)`, `\[` and `\]`.
 
 **Bad:** `\(x\in A\)`; `\[ \int_0^1 f \]`; `\begin{align*} … \end{align*}` as a top-level display.
 

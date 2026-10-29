@@ -24,6 +24,8 @@ TIKZCD = re.compile(r"\\begin\{tikzcd\}.*?\\end\{tikzcd\}", re.DOTALL)
 # STYLE-03: every blackboard-bold object has a semantic macro in vocabularies/macros.json,
 # so the display choice for each meaning is made once in the preamble.
 RAW_BLACKBOARD = re.compile(r"\\(?:mathbb|Bbb)(?![A-Za-z])")
+# STYLE-02: math is delimited with dollars; `\\[` (a line break with spacing) is not a delimiter.
+BACKSLASH_DELIMITER = re.compile(r"(?<!\\)\\[\[\]()]")
 
 
 def card_header(text: str, path: Path) -> Card:
@@ -59,6 +61,8 @@ def check_git_changes(changes: list[GitChange]) -> int:
                 compile_tikzcd_block(diagram)
             if raw := RAW_BLACKBOARD.search(source):
                 errors.append(f"{change.path}: {raw.group()} is written with its semantic macro (STYLE-03)")
+            if raw := BACKSLASH_DELIMITER.search(source):
+                errors.append(f"{change.path}: {raw.group()} delimits math; use $...$ or $$...$$ (STYLE-02)")
         except ValueError as exc:
             errors.append(str(exc))
         except RuntimeError as exc:
