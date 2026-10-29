@@ -24,8 +24,6 @@ Show that if $X$ is normal, then so is $Y$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that if $X$ is a normal space and $p: X \to Y$ is a closed continuous surjection, then $Y$ is a normal space.
-
 ::: pf
 
 ::: pf-step
@@ -128,8 +126,7 @@ Since $p$ is surjective, the empty preimage implies $W_U \cap W_V = \varnothing$
 :::
 
 ::: pf-step
-Conclusion:
-$A$ and $B$ are separated by disjoint open sets $W_U$ and $W_V$, so $Y$ is normal. Q.E.D.
+$A$ and $B$ are separated by disjoint open sets $W_U$ and $W_V$, so $Y$ is normal.
 :::
 
 :::
