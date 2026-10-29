@@ -31,14 +31,6 @@ If equality holds in the first inequality for some $z\neq w$, or in the second f
 :::
 
 ::: {.solution}
-
-![](../../assets/figures/2021-11-27_00-55-19.png)
-
-![](../../assets/Complex_Analysis/060_Maps%20of%20Disc/figures/2021-12-14_01-48-57.png)
-
-:::
-
-::: {.solution}
 For $a\in\DD$, write
 $$
 \phi_a(\zeta)=\frac{a-\zeta}{1-\overline a\zeta}.
