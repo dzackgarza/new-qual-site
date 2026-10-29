@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-4-10
 kind: problem
-title: Maxim algebraic topology 4.10
+title: First appearance of $7$-torsion in the homotopy groups of spheres
 classification:
   areas: [topology]
   topics: []
