@@ -66,7 +66,7 @@ The alternating sum over $q$ of $\rank \Wedgepower^q M(\tau)$ is $0$ unless $\di
 That is the Euler characteristic statement, and tracking the individual ranks gives the binomial formula.
 :::
 
-::: {.remark title="Check it on the two standard surfaces"}
+::: {.remark title="The formula on $\PP^2$ and $\FF_a$"}
 For $\PP^2$: $\size \Sigma(2) = 3$, $\size \Sigma(1) = 3$, $\size \Sigma(0) = 1$, giving $\beta_0 = 1$, $\beta_2 = 1$, $\beta_4 = 1$ and $\chi = 3$.
 For $\FF_a$: $\size \Sigma(2) = 4$, $\size \Sigma(1) = 4$, giving $\beta_2 = 2 = \rank \Pic(\FF_a)$ and $\chi = 4$.
 :::
