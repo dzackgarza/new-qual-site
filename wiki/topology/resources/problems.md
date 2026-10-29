@@ -6,7 +6,7 @@ order: 20
 
 Problem bank: [LSU topology problem bank](https://www.math.lsu.edu/gradfiles/topobank.pdf)
 
-Wesleyan topology preliminary exams: [[SRC-WESLEYAN-TOP-2003]], [[SRC-WESLEYAN-TOP-2004]], [[SRC-WESLEYAN-TOP-2005]], [[SRC-WESLEYAN-TOP-2006]], [[SRC-WESLEYAN-TOP-2007]], [[SRC-WESLEYAN-TOP-SUMMER-2008]], [[SRC-WESLEYAN-TOP-SUMMER-2009]], [[SRC-WESLEYAN-TOP-SUMMER-2010]], [[SRC-WESLEYAN-TOP-SUMMER-2011]], [[SRC-WESLEYAN-TOP-SUMMER-2012]], [[SRC-WESLEYAN-TOP-SUMMER-2013]], [[SRC-WESLEYAN-TOP-2014]].
+Wesleyan topology qualifying exams: [[SRC-WESLEYAN-TOPOLOGY-2003-2005]], [[SRC-WESLEYAN-TOPOLOGY-2006-2014]].
 
 Math 872 problem sets, Spring 2014: [[SRC-UNL-MATH872-SPRING-2014-PROBLEM-SETS]].
 
