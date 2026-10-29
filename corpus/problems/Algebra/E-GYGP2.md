@@ -21,10 +21,10 @@ audit:
 
 ::: {.exercise}
 Show that if $G$ is a finite group and $H < G$ is a proper subgroup, then $\Union_{g\in G} gH\inverseof{g} \subset G$ is a proper subset.
+:::
 
-> Hint: consider the intersection and count.
-> Try Orbit-stabilizer?
-
+::: {.hint}
+Count the conjugates of $H$ with the orbit-stabilizer theorem, and note that all of them contain the identity.
 :::
 
 ::: {.solution}
