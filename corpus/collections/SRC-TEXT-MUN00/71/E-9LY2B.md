@@ -23,14 +23,13 @@ Show that if $X$ is an infinite wedge of circles, then $X$ does not satisfy the 
 :::
 
 ::: {.solution}
-**Goal:** Prove that an infinite wedge sum of circles $X = \bigvee_{\alpha \in J} S_\alpha^1$ fails to be first-countable at the common wedge basepoint $p$.
+Write $X = \bigvee_{\alpha \in J} S_\alpha^1$ with $J$ infinite, and let $p$ be the common point of the circles. We show that $p$ has no countable neighborhood basis.
 
 ::: pf
 
 ::: {.pf-step #s1}
 
-Quotient topology on the wedge sum:
-    *Proof:*
+A subset $U \subseteq X$ is open if and only if each $U \cap S_\alpha^1$ is open in $S_\alpha^1$.
 
 ::: pf-proof
 
@@ -46,8 +45,7 @@ By definition of the wedge sum $X = (\coprod_{\alpha \in J} S_\alpha^1) / \{p_\a
 
 ::: pf-step
 
-Setting up proof by contradiction:
-    *Proof:*
+Suppose, for contradiction, that $p$ has a countable neighborhood basis.
 
 ::: pf-proof
 
@@ -69,8 +67,7 @@ Since $J$ is infinite, choose a countably infinite subset of distinct indices $\
 
 ::: pf-step
 
-Diagonal construction of an open neighborhood $V$:
-    *Proof:*
+There is an open neighborhood $V$ of $p$ and points $x_n \in U_n \setminus V$ for every $n$.
 
 ::: pf-proof
 
@@ -112,8 +109,7 @@ By the definition of the quotient topology in step [](#s1){.pf-ref}, $V$ is an o
 
 ::: pf-step
 
-Deriving the contradiction:
-    *Proof:*
+$X$ has no countable neighborhood basis at $p$, so $X$ is not first-countable.
 
 ::: pf-proof
 
@@ -145,13 +141,6 @@ This contradicts $U_k \subseteq V$.
 
 :::
 
-::: pf-step
-
-Conclusion:
-
 :::
 
-:::
-
-    $X$ has no countable local basis at $p$, and therefore $X$ is not first-countable. Q.E.D.
 :::
