@@ -42,7 +42,7 @@ Schur's theorem applies to every complex square matrix. Thus $A=UTU^*$ for some 
 
 :::
 
-::: pf-step
+::: {.pf-step #triangular-normal}
 The triangular matrix $T$ is normal.
 
 ::: pf-proof
@@ -90,7 +90,7 @@ so $T_1$ is normal. By induction $T_1$ is diagonal. Therefore $T$ is diagonal.
 Therefore $A$ is unitarily diagonalizable.
 
 ::: pf-proof
-By steps [](#schur-triangularization){.pf-ref} and [](#upper-triangular-normal-is-diagonal){.pf-ref}, $T=D$ is diagonal. Hence
+By steps [](#schur-triangularization){.pf-ref}, [](#triangular-normal){.pf-ref} and [](#upper-triangular-normal-is-diagonal){.pf-ref}, $T$ is an upper-triangular normal matrix and hence a diagonal matrix $D$. Hence
 $$
 A=UDU^*,
 $$
