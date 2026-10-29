@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CV2MR
 kind: problem
-title: $|z|^2$ is complex-differentiable only at $0$
+title: $\abs{z}^2$ is complex-differentiable only at $0$
 classification:
   areas:
   - complex-analysis
@@ -19,32 +19,37 @@ Prove that $f(z) = \abs{z}^2$ has a derivative at $z=0$ and nowhere else.
 :::
 
 ::: {.solution}
-The easy check: $f$ is differentiable iff $\delbar_z f = 0$, but
-\[
-\delbar_z \abs{z}^2 = \delbar_z z\bar{z} = z \neq 0
-,\]
-unless of course $z=0$.
 
-A more explicit check: check the limits.
-\[
-{f(z) - f(0) \over z-0} = { \abs{z}^2 \over z } = {z\bar z \over z} = \bar{z} \converges{z\to 0}\too 0
-,\]
-so $f$ is differentiable at $w=0$.
-Now taking $w = Re^{i\theta} \neq 0$,
-\[
-{f(z) -f(w) \over z-w} = {\abs{z}^2 - \abs{w}^2 \over z - w} 
-= {\qty{\abs{z} + \abs{w} } \qty{\abs{z} - \abs{w}} \over z-w }
-= {\abs z - \abs w \over z-w}\cdot \qty{\abs{z} + \abs{w}}
-.\]
-First let $z\to w$ along $\bd \DD_{R'}(0)$ where $R' \definedas \abs{w}$, so that the numerator vanishes and the limit is zero.
-Then let $z\to w$ along the curve $\theset{tw\st t\in [0, 1]}$, then $\abs{z} = t \abs{w}$, so the ratio becomes
-\[
-{\abs z - \abs w \over z-w}\cdot \qty{\abs{z} + \abs{w}}
-&= {t\abs{w}  - \abs w \over tw-w}\cdot \qty{t\abs{w} + \abs{w}} \\
-&= {\abs{w}\qty{t-1 } \over w(t-1)} \cdot \abs{w}(t+1) \\
-&= { \abs{w}^2(t+1) \over w} \\
-&= \bar{w}(t+1) \\
-&\converges{t\to 1}\to 2\bar{w}
-,\]
-which is nonzero is $w\neq 0$.
+::: pf
+
+::: pf-step
+$f'(0)$ exists and equals $0$.
+
+::: pf-proof
+For $z\ne0$, $\frac{f(z)-f(0)}{z}=\frac{z\bar z}{z}=\bar z\to0$ as $z\to0$.
+:::
+
+:::
+
+::: pf-step
+$f$ has no derivative at any $w\ne0$.
+
+::: pf-proof
+For $z\ne w$,
+$$
+\frac{f(z)-f(w)}{z-w}=\frac{\abs{z}-\abs{w}}{z-w}\,(\abs{z}+\abs{w}).
+$$
+Along the circle $\abs{z}=\abs{w}$ this quotient is $0$, so its limit is $0$.
+Along the ray $z=tw$, $t\to1$, it equals $\frac{\abs{w}(t-1)}{w(t-1)}\abs{w}(t+1)=\bar w(t+1)\to2\bar w\ne0$.
+The two limits differ, so the difference quotient has no limit at $w$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.remark}
+Equivalently, $f$ is real-differentiable and $\delbar_z(z\bar z)=z$, so the Cauchy--Riemann equation $\delbar_z f=0$ holds only at $z=0$.
 :::
