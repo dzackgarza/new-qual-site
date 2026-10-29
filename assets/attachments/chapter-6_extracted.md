@@ -1,64 +1,64 @@
+<!-- page 1 -->
+
 ## CHAPTER 6 REVIEW QUESTIONS
 
 Complete the following review questions using the techniques outlined in this chapter.   
 Chapter 8 for answers and explanations.
 
-1. There is only one integer, x, between 100 and 20 such that integer pair (x,y) satisfies the 42x + 55y = 1.What's the value of x in this integer pair? （A)127 (B) 148 (C） 158 (D)167 (E)183
+1. T  00 0 42x + 55y = 1. What's the value of x in this integer pair? )127 148 158 167 183
 
-2.Let L be the least common multiple of 1001 and 10101. What's the sum of the digits of numbers are written in their usual decimal representation.) （A)6 (B） 11 (C） 17 (D）22 (E)33
+2. Let L be the least common multiple of 1001 and 10101. What's the sum of the digits of L? numbers are written in their usual decimal representation.) (A) 6 11 17 22 E33
 
-3.Let $x _ { 1 }$ and xz be the two smallest positive integers for which the following statement "85x -12 is a multiple of 19." Then $x _ { 1 } + x _ { 2 } =$ （A)19 (B)27 (C）31 (D)38 (E)47
+3. Let $x _ { 1 }$ and $x _ { _ 2 }$ be the two smalest positive integers for which the following statement is "85x - 12 is a multiple of 19." Then $x _ { 1 } + x _ { 2 } =$ A) 19 27 31 38 47
 
-4.If x,y,and z are positive integers such that 4x-5y +2z is divisible by13,then which one following must also be divisible by 13? (A)x+13y-z(B) 6x-10y-z(C) x-y-2z(D)-7x+12y+3z (E) -5x+3y
+4 If x, y, and z are positive integers such that 4x  5y + 2z is divisible by 13, then which one of the following must also be divisible by 13? ( x + 13yz (B 6x -10y (C)  --2z (D) -7x +12y +3z E) -5x + 3y-4z
 
-5. When expressed in its usual decimal notation, the number 10o! (that is,10 factorial) ends'i many consecutive zeros? （A)20 (B)24 (C）30 (D）32 (E）50
+5. Whe exres  sal decal oatio, eer 0 that  00 actorial en many consecutive zeros? )20 24 C)30 32 E)50
 
-6.How many generators does the group $( Z _ { _ { 2 4 } } ,$ +)have? (A)2 (B)6 (C）8 (D)10 (E)12
+6. How many generators does the group $( \pmb { Z } _ { 2 4 } , + )$ have? (A) 2 6 ) 8 )10 E)12
 
-7.Which one of the following groups is cyclic? （A） $\mathbf { Z } _ { 2 } \times \mathbf { Z } _ { 4 }$ (B) $\mathbf { Z } _ { 2 } \times \mathbf { Z } _ { 6 }$ （C） $I _ { 3 } \times I _ { 4 }$ (D) $Z _ { 3 } \times Z _ { 6 }$ (E) $\mathbf { \mathbb { Z } } _ { 4 } \times \mathbf { \mathbb { Z } } _ { 6 }$
+7Which one of the following groups is cyclic? (A) $\mathbf { Z } _ { \mathrm { _ 2 } } \times \mathbf { Z } _ { \mathrm { _ 4 } }$ (B) $\mathbf { Z } _ { 2 } \times \mathbf { Z } _ { 6 }$ (C) $\mathbf { Z } _ { 3 } \times \mathbf { Z } _ { 4 }$ (D) $\mathbf { Z } _ { 3 } \times \mathbf { Z } _ { 6 }$ (E) $\mathbf { Z } _ { 4 } \times \mathbf { Z } _ { 6 }$
 
-8.If Gis a group of order 12, then G must have a subgroup of allof the following orders EXCEPT (A)2 (B)3 (C）4 (D)6 (E)12
+8.If G is a group of order 12, then G must have a subgroup of all of the following orders EXCEPT (A) 2 () 3 C) 4 () 6 E) 12
+<!-- page 2 -->
 
-9.How many subgroups does the group $Z _ { 3 }$ + $Z _ { 1 6 }$ have? （A)6 (B)10 (C） 12 (D）20 (E)24
+9.How many subgroups does the group Zz Zi6 have? $\mathbf { Z } _ { 3 }$ $\mathbf { Z } _ { 1 6 }$ (A) 6 10 ) 12 20 24
 
-10.If $S = \left. a \in \mathbb { R } ^ { + } \colon a \neq 1 \right.$ }，with the binary operation ·defined by the equation $a \ \bullet \ b \ = a ^ { \log \ b }$ (where log $\boldsymbol { b } = \log _ { e } \boldsymbol { b } )$ ), then (S,·） is a group.What is the inverse of $a \in S ?$ （A） $\frac { 1 } { e \log a }$ (B） $\frac { e } { \log a }$ (C) $e ^ { - \log \pi }$ (D） $e ^ { \log ( 1 / \eta ) }$ (E) $e ^ { 1 / \log _ { a } } .$
+10. If $S = \left. a \in \mathbf { R } ^ { + } \colon a \neq 1 \right.$ ,w the  ne y e $a \bullet b = a ^ { \log b }$ (where log $\boldsymbol { b } = \log _ { e } \boldsymbol { b } )$ s  Wh is he $a \in S ?$ (A) $\frac { 1 } { e \log a }$ (B) $\frac { e } { \log a }$ (C) $e ^ { - \log a }$ (D) $e ^ { \log ( 1 / n ) }$ (E) $e ^ { 1 / \log a }$
 
-11.Which of thefollowing are subgroups of GL(2,R),the group of invertible2by 2 matrices (with real entries) under matrix multiplication? 1 $T = \left\{ A \in { \mathrm { G L } } ( 2 , \mathbf { R } ) \colon \operatorname* { d e t } A = 2 \right\}$ I. $U = \left\{ A \in \operatorname { G L } ( 2 , \mathbb { R } ) ; A \right.$ is upper triangular} I $V = \left\{ A \in \operatorname { G L } ( 2 , \mathbf { R } ) ; \operatorname { t r } ( A ) = 0 \right\}$
+Which of the following are subgroups of GL(, R), the group of invertible  by 2 matrices (with real entries) under matrix multiplication? I. $T = \left\{ A \in \operatorname { G L } ( 2 , \mathbf { R } ) \colon \operatorname* { d e t } A = 2 \right\}$ II. $U = \left\{ A \in { \mathrm { G L } } ( 2 , \mathbb { R } ) \colon \right.$ A is upper triangular} III. $V = \left\{ A \in \operatorname { G L } ( 2 , \mathbf { R } ) ; \operatorname { t r } ( A ) = 0 \right\}$
 
-Note: tr(A) denotes the trace of A, which is the sum of the entries on the main diagonal. (A)Iand II only(B) Ionly(C) II and II only(D) III only(E) IandII only
+Note: tr(A) denotes the trace of A, which is the sum of the entries on the main diagonal. () I and Ⅱ only () only ()I and Ⅲ only () I only () I and ⅢI only
 
-12.Let p and q be distinct primes.How many (mutually nonisomorphic) Abelian groups are there of order p2q? （A)6 (B）8 (C）10 (D） 12 (E)16
+Let p and q be distinct primes. How many (mutually nonisomorphic) Abelian groups are there of order $p ^ { 2 } q ^ { 4 } ?$ (A) 6 ) 8 10 12 (E) 16
 
-13..Let G be the group generated by the elements x and yand subject to the following relations: $x ^ { 2 } = y ^ { 3 } , y ^ { 6 } = 1$ ,and $x ^ { - 1 } y x = y ^ { - 1 }$ .Express in simplest form the inverse of the element $z = x ^ { - 2 } y x ^ { 3 } y ^ { 3 }$ （A） $y ^ { - 2 } x ^ { - 1 }$ (B） $x y ^ { 2 }$ (C） xy (D）yx (E) $y ^ { 2 } x$
+.Let G be the group generated by the elements x and y and subject to the following relations: $x ^ { 2 } = y ^ { 3 } , y ^ { 6 } = 1$ , and $x ^ { - 1 } y x = y ^ { - 1 }$ Express in simplest form the inverse of the element $z = x ^ { - 2 } y x ^ { 3 } y ^ { 3 }$ (A) $y ^ { - 2 } x ^ { - 1 }$ (B) $x y ^ { 2 }$ ) xy () yx (E) $y ^ { 2 } x$
 
-14. Let H be the set of all group homomorphisms : $Z _ { 3 } \to Z _ { 6 }$ How many functions does H contain? (A）1 (B)2 (C)3 (D)4 (E)6
+14. Let H be the set of all group homomorphisms φ: $\mathbf { Z } _ { 3 } \to \mathbf { Z } _ { 6 } .$ How many functions does H contain? (A) 1 B) 2 C) 3 () 4 (E)
 
-15.Let G be a group of order 9,and let e denote the identity of G. Which one of the following statements about G CANNOT be true? (A) There exists an element x in G such that $x \neq e$ and $x ^ { - 1 } = x .$ (B) There exists an element x in G such that $x \neq e$ and $x ^ { 2 } = x ^ { 5 } .$ (C) There exists an element x in G such that $\langle x \rangle$ has order 3. (D) G is cyclic. (E)G is Abelian.
+Let G be a group of order 9, and let e denote the identity of G. Which one of the following statements about G CANNOT be true? There exists an element x in G such that $x \neq \ell$ and $x ^ { - 1 } = x .$ There exists an element x in G such that $x \neq e$ and $x ^ { 2 } = x ^ { 5 } .$ (C) There exists an element x in G such that $\langle x \rangle$ has order 3. G is cyclic. G is Abelian.
+<!-- page 3 -->
 
-16.Let Rbe a ring; an element x in R is said to be idempotent if $x ^ { 2 } = x .$ How many idempotent elements does the ring $Z _ { _ { 2 0 } }$ contain? (A)2 (B)4 (C）5 (D）8 （E)10
+16. Let R be a ring; an element x in R is said to be idempotent if $x ^ { 2 } = x .$ How many idempotent elements does the ring $\mathbf { Z } _ { \mathfrak { z } \mathfrak { z } }$ contain? (A) 2 B) C) 5 ) 8 10
 
-17.Which of the following rings are integral domains? 1 $\mathbb { Z } \oplus \mathbb { Z }$ II. $\sum \limits _ { n = 1 } ^ { \infty } f$ where p is a prime Ⅲ. $\boldsymbol { Z } _ { \boldsymbol { p } ^ { 2 } \prime } ^ { \prime }$ where p is a prime (A)Iand II only(B)II only(C) I and II only(D)III only(E) Iand II only
+<table><tr><td>17. Which of the following rings are integral domains? I.  $\mathbf { Z } \oplus \mathbf { Z }$  II.  $\mathbf { Z } _ { _ { n ^ { \prime } } }$  where p is a prime</td></tr></table>
 
-18.Which one of the following rings does NOT have the same number of units as the other four? (A)ZZ (B) $\mathbf { Z } \oplus \mathbf { Z } _ { \mathfrak { z } }$ （C） $\mathbf { Z } \oplus \mathbf { Z } _ { \mathrm { { s } } }$ (D) $\mathbf { Z } \oplus \mathbf { Z } _ { \mathit { \hat { \mathrm { b } } } }$ (E) $\mathbf { Z } _ { 3 } \oplus \mathbf { Z } _ { 3 }$
+18Which one of the following rings does NOT have the same number of units as the other four? (A) Z AZ (B) $\mathbf { Z } \oplus \mathbf { Z } _ { 3 }$ (C) $\mathbf { Z } \oplus \mathbf { Z } _ { \mathrm { { s } } }$ (D) $\mathbf { Z } \oplus \mathbf { Z } _ { 6 }$ (E) $\mathbf { Z } _ { 3 } \oplus \mathbf { Z } _ { 3 }$
 
-19.How many elements x in the field $Z _ { 1 1 }$ satisfy the equation $\chi ^ { 1 2 } - \chi ^ { 1 0 } = 2 ?$ （A)1 (B)2 (C3 (D)4 (E)5
-
-$$
-K _ { \scriptscriptstyle 1 } = \left\{ a + b \sqrt { \textstyle { \frac { 2 } { 3 } } } \colon a , \ b \in \mathbf { Q } \right\}
-$$
+<table><tr><td colspan="2">19. How many elements x in the field  $\mathbf { Z } _ { 1 1 }$  satisfy the equation</td><td> $\boldsymbol { x } ^ { 1 2 } - \boldsymbol { x } ^ { 1 0 } = 2 ?$ </td></tr><tr><td colspan="2">(A) 1</td><td>) 3 D) 4 E) 5</td></tr></table>
 
 $$
-K _ { _ 2 } = \left\{ a + b { \sqrt { 2 } } \colon a , \ b \in \mathbf { Q } \right.
+K _ { _ 1 } = \left\{ a + b { \sqrt { \textstyle { \frac { 2 } { 3 } } } } \colon a , b \in \mathbf { Q } \right\}
 $$
 
 $$
-K _ { _ 3 } = \left\{ a + b i ; a , b \in \mathbf { Z } { \mathrm { ~ a n d ~ } } i = { \sqrt { - 1 } } \right\}
+K _ { _ 2 } = \left\{ a + b { \sqrt { 2 } } \colon a , \ b \in \mathbf { Q } \ { \mathrm { a n d } } \ a b < { \sqrt { 2 } } \right\}
 $$
 
 $$
-a b < { \sqrt { 2 } } \}
+K _ { _ 3 } = \left\{ a + b i \colon a , \ b \in \mathbf { Z } { \mathrm { ~ a n d ~ } } i = { \sqrt { - 1 } } \right\}
 $$
 
 $$
-K _ { i }
+K _ { _ i }
 $$

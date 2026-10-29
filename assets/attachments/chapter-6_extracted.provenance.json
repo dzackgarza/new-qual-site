@@ -1,0 +1,12 @@
+{
+  "source_pdf": "assets/attachments/chapter-6.pdf",
+  "source_pdf_sha256": "454ddd42c1db92aec005165158133a09e1c53a15dadab824534cb853902a19f2",
+  "extracted_markdown": "assets/attachments/chapter-6_extracted.md",
+  "extracted_markdown_sha256": "e601995b0fa51b3dfb260467018891b1c42422c8287cd9370c487e7370a30798",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "pdftoppm -r 200 -png assets/attachments/chapter-6.pdf p; mineru-open-api flash-extract p-N.png --language en for each page; pages concatenated with <!-- page N --> markers",
+  "generated_at": "2026-10-30",
+  "result": "exit 0",
+  "known_extractor_defects": "The scan is degraded. Whole-PDF Flash dropped the (B)-(E) answer labels; per-page Flash keeps more labels but garbles Question 1 and Question 5. Mistral OCR returned HTTP 429 on every attempt this session."
+}
