@@ -26,15 +26,15 @@ Show that every prime ideal is primary.
 :::
 
 ::: {.solution}
-Let \(\mathfrak p\) be a prime ideal. If
-\[
+Let $\mathfrak p$ be a prime ideal. If
+$$
 ab\in\mathfrak p,
-\]
+$$
 then primality gives
-\[
+$$
 a\in\mathfrak p\quad\text{or}\quad b\in\mathfrak p.
-\]
-In the second case \(b^1\in\mathfrak p\). Thus whenever \(ab\in\mathfrak p\), either \(a\in\mathfrak p\) or \(b^n\in\mathfrak p\) for some \(n\ge1\), which is exactly the definition of a primary ideal.
+$$
+In the second case $b^1\in\mathfrak p$. Thus whenever $ab\in\mathfrak p$, either $a\in\mathfrak p$ or $b^n\in\mathfrak p$ for some $n\ge1$, which is exactly the definition of a primary ideal.
 
 Therefore every prime ideal is primary.
 :::
