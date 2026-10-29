@@ -15,29 +15,43 @@ review: draft
 
 ::: {.problem}
 Let $A\in M_{m\times n}(F)$ and $b\in F^m$. Show that applying the same sequence of elementary row operations to $A$ and $b$ does not change the solution set of
-\[
+$$
 Ax=b.
-\]
+$$
 :::
 
 ::: {.solution}
-Let
-\[
-E=E_k\cdots E_1
-\]
-be a product of elementary matrices, and set
-\[
-A'=EA,\qquad b'=Eb.
-\]
-Every elementary matrix is invertible, hence so is $E$.
+Let $E_1,\ldots,E_k$ be the elementary matrices of the row operations, in order, and set
+$$
+E\coloneqq E_k\cdots E_1,\qquad A'\coloneqq EA,\qquad b'\coloneqq Eb.
+$$
 
-For any $x\in F^n$,
-\[
-Ax=b
-\iff EAx=Eb
-\iff A'x=b'.
-\]
-The reverse implication uses multiplication by $E^{-1}$.
+::: pf
 
-Thus $Ax=b$ and $A'x=b'$ have exactly the same solutions.
+::: {.pf-step #invertible}
+
+$E$ is invertible.
+
+::: pf-proof
+
+Each elementary matrix is invertible, its inverse being the elementary matrix of the inverse row operation, and a product of invertible matrices is invertible.
+
+:::
+
+:::
+
+::: pf-step
+
+For every $x\in F^n$, $Ax=b$ if and only if $A'x=b'$.
+
+::: pf-proof
+
+If $Ax=b$, then multiplying by $E$ gives $A'x=EAx=Eb=b'$. Conversely, if $A'x=b'$, then multiplying by $E^{-1}$, which exists by step [](#invertible){.pf-ref}, gives $Ax=b$.
+
+:::
+
+:::
+
+:::
+
 :::
