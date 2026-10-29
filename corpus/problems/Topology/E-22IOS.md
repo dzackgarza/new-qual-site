@@ -27,42 +27,23 @@ Show that every metric space is Hausdorff in its metric topology.
 
 ::: {.solution}
 
+Let $x\ne y$ be points of a metric space $(X,d)$, and set $r=d(x,y)/2>0$.
+
 ::: pf
 
 ::: pf-step
 
-Let $x\ne y$ in a metric space $(X,d)$, and set
-$$
-r=\frac{d(x,y)}{2}>0.
-$$
-
-:::
-
-::: pf-step
-
-The metric balls $B(x,r)$ and $B(y,r)$ are open neighborhoods of $x$ and $y$.
-
-:::
-
-::: pf-step
-
-They are disjoint.
+The open balls $B(x,r)$ and $B(y,r)$ are disjoint open neighborhoods of $x$ and $y$, so $X$ is Hausdorff.
 
 ::: pf-proof
 
-If $z\in B(x,r)\cap B(y,r)$, then the triangle inequality gives
+Open balls are open in the metric topology. If $z\in B(x,r)\cap B(y,r)$, then the triangle inequality gives
 $$
 d(x,y)\le d(x,z)+d(z,y)<r+r=d(x,y),
 $$
 a contradiction.
 
 :::
-
-:::
-
-::: pf-step
-
-Thus every two distinct points admit disjoint open neighborhoods, so $X$ is Hausdorff.
 
 :::
 
