@@ -24,18 +24,18 @@ audit:
 
 ::: {.exercise}
 Let $R$ be a PID and let $I=(b)\subsetneq R$. If $a\in I$ is irreducible, prove that
-\[
+$$
 (a)=(b)=I.
-\]
+$$
 :::
 
 ::: {.solution}
 Since $a\in(b)$, there is $r\in R$ such that
-\[
+$$
 a=rb.
-\]
+$$
 Because $a$ is irreducible, either $r$ or $b$ is a unit. But $(b)$ is proper, so $b$ is not a unit. Hence $r$ is a unit, and therefore $a$ and $b$ are associates. Thus
-\[
+$$
 (a)=(b)=I.
-\]
+$$
 :::
