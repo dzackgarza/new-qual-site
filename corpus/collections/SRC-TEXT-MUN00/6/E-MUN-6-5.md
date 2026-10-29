@@ -21,13 +21,11 @@ If $A \times B$ is finite, does it follow that $A$ and $B$ are finite?
 :::
 
 ::: {.solution}
-**Goal:** Determine whether finiteness of $A \times B$ implies finiteness of $A$ and $B$.
-
 ::: pf
 
 ::: pf-step
 
-The claim is FALSE in general if one of the sets is empty.
+$\boxed{\text{No}}$: if $B = \emptyset$, then $A \times B$ is finite for every $A$, including infinite $A$.
 
 ::: pf-proof
 
@@ -67,7 +65,7 @@ Thus $A \times B$ is finite while $A$ is infinite.
 
 ::: pf-step
 
-If both $A$ and $B$ are nonempty, then BOTH $A$ and $B$ must be finite.
+If both $A$ and $B$ are nonempty, then $A$ and $B$ are finite.
 
 ::: pf-proof
 
@@ -106,18 +104,6 @@ Since $\iota: A \to \iota(A)$ is a bijection, $A$ is finite.
 Symmetrically, fixing $a_0 \in A$ and considering $b \mapsto (a_0, b)$ shows that $B$ is finite.
 
 :::
-
-:::
-
-:::
-
-::: pf-step
-
-Conclusion:
-
-::: pf-proof
-
-It does not follow in general, because if one factor is empty the other may be infinite. It does follow whenever both $A$ and $B$ are nonempty.
 
 :::
 
