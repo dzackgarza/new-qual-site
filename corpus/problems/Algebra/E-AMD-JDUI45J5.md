@@ -23,19 +23,19 @@ audit:
 ---
 
 ::: {.exercise}
-Compute all intermediate fields of $\mathbb Q(2^{1/4},\zeta_8)$ over $\mathbb Q$.
+Compute all intermediate fields of $\QQ(2^{1/4},\zeta_8)$ over $\QQ$.
 :::
 
 ::: {.solution}
 Let $\alpha=2^{1/4}$ and
-\[
-K=\mathbb Q(\alpha,\zeta_8).
-\]
+$$
+K=\QQ(\alpha,\zeta_8).
+$$
 Since $\alpha^2=\sqrt2$ and $\zeta_8=(1+i)/\sqrt2$,
-\[
+$$
 i=\alpha^2\zeta_8-1,
-\]
-so $K=\mathbb Q(\alpha,i)$, the splitting field of $x^4-2$.
+$$
+so $K=\QQ(\alpha,i)$, the splitting field of $x^4-2$.
 
 ::: pf
 
@@ -43,33 +43,33 @@ so $K=\mathbb Q(\alpha,i)$, the splitting field of $x^4-2$.
 The Galois group is $D_4$ of order $8$.
 
 ::: pf-proof
-Eisenstein gives $[\mathbb Q(\alpha):\mathbb Q]=4$, and $i\notin\mathbb Q(\alpha)\subset\mathbb R$, hence $[K:\mathbb Q]=8$. Define
-\[
+Eisenstein gives $[\QQ(\alpha):\QQ]=4$, and $i\notin\QQ(\alpha)\subset\RR$, hence $[K:\QQ]=8$. Define
+$$
 \sigma(\alpha)=i\alpha,\quad \sigma(i)=i,
 \qquad
 \tau(\alpha)=\alpha,\quad \tau(i)=-i.
-\]
+$$
 Then $\sigma^4=\tau^2=1$ and $\tau\sigma\tau=\sigma^{-1}$, so
-\[
-G=\operatorname{Gal}(K/\mathbb Q)=\langle\sigma,\tau\rangle\cong D_4.
-\]
+$$
+G=\Gal(K/\QQ)=\langle\sigma,\tau\rangle\cong D_4.
+$$
 :::
 
 :::
 
 ::: {.pf-step #three-quadratic-intermediate-fields}
 The three quadratic intermediate fields are
-\[
-\mathbb Q(i),\qquad \mathbb Q(\sqrt2),\qquad \mathbb Q(i\sqrt2).
-\]
+$$
+\QQ(i),\qquad \QQ(\sqrt2),\qquad \QQ(i\sqrt2).
+$$
 
 ::: pf-proof
 They are the fixed fields of the three order-$4$ subgroups
-\[
+$$
 \langle\sigma\rangle,\qquad
 \langle\sigma^2,\tau\rangle,\qquad
 \langle\sigma^2,\sigma\tau\rangle,
-\]
+$$
 respectively. Each displayed generator is fixed by the corresponding subgroup and generates a quadratic extension, so the fixed field is exactly the one shown.
 :::
 
@@ -77,30 +77,30 @@ respectively. Each displayed generator is fixed by the corresponding subgroup an
 
 ::: {.pf-step #five-quartic-intermediate-fields}
 The five quartic intermediate fields are
-\[
-\mathbb Q(\zeta_8),\quad
-\mathbb Q(\alpha),\quad
-\mathbb Q(i\alpha),\quad
-\mathbb Q((1+i)\alpha),\quad
-\mathbb Q((1-i)\alpha).
-\]
+$$
+\QQ(\zeta_8),\quad
+\QQ(\alpha),\quad
+\QQ(i\alpha),\quad
+\QQ((1+i)\alpha),\quad
+\QQ((1-i)\alpha).
+$$
 
 ::: pf-proof
 The five order-$2$ subgroups of $D_4$ are
-\[
+$$
 \langle\sigma^2\rangle,
 \langle\tau\rangle,
 \langle\sigma^2\tau\rangle,
 \langle\sigma\tau\rangle,
 \langle\sigma^3\tau\rangle.
-\]
-Their respective fixed fields are the five fields displayed above. For example, $\sigma^2$ fixes $i$ and $\alpha^2=\sqrt2$, hence fixes $\mathbb Q(i,\sqrt2)=\mathbb Q(\zeta_8)$; and $\sigma\tau$ fixes $(1+i)\alpha$. Each fixed field has degree $4$, so the indicated degree-$4$ subfield is the full fixed field.
+$$
+Their respective fixed fields are the five fields displayed above. For example, $\sigma^2$ fixes $i$ and $\alpha^2=\sqrt2$, hence fixes $\QQ(i,\sqrt2)=\QQ(\zeta_8)$; and $\sigma\tau$ fixes $(1+i)\alpha$. Each fixed field has degree $4$, so the indicated degree-$4$ subfield is the full fixed field.
 :::
 
 :::
 
 ::: pf-qed
-By steps [](#galois-group-is-d4){.pf-ref}, [](#three-quadratic-intermediate-fields){.pf-ref} and [](#five-quartic-intermediate-fields){.pf-ref}, together with $\mathbb Q$ and $K$, these are all intermediate fields, because they account for all ten subgroups of $D_4$.
+By steps [](#galois-group-is-d4){.pf-ref}, [](#three-quadratic-intermediate-fields){.pf-ref} and [](#five-quartic-intermediate-fields){.pf-ref}, together with $\QQ$ and $K$, these are all intermediate fields, because they account for all ten subgroups of $D_4$.
 :::
 
 :::
