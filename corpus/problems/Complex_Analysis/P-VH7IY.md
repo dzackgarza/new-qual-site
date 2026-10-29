@@ -19,15 +19,15 @@ audit:
 ---
 
 ::: {.problem}
-a. Show that in polar coordinates, the Cauchy-Riemann equations take the form
-\[
-\frac{\partial u}{\partial r}=\frac{1}{r} \frac{\partial v}{\partial \theta} \text { and } \frac{\partial v}{\partial r}=-\frac{1}{r} \frac{\partial u}{\partial \theta}
-.\]
+(a) Show that in polar coordinates, the Cauchy-Riemann equations take the form
+$$
+\frac{\partial u}{\partial r}=\frac{1}{r} \frac{\partial v}{\partial \theta} \text { and } \frac{\partial v}{\partial r}=-\frac{1}{r} \frac{\partial u}{\partial \theta}.
+$$
 
-b. Use (a) to show that the logarithm function, defined as 
-\[
-\log z=\log r+i \theta \text { where } z=r e^{i \theta} \text { with }-\pi<\theta<\pi
-.\]
+(b) Use (a) to show that the logarithm function, defined as
+$$
+\log z=\log r+i \theta \text { where } z=r e^{i \theta} \text { with }-\pi<\theta<\pi,
+$$
 is holomorphic on the region $r> 0, -\pi < \theta < \pi$.
 
 Show also that this branch cannot be extended continuously across the negative
@@ -35,73 +35,62 @@ real axis to all of $\CC\setminus\{0\}$.
 :::
 
 ::: {.solution}
-**Goal:** (a) Derive the polar form of the Cauchy–Riemann equations; (b) use it to show the principal logarithm $\log z = \log r + i\theta$ ($z = re^{i\theta}$, $-\pi < \theta < \pi$) is holomorphic on the slit plane, and show that this branch has no continuous extension across the negative real axis.
+Let $u, v$ be $C^1$ functions of $(x, y)$ on an open set not containing $0$, and regard them as functions of $(r, \theta)$ through $x = r\cos\theta$, $y = r\sin\theta$. Abbreviate $c = \cos\theta$ and $s = \sin\theta$.
 
 ::: pf
 
-::: {.pf-step #s1}
+::: {.pf-step #chain}
 
-Chain rule in polar coordinates: $u_r = u_x \cos\theta + u_y \sin\theta$ and $u_\theta = r(-u_x \sin\theta + u_y \cos\theta)$; same for $v$.
-
-::: pf-proof
-
-With $x = r\cos\theta$, $y = r\sin\theta$, $dr = \cos\theta\,dx + \sin\theta\,dy$ and $d\theta = -r\sin\theta\,dx + r\cos\theta\,dy$ by the chain rule.
-
-:::
-
-:::
-
-::: {.pf-step #s2}
-
-(a): $u_r = \frac{1}{r} v_\theta$ and $v_r = -\frac{1}{r} u_\theta$.
+$u_r = c\,u_x + s\,u_y$ and $u_\theta = r(-s\,u_x + c\,u_y)$, and likewise for $v$.
 
 ::: pf-proof
 
-The Cauchy–Riemann equations $u_x = v_y$, $u_y = -v_x$ imply, by step [](#s1){.pf-ref}, $u_r = u_x\cos\theta + u_y\sin\theta = v_y\cos\theta - v_x\sin\theta = \frac{1}{r}\qty(-v_x r\sin\theta + v_y r\cos\theta) = \frac{1}{r} v_\theta$. Similarly $v_r = v_x\cos\theta + v_y\sin\theta = -u_y\cos\theta + u_x\sin\theta = -\frac{1}{r}\qty(-u_x r\sin\theta + u_y r\cos\theta) = -\frac{1}{r} u_\theta$.
+This is the chain rule, using $x_r = c$, $y_r = s$, $x_\theta = -rs$ and $y_\theta = rc$.
 
 :::
 
 :::
 
-::: {.pf-step #s3}
+::: {.pf-step #polar-cr}
 
-(b): For $\log z = \log r + i\theta$ on $\theset{r > 0, -\pi < \theta < \pi}$, $u = \log r$ and $v = \theta$ satisfy the polar Cauchy–Riemann equations of step [](#s2){.pf-ref}.
+(a) For $r > 0$, the Cauchy--Riemann equations $u_x = v_y$, $u_y = -v_x$ hold if and only if $u_r = \frac{1}{r} v_\theta$ and $v_r = -\frac{1}{r} u_\theta$.
 
 ::: pf-proof
 
-$u_r = \frac{1}{r}$, $u_\theta = 0$, $v_r = 0$, $v_\theta = 1$, so $u_r = \frac{1}{r} = \frac{1}{r}\cdot 1 = \frac{1}{r} v_\theta$ and $v_r = 0 = -\frac{1}{r} u_\theta$.
+Put $A = u_x - v_y$ and $B = u_y + v_x$. By step [](#chain){.pf-ref},
+$$
+\begin{aligned}
+u_r - \tfrac{1}{r}v_\theta &= c\,u_x + s\,u_y + s\,v_x - c\,v_y = cA + sB, \\
+v_r + \tfrac{1}{r}u_\theta &= c\,v_x + s\,v_y - s\,u_x + c\,u_y = cB - sA.
+\end{aligned}
+$$
+The vector $(cA + sB,\ cB - sA)$ is the rotation of $(A, B)$ through $-\theta$, so it vanishes exactly when $A = B = 0$.
 
 :::
 
 :::
 
-::: {.pf-step #s4}
+::: {.pf-step #log-hol}
 
-(b): $\log z$ is holomorphic on $\theset{r > 0, -\pi < \theta < \pi}$.
+(b) The principal logarithm is holomorphic on $\{r > 0, -\pi < \theta < \pi\}$, with derivative $1/z$.
 
 ::: pf-proof
 
-$u, v$ are $C^1$ there (on the slit plane, $\theta$ is a smooth single-valued function of $z$, and $\log r$ is smooth), and they satisfy the Cauchy–Riemann equations in polar form by step [](#s3){.pf-ref}; by the standard criterion, $\log z$ is holomorphic, with derivative $e^{-i\theta}\qty(u_r + i v_r) = \frac{e^{-i\theta}}{r} = \frac{1}{z}$.
+On this slit plane, $(r, \theta)$ are smooth functions of $(x, y)$, so $u = \log r$ and $v = \theta$ are $C^1$. They satisfy $u_r = \frac1r = \frac1r v_\theta$ and $v_r = 0 = -\frac1r u_\theta$, so by step [](#polar-cr){.pf-ref} they satisfy the Cauchy--Riemann equations. A $C^1$ function satisfying the Cauchy--Riemann equations is holomorphic, and its derivative is $u_x + i v_x = e^{-i\theta}(u_r + i v_r) = \frac{1}{re^{i\theta}} = \frac1z$.
 
 :::
 
 :::
 
-::: {.pf-step #s5}
+::: pf-step
 
-(b): The principal branch has no continuous extension to all of $\CC\setminus\{0\}$.
+(b) The principal branch has no continuous extension to $\CC\setminus\{0\}$.
 
 ::: pf-proof
 
-The principal branch is continuous on its slit-plane domain. To see that it cannot extend across the cut, fix $z_0 = -r_0$ with $r_0 > 0$ and approach it from the upper half-plane, $z = r_0 e^{i\theta}$ with $\theta \to \pi^-$: $\log z \to \log r_0 + i\pi$. Approaching from the lower half-plane, $\theta \to -\pi^+$: $\log z \to \log r_0 - i\pi$. These two limits differ by $2\pi i$, so no continuous extension can be defined at $z_0$.
+Fix $z_0 = -r_0$ with $r_0 > 0$. Along $z = r_0 e^{i\theta}$ with $\theta \to \pi^-$, $\log z \to \log r_0 + i\pi$; with $\theta \to -\pi^+$, $\log z \to \log r_0 - i\pi$. The two limits differ by $2\pi i$, so no value at $z_0$ makes the extension continuous.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s2){.pf-ref} proves (a), and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove (b): holomorphicity on the slit plane and failure of continuous extension across its branch cut.
 
 :::
 
