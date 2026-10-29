@@ -50,11 +50,14 @@ audit:
 
 ::: pf-step
 
-(a) What convergence of a series means, and how to check it.
+(a) $\sum_{n\ge 1}a_n$ converges if and only if its partial sums $s_N = \sum_{n\le N}a_n$ converge to a finite limit.
+It converges if and only if it satisfies the Cauchy criterion: for every $\eps > 0$ there is $N$ with $\abs{\sum_{n=M+1}^{K}a_n} < \eps$ for all $K > M \ge N$.
 
 ::: pf-proof
 
-$\sum_{n\ge 1}a_n$ converges iff the sequence of partial sums $s_N = \sum_{n\le N}a_n$ converges (to a finite limit). Practical checks: (i) necessary: $a_n \to 0$; (ii) Cauchy criterion: for every $\eps > 0$ there is $N$ with $|\sum_{n=M+1}^{K}a_n| < \eps$ for all $K > M \ge N$; (iii) tests: comparison, ratio, root, integral, alternating series, and absolute convergence.
+The first sentence is the definition.
+The second is the Cauchy criterion for the sequence $(s_N)$ in the complete space $\RR$, since $s_K - s_M = \sum_{n=M+1}^K a_n$.
+In practice the criterion is checked through the comparison, ratio, root, integral and alternating series tests of part (e), or through absolute convergence (part (i)); $a_n \to 0$ is necessary (part (c)) but not sufficient (part (f)).
 
 :::
 
@@ -62,11 +65,13 @@ $\sum_{n\ge 1}a_n$ converges iff the sequence of partial sums $s_N = \sum_{n\le 
 
 ::: pf-step
 
-(b) Uniform convergence of a series, and how to disprove it.
+(b) $\sum f_n$ converges uniformly on $E$ if and only if its partial sums $S_N = \sum_{n\le N}f_n$ converge uniformly on $E$ to some $S$, that is, $\sup_{x\in E}\abs{S_N(x) - S(x)} \to 0$.
+It fails to converge uniformly to its pointwise sum $S$ if and only if there are $\eps > 0$, infinitely many $N$ and points $x_N \in E$ with $\abs{S_N(x_N) - S(x_N)} \ge \eps$.
 
 ::: pf-proof
 
-$\sum f_n$ converges uniformly on $E$ iff the partial sums $S_N = \sum_{n\le N}f_n$ converge uniformly on $E$: $\sup_{x\in E}|S_N(x) - S(x)| \to 0$. To show it does not converge uniformly: exhibit $\eps > 0$ and points $x_N \in E$ with $|S_N(x_N) - S(x_N)| \ge \eps$ for infinitely many $N$ (or: the tail $\sup_{x\in E}|\sum_{n>N}f_n(x)|$ fails to tend to $0$).
+The first sentence is the definition.
+The second is its negation: the supremum does not tend to $0$ exactly when it is at least some $\eps > 0$ for infinitely many $N$, and a supremum at least $\eps$ is witnessed by a point at which the difference is at least $\eps/2$; replace $\eps$ by $\eps/2$.
 
 :::
 
@@ -78,7 +83,7 @@ $\sum f_n$ converges uniformly on $E$ iff the partial sums $S_N = \sum_{n\le N}f
 
 ::: pf-proof
 
-$a_n = s_n - s_{n-1} \to s - s = 0$.
+If $s_N \to s$, then $a_n = s_n - s_{n-1} \to s - s = 0$.
 
 :::
 
@@ -86,11 +91,14 @@ $a_n = s_n - s_{n-1} \to s - s = 0$.
 
 ::: pf-step
 
-(d) Convergent series have small tails, and this condition is necessary and sufficient for convergence.
+(d) If $\sum_{n\ge1}a_n$ converges, then each tail $T_N = \sum_{n>N}a_n$ converges and $T_N \to 0$.
+The tail condition is not a criterion for convergence, since $T_N$ is defined only when the series converges; the necessary and sufficient condition in this spirit is the Cauchy criterion $\sup_{K>N}\abs{\sum_{N<n\le K} a_n} \to 0$.
 
 ::: pf-proof
 
-$\sum_{n\ge1}a_n$ converges iff the tails $T_N = \sum_{n>N}a_n$ satisfy $T_N \to 0$ as $N \to \infty$: if $s_N \to s$, then $T_N = s - s_N \to 0$; conversely, if every tail $T_N$ converges and $T_N \to 0$, then $s_N = T_0 - T_N$ converges.
+If $s_N \to s$, then $\sum_{N<n\le K} a_n = s_K - s_N \to s - s_N$ as $K\to\infty$, so $T_N = s - s_N$, and $T_N \to 0$.
+A series whose partial sums converge has every tail convergent, and conversely the convergence of a single tail $T_N$ already gives $s_K = s_N + \sum_{N<n\le K}a_n \to s_N + T_N$; so the tail condition presupposes convergence.
+The finite blocks $\sum_{N<n\le K}a_n = s_K - s_N$ are always defined, and $\sup_{K>N}\abs{s_K - s_N} \to 0$ is equivalent to $(s_N)$ being Cauchy, which is equivalent to convergence by part (a).
 
 :::
 
@@ -98,11 +106,18 @@ $\sum_{n\ge1}a_n$ converges iff the tails $T_N = \sum_{n>N}a_n$ satisfy $T_N \to
 
 ::: pf-step
 
-(e) Ratio test.
+(e) The four tests hold as stated in the substeps.
 
 ::: pf-proof
 
-If $a_n \ne 0$ eventually and $\limsup |a_{n+1}/a_n| < 1$, then $\sum a_n$ converges absolutely; if $\liminf |a_{n+1}/a_n| > 1$, it diverges. Proof of the first: pick $r$ with $\limsup < r < 1$; then $|a_n| \le C r^n$ eventually, and the geometric series $\sum r^n$ converges.
+::: pf-step
+
+Ratio test: if $a_n \ne 0$ eventually and $\limsup \abs{a_{n+1}/a_n} < 1$, then $\sum a_n$ converges absolutely; if $\liminf \abs{a_{n+1}/a_n} > 1$, it diverges.
+
+::: pf-proof
+
+Pick $r$ with $\limsup\abs{a_{n+1}/a_n} < r < 1$; then $\abs{a_n} \le C r^n$ eventually, and the geometric series $\sum r^n$ converges.
+If $\liminf \abs{a_{n+1}/a_n} > 1$, then $\abs{a_n}$ is eventually increasing, so $a_n \not\to 0$ and the series diverges by part (c).
 
 :::
 
@@ -110,11 +125,12 @@ If $a_n \ne 0$ eventually and $\limsup |a_{n+1}/a_n| < 1$, then $\sum a_n$ conve
 
 ::: pf-step
 
-(e) Root test.
+Root test: if $\limsup \sqrt[n]{\abs{a_n}} < 1$, then $\sum a_n$ converges absolutely; if $\limsup\sqrt[n]{\abs{a_n}} > 1$, it diverges.
 
 ::: pf-proof
 
-If $\limsup \sqrt[n]{|a_n|} < 1$, then $\sum a_n$ converges absolutely (choose $r$ with the limsup $< r < 1$; eventually $\sqrt[n]{|a_n|} \le r$, i.e. $|a_n| \le r^n$); if $\limsup\sqrt[n]{|a_n|} > 1$, the terms do not tend to $0$ and the series diverges.
+Choose $r$ with the limsup $< r < 1$; eventually $\abs{a_n} \le r^n$, and the geometric series converges.
+If the limsup exceeds $1$, then $\abs{a_n} > 1$ for infinitely many $n$, so $a_n \not\to 0$.
 
 :::
 
@@ -122,35 +138,39 @@ If $\limsup \sqrt[n]{|a_n|} < 1$, then $\sum a_n$ converges absolutely (choose $
 
 ::: pf-step
 
-(e) Integral test.
+Integral test: if $f \ge 0$ is decreasing on $[1,\infty)$, then $\sum_{n\ge1} f(n)$ and $\int_1^\infty f$ converge or diverge together.
 
 ::: pf-proof
 
-If $f \ge 0$ is decreasing on $[1,\infty)$, then $\sum_{n=1}^N f(n)$ and $\int_1^N f$ converge or diverge together, since $\int_1^{N+1}f \le \sum_{n=1}^N f(n) \le f(1) + \int_1^N f$ (compare the sum to the integral over unit intervals).
+Comparing the sum with the integral over unit intervals gives $\int_1^{N+1}f \le \sum_{n=1}^N f(n) \le f(1) + \int_1^N f$, and both sides are monotone in $N$.
 
 :::
 
 :::
 
-::: {.pf-step #s8}
+::: {.pf-step #alternating}
 
-(e) Alternating series test.
+Alternating series test: if $a_n \ge 0$ decreases to $0$, then $\sum (-1)^{n+1}a_n$ converges, and the error after $N$ terms is at most $a_{N+1}$.
 
 ::: pf-proof
 
-If $a_n \ge 0$ decreases to $0$, then $\sum (-1)^{n+1}a_n$ converges: the even and odd partial sums are monotone and bounded (interleaved), so both converge to a common limit, and the error after $N$ terms is bounded by $a_{N+1}$.
+The even partial sums increase, the odd partial sums decrease, and each odd partial sum exceeds each even one, so both converge; their difference is $\pm a_n \to 0$, so the limits agree.
 
 :::
 
 :::
 
-::: {.pf-step #s9}
+:::
 
-(f) The harmonic series diverges.
+:::
+
+::: {.pf-step #harmonic}
+
+(f) $\sum_{n\ge1} 1/n = \infty$.
 
 ::: pf-proof
 
-Group terms: $1 + \tfrac12 + (\tfrac13+\tfrac14) + (\tfrac15+\cdots+\tfrac18) + \cdots \ge 1 + \tfrac12 + \tfrac12 + \tfrac12 + \cdots = \infty$; or use the integral test with $f(x) = 1/x$ ($\int_1^\infty dx/x = \infty$).
+Group the terms: $1 + \tfrac12 + (\tfrac13+\tfrac14) + (\tfrac15+\cdots+\tfrac18) + \cdots \ge 1 + \tfrac12 + \tfrac12 + \tfrac12 + \cdots = \infty$.
 
 :::
 
@@ -158,11 +178,12 @@ Group terms: $1 + \tfrac12 + (\tfrac13+\tfrac14) + (\tfrac15+\cdots+\tfrac18) + 
 
 ::: pf-step
 
-(g) Sum of a geometric series.
+(g) For $\abs{x} < 1$, $\sum_{n\ge0} x^n = \boxed{\frac{1}{1-x}}$, and for $\abs{x} \ge 1$ the geometric series diverges.
 
 ::: pf-proof
 
-$s_N = \sum_{n=0}^{N-1} x^n$ satisfies $(1-x)s_N = 1 - x^N$, so $s_N = \frac{1-x^N}{1-x}$ for $x \ne 1$; if $|x| < 1$, $s_N \to \frac{1}{1-x}$. If $|x| \ge 1$ and $x \ne 1$, the terms do not tend to $0$, so it diverges; at $x = 1$, $s_N = N \to \infty$.
+$s_N = \sum_{n=0}^{N-1} x^n$ satisfies $(1-x)s_N = 1 - x^N$, so $s_N = \frac{1-x^N}{1-x}$ for $x \ne 1$, and $s_N \to \frac{1}{1-x}$ when $\abs{x} < 1$.
+If $\abs{x} \ge 1$, the terms $x^n$ do not tend to $0$, so the series diverges by part (c).
 
 :::
 
@@ -170,11 +191,12 @@ $s_N = \sum_{n=0}^{N-1} x^n$ satisfies $(1-x)s_N = 1 - x^N$, so $s_N = \frac{1-x
 
 ::: pf-step
 
-(h) The $p$-test.
+(h) $\sum_{n\ge1} n^{-p}$ converges if and only if $p > 1$.
 
 ::: pf-proof
 
-$\sum_{n\ge1} n^{-p}$ converges iff $p > 1$. For $p > 1$ use the integral test: $\int_1^\infty x^{-p}dx = \frac{1}{p-1} < \infty$; for $p \le 1$: $\sum n^{-p} \ge \sum n^{-1} = \infty$ (or integral test for $p < 1$).
+For $p > 1$, $\int_1^\infty x^{-p}\,dx = \frac{1}{p-1} < \infty$, so the integral test of part (e) gives convergence.
+For $p \le 1$, $n^{-p} \ge n^{-1}$, so the series diverges by comparison with step [](#harmonic){.pf-ref}.
 
 :::
 
@@ -182,11 +204,13 @@ $\sum_{n\ge1} n^{-p}$ converges iff $p > 1$. For $p > 1$ use the integral test: 
 
 ::: pf-step
 
-(i) Absolute and conditional convergence.
+(i) $\sum a_n$ converges absolutely if $\sum \abs{a_n} < \infty$, and absolute convergence implies convergence.
+The series $\sum (-1)^{n+1}/n$ converges but not absolutely.
 
 ::: pf-proof
 
-$\sum a_n$ converges absolutely iff $\sum |a_n| < \infty$, which implies convergence (by the Cauchy criterion: $|\sum_{M+1}^K a_n| \le \sum_{M+1}^K |a_n|$). Conditional convergence means $\sum a_n$ converges but $\sum|a_n| = \infty$. Example: $\sum (-1)^{n+1}/n$ converges (alternating series test, step [](#s8){.pf-ref}) but $\sum 1/n$ diverges (step [](#s9){.pf-ref}).
+By the Cauchy criterion of part (a), since $\abs{\sum_{M+1}^K a_n} \le \sum_{M+1}^K \abs{a_n}$, absolute convergence implies convergence.
+The series $\sum (-1)^{n+1}/n$ converges by step [](#alternating){.pf-ref}, and $\sum 1/n$ diverges by step [](#harmonic){.pf-ref}.
 
 :::
 
