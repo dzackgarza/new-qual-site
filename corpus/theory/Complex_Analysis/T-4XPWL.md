@@ -31,9 +31,5 @@ $$
 for any $r<\rho<R$, independent of $\rho$.
 The expansion is unique.
 
-If $r=0$, so that $z_0$ is an [[D-IWIA5|isolated singularity]] of $f$, then the [[D-C3JIU|principal part]] $\sum_{n<0}c_n(z-z_0)^n$ has no nonzero terms if and only if $z_0$ is [[D-BQLJV|removable]], finitely many if and only if $z_0$ is a [[D-R4BDD|pole]], and infinitely many if and only if $z_0$ is [[D-VKP6N|essential]].
-:::
-
-::: {.concept}
-See [@Ahl79, Chapter 5, Section 1.3, p. 184].
+If $r=0$, so that $z_0$ is an [[D-IWIA5|isolated singularity]] of $f$, then the [[D-C3JIU|principal part]] $\sum_{n<0}c_n(z-z_0)^n$ has no nonzero terms if and only if $z_0$ is [[D-BQLJV|removable]], finitely many if and only if $z_0$ is a [[D-R4BDD|pole]], and infinitely many if and only if $z_0$ is [[D-VKP6N|essential]] [@Ahl79, Chapter 5, Section 1.3, p. 184].
 :::
