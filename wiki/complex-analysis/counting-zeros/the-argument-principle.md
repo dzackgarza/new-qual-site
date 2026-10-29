@@ -10,7 +10,7 @@ topics:
 
 ## The logarithmic derivative
 
-[[D-WHYOA]]
+[[D-IA5FS]]
 
 ::: {.fact}
 Every zero of a meromorphic $f$ is a simple pole of $\logd f$ whose residue is its multiplicity.
