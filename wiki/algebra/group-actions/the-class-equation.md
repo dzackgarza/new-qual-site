@@ -13,19 +13,6 @@ For a finite group $G$, each element $g$ either lies in the [[D-NK7G7|center]] $
 
 [[C-O7CP3]]
 
-::: {.remark title="Derivation from orbit-stabilizer"}
-For the conjugation action $\phi$ of $G$ on itself, the fixed points are the elements of $Z(G)$ and the orbit of $g$ is $[g]$, with $\size{[g]} = [G : C_G(g)]$.
-If $g_1,\ldots,g_r$ represent the conjugacy classes of size greater than $1$, then
-$$
-\begin{aligned}
-\size G &= \size{\Fix(\phi)} + \sum_{i=1}^r \size{\Orb(g_i)} \\
-&= \size{Z(G)} + \sum_{i=1}^r \size{[g_i]} \\
-&= \size{Z(G)} + \sum_{i=1}^r [G : C_G(g_i)],
-\end{aligned}
-$$
-which is the class equation.
-:::
-
 ## $p$-groups
 
 A nontrivial finite $p$-group has nontrivial center ([[E-6AOD7|class equation, part (a)]]). Consequences for a group $G$ of order $p^k$:
