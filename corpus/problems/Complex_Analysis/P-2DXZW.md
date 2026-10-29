@@ -16,21 +16,40 @@ review: draft
 
 ::: {.problem}
 Suppose $f: \CC\to \CC$ is entire and
-\[
+$$
 \abs{f(z)} \leq \abs{z}^{1\over 2} \quad\text{ when } \abs{z} > 10
-.\]
+.$$
 
 Prove that $f$ is constant.
 :::
 
 ::: {.solution}
-Let $R> 10$, then by Cauchy:
-\[
-2\pi \abs{f'(z)} 
-&\leq \oint_{\abs{\xi} = R} { \abs{ f(\xi)} \over \abs{\xi}^2 } \dxi \\
-&\leq \oint_{\abs{\xi} = R} R^{-2} \abs{\xi}^{1\over 2} \dxi \\
-&= R^{-{3\over 2}} \cdot 2\pi R \\
-&\sim R^{-{1\over 2}} \\
-&\convergesto{R\to\infty} 0
-.\]
+
+::: pf
+
+::: {.pf-step #derivative-vanishes}
+$f'(z)=0$ for every $z\in\CC$.
+
+::: pf-proof
+Fix $z$ and let $R>10+\abs{z}$.
+Every $\xi$ with $\abs{\xi-z}=R$ satisfies $10<\abs{\xi}\leq\abs{z}+R$, so $\abs{f(\xi)}\leq(\abs{z}+R)^{1/2}$.
+The Cauchy estimate on the circle $\abs{\xi-z}=R$ gives
+$$
+\abs{f'(z)}\leq\frac{(\abs{z}+R)^{1/2}}{R}\convergesto{R\to\infty}0.
+$$
+:::
+
+:::
+
+::: pf-step
+$f$ is constant.
+
+::: pf-proof
+By step [](#derivative-vanishes){.pf-ref}, $f'\equiv 0$ on the connected set $\CC$.
+:::
+
+:::
+
+:::
+
 :::
