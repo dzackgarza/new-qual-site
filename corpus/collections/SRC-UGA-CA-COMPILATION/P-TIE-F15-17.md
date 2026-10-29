@@ -230,3 +230,7 @@ Step [](#s1-4){.pf-ref} gives the stated formula, and step [](#s1-5){.pf-ref} gi
 :::
 
 :::
+
+::: {.remark}
+The area of $f(D_1)$ can be infinite: for the Koebe function $z/(1-z)^2=\sum_n nz^n$, the image of the unit disk is $\CC$ minus a ray.
+:::
