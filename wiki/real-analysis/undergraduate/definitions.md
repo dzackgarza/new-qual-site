@@ -11,7 +11,7 @@ order: 10
 
 [[D-HHVPT]]
 
-[[FD-ST7TD]]
+[[D-WGYSB]]
 
 ::: {.remark}
 In the definition of continuity on a set, $\delta$ may depend on both $\varepsilon$ and the point $x_0$; in the definition of uniform continuity, $\delta$ depends only on $\varepsilon$, and the condition holds for all pairs $x,y$.
