@@ -8,9 +8,8 @@ classification:
   - real-analysis
   topics:
   - Hilbert Spaces
-relations:
-- kind: related-to
-  target: P-FCOU3
+  - L²
+relations: []
 review: draft
 audit:
 - event: solution-written
