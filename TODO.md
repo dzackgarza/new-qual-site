@@ -188,7 +188,15 @@ mathematical correction under its own node, not under copy policy.
     and the `data-cites` key differs from the label; the `<title>` of P-ALGQUAL18W-I1 carries
     expanded TeX for nested `\sqrt`; the syllabus locator `[@Smi96, sec. 844-1]` renders as a
     section range; `tikzcd` diagrams are still missing on groups pages (D-KRKV7, FF-TSZNT,
-    T-NFQBO; open under `ad-tikzcd`). **Acceptance:** each corrected on the deployed pages.
+    T-NFQBO; open under `ad-tikzcd`). Site surfaces (round 3): the SRC-CALCULUS-PRACTICE-TEST3
+    MD chip opens a hand-edited partial `extracted/` file, not the MinerU extraction beside the
+    PDF; `problems.html` splits URL filter values on commas, so comma-named institutions match
+    nothing; the default problem order puts multi-area cards and `algebraic-geometry` before
+    `algebra`; SRC-MATH8100-FALL-2019-ASSIGNMENTS says "0 problems" although its child
+    collections hold 70; P-2J6HK renders its remark before its hint and solution (`STYLE-07`);
+    search excerpts cut inside math; collection-mode panes with no values show "No data
+    available in table"; `?solution=unsolved` reads as an invalid filter when the count is zero.
+    **Acceptance:** each corrected on the deployed pages.
   - **`ad3-algebra-content`**. **Needs:** none. Wrong mathematics: P-APAS18H invariant-ring
     generators omit $xy(x^2-y^2)$; P-APA22F(a) value; PR-OODAV slogan (an abstract
     $B\cong A\oplus C$ does not split); P-RPSTO(b) fixed-field tower indexed backwards;
