@@ -20,12 +20,10 @@ audit:
 ---
 
 ::: {.problem}
-- Show that if each $f_n$ is holomorphic on $\Omega$ and $F \definedas \sum f_n$ converges uniformly on every compact subset of $\Omega$, then $F$ is holomorphic.
+Show that if each $f_n$ is holomorphic on $\Omega$ and $F \definedas \sum f_n$ converges uniformly on every compact subset of $\Omega$, then $F$ is holomorphic.
 :::
 
 ::: {.solution}
-**Goal:** If each $f_n$ is holomorphic on $\Omega$ and $F \definedas \sum_n f_n$ converges uniformly on every compact subset of $\Omega$, show $F$ is holomorphic on $\Omega$.
-
 ::: pf
 
 ::: {.pf-step #s1}
@@ -52,7 +50,7 @@ Since $S_N \rightrightarrows F$ on the compact set $\Delta$, $\int_\Delta F = \l
 
 :::
 
-::: {.pf-step #s3}
+::: pf-step
 
 $F$ is holomorphic on $\Omega$.
 
@@ -61,12 +59,6 @@ $F$ is holomorphic on $\Omega$.
 By Morera's theorem, a continuous function on an open set with vanishing integrals over all closed triangles is holomorphic; step [](#s1){.pf-ref} gives continuity and step [](#s2){.pf-ref} gives the vanishing integrals.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s3){.pf-ref} is the claim.
 
 :::
 
