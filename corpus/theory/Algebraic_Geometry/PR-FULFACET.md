@@ -50,6 +50,6 @@ If $\sigma=\Cone(v_1,\ldots,v_r)$, then
 $$
 \sigma^\vee=\theset{u\in M_\RR\st\inner{u}{v_i}\geq0\text{ for }1\leq i\leq r}.
 $$
-Conversely, if $\sigma=\bigcap_j H_{u_j}^+$, then $\sigma^\vee=\Cone(u_1,\ldots,u_t)$ after redundant inequalities are removed.
+Conversely, if $\sigma=\theset{v\in N_\RR\st\inner{u_j}{v}\geq0\text{ for }1\leq j\leq t}$, then $\sigma^\vee=\Cone(u_1,\ldots,u_t)$.
 For a full-dimensional rational polyhedral cone, the irredundant inequalities are indexed by its facets, so the primitive facet normals $u_\tau$ are exactly the primitive ray generators of $\sigma^\vee$.
 :::
