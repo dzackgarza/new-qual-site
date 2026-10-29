@@ -92,7 +92,7 @@ For $E_n\nearrow E=\bigcup_nE_n$ the equality $\mu(E)=\lim_n\mu(E_n)$ holds for 
 
 [[D-3XE77]]
 
-[[FD-QA5ME]] [[FD-KNEDG]]
+[[FD-KNEDG]]
 
 [[D-MDJII]]
 
