@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-3-01
 kind: problem
-title: Maxim algebraic topology 3.1
+title: Cohomology rings of real and complex projective spaces and lens spaces
 classification:
   areas: [topology]
   topics: []
