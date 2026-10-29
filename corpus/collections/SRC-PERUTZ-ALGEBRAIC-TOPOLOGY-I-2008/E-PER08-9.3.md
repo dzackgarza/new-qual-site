@@ -26,27 +26,31 @@ $$
 :::
 
 ::: {.solution}
-The proposed short exact sequence is false in general.
+The statement is false.
+Take $X = S^2$, and let $U$ and $V$ be open neighborhoods of the closed northern and southern hemispheres, each obtained by adding a thin open band around the equator.
 
-Take $X=S^2$ and let $U,V$ be slightly enlarged northern and southern hemispheres.
-Then $U$ and $V$ are contractible, while
-$$
-U\cap V\simeq S^1.
-$$
-Thus
-$$
-H_1(U\cap V)\cong\ZZ,
-\qquad
-H_1(U)\oplus H_1(V)=0,
-\qquad
-H_1(X)=0.
-$$
-The proposed first map would be an injection $\ZZ\to0$, impossible.
+::: pf
 
-The Mayer--Vietoris sequence explains the obstruction:
-$$
-H_2(X)\xrightarrow{\delta}H_1(U\cap V)\to H_1(U)\oplus H_1(V)\to H_1(X)\to H_0(U\cap V).
-$$
-Path connectedness of $U,V,U\cap V$ makes the last map injective, so the map onto $H_1(X)$ is surjective, but the preceding map need not be injective because the connecting map from $H_2(X)$ can be nonzero.
-In the sphere example it is an isomorphism.
+::: {.pf-step #spaces}
+$U$ and $V$ are contractible and $U \cap V \simeq S^1$; all three are path connected.
+
+::: pf-proof
+Each of $U$ and $V$ is homeomorphic to an open disk.
+The intersection $U \cap V$ is an open band around the equator, homeomorphic to $S^1 \times (-1, 1)$, which deformation retracts onto the equator.
+:::
+
+:::
+
+::: pf-step
+No short exact sequence $0 \to H_1(U \cap V) \to H_1(U) \oplus H_1(V) \to H_1(X) \to 0$ exists for this cover.
+
+::: pf-proof
+By step [](#spaces){.pf-ref}, $H_1(U \cap V) \cong \ZZ$ and $H_1(U) \oplus H_1(V) = 0$.
+An injection $\ZZ \to 0$ does not exist.
+In the Mayer–Vietoris sequence $H_2(X) \xrightarrow{\partial} H_1(U \cap V) \to H_1(U) \oplus H_1(V) \to H_1(X) \to \tilde H_0(U \cap V) = 0$, the map onto $H_1(X)$ is surjective, but the connecting map $\partial\colon H_2(S^2) \cong \ZZ \to H_1(U \cap V) \cong \ZZ$ is an isomorphism, so the left map is not injective.
+:::
+
+:::
+
+:::
 :::
