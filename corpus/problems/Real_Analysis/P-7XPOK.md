@@ -41,7 +41,7 @@ audit:
 
 ::: {.pf-step #s1}
 
-A family of pairwise disjoint intervals in $\RR$, each with nonempty interior, is countable.
+(a) A family of pairwise disjoint intervals in $\RR$, each with nonempty interior, is countable.
 
 ::: pf-proof
 
@@ -53,7 +53,7 @@ Each interval contains a rational number; choosing one for each interval gives a
 
 ::: pf-step
 
-Every open $U \subseteq \RR$ is a countable union of disjoint open intervals.
+(b) Every open $U \subseteq \RR$ is a countable union of disjoint open intervals.
 
 ::: pf-proof
 
@@ -65,7 +65,7 @@ The connected components of $U$ partition $U$. Each is open, because $\RR$ is lo
 
 ::: pf-step
 
-Every open $U \subseteq \RR^n$ is a countable union of almost disjoint closed cubes.
+(c) Every open $U \subseteq \RR^n$ is a countable union of almost disjoint closed cubes.
 
 ::: pf-proof
 
@@ -77,7 +77,7 @@ Let $\mathcal F$ be the set of closed dyadic cubes $Q \subseteq U$ of side $2^{-
 
 ::: pf-step
 
-The Cantor set $C = \bigcap_n C_n$, with $C_n$ the union of the $2^n$ closed intervals of length $3^{-n}$ remaining at stage $n$, is compact, of outer measure zero, totally disconnected, and perfect.
+(d) The Cantor set $C = \bigcap_n C_n$, with $C_n$ the union of the $2^n$ closed intervals of length $3^{-n}$ remaining at stage $n$, is compact, of outer measure zero, totally disconnected, and perfect.
 
 ::: pf-proof
 
@@ -89,7 +89,7 @@ $C$ is a closed subset of $[0,1]$, hence compact, and $m^*(C) \le m(C_n) = (2/3)
 
 ::: pf-step
 
-If $(E_n)$ are measurable with $\sum_n \mu(E_n) < \infty$, then $\mu(\limsup_n E_n) = 0$.
+(e) If $(E_n)$ are measurable with $\sum_n \mu(E_n) < \infty$, then $\mu(\limsup_n E_n) = 0$.
 
 ::: pf-proof
 
