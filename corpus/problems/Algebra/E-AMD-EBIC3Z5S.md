@@ -22,22 +22,22 @@ audit:
 ---
 
 ::: {.exercise}
-Show that if $\operatorname{Spec}(R) \subseteq \operatorname{MaxSpec}(R)$ and $R$ is an integral domain, then $R$ is a UFD.
+Show that if $\Spec(R) \subseteq \maxspec(R)$ and $R$ is an integral domain, then $R$ is a UFD.
 :::
 
 ::: {.solution}
-Because \(R\) is an integral domain, the zero ideal \((0)\) is prime. Hence
-\[
-(0)\in\operatorname{Spec}(R).
-\]
-By hypothesis every prime ideal is maximal, so \((0)\) is maximal. Therefore
-\[
+Because $R$ is an integral domain, the zero ideal $(0)$ is prime. Hence
+$$
+(0)\in\Spec(R).
+$$
+By hypothesis every prime ideal is maximal, so $(0)$ is maximal. Therefore
+$$
 R/(0)\cong R
-\]
+$$
 is a field.
 
 Every field is a UFD. Thus
-\[
+$$
 \boxed{R\text{ is a UFD}.}
-\]
+$$
 :::
