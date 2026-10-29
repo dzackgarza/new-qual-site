@@ -26,6 +26,7 @@ prompts:
 ---
 
 ::: {.theorem}
+Let $S=\bigoplus_{d\geq0}S_d$ be a graded ring and $S_+=\bigoplus_{d>0}S_d$.
 For $f \in S_d$ homogeneous of positive degree, put
 $$
 D_+(f)\coloneqq\theset{\mfp\in\Proj S\st f\notin\mfp}.
@@ -39,7 +40,7 @@ The $D_+(f)$ for homogeneous $f\in S_+$ cover $\Proj S$, so $\Proj S$ is a schem
 :::
 
 ::: {.example}
-For $S = \kxnz$ with the usual grading, $D_+(x_i) \cong \Spec k[x_0/x_i, \dots, x_n/x_i] \cong \AA^n\slice k$, recovering the standard charts of $\PP^n\slice k$.
+For $S = \kxnz$ with the usual grading, $D_+(x_i) \cong \Spec k[x_0/x_i, \ldots, x_n/x_i] \cong \AA^n\slice k$, recovering the standard charts of $\PP^n\slice k$.
 :::
 
 ::: {.remark}
