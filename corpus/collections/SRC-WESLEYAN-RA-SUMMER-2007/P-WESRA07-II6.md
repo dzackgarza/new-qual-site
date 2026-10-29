@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WESRA07-II6
 kind: problem
-title: The printed integral functional is not a norm on $C([0,1])$
+title: The $L^1$ norm on $C([0,1])$ and the incompleteness of $C([0,1])$ under it
 classification:
   areas: [real-analysis]
   topics: [Function Spaces]
@@ -19,25 +19,21 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-corrected
+  by: claude-opus-5.5
+  date: 2026-10-30
+  note: 'The source prints the norm as \|f\| := \int_0^1 f\,dm, without absolute values, which is not a norm (it takes the value -1 at f = -1 and vanishes at f(x) = x - 1/2). The statement now uses \int_0^1 |f|\,dm, the intended L^1 norm.'
 ---
 
 ::: {.problem}
-The source defines, for $f\in C([0,1],\RR)$,
+For $f\in C([0,1],\RR)$ define
 $$
-\|f\|:=\int_0^1 f\,dm
+\norm{f}\coloneqq\int_0^1 \abs{f}\,dm.
 $$
-and asks:
 
 1. Explain why this defines a norm on $C([0,1])$.
 
 2. Is $C([0,1])$ complete with respect to this norm?
-
-Is the printed claim valid?
-If not, identify the defect.
-For comparison, also answer the completeness question for the likely corrected formula
-$$
-\|f\|_1:=\int_0^1|f|\,dm.
-$$
 :::
 
 ::: {.solution}
@@ -46,28 +42,13 @@ $$
 
 ::: pf-step
 
-The printed formula does not define a norm.
+$\norm{\cdot}$ is a norm on $C([0,1])$.
 
 ::: pf-proof
 
-A norm must be nonnegative.
-For the continuous function $f\equiv-1$,
-$$
-\int_0^1 f\,dm=-1<0.
-$$
-It also fails positive definiteness: for
-$$
-f(x)=x-\frac12,
-$$
-we have $f\not\equiv0$ but
-$$
-\int_0^1f(x)\,dx=0.
-$$
-Hence
-$$
-\boxed{f\longmapsto\int_0^1f\,dm\text{ is not a norm on }C([0,1]).}
-$$
-Therefore part 2 of the source, literally interpreted as completeness with respect to "this norm," is not well posed.
+Homogeneity $\norm{cf} = \abs{c}\norm{f}$ and the triangle inequality $\norm{f+g}\le\norm{f}+\norm{g}$ follow from $\abs{cf} = \abs{c}\abs{f}$, $\abs{f+g}\le\abs{f}+\abs{g}$ and linearity and monotonicity of the integral.
+If $\norm{f}=0$, then $\abs{f}=0$ almost everywhere.
+A continuous $f$ with $f(x_0)\ne 0$ satisfies $\abs{f}>\abs{f(x_0)}/2$ on an interval of positive length around $x_0$, so $f\equiv0$.
 
 :::
 
@@ -75,42 +56,14 @@ Therefore part 2 of the source, literally interpreted as completeness with respe
 
 ::: pf-step
 
-With the absolute value inserted, the formula is a norm but $C([0,1])$ is not complete.
+$\boxed{C([0,1])\text{ is not complete under }\norm{\cdot}.}$
 
 ::: pf-proof
 
-The functional
-$$
-\|f\|_1=\int_0^1|f(x)|\,dx
-$$
-is a norm on $C([0,1])$: homogeneity and the triangle inequality are immediate, and if $\|f\|_1=0$, then $|f|=0$ almost everywhere.
-Since $f$ is continuous, this forces $f\equiv0$.
-
-To see incompleteness, let
-$$
-h=\mathbf1_{[1/2,1]}.
-$$
-Choose continuous functions $h_n$ such that
-$$
-h_n(x)=0\quad(x\le 1/2-1/n),
-\qquad
-h_n(x)=1\quad(x\ge1/2+1/n),
-$$
-and interpolate linearly on the interval between these two points.
-Then
-$$
-\|h_n-h\|_1\le\frac2n\longrightarrow0.
-$$
-Thus $(h_n)$ is Cauchy in the $L^1$ norm.
-
-If it converged in that norm to some $g\in C([0,1])$, uniqueness of $L^1$ limits would give $g=h$ almost everywhere.
-Continuity would then force $g=0$ on $(0,1/2)$ and $g=1$ on $(1/2,1)$, which is impossible at $x=1/2$.
-Hence no continuous $L^1$ limit exists.
-
-Therefore, for the corrected norm,
-$$
-\boxed{C([0,1])\text{ is not complete under }\|\cdot\|_1.}
-$$
+Let $h=\mathbf1_{[1/2,1]}$, and let $h_n\in C([0,1])$ be $0$ on $[0,1/2-1/n]$, $1$ on $[1/2+1/n,1]$, and linear between.
+Then $\norm{h_n-h}\le 2/n$, where the norm is the $L^1$ norm on $L^1([0,1])$, so $(h_n)$ is Cauchy.
+If $h_n\to g$ for some $g\in C([0,1])$, then $g=h$ in $L^1$ by uniqueness of $L^1$ limits, so $g=h$ almost everywhere.
+Continuity then forces $g=0$ on $[0,1/2)$ and $g=1$ on $(1/2,1]$, which no continuous function satisfies at $x=1/2$.
 
 :::
 
