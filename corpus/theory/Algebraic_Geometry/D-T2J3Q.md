@@ -35,7 +35,7 @@ A scheme $X$ is \dfn{quasi-separated} if the intersection of any two quasicompac
 :::
 
 ::: {.remark}
-The Hausdorff axiom is not available, because the Zariski topology is never Hausdorff for a positive-dimensional variety: any two nonempty opens meet.
+The Hausdorff axiom is not available, because the Zariski topology is never Hausdorff for a positive-dimensional variety: in an irreducible component of positive dimension, any two nonempty opens meet.
 What survives is the equivalent formulation for topological spaces — $X$ is Hausdorff exactly when the diagonal is closed in $X \times X$ — once the product is taken in the right category.
 Separatedness transfers this closed-diagonal criterion to schemes, with $X\times_YX$ the fibre product in schemes rather than the topological product.
 
