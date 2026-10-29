@@ -493,6 +493,9 @@ mathematical correction under its own node, not under copy policy.
     and already correct: UGA real-analysis titles, the appendix-unsorted title, continuity.md,
     P-OPH7A, P-4FH62. Week 2 (lim sup and lim inf, Lebesgue-Stieltjes regularity) and
     undergrad-appendix (differentiation and Baire facts) still state results that have no card.
+    Now carded and transcluded: week 2 uses the existing D-PAEDW and new T-7X52J
+    (Lebesgue--Stieltjes regularity); undergrad-appendix uses new T-SM8EW (bounded variation
+    and absolute continuity), T-YKOLU (Lebesgue density) and PR-63NN6 (meager and residual sets).
 
   Round 3 (site surfaces) injected the node below; `audited-deployment` needs it.
   - **`ad3-duplicate-extractions`**. **Needs:** none. 133 PDFs under `assets/attachments/`
