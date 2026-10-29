@@ -21,17 +21,15 @@ Show that if $X$ is compact and $A\subseteq X$ is closed then $A$ is compact.
 :::
 
 ::: {.solution}
-**Goal:** Show that if $X$ is compact and $A \subseteq X$ is closed, then $A$ is compact.
-
 ::: pf
 
 ::: {.pf-step #s1}
 
-Let $\theset{U_\alpha}$ be an open cover of $A$.
+Let $\theset{U_\alpha}$ be a cover of $A$ by open subsets of $X$.
 
 ::: pf-proof
 
-Arbitrary open cover of $A$ (by open subsets of $X$).
+Every open set of the subspace $A$ has the form $U \intersect A$ with $U$ open in $X$, so it suffices to treat covers by open subsets of $X$.
 
 :::
 
@@ -43,7 +41,7 @@ $X \setminus A$ is open in $X$.
 
 ::: pf-proof
 
-$A$ is closed.
+This holds because $A$ is closed.
 
 :::
 
@@ -73,21 +71,15 @@ $X$ is compact and step [](#s3){.pf-ref} is an open cover.
 
 :::
 
-::: {.pf-step #s5}
+::: pf-step
 
-$\theset{U_{\alpha_1}, \ldots, U_{\alpha_n}}$ is a finite cover of $A$.
+$\theset{U_{\alpha_1}, \ldots, U_{\alpha_n}}$ is a finite subcover of the cover in step [](#s1){.pf-ref}, so $A$ is compact.
 
 ::: pf-proof
 
-The finite subcover from step [](#s4){.pf-ref} covers $A$ after discarding $X \setminus A$ (which contains no points of $A$); the remaining $U_{\alpha_j}$ still cover $A$ since any $a \in A$ lies in one of the subcover members, which must be a $U_{\alpha_j}$ because $a \notin X \setminus A$.
+Any $a \in A$ lies in a member of the finite subcover from step [](#s4){.pf-ref}, and that member is some $U_{\alpha_j}$ because $a \notin X \setminus A$.
 
 :::
-
-:::
-
-::: pf-qed
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} show every open cover of $A$ has a finite subcover.
 
 :::
 
