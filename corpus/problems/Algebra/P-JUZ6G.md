@@ -30,6 +30,10 @@ Z(G)=\bigcap_{a\in G}C_G(a).
 $$
 :::
 
+::: {.remark title="Variations"}
+Asked to show $C_G(G)=Z(G)$, where $C_G(S)$ is the set of elements commuting with every element of $S\subseteq G$: by definition $C_G(G)=\bigcap_{a\in G}C_G(a)$, so the proof below applies unchanged.
+:::
+
 ::: {.solution}
 
 ::: pf

@@ -111,7 +111,6 @@ source:
   - id: E-AMD-OFJC25BM
   - id: E-AMD-OKQQCRTG
   - id: E-AMD-ON37VIEN
-  - id: E-AMD-OQDKJ6H2
   - id: E-AMD-PLA4XW64
   - id: E-AMD-PX2UMZEG
   - id: E-AMD-QRCIRKQ7
@@ -238,7 +237,6 @@ source:
   - id: P-36P3M
   - id: P-3B2V4
   - id: P-3BNEC
-  - id: P-3HAZ4
   - id: P-3IRB7
   - id: P-3JNFF
   - id: P-3MHHW
