@@ -28,22 +28,6 @@ v(x,y)=F(u(x,y))
 in some neighborhood of $p_0$.
 :::
 
-::: {.remark}
-The source prints “linearly independent” in place of “linearly dependent.”
-That printed statement is false: for
-$$
-u(x,y)=x,
-\qquad
-v(x,y)=y,
-$$
-the gradients are everywhere linearly independent, but $v$ cannot be a function of $u$ on any neighborhood.
-Moreover, any identity $v=F(u)$ implies
-$$
-\nabla v=F'(u)\nabla u,
-$$
-so linear dependence is necessary.
-:::
-
 ::: {.solution}
 
 ::: pf
