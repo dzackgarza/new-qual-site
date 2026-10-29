@@ -5,7 +5,7 @@ kind: problem
 title: The union of intersecting connected sets is connected
 classification:
   areas:
-  - complex-analysis
+  - topology
   topics:
   - Connectedness
   - Point-Set Topology
