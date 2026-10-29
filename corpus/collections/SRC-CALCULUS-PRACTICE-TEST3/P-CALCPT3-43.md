@@ -5,7 +5,7 @@ kind: problem
 title: "Conditions forcing a root of $x^n=\\sum_{i<n}a_ix^i$ in $(0,1)$"
 classification:
   areas: [prelim]
-  topics: []
+  topics: [Polynomial Roots, Continuity]
 relations: []
 review: draft
 audit:
