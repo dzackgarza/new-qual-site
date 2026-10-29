@@ -12,10 +12,15 @@ classification:
   - Cosets and Lagrange
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source did not assume G finite, and the conjugates of the upper-triangular subgroup cover GL_2(C); the statement now assumes G finite.'
 ---
 
 ::: {.exercise}
-Show that if $H < G$ is a proper subgroup, then $\Union_{g\in G} gH\inverseof{g} \subset G$ is a proper subset.
+Show that if $G$ is a finite group and $H < G$ is a proper subgroup, then $\Union_{g\in G} gH\inverseof{g} \subset G$ is a proper subset.
 
 > Hint: consider the intersection and count.
 > Try Orbit-stabilizer?
@@ -23,7 +28,7 @@ Show that if $H < G$ is a proper subgroup, then $\Union_{g\in G} gH\inverseof{g}
 :::
 
 ::: {.solution}
-Let $G$ be finite, $m=\size H$, and $n'=[G:H]>1$.
+Let $m=\size H$, and $n'=[G:H]>1$.
 
 ::: pf
 
@@ -51,9 +56,4 @@ By steps [](#n-conjugates-bound){.pf-ref} and [](#union-size-bound){.pf-ref} and
 
 :::
 
-:::
-
-::: {.remark}
-Erratum: the statement needs $G$ finite.
-Every matrix in $\mathrm{GL}_2(\CC)$ is conjugate to an upper-triangular matrix, so the conjugates of the proper subgroup of invertible upper-triangular matrices cover $\mathrm{GL}_2(\CC)$.
 :::
