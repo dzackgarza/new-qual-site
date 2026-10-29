@@ -65,5 +65,6 @@ For finitely generated modules over a PID, the four conditions coincide.
 
 ## Free ideals
 
-A nonzero ideal $I$ of an integral domain $R$ is free as an $R$-module if and only if it is principal ([[PR-ASW5L]]). For distinct nonzero $m_1,m_2\in I$, the relation $m_2\cdot m_1 - m_1\cdot m_2 = 0$ has nonzero coefficients, so a basis of $I$ has one element.
-In particular, every nonprincipal ideal of an integral domain is a torsion-free module that is not free.
+[[PR-ASW5L]]
+
+Hence every nonprincipal ideal of an integral domain is a torsion-free module that is not free.
