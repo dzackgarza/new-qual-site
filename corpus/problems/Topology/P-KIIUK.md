@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KIIUK
 kind: problem
-title: Non-surjective maps $X\to X^n$ are nullhomotopic
+title: Non-surjective maps into $S^n$ are nullhomotopic
 classification:
   areas:
   - topology
@@ -11,10 +11,15 @@ classification:
   - Degree
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: "Source text: 'Show that if X ->f X^n is not surjective, then f is nullhomotopic.' The target X^n is undefined and the claim is false for general targets; it is read as the sphere S^n, the standard form of this exercise."
 ---
 
 ::: {.problem}
-- Show that if $X\mapsvia{f} X^n$ is not surjective, then $f$ is nullhomotopic.
+Let $X$ be a topological space. Show that if a continuous map $f:X\to S^n$ is not surjective, then $f$ is nullhomotopic.
 :::
 
 ::: {.solution}
@@ -23,17 +28,11 @@ review: draft
 
 ::: pf-step
 
-The notation $X^n$ is not defined in the statement, so the target space is not determined.
-
-:::
-
-::: pf-step
-
-For spheres, if $f:S^n\to S^n$ is not surjective, then $f$ is null-homotopic.
+$f$ is nullhomotopic.
 
 ::: pf-proof
 
-Choose $p\in S^n\setminus f(S^n)$. Then $f$ factors through $S^n\setminus\{p\}\cong\mathbb R^n$, which is contractible. Hence the factorization, and therefore $f$, is null-homotopic.
+Choose $p\in S^n\setminus f(X)$. Then $f$ factors as $X\to S^n\setminus\{p\}\hookrightarrow S^n$. Stereographic projection from $p$ gives $S^n\setminus\{p\}\cong\RR^n$, which is contractible, so the corestriction $X\to S^n\setminus\{p\}$ is homotopic to a constant map. Composing that homotopy with the inclusion shows $f$ is nullhomotopic.
 
 :::
 
