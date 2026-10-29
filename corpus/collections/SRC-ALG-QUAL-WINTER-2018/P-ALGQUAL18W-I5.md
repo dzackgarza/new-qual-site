@@ -157,7 +157,7 @@ $\FF_2$.
 
 The degree of $\overline{\Phi}_{255}$ is
 $$
-\boxed{128}.
+128.
 $$
 
 ::: pf-proof
@@ -197,8 +197,7 @@ $$
 
 ::: {.pf-step #s6}
 
-The polynomial $\overline{\Phi}_{255}(x)$ is reducible in
-$\FF_2[x]$.
+The statement is $\boxed{\text{false}}$: $\overline{\Phi}_{255}(x)$ is reducible in $\FF_2[x]$.
 
 ::: pf-proof
 
@@ -219,12 +218,6 @@ $$
 This is impossible. Therefore $\overline{\Phi}_{255}$ is reducible.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s6){.pf-ref} proves that the statement in the problem is false.
 
 :::
 
