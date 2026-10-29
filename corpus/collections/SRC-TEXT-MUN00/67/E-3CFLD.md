@@ -22,7 +22,6 @@ Give an example of a free abelian group $G$ of rank $n$ having a subgroup $H$ of
 :::
 
 ::: {.solution}
-**Goal:** Provide an explicit example of a free abelian group $G$ of rank $n \ge 1$ containing a proper subgroup $H \subsetneq G$ of full rank $n$, and prove these properties.
 
 ::: pf
 
