@@ -24,17 +24,6 @@ Let $k$ be a field, let $f \in k[x_0,\ldots,x_n]$ be a nonzero homogeneous irred
 Then $\deg X = d$.
 :::
 
-::: {.theorem title="Degree of a hypersurface section"}
-Let $Y \subseteq \PP^n$ be a projective variety of dimension $\geq 1$ and $H$ a hypersurface not containing $Y$, with $Y \cap H = Z_1 \cup \cdots \cup Z_s$ the irreducible components.
-Then
-$$
-\sum_{j=1}^s i(Y, H; Z_j) \deg Z_j = (\deg Y)(\deg H) ,
-$$
-where $i(Y, H; Z_j)$ is the intersection multiplicity along $Z_j$.
-For distinct plane curves $Y, Z \subseteq \PP^2$ of degrees $d$ and $e$ with no common component, $\sum_{P \in Y \cap Z} i(Y, Z; P) = de$ (Bézout).
-[@Har10a, Theorem I.7.7]
-:::
-
 ::: {.proof}
 Put $S=k[x_0,\ldots,x_n]$. Since $S$ is a domain and $f\ne0$, multiplication by $f$ gives a graded exact sequence
 $$
@@ -45,6 +34,17 @@ $$
 P_X(r) = \binom{r+n}{n} - \binom{r-d+n}{n} ,
 $$
 whose degree is $n-1$ and whose leading coefficient is $d/(n-1)!$. By [[D-L6ERW]], the degree of the $(n-1)$-dimensional projective variety $X$ is $(n-1)!$ times this leading coefficient, hence $\deg X=d$.
+:::
+
+::: {.theorem title="Degree of a hypersurface section"}
+Let $Y \subseteq \PP^n$ be a projective variety of dimension $\geq 1$ and $H$ a hypersurface not containing $Y$, with $Y \cap H = Z_1 \cup \cdots \cup Z_s$ the irreducible components.
+Then
+$$
+\sum_{j=1}^s i(Y, H; Z_j) \deg Z_j = (\deg Y)(\deg H) ,
+$$
+where $i(Y, H; Z_j)$ is the intersection multiplicity along $Z_j$.
+For distinct plane curves $Y, Z \subseteq \PP^2$ of degrees $d$ and $e$ with no common component, $\sum_{P \in Y \cap Z} i(Y, Z; P) = de$ (Bézout).
+[@Har10a, Theorem I.7.7]
 :::
 
 ::: {.remark}
