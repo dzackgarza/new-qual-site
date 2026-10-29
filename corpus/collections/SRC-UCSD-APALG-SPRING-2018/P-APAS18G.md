@@ -27,31 +27,33 @@ Prove or give a counterexample.
 :::
 
 ::: {.solution}
-Let $\mathcal S$ be the set of monomials not divisible by any $\operatorname{LM}(g_i)$. Because $G$ is a Gröbner basis,
-$$
-\operatorname{in}(I)=\langle \operatorname{LM}(g_1),\ldots,\operatorname{LM}(g_s)\rangle.
-$$
-Suppose there were a nontrivial linear relation among the corresponding cosets:
-$$
-\sum_{j=1}^r c_jm_j\in I,
-$$
-where the $m_j\in\mathcal S$ are distinct and not all $c_j$ vanish. Let $m$ be the largest $m_j$ occurring with nonzero coefficient. Then
-$$
-\operatorname{LM}\!\left(\sum_j c_jm_j\right)=m.
-$$
-Since the polynomial lies in $I$, its leading monomial belongs to $\operatorname{in}(I)$, so some $\operatorname{LM}(g_i)$ divides $m$. This contradicts $m\in\mathcal S$. Therefore the displayed cosets are linearly independent in $k[x_1,\ldots,x_n]/I$.
+Write $R\coloneqq k[x_1,\ldots,x_n]$ and let $\mathcal S$ be the set of monomials not divisible by any $\operatorname{LM}(g_i)$.
 
-For (b), the conclusion can fail if the chosen generators are not a Gröbner basis. Take
-$$
-k=\QQ,\qquad I=(x,y)\subset\QQ[x,y]
-$$
-with lexicographic order $x>y$, and let
-$$
-G=\{x+y,\ x-y\}.
-$$
-Because $2$ is invertible in $\QQ$, these two polynomials generate $I$. Their leading monomials are both $x$. Hence, if one used the criterion from part (a) with this non-Gröbner generating set, every monomial not divisible by $x$, in particular $y$, would be declared standard. But
-$$
-y+I=0
-$$
-in the quotient, so these cosets are not linearly independent. Indeed $G$ is not a Gröbner basis, since $\operatorname{in}(I)=(x,y)$ while $\langle\operatorname{LM}(G)\rangle=(x)$.
+::: pf
+
+::: pf-step
+
+(a) The cosets $m+I$, $m\in\mathcal S$, are linearly independent in $R/I$.
+
+::: pf-proof
+
+Since $G$ is a Gröbner basis, $\operatorname{in}(I)=\langle\operatorname{LM}(g_1),\ldots,\operatorname{LM}(g_s)\rangle$, a monomial ideal, so a monomial lies in $\operatorname{in}(I)$ exactly when some $\operatorname{LM}(g_i)$ divides it. Suppose $f=\sum_{j=1}^r c_jm_j\in I$ with distinct $m_j\in\mathcal S$ and all $c_j\ne0$, $r\ge1$. The leading monomial of $f$ is the largest $m_j$, and it lies in $\operatorname{in}(I)$ because $f\in I$; so some $\operatorname{LM}(g_i)$ divides it, which contradicts $m_j\in\mathcal S$.
+
+:::
+
+:::
+
+::: pf-step
+
+(b) $\boxed{\text{No}}$: for $I=(x,y)\subseteq\QQ[x,y]$ with lex order $x>y$, the basis $G=\{x+y,\,x-y\}$ is a counterexample.
+
+::: pf-proof
+
+$G$ generates $I$, since $x=\frac12\bigl((x+y)+(x-y)\bigr)$ and $y=\frac12\bigl((x+y)-(x-y)\bigr)$. Both leading monomials are $x$, so $y\in\mathcal S$; but $y+I=0$ in $R/I$, and a set containing the zero vector is linearly dependent.
+
+:::
+
+:::
+
+:::
 :::
