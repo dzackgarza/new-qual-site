@@ -15,11 +15,11 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
----
 - event: statement-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source asserts the L^p limit for every p and every uniformly continuous f; for p < infinity this fails when f is not in L^p (for f(x) = x the difference is the constant -h). The statement now requires f in L^p for finite p.
+---
 
 ::: {.exercise}
 Let $1 \leq p \leq \infty$ and $\tau_h f(x) \coloneqq f(x-h)$. Prove continuity in $L^p$: if $f\colon \RR^n \to \CC$ is uniformly continuous, and moreover $f \in L^p(\RR^n)$ when $p < \infty$, then $$\norm{\tau_h f - f}_p \converges{h\to 0}\to 0.$$
