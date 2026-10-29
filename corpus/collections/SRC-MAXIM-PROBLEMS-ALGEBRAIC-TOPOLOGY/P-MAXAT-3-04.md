@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MAXAT-3-04
 kind: problem
-title: Maxim algebraic topology 3.4
+title: A division algebra on $\RR^n$ forces $n$ to be a power of $2$
 classification:
   areas: [topology]
   topics: []
