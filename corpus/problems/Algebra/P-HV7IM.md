@@ -32,24 +32,24 @@ Can any of them be imaginary?
 
 ::: {.solution}
 Write
-\[
+$$
 Q_8=\{\pm1,\pm i,\pm j,\pm k\},
 \qquad
  i^2=j^2=k^2=ijk=-1.
-\]
+$$
 
 ::: pf
 
 ::: {.pf-step #s1}
 
 The element orders in $Q_8$ are:
-\[
+$$
 1\text{ element of order }1,
 \quad
 1\text{ element of order }2,
 \quad
 6\text{ elements of order }4.
-\]
+$$
 
 ::: pf-proof
 
@@ -62,13 +62,13 @@ The identity has order $1$. The element $-1$ has order $2$. Each of $\pm i,\pm j
 ::: {.pf-step #s2}
 
 The group $Q_8$ has exactly three subgroups of order $4$:
-\[
+$$
 \langle i\rangle,
 \qquad
 \langle j\rangle,
 \qquad
 \langle k\rangle.
-\]
+$$
 
 ::: pf-proof
 
@@ -80,7 +80,7 @@ Every subgroup of order $4$ contains an element of order $4$, hence is the cycli
 
 ::: pf-step
 
-If $L/\QQ$ is Galois with Galois group $Q_8$, then $L$ contains exactly three quadratic subfields.
+If $L/\QQ$ is Galois with Galois group $Q_8$, then $L$ contains exactly $\boxed{3}$ quadratic subfields.
 
 ::: pf-proof
 
@@ -92,21 +92,21 @@ By the Galois correspondence, quadratic intermediate fields correspond to subgro
 
 ::: pf-step
 
-All three quadratic subfields are real.
+All three quadratic subfields are real, so $\boxed{\text{none is imaginary}}$.
 
 ::: pf-proof
 
 Fix an embedding $L\subseteq\CC$. If $L$ is totally real, there is nothing to prove. Otherwise complex conjugation restricts to a nontrivial element
-\[
-c\in\operatorname{Gal}(L/\QQ)
-\]
+$$
+c\in\Gal(L/\QQ)
+$$
 of order $2$. By step [](#s1){.pf-ref}, $Q_8$ has a unique element of order $2$, namely $-1$, so $c=-1$ in the group-theoretic notation.
 
 Let $E$ be any quadratic subfield, and put
-\[
-H=\operatorname{Gal}(L/E).
-\]
-Then $|H|=4$. Every subgroup of order $4$ in $Q_8$ contains the unique involution $-1$, so $c\in H$. Thus complex conjugation fixes $E$ pointwise. Therefore every element of $E$ is real, and $E$ is a real quadratic field.
+$$
+H=\Gal(L/E).
+$$
+Then $\abs{H}=4$. Every subgroup of order $4$ in $Q_8$ contains the unique involution $-1$, so $c\in H$. Thus complex conjugation fixes $E$ pointwise. Therefore every element of $E$ is real, and $E$ is a real quadratic field.
 
 :::
 
