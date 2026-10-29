@@ -18,16 +18,18 @@ Give a necessary and sufficient condition for a cyclic group to be solvable.
 :::
 
 ::: {.solution}
-Every cyclic group is abelian, and every abelian group is solvable: its commutator subgroup is trivial.
 
-Thus if $G$ is cyclic,
-\[
-G'=[G,G]=1,
-\]
-so the derived series terminates after one step.
+::: pf
 
-Hence the necessary and sufficient condition is vacuous:
-\[
-\boxed{\text{every cyclic group is solvable}.}
-\]
+::: pf-step
+$\boxed{\text{Every cyclic group is solvable}}$, so the condition is vacuous.
+
+::: pf-proof
+A cyclic group $G$ is abelian, so its commutator subgroup is $G'=[G,G]=1$ and the derived series $G\supseteq G'=1$ terminates.
+:::
+
+:::
+
+:::
+
 :::
