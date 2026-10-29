@@ -33,3 +33,48 @@ III. $a_0<0$ and $\sum_{i=0}^{n-1}a_i>1$
 (D) III only
 (E) I and III
 :::
+
+::: {.solution}
+Let $f(x)\coloneqq x^n-\sum_{i=0}^{n-1}a_ix^i$, a polynomial whose roots are the roots of the equation. Then $f(0)=-a_0$ and $f(1)=1-\sum_{i=0}^{n-1}a_i$.
+
+::: pf
+
+::: {.pf-step #I}
+Condition I guarantees a root in $(0,1)$.
+
+::: pf-proof
+Under I, $f(0)<0<f(1)$, so the intermediate value theorem gives $c\in(0,1)$ with $f(c)=0$.
+:::
+
+:::
+
+::: {.pf-step #III}
+Condition III guarantees a root in $(0,1)$.
+
+::: pf-proof
+Under III, $f(0)>0>f(1)$, and the intermediate value theorem applies as in step [](#I){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #II}
+Condition II does not guarantee a root in $(0,1)$.
+
+::: pf-proof
+Take $n=2$, $a_0=2$, $a_1=0$. Then $a_0>0$ and $a_0+a_1=2>1$, but $f(x)=x^2-2<0$ for $x\in(0,1)$.
+:::
+
+:::
+
+::: pf-step
+The answer is $\boxed{\text{I and III}}$, choice (E).
+
+::: pf-proof
+By steps [](#I){.pf-ref}, [](#III){.pf-ref}, and [](#II){.pf-ref}, exactly I and III guarantee a root. This rules out (A), (B), and (D), which omit a valid condition, and (C), which names II.
+:::
+
+:::
+
+:::
+
+:::
