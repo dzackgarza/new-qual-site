@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF18C
 kind: problem
-title: "Integral homology of Y x RP^2 where Y is S^3 with a 4-cell attached by degree 6"
+title: 'Integral homology of $Y\times\RP^2$ where $Y$ is $S^3$ with a $4$-cell attached by degree $6$'
 classification:
   areas:
   - topology
