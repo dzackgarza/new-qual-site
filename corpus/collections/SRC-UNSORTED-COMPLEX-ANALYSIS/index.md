@@ -83,7 +83,6 @@ source:
   - id: E-DUMQG
   - id: E-DXQMY
   - id: E-DXXL4
-  - id: E-E2LGY
   - id: E-EBRU5
   - id: E-EG3W7
   - id: E-ELZ3Z
