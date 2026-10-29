@@ -16,72 +16,50 @@ review: draft
 ::: {.problem}
 Let $K/F$ be a finite Galois extension and suppose $\Gal(K/F)$ is cyclic. Let $F\subseteq E\subseteq K$.
 
-1. Show that both $K/E$ and $E/F$ are cyclic Galois extensions.
-2. If $[K:F]=n$, show that for every divisor $d\mid n$ there is a unique intermediate field $E_d$ with
-\[
+(a) Show that both $K/E$ and $E/F$ are cyclic Galois extensions.
+
+(b) If $[K:F]=n$, show that for every divisor $d\mid n$ there is a unique intermediate field $E_d$ with
+$$
 [E_d:F]=d.
-\]
+$$
 :::
 
 ::: {.solution}
-Let
-\[
-G=\Gal(K/F),
-\qquad
-H=\Gal(K/E).
-\]
-Since $G$ is cyclic, every subgroup of $G$ is cyclic and normal.
+Let $G=\Gal(K/F)$ and $H=\Gal(K/E)$.
 
 ::: pf
 
 ::: pf-step
+(a) $K/E$ and $E/F$ are cyclic Galois extensions.
 
-Both intermediate extensions are cyclic Galois.
-Because $H\le G$ and $G$ is cyclic, $H$ is cyclic. Hence
-\[
-\Gal(K/E)=H
-\]
-is cyclic, so $K/E$ is cyclic Galois.
-
-Because every subgroup of a cyclic group is normal,
-\[
-H\trianglelefteq G.
-\]
-By the fundamental theorem of Galois theory, this is equivalent to $E/F$ being Galois, and restriction gives
-\[
+::: pf-proof
+Since $K/F$ is Galois, so is $K/E$, with group $H\le G$. A subgroup of a cyclic group is cyclic, so $K/E$ is cyclic Galois.
+A subgroup of a cyclic group is normal, so $H\trianglelefteq G$. By the fundamental theorem of Galois theory, $E/F$ is Galois and restriction gives
+$$
 \Gal(E/F)\cong G/H.
-\]
-A quotient of a cyclic group is cyclic, so $E/F$ is cyclic Galois as well.
+$$
+A quotient of a cyclic group is cyclic, so $E/F$ is cyclic Galois.
+:::
 
 :::
 
 ::: pf-step
+(b) For every divisor $d\mid n$ there is a unique intermediate field $E_d$ with $[E_d:F]=d$.
 
-There is a unique intermediate field of every divisor degree.
+::: pf-proof
+Write $G=\langle g\rangle$ with $\abs{G}=n$. For each divisor $d\mid n$, the cyclic group $G$ has a unique subgroup of index $d$, namely
+$$
+H_d=\langle g^d\rangle,\qquad \abs{H_d}=n/d.
+$$
+By the Galois correspondence, intermediate fields $E$ with $[E:F]=d$ correspond bijectively to subgroups of index $d$, via $E\mapsto\Gal(K/E)$ and $H\mapsto K^H$. Hence $E_d=K^{H_d}$ is the unique intermediate field with $[E_d:F]=[G:H_d]=d$.
+:::
+
+:::
 
 :::
 
 :::
 
-Write
-\[
-G=\langle g\rangle,
-\qquad |G|=n.
-\]
-For each divisor $d\mid n$, a cyclic group has a unique subgroup of index $d$, namely
-\[
-H_d=\langle g^d\rangle,
-\qquad |H_d|=n/d.
-\]
-Let
-\[
-E_d=K^{H_d}
-\]
-be its fixed field. By Galois correspondence,
-\[
-[E_d:F]=[G:H_d]=d.
-\]
-Uniqueness of $H_d$ gives uniqueness of $E_d$.
-
-Thus the intermediate-field lattice of a finite cyclic Galois extension is exactly the divisor lattice of $[K:F]$.
+::: {.remark}
+The intermediate-field lattice of a finite cyclic Galois extension is therefore the divisor lattice of $[K:F]$.
 :::
