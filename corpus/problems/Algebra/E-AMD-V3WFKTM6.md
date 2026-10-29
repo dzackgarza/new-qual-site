@@ -9,6 +9,7 @@ classification:
   topics:
   - Maximal Ideals
   - Prime Ideals
+  - Ideals
 relations: []
 review: draft
 audit:
@@ -21,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that $\maxspec(R) \subseteq \Spec(R)$, and give an example where the containment is strict.
+Let $R$ be a commutative ring with identity. Show that every maximal ideal of $R$ is prime, that is, $\maxspec(R) \subseteq \Spec(R)$, and give an example of a prime ideal that is not maximal, so that the containment is strict.
 :::
 
 
@@ -73,4 +74,8 @@ Strictness is not automatic for every ring. If $R=k$ is a field, then $(0)$ is i
 $$
 \maxspec(k)=\Spec(k)=\{(0)\}.
 $$
+:::
+
+::: {.remark title="Elementwise proof"}
+Let $\mm$ be maximal, and suppose $ab\in \mm$ and $b\notin \mm$. Then $\mm \subsetneq \mm + (b)$, so $\mm + (b) = R$. Write $1 = m + rb$ with $m\in\mm$ and $r\in R$. Then $a = am + r(ab)\in\mm$, so $\mm$ is prime.
 :::
