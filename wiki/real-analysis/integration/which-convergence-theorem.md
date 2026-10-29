@@ -32,12 +32,12 @@ Bounded convergence is dominated convergence with $g\equiv M$, which is integrab
 
 3. **Uniformly bounded sequences on a finite measure space.** The bounded convergence theorem applies.
 
-4. **Nonnegative sequences without domination.** Fatou's lemma gives the inequality $\int\liminf_n f_n\leq\liminf_n\int f_n$, and the inequality is strict for each sequence $n\chi_{[0,1/n]}$, $\frac1n\chi_{[0,n]}$, and $\chi_{[n,n+1]}$.
+4. **Nonnegative sequences without domination.** Fatou's lemma gives the inequality $\int\liminf_n f_n\leq\liminf_n\int f_n$, and the inequality is strict for each sequence $n\chi_{(0,1/n)}$, $\frac1n\chi_{[0,n]}$, and $\chi_{[n,n+1]}$.
 
 ## Failure of the interchange
 
 ::: {.example title="Sequences with $f_n\to0$ pointwise and $\int f_n = 1$"}
-- $f_n \coloneqq n\chi_{[0,1/n]}$ on $[0,1]$: the mass concentrates near $0$, and $\sup_n f_n\notin L^1$.
+- $f_n \coloneqq n\chi_{(0,1/n)}$ on $[0,1]$: the mass concentrates near $0$, and $\sup_n f_n\notin L^1$.
 
 - $f_n \coloneqq \frac1n \chi_{[0,n]}$ on $\RR$: $\abs{f_n}\leq1$, so bounded convergence fails on a space of infinite measure.
 
