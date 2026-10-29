@@ -19,7 +19,7 @@ Positive definite inner products, orthonormal bases, extensions of orthonormal s
 Eigenvalues and eigenvectors of automorphisms.
 Characteristic polynomials.
 
-References: M. Artin, *Algebra* (Prentice Hall, 1991), chapters 1, 3, 4; K. Hoffman and R. Kunze, *Linear Algebra* (Prentice-Hall, 1971), chapters 1--6.
+References: [@Art91, chs. 1, 3, 4; @HK71, chs. 1--6].
 
 ## Abstract algebra
 
@@ -30,7 +30,7 @@ Cyclic groups, and the structure theorem for finite abelian groups.
 Ideals, prime and maximal ideals, and their quotients, with the examples $\ZZ$, $k[X]$, and rings of algebraic integers.
 Field extensions, splitting fields of polynomials, normal extensions.
 
-References: M. Artin, *Algebra*, chapters 2, 10, 11, 12, 13, 14; I. Herstein, *Topics in Algebra* (Blaisdell, 1964).
+References: [@Art91, chs. 2, 10--14; @Her64].
 
 ## Point-set topology
 
@@ -47,17 +47,17 @@ The matrix of partial derivatives.
 The inverse and implicit function theorems.
 Multivariable Riemann integration.
 
-References: W. Rudin, *Principles of Mathematical Analysis* (McGraw-Hill, 1964); A. Browder, *Mathematical Analysis: An Introduction* (Springer, 1996).
+References: [@Rud64; @Bro96].
 
 ## Complex analysis
 
 Holomorphic functions, the Cauchy integral formula, power series representations of holomorphic functions, radius of convergence, meromorphic functions, residues.
 
-Reference: L. Ahlfors, *Complex Analysis* (McGraw-Hill, 1973), chapters 1--5.
+Reference: [@Ahl73, chs. 1--5].
 
 ## Real analysis
 
-Advanced calculus at the level of the books of W. Rudin and A. Browder listed under calculus.
+Advanced calculus at the level of [@Rud64] and [@Bro96].
 
 ## Additional topics
 
