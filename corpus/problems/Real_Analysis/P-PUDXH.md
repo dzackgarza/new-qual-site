@@ -17,24 +17,26 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
+- event: source-checked
+  by: claude-opus-5-5
+  date: 2026-10-29
+  note: 'Source printed the inner integral over [0, ∞), independent of x, and B = (∫|g|)^2; the statement now integrates f over [0, x] and sets B = (∫|g|^2)^{1/2}.'
 ---
 
 ::: {.problem}
 Let $f, g$ be non-negative measurable functions on $[0, \infty)$ with
 \[
 A &\definedas \int_0^{\infty } f(y) y^{-1/2} \dy < \infty \\
-B &\definedas \qty{ \int_0^{\infty } \abs{ g(y) } }^2 \dy < \infty  
+B &\definedas \qty{ \int_0^{\infty } \abs{ g(y) }^2 \dy }^{1/2} < \infty  
 .\]
 
 Show that
 \[
-\int_0^{\infty } \qty{ \int_0^{\infty } f(y) \dy } {g(x) \over x} \dx \leq AB
+\int_0^{\infty } \qty{ \int_0^{x} f(y) \dy } {g(x) \over x} \dx \leq AB
 .\]
 :::
 
 ::: {.solution}
-We prove $\int_0^\infty \frac{g(x)}{x}\int_0^x f(y)\,dy\,dx \le AB$ with $A = \int_0^\infty f(y)y^{-1/2}\,dy$ and $B = \left(\int_0^\infty g(y)^2\,dy\right)^{1/2}$; see the remark below.
-
 ::: pf
 
 ::: {.pf-step #s1}
@@ -69,8 +71,4 @@ By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the left side is at most $\int_0
 
 :::
 
-:::
-
-::: {.remark}
-As printed, the inner integral $\int_0^\infty f(y)\,dy$ does not depend on $x$, and $B$ is written with the square outside the integral. The inequality above takes the inner integral over $[0,x]$ and $B = \|g\|_{L^2}$.
 :::
