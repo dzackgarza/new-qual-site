@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source requires the difference-quotient bound whenever $\abs{x-y} < \delta$, which includes x = y where the quotient is undefined; the statement now requires $0 < \abs{x-y} < \delta$ with x, y in [a, b].'

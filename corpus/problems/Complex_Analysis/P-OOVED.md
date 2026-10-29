@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
-- event: copy-repaired
+- event: source-checked
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'Removed the source note "Also cf. Stein et al, 1.4.7, 3.8.17" from the statement.'

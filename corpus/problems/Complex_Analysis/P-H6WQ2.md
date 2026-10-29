@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source required only the interior of T to lie in Omega; then the boundary integral need not be defined. The statement now requires the closed triangle T to lie in Omega.

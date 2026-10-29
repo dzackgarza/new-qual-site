@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "$R/ \nilrad{R}$ has no nonzero nilpotent elements." without declaring $R$ or posing a task; the statement declares $R$ a commutative ring and asks for a proof.'

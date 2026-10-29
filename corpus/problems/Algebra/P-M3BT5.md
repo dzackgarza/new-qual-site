@@ -15,7 +15,7 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source uses a field E that it never introduces; the statement declares E as an intermediate field K <= E <= F, as the title and solution read it.'

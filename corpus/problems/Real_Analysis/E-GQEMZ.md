@@ -15,7 +15,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source lists a fragment ("f in L^1 and g smooth and compactly supported (and in fact f*g is smooth)") and asks for the derivative formula when g has bounded partial derivatives. Without g bounded, f*g need not be defined; the statement now assumes g bounded and splits the source into parts (a) and (b).

@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source states $\int_0^\infty {\log(x) \over 1+x^2}\dx = 0$ with no request; the statement now asks to show it.'

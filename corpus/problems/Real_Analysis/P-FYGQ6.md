@@ -15,7 +15,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source does not introduce R_1 and R_2; the statement declares them as the radii of convergence of sum a_n x^n and sum b_n x^n, as the solution reads them, and fixes 0 times infinity as 0 so that R_1 R_2 is defined when one radius is 0 and the other infinite.

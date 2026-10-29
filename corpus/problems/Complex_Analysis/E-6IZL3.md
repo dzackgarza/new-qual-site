@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source reads "Find all harmonic functions u: D -> C such that u(1/2) = 2 and |u(z)| >= 2 for all |z| <= 1". The condition on the closed disc does not match the domain D, and complex-valued solutions form no describable family (see the remark), so the statement asks for real-valued u with the condition on D.'

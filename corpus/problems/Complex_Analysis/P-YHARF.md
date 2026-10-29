@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5-5
   date: 2026-10-29
   note: 'The source printed the series as starting at n = 1, which would force f(0) = 0, a hypothesis it does not state; the series now starts at n = 0. Also removed a commented-out duplicate formula and the doubled word "the the".'

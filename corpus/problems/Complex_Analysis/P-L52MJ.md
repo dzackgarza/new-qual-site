@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source read "if f(z) is bounded in near z_0" and "for all triangles Delta in Omega". The typo "in near" now reads "near", and a triangle in Omega is now a closed triangle that lies in Omega together with its interior; if only the boundary lies in Omega the claim fails. The earlier solution appealed to the maximum modulus principle for a bound it did not need and was replaced by a subdivision proof.'

@@ -15,7 +15,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source leaves f and the measure undeclared; the statement takes f to be a real-valued function in L^1(mu).

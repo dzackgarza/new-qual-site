@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source states $\int_0^1 {1\over \sqrt{x^2-1}}\dx = {i\pi \over 2}$ with no request and no branch. On $(0,1)$ the radicand is negative and the other branch gives $-i\pi/2$; the statement now fixes the branch $\sqrt{x^2-1}=-i\sqrt{1-x^2}$ and asks to show the identity.'

@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-19
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source writes the power series as sum_{n=1}^infty c_n z^n, which would force f(0)=0 without that hypothesis; the statement sums from n=0 and corrects "the the".'

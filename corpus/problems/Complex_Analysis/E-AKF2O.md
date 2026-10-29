@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source states the formula with no instruction and no range for n, followed by "Note that this solution can be written many ways" and the alternate forms (2n choose n) pi/4^n = (2n)(2n-1)...(n+1)/n! * pi/4^n. The statement asks to show the formula for integers n >= 0, and the alternate forms moved to a remark.'

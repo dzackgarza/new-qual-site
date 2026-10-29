@@ -15,7 +15,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source leaves delta and f unquantified; the statement takes delta > 0 and f in L^1(R^n).

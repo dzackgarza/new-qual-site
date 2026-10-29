@@ -19,7 +19,7 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source displays the sequence as 0 -> V_1 -> V_2 -> ... V_k -> 0, missing the arrow into V_k; the statement adds it.'

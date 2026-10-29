@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source opens the statement with the line '> Note: (a) is a repeat.', which refers to a part this card does not carry; the line is removed from the statement."

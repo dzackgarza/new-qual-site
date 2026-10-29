@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source asks only that the circle K lie in D; Rouché''s theorem and the residue theorem need the closed disc bounded by K in D, so the statement assumes it.'

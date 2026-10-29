@@ -15,7 +15,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5-5
   date: 2026-10-29
   note: Source printed "Show that if f:X -> R and X is compact then f is bounded and attains its min/max" without the continuity hypothesis, which the result needs; the statement adds "continuous".

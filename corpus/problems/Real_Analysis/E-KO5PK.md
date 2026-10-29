@@ -15,7 +15,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source asserts the L^p limit for every p and every uniformly continuous f; for p < infinity this fails when f is not in L^p (for f(x) = x the difference is the constant -h). The statement now requires f in L^p for finite p.

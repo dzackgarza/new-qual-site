@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source reads "Let psi_a be a Blaschke factor" without defining it; the statement defines psi_a(z) = (a-z)/(1-conj(a) z) for a in the unit disc, the factor the solution uses.'

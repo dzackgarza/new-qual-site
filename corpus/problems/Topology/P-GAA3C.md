@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "Source text (Topology Week 1 Preliminaries workshop sheet): 'Does the converse hold?', following 'Show that a compact subset of a Hausdorff space is closed.' The statement now names the converse."

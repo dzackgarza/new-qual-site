@@ -19,7 +19,7 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: "The source read 'Let $R$ be a Noetherian ring and $A,B$ algebras over $R$. Suppose $A$ is finite type over $R$ and finite over B. Then $B$ is finite type over $R$.' This is false without $B\\subseteq A$: with $A=R$ and $B=R[x_1,x_2,\\ldots]$ mapping onto $A$ by $x_i\\mapsto0$, $A$ is finite over $B$ but $B$ is not of finite type. The statement now takes $B$ to be an $R$-subalgebra of $A$, with all rings commutative, as in the Artin-Tate lemma."

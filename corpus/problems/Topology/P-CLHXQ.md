@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source text was a worked attempt, not a question: it computed H_3 in place of H_2 and miscounted cycles. The statement now poses the computation for the listed triangulation."

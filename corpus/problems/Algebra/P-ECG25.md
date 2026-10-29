@@ -17,7 +17,7 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: "The source statement was the bullet item 'Show that $\\alpha/F$ is algebraic $\\iff F(\\alpha)/F$ is a finite extension.', which declared neither $F$ nor $\\alpha$; the extension $K/F$ containing $\\alpha$ is now stated."

@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source prints the six integrals in one unaligned display with no orientation; the statement labels them (a)-(f) and orients each circle positively.

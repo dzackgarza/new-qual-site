@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The statement read "Show that z sin(z) = a has only real solutions" with no hypothesis on a. This is false for a < 0 (z = iy with y sinh y = -a) and for a larger than the maximum of x sin x on [0, pi] (the first hump then has no real root and the Rouché count forces non-real roots). The statement now assumes 0 < a <= 1. The earlier solution left the real-root count unproved; it was replaced by a complete proof.'

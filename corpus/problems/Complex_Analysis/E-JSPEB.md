@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source prints "Suppose f:D->D with f(0)=0 and |f(z)|<=|e^z| when |z|=1. Find an upper bound for f((1+i)/2)." The statement makes f holomorphic on D and continuous on the closed disk, so that the boundary condition makes sense, and asks for a bound on the modulus. The earlier solution gave sqrt(2e)/2, which exceeds the bound sqrt(2)/2 from the Schwarz lemma; the solution now gives both.

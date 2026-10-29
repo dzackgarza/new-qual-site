@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source asks for "a power series expansion" of $1/(e^z-1)$, which has a pole at $0$ and so has no power series there. The statement now asks for the Laurent expansion at $0$ through the $z$ term, which is what the solution computes.'

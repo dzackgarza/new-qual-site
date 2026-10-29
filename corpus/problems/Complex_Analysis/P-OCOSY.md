@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source says "Find 1/cos(z) using this method", referring to the recursive inversion of a power series; the statement now names that recursion and the order z^4 the solution computes.'

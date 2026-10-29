@@ -22,7 +22,7 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: 'Source part (a) condition 2 omitted H ⊆ E ⊆ V, so it held for every E with V = H = ∅; the statement now requires H ⊆ E ⊆ V.'
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source reads 'measurable function' for the plural and 'Monotone Converge Theorem', and prints the hint inside part (b)(i); the statement corrects both typos and moves the hint to a hint block. The title now also names part (a)."

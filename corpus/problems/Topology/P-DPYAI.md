@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source text stated the lemma with = in place of homotopy equivalence and followed it with a proof sketch that retracts onto a wedge of circles, which is false for n > 2. The statement now asks for the homotopy equivalence for n >= 2 and k >= 1 distinct points; the sketch is removed."

@@ -21,7 +21,7 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source states the identity with no domain for z; the statement restricts z to the complement of the integers, where both sides are defined.

@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Every $a\in R$ for a finite ring is either a unit or a zero divisor." The statement now introduces $R$ as a finite ring with identity and states the claim as a sentence; a zero divisor is an element $a$ with $ab=0$ for some $b\ne0$.'

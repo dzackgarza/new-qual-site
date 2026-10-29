@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source names the space A(C) while defining it on Omega, and leaves the norm implicit; the statement writes A(Omega) with the supremum norm. The source's hint is moved to a hint block.

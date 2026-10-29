@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source states the identity $\int_\RR {xe^{2ix} \over x^2-1}\dx = i\pi \cos(2)$ with no request. The integrand has nonintegrable simple poles at $\pm1$, so the integral exists only as a principal value; the statement now asks to show the identity for the principal value.'

@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source does not require the open set to be nonempty; every function omits the empty set, so the statement now takes $\Omega$ nonempty.'

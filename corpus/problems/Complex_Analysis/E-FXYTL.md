@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source reads "Show that if fg = 0 on a domain Omega then either f = 0 or g = 0" and does not say that f and g are holomorphic; the statement adds that hypothesis, without which the claim fails.

@@ -19,7 +19,7 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Show that $x^{p^d} - x \divides x^{p^n} - x \iff d \divides n$" and declares none of $p$, $d$, $n$ or the coefficient ring; the statement takes $p$ prime, $d,n$ positive integers, and polynomials in $\FF_p[x]$.'

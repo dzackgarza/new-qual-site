@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source opens part (a) with "$f(z)= u(x,y) +i v(x,y)$ be analytic", missing "Let", and part (b)(ii) asks for the angles between "$\mbox{\textrm Re}{(f)}=0$ and $\mbox{\textrm Im}{(f)}$" with no level for Im(f); the statement adds "Let" and the level Im(f) = 0.'

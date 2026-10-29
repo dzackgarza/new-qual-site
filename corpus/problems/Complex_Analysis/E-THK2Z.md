@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source does not say the domain is connected; a real-valued holomorphic function on a disconnected open set need only be locally constant. The statement now takes a connected open set.

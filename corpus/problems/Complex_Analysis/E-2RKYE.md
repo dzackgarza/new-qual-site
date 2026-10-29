@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source states the formula with no hypothesis on a; the statement takes a real with |a| not equal to 1, where the integrand has no zero denominator and the formula holds.

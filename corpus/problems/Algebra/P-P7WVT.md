@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source leaves R and I undeclared; the statement declares R as a commutative ring with identity and I as an ideal of R.

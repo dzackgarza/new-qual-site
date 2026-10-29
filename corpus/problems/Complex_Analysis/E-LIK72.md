@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source says the poles "must accumulate on an essential singularity at z=infinity". An accumulation point of poles is not an isolated singularity, so it is not an essential singularity in the usual sense; the statement says the poles accumulate at infinity, so that f does not extend to a meromorphic function on CP^1.

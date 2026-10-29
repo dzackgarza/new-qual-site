@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "if $f(z) \sum_{k} c_k (z-z_0)^k$" with no equality sign, uses the exponent $n+1$ in the coefficient formula for $c_k$, and writes the radii with $a_{\pm n}$. The statement now writes $f(z) = \sum_k c_k (z-z_0)^k$, the exponent $k+1$, the coefficients $c_{\pm n}$, and takes $\gamma$ to be a positively oriented circle about $z_0$ in the annulus.'

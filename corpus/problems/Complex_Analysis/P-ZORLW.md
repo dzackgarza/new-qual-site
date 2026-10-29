@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5-5
   date: 2026-10-29
   note: 'The card stated only "if |f| = 0 on the boundary of Omega", with no hypotheses on f or Omega; the hypotheses that the solution assumed (Omega a bounded region, f holomorphic on Omega and continuous on its closure) are now in the statement.'

@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5-5
   date: 2026-10-29
   note: The source's first part asks for a statement of Rouché's theorem; the card had replaced it with a hint note and now poses it as part (a). Part (b) states that n >= 1 and the a_k are complex, which the source leaves implicit.

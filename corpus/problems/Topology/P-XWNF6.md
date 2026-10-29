@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source problem block held a worked answer: a theorem with proof that pi_1 of a wedge of circles is free (with the index k and n mixed), a lemma that F_n is not isomorphic to F_m for n != m, and an argument that S^2 and S^3 are not homeomorphic citing 'the previous problems'. The statement now poses those three claims, and the solution carries the arguments."

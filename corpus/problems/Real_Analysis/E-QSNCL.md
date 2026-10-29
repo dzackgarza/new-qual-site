@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source leaves I undeclared and asks for continuity on all of Q; the statement takes I to be an open interval and asks about the rationals in I.

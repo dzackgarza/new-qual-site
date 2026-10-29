@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source poses this as a follow-up to 'Show that a closed subset $A$ of a compact space $X$ is compact.' and reads only 'Does this hold when $A$ is instead an open subset?'; the statement now names the space and the subset."

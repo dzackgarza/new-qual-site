@@ -15,7 +15,7 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'Part 2 of the source reads "Prove that the quotient module $M / \operatorname{Tor}(M)$

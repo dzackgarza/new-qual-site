@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source states the identity without hypotheses; the statement adds that f and g are holomorphic where fg is nonzero.

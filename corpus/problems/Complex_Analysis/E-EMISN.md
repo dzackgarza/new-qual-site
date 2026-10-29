@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source reads "on its domain of convergence", which can include boundary points of the disk of convergence where continuity is not the intended claim; the statement now names the open disk of convergence, as the solution reads it.'

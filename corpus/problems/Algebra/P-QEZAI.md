@@ -18,7 +18,7 @@ audit:
 - event: solution-written
   by: openai-gpt-5.6-sol
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Show that $Z(G) \subseteq C_G(H) \subseteq N_G(H)$." as a bullet without introducing $G$ or $H$; the statement now declares $G$ a group and $H$ a subgroup.'

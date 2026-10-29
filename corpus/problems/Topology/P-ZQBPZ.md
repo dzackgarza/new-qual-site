@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The statement was followed by a screenshot of the same source text, which opens with the locator '(May 2016)'; the screenshot is removed from the statement."

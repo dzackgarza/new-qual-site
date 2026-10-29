@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source asks for the radius of convergence; a series indexed by Z converges on an annulus, so the statement asks for the region of convergence.

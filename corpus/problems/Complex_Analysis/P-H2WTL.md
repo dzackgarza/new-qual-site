@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-19
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source listed the parts as 1., 2., 3. while part 2 referred to "(a)"; the parts are now labelled (a)-(c). Part (b) read "any circle not containing the origin"; for n<0 the integral is undefined when the origin lies on the circle, so it now asks for a circle whose closed disk does not contain the origin. Part (c) printed the integrand as "dz/((z-a)(z-b)) dz"; the duplicated dz is removed.

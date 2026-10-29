@@ -19,7 +19,7 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Show that S_{n>=5} has one normal subgroup: A_n.", which omits the trivial subgroup and S_n itself; the statement asks for the unique proper nontrivial normal subgroup.'

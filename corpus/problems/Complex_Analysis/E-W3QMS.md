@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source does not say where f is defined; the conclusion fails on a disconnected open set, so the statement takes f holomorphic on a region. The source's pointer "See S&S Corollary 3.4" is removed from the statement.

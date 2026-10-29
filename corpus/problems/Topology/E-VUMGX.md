@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source omits nonemptiness; X x {} is Hausdorff for every X, so the converse is false without it. The statement now assumes X and Y nonempty."

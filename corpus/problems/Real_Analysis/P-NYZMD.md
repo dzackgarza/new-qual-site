@@ -17,7 +17,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source asks for the norm of f - g, where no g is defined; the statement asks for the norm of f - h.

@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source reads "Show that f is holomorphic iff delbar f = 0" with no hypothesis on f; the partial derivatives in delbar f need not exist and their vanishing at a point does not give complex differentiability without real differentiability, so the statement assumes f is real-differentiable on an open set.'

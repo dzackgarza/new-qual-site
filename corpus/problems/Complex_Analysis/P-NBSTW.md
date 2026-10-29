@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source says "Laurent expand tan(z) at 0 using this method", referring to an earlier geometric-series inversion; the statement now names that method and the order z^5 the solution computes.'

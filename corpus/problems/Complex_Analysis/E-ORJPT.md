@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source reads "Show that the product of (1 + a_n) over n in Z is < infinity"; for complex a_n an inequality is meaningless, so the statement asks that the product converge.'

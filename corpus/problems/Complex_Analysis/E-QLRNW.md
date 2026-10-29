@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source reads "differentiable functions" on Omega; for real-differentiable functions the conclusions fail, so the statement says complex differentiable on an open set. The source also reads "\sum{k\geq 0}", corrected to a subscripted sum.'

@@ -15,7 +15,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source does not say that f is entire and asks what happens if the bound holds "on all of C", where z^n vanishes at 0; the statement adds that f is entire and asks about the bound on C minus 0.

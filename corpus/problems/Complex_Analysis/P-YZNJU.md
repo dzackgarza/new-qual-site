@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5-5
   date: 2026-10-29
   note: 'The card printed "(e^{i theta})^n == cos n theta + i sin n theta" with a doubled equals sign and a misplaced \left. delimiter; corrected to a single equals sign and balanced parentheses.'

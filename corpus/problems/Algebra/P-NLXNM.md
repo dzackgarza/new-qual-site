@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source part 2 reads "Deduce that if $G$ is simple then the order of $G$ divides $n_p!$", which fails for $G$ cyclic of prime order and whenever $p$ does not divide $|G|$; the statement adds the hypothesis $n_p>1$. The source part 3 reads "Show that for any $1\leq a \leq 4$ and any prime power $p^k$, no group of order $ap^k$ is simple", which fails for groups of prime order; the statement takes $k\ge1$ and excepts groups of prime order. The source writes $\mathrm{Sym}(X)$ for $\mathrm{Sym}(X_p)$.'

@@ -17,7 +17,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-19
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source states (1) for every polynomial p and (2) for K = {r <= |z| <= R} with only r < R. Part (1) fails for p = 0, where M_R = 1, and z^{-m} is undefined on K unless r > 0; the statement takes p nonzero in (1) and 0 < r < R in (2).'

@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source states the identity with no request and no hypothesis on $b$; the identity fails for $b<0$ and is undefined for $b=0$. The statement now takes $b>0$ and asks to show the identity.'

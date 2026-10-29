@@ -19,7 +19,7 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "- Show that $ff(R[t]) = ff(R)(t)$." with R undeclared; the statement declares R an integral domain, which its fraction field requires.'

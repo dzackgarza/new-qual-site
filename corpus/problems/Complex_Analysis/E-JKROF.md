@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source prints only the identity, with no instruction and no condition on a and b; the statement asks to show it for real a > |b|, where the integrand is continuous and the identity holds.

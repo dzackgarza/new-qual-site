@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source claims that f(x)=x^{-n}, n in Z_{>=0}, is uniformly continuous on [0,infinity), which is false for n>=1. The previous statement reported that claim and asked where it fails; the statement now asks the question directly.

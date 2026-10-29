@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source reads "a sequentially compact space"; total boundedness is defined only for metric spaces, so the statement now says "metric space". A stray "Exercise" heading inside the statement is removed.

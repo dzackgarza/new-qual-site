@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source reads "Let f:D -> D with f(0) = f'(0) = 0" and does not say that f is holomorphic; the statement adds that hypothesis, without which the bound fails.

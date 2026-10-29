@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source reads "Let f in Hol(D)"; both bounds fail without f(D) contained in D (f(z)=2z), so the statement adds that hypothesis.

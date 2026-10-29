@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source removes only the circle |z-1/2| = 1/2, which leaves a disconnected set with no conformal map onto D; the statement removes the closed disk, the crescent the solution maps.

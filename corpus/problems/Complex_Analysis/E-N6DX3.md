@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-edited
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source nests four guidance bullets under parts (j), (k), (l) and (m), one of which gives the example sum z^k/k^2; they are moved to the hint block. The parts are labelled (a) through (n).

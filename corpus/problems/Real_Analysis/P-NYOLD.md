@@ -17,7 +17,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source defines the kernel as P_y(x) = (1/pi) y/(t^2+y^2), mixing the variables x and t, does not define Hf, and prints the hint inside part (a). The statement writes the kernel as P_y(t), names Hf as the Hardy-Littlewood maximal function, and moves the hint to a hint block."

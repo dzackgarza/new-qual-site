@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The problem block held a numbered solution sketch (deformation retract M = I x I/(x,0)~(1-x,1) onto {1/2} x I/~ by ((1-t)x+t/2, y), and compare with S^1 x I) instead of a question. The statement now asks for the homotopy equivalence; the solution carries the same argument."

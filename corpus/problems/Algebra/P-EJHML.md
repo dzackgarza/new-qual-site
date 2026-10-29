@@ -18,7 +18,7 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: "The source statement was a bullet item that did not declare $p$; the statement now says that $p$ is a prime and $n$ a positive integer."

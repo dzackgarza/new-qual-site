@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The problem block held a numbered, unfinished solution draft (loops in X x Y as pairs of loops via the projections, with the injectivity argument left as '...?') instead of a question. The statement now asks for the isomorphism; the solution carries the projection argument."

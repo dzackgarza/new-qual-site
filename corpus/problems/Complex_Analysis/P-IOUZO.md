@@ -18,7 +18,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
-- event: statement-edited
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'Part (b) read "for each z_0 there is at least one coefficient in the expansion ... is zero"; the stray "there is" was removed. The hints to parts (a) and (b) moved from the statement to a hint block.'

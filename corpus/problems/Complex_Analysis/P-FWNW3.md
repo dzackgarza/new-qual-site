@@ -19,7 +19,7 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source read "any holomorphic function f on a simply connected domain (or compact set with connected complement) can be uniformly approximated by polynomials on compact subsets". A function is not holomorphic on a compact set, so the parenthetical case now requires f holomorphic on a neighborhood of K and asks for approximation on K; the two cases are parts (a) and (b).

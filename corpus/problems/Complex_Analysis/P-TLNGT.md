@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source labels both the fifth and the sixth integral "(v)" and the seventh "(vi)"; the parts are now labelled (i)-(vii). The source takes $a \in \mathbb R$ in part (ii), where the integral diverges at a = 0; the statement now requires a nonzero.'

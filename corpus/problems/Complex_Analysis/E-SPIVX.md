@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source prints the identity with no instruction and no hypothesis on $b$; the statement now asks to show it for $b>0$.

@@ -20,7 +20,7 @@ audit:
 - event: solution-written
   by: openai-gpt-5.6-sol
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Discuss sufficient conditions on a polynomial of degree 5 to have Galois group $S_5$ over $\QQ$ and prove your statements."; the statement asks for one sufficient condition with proof.'

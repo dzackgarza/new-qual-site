@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source prints only the identity, with no instruction and no range for a; the statement asks to show it for a > 1, where the integral converges.

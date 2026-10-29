@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source writes only 'Show that chi(Sigma_g + Sigma_h) = chi(Sigma_g) + chi(Sigma_h) - 2'; the statement now defines Sigma_g and the sum as connected sum."

@@ -18,7 +18,7 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source reads "Every $a\in R$ for a finite ring is either a unit or a zero divisor." without declaring R; the statement declares R a finite commutative ring with identity, the setting of the solution.

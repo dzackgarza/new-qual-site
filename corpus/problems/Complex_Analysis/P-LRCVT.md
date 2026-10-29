@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: copy-repaired
+- event: source-checked
   by: Claude Opus 5.5
   date: 2026-10-29
   note: "Removed a duplicated extraction heading (Tie's Extra Questions: Fall 2015) from the statement and moved the source hint into a hint block."

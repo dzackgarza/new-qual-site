@@ -17,7 +17,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source asks to show that f itself is bounded, uniformly continuous and vanishes at infinity; an L^1 class has these properties only after modification on a null set, which the statement now says.

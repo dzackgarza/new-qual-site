@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source does not say that $\Omega$ is a connected open set containing $z_0$ or that the zeros $z_k$ differ from $z_0$. Without connectedness, $f$ can vanish identically near $z_0$ and be nonzero elsewhere; the statement now takes $\Omega$ to be a connected open set containing $z_0$ and $z_k\neq z_0$.'

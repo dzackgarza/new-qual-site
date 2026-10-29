@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source leaves f_1 undefined and parametrizes gamma_2 by t in (pi, 0); the statement defines f_1 as the branch r^{1/2} e^{i theta/2}, -pi < theta < pi, takes t in (0, pi) on both arcs, and states the limits as z tends to z_0 along each arc.'

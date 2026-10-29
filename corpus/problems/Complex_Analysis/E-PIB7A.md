@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source reads "Let f be meromorphic on D with no poles on the boundary of D"; f must be defined on the unit circle, and with infinitely many poles in D no finite Blaschke product cancels them, so the statement takes f meromorphic on a neighborhood of the closed disc.'

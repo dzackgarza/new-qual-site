@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source reads "Show that f = u+iv with u, v in C^1(R) satisfying the Cauchy-Riemann equations on Omega, then f is holomorphic on Omega with f''(z) = df/dx = (1/i) df/dy = (1/2)(u_x + i v_x)". The statement takes u, v in C^1(Omega), supplies "if", and drops the factor 1/2, which belongs to the Wirtinger derivative and makes the last equality false.'

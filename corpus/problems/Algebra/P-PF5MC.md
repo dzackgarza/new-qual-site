@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Calculate the Galois group of $x^5 - 2$." without naming the base field; the statement now names $\QQ$, the field the solution uses.'

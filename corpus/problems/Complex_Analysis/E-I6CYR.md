@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source states the identity without a domain; the statement restricts to Re z > 0 and Re w > 0, where the beta integral converges.

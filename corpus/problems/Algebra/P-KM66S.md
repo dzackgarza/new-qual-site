@@ -17,7 +17,7 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "Source printed 'this index 3 subgroup of A_4' with no subgroup introduced; changed to 'the index-3 subgroup of A_4', which is unique (the Klein four-group)."

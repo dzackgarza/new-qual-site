@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Show that any power series converges uniformly within its radius of convergence." This is false on the open disc of convergence: $\sum_k z^k$ does not converge uniformly on $\abs{z}<1$. The statement now asks for uniform convergence on every closed disc of radius $r$ strictly less than the radius of convergence.'

@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Show that a nilpotent operator is diagonalizable", which is false for nonzero nilpotents; part (d) now asks to show that a diagonalizable nilpotent operator is zero. The source states part (j) over an unspecified field, where it fails when x^n-1 has a repeated root; part (j) now works over the complex numbers. The bulleted parts are labelled (a) to (k).'

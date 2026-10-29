@@ -13,7 +13,7 @@ relations:
   target: E-YAEMZ
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5-5
   date: 2026-10-29
   note: Source printed only the two conditions "X is compact" and "Every infinite subset A of X has a limit point in X" with no question; the statement asks for the implication that holds in every topological space.

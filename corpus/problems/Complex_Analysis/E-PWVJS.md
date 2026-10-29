@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source states the identity without saying where it holds; the statement adds that f and g are holomorphic and nonvanishing on an open set.

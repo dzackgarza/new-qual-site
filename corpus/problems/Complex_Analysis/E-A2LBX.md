@@ -19,7 +19,7 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'Part (a) of the source reads "f: D -> C be a continuous function" with no "Let"; the statement supplies it.'

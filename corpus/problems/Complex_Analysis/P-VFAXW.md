@@ -11,7 +11,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Use this formulation to show that if $A(z)= 1-z$ then $1/A(z) = \sum z^k$", referring to a recursion stated earlier in the source; the statement now states that recursion.'

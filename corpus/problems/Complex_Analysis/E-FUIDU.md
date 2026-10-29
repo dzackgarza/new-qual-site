@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source asks for "a map $f: \DD\to \DD$" without requiring it holomorphic; without that hypothesis such a map exists. The statement now asks for a holomorphic map.'

@@ -15,7 +15,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source takes h in R in part (a) and names the translate tau_h d(x); the statement takes h in R^n, as translation of a subset of R^n requires, and names the translate tau_h f(x)."

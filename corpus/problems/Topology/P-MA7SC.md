@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "Source text: 'S^2 union_f D^2, where f attaches to the equator', a list item with no task. The statement now asks for the homotopy type and homology, which the solution computes."

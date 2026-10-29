@@ -11,7 +11,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source reads "Show that every nonzero ring has a maximal ideal."; without an identity the claim fails (the rational numbers with zero multiplication have no maximal ideal), so the statement assumes a commutative ring with identity.

@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source problem block held a worked answer (chain groups, boundary maps, and the result H_0 = ZZ, H_1 = ZZ^2) after the label 'Figure 8' and the figure; the statement now poses the computation for the pictured triangulation, and the solution carries the computation."

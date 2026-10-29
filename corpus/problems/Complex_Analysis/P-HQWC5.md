@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source asked to show that f(z) = b has n solutions in |z| < 1 without restricting b; this fails for |b| >= 1, since |f| < 1 on the disk. The statement now assumes |b| < 1 and counts solutions with multiplicity.

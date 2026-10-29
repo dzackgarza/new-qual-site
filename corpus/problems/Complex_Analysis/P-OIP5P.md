@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source states the identity without a hypothesis on b; it is false for b<0 and undefined for b=0, so the statement adds b>0.'

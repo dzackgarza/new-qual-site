@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source text was only the hint 'Draw CW square for T and cut down the center to see two copies of K.' The statement now poses the result named by the title; the source text is the hint."

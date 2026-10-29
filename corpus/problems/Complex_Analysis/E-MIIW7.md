@@ -11,7 +11,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source prints "If f:D_R(a)->D_M(0) with f(a)=0, then |f(z)| <= (M/R)|z-a|." without saying f is holomorphic; the statement asks to show the bound for holomorphic f.

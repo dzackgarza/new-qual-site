@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source says only that gamma lies in Omega; the identity needs gamma closed and a off gamma, so the statement adds both hypotheses.

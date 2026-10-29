@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source reads "Suppose that g is entire"; the constant g = 1/2 satisfies the functional equation and is not surjective, so the statement adds the hypothesis that g is nonconstant.

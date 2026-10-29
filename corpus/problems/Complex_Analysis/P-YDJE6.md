@@ -17,7 +17,7 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5-5
   date: 2026-10-29
   note: 'The card printed the denominator as 1 - 3z cos(theta) + z^2, for which the stated value is false; corrected to 1 - 2z cos(theta) + z^2, which the solution already used.'

@@ -18,7 +18,7 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source hint reads "You may use that fact in Example 1 on p. 42 of the textbook without proof, i.e., you may assume the above is true for real values of xi"; the statement keeps the permission and drops the reference to an unnamed textbook.'

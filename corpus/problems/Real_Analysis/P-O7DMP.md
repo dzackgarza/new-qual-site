@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source hint defines H(xi) = e^{2 pi i xi} int_0^1 y e^{2 pi i y xi} dy, for which H(xi) + H(-xi) is not hat G(xi) with hat g(xi) = int g(x) e^{-2 pi i x xi} dx (at xi = 1/4 it has the opposite imaginary-part sign). The substitution y = 1 - x on [0,1] gives the factor e^{-2 pi i xi}; the hint now uses it and sits in a hint block."

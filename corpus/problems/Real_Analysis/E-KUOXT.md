@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source part (a) continues an earlier item ("if additionally ... then this converges is almost everywhere") and never states the kernel, the function or the limit; the statement now declares them. The source reads "Show that is f is bounded"; "is" is corrected to "if".

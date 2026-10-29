@@ -18,7 +18,7 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "- Show that if a matrix is diagonalizable, its minimal polynomial is squarefree." with no matrix or field declared; the statement declares an n x n matrix A over a field F.'

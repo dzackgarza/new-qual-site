@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: OpenAI
   date: 2026-09-10
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5-5
   date: 2026-10-29
   note: 'Part (b) refers to "the roots of f" but the source never names f; the statement now names f(x) = x^3 - 5.'

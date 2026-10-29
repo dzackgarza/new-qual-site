@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source prints log(zw) != log(z)log(w) with no branch named; the statement names the principal branch and the intended identity Log(zw) = Log z + Log w.'

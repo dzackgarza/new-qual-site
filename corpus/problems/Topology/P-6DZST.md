@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The problem block held a numbered solution sketch (flow along great circles through the poles to the equator; alternatively S^2 minus a point is R^2 and R^2 minus a point is S^1 x R) instead of a question. The statement now asks for the deformation retraction; the great-circle flow is a remark."

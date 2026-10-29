@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Show that R[x] a PID iff R is a field." with R undeclared; the statement declares R commutative with identity and supplies the missing verb.'

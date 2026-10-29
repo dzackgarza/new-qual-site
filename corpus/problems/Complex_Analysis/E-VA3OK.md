@@ -17,7 +17,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source writes the sum as starting at k >= 0, whose first term is undefined; the statement starts it at k >= 1.

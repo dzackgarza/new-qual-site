@@ -15,7 +15,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-edited
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The statement did not say what Omega is; it now says Omega is an open set. Its single bullet marker was removed.

@@ -19,7 +19,7 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: "The source asked 'What is the Galois group of $x^2 - 2$? Why is $x^2 - 2$ irreducible?' without naming the base field; both questions now name $\\QQ$, the field the solution uses."

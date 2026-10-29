@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5-5
   date: 2026-10-29
   note: 'The card printed the integral without dx and without a range for s; the integral converges exactly for 0 < s < 1, so that hypothesis and dx were added.'

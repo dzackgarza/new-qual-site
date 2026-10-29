@@ -18,7 +18,7 @@ audit:
 - event: solution-written
   by: openai-gpt-5.6-sol
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source is a bullet item reading "Show that nilpotent groups have nontrivial centers.", which fails for the trivial group; the statement restricts to nontrivial nilpotent groups.

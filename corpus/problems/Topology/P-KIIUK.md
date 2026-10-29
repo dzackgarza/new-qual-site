@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "Source text: 'Show that if X ->f X^n is not surjective, then f is nullhomotopic.' The target X^n is undefined and the claim is false for general targets; it is read as the sphere S^n, the standard form of this exercise."

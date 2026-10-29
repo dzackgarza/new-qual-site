@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source omits the hypothesis ad-bc != 0, without which f is constant or undefined and is not a Möbius transformation; the statement adds it.

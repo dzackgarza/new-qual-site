@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The last source question reads "Do you know the classification of higher-dimensional polyhedra?"; the statement asks to state the classification of regular convex polytopes in dimension at least 4.'

@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-29
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "$0 < a \leq n$". At a = n the integrand behaves like 1/x at infinity and the integral diverges; the statement now requires 0 < a < n.'

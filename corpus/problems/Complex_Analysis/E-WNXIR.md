@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source does not require Omega connected; a function that vanishes on one component of a disconnected open set and not on another is a counterexample, so the statement takes Omega to be a region.

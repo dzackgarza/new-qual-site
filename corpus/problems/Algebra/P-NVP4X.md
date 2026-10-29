@@ -19,7 +19,7 @@ audit:
 - event: solution-written
   by: openai-gpt-5.6-sol
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Discuss groups of order 55." and poses no definite question; the statement asks for the classification up to isomorphism, which the solution gives.'

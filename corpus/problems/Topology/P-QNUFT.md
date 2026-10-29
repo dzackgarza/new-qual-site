@@ -15,7 +15,7 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source problem block held a worked answer opening 'Main idea: just algebraic manipulations using the pi_1 functor'; the statement now poses the claim that answer proves, and the solution carries the argument."

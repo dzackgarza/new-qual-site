@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source reads "Compute I_1 := PV int sin(x)/x dx = pi, I_2 := PV int cos(x)/x dx = 0", which states the values it asks for; the statement asks to show these values.'

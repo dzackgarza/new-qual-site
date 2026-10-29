@@ -17,7 +17,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: The source study list also asks to "Apply Fubini and Tonelli to literally anything" and to "Apply Cauchy-Schwarz to literally anything, in the form of norm(fg)_1 <= norm(f)_2 norm(g)_2", which pose no problem, and remarks that the proof technique of the inner-regularity item matters more than its result. These are removed; the remaining items are labelled (a)-(e), the L^1 norm carries its subscript, and item (d) quantifies epsilon.

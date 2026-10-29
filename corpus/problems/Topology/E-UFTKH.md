@@ -11,7 +11,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source asks to show cl_X(union_i A_i) = union_i cl_X(A_i) for an arbitrary family, which is false (A_n = {1/n} in R). The statement now takes finitely many sets; the infinite counterexample is a remark."

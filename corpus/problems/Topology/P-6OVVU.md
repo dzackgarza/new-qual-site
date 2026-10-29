@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The problem block held a numbered solution sketch citing Hatcher, Example 1.23 (deformation retract R^3 minus S^1 onto a sphere together with a diameter through the circle, then slide the diameter's endpoints together) instead of a question. The statement now asks for the homotopy type; the sketch is a remark."

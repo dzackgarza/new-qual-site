@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5-5
   date: 2026-10-29
   note: Source printed "Show that if f has no fixed points iff deg f = (-1)^{n+1} and f is homotopic to the antipodal map"; the converse is false (a reflection of S^2 has degree -1 and fixed points), so the statement asks for the forward implication.

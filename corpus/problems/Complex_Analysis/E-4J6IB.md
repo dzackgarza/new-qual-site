@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The statement block carried a warning that Riemann's theorem does not apply to z^{1/2} f(z) because z^{1/2} is "highly singular" at 0; that guidance moved to a hint, which says that z^{1/2} has no single-valued branch near 0.

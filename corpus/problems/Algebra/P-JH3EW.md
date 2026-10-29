@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The statement left the n_i undeclared; it now declares them nonzero integers. The previous solution asserted that the stabilizer of alpha can be nontrivial when the square classes are dependent; for principal square roots it is always trivial, and the solution now proves this.

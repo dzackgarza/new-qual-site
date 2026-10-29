@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Invert $\sin(z)$ using a geometric series, heeding the warning above.", referring to a warning earlier in the source that the series of sin z has zero constant term; the statement now states that point and asks for the Laurent expansion at 0.'

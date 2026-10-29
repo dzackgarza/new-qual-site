@@ -15,7 +15,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source reads "for some constants $k$ and $R$", leaving $M$ and $n$ undeclared; the statement now names the constants $M$ and $R$ and an integer $n\ge0$.'

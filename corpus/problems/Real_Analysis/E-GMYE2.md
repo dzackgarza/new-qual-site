@@ -17,7 +17,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: Parts (i)-(m) were embedded as two screenshots (assets/Workshops/Real Analysis/_attachments/Pasted image 20210519152250.png and Pasted image 20210519151915.png); they are transcribed from the images. The second image is cropped below its condition (b), so part (m) may have lost a third condition.

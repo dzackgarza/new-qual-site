@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source (Topology Week 1 Preliminaries workshop sheet) lists the five sets under 'Determine if the following subsets of R are opened, closed, both, or neither'; that lead-in was lost, and the title was the first list item. The lead-in is restored, and n in Z^{>=0} in the sets 1/n is corrected to n >= 1, since 1/0 is undefined."

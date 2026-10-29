@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Maximal $\implies$ prime, but generally not the converse." with no ring and no request; the statement declares a commutative ring with identity and asks for the proof and a counterexample to the converse.'

@@ -19,7 +19,7 @@ audit:
 - event: solution-reviewed
   by: OpenAI
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Show that if J ... is radical/prime/maximal iff ..." with R and I undeclared; the statement drops the stray "if" and declares I as an ideal of a commutative ring R.'

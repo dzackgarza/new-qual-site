@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source reads "Let f:D -> D with {a_k}_{k <= n} the zeros of f in D" and leaves psi_a undefined; the statement adds that f is holomorphic, counts the zeros with multiplicity, and defines psi_a.

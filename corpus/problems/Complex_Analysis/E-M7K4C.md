@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source does not give the centers or orientation of the circles or the sign of epsilon; the statement takes positively oriented circles centered at 0 and epsilon > 0.

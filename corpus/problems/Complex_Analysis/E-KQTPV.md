@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source asks for "all of the injective conformal maps G -> D"; injective maps into D that are not onto form no describable list, so the statement asks for maps of G onto D, as the title does. The earlier solution described Aut(G) through an incorrect map; it is replaced.

@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source problem block held a worked answer opening 'Main Idea: Linear homotopy fails continuity without the condition from (2)', which refers to a part not on this card; the statement now poses the claim that answer proves."

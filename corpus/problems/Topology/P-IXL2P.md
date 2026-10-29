@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source text was only an answer: 'This is just the Cayley graph over Z x Z, or essentially the integer lattice', with a sketch of the lattice with edges labelled x and y. The question was not retained. The statement is reconstructed as the covering of the figure eight whose total space is that graph, namely the cover for the commutator subgroup; the original question is unconfirmed."

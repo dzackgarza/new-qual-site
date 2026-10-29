@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "Source text: the bare list item '$\\QQ$' under 'Determine if the following subsets of R are opened, closed, both, or neither' (Topology Week 1 Preliminaries workshop sheet). The lead-in is restored."

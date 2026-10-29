@@ -16,7 +16,7 @@ audit:
 - event: solution-written
   by: muse-spark-1.2
   date: 2026-08-30
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "if $\theset{\vector v_i}$ is a basis for $V$ where $\dim(V) = n$" with no field. Over a field whose characteristic divides n, or that lacks the n-th roots of unity, T is not diagonalizable; the statement now takes V to be a complex vector space and indexes the basis by i = 0, ..., n-1.'

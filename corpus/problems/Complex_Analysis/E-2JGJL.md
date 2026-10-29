@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source says only "the unit square"; the statement fixes Gamma as the positively oriented boundary of [0,1]^2, the curve the solution integrates over.

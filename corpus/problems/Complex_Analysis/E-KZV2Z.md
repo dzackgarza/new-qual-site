@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source prints the integral over R, which diverges because x^2+3x+2 vanishes at -1 and -2. The solution computes the integral over (0, infinity), and the statement now asks for that integral.

@@ -19,7 +19,7 @@ audit:
 - event: solution-written
   by: openai-gpt-5.6-sol
   date: 2026-09-09
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Show that $N_G(H) / C_G(H)$ is isomorphic to a subgroup of $\operatorname{Aut}(H)$." without introducing $G$ or $H$; the statement now declares $G$ a group and $H$ a subgroup.'

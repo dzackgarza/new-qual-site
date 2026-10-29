@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source reads "suppose $\abs{f(z)}\leq 1$" without requiring $f$ holomorphic, and allows $\abs{f}=1$, where the left side can be $0/0$; it also states the equality case "for some $z\neq w$ in either expression". The statement now takes $f:\DD\to\DD$ holomorphic and states the equality case for $z\neq w$ in the first inequality and for a single $z$ in the second.'

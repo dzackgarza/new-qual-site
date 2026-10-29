@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "Source text: if M^orientable -> M^non-orientable is a k-fold cover then k is even or infinity. Connectedness of both spaces, which the solution uses, is now stated."

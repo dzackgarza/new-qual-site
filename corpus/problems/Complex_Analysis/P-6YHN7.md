@@ -18,7 +18,7 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: 'Source assumed only f injective, which fails for Omega = D, f(z) = z/2, g(z) = z; the statement now assumes f is a bijection onto Omega.'
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5-5
   date: 2026-10-29
   note: The source's first part asks for a statement of the Schwarz lemma; the card had replaced it with a note and now poses it as part (a).

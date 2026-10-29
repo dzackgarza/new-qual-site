@@ -20,7 +20,7 @@ audit:
   by: claude-opus-5-5
   date: 2026-10-29
   note: 'Source printed Lambda(f) = int_X g conj(f), which is conjugate-linear in f and fails for linear Lambda != 0 over C, and wrote M\perp; the statement now reads Lambda(f) = int_X f conj(g) and M^perp.'
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source opens the statement with the line '> Note: (a) is a repeat.'; the line is removed, the two bullet items are labelled (a) and (b), and the statement declares X a measure space."

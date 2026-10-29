@@ -15,7 +15,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source uses $\Delta^*$ without defining it; the statement now declares it as the punctured unit disc $0<\abs{z}<1$.'

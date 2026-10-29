@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source reads "Show that a real-valued holomorphic function is constant" with no domain; the statement takes the domain connected, since on a disconnected open set a locally constant function is a counterexample.

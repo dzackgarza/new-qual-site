@@ -17,7 +17,7 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-17
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source states part (a) for L^+(R) and the series for L^+(R^n), and uses L^+ and mu_f without defining them, citing countable additivity of mu_f 'established above'. The statement works on R^n throughout, defines L^+ and mu_f, and says that countable additivity follows from (a)."

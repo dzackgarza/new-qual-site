@@ -14,7 +14,7 @@ audit:
 - event: solution-written
   by: Codex 5.3 Spark Extra High
   date: 2026-08-30
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Suppose $\phi(n) = 2$." and asks nothing; the statement asks for every positive integer n with this property, which the title and solution answer.'

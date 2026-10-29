@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: The source asks for expansions in |z| < 1 and |z| > 1; f has a pole at 0, so the first region is the punctured disc 0 < |z| < 1.

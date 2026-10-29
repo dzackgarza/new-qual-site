@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: Claude Opus 5.5
   date: 2026-10-29
   note: 'The source reads "Map C minus [-1, 1] to D". That domain is not simply connected, so it has no conformal map onto D; the statement asks for the complement of the segment in the Riemann sphere.'

@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: 'The source reads "Find $1/\sin(z)$ using this method.", referring to the coefficient recursion stated earlier in the source; the statement now states that recursion and asks for the Laurent expansion at 0.'

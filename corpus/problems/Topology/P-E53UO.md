@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 audit:
-- event: statement-corrected
+- event: source-corrected
   by: claude-opus-5.5
   date: 2026-10-29
   note: "The source text was a worked argument (cylinder X cup_H B^2 x I retracting onto either lid, citing Hatcher Proposition 0.18) in place of a question. The statement now poses the result; the argument is the solution."
