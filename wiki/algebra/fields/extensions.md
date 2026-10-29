@@ -66,8 +66,6 @@ The quadratic extensions of $\QQ$ are the fields $\QQ(\sqrt d)$ for squarefree i
 
 [[PR-OFBRQ]]
 
-[[C-BOM4E]]
-
 [[PR-F2N4L]]
 
 ## Distinguished classes
