@@ -26,8 +26,6 @@ What is it?
 :::
 
 ::: {.solution}
-**Goal:** Prove that one-point sets in first-countable $T_1$ spaces are $G_\delta$ sets, and identify a familiar non-first-countable space with $G_\delta$ singletons.
-
 ::: pf
 
 ::: pf-step
@@ -100,8 +98,7 @@ Hence $\RR^\omega$ in the box topology is not first-countable.
 :::
 
 ::: pf-step
-Conclusion:
-Singletons are $G_\delta$ in any first-countable $T_1$ space, and $\RR^\omega$ with the box topology is a non-first-countable space with $G_\delta$ singletons. Q.E.D.
+Singletons are $G_\delta$ in any first-countable $T_1$ space, and $\RR^\omega$ with the box topology is a non-first-countable space with $G_\delta$ singletons.
 :::
 
 :::
