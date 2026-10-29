@@ -31,14 +31,13 @@ Show that $p$ is a regular covering map.
 :::
 
 ::: {.solution}
-**Goal:** Determine the groups of covering transformations (deck transformations) $\mathcal{C}(E, p, X)$ and regularity status for the four graph coverings of the figure-eight space $X = A \vee B$.
+For a covering $p: E \to X$, write $\mathcal{C}(E, p, X)$ for its group of covering transformations.
 
 ::: pf
 
 ::: pf-step
 
 General principles for covering transformations of graphs:
-    *Proof:*
 
 ::: pf-proof
 
@@ -67,7 +66,6 @@ A covering map of degree $d$ is **regular** (normal) if and only if $\mathcal{C}
 ::: pf-step
 
 Part (a) (Figure 81.4 - 2-fold covering):
-    *Proof:*
 
 ::: pf-proof
 
@@ -108,7 +106,6 @@ Therefore, $p$ is a regular covering map.
 ::: pf-step
 
 Part (b) (Figure 81.5 - 3-fold cyclic covering):
-    *Proof:*
 
 ::: pf-proof
 
@@ -143,7 +140,6 @@ Hence, the covering is **regular**.
 ::: pf-step
 
 Part (c) (Figure 81.6 - 3-fold non-regular covering):
-    *Proof:*
 
 ::: pf-proof
 
@@ -184,7 +180,6 @@ Since $|\mathcal{C}(E, p, X)| = 1 < 3$, the action is not transitive, and the co
 ::: pf-step
 
 Part (d) (Figure 81.7 - 4-fold covering):
-    *Proof:*
 
 ::: pf-proof
 
@@ -214,7 +209,7 @@ Since $|\mathcal{C}(E, p, X)| = 2 < 4$, the deck group has order strictly less t
 
 ::: pf-step
 
-Therefore, the covering is **not regular**. Q.E.D.
+Therefore, the covering is **not regular**.
 
 :::
 
