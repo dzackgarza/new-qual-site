@@ -60,7 +60,7 @@ $E \subseteq \RR^n$ is measurable if and only if $E = H \cup Z$ with $H$ an $F_\
 
 ::: pf-proof
 
-If $E$ is measurable, outer regularity gives open $G_k \supseteq E$ and, applied to $E^c$, closed $F_k \subseteq E$ with $m(G_k \setminus E) < 1/k$ and $m(E \setminus F_k) < 1/k$. Then $H = \bigcup_k F_k$ and $V = \bigcap_k G_k$ satisfy $m(E \setminus H) = 0$ and $m(V \setminus E) = 0$. Conversely $F_\sigma$ and $G_\delta$ sets are Borel and null sets are measurable. See [[E-D75O4]].
+If $E$ is measurable, outer regularity gives open $G_k \supseteq E$ and, applied to $E^c$, closed $F_k \subseteq E$ with $m(G_k \setminus E) < 1/k$ and $m(E \setminus F_k) < 1/k$. Then $H = \bigcup_k F_k$ and $V = \bigcap_k G_k$ satisfy $m(E \setminus H) = 0$ and $m(V \setminus E) = 0$. Conversely $F_\sigma$ and $G_\delta$ sets are Borel and null sets are measurable. See [[E-OMK54]].
 
 :::
 
