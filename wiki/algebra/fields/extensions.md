@@ -55,7 +55,7 @@ Hence an extension of prime degree has no intermediate fields other than its end
 
 For fields $K\subseteq L\subseteq M$, if $L/K$ and $M/L$ are algebraic, then $M/K$ is algebraic.
 
-[[PR-ABSJX]]
+[[P-FHW1-02]]
 
 ## Quadratic extensions
 
