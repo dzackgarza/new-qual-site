@@ -49,18 +49,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair moves the automorphism-count review prompt to `D-5JYEI`, removes duplicate reader-facing references, and deletes `FD-4GFTY`.
 
-### Duplicate even/odd-permutation card FD-PIVQZ
-
-- **Object and need:** `D-TMME3` and `FD-PIVQZ` in `corpus/theory/Algebra`. `D-TMME3` already owns the definition of even permutations and the alternating group; `FD-PIVQZ` repeats evenness and adds oddness plus the parity characterization.
-
-- **Observed evidence:** after the sign convention repair, both use the same multiplicative sign `$S_n\to\{\pm1\}$`. The wiki and algebra guide exposed both recall units, and `FD-X4DBP` linked to the flashcard for “even.”
-
-- **Impact and owner:** the duplicated evenness definition splits a basic permutation concept; the odd terminology and parity statement can be preserved on the canonical alternating-group card.
-
-- **Uncertainty:** none after reading both complete cards.
-
-- **Repair:** a `CARD-04` repair moves the prompt, odd definition, and parity remark to `D-TMME3`, redirects `FD-X4DBP`, removes duplicate reader-facing references, and deletes `FD-PIVQZ`.
-
 ### Krull's maximal-ideal theorem had three intrinsic cards
 
 - **Object and need:** `PR-UTFSY`, `T-QSTRJ`, and `FF-QELG7` in `corpus/theory/Algebra`. All three state that every proper ideal is contained in a maximal ideal.
