@@ -24,7 +24,7 @@ Show that uncountably many points of $A$ are limit points of $A$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that if $X$ is a second-countable topological space and $A \subseteq X$ is uncountable, then uncountably many points of $A$ are limit points of $A$ (i.e. $A \cap A'$ is uncountable).
+Write $A'$ for the set of limit points of $A$ in $X$; we show that $A \cap A'$ is uncountable.
 
 ::: pf
 
@@ -87,7 +87,7 @@ $$A = (A \cap A') \cup (A \setminus A') = (A \cap A') \cup I.$$
 :::
 
 ::: pf-step
-Since $A$ is uncountable and $I$ is countable, the set $A \cap A'$ of points of $A$ that are limit points of $A$ must be uncountable. Q.E.D.
+Since $A$ is uncountable and $I$ is countable, the set $A \cap A'$ of points of $A$ that are limit points of $A$ must be uncountable.
 :::
 
 :::
