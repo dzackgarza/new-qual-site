@@ -40,40 +40,34 @@ Every $f_n$ is continuous, and the convergence $f_n\to f$ is uniform. The unifor
 
 ::: {.pf-step #s2}
 
-The quantities $|f_n(x_n)-f(x_n)|$ and $|f(x_n)-f(x)|$ both tend to zero.
+The quantities $\abs{f_n(x_n)-f(x_n)}$ and $\abs{f(x_n)-f(x)}$ both tend to zero.
 
 ::: pf-proof
 
 Uniform convergence gives
-\[
-|f_n(x_n)-f(x_n)|\leq\|f_n-f\|_\infty\longrightarrow0,
-\]
+$$
+\abs{f_n(x_n)-f(x_n)}\leq\norm{f_n-f}_\infty\longrightarrow0,
+$$
 because $x_n\in[0,1]$. By step [](#s1){.pf-ref}, $f$ is continuous at $x$, so $x_n\to x$ implies $f(x_n)\to f(x)$.
 
 :::
 
 :::
 
-::: {.pf-step #s3}
+::: pf-step
 
-The limit is $\boxed{\lim_{n\to\infty}f_n(x_n)=f(x)}$.
+$\lim_{n\to\infty}f_n(x_n)=f(x)$.
 
 ::: pf-proof
 
 By the triangle inequality,
-\[
-|f_n(x_n)-f(x)|
-\leq|f_n(x_n)-f(x_n)|+|f(x_n)-f(x)|.
-\]
+$$
+\abs{f_n(x_n)-f(x)}
+\leq\abs{f_n(x_n)-f(x_n)}+\abs{f(x_n)-f(x)}.
+$$
 Both terms on the right tend to zero by step [](#s2){.pf-ref}, so the left-hand side does as well.
 
 :::
-
-:::
-
-::: pf-qed
-
-Step [](#s3){.pf-ref} establishes the required convergence.
 
 :::
 
