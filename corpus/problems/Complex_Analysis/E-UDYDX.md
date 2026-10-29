@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-UDYDX
 kind: problem
-title: $1/x^4+1$, half-line
+title: $\int_0^\infty \frac{dx}{x^4+1}$
 classification:
   areas:
   - complex-analysis
@@ -13,134 +13,180 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
+audit:
+- event: statement-corrected
+  by: claude-opus-5.5
+  date: 2026-10-29
+  note: The source prints the identity with no instruction; the statement now asks to show it.
 ---
 
 ::: {.exercise}
-\[
-I \definedas \int_0^\infty {1\over x^4 + 1 }\dx = {\pi \over 2\sqrt 2}
-.\]
-
+Show that
+$$
+I \coloneqq \int_0^\infty {1\over x^4 + 1 }\dx = {\pi \over 2\sqrt 2}.
+$$
 :::
 
 ::: {.solution title="Integrand symmetry"}
-Note that the function is even, so
-\[
-\int_{0^\infty} f(x) \dx = {1\over 2} \int_\RR f(x)\dx = {1\over 2} {\pi \over \sqrt 2} = {\pi \over 2 \sqrt 2}
-,\]
-using the solution from a previous problem.
+Let $f(z) \coloneqq (z^4+1)^{-1}$ and $\omega \coloneqq e^{i\pi/4}$. The zeros of $z^4+1$ are $\omega, \omega^3, \omega^5, \omega^7$, all simple, and at each such $z_k$, $\Res_{z=z_k} f = \frac{1}{4z_k^3} = \frac{z_k}{4z_k^4} = -\frac{z_k}{4}$.
+
+::: pf
+
+::: {.pf-step #full-line}
+$\int_\RR f(x)\dx = \frac{\pi}{\sqrt 2}$.
+
+::: pf-proof
+On the upper semicircle $C_R$ of radius $R>1$, $\abs{\int_{C_R} f}\leq \pi R/(R^4-1)\to 0$. The poles in the upper half-plane are $\omega$ and $\omega^3$, so by the residue theorem
+$$
+\int_\RR f(x)\dx = 2\pi i\left(-\frac{\omega+\omega^3}{4}\right) = 2\pi i\left(-\frac{i\sqrt 2}{4}\right) = \frac{\pi}{\sqrt 2}.
+$$
+:::
+
+:::
+
+::: pf-step
+$I = \frac{\pi}{2\sqrt 2}$.
+
+::: pf-proof
+$f$ is even on $\RR$, so $I = \frac12\int_\RR f(x)\dx$; apply step [](#full-line){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::
 
 ::: {.solution title="Sector"}
-A sector will work, since there is a symmetry under $z\to \zeta_4 z$ and $f(z) \sim z^{-4}$, so the semicircular piece will vanish.
-Take the contour $\Gamma$ comprised of
+Let $f(z) \coloneqq (z^4+1)^{-1}$ and $z_0 \coloneqq e^{i\pi/4}$. For $R>1$ let $\Gamma$ be the counterclockwise boundary of the quarter disc, made of
 
-- $\gamma_1: \theset{t + 0i \st t\in [0, R]}$,
+- $\gamma_1: \theset{t \st t\in [0, R]}$,
 
 - $C_R: \theset{Re^{it}\st t\in [0, \pi/2]}$,
 
-- $\gamma_2: \theset{0 + it \st t\in [0, R]}$,
+- $\gamma_2$: the segment from $iR$ to $0$.
 
-oriented counter-clockwise.
-Note that $z^4+1 = \prod_{k=0}^3 (z-\omega \zeta_4)$ where $\omega = e^{i\pi \over 4}$ and $\zeta_4 = e^{2\pi i\over 4} = i$, so there is only one pole at $z_0 \definedas e^{i\pi\over 4}$ within this contour.
+The zeros of $z^4+1$ are $z_0 i^k$ for $k=0,1,2,3$, so $z_0$ is the only pole inside $\Gamma$.
 
-Computing the symmetry:
-\[
-\int_{\gamma_2} f(z) \dz
-&= \int_R^0 {i \over (ti)^4 + 1}\dt \qquad z=ti,\, \dz = i\dt \\
-&= -i \int_0^R {1\over t^4 + 1}\dt \\
-&= -i \int_{\gamma_1} f(z) \dz
-,\]
-so applying the residue theorem and noting that $\int_{C_R}f\to 0$,
-\[
-2\pi \Res_{z=z_0} f(z) = \int_\Gamma f(z) \dz = \qty{\int_{\gamma_1} + \int_{C_R} + \int_{\gamma_2}}f \too (1-i) I
-.\]
-Computing the residue:
-\[
-\Res_{z=z_0}f(z)
-&= {1\over 4z^3}\evalfrom_{z= e^{i\pi \over 4}} \\
-&= {1\over 4}e^{-3i\pi \over 4} \\
-&= {1\over 4}e^{5i\pi \over 4}
-.\]
+::: pf
 
-Thus
-\[
-I
-&= \inverseof{(1-i)} 2\pi i \Res_{z=z_0} f(z) \\
-&= \qty{\bar{1-i} \over \abs{1-i}^2} 2\pi i \cdot {1\over 4}e^{5i\pi \over 4} \\
-&= {1+i \over 2} {\pi i \over 2}e^{5i\pi \over 4} \\
-&= {e^{i\pi \over 4} \over \sqrt{2} } {\pi i \over 2}e^{5i\pi \over 4} \\
-&= {\pi i \over 2\sqrt{2}}e^{6i\pi \over 4} \\
-&= {\pi i \over 2\sqrt{2}}(-i) \\
-&= {\pi \over 2\sqrt{2}}
-.\]
+::: {.pf-step #rotate}
+$\int_{\gamma_2} f(z) \dz = -i\int_{\gamma_1} f(z)\dz$.
+
+::: pf-proof
+With $z = ti$, $\dz = i\dt$ and $(ti)^4 = t^4$:
+$$
+\int_{\gamma_2} f(z) \dz = \int_R^0 {i \over t^4 + 1}\dt = -i \int_0^R {1\over t^4 + 1}\dt.
+$$
+:::
+
+:::
+
+::: {.pf-step #arc}
+$\int_{C_R} f\to 0$ as $R\to\infty$.
+
+::: pf-proof
+$\abs{\int_{C_R} f}\leq \frac{\pi R/2}{R^4-1}\to 0$.
+:::
+
+:::
+
+::: {.pf-step #residue}
+$\Res_{z=z_0}f = \frac14 e^{5i\pi/4}$.
+
+::: pf-proof
+For a simple zero of the denominator, $\Res_{z=z_0} f = \frac{1}{4z_0^3} = \frac14 e^{-3i\pi/4} = \frac14 e^{5i\pi/4}$.
+:::
+
+:::
+
+::: pf-step
+$I = \frac{\pi}{2\sqrt 2}$.
+
+::: pf-proof
+By the residue theorem and steps [](#rotate){.pf-ref} and [](#arc){.pf-ref}, letting $R\to\infty$ gives $(1-i)I = 2\pi i\Res_{z=z_0} f$. With step [](#residue){.pf-ref},
+$$
+I = \frac{2\pi i}{1-i}\cdot\frac{e^{5i\pi/4}}{4} = \pi(i-1)\cdot\frac{-1-i}{4\sqrt 2} = \frac{2\pi}{4\sqrt 2} = \frac{\pi}{2\sqrt 2}.
+$$
+:::
+
+:::
+
+:::
 
 :::
 
 ::: {.solution title="The log trick"}
-Consider the auxiliary function $g(z) \definedas \log(z) f(z)$, and take a keyhole contour:
+Let $f(z) \coloneqq (z^4+1)^{-1}$, let $\log$ be the branch on $\CC\sm[0,\infty)$ with $\arg z\in(0,2\pi)$, and let $g(z) \coloneqq f(z)\log z$. Take the keyhole contour:
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-23_00-39-57.png)
 
-Let $\Gamma$ be the counterclockwise contour consisting of
+For $0<\varepsilon<1<R$, let $\Gamma$ be the counterclockwise contour consisting of
 
-- $C_\eps = \theset{\eps e^{it}\st t\in [0+\eps, 2\pi - \eps]}$
+- $\gamma_+ = \theset{x+i\varepsilon \st x\in [\varepsilon, R]}$, traversed left to right,
 
-- $\gamma_+ = \theset{x+i\eps \st x\in [\eps, R]}$
+- the large circle $C_R$, traversed counterclockwise,
 
-- $C_R= \theset{R e^{it}\st t\in [0+\eps, 2\pi - \eps]}$
+- $\gamma_- = \theset{x-i\varepsilon \st x\in [\varepsilon, R]}$, traversed right to left,
 
-- $\gamma_- = \theset{x-i\eps \st x\in [\eps, R]}$
+- the small circle $C_\varepsilon$, traversed clockwise.
 
-Computing the symmetry:
-\[
-\int_{\gamma_-}{\log(z) \over z^{4} + 1} \dz
-&= \int_{R}^\eps {\log(x-i\eps) \over (x-i\eps)^4 + 1} \dx \qquad z=x-i\eps, \dz = \dx \\
-&\to - \int_{\eps}^R {\log(x) + 2\pi i\over x^4 + 1}\dz \\
-&= -\int_{\gamma_+} {\log(z) \over z^4+1}\dz - 2\pi i\int_{\gamma_+} {1\over z^4+1} \dz
-,\]
-so
-\[
-\int_{\gamma_+} f + \int_{\gamma_-}f \too -2\pi i I
-.\]
-By the ML estimate, since $\log(z)/z^4\to 0$ as $\abs{z}\to \infty$, $\int_{C_R}g(z) \to 0$.
-Similarly, since $\log(z) / (z^4+1)\to 0$ as $\abs{z}\to 0$, $\int_{C_\eps}\to 0$.
-We're then left with the sum of residues at $e^{k i \pi \over 4}$ for $k = 1,3,5,7$.
-We have
-\[
-\Res_{z=z_k} f(z)
-&= {1\over 4z^3}\evalfrom_{z=z_k} \\
-&= {z\over 4z^4}\evalfrom_{z=z_k} \\
-&= - {z\over 4}\evalfrom_{z=z_k} \qquad \text{ since } z_k^4 = -1 \\
-&= -{z_k \over 4}
-,\]
-so
-\[
-\Res_{z=z_k}g(z) = -{z_k \over 4}\log(z_k)
-.\]
+The poles of $f$ are $z_k \coloneqq e^{ik\pi/4}$ for $k=1,3,5,7$, all inside $\Gamma$, and $\log z_k = ik\pi/4$.
 
-Now use that in the limit,
-\[
-2\pi i \sum_k \Res_{z=z_k}g(z)
-&= \int_\Gamma g(z) \dz \\
-&= \qty{\int_{\gamma_+} + \int_{\gamma_i}} f \\
-&= -2\pi i I
-,\]
-so $I = -\sum_k \Res_{z=z_k} g(z)$.
+::: pf
 
-Being very careful to note that we've chosen a branch of $\log$ where $\Arg(z) \in (0, 2\pi)$ in order to get the signs right,
-\[
--\sum_k \Res(z=z_k) g(z)
-&= {1\over 4}\qty{ z_1\log(z_1) + z_2\log(z_2)+z_3\log(z_3)+z_4\log(z_4) } \\
-&= {1\over 4}\qty{ z_1 {i\pi \over 4} + z_2 {3i\pi \over 4} + z_3 {5i\pi \over 4}+ z_4 {7i\pi \over 4} } \\
-&= {i\pi \over 16}\qty{ z_1  + 3z_2  + 5z_3+ 7z_4 } \\
-&= {i\pi \over 16}\qty{ \omega \zeta_4^0  + 3\omega\zeta_4^1  + 5\omega\zeta_4^2+ 7\omega \zeta_4^3 } \\
-&= {i\pi \omega \over 16}\qty{ 1 + 3i  + -5 + -7i } \\
-&= {i\pi \omega \over 16}(-4-4i) \\
-&= -{i\pi \omega \over 4}(1+i) \\
-&= -{i\pi \omega \over 2}{ \omega \over \sqrt{2} } \\
-&= -i\omega^2 {\pi \over 2 \sqrt 2} \\
-&= {\pi \over 2\sqrt{2} }
-,\]
-using that ${\sqrt 2\over 2}(1+i) = e^{i\pi \over 4} = \omega$ and $\omega^2 = i$.
+::: {.pf-step #slit}
+As $\varepsilon\to 0$, $\int_{\gamma_+} g + \int_{\gamma_-} g \to -2\pi i\int_0^R f(x)\dx$.
+
+::: pf-proof
+On the upper edge of the cut $\log z\to\log x$, and on the lower edge $\log z\to\log x+2\pi i$. Since $\gamma_-$ runs from right to left,
+$$
+\int_{\gamma_+} g + \int_{\gamma_-} g \to \int_0^R f(x)\log x\dx - \int_0^R f(x)(\log x + 2\pi i)\dx = -2\pi i\int_0^R f(x)\dx.
+$$
+:::
+
+:::
+
+::: {.pf-step #circles}
+$\int_{C_R} g\to 0$ as $R\to\infty$ and $\int_{C_\varepsilon} g\to 0$ as $\varepsilon\to 0$.
+
+::: pf-proof
+On $\abs{z}=\rho$, $\abs{\log z}\leq\abs{\log\rho}+2\pi$. So $\abs{\int_{C_R} g}\leq 2\pi R\,\frac{\log R+2\pi}{R^4-1}\to 0$ and $\abs{\int_{C_\varepsilon} g}\leq 2\pi\varepsilon\,\frac{\abs{\log\varepsilon}+2\pi}{1-\varepsilon^4}\to 0$.
+:::
+
+:::
+
+::: {.pf-step #residues}
+$\Res_{z=z_k} g = -\frac{z_k\log z_k}{4}$.
+
+::: pf-proof
+$\Res_{z=z_k} f = \frac{1}{4z_k^3} = \frac{z_k}{4z_k^4} = -\frac{z_k}{4}$, since $z_k^4 = -1$, and $\log$ is holomorphic at $z_k$.
+:::
+
+:::
+
+::: {.pf-step #sum}
+$\frac14\sum_{k\in\{1,3,5,7\}} z_k\log z_k = \frac{\pi}{2\sqrt 2}$.
+
+::: pf-proof
+Write $\omega \coloneqq e^{i\pi/4}$, so $z_1, z_3, z_5, z_7 = \omega, \omega i, -\omega, -\omega i$. Then
+$$
+\frac14\sum_k z_k\log z_k = \frac{i\pi}{16}\left(\omega + 3\omega i - 5\omega - 7\omega i\right) = \frac{i\pi\omega}{16}(-4-4i) = -\frac{i\pi\omega(1+i)}{4}.
+$$
+Since $1+i = \sqrt 2\,\omega$ and $\omega^2 = i$, this is $-\frac{i\pi\sqrt 2\, i}{4} = \frac{\pi\sqrt 2}{4} = \frac{\pi}{2\sqrt 2}$.
+:::
+
+:::
+
+::: pf-step
+$I = \frac{\pi}{2\sqrt 2}$.
+
+::: pf-proof
+By the residue theorem, $\int_\Gamma g = 2\pi i\sum_k\Res_{z=z_k} g$. Letting $\varepsilon\to 0$ and $R\to\infty$, steps [](#slit){.pf-ref} and [](#circles){.pf-ref} give $-2\pi i I = 2\pi i\sum_k\Res_{z=z_k} g$, so $I = \frac14\sum_k z_k\log z_k$ by step [](#residues){.pf-ref}; apply step [](#sum){.pf-ref}.
+:::
+
+:::
+
+:::
 
 :::
