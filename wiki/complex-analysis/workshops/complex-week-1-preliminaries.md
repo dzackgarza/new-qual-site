@@ -23,7 +23,7 @@ title: "Complex analysis workshop week 1: preliminaries"
 
 ## Exercises
 
-[[E-USHMH]]
+[[P-UGA8150S21-HW1-06]]
 
 ## Qualifying exam problems
 
