@@ -26,7 +26,6 @@ Justify your answer.
 :::
 
 ::: {.solution}
-**Goal:** Determine whether the continuous image (and continuous open image) of a locally compact space is locally compact.
 
 ::: pf
 
