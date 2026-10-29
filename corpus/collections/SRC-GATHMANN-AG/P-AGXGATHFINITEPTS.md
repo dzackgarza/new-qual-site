@@ -22,72 +22,85 @@ Prove that every affine variety $X\subset \AA^n/k$ consisting of only finitely m
 :::
 
 ::: {.solution}
-Let $X = \theset{\mathbf{p}_1, \cdots, \mathbf{p}_d} = \theset{\mathbf{p}_j}_{j=1}^d$, where each $\mathbf{p}_j\in \AA^n$ is written in coordinates
-\[
-\mathbf{p}_j \definedas {\left[ {p_j^1, p_j^2, \cdots, p_j^n} \right]}
-.\]
+Let $k$ be the ground field, which is algebraically closed and in particular infinite. Let $X=\theset{\mathbf{p}_1,\dots,\mathbf{p}_d}$ with the $\mathbf{p}_j$ distinct and $\mathbf{p}_j=(p_j^1,\dots,p_j^n)$. If $d=0$, then $X=V(1)$, a zero locus of $n$ copies of the constant $1$; so assume $d\geq1$.
 
-Proof idea: for some fixed $k$ with $2\leq k \leq n$, consider the pairs $(p_j^1, p_j^k) \in \AA^2$.
-Letting $j$ range over $1\leq j \leq d$ yields $d$ points of the form $(x, y) \in \AA^2$, so construct an interpolating polynomial such that $f(x) = y$ for each tuple.
-Then $f(x) - y$ vanishes at every such tuple.
-Doing this for each $k$ (keeping the first coordinate always of the form $p_j^1$ and letting the second coordinate vary) yields $n-1$ polynomials in $k[x_1, x_k] \subseteq k[x_1, \cdots, x_{n}]$; adding the polynomial $p(x) = \prod_j (x-p_j^1)$ yields a system that vanishes precisely on $\theset{\mathbf{p}_j}$.
+::: pf
 
-**Claim**: without loss of generality, all of the first components $\theset{p_j^1}_{j=1}^d$ are distinct.
+::: {.pf-step #reduction}
+It suffices to treat the case where $p_1^1,\dots,p_d^1$ are pairwise distinct.
 
-We use the following fact.
+::: pf-proof
 
-**Lagrange interpolation**: given a set of $d$ points $\theset{(x_i, y_i)}_{i=1}^d$ with all $x_i$ distinct, there is a unique polynomial of degree $d$ in $f \in k[x]$ such that $\tilde f(x_i) = y_i$ for every $i$.
-This is given explicitly by
-\[
-\tilde f(x) = \sum_{i=1}^d y_i \qty{\prod_{\substack{0\leq m \leq d \\ m\neq i}} \qty{x - x_m \over x_i - x_m }}
-.\]
-Equivalently, there is a polynomial $f$ defined by $f(x_i) = \tilde f(x_i) - y_i$ of degree $d$ whose roots are precisely the $x_i$.
+::: {.pf-step #coord-change}
+If $\phi\colon\AA^n\to\AA^n$ is an invertible linear map and $\phi(X)=V(g_1,\dots,g_n)$, then $X=V(g_1\circ\phi,\dots,g_n\circ\phi)$ is a zero locus of $n$ polynomials.
 
-Using this, define a system of $n$ polynomials:
-
-- Define $f_1 \in k[x_1] \subseteq k[x_1, \cdots, x_n]$ by
-  \[
-  f_1(x) = \prod_{i=1}^d \qty{x - p_i^1}
-  .\]
-  The roots of $f_1$ are precisely the first components of the points $p$.
-
-- Define $f_2 \in k[x_1, x_2] \subseteq k[x_1, \cdots, x_n]$ by considering the ordered pairs
-  \[
-  \theset{(x_1, x_2) = (p_j^1, p_j^2)}
-  ,\]
-  then taking the unique Lagrange interpolating polynomial $\tilde f_2$ satisfying $\tilde f_2(p_j^1) = p_j^2$ for all $1\leq j \leq d$.
-  Set $f_2 \definedas \tilde f_2(x_1) - x_2 \in k[x_1, x_2]$.
-
-- Define $f_3 \in k[x_1, x_3] \subseteq k[x_1, \cdots, x_n]$ by considering the ordered pairs
-  \[
-  \theset{(x_1, x_3) = (p_j^1, p_j^3)}
-  ,\]
-  then taking the unique Lagrange interpolating polynomial $\tilde f_3$ satisfying $\tilde f_3(p_j^1) = p_j^3$ for all $1\leq j \leq d$.
-  Set $f_3 \definedas \tilde f_3(x_1) - x_3 \in k[x_1, x_3]$.
-
-- Continuing in this way up to $f_n \in k[x_1, x_n]$ yields a system of $n$ polynomials.
-
-**Proposition**: $V(f_1, \cdots, f_n) = X$.
-
-$X\subseteq V(f_i)$: this is essentially by construction.
-Letting $p_j\in X$ be arbitrary,
-\[
-f_1(p_j)  = \prod_{i=1}^d \qty{p_j^1 - p_i^1} = (p_j^1 - p_j^1) \prod_{\substack{i\leq d \\ i\neq j}} \qty{p_j^1 - p_i^1} = 0
-.\]
-Similarly, for $2\leq k \leq n$,
-\[
-f_k(p_j) = \tilde f_k(p_j^1) - p_j^k = 0
-,\]
-which follows from $\tilde f_k(p_j^1) = p_j^k$ for every $k$ and every $j$ by construction of $\tilde f_k$.
-
-$X^c \subseteq V(f_i)^c$: this follows because the polynomials given by Lagrange interpolation are unique, so the roots of $\tilde f$ are unique.
-If some other point were in $V(f_i)$, then one of its coordinates would be another root of some $\tilde f$.
+::: pf-proof
+A point $\mathbf{q}$ satisfies $g_k(\phi(\mathbf{q}))=0$ for all $k$ exactly when $\phi(\mathbf{q})\in\phi(X)$, that is, when $\mathbf{q}\in X$, since $\phi$ is bijective. Each $g_k\circ\phi$ is a polynomial because $\phi$ is linear.
 :::
 
-::: {.remark}
-Erratum: the solution has three gaps.
+:::
 
-- The reduction to distinct first coordinates is asserted without the coordinate change it needs. Since $X$ is finite and $k$ is infinite, a linear change of coordinates on $\AA^n$ makes the $x_1$-coordinates of the $\mathbf{p}_j$ pairwise distinct, and a linear change of coordinates carries zero loci of $n$ polynomials to zero loci of $n$ polynomials.
-- The interpolating polynomial through $d$ points with distinct $x_i$ has degree at most $d-1$, not $d$; the product in the Lagrange formula runs over $1\leq m\leq d$, and the sentence beginning "Equivalently" does not define a polynomial.
-- The reverse inclusion $V(f_1,\cdots,f_n)\subseteq X$ does not follow from uniqueness of interpolating polynomials. If $\mathbf{q}\in V(f_1,\cdots,f_n)$, then $f_1(\mathbf{q})=0$ gives $q^1=p_j^1$ for some $j$, and then $f_k(\mathbf{q})=0$ gives $q^k=\tilde f_k(p_j^1)=p_j^k$ for $2\leq k\leq n$, so $\mathbf{q}=\mathbf{p}_j$.
+::: {.pf-step #distinct-first}
+There is such a $\phi$ for which the first coordinates of the points $\phi(\mathbf{p}_j)$ are pairwise distinct.
+
+::: pf-proof
+For $j\neq l$, the vector $\mathbf{p}_j-\mathbf{p}_l$ is nonzero, so $H_{jl}\definedas\theset{\lambda\in k^n\st \lambda\cdot(\mathbf{p}_j-\mathbf{p}_l)=0}$ is a proper linear subspace of $k^n$. Over the infinite field $k$, a finite union of proper subspaces is not all of $k^n$, so there is $\lambda\notin\Union_{j\neq l}H_{jl}$; in particular $\lambda\neq0$. Extend $\lambda$ to a basis $\lambda,\mu_2,\dots,\mu_n$ of $k^n$ and put $\phi(\mathbf{v})\definedas(\lambda\cdot\mathbf{v},\mu_2\cdot\mathbf{v},\dots,\mu_n\cdot\mathbf{v})$, which is invertible. The first coordinates $\lambda\cdot\mathbf{p}_j$ are pairwise distinct by the choice of $\lambda$.
+:::
+
+:::
+
+::: pf-qed
+Apply the distinct case to $\phi(X)$ with $\phi$ from step [](#distinct-first){.pf-ref}, and transport the result back by step [](#coord-change){.pf-ref}.
+:::
+
+:::
+
+:::
+
+::: {.pf-step}
+If $p_1^1,\dots,p_d^1$ are pairwise distinct, then $X=V(f_1,\dots,f_n)$, where
+\[
+f_1\definedas\prod_{j=1}^d(x_1-p_j^1),
+\qquad
+f_k\definedas \tilde f_k(x_1)-x_k\quad(2\leq k\leq n),
+\]
+and $\tilde f_k\in k[t]$ is the Lagrange interpolating polynomial
+\[
+\tilde f_k(t)\definedas\sum_{j=1}^d p_j^k\prod_{\substack{1\leq m\leq d\\ m\neq j}}\frac{t-p_m^1}{p_j^1-p_m^1}
+.\]
+
+::: pf-proof
+
+::: {.pf-step #interp}
+Each $\tilde f_k$ is a polynomial of degree at most $d-1$ with $\tilde f_k(p_l^1)=p_l^k$ for all $l$.
+
+::: pf-proof
+The denominators are nonzero because the $p_m^1$ are distinct, and each product has $d-1$ linear factors. At $t=p_l^1$, every product with $j\neq l$ contains the factor $t-p_l^1=0$, and the product with $j=l$ equals $1$, so $\tilde f_k(p_l^1)=p_l^k$.
+:::
+
+:::
+
+::: {.pf-step #forward}
+$X\subseteq V(f_1,\dots,f_n)$.
+
+::: pf-proof
+At $\mathbf{p}_l$, the product $f_1(\mathbf{p}_l)$ contains the factor $p_l^1-p_l^1=0$, and $f_k(\mathbf{p}_l)=\tilde f_k(p_l^1)-p_l^k=0$ by step [](#interp){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #backward}
+$V(f_1,\dots,f_n)\subseteq X$.
+
+::: pf-proof
+Let $\mathbf{q}=(q^1,\dots,q^n)\in V(f_1,\dots,f_n)$. From $f_1(\mathbf{q})=0$, some factor vanishes, so $q^1=p_j^1$ for some $j$. For $2\leq k\leq n$, $f_k(\mathbf{q})=0$ gives $q^k=\tilde f_k(q^1)=\tilde f_k(p_j^1)=p_j^k$ by step [](#interp){.pf-ref}. Hence $\mathbf{q}=\mathbf{p}_j\in X$.
+:::
+
+:::
+
+:::
+
+:::
+
+:::
 :::
