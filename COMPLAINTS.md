@@ -88,19 +88,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 - **Repair:** a `CARD-04` repair moves the review prompt to `T-NLPZY`, removes duplicate reader-facing references, and deletes `FT-GJ6NR`.
 
-### FD-R4K7Z was a second irreducible-element duplicate with a false variant edge
-
-- **Object and need:** `FD-R4K7Z` in `corpus/theory/Algebra`. The card defines irreducible elements of a commutative ring, which is already owned by `D-TO3IY`, but declared itself `variant-of: FD-GHY34`, a polynomial irreducibility card.
-
-- **Observed evidence:** its body is the same ring-element condition as `D-TO3IY`: a nonzero nonunit `$p$` with every factorization `$p=ab$` having a unit factor.
-  `FD-GHY34` instead quantifies over polynomials in `$K[x]$`.
-
-- **Impact and owner:** the card both duplicated the canonical definition and asserted a variant relation between different levels of generality/objects.
-
-- **Uncertainty:** none after reading all three cards.
-
-- **Repair:** a `CARD-04` repair removes the duplicate wiki link and deletes `FD-R4K7Z`; `D-TO3IY` already carries the equivalent review prompt.
-
 ### Duplicate irreducible-polynomial cards D-BVMTZ, FD-GHY34, and FD-KPW3H
 
 - **Object and need:** `D-BVMTZ`, `FD-GHY34`, and `FD-KPW3H` in `corpus/theory/Algebra`. All three define irreducibility of a polynomial over a field by absence of a factorization into two positive-degree factors.
