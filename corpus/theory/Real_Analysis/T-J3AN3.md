@@ -35,25 +35,3 @@ $$
 
 In particular, if $U$ is [[D-SLYE5|complete]], so that $\mathcal H_U=\mathcal H$, then the coefficient map $\mathcal H\to\ell^2(\NN)$ is an isometric isomorphism.
 :::
-
-::: {.proof}
-For $a=(a_n)\in\ell^2(\NN)$, set
-$$
-x_N\coloneqq\sum_{n=1}^N a_nu_n.
-$$
-Orthonormality gives, for $M<N$,
-$$
-\norm{x_N-x_M}^2=\sum_{n=M+1}^N\abs{a_n}^2,
-$$
-so $(x_N)$ is Cauchy and converges, by completeness of $\mathcal H$, to some $x$, which lies in $\mathcal H_U$ because each $x_N$ lies in the span of $U$.
-Continuity of the inner product yields $\inner{x}{u_n}=a_n$ for every $n$, and taking limits in $\norm{x_N}^2=\sum_{n=1}^N\abs{a_n}^2$ gives
-$$
-\norm{x}^2=\sum_{n=1}^\infty\abs{a_n}^2.
-$$
-
-Conversely, let $x\in\mathcal H_U$ and put $a_n\coloneqq\inner{x}{u_n}$.
-[[T-4BDE3|Bessel's inequality]] gives $a\in\ell^2(\NN)$.
-Applying the construction above produces $y\in\mathcal H_U$ with the same coefficients.
-Then $x-y\in\mathcal H_U$ is orthogonal to every $u_n$, hence to the span of $U$ and therefore to its closure $\mathcal H_U$; in particular $x-y$ is orthogonal to itself, so $x=y$.
-This proves bijectivity and the norm identity.
-:::
