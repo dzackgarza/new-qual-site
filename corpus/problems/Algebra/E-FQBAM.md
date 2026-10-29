@@ -22,13 +22,13 @@ audit:
 ---
 
 ::: {.problem}
-3. For $n\geq 2$, consider the ring of $n \times n$ matrices over a commutative unital ring $R$, denoted $\operatorname{Mat}_{n}(R)$. Recall the determinant map $\det:\operatorname{Mat}_{n}(R)\to R$.
-   For $A \in \operatorname{Mat}_{n}(R)$ also recall the definition of the classical adjoint $A^{a}$ of $A$.
-   Prove that:
+For $n\geq 2$, consider the ring of $n \times n$ matrices over a commutative unital ring $R$, denoted $\operatorname{Mat}_{n}(R)$. Recall the determinant map $\det:\operatorname{Mat}_{n}(R)\to R$.
+For $A \in \operatorname{Mat}_{n}(R)$ also recall the definition of the classical adjoint $A^{a}$ of $A$.
+Prove that:
 
-- $\det\left(A^{a}\right)=\det(A)^{n-1}$
+(a) $\det\left(A^{a}\right)=\det(A)^{n-1}$;
 
-- $\left(A^{a}\right)^{a}=\det(A)^{n-2} A$
+(b) $\left(A^{a}\right)^{a}=\det(A)^{n-2} A$.
 :::
 
 ::: {.solution}
@@ -42,9 +42,9 @@ It is enough to prove both identities for the generic matrix over $S=\ZZ[x_{ij}]
 ::: pf-proof
 Each entry of $\operatorname{adj}(A)$ is a polynomial with integer coefficients in the entries of $A$, and determinants are polynomial expressions as well. Thus both desired identities are polynomial identities with integer coefficients in the entries of $A$. If they hold for the generic matrix
 $$
-X=(x_{ij})\in M_n(S),
+X=(x_{ij})\in\operatorname{Mat}_n(S),
 $$
-then for any commutative unital ring $R$ and any $A=(a_{ij})\in M_n(R)$, the specialization homomorphism $S\to R$, $x_{ij}\mapsto a_{ij}$, carries those identities to the corresponding identities for $A$.
+then for any commutative unital ring $R$ and any $A=(a_{ij})\in\operatorname{Mat}_n(R)$, the specialization homomorphism $S\to R$, $x_{ij}\mapsto a_{ij}$, carries those identities to the corresponding identities for $A$.
 :::
 
 :::
@@ -106,7 +106,7 @@ Since $n\ge2$, both sides are matrices whose entries lie in $S$. Hence the ident
 :::
 
 ::: pf-step
-Specializing the generic identities gives, for every $A\in M_n(R)$,
+Specializing the generic identities gives, for every $A\in\operatorname{Mat}_n(R)$,
 $$
 \det(A^a)=\det(A)^{n-1},
 \qquad
