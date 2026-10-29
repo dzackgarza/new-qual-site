@@ -130,8 +130,7 @@ source:
     - P-3SSNK
     - P-DEYSQ
     - P-ZCPFV
-    - P-E4WZN
-    - P-FYGQ6
+    - P-DFDX4
     - P-RA-WORKSHOP-D8-SEQ1
     - P-4E6U3
     - P-XVHFQ
