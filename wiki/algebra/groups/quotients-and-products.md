@@ -34,8 +34,6 @@ In particular, when a Sylow subgroup $N$ of $G$ is normal and has a complement $
 
 [[T-SVJUN]]
 
-[[FT-7NMQR]]
-
 [[E-DFUYC]]
 
 [[E-R6I7G]]
